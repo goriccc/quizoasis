@@ -240,47 +240,17 @@ export default function StressTestClient({
     if (!result) return;
     
     const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
-    const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     if (navigator.share) {
-      // 네이티브 공유 API 사용 (모바일)
+      // 네이티브 공유 API 사용 (모바일) - 텍스트만
       try {
-        // 먼저 텍스트만 공유 시도
-        let shareData: any = {
+        await navigator.share({
           text: shareText,
-        };
-        
-        // 이미지가 있는 경우, 파일 공유 지원 여부 확인 후 추가
-        if (thumbnailUrl && navigator.canShare) {
-          try {
-            const response = await fetch(thumbnailUrl);
-            const blob = await response.blob();
-            const file = new File([blob], 'test-thumbnail.jpg', { type: blob.type });
-            
-            // 파일 공유가 지원되는지 확인
-            if (navigator.canShare({ files: [file] })) {
-              // 텍스트와 파일을 함께 공유
-              shareData = {
-                text: shareText,
-                files: [file],
-              };
-            }
-          } catch (imageError) {
-            console.log('이미지 공유 실패, 텍스트만 공유:', imageError);
-          }
-        }
-        
-        await navigator.share(shareData);
+        });
       } catch (error) {
         // 사용자가 공유를 취소한 경우
         if (error instanceof Error && error.name !== 'AbortError') {
           console.error('공유 실패:', error);
-          // 폴백: 텍스트만 공유 시도
-          try {
-            await navigator.share({ text: shareText });
-          } catch (fallbackError) {
-            console.error('폴백 공유도 실패:', fallbackError);
-          }
         }
       }
     } else {
