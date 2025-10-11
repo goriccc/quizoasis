@@ -38,18 +38,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // 썸네일을 절대 URL로 변환 (공유 앱용 원본 URL 사용)
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const rawThumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}`;
-  const thumbnailUrl = `${rawThumbnailUrl}?v=${Date.now()}`;
+  const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}?v=${Date.now()}`;
   
-  // 디버깅용 로그
-  console.log('🔍 Open Graph Debug:', {
-    slug,
-    thumbnail: test.thumbnail,
-    rawThumbnailUrl,
-    thumbnailUrl,
-    title,
-    description
-  });
 
   return {
     title: title,
