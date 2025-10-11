@@ -89,8 +89,8 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
   };
 
   return (
-    <section className="py-6 bg-gradient-to-r from-primary-50 to-secondary-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-6">
+      <div className="max-w-7xl mx-auto px-1 sm:px-4">
         <h2 className="text-xl font-bold mb-4 text-gray-800">{t('latest')}</h2>
         
         <div
@@ -110,6 +110,7 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                 key={test.id}
                 href={`/${locale}/test/${test.slug}`}
                 className="flex-shrink-0 group"
+                prefetch={true}
                 onClick={(e) => {
                   // 드래그 거리가 5px 이상이면 클릭 막기
                   if (isDragging || dragDistance > 5) {
@@ -128,6 +129,8 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                       className="object-cover select-none"
                       sizes="(max-width: 640px) 80vw, (max-width: 768px) 60vw, (max-width: 1024px) 50vw, 435px"
                       draggable={false}
+                      priority={true}
+                      loading="eager"
                     />
                   
                   {/* 플레이 횟수 - 우측 하단 */}

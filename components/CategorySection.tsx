@@ -19,7 +19,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
 
   return (
     <section className="py-6 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-1 sm:px-4">
         <h2 className="text-xl font-bold mb-6 text-gray-800">
           {t('sections.category')} : {categoryName === 'all' ? t('tags.all') : `#${categoryName}`}
         </h2>
@@ -31,6 +31,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
               key={test.id}
               href={`/${locale}/test/${test.slug}`}
               className="group"
+              prefetch={true}
             >
               <div className="relative rounded-2xl overflow-hidden shadow-md card-hover bg-white">
                 {/* 썸네일 */}
@@ -41,6 +42,8 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={true}
+                    loading="eager"
                   />
                   
                   {/* 플레이 횟수 - 우측 하단 */}

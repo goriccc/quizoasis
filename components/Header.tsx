@@ -34,13 +34,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-1 sm:px-4 h-16 flex items-center justify-between">
         {/* 좌측: 햄버거 메뉴 + 검색 + 언어 */}
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center" style={{ gap: '5px' }}>
           {/* 햄버거 메뉴 */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label="Menu"
           >
             <Menu size={24} />
@@ -49,7 +49,7 @@ export default function Header() {
           {/* 검색 아이콘 */}
           <button
             onClick={() => setIsSearchOpen(!isSearchOpen)}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label={t('search')}
           >
             <Search size={24} />
@@ -62,7 +62,7 @@ export default function Header() {
                 e.stopPropagation();
                 setIsLanguageOpen(!isLanguageOpen);
               }}
-              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
               aria-label="Language"
             >
               <Globe size={24} />

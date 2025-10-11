@@ -69,11 +69,16 @@ body {
 
 /* 카드 호버 효과 */
 .card-hover {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
   transition: box-shadow 0.2s ease-in-out;
 }
 
 .card-hover:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateZ(0);
 }
 
 /* 그라데이션 배경 */

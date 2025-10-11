@@ -47,7 +47,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-1 sm:px-4">
         {/* 태그 섹션 */}
         <TagsSection 
           tags={tags} 
