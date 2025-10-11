@@ -103,7 +103,6 @@ export function convertDBTestToQuizTest(dbTest: DBTest, locale: Locale): QuizTes
     thumbnail: dbTest.thumbnail,
     playCount: dbTest.play_count,
     tags,
-    tagsMultilingual,
     createdAt: dbTest.created_at,
   };
 }
