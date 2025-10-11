@@ -363,16 +363,20 @@ export default function StressTestClient({
           {/* 광고 - 참여자 수와 공유 섹션 사이 */}
           <div className="max-w-[680px] mx-auto mb-6">
               {locale === 'ko' ? (
-                // 한국어: 쿠팡 광고
-                <iframe 
-                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
-                  width="680" 
-                  height="140" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  referrerPolicy="unsafe-url"
-                  className="w-full"
-                />
+                // 한국어: 쿠팡 광고 - iframe 대신 링크 버튼으로 변경
+                <div className="flex justify-center">
+                  <a 
+                    href="https://www.coupang.com/np/campaigns/82" 
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="block bg-gradient-to-r from-pink-500 to-red-500 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                    style={{ width: '100%' }}
+                  >
+                    <div className="text-base font-bold">
+                      🛍️ 쿠팡에서 쇼핑하기 - 로켓배송으로 빠르게!
+                    </div>
+                  </a>
+                </div>
               ) : (
                 // 기타 언어: 알리익스프레스 어필리에이트
                 <div className="flex justify-center">
@@ -574,17 +578,22 @@ export default function StressTestClient({
               {t('mbti.recommendedProducts')}
             </div>
             {locale === 'ko' ? (
-              // 한국어: 쿠팡 광고
+              // 한국어: 쿠팡 광고 - iframe 대신 링크 버튼으로 변경
               <div className="flex justify-center">
-                <iframe 
-                  src="https://ads-partners.coupang.com/widgets.html?id=923499&template=carousel&trackingCode=AF6775264&subId=&width=300&height=250&tsource=" 
-                  width="300" 
-                  height="250" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  referrerPolicy="unsafe-url"
-                  className="rounded-lg"
-                />
+                <a 
+                  href="https://www.coupang.com/np/campaigns/82" 
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="block bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                  style={{ maxWidth: '300px', width: '100%' }}
+                >
+                  <div className="text-lg font-bold mb-1">
+                    🛍️ 쿠팡에서 쇼핑하기
+                  </div>
+                  <div className="text-sm opacity-90">
+                    로켓배송으로 빠르게 받아보세요
+                  </div>
+                </a>
               </div>
             ) : (
               // 기타 언어: 알리익스프레스 어필리에이트
