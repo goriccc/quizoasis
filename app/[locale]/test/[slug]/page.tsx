@@ -64,10 +64,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           width: 1200,
           height: 630,
           alt: title,
+          type: 'image/jpeg',
         }
       ],
       type: 'website',
-      url: `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`,
+      url: `https://quizoasis-coral.vercel.app/${locale}/test/${slug}?v=${Date.now()}`,
       siteName: 'QuizOasis',
       locale: locale,
     },
@@ -77,11 +78,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: description,
       images: [thumbnailUrl],
       site: '@QuizOasis',
+      creator: '@QuizOasis',
     },
     other: {
+      'og:image': thumbnailUrl,
+      'og:image:url': thumbnailUrl,
+      'og:image:secure_url': thumbnailUrl,
       'og:image:width': '1200',
       'og:image:height': '630',
       'og:image:type': 'image/jpeg',
+      'og:image:alt': title,
+      'twitter:image:src': thumbnailUrl,
+      'twitter:image:alt': title,
     },
   };
 }
