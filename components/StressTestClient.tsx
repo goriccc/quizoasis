@@ -239,28 +239,31 @@ export default function StressTestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}`;
+    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     if (navigator.share) {
       // 네이티브 공유 API 사용 (모바일)
       try {
-        const shareData: any = {
-          title: title,
+        // 먼저 텍스트만 공유 시도
+        let shareData: any = {
           text: shareText,
-          url: window.location.href,
         };
         
-        // 이미지가 있는 경우에만 추가
-        if (thumbnailUrl) {
+        // 이미지가 있는 경우, 파일 공유 지원 여부 확인 후 추가
+        if (thumbnailUrl && navigator.canShare) {
           try {
-            // 이미지를 fetch하여 File 객체로 변환
             const response = await fetch(thumbnailUrl);
             const blob = await response.blob();
             const file = new File([blob], 'test-thumbnail.jpg', { type: blob.type });
             
-            if (navigator.canShare && navigator.canShare({ files: [file] })) {
-              shareData.files = [file];
+            // 파일 공유가 지원되는지 확인
+            if (navigator.canShare({ files: [file] })) {
+              // 텍스트와 파일을 함께 공유
+              shareData = {
+                text: shareText,
+                files: [file],
+              };
             }
           } catch (imageError) {
             console.log('이미지 공유 실패, 텍스트만 공유:', imageError);
@@ -272,12 +275,18 @@ export default function StressTestClient({
         // 사용자가 공유를 취소한 경우
         if (error instanceof Error && error.name !== 'AbortError') {
           console.error('공유 실패:', error);
+          // 폴백: 텍스트만 공유 시도
+          try {
+            await navigator.share({ text: shareText });
+          } catch (fallbackError) {
+            console.error('폴백 공유도 실패:', fallbackError);
+          }
         }
       }
     } else {
       // 클립보드에 복사 (데스크톱)
       try {
-        await navigator.clipboard.writeText(`${shareText}\n\n${window.location.href}`);
+        await navigator.clipboard.writeText(shareText);
         alert('결과가 클립보드에 복사되었습니다!');
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
