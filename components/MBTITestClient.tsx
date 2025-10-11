@@ -392,8 +392,19 @@ export default function MBTITestClient({
 
           {/* 광고 - 참여자 수와 공유 섹션 사이 */}
           <div className="max-w-[680px] mx-auto mb-6">
-              {isGalaxyFold ? (
-                // 갤럭시 폴드: AdSense 광고
+              {locale === 'ko' ? (
+                // 한국어: 쿠팡 광고
+                <iframe 
+                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
+                  width="680" 
+                  height="140" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  referrerPolicy="unsafe-url"
+                  className="w-full"
+                />
+              ) : isGalaxyFold ? (
+                // 갤럭시 폴드 (한국어 아님): AdSense 광고
                 <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg text-center">
                   <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
                     📢 AdSense 광고 영역 (폴드 전용)
@@ -406,17 +417,6 @@ export default function MBTITestClient({
                     data-full-width-responsive="true"
                   />
                 </div>
-              ) : locale === 'ko' ? (
-                // 한국어: 쿠팡 광고
-                <iframe 
-                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
-                  width="680" 
-                  height="140" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  referrerPolicy="unsafe-url"
-                  className="w-full"
-                />
               ) : (
                 // 기타 언어: 알리익스프레스 어필리에이트
                 <div className="flex justify-center">
@@ -605,21 +605,7 @@ export default function MBTITestClient({
             <div className="text-center text-sm text-gray-600 mb-3">
               {t('mbti.recommendedProducts')}
             </div>
-            {isGalaxyFold ? (
-              // 갤럭시 폴드: AdSense 광고
-              <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg text-center">
-                <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
-                  📢 AdSense 광고 영역 (폴드 전용 - 팝업)
-                </div>
-                <ins className="adsbygoogle"
-                  style={{ display: 'block' }}
-                  data-ad-client="ca-pub-1234567890123456"
-                  data-ad-slot="9999999999"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"
-                />
-              </div>
-            ) : locale === 'ko' ? (
+            {locale === 'ko' ? (
               // 한국어: 쿠팡 광고
               <div className="flex justify-center">
                 <iframe 
@@ -630,6 +616,20 @@ export default function MBTITestClient({
                   scrolling="no" 
                   referrerPolicy="unsafe-url"
                   className="rounded-lg"
+                />
+              </div>
+            ) : isGalaxyFold ? (
+              // 갤럭시 폴드 (한국어 아님): AdSense 광고
+              <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg text-center">
+                <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
+                  📢 AdSense 광고 영역 (폴드 전용 - 팝업)
+                </div>
+                <ins className="adsbygoogle"
+                  style={{ display: 'block' }}
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="9999999999"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"
                 />
               </div>
             ) : (
