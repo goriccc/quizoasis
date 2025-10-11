@@ -381,46 +381,30 @@ export default function MBTITestClient({
           {/* 광고 - 참여자 수와 공유 섹션 사이 */}
           <div className="max-w-[680px] mx-auto mb-6">
               {locale === 'ko' ? (
-                // 한국어: 쿠팡 광고 - iframe 대신 링크 버튼으로 변경
-                <div className="flex justify-center">
-                  <a 
-                    href="https://www.coupang.com/np/campaigns/82" 
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="block bg-gradient-to-r from-pink-500 to-red-500 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
-                    style={{ width: '100%' }}
-                  >
-                    <div className="text-base font-bold">
-                      🛍️ 쿠팡에서 쇼핑하기 - 로켓배송으로 빠르게!
-                    </div>
-                  </a>
-                </div>
+                // 한국어: 쿠팡 광고
+                <iframe 
+                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
+                  width="680" 
+                  height="140" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  referrerPolicy="unsafe-url"
+                  className="w-full"
+                />
               ) : (
                 // 기타 언어: 알리익스프레스 어필리에이트
                 <div className="flex justify-center">
                   <a 
                     href="https://s.click.aliexpress.com/e/_c3qvGy6B?bz=300*250" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
-                    style={{ maxWidth: '300px', width: '100%' }}
+                    target="_parent"
                   >
-                    <div className="text-lg font-bold mb-1">
-                      {locale === 'ja' ? '🛍️ AliExpressでお買い物' :
-                       locale === 'zh-CN' ? '🛍️ 在AliExpress购物' :
-                       locale === 'zh-TW' ? '🛍️ 在AliExpress購物' :
-                       locale === 'vi' ? '🛍️ Mua sắm trên AliExpress' :
-                       locale === 'id' ? '🛍️ Belanja di AliExpress' :
-                       '🛍️ Shop on AliExpress'}
-                    </div>
-                    <div className="text-sm opacity-90">
-                      {locale === 'ja' ? '特別オファーをチェック' :
-                       locale === 'zh-CN' ? '查看特别优惠' :
-                       locale === 'zh-TW' ? '查看特別優惠' :
-                       locale === 'vi' ? 'Xem ưu đãi đặc biệt' :
-                       locale === 'id' ? 'Lihat penawaran spesial' :
-                       'Check special offers'}
-                    </div>
+                    <img 
+                      width="300" 
+                      height="250" 
+                      src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                      alt="AliExpress"
+                      style={{ maxWidth: '300px', height: 'auto' }}
+                    />
                   </a>
                 </div>
               )}
@@ -596,49 +580,33 @@ export default function MBTITestClient({
               {t('mbti.recommendedProducts')}
             </div>
             {locale === 'ko' ? (
-              // 한국어: 쿠팡 광고 - iframe 대신 링크 버튼으로 변경
+              // 한국어: 쿠팡 광고
               <div className="flex justify-center">
-                <a 
-                  href="https://www.coupang.com/np/campaigns/82" 
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className="block bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
-                  style={{ maxWidth: '300px', width: '100%' }}
-                >
-                  <div className="text-lg font-bold mb-1">
-                    🛍️ 쿠팡에서 쇼핑하기
-                  </div>
-                  <div className="text-sm opacity-90">
-                    로켓배송으로 빠르게 받아보세요
-                  </div>
-                </a>
+                <iframe 
+                  src="https://ads-partners.coupang.com/widgets.html?id=923499&template=carousel&trackingCode=AF6775264&subId=&width=300&height=250&tsource=" 
+                  width="300" 
+                  height="250" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  referrerPolicy="unsafe-url"
+                  className="rounded-lg"
+                />
               </div>
             ) : (
               // 기타 언어: 알리익스프레스 어필리에이트
               <div className="flex justify-center">
                 <a 
                   href="https://s.click.aliexpress.com/e/_c3UhUOTh?bz=300*250" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
-                  style={{ maxWidth: '300px', width: '100%' }}
+                  target="_parent"
                 >
-                  <div className="text-lg font-bold mb-1">
-                    {locale === 'ja' ? '🛍️ AliExpressでお買い物' :
-                     locale === 'zh-CN' ? '🛍️ 在AliExpress购物' :
-                     locale === 'zh-TW' ? '🛍️ 在AliExpress購物' :
-                     locale === 'vi' ? '🛍️ Mua sắm trên AliExpress' :
-                     locale === 'id' ? '🛍️ Belanja di AliExpress' :
-                     '🛍️ Shop on AliExpress'}
-                  </div>
-                  <div className="text-sm opacity-90">
-                    {locale === 'ja' ? '特別オファーをチェック' :
-                     locale === 'zh-CN' ? '查看特别优惠' :
-                     locale === 'zh-TW' ? '查看特別優惠' :
-                     locale === 'vi' ? 'Xem ưu đãi đặc biệt' :
-                     locale === 'id' ? 'Lihat penawaran spesial' :
-                     'Check special offers'}
-                  </div>
+                  <img 
+                    width="300" 
+                    height="250" 
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                    alt="AliExpress"
+                    className="rounded-lg"
+                    style={{ maxWidth: '300px', height: 'auto' }}
+                  />
                 </a>
               </div>
             )}
@@ -703,27 +671,15 @@ export default function MBTITestClient({
               <div className="mb-8 flex justify-center">
                 <a 
                   href="https://s.click.aliexpress.com/e/_c3qvGy6B?bz=300*250"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
-                  style={{ maxWidth: '300px', width: '100%' }}
+                  target="_parent"
                 >
-                  <div className="text-lg font-bold mb-1">
-                    {locale === 'ja' ? '🛍️ AliExpressでお買い物' :
-                     locale === 'zh-CN' ? '🛍️ 在AliExpress购物' :
-                     locale === 'zh-TW' ? '🛍️ 在AliExpress購物' :
-                     locale === 'vi' ? '🛍️ Mua sắm trên AliExpress' :
-                     locale === 'id' ? '🛍️ Belanja di AliExpress' :
-                     '🛍️ Shop on AliExpress'}
-                  </div>
-                  <div className="text-sm opacity-90">
-                    {locale === 'ja' ? '特別オファーをチェック' :
-                     locale === 'zh-CN' ? '查看特别优惠' :
-                     locale === 'zh-TW' ? '查看特別優惠' :
-                     locale === 'vi' ? 'Xem ưu đãi đặc biệt' :
-                     locale === 'id' ? 'Lihat penawaran spesial' :
-                     'Check special offers'}
-                  </div>
+                  <img 
+                    width="300" 
+                    height="250" 
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                    alt="AliExpress"
+                    style={{ maxWidth: '300px', height: 'auto' }}
+                  />
                 </a>
               </div>
             )}
