@@ -738,7 +738,7 @@ export default function StressTestClient({
 
   // 질문 화면
   const question = shuffledQuestions[currentQuestion];
-  const questionText = question.question[locale] || question.question.ko;
+  const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
 
   // StressQuestion의 options는 이미 배열입니다
