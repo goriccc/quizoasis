@@ -773,7 +773,7 @@ export default function StressTestClient({
 
           <div className="space-y-4">
             {optionsArray.map((option, index) => {
-              const optionText = option.text[locale] || option.text.ko;
+              const optionText = option.text[locale as keyof typeof option.text] || option.text.ko;
               const label = String.fromCharCode(65 + index); // A, B, C, D
               const colors = [
                 'from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border-purple-200 hover:border-purple-400',
