@@ -35,4 +35,42 @@ export interface Tag {
   name: string;
 }
 
+export interface DBTest {
+  id: number;
+  slug: string;
+  title: {
+    ko: string;
+    en: string;
+    ja: string;
+    'zh-CN': string;
+    'zh-TW': string;
+    id: string;
+    vi: string;
+  };
+  description: {
+    ko: string;
+    en: string;
+    ja: string;
+    'zh-CN': string;
+    'zh-TW': string;
+    id: string;
+    vi: string;
+  };
+  thumbnail: string;
+  play_count: number;
+  type: string;
+  category: string;
+  created_at: string;
+  updated_at: string;
+  tags: {
+    ko: string[];
+    en: string[];
+    ja: string[];
+    'zh-CN': string[];
+    'zh-TW': string[];
+    id: string[];
+    vi: string[];
+  };
+}
+
 
