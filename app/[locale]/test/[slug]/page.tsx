@@ -36,14 +36,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? test.tags[locale] || test.tags.ko || []
     : test.tags;
 
-  // 썸네일을 절대 URL로 변환 (캐시 버스팅 추가)
-  const baseThumbnailUrl = getThumbnailUrl(test.thumbnail);
-  const thumbnailUrl = `${baseThumbnailUrl}&cache=${Date.now()}`;
+  // 썸네일을 절대 URL로 변환 (공유 앱용 원본 URL 사용)
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const rawThumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}`;
+  const thumbnailUrl = `${rawThumbnailUrl}?v=${Date.now()}`;
   
   // 디버깅용 로그
   console.log('🔍 Open Graph Debug:', {
     slug,
     thumbnail: test.thumbnail,
+    rawThumbnailUrl,
     thumbnailUrl,
     title,
     description

@@ -19,7 +19,10 @@ export async function GET(request: Request) {
     
     const title = test.title[locale] || test.title.ko || 'Test';
     const description = test.description?.[locale] || test.description?.ko || '';
-    const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+    
+    // 공유 앱용 원본 URL 사용
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}?v=${Date.now()}`;
     
     // Open Graph 메타데이터 생성
     const openGraphMeta = {
