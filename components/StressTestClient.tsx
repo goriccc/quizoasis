@@ -240,15 +240,32 @@ export default function StressTestClient({
     if (!result) return;
     
     const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
+    const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     if (navigator.share) {
       // 네이티브 공유 API 사용 (모바일)
       try {
-        await navigator.share({
-          title: title,
+        const shareData: any = {
           text: shareText,
-          url: window.location.href,
-        });
+        };
+        
+        // 이미지가 있는 경우에만 추가
+        if (thumbnailUrl) {
+          try {
+            // 이미지를 fetch하여 File 객체로 변환
+            const response = await fetch(thumbnailUrl);
+            const blob = await response.blob();
+            const file = new File([blob], 'test-thumbnail.jpg', { type: blob.type });
+            
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+              shareData.files = [file];
+            }
+          } catch (imageError) {
+            console.log('이미지 공유 실패, 텍스트만 공유:', imageError);
+          }
+        }
+        
+        await navigator.share(shareData);
       } catch (error) {
         // 사용자가 공유를 취소한 경우
         if (error instanceof Error && error.name !== 'AbortError') {
