@@ -608,8 +608,8 @@ export default function StressTestClient({
 
   // 결과 화면
   if (showResult && result) {
-    const resultTitle = result.title[locale] || result.title.ko;
-    const resultDescription = result.description[locale] || result.description.ko;
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
     const resultTraits = result.traits; // traits는 객체 배열
     const resultCoping = result.coping; // coping도 객체 배열
 
