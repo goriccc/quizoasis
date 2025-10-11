@@ -395,7 +395,7 @@ export default function MBTITestClient({
                 // 기타 언어: 알리익스프레스 어필리에이트
                 <div className="flex justify-center">
                   <a 
-                    href="https://s.click.aliexpress.com/e/_c3qpaw2r?bz=300*250" 
+                    href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
                     target="_parent"
                   >
                     <img 
@@ -596,7 +596,7 @@ export default function MBTITestClient({
               // 기타 언어: 알리익스프레스 어필리에이트
               <div className="flex justify-center">
                 <a 
-                  href="https://s.click.aliexpress.com/e/_c3qpaw2r?bz=300*250" 
+                  href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
                   target="_parent"
                 >
                   <img 
@@ -670,7 +670,7 @@ export default function MBTITestClient({
             {locale !== 'ko' && (
               <div className="mb-8 flex justify-center">
                 <a 
-                  href="https://s.click.aliexpress.com/e/_c3qvGy6B?bz=300*250"
+                  href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250"
                   target="_parent"
                 >
                   <img 

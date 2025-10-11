@@ -377,7 +377,7 @@ export default function StressTestClient({
                 // 기타 언어: 알리익스프레스 어필리에이트
                 <div className="flex justify-center">
                   <a 
-                    href="https://s.click.aliexpress.com/e/_c3qpaw2r?bz=300*250" 
+                    href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
                     target="_parent"
                   >
                     <img 
@@ -578,7 +578,7 @@ export default function StressTestClient({
               // 기타 언어: 알리익스프레스 어필리에이트
               <div className="flex justify-center">
                 <a 
-                  href="https://s.click.aliexpress.com/e/_c3qpaw2r?bz=300*250" 
+                  href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
                   target="_parent"
                 >
                   <img 
