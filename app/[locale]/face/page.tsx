@@ -1,4 +1,15 @@
-export default function FacePage() {
+import { setRequestLocale } from 'next-intl/server';
+
+interface Props {
+  params: {
+    locale: string;
+  };
+}
+
+export default function FacePage({ params }: Props) {
+  const { locale } = params;
+  setRequestLocale(locale);
+  
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold mb-8">얼굴 분석 페이지</h1>

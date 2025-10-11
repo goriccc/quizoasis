@@ -4,7 +4,11 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['*'],
+    },
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [

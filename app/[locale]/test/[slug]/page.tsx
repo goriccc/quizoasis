@@ -4,6 +4,7 @@ import { getTestBySlug, getTests } from '@/lib/supabase';
 import { getTestData } from '@/lib/mbtiData';
 import MBTITestClient from '@/components/MBTITestClient';
 import StressTestClient from '@/components/StressTestClient';
+import { setRequestLocale } from 'next-intl/server';
 
 interface Props {
   params: {
@@ -55,6 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TestPage({ params }: Props) {
   const { locale, slug } = params;
+  setRequestLocale(locale);
 
   // Supabase에서 테스트 메타데이터만 가져오기 (빠른 로딩)
   const test = await getTestBySlug(slug);

@@ -4,6 +4,7 @@ import HomePageClient from '@/components/HomePageClient';
 import { convertDBTestToQuizTest } from '@/lib/utils';
 import { DBTest, QuizTest } from '@/lib/types';
 import { Locale } from '@/i18n';
+import { setRequestLocale } from 'next-intl/server';
 
 interface Props {
   params: {
@@ -16,6 +17,7 @@ export const revalidate = 600;
 
 export default async function HomePage({ params }: Props) {
   const { locale } = params;
+  setRequestLocale(locale);
   
   try {
     // Supabase에서 테스트 데이터 가져오기
