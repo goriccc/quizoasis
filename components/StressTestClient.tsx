@@ -235,6 +235,38 @@ export default function StressTestClient({
     setShowResult(false);
   };
 
+  // 결과 공유하기
+  const handleShareResult = async () => {
+    if (!result) return;
+    
+    const shareText = `${title}\n\n${result.title[locale as keyof typeof result.title]}\n${result.description[locale as keyof typeof result.description]}\n\n${window.location.href}`;
+    
+    if (navigator.share) {
+      // 네이티브 공유 API 사용 (모바일)
+      try {
+        await navigator.share({
+          title: title,
+          text: shareText,
+          url: window.location.href,
+        });
+      } catch (error) {
+        // 사용자가 공유를 취소한 경우
+        if (error instanceof Error && error.name !== 'AbortError') {
+          console.error('공유 실패:', error);
+        }
+      }
+    } else {
+      // 클립보드에 복사 (데스크톱)
+      try {
+        await navigator.clipboard.writeText(shareText);
+        alert('결과가 클립보드에 복사되었습니다!');
+      } catch (error) {
+        console.error('클립보드 복사 실패:', error);
+        alert('공유 기능을 사용할 수 없습니다.');
+      }
+    }
+  };
+
   // 공유 함수들
   const shareToFacebook = () => {
     const url = encodeURIComponent(window.location.href);
@@ -662,6 +694,19 @@ export default function StressTestClient({
               </div>
             </div>
 
+
+            {/* 결과 공유하기 버튼 */}
+            <div className="mb-6 px-4">
+              <button
+                onClick={handleShareResult}
+                className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                </svg>
+                {t('mbti.shareResult')}
+              </button>
+            </div>
 
             {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
             <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg px-4">
