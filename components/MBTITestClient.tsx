@@ -666,23 +666,6 @@ export default function MBTITestClient({
               </div>
             </div>
 
-            {/* 광고 배너 (한국어 제외) */}
-            {locale !== 'ko' && (
-              <div className="mb-8 flex justify-center px-4">
-                <a 
-                  href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250"
-                  target="_parent"
-                >
-                  <img 
-                    width="300" 
-                    height="250" 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                    alt="AliExpress"
-                    style={{ maxWidth: '300px', height: 'auto' }}
-                  />
-                </a>
-              </div>
-            )}
 
             {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
             <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg px-4">
