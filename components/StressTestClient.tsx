@@ -378,15 +378,27 @@ export default function StressTestClient({
                 <div className="flex justify-center">
                   <a 
                     href="https://s.click.aliexpress.com/e/_c3qvGy6B?bz=300*250" 
-                    target="_parent"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                    style={{ maxWidth: '300px', width: '100%' }}
                   >
-                    <img 
-                      width="300" 
-                      height="250" 
-                      src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                      alt="AliExpress"
-                      style={{ maxWidth: '300px', height: 'auto' }}
-                    />
+                    <div className="text-lg font-bold mb-1">
+                      {locale === 'ja' ? '🛍️ AliExpressでお買い物' :
+                       locale === 'zh-CN' ? '🛍️ 在AliExpress购物' :
+                       locale === 'zh-TW' ? '🛍️ 在AliExpress購物' :
+                       locale === 'vi' ? '🛍️ Mua sắm trên AliExpress' :
+                       locale === 'id' ? '🛍️ Belanja di AliExpress' :
+                       '🛍️ Shop on AliExpress'}
+                    </div>
+                    <div className="text-sm opacity-90">
+                      {locale === 'ja' ? '特別オファーをチェック' :
+                       locale === 'zh-CN' ? '查看特别优惠' :
+                       locale === 'zh-TW' ? '查看特別優惠' :
+                       locale === 'vi' ? 'Xem ưu đãi đặc biệt' :
+                       locale === 'id' ? 'Lihat penawaran spesial' :
+                       'Check special offers'}
+                    </div>
                   </a>
                 </div>
               )}
@@ -579,16 +591,27 @@ export default function StressTestClient({
               <div className="flex justify-center">
                 <a 
                   href="https://s.click.aliexpress.com/e/_c3UhUOTh?bz=300*250" 
-                  target="_parent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                  style={{ maxWidth: '300px', width: '100%' }}
                 >
-                  <img 
-                    width="300" 
-                    height="250" 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                    alt="AliExpress"
-                    className="rounded-lg"
-                    style={{ maxWidth: '300px', height: 'auto' }}
-                  />
+                  <div className="text-lg font-bold mb-1">
+                    {locale === 'ja' ? '🛍️ AliExpressでお買い物' :
+                     locale === 'zh-CN' ? '🛍️ 在AliExpress购物' :
+                     locale === 'zh-TW' ? '🛍️ 在AliExpress購物' :
+                     locale === 'vi' ? '🛍️ Mua sắm trên AliExpress' :
+                     locale === 'id' ? '🛍️ Belanja di AliExpress' :
+                     '🛍️ Shop on AliExpress'}
+                  </div>
+                  <div className="text-sm opacity-90">
+                    {locale === 'ja' ? '特別オファーをチェック' :
+                     locale === 'zh-CN' ? '查看特别优惠' :
+                     locale === 'zh-TW' ? '查看特別優惠' :
+                     locale === 'vi' ? 'Xem ưu đãi đặc biệt' :
+                     locale === 'id' ? 'Lihat penawaran spesial' :
+                     'Check special offers'}
+                  </div>
                 </a>
               </div>
             )}
