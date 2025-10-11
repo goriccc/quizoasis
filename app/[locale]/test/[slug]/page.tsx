@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTestBySlug, getTests } from '@/lib/supabase';
 import { getTestData } from '@/lib/mbtiData';
+import { getThumbnailUrl } from '@/lib/utils';
 import MBTITestClient from '@/components/MBTITestClient';
 import StressTestClient from '@/components/StressTestClient';
 import { setRequestLocale } from 'next-intl/server';
@@ -35,6 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? test.tags[locale] || test.tags.ko || []
     : test.tags;
 
+  // 썸네일을 절대 URL로 변환
+  const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+
   return {
     title: title,
     description: description,
@@ -42,14 +46,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: title,
       description: description,
-      images: [test.thumbnail],
+      images: [thumbnailUrl],
       type: 'website',
+      url: `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`,
     },
     twitter: {
       card: 'summary_large_image',
       title: title,
       description: description,
-      images: [test.thumbnail],
+      images: [thumbnailUrl],
     },
   };
 }
