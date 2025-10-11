@@ -239,14 +239,16 @@ export default function StressTestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
+    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     if (navigator.share) {
       // 네이티브 공유 API 사용 (모바일)
       try {
         const shareData: any = {
+          title: title,
           text: shareText,
+          url: window.location.href,
         };
         
         // 이미지가 있는 경우에만 추가
@@ -275,7 +277,7 @@ export default function StressTestClient({
     } else {
       // 클립보드에 복사 (데스크톱)
       try {
-        await navigator.clipboard.writeText(shareText);
+        await navigator.clipboard.writeText(`${shareText}\n\n${window.location.href}`);
         alert('결과가 클립보드에 복사되었습니다!');
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
