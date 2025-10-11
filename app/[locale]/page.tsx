@@ -31,14 +31,14 @@ export default async function HomePage({ params }: Props) {
         convertDBTestToQuizTest(dbTest, locale as Locale)
       );
       
-      return <HomePageClient tests={tests} locale={locale} />;
+      return <HomePageClient tests={tests} locale={locale as Locale} />;
     } else {
       console.log('⚠️ Supabase 데이터 없음, 더미 데이터 사용');
-      return <HomePageClient tests={dummyTests} locale={locale} />;
+      return <HomePageClient tests={dummyTests} locale={locale as Locale} />;
     }
   } catch (error) {
     console.error('❌ Supabase 데이터 로딩 실패:', error);
     console.log('🔄 더미 데이터로 폴백');
-    return <HomePageClient tests={dummyTests} locale={locale} />;
+    return <HomePageClient tests={dummyTests} locale={locale as Locale} />;
   }
 }
