@@ -38,6 +38,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // 썸네일을 절대 URL로 변환
   const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+  
+  // 디버깅용 로그
+  console.log('🔍 Open Graph Debug:', {
+    slug,
+    thumbnail: test.thumbnail,
+    thumbnailUrl,
+    title,
+    description
+  });
 
   return {
     title: title,
@@ -46,7 +55,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: title,
       description: description,
-      images: [thumbnailUrl],
+      images: [
+        {
+          url: thumbnailUrl,
+          width: 680,
+          height: 384,
+          alt: title,
+        }
+      ],
       type: 'website',
       url: `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`,
     },
