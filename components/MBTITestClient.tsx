@@ -633,8 +633,8 @@ export default function MBTITestClient({
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-3xl mx-auto px-4 py-12">
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-            <div className="text-center mb-8">
+          <div>
+            <div className="text-center mb-8 bg-white rounded-2xl shadow-lg p-6 md:p-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 {t('mbti.yourResult')}
               </h2>
@@ -650,7 +650,7 @@ export default function MBTITestClient({
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 mb-8">
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
               <h3 className="text-lg font-bold text-gray-800 mb-4">
                 {t('mbti.characteristics')}
               </h3>
@@ -658,7 +658,7 @@ export default function MBTITestClient({
                 {resultTraits.map((trait: any, index: number) => (
                   <span
                     key={index}
-                    className="bg-white px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow-sm"
+                    className="bg-gradient-to-r from-purple-100 to-pink-100 px-4 py-2 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                   >
                     #{trait}
                   </span>
@@ -668,7 +668,7 @@ export default function MBTITestClient({
 
             {/* 광고 배너 (한국어 제외) */}
             {locale !== 'ko' && (
-              <div className="mb-8 flex justify-center">
+              <div className="mb-8 flex justify-center px-4">
                 <a 
                   href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250"
                   target="_parent"
@@ -685,7 +685,7 @@ export default function MBTITestClient({
             )}
 
             {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
-            <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg">
+            <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg px-4">
               <div className="text-center text-cyan-600 text-sm mb-2 font-semibold">
                 📢 AdSense 광고 영역 (결과-다시하기 사이)
               </div>
@@ -698,23 +698,23 @@ export default function MBTITestClient({
               />
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 px-4">
               <button
                 onClick={handleRetake}
-                className="flex-1 bg-gray-100 text-gray-700 font-bold py-4 px-6 rounded-xl hover:bg-gray-200 transition-all"
+                className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
               >
                 {t('mbti.retakeTest')}
               </button>
               <Link
                 href={`/${locale}`}
-                className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center"
+                className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
               >
                 {t('mbti.otherTests')}
               </Link>
             </div>
 
             {/* 친구와 같이 해보기 - 결과 화면 */}
-            <div className="mt-8 mb-8 text-center">
+            <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
                 {t('mbti.shareWithFriends')}
               </h2>
@@ -786,13 +786,13 @@ export default function MBTITestClient({
           </div>
         </div>
 
-        {/* 질문 카드 */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center leading-relaxed">
+        {/* 질문 영역 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center leading-relaxed px-4">
             {questionText}
           </h2>
 
-          <div className="space-y-4">
+          <div className="space-y-4 px-4">
             {optionsArray.map((option, index) => {
               const optionText = option.text[locale] || option.text.ko;
               const label = String.fromCharCode(65 + index); // A, B
@@ -806,13 +806,13 @@ export default function MBTITestClient({
                 <button
                   key={index}
                   onClick={() => handleAnswer(option.score)}
-                  className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-6 px-6 rounded-xl transition-all transform hover:scale-102 text-left`}
+                  className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
                 >
                   <div className="flex items-center">
-                    <div className={`w-8 h-8 ${bgColors[index]} text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0`}>
+                    <div className={`w-7 h-7 ${bgColors[index]} text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm`}>
                       {label}
                     </div>
-                    <span className="text-lg">{optionText}</span>
+                    <span className="text-base">{optionText}</span>
                   </div>
                 </button>
               );
@@ -820,7 +820,7 @@ export default function MBTITestClient({
           </div>
 
           {/* AdSense 광고 - 테스트 진행 마지막 답변 밑 */}
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-center px-4">
             <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg w-full max-w-[680px]">
               <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
                 📢 AdSense 광고 영역 (테스트 진행 마지막 답변 밑)
@@ -836,7 +836,7 @@ export default function MBTITestClient({
           </div>
 
           {/* 친구와 같이 해보기 - 테스트 진행 중 */}
-          <div className="mt-8 mb-8 text-center">
+          <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               {t('mbti.shareWithFriends')}
             </h2>
