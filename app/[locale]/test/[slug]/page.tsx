@@ -36,8 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? test.tags[locale] || test.tags.ko || []
     : test.tags;
 
-  // 썸네일을 절대 URL로 변환
-  const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+  // 썸네일을 절대 URL로 변환 (캐시 버스팅 추가)
+  const baseThumbnailUrl = getThumbnailUrl(test.thumbnail);
+  const thumbnailUrl = `${baseThumbnailUrl}&cache=${Date.now()}`;
   
   // 디버깅용 로그
   console.log('🔍 Open Graph Debug:', {
@@ -58,19 +59,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [
         {
           url: thumbnailUrl,
-          width: 680,
-          height: 384,
+          width: 1200,
+          height: 630,
           alt: title,
         }
       ],
       type: 'website',
       url: `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`,
+      siteName: 'QuizOasis',
+      locale: locale,
     },
     twitter: {
       card: 'summary_large_image',
       title: title,
       description: description,
       images: [thumbnailUrl],
+      site: '@QuizOasis',
+    },
+    other: {
+      'og:image:width': '1200',
+      'og:image:height': '630',
+      'og:image:type': 'image/jpeg',
     },
   };
 }
