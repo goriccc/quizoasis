@@ -275,7 +275,7 @@ export default function MBTITestClient({
     }
 
     const currentUrl = window.location.href;
-    const thumbnailUrl = getThumbnailUrl(thumbnail);
+    const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     try {
       window.Kakao.Share.sendDefault({
