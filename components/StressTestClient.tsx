@@ -180,7 +180,7 @@ export default function StressTestClient({
 
 
   // 질문 섞기 함수 (전체 10개 완전 랜덤)
-  const shuffleQuestions = (questionList: MBTIQuestion[]) => {
+  const shuffleQuestions = (questionList: StressQuestion[]) => {
     const shuffled = [...questionList];
     
     // Fisher-Yates 알고리즘 (전체 랜덤)
