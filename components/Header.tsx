@@ -36,7 +36,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* 좌측: 햄버거 메뉴 + 검색 + 언어 */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1.5">
           {/* 햄버거 메뉴 */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
