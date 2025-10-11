@@ -43,7 +43,8 @@
     "testCompleted": "Test Completed!",
     "recommendedProducts": "Recommended Products",
     "viewAnalysisResults": "View Analysis Results",
-    "shareResult": "Share Result"
+    "shareResult": "Share Result",
+    "shareInviteMessage": "Curious? Try it directly on QuizOasis!"
   },
   "footer": {
     "slogan": "An oasis of psychological tests to explore your mind",

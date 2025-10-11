@@ -257,7 +257,7 @@ export default function MBTITestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `${title}\n\n${result.title[locale as keyof typeof result.title]}\n${result.description[locale as keyof typeof result.description]}\n\n${window.location.href}`;
+    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
     
     if (navigator.share) {
       // 네이티브 공유 API 사용 (모바일)

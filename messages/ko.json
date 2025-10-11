@@ -46,7 +46,8 @@
     "testCompleted": "테스트 완료!",
     "recommendedProducts": "추천 상품",
     "viewAnalysisResults": "분석 결과 보기",
-    "shareResult": "결과 공유하기"
+    "shareResult": "결과 공유하기",
+    "shareInviteMessage": "궁금하면 퀴즈오아시스에서 직접 해보세요!"
   },
   "footer": {
     "slogan": "당신의 마음을 탐험하는 심리테스트의 오아시스",
