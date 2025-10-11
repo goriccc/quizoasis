@@ -80,6 +80,9 @@ export default function Footer() {
         {/* 저작권 */}
         <div className="text-center text-xs text-gray-500 pt-6 border-t border-gray-800">
           <p>{t('copyright')}</p>
+          <p className="mt-2 text-gray-600">
+            v1.0.0-{process.env.NEXT_PUBLIC_GIT_HASH || 'dev'} ({process.env.NEXT_PUBLIC_BUILD_TIME || 'local'})
+          </p>
         </div>
       </div>
     </footer>
