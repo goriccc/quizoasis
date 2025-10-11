@@ -48,7 +48,6 @@ export default function MBTITestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<MBTIQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [isGalaxyFold, setIsGalaxyFold] = useState(false);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
@@ -142,17 +141,6 @@ export default function MBTITestClient({
       return () => clearTimeout(timer);
     }
   }, [showLoadingSpinner]);
-
-  // 갤럭시 폴드 감지
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const userAgent = navigator.userAgent;
-      // 갤럭시 폴드 시리즈 감지 (SM-F로 시작)
-      const isFold = /SM-F(9|7)\d{2}/i.test(userAgent) || 
-                     /Galaxy Fold|Galaxy Z Fold/i.test(userAgent);
-      setIsGalaxyFold(isFold);
-    }
-  }, []);
 
   // AdSense 광고 로드
   useEffect(() => {
@@ -403,25 +391,11 @@ export default function MBTITestClient({
                   referrerPolicy="unsafe-url"
                   className="w-full"
                 />
-              ) : isGalaxyFold ? (
-                // 갤럭시 폴드 (한국어 아님): AdSense 광고
-                <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg text-center">
-                  <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
-                    📢 AdSense 광고 영역 (폴드 전용)
-                  </div>
-                  <ins className="adsbygoogle"
-                    style={{ display: 'block' }}
-                    data-ad-client="ca-pub-1234567890123456"
-                    data-ad-slot="9999999999"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"
-                  />
-                </div>
               ) : (
                 // 기타 언어: 알리익스프레스 어필리에이트
                 <div className="flex justify-center">
                   <a 
-                    href="https://s.click.aliexpress.com/e/_c3qvGy6B?bz=300*250" 
+                    href="https://s.click.aliexpress.com/e/_c3qpaw2r?bz=300*250" 
                     target="_parent"
                   >
                     <img 
@@ -618,25 +592,11 @@ export default function MBTITestClient({
                   className="rounded-lg"
                 />
               </div>
-            ) : isGalaxyFold ? (
-              // 갤럭시 폴드 (한국어 아님): AdSense 광고
-              <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg text-center">
-                <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
-                  📢 AdSense 광고 영역 (폴드 전용 - 팝업)
-                </div>
-                <ins className="adsbygoogle"
-                  style={{ display: 'block' }}
-                  data-ad-client="ca-pub-1234567890123456"
-                  data-ad-slot="9999999999"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"
-                />
-              </div>
             ) : (
               // 기타 언어: 알리익스프레스 어필리에이트
               <div className="flex justify-center">
                 <a 
-                  href="https://s.click.aliexpress.com/e/_c3UhUOTh?bz=300*250" 
+                  href="https://s.click.aliexpress.com/e/_c3qpaw2r?bz=300*250" 
                   target="_parent"
                 >
                   <img 
