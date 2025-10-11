@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "QuizOasis",
+    "fortune": "Vận mệnh",
+    "face": "Khuôn mặt",
+    "search": "Tìm kiếm",
+    "menu": {
+      "feedback": "Gửi ý kiến",
+      "report": "Báo lỗi"
+    }
+  },
+  "tags": {
+    "all": "Tất cả",
+    "personality": "Tính cách",
+    "love": "Tình yêu",
+    "career": "Nghề nghiệp",
+    "friendship": "Bạn bè",
+    "mbti": "MBTI",
+    "fun": "Vui vẻ",
+    "deep": "Sâu sắc"
+  },
+  "sections": {
+    "latest": "Bài kiểm tra mới nhất",
+    "category": "Danh mục"
+  },
+  "playCount": {
+    "thousand": "N",
+    "tenThousand": "Tr",
+    "plays": "lượt"
+  },
+  "mbti": {
+    "startTest": "Bắt đầu kiểm tra",
+    "totalParticipants": "Tổng cộng {count} người đã tham gia",
+    "shareWithFriends": "Chia sẻ với bạn bè",
+    "similarTests": "Các bài kiểm tra tương tự",
+    "progress": "Tiến trình",
+    "yourResult": "Kết quả của bạn",
+    "characteristics": "Đặc điểm",
+    "copingMethods": "Đề xuất đối phó",
+    "retakeTest": "Làm lại",
+    "otherTests": "Xem các bài kiểm tra khác",
+    "loadingResults": "Đang phân tích kết quả...",
+    "testCompleted": "Kiểm tra hoàn thành!",
+    "recommendedProducts": "Sản phẩm đề xuất",
+    "viewAnalysisResults": "Xem kết quả phân tích"
+  },
+  "footer": {
+    "slogan": "Ốc đảo của các bài kiểm tra tâm lý để khám phá tâm trí bạn",
+    "disclaimer": "Nhà xuất bản có thể nhận hoa hồng thông qua quảng cáo",
+    "company": "Công ty: MultyPipe",
+    "ceo": "Giám đốc: Song Junho",
+    "address": "Địa chỉ: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, Hàn Quốc",
+    "businessNumber": "Số đăng ký kinh doanh: 304-24-18806",
+    "copyright": "Copyright © QuizOasis Co., Ltd"
+  }
+}
+

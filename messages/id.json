@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "QuizOasis",
+    "fortune": "Ramalan",
+    "face": "Wajah",
+    "search": "Cari",
+    "menu": {
+      "feedback": "Kirim Masukan",
+      "report": "Laporkan Kesalahan"
+    }
+  },
+  "tags": {
+    "all": "Semua",
+    "personality": "Kepribadian",
+    "love": "Cinta",
+    "career": "Karier",
+    "friendship": "Persahabatan",
+    "mbti": "MBTI",
+    "fun": "Menyenangkan",
+    "deep": "Mendalam"
+  },
+  "sections": {
+    "latest": "Tes Terbaru",
+    "category": "Kategori"
+  },
+  "playCount": {
+    "thousand": "rb",
+    "tenThousand": "jt",
+    "plays": "x"
+  },
+  "mbti": {
+    "startTest": "Mulai Tes",
+    "totalParticipants": "Total {count} orang telah berpartisipasi",
+    "shareWithFriends": "Bagikan dengan Teman",
+    "similarTests": "Tes Serupa Lainnya",
+    "progress": "Kemajuan",
+    "yourResult": "Hasil Anda",
+    "characteristics": "Karakteristik",
+    "copingMethods": "Saran Penanganan",
+    "retakeTest": "Ulangi Tes",
+    "otherTests": "Lihat Tes Lainnya",
+    "loadingResults": "Menganalisis hasil...",
+    "testCompleted": "Tes Selesai!",
+    "recommendedProducts": "Produk Rekomendasi",
+    "viewAnalysisResults": "Lihat Hasil Analisis"
+  },
+  "footer": {
+    "slogan": "Oasis tes psikologi untuk menjelajahi pikiran Anda",
+    "disclaimer": "Penerbit dapat menerima komisi melalui iklan",
+    "company": "Perusahaan: MultyPipe",
+    "ceo": "CEO: Song Junho",
+    "address": "Alamat: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, Korea Selatan",
+    "businessNumber": "No. Bisnis: 304-24-18806",
+    "copyright": "Copyright © QuizOasis Co., Ltd"
+  }
+}
+

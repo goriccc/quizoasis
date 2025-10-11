@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "QuizOasis",
+    "fortune": "運勢",
+    "face": "顔",
+    "search": "検索",
+    "menu": {
+      "feedback": "フィードバック",
+      "report": "エラー報告"
+    }
+  },
+  "tags": {
+    "all": "全て",
+    "personality": "性格",
+    "love": "恋愛",
+    "career": "職業",
+    "friendship": "友達",
+    "mbti": "MBTI",
+    "fun": "楽しい",
+    "deep": "深い"
+  },
+  "sections": {
+    "latest": "最新テスト",
+    "category": "カテゴリ"
+  },
+  "playCount": {
+    "thousand": "千",
+    "tenThousand": "万",
+    "plays": "回"
+  },
+  "mbti": {
+    "startTest": "テスト開始",
+    "totalParticipants": "合計{count}人が参加しました",
+    "shareWithFriends": "友達と一緒にやる",
+    "similarTests": "似た他のテスト",
+    "progress": "進捗",
+    "yourResult": "あなたの結果",
+    "characteristics": "特徴",
+    "copingMethods": "対処法の提案",
+    "retakeTest": "もう一度",
+    "otherTests": "他のテストを見る",
+    "loadingResults": "結果を分析しています...",
+    "testCompleted": "テスト完了！",
+    "recommendedProducts": "おすすめ商品",
+    "viewAnalysisResults": "分析結果を見る"
+  },
+  "footer": {
+    "slogan": "あなたの心を探る心理テストのオアシス",
+    "disclaimer": "運営者は広告を通じて一定の手数料を受け取る場合があります",
+    "company": "会社: MultyPipe",
+    "ceo": "代表: Song Junho",
+    "address": "住所: 京畿道金浦市泰壮路765、607号",
+    "businessNumber": "事業者番号: 304-24-18806",
+    "copyright": "Copyright © QuizOasis Co., Ltd"
+  }
+}
+

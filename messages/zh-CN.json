@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "QuizOasis",
+    "fortune": "运势",
+    "face": "面相",
+    "search": "搜索",
+    "menu": {
+      "feedback": "发送反馈",
+      "report": "报告错误"
+    }
+  },
+  "tags": {
+    "all": "全部",
+    "personality": "性格",
+    "love": "恋爱",
+    "career": "职业",
+    "friendship": "朋友",
+    "mbti": "MBTI",
+    "fun": "有趣",
+    "deep": "深度"
+  },
+  "sections": {
+    "latest": "最新测试",
+    "category": "分类"
+  },
+  "playCount": {
+    "thousand": "千",
+    "tenThousand": "万",
+    "plays": "次"
+  },
+  "mbti": {
+    "startTest": "开始测试",
+    "totalParticipants": "共有{count}人参与",
+    "shareWithFriends": "与朋友一起测试",
+    "similarTests": "相似的其他测试",
+    "progress": "进度",
+    "yourResult": "您的结果",
+    "characteristics": "特征",
+    "copingMethods": "应对方法建议",
+    "retakeTest": "重新测试",
+    "otherTests": "查看其他测试",
+    "loadingResults": "正在分析结果...",
+    "testCompleted": "测试完成！",
+    "recommendedProducts": "推荐商品",
+    "viewAnalysisResults": "查看分析结果"
+  },
+  "footer": {
+    "slogan": "探索您内心的心理测试绿洲",
+    "disclaimer": "发布者可能通过广告获得一定佣金",
+    "company": "公司: MultyPipe",
+    "ceo": "代表: Song Junho",
+    "address": "地址: 京畿道金浦市泰壮路765号607室",
+    "businessNumber": "营业执照: 304-24-18806",
+    "copyright": "Copyright © QuizOasis Co., Ltd"
+  }
+}
+

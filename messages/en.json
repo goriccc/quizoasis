@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "QuizOasis",
+    "fortune": "Fortune",
+    "face": "Face",
+    "search": "Search",
+    "menu": {
+      "feedback": "Send Feedback",
+      "report": "Report Error"
+    }
+  },
+  "tags": {
+    "all": "All",
+    "personality": "Personality",
+    "love": "Love",
+    "career": "Career",
+    "friendship": "Friendship",
+    "mbti": "MBTI",
+    "fun": "Fun",
+    "deep": "Deep"
+  },
+  "sections": {
+    "latest": "Latest Tests",
+    "category": "Category"
+  },
+  "playCount": {
+    "thousand": "K",
+    "tenThousand": "M",
+    "plays": ""
+  },
+  "mbti": {
+    "startTest": "Start Test",
+    "totalParticipants": "{count} people participated",
+    "shareWithFriends": "Share with Friends",
+    "similarTests": "Similar Tests",
+    "progress": "Progress",
+    "yourResult": "Your Result",
+    "characteristics": "Characteristics",
+    "copingMethods": "Coping Methods",
+    "retakeTest": "Retake Test",
+    "otherTests": "Other Tests",
+    "loadingResults": "Analyzing results...",
+    "testCompleted": "Test Completed!",
+    "recommendedProducts": "Recommended Products",
+    "viewAnalysisResults": "View Analysis Results"
+  },
+  "footer": {
+    "slogan": "An oasis of psychological tests to explore your mind",
+    "disclaimer": "The publisher may receive a commission through advertising",
+    "company": "Company: MultyPipe",
+    "ceo": "CEO: Song Junho",
+    "address": "Address: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, South Korea",
+    "businessNumber": "Business No: 304-24-18806",
+    "copyright": "Copyright © QuizOasis Co., Ltd"
+  }
+}
+

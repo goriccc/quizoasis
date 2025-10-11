@@ -1,0 +1,60 @@
+{
+  "header": {
+    "title": "QuizOasis",
+    "fortune": "운세",
+    "face": "얼굴",
+    "search": "검색",
+    "menu": {
+      "feedback": "의견 보내기",
+      "report": "오류 수정 요청"
+    }
+  },
+  "tags": {
+    "all": "전체",
+    "personality": "성격",
+    "love": "연애",
+    "career": "직업",
+    "friendship": "친구",
+    "mbti": "MBTI",
+    "fun": "재미",
+    "deep": "깊이",
+    "MBTI": "MBTI",
+    "성격": "성격",
+    "유형": "유형"
+  },
+  "sections": {
+    "latest": "최신 테스트",
+    "category": "카테고리"
+  },
+  "playCount": {
+    "thousand": "천",
+    "tenThousand": "만",
+    "plays": "회"
+  },
+  "mbti": {
+    "startTest": "테스트 시작하기",
+    "totalParticipants": "총 {count}명이 참여했어요",
+    "shareWithFriends": "친구와 같이 해보기",
+    "similarTests": "유사한 다른 테스트",
+    "progress": "진행률",
+    "yourResult": "당신의 결과는",
+    "characteristics": "특징",
+    "copingMethods": "대처법 제안",
+    "retakeTest": "다시 하기",
+    "otherTests": "다른 테스트 보기",
+    "loadingResults": "결과를 분석하고 있습니다...",
+    "testCompleted": "테스트 완료!",
+    "recommendedProducts": "추천 상품",
+    "viewAnalysisResults": "분석 결과 보기"
+  },
+  "footer": {
+    "slogan": "당신의 마음을 탐험하는 심리테스트의 오아시스",
+    "disclaimer": "게시자는 광고를 통해 일정 수수료를 받을 수 있습니다",
+    "company": "상호: 멀티파이프",
+    "ceo": "대표: 송준호",
+    "address": "주소: 경기도 김포시 태장로 765, 607호",
+    "businessNumber": "사업자 번호: 304-24-18806",
+    "copyright": "Copyright © QuizOasis Co., Ltd"
+  }
+}
+
