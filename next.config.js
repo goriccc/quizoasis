@@ -42,7 +42,14 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    minimumCacheTTL: 60, // 이미지 캐시 TTL 설정
   },
+  // 폰트 최적화
+  optimizeFonts: true,
+  // 압축 활성화
+  compress: true,
+  // Production 성능 최적화
+  swcMinify: true,
 };
 
 module.exports = withNextIntl(nextConfig);

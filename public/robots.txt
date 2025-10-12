@@ -1,0 +1,21 @@
+# QuizOasis - Development Mode
+# 개발 중 - 모든 크롤링 차단 (검색엔진 색인 방지)
+
+User-agent: *
+Disallow: /
+
+# ============================================
+# 🚀 배포 시 아래 내용으로 변경하세요!
+# ============================================
+# User-agent: *
+# Allow: /
+#
+# Sitemap: https://quizoasis.com/sitemap.xml
+#
+# Disallow: /api/
+# Disallow: /_next/
+# Disallow: /static/
+#
+# Crawl-delay: 1
+# ============================================
+

@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { getTests } from '@/lib/supabase';
 import { dummyTests } from '@/lib/dummyData';
 import HomePageClient from '@/components/HomePageClient';
@@ -15,9 +16,14 @@ interface Props {
 // ISR: 10분마다 자동 재생성
 export const revalidate = 600;
 
+// metadata는 app/[locale]/layout.tsx에서 처리
+
 export default async function HomePage({ params }: Props) {
   const { locale } = params;
   setRequestLocale(locale);
+  
+  // FAQ Schema 임시 제거 - 디버깅용
+  const faqSchema = null;
   
   try {
     // Supabase에서 테스트 데이터 가져오기

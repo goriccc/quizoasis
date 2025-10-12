@@ -41,10 +41,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}?v=${Date.now()}`;
   
 
+  const baseUrl = 'https://quizoasis-coral.vercel.app';
+  const canonicalUrl = `${baseUrl}/${locale}/test/${slug}`;
+
   return {
     title: title,
     description: description,
     keywords: Array.isArray(tags) ? tags.join(', ') : '',
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        'ko': `${baseUrl}/ko/test/${slug}`,
+        'en': `${baseUrl}/en/test/${slug}`,
+        'ja': `${baseUrl}/ja/test/${slug}`,
+        'zh-CN': `${baseUrl}/zh-CN/test/${slug}`,
+        'zh-TW': `${baseUrl}/zh-TW/test/${slug}`,
+        'id': `${baseUrl}/id/test/${slug}`,
+        'vi': `${baseUrl}/vi/test/${slug}`,
+      },
+    },
     openGraph: {
       title: title,
       description: description,
@@ -58,7 +73,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         }
       ],
       type: 'website',
-      url: `https://quizoasis-coral.vercel.app/${locale}/test/${slug}?v=${Date.now()}`,
+      url: `${canonicalUrl}?v=${Date.now()}`,
       siteName: 'QuizOasis',
       locale: locale,
     },
@@ -102,22 +117,98 @@ export default async function TestPage({ params }: Props) {
 
   const title = test.title[locale] || test.title.ko || '';
   const description = test.description?.[locale] || test.description?.ko || '';
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}`;
+
+  // JSON-LD Schema for SEO - Quiz
+  const jsonLdQuiz = {
+    '@context': 'https://schema.org',
+    '@type': 'Quiz',
+    name: title,
+    description: description,
+    image: thumbnailUrl,
+    url: `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`,
+    author: {
+      '@type': 'Organization',
+      name: 'QuizOasis',
+      url: 'https://quizoasis-coral.vercel.app',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'QuizOasis',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://quizoasis-coral.vercel.app/logo.png',
+      },
+    },
+    inLanguage: locale,
+    interactionStatistic: {
+      '@type': 'InteractionCounter',
+      interactionType: 'https://schema.org/PlayAction',
+      userInteractionCount: test.play_count || 0,
+    },
+    numberOfQuestions: testData.questions.length,
+    educationalLevel: 'General',
+    typicalAgeRange: '13-99',
+    keywords: typeof test.tags === 'object' && !Array.isArray(test.tags)
+      ? (test.tags[locale] || test.tags.ko || []).join(', ')
+      : Array.isArray(test.tags) ? test.tags.join(', ') : '',
+  };
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `https://quizoasis-coral.vercel.app/${locale}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: test.category || 'Tests',
+        item: `https://quizoasis-coral.vercel.app/${locale}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: title,
+      },
+    ],
+  };
 
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   const TestClient = test.type === 'stress' ? StressTestClient : MBTITestClient;
 
   return (
-    <TestClient
-      locale={locale}
-      slug={slug}
-      title={title}
-      description={description}
-      questions={testData.questions}
-      results={testData.results}
-      questionCount={testData.questions.length}
-      thumbnail={test.thumbnail}
-      playCount={test.play_count}
-      similarTests={[]} // 클라이언트 사이드에서 로드
-    />
+    <>
+      {/* JSON-LD Schema - Quiz */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
+      />
+      
+      {/* JSON-LD Schema - Breadcrumb */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      
+      <TestClient
+        locale={locale}
+        slug={slug}
+        title={title}
+        description={description}
+        questions={testData.questions}
+        results={testData.results}
+        questionCount={testData.questions.length}
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+        similarTests={[]} // 클라이언트 사이드에서 로드
+      />
+    </>
   );
 }

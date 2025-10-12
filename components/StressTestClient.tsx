@@ -609,7 +609,8 @@ export default function StressTestClient({
               <div className="flex justify-center">
                 <a 
                   href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
-                  target="_parent"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img 
                     width="300" 
