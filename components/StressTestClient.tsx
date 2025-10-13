@@ -261,7 +261,6 @@ export default function StressTestClient({
 
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      window.scrollTo(0, 0);
     } else {
       // 모든 질문 완료 - 로딩 스피너 표시
       setShowLoadingSpinner(true);

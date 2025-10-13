@@ -246,7 +246,6 @@ export default function DatingTestClient({
 
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      window.scrollTo(0, 0);
     } else {
       setShowLoadingSpinner(true);
       
