@@ -44,7 +44,9 @@
     "recommendedProducts": "推薦商品",
     "viewAnalysisResults": "查看分析結果",
     "shareResult": "分享結果",
-    "shareInviteMessage": "好奇嗎？來QuizOasis直接試試吧！"
+    "shareInviteMessage": "好奇嗎？來QuizOasis直接試試吧！",
+    "mbtiTestIntro": "複雜的MBTI測試到此為止！\n外向？內向？\n現實？理想？\n邏輯？感性？\n計劃？即興？\n16種性格類型中，你屬於哪一種？\n和朋友、戀人、家人一起試試吧！\n這是理解彼此性格的第一步。\n只需1分鐘就能發現你的MBTI傾向\n和核心性格特徵！",
+    "stressTestIntro": "爆發？忍耐？逃避？發現你的壓力應對方式！\n上司突然分配的工作任務，\n朋友間突然的衝突，\n意想不到的問題情況...\n有人會立即爆發，\n有人會默默忍耐，\n有人會逃避問題。\n你在壓力面前是什麼樣子？\n想找到更健康的應對方法嗎？\n只需3分鐘就能發現你的壓力反應模式\n和更好的應對方法！"
   },
   "footer": {
     "slogan": "探索您內心的心理測試綠洲",

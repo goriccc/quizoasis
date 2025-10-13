@@ -372,8 +372,8 @@ export default function StressTestClient({
             </div>
 
             {/* 설명 */}
-            <p className="text-gray-600 mb-6 leading-relaxed text-center">
-              {description}
+            <p className="text-gray-600 mb-6 leading-relaxed text-center whitespace-pre-line">
+              {t('mbti.stressTestIntro')}
             </p>
 
             {/* 시작 버튼 */}

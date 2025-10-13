@@ -44,7 +44,9 @@
     "recommendedProducts": "推荐商品",
     "viewAnalysisResults": "查看分析结果",
     "shareResult": "分享结果",
-    "shareInviteMessage": "好奇吗？来QuizOasis直接试试吧！"
+    "shareInviteMessage": "好奇吗？来QuizOasis直接试试吧！",
+    "mbtiTestIntro": "复杂的MBTI测试到此为止！\n外向？内向？\n现实？理想？\n逻辑？感性？\n计划？即兴？\n16种性格类型中，你属于哪一种？\n和朋友、恋人、家人一起试试吧！\n这是理解彼此性格的第一步。\n只需1分钟就能发现你的MBTI倾向\n和核心性格特征！",
+    "stressTestIntro": "爆发？忍耐？逃避？发现你的压力应对方式！\n上司突然分配的工作任务，\n朋友间突然的冲突，\n意想不到的问题情况...\n有人会立即爆发，\n有人会默默忍耐，\n有人会逃避问题。\n你在压力面前是什么样子？\n想找到更健康的应对方法吗？\n只需3分钟就能发现你的压力反应模式\n和更好的应对方法！"
   },
   "footer": {
     "slogan": "探索您内心的心理测试绿洲",

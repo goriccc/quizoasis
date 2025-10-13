@@ -44,7 +44,9 @@
     "recommendedProducts": "Recommended Products",
     "viewAnalysisResults": "View Analysis Results",
     "shareResult": "Share Result",
-    "shareInviteMessage": "Curious? Try it directly on QuizOasis!"
+    "shareInviteMessage": "Curious? Try it directly on QuizOasis!",
+    "mbtiTestIntro": "No more complicated MBTI tests!\nExtroverted? Introverted?\nRealistic? Idealistic?\nLogical? Emotional?\nPlanned? Spontaneous?\nWhich of the 16 personality types do you belong to?\nTry it with friends, lovers, and family!\nIt's the first step to understanding each other's personalities.\nIn just 1 minute, discover your MBTI tendencies\nand core personality traits!",
+    "stressTestIntro": "Explode? Endure? Avoid? Discover your stress coping style!\nSudden work demands from your boss,\nUnexpected conflicts with friends,\nUnforeseen problem situations...\nSome people explode immediately,\nSome people suppress their feelings,\nSome people avoid the problem.\nHow do you react to stress?\nLooking for healthier coping strategies?\nIn just 3 minutes, discover your stress response pattern\nand better coping methods!"
   },
   "footer": {
     "slogan": "An oasis of psychological tests to explore your mind",
