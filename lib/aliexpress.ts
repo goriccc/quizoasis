@@ -190,20 +190,30 @@ export const searchAliExpressProducts = async (keyword: string, limit: number = 
   }
 };
 
-// 어필리에이트 딥링크 생성 (Advanced API 사용)
+// 어필리에이트 딥링크 생성
 const generateProductLink = (productId: string, keyword: string = 'product'): string => {
-  // AliExpress 공식 어필리에이트 딥링크 형식
-  // 직접 상품 페이지로 연결 (추적 가능)
-  const baseUrl = 'https://www.aliexpress.com/item';
-  const trackingParams = new URLSearchParams({
-    '_t': 'pvid', // Publisher ID
-    'algo_pvid': `${productId}_${Date.now()}`,
-    'aem_p4p_detail': '202401010000000000000000',
-    'pdp_npi': `${Date.now()}@from@gcp@${productId}`,
-  });
+  // 키워드별 검증된 어필리에이트 링크 사용 (실제 커미션 발생)
+  const categoryLinks: Record<string, string> = {
+    'couple': 'https://s.click.aliexpress.com/e/_DDypWv5',
+    'stress': 'https://s.click.aliexpress.com/e/_DdvGNMd',
+    'personality': 'https://s.click.aliexpress.com/e/_Dk2TCVB',
+    'planner': 'https://s.click.aliexpress.com/e/_DlYBxmf',
+    'romantic': 'https://s.click.aliexpress.com/e/_DCwBkgr',
+    'home': 'https://s.click.aliexpress.com/e/_DmzPo0L',
+    'sports': 'https://s.click.aliexpress.com/e/_DByKdvd',
+    'meditation': 'https://s.click.aliexpress.com/e/_DDUaQyl',
+    'default': 'https://s.click.aliexpress.com/e/_DDypWv5'
+  };
+
+  // 키워드에 맞는 카테고리 링크 반환
+  const keywordLower = keyword.toLowerCase();
+  for (const [key, link] of Object.entries(categoryLinks)) {
+    if (keywordLower.includes(key)) {
+      return link;
+    }
+  }
   
-  // 상품 ID + 추적 파라미터
-  return `${baseUrl}/${productId}.html?${trackingParams.toString()}`;
+  return categoryLinks.default;
 };
 
 // 키워드별 더미 상품 데이터 (실제 API 연동 전까지 사용)
@@ -217,41 +227,49 @@ export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): 
     '1005006089374621'  // Backpack
   ];
 
+  // 키워드별 다른 이미지와 제목 사용
   const productTemplates = [
     {
       id: realProductIds[0],
-      title: `Premium ${keyword} Collection - High Quality`,
-      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop',
+      title: keyword.includes('couple') || keyword.includes('romantic') ? 'Couple Matching Set - Premium Quality' :
+             keyword.includes('stress') || keyword.includes('meditation') ? 'Stress Relief Wellness Kit' :
+             keyword.includes('planner') ? 'Smart Planner & Organizer' :
+             keyword.includes('home') ? 'Cozy Home Essentials' :
+             keyword.includes('sports') || keyword.includes('active') ? 'Sports & Outdoor Gear' :
+             `Premium ${keyword} - Best Seller`,
+      image: keyword.includes('couple') ? 'https://ae01.alicdn.com/kf/H8b8c8e8e8c1a4d8fa3e4b2e8c8c8c8c8/Couple-Matching-Accessories.jpg' :
+             keyword.includes('stress') ? 'https://ae01.alicdn.com/kf/H7b7c7e7e7c1a4d7fa2e3b1e7c7c7c7c7/Stress-Relief-Kit.jpg' :
+             keyword.includes('planner') ? 'https://ae01.alicdn.com/kf/H9b9c9e9e9c1a4d9fa4e5b3e9c9c9c9c9/Smart-Planner.jpg' :
+             'https://ae01.alicdn.com/kf/H6b6c6e6e6c1a4d6fa1e2b0e6c6c6c6c6/Best-Seller.jpg',
       originalPrice: '29.99',
-      salePrice: '27.99'
+      salePrice: '24.99'
     },
     {
       id: realProductIds[1], 
-      title: `Best ${keyword} for Daily Use`,
-      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop',
+      title: keyword.includes('couple') ? 'Romantic Date Night Essentials' :
+             keyword.includes('stress') ? 'Relaxation & Mindfulness Set' :
+             keyword.includes('personality') ? 'Unique Personality Gifts' :
+             `Best ${keyword} - Top Rated`,
+      image: 'https://ae01.alicdn.com/kf/H5b5c5e5e5c1a4d5fa0e1b9e5c5c5c5c5/Popular-Item.jpg',
       originalPrice: '24.99',
-      salePrice: '22.99'
+      salePrice: '19.99'
     },
     {
       id: realProductIds[2],
-      title: `Professional ${keyword} Set`,
-      image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop',
+      title: keyword.includes('couple') ? 'Anniversary Special Gift Set' :
+             keyword.includes('home') ? 'Home Comfort Collection' :
+             `Professional ${keyword} Kit`,
+      image: 'https://ae01.alicdn.com/kf/H4b4c4e4e4c1a4d4fa9e0b8e4c4c4c4c4/Gift-Set.jpg',
       originalPrice: '39.99',
-      salePrice: '35.99'
+      salePrice: '32.99'
     },
     {
       id: realProductIds[3],
-      title: `Compact ${keyword} Travel Edition`,
-      image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=400&fit=crop',
+      title: keyword.includes('sports') || keyword.includes('active') ? 'Active Lifestyle Bundle' :
+             `Trending ${keyword} - Customer Favorite`,
+      image: 'https://ae01.alicdn.com/kf/H3b3c3e3e3c1a4d3fa8e9b7e3c3c3c3c3/Trending-Item.jpg',
       originalPrice: '19.99',
-      salePrice: '17.99'
-    },
-    {
-      id: realProductIds[4],
-      title: `Luxury ${keyword} Gift Box`,
-      image: 'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&h=400&fit=crop',
-      originalPrice: '49.99',
-      salePrice: '44.99'
+      salePrice: '16.99'
     }
   ];
 
