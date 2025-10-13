@@ -61,7 +61,7 @@ export default function StressTestClient({
     if (locale !== 'ko' && !started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
-          const products = await searchAliExpressProducts('stress relief', 4);
+          const products = await searchAliExpressProducts('stress relief', 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -77,7 +77,7 @@ export default function StressTestClient({
       const loadProducts = async () => {
         try {
           const keywords = getProductKeywordsForStress(result.type, locale);
-          const products = await searchAliExpressProducts(keywords[0], 4);
+          const products = await searchAliExpressProducts(keywords[0], 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -242,9 +242,30 @@ export default function StressTestClient({
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // 모든 질문 완료 - 로딩 스피너 표시 후 결과 계산
-      calculateResult(newAnswers);
-      setShowLoadingSpinner(true); // 로딩 스피너 표시
+      // 모든 질문 완료 - 로딩 스피너 표시
+      setShowLoadingSpinner(true);
+      
+      // 결과 계산
+      const resultType = calculateStressResult(newAnswers);
+      const stressResult = results.find(r => r.type === resultType);
+      
+      // 결과 설정
+      if (stressResult) {
+        setResult(stressResult);
+      }
+      
+      // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
+      if (stressResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForStress(stressResult.type, locale);
+        console.log('😰 스트레스 결과:', stressResult.type, '→ 검색 키워드:', keywords[0]);
+        searchAliExpressProducts(keywords[0], 4, locale)
+          .then(products => {
+            console.log('✅ 로드된 상품:', products.slice(0, 2).map(p => p.product_title));
+            setAliProducts(products);
+          }).catch(error => {
+            console.error('결과 상품 로드 실패:', error);
+          });
+      }
     }
   };
 

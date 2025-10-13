@@ -50,34 +50,47 @@ async function callAliExpressAPI(method: string, params: Record<string, any>) {
   }
 }
 
-// 상품 검색 API
-export async function GET(request: NextRequest) {
-  const searchParams = request.nextUrl.searchParams;
-  const keyword = searchParams.get('keyword') || 'fashion';
-  const limit = parseInt(searchParams.get('limit') || '10');
-  const locale = searchParams.get('locale') || 'en';
-
+// 상품 검색 API (POST 메서드)
+export async function POST(request: NextRequest) {
   try {
-    // AliExpress Product Search API 호출
-    const response = await callAliExpressAPI('aliexpress.ds.product.get', {
+    const body = await request.json();
+    const keyword = body.keyword || 'fashion';
+    const limit = body.limit || 10;
+    const locale = body.locale || 'en';
+
+    // AliExpress Affiliate 상품 검색 API 호출 (Advanced API)
+    const response = await callAliExpressAPI('aliexpress.affiliate.product.query', {
       keywords: keyword,
       target_currency: 'USD',
-      target_language: locale.toUpperCase(),
+      target_language: locale === 'ko' ? 'KO' : 'EN',
+      page_no: '1',
       page_size: limit.toString(),
-      sort: 'SALE_PRICE_ASC'
+      sort: 'SALE_PRICE_ASC',
+      ship_to_country: 'US'
     });
 
     if (response.error_response) {
       console.error('AliExpress API 에러:', response.error_response);
+      throw new Error(response.error_response.msg);
+    }
+
+    // 응답 데이터 파싱
+    const result = response.aliexpress_affiliate_product_query_response?.resp_result;
+    
+    if (!result || !result.result) {
       return NextResponse.json({
         success: false,
-        error: response.error_response.msg,
         products: []
       });
     }
 
-    // 응답 데이터 파싱
-    const products = response.aliexpress_ds_product_get_response?.result?.products || [];
+    // products가 배열인지 객체인지 확인
+    const productsData = result.result.products;
+    
+    // products가 객체면 products.product 배열 사용
+    const products = Array.isArray(productsData) 
+      ? productsData 
+      : (productsData?.product || []);
 
     // 프론트엔드 형식에 맞게 변환
     const formattedProducts = products.map((product: any) => ({
@@ -85,10 +98,10 @@ export async function GET(request: NextRequest) {
       product_title: product.product_title,
       product_main_image_url: product.product_main_image_url,
       target_sale_price: product.target_sale_price,
-      target_sale_price_currency: product.target_sale_price_currency || 'USD',
-      target_app_sale_price: product.target_app_sale_price,
-      promotion_link: product.promotion_link,
-      sale_price: product.sale_price
+      target_sale_price_currency: 'USD',
+      target_app_sale_price: product.target_sale_price,
+      promotion_link: product.promotion_link || `https://www.aliexpress.com/item/${product.product_id}.html`,
+      sale_price: product.target_sale_price
     }));
 
     return NextResponse.json({
@@ -100,10 +113,10 @@ export async function GET(request: NextRequest) {
   } catch (error) {
     console.error('상품 검색 실패:', error);
     
-    // 에러 시 더미 데이터 반환
+    // 에러 시 빈 배열 반환 (더미 데이터는 클라이언트에서 처리)
     return NextResponse.json({
       success: false,
-      error: 'Failed to fetch products',
+      error: error instanceof Error ? error.message : 'Failed to fetch products',
       products: []
     });
   }

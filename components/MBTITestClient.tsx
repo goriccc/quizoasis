@@ -61,7 +61,7 @@ export default function MBTITestClient({
     if (locale !== 'ko' && !started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
-          const products = await searchAliExpressProducts('personality test gifts', 4);
+          const products = await searchAliExpressProducts('personality test gifts', 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -77,7 +77,7 @@ export default function MBTITestClient({
       const loadProducts = async () => {
         try {
           const keywords = getProductKeywordsForMBTI(result.type, locale);
-          const products = await searchAliExpressProducts(keywords[0], 4);
+          const products = await searchAliExpressProducts(keywords[0], 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -242,10 +242,52 @@ export default function MBTITestClient({
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // 모든 질문 완료 - 로딩 스피너 표시 후 결과 계산
-      calculateResult(newAnswers);
-      setShowLoadingSpinner(true); // 로딩 스피너 표시
+      // 모든 질문 완료 - 로딩 스피너 표시
+      setShowLoadingSpinner(true);
+      
+      // 결과 계산
+      const resultType = calculateMBTIType(newAnswers);
+      const mbtiResult = results.find(r => r.type === resultType);
+      
+      // 결과 설정
+      if (mbtiResult) {
+        setResult(mbtiResult);
+      }
+      
+      // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
+      if (mbtiResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForMBTI(mbtiResult.type, locale);
+        console.log('🧠 MBTI 결과:', mbtiResult.type, '→ 검색 키워드:', keywords[0]);
+        searchAliExpressProducts(keywords[0], 4, locale)
+          .then(products => {
+            console.log('✅ 로드된 상품:', products.slice(0, 2).map(p => p.product_title));
+            setAliProducts(products);
+          }).catch(error => {
+            console.error('결과 상품 로드 실패:', error);
+          });
+      }
     }
+  };
+  
+  // MBTI 타입 계산 헬퍼 함수
+  const calculateMBTIType = (finalAnswers: string[]): string => {
+    const scores: Record<string, number> = {
+      E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0,
+    };
+
+    finalAnswers.forEach((answer) => {
+      // answer는 "E", "I", "S", "N" 등의 점수 문자열
+      if (scores.hasOwnProperty(answer)) {
+        scores[answer] += 1;
+      }
+    });
+
+    return (
+      (scores.E >= scores.I ? 'E' : 'I') +
+      (scores.S >= scores.N ? 'S' : 'N') +
+      (scores.T >= scores.F ? 'T' : 'F') +
+      (scores.J >= scores.P ? 'J' : 'P')
+    );
   };
 
   // MBTI 결과 계산

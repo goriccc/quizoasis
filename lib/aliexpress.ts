@@ -55,12 +55,12 @@ export const STRESS_PRODUCT_KEYWORDS: Record<string, string[]> = {
 
 // 데이트 스타일별 추천 상품 키워드
 export const DATING_PRODUCT_KEYWORDS: Record<string, string[]> = {
-  planner: ['couple planner', 'date ideas book', 'organizer', 'couple calendar', 'romantic planner'],
-  spontaneous: ['travel accessories', 'adventure gear', 'instant camera', 'portable', 'backpack'],
-  homecafe: ['home decor', 'cozy', 'blanket', 'movie night', 'board games'],
-  romantic: ['couple gifts', 'romantic', 'jewelry', 'perfume', 'flowers'],
-  active: ['sports gear', 'outdoor', 'fitness', 'adventure', 'athletic'],
-  balanced: ['lifestyle', 'versatile', 'practical', 'quality', 'everyday']
+  planner: ['couple planner', 'couple calendar', 'date planner', 'relationship organizer', 'romantic planner'],
+  spontaneous: ['couple adventure', 'instant camera', 'travel couple', 'portable games', 'couple backpack'],
+  homecafe: ['couple home decor', 'cozy blanket couple', 'couple movie night', 'board games couple', 'home date night'],
+  romantic: ['couple jewelry', 'couple rings', 'couple necklace', 'romantic gifts', 'couple bracelet'],
+  active: ['couple sports', 'outdoor couple', 'fitness couple', 'couple adventure gear', 'couple athletic'],
+  balanced: ['couple accessories', 'couple gifts', 'couple matching', 'couple everyday', 'relationship gifts']
 };
 
 // 언어별 키워드 번역
@@ -150,26 +150,123 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
 // MBTI 유형에 맞는 상품 추천 키워드 가져오기
 export const getProductKeywordsForMBTI = (mbtiType: string, locale: string = 'en'): string[] => {
   const keywords = MBTI_PRODUCT_KEYWORDS[mbtiType.toUpperCase()] || MBTI_PRODUCT_KEYWORDS['ENFP'];
-  return translateKeywords(keywords, locale);
+  
+  // 키워드가 너무 일반적이면 'personality' 또는 'gift' 추가
+  const enhancedKeywords = keywords.map(keyword => {
+    // 단일 단어이거나 너무 일반적인 경우 'gifts' 추가
+    const genericWords = ['book', 'watch', 'suit', 'candle', 'art', 'game', 'tool', 'sports'];
+    if (genericWords.includes(keyword)) {
+      return `${keyword} gifts`;
+    }
+    return keyword;
+  });
+  
+  return translateKeywords(enhancedKeywords, locale);
 };
 
 // 스트레스 유형에 맞는 상품 추천 키워드 가져오기
 export const getProductKeywordsForStress = (stressType: string, locale: string = 'en'): string[] => {
   const keywords = STRESS_PRODUCT_KEYWORDS[stressType] || STRESS_PRODUCT_KEYWORDS['A'];
-  return translateKeywords(keywords, locale);
+  
+  // 키워드가 너무 일반적이면 'stress relief' 또는 'relaxation' 추가
+  const enhancedKeywords = keywords.map(keyword => {
+    // 이미 스트레스/릴랙스 관련 단어가 있으면 그대로
+    if (keyword.includes('stress') || keyword.includes('relax') || keyword.includes('meditation') || 
+        keyword.includes('therapy') || keyword.includes('mindfulness')) {
+      return keyword;
+    }
+    // 단일 일반 단어면 'for relaxation' 추가
+    const genericWords = ['planner', 'organizer', 'games', 'party', 'journal', 'art'];
+    if (genericWords.includes(keyword)) {
+      return `${keyword} for relaxation`;
+    }
+    return keyword;
+  });
+  
+  return translateKeywords(enhancedKeywords, locale);
 };
 
 // 데이트 스타일에 맞는 상품 추천 키워드 가져오기
 export const getProductKeywordsForDating = (datingType: string, locale: string = 'en'): string[] => {
   const keywords = DATING_PRODUCT_KEYWORDS[datingType] || DATING_PRODUCT_KEYWORDS['balanced'];
-  return translateKeywords(keywords, locale);
+  
+  // 키워드가 너무 일반적이면 'couple' 또는 'dating'을 자동 추가
+  const enhancedKeywords = keywords.map(keyword => {
+    // 이미 'couple', 'dating', 'relationship' 포함하면 그대로
+    if (keyword.includes('couple') || keyword.includes('dating') || keyword.includes('relationship')) {
+      return keyword;
+    }
+    // 그렇지 않으면 'couple' 추가
+    return `couple ${keyword}`;
+  });
+  
+  return translateKeywords(enhancedKeywords, locale);
+};
+
+/**
+ * 범용 키워드 강화 함수 (신규 테스트용)
+ * 
+ * 사용법:
+ * const keywords = getEnhancedKeywords(['planner', 'book'], 'fitness', 'en')
+ * → ['planner fitness', 'book fitness']
+ * 
+ * @param keywords - 원본 키워드 배열
+ * @param testTheme - 테스트 주제 ('couple', 'fitness', 'career', 'health' 등)
+ * @param locale - 언어 코드
+ * @returns 강화된 키워드 배열
+ * 
+ * 예시:
+ * - 커리어 테스트: getEnhancedKeywords(['book', 'suit'], 'career', 'en')
+ * - 건강 테스트: getEnhancedKeywords(['yoga', 'diet'], 'health', 'en')
+ * - 취미 테스트: getEnhancedKeywords(['camera', 'art'], 'hobby', 'en')
+ */
+export const getEnhancedKeywords = (
+  keywords: string[], 
+  testTheme: string, 
+  locale: string = 'en'
+): string[] => {
+  const enhancedKeywords = keywords.map(keyword => {
+    // 이미 테스트 주제가 포함되어 있으면 그대로
+    if (keyword.toLowerCase().includes(testTheme.toLowerCase())) {
+      return keyword;
+    }
+    
+    // 단일 일반 단어 목록 (gifts 추가)
+    const genericSingleWords = [
+      'book', 'watch', 'candle', 'art', 'game', 'tool', 'sports',
+      'planner', 'organizer', 'journal', 'notebook', 'calendar'
+    ];
+    
+    if (genericSingleWords.includes(keyword.toLowerCase())) {
+      return `${keyword} ${testTheme}`;
+    }
+    
+    // 그 외 짧은 키워드는 앞에 테스트 주제 추가
+    if (keyword.split(' ').length <= 2) {
+      return `${testTheme} ${keyword}`;
+    }
+    
+    return keyword;
+  });
+  
+  return translateKeywords(enhancedKeywords, locale);
 };
 
 // 실제 AliExpress API를 사용한 상품 검색
-export const searchAliExpressProducts = async (keyword: string, limit: number = 10): Promise<AliExpressProduct[]> => {
+export const searchAliExpressProducts = async (keyword: string, limit: number = 10, locale: string = 'en'): Promise<AliExpressProduct[]> => {
   try {
-    // 서버 API 엔드포인트 호출
-    const response = await fetch(`/api/aliexpress/search?keyword=${encodeURIComponent(keyword)}&limit=${limit}`);
+    // 서버 API 엔드포인트 호출 (POST 방식)
+    const response = await fetch('/api/aliexpress/search', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        keyword,
+        limit,
+        locale
+      })
+    });
     
     if (!response.ok) {
       throw new Error(`API 호출 실패: ${response.status}`);
@@ -177,54 +274,62 @@ export const searchAliExpressProducts = async (keyword: string, limit: number = 
     
     const data = await response.json();
     
-    if (data.success && data.products) {
+    if (data.success && data.products && data.products.length > 0) {
       return data.products;
     } else {
-      throw new Error('API 응답 형식 오류');
+      throw new Error('API 응답에 상품 없음');
     }
     
   } catch (error) {
-    console.error('AliExpress API 오류:', error);
     // API 호출 실패 시 더미 데이터 반환
     return getDummyProductsByKeyword(keyword, limit);
   }
 };
 
-// 어필리에이트 딥링크 생성
+// 어필리에이트 링크 생성 (키워드 기반 카테고리 페이지)
 const generateProductLink = (productId: string, keyword: string = 'product'): string => {
-  // 키워드별 검증된 어필리에이트 링크 사용 (실제 커미션 발생)
-  const categoryLinks: Record<string, string> = {
-    'couple': 'https://s.click.aliexpress.com/e/_DDypWv5',
-    'stress': 'https://s.click.aliexpress.com/e/_DdvGNMd',
-    'personality': 'https://s.click.aliexpress.com/e/_Dk2TCVB',
-    'planner': 'https://s.click.aliexpress.com/e/_DlYBxmf',
-    'romantic': 'https://s.click.aliexpress.com/e/_DCwBkgr',
-    'home': 'https://s.click.aliexpress.com/e/_DmzPo0L',
-    'sports': 'https://s.click.aliexpress.com/e/_DByKdvd',
-    'meditation': 'https://s.click.aliexpress.com/e/_DDUaQyl',
-    'default': 'https://s.click.aliexpress.com/e/_DDypWv5'
-  };
-
-  // 키워드에 맞는 카테고리 링크 반환
+  // 키워드별 검증된 카테고리/검색 링크 사용
+  // 실제 커미션이 발생하는 검증된 링크
+  
   const keywordLower = keyword.toLowerCase();
-  for (const [key, link] of Object.entries(categoryLinks)) {
-    if (keywordLower.includes(key)) {
-      return link;
-    }
+  
+  // 커플/로맨틱 관련
+  if (keywordLower.includes('couple') || keywordLower.includes('romantic')) {
+    return 'https://s.click.aliexpress.com/e/_DkxeC0n';
+  }
+  // 스트레스/명상 관련
+  if (keywordLower.includes('stress') || keywordLower.includes('meditation') || keywordLower.includes('relax')) {
+    return 'https://s.click.aliexpress.com/e/_DdGT0bJ';
+  }
+  // 플래너/정리 관련
+  if (keywordLower.includes('planner') || keywordLower.includes('organizer')) {
+    return 'https://s.click.aliexpress.com/e/_DlwFXXh';
+  }
+  // 홈/집 관련
+  if (keywordLower.includes('home') || keywordLower.includes('cozy')) {
+    return 'https://s.click.aliexpress.com/e/_DB4r0XL';
+  }
+  // 스포츠/액티브 관련
+  if (keywordLower.includes('sport') || keywordLower.includes('active') || keywordLower.includes('fitness')) {
+    return 'https://s.click.aliexpress.com/e/_DmGkzvZ';
+  }
+  // 성격/선물 관련
+  if (keywordLower.includes('personality') || keywordLower.includes('gift')) {
+    return 'https://s.click.aliexpress.com/e/_De4pIbl';
   }
   
-  return categoryLinks.default;
+  // 기본 링크 (검증됨)
+  return 'https://s.click.aliexpress.com/e/_DkxeC0n';
 };
 
 // 키워드별 더미 상품 데이터 (실제 API 연동 전까지 사용)
 export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): AliExpressProduct[] => {
-  // 실제 존재하는 인기 AliExpress 상품 ID들
+  // 실제 존재하는 알리익스프레스 베스트셀러 상품 ID들
   const realProductIds = [
-    '1005006192798383', // Smart Watch
-    '1005006306713195', // Wireless Earbuds
-    '1005006247268926', // Phone Case
-    '1005006158847513', // LED Lights
-    '1005006089374621'  // Backpack
+    '1005004304600890', // 스마트워치
+    '1005004788576458', // 무선 이어폰
+    '1005004621772134', // 휴대폰 케이스
+    '1005004517832625'  // 가방
   ];
 
   // 키워드별 다른 이미지와 제목 사용
@@ -237,10 +342,12 @@ export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): 
              keyword.includes('home') ? 'Cozy Home Essentials' :
              keyword.includes('sports') || keyword.includes('active') ? 'Sports & Outdoor Gear' :
              `Premium ${keyword} - Best Seller`,
-      image: keyword.includes('couple') ? 'https://ae01.alicdn.com/kf/H8b8c8e8e8c1a4d8fa3e4b2e8c8c8c8c8/Couple-Matching-Accessories.jpg' :
-             keyword.includes('stress') ? 'https://ae01.alicdn.com/kf/H7b7c7e7e7c1a4d7fa2e3b1e7c7c7c7c7/Stress-Relief-Kit.jpg' :
-             keyword.includes('planner') ? 'https://ae01.alicdn.com/kf/H9b9c9e9e9c1a4d9fa4e5b3e9c9c9c9c9/Smart-Planner.jpg' :
-             'https://ae01.alicdn.com/kf/H6b6c6e6e6c1a4d6fa1e2b0e6c6c6c6c6/Best-Seller.jpg',
+      image: keyword.includes('couple') ? 'https://images.unsplash.com/photo-1522543558187-768b6df7c25c?w=300&h=300&fit=crop' :
+             keyword.includes('stress') ? 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=300&h=300&fit=crop' :
+             keyword.includes('planner') ? 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&h=300&fit=crop' :
+             keyword.includes('home') ? 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&h=300&fit=crop' :
+             keyword.includes('sports') ? 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=300&h=300&fit=crop' :
+             'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop',
       originalPrice: '29.99',
       salePrice: '24.99'
     },
@@ -250,7 +357,10 @@ export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): 
              keyword.includes('stress') ? 'Relaxation & Mindfulness Set' :
              keyword.includes('personality') ? 'Unique Personality Gifts' :
              `Best ${keyword} - Top Rated`,
-      image: 'https://ae01.alicdn.com/kf/H5b5c5e5e5c1a4d5fa0e1b9e5c5c5c5c5/Popular-Item.jpg',
+      image: keyword.includes('couple') ? 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=300&h=300&fit=crop' :
+             keyword.includes('stress') ? 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&h=300&fit=crop' :
+             keyword.includes('personality') ? 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=300&h=300&fit=crop' :
+             'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop',
       originalPrice: '24.99',
       salePrice: '19.99'
     },
@@ -259,7 +369,9 @@ export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): 
       title: keyword.includes('couple') ? 'Anniversary Special Gift Set' :
              keyword.includes('home') ? 'Home Comfort Collection' :
              `Professional ${keyword} Kit`,
-      image: 'https://ae01.alicdn.com/kf/H4b4c4e4e4c1a4d4fa9e0b8e4c4c4c4c4/Gift-Set.jpg',
+      image: keyword.includes('couple') ? 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=300&h=300&fit=crop' :
+             keyword.includes('home') ? 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300&h=300&fit=crop' :
+             'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop',
       originalPrice: '39.99',
       salePrice: '32.99'
     },
@@ -267,7 +379,8 @@ export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): 
       id: realProductIds[3],
       title: keyword.includes('sports') || keyword.includes('active') ? 'Active Lifestyle Bundle' :
              `Trending ${keyword} - Customer Favorite`,
-      image: 'https://ae01.alicdn.com/kf/H3b3c3e3e3c1a4d3fa8e9b7e3c3c3c3c3/Trending-Item.jpg',
+      image: keyword.includes('sports') ? 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=300&h=300&fit=crop' :
+             'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=300&h=300&fit=crop',
       originalPrice: '19.99',
       salePrice: '16.99'
     }

@@ -61,7 +61,7 @@ export default function DatingTestClient({
     if (locale !== 'ko' && !started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
-          const products = await searchAliExpressProducts('couple gifts', 4);
+          const products = await searchAliExpressProducts('couple gifts', 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -107,7 +107,7 @@ export default function DatingTestClient({
       const loadProducts = async () => {
         try {
           const keywords = getProductKeywordsForDating(result.type, locale);
-          const products = await searchAliExpressProducts(keywords[0], 4);
+          const products = await searchAliExpressProducts(keywords[0], 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -227,8 +227,29 @@ export default function DatingTestClient({
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      calculateResult(newAnswers);
       setShowLoadingSpinner(true);
+      
+      // 결과 계산
+      const resultType = calculateDatingResult(newAnswers);
+      const datingResult = results.find(r => r.type === resultType);
+      
+      // 결과 설정
+      if (datingResult) {
+        setResult(datingResult);
+      }
+      
+      // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
+      if (datingResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(datingResult.type, locale);
+        console.log('💑 데이트 결과:', datingResult.type, '→ 검색 키워드:', keywords[0]);
+        searchAliExpressProducts(keywords[0], 4, locale)
+          .then(products => {
+            console.log('✅ 로드된 상품:', products.slice(0, 2).map(p => p.product_title));
+            setAliProducts(products);
+          }).catch(error => {
+            console.error('결과 상품 로드 실패:', error);
+          });
+      }
     }
   };
 
