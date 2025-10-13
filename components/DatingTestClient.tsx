@@ -8,6 +8,8 @@ import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Twitter, Facebook, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
+import ProductRecommendations from './ProductRecommendations';
 
 interface DatingTestClientProps {
   locale: string;
@@ -52,6 +54,22 @@ export default function DatingTestClient({
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
+  const [aliProducts, setAliProducts] = useState<any[]>([]);
+
+  // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
+  useEffect(() => {
+    if (locale !== 'ko' && !started && aliProducts.length === 0) {
+      const loadProducts = async () => {
+        try {
+          const products = await searchAliExpressProducts('couple gifts', 4);
+          setAliProducts(products);
+        } catch (error) {
+          console.error('상품 로드 실패:', error);
+        }
+      };
+      loadProducts();
+    }
+  }, [locale, started, aliProducts.length]);
 
   // AdSense 광고 로드
   useEffect(() => {
@@ -82,6 +100,22 @@ export default function DatingTestClient({
     
     return () => clearTimeout(timer);
   }, [started, showResult, showLoadingSpinner, showResultPopup]);
+
+  // 알리익스프레스 상품 로드 (결과에 맞춰)
+  useEffect(() => {
+    if (result && locale !== 'ko') {
+      const loadProducts = async () => {
+        try {
+          const keywords = getProductKeywordsForDating(result.type, locale);
+          const products = await searchAliExpressProducts(keywords[0], 4);
+          setAliProducts(products);
+        } catch (error) {
+          console.error('상품 로드 실패:', error);
+        }
+      };
+      loadProducts();
+    }
+  }, [result, locale]);
 
   // 유사한 테스트와 인기 테스트 로드
   useEffect(() => {
@@ -374,6 +408,17 @@ export default function DatingTestClient({
                   referrerPolicy="unsafe-url"
                   className="w-full"
                 />
+              ) : aliProducts.length > 0 ? (
+                <ProductRecommendations 
+                  products={aliProducts}
+                  title={locale === 'ja' ? '関連商品' :
+                         locale === 'zh-CN' ? '相关产品' :
+                         locale === 'zh-TW' ? '相關產品' :
+                         locale === 'vi' ? 'Sản phẩm liên quan' :
+                         locale === 'id' ? 'Produk terkait' :
+                         'Related Products'}
+                  locale={locale}
+                />
               ) : (
                 <div className="flex justify-center">
                   <a 
@@ -543,6 +588,14 @@ export default function DatingTestClient({
                   scrolling="no" 
                   referrerPolicy="unsafe-url"
                   className="rounded-lg"
+                />
+              </div>
+            ) : aliProducts.length > 0 ? (
+              <div className="max-w-sm mx-auto">
+                <ProductRecommendations 
+                  products={aliProducts.slice(0, 3)}
+                  title=""
+                  locale={locale}
                 />
               </div>
             ) : (

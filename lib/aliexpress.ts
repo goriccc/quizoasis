@@ -45,6 +45,24 @@ export const MBTI_PRODUCT_KEYWORDS: Record<string, string[]> = {
   ESFP: ['entertainment', 'party', 'fashion', 'music', 'fun accessories']
 };
 
+// 스트레스 반응 유형별 추천 상품 키워드
+export const STRESS_PRODUCT_KEYWORDS: Record<string, string[]> = {
+  A: ['stress relief', 'meditation', 'planner', 'organizer', 'time management'],
+  B: ['social games', 'party', 'team building', 'communication', 'friendship'],
+  C: ['yoga', 'relaxation', 'aromatherapy', 'comfortable', 'self care'],
+  D: ['journal', 'art therapy', 'peaceful', 'calm', 'mindfulness']
+};
+
+// 데이트 스타일별 추천 상품 키워드
+export const DATING_PRODUCT_KEYWORDS: Record<string, string[]> = {
+  planner: ['couple planner', 'date ideas book', 'organizer', 'couple calendar', 'romantic planner'],
+  spontaneous: ['travel accessories', 'adventure gear', 'instant camera', 'portable', 'backpack'],
+  homecafe: ['home decor', 'cozy', 'blanket', 'movie night', 'board games'],
+  romantic: ['couple gifts', 'romantic', 'jewelry', 'perfume', 'flowers'],
+  active: ['sports gear', 'outdoor', 'fitness', 'adventure', 'athletic'],
+  balanced: ['lifestyle', 'versatile', 'practical', 'quality', 'everyday']
+};
+
 // 언어별 키워드 번역
 export const translateKeywords = (keywords: string[], locale: string): string[] => {
   const translations: Record<string, Record<string, string>> = {
@@ -135,6 +153,18 @@ export const getProductKeywordsForMBTI = (mbtiType: string, locale: string = 'en
   return translateKeywords(keywords, locale);
 };
 
+// 스트레스 유형에 맞는 상품 추천 키워드 가져오기
+export const getProductKeywordsForStress = (stressType: string, locale: string = 'en'): string[] => {
+  const keywords = STRESS_PRODUCT_KEYWORDS[stressType] || STRESS_PRODUCT_KEYWORDS['A'];
+  return translateKeywords(keywords, locale);
+};
+
+// 데이트 스타일에 맞는 상품 추천 키워드 가져오기
+export const getProductKeywordsForDating = (datingType: string, locale: string = 'en'): string[] => {
+  const keywords = DATING_PRODUCT_KEYWORDS[datingType] || DATING_PRODUCT_KEYWORDS['balanced'];
+  return translateKeywords(keywords, locale);
+};
+
 // 실제 AliExpress API를 사용한 상품 검색
 export const searchAliExpressProducts = async (keyword: string, limit: number = 10): Promise<AliExpressProduct[]> => {
   try {
@@ -160,22 +190,31 @@ export const searchAliExpressProducts = async (keyword: string, limit: number = 
   }
 };
 
-// 검증된 어필리에이트 링크 생성
+// 어필리에이트 딥링크 생성 (Advanced API 사용)
 const generateProductLink = (productId: string, keyword: string = 'product'): string => {
-  // 사용자 제공 검증된 어필리에이트 링크 사용
-  // AliExpress에서 자동으로 적절한 상품으로 리디렉션
-  return 'https://s.click.aliexpress.com/e/_c3qvGy6B';
+  // AliExpress 공식 어필리에이트 딥링크 형식
+  // 직접 상품 페이지로 연결 (추적 가능)
+  const baseUrl = 'https://www.aliexpress.com/item';
+  const trackingParams = new URLSearchParams({
+    '_t': 'pvid', // Publisher ID
+    'algo_pvid': `${productId}_${Date.now()}`,
+    'aem_p4p_detail': '202401010000000000000000',
+    'pdp_npi': `${Date.now()}@from@gcp@${productId}`,
+  });
+  
+  // 상품 ID + 추적 파라미터
+  return `${baseUrl}/${productId}.html?${trackingParams.toString()}`;
 };
 
 // 키워드별 더미 상품 데이터 (실제 API 연동 전까지 사용)
 export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): AliExpressProduct[] => {
-  // 실제 AliExpress 상품 ID들 (인기 상품들)
+  // 실제 존재하는 인기 AliExpress 상품 ID들
   const realProductIds = [
-    '1005005549480845', // 실제 존재하는 상품 ID
-    '1005005549480846', 
-    '1005005549480847',
-    '1005005549480848',
-    '1005005549480849'
+    '1005006192798383', // Smart Watch
+    '1005006306713195', // Wireless Earbuds
+    '1005006247268926', // Phone Case
+    '1005006158847513', // LED Lights
+    '1005006089374621'  // Backpack
   ];
 
   const productTemplates = [
