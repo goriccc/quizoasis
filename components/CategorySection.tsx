@@ -31,7 +31,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
               key={test.id}
               href={`/${locale}/test/${test.slug}`}
               className="group"
-              prefetch="intent"
+              prefetch={true}
             >
               <div className="relative rounded-2xl overflow-hidden shadow-md card-hover bg-white">
                 {/* 썸네일 */}
