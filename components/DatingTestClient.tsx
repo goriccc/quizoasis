@@ -236,6 +236,7 @@ export default function DatingTestClient({
     setDisplayPlayCount(prev => prev + 1);
     incrementPlayCount(slug);
     setStarted(true);
+    window.scrollTo(0, 0);
   };
 
   // 답변 처리
@@ -245,6 +246,7 @@ export default function DatingTestClient({
 
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
+      window.scrollTo(0, 0);
     } else {
       setShowLoadingSpinner(true);
       
@@ -386,6 +388,7 @@ export default function DatingTestClient({
   const handleShowResult = () => {
     setShowResultPopup(false);
     setShowResult(true);
+    window.scrollTo(0, 0);
   };
 
   // 시작 화면

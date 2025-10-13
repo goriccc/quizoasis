@@ -255,6 +255,7 @@ export default function MBTITestClient({
     setDisplayPlayCount(prev => prev + 1); // 플레이 카운트 즉시 증가
     incrementPlayCount(slug); // 서버의 플레이 카운트도 증가
     setStarted(true);
+    window.scrollTo(0, 0);
   };
 
   // 답변 처리
@@ -264,6 +265,7 @@ export default function MBTITestClient({
 
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
+      window.scrollTo(0, 0);
     } else {
       // 모든 질문 완료 - 로딩 스피너 표시
       setShowLoadingSpinner(true);
@@ -452,6 +454,7 @@ export default function MBTITestClient({
   const handleShowResult = () => {
     setShowResultPopup(false);
     setShowResult(true);
+    window.scrollTo(0, 0);
   };
 
   // 시작 화면
