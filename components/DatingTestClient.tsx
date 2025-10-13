@@ -53,6 +53,36 @@ export default function DatingTestClient({
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
 
+  // AdSense 광고 로드
+  useEffect(() => {
+    if (showResult) return;
+    
+    const timer = setTimeout(() => {
+      try {
+        if (typeof window !== 'undefined') {
+          const adElements = document.querySelectorAll('.adsbygoogle');
+          
+          adElements.forEach((el) => {
+            const status = (el as HTMLElement).getAttribute('data-adsbygoogle-status');
+            if (!status || status === '') {
+              try {
+                ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+              } catch (err) {
+                if (!(err as Error).message.includes('already have ads')) {
+                  console.error('AdSense error:', err);
+                }
+              }
+            }
+          });
+        }
+      } catch (err) {
+        console.error('AdSense error:', err);
+      }
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [started, showResult, showLoadingSpinner, showResultPopup]);
+
   // 유사한 테스트와 인기 테스트 로드
   useEffect(() => {
     if (similarTests.length === 0) {
@@ -302,6 +332,20 @@ export default function DatingTestClient({
               {title}
             </h1>
 
+            {/* AdSense 광고 - 타이틀과 설명 사이 */}
+            <div className="max-w-[680px] mx-auto mb-4 border-2 border-dashed border-red-500 bg-red-50 p-4 rounded-lg">
+              <div className="text-center text-red-600 text-sm mb-2 font-semibold">
+                📢 AdSense 광고 영역 (타이틀-설명 사이)
+              </div>
+              <ins className="adsbygoogle"
+                style={{ display: 'block', minHeight: '100px' }}
+                data-ad-client="ca-pub-3192752766652582"
+                data-ad-slot="9999999999"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
+            </div>
+
             <p className="text-gray-600 mb-6 leading-relaxed text-center whitespace-pre-line">
               {t('mbti.datingTestIntro')}
             </p>
@@ -440,9 +484,37 @@ export default function DatingTestClient({
   if (showLoadingSpinner) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
+        {/* AdSense 광고 - 로딩 스피너 상단 */}
+        <div className="mb-8 border-2 border-dashed border-purple-500 bg-purple-50 p-4 rounded-lg w-full max-w-[680px] text-center">
+          <div className="text-center text-purple-600 text-sm mb-2 font-semibold">
+            📢 AdSense 광고 영역 (로딩 스피너 상단)
+          </div>
+          <ins className="adsbygoogle"
+            style={{ display: 'block', minHeight: '100px' }}
+            data-ad-client="ca-pub-3192752766652582"
+            data-ad-slot="9999999999"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
+        </div>
+
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
           <p className="mt-4 text-lg text-gray-700">{t('mbti.loadingResults')}</p>
+        </div>
+
+        {/* AdSense 광고 - 로딩 스피너 하단 */}
+        <div className="mt-8 border-2 border-dashed border-orange-500 bg-orange-50 p-4 rounded-lg w-full max-w-[680px] text-center">
+          <div className="text-center text-orange-600 text-sm mb-2 font-semibold">
+            📢 AdSense 광고 영역 (로딩 스피너 하단)
+          </div>
+          <ins className="adsbygoogle"
+            style={{ display: 'block', minHeight: '100px' }}
+            data-ad-client="ca-pub-3192752766652582"
+            data-ad-slot="9999999999"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
         </div>
       </div>
     );
@@ -665,6 +737,20 @@ export default function DatingTestClient({
               </button>
             </div>
 
+            {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
+            <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg px-4">
+              <div className="text-center text-cyan-600 text-sm mb-2 font-semibold">
+                📢 AdSense 광고 영역 (결과-다시하기 사이)
+              </div>
+              <ins className="adsbygoogle"
+                style={{ display: 'block', minHeight: '100px' }}
+                data-ad-client="ca-pub-3192752766652582"
+                data-ad-slot="9999999999"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 px-4">
               <button
                 onClick={handleRetake}
@@ -766,6 +852,22 @@ export default function DatingTestClient({
                 </button>
               );
             })}
+          </div>
+
+          {/* AdSense 광고 - 테스트 진행 마지막 답변 밑 */}
+          <div className="mt-8 flex justify-center px-4">
+            <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg w-full max-w-[680px]">
+              <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
+                📢 AdSense 광고 영역 (테스트 진행 마지막 답변 밑)
+              </div>
+              <ins className="adsbygoogle"
+                style={{ display: 'block', minHeight: '100px' }}
+                data-ad-client="ca-pub-3192752766652582"
+                data-ad-slot="9999999999"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
+            </div>
           </div>
 
           <div className="mt-8 mb-8 text-center px-4">
