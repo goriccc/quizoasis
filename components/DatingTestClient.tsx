@@ -446,9 +446,9 @@ export default function DatingTestClient({
                     href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
                     target="_parent"
                   >
-                    <img 
-                      width="300" 
-                      height="250" 
+                    <Image 
+                      width={300} 
+                      height={250} 
                       src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
                       alt="AliExpress"
                       style={{ maxWidth: '300px', height: 'auto' }}
@@ -626,9 +626,9 @@ export default function DatingTestClient({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img 
-                    width="300" 
-                    height="250" 
+                  <Image 
+                    width={300} 
+                    height={250} 
                     src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
                     alt="AliExpress"
                     className="rounded-lg"
