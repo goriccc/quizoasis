@@ -68,6 +68,7 @@ export default function ProductRecommendations({ products, title, locale }: Prod
                       fill
                       sizes="300px"
                       priority
+                      unoptimized
                       className="object-cover"
                     />
                     {/* 할인 배지 */}
