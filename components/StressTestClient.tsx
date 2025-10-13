@@ -677,9 +677,6 @@ export default function StressTestClient({
           
           {/* 광고 영역 */}
           <div className="mb-6">
-            <div className="text-center text-sm text-gray-600 mb-3">
-              {t('mbti.recommendedProducts')}
-            </div>
             {locale === 'ko' ? (
               // 한국어: 쿠팡 광고
               <div className="flex justify-center">

@@ -624,9 +624,6 @@ export default function DatingTestClient({
           </h2>
           
           <div className="mb-6">
-            <div className="text-center text-sm text-gray-600 mb-3">
-              {t('mbti.recommendedProducts')}
-            </div>
             {locale === 'ko' ? (
               <div className="flex justify-center">
                 <iframe 
