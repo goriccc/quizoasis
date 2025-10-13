@@ -1,8 +1,8 @@
 // AliExpress API 유틸리티
 
-// API 설정 (올바른 키 사용)
-export const ALIEXPRESS_APP_KEY = '520178'; // 직접 설정
-export const ALIEXPRESS_APP_SECRET = 'D0X5TYVK3VGkRVmTP6lIWCZJonZRjwqy'; // 직접 설정
+// API 설정 - 환경 변수 사용 (보안 강화)
+export const ALIEXPRESS_APP_KEY = process.env.NEXT_PUBLIC_ALIEXPRESS_APP_KEY || '520178';
+export const ALIEXPRESS_APP_SECRET = process.env.ALIEXPRESS_APP_SECRET || 'D0X5TYVK3VGkRVmTP6lIWCZJonZRjwqy';
 
 // API 엔드포인트
 const ALIEXPRESS_API_BASE = 'https://api-sg.aliexpress.com/sync';
