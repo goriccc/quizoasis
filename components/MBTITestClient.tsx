@@ -358,7 +358,7 @@ export default function MBTITestClient({
       <div className="min-h-screen bg-white">
         <div className="max-w-full mx-auto">
           {/* 테스트 썸네일 - 전체 너비, 라운드 제거 */}
-          <div className="relative w-full overflow-hidden mb-6" style={{ aspectRatio: '16/9' }}>
+          <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '16/9' }}>
             <Image
               src={getThumbnailUrl(thumbnail || 'mbti-light.jpg')}
               alt={title}
