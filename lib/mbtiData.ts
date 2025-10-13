@@ -1,4 +1,5 @@
 import { stressQuestions, stressResults } from './stressData';
+import { datingQuestions, datingResults } from './datingData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -918,6 +919,10 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'stress-reaction-test': {
     questions: stressQuestions,
     results: stressResults
+  },
+  'dating-style-test': {
+    questions: datingQuestions,
+    results: datingResults
   }
 };
 
