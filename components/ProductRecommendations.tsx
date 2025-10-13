@@ -3,6 +3,7 @@
 import { AliExpressProduct } from '@/lib/aliexpress';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface ProductRecommendationsProps {
   products: AliExpressProduct[];
@@ -61,11 +62,13 @@ export default function ProductRecommendations({ products, title, locale }: Prod
                 >
                   {/* 상품 이미지 */}
                   <div className="relative aspect-square bg-gray-100">
-                    <img
+                    <Image
                       src={product.product_main_image_url}
                       alt={product.product_title}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
+                      fill
+                      sizes="300px"
+                      priority
+                      className="object-cover"
                     />
                     {/* 할인 배지 */}
                     {product.target_app_sale_price !== product.sale_price && (

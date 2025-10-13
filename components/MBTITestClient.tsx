@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { MBTIQuestion, MBTIResult } from '../lib/mbtiData';
 import Link from 'next/link';
@@ -55,6 +55,29 @@ export default function MBTITestClient({
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
+  const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
+
+  // 답변 순서 섞기 (질문이 바뀔 때마다)
+  useEffect(() => {
+    if (!started) return;
+    
+    const questionKey = currentQuestion;
+    if (!shuffledOptionsMap[questionKey]) {
+      const optionsCopy = [shuffledQuestions[currentQuestion].options.A, shuffledQuestions[currentQuestion].options.B];
+      // MBTI는 2개 선택지이므로 50% 확률로 순서 바꿈
+      if (Math.random() > 0.5) {
+        setShuffledOptionsMap(prev => ({
+          ...prev,
+          [questionKey]: [optionsCopy[1], optionsCopy[0]]
+        }));
+      } else {
+        setShuffledOptionsMap(prev => ({
+          ...prev,
+          [questionKey]: optionsCopy
+        }));
+      }
+    }
+  }, [currentQuestion, started]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용)
   useEffect(() => {
@@ -257,13 +280,15 @@ export default function MBTITestClient({
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
       if (mbtiResult && locale !== 'ko') {
         const keywords = getProductKeywordsForMBTI(mbtiResult.type, locale);
-        console.log('🧠 MBTI 결과:', mbtiResult.type, '→ 검색 키워드:', keywords[0]);
+        const loadStartTime = Date.now();
+        console.log('🧠 [시작] MBTI 결과:', mbtiResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
-            console.log('✅ 로드된 상품:', products.slice(0, 2).map(p => p.product_title));
+            const loadTime = Date.now() - loadStartTime;
+            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map(p => p.product_title));
             setAliProducts(products);
           }).catch(error => {
-            console.error('결과 상품 로드 실패:', error);
+            console.error('❌ 결과 상품 로드 실패:', error);
           });
       }
     }
@@ -327,6 +352,7 @@ export default function MBTITestClient({
     setAnswers([]);
     setResult(null);
     setShowResult(false);
+    setShuffledOptionsMap({});
   };
 
   // 결과 공유하기
@@ -884,16 +910,7 @@ export default function MBTITestClient({
   const questionText = question.question[locale] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
 
-  // options를 배열로 변환 후 섞기
-  const [shuffledOptions] = useState(() => {
-    const optionsCopy = [question.options.A, question.options.B];
-    // MBTI는 2개 선택지이므로 50% 확률로 순서 바꿈
-    if (Math.random() > 0.5) {
-      return [optionsCopy[1], optionsCopy[0]];
-    }
-    return optionsCopy;
-  });
-  const optionsArray = shuffledOptions;
+  const optionsArray = shuffledOptionsMap[currentQuestion] || [question.options.A, question.options.B];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">

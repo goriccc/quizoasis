@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { DatingQuestion, DatingResult, calculateDatingResult } from '../lib/datingData';
 import Link from 'next/link';
@@ -55,6 +55,25 @@ export default function DatingTestClient({
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
+  const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
+
+  // 답변 순서 섞기 (질문이 바뀔 때마다)
+  useEffect(() => {
+    if (!started) return;
+    
+    const questionKey = currentQuestion;
+    if (!shuffledOptionsMap[questionKey]) {
+      const optionsCopy = [...shuffledQuestions[currentQuestion].options];
+      for (let i = optionsCopy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+      }
+      setShuffledOptionsMap(prev => ({
+        ...prev,
+        [questionKey]: optionsCopy
+      }));
+    }
+  }, [currentQuestion, started]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
@@ -241,13 +260,15 @@ export default function DatingTestClient({
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
       if (datingResult && locale !== 'ko') {
         const keywords = getProductKeywordsForDating(datingResult.type, locale);
-        console.log('💑 데이트 결과:', datingResult.type, '→ 검색 키워드:', keywords[0]);
+        const loadStartTime = Date.now();
+        console.log('💑 [시작] 데이트 결과:', datingResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
-            console.log('✅ 로드된 상품:', products.slice(0, 2).map(p => p.product_title));
+            const loadTime = Date.now() - loadStartTime;
+            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map(p => p.product_title));
             setAliProducts(products);
           }).catch(error => {
-            console.error('결과 상품 로드 실패:', error);
+            console.error('❌ 결과 상품 로드 실패:', error);
           });
       }
     }
@@ -271,6 +292,7 @@ export default function DatingTestClient({
     setAnswers([]);
     setResult(null);
     setShowResult(false);
+    setShuffledOptionsMap({});
   };
 
   // 결과 공유하기
@@ -588,6 +610,12 @@ export default function DatingTestClient({
 
   // 결과 팝업
   if (showResultPopup) {
+    console.log('🎁 팝업 렌더링 - aliProducts 상태:', {
+      길이: aliProducts.length,
+      locale,
+      첫상품: aliProducts[0]?.product_title
+    });
+    
     return (
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
@@ -873,16 +901,7 @@ export default function DatingTestClient({
   const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
   
-  // 답변 순서 섞기 (매 질문마다)
-  const [shuffledOptions] = useState(() => {
-    const optionsCopy = [...question.options];
-    for (let i = optionsCopy.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
-    }
-    return optionsCopy;
-  });
-  const optionsArray = shuffledOptions;
+  const optionsArray = shuffledOptionsMap[currentQuestion] || question.options;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">

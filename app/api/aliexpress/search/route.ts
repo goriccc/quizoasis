@@ -118,7 +118,7 @@ export async function POST(request: NextRequest) {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to fetch products',
       products: []
-    });
+    }, { status: 200 }); // 200 상태로 반환해야 JSON 파싱 가능
   }
 }
 
