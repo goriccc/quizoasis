@@ -593,30 +593,30 @@ export default function DatingTestClient({
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+        <div className="max-w-3xl mx-auto px-4 py-8">
           <div>
-            <div className="text-center mb-8 bg-white rounded-2xl shadow-lg p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
                 {t('mbti.yourResult')}
               </h2>
-              <div className="text-7xl mb-4">{result.emoji}</div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+              <div className="text-6xl mb-3">{result.emoji}</div>
+              <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
               </h1>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-base text-gray-600 leading-relaxed">
                 {resultDescription}
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-              <h3 className="text-lg font-bold text-gray-800 mb-4">
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-3">
                 {t('mbti.characteristics')}
               </h3>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2">
                 {resultTraits.map((trait: any, index: number) => (
                   <span
                     key={index}
-                    className="bg-gradient-to-r from-purple-100 to-pink-100 px-4 py-2 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    className="bg-gradient-to-r from-purple-100 to-pink-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                   >
                     {trait[locale] || trait.ko}
                   </span>
@@ -624,11 +624,11 @@ export default function DatingTestClient({
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-              <h3 className="text-lg font-bold text-gray-800 mb-4">
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-3">
                 💝 {t('mbti.idealDate')}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm text-gray-700 leading-relaxed">
                 {resultIdealDate}
               </p>
             </div>
@@ -636,17 +636,17 @@ export default function DatingTestClient({
             {result.compatibility && (
               <>
                 {result.compatibility.best && result.compatibility.best.length > 0 && (
-                  <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-                    <h3 className="text-lg font-bold text-gray-800 mb-4">
+                  <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+                    <h3 className="text-base font-bold text-gray-800 mb-3">
                       💖 {t('mbti.bestCompatibility')}
                     </h3>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2">
                       {result.compatibility.best.map(type => {
                         const partner = results.find(r => r.type === type);
                         if (!partner) return null;
                         return (
-                          <div key={type} className="flex items-center gap-2 bg-gradient-to-r from-red-100 to-pink-100 px-4 py-2 rounded-full">
-                            <span className="text-2xl">{partner.emoji}</span>
+                          <div key={type} className="flex items-center gap-1.5 bg-gradient-to-r from-red-100 to-pink-100 px-3 py-1.5 rounded-full">
+                            <span className="text-xl">{partner.emoji}</span>
                             <span className="text-sm font-medium text-gray-800">
                               {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
                             </span>
@@ -658,17 +658,17 @@ export default function DatingTestClient({
                 )}
 
                 {result.compatibility.good && result.compatibility.good.length > 0 && (
-                  <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-                    <h3 className="text-lg font-bold text-gray-800 mb-4">
+                  <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+                    <h3 className="text-base font-bold text-gray-800 mb-3">
                       😊 {t('mbti.goodCompatibility')}
                     </h3>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2">
                       {result.compatibility.good.map(type => {
                         const partner = results.find(r => r.type === type);
                         if (!partner) return null;
                         return (
-                          <div key={type} className="flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 px-4 py-2 rounded-full">
-                            <span className="text-2xl">{partner.emoji}</span>
+                          <div key={type} className="flex items-center gap-1.5 bg-gradient-to-r from-blue-100 to-purple-100 px-3 py-1.5 rounded-full">
+                            <span className="text-xl">{partner.emoji}</span>
                             <span className="text-sm font-medium text-gray-800">
                               {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
                             </span>
@@ -680,17 +680,17 @@ export default function DatingTestClient({
                 )}
 
                 {result.compatibility.careful && result.compatibility.careful.length > 0 && (
-                  <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-                    <h3 className="text-lg font-bold text-gray-800 mb-4">
+                  <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+                    <h3 className="text-base font-bold text-gray-800 mb-3">
                       ⚠️ {t('mbti.carefulCompatibility')}
                     </h3>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2">
                       {result.compatibility.careful.map(type => {
                         const partner = results.find(r => r.type === type);
                         if (!partner) return null;
                         return (
-                          <div key={type} className="flex items-center gap-2 bg-gradient-to-r from-yellow-100 to-orange-100 px-4 py-2 rounded-full">
-                            <span className="text-2xl">{partner.emoji}</span>
+                          <div key={type} className="flex items-center gap-1.5 bg-gradient-to-r from-yellow-100 to-orange-100 px-3 py-1.5 rounded-full">
+                            <span className="text-xl">{partner.emoji}</span>
                             <span className="text-sm font-medium text-gray-800">
                               {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
                             </span>
@@ -702,17 +702,17 @@ export default function DatingTestClient({
                 )}
 
                 {result.compatibility.difficult && result.compatibility.difficult.length > 0 && (
-                  <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-                    <h3 className="text-lg font-bold text-gray-800 mb-4">
+                  <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+                    <h3 className="text-base font-bold text-gray-800 mb-3">
                       ❌ {t('mbti.difficultCompatibility')}
                     </h3>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2">
                       {result.compatibility.difficult.map(type => {
                         const partner = results.find(r => r.type === type);
                         if (!partner) return null;
                         return (
-                          <div key={type} className="flex items-center gap-2 bg-gradient-to-r from-gray-100 to-gray-200 px-4 py-2 rounded-full">
-                            <span className="text-2xl">{partner.emoji}</span>
+                          <div key={type} className="flex items-center gap-1.5 bg-gradient-to-r from-gray-100 to-gray-200 px-3 py-1.5 rounded-full">
+                            <span className="text-xl">{partner.emoji}</span>
                             <span className="text-sm font-medium text-gray-800">
                               {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
                             </span>
@@ -725,7 +725,7 @@ export default function DatingTestClient({
               </>
             )}
 
-            <div className="mb-6 px-4">
+            <div className="mt-8 mb-6 px-4">
               <button
                 onClick={handleShareResult}
                 className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
