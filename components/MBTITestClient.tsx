@@ -884,8 +884,16 @@ export default function MBTITestClient({
   const questionText = question.question[locale] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
 
-  // options를 배열로 변환 {A: {...}, B: {...}} → [{...}, {...}]
-  const optionsArray = [question.options.A, question.options.B];
+  // options를 배열로 변환 후 섞기
+  const [shuffledOptions] = useState(() => {
+    const optionsCopy = [question.options.A, question.options.B];
+    // MBTI는 2개 선택지이므로 50% 확률로 순서 바꿈
+    if (Math.random() > 0.5) {
+      return [optionsCopy[1], optionsCopy[0]];
+    }
+    return optionsCopy;
+  });
+  const optionsArray = shuffledOptions;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">

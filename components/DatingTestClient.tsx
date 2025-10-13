@@ -872,7 +872,17 @@ export default function DatingTestClient({
   const question = shuffledQuestions[currentQuestion];
   const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
-  const optionsArray = question.options;
+  
+  // 답변 순서 섞기 (매 질문마다)
+  const [shuffledOptions] = useState(() => {
+    const optionsCopy = [...question.options];
+    for (let i = optionsCopy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+    }
+    return optionsCopy;
+  });
+  const optionsArray = shuffledOptions;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
