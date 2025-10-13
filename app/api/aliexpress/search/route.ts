@@ -17,7 +17,7 @@ function generateSignature(params: Record<string, any>, secret: string): string 
 async function callAliExpressAPI(method: string, params: Record<string, any>) {
   const timestamp = Date.now().toString();
   
-  const apiParams = {
+  const apiParams: Record<string, any> = {
     method,
     app_key: APP_KEY,
     timestamp,
