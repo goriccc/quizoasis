@@ -1,11 +1,14 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import { getTestBySlug, getTests } from '@/lib/supabase';
 import { getTestData } from '@/lib/mbtiData';
 import { getThumbnailUrl } from '@/lib/utils';
-import MBTITestClient from '@/components/MBTITestClient';
-import StressTestClient from '@/components/StressTestClient';
 import { setRequestLocale } from 'next-intl/server';
+
+// 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
+const MBTITestClient = dynamic(() => import('@/components/MBTITestClient'));
+const StressTestClient = dynamic(() => import('@/components/StressTestClient'));
 
 interface Props {
   params: {

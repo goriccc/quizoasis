@@ -110,7 +110,7 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                 key={test.id}
                 href={`/${locale}/test/${test.slug}`}
                 className="flex-shrink-0 group"
-                prefetch={true}
+                prefetch={false}
                 onClick={(e) => {
                   // 드래그 거리가 5px 이상이면 클릭 막기
                   if (isDragging || dragDistance > 5) {

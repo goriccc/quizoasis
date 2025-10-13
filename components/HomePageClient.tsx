@@ -56,7 +56,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
         />
 
         {/* 최신 테스트 섹션 */}
-        <div className="pt-8">
+        <div className="pt-2">
           <LatestTestsSection 
             tests={tests}
             locale={locale}

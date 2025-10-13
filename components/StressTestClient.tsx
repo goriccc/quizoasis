@@ -338,60 +338,61 @@ export default function StressTestClient({
   if (!started) {
     return (
       <div className="min-h-screen bg-white">
-        <div className="max-w-full mx-auto px-4 py-6">
-          {/* 테스트 썸네일 */}
-          <div className="relative w-full rounded-xl overflow-hidden mb-6 mx-auto" style={{ maxWidth: '680px', aspectRatio: '680/384' }}>
+        <div className="max-w-full mx-auto">
+          {/* 테스트 썸네일 - 전체 너비, 라운드 제거 */}
+          <div className="relative w-full overflow-hidden mb-6" style={{ aspectRatio: '16/9' }}>
             <Image
               src={getThumbnailUrl(thumbnail || 'mbti-light.jpg')}
               alt={title}
               fill
               className="object-cover"
-              sizes="(max-width: 680px) 100vw, 680px"
+              sizes="100vw"
               priority
             />
           </div>
 
-          {/* 테스트 제목 */}
-          <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">
-            {title}
-          </h1>
+          <div className="px-4">
+            {/* 테스트 제목 */}
+            <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">
+              {title}
+            </h1>
 
-          {/* AdSense 광고 - 타이틀과 설명 사이 */}
-          <div className="max-w-[680px] mx-auto mb-4 border-2 border-dashed border-red-500 bg-red-50 p-4 rounded-lg">
-            <div className="text-center text-red-600 text-sm mb-2 font-semibold">
-              📢 AdSense 광고 영역 (타이틀-설명 사이)
+            {/* AdSense 광고 - 타이틀과 설명 사이 */}
+            <div className="max-w-[680px] mx-auto mb-4 border-2 border-dashed border-red-500 bg-red-50 p-4 rounded-lg">
+              <div className="text-center text-red-600 text-sm mb-2 font-semibold">
+                📢 AdSense 광고 영역 (타이틀-설명 사이)
+              </div>
+              <ins className="adsbygoogle"
+                style={{ display: 'block', minHeight: '100px' }}
+                data-ad-client="ca-pub-3192752766652582"
+                data-ad-slot="9999999999"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
             </div>
-            <ins className="adsbygoogle"
-              style={{ display: 'block', minHeight: '100px' }}
-              data-ad-client="ca-pub-3192752766652582"
-              data-ad-slot="9999999999"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            />
-          </div>
 
-          {/* 설명 */}
-          <p className="text-gray-600 mb-6 leading-relaxed text-center">
-            {description}
-          </p>
+            {/* 설명 */}
+            <p className="text-gray-600 mb-6 leading-relaxed text-center">
+              {description}
+            </p>
 
-          {/* 시작 버튼 */}
-          <div className="flex justify-center mb-4">
-            <button
-              onClick={handleStartTest}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              {t('mbti.startTest')}
-            </button>
-          </div>
+            {/* 시작 버튼 */}
+            <div className="flex justify-center mb-4">
+              <button
+                onClick={handleStartTest}
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                {t('mbti.startTest')}
+              </button>
+            </div>
 
-          {/* 참여자 수 */}
-          <p className="text-sm text-gray-600 text-center mb-6">
-            {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as any) })}
-          </p>
+            {/* 참여자 수 */}
+            <p className="text-sm text-gray-600 text-center mb-6">
+              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as any) })}
+            </p>
 
-          {/* 광고 - 참여자 수와 공유 섹션 사이 */}
-          <div className="max-w-[680px] mx-auto mb-6">
+            {/* 광고 - 참여자 수와 공유 섹션 사이 */}
+            <div className="max-w-[680px] mx-auto mb-6">
               {locale === 'ko' ? (
                 // 한국어: 쿠팡 광고
                 <iframe 
@@ -420,10 +421,10 @@ export default function StressTestClient({
                   </a>
                 </div>
               )}
-          </div>
+            </div>
 
-          {/* 친구와 같이 해보기 */}
-          <div className="mb-8 text-center">
+            {/* 친구와 같이 해보기 */}
+            <div className="mb-8 text-center">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               {t('mbti.shareWithFriends')}
             </h2>
@@ -459,11 +460,11 @@ export default function StressTestClient({
                 <Facebook size={20} className="text-white" />
               </button>
             </div>
-          </div>
+            </div>
 
-                 {/* 유사한 다른 테스트 추천 톱5 */}
-          {similarTestsState.length > 0 && (
-            <div className="mb-8">
+            {/* 유사한 다른 테스트 추천 톱5 */}
+            {similarTestsState.length > 0 && (
+              <div className="mb-8">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
                 🎯 유사한 다른 테스트 추천 톱5
               </h2>
@@ -494,11 +495,11 @@ export default function StressTestClient({
                 ))}
               </div>
             </div>
-          )}
+            )}
 
-          {/* 인기 테스트 추천 톱5 */}
-          {popularTestsState.length > 0 && (
-            <div className="mb-8">
+            {/* 인기 테스트 추천 톱5 */}
+            {popularTestsState.length > 0 && (
+              <div className="mb-8">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
                 🔥 요즘 인기 테스트 추천 톱5
               </h2>
@@ -529,7 +530,8 @@ export default function StressTestClient({
                 ))}
               </div>
             </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     );
