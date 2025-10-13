@@ -43,6 +43,8 @@ const nextConfig = {
       },
     ],
     minimumCacheTTL: 60, // 이미지 캐시 TTL 설정
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   // 폰트 최적화
   optimizeFonts: true,
@@ -50,6 +52,10 @@ const nextConfig = {
   compress: true,
   // Production 성능 최적화
   swcMinify: true,
+  // 빌드 시 정적 페이지 생성 최적화
+  generateBuildId: async () => {
+    return getGitHash();
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

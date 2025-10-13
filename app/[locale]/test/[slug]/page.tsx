@@ -7,8 +7,12 @@ import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
-const MBTITestClient = dynamic(() => import('@/components/MBTITestClient'));
-const StressTestClient = dynamic(() => import('@/components/StressTestClient'));
+const MBTITestClient = dynamic(() => import('@/components/MBTITestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const StressTestClient = dynamic(() => import('@/components/StressTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 
 interface Props {
   params: {
@@ -19,6 +23,25 @@ interface Props {
 
 // ISR: 1시간마다 자동 재생성 (플레이 횟수 업데이트)
 export const revalidate = 3600;
+
+// 모든 테스트 페이지를 빌드 시 사전 생성 (성능 향상)
+export async function generateStaticParams() {
+  const tests = await getTests();
+  const locales = ['ko', 'en', 'ja', 'zh-CN', 'zh-TW', 'id', 'vi'];
+  
+  const params: { locale: string; slug: string }[] = [];
+  
+  for (const test of tests) {
+    for (const locale of locales) {
+      params.push({
+        locale,
+        slug: test.slug,
+      });
+    }
+  }
+  
+  return params;
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = params;

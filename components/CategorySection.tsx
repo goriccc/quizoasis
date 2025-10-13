@@ -31,7 +31,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
               key={test.id}
               href={`/${locale}/test/${test.slug}`}
               className="group"
-              prefetch={false}
+              prefetch="intent"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-md card-hover bg-white">
                 {/* 썸네일 */}
@@ -44,6 +44,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority={true}
                     loading="eager"
+                    quality={85}
                   />
                   
                   {/* 플레이 횟수 - 우측 하단 */}

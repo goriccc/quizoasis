@@ -110,7 +110,7 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                 key={test.id}
                 href={`/${locale}/test/${test.slug}`}
                 className="flex-shrink-0 group"
-                prefetch={false}
+                prefetch="intent"
                 onClick={(e) => {
                   // 드래그 거리가 5px 이상이면 클릭 막기
                   if (isDragging || dragDistance > 5) {
@@ -131,6 +131,7 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                       draggable={false}
                       priority={true}
                       loading="eager"
+                      quality={85}
                     />
                   
                   {/* 플레이 횟수 - 우측 하단 */}
