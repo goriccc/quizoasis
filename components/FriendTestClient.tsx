@@ -124,7 +124,7 @@ export default function FriendTestClient({
         console.error('AdSense 광고 로드 오류:', error);
       }
     }, 1000);
-
+    
     return () => clearTimeout(timer);
   }, [currentQuestion, showResult]);
 
@@ -157,14 +157,14 @@ export default function FriendTestClient({
         
         // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
         const sortedTests = filteredTests
-          .sort((a, b) => b.play_count - a.play_count)
+            .sort((a, b) => b.play_count - a.play_count)
           .slice(0, 5);
         
         setSimilarTestsState(sortedTests);
-      } catch (error) {
+        } catch (error) {
         console.error('유사한 테스트 로드 실패:', error);
-      }
-    };
+        }
+      };
 
     loadSimilarTests();
   }, [slug]);
@@ -194,7 +194,7 @@ export default function FriendTestClient({
     if (!hasIncrementedPlayCount) {
       try {
         await incrementPlayCount(slug);
-        setHasIncrementedPlayCount(true);
+      setHasIncrementedPlayCount(true);
         setDisplayPlayCount(prev => prev + 1);
       } catch (error) {
         console.error('플레이 카운트 증가 실패:', error);
@@ -602,34 +602,34 @@ ${t('startMessage.line6')}`}
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
                   유사한 다른 테스트
                 </h2>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => {
                     const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
                     return (
-                      <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
-                        <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
-                          <div className="relative aspect-video">
-                            <Image
-                              src={getThumbnailUrl(test.thumbnail)}
+                    <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
+                      <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
+                        <div className="relative aspect-video">
+                          <Image
+                            src={getThumbnailUrl(test.thumbnail)}
                               alt={testTitle}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
-                            />
-                          </div>
-                          <div className="p-4">
-                            <div className="flex items-center justify-end gap-3">
-                              <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
+                          />
+                        </div>
+                        <div className="p-4">
+                          <div className="flex items-center justify-end gap-3">
+                            <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
                                 {testTitle}
-                              </h3>
-                              <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
-                                <Play size={14} />
+                            </h3>
+                            <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
+                              <Play size={14} />
                                 <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale as any)}</span>
-                              </div>
                             </div>
                           </div>
                         </div>
-                      </Link>
+                      </div>
+                    </Link>
                     );
                   })}
                 </div>
@@ -714,7 +714,7 @@ ${t('startMessage.line6')}`}
 
   // 결과 화면
   if (showResult && result) {
-    
+
     return (
       <div className="min-h-screen bg-white">
         <div className="max-w-4xl mx-auto px-4 py-8">
@@ -722,149 +722,149 @@ ${t('startMessage.line6')}`}
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold text-gray-800 mb-3">
               {result.emoji} {result.title[localeKey as keyof typeof result.title] || result.title.ko}
-            </h1>
-            <p className="text-base text-gray-600 leading-relaxed">
+              </h1>
+              <p className="text-base text-gray-600 leading-relaxed">
               {result.description[localeKey as keyof typeof result.description] || result.description.ko}
-            </p>
-          </div>
+              </p>
+            </div>
 
           {/* 장점/단점 */}
-          <div className="grid grid-cols-2 gap-3 mb-3">
-            <div className="bg-white rounded-xl shadow-lg p-4">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
                 ✅ {t('result.pros')}
-              </h3>
+                </h3>
               <p className="text-sm text-gray-700">
                 {result.pros[localeKey as keyof typeof result.pros] || result.pros.ko}
               </p>
-            </div>
+              </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-4">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
                 ⚠️ {t('result.cons')}
-              </h3>
+                </h3>
               <p className="text-sm text-gray-700">
                 {result.cons[localeKey as keyof typeof result.cons] || result.cons.ko}
               </p>
+              </div>
             </div>
-          </div>
 
           {/* 친구들의 평가 */}
-          <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-            <h3 className="text-base font-bold text-gray-800 mb-3">
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-3">
               💬 {t('result.friendsEvaluation')}
-            </h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
+              </h3>
+              <p className="text-sm text-gray-700 leading-relaxed">
               &quot;{result.friendsEvaluation[localeKey as keyof typeof result.friendsEvaluation] || result.friendsEvaluation.ko}&quot;
-            </p>
-          </div>
+              </p>
+            </div>
 
           {/* 관계 조언 */}
           <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-            <h3 className="text-base font-bold text-gray-800 mb-3">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
               💚 {t('result.advice')}
-            </h3>
+                      </h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               {result.advice[localeKey as keyof typeof result.advice] || result.advice.ko}
             </p>
-          </div>
+                              </div>
 
           {/* 궁합 분석 */}
           <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-            <h3 className="text-base font-bold text-gray-800 mb-3">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
               💖 {t('result.bestMatch')}
-            </h3>
+                      </h3>
             <p className="text-sm text-gray-700">{result.bestMatch[localeKey as keyof typeof result.bestMatch] || result.bestMatch.ko}</p>
-          </div>
+                </div>
 
           <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-            <h3 className="text-base font-bold text-gray-800 mb-3">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
               😊 {t('result.goodMatch')}
-            </h3>
+                      </h3>
             <p className="text-sm text-gray-700">{result.goodMatch[localeKey as keyof typeof result.goodMatch] || result.goodMatch.ko}</p>
-          </div>
+                              </div>
 
           <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-            <h3 className="text-base font-bold text-gray-800 mb-3">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
               ⚠️ {t('result.carefulMatch')}
-            </h3>
+                      </h3>
             <p className="text-sm text-gray-700">{result.carefulMatch[localeKey as keyof typeof result.carefulMatch] || result.carefulMatch.ko}</p>
-          </div>
+                              </div>
 
-          <div className="mt-8 mb-6 px-4">
-            <button
-              onClick={handleShareResult}
-              className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
-              </svg>
+            <div className="mt-8 mb-6 px-4">
+              <button
+                onClick={handleShareResult}
+                className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                </svg>
 {t('ui.shareResult')}
-            </button>
-          </div>
-
-          {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
-          <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg px-4">
-            <div className="text-center text-cyan-600 text-sm mb-2 font-semibold">
-              📢 AdSense 광고 영역 (결과-다시하기 사이)
+              </button>
             </div>
-            <ins className="adsbygoogle"
-              style={{ display: 'block', minHeight: '100px' }}
-              data-ad-client="ca-pub-3192752766652582"
-              data-ad-slot="9999999999"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            />
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 px-4">
-            <button
-              onClick={handleRetake}
-              className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
-            >
+            {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
+            <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg px-4">
+              <div className="text-center text-cyan-600 text-sm mb-2 font-semibold">
+                📢 AdSense 광고 영역 (결과-다시하기 사이)
+              </div>
+              <ins className="adsbygoogle"
+                style={{ display: 'block', minHeight: '100px' }}
+                data-ad-client="ca-pub-3192752766652582"
+                data-ad-slot="9999999999"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 px-4">
+              <button
+                onClick={handleRetake}
+                className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
+              >
 {t('ui.retake')}
-            </button>
-            <Link
-              href={`/${locale}`}
-              className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
-            >
+              </button>
+              <Link
+                href={`/${locale}`}
+                className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
+              >
 {t('ui.otherTests')}
-            </Link>
-          </div>
-
-          <div className="mt-8 mb-8 text-center px-4">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('ui.shareWithFriends')}
-            </h2>
-            <div className="flex justify-center gap-2">
-              <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
-              </button>
+              </Link>
             </div>
-          </div>
 
-          {/* 🎯 유사한 다른 테스트 추천 톱5 */}
-          {similarTestsState.length > 0 && (
-            <div className="mb-8 pb-4">
-              <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('ui.similarTests')}
+            <div className="mt-8 mb-8 text-center px-4">
+              <h2 className="text-lg font-bold text-gray-800 mb-4">
+{t('ui.shareWithFriends')}
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+              <div className="flex justify-center gap-2">
+                <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                </button>
+              </div>
+            </div>
+
+            {/* 🎯 유사한 다른 테스트 추천 톱5 */}
+            {similarTestsState.length > 0 && (
+              <div className="mb-8 pb-4">
+                <h2 className="text-xl font-bold text-gray-800 mb-6">
+{t('ui.similarTests')}
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                 {similarTestsState.slice(0, 5).map((test) => {
                   const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
                   return (
@@ -894,17 +894,17 @@ ${t('startMessage.line6')}`}
                     </Link>
                   );
                 })}
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {/* 🔥 요즘 인기 테스트 추천 톱5 */}
-          {popularTestsState.length > 0 && (
-            <div className="mb-8 pb-4">
-              <h2 className="text-xl font-bold text-gray-800 mb-6">
+            {/* 🔥 요즘 인기 테스트 추천 톱5 */}
+            {popularTestsState.length > 0 && (
+              <div className="mb-8 pb-4">
+                <h2 className="text-xl font-bold text-gray-800 mb-6">
 {t('ui.popularTests')}
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                 {popularTestsState.map((test) => {
                   const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
                   return (
@@ -934,9 +934,9 @@ ${t('startMessage.line6')}`}
                     </Link>
                   );
                 })}
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
           {/* AdSense 광고 영역 */}
           <div className="mt-8 mb-6">
