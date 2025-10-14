@@ -136,7 +136,20 @@ export function generateDummyTests(count: number): QuizTest[] {
 }
 
 // 20개의 더미 테스트 생성
-export const dummyTests = generateDummyTests(20);
+export const dummyTests = [
+  // 실제 애착 스타일 테스트 추가
+  {
+    id: 0,
+    slug: 'attachment-style-test',
+    title: '어떤 애착 스타일을 가지고 있나요?',
+    description: '당신의 사랑 방식, 어린 시절부터 결정됐다? 심리학의 애착 이론으로 나의 애착 스타일을 알아보세요.',
+    thumbnail: 'test_028_attachment_style.jpg',
+    playCount: 1250,
+    tags: ['심리', '관계'],
+    createdAt: new Date().toISOString(),
+  },
+  ...generateDummyTests(19)
+];
 
 // 최신 테스트 10개
 export const latestTests = dummyTests.slice(0, 10);

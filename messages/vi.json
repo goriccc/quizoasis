@@ -66,6 +66,75 @@
     "address": "Địa chỉ: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, Hàn Quốc",
     "businessNumber": "Số đăng ký kinh doanh: 304-24-18806",
     "copyright": "Copyright © QuizOasis Co., Ltd"
+  },
+  "attachmentTest": {
+    "startMessage": {
+      "line1": "Cách yêu của bạn, được quyết định từ thời thơ ấu?",
+      "line2": "Tại sao tôi luôn lo lắng trong mối quan hệ?",
+      "line3": "Tại sao càng gần gũi càng muốn tránh xa?",
+      "line4": "Tại sao yêu nhau lại làm tổn thương nhau?",
+      "line5": "「Lý thuyết Gắn bó」của tâm lý học sẽ cho bạn câu trả lời.",
+      "line6": "Chỉ 3 phút! Bước đầu tiên hiểu về bản thân 💚"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Bài kiểm tra",
+      "participants": "người đã tham gia",
+      "progress": "Tiến độ",
+      "shareResult": "Chia sẻ Kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Bài kiểm tra Khác",
+      "shareWithFriends": "Thử với Bạn bè",
+      "similarTests": "Top 5 Bài kiểm tra Tương tự Được đề xuất",
+      "popularTests": "Top 5 Bài kiểm tra Phổ biến Được đề xuất"
+    },
+    "result": {
+      "analyzing": "Đang phân tích kết quả...",
+      "completed": "Bài kiểm tra hoàn thành!",
+      "showResult": "Hiển thị kết quả phân tích",
+      "characteristics": "Đặc điểm cốt lõi",
+      "relationshipPattern": "Mô hình mối quan hệ",
+      "advice": "Lời khuyên về mối quan hệ",
+      "bestMatch": "Độ phù hợp tốt nhất",
+      "goodMatch": "Độ phù hợp tốt",
+      "carefulMatch": "Cần chú ý",
+      "difficultMatch": "Độ phù hợp khó"
+    }
+  },
+  "friendTest": {
+    "startMessage": {
+      "line1": "「Tôi như tôi nghĩ vs Tôi như bạn bè nhìn thấy」",
+      "line2": "Khi bạn bè gặp khó khăn, tôi đóng vai trò gì?",
+      "line3": "Bạn bè nhớ tôi như thế nào?",
+      "line4": "Khi tôi không có mặt, bạn bè sẽ nhớ điều gì?",
+      "line5": "Khám phá kiểu bạn bè thực sự của bạn!",
+      "line6": "Chỉ mất 3 phút!\nChia sẻ với bạn bè và so sánh kết quả 😊"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": " người đã tham gia",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 đề xuất bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 đề xuất bài kiểm tra phổ biến"
+    },
+    "result": {
+      "analyzing": "Đang phân tích kết quả...",
+      "completed": "Bài kiểm tra hoàn thành!",
+      "showResult": "Hiển thị kết quả",
+      "yourResult": "Kết quả của bạn",
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "friendsEvaluation": "Đánh giá của bạn bè",
+      "advice": "Lời khuyên về mối quan hệ",
+      "bestMatch": "Độ phù hợp tốt nhất",
+      "goodMatch": "Độ phù hợp tốt",
+      "carefulMatch": "Độ phù hợp cần chú ý",
+      "shareResult": "Chia sẻ kết quả"
+    }
   }
 }
 

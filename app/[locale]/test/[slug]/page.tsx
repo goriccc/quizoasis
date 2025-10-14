@@ -20,6 +20,12 @@ const DatingTestClient = dynamic(() => import('@/components/DatingTestClient'), 
 const SignalTestClient = dynamic(() => import('@/components/SignalTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
+const AttachmentTestClient = dynamic(() => import('@/components/AttachmentTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const FriendTestClient = dynamic(() => import('@/components/FriendTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 
 interface Props {
   params: {
@@ -120,6 +126,179 @@ export default async function TestPage({ params }: Props) {
   // Force dynamic rendering - 항상 최신 데이터
   headers();
 
+  // 애착 스타일 테스트의 경우 Supabase에서 시도
+  if (slug === 'attachment-style-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'attachment-style-test',
+      title: {
+        ko: '어떤 애착 스타일을 가지고 있나요?',
+        en: 'What attachment style do you have?',
+        ja: 'どの愛着スタイルを持っていますか？',
+        'zh-CN': '你有什么依恋风格？',
+        'zh-TW': '你有什麼依戀風格？',
+        vi: 'Bạn có phong cách gắn bó nào?',
+        id: 'Gaya kelekatan apa yang Anda miliki?'
+      },
+      description: {
+        ko: '당신의 사랑 방식, 어린 시절부터 결정됐다? 심리학의 애착 이론으로 나의 애착 스타일을 알아보세요.',
+        en: 'Your way of loving, determined from childhood? Discover your attachment style through psychological attachment theory.',
+        ja: 'あなたの愛し方、幼い頃から決まっている？心理学の愛着理論で私の愛着スタイルを調べてみましょう。',
+        'zh-CN': '你的爱情方式，从童年就决定了？通过心理学的依恋理论了解你的依恋风格。',
+        'zh-TW': '你的愛情方式，從童年就決定了？通過心理學的依戀理論了解你的依戀風格。',
+        vi: 'Cách yêu của bạn, được quyết định từ thời thơ ấu? Khám phá phong cách gắn bó của bạn thông qua lý thuyết gắn bó tâm lý học.',
+        id: 'Cara mencintai Anda, ditentukan sejak masa kanak-kanak? Temukan gaya kelekatan Anda melalui teori kelekatan psikologi.'
+      },
+      thumbnail: 'test_028_attachment_style.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '관계'],
+        en: ['Psychology', 'Relationships'],
+        ja: ['心理学', '関계'],
+        'zh-CN': ['心理学', '关系'],
+        'zh-TW': ['心理學', '關係'],
+        vi: ['Tâm lý học', 'Mối quan hệ'],
+        id: ['Psikologi', 'Hubungan']
+      }
+    };
+
+    const testData = getTestData(slug);
+    if (!testData) {
+      notFound();
+    }
+  }
+
+  // 친구 테스트의 경우 Supabase에서 시도
+  if (slug === 'friend-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'friend-test',
+      title: {
+        ko: '친구들에게 나는 어떤 친구일까?',
+        en: 'What kind of friend am I to my friends?',
+        ja: '友達にとって私はどんな友達？',
+        'zh-CN': '在朋友眼中我是什么样的朋友？',
+        'zh-TW': '在朋友眼中我是什麼樣的朋友？',
+        vi: 'Tôi là kiểu bạn bè gì đối với bạn bè?',
+        id: 'Saya teman seperti apa bagi teman-teman saya?'
+      },
+      description: {
+        ko: '내가 생각하는 나 vs 친구들이 보는 나. 친구가 힘들 때, 나는 어떤 역할을 할까? 친구들은 나를 어떻게 기억할까?',
+        en: 'Me as I think vs me as my friends see me. What role do I play when friends are having a hard time? How do friends remember me?',
+        ja: '私が思う私 vs 友達が見る私。友達が困っている時、私はどんな役割をする？友達は私をどう覚えている？',
+        'zh-CN': '我想象中的我 vs 朋友眼中的我。朋友困难时，我扮演什么角色？朋友怎么记住我？',
+        'zh-TW': '我想像中的我 vs 朋友眼中的我。朋友困難時，我扮演什麼角色？朋友怎麼記住我？',
+        vi: 'Tôi như tôi nghĩ vs tôi như bạn bè nhìn thấy. Khi bạn bè gặp khó khăn, tôi đóng vai trò gì? Bạn bè nhớ tôi như thế nào?',
+        id: 'Saya seperti yang saya pikir vs saya seperti yang dilihat teman-teman. Peran apa yang saya mainkan ketika teman-teman mengalami kesulitan? Bagaimana teman-teman mengingat saya?'
+      },
+      thumbnail: 'test_029_what_kind_of_friend.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['우정', '관계', '성격'],
+        en: ['Friendship', 'Relationships', 'Personality'],
+        ja: ['友情', '関係', '性格'],
+        'zh-CN': ['友谊', '关系', '性格'],
+        'zh-TW': ['友誼', '關係', '性格'],
+        vi: ['Tình bạn', 'Mối quan hệ', 'Tính cách'],
+        id: ['Persahabatan', 'Hubungan', 'Kepribadian']
+      }
+    };
+
+    const testData = getTestData(slug);
+    if (!testData) {
+      notFound();
+    }
+
+    const title = test.title[locale] || test.title.ko;
+    const description = test.description?.[locale] || test.description?.ko || '';
+    const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+    const canonicalUrl = `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`;
+
+    // JSON-LD Schema 생성
+    const jsonLdQuiz = {
+      '@context': 'https://schema.org',
+      '@type': 'Quiz',
+      name: title,
+      description: description,
+      url: canonicalUrl,
+      image: thumbnailUrl,
+      mainEntity: {
+        '@type': 'Question',
+        text: '애착 스타일 테스트',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '심리학 기반 애착 스타일 분석'
+        }
+      },
+      author: {
+        '@type': 'Organization',
+        name: 'QuizOasis'
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'QuizOasis'
+      }
+    };
+
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `https://quizoasis-coral.vercel.app/${locale}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Tests',
+          item: `https://quizoasis-coral.vercel.app/${locale}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: title,
+        },
+      ],
+    };
+
+    return (
+      <>
+        {/* JSON-LD Schema - Quiz */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
+        />
+        
+        {/* JSON-LD Schema - Breadcrumb */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        
+        <FriendTestClient
+          locale={locale}
+          slug={slug}
+          title={title}
+          description={description}
+          questions={testData.questions}
+          results={testData.results}
+          questionCount={testData.questions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
   // Supabase에서 테스트 메타데이터만 가져오기 (빠른 로딩)
   const test = await getTestBySlug(slug);
   if (!test) {
@@ -200,7 +379,7 @@ export default async function TestPage({ params }: Props) {
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
-    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : DatingTestClient) :
+    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : DatingTestClient) :
     MBTITestClient;
 
   return (

@@ -66,6 +66,75 @@
     "address": "Address: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, South Korea",
     "businessNumber": "Business No: 304-24-18806",
     "copyright": "Copyright © QuizOasis Co., Ltd"
+  },
+  "attachmentTest": {
+    "startMessage": {
+      "line1": "Your way of loving, determined from childhood?",
+      "line2": "Why am I always anxious in relationships?",
+      "line3": "Why do I want to run away as we get closer?",
+      "line4": "Why do we hurt each other even when we love?",
+      "line5": "Psychology's 'Attachment Theory' has the answer.",
+      "line6": "Just 3 minutes! First step to self-understanding 💚"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "people have participated",
+      "progress": "Progress",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "shareWithFriends": "Try with Friends",
+      "similarTests": "Top 5 Similar Test Recommendations",
+      "popularTests": "Top 5 Popular Test Recommendations"
+    },
+    "result": {
+      "analyzing": "Analyzing results...",
+      "completed": "Test completed!",
+      "showResult": "Show analysis results",
+      "characteristics": "Key characteristics",
+      "relationshipPattern": "Relationship patterns",
+      "advice": "Relationship advice",
+      "bestMatch": "Best compatibility",
+      "goodMatch": "Good compatibility",
+      "carefulMatch": "Need attention",
+      "difficultMatch": "Difficult compatibility"
+    }
+  },
+  "friendTest": {
+    "startMessage": {
+      "line1": "\"Me as I think vs Me as friends see me\"",
+      "line2": "What role do I play when friends are having a hard time?",
+      "line3": "How do friends remember me?",
+      "line4": "What will friends miss when I'm not around?",
+      "line5": "Discover your true friend type!",
+      "line6": "Only takes 3 minutes!\nShare with friends and compare results 😊"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": " participated",
+      "shareWithFriends": "Try with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake Test",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "View Other Tests",
+      "similarTests": "🎯 Top 5 Similar Test Recommendations",
+      "popularTests": "🔥 Top 5 Popular Test Recommendations"
+    },
+    "result": {
+      "analyzing": "Analyzing results...",
+      "completed": "Test completed!",
+      "showResult": "Show results",
+      "yourResult": "Your Result",
+      "pros": "Strengths",
+      "cons": "Weaknesses",
+      "friendsEvaluation": "Friends' Evaluation",
+      "advice": "Relationship Advice",
+      "bestMatch": "Best Compatibility",
+      "goodMatch": "Good Compatibility",
+      "carefulMatch": "Compatibility Requiring Attention",
+      "shareResult": "Share Result"
+    }
   }
 }
 

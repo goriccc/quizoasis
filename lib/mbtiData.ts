@@ -1,6 +1,8 @@
 import { stressQuestions, stressResults } from './stressData';
 import { datingQuestions, datingResults } from './datingData';
 import { signalQuestions, signalResults } from './signalData';
+import { attachmentQuestions, attachmentResults } from './attachmentData';
+import { friendQuestions, friendResults } from './friendData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -928,6 +930,14 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'catch-lover-signals': {
     questions: signalQuestions,
     results: signalResults
+  },
+  'attachment-style-test': {
+    questions: attachmentQuestions,
+    results: attachmentResults
+  },
+  'friend-test': {
+    questions: friendQuestions,
+    results: friendResults
   }
 };
 

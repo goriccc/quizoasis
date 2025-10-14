@@ -66,6 +66,75 @@
     "address": "Alamat: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, Korea Selatan",
     "businessNumber": "No. Bisnis: 304-24-18806",
     "copyright": "Copyright © QuizOasis Co., Ltd"
+  },
+  "attachmentTest": {
+    "startMessage": {
+      "line1": "Cara mencintai Anda, ditentukan sejak masa kanak-kanak?",
+      "line2": "Mengapa saya selalu cemas dalam hubungan?",
+      "line3": "Mengapa semakin dekat semakin ingin lari?",
+      "line4": "Mengapa saling menyakiti meskipun saling mencintai?",
+      "line5": "「Teori Kelekatan」psikologi memberikan jawabannya.",
+      "line6": "Hanya 3 menit! Langkah pertama memahami diri sendiri 💚"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang telah berpartisipasi",
+      "progress": "Kemajuan",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "shareWithFriends": "Coba dengan Teman",
+      "similarTests": "Rekomendasi 5 Tes Serupa Teratas",
+      "popularTests": "Rekomendasi 5 Tes Populer Teratas"
+    },
+    "result": {
+      "analyzing": "Menganalisis hasil...",
+      "completed": "Tes selesai!",
+      "showResult": "Tampilkan hasil analisis",
+      "characteristics": "Karakteristik utama",
+      "relationshipPattern": "Pola hubungan",
+      "advice": "Saran hubungan",
+      "bestMatch": "Kecocokan terbaik",
+      "goodMatch": "Kecocokan baik",
+      "carefulMatch": "Perlu perhatian",
+      "difficultMatch": "Kecocokan sulit"
+    }
+  },
+  "friendTest": {
+    "startMessage": {
+      "line1": "「Saya seperti yang saya pikir vs Saya seperti yang dilihat teman-teman」",
+      "line2": "Peran apa yang saya mainkan ketika teman-teman mengalami kesulitan?",
+      "line3": "Bagaimana teman-teman mengingat saya?",
+      "line4": "Apa yang akan dirindukan teman-teman ketika saya tidak ada?",
+      "line5": "Temukan tipe teman sejati Anda!",
+      "line6": "Hanya butuh 3 menit!\nBagikan ke teman dan bandingkan hasilnya 😊"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": " orang telah berpartisipasi",
+      "shareWithFriends": "Coba bersama teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi tes",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat Tes Lain",
+      "similarTests": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTests": "🔥 Top 5 Rekomendasi Tes Populer"
+    },
+    "result": {
+      "analyzing": "Menganalisis hasil...",
+      "completed": "Tes selesai!",
+      "showResult": "Tampilkan hasil",
+      "yourResult": "Hasil Anda",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "friendsEvaluation": "Penilaian Teman",
+      "advice": "Saran Hubungan",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik",
+      "carefulMatch": "Kecocokan yang Perlu Perhatian",
+      "shareResult": "Bagikan Hasil"
+    }
   }
 }
 

@@ -43,6 +43,16 @@ export default async function HomePage({ params }: Props) {
         convertDBTestToQuizTest(dbTest, locale as Locale)
       );
       
+      // 애착 스타일 테스트가 없으면 더미 데이터에서 추가
+      const hasAttachmentTest = tests.some(test => test.slug === 'attachment-style-test');
+      if (!hasAttachmentTest) {
+        console.log('🔧 애착 스타일 테스트 추가');
+        const attachmentTest = dummyTests.find(test => test.slug === 'attachment-style-test');
+        if (attachmentTest) {
+          tests.unshift(attachmentTest); // 첫 번째에 추가
+        }
+      }
+      
       return <HomePageClient tests={tests} locale={locale as Locale} />;
     } else {
       console.log('⚠️ Supabase 데이터 없음, 더미 데이터 사용');
