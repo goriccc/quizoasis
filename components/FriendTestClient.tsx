@@ -751,7 +751,7 @@ ${t('startMessage.line6')}`}
               💬 {t('result.friendsEvaluation')}
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed">
-              "{result.friendsEvaluation[localeKey as keyof typeof result.friendsEvaluation] || result.friendsEvaluation.ko}"
+              &quot;{result.friendsEvaluation[localeKey as keyof typeof result.friendsEvaluation] || result.friendsEvaluation.ko}&quot;
             </p>
           </div>
 
