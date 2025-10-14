@@ -28,7 +28,8 @@ interface Props {
 }
 
 // Dynamic rendering: 항상 최신 데이터 (play_count 실시간 업데이트)
-export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+export const revalidate = 0;
 
 // 모든 테스트 페이지를 빌드 시 사전 생성 (성능 향상)
 export async function generateStaticParams() {
