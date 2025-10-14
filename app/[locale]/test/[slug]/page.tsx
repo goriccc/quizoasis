@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { getTestBySlug, getTests } from '@/lib/supabase';
+import { getTestBySlug } from '@/lib/supabase';
 import { getTestData } from '@/lib/mbtiData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
@@ -28,27 +28,7 @@ interface Props {
 }
 
 // Dynamic rendering: 항상 최신 데이터 (play_count 실시간 업데이트)
-export const dynamicParams = true;
 export const revalidate = 0;
-
-// 모든 테스트 페이지를 빌드 시 사전 생성 (성능 향상)
-export async function generateStaticParams() {
-  const tests = await getTests();
-  const locales = ['ko', 'en', 'ja', 'zh-CN', 'zh-TW', 'id', 'vi'];
-  
-  const params: { locale: string; slug: string }[] = [];
-  
-  for (const test of tests) {
-    for (const locale of locales) {
-      params.push({
-        locale,
-        slug: test.slug,
-      });
-    }
-  }
-  
-  return params;
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = params;
