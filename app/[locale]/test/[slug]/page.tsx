@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import dynamic from 'next/dynamic';
+import { headers } from 'next/headers';
 import { getTestBySlug } from '@/lib/supabase';
 import { getTestData } from '@/lib/mbtiData';
 import { getThumbnailUrl } from '@/lib/utils';
@@ -115,6 +116,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function TestPage({ params }: Props) {
   const { locale, slug } = params;
   setRequestLocale(locale);
+
+  // Force dynamic rendering - 항상 최신 데이터
+  headers();
 
   // Supabase에서 테스트 메타데이터만 가져오기 (빠른 로딩)
   const test = await getTestBySlug(slug);
