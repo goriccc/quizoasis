@@ -864,18 +864,19 @@ export default function StressTestClient({
                 >
                   <Send size={20} className="text-white" />
                 </button>
-                <button
-                  onClick={shareToTwitter}
-                  className="w-12 h-12 bg-black rounded-full flex items-center justify-center"
-                >
-                  <Twitter size={20} className="text-white" />
-                </button>
-                <button
-                  onClick={shareToFacebook}
-                  className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
-                >
-                  <Facebook size={20} className="text-white" />
-                </button>
+              <button
+                onClick={shareToTwitter}
+                className="w-12 h-12 bg-black rounded-full flex items-center justify-center"
+              >
+                <Twitter size={20} className="text-white" />
+              </button>
+              <button
+                onClick={shareToLine}
+                className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center"
+                title="LINE"
+              >
+                <MessageCircle size={20} className="text-white" />
+              </button>
               </div>
             </div>
           </div>

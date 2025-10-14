@@ -1022,10 +1022,11 @@ export default function MBTITestClient({
                 <Twitter size={20} className="text-white" />
               </button>
               <button
-                onClick={shareToFacebook}
-                className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
+                onClick={shareToLine}
+                className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center"
+                title="LINE"
               >
-                <Facebook size={20} className="text-white" />
+                <MessageCircle size={20} className="text-white" />
               </button>
             </div>
           </div>
