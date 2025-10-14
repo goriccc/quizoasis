@@ -419,6 +419,14 @@ export default function MBTITestClient({
     }
   };
 
+  const shareToWhatsApp = () => {
+    const url = encodeURIComponent(window.location.href);
+    const shareText = result 
+      ? encodeURIComponent(`나는 ${result.type}! 너는 어떤 성격? 함께 테스트해보자 💕`)
+      : encodeURIComponent(title);
+    window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
+  };
+
   const shareToKakao = () => {
     if (typeof window === 'undefined') return;
     
@@ -589,38 +597,42 @@ export default function MBTITestClient({
               <h2 className="text-lg font-bold text-gray-800 mb-4">
                 {t('mbti.shareWithFriends')}
               </h2>
-              <div className="flex justify-center gap-4">
+              <div className="flex justify-center gap-3 flex-wrap">
                 <button
                   onClick={copyLink}
-                  className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center"
+                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
                 >
-                  <LinkIcon size={20} className="text-gray-600" />
+                  <Image src="/icons/link.jpeg" alt="링크 복사" width={48} height={48} className="rounded-xl" />
                 </button>
                  <button
                    onClick={shareToKakao}
-                   className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
+                   className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
                  >
-                   <MessageCircle size={20} className="text-black" />
+                   <Image src="/icons/kakao.jpeg" alt="카카오톡" width={48} height={48} className="rounded-xl" />
                  </button>
                 <button
                   onClick={shareToTelegram}
-                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center"
+                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
                 >
-                  <Send size={20} className="text-white" />
+                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={48} height={48} className="rounded-xl" />
                 </button>
                 <button
                   onClick={shareToWeChat}
-                  className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
-                  title="WeChat"
+                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
                 >
-                  <MessageCircle size={20} className="text-white" />
+                  <Image src="/icons/wechat.jpeg" alt="위챗" width={48} height={48} className="rounded-xl" />
                 </button>
                 <button
                   onClick={shareToLine}
-                  className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center"
-                  title="LINE"
+                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
                 >
-                  <MessageCircle size={20} className="text-white" />
+                  <Image src="/icons/line.jpeg" alt="라인" width={48} height={48} className="rounded-xl" />
+                </button>
+                <button
+                  onClick={shareToWhatsApp}
+                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
+                >
+                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={48} height={48} className="rounded-xl" />
                 </button>
               </div>
             </div>
@@ -929,6 +941,13 @@ export default function MBTITestClient({
                 >
                   <MessageCircle size={20} className="text-white" />
                 </button>
+                <button
+                  onClick={shareToWhatsApp}
+                  className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
+                  title="WhatsApp"
+                >
+                  <MessageCircle size={20} className="text-white" />
+                </button>
               </div>
             </div>
           </div>
@@ -1049,6 +1068,13 @@ export default function MBTITestClient({
                 onClick={shareToLine}
                 className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center"
                 title="LINE"
+              >
+                <MessageCircle size={20} className="text-white" />
+              </button>
+              <button
+                onClick={shareToWhatsApp}
+                className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
+                title="WhatsApp"
               >
                 <MessageCircle size={20} className="text-white" />
               </button>
