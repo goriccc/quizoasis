@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import { signalQuestions, signalResults } from '@/lib/signalData';
 import { setRequestLocale } from 'next-intl/server';
+import { createClient } from '@/lib/supabase';
 
 // 동적 import로 JavaScript 번들 크기 최적화
 const SignalTestClient = dynamic(() => import('@/components/SignalTestClient'), {
@@ -24,8 +25,17 @@ export default async function SignalTestPage({ params }: Props) {
   const { locale } = params;
   setRequestLocale(locale);
 
-  const title = '연인이 보내는 신호를 캐치하세요!';
-  const description = '연인의 신호 포착 능력을 테스트해보세요. 12개 질문으로 당신의 신호 감지 능력을 확인하세요!';
+  // Supabase에서 테스트 정보 가져오기
+  const supabase = createClient();
+  const { data: testData } = await supabase
+    .from('tests')
+    .select('title, description, play_count')
+    .eq('slug', 'catch-lover-signals')
+    .single();
+
+  const title = testData?.title?.[locale] || testData?.title?.['ko'] || '연인이 보내는 신호를 캐치하세요!';
+  const description = testData?.description?.[locale] || testData?.description?.['ko'] || '연인의 신호 포착 능력을 테스트해보세요.';
+  const playCount = testData?.play_count || 0;
 
   return (
     <SignalTestClient
@@ -37,7 +47,7 @@ export default async function SignalTestPage({ params }: Props) {
       results={signalResults}
       questionCount={signalQuestions.length}
       thumbnail="test_027_reading_signals.jpg"
-      playCount={0}
+      playCount={playCount}
       similarTests={[]}
     />
   );
