@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import { getTests } from '@/lib/supabase';
 import { dummyTests } from '@/lib/dummyData';
 import HomePageClient from '@/components/HomePageClient';
@@ -13,14 +14,17 @@ interface Props {
   };
 }
 
-// ISR: 10분마다 자동 재생성
-export const revalidate = 600;
+// Dynamic rendering: 항상 최신 데이터 (play_count 실시간 업데이트)
+export const revalidate = 0;
 
 // metadata는 app/[locale]/layout.tsx에서 처리
 
 export default async function HomePage({ params }: Props) {
   const { locale } = params;
   setRequestLocale(locale);
+  
+  // Force dynamic rendering
+  headers();
   
   // FAQ Schema 임시 제거 - 디버깅용
   const faqSchema = null;
