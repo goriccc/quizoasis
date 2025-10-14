@@ -625,7 +625,7 @@ ${t('startMessage.line6')}`}
                               </h3>
                               <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                                 <Play size={14} />
-                                <span>{formatPlayCount(test.playCount || test.play_count || 0, locale as any)}</span>
+                                <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale as any)}</span>
                               </div>
                             </div>
                           </div>
@@ -894,7 +894,7 @@ ${t('startMessage.line6')}`}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount || test.play_count || 0, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale as any)}</span>
                             </div>
                           </div>
                         </div>
@@ -934,7 +934,7 @@ ${t('startMessage.line6')}`}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount || test.play_count || 0, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale as any)}</span>
                             </div>
                           </div>
                         </div>
