@@ -1017,7 +1017,7 @@ export default function MBTITestClient({
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               {t('mbti.shareWithFriends')}
             </h2>
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-center gap-2">
               <button
                 onClick={copyLink}
                 className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center"
