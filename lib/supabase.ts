@@ -44,15 +44,12 @@ export async function getTestBySlug(slug: string) {
  * 플레이 횟수 증가
  */
 export async function incrementPlayCount(slug: string) {
-  console.log('🔵 incrementPlayCount 호출됨 - slug:', slug);
-  const { data, error } = await supabase.rpc('increment_play_count', {
+  const { error } = await supabase.rpc('increment_play_count', {
     test_slug: slug,
   });
 
   if (error) {
-    console.error('🔴 Error incrementing play count:', error);
-  } else {
-    console.log('✅ Play count 증가 성공 - slug:', slug, 'data:', data);
+    console.error('Error incrementing play count:', error);
   }
 }
 

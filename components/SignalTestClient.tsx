@@ -56,6 +56,7 @@ export default function SignalTestClient({
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
+  const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
   useEffect(() => {
@@ -234,7 +235,13 @@ export default function SignalTestClient({
   const handleStartTest = () => {
     setShuffledQuestions(shuffleQuestions(questions));
     setDisplayPlayCount(prev => prev + 1);
-    incrementPlayCount(slug);
+    
+    // 중복 호출 방지
+    if (!hasIncrementedPlayCount) {
+      incrementPlayCount(slug);
+      setHasIncrementedPlayCount(true);
+    }
+    
     setStarted(true);
     window.scrollTo(0, 0);
   };

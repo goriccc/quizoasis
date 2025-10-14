@@ -56,6 +56,7 @@ export default function StressTestClient({
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
+  const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
   useEffect(() => {
@@ -249,7 +250,13 @@ export default function StressTestClient({
   const handleStartTest = () => {
     setShuffledQuestions(shuffleQuestions(questions));
     setDisplayPlayCount(prev => prev + 1); // 플레이 카운트 즉시 증가
-    incrementPlayCount(slug); // 서버의 플레이 카운트도 증가
+    
+    // 중복 호출 방지
+    if (!hasIncrementedPlayCount) {
+      incrementPlayCount(slug); // 서버의 플레이 카운트도 증가
+      setHasIncrementedPlayCount(true);
+    }
+    
     setStarted(true);
     window.scrollTo(0, 0);
   };
