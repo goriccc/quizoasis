@@ -327,11 +327,31 @@ export default function DatingTestClient({
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
-  const shareToWeChat = () => {
-    // WeChat Web 공유는 모바일에서만 작동하므로, QR 코드 또는 링크 복사 방식 사용
+  const shareToWeChat = async () => {
     const url = window.location.href;
-    navigator.clipboard.writeText(url);
-    alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+    const shareText = result 
+      ? `나는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕\n\n${url}`
+      : `${title}\n\n${url}`;
+    
+    // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
+    if (navigator.share) {
+      try {
+        await navigator.share({ text: shareText });
+        return;
+      } catch (error) {
+        if (error instanceof Error && error.name === 'AbortError') {
+          return; // 사용자가 취소
+        }
+      }
+    }
+    
+    // Fallback: 링크 복사
+    try {
+      await navigator.clipboard.writeText(url);
+      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+    } catch (error) {
+      alert('공유 기능을 사용할 수 없습니다.');
+    }
   };
 
   const shareToKakao = () => {
