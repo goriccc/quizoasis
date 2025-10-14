@@ -27,8 +27,8 @@ interface Props {
   };
 }
 
-// ISR: 1시간마다 자동 재생성 (플레이 횟수 업데이트)
-export const revalidate = 3600;
+// ISR: 60초마다 자동 재생성 (플레이 횟수 업데이트)
+export const revalidate = 60;
 
 // 모든 테스트 페이지를 빌드 시 사전 생성 (성능 향상)
 export async function generateStaticParams() {
