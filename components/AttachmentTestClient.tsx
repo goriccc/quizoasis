@@ -236,11 +236,15 @@ export default function AttachmentTestClient({
     try {
       // @ts-ignore
       window.Kakao.Share.sendDefault({
-        objectType: 'text',
-        text: shareText,
-        link: {
-          mobileWebUrl: currentUrl,
-          webUrl: currentUrl,
+        objectType: 'feed',
+        content: {
+          title: shareText,
+          description: '',
+          imageUrl: getThumbnailUrl(thumbnail || 'test_028_attachment_style.jpg'),
+          link: {
+            mobileWebUrl: currentUrl,
+            webUrl: currentUrl,
+          },
         },
         buttons: [
           {

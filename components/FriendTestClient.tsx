@@ -236,11 +236,15 @@ export default function FriendTestClient({
     try {
       // @ts-ignore
       window.Kakao.Share.sendDefault({
-        objectType: 'text',
-        text: shareText,
-        link: {
-          mobileWebUrl: currentUrl,
-          webUrl: currentUrl,
+        objectType: 'feed',
+        content: {
+          title: shareText,
+          description: '',
+          imageUrl: getThumbnailUrl(thumbnail || 'test_029_what_kind_of_friend.jpg'),
+          link: {
+            mobileWebUrl: currentUrl,
+            webUrl: currentUrl,
+          },
         },
         buttons: [
           {
