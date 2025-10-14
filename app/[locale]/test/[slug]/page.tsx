@@ -27,8 +27,8 @@ interface Props {
   };
 }
 
-// ISR: 60초마다 자동 재생성 (플레이 횟수 업데이트)
-export const revalidate = 60;
+// Dynamic rendering: 항상 최신 데이터 (play_count 실시간 업데이트)
+export const dynamic = 'force-dynamic';
 
 // 모든 테스트 페이지를 빌드 시 사전 생성 (성능 향상)
 export async function generateStaticParams() {
