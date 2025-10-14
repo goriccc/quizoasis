@@ -300,7 +300,7 @@ export default function DatingTestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
+    const shareText = `나는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕\n\n${window.location.href}`;
     
     if (navigator.share) {
       try {

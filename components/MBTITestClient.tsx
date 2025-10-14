@@ -360,7 +360,7 @@ export default function MBTITestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
+    const shareText = `나는 ${result.type}! 너는 어떤 성격? 함께 테스트해보자 💕\n\n${window.location.href}`;
     
     if (navigator.share) {
       // 네이티브 공유 API 사용 (모바일) - 텍스트만

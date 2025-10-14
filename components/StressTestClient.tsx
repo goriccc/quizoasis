@@ -317,7 +317,7 @@ export default function StressTestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `${title}\n\n${t('mbti.shareInviteMessage')}\n\n${window.location.href}`;
+    const shareText = `내 스트레스 지수는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 얼마나? 함께 확인해보자 💕\n\n${window.location.href}`;
     
     if (navigator.share) {
       // 네이티브 공유 API 사용 (모바일) - 텍스트만
