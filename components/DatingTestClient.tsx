@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { DatingQuestion, DatingResult, calculateDatingResult } from '../lib/datingData';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Play, Share2, MessageCircle, Send, Twitter, Facebook, Link as LinkIcon } from 'lucide-react';
+import { Play, Share2, MessageCircle, Send, Twitter, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
@@ -322,9 +322,9 @@ export default function DatingTestClient({
   };
 
   // 공유 함수들
-  const shareToFacebook = () => {
+  const shareToLine = () => {
     const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToTwitter = () => {
@@ -507,8 +507,8 @@ export default function DatingTestClient({
                 <button onClick={shareToTwitter} className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
                   <Twitter size={20} className="text-white" />
                 </button>
-                <button onClick={shareToFacebook} className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                  <Facebook size={20} className="text-white" />
+                <button onClick={shareToLine} className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center" title="LINE">
+                  <MessageCircle size={20} className="text-white" />
                 </button>
               </div>
             </div>
@@ -892,8 +892,8 @@ export default function DatingTestClient({
                 <button onClick={shareToTwitter} className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
                   <Twitter size={20} className="text-white" />
                 </button>
-                <button onClick={shareToFacebook} className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                  <Facebook size={20} className="text-white" />
+                <button onClick={shareToLine} className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center" title="LINE">
+                  <MessageCircle size={20} className="text-white" />
                 </button>
               </div>
             </div>
