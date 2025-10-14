@@ -37,12 +37,23 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     setSelectedTag(tagId);
   };
 
-  // 선택된 태그에 따라 필터링된 테스트
+  // 선택된 태그에 따라 필터링된 테스트 (랜덤 순서)
   const filteredTests = useMemo(() => {
+    let filtered;
     if (selectedTag === 'all') {
-      return tests;
+      filtered = tests;
+    } else {
+      filtered = tests.filter(test => test.tags.includes(selectedTag));
     }
-    return tests.filter(test => test.tags.includes(selectedTag));
+    
+    // Fisher-Yates 셔플 알고리즘으로 랜덤 순서 생성
+    const shuffled = [...filtered];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    
+    return shuffled;
   }, [tests, selectedTag]);
 
   return (
