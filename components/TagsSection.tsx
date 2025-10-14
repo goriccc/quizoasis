@@ -65,7 +65,7 @@ export default function TagsSection({ tags, selectedTag, onTagSelect }: TagsSect
 
   return (
     <div className="w-full bg-white border-b border-gray-200 sticky z-40 mt-2" style={{ height: '48px', top: '64px' }}>
-      <div className="h-full flex items-center">
+      <div className="h-full flex items-center px-1 sm:px-4">
         <div
           ref={scrollRef}
           className="flex gap-1.5 overflow-x-auto hide-scrollbar cursor-grab select-none touch-scroll items-center w-full"

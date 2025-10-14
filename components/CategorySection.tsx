@@ -18,7 +18,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
   const t = useTranslations();
 
   return (
-    <section className="py-6">
+    <section className="pt-0 pb-6">
       <div className="max-w-7xl mx-auto px-1 sm:px-4">
         <h2 className="text-xl font-bold mb-6 text-gray-800">
           {t('sections.category')} : {categoryName === 'all' ? t('tags.all') : `#${categoryName}`}
@@ -33,7 +33,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
               className="group"
               prefetch={true}
             >
-              <div className="relative rounded-2xl overflow-hidden shadow-md card-hover bg-white">
+              <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                 {/* 썸네일 */}
                 <div className="relative w-full aspect-video">
                   <Image
@@ -53,12 +53,14 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
                     <span>{formatPlayCount(test.playCount, locale)}</span>
                   </div>
                 </div>
+                
+                {/* 타이틀 */}
+                <div className="p-4">
+                  <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
+                    {test.title}
+                  </h3>
+                </div>
               </div>
-              
-              {/* 타이틀 */}
-              <h3 className="mt-3 font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 px-1">
-                {test.title}
-              </h3>
             </Link>
           ))}
         </div>

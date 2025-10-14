@@ -639,22 +639,26 @@ export default function MBTITestClient({
                     href={`/${locale}/test/${test.slug}`}
                     className="block group"
                   >
-                    <div className="relative bg-gray-100 rounded-xl aspect-video overflow-hidden mb-3">
-                      <Image
-                        src={getThumbnailUrl(test.thumbnail)}
-                        alt={test.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
-                      />
-                      <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded-full flex items-center gap-2 text-xs">
-                        <Play size={12} fill="white" />
-                        <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                    <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
+                      <div className="relative aspect-video">
+                        <Image
+                          src={getThumbnailUrl(test.thumbnail)}
+                          alt={test.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
+                        />
+                        <div className="absolute bottom-3 right-3 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-full flex items-center gap-1.5 text-sm">
+                          <Play size={14} fill="white" />
+                          <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                        </div>
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
+                          {test.title}
+                        </h3>
                       </div>
                     </div>
-                    <h3 className="font-medium text-gray-800 line-clamp-2 text-sm group-hover:text-purple-600 transition-colors">
-                      {test.title}
-                    </h3>
                   </Link>
                 ))}
               </div>
@@ -663,7 +667,7 @@ export default function MBTITestClient({
 
             {/* 인기 테스트 추천 톱5 */}
             {popularTestsState.length > 0 && (
-              <div className="mb-8">
+              <div className="mb-8 pb-5">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
                 🔥 요즘 인기 테스트 추천 톱5
               </h2>
@@ -674,22 +678,26 @@ export default function MBTITestClient({
                     href={`/${locale}/test/${test.slug}`}
                     className="block group"
                   >
-                    <div className="relative bg-gray-100 rounded-xl aspect-video overflow-hidden mb-3">
-                      <Image
-                        src={getThumbnailUrl(test.thumbnail)}
-                        alt={test.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
-                      />
-                      <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded-full flex items-center gap-2 text-xs">
-                        <Play size={12} fill="white" />
-                        <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                    <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
+                      <div className="relative aspect-video">
+                        <Image
+                          src={getThumbnailUrl(test.thumbnail)}
+                          alt={test.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
+                        />
+                        <div className="absolute bottom-3 right-3 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-full flex items-center gap-1.5 text-sm">
+                          <Play size={14} fill="white" />
+                          <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                        </div>
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
+                          {test.title}
+                        </h3>
                       </div>
                     </div>
-                    <h3 className="font-medium text-gray-800 line-clamp-2 text-sm group-hover:text-purple-600 transition-colors">
-                      {test.title}
-                    </h3>
                   </Link>
                 ))}
               </div>

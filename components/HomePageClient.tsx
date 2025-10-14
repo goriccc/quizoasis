@@ -46,29 +46,32 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   }, [tests, selectedTag]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#e5e7eb]">
+      {/* 태그 섹션 - 컨테이너 밖으로 */}
+      <TagsSection 
+        tags={tags} 
+        selectedTag={selectedTag} 
+        onTagSelect={handleTagSelect}
+      />
+      
       <div className="max-w-6xl mx-auto px-1 sm:px-4">
-        {/* 태그 섹션 */}
-        <TagsSection 
-          tags={tags} 
-          selectedTag={selectedTag} 
-          onTagSelect={handleTagSelect}
+
+      {/* 최신 테스트 섹션 */}
+      <div className="pt-2 bg-white">
+        <LatestTestsSection 
+          tests={tests}
+          locale={locale}
         />
+      </div>
 
-        {/* 최신 테스트 섹션 */}
-        <div className="pt-2">
-          <LatestTestsSection 
-            tests={tests}
-            locale={locale}
-          />
-        </div>
-
-        {/* 카테고리 섹션 */}
+      {/* 카테고리 섹션 */}
+      <div className="pt-8.5 bg-white">
         <CategorySection 
           tests={filteredTests} 
           categoryName={selectedTag}
           locale={locale}
         />
+      </div>
       </div>
     </div>
   );

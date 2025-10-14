@@ -119,8 +119,8 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                 }}
                 draggable={false}
               >
-                <div className="relative rounded-lg overflow-hidden shadow-md card-hover w-[80vw] sm:w-[60vw] md:w-[50vw] lg:w-[435px]">
-                  {/* 썸네일 (카테고리 대비 80% 크기) */}
+                <div className="bg-white rounded-lg shadow card-hover w-[80vw] sm:w-[60vw] md:w-[50vw] lg:w-[435px] overflow-hidden">
+                  {/* 썸네일 */}
                   <div className="relative w-full aspect-[435/245]">
                     <Image
                       src={getThumbnailUrl(test.thumbnail)}
@@ -134,18 +134,20 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                       quality={85}
                     />
                   
-                  {/* 플레이 횟수 - 우측 하단 */}
-                  <div className="absolute bottom-3 right-3 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-full flex items-center gap-1.5 text-sm">
-                    <Play size={14} fill="white" />
-                    <span>{formatPlayCount(test.playCount, locale)}</span>
+                    {/* 플레이 횟수 - 우측 하단 */}
+                    <div className="absolute bottom-3 right-3 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-full flex items-center gap-1.5 text-sm">
+                      <Play size={14} fill="white" />
+                      <span>{formatPlayCount(test.playCount, locale)}</span>
+                    </div>
+                  </div>
+                  
+                  {/* 타이틀 */}
+                  <div className="p-4">
+                    <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
+                      {test.title}
+                    </h3>
                   </div>
                 </div>
-              </div>
-              
-              {/* 타이틀 */}
-              <h3 className="mt-2 font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
-                {test.title}
-              </h3>
             </Link>
           ))}
         </div>
