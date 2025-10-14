@@ -597,42 +597,24 @@ export default function MBTITestClient({
               <h2 className="text-lg font-bold text-gray-800 mb-4">
                 {t('mbti.shareWithFriends')}
               </h2>
-              <div className="flex justify-center gap-2 flex-wrap">
-                <button
-                  onClick={copyLink}
-                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
-                >
-                  <Image src="/icons/link.jpeg" alt="링크 복사" width={48} height={48} className="rounded-xl" />
+              <div className="flex justify-center gap-1">
+                <button onClick={copyLink} className="flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform">
+                  <Image src="/icons/link.jpeg" alt="링크 복사" width={40} height={40} className="rounded-lg" />
                 </button>
-                 <button
-                   onClick={shareToKakao}
-                   className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
-                 >
-                   <Image src="/icons/kakao.jpeg" alt="카카오톡" width={48} height={48} className="rounded-xl" />
-                 </button>
-                <button
-                  onClick={shareToTelegram}
-                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
-                >
-                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={48} height={48} className="rounded-xl" />
+                <button onClick={shareToKakao} className="flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform">
+                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={40} height={40} className="rounded-lg" />
                 </button>
-                <button
-                  onClick={shareToWeChat}
-                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
-                >
-                  <Image src="/icons/wechat.jpeg" alt="위챗" width={48} height={48} className="rounded-xl" />
+                <button onClick={shareToTelegram} className="flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform">
+                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={40} height={40} className="rounded-lg" />
                 </button>
-                <button
-                  onClick={shareToLine}
-                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
-                >
-                  <Image src="/icons/line.jpeg" alt="라인" width={48} height={48} className="rounded-xl" />
+                <button onClick={shareToWeChat} className="flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform">
+                  <Image src="/icons/wechat.jpeg" alt="위챗" width={40} height={40} className="rounded-lg" />
                 </button>
-                <button
-                  onClick={shareToWhatsApp}
-                  className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
-                >
-                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={48} height={48} className="rounded-xl" />
+                <button onClick={shareToLine} className="flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform">
+                  <Image src="/icons/line.jpeg" alt="라인" width={40} height={40} className="rounded-lg" />
+                </button>
+                <button onClick={shareToWhatsApp} className="flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform">
+                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={40} height={40} className="rounded-lg" />
                 </button>
               </div>
             </div>
