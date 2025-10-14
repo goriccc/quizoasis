@@ -46,7 +46,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   }, [tests, selectedTag]);
 
   return (
-    <div className="min-h-screen bg-[#e5e7eb]">
+    <div className="min-h-screen bg-white">
       {/* 태그 섹션 - 컨테이너 밖으로 */}
       <TagsSection 
         tags={tags} 
@@ -54,7 +54,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
         onTagSelect={handleTagSelect}
       />
       
-      <div className="max-w-6xl mx-auto px-1 sm:px-4">
+      <div className="max-w-7xl mx-auto px-1 sm:px-4">
 
       {/* 최신 테스트 섹션 */}
       <div className="pt-2 bg-white">

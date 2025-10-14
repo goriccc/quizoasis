@@ -47,18 +47,19 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
                     quality={85}
                   />
                   
-                  {/* 플레이 횟수 - 우측 하단 */}
-                  <div className="absolute bottom-3 right-3 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-full flex items-center gap-1.5 text-sm">
-                    <Play size={14} fill="white" />
-                    <span>{formatPlayCount(test.playCount, locale)}</span>
-                  </div>
                 </div>
                 
-                {/* 타이틀 */}
+                {/* 타이틀과 플레이 횟수 */}
                 <div className="p-4">
-                  <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
-                    {test.title}
-                  </h3>
+                  <div className="flex items-center justify-end gap-3">
+                    <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
+                      {test.title}
+                    </h3>
+                    <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
+                      <Play size={14} />
+                      <span>{formatPlayCount(test.playCount, locale)}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Link>

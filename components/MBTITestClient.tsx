@@ -626,14 +626,14 @@ export default function MBTITestClient({
               </div>
             </div>
 
-            {/* 유사한 다른 테스트 추천 톱5 */}
+            {/* 유사한 다른 테스트 */}
             {similarTestsState.length > 0 && (
-            <div className="mb-8">
+            <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-                🎯 유사한 다른 테스트 추천 톱5
+                유사한 다른 테스트
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                {similarTestsState.slice(0, 5).map((test) => (
+                {similarTestsState.map((test) => (
                   <Link
                     key={test.id}
                     href={`/${locale}/test/${test.slug}`}
@@ -648,15 +648,17 @@ export default function MBTITestClient({
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                         />
-                        <div className="absolute bottom-3 right-3 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-full flex items-center gap-1.5 text-sm">
-                          <Play size={14} fill="white" />
-                          <span>{formatPlayCount(test.playCount, locale as any)}</span>
-                        </div>
                       </div>
                       <div className="p-4">
-                        <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
-                          {test.title}
-                        </h3>
+                        <div className="flex items-center justify-end gap-3">
+                          <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
+                            {test.title}
+                          </h3>
+                          <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
+                            <Play size={14} />
+                            <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </Link>
@@ -664,45 +666,6 @@ export default function MBTITestClient({
               </div>
             </div>
           )}
-
-            {/* 인기 테스트 추천 톱5 */}
-            {popularTestsState.length > 0 && (
-              <div className="mb-8 pb-5">
-              <h2 className="text-xl font-bold text-gray-800 mb-6">
-                🔥 요즘 인기 테스트 추천 톱5
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                {popularTestsState.map((test) => (
-                  <Link
-                    key={test.id}
-                    href={`/${locale}/test/${test.slug}`}
-                    className="block group"
-                  >
-                    <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
-                      <div className="relative aspect-video">
-                        <Image
-                          src={getThumbnailUrl(test.thumbnail)}
-                          alt={test.title}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
-                        />
-                        <div className="absolute bottom-3 right-3 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-full flex items-center gap-1.5 text-sm">
-                          <Play size={14} fill="white" />
-                          <span>{formatPlayCount(test.playCount, locale as any)}</span>
-                        </div>
-                      </div>
-                      <div className="p-4">
-                        <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2">
-                          {test.title}
-                        </h3>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-            )}
           </div>
         </div>
       </div>
@@ -926,6 +889,80 @@ export default function MBTITestClient({
               </button>
               </div>
             </div>
+
+            {/* 🎯 유사한 다른 테스트 추천 톱5 */}
+            {similarTestsState.length > 0 && (
+              <div className="mb-8 pb-4">
+                <h2 className="text-xl font-bold text-gray-800 mb-6">
+                  🎯 유사한 다른 테스트 추천 톱5
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                  {similarTestsState.slice(0, 5).map((test) => (
+                    <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
+                      <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
+                        <div className="relative aspect-video">
+                          <Image
+                            src={getThumbnailUrl(test.thumbnail)}
+                            alt={test.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
+                          />
+                        </div>
+                        <div className="p-4">
+                          <div className="flex items-center justify-end gap-3">
+                            <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
+                              {test.title}
+                            </h3>
+                            <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
+                              <Play size={14} />
+                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 🔥 요즘 인기 테스트 추천 톱5 */}
+            {popularTestsState.length > 0 && (
+              <div className="mb-8 pb-4">
+                <h2 className="text-xl font-bold text-gray-800 mb-6">
+                  🔥 요즘 인기 테스트 추천 톱5
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                  {popularTestsState.map((test) => (
+                    <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
+                      <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
+                        <div className="relative aspect-video">
+                          <Image
+                            src={getThumbnailUrl(test.thumbnail)}
+                            alt={test.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
+                          />
+                        </div>
+                        <div className="p-4">
+                          <div className="flex items-center justify-end gap-3">
+                            <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
+                              {test.title}
+                            </h3>
+                            <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
+                              <Play size={14} />
+                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
