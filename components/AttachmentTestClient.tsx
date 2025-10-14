@@ -605,7 +605,7 @@ ${t('startMessage.line6')}`}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.map((test) => {
-                    const testTitle = typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title;
+                    const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
                     return (
                       <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                         <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
@@ -874,7 +874,7 @@ ${t('startMessage.line6')}`}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                 {similarTestsState.slice(0, 5).map((test) => {
-                  const testTitle = typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title;
+                  const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
                   return (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
@@ -914,7 +914,7 @@ ${t('startMessage.line6')}`}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                 {popularTestsState.map((test) => {
-                  const testTitle = typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title;
+                  const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
                   return (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
