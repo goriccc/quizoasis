@@ -476,14 +476,14 @@ export default function AttachmentTestClient({
   if (!started) {
     return (
       <div className="min-h-screen bg-white">
-        <div className="max-w-full mx-auto">
-          <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '16/9' }}>
+        <div className="max-w-4xl mx-auto">
+          <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
               src={getThumbnailUrl(thumbnail || 'test_028_attachment_style.jpg')}
               alt={title}
               fill
               className="object-cover"
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
               priority
             />
           </div>
@@ -603,7 +603,7 @@ ${t('startMessage.line6')}`}
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
                   유사한 다른 테스트
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => {
                     const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
                     return (
