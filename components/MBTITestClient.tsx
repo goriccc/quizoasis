@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { MBTIQuestion, MBTIResult } from '../lib/mbtiData';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Play, Share2, MessageCircle, Send, Twitter, Link as LinkIcon } from 'lucide-react';
+import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForMBTI } from '@/lib/aliexpress';
@@ -392,10 +392,11 @@ export default function MBTITestClient({
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
-  const shareToTwitter = () => {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(title);
-    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+  const shareToWeChat = () => {
+    // WeChat Web 공유는 모바일에서만 작동하므로, QR 코드 또는 링크 복사 방식 사용
+    const url = window.location.href;
+    navigator.clipboard.writeText(url);
+    alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
   };
 
   const shareToKakao = () => {
@@ -588,10 +589,11 @@ export default function MBTITestClient({
                   <Send size={20} className="text-white" />
                 </button>
                 <button
-                  onClick={shareToTwitter}
-                  className="w-12 h-12 bg-black rounded-full flex items-center justify-center"
+                  onClick={shareToWeChat}
+                  className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
+                  title="WeChat"
                 >
-                  <Twitter size={20} className="text-white" />
+                  <MessageCircle size={20} className="text-white" />
                 </button>
                 <button
                   onClick={shareToLine}
@@ -894,10 +896,11 @@ export default function MBTITestClient({
                   <Send size={20} className="text-white" />
                 </button>
                 <button
-                  onClick={shareToTwitter}
-                  className="w-12 h-12 bg-black rounded-full flex items-center justify-center"
+                  onClick={shareToWeChat}
+                  className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
+                  title="WeChat"
                 >
-                  <Twitter size={20} className="text-white" />
+                  <MessageCircle size={20} className="text-white" />
                 </button>
                 <button
                   onClick={shareToLine}
@@ -1016,10 +1019,11 @@ export default function MBTITestClient({
                 <Send size={20} className="text-white" />
               </button>
               <button
-                onClick={shareToTwitter}
-                className="w-12 h-12 bg-black rounded-full flex items-center justify-center"
+                onClick={shareToWeChat}
+                className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
+                title="WeChat"
               >
-                <Twitter size={20} className="text-white" />
+                <MessageCircle size={20} className="text-white" />
               </button>
               <button
                 onClick={shareToLine}
