@@ -597,7 +597,7 @@ export default function MBTITestClient({
               <h2 className="text-lg font-bold text-gray-800 mb-4">
                 {t('mbti.shareWithFriends')}
               </h2>
-              <div className="flex justify-center gap-3 flex-wrap">
+              <div className="flex justify-center gap-2 flex-wrap">
                 <button
                   onClick={copyLink}
                   className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"
@@ -908,46 +908,25 @@ export default function MBTITestClient({
               <h2 className="text-lg font-bold text-gray-800 mb-4">
                 {t('mbti.shareWithFriends')}
               </h2>
-              <div className="flex justify-center gap-4">
-                <button
-                  onClick={copyLink}
-                  className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center"
-                >
-                  <LinkIcon size={20} className="text-gray-600" />
-                </button>
-                <button
-                  onClick={shareToKakao}
-                  className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
-                >
-                  <MessageCircle size={20} className="text-black" />
-                </button>
-                <button
-                  onClick={shareToTelegram}
-                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center"
-                >
-                  <Send size={20} className="text-white" />
-                </button>
-                <button
-                  onClick={shareToWeChat}
-                  className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
-                  title="WeChat"
-                >
-                  <MessageCircle size={20} className="text-white" />
-                </button>
-                <button
-                  onClick={shareToLine}
-                  className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center"
-                  title="LINE"
-                >
-                  <MessageCircle size={20} className="text-white" />
-                </button>
-                <button
-                  onClick={shareToWhatsApp}
-                  className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center"
-                  title="WhatsApp"
-                >
-                  <MessageCircle size={20} className="text-white" />
-                </button>
+            <div className="flex justify-center gap-2 flex-wrap">
+              <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                <Image src="/icons/link.jpeg" alt="링크 복사" width={48} height={48} className="rounded-xl" />
+              </button>
+              <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                <Image src="/icons/kakao.jpeg" alt="카카오톡" width={48} height={48} className="rounded-xl" />
+              </button>
+              <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                <Image src="/icons/telegram.jpeg" alt="텔레그램" width={48} height={48} className="rounded-xl" />
+              </button>
+              <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                <Image src="/icons/wechat.jpeg" alt="위챗" width={48} height={48} className="rounded-xl" />
+              </button>
+              <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                <Image src="/icons/line.jpeg" alt="라인" width={48} height={48} className="rounded-xl" />
+              </button>
+              <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={48} height={48} className="rounded-xl" />
+              </button>
               </div>
             </div>
           </div>
