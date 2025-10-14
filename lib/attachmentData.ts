@@ -11,6 +11,7 @@ export interface AttachmentQuestion {
 
 export interface AttachmentResult {
   type: number;
+  emoji: string;
   title: {
     ko: string;
     en: string;
@@ -700,14 +701,15 @@ export const attachmentQuestions: AttachmentQuestion[] = [
 export const attachmentResults: AttachmentResult[] = [
   {
     type: 1,
+    emoji: "🌟",
     title: {
-      ko: "🌟 안정형 애착 (Secure Attachment)",
-      en: "🌟 Secure Attachment",
-      ja: "🌟 安全型アタッチメント",
-      zh: "🌟 安全型依恋",
-      zhTW: "🌟 安全型依戀",
-      vi: "🌟 Gắn bó An toàn",
-      id: "🌟 Kelekatan Aman"
+      ko: "안정형 애착 (Secure Attachment)",
+      en: "Secure Attachment",
+      ja: "安全型アタッチメント",
+      zh: "安全型依恋",
+      zhTW: "安全型依戀",
+      vi: "Gắn bó An toàn",
+      id: "Kelekatan Aman"
     },
     description: {
       ko: "건강한 사랑의 달인! 가장 이상적인 애착 스타일",
@@ -826,14 +828,15 @@ export const attachmentResults: AttachmentResult[] = [
   },
   {
     type: 2,
+    emoji: "💜",
     title: {
-      ko: "💜 불안형 애착 (Anxious Attachment)",
-      en: "💜 Anxious Attachment",
-      ja: "💜 不安型アタッチメント",
-      zh: "💜 焦虑型依恋",
-      zhTW: "💜 焦慮型依戀",
-      vi: "💜 Gắn bó Lo âu",
-      id: "💜 Kelekatan Cemas"
+      ko: "불안형 애착 (Anxious Attachment)",
+      en: "Anxious Attachment",
+      ja: "不安型アタッチメント",
+      zh: "焦虑型依恋",
+      zhTW: "焦慮型依戀",
+      vi: "Gắn bó Lo âu",
+      id: "Kelekatan Cemas"
     },
     description: {
       ko: "사랑에 목마른 당신, 끊임없는 확인이 필요해요",
@@ -952,14 +955,15 @@ export const attachmentResults: AttachmentResult[] = [
   },
   {
     type: 3,
+    emoji: "💙",
     title: {
-      ko: "💙 회피형 애착 (Avoidant Attachment)",
-      en: "💙 Avoidant Attachment",
-      ja: "💙 回避型アタッチメント",
-      zh: "💙 回避型依恋",
-      zhTW: "💙 迴避型依戀",
-      vi: "💙 Gắn bó Tránh né",
-      id: "💙 Kelekatan Menghindar"
+      ko: "회피형 애착 (Avoidant Attachment)",
+      en: "Avoidant Attachment",
+      ja: "回避型アタッチメント",
+      zh: "回避型依恋",
+      zhTW: "迴避型依戀",
+      vi: "Gắn bó Tránh né",
+      id: "Kelekatan Menghindar"
     },
     description: {
       ko: "거리를 두는 외로운 독립가, 친밀함이 불편해요",
@@ -1078,14 +1082,15 @@ export const attachmentResults: AttachmentResult[] = [
   },
   {
     type: 4,
+    emoji: "💔",
     title: {
-      ko: "💔 공포형 애착 (Fearful-Avoidant Attachment)",
-      en: "💔 Fearful-Avoidant Attachment",
-      ja: "💔 恐怖回避型アタッチメント",
-      zh: "💔 恐惧回避型依恋",
-      zhTW: "💔 恐懼迴避型依戀",
-      vi: "💔 Gắn bó Sợ-Tránh",
-      id: "💔 Kelekatan Takut-Menghindar"
+      ko: "공포형 애착 (Fearful-Avoidant Attachment)",
+      en: "Fearful-Avoidant Attachment",
+      ja: "恐怖回避型アタッチメント",
+      zh: "恐惧回避型依恋",
+      zhTW: "恐懼迴避型依戀",
+      vi: "Gắn bó Sợ-Tránh",
+      id: "Kelekatan Takut-Menghindar"
     },
     description: {
       ko: "가까이 하고 싶지만 두려운 모순의 당신",
