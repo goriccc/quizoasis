@@ -369,7 +369,7 @@ export default function StressTestClient({
     
     // 결과가 있으면 맞춤형 공유 문구 사용
     const shareDescription = result 
-      ? `내 스트레스 지수는 ${result.level[locale] || result.level.ko}! 너는 얼마나? 함께 확인해보자 💕`
+      ? `내 스트레스 지수는 ${result.level[locale as keyof typeof result.level] || result.level.ko}! 너는 얼마나? 함께 확인해보자 💕`
       : description;
     
     try {
@@ -403,7 +403,7 @@ export default function StressTestClient({
   const shareToTelegram = () => {
     const url = encodeURIComponent(window.location.href);
     const shareText = result 
-      ? `내 스트레스 지수는 ${result.level[locale] || result.level.ko}! 너는 얼마나? 함께 확인해보자 💕`
+      ? `내 스트레스 지수는 ${result.level[locale as keyof typeof result.level] || result.level.ko}! 너는 얼마나? 함께 확인해보자 💕`
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
