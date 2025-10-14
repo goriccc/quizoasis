@@ -367,12 +367,17 @@ export default function StressTestClient({
     const currentUrl = window.location.href;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
+    // 결과가 있으면 맞춤형 공유 문구 사용
+    const shareDescription = result 
+      ? `내 스트레스 지수는 ${result.level[locale] || result.level.ko}! 너는 얼마나? 함께 확인해보자 💕`
+      : description;
+    
     try {
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
           title: title,
-          description: description,
+          description: shareDescription,
           imageUrl: thumbnailUrl,
           link: {
             mobileWebUrl: currentUrl,
@@ -397,7 +402,10 @@ export default function StressTestClient({
 
   const shareToTelegram = () => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(title);
+    const shareText = result 
+      ? `내 스트레스 지수는 ${result.level[locale] || result.level.ko}! 너는 얼마나? 함께 확인해보자 💕`
+      : title;
+    const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 

@@ -344,12 +344,17 @@ export default function DatingTestClient({
     const currentUrl = window.location.href;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
+    // 결과가 있으면 맞춤형 공유 문구 사용
+    const shareDescription = result 
+      ? `나는 ${result.title[locale] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕`
+      : description;
+    
     try {
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
           title: title,
-          description: description,
+          description: shareDescription,
           imageUrl: thumbnailUrl,
           link: {
             mobileWebUrl: currentUrl,
@@ -374,7 +379,10 @@ export default function DatingTestClient({
 
   const shareToTelegram = () => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(title);
+    const shareText = result 
+      ? `나는 ${result.title[locale] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕`
+      : title;
+    const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
