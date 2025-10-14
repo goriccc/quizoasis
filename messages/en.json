@@ -48,11 +48,15 @@
     "mbtiTestIntro": "No more complicated MBTI tests!\nExtroverted? Introverted?\nRealistic? Idealistic?\nLogical? Emotional?\nPlanned? Spontaneous?\nWhich of the 16 personality types do you belong to?\nTry it with friends, lovers, and family!\nIt's the first step to understanding each other's personalities.\nIn just 1 minute, discover your MBTI tendencies\nand core personality traits!",
     "stressTestIntro": "Explode? Endure? Avoid? Discover your stress coping style!\nSudden work demands from your boss,\nUnexpected conflicts with friends,\nUnforeseen problem situations...\nSome people explode immediately,\nSome people suppress their feelings,\nSome people avoid the problem.\nHow do you react to stress?\nLooking for healthier coping strategies?\nIn just 3 minutes, discover your stress response pattern\nand better coping methods!",
     "datingTestIntro": "Perfect plan? Spontaneous adventure? Or comfortable at home?\n\nSomeone who books restaurants a week in advance,\nSomeone who moves spontaneously asking \"What should we do today?\",\nSomeone who seeks comfort saying \"Watch movies at home?\"\n\nWhat is your dating style?\nDiscover your true dating style with 12 questions,\nand check compatibility with your partner!\n\nOnly 3 minutes! Try it with friends and lovers 😊",
+    "signalTestIntro": "Can you tell without saying 'I love you'?\n\n\"Had a tough day?\" - Is it just a question or a signal of comfort?\nWhy is the message reply late? Busy? Angry?\nWhat does it mean when they suddenly hold your hand?\n\nHow well are you catching your lover's signals?\nTest your signal detection ability with 12 situations!\n\nJust 3 minutes! Try it with your lover 💕",
     "idealDate": "Ideal Date",
     "bestCompatibility": "Best Compatibility",
     "goodCompatibility": "Good Compatibility",
     "carefulCompatibility": "Be Careful",
-    "difficultCompatibility": "Difficult Match"
+    "difficultCompatibility": "Difficult Match",
+    "pros": "Pros",
+    "cons": "Cons",
+    "advice": "Relationship Advice"
   },
   "footer": {
     "slogan": "An oasis of psychological tests to explore your mind",

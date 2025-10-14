@@ -47,12 +47,16 @@
     "shareInviteMessage": "Tò mò? Hãy thử trực tiếp trên QuizOasis!",
     "mbtiTestIntro": "Không còn các bài kiểm tra MBTI phức tạp nữa!\nHướng ngoại? Hướng nội?\nThực tế? Lý tưởng?\nLogic? Cảm xúc?\nKế hoạch? Tự phát?\nBạn thuộc loại nào trong 16 loại tính cách?\nHãy thử với bạn bè, người yêu và gia đình!\nĐây là bước đầu tiên để hiểu tính cách của nhau.\nChỉ 1 phút để khám phá xu hướng MBTI\nvà đặc điểm tính cách cốt lõi của bạn!",
     "stressTestIntro": "Bùng nổ? Kiềm chế? Tránh né? Khám phá cách bạn đối phó với căng thẳng!\nYêu cầu công việc đột ngột từ sếp,\nXung đột bất ngờ với bạn bè,\nTình huống vấn đề không lường trước...\nMột số người bùng nổ ngay lập tức,\nMột số người kiềm chế cảm xúc,\nMột số người tránh né vấn đề.\nBạn phản ứng như thế nào trước căng thẳng?\nĐang tìm cách đối phó lành mạnh hơn?\nChỉ 3 phút để khám phá mô hình phản ứng căng thẳng của bạn\nvà phương pháp đối phó tốt hơn!",
+    "signalTestIntro": "Có thể biết mà không cần nói 'Anh yêu em'?\n\n\"Hôm nay mệt không?\" - Câu hỏi đơn giản hay tín hiệu an ủi?\nLý do trả lời tin nhắn muộn? Bận? Giận?\nNắm tay đột ngột có ý nghĩa gì?\n\nTín hiệu từ người yêu, bạn bắt được bao nhiêu?\nKiểm tra khả năng phát hiện tín hiệu với 12 tình huống!\n\nChỉ 3 phút! Thử cùng người yêu nhé 💕",
     "datingTestIntro": "Kế hoạch hoàn hảo? Phiêu lưu ngẫu hứng? Hay thoải mái ở nhà?\n\nNgười đặt nhà hàng từ một tuần trước,\nNgười di chuyển ngẫu hứng hỏi 'Hôm nay làm gì?',\nNgười theo đuổi sự thoải mái nói 'Xem phim ở nhà?'\n\nPhong cách hẹn hò của bạn là gì?\nKhám phá phong cách hẹn hò thực sự của bạn qua 12 câu hỏi,\nvà kiểm tra sự phù hợp với người yêu!\n\nChỉ 3 phút! Hãy thử với bạn bè và người yêu 😊",
     "idealDate": "Buổi Hẹn Lý Tưởng",
     "bestCompatibility": "Phù Hợp Nhất",
     "goodCompatibility": "Phù Hợp Tốt",
     "carefulCompatibility": "Cần Lưu Ý",
-    "difficultCompatibility": "Khó Phù Hợp"
+    "difficultCompatibility": "Khó Phù Hợp",
+    "pros": "Ưu điểm",
+    "cons": "Nhược điểm",
+    "advice": "Lời khuyên hẹn hò"
   },
   "footer": {
     "slogan": "Ốc đảo của các bài kiểm tra tâm lý để khám phá tâm trí bạn",
