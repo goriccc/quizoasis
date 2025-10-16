@@ -245,6 +245,27 @@ export default function LoveFlavorTestClient({
     }
   };
 
+  const handleShareResult = () => {
+    if (!result) return;
+
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const shareText = t('loveFlavorTest.shareMessage', { type: resultTitle });
+    const shareUrl = `${window.location.origin}/${locale}/test/${slug}`;
+
+    if (navigator.share) {
+      navigator.share({
+        title: title,
+        text: shareText,
+        url: shareUrl,
+      }).catch(console.error);
+    } else {
+      // Web Share API를 지원하지 않는 경우 클립보드에 복사
+      navigator.clipboard.writeText(`${shareText}\n${shareUrl}`).then(() => {
+        alert('결과가 클립보드에 복사되었습니다!');
+      }).catch(console.error);
+    }
+  };
+
   // 시작 화면
   if (!started) {
     return (
@@ -625,6 +646,19 @@ export default function LoveFlavorTestClient({
                 </div>
               </>
             )}
+
+            {/* 결과 공유하기 버튼 */}
+            <div className="mt-8 mb-6 px-4">
+              <button
+                onClick={handleShareResult}
+                className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                </svg>
+                {t('mbti.shareResult')}
+              </button>
+            </div>
 
             <div className="mt-8 mb-6 px-4">
               <div className="my-6 px-4">
