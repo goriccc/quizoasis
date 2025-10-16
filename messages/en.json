@@ -17,11 +17,21 @@
     "friendship": "Friendship",
     "mbti": "MBTI",
     "fun": "Fun",
-    "deep": "Deep"
+    "deep": "Deep",
+    "소통": "Communication",
+    "심리": "Psychology",
+    "관계": "Relationship",
+    "우정": "Friendship",
+    "연애": "Romance"
   },
   "sections": {
     "latest": "Latest Tests",
     "category": "Category"
+  },
+  "recommendations": {
+    "similarTests": "Similar Other Tests",
+    "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+    "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
   },
   "playCount": {
     "thousand": "K",
@@ -66,6 +76,67 @@
     "address": "Address: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, South Korea",
     "businessNumber": "Business No: 304-24-18806",
     "copyright": "Copyright © QuizOasis Co., Ltd"
+  },
+  "conflictTest": {
+    "startMessage": {
+      "line1": "\"Confront? Avoid? Or empathize?\"",
+      "line2": "Opinion conflicts with friends, fights with lovers, friction with colleagues...",
+      "line3": "Conflict in relationships is inevitable.",
+      "line4": "What matters is how you respond.",
+      "line5": "Those who face it head-on,\nThose who take time to think,\nThose who read emotions first,\nThose who solve with logic.",
+      "line6": "What is your conflict response style? 💬"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "participants",
+      "shareWithFriends": "Share with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake Test",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "popularTests": "🔥 Top 5 Popular Tests"
+    },
+    "result": {
+      "analyzing": "Analyzing results...",
+      "completed": "Test completed!",
+      "showResult": "Show Analysis Result",
+      "yourResult": "Your Conflict Response Style",
+      "characteristics": "Key Characteristics",
+      "relationshipPattern": "Relationship Pattern",
+      "advice": "Relationship Advice",
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match",
+      "carefulMatch": "Need Caution",
+      "difficultMatch": "Difficult Match",
+      "compatibility": {
+        "Type1_Type2": "Perfect harmony of logic and emotion",
+        "Type1_Type3": "Clear and efficient with each other",
+        "Type1_Type5": "Need to balance directness vs flexibility",
+        "Type1_Type4": "Speed difference causes frustration",
+        "Type2_Type1": "Balance of emotion and resolution",
+        "Type2_Type6": "Warm and comfortable relationship",
+        "Type2_Type3": "Emotional vs logical approach difference",
+        "Type2_Type4": "Both tend to postpone problem solving",
+        "Type3_Type1": "Clear and efficient relationship",
+        "Type3_Type5": "Rational negotiation possible",
+        "Type3_Type2": "Logic vs emotion priority difference",
+        "Type3_Type6": "Coldness hurts the other person",
+        "Type4_Type2": "Warm relationship that waits patiently",
+        "Type4_Type6": "Comfortably waiting together",
+        "Type4_Type5": "Time vs quick adjustment speed difference",
+        "Type4_Type1": "Immediate vs time needed conflict intensification",
+        "Type5_Type3": "Rational negotiation is the best",
+        "Type5_Type1": "Fast and efficient",
+        "Type5_Type4": "Fast vs slow speed difference",
+        "Type5_Type6": "Frustrating even when compromise is suggested",
+        "Type6_Type2": "Warm and comfortable best match",
+        "Type6_Type4": "Comfortably waiting together",
+        "Type6_Type1": "Burden from aggressiveness",
+        "Type6_Type3": "Hurt by emotional neglect"
+      }
+    }
   },
   "attachmentTest": {
     "startMessage": {

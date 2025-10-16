@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Play } from 'lucide-react';
@@ -16,12 +16,64 @@ interface CategorySectionProps {
 
 export default function CategorySection({ tests, categoryName, locale }: CategorySectionProps) {
   const t = useTranslations();
+  const currentLocale = useLocale();
 
   return (
     <section className="pt-0 pb-6">
       <div className="max-w-7xl mx-auto px-1 sm:px-4">
         <h2 className="text-xl font-bold mb-6 text-gray-800">
-          {t('sections.category')} : {categoryName === 'all' ? t('tags.all') : `#${categoryName}`}
+          {t('sections.category')} : {categoryName === 'all' ? t('tags.all') : `#${(() => {
+            // 태그 이름을 현재 언어로 번역
+            const tagTranslations: Record<string, Record<string, string>> = {
+              '소통': {
+                ko: '소통',
+                en: 'Communication',
+                ja: 'コミュニケーション',
+                'zh-CN': '沟通',
+                'zh-TW': '溝通',
+                id: 'Komunikasi',
+                vi: 'Giao tiếp'
+              },
+              '심리': {
+                ko: '심리',
+                en: 'Psychology',
+                ja: '心理学',
+                'zh-CN': '心理',
+                'zh-TW': '心理',
+                id: 'Psikologi',
+                vi: 'Tâm lý'
+              },
+              '관계': {
+                ko: '관계',
+                en: 'Relationship',
+                ja: '関係',
+                'zh-CN': '关系',
+                'zh-TW': '關係',
+                id: 'Hubungan',
+                vi: 'Mối quan hệ'
+              },
+              '우정': {
+                ko: '우정',
+                en: 'Friendship',
+                ja: '友情',
+                'zh-CN': '友谊',
+                'zh-TW': '友誼',
+                id: 'Persahabatan',
+                vi: 'Tình bạn'
+              },
+              '성격': {
+                ko: '성격',
+                en: 'Personality',
+                ja: '性格',
+                'zh-CN': '性格',
+                'zh-TW': '性格',
+                id: 'Kepribadian',
+                vi: 'Tính cách'
+              }
+            };
+            
+            return tagTranslations[categoryName]?.[currentLocale] || categoryName;
+          })()}`}
         </h2>
         
         {/* 반응형 그리드 */}

@@ -20,11 +20,21 @@
     "deep": "깊이",
     "MBTI": "MBTI",
     "성격": "성격",
-    "유형": "유형"
+    "유형": "유형",
+    "소통": "소통",
+    "심리": "심리",
+    "관계": "관계",
+    "우정": "우정",
+    "연애": "연애"
   },
   "sections": {
     "latest": "최신 테스트",
     "category": "카테고리"
+  },
+  "recommendations": {
+    "similarTests": "유사한 다른 테스트",
+    "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+    "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
   },
   "playCount": {
     "thousand": "천",
@@ -63,7 +73,7 @@
   },
   "footer": {
     "slogan": "당신의 마음을 탐험하는 심리테스트의 오아시스",
-    "disclaimer": "게시자는 광고를 통해 일정 수수료를 받을 수 있습니다",
+    "disclaimer": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다",
     "company": "상호: 멀티파이프",
     "ceo": "대표: 송준호",
     "address": "주소: 경기도 김포시 태장로 765, 607호",
@@ -137,6 +147,67 @@
       "goodMatch": "좋은 궁합",
       "carefulMatch": "주의가 필요한 궁합",
       "shareResult": "결과 공유하기"
+    }
+  },
+  "conflictTest": {
+    "startMessage": {
+      "line1": "\"맞서기? 피하기? 아니면 공감하기?\"",
+      "line2": "친구와의 의견 충돌, 연인과의 다툼, 직장 동료와의 마찰...",
+      "line3": "인간관계에서 갈등은 피할 수 없습니다.",
+      "line4": "중요한 건 어떻게 대응하느냐입니다.",
+      "line5": "정면돌파하는 사람,\n시간을 두고 생각하는 사람,\n감정을 먼저 읽는 사람,\n논리로 풀어가는 사람.",
+      "line6": "당신의 갈등 대응 스타일은 무엇인가요? 💬"
+    },
+    "ui": {
+      "startTest": "테스트 시작하기",
+      "participants": "명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTests": "🔥 요즘 인기 테스트 추천 톱5"
+    },
+    "result": {
+      "analyzing": "결과 분석중...",
+      "completed": "테스트 완료!",
+      "showResult": "분석 결과 표시",
+      "yourResult": "당신의 갈등 대응 스타일",
+      "characteristics": "핵심 특징",
+      "relationshipPattern": "관계 패턴",
+      "advice": "관계 조언",
+      "bestMatch": "최고의 궁합",
+      "goodMatch": "좋은 궁합",
+      "carefulMatch": "주의 필요",
+      "difficultMatch": "어려운 궁합",
+      "compatibility": {
+        "Type1_Type2": "논리와 감정의 완벽한 조화",
+        "Type1_Type3": "서로 명확하고 효율적",
+        "Type1_Type5": "직설성 vs 유연성 조율 필요",
+        "Type1_Type4": "속도 차이로 답답함 유발",
+        "Type2_Type1": "감정과 해결의 밸런스",
+        "Type2_Type6": "따뜻하고 편안한 관계",
+        "Type2_Type3": "감정 vs 논리 접근 차이",
+        "Type2_Type4": "둘 다 문제 해결 미루기",
+        "Type3_Type1": "명쾌하고 효율적인 관계",
+        "Type3_Type5": "이성적 협상 가능",
+        "Type3_Type2": "논리 vs 감정 우선순위 차이",
+        "Type3_Type6": "차가움에 상대방 상처",
+        "Type4_Type2": "기다려주는 따뜻한 관계",
+        "Type4_Type6": "서로 편안하게 기다림",
+        "Type4_Type5": "시간 vs 빠른 조정 속도 차이",
+        "Type4_Type1": "즉각 vs 시간 필요로 갈등 심화",
+        "Type5_Type3": "합리적 협상 최고",
+        "Type5_Type1": "빠르고 효율적",
+        "Type5_Type4": "빠름 vs 느림 속도 차이",
+        "Type5_Type6": "타협안 제시해도 \"뭐든 좋아\" 답답함",
+        "Type6_Type2": "따뜻하고 편안한 최고 궁합",
+        "Type6_Type4": "서로 편하게 기다림",
+        "Type6_Type1": "적극성에 부담감",
+        "Type6_Type3": "감정 무시에 상처받음"
+      }
     }
   }
 }

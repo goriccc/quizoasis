@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { SignalQuestion, SignalResult, calculateSignalResult } from '../lib/signalData';
+import { ConflictQuestion, ConflictResult, calculateConflictResult } from '@/lib/conflictData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
@@ -11,13 +11,13 @@ import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 
-interface SignalTestClientProps {
+interface ConflictTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: SignalQuestion[];
-  results: SignalResult[];
+  questions: ConflictQuestion[];
+  results: ConflictResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -30,7 +30,13 @@ interface SignalTestClientProps {
   }>;
 }
 
-export default function SignalTestClient({ 
+// 궁합 설명 함수
+const getCompatibilityDescription = (myType: string, partnerType: string, t: any): string => {
+  const key = `${myType}_${partnerType}`;
+  return t(`conflictTest.result.compatibility.${key}`) || '';
+};
+
+export default function ConflictTestClient({ 
   locale, 
   slug, 
   title, 
@@ -41,14 +47,14 @@ export default function SignalTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: SignalTestClientProps) {
+}: ConflictTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
-  const [result, setResult] = useState<SignalResult | null>(null);
+  const [result, setResult] = useState<ConflictResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<SignalQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<ConflictQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
@@ -176,7 +182,7 @@ export default function SignalTestClient({
               return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
                 currentTestTags.some(tag => otherTestTags.includes(tag));
             })
-            .sort((a, b) => Math.random() - 0.5)
+            .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
             .slice(0, 5)
             .map(t => ({
               id: t.id,
@@ -222,7 +228,7 @@ export default function SignalTestClient({
   }, [showLoadingSpinner]);
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: SignalQuestion[]) => {
+  const shuffleQuestions = (questionList: ConflictQuestion[]) => {
     const shuffled = [...questionList];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -257,19 +263,19 @@ export default function SignalTestClient({
       setShowLoadingSpinner(true);
       
       // 결과 계산
-      const resultType = calculateSignalResult(newAnswers);
-      const signalResult = results.find(r => r.type === resultType);
+      const resultType = calculateConflictResult(newAnswers);
+      const conflictResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (signalResult) {
-        setResult(signalResult);
+      if (conflictResult) {
+        setResult(conflictResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (signalResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(signalResult.type, locale);
+      if (conflictResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(conflictResult.type, locale);
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] 신호 결과:', signalResult.type, '→ 검색 키워드:', keywords[0]);
+        console.log('🔮 [시작] 갈등 결과:', conflictResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -284,11 +290,11 @@ export default function SignalTestClient({
 
   // 결과 계산
   const calculateResult = (finalAnswers: any[]) => {
-    const resultType = calculateSignalResult(finalAnswers);
-    const signalResult = results.find(r => r.type === resultType);
+    const resultType = calculateConflictResult(finalAnswers);
+    const conflictResult = results.find(r => r.type === resultType);
     
-    if (signalResult) {
-      setResult(signalResult);
+    if (conflictResult) {
+      setResult(conflictResult);
     }
   };
 
@@ -308,7 +314,7 @@ export default function SignalTestClient({
     if (!result) return;
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!\n\n${window.location.href}`;
+    const shareText = `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬\n\n${window.location.href}`;
     
     if (navigator.share) {
       try {
@@ -339,7 +345,7 @@ export default function SignalTestClient({
     const url = window.location.href;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!\n\n${url}`
+      ? `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬\n\n${url}`
       : `${title}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
@@ -367,7 +373,7 @@ export default function SignalTestClient({
     const url = encodeURIComponent(window.location.href);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(`나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!`)
+      ? encodeURIComponent(`나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬`)
       : encodeURIComponent(title);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
@@ -386,7 +392,7 @@ export default function SignalTestClient({
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
-      ? `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!`
+      ? `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬`
       : description;
     
     try {
@@ -421,7 +427,7 @@ export default function SignalTestClient({
     const url = encodeURIComponent(window.location.href);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!`
+      ? `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬`
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
@@ -446,7 +452,7 @@ export default function SignalTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_027_reading_signals.jpg')}
+              src={getThumbnailUrl(thumbnail || 'test_030_conflict_response.jpg')}
               alt={title}
               fill
               className="object-cover"
@@ -474,12 +480,13 @@ export default function SignalTestClient({
               />
             </div>
 
-            <div className="text-gray-600 mb-6 leading-relaxed text-center whitespace-pre-line">
-              {t('mbti.signalTestIntro').split('\n').map((line, index) => (
-                <p key={index} className={index === 0 ? "font-bold" : ""}>
-                  {line}
-                </p>
-              ))}
+            <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
+              <p className="font-bold text-gray-700">{t('conflictTest.startMessage.line1')}</p>
+              <p>{t('conflictTest.startMessage.line2')}</p>
+              <p>{t('conflictTest.startMessage.line3')}</p>
+              <p>{t('conflictTest.startMessage.line4')}</p>
+              <p className="whitespace-pre-line">{t('conflictTest.startMessage.line5')}</p>
+              <p>{t('conflictTest.startMessage.line6')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -644,18 +651,13 @@ export default function SignalTestClient({
 
   // 결과 팝업
   if (showResultPopup) {
-    console.log('🎁 팝업 렌더링 - aliProducts 상태:', {
-      길이: aliProducts.length,
-      locale,
-      첫상품: aliProducts[0]?.product_title
-    });
-    
     return (
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
             🎉 {t('mbti.testCompleted')}
           </h2>
+          
           
           <div className="mb-6">
             {locale === 'ko' ? (
@@ -718,12 +720,9 @@ export default function SignalTestClient({
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultDetectionRate = result.detectionRate[locale as keyof typeof result.detectionRate] || result.detectionRate.ko;
     const resultPros = result.pros;
     const resultCons = result.cons;
     const resultAdvice = result.advice[locale as keyof typeof result.advice] || result.advice.ko;
-
-    // 궁합 정보 가져오기 (사용하지 않음 - 아래에서 직접 렌더링)
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -740,12 +739,6 @@ export default function SignalTestClient({
               <p className="text-base text-gray-600 leading-relaxed">
                 {resultDescription}
               </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                📊 {resultDetectionRate}
-              </h3>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
@@ -791,28 +784,30 @@ export default function SignalTestClient({
               </p>
             </div>
 
-
             {result.compatibility && (
               <>
                 <div className="grid grid-cols-2 gap-3 mb-3">
                   {result.compatibility.best && (
                     <div className="bg-white rounded-xl shadow-lg p-4">
                       <h3 className="text-base font-bold text-gray-800 mb-3">
-                        💖 {t('mbti.bestCompatibility')}
+                        💖 {t('conflictTest.result.bestMatch')}
                       </h3>
                       {typeof result.compatibility.best === 'string' ? (
                         <p className="text-sm text-gray-700">{result.compatibility.best}</p>
                       ) : Array.isArray(result.compatibility.best) ? (
-                        <div className="flex flex-wrap gap-2">
+                        <div className="space-y-2">
                           {result.compatibility.best.map(type => {
                             const partner = results.find(r => r.type === type);
                             if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
                             return (
-                              <div key={type} className="flex items-center gap-2.5 bg-gradient-to-r from-red-100 to-pink-100 px-3 py-1.5 rounded-full">
-                                <span className="text-xl">{partner.emoji}</span>
-                                <span className="text-sm font-medium text-gray-800">
-                                  {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
-                                </span>
+                              <div key={type} className="bg-gradient-to-r from-red-100 to-pink-100 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
                               </div>
                             );
                           })}
@@ -826,21 +821,24 @@ export default function SignalTestClient({
                   {result.compatibility.good && (
                     <div className="bg-white rounded-xl shadow-lg p-4">
                       <h3 className="text-base font-bold text-gray-800 mb-3">
-                        😊 {t('mbti.goodCompatibility')}
+                        😊 {t('conflictTest.result.goodMatch')}
                       </h3>
                       {typeof result.compatibility.good === 'string' ? (
                         <p className="text-sm text-gray-700">{result.compatibility.good}</p>
                       ) : Array.isArray(result.compatibility.good) ? (
-                        <div className="flex flex-wrap gap-2">
+                        <div className="space-y-2">
                           {result.compatibility.good.map(type => {
                             const partner = results.find(r => r.type === type);
                             if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
                             return (
-                              <div key={type} className="flex items-center gap-2.5 bg-gradient-to-r from-blue-100 to-purple-100 px-3 py-1.5 rounded-full">
-                                <span className="text-xl">{partner.emoji}</span>
-                                <span className="text-sm font-medium text-gray-800">
-                                  {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
-                                </span>
+                              <div key={type} className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
                               </div>
                             );
                           })}
@@ -856,21 +854,24 @@ export default function SignalTestClient({
                   {result.compatibility.careful && (
                     <div className="bg-white rounded-xl shadow-lg p-4">
                       <h3 className="text-base font-bold text-gray-800 mb-3">
-                        ⚠️ {t('mbti.carefulCompatibility')}
+                        ⚠️ {t('conflictTest.result.carefulMatch')}
                       </h3>
                       {typeof result.compatibility.careful === 'string' ? (
                         <p className="text-sm text-gray-700">{result.compatibility.careful}</p>
                       ) : Array.isArray(result.compatibility.careful) ? (
-                        <div className="flex flex-wrap gap-2">
+                        <div className="space-y-2">
                           {result.compatibility.careful.map(type => {
                             const partner = results.find(r => r.type === type);
                             if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
                             return (
-                              <div key={type} className="flex items-center gap-2.5 bg-gradient-to-r from-yellow-100 to-orange-100 px-3 py-1.5 rounded-full">
-                                <span className="text-xl">{partner.emoji}</span>
-                                <span className="text-sm font-medium text-gray-800">
-                                  {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
-                                </span>
+                              <div key={type} className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
                               </div>
                             );
                           })}
@@ -884,21 +885,24 @@ export default function SignalTestClient({
                   {result.compatibility.difficult && (
                     <div className="bg-white rounded-xl shadow-lg p-4">
                       <h3 className="text-base font-bold text-gray-800 mb-3">
-                        ❌ {t('mbti.difficultCompatibility')}
+                        ❌ {t('conflictTest.result.difficultMatch')}
                       </h3>
                       {typeof result.compatibility.difficult === 'string' ? (
                         <p className="text-sm text-gray-700">{result.compatibility.difficult}</p>
                       ) : Array.isArray(result.compatibility.difficult) ? (
-                        <div className="flex flex-wrap gap-2">
+                        <div className="space-y-2">
                           {result.compatibility.difficult.map(type => {
                             const partner = results.find(r => r.type === type);
                             if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
                             return (
-                              <div key={type} className="flex items-center gap-2.5 bg-gradient-to-r from-gray-100 to-gray-200 px-3 py-1.5 rounded-full">
-                                <span className="text-xl">{partner.emoji}</span>
-                                <span className="text-sm font-medium text-gray-800">
-                                  {partner.title[locale as keyof typeof partner.title] || partner.title.ko}
-                                </span>
+                              <div key={type} className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
                               </div>
                             );
                           })}
@@ -1165,4 +1169,3 @@ export default function SignalTestClient({
     </div>
   );
 }
-

@@ -188,4 +188,111 @@ if (!Array.isArray(tagsArray)) {
 - [ ] Is UI/UX consistent with existing tests?
 - [ ] Is Supabase connection working properly?
 
-Following this guideline will help avoid the issues encountered during the Attachment Style Test development.
+## 🚨 Additional Critical Issues (Based on Recent Development)
+
+### 9. Translation Namespace Issues (CRITICAL)
+**Issue**: Using specific namespace `useTranslations('testName')` for global keys causes variable name display
+```typescript
+// ❌ Wrong - causes 'recommendations.similarTests' to display
+const t = useTranslations('friendTest');
+{t('recommendations.similarTests')} // Shows variable name instead of translation
+
+// ✅ Correct - add global translation hook
+const t = useTranslations('friendTest');
+const tGlobal = useTranslations();
+{tGlobal('recommendations.similarTests') || '유사한 다른 테스트'}
+```
+**Rule**: Always add `const tGlobal = useTranslations();` when using specific namespace
+
+### 10. Fallback Translation Strategy
+**Issue**: Translation failures show variable names like 'recommendations.similarTests'
+```typescript
+// ❌ Wrong - no fallback
+{t('recommendations.similarTests')}
+
+// ✅ Correct - always add fallback
+{tGlobal('recommendations.similarTests') || '유사한 다른 테스트'}
+```
+**Rule**: Every translation call must have `|| 'fallback'` to prevent variable name display
+
+### 11. Tag Translation Implementation
+**Issue**: Korean tags like '소통', '심리', '관계' not translated properly
+```typescript
+// ❌ Wrong - t() function fails for Korean tags
+{t(`tags.${tag.name}`)} // Shows 'tags.소통' instead of 'Communication'
+
+// ✅ Correct - manual translation mapping
+const tagTranslations: Record<string, Record<string, string>> = {
+  '소통': {
+    ko: '소통', en: 'Communication', ja: 'コミュニケーション',
+    'zh-CN': '沟通', 'zh-TW': '溝通', id: 'Komunikasi', vi: 'Giao tiếp'
+  },
+  // ... other tags
+};
+const translatedTag = tagTranslations[tag.name]?.[locale] || tag.name;
+```
+**Rule**: Implement manual translation mapping with `useLocale()` hook for Korean tags
+
+### 12. Recommendation Section Translation
+**Issue**: 'Similar Other Tests', 'Top 5 Similar Tests', 'Top 5 Popular Tests' not translated
+```typescript
+// ❌ Wrong - hardcoded text
+<h2>유사한 다른 테스트</h2>
+<h2>🎯 유사한 다른 테스트 추천 톱5</h2>
+<h2>🔥 요즘 인기 테스트 추천 톱5</h2>
+
+// ✅ Correct - use global translation with fallback
+<h2>{tGlobal('recommendations.similarTests') || '유사한 다른 테스트'}</h2>
+<h2>{tGlobal('recommendations.similarTestsTop5') || '🎯 유사한 다른 테스트 추천 톱5'}</h2>
+<h2>{tGlobal('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}</h2>
+```
+**Rule**: Add 'recommendations' object to all 7 language files and use `tGlobal()` with fallbacks
+
+### 13. Cache Clearing Protocol (Updated)
+**Issue**: Code changes don't reflect due to Next.js caching
+```bash
+# Complete cache clearing sequence
+taskkill /F /IM node.exe
+Remove-Item -Path .next -Recurse -Force
+npm run dev
+# Browser: Ctrl+Shift+R (hard refresh)
+```
+**Rule**: Always clear cache when translation issues persist
+
+### 14. Component Import Path Issues
+**Issue**: Relative import paths cause module resolution errors
+```typescript
+// ❌ Wrong - relative path
+import { ConflictQuestion } from '../lib/conflictData';
+
+// ✅ Correct - absolute path
+import { ConflictQuestion } from '@/lib/conflictData';
+```
+**Rule**: Always use `@/` prefix for lib imports
+
+## 📋 Updated Development Checklist
+
+### Before Development
+- [ ] Is the interface designed with multilingual structure?
+- [ ] Are quote style rules applied?
+- [ ] Are all 7 language message files ready with complete translation structure?
+
+### During Development
+- [ ] Are all hardcoded texts converted to i18n?
+- [ ] Is localeKey properly defined with type casting?
+- [ ] Is option shuffling logic correctly implemented?
+- [ ] Is global translation hook added for cross-namespace keys?
+- [ ] Do all translation calls have fallbacks?
+- [ ] Is tag translation mapping implemented?
+- [ ] Are recommendation sections using tGlobal() with fallbacks?
+
+### After Development
+- [ ] Are translations added to all 7 languages?
+- [ ] Is 'recommendations' object added to all 7 language files?
+- [ ] Does the test work normally in all languages?
+- [ ] Are variable names not displaying instead of translations?
+- [ ] Is UI/UX consistent with existing tests?
+- [ ] Is Supabase connection working properly?
+- [ ] Have you cleared cache and tested with hard refresh?
+
+Following this guideline will help avoid the issues encountered during the Attachment Style Test development and recent multilingual implementation issues.

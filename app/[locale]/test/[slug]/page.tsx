@@ -26,6 +26,9 @@ const AttachmentTestClient = dynamic(() => import('@/components/AttachmentTestCl
 const FriendTestClient = dynamic(() => import('@/components/FriendTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
+const ConflictTestClient = dynamic(() => import('@/components/ConflictTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 
 interface Props {
   params: {
@@ -379,7 +382,7 @@ export default async function TestPage({ params }: Props) {
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
-    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : DatingTestClient) :
+    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : DatingTestClient) :
     MBTITestClient;
 
   return (

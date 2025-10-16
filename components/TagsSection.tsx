@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 interface TagsSectionProps {
   tags: { id: string; name: string }[];
@@ -11,6 +11,7 @@ interface TagsSectionProps {
 
 export default function TagsSection({ tags, selectedTag, onTagSelect }: TagsSectionProps) {
   const t = useTranslations('tags');
+  const locale = useLocale();
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -80,7 +81,58 @@ export default function TagsSection({ tags, selectedTag, onTagSelect }: TagsSect
         >
           {tags.map((tag) => {
             const isAll = tag.id === 'all';
-            const tagLabel = isAll ? t('all') : `#${tag.name}`;
+            const tagLabel = isAll ? t('all') : `#${(() => {
+              // 태그 이름을 현재 언어로 번역
+              const tagTranslations: Record<string, Record<string, string>> = {
+                '소통': {
+                  ko: '소통',
+                  en: 'Communication',
+                  ja: 'コミュニケーション',
+                  'zh-CN': '沟通',
+                  'zh-TW': '溝通',
+                  id: 'Komunikasi',
+                  vi: 'Giao tiếp'
+                },
+                '심리': {
+                  ko: '심리',
+                  en: 'Psychology',
+                  ja: '心理学',
+                  'zh-CN': '心理',
+                  'zh-TW': '心理',
+                  id: 'Psikologi',
+                  vi: 'Tâm lý'
+                },
+                '관계': {
+                  ko: '관계',
+                  en: 'Relationship',
+                  ja: '関係',
+                  'zh-CN': '关系',
+                  'zh-TW': '關係',
+                  id: 'Hubungan',
+                  vi: 'Mối quan hệ'
+                },
+                '우정': {
+                  ko: '우정',
+                  en: 'Friendship',
+                  ja: '友情',
+                  'zh-CN': '友谊',
+                  'zh-TW': '友誼',
+                  id: 'Persahabatan',
+                  vi: 'Tình bạn'
+                },
+                '성격': {
+                  ko: '성격',
+                  en: 'Personality',
+                  ja: '性格',
+                  'zh-CN': '性格',
+                  'zh-TW': '性格',
+                  id: 'Kepribadian',
+                  vi: 'Tính cách'
+                }
+              };
+              
+              return tagTranslations[tag.name]?.[locale] || tag.name;
+            })()}`;
             const isSelected = selectedTag === tag.id;
 
             return (

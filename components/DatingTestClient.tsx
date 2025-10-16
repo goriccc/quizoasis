@@ -469,9 +469,13 @@ export default function DatingTestClient({
               />
             </div>
 
-            <p className="text-gray-600 mb-6 leading-relaxed text-center whitespace-pre-line">
-              {t('mbti.datingTestIntro')}
-            </p>
+            <div className="text-gray-600 mb-6 leading-relaxed text-center whitespace-pre-line">
+              {t('mbti.datingTestIntro').split('\n').map((line, index) => (
+                <p key={index} className={index === 0 ? "font-bold" : ""}>
+                  {line}
+                </p>
+              ))}
+            </div>
 
             <div className="flex justify-center mb-4">
               <button
@@ -482,7 +486,7 @@ export default function DatingTestClient({
               </button>
             </div>
 
-            <p className="text-sm text-gray-600 text-center mb-6">
+            <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
               {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as any) })}
             </p>
 
@@ -554,9 +558,9 @@ export default function DatingTestClient({
 
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
-                <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  유사한 다른 테스트
-                </h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-6">
+                {t('recommendations.similarTests') || '유사한 다른 테스트'}
+              </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
@@ -650,7 +654,11 @@ export default function DatingTestClient({
           
           <div className="mb-6">
             {locale === 'ko' ? (
-              <div className="flex justify-center">
+              <div>
+                <p className="text-xs text-gray-500 text-center mb-3">
+                  쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다
+                </p>
+                <div className="flex justify-center">
                 <iframe 
                   src="https://ads-partners.coupang.com/widgets.html?id=923499&template=carousel&trackingCode=AF6775264&subId=&width=300&height=250&tsource=" 
                   width="300" 
@@ -660,6 +668,7 @@ export default function DatingTestClient({
                   referrerPolicy="unsafe-url"
                   className="rounded-lg"
                 />
+                </div>
               </div>
             ) : aliProducts.length > 0 ? (
               <div className="max-w-sm mx-auto">
@@ -920,7 +929,7 @@ export default function DatingTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  🎯 유사한 다른 테스트 추천 톱5
+                  {t('recommendations.similarTestsTop5') || '🎯 유사한 다른 테스트 추천 톱5'}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -957,7 +966,7 @@ export default function DatingTestClient({
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  🔥 요즘 인기 테스트 추천 톱5
+                  {t('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (

@@ -17,11 +17,21 @@
     "friendship": "Persahabatan",
     "mbti": "MBTI",
     "fun": "Menyenangkan",
-    "deep": "Mendalam"
+    "deep": "Mendalam",
+    "소통": "Komunikasi",
+    "심리": "Psikologi",
+    "관계": "Hubungan",
+    "우정": "Persahabatan",
+    "연애": "Romansa"
   },
   "sections": {
     "latest": "Tes Terbaru",
     "category": "Kategori"
+  },
+  "recommendations": {
+    "similarTests": "Tes Serupa Lainnya",
+    "similarTestsTop5": "🎯 Rekomendasi 5 Tes Serupa Teratas",
+    "popularTestsTop5": "🔥 Rekomendasi 5 Tes Populer Teratas"
   },
   "playCount": {
     "thousand": "rb",
@@ -66,6 +76,67 @@
     "address": "Alamat: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, Korea Selatan",
     "businessNumber": "No. Bisnis: 304-24-18806",
     "copyright": "Copyright © QuizOasis Co., Ltd"
+  },
+  "conflictTest": {
+    "startMessage": {
+      "line1": "「Menghadapi? Menghindari? Atau berempati?」",
+      "line2": "Konflik pendapat dengan teman, pertengkaran dengan kekasih, gesekan dengan rekan kerja...",
+      "line3": "Konflik dalam hubungan tidak bisa dihindari.",
+      "line4": "Yang penting adalah bagaimana Anda merespons.",
+      "line5": "Mereka yang menghadapi langsung,\nMereka yang meluangkan waktu untuk berpikir,\nMereka yang membaca emosi terlebih dahulu,\nMereka yang menyelesaikan dengan logika.",
+      "line6": "Apa gaya respons konflik Anda? 💬"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang telah berpartisipasi",
+      "shareWithFriends": "Bagikan dengan Teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi Tes",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat Tes Lain",
+      "similarTests": "🎯 Rekomendasi 5 Tes Serupa Teratas",
+      "popularTests": "🔥 Rekomendasi 5 Tes Populer Terkini"
+    },
+    "result": {
+      "analyzing": "Menganalisis hasil...",
+      "completed": "Tes selesai!",
+      "showResult": "Tampilkan Hasil Analisis",
+      "yourResult": "Gaya Respons Konflik Anda",
+      "characteristics": "Karakteristik Utama",
+      "relationshipPattern": "Pola Hubungan",
+      "advice": "Nasihat Hubungan",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik",
+      "carefulMatch": "Perlu Hati-hati",
+      "difficultMatch": "Kecocokan Sulit",
+      "compatibility": {
+        "Type1_Type2": "Harmoni sempurna logika dan emosi",
+        "Type1_Type3": "Jelas dan efisien satu sama lain",
+        "Type1_Type5": "Perlu menyeimbangkan kejujuran vs fleksibilitas",
+        "Type1_Type4": "Perbedaan kecepatan menyebabkan frustrasi",
+        "Type2_Type1": "Keseimbangan emosi dan resolusi",
+        "Type2_Type6": "Hubungan hangat dan nyaman",
+        "Type2_Type3": "Perbedaan pendekatan emosional vs logis",
+        "Type2_Type4": "Keduanya cenderung menunda pemecahan masalah",
+        "Type3_Type1": "Hubungan yang jelas dan efisien",
+        "Type3_Type5": "Negosiasi rasional memungkinkan",
+        "Type3_Type2": "Perbedaan prioritas logika vs emosi",
+        "Type3_Type6": "Kedinginan menyakiti orang lain",
+        "Type4_Type2": "Hubungan hangat yang menunggu dengan sabar",
+        "Type4_Type6": "Menunggu dengan nyaman bersama",
+        "Type4_Type5": "Perbedaan kecepatan waktu vs penyesuaian cepat",
+        "Type4_Type1": "Konflik intensif karena langsung vs perlu waktu",
+        "Type5_Type3": "Negosiasi rasional adalah yang terbaik",
+        "Type5_Type1": "Cepat dan efisien",
+        "Type5_Type4": "Perbedaan kecepatan cepat vs lambat",
+        "Type5_Type6": "Frustrasi meskipun kompromi ditawarkan",
+        "Type6_Type2": "Kecocokan terbaik yang hangat dan nyaman",
+        "Type6_Type4": "Menunggu dengan nyaman bersama",
+        "Type6_Type1": "Beban dari agresivitas",
+        "Type6_Type3": "Terluka karena mengabaikan emosi"
+      }
+    }
   },
   "attachmentTest": {
     "startMessage": {

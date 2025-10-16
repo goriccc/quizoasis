@@ -17,11 +17,21 @@
     "friendship": "友達",
     "mbti": "MBTI",
     "fun": "楽しい",
-    "deep": "深い"
+    "deep": "深い",
+    "소통": "コミュニケーション",
+    "심리": "心理学",
+    "관계": "関係",
+    "우정": "友情",
+    "연애": "恋愛"
   },
   "sections": {
     "latest": "最新テスト",
     "category": "カテゴリ"
+  },
+  "recommendations": {
+    "similarTests": "類似の他のテスト",
+    "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+    "popularTestsTop5": "🔥 人気テストおすすめトップ5"
   },
   "playCount": {
     "thousand": "千",
@@ -66,6 +76,67 @@
     "address": "住所: 京畿道金浦市泰壮路765、607号",
     "businessNumber": "事業者番号: 304-24-18806",
     "copyright": "Copyright © QuizOasis Co., Ltd"
+  },
+  "conflictTest": {
+    "startMessage": {
+      "line1": "「立ち向かう？避ける？それとも共感する？」",
+      "line2": "友人との意見の対立、恋人との喧嘩、同僚との摩擦...",
+      "line3": "人間関係での対立は避けられません。",
+      "line4": "大切なのはどう対処するかです。",
+      "line5": "正面からぶつかる人、\n時間をかけて考える人、\n感情を先に読む人、\n論理で解決する人。",
+      "line6": "あなたの対立対応スタイルは何ですか？💬"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "participants": "人が参加しました",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "progress": "進捗率",
+      "retakeTest": "再テスト",
+      "shareResult": "結果を共有する",
+      "retake": "再テスト",
+      "otherTests": "他のテストを見る",
+      "similarTests": "🎯 類似の他のテスト推薦トップ5",
+      "popularTests": "🔥 最近人気のテスト推薦トップ5"
+    },
+    "result": {
+      "analyzing": "結果分析中...",
+      "completed": "テスト完了！",
+      "showResult": "分析結果を表示",
+      "yourResult": "あなたの対立対応スタイル",
+      "characteristics": "核心特徴",
+      "relationshipPattern": "関係パターン",
+      "advice": "関係アドバイス",
+      "bestMatch": "最高の相性",
+      "goodMatch": "良い相性",
+      "carefulMatch": "注意が必要",
+      "difficultMatch": "難しい相性",
+      "compatibility": {
+        "Type1_Type2": "論理と感情の完璧な調和",
+        "Type1_Type3": "お互い明確で効率的",
+        "Type1_Type5": "率直さ vs 柔軟性の調整が必要",
+        "Type1_Type4": "速度の違いでイライラを誘発",
+        "Type2_Type1": "感情と解決のバランス",
+        "Type2_Type6": "温かくて心地よい関係",
+        "Type2_Type3": "感情 vs 論理的アプローチの違い",
+        "Type2_Type4": "両方とも問題解決を先延ばし",
+        "Type3_Type1": "明確で効率的な関係",
+        "Type3_Type5": "合理的な交渉が可能",
+        "Type3_Type2": "論理 vs 感情の優先順位の違い",
+        "Type3_Type6": "冷たさで相手を傷つける",
+        "Type4_Type2": "待ってくれる温かい関係",
+        "Type4_Type6": "お互い心地よく待つ",
+        "Type4_Type5": "時間 vs 迅速な調整の速度の違い",
+        "Type4_Type1": "即座 vs 時間が必要で対立が激化",
+        "Type5_Type3": "合理的な交渉が最高",
+        "Type5_Type1": "迅速で効率的",
+        "Type5_Type4": "速さ vs 遅さの速度の違い",
+        "Type5_Type6": "妥協案を提示しても「何でもいい」でイライラ",
+        "Type6_Type2": "温かくて心地よい最高の相性",
+        "Type6_Type4": "お互い心地よく待つ",
+        "Type6_Type1": "積極性に負担感",
+        "Type6_Type3": "感情無視で傷つく"
+      }
+    }
   },
   "attachmentTest": {
     "startMessage": {

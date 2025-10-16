@@ -17,11 +17,21 @@
     "friendship": "Bạn bè",
     "mbti": "MBTI",
     "fun": "Vui vẻ",
-    "deep": "Sâu sắc"
+    "deep": "Sâu sắc",
+    "소통": "Giao tiếp",
+    "심리": "Tâm lý",
+    "관계": "Mối quan hệ",
+    "우정": "Tình bạn",
+    "연애": "Tình yêu"
   },
   "sections": {
     "latest": "Bài kiểm tra mới nhất",
     "category": "Danh mục"
+  },
+  "recommendations": {
+    "similarTests": "Các bài kiểm tra tương tự khác",
+    "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
+    "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất"
   },
   "playCount": {
     "thousand": "N",
@@ -66,6 +76,67 @@
     "address": "Địa chỉ: #607, 765 Taejang-ro, Gimpo-si, Gyeonggi-do, Hàn Quốc",
     "businessNumber": "Số đăng ký kinh doanh: 304-24-18806",
     "copyright": "Copyright © QuizOasis Co., Ltd"
+  },
+  "conflictTest": {
+    "startMessage": {
+      "line1": "「Đối đầu? Tránh né? Hay đồng cảm?」",
+      "line2": "Xung đột ý kiến với bạn bè, cãi vã với người yêu, ma sát với đồng nghiệp...",
+      "line3": "Xung đột trong các mối quan hệ là không thể tránh khỏi.",
+      "line4": "Điều quan trọng là cách bạn phản ứng.",
+      "line5": "Những người đối mặt trực tiếp,\nNhững người dành thời gian suy nghĩ,\nNhững người đọc cảm xúc trước,\nNhững người giải quyết bằng logic.",
+      "line6": "Phong cách phản ứng xung đột của bạn là gì? 💬"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Chia sẻ với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại kiểm tra",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem các kiểm tra khác",
+      "similarTests": "🎯 Top 5 kiểm tra tương tự được đề xuất",
+      "popularTests": "🔥 Top 5 kiểm tra phổ biến gần đây"
+    },
+    "result": {
+      "analyzing": "Đang phân tích kết quả...",
+      "completed": "Kiểm tra hoàn thành!",
+      "showResult": "Hiển thị kết quả phân tích",
+      "yourResult": "Phong cách phản ứng xung đột của bạn",
+      "characteristics": "Đặc điểm chính",
+      "relationshipPattern": "Mẫu quan hệ",
+      "advice": "Lời khuyên quan hệ",
+      "bestMatch": "Cặp đôi tốt nhất",
+      "goodMatch": "Cặp đôi tốt",
+      "carefulMatch": "Cần cẩn thận",
+      "difficultMatch": "Cặp đôi khó khăn",
+      "compatibility": {
+        "Type1_Type2": "Sự hòa hợp hoàn hảo giữa logic và cảm xúc",
+        "Type1_Type3": "Rõ ràng và hiệu quả với nhau",
+        "Type1_Type5": "Cần cân bằng giữa thẳng thắn và linh hoạt",
+        "Type1_Type4": "Sự khác biệt về tốc độ gây thất vọng",
+        "Type2_Type1": "Cân bằng giữa cảm xúc và giải quyết",
+        "Type2_Type6": "Mối quan hệ ấm áp và thoải mái",
+        "Type2_Type3": "Khác biệt giữa tiếp cận cảm xúc và logic",
+        "Type2_Type4": "Cả hai đều có xu hướng trì hoãn giải quyết vấn đề",
+        "Type3_Type1": "Mối quan hệ rõ ràng và hiệu quả",
+        "Type3_Type5": "Có thể thương lượng hợp lý",
+        "Type3_Type2": "Khác biệt về ưu tiên logic và cảm xúc",
+        "Type3_Type6": "Sự lạnh lùng làm tổn thương đối phương",
+        "Type4_Type2": "Mối quan hệ ấm áp chờ đợi kiên nhẫn",
+        "Type4_Type6": "Thoải mái chờ đợi cùng nhau",
+        "Type4_Type5": "Khác biệt về tốc độ thời gian và điều chỉnh nhanh",
+        "Type4_Type1": "Xung đột tăng cường do ngay lập tức vs cần thời gian",
+        "Type5_Type3": "Thương lượng hợp lý là tốt nhất",
+        "Type5_Type1": "Nhanh chóng và hiệu quả",
+        "Type5_Type4": "Khác biệt về tốc độ nhanh và chậm",
+        "Type5_Type6": "Thất vọng ngay cả khi đề xuất thỏa hiệp",
+        "Type6_Type2": "Cặp đôi tốt nhất ấm áp và thoải mái",
+        "Type6_Type4": "Thoải mái chờ đợi cùng nhau",
+        "Type6_Type1": "Gánh nặng từ sự tích cực",
+        "Type6_Type3": "Bị tổn thương do bỏ qua cảm xúc"
+      }
+    }
   },
   "attachmentTest": {
     "startMessage": {
