@@ -15,9 +15,12 @@ export const localeNames: Record<Locale, string> = {
   vi: 'Tiếng Việt',
 };
 
-export default getRequestConfig(async ({ locale }) => {
+export default getRequestConfig(async ({ requestLocale }) => {
   // 지원하지 않는 언어면 404
-  if (!locales.includes(locale as any)) notFound();
+  let locale = requestLocale;
+  if (!locale || !locales.includes(locale as any)) {
+    locale = 'ko'; // 기본값
+  }
 
   return {
     messages: (await import(`./messages/${locale}.json`)).default,
