@@ -813,7 +813,11 @@ export default function ConflictTestClient({
                           })}
                         </div>
                       ) : (
-                        <p className="text-sm text-gray-700">{result.compatibility.best[locale as keyof typeof result.compatibility.best] || result.compatibility.best.ko}</p>
+                        <p className="text-sm text-gray-700">
+                          {typeof result.compatibility.best === 'string' 
+                            ? result.compatibility.best 
+                            : (result.compatibility.best as any)[locale] || (result.compatibility.best as any).ko}
+                        </p>
                       )}
                     </div>
                   )}
@@ -844,7 +848,11 @@ export default function ConflictTestClient({
                           })}
                         </div>
                       ) : (
-                        <p className="text-sm text-gray-700">{result.compatibility.good[locale as keyof typeof result.compatibility.good] || result.compatibility.good.ko}</p>
+                        <p className="text-sm text-gray-700">
+                          {typeof result.compatibility.good === 'string' 
+                            ? result.compatibility.good 
+                            : (result.compatibility.good as any)[locale] || (result.compatibility.good as any).ko}
+                        </p>
                       )}
                     </div>
                   )}
@@ -877,7 +885,11 @@ export default function ConflictTestClient({
                           })}
                         </div>
                       ) : (
-                        <p className="text-sm text-gray-700">{result.compatibility.careful[locale as keyof typeof result.compatibility.careful] || result.compatibility.careful.ko}</p>
+                        <p className="text-sm text-gray-700">
+                          {typeof result.compatibility.careful === 'string' 
+                            ? result.compatibility.careful 
+                            : (result.compatibility.careful as any)[locale] || (result.compatibility.careful as any).ko}
+                        </p>
                       )}
                     </div>
                   )}
@@ -908,7 +920,11 @@ export default function ConflictTestClient({
                           })}
                         </div>
                       ) : (
-                        <p className="text-sm text-gray-700">{result.compatibility.difficult[locale as keyof typeof result.compatibility.difficult] || result.compatibility.difficult.ko}</p>
+                        <p className="text-sm text-gray-700">
+                          {typeof result.compatibility.difficult === 'string' 
+                            ? result.compatibility.difficult 
+                            : (result.compatibility.difficult as any)[locale] || (result.compatibility.difficult as any).ko}
+                        </p>
                       )}
                     </div>
                   )}
