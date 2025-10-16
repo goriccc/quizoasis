@@ -290,7 +290,7 @@ export default function LoveFlavorTestClient({
                   <p>What if love has flavors too?</p>
                   <p>The excitement of first meeting is like sweet candy, small arguments are like sour lemon, hot passion is like spicy pepper, and deep understanding is like bitter coffee.</p>
                   <p>What flavor is your love?</p>
-                  <p className="whitespace-pre-line">Find your unique love flavor! It's more fun when you compare with friends and lovers 🍭</p>
+                  <p className="whitespace-pre-line">Find your unique love flavor! It&apos;s more fun when you compare with friends and lovers 🍭</p>
                   <p>Only takes 3 minutes! Start now 💕</p>
                 </>
               )}
