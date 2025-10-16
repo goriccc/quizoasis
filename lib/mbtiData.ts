@@ -4,6 +4,7 @@ import { signalQuestions, signalResults } from './signalData';
 import { attachmentQuestions, attachmentResults } from './attachmentData';
 import { friendQuestions, friendResults } from './friendData';
 import { conflictQuestions, conflictResults } from './conflictData';
+import { loveFlavorQuestions, loveFlavorResults } from './loveFlavorData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -943,6 +944,11 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'conflict-response-test': {
     questions: conflictQuestions,
     results: conflictResults
+  }
+  ,
+  'love-flavor-test': {
+    questions: loveFlavorQuestions,
+    results: loveFlavorResults
   }
 };
 

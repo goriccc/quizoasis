@@ -90,7 +90,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
                 <div className="relative w-full aspect-video">
                   <Image
                     src={getThumbnailUrl(test.thumbnail)}
-                    alt={test.title}
+                    alt={typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko || 'Test thumbnail'}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -105,7 +105,7 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
                 <div className="p-4">
                   <div className="flex items-center justify-end gap-3">
                     <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                      {test.title}
+                      {typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko}
                     </h3>
                     <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                       <Play size={14} />
