@@ -17,7 +17,7 @@ export const localeNames: Record<Locale, string> = {
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // 지원하지 않는 언어면 404
-  let locale = requestLocale;
+  let locale = await requestLocale;
   if (!locale || !locales.includes(locale as any)) {
     locale = 'ko'; // 기본값
   }
