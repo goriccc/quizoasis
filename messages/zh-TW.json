@@ -38,6 +38,9 @@
     "tenThousand": "萬",
     "plays": "次"
   },
+  "loveFlavorTest": {
+    "resultShareMessage": "我的戀愛是{type}！你的戀愛是什麼味道？我們也來測測配對度吧 🍭💕"
+  },
   "mbti": {
     "startTest": "開始測試",
     "totalParticipants": "共有{count}人參與",

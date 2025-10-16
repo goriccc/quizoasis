@@ -38,6 +38,9 @@
     "tenThousand": "jt",
     "plays": "x"
   },
+  "loveFlavorTest": {
+    "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
+  },
   "mbti": {
     "startTest": "Mulai Tes",
     "totalParticipants": "Total {count} orang telah berpartisipasi",

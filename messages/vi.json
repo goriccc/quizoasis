@@ -38,6 +38,9 @@
     "tenThousand": "Tr",
     "plays": "lượt"
   },
+  "loveFlavorTest": {
+    "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
+  },
   "mbti": {
     "startTest": "Bắt đầu kiểm tra",
     "totalParticipants": "Tổng cộng {count} người đã tham gia",

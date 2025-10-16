@@ -38,6 +38,9 @@
     "tenThousand": "万",
     "plays": "回"
   },
+  "loveFlavorTest": {
+    "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
+  },
   "mbti": {
     "startTest": "テスト開始",
     "totalParticipants": "合計{count}人が参加しました",

@@ -41,6 +41,9 @@
     "tenThousand": "만",
     "plays": "회"
   },
+  "loveFlavorTest": {
+    "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
+  },
   "mbti": {
     "startTest": "테스트 시작하기",
     "totalParticipants": "총 {count}명이 참여했어요",

@@ -195,46 +195,77 @@ export default function LoveFlavorTestClient({
     setShuffledOptionsMap({});
   };
 
+  // 바이럴 공유 메시지 생성 함수
+  const getViralShareMessage = () => {
+    if (!result) return title;
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    return t('loveFlavorTest.resultShareMessage', { type: resultTitle });
+  };
+
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    const shareText = showResult ? getViralShareMessage() : title;
+    const shareUrl = `${window.location.origin}/${locale}/test/${slug}`;
+    const fullText = showResult ? `${shareText}\n\n${shareUrl}` : shareUrl;
+    
+    navigator.clipboard.writeText(fullText);
     alert('링크가 복사되었습니다!');
   };
 
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
+    const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
+    const text = encodeURIComponent(showResult ? getViralShareMessage() : title);
+    window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
   };
+  
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(title);
+    const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
+    const text = encodeURIComponent(showResult ? getViralShareMessage() : title);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
+  
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(title);
+    const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
+    const text = encodeURIComponent(showResult ? getViralShareMessage() : title);
     window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
   };
+  
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `${window.location.origin}/${locale}/test/${slug}`;
+    const shareText = showResult ? getViralShareMessage() : title;
+    
     if (navigator.share) {
-      try { await navigator.share({ title, url }); return; } catch {}
+      try { 
+        await navigator.share({ 
+          title: shareText, 
+          text: shareText,
+          url: url 
+        }); 
+        return; 
+      } catch {}
     }
-    try { await navigator.clipboard.writeText(url); alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하세요.'); } catch {}
+    try { 
+      await navigator.clipboard.writeText(`${shareText}\n\n${url}`); 
+      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하세요.'); 
+    } catch {}
   };
+  
   const shareToKakao = () => {
     if (typeof window === 'undefined') return;
     if (!window.Kakao || !window.Kakao.isInitialized()) {
       alert('카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.');
       return;
     }
-    const currentUrl = window.location.href;
+    const currentUrl = `${window.location.origin}/${locale}/test/${slug}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
+    const shareTitle = showResult ? getViralShareMessage() : title;
+    const shareDescription = showResult ? title : description;
+    
     try {
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-          title: title,
-          description: description,
+          title: shareTitle,
+          description: shareDescription,
           imageUrl: thumbnailUrl,
           link: { mobileWebUrl: currentUrl, webUrl: currentUrl },
         },
@@ -248,19 +279,18 @@ export default function LoveFlavorTestClient({
   const handleShareResult = () => {
     if (!result) return;
 
-    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = t('loveFlavorTest.shareMessage', { type: resultTitle });
+    const shareText = getViralShareMessage();
     const shareUrl = `${window.location.origin}/${locale}/test/${slug}`;
 
     if (navigator.share) {
       navigator.share({
-        title: title,
+        title: shareText,
         text: shareText,
         url: shareUrl,
       }).catch(console.error);
     } else {
       // Web Share API를 지원하지 않는 경우 클립보드에 복사
-      navigator.clipboard.writeText(`${shareText}\n${shareUrl}`).then(() => {
+      navigator.clipboard.writeText(`${shareText}\n\n${shareUrl}`).then(() => {
         alert('결과가 클립보드에 복사되었습니다!');
       }).catch(console.error);
     }

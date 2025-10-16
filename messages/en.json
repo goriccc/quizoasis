@@ -38,6 +38,9 @@
     "tenThousand": "M",
     "plays": ""
   },
+  "loveFlavorTest": {
+    "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
+  },
   "mbti": {
     "startTest": "Start Test",
     "totalParticipants": "{count} people participated",
