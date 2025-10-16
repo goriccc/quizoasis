@@ -213,25 +213,25 @@ export default function LoveFlavorTestClient({
 
   const shareToLine = () => {
     const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
-    const text = encodeURIComponent(showResult ? getViralShareMessage() : title);
+    const text = encodeURIComponent(title);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
   };
   
   const shareToTelegram = () => {
     const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
-    const text = encodeURIComponent(showResult ? getViralShareMessage() : title);
+    const text = encodeURIComponent(title);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
   
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
-    const text = encodeURIComponent(showResult ? getViralShareMessage() : title);
+    const text = encodeURIComponent(title);
     window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
   };
   
   const shareToWeChat = async () => {
     const url = `${window.location.origin}/${locale}/test/${slug}`;
-    const shareText = showResult ? getViralShareMessage() : title;
+    const shareText = title;
     
     if (navigator.share) {
       try { 
@@ -257,8 +257,8 @@ export default function LoveFlavorTestClient({
     }
     const currentUrl = `${window.location.origin}/${locale}/test/${slug}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
-    const shareTitle = showResult ? getViralShareMessage() : title;
-    const shareDescription = showResult ? title : description;
+    const shareTitle = showResult ? title : title;
+    const shareDescription = showResult ? getViralShareMessage() : description;
     
     try {
       window.Kakao.Share.sendDefault({
