@@ -10,6 +10,7 @@ import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
+import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 
 interface FriendTestClientProps {
   locale: string;
@@ -376,16 +377,12 @@ export default function FriendTestClient({
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
         {/* AdSense 광고 - 로딩 스피너 상단 */}
-        <div className="mb-8 border-2 border-dashed border-purple-500 bg-purple-50 p-4 rounded-lg w-full max-w-[680px] text-center">
-          <div className="text-center text-purple-600 text-sm mb-2 font-semibold">
-            📢 AdSense 광고 영역 (로딩 스피너 상단)
-          </div>
-          <ins className="adsbygoogle"
-            style={{ display: 'block', minHeight: '100px' }}
-            data-ad-client="ca-pub-3192752766652582"
-            data-ad-slot="9999999999"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
+        <div className="mb-8 w-full max-w-[680px]">
+          <AdSensePlaceholder 
+            slot={ADSENSE_CONFIG.SLOTS.LOADING_TOP}
+            style={{ width: '100%', height: '250px' }}
+            className="mx-auto"
+            label="AdSense 광고 영역 (로딩 스피너 상단)"
           />
         </div>
 
@@ -395,16 +392,12 @@ export default function FriendTestClient({
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
-        <div className="mt-8 border-2 border-dashed border-orange-500 bg-orange-50 p-4 rounded-lg w-full max-w-[680px] text-center">
-          <div className="text-center text-orange-600 text-sm mb-2 font-semibold">
-            📢 AdSense 광고 영역 (로딩 스피너 하단)
-          </div>
-          <ins className="adsbygoogle"
-            style={{ display: 'block', minHeight: '100px' }}
-            data-ad-client="ca-pub-3192752766652582"
-            data-ad-slot="9999999999"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
+        <div className="mt-8 w-full max-w-[680px]">
+          <AdSensePlaceholder 
+            slot={ADSENSE_CONFIG.SLOTS.LOADING_BOTTOM}
+            style={{ width: '100%', height: '250px' }}
+            className="mx-auto"
+            label="AdSense 광고 영역 (로딩 스피너 하단)"
           />
         </div>
       </div>
@@ -499,16 +492,12 @@ export default function FriendTestClient({
             </h1>
 
             {/* AdSense 광고 - 타이틀과 설명 사이 */}
-            <div className="max-w-[680px] mx-auto mb-4 border-2 border-dashed border-red-500 bg-red-50 p-4 rounded-lg">
-              <div className="text-center text-red-600 text-sm mb-2 font-semibold">
-                📢 AdSense 광고 영역 (타이틀-설명 사이)
-              </div>
-              <ins className="adsbygoogle"
-                style={{ display: 'block', minHeight: '50px' }}
-                data-ad-client="ca-pub-3192752766652582"
-                data-ad-slot="9999999999"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
+            <div className="my-6">
+              <AdSensePlaceholder 
+                slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto"
+                label="AdSense 광고 영역 (타이틀-설명 사이)"
               />
             </div>
 
@@ -641,12 +630,11 @@ export default function FriendTestClient({
 
             {/* AdSense 광고 영역 */}
             <div className="mt-8 mb-6">
-              <ins className="adsbygoogle"
-                style={{ display: 'block', minHeight: '50px' }}
-                data-ad-client="ca-pub-3192752766652582"
-                data-ad-slot="9999999999"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
+              <AdSensePlaceholder 
+                slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto"
+                label="AdSense 광고 영역"
               />
             </div>
           </div>
@@ -660,16 +648,12 @@ export default function FriendTestClient({
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
         {/* AdSense 광고 - 로딩 스피너 상단 */}
-        <div className="mb-8 border-2 border-dashed border-purple-500 bg-purple-50 p-4 rounded-lg w-full max-w-[680px] text-center">
-          <div className="text-center text-purple-600 text-sm mb-2 font-semibold">
-            📢 AdSense 광고 영역 (로딩 스피너 상단)
-          </div>
-          <ins className="adsbygoogle"
-            style={{ display: 'block', minHeight: '100px' }}
-            data-ad-client="ca-pub-3192752766652582"
-            data-ad-slot="9999999999"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
+        <div className="mb-8 w-full max-w-[680px]">
+          <AdSensePlaceholder 
+            slot={ADSENSE_CONFIG.SLOTS.LOADING_TOP}
+            style={{ width: '100%', height: '250px' }}
+            className="mx-auto"
+            label="AdSense 광고 영역 (로딩 스피너 상단)"
           />
         </div>
 
@@ -680,16 +664,12 @@ export default function FriendTestClient({
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
-        <div className="mt-8 border-2 border-dashed border-purple-500 bg-purple-50 p-4 rounded-lg w-full max-w-[680px] text-center">
-          <div className="text-center text-purple-600 text-sm mb-2 font-semibold">
-            📢 AdSense 광고 영역 (로딩 스피너 하단)
-          </div>
-          <ins className="adsbygoogle"
-            style={{ display: 'block', minHeight: '100px' }}
-            data-ad-client="ca-pub-3192752766652582"
-            data-ad-slot="9999999999"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
+        <div className="mt-8 w-full max-w-[680px]">
+          <AdSensePlaceholder 
+            slot={ADSENSE_CONFIG.SLOTS.LOADING_BOTTOM}
+            style={{ width: '100%', height: '250px' }}
+            className="mx-auto"
+            label="AdSense 광고 영역 (로딩 스피너 하단)"
           />
         </div>
       </div>
@@ -807,16 +787,12 @@ export default function FriendTestClient({
             </div>
 
             {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
-            <div className="mb-8 border-2 border-dashed border-cyan-500 bg-cyan-50 p-4 rounded-lg px-4">
-              <div className="text-center text-cyan-600 text-sm mb-2 font-semibold">
-                📢 AdSense 광고 영역 (결과-다시하기 사이)
-              </div>
-              <ins className="adsbygoogle"
-                style={{ display: 'block', minHeight: '100px' }}
-                data-ad-client="ca-pub-3192752766652582"
-                data-ad-slot="9999999999"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
+            <div className="my-6 px-4">
+              <AdSensePlaceholder 
+                slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto"
+                label="AdSense 광고 영역 (결과-다시하기 사이)"
               />
             </div>
 
@@ -943,12 +919,11 @@ export default function FriendTestClient({
 
           {/* AdSense 광고 영역 */}
           <div className="mt-8 mb-6">
-            <ins className="adsbygoogle"
-              style={{ display: 'block', minHeight: '100px' }}
-              data-ad-client="ca-pub-3192752766652582"
-              data-ad-slot="9999999999"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
+            <AdSensePlaceholder 
+              slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
+              style={{ width: '100%', height: '250px' }}
+              className="mx-auto"
+              label="AdSense 광고 영역"
             />
           </div>
         </div>
@@ -1020,19 +995,13 @@ export default function FriendTestClient({
           </div>
 
           {/* AdSense 광고 - 테스트 진행 마지막 답변 밑 */}
-          <div className="mt-8 flex justify-center px-4">
-            <div className="border-2 border-dashed border-blue-500 bg-blue-50 p-4 rounded-lg w-full max-w-[680px]">
-              <div className="text-center text-blue-600 text-sm mb-2 font-semibold">
-                📢 AdSense 광고 영역 (테스트 진행 마지막 답변 밑)
-              </div>
-              <ins className="adsbygoogle"
-                style={{ display: 'block', minHeight: '100px' }}
-                data-ad-client="ca-pub-3192752766652582"
-                data-ad-slot="9999999999"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-              />
-            </div>
+          <div className="mt-8 px-4">
+            <AdSensePlaceholder 
+              slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
+              style={{ width: '100%', height: '250px' }}
+              className="mx-auto"
+              label="AdSense 광고 영역 (테스트 진행 마지막 답변 밑)"
+            />
           </div>
 
           <div className="mt-8 mb-8 text-center px-4">
