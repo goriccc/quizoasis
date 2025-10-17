@@ -252,6 +252,26 @@
         "Type6_Type5": "Kemungkinan konflik antara kebebasan dan stabilitas"
       }
     }
+  },
+  "flirting": {
+    "startMessage": {
+      "title": "Apakah Anda master flirting?",
+      "description1": "Orang yang berpura-pura keren di depan orang yang disukai, orang yang terlalu menunjukkan perasaannya.",
+      "description2": "Orang yang menjaga jarak yang tepat, orang yang ingin menghubungi setiap hari.",
+      "description3": "Orang yang strategis menunda balasan pesan, orang yang membaca dan membalas langsung.",
+      "question": "Seberapa tinggi skill flirting Anda?",
+      "fun": "Lebih menyenangkan jika dibandingkan dengan teman 😂",
+      "time": "Hanya 2 menit! Coba dengan senyuman 💕"
+    },
+    "mbti": {
+      "startTest": "Mulai Tes",
+      "totalParticipants": "Total Peserta",
+      "shareWithFriends": "Bagikan dengan Teman"
+    },
+    "recommendations": {
+      "similarTests": "Tes Serupa",
+      "popularTests": "Tes Populer"
+    }
   }
 }
 

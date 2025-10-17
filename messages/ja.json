@@ -252,6 +252,26 @@
         "Type6_Type5": "自由と安定の対立の可能性"
       }
     }
+  },
+  "flirting": {
+    "startMessage": {
+      "title": "あなたはフリートの達人？",
+      "description1": "好きな人の前でクールなふりをする人、気持ちがバレバレの人。",
+      "description2": "適度な距離を保つ人、毎日連絡したくてうずうずする人。",
+      "description3": "メッセージの返信を戦略的に遅らせる人、1秒で読んですぐ返信する人。",
+      "question": "あなたのフリート実力はどの程度ですか？",
+      "fun": "友達と比べるともっと楽しいです 😂",
+      "time": "所要時間わずか2分！笑顔でやってみてください 💕"
+    },
+    "mbti": {
+      "startTest": "テスト開始",
+      "totalParticipants": "総参加者",
+      "shareWithFriends": "友達と一緒にやってみる"
+    },
+    "recommendations": {
+      "similarTests": "類似の他のテスト",
+      "popularTests": "最近人気のテスト"
+    }
   }
 }
 

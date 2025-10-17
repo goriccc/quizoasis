@@ -252,6 +252,26 @@
         "Type6_Type5": "Possible conflict between freedom and stability"
       }
     }
+  },
+  "flirting": {
+    "startMessage": {
+      "title": "Are you a flirting master?",
+      "description1": "People who act cool in front of someone they like, people who show their feelings too much.",
+      "description2": "People who maintain proper distance, people who are desperate to contact every day.",
+      "description3": "People who strategically delay replying to messages, people who read and reply immediately.",
+      "question": "What's your flirting skill level?",
+      "fun": "It's more fun when you compare with friends 😂",
+      "time": "Just 2 minutes! Try it with a smile 💕"
+    },
+    "mbti": {
+      "startTest": "Start Test",
+      "totalParticipants": "Total Participants",
+      "shareWithFriends": "Share with Friends"
+    },
+    "recommendations": {
+      "similarTests": "Similar Tests",
+      "popularTests": "Popular Tests"
+    }
   }
 }
 

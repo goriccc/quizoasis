@@ -255,6 +255,26 @@
         "Type6_Type5": "자유와 안정의 갈등 가능"
       }
     }
+  },
+  "flirting": {
+    "startMessage": {
+      "title": "당신은 밀당의 달인?",
+      "description1": "좋아하는 사람 앞에서 쿨한 척하는 사람, 티 나게 좋아하는 사람.",
+      "description2": "적당한 거리를 유지하는 사람, 매일 연락하고 싶어 안달 나는 사람.",
+      "description3": "카톡 답장을 전략적으로 늦추는 사람, 1초 만에 읽고 바로 답장하는 사람.",
+      "question": "당신의 썸 실력은 어느 정도인가요?",
+      "fun": "친구들과 비교하면 더 재미있어요 😂",
+      "time": "소요 시간 단 2분! 웃으면서 해보세요 💕"
+    },
+    "mbti": {
+      "startTest": "테스트 시작",
+      "totalParticipants": "총 참여자",
+      "shareWithFriends": "친구와 같이 해보기"
+    },
+    "recommendations": {
+      "similarTests": "유사한 다른 테스트",
+      "popularTests": "요즘 인기 테스트"
+    }
   }
 }
 

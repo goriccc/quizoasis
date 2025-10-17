@@ -252,6 +252,26 @@
         "Type6_Type5": "Có thể xung đột giữa tự do và sự ổn định"
       }
     }
+  },
+  "flirting": {
+    "startMessage": {
+      "title": "Bạn có phải là bậc thầy tán tỉnh?",
+      "description1": "Những người giả vờ mát mẻ trước người mình thích, những người thể hiện cảm xúc quá rõ ràng.",
+      "description2": "Những người duy trì khoảng cách phù hợp, những người muốn liên lạc mỗi ngày.",
+      "description3": "Những người chiến lược trì hoãn trả lời tin nhắn, những người đọc và trả lời ngay lập tức.",
+      "question": "Kỹ năng tán tỉnh của bạn ở mức nào?",
+      "fun": "Sẽ vui hơn khi so sánh với bạn bè 😂",
+      "time": "Chỉ 2 phút! Hãy thử với nụ cười 💕"
+    },
+    "mbti": {
+      "startTest": "Bắt đầu kiểm tra",
+      "totalParticipants": "Tổng người tham gia",
+      "shareWithFriends": "Chia sẻ với bạn bè"
+    },
+    "recommendations": {
+      "similarTests": "Bài kiểm tra tương tự",
+      "popularTests": "Bài kiểm tra phổ biến"
+    }
   }
 }
 
