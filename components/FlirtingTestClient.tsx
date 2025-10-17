@@ -461,7 +461,7 @@ export default function FlirtingTestClient({
                         <div className="relative aspect-video">
                           <Image
                             src={getThumbnailUrl(test.thumbnail)}
-                            alt={typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko}
+                            alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             fill
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
@@ -470,7 +470,7 @@ export default function FlirtingTestClient({
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
                             <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                              {typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko}
+                              {typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
@@ -901,7 +901,7 @@ export default function FlirtingTestClient({
                         <div className="relative aspect-video">
                           <Image
                             src={getThumbnailUrl(test.thumbnail)}
-                            alt={typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko}
+                            alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             fill
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
@@ -910,7 +910,7 @@ export default function FlirtingTestClient({
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
                             <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                              {typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko}
+                              {typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
@@ -938,7 +938,7 @@ export default function FlirtingTestClient({
                         <div className="relative aspect-video">
                           <Image
                             src={getThumbnailUrl(test.thumbnail)}
-                            alt={typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko}
+                            alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             fill
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
@@ -947,7 +947,7 @@ export default function FlirtingTestClient({
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
                             <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                              {typeof test.title === 'string' ? test.title : test.title[locale] || test.title.ko}
+                              {typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
