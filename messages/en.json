@@ -209,6 +209,49 @@
       "carefulMatch": "Compatibility Requiring Attention",
       "shareResult": "Share Result"
     }
+  },
+  "idealTypeTest": {
+    "startMessageLine1": "Brain? Heart? Or reliability?",
+    "startMessageLine2": "Are you attracted to smart people? Do you like fun people? Do you want warm people?",
+    "startMessageLine3": "The reasons for being attracted to someone are different for everyone.",
+    "startMessageLine4": "Someone you want to have deep conversations with, someone you want to laugh with, someone you want to hug, someone you want to conquer the world with.",
+    "startMessageLine5": "Who is your real ideal type?",
+    "startMessageLine6": "It's more fun to compare with friends 💘 Takes only 3 minutes! Start now! ✨",
+    "shareMessage": "My ideal type is {type}! What kind of person attracts you? Let's compare our ideal types 💘",
+    "result": {
+      "datingStyle": "Dating Style",
+      "idealJobs": "Ideal Jobs",
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match", 
+      "carefulMatch": "Careful Match",
+      "difficultMatch": "Difficult Match",
+      "compatibility": {
+        "Type1_Type3": "Perfect harmony of intellectual conversation and warm empathy",
+        "Type1_Type5": "Synergy of logical thinking and realistic planning",
+        "Type1_Type2": "Need balance between seriousness and humor",
+        "Type1_Type4": "Conflict possible due to difference in depth and speed",
+        "Type2_Type2": "Endless laughter and positive energy",
+        "Type2_Type6": "Meeting of free spirit and humor",
+        "Type2_Type5": "Clash between spontaneity and planning",
+        "Type2_Type1": "Need balance between lightness and seriousness",
+        "Type3_Type1": "Harmony of warm care and intellectual conversation",
+        "Type3_Type5": "Emotional support and realistic stability",
+        "Type3_Type4": "Need balance between softness and strength",
+        "Type3_Type6": "Possible conflict between devotion and freedom",
+        "Type4_Type3": "Harmony of strong leadership and warm care",
+        "Type4_Type4": "Relationship that encourages each other to grow",
+        "Type4_Type1": "Need balance between drive and depth",
+        "Type4_Type6": "Possible conflict between leadership and freedom",
+        "Type5_Type3": "Harmony of stable planning and warm care",
+        "Type5_Type1": "Synergy of realistic stability and intellectual conversation",
+        "Type5_Type2": "Need balance between planning and spontaneity",
+        "Type5_Type6": "Possible conflict between stability and freedom",
+        "Type6_Type6": "Perfect harmony respecting each other's freedom",
+        "Type6_Type2": "Meeting of free spirit and humor",
+        "Type6_Type3": "Need balance between independence and care",
+        "Type6_Type5": "Possible conflict between freedom and stability"
+      }
+    }
   }
 }
 

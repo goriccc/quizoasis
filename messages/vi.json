@@ -209,6 +209,49 @@
       "carefulMatch": "Độ phù hợp cần chú ý",
       "shareResult": "Chia sẻ kết quả"
     }
+  },
+  "idealTypeTest": {
+    "startMessageLine1": "Đầu óc? Trái tim? Hay sự đáng tin cậy?",
+    "startMessageLine2": "Bạn có bị thu hút bởi những người thông minh không? Bạn có thích những người vui vẻ không? Bạn có muốn những người ấm áp không?",
+    "startMessageLine3": "Lý do bị thu hút bởi ai đó khác nhau đối với mỗi người.",
+    "startMessageLine4": "Người bạn muốn trò chuyện sâu sắc, người bạn muốn cười cùng, người bạn muốn ôm, người bạn muốn chinh phục thế giới cùng.",
+    "startMessageLine5": "Kiểu lý tưởng mà bạn thực sự muốn là ai?",
+    "startMessageLine6": "So sánh với bạn bè sẽ thú vị hơn 💘 Chỉ mất 3 phút! Bắt đầu ngay bây giờ! ✨",
+    "shareMessage": "Kiểu lý tưởng của tôi là {type}! Bạn bị thu hút bởi kiểu người nào? Hãy so sánh kiểu lý tưởng của chúng ta 💘",
+    "result": {
+      "datingStyle": "Phong cách hẹn hò",
+      "idealJobs": "Nghề nghiệp lý tưởng",
+      "bestMatch": "Kết hợp tốt nhất",
+      "goodMatch": "Kết hợp tốt", 
+      "carefulMatch": "Kết hợp cần cẩn thận",
+      "difficultMatch": "Kết hợp khó khăn",
+      "compatibility": {
+        "Type1_Type3": "Sự hài hòa hoàn hảo giữa cuộc trò chuyện trí tuệ và sự đồng cảm ấm áp",
+        "Type1_Type5": "Hiệu ứng cộng hưởng của tư duy logic và kế hoạch thực tế",
+        "Type1_Type2": "Cần cân bằng giữa sự nghiêm túc và hài hước",
+        "Type1_Type4": "Có thể xung đột do sự khác biệt về độ sâu và tốc độ",
+        "Type2_Type2": "Tiếng cười bất tận và năng lượng tích cực",
+        "Type2_Type6": "Cuộc gặp gỡ giữa tâm hồn tự do và hài hước",
+        "Type2_Type5": "Xung đột giữa tính tự phát và kế hoạch",
+        "Type2_Type1": "Cần cân bằng giữa sự nhẹ nhàng và nghiêm túc",
+        "Type3_Type1": "Sự hài hòa giữa sự chăm sóc ấm áp và cuộc trò chuyện trí tuệ",
+        "Type3_Type5": "Hỗ trợ cảm xúc và sự ổn định thực tế",
+        "Type3_Type4": "Cần cân bằng giữa sự mềm mại và mạnh mẽ",
+        "Type3_Type6": "Có thể xung đột giữa sự cống hiến và tự do",
+        "Type4_Type3": "Sự hài hòa giữa khả năng lãnh đạo mạnh mẽ và sự chăm sóc ấm áp",
+        "Type4_Type4": "Mối quan hệ khuyến khích nhau phát triển",
+        "Type4_Type1": "Cần cân bằng giữa động lực và độ sâu",
+        "Type4_Type6": "Có thể xung đột giữa lãnh đạo và tự do",
+        "Type5_Type3": "Sự hài hòa giữa kế hoạch ổn định và sự chăm sóc ấm áp",
+        "Type5_Type1": "Hiệu ứng cộng hưởng của sự ổn định thực tế và cuộc trò chuyện trí tuệ",
+        "Type5_Type2": "Cần cân bằng giữa tính kế hoạch và tự phát",
+        "Type5_Type6": "Có thể xung đột giữa sự ổn định và tự do",
+        "Type6_Type6": "Sự hài hòa hoàn hảo tôn trọng tự do của nhau",
+        "Type6_Type2": "Cuộc gặp gỡ giữa tâm hồn tự do và hài hước",
+        "Type6_Type3": "Cần cân bằng giữa tính độc lập và sự chăm sóc",
+        "Type6_Type5": "Có thể xung đột giữa tự do và sự ổn định"
+      }
+    }
   }
 }
 

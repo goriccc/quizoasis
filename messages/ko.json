@@ -212,6 +212,49 @@
         "Type6_Type3": "감정 무시에 상처받음"
       }
     }
+  },
+  "idealTypeTest": {
+    "startMessageLine1": "머리? 가슴? 아니면 든든함?",
+    "startMessageLine2": "똑똑한 사람에게 끌리나요? 재미있는 사람이 좋은가요? 따뜻한 사람을 원하나요?",
+    "startMessageLine3": "누군가에게 끌리는 이유는 각자 다릅니다.",
+    "startMessageLine4": "깊은 대화를 나누고 싶은 사람, 함께 웃고 싶은 사람, 안아주고 싶은 사람, 함께 세상을 정복하고 싶은 사람.",
+    "startMessageLine5": "당신이 진짜 원하는 이상형은 누구인가요?",
+    "startMessageLine6": "친구들과 비교하면 더 재미있어요 💘 소요 시간 단 3분! 지금 바로 시작해 보세요! ✨",
+    "shareMessage": "나의 이상형은 {type}! 너는 어떤 사람에게 끌려? 우리 이상형 비교해보자 💘",
+    "result": {
+      "datingStyle": "데이트 스타일",
+      "idealJobs": "이상형의 직업",
+      "bestMatch": "최고 궁합",
+      "goodMatch": "좋은 궁합", 
+      "carefulMatch": "주의 궁합",
+      "difficultMatch": "어려운 궁합",
+      "compatibility": {
+        "Type1_Type3": "지적 대화와 따뜻한 공감의 완벽한 조화",
+        "Type1_Type5": "논리적 사고와 현실적 계획의 시너지",
+        "Type1_Type2": "진지함과 유머의 균형 필요",
+        "Type1_Type4": "깊이와 속도의 차이로 갈등 가능",
+        "Type2_Type2": "끊임없는 웃음과 긍정 에너지",
+        "Type2_Type6": "자유로운 영혼과 유머의 만남",
+        "Type2_Type5": "즉흥성과 계획성의 충돌",
+        "Type2_Type1": "가벼움과 진지함의 균형 필요",
+        "Type3_Type1": "따뜻한 배려와 지적 대화의 조화",
+        "Type3_Type5": "감정적 지지와 현실적 안정감",
+        "Type3_Type4": "부드러움과 강함의 균형 필요",
+        "Type3_Type6": "헌신과 자유의 갈등 가능",
+        "Type4_Type3": "강한 리더십과 따뜻한 배려의 조화",
+        "Type4_Type4": "서로를 격려하며 성장하는 관계",
+        "Type4_Type1": "추진력과 깊이의 균형 필요",
+        "Type4_Type6": "리드와 자유의 갈등 가능",
+        "Type5_Type3": "안정적 계획과 따뜻한 배려의 조화",
+        "Type5_Type1": "현실적 안정과 지적 대화의 시너지",
+        "Type5_Type2": "계획성과 즉흥성의 균형 필요",
+        "Type5_Type6": "안정과 자유의 갈등 가능",
+        "Type6_Type6": "서로의 자유를 존중하는 완벽한 조화",
+        "Type6_Type2": "자유로운 영혼과 유머의 만남",
+        "Type6_Type3": "독립성과 배려의 균형 필요",
+        "Type6_Type5": "자유와 안정의 갈등 가능"
+      }
+    }
   }
 }
 

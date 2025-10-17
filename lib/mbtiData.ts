@@ -5,6 +5,7 @@ import { attachmentQuestions, attachmentResults } from './attachmentData';
 import { friendQuestions, friendResults } from './friendData';
 import { conflictQuestions, conflictResults } from './conflictData';
 import { loveFlavorQuestions, loveFlavorResults } from './loveFlavorData';
+import { idealTypeQuestions, idealTypeResults } from './idealTypeData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -949,6 +950,10 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'love-flavor-test': {
     questions: loveFlavorQuestions,
     results: loveFlavorResults
+  },
+  'ideal-type-test': {
+    questions: idealTypeQuestions,
+    results: idealTypeResults
   }
 };
 

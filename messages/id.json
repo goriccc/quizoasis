@@ -209,6 +209,49 @@
       "carefulMatch": "Kecocokan yang Perlu Perhatian",
       "shareResult": "Bagikan Hasil"
     }
+  },
+  "idealTypeTest": {
+    "startMessageLine1": "Otak? Hati? Atau keandalan?",
+    "startMessageLine2": "Apakah Anda tertarik pada orang pintar? Apakah Anda suka orang yang menyenangkan? Apakah Anda menginginkan orang yang hangat?",
+    "startMessageLine3": "Alasan tertarik pada seseorang berbeda untuk setiap orang.",
+    "startMessageLine4": "Seseorang yang ingin Anda ajak bicara mendalam, seseorang yang ingin Anda tertawa bersama, seseorang yang ingin Anda peluk, seseorang yang ingin Anda taklukkan dunia bersama.",
+    "startMessageLine5": "Siapa tipe ideal yang benar-benar Anda inginkan?",
+    "startMessageLine6": "Lebih menyenangkan untuk membandingkan dengan teman-teman 💘 Hanya butuh 3 menit! Mulai sekarang! ✨",
+    "shareMessage": "Tipe ideal saya adalah {type}! Tipe orang seperti apa yang menarik Anda? Mari kita bandingkan tipe ideal kita 💘",
+    "result": {
+      "datingStyle": "Gaya Kencan",
+      "idealJobs": "Pekerjaan Ideal",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik", 
+      "carefulMatch": "Kecocokan yang Perlu Hati-hati",
+      "difficultMatch": "Kecocokan Sulit",
+      "compatibility": {
+        "Type1_Type3": "Harmoni sempurna antara percakapan intelektual dan empati hangat",
+        "Type1_Type5": "Sinergi pemikiran logis dan perencanaan realistis",
+        "Type1_Type2": "Perlu keseimbangan antara keseriusan dan humor",
+        "Type1_Type4": "Kemungkinan konflik karena perbedaan kedalaman dan kecepatan",
+        "Type2_Type2": "Tawa tak berujung dan energi positif",
+        "Type2_Type6": "Pertemuan jiwa bebas dan humor",
+        "Type2_Type5": "Bentrok antara spontanitas dan perencanaan",
+        "Type2_Type1": "Perlu keseimbangan antara keringanan dan keseriusan",
+        "Type3_Type1": "Harmoni perhatian hangat dan percakapan intelektual",
+        "Type3_Type5": "Dukungan emosional dan stabilitas realistis",
+        "Type3_Type4": "Perlu keseimbangan antara kelembutan dan kekuatan",
+        "Type3_Type6": "Kemungkinan konflik antara pengabdian dan kebebasan",
+        "Type4_Type3": "Harmoni kepemimpinan kuat dan perhatian hangat",
+        "Type4_Type4": "Hubungan yang saling mendorong untuk tumbuh",
+        "Type4_Type1": "Perlu keseimbangan antara dorongan dan kedalaman",
+        "Type4_Type6": "Kemungkinan konflik antara kepemimpinan dan kebebasan",
+        "Type5_Type3": "Harmoni perencanaan stabil dan perhatian hangat",
+        "Type5_Type1": "Sinergi stabilitas realistis dan percakapan intelektual",
+        "Type5_Type2": "Perlu keseimbangan antara perencanaan dan spontanitas",
+        "Type5_Type6": "Kemungkinan konflik antara stabilitas dan kebebasan",
+        "Type6_Type6": "Harmoni sempurna menghormati kebebasan masing-masing",
+        "Type6_Type2": "Pertemuan jiwa bebas dan humor",
+        "Type6_Type3": "Perlu keseimbangan antara kemandirian dan perhatian",
+        "Type6_Type5": "Kemungkinan konflik antara kebebasan dan stabilitas"
+      }
+    }
   }
 }
 

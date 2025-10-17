@@ -209,5 +209,48 @@
       "carefulMatch": "需要注意的配对",
       "shareResult": "分享结果"
     }
+  },
+  "idealTypeTest": {
+    "startMessageLine1": "头脑？心灵？还是可靠？",
+    "startMessageLine2": "你被聪明的人吸引吗？你喜欢有趣的人吗？你想要温暖的人吗？",
+    "startMessageLine3": "被某人吸引的原因因人而异。",
+    "startMessageLine4": "你想与之深入交谈的人，你想一起欢笑的人，你想拥抱的人，你想一起征服世界的人。",
+    "startMessageLine5": "你真正想要的理想型是谁？",
+    "startMessageLine6": "和朋友比较会更有趣💘 只需3分钟！现在就开始吧！✨",
+    "shareMessage": "我的理想型是{type}！你被什么样的人吸引？让我们比较一下我们的理想型💘",
+    "result": {
+      "datingStyle": "约会风格",
+      "idealJobs": "理想职业",
+      "bestMatch": "最佳匹配",
+      "goodMatch": "良好匹配", 
+      "carefulMatch": "需要注意的匹配",
+      "difficultMatch": "困难的匹配",
+      "compatibility": {
+        "Type1_Type3": "智慧对话与温暖共情的完美和谐",
+        "Type1_Type5": "逻辑思维与现实计划的协同效应",
+        "Type1_Type2": "需要严肃与幽默的平衡",
+        "Type1_Type4": "深度与速度的差异可能导致冲突",
+        "Type2_Type2": "无尽的笑声和积极能量",
+        "Type2_Type6": "自由灵魂与幽默的相遇",
+        "Type2_Type5": "即兴与计划性的冲突",
+        "Type2_Type1": "需要轻松与严肃的平衡",
+        "Type3_Type1": "温暖关怀与智慧对话的和谐",
+        "Type3_Type5": "情感支持与现实稳定感",
+        "Type3_Type4": "需要柔软与力量的平衡",
+        "Type3_Type6": "奉献与自由可能产生冲突",
+        "Type4_Type3": "强大领导力与温暖关怀的和谐",
+        "Type4_Type4": "相互鼓励成长的关系",
+        "Type4_Type1": "需要推动力与深度的平衡",
+        "Type4_Type6": "领导与自由可能产生冲突",
+        "Type5_Type3": "稳定计划与温暖关怀的和谐",
+        "Type5_Type1": "现实稳定与智慧对话的协同效应",
+        "Type5_Type2": "需要计划性与即兴的平衡",
+        "Type5_Type6": "稳定与自由可能产生冲突",
+        "Type6_Type6": "相互尊重自由的完美和谐",
+        "Type6_Type2": "自由灵魂与幽默的相遇",
+        "Type6_Type3": "需要独立性与关怀的平衡",
+        "Type6_Type5": "自由与稳定可能产生冲突"
+      }
+    }
   }
 }
