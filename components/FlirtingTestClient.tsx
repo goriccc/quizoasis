@@ -236,7 +236,19 @@ export default function FlirtingTestClient({
     const url = window.location.href;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareText = result 
-      ? `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕\n\n${url}`
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your flirting score? Let's test together 😂💕\n\n${url}` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたのフリートスキルは何点？一緒にテストしましょう 😂💕\n\n${url}` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的暧昧技巧得分是多少？一起来测试吧 😂💕\n\n${url}` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的曖昧技巧得分是多少？一起來測試吧 😂💕\n\n${url}` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Berapa skor flirting Anda? Mari test bersama 😂💕\n\n${url}` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Điểm tán tỉnh của bạn là bao nhiêu? Hãy test cùng nhau 😂💕\n\n${url}` :
+        `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕\n\n${url}`
       : `${title}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
@@ -264,7 +276,19 @@ export default function FlirtingTestClient({
     const url = encodeURIComponent(window.location.href);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareText = result 
-      ? encodeURIComponent(`나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕`)
+      ? locale === 'en' ?
+        encodeURIComponent(`I'm ${resultTitle}! What's your flirting score? Let's test together 😂💕`) :
+        locale === 'ja' ?
+        encodeURIComponent(`私は${resultTitle}！あなたのフリートスキルは何点？一緒にテストしましょう 😂💕`) :
+        locale === 'zh-CN' ?
+        encodeURIComponent(`我是${resultTitle}！你的暧昧技巧得分是多少？一起来测试吧 😂💕`) :
+        locale === 'zh-TW' ?
+        encodeURIComponent(`我是${resultTitle}！你的曖昧技巧得分是多少？一起來測試吧 😂💕`) :
+        locale === 'id' ?
+        encodeURIComponent(`Saya ${resultTitle}! Berapa skor flirting Anda? Mari test bersama 😂💕`) :
+        locale === 'vi' ?
+        encodeURIComponent(`Tôi là ${resultTitle}! Điểm tán tỉnh của bạn là bao nhiêu? Hãy test cùng nhau 😂💕`) :
+        encodeURIComponent(`나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕`)
       : encodeURIComponent(title);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
@@ -283,7 +307,19 @@ export default function FlirtingTestClient({
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareDescription = result 
-      ? `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕`
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your flirting score? Let's test together 😂💕` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたのフリートスキルは何点？一緒にテストしましょう 😂💕` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的暧昧技巧得分是多少？一起来测试吧 😂💕` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的曖昧技巧得分是多少？一起來測試吧 😂💕` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Berapa skor flirting Anda? Mari test bersama 😂💕` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Điểm tán tỉnh của bạn là bao nhiêu? Hãy test cùng nhau 😂💕` :
+        `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕`
       : description;
     
     try {
@@ -318,7 +354,19 @@ export default function FlirtingTestClient({
     const url = encodeURIComponent(window.location.href);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareText = result 
-      ? `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕`
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your flirting score? Let's test together 😂💕` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたのフリートスキルは何点？一緒にテストしましょう 😂💕` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的暧昧技巧得分是多少？一起来测试吧 😂💕` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的曖昧技巧得分是多少？一起來測試吧 😂💕` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Berapa skor flirting Anda? Mari test bersama 😂💕` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Điểm tán tỉnh của bạn là bao nhiêu? Hãy test cùng nhau 😂💕` :
+        `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕`
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
