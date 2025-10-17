@@ -546,14 +546,14 @@ export default function CrushTestClient({
                 </>
               ) : locale === 'en' ? (
                 <>
-                  <p className="font-bold text-gray-700">"10%? 50%? Or 90%?"</p>
+                  <p className="font-bold text-gray-700">&quot;10%? 50%? Or 90%?&quot;</p>
                   <p>That person hidden in your heart...</p>
                   <p>How much is the possibility of success?</p>
-                  <p>The other person's reaction, my charm, timing, effort...</p>
+                  <p>The other person&apos;s reaction, my charm, timing, effort...</p>
                   <p>We calculate the success rate by combining everything!</p>
-                  <p className="whitespace-pre-line">If you were curious "Do I have a chance?" If you hesitated "Should I confess?"</p>
+                  <p className="whitespace-pre-line">If you were curious &quot;Do I have a chance?&quot; If you hesitated &quot;Should I confess?&quot;</p>
                   <p>We accurately analyze your crush success rate with 12 questions!</p>
-                  <p>It's more fun to compare with friends 💘</p>
+                  <p>It&apos;s more fun to compare with friends 💘</p>
                   <p>Takes only 3 minutes! Take courage and start! 💪</p>
                 </>
               ) : locale === 'ja' ? (
