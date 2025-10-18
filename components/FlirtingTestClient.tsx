@@ -523,7 +523,7 @@ export default function FlirtingTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount || 0, locale)}</span>
+                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -963,7 +963,7 @@ export default function FlirtingTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount || 0, locale)}</span>
+                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -1000,7 +1000,7 @@ export default function FlirtingTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount || 0, locale)}</span>
+                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale)}</span>
                             </div>
                           </div>
                         </div>
