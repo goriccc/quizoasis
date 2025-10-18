@@ -672,10 +672,17 @@ export default function SpouseTestClient({
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultCharacteristics = result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
-    const resultIdealJob = result.idealJob[locale as keyof typeof result.idealJob] || result.idealJob.ko;
-    const resultMarriageLife = result.marriageLife[locale as keyof typeof result.marriageLife] || result.marriageLife.ko;
-    const resultCaution = result.caution[locale as keyof typeof result.caution] || result.caution.ko;
+    
+    // 다국어 쉼표 처리: 영어 쉼표+공백, 일본어 쉼표, 중국어 쉼표 모두 지원
+    const splitByCommas = (text: string) => {
+      // 쉼표 뒤 공백을 포함한 패턴으로 분할
+      return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+    };
+    
+    const resultCharacteristics = splitByCommas(result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko);
+    const resultIdealJob = splitByCommas(result.idealJob[locale as keyof typeof result.idealJob] || result.idealJob.ko);
+    const resultMarriageLife = splitByCommas(result.marriageLife[locale as keyof typeof result.marriageLife] || result.marriageLife.ko);
+    const resultCaution = splitByCommas(result.caution[locale as keyof typeof result.caution] || result.caution.ko);
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -756,7 +763,7 @@ export default function SpouseTestClient({
                   🎯 {t('mbti.characteristics')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultCharacteristics.split(', ').map((char, index) => (
+                  {resultCharacteristics.map((char, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-pink-100 to-rose-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
@@ -771,7 +778,7 @@ export default function SpouseTestClient({
                   💼 {t('mbti.idealJob')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultIdealJob.split(', ').map((job, index) => (
+                  {resultIdealJob.map((job, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-blue-100 to-cyan-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
@@ -789,7 +796,7 @@ export default function SpouseTestClient({
                   🏠 {t('mbti.marriageLife')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultMarriageLife.split(', ').map((life, index) => (
+                  {resultMarriageLife.map((life, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
@@ -804,7 +811,7 @@ export default function SpouseTestClient({
                   ⚠️ {t('mbti.caution')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultCaution.split(', ').map((caution, index) => (
+                  {resultCaution.map((caution, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"

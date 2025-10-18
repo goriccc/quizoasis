@@ -852,6 +852,15 @@ export default function CrushTestClient({
 
   // 결과 화면
   if (showResult && result) {
+    // 다국어 쉼표 처리: 영어 쉼표+공백, 일본어 쉼표, 중국어 쉼표 모두 지원
+    const splitByCommas = (text: string) => {
+      // 쉼표 뒤 공백을 포함한 패턴으로 분할
+      return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+    };
+    
+    const resultCurrentState = splitByCommas(typeof result.currentState === 'string' ? result.currentState : result.currentState[locale] || result.currentState.ko);
+    const resultRecommendation = splitByCommas(typeof result.recommendation === 'string' ? result.recommendation : result.recommendation[locale] || result.recommendation.ko);
+    
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-3xl mx-auto px-4 py-8">
@@ -880,12 +889,12 @@ export default function CrushTestClient({
                      locale === 'vi' ? 'Tình Huống Hiện Tại' : '현재 상황'}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {(typeof result.currentState === 'string' ? result.currentState : result.currentState[locale] || result.currentState.ko).split(', ').map((item, index) => (
+                {resultCurrentState.map((item, index) => (
                   <span
                     key={index}
                     className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full"
                   >
-                    {item.trim()}
+                    {item}
                   </span>
                 ))}
               </div>
@@ -902,12 +911,12 @@ export default function CrushTestClient({
                      locale === 'vi' ? 'Hành Động Được Khuyến Nghị' : '추천 행동'}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {(typeof result.recommendation === 'string' ? result.recommendation : result.recommendation[locale] || result.recommendation.ko).split(', ').map((item, index) => (
+                {resultRecommendation.map((item, index) => (
                   <span
                     key={index}
                     className="inline-block bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full"
                   >
-                    {item.trim()}
+                    {item}
                   </span>
                 ))}
               </div>

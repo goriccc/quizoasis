@@ -743,10 +743,17 @@ export default function FlirtingTestClient({
   if (showResult && result) {
     const resultTitle = typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko) || '';
     const resultDescription = typeof result.description === 'string' ? result.description : (result.description && result.description[locale as keyof typeof result.description]) || (result.description && result.description.ko) || '';
-    const resultCharacteristics = typeof result.characteristics === 'string' ? result.characteristics : (result.characteristics && result.characteristics[locale as keyof typeof result.characteristics]) || (result.characteristics && result.characteristics.ko) || '';
-    const resultImpression = typeof result.impression === 'string' ? result.impression : (result.impression && result.impression[locale as keyof typeof result.impression]) || (result.impression && result.impression.ko) || '';
-    const resultPros = typeof result.pros === 'string' ? result.pros : (result.pros && result.pros[locale as keyof typeof result.pros]) || (result.pros && result.pros.ko) || '';
-    const resultCons = typeof result.cons === 'string' ? result.cons : (result.cons && result.cons[locale as keyof typeof result.cons]) || (result.cons && result.cons.ko) || '';
+    
+    // 다국어 쉼표 처리: 영어 쉼표+공백, 일본어 쉼표, 중국어 쉼표 모두 지원
+    const splitByCommas = (text: string) => {
+      // 쉼표 뒤 공백을 포함한 패턴으로 분할
+      return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+    };
+    
+    const resultCharacteristics = splitByCommas(typeof result.characteristics === 'string' ? result.characteristics : (result.characteristics && result.characteristics[locale as keyof typeof result.characteristics]) || (result.characteristics && result.characteristics.ko) || '');
+    const resultImpression = splitByCommas(typeof result.impression === 'string' ? result.impression : (result.impression && result.impression[locale as keyof typeof result.impression]) || (result.impression && result.impression.ko) || '');
+    const resultPros = splitByCommas(typeof result.pros === 'string' ? result.pros : (result.pros && result.pros[locale as keyof typeof result.pros]) || (result.pros && result.pros.ko) || '');
+    const resultCons = splitByCommas(typeof result.cons === 'string' ? result.cons : (result.cons && result.cons[locale as keyof typeof result.cons]) || (result.cons && result.cons.ko) || '');
     const resultAdvice = typeof result.advice === 'string' ? result.advice : (result.advice && result.advice[locale as keyof typeof result.advice]) || (result.advice && result.advice.ko) || '';
 
     return (
@@ -778,7 +785,7 @@ export default function FlirtingTestClient({
                        locale === 'vi' ? 'Đặc Điểm Tán Tỉnh' : '썸 특징'}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultCharacteristics.split(', ').map((char, index) => (
+                  {resultCharacteristics.map((char, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
@@ -800,7 +807,7 @@ export default function FlirtingTestClient({
                        locale === 'vi' ? 'Cách Họ Nhìn Tôi' : '상대방이 느끼는 나'}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultImpression.split(', ').map((imp, index) => (
+                  {resultImpression.map((imp, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
@@ -824,7 +831,7 @@ export default function FlirtingTestClient({
                        locale === 'vi' ? 'Ưu Điểm' : '장점'}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultPros.split(', ').map((pro, index) => (
+                  {resultPros.map((pro, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
@@ -846,7 +853,7 @@ export default function FlirtingTestClient({
                        locale === 'vi' ? 'Nhược Điểm' : '단점'}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultCons.split(', ').map((con, index) => (
+                  {resultCons.map((con, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
