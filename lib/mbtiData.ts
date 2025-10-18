@@ -8,6 +8,7 @@ import { loveFlavorQuestions, loveFlavorResults } from './loveFlavorData';
 import { idealTypeQuestions, idealTypeResults } from './idealTypeData';
 import { crushQuestions, crushResults } from './crushData';
 import { flirtingQuestions, flirtingResults } from './flirtingData';
+import { spouseQuestions, spouseResults } from './spouseData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -964,6 +965,10 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'flirting-master-vs-beginner': {
     questions: flirtingQuestions,
     results: flirtingResults
+  },
+  'ideal-spouse-type': {
+    questions: spouseQuestions,
+    results: spouseResults
   }
 };
 

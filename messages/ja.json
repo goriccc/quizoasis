@@ -41,6 +41,19 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "spouseTest": {
+    "startMessage": {
+      "title": "「一生を共にする人、どんなタイプがいいかな？」",
+      "line1": "恋愛と結婚は違います。",
+      "line2": "ドキドキする恋愛が欲しいですか？それとも安らかなパートナーが欲しいですか？",
+      "line3": "一緒に世界を冒険したいですか？それとも温かい家庭を築きたいですか？",
+      "line4": "あなたの価値観、ライフスタイル、将来計画によって理想的な配偶者のタイプは異なります。",
+      "line5": "あなたに最も合う配偶者のタイプを見つけてみてください！",
+      "line6": "真剣に結婚を考えている方におすすめです 💍",
+      "line7": "所要時間わずか4分！慎重に答えてください ✨"
+    },
+    "resultShareMessage": "私に合う配偶者は{type}！あなたはどんなタイプ？結婚前に必ずやってみよう 💍"
+  },
   "mbti": {
     "startTest": "テスト開始",
     "totalParticipants": "合計{count}人が参加しました",
@@ -49,6 +62,9 @@
     "progress": "進捗",
     "yourResult": "あなたの結果",
     "characteristics": "特徴",
+    "idealJob": "理想的な職業",
+    "marriageLife": "結婚生活",
+    "caution": "注意点",
     "copingMethods": "対処法の提案",
     "retakeTest": "もう一度",
     "otherTests": "他のテストを見る",

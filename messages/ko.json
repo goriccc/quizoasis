@@ -44,6 +44,19 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "spouseTest": {
+    "startMessage": {
+      "title": "「평생을 함께할 사람, 어떤 유형이 좋을까?」",
+      "line1": "연애와 결혼은 다릅니다.",
+      "line2": "설레는 연애를 원하나요? 아니면 편안한 동반자를 원하나요?",
+      "line3": "함께 세상을 모험하고 싶나요? 아니면 따뜻한 가정을 꾸리고 싶나요?",
+      "line4": "당신의 가치관, 생활 방식, 미래 계획에 따라 이상적인 배우자 유형은 다릅니다.",
+      "line5": "당신에게 가장 잘 맞는 배우자 유형을 찾아보세요!",
+      "line6": "진지하게 결혼을 생각하는 분들께 추천합니다 💍",
+      "line7": "소요 시간 단 4분! 신중하게 답해주세요 ✨"
+    },
+    "resultShareMessage": "나에게 맞는 배우자는 {type}! 너는 어떤 유형? 결혼 전에 꼭 해보자 💍"
+  },
   "mbti": {
     "startTest": "테스트 시작하기",
     "totalParticipants": "총 {count}명이 참여했어요",
@@ -52,6 +65,9 @@
     "progress": "진행률",
     "yourResult": "당신의 결과는",
     "characteristics": "특징",
+    "idealJob": "이상적인 직업",
+    "marriageLife": "결혼 생활",
+    "caution": "주의점",
     "copingMethods": "대처법 제안",
     "retakeTest": "다시 하기",
     "otherTests": "다른 테스트 보기",

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { ConflictQuestion, ConflictResult, calculateConflictResult } from '@/lib/conflictData';
+import { SpouseQuestion, SpouseResult, calculateSpouseResult, spouseResults } from '@/lib/spouseData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
@@ -13,13 +13,13 @@ import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/ali
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 
-interface ConflictTestClientProps {
-  locale: string;
+interface SpouseTestClientProps {
+  locale: Locale;
   slug: string;
   title: string;
   description: string;
-  questions: ConflictQuestion[];
-  results: ConflictResult[];
+  questions: SpouseQuestion[];
+  results: SpouseResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -32,13 +32,7 @@ interface ConflictTestClientProps {
   }>;
 }
 
-// 궁합 설명 함수
-const getCompatibilityDescription = (myType: string, partnerType: string, t: any): string => {
-  const key = `${myType}_${partnerType}`;
-  return t(`conflictTest.result.compatibility.${key}`) || '';
-};
-
-export default function ConflictTestClient({ 
+export default function SpouseTestClient({ 
   locale, 
   slug, 
   title, 
@@ -49,14 +43,14 @@ export default function ConflictTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: ConflictTestClientProps) {
+}: SpouseTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
-  const [result, setResult] = useState<ConflictResult | null>(null);
+  const [result, setResult] = useState<SpouseResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<ConflictQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<SpouseQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
@@ -121,8 +115,8 @@ export default function ConflictTestClient({
             }
           });
         }
-      } catch (err) {
-        console.error('AdSense error:', err);
+      } catch (error) {
+        console.error('AdSense error:', error);
       }
     }, 100);
     
@@ -150,41 +144,11 @@ export default function ConflictTestClient({
     if (similarTests.length === 0) {
       const loadTests = async () => {
         try {
-          const allTests = await getTests();
-          const currentTest = allTests.find(t => t.slug === slug);
+          const tests = await getTests();
+          const filteredTests = tests.filter(test => test.slug !== slug);
           
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter(t => t.slug !== slug)
-              .slice(0, 10)
-              .map(t => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
-            .filter(t => t.slug !== slug)
-            .filter(t => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some(tag => otherTestTags.includes(tag));
-            })
-            .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+          const similarTestsList = filteredTests
+            .filter(test => test.category === 'love' || test.type === 'dating')
             .slice(0, 5)
             .map(t => ({
               id: t.id,
@@ -194,9 +158,7 @@ export default function ConflictTestClient({
               playCount: t.play_count
             }));
 
-          const similarTestSlugs = new Set(similarTestsList.map(t => t.slug));
-          const popularTestsList = allTests
-            .filter(t => t.slug !== slug && !similarTestSlugs.has(t.slug))
+          const popularTestsList = filteredTests
             .sort((a, b) => b.play_count - a.play_count)
             .slice(0, 5)
             .map(t => ({
@@ -230,7 +192,7 @@ export default function ConflictTestClient({
   }, [showLoadingSpinner]);
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: ConflictQuestion[]) => {
+  const shuffleQuestions = (questionList: SpouseQuestion[]) => {
     const shuffled = [...questionList];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -265,19 +227,19 @@ export default function ConflictTestClient({
       setShowLoadingSpinner(true);
       
       // 결과 계산
-      const resultType = calculateConflictResult(newAnswers);
-      const conflictResult = results.find(r => r.type === resultType);
+      const resultType = calculateSpouseResult(newAnswers);
+      const spouseResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (conflictResult) {
-        setResult(conflictResult);
+      if (spouseResult) {
+        setResult(spouseResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (conflictResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(conflictResult.type, locale);
+      if (spouseResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(spouseResult.type, locale);
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] 갈등 결과:', conflictResult.type, '→ 검색 키워드:', keywords[0]);
+        console.log('🔮 [시작] 배우자 결과:', spouseResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -292,15 +254,15 @@ export default function ConflictTestClient({
 
   // 결과 계산
   const calculateResult = (finalAnswers: any[]) => {
-    const resultType = calculateConflictResult(finalAnswers);
-    const conflictResult = results.find(r => r.type === resultType);
+    const resultType = calculateSpouseResult(finalAnswers);
+    const spouseResult = results.find(r => r.type === resultType);
     
-    if (conflictResult) {
-      setResult(conflictResult);
+    if (spouseResult) {
+      setResult(spouseResult);
     }
   };
 
-  // 다시 하기
+  // 다시 테스트하기
   const handleRetake = () => {
     setShuffledQuestions(shuffleQuestions(questions));
     setStarted(false);
@@ -308,78 +270,35 @@ export default function ConflictTestClient({
     setAnswers([]);
     setResult(null);
     setShowResult(false);
+    setShowResultPopup(false);
+    setShowLoadingSpinner(false);
+    setHasIncrementedPlayCount(false);
     setShuffledOptionsMap({});
   };
 
   // 결과 공유하기
-  const handleShareResult = async () => {
-    if (!result) return;
-    
-    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬\n\n${window.location.href}`;
-    
-    if (navigator.share) {
-      try {
-        await navigator.share({ text: shareText });
-      } catch (error) {
-        if (error instanceof Error && error.name !== 'AbortError') {
-          console.error('공유 실패:', error);
-        }
-      }
-    } else {
-      try {
-        await navigator.clipboard.writeText(shareText);
-        alert('결과가 클립보드에 복사되었습니다!');
-      } catch (error) {
-        console.error('클립보드 복사 실패:', error);
-        alert('공유 기능을 사용할 수 없습니다.');
-      }
-    }
-  };
-
-  // 공유 함수들
-  const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
-  };
-
-  const shareToWeChat = async () => {
-    const url = window.location.href;
+  const handleShareResult = () => {
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬\n\n${url}`
-      : `${title}\n\n${url}`;
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your ideal spouse type? Let's test together 💍` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたの理想の配偶者タイプは？一緒にテストしましょう 💍` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的理想配偶类型是什么？一起来测试吧 💍` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的理想配偶類型是什麼？一起來測試吧 💍` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Apa tipe pasangan ideal Anda? Mari test bersama 💍` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Kiểu người bạn đời lý tưởng của bạn là gì? Hãy test cùng nhau 💍` :
+        t('spouseTest.resultShareMessage', { type: resultTitle })
+      : title;
     
-    // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
-    if (navigator.share) {
-      try {
-        await navigator.share({ text: shareText });
-        return;
-      } catch (error) {
-        if (error instanceof Error && error.name === 'AbortError') {
-          return; // 사용자가 취소
-        }
-      }
-    }
-    
-    // Fallback: 링크 복사
-    try {
-      await navigator.clipboard.writeText(url);
-      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
-    } catch (error) {
-      alert('공유 기능을 사용할 수 없습니다.');
-    }
+    return shareText;
   };
 
-  const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
-    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const shareText = result 
-      ? encodeURIComponent(`나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬`)
-      : encodeURIComponent(title);
-    window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
-  };
-
+  // 소셜 공유 함수들
   const shareToKakao = () => {
     if (typeof window === 'undefined') return;
     
@@ -394,7 +313,7 @@ export default function ConflictTestClient({
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
-      ? `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬`
+      ? t('spouseTest.resultShareMessage', { type: resultTitle })
       : description;
     
     try {
@@ -429,10 +348,52 @@ export default function ConflictTestClient({
     const url = encodeURIComponent(window.location.href);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? `나는 ${resultTitle}! 갈등 상황에서 너는 어떻게 반응해? 우리 갈등 해결 스타일 비교해보자 💬`
+      ? t('spouseTest.resultShareMessage', { type: resultTitle })
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+  };
+
+  const shareToWeChat = async () => {
+    const url = window.location.href;
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const shareText = result 
+      ? `${t('spouseTest.resultShareMessage', { type: resultTitle })}\n\n${url}`
+      : `${title}\n\n${url}`;
+    
+    // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
+    if (navigator.share) {
+      try {
+        await navigator.share({ text: shareText });
+        return;
+      } catch (error) {
+        if (error instanceof Error && error.name === 'AbortError') {
+          return; // 사용자가 취소
+        }
+      }
+    }
+    
+    // Fallback: 링크 복사
+    try {
+      await navigator.clipboard.writeText(url);
+      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+    } catch (error) {
+      alert('공유 기능을 사용할 수 없습니다.');
+    }
+  };
+
+  const shareToLine = () => {
+    const url = encodeURIComponent(window.location.href);
+    window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
+  };
+
+  const shareToWhatsApp = () => {
+    const url = encodeURIComponent(window.location.href);
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const shareText = result 
+      ? encodeURIComponent(t('spouseTest.resultShareMessage', { type: resultTitle }))
+      : encodeURIComponent(title);
+    window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
 
   const copyLink = () => {
@@ -440,8 +401,8 @@ export default function ConflictTestClient({
     alert('링크가 복사되었습니다!');
   };
 
-  // 팝업에서 결과 보기
-  const handleShowResult = () => {
+  // 결과 팝업 닫기
+  const handleCloseResultPopup = () => {
     setShowResultPopup(false);
     setShowResult(true);
     window.scrollTo(0, 0);
@@ -454,7 +415,7 @@ export default function ConflictTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_030_conflict_response.jpg')}
+              src={getThumbnailUrl(thumbnail || 'test_035_ideal_spouse_type.jpg')}
               alt={title}
               fill
               className="object-cover"
@@ -479,12 +440,14 @@ export default function ConflictTestClient({
             </div>
 
             <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
-              <p className="font-bold text-gray-700">{t('conflictTest.startMessage.line1')}</p>
-              <p>{t('conflictTest.startMessage.line2')}</p>
-              <p>{t('conflictTest.startMessage.line3')}</p>
-              <p>{t('conflictTest.startMessage.line4')}</p>
-              <p className="whitespace-pre-line">{t('conflictTest.startMessage.line5')}</p>
-              <p>{t('conflictTest.startMessage.line6')}</p>
+              <p className="font-bold text-gray-700">{t('spouseTest.startMessage.title')}</p>
+              <p>{t('spouseTest.startMessage.line1')}</p>
+              <p>{t('spouseTest.startMessage.line2')}</p>
+              <p>{t('spouseTest.startMessage.line3')}</p>
+              <p>{t('spouseTest.startMessage.line4')}</p>
+              <p>{t('spouseTest.startMessage.line5')}</p>
+              <p>{t('spouseTest.startMessage.line6')}</p>
+              <p>{t('spouseTest.startMessage.line7')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -492,12 +455,12 @@ export default function ConflictTestClient({
                 onClick={handleStartTest}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-                {t('mbti.startTest')}
+{t('mbti.startTest')}
               </button>
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
+              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -648,7 +611,6 @@ export default function ConflictTestClient({
             🎉 {t('mbti.testCompleted')}
           </h2>
           
-          
           <div className="mb-6">
             {locale === 'ko' ? (
               <div>
@@ -696,7 +658,7 @@ export default function ConflictTestClient({
           </div>
 
           <button
-            onClick={handleShowResult}
+            onClick={handleCloseResultPopup}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
             {t('mbti.viewAnalysisResults')}
@@ -710,9 +672,10 @@ export default function ConflictTestClient({
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultPros = result.pros;
-    const resultCons = result.cons;
-    const resultAdvice = result.advice[locale as keyof typeof result.advice] || result.advice.ko;
+    const resultCharacteristics = result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
+    const resultIdealJob = result.idealJob[locale as keyof typeof result.idealJob] || result.idealJob.ko;
+    const resultMarriageLife = result.marriageLife[locale as keyof typeof result.marriageLife] || result.marriageLife.ko;
+    const resultCaution = result.caution[locale as keyof typeof result.caution] || result.caution.ko;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -729,197 +692,247 @@ export default function ConflictTestClient({
               <p className="text-base text-gray-600 leading-relaxed">
                 {resultDescription}
               </p>
+              <p className="text-base text-gray-600 leading-relaxed mt-4">
+                {result.type === 'Type1' && (locale === 'ko' ? 
+                  "당신에게는 안정적이고 신뢰할 수 있는 배우자가 잘 맞습니다. 계획적이고 책임감 있는 성격으로 가정을 든든하게 지켜줄 수 있는 사람입니다. 경제적 안정을 중시하며 미래를 계획적으로 준비하는 것을 좋아합니다. 이런 성향은 평생을 함께할 동반자에게 큰 안정감을 줄 것입니다." :
+                  locale === 'en' ? "You need a stable and reliable spouse. Someone with a planned and responsible personality who can firmly protect the family. They value economic stability and like to prepare for the future systematically. This tendency will give great stability to a lifelong companion." :
+                  locale === 'ja' ? "あなたには安定していて信頼できる配偶者がよく合います。計画的で責任感のある性格で、家庭をしっかりと守ってくれる人です。経済的安定を重視し、未来を計画的に準備することを好みます。この傾向は生涯を共にするパートナーに大きな安定感を与えるでしょう。" :
+                  locale === 'zh-CN' ? "你需要一个稳定可靠的配偶。一个有计划和负责任的性格，能够坚定地保护家庭的人。他们重视经济稳定，喜欢系统地规划未来。这种倾向会给终身伴侣带来很大的稳定感。" :
+                  locale === 'zh-TW' ? "你需要一個穩定可靠的配偶。一個有計劃和負責任的性格，能夠堅定地保護家庭的人。他們重視經濟穩定，喜歡系統地規劃未來。這種傾向會給終身伴侶帶來很大的穩定感。" :
+                  locale === 'id' ? "Anda membutuhkan pasangan yang stabil dan dapat dipercaya. Seseorang dengan kepribadian yang terencana dan bertanggung jawab yang dapat melindungi keluarga dengan kuat. Mereka menghargai stabilitas ekonomi dan suka mempersiapkan masa depan secara sistematis. Kecenderungan ini akan memberikan stabilitas besar kepada pendamping seumur hidup." :
+                  "Bạn cần một người bạn đời ổn định và đáng tin cậy. Một người có tính cách có kế hoạch và có trách nhiệm, có thể bảo vệ gia đình một cách vững chắc. Họ coi trọng sự ổn định kinh tế và thích chuẩn bị cho tương lai một cách có hệ thống. Xu hướng này sẽ mang lại sự ổn định lớn cho người bạn đời suốt đời."
+                )}
+                {result.type === 'Type2' && (locale === 'ko' ? 
+                  "당신에게는 열정적이고 활기찬 배우자가 잘 맞습니다. 매일이 설레고 새로운 경험을 추구하는 파트너를 원합니다. 여행, 액티비티, 문화 활동 등 다양한 경험을 함께 나누며 추억을 만드는 사람이 이상적입니다." :
+                  locale === 'en' ? "You need a passionate and energetic spouse. You want a partner who is excited every day and pursues new experiences. Someone who shares various experiences like travel, activities, and cultural activities to create memories together is ideal." :
+                  locale === 'ja' ? "あなたには情熱的で活気のある配偶者がよく合います。毎日がドキドキして新しい経験を追求するパートナーを求めています。旅行、アクティビティ、文化活動など様々な経験を共有し、思い出を作る人が理想的です。" :
+                  locale === 'zh-CN' ? "你需要一个热情充满活力的配偶。你希望一个每天都令人兴奋并追求新体验的伴侣。一个分享旅行、活动、文化活动等各种体验并共同创造回忆的人是理想的。" :
+                  locale === 'zh-TW' ? "你需要一個熱情充滿活力的配偶。你希望一個每天都令人興奮並追求新體驗的伴侶。一個分享旅行、活動、文化活動等各種體驗並共同創造回憶的人是理想的。" :
+                  locale === 'id' ? "Anda membutuhkan pasangan yang penuh gairah dan energik. Anda menginginkan pasangan yang bersemangat setiap hari dan mengejar pengalaman baru. Seseorang yang berbagi berbagai pengalaman seperti perjalanan, aktivitas, dan kegiatan budaya untuk menciptakan kenangan bersama adalah ideal." :
+                  "Bạn cần một người bạn đời đầy đam mê và năng động. Bạn muốn một người bạn đời thú vị mỗi ngày và theo đuổi những trải nghiệm mới. Một người chia sẻ các trải nghiệm đa dạng như du lịch, hoạt động và hoạt động văn hóa để tạo ra kỷ niệm cùng nhau là lý tưởng."
+                )}
+                {result.type === 'Type3' && (locale === 'ko' ? 
+                  "당신에게는 지적이고 사려 깊은 배우자가 잘 맞습니다. 깊이 있는 대화와 정신적 교감을 중시하는 파트너를 원합니다. 책, 예술, 문화 활동 등을 통해 함께 성장하고 지적 자극을 주는 사람이 이상적입니다." :
+                  locale === 'en' ? "You need an intellectual and thoughtful spouse. You want a partner who values deep conversations and spiritual connection. Someone who grows together through books, art, cultural activities and provides intellectual stimulation is ideal." :
+                  locale === 'ja' ? "あなたには知的で思慮深い配偶者がよく合います。深い対話と精神的な交流を重視するパートナーを求めています。本、芸術、文化活動などを通じて一緒に成長し、知的刺激を与える人が理想的です。" :
+                  locale === 'zh-CN' ? "你需要一个智慧深思的配偶。你希望一个重视深度对话和精神交流的伴侣。一个通过书籍、艺术、文化活动等共同成长并提供智力刺激的人是理想的。" :
+                  locale === 'zh-TW' ? "你需要一個智慧深思的配偶。你希望一個重視深度對話和精神交流的伴侶。一個通過書籍、藝術、文化活動等共同成長並提供智力刺激的人是理想的。" :
+                  locale === 'id' ? "Anda membutuhkan pasangan yang intelektual dan bijaksana. Anda menginginkan pasangan yang menghargai percakapan mendalam dan koneksi spiritual. Seseorang yang tumbuh bersama melalui buku, seni, kegiatan budaya dan memberikan stimulasi intelektual adalah ideal." :
+                  "Bạn cần một người bạn đời trí tuệ và sâu sắc. Bạn muốn một người bạn đời coi trọng những cuộc trò chuyện sâu sắc và kết nối tinh thần. Một người cùng phát triển thông qua sách, nghệ thuật, hoạt động văn hóa và mang lại sự kích thích trí tuệ là lý tưởng."
+                )}
+                {result.type === 'Type4' && (locale === 'ko' ? 
+                  "당신에게는 독립적이고 자유로운 배우자가 잘 맞습니다. 서로의 개성과 자유를 존중하는 파트너를 원합니다. 각자의 공간과 시간을 가지면서도 서로를 이해하고 지지하는 사람이 이상적입니다." :
+                  locale === 'en' ? "You need an independent and free spouse. You want a partner who respects each other's individuality and freedom. Someone who has their own space and time while understanding and supporting each other is ideal." :
+                  locale === 'ja' ? "あなたには独立していて自由な配偶者がよく合います。お互いの個性と自由を尊重するパートナーを求めています。それぞれの空間と時間を持ちながらも、お互いを理解し支える人が理想的です。" :
+                  locale === 'zh-CN' ? "你需要一个独立自由的配偶。你希望一个尊重彼此个性和自由的伴侣。一个拥有自己的空间和时间，同时理解和支持彼此的人是理想的。" :
+                  locale === 'zh-TW' ? "你需要一個獨立自由的配偶。你希望一個尊重彼此個性和自由的伴侶。一個擁有自己的空間和時間，同時理解和支持彼此的人是理想的。" :
+                  locale === 'id' ? "Anda membutuhkan pasangan yang mandiri dan bebas. Anda menginginkan pasangan yang menghormati individualitas dan kebebasan masing-masing. Seseorang yang memiliki ruang dan waktu sendiri sambil saling memahami dan mendukung adalah ideal." :
+                  "Bạn cần một người bạn đời độc lập và tự do. Bạn muốn một người bạn đời tôn trọng cá tính và tự do của nhau. Một người có không gian và thời gian riêng trong khi hiểu và hỗ trợ lẫn nhau là lý tưởng."
+                )}
+                {result.type === 'Type5' && (locale === 'ko' ? 
+                  "당신에게는 가정적이고 따뜻한 배우자가 잘 맞습니다. 집에서 함께하는 시간을 소중히 여기고 가족을 최우선으로 하는 파트너를 원합니다. 요리, 육아, 집 꾸미기 등 일상의 행복을 함께 만드는 사람이 이상적입니다." :
+                  locale === 'en' ? "You need a family-oriented and warm spouse. You want a partner who values time spent together at home and prioritizes family. Someone who creates daily happiness together through cooking, parenting, home decoration, etc. is ideal." :
+                  locale === 'ja' ? "あなたには家庭的で温かい配偶者がよく合います。家で一緒に過ごす時間を大切にし、家族を最優先にするパートナーを求めています。料理、育児、家の装飾など、日常の幸せを一緒に作る人が理想的です。" :
+                  locale === 'zh-CN' ? "你需要一个家庭导向温暖的配偶。你希望一个珍惜在家共度时光并优先考虑家庭的伴侣。一个通过烹饪、育儿、家居装饰等共同创造日常幸福的人是理想的。" :
+                  locale === 'zh-TW' ? "你需要一個家庭導向溫暖的配偶。你希望一個珍惜在家共度時光並優先考慮家庭的伴侶。一個通過烹飪、育兒、家居裝飾等共同創造日常幸福的人是理想的。" :
+                  locale === 'id' ? "Anda membutuhkan pasangan yang berorientasi keluarga dan hangat. Anda menginginkan pasangan yang menghargai waktu yang dihabiskan bersama di rumah dan memprioritaskan keluarga. Seseorang yang menciptakan kebahagiaan sehari-hari bersama melalui memasak, mengasuh anak, dekorasi rumah, dll. adalah ideal." :
+                  "Bạn cần một người bạn đời hướng gia đình và ấm áp. Bạn muốn một người bạn đời coi trọng thời gian ở nhà và ưu tiên gia đình. Một người tạo ra hạnh phúc hàng ngày cùng nhau thông qua nấu ăn, nuôi dạy con, trang trí nhà cửa, v.v. là lý tưởng."
+                )}
+                {result.type === 'Type6' && (locale === 'ko' ? 
+                  "당신에게는 성장 지향적이고 야심찬 배우자가 잘 맞습니다. 서로의 목표를 응원하고 함께 발전하는 파트너를 원합니다. 경력, 취미, 개인 발전 등 모든 영역에서 서로를 격려하고 성장시키는 사람이 이상적입니다." :
+                  locale === 'en' ? "You need a growth-oriented and ambitious spouse. You want a partner who supports each other's goals and develops together. Someone who encourages and helps each other grow in all areas like career, hobbies, personal development, etc. is ideal." :
+                  locale === 'ja' ? "あなたには成長志向で野心的な配偶者がよく合います。お互いの目標を応援し、一緒に発展するパートナーを求めています。キャリア、趣味、個人の発展など、すべての分野でお互いを励まし成長させる人が理想的です。" :
+                  locale === 'zh-CN' ? "你需要一个成长导向有野心的配偶。你希望一个支持彼此目标并共同发展的伴侣。一个在职业、爱好、个人发展等所有领域相互鼓励和成长的人是理想的。" :
+                  locale === 'zh-TW' ? "你需要一個成長導向有野心的配偶。你希望一個支持彼此目標並共同發展的伴侶。一個在職業、愛好、個人發展等所有領域相互鼓勵和成長的人是理想的。" :
+                  locale === 'id' ? "Anda membutuhkan pasangan yang berorientasi pertumbuhan dan ambisius. Anda menginginkan pasangan yang mendukung tujuan masing-masing dan berkembang bersama. Seseorang yang saling mendorong dan membantu tumbuh di semua bidang seperti karier, hobi, pengembangan pribadi, dll. adalah ideal." :
+                  "Bạn cần một người bạn đời hướng phát triển và đầy tham vọng. Bạn muốn một người bạn đời hỗ trợ mục tiêu của nhau và phát triển cùng nhau. Một người khuyến khích và giúp nhau phát triển trong tất cả các lĩnh vực như sự nghiệp, sở thích, phát triển cá nhân, v.v. là lý tưởng."
+                )}
+              </p>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ✅ {t('mbti.pros')}
+                  🎯 {t('mbti.characteristics')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultPros.map((pro, index) => (
+                  {resultCharacteristics.split(', ').map((char, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-pink-100 to-rose-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    >
+                      {char}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
+                  💼 {t('mbti.idealJob')}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {resultIdealJob.split(', ').map((job, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-blue-100 to-cyan-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    >
+                      {job}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
+                  🏠 {t('mbti.marriageLife')}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {resultMarriageLife.split(', ').map((life, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {pro[locale as keyof typeof pro] || pro.ko}
+                      {life}
                     </span>
                   ))}
                 </div>
               </div>
-
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ⚠️ {t('mbti.cons')}
+                  ⚠️ {t('mbti.caution')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultCons.map((con, index) => (
+                  {resultCaution.split(', ').map((caution, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {con[locale as keyof typeof con] || con.ko}
+                      {caution}
                     </span>
                   ))}
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                💡 {t('mbti.advice')}
-              </h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                {resultAdvice}
-              </p>
-            </div>
-
+            {/* 궁합 분석 */}
             {result.compatibility && (
-              <>
-                <div className="grid grid-cols-2 gap-3 mb-3">
-                  {result.compatibility.best && (
-                    <div className="bg-white rounded-xl shadow-lg p-4">
-                      <h3 className="text-base font-bold text-gray-800 mb-3">
-                        💖 {t('conflictTest.result.bestMatch')}
-                      </h3>
-                      {typeof result.compatibility.best === 'string' ? (
-                        <p className="text-sm text-gray-700">{result.compatibility.best}</p>
-                      ) : Array.isArray(result.compatibility.best) ? (
-                        <div className="space-y-2">
-                          {result.compatibility.best.map(type => {
-                            const partner = results.find(r => r.type === type);
-                            if (!partner) return null;
-                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                            return (
-                              <div key={type} className="bg-gradient-to-r from-red-100 to-pink-100 rounded-lg p-3">
-                                <div className="flex items-center gap-2.5 mb-1">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
-                                </div>
-                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
+              <div className="mb-3">
+                <div className="grid grid-cols-2 gap-3">
+                  {result.compatibility.best && result.compatibility.best.length > 0 && (
+                    <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-xl p-4 border-l-4 border-red-400">
+                      <div className="space-y-1">
+                        {result.compatibility.best.map(type => {
+                          const partner = spouseResults.find(r => r.type === type);
+                          if (!partner) return null;
+                          const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                          return (
+                            <div key={type}>
+                              <div className="text-base font-bold text-gray-800 mb-1">
+                                💖 {locale === 'ko' ? '최고 궁합' : locale === 'en' ? 'Best Match' : locale === 'ja' ? '最高の相性' : locale === 'zh-CN' ? '最佳匹配' : locale === 'zh-TW' ? '最佳匹配' : locale === 'id' ? 'Kecocokan Terbaik' : 'Kết hợp tốt nhất'}: {partnerTitle}
                               </div>
-                            );
-                          })}
-                        </div>
-                      ) : (
-                        <p className="text-sm text-gray-700">
-                          {typeof result.compatibility.best === 'string' 
-                            ? result.compatibility.best 
-                            : (result.compatibility.best as any)[locale] || (result.compatibility.best as any).ko}
-                        </p>
-                      )}
+                              <div className="text-sm text-gray-700">
+                                {locale === 'ko' ? '깊이 있는 완벽한 소울메이트' : 
+                                 locale === 'en' ? 'Perfect soulmate with deep connection' :
+                                 locale === 'ja' ? '深い完璧なソウルメイト' :
+                                 locale === 'zh-CN' ? '深度完美的灵魂伴侣' :
+                                 locale === 'zh-TW' ? '深度完美的靈魂伴侶' :
+                                 locale === 'id' ? 'Soulmate sempurna dengan koneksi mendalam' :
+                                 'Người bạn đời hoàn hảo với kết nối sâu sắc'}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
                   )}
 
-                  {result.compatibility.good && (
-                    <div className="bg-white rounded-xl shadow-lg p-4">
-                      <h3 className="text-base font-bold text-gray-800 mb-3">
-                        😊 {t('conflictTest.result.goodMatch')}
-                      </h3>
-                      {typeof result.compatibility.good === 'string' ? (
-                        <p className="text-sm text-gray-700">{result.compatibility.good}</p>
-                      ) : Array.isArray(result.compatibility.good) ? (
-                        <div className="space-y-2">
-                          {result.compatibility.good.map(type => {
-                            const partner = results.find(r => r.type === type);
-                            if (!partner) return null;
-                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                            return (
-                              <div key={type} className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg p-3">
-                                <div className="flex items-center gap-2.5 mb-1">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
-                                </div>
-                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
+                  {result.compatibility.good && result.compatibility.good.length > 0 && (
+                    <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4 border-l-4 border-blue-400">
+                      <div className="space-y-1">
+                        {result.compatibility.good.map(type => {
+                          const partner = spouseResults.find(r => r.type === type);
+                          if (!partner) return null;
+                          const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                          return (
+                            <div key={type}>
+                              <div className="text-base font-bold text-gray-800 mb-1">
+                                😊 {locale === 'ko' ? '좋은 궁합' : locale === 'en' ? 'Good Match' : locale === 'ja' ? '良い相性' : locale === 'zh-CN' ? '良好匹配' : locale === 'zh-TW' ? '良好匹配' : locale === 'id' ? 'Kecocokan Baik' : 'Kết hợp tốt'}: {partnerTitle}
                               </div>
-                            );
-                          })}
-                        </div>
-                      ) : (
-                        <p className="text-sm text-gray-700">
-                          {typeof result.compatibility.good === 'string' 
-                            ? result.compatibility.good 
-                            : (result.compatibility.good as any)[locale] || (result.compatibility.good as any).ko}
-                        </p>
-                      )}
+                              <div className="text-sm text-gray-700">
+                                {locale === 'ko' ? '성숙하고 안정적' : 
+                                 locale === 'en' ? 'Mature and stable' :
+                                 locale === 'ja' ? '成熟して安定' :
+                                 locale === 'zh-CN' ? '成熟稳定' :
+                                 locale === 'zh-TW' ? '成熟穩定' :
+                                 locale === 'id' ? 'Matang dan stabil' :
+                                 'Trưởng thành và ổn định'}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {result.compatibility.careful && result.compatibility.careful.length > 0 && (
+                    <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 border-l-4 border-yellow-400">
+                      <div className="space-y-1">
+                        {result.compatibility.careful.map(type => {
+                          const partner = spouseResults.find(r => r.type === type);
+                          if (!partner) return null;
+                          const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                          return (
+                            <div key={type}>
+                              <div className="text-base font-bold text-gray-800 mb-1">
+                                ⚠️ {locale === 'ko' ? '주의 필요' : locale === 'en' ? 'Need Caution' : locale === 'ja' ? '注意必要' : locale === 'zh-CN' ? '需要注意' : locale === 'zh-TW' ? '需要注意' : locale === 'id' ? 'Perlu Hati-hati' : 'Cần thận trọng'}: {partnerTitle}
+                              </div>
+                              <div className="text-sm text-gray-700">
+                                {locale === 'ko' ? '이성 vs 감성 균형 필요' : 
+                                 locale === 'en' ? 'Need balance between reason and emotion' :
+                                 locale === 'ja' ? '理性vs感情のバランスが必要' :
+                                 locale === 'zh-CN' ? '需要理性与情感的平衡' :
+                                 locale === 'zh-TW' ? '需要理性與情感的平衡' :
+                                 locale === 'id' ? 'Perlu keseimbangan antara logika dan emosi' :
+                                 'Cần cân bằng giữa lý trí và cảm xúc'}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {result.compatibility.difficult && result.compatibility.difficult.length > 0 && (
+                    <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-4 border-l-4 border-gray-400">
+                      <div className="space-y-1">
+                        {result.compatibility.difficult.map(type => {
+                          const partner = spouseResults.find(r => r.type === type);
+                          if (!partner) return null;
+                          const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                          return (
+                            <div key={type}>
+                              <div className="text-base font-bold text-gray-800 mb-1">
+                                ❌ {locale === 'ko' ? '어려운 궁합' : locale === 'en' ? 'Difficult Match' : locale === 'ja' ? '難しい相性' : locale === 'zh-CN' ? '困难匹配' : locale === 'zh-TW' ? '困難匹配' : locale === 'id' ? 'Kecocokan Sulit' : 'Kết hợp khó'}: {partnerTitle}
+                              </div>
+                              <div className="text-sm text-gray-700">
+                                {locale === 'ko' ? '지적 vs 실용 온도차' : 
+                                 locale === 'en' ? 'Intellectual vs practical temperature difference' :
+                                 locale === 'ja' ? '知的vs実用的温度差' :
+                                 locale === 'zh-CN' ? '智慧与实用的温差' :
+                                 locale === 'zh-TW' ? '智慧與實用的溫差' :
+                                 locale === 'id' ? 'Perbedaan suhu intelektual vs praktis' :
+                                 'Sự khác biệt nhiệt độ giữa trí tuệ và thực tế'}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
                   )}
                 </div>
-
-                <div className="grid grid-cols-2 gap-3 mb-3">
-                  {result.compatibility.careful && (
-                    <div className="bg-white rounded-xl shadow-lg p-4">
-                      <h3 className="text-base font-bold text-gray-800 mb-3">
-                        ⚠️ {t('conflictTest.result.carefulMatch')}
-                      </h3>
-                      {typeof result.compatibility.careful === 'string' ? (
-                        <p className="text-sm text-gray-700">{result.compatibility.careful}</p>
-                      ) : Array.isArray(result.compatibility.careful) ? (
-                        <div className="space-y-2">
-                          {result.compatibility.careful.map(type => {
-                            const partner = results.find(r => r.type === type);
-                            if (!partner) return null;
-                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                            return (
-                              <div key={type} className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg p-3">
-                                <div className="flex items-center gap-2.5 mb-1">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
-                                </div>
-                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      ) : (
-                        <p className="text-sm text-gray-700">
-                          {typeof result.compatibility.careful === 'string' 
-                            ? result.compatibility.careful 
-                            : (result.compatibility.careful as any)[locale] || (result.compatibility.careful as any).ko}
-                        </p>
-                      )}
-                    </div>
-                  )}
-
-                  {result.compatibility.difficult && (
-                    <div className="bg-white rounded-xl shadow-lg p-4">
-                      <h3 className="text-base font-bold text-gray-800 mb-3">
-                        ❌ {t('conflictTest.result.difficultMatch')}
-                      </h3>
-                      {typeof result.compatibility.difficult === 'string' ? (
-                        <p className="text-sm text-gray-700">{result.compatibility.difficult}</p>
-                      ) : Array.isArray(result.compatibility.difficult) ? (
-                        <div className="space-y-2">
-                          {result.compatibility.difficult.map(type => {
-                            const partner = results.find(r => r.type === type);
-                            if (!partner) return null;
-                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                            return (
-                              <div key={type} className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg p-3">
-                                <div className="flex items-center gap-2.5 mb-1">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
-                                </div>
-                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      ) : (
-                        <p className="text-sm text-gray-700">
-                          {typeof result.compatibility.difficult === 'string' 
-                            ? result.compatibility.difficult 
-                            : (result.compatibility.difficult as any)[locale] || (result.compatibility.difficult as any).ko}
-                        </p>
-                      )}
-                    </div>
-                  )}
-                </div>
-              </>
+              </div>
             )}
 
             <div className="mt-8 mb-6 px-4">
@@ -1064,6 +1077,7 @@ export default function ConflictTestClient({
     );
   }
 
+  // 진행 화면
   // 질문 화면
   const question = shuffledQuestions[currentQuestion];
   const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;

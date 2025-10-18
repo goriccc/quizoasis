@@ -41,6 +41,19 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "spouseTest": {
+    "startMessage": {
+      "title": "「What type of person would be good to spend your life with?」",
+      "line1": "Love and marriage are different.",
+      "line2": "Do you want exciting love? Or do you want a comfortable companion?",
+      "line3": "Do you want to explore the world together? Or do you want to build a warm family?",
+      "line4": "Your ideal spouse type depends on your values, lifestyle, and future plans.",
+      "line5": "Find the spouse type that suits you best!",
+      "line6": "Recommended for those seriously thinking about marriage 💍",
+      "line7": "Takes only 4 minutes! Please answer carefully ✨"
+    },
+    "resultShareMessage": "My ideal spouse is {type}! What type are you? Let's check before marriage 💍"
+  },
   "mbti": {
     "startTest": "Start Test",
     "totalParticipants": "{count} people participated",
@@ -49,6 +62,9 @@
     "progress": "Progress",
     "yourResult": "Your Result",
     "characteristics": "Characteristics",
+    "idealJob": "Ideal Job",
+    "marriageLife": "Marriage Life",
+    "caution": "Caution",
     "copingMethods": "Coping Methods",
     "retakeTest": "Retake Test",
     "otherTests": "Other Tests",

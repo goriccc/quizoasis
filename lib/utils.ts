@@ -7,9 +7,20 @@ import { DBTest, QuizTest } from './types';
  * @param locale 언어
  * @returns 포맷된 문자열 (예: "3.2만", "3.2K")
  */
-export function formatPlayCount(count: number, locale: Locale): string {
-  if (count < 1000) {
-    return count.toString();
+export function formatPlayCount(count: number | undefined | null, locale: Locale): string {
+  // count가 undefined, null, NaN인 경우 처리
+  if (count == null || isNaN(count) || count < 0) {
+    return '0';
+  }
+  
+  // 숫자로 변환
+  const numCount = Number(count);
+  if (isNaN(numCount) || numCount < 0) {
+    return '0';
+  }
+  
+  if (numCount < 1000) {
+    return numCount.toString();
   }
 
   const suffixes: Record<Locale, { thousand: string; tenThousand: string }> = {
@@ -22,16 +33,18 @@ export function formatPlayCount(count: number, locale: Locale): string {
     vi: { thousand: 'N', tenThousand: 'Tr' },
   };
 
-  const { thousand, tenThousand } = suffixes[locale];
+  // 안전한 locale 처리 - 정의되지 않은 locale의 경우 기본값 사용
+  const suffixData = suffixes[locale] || suffixes.ko;
+  const { thousand, tenThousand } = suffixData;
 
   // 만 단위 (10,000)
-  if (count >= 10000) {
-    const value = count / 10000;
+  if (numCount >= 10000) {
+    const value = numCount / 10000;
     return value % 1 === 0 ? `${value}${tenThousand}` : `${value.toFixed(1)}${tenThousand}`;
   }
 
   // 천 단위 (1,000)
-  const value = count / 1000;
+  const value = numCount / 1000;
   return value % 1 === 0 ? `${value}${thousand}` : `${value.toFixed(1)}${thousand}`;
 }
 
@@ -95,13 +108,15 @@ export function convertDBTestToQuizTest(dbTest: DBTest, locale: Locale): QuizTes
     tagsMultilingual = dbTest.tags;
   }
 
+  const playCount = dbTest.play_count || 0;
+
   return {
     id: dbTest.id,
     slug: dbTest.slug,
     title: dbTest.title[locale] || dbTest.title.ko || '',
     description: dbTest.description?.[locale] || dbTest.description?.ko,
     thumbnail: dbTest.thumbnail,
-    playCount: dbTest.play_count,
+    playCount: playCount,
     tags,
     createdAt: dbTest.created_at,
   };

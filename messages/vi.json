@@ -41,6 +41,19 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "spouseTest": {
+    "startMessage": {
+      "title": "「Người sẽ cùng bạn trải qua cuộc đời, kiểu nào sẽ tốt?」",
+      "line1": "Tình yêu và hôn nhân là khác nhau.",
+      "line2": "Bạn có muốn tình yêu thú vị? Hay bạn muốn người bạn đời thoải mái?",
+      "line3": "Bạn có muốn cùng khám phá thế giới? Hay bạn muốn xây dựng gia đình ấm áp?",
+      "line4": "Kiểu người bạn đời lý tưởng của bạn phụ thuộc vào giá trị, lối sống và kế hoạch tương lai của bạn.",
+      "line5": "Tìm kiếm kiểu người bạn đời phù hợp nhất với bạn!",
+      "line6": "Được khuyến nghị cho những người nghiêm túc suy nghĩ về hôn nhân 💍",
+      "line7": "Chỉ mất 4 phút! Hãy trả lời cẩn thận ✨"
+    },
+    "resultShareMessage": "Người bạn đời lý tưởng của tôi là {type}! Bạn thuộc kiểu nào? Hãy thử trước khi kết hôn 💍"
+  },
   "mbti": {
     "startTest": "Bắt đầu kiểm tra",
     "totalParticipants": "Tổng cộng {count} người đã tham gia",
@@ -49,6 +62,9 @@
     "progress": "Tiến trình",
     "yourResult": "Kết quả của bạn",
     "characteristics": "Đặc điểm",
+    "idealJob": "Nghề nghiệp lý tưởng",
+    "marriageLife": "Cuộc sống hôn nhân",
+    "caution": "Lưu ý",
     "copingMethods": "Đề xuất đối phó",
     "retakeTest": "Làm lại",
     "otherTests": "Xem các bài kiểm tra khác",

@@ -7,13 +7,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 
 interface FlirtingTestClientProps {
-  locale: string;
+  locale: Locale;
   slug: string;
   title: string;
   description: string;
@@ -428,7 +429,7 @@ export default function FlirtingTestClient({
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as any) })}
+              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -522,7 +523,7 @@ export default function FlirtingTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount || 0, locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -962,7 +963,7 @@ export default function FlirtingTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount || 0, locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -999,7 +1000,7 @@ export default function FlirtingTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount || 0, locale)}</span>
                             </div>
                           </div>
                         </div>

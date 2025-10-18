@@ -6,6 +6,7 @@ import { getTestBySlug } from '@/lib/supabase';
 import { getTestData } from '@/lib/mbtiData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
+import { Locale } from '@/i18n';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const MBTITestClient = dynamic(() => import('@/components/MBTITestClient'), {
@@ -39,6 +40,9 @@ const CrushTestClient = dynamic(() => import('@/components/CrushTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const FlirtingTestClient = dynamic(() => import('@/components/FlirtingTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const SpouseTestClient = dynamic(() => import('@/components/SpouseTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -394,7 +398,7 @@ export default async function TestPage({ params }: Props) {
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
-    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : DatingTestClient) :
+    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : DatingTestClient) :
     MBTITestClient;
 
   return (
@@ -412,7 +416,7 @@ export default async function TestPage({ params }: Props) {
       />
       
       <TestClient
-        locale={locale}
+        locale={locale as Locale}
         slug={slug}
         title={title}
         description={description}

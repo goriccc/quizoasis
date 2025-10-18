@@ -41,6 +41,19 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "spouseTest": {
+    "startMessage": {
+      "title": "「Orang yang akan menghabiskan hidup bersama, tipe apa yang baik?」",
+      "line1": "Cinta dan pernikahan berbeda.",
+      "line2": "Apakah Anda ingin cinta yang mendebarkan? Atau Anda ingin pendamping yang nyaman?",
+      "line3": "Apakah Anda ingin menjelajahi dunia bersama? Atau Anda ingin membangun keluarga yang hangat?",
+      "line4": "Tipe pasangan ideal Anda tergantung pada nilai-nilai, gaya hidup, dan rencana masa depan Anda.",
+      "line5": "Temukan tipe pasangan yang paling cocok untuk Anda!",
+      "line6": "Direkomendasikan untuk mereka yang serius memikirkan pernikahan 💍",
+      "line7": "Hanya butuh 4 menit! Silakan jawab dengan hati-hati ✨"
+    },
+    "resultShareMessage": "Pasangan ideal saya adalah {type}! Tipe apa Anda? Pastikan coba sebelum menikah 💍"
+  },
   "mbti": {
     "startTest": "Mulai Tes",
     "totalParticipants": "Total {count} orang telah berpartisipasi",
@@ -49,6 +62,9 @@
     "progress": "Kemajuan",
     "yourResult": "Hasil Anda",
     "characteristics": "Karakteristik",
+    "idealJob": "Pekerjaan Ideal",
+    "marriageLife": "Kehidupan Pernikahan",
+    "caution": "Perhatian",
     "copingMethods": "Saran Penanganan",
     "retakeTest": "Ulangi Tes",
     "otherTests": "Lihat Tes Lainnya",
