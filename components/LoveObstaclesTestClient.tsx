@@ -875,10 +875,15 @@ export default function LoveObstaclesTestClient({
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultSymptoms = (result.symptoms[locale as keyof typeof result.symptoms] || result.symptoms.ko).split(', ');
-    const resultPattern = (result.patterns[locale as keyof typeof result.patterns] || result.patterns.ko).split(', ');
-    const resultRootCause = (result.causes[locale as keyof typeof result.causes] || result.causes.ko).split(', ');
-    const resultSolution = (result.solutions[locale as keyof typeof result.solutions] || result.solutions.ko).split(', ');
+    // 다국어 쉼표 처리: 영어 쉼표, 일본어 쉼표, 중국어 쉼표 모두 지원
+    const splitByCommas = (text: string) => {
+      return text.split(/[, ，、]/).map(item => item.trim()).filter(item => item.length > 0);
+    };
+    
+    const resultSymptoms = splitByCommas(result.symptoms[locale as keyof typeof result.symptoms] || result.symptoms.ko);
+    const resultPattern = splitByCommas(result.patterns[locale as keyof typeof result.patterns] || result.patterns.ko);
+    const resultRootCause = splitByCommas(result.causes[locale as keyof typeof result.causes] || result.causes.ko);
+    const resultSolution = splitByCommas(result.solutions[locale as keyof typeof result.solutions] || result.solutions.ko);
     const resultAdvice = result.advice[locale as keyof typeof result.advice] || result.advice.ko;
 
     return (
