@@ -211,4 +211,173 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 [ ] **File size manageable for the operation?**
 [ ] **Task broken down into small, manageable steps?**
 
+## SQL Database Integration (CRITICAL)
+
+### 21. SQL File Structure Requirements
+❌ DON'T:
+- Add `created_at` and `updated_at` fields in INSERT statements
+- Use `NOW()` functions in SQL INSERT statements
+- Include timestamp fields that are auto-managed by database
+✅ DO:
+- Follow existing SQL file patterns exactly
+- Use only essential fields: slug, title, description, thumbnail, type, category, tags, play_count
+- Set play_count to 0 for new tests
+- Match the exact structure of other test SQL files
+
+### 22. SQL File Creation Checklist
+✅ DO verify these fields are included:
+- slug: unique test identifier
+- title: multilingual JSON object
+- description: multilingual JSON object  
+- thumbnail: image filename
+- type: 'dating' for relationship tests
+- category: 'love' for relationship tests
+- tags: multilingual array object
+- play_count: 0 (initial value)
+
+### 23. SQL File Naming Convention
+✅ DO use this pattern: `insert-{test-name}-test.sql`
+Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
+
+## UI Consistency Requirements (CRITICAL)
+
+### 24. UI Component Copy Requirements
+❌ DON'T:
+- Create new UI components from scratch when copying existing tests
+- Modify button styles, colors, or layouts without explicit user request
+- Change CSS classes or styling patterns from the source template
+- Ignore existing UI patterns and create different visual designs
+✅ DO:
+- Copy the EXACT UI components from existing tests (e.g., ConflictTestClient.tsx)
+- Maintain identical button styles, colors, gradients, and layouts
+- Preserve all CSS classes, spacing, and visual hierarchy
+- Ensure UI consistency across all test components
+- Only modify content (text, data) while keeping UI structure identical
+
+### 25. UI Consistency Checklist
+✅ DO verify these elements match the source template:
+- Start button styling and colors
+- Progress bar design and animation
+- Loading spinner appearance and size
+- Question option button styles and colors
+- Result view button design
+- Share button styling and layout
+- Retake/Other tests button arrangement
+- Overall background gradients and colors
+- All spacing, padding, and margins
+- Font sizes, weights, and text styling
+
+### 26. UI Copy Process
+✅ DO follow this exact process:
+1. Copy the entire source component file (e.g., ConflictTestClient.tsx)
+2. Rename the component and file
+3. Update imports and data references
+4. Modify ONLY the content (questions, results, text)
+5. Keep ALL UI styling, CSS classes, and layout identical
+6. Test to ensure visual consistency with source template
+
+## Multilingual UI Text Localization (CRITICAL)
+
+### 27. Complete UI Text Localization
+❌ DON'T:
+- Leave hardcoded UI texts in components without multilingual support
+- Forget to translate button texts, section headers, and status messages
+- Miss UI elements like "결과 분석 중...", "진행률", "총 X명이 참여했어요!"
+- Ignore social sharing button texts and result screen elements
+✅ DO:
+- Translate ALL UI texts including buttons, headers, status messages
+- Use conditional rendering: {locale === 'ko' && 'Korean Text'}
+- Cover all UI elements: start screen, progress, loading, results, sharing
+- Test all languages to ensure complete localization
+
+### 28. UI Text Localization Checklist
+✅ DO verify these elements are translated:
+- Start screen: "테스트 시작", "친구와 함께 해보기", "총 X명이 참여했어요!"
+- Progress screen: "진행률", "결과 분석 중..."
+- Result screen: "당신의 결과", "🎯 특징", "✅ 장점", "⚠️ 단점", "💡 조언"
+- Compatibility: "💖 최고 궁합", "😊 좋은 궁합", "⚠️ 주의 필요", "❌ 어려운 궁합"
+- Action buttons: "결과 공유하기", "다시 테스트하기", "다른 테스트 보기"
+- Section headers: "🔥 요즘 인기 테스트 추천 톱5", "없음"
+
+### 29. Result Title Emoji Management
+❌ DON'T:
+- Include emojis in result title fields that should be clean text
+- Mix emojis in titles with separate emoji fields
+✅ DO:
+- Keep result titles clean without emojis (e.g., "극한 질투형" not "극한 질투형 🔥")
+- Use separate emoji field for display purposes
+- Remove emojis from all language title fields consistently
+
+### 30. React Rendering Error Prevention
+❌ DON'T:
+- Pass Record<string, string> objects directly as React children
+- Render multilingual objects without extracting locale-specific strings
+- Use partner.title directly in compatibility sections
+✅ DO:
+- Always extract strings: typeof field === 'string' ? field : field[locale] || field.ko
+- Use proper type checking for multilingual data
+- Ensure all rendered content is string type, not object type
+
+### 31. Multilingual Development Process
+✅ DO follow this complete process:
+1. Create data structure with Record<string, string> from the beginning
+2. Implement all UI text localization during initial development
+3. Test all languages during development, not after completion
+4. Use consistent patterns for all multilingual text handling
+5. Verify no hardcoded strings remain in components
+6. Test React rendering with all language combinations
+
+## TypeScript Build Error Prevention (CRITICAL)
+
+### 32. TypeScript Index Signature Errors
+❌ DON'T:
+- Use string variables to index objects without proper type checking
+- Access multilingual objects with dynamic locale strings without type assertions
+- Ignore TypeScript errors during development that become build failures
+✅ DO:
+- Use type assertions: `obj[locale as keyof typeof obj]`
+- Use proper type checking: `typeof field === 'string' ? field : field[locale] || field.ko`
+- Fix all TypeScript errors before attempting production builds
+- Test builds frequently during development
+
+### 33. Build Process Validation
+❌ DON'T:
+- Skip build validation before deployment
+- Ignore TypeScript compilation errors
+- Deploy without successful production build
+✅ DO:
+- Always run `npm run build` before deployment
+- Fix all TypeScript errors, not just warnings
+- Validate production build locally before pushing
+- Use build success as deployment gate
+
+### 34. Development Server Cache Issues
+❌ DON'T:
+- Ignore "Cannot find module" errors in development
+- Continue development with corrupted cache
+- Skip cache clearing when module errors occur
+✅ DO:
+- Kill all Node processes: `taskkill /F /IM node.exe`
+- Clear Next.js cache: `Remove-Item -Path .next -Recurse -Force`
+- Clear node modules cache: `Remove-Item -Path node_modules\.cache -Recurse -Force`
+- Restart development server after cache clearing
+
+### 35. TypeScript Error Resolution Process
+✅ DO follow this exact process when TypeScript errors occur:
+1. Identify the specific TypeScript error and location
+2. Use proper type assertions for multilingual objects
+3. Add explicit type annotations for function parameters
+4. Test build after each fix
+5. Clear cache if module errors persist
+6. Restart development server if needed
+
+### 36. Build Error Prevention Checklist
+✅ DO verify these before deployment:
+- [ ] All TypeScript errors resolved
+- [ ] Production build successful (`npm run build`)
+- [ ] No "Cannot find module" errors
+- [ ] All multilingual type assertions working
+- [ ] Development server running without errors
+- [ ] Cache cleared if module errors occurred
+
 These lessons ensure that future test development will have proper multilingual support from the beginning, avoiding the need for extensive refactoring later.
