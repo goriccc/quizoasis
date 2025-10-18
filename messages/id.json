@@ -284,6 +284,26 @@
       "totalParticipants": "Total Peserta",
       "shareWithFriends": "Bagikan dengan Teman"
     },
+    "loveObstaclesTest": {
+      "startMessage": {
+        "title": "「Mengapa cinta tidak berhasil? Mari cari tahu alasannya」",
+        "line1": "Ada pertemuan tapi tidak berkembang?",
+        "line2": "Pacaran tapi tidak bertahan lama? Merasa canggung di depan orang yang disukai?",
+        "line3": "Ada alasan mengapa cinta tidak berhasil.",
+        "line4": "Apakah karena perfeksionisme berlebihan? Harga diri rendah? Luka masa lalu? Harapan terlalu tinggi?",
+        "line5": "Kami akan menemukan secara akurat faktor-faktor yang menghalangi kehidupan cinta Anda yang mungkin tidak Anda sadari.",
+        "line6": "Perlu tahu masalahnya untuk bisa menyelesaikannya 💪",
+        "line7": "Hanya butuh 3 menit! Silakan jawab dengan jujur ✨"
+      },
+      "resultShareMessage": "Hambatan cinta saya adalah {type}! Apa masalah Anda? Mari coba bersama 😂💔",
+      "result": {
+        "symptoms": "Gejala Utama",
+        "patterns": "Pola Cinta", 
+        "causes": "Penyebab Dasar",
+        "solutions": "Solusi",
+        "advice": "Nasihat"
+      }
+    },
     "recommendations": {
       "similarTests": "Tes Serupa",
       "popularTests": "Tes Populer"

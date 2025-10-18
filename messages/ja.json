@@ -284,6 +284,26 @@
       "totalParticipants": "総参加者",
       "shareWithFriends": "友達と一緒にやってみる"
     },
+    "loveObstaclesTest": {
+      "startMessage": {
+        "title": "「なぜ恋愛がうまくいかないの？本当の理由を見つけましょう」",
+        "line1": "出会いはあるのに発展しない？",
+        "line2": "恋愛はするけど長続きしない？好きな人の前でぎこちない？",
+        "line3": "恋愛がうまくいかないのには理由があります。",
+        "line4": "過度な完璧主義のせい？自尊心が低いから？過去の傷のせい？理想が高すぎるから？",
+        "line5": "あなたも気づかないうちに恋愛を妨げている要素を正確に見つけます。",
+        "line6": "問題を知らなければ解決できません 💪",
+        "line7": "所要時間わずか3分！正直に答えてください ✨"
+      },
+      "resultShareMessage": "私の恋愛障害は{type}！あなたの問題は何？一緒にやってみよう 😂💔",
+      "result": {
+        "symptoms": "主な症状",
+        "patterns": "恋愛パターン", 
+        "causes": "根本原因",
+        "solutions": "解決方法",
+        "advice": "アドバイス"
+      }
+    },
     "recommendations": {
       "similarTests": "類似の他のテスト",
       "popularTests": "最近人気のテスト"

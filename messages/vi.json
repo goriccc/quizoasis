@@ -284,6 +284,26 @@
       "totalParticipants": "Tổng người tham gia",
       "shareWithFriends": "Chia sẻ với bạn bè"
     },
+    "loveObstaclesTest": {
+      "startMessage": {
+        "title": "「Tại sao tình yêu mãi không thành? Hãy tìm lý do thật sự」",
+        "line1": "Có gặp gỡ nhưng không tiến triển?",
+        "line2": "Có hẹn hò nhưng không lâu dài? Cảm thấy ngượng ngùng trước người mình thích?",
+        "line3": "Tình yêu không thành công có lý do.",
+        "line4": "Có phải do chủ nghĩa hoàn hảo quá mức? Tự ti? Vết thương quá khứ? Kỳ vọng quá cao?",
+        "line5": "Chúng tôi sẽ tìm ra chính xác những yếu tố cản trở tình yêu mà bạn có thể không nhận ra.",
+        "line6": "Cần biết vấn đề mới giải quyết được 💪",
+        "line7": "Chỉ mất 3 phút! Hãy trả lời thành thật ✨"
+      },
+      "resultShareMessage": "Trở ngại tình yêu của tôi là {type}! Vấn đề của bạn là gì? Hãy thử cùng nhau 😂💔",
+      "result": {
+        "symptoms": "Triệu chứng chính",
+        "patterns": "Mô hình tình yêu", 
+        "causes": "Nguyên nhân gốc",
+        "solutions": "Giải pháp",
+        "advice": "Lời khuyên"
+      }
+    },
     "recommendations": {
       "similarTests": "Bài kiểm tra tương tự",
       "popularTests": "Bài kiểm tra phổ biến"

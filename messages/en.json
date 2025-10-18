@@ -284,6 +284,50 @@
       "totalParticipants": "Total Participants",
       "shareWithFriends": "Share with Friends"
     },
+    "loveObstaclesTest": {
+      "startMessage": {
+        "title": "「Why can't I find love? Let's find the real reason」",
+        "line1": "Do you meet people but relationships don't progress?",
+        "line2": "Do you date but relationships don't last? Do you feel awkward around people you like?",
+        "line3": "There's a reason why love isn't working out.",
+        "line4": "Is it excessive perfectionism? Low self-esteem? Past wounds? Unrealistic expectations?",
+        "line5": "We'll accurately identify the factors blocking your love life that you might not even realize.",
+        "line6": "You need to know the problem to solve it 💪",
+        "line7": "Takes only 3 minutes! Please answer honestly ✨"
+      },
+      "resultShareMessage": "My love obstacle is {type}! What's your problem? Let's try together 😂💔",
+      "result": {
+        "symptoms": "Main Symptoms",
+        "patterns": "Love Patterns", 
+        "causes": "Root Causes",
+        "solutions": "Solutions",
+        "advice": "Advice"
+      },
+      "questions": {
+        "q1": "When you meet someone you like, what's your first thought?",
+        "q2": "When your date makes a mistake?",
+        "q3": "When love doesn't work out, what do you think?",
+        "q4": "What do you expect from your partner?",
+        "q5": "When you receive a confession, why do you hesitate?",
+        "q6": "How are you in the early stages of a relationship?",
+        "q7": "When you fight, what's your pattern?",
+        "q8": "What's the hardest part about love?",
+        "q9": "When your partner expresses disappointment?",
+        "q10": "What do you often think about in a relationship?",
+        "q11": "How do you react after a breakup?",
+        "q12": "What worries you most before starting a relationship?"
+      },
+      "answers": {
+        "q1a1": "\"Am I really good enough for them?\"",
+        "q1a2": "\"What if I get hurt again...\"",
+        "q1a3": "\"I need to prepare perfectly before approaching\"",
+        "q1a4": "\"Will it work realistically? What about conditions...\"",
+        "q2a1": "\"This is fine\" and let it go generously",
+        "q2a2": "\"This is a bit...\" it bothers me",
+        "q2a3": "\"Are you okay?\" I check their feelings first",
+        "q2a4": "\"How about doing it this way next time?\" I give advice"
+      }
+    },
     "recommendations": {
       "similarTests": "Similar Tests",
       "popularTests": "Popular Tests"

@@ -42,7 +42,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Sengaja menunggu sebentar sebelum membalas",
           vi: "Cố tình đợi một chút trước khi trả lời"
         },
-        scores: { Type1: 5, Type2: 4, Type3: 2 }
+        scores: { Type1: 5, Type2: 3 }
       },
       {
         text: {
@@ -54,7 +54,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Segera periksa dan balas langsung",
           vi: "Kiểm tra ngay lập tức và trả lời ngay"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1 }
+        scores: { Type4: 4, Type6: 3 }
       }
     ]
   },
@@ -80,7 +80,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Berpura-pura tertarik tapi juga berpura-pura keren",
           vi: "Giả vờ quan tâm nhưng cũng giả vờ mát mẻ"
         },
-        scores: { Type1: 5, Type2: 4, Type3: 2 }
+        scores: { Type1: 5, Type2: 3 }
       },
       {
         text: {
@@ -92,7 +92,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Ketertarikan saya terlalu jelas untuk disembunyikan",
           vi: "Sự quan tâm của tôi quá rõ ràng không thể che giấu"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1 }
+        scores: { Type4: 4, Type6: 3 }
       }
     ]
   },
@@ -130,7 +130,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "\"Kenapa tidak dibaca?\" Terus memeriksa",
           vi: "\"Tại sao không đọc?\" Liên tục kiểm tra"
         },
-        scores: { Type5: 6, Type4: 4, Type6: 2 }
+        scores: { Type4: 2, Type5: 8, Type6: 1 }
       }
     ]
   },
@@ -156,7 +156,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Samar-samar, agak jelas tapi tidak jelas",
           vi: "Mơ hồ, có vẻ rõ ràng nhưng không rõ ràng"
         },
-        scores: { Type1: 5, Type2: 4, Type3: 2 }
+        scores: { Type1: 5, Type2: 3 }
       },
       {
         text: {
@@ -168,7 +168,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Terang-terangan, tidak bisa disembunyikan",
           vi: "Lộ liễu, không thể che giấu"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1 }
+        scores: { Type4: 4, Type6: 3 }
       }
     ]
   },
@@ -194,7 +194,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "\"Kalau ada waktu kita ketemu\" Santai",
           vi: "\"Khi nào có thời gian thì gặp nhau\" Nhẹ nhàng"
         },
-        scores: { Type1: 5, Type2: 4, Type3: 2 }
+        scores: { Type1: 5, Type2: 3 }
       },
       {
         text: {
@@ -206,7 +206,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "\"Kapan mau ketemu?\" Aktif",
           vi: "\"Khi nào muốn gặp?\" Tích cực"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1 }
+        scores: { Type4: 4, Type6: 3 }
       }
     ]
   },
@@ -232,7 +232,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Periksa sesekali tanpa terlihat",
           vi: "Kiểm tra thỉnh thoảng mà không lộ"
         },
-        scores: { Type1: 5, Type2: 4, Type3: 2 }
+        scores: { Type1: 5, Type2: 3 }
       },
       {
         text: {
@@ -244,7 +244,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Segera periksa saat diposting dan like",
           vi: "Kiểm tra ngay khi đăng và thích"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1 }
+        scores: { Type4: 4, Type6: 3 }
       }
     ]
   },
@@ -282,7 +282,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "\"Siapa?\" Menunjukkan tanda cemburu",
           vi: "\"Ai?\" Thể hiện dấu hiệu ghen tuông"
         },
-        scores: { Type5: 6, Type4: 4, Type6: 2 }
+        scores: { Type4: 2, Type6: 8, Type5: 1 }
       }
     ]
   },
@@ -308,7 +308,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Mengontrol dengan moderat, tarik dan dorong",
           vi: "Điều chỉnh vừa phải, kéo và đẩy"
         },
-        scores: { Type1: 5, Type2: 4, Type3: 2 }
+        scores: { Type1: 5, Type2: 3 }
       },
       {
         text: {
@@ -320,7 +320,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Hampir setiap hari menghubungi duluan",
           vi: "Gần như mỗi ngày đều liên lạc trước"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1 }
+        scores: { Type4: 4, Type6: 3 }
       }
     ]
   },
@@ -396,7 +396,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Ingin membuatnya jelas dengan cepat",
           vi: "Muốn làm rõ nhanh chóng"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1 }
+        scores: { Type4: 4, Type6: 4, Type3: 2 }
       }
     ]
   },
@@ -434,7 +434,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "\"Oke ㅠㅠ\" Mengekspresikan kekecewaan",
           vi: "\"Được rồi ㅠㅠ\" Thể hiện sự thất vọng"
         },
-        scores: { Type5: 6, Type4: 4, Type6: 2 }
+        scores: { Type4: 2, Type5: 8, Type3: 3 }
       }
     ]
   },
@@ -472,7 +472,7 @@ export const flirtingQuestions: FlirtingQuestion[] = [
           id: "Cepat membangun hubungan yang pasti",
           vi: "Nhanh chóng thiết lập mối quan hệ xác định"
         },
-        scores: { Type6: 5, Type4: 4, Type5: 1, Type3: 1 }
+        scores: { Type4: 4, Type6: 4, Type3: 2 }
       }
     ]
   }
@@ -886,6 +886,7 @@ export const flirtingResults: FlirtingResult[] = [
 export function calculateFlirtingResult(answers: any[]): string {
   const scores = { Type1: 0, Type2: 0, Type3: 0, Type4: 0, Type5: 0, Type6: 0 };
   
+  // 기본 점수 계산
   answers.forEach(answer => {
     if (answer && typeof answer === 'object') {
       Object.keys(answer).forEach(type => {
@@ -895,6 +896,25 @@ export function calculateFlirtingResult(answers: any[]): string {
       });
     }
   });
+  
+  // 특별 보너스 계산
+  // 조건 1: A를 5-7개 AND B를 5-7개 선택 시 → Type3(+30점)
+  const aCount = answers.filter(answer => answer && answer.Type1 > 0).length;
+  const bCount = answers.filter(answer => answer && answer.Type4 > 0).length;
+  
+  if (aCount >= 5 && aCount <= 7 && bCount >= 5 && bCount <= 7) {
+    scores.Type3 += 30;
+  }
+  
+  // 조건 2: Q3, Q9, Q11 중 B를 2개 이상 선택 시 → Type5(+20점)
+  const q3B = answers[2] && answers[2].Type5 > 0;
+  const q9B = answers[8] && answers[8].Type5 > 0;
+  const q11B = answers[10] && answers[10].Type5 > 0;
+  
+  const bCountInSpecial = [q3B, q9B, q11B].filter(Boolean).length;
+  if (bCountInSpecial >= 2) {
+    scores.Type5 += 20;
+  }
   
   // 최고 점수의 타입 반환
   const maxScore = Math.max(...Object.values(scores));

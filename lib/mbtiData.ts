@@ -9,6 +9,7 @@ import { idealTypeQuestions, idealTypeResults } from './idealTypeData';
 import { crushQuestions, crushResults } from './crushData';
 import { flirtingQuestions, flirtingResults } from './flirtingData';
 import { spouseQuestions, spouseResults } from './spouseData';
+import { loveObstacleQuestions, loveObstacleResults } from './loveObstaclesData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -969,6 +970,10 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'ideal-spouse-type': {
     questions: spouseQuestions,
     results: spouseResults
+  },
+  'love-obstacles': {
+    questions: loveObstacleQuestions,
+    results: loveObstacleResults
   }
 };
 
