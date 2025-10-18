@@ -310,7 +310,19 @@ export default function LoveObstaclesTestClient({
     if (!result) return;
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔\n\n${window.location.href}`;
+    
+    // 다국어 공유 메시지
+    const shareMessages = {
+      ko: `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`,
+      en: `My love obstacle is ${resultTitle}! What's your problem? Let's try together 😂💔`,
+      ja: `私の恋愛障害は${resultTitle}！あなたの問題は何？一緒にやってみよう 😂💔`,
+      'zh-CN': `我的恋爱障碍是${resultTitle}！你的问题是什么？一起试试吧 😂💔`,
+      'zh-TW': `我的戀愛障礙是${resultTitle}！你的問題是什麼？一起試試吧 😂💔`,
+      vi: `Trở ngại tình yêu của tôi là ${resultTitle}! Vấn đề của bạn là gì? Cùng thử nhé 😂💔`,
+      id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
+    };
+    
+    const shareText = `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${window.location.href}`;
     
     if (navigator.share) {
       try {
@@ -323,10 +335,28 @@ export default function LoveObstaclesTestClient({
     } else {
       try {
         await navigator.clipboard.writeText(shareText);
-        alert('결과가 클립보드에 복사되었습니다!');
+        const copyMessages = {
+          ko: '결과가 클립보드에 복사되었습니다!',
+          en: 'Result copied to clipboard!',
+          ja: '結果がクリップボードにコピーされました！',
+          'zh-CN': '结果已复制到剪贴板！',
+          'zh-TW': '結果已複製到剪貼板！',
+          vi: 'Kết quả đã được sao chép vào clipboard!',
+          id: 'Hasil telah disalin ke clipboard!'
+        };
+        alert(copyMessages[locale as keyof typeof copyMessages] || copyMessages.ko);
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
-        alert('공유 기능을 사용할 수 없습니다.');
+        const errorMessages = {
+          ko: '공유 기능을 사용할 수 없습니다.',
+          en: 'Sharing feature is not available.',
+          ja: '共有機能を使用できません。',
+          'zh-CN': '无法使用共享功能。',
+          'zh-TW': '無法使用共享功能。',
+          vi: 'Không thể sử dụng tính năng chia sẻ.',
+          id: 'Fitur berbagi tidak tersedia.'
+        };
+        alert(errorMessages[locale as keyof typeof errorMessages] || errorMessages.ko);
       }
     }
   };
@@ -340,8 +370,20 @@ export default function LoveObstaclesTestClient({
   const shareToWeChat = async () => {
     const url = window.location.href;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    
+    // 다국어 공유 메시지
+    const shareMessages = {
+      ko: `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`,
+      en: `My love obstacle is ${resultTitle}! What's your problem? Let's try together 😂💔`,
+      ja: `私の恋愛障害は${resultTitle}！あなたの問題は何？一緒にやってみよう 😂💔`,
+      'zh-CN': `我的恋爱障碍是${resultTitle}！你的问题是什么？一起试试吧 😂💔`,
+      'zh-TW': `我的戀愛障礙是${resultTitle}！你的問題是什麼？一起試試吧 😂💔`,
+      vi: `Trở ngại tình yêu của tôi là ${resultTitle}! Vấn đề của bạn là gì? Cùng thử nhé 😂💔`,
+      id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
+    };
+    
     const shareText = result 
-      ? `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔\n\n${url}`
+      ? `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${url}`
       : `${title}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
@@ -359,17 +401,47 @@ export default function LoveObstaclesTestClient({
     // Fallback: 링크 복사
     try {
       await navigator.clipboard.writeText(url);
-      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+      const copyMessages = {
+        ko: '링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.',
+        en: 'Link copied! Paste it in WeChat to share.',
+        ja: 'リンクがコピーされました！WeChatで貼り付けて共有してください。',
+        'zh-CN': '链接已复制！在微信中粘贴分享。',
+        'zh-TW': '連結已複製！在微信中貼上分享。',
+        vi: 'Liên kết đã được sao chép! Dán vào WeChat để chia sẻ.',
+        id: 'Tautan telah disalin! Tempel di WeChat untuk berbagi.'
+      };
+      alert(copyMessages[locale as keyof typeof copyMessages] || copyMessages.ko);
     } catch (error) {
-      alert('공유 기능을 사용할 수 없습니다.');
+      const errorMessages = {
+        ko: '공유 기능을 사용할 수 없습니다.',
+        en: 'Sharing feature is not available.',
+        ja: '共有機能を使用できません。',
+        'zh-CN': '无法使用共享功能。',
+        'zh-TW': '無法使用共享功能。',
+        vi: 'Không thể sử dụng tính năng chia sẻ.',
+        id: 'Fitur berbagi tidak tersedia.'
+      };
+      alert(errorMessages[locale as keyof typeof errorMessages] || errorMessages.ko);
     }
   };
 
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(window.location.href);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    
+    // 다국어 공유 메시지
+    const shareMessages = {
+      ko: `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`,
+      en: `My love obstacle is ${resultTitle}! What's your problem? Let's try together 😂💔`,
+      ja: `私の恋愛障害は${resultTitle}！あなたの問題は何？一緒にやってみよう 😂💔`,
+      'zh-CN': `我的恋爱障碍是${resultTitle}！你的问题是什么？一起试试吧 😂💔`,
+      'zh-TW': `我的戀愛障礙是${resultTitle}！你的問題是什麼？一起試試吧 😂💔`,
+      vi: `Trở ngại tình yêu của tôi là ${resultTitle}! Vấn đề của bạn là gì? Cùng thử nhé 😂💔`,
+      id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
+    };
+    
     const shareText = result 
-      ? encodeURIComponent(`나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`)
+      ? encodeURIComponent(shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko)
       : encodeURIComponent(title);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
@@ -387,8 +459,20 @@ export default function LoveObstaclesTestClient({
     
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    
+    // 다국어 공유 메시지
+    const shareMessages = {
+      ko: `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`,
+      en: `My love obstacle is ${resultTitle}! What's your problem? Let's try together 😂💔`,
+      ja: `私の恋愛障害は${resultTitle}！あなたの問題は何？一緒にやってみよう 😂💔`,
+      'zh-CN': `我的恋爱障碍是${resultTitle}！你的问题是什么？一起试试吧 😂💔`,
+      'zh-TW': `我的戀愛障礙是${resultTitle}！你的問題是什麼？一起試試吧 😂💔`,
+      vi: `Trở ngại tình yêu của tôi là ${resultTitle}! Vấn đề của bạn là gì? Cùng thử nhé 😂💔`,
+      id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
+    };
+    
     const shareDescription = result 
-      ? `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`
+      ? shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko
       : description;
     
     try {
@@ -422,8 +506,20 @@ export default function LoveObstaclesTestClient({
   const shareToTelegram = () => {
     const url = encodeURIComponent(window.location.href);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    
+    // 다국어 공유 메시지
+    const shareMessages = {
+      ko: `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`,
+      en: `My love obstacle is ${resultTitle}! What's your problem? Let's try together 😂💔`,
+      ja: `私の恋愛障害は${resultTitle}！あなたの問題は何？一緒にやってみよう 😂💔`,
+      'zh-CN': `我的恋爱障碍是${resultTitle}！你的问题是什么？一起试试吧 😂💔`,
+      'zh-TW': `我的戀愛障礙是${resultTitle}！你的問題是什麼？一起試試吧 😂💔`,
+      vi: `Trở ngại tình yêu của tôi là ${resultTitle}! Vấn đề của bạn là gì? Cùng thử nhé 😂💔`,
+      id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
+    };
+    
     const shareText = result 
-      ? `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`
+      ? shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
@@ -431,7 +527,16 @@ export default function LoveObstaclesTestClient({
 
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href);
-    alert('링크가 복사되었습니다!');
+    const copyMessages = {
+      ko: '링크가 복사되었습니다!',
+      en: 'Link copied!',
+      ja: 'リンクがコピーされました！',
+      'zh-CN': '链接已复制！',
+      'zh-TW': '連結已複製！',
+      vi: 'Liên kết đã được sao chép!',
+      id: 'Tautan telah disalin!'
+    };
+    alert(copyMessages[locale as keyof typeof copyMessages] || copyMessages.ko);
   };
 
   // 팝업에서 결과 보기
