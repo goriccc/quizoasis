@@ -875,9 +875,10 @@ export default function LoveObstaclesTestClient({
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    // 다국어 쉼표 처리: 영어 쉼표, 일본어 쉼표, 중국어 쉼표 모두 지원
+    // 다국어 쉼표 처리: 영어 쉼표+공백, 일본어 쉼표, 중국어 쉼표 모두 지원
     const splitByCommas = (text: string) => {
-      return text.split(/[, ，、]/).map(item => item.trim()).filter(item => item.length > 0);
+      // 쉼표 뒤 공백을 포함한 패턴으로 분할
+      return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
     };
     
     const resultSymptoms = splitByCommas(result.symptoms[locale as keyof typeof result.symptoms] || result.symptoms.ko);

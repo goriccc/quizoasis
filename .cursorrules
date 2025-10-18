@@ -1,0 +1,214 @@
+# QuizOasis Development Rules
+
+## General Development Principles
+- When developing new features, existing features must never be modified.
+- However, if deemed necessary for efficient and optimized development, ask first and proceed.
+- Please develop it to be optimized for SEO.
+
+## Test Development - Critical Rules (Based on Previous Mistakes)
+
+### 1. Component Copy Selection
+❌ DON'T copy from tests with different data structures (SignalTestClient has multilingual arrays)
+✅ DO copy from tests with same structure (AttachmentTestClient for Korean-only → multilingual conversion)
+Rule: Match source template's data structure to target test's initial requirements
+
+### 2. Data Structure First
+❌ DON'T start with Korean strings then convert to multilingual objects later
+✅ DO design multilingual structure (Record<string, string>) from the beginning
+Rule: Define interface with multilingual structure before writing any data
+
+### 3. Component-Data Structure Alignment
+❌ DON'T keep component expecting multilingual data when data is Korean-only strings
+✅ DO ensure component data access matches actual data structure
+Rule: Component renders must match data type (string vs Record<string, string>)
+
+### 4. Route Configuration Check
+❌ DON'T forget to update component import in route file
+✅ DO verify correct component is rendered for new slug
+Critical: Check that slug === 'new-test' ? NewTestClient is in routing logic
+
+### 5. Complete Translation Keys
+❌ DON'T miss UI element translation keys (shareResult, retake, otherTests, etc.)
+✅ DO add all UI text keys before testing: startMessage(6) + ui(9+) + result(10+)
+Rule: Prepare complete translation set: startMessage, ui, result sections
+
+### 6. Emoji Duplication
+❌ DON'T add emojis in both component hardcode AND translation files
+✅ DO include emojis only in translation files
+Rule: If translation has emoji, remove from component template literal
+
+### 7. Cache Clearing Protocol
+When code changes don't reflect:
+Kill all Node processes: taskkill /F /IM node.exe
+Delete .next folder: Remove-Item -Path .next -Recurse -Force
+Restart dev server: npm run dev
+Browser hard refresh: Ctrl+Shift+R
+
+### 8. Supabase Route Block Structure
+✅ DO create complete if-block with Supabase fetch + fallback + return statement
+✅ DO ensure correct TestClient component is used in return
+Pattern: if (slug === 'test-name') { const test = await getTestBySlug() || fallback; return <TestClient .../> }
+
+## Social Sharing Multilingual Requirements (CRITICAL)
+
+### 9. Social Sharing Message Localization
+❌ DON'T hardcode Korean sharing messages in social sharing functions
+✅ DO implement multilingual sharing messages for ALL social sharing functions
+Rule: Every social sharing function must support all 7 languages (ko, en, ja, zh-CN, zh-TW, vi, id)
+
+### 10. Social Sharing Functions to Localize
+✅ DO localize ALL of these functions:
+- handleShareResult() - Default sharing function
+- shareToWeChat() - WeChat sharing
+- shareToWhatsApp() - WhatsApp sharing  
+- shareToKakao() - KakaoTalk sharing
+- shareToTelegram() - Telegram sharing
+- copyLink() - Link copy function
+
+### 11. Social Sharing Message Pattern
+✅ DO use this pattern for all sharing messages:
+```typescript
+const shareMessages = {
+  ko: `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`,
+  en: `My love obstacle is ${resultTitle}! What's your problem? Let's try together 😂💔`,
+  ja: `私の恋愛障害は${resultTitle}！あなたの問題は何？一緒にやってみよう 😂💔`,
+  'zh-CN': `我的恋爱障碍是${resultTitle}！你的问题是什么？一起试试吧 😂💔`,
+  'zh-TW': `我的戀愛障礙是${resultTitle}！你的問題是什麼？一起試試吧 😂💔`,
+  vi: `Trở ngại tình yêu của tôi là ${resultTitle}! Vấn đề của bạn là gì? Cùng thử nhé 😂💔`,
+  id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
+};
+```
+
+### 12. Alert Message Localization
+✅ DO localize ALL alert messages in sharing functions:
+- Clipboard copy success messages
+- Sharing feature error messages  
+- WeChat link copy instructions
+- Any user-facing text in sharing functions
+
+## Multilingual Content Processing (CRITICAL)
+
+### 13. Multilingual Comma Separation
+❌ DON'T:
+- Use only English comma (,) for splitting multilingual content
+- Assume all languages use the same comma characters
+- Hardcode comma separation without considering language-specific punctuation
+✅ DO:
+- Support multiple comma types: English (,), Japanese (、), Chinese (，)
+- Use regex pattern for comprehensive comma detection: /,\s+|，\s*|、\s*/
+- Implement proper trimming and filtering for split results
+- Test comma separation in all supported languages
+
+### 14. Multilingual Comma Separation Implementation Pattern
+✅ DO use this pattern for splitting multilingual comma-separated content:
+```typescript
+const splitByCommas = (text: string) => {
+  // 쉼표 뒤 공백을 포함한 패턴으로 분할
+  return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+};
+
+// Usage for result sections:
+const resultSymptoms = splitByCommas(result.symptoms[locale] || result.symptoms.ko);
+const resultPattern = splitByCommas(result.patterns[locale] || result.patterns.ko);
+const resultRootCause = splitByCommas(result.causes[locale] || result.causes.ko);
+const resultSolution = splitByCommas(result.solutions[locale] || result.solutions.ko);
+```
+
+### 15. Multilingual Text Implementation
+❌ DON'T:
+- Hardcode Korean text in UI components without considering multilingual support
+- Use string literals directly in components without locale-based conditional rendering
+- Display variable names instead of actual values in template literals
+- Use incorrect variable interpolation syntax
+✅ DO:
+- Implement locale-based conditional rendering for all user-facing text
+- Use Record<string, string> structure for multilingual data from the beginning
+- Ensure proper variable interpolation: ${variableName} not [variableName]
+- Use correct variable extraction: typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko
+
+## File Size Management and Incremental Development (CRITICAL)
+
+### 16. File Size Guidelines
+✅ DO keep files manageable:
+- **Data files**: Max 500-800 lines per file
+- **Component files**: Max 300-500 lines per file
+- **Large data sets**: Split into multiple files (e.g., questions.ts, results.ts)
+- **Complex components**: Split into smaller sub-components
+
+### 17. Incremental Development Strategy
+✅ DO follow this pattern for large implementations:
+1. **Phase 1**: Create basic structure and interfaces
+2. **Phase 2**: Implement core functionality (one feature at a time)
+3. **Phase 3**: Add multilingual support (one language at a time)
+4. **Phase 4**: Add UI elements (one section at a time)
+5. **Phase 5**: Add social sharing (one platform at a time)
+6. **Phase 6**: Testing and refinement
+
+### 18. Tool Timeout Prevention
+❌ DON'T:
+- Create massive files that cause "Tool call ended before result was received" errors
+- Try to implement everything in a single large operation
+- Work with files that are too large to process efficiently
+- Process entire large files in one operation
+- Try to implement all languages simultaneously
+- Work with files over 1000 lines in single operations
+✅ DO:
+- Break down large files into smaller, manageable units
+- Implement features incrementally, step by step
+- Split large operations into smaller chunks
+- Process one language at a time
+- Commit changes frequently
+- Use incremental updates
+
+## Production Build Requirements
+
+### 19. ESLint Build Errors Prevention
+❌ DON'T:
+- Use unescaped quotes (") and apostrophes (') in JSX text content
+- Ignore ESLint warnings during development that become build errors in production
+- Leave special characters unescaped in template literals within JSX
+✅ DO:
+- Always escape quotes in JSX: " → &quot; or &ldquo; or &#34;
+- Always escape apostrophes in JSX: ' → &apos; or &lsquo; or &#39;
+- Test production builds (npm run build) before deployment
+- Fix all ESLint errors, not just warnings, before committing
+
+### 20. Production Build Validation
+❌ DON'T:
+- Deploy without running production build validation
+- Assume development server success means production will work
+- Ignore build-time ESLint errors
+✅ DO:
+- Always run npm run build before deployment
+- Fix all ESLint errors that prevent successful builds
+- Validate production build locally before pushing to repository
+- Treat build errors as deployment blockers
+
+## Development Order (Corrected):
+1. Choose correct source template based on data structure
+2. Define multilingual interface first
+3. Copy component matching structure
+4. Update all imports and type references
+5. Add route with correct component mapping
+6. Prepare all translation keys (all languages)
+7. Fill multilingual data
+8. **CRITICAL: Implement multilingual social sharing messages**
+9. **CRITICAL: Implement multilingual comma separation**
+10. Test with cache clearing
+11. Verify all UI elements have translations
+12. **CRITICAL: Test social sharing in all languages**
+
+## Pre-Development Checklist:
+[ ] Source template matches target data structure?
+[ ] Interface defined with Record<string, string>?
+[ ] All translation keys prepared in all 7 languages?
+[ ] Component imports updated?
+[ ] Route mapping includes new test slug?
+[ ] Correct TestClient component in route return?
+[ ] **Social sharing messages localized for all functions?**
+[ ] **All alert messages in sharing functions localized?**
+[ ] **Multilingual comma separation implemented?**
+[ ] **File size manageable for the operation?**
+[ ] **Task broken down into small, manageable steps?**
+
+These lessons ensure that future test development will have proper multilingual support from the beginning, avoiding the need for extensive refactoring later.
