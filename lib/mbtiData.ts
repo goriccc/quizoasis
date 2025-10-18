@@ -11,6 +11,7 @@ import { flirtingQuestions, flirtingResults } from './flirtingData';
 import { spouseQuestions, spouseResults } from './spouseData';
 import { loveObstacleQuestions, loveObstacleResults } from './loveObstaclesData';
 import { jealousyQuestions, jealousyResults } from './jealousyData';
+import { apologyQuestions, apologyResults } from './apologyData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -979,6 +980,10 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'jealousy-level-test': {
     questions: jealousyQuestions,
     results: jealousyResults
+  },
+  'apology-style-test': {
+    questions: apologyQuestions,
+    results: apologyResults
   }
 };
 
