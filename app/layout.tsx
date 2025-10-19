@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   title: 'QuizOasis - 당신의 마음을 탐험하는 심리테스트의 오아시스',
   description: '다양한 심리테스트로 당신의 성격, 연애 스타일, 직업 적성을 알아보세요.',
   keywords: '심리테스트, MBTI, 성격테스트, 연애테스트, 심리분석',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+  },
   openGraph: {
     title: 'QuizOasis',
     description: '당신의 마음을 탐험하는 심리테스트의 오아시스',
@@ -21,11 +32,10 @@ export default function RootLayout({
   return (
     <>
       {/* Google AdSense */}
-      <Script
+      <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3192752766652582"
         crossOrigin="anonymous"
-        strategy="afterInteractive"
       />
       
       {/* Kakao SDK */}
