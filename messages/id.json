@@ -308,6 +308,76 @@
       "similarTests": "Tes Serupa",
       "popularTests": "Tes Populer"
     }
+  },
+  "humorTest": {
+    "startMessage": {
+      "title": "「Teman dengan kode humor yang cocok adalah teman sejati！」",
+      "line1": "Beberapa orang tertawa terbahak-bahak pada permainan kata,",
+      "line2": "Beberapa orang tidak bisa menahan tawa pada komedi fisik.",
+      "line3": "Beberapa orang menikmati humor gelap,",
+      "line4": "Beberapa orang meleleh pada lelucon yang lucu.",
+      "line5": "Apa kode humor Anda?",
+      "line6": "Temukan teman dengan kode humor yang sempurna cocok dengan Anda!",
+      "line7": "Hanya butuh 3 menit! Lebih menyenangkan ketika dibandingkan dengan teman 🤣"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "totalParticipants": "Total {count} orang berpartisipasi！",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "yourResult": "Hasil Anda adalah",
+      "characteristics": "🎯 Karakteristik",
+      "pros": "✅ Kelebihan",
+      "cons": "⚠️ Kekurangan",
+      "advice": "💡 Saran",
+      "compatibilityAnalysis": "Analisis Kompatibilitas",
+      "bestMatch": "💖 Terbaik",
+      "goodMatch": "😊 Baik",
+      "caution": "⚠️ Hati-hati",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "shareOtherWays": "Bagikan dengan cara lain",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "shareMessages": {
+      "default": "Kode humor saya adalah {resultTitle}! 🤣 Apa kode humor Anda? Mari coba bersama!",
+      "kakao": "Kode humor saya adalah {resultTitle}! 🤣 Apa kode humor Anda? Mari coba bersama!",
+      "telegram": "Kode humor saya adalah {resultTitle}! 🤣 Apa kode humor Anda? Mari coba bersama!",
+      "wechat": "Kode humor saya adalah {resultTitle}! 🤣 Apa kode humor Anda? Mari coba bersama!",
+      "line": "Kode humor saya adalah {resultTitle}! 🤣 Apa kode humor Anda? Mari coba bersama!",
+      "whatsapp": "Kode humor saya adalah {resultTitle}! 🤣 Apa kode humor Anda? Mari coba bersama!"
+    },
+    "result": {
+      "compatibility": {
+        "1_1": "Rally permainan kata tak berujung",
+        "1_3": "Pertukaran intelektual",
+        "1_5": "Mungkin tidak mengerti",
+        "2_2": "Kombinasi ledakan energi terbaik",
+        "2_6": "Komedi fisik tren",
+        "2_3": "Perlu kontrol level",
+        "3_3": "Kimia sempurna",
+        "3_1": "Pertukaran intelektual",
+        "3_4": "Pertukaran intelektual",
+        "3_5": "Mungkin terasa dingin",
+        "4_4": "Berbagi kode gelap",
+        "4_3": "Pertukaran intelektual",
+        "4_5": "Mungkin terkejut",
+        "5_5": "Murni × Murni = Penyembuhan",
+        "5_6": "Berbagi meme lucu",
+        "5_4": "Mungkin terkejut",
+        "6_6": "Pertukaran meme tak terbatas",
+        "6_2": "Komedi fisik tren",
+        "6_5": "Berbagi meme lucu",
+        "6_1": "Kesenjangan generasi"
+      }
+    }
   }
 }
 

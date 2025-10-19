@@ -308,6 +308,76 @@
       "similarTests": "Bài kiểm tra tương tự",
       "popularTests": "Bài kiểm tra phổ biến"
     }
+  },
+  "humorTest": {
+    "startMessage": {
+      "title": "「Những người bạn có mã hài hước phù hợp mới là bạn thật！」",
+      "line1": "Một số người cười phá lên vì trò chơi chữ,",
+      "line2": "Một số người không thể nhịn cười với hài kịch tình huống.",
+      "line3": "Một số người thích hài đen,",
+      "line4": "Một số người tan chảy trước những câu đùa dễ thương.",
+      "line5": "Mã hài hước của bạn là gì?",
+      "line6": "Tìm những người bạn có mã hài hước hoàn hảo phù hợp với bạn!",
+      "line7": "Chỉ mất 3 phút! Vui hơn khi so sánh với bạn bè 🤣"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "totalParticipants": "Tổng {count} người đã tham gia！",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "yourResult": "Kết quả của bạn là",
+      "characteristics": "🎯 Đặc điểm",
+      "pros": "✅ Ưu điểm",
+      "cons": "⚠️ Nhược điểm",
+      "advice": "💡 Lời khuyên",
+      "compatibilityAnalysis": "Phân tích tương thích",
+      "bestMatch": "💖 Tốt nhất",
+      "goodMatch": "😊 Tốt",
+      "caution": "⚠️ Cẩn thận",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại kiểm tra",
+      "otherTests": "Xem các kiểm tra khác",
+      "shareOtherWays": "Chia sẻ theo cách khác",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "shareMessages": {
+      "default": "Mã hài hước của tôi là {resultTitle}! 🤣 Mã hài hước của bạn là gì? Cùng thử nhé!",
+      "kakao": "Mã hài hước của tôi là {resultTitle}! 🤣 Mã hài hước của bạn là gì? Cùng thử nhé!",
+      "telegram": "Mã hài hước của tôi là {resultTitle}! 🤣 Mã hài hước của bạn là gì? Cùng thử nhé!",
+      "wechat": "Mã hài hước của tôi là {resultTitle}! 🤣 Mã hài hước của bạn là gì? Cùng thử nhé!",
+      "line": "Mã hài hước của tôi là {resultTitle}! 🤣 Mã hài hước của bạn là gì? Cùng thử nhé!",
+      "whatsapp": "Mã hài hước của tôi là {resultTitle}! 🤣 Mã hài hước của bạn là gì? Cùng thử nhé!"
+    },
+    "result": {
+      "compatibility": {
+        "1_1": "Cuộc chơi chữ bất tận",
+        "1_3": "Giao lưu trí tuệ",
+        "1_5": "Có thể không hiểu",
+        "2_2": "Combo năng lượng tuyệt vời nhất",
+        "2_6": "Hài kịch thể chất xu hướng",
+        "2_3": "Cần kiểm soát mức độ",
+        "3_3": "Hóa học hoàn hảo",
+        "3_1": "Giao lưu trí tuệ",
+        "3_4": "Giao lưu trí tuệ",
+        "3_5": "Có thể cảm thấy lạnh lùng",
+        "4_4": "Chia sẻ mã đen",
+        "4_3": "Giao lưu trí tuệ",
+        "4_5": "Có thể bị sốc",
+        "5_5": "Thuần khiết × Thuần khiết = Chữa lành",
+        "5_6": "Chia sẻ meme dễ thương",
+        "5_4": "Có thể bị sốc",
+        "6_6": "Trao đổi meme vô tận",
+        "6_2": "Hài kịch thể chất xu hướng",
+        "6_5": "Chia sẻ meme dễ thương",
+        "6_1": "Khoảng cách thế hệ"
+      }
+    }
   }
 }
 

@@ -332,6 +332,76 @@
       "similarTests": "Similar Tests",
       "popularTests": "Popular Tests"
     }
+  },
+  "humorTest": {
+    "startMessage": {
+      "title": "\"Friends with matching humor codes are true friends!\"",
+      "line1": "Some people burst into laughter at wordplay,",
+      "line2": "Some people can't help laughing at physical comedy.",
+      "line3": "Some people enjoy black humor,",
+      "line4": "Some people's hearts melt at cute jokes.",
+      "line5": "What is your humor code?",
+      "line6": "Find friends with perfectly matching humor codes!",
+      "line7": "Takes only 3 minutes! More fun when compared with friends 🤣"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "totalParticipants": "Total {count} people participated!",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "yourResult": "Your Result",
+      "characteristics": "🎯 Characteristics",
+      "pros": "✅ Pros",
+      "cons": "⚠️ Cons",
+      "advice": "💡 Advice",
+      "compatibilityAnalysis": "Compatibility Analysis",
+      "bestMatch": "💖 Best",
+      "goodMatch": "😊 Good",
+      "caution": "⚠️ Caution",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "Other Tests",
+      "shareOtherWays": "Share in other ways",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "shareMessages": {
+      "default": "My humor code is {resultTitle}! 🤣 What's your humor code? Let's try together!",
+      "kakao": "My humor code is {resultTitle}! 🤣 What's your humor code? Let's try together!",
+      "telegram": "My humor code is {resultTitle}! 🤣 What's your humor code? Let's try together!",
+      "wechat": "My humor code is {resultTitle}! 🤣 What's your humor code? Let's try together!",
+      "line": "My humor code is {resultTitle}! 🤣 What's your humor code? Let's try together!",
+      "whatsapp": "My humor code is {resultTitle}! 🤣 What's your humor code? Let's try together!"
+    },
+    "result": {
+      "compatibility": {
+        "1_1": "Endless wordplay rally",
+        "1_3": "Intellectual connection",
+        "1_5": "May not understand",
+        "2_2": "Best energy explosion combo",
+        "2_6": "Trendy physical comedy",
+        "2_3": "Need level control",
+        "3_3": "Perfect chemistry",
+        "3_1": "Intellectual connection",
+        "3_4": "Intellectual connection",
+        "3_5": "May feel cold",
+        "4_4": "Share black code",
+        "4_3": "Intellectual connection",
+        "4_5": "May be shocked",
+        "5_5": "Pure x Pure = Healing",
+        "5_6": "Share cute memes",
+        "5_4": "May be shocked",
+        "6_6": "Infinite meme exchange",
+        "6_2": "Trendy physical comedy",
+        "6_5": "Share cute memes",
+        "6_1": "Generation gap"
+      }
+    }
   }
 }
 

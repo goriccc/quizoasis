@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { headers } from 'next/headers';
 import { getTestBySlug } from '@/lib/supabase';
 import { getTestData } from '@/lib/mbtiData';
+import { humorCodeQuestions, humorCodeResults } from '@/lib/humorCodeData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -46,6 +47,9 @@ const SpouseTestClient = dynamic(() => import('@/components/SpouseTestClient'), 
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LoveObstaclesTestClient = dynamic(() => import('@/components/LoveObstaclesTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const HumorCodeTestClient = dynamic(() => import('@/components/HumorCodeTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const ApologyTestClient = dynamic(() => import('@/components/ApologyTestClient'), {
@@ -163,7 +167,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'og:site_name': 'QuizOasis',
       'og:url': canonicalUrl,
       'og:type': 'website',
-      'apple-mobile-web-app-capable': 'yes',
+      'mobile-web-app-capable': 'yes',
       'apple-mobile-web-app-status-bar-style': 'default',
       'apple-mobile-web-app-title': 'QuizOasis',
       'application-name': 'QuizOasis',
@@ -865,7 +869,16 @@ export default async function TestPage({ params }: Props) {
   }
 
   // 로컬에서 테스트 데이터 가져오기
-  const testData = getTestData(slug);
+  let testData;
+  if (slug === 'humor-code-test') {
+    testData = {
+      questions: humorCodeQuestions,
+      results: humorCodeResults
+    };
+  } else {
+    testData = getTestData(slug);
+  }
+  
   if (!testData) {
     notFound();
   }
@@ -938,7 +951,7 @@ export default async function TestPage({ params }: Props) {
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
-    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : DatingTestClient) :
+    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : DatingTestClient) :
     MBTITestClient;
 
   return (
