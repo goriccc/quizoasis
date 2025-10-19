@@ -389,7 +389,7 @@ export default function BreakupTestClient({
       }
     };
     
-    const shareText = `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${window.location.href}`;
+    const shareText = `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -412,12 +412,12 @@ export default function BreakupTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
     const shareMessages = {
@@ -487,7 +487,7 @@ export default function BreakupTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
     const shareMessages = {
@@ -552,7 +552,7 @@ export default function BreakupTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -601,7 +601,7 @@ export default function BreakupTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
     const shareMessages = {
@@ -632,7 +632,7 @@ export default function BreakupTestClient({
       id: 'Tautan disalin!'
     };
     
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(alertMessages[locale as keyof typeof alertMessages] || alertMessages.ko);
   };
 

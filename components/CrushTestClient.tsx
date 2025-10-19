@@ -300,20 +300,20 @@ export default function CrushTestClient({
     
     const resultTitle = typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko;
     const shareText = locale === 'ko' ? 
-      `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${window.location.href}` :
+      `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'en' ?
-      `My crush success rate is ${resultTitle}! What's yours? Let's try together 💘😂\n\n${window.location.href}` :
+      `My crush success rate is ${resultTitle}! What's yours? Let's try together 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'ja' ?
-      `私の片思い成功率は${resultTitle}！あなたは何％？一緒にやってみよう 💘😂\n\n${window.location.href}` :
+      `私の片思い成功率は${resultTitle}！あなたは何％？一緒にやってみよう 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'zh-CN' ?
-      `我的暗恋成功率是${resultTitle}！你的呢？一起来试试吧 💘😂\n\n${window.location.href}` :
+      `我的暗恋成功率是${resultTitle}！你的呢？一起来试试吧 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'zh-TW' ?
-      `我的暗戀成功率是${resultTitle}！你的呢？一起來試試吧 💘😂\n\n${window.location.href}` :
+      `我的暗戀成功率是${resultTitle}！你的呢？一起來試試吧 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'id' ?
-      `Tingkat keberhasilan cinta sepihak saya adalah ${resultTitle}! Bagaimana dengan Anda? Mari coba bersama 💘😂\n\n${window.location.href}` :
+      `Tingkat keberhasilan cinta sepihak saya adalah ${resultTitle}! Bagaimana dengan Anda? Mari coba bersama 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'vi' ?
-      `Tỷ lệ thành công tình yêu đơn phương của tôi là ${resultTitle}! Bạn thì sao? Hãy thử cùng nhau 💘😂\n\n${window.location.href}` :
-      `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${window.location.href}`;
+      `Tỷ lệ thành công tình yêu đơn phương của tôi là ${resultTitle}! Bạn thì sao? Hãy thử cùng nhau 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
+      `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -336,12 +336,12 @@ export default function CrushTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     const shareText = result ? (
       locale === 'ko' ? 
@@ -383,7 +383,7 @@ export default function CrushTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     const shareText = result ? (
       locale === 'ko' ? 
@@ -413,7 +413,7 @@ export default function CrushTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -465,7 +465,7 @@ export default function CrushTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     const shareText = result ? (
       locale === 'ko' ? 
@@ -489,7 +489,7 @@ export default function CrushTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 

@@ -193,20 +193,20 @@ export default function FlirtingTestClient({
     
     const resultTitle = typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko) || '';
     const shareText = locale === 'ko' ? 
-      `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕\n\n${window.location.href}` :
+      `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'en' ?
-      `I'm ${resultTitle}! What's your flirting score? Let's test together 😂💕\n\n${window.location.href}` :
+      `I'm ${resultTitle}! What's your flirting score? Let's test together 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'ja' ?
-      `私は${resultTitle}！あなたのフリートスコアは？一緒にテストしよう 😂💕\n\n${window.location.href}` :
+      `私は${resultTitle}！あなたのフリートスコアは？一緒にテストしよう 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'zh-CN' ?
-      `我是${resultTitle}！你的暧昧技巧得分是多少？一起来测试吧 😂💕\n\n${window.location.href}` :
+      `我是${resultTitle}！你的暧昧技巧得分是多少？一起来测试吧 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'zh-TW' ?
-      `我是${resultTitle}！你的曖昧技巧得分是多少？一起來測試吧 😂💕\n\n${window.location.href}` :
+      `我是${resultTitle}！你的曖昧技巧得分是多少？一起來測試吧 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'id' ?
-      `Saya ${resultTitle}! Berapa skor flirting Anda? Mari test bersama 😂💕\n\n${window.location.href}` :
+      `Saya ${resultTitle}! Berapa skor flirting Anda? Mari test bersama 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
       locale === 'vi' ?
-      `Tôi là ${resultTitle}! Điểm tán tỉnh của bạn là bao nhiêu? Hãy test cùng nhau 😂💕\n\n${window.location.href}` :
-      `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕\n\n${window.location.href}`;
+      `Tôi là ${resultTitle}! Điểm tán tỉnh của bạn là bao nhiêu? Hãy test cùng nhau 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
+      `나는 ${resultTitle}! 너의 썸 실력은 몇 점? 같이 테스트해보자 😂💕\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -229,12 +229,12 @@ export default function FlirtingTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareText = result 
       ? locale === 'en' ?
@@ -274,7 +274,7 @@ export default function FlirtingTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareText = result 
       ? locale === 'en' ?
@@ -302,7 +302,7 @@ export default function FlirtingTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -352,7 +352,7 @@ export default function FlirtingTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareText = result 
       ? locale === 'en' ?
@@ -374,7 +374,7 @@ export default function FlirtingTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 

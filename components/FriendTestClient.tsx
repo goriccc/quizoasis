@@ -229,7 +229,7 @@ export default function FriendTestClient({
   };
 
   const shareToKakao = () => {
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const shareText = result 
       ? `나는 친구들에게 ${result.title[localeKey as keyof typeof result.title]}! 너는 어떤 친구야? 우리 우정 스타일 확인해보자 👯`
@@ -265,7 +265,7 @@ export default function FriendTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const shareText = result 
       ? `나는 친구들에게 ${result.title[localeKey as keyof typeof result.title]}! 너는 어떤 친구야? 우리 우정 스타일 확인해보자 👯`
@@ -284,7 +284,7 @@ export default function FriendTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 
@@ -307,7 +307,7 @@ export default function FriendTestClient({
     if (!result) return;
     
     const resultTitle = result.title[localeKey as keyof typeof result.title] || result.title.ko;
-    const shareText = `나는 친구들에게 ${resultTitle}! 너는 어떤 친구야? 우리 우정 스타일 확인해보자 👯\n\n${window.location.href}`;
+    const shareText = `나는 친구들에게 ${resultTitle}! 너는 어떤 친구야? 우리 우정 스타일 확인해보자 👯\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -324,12 +324,12 @@ export default function FriendTestClient({
   };
 
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const resultTitle = result ? result.title : '';
     const shareText = result 
@@ -356,7 +356,7 @@ export default function FriendTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const resultTitle = result ? result.title : '';
     const shareText = result 

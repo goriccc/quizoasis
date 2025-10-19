@@ -325,7 +325,7 @@ export default function FirstImpressionTestClient({
       vi: `Ấn tượng đầu tiên của tôi là ${resultTitle}! Đây là cách mọi người cảm nhận khi lần đầu nhìn thấy tôi 😊 Ấn tượng đầu tiên của bạn là gì?`,
       id: `Kesan pertama saya adalah ${resultTitle}! Ini yang dirasakan orang ketika pertama kali melihat saya 😊 Kesan pertama Anda seperti apa?`
     };
-    const shareText = `${shareMessages[locale as keyof typeof shareMessages]}\n\n${window.location.href}`;
+    const shareText = `${shareMessages[locale as keyof typeof shareMessages]}\n\nhttps://myquizoasis.com${window.location.pathname}`;
     
     if (navigator.share) {
       try {
@@ -366,12 +366,12 @@ export default function FirstImpressionTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessages = {
       ko: `나의 첫인상은 ${resultTitle}! 사람들이 나를 처음 봤을 때 이렇게 느낀대 😊 너는 어떤 첫인상?`,
@@ -408,7 +408,7 @@ export default function FirstImpressionTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessages = {
       ko: `나의 첫인상은 ${resultTitle}! 사람들이 나를 처음 봤을 때 이렇게 느낀대 😊 너는 어떤 첫인상?`,
@@ -433,7 +433,7 @@ export default function FirstImpressionTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -480,7 +480,7 @@ export default function FirstImpressionTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessages = {
       ko: `나의 첫인상은 ${resultTitle}! 사람들이 나를 처음 봤을 때 이렇게 느낀대 😊 너는 어떤 첫인상?`,
@@ -499,7 +499,7 @@ export default function FirstImpressionTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     const copyMessages = {
       ko: '링크가 복사되었습니다!',
       en: 'Link copied!',

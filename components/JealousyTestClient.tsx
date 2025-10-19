@@ -327,7 +327,7 @@ export default function JealousyTestClient({
       id: `Level cemburu saya adalah ${resultTitle}! Seberapa cemburu Anda? Mari test bersama 😂💚`
     };
     
-    const shareText = `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${window.location.href}`;
+    const shareText = `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -350,12 +350,12 @@ export default function JealousyTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     
     const shareMessages = {
@@ -394,7 +394,7 @@ export default function JealousyTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     
     const shareMessages = {
@@ -421,7 +421,7 @@ export default function JealousyTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -470,7 +470,7 @@ export default function JealousyTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     
     const shareMessages = {
@@ -491,7 +491,7 @@ export default function JealousyTestClient({
   };
 
   const copyLink = () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     
     const shareMessages = {

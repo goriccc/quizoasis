@@ -308,13 +308,13 @@ export default function ApologyTestClient({
     if (!result) return;
     
     const resultTitle = typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = locale === 'ko' ? `나의 사과 스타일은 ${resultTitle}! 너는 어떻게 사과해? 같이 테스트해보자 🙏💬\n\n${window.location.href}`
-      : locale === 'en' ? `My apology style is ${resultTitle}! How do you apologize? Let's test together 🙏💬\n\n${window.location.href}`
-      : locale === 'ja' ? `私の謝罪スタイルは${resultTitle}！あなたはどう謝罪する？一緒にテストしてみよう 🙏💬\n\n${window.location.href}`
-      : locale === 'zh-CN' ? `我的道歉风格是${resultTitle}！你如何道歉？一起测试吧 🙏💬\n\n${window.location.href}`
-      : locale === 'zh-TW' ? `我的道歉風格是${resultTitle}！你如何道歉？一起測試吧 🙏💬\n\n${window.location.href}`
-      : locale === 'vi' ? `Phong cách xin lỗi của tôi là ${resultTitle}! Bạn xin lỗi như thế nào? Cùng test nhé 🙏💬\n\n${window.location.href}`
-      : `Gaya permintaan maaf saya adalah ${resultTitle}! Bagaimana Anda meminta maaf? Mari test bersama 🙏💬\n\n${window.location.href}`;
+    const shareText = locale === 'ko' ? `나의 사과 스타일은 ${resultTitle}! 너는 어떻게 사과해? 같이 테스트해보자 🙏💬\n\n${`https://myquizoasis.com${window.location.pathname}`}`
+      : locale === 'en' ? `My apology style is ${resultTitle}! How do you apologize? Let's test together 🙏💬\n\n${`https://myquizoasis.com${window.location.pathname}`}`
+      : locale === 'ja' ? `私の謝罪スタイルは${resultTitle}！あなたはどう謝罪する？一緒にテストしてみよう 🙏💬\n\n${`https://myquizoasis.com${window.location.pathname}`}`
+      : locale === 'zh-CN' ? `我的道歉风格是${resultTitle}！你如何道歉？一起测试吧 🙏💬\n\n${`https://myquizoasis.com${window.location.pathname}`}`
+      : locale === 'zh-TW' ? `我的道歉風格是${resultTitle}！你如何道歉？一起測試吧 🙏💬\n\n${`https://myquizoasis.com${window.location.pathname}`}`
+      : locale === 'vi' ? `Phong cách xin lỗi của tôi là ${resultTitle}! Bạn xin lỗi như thế nào? Cùng test nhé 🙏💬\n\n${`https://myquizoasis.com${window.location.pathname}`}`
+      : `Gaya permintaan maaf saya adalah ${resultTitle}! Bagaimana Anda meminta maaf? Mari test bersama 🙏💬\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -337,12 +337,12 @@ export default function ApologyTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? locale === 'ko' ? `나의 사과 스타일은 ${resultTitle}! 너는 어떻게 사과해? 같이 테스트해보자 🙏💬\n\n${url}`
@@ -376,7 +376,7 @@ export default function ApologyTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? encodeURIComponent(locale === 'ko' ? `나의 사과 스타일은 ${resultTitle}! 너는 어떻게 사과해? 같이 테스트해보자 🙏💬`
@@ -398,7 +398,7 @@ export default function ApologyTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -442,7 +442,7 @@ export default function ApologyTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? locale === 'ko' ? `나의 사과 스타일은 ${resultTitle}! 너는 어떻게 사과해? 같이 테스트해보자 🙏💬`
@@ -458,7 +458,7 @@ export default function ApologyTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 

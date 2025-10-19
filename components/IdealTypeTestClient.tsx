@@ -316,7 +316,7 @@ export default function IdealTypeTestClient({
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const shareMessage = t('idealTypeTest.shareMessage', { type: resultTitle });
-    const shareText = `${shareMessage}\n\n${window.location.href}`;
+    const shareText = `${shareMessage}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -339,12 +339,12 @@ export default function IdealTypeTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result ? t('idealTypeTest.shareMessage', { type: resultTitle }) : title;
     const shareText = `${shareMessage}\n\n${url}`;
@@ -371,7 +371,7 @@ export default function IdealTypeTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result ? t('idealTypeTest.shareMessage', { type: resultTitle }) : title;
     const shareText = encodeURIComponent(shareMessage);
@@ -386,7 +386,7 @@ export default function IdealTypeTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -423,7 +423,7 @@ export default function IdealTypeTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result ? t('idealTypeTest.shareMessage', { type: resultTitle }) : title;
     const shareText = shareMessage;
@@ -432,7 +432,7 @@ export default function IdealTypeTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 

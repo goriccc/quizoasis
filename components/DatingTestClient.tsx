@@ -308,7 +308,7 @@ export default function DatingTestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `나는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕\n\n${window.location.href}`;
+    const shareText = `나는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -331,12 +331,12 @@ export default function DatingTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const shareText = result 
       ? `나는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕\n\n${url}`
       : `${title}\n\n${url}`;
@@ -363,7 +363,7 @@ export default function DatingTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? encodeURIComponent(`나는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕`)
       : encodeURIComponent(title);
@@ -378,7 +378,7 @@ export default function DatingTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -415,7 +415,7 @@ export default function DatingTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? `나는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 어떤 데이트 스타일? 우리 궁합도 확인해보자 💕`
       : title;
@@ -424,7 +424,7 @@ export default function DatingTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 

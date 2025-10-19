@@ -229,7 +229,7 @@ export default function AttachmentTestClient({
   };
 
   const shareToKakao = () => {
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const shareText = result 
       ? `나는 ${result.title[localeKey as keyof typeof result.title]}! 내 연애 패턴의 근원을 찾았어 😮 심리학 기반 테스트, 너도 해보고 우리 궁합 확인해보자!`
@@ -265,7 +265,7 @@ export default function AttachmentTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const shareText = result 
       ? `나는 ${result.title[localeKey as keyof typeof result.title]}! 내 연애 패턴의 근원을 찾았어 😮 심리학 기반 테스트, 너도 해보고 우리 궁합 확인해보자!`
@@ -284,7 +284,7 @@ export default function AttachmentTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 
@@ -308,7 +308,7 @@ export default function AttachmentTestClient({
     
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const resultTitle = result.title[localeKey as keyof typeof result.title] || result.title.ko;
-    const shareText = `나는 ${resultTitle}! 내 연애 패턴의 근원을 찾았어 😮 심리학 기반 테스트, 너도 해보고 우리 궁합 확인해보자!\n\n${window.location.href}`;
+    const shareText = `나는 ${resultTitle}! 내 연애 패턴의 근원을 찾았어 😮 심리학 기반 테스트, 너도 해보고 우리 궁합 확인해보자!\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -325,12 +325,12 @@ export default function AttachmentTestClient({
   };
 
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
@@ -357,7 +357,7 @@ export default function AttachmentTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const localeKey = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zhTW' : locale;
     const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 

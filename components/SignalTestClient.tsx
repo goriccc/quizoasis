@@ -309,7 +309,7 @@ export default function SignalTestClient({
     if (!result) return;
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!\n\n${window.location.href}`;
+    const shareText = `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -332,12 +332,12 @@ export default function SignalTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!\n\n${url}`
@@ -365,7 +365,7 @@ export default function SignalTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? encodeURIComponent(`나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!`)
@@ -381,7 +381,7 @@ export default function SignalTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -419,7 +419,7 @@ export default function SignalTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? `나는 ${resultTitle}! 연인 신호 포착 능력 테스트 😱 너는 얼마나 캐치하고 있어? 같이 해보자!`
@@ -429,7 +429,7 @@ export default function SignalTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 

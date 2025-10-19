@@ -322,7 +322,7 @@ export default function LoveObstaclesTestClient({
       id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
     };
     
-    const shareText = `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${window.location.href}`;
+    const shareText = `${shareMessages[locale as keyof typeof shareMessages] || shareMessages.ko}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -363,12 +363,12 @@ export default function LoveObstaclesTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
     // 다국어 공유 메시지
@@ -426,7 +426,7 @@ export default function LoveObstaclesTestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
     // 다국어 공유 메시지
@@ -454,7 +454,7 @@ export default function LoveObstaclesTestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -504,7 +504,7 @@ export default function LoveObstaclesTestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
     // 다국어 공유 메시지
@@ -526,7 +526,7 @@ export default function LoveObstaclesTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     const copyMessages = {
       ko: '링크가 복사되었습니다!',
       en: 'Link copied!',

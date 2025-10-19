@@ -368,7 +368,7 @@ export default function MBTITestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const shareText = `나는 ${result.type}! 너는 어떤 성격? 함께 테스트해보자 💕\n\n${window.location.href}`;
+    const shareText = `나는 ${result.type}! 너는 어떤 성격? 함께 테스트해보자 💕\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       // 네이티브 공유 API 사용 (모바일) - 텍스트만
@@ -396,12 +396,12 @@ export default function MBTITestClient({
 
   // 공유 함수들
   const shareToLine = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
-    const url = window.location.href;
+    const url = `https://myquizoasis.com${window.location.pathname}`;
     const shareText = result 
       ? `나는 ${result.type}! 너는 어떤 성격? 함께 테스트해보자 💕\n\n${url}`
       : `${title}\n\n${url}`;
@@ -428,7 +428,7 @@ export default function MBTITestClient({
   };
 
   const shareToWhatsApp = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? encodeURIComponent(`나는 ${result.type}! 너는 어떤 성격? 함께 테스트해보자 💕`)
       : encodeURIComponent(title);
@@ -444,7 +444,7 @@ export default function MBTITestClient({
       return;
     }
 
-    const currentUrl = window.location.href;
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
@@ -481,7 +481,7 @@ export default function MBTITestClient({
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? `나는 ${result.type}! 너는 어떤 성격? 함께 테스트해보자 💕`
       : title;
@@ -490,7 +490,7 @@ export default function MBTITestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };
 
