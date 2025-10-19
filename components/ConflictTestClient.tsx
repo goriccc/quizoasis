@@ -82,7 +82,7 @@ export default function ConflictTestClient({
         [questionKey]: optionsCopy
       }));
     }
-  }, [currentQuestion, started]);
+  }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
