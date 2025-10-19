@@ -82,7 +82,7 @@ export default function FirstImpressionTestClient({
         [questionKey]: optionsCopy
       }));
     }
-  }, [currentQuestion, started]);
+  }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
@@ -574,7 +574,7 @@ export default function FirstImpressionTestClient({
                   <p className="whitespace-pre-line">What first impression do you give to others?</p>
                   <p>Check your real first impression with 12 questions,</p>
                   <p>and get tips for better relationships!</p>
-                  <p>Takes only 3 minutes! It's also fun to compare with friends 😊</p>
+                  <p>Takes only 3 minutes! It&apos;s also fun to compare with friends 😊</p>
                 </>
               )}
               {locale === 'ja' && (

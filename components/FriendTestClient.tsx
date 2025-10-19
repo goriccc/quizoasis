@@ -95,7 +95,7 @@ export default function FriendTestClient({
         [questionKey]: optionsArray
       }));
     }
-  }, [currentQuestion, started, localeKey]);
+  }, [currentQuestion, started, localeKey, shuffledOptionsMap, shuffledQuestions]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
