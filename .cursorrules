@@ -88,33 +88,8 @@ const shareMessages = {
 
 ## Multilingual Content Processing (CRITICAL)
 
-### 13. Multilingual Comma Separation
-❌ DON'T:
-- Use only English comma (,) for splitting multilingual content
-- Assume all languages use the same comma characters
-- Hardcode comma separation without considering language-specific punctuation
-✅ DO:
-- Support multiple comma types: English (,), Japanese (、), Chinese (，)
-- Use regex pattern for comprehensive comma detection: /,\s+|，\s*|、\s*/
-- Implement proper trimming and filtering for split results
-- Test comma separation in all supported languages
 
-### 14. Multilingual Comma Separation Implementation Pattern
-✅ DO use this pattern for splitting multilingual comma-separated content:
-```typescript
-const splitByCommas = (text: string) => {
-  // 쉼표 뒤 공백을 포함한 패턴으로 분할
-  return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
-};
-
-// Usage for result sections:
-const resultSymptoms = splitByCommas(result.symptoms[locale] || result.symptoms.ko);
-const resultPattern = splitByCommas(result.patterns[locale] || result.patterns.ko);
-const resultRootCause = splitByCommas(result.causes[locale] || result.causes.ko);
-const resultSolution = splitByCommas(result.solutions[locale] || result.solutions.ko);
-```
-
-### 15. Multilingual Text Implementation
+### 13. Multilingual Text Implementation
 ❌ DON'T:
 - Hardcode Korean text in UI components without considering multilingual support
 - Use string literals directly in components without locale-based conditional rendering
@@ -128,14 +103,14 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 
 ## File Size Management and Incremental Development (CRITICAL)
 
-### 16. File Size Guidelines
+### 14. File Size Guidelines
 ✅ DO keep files manageable:
 - **Data files**: Max 500-800 lines per file
 - **Component files**: Max 300-500 lines per file
 - **Large data sets**: Split into multiple files (e.g., questions.ts, results.ts)
 - **Complex components**: Split into smaller sub-components
 
-### 17. Incremental Development Strategy
+### 15. Incremental Development Strategy
 ✅ DO follow this pattern for large implementations:
 1. **Phase 1**: Create basic structure and interfaces
 2. **Phase 2**: Implement core functionality (one feature at a time)
@@ -144,7 +119,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 5. **Phase 5**: Add social sharing (one platform at a time)
 6. **Phase 6**: Testing and refinement
 
-### 18. Tool Timeout Prevention
+### 16. Tool Timeout Prevention
 ❌ DON'T:
 - Create massive files that cause "Tool call ended before result was received" errors
 - Try to implement everything in a single large operation
@@ -162,7 +137,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 
 ## Production Build Requirements
 
-### 19. ESLint Build Errors Prevention
+### 17. ESLint Build Errors Prevention
 ❌ DON'T:
 - Use unescaped quotes (") and apostrophes (') in JSX text content
 - Ignore ESLint warnings during development that become build errors in production
@@ -173,7 +148,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - Test production builds (npm run build) before deployment
 - Fix all ESLint errors, not just warnings, before committing
 
-### 20. Production Build Validation
+### 18. Production Build Validation
 ❌ DON'T:
 - Deploy without running production build validation
 - Assume development server success means production will work
@@ -213,7 +188,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 
 ## SQL Database Integration (CRITICAL)
 
-### 21. SQL File Structure Requirements
+### 19. SQL File Structure Requirements
 ❌ DON'T:
 - Add `created_at` and `updated_at` fields in INSERT statements
 - Use `NOW()` functions in SQL INSERT statements
@@ -224,7 +199,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - Set play_count to 0 for new tests
 - Match the exact structure of other test SQL files
 
-### 22. SQL File Creation Checklist
+### 20. SQL File Creation Checklist
 ✅ DO verify these fields are included:
 - slug: unique test identifier
 - title: multilingual JSON object
@@ -235,13 +210,13 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - tags: multilingual array object
 - play_count: 0 (initial value)
 
-### 23. SQL File Naming Convention
+### 21. SQL File Naming Convention
 ✅ DO use this pattern: `insert-{test-name}-test.sql`
 Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 
 ## UI Consistency Requirements (CRITICAL)
 
-### 24. UI Component Copy Requirements
+### 22. UI Component Copy Requirements
 ❌ DON'T:
 - Create new UI components from scratch when copying existing tests
 - Modify button styles, colors, or layouts without explicit user request
@@ -254,7 +229,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Ensure UI consistency across all test components
 - Only modify content (text, data) while keeping UI structure identical
 
-### 25. UI Consistency Checklist
+### 23. UI Consistency Checklist
 ✅ DO verify these elements match the source template:
 - Start button styling and colors
 - Progress bar design and animation
@@ -267,7 +242,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - All spacing, padding, and margins
 - Font sizes, weights, and text styling
 
-### 26. UI Copy Process
+### 24. UI Copy Process
 ✅ DO follow this exact process:
 1. Copy the entire source component file (e.g., ConflictTestClient.tsx)
 2. Rename the component and file
@@ -278,7 +253,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 
 ## Multilingual UI Text Localization (CRITICAL)
 
-### 27. Complete UI Text Localization
+### 25. Complete UI Text Localization
 ❌ DON'T:
 - Leave hardcoded UI texts in components without multilingual support
 - Forget to translate button texts, section headers, and status messages
@@ -290,7 +265,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Cover all UI elements: start screen, progress, loading, results, sharing
 - Test all languages to ensure complete localization
 
-### 28. UI Text Localization Checklist
+### 26. UI Text Localization Checklist
 ✅ DO verify these elements are translated:
 - Start screen: "테스트 시작", "친구와 함께 해보기", "총 X명이 참여했어요!"
 - Progress screen: "진행률", "결과 분석 중..."
@@ -299,7 +274,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Action buttons: "결과 공유하기", "다시 테스트하기", "다른 테스트 보기"
 - Section headers: "🔥 요즘 인기 테스트 추천 톱5", "없음"
 
-### 29. Result Title Emoji Management
+### 27. Result Title Emoji Management
 ❌ DON'T:
 - Include emojis in result title fields that should be clean text
 - Mix emojis in titles with separate emoji fields
@@ -308,7 +283,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Use separate emoji field for display purposes
 - Remove emojis from all language title fields consistently
 
-### 30. React Rendering Error Prevention
+### 28. React Rendering Error Prevention
 ❌ DON'T:
 - Pass Record<string, string> objects directly as React children
 - Render multilingual objects without extracting locale-specific strings
@@ -318,7 +293,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Use proper type checking for multilingual data
 - Ensure all rendered content is string type, not object type
 
-### 31. Multilingual Development Process
+### 29. Multilingual Development Process
 ✅ DO follow this complete process:
 1. Create data structure with Record<string, string> from the beginning
 2. Implement all UI text localization during initial development
@@ -329,29 +304,22 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 
 ## TypeScript Build Error Prevention (CRITICAL)
 
-### 32. TypeScript Index Signature Errors
+### 30. TypeScript Build Error Prevention
 ❌ DON'T:
 - Use string variables to index objects without proper type checking
 - Access multilingual objects with dynamic locale strings without type assertions
 - Ignore TypeScript errors during development that become build failures
+- Skip build validation before deployment
+- Deploy without successful production build
 ✅ DO:
 - Use type assertions: `obj[locale as keyof typeof obj]`
 - Use proper type checking: `typeof field === 'string' ? field : field[locale] || field.ko`
 - Fix all TypeScript errors before attempting production builds
+- Always run `npm run build` before deployment
+- Validate production build locally before pushing
 - Test builds frequently during development
 
-### 33. Build Process Validation
-❌ DON'T:
-- Skip build validation before deployment
-- Ignore TypeScript compilation errors
-- Deploy without successful production build
-✅ DO:
-- Always run `npm run build` before deployment
-- Fix all TypeScript errors, not just warnings
-- Validate production build locally before pushing
-- Use build success as deployment gate
-
-### 34. Development Server Cache Issues
+### 31. Development Server Cache Issues
 ❌ DON'T:
 - Ignore "Cannot find module" errors in development
 - Continue development with corrupted cache
@@ -362,7 +330,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Clear node modules cache: `Remove-Item -Path node_modules\.cache -Recurse -Force`
 - Restart development server after cache clearing
 
-### 35. TypeScript Error Resolution Process
+### 32. TypeScript Error Resolution Process
 ✅ DO follow this exact process when TypeScript errors occur:
 1. Identify the specific TypeScript error and location
 2. Use proper type assertions for multilingual objects
@@ -371,7 +339,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 5. Clear cache if module errors persist
 6. Restart development server if needed
 
-### 36. Build Error Prevention Checklist
+### 33. Build Error Prevention Checklist
 ✅ DO verify these before deployment:
 - [ ] All TypeScript errors resolved
 - [ ] Production build successful (`npm run build`)
@@ -379,5 +347,89 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - [ ] All multilingual type assertions working
 - [ ] Development server running without errors
 - [ ] Cache cleared if module errors occurred
+
+## Multilingual Comma Pattern Implementation (CRITICAL)
+
+### 34. Language-Specific Comma Separation
+❌ DON'T:
+- Use only English comma (,) for all languages
+- Assume all languages use the same comma characters
+- Hardcode comma separation without considering language-specific punctuation
+✅ DO:
+- Support multiple comma types: English (,), Japanese (、), Chinese (，)
+- Use regex pattern for comprehensive comma detection: /,\s+|，\s*|、\s*/
+- Implement proper trimming and filtering for split results
+- Test comma separation in all supported languages
+
+### 35. Multilingual Comma Separation Implementation Pattern
+✅ DO use this pattern for splitting multilingual comma-separated content:
+```typescript
+const splitByCommas = (text: string) => {
+  // 쉼표 뒤 공백을 포함한 패턴으로 분할
+  return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+};
+
+// Usage for result sections:
+const resultSymptoms = splitByCommas(result.symptoms[locale] || result.symptoms.ko);
+const resultPattern = splitByCommas(result.patterns[locale] || result.patterns.ko);
+const resultRootCause = splitByCommas(result.causes[locale] || result.causes.ko);
+const resultSolution = splitByCommas(result.solutions[locale] || result.solutions.ko);
+```
+
+### 36. Data Structure Consistency (CRITICAL)
+❌ DON'T:
+- Mix string and Record<string, string> types in the same interface
+- Keep unused properties in interfaces (e.g., scores at question level when moved to options)
+- Assume data structure matches component expectations without verification
+✅ DO:
+- Ensure all multilingual fields use Record<string, string> consistently
+- Remove unused properties from interfaces when refactoring
+- Verify component rendering logic matches actual data structure
+- Test type assertions for all multilingual object access
+
+### 37. Multilingual Data Consistency (CRITICAL)
+❌ DON'T:
+- Use different comma patterns in data files vs component rendering
+- Mix English commas (,) with Chinese commas (，) in the same data
+- Assume all languages use the same punctuation conventions
+✅ DO:
+- Use consistent comma patterns in data files for each language
+- Chinese (zh-CN, zh-TW): Use Chinese comma (，) in data files
+- Japanese (ja): Use Japanese comma (、) in data files
+- Other languages: Use English comma (,) in data files
+- Test comma separation in all languages during development
+
+### 38. Component Data Access Pattern (CRITICAL)
+❌ DON'T:
+- Access multilingual objects without proper type checking
+- Assume data structure without verification
+- Mix string and object access patterns
+✅ DO:
+- Use consistent pattern: `typeof field === 'string' ? field : field[locale] || field.ko`
+- Extract text first, then split: `const text = field[locale] || field.ko; const array = text.split(pattern)`
+- Test all language combinations during development
+- Verify type safety for all multilingual object access
+
+### 39. Interface Design for Multilingual Support (CRITICAL)
+❌ DON'T:
+- Keep unused properties in interfaces after refactoring
+- Mix different data access patterns in the same interface
+- Assume interface matches actual usage without verification
+✅ DO:
+- Remove unused properties when refactoring data structure
+- Use consistent Record<string, string> for all multilingual fields
+- Verify interface matches component usage patterns
+- Test interface changes with build validation
+
+### 40. Development Process for Multilingual Features (CRITICAL)
+❌ DON'T:
+- Implement multilingual features without considering comma patterns
+- Skip language-specific testing during development
+- Assume all languages work the same way
+✅ DO:
+- Plan comma patterns from the beginning of multilingual implementation
+- Test comma separation in all supported languages
+- Use consistent patterns across all multilingual features
+- Validate build after each language-specific change
 
 These lessons ensure that future test development will have proper multilingual support from the beginning, avoiding the need for extensive refactoring later.
