@@ -127,7 +127,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         }
       ],
       type: 'website',
-      url: `${canonicalUrl}?v=${Date.now()}`,
+      url: canonicalUrl,
       siteName: 'QuizOasis',
       locale: locale,
     },
@@ -160,6 +160,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'og:image:alt': title,
       'twitter:image:src': thumbnailUrl,
       'twitter:image:alt': title,
+      'og:site_name': 'QuizOasis',
+      'og:url': canonicalUrl,
+      'og:type': 'website',
+      'apple-mobile-web-app-capable': 'yes',
+      'apple-mobile-web-app-status-bar-style': 'default',
+      'apple-mobile-web-app-title': 'QuizOasis',
+      'application-name': 'QuizOasis',
+      'msapplication-TileColor': '#6366f1',
+      'msapplication-TileImage': `${baseUrl}/favicon-192x192.png`,
+      'theme-color': '#6366f1',
     },
   };
 }

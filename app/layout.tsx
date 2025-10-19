@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     title: 'QuizOasis',
     description: '당신의 마음을 탐험하는 심리테스트의 오아시스',
     type: 'website',
+    url: 'https://myquizoasis.com',
+    siteName: 'QuizOasis',
+    locale: 'ko_KR',
   },
 };
 
