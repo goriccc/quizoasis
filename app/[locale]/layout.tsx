@@ -52,7 +52,7 @@ const getLocalizedMetadata = (locale: string) => {
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = params;
   const meta = getLocalizedMetadata(locale);
-  const baseUrl = 'https://quizoasis-coral.vercel.app';
+  const baseUrl = 'https://myquizoasis.com';
 
   return {
     title: meta.title,

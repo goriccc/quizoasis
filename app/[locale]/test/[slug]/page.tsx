@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}?v=${Date.now()}`;
   
 
-  const baseUrl = 'https://quizoasis-coral.vercel.app';
+  const baseUrl = 'https://myquizoasis.com';
   const canonicalUrl = `${baseUrl}/${locale}/test/${slug}`;
 
   return {
@@ -130,6 +130,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${canonicalUrl}?v=${Date.now()}`,
       siteName: 'QuizOasis',
       locale: locale,
+    },
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+        { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+        { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      ],
+      shortcut: '/favicon.ico',
     },
     twitter: {
       card: 'summary_large_image',
