@@ -31,7 +31,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     }));
     
     return [{ id: 'all', name: 'all' }, ...tagList];
-  }, [tests, locale]);
+  }, [tests]);
 
   const handleTagSelect = (tagId: string) => {
     setSelectedTag(tagId);

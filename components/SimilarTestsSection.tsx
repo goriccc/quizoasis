@@ -105,13 +105,14 @@ export default function SimilarTestsSection({
     };
 
     loadInitialTests();
-  }, [currentTestSlug, currentTestTags.join(','), locale]);
+  }, [currentTestSlug, currentTestTags, locale]);
 
   // 컴포넌트 언마운트 시 observer 정리
   useEffect(() => {
+    const observer = observerRef.current;
     return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
+      if (observer) {
+        observer.disconnect();
       }
     };
   }, []);

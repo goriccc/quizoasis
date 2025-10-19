@@ -79,7 +79,7 @@ export default function MBTITestClient({
         }));
       }
     }
-  }, [currentQuestion, started]);
+  }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용)
   useEffect(() => {
