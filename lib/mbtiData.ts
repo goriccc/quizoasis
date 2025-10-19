@@ -13,6 +13,7 @@ import { loveObstacleQuestions, loveObstacleResults } from './loveObstaclesData'
 import { jealousyQuestions, jealousyResults } from './jealousyData';
 import { apologyQuestions, apologyResults } from './apologyData';
 import { breakupQuestions, breakupResults } from './breakupData';
+import { firstImpressionQuestions, firstImpressionResults } from './firstImpressionData';
 
 // MBTI 질문 데이터
 export interface MBTIQuestion {
@@ -989,6 +990,10 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'breakup-coping-test': {
     questions: breakupQuestions,
     results: breakupResults
+  },
+  'first-impression-test': {
+    questions: firstImpressionQuestions,
+    results: firstImpressionResults
   }
 };
 
