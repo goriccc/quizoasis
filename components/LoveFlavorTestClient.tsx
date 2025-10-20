@@ -449,7 +449,7 @@ export default function LoveFlavorTestClient({
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">{t('recommendations.similarTests') || '유사한 다른 테스트'}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
-                  {similarTestsState.map((test) => (
+                  {similarTestsState.map((test: any) => (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                         <div className="relative aspect-video">
@@ -549,7 +549,7 @@ export default function LoveFlavorTestClient({
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">✅ {t('mbti.pros')}</h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultPros.map((pro, index) => (
+                  {resultPros.map((pro: string, index: number) => (
                     <span key={index} className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm">{pro[locale as keyof typeof pro] || pro.ko}</span>
                   ))}
                 </div>
@@ -557,7 +557,7 @@ export default function LoveFlavorTestClient({
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">⚠️ {t('mbti.cons')}</h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultCons.map((con, index) => (
+                  {resultCons.map((con: string, index: number) => (
                     <span key={index} className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm">{con[locale as keyof typeof con] || con.ko}</span>
                   ))}
                 </div>
@@ -577,8 +577,8 @@ export default function LoveFlavorTestClient({
                       <h3 className="text-base font-bold text-gray-800 mb-3">💖 {t('conflictTest.result.bestMatch')}</h3>
                       {Array.isArray(result.compatibility.best) && (
                         <div className="space-y-2">
-                          {result.compatibility.best.map(type => {
-                            const partner = results.find(r => r.type === type);
+                          {result.compatibility.best.map((type: string) => {
+                            const partner = results.find((r: any) => r.type === type);
                             if (!partner) return null;
                             const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
                             const compatibilityDesc = getCompatibilityDescription(result.type, type);
@@ -602,8 +602,8 @@ export default function LoveFlavorTestClient({
                       <h3 className="text-base font-bold text-gray-800 mb-3">😊 {t('conflictTest.result.goodMatch')}</h3>
                       {Array.isArray(result.compatibility.good) && (
                         <div className="space-y-2">
-                          {result.compatibility.good.map(type => {
-                            const partner = results.find(r => r.type === type);
+                          {result.compatibility.good.map((type: string) => {
+                            const partner = results.find((r: any) => r.type === type);
                             if (!partner) return null;
                             const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
                             const compatibilityDesc = getCompatibilityDescription(result.type, type);
@@ -629,8 +629,8 @@ export default function LoveFlavorTestClient({
                       <h3 className="text-base font-bold text-gray-800 mb-3">⚠️ {t('conflictTest.result.carefulMatch')}</h3>
                       {Array.isArray(result.compatibility.careful) && (
                         <div className="space-y-2">
-                          {result.compatibility.careful.map(type => {
-                            const partner = results.find(r => r.type === type);
+                          {result.compatibility.careful.map((type: string) => {
+                            const partner = results.find((r: any) => r.type === type);
                             if (!partner) return null;
                             const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
                             const compatibilityDesc = getCompatibilityDescription(result.type, type);

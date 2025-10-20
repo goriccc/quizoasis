@@ -145,12 +145,12 @@ export default function SpouseTestClient({
       const loadTests = async () => {
         try {
           const tests = await getTests();
-          const filteredTests = tests.filter(test => test.slug !== slug);
+          const filteredTests = tests.filter((test: any) => test.slug !== slug);
           
           const similarTestsList = filteredTests
-            .filter(test => test.category === 'love' || test.type === 'dating')
+            .filter((test: any) => test.category === 'love' || test.type === 'dating')
             .slice(0, 5)
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
@@ -159,9 +159,9 @@ export default function SpouseTestClient({
             }));
 
           const popularTestsList = filteredTests
-            .sort((a, b) => b.play_count - a.play_count)
+            .sort((a: any, b: any) => b.play_count - a.play_count)
             .slice(0, 5)
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
@@ -228,7 +228,7 @@ export default function SpouseTestClient({
       
       // 결과 계산
       const resultType = calculateSpouseResult(newAnswers);
-      const spouseResult = results.find(r => r.type === resultType);
+      const spouseResult = results.find((r: any) => r.type === resultType);
       
       // 결과 설정
       if (spouseResult) {
@@ -243,7 +243,7 @@ export default function SpouseTestClient({
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
-            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map(p => p.product_title));
+            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map((p: any) => p.product_title));
             setAliProducts(products);
           }).catch(error => {
             console.error('❌ 결과 상품 로드 실패:', error);
@@ -255,7 +255,7 @@ export default function SpouseTestClient({
   // 결과 계산
   const calculateResult = (finalAnswers: any[]) => {
     const resultType = calculateSpouseResult(finalAnswers);
-    const spouseResult = results.find(r => r.type === resultType);
+    const spouseResult = results.find((r: any) => r.type === resultType);
     
     if (spouseResult) {
       setResult(spouseResult);
@@ -535,7 +535,7 @@ export default function SpouseTestClient({
                 {t('recommendations.similarTests') || '유사한 다른 테스트'}
               </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
-                  {similarTestsState.map((test) => (
+                  {similarTestsState.map((test: any) => (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                         <div className="relative aspect-video">

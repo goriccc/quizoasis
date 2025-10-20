@@ -114,14 +114,14 @@ export default function StressTestClient({
       const loadTests = async () => {
         try {
           const allTests = await getTests();
-          const currentTest = allTests.find(t => t.slug === slug);
+          const currentTest = allTests.find((t: any) => t.slug === slug);
           
           if (!currentTest) {
             // 현재 테스트를 찾을 수 없으면 최신 테스트로 대체
             const latestTests = allTests
-              .filter(t => t.slug !== slug)
+              .filter((t: any) => t.slug !== slug)
               .slice(0, 10)
-              .map(t => ({
+              .map((t: any) => ({
                 id: t.id,
                 slug: t.slug,
                 title: t.title[locale] || t.title.ko,
@@ -141,19 +141,19 @@ export default function StressTestClient({
 
           // 유사한 테스트 찾기 (같은 태그를 가진 테스트들)
           const similarTestsList = allTests
-            .filter(t => t.slug !== slug) // 현재 테스트 제외
-            .filter(t => {
+            .filter((t: any) => t.slug !== slug) // 현재 테스트 제외
+            .filter((t: any) => {
               const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
               
               // 공통 태그가 있는지 확인
               return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some(tag => otherTestTags.includes(tag));
+                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
             })
-            .sort((a, b) => Math.random() - 0.5) // 랜덤 정렬
+            .sort((a: any, b: any) => Math.random() - 0.5) // 랜덤 정렬
             .slice(0, 5) // 최대 5개
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
@@ -162,12 +162,12 @@ export default function StressTestClient({
             }));
 
           // 인기 테스트 찾기 (유사한 테스트와 중복되지 않는 다른 테스트들)
-          const similarTestSlugs = new Set(similarTestsList.map(t => t.slug));
+          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
           const popularTestsList = allTests
-            .filter(t => t.slug !== slug && !similarTestSlugs.has(t.slug)) // 현재 테스트와 유사한 테스트 제외
-            .sort((a, b) => b.play_count - a.play_count) // 플레이 수 기준 정렬
+            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug)) // 현재 테스트와 유사한 테스트 제외
+            .sort((a: any, b: any) => b.play_count - a.play_count) // 플레이 수 기준 정렬
             .slice(0, 5) // 최대 5개
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,

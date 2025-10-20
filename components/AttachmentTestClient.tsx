@@ -159,7 +159,7 @@ export default function AttachmentTestClient({
         
         // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
         const sortedTests = filteredTests
-          .sort((a, b) => b.play_count - a.play_count)
+          .sort((a: any, b: any) => b.play_count - a.play_count)
           .slice(0, 5);
         
         setSimilarTestsState(sortedTests);
@@ -176,11 +176,11 @@ export default function AttachmentTestClient({
     const loadPopularTests = async () => {
       try {
         const allTests = await getTests();
-        const filteredTests = allTests.filter(test => test.slug !== slug);
+        const filteredTests = allTests.filter((test: any) => test.slug !== slug);
         
         // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
         const sortedTests = filteredTests
-          .sort((a, b) => b.play_count - a.play_count)
+          .sort((a: any, b: any) => b.play_count - a.play_count)
           .slice(0, 5);
         
         setPopularTestsState(sortedTests);

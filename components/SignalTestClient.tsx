@@ -144,13 +144,13 @@ export default function SignalTestClient({
       const loadTests = async () => {
         try {
           const allTests = await getTests();
-          const currentTest = allTests.find(t => t.slug === slug);
+          const currentTest = allTests.find((t: any) => t.slug === slug);
           
           if (!currentTest) {
             const latestTests = allTests
-              .filter(t => t.slug !== slug)
+              .filter((t: any) => t.slug !== slug)
               .slice(0, 10)
-              .map(t => ({
+              .map((t: any) => ({
                 id: t.id,
                 slug: t.slug,
                 title: t.title[locale] || t.title.ko,
@@ -168,18 +168,18 @@ export default function SignalTestClient({
             : currentTest.tags || [];
 
           const similarTestsList = allTests
-            .filter(t => t.slug !== slug)
-            .filter(t => {
+            .filter((t: any) => t.slug !== slug)
+            .filter((t: any) => {
               const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
               
               return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some(tag => otherTestTags.includes(tag));
+                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
             })
-            .sort((a, b) => Math.random() - 0.5)
+            .sort((a: any, b: any) => Math.random() - 0.5)
             .slice(0, 5)
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
@@ -187,12 +187,12 @@ export default function SignalTestClient({
               playCount: t.play_count
             }));
 
-          const similarTestSlugs = new Set(similarTestsList.map(t => t.slug));
+          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
           const popularTestsList = allTests
-            .filter(t => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a, b) => b.play_count - a.play_count)
+            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
+            .sort((a: any, b: any) => b.play_count - a.play_count)
             .slice(0, 5)
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
