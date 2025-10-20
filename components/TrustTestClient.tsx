@@ -888,39 +888,6 @@ export default function TrustTestClient({
                     </div>
                 )}
 
-                {result.compatibility.difficult && (
-                  <div className="bg-white rounded-xl shadow-lg p-4 mb-3 mt-3">
-                    <h3 className="text-base font-bold text-gray-800 mb-3">
-                      ❌ {t('trustTest.ui.difficultMatch')}
-                    </h3>
-                      {typeof result.compatibility.difficult === 'string' ? (
-                        <p className="text-sm text-gray-700">{result.compatibility.difficult}</p>
-                      ) : Array.isArray(result.compatibility.difficult) ? (
-                        <div className="space-y-2">
-                          {result.compatibility.difficult.map(type => {
-                            const partner = results.find(r => r.type === type);
-                            if (!partner) return null;
-                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                            return (
-                              <div key={type} className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg px-3 py-2">
-                                <div className="flex items-center gap-2.5">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}: {compatibilityDesc}</span>
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      ) : (
-                        <p className="text-sm text-gray-700">
-                          {typeof result.compatibility.difficult === 'string' 
-                            ? result.compatibility.difficult 
-                            : (result.compatibility.difficult as any)[locale] || (result.compatibility.difficult as any).ko}
-                        </p>
-                      )}
-                  </div>
-                )}
               </>
             )}
 

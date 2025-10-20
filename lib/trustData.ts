@@ -20,6 +20,7 @@ export interface TrustResult {
     best: string[];
     good: string[];
     careful: string[];
+    difficult?: string[];
   };
 }
 
