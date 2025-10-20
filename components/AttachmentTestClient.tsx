@@ -135,7 +135,7 @@ export default function AttachmentTestClient({
     const loadSimilarTests = async () => {
       try {
         const allTests = await getTests();
-        const filteredTests = allTests.filter(test => {
+        const filteredTests = allTests.filter((test: any) => {
           if (test.slug === slug) return false;
           
           // tags가 배열인지 확인하고, 아니면 파싱 시도
