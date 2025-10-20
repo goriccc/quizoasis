@@ -39,7 +39,7 @@ export default async function HomePage({ params }: Props) {
       console.log('첫 번째 테스트:', dbTests[0]);
       
       // DB 테스트를 QuizTest 형식으로 변환
-      const tests: QuizTest[] = dbTests.map(dbTest => 
+      const tests: QuizTest[] = dbTests.map((dbTest: any) => 
         convertDBTestToQuizTest(dbTest, locale as Locale)
       );
       
