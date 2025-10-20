@@ -433,3 +433,142 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - Validate build after each language-specific change
 
 These lessons ensure that future test development will have proper multilingual support from the beginning, avoiding the need for extensive refactoring later.
+
+## Multilingual Quote Handling (CRITICAL)
+
+### 41. Quote Escaping in Multilingual Text
+❌ DON'T:
+- Use double quotes ("") inside multilingual text strings
+- Use language-specific quote characters (Chinese quotes "") 
+- Use double quotes ("") in Vietnamese or Indonesian text
+- Ignore TypeScript syntax errors from quote conflicts
+✅ DO:
+- Use backslash escaping for all quotes: \"
+- Apply consistent quote pattern across all languages
+- Test build after multilingual text changes
+
+### 42. Correct Quote Pattern Examples
+✅ DO use this pattern for all multilingual text:
+```typescript
+// ❌ WRONG - causes build errors
+'zh-CN': "你是否说过"只相信我"？",
+vi: ""Người đó thực sự đáng tin cậy"",
+id: ""Orang itu benar-benar dapat dipercaya""
+
+// ✅ CORRECT - uses proper escaping
+'zh-CN': "你是否说过\"只相信我\"？",
+vi: "\"Người đó thực sự đáng tin certified\"",
+id: "\"Orang itu benar-benar dapat dipercaya\""
+```
+
+### 43. Language-Specific Quote Guidelines
+✅ DO follow these patterns:
+- **Korean/Japanese**: Use 「」 brackets (no issues)
+- **English**: Use \" escaping
+- **Chinese**: Use \" escaping (never use Chinese quotes "")
+- **Vietnamese**: Use \" escaping  
+- **Indonesian**: Use \" escaping
+
+### 44. Build Error Prevention for Quotes
+✅ DO verify before build:
+- [ ] All multilingual text uses \" escaping
+- [ ] No double quotes ("") in any language text
+- [ ] TypeScript syntax validation passes
+- [ ] npm run build succeeds
+
+## Trust Test Development Mistakes and Lessons (CRITICAL)
+
+### 45. Result Screen Display Issues
+❌ DON'T:
+- Display variable names instead of actual values in template literals
+- Use incorrect variable interpolation syntax (e.g., [variableName] instead of ${variableName})
+- Show compatibility descriptions as variable names (e.g., trustTest.result.compatibility.Type1_Type1)
+- Leave result descriptions empty or incomplete
+✅ DO:
+- Ensure proper variable interpolation: ${variableName} not [variableName]
+- Use correct variable extraction: typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko
+- Hardcode compatibility descriptions in getCompatibilityDescription function
+- Add complete detailed descriptions to all result types in data files
+
+### 46. Result Screen Layout and Spacing Issues
+❌ DON'T:
+- Remove spacing classes (mb-3, mt-3) without considering layout impact
+- Let sections stick together after removing elements
+- Use inconsistent spacing patterns across compatibility sections
+✅ DO:
+- Maintain consistent spacing: mb-3 for sections, mt-3 for top margins
+- Test layout changes thoroughly before finalizing
+- Ensure proper spacing between all result sections
+
+### 47. Trust Score Display Format
+❌ DON'T:
+- Use number type for trust scores when string format is required
+- Display raw numbers instead of star ratings
+✅ DO:
+- Use string type for trustScore in interface: trustScore: string
+- Format scores as star ratings: "★★★★★ (5/5)" instead of 5
+- Update all trustScore values to string format in data files
+
+### 48. Compatibility Section Rendering
+❌ DON'T:
+- Display compatibility items on multiple lines
+- Show raw variable names in compatibility descriptions
+- Use translation keys that return empty strings
+✅ DO:
+- Render each compatibility item on a single line
+- Hardcode compatibility descriptions in getCompatibilityDescription function
+- Use proper JSX structure for single-line display
+
+### 49. Multilingual UI Text Coverage
+❌ DON'T:
+- Miss UI elements during multilingual implementation
+- Leave hardcoded Korean text in components
+- Forget to add new translation keys to all language files
+- Use wrong translation keys for different contexts
+✅ DO:
+- Cover ALL UI text elements: buttons, headers, messages, alerts
+- Add translation keys to all 7 language files consistently
+- Use appropriate translation keys for different contexts (similarTests vs similarTestsTop5)
+- Test all languages during development
+
+### 50. Debug Log Cleanup
+❌ DON'T:
+- Leave console.log statements in production code
+- Forget to remove debug logs after development
+✅ DO:
+- Remove all console.log statements before finalizing
+- Clean up debug logs in production builds
+- Use proper logging practices for development only
+
+### 51. Component State Management
+❌ DON'T:
+- Call setShowResult(true) and setShowResultPopup(true) in handleAnswer
+- Have conflicting state updates between different functions
+- Forget to set loading spinner state properly
+✅ DO:
+- Let handleShowResult manage result screen transitions
+- Remove redundant state updates from handleAnswer
+- Ensure proper loading spinner state management
+- Test complete user flow from start to result
+
+### 52. Data Structure Consistency
+❌ DON'T:
+- Mix string and Record<string, string> types inconsistently
+- Change data structure without updating component access patterns
+- Assume data structure matches component expectations
+✅ DO:
+- Use consistent Record<string, string> for all multilingual fields
+- Update component rendering logic when changing data structure
+- Verify data access patterns match actual data structure
+- Test all language combinations during development
+
+### 53. File Size and Operation Management
+❌ DON'T:
+- Create massive files that cause "Tool call ended before result was received" errors
+- Try to implement everything in a single large operation
+- Work with files over 1000 lines in single operations
+✅ DO:
+- Break down large implementations into small, manageable steps
+- Implement features incrementally, step by step
+- Process one language at a time for multilingual content
+- Use incremental updates and frequent commits

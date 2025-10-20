@@ -41,6 +41,74 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "trustTest": {
+    "startMessage": {
+      "title": "「Mọi người có thể tin tưởng và dựa vào bạn bao nhiêu?」",
+      "line1": "Những người giữ lời hứa như mạng sống, những người mang bí mật đến mộ phần,",
+      "line2": "những người có ý tốt nhưng hay quên, những người thấy trách nhiệm nặng nề vì tự do.",
+      "line3": "Bạn là kiểu người như thế nào?",
+      "line4": "Nhận lời khuyên để trở thành người đáng tin cậy hơn!",
+      "line5": "Chỉ mất 3 phút! Hãy trả lời thành thật 😊"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "totalParticipants": "Tổng {count} người đã tham gia!",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "viewResults": "Xem kết quả phân tích",
+      "yourResult": "Kết quả của bạn",
+      "trustScore": "Điểm tin cậy",
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "bestMatch": "Kết hợp tốt nhất",
+      "goodMatch": "Kết hợp tốt",
+      "cautionNeeded": "Cần thận trọng",
+      "difficultMatch": "Kết hợp khó khăn",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài kiểm tra khác",
+      "none": "Không có",
+      "testCompleted": "🎉 Hoàn thành kiểm tra!",
+      "similarTests": "Bài kiểm tra tương tự",
+      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất"
+    },
+    "result": {
+      "shareMessage": "Độ tin cậy của tôi là {type}! 😊 Bạn đáng tin cậy đến mức nào? Hãy so sánh độ tin cậy của chúng ta 💕",
+      "compatibility": {
+        "Type1_Type1": "Tin tưởng tuyệt đối lẫn nhau",
+        "Type1_Type2": "Mối quan hệ tin cậy hoàn hảo",
+        "Type1_Type3": "Nhận sự giúp đỡ phát triển",
+        "Type1_Type6": "Có thể cảm thấy ngột ngạt",
+        "Type2_Type1": "Mối quan hệ tin cậy hoàn hảo",
+        "Type2_Type2": "Dựa vào nhau một cách thoải mái",
+        "Type2_Type3": "Phát triển với sự giúp đỡ",
+        "Type2_Type5": "Khác biệt giá trị",
+        "Type3_Type1": "Tiêu chuẩn cao khó khăn",
+        "Type3_Type2": "Phát triển với sự giúp đỡ",
+        "Type3_Type3": "Phát triển cùng nhau",
+        "Type4_Type4": "Không gánh nặng lẫn nhau",
+        "Type4_Type5": "Mối quan hệ thực tế",
+        "Type4_Type1": "Xung đột giá trị",
+        "Type5_Type2": "Xung đột tin cậy",
+        "Type5_Type4": "Không gánh nặng",
+        "Type5_Type5": "Hiểu nhau",
+        "Type5_Type1": "Xung đột tin cậy",
+        "Type6_Type1": "Xung đột tin cậy",
+        "Type6_Type2": "Xung đột tin cậy",
+        "Type6_Type4": "Mối quan hệ không gánh nặng",
+        "Type6_Type6": "Hiểu nhau"
+      }
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareError": "Tính năng chia sẻ không khả dụng.",
+      "wechatInstructions": "Đã sao chép liên kết WeChat vào clipboard. Dán trong WeChat!"
+    }
+  },
   "spouseTest": {
     "startMessage": {
       "title": "「Người sẽ cùng bạn trải qua cuộc đời, kiểu nào sẽ tốt?」",

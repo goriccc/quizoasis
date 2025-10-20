@@ -41,6 +41,74 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "trustTest": {
+    "startMessage": {
+      "title": "\"How much can people trust and rely on you?\"",
+      "line1": "People who keep promises religiously, people who take secrets to the grave,",
+      "line2": "people with good intentions but who forget things, people who find responsibility burdensome because they're free-spirited.",
+      "line3": "What kind of person are you?",
+      "line4": "Get tips on becoming a more trustworthy person!",
+      "line5": "Takes only 3 minutes! Please answer honestly 😊"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "totalParticipants": "{count} people participated!",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "viewResults": "View Analysis Results",
+      "yourResult": "Your Result",
+      "trustScore": "Trust Score",
+      "pros": "Pros",
+      "cons": "Cons",
+      "advice": "Advice",
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match",
+      "cautionNeeded": "Caution Needed",
+      "difficultMatch": "Difficult Match",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "View Other Tests",
+      "none": "None",
+      "testCompleted": "🎉 Test completed!",
+      "similarTests": "Similar Tests",
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    },
+    "result": {
+      "shareMessage": "My trustworthiness is {type}! 😊 How trustworthy are you? Let's compare our trustworthiness 💕",
+      "compatibility": {
+        "Type1_Type1": "Absolute mutual trust",
+        "Type1_Type2": "Perfect trust relationship",
+        "Type1_Type3": "Help with growth",
+        "Type1_Type6": "May feel suffocating",
+        "Type2_Type1": "Perfect trust relationship",
+        "Type2_Type2": "Comfortably rely on each other",
+        "Type2_Type3": "Grow with help",
+        "Type2_Type5": "Value differences",
+        "Type3_Type1": "High standards are difficult",
+        "Type3_Type2": "Grow with help",
+        "Type3_Type3": "Grow together",
+        "Type4_Type4": "No burden on each other",
+        "Type4_Type5": "Realistic relationship",
+        "Type4_Type1": "Value conflicts",
+        "Type5_Type2": "Trust conflicts",
+        "Type5_Type4": "No burden",
+        "Type5_Type5": "Understand each other",
+        "Type5_Type1": "Trust conflicts",
+        "Type6_Type1": "Trust conflicts",
+        "Type6_Type2": "Trust conflicts",
+        "Type6_Type4": "Burden-free relationship",
+        "Type6_Type6": "Understand each other"
+      }
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareError": "Sharing feature is not available.",
+      "wechatInstructions": "WeChat link copied to clipboard. Paste it in WeChat!"
+    }
+  },
   "spouseTest": {
     "startMessage": {
       "title": "「What type of person would be good to spend your life with?」",

@@ -35,7 +35,60 @@ ja: '「忙しいんだろう」と余裕を持って待つ',
 zh: '「他们一定很忙」 平静地等待',
 ```
 
-### 3. localeKey 정의 및 타입 캐스팅
+### 3. SQL 파일 구조 및 태그 규칙
+**문제**: SQL 파일이 다른 테스트들과 다른 형식으로 작성되거나 태그가 시나리오와 다름
+
+**규칙**:
+- SQL 파일은 반드시 다른 테스트들과 동일한 구조로 작성
+- 모든 언어 지원 (ko, en, ja, zh-CN, zh-TW, vi, id)
+- 태그는 시나리오에서 지정한 것과 정확히 일치해야 함
+
+```sql
+-- ✅ 올바른 SQL 구조 예시
+INSERT INTO tests (
+  slug,
+  title,
+  description,
+  thumbnail,
+  type,
+  category,
+  tags,
+  play_count
+) VALUES (
+  'test-slug',
+  '{
+    "ko": "한국어 제목",
+    "en": "English Title",
+    "ja": "日本語タイトル",
+    "zh-CN": "中文标题",
+    "zh-TW": "繁體中文標題",
+    "vi": "Tiếng Việt Tiêu đề",
+    "id": "Judul Bahasa Indonesia"
+  }',
+  '{
+    "ko": "한국어 설명...",
+    "en": "English description...",
+    ...
+  }',
+  'test_xxx_filename.jpg',
+  'dating',
+  'love',
+  '{
+    "ko": ["시나리오에서 지정한 태그"],
+    "en": ["Scenario specified tag"],
+    ...
+  }',
+  0
+);
+```
+
+**체크**: 
+- [ ] SQL 파일이 다른 테스트들과 동일한 구조인지 확인
+- [ ] 모든 7개 언어가 포함되어 있는지 확인
+- [ ] 태그가 시나리오와 정확히 일치하는지 확인
+- [ ] 큰따옴표 스타일 규칙 준수 (한국어/영어: "", 나머지: 「」)
+
+### 4. localeKey 정의 및 타입 캐스팅
 **문제**: `localeKey`가 정의되지 않거나 타입 에러 발생
 
 ```typescript
@@ -51,7 +104,7 @@ const localeKey = getLocaleKey(locale);
 result.title[localeKey as keyof typeof result.title]
 ```
 
-### 4. messages 파일 번역 누락
+### 5. messages 파일 번역 누락
 **문제**: 일부 언어의 messages 파일에 번역 추가 안됨
 **해결**: 7개 언어 모두 동시에 번역 추가
 

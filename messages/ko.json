@@ -44,6 +44,74 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "trustTest": {
+    "startMessage": {
+      "title": "\"사람들이 당신을 얼마나 믿고 의지할 수 있을까?\"",
+      "line1": "약속을 칼같이 지키는 사람, 비밀을 무덤까지 가져가는 사람,",
+      "line2": "의도는 좋지만 깜빡하는 사람, 자유로워서 책임이 부담스러운 사람.",
+      "line3": "당신은 어떤 사람인가요?",
+      "line4": "더 믿음직한 사람이 되는 팁을 받아보세요!",
+      "line5": "소요 시간 단 3분! 솔직하게 답변해주세요 😊"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "shareWithFriends": "친구와 함께 해보기",
+      "totalParticipants": "총 {count}명이 참여했어요!",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "viewResults": "분석 결과 보기",
+      "yourResult": "당신의 결과",
+      "trustScore": "신뢰 점수",
+      "pros": "장점",
+      "cons": "단점",
+      "advice": "조언",
+      "bestMatch": "최고 궁합",
+      "goodMatch": "좋은 궁합",
+      "cautionNeeded": "주의 필요",
+      "difficultMatch": "어려운 궁합",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기",
+      "none": "없음",
+      "testCompleted": "🎉 테스트 완료!",
+      "similarTests": "유사한 다른 테스트",
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    },
+    "result": {
+      "shareMessage": "나의 신뢰도는 {type}! 😊 너는 얼마나 믿음직한 사람? 우리 신뢰도 비교해보자 💕",
+      "compatibility": {
+        "Type1_Type1": "서로 절대 신뢰",
+        "Type1_Type2": "완벽한 신뢰 관계",
+        "Type1_Type3": "성장 도움 받음",
+        "Type1_Type6": "답답함 느낄 수 있음",
+        "Type2_Type1": "완벽한 신뢰 관계",
+        "Type2_Type2": "서로 편하게 의지",
+        "Type2_Type3": "도움 받으며 성장",
+        "Type2_Type5": "가치관 차이",
+        "Type3_Type1": "기준이 높아 힘듦",
+        "Type3_Type2": "도움 받으며 성장",
+        "Type3_Type3": "함께 성장",
+        "Type4_Type4": "서로 부담 없음",
+        "Type4_Type5": "현실적 관계",
+        "Type4_Type1": "가치관 충돌",
+        "Type5_Type2": "신뢰 충돌",
+        "Type5_Type4": "부담 없음",
+        "Type5_Type5": "서로 이해함",
+        "Type5_Type1": "신뢰 충돌",
+        "Type6_Type1": "신뢰 충돌",
+        "Type6_Type2": "신뢰 충돌",
+        "Type6_Type4": "부담 없는 관계",
+        "Type6_Type6": "서로 이해함"
+      }
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareError": "공유 기능을 사용할 수 없습니다.",
+      "wechatInstructions": "위챗 링크가 클립보드에 복사되었습니다. 위챗에서 붙여넣기 하세요!"
+    }
+  },
   "spouseTest": {
     "startMessage": {
       "title": "「평생을 함께할 사람, 어떤 유형이 좋을까?」",

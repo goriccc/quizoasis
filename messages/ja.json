@@ -41,6 +41,74 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "trustTest": {
+    "startMessage": {
+      "title": "「人々はあなたをどれくらい信頼し、頼ることができるでしょうか？」",
+      "line1": "約束を守る人、秘密を墓まで持参する人、",
+      "line2": "良い意図はあるが忘れがちな人、自由で責任が重荷に感じる人。",
+      "line3": "あなたはどんな人ですか？",
+      "line4": "より信頼できる人になるためのヒントを受け取ってください！",
+      "line5": "所要時間わずか3分！正直に答えてください 😊"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "totalParticipants": "総{count}人が参加しました！",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "viewResults": "分析結果を見る",
+      "yourResult": "あなたの結果",
+      "trustScore": "信頼度スコア",
+      "pros": "長所",
+      "cons": "短所",
+      "advice": "アドバイス",
+      "bestMatch": "最高の相性",
+      "goodMatch": "良い相性",
+      "cautionNeeded": "注意が必要",
+      "difficultMatch": "難しい相性",
+      "shareResult": "結果を共有",
+      "retake": "再テスト",
+      "otherTests": "他のテストを見る",
+      "none": "なし",
+      "testCompleted": "🎉 テスト完了！",
+      "similarTests": "類似テスト",
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 人気テストおすすめトップ5"
+    },
+    "result": {
+      "shareMessage": "私の信頼度は{type}！😊 あなたはどれくらい信頼できる人？信頼度を比べてみよう 💕",
+      "compatibility": {
+        "Type1_Type1": "お互い絶対信頼",
+        "Type1_Type2": "完璧な信頼関係",
+        "Type1_Type3": "成長の助けを受ける",
+        "Type1_Type6": "息苦しく感じる可能性",
+        "Type2_Type1": "完璧な信頼関係",
+        "Type2_Type2": "お互い気楽に頼る",
+        "Type2_Type3": "助けを受けながら成長",
+        "Type2_Type5": "価値観の違い",
+        "Type3_Type1": "高い基準で困難",
+        "Type3_Type2": "助けを受けながら成長",
+        "Type3_Type3": "一緒に成長",
+        "Type4_Type4": "お互い負担なし",
+        "Type4_Type5": "現実的な関係",
+        "Type4_Type1": "価値観の衝突",
+        "Type5_Type2": "信頼の衝突",
+        "Type5_Type4": "負担なし",
+        "Type5_Type5": "お互い理解し合う",
+        "Type5_Type1": "信頼の衝突",
+        "Type6_Type1": "信頼の衝突",
+        "Type6_Type2": "信頼の衝突",
+        "Type6_Type4": "負担のない関係",
+        "Type6_Type6": "お互い理解し合う"
+      }
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareError": "共有機能を使用できません。",
+      "wechatInstructions": "WeChatリンクがクリップボードにコピーされました。WeChatに貼り付けてください！"
+    }
+  },
   "spouseTest": {
     "startMessage": {
       "title": "「一生を共にする人、どんなタイプがいいかな？」",

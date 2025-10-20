@@ -86,7 +86,12 @@ export function getThumbnailUrl(thumbnail: string): string {
     return `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${thumbnail}?v=${version}`;
   }
   
-  // Supabase가 없으면 기본 이미지 사용
+  // Supabase가 없으면 기본 이미지 사용 (Unsplash에서 신뢰 관련 이미지)
+  if (thumbnail === 'test_043_trustworthiness.jpg') {
+    return 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=680&h=384&fit=crop&crop=center';
+  }
+  
+  // 기본 이미지 사용
   return 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=680&h=384&fit=crop&crop=center';
 }
 

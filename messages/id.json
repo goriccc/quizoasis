@@ -41,6 +41,74 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "trustTest": {
+    "startMessage": {
+      "title": "「Seberapa banyak orang dapat mempercayai dan bergantung pada Anda?」",
+      "line1": "Orang yang menepati janji seperti nyawa, orang yang membawa rahasia ke kubur,",
+      "line2": "orang dengan niat baik tapi sering lupa, orang yang merasa tanggung jawab memberatkan karena bebas.",
+      "line3": "Anda seperti apa?",
+      "line4": "Dapatkan tips untuk menjadi orang yang lebih dapat dipercaya!",
+      "line5": "Hanya 3 menit! Jawablah dengan jujur 😊"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "totalParticipants": "Total {count} orang telah berpartisipasi!",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "viewResults": "Lihat Hasil Analisis",
+      "yourResult": "Hasil Anda",
+      "trustScore": "Skor Kepercayaan",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "advice": "Saran",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik",
+      "cautionNeeded": "Perlu Hati-hati",
+      "difficultMatch": "Kecocokan Sulit",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lainnya",
+      "none": "Tidak ada",
+      "testCompleted": "🎉 Tes selesai!",
+      "similarTests": "Tes Serupa",
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
+    },
+    "result": {
+      "shareMessage": "Tingkat kepercayaan saya adalah {type}! 😊 Seberapa dapat dipercaya Anda? Mari kita bandingkan tingkat kepercayaan kita 💕",
+      "compatibility": {
+        "Type1_Type1": "Saling percaya mutlak",
+        "Type1_Type2": "Hubungan kepercayaan sempurna",
+        "Type1_Type3": "Mendapat bantuan pertumbuhan",
+        "Type1_Type6": "Mungkin merasa sesak",
+        "Type2_Type1": "Hubungan kepercayaan sempurna",
+        "Type2_Type2": "Saling bergantung dengan nyaman",
+        "Type2_Type3": "Tumbuh dengan bantuan",
+        "Type2_Type5": "Perbedaan nilai",
+        "Type3_Type1": "Standar tinggi sulit",
+        "Type3_Type2": "Tumbuh dengan bantuan",
+        "Type3_Type3": "Tumbuh bersama",
+        "Type4_Type4": "Tidak saling membebani",
+        "Type4_Type5": "Hubungan realistis",
+        "Type4_Type1": "Konflik nilai",
+        "Type5_Type2": "Konflik kepercayaan",
+        "Type5_Type4": "Tidak membebani",
+        "Type5_Type5": "Saling memahami",
+        "Type5_Type1": "Konflik kepercayaan",
+        "Type6_Type1": "Konflik kepercayaan",
+        "Type6_Type2": "Konflik kepercayaan",
+        "Type6_Type4": "Hubungan tidak membebani",
+        "Type6_Type6": "Saling memahami"
+      }
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "shareError": "Fitur berbagi tidak tersedia.",
+      "wechatInstructions": "Tautan WeChat telah disalin ke clipboard. Tempel di WeChat!"
+    }
+  },
   "spouseTest": {
     "startMessage": {
       "title": "「Orang yang akan menghabiskan hidup bersama, tipe apa yang baik?」",
