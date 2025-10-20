@@ -144,13 +144,13 @@ export default function CrushTestClient({
       const loadTests = async () => {
         try {
           const allTests = await getTests();
-          const currentTest = allTests.find(t => t.slug === slug);
+          const currentTest = allTests.find((t: any) => t.slug === slug);
           
           if (!currentTest) {
             const latestTests = allTests
-              .filter(t => t.slug !== slug)
+              .filter((t: any) => t.slug !== slug)
               .slice(0, 10)
-              .map(t => ({
+              .map((t: any) => ({
                 id: t.id,
                 slug: t.slug,
                 title: t.title[locale] || t.title.ko,
@@ -168,18 +168,18 @@ export default function CrushTestClient({
             : currentTest.tags || [];
 
           const similarTestsList = allTests
-            .filter(t => t.slug !== slug)
-            .filter(t => {
+            .filter((t: any) => t.slug !== slug)
+            .filter((t: any) => {
               const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
               
               return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some(tag => otherTestTags.includes(tag));
+                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
             })
-            .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+            .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
             .slice(0, 5)
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
@@ -187,12 +187,12 @@ export default function CrushTestClient({
               playCount: t.play_count
             }));
 
-          const similarTestSlugs = new Set(similarTestsList.map(t => t.slug));
+          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
           const popularTestsList = allTests
-            .filter(t => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a, b) => b.play_count - a.play_count)
+            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
+            .sort((a: any, b: any) => b.play_count - a.play_count)
             .slice(0, 5)
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
@@ -259,7 +259,7 @@ export default function CrushTestClient({
       
       // 결과 계산
       const resultType = calculateCrushResult(newAnswers);
-      const crushResult = results.find(r => r.type === resultType);
+      const crushResult = results.find((r: any) => r.type === resultType);
       
       // 결과 설정
       if (crushResult) {
@@ -274,7 +274,7 @@ export default function CrushTestClient({
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
-            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map(p => p.product_title));
+            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map((p: any) => p.product_title));
             setAliProducts(products);
           }).catch(error => {
             console.error('❌ 결과 상품 로드 실패:', error);
@@ -855,7 +855,7 @@ export default function CrushTestClient({
     // 다국어 쉼표 처리: 영어 쉼표+공백, 일본어 쉼표, 중국어 쉼표 모두 지원
     const splitByCommas = (text: string) => {
       // 쉼표 뒤 공백을 포함한 패턴으로 분할
-      return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+      return text.split(/,\s+|，\s*|、\s*/).map((item: string) => item.trim()).filter((item: string) => item.length > 0);
     };
     
     const resultCurrentState = splitByCommas(typeof result.currentState === 'string' ? result.currentState : result.currentState[locale] || result.currentState.ko);
