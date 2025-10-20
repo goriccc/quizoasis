@@ -39,7 +39,7 @@ export async function GET(request: NextRequest) {
     }
     
     // DB 테스트를 QuizTest 형식으로 변환
-    const allTests = dbTests.map(dbTest => 
+    const allTests = dbTests.map((dbTest: any) => 
       convertDBTestToQuizTest(dbTest, locale)
     );
 
