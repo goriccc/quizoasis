@@ -169,8 +169,8 @@ export default function ApologyTestClient({
             : currentTest.tags || [];
 
           const similarTestsList = allTests
-            .filter(t => t.slug !== slug)
-            .filter(t => {
+            .filter((t: any) => t.slug !== slug)
+            .filter((t: any) => {
               const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
