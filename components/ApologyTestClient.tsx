@@ -145,13 +145,13 @@ export default function ApologyTestClient({
       const loadTests = async () => {
         try {
           const allTests = await getTests();
-          const currentTest = allTests.find(t => t.slug === slug);
+          const currentTest = allTests.find((t: any) => t.slug === slug);
           
           if (!currentTest) {
             const latestTests = allTests
-              .filter(t => t.slug !== slug)
+              .filter((t: any) => t.slug !== slug)
               .slice(0, 10)
-              .map(t => ({
+              .map((t: any) => ({
                 id: t.id,
                 slug: t.slug,
                 title: t.title[locale] || t.title.ko,
