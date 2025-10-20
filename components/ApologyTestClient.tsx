@@ -178,9 +178,9 @@ export default function ApologyTestClient({
               return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
                 currentTestTags.some(tag => otherTestTags.includes(tag));
             })
-            .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+            .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
             .slice(0, 5)
-            .map(t => ({
+            .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
