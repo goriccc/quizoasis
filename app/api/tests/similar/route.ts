@@ -12,8 +12,14 @@ export async function GET(request: NextRequest) {
     const locale = searchParams.get('locale') as Locale || 'ko';
     const excludeSlug = searchParams.get('excludeSlug');
 
+    // 타임아웃 설정 (10초)
+    const timeoutPromise = new Promise((_, reject) => 
+      setTimeout(() => reject(new Error('API Timeout')), 10000)
+    );
+
     // Supabase에서 모든 테스트 가져오기
-    const dbTests = await getTests();
+    const fetchTestsPromise = getTests();
+    const dbTests = await Promise.race([fetchTestsPromise, timeoutPromise]) as any;
     
     // DB 테스트를 QuizTest 형식으로 변환
     const allTests = dbTests.map(dbTest => 
