@@ -154,45 +154,15 @@ export default function HumorCodeTestClient({
 
   // 유사한 테스트와 인기 테스트 로드
   useEffect(() => {
-    if (similarTests.length === 0) {
-      const loadTests = async () => {
-        try {
-          const allTests = await getTests();
-          const currentTest = allTests.find(t => t.slug === slug);
-          
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter(t => t.slug !== slug)
-              .slice(0, 10)
-              .map(t => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
+    const loadTests = async () => {
+      try {
+        const allTests = await getTests();
+        const currentTest = allTests.find(t => t.slug === slug);
+        
+        if (!currentTest) {
+          const latestTests = allTests
             .filter(t => t.slug !== slug)
-            .filter(t => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some(tag => otherTestTags.includes(tag));
-            })
-            .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-            .slice(0, 5)
+            .slice(0, 10)
             .map(t => ({
               id: t.id,
               slug: t.slug,
@@ -200,30 +170,58 @@ export default function HumorCodeTestClient({
               thumbnail: t.thumbnail,
               playCount: t.play_count
             }));
-
-          const similarTestSlugs = new Set(similarTestsList.map(t => t.slug));
-          const popularTestsList = allTests
-            .filter(t => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a, b) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map(t => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }));
-
-          setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
+          
+          setSimilarTestsState(latestTests.slice(0, 5));
+          setPopularTestsState(latestTests.slice(5, 10));
+          return;
         }
-      };
 
-      loadTests();
-    }
-  }, [slug, locale, similarTests]);
+        const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
+          ? currentTest.tags[locale] || currentTest.tags.ko || []
+          : currentTest.tags || [];
+
+        const similarTestsList = allTests
+          .filter(t => t.slug !== slug)
+          .filter(t => {
+            const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
+              ? t.tags[locale] || t.tags.ko || []
+              : t.tags || [];
+            
+            return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
+              currentTestTags.some(tag => otherTestTags.includes(tag));
+          })
+          .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+          .slice(0, 5)
+          .map(t => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count
+          }));
+
+        const similarTestSlugs = new Set(similarTestsList.map(t => t.slug));
+        const popularTestsList = allTests
+          .filter(t => t.slug !== slug && !similarTestSlugs.has(t.slug))
+          .sort((a, b) => b.play_count - a.play_count)
+          .slice(0, 5)
+          .map(t => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count
+          }));
+
+        setSimilarTestsState(similarTestsList);
+        setPopularTestsState(popularTestsList);
+      } catch (error) {
+        console.error('테스트 로드 실패:', error);
+      }
+    };
+
+    loadTests();
+  }, [slug, locale]);
 
   // 3초 지연 로딩 스피너
   useEffect(() => {
