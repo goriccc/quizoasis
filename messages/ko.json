@@ -44,6 +44,47 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "honestyTest": {
+    "startMessage": {
+      "title": "\"진실을 말할까, 마음을 지킬까?\"",
+      "line1": "\"솔직하게 말하는 게 진짜 친구지!\"",
+      "line2": "\"배려 없는 솔직함은 그냥 폭력이야.\"",
+      "line3": "어떤 사람은 진실이 최고라고 생각하고,",
+      "line4": "어떤 사람은 마음을 다치지 않게 하는 게 우선입니다.",
+      "line5": "당신은 솔직함과 배려 중 무엇을 더 중시하나요?",
+      "line6": "소요 시간 단 2분! 빠르게 직관으로 선택하세요 ⚖️"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "testCompleted": "🎉 테스트 완료!",
+      "viewResults": "분석 결과 보기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5",
+      "playWithFriends": "친구와 함께 해보기",
+      "totalParticipants": "총 {count}명이 참여했어요!"
+    },
+    "result": {
+      "yourResult": "당신의 결과",
+      "pros": "✅ 장점",
+      "cons": "⚠️ 단점",
+      "advice": "💡 조언",
+      "relationshipCompatibility": "관계 궁합",
+      "bestMatch": "💖 잘 맞음",
+      "goodMatch": "😊 보통",
+      "difficultMatch": "⚠️ 힘듦"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "shareError": "공유 기능을 사용할 수 없습니다.",
+      "wechatInstructions": "링크를 복사해서 위챗으로 전송하세요!"
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "title": "\"다른 사람의 감정, 얼마나 느낄 수 있나요?\"",

@@ -41,6 +41,47 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "honestyTest": {
+    "startMessage": {
+      "title": "\"Tell the truth or protect feelings?\"",
+      "line1": "\"Honest speaking is true friendship!\"",
+      "line2": "\"Honesty without consideration is just violence.\"",
+      "line3": "Some people think truth is the best,",
+      "line4": "Some people prioritize not hurting feelings.",
+      "line5": "What do you value more: honesty or consideration?",
+      "line6": "Takes only 2 minutes! Choose quickly and intuitively ⚖️"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "testCompleted": "🎉 Test Complete!",
+      "viewResults": "View Analysis Results",
+      "shareResult": "Share Results",
+      "retake": "Retake Test",
+      "otherTests": "View Other Tests",
+      "similarTests": "Similar Tests",
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations",
+      "playWithFriends": "Play with Friends",
+      "totalParticipants": "Total {count} people participated!"
+    },
+    "result": {
+      "yourResult": "Your Result",
+      "pros": "✅ Strengths",
+      "cons": "⚠️ Weaknesses",
+      "advice": "💡 Advice",
+      "relationshipCompatibility": "Relationship Compatibility",
+      "bestMatch": "💖 Great Match",
+      "goodMatch": "😊 Good Match",
+      "difficultMatch": "⚠️ Difficult"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareError": "Share feature is not available.",
+      "wechatInstructions": "Copy the link and send it via WeChat!"
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "title": "\"How much can you feel other people's emotions?\"",

@@ -41,6 +41,47 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "honestyTest": {
+    "startMessage": {
+      "title": "「真実を話すか、心を守るか？」",
+      "line1": "「正直に話すのが本当の友達！」",
+      "line2": "「配慮のない正直さはただの暴力です。」",
+      "line3": "真実が最高だと思う人もいれば、",
+      "line4": "心を傷つけないことを優先する人もいます。",
+      "line5": "正直さと配慮、どちらをより重要にしますか？",
+      "line6": "所要時間わずか2分！直感的に素早く選択してください ⚖️"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "progress": "進行率",
+      "analyzing": "結果分析中...",
+      "testCompleted": "🎉 テスト完了！",
+      "viewResults": "分析結果を見る",
+      "shareResult": "結果を共有",
+      "retake": "再テスト",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 人気テストおすすめトップ5",
+      "playWithFriends": "友達と一緒に",
+      "totalParticipants": "総計{count}人が参加しました！"
+    },
+    "result": {
+      "yourResult": "あなたの結果",
+      "pros": "✅ 長所",
+      "cons": "⚠️ 短所",
+      "advice": "💡 アドバイス",
+      "relationshipCompatibility": "関係相性",
+      "bestMatch": "💖 最高の相性",
+      "goodMatch": "😊 良い相性",
+      "difficultMatch": "⚠️ 難しい相性"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "shareError": "共有機能を使用できません。",
+      "wechatInstructions": "リンクをコピーしてWeChatで送信してください！"
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "title": "「他の人の感情をどれくらい感じることができますか？」",

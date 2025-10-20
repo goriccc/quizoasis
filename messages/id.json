@@ -41,6 +41,47 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "honestyTest": {
+    "startMessage": {
+      "title": "\"Berbicara jujur atau melindungi perasaan?\"",
+      "line1": "\"Berbicara jujur adalah persahabatan sejati!\"",
+      "line2": "\"Kejujuran tanpa pertimbangan hanyalah kekerasan.\"",
+      "line3": "Beberapa orang berpikir kebenaran adalah yang terbaik,",
+      "line4": "Beberapa orang memprioritaskan tidak menyakiti perasaan.",
+      "line5": "Kejujuran dan Pertimbangan, mana yang lebih Anda hargai?",
+      "line6": "Hanya butuh 2 menit! Pilih dengan cepat dan intuitif ⚖️"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "testCompleted": "🎉 Tes Selesai!",
+      "viewResults": "Lihat Hasil Analisis",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "similarTests": "Tes Serupa",
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer",
+      "playWithFriends": "Main dengan Teman",
+      "totalParticipants": "Total {count} orang berpartisipasi!"
+    },
+    "result": {
+      "yourResult": "Hasil Anda",
+      "pros": "✅ Kelebihan",
+      "cons": "⚠️ Kekurangan",
+      "advice": "💡 Saran",
+      "relationshipCompatibility": "Kompatibilitas Hubungan",
+      "bestMatch": "💖 Cocok Sempurna",
+      "goodMatch": "😊 Cocok Baik",
+      "difficultMatch": "⚠️ Sulit"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareError": "Fitur berbagi tidak tersedia.",
+      "wechatInstructions": "Salin tautan dan kirim melalui WeChat!"
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "title": "\"Seberapa banyak Anda bisa merasakan emosi orang lain?\"",

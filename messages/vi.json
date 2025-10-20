@@ -41,6 +41,47 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "honestyTest": {
+    "startMessage": {
+      "title": "\"Nói sự thật hay bảo vệ cảm xúc?\"",
+      "line1": "\"Nói thành thật mới là bạn thật!\"",
+      "line2": "\"Thành thật không có sự quan tâm chỉ là bạo lực.\"",
+      "line3": "Có người nghĩ sự thật là tốt nhất,",
+      "line4": "Có người ưu tiên không làm tổn thương cảm xúc.",
+      "line5": "Thành thật và Quan tâm, bạn coi trọng cái nào hơn?",
+      "line6": "Chỉ mất 2 phút! Chọn nhanh và trực quan ⚖️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "testCompleted": "🎉 Hoàn thành kiểm tra!",
+      "viewResults": "Xem kết quả phân tích",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại kiểm tra",
+      "otherTests": "Xem kiểm tra khác",
+      "similarTests": "Kiểm tra tương tự",
+      "similarTestsTop5": "🎯 Top 5 kiểm tra tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 kiểm tra phổ biến được đề xuất",
+      "playWithFriends": "Chơi với bạn bè",
+      "totalParticipants": "Tổng cộng {count} người đã tham gia!"
+    },
+    "result": {
+      "yourResult": "Kết quả của bạn",
+      "pros": "✅ Ưu điểm",
+      "cons": "⚠️ Nhược điểm",
+      "advice": "💡 Lời khuyên",
+      "relationshipCompatibility": "Tương thích mối quan hệ",
+      "bestMatch": "💖 Phù hợp tuyệt vời",
+      "goodMatch": "😊 Phù hợp tốt",
+      "difficultMatch": "⚠️ Khó khăn"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "shareError": "Tính năng chia sẻ không khả dụng.",
+      "wechatInstructions": "Sao chép liên kết và gửi qua WeChat!"
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "title": "\"Bạn có thể cảm nhận được bao nhiêu cảm xúc của người khác?\"",
