@@ -46,18 +46,18 @@ export async function GET(request: NextRequest) {
     // 태그 필터링
     let filteredTests = allTests;
     if (tags.length > 0) {
-      filteredTests = allTests.filter(test => 
-        test.tags.some(tag => tags.includes(tag))
+      filteredTests = allTests.filter((test: any) => 
+        test.tags.some((tag: string) => tags.includes(tag))
       );
     }
 
     // 현재 테스트 제외
     if (excludeSlug) {
-      filteredTests = filteredTests.filter(test => test.slug !== excludeSlug);
+      filteredTests = filteredTests.filter((test: any) => test.slug !== excludeSlug);
     }
 
     // 정렬 순서 고정 (created_at 기준, 최신순)
-    filteredTests.sort((a, b) => {
+    filteredTests.sort((a: any, b: any) => {
       if (a.createdAt && b.createdAt) {
         return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
       }
