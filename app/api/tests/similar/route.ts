@@ -3,6 +3,11 @@ import { getTests } from '@/lib/supabase';
 import { convertDBTestToQuizTest } from '@/lib/utils';
 import { Locale } from '@/i18n';
 
+// 간단한 메모리 캐시
+let cache: any = null;
+let cacheTime = 0;
+const CACHE_DURATION = 60000; // 1분
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
@@ -12,14 +17,26 @@ export async function GET(request: NextRequest) {
     const locale = searchParams.get('locale') as Locale || 'ko';
     const excludeSlug = searchParams.get('excludeSlug');
 
-    // 타임아웃 설정 (10초)
-    const timeoutPromise = new Promise((_, reject) => 
-      setTimeout(() => reject(new Error('API Timeout')), 10000)
-    );
+    // 캐시 확인
+    const now = Date.now();
+    let dbTests;
+    
+    if (cache && (now - cacheTime) < CACHE_DURATION) {
+      dbTests = cache;
+    } else {
+      // 타임아웃 설정 (8초)
+      const timeoutPromise = new Promise((_, reject) => 
+        setTimeout(() => reject(new Error('API Timeout')), 8000)
+      );
 
-    // Supabase에서 모든 테스트 가져오기
-    const fetchTestsPromise = getTests();
-    const dbTests = await Promise.race([fetchTestsPromise, timeoutPromise]) as any;
+      // Supabase에서 모든 테스트 가져오기
+      const fetchTestsPromise = getTests();
+      dbTests = await Promise.race([fetchTestsPromise, timeoutPromise]) as any;
+      
+      // 캐시 업데이트
+      cache = dbTests;
+      cacheTime = now;
+    }
     
     // DB 테스트를 QuizTest 형식으로 변환
     const allTests = dbTests.map(dbTest => 
@@ -58,7 +75,7 @@ export async function GET(request: NextRequest) {
     const totalPages = Math.ceil(totalCount / limit);
     const hasMore = page < totalPages;
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       tests: paginatedTests,
       pagination: {
         page,
@@ -69,11 +86,18 @@ export async function GET(request: NextRequest) {
       }
     });
 
+    // 캐시 헤더 설정
+    response.headers.set('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
+    
+    return response;
+
   } catch (error) {
     console.error('Error fetching similar tests:', error);
-    return NextResponse.json(
+    const errorResponse = NextResponse.json(
       { error: 'Failed to fetch similar tests' },
       { status: 500 }
     );
+    errorResponse.headers.set('Cache-Control', 'no-cache');
+    return errorResponse;
   }
 }

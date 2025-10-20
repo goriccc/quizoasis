@@ -84,7 +84,6 @@ function getFallbackTests() {
         }
       }
     ];
-  }
 }
 
 /**
@@ -195,7 +194,6 @@ function getFallbackTestBySlug(slug: string) {
       };
     }
     return null;
-  }
 }
 
 /**
