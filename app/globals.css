@@ -25,7 +25,13 @@ body {
   color: var(--foreground);
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 
+    'Noto Sans KR', /* 한국어 */
+    'Noto Sans JP', /* 일본어 */
+    'Noto Sans SC', /* 중국어 간체 */
+    'Noto Sans TC', /* 중국어 번체 */
+    'Noto Sans',    /* 영어, 베트남어, 인도네시아어 */
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

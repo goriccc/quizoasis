@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': [
+          'Noto Sans KR',
+          'Noto Sans JP', 
+          'Noto Sans SC',
+          'Noto Sans TC',
+          'Noto Sans',
+          'system-ui',
+          'sans-serif'
+        ],
+      },
       colors: {
         primary: {
           50: '#f0f9ff',
