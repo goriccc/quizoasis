@@ -36,20 +36,54 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <Head>
-        {/* Google Fonts - Noto Sans 다국어 지원 (안드로이드 최적화) */}
+        {/* Google Fonts - Noto Sans 다국어 지원 (안드로이드 갤럭시 최적화) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link 
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%20%21%22%23%24%25%26%27%28%29%2A%2B%2C%2D%2E%2F%3A%3B%3C%3D%3E%3F%40%5B%5C%5D%5E%5F%60%7B%7C%7D%7E" 
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=block&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%20%21%22%23%24%25%26%27%28%29%2A%2B%2C%2D%2E%2F%3A%3B%3C%3D%3E%3F%40%5B%5C%5D%5E%5F%60%7B%7C%7D%7E" 
           rel="stylesheet" 
         />
-        {/* 폰트 로딩 최적화 */}
+        {/* 안드로이드 갤럭시 전용 폰트 최적화 */}
         <style dangerouslySetInnerHTML={{
           __html: `
             @font-face {
-              font-family: 'Noto Sans Fallback';
-              src: local('Roboto'), local('Arial'), local('sans-serif');
-              font-display: swap;
+              font-family: 'Noto Sans KR';
+              src: url('https://fonts.gstatic.com/s/notosanskr/v36/PbykFmXiEBPT4ITbgNA5Cgm20xz64px_1hVWr0wuPNGmlQNMEfD4.woff2') format('woff2');
+              font-display: block;
+              font-weight: 300 700;
+            }
+            @font-face {
+              font-family: 'Noto Sans';
+              src: url('https://fonts.gstatic.com/s/notosans/v36/o-0IIpQlx3QUlC5A4PNb4j5Ba_2c7A.woff2') format('woff2');
+              font-display: block;
+              font-weight: 300 700;
+            }
+            /* 안드로이드 갤럭시 강제 폰트 적용 */
+            @media screen and (-webkit-min-device-pixel-ratio: 0) {
+              body, * {
+                font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+              }
+            }
+          `
+        }} />
+        {/* 안드로이드 갤럭시 폰트 로딩 강제 스크립트 */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            // 안드로이드 갤럭시 폰트 로딩 강제 적용
+            if (navigator.userAgent.includes('Android') || navigator.userAgent.includes('Samsung')) {
+              document.addEventListener('DOMContentLoaded', function() {
+                // 폰트 로딩 확인 및 강제 적용
+                if (document.fonts && document.fonts.ready) {
+                  document.fonts.ready.then(function() {
+                    document.body.style.fontFamily = "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif";
+                    // 모든 요소에 폰트 강제 적용
+                    const allElements = document.querySelectorAll('*');
+                    allElements.forEach(function(element) {
+                      element.style.fontFamily = "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif";
+                    });
+                  });
+                }
+              });
             }
           `
         }} />
