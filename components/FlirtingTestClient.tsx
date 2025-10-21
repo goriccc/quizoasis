@@ -109,18 +109,18 @@ export default function FlirtingTestClient({
     const loadTests = async () => {
       try {
         const allTests = await getTests();
-        const otherTests = allTests.filter(test => test.slug !== slug);
+        const otherTests = allTests.filter((test: any) => test.slug !== slug);
         
         // 유사한 테스트 (같은 카테고리)
         const similar = otherTests
-          .filter(test => test.category === 'love')
-          .sort((a, b) => b.playCount - a.playCount)
+          .filter((test: any) => test.category === 'love')
+          .sort((a: any, b: any) => b.playCount - a.playCount)
           .slice(0, 5);
         setSimilarTestsState(similar);
         
         // 인기 테스트
         const popular = otherTests
-          .sort((a, b) => b.playCount - a.playCount)
+          .sort((a: any, b: any) => b.playCount - a.playCount)
           .slice(0, 5);
         setPopularTestsState(popular);
       } catch (error) {

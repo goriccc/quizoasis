@@ -189,7 +189,7 @@ export default function DatingTestClient({
 
           const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
           const popularTestsList = allTests
-            .filter(t => t.slug !== slug && !similarTestSlugs.has(t.slug))
+            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
             .sort((a: any, b: any) => b.play_count - a.play_count)
             .slice(0, 5)
             .map((t: any) => ({

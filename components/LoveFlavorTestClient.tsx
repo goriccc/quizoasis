@@ -549,16 +549,16 @@ export default function LoveFlavorTestClient({
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">✅ {t('mbti.pros')}</h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultPros.map((pro: string, index: number) => (
-                    <span key={index} className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm">{pro[locale as keyof typeof pro] || pro.ko}</span>
+                  {resultPros.map((pro: any, index: number) => (     
+                    <span key={index} className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm">{typeof pro === 'string' ? pro : (pro[locale] || pro.ko)}</span>
                   ))}
                 </div>
               </div>
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">⚠️ {t('mbti.cons')}</h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultCons.map((con: string, index: number) => (
-                    <span key={index} className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm">{con[locale as keyof typeof con] || con.ko}</span>
+                  {resultCons.map((con: any, index: number) => (
+                    <span key={index} className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm">{typeof con === 'string' ? con : (con[locale] || con.ko)}</span>
                   ))}
                 </div>
               </div>

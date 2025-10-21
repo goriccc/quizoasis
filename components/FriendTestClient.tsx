@@ -135,7 +135,7 @@ export default function FriendTestClient({
     const loadSimilarTests = async () => {
       try {
         const allTests = await getTests();
-        const filteredTests = allTests.filter(test => {
+        const filteredTests = allTests.filter((test: any) => {
           if (test.slug === slug) return false;
           
           // tags가 배열인지 확인하고, 아니면 파싱 시도
@@ -159,7 +159,7 @@ export default function FriendTestClient({
         
         // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
         const sortedTests = filteredTests
-            .sort((a, b) => b.play_count - a.play_count)
+            .sort((a: any, b: any) => b.play_count - a.play_count)
           .slice(0, 5);
         
         setSimilarTestsState(sortedTests);
@@ -176,11 +176,11 @@ export default function FriendTestClient({
     const loadPopularTests = async () => {
       try {
         const allTests = await getTests();
-        const filteredTests = allTests.filter(test => test.slug !== slug);
+        const filteredTests = allTests.filter((test: any) => test.slug !== slug);
         
         // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
         const sortedTests = filteredTests
-          .sort((a, b) => b.play_count - a.play_count)
+          .sort((a: any, b: any) => b.play_count - a.play_count)
           .slice(0, 5);
         
         setPopularTestsState(sortedTests);
