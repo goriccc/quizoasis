@@ -657,6 +657,48 @@
     "share": {
       "message": "私は{resultTitle}！私が最も輝く職務分野を見つけました！あなたはどの職務が合いますか？一緒にやってみましょう！💼✨"
     }
+  },
+  "workValuesTest": {
+    "startMessage": {
+      "title": "仕事の価値観！あなたが働く本当の理由は？",
+      "subtitle1": "お金のために働く人もいれば、",
+      "subtitle2": "意味を見つけるために働く人もいます。",
+      "subtitle3": "成長のために働く人もいれば、",
+      "subtitle4": "生活のバランスのために働く人もいます。",
+      "line1": "高い給料？やりがい？成長？ワークライフバランス？",
+      "line2": "職場を選ぶ時、",
+      "line3": "昇進を考える時、",
+      "line4": "転職を考える時...",
+      "line5": "あなたにとって本当に重要なことは何ですか？",
+      "line6": "所要時間3分！正直に答えてください 💼"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "participantCount": "合計{count}人が参加しました！",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "testComplete": "テスト完了！",
+      "viewResult": "分析結果を見る",
+      "shareResult": "結果を共有",
+      "retake": "再テスト",
+      "otherTests": "他のテスト"
+    },
+    "result": {
+      "yourResult": "あなたの結果",
+      "coreValues": "核心価値",
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "advice": "アドバイス",
+      "defaultLongDescription": "あなたの仕事の価値観に関する詳細な分析結果です。この結果を基に、より良いキャリア選択ができるでしょう。"
+    },
+    "share": {
+      "message": "職場で私が最も重要だと思う価値：{resultTitle}！💼 あなたにとって最も重要なことは何ですか？私たちの仕事の価値観を比較してみましょう！💼"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "shareError": "共有中にエラーが発生しました。",
+      "kakaoShareError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }
 

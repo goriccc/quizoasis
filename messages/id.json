@@ -601,7 +601,7 @@
       "shareResult": "Bagikan Hasil",
       "retakeTest": "Ulangi Tes",
       "otherTests": "Tes Lainnya",
-      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "similarTestsTop5": "🎯 Rekomendasi 5 Tes Serupa Teratas",
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     },
     "result": {
@@ -643,7 +643,7 @@
       "shareResult": "Bagikan Hasil",
       "retakeTest": "Ulangi Tes",
       "otherTests": "Tes Lainnya",
-      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "similarTestsTop5": "🎯 Rekomendasi 5 Tes Serupa Teratas",
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     },
     "result": {
@@ -656,6 +656,48 @@
     },
     "share": {
       "message": "Saya adalah {resultTitle}! Saya menemukan bidang pekerjaan yang paling bersinar! Pekerjaan apa yang cocok untuk Anda? Mari coba bersama! 💼✨"
+    }
+  },
+  "workValuesTest": {
+    "startMessage": {
+      "title": "Nilai-nilai Kerja! Apa alasan sebenarnya Anda bekerja?",
+      "subtitle1": "Beberapa orang bekerja untuk uang,",
+      "subtitle2": "Beberapa orang bekerja untuk mencari makna.",
+      "subtitle3": "Beberapa orang bekerja untuk berkembang,",
+      "subtitle4": "Beberapa orang bekerja untuk keseimbangan hidup.",
+      "line1": "Gaji tinggi? Makna? Pertumbuhan? Keseimbangan kerja-hidup?",
+      "line2": "Ketika Anda memilih pekerjaan,",
+      "line3": "Ketika Anda memikirkan promosi,",
+      "line4": "Ketika Anda mempertimbangkan pindah kerja...",
+      "line5": "Apa yang benar-benar penting bagi Anda?",
+      "line6": "Memakan waktu 3 menit! Jawablah dengan jujur 💼"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participantCount": "Total {count} orang berpartisipasi!",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "testComplete": "Tes Selesai!",
+      "viewResult": "Lihat Hasil Analisis",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Tes Lainnya"
+    },
+    "result": {
+      "yourResult": "Hasil Anda",
+      "coreValues": "Nilai Inti",
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "advice": "Saran",
+      "defaultLongDescription": "Ini adalah hasil analisis mendalam tentang nilai-nilai kerja Anda. Berdasarkan hasil ini, Anda dapat membuat pilihan karier yang lebih baik."
+    },
+    "share": {
+      "message": "Nilai yang paling saya hargai di tempat kerja: {resultTitle}! 💼 Apa yang paling penting bagi Anda? Mari bandingkan nilai-nilai kerja kita! 💼"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareError": "Terjadi kesalahan saat berbagi.",
+      "kakaoShareError": "Terjadi kesalahan saat berbagi di KakaoTalk."
     }
   }
 }

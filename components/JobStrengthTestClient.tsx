@@ -562,7 +562,7 @@ export default function JobStrengthTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-                {t('jobStrengthTest.ui.similarTestsTop5')}
+                {t('recommendations.similarTests')}
               </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
@@ -856,7 +856,7 @@ export default function JobStrengthTestClient({
               </div>
             </div>
 
-            {/* 🎯 유사한 다른 테스트 추천 톱5 */}
+            {/* 🎯 유사한 다른 테스트 */}
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">

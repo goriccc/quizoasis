@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { CareerQuestion, CareerResult, calculateCareerResult } from '@/lib/careerData';
+import { WorkValuesQuestion, WorkValuesResult, calculateWorkValuesResult } from '@/lib/workValuesData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
@@ -13,13 +13,13 @@ import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/ali
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 
-interface CareerTestClientProps {
+interface WorkValuesTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: CareerQuestion[];
-  results: CareerResult[];
+  questions: WorkValuesQuestion[];
+  results: WorkValuesResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -32,13 +32,7 @@ interface CareerTestClientProps {
   }>;
 }
 
-// 궁합 설명 함수
-const getCompatibilityDescription = (myType: string, partnerType: string, t: any): string => {
-  const key = `${myType}_${partnerType}`;
-  return t(`careerTest.result.compatibility.${key}`) || '';
-};
-
-export default function CareerTestClient({ 
+export default function WorkValuesTestClient({ 
   locale, 
   slug, 
   title, 
@@ -49,14 +43,14 @@ export default function CareerTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: CareerTestClientProps) {
+}: WorkValuesTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
-  const [result, setResult] = useState<CareerResult | null>(null);
+  const [result, setResult] = useState<WorkValuesResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<CareerQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<WorkValuesQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
@@ -72,14 +66,15 @@ export default function CareerTestClient({
     
     const questionKey = currentQuestion;
     if (!shuffledOptionsMap[questionKey]) {
-      const optionsCopy = [...shuffledQuestions[currentQuestion].options];
-      for (let i = optionsCopy.length - 1; i > 0; i--) {
+      // options 객체를 배열로 변환 후 섞기
+      const optionsArray = Object.entries(shuffledQuestions[currentQuestion].options).map(([key, value]) => value);
+      for (let i = optionsArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+        [optionsArray[i], optionsArray[j]] = [optionsArray[j], optionsArray[i]];
       }
       setShuffledOptionsMap(prev => ({
         ...prev,
-        [questionKey]: optionsCopy
+        [questionKey]: optionsArray
       }));
     }
   }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
@@ -230,7 +225,7 @@ export default function CareerTestClient({
   }, [showLoadingSpinner]);
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: CareerQuestion[]) => {
+  const shuffleQuestions = (questionList: WorkValuesQuestion[]) => {
     const shuffled = [...questionList];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -255,8 +250,18 @@ export default function CareerTestClient({
   };
 
   // 답변 처리
-  const handleAnswer = (scores: any) => {
-    const newAnswers = [...answers, scores];
+  const handleAnswer = (answer: string) => {
+    // 답변을 A, B, C, D 키로 변환
+    const question = shuffledQuestions[currentQuestion];
+    const answerKey = Object.entries(question.options).find(([key, value]) => {
+      if (typeof value === 'string') {
+        return value === answer;
+      } else {
+        return value[locale as keyof typeof value] === answer || value.ko === answer;
+      }
+    })?.[0] || 'A';
+    
+    const newAnswers = [...answers, answerKey];
     setAnswers(newAnswers);
 
     if (currentQuestion < shuffledQuestions.length - 1) {
@@ -265,19 +270,19 @@ export default function CareerTestClient({
       setShowLoadingSpinner(true);
       
       // 결과 계산
-      const resultType = calculateCareerResult(newAnswers);
-      const careerResult = results.find(r => r.type === resultType);
+      const resultType = calculateWorkValuesResult(newAnswers);
+      const workValuesResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (careerResult) {
-        setResult(careerResult);
+      if (workValuesResult) {
+        setResult(workValuesResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (careerResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(careerResult.type, locale);
+      if (workValuesResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(workValuesResult.type, locale);
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] 직업 결과:', careerResult.type, '→ 검색 키워드:', keywords[0]);
+        console.log('🔮 [시작] 일의 가치 결과:', workValuesResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -287,16 +292,6 @@ export default function CareerTestClient({
             console.error('❌ 결과 상품 로드 실패:', error);
           });
       }
-    }
-  };
-
-  // 결과 계산
-  const calculateResult = (finalAnswers: any[]) => {
-    const resultType = calculateCareerResult(finalAnswers);
-    const careerResult = results.find(r => r.type === resultType);
-    
-    if (careerResult) {
-      setResult(careerResult);
     }
   };
 
@@ -315,8 +310,8 @@ export default function CareerTestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = `${t('careerTest.share.message', { resultTitle })}!\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
+    const resultTitle = typeof result.title === 'string' ? result.title : (result.title[locale as keyof typeof result.title] || result.title.ko);
+    const shareText = t('workValuesTest.share.message', { resultTitle }) + `\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -345,9 +340,9 @@ export default function CareerTestClient({
 
   const shareToWeChat = async () => {
     const url = `https://myquizoasis.com${window.location.pathname}`;
-    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title[locale as keyof typeof result.title] || result.title.ko)) : '';
     const shareText = result 
-      ? `${t('careerTest.share.message', { resultTitle })}\n\n${url}`
+      ? t('workValuesTest.share.message', { resultTitle }) + `\n\n${url}`
       : `${title}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
@@ -365,7 +360,7 @@ export default function CareerTestClient({
     // Fallback: 링크 복사
     try {
       await navigator.clipboard.writeText(url);
-      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+      alert(t('workValuesTest.alerts.linkCopied') + ' WeChat에서 붙여넣기 하여 공유하세요.');
     } catch (error) {
       alert('공유 기능을 사용할 수 없습니다.');
     }
@@ -373,9 +368,9 @@ export default function CareerTestClient({
 
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title[locale as keyof typeof result.title] || result.title.ko)) : '';
     const shareText = result 
-      ? encodeURIComponent(t('careerTest.share.message', { resultTitle }))
+      ? encodeURIComponent(t('workValuesTest.share.message', { resultTitle }))
       : encodeURIComponent(title);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
@@ -392,9 +387,9 @@ export default function CareerTestClient({
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
-    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title[locale as keyof typeof result.title] || result.title.ko)) : '';
     const shareDescription = result 
-      ? t('careerTest.share.message', { resultTitle })
+      ? t('workValuesTest.share.message', { resultTitle })
       : description;
     
     try {
@@ -421,15 +416,15 @@ export default function CareerTestClient({
       });
     } catch (error) {
       console.error('카카오톡 공유 오류:', error);
-      alert(t('careerTest.alerts.kakaoShareError'));
+      alert('카카오톡 공유 중 오류가 발생했습니다.');
     }
   };
 
   const shareToTelegram = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title[locale as keyof typeof result.title] || result.title.ko)) : '';
     const shareText = result 
-      ? t('careerTest.share.message', { resultTitle })
+      ? t('workValuesTest.share.message', { resultTitle })
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
@@ -437,7 +432,7 @@ export default function CareerTestClient({
 
   const copyLink = () => {
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert(t('careerTest.alerts.linkCopied'));
+    alert(t('workValuesTest.alerts.linkCopied'));
   };
 
   // 팝업에서 결과 보기
@@ -454,7 +449,7 @@ export default function CareerTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_046_future_career_match.jpg')}
+              src={getThumbnailUrl(thumbnail || 'test_048_work_values.jpg')}
               alt={title}
               fill
               className="object-cover"
@@ -479,16 +474,17 @@ export default function CareerTestClient({
             </div>
 
             <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
-              <p className="font-bold text-gray-700">{t('careerTest.startMessage.title')}</p>
-              <p>{t('careerTest.startMessage.question1')}</p>
-              <p>{t('careerTest.startMessage.question2')}</p>
-              <p>{t('careerTest.startMessage.question3')}</p>
-              <p>{t('careerTest.startMessage.question4')}</p>
-              <p>{t('careerTest.startMessage.question5')}</p>
-              <p>{t('careerTest.startMessage.question6')}</p>
-              <p>{t('careerTest.startMessage.question7')}</p>
-              <p>{t('careerTest.startMessage.conclusion')}</p>
-              <p>{t('careerTest.startMessage.timeInfo')}</p>
+              <p className="font-bold text-gray-700">{t('workValuesTest.startMessage.title')}</p>
+              <p>{t('workValuesTest.startMessage.subtitle1')}</p>
+              <p>{t('workValuesTest.startMessage.subtitle2')}</p>
+              <p>{t('workValuesTest.startMessage.subtitle3')}</p>
+              <p>{t('workValuesTest.startMessage.subtitle4')}</p>
+              <p>{t('workValuesTest.startMessage.line1')}</p>
+              <p>{t('workValuesTest.startMessage.line2')}</p>
+              <p>{t('workValuesTest.startMessage.line3')}</p>
+              <p>{t('workValuesTest.startMessage.line4')}</p>
+              <p>{t('workValuesTest.startMessage.line5')}</p>
+              <p className="whitespace-pre-line">{t('workValuesTest.startMessage.line6')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -496,12 +492,12 @@ export default function CareerTestClient({
                 onClick={handleStartTest}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-{t('careerTest.ui.startTest')}
+                {t('workValuesTest.ui.startTest')}
               </button>
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-{t('careerTest.ui.participantCount', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
+              {t('workValuesTest.ui.participantCount', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -546,7 +542,7 @@ export default function CareerTestClient({
 
             <div className="mb-8 text-center">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('careerTest.ui.shareWithFriends')}
+                친구와 함께 해보기
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -573,7 +569,7 @@ export default function CareerTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('recommendations.similarTests')}
+                {t('recommendations.similarTests')}
               </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
@@ -627,7 +623,7 @@ export default function CareerTestClient({
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-lg text-gray-700">{t('careerTest.ui.analyzing')}</p>
+          <p className="mt-4 text-lg text-gray-700">{t('workValuesTest.ui.analyzing')}</p>
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
@@ -649,7 +645,7 @@ export default function CareerTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-{t('careerTest.ui.testComplete') || '🎉 테스트 완료!'}
+            🎉 {t('workValuesTest.ui.testComplete')}
           </h2>
           
           
@@ -689,7 +685,7 @@ export default function CareerTestClient({
                   <Image 
                     width={300} 
                     height={250} 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d5187c950fe497cdf55q/300x250.jpg"
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
                     alt="AliExpress"
                     className="rounded-lg"
                     style={{ maxWidth: '300px', height: 'auto' }}
@@ -703,7 +699,7 @@ export default function CareerTestClient({
             onClick={handleShowResult}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-{t('careerTest.ui.viewResult')}
+            {t('workValuesTest.ui.viewResult')}
           </button>
         </div>
       </div>
@@ -712,11 +708,16 @@ export default function CareerTestClient({
 
   // 결과 화면
   if (showResult && result) {
-    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultStrengths = result.strengths;
-    const resultFields = result.fields;
-    const resultJobs = result.jobs;
+    const resultTitle = typeof result.title === 'string' ? result.title : (result.title[locale as keyof typeof result.title] || result.title.ko);
+    const resultDescription = typeof result.description === 'string' ? result.description : (result.description[locale as keyof typeof result.description] || result.description.ko);
+    const resultCoreValues = Array.isArray(result.coreValues) ? result.coreValues : (result.coreValues[locale as keyof typeof result.coreValues] || result.coreValues.ko);
+    const resultStrengths = Array.isArray(result.strengths) ? result.strengths : (result.strengths[locale as keyof typeof result.strengths] || result.strengths.ko);
+    const resultWeaknesses = Array.isArray(result.weaknesses) ? result.weaknesses : (result.weaknesses[locale as keyof typeof result.weaknesses] || result.weaknesses.ko);
+    const resultSuitableJobs = Array.isArray(result.suitableJobs) ? result.suitableJobs : (result.suitableJobs[locale as keyof typeof result.suitableJobs] || result.suitableJobs.ko);
+    const resultAdvice = typeof result.advice === 'string' ? result.advice : (result.advice[locale as keyof typeof result.advice] || result.advice.ko);
+    const resultAverageSatisfaction = typeof result.averageSatisfaction === 'string' ? result.averageSatisfaction : (result.averageSatisfaction[locale as keyof typeof result.averageSatisfaction] || result.averageSatisfaction.ko);
+    const resultTurnoverFrequency = typeof result.turnoverFrequency === 'string' ? result.turnoverFrequency : (result.turnoverFrequency[locale as keyof typeof result.turnoverFrequency] || result.turnoverFrequency.ko);
+    const resultBurnoutRisk = typeof result.burnoutRisk === 'string' ? result.burnoutRisk : (result.burnoutRisk[locale as keyof typeof result.burnoutRisk] || result.burnoutRisk.ko);
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -724,26 +725,40 @@ export default function CareerTestClient({
           <div>
             <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
               <h2 className="text-xl font-bold text-gray-800 mb-3">
-{t('careerTest.ui.yourResult')}
+                {t('workValuesTest.result.yourResult')}
               </h2>
               <div className="text-6xl mb-3">{result.emoji}</div>
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
               </h1>
-              <p className="text-base text-gray-600 leading-relaxed">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 {resultDescription}
               </p>
-              {result.longDescription && (
-                <p className="text-sm text-gray-500 leading-relaxed mt-3">
-                  {typeof result.longDescription === 'string' ? result.longDescription : (result.longDescription[locale] || result.longDescription.ko)}
-                </p>
-              )}
+              <p className="text-sm text-gray-500 leading-relaxed">
+                {result.longDescription ? (typeof result.longDescription === 'string' ? result.longDescription : (result.longDescription[locale as keyof typeof result.longDescription] || result.longDescription.ko)) : t('workValuesTest.result.defaultLongDescription')}
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-3">
+                🎯 {t('workValuesTest.result.coreValues')}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {resultCoreValues.map((value, index) => (
+                  <span
+                    key={index}
+                    className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                  >
+                    {value}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-{t('careerTest.ui.coreStrengths')}
+                  ✅ {t('workValuesTest.result.strengths')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {resultStrengths.map((strength, index) => (
@@ -751,7 +766,7 @@ export default function CareerTestClient({
                       key={index}
                       className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {typeof strength === 'string' ? strength : (strength[locale] || strength.ko)}
+                      {strength}
                     </span>
                   ))}
                 </div>
@@ -759,29 +774,31 @@ export default function CareerTestClient({
 
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-{t('careerTest.ui.suitableFields')}
+                  ⚠️ {t('workValuesTest.result.weaknesses')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {resultFields.map((field, index) => (
+                  {resultWeaknesses.map((weakness, index) => (
                     <span
                       key={index}
-                      className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                      className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {typeof field === 'string' ? field : (field[locale] || field.ko)}
+                      {weakness}
                     </span>
                   ))}
                 </div>
               </div>
             </div>
 
+
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-{t('careerTest.ui.recommendedJobs')}
+                💡 {t('workValuesTest.result.advice')}
               </h3>
-              <div className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
-                {typeof result.jobs === 'string' ? result.jobs : (result.jobs[locale] || result.jobs.ko)}
-              </div>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {resultAdvice}
+              </p>
             </div>
+
 
             <div className="mt-8 mb-6 px-4">
               <button
@@ -791,7 +808,7 @@ export default function CareerTestClient({
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                 </svg>
-{t('careerTest.ui.shareResult')}
+                {t('workValuesTest.ui.shareResult')}
               </button>
             </div>
 
@@ -810,19 +827,19 @@ export default function CareerTestClient({
                 onClick={handleRetake}
                 className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
               >
-{t('careerTest.ui.retakeTest')}
+                {t('workValuesTest.ui.retake')}
               </button>
               <Link
                 href={`/${locale}`}
                 className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
               >
-{t('careerTest.ui.otherTests')}
+                {t('workValuesTest.ui.otherTests')}
               </Link>
             </div>
 
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('careerTest.ui.shareWithFriends')}
+                친구와 함께 해보기
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -846,11 +863,11 @@ export default function CareerTestClient({
               </div>
             </div>
 
-            {/* 🎯 유사한 다른 테스트 */}
+            {/* 🎯 유사한 다른 테스트 추천 톱5 */}
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('careerTest.ui.similarTestsTop5')}
+                  {t('recommendations.similarTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -887,7 +904,7 @@ export default function CareerTestClient({
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('careerTest.ui.popularTestsTop5')}
+                  {t('recommendations.popularTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (
@@ -927,10 +944,11 @@ export default function CareerTestClient({
 
   // 질문 화면
   const question = shuffledQuestions[currentQuestion];
-  const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
+    const questionText = typeof question.question === 'string' ? question.question : (question.question[locale as keyof typeof question.question] || question.question.ko);
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
   
-  const optionsArray = shuffledOptionsMap[currentQuestion] || question.options;
+  // options 객체를 배열로 변환
+  const optionsArray = shuffledOptionsMap[currentQuestion] || Object.entries(question.options).map(([key, value]) => value);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -938,7 +956,7 @@ export default function CareerTestClient({
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-600">
-{t('careerTest.ui.progress')}
+              {t('workValuesTest.ui.progress')}
             </span>
             <span className="text-sm font-bold text-purple-600">
               {currentQuestion + 1} / {shuffledQuestions.length}
@@ -959,7 +977,7 @@ export default function CareerTestClient({
 
           <div className="space-y-4 px-4">
             {optionsArray.map((option, index) => {
-              const optionText = option.text[locale as keyof typeof option.text] || option.text.ko;
+              const optionText = typeof option === 'string' ? option : (option[locale as keyof typeof option] || option.ko);
               const label = String.fromCharCode(65 + index);
               const colors = [
                 'from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border-purple-200 hover:border-purple-400',
@@ -972,7 +990,7 @@ export default function CareerTestClient({
               return (
                 <button
                   key={index}
-                  onClick={() => handleAnswer(option.scores)}
+                  onClick={() => handleAnswer(option)}
                   className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
                 >
                   <div className="flex items-center">
@@ -998,7 +1016,7 @@ export default function CareerTestClient({
 
           <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-              {t('careerTest.ui.shareWithFriends') || '친구와 함께 해보기'}
+              친구와 함께 해보기
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">

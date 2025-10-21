@@ -684,6 +684,48 @@
     "share": {
       "message": "나는 {resultTitle}! 내가 가장 빛나는 직무 분야 찾았다! 너는 어떤 직무가 맞아? 같이 해보자! 💼✨"
     }
+  },
+  "workValuesTest": {
+    "startMessage": {
+      "title": "일의 가치! 당신이 일하는 진짜 이유는?",
+      "subtitle1": "어떤 사람은 돈을 위해 일하고,",
+      "subtitle2": "어떤 사람은 의미를 찾기 위해 일합니다.",
+      "subtitle3": "어떤 사람은 성장을 위해 일하고,",
+      "subtitle4": "어떤 사람은 삶의 균형을 위해 일합니다.",
+      "line1": "높은 연봉? 보람? 성장? 워라밸?",
+      "line2": "당신이 직장을 선택할 때,",
+      "line3": "진급을 고민할 때,",
+      "line4": "이직을 생각할 때...",
+      "line5": "당신에게 진짜 중요한 것은 무엇인가요?",
+      "line6": "소요 시간 3분! 솔직하게 답변해주세요 💼"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "participantCount": "총 {count}명이 참여했어요!",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "testComplete": "테스트 완료!",
+      "viewResult": "분석 결과 보기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기"
+    },
+      "result": {
+        "yourResult": "당신의 결과는",
+        "coreValues": "핵심 가치",
+        "strengths": "장점",
+        "weaknesses": "단점",
+        "advice": "조언",
+        "defaultLongDescription": "당신의 일의 가치관에 대한 자세한 분석 결과입니다. 이 결과를 바탕으로 더 나은 커리어 선택을 할 수 있을 것입니다."
+      },
+    "share": {
+      "message": "직장에서 내가 중요하게 생각하는 가치 : {resultTitle}이래! 💼 너는 뭐가 제일 중요해? 우리 일의 가치관 비교해보자 💼"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "shareError": "공유 중 오류가 발생했습니다.",
+      "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
   }
 }
 

@@ -625,7 +625,7 @@
       "shareResult": "Share Result",
       "retakeTest": "Retake Test",
       "otherTests": "Other Tests",
-      "similarTestsTop5": "🎯 Similar Tests Top 5",
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     },
     "result": {
@@ -667,7 +667,7 @@
       "shareResult": "Share Result",
       "retakeTest": "Retake Test",
       "otherTests": "Other Tests",
-      "similarTestsTop5": "🎯 Similar Tests Top 5",
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     },
     "result": {
@@ -680,6 +680,48 @@
     },
     "share": {
       "message": "I am {resultTitle}! I found my brightest job field! What job suits you? Let's try together! 💼✨"
+    }
+  },
+  "workValuesTest": {
+    "startMessage": {
+      "title": "Work Values! What's your real reason for working?",
+      "subtitle1": "Some people work for money,",
+      "subtitle2": "Some people work to find meaning.",
+      "subtitle3": "Some people work to grow,",
+      "subtitle4": "Some people work for work-life balance.",
+      "line1": "High salary? Meaning? Growth? Work-life balance?",
+      "line2": "When you choose a job,",
+      "line3": "When you think about promotion,",
+      "line4": "When you consider changing jobs...",
+      "line5": "What is really important to you?",
+      "line6": "Takes 3 minutes! Please answer honestly 💼"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participantCount": "Total {count} people participated!",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "testComplete": "Test Complete!",
+      "viewResult": "View Analysis Results",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "Other Tests"
+    },
+    "result": {
+      "yourResult": "Your Result",
+      "coreValues": "Core Values",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "advice": "Advice",
+      "defaultLongDescription": "This is a detailed analysis result of your work values. Based on this result, you can make better career choices."
+    },
+    "share": {
+      "message": "The value I consider most important at work: {resultTitle}! 💼 What's most important to you? Let's compare our work values! 💼"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareError": "Error occurred while sharing.",
+      "kakaoShareError": "Error occurred while sharing on KakaoTalk."
     }
   }
 }

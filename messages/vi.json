@@ -601,7 +601,7 @@
       "shareResult": "Chia sẻ kết quả",
       "retakeTest": "Làm lại kiểm tra",
       "otherTests": "Các kiểm tra khác",
-      "similarTestsTop5": "🎯 Top 5 kiểm tra tương tự",
+      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
       "popularTestsTop5": "🔥 Top 5 kiểm tra phổ biến"
     },
     "result": {
@@ -643,7 +643,7 @@
       "shareResult": "Chia sẻ kết quả",
       "retakeTest": "Làm lại kiểm tra",
       "otherTests": "Các kiểm tra khác",
-      "similarTestsTop5": "🎯 Top 5 kiểm tra tương tự",
+      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
       "popularTestsTop5": "🔥 Top 5 kiểm tra phổ biến"
     },
     "result": {
@@ -656,6 +656,48 @@
     },
     "share": {
       "message": "Tôi là {resultTitle}! Tôi đã tìm thấy lĩnh vực công việc tỏa sáng nhất! Công việc nào phù hợp với bạn? Hãy thử cùng nhau! 💼✨"
+    }
+  },
+  "workValuesTest": {
+    "startMessage": {
+      "title": "Giá trị công việc! Lý do thực sự bạn làm việc là gì?",
+      "subtitle1": "Một số người làm việc vì tiền,",
+      "subtitle2": "Một số người làm việc để tìm ý nghĩa.",
+      "subtitle3": "Một số người làm việc để phát triển,",
+      "subtitle4": "Một số người làm việc để cân bằng cuộc sống.",
+      "line1": "Lương cao? Ý nghĩa? Phát triển? Cân bằng công việc-cuộc sống?",
+      "line2": "Khi bạn chọn công việc,",
+      "line3": "Khi bạn nghĩ về thăng tiến,",
+      "line4": "Khi bạn cân nhắc chuyển việc...",
+      "line5": "Điều gì thực sự quan trọng với bạn?",
+      "line6": "Mất 3 phút! Hãy trả lời thành thật 💼"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participantCount": "Tổng cộng {count} người đã tham gia!",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "testComplete": "Hoàn thành kiểm tra!",
+      "viewResult": "Xem kết quả phân tích",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại kiểm tra",
+      "otherTests": "Kiểm tra khác"
+    },
+    "result": {
+      "yourResult": "Kết quả của bạn",
+      "coreValues": "Giá trị cốt lõi",
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "advice": "Lời khuyên",
+      "defaultLongDescription": "Đây là kết quả phân tích chi tiết về giá trị công việc của bạn. Dựa trên kết quả này, bạn có thể đưa ra những lựa chọn nghề nghiệp tốt hơn."
+    },
+    "share": {
+      "message": "Giá trị tôi coi trọng nhất trong công việc: {resultTitle}! 💼 Điều gì quan trọng nhất với bạn? Hãy so sánh giá trị công việc của chúng ta! 💼"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareError": "Đã xảy ra lỗi khi chia sẻ.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
     }
   }
 }

@@ -7,56 +7,69 @@
 
 ## Test Development - Critical Rules (Based on Previous Mistakes)
 
-### 1. Component Copy Selection
+### 1. ALWAYS Copy from ConflictTestClient (CRITICAL - USER'S MAIN REQUEST)
+❌ DON'T create new test components from scratch or copy from other test components
+❌ DON'T ignore this rule and create components "your way"
+❌ DON'T copy from tests with different data structures (SignalTestClient has multilingual arrays)
+❌ DON'T make UI components from scratch - this causes mistakes and delays
+❌ DON'T modify button styles, colors, gradients, or layouts without explicit user request
+✅ DO ALWAYS copy from "갈등 상황에서 당신은 어떻게 반응할까요?" (ConflictTestClient.tsx)
+✅ DO copy the EXACT UI components to ensure identical start screen, progress screen, and result screen
+✅ DO maintain identical button styles, colors, gradients, and layouts
+✅ DO preserve all CSS classes, spacing, and visual hierarchy
+✅ DO follow this exact process: Copy ConflictTestClient.tsx → Rename → Update data references → Keep UI identical
+Rule: This is the user's most emphasized rule - ALWAYS copy from ConflictTestClient for new tests to avoid mistakes and ensure fast development
+
+### 2. Component Copy Selection
 ❌ DON'T copy from tests with different data structures (SignalTestClient has multilingual arrays)
 ✅ DO copy from tests with same structure (AttachmentTestClient for Korean-only → multilingual conversion)
 Rule: Match source template's data structure to target test's initial requirements
 
-### 2. Data Structure First
+### 3. Data Structure First
 ❌ DON'T start with Korean strings then convert to multilingual objects later
 ✅ DO design multilingual structure (Record<string, string>) from the beginning
 Rule: Define interface with multilingual structure before writing any data
 
-### 3. Component-Data Structure Alignment
+### 4. Component-Data Structure Alignment
 ❌ DON'T keep component expecting multilingual data when data is Korean-only strings
 ✅ DO ensure component data access matches actual data structure
 Rule: Component renders must match data type (string vs Record<string, string>)
 
-### 4. Route Configuration Check
+### 5. Route Configuration Check
 ❌ DON'T forget to update component import in route file
 ✅ DO verify correct component is rendered for new slug
 Critical: Check that slug === 'new-test' ? NewTestClient is in routing logic
 
-### 5. Complete Translation Keys
+### 6. Complete Translation Keys
 ❌ DON'T miss UI element translation keys (shareResult, retake, otherTests, etc.)
 ✅ DO add all UI text keys before testing: startMessage(6) + ui(9+) + result(10+)
 Rule: Prepare complete translation set: startMessage, ui, result sections
 
-### 6. Emoji Duplication
+### 7. Emoji Duplication
 ❌ DON'T add emojis in both component hardcode AND translation files
 ✅ DO include emojis only in translation files
 Rule: If translation has emoji, remove from component template literal
 
-### 7. Cache Clearing Protocol
+### 8. Cache Clearing Protocol
 When code changes don't reflect:
 Kill all Node processes: taskkill /F /IM node.exe
 Delete .next folder: Remove-Item -Path .next -Recurse -Force
 Restart dev server: npm run dev
 Browser hard refresh: Ctrl+Shift+R
 
-### 8. Supabase Route Block Structure
+### 9. Supabase Route Block Structure
 ✅ DO create complete if-block with Supabase fetch + fallback + return statement
 ✅ DO ensure correct TestClient component is used in return
 Pattern: if (slug === 'test-name') { const test = await getTestBySlug() || fallback; return <TestClient .../> }
 
 ## Social Sharing Multilingual Requirements (CRITICAL)
 
-### 9. Social Sharing Message Localization
+### 10. Social Sharing Message Localization
 ❌ DON'T hardcode Korean sharing messages in social sharing functions
 ✅ DO implement multilingual sharing messages for ALL social sharing functions
 Rule: Every social sharing function must support all 7 languages (ko, en, ja, zh-CN, zh-TW, vi, id)
 
-### 10. Social Sharing Functions to Localize
+### 11. Social Sharing Functions to Localize
 ✅ DO localize ALL of these functions:
 - handleShareResult() - Default sharing function
 - shareToWeChat() - WeChat sharing
@@ -65,7 +78,7 @@ Rule: Every social sharing function must support all 7 languages (ko, en, ja, zh
 - shareToTelegram() - Telegram sharing
 - copyLink() - Link copy function
 
-### 11. Social Sharing Message Pattern
+### 12. Social Sharing Message Pattern
 ✅ DO use this pattern for all sharing messages:
 ```typescript
 const shareMessages = {
@@ -79,7 +92,7 @@ const shareMessages = {
 };
 ```
 
-### 12. Alert Message Localization
+### 13. Alert Message Localization
 ✅ DO localize ALL alert messages in sharing functions:
 - Clipboard copy success messages
 - Sharing feature error messages  
@@ -89,7 +102,7 @@ const shareMessages = {
 ## Multilingual Content Processing (CRITICAL)
 
 
-### 13. Multilingual Text Implementation
+### 14. Multilingual Text Implementation
 ❌ DON'T:
 - Hardcode Korean text in UI components without considering multilingual support
 - Use string literals directly in components without locale-based conditional rendering
@@ -103,14 +116,14 @@ const shareMessages = {
 
 ## File Size Management and Incremental Development (CRITICAL)
 
-### 14. File Size Guidelines
+### 15. File Size Guidelines
 ✅ DO keep files manageable:
 - **Data files**: Max 500-800 lines per file
 - **Component files**: Max 300-500 lines per file
 - **Large data sets**: Split into multiple files (e.g., questions.ts, results.ts)
 - **Complex components**: Split into smaller sub-components
 
-### 15. Incremental Development Strategy
+### 16. Incremental Development Strategy
 ✅ DO follow this pattern for large implementations:
 1. **Phase 1**: Create basic structure and interfaces
 2. **Phase 2**: Implement core functionality (one feature at a time)
@@ -119,7 +132,7 @@ const shareMessages = {
 5. **Phase 5**: Add social sharing (one platform at a time)
 6. **Phase 6**: Testing and refinement
 
-### 16. Tool Timeout Prevention
+### 17. Tool Timeout Prevention
 ❌ DON'T:
 - Create massive files that cause "Tool call ended before result was received" errors
 - Try to implement everything in a single large operation
@@ -137,7 +150,7 @@ const shareMessages = {
 
 ## Production Build Requirements
 
-### 17. ESLint Build Errors Prevention
+### 18. ESLint Build Errors Prevention
 ❌ DON'T:
 - Use unescaped quotes (") and apostrophes (') in JSX text content
 - Ignore ESLint warnings during development that become build errors in production
@@ -148,7 +161,7 @@ const shareMessages = {
 - Test production builds (npm run build) before deployment
 - Fix all ESLint errors, not just warnings, before committing
 
-### 18. Production Build Validation
+### 19. Production Build Validation
 ❌ DON'T:
 - Deploy without running production build validation
 - Assume development server success means production will work
@@ -188,7 +201,7 @@ const shareMessages = {
 
 ## SQL Database Integration (CRITICAL)
 
-### 19. SQL File Structure Requirements
+### 20. SQL File Structure Requirements
 ❌ DON'T:
 - Add `created_at` and `updated_at` fields in INSERT statements
 - Use `NOW()` functions in SQL INSERT statements
@@ -199,7 +212,7 @@ const shareMessages = {
 - Set play_count to 0 for new tests
 - Match the exact structure of other test SQL files
 
-### 20. SQL File Creation Checklist
+### 21. SQL File Creation Checklist
 ✅ DO verify these fields are included:
 - slug: unique test identifier
 - title: multilingual JSON object
@@ -210,13 +223,24 @@ const shareMessages = {
 - tags: multilingual array object
 - play_count: 0 (initial value)
 
-### 21. SQL File Naming Convention
+### 22. SQL File Naming Convention
 ✅ DO use this pattern: `insert-{test-name}-test.sql`
 Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 
+### 23. SQL Tags Field Requirements (CRITICAL)
+❌ DON'T:
+- Add extra tags beyond what the user specifies in the scenario
+- Assume additional tags are needed (e.g., adding "가치관", "커리어" when user only specified "#직업")
+- Create multilingual tag arrays with more items than user requested
+✅ DO:
+- Use EXACTLY the tags specified in the user's scenario
+- If user specifies only "#직업", use only ["직업"] in all languages
+- Match the user's tag specification precisely without additions
+- Follow the pattern: if user says "#직업", use ["직업"] for all 7 languages
+
 ## UI Consistency Requirements (CRITICAL)
 
-### 22. UI Component Copy Requirements
+### 24. UI Component Copy Requirements
 ❌ DON'T:
 - Create new UI components from scratch when copying existing tests
 - Modify button styles, colors, or layouts without explicit user request
@@ -229,7 +253,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Ensure UI consistency across all test components
 - Only modify content (text, data) while keeping UI structure identical
 
-### 23. UI Consistency Checklist
+### 25. UI Consistency Checklist
 ✅ DO verify these elements match the source template:
 - Start button styling and colors
 - Progress bar design and animation
@@ -242,7 +266,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - All spacing, padding, and margins
 - Font sizes, weights, and text styling
 
-### 24. UI Copy Process
+### 26. UI Copy Process
 ✅ DO follow this exact process:
 1. Copy the entire source component file (e.g., ConflictTestClient.tsx)
 2. Rename the component and file
@@ -253,7 +277,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 
 ## Multilingual UI Text Localization (CRITICAL)
 
-### 25. Complete UI Text Localization
+### 27. Complete UI Text Localization
 ❌ DON'T:
 - Leave hardcoded UI texts in components without multilingual support
 - Forget to translate button texts, section headers, and status messages
@@ -265,7 +289,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Cover all UI elements: start screen, progress, loading, results, sharing
 - Test all languages to ensure complete localization
 
-### 26. UI Text Localization Checklist
+### 28. UI Text Localization Checklist
 ✅ DO verify these elements are translated:
 - Start screen: "테스트 시작", "친구와 함께 해보기", "총 X명이 참여했어요!"
 - Progress screen: "진행률", "결과 분석 중..."
@@ -274,7 +298,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Action buttons: "결과 공유하기", "다시 테스트하기", "다른 테스트 보기"
 - Section headers: "🔥 요즘 인기 테스트 추천 톱5", "없음"
 
-### 27. Result Title Emoji Management
+### 29. Result Title Emoji Management
 ❌ DON'T:
 - Include emojis in result title fields that should be clean text
 - Mix emojis in titles with separate emoji fields
@@ -283,7 +307,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Use separate emoji field for display purposes
 - Remove emojis from all language title fields consistently
 
-### 28. React Rendering Error Prevention
+### 30. React Rendering Error Prevention
 ❌ DON'T:
 - Pass Record<string, string> objects directly as React children
 - Render multilingual objects without extracting locale-specific strings
@@ -293,7 +317,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Use proper type checking for multilingual data
 - Ensure all rendered content is string type, not object type
 
-### 29. Multilingual Development Process
+### 31. Multilingual Development Process
 ✅ DO follow this complete process:
 1. Create data structure with Record<string, string> from the beginning
 2. Implement all UI text localization during initial development
@@ -304,7 +328,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 
 ## TypeScript Build Error Prevention (CRITICAL)
 
-### 30. TypeScript Build Error Prevention
+### 32. TypeScript Build Error Prevention
 ❌ DON'T:
 - Use string variables to index objects without proper type checking
 - Access multilingual objects with dynamic locale strings without type assertions
@@ -319,7 +343,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Validate production build locally before pushing
 - Test builds frequently during development
 
-### 31. Development Server Cache Issues
+### 33. Development Server Cache Issues
 ❌ DON'T:
 - Ignore "Cannot find module" errors in development
 - Continue development with corrupted cache
@@ -330,7 +354,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Clear node modules cache: `Remove-Item -Path node_modules\.cache -Recurse -Force`
 - Restart development server after cache clearing
 
-### 32. TypeScript Error Resolution Process
+### 34. TypeScript Error Resolution Process
 ✅ DO follow this exact process when TypeScript errors occur:
 1. Identify the specific TypeScript error and location
 2. Use proper type assertions for multilingual objects
@@ -339,7 +363,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 5. Clear cache if module errors persist
 6. Restart development server if needed
 
-### 33. Build Error Prevention Checklist
+### 35. Build Error Prevention Checklist
 ✅ DO verify these before deployment:
 - [ ] All TypeScript errors resolved
 - [ ] Production build successful (`npm run build`)
@@ -350,7 +374,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 
 ## Multilingual Comma Pattern Implementation (CRITICAL)
 
-### 34. Language-Specific Comma Separation
+### 36. Language-Specific Comma Separation
 ❌ DON'T:
 - Use only English comma (,) for all languages
 - Assume all languages use the same comma characters
@@ -361,7 +385,7 @@ Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
 - Implement proper trimming and filtering for split results
 - Test comma separation in all supported languages
 
-### 35. Multilingual Comma Separation Implementation Pattern
+### 37. Multilingual Comma Separation Implementation Pattern
 ✅ DO use this pattern for splitting multilingual comma-separated content:
 ```typescript
 const splitByCommas = (text: string) => {
@@ -376,7 +400,7 @@ const resultRootCause = splitByCommas(result.causes[locale] || result.causes.ko)
 const resultSolution = splitByCommas(result.solutions[locale] || result.solutions.ko);
 ```
 
-### 36. Data Structure Consistency (CRITICAL)
+### 38. Data Structure Consistency (CRITICAL)
 ❌ DON'T:
 - Mix string and Record<string, string> types in the same interface
 - Keep unused properties in interfaces (e.g., scores at question level when moved to options)
@@ -387,7 +411,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - Verify component rendering logic matches actual data structure
 - Test type assertions for all multilingual object access
 
-### 37. Multilingual Data Consistency (CRITICAL)
+### 39. Multilingual Data Consistency (CRITICAL)
 ❌ DON'T:
 - Use different comma patterns in data files vs component rendering
 - Mix English commas (,) with Chinese commas (，) in the same data
@@ -399,7 +423,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - Other languages: Use English comma (,) in data files
 - Test comma separation in all languages during development
 
-### 38. Component Data Access Pattern (CRITICAL)
+### 40. Component Data Access Pattern (CRITICAL)
 ❌ DON'T:
 - Access multilingual objects without proper type checking
 - Assume data structure without verification
@@ -410,7 +434,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - Test all language combinations during development
 - Verify type safety for all multilingual object access
 
-### 39. Interface Design for Multilingual Support (CRITICAL)
+### 41. Interface Design for Multilingual Support (CRITICAL)
 ❌ DON'T:
 - Keep unused properties in interfaces after refactoring
 - Mix different data access patterns in the same interface
@@ -421,7 +445,7 @@ const resultSolution = splitByCommas(result.solutions[locale] || result.solution
 - Verify interface matches component usage patterns
 - Test interface changes with build validation
 
-### 40. Development Process for Multilingual Features (CRITICAL)
+### 42. Development Process for Multilingual Features (CRITICAL)
 ❌ DON'T:
 - Implement multilingual features without considering comma patterns
 - Skip language-specific testing during development
@@ -436,7 +460,7 @@ These lessons ensure that future test development will have proper multilingual 
 
 ## Multilingual Quote Handling (CRITICAL)
 
-### 41. Quote Escaping in Multilingual Text
+### 43. Quote Escaping in Multilingual Text
 ❌ DON'T:
 - Use double quotes ("") inside multilingual text strings
 - Use language-specific quote characters (Chinese quotes "") 
@@ -447,7 +471,7 @@ These lessons ensure that future test development will have proper multilingual 
 - Apply consistent quote pattern across all languages
 - Test build after multilingual text changes
 
-### 42. Correct Quote Pattern Examples
+### 44. Correct Quote Pattern Examples
 ✅ DO use this pattern for all multilingual text:
 ```typescript
 // ❌ WRONG - causes build errors
@@ -461,7 +485,7 @@ vi: "\"Người đó thực sự đáng tin certified\"",
 id: "\"Orang itu benar-benar dapat dipercaya\""
 ```
 
-### 43. Language-Specific Quote Guidelines
+### 45. Language-Specific Quote Guidelines
 ✅ DO follow these patterns:
 - **Korean/Japanese**: Use 「」 brackets (no issues)
 - **English**: Use \" escaping
@@ -469,7 +493,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - **Vietnamese**: Use \" escaping  
 - **Indonesian**: Use \" escaping
 
-### 44. Build Error Prevention for Quotes
+### 46. Build Error Prevention for Quotes
 ✅ DO verify before build:
 - [ ] All multilingual text uses \" escaping
 - [ ] No double quotes ("") in any language text
@@ -478,7 +502,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 
 ## Trust Test Development Mistakes and Lessons (CRITICAL)
 
-### 45. Result Screen Display Issues
+### 47. Result Screen Display Issues
 ❌ DON'T:
 - Display variable names instead of actual values in template literals
 - Use incorrect variable interpolation syntax (e.g., [variableName] instead of ${variableName})
@@ -490,7 +514,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Hardcode compatibility descriptions in getCompatibilityDescription function
 - Add complete detailed descriptions to all result types in data files
 
-### 46. Result Screen Layout and Spacing Issues
+### 48. Result Screen Layout and Spacing Issues
 ❌ DON'T:
 - Remove spacing classes (mb-3, mt-3) without considering layout impact
 - Let sections stick together after removing elements
@@ -500,7 +524,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Test layout changes thoroughly before finalizing
 - Ensure proper spacing between all result sections
 
-### 47. Trust Score Display Format
+### 49. Trust Score Display Format
 ❌ DON'T:
 - Use number type for trust scores when string format is required
 - Display raw numbers instead of star ratings
@@ -509,7 +533,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Format scores as star ratings: "★★★★★ (5/5)" instead of 5
 - Update all trustScore values to string format in data files
 
-### 48. Compatibility Section Rendering
+### 50. Compatibility Section Rendering
 ❌ DON'T:
 - Display compatibility items on multiple lines
 - Show raw variable names in compatibility descriptions
@@ -519,7 +543,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Hardcode compatibility descriptions in getCompatibilityDescription function
 - Use proper JSX structure for single-line display
 
-### 49. Multilingual UI Text Coverage
+### 51. Multilingual UI Text Coverage
 ❌ DON'T:
 - Miss UI elements during multilingual implementation
 - Leave hardcoded Korean text in components
@@ -531,7 +555,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Use appropriate translation keys for different contexts (similarTests vs similarTestsTop5)
 - Test all languages during development
 
-### 50. Debug Log Cleanup
+### 52. Debug Log Cleanup
 ❌ DON'T:
 - Leave console.log statements in production code
 - Forget to remove debug logs after development
@@ -540,7 +564,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Clean up debug logs in production builds
 - Use proper logging practices for development only
 
-### 51. Component State Management
+### 53. Component State Management
 ❌ DON'T:
 - Call setShowResult(true) and setShowResultPopup(true) in handleAnswer
 - Have conflicting state updates between different functions
@@ -551,7 +575,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Ensure proper loading spinner state management
 - Test complete user flow from start to result
 
-### 52. Data Structure Consistency
+### 54. Data Structure Consistency
 ❌ DON'T:
 - Mix string and Record<string, string> types inconsistently
 - Change data structure without updating component access patterns
@@ -562,7 +586,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Verify data access patterns match actual data structure
 - Test all language combinations during development
 
-### 53. File Size and Operation Management
+### 55. File Size and Operation Management
 ❌ DON'T:
 - Create massive files that cause "Tool call ended before result was received" errors
 - Try to implement everything in a single large operation
