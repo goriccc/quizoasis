@@ -572,6 +572,49 @@
         "6_1": "Kesenjangan generasi"
       }
     }
+  },
+  "careerTest": {
+    "startMessage": {
+      "title": "Tes bakat karir! Temukan pekerjaan yang cocok untuk Anda",
+      "question1": "Kapan Anda paling bahagia?",
+      "question2": "Pekerjaan apa yang membuat Anda lupa waktu?",
+      "question3": "Apa kelebihan Anda?",
+      "question4": "Apakah Anda suka pekerjaan kreatif?",
+      "question5": "Apakah Anda suka menganalisis dan meneliti?",
+      "question6": "Apakah Anda suka berkomunikasi dengan orang?",
+      "question7": "Apakah Anda pandai memimpin dan merencanakan?",
+      "conclusion": "Temukan karir sempurna untuk Anda!",
+      "timeInfo": "Butuh 3 menit! Jawab dengan jujur 💼"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan teman",
+      "participantCount": "Total {count} orang berpartisipasi!",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "testComplete": "🎉 Tes Selesai!",
+      "viewResult": "Lihat Hasil Analisis",
+      "yourResult": "Hasil Anda",
+      "coreStrengths": "🎯 Kekuatan Inti",
+      "suitableFields": "💼 Bidang yang Sesuai",
+      "recommendedJobs": "💼 Pekerjaan yang Direkomendasikan",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Tes Lainnya",
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    },
+    "result": {
+      "noResult": "Tidak ada hasil."
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareError": "Terjadi kesalahan saat berbagi.",
+      "kakaoShareError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "share": {
+      "message": "Karir sempurna saya adalah {resultTitle}! 💼 Apa karir masa depan Anda?"
+    }
   }
 }
 

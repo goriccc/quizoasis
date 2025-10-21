@@ -572,6 +572,49 @@
         "6_1": "Khoảng cách thế hệ"
       }
     }
+  },
+  "careerTest": {
+    "startMessage": {
+      "title": "Kiểm tra năng lực nghề nghiệp! Tìm công việc phù hợp với bạn",
+      "question1": "Khi nào bạn hạnh phúc nhất?",
+      "question2": "Công việc nào khiến bạn quên thời gian?",
+      "question3": "Điểm mạnh của bạn là gì?",
+      "question4": "Bạn có thích công việc sáng tạo?",
+      "question5": "Bạn có thích phân tích và nghiên cứu?",
+      "question6": "Bạn có thích giao tiếp với mọi người?",
+      "question7": "Bạn có giỏi lãnh đạo và lập kế hoạch?",
+      "conclusion": "Tìm nghề nghiệp hoàn hảo cho bạn!",
+      "timeInfo": "Mất 3 phút! Trả lời thành thật 💼"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "participantCount": "Tổng cộng {count} người tham gia!",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "testComplete": "🎉 Hoàn thành kiểm tra!",
+      "viewResult": "Xem kết quả phân tích",
+      "yourResult": "Kết quả của bạn",
+      "coreStrengths": "🎯 Điểm mạnh cốt lõi",
+      "suitableFields": "💼 Lĩnh vực phù hợp",
+      "recommendedJobs": "💼 Nghề nghiệp được đề xuất",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại kiểm tra",
+      "otherTests": "Các kiểm tra khác",
+      "similarTestsTop5": "🎯 Top 5 kiểm tra tương tự",
+      "popularTestsTop5": "🔥 Top 5 kiểm tra phổ biến"
+    },
+    "result": {
+      "noResult": "Không có kết quả."
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareError": "Đã xảy ra lỗi khi chia sẻ.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "share": {
+      "message": "Nghề nghiệp hoàn hảo của tôi là {resultTitle}! 💼 Nghề nghiệp tương lai của bạn là gì?"
+    }
   }
 }
 

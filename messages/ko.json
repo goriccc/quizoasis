@@ -599,6 +599,49 @@
         "6_1": "세대 차이"
       }
     }
+  },
+  "careerTest": {
+    "startMessage": {
+      "title": "적성 진단! 당신에게 맞는 직업을 찾아보세요",
+      "question1": "무엇을 할 때 가장 행복한가요?",
+      "question2": "어떤 일을 할 때 시간 가는 줄 모르나요?",
+      "question3": "당신의 강점은 무엇인가요?",
+      "question4": "창의적인 일을 좋아하나요?",
+      "question5": "분석하고 연구하는 게 좋나요?",
+      "question6": "사람들과 소통하는 게 즐거운가요?",
+      "question7": "이끌고 계획하는 게 잘 맞나요?",
+      "conclusion": "당신에게 딱 맞는 직업을 찾아보세요!",
+      "timeInfo": "소요 시간 3분! 솔직하게 답변해주세요 💼"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "shareWithFriends": "친구와 함께 해보기",
+      "participantCount": "총 {count}명이 참여했어요!",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "testComplete": "🎉 테스트 완료!",
+      "viewResult": "분석 결과 보기",
+      "yourResult": "당신의 결과",
+      "coreStrengths": "🎯 핵심 강점",
+      "suitableFields": "💼 적합한 분야",
+      "recommendedJobs": "💼 추천 직업",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    },
+    "result": {
+      "noResult": "결과가 없습니다."
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "shareError": "공유 중 오류가 발생했습니다.",
+      "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "share": {
+      "message": "나에게 맞는 직업은 {resultTitle}! 💼 너의 미래 직업은 뭐야?"
+    }
   }
 }
 

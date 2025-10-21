@@ -596,6 +596,49 @@
         "6_1": "Generation gap"
       }
     }
+  },
+  "careerTest": {
+    "startMessage": {
+      "title": "Career aptitude test! Find the job that suits you",
+      "question1": "What makes you happiest?",
+      "question2": "What work makes time fly?",
+      "question3": "What are your strengths?",
+      "question4": "Do you like creative work?",
+      "question5": "Do you enjoy analyzing and researching?",
+      "question6": "Do you enjoy communicating with people?",
+      "question7": "Are you good at leading and planning?",
+      "conclusion": "Find the perfect career for you!",
+      "timeInfo": "Takes 3 minutes! Answer honestly 💼"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with friends",
+      "participantCount": "Total {count} people participated!",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "testComplete": "🎉 Test Complete!",
+      "viewResult": "View Analysis Results",
+      "yourResult": "Your Result",
+      "coreStrengths": "🎯 Core Strengths",
+      "suitableFields": "💼 Suitable Fields",
+      "recommendedJobs": "💼 Recommended Jobs",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "Other Tests",
+      "similarTestsTop5": "🎯 Similar Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    },
+    "result": {
+      "noResult": "No result available."
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareError": "An error occurred while sharing.",
+      "kakaoShareError": "An error occurred while sharing on KakaoTalk."
+    },
+    "share": {
+      "message": "My perfect job is {resultTitle}! 💼 What's your future job?"
+    }
   }
 }
 
