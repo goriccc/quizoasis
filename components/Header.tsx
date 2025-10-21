@@ -41,6 +41,7 @@ export default function Header() {
         WebkitFontSmoothing: 'antialiased',
         MozOsxFontSmoothing: 'grayscale'
       }}
+      data-font-force="true"
     >
       <div className="max-w-7xl mx-auto px-1 sm:px-4 h-16 flex items-center justify-between">
         {/* 좌측: 햄버거 메뉴 + 검색 + 언어 */}
