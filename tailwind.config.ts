@@ -15,6 +15,9 @@ const config: Config = {
           'Noto Sans SC',
           'Noto Sans TC',
           'Noto Sans',
+          'Noto Sans Fallback',
+          'Roboto',
+          'Roboto Condensed',
           'system-ui',
           'sans-serif'
         ],
