@@ -708,7 +708,8 @@
       "viewResult": "분석 결과 보기",
       "shareResult": "결과 공유하기",
       "retake": "다시 테스트하기",
-      "otherTests": "다른 테스트 보기"
+      "otherTests": "다른 테스트 보기",
+      "shareWithFriends": "친구와 함께 해보기"
     },
       "result": {
         "yourResult": "당신의 결과는",

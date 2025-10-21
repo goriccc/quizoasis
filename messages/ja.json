@@ -681,7 +681,8 @@
       "viewResult": "分析結果を見る",
       "shareResult": "結果を共有",
       "retake": "再テスト",
-      "otherTests": "他のテスト"
+      "otherTests": "他のテスト",
+      "shareWithFriends": "友達と一緒にやってみる"
     },
     "result": {
       "yourResult": "あなたの結果",

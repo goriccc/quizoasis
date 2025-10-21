@@ -688,7 +688,8 @@
       "viewResult": "查看分析結果",
       "shareResult": "分享結果",
       "retake": "重新測試",
-      "otherTests": "其他測試"
+      "otherTests": "其他測試",
+      "shareWithFriends": "和朋友一起試試"
     },
     "result": {
       "yourResult": "你的結果是",

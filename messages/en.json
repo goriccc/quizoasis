@@ -705,7 +705,8 @@
       "viewResult": "View Analysis Results",
       "shareResult": "Share Result",
       "retake": "Retake Test",
-      "otherTests": "Other Tests"
+      "otherTests": "Other Tests",
+      "shareWithFriends": "Try with Friends"
     },
     "result": {
       "yourResult": "Your Result",
