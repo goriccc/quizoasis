@@ -33,7 +33,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md" style={{ fontFamily: "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Noto Sans Fallback', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" }}>
       <div className="max-w-7xl mx-auto px-1 sm:px-4 h-16 flex items-center justify-between">
         {/* 좌측: 햄버거 메뉴 + 검색 + 언어 */}
         <div className="flex items-center" style={{ gap: '5px' }}>

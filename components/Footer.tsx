@@ -6,7 +6,7 @@ export default function Footer() {
   const t = useTranslations('footer');
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 mt-12">
+    <footer className="bg-gray-900 text-gray-300 py-12 mt-12" style={{ fontFamily: "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Noto Sans Fallback', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" }}>
       <div className="max-w-7xl mx-auto px-4">
         {/* 슬로건 */}
         <div className="text-center mb-8">
