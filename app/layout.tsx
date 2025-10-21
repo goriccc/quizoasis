@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import Head from 'next/head';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -33,16 +34,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      {/* Google Fonts - Noto Sans 다국어 지원 */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link 
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" 
-        rel="stylesheet" 
-      />
-      
-      {/* Google AdSense */}
+    <html lang="ko">
+      <Head>
+        {/* Google Fonts - Noto Sans 다국어 지원 */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" 
+          rel="stylesheet" 
+        />
+      </Head>
+      <body>
+        {/* Google AdSense */}
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3192752766652582"
@@ -85,7 +88,8 @@ export default function RootLayout({
       </Script>
       
       {children}
-    </>
+      </body>
+    </html>
   );
 }
 
