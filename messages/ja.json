@@ -615,6 +615,48 @@
     "share": {
       "message": "私にぴったりの職業は{resultTitle}！💼 あなたの将来の職業は何？"
     }
+  },
+  "jobStrengthTest": {
+    "startMessage": {
+      "title": "あなたの本当の才能はどこに隠れているのでしょうか？",
+      "line1": "同じ会社でも、営業で輝く人、企画で輝く人、研究で輝く人がいます。",
+      "line2": "あなたの性格、強み、働くスタイル...すべてを考慮すると、どの職務が最も合うでしょうか？",
+      "line3": "戦略企画？営業マーケティング？研究開発？運営管理？創作デザイン？教育相談？",
+      "line4": "たった3分で、あなたのキャリア方向を発見できます！",
+      "timeInfo": "所要時間3分！正直に答えてください 💼"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "participantCount": "総計{count}人が参加しました！",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "testComplete": "🎉 テスト完了！",
+      "viewResult": "分析結果を見る",
+      "yourResult": "あなたの結果は",
+      "coreStrengths": "🎯 特徴",
+      "strengths": "✅ 長所",
+      "weaknesses": "⚠️ 短所",
+      "recommendedJobs": "💼 おすすめ職務",
+      "recommendedCompanies": "🏢 おすすめ企業",
+      "advice": "💡 アドバイス",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度テスト",
+      "otherTests": "他のテストを見る",
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 人気テストおすすめトップ5"
+    },
+    "result": {
+      "noResult": "結果がありません。"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "shareError": "共有中にエラーが発生しました。",
+      "kakaoShareError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "share": {
+      "message": "私は{resultTitle}！私が最も輝く職務分野を見つけました！あなたはどの職務が合いますか？一緒にやってみましょう！💼✨"
+    }
   }
 }
 

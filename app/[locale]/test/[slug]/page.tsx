@@ -9,6 +9,7 @@ import { trustQuestions, trustResults } from '@/lib/trustData';
 import { empathyQuestions, empathyResults } from '@/lib/empathyData';
 import { honestyQuestions, honestyResults } from '@/lib/honestyData';
 import { careerQuestions, careerResults } from '@/lib/careerData';
+import { jobStrengthQuestions, jobStrengthResults } from '@/lib/jobStrengthData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -78,6 +79,9 @@ const HonestyTestClient = dynamic(() => import('@/components/HonestyTestClient')
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const CareerTestClient = dynamic(() => import('@/components/CareerTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const JobStrengthTestClient = dynamic(() => import('@/components/JobStrengthTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -911,6 +915,11 @@ export default async function TestPage({ params }: Props) {
       questions: careerQuestions,
       results: careerResults
     };
+  } else if (slug === 'job-strength-test') {
+    testData = {
+      questions: jobStrengthQuestions,
+      results: jobStrengthResults
+    };
   } else {
     testData = getTestData(slug);
   }
@@ -987,7 +996,7 @@ export default async function TestPage({ params }: Props) {
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
-    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : DatingTestClient) :
+    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : DatingTestClient) :
     MBTITestClient;
 
   return (

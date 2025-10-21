@@ -615,6 +615,48 @@
     "share": {
       "message": "Nghề nghiệp hoàn hảo của tôi là {resultTitle}! 💼 Nghề nghiệp tương lai của bạn là gì?"
     }
+  },
+  "jobStrengthTest": {
+    "startMessage": {
+      "title": "Tài năng thực sự của bạn ẩn ở đâu?",
+      "line1": "Ngay cả trong cùng một công ty, có người tỏa sáng trong bán hàng, có người trong lập kế hoạch, có người trong nghiên cứu.",
+      "line2": "Xem xét tính cách, điểm mạnh, phong cách làm việc của bạn... vai trò công việc nào phù hợp nhất?",
+      "line3": "Lập kế hoạch chiến lược? Bán hàng marketing? R&D? Quản lý vận hành? Thiết kế sáng tạo? Tư vấn giáo dục?",
+      "line4": "Chỉ trong 3 phút, bạn có thể khám phá hướng sự nghiệp của mình!",
+      "timeInfo": "Mất 3 phút! Hãy trả lời thành thật 💼"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "participantCount": "Tổng cộng {count} người đã tham gia!",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "testComplete": "🎉 Hoàn thành kiểm tra!",
+      "viewResult": "Xem kết quả phân tích",
+      "yourResult": "Kết quả của bạn",
+      "coreStrengths": "🎯 Đặc điểm",
+      "strengths": "✅ Điểm mạnh",
+      "weaknesses": "⚠️ Điểm yếu",
+      "recommendedJobs": "💼 Công việc được đề xuất",
+      "recommendedCompanies": "🏢 Công ty được đề xuất",
+      "advice": "💡 Lời khuyên",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại kiểm tra",
+      "otherTests": "Các kiểm tra khác",
+      "similarTestsTop5": "🎯 Top 5 kiểm tra tương tự",
+      "popularTestsTop5": "🔥 Top 5 kiểm tra phổ biến"
+    },
+    "result": {
+      "noResult": "Không có kết quả."
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareError": "Đã xảy ra lỗi khi chia sẻ.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "share": {
+      "message": "Tôi là {resultTitle}! Tôi đã tìm thấy lĩnh vực công việc tỏa sáng nhất! Công việc nào phù hợp với bạn? Hãy thử cùng nhau! 💼✨"
+    }
   }
 }
 

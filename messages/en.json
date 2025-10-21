@@ -639,6 +639,48 @@
     "share": {
       "message": "My perfect job is {resultTitle}! 💼 What's your future job?"
     }
+  },
+  "jobStrengthTest": {
+    "startMessage": {
+      "title": "Where is your real talent hidden?",
+      "line1": "Even in the same company, some shine in sales, some in planning, some in research.",
+      "line2": "Considering your personality, strengths, work style... which job role suits you best?",
+      "line3": "Strategic planning? Sales marketing? R&D? Operations management? Creative design? Education counseling?",
+      "line4": "In just 3 minutes, you can discover your career direction!",
+      "timeInfo": "Takes 3 minutes! Answer honestly 💼"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with friends",
+      "participantCount": "Total {count} people participated!",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "testComplete": "🎉 Test Complete!",
+      "viewResult": "View Analysis Results",
+      "yourResult": "Your Result",
+      "coreStrengths": "🎯 Characteristics",
+      "strengths": "✅ Strengths",
+      "weaknesses": "⚠️ Weaknesses",
+      "recommendedJobs": "💼 Recommended Jobs",
+      "recommendedCompanies": "🏢 Recommended Companies",
+      "advice": "💡 Advice",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "Other Tests",
+      "similarTestsTop5": "🎯 Similar Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    },
+    "result": {
+      "noResult": "No result available."
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareError": "An error occurred while sharing.",
+      "kakaoShareError": "An error occurred while sharing on KakaoTalk."
+    },
+    "share": {
+      "message": "I am {resultTitle}! I found my brightest job field! What job suits you? Let's try together! 💼✨"
+    }
   }
 }
 

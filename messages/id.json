@@ -615,6 +615,48 @@
     "share": {
       "message": "Karir sempurna saya adalah {resultTitle}! 💼 Apa karir masa depan Anda?"
     }
+  },
+  "jobStrengthTest": {
+    "startMessage": {
+      "title": "Di mana bakat sejati Anda tersembunyi?",
+      "line1": "Bahkan di perusahaan yang sama, ada yang bersinar di penjualan, ada yang di perencanaan, ada yang di penelitian.",
+      "line2": "Mempertimbangkan kepribadian, kekuatan, gaya kerja Anda... peran pekerjaan apa yang paling cocok?",
+      "line3": "Perencanaan strategis? Penjualan pemasaran? R&D? Manajemen operasi? Desain kreatif? Konseling pendidikan?",
+      "line4": "Hanya dalam 3 menit, Anda dapat menemukan arah karier Anda!",
+      "timeInfo": "Waktu 3 menit! Jawab dengan jujur 💼"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan teman",
+      "participantCount": "Total {count} orang berpartisipasi!",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "testComplete": "🎉 Tes Selesai!",
+      "viewResult": "Lihat Hasil Analisis",
+      "yourResult": "Hasil Anda",
+      "coreStrengths": "🎯 Karakteristik",
+      "strengths": "✅ Kekuatan",
+      "weaknesses": "⚠️ Kelemahan",
+      "recommendedJobs": "💼 Pekerjaan yang Direkomendasikan",
+      "recommendedCompanies": "🏢 Perusahaan yang Direkomendasikan",
+      "advice": "💡 Saran",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Tes Lainnya",
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    },
+    "result": {
+      "noResult": "Tidak ada hasil."
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareError": "Terjadi kesalahan saat berbagi.",
+      "kakaoShareError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "share": {
+      "message": "Saya adalah {resultTitle}! Saya menemukan bidang pekerjaan yang paling bersinar! Pekerjaan apa yang cocok untuk Anda? Mari coba bersama! 💼✨"
+    }
   }
 }
 

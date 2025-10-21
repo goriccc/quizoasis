@@ -642,6 +642,48 @@
     "share": {
       "message": "나에게 맞는 직업은 {resultTitle}! 💼 너의 미래 직업은 뭐야?"
     }
+  },
+  "jobStrengthTest": {
+    "startMessage": {
+      "title": "당신의 진짜 재능은 어디에 숨어있을까요?",
+      "line1": "같은 회사에서도 누구는 영업에서 빛나고, 누구는 기획에서 빛나고, 누구는 연구에서 빛납니다.",
+      "line2": "당신의 성격, 강점, 일하는 스타일... 모든 것을 고려하면 어떤 직무가 가장 잘 맞을까요?",
+      "line3": "전략 기획? 영업 마케팅? 연구 개발? 운영 관리? 창작 디자인? 교육 상담?",
+      "line4": "단 3분이면 당신의 커리어 방향을 발견할 수 있습니다!",
+      "timeInfo": "소요 시간 3분! 솔직하게 답변해주세요 💼"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "shareWithFriends": "친구와 함께 해보기",
+      "participantCount": "총 {count}명이 참여했어요!",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "testComplete": "🎉 테스트 완료!",
+      "viewResult": "분석 결과 보기",
+      "yourResult": "당신의 결과는",
+      "coreStrengths": "🎯 특징",
+      "strengths": "✅ 장점",
+      "weaknesses": "⚠️ 단점",
+      "recommendedJobs": "💼 추천 직무",
+      "recommendedCompanies": "🏢 추천 기업",
+      "advice": "💡 조언",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    },
+    "result": {
+      "noResult": "결과가 없습니다."
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "shareError": "공유 중 오류가 발생했습니다.",
+      "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "share": {
+      "message": "나는 {resultTitle}! 내가 가장 빛나는 직무 분야 찾았다! 너는 어떤 직무가 맞아? 같이 해보자! 💼✨"
+    }
   }
 }
 
