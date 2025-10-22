@@ -770,6 +770,74 @@
     "shareMessages": {
       "default": "私は{resultTitle}！ワークライフバランステスト結果に衝撃... あなたもやってみて私たちの価値観が合うか確認しよう！💼✨"
     }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "「一人では速いが、一緒ならもっと遠くまで行ける！」",
+      "line1": "「私がリードします」自然に主導権を握る",
+      "line2": "「どうお手伝いしましょうか？」必要な役割を探す",
+      "line3": "「こんな方法はいかがですか？」アイデアを提示",
+      "line4": "「とりあえず始めてみましょう」すぐに実行準備",
+      "line5": "「チームプロジェクトでのあなたの役割は？リーダー？サポーター？アイデアバンク？実行専門家？」",
+      "line6": "「会議時間、業務分担、対立状況...それぞれの場所で輝くチームメンバー！」"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "shareResult": "結果を共有",
+      "retake": "テストを再実行",
+      "otherTests": "他のテスト",
+      "participants": "人参加",
+      "withFriends": "友達と一緒にやってみる"
+    },
+    "result": {
+      "yourResult": "あなたの結果",
+      "characteristics": "特徴",
+      "pros": "長所",
+      "cons": "短所",
+      "advice": "アドバイス",
+      "recommendedRole": "推奨役割",
+      "compatibility": "チーム相性",
+      "bestMatch": "💖 最高の相性",
+      "goodMatch": "😊 良い相性",
+      "carefulMatch": "⚠️ 注意が必要",
+      "difficultMatch": "❌ 難しい相性"
+    }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "「一人では速いが、一緒ならもっと遠くまで行ける！」",
+      "line1": "チームプロジェクトでのあなたの役割は？リーダー？サポーター？アイデアバンク？実行者？",
+      "line2": "会議時間、業務分担、対立状況... それぞれの場所で輝くチームメンバー！",
+      "line3": "あなたはチームでどんな存在ですか？たった3分でチームワークスタイルを発見できます！",
+      "line4": "",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "shareResult": "結果共有",
+      "retake": "再テスト",
+      "otherTests": "他のテスト",
+      "participants": "名参加",
+      "withFriends": "友達と一緒に"
+    },
+    "result": {
+      "yourResult": "あなたの結果",
+      "characteristics": "特徴",
+      "pros": "長所",
+      "cons": "短所",
+      "advice": "アドバイス",
+      "recommendedRole": "推奨役割",
+      "compatibility": "チーム相性",
+      "bestMatch": "最高の相性",
+      "goodMatch": "良い相性",
+      "carefulMatch": "注意が必要",
+      "difficultMatch": "難しい相性"
+    }
   }
 }
 

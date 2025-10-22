@@ -770,6 +770,74 @@
     "shareMessages": {
       "default": "Tôi là {resultTitle}! Kết quả test cân bằng công việc-cuộc sống gây sốc... Bạn cũng làm thử và xem giá trị quan của chúng ta có khớp không! 💼✨"
     }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "\"Một mình thì nhanh, nhưng cùng nhau thì đi xa hơn！\"",
+      "line1": "\"Tôi sẽ dẫn đầu\" một cách tự nhiên nắm quyền chủ động",
+      "line2": "\"Tôi có thể giúp gì?\" tìm kiếm vai trò cần thiết",
+      "line3": "\"Cách tiếp cận này thế nào?\" đề xuất ý tưởng",
+      "line4": "\"Hãy bắt đầu ngay\" chuẩn bị thực hiện ngay lập tức",
+      "line5": "\"Vai trò của bạn trong dự án nhóm là gì? Lãnh đạo? Hỗ trợ? Ngân hàng ý tưởng? Chuyên gia thực thi?\"",
+      "line6": "\"Thời gian họp, phân chia công việc, tình huống xung đột... Các thành viên nhóm tỏa sáng ở vị trí của mình!\""
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại kiểm tra",
+      "otherTests": "Kiểm tra khác",
+      "participants": "người tham gia",
+      "withFriends": "Thử với bạn bè"
+    },
+    "result": {
+      "yourResult": "Kết quả của bạn",
+      "characteristics": "Đặc điểm",
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "recommendedRole": "Vai trò được đề xuất",
+      "compatibility": "Độ tương thích nhóm",
+      "bestMatch": "💖 Kết hợp tốt nhất",
+      "goodMatch": "😊 Kết hợp tốt",
+      "carefulMatch": "⚠️ Cần chú ý",
+      "difficultMatch": "❌ Kết hợp khó khăn"
+    }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "\"Một mình thì nhanh, nhưng cùng nhau thì đi xa hơn!\"",
+      "line1": "Vai trò của bạn trong dự án nhóm là gì? Lãnh đạo? Hỗ trợ? Ngân hàng ý tưởng? Thực thi?",
+      "line2": "Thời gian họp, phân chia công việc, xung đột... Các thành viên nhóm tỏa sáng ở vị trí của mình!",
+      "line3": "Bạn là loại người chơi nhóm nào? Chỉ 3 phút để khám phá phong cách làm việc nhóm của bạn!",
+      "line4": "",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại kiểm tra",
+      "otherTests": "Các kiểm tra khác",
+      "participants": "người tham gia",
+      "withFriends": "Thử với bạn bè"
+    },
+    "result": {
+      "yourResult": "Kết quả của bạn",
+      "characteristics": "Đặc điểm",
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "recommendedRole": "Vai trò được đề xuất",
+      "compatibility": "Độ tương thích nhóm",
+      "bestMatch": "Kết hợp tốt nhất",
+      "goodMatch": "Kết hợp tốt",
+      "carefulMatch": "Cần chú ý",
+      "difficultMatch": "Kết hợp khó khăn"
+    }
   }
 }
 

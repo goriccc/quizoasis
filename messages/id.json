@@ -770,6 +770,74 @@
     "shareMessages": {
       "default": "Saya adalah {resultTitle}! Hasil test keseimbangan kerja-hidup mengejutkan... Anda juga coba dan lihat apakah nilai-nilai kita cocok! 💼✨"
     }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "\"Sendirian cepat, tapi bersama-sama lebih jauh！\"",
+      "line1": "\"Saya akan memimpin\" secara alami mengambil inisiatif",
+      "line2": "\"Bagaimana saya bisa membantu?\" mencari peran yang dibutuhkan",
+      "line3": "\"Bagaimana dengan pendekatan ini?\" menyarankan ide",
+      "line4": "\"Mari kita mulai saja\" langsung mempersiapkan eksekusi",
+      "line5": "\"Apa peran Anda dalam proyek tim? Pemimpin? Pendukung? Bank ide? Ahli eksekusi?\"",
+      "line6": "\"Waktu rapat, pembagian tugas, situasi konflik... Anggota tim yang bersinar di tempat mereka!\""
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Tes Lain",
+      "participants": "peserta",
+      "withFriends": "Coba dengan teman"
+    },
+    "result": {
+      "yourResult": "Hasil Anda",
+      "characteristics": "Karakteristik",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "advice": "Saran",
+      "recommendedRole": "Peran yang Direkomendasikan",
+      "compatibility": "Kompatibilitas Tim",
+      "bestMatch": "💖 Kecocokan Terbaik",
+      "goodMatch": "😊 Kecocokan Baik",
+      "carefulMatch": "⚠️ Perlu Perhatian",
+      "difficultMatch": "❌ Kecocokan Sulit"
+    }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "\"Sendirian cepat, tapi bersama-sama lebih jauh!\"",
+      "line1": "Apa peran Anda dalam proyek tim? Pemimpin? Pendukung? Bank ide? Eksekutor?",
+      "line2": "Waktu rapat, pembagian tugas, konflik... Anggota tim yang bersinar di tempatnya masing-masing!",
+      "line3": "Anda adalah pemain tim seperti apa? Hanya 3 menit untuk menemukan gaya kerja tim Anda!",
+      "line4": "",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulang Tes",
+      "otherTests": "Tes Lainnya",
+      "participants": "peserta",
+      "withFriends": "Coba dengan teman"
+    },
+    "result": {
+      "yourResult": "Hasil Anda",
+      "characteristics": "Karakteristik",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "advice": "Saran",
+      "recommendedRole": "Peran yang Direkomendasikan",
+      "compatibility": "Kompatibilitas Tim",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik",
+      "carefulMatch": "Perlu Perhatian",
+      "difficultMatch": "Kecocokan Sulit"
+    }
   }
 }
 

@@ -794,6 +794,74 @@
     "shareMessages": {
       "default": "I am {resultTitle}! Work-life balance test results shocking... Let's take the test and see if our values match! 💼✨"
     }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "\"Alone we can do so little; together we can do so much!\"",
+      "line1": "\"I'll take the lead\" naturally taking initiative",
+      "line2": "\"How can I help?\" looking for needed role",
+      "line3": "\"How about this approach?\" suggesting ideas",
+      "line4": "\"Let's start right away\" preparing for immediate action",
+      "line5": "\"What's your role in team projects? Leader? Supporter? Idea bank? Execution expert?\"",
+      "line6": "\"Meeting time, task division, conflict situations... Team members who shine in their own place!\""
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "Other Tests",
+      "participants": "participants",
+      "withFriends": "Try with friends"
+    },
+    "result": {
+      "yourResult": "Your Result",
+      "characteristics": "Characteristics",
+      "pros": "Strengths",
+      "cons": "Weaknesses",
+      "advice": "Advice",
+      "recommendedRole": "Recommended Role",
+      "compatibility": "Team Compatibility",
+      "bestMatch": "💖 Best Match",
+      "goodMatch": "😊 Good Match",
+      "carefulMatch": "⚠️ Needs Attention",
+      "difficultMatch": "❌ Difficult Match"
+    }
+  },
+  "teamPlayerTest": {
+    "startMessage": {
+      "title": "\"Alone we can do so little; together we can do so much!\"",
+      "line1": "What's your role in team projects? Leader? Supporter? Idea bank? Executor?",
+      "line2": "Meeting time, task division, conflicts... Team members shining in their own places!",
+      "line3": "What kind of existence are you in the team? Discover your teamwork style in just 3 minutes!",
+      "line4": "",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "Other Tests",
+      "participants": "participants",
+      "withFriends": "Try with friends"
+    },
+    "result": {
+      "yourResult": "Your Result",
+      "characteristics": "Characteristics",
+      "pros": "Strengths",
+      "cons": "Weaknesses",
+      "advice": "Advice",
+      "recommendedRole": "Recommended Role",
+      "compatibility": "Team Compatibility",
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match",
+      "carefulMatch": "Needs Attention",
+      "difficultMatch": "Difficult Match"
+    }
   }
 }
 

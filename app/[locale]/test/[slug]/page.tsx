@@ -13,6 +13,7 @@ import { jobStrengthQuestions, jobStrengthResults } from '@/lib/jobStrengthData'
 import { workValuesQuestions, workValuesResults } from '@/lib/workValuesData';
 import { entrepreneurSpiritQuestions, entrepreneurSpiritResults } from '@/lib/entrepreneurSpiritData';
 import { workLifeBalanceQuestions, workLifeBalanceResults } from '@/lib/workLifeBalanceData';
+import { teamPlayerQuestions, teamPlayerResults } from '@/lib/teamPlayerData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -94,6 +95,9 @@ const EntrepreneurSpiritTestClient = dynamic(() => import('@/components/Entrepre
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const WorkLifeBalanceTestClient = dynamic(() => import('@/components/WorkLifeBalanceTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const TeamPlayerTestClient = dynamic(() => import('@/components/TeamPlayerTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -933,6 +937,52 @@ export default async function TestPage({ params }: Props) {
           questions={workLifeBalanceQuestions}
           results={workLifeBalanceResults}
           questionCount={workLifeBalanceQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 팀 플레이어 테스트의 경우 Supabase에서 시도
+  if (slug === 'team-player-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'team-player-test',
+      title: {
+        ko: '당신은 어떤 팀 플레이어인가요?',
+        en: 'What kind of team player are you?',
+        ja: 'あなたはどんなチームプレイヤーですか？',
+        'zh-CN': '你是什么样的团队玩家？',
+        'zh-TW': '你是什麼樣的團隊玩家？',
+        vi: 'Bạn là loại người chơi nhóm nào?',
+        id: 'Anda adalah pemain tim seperti apa?'
+      },
+      description: {
+        ko: '혼자서는 빠르지만, 함께하면 더 멀리 갑니다!',
+        en: 'Alone we can do so little; together we can do so much!',
+        ja: '一人では速いが、一緒ならもっと遠くまで行ける！',
+        'zh-CN': '一个人走得快，但一起走得更远！',
+        'zh-TW': '一個人走得快，但一起走得更遠！',
+        vi: 'Một mình thì nhanh, nhưng cùng nhau thì đi xa hơn！',
+        id: 'Sendirian cepat, tapi bersama-sama lebih jauh！'
+      },
+      thumbnail: 'test_052_team_player.jpg',
+      play_count: 0
+    };
+
+    return (
+      <>
+        <TeamPlayerTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={teamPlayerQuestions}
+          results={teamPlayerResults}
+          questionCount={teamPlayerQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
