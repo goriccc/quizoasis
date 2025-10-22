@@ -700,6 +700,40 @@
       "shareError": "共有中にエラーが発生しました。",
       "kakaoShareError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "entrepreneurSpiritTest": {
+    "startMessage": {
+      "line1": "あなたの中に隠れているCEOのDNAを発見してください！",
+      "line2": "革新的なアイデアで世界を変えるリーダー？",
+      "line3": "安定したビジネスで成功を作る経営者？",
+      "line4": "創造的なソリューションで問題を解決するイノベーター？",
+      "line5": "あなたの起業家気質を3分で知ってみましょう！",
+      "line6": "正直に答えてください 🚀"
+    },
+    "result": {
+      "pros": "長所",
+      "cons": "短所",
+      "recommendedFields": "おすすめ分野",
+      "advice": "アドバイス",
+      "successRate": "起業成功率"
+    },
+    "ui": {
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "shareError": "共有中にエラーが発生しました。",
+      "kakaoShareError": "カカオトーク共有中にエラーが発生しました。",
+      "wechatInstruction": "WeChatで貼り付けて共有してください。"
+    },
+    "shareMessages": {
+      "default": "私は{resultTitle}！起業家精神95%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀"
+    }
   }
 }
 

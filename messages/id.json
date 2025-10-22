@@ -700,6 +700,40 @@
       "shareError": "Terjadi kesalahan saat berbagi.",
       "kakaoShareError": "Terjadi kesalahan saat berbagi di KakaoTalk."
     }
+  },
+  "entrepreneurSpiritTest": {
+    "startMessage": {
+      "line1": "Temukan DNA CEO yang tersembunyi dalam diri Anda!",
+      "line2": "Seorang pemimpin yang mengubah dunia dengan ide-ide inovatif?",
+      "line3": "Seorang eksekutif yang menciptakan kesuksesan dengan bisnis yang stabil?",
+      "line4": "Seorang inovator yang memecahkan masalah dengan solusi kreatif?",
+      "line5": "Ketahui semangat kewirausahaan Anda dalam 3 menit!",
+      "line6": "Silakan jawab dengan jujur 🚀"
+    },
+    "result": {
+      "pros": "Kekuatan",
+      "cons": "Kelemahan",
+      "recommendedFields": "Bidang yang Direkomendasikan",
+      "advice": "Saran",
+      "successRate": "Tingkat Keberhasilan Kewirausahaan"
+    },
+    "ui": {
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "shareError": "Terjadi kesalahan saat berbagi.",
+      "kakaoShareError": "Terjadi kesalahan saat berbagi di KakaoTalk.",
+      "wechatInstruction": "Silakan tempel dan bagikan di WeChat."
+    },
+    "shareMessages": {
+      "default": "Saya adalah {resultTitle}! Semangat kewirausahaan 95% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀"
+    }
   }
 }
 

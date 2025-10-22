@@ -700,6 +700,40 @@
       "shareError": "Đã xảy ra lỗi khi chia sẻ.",
       "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
     }
+  },
+  "entrepreneurSpiritTest": {
+    "startMessage": {
+      "line1": "Khám phá DNA CEO ẩn giấu trong bạn!",
+      "line2": "Một nhà lãnh đạo thay đổi thế giới bằng những ý tưởng đổi mới?",
+      "line3": "Một giám đốc điều hành tạo ra thành công bằng kinh doanh ổn định?",
+      "line4": "Một nhà đổi mới giải quyết vấn đề bằng các giải pháp sáng tạo?",
+      "line5": "Tìm hiểu tinh thần khởi nghiệp của bạn chỉ trong 3 phút!",
+      "line6": "Vui lòng trả lời thành thật 🚀"
+    },
+    "result": {
+      "pros": "Điểm mạnh",
+      "cons": "Điểm yếu",
+      "recommendedFields": "Lĩnh vực được khuyến nghị",
+      "advice": "Lời khuyên",
+      "successRate": "Tỷ lệ thành công khởi nghiệp"
+    },
+    "ui": {
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "shareError": "Đã xảy ra lỗi khi chia sẻ.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk.",
+      "wechatInstruction": "Vui lòng dán và chia sẻ trong WeChat."
+    },
+    "shareMessages": {
+      "default": "Tôi là {resultTitle}! Tinh thần khởi nghiệp 95% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀"
+    }
   }
 }
 

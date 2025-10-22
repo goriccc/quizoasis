@@ -296,7 +296,7 @@
     }
   },
   "mbti": {
-    "startTest": "테스트 시작하기",
+    "startTest": "테스트 시작",
     "totalParticipants": "총 {count}명이 참여했어요",
     "shareWithFriends": "친구와 같이 해보기",
     "similarTests": "유사한 다른 테스트",
@@ -726,6 +726,40 @@
       "linkCopied": "링크가 복사되었습니다!",
       "shareError": "공유 중 오류가 발생했습니다.",
       "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
+  "entrepreneurSpiritTest": {
+    "startMessage": {
+      "line1": "당신 안에 숨어있는 CEO의 DNA를 발견하세요!",
+      "line2": "혁신적인 아이디어로 세상을 바꾸는 리더?",
+      "line3": "안정적인 사업으로 성공을 만드는 경영자?",
+      "line4": "창의적인 솔루션으로 문제를 해결하는 혁신가?",
+      "line5": "당신의 창업가 기질을 3분 만에 알아보세요!",
+      "line6": "솔직하게 답변해주세요 🚀"
+    },
+    "result": {
+      "pros": "장점",
+      "cons": "단점", 
+      "recommendedFields": "추천 분야",
+      "advice": "조언",
+      "successRate": "창업 성공률"
+    },
+    "ui": {
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "shareError": "공유 중 오류가 발생했습니다.",
+      "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "wechatInstruction": "WeChat에서 붙여넣기 하여 공유하세요."
+    },
+    "shareMessages": {
+      "default": "나는 {resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀"
     }
   }
 }

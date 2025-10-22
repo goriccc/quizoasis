@@ -700,5 +700,39 @@
       "shareError": "分享时发生错误。",
       "kakaoShareError": "KakaoTalk分享时发生错误。"
     }
+  },
+  "entrepreneurSpiritTest": {
+    "startMessage": {
+      "line1": "发现隐藏在你体内的CEO DNA！",
+      "line2": "用创新想法改变世界的领导者？",
+      "line3": "用稳定业务创造成功的经营者？",
+      "line4": "用创意解决方案解决问题的创新者？",
+      "line5": "3分钟内了解你的企业家精神！",
+      "line6": "请诚实回答 🚀"
+    },
+    "result": {
+      "pros": "优点",
+      "cons": "缺点",
+      "recommendedFields": "推荐领域",
+      "advice": "建议",
+      "successRate": "创业成功率"
+    },
+    "ui": {
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "shareError": "分享时发生错误。",
+      "kakaoShareError": "KakaoTalk分享时发生错误。",
+      "wechatInstruction": "请在微信中粘贴并分享。"
+    },
+    "shareMessages": {
+      "default": "我是{resultTitle}！企业家精神95%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀"
+    }
   }
 }

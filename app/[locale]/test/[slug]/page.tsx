@@ -11,6 +11,7 @@ import { honestyQuestions, honestyResults } from '@/lib/honestyData';
 import { careerQuestions, careerResults } from '@/lib/careerData';
 import { jobStrengthQuestions, jobStrengthResults } from '@/lib/jobStrengthData';
 import { workValuesQuestions, workValuesResults } from '@/lib/workValuesData';
+import { entrepreneurSpiritQuestions, entrepreneurSpiritResults } from '@/lib/entrepreneurSpiritData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -86,6 +87,9 @@ const JobStrengthTestClient = dynamic(() => import('@/components/JobStrengthTest
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const WorkValuesTestClient = dynamic(() => import('@/components/WorkValuesTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const EntrepreneurSpiritTestClient = dynamic(() => import('@/components/EntrepreneurSpiritTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -886,6 +890,135 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
+  // 창업가 기질 테스트의 경우 Supabase에서 시도
+  if (slug === 'entrepreneur-spirit-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'entrepreneur-spirit-test',
+      title: {
+        ko: '당신에게 숨겨진 창업가 기질은?',
+        en: 'What is your hidden entrepreneurial spirit?',
+        ja: 'あなたに隠された起業家気質は？',
+        'zh-CN': '你隐藏的企业家精神是什么？',
+        'zh-TW': '你隱藏的企業家精神是什麼？',
+        vi: 'Tinh thần khởi nghiệp ẩn giấu của bạn là gì?',
+        id: 'Apa semangat kewirausahaan tersembunyi Anda?'
+      },
+      description: {
+        ko: '당신 안에 숨어있는 CEO의 DNA를 발견하세요!',
+        en: 'Discover the CEO DNA hidden within you!',
+        ja: 'あなたの中に隠れているCEOのDNAを発見してください！',
+        'zh-CN': '发现隐藏在你体内的CEO DNA！',
+        'zh-TW': '發現隱藏在你體內的CEO DNA！',
+        vi: 'Khám phá DNA CEO ẩn giấu trong bạn!',
+        id: 'Temukan DNA CEO yang tersembunyi dalam diri Anda!'
+      },
+      thumbnail: 'test_050_entrepreneur_spirit.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['직업'],
+        en: ['Career'],
+        ja: ['職業'],
+        'zh-CN': ['职业'],
+        'zh-TW': ['職業'],
+        vi: ['Nghề nghiệp'],
+        id: ['Karier']
+      }
+    };
+
+    const testData = getTestData(slug);
+    if (!testData) {
+      notFound();
+    }
+
+    const title = test.title[locale] || test.title.ko;
+    const description = test.description?.[locale] || test.description?.ko || '';
+    const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+    const canonicalUrl = `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`;
+
+    // JSON-LD Schema 생성
+    const jsonLdQuiz = {
+      '@context': 'https://schema.org',
+      '@type': 'Quiz',
+      name: title,
+      description: description,
+      url: canonicalUrl,
+      image: thumbnailUrl,
+      mainEntity: {
+        '@type': 'Question',
+        text: '창업가 기질 테스트',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '심리학 기반 창업가 기질 분석'
+        }
+      },
+      author: {
+        '@type': 'Organization',
+        name: 'QuizOasis'
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'QuizOasis'
+      }
+    };
+
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `https://quizoasis-coral.vercel.app/${locale}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Tests',
+          item: `https://quizoasis-coral.vercel.app/${locale}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: title,
+        },
+      ],
+    };
+
+    return (
+      <>
+        {/* JSON-LD Schema - Quiz */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
+        />
+        
+        {/* JSON-LD Schema - Breadcrumb */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        
+        <EntrepreneurSpiritTestClient
+          locale={locale as Locale}
+          slug={slug}
+          title={title}
+          description={description}
+          questions={testData.questions}
+          results={testData.results}
+          questionCount={testData.questions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          similarTests={[]} // 클라이언트 사이드에서 로드
+        />
+      </>
+    );
+  }
+
   // Supabase에서 테스트 메타데이터만 가져오기 (빠른 로딩)
   const test = await getTestBySlug(slug);
   if (!test) {
@@ -1005,7 +1138,7 @@ export default async function TestPage({ params }: Props) {
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
-    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : DatingTestClient) :
+    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : DatingTestClient) :
     MBTITestClient;
 
   return (

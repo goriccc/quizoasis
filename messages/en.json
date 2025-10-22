@@ -724,6 +724,40 @@
       "shareError": "Error occurred while sharing.",
       "kakaoShareError": "Error occurred while sharing on KakaoTalk."
     }
+  },
+  "entrepreneurSpiritTest": {
+    "startMessage": {
+      "line1": "Discover the CEO DNA hidden within you!",
+      "line2": "A leader who changes the world with innovative ideas?",
+      "line3": "An executive who creates success with stable business?",
+      "line4": "An innovator who solves problems with creative solutions?",
+      "line5": "Find out your entrepreneurial spirit in just 3 minutes!",
+      "line6": "Please answer honestly 🚀"
+    },
+    "result": {
+      "pros": "Strengths",
+      "cons": "Weaknesses",
+      "recommendedFields": "Recommended Fields",
+      "advice": "Advice",
+      "successRate": "Entrepreneurship Success Rate"
+    },
+    "ui": {
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareError": "An error occurred while sharing.",
+      "kakaoShareError": "An error occurred while sharing on KakaoTalk.",
+      "wechatInstruction": "Paste and share in WeChat."
+    },
+    "shareMessages": {
+      "default": "I am {resultTitle}! I have 95% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀"
+    }
   }
 }
 
