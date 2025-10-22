@@ -937,6 +937,55 @@
       "linkCopied": "Link copied to clipboard!",
       "wechatCopy": "Link copied for WeChat sharing. Paste in WeChat."
     }
+  },
+  "investmentStyleTest": {
+    "startMessage": {
+      "line1": "\"How you handle money determines your future!\"",
+      "line2": "Savings? Investment? Real estate? Stocks? Crypto? Where do you spend your salary?",
+      "line3": "Aggressive investor? Cautious saver? Or today's consumer?",
+      "line4": "In just 3 minutes, discover your investment style and personalized asset management strategy!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "recommendedInvestments": "Recommended Investments",
+      "advice": "Advice",
+      "testButton": "Take Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "productLoadError": "Product load failed",
+      "testLoadError": "Test load failed",
+      "shareError": "Share failed",
+      "clipboardError": "Clipboard copy failed",
+      "shareUnavailable": "Sharing feature unavailable.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing.",
+      "linkCopied": "Link copied!",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "resultCopied": "Result copied to clipboard!",
+      "adsenseTitle": "AdSense Ad Area (Title-Description)",
+      "adsenseLoading": "AdSense Ad Area (Loading Spinner Top)",
+      "adsenseResult": "AdSense Ad Area (Result Screen Top)",
+      "adsenseBottom": "AdSense Ad Area (Result Screen Bottom)"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! Investment style test results shocking... How do you manage money? Let's compare our investment styles! 💰",
+      "kakao": "I'm {type}! Investment style test results shocking... How do you manage money? Let's compare our investment styles! 💰",
+      "wechat": "I'm {type}! Investment style test results shocking... How do you manage money? Let's compare our investment styles! 💰",
+      "whatsapp": "I'm {type}! Investment style test results shocking... How do you manage money? Let's compare our investment styles! 💰",
+      "telegram": "I'm {type}! Investment style test results shocking... How do you manage money? Let's compare our investment styles! 💰",
+      "line": "I'm {type}! Investment style test results shocking... How do you manage money? Let's compare our investment styles! 💰"
+    },
+    "alerts": {
+      "kakaoInit": "Initializing Kakao SDK for sharing...",
+      "linkCopied": "Link copied to clipboard!",
+      "wechatCopy": "Link copied for WeChat sharing. Paste in WeChat."
+    }
   }
 }
 

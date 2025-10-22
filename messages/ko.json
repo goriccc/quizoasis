@@ -906,6 +906,55 @@
       "linkCopied": "링크가 클립보드에 복사되었습니다!",
       "wechatCopy": "WeChat 공유를 위해 링크를 복사했습니다. WeChat에서 붙여넣기 하세요."
     }
+  },
+  "investmentStyleTest": {
+    "startMessage": {
+      "line1": "\"돈을 어떻게 다루느냐가 당신의 미래를 결정합니다!\"",
+      "line2": "저축? 투자? 부동산? 주식? 코인? 월급을 받으면 어디에 쓰시나요?",
+      "line3": "공격적 투자자? 신중한 저축가? 아니면 오늘을 즐기는 소비형?",
+      "line4": "단 3분이면 당신의 재테크 성향과 맞춤형 자산 관리 전략을 발견할 수 있습니다!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "recommendedInvestments": "추천 투자",
+      "advice": "조언",
+      "testButton": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "productLoadError": "상품 로드 실패",
+      "testLoadError": "테스트 로드 실패",
+      "shareError": "공유 실패",
+      "clipboardError": "클립보드 복사 실패",
+      "shareUnavailable": "공유 기능을 사용할 수 없습니다.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "linkCopied": "링크가 복사되었습니다!",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "adsenseTitle": "AdSense 광고 영역 (타이틀-설명 사이)",
+      "adsenseLoading": "AdSense 광고 영역 (로딩 스피너 상단)",
+      "adsenseResult": "AdSense 광고 영역 (결과 화면 상단)",
+      "adsenseBottom": "AdSense 광고 영역 (결과 화면 하단)"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 재테크 성향 테스트 결과 충격... 너는 어떻게 돈 관리해? 우리 투자 스타일 비교해보자! 💰",
+      "kakao": "나는 {type}! 재테크 성향 테스트 결과 충격... 너는 어떻게 돈 관리해? 우리 투자 스타일 비교해보자! 💰",
+      "wechat": "나는 {type}! 재테크 성향 테스트 결과 충격... 너는 어떻게 돈 관리해? 우리 투자 스타일 비교해보자! 💰",
+      "whatsapp": "나는 {type}! 재테크 성향 테스트 결과 충격... 너는 어떻게 돈 관리해? 우리 투자 스타일 비교해보자! 💰",
+      "telegram": "나는 {type}! 재테크 성향 테스트 결과 충격... 너는 어떻게 돈 관리해? 우리 투자 스타일 비교해보자! 💰",
+      "line": "나는 {type}! 재테크 성향 테스트 결과 충격... 너는 어떻게 돈 관리해? 우리 투자 스타일 비교해보자! 💰"
+    },
+    "alerts": {
+      "kakaoInit": "카카오톡 공유를 위해 카카오 SDK를 초기화하는 중입니다...",
+      "linkCopied": "링크가 클립보드에 복사되었습니다!",
+      "wechatCopy": "WeChat 공유를 위해 링크를 복사했습니다. WeChat에서 붙여넣기 하세요."
+    }
   }
 }
 

@@ -879,5 +879,54 @@
       "adsenseResult": "AdSense广告区域（结果页面上部）",
       "adsenseBottom": "AdSense广告区域（结果页面下部）"
     }
+  },
+  "investmentStyleTest": {
+    "startMessage": {
+      "line1": "\"你如何理财决定你的未来！\"",
+      "line2": "储蓄？投资？房地产？股票？加密货币？拿到工资后你会花在哪里？",
+      "line3": "激进投资者？谨慎储蓄者？还是享受今天的消费型？",
+      "line4": "只需3分钟，发现你的理财风格和个性化资产管理策略！",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "recommendedInvestments": "推荐投资",
+      "advice": "建议",
+      "testButton": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "productLoadError": "商品加载失败",
+      "testLoadError": "测试加载失败",
+      "shareError": "分享失败",
+      "clipboardError": "剪贴板复制失败",
+      "shareUnavailable": "分享功能不可用。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。",
+      "linkCopied": "链接已复制！",
+      "wechatCopy": "链接已复制！请在WeChat中粘贴分享。",
+      "resultCopied": "结果已复制到剪贴板！",
+      "adsenseTitle": "AdSense广告区域（标题-描述）",
+      "adsenseLoading": "AdSense广告区域（加载动画顶部）",
+      "adsenseResult": "AdSense广告区域（结果页面上部）",
+      "adsenseBottom": "AdSense广告区域（结果页面下部）"
+    },
+    "shareMessages": {
+      "default": "我是{type}！理财风格测试结果令人震惊...你是怎么管理金钱的？让我们比较一下投资风格！💰",
+      "kakao": "我是{type}！理财风格测试结果令人震惊...你是怎么管理金钱的？让我们比较一下投资风格！💰",
+      "wechat": "我是{type}！理财风格测试结果令人震惊...你是怎么管理金钱的？让我们比较一下投资风格！💰",
+      "whatsapp": "我是{type}！理财风格测试结果令人震惊...你是怎么管理金钱的？让我们比较一下投资风格！💰",
+      "telegram": "我是{type}！理财风格测试结果令人震惊...你是怎么管理金钱的？让我们比较一下投资风格！💰",
+      "line": "我是{type}！理财风格测试结果令人震惊...你是怎么管理金钱的？让我们比较一下投资风格！💰"
+    },
+    "alerts": {
+      "kakaoInit": "正在初始化Kakao SDK进行分享...",
+      "linkCopied": "链接已复制到剪贴板！",
+      "wechatCopy": "已为微信分享复制链接。请在微信中粘贴。"
+    }
   }
 }

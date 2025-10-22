@@ -879,5 +879,54 @@
       "adsenseResult": "Area Iklan AdSense (Atas Layar Hasil)",
       "adsenseBottom": "Area Iklan AdSense (Bawah Layar Hasil)"
     }
+  },
+  "investmentStyleTest": {
+    "startMessage": {
+      "line1": "\"Cara Anda mengelola uang menentukan masa depan Anda!\"",
+      "line2": "Tabungan? Investasi? Properti? Saham? Kripto? Di mana Anda akan menghabiskan gaji?",
+      "line3": "Investor agresif? Penabung hati-hati? Atau konsumen hari ini?",
+      "line4": "Hanya dalam 3 menit, temukan gaya investasi dan strategi manajemen aset yang dipersonalisasi!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "recommendedInvestments": "Investasi yang Direkomendasikan",
+      "advice": "Saran",
+      "testButton": "Mulai Tes",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa",
+      "productLoadError": "Gagal memuat produk",
+      "testLoadError": "Gagal memuat tes",
+      "shareError": "Gagal berbagi",
+      "clipboardError": "Gagal menyalin ke clipboard",
+      "shareUnavailable": "Fitur berbagi tidak tersedia.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk.",
+      "linkCopied": "Tautan telah disalin!",
+      "wechatCopy": "Tautan telah disalin! Tempel di WeChat untuk berbagi.",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "adsenseTitle": "Area Iklan AdSense (Judul-Deskripsi)",
+      "adsenseLoading": "Area Iklan AdSense (Atas Spinner Loading)",
+      "adsenseResult": "Area Iklan AdSense (Atas Layar Hasil)",
+      "adsenseBottom": "Area Iklan AdSense (Bawah Layar Hasil)"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Hasil tes gaya investasi mengejutkan... Bagaimana Anda mengelola uang? Mari bandingkan gaya investasi kita! 💰",
+      "kakao": "Saya {type}! Hasil tes gaya investasi mengejutkan... Bagaimana Anda mengelola uang? Mari bandingkan gaya investasi kita! 💰",
+      "wechat": "Saya {type}! Hasil tes gaya investasi mengejutkan... Bagaimana Anda mengelola uang? Mari bandingkan gaya investasi kita! 💰",
+      "whatsapp": "Saya {type}! Hasil tes gaya investasi mengejutkan... Bagaimana Anda mengelola uang? Mari bandingkan gaya investasi kita! 💰",
+      "telegram": "Saya {type}! Hasil tes gaya investasi mengejutkan... Bagaimana Anda mengelola uang? Mari bandingkan gaya investasi kita! 💰",
+      "line": "Saya {type}! Hasil tes gaya investasi mengejutkan... Bagaimana Anda mengelola uang? Mari bandingkan gaya investasi kita! 💰"
+    },
+    "alerts": {
+      "kakaoInit": "Menginisialisasi Kakao SDK untuk berbagi...",
+      "linkCopied": "Tautan telah disalin ke clipboard!",
+      "wechatCopy": "Tautan telah disalin untuk berbagi WeChat. Silakan tempel di WeChat."
+    }
   }
 }

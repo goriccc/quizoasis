@@ -879,5 +879,54 @@
       "adsenseResult": "Khu vực quảng cáo AdSense (Trên cùng màn hình kết quả)",
       "adsenseBottom": "Khu vực quảng cáo AdSense (Dưới cùng màn hình kết quả)"
     }
+  },
+  "investmentStyleTest": {
+    "startMessage": {
+      "line1": "\"Cách bạn quản lý tiền bạc quyết định tương lai của bạn!\"",
+      "line2": "Tiết kiệm? Đầu tư? Bất động sản? Cổ phiếu? Tiền điện tử? Bạn sẽ chi tiêu lương ở đâu?",
+      "line3": "Nhà đầu tư tích cực? Người tiết kiệm thận trọng? Hay người tiêu dùng hôm nay?",
+      "line4": "Chỉ trong 3 phút, khám phá phong cách đầu tư và chiến lược quản lý tài sản cá nhân hóa!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "recommendedInvestments": "Đầu tư được đề xuất",
+      "advice": "Lời khuyên",
+      "testButton": "Bắt đầu kiểm tra",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài kiểm tra tương tự",
+      "productLoadError": "Tải sản phẩm thất bại",
+      "testLoadError": "Tải bài kiểm tra thất bại",
+      "shareError": "Chia sẻ thất bại",
+      "clipboardError": "Sao chép vào clipboard thất bại",
+      "shareUnavailable": "Tính năng chia sẻ không khả dụng.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk.",
+      "linkCopied": "Liên kết đã được sao chép!",
+      "wechatCopy": "Liên kết đã được sao chép! Dán vào WeChat để chia sẻ.",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tiêu đề-Mô tả)",
+      "adsenseLoading": "Khu vực quảng cáo AdSense (Trên cùng spinner tải)",
+      "adsenseResult": "Khu vực quảng cáo AdSense (Trên cùng màn hình kết quả)",
+      "adsenseBottom": "Khu vực quảng cáo AdSense (Dưới cùng màn hình kết quả)"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Kết quả kiểm tra phong cách đầu tư gây sốc... Bạn quản lý tiền bạc như thế nào? Hãy so sánh phong cách đầu tư của chúng ta! 💰",
+      "kakao": "Tôi là {type}! Kết quả kiểm tra phong cách đầu tư gây sốc... Bạn quản lý tiền bạc như thế nào? Hãy so sánh phong cách đầu tư của chúng ta! 💰",
+      "wechat": "Tôi là {type}! Kết quả kiểm tra phong cách đầu tư gây sốc... Bạn quản lý tiền bạc như thế nào? Hãy so sánh phong cách đầu tư của chúng ta! 💰",
+      "whatsapp": "Tôi là {type}! Kết quả kiểm tra phong cách đầu tư gây sốc... Bạn quản lý tiền bạc như thế nào? Hãy so sánh phong cách đầu tư của chúng ta! 💰",
+      "telegram": "Tôi là {type}! Kết quả kiểm tra phong cách đầu tư gây sốc... Bạn quản lý tiền bạc như thế nào? Hãy so sánh phong cách đầu tư của chúng ta! 💰",
+      "line": "Tôi là {type}! Kết quả kiểm tra phong cách đầu tư gây sốc... Bạn quản lý tiền bạc như thế nào? Hãy so sánh phong cách đầu tư của chúng ta! 💰"
+    },
+    "alerts": {
+      "kakaoInit": "Đang khởi tạo Kakao SDK để chia sẻ...",
+      "linkCopied": "Liên kết đã được sao chép vào clipboard!",
+      "wechatCopy": "Đã sao chép liên kết để chia sẻ WeChat. Vui lòng dán trong WeChat."
+    }
   }
 }

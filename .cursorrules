@@ -649,3 +649,73 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 3. **Test calculation accuracy** with different shuffling scenarios
 4. **Maintain backward compatibility** with existing answer formats
 5. **Verify consistent results** regardless of question/answer order
+
+## Social Sharing Multilingual Requirements (CRITICAL)
+
+### 61. Social Sharing Message Localization
+❌ DON'T:
+- Hardcode Korean sharing messages in social sharing functions
+- Use hardcoded Korean text in shareToKakao, shareToWeChat, shareToWhatsApp, shareToTelegram, shareToLine functions
+- Leave alert messages in Korean only (e.g., "링크가 복사되었습니다!", "카카오톡 공유 중 오류가 발생했습니다.")
+- Ignore locale parameter in sharing functions
+✅ DO:
+- Implement locale-based conditional rendering for ALL social sharing functions
+- Use t() function for all sharing messages: `t('testName.shareMessages.platform', { type: resultTitle })`
+- Localize ALL alert messages in sharing functions
+- Create language-specific sharing messages for each platform
+- Ensure consistent multilingual support across all sharing methods
+
+### 62. Social Sharing Functions to Localize
+✅ DO localize ALL of these functions:
+- handleShareResult() - Default sharing function
+- shareToKakao() - KakaoTalk sharing
+- shareToWeChat() - WeChat sharing  
+- shareToWhatsApp() - WhatsApp sharing
+- shareToTelegram() - Telegram sharing
+- shareToLine() - Line sharing
+- copyLink() - Link copy function
+
+### 63. Social Sharing Message Pattern
+✅ DO use this pattern for all sharing messages:
+```typescript
+// In messages files (ko.json, en.json, etc.)
+"testName": {
+  "shareMessages": {
+    "default": "나는 {type}! 테스트 결과... 너는 어떻게 해? 같이 해보자! 💰",
+    "kakao": "나는 {type}! 테스트 결과... 너는 어떻게 해? 같이 해보자! 💰",
+    "wechat": "나는 {type}! 테스트 결과... 너는 어떻게 해? 같이 해보자! 💰",
+    "whatsapp": "나는 {type}! 테스트 결과... 너는 어떻게 해? 같이 해보자! 💰",
+    "telegram": "나는 {type}! 테스트 결과... 너는 어떻게 해? 같이 해보자! 💰",
+    "line": "나는 {type}! 테스트 결과... 너는 어떻게 해? 같이 해보자! 💰"
+  }
+}
+
+// In component functions
+const shareText = t('testName.shareMessages.default', { type: resultTitle });
+const shareDescription = t('testName.shareMessages.kakao', { type: resultTitle });
+```
+
+### 64. Alert Message Localization
+✅ DO localize ALL alert messages in sharing functions:
+- Clipboard copy success messages
+- Sharing feature error messages  
+- WeChat link copy instructions
+- KakaoTalk initialization messages
+- Any user-facing text in sharing functions
+
+### 65. UI Text Localization for Social Sharing
+✅ DO localize ALL UI elements related to social sharing:
+- Button alt texts: `alt={t('testName.ui.linkCopy')}`, `alt={t('testName.ui.kakao')}`
+- AdSense labels: `label={t('testName.ui.adsenseTitle')}`
+- Similar tests section: `{t('testName.ui.similarTests')}`
+- All user-facing text in result screens
+
+### 66. Social Sharing Implementation Checklist
+✅ DO verify these when implementing social sharing:
+- [ ] All sharing functions use t() for messages
+- [ ] All alert messages are localized
+- [ ] All UI text elements are localized
+- [ ] All 7 languages have complete translation keys
+- [ ] Share messages work correctly in all languages
+- [ ] No hardcoded Korean text remains in components
+- [ ] Consistent multilingual experience across all sharing platforms

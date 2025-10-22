@@ -879,5 +879,54 @@
       "adsenseResult": "AdSense広告エリア（結果画面上部）",
       "adsenseBottom": "AdSense広告エリア（結果画面下部）"
     }
+  },
+  "investmentStyleTest": {
+    "startMessage": {
+      "line1": "「お金の使い方があなたの未来を決めます！」",
+      "line2": "貯金？投資？不動産？株式？コイン？給料をもらったらどこに使いますか？",
+      "line3": "積極的投資家？慎重な貯蓄家？それとも今日を楽しむ消費型？",
+      "line4": "たった3分であなたの資産運用スタイルとカスタマイズされた資産管理戦略を発見できます！",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "recommendedInvestments": "おすすめ投資",
+      "advice": "アドバイス",
+      "testButton": "テスト開始",
+      "linkCopy": "リンクコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "productLoadError": "商品読み込み失敗",
+      "testLoadError": "テスト読み込み失敗",
+      "shareError": "共有失敗",
+      "clipboardError": "クリップボードコピー失敗",
+      "shareUnavailable": "共有機能が利用できません。",
+      "kakaoInit": "KakaoTalk共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。",
+      "linkCopied": "リンクがコピーされました！",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "adsenseTitle": "AdSense広告エリア（タイトル-説明）",
+      "adsenseLoading": "AdSense広告エリア（ローディングスピナー上部）",
+      "adsenseResult": "AdSense広告エリア（結果画面上部）",
+      "adsenseBottom": "AdSense広告エリア（結果画面下部）"
+    },
+    "shareMessages": {
+      "default": "私は{type}！資産運用スタイルテスト結果に衝撃...あなたはどうやってお金を管理してる？私たちの投資スタイルを比較してみよう！💰",
+      "kakao": "私は{type}！資産運用スタイルテスト結果に衝撃...あなたはどうやってお金を管理してる？私たちの投資スタイルを比較してみよう！💰",
+      "wechat": "私は{type}！資産運用スタイルテスト結果に衝撃...あなたはどうやってお金を管理してる？私たちの投資スタイルを比較してみよう！💰",
+      "whatsapp": "私は{type}！資産運用スタイルテスト結果に衝撃...あなたはどうやってお金を管理してる？私たちの投資スタイルを比較してみよう！💰",
+      "telegram": "私は{type}！資産運用スタイルテスト結果に衝撃...あなたはどうやってお金を管理してる？私たちの投資スタイルを比較してみよう！💰",
+      "line": "私は{type}！資産運用スタイルテスト結果に衝撃...あなたはどうやってお金を管理してる？私たちの投資スタイルを比較してみよう！💰"
+    },
+    "alerts": {
+      "kakaoInit": "カカオトーク共有のためカカオSDKを初期化中...",
+      "linkCopied": "リンクがクリップボードにコピーされました！",
+      "wechatCopy": "WeChat共有のためリンクをコピーしました。WeChatで貼り付けてください。"
+    }
   }
 }

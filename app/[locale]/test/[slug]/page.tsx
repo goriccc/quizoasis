@@ -16,6 +16,7 @@ import { workLifeBalanceQuestions, workLifeBalanceResults } from '@/lib/workLife
 import { teamPlayerQuestions, teamPlayerResults } from '@/lib/teamPlayerData';
 import { challengePotentialQuestions, challengePotentialResults } from '@/lib/challengePotentialData';
 import { stressReliefQuestions, stressReliefResults } from '@/lib/stressReliefData';
+import { investmentStyleQuestions, investmentStyleResults } from '@/lib/investmentStyleData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -106,6 +107,9 @@ const ChallengePotentialTestClient = dynamic(() => import('@/components/Challeng
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const StressReliefTestClient = dynamic(() => import('@/components/StressReliefTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const InvestmentStyleTestClient = dynamic(() => import('@/components/InvestmentStyleTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1221,6 +1225,11 @@ export default async function TestPage({ params }: Props) {
       questions: stressReliefQuestions,
       results: stressReliefResults
     };
+  } else if (slug === 'investment-style-test') {
+    testData = {
+      questions: investmentStyleQuestions,
+      results: investmentStyleResults
+    };
   } else {
     testData = getTestData(slug);
   }
@@ -1298,7 +1307,7 @@ export default async function TestPage({ params }: Props) {
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
     test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : DatingTestClient) :
-    test.type === 'career' ? (slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : CareerTestClient) :
+    test.type === 'career' ? (slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'investment-style-test' ? InvestmentStyleTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : CareerTestClient) :
     MBTITestClient;
 
   return (
