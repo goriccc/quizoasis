@@ -295,26 +295,33 @@ export default function EntrepreneurSpiritTestClient({
     setShuffledOptionsMap({});
   };
 
+  // 성공률 추출 함수
+  const getSuccessRate = (successRate: string) => {
+    const match = successRate.match(/(\d+)%/);
+    return match ? match[1] : '95';
+  };
+
   // 결과 공유하기
   const handleShareResult = async () => {
     if (!result) return;
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const successRate = getSuccessRate(result.successRate);
     const shareMessage = locale === 'ko' 
-      ? `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
+      ? `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
       : locale === 'en'
-      ? `I am ${resultTitle}! I have 95% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
+      ? `I am ${resultTitle}! I have ${successRate}% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
       : locale === 'ja'
-      ? `私は${resultTitle}！起業家精神95%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
+      ? `私は${resultTitle}！起業家精神${successRate}%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
       : locale === 'zh-CN'
-      ? `我是${resultTitle}！企业家精神95%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
+      ? `我是${resultTitle}！企业家精神${successRate}%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
       : locale === 'zh-TW'
-      ? `我是${resultTitle}！企業家精神95%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
+      ? `我是${resultTitle}！企業家精神${successRate}%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
       : locale === 'vi'
-      ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp 95% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
+      ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp ${successRate}% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
       : locale === 'id'
-      ? `Saya adalah ${resultTitle}! Semangat kewirausahaan 95% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
-      : `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`;
+      ? `Saya adalah ${resultTitle}! Semangat kewirausahaan ${successRate}% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
+      : `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`;
     const shareText = shareMessage + `\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
@@ -345,21 +352,22 @@ export default function EntrepreneurSpiritTestClient({
   const shareToWeChat = async () => {
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const successRate = result ? getSuccessRate(result.successRate) : '95';
     const shareMessage = result ? (locale === 'ko' 
-      ? `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
+      ? `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
       : locale === 'en'
-      ? `I am ${resultTitle}! I have 95% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
+      ? `I am ${resultTitle}! I have ${successRate}% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
       : locale === 'ja'
-      ? `私は${resultTitle}！起業家精神95%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
+      ? `私は${resultTitle}！起業家精神${successRate}%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
       : locale === 'zh-CN'
-      ? `我是${resultTitle}！企业家精神95%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
+      ? `我是${resultTitle}！企业家精神${successRate}%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
       : locale === 'zh-TW'
-      ? `我是${resultTitle}！企業家精神95%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
+      ? `我是${resultTitle}！企業家精神${successRate}%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
       : locale === 'vi'
-      ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp 95% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
+      ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp ${successRate}% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
       : locale === 'id'
-      ? `Saya adalah ${resultTitle}! Semangat kewirausahaan 95% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
-      : `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`) : title;
+      ? `Saya adalah ${resultTitle}! Semangat kewirausahaan ${successRate}% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
+      : `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`) : title;
     const shareText = shareMessage + `\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
@@ -386,21 +394,22 @@ export default function EntrepreneurSpiritTestClient({
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const successRate = result ? getSuccessRate(result.successRate) : '95';
     const shareMessage = result ? (locale === 'ko' 
-      ? `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
+      ? `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
       : locale === 'en'
-      ? `I am ${resultTitle}! I have 95% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
+      ? `I am ${resultTitle}! I have ${successRate}% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
       : locale === 'ja'
-      ? `私は${resultTitle}！起業家精神95%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
+      ? `私は${resultTitle}！起業家精神${successRate}%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
       : locale === 'zh-CN'
-      ? `我是${resultTitle}！企业家精神95%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
+      ? `我是${resultTitle}！企业家精神${successRate}%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
       : locale === 'zh-TW'
-      ? `我是${resultTitle}！企業家精神95%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
+      ? `我是${resultTitle}！企業家精神${successRate}%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
       : locale === 'vi'
-      ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp 95% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
+      ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp ${successRate}% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
       : locale === 'id'
-      ? `Saya adalah ${resultTitle}! Semangat kewirausahaan 95% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
-      : `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`) : title;
+      ? `Saya adalah ${resultTitle}! Semangat kewirausahaan ${successRate}% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
+      : `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`) : title;
     const shareText = encodeURIComponent(shareMessage);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
@@ -418,22 +427,23 @@ export default function EntrepreneurSpiritTestClient({
     
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const successRate = result ? getSuccessRate(result.successRate) : '95';
     const shareDescription = result 
       ? (locale === 'ko' 
-        ? `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
+        ? `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
         : locale === 'en'
-        ? `I am ${resultTitle}! I have 95% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
+        ? `I am ${resultTitle}! I have ${successRate}% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
         : locale === 'ja'
-        ? `私は${resultTitle}！起業家精神95%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
+        ? `私は${resultTitle}！起業家精神${successRate}%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
         : locale === 'zh-CN'
-        ? `我是${resultTitle}！企业家精神95%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
+        ? `我是${resultTitle}！企业家精神${successRate}%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
         : locale === 'zh-TW'
-        ? `我是${resultTitle}！企業家精神95%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
+        ? `我是${resultTitle}！企業家精神${successRate}%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
         : locale === 'vi'
-        ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp 95% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
+        ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp ${successRate}% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
         : locale === 'id'
-        ? `Saya adalah ${resultTitle}! Semangat kewirausahaan 95% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
-        : `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`)
+        ? `Saya adalah ${resultTitle}! Semangat kewirausahaan ${successRate}% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
+        : `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`)
       : description;
     
     try {
@@ -467,22 +477,23 @@ export default function EntrepreneurSpiritTestClient({
   const shareToTelegram = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const successRate = result ? getSuccessRate(result.successRate) : '95';
     const shareText = result 
       ? (locale === 'ko' 
-        ? `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
+        ? `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`
         : locale === 'en'
-        ? `I am ${resultTitle}! I have 95% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
+        ? `I am ${resultTitle}! I have ${successRate}% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀`
         : locale === 'ja'
-        ? `私は${resultTitle}！起業家精神95%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
+        ? `私は${resultTitle}！起業家精神${successRate}%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀`
         : locale === 'zh-CN'
-        ? `我是${resultTitle}！企业家精神95%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
+        ? `我是${resultTitle}！企业家精神${successRate}%但还没挑战过？你也来测试一下，一起找创业伙伴吧！🚀`
         : locale === 'zh-TW'
-        ? `我是${resultTitle}！企業家精神95%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
+        ? `我是${resultTitle}！企業家精神${successRate}%但還沒挑戰過？你也來測試一下，一起找創業夥伴吧！🚀`
         : locale === 'vi'
-        ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp 95% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
+        ? `Tôi là ${resultTitle}! Tinh thần khởi nghiệp ${successRate}% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀`
         : locale === 'id'
-        ? `Saya adalah ${resultTitle}! Semangat kewirausahaan 95% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
-        : `나는 ${resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`)
+        ? `Saya adalah ${resultTitle}! Semangat kewirausahaan ${successRate}% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀`
+        : `나는 ${resultTitle}! 창업가 기질 ${successRate}%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀`)
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
