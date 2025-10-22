@@ -41,6 +41,32 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "challengePotentialTest": {
+    "startMessage": {
+      "line1": "\"Awaken the spirit of challenge sleeping within you!\"",
+      "line2": "Are you excited or afraid when facing new opportunities?",
+      "line3": "Are you afraid of failure? Or do you see it as a learning opportunity?",
+      "line4": "Safe path? Or rough but special path?",
+      "line5": "Challenges come to everyone.\nWhat matters is how you respond!",
+      "line6": "Just 3 minutes to discover your hidden challenge potential!"
+    },
+    "successRate": "Challenge Success Rate",
+    "recommendedFields": "Recommended Fields",
+    "advice": "Advice",
+    "shareMessages": {
+      "default": "I am {resultTitle}! My challenge potential test result is amazing... What kind of challenger are you? Let's challenge together! 🚀",
+      "kakao": "I am {resultTitle}! My challenge potential test result is amazing... What kind of challenger are you? Let's challenge together! 🚀",
+      "wechat": "I am {resultTitle}! My challenge potential test result is amazing... What kind of challenger are you? Let's challenge together! 🚀",
+      "whatsapp": "I am {resultTitle}! My challenge potential test result is amazing... What kind of challenger are you? Let's challenge together! 🚀",
+      "telegram": "I am {resultTitle}! My challenge potential test result is amazing... What kind of challenger are you? Let's challenge together! 🚀",
+      "line": "I am {resultTitle}! My challenge potential test result is amazing... What kind of challenger are you? Let's challenge together! 🚀"
+    },
+    "alerts": {
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "linkCopied": "Link copied!",
+      "wechatCopy": "To share on WeChat, copy and paste this link:"
+    }
+  },
   "honestyTest": {
     "startMessage": {
       "title": "\"Tell the truth or protect feelings?\"",

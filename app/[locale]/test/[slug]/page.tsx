@@ -14,6 +14,7 @@ import { workValuesQuestions, workValuesResults } from '@/lib/workValuesData';
 import { entrepreneurSpiritQuestions, entrepreneurSpiritResults } from '@/lib/entrepreneurSpiritData';
 import { workLifeBalanceQuestions, workLifeBalanceResults } from '@/lib/workLifeBalanceData';
 import { teamPlayerQuestions, teamPlayerResults } from '@/lib/teamPlayerData';
+import { challengePotentialQuestions, challengePotentialResults } from '@/lib/challengePotentialData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -98,6 +99,9 @@ const WorkLifeBalanceTestClient = dynamic(() => import('@/components/WorkLifeBal
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TeamPlayerTestClient = dynamic(() => import('@/components/TeamPlayerTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const ChallengePotentialTestClient = dynamic(() => import('@/components/ChallengePotentialTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -983,6 +987,52 @@ export default async function TestPage({ params }: Props) {
           questions={teamPlayerQuestions}
           results={teamPlayerResults}
           questionCount={teamPlayerQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 도전 잠재력 테스트의 경우 Supabase에서 시도
+  if (slug === 'challenge-potential-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'challenge-potential-test',
+      title: {
+        ko: '당신의 도전의식 잠재력은?',
+        en: 'What is your challenge potential?',
+        ja: 'あなたの挑戦意識の潜在力は？',
+        'zh-CN': '你的挑战意识潜力是什么？',
+        'zh-TW': '你的挑戰意識潛力是什麼？',
+        vi: 'Tiềm năng thử thách của bạn là gì?',
+        id: 'Apa potensi tantangan Anda?'
+      },
+      description: {
+        ko: '당신 안에 잠들어 있는 도전 정신을 깨워보세요!',
+        en: 'Awaken the spirit of challenge sleeping within you!',
+        ja: 'あなたの中に眠っている挑戦精神を目覚めさせてください！',
+        'zh-CN': '唤醒沉睡在你内心的挑战精神！',
+        'zh-TW': '喚醒沉睡在你內心的挑戰精神！',
+        vi: 'Đánh thức tinh thần thử thách đang ngủ trong bạn!',
+        id: 'Bangunkan semangat tantangan yang tertidur dalam diri Anda!'
+      },
+      thumbnail: 'test_053_challenge_potential.jpg',
+      play_count: 0
+    };
+
+    return (
+      <>
+        <ChallengePotentialTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={challengePotentialQuestions}
+          results={challengePotentialResults}
+          questionCount={challengePotentialQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

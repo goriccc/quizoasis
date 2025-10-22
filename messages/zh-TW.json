@@ -41,6 +41,32 @@
   "loveFlavorTest": {
     "resultShareMessage": "我的戀愛是{type}！你的戀愛是什麼味道？我們也來測測配對度吧 🍭💕"
   },
+  "challengePotentialTest": {
+    "startMessage": {
+      "line1": "\"喚醒沉睡在你內心的挑戰精神！\"",
+      "line2": "面對新機會時你是興奮還是害怕？",
+      "line3": "你害怕失敗嗎？還是把它視為學習機會？",
+      "line4": "安全的路？還是崎嶇但特別的路？",
+      "line5": "挑戰會降臨到每個人身上。\n重要的是你如何回應！",
+      "line6": "只需3分鐘就能發現你隱藏的挑戰潛力！"
+    },
+    "successRate": "挑戰成功率",
+    "recommendedFields": "推薦領域",
+    "advice": "建議",
+    "shareMessages": {
+      "default": "我是{resultTitle}！挑戰潛力測試結果太棒了...你是什麼類型的挑戰者？我們一起挑戰吧！ 🚀",
+      "kakao": "我是{resultTitle}！挑戰潛力測試結果太棒了...你是什麼類型的挑戰者？我們一起挑戰吧！ 🚀",
+      "wechat": "我是{resultTitle}！挑戰潛力測試結果太棒了...你是什麼類型的挑戰者？我們一起挑戰吧！ 🚀",
+      "whatsapp": "我是{resultTitle}！挑戰潛力測試結果太棒了...你是什麼類型的挑戰者？我們一起挑戰吧！ 🚀",
+      "telegram": "我是{resultTitle}！挑戰潛力測試結果太棒了...你是什麼類型的挑戰者？我們一起挑戰吧！ 🚀",
+      "line": "我是{resultTitle}！挑戰潛力測試結果太棒了...你是什麼類型的挑戰者？我們一起挑戰吧！ 🚀"
+    },
+    "alerts": {
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "linkCopied": "連結已複製！",
+      "wechatCopy": "要在微信上分享，請複製並貼上此連結："
+    }
+  },
   "honestyTest": {
     "startMessage": {
       "title": "「說真話還是保護感情？」",

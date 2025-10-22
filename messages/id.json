@@ -41,6 +41,32 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "challengePotentialTest": {
+    "startMessage": {
+      "line1": "\"Bangunkan semangat tantangan yang tertidur dalam diri Anda!\"",
+      "line2": "Apakah Anda bersemangat atau takut ketika menghadapi peluang baru?",
+      "line3": "Apakah Anda takut gagal? Atau melihatnya sebagai kesempatan belajar?",
+      "line4": "Jalan yang aman? Atau jalan yang terjal tapi istimewa?",
+      "line5": "Tantangan datang kepada semua orang.\nYang penting adalah bagaimana Anda merespons!",
+      "line6": "Hanya butuh 3 menit untuk menemukan potensi tantangan tersembunyi Anda!"
+    },
+    "successRate": "Tingkat Keberhasilan Tantangan",
+    "recommendedFields": "Bidang yang Direkomendasikan",
+    "advice": "Saran",
+    "shareMessages": {
+      "default": "Saya adalah {resultTitle}! Hasil tes potensi tantangan saya luar biasa... Anda tipe penantang seperti apa? Mari kita tantang bersama! 🚀",
+      "kakao": "Saya adalah {resultTitle}! Hasil tes potensi tantangan saya luar biasa... Anda tipe penantang seperti apa? Mari kita tantang bersama! 🚀",
+      "wechat": "Saya adalah {resultTitle}! Hasil tes potensi tantangan saya luar biasa... Anda tipe penantang seperti apa? Mari kita tantang bersama! 🚀",
+      "whatsapp": "Saya adalah {resultTitle}! Hasil tes potensi tantangan saya luar biasa... Anda tipe penantang seperti apa? Mari kita tantang bersama! 🚀",
+      "telegram": "Saya adalah {resultTitle}! Hasil tes potensi tantangan saya luar biasa... Anda tipe penantang seperti apa? Mari kita tantang bersama! 🚀",
+      "line": "Saya adalah {resultTitle}! Hasil tes potensi tantangan saya luar biasa... Anda tipe penantang seperti apa? Mari kita tantang bersama! 🚀"
+    },
+    "alerts": {
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "linkCopied": "Tautan disalin!",
+      "wechatCopy": "Untuk berbagi di WeChat, salin dan tempel tautan ini:"
+    }
+  },
   "honestyTest": {
     "startMessage": {
       "title": "\"Berbicara jujur atau melindungi perasaan?\"",

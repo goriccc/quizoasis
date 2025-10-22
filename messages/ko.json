@@ -44,6 +44,32 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "challengePotentialTest": {
+    "startMessage": {
+      "line1": "\"당신 안에 잠들어 있는 도전 정신을 깨워보세요!\"",
+      "line2": "새로운 기회 앞에서 설레나요? 두려우세요?",
+      "line3": "실패가 무섭나요? 아니면 배움의 기회인가요?",
+      "line4": "안전한 길? 험난하지만 특별한 길?",
+      "line5": "도전은 누구에게나 찾아옵니다.\n중요한 건 당신이 어떻게 반응하느냐!",
+      "line6": "단 3분이면 당신의 숨겨진 도전 잠재력을 발견할 수 있습니다!"
+    },
+    "successRate": "도전 성공률",
+    "recommendedFields": "추천 분야",
+    "advice": "조언",
+    "shareMessages": {
+      "default": "나는 {resultTitle}! 도전 잠재력 테스트 결과 대박... 너는 어떤 도전자? 우리 함께 도전해볼까? 🚀",
+      "kakao": "나는 {resultTitle}! 도전 잠재력 테스트 결과 대박... 너는 어떤 도전자? 우리 함께 도전해볼까? 🚀",
+      "wechat": "나는 {resultTitle}! 도전 잠재력 테스트 결과 대박... 너는 어떤 도전자? 우리 함께 도전해볼까? 🚀",
+      "whatsapp": "나는 {resultTitle}! 도전 잠재력 테스트 결과 대박... 너는 어떤 도전자? 우리 함께 도전해볼까? 🚀",
+      "telegram": "나는 {resultTitle}! 도전 잠재력 테스트 결과 대박... 너는 어떤 도전자? 우리 함께 도전해볼까? 🚀",
+      "line": "나는 {resultTitle}! 도전 잠재력 테스트 결과 대박... 너는 어떤 도전자? 우리 함께 도전해볼까? 🚀"
+    },
+    "alerts": {
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "linkCopied": "링크가 복사되었습니다!",
+      "wechatCopy": "위챗으로 공유하려면 링크를 복사해서 붙여넣으세요:"
+    }
+  },
   "honestyTest": {
     "startMessage": {
       "title": "\"진실을 말할까, 마음을 지킬까?\"",

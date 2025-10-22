@@ -41,6 +41,32 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "challengePotentialTest": {
+    "startMessage": {
+      "line1": "\"Đánh thức tinh thần thử thách đang ngủ trong bạn!\"",
+      "line2": "Bạn có hứng thú hay sợ hãi khi đối mặt với cơ hội mới?",
+      "line3": "Bạn có sợ thất bại không? Hay coi đó là cơ hội học hỏi?",
+      "line4": "Con đường an toàn? Hay con đường gập ghềnh nhưng đặc biệt?",
+      "line5": "Thử thách đến với mọi người.\nQuan trọng là bạn phản ứng như thế nào!",
+      "line6": "Chỉ cần 3 phút để khám phá tiềm năng thử thách ẩn giấu của bạn!"
+    },
+    "successRate": "Tỷ lệ thành công thử thách",
+    "recommendedFields": "Lĩnh vực được khuyến nghị",
+    "advice": "Lời khuyên",
+    "shareMessages": {
+      "default": "Tôi là {resultTitle}! Kết quả kiểm tra tiềm năng thử thách thật tuyệt vời... Bạn là loại người thử thách nào? Hãy cùng thử thách nhé! 🚀",
+      "kakao": "Tôi là {resultTitle}! Kết quả kiểm tra tiềm năng thử thách thật tuyệt vời... Bạn là loại người thử thách nào? Hãy cùng thử thách nhé! 🚀",
+      "wechat": "Tôi là {resultTitle}! Kết quả kiểm tra tiềm năng thử thách thật tuyệt vời... Bạn là loại người thử thách nào? Hãy cùng thử thách nhé! 🚀",
+      "whatsapp": "Tôi là {resultTitle}! Kết quả kiểm tra tiềm năng thử thách thật tuyệt vời... Bạn là loại người thử thách nào? Hãy cùng thử thách nhé! 🚀",
+      "telegram": "Tôi là {resultTitle}! Kết quả kiểm tra tiềm năng thử thách thật tuyệt vời... Bạn là loại người thử thách nào? Hãy cùng thử thách nhé! 🚀",
+      "line": "Tôi là {resultTitle}! Kết quả kiểm tra tiềm năng thử thách thật tuyệt vời... Bạn là loại người thử thách nào? Hãy cùng thử thách nhé! 🚀"
+    },
+    "alerts": {
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "linkCopied": "Đã sao chép liên kết!",
+      "wechatCopy": "Để chia sẻ trên WeChat, hãy sao chép và dán liên kết này:"
+    }
+  },
   "honestyTest": {
     "startMessage": {
       "title": "\"Nói sự thật hay bảo vệ cảm xúc?\"",
