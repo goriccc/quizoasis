@@ -267,6 +267,7 @@ export default function TeamPlayerTestClient({
 
   const handleStartTest = () => {
     setStarted(true);
+    window.scrollTo(0, 0);
   };
 
   const handleAnswer = (option: any) => {
