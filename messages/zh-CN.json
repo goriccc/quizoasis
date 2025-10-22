@@ -458,7 +458,7 @@
       "datingStyle": "约会风格",
       "idealJobs": "理想职业",
       "bestMatch": "最佳匹配",
-      "goodMatch": "良好匹配", 
+      "goodMatch": "良好匹配",
       "carefulMatch": "需要注意的匹配",
       "difficultMatch": "困难的匹配",
       "compatibility": {
@@ -518,7 +518,7 @@
       "resultShareMessage": "我的恋爱障碍是{type}！你的问题是什么？一起试试吧 😂💔",
       "result": {
         "symptoms": "主要症状",
-        "patterns": "恋爱模式", 
+        "patterns": "恋爱模式",
         "causes": "根本原因",
         "solutions": "解决方法",
         "advice": "建议"
@@ -800,40 +800,6 @@
   "teamPlayerTest": {
     "startMessage": {
       "title": "「一个人走得快，但一起走得更远！」",
-      "line1": "「我来领导」自然地掌握主导权",
-      "line2": "「我能怎么帮助？」寻找需要的角色",
-      "line3": "「这种方法怎么样？」提出想法",
-      "line4": "「先开始吧」立即准备执行",
-      "line5": "「在团队项目中你的角色是什么？领导者？支持者？创意银行？执行专家？」",
-      "line6": "「会议时间、任务分工、冲突情况...在各自位置上发光的团队成员！」"
-    },
-    "ui": {
-      "startTest": "开始测试",
-      "progress": "进度",
-      "analyzing": "分析结果中...",
-      "shareResult": "分享结果",
-      "retake": "重新测试",
-      "otherTests": "其他测试",
-      "participants": "人参与",
-      "withFriends": "和朋友一起试试"
-    },
-    "result": {
-      "yourResult": "你的结果",
-      "characteristics": "特征",
-      "pros": "优点",
-      "cons": "缺点",
-      "advice": "建议",
-      "recommendedRole": "推荐角色",
-      "compatibility": "团队契合度",
-      "bestMatch": "💖 最佳匹配",
-      "goodMatch": "😊 良好匹配",
-      "carefulMatch": "⚠️ 需要注意",
-      "difficultMatch": "❌ 困难匹配"
-    }
-  },
-  "teamPlayerTest": {
-    "startMessage": {
-      "title": "「一个人走得快，但一起走得更远！」",
       "line1": "在团队项目中你的角色是什么？领导者？支持者？创意银行？执行者？",
       "line2": "会议时间、任务分工、冲突情况... 在各自位置上发光的团队成员！",
       "line3": "你在团队中是什么样的存在？只需3分钟就能发现你的团队合作风格！",
@@ -863,6 +829,55 @@
       "goodMatch": "良好匹配",
       "carefulMatch": "需要注意",
       "difficultMatch": "困难匹配"
+    }
+  },
+  "stressReliefTest": {
+    "startMessage": {
+      "line1": "\"上班族必备！找到属于你的压力缓解方法\"",
+      "line2": "当工作压力堆积时",
+      "line3": "你是如何缓解的？",
+      "line4": "通过12个问题了解",
+      "line5": "😌 你的职场压力缓解法",
+      "line6": "现在就开始吧！"
+    },
+    "shareMessages": {
+      "default": "我是{type}！找到了上班族必备的治愈方法！你是怎么缓解压力的？一起治愈吧！😌",
+      "kakao": "我是{type}！找到了上班族必备的治愈方法！你是怎么缓解压力的？一起治愈吧！😌",
+      "wechat": "我是{type}！找到了上班族必备的治愈方法！你是怎么缓解压力的？一起治愈吧！😌",
+      "whatsapp": "我是{type}！找到了上班族必备的治愈方法！你是怎么缓解压力的？一起治愈吧！😌",
+      "telegram": "我是{type}！找到了上班族必备的治愈方法！你是怎么缓解压力的？一起治愈吧！😌",
+      "line": "我是{type}！找到了上班族必备的治愈方法！你是怎么缓解压力的？一起治愈吧！😌"
+    },
+    "alerts": {
+      "kakaoInit": "正在初始化Kakao SDK进行分享...",
+      "linkCopied": "链接已复制到剪贴板！",
+      "wechatCopy": "已为微信分享复制链接。请在微信中粘贴。"
+    },
+    "ui": {
+      "recommendedActivities": "推荐活动",
+      "advice": "建议",
+      "testButton": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "productLoadError": "商品加载失败",
+      "testLoadError": "测试加载失败",
+      "shareError": "分享失败",
+      "clipboardError": "剪贴板复制失败",
+      "shareUnavailable": "分享功能不可用。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。",
+      "linkCopied": "链接已复制！",
+      "wechatCopy": "链接已复制！请在WeChat中粘贴分享。",
+      "resultCopied": "结果已复制到剪贴板！",
+      "adsenseTitle": "AdSense广告区域（标题-描述）",
+      "adsenseLoading": "AdSense广告区域（加载动画顶部）",
+      "adsenseResult": "AdSense广告区域（结果页面上部）",
+      "adsenseBottom": "AdSense广告区域（结果页面下部）"
     }
   }
 }

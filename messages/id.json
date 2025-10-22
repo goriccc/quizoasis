@@ -458,7 +458,7 @@
       "datingStyle": "Gaya Kencan",
       "idealJobs": "Pekerjaan Ideal",
       "bestMatch": "Kecocokan Terbaik",
-      "goodMatch": "Kecocokan Baik", 
+      "goodMatch": "Kecocokan Baik",
       "carefulMatch": "Kecocokan yang Perlu Hati-hati",
       "difficultMatch": "Kecocokan Sulit",
       "compatibility": {
@@ -518,7 +518,7 @@
       "resultShareMessage": "Hambatan cinta saya adalah {type}! Apa masalah Anda? Mari coba bersama 😂💔",
       "result": {
         "symptoms": "Gejala Utama",
-        "patterns": "Pola Cinta", 
+        "patterns": "Pola Cinta",
         "causes": "Penyebab Dasar",
         "solutions": "Solusi",
         "advice": "Nasihat"
@@ -799,40 +799,6 @@
   },
   "teamPlayerTest": {
     "startMessage": {
-      "title": "\"Sendirian cepat, tapi bersama-sama lebih jauh！\"",
-      "line1": "\"Saya akan memimpin\" secara alami mengambil inisiatif",
-      "line2": "\"Bagaimana saya bisa membantu?\" mencari peran yang dibutuhkan",
-      "line3": "\"Bagaimana dengan pendekatan ini?\" menyarankan ide",
-      "line4": "\"Mari kita mulai saja\" langsung mempersiapkan eksekusi",
-      "line5": "\"Apa peran Anda dalam proyek tim? Pemimpin? Pendukung? Bank ide? Ahli eksekusi?\"",
-      "line6": "\"Waktu rapat, pembagian tugas, situasi konflik... Anggota tim yang bersinar di tempat mereka!\""
-    },
-    "ui": {
-      "startTest": "Mulai Tes",
-      "progress": "Kemajuan",
-      "analyzing": "Menganalisis hasil...",
-      "shareResult": "Bagikan Hasil",
-      "retake": "Ulangi Tes",
-      "otherTests": "Tes Lain",
-      "participants": "peserta",
-      "withFriends": "Coba dengan teman"
-    },
-    "result": {
-      "yourResult": "Hasil Anda",
-      "characteristics": "Karakteristik",
-      "pros": "Kelebihan",
-      "cons": "Kekurangan",
-      "advice": "Saran",
-      "recommendedRole": "Peran yang Direkomendasikan",
-      "compatibility": "Kompatibilitas Tim",
-      "bestMatch": "💖 Kecocokan Terbaik",
-      "goodMatch": "😊 Kecocokan Baik",
-      "carefulMatch": "⚠️ Perlu Perhatian",
-      "difficultMatch": "❌ Kecocokan Sulit"
-    }
-  },
-  "teamPlayerTest": {
-    "startMessage": {
       "title": "\"Sendirian cepat, tapi bersama-sama lebih jauh!\"",
       "line1": "Apa peran Anda dalam proyek tim? Pemimpin? Pendukung? Bank ide? Eksekutor?",
       "line2": "Waktu rapat, pembagian tugas, konflik... Anggota tim yang bersinar di tempatnya masing-masing!",
@@ -864,6 +830,54 @@
       "carefulMatch": "Perlu Perhatian",
       "difficultMatch": "Kecocokan Sulit"
     }
+  },
+  "stressReliefTest": {
+    "startMessage": {
+      "line1": "\"Wajib untuk karyawan! Temukan metode pereda stres Anda sendiri\"",
+      "line2": "Ketika stres kerja menumpuk",
+      "line3": "Bagaimana Anda mengatasinya?",
+      "line4": "Temukan melalui 12 pertanyaan",
+      "line5": "😌 Metode pereda stres kerja Anda",
+      "line6": "Mulai sekarang!"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Menemukan metode penyembuhan wajib untuk karyawan! Bagaimana Anda mengatasi stres? Mari sembuh bersama! 😌",
+      "kakao": "Saya {type}! Menemukan metode penyembuhan wajib untuk karyawan! Bagaimana Anda mengatasi stres? Mari sembuh bersama! 😌",
+      "wechat": "Saya {type}! Menemukan metode penyembuhan wajib untuk karyawan! Bagaimana Anda mengatasi stres? Mari sembuh bersama! 😌",
+      "whatsapp": "Saya {type}! Menemukan metode penyembuhan wajib untuk karyawan! Bagaimana Anda mengatasi stres? Mari sembuh bersama! 😌",
+      "telegram": "Saya {type}! Menemukan metode penyembuhan wajib untuk karyawan! Bagaimana Anda mengatasi stres? Mari sembuh bersama! 😌",
+      "line": "Saya {type}! Menemukan metode penyembuhan wajib untuk karyawan! Bagaimana Anda mengatasi stres? Mari sembuh bersama! 😌"
+    },
+    "alerts": {
+      "kakaoInit": "Menginisialisasi Kakao SDK untuk berbagi...",
+      "linkCopied": "Tautan telah disalin ke clipboard!",
+      "wechatCopy": "Tautan telah disalin untuk berbagi WeChat. Silakan tempel di WeChat."
+    },
+    "ui": {
+      "recommendedActivities": "Aktivitas yang Direkomendasikan",
+      "advice": "Saran",
+      "testButton": "Mulai Tes",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa",
+      "productLoadError": "Gagal memuat produk",
+      "testLoadError": "Gagal memuat tes",
+      "shareError": "Gagal berbagi",
+      "clipboardError": "Gagal menyalin ke clipboard",
+      "shareUnavailable": "Fitur berbagi tidak tersedia.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk.",
+      "linkCopied": "Tautan telah disalin!",
+      "wechatCopy": "Tautan telah disalin! Tempel di WeChat untuk berbagi.",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "adsenseTitle": "Area Iklan AdSense (Judul-Deskripsi)",
+      "adsenseLoading": "Area Iklan AdSense (Atas Spinner Loading)",
+      "adsenseResult": "Area Iklan AdSense (Atas Layar Hasil)",
+      "adsenseBottom": "Area Iklan AdSense (Bawah Layar Hasil)"
+    }
   }
 }
-

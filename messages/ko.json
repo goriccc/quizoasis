@@ -857,6 +857,55 @@
       "carefulMatch": "⚠️ 주의 필요",
       "difficultMatch": "❌ 어려운 궁합"
     }
+  },
+  "stressReliefTest": {
+    "startMessage": {
+      "line1": "\"힘든 하루, 당신만의 힐링법을 찾아보세요!\"",
+      "line2": "월요병, 야근, 상사의 잔소리, 끝없는 업무... 직장인이라면 누구나 스트레스와 싸웁니다.",
+      "line3": "운동? 술? 쇼핑? 잠? 게임? 당신만의 스트레스 해소법은 무엇인가요?",
+      "line4": "단 3분이면 당신에게 딱 맞는 힐링법을 발견할 수 있습니다!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "recommendedActivities": "추천 활동",
+      "advice": "조언",
+      "testButton": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "productLoadError": "상품 로드 실패",
+      "testLoadError": "테스트 로드 실패",
+      "shareError": "공유 실패",
+      "clipboardError": "클립보드 복사 실패",
+      "shareUnavailable": "공유 기능을 사용할 수 없습니다.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "linkCopied": "링크가 복사되었습니다!",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "adsenseTitle": "AdSense 광고 영역 (타이틀-설명 사이)",
+      "adsenseLoading": "AdSense 광고 영역 (로딩 스피너 상단)",
+      "adsenseResult": "AdSense 광고 영역 (결과 화면 상단)",
+      "adsenseBottom": "AdSense 광고 영역 (결과 화면 하단)"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 직장인 필수 힐링법 찾았다! 너는 어떻게 스트레스 풀어? 같이 힐링하자! 😌",
+      "kakao": "나는 {type}! 직장인 필수 힐링법 찾았다! 너는 어떻게 스트레스 풀어? 같이 힐링하자! 😌",
+      "wechat": "나는 {type}! 직장인 필수 힐링법 찾았다! 너는 어떻게 스트레스 풀어? 같이 힐링하자! 😌",
+      "whatsapp": "나는 {type}! 직장인 필수 힐링법 찾았다! 너는 어떻게 스트레스 풀어? 같이 힐링하자! 😌",
+      "telegram": "나는 {type}! 직장인 필수 힐링법 찾았다! 너는 어떻게 스트레스 풀어? 같이 힐링하자! 😌",
+      "line": "나는 {type}! 직장인 필수 힐링법 찾았다! 너는 어떻게 스트레스 풀어? 같이 힐링하자! 😌"
+    },
+    "alerts": {
+      "kakaoInit": "카카오톡 공유를 위해 카카오 SDK를 초기화하는 중입니다...",
+      "linkCopied": "링크가 클립보드에 복사되었습니다!",
+      "wechatCopy": "WeChat 공유를 위해 링크를 복사했습니다. WeChat에서 붙여넣기 하세요."
+    }
   }
 }
 

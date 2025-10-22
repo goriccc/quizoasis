@@ -458,7 +458,7 @@
       "datingStyle": "Phong cách hẹn hò",
       "idealJobs": "Nghề nghiệp lý tưởng",
       "bestMatch": "Kết hợp tốt nhất",
-      "goodMatch": "Kết hợp tốt", 
+      "goodMatch": "Kết hợp tốt",
       "carefulMatch": "Kết hợp cần cẩn thận",
       "difficultMatch": "Kết hợp khó khăn",
       "compatibility": {
@@ -518,7 +518,7 @@
       "resultShareMessage": "Trở ngại tình yêu của tôi là {type}! Vấn đề của bạn là gì? Hãy thử cùng nhau 😂💔",
       "result": {
         "symptoms": "Triệu chứng chính",
-        "patterns": "Mô hình tình yêu", 
+        "patterns": "Mô hình tình yêu",
         "causes": "Nguyên nhân gốc",
         "solutions": "Giải pháp",
         "advice": "Lời khuyên"
@@ -799,40 +799,6 @@
   },
   "teamPlayerTest": {
     "startMessage": {
-      "title": "\"Một mình thì nhanh, nhưng cùng nhau thì đi xa hơn！\"",
-      "line1": "\"Tôi sẽ dẫn đầu\" một cách tự nhiên nắm quyền chủ động",
-      "line2": "\"Tôi có thể giúp gì?\" tìm kiếm vai trò cần thiết",
-      "line3": "\"Cách tiếp cận này thế nào?\" đề xuất ý tưởng",
-      "line4": "\"Hãy bắt đầu ngay\" chuẩn bị thực hiện ngay lập tức",
-      "line5": "\"Vai trò của bạn trong dự án nhóm là gì? Lãnh đạo? Hỗ trợ? Ngân hàng ý tưởng? Chuyên gia thực thi?\"",
-      "line6": "\"Thời gian họp, phân chia công việc, tình huống xung đột... Các thành viên nhóm tỏa sáng ở vị trí của mình!\""
-    },
-    "ui": {
-      "startTest": "Bắt đầu kiểm tra",
-      "progress": "Tiến độ",
-      "analyzing": "Đang phân tích kết quả...",
-      "shareResult": "Chia sẻ kết quả",
-      "retake": "Làm lại kiểm tra",
-      "otherTests": "Kiểm tra khác",
-      "participants": "người tham gia",
-      "withFriends": "Thử với bạn bè"
-    },
-    "result": {
-      "yourResult": "Kết quả của bạn",
-      "characteristics": "Đặc điểm",
-      "pros": "Ưu điểm",
-      "cons": "Nhược điểm",
-      "advice": "Lời khuyên",
-      "recommendedRole": "Vai trò được đề xuất",
-      "compatibility": "Độ tương thích nhóm",
-      "bestMatch": "💖 Kết hợp tốt nhất",
-      "goodMatch": "😊 Kết hợp tốt",
-      "carefulMatch": "⚠️ Cần chú ý",
-      "difficultMatch": "❌ Kết hợp khó khăn"
-    }
-  },
-  "teamPlayerTest": {
-    "startMessage": {
       "title": "\"Một mình thì nhanh, nhưng cùng nhau thì đi xa hơn!\"",
       "line1": "Vai trò của bạn trong dự án nhóm là gì? Lãnh đạo? Hỗ trợ? Ngân hàng ý tưởng? Thực thi?",
       "line2": "Thời gian họp, phân chia công việc, xung đột... Các thành viên nhóm tỏa sáng ở vị trí của mình!",
@@ -864,6 +830,54 @@
       "carefulMatch": "Cần chú ý",
       "difficultMatch": "Kết hợp khó khăn"
     }
+  },
+  "stressReliefTest": {
+    "startMessage": {
+      "line1": "\"Cần thiết cho dân văn phòng! Tìm phương pháp giảm stress riêng của bạn\"",
+      "line2": "Khi stress công việc tích tụ",
+      "line3": "Bạn làm thế nào để giải tỏa?",
+      "line4": "Khám phá qua 12 câu hỏi",
+      "line5": "😌 Phương pháp giảm stress công việc của bạn",
+      "line6": "Bắt đầu ngay bây giờ!"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Đã tìm thấy phương pháp chữa lành cần thiết cho dân văn phòng! Bạn làm thế nào để giảm stress? Cùng chữa lành nhé! 😌",
+      "kakao": "Tôi là {type}! Đã tìm thấy phương pháp chữa lành cần thiết cho dân văn phòng! Bạn làm thế nào để giảm stress? Cùng chữa lành nhé! 😌",
+      "wechat": "Tôi là {type}! Đã tìm thấy phương pháp chữa lành cần thiết cho dân văn phòng! Bạn làm thế nào để giảm stress? Cùng chữa lành nhé! 😌",
+      "whatsapp": "Tôi là {type}! Đã tìm thấy phương pháp chữa lành cần thiết cho dân văn phòng! Bạn làm thế nào để giảm stress? Cùng chữa lành nhé! 😌",
+      "telegram": "Tôi là {type}! Đã tìm thấy phương pháp chữa lành cần thiết cho dân văn phòng! Bạn làm thế nào để giảm stress? Cùng chữa lành nhé! 😌",
+      "line": "Tôi là {type}! Đã tìm thấy phương pháp chữa lành cần thiết cho dân văn phòng! Bạn làm thế nào để giảm stress? Cùng chữa lành nhé! 😌"
+    },
+    "alerts": {
+      "kakaoInit": "Đang khởi tạo Kakao SDK để chia sẻ...",
+      "linkCopied": "Liên kết đã được sao chép vào clipboard!",
+      "wechatCopy": "Đã sao chép liên kết để chia sẻ WeChat. Vui lòng dán trong WeChat."
+    },
+    "ui": {
+      "recommendedActivities": "Hoạt động được đề xuất",
+      "advice": "Lời khuyên",
+      "testButton": "Bắt đầu kiểm tra",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài kiểm tra tương tự",
+      "productLoadError": "Tải sản phẩm thất bại",
+      "testLoadError": "Tải bài kiểm tra thất bại",
+      "shareError": "Chia sẻ thất bại",
+      "clipboardError": "Sao chép vào clipboard thất bại",
+      "shareUnavailable": "Tính năng chia sẻ không khả dụng.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk.",
+      "linkCopied": "Liên kết đã được sao chép!",
+      "wechatCopy": "Liên kết đã được sao chép! Dán vào WeChat để chia sẻ.",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tiêu đề-Mô tả)",
+      "adsenseLoading": "Khu vực quảng cáo AdSense (Trên cùng spinner tải)",
+      "adsenseResult": "Khu vực quảng cáo AdSense (Trên cùng màn hình kết quả)",
+      "adsenseBottom": "Khu vực quảng cáo AdSense (Dưới cùng màn hình kết quả)"
+    }
   }
 }
-

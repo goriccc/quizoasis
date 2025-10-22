@@ -596,3 +596,56 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Implement features incrementally, step by step
 - Process one language at a time for multilingual content
 - Use incremental updates and frequent commits
+
+## Question/Answer Shuffling and Calculation Logic (CRITICAL)
+
+### 56. Shuffling Impact on Calculation Logic (CRITICAL)
+❌ DON'T:
+- Ignore the impact of question/answer shuffling on calculation logic
+- Store answers without question identification when shuffling is used
+- Assume calculation logic works correctly with shuffled data
+- Mix shuffled answer order with original question order in calculations
+✅ DO:
+- Always store question ID with answers when shuffling is implemented
+- Update calculation functions to handle both shuffled and non-shuffled data
+- Test calculation accuracy with different shuffling scenarios
+- Ensure consistent results regardless of question/answer order
+
+### 57. Answer Storage Pattern for Shuffled Tests
+❌ DON'T:
+- Store only scores without question context
+- Use array index to identify questions when shuffling is active
+- Assume original question order in calculation logic
+✅ DO:
+- Store answers with question ID: `{ questionId: question.id, scores: scores }`
+- Update calculation functions to handle new answer format
+- Maintain backward compatibility with existing answer formats
+- Test both shuffled and non-shuffled scenarios
+
+### 58. Calculation Function Compatibility
+❌ DON'T:
+- Break existing calculation logic when adding shuffling support
+- Assume all tests use the same answer storage format
+- Ignore backward compatibility when updating calculation functions
+✅ DO:
+- Support both old and new answer formats in calculation functions
+- Use conditional logic: `if (answer.scores) { /* new format */ } else { /* old format */ }`
+- Test calculation accuracy with both formats
+- Ensure consistent results across all test types
+
+### 59. Shuffling Implementation Checklist
+✅ DO verify these when implementing shuffling:
+- [ ] Question shuffling doesn't affect calculation accuracy
+- [ ] Answer option shuffling doesn't affect scoring
+- [ ] Calculation functions handle both shuffled and non-shuffled data
+- [ ] Same answers produce same results regardless of order
+- [ ] Backward compatibility maintained for existing tests
+- [ ] All test scenarios work correctly with shuffling
+
+### 60. Critical Shuffling Rules
+✅ DO follow these rules for all tests with shuffling:
+1. **Always store question ID with answers** when shuffling is implemented
+2. **Update calculation functions** to handle new answer format
+3. **Test calculation accuracy** with different shuffling scenarios
+4. **Maintain backward compatibility** with existing answer formats
+5. **Verify consistent results** regardless of question/answer order

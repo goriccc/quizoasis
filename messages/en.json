@@ -888,6 +888,55 @@
       "carefulMatch": "Needs Attention",
       "difficultMatch": "Difficult Match"
     }
+  },
+  "stressReliefTest": {
+    "startMessage": {
+      "line1": "\"Essential for office workers! Find your own stress relief method\"",
+      "line2": "When work stress builds up",
+      "line3": "How do you relieve it?",
+      "line4": "Discover in 12 questions",
+      "line5": "😌 Your job stress relief method",
+      "line6": "Start now!"
+    },
+    "ui": {
+      "recommendedActivities": "Recommended Activities",
+      "advice": "Advice",
+      "testButton": "Take Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "productLoadError": "Product load failed",
+      "testLoadError": "Test load failed",
+      "shareError": "Share failed",
+      "clipboardError": "Clipboard copy failed",
+      "shareUnavailable": "Sharing feature unavailable.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing.",
+      "linkCopied": "Link copied!",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "resultCopied": "Result copied to clipboard!",
+      "adsenseTitle": "AdSense Ad Area (Title-Description)",
+      "adsenseLoading": "AdSense Ad Area (Loading Spinner Top)",
+      "adsenseResult": "AdSense Ad Area (Result Screen Top)",
+      "adsenseBottom": "AdSense Ad Area (Result Screen Bottom)"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! Found the essential healing method for office workers! How do you relieve stress? Let's heal together! 😌",
+      "kakao": "I'm {type}! Found the essential healing method for office workers! How do you relieve stress? Let's heal together! 😌",
+      "wechat": "I'm {type}! Found the essential healing method for office workers! How do you relieve stress? Let's heal together! 😌",
+      "whatsapp": "I'm {type}! Found the essential healing method for office workers! How do you relieve stress? Let's heal together! 😌",
+      "telegram": "I'm {type}! Found the essential healing method for office workers! How do you relieve stress? Let's heal together! 😌",
+      "line": "I'm {type}! Found the essential healing method for office workers! How do you relieve stress? Let's heal together! 😌"
+    },
+    "alerts": {
+      "kakaoInit": "Initializing Kakao SDK for sharing...",
+      "linkCopied": "Link copied to clipboard!",
+      "wechatCopy": "Link copied for WeChat sharing. Paste in WeChat."
+    }
   }
 }
 

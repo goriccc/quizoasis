@@ -458,7 +458,7 @@
       "datingStyle": "デートスタイル",
       "idealJobs": "理想の職業",
       "bestMatch": "最高の相性",
-      "goodMatch": "良い相性", 
+      "goodMatch": "良い相性",
       "carefulMatch": "注意が必要な相性",
       "difficultMatch": "難しい相性",
       "compatibility": {
@@ -518,7 +518,7 @@
       "resultShareMessage": "私の恋愛障害は{type}！あなたの問題は何？一緒にやってみよう 😂💔",
       "result": {
         "symptoms": "主な症状",
-        "patterns": "恋愛パターン", 
+        "patterns": "恋愛パターン",
         "causes": "根本原因",
         "solutions": "解決方法",
         "advice": "アドバイス"
@@ -800,40 +800,6 @@
   "teamPlayerTest": {
     "startMessage": {
       "title": "「一人では速いが、一緒ならもっと遠くまで行ける！」",
-      "line1": "「私がリードします」自然に主導権を握る",
-      "line2": "「どうお手伝いしましょうか？」必要な役割を探す",
-      "line3": "「こんな方法はいかがですか？」アイデアを提示",
-      "line4": "「とりあえず始めてみましょう」すぐに実行準備",
-      "line5": "「チームプロジェクトでのあなたの役割は？リーダー？サポーター？アイデアバンク？実行専門家？」",
-      "line6": "「会議時間、業務分担、対立状況...それぞれの場所で輝くチームメンバー！」"
-    },
-    "ui": {
-      "startTest": "テスト開始",
-      "progress": "進捗",
-      "analyzing": "結果分析中...",
-      "shareResult": "結果を共有",
-      "retake": "テストを再実行",
-      "otherTests": "他のテスト",
-      "participants": "人参加",
-      "withFriends": "友達と一緒にやってみる"
-    },
-    "result": {
-      "yourResult": "あなたの結果",
-      "characteristics": "特徴",
-      "pros": "長所",
-      "cons": "短所",
-      "advice": "アドバイス",
-      "recommendedRole": "推奨役割",
-      "compatibility": "チーム相性",
-      "bestMatch": "💖 最高の相性",
-      "goodMatch": "😊 良い相性",
-      "carefulMatch": "⚠️ 注意が必要",
-      "difficultMatch": "❌ 難しい相性"
-    }
-  },
-  "teamPlayerTest": {
-    "startMessage": {
-      "title": "「一人では速いが、一緒ならもっと遠くまで行ける！」",
       "line1": "チームプロジェクトでのあなたの役割は？リーダー？サポーター？アイデアバンク？実行者？",
       "line2": "会議時間、業務分担、対立状況... それぞれの場所で輝くチームメンバー！",
       "line3": "あなたはチームでどんな存在ですか？たった3分でチームワークスタイルを発見できます！",
@@ -864,6 +830,54 @@
       "carefulMatch": "注意が必要",
       "difficultMatch": "難しい相性"
     }
+  },
+  "stressReliefTest": {
+    "startMessage": {
+      "line1": "「サラリーマン必須！あなただけのストレス解消法を見つけよう」",
+      "line2": "仕事のストレスが溜まった時",
+      "line3": "あなたはどうやって解消しますか？",
+      "line4": "12の質問で分かる",
+      "line5": "😌 あなたの職務ストレス解消法",
+      "line6": "今すぐ始めよう！"
+    },
+    "shareMessages": {
+      "default": "私は{type}！サラリーマン必須ヒーリング法を見つけた！あなたはどうやってストレス解消する？一緒にヒーリングしよう！😌",
+      "kakao": "私は{type}！サラリーマン必須ヒーリング法を見つけた！あなたはどうやってストレス解消する？一緒にヒーリングしよう！😌",
+      "wechat": "私は{type}！サラリーマン必須ヒーリング法を見つけた！あなたはどうやってストレス解消する？一緒にヒーリングしよう！😌",
+      "whatsapp": "私は{type}！サラリーマン必須ヒーリング法を見つけた！あなたはどうやってストレス解消する？一緒にヒーリングしよう！😌",
+      "telegram": "私は{type}！サラリーマン必須ヒーリング法を見つけた！あなたはどうやってストレス解消する？一緒にヒーリングしよう！😌",
+      "line": "私は{type}！サラリーマン必須ヒーリング法を見つけた！あなたはどうやってストレス解消する？一緒にヒーリングしよう！😌"
+    },
+    "alerts": {
+      "kakaoInit": "カカオトーク共有のためカカオSDKを初期化中...",
+      "linkCopied": "リンクがクリップボードにコピーされました！",
+      "wechatCopy": "WeChat共有のためリンクをコピーしました。WeChatで貼り付けてください。"
+    },
+    "ui": {
+      "recommendedActivities": "おすすめ活動",
+      "advice": "アドバイス",
+      "testButton": "テスト開始",
+      "linkCopy": "リンクコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "productLoadError": "商品読み込み失敗",
+      "testLoadError": "テスト読み込み失敗",
+      "shareError": "共有失敗",
+      "clipboardError": "クリップボードコピー失敗",
+      "shareUnavailable": "共有機能が利用できません。",
+      "kakaoInit": "KakaoTalk共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。",
+      "linkCopied": "リンクがコピーされました！",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "adsenseTitle": "AdSense広告エリア（タイトル-説明）",
+      "adsenseLoading": "AdSense広告エリア（ローディングスピナー上部）",
+      "adsenseResult": "AdSense広告エリア（結果画面上部）",
+      "adsenseBottom": "AdSense広告エリア（結果画面下部）"
+    }
   }
 }
-
