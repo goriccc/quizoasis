@@ -734,6 +734,42 @@
     "shareMessages": {
       "default": "Tôi là {resultTitle}! Tinh thần khởi nghiệp 95% nhưng chưa thử thách? Bạn cũng làm bài test và cùng tìm đối tác kinh doanh nhé! 🚀"
     }
+  },
+  "workLifeBalanceTest": {
+    "startMessage": {
+      "line1": "Công việc trước? Cuộc sống trước? Khám phá giá trị thực sự của bạn!",
+      "line2": "Nếu nhận được cuộc gọi công việc sau giờ làm thì sao? Làm việc cuối tuần có ổn không?",
+      "line3": "Lương cao và thời gian tự do, bạn sẽ chọn cái nào?",
+      "line4": "Nỗi lo lắng vĩnh cửu của người hiện đại, cân bằng công việc-cuộc sống!",
+      "line5": "Sự cân bằng công việc-cuộc sống mà bạn thực sự muốn là gì?",
+      "line6": "Chỉ cần 3 phút để khám phá phong cách cân bằng công việc-cuộc sống lý tưởng của bạn!"
+    },
+    "result": {
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "recommendedJobs": "Nghề nghiệp được đề xuất",
+      "advice": "Lời khuyên",
+      "compatibility": "Độ tương thích",
+      "bestMatch": "Kết hợp tốt nhất",
+      "caution": "Cần chú ý"
+    },
+    "ui": {
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareError": "Đã xảy ra lỗi khi chia sẻ.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk.",
+      "wechatInstruction": "Vui lòng dán và chia sẻ trong WeChat."
+    },
+    "shareMessages": {
+      "default": "Tôi là {resultTitle}! Kết quả test cân bằng công việc-cuộc sống gây sốc... Bạn cũng làm thử và xem giá trị quan của chúng ta có khớp không! 💼✨"
+    }
   }
 }
 

@@ -758,6 +758,42 @@
     "shareMessages": {
       "default": "I am {resultTitle}! I have 95% entrepreneurial spirit but haven't taken the challenge yet? Take the test and let's find a business partner together! 🚀"
     }
+  },
+  "workLifeBalanceTest": {
+    "startMessage": {
+      "line1": "Work first? Life first? Discover your true values!",
+      "line2": "What if you get a work call after hours? Is it okay to work on weekends?",
+      "line3": "What would you choose between salary and free time?",
+      "line4": "The eternal dilemma of modern people, work-life balance!",
+      "line5": "What is the work-life balance you truly want?",
+      "line6": "Discover your ideal work-life balance style in just 3 minutes!"
+    },
+    "result": {
+      "pros": "Strengths",
+      "cons": "Weaknesses", 
+      "recommendedJobs": "Recommended Jobs",
+      "advice": "Advice",
+      "compatibility": "Compatibility",
+      "bestMatch": "Best Match",
+      "caution": "Caution Needed"
+    },
+    "ui": {
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareError": "An error occurred while sharing.",
+      "kakaoShareError": "An error occurred while sharing to KakaoTalk.",
+      "wechatInstruction": "Paste and share in WeChat."
+    },
+    "shareMessages": {
+      "default": "I am {resultTitle}! Work-life balance test results shocking... Let's take the test and see if our values match! 💼✨"
+    }
   }
 }
 

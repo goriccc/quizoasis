@@ -761,6 +761,42 @@
     "shareMessages": {
       "default": "나는 {resultTitle}! 창업가 기질 95%인데 아직 도전 안 해봤다고? 너도 테스트해보고 함께 창업할 파트너 찾자! 🚀"
     }
+  },
+  "workLifeBalanceTest": {
+    "startMessage": {
+      "line1": "일이 우선? 삶이 우선? 당신의 진짜 가치관을 발견하세요!",
+      "line2": "퇴근 후 업무 연락이 온다면? 주말에 일해도 괜찮은가요?",
+      "line3": "연봉과 자유시간 중 무엇을 택하시겠어요?",
+      "line4": "현대인의 영원한 고민, 워라밸!",
+      "line5": "당신이 진정으로 원하는 일과 삶의 균형은 무엇인가요?",
+      "line6": "단 3분이면 당신의 이상적인 워라밸 스타일을 발견할 수 있습니다!"
+    },
+    "result": {
+      "pros": "장점",
+      "cons": "단점",
+      "recommendedJobs": "추천 직업",
+      "advice": "조언",
+      "compatibility": "궁합",
+      "bestMatch": "최고 궁합",
+      "caution": "주의 필요"
+    },
+    "ui": {
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "shareError": "공유 중 오류가 발생했습니다.",
+      "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "wechatInstruction": "WeChat에서 붙여넣기 하여 공유하세요."
+    },
+    "shareMessages": {
+      "default": "나는 {resultTitle}! 워라밸 테스트 결과 충격... 너도 해보고 우리 가치관 맞는지 확인해보자! 💼✨"
+    }
   }
 }
 

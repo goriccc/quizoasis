@@ -734,6 +734,42 @@
     "shareMessages": {
       "default": "私は{resultTitle}！起業家精神95%なのにまだ挑戦していない？あなたもテストして一緒に起業パートナーを見つけましょう！🚀"
     }
+  },
+  "workLifeBalanceTest": {
+    "startMessage": {
+      "line1": "仕事優先？人生優先？あなたの本当の価値観を発見してください！",
+      "line2": "退勤後に仕事の連絡が来たら？週末に働いても大丈夫？",
+      "line3": "年収と自由時間、どちらを選びますか？",
+      "line4": "現代人の永遠の悩み、ワークライフバランス！",
+      "line5": "あなたが本当に求める仕事と人生のバランスは何ですか？",
+      "line6": "たった3分で理想的なワークライフバランススタイルを発見できます！"
+    },
+    "result": {
+      "pros": "長所",
+      "cons": "短所",
+      "recommendedJobs": "おすすめ職業",
+      "advice": "アドバイス",
+      "compatibility": "相性",
+      "bestMatch": "最高の相性",
+      "caution": "注意が必要"
+    },
+    "ui": {
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "shareError": "共有中にエラーが発生しました。",
+      "kakaoShareError": "カカオトーク共有中にエラーが発生しました。",
+      "wechatInstruction": "WeChatで貼り付けて共有してください。"
+    },
+    "shareMessages": {
+      "default": "私は{resultTitle}！ワークライフバランステスト結果に衝撃... あなたもやってみて私たちの価値観が合うか確認しよう！💼✨"
+    }
   }
 }
 

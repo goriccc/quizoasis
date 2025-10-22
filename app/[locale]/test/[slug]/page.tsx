@@ -12,6 +12,7 @@ import { careerQuestions, careerResults } from '@/lib/careerData';
 import { jobStrengthQuestions, jobStrengthResults } from '@/lib/jobStrengthData';
 import { workValuesQuestions, workValuesResults } from '@/lib/workValuesData';
 import { entrepreneurSpiritQuestions, entrepreneurSpiritResults } from '@/lib/entrepreneurSpiritData';
+import { workLifeBalanceQuestions, workLifeBalanceResults } from '@/lib/workLifeBalanceData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -90,6 +91,9 @@ const WorkValuesTestClient = dynamic(() => import('@/components/WorkValuesTestCl
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const EntrepreneurSpiritTestClient = dynamic(() => import('@/components/EntrepreneurSpiritTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const WorkLifeBalanceTestClient = dynamic(() => import('@/components/WorkLifeBalanceTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -885,6 +889,52 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           similarTests={[]} // 클라이언트 사이드에서 로드
+        />
+      </>
+    );
+  }
+
+  // 워라밸 테스트의 경우 Supabase에서 시도
+  if (slug === 'work-life-balance-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'work-life-balance-test',
+      title: {
+        ko: '당신의 이상적인 워라밸은?',
+        en: 'What is your ideal work-life balance?',
+        ja: 'あなたの理想的なワークライフバランスは？',
+        'zh-CN': '你理想的工作生活平衡是什么？',
+        'zh-TW': '你理想的工作生活平衡是什麼？',
+        vi: 'Cân bằng công việc-cuộc sống lý tưởng của bạn là gì?',
+        id: 'Apa keseimbangan kerja-hidup ideal Anda?'
+      },
+      description: {
+        ko: '일이 우선? 삶이 우선? 당신의 진짜 가치관을 발견하세요!',
+        en: 'Work first? Life first? Discover your true values!',
+        ja: '仕事優先？人生優先？あなたの本当の価値観を発見してください！',
+        'zh-CN': '工作优先？生活优先？发现你真正的价值观！',
+        'zh-TW': '工作優先？生活優先？發現你真正的價值觀！',
+        vi: 'Công việc trước? Cuộc sống trước? Khám phá giá trị thực sự của bạn!',
+        id: 'Kerja dulu? Hidup dulu? Temukan nilai-nilai sejati Anda!'
+      },
+      thumbnail: 'test_051_work_life_balance.jpg',
+      play_count: 0
+    };
+
+    return (
+      <>
+        <WorkLifeBalanceTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={workLifeBalanceQuestions}
+          results={workLifeBalanceResults}
+          questionCount={workLifeBalanceQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
         />
       </>
     );

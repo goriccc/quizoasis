@@ -734,6 +734,42 @@
     "shareMessages": {
       "default": "Saya adalah {resultTitle}! Semangat kewirausahaan 95% tapi belum menantang? Anda juga ikut test dan mari cari partner bisnis bersama! 🚀"
     }
+  },
+  "workLifeBalanceTest": {
+    "startMessage": {
+      "line1": "Kerja dulu? Hidup dulu? Temukan nilai-nilai sejati Anda!",
+      "line2": "Jika mendapat panggilan kerja setelah jam kerja? Bekerja di akhir pekan tidak masalah?",
+      "line3": "Gaji tinggi dan waktu bebas, mana yang akan Anda pilih?",
+      "line4": "Kekhawatiran abadi manusia modern, keseimbangan kerja-hidup!",
+      "line5": "Keseimbangan kerja-hidup seperti apa yang benar-benar Anda inginkan?",
+      "line6": "Hanya butuh 3 menit untuk menemukan gaya keseimbangan kerja-hidup ideal Anda!"
+    },
+    "result": {
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "recommendedJobs": "Pekerjaan yang direkomendasikan",
+      "advice": "Saran",
+      "compatibility": "Kecocokan",
+      "bestMatch": "Kombinasi terbaik",
+      "caution": "Perlu diperhatikan"
+    },
+    "ui": {
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "shareError": "Terjadi kesalahan saat berbagi.",
+      "kakaoShareError": "Terjadi kesalahan saat berbagi di KakaoTalk.",
+      "wechatInstruction": "Silakan tempel dan bagikan di WeChat."
+    },
+    "shareMessages": {
+      "default": "Saya adalah {resultTitle}! Hasil test keseimbangan kerja-hidup mengejutkan... Anda juga coba dan lihat apakah nilai-nilai kita cocok! 💼✨"
+    }
   }
 }
 
