@@ -41,6 +41,65 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "timeEfficiencyTest": {
+    "startMessage": {
+      "line1": "\"Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào?\"",
+      "line2": "24 giờ được trao cho mọi người một cách bình đẳng, một số người hoàn thành mọi thứ, một số người nói rằng họ không có đủ thời gian.",
+      "line3": "Bạn có kế hoạch không? Tự phát? Bạn có tuân thủ thời hạn không? Luôn trễ? Bạn kiểm soát thời gian? Bị thời gian đuổi theo?",
+      "line4": "Chỉ trong 3 phút, bạn có thể khám phá hiệu quả thời gian của mình!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "telegram": "Telegram",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Khu vực quảng cáo AdSense",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "advice": "Lời khuyên",
+      "compatibleTypes": "Loại tương thích",
+      "cautionTypes": "Loại cần chú ý",
+      "clipboardCopySuccess": "Kết quả đã được sao chép vào clipboard!",
+      "shareFeatureError": "Tính năng chia sẻ không khả dụng.",
+      "wechatLinkCopy": "Liên kết đã được sao chép! Dán và chia sẻ trong WeChat.",
+      "kakaoInitializing": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk.",
+      "linkCopySuccess": "Liên kết đã được sao chép!"
+    },
+    "result": {
+      "bestMatch": "💖 Ghép cặp tốt nhất",
+      "goodMatch": "😊 Ghép cặp tốt",
+      "carefulMatch": "⚠️ Cần thận trọng",
+      "difficultMatch": "❌ Ghép cặp khó"
+    },
+    "compatibility": {
+      "Type1_Type2": "Có thể tạo ra sự cộng hưởng với loại thực dụng hiệu quả.",
+      "Type2_Type1": "Có thể hợp tác tốt với loại bậc thầy thời gian và loại thường.",
+      "Type3_all": "Hòa hợp tốt với tất cả các loại.",
+      "Type4_Type4": "Các loại tự do có thể hiểu nhau.",
+      "Type5_Type5": "Các loại trễ kinh niên có thể hiểu nhau.",
+      "Type6_Type6": "Khi các loại lãng phí ở cùng nhau, chúng có thể lãng phí nhiều hơn."
+    },
+    "caution": {
+      "Type1_Type6": "Loại lãng phí thời gian rất khó hiểu.",
+      "Type2_Type5": "Có thể xung đột với loại trễ kinh niên do khác biệt về cảm giác thời gian.",
+      "Type3_Type1": "Có thể cảm thấy áp lực từ loại bậc thầy thời gian do tiêu chuẩn khác nhau.",
+      "Type4_Type1": "Hoàn toàn khác biệt với loại bậc thầy thời gian.",
+      "Type5_Type1_Type2": "Loại bậc thầy thời gian và loại thực dụng hiệu quả là loại đúng giờ và có thể gây căng thẳng.",
+      "Type6_Type1": "Loại bậc thầy thời gian rất khó hiểu."
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra quản lý thời gian! Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào? 🕐⚡",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra quản lý thời gian! Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào? 🕐⚡",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra quản lý thời gian! Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào? 🕐⚡",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra quản lý thời gian! Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào? 🕐⚡",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra quản lý thời gian! Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào? 🕐⚡",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra quản lý thời gian! Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào? 🕐⚡"
+    }
+  },
   "challengePotentialTest": {
     "startMessage": {
       "line1": "\"Đánh thức tinh thần thử thách đang ngủ trong bạn!\"",

@@ -44,6 +44,65 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "timeEfficiencyTest": {
+    "startMessage": {
+      "line1": "\"하루 24시간, 당신은 얼마나 효율적으로 사용하고 있나요?\"",
+      "line2": "누구에게나 공평하게 주어지는 24시간, 어떤 사람은 모든 것을 해내고, 어떤 사람은 시간이 부족하다고 말합니다.",
+      "line3": "계획적인가요? 즉흥적인가요? 마감을 지키나요? 늘 늦나요? 시간을 지배하나요? 시간에 쫓기나요?",
+      "line4": "단 3분이면 당신의 시간 효율성을 발견할 수 있습니다!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "wechat": "위챗",
+      "telegram": "텔레그램",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "adsenseTitle": "AdSense 광고 영역",
+      "similarTests": "유사한 다른 테스트",
+      "advice": "조언",
+      "compatibleTypes": "어울리는 타입",
+      "cautionTypes": "주의 타입",
+      "clipboardCopySuccess": "결과가 클립보드에 복사되었습니다!",
+      "shareFeatureError": "공유 기능을 사용할 수 없습니다.",
+      "wechatLinkCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInitializing": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "linkCopySuccess": "링크가 복사되었습니다!"
+    },
+    "result": {
+      "bestMatch": "💖 최고 궁합",
+      "goodMatch": "😊 좋은 궁합",
+      "carefulMatch": "⚠️ 주의 필요",
+      "difficultMatch": "❌ 어려운 궁합"
+    },
+    "compatibility": {
+      "Type1_Type2": "효율적 실용형과 함께 시너지를 낼 수 있습니다.",
+      "Type2_Type1": "타임 마스터형과 평범한 일반형과 좋은 협력이 가능합니다.",
+      "Type3_all": "모든 타입과 무난하게 어울립니다.",
+      "Type4_Type4": "같은 자유형끼리 서로 이해할 수 있습니다.",
+      "Type5_Type5": "같은 지각형끼리 서로 이해할 수 있습니다.",
+      "Type6_Type6": "같은 낭비형끼리 함께 있으면 더 낭비할 수 있습니다."
+    },
+    "caution": {
+      "Type1_Type6": "시간 낭비형은 이해하기 어렵습니다.",
+      "Type2_Type5": "만성 지각형과는 시간 감각 차이로 갈등이 있을 수 있습니다.",
+      "Type3_Type1": "타임 마스터형과는 기준 차이로 압박을 느낄 수 있습니다.",
+      "Type4_Type1": "타임 마스터형과는 완전히 다른 세계입니다.",
+      "Type5_Type1_Type2": "타임 마스터형과 효율적 실용형은 시간 엄수형이라 스트레스를 유발할 수 있습니다.",
+      "Type6_Type1": "타임 마스터형은 이해하기 어렵습니다."
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 시간 관리 테스트 완료! 너는 하루 24시간을 얼마나 효율적으로 쓰고 있어? 🕐⚡",
+      "kakao": "나는 {type}! 시간 관리 테스트 완료! 너는 하루 24시간을 얼마나 효율적으로 쓰고 있어? 🕐⚡",
+      "wechat": "나는 {type}! 시간 관리 테스트 완료! 너는 하루 24시간을 얼마나 효율적으로 쓰고 있어? 🕐⚡",
+      "whatsapp": "나는 {type}! 시간 관리 테스트 완료! 너는 하루 24시간을 얼마나 효율적으로 쓰고 있어? 🕐⚡",
+      "telegram": "나는 {type}! 시간 관리 테스트 완료! 너는 하루 24시간을 얼마나 효율적으로 쓰고 있어? 🕐⚡",
+      "line": "나는 {type}! 시간 관리 테스트 완료! 너는 하루 24시간을 얼마나 효율적으로 쓰고 있어? 🕐⚡"
+    }
+  },
   "challengePotentialTest": {
     "startMessage": {
       "line1": "\"당신 안에 잠들어 있는 도전 정신을 깨워보세요!\"",

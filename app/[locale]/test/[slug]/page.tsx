@@ -17,6 +17,7 @@ import { teamPlayerQuestions, teamPlayerResults } from '@/lib/teamPlayerData';
 import { challengePotentialQuestions, challengePotentialResults } from '@/lib/challengePotentialData';
 import { stressReliefQuestions, stressReliefResults } from '@/lib/stressReliefData';
 import { investmentStyleQuestions, investmentStyleResults } from '@/lib/investmentStyleData';
+import { timeEfficiencyQuestions, timeEfficiencyResults } from '@/lib/timeEfficiencyData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -110,6 +111,9 @@ const StressReliefTestClient = dynamic(() => import('@/components/StressReliefTe
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const InvestmentStyleTestClient = dynamic(() => import('@/components/InvestmentStyleTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const TimeEfficiencyTestClient = dynamic(() => import('@/components/TimeEfficiencyTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -321,10 +325,56 @@ export default async function TestPage({ params }: Props) {
     if (!testData) {
       notFound();
     }
+  }
+
+  // 시간 효율성 테스트의 경우 Supabase에서 시도
+  if (slug === 'time-efficiency-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'time-efficiency-test',
+      title: {
+        ko: '당신은 시간을 얼마나 효율적으로 활용하나요?',
+        en: 'How efficiently do you use your time?',
+        ja: 'あなたは時間をどのくらい効率的に活用していますか？',
+        'zh-CN': '你如何高效地利用时间？',
+        'zh-TW': '你如何高效地利用時間？',
+        vi: 'Bạn sử dụng thời gian hiệu quả đến mức nào?',
+        id: 'Seberapa efisien Anda menggunakan waktu?'
+      },
+      description: {
+        ko: '하루 24시간, 당신은 얼마나 효율적으로 사용하고 있나요? 누구에게나 공평하게 주어지는 24시간, 어떤 사람은 모든 것을 해내고, 어떤 사람은 시간이 부족하다고 말합니다.',
+        en: '24 hours a day, how efficiently are you using them? 24 hours given equally to everyone, some people accomplish everything, some people say they don\'t have enough time.',
+        ja: '一日24時間、あなたはどのくらい効率的に使っていますか？誰にでも平等に与えられる24時間、ある人はすべてを成し遂げ、ある人は時間が不足していると言います。',
+        'zh-CN': '一天24小时，你如何高效地使用它们？每个人都被平等地给予24小时，有些人完成所有事情，有些人说时间不够。',
+        'zh-TW': '一天24小時，你如何高效地使用它們？每個人都被平等地給予24小時，有些人完成所有事情，有些人說時間不夠。',
+        vi: '24 giờ một ngày, bạn sử dụng chúng hiệu quả đến mức nào? 24 giờ được trao cho mọi người một cách bình đẳng, một số người hoàn thành mọi thứ, một số người nói rằng họ không có đủ thời gian.',
+        id: '24 jam sehari, seberapa efisien Anda menggunakannya? 24 jam yang diberikan secara adil kepada semua orang, beberapa orang menyelesaikan segalanya, beberapa orang mengatakan mereka tidak punya cukup waktu.'
+      },
+      thumbnail: 'test_079_time_efficiency.jpg',
+      type: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['성향'],
+        en: ['Tendency'],
+        ja: ['傾向'],
+        'zh-CN': ['倾向'],
+        'zh-TW': ['傾向'],
+        vi: ['Xu hướng'],
+        id: ['Kecenderungan']
+      }
+    };
+
+    const testData = {
+      questions: timeEfficiencyQuestions,
+      results: timeEfficiencyResults
+    };
 
     const title = test.title[locale] || test.title.ko;
     const description = test.description?.[locale] || test.description?.ko || '';
-    const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}`;
     const canonicalUrl = `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`;
 
     // JSON-LD Schema 생성
@@ -333,26 +383,36 @@ export default async function TestPage({ params }: Props) {
       '@type': 'Quiz',
       name: title,
       description: description,
-      url: canonicalUrl,
       image: thumbnailUrl,
-      mainEntity: {
-        '@type': 'Question',
-        text: '애착 스타일 테스트',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: '심리학 기반 애착 스타일 분석'
-        }
-      },
+      url: canonicalUrl,
       author: {
         '@type': 'Organization',
-        name: 'QuizOasis'
+        name: 'QuizOasis',
+        url: 'https://quizoasis-coral.vercel.app',
       },
       publisher: {
         '@type': 'Organization',
-        name: 'QuizOasis'
-      }
+        name: 'QuizOasis',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://quizoasis-coral.vercel.app/logo.png',
+        },
+      },
+      inLanguage: locale,
+      interactionStatistic: {
+        '@type': 'InteractionCounter',
+        interactionType: 'https://schema.org/PlayAction',
+        userInteractionCount: test.play_count || 0,
+      },
+      numberOfQuestions: testData.questions.length,
+      educationalLevel: 'General',
+      typicalAgeRange: '13-99',
+      keywords: typeof test.tags === 'object' && !Array.isArray(test.tags)
+        ? (test.tags[locale] || test.tags.ko || []).join(', ')
+        : Array.isArray(test.tags) ? test.tags.join(', ') : '',
     };
 
+    // Breadcrumb Schema
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -366,7 +426,7 @@ export default async function TestPage({ params }: Props) {
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Tests',
+          name: test.category || 'Tests',
           item: `https://quizoasis-coral.vercel.app/${locale}`,
         },
         {
@@ -391,8 +451,8 @@ export default async function TestPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         
-        <FriendTestClient
-          locale={locale}
+        <TimeEfficiencyTestClient
+          locale={locale as Locale}
           slug={slug}
           title={title}
           description={description}
@@ -401,6 +461,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={testData.questions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          similarTests={[]} // 클라이언트 사이드에서 로드
         />
       </>
     );
@@ -1230,6 +1291,11 @@ export default async function TestPage({ params }: Props) {
       questions: investmentStyleQuestions,
       results: investmentStyleResults
     };
+  } else if (slug === 'time-efficiency-test') {
+    testData = {
+      questions: timeEfficiencyQuestions,
+      results: timeEfficiencyResults
+    };
   } else {
     testData = getTestData(slug);
   }
@@ -1308,6 +1374,7 @@ export default async function TestPage({ params }: Props) {
     test.type === 'stress' ? StressTestClient :
     test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : DatingTestClient) :
     test.type === 'career' ? (slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'investment-style-test' ? InvestmentStyleTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : CareerTestClient) :
+    slug === 'time-efficiency-test' ? TimeEfficiencyTestClient :
     MBTITestClient;
 
   return (

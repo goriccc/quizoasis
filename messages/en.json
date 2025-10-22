@@ -41,6 +41,65 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "timeEfficiencyTest": {
+    "startMessage": {
+      "line1": "\"How efficiently do you use your 24 hours a day?\"",
+      "line2": "24 hours given equally to everyone, some people accomplish everything, some people say they don't have enough time.",
+      "line3": "Are you planned? Spontaneous? Do you meet deadlines? Always late? Do you control time? Are you chased by time?",
+      "line4": "In just 3 minutes, you can discover your time efficiency!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "telegram": "Telegram",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense Ad Area",
+      "similarTests": "Similar Other Tests",
+      "advice": "Advice",
+      "compatibleTypes": "Compatible Types",
+      "cautionTypes": "Caution Types",
+      "clipboardCopySuccess": "Result copied to clipboard!",
+      "shareFeatureError": "Sharing feature is not available.",
+      "wechatLinkCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInitializing": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoShareError": "An error occurred while sharing to KakaoTalk.",
+      "linkCopySuccess": "Link copied!"
+    },
+    "result": {
+      "bestMatch": "💖 Best Match",
+      "goodMatch": "😊 Good Match",
+      "carefulMatch": "⚠️ Needs Caution",
+      "difficultMatch": "❌ Difficult Match"
+    },
+    "compatibility": {
+      "Type1_Type2": "Can create synergy with efficient practical types.",
+      "Type2_Type1": "Good cooperation is possible with time master and ordinary general types.",
+      "Type3_all": "Gets along well with all types.",
+      "Type4_Type4": "Free types can understand each other.",
+      "Type5_Type5": "Chronic late types can understand each other.",
+      "Type6_Type6": "When waste types are together, they can waste more."
+    },
+    "caution": {
+      "Type1_Type6": "Time waste types are hard to understand.",
+      "Type2_Type5": "Conflicts may arise with chronic late types due to different time senses.",
+      "Type3_Type1": "May feel pressure from time master types due to different standards.",
+      "Type4_Type1": "Completely different world from time master types.",
+      "Type5_Type1_Type2": "Time master and efficient practical types are punctual and may cause stress.",
+      "Type6_Type1": "Time master types are hard to understand."
+    },
+    "shareMessages": {
+      "default": "I am {type}! Time management test completed! How efficiently do you use your 24 hours a day? 🕐⚡",
+      "kakao": "I am {type}! Time management test completed! How efficiently do you use your 24 hours a day? 🕐⚡",
+      "wechat": "I am {type}! Time management test completed! How efficiently do you use your 24 hours a day? 🕐⚡",
+      "whatsapp": "I am {type}! Time management test completed! How efficiently do you use your 24 hours a day? 🕐⚡",
+      "telegram": "I am {type}! Time management test completed! How efficiently do you use your 24 hours a day? 🕐⚡",
+      "line": "I am {type}! Time management test completed! How efficiently do you use your 24 hours a day? 🕐⚡"
+    }
+  },
   "challengePotentialTest": {
     "startMessage": {
       "line1": "\"Awaken the spirit of challenge sleeping within you!\"",

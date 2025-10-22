@@ -41,6 +41,65 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "timeEfficiencyTest": {
+    "startMessage": {
+      "line1": "\"Seberapa efisien Anda menggunakan 24 jam sehari?\"",
+      "line2": "24 jam diberikan secara adil kepada semua orang, beberapa orang menyelesaikan segalanya, beberapa orang mengatakan mereka tidak punya cukup waktu.",
+      "line3": "Apakah Anda terencana? Spontan? Apakah Anda mematuhi tenggat waktu? Selalu terlambat? Apakah Anda mengontrol waktu? Dikejar waktu?",
+      "line4": "Hanya dalam 3 menit, Anda dapat menemukan efisiensi waktu Anda!",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "telegram": "Telegram",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Area Iklan AdSense",
+      "similarTests": "Tes Serupa Lainnya",
+      "advice": "Saran",
+      "compatibleTypes": "Tipe yang Cocok",
+      "cautionTypes": "Tipe Peringatan",
+      "clipboardCopySuccess": "Hasil disalin ke clipboard!",
+      "shareFeatureError": "Fitur berbagi tidak tersedia.",
+      "wechatLinkCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInitializing": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoShareError": "Terjadi kesalahan saat berbagi ke KakaoTalk.",
+      "linkCopySuccess": "Tautan disalin!"
+    },
+    "result": {
+      "bestMatch": "💖 Kecocokan Terbaik",
+      "goodMatch": "😊 Kecocokan Baik",
+      "carefulMatch": "⚠️ Perlu Hati-hati",
+      "difficultMatch": "❌ Kecocokan Sulit"
+    },
+    "compatibility": {
+      "Type1_Type2": "Dapat menciptakan sinergi dengan tipe praktis yang efisien.",
+      "Type2_Type1": "Kerja sama yang baik dimungkinkan dengan tipe master waktu dan tipe umum.",
+      "Type3_all": "Cocok dengan semua tipe.",
+      "Type4_Type4": "Tipe bebas dapat saling memahami.",
+      "Type5_Type5": "Tipe terlambat kronis dapat saling memahami.",
+      "Type6_Type6": "Ketika tipe pemboros bersama, mereka bisa lebih boros."
+    },
+    "caution": {
+      "Type1_Type6": "Tipe pemboros waktu sulit dipahami.",
+      "Type2_Type5": "Konflik mungkin terjadi dengan tipe terlambat kronis karena perbedaan persepsi waktu.",
+      "Type3_Type1": "Mungkin merasakan tekanan dari tipe master waktu karena standar yang berbeda.",
+      "Type4_Type1": "Dunia yang sama sekali berbeda dari tipe master waktu.",
+      "Type5_Type1_Type2": "Tipe master waktu dan tipe praktis efisien adalah tipe tepat waktu dan mungkin menyebabkan stres.",
+      "Type6_Type1": "Tipe master waktu sulit dipahami."
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! Tes manajemen waktu selesai! Seberapa efisien Anda menggunakan 24 jam sehari? 🕐⚡",
+      "kakao": "Saya adalah {type}! Tes manajemen waktu selesai! Seberapa efisien Anda menggunakan 24 jam sehari? 🕐⚡",
+      "wechat": "Saya adalah {type}! Tes manajemen waktu selesai! Seberapa efisien Anda menggunakan 24 jam sehari? 🕐⚡",
+      "whatsapp": "Saya adalah {type}! Tes manajemen waktu selesai! Seberapa efisien Anda menggunakan 24 jam sehari? 🕐⚡",
+      "telegram": "Saya adalah {type}! Tes manajemen waktu selesai! Seberapa efisien Anda menggunakan 24 jam sehari? 🕐⚡",
+      "line": "Saya adalah {type}! Tes manajemen waktu selesai! Seberapa efisien Anda menggunakan 24 jam sehari? 🕐⚡"
+    }
+  },
   "challengePotentialTest": {
     "startMessage": {
       "line1": "\"Bangunkan semangat tantangan yang tertidur dalam diri Anda!\"",

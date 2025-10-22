@@ -41,6 +41,65 @@
   "loveFlavorTest": {
     "resultShareMessage": "我的戀愛是{type}！你的戀愛是什麼味道？我們也來測測配對度吧 🍭💕"
   },
+  "timeEfficiencyTest": {
+    "startMessage": {
+      "line1": "\"你如何高效地利用一天24小時？\"",
+      "line2": "每個人都被平等地給予24小時，有些人完成所有事情，有些人說時間不夠。",
+      "line3": "你是有計劃的嗎？即興的嗎？你遵守截止日期嗎？總是遲到嗎？你控制時間嗎？被時間追趕嗎？",
+      "line4": "只需3分鐘，你就能發現你的時間效率！",
+      "line5": "",
+      "line6": ""
+    },
+    "ui": {
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "wechat": "微信",
+      "telegram": "Telegram",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense廣告區域",
+      "similarTests": "類似的其他測試",
+      "advice": "建議",
+      "compatibleTypes": "相配類型",
+      "cautionTypes": "注意類型",
+      "clipboardCopySuccess": "結果已複製到剪貼板！",
+      "shareFeatureError": "共享功能不可用。",
+      "wechatLinkCopy": "鏈接已複製！在微信中粘貼並分享。",
+      "kakaoInitializing": "正在初始化KakaoTalk共享功能。請稍後再試。",
+      "kakaoShareError": "KakaoTalk分享時發生錯誤。",
+      "linkCopySuccess": "鏈接已複製！"
+    },
+    "result": {
+      "bestMatch": "💖最佳匹配",
+      "goodMatch": "😊良好匹配",
+      "carefulMatch": "⚠️需要注意",
+      "difficultMatch": "❌困難匹配"
+    },
+    "compatibility": {
+      "Type1_Type2": "可以與高效實用型產生協同效應。",
+      "Type2_Type1": "可以與時間大師型和普通一般型進行良好合作。",
+      "Type3_all": "與所有類型都能和諧相處。",
+      "Type4_Type4": "自由型之間可以相互理解。",
+      "Type5_Type5": "慢性遲到型之間可以相互理解。",
+      "Type6_Type6": "浪費型在一起時可能會浪費更多。"
+    },
+    "caution": {
+      "Type1_Type6": "時間浪費型很難理解。",
+      "Type2_Type5": "與慢性遲到型可能因時間觀念不同而產生衝突。",
+      "Type3_Type1": "可能因標準不同而感受到時間大師型的壓力。",
+      "Type4_Type1": "與時間大師型是完全不同的世界。",
+      "Type5_Type1_Type2": "時間大師型和高效實用型是守時型，可能造成壓力。",
+      "Type6_Type1": "時間大師型很難理解。"
+    },
+    "shareMessages": {
+      "default": "我是{type}！時間管理測試完成！你如何高效地利用一天24小時？ 🕐⚡",
+      "kakao": "我是{type}！時間管理測試完成！你如何高效地利用一天24小時？ 🕐⚡",
+      "wechat": "我是{type}！時間管理測試完成！你如何高效地利用一天24小時？ 🕐⚡",
+      "whatsapp": "我是{type}！時間管理測試完成！你如何高效地利用一天24小時？ 🕐⚡",
+      "telegram": "我是{type}！時間管理測試完成！你如何高效地利用一天24小時？ 🕐⚡",
+      "line": "我是{type}！時間管理測試完成！你如何高效地利用一天24小時？ 🕐⚡"
+    }
+  },
   "challengePotentialTest": {
     "startMessage": {
       "line1": "\"喚醒沉睡在你內心的挑戰精神！\"",
