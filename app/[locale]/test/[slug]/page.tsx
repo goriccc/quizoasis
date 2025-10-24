@@ -45,6 +45,9 @@ const FriendTestClient = dynamic(() => import('@/components/FriendTestClient'), 
 const ConflictTestClient = dynamic(() => import('@/components/ConflictTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
+const EmpathyTestClient = dynamic(() => import('@/components/EmpathyTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 const LoveFlavorTestClient = dynamic(() => import('@/components/LoveFlavorTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
@@ -79,9 +82,6 @@ const JealousyTestClient = dynamic(() => import('@/components/JealousyTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const FirstImpressionTestClient = dynamic(() => import('@/components/FirstImpressionTestClient'), {
-  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
-});
-const EmpathyTestClient = dynamic(() => import('@/components/EmpathyTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const HonestyTestClient = dynamic(() => import('@/components/HonestyTestClient'), {

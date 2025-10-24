@@ -503,7 +503,6 @@ export default function BrainTestClient({
               <p>{t('brainTest.startMessage.line3')}</p>
               <p>{t('brainTest.startMessage.line4')}</p>
               <p className="whitespace-pre-line">{t('brainTest.startMessage.line5')}</p>
-              <p>{t('brainTest.startMessage.line6', { count: formatPlayCount(displayPlayCount, locale as Locale) })}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -514,6 +513,10 @@ export default function BrainTestClient({
                 {t('brainTest.ui.startTest')}
               </button>
             </div>
+
+            <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
+              {t('brainTest.startMessage.line6', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
+            </p>
 
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -788,7 +791,7 @@ export default function BrainTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                {t('brainTest.ui.advice')}
+                💡 조언
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {resultAdvice}

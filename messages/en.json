@@ -41,6 +41,40 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "empathyTest": {
+    "startMessage": {
+      "line1": "\"Professional EQ measurement! What is your empathy ability level?\"",
+      "line2": "How well do you understand others' emotions?",
+      "line3": "Can you feel what others are feeling?",
+      "line4": "Can you think from others' perspective?",
+      "line5": "Empathy is the core of relationships and",
+      "line6": "the most important element of emotional intelligence (EQ).",
+      "line7": "Test your empathy ability professionally!",
+      "line8": "Takes 3 minutes! Please answer honestly 💙",
+      "line9": "Total {count} people participated!"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "yourResult": "Your Result",
+      "eqLevel": "EQ Level",
+      "pros": "Pros",
+      "cons": "Cons",
+      "advice": "Advice",
+      "recommendedJobs": "Recommended Jobs",
+      "compatibleTypes": "Compatible Types",
+      "cautionTypes": "Caution Types",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "Other Tests",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "noCompatibleTypes": "None",
+      "noCautionTypes": "None"
+    }
+  },
   "brainTest": {
     "startMessage": {
       "line1": "\"Left brain? Right brain? We accurately analyze your brain tendencies!\"",

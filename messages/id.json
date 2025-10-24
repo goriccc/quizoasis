@@ -41,6 +41,40 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "empathyTest": {
+    "startMessage": {
+      "line1": "\"Pengukuran EQ profesional! Apa level kemampuan empati Anda?\"",
+      "line2": "Seberapa baik Anda memahami emosi orang lain?",
+      "line3": "Bisakah Anda merasakan apa yang dirasakan orang lain?",
+      "line4": "Bisakah Anda berpikir dari sudut pandang orang lain?",
+      "line5": "Kemampuan empati adalah inti dari hubungan dan",
+      "line6": "elemen paling penting dari kecerdasan emosional (EQ).",
+      "line7": "Uji kemampuan empati Anda secara profesional!",
+      "line8": "Memakan waktu 3 menit! Silakan jawab dengan jujur 💙",
+      "line9": "Total {count} orang berpartisipasi!"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "yourResult": "Hasil Anda",
+      "eqLevel": "Level EQ",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "advice": "Saran",
+      "recommendedJobs": "Pekerjaan yang Direkomendasikan",
+      "compatibleTypes": "Tipe yang Kompatibel",
+      "cautionTypes": "Tipe yang Perlu Diperhatikan",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Tes Lainnya",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "noCompatibleTypes": "Tidak ada",
+      "noCautionTypes": "Tidak ada"
+    }
+  },
   "brainTest": {
     "startMessage": {
       "line1": "\"Otak kiri? Otak kanan? Kami menganalisis kecenderungan otak Anda dengan akurat!\"",

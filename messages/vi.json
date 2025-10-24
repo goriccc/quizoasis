@@ -41,6 +41,40 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "empathyTest": {
+    "startMessage": {
+      "line1": "\"Đo lường EQ chuyên nghiệp! Cấp độ khả năng đồng cảm của bạn là gì?\"",
+      "line2": "Bạn hiểu cảm xúc của người khác đến mức nào?",
+      "line3": "Bạn có thể cảm nhận được cảm xúc của người khác không?",
+      "line4": "Bạn có thể suy nghĩ từ góc độ của người khác không?",
+      "line5": "Khả năng đồng cảm là cốt lõi của các mối quan hệ và",
+      "line6": "là yếu tố quan trọng nhất của trí tuệ cảm xúc (EQ).",
+      "line7": "Hãy kiểm tra khả năng đồng cảm của bạn một cách chuyên nghiệp!",
+      "line8": "Mất 3 phút! Hãy trả lời thành thật 💙",
+      "line9": "Tổng cộng {count} người tham gia!"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "yourResult": "Kết quả của bạn",
+      "eqLevel": "Cấp độ EQ",
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "recommendedJobs": "Nghề nghiệp được đề xuất",
+      "compatibleTypes": "Loại tương thích",
+      "cautionTypes": "Loại cần chú ý",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại kiểm tra",
+      "otherTests": "Các kiểm tra khác",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "noCompatibleTypes": "Không có",
+      "noCautionTypes": "Không có"
+    }
+  },
   "brainTest": {
     "startMessage": {
       "line1": "\"Não trái? Não phải? Chúng tôi phân tích chính xác xu hướng não của bạn!\"",

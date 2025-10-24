@@ -41,6 +41,40 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "empathyTest": {
+    "startMessage": {
+      "line1": "\"EQ専門測定！あなたの共感能力レベルは？\"",
+      "line2": "他人の感情をどれくらい理解できますか？",
+      "line3": "相手の気持ちを感じることができますか？",
+      "line4": "他人の立場で考えることができますか？",
+      "line5": "共感能力は関係の核心であり、",
+      "line6": "感情知能(EQ)の最も重要な要素です。",
+      "line7": "あなたの共感能力を専門的に測定してみましょう！",
+      "line8": "所要時間3分！正直に答えてください 💙",
+      "line9": "合計{count}人が参加しました！"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "yourResult": "あなたの結果",
+      "eqLevel": "EQレベル",
+      "pros": "長所",
+      "cons": "短所",
+      "advice": "アドバイス",
+      "recommendedJobs": "おすすめ職業",
+      "compatibleTypes": "相性の良いタイプ",
+      "cautionTypes": "注意タイプ",
+      "shareResult": "結果を共有",
+      "retake": "再テスト",
+      "otherTests": "他のテスト",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "noCompatibleTypes": "なし",
+      "noCautionTypes": "なし"
+    }
+  },
   "brainTest": {
     "startMessage": {
       "line1": "「左脳？右脳？あなたの脳の傾向を正確に分析します！」",

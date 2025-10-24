@@ -1,771 +1,1108 @@
 export interface EmpathyQuestion {
   id: number;
   question: Record<string, string>;
-  options: {
+  options: Array<{
     text: Record<string, string>;
     scores: Record<string, number>;
-  }[];
+  }>;
 }
 
 export interface EmpathyResult {
   type: string;
-  emoji: string;
   title: Record<string, string>;
   description: Record<string, string>;
-  pros: Record<string, string>[];
-  cons: Record<string, string>[];
+  longDescription: Record<string, string>;
+  pros: Array<Record<string, string>>;
+  cons: Array<Record<string, string>>;
   advice: Record<string, string>;
-  empathyScore: Record<string, string>;
+  recommendedJobs: Record<string, string>;
   compatibility: {
-    best: string[];
     good: string[];
     careful: string[];
-    difficult: string[];
   };
+  emoji: string;
+  level: Record<string, string>;
+  maxScore: number;
 }
 
 export const empathyQuestions: EmpathyQuestion[] = [
   {
     id: 1,
     question: {
-      ko: "친구가 울면서 힘든 이야기를 할 때?",
-      en: "When a friend is crying and telling you a difficult story?",
-      ja: "友達が泣きながら辛い話をしている時？",
-      'zh-CN': "当朋友哭着讲述困难的故事时？",
-      'zh-TW': "當朋友哭著講述困難的故事時？",
-      vi: "Khi bạn bè khóc và kể cho bạn nghe một câu chuyện khó khăn?",
-      id: "Ketika teman menangis dan menceritakan kisah sulit?"
+      ko: "친구가 울고 있을 때 당신은?",
+      en: "When your friend is crying, you:",
+      ja: "友達が泣いている時、あなたは？",
+      "zh-CN": "朋友哭泣时，你会：",
+      "zh-TW": "朋友哭泣時，你會：",
+      vi: "Khi bạn bè khóc, bạn sẽ：",
+      id: "Ketika teman menangis, Anda akan："
     },
     options: [
       {
         text: {
-          ko: "같이 울컥하고 감정이 북받침",
-          en: "Cry together and feel overwhelmed with emotion",
-          ja: "一緒に泣いて感情が込み上げる",
-          'zh-CN': "一起哭泣，情感涌上心头",
-          'zh-TW': "一起哭泣，情感湧上心頭",
-          vi: "Cùng khóc và cảm xúc trào dâng",
-          id: "Menangis bersama dan emosi meluap"
+          ko: "같이 눈물이 나고 감정이 전달됨",
+          en: "I cry too and feel the emotion",
+          ja: "一緒に涙が出て感情が伝わる",
+          "zh-CN": "也会流泪并感受到情感",
+          "zh-TW": "也會流淚並感受到情感",
+          vi: "Cũng khóc theo và cảm nhận được cảm xúc",
+          id: "Juga ikut menangis dan merasakan emosi"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "진심으로 안타깝고 위로하고 싶음",
-          en: "Feel genuinely sorry and want to comfort them",
-          ja: "心から気の毒に思い、慰めたい",
-          'zh-CN': "真心感到难过，想要安慰他们",
-          'zh-TW': "真心感到難過，想要安慰他們",
-          vi: "Thực sự cảm thấy thương và muốn an ủi họ",
-          id: "Benar-benar merasa kasihan dan ingin menghibur mereka"
+          ko: "마음이 아프고 위로하고 싶음",
+          en: "My heart hurts and I want to comfort them",
+          ja: "心が痛くて慰めたくなる",
+          "zh-CN": "心里难受想安慰他们",
+          "zh-TW": "心裡難受想安慰他們",
+          vi: "Thấy đau lòng và muốn an ủi",
+          id: "Hati sakit dan ingin menghibur mereka"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"그랬구나\" 들어주지만 크게 동요 안 함",
-          en: "Listen saying \"I see\" but not deeply moved",
-          ja: "「そうだったんだ」と聞くが大きく動揺しない",
-          'zh-CN': "听着说\"原来如此\"但没有太大波动",
-          'zh-TW': "聽著說「原來如此」但沒有太大波動",
-          vi: "Lắng nghe nói \"vậy à\" nhưng không xúc động nhiều",
-          id: "Mendengarkan sambil berkata \"begitu ya\" tapi tidak terlalu terharu"
+          ko: "안됐다고 생각하지만 어떻게 해야 할지 모름",
+          en: "I feel sorry but don't know what to do",
+          ja: "気の毒に思うがどうすればいいかわからない",
+          "zh-CN": "感到抱歉但不知道该怎么办",
+          "zh-TW": "感到抱歉但不知道該怎麼辦",
+          vi: "Thấy tội nghiệp nhưng không biết phải làm gì",
+          id: "Merasa kasihan tapi tidak tahu harus berbuat apa"
         },
-        scores: { Type3: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 3,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "어떻게 반응해야 할지 어색함",
-          en: "Feel awkward about how to react",
-          ja: "どう反応すべきか気まずい",
-          'zh-CN': "对如何反应感到尴尬",
-          'zh-TW': "對如何反應感到尷尬",
-          vi: "Cảm thấy khó xử về cách phản ứng",
-          id: "Merasa canggung tentang cara bereaksi"
+          ko: "왜 우는지 이해가 안 됨",
+          en: "I don't understand why they're crying",
+          ja: "なぜ泣いているのか理解できない",
+          "zh-CN": "不明白为什么哭",
+          "zh-TW": "不明白為什麼哭",
+          vi: "Không hiểu tại sao họ lại khóc",
+          id: "Tidak mengerti mengapa mereka menangis"
         },
-        scores: { Type5: 8, Type6: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 2,
+          "Level1": 8
+        }
       }
     ]
   },
   {
     id: 2,
     question: {
-      ko: "슬픈 영화를 볼 때 당신은?",
-      en: "When watching a sad movie, you are?",
-      ja: "悲しい映画を見る時、あなたは？",
-      'zh-CN': "看悲伤电影时，你是？",
-      'zh-TW': "看悲傷電影時，你是？",
-      vi: "Khi xem phim buồn, bạn là?",
-      id: "Saat menonton film sedih, Anda adalah?"
+      ko: "누군가의 표정만 봐도?",
+      en: "Just by looking at someone's expression:",
+      ja: "誰かの表情だけ見ても？",
+      "zh-CN": "仅仅看表情就能：",
+      "zh-TW": "僅僅看表情就能：",
+      vi: "Chỉ nhìn biểu cảm của ai đó thôi：",
+      id: "Hanya dengan melihat ekspresi seseorang："
     },
     options: [
       {
         text: {
-          ko: "눈물 펑펑 쏟으며 완전 몰입",
-          en: "Cry buckets and get completely immersed",
-          ja: "涙をボロボロ流して完全に没入",
-          'zh-CN': "泪流满面，完全沉浸其中",
-          'zh-TW': "淚流滿面，完全沉浸其中",
-          vi: "Khóc như mưa và hoàn toàn đắm chìm",
-          id: "Menangis deras dan benar-benar terbenam"
+          ko: "기분을 정확히 알 수 있음",
+          en: "I can accurately know their mood",
+          ja: "気持ちを正確に知ることができる",
+          "zh-CN": "能准确知道他们的心情",
+          "zh-TW": "能準確知道他們的心情",
+          vi: "Có thể biết chính xác tâm trạng của họ",
+          id: "Dapat mengetahui suasana hati mereka dengan akurat"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "찡하고 눈물이 날 것 같음",
-          en: "Feel a lump in throat and tears might come",
-          ja: "胸が詰まって涙が出そう",
-          'zh-CN': "喉咙哽咽，眼泪要流出来",
-          'zh-TW': "喉嚨哽咽，眼淚要流出來",
-          vi: "Cảm thấy nghẹn ngào và nước mắt có thể rơi",
-          id: "Merasa tersedak dan air mata mungkin keluar"
+          ko: "대략 어떤 감정인지 파악 가능",
+          en: "I can roughly understand what emotion it is",
+          ja: "大体どんな感情か把握可能",
+          "zh-CN": "能大致了解是什么情感",
+          "zh-TW": "能大致了解是什麼情感",
+          vi: "Có thể nắm bắt được đại khái là cảm xúc gì",
+          id: "Dapat memahami kira-kira emosi apa itu"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "슬프긴 한데 눈물은 안 남",
-          en: "It's sad but tears don't come",
-          ja: "悲しいけど涙は出ない",
-          'zh-CN': "虽然悲伤但不会流泪",
-          'zh-TW': "雖然悲傷但不會流淚",
-          vi: "Buồn nhưng nước mắt không rơi",
-          id: "Sedih tapi air mata tidak keluar"
+          ko: "명확하게 말해줘야 알 수 있음",
+          en: "I need them to tell me clearly to understand",
+          ja: "明確に言ってもらわないとわからない",
+          "zh-CN": "需要明确说出来才能知道",
+          "zh-TW": "需要明確說出來才能知道",
+          vi: "Cần họ nói rõ ràng mới biết được",
+          id: "Perlu mereka jelaskan dengan jelas baru tahu"
         },
-        scores: { Type3: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 3,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"연기잘하네\" 객관적으로 봄",
-          en: "Watch objectively saying \"Good acting\"",
-          ja: "「演技うまいね」と客観的に見る",
-          'zh-CN': "客观地看，说\"演技不错\"",
-          'zh-TW': "客觀地看，說「演技不錯」",
-          vi: "Xem một cách khách quan nói \"Diễn hay\"",
-          id: "Menonton secara objektif sambil berkata \"Akting bagus\""
+          ko: "잘 모르겠음",
+          en: "I don't really know",
+          ja: "よくわからない",
+          "zh-CN": "不太清楚",
+          "zh-TW": "不太清楚",
+          vi: "Không biết rõ",
+          id: "Tidak begitu tahu"
         },
-        scores: { Type4: 8 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 8,
+          "Level1": 2
+        }
       }
     ]
   },
   {
     id: 3,
     question: {
-      ko: "누군가 좋은 소식을 전할 때?",
-      en: "When someone shares good news?",
-      ja: "誰かが良い知らせを伝える時？",
-      'zh-CN': "当有人分享好消息时？",
-      'zh-TW': "當有人分享好消息時？",
-      vi: "Khi ai đó chia sẻ tin tốt?",
-      id: "Ketika seseorang berbagi kabar baik?"
+      ko: "친구가 좋은 소식을 전할 때?",
+      en: "When a friend shares good news:",
+      ja: "友達が良い知らせを伝える時？",
+      "zh-CN": "朋友分享好消息时：",
+      "zh-TW": "朋友分享好消息時：",
+      vi: "Khi bạn bè chia sẻ tin tốt：",
+      id: "Ketika teman berbagi kabar baik："
     },
     options: [
       {
         text: {
-          ko: "내 일처럼 기쁘고 신남",
-          en: "Get excited and happy as if it's my own news",
-          ja: "自分のことのように嬉しくて興奮する",
-          'zh-CN': "像自己的事一样高兴和兴奋",
-          'zh-TW': "像自己的事一樣高興和興奮",
-          vi: "Vui mừng và phấn khích như chuyện của mình",
-          id: "Senang dan bersemangat seperti berita sendiri"
+          ko: "내 일처럼 진심으로 기쁨",
+          en: "I'm genuinely happy as if it's my own news",
+          ja: "自分のことのように心から嬉しい",
+          "zh-CN": "像自己的事一样真心高兴",
+          "zh-TW": "像自己的事一樣真心高興",
+          vi: "Vui mừng chân thành như chuyện của mình",
+          id: "Sungguh-sungguh bahagia seperti berita sendiri"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "진심으로 축하하고 기뻐함",
-          en: "Sincerely congratulate and feel happy",
-          ja: "心からお祝いして喜ぶ",
-          'zh-CN': "真心祝贺并感到高兴",
-          'zh-TW': "真心祝賀並感到高興",
-          vi: "Chúc mừng chân thành và cảm thấy vui",
-          id: "Sungguh-sungguh mengucapkan selamat dan merasa senang"
+          ko: "축하하고 함께 기뻐함",
+          en: "I congratulate them and celebrate together",
+          ja: "お祝いして一緒に喜ぶ",
+          "zh-CN": "祝贺并一起高兴",
+          "zh-TW": "祝賀並一起高興",
+          vi: "Chúc mừng và cùng vui mừng",
+          id: "Memberi selamat dan bergembira bersama"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"잘됐네!\" 적당히 반응",
-          en: "React appropriately saying \"That's great!\"",
-          ja: "「良かったね！」と適度に反応",
-          'zh-CN': "适当反应说\"太好了！\"",
-          'zh-TW': "適當反應說「太好了！」",
-          vi: "Phản ứng vừa phải nói \"Tuyệt vời!\"",
-          id: "Bereaksi dengan tepat sambil berkata \"Bagus!\""
+          ko: "\"잘됐네\" 하고 반응함",
+          en: "I react with \"That's nice\"",
+          ja: "「よかったね」と反応する",
+          "zh-CN": "反应说「不错」",
+          "zh-TW": "反應說「不錯」",
+          vi: "Phản ứng bằng cách nói \"Tốt quá\"",
+          id: "Bereaksi dengan mengatakan \"Bagus\""
         },
-        scores: { Type3: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 3,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"그래? 좋겠다\" 담담함",
-          en: "Respond calmly saying \"Really? That's good\"",
-          ja: "「そう？良かったね」と冷静に反応",
-          'zh-CN': "冷静地说\"是吗？那很好\"",
-          'zh-TW': "冷靜地說「是嗎？那很好」",
-          vi: "Phản ứng bình tĩnh nói \"Vậy à? Tốt nhỉ\"",
-          id: "Bereaksi dengan tenang sambil berkata \"Benarkah? Bagus\""
+          ko: "별 감정이 들지 않음",
+          en: "I don't feel any particular emotion",
+          ja: "特に感情がわかない",
+          "zh-CN": "没有特别的感受",
+          "zh-TW": "沒有特別的感受",
+          vi: "Không có cảm xúc gì đặc biệt",
+          id: "Tidak merasakan emosi khusus"
         },
-        scores: { Type4: 3, Type5: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 2,
+          "Level1": 8
+        }
       }
     ]
   },
   {
     id: 4,
     question: {
-      ko: "길에서 다친 동물을 봤을 때?",
-      en: "When you see an injured animal on the street?",
-      ja: "道で怪我をした動物を見た時？",
-      'zh-CN': "在街上看到受伤的动物时？",
-      'zh-TW': "在街上看到受傷的動物時？",
-      vi: "Khi bạn nhìn thấy một con vật bị thương trên đường?",
-      id: "Ketika Anda melihat hewan yang terluka di jalan?"
+      ko: "영화나 드라마를 볼 때?",
+      en: "When watching movies or dramas:",
+      ja: "映画やドラマを見る時？",
+      "zh-CN": "看电影或电视剧时：",
+      "zh-TW": "看電影或電視劇時：",
+      vi: "Khi xem phim hoặc phim truyền hình：",
+      id: "Saat menonton film atau drama："
     },
     options: [
       {
         text: {
-          ko: "가슴이 아파서 꼭 도와줘야 함",
-          en: "Heart aches and must help them",
-          ja: "胸が痛んで必ず助けなければならない",
-          'zh-CN': "心痛，必须帮助它们",
-          'zh-TW': "心痛，必須幫助它們",
-          vi: "Tim đau và phải giúp chúng",
-          id: "Hati sakit dan harus membantu mereka"
+          ko: "등장인물에 완전히 감정이입됨",
+          en: "I completely empathize with the characters",
+          ja: "登場人物に完全に感情移入する",
+          "zh-CN": "完全代入角色情感",
+          "zh-TW": "完全代入角色情感",
+          vi: "Hoàn toàn đồng cảm với các nhân vật",
+          id: "Sepenuhnya berempati dengan karakter"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "안쓰럽고 도울 방법 찾음",
-          en: "Feel sorry and look for ways to help",
-          ja: "気の毒で助ける方法を探す",
-          'zh-CN': "感到难过，寻找帮助的方法",
-          'zh-TW': "感到難過，尋找幫助的方法",
-          vi: "Cảm thấy thương và tìm cách giúp đỡ",
-          id: "Merasa kasihan dan mencari cara untuk membantu"
+          ko: "슬픈 장면에서 눈물 날 때 있음",
+          en: "I sometimes cry during sad scenes",
+          ja: "悲しいシーンで涙が出ることがある",
+          "zh-CN": "悲伤场景时会流泪",
+          "zh-TW": "悲傷場景時會流淚",
+          vi: "Đôi khi khóc trong những cảnh buồn",
+          id: "Kadang menangis di adegan sedih"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "불쌍하긴 한데 어쩔 수 없음",
-          en: "Feel sorry but can't do anything about it",
-          ja: "可哀想だけど仕方ない",
-          'zh-CN': "虽然可怜但无能为力",
-          'zh-TW': "雖然可憐但無能為力",
-          vi: "Thương nhưng không thể làm gì",
-          id: "Kasihan tapi tidak bisa berbuat apa-apa"
+          ko: "이야기로만 받아들임",
+          en: "I take it just as a story",
+          ja: "話として受け取る",
+          "zh-CN": "只是当作故事来看",
+          "zh-TW": "只是當作故事來看",
+          vi: "Chỉ coi như một câu chuyện",
+          id: "Hanya menerimanya sebagai cerita"
         },
-        scores: { Type3: 3, Type4: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 8,
+          "Level3": 2,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "그런가보다 하고 지나침",
-          en: "Think 'that's how it is' and pass by",
-          ja: "「そういうものか」と思って通り過ぎる",
-          'zh-CN': "想\"就是这样\"然后走过",
-          'zh-TW': "想「就是這樣」然後走過",
-          vi: "Nghĩ \"vậy thôi\" và đi qua",
-          id: "Berpikir \"begitulah\" dan lewat"
+          ko: "감정 이입이 잘 안 됨",
+          en: "I don't empathize well",
+          ja: "感情移入がうまくできない",
+          "zh-CN": "不容易产生共鸣",
+          "zh-TW": "不容易產生共鳴",
+          vi: "Không dễ dàng đồng cảm",
+          id: "Tidak mudah berempati"
         },
-        scores: { Type5: 8, Type6: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 8,
+          "Level1": 2
+        }
       }
     ]
   },
   {
     id: 5,
     question: {
-      ko: "친구들 사이 다툼을 볼 때?",
-      en: "When you see friends fighting?",
-      ja: "友達同士の喧嘩を見る時？",
-      'zh-CN': "当你看到朋友之间争吵时？",
-      'zh-TW': "當你看到朋友之間爭吵時？",
-      vi: "Khi bạn thấy bạn bè cãi nhau?",
-      id: "Ketika Anda melihat teman-teman bertengkar?"
+      ko: "누군가 화났을 때?",
+      en: "When someone is angry:",
+      ja: "誰かが怒っている時？",
+      "zh-CN": "有人生气时：",
+      "zh-TW": "有人生氣時：",
+      vi: "Khi ai đó tức giận：",
+      id: "Ketika seseorang marah："
     },
     options: [
       {
         text: {
-          ko: "양쪽 마음이 다 이해돼서 힘듦",
-          en: "It's hard because I understand both sides' feelings",
-          ja: "両方の気持ちが分かって辛い",
-          'zh-CN': "理解双方的心情所以很困难",
-          'zh-TW': "理解雙方的所以很困難",
-          vi: "Khó khăn vì hiểu cảm xúc của cả hai bên",
-          id: "Sulit karena memahami perasaan kedua belah pihak"
+          ko: "그 사람의 화난 감정이 느껴짐",
+          en: "I can feel their angry emotion",
+          ja: "その人の怒りの感情が感じられる",
+          "zh-CN": "能感受到他们的愤怒情绪",
+          "zh-TW": "能感受到他們的憤怒情緒",
+          vi: "Có thể cảm nhận được cảm xúc tức giận của họ",
+          id: "Dapat merasakan emosi marah mereka"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "중재하려고 노력함",
-          en: "Try to mediate between them",
-          ja: "仲裁しようと努力する",
-          'zh-CN': "努力调解他们",
-          'zh-TW': "努力調解他們",
-          vi: "Cố gắng hòa giải giữa họ",
-          id: "Berusaha menjadi penengah"
+          ko: "왜 화났는지 이해하려 함",
+          en: "I try to understand why they're angry",
+          ja: "なぜ怒っているのか理解しようとする",
+          "zh-CN": "试图理解为什么生气",
+          "zh-TW": "試圖理解為什麼生氣",
+          vi: "Cố gắng hiểu tại sao họ tức giận",
+          id: "Mencoba memahami mengapa mereka marah"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "내 일 아니면 관여 안 함",
-          en: "Don't get involved if it's not my business",
-          ja: "自分のことじゃなければ関わらない",
-          'zh-CN': "不是我的事就不参与",
-          'zh-TW': "不是我的事就不參與",
-          vi: "Không can thiệp nếu không phải việc của mình",
-          id: "Tidak ikut campur jika bukan urusan saya"
+          ko: "화났다는 것만 인지함",
+          en: "I only recognize that they're angry",
+          ja: "怒っているということだけ認識する",
+          "zh-CN": "只是知道他们生气了",
+          "zh-TW": "只是知道他們生氣了",
+          vi: "Chỉ nhận biết được rằng họ đang tức giận",
+          id: "Hanya menyadari bahwa mereka marah"
         },
-        scores: { Type3: 3, Type5: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 3,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "누가 논리적으로 맞는지만 봄",
-          en: "Just see who is logically right",
-          ja: "誰が論理的に正しいかだけを見る",
-          'zh-CN': "只看谁在逻辑上是对的",
-          'zh-TW': "只看誰在邏輯上是對的",
-          vi: "Chỉ xem ai đúng về mặt logic",
-          id: "Hanya melihat siapa yang benar secara logis"
+          ko: "잘 모르겠음",
+          en: "I don't really know",
+          ja: "よくわからない",
+          "zh-CN": "不太清楚",
+          "zh-TW": "不太清楚",
+          vi: "Không biết rõ",
+          id: "Tidak begitu tahu"
         },
-        scores: { Type4: 8 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 2,
+          "Level1": 8
+        }
       }
     ]
   },
   {
     id: 6,
     question: {
-      ko: "드라마나 소설 속 인물에 대해?",
-      en: "About characters in dramas or novels?",
-      ja: "ドラマや小説の登場人物について？",
-      'zh-CN': "关于电视剧或小说中的人物？",
-      'zh-TW': "關於電視劇或小說中的人物？",
-      vi: "Về các nhân vật trong phim truyền hình hoặc tiểu thuyết?",
-      id: "Tentang karakter dalam drama atau novel?"
+      ko: "친구의 고민을 들을 때?",
+      en: "When listening to a friend's worries:",
+      ja: "友達の悩みを聞く時？",
+      "zh-CN": "听朋友烦恼时：",
+      "zh-TW": "聽朋友煩惱時：",
+      vi: "Khi nghe bạn bè tâm sự：",
+      id: "Saat mendengarkan kekhawatiran teman："
     },
     options: [
       {
         text: {
-          ko: "완전 감정이입해서 힘들 때도",
-          en: "Completely empathize and sometimes struggle",
-          ja: "完全に感情移入して辛い時もある",
-          'zh-CN': "完全投入感情，有时很困难",
-          'zh-TW': "完全投入感情，有時很困難",
-          vi: "Hoàn toàn đồng cảm và đôi khi khó khăn",
-          id: "Benar-benar berempati dan kadang kesulitan"
+          ko: "완전히 빠져들어 함께 고민함",
+          en: "I get completely absorbed and worry together",
+          ja: "完全にのめり込んで一緒に悩む",
+          "zh-CN": "完全投入并一起烦恼",
+          "zh-TW": "完全投入並一起煩惱",
+          vi: "Hoàn toàn chìm đắm và cùng lo lắng",
+          id: "Sepenuhnya terlibat dan khawatir bersama"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "캐릭터 감정을 잘 이해함",
-          en: "Understand the character's emotions well",
-          ja: "キャラクターの感情をよく理解する",
-          'zh-CN': "很好地理解角色的情感",
-          'zh-TW': "很好地理解角色的情感",
-          vi: "Hiểu rõ cảm xúc của nhân vật",
-          id: "Memahami emosi karakter dengan baik"
+          ko: "진심으로 들어주고 공감함",
+          en: "I listen sincerely and empathize",
+          ja: "心から聞いて共感する",
+          "zh-CN": "真心倾听并共情",
+          "zh-TW": "真心傾聽並共情",
+          vi: "Lắng nghe chân thành và đồng cảm",
+          id: "Mendengarkan dengan tulus dan berempati"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "흥미롭게 보지만 선 있음",
-          en: "Watch with interest but keep distance",
-          ja: "興味深く見るが距離を保つ",
-          'zh-CN': "有兴趣地看但保持距离",
-          'zh-TW': "有興趣地看但保持距離",
-          vi: "Xem với sự quan tâm nhưng giữ khoảng cách",
-          id: "Menonton dengan minat tapi menjaga jarak"
+          ko: "들어주지만 해결책 위주로 생각",
+          en: "I listen but focus on solutions",
+          ja: "聞くが解決策中心で考える",
+          "zh-CN": "倾听但主要想解决方案",
+          "zh-TW": "傾聽但主要想解決方案",
+          vi: "Lắng nghe nhưng tập trung vào giải pháp",
+          id: "Mendengarkan tapi fokus pada solusi"
         },
-        scores: { Type3: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 8,
+          "Level3": 2,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"허구인데\" 라고 생각함",
-          en: "Think \"It's fiction\"",
-          ja: "「フィクションだ」と思う",
-          'zh-CN': "想\"这是虚构的\"",
-          'zh-TW': "想「這是虛構的」",
-          vi: "Nghĩ \"Đây là hư cấu\"",
-          id: "Berpikir \"Ini fiksi\""
+          ko: "듣기는 하지만 잘 이해 못함",
+          en: "I listen but don't understand well",
+          ja: "聞くがよく理解できない",
+          "zh-CN": "在听但不太理解",
+          "zh-TW": "在聽但不太理解",
+          vi: "Có lắng nghe nhưng không hiểu rõ",
+          id: "Mendengarkan tapi tidak terlalu memahami"
         },
-        scores: { Type4: 3, Type6: 8 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 8,
+          "Level1": 2
+        }
       }
     ]
   },
   {
     id: 7,
     question: {
-      ko: "누군가 화났을 때 당신은?",
-      en: "When someone is angry, you are?",
-      ja: "誰かが怒っている時、あなたは？",
-      'zh-CN': "当有人生气时，你是？",
-      'zh-TW': "當有人生氣時，你是？",
-      vi: "Khi ai đó tức giận, bạn là?",
-      id: "Ketika seseorang marah, Anda adalah?"
+      ko: "타인의 고통을 봤을 때?",
+      en: "When you see someone else's pain:",
+      ja: "他人の苦痛を見た時？",
+      "zh-CN": "看到别人的痛苦时：",
+      "zh-TW": "看到別人的痛苦時：",
+      vi: "Khi nhìn thấy nỗi đau của người khác：",
+      id: "Ketika melihat penderitaan orang lain："
     },
     options: [
       {
         text: {
-          ko: "그 사람 기분이 느껴져서 불편",
-          en: "Feel uncomfortable because I sense their mood",
-          ja: "その人の気分が感じられて不快",
-          'zh-CN': "感受到他们的情绪所以不舒服",
-          'zh-TW': "感受到他們的情緒所以不舒服",
-          vi: "Cảm thấy khó chịu vì cảm nhận được tâm trạng của họ",
-          id: "Merasa tidak nyaman karena merasakan suasana hati mereka"
+          ko: "가슴이 아프고 도와주고 싶음",
+          en: "My heart hurts and I want to help them",
+          ja: "胸が痛くて助けてあげたい",
+          "zh-CN": "心里难受想帮助他们",
+          "zh-TW": "心裡難受想幫助他們",
+          vi: "Thấy đau lòng và muốn giúp đỡ họ",
+          id: "Hati sakit dan ingin membantu mereka"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "왜 화났는지 이해하려 함",
-          en: "Try to understand why they're angry",
-          ja: "なぜ怒っているのか理解しようとする",
-          'zh-CN': "试图理解他们为什么生气",
-          'zh-TW': "試圖理解他們為什麼生氣",
-          vi: "Cố gắng hiểu tại sao họ tức giận",
-          id: "Berusaha memahami mengapa mereka marah"
+          ko: "안타깝고 걱정됨",
+          en: "I feel sorry and worried",
+          ja: "気の毒で心配になる",
+          "zh-CN": "感到遗憾和担心",
+          "zh-TW": "感到遺憾和擔心",
+          vi: "Thấy tội nghiệp và lo lắng",
+          id: "Merasa kasihan dan khawatir"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"화났네\" 인지만 함",
-          en: "Just acknowledge \"They're angry\"",
-          ja: "「怒ってるね」と認識するだけ",
-          'zh-CN': "只是意识到\"他们生气了\"",
-          'zh-TW': "只是意識到「他們生氣了」",
-          vi: "Chỉ nhận biết \"Họ đang tức giận\"",
-          id: "Hanya mengakui \"Mereka marah\""
+          ko: "불쌍하다고 생각함",
+          en: "I think they're pitiable",
+          ja: "可哀想だと思う",
+          "zh-CN": "觉得他们可怜",
+          "zh-TW": "覺得他們可憐",
+          vi: "Thấy họ đáng thương",
+          id: "Merasa mereka menyedihkan"
         },
-        scores: { Type3: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 3,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"왜 저래?\" 이해 안 됨",
-          en: "Don't understand \"Why are they like that?\"",
-          ja: "「なぜああなの？」理解できない",
-          'zh-CN': "不理解\"为什么那样？\"",
-          'zh-TW': "不理解「為什麼那樣？」",
-          vi: "Không hiểu \"Tại sao họ lại như vậy?\"",
-          id: "Tidak mengerti \"Mengapa mereka seperti itu?\""
+          ko: "별로 감정이 안 듦",
+          en: "I don't feel much emotion",
+          ja: "特に感情がわかない",
+          "zh-CN": "没有特别的感受",
+          "zh-TW": "沒有特別的感受",
+          vi: "Không có cảm xúc gì đặc biệt",
+          id: "Tidak merasakan emosi khusus"
         },
-        scores: { Type5: 8, Type6: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 2,
+          "Level1": 8
+        }
       }
     ]
   },
   {
     id: 8,
     question: {
-      ko: "타인의 고민 상담을 할 때?",
-      en: "When giving advice to someone's problems?",
-      ja: "他人の悩み相談をする時？",
-      'zh-CN': "当给别人提供建议时？",
-      'zh-TW': "當給別人提供建議時？",
-      vi: "Khi tư vấn cho vấn đề của người khác?",
-      id: "Ketika memberikan nasihat untuk masalah orang lain?"
+      ko: "대화 중 상대방이 불편해 보이면?",
+      en: "If the other person looks uncomfortable during conversation:",
+      ja: "会話中相手が不快そうに見えたら？",
+      "zh-CN": "对话中对方看起来不舒服时：",
+      "zh-TW": "對話中對方看起來不舒服時：",
+      vi: "Nếu đối phương trông khó chịu trong cuộc trò chuyện：",
+      id: "Jika lawan bicara terlihat tidak nyaman saat berbicara："
     },
     options: [
       {
         text: {
-          ko: "완전 빠져들어서 내가 더 힘듦",
-          en: "Get completely absorbed and I struggle more",
-          ja: "完全に没入して自分がもっと辛くなる",
-          'zh-CN': "完全投入，我更加困难",
-          'zh-TW': "完全投入，我更加困難",
-          vi: "Hoàn toàn đắm chìm và tôi khó khăn hơn",
-          id: "Benar-benar terbenam dan saya lebih kesulitan"
+          ko: "즉시 알아채고 화제를 바꿈",
+          en: "I immediately notice and change the topic",
+          ja: "すぐに気づいて話題を変える",
+          "zh-CN": "立即察觉并改变话题",
+          "zh-TW": "立即察覺並改變話題",
+          vi: "Ngay lập tức nhận ra và chuyển chủ đề",
+          id: "Segera menyadari dan mengubah topik"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "진심으로 듣고 공감해줌",
-          en: "Listen sincerely and empathize",
-          ja: "心から聞いて共感してあげる",
-          'zh-CN': "真诚地倾听并共情",
-          'zh-TW': "真誠地傾聽並共情",
-          vi: "Lắng nghe chân thành và đồng cảm",
-          id: "Mendengarkan dengan tulus dan berempati"
+          ko: "금방 눈치채고 배려함",
+          en: "I quickly notice and show consideration",
+          ja: "すぐに気づいて気遣う",
+          "zh-CN": "很快察觉并体贴",
+          "zh-TW": "很快察覺並體貼",
+          vi: "Nhanh chóng nhận ra và quan tâm",
+          id: "Cepat menyadari dan menunjukkan perhatian"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "들어주지만 해결책 위주",
-          en: "Listen but focus on solutions",
-          ja: "聞いてくれるが解決策中心",
-          'zh-CN': "倾听但以解决方案为主",
-          'zh-TW': "傾聽但以解決方案為主",
-          vi: "Lắng nghe nhưng tập trung vào giải pháp",
-          id: "Mendengarkan tapi fokus pada solusi"
+          ko: "말해줘야 알아챔",
+          en: "I need them to tell me to notice",
+          ja: "言ってもらわないと気づかない",
+          "zh-CN": "需要说出来才能察觉",
+          "zh-TW": "需要說出來才能察覺",
+          vi: "Cần họ nói ra mới nhận ra",
+          id: "Perlu mereka katakan baru menyadari"
         },
-        scores: { Type4: 8 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 3,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"그래서 어쩌라고?\" 답답함",
-          en: "Feel frustrated \"So what should I do?\"",
-          ja: "「だからどうすればいいの？」イライラする",
-          'zh-CN': "感到沮丧\"那该怎么办？\"",
-          'zh-TW': "感到沮喪「那該怎麼辦？」",
-          vi: "Cảm thấy bực bội \"Vậy thì phải làm sao?\"",
-          id: "Merasa frustrasi \"Jadi harus bagaimana?\""
+          ko: "잘 모름",
+          en: "I don't really know",
+          ja: "よくわからない",
+          "zh-CN": "不太清楚",
+          "zh-TW": "不太清楚",
+          vi: "Không biết rõ",
+          id: "Tidak begitu tahu"
         },
-        scores: { Type5: 3, Type6: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 8,
+          "Level1": 2
+        }
       }
     ]
   },
   {
     id: 9,
     question: {
-      ko: "SNS에서 슬픈 소식을 봤을 때?",
-      en: "When you see sad news on SNS?",
-      ja: "SNSで悲しいニュースを見た時？",
-      'zh-CN': "在社交媒体上看到悲伤消息时？",
-      'zh-TW': "在社交媒體上看到悲傷消息時？",
-      vi: "Khi bạn thấy tin buồn trên mạng xã hội?",
-      id: "Ketika Anda melihat berita sedih di media sosial?"
+      ko: "갈등 상황에서?",
+      en: "In conflict situations:",
+      ja: "対立状況で？",
+      "zh-CN": "在冲突情况下：",
+      "zh-TW": "在衝突情況下：",
+      vi: "Trong tình huống xung đột：",
+      id: "Dalam situasi konflik："
     },
     options: [
       {
         text: {
-          ko: "모르는 사람인데도 마음 아픔",
-          en: "Heart aches even for strangers",
-          ja: "知らない人なのに心が痛む",
-          'zh-CN': "即使是陌生人也会心痛",
-          'zh-TW': "即使是陌生人也會心痛",
-          vi: "Tim đau ngay cả với người lạ",
-          id: "Hati sakit bahkan untuk orang asing"
+          ko: "양쪽 입장이 다 이해됨",
+          en: "I understand both sides' positions",
+          ja: "両方の立場が理解できる",
+          "zh-CN": "理解双方的立场",
+          "zh-TW": "理解雙方的立場",
+          vi: "Hiểu được lập trường của cả hai bên",
+          id: "Memahami posisi kedua belah pihak"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "안타깝고 걱정됨",
-          en: "Feel sorry and worried",
-          ja: "気の毒で心配になる",
-          'zh-CN': "感到难过和担心",
-          'zh-TW': "感到難過和擔心",
-          vi: "Cảm thấy thương và lo lắng",
-          id: "Merasa kasihan dan khawatir"
+          ko: "각자의 감정을 이해하려 노력",
+          en: "I try to understand each person's emotions",
+          ja: "それぞれの感情を理解しようとする",
+          "zh-CN": "努力理解每个人的情感",
+          "zh-TW": "努力理解每個人的情感",
+          vi: "Cố gắng hiểu cảm xúc của từng người",
+          id: "Berusaha memahami emosi masing-masing"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"안됐네\" 하고 넘어감",
-          en: "Say \"That's unfortunate\" and move on",
-          ja: "「残念だね」と言って通り過ぎる",
-          'zh-CN': "说\"真不幸\"然后继续",
-          'zh-TW': "說「真不幸」然後繼續",
-          vi: "Nói \"Thật không may\" và tiếp tục",
-          id: "Berkata \"Sayang sekali\" dan melanjutkan"
+          ko: "논리적으로 누가 맞는지 판단",
+          en: "I logically judge who is right",
+          ja: "論理的に誰が正しいか判断する",
+          "zh-CN": "逻辑性地判断谁是对的",
+          "zh-TW": "邏輯性地判斷誰是對的",
+          vi: "Phán đoán một cách logic ai đúng",
+          id: "Menilai secara logis siapa yang benar"
         },
-        scores: { Type3: 3, Type4: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 8,
+          "Level3": 2,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "별 감정 안 듦",
-          en: "No particular emotion",
-          ja: "特に感情は湧かない",
-          'zh-CN': "没有特别的情绪",
-          'zh-TW': "沒有特別的情緒",
-          vi: "Không có cảm xúc đặc biệt",
-          id: "Tidak ada emosi khusus"
+          ko: "잘 이해 안 됨",
+          en: "I don't understand well",
+          ja: "よく理解できない",
+          "zh-CN": "不太理解",
+          "zh-TW": "不太理解",
+          vi: "Không hiểu rõ",
+          id: "Tidak terlalu memahami"
         },
-        scores: { Type5: 3, Type6: 8 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 2,
+          "Level1": 8
+        }
       }
     ]
   },
   {
     id: 10,
     question: {
-      ko: "누군가 실수했을 때?",
-      en: "When someone makes a mistake?",
-      ja: "誰かがミスをした時？",
-      'zh-CN': "当有人犯错时？",
-      'zh-TW': "當有人犯錯時？",
-      vi: "Khi ai đó mắc lỗi?",
-      id: "Ketika seseorang membuat kesalahan?"
+      ko: "모르는 사람의 힘든 이야기를 들었을 때?",
+      en: "When you hear a stranger's difficult story:",
+      ja: "知らない人の辛い話を聞いた時？",
+      "zh-CN": "听到陌生人的困难故事时：",
+      "zh-TW": "聽到陌生人的困難故事時：",
+      vi: "Khi nghe câu chuyện khó khăn của người lạ：",
+      id: "Ketika mendengar cerita sulit orang asing："
     },
     options: [
       {
         text: {
-          ko: "그 사람 창피함이 느껴짐",
-          en: "Feel their embarrassment",
-          ja: "その人の恥ずかしさが感じられる",
-          'zh-CN': "感受到他们的尴尬",
-          'zh-TW': "感受到他們的尷尬",
-          vi: "Cảm nhận được sự xấu hổ của họ",
-          id: "Merasakan rasa malu mereka"
+          ko: "모르는 사람인데도 마음이 아픔",
+          en: "My heart hurts even though they're a stranger",
+          ja: "知らない人なのに心が痛む",
+          "zh-CN": "虽然是陌生人但心里难受",
+          "zh-TW": "雖然是陌生人但心裡難受",
+          vi: "Dù là người lạ nhưng thấy đau lòng",
+          id: "Meskipun orang asing tapi hati sakit"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"괜찮아\" 위로해주고 싶음",
-          en: "Want to comfort them saying \"It's okay\"",
-          ja: "「大丈夫」と慰めたい",
-          'zh-CN': "想安慰他们说\"没关系\"",
-          'zh-TW': "想安慰他們說「沒關係」",
-          vi: "Muốn an ủi họ nói \"Không sao\"",
-          id: "Ingin menghibur mereka dengan berkata \"Tidak apa-apa\""
+          ko: "안타깝고 동정심 듦",
+          en: "I feel sorry and sympathetic",
+          ja: "気の毒で同情心がわく",
+          "zh-CN": "感到遗憾和同情",
+          "zh-TW": "感到遺憾和同情",
+          vi: "Thấy tội nghiệp và có lòng thương cảm",
+          id: "Merasa kasihan dan simpati"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"실수할 수도 있지\" 담담함",
-          en: "Respond calmly \"Mistakes happen\"",
-          ja: "「ミスすることもあるよね」と冷静に",
-          'zh-CN': "冷静地说\"犯错是可能的\"",
-          'zh-TW': "冷靜地說「犯錯是可能的」",
-          vi: "Phản ứng bình tĩnh \"Lỗi lầm có thể xảy ra\"",
-          id: "Bereaksi dengan tenang \"Kesalahan bisa terjadi\""
+          ko: "\"그렇구나\" 정도",
+          en: "Just think \"I see\"",
+          ja: "「そうか」程度",
+          "zh-CN": "只是觉得「原来如此」",
+          "zh-TW": "只是覺得「原來如此」",
+          vi: "Chỉ nghĩ \"Thế à\"",
+          id: "Hanya berpikir \"Begitu ya\""
         },
-        scores: { Type3: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 8,
+          "Level3": 2,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"조심하지\" 비판적",
-          en: "Be critical \"Be more careful\"",
-          ja: "「気をつけろ」と批判的",
-          'zh-CN': "批评地说\"小心点\"",
-          'zh-TW': "批評地說「小心點」",
-          vi: "Phê bình \"Cẩn thận hơn\"",
-          id: "Kritis \"Lebih hati-hati\""
+          ko: "별 감정 없음",
+          en: "No particular emotion",
+          ja: "特に感情がない",
+          "zh-CN": "没有特别的感受",
+          "zh-TW": "沒有特別的感受",
+          vi: "Không có cảm xúc gì đặc biệt",
+          id: "Tidak ada emosi khusus"
         },
-        scores: { Type4: 3, Type5: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 8,
+          "Level1": 2
+        }
       }
     ]
   },
   {
     id: 11,
     question: {
-      ko: "뉴스에서 재난 소식을 볼 때?",
-      en: "When you see disaster news on TV?",
-      ja: "ニュースで災害のニュースを見る時？",
-      'zh-CN': "在新闻中看到灾难消息时？",
-      'zh-TW': "在新聞中看到災難消息時？",
-      vi: "Khi bạn thấy tin tức thảm họa trên TV?",
-      id: "Ketika Anda melihat berita bencana di TV?"
+      ko: "동물이나 아이가 우는 소리를 들으면?",
+      en: "When you hear animals or children crying:",
+      ja: "動物や子供が泣く声を聞くと？",
+      "zh-CN": "听到动物或孩子哭泣时：",
+      "zh-TW": "聽到動物或孩子哭泣時：",
+      vi: "Khi nghe tiếng khóc của động vật hoặc trẻ em：",
+      id: "Ketika mendengar hewan atau anak menangis："
     },
     options: [
       {
         text: {
-          ko: "피해자 생각에 가슴 아픔",
-          en: "Heart aches thinking about the victims",
-          ja: "被害者のことを考えると胸が痛む",
-          'zh-CN': "想到受害者就心痛",
-          'zh-TW': "想到受害者就心痛",
-          vi: "Tim đau khi nghĩ về các nạn nhân",
-          id: "Hati sakit memikirkan para korban"
+          ko: "가슴이 찢어지고 당장 도와주고 싶음",
+          en: "My heart breaks and I want to help immediately",
+          ja: "胸が張り裂けて今すぐ助けてあげたい",
+          "zh-CN": "心都要碎了想立刻帮助",
+          "zh-TW": "心都要碎了想立刻幫助",
+          vi: "Tim như bị xé nát và muốn giúp ngay lập tức",
+          id: "Hati seperti terkoyak dan ingin membantu segera"
         },
-        scores: { Type1: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "안타깝고 도울 방법 생각",
-          en: "Feel sorry and think of ways to help",
-          ja: "気の毒で助ける方法を考える",
-          'zh-CN': "感到难过并思考帮助的方法",
-          'zh-TW': "感到難過並思考幫助的方法",
-          vi: "Cảm thấy thương và nghĩ cách giúp đỡ",
-          id: "Merasa kasihan dan memikirkan cara membantu"
+          ko: "안쓰럽고 걱정됨",
+          en: "I feel sorry and worried",
+          ja: "可哀想で心配になる",
+          "zh-CN": "感到可怜和担心",
+          "zh-TW": "感到可憐和擔心",
+          vi: "Thấy tội nghiệp và lo lắng",
+          id: "Merasa kasihan dan khawatir"
         },
-        scores: { Type2: 3 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "\"심각하네\" 인지만 함",
-          en: "Just acknowledge \"It's serious\"",
-          ja: "「深刻だね」と認識するだけ",
-          'zh-CN': "只是意识到\"很严重\"",
-          'zh-TW': "只是意識到「很嚴重」",
-          vi: "Chỉ nhận biết \"Nghiêm trọng\"",
-          id: "Hanya mengakui \"Serius\""
+          ko: "불쌍하긴 한데 특별한 감정 없음",
+          en: "They're pitiable but no special emotion",
+          ja: "可哀想だが特別な感情はない",
+          "zh-CN": "虽然可怜但没有特别感受",
+          "zh-TW": "雖然可憐但沒有特別感受",
+          vi: "Đáng thương nhưng không có cảm xúc đặc biệt",
+          id: "Menyedihkan tapi tidak ada emosi khusus"
         },
-        scores: { Type3: 3, Type4: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 3,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "정보로만 받아들임",
-          en: "Accept it only as information",
-          ja: "情報としてのみ受け入れる",
-          'zh-CN': "只作为信息接受",
-          'zh-TW': "只作為信息接受",
-          vi: "Chỉ tiếp nhận như thông tin",
-          id: "Hanya menerima sebagai informasi"
+          ko: "별로 신경 안 씀",
+          en: "I don't really care",
+          ja: "特に気にしない",
+          "zh-CN": "不太在意",
+          "zh-TW": "不太在意",
+          vi: "Không quan tâm lắm",
+          id: "Tidak terlalu peduli"
         },
-        scores: { Type5: 3, Type6: 8 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 8,
+          "Level1": 2
+        }
       }
     ]
   },
   {
     id: 12,
     question: {
-      ko: "당신이 생각하는 공감이란?",
-      en: "What do you think empathy is?",
-      ja: "あなたが考える共感とは？",
-      'zh-CN': "你认为共情是什么？",
-      'zh-TW': "你認為共情是什麼？",
-      vi: "Bạn nghĩ đồng cảm là gì?",
-      id: "Menurut Anda, empati itu apa?"
+      ko: "당신의 공감 능력에 대해 어떻게 생각하나요?",
+      en: "What do you think about your empathy ability?",
+      ja: "あなたの共感能力についてどう思いますか？",
+      "zh-CN": "你认为自己的共情能力如何？",
+      "zh-TW": "你認為自己的共情能力如何？",
+      vi: "Bạn nghĩ gì về khả năng đồng cảm của mình？",
+      id: "Apa pendapat Anda tentang kemampuan empati Anda？"
     },
     options: [
       {
         text: {
-          ko: "타인의 감정을 내 것처럼 느끼는 것",
-          en: "Feeling others' emotions as my own",
-          ja: "他人の感情を自分のことのように感じること",
-          'zh-CN': "像感受自己的情感一样感受他人的情感",
-          'zh-TW': "像感受自己的情感一樣感受他人的情感",
-          vi: "Cảm nhận cảm xúc của người khác như của chính mình",
-          id: "Merasakan emosi orang lain seperti emosi sendiri"
+          ko: "매우 높고 때로는 힘들 정도",
+          en: "Very high and sometimes difficult to handle",
+          ja: "非常に高くて時々辛いほど",
+          "zh-CN": "非常高有时甚至难以承受",
+          "zh-TW": "非常高有時甚至難以承受",
+          vi: "Rất cao và đôi khi khó chịu đựng",
+          id: "Sangat tinggi dan kadang sulit ditangani"
         },
-        scores: { Type1: 3, Type2: 3 }
+        scores: {
+          "Level6": 3,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "상대 입장에서 이해하고 위로하는 것",
-          en: "Understanding and comforting from their perspective",
-          ja: "相手の立場から理解し慰めること",
-          'zh-CN': "从对方立场理解并安慰",
-          'zh-TW': "從對方立場理解並安慰",
-          vi: "Hiểu và an ủi từ góc độ của họ",
-          id: "Memahami dan menghibur dari sudut pandang mereka"
+          ko: "높은 편이고 다른 사람을 잘 이해함",
+          en: "Quite high and I understand others well",
+          ja: "高い方で他の人をよく理解する",
+          "zh-CN": "比较高能很好地理解别人",
+          "zh-TW": "比較高能很好地理解別人",
+          vi: "Khá cao và hiểu người khác tốt",
+          id: "Cukup tinggi dan memahami orang lain dengan baik"
         },
-        scores: { Type2: 3, Type3: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 3,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "상대 감정을 인지하는 것",
-          en: "Recognizing the other person's emotions",
-          ja: "相手の感情を認識すること",
-          'zh-CN': "识别对方的情感",
-          'zh-TW': "識別對方的情感",
-          vi: "Nhận biết cảm xúc của đối phương",
-          id: "Mengenali emosi orang lain"
+          ko: "보통 수준",
+          en: "Average level",
+          ja: "普通のレベル",
+          "zh-CN": "普通水平",
+          "zh-TW": "普通水平",
+          vi: "Mức độ bình thường",
+          id: "Tingkat rata-rata"
         },
-        scores: { Type3: 3, Type4: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 8,
+          "Level3": 2,
+          "Level2": 0,
+          "Level1": 0
+        }
       },
       {
         text: {
-          ko: "논리적으로 상황을 이해하는 것",
-          en: "Understanding the situation logically",
-          ja: "論理的に状況を理解すること",
-          'zh-CN': "逻辑性地理解情况",
-          'zh-TW': "邏輯性地理解情況",
-          vi: "Hiểu tình huống một cách logic",
-          id: "Memahami situasi secara logis"
+          ko: "낮은 편이고 잘 이해 못함",
+          en: "Low and I don't understand well",
+          ja: "這裡の方でよく理解できない",
+          "zh-CN": "比较低不太理解",
+          "zh-TW": "比較低不太理解",
+          vi: "Thấp và không hiểu rõ",
+          id: "Rendah dan tidak terlalu memahami"
         },
-        scores: { Type4: 3, Type5: 2 }
+        scores: {
+          "Level6": 0,
+          "Level5": 0,
+          "Level4": 0,
+          "Level3": 0,
+          "Level2": 2,
+          "Level1": 2
+        }
       }
     ]
   }
@@ -773,564 +1110,585 @@ export const empathyQuestions: EmpathyQuestion[] = [
 
 export const empathyResults: EmpathyResult[] = [
   {
-    type: "Type1",
-    emoji: "💗",
+    type: "Level6",
     title: {
-      ko: "초공감 감성형",
-      en: "Hyper-Empathetic Emotional Type",
-      ja: "超共感感性型",
-      'zh-CN': "超共情感性型",
-      'zh-TW': "超共情感性型",
-      vi: "Kiểu cảm xúc siêu đồng cảm",
-      id: "Tipe Emosional Hiper-Empati"
+      ko: "공감 마스터",
+      en: "Empathy Master",
+      ja: "共感マスター",
+      "zh-CN": "共情大师",
+      "zh-TW": "共情大師",
+      vi: "Bậc thầy đồng cảm",
+      id: "Master Empati"
     },
     description: {
-      ko: "너무 깊이 느껴서 가끔 힘들어요\n타인의 감정을 자신의 것처럼 강하게 느낍니다. 공감 능력이 너무 높아서 다른 사람의 고통을 보면 자신이 더 힘들 때가 있습니다. 슬픈 영화를 보면 며칠간 우울하고, 친구 고민에 완전히 빠져듭니다. 감정적 경계선이 약해서 감정 소진이 쉽게 옵니다. 자신을 보호하는 법을 배워야 합니다.",
-      en: "Sometimes it's hard because I feel too deeply\nI feel others' emotions as strongly as my own. My empathy is so high that when I see others suffering, I suffer more. When I watch sad movies, I'm depressed for days, and I get completely absorbed in friends' problems. My emotional boundaries are weak, so I easily get emotionally exhausted. I need to learn how to protect myself.",
-      ja: "深く感じすぎて時々辛いです\n他人の感情を自分のことのように強く感じます。共感能力が高すぎて、他人の苦痛を見ると自分がもっと辛くなることがあります。悲しい映画を見ると数日間憂鬱になり、友達の悩みに完全に巻き込まれます。感情的な境界線が弱く、感情的な消耗が起こりやすいです。自分を守る方法を学ぶ必要があります。",
-      'zh-CN': "感受太深，有时很辛苦\n像感受自己的情感一样强烈地感受他人的情感。共情能力太高，看到别人痛苦时自己更痛苦。看悲伤电影会抑郁几天，完全陷入朋友的烦恼中。情感边界薄弱，容易情感耗竭。需要学会保护自己。",
-      'zh-TW': "感受太深，有時很辛苦\n像感受自己的情感一樣強烈地感受他人的情感。共情能力太高，看到別人痛苦時自己更痛苦。看悲傷電影會憂鬱幾天，完全陷入朋友的煩惱中。情感邊界薄弱，容易情感耗竭。需要學會保護自己。",
-      vi: "Đôi khi khó khăn vì cảm nhận quá sâu sắc\nTôi cảm nhận cảm xúc của người khác mạnh mẽ như của chính mình. Khả năng đồng cảm quá cao, khi thấy người khác đau khổ, tôi còn đau khổ hơn. Khi xem phim buồn, tôi chán nản vài ngày, và hoàn toàn bị cuốn vào vấn đề của bạn bè. Ranh giới cảm xúc yếu, dễ bị kiệt sức về mặt cảm xúc. Cần học cách bảo vệ bản thân.",
-      id: "Kadang sulit karena merasakan terlalu dalam\nSaya merasakan emosi orang lain sekuat emosi sendiri. Empati terlalu tinggi, ketika melihat orang lain menderita, saya lebih menderita. Saat menonton film sedih, saya depresi berhari-hari, dan benar-benar terlibat dalam masalah teman. Batas emosional lemah, mudah kelelahan emosional. Perlu belajar melindungi diri sendiri."
+      ko: "최고 레벨! 타인의 감정을 완벽히 이해하는 공감의 달인",
+      en: "Highest level! A master of empathy who perfectly understands others' emotions",
+      ja: "最高レベル！他人の感情を完璧に理解する共感の達人",
+      "zh-CN": "最高级别！完美理解他人情感的共情大师",
+      "zh-TW": "最高級別！完美理解他人情感的共情大師",
+      vi: "Cấp độ cao nhất! Bậc thầy đồng cảm hiểu hoàn hảo cảm xúc người khác",
+      id: "Level tertinggi! Master empati yang memahami emosi orang lain dengan sempurna"
+    },
+    longDescription: {
+      ko: "타인의 감정을 자신의 것처럼 깊이 느낍니다. 표정만 봐도 기분을 알 수 있고, 상대방의 입장을 완벽하게 이해합니다. 최고 수준의 EQ를 가졌으며, 관계에서 뛰어난 능력을 발휘합니다. 상담가, 심리학자 같은 직업에 적합합니다. 다만 과도한 공감으로 감정 소진 주의가 필요합니다.",
+      en: "You deeply feel others' emotions as if they were your own. You can tell someone's mood just by looking at their expression and perfectly understand their perspective. You have the highest level of EQ and excel in relationships. You're suitable for careers like counseling or psychology. However, you need to be careful about emotional burnout from excessive empathy.",
+      ja: "他人の感情を自分のもののように深く感じます。表情だけ見ても気分がわかり、相手の立場を完璧に理解します。最高レベルのEQを持ち、人間関係で優れた能力を発揮します。カウンセラーや心理学者のような職業に適しています。ただし、過度な共感による感情の消耗に注意が必要です。",
+      "zh-CN": "你能像感受自己的情感一样深刻感受他人的情感。仅看表情就能知道心情，完美理解对方的立场。拥有最高水平的EQ，在人际关系中表现出色。适合咨询师、心理学家等职业。但需要注意过度共情导致的情绪消耗。",
+      "zh-TW": "你能像感受自己的情感一樣深刻感受他人的情感。僅看表情就能知道心情，完美理解對方的立場。擁有最高水平的EQ，在人際關係中表現出色。適合諮詢師、心理學家等職業。但需要注意過度共情導致的情緒消耗。",
+      vi: "Bạn cảm nhận sâu sắc cảm xúc của người khác như thể đó là của chính mình. Chỉ nhìn biểu cảm cũng có thể biết tâm trạng và hiểu hoàn hảo quan điểm của đối phương. Bạn có EQ cao nhất và xuất sắc trong các mối quan hệ. Phù hợp với nghề tư vấn, tâm lý học. Tuy nhiên cần cẩn thận với việc kiệt sức cảm xúc do đồng cảm quá mức.",
+      id: "Anda merasakan emosi orang lain secara mendalam seolah-olah itu adalah milik Anda sendiri. Hanya dengan melihat ekspresi, Anda bisa mengetahui suasana hati dan memahami perspektif mereka dengan sempurna. Anda memiliki EQ tertinggi dan unggul dalam hubungan. Cocok untuk karir seperti konseling atau psikologi. Namun, Anda perlu berhati-hati dengan kelelahan emosional dari empati yang berlebihan."
     },
     pros: [
       { 
-        ko: "깊은 이해",
-        en: "Deep understanding",
-        ja: "深い理解",
-        'zh-CN': "深度理解",
-        'zh-TW': "深度理解",
-        vi: "Hiểu biết sâu sắc",
-        id: "Pemahaman mendalam"
+        ko: "완벽한 이해",
+        en: "Perfect understanding",
+        ja: "完璧な理解",
+        "zh-CN": "完美理解",
+        "zh-TW": "完美理解",
+        vi: "Hiểu biết hoàn hảo",
+        id: "Pemahaman sempurna"
       },
-      { 
-        ko: "진심 어린 위로",
-        en: "Sincere comfort",
-        ja: "心からの慰め",
-        'zh-CN': "真诚的安慰",
-        'zh-TW': "真誠的安慰",
-        vi: "An ủi chân thành",
-        id: "Penghiburan tulus"
+      {
+        ko: "깊은 유대감",
+        en: "Deep bonds",
+        ja: "深い絆",
+        "zh-CN": "深厚纽带",
+        "zh-TW": "深厚紐帶",
+        vi: "Mối liên kết sâu sắc",
+        id: "Ikatan mendalam"
       },
-      { 
-        ko: "감성 풍부",
-        en: "Rich emotions",
-        ja: "豊かな感性",
-        'zh-CN': "丰富的情感",
-        'zh-TW': "豐富的情感",
-        vi: "Cảm xúc phong phú",
-        id: "Emosi yang kaya"
+      {
+        ko: "뛰어난 관계 능력",
+        en: "Excellent relationship skills",
+        ja: "優れた人間関係能力",
+        "zh-CN": "出色的人际关系能力",
+        "zh-TW": "出色的人際關係能力",
+        vi: "Kỹ năng quan hệ xuất sắc",
+        id: "Keterampilan hubungan yang luar biasa"
       }
     ],
     cons: [
       { 
         ko: "감정 소진",
-        en: "Emotional exhaustion",
+        en: "Emotional burnout",
         ja: "感情の消耗",
-        'zh-CN': "情感耗竭",
-        'zh-TW': "情感耗竭",
+        "zh-CN": "情绪消耗",
+        "zh-TW": "情緒消耗",
         vi: "Kiệt sức cảm xúc",
         id: "Kelelahan emosional"
       },
       { 
         ko: "경계 부족",
         en: "Lack of boundaries",
-        ja: "境界線の不足",
-        'zh-CN': "缺乏边界",
-        'zh-TW': "缺乏邊界",
+        ja: "境界の欠如",
+        "zh-CN": "缺乏边界",
+        "zh-TW": "缺乏邊界",
         vi: "Thiếu ranh giới",
         id: "Kurang batasan"
-      },
-      { 
-        ko: "우울 위험",
-        en: "Risk of depression",
-        ja: "うつ病のリスク",
-        'zh-CN': "抑郁风险",
-        'zh-TW': "抑鬱風險",
-        vi: "Nguy cơ trầm cảm",
-        id: "Risiko depresi"
       }
     ],
     advice: {
-      ko: "공감은 좋지만 당신도 중요해요. 타인의 감정과 내 감정을 분리하는 연습이 필요합니다.",
-      en: "Empathy is good, but you're important too. You need to practice separating others' emotions from your own.",
-      ja: "共感は良いことですが、あなたも大切です。他人の感情と自分の感情を分離する練習が必要です。",
-      'zh-CN': "共情很好，但你自己也很重要。需要练习将他人情感与自己的情感分离。",
-      'zh-TW': "共情很好，但你自己也很重要。需要練習將他人情感與自己的情感分離。",
-      vi: "Đồng cảm là tốt, nhưng bạn cũng quan trọng. Cần luyện tập tách biệt cảm xúc của người khác với cảm xúc của mình.",
-      id: "Empati itu baik, tapi Anda juga penting. Perlu berlatih memisahkan emosi orang lain dengan emosi sendiri."
+      ko: "타인도 중요하지만 당신 자신도 보호하세요. 경계선 설정이 필요합니다.",
+      en: "Others are important, but you also need to protect yourself. Setting boundaries is necessary.",
+      ja: "他人も大切ですが、あなた自身も守ってください。境界線の設定が必要です。",
+      "zh-CN": "别人很重要，但你也要保护自己。需要设定边界。",
+      "zh-TW": "別人很重要，但你也要保護自己。需要設定邊界。",
+      vi: "Người khác cũng quan trọng, nhưng bạn cũng cần bảo vệ chính mình. Cần thiết lập ranh giới.",
+      id: "Orang lain penting, tetapi Anda juga perlu melindungi diri sendiri. Menetapkan batasan adalah hal yang perlu."
     },
-    empathyScore: {
-      ko: "★★★★★ (5/5) 너무 높음",
-      en: "★★★★★ (5/5) Too High",
-      ja: "★★★★★ (5/5) 高すぎる",
-      'zh-CN': "★★★★★ (5/5) 过高",
-      'zh-TW': "★★★★★ (5/5) 過高",
-      vi: "★★★★★ (5/5) Quá cao",
-      id: "★★★★★ (5/5) Terlalu Tinggi"
+    recommendedJobs: {
+      ko: "심리상담사, 사회복지사, 교사, 의료인",
+      en: "Psychological counselor, social worker, teacher, medical professional",
+      ja: "心理カウンセラー、社会福祉士、教師、医療従事者",
+      "zh-CN": "心理咨询师、社会工作者、教师、医疗人员",
+      "zh-TW": "心理諮詢師、社會工作者、教師、醫療人員",
+      vi: "Tư vấn tâm lý, nhân viên xã hội, giáo viên, nhân viên y tế",
+      id: "Konselor psikologi, pekerja sosial, guru, profesional medis"
     },
     compatibility: {
-      best: ["Type2"],
-      good: ["Type3"],
-      careful: ["Type5", "Type6"],
-      difficult: []
-    }
+      good: ["Level5", "Level4"],
+      careful: ["Level2", "Level1"]
+    },
+    emoji: "💗",
+    level: {
+      ko: "★★★★★★ (6/6) 마스터",
+      en: "★★★★★★ (6/6) Master",
+      ja: "★★★★★★ (6/6) マスター",
+      "zh-CN": "★★★★★★ (6/6) 大师",
+      "zh-TW": "★★★★★★ (6/6) 大師",
+      vi: "★★★★★★ (6/6) Bậc thầy",
+      id: "★★★★★★ (6/6) Master"
+    },
+    maxScore: 36
   },
   {
-    type: "Type2",
-    emoji: "🌸",
+    type: "Level5",
     title: {
       ko: "높은 공감형",
       en: "High Empathy Type",
       ja: "高い共感型",
-      'zh-CN': "高共情型",
-      'zh-TW': "高共情型",
+      "zh-CN": "高共情型",
+      "zh-TW": "高共情型",
       vi: "Kiểu đồng cảm cao",
       id: "Tipe Empati Tinggi"
     },
     description: {
-      ko: "당신 마음 잘 알아요! 따뜻한 위로자\n공감 능력이 뛰어나면서도 균형잡힌 이상적인 타입입니다. 타인의 감정을 잘 이해하고 적절히 위로할 줄 압니다. 감정에 휩쓸리지 않으면서도 진심으로 공감합니다. 좋은 친구, 좋은 연인, 좋은 상담자가 될 수 있는 능력이 있습니다. 가장 건강한 공감 수준입니다.",
-      en: "I understand your feelings well! A warm comforter\nAn ideal type with excellent empathy while maintaining balance. I understand others' emotions well and know how to comfort them appropriately. I empathize sincerely without being swept away by emotions. I have the ability to be a good friend, lover, and counselor. This is the healthiest level of empathy.",
-      ja: "あなたの気持ちがよく分かります！温かい慰め手\n優れた共感能力を持ちながらもバランスの取れた理想的なタイプです。他人の感情をよく理解し、適切に慰めることができます。感情に流されずに心から共感します。良い友人、恋人、カウンセラーになれる能力があります。最も健康的な共感レベルです。",
-      'zh-CN': "我很了解你的心情！温暖的安慰者\n拥有出色共情能力且平衡的理想类型。善于理解他人情感并适当安慰。不被情感冲昏头脑，真心共情。具备成为好朋友、恋人、咨询师的能力。这是最健康的共情水平。",
-      'zh-TW': "我很了解你的心情！溫暖的安慰者\n擁有出色共情能力且平衡的理想類型。善於理解他人情感並適當安慰。不被情感沖昏頭腦，真心共情。具備成為好朋友、戀人、諮詢師的能力。這是最健康的共情水平。",
-      vi: "Tôi hiểu rõ cảm xúc của bạn! Người an ủi ấm áp\nLà kiểu lý tưởng với khả năng đồng cảm xuất sắc nhưng vẫn cân bằng. Tôi hiểu rõ cảm xúc của người khác và biết cách an ủi phù hợp. Tôi đồng cảm chân thành mà không bị cuốn theo cảm xúc. Có khả năng trở thành bạn tốt, người yêu, và cố vấn. Đây là mức độ đồng cảm lành mạnh nhất.",
-      id: "Saya memahami perasaan Anda dengan baik! Penghibur yang hangat\nTipe ideal dengan kemampuan empati yang luar biasa sambil tetap seimbang. Saya memahami emosi orang lain dengan baik dan tahu cara menghibur mereka dengan tepat. Saya berempati dengan tulus tanpa terbawa emosi. Memiliki kemampuan menjadi teman baik, kekasih, dan konselor. Ini adalah tingkat empati yang paling sehat."
+      ko: "전문가 수준! 뛰어난 감성 지능의 소유자",
+      en: "Expert level! Owner of excellent emotional intelligence",
+      ja: "専門家レベル！優れた感情知能の所有者",
+      "zh-CN": "专家水平！拥有出色情感智能",
+      "zh-TW": "專家水平！擁有出色情感智能",
+      vi: "Cấp độ chuyên gia! Sở hữu trí tuệ cảm xúc xuất sắc",
+      id: "Level ahli! Pemilik kecerdasan emosional yang luar biasa"
+    },
+    longDescription: {
+      ko: "공감 능력이 매우 뛰어납니다. 타인의 감정을 잘 이해하고 적절히 반응할 줄 압니다. 관계에서 신뢰받고 사람들이 편안해합니다. 높은 EQ로 리더십도 뛰어나며, 갈등 해결 능력도 탁월합니다. 가장 이상적인 공감 수준입니다.",
+      en: "Your empathy ability is very excellent. You understand others' emotions well and know how to respond appropriately. You are trusted in relationships and people feel comfortable around you. With high EQ, you also have excellent leadership and outstanding conflict resolution abilities. This is the most ideal empathy level.",
+      ja: "共感能力が非常に優れています。他人の感情をよく理解し、適切に反応する方法を知っています。人間関係で信頼され、人々が快適に感じます。高いEQでリーダーシップも優れており、対立解決能力も卓越しています。最も理想的な共感レベルです。",
+      "zh-CN": "你的共情能力非常出色。你很好地理解他人的情感并知道如何适当回应。在人际关系中受到信任，人们在你身边感到舒适。凭借高EQ，你还有出色的领导力和卓越的冲突解决能力。这是最理想的共情水平。",
+      "zh-TW": "你的共情能力非常出色。你很好地理解他人的情感並知道如何適當回應。在人際關係中受到信任，人們在你身邊感到舒適。憑藉高EQ，你還有出色的領導力和卓越的衝突解決能力。這是最理想的共情水平。",
+      vi: "Khả năng đồng cảm của bạn rất xuất sắc. Bạn hiểu rõ cảm xúc của người khác và biết cách phản ứng phù hợp. Bạn được tin tưởng trong các mối quan hệ và mọi người cảm thấy thoải mái khi ở bên bạn. Với EQ cao, bạn cũng có khả năng lãnh đạo xuất sắc và khả năng giải quyết xung đột tuyệt vời. Đây là mức độ đồng cảm lý tưởng nhất.",
+      id: "Kemampuan empati Anda sangat luar biasa. Anda memahami emosi orang lain dengan baik dan tahu cara merespons dengan tepat. Anda dipercaya dalam hubungan dan orang-orang merasa nyaman di sekitar Anda. Dengan EQ tinggi, Anda juga memiliki kepemimpinan yang luar biasa dan kemampuan resolusi konflik yang luar biasa. Ini adalah level empati yang paling ideal."
     },
     pros: [
       { 
-        ko: "이해심",
-        en: "Understanding",
-        ja: "理解力",
-        'zh-CN': "理解力",
-        'zh-TW': "理解力",
-        vi: "Khả năng hiểu biết",
-        id: "Kemampuan memahami"
+        ko: "뛰어난 이해력",
+        en: "Excellent understanding",
+        ja: "優れた理解力",
+        "zh-CN": "出色的理解力",
+        "zh-TW": "出色的理解力",
+        vi: "Khả năng hiểu biết xuất sắc",
+        id: "Pemahaman luar biasa"
       },
-      { 
-        ko: "위로 능력",
-        en: "Comforting ability",
-        ja: "慰めの能力",
-        'zh-CN': "安慰能力",
-        'zh-TW': "安慰能力",
-        vi: "Khả năng an ủi",
-        id: "Kemampuan menghibur"
-      },
-      { 
-        ko: "균형감",
-        en: "Balance",
-        ja: "バランス感覚",
-        'zh-CN': "平衡感",
-        'zh-TW': "平衡感",
-        vi: "Cảm giác cân bằng",
-        id: "Rasa keseimbangan"
+      {
+        ko: "좋은 관계",
+        en: "Good relationships",
+        ja: "良い関係",
+        "zh-CN": "良好的关系",
+        "zh-TW": "良好的關係",
+        vi: "Mối quan hệ tốt",
+        id: "Hubungan baik"
       },
       { 
         ko: "신뢰",
         en: "Trust",
         ja: "信頼",
-        'zh-CN': "信任",
-        'zh-TW': "信任",
-        vi: "Niềm tin",
+        "zh-CN": "信任",
+        "zh-TW": "信任",
+        vi: "Sự tin tưởng",
         id: "Kepercayaan"
+      },
+      {
+        ko: "리더십",
+        en: "Leadership",
+        ja: "リーダーシップ",
+        "zh-CN": "领导力",
+        "zh-TW": "領導力",
+        vi: "Khả năng lãnh đạo",
+        id: "Kepemimpinan"
       }
     ],
     cons: [
       { 
-        ko: "가끔 피곤할 수 있음",
-        en: "Sometimes can be tired",
-        ja: "時々疲れることがある",
-        'zh-CN': "有时会感到疲惫",
-        'zh-TW': "有時會感到疲憊",
-        vi: "Đôi khi có thể mệt mỏi",
-        id: "Kadang bisa lelah"
+        ko: "거의 없음",
+        en: "Almost none",
+        ja: "ほとんどない",
+        "zh-CN": "几乎没有",
+        "zh-TW": "幾乎沒有",
+        vi: "Hầu như không có",
+        id: "Hampir không có"
       }
     ],
     advice: {
-      ko: "완벽해요! 지금처럼 타인을 이해하되 자신도 돌보는 당신이 최고입니다.",
-      en: "Perfect! You're the best at understanding others while taking care of yourself.",
-      ja: "完璧です！他人を理解しながら自分も大切にするあなたが最高です。",
-      'zh-CN': "完美！既能理解他人又能照顾自己的你是最棒的。",
-      'zh-TW': "完美！既能理解他人又能照顧自己的你是最棒的。",
-      vi: "Hoàn hảo! Bạn là người tốt nhất khi hiểu người khác mà vẫn chăm sóc bản thân.",
-      id: "Sempurna! Anda yang terbaik dalam memahami orang lain sambil merawat diri sendiri."
+      ko: "완벽한 수준이에요! 지금의 공감 능력을 잘 유지하세요.",
+      en: "Perfect level! Keep maintaining your current empathy ability well.",
+      ja: "完璧なレベルです！今の共感能力をよく維持してください。",
+      "zh-CN": "完美水平！好好保持你现在的共情能力。",
+      "zh-TW": "完美水平！好好保持你現在的共情能力。",
+      vi: "Cấp độ hoàn hảo! Hãy duy trì tốt khả năng đồng cảm hiện tại của bạn.",
+      id: "Level sempurna! Pertahankan kemampuan empati Anda saat ini dengan baik."
     },
-    empathyScore: {
-      ko: "★★★★☆ (4/5) 이상적",
-      en: "★★★★☆ (4/5) Ideal",
-      ja: "★★★★☆ (4/5) 理想的",
-      'zh-CN': "★★★★☆ (4/5) 理想",
-      'zh-TW': "★★★★☆ (4/5) 理想",
-      vi: "★★★★☆ (4/5) Lý tưởng",
-      id: "★★★★☆ (4/5) Ideal"
+    recommendedJobs: {
+      ko: "관리자, 교사, 상담가, HR",
+      en: "Manager, teacher, counselor, HR",
+      ja: "管理者、教師、カウンセラー、HR",
+      "zh-CN": "管理者，教师，咨询师，HR",
+      "zh-TW": "管理者，教師，諮詢師，HR",
+      vi: "Quản lý, giáo viên, tư vấn viên, HR",
+      id: "Manajer, guru, konselor, HR"
     },
     compatibility: {
-      best: ["Type2"],
-      good: ["Type1", "Type3"],
-      careful: ["Type6"],
-      difficult: []
-    }
+      good: ["Level6", "Level4"],
+      careful: ["Level2", "Level1"]
+    },
+    emoji: "💙",
+    level: {
+      ko: "★★★★★☆ (5/6) 전문가",
+      en: "★★★★★☆ (5/6) Expert",
+      ja: "★★★★★☆ (5/6) エキスパート",
+      "zh-CN": "★★★★★☆ (5/6) 专家",
+      "zh-TW": "★★★★★☆ (5/6) 專家",
+      vi: "★★★★★☆ (5/6) Chuyên gia",
+      id: "★★★★★☆ (5/6) Ahli"
+    },
+    maxScore: 36
   },
   {
-    type: "Type3",
-    emoji: "⚖️",
+    type: "Level4",
     title: {
-      ko: "적당한 균형형",
-      en: "Balanced Empathy Type",
-      ja: "適度なバランス型",
-      'zh-CN': "适度平衡型",
-      'zh-TW': "適度平衡型",
-      vi: "Kiểu cân bằng vừa phải",
-      id: "Tipe Keseimbangan Sedang"
+      ko: "좋은 공감형",
+      en: "Good Empathy Type",
+      ja: "良い共感型",
+      "zh-CN": "良好共情型",
+      "zh-TW": "良好共情型",
+      vi: "Kiểu đồng cảm tốt",
+      id: "Tipe Empati Baik"
     },
     description: {
-      ko: "이해는 하지만 거리는 유지해요\n보통 수준의 공감 능력을 가지고 있습니다. 타인의 감정을 인지하고 이해하지만 깊이 빠져들지 않습니다. 적절한 거리를 유지하며 객관성을 잃지 않습니다. 공감과 이성의 균형이 있어 실용적입니다. 다만 가까운 사람은 때때로 차갑게 느낄 수 있습니다.",
-      en: "I understand but keep my distance\nI have an average level of empathy. I recognize and understand others' emotions but don't get deeply involved. I maintain appropriate distance and don't lose objectivity. There's a balance between empathy and reason, making me practical. However, close people may sometimes feel I'm cold.",
-      ja: "理解はしますが距離を保ちます\n普通レベルの共感能力を持っています。他人の感情を認識し理解しますが、深く巻き込まれません。適切な距離を保ち、客観性を失いません。共感と理性のバランスがあり、実用的です。ただし、近い人は時々冷たく感じるかもしれません。",
-      'zh-CN': "理解但保持距离\n拥有普通水平的共情能力。能识别和理解他人情感，但不会深陷其中。保持适当距离，不失客观性。共情与理性平衡，很实用。不过亲近的人有时可能觉得冷漠。",
-      'zh-TW': "理解但保持距離\n擁有普通水平的共情能力。能識別和理解他人情感，但不會深陷其中。保持適當距離，不失客觀性。共情與理性平衡，很實用。不過親近的人有時可能覺得冷漠。",
-      vi: "Tôi hiểu nhưng giữ khoảng cách\nTôi có khả năng đồng cảm ở mức bình thường. Tôi nhận biết và hiểu cảm xúc của người khác nhưng không bị cuốn sâu vào. Tôi duy trì khoảng cách phù hợp và không mất tính khách quan. Có sự cân bằng giữa đồng cảm và lý trí, rất thực tế. Tuy nhiên, người thân có thể đôi khi cảm thấy tôi lạnh lùng.",
-      id: "Saya memahami tapi menjaga jarak\nSaya memiliki kemampuan empati pada tingkat normal. Saya mengenali dan memahami emosi orang lain tapi tidak terlibat dalam. Saya menjaga jarak yang tepat dan tidak kehilangan objektivitas. Ada keseimbangan antara empati dan nalar, sangat praktis. Namun, orang dekat mungkin kadang merasa saya dingin."
+      ko: "평균 이상! 균형잡힌 공감 능력",
+      en: "Above average! Balanced empathy ability",
+      ja: "平均以上！バランスの取れた共感能力",
+      "zh-CN": "高于平均！平衡的共情能力",
+      "zh-TW": "高於平均！平衡的共情能力",
+      vi: "Trên mức trung bình! Khả năng đồng cảm cân bằng",
+      id: "Di atas rata-rata! Kemampuan empati yang seimbang"
+    },
+    longDescription: {
+      ko: "평균 이상의 공감 능력을 가지고 있습니다. 대부분의 상황에서 타인을 이해하고 배려할 줄 압니다. 관계가 원만하고 갈등도 적습니다. 조금만 더 노력하면 전문가 레벨에 도달할 수 있습니다.",
+      en: "You have above-average empathy ability. You understand and care for others in most situations. Your relationships are harmonious and conflicts are few. With just a little more effort, you can reach expert level.",
+      ja: "平均以上の共感能力を持っています。ほとんどの状況で他人を理解し、気遣うことができます。関係は円満で対立も少ないです。もう少し努力すれば専門家レベルに到達できます。",
+      "zh-CN": "你拥有高于平均的共情能力。在大多数情况下你都能理解并关心他人。人际关系和谐，冲突很少。只要再努力一点，你就能达到专家水平。",
+      "zh-TW": "你擁有高於平均的共情能力。在大多數情況下你都能理解並關心他人。人際關係和諧，衝突很少。只要再努力一點，你就能達到專家水平。",
+      vi: "Bạn có khả năng đồng cảm trên mức trung bình. Trong hầu hết các tình huống, bạn hiểu và quan tâm đến người khác. Các mối quan hệ của bạn hài hòa và ít xung đột. Chỉ cần nỗ lực thêm một chút, bạn có thể đạt đến cấp độ chuyên gia.",
+      id: "Anda memiliki kemampuan empati di atas rata-rata. Dalam sebagian besar situasi, Anda memahami dan peduli pada orang lain. Hubungan Anda harmonis dan konflik sedikit. Dengan sedikit usaha lagi, Anda bisa mencapai level ahli."
     },
     pros: [
       { 
-        ko: "균형감",
-        en: "Balance",
-        ja: "バランス感覚",
-        'zh-CN': "平衡感",
-        'zh-TW': "平衡感",
-        vi: "Cảm giác cân bằng",
-        id: "Rasa keseimbangan"
+        ko: "좋은 이해력",
+        en: "Good understanding",
+        ja: "良い理解力",
+        "zh-CN": "良好的理解力",
+        "zh-TW": "良好的理解力",
+        vi: "Khả năng hiểu biết tốt",
+        id: "Pemahaman yang baik"
       },
-      { 
-        ko: "객관성",
-        en: "Objectivity",
-        ja: "客観性",
-        'zh-CN': "客观性",
-        'zh-TW': "客觀性",
-        vi: "Tính khách quan",
-        id: "Objektivitas"
+      {
+        ko: "원만한 관계",
+        en: "Harmonious relationships",
+        ja: "円満な関係",
+        "zh-CN": "和谐的关系",
+        "zh-TW": "和諧的關係",
+        vi: "Mối quan hệ hài hòa",
+        id: "Hubungan harmonis"
       },
-      { 
-        ko: "냉정함",
-        en: "Calmness",
-        ja: "冷静さ",
-        'zh-CN': "冷静",
-        'zh-TW': "冷靜",
-        vi: "Sự bình tĩnh",
-        id: "Ket tenangan"
-      },
-      { 
-        ko: "실용성",
-        en: "Practicality",
-        ja: "実用性",
-        'zh-CN': "实用性",
-        'zh-TW': "實用性",
-        vi: "Tính thực tế",
-        id: "Kepraktisan"
+      {
+        ko: "배려심",
+        en: "Consideration",
+        ja: "思いやり",
+        "zh-CN": "体贴",
+        "zh-TW": "體貼",
+        vi: "Sự quan tâm",
+        id: "Pertimbangan"
       }
     ],
     cons: [
       { 
-        ko: "가끔 냉정해 보임",
-        en: "Sometimes seems cold",
-        ja: "時々冷たく見える",
-        'zh-CN': "有时显得冷漠",
-        'zh-TW': "有時顯得冷漠",
-        vi: "Đôi khi có vẻ lạnh lùng",
-        id: "Kadang terlihat dingin"
-      },
-      { 
-        ko: "깊은 교감 어려움",
-        en: "Difficulty with deep connection",
-        ja: "深い共感が困難",
-        'zh-CN': "深度共情困难",
-        'zh-TW': "深度共情困難",
-        vi: "Khó khăn với sự đồng cảm sâu sắc",
-        id: "Kesulitan dengan empati mendalam"
+        ko: "때때로 둔감할 수 있음",
+        en: "Sometimes can be insensitive",
+        ja: "時々鈍感になることがある",
+        "zh-CN": "有时可能比较迟钝",
+        "zh-TW": "有時可能比較遲鈍",
+        vi: "Đôi khi có thể thiếu nhạy cảm",
+        id: "Kadang bisa tidak sensitif"
       }
     ],
     advice: {
-      ko: "균형은 좋지만 가까운 사람에게는 좀 더 따뜻하게 반응해보세요!",
-      en: "Balance is good, but try to respond more warmly to close people!",
-      ja: "バランスは良いですが、身近な人にはもう少し温かく反応してみてください！",
-      'zh-CN': "平衡很好，但对亲近的人要更温暖地回应！",
-      'zh-TW': "平衡很好，但對親近的人要更溫暖地回應！",
-      vi: "Cân bằng là tốt, nhưng hãy phản ứng ấm áp hơn với những người thân thiết!",
-      id: "Keseimbangan itu baik, tapi coba respons lebih hangat kepada orang dekat!"
+      ko: "조금만 더 타인의 감정에 집중하면 완벽해질 거예요!",
+      en: "Just focus a little more on others' emotions and you'll be perfect!",
+      ja: "もう少し他人の感情に集中すれば完璧になります！",
+      "zh-CN": "只要再多关注一点他人的情感，你就会完美！",
+      "zh-TW": "只要再多關注一點他人的情感，你就會完美！",
+      vi: "Chỉ cần tập trung thêm một chút vào cảm xúc của người khác, bạn sẽ hoàn hảo!",
+      id: "Cukup fokus sedikit lebih pada emosi orang lain dan Anda akan sempurna!"
     },
-    empathyScore: {
-      ko: "★★★☆☆ (3/5) 보통",
-      en: "★★★☆☆ (3/5) Average",
-      ja: "★★★☆☆ (3/5) 普通",
-      'zh-CN': "★★★☆☆ (3/5) 普通",
-      'zh-TW': "★★★☆☆ (3/5) 普通",
-      vi: "★★★☆☆ (3/5) Bình thường",
-      id: "★★★☆☆ (3/5) Rata-rata"
+    recommendedJobs: {
+      ko: "대부분의 직업에 적합",
+      en: "Suitable for most careers",
+      ja: "ほとんどの職業に適している",
+      "zh-CN": "适合大多数职业",
+      "zh-TW": "適合大多數職業",
+      vi: "Phù hợp với hầu hết các nghề nghiệp",
+      id: "Cocok untuk sebagian besar karir"
     },
     compatibility: {
-      best: ["Type3", "Type4"],
-      good: ["Type2", "Type5"],
-      careful: ["Type1"],
-      difficult: []
-    }
+      good: ["Level5", "Level3"],
+      careful: ["Level2", "Level1"]
+    },
+    emoji: "💚",
+    level: {
+      ko: "★★★★☆☆ (4/6) 우수",
+      en: "★★★★☆☆ (4/6) Excellent",
+      ja: "★★★★☆☆ (4/6) 優秀",
+      "zh-CN": "★★★★☆☆ (4/6) 优秀",
+      "zh-TW": "★★★★☆☆ (4/6) 優秀",
+      vi: "★★★★☆☆ (4/6) Xuất sắc",
+      id: "★★★★☆☆ (4/6) Luar biasa"
+    },
+    maxScore: 40
   },
   {
-    type: "Type4",
-    emoji: "🧠",
+    type: "Level3",
     title: {
-      ko: "이성적 공감형",
-      en: "Rational Empathy Type",
-      ja: "理性的共感型",
-      'zh-CN': "理性共情型",
-      'zh-TW': "理性共情型",
-      vi: "Kiểu đồng cảm lý trí",
-      id: "Tipe Empati Rasional"
+      ko: "보통 공감형",
+      en: "Average Empathy Type",
+      ja: "普通の共感型",
+      "zh-CN": "普通共情型",
+      "zh-TW": "普通共情型",
+      vi: "Kiểu đồng cảm bình thường",
+      id: "Tipe Empati Rata-rata"
     },
     description: {
-      ko: "머리로는 이해, 하지만 감정은 별개\n인지적 공감은 있지만 감정적 공감은 약한 타입입니다. 상황을 논리적으로 이해하고 문제 해결에 집중합니다. \"왜 그런 감정인지\"는 알지만 \"같이 느끼지\"는 못합니다. 상담보다는 조언과 해결책을 제시합니다. 실용적이지만 감정적 교감은 부족합니다.",
-      en: "I understand with my head, but emotions are separate\nI have cognitive empathy but weak emotional empathy. I understand situations logically and focus on problem-solving. I know \"why they feel that way\" but can't \"feel it together.\" I provide advice and solutions rather than counseling. I'm practical but lack emotional connection.",
-      ja: "頭では理解するが、感情は別物\n認知的共感はありますが、感情的共感は弱いタイプです。状況を論理的に理解し、問題解決に集中します。「なぜそのような感情なのか」は分かりますが「一緒に感じる」ことはできません。カウンセリングよりもアドバイスと解決策を提供します。実用的ですが、感情的交流は不足しています。",
-      'zh-CN': "头脑理解，但情感是分开的\n有认知共情但情感共情较弱。逻辑理解情况，专注解决问题。知道\"为什么有那种情感\"但无法\"一起感受\"。提供建议和解决方案而非咨询。实用但缺乏情感交流。",
-      'zh-TW': "頭腦理解，但情感是分開的\n有認知共情但情感共情較弱。邏輯理解情況，專注解決問題。知道「為什麼有那種情感」但無法「一起感受」。提供建議和解決方案而非諮詢。實用但缺乏情感交流。",
-      vi: "Tôi hiểu bằng đầu óc, nhưng cảm xúc là riêng biệt\nTôi có đồng cảm nhận thức nhưng đồng cảm cảm xúc yếu. Tôi hiểu tình huống một cách logic và tập trung vào giải quyết vấn đề. Tôi biết \"tại sao họ cảm thấy như vậy\" nhưng không thể \"cảm nhận cùng nhau.\" Tôi đưa ra lời khuyên và giải pháp thay vì tư vấn. Tôi thực tế nhưng thiếu kết nối cảm xúc.",
-      id: "Saya memahami dengan kepala, tapi emosi terpisah\nSaya memiliki empati kognitif tapi empati emosional lemah. Saya memahami situasi secara logis dan fokus pada pemecahan masalah. Saya tahu \"mengapa mereka merasa seperti itu\" tapi tidak bisa \"merasakan bersama.\" Saya memberikan saran dan solusi daripada konseling. Saya praktis tapi kurang koneksi emosional."
+      ko: "평균 수준! 기본적인 공감 능력",
+      en: "Average level! Basic empathy ability",
+      ja: "平均レベル！基本的な共感能力",
+      "zh-CN": "普通水平！基本的共情能力",
+      "zh-TW": "普通水平！基本的共情能力",
+      vi: "Mức độ bình thường! Khả năng đồng cảm cơ bản",
+      id: "Level rata-rata! Kemampuan empati dasar"
+    },
+    longDescription: {
+      ko: "보통 수준의 공감 능력을 가지고 있습니다. 명확한 상황에서는 이해하지만, 미묘한 감정은 놓칠 수 있습니다. 일상적인 관계는 무난하지만, 깊은 유대감 형성은 어려울 수 있습니다. 의식적으로 노력하면 향상 가능합니다.",
+      en: "You have average-level empathy ability. You understand in clear situations, but may miss subtle emotions. Daily relationships are fine, but forming deep bonds may be difficult. You can improve with conscious effort.",
+      ja: "平均レベルの共感能力を持っています。明確な状況では理解しますが、微妙な感情は見落とす可能性があります。日常的な関係は問題ありませんが、深い絆の形成は困難かもしれません。意識的に努力すれば向上できます。",
+      "zh-CN": "你拥有普通水平的共情能力。在明确的情况下你能理解，但可能会错过微妙的情感。日常关系没问题，但形成深厚纽带可能比较困难。通过有意识的努力可以改善。",
+      "zh-TW": "你擁有普通水平的共情能力。在明確的情況下你能理解，但可能會錯過微妙的情感。日常關係沒問題，但形成深厚紐帶可能比較困難。通過有意識的努力可以改善。",
+      vi: "Bạn có khả năng đồng cảm ở mức bình thường. Trong những tình huống rõ ràng, bạn hiểu được, nhưng có thể bỏ lỡ những cảm xúc tinh tế. Các mối quan hệ hàng ngày ổn, nhưng việc hình thành mối liên kết sâu sắc có thể khó khăn. Bạn có thể cải thiện bằng nỗ lực có ý thức.",
+      id: "Anda memiliki kemampuan empati pada tingkat rata-rata. Dalam situasi yang jelas, Anda memahami, tetapi mungkin melewatkan emosi yang halus. Hubungan sehari-hari baik-baik saja, tetapi membentuk ikatan mendalam mungkin sulit. Anda bisa meningkatkan dengan usaha sadar."
     },
     pros: [
       { 
-        ko: "논리적",
-        en: "Logical",
-        ja: "論理的",
-        'zh-CN': "逻辑性",
-        'zh-TW': "邏輯性",
-        vi: "Logic",
-        id: "Logis"
-      },
-      { 
-        ko: "해결 능력",
-        en: "Problem-solving ability",
-        ja: "解決能力",
-        'zh-CN': "解决问题的能力",
-        'zh-TW': "解決問題的能力",
-        vi: "Khả năng giải quyết vấn đề",
-        id: "Kemampuan memecahkan masalah"
-      },
-      { 
-        ko: "객관적",
-        en: "Objective",
-        ja: "客観的",
-        'zh-CN': "客观",
-        'zh-TW': "客觀",
-        vi: "Khách quan",
-        id: "Objektif"
-      },
-      { 
-        ko: "이성적",
-        en: "Rational",
-        ja: "理性的",
-        'zh-CN': "理性",
-        'zh-TW': "理性",
-        vi: "Lý trí",
-        id: "Rasional"
+        ko: "기본적인 사회성",
+        en: "Basic social skills",
+        ja: "基本的な社会性",
+        "zh-CN": "基本的社会技能",
+        "zh-TW": "基本的社會技能",
+        vi: "Kỹ năng xã hội cơ bản",
+        id: "Keterampilan sosial dasar"
       }
     ],
     cons: [
       { 
-        ko: "감정 교감 부족",
-        en: "Lack of emotional connection",
-        ja: "感情的な共感の不足",
-        'zh-CN': "缺乏情感共鸣",
-        'zh-TW': "缺乏情感共鳴",
-        vi: "Thiếu kết nối cảm xúc",
-        id: "Kurang koneksi emosional"
+        ko: "깊은 이해 부족",
+        en: "Lack of deep understanding",
+        ja: "深い理解の欠如",
+        "zh-CN": "缺乏深度理解",
+        "zh-TW": "缺乏深度理解",
+        vi: "Thiếu hiểu biết sâu sắc",
+        id: "Kurang pemahaman mendalam"
       },
-      { 
-        ko: "차갑게 보임",
-        en: "Seems cold",
-        ja: "冷たく見える",
-        'zh-CN': "显得冷漠",
-        'zh-TW': "顯得冷漠",
-        vi: "Có vẻ lạnh lùng",
-        id: "Terlihat dingin"
+      {
+        ko: "둔감함",
+        en: "Insensitivity",
+        ja: "鈍感さ",
+        "zh-CN": "迟钝",
+        "zh-TW": "遲鈍",
+        vi: "Thiếu nhạy cảm",
+        id: "Ketidakpekaan"
       }
     ],
     advice: {
-      ko: "때로는 해결책보다 \"그랬구나, 힘들었겠다\"만 해줘도 충분해요!",
-      en: "Sometimes just saying \"I see, that must have been hard\" is enough instead of solutions!",
-      ja: "時には解決策よりも「そうだったんだ、大変だったね」と言うだけで十分です！",
-      'zh-CN': "有时说\"原来如此，一定很辛苦\"比解决方案更有效！",
-      'zh-TW': "有時說「原來如此，一定很辛苦」比解決方案更有效！",
-      vi: "Đôi khi chỉ nói \"Vậy à, chắc khó khăn lắm\" cũng đủ thay vì đưa ra giải pháp!",
-      id: "Kadang hanya mengatakan \"Begitu ya, pasti sulit\" sudah cukup daripada memberikan solusi!"
+      ko: "타인의 표정과 말투에 더 관심을 가져보세요. 공감은 연습으로 향상됩니다!",
+      en: "Pay more attention to others' expressions and tone. Empathy improves with practice!",
+      ja: "他人の表情や話し方にもっと関心を持ってみてください。共感は練習で向上します！",
+      "zh-CN": "多关注他人的表情和语调。共情通过练习可以提高！",
+      "zh-TW": "多關注他人的表情和語調。共情通過練習可以提高！",
+      vi: "Hãy chú ý nhiều hơn đến biểu cảm và giọng điệu của người khác. Đồng cảm sẽ cải thiện qua luyện tập!",
+      id: "Perhatikan lebih banyak ekspresi dan nada bicara orang lain. Empati meningkat dengan latihan!"
     },
-    empathyScore: {
-      ko: "★★☆☆☆ (2/5) 인지만",
-      en: "★★☆☆☆ (2/5) Recognition Only",
-      ja: "★★☆☆☆ (2/5) 認識のみ",
-      'zh-CN': "★★☆☆☆ (2/5) 仅认知",
-      'zh-TW': "★★☆☆☆ (2/5) 僅認知",
-      vi: "★★☆☆☆ (2/5) Chỉ nhận biết",
-      id: "★★☆☆☆ (2/5) Hanya Pengakuan"
+    recommendedJobs: {
+      ko: "기술직, 전문직",
+      en: "Technical, professional jobs",
+      ja: "技術職、専門職",
+      "zh-CN": "技术工作，专业工作",
+      "zh-TW": "技術工作，專業工作",
+      vi: "Công việc kỹ thuật, chuyên môn",
+      id: "Pekerjaan teknis, profesional"
     },
     compatibility: {
-      best: ["Type4", "Type5"],
-      good: ["Type3"],
-      careful: ["Type1", "Type2"],
-      difficult: []
-    }
+      good: ["Level4", "Level2"],
+      careful: ["Level6", "Level1"]
+    },
+    emoji: "💛",
+    level: {
+      ko: "★★★☆☆☆ (3/6) 보통",
+      en: "★★★☆☆☆ (3/6) Average",
+      ja: "★★★☆☆☆ (3/6) 普通",
+      "zh-CN": "★★★☆☆☆ (3/6) 普通",
+      "zh-TW": "★★★☆☆☆ (3/6) 普通",
+      vi: "★★★☆☆☆ (3/6) Trung bình",
+      id: "★★★☆☆☆ (3/6) Rata-rata"
+    },
+    maxScore: 31
   },
   {
-    type: "Type5",
-    emoji: "🌫️",
+    type: "Level2",
     title: {
       ko: "낮은 공감형",
       en: "Low Empathy Type",
       ja: "低い共感型",
-      'zh-CN': "低共情型",
-      'zh-TW': "低共情型",
+      "zh-CN": "低共情型",
+      "zh-TW": "低共情型",
       vi: "Kiểu đồng cảm thấp",
       id: "Tipe Empati Rendah"
     },
     description: {
-      ko: "잘 모르겠어요. 내 일도 바쁜데...\n공감 능력이 약한 편입니다. 타인의 감정에 별로 관심이 없고 이해도 잘 안 됩니다. \"왜 저렇게까지 힘들어해?\"라고 생각합니다. 감정보다는 사실과 논리에 집중합니다. 관계에서 차갑게 느껴질 수 있고, 깊은 유대감 형성이 어렵습니다. 공감 능력을 키우려는 노력이 필요합니다.",
-      en: "I don't really know. I'm busy with my own things...\nMy empathy is weak. I'm not very interested in others' emotions and don't understand them well. I think \"Why are they struggling so much?\" I focus on facts and logic rather than emotions. I may seem cold in relationships, and it's difficult to form deep bonds. I need to make an effort to develop empathy.",
-      ja: "よく分かりません。私も忙しいし...\n共感能力が弱い方です。他人の感情にあまり関心がなく、理解もあまりできません。「なぜそんなに苦労するの？」と思います。感情よりも事実と論理に集中します。関係では冷たく感じられ、深い絆の形成が困難です。共感能力を高める努力が必要です。",
-      'zh-CN': "不太清楚。我也很忙...\n共情能力较弱。对他人情感不太关心，也不太理解。会想\"为什么要那么辛苦？\"专注事实和逻辑而非情感。在关系中可能显得冷漠，难以形成深层纽带。需要努力培养共情能力。",
-      'zh-TW': "不太清楚。我也很忙...\n共情能力較弱。對他人情感不太關心，也不太理解。會想「為什麼要那麼辛苦？」專注事實和邏輯而非情感。在關係中可能顯得冷漠，難以形成深層紐帶。需要努力培養共情能力。",
-      vi: "Tôi không biết rõ. Tôi cũng bận với việc của mình...\nKhả năng đồng cảm của tôi yếu. Tôi không quan tâm nhiều đến cảm xúc của người khác và không hiểu rõ. Tôi nghĩ \"Tại sao họ phải khó khăn như vậy?\" Tôi tập trung vào sự thật và logic hơn là cảm xúc. Trong mối quan hệ, tôi có thể bị coi là lạnh lùng, và khó hình thành mối liên kết sâu sắc. Cần nỗ lực phát triển khả năng đồng cảm.",
-      id: "Saya tidak tahu pasti. Saya juga sibuk dengan urusan sendiri...\nKemampuan empati saya lemah. Saya tidak terlalu tertarik pada emosi orang lain dan tidak memahaminya dengan baik. Saya berpikir \"Mengapa mereka harus berjuang seperti itu?\" Saya fokus pada fakta dan logika daripada emosi. Dalam hubungan, saya mungkin terlihat dingin, dan sulit membentuk ikatan yang dalam. Perlu upaya mengembangkan kemampuan empati."
+      ko: "향상 필요! 공감 능력 개발이 필요함",
+      en: "Improvement needed! Empathy ability development required",
+      ja: "向上が必要！共感能力の開発が必要",
+      "zh-CN": "需要改进！需要发展共情能力",
+      "zh-TW": "需要改進！需要發展共情能力",
+      vi: "Cần cải thiện! Cần phát triển khả năng đồng cảm",
+      id: "Perlu peningkatan! Perlu pengembangan kemampuan empati"
+    },
+    longDescription: {
+      ko: "공감 능력이 낮은 편입니다. 타인의 감정을 이해하기 어렵고, 왜 그런 감정인지 파악이 힘듭니다. 관계에서 오해가 자주 생기고, 무심하다는 말을 들을 수 있습니다. 의식적인 노력과 훈련이 필요합니다.",
+      en: "Your empathy ability is low. It's difficult to understand others' emotions and hard to figure out why they feel that way. Misunderstandings often occur in relationships, and you may be called insensitive. Conscious effort and training are needed.",
+      ja: "共感能力が低いです。他人の感情を理解することが困難で、なぜそのような感情なのかを把握することが困難です。関係で誤解が頻繁に発生し、無神経だと言われることがあります。意識的な努力と訓練が必要です。",
+      "zh-CN": "你的共情能力较低。很难理解他人的情感，也很难弄清楚他们为什么会有那样的感受。关系中经常产生误解，可能会被说成冷漠。需要意识的努力和训练。",
+      "zh-TW": "你的共情能力較低。很難理解他人的情感，也很難弄清楚他們為什麼會有那樣的感受。關係中經常產生誤解，可能會被說成冷漠。需要意識的努力和訓練。",
+      vi: "Khả năng đồng cảm của bạn thấp. Khó hiểu cảm xúc của người khác và khó tìm hiểu tại sao họ cảm thấy như vậy. Hiểu lầm thường xảy ra trong các mối quan hệ, và bạn có thể bị gọi là thiếu nhạy cảm. Cần nỗ lực có ý thức và luyện tập.",
+      id: "Kemampuan empati Anda rendah. Sulit memahami emosi orang lain dan sulit mencari tahu mengapa mereka merasa seperti itu. Kesalahpahaman sering terjadi dalam hubungan, dan Anda mungkin disebut tidak peka. Diperlukan usaha sadar dan pelatihan."
     },
     pros: [
       { 
         ko: "객관적",
         en: "Objective",
         ja: "客観的",
-        'zh-CN': "客观",
-        'zh-TW': "客觀",
+        "zh-CN": "客观",
+        "zh-TW": "客觀",
         vi: "Khách quan",
         id: "Objektif"
-      },
-      { 
-        ko: "현실적",
-        en: "Realistic",
-        ja: "現実的",
-        'zh-CN': "现实",
-        'zh-TW': "現實",
-        vi: "Thực tế",
-        id: "Realistis"
-      },
-      { 
-        ko: "독립적",
-        en: "Independent",
-        ja: "独立的",
-        'zh-CN': "独立",
-        'zh-TW': "獨立",
-        vi: "Độc lập",
-        id: "Mandiri"
-      }
-    ],
-    cons: [
-      { 
-        ko: "관계 어려움",
-        en: "Relationship difficulties",
-        ja: "人間関係の困難",
-        'zh-CN': "关系困难",
-        'zh-TW': "關係困難",
-        vi: "Khó khăn trong mối quan hệ",
-        id: "Kesulitan dalam hubungan"
-      },
-      { 
-        ko: "외로움",
-        en: "Loneliness",
-        ja: "孤独",
-        'zh-CN': "孤独",
-        'zh-TW': "孤獨",
-        vi: "Cô đơn",
-        id: "Kesepian"
-      },
-      { 
-        ko: "오해받기 쉬움",
-        en: "Easily misunderstood",
-        ja: "誤解されやすい",
-        'zh-CN': "容易被误解",
-        'zh-TW': "容易被誤解",
-        vi: "Dễ bị hiểu lầm",
-        id: "Mudah disalahpahami"
-      }
-    ],
-    advice: {
-      ko: "공감은 배울 수 있어요. \"그랬구나\"부터 시작해보세요!",
-      en: "Empathy can be learned. Start with \"I see\"!",
-      ja: "共感は学べます。「そうだったんだ」から始めてみてください！",
-      'zh-CN': "共情是可以学习的。从\"原来如此\"开始吧！",
-      'zh-TW': "共情是可以學習的。從「原來如此」開始吧！",
-      vi: "Đồng cảm có thể học được. Hãy bắt đầu với \"Vậy à\"!",
-      id: "Empati bisa dipelajari. Mulai dengan \"Begitu ya\"!"
-    },
-    empathyScore: {
-      ko: "★☆☆☆☆ (1/5) 낮음",
-      en: "★☆☆☆☆ (1/5) Low",
-      ja: "★☆☆☆☆ (1/5) 低い",
-      'zh-CN': "★☆☆☆☆ (1/5) 低",
-      'zh-TW': "★☆☆☆☆ (1/5) 低",
-      vi: "★☆☆☆☆ (1/5) Thấp",
-      id: "★☆☆☆☆ (1/5) Rendah"
-    },
-    compatibility: {
-      best: ["Type5", "Type6"],
-      good: ["Type4"],
-      careful: ["Type1", "Type2"],
-      difficult: []
-    }
-  },
-  {
-    type: "Type6",
-    emoji: "❄️",
-    title: {
-      ko: "공감 어려움형",
-      en: "Empathy Difficulty Type",
-      ja: "共感困難型",
-      'zh-CN': "共情困难型",
-      'zh-TW': "共情困難型",
-      vi: "Kiểu khó đồng cảm",
-      id: "Tipe Kesulitan Empati"
-    },
-    description: {
-      ko: "솔직히 이해가 안 돼요\n공감이 매우 어려운 타입입니다. 타인의 감정을 이해하기 힘들고 감정 표현도 어색합니다. \"왜 우는지\", \"왜 기쁜지\" 진심으로 모르겠습니다. 감정보다는 논리와 사실만 봅니다. 인간관계가 어렵고 오해를 많이 받습니다. 전문가의 도움이 필요할 수 있습니다.",
-      en: "Honestly, I don't understand\nThis is a type that finds empathy very difficult. It's hard to understand others' emotions and emotional expression is awkward. I genuinely don't know \"why they're crying\" or \"why they're happy.\" I only see logic and facts rather than emotions. Human relationships are difficult and I'm often misunderstood. Professional help may be needed.",
-      ja: "正直、理解できません\n共感が非常に困難なタイプです。他人の感情を理解することが難しく、感情表現もぎこちないです。「なぜ泣くのか」「なぜ嬉しいのか」心から分かりません。感情よりも論理と事実だけを見ます。人間関係が困難で、誤解を多く受けます。専門家の助けが必要かもしれません。",
-      'zh-CN': "老实说，我不理解\n这是共情非常困难的类型。难以理解他人情感，情感表达也很尴尬。真心不知道\"为什么哭\"、\"为什么高兴\"。只看逻辑和事实而非情感。人际关系困难，经常被误解。可能需要专业帮助。",
-      'zh-TW': "老實說，我不理解\n這是共情非常困難的類型。難以理解他人情感，情感表達也很尷尬。真心不知道「為什麼哭」、「為什麼高興」。只看邏輯和事實而非情感。人際關係困難，經常被誤解。可能需要專業幫助。",
-      vi: "Thành thật mà nói, tôi không hiểu\nĐây là kiểu rất khó đồng cảm. Khó hiểu cảm xúc của người khác và biểu hiện cảm xúc cũng vụng về. Tôi thật sự không biết \"tại sao họ khóc\" hay \"tại sao họ vui.\" Tôi chỉ thấy logic và sự thật thay vì cảm xúc. Mối quan hệ con người khó khăn và tôi thường bị hiểu lầm. Có thể cần sự giúp đỡ chuyên nghiệp.",
-      id: "Jujur, saya tidak mengerti\nIni adalah tipe yang sangat sulit berempati. Sulit memahami emosi orang lain dan ekspresi emosional juga canggung. Saya benar-benar tidak tahu \"mengapa mereka menangis\" atau \"mengapa mereka bahagia.\" Saya hanya melihat logika dan fakta daripada emosi. Hubungan manusia sulit dan saya sering disalahpahami. Mungkin perlu bantuan profesional."
-    },
-    pros: [
-      { 
-        ko: "매우 객관적",
-        en: "Very objective",
-        ja: "非常に客観的",
-        'zh-CN': "非常客观",
-        'zh-TW': "非常客觀",
-        vi: "Rất khách quan",
-        id: "Sangat objektif"
       },
       { 
         ko: "감정에 휘둘리지 않음",
         en: "Not swayed by emotions",
         ja: "感情に左右されない",
-        'zh-CN': "不被情感左右",
-        'zh-TW': "不被情感左右",
+        "zh-CN": "不被情绪左右",
+        "zh-TW": "不被情緒左右",
         vi: "Không bị cảm xúc chi phối",
         id: "Tidak terpengaruh emosi"
       }
     ],
     cons: [
       { 
+        ko: "관계 어려움",
+        en: "Relationship difficulties",
+        ja: "関係の困難",
+        "zh-CN": "关系困难",
+        "zh-TW": "關係困難",
+        vi: "Khó khăn trong mối quan hệ",
+        id: "Kesulitan hubungan"
+      },
+      {
+        ko: "오해 많음",
+        en: "Many misunderstandings",
+        ja: "多くの誤解",
+        "zh-CN": "很多误解",
+        "zh-TW": "很多誤解",
+        vi: "Nhiều hiểu lầm",
+        id: "Banyak kesalahpahaman"
+      },
+      { 
+        ko: "외로움",
+        en: "Loneliness",
+        ja: "孤独",
+        "zh-CN": "孤独",
+        "zh-TW": "孤獨",
+        vi: "Cô đơn",
+        id: "Kesepian"
+      }
+    ],
+    advice: {
+      ko: "공감은 학습 가능합니다. \"상대가 어떤 기분일까?\" 자주 물어보세요.",
+      en: "Empathy can be learned. Ask yourself \"How is the other person feeling?\" frequently.",
+      ja: "共感は学習可能です。「相手はどんな気持ちかな？」と頻繁に自問してください。",
+      "zh-CN": "共情是可以学习的。经常问自己「对方是什么感受？」",
+      "zh-TW": "共情是可以學習的。經常問自己「對方是什麼感受？」",
+      vi: "Đồng cảm có thể học được. Hãy thường xuyên tự hỏi \"Người kia đang cảm thấy thế nào?\"",
+      id: "Empati bisa dipelajari. Sering-sering bertanya pada diri sendiri \"Bagaimana perasaan orang lain?\""
+    },
+    recommendedJobs: {
+      ko: "연구직, 데이터 분석",
+      en: "Research, data analysis",
+      ja: "研究職、データ分析",
+      "zh-CN": "研究工作，数据分析",
+      "zh-TW": "研究工作，數據分析",
+      vi: "Nghiên cứu, phân tích dữ liệu",
+      id: "Penelitian, analisis data"
+    },
+    compatibility: {
+      good: ["Level3", "Level1"],
+      careful: ["Level6", "Level5"]
+    },
+    emoji: "🧡",
+    level: {
+      ko: "★★☆☆☆☆ (2/6) 낮음",
+      en: "★★☆☆☆☆ (2/6) Low",
+      ja: "★★☆☆☆☆ (2/6) 低い",
+      "zh-CN": "★★☆☆☆☆ (2/6) 低",
+      "zh-TW": "★★☆☆☆☆ (2/6) 低",
+      vi: "★★☆☆☆☆ (2/6) Thấp",
+      id: "★★☆☆☆☆ (2/6) Rendah"
+    },
+    maxScore: 60
+  },
+  {
+    type: "Level1",
+    title: {
+      ko: "매우 낮은 공감형",
+      en: "Very Low Empathy Type",
+      ja: "非常に低い共感型",
+      "zh-CN": "非常低共情型",
+      "zh-TW": "非常低共情型",
+      vi: "Kiểu đồng cảm rất thấp",
+      id: "Tipe Empati Sangat Rendah"
+    },
+    description: {
+      ko: "전문가 도움 권장! 공감 능력 개발 시급",
+      en: "Professional help recommended! Urgent empathy ability development needed",
+      ja: "専門家の助けをお勧め！共感能力の開発が急務",
+      "zh-CN": "建议寻求专业帮助！急需发展共情能力",
+      "zh-TW": "建議尋求專業幫助！急需發展共情能力",
+      vi: "Khuyến nghị tìm kiếm sự giúp đỡ chuyên nghiệp! Cần phát triển khả năng đồng cảm khẩn cấp",
+      id: "Direkomendasikan bantuan profesional! Perlu pengembangan kemampuan empati yang mendesak"
+    },
+    longDescription: {
+      ko: "공감 능력이 매우 낮습니다. 타인의 감정을 거의 이해하지 못하고, 관계 형성이 매우 어렵습니다. 사회생활에서 어려움이 많고, 외롭거나 고립될 수 있습니다. 전문가의 도움을 받아 EQ를 향상시키는 것을 권장합니다.",
+      en: "Your empathy ability is very low. You hardly understand others' emotions and forming relationships is very difficult. You face many difficulties in social life and may feel lonely or isolated. It's recommended to seek professional help to improve your EQ.",
+      ja: "共感能力が非常に低いです。他人の感情をほとんど理解できず、関係の形成が非常に困難です。社会生活で多くの困難に直面し、孤独感や孤立感を感じる可能性があります。EQを向上させるために専門家の助けを求めることをお勧めします。",
+      "zh-CN": "你的共情能力非常低。几乎无法理解他人的情感，关系形成非常困难。在社会生活中面临很多困难，可能会感到孤独或被孤立。建议寻求专业帮助来提高你的EQ。",
+      "zh-TW": "你的共情能力非常低。幾乎無法理解他人的情感，關係形成非常困難。在社會生活中面臨很多困難，可能會感到孤獨或被孤立。建議尋求專業幫助來提高你的EQ。",
+      vi: "Khả năng đồng cảm của bạn rất thấp. Bạn hầu như không hiểu cảm xúc của người khác và việc hình thành mối quan hệ rất khó khăn. Bạn gặp nhiều khó khăn trong cuộc sống xã hội và có thể cảm thấy cô đơn hoặc bị cô lập. Nên tìm kiếm sự giúp đỡ chuyên nghiệp để cải thiện EQ.",
+      id: "Kemampuan empati Anda sangat rendah. Anda hampir tidak memahami emosi orang lain dan pembentukan hubungan sangat sulit. Anda menghadapi banyak kesulitan dalam kehidupan sosial dan mungkin merasa kesepian atau terisolasi. Disarankan untuk mencari bantuan profesional untuk meningkatkan EQ Anda."
+    },
+    pros: [
+      { 
+        ko: "매우 객관적",
+        en: "Very objective",
+        ja: "非常に客観的",
+        "zh-CN": "非常客观",
+        "zh-TW": "非常客觀",
+        vi: "Rất khách quan",
+        id: "Sangat objektif"
+      }
+    ],
+    cons: [
+      { 
         ko: "관계 매우 어려움",
         en: "Very difficult relationships",
-        ja: "人間関係が非常に困難",
-        'zh-CN': "关系非常困难",
-        'zh-TW': "關係非常困難",
+        ja: "関係が非常に困難",
+        "zh-CN": "关系非常困难",
+        "zh-TW": "關係非常困難",
         vi: "Mối quan hệ rất khó khăn",
         id: "Hubungan sangat sulit"
       },
@@ -1338,83 +1696,88 @@ export const empathyResults: EmpathyResult[] = [
         ko: "고립",
         en: "Isolation",
         ja: "孤立",
-        'zh-CN': "孤立",
-        'zh-TW': "孤立",
+        "zh-CN": "孤立",
+        "zh-TW": "孤立",
         vi: "Cô lập",
         id: "Isolasi"
       },
       { 
         ko: "오해",
-        en: "Misunderstanding",
+        en: "Misunderstandings",
         ja: "誤解",
-        'zh-CN': "误解",
-        'zh-TW': "誤解",
+        "zh-CN": "误解",
+        "zh-TW": "誤解",
         vi: "Hiểu lầm",
-        id: "Salah paham"
+        id: "Kesalahpahaman"
       }
     ],
     advice: {
-      ko: "공감이 어렵다면 전문가와 상담해보세요. 배우고 연습할 수 있습니다.",
-      en: "If empathy is difficult, consult with a professional. You can learn and practice.",
-      ja: "共感が困難なら専門家に相談してみてください。学んで練習することができます。",
-      'zh-CN': "如果共情困难，请咨询专业人士。你可以学习和练习。",
-      'zh-TW': "如果共情困難，請諮詢專業人士。你可以學習和練習。",
-      vi: "Nếu đồng cảm khó khăn, hãy tư vấn với chuyên gia. Bạn có thể học và luyện tập.",
-      id: "Jika empati sulit, konsultasikan dengan profesional. Anda bisa belajar dan berlatih."
+      ko: "공감은 배울 수 있어요. 심리 상담이나 EQ 향상 프로그램을 시도해보세요.",
+      en: "Empathy can be learned. Try psychological counseling or EQ improvement programs.",
+      ja: "共感は学べます。心理カウンセリングやEQ向上プログラムを試してみてください。",
+      "zh-CN": "共情是可以学习的。尝试心理咨询或EQ提升项目。",
+      "zh-TW": "共情是可以學習的。嘗試心理諮詢或EQ提升項目。",
+      vi: "Đồng cảm có thể học được. Hãy thử tư vấn tâm lý hoặc các chương trình cải thiện EQ.",
+      id: "Empati bisa dipelajari. Coba konseling psikologi atau program peningkatan EQ."
     },
-    empathyScore: {
-      ko: "☆☆☆☆☆ (0/5) 매우 낮음",
-      en: "☆☆☆☆☆ (0/5) Very Low",
-      ja: "☆☆☆☆☆ (0/5) 非常に低い",
-      'zh-CN': "☆☆☆☆☆ (0/5) 非常低",
-      'zh-TW': "☆☆☆☆☆ (0/5) 非常低",
-      vi: "☆☆☆☆☆ (0/5) Rất thấp",
-      id: "☆☆☆☆☆ (0/5) Sangat Rendah"
+    recommendedJobs: {
+      ko: "연구직, 데이터 분석",
+      en: "Research, data analysis",
+      ja: "研究職、データ分析",
+      "zh-CN": "研究工作，数据分析",
+      "zh-TW": "研究工作，數據分析",
+      vi: "Nghiên cứu, phân tích dữ liệu",
+      id: "Penelitian, analisis data"
     },
     compatibility: {
-      best: ["Type6"],
-      good: ["Type5"],
-      careful: [],
-      difficult: ["Type1", "Type2", "Type3", "Type4"]
-    }
+      good: ["Level2", "Level1"],
+      careful: ["Level6", "Level5", "Level4"]
+    },
+    emoji: "❤️",
+    level: {
+      ko: "★☆☆☆☆☆ (1/6) 매우 낮음",
+      en: "★☆☆☆☆☆ (1/6) Very Low",
+      ja: "★☆☆☆☆☆ (1/6) 非常に低い",
+      "zh-CN": "★☆☆☆☆☆ (1/6) 非常低",
+      "zh-TW": "★☆☆☆☆☆ (1/6) 非常低",
+      vi: "★☆☆☆☆☆ (1/6) Rất thấp",
+      id: "★☆☆☆☆☆ (1/6) Sangat rendah"
+    },
+    maxScore: 54
   }
 ];
 
-export function calculateEmpathyResult(answers: Record<string, number>[]): EmpathyResult {
-  const totalScores: Record<string, number> = {};
-  
-  // 각 Type별 점수 합계 계산
-  answers.forEach(answerScores => {
-    Object.entries(answerScores).forEach(([type, score]) => {
-      totalScores[type] = (totalScores[type] || 0) + score;
+export function calculateEmpathyResult(answers: Array<{ questionId: number; scores: Record<string, number> }>): EmpathyResult {
+  const scores = {
+    "Level6": 0,
+    "Level5": 0,
+    "Level4": 0,
+    "Level3": 0,
+    "Level2": 0,
+    "Level1": 0
+  };
+
+  // 점수 계산
+  answers.forEach(answer => {
+    Object.entries(answer.scores).forEach(([level, score]) => {
+      if (scores.hasOwnProperty(level)) {
+        scores[level as keyof typeof scores] += score;
+      }
     });
   });
   
-  // 최고 점수 찾기
-  const maxScore = Math.max(...Object.values(totalScores));
-  const topTypes = Object.entries(totalScores)
-    .filter(([_, score]) => score === maxScore)
-    .map(([type, _]) => type);
-  
-  // 동점인 경우 Q10-Q12 우선 반영
-  if (topTypes.length > 1) {
-    const lastThreeAnswers = answers.slice(-3);
-    const tieBreakScores: Record<string, number> = {};
-    
-    lastThreeAnswers.forEach(answerScores => {
-      Object.entries(answerScores).forEach(([type, score]) => {
-        if (topTypes.includes(type)) {
-          tieBreakScores[type] = (tieBreakScores[type] || 0) + score;
-        }
-      });
-    });
-    
-    const maxTieBreakScore = Math.max(...Object.values(tieBreakScores));
-    const winnerType = Object.entries(tieBreakScores)
-      .filter(([_, score]) => score === maxTieBreakScore)[0][0];
-    
-    return empathyResults.find(result => result.type === winnerType)!;
-  }
-  
-  return empathyResults.find(result => result.type === topTypes[0])!;
+  // 최고 점수 Level 찾기
+  let maxScore = 0;
+  let resultType = "Level3"; // 기본값
+
+  Object.entries(scores).forEach(([level, score]) => {
+    if (score > maxScore) {
+      maxScore = score;
+      resultType = level;
+    }
+  });
+
+  // 결과 찾기
+  const result = empathyResults.find(r => r.type === resultType);
+  return result || empathyResults[2]; // 기본값으로 Level3 반환
 }
