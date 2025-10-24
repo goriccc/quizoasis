@@ -41,6 +41,101 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "brainTest": {
+    "startMessage": {
+      "line1": "\"Otak kiri? Otak kanan? Kami menganalisis kecenderungan otak Anda dengan akurat!\"",
+      "line2": "Logis vs Emosional / Analitis vs Kreatif / Terencana vs Spontan / Verbal vs Visual",
+      "line3": "Orang dengan otak kiri yang berkembang kuat dalam logika dan analisis, sementara orang dengan otak kanan yang berkembang unggul dalam kreativitas dan emosi.",
+      "line4": "Anda di sisi mana? Atau apakah Anda memiliki keseimbangan sempurna?",
+      "line5": "Hanya dalam 3 menit, Anda bisa mengetahui jenis otak Anda!",
+      "line6": "Total {count} peserta!"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "yourResult": "Hasil Anda",
+      "characteristics": "🎯 Karakteristik",
+      "advantages": "✅ Keuntungan",
+      "disadvantages": "⚠️ Kerugian",
+      "advice": "💡 Saran",
+      "recommendedJobs": "💼 Pekerjaan yang Direkomendasikan",
+      "compatibleTypes": "💖 Tipe yang Cocok",
+      "cautionTypes": "⚠️ Tipe yang Perlu Hati-hati",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lainnya",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "telegram": "Telegram",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Area Iklan AdSense",
+      "similarTests": "Tes Serupa",
+      "advice": "Saran",
+      "compatibleTypes": "Tipe yang Cocok",
+      "cautionTypes": "Tipe yang Perlu Hati-hati",
+      "clipboardCopySuccess": "Hasil disalin ke clipboard!",
+      "shareFeatureError": "Fitur berbagi tidak tersedia.",
+      "wechatLinkCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInitializing": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoShareError": "Terjadi kesalahan saat berbagi ke KakaoTalk.",
+      "linkCopySuccess": "Tautan disalin!",
+      "startTest": "Mulai Tes",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "questions": "pertanyaan",
+      "time": "3 menit",
+      "participants": "peserta",
+      "yourResult": "Hasil Anda",
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "totalParticipants": "Total {count} peserta!",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lainnya",
+      "shareWithFriends": "Coba dengan Teman"
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! Tes Otak Kiri vs Otak Kanan selesai! Bagaimana dengan Anda? 🧠🎨",
+      "kakao": "Saya adalah {type}! Tes Otak Kiri vs Otak Kanan selesai! Bagaimana dengan Anda? 🧠🎨",
+      "wechat": "Saya adalah {type}! Tes Otak Kiri vs Otak Kanan selesai! Bagaimana dengan Anda? 🧠🎨",
+      "whatsapp": "Saya adalah {type}! Tes Otak Kiri vs Otak Kanan selesai! Bagaimana dengan Anda? 🧠🎨",
+      "telegram": "Saya adalah {type}! Tes Otak Kiri vs Otak Kanan selesai! Bagaimana dengan Anda? 🧠🎨",
+      "line": "Saya adalah {type}! Tes Otak Kiri vs Otak Kanan selesai! Bagaimana dengan Anda? 🧠🎨"
+    },
+    "compatibility": {
+      "Type1_Type2": "Dapat melakukan percakapan logis dengan tipe Otak Kiri Dominan.",
+      "Type2_Type3": "Kombinasi ideal dengan tipe Keseimbangan Sempurna.",
+      "Type3_all": "Kerja sama yang baik dengan semua tipe.",
+      "Type4_Type3_Type5": "Sinergi kreatif dengan tipe Keseimbangan Sempurna dan Otak Kanan Ekstrem.",
+      "Type5_Type4": "Empati artistik dengan tipe Otak Kanan Dominan.",
+      "Type6_Type3": "Kerja sama fleksibel dengan tipe Keseimbangan Sempurna."
+    },
+    "caution": {
+      "Type1_Type5": "Komunikasi mungkin sulit dengan tipe Otak Kanan Ekstrem.",
+      "Type2_Type4": "Mungkin memiliki pendekatan yang berbeda dengan tipe Otak Kanan Dominan.",
+      "Type3_none": "Dapat berkomunikasi dengan semua tipe.",
+      "Type4_Type1": "Mungkin ada konflik pemikiran dengan tipe Otak Kiri Ekstrem.",
+      "Type5_Type1": "Dunia yang benar-benar berbeda dari tipe Otak Kiri Ekstrem.",
+      "Type6_Type1_Type5": "Pemahaman mungkin sulit dengan tipe ekstrem (Otak Kiri/Kanan Ekstrem)."
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! Tes Otak Kiri vs Kanan selesai! Anda apa? 🧠🎨",
+      "kakao": "Saya adalah {type}! Tes Otak Kiri vs Kanan selesai! Anda apa? 🧠🎨",
+      "wechat": "Saya adalah {type}! Tes Otak Kiri vs Kanan selesai! Anda apa? 🧠🎨",
+      "whatsapp": "Saya adalah {type}! Tes Otak Kiri vs Kanan selesai! Anda apa? 🧠🎨",
+      "telegram": "Saya adalah {type}! Tes Otak Kiri vs Kanan selesai! Anda apa? 🧠🎨",
+      "line": "Saya adalah {type}! Tes Otak Kiri vs Kanan selesai! Anda apa? 🧠🎨"
+    },
+    "result": {
+      "longDescription": "Deskripsi Panjang",
+      "noCompatibleTypes": "Dapat membentuk kombinasi yang baik.",
+      "noCautionTypes": "Kombinasi ini perlu diperhatikan."
+    }
+  },
   "timeEfficiencyTest": {
     "startMessage": {
       "line1": "\"Seberapa efisien Anda menggunakan 24 jam sehari?\"",

@@ -41,6 +41,102 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "brainTest": {
+    "startMessage": {
+      "line1": "「左脳？右脳？あなたの脳の傾向を正確に分析します！」",
+      "line2": "論理的 vs 感情的 / 分析的 vs 創造的 / 計画的 vs 即興的 / 言語的 vs 視覚的",
+      "line3": "左脳が発達した人は論理と分析に強く、右脳が発達した人は創造性と感情に優れています。",
+      "line4": "あなたはどちら側ですか？それとも完璧なバランスを保っていますか？",
+      "line5": "たった3分であなたの脳タイプがわかります！",
+      "line6": "合計{count}人が参加しました！"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "yourResult": "あなたの結果",
+      "characteristics": "🎯 特徴",
+      "advantages": "✅ 長所",
+      "disadvantages": "⚠️ 短所",
+      "advice": "💡 アドバイス",
+      "recommendedJobs": "💼 おすすめ職業",
+      "compatibleTypes": "💖 相性の良いタイプ",
+      "cautionTypes": "⚠️ 注意が必要なタイプ",
+      "shareResult": "結果を共有する",
+      "retake": "再テスト",
+      "otherTests": "他のテストを見る",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "wechat": "WeChat",
+      "telegram": "テレグラム",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense広告エリア",
+      "similarTests": "類似テスト",
+      "similarTestsTop5": "🎯 類似テスト トップ5",
+      "advice": "アドバイス",
+      "compatibleTypes": "相性の良いタイプ",
+      "cautionTypes": "注意が必要なタイプ",
+      "clipboardCopySuccess": "結果がクリップボードにコピーされました！",
+      "shareFeatureError": "共有機能が利用できません。",
+      "wechatLinkCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInitializing": "カカオトーク共有機能を初期化中です。しばらくしてから再度お試しください。",
+      "kakaoShareError": "カカオトーク共有中にエラーが発生しました。",
+      "linkCopySuccess": "リンクがコピーされました！",
+      "startTest": "テスト開始",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "questions": "質問",
+      "time": "3分",
+      "participants": "名参加",
+      "yourResult": "あなたの結果",
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "totalParticipants": "合計{count}名が参加しました！",
+      "shareResult": "結果を共有",
+      "retake": "再テスト",
+      "otherTests": "他のテストを見る",
+      "shareWithFriends": "友達と一緒にやってみよう"
+    },
+    "shareMessages": {
+      "default": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
+      "kakao": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
+      "wechat": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
+      "whatsapp": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
+      "telegram": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
+      "line": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨"
+    },
+    "compatibility": {
+      "Type1_Type2": "左脳優勢型と論理的な会話ができます。",
+      "Type2_Type3": "完璧なバランス型と理想的な組み合わせです。",
+      "Type3_all": "すべてのタイプと良い協力ができます。",
+      "Type4_Type3_Type5": "完璧なバランス型、極右脳型と創造的なシナジーを発揮できます。",
+      "Type5_Type4": "右脳優勢型と芸術的な共感ができます。",
+      "Type6_Type3": "完璧なバランス型と柔軟な協力ができます。"
+    },
+    "caution": {
+      "Type1_Type5": "極右脳型とはコミュニケーションが難しい場合があります。",
+      "Type2_Type4": "右脳優勢型とはアプローチの違いがある場合があります。",
+      "Type3_none": "すべてのタイプとコミュニケーション可能です。",
+      "Type4_Type1": "極左脳型とは思考方式の衝突がある場合があります。",
+      "Type5_Type1": "極左脳型とは完全に異なる世界です。",
+      "Type6_Type1_Type5": "極端型（極左脳、極右脳）とは理解が難しい場合があります。"
+    },
+    "shareMessages": {
+      "default": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "kakao": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "wechat": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "whatsapp": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "telegram": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "line": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨"
+    },
+    "result": {
+      "longDescription": "詳細説明",
+      "noCompatibleTypes": "良い組み合わせを作ることができます。",
+      "noCautionTypes": "この組み合わせには注意が必要です。"
+    }
+  },
   "timeEfficiencyTest": {
     "startMessage": {
       "line1": "\"一日24時間、あなたはどのくらい効率的に使っていますか？\"",

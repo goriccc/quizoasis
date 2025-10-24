@@ -41,6 +41,102 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "brainTest": {
+    "startMessage": {
+      "line1": "\"Left brain? Right brain? We accurately analyze your brain tendencies!\"",
+      "line2": "Logical vs Emotional / Analytical vs Creative / Planned vs Spontaneous / Verbal vs Visual",
+      "line3": "People with developed left brains are strong in logic and analysis, while people with developed right brains excel in creativity and emotion.",
+      "line4": "Which side are you? Or do you have perfect balance?",
+      "line5": "In just 3 minutes, you can know your brain type!",
+      "line6": "Total {count} participants!"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "yourResult": "Your Result",
+      "characteristics": "🎯 Characteristics",
+      "advantages": "✅ Advantages",
+      "disadvantages": "⚠️ Disadvantages",
+      "advice": "💡 Advice",
+      "recommendedJobs": "💼 Recommended Jobs",
+      "compatibleTypes": "💖 Compatible Types",
+      "cautionTypes": "⚠️ Caution Types",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "View Other Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "telegram": "Telegram",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense Ad Area",
+      "similarTests": "Similar Tests",
+      "similarTestsTop5": "🎯 Similar Tests Top 5",
+      "advice": "Advice",
+      "compatibleTypes": "Compatible Types",
+      "cautionTypes": "Caution Types",
+      "clipboardCopySuccess": "Result copied to clipboard!",
+      "shareFeatureError": "Share feature is not available.",
+      "wechatLinkCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInitializing": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoShareError": "An error occurred while sharing to KakaoTalk.",
+      "linkCopySuccess": "Link copied!",
+      "startTest": "Start Test",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "questions": "questions",
+      "time": "3 min",
+      "participants": "participants",
+      "yourResult": "Your Result",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "totalParticipants": "Total {count} participants!",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "View Other Tests",
+      "shareWithFriends": "Try with Friends"
+    },
+    "shareMessages": {
+      "default": "I am {type}! Left brain vs Right brain test completed! What about you? 🧠🎨",
+      "kakao": "I am {type}! Left brain vs Right brain test completed! What about you? 🧠🎨",
+      "wechat": "I am {type}! Left brain vs Right brain test completed! What about you? 🧠🎨",
+      "whatsapp": "I am {type}! Left brain vs Right brain test completed! What about you? 🧠🎨",
+      "telegram": "I am {type}! Left brain vs Right brain test completed! What about you? 🧠🎨",
+      "line": "I am {type}! Left brain vs Right brain test completed! What about you? 🧠🎨"
+    },
+    "compatibility": {
+      "Type1_Type2": "Can have logical conversations with Left Brain Dominant type.",
+      "Type2_Type3": "Ideal combination with Perfect Balance type.",
+      "Type3_all": "Good cooperation with all types.",
+      "Type4_Type3_Type5": "Creative synergy with Perfect Balance and Extreme Right Brain types.",
+      "Type5_Type4": "Artistic empathy with Right Brain Dominant type.",
+      "Type6_Type3": "Flexible cooperation with Perfect Balance type."
+    },
+    "caution": {
+      "Type1_Type5": "Communication may be difficult with Extreme Right Brain type.",
+      "Type2_Type4": "May have different approaches with Right Brain Dominant type.",
+      "Type3_none": "Can communicate with all types.",
+      "Type4_Type1": "May have thinking conflicts with Extreme Left Brain type.",
+      "Type5_Type1": "Completely different world from Extreme Left Brain type.",
+      "Type6_Type1_Type5": "Understanding may be difficult with extreme types (Extreme Left/Right Brain)."
+    },
+    "shareMessages": {
+      "default": "I'm {type}! Left vs Right Brain test complete! What are you? 🧠🎨",
+      "kakao": "I'm {type}! Left vs Right Brain test complete! What are you? 🧠🎨",
+      "wechat": "I'm {type}! Left vs Right Brain test complete! What are you? 🧠🎨",
+      "whatsapp": "I'm {type}! Left vs Right Brain test complete! What are you? 🧠🎨",
+      "telegram": "I'm {type}! Left vs Right Brain test complete! What are you? 🧠🎨",
+      "line": "I'm {type}! Left vs Right Brain test complete! What are you? 🧠🎨"
+    },
+    "result": {
+      "longDescription": "Long Description",
+      "noCompatibleTypes": "Can form good combinations.",
+      "noCautionTypes": "This combination needs attention."
+    }
+  },
   "timeEfficiencyTest": {
     "startMessage": {
       "line1": "\"How efficiently do you use your 24 hours a day?\"",

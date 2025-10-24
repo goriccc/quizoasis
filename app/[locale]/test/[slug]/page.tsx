@@ -18,6 +18,7 @@ import { challengePotentialQuestions, challengePotentialResults } from '@/lib/ch
 import { stressReliefQuestions, stressReliefResults } from '@/lib/stressReliefData';
 import { investmentStyleQuestions, investmentStyleResults } from '@/lib/investmentStyleData';
 import { timeEfficiencyQuestions, timeEfficiencyResults } from '@/lib/timeEfficiencyData';
+import { brainQuestions, brainResults } from '@/lib/brainData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -114,6 +115,9 @@ const InvestmentStyleTestClient = dynamic(() => import('@/components/InvestmentS
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TimeEfficiencyTestClient = dynamic(() => import('@/components/TimeEfficiencyTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const BrainTestClient = dynamic(() => import('@/components/BrainTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -326,6 +330,7 @@ export default async function TestPage({ params }: Props) {
       notFound();
     }
   }
+
 
   // 시간 효율성 테스트의 경우 Supabase에서 시도
   if (slug === 'time-efficiency-test') {
@@ -1296,6 +1301,11 @@ export default async function TestPage({ params }: Props) {
       questions: timeEfficiencyQuestions,
       results: timeEfficiencyResults
     };
+  } else if (slug === 'left-right-brain-test') {
+    testData = {
+      questions: brainQuestions,
+      results: brainResults
+    };
   } else {
     testData = getTestData(slug);
   }
@@ -1373,8 +1383,9 @@ export default async function TestPage({ params }: Props) {
   const TestClient = 
     test.type === 'stress' ? StressTestClient :
     test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : DatingTestClient) :
-    test.type === 'career' ? (slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'investment-style-test' ? InvestmentStyleTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : CareerTestClient) :
+    test.type === 'career' ? (slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'investment-style-test' ? InvestmentStyleTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : slug === 'left-right-brain-test' ? BrainTestClient : CareerTestClient) :
     slug === 'time-efficiency-test' ? TimeEfficiencyTestClient :
+    slug === 'left-right-brain-test' ? BrainTestClient :
     MBTITestClient;
 
   return (

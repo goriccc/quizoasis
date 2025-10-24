@@ -41,6 +41,101 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "brainTest": {
+    "startMessage": {
+      "line1": "\"Não trái? Não phải? Chúng tôi phân tích chính xác xu hướng não của bạn!\"",
+      "line2": "Logic vs Cảm xúc / Phân tích vs Sáng tạo / Có kế hoạch vs Tự phát / Ngôn ngữ vs Hình ảnh",
+      "line3": "Những người có não trái phát triển mạnh về logic và phân tích, trong khi những người có não phải phát triển xuất sắc về sáng tạo và cảm xúc.",
+      "line4": "Bạn thuộc phía nào? Hay bạn có sự cân bằng hoàn hảo?",
+      "line5": "Chỉ trong 3 phút, bạn có thể biết loại não của mình!",
+      "line6": "Tổng cộng {count} người đã tham gia!"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "yourResult": "Kết quả của bạn",
+      "characteristics": "🎯 Đặc điểm",
+      "advantages": "✅ Ưu điểm",
+      "disadvantages": "⚠️ Nhược điểm",
+      "advice": "💡 Lời khuyên",
+      "recommendedJobs": "💼 Nghề nghiệp được đề xuất",
+      "compatibleTypes": "💖 Các kiểu tương thích",
+      "cautionTypes": "⚠️ Các kiểu cần thận trọng",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại kiểm tra",
+      "otherTests": "Xem các kiểm tra khác",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "telegram": "Telegram",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Khu vực quảng cáo AdSense",
+      "similarTests": "Bài kiểm tra tương tự",
+      "advice": "Lời khuyên",
+      "compatibleTypes": "Các kiểu tương thích",
+      "cautionTypes": "Các kiểu cần thận trọng",
+      "clipboardCopySuccess": "Kết quả đã được sao chép vào clipboard!",
+      "shareFeatureError": "Tính năng chia sẻ không khả dụng.",
+      "wechatLinkCopy": "Liên kết đã được sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInitializing": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk.",
+      "linkCopySuccess": "Liên kết đã được sao chép!",
+      "startTest": "Bắt đầu kiểm tra",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "questions": "câu hỏi",
+      "time": "3 phút",
+      "participants": "người tham gia",
+      "yourResult": "Kết quả của bạn",
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "totalParticipants": "Tổng cộng {count} người tham gia!",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại kiểm tra",
+      "otherTests": "Xem kiểm tra khác",
+      "shareWithFriends": "Thử với bạn bè"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
+      "kakao": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
+      "wechat": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
+      "whatsapp": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
+      "telegram": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
+      "line": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨"
+    },
+    "compatibility": {
+      "Type1_Type2": "Có thể có cuộc trò chuyện logic với kiểu Não trái ưu thế.",
+      "Type2_Type3": "Kết hợp lý tưởng với kiểu Cân bằng hoàn hảo.",
+      "Type3_all": "Hợp tác tốt với tất cả các kiểu.",
+      "Type4_Type3_Type5": "Hiệu ứng cộng hưởng sáng tạo với kiểu Cân bằng hoàn hảo và Não phải cực đoan.",
+      "Type5_Type4": "Đồng cảm nghệ thuật với kiểu Não phải ưu thế.",
+      "Type6_Type3": "Hợp tác linh hoạt với kiểu Cân bằng hoàn hảo."
+    },
+    "caution": {
+      "Type1_Type5": "Giao tiếp có thể khó khăn với kiểu Não phải cực đoan.",
+      "Type2_Type4": "Có thể có cách tiếp cận khác nhau với kiểu Não phải ưu thế.",
+      "Type3_none": "Có thể giao tiếp với tất cả các kiểu.",
+      "Type4_Type1": "Có thể có xung đột tư duy với kiểu Não trái cực đoan.",
+      "Type5_Type1": "Thế giới hoàn toàn khác với kiểu Não trái cực đoan.",
+      "Type6_Type1_Type5": "Hiểu biết có thể khó khăn với các kiểu cực đoan (Não trái/phải cực đoan)."
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨"
+    },
+    "result": {
+      "longDescription": "Mô tả chi tiết",
+      "noCompatibleTypes": "Có thể tạo thành những kết hợp tốt.",
+      "noCautionTypes": "Sự kết hợp này cần chú ý."
+    }
+  },
   "timeEfficiencyTest": {
     "startMessage": {
       "line1": "\"Bạn sử dụng 24 giờ một ngày hiệu quả đến mức nào?\"",

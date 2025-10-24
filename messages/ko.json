@@ -44,6 +44,102 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "brainTest": {
+    "startMessage": {
+      "line1": "\"좌뇌? 우뇌? 당신의 두뇌 성향을 정확히 분석합니다!\"",
+      "line2": "논리적 vs 감성적 / 분석적 vs 창의적 / 계획적 vs 즉흥적 / 언어적 vs 시각적",
+      "line3": "좌뇌가 발달한 사람은 논리와 분석에 강하고, 우뇌가 발달한 사람은 창의와 감성에 뛰어납니다.",
+      "line4": "당신은 어느 쪽일까요? 아니면 완벽한 균형을 이루고 있나요?",
+      "line5": "단 3분이면 당신의 뇌 유형을 알 수 있습니다!",
+      "line6": "총 {count}명이 참여했어요!"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "shareWithFriends": "친구와 함께 해보기",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "yourResult": "당신의 결과",
+      "characteristics": "🎯 특징",
+      "advantages": "✅ 장점",
+      "disadvantages": "⚠️ 단점",
+      "advice": "💡 조언",
+      "recommendedJobs": "💼 추천 직업",
+      "compatibleTypes": "💖 어울리는 타입",
+      "cautionTypes": "⚠️ 주의 타입",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "wechat": "위챗",
+      "telegram": "텔레그램",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "adsenseTitle": "AdSense 광고 영역",
+      "similarTests": "유사한 다른 테스트",
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "advice": "조언",
+      "compatibleTypes": "어울리는 타입",
+      "cautionTypes": "주의 타입",
+      "clipboardCopySuccess": "결과가 클립보드에 복사되었습니다!",
+      "shareFeatureError": "공유 기능을 사용할 수 없습니다.",
+      "wechatLinkCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInitializing": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoShareError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "linkCopySuccess": "링크가 복사되었습니다!",
+      "startTest": "테스트 시작",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "questions": "문항",
+      "time": "3분",
+      "participants": "명 참여",
+      "yourResult": "당신의 결과",
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "totalParticipants": "총 {count}명이 참여했어요!",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기",
+      "shareWithFriends": "친구와 함께 해보기"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "kakao": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "wechat": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "whatsapp": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "telegram": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "line": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨"
+    },
+    "compatibility": {
+      "Type1_Type2": "좌뇌 우세형과 논리적 대화가 가능합니다.",
+      "Type2_Type3": "완벽한 균형형과 이상적 조합입니다.",
+      "Type3_all": "모든 타입과 좋은 협력이 가능합니다.",
+      "Type4_Type3_Type5": "완벽한 균형형, 극우뇌형과 창의적 시너지를 낼 수 있습니다.",
+      "Type5_Type4": "우뇌 우세형과 예술적 공감이 가능합니다.",
+      "Type6_Type3": "완벽한 균형형과 유연한 협력이 가능합니다."
+    },
+    "caution": {
+      "Type1_Type5": "극우뇌형과는 소통이 어려울 수 있습니다.",
+      "Type2_Type4": "우뇌 우세형과는 접근 방식 차이가 있을 수 있습니다.",
+      "Type3_none": "모든 타입과 소통 가능합니다.",
+      "Type4_Type1": "극좌뇌형과는 사고방식 충돌이 있을 수 있습니다.",
+      "Type5_Type1": "극좌뇌형과는 완전히 다른 세계입니다.",
+      "Type6_Type1_Type5": "극단형(극좌뇌, 극우뇌)과는 이해가 어려울 수 있습니다."
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "kakao": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "wechat": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "whatsapp": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "telegram": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
+      "line": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨"
+    },
+    "result": {
+      "longDescription": "긴 설명",
+      "noCompatibleTypes": "좋은 조합을 이룰 수 있습니다.",
+      "noCautionTypes": "주의가 필요한 조합입니다."
+    }
+  },
   "timeEfficiencyTest": {
     "startMessage": {
       "line1": "\"하루 24시간, 당신은 얼마나 효율적으로 사용하고 있나요?\"",
