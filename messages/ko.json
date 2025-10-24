@@ -136,8 +136,8 @@
     },
     "result": {
       "longDescription": "긴 설명",
-      "noCompatibleTypes": "좋은 조합을 이룰 수 있습니다.",
-      "noCautionTypes": "주의가 필요한 조합입니다."
+      "noCompatibleTypes": "모든 타입과 좋은 협력이 가능합니다.",
+      "noCautionTypes": "모두와 소통이 가능합니다."
     }
   },
   "timeEfficiencyTest": {

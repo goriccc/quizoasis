@@ -166,8 +166,8 @@
     },
     "result": {
       "longDescription": "Deskripsi Panjang",
-      "noCompatibleTypes": "Dapat membentuk kombinasi yang baik.",
-      "noCautionTypes": "Kombinasi ini perlu diperhatikan."
+      "noCompatibleTypes": "Dapat berkolaborasi dengan baik dengan semua tipe.",
+      "noCautionTypes": "Dapat berkomunikasi dengan semua orang."
     }
   },
   "timeEfficiencyTest": {

@@ -166,8 +166,8 @@
     },
     "result": {
       "longDescription": "详细说明",
-      "noCompatibleTypes": "可以形成良好的组合。",
-      "noCautionTypes": "这种组合需要注意。"
+      "noCompatibleTypes": "可以与所有类型良好合作。",
+      "noCautionTypes": "可以与所有人沟通。"
     }
   },
   "timeEfficiencyTest": {

@@ -166,8 +166,8 @@
     },
     "result": {
       "longDescription": "Mô tả chi tiết",
-      "noCompatibleTypes": "Có thể tạo thành những kết hợp tốt.",
-      "noCautionTypes": "Sự kết hợp này cần chú ý."
+      "noCompatibleTypes": "Có thể hợp tác tốt với tất cả các loại.",
+      "noCautionTypes": "Có thể giao tiếp với mọi người."
     }
   },
   "timeEfficiencyTest": {
