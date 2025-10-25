@@ -1319,5 +1319,53 @@
       "linkCopied": "リンクがクリップボードにコピーされました！",
       "wechatCopy": "WeChat共有のためリンクをコピーしました。WeChatで貼り付けてください。"
     }
+  },
+  "adventurerTest": {
+    "startMessage": {
+      "line1": "とりあえずやってみる vs 考えることから始める",
+      "line2": "「とりあえずやってみろ！」と叫ぶ人",
+      "line3": "「ゆっくり、慎重に」と言う人。",
+      "line4": "新しいレストランができたらすぐに行く人、",
+      "line5": "レビューを探して評価を確認する人。",
+      "line6": "突然の旅行の誘いに「いいね！」と言う人、",
+      "line7": "「いつ？どこ？いくら？」と聞く人。",
+      "line8": "あなたはどちらですか？",
+      "line9": "所要時間わずか2分！直感で素早く選択してください 🎯"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "participants": "参加者",
+      "shareWithFriends": "友達とシェア",
+      "progress": "進捗",
+      "retakeTest": "やり直す",
+      "shareResult": "結果をシェア",
+      "retake": "やり直す",
+      "otherTests": "他のテスト",
+      "similarTests": "🎯 類似のテスト トップ5",
+      "popularTests": "🔥 人気のテスト トップ5"
+    },
+    "result": {
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "score": "傾向スコア",
+      "advice": "アドバイス",
+      "warning": "リスク管理"
+    },
+    "shareMessages": {
+      "default": "私は{type}！🎯 冒険家 vs 慎重派、あなたはどちら？",
+      "kakao": "私は{type}！🎯 冒険家 vs 慎重派、あなたはどちら？",
+      "wechat": "私は{type}！🎯 冒険家 vs 慎重派、あなたはどちら？",
+      "whatsapp": "私は{type}！🎯 冒険家 vs 慎重派、あなたはどちら？",
+      "telegram": "私は{type}！🎯 冒険家 vs 慎重派、あなたはどちら？",
+      "line": "私は{type}！🎯 冒険家 vs 慎重派、あなたはどちら？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

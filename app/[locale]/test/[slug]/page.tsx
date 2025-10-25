@@ -23,6 +23,7 @@ import { leadershipQuestions, leadershipResults } from '@/lib/leadershipData';
 import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
 import { optimismQuestions, optimismResults } from '@/lib/optimismData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
+import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -134,6 +135,9 @@ const OptimismTestClient = dynamic(() => import('@/components/OptimismTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const AdventurerTestClient = dynamic(() => import('@/components/AdventurerTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1321,6 +1325,59 @@ export default async function TestPage({ params }: Props) {
           questions={lifePrioritiesQuestions}
           results={lifePrioritiesResults}
           questionCount={lifePrioritiesQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 모험가 vs 신중파 테스트
+  if (slug === 'adventurer-vs-cautious') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'adventurer-vs-cautious',
+      title: {
+        ko: '나는 모험가? vs 신중파?',
+        en: 'Am I an Adventurer or Cautious?',
+        ja: '私は冒険家か慎重派か？',
+        'zh-CN': '我是冒险家还是谨慎派？',
+        'zh-TW': '我是冒險家還是謹慎派？',
+        vi: 'Tôi là Nhà Thám Hiểm hay Người Thận Trọng?',
+        id: 'Apakah saya Petualang atau Hati-hati?'
+      },
+      description: {
+        ko: '일단 해보기 vs 생각부터 하기',
+        en: 'Try it vs Think first',
+        ja: 'とりあえずやってみる vs 考えることから始める',
+        'zh-CN': '先试试 vs 先思考',
+        'zh-TW': '先試試 vs 先思考',
+        vi: 'Thử đã vs Nghĩ trước',
+        id: 'Coba dulu vs Pikir dulu'
+      },
+      thumbnail: 'test_206_adventurer_vs_cautious.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['성격', '선택', '라이프스타일'],
+        en: ['Personality', 'Choice', 'Lifestyle'],
+        ja: ['性格', '選択', 'ライフスタイル'],
+        'zh-CN': ['性格', '选择', '生活方式'],
+        'zh-TW': ['性格', '選擇', '生活方式'],
+        vi: ['Tính cách', 'Lựa chọn', 'Lối sống'],
+        id: ['Kepribadian', 'Pilihan', 'Gaya hidup']
+      }
+    };
+
+    return (
+      <>
+        <AdventurerTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={adventurerQuestions}
+          results={adventurerResults}
+          questionCount={adventurerQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

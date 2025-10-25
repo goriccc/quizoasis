@@ -1318,5 +1318,53 @@
       "linkCopied": "Liên kết đã được sao chép vào clipboard!",
       "wechatCopy": "Đã sao chép liên kết để chia sẻ WeChat. Vui lòng dán trong WeChat."
     }
+  },
+  "adventurerTest": {
+    "startMessage": {
+      "line1": "Thử ngay vs Nghĩ trước",
+      "line2": "Một số người hét \"Làm ngay đi!\"",
+      "line3": "Một số người nói \"Từ từ, cẩn thận\".",
+      "line4": "Những người đi đến nhà hàng mới ngay lập tức,",
+      "line5": "Những người tìm đánh giá và kiểm tra điểm trước.",
+      "line6": "Những người nói \"Tuyệt!\" khi được mời đi du lịch đột ngột,",
+      "line7": "Những người hỏi \"Khi nào? Ở đâu? Bao nhiêu?\".",
+      "line8": "Bạn thuộc phe nào?",
+      "line9": "Chỉ 2 phút! Chọn nhanh bằng trực giác của bạn 🎯"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "Người tham gia",
+      "shareWithFriends": "Chia sẻ với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến"
+    },
+    "result": {
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "score": "Điểm xu hướng",
+      "advice": "Lời khuyên",
+      "warning": "Quản lý rủi ro"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 🎯 Người thám hiểm vs Người thận trọng, bạn thuộc phe nào?",
+      "kakao": "Tôi là {type}! 🎯 Người thám hiểm vs Người thận trọng, bạn thuộc phe nào?",
+      "wechat": "Tôi là {type}! 🎯 Người thám hiểm vs Người thận trọng, bạn thuộc phe nào?",
+      "whatsapp": "Tôi là {type}! 🎯 Người thám hiểm vs Người thận trọng, bạn thuộc phe nào?",
+      "telegram": "Tôi là {type}! 🎯 Người thám hiểm vs Người thận trọng, bạn thuộc phe nào?",
+      "line": "Tôi là {type}! 🎯 Người thám hiểm vs Người thận trọng, bạn thuộc phe nào?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

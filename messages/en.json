@@ -1377,6 +1377,54 @@
       "linkCopied": "Link copied to clipboard!",
       "wechatCopy": "Link copied for WeChat sharing. Paste in WeChat."
     }
+  },
+  "adventurerTest": {
+    "startMessage": {
+      "line1": "Try it vs Think first",
+      "line2": "Some people shout \"Just do it!\"",
+      "line3": "Some people say \"Slowly, carefully\".",
+      "line4": "Those who go to new restaurants right away,",
+      "line5": "Those who check reviews and ratings first.",
+      "line6": "Those who say \"Great!\" to a sudden trip invitation,",
+      "line7": "Those who ask \"When? Where? How much?\".",
+      "line8": "Which side are you on?",
+      "line9": "Just 2 minutes! Choose quickly with your intuition 🎯"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "Participants",
+      "shareWithFriends": "Share with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "popularTests": "🔥 Top 5 Popular Tests"
+    },
+    "result": {
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "score": "Tendency Score",
+      "advice": "Advice",
+      "warning": "Risk Management"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! 🎯 Adventurer vs Cautious, which side are you?",
+      "kakao": "I'm {type}! 🎯 Adventurer vs Cautious, which side are you?",
+      "wechat": "I'm {type}! 🎯 Adventurer vs Cautious, which side are you?",
+      "whatsapp": "I'm {type}! 🎯 Adventurer vs Cautious, which side are you?",
+      "telegram": "I'm {type}! 🎯 Adventurer vs Cautious, which side are you?",
+      "line": "I'm {type}! 🎯 Adventurer vs Cautious, which side are you?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    }
   }
 }
 
