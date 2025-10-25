@@ -1716,5 +1716,60 @@
       "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
+  },
+  "reactionStyleTest": {
+    "startMessage": {
+      "line1": "Analisis Gaya Reaksi! Apa reaksi asli Anda?",
+      "line2": "Ketika mendengar kabar baik,",
+      "line3": "ketika mendengar kabar buruk,",
+      "line4": "ketika masalah muncul,",
+      "line5": "ketika hal tak terduga terjadi...\nSetiap orang bereaksi berbeda.\nAda yang mengekspresikan emosi langsung,\nada yang menganalisis logis,\nada yang bertindak langsung,\nada yang mengamati dengan tenang.\nAnalisis gaya reaksi Anda!\nHanya butuh 3 menit! Silakan jawab dengan jujur 🎯"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "totalParticipants": "{count} orang berpartisipasi",
+      "progress": "Kemajuan",
+      "duration": "3 menit",
+      "questions": "pertanyaan",
+      "players": " orang berpartisipasi",
+      "question": "Pertanyaan",
+      "shareResult": "Bagikan Hasil",
+      "share": "Bagikan",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "Salin Tautan",
+      "retake": "Ulang Tes",
+      "otherTests": "Tes Lainnya",
+      "similarTests": "Tes Serupa",
+      "recommendedProducts": "Produk Rekomendasi",
+      "popularTests": "Tes Populer",
+      "adsenseTitle": "Iklan"
+    },
+    "result": {
+      "characteristics": "Karakteristik",
+      "reactionFeatures": "Fitur Reaksi",
+      "strengths": "Kelebihan",
+      "weaknesses": "Kelemahan",
+      "advice": "Saran"
+    },
+    "shareMessages": {
+      "default": "Gaya reaksi saya adalah {type}! 🎯 Bagaimana Anda bereaksi?",
+      "kakao": "Gaya reaksi saya adalah {type}! 🎯 Bagaimana Anda bereaksi?",
+      "wechat": "Gaya reaksi saya adalah {type}! 🎯 Bagaimana Anda bereaksi?",
+      "whatsapp": "Gaya reaksi saya adalah {type}! 🎯 Bagaimana Anda bereaksi?",
+      "telegram": "Gaya reaksi saya adalah {type}! 🎯 Bagaimana Anda bereaksi?",
+      "line": "Gaya reaksi saya adalah {type}! 🎯 Bagaimana Anda bereaksi?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "shareFailed": "Tidak dapat menggunakan fitur berbagi.",
+      "wechatCopy": "Tautan telah disalin! Silakan tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    }
   }
 }

@@ -31,6 +31,7 @@ import { decisionSpeedQuestions, decisionSpeedResults } from '@/lib/decisionSpee
 import { competitivenessQuestions, competitivenessResults } from '@/lib/competitivenessData';
 import { plannerVsSpontaneousQuestions, plannerVsSpontaneousResults } from '@/lib/plannerVsSpontaneousData';
 import { datingStyleQuestions, datingStyleResults } from '@/lib/datingStyleData';
+import { reactionStyleQuestions, reactionStyleResults } from '@/lib/reactionStyleData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -49,6 +50,9 @@ const SignalTestClient = dynamic(() => import('@/components/SignalTestClient'), 
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const AttachmentTestClient = dynamic(() => import('@/components/AttachmentTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const ReactionStyleTestClient = dynamic(() => import('@/components/ReactionStyleTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const FriendTestClient = dynamic(() => import('@/components/FriendTestClient'), {
@@ -1678,6 +1682,59 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
+  // 반응 스타일 테스트
+  if (slug === 'reaction-style-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'reaction-style-test',
+      title: {
+        ko: '당신은 어떻게 반응할까요?',
+        en: 'How do you react?',
+        ja: 'あなたはどう反応しますか？',
+        'zh-CN': '你会如何反应？',
+        'zh-TW': '你會如何反应？',
+        vi: 'Bạn phản ứng như thế nào?',
+        id: 'Bagaimana Anda bereaksi?'
+      },
+      description: {
+        ko: '당신의 진짜 반응은? 상황에 따른 반응 스타일을 분석해보세요!',
+        en: 'What is your real reaction? Analyze your reaction style to different situations!',
+        ja: 'あなたの本当の反応は？様々な状況での反応スタイルを分析してみてください！',
+        'zh-CN': '你的真实反应是什么？分析你在不同情况下的反应风格！',
+        'zh-TW': '你的真實反應是什麼？分析你在不同情況下的反應風格！',
+        vi: 'Phản ứng thực sự của bạn là gì? Hãy phân tích phong cách phản ứng của bạn trong các tình huống khác nhau!',
+        id: 'Apa reaksi asli Anda? Analisis gaya reaksi Anda dalam situasi yang berbeda!'
+      },
+      thumbnail: 'test_225_reaction_style.jpg',
+      type: 'personality',
+      category: 'psychology',
+      tags: {
+        ko: ['성격', '심리'],
+        en: ['Personality', 'Psychology'],
+        ja: ['性格', '心理'],
+        'zh-CN': ['性格', '心理'],
+        'zh-TW': ['性格', '心理'],
+        vi: ['Tính cách', 'Tâm lý'],
+        id: ['Kepribadian', 'Psikologi']
+      },
+      play_count: 0
+    };
+
+    return (
+      <ReactionStyleTestClient
+        locale={locale as Locale}
+        slug={slug}
+        title={test.title[locale] || test.title.ko}
+        description={test.description?.[locale] || test.description?.ko || ''}
+        questions={reactionStyleQuestions}
+        results={reactionStyleResults}
+        questionCount={reactionStyleQuestions.length}
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+        similarTests={[]}
+      />
+    );
+  }
+
   // 데이트 스타일 테스트
   if (slug === 'my-dating-style') {
     const test = await getTestBySlug(slug) || {
@@ -1777,6 +1834,59 @@ export default async function TestPage({ params }: Props) {
           questions={plannerVsSpontaneousQuestions}
           results={plannerVsSpontaneousResults}
           questionCount={plannerVsSpontaneousQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 반응 스타일 테스트
+  if (slug === 'reaction-style-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'reaction-style-test',
+      title: {
+        ko: '당신은 어떻게 반응할까요?',
+        en: 'How do you react?',
+        ja: 'あなたはどう反応しますか？',
+        'zh-CN': '你会如何反应？',
+        'zh-TW': '你會如何反應？',
+        vi: 'Bạn phản ứng như thế nào?',
+        id: 'Bagaimana Anda bereaksi?'
+      },
+      description: {
+        ko: '반응 스타일 분석! 당신의 진짜 반응은?',
+        en: 'Reaction style analysis! What is your real reaction?',
+        ja: '反応スタイル分析！あなたの本当の反応は？',
+        'zh-CN': '反应风格分析！你的真实反应是什么？',
+        'zh-TW': '反應風格分析！你的真實反應是什麼？',
+        vi: 'Phân tích phong cách phản ứng! Phản ứng thực sự của bạn là gì?',
+        id: 'Analisis gaya reaksi! Apa reaksi asli Anda?'
+      },
+      thumbnail: 'test_225_reaction_style.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['성격', '심리'],
+        en: ['Personality', 'Psychology'],
+        ja: ['性格', '心理学'],
+        'zh-CN': ['性格', '心理学'],
+        'zh-TW': ['性格', '心理學'],
+        vi: ['Tính cách', 'Tâm lý'],
+        id: ['Kepribadian', 'Psikologi']
+      }
+    };
+
+    return (
+      <>
+        <ReactionStyleTestClient
+          locale={locale as Locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={reactionStyleQuestions}
+          results={reactionStyleResults}
+          questionCount={reactionStyleQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -2079,6 +2189,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;
     else if (slug === 'my-dating-style') TestClient = DatingStyleTestClient;
+    else if (slug === 'reaction-style-test') TestClient = ReactionStyleTestClient;
     else if (slug === 'future-career-match-test') TestClient = CareerTestClient;
     else if (slug === 'job-strength-test') TestClient = JobStrengthTestClient;
     else if (slug === 'work-values-test') TestClient = WorkValuesTestClient;

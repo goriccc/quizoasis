@@ -1717,5 +1717,60 @@
       "kakaoInit": "カカオトーク共有機能を初期化しています。しばらく後でもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "reactionStyleTest": {
+    "startMessage": {
+      "line1": "反応スタイル分析！あなたの本当の反応は？",
+      "line2": "良い知らせを聞いた時、",
+      "line3": "悪い知らせを聞いた時、",
+      "line4": "問題が発生した時、",
+      "line5": "予期しないことが起こった時...\n人それぞれ反応の仕方が違います。\nある人は感情をすぐに表現し、\nある人は論理的に分析し、\nある人は即座に行動し、\nある人は冷静に観察します。\nあなたの反応スタイルを分析してみましょう！\n所要時間わずか3分！正直に答えてください 🎯"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "totalParticipants": "{count}名参加",
+      "progress": "進捗",
+      "duration": "所要時間3分",
+      "questions": "問",
+      "players": "名参加",
+      "question": "質問",
+      "shareResult": "結果を共有",
+      "share": "共有",
+      "kakao": "カカオトーク",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "リンクコピー",
+      "retake": "再テスト",
+      "otherTests": "他のテスト",
+      "similarTests": "類似テスト",
+      "recommendedProducts": "おすすめ商品",
+      "popularTests": "人気テスト",
+      "adsenseTitle": "広告"
+    },
+    "result": {
+      "characteristics": "特徴",
+      "reactionFeatures": "反応特徴",
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "advice": "アドバイス"
+    },
+    "shareMessages": {
+      "default": "私の反応スタイルは{type}！🎯 あなたはどう反応する？",
+      "kakao": "私の反応スタイルは{type}！🎯 あなたはどう反応する？",
+      "wechat": "私の反応スタイルは{type}！🎯 あなたはどう反応する？",
+      "whatsapp": "私の反応スタイルは{type}！🎯 あなたはどう反応する？",
+      "telegram": "私の反応スタイルは{type}！🎯 あなたはどう反応する？",
+      "line": "私の反応スタイルは{type}！🎯 あなたはどう反応する？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらく後でもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

@@ -60,7 +60,19 @@ export const DATING_PRODUCT_KEYWORDS: Record<string, string[]> = {
   homecafe: ['couple home decor', 'cozy blanket couple', 'couple movie night', 'board games couple', 'home date night'],
   romantic: ['couple jewelry', 'couple rings', 'couple necklace', 'romantic gifts', 'couple bracelet'],
   active: ['couple sports', 'outdoor couple', 'fitness couple', 'couple adventure gear', 'couple athletic'],
-  balanced: ['couple accessories', 'couple gifts', 'couple matching', 'couple everyday', 'relationship gifts']
+  balanced: ['couple accessories', 'couple gifts', 'couple matching', 'couple everyday', 'relationship gifts'],
+  // 반응 스타일 테스트용 키워드 (더 일반화)
+  'reaction-style': ['gifts', 'accessories', 'home', 'books', 'toys'],
+  'Type1': ['jewelry', 'fashion', 'beauty', 'art', 'creative'],
+  'Type2': ['books', 'puzzles', 'games', 'office', 'tech'],
+  'Type3': ['sports', 'fitness', 'outdoor', 'tools', 'gear'],
+  'Type4': ['home', 'meditation', 'wellness', 'comfort', 'relaxation'],
+  // 인도네시아어 전용 기본 키워드 (정말 일반적인 것들)
+  'reaction-style-id': ['phone', 'case', 'watch', 'bag', 'gift'],
+  'Type1-id': ['phone', 'case', 'watch', 'bag', 'gift'],
+  'Type2-id': ['phone', 'case', 'watch', 'bag', 'gift'],
+  'Type3-id': ['phone', 'case', 'watch', 'bag', 'gift'],
+  'Type4-id': ['phone', 'case', 'watch', 'bag', 'gift']
 };
 
 // 언어별 키워드 번역
@@ -133,14 +145,82 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
       'office': '辦公',
       'sports': '運動',
       'fashion': '時尚'
+    },
+    id: {
+      'planner': 'perencana',
+      'notebook': 'buku catatan',
+      'book': 'buku',
+      'organizer': 'alat organisasi',
+      'puzzle': 'teka-teki',
+      'gadget': 'gadget',
+      'watch': 'jam tangan',
+      'journal': 'jurnal',
+      'art': 'seni',
+      'creative': 'kreatif',
+      'travel': 'perjalanan',
+      'home': 'rumah',
+      'office': 'kantor',
+      'sports': 'olahraga',
+      'fashion': 'mode',
+      'gifts': 'hadiah',
+      'accessories': 'aksesoris',
+      'books': 'buku',
+      'toys': 'mainan',
+      'jewelry': 'perhiasan',
+      'beauty': 'kecantikan',
+      'puzzles': 'teka-teki',
+      'games': 'permainan',
+      'tech': 'teknologi',
+      'fitness': 'kebugaran',
+      'outdoor': 'luar ruangan',
+      'tools': 'peralatan',
+      'gear': 'peralatan',
+      'meditation': 'meditasi',
+      'wellness': 'kesehatan',
+      'comfort': 'kenyamanan',
+      'relaxation': 'relaksasi',
+      'phone': 'hp',
+      'case': 'case',
+      'bag': 'tas',
+      'gift': 'hadiah'
+    },
+    vi: {
+      'planner': 'kế hoạch',
+      'notebook': 'sổ ghi chép',
+      'book': 'sách',
+      'organizer': 'dụng cụ tổ chức',
+      'puzzle': 'câu đố',
+      'gadget': 'thiết bị',
+      'watch': 'đồng hồ',
+      'journal': 'nhật ký',
+      'art': 'nghệ thuật',
+      'creative': 'sáng tạo',
+      'travel': 'du lịch',
+      'home': 'nhà',
+      'office': 'văn phòng',
+      'sports': 'thể thao',
+      'fashion': 'thời trang',
+      'gifts': 'quà tặng',
+      'accessories': 'phụ kiện',
+      'books': 'sách',
+      'toys': 'đồ chơi',
+      'jewelry': 'trang sức',
+      'beauty': 'làm đẹp',
+      'puzzles': 'câu đố',
+      'games': 'trò chơi',
+      'tech': 'công nghệ',
+      'fitness': 'thể dục',
+      'outdoor': 'ngoài trời',
+      'tools': 'dụng cụ',
+      'gear': 'thiết bị',
+      'meditation': 'thiền định',
+      'wellness': 'sức khỏe',
+      'comfort': 'thoải mái',
+      'relaxation': 'thư giãn'
     }
   };
 
   if (locale === 'en' || !translations[locale]) {
-    // 인도네시아어와 베트남어는 일반 키워드 사용
-    if (locale === 'id' || locale === 'vi') {
-      return ['toys', 'gifts', 'accessories', 'home'];
-    }
     return keywords;
   }
 
@@ -192,6 +272,20 @@ export const getProductKeywordsForStress = (stressType: string, locale: string =
 
 // 데이트 스타일에 맞는 상품 추천 키워드 가져오기
 export const getProductKeywordsForDating = (datingType: string, locale: string = 'en'): string[] => {
+  // 인도네시아어의 경우 기본 키워드 사용 (번역 없이)
+  if (locale === 'id' && (datingType === 'reaction-style' || datingType.startsWith('Type'))) {
+    const idKeyword = datingType === 'reaction-style' ? 'reaction-style-id' : `${datingType}-id`;
+    const keywords = DATING_PRODUCT_KEYWORDS[idKeyword] || DATING_PRODUCT_KEYWORDS['reaction-style-id'];
+    // 인도네시아어는 번역 없이 영어 키워드 그대로 사용
+    return keywords;
+  }
+  
+  // 반응 스타일 테스트의 경우 특별 처리
+  if (datingType === 'reaction-style' || datingType.startsWith('Type')) {
+    const keywords = DATING_PRODUCT_KEYWORDS[datingType] || DATING_PRODUCT_KEYWORDS['reaction-style'];
+    return translateKeywords(keywords, locale);
+  }
+  
   const keywords = DATING_PRODUCT_KEYWORDS[datingType] || DATING_PRODUCT_KEYWORDS['balanced'];
   
   // 키워드가 너무 일반적이면 'couple' 또는 'dating'을 자동 추가
@@ -424,35 +518,35 @@ export const getPopularProducts = (): AliExpressProduct[] => {
   const popularProducts = [
     {
       id: popularProductIds[0],
-      title: 'Hot Sale Smart Watch',
+      title: 'Smart Watch Terlaris',
       image: 'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&h=400&fit=crop',
       originalPrice: '39.99',
       salePrice: '35.99'
     },
     {
       id: popularProductIds[1],
-      title: 'Trending Wireless Earbuds',
+      title: 'Earbuds Nirkabel Populer',
       image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop',
       originalPrice: '29.99',
       salePrice: '25.99'
     },
     {
       id: popularProductIds[2],
-      title: 'Best Selling Phone Case',
+      title: 'Case HP Terbaik',
       image: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400&h=400&fit=crop',
       originalPrice: '9.99',
       salePrice: '7.99'
     },
     {
       id: popularProductIds[3],
-      title: 'Popular LED Strip Lights',
+      title: 'Lampu LED Populer',
       image: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=400&h=400&fit=crop',
       originalPrice: '19.99',
       salePrice: '17.99'
     },
     {
       id: popularProductIds[4],
-      title: 'Must Have Backpack',
+      title: 'Tas Ransel Wajib',
       image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop',
       originalPrice: '34.99',
       salePrice: '31.99'

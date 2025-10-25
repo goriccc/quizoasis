@@ -1716,5 +1716,60 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "reactionStyleTest": {
+    "startMessage": {
+      "line1": "Phân tích phong cách phản ứng! Phản ứng thực sự của bạn là gì?",
+      "line2": "Khi nghe tin tốt,",
+      "line3": "khi nghe tin xấu,",
+      "line4": "khi có vấn đề,",
+      "line5": "khi xảy ra điều bất ngờ...\nMỗi người phản ứng khác nhau.\nCó người thể hiện cảm xúc ngay lập tức,\ncó người phân tích logic,\ncó người hành động ngay lập tức,\ncó người quan sát bình tĩnh.\nPhân tích phong cách phản ứng của bạn!\nChỉ mất 3 phút! Hãy trả lời thành thật 🎯"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "totalParticipants": "{count} người tham gia",
+      "progress": "Tiến độ",
+      "duration": "3 phút",
+      "questions": "câu hỏi",
+      "players": " người tham gia",
+      "question": "Câu hỏi",
+      "shareResult": "Chia sẻ kết quả",
+      "share": "Chia sẻ",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "Sao chép liên kết",
+      "retake": "Làm lại",
+      "otherTests": "Kiểm tra khác",
+      "similarTests": "Kiểm tra tương tự",
+      "recommendedProducts": "Sản phẩm đề xuất",
+      "popularTests": "Kiểm tra phổ biến",
+      "adsenseTitle": "Quảng cáo"
+    },
+    "result": {
+      "characteristics": "Đặc điểm",
+      "reactionFeatures": "Đặc điểm phản ứng",
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
+      "advice": "Lời khuyên"
+    },
+    "shareMessages": {
+      "default": "Phong cách phản ứng của tôi là {type}! 🎯 Bạn phản ứng như thế nào?",
+      "kakao": "Phong cách phản ứng của tôi là {type}! 🎯 Bạn phản ứng như thế nào?",
+      "wechat": "Phong cách phản ứng của tôi là {type}! 🎯 Bạn phản ứng như thế nào?",
+      "whatsapp": "Phong cách phản ứng của tôi là {type}! 🎯 Bạn phản ứng như thế nào?",
+      "telegram": "Phong cách phản ứng của tôi là {type}! 🎯 Bạn phản ứng như thế nào?",
+      "line": "Phong cách phản ứng của tôi là {type}! 🎯 Bạn phản ứng như thế nào?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

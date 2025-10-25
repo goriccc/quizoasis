@@ -1758,6 +1758,7 @@
     },
     "result": {
       "characteristics": "Characteristics",
+      "reactionFeatures": "Reaction Features",
       "strengths": "Strengths",
       "weaknesses": "Weaknesses",
       "advice": "Advice"
@@ -1774,6 +1775,54 @@
       "linkCopied": "Link copied!",
       "kakaoError": "Error occurred during KakaoTalk sharing.",
       "wechatCopy": "Link copied! Paste in WeChat to share."
+    }
+  },
+  "reactionStyleTest": {
+    "startMessage": {
+      "line1": "\"Emotion? Reason? Action? Observation?\"",
+      "line2": "When you hear good news, when you hear bad news, when problems arise, when unexpected things happen...",
+      "line3": "Everyone reacts differently.",
+      "line4": "Some people express emotions immediately, some analyze logically, some act immediately, some observe calmly.",
+      "line5": "Analyze your reaction style!\nTakes 3 minutes! Please answer honestly 🎯"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "totalParticipants": "Total {count} participants!",
+      "progress": "Progress",
+      "shareResult": "Share Result",
+      "share": "Share",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "Copy Link",
+      "retake": "Retake",
+      "productRecommendations": "Recommended Products",
+      "adsenseTitle": "📢 Advertisement"
+    },
+    "result": {
+      "characteristics": "Characteristics",
+      "reactionFeatures": "Reaction Features",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "advice": "Advice"
+    },
+    "shareMessages": {
+      "default": "My reaction style is {type}! 🎯 How do you react?",
+      "kakao": "My reaction style is {type}! 🎯 How do you react?",
+      "wechat": "My reaction style is {type}! 🎯 How do you react?",
+      "whatsapp": "My reaction style is {type}! 🎯 How do you react?",
+      "telegram": "My reaction style is {type}! 🎯 How do you react?",
+      "line": "My reaction style is {type}! 🎯 How do you react?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
     }
   }
 }

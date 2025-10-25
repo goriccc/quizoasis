@@ -1714,5 +1714,53 @@
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다.",
       "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요."
     }
+  },
+  "reactionStyleTest": {
+    "startMessage": {
+      "line1": "반응 스타일 분석! 당신의 진짜 반응은?",
+      "line2": "좋은 소식을 들었을 때,",
+      "line3": "나쁜 소식을 들었을 때,",
+      "line4": "문제가 생겼을 때,",
+      "line5": "예상치 못한 일이 벌어졌을 때...\n\n사람마다 반응하는 방식이 다릅니다.\n어떤 사람은 감정을 바로 표현하고,\n어떤 사람은 논리적으로 분석하고,\n어떤 사람은 즉시 행동하고,\n어떤 사람은 침착하게 관찰합니다.\n\n당신의 반응 스타일을 분석해보세요!\n소요 시간 3분! 솔직하게 답변해주세요 🎯"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "totalParticipants": "총 {count}명이 참여했어요!",
+      "progress": "진행률",
+      "shareResult": "결과 공유하기",
+      "share": "공유하기",
+      "kakao": "카카오톡",
+      "wechat": "위챗",
+      "whatsapp": "왓츠앱",
+      "telegram": "텔레그램",
+      "line": "라인",
+      "linkCopy": "링크 복사",
+      "retake": "다시 하기",
+      "productRecommendations": "추천 상품",
+      "adsenseTitle": "📢 광고"
+    },
+    "result": {
+      "characteristics": "특성",
+      "reactionFeatures": "반응 특징",
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "advice": "조언"
+    },
+    "shareMessages": {
+      "default": "나의 반응 스타일은 {type}! 🎯 너는 어떻게 반응해?",
+      "kakao": "나의 반응 스타일은 {type}! 🎯 너는 어떻게 반응해?",
+      "wechat": "나의 반응 스타일은 {type}! 🎯 너는 어떻게 반응해?",
+      "whatsapp": "나의 반응 스타일은 {type}! 🎯 너는 어떻게 반응해?",
+      "telegram": "나의 반응 스타일은 {type}! 🎯 너는 어떻게 반응해?",
+      "line": "나의 반응 스타일은 {type}! 🎯 너는 어떻게 반응해?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
   }
 }
