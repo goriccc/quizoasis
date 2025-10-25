@@ -851,6 +851,57 @@
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
   },
+  "competitivenessTest": {
+    "startMessage": {
+      "line1": "\"이기고 싶다 vs 즐기면 돼! 당신의 승부욕은?\"",
+      "line2": "어떤 사람은 모든 것에서 1등을 원하고,",
+      "line3": "어떤 사람은 결과보다 과정이 중요합니다.",
+      "line4": "게임에서 지면 화나는 사람, \"재미있었어\" 하고 웃는 사람.",
+      "line5": "남들과 비교하며 자극받는 사람, 남의 성공을 진심으로 축하하는 사람.",
+      "line6": "당신의 승부욕은 얼마나 강한가요?",
+      "line7": "소요 시간 3분! 솔직하게 답해주세요 🏆"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "participants": "명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTests": "🔥 요즘 인기 테스트 추천 톱5",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱"
+    },
+    "result": {
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "score": "승부욕 점수",
+      "advice": "조언"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?",
+      "kakao": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?",
+      "wechat": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?",
+      "whatsapp": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?",
+      "telegram": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?",
+      "line": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "\"당신 인생에서 정말 중요한 것은 무엇인가요?\"",

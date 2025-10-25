@@ -1,25 +1,25 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { DecisionSpeedQuestion, DecisionSpeedResult, calculateDecisionSpeedResult } from '@/lib/decisionSpeedData';
+import { CompetitivenessQuestion, CompetitivenessResult, calculateCompetitivenessResult } from '@/lib/competitivenessData';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Play } from 'lucide-react';
+import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
-import { searchAliExpressProducts } from '@/lib/aliexpress';
+import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 
-interface DecisionSpeedTestClientProps {
+interface CompetitivenessTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: DecisionSpeedQuestion[];
-  results: DecisionSpeedResult[];
+  questions: CompetitivenessQuestion[];
+  results: CompetitivenessResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -32,7 +32,7 @@ interface DecisionSpeedTestClientProps {
   }>;
 }
 
-export default function DecisionSpeedTestClient({ 
+export default function CompetitivenessTestClient({ 
   locale, 
   slug, 
   title, 
@@ -43,47 +43,57 @@ export default function DecisionSpeedTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: DecisionSpeedTestClientProps) {
-  const t = useTranslations('decisionSpeedTest');
-  const tGlobal = useTranslations();
-  
-  // Locale 매핑 함수: zh-CN -> zh, zh-TW -> zhTW
-  const mapLocale = (loc: string): string => {
-    if (loc === 'zh-CN') return 'zh';
-    if (loc === 'zh-TW') return 'zhTW';
-    return loc;
-  };
-  
+}: CompetitivenessTestClientProps) {
+  const t = useTranslations();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<string[]>([]);
-  const [result, setResult] = useState<DecisionSpeedResult | null>(null);
+  const [answers, setAnswers] = useState<any[]>([]);
+  const [result, setResult] = useState<CompetitivenessResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<DecisionSpeedQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<CompetitivenessQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
+  const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
-  // 알리익스프레스 상품 미리 로드
+  // 답변 순서 섞기 (질문이 바뀔 때마다)
+  useEffect(() => {
+    if (!started) return;
+    
+    const questionKey = currentQuestion;
+    if (!shuffledOptionsMap[questionKey]) {
+      const optionsCopy = [...shuffledQuestions[currentQuestion].options];
+      for (let i = optionsCopy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+      }
+      setShuffledOptionsMap(prev => ({
+        ...prev,
+        [questionKey]: optionsCopy
+      }));
+    }
+  }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
+
+  // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
     if (locale !== 'ko' && !started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
           // 언어별 키워드 설정
           const keywords: Record<string, string> = {
-            'en': 'gifts',
-            'ja': '性格テスト',
-            'zh-CN': '性格测试',
-            'zh-TW': '性格測試',
-            'vi': 'kiểm tra tính cách',
+            'en': 'couple gifts',
+            'ja': 'カップルギフト',
+            'zh-CN': '情侣礼物',
+            'zh-TW': '情侶禮物',
+            'vi': 'quà tặng cặp đôi',
             'id': 'toys'
           };
           
-          const keyword = keywords[locale] || 'gifts';
+          const keyword = keywords[locale] || 'couple gifts';
           const products = await searchAliExpressProducts(keyword, 4, locale);
           setAliProducts(products);
         } catch (error) {
@@ -93,6 +103,52 @@ export default function DecisionSpeedTestClient({
       loadProducts();
     }
   }, [locale, started, aliProducts.length]);
+
+  // AdSense 광고 로드
+  useEffect(() => {
+    if (showResult) return;
+    
+    const timer = setTimeout(() => {
+      try {
+        if (typeof window !== 'undefined') {
+          const adElements = document.querySelectorAll('.adsbygoogle');
+          
+          adElements.forEach((el) => {
+            const status = (el as HTMLElement).getAttribute('data-adsbygoogle-status');
+            if (!status || status === '') {
+              try {
+                ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+              } catch (err) {
+                if (!(err as Error).message.includes('already have ads')) {
+                  console.error('AdSense error:', err);
+                }
+              }
+            }
+          });
+        }
+      } catch (err) {
+        console.error('AdSense error:', err);
+      }
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [started, showResult, showLoadingSpinner, showResultPopup]);
+
+  // 알리익스프레스 상품 로드 (결과에 맞춰)
+  useEffect(() => {
+    if (result && locale !== 'ko') {
+      const loadProducts = async () => {
+        try {
+          const keywords = getProductKeywordsForDating(result.type, locale);
+          const products = await searchAliExpressProducts(keywords[0], 4, locale);
+          setAliProducts(products);
+        } catch (error) {
+          console.error('상품 로드 실패:', error);
+        }
+      };
+      loadProducts();
+    }
+  }, [result, locale]);
 
   // 유사한 테스트와 인기 테스트 로드
   useEffect(() => {
@@ -167,7 +223,7 @@ export default function DecisionSpeedTestClient({
     }
   }, [slug, locale, similarTests]);
 
-  // 로딩 스피너 처리
+  // 3초 지연 로딩 스피너
   useEffect(() => {
     if (showLoadingSpinner) {
       const timer = setTimeout(() => {
@@ -178,8 +234,8 @@ export default function DecisionSpeedTestClient({
     }
   }, [showLoadingSpinner]);
 
-  // 질문 섞기
-  const shuffleQuestions = (questionList: DecisionSpeedQuestion[]) => {
+  // 질문 섞기 함수
+  const shuffleQuestions = (questionList: CompetitivenessQuestion[]) => {
     const shuffled = [...questionList];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -193,6 +249,7 @@ export default function DecisionSpeedTestClient({
     setShuffledQuestions(shuffleQuestions(questions));
     setDisplayPlayCount(prev => prev + 1);
     
+    // 중복 호출 방지
     if (!hasIncrementedPlayCount) {
       incrementPlayCount(slug);
       setHasIncrementedPlayCount(true);
@@ -203,8 +260,8 @@ export default function DecisionSpeedTestClient({
   };
 
   // 답변 처리
-  const handleAnswer = (answer: string) => {
-    const newAnswers = [...answers, answer];
+  const handleAnswer = (scores: any) => {
+    const newAnswers = [...answers, scores];
     setAnswers(newAnswers);
 
     if (currentQuestion < shuffledQuestions.length - 1) {
@@ -213,11 +270,39 @@ export default function DecisionSpeedTestClient({
       setShowLoadingSpinner(true);
       
       // 결과 계산
-      const calculatedResult = calculateDecisionSpeedResult(newAnswers);
-      setResult(calculatedResult);
+      const resultType = calculateCompetitivenessResult(newAnswers);
+      const competitivenessResult = results.find(r => r.type === resultType);
+      
+      // 결과 설정
+      if (competitivenessResult) {
+        setResult(competitivenessResult);
+      }
+      
+      // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
+      if (competitivenessResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(competitivenessResult.type, locale);
+        const loadStartTime = Date.now();
+        console.log('🔮 [시작] 경쟁심 결과:', competitivenessResult.type, '→ 검색 키워드:', keywords[0]);
+        searchAliExpressProducts(keywords[0], 4, locale)
+          .then(products => {
+            const loadTime = Date.now() - loadStartTime;
+            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map(p => p.product_title));
+            setAliProducts(products);
+          }).catch(error => {
+            console.error('❌ 결과 상품 로드 실패:', error);
+          });
+      }
     }
+  };
+
+  // 결과 계산
+  const calculateResult = (finalAnswers: any[]) => {
+    const resultType = calculateCompetitivenessResult(finalAnswers);
+    const competitivenessResult = results.find(r => r.type === resultType);
     
-    window.scrollTo(0, 0);
+    if (competitivenessResult) {
+      setResult(competitivenessResult);
+    }
   };
 
   // 다시 하기
@@ -228,19 +313,15 @@ export default function DecisionSpeedTestClient({
     setAnswers([]);
     setResult(null);
     setShowResult(false);
-    setShowResultPopup(false);
-    setShowLoadingSpinner(false);
-    setHasIncrementedPlayCount(false);
-    window.scrollTo(0, 0);
+    setShuffledOptionsMap({});
   };
 
   // 결과 공유하기
   const handleShareResult = async () => {
     if (!result) return;
     
-    const mappedLocale = mapLocale(locale);
-    const resultTitle = result.title[mappedLocale as keyof typeof result.title] || result.title.ko;
-    const shareMessage = t('shareMessages.default', { type: resultTitle });
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const shareMessage = t('competitivenessTest.shareMessages.default', { type: resultTitle });
     const shareText = `${shareMessage}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
@@ -254,10 +335,10 @@ export default function DecisionSpeedTestClient({
     } else {
       try {
         await navigator.clipboard.writeText(shareText);
-        alert(t('alerts.resultCopied'));
+        alert(t('competitivenessTest.alerts.resultCopied'));
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
-        alert(t('alerts.shareFailed'));
+        alert(t('competitivenessTest.alerts.shareFailed'));
       }
     }
   };
@@ -270,38 +351,38 @@ export default function DecisionSpeedTestClient({
 
   const shareToWeChat = async () => {
     const url = `https://myquizoasis.com${window.location.pathname}`;
-    const mappedLocale = mapLocale(locale);
-    const resultTitle = result ? (result.title[mappedLocale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result 
-      ? t('shareMessages.wechat', { type: resultTitle })
+      ? t('competitivenessTest.shareMessages.wechat', { type: resultTitle })
       : title;
     const shareText = `${shareMessage}\n\n${url}`;
     
+    // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
     if (navigator.share) {
       try {
         await navigator.share({ text: shareText });
         return;
       } catch (error) {
         if (error instanceof Error && error.name === 'AbortError') {
-          return;
+          return; // 사용자가 취소
         }
       }
     }
     
+    // Fallback: 링크 복사
     try {
       await navigator.clipboard.writeText(url);
-      alert(t('alerts.wechatCopy'));
+      alert(t('competitivenessTest.alerts.wechatCopy'));
     } catch (error) {
-      alert(t('alerts.shareFailed'));
+      alert(t('competitivenessTest.alerts.shareFailed'));
     }
   };
 
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const mappedLocale = mapLocale(locale);
-    const resultTitle = result ? (result.title[mappedLocale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result 
-      ? t('shareMessages.whatsapp', { type: resultTitle })
+      ? t('competitivenessTest.shareMessages.whatsapp', { type: resultTitle })
       : title;
     const shareText = encodeURIComponent(shareMessage);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
@@ -311,17 +392,17 @@ export default function DecisionSpeedTestClient({
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
-      alert(t('alerts.kakaoInit'));
+      alert(t('competitivenessTest.alerts.kakaoInit'));
       return;
     }
 
     const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
-    const mappedLocale = mapLocale(locale);
-    const resultTitle = result ? (result.title[mappedLocale as keyof typeof result.title] || result.title.ko) : '';
+    // 결과가 있으면 맞춤형 공유 문구 사용
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
-      ? t('shareMessages.kakao', { type: resultTitle })
+      ? t('competitivenessTest.shareMessages.kakao', { type: resultTitle })
       : description;
     
     try {
@@ -338,7 +419,7 @@ export default function DecisionSpeedTestClient({
         },
         buttons: [
           {
-            title: t('ui.testButton'),
+            title: '테스트 하러 가기',
             link: {
               mobileWebUrl: currentUrl,
               webUrl: currentUrl,
@@ -348,16 +429,15 @@ export default function DecisionSpeedTestClient({
       });
     } catch (error) {
       console.error('카카오톡 공유 오류:', error);
-      alert(t('alerts.kakaoError'));
+      alert(t('competitivenessTest.alerts.kakaoError'));
     }
   };
 
   const shareToTelegram = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const mappedLocale = mapLocale(locale);
-    const resultTitle = result ? (result.title[mappedLocale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result 
-      ? t('shareMessages.telegram', { type: resultTitle })
+      ? t('competitivenessTest.shareMessages.telegram', { type: resultTitle })
       : title;
     const text = encodeURIComponent(shareMessage);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
@@ -365,7 +445,7 @@ export default function DecisionSpeedTestClient({
 
   const copyLink = () => {
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert(t('alerts.linkCopied'));
+    alert(t('competitivenessTest.alerts.linkCopied'));
   };
 
   // 팝업에서 결과 보기
@@ -382,7 +462,7 @@ export default function DecisionSpeedTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_213_decision_speed.jpg')}
+              src={getThumbnailUrl(thumbnail || 'test_215_competitiveness.jpg')}
               alt={title}
               fill
               className="object-cover"
@@ -396,23 +476,24 @@ export default function DecisionSpeedTestClient({
               {title}
             </h1>
 
+            {/* AdSense 광고 - 타이틀과 설명 사이 */}
             <div className="my-6">
               <AdSensePlaceholder 
                 slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역"
+                label="AdSense 광고 영역 (타이틀-설명 사이)"
               />
             </div>
 
             <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
-              <p className="font-bold text-gray-700">{t('startMessage.line1')}</p>
-              <p>{t('startMessage.line2')}</p>
-              <p>{t('startMessage.line3')}</p>
-              <p>{t('startMessage.line4')}</p>
-              <p>{t('startMessage.line5')}</p>
-              <p>{t('startMessage.line6')}</p>
-              <p>{t('startMessage.line7')}</p>
+              <p className="font-bold text-gray-700">{t('competitivenessTest.startMessage.line1')}</p>
+              <p>{t('competitivenessTest.startMessage.line2')}</p>
+              <p>{t('competitivenessTest.startMessage.line3')}</p>
+              <p>{t('competitivenessTest.startMessage.line4')}</p>
+              <p className="whitespace-pre-line">{t('competitivenessTest.startMessage.line5')}</p>
+              <p>{t('competitivenessTest.startMessage.line6')}</p>
+              <p>{t('competitivenessTest.startMessage.line7')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -420,12 +501,12 @@ export default function DecisionSpeedTestClient({
                 onClick={handleStartTest}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-                {t('ui.startTest')}
+                {t('mbti.startTest')}
               </button>
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-              {tGlobal('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
+              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -470,35 +551,35 @@ export default function DecisionSpeedTestClient({
 
             <div className="mb-8 text-center">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {tGlobal('mbti.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
 
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
-                <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {tGlobal('recommendations.similarTests') || '유사한 다른 테스트'}
-                </h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-6">
+                {t('recommendations.similarTests') || '유사한 다른 테스트'}
+              </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
@@ -539,26 +620,28 @@ export default function DecisionSpeedTestClient({
   if (showLoadingSpinner) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
+        {/* AdSense 광고 - 로딩 스피너 상단 */}
         <div className="mb-8 w-full max-w-[680px]">
           <AdSensePlaceholder 
             slot={ADSENSE_CONFIG.SLOTS.LOADING_TOP}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역"
+            label="AdSense 광고 영역 (로딩 스피너 상단)"
           />
         </div>
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-lg text-gray-700">{tGlobal('mbti.loadingResults')}</p>
+          <p className="mt-4 text-lg text-gray-700">{t('mbti.loadingResults')}</p>
         </div>
 
+        {/* AdSense 광고 - 로딩 스피너 하단 */}
         <div className="mt-8 w-full max-w-[680px]">
           <AdSensePlaceholder 
             slot={ADSENSE_CONFIG.SLOTS.LOADING_BOTTOM}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역"
+            label="AdSense 광고 영역 (로딩 스피너 하단)"
           />
         </div>
       </div>
@@ -571,8 +654,9 @@ export default function DecisionSpeedTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            🎉 {tGlobal('mbti.testCompleted')}
+            🎉 {t('mbti.testCompleted')}
           </h2>
+          
           
           <div className="mb-6">
             {locale === 'ko' ? (
@@ -581,15 +665,15 @@ export default function DecisionSpeedTestClient({
                   쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다
                 </p>
                 <div className="flex justify-center">
-                  <iframe 
-                    src="https://ads-partners.coupang.com/widgets.html?id=923499&template=carousel&trackingCode=AF6775264&subId=&width=300&height=250&tsource=" 
-                    width="300" 
-                    height="250" 
-                    frameBorder="0" 
-                    scrolling="no" 
-                    referrerPolicy="unsafe-url"
-                    className="rounded-lg"
-                  />
+                <iframe 
+                  src="https://ads-partners.coupang.com/widgets.html?id=923499&template=carousel&trackingCode=AF6775264&subId=&width=300&height=250&tsource=" 
+                  width="300" 
+                  height="250" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  referrerPolicy="unsafe-url"
+                  className="rounded-lg"
+                />
                 </div>
               </div>
             ) : aliProducts.length > 0 ? (
@@ -624,7 +708,7 @@ export default function DecisionSpeedTestClient({
             onClick={handleShowResult}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-            {tGlobal('mbti.viewAnalysisResults')}
+            {t('mbti.viewAnalysisResults')}
           </button>
         </div>
       </div>
@@ -633,14 +717,15 @@ export default function DecisionSpeedTestClient({
 
   // 결과 화면
   if (showResult && result) {
-    const mappedLocale = mapLocale(locale);
-    const resultTitle = result.title[mappedLocale as keyof typeof result.title] || result.title.ko;
-    const resultDescription = result.description[mappedLocale as keyof typeof result.description] || result.description.ko;
-    const resultCharacteristics = result.characteristics[mappedLocale as keyof typeof result.characteristics] || result.characteristics.ko;
-    const resultStrengths = result.strengths[mappedLocale as keyof typeof result.strengths] || result.strengths.ko;
-    const resultWeaknesses = result.weaknesses[mappedLocale as keyof typeof result.weaknesses] || result.weaknesses.ko;
-    const resultAdvice = result.advice[mappedLocale as keyof typeof result.advice] || result.advice.ko;
-    const resultSpeed = result.decisionSpeed[mappedLocale as keyof typeof result.decisionSpeed] || result.decisionSpeed.ko;
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const resultShortDescription = result.shortDescription[locale as keyof typeof result.shortDescription] || result.shortDescription.ko;
+    const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
+    const resultStrengths = result.strengths;
+    const resultWeaknesses = result.weaknesses;
+    const resultScore = result.score[locale as keyof typeof result.score] || result.score.ko;
+    const resultAdvice = result.advice[locale as keyof typeof result.advice] || result.advice.ko;
+    const resultWarningTitle = result.warningTitle[locale as keyof typeof result.warningTitle] || result.warningTitle.ko;
+    const resultWarningItems = result.warningItems[locale as keyof typeof result.warningItems] || result.warningItems.ko;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -648,24 +733,24 @@ export default function DecisionSpeedTestClient({
           <div>
             <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
               <h2 className="text-xl font-bold text-gray-800 mb-3">
-                {tGlobal('mbti.yourResult')}
+                {t('mbti.yourResult')}
               </h2>
               <div className="text-6xl mb-3">{result.emoji}</div>
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
               </h1>
               <p className="text-base font-semibold text-gray-700 leading-relaxed mb-3">
-                {resultDescription}
+                {resultShortDescription}
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mt-3">
-                {resultCharacteristics}
+              <p className="text-base text-gray-600 leading-relaxed">
+                {resultDescription}
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ✅ {t('result.strengths')}
+                  ✅ {t('competitivenessTest.result.strengths')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {resultStrengths.map((strength, index) => (
@@ -673,7 +758,7 @@ export default function DecisionSpeedTestClient({
                       key={index}
                       className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {strength}
+                      {strength[locale as keyof typeof strength] || strength.ko}
                     </span>
                   ))}
                 </div>
@@ -681,7 +766,7 @@ export default function DecisionSpeedTestClient({
 
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ⚠️ {t('result.weaknesses')}
+                  ⚠️ {t('competitivenessTest.result.weaknesses')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {resultWeaknesses.map((weakness, index) => (
@@ -689,7 +774,7 @@ export default function DecisionSpeedTestClient({
                       key={index}
                       className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {weakness}
+                      {weakness[locale as keyof typeof weakness] || weakness.ko}
                     </span>
                   ))}
                 </div>
@@ -698,23 +783,37 @@ export default function DecisionSpeedTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                📊 {t('result.decisionSpeed')}
+                📊 {t('competitivenessTest.result.score')}
               </h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gradient-to-r from-blue-100 to-purple-100 px-4 py-2 rounded-full text-sm font-medium text-gray-800 shadow-sm">
-                  {resultSpeed}
-                </span>
+              <div className="text-lg font-semibold text-gray-800">
+                {resultScore}
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                💡 {t('result.advice')}
+                💡 {t('competitivenessTest.result.advice')}
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {resultAdvice}
               </p>
             </div>
+
+            {resultWarningTitle && resultWarningItems.length > 0 && (
+              <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
+                  ⚠️ {resultWarningTitle}
+                </h3>
+                <ul className="text-sm text-gray-700 leading-relaxed space-y-2">
+                  {resultWarningItems.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             <div className="mt-8 mb-6 px-4">
               <button
@@ -724,16 +823,17 @@ export default function DecisionSpeedTestClient({
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                 </svg>
-                {tGlobal('mbti.shareResult')}
+                {t('mbti.shareResult')}
               </button>
             </div>
 
+            {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
             <div className="my-6 px-4">
               <AdSensePlaceholder 
                 slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역"
+                label="AdSense 광고 영역 (결과-다시하기 사이)"
               />
             </div>
 
@@ -742,46 +842,47 @@ export default function DecisionSpeedTestClient({
                 onClick={handleRetake}
                 className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
               >
-                {tGlobal('mbti.retakeTest')}
+                {t('mbti.retakeTest')}
               </button>
               <Link
                 href={`/${locale}`}
                 className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
               >
-                {tGlobal('mbti.otherTests')}
+                {t('mbti.otherTests')}
               </Link>
             </div>
 
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {tGlobal('mbti.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
 
+            {/* 🎯 유사한 다른 테스트 추천 톱5 */}
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {tGlobal('recommendations.similarTestsTop5') || '🎯 유사한 다른 테스트 추천 톱5'}
+                  {t('recommendations.similarTestsTop5') || '🎯 유사한 다른 테스트 추천 톱5'}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -814,10 +915,11 @@ export default function DecisionSpeedTestClient({
               </div>
             )}
 
+            {/* 🔥 요즘 인기 테스트 추천 톱5 */}
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {tGlobal('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}
+                  {t('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (
@@ -857,9 +959,10 @@ export default function DecisionSpeedTestClient({
 
   // 질문 화면
   const question = shuffledQuestions[currentQuestion];
-  const mappedLocale = mapLocale(locale);
-  const questionText = question.question[mappedLocale as keyof typeof question.question] || question.question.ko;
+  const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
+  
+  const optionsArray = shuffledOptionsMap[currentQuestion] || question.options;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -867,7 +970,7 @@ export default function DecisionSpeedTestClient({
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-600">
-              {tGlobal('mbti.progress')}
+              {t('mbti.progress')}
             </span>
             <span className="text-sm font-bold text-purple-600">
               {currentQuestion + 1} / {shuffledQuestions.length}
@@ -887,19 +990,21 @@ export default function DecisionSpeedTestClient({
           </h2>
 
           <div className="space-y-4 px-4">
-            {Object.entries(question.options).map(([key, option], index) => {
-              const optionText = option[mappedLocale as keyof typeof option] || option.ko;
+            {optionsArray.map((option, index) => {
+              const optionText = option.text[locale as keyof typeof option.text] || option.text.ko;
               const label = String.fromCharCode(65 + index);
               const colors = [
                 'from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border-purple-200 hover:border-purple-400',
                 'from-pink-50 to-pink-100 hover:from-pink-100 hover:to-pink-200 border-pink-200 hover:border-pink-400',
+                'from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 border-blue-200 hover:border-blue-400',
+                'from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 border-green-200 hover:border-green-400',
               ];
-              const bgColors = ['bg-purple-600', 'bg-pink-600'];
+              const bgColors = ['bg-purple-600', 'bg-pink-600', 'bg-blue-600', 'bg-green-600'];
 
               return (
                 <button
-                  key={key}
-                  onClick={() => handleAnswer(key)}
+                  key={index}
+                  onClick={() => handleAnswer(option.scores)}
                   className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
                 >
                   <div className="flex items-center">
@@ -913,37 +1018,38 @@ export default function DecisionSpeedTestClient({
             })}
           </div>
 
+          {/* AdSense 광고 - 테스트 진행 마지막 답변 밑 */}
           <div className="mt-8 px-4">
             <AdSensePlaceholder 
               slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
               style={{ width: '100%', height: '250px' }}
               className="mx-auto"
-              label="AdSense 광고 영역"
+              label="AdSense 광고 영역 (테스트 진행 마지막 답변 밑)"
             />
           </div>
 
           <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-              {tGlobal('mbti.shareWithFriends')}
+              {t('mbti.shareWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
               </button>
             </div>
           </div>
@@ -952,4 +1058,3 @@ export default function DecisionSpeedTestClient({
     </div>
   );
 }
-

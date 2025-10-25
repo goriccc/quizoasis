@@ -1563,5 +1563,56 @@
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "competitivenessTest": {
+    "startMessage": {
+      "line1": "\"Muốn thắng vs Chỉ cần tận hưởng! Tính cạnh tranh của bạn là gì?\"",
+      "line2": "Một số người muốn đứng nhất trong mọi thứ,",
+      "line3": "Một số người coi trọng quá trình hơn kết quả.",
+      "line4": "Người tức giận khi thua, người cười và nói 'Vui quá'.",
+      "line5": "Người cảm thấy được kích thích khi so sánh, người chúc mừng thành công của người khác một cách chân thành.",
+      "line6": "Tính cạnh tranh của bạn mạnh đến mức nào?",
+      "line7": "Chỉ mất 3 phút! Hãy trả lời thành thật 🏆"
+    },
+    "ui": {
+      "startTest": "Bắt đầu bài kiểm tra",
+      "participants": " người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại bài kiểm tra",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 đề xuất bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 đề xuất bài kiểm tra phổ biến",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "score": "Điểm cạnh tranh",
+      "advice": "Lời khuyên"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 🏆 Đạt điểm cạnh tranh ★★★☆☆. Bạn cạnh tranh đến mức nào?",
+      "kakao": "Tôi là {type}! 🏆 Đạt điểm cạnh tranh ★★★☆☆. Bạn cạnh tranh đến mức nào?",
+      "wechat": "Tôi là {type}! 🏆 Đạt điểm cạnh tranh ★★★☆☆. Bạn cạnh tranh đến mức nào?",
+      "whatsapp": "Tôi là {type}! 🏆 Đạt điểm cạnh tranh ★★★☆☆. Bạn cạnh tranh đến mức nào?",
+      "telegram": "Tôi là {type}! 🏆 Đạt điểm cạnh tranh ★★★☆☆. Bạn cạnh tranh đến mức nào?",
+      "line": "Tôi là {type}! 🏆 Đạt điểm cạnh tranh ★★★☆☆. Bạn cạnh tranh đến mức nào?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

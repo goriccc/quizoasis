@@ -1622,6 +1622,57 @@
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "competitivenessTest": {
+    "startMessage": {
+      "line1": "\"Want to win vs Just enjoy! What is your competitiveness?\"",
+      "line2": "Some people want to be first in everything,",
+      "line3": "Some people value process over results.",
+      "line4": "People who get angry when they lose, people who laugh and say 'It was fun'.",
+      "line5": "People who feel stimulated by comparison, people who sincerely celebrate others' success.",
+      "line6": "How strong is your competitiveness?",
+      "line7": "Takes only 3 minutes! Please answer honestly 🏆"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": " people participated",
+      "shareWithFriends": "Try with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake Test",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "View Other Tests",
+      "similarTests": "🎯 Top 5 Similar Test Recommendations",
+      "popularTests": "🔥 Top 5 Popular Test Recommendations",
+      "linkCopy": "Link Copy",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "score": "Competitiveness Score",
+      "advice": "Advice"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! 🏆 Got ★★★☆☆ competitiveness score. How competitive are you?",
+      "kakao": "I'm {type}! 🏆 Got ★★★☆☆ competitiveness score. How competitive are you?",
+      "wechat": "I'm {type}! 🏆 Got ★★★☆☆ competitiveness score. How competitive are you?",
+      "whatsapp": "I'm {type}! 🏆 Got ★★★☆☆ competitiveness score. How competitive are you?",
+      "telegram": "I'm {type}! 🏆 Got ★★★☆☆ competitiveness score. How competitive are you?",
+      "line": "I'm {type}! 🏆 Got ★★★☆☆ competitiveness score. How competitive are you?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    }
   }
 }
 

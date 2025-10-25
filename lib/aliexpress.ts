@@ -137,6 +137,10 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
   };
 
   if (locale === 'en' || !translations[locale]) {
+    // 인도네시아어와 베트남어는 일반 키워드 사용
+    if (locale === 'id' || locale === 'vi') {
+      return ['toys', 'gifts', 'accessories', 'home'];
+    }
     return keywords;
   }
 

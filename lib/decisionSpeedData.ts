@@ -259,7 +259,7 @@ export const decisionSpeedQuestions: DecisionSpeedQuestion[] = [
       },
       b: {
         ko: "모두 의견 들어보고 결정",
-        en: "Hear everyone&apos;s opinions",
+        en: "Hear everyone's opinions",
         ja: "みんなの意見を聞いてから決める",
         zh: "听取大家的意见",
         zhTW: "聽取大家的意見",
@@ -314,7 +314,7 @@ export const decisionSpeedQuestions: DecisionSpeedQuestion[] = [
     options: {
       a: {
         ko: "\"다음엔 잘하지 뭐\" 빠르게 넘어감",
-        en: "Quickly move on saying &quot;Better next time&quot;",
+        en: "Quickly move on saying \"Better next time\"",
         ja: "「次はちゃんとやろう」と素早く切り替える",
         zh: "快速过去说\"下次会做得更好\"",
         zhTW: "快速過去說\"下次會做得更好\"",
@@ -323,7 +323,7 @@ export const decisionSpeedQuestions: DecisionSpeedQuestion[] = [
       },
       b: {
         ko: "\"왜 그랬을까\" 오래 생각함",
-        en: "Think long about &quot;Why did that happen?&quot;",
+        en: "Think long about \"Why did that happen?\"",
         ja: "「なぜそうなったのか」と長く考える",
         zh: "长时间思考\"为什么会这样？\"",
         zhTW: "長時間思考\"為什麼會這樣？\"",
@@ -410,7 +410,7 @@ export const decisionSpeedQuestions: DecisionSpeedQuestion[] = [
     options: {
       a: {
         ko: "\"결정이 빨라\"",
-        en: "&quot;Decides quickly&quot;",
+        en: "\"Decides quickly\"",
         ja: "「決断が早い」",
         zh: "\"决定很快\"",
         zhTW: "\"決定很快\"",
@@ -419,7 +419,7 @@ export const decisionSpeedQuestions: DecisionSpeedQuestion[] = [
       },
       b: {
         ko: "\"신중하고 꼼꼼해\"",
-        en: "&quot;Careful and thorough&quot;",
+        en: "\"Careful and thorough\"",
         ja: "「慎重で几帳面」",
         zh: "\"谨慎且细致\"",
         zhTW: "\"謹慎且細緻\"",
@@ -553,7 +553,7 @@ export const decisionSpeedResults: DecisionSpeedResult[] = [
     },
     characteristics: {
       ko: "대체로 빠르게 결정하지만 최소한의 생각은 합니다. 직감을 믿되 완전히 무모하지는 않습니다. 결정이 빠르고 기회를 잘 잡지만, 중요한 일은 한 번 더 생각합니다. 가장 이상적인 빠른 결정 스타일로, 효율적이면서도 후회가 적습니다.",
-      en: "You generally decide quickly but do think at least a little. You trust intuition but aren&apos;t completely reckless. You decide fast and catch opportunities well, but think once more for important matters. This is the most ideal fast decision style, efficient while having few regrets.",
+      en: "You generally decide quickly but do think at least a little. You trust intuition but aren't completely reckless. You decide fast and catch opportunities well, but think once more for important matters. This is the most ideal fast decision style, efficient while having few regrets.",
       ja: "概ね素早く決定しますが、最低限の思考はします。直感を信じますが、完全に無謀ではありません。決定が速く、機会をうまく掴みますが、重要なことはもう一度考えます。最も理想的な速い決定スタイルで、効率的でありながら後悔が少ないです。",
       zh: "你通常快速决定但至少会思考一下。你相信直觉但不会完全鲁莽。你决定快速并能很好地抓住机会，但对重要事情会再想一次。这是最理想的快速决策风格，高效且后悔少。",
       zhTW: "你通常快速決定但至少會思考一下。你相信直覺但不會完全魯莽。你決定快速並能很好地抓住機會，但對重要事情會再想一次。這是最理想的快速決策風格，高效且後悔少。",
@@ -620,7 +620,7 @@ export const decisionSpeedResults: DecisionSpeedResult[] = [
     },
     characteristics: {
       ko: "상황에 따라 빠르게 또는 신중하게 결정합니다. 작은 일은 빠르게, 큰 일은 신중하게 접근합니다. 직관과 논리를 모두 활용하며, 가장 현명하고 적응력 높은 의사결정 스타일입니다. 유연하고 균형잡혔지만 때로는 우유부단해 보일 수 있습니다.",
-      en: "You decide quickly or carefully depending on the situation. You approach small matters quickly and big matters carefully. You utilize both intuition and logic, making this the wisest and most adaptable decision-making style. You&apos;re flexible and balanced, but may sometimes appear indecisive.",
+      en: "You decide quickly or carefully depending on the situation. You approach small matters quickly and big matters carefully. You utilize both intuition and logic, making this the wisest and most adaptable decision-making style. You're flexible and balanced, but may sometimes appear indecisive.",
       ja: "状況に応じて速くまたは慎重に決定します。小さなことは速く、大きなことは慎重にアプローチします。直感と論理の両方を活用し、最も賢明で適応力の高い意思決定スタイルです。柔軟でバランスが取れていますが、時には優柔不断に見えることがあります。",
       zh: "你根据情况快速或谨慎地决定。你对小事快速处理，对大事谨慎对待。你同时运用直觉和逻辑，这是最明智和最具适应性的决策风格。你灵活且平衡，但有时可能显得优柔寡断。",
       zhTW: "你根據情況快速或謹慎地決定。你對小事快速處理，對大事謹慎對待。你同時運用直覺和邏輯，這是最明智和最具適應性的決策風格。你靈活且平衡，但有時可能顯得優柔寡斷。",
@@ -687,7 +687,7 @@ export const decisionSpeedResults: DecisionSpeedResult[] = [
     },
     characteristics: {
       ko: "대체로 신중하게 결정합니다. 여러 옵션을 비교하고 장단점을 따진 후 선택합니다. 실수가 적고 후회도 적지만, 기회를 놓치거나 결정이 늦을 때가 있습니다. 안전하고 합리적이지만 때로는 과감함도 필요합니다.",
-      en: "You generally decide carefully. You compare multiple options and weigh pros and cons before choosing. You make few mistakes and have few regrets, but sometimes miss opportunities or decide too late. You&apos;re safe and rational, but sometimes boldness is also needed.",
+      en: "You generally decide carefully. You compare multiple options and weigh pros and cons before choosing. You make few mistakes and have few regrets, but sometimes miss opportunities or decide too late. You're safe and rational, but sometimes boldness is also needed.",
       ja: "概ね慎重に決定します。複数の選択肢を比較し、長所と短所を考慮してから選択します。失敗が少なく後悔も少ないですが、機会を逃したり決定が遅れたりすることがあります。安全で合理的ですが、時には大胆さも必要です。",
       zh: "你通常谨慎地决定。你在选择前比较多个选项并权衡利弊。你犯错少且后悔少，但有时会错过机会或决定太晚。你安全且理性，但有时也需要大胆。",
       zhTW: "你通常謹慎地決定。你在選擇前比較多個選項並權衡利弊。你犯錯少且後悔少，但有時會錯過機會或決定太晚。你安全且理性，但有時也需要大膽。",
