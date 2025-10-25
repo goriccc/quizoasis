@@ -1526,5 +1526,48 @@
       "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
       "kakaoError": "KakaoTalk分享過程中發生錯誤。"
     }
+  },
+  "decisionSpeedTest": {
+    "startMessage": {
+      "line1": "\"立即決定？慢慢思考？你的決策速度是什麼？\"",
+      "line2": "有人在3秒內決定，",
+      "line3": "有人花了3天思考。",
+      "line4": "選擇菜單時立即決定的人，",
+      "line5": "花時間思考的人。",
+      "line6": "相信直覺快速選擇的人，",
+      "line7": "權衡一切謹慎決定的人。"
+    },
+    "ui": {
+      "startTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "去做測試"
+    },
+    "result": {
+      "strengths": "優點",
+      "weaknesses": "缺點",
+      "decisionSpeed": "決策速度",
+      "advice": "建議"
+    },
+    "shareMessages": {
+      "default": "我是{type}！⚡ 快速決定 vs 謹慎決定，你是哪一邊？",
+      "kakao": "我是{type}！⚡ 快速決定 vs 謹慎決定，你是哪一邊？",
+      "wechat": "我是{type}！⚡ 快速決定 vs 謹慎決定，你是哪一邊？",
+      "whatsapp": "我是{type}！⚡ 快速決定 vs 謹慎決定，你是哪一邊？",
+      "telegram": "我是{type}！⚡ 快速決定 vs 謹慎決定，你是哪一邊？",
+      "line": "我是{type}！⚡ 快速決定 vs 謹慎決定，你是哪一邊？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享過程中發生錯誤。"
+    }
   }
 }

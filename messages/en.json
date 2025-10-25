@@ -1579,6 +1579,49 @@
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "decisionSpeedTest": {
+    "startMessage": {
+      "line1": "\"Decide immediately? Think slowly? What is your decision speed?\"",
+      "line2": "Some people decide in 3 seconds,",
+      "line3": "Some people ponder for 3 days.",
+      "line4": "People who decide immediately when choosing a menu,",
+      "line5": "People who take their time to decide.",
+      "line6": "People who trust intuition and choose quickly,",
+      "line7": "People who weigh everything and decide carefully."
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "Take the Test"
+    },
+    "result": {
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "decisionSpeed": "Decision Speed",
+      "advice": "Advice"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! ⚡ Fast decision vs Careful decision, which side are you?",
+      "kakao": "I'm {type}! ⚡ Fast decision vs Careful decision, which side are you?",
+      "wechat": "I'm {type}! ⚡ Fast decision vs Careful decision, which side are you?",
+      "whatsapp": "I'm {type}! ⚡ Fast decision vs Careful decision, which side are you?",
+      "telegram": "I'm {type}! ⚡ Fast decision vs Careful decision, which side are you?",
+      "line": "I'm {type}! ⚡ Fast decision vs Careful decision, which side are you?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    }
   }
 }
 

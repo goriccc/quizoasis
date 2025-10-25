@@ -1518,5 +1518,48 @@
       "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
+  },
+  "decisionSpeedTest": {
+    "startMessage": {
+      "line1": "\"즉시 결정? 천천히 고민? 당신의 결정 속도는?\"",
+      "line2": "어떤 사람은 3초 만에 결정하고,",
+      "line3": "어떤 사람은 3일을 고민합니다.",
+      "line4": "메뉴 고를 때 바로 정하는 사람,",
+      "line5": "한참을 고민하는 사람.",
+      "line6": "직감을 믿고 빠르게 선택하는 사람,",
+      "line7": "모든 것을 따져보고 신중하게 결정하는 사람."
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "testButton": "테스트 하러 가기"
+    },
+    "result": {
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "decisionSpeed": "결정 속도",
+      "advice": "조언"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! ⚡ 빠른 결정 vs 신중한 결정, 너는 어느 쪽?",
+      "kakao": "나는 {type}! ⚡ 빠른 결정 vs 신중한 결정, 너는 어느 쪽?",
+      "wechat": "나는 {type}! ⚡ 빠른 결정 vs 신중한 결정, 너는 어느 쪽?",
+      "whatsapp": "나는 {type}! ⚡ 빠른 결정 vs 신중한 결정, 너는 어느 쪽?",
+      "telegram": "나는 {type}! ⚡ 빠른 결정 vs 신중한 결정, 너는 어느 쪽?",
+      "line": "나는 {type}! ⚡ 빠른 결정 vs 신중한 결정, 너는 어느 쪽?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
   }
 }

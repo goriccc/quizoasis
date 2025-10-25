@@ -27,6 +27,7 @@ import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
 import { honestyVsRestraintQuestions, honestyVsRestraintResults } from '@/lib/honestyVsRestraintData';
 import { independenceQuestions, independenceResults } from '@/lib/independenceData';
+import { decisionSpeedQuestions, decisionSpeedResults } from '@/lib/decisionSpeedData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -150,6 +151,9 @@ const HonestyVsRestraintTestClient = dynamic(() => import('@/components/HonestyV
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const IndependenceTestClient = dynamic(() => import('@/components/IndependenceTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const DecisionSpeedTestClient = dynamic(() => import('@/components/DecisionSpeedTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1549,6 +1553,59 @@ export default async function TestPage({ params }: Props) {
           questions={independenceQuestions}
           results={independenceResults}
           questionCount={independenceQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 의사결정 속도 테스트
+  if (slug === 'decision-speed-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'decision-speed-test',
+      title: {
+        ko: '당신의 의사결정 속도는?',
+        en: 'What is your decision-making speed?',
+        ja: 'あなたの意思決定の速度は？',
+        'zh-CN': '你的决策速度是什么？',
+        'zh-TW': '你的決策速度是什麼？',
+        vi: 'Tốc độ ra quyết định của bạn là gì?',
+        id: 'Berapa kecepatan pengambilan keputusan Anda?'
+      },
+      description: {
+        ko: '즉시 결정? 천천히 고민? 당신의 결정 속도는?',
+        en: 'Decide immediately? Think slowly? What is your decision speed?',
+        ja: 'すぐに決める？ゆっくり悩む？あなたの決定速度は？',
+        'zh-CN': '立即决定？慢慢思考？你的决策速度是什么？',
+        'zh-TW': '立即決定？慢慢思考？你的決策速度是什麼？',
+        vi: 'Quyết định ngay lập tức? Suy nghĩ chậm? Tốc độ quyết định của bạn là gì?',
+        id: 'Putuskan segera? Berpikir perlahan? Berapa kecepatan keputusan Anda?'
+      },
+      thumbnail: 'test_213_decision_speed.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['성격'],
+        en: ['Personality'],
+        ja: ['性格'],
+        'zh-CN': ['性格'],
+        'zh-TW': ['性格'],
+        vi: ['Tính cách'],
+        id: ['Kepribadian']
+      }
+    };
+
+    return (
+      <>
+        <DecisionSpeedTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={decisionSpeedQuestions}
+          results={decisionSpeedResults}
+          questionCount={decisionSpeedQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

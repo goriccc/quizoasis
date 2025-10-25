@@ -1520,5 +1520,48 @@
       "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
+  },
+  "decisionSpeedTest": {
+    "startMessage": {
+      "line1": "\"Putuskan segera? Berpikir perlahan? Berapa kecepatan keputusan Anda?\"",
+      "line2": "Beberapa orang memutuskan dalam 3 detik,",
+      "line3": "Beberapa orang berpikir selama 3 hari.",
+      "line4": "Orang yang memutuskan segera saat memilih menu,",
+      "line5": "Orang yang mengambil waktu untuk berpikir.",
+      "line6": "Orang yang percaya intuisi dan memilih cepat,",
+      "line7": "Orang yang mempertimbangkan segalanya dan memutuskan dengan hati-hati."
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "Ikuti Tes"
+    },
+    "result": {
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "decisionSpeed": "Kecepatan Keputusan",
+      "advice": "Nasihat"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! ⚡ Keputusan cepat vs Keputusan hati-hati, Anda di sisi mana?",
+      "kakao": "Saya {type}! ⚡ Keputusan cepat vs Keputusan hati-hati, Anda di sisi mana?",
+      "wechat": "Saya {type}! ⚡ Keputusan cepat vs Keputusan hati-hati, Anda di sisi mana?",
+      "whatsapp": "Saya {type}! ⚡ Keputusan cepat vs Keputusan hati-hati, Anda di sisi mana?",
+      "telegram": "Saya {type}! ⚡ Keputusan cepat vs Keputusan hati-hati, Anda di sisi mana?",
+      "line": "Saya {type}! ⚡ Keputusan cepat vs Keputusan hati-hati, Anda di sisi mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan telah disalin! Silakan tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    }
   }
 }

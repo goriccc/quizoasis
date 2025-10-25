@@ -1520,5 +1520,48 @@
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "decisionSpeedTest": {
+    "startMessage": {
+      "line1": "\"Quyết định ngay lập tức? Suy nghĩ chậm? Tốc độ quyết định của bạn là gì?\"",
+      "line2": "Một số người quyết định trong 3 giây,",
+      "line3": "Một số người suy nghĩ trong 3 ngày.",
+      "line4": "Người quyết định ngay khi chọn thực đơn,",
+      "line5": "Người dành thời gian để suy nghĩ.",
+      "line6": "Người tin tưởng trực giác và chọn nhanh,",
+      "line7": "Người cân nhắc mọi thứ và quyết định cẩn thận."
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "Đi làm bài kiểm tra"
+    },
+    "result": {
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "decisionSpeed": "Tốc độ quyết định",
+      "advice": "Lời khuyên"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! ⚡ Quyết định nhanh vs Quyết định cẩn thận, bạn thuộc phía nào?",
+      "kakao": "Tôi là {type}! ⚡ Quyết định nhanh vs Quyết định cẩn thận, bạn thuộc phía nào?",
+      "wechat": "Tôi là {type}! ⚡ Quyết định nhanh vs Quyết định cẩn thận, bạn thuộc phía nào?",
+      "whatsapp": "Tôi là {type}! ⚡ Quyết định nhanh vs Quyết định cẩn thận, bạn thuộc phía nào?",
+      "telegram": "Tôi là {type}! ⚡ Quyết định nhanh vs Quyết định cẩn thận, bạn thuộc phía nào?",
+      "line": "Tôi là {type}! ⚡ Quyết định nhanh vs Quyết định cẩn thận, bạn thuộc phía nào?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

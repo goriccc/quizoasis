@@ -1521,5 +1521,48 @@
       "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "decisionSpeedTest": {
+    "startMessage": {
+      "line1": "\"すぐに決める？ゆっくり悩む？あなたの決定速度は？\"",
+      "line2": "ある人は3秒で決め、",
+      "line3": "ある人は3日間悩みます。",
+      "line4": "メニューを選ぶときすぐに決める人、",
+      "line5": "しばらく悩む人。",
+      "line6": "直感を信じて素早く選ぶ人、",
+      "line7": "すべてを考慮して慎重に決める人。"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "testButton": "テストを受ける"
+    },
+    "result": {
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "decisionSpeed": "決定速度",
+      "advice": "アドバイス"
+    },
+    "shareMessages": {
+      "default": "私は{type}！⚡ 速い決定 vs 慎重な決定、あなたはどちら？",
+      "kakao": "私は{type}！⚡ 速い決定 vs 慎重な決定、あなたはどちら？",
+      "wechat": "私は{type}！⚡ 速い決定 vs 慎重な決定、あなたはどちら？",
+      "whatsapp": "私は{type}！⚡ 速い決定 vs 慎重な決定、あなたはどちら？",
+      "telegram": "私は{type}！⚡ 速い決定 vs 慎重な決定、あなたはどちら？",
+      "line": "私は{type}！⚡ 速い決定 vs 慎重な決定、あなたはどちら？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }
