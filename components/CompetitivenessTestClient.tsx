@@ -783,15 +783,6 @@ export default function CompetitivenessTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                📊 {t('competitivenessTest.result.score')}
-              </h3>
-              <div className="text-lg font-semibold text-gray-800">
-                {resultScore}
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
                 💡 {t('competitivenessTest.result.advice')}
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">

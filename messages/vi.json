@@ -1614,5 +1614,55 @@
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "plannerVsSpontaneousTest": {
+    "startMessage": {
+      "line1": "\"Lên kế hoạch trước? Quyết định tại chỗ? Phong cách của bạn là gì?\"",
+      "line2": "Một số người lên kế hoạch một tuần trước,",
+      "line3": "Một số người quyết định vào buổi sáng.",
+      "line4": "Người có nhật ký đầy lịch trình,",
+      "line5": "Người quyết định \"Hôm nay làm gì?\" mỗi ngày.",
+      "line6": "Chỉ mất 2 phút! Chọn nhanh bằng trực giác 📅"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại kiểm tra",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem các kiểm tra khác",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Khu vực quảng cáo AdSense",
+      "analyzing": "Đang phân tích kết quả...",
+      "completed": "Kiểm tra hoàn thành!",
+      "showResult": "Xem kết quả phân tích",
+      "yourResult": "Kết quả của bạn là"
+    },
+    "result": {
+      "characteristics": "Đặc điểm",
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "advice": "Lời khuyên"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 📅 Người lập kế hoạch vs Người tùy hứng, bạn thuộc loại nào?",
+      "kakao": "Tôi là {type}! 📅 Người lập kế hoạch vs Người tùy hứng, bạn thuộc loại nào?",
+      "wechat": "Tôi là {type}! 📅 Người lập kế hoạch vs Người tùy hứng, bạn thuộc loại nào?",
+      "whatsapp": "Tôi là {type}! 📅 Người lập kế hoạch vs Người tùy hứng, bạn thuộc loại nào?",
+      "telegram": "Tôi là {type}! 📅 Người lập kế hoạch vs Người tùy hứng, bạn thuộc loại nào?",
+      "line": "Tôi là {type}! 📅 Người lập kế hoạch vs Người tùy hứng, bạn thuộc loại nào?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ."
+    }
   }
 }

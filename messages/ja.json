@@ -1615,5 +1615,55 @@
       "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "plannerVsSpontaneousTest": {
+    "startMessage": {
+      "line1": "\"事前計画？その場で決める？あなたのスタイルは？\"",
+      "line2": "ある人は一週間前から計画を立て、",
+      "line3": "ある人は当日の朝に決めます。",
+      "line4": "スケジュールでいっぱいの手帳を持つ人、",
+      "line5": "\"今日は何をしよう？\"毎日新しく決める人。",
+      "line6": "所要時間わずか2分！直感で素早く選択してください 📅"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "participants": "人が参加しました",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "progress": "進捗率",
+      "retakeTest": "再テスト",
+      "shareResult": "結果を共有",
+      "retake": "再テスト",
+      "otherTests": "他のテストを見る",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense広告エリア",
+      "analyzing": "結果を分析中...",
+      "completed": "テスト完了！",
+      "showResult": "分析結果を見る",
+      "yourResult": "あなたの結果は"
+    },
+    "result": {
+      "characteristics": "特徴",
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "advice": "アドバイス"
+    },
+    "shareMessages": {
+      "default": "私は{type}！📅 計画型 vs 即興型、あなたはどちら？",
+      "kakao": "私は{type}！📅 計画型 vs 即興型、あなたはどちら？",
+      "wechat": "私は{type}！📅 計画型 vs 即興型、あなたはどちら？",
+      "whatsapp": "私は{type}！📅 計画型 vs 即興型、あなたはどちら？",
+      "telegram": "私は{type}！📅 計画型 vs 即興型、あなたはどちら？",
+      "line": "私は{type}！📅 計画型 vs 即興型、あなたはどちら？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。"
+    }
   }
 }

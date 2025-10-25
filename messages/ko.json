@@ -1612,5 +1612,55 @@
       "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
+  },
+  "plannerVsSpontaneousTest": {
+    "startMessage": {
+      "line1": "\"미리 계획? 그때그때 결정? 당신의 스타일은?\"",
+      "line2": "어떤 사람은 일주일 전부터 계획을 세우고,",
+      "line3": "어떤 사람은 당일 아침에 결정합니다.",
+      "line4": "일정표가 가득한 다이어리를 가진 사람,",
+      "line5": "\"오늘 뭐할까?\" 매일 새롭게 정하는 사람.",
+      "line6": "소요 시간 단 2분! 직관으로 빠르게 선택하세요 📅"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "participants": "명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "adsenseTitle": "AdSense 광고 영역",
+      "analyzing": "결과 분석 중...",
+      "completed": "테스트 완료!",
+      "showResult": "분석 결과 보기",
+      "yourResult": "당신의 결과는"
+    },
+    "result": {
+      "characteristics": "특징",
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "advice": "조언"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 📅 계획형 vs 즉흥형, 너는 어느 쪽?",
+      "kakao": "나는 {type}! 📅 계획형 vs 즉흥형, 너는 어느 쪽?",
+      "wechat": "나는 {type}! 📅 계획형 vs 즉흥형, 너는 어느 쪽?",
+      "whatsapp": "나는 {type}! 📅 계획형 vs 즉흥형, 너는 어느 쪽?",
+      "telegram": "나는 {type}! 📅 계획형 vs 즉흥형, 너는 어느 쪽?",
+      "line": "나는 {type}! 📅 계획형 vs 즉흥형, 너는 어느 쪽?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요."
+    }
   }
 }

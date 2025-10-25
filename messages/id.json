@@ -1614,5 +1614,55 @@
       "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
+  },
+  "plannerVsSpontaneousTest": {
+    "startMessage": {
+      "line1": "\"Rencanakan sebelumnya? Putuskan di tempat? Apa gaya Anda?\"",
+      "line2": "Beberapa orang merencanakan seminggu sebelumnya,",
+      "line3": "Beberapa orang memutuskan di pagi hari.",
+      "line4": "Orang dengan buku harian penuh jadwal,",
+      "line5": "Orang yang memutuskan \"Apa yang harus saya lakukan hari ini?\" setiap hari.",
+      "line6": "Hanya butuh 2 menit! Pilih dengan cepat menggunakan intuisi 📅"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang berpartisipasi",
+      "shareWithFriends": "Coba dengan Teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi Tes",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Area Iklan AdSense",
+      "analyzing": "Menganalisis hasil...",
+      "completed": "Tes Selesai!",
+      "showResult": "Lihat Hasil Analisis",
+      "yourResult": "Hasil Anda adalah"
+    },
+    "result": {
+      "characteristics": "Karakteristik",
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "advice": "Saran"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! 📅 Perencana vs Spontan, yang mana Anda?",
+      "kakao": "Saya {type}! 📅 Perencana vs Spontan, yang mana Anda?",
+      "wechat": "Saya {type}! 📅 Perencana vs Spontan, yang mana Anda?",
+      "whatsapp": "Saya {type}! 📅 Perencana vs Spontan, yang mana Anda?",
+      "telegram": "Saya {type}! 📅 Perencana vs Spontan, yang mana Anda?",
+      "line": "Saya {type}! 📅 Perencana vs Spontan, yang mana Anda?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk.",
+      "wechatCopy": "Tautan telah disalin! Silakan tempel di WeChat untuk berbagi."
+    }
   }
 }

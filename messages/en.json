@@ -1673,6 +1673,56 @@
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "plannerVsSpontaneousTest": {
+    "startMessage": {
+      "line1": "\"Plan ahead? Decide on the spot? What is your style?\"",
+      "line2": "Some people plan a week in advance,",
+      "line3": "Some people decide on the morning of.",
+      "line4": "People with diaries full of schedules,",
+      "line5": "People who decide \"What should I do today?\" every day.",
+      "line6": "Takes only 2 minutes! Choose quickly with intuition 📅"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": " people participated",
+      "shareWithFriends": "Try with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake Test",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "View Other Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense Ad Area",
+      "analyzing": "Analyzing results...",
+      "completed": "Test Completed!",
+      "showResult": "View Analysis Results",
+      "yourResult": "Your Result"
+    },
+    "result": {
+      "characteristics": "Characteristics",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "advice": "Advice"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! 📅 Planner vs Spontaneous, which one are you?",
+      "kakao": "I'm {type}! 📅 Planner vs Spontaneous, which one are you?",
+      "wechat": "I'm {type}! 📅 Planner vs Spontaneous, which one are you?",
+      "whatsapp": "I'm {type}! 📅 Planner vs Spontaneous, which one are you?",
+      "telegram": "I'm {type}! 📅 Planner vs Spontaneous, which one are you?",
+      "line": "I'm {type}! 📅 Planner vs Spontaneous, which one are you?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoError": "Error occurred during KakaoTalk sharing.",
+      "wechatCopy": "Link copied! Paste in WeChat to share."
+    }
   }
 }
 

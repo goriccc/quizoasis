@@ -29,6 +29,7 @@ import { honestyVsRestraintQuestions, honestyVsRestraintResults } from '@/lib/ho
 import { independenceQuestions, independenceResults } from '@/lib/independenceData';
 import { decisionSpeedQuestions, decisionSpeedResults } from '@/lib/decisionSpeedData';
 import { competitivenessQuestions, competitivenessResults } from '@/lib/competitivenessData';
+import { plannerVsSpontaneousQuestions, plannerVsSpontaneousResults } from '@/lib/plannerVsSpontaneousData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -158,6 +159,9 @@ const DecisionSpeedTestClient = dynamic(() => import('@/components/DecisionSpeed
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const CompetitivenessTestClient = dynamic(() => import('@/components/CompetitivenessTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const PlannerVsSpontaneousTestClient = dynamic(() => import('@/components/PlannerVsSpontaneousTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1663,6 +1667,59 @@ export default async function TestPage({ params }: Props) {
           questions={competitivenessQuestions}
           results={competitivenessResults}
           questionCount={competitivenessQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 계획형 vs 즉흥형 테스트
+  if (slug === 'planner-vs-spontaneous-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'planner-vs-spontaneous-test',
+      title: {
+        ko: '나는 계획형일까? vs 즉흥형일까?',
+        en: 'Am I a Planner or Spontaneous?',
+        ja: '私は計画型か即興型か？',
+        'zh-CN': '我是计划型还是即兴型？',
+        'zh-TW': '我是計劃型還是即興型？',
+        vi: 'Tôi là người lập kế hoạch hay tùy hứng?',
+        id: 'Apakah saya Perencana atau Spontan?'
+      },
+      description: {
+        ko: '미리 계획? 그때그때 결정? 당신의 스타일은?',
+        en: 'Plan ahead? Decide on the spot? What is your style?',
+        ja: '事前に計画？その時その時で決める？あなたのスタイルは？',
+        'zh-CN': '提前计划？当场决定？你的风格是什么？',
+        'zh-TW': '提前計劃？當場決定？你的風格是什麼？',
+        vi: 'Lên kế hoạch trước? Quyết định tại chỗ? Phong cách của bạn là gì?',
+        id: 'Rencanakan sebelumnya? Putuskan di tempat? Apa gaya Anda?'
+      },
+      thumbnail: 'test_219_planner_vs_spontaneous.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['성격'],
+        en: ['Personality'],
+        ja: ['性格'],
+        'zh-CN': ['性格'],
+        'zh-TW': ['性格'],
+        vi: ['Tính cách'],
+        id: ['Kepribadian']
+      }
+    };
+
+    return (
+      <>
+        <PlannerVsSpontaneousTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={plannerVsSpontaneousQuestions}
+          results={plannerVsSpontaneousResults}
+          questionCount={plannerVsSpontaneousQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
