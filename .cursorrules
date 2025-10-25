@@ -1,663 +1,14 @@
 # QuizOasis Development Rules
 
-## General Development Principles
-- When developing new features, existing features must never be modified.
-- However, if deemed necessary for efficient and optimized development, ask first and proceed.
-- Please develop it to be optimized for SEO.
-
-## Test Development - Critical Rules (Based on Previous Mistakes)
-
-### 1. ALWAYS Copy from ConflictTestClient (CRITICAL - USER'S MAIN REQUEST)
-❌ DON'T create new test components from scratch or copy from other test components
-❌ DON'T ignore this rule and create components "your way"
-❌ DON'T copy from tests with different data structures (SignalTestClient has multilingual arrays)
-❌ DON'T make UI components from scratch - this causes mistakes and delays
-❌ DON'T modify button styles, colors, gradients, or layouts without explicit user request
-✅ DO ALWAYS copy from "갈등 상황에서 당신은 어떻게 반응할까요?" (ConflictTestClient.tsx)
-✅ DO copy the EXACT UI components to ensure identical start screen, progress screen, and result screen
-✅ DO maintain identical button styles, colors, gradients, and layouts
-✅ DO preserve all CSS classes, spacing, and visual hierarchy
-✅ DO follow this exact process: Copy ConflictTestClient.tsx → Rename → Update data references → Keep UI identical
-Rule: This is the user's most emphasized rule - ALWAYS copy from ConflictTestClient for new tests to avoid mistakes and ensure fast development
-
-### 2. Component Copy Selection
-❌ DON'T copy from tests with different data structures (SignalTestClient has multilingual arrays)
-✅ DO copy from tests with same structure (AttachmentTestClient for Korean-only → multilingual conversion)
-Rule: Match source template's data structure to target test's initial requirements
-
-### 3. Data Structure First
-❌ DON'T start with Korean strings then convert to multilingual objects later
-✅ DO design multilingual structure (Record<string, string>) from the beginning
-Rule: Define interface with multilingual structure before writing any data
-
-### 4. Component-Data Structure Alignment
-❌ DON'T keep component expecting multilingual data when data is Korean-only strings
-✅ DO ensure component data access matches actual data structure
-Rule: Component renders must match data type (string vs Record<string, string>)
-
-### 5. Route Configuration Check
-❌ DON'T forget to update component import in route file
-✅ DO verify correct component is rendered for new slug
-Critical: Check that slug === 'new-test' ? NewTestClient is in routing logic
-
-### 6. Complete Translation Keys
-❌ DON'T miss UI element translation keys (shareResult, retake, otherTests, etc.)
-✅ DO add all UI text keys before testing: startMessage(6) + ui(9+) + result(10+)
-Rule: Prepare complete translation set: startMessage, ui, result sections
-
-### 7. Emoji Duplication
-❌ DON'T add emojis in both component hardcode AND translation files
-✅ DO include emojis only in translation files
-Rule: If translation has emoji, remove from component template literal
-
-### 8. Cache Clearing Protocol
-When code changes don't reflect:
-Kill all Node processes: taskkill /F /IM node.exe
-Delete .next folder: Remove-Item -Path .next -Recurse -Force
-Restart dev server: npm run dev
-Browser hard refresh: Ctrl+Shift+R
-
-### 9. Supabase Route Block Structure
-✅ DO create complete if-block with Supabase fetch + fallback + return statement
-✅ DO ensure correct TestClient component is used in return
-Pattern: if (slug === 'test-name') { const test = await getTestBySlug() || fallback; return <TestClient .../> }
-
 ## Social Sharing Multilingual Requirements (CRITICAL)
 
-### 10. Social Sharing Message Localization
-❌ DON'T hardcode Korean sharing messages in social sharing functions
-✅ DO implement multilingual sharing messages for ALL social sharing functions
-Rule: Every social sharing function must support all 7 languages (ko, en, ja, zh-CN, zh-TW, vi, id)
-
-### 11. Social Sharing Functions to Localize
-✅ DO localize ALL of these functions:
-- handleShareResult() - Default sharing function
-- shareToWeChat() - WeChat sharing
-- shareToWhatsApp() - WhatsApp sharing  
-- shareToKakao() - KakaoTalk sharing
-- shareToTelegram() - Telegram sharing
-- copyLink() - Link copy function
-
-### 12. Social Sharing Message Pattern
-✅ DO use this pattern for all sharing messages:
-```typescript
-const shareMessages = {
-  ko: `나의 연애 장애물은 ${resultTitle}! 너는 뭐가 문제야? 같이 해보자 😂💔`,
-  en: `My love obstacle is ${resultTitle}! What's your problem? Let's try together 😂💔`,
-  ja: `私の恋愛障害は${resultTitle}！あなたの問題は何？一緒にやってみよう 😂💔`,
-  'zh-CN': `我的恋爱障碍是${resultTitle}！你的问题是什么？一起试试吧 😂💔`,
-  'zh-TW': `我的戀愛障礙是${resultTitle}！你的問題是什麼？一起試試吧 😂💔`,
-  vi: `Trở ngại tình yêu của tôi là ${resultTitle}! Vấn đề của bạn là gì? Cùng thử nhé 😂💔`,
-  id: `Hambatan cinta saya adalah ${resultTitle}! Apa masalah Anda? Mari coba bersama 😂💔`
-};
-```
-
-### 13. Alert Message Localization
-✅ DO localize ALL alert messages in sharing functions:
-- Clipboard copy success messages
-- Sharing feature error messages  
-- WeChat link copy instructions
-- Any user-facing text in sharing functions
-
-## Multilingual Content Processing (CRITICAL)
-
-
-### 14. Multilingual Text Implementation
-❌ DON'T:
-- Hardcode Korean text in UI components without considering multilingual support
-- Use string literals directly in components without locale-based conditional rendering
-- Display variable names instead of actual values in template literals
-- Use incorrect variable interpolation syntax
-✅ DO:
-- Implement locale-based conditional rendering for all user-facing text
-- Use Record<string, string> structure for multilingual data from the beginning
-- Ensure proper variable interpolation: ${variableName} not [variableName]
-- Use correct variable extraction: typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko
-
-## File Size Management and Incremental Development (CRITICAL)
-
-### 15. File Size Guidelines
-✅ DO keep files manageable:
-- **Data files**: Max 500-800 lines per file
-- **Component files**: Max 300-500 lines per file
-- **Large data sets**: Split into multiple files (e.g., questions.ts, results.ts)
-- **Complex components**: Split into smaller sub-components
-
-### 16. Incremental Development Strategy
-✅ DO follow this pattern for large implementations:
-1. **Phase 1**: Create basic structure and interfaces
-2. **Phase 2**: Implement core functionality (one feature at a time)
-3. **Phase 3**: Add multilingual support (one language at a time)
-4. **Phase 4**: Add UI elements (one section at a time)
-5. **Phase 5**: Add social sharing (one platform at a time)
-6. **Phase 6**: Testing and refinement
-
-### 17. Tool Timeout Prevention
-❌ DON'T:
-- Create massive files that cause "Tool call ended before result was received" errors
-- Try to implement everything in a single large operation
-- Work with files that are too large to process efficiently
-- Process entire large files in one operation
-- Try to implement all languages simultaneously
-- Work with files over 1000 lines in single operations
-✅ DO:
-- Break down large files into smaller, manageable units
-- Implement features incrementally, step by step
-- Split large operations into smaller chunks
-- Process one language at a time
-- Commit changes frequently
-- Use incremental updates
-
-## Production Build Requirements
-
-### 18. ESLint Build Errors Prevention
-❌ DON'T:
-- Use unescaped quotes (") and apostrophes (') in JSX text content
-- Ignore ESLint warnings during development that become build errors in production
-- Leave special characters unescaped in template literals within JSX
-✅ DO:
-- Always escape quotes in JSX: " → &quot; or &ldquo; or &#34;
-- Always escape apostrophes in JSX: ' → &apos; or &lsquo; or &#39;
-- Test production builds (npm run build) before deployment
-- Fix all ESLint errors, not just warnings, before committing
-
-### 19. Production Build Validation
-❌ DON'T:
-- Deploy without running production build validation
-- Assume development server success means production will work
-- Ignore build-time ESLint errors
-✅ DO:
-- Always run npm run build before deployment
-- Fix all ESLint errors that prevent successful builds
-- Validate production build locally before pushing to repository
-- Treat build errors as deployment blockers
-
-## Development Order (Corrected):
-1. Choose correct source template based on data structure
-2. Define multilingual interface first
-3. Copy component matching structure
-4. Update all imports and type references
-5. Add route with correct component mapping
-6. Prepare all translation keys (all languages)
-7. Fill multilingual data
-8. **CRITICAL: Implement multilingual social sharing messages**
-9. **CRITICAL: Implement multilingual comma separation**
-10. Test with cache clearing
-11. Verify all UI elements have translations
-12. **CRITICAL: Test social sharing in all languages**
-
-## Pre-Development Checklist:
-[ ] Source template matches target data structure?
-[ ] Interface defined with Record<string, string>?
-[ ] All translation keys prepared in all 7 languages?
-[ ] Component imports updated?
-[ ] Route mapping includes new test slug?
-[ ] Correct TestClient component in route return?
-[ ] **Social sharing messages localized for all functions?**
-[ ] **All alert messages in sharing functions localized?**
-[ ] **Multilingual comma separation implemented?**
-[ ] **File size manageable for the operation?**
-[ ] **Task broken down into small, manageable steps?**
-
-## SQL Database Integration (CRITICAL)
-
-### 20. SQL File Structure Requirements
-❌ DON'T:
-- Add `created_at` and `updated_at` fields in INSERT statements
-- Use `NOW()` functions in SQL INSERT statements
-- Include timestamp fields that are auto-managed by database
-✅ DO:
-- Follow existing SQL file patterns exactly
-- Use only essential fields: slug, title, description, thumbnail, type, category, tags, play_count
-- Set play_count to 0 for new tests
-- Match the exact structure of other test SQL files
-
-### 21. SQL File Creation Checklist
-✅ DO verify these fields are included:
-- slug: unique test identifier
-- title: multilingual JSON object
-- description: multilingual JSON object  
-- thumbnail: image filename
-- type: 'dating' for relationship tests
-- category: 'love' for relationship tests
-- tags: multilingual array object
-- play_count: 0 (initial value)
-
-### 22. SQL File Naming Convention
-✅ DO use this pattern: `insert-{test-name}-test.sql`
-Examples: `insert-jealousy-test.sql`, `insert-love-obstacles-test.sql`
-
-### 23. SQL Tags Field Requirements (CRITICAL)
-❌ DON'T:
-- Add extra tags beyond what the user specifies in the scenario
-- Assume additional tags are needed (e.g., adding "가치관", "커리어" when user only specified "#직업")
-- Create multilingual tag arrays with more items than user requested
-✅ DO:
-- Use EXACTLY the tags specified in the user's scenario
-- If user specifies only "#직업", use only ["직업"] in all languages
-- Match the user's tag specification precisely without additions
-- Follow the pattern: if user says "#직업", use ["직업"] for all 7 languages
-
-## UI Consistency Requirements (CRITICAL)
-
-### 24. UI Component Copy Requirements
-❌ DON'T:
-- Create new UI components from scratch when copying existing tests
-- Modify button styles, colors, or layouts without explicit user request
-- Change CSS classes or styling patterns from the source template
-- Ignore existing UI patterns and create different visual designs
-✅ DO:
-- Copy the EXACT UI components from existing tests (e.g., ConflictTestClient.tsx)
-- Maintain identical button styles, colors, gradients, and layouts
-- Preserve all CSS classes, spacing, and visual hierarchy
-- Ensure UI consistency across all test components
-- Only modify content (text, data) while keeping UI structure identical
-
-### 25. UI Consistency Checklist
-✅ DO verify these elements match the source template:
-- Start button styling and colors
-- Progress bar design and animation
-- Loading spinner appearance and size
-- Question option button styles and colors
-- Result view button design
-- Share button styling and layout
-- Retake/Other tests button arrangement
-- Overall background gradients and colors
-- All spacing, padding, and margins
-- Font sizes, weights, and text styling
-
-### 26. UI Copy Process
-✅ DO follow this exact process:
-1. Copy the entire source component file (e.g., ConflictTestClient.tsx)
-2. Rename the component and file
-3. Update imports and data references
-4. Modify ONLY the content (questions, results, text)
-5. Keep ALL UI styling, CSS classes, and layout identical
-6. Test to ensure visual consistency with source template
-
-## Multilingual UI Text Localization (CRITICAL)
-
-### 27. Complete UI Text Localization
-❌ DON'T:
-- Leave hardcoded UI texts in components without multilingual support
-- Forget to translate button texts, section headers, and status messages
-- Miss UI elements like "결과 분석 중...", "진행률", "총 X명이 참여했어요!"
-- Ignore social sharing button texts and result screen elements
-✅ DO:
-- Translate ALL UI texts including buttons, headers, status messages
-- Use conditional rendering: {locale === 'ko' && 'Korean Text'}
-- Cover all UI elements: start screen, progress, loading, results, sharing
-- Test all languages to ensure complete localization
-
-### 28. UI Text Localization Checklist
-✅ DO verify these elements are translated:
-- Start screen: "테스트 시작", "친구와 함께 해보기", "총 X명이 참여했어요!"
-- Progress screen: "진행률", "결과 분석 중..."
-- Result screen: "당신의 결과", "🎯 특징", "✅ 장점", "⚠️ 단점", "💡 조언"
-- Compatibility: "💖 최고 궁합", "😊 좋은 궁합", "⚠️ 주의 필요", "❌ 어려운 궁합"
-- Action buttons: "결과 공유하기", "다시 테스트하기", "다른 테스트 보기"
-- Section headers: "🔥 요즘 인기 테스트 추천 톱5", "없음"
-
-### 29. Result Title Emoji Management
-❌ DON'T:
-- Include emojis in result title fields that should be clean text
-- Mix emojis in titles with separate emoji fields
-✅ DO:
-- Keep result titles clean without emojis (e.g., "극한 질투형" not "극한 질투형 🔥")
-- Use separate emoji field for display purposes
-- Remove emojis from all language title fields consistently
-
-### 30. React Rendering Error Prevention
-❌ DON'T:
-- Pass Record<string, string> objects directly as React children
-- Render multilingual objects without extracting locale-specific strings
-- Use partner.title directly in compatibility sections
-✅ DO:
-- Always extract strings: typeof field === 'string' ? field : field[locale] || field.ko
-- Use proper type checking for multilingual data
-- Ensure all rendered content is string type, not object type
-
-### 31. Multilingual Development Process
-✅ DO follow this complete process:
-1. Create data structure with Record<string, string> from the beginning
-2. Implement all UI text localization during initial development
-3. Test all languages during development, not after completion
-4. Use consistent patterns for all multilingual text handling
-5. Verify no hardcoded strings remain in components
-6. Test React rendering with all language combinations
-
-## TypeScript Build Error Prevention (CRITICAL)
-
-### 32. TypeScript Build Error Prevention
-❌ DON'T:
-- Use string variables to index objects without proper type checking
-- Access multilingual objects with dynamic locale strings without type assertions
-- Ignore TypeScript errors during development that become build failures
-- Skip build validation before deployment
-- Deploy without successful production build
-✅ DO:
-- Use type assertions: `obj[locale as keyof typeof obj]`
-- Use proper type checking: `typeof field === 'string' ? field : field[locale] || field.ko`
-- Fix all TypeScript errors before attempting production builds
-- Always run `npm run build` before deployment
-- Validate production build locally before pushing
-- Test builds frequently during development
-
-### 33. Development Server Cache Issues
-❌ DON'T:
-- Ignore "Cannot find module" errors in development
-- Continue development with corrupted cache
-- Skip cache clearing when module errors occur
-✅ DO:
-- Kill all Node processes: `taskkill /F /IM node.exe`
-- Clear Next.js cache: `Remove-Item -Path .next -Recurse -Force`
-- Clear node modules cache: `Remove-Item -Path node_modules\.cache -Recurse -Force`
-- Restart development server after cache clearing
-
-### 34. TypeScript Error Resolution Process
-✅ DO follow this exact process when TypeScript errors occur:
-1. Identify the specific TypeScript error and location
-2. Use proper type assertions for multilingual objects
-3. Add explicit type annotations for function parameters
-4. Test build after each fix
-5. Clear cache if module errors persist
-6. Restart development server if needed
-
-### 35. Build Error Prevention Checklist
-✅ DO verify these before deployment:
-- [ ] All TypeScript errors resolved
-- [ ] Production build successful (`npm run build`)
-- [ ] No "Cannot find module" errors
-- [ ] All multilingual type assertions working
-- [ ] Development server running without errors
-- [ ] Cache cleared if module errors occurred
-
-## Multilingual Comma Pattern Implementation (CRITICAL)
-
-### 36. Language-Specific Comma Separation
-❌ DON'T:
-- Use only English comma (,) for all languages
-- Assume all languages use the same comma characters
-- Hardcode comma separation without considering language-specific punctuation
-✅ DO:
-- Support multiple comma types: English (,), Japanese (、), Chinese (，)
-- Use regex pattern for comprehensive comma detection: /,\s+|，\s*|、\s*/
-- Implement proper trimming and filtering for split results
-- Test comma separation in all supported languages
-
-### 37. Multilingual Comma Separation Implementation Pattern
-✅ DO use this pattern for splitting multilingual comma-separated content:
-```typescript
-const splitByCommas = (text: string) => {
-  // 쉼표 뒤 공백을 포함한 패턴으로 분할
-  return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
-};
-
-// Usage for result sections:
-const resultSymptoms = splitByCommas(result.symptoms[locale] || result.symptoms.ko);
-const resultPattern = splitByCommas(result.patterns[locale] || result.patterns.ko);
-const resultRootCause = splitByCommas(result.causes[locale] || result.causes.ko);
-const resultSolution = splitByCommas(result.solutions[locale] || result.solutions.ko);
-```
-
-### 38. Data Structure Consistency (CRITICAL)
-❌ DON'T:
-- Mix string and Record<string, string> types in the same interface
-- Keep unused properties in interfaces (e.g., scores at question level when moved to options)
-- Assume data structure matches component expectations without verification
-✅ DO:
-- Ensure all multilingual fields use Record<string, string> consistently
-- Remove unused properties from interfaces when refactoring
-- Verify component rendering logic matches actual data structure
-- Test type assertions for all multilingual object access
-
-### 39. Multilingual Data Consistency (CRITICAL)
-❌ DON'T:
-- Use different comma patterns in data files vs component rendering
-- Mix English commas (,) with Chinese commas (，) in the same data
-- Assume all languages use the same punctuation conventions
-✅ DO:
-- Use consistent comma patterns in data files for each language
-- Chinese (zh-CN, zh-TW): Use Chinese comma (，) in data files
-- Japanese (ja): Use Japanese comma (、) in data files
-- Other languages: Use English comma (,) in data files
-- Test comma separation in all languages during development
-
-### 40. Component Data Access Pattern (CRITICAL)
-❌ DON'T:
-- Access multilingual objects without proper type checking
-- Assume data structure without verification
-- Mix string and object access patterns
-✅ DO:
-- Use consistent pattern: `typeof field === 'string' ? field : field[locale] || field.ko`
-- Extract text first, then split: `const text = field[locale] || field.ko; const array = text.split(pattern)`
-- Test all language combinations during development
-- Verify type safety for all multilingual object access
-
-### 41. Interface Design for Multilingual Support (CRITICAL)
-❌ DON'T:
-- Keep unused properties in interfaces after refactoring
-- Mix different data access patterns in the same interface
-- Assume interface matches actual usage without verification
-✅ DO:
-- Remove unused properties when refactoring data structure
-- Use consistent Record<string, string> for all multilingual fields
-- Verify interface matches component usage patterns
-- Test interface changes with build validation
-
-### 42. Development Process for Multilingual Features (CRITICAL)
-❌ DON'T:
-- Implement multilingual features without considering comma patterns
-- Skip language-specific testing during development
-- Assume all languages work the same way
-✅ DO:
-- Plan comma patterns from the beginning of multilingual implementation
-- Test comma separation in all supported languages
-- Use consistent patterns across all multilingual features
-- Validate build after each language-specific change
-
-These lessons ensure that future test development will have proper multilingual support from the beginning, avoiding the need for extensive refactoring later.
-
-## Multilingual Quote Handling (CRITICAL)
-
-### 43. Quote Escaping in Multilingual Text
-❌ DON'T:
-- Use double quotes ("") inside multilingual text strings
-- Use language-specific quote characters (Chinese quotes "") 
-- Use double quotes ("") in Vietnamese or Indonesian text
-- Ignore TypeScript syntax errors from quote conflicts
-✅ DO:
-- Use backslash escaping for all quotes: \"
-- Apply consistent quote pattern across all languages
-- Test build after multilingual text changes
-
-### 44. Correct Quote Pattern Examples
-✅ DO use this pattern for all multilingual text:
-```typescript
-// ❌ WRONG - causes build errors
-'zh-CN': "你是否说过"只相信我"？",
-vi: ""Người đó thực sự đáng tin cậy"",
-id: ""Orang itu benar-benar dapat dipercaya""
-
-// ✅ CORRECT - uses proper escaping
-'zh-CN': "你是否说过\"只相信我\"？",
-vi: "\"Người đó thực sự đáng tin certified\"",
-id: "\"Orang itu benar-benar dapat dipercaya\""
-```
-
-### 45. Language-Specific Quote Guidelines
-✅ DO follow these patterns:
-- **Korean/Japanese**: Use 「」 brackets (no issues)
-- **English**: Use \" escaping
-- **Chinese**: Use \" escaping (never use Chinese quotes "")
-- **Vietnamese**: Use \" escaping  
-- **Indonesian**: Use \" escaping
-
-### 46. Build Error Prevention for Quotes
-✅ DO verify before build:
-- [ ] All multilingual text uses \" escaping
-- [ ] No double quotes ("") in any language text
-- [ ] TypeScript syntax validation passes
-- [ ] npm run build succeeds
-
-## Trust Test Development Mistakes and Lessons (CRITICAL)
-
-### 47. Result Screen Display Issues
-❌ DON'T:
-- Display variable names instead of actual values in template literals
-- Use incorrect variable interpolation syntax (e.g., [variableName] instead of ${variableName})
-- Show compatibility descriptions as variable names (e.g., trustTest.result.compatibility.Type1_Type1)
-- Leave result descriptions empty or incomplete
-✅ DO:
-- Ensure proper variable interpolation: ${variableName} not [variableName]
-- Use correct variable extraction: typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko
-- Hardcode compatibility descriptions in getCompatibilityDescription function
-- Add complete detailed descriptions to all result types in data files
-
-### 48. Result Screen Layout and Spacing Issues
-❌ DON'T:
-- Remove spacing classes (mb-3, mt-3) without considering layout impact
-- Let sections stick together after removing elements
-- Use inconsistent spacing patterns across compatibility sections
-✅ DO:
-- Maintain consistent spacing: mb-3 for sections, mt-3 for top margins
-- Test layout changes thoroughly before finalizing
-- Ensure proper spacing between all result sections
-
-### 49. Trust Score Display Format
-❌ DON'T:
-- Use number type for trust scores when string format is required
-- Display raw numbers instead of star ratings
-✅ DO:
-- Use string type for trustScore in interface: trustScore: string
-- Format scores as star ratings: "★★★★★ (5/5)" instead of 5
-- Update all trustScore values to string format in data files
-
-### 50. Compatibility Section Rendering
-❌ DON'T:
-- Display compatibility items on multiple lines
-- Show raw variable names in compatibility descriptions
-- Use translation keys that return empty strings
-✅ DO:
-- Render each compatibility item on a single line
-- Hardcode compatibility descriptions in getCompatibilityDescription function
-- Use proper JSX structure for single-line display
-
-### 51. Multilingual UI Text Coverage
-❌ DON'T:
-- Miss UI elements during multilingual implementation
-- Leave hardcoded Korean text in components
-- Forget to add new translation keys to all language files
-- Use wrong translation keys for different contexts
-✅ DO:
-- Cover ALL UI text elements: buttons, headers, messages, alerts
-- Add translation keys to all 7 language files consistently
-- Use appropriate translation keys for different contexts (similarTests vs similarTestsTop5)
-- Test all languages during development
-
-### 52. Debug Log Cleanup
-❌ DON'T:
-- Leave console.log statements in production code
-- Forget to remove debug logs after development
-✅ DO:
-- Remove all console.log statements before finalizing
-- Clean up debug logs in production builds
-- Use proper logging practices for development only
-
-### 53. Component State Management
-❌ DON'T:
-- Call setShowResult(true) and setShowResultPopup(true) in handleAnswer
-- Have conflicting state updates between different functions
-- Forget to set loading spinner state properly
-✅ DO:
-- Let handleShowResult manage result screen transitions
-- Remove redundant state updates from handleAnswer
-- Ensure proper loading spinner state management
-- Test complete user flow from start to result
-
-### 54. Data Structure Consistency
-❌ DON'T:
-- Mix string and Record<string, string> types inconsistently
-- Change data structure without updating component access patterns
-- Assume data structure matches component expectations
-✅ DO:
-- Use consistent Record<string, string> for all multilingual fields
-- Update component rendering logic when changing data structure
-- Verify data access patterns match actual data structure
-- Test all language combinations during development
-
-### 55. File Size and Operation Management
-❌ DON'T:
-- Create massive files that cause "Tool call ended before result was received" errors
-- Try to implement everything in a single large operation
-- Work with files over 1000 lines in single operations
-✅ DO:
-- Break down large implementations into small, manageable steps
-- Implement features incrementally, step by step
-- Process one language at a time for multilingual content
-- Use incremental updates and frequent commits
-
-## Question/Answer Shuffling and Calculation Logic (CRITICAL)
-
-### 56. Shuffling Impact on Calculation Logic (CRITICAL)
-❌ DON'T:
-- Ignore the impact of question/answer shuffling on calculation logic
-- Store answers without question identification when shuffling is used
-- Assume calculation logic works correctly with shuffled data
-- Mix shuffled answer order with original question order in calculations
-✅ DO:
-- Always store question ID with answers when shuffling is implemented
-- Update calculation functions to handle both shuffled and non-shuffled data
-- Test calculation accuracy with different shuffling scenarios
-- Ensure consistent results regardless of question/answer order
-
-### 57. Answer Storage Pattern for Shuffled Tests
-❌ DON'T:
-- Store only scores without question context
-- Use array index to identify questions when shuffling is active
-- Assume original question order in calculation logic
-✅ DO:
-- Store answers with question ID: `{ questionId: question.id, scores: scores }`
-- Update calculation functions to handle new answer format
-- Maintain backward compatibility with existing answer formats
-- Test both shuffled and non-shuffled scenarios
-
-### 58. Calculation Function Compatibility
-❌ DON'T:
-- Break existing calculation logic when adding shuffling support
-- Assume all tests use the same answer storage format
-- Ignore backward compatibility when updating calculation functions
-✅ DO:
-- Support both old and new answer formats in calculation functions
-- Use conditional logic: `if (answer.scores) { /* new format */ } else { /* old format */ }`
-- Test calculation accuracy with both formats
-- Ensure consistent results across all test types
-
-### 59. Shuffling Implementation Checklist
-✅ DO verify these when implementing shuffling:
-- [ ] Question shuffling doesn't affect calculation accuracy
-- [ ] Answer option shuffling doesn't affect scoring
-- [ ] Calculation functions handle both shuffled and non-shuffled data
-- [ ] Same answers produce same results regardless of order
-- [ ] Backward compatibility maintained for existing tests
-- [ ] All test scenarios work correctly with shuffling
-
-### 60. Critical Shuffling Rules
-✅ DO follow these rules for all tests with shuffling:
-1. **Always store question ID with answers** when shuffling is implemented
-2. **Update calculation functions** to handle new answer format
-3. **Test calculation accuracy** with different shuffling scenarios
-4. **Maintain backward compatibility** with existing answer formats
-5. **Verify consistent results** regardless of question/answer order
-
-## Social Sharing Multilingual Requirements (CRITICAL)
-
-### 61. Social Sharing Message Localization
+### 1. Social Sharing Message Localization
 ❌ DON'T:
 - Hardcode Korean sharing messages in social sharing functions
 - Use hardcoded Korean text in shareToKakao, shareToWeChat, shareToWhatsApp, shareToTelegram, shareToLine functions
 - Leave alert messages in Korean only (e.g., "링크가 복사되었습니다!", "카카오톡 공유 중 오류가 발생했습니다.")
 - Ignore locale parameter in sharing functions
+
 ✅ DO:
 - Implement locale-based conditional rendering for ALL social sharing functions
 - Use t() function for all sharing messages: `t('testName.shareMessages.platform', { type: resultTitle })`
@@ -665,7 +16,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - Create language-specific sharing messages for each platform
 - Ensure consistent multilingual support across all sharing methods
 
-### 62. Social Sharing Functions to Localize
+### 2. Social Sharing Functions to Localize
 ✅ DO localize ALL of these functions:
 - handleShareResult() - Default sharing function
 - shareToKakao() - KakaoTalk sharing
@@ -675,7 +26,7 @@ id: "\"Orang itu benar-benar dapat dipercaya\""
 - shareToLine() - Line sharing
 - copyLink() - Link copy function
 
-### 63. Social Sharing Message Pattern
+### 3. Social Sharing Message Pattern
 ✅ DO use this pattern for all sharing messages:
 ```typescript
 // In messages files (ko.json, en.json, etc.)
@@ -695,7 +46,7 @@ const shareText = t('testName.shareMessages.default', { type: resultTitle });
 const shareDescription = t('testName.shareMessages.kakao', { type: resultTitle });
 ```
 
-### 64. Alert Message Localization
+### 4. Alert Message Localization
 ✅ DO localize ALL alert messages in sharing functions:
 - Clipboard copy success messages
 - Sharing feature error messages  
@@ -703,14 +54,14 @@ const shareDescription = t('testName.shareMessages.kakao', { type: resultTitle }
 - KakaoTalk initialization messages
 - Any user-facing text in sharing functions
 
-### 65. UI Text Localization for Social Sharing
+### 5. UI Text Localization for Social Sharing
 ✅ DO localize ALL UI elements related to social sharing:
 - Button alt texts: `alt={t('testName.ui.linkCopy')}`, `alt={t('testName.ui.kakao')}`
 - AdSense labels: `label={t('testName.ui.adsenseTitle')}`
 - Similar tests section: `{t('testName.ui.similarTests')}`
 - All user-facing text in result screens
 
-### 66. Social Sharing Implementation Checklist
+### 6. Social Sharing Implementation Checklist
 ✅ DO verify these when implementing social sharing:
 - [ ] All sharing functions use t() for messages
 - [ ] All alert messages are localized
@@ -719,3 +70,57 @@ const shareDescription = t('testName.shareMessages.kakao', { type: resultTitle }
 - [ ] Share messages work correctly in all languages
 - [ ] No hardcoded Korean text remains in components
 - [ ] Consistent multilingual experience across all sharing platforms
+
+## Example: Optimism Test Implementation
+
+### Translation Files Structure
+```json
+{
+  "optimismTest": {
+    "shareMessages": {
+      "default": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "kakao": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "wechat": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "whatsapp": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "telegram": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "line": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  }
+}
+```
+
+### Component Implementation Pattern
+```typescript
+// ✅ CORRECT - Multilingual sharing
+const handleShareResult = async () => {
+  if (!result) return;
+  
+  const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+  const shareMessage = t('optimismTest.shareMessages.default', { type: resultTitle });
+  const shareText = `${shareMessage}\n\n${url}`;
+  
+  // ... rest of implementation
+};
+
+// ❌ WRONG - Hardcoded Korean text
+const handleShareResult = async () => {
+  const shareText = `나는 ${resultTitle}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?\n\n${url}`;
+  // Korean text hardcoded
+};
+```
+
+## Common Mistakes to Avoid
+
+1. **Hardcoding Korean in sharing functions** - Always use t() function
+2. **Missing alert localizations** - All user-facing alerts must be localized
+3. **Inconsistent message formats** - Keep message structure consistent across platforms
+4. **Missing translation keys** - Ensure all 7 languages have complete keys
+5. **Ignoring locale parameter** - Always check locale before displaying text

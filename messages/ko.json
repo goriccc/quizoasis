@@ -754,6 +754,106 @@
       "clipboardError": "클립보드 복사 실패:"
     }
   },
+  "optimismTest": {
+    "startMessage": {
+      "line1": "\"컵에 물이 반? 반이나 있다 vs 반밖에 없다\"",
+      "line2": "같은 상황, 다른 해석.",
+      "line3": "어떤 사람은 항상 좋은 면을 보고,",
+      "line4": "어떤 사람은 늘 걱정이 앞섭니다.",
+      "line5": "\"다 잘 될 거야!\"\n\"그게 될 리가 있나...\"",
+      "line6": "당신은 세상을 어떻게 바라보나요? 소요 시간 단 2분! 직관으로 빠르게 선택하세요 🌤️"
+    },
+    "ui": {
+      "startTest": "테스트 시작하기",
+      "participants": "명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTests": "🔥 요즘 인기 테스트 추천 톱5"
+    },
+    "result": {
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "score": "심리 점수",
+      "advice": "조언",
+      "warning": "주의사항"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "kakao": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "wechat": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "whatsapp": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "telegram": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?",
+      "line": "나는 {type}! 🌤️ 컵에 물이 반? 너는 어떻게 볼래?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "\"당신 인생에서 정말 중요한 것은 무엇인가요?\"",
+      "line2": "돈, 명예, 사랑, 자유, 가족, 행복...",
+      "line3": "모두 중요하지만, 선택해야 한다면?",
+      "line4": "성공을 위해 관계를 포기할 수 있나요?",
+      "line5": "자유를 위해 안정을 버릴 수 있나요?",
+      "line6": "행복을 위해 야망을 내려놓을 수 있나요?",
+      "line7": "당신의 진짜 우선순위를 찾아보세요.",
+      "line8": "소요 시간 3분! 깊이 생각하며 답해주세요 💭"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "participants": "명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTests": "🔥 요즘 인기 테스트 추천 톱5"
+    },
+    "result": {
+      "analyzing": "결과 분석 중...",
+      "analyzingDetail": "당신의 인생 우선순위를 분석하고 있습니다",
+      "completed": "테스트 완료!",
+      "completedDetail": "당신의 인생 우선순위가 분석되었습니다",
+      "showResult": "분석 결과 보기",
+      "yourResult": "당신의 결과는",
+      "coreValues": "핵심 가치",
+      "strengths": "강점",
+      "weaknesses": "약점",
+      "advice": "조언",
+      "bestMatch": "💖 어울리는 타입",
+      "goodMatch": "😊 괜찮은 타입",
+      "carefulMatch": "⚠️ 주의 타입"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
+      "kakao": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
+      "wechat": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
+      "whatsapp": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
+      "telegram": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
+      "line": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "idealTypeTest": {
     "startMessageLine1": "머리? 가슴? 아니면 든든함?",
     "startMessageLine2": "똑똑한 사람에게 끌리나요? 재미있는 사람이 좋은가요? 따뜻한 사람을 원하나요?",

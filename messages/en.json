@@ -668,6 +668,106 @@
       "clipboardError": "Clipboard copy failed:"
     }
   },
+  "optimismTest": {
+    "startMessage": {
+      "line1": "\"Cup half full or half empty?\"",
+      "line2": "Same situation, different interpretation.",
+      "line3": "Some people always see the bright side,",
+      "line4": "others always worry ahead.",
+      "line5": "\"Everything will be fine!\"\n\"How can that be...\"",
+      "line6": "How do you see the world? Just 2 minutes! Choose quickly with intuition 🌤️"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "people participated",
+      "shareWithFriends": "Try with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "popularTests": "🔥 Top 5 Popular Tests"
+    },
+    "result": {
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "score": "Psychological Score",
+      "advice": "Advice",
+      "warning": "Warning"
+    },
+    "shareMessages": {
+      "default": "I am {type}! 🌤️ Cup half full or half empty? How do you see it?",
+      "kakao": "I am {type}! 🌤️ Cup half full or half empty? How do you see it?",
+      "wechat": "I am {type}! 🌤️ Cup half full or half empty? How do you see it?",
+      "whatsapp": "I am {type}! 🌤️ Cup half full or half empty? How do you see it?",
+      "telegram": "I am {type}! 🌤️ Cup half full or half empty? How do you see it?",
+      "line": "I am {type}! 🌤️ Cup half full or half empty? How do you see it?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "\"What is truly important in your life?\"",
+      "line2": "Money, fame, love, freedom, family, happiness...",
+      "line3": "All are important, but if you had to choose?",
+      "line4": "Can you give up relationships for success?",
+      "line5": "Can you abandon stability for freedom?",
+      "line6": "Can you let go of ambition for happiness?",
+      "line7": "Find your true priorities.",
+      "line8": "Take 3 minutes! Think deeply as you answer 💭"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "people participated",
+      "shareWithFriends": "Try with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "popularTests": "🔥 Top 5 Popular Tests"
+    },
+    "result": {
+      "analyzing": "Analyzing results...",
+      "analyzingDetail": "Analyzing your life priorities",
+      "completed": "Test Complete!",
+      "completedDetail": "Your life priorities have been analyzed",
+      "showResult": "View Analysis Results",
+      "yourResult": "Your result is",
+      "coreValues": "Core Values",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "advice": "Advice",
+      "bestMatch": "💖 Best Match",
+      "goodMatch": "😊 Good Match",
+      "carefulMatch": "⚠️ Careful Match"
+    },
+    "shareMessages": {
+      "default": "I am {type}! 💭 What matters most in life? What&apos;s most important to you? Let&apos;s compare our priorities!",
+      "kakao": "I am {type}! 💭 What matters most in life? What&apos;s most important to you? Let&apos;s compare our priorities!",
+      "wechat": "I am {type}! 💭 What matters most in life? What&apos;s most important to you? Let&apos;s compare our priorities!",
+      "whatsapp": "I am {type}! 💭 What matters most in life? What&apos;s most important to you? Let&apos;s compare our priorities!",
+      "telegram": "I am {type}! 💭 What matters most in life? What&apos;s most important to you? Let&apos;s compare our priorities!",
+      "line": "I am {type}! 💭 What matters most in life? What&apos;s most important to you? Let&apos;s compare our priorities!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "Your way of loving, determined from childhood?",

@@ -667,6 +667,106 @@
       "clipboardError": "剪贴板复制失败："
     }
   },
+  "optimismTest": {
+    "startMessage": {
+      "line1": "\"杯子半满还是半空？\"",
+      "line2": "相同情况，不同解读。",
+      "line3": "有些人总是看到好的一面，",
+      "line4": "有些人总是先担心。",
+      "line5": "\"一切都会好的！\"\n\"这怎么可能...\"",
+      "line6": "你如何看待世界？只需2分钟！凭直觉快速选择 🌤️"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "participants": "人参加了",
+      "shareWithFriends": "与朋友一起试试",
+      "progress": "进度",
+      "retakeTest": "重新测试",
+      "shareResult": "分享结果",
+      "retake": "重新测试",
+      "otherTests": "其他测试",
+      "similarTests": "🎯 相似测试推荐 Top 5",
+      "popularTests": "🔥 热门测试推荐 Top 5"
+    },
+    "result": {
+      "strengths": "优点",
+      "weaknesses": "缺点",
+      "score": "心理分数",
+      "advice": "建议",
+      "warning": "注意事项"
+    },
+    "shareMessages": {
+      "default": "我是{type}！ 🌤️ 杯子半满还是半空？你怎么看？",
+      "kakao": "我是{type}！ 🌤️ 杯子半满还是半空？你怎么看？",
+      "wechat": "我是{type}！ 🌤️ 杯子半满还是半空？你怎么看？",
+      "whatsapp": "我是{type}！ 🌤️ 杯子半满还是半空？你怎么看？",
+      "telegram": "我是{type}！ 🌤️ 杯子半满还是半空？你怎么看？",
+      "line": "我是{type}！ 🌤️ 杯子半满还是半空？你怎么看？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    }
+  },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "\"生活中真正重要的是什么？\"",
+      "line2": "金钱、名誉、爱情、自由、家庭、幸福...",
+      "line3": "都很重要，但如果必须选择呢？",
+      "line4": "你愿意为了成功放弃关系吗？",
+      "line5": "你愿意为了自由放弃稳定吗？",
+      "line6": "你愿意为了幸福放下野心吗？",
+      "line7": "找到你真正的优先级。",
+      "line8": "需要3分钟！请深入思考后再回答 💭"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "participants": "人参加了",
+      "shareWithFriends": "与朋友一起试试",
+      "progress": "进度",
+      "retakeTest": "重新测试",
+      "shareResult": "分享结果",
+      "retake": "重新测试",
+      "otherTests": "其他测试",
+      "similarTests": "🎯 相似测试推荐 Top 5",
+      "popularTests": "🔥 热门测试推荐 Top 5"
+    },
+    "result": {
+      "analyzing": "正在分析结果...",
+      "analyzingDetail": "正在分析你的人生优先级",
+      "completed": "测试完成！",
+      "completedDetail": "你的人生优先级已分析完毕",
+      "showResult": "查看分析结果",
+      "yourResult": "你的结果是",
+      "coreValues": "核心价值",
+      "strengths": "优点",
+      "weaknesses": "缺点",
+      "advice": "建议",
+      "bestMatch": "💖 最佳匹配",
+      "goodMatch": "😊 良好匹配",
+      "carefulMatch": "⚠️ 需要谨慎的匹配"
+    },
+    "shareMessages": {
+      "default": "我是{type}！ 💭 生活中什么最重要？对你来说最重要的是什么？我们一起比较一下优先级吧！",
+      "kakao": "我是{type}！ 💭 生活中什么最重要？对你来说最重要的是什么？我们一起比较一下优先级吧！",
+      "wechat": "我是{type}！ 💭 生活中什么最重要？对你来说最重要的是什么？我们一起比较一下优先级吧！",
+      "whatsapp": "我是{type}！ 💭 生活中什么最重要？对你来说最重要的是什么？我们一起比较一下优先级吧！",
+      "telegram": "我是{type}！ 💭 生活中什么最重要？对你来说最重要的是什么？我们一起比较一下优先级吧！",
+      "line": "我是{type}！ 💭 生活中什么最重要？对你来说最重要的是什么？我们一起比较一下优先级吧！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "你的爱情方式，从童年就决定了？",

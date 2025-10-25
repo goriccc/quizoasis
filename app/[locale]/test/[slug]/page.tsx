@@ -21,6 +21,8 @@ import { timeEfficiencyQuestions, timeEfficiencyResults } from '@/lib/timeEffici
 import { brainQuestions, brainResults } from '@/lib/brainData';
 import { leadershipQuestions, leadershipResults } from '@/lib/leadershipData';
 import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
+import { optimismQuestions, optimismResults } from '@/lib/optimismData';
+import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -126,6 +128,12 @@ const TimeEfficiencyTestClient = dynamic(() => import('@/components/TimeEfficien
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const BrainTestClient = dynamic(() => import('@/components/BrainTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const OptimismTestClient = dynamic(() => import('@/components/OptimismTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1207,6 +1215,112 @@ export default async function TestPage({ params }: Props) {
           questions={challengePotentialQuestions}
           results={challengePotentialResults}
           questionCount={challengePotentialQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 낙관 vs 비관 테스트
+  if (slug === 'optimism-pessimism-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'optimism-pessimism-test',
+      title: {
+        ko: '나는 낙관주의일까? vs 비관주의일까?',
+        en: 'Am I an Optimist or Pessimist?',
+        ja: '私は楽観主義者か悲観主義者か？',
+        'zh-CN': '我是乐观主义者还是悲观主义者？',
+        'zh-TW': '我是樂觀主義者還是悲觀主義者？',
+        vi: 'Tôi là người lạc quan hay bi quan?',
+        id: 'Apakah saya optimis atau pesimis?'
+      },
+      description: {
+        ko: '컵에 물이 반? 반이나 있다 vs 반밖에 없다',
+        en: 'Cup half full or half empty?',
+        ja: 'コップに水が半分？半分もある vs 半分しかない',
+        'zh-CN': '杯子半满还是半空？',
+        'zh-TW': '杯子半滿還是半空？',
+        vi: 'Cốc nước đầy một nửa hay còn một nửa?',
+        id: 'Cangkir setengah penuh atau setengah kosong?'
+      },
+      thumbnail: 'test_204_optimism_vs_pessimism.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['성격'],
+        en: ['Personality'],
+        ja: ['性格'],
+        'zh-CN': ['性格'],
+        'zh-TW': ['性格'],
+        vi: ['Tính cách'],
+        id: ['Kepribadian']
+      }
+    };
+
+    return (
+      <>
+        <OptimismTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={optimismQuestions}
+          results={optimismResults}
+          questionCount={optimismQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 나의 인생 우선순위 찾기 테스트
+  if (slug === 'life-priorities') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'life-priorities',
+      title: {
+        ko: '나의 인생 우선순위 찾기',
+        en: 'Find My Life Priorities',
+        ja: '私の人生の優先順位を見つける',
+        'zh-CN': '找到我的人生优先级',
+        'zh-TW': '找到我的人生優先級',
+        vi: 'Tìm Thứ tự Ưu tiên Cuộc sống của Tôi',
+        id: 'Temukan Prioritas Hidup Saya'
+      },
+      description: {
+        ko: '당신 인생에서 정말 중요한 것은 무엇인가요?',
+        en: 'What is truly important in your life?',
+        ja: 'あなたの人生で本当に重要なことは何ですか？',
+        'zh-CN': '生活中真正重要的是什么？',
+        'zh-TW': '生活中真正重要的是什麼？',
+        vi: 'Điều gì thực sự quan trọng trong cuộc sống của bạn?',
+        id: 'Apa yang benar-benar penting dalam hidup Anda?'
+      },
+      thumbnail: 'test_205_life_priorities.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['자기이해'],
+        en: ['Self-understanding'],
+        ja: ['自己理解'],
+        'zh-CN': ['自我理解'],
+        'zh-TW': ['自我理解'],
+        vi: ['Tự hiểu'],
+        id: ['Pemahaman diri']
+      }
+    };
+
+    return (
+      <>
+        <LifePrioritiesTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={lifePrioritiesQuestions}
+          results={lifePrioritiesResults}
+          questionCount={lifePrioritiesQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

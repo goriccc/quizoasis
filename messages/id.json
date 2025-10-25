@@ -667,6 +667,106 @@
       "clipboardError": "Salin clipboard gagal:"
     }
   },
+  "optimismTest": {
+    "startMessage": {
+      "line1": "\"Cangkir setengah penuh atau setengah kosong?\"",
+      "line2": "Situasi yang sama, interpretasi berbeda.",
+      "line3": "Beberapa orang selalu melihat sisi baik,",
+      "line4": "Beberapa orang selalu khawatir duluan.",
+      "line5": "\"Semuanya akan baik-baik saja!\"\n\"Bagaimana mungkin...\"",
+      "line6": "Bagaimana Anda melihat dunia? Hanya 2 menit! Pilih cepat dengan intuisi 🌤️"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang berpartisipasi",
+      "shareWithFriends": "Coba dengan Teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "similarTests": "🎯 Top 5 Tes Serupa",
+      "popularTests": "🔥 Top 5 Tes Populer"
+    },
+    "result": {
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "score": "Skor Psikologis",
+      "advice": "Nasihat",
+      "warning": "Peringatan"
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! 🌤️ Cangkir setengah penuh atau setengah kosong? Bagaimana Anda melihatnya?",
+      "kakao": "Saya adalah {type}! 🌤️ Cangkir setengah penuh atau setengah kosong? Bagaimana Anda melihatnya?",
+      "wechat": "Saya adalah {type}! 🌤️ Cangkir setengah penuh atau setengah kosong? Bagaimana Anda melihatnya?",
+      "whatsapp": "Saya adalah {type}! 🌤️ Cangkir setengah penuh atau setengah kosong? Bagaimana Anda melihatnya?",
+      "telegram": "Saya adalah {type}! 🌤️ Cangkir setengah penuh atau setengah kosong? Bagaimana Anda melihatnya?",
+      "line": "Saya adalah {type}! 🌤️ Cangkir setengah penuh atau setengah kosong? Bagaimana Anda melihatnya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "\"Apa yang benar-benar penting dalam hidup Anda?\"",
+      "line2": "Uang, ketenaran, cinta, kebebasan, keluarga, kebahagiaan...",
+      "line3": "Semuanya penting, tapi jika harus memilih?",
+      "line4": "Bisakah Anda mengorbankan hubungan untuk kesuksesan?",
+      "line5": "Bisakah Anda meninggalkan stabilitas untuk kebebasan?",
+      "line6": "Bisakah Anda melepaskan ambisi untuk kebahagiaan?",
+      "line7": "Temukan prioritas sejati Anda.",
+      "line8": "Butuh 3 menit! Pikirkan dalam-dalam saat menjawab 💭"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang berpartisipasi",
+      "shareWithFriends": "Coba dengan Teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "similarTests": "🎯 Top 5 Tes Serupa",
+      "popularTests": "🔥 Top 5 Tes Populer"
+    },
+    "result": {
+      "analyzing": "Menganalisis hasil...",
+      "analyzingDetail": "Menganalisis prioritas hidup Anda",
+      "completed": "Tes Selesai!",
+      "completedDetail": "Prioritas hidup Anda telah dianalisis",
+      "showResult": "Lihat Hasil Analisis",
+      "yourResult": "Hasil Anda adalah",
+      "coreValues": "Nilai Inti",
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "advice": "Nasihat",
+      "bestMatch": "💖 Kecocokan Terbaik",
+      "goodMatch": "😊 Kecocokan Baik",
+      "carefulMatch": "⚠️ Kecocokan yang Perlu Hati-hati"
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! 💭 Apa yang paling penting dalam hidup? Apa yang paling penting bagi Anda? Mari bandingkan prioritas kita!",
+      "kakao": "Saya adalah {type}! 💭 Apa yang paling penting dalam hidup? Apa yang paling penting bagi Anda? Mari bandingkan prioritas kita!",
+      "wechat": "Saya adalah {type}! 💭 Apa yang paling penting dalam hidup? Apa yang paling penting bagi Anda? Mari bandingkan prioritas kita!",
+      "whatsapp": "Saya adalah {type}! 💭 Apa yang paling penting dalam hidup? Apa yang paling penting bagi Anda? Mari bandingkan prioritas kita!",
+      "telegram": "Saya adalah {type}! 💭 Apa yang paling penting dalam hidup? Apa yang paling penting bagi Anda? Mari bandingkan prioritas kita!",
+      "line": "Saya adalah {type}! 💭 Apa yang paling penting dalam hidup? Apa yang paling penting bagi Anda? Mari bandingkan prioritas kita!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "Cara mencintai Anda, ditentukan sejak masa kanak-kanak?",

@@ -667,6 +667,106 @@
       "clipboardError": "Sao chép clipboard thất bại:"
     }
   },
+  "optimismTest": {
+    "startMessage": {
+      "line1": "\"Cốc nước đầy một nửa hay còn một nửa?\"",
+      "line2": "Cùng một tình huống, cách hiểu khác nhau.",
+      "line3": "Một số người luôn nhìn thấy mặt tích cực,",
+      "line4": "Một số người luôn lo lắng trước.",
+      "line5": "\"Mọi thứ sẽ ổn thôi!\"\n\"Làm sao có thể...\"",
+      "line6": "Bạn nhìn thế giới như thế nào? Chỉ mất 2 phút! Chọn nhanh bằng trực giác 🌤️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến"
+    },
+    "result": {
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
+      "score": "Điểm tâm lý",
+      "advice": "Lời khuyên",
+      "warning": "Cảnh báo"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 🌤️ Cốc nước đầy một nửa hay còn một nửa? Bạn nghĩ sao?",
+      "kakao": "Tôi là {type}! 🌤️ Cốc nước đầy một nửa hay còn một nửa? Bạn nghĩ sao?",
+      "wechat": "Tôi là {type}! 🌤️ Cốc nước đầy một nửa hay còn một nửa? Bạn nghĩ sao?",
+      "whatsapp": "Tôi là {type}! 🌤️ Cốc nước đầy một nửa hay còn một nửa? Bạn nghĩ sao?",
+      "telegram": "Tôi là {type}! 🌤️ Cốc nước đầy một nửa hay còn một nửa? Bạn nghĩ sao?",
+      "line": "Tôi là {type}! 🌤️ Cốc nước đầy một nửa hay còn một nửa? Bạn nghĩ sao?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    }
+  },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "\"Điều gì thực sự quan trọng trong cuộc sống của bạn?\"",
+      "line2": "Tiền bạc, danh vọng, tình yêu, tự do, gia đình, hạnh phúc...",
+      "line3": "Tất cả đều quan trọng, nhưng nếu phải chọn?",
+      "line4": "Bạn có thể từ bỏ mối quan hệ vì thành công không?",
+      "line5": "Bạn có thể bỏ sự ổn định vì tự do không?",
+      "line6": "Bạn có thể buông bỏ tham vọng vì hạnh phúc không?",
+      "line7": "Tìm thứ tự ưu tiên thực sự của bạn.",
+      "line8": "Mất 3 phút! Hãy suy nghĩ sâu sắc khi trả lời 💭"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến"
+    },
+    "result": {
+      "analyzing": "Đang phân tích kết quả...",
+      "analyzingDetail": "Đang phân tích thứ tự ưu tiên cuộc sống của bạn",
+      "completed": "Hoàn thành kiểm tra!",
+      "completedDetail": "Thứ tự ưu tiên cuộc sống của bạn đã được phân tích",
+      "showResult": "Xem kết quả phân tích",
+      "yourResult": "Kết quả của bạn là",
+      "coreValues": "Giá trị cốt lõi",
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "bestMatch": "💖 Phù hợp nhất",
+      "goodMatch": "😊 Phù hợp tốt",
+      "carefulMatch": "⚠️ Cần cẩn thận"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "kakao": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "wechat": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "whatsapp": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "telegram": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "line": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "Cách yêu của bạn, được quyết định từ thời thơ ấu?",
