@@ -541,6 +541,47 @@
       }
     }
   },
+  "obsessionTest": {
+    "startMessage": {
+      "line1": "\"追求完美？還是強迫症？\"",
+      "line2": "乾淨和潔癖是不同的，",
+      "line3": "有計劃性和強迫性是不同的。",
+      "line4": "\"再檢查一次就能安心\"",
+      "line5": "\"不這樣做就焦慮得受不了\"",
+      "line6": "你的標準是健康的還是強迫性的？僅需2分鐘！請誠實回答 🧠"
+    },
+    "ui": {
+      "symptoms": "主要症狀",
+      "riskLevel": "風險等級",
+      "impact": "影響",
+      "advice": "建議",
+      "managementTips": "管理技巧",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "shareMessages": {
+      "default": "我是{type}！我的標準是健康的還是強迫性的？ 🧠 你也來檢查一下吧！",
+      "kakao": "我是{type}！我的標準是健康的還是強迫性的？ 🧠 你也來檢查一下吧！",
+      "wechat": "我是{type}！我的標準是健康的還是強迫性的？ 🧠 你也來檢查一下吧！",
+      "whatsapp": "我是{type}！我的標準是健康的還是強迫性的？ 🧠 你也來檢查一下吧！",
+      "telegram": "我是{type}！我的標準是健康的還是強迫性的？ 🧠 你也來檢查一下吧！",
+      "line": "我是{type}！我的標準是健康的還是強迫性的？ 🧠 你也來檢查一下吧！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareUnavailable": "分享功能不可用。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。",
+      "wechatCopy": "連結已複製！請在WeChat中貼上並分享。",
+      "shareFailed": "分享失敗：",
+      "clipboardError": "剪貼簿複製失敗："
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "你的愛情方式，從童年就決定了？",

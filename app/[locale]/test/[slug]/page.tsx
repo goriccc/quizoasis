@@ -20,6 +20,7 @@ import { investmentStyleQuestions, investmentStyleResults } from '@/lib/investme
 import { timeEfficiencyQuestions, timeEfficiencyResults } from '@/lib/timeEfficiencyData';
 import { brainQuestions, brainResults } from '@/lib/brainData';
 import { leadershipQuestions, leadershipResults } from '@/lib/leadershipData';
+import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -104,6 +105,9 @@ const WorkLifeBalanceTestClient = dynamic(() => import('@/components/WorkLifeBal
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LeadershipTestClient = dynamic(() => import('@/components/LeadershipTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const ObsessionTestClient = dynamic(() => import('@/components/ObsessionTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TeamPlayerTestClient = dynamic(() => import('@/components/TeamPlayerTestClient'), {
@@ -1072,6 +1076,52 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
+  // 강박 테스트의 경우 Supabase에서 시도
+  if (slug === 'obsession-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'obsession-test',
+      title: {
+        ko: '나는 강박 스타일까? vs 건강한 스타일까?',
+        en: 'Am I obsessed? vs healthy style?',
+        ja: '私は強迫スタイルか？VS健康的なスタイルか？',
+        'zh-CN': '我是强迫型还是健康型？',
+        'zh-TW': '我是強迫型還是健康型？',
+        vi: 'Tôi là phong cách ám ảnh hay phong cách khỏe mạnh?',
+        id: 'Apakah saya gaya obsesif? VS gaya sehat?'
+      },
+      description: {
+        ko: '완벽함을 추구하는 것? 아니면 강박일까?',
+        en: 'Pursuing perfection? Or obsession?',
+        ja: '完璧を追求すること？それとも強迫的？',
+        'zh-CN': '追求完美？还是强迫症？',
+        'zh-TW': '追求完美？還是強迫症？',
+        vi: 'Theo đuổi sự hoàn hảo? Hay ám ảnh?',
+        id: 'Mengejar kesempurnaan? Atau obsesi?'
+      },
+      thumbnail: 'test_203_obsession_vs_healthy.jpg',
+      play_count: 0
+    };
+
+    return (
+      <>
+        <ObsessionTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={obsessionQuestions}
+          results={obsessionResults}
+          questionCount={obsessionQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
   // 팀 플레이어 테스트의 경우 Supabase에서 시도
   if (slug === 'team-player-test') {
     const supabaseTest = await getTestBySlug(slug);
@@ -1434,6 +1484,8 @@ export default async function TestPage({ params }: Props) {
   
   if (slug === 'leadership-style-test') {
     TestClient = LeadershipTestClient;
+  } else if (slug === 'obsession-test') {
+    TestClient = ObsessionTestClient;
   } else if (slug === 'left-right-brain-test') {
     TestClient = BrainTestClient;
   } else if (slug === 'time-efficiency-test') {

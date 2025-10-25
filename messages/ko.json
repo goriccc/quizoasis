@@ -713,6 +713,47 @@
       }
     }
   },
+  "obsessionTest": {
+    "startMessage": {
+      "line1": "\"완벽함을 추구하는 것? 아니면 강박일까?\"",
+      "line2": "깔끔한 것과 결벽증은 다르고,",
+      "line3": "계획적인 것과 강박적인 것은 다릅니다.",
+      "line4": "\"한 번만 더 확인하면 안심이 돼\"",
+      "line5": "\"이렇게 안 하면 불안해서 못 견뎌\"",
+      "line6": "당신의 기준은 건강한가요, 아니면 강박인가요? 소요 시간 단 2분! 솔직하게 답변해주세요 🧠"
+    },
+    "ui": {
+      "symptoms": "주요 증상",
+      "riskLevel": "위험도",
+      "impact": "영향",
+      "advice": "조언",
+      "managementTips": "관리 팁",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 내 기준은 건강할까, 강박일까? 🧠 너도 확인해봐!",
+      "kakao": "나는 {type}! 내 기준은 건강할까, 강박일까? 🧠 너도 확인해봐!",
+      "wechat": "나는 {type}! 내 기준은 건강할까, 강박일까? 🧠 너도 확인해봐!",
+      "whatsapp": "나는 {type}! 내 기준은 건강할까, 강박일까? 🧠 너도 확인해봐!",
+      "telegram": "나는 {type}! 내 기준은 건강할까, 강박일까? 🧠 너도 확인해봐!",
+      "line": "나는 {type}! 내 기준은 건강할까, 강박일까? 🧠 너도 확인해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareUnavailable": "공유 기능을 사용할 수 없습니다.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "shareFailed": "공유 실패:",
+      "clipboardError": "클립보드 복사 실패:"
+    }
+  },
   "idealTypeTest": {
     "startMessageLine1": "머리? 가슴? 아니면 든든함?",
     "startMessageLine2": "똑똑한 사람에게 끌리나요? 재미있는 사람이 좋은가요? 따뜻한 사람을 원하나요?",

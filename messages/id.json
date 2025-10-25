@@ -626,6 +626,47 @@
       }
     }
   },
+  "obsessionTest": {
+    "startMessage": {
+      "line1": "\" Mengejar kesempurnaan? Atau obsesi?\"",
+      "line2": "Kebersihan berbeda dengan gangguan obsesif kompulsif,",
+      "line3": "Berencana berbeda dengan obsesif.",
+      "line4": "\"Cek sekali lagi dan saya akan merasa tenang\"",
+      "line5": "\"Jika tidak melakukannya dengan cara ini, saya tidak bisa menahan kecemasan\"",
+      "line6": "Apakah standar Anda sehat atau obsesif? Hanya butuh 2 menit! Mohon jawab dengan jujur 🧠"
+    },
+    "ui": {
+      "symptoms": "Gejala Utama",
+      "riskLevel": "Tingkat Risiko",
+      "impact": "Dampak",
+      "advice": "Nasihat",
+      "managementTips": "Tip Manajemen",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! Apakah standar saya sehat atau obsesif? 🧠 Cek juga punya Anda!",
+      "kakao": "Saya adalah {type}! Apakah standar saya sehat atau obsesif? 🧠 Cek juga punya Anda!",
+      "wechat": "Saya adalah {type}! Apakah standar saya sehat atau obsesif? 🧠 Cek juga punya Anda!",
+      "whatsapp": "Saya adalah {type}! Apakah standar saya sehat atau obsesif? 🧠 Cek juga punya Anda!",
+      "telegram": "Saya adalah {type}! Apakah standar saya sehat atau obsesif? 🧠 Cek juga punya Anda!",
+      "line": "Saya adalah {type}! Apakah standar saya sehat atau obsesif? 🧠 Cek juga punya Anda!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareUnavailable": "Fitur berbagi tidak tersedia.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "shareFailed": "Berbagi gagal:",
+      "clipboardError": "Salin clipboard gagal:"
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "Cara mencintai Anda, ditentukan sejak masa kanak-kanak?",

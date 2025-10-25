@@ -627,6 +627,47 @@
       }
     }
   },
+  "obsessionTest": {
+    "startMessage": {
+      "line1": "\"Pursuing perfection? Or obsession?\"",
+      "line2": "Cleanliness is different from obsessive-compulsive disorder,",
+      "line3": "Being planned is different from being obsessive.",
+      "line4": "\"One more check and I'll feel at ease\"",
+      "line5": "\"If I don't do it this way, I can't bear the anxiety\"",
+      "line6": "Are your standards healthy or obsessive? Takes only 2 minutes! Please answer honestly 🧠"
+    },
+    "ui": {
+      "symptoms": "Main Symptoms",
+      "riskLevel": "Risk Level",
+      "impact": "Impact",
+      "advice": "Advice",
+      "managementTips": "Management Tips",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "shareMessages": {
+      "default": "I am {type}! Are my standards healthy or obsessive? 🧠 Check yours too!",
+      "kakao": "I am {type}! Are my standards healthy or obsessive? 🧠 Check yours too!",
+      "wechat": "I am {type}! Are my standards healthy or obsessive? 🧠 Check yours too!",
+      "whatsapp": "I am {type}! Are my standards healthy or obsessive? 🧠 Check yours too!",
+      "telegram": "I am {type}! Are my standards healthy or obsessive? 🧠 Check yours too!",
+      "line": "I am {type}! Are my standards healthy or obsessive? 🧠 Check yours too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareUnavailable": "Share feature is not available.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "shareFailed": "Share failed:",
+      "clipboardError": "Clipboard copy failed:"
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "Your way of loving, determined from childhood?",

@@ -626,6 +626,47 @@
       }
     }
   },
+  "obsessionTest": {
+    "startMessage": {
+      "line1": "\"Theo đuổi sự hoàn hảo? Hay ám ảnh?\"",
+      "line2": "Sạch sẽ khác với rối loạn ám ảnh cưỡng chế,",
+      "line3": "Có kế hoạch khác với ám ảnh.",
+      "line4": "\"Kiểm tra thêm một lần nữa là tôi sẽ cảm thấy yên tâm\"",
+      "line5": "\"Nếu không làm như vậy, tôi không thể chịu được sự lo lắng\"",
+      "line6": "Tiêu chuẩn của bạn là khỏe mạnh hay ám ảnh? Chỉ mất 2 phút! Vui lòng trả lời trung thực 🧠"
+    },
+    "ui": {
+      "symptoms": "Triệu chứng chính",
+      "riskLevel": "Mức độ rủi ro",
+      "impact": "Ảnh hưởng",
+      "advice": "Lời khuyên",
+      "managementTips": "Mẹo quản lý",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Tiêu chuẩn của tôi là khỏe mạnh hay ám ảnh? 🧠 Bạn cũng kiểm tra xem!",
+      "kakao": "Tôi là {type}! Tiêu chuẩn của tôi là khỏe mạnh hay ám ảnh? 🧠 Bạn cũng kiểm tra xem!",
+      "wechat": "Tôi là {type}! Tiêu chuẩn của tôi là khỏe mạnh hay ám ảnh? 🧠 Bạn cũng kiểm tra xem!",
+      "whatsapp": "Tôi là {type}! Tiêu chuẩn của tôi là khỏe mạnh hay ám ảnh? 🧠 Bạn cũng kiểm tra xem!",
+      "telegram": "Tôi là {type}! Tiêu chuẩn của tôi là khỏe mạnh hay ám ảnh? 🧠 Bạn cũng kiểm tra xem!",
+      "line": "Tôi là {type}! Tiêu chuẩn của tôi là khỏe mạnh hay ám ảnh? 🧠 Bạn cũng kiểm tra xem!"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareUnavailable": "Tính năng chia sẻ không khả dụng.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk.",
+      "wechatCopy": "Liên kết đã được sao chép! Dán và chia sẻ trong WeChat.",
+      "shareFailed": "Chia sẻ thất bại:",
+      "clipboardError": "Sao chép clipboard thất bại:"
+    }
+  },
   "attachmentTest": {
     "startMessage": {
       "line1": "Cách yêu của bạn, được quyết định từ thời thơ ấu?",
