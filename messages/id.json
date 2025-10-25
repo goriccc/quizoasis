@@ -41,6 +41,67 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "leadershipTest": {
+    "startMessage": {
+      "line1": "\"Diagnosis mendalam kepemimpinan! Apa gaya kepemimpinan unik Anda?\"",
+      "line2": "Pemimpin karismatik yang memimpin semua orang,",
+      "line3": "Pemimpin demokratis yang menghormati pendapat anggota tim,",
+      "line4": "Pemimpin pelatih yang membantu pertumbuhan,",
+      "line5": "Pemimpin pelayan yang memimpin dengan melayani.",
+      "line6": "Analisis profesional tipe kepemimpinan Anda!",
+      "line7": "Memakan waktu 3 menit! Penting untuk pemimpin atau calon pemimpin 🎯"
+    },
+    "ui": {
+      "yourResult": "Hasil Anda",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi Tes",
+      "otherTests": "Tes Lainnya",
+      "tryWithFriends": "Coba dengan teman",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Area Iklan AdSense",
+      "startTest": "Mulai Tes",
+      "progress": "Kemajuan",
+      "analyzing": "Menganalisis hasil...",
+      "testCompleted": "Tes Selesai!",
+      "viewResults": "Lihat Hasil Analisis",
+      "totalParticipants": "Total {count} orang berpartisipasi!",
+      "traits": "Karakteristik kepemimpinan",
+      "strengths": "Kelebihan",
+      "weaknesses": "Kekurangan",
+      "advice": "Nasihat",
+      "famousLeaders": "Pemimpin terkenal"
+    },
+    "result": {
+      "leadershipCharacteristics": "Karakteristik kepemimpinan",
+      "strengths": "Kelebihan",
+      "weaknesses": "Kekurangan",
+      "famousLeaders": "Pemimpin terkenal",
+      "advice": "Saran"
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! 🎯 Saya telah menemukan gaya kepemimpinan saya. Anda pemimpin seperti apa?",
+      "kakao": "Saya adalah {type}! 🎯 Saya telah menemukan gaya kepemimpinan saya. Anda pemimpin seperti apa?",
+      "wechat": "Saya adalah {type}! 🎯 Saya telah menemukan gaya kepemimpinan saya. Anda pemimpin seperti apa?",
+      "whatsapp": "Saya adalah {type}! 🎯 Saya telah menemukan gaya kepemimpinan saya. Anda pemimpin seperti apa?",
+      "telegram": "Saya adalah {type}! 🎯 Saya telah menemukan gaya kepemimpinan saya. Anda pemimpin seperti apa?",
+      "line": "Saya adalah {type}! 🎯 Saya telah menemukan gaya kepemimpinan saya. Anda pemimpin seperti apa?"
+    },
+    "alerts": {
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "linkCopied": "Tautan disalin!",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "shareUnavailable": "Fitur berbagi tidak tersedia.",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi gagal:",
+      "clipboardError": "Salin clipboard gagal:",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "line1": "\"Pengukuran EQ profesional! Apa level kemampuan empati Anda?\"",

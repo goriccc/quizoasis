@@ -44,6 +44,67 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "leadershipTest": {
+    "startMessage": {
+      "line1": "\"리더십 심화 진단! 당신만의 리더십 스타일은?\"",
+      "line2": "모두를 이끄는 카리스마 있는 리더,",
+      "line3": "팀원의 의견을 존중하는 민주적 리더,",
+      "line4": "성장을 돕는 코칭형 리더,",
+      "line5": "섬기며 이끄는 서번트 리더.",
+      "line6": "당신의 리더십 유형을 전문적으로 분석해보세요!",
+      "line7": "소요 시간 3분! 리더 또는 미래의 리더라면 필수 🎯"
+    },
+    "ui": {
+      "yourResult": "당신의 결과",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 테스트하기",
+      "otherTests": "다른 테스트 보기",
+      "tryWithFriends": "친구와 함께 해보기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "adsenseTitle": "AdSense 광고 영역",
+      "startTest": "테스트 시작",
+      "progress": "진행률",
+      "analyzing": "결과 분석 중...",
+      "testCompleted": "테스트 완료!",
+      "viewResults": "분석 결과 보기",
+      "totalParticipants": "총 {count}명이 참여했어요!",
+      "traits": "리더십 특징",
+      "strengths": "강점",
+      "weaknesses": "약점",
+      "advice": "조언",
+      "famousLeaders": "유명 리더"
+    },
+    "result": {
+      "leadershipCharacteristics": "리더십 특징",
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "famousLeaders": "유명 리더",
+      "advice": "조언"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 🎯 나의 리더십 스타일을 찾았어. 너는 어떤 리더?",
+      "kakao": "나는 {type}! 🎯 나의 리더십 스타일을 찾았어. 너는 어떤 리더?",
+      "wechat": "나는 {type}! 🎯 나의 리더십 스타일을 찾았어. 너는 어떤 리더?",
+      "whatsapp": "나는 {type}! 🎯 나의 리더십 스타일을 찾았어. 너는 어떤 리더?",
+      "telegram": "나는 {type}! 🎯 나의 리더십 스타일을 찾았어. 너는 어떤 리더?",
+      "line": "나는 {type}! 🎯 나의 리더십 스타일을 찾았어. 너는 어떤 리더?"
+    },
+    "alerts": {
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "linkCopied": "링크가 복사되었습니다!",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "shareUnavailable": "공유 기능을 사용할 수 없습니다.",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 실패:",
+      "clipboardError": "클립보드 복사 실패:",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "brainTest": {
     "startMessage": {
       "line1": "\"좌뇌? 우뇌? 당신의 두뇌 성향을 정확히 분석합니다\"",

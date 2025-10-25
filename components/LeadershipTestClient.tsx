@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { CareerQuestion, CareerResult, calculateCareerResult } from '@/lib/careerData';
+import { LeadershipQuestion, LeadershipResult, calculateLeadershipResult } from '@/lib/leadershipData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
@@ -13,13 +13,13 @@ import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/ali
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 
-interface CareerTestClientProps {
+interface LeadershipTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: CareerQuestion[];
-  results: CareerResult[];
+  questions: LeadershipQuestion[];
+  results: LeadershipResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -35,10 +35,10 @@ interface CareerTestClientProps {
 // 궁합 설명 함수
 const getCompatibilityDescription = (myType: string, partnerType: string, t: any): string => {
   const key = `${myType}_${partnerType}`;
-  return t(`careerTest.result.compatibility.${key}`) || '';
+  return t(`conflictTest.result.compatibility.${key}`) || '';
 };
 
-export default function CareerTestClient({ 
+export default function LeadershipTestClient({ 
   locale, 
   slug, 
   title, 
@@ -49,14 +49,14 @@ export default function CareerTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: CareerTestClientProps) {
+}: LeadershipTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
-  const [result, setResult] = useState<CareerResult | null>(null);
+  const [result, setResult] = useState<LeadershipResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<CareerQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<LeadershipQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
@@ -230,7 +230,7 @@ export default function CareerTestClient({
   }, [showLoadingSpinner]);
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: CareerQuestion[]) => {
+  const shuffleQuestions = (questionList: LeadershipQuestion[]) => {
     const shuffled = [...questionList];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -265,19 +265,19 @@ export default function CareerTestClient({
       setShowLoadingSpinner(true);
       
       // 결과 계산
-      const resultType = calculateCareerResult(newAnswers);
-      const careerResult = results.find(r => r.type === resultType);
+      const resultType = calculateLeadershipResult(newAnswers);
+      const leadershipResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (careerResult) {
-        setResult(careerResult);
+      if (leadershipResult) {
+        setResult(leadershipResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (careerResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(careerResult.type, locale);
+      if (leadershipResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(leadershipResult.type, locale);
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] 직업 결과:', careerResult.type, '→ 검색 키워드:', keywords[0]);
+        console.log('🔮 [시작] 리더십 결과:', leadershipResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -292,11 +292,11 @@ export default function CareerTestClient({
 
   // 결과 계산
   const calculateResult = (finalAnswers: any[]) => {
-    const resultType = calculateCareerResult(finalAnswers);
-    const careerResult = results.find(r => r.type === resultType);
+    const resultType = calculateLeadershipResult(finalAnswers);
+    const leadershipResult = results.find(r => r.type === resultType);
     
-    if (careerResult) {
-      setResult(careerResult);
+    if (leadershipResult) {
+      setResult(leadershipResult);
     }
   };
 
@@ -316,23 +316,23 @@ export default function CareerTestClient({
     if (!result) return;
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = `${t('careerTest.share.message', { resultTitle })}!\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
+    const shareText = `${t('leadershipTest.shareMessages.default', { type: resultTitle })}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
         await navigator.share({ text: shareText });
       } catch (error) {
         if (error instanceof Error && error.name !== 'AbortError') {
-          console.error('공유 실패:', error);
+          console.error(t('leadershipTest.alerts.shareFailed'), error);
         }
       }
     } else {
       try {
         await navigator.clipboard.writeText(shareText);
-        alert('결과가 클립보드에 복사되었습니다!');
+        alert(t('leadershipTest.alerts.resultCopied'));
       } catch (error) {
-        console.error('클립보드 복사 실패:', error);
-        alert('공유 기능을 사용할 수 없습니다.');
+        console.error(t('leadershipTest.alerts.clipboardError'), error);
+        alert(t('leadershipTest.alerts.shareUnavailable'));
       }
     }
   };
@@ -347,7 +347,7 @@ export default function CareerTestClient({
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? `${t('careerTest.share.message', { resultTitle })}\n\n${url}`
+      ? `${t('leadershipTest.shareMessages.wechat', { type: resultTitle })}\n\n${url}`
       : `${title}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
@@ -365,9 +365,9 @@ export default function CareerTestClient({
     // Fallback: 링크 복사
     try {
       await navigator.clipboard.writeText(url);
-      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+      alert(t('leadershipTest.alerts.wechatCopy'));
     } catch (error) {
-      alert('공유 기능을 사용할 수 없습니다.');
+      alert(t('leadershipTest.alerts.shareUnavailable'));
     }
   };
 
@@ -375,7 +375,7 @@ export default function CareerTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('careerTest.share.message', { resultTitle }))
+      ? encodeURIComponent(t('leadershipTest.shareMessages.whatsapp', { type: resultTitle }))
       : encodeURIComponent(title);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
@@ -384,7 +384,7 @@ export default function CareerTestClient({
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
-      alert('카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.');
+      alert(t('leadershipTest.alerts.kakaoInit'));
       return;
     }
 
@@ -394,7 +394,7 @@ export default function CareerTestClient({
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
-      ? t('careerTest.share.message', { resultTitle })
+      ? t('leadershipTest.shareMessages.kakao', { type: resultTitle })
       : description;
     
     try {
@@ -411,7 +411,7 @@ export default function CareerTestClient({
         },
         buttons: [
           {
-            title: '테스트 하러 가기',
+            title: t('leadershipTest.ui.startTest'),
             link: {
               mobileWebUrl: currentUrl,
               webUrl: currentUrl,
@@ -420,8 +420,8 @@ export default function CareerTestClient({
         ],
       });
     } catch (error) {
-      console.error('카카오톡 공유 오류:', error);
-      alert(t('careerTest.alerts.kakaoShareError'));
+      console.error(t('leadershipTest.alerts.shareFailed'), error);
+      alert(t('leadershipTest.alerts.kakaoError'));
     }
   };
 
@@ -429,7 +429,7 @@ export default function CareerTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? t('careerTest.share.message', { resultTitle })
+      ? t('leadershipTest.shareMessages.telegram', { type: resultTitle })
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
@@ -437,7 +437,7 @@ export default function CareerTestClient({
 
   const copyLink = () => {
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert(t('careerTest.alerts.linkCopied'));
+    alert(t('leadershipTest.alerts.linkCopied'));
   };
 
   // 팝업에서 결과 보기
@@ -454,7 +454,7 @@ export default function CareerTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_046_future_career_match.jpg')}
+              src={getThumbnailUrl(thumbnail || 'test_202_leadership_style.jpg')}
               alt={title}
               fill
               className="object-cover"
@@ -479,16 +479,13 @@ export default function CareerTestClient({
             </div>
 
             <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
-              <p className="font-bold text-gray-700">{t('careerTest.startMessage.title')}</p>
-              <p>{t('careerTest.startMessage.question1')}</p>
-              <p>{t('careerTest.startMessage.question2')}</p>
-              <p>{t('careerTest.startMessage.question3')}</p>
-              <p>{t('careerTest.startMessage.question4')}</p>
-              <p>{t('careerTest.startMessage.question5')}</p>
-              <p>{t('careerTest.startMessage.question6')}</p>
-              <p>{t('careerTest.startMessage.question7')}</p>
-              <p>{t('careerTest.startMessage.conclusion')}</p>
-              <p>{t('careerTest.startMessage.timeInfo')}</p>
+              <p className="font-bold text-gray-700">{t('leadershipTest.startMessage.line1')}</p>
+              <p>{t('leadershipTest.startMessage.line2')}</p>
+              <p>{t('leadershipTest.startMessage.line3')}</p>
+              <p>{t('leadershipTest.startMessage.line4')}</p>
+              <p>{t('leadershipTest.startMessage.line5')}</p>
+              <p>{t('leadershipTest.startMessage.line6')}</p>
+              <p>{t('leadershipTest.startMessage.line7')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -496,12 +493,12 @@ export default function CareerTestClient({
                 onClick={handleStartTest}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-{t('careerTest.ui.startTest')}
+                {t('mbti.startTest')}
               </button>
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-{t('careerTest.ui.participantCount', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
+              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -546,7 +543,7 @@ export default function CareerTestClient({
 
             <div className="mb-8 text-center">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('careerTest.ui.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -573,7 +570,7 @@ export default function CareerTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('recommendations.similarTests')}
+                {t('recommendations.similarTests') || '유사한 다른 테스트'}
               </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
@@ -627,7 +624,7 @@ export default function CareerTestClient({
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-lg text-gray-700">{t('careerTest.ui.analyzing')}</p>
+          <p className="mt-4 text-lg text-gray-700">{t('mbti.loadingResults')}</p>
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
@@ -649,7 +646,7 @@ export default function CareerTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-{t('careerTest.ui.testComplete') || '🎉 테스트 완료!'}
+            🎉 {t('mbti.testCompleted')}
           </h2>
           
           
@@ -689,7 +686,7 @@ export default function CareerTestClient({
                   <Image 
                     width={300} 
                     height={250} 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d5187c950fe497cdf55q/300x250.jpg"
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
                     alt="AliExpress"
                     className="rounded-lg"
                     style={{ maxWidth: '300px', height: 'auto' }}
@@ -703,7 +700,7 @@ export default function CareerTestClient({
             onClick={handleShowResult}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-{t('careerTest.ui.viewResult')}
+            {t('mbti.viewAnalysisResults')}
           </button>
         </div>
       </div>
@@ -712,11 +709,25 @@ export default function CareerTestClient({
 
   // 결과 화면
   if (showResult && result) {
-    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultStrengths = result.strengths;
-    const resultFields = result.fields;
-    const resultJobs = result.jobs;
+    const safeResult = result; // TypeScript null 체크를 위한 안전한 참조
+    const resultTitle = safeResult.title[locale as keyof typeof safeResult.title] || safeResult.title.ko;
+    const resultSubtitle = safeResult.subtitle[locale as keyof typeof safeResult.subtitle] || safeResult.subtitle.ko;
+    const resultDescription = safeResult.description[locale as keyof typeof safeResult.description] || safeResult.description.ko;
+    const resultTraits = safeResult.traits[locale as keyof typeof safeResult.traits] || safeResult.traits.ko;
+    const resultStrengths = safeResult.strengths[locale as keyof typeof safeResult.strengths] || safeResult.strengths.ko;
+    const resultWeaknesses = safeResult.weaknesses[locale as keyof typeof safeResult.weaknesses] || safeResult.weaknesses.ko;
+    const resultAdvice = safeResult.advice[locale as keyof typeof safeResult.advice] || safeResult.advice.ko;
+    const resultFamousLeaders = safeResult.famousLeaders[locale as keyof typeof safeResult.famousLeaders] || safeResult.famousLeaders.ko;
+
+    // 쉼표로 분리된 데이터를 배열로 변환
+    const splitByCommas = (text: string) => {
+      return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+    };
+
+    const traitsArray = splitByCommas(resultTraits);
+    const strengthsArray = splitByCommas(resultStrengths);
+    const weaknessesArray = splitByCommas(resultWeaknesses);
+    const famousLeadersArray = splitByCommas(resultFamousLeaders);
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -724,68 +735,242 @@ export default function CareerTestClient({
           <div>
             <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
               <h2 className="text-xl font-bold text-gray-800 mb-3">
-{t('careerTest.ui.yourResult')}
+                {t('mbti.yourResult')}
               </h2>
-              <div className="text-6xl mb-3">{result.emoji}</div>
-              <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
+              <div className="text-6xl mb-3">{safeResult.emoji}</div>
+              <h1 className="text-2xl md:text-3xl font-bold mb-2 text-gray-800">
                 {resultTitle}
               </h1>
+              <p className="text-lg font-semibold text-purple-600 mb-3">
+                {resultSubtitle}
+              </p>
               <p className="text-base text-gray-600 leading-relaxed">
                 {resultDescription}
               </p>
-              {result.longDescription && (
-                <p className="text-sm text-gray-500 leading-relaxed mt-3">
-                  {typeof result.longDescription === 'string' ? result.longDescription : (result.longDescription[locale] || result.longDescription.ko)}
-                </p>
-              )}
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-3">
+                🎯 {t('leadershipTest.ui.traits')}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {traitsArray.map((trait, index) => (
+                  <span
+                    key={index}
+                    className="bg-gradient-to-r from-purple-100 to-pink-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                  >
+                    {trait}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-{t('careerTest.ui.coreStrengths')}
+                  ✅ {t('leadershipTest.ui.strengths')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {Array.isArray(resultStrengths) && resultStrengths.length > 0 ? resultStrengths.map((strength, index) => (
+                  {strengthsArray.map((strength, index) => (
                     <span
                       key={index}
                       className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {typeof strength === 'string' ? strength : (strength[locale] || strength.ko)}
+                      {strength}
                     </span>
-                  )) : (
-                    <p className="text-sm text-gray-500">데이터가 없습니다.</p>
-                  )}
+                  ))}
                 </div>
               </div>
 
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-{t('careerTest.ui.suitableFields')}
+                  ⚠️ {t('leadershipTest.ui.weaknesses')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {Array.isArray(resultFields) && resultFields.length > 0 ? resultFields.map((field, index) => (
+                  {weaknessesArray.map((weakness, index) => (
                     <span
                       key={index}
-                      className="bg-gradient-to-r from-blue-100 to-purple-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                      className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                     >
-                      {typeof field === 'string' ? field : (field[locale] || field.ko)}
+                      {weakness}
                     </span>
-                  )) : (
-                    <p className="text-sm text-gray-500">데이터가 없습니다.</p>
-                  )}
+                  ))}
                 </div>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-{t('careerTest.ui.recommendedJobs')}
+                💡 {t('leadershipTest.ui.advice')}
               </h3>
-              <div className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
-                {result.jobs ? (typeof result.jobs === 'string' ? result.jobs : (result.jobs[locale] || result.jobs.ko)) : '데이터가 없습니다.'}
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {resultAdvice}
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-3">
+                👤 {t('leadershipTest.ui.famousLeaders')}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {famousLeadersArray.map((leader, index) => (
+                  <span
+                    key={index}
+                    className="bg-gradient-to-r from-blue-100 to-cyan-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                  >
+                    {leader}
+                  </span>
+                ))}
               </div>
             </div>
+
+            {false && (
+              <>
+                <div className="grid grid-cols-2 gap-3 mb-3">
+                  {(safeResult as any).compatibility && (safeResult as any).compatibility.best && (
+                    <div className="bg-white rounded-xl shadow-lg p-4">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
+                        💖 {t('leadershipTest.result.bestMatch')}
+                      </h3>
+                      {typeof (safeResult as any).compatibility.best === 'string' ? (
+                        <p className="text-sm text-gray-700">{(safeResult as any).compatibility.best}</p>
+                      ) : Array.isArray((safeResult as any).compatibility.best) ? (
+                        <div className="space-y-2">
+                          {(safeResult as any).compatibility.best.map((type: string) => {
+                            const partner = results.find(r => r.type === type);
+                            if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(safeResult.type, type, t);
+                            return (
+                              <div key={type} className="bg-gradient-to-r from-red-100 to-pink-100 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-700">
+                          {typeof (safeResult as any).compatibility.best === 'string' 
+                            ? (safeResult as any).compatibility.best 
+                            : ((safeResult as any).compatibility.best as any)[locale] || ((safeResult as any).compatibility.best as any).ko}
+                        </p>
+                      )}
+                    </div>
+                  )}
+
+                  {(safeResult as any).compatibility.good && (
+                    <div className="bg-white rounded-xl shadow-lg p-4">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
+                        😊 {t('conflictTest.result.goodMatch')}
+                      </h3>
+                      {typeof (safeResult as any).compatibility.good === 'string' ? (
+                        <p className="text-sm text-gray-700">{(safeResult as any).compatibility.good}</p>
+                      ) : Array.isArray((safeResult as any).compatibility.good) ? (
+                        <div className="space-y-2">
+                          {(safeResult as any).compatibility.good.map((type: string) => {
+                            const partner = results.find(r => r.type === type);
+                            if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(safeResult.type, type, t);
+                            return (
+                              <div key={type} className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-700">
+                          {typeof (safeResult as any).compatibility.good === 'string' 
+                            ? (safeResult as any).compatibility.good 
+                            : ((safeResult as any).compatibility.good as any)[locale] || ((safeResult as any).compatibility.good as any).ko}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
+
+                <div className="grid grid-cols-2 gap-3 mb-3">
+                  {(safeResult as any).compatibility.careful && (
+                    <div className="bg-white rounded-xl shadow-lg p-4">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
+                        ⚠️ {t('conflictTest.result.carefulMatch')}
+                      </h3>
+                      {typeof (safeResult as any).compatibility.careful === 'string' ? (
+                        <p className="text-sm text-gray-700">{(safeResult as any).compatibility.careful}</p>
+                      ) : Array.isArray((safeResult as any).compatibility.careful) ? (
+                        <div className="space-y-2">
+                          {(safeResult as any).compatibility.careful.map((type: string) => {
+                            const partner = results.find(r => r.type === type);
+                            if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(safeResult.type, type, t);
+                            return (
+                              <div key={type} className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-700">
+                          {typeof (safeResult as any).compatibility.careful === 'string' 
+                            ? (safeResult as any).compatibility.careful 
+                            : ((safeResult as any).compatibility.careful as any)[locale] || ((safeResult as any).compatibility.careful as any).ko}
+                        </p>
+                      )}
+                    </div>
+                  )}
+
+                  {(safeResult as any).compatibility.difficult && (
+                    <div className="bg-white rounded-xl shadow-lg p-4">
+                      <h3 className="text-base font-bold text-gray-800 mb-3">
+                        ❌ {t('conflictTest.result.difficultMatch')}
+                      </h3>
+                      {typeof (safeResult as any).compatibility.difficult === 'string' ? (
+                        <p className="text-sm text-gray-700">{(safeResult as any).compatibility.difficult}</p>
+                      ) : Array.isArray((safeResult as any).compatibility.difficult) ? (
+                        <div className="space-y-2">
+                          {(safeResult as any).compatibility.difficult.map((type: string) => {
+                            const partner = results.find(r => r.type === type);
+                            if (!partner) return null;
+                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                            const compatibilityDesc = getCompatibilityDescription(safeResult.type, type, t);
+                            return (
+                              <div key={type} className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg p-3">
+                                <div className="flex items-center gap-2.5 mb-1">
+                                  <span className="text-xl">{partner.emoji}</span>
+                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                                </div>
+                                <p className="text-xs text-gray-600 ml-8">{compatibilityDesc}</p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-700">
+                          {typeof (safeResult as any).compatibility.difficult === 'string' 
+                            ? (safeResult as any).compatibility.difficult 
+                            : ((safeResult as any).compatibility.difficult as any)[locale] || ((safeResult as any).compatibility.difficult as any).ko}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </>
+            )}
 
             <div className="mt-8 mb-6 px-4">
               <button
@@ -795,7 +980,7 @@ export default function CareerTestClient({
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                 </svg>
-{t('careerTest.ui.shareResult')}
+                {t('mbti.shareResult')}
               </button>
             </div>
 
@@ -814,19 +999,19 @@ export default function CareerTestClient({
                 onClick={handleRetake}
                 className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
               >
-{t('careerTest.ui.retakeTest')}
+                {t('mbti.retakeTest')}
               </button>
               <Link
                 href={`/${locale}`}
                 className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
               >
-{t('careerTest.ui.otherTests')}
+                {t('mbti.otherTests')}
               </Link>
             </div>
 
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('careerTest.ui.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -850,11 +1035,11 @@ export default function CareerTestClient({
               </div>
             </div>
 
-            {/* 🎯 유사한 다른 테스트 */}
+            {/* 🎯 유사한 다른 테스트 추천 톱5 */}
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('careerTest.ui.similarTestsTop5')}
+                  {t('recommendations.similarTestsTop5') || '🎯 유사한 다른 테스트 추천 톱5'}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -891,7 +1076,7 @@ export default function CareerTestClient({
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('careerTest.ui.popularTestsTop5')}
+                  {t('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (
@@ -942,7 +1127,7 @@ export default function CareerTestClient({
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-600">
-{t('careerTest.ui.progress')}
+              {t('mbti.progress')}
             </span>
             <span className="text-sm font-bold text-purple-600">
               {currentQuestion + 1} / {shuffledQuestions.length}
@@ -1002,7 +1187,7 @@ export default function CareerTestClient({
 
           <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-              {t('careerTest.ui.shareWithFriends') || '친구와 함께 해보기'}
+              {t('mbti.shareWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">

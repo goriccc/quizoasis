@@ -41,6 +41,67 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "leadershipTest": {
+    "startMessage": {
+      "line1": "\"Leadership in-depth diagnosis! What is your unique leadership style?\"",
+      "line2": "Charismatic leader who leads everyone,",
+      "line3": "Democratic leader who respects team members' opinions,",
+      "line4": "Coaching leader who helps growth,",
+      "line5": "Servant leader who leads by serving.",
+      "line6": "Analyze your leadership type professionally!",
+      "line7": "Takes 3 minutes! Essential for leaders or future leaders 🎯"
+    },
+    "ui": {
+      "yourResult": "Your Result",
+      "shareResult": "Share Result",
+      "retake": "Retake Test",
+      "otherTests": "Other Tests",
+      "tryWithFriends": "Try with friends",
+      "linkCopy": "Link Copy",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense Ad Area",
+      "startTest": "Start Test",
+      "progress": "Progress",
+      "analyzing": "Analyzing results...",
+      "testCompleted": "Test Completed!",
+      "viewResults": "View Analysis Results",
+      "totalParticipants": "Total {count} people participated!",
+      "traits": "Leadership Traits",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "advice": "Advice",
+      "famousLeaders": "Famous Leaders"
+    },
+    "result": {
+      "leadershipCharacteristics": "Leadership Characteristics",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "famousLeaders": "Famous Leaders",
+      "advice": "Advice"
+    },
+    "shareMessages": {
+      "default": "I am {type}! 🎯 I found my leadership style. What kind of leader are you?",
+      "kakao": "I am {type}! 🎯 I found my leadership style. What kind of leader are you?",
+      "wechat": "I am {type}! 🎯 I found my leadership style. What kind of leader are you?",
+      "whatsapp": "I am {type}! 🎯 I found my leadership style. What kind of leader are you?",
+      "telegram": "I am {type}! 🎯 I found my leadership style. What kind of leader are you?",
+      "line": "I am {type}! 🎯 I found my leadership style. What kind of leader are you?"
+    },
+    "alerts": {
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "linkCopied": "Link copied!",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "shareUnavailable": "Share feature is not available.",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share failed:",
+      "clipboardError": "Clipboard copy failed:",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "line1": "\"Professional EQ measurement! What is your empathy ability level?\"",

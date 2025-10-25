@@ -627,16 +627,6 @@ export default function FriendTestClient({
                 </div>
               </div>
             )}
-
-            {/* AdSense 광고 영역 */}
-            <div className="mt-8 mb-6">
-              <AdSensePlaceholder 
-                slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
-                style={{ width: '100%', height: '250px' }}
-                className="mx-auto"
-                label="AdSense 광고 영역"
-              />
-            </div>
           </div>
         </div>
       </div>

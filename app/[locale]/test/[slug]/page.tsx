@@ -19,6 +19,7 @@ import { stressReliefQuestions, stressReliefResults } from '@/lib/stressReliefDa
 import { investmentStyleQuestions, investmentStyleResults } from '@/lib/investmentStyleData';
 import { timeEfficiencyQuestions, timeEfficiencyResults } from '@/lib/timeEfficiencyData';
 import { brainQuestions, brainResults } from '@/lib/brainData';
+import { leadershipQuestions, leadershipResults } from '@/lib/leadershipData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -100,6 +101,9 @@ const EntrepreneurSpiritTestClient = dynamic(() => import('@/components/Entrepre
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const WorkLifeBalanceTestClient = dynamic(() => import('@/components/WorkLifeBalanceTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const LeadershipTestClient = dynamic(() => import('@/components/LeadershipTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TeamPlayerTestClient = dynamic(() => import('@/components/TeamPlayerTestClient'), {
@@ -1022,6 +1026,52 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
+  // 리더십 스타일 테스트의 경우 Supabase에서 시도
+  if (slug === 'leadership-style-test') {
+    const supabaseTest = await getTestBySlug(slug);
+    
+    // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
+    const test = supabaseTest || {
+      slug: 'leadership-style-test',
+      title: {
+        ko: '당신은 어떤 리더인가요?',
+        en: 'What kind of leader are you?',
+        ja: 'あなたはどんなリーダーですか？',
+        'zh-CN': '你是什么样的领导者？',
+        'zh-TW': '你是什麼樣的領導者？',
+        vi: 'Bạn là loại lãnh đạo nào?',
+        id: 'Jenis pemimpin apa Anda?'
+      },
+      description: {
+        ko: '리더십 심화 진단! 당신만의 리더십 스타일은?',
+        en: 'In-depth leadership diagnosis! What is your leadership style?',
+        ja: 'リーダーシップ深層診断！あなただけのリーダーシップスタイルは？',
+        'zh-CN': '深度领导力诊断！你的领导风格是什么？',
+        'zh-TW': '深度領導力診斷！你的領導風格是什麼？',
+        vi: 'Chẩn đoán lãnh đạo sâu sắc! Phong cách lãnh đạo của bạn là gì?',
+        id: 'Diagnosis kepemimpinan mendalam! Apa gaya kepemimpinan Anda?'
+      },
+      thumbnail: 'test_202_leadership_style.jpg',
+      play_count: 0
+    };
+
+    return (
+      <>
+        <LeadershipTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={leadershipQuestions}
+          results={leadershipResults}
+          questionCount={leadershipQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
   // 팀 플레이어 테스트의 경우 Supabase에서 시도
   if (slug === 'team-player-test') {
     const supabaseTest = await getTestBySlug(slug);
@@ -1380,13 +1430,57 @@ export default async function TestPage({ params }: Props) {
   };
 
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
-  const TestClient = 
-    test.type === 'stress' ? StressTestClient :
-    test.type === 'dating' ? (slug === 'catch-lover-signals' ? SignalTestClient : slug === 'attachment-style-test' ? AttachmentTestClient : slug === 'friend-test' ? FriendTestClient : slug === 'conflict-response-test' ? ConflictTestClient : slug === 'love-flavor-test' ? LoveFlavorTestClient : slug === 'ideal-type-test' ? IdealTypeTestClient : slug === 'crush-success-test' ? CrushTestClient : slug === 'flirting-master-vs-beginner' ? FlirtingTestClient : slug === 'ideal-spouse-type' ? SpouseTestClient : slug === 'love-obstacles' ? LoveObstaclesTestClient : slug === 'jealousy-level-test' ? JealousyTestClient : slug === 'humor-code-test' ? HumorCodeTestClient : slug === 'trustworthiness-level-test' ? TrustTestClient : slug === 'empathy-level-test' ? EmpathyTestClient : slug === 'honesty-vs-consideration-test' ? HonestyTestClient : slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : DatingTestClient) :
-    test.type === 'career' ? (slug === 'future-career-match-test' ? CareerTestClient : slug === 'job-strength-test' ? JobStrengthTestClient : slug === 'work-values-test' ? WorkValuesTestClient : slug === 'stress-relief-test' ? StressReliefTestClient : slug === 'investment-style-test' ? InvestmentStyleTestClient : slug === 'entrepreneur-spirit-test' ? EntrepreneurSpiritTestClient : slug === 'left-right-brain-test' ? BrainTestClient : CareerTestClient) :
-    slug === 'time-efficiency-test' ? TimeEfficiencyTestClient :
-    slug === 'left-right-brain-test' ? BrainTestClient :
-    MBTITestClient;
+  let TestClient;
+  
+  if (slug === 'leadership-style-test') {
+    TestClient = LeadershipTestClient;
+  } else if (slug === 'left-right-brain-test') {
+    TestClient = BrainTestClient;
+  } else if (slug === 'time-efficiency-test') {
+    TestClient = TimeEfficiencyTestClient;
+  } else if (test.type === 'stress') {
+    TestClient = StressTestClient;
+  } else if (test.type === 'dating') {
+    if (slug === 'catch-lover-signals') TestClient = SignalTestClient;
+    else if (slug === 'attachment-style-test') TestClient = AttachmentTestClient;
+    else if (slug === 'friend-test') TestClient = FriendTestClient;
+    else if (slug === 'conflict-response-test') TestClient = ConflictTestClient;
+    else if (slug === 'love-flavor-test') TestClient = LoveFlavorTestClient;
+    else if (slug === 'ideal-type-test') TestClient = IdealTypeTestClient;
+    else if (slug === 'crush-success-test') TestClient = CrushTestClient;
+    else if (slug === 'flirting-master-vs-beginner') TestClient = FlirtingTestClient;
+    else if (slug === 'ideal-spouse-type') TestClient = SpouseTestClient;
+    else if (slug === 'love-obstacles') TestClient = LoveObstaclesTestClient;
+    else if (slug === 'jealousy-level-test') TestClient = JealousyTestClient;
+    else if (slug === 'humor-code-test') TestClient = HumorCodeTestClient;
+    else if (slug === 'trustworthiness-level-test') TestClient = TrustTestClient;
+    else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
+    else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;
+    else if (slug === 'future-career-match-test') TestClient = CareerTestClient;
+    else if (slug === 'job-strength-test') TestClient = JobStrengthTestClient;
+    else if (slug === 'work-values-test') TestClient = WorkValuesTestClient;
+    else if (slug === 'stress-relief-test') TestClient = StressReliefTestClient;
+    else if (slug === 'entrepreneur-spirit-test') TestClient = EntrepreneurSpiritTestClient;
+    else TestClient = DatingTestClient;
+  } else if (test.type === 'career') {
+    if (slug === 'future-career-match-test') TestClient = CareerTestClient;
+    else if (slug === 'job-strength-test') TestClient = JobStrengthTestClient;
+    else if (slug === 'work-values-test') TestClient = WorkValuesTestClient;
+    else if (slug === 'stress-relief-test') TestClient = StressReliefTestClient;
+    else if (slug === 'investment-style-test') TestClient = InvestmentStyleTestClient;
+    else if (slug === 'entrepreneur-spirit-test') TestClient = EntrepreneurSpiritTestClient;
+    else TestClient = CareerTestClient;
+  } else {
+    TestClient = MBTITestClient;
+  }
+
+  // 디버깅을 위한 콘솔 로그
+  console.log('Test routing debug:', {
+    slug,
+    testType: test.type,
+    testClient: TestClient.name,
+    isBrainTest: TestClient === BrainTestClient
+  });
 
   return (
     <>

@@ -41,6 +41,67 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "leadershipTest": {
+    "startMessage": {
+      "line1": "「リーダーシップ深化診断！あなただけのリーダーシップスタイルは？」",
+      "line2": "みんなを導くカリスマのあるリーダー、",
+      "line3": "チームメンバーの意見を尊重する民主的リーダー、",
+      "line4": "成長を助けるコーチング型リーダー、",
+      "line5": "奉仕しながら導くサーバントリーダー。",
+      "line6": "あなたのリーダーシップタイプを専門的に分析してみましょう！",
+      "line7": "所要時間3分！リーダーまたは将来のリーダーなら必須 🎯"
+    },
+    "ui": {
+      "yourResult": "あなたの結果",
+      "shareResult": "結果を共有",
+      "retake": "再テスト",
+      "otherTests": "他のテスト",
+      "tryWithFriends": "友達と一緒にやってみよう",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense広告エリア",
+      "startTest": "テスト開始",
+      "progress": "進捗",
+      "analyzing": "結果分析中...",
+      "testCompleted": "テスト完了!",
+      "viewResults": "分析結果を見る",
+      "totalParticipants": "総計{count}人が参加しました！",
+      "traits": "リーダーシップ特徴",
+      "strengths": "強み",
+      "weaknesses": "弱み",
+      "advice": "アドバイス",
+      "famousLeaders": "著名なリーダー"
+    },
+    "result": {
+      "leadershipCharacteristics": "リーダーシップ特徴",
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "famousLeaders": "有名なリーダー",
+      "advice": "アドバイス"
+    },
+    "shareMessages": {
+      "default": "私は{type}！🎯 私のリーダーシップスタイルを見つけました。あなたはどんなリーダー？",
+      "kakao": "私は{type}！🎯 私のリーダーシップスタイルを見つけました。あなたはどんなリーダー？",
+      "wechat": "私は{type}！🎯 私のリーダーシップスタイルを見つけました。あなたはどんなリーダー？",
+      "whatsapp": "私は{type}！🎯 私のリーダーシップスタイルを見つけました。あなたはどんなリーダー？",
+      "telegram": "私は{type}！🎯 私のリーダーシップスタイルを見つけました。あなたはどんなリーダー？",
+      "line": "私は{type}！🎯 私のリーダーシップスタイルを見つけました。あなたはどんなリーダー？"
+    },
+    "alerts": {
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "linkCopied": "リンクがコピーされました！",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "shareUnavailable": "共有機能を使用できません。",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有失敗：",
+      "clipboardError": "クリップボードコピー失敗：",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "line1": "\"EQ専門測定！あなたの共感能力レベルは？\"",

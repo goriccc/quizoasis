@@ -41,6 +41,67 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "leadershipTest": {
+    "startMessage": {
+      "line1": "\"Chẩn đoán sâu về khả năng lãnh đạo! Phong cách lãnh đạo độc đáo của bạn là gì?\"",
+      "line2": "Lãnh đạo có sức hút dẫn dắt mọi người,",
+      "line3": "Lãnh đạo dân chủ tôn trọng ý kiến thành viên nhóm,",
+      "line4": "Lãnh đạo huấn luyện giúp phát triển,",
+      "line5": "Lãnh đạo phục vụ dẫn dắt bằng cách phục vụ.",
+      "line6": "Phân tích chuyên nghiệp loại lãnh đạo của bạn!",
+      "line7": "Mất 3 phút! Cần thiết cho lãnh đạo hoặc lãnh đạo tương lai 🎯"
+    },
+    "ui": {
+      "yourResult": "Kết quả của bạn",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại bài kiểm tra",
+      "otherTests": "Các bài kiểm tra khác",
+      "tryWithFriends": "Thử với bạn bè",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Khu vực quảng cáo AdSense",
+      "startTest": "Bắt đầu",
+      "progress": "Tiến độ",
+      "analyzing": "Đang phân tích kết quả...",
+      "testCompleted": "Hoàn thành bài kiểm tra!",
+      "viewResults": "Xem kết quả phân tích",
+      "totalParticipants": "Tổng cộng {count} người tham gia!",
+      "traits": "Đặc điểm lãnh đạo",
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "famousLeaders": "Lãnh đạo nổi tiếng"
+    },
+    "result": {
+      "leadershipCharacteristics": "Đặc điểm lãnh đạo",
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
+      "famousLeaders": "Lãnh đạo nổi tiếng",
+      "advice": "Lời khuyên"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 🎯 Tôi đã tìm thấy phong cách lãnh đạo của mình. Bạn là loại lãnh đạo nào?",
+      "kakao": "Tôi là {type}! 🎯 Tôi đã tìm thấy phong cách lãnh đạo của mình. Bạn là loại lãnh đạo nào?",
+      "wechat": "Tôi là {type}! 🎯 Tôi đã tìm thấy phong cách lãnh đạo của mình. Bạn là loại lãnh đạo nào?",
+      "whatsapp": "Tôi là {type}! 🎯 Tôi đã tìm thấy phong cách lãnh đạo của mình. Bạn là loại lãnh đạo nào?",
+      "telegram": "Tôi là {type}! 🎯 Tôi đã tìm thấy phong cách lãnh đạo của mình. Bạn là loại lãnh đạo nào?",
+      "line": "Tôi là {type}! 🎯 Tôi đã tìm thấy phong cách lãnh đạo của mình. Bạn là loại lãnh đạo nào?"
+    },
+    "alerts": {
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
+      "linkCopied": "Đã sao chép liên kết!",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "shareUnavailable": "Tính năng chia sẻ không khả dụng.",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Chia sẻ thất bại:",
+      "clipboardError": "Sao chép clipboard thất bại:",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
+  },
   "empathyTest": {
     "startMessage": {
       "line1": "\"Đo lường EQ chuyên nghiệp! Cấp độ khả năng đồng cảm của bạn là gì?\"",
