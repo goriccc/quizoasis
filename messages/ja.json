@@ -1418,5 +1418,56 @@
       "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "honestyVsRestraintTest": {
+    "startMessage": {
+      "line1": "\"感情そのまま表現？それとも一度フィルターして？\"",
+      "line2": "思いついたまますぐ言う人、",
+      "line3": "しばらく考えてから慎重に言う人。",
+      "line4": "怒ったらすぐ出す人、",
+      "line5": "中にためて表現しない人。\n好きならすぐ言う人、\n気持ちを簡単に表さない人。",
+      "line6": "あなたはどちらですか？\n所要時間わずか2分！直感で選んでください 💭"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "participants": "人が参加しました",
+      "shareWithFriends": "友達と一緒に試す",
+      "progress": "進捗",
+      "retakeTest": "やり直す",
+      "shareResult": "結果を共有",
+      "retake": "やり直す",
+      "otherTests": "他のテストを見る",
+      "similarTests": "🎯 類似したテストTOP5",
+      "popularTests": "🔥 人気のテストTOP5",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense広告エリア"
+    },
+    "result": {
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "score": "表現スコア",
+      "advice": "アドバイス"
+    },
+    "shareMessages": {
+      "default": "私は{type}！💭 正直 vs 自制、あなたはどちら？",
+      "kakao": "私は{type}！💭 正直 vs 自制、あなたはどちら？",
+      "wechat": "私は{type}！💭 正直 vs 自制、あなたはどちら？",
+      "whatsapp": "私は{type}！💭 正直 vs 自制、あなたはどちら？",
+      "telegram": "私は{type}！💭 正直 vs 自制、あなたはどちら？",
+      "line": "私は{type}！💭 正直 vs 自制、あなたはどちら？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

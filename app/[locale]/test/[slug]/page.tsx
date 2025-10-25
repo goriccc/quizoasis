@@ -25,6 +25,7 @@ import { optimismQuestions, optimismResults } from '@/lib/optimismData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
+import { honestyVsRestraintQuestions, honestyVsRestraintResults } from '@/lib/honestyVsRestraintData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -142,6 +143,9 @@ const AdventurerTestClient = dynamic(() => import('@/components/AdventurerTestCl
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const CommunicationStyleTestClient = dynamic(() => import('@/components/CommunicationStyleTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const HonestyVsRestraintTestClient = dynamic(() => import('@/components/HonestyVsRestraintTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1435,6 +1439,59 @@ export default async function TestPage({ params }: Props) {
           questions={communicationStyleQuestions}
           results={communicationStyleResults}
           questionCount={communicationStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 솔직 vs 절제 테스트
+  if (slug === 'honesty-vs-restraint-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'honesty-vs-restraint-test',
+      title: {
+        ko: '난 솔직 스타일? vs 절제 스타일?',
+        en: 'Am I Honest or Restrained?',
+        ja: '私は正直スタイル？VS自制スタイル？',
+        'zh-CN': '我是诚实风格还是节制风格？',
+        'zh-TW': '我是誠實風格還是節制風格？',
+        vi: 'Tôi là phong cách thành thật hay tự chế?',
+        id: 'Apakah saya gaya jujur atau menahan diri?'
+      },
+      description: {
+        ko: '감정 그대로 표현? 아니면 한 번 걸러서?',
+        en: 'Express emotions as they are? Or filter first?',
+        ja: '感情そのまま表現？それとも一度フィルターして？',
+        'zh-CN': '如实表达情感？还是先过滤？',
+        'zh-TW': '如實表達情感？還是先過濾？',
+        vi: 'Thể hiện cảm xúc như vốn có? Hay lọc trước?',
+        id: 'Ekspresikan emosi apa adanya? Atau filter dulu?'
+      },
+      thumbnail: 'test_208_honesty_vs_restraint.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['감정', '성격'],
+        en: ['Emotion', 'Personality'],
+        ja: ['感情', '性格'],
+        'zh-CN': ['情感', '性格'],
+        'zh-TW': ['情感', '性格'],
+        vi: ['Cảm xúc', 'Tính cách'],
+        id: ['Emosi', 'Kepribadian']
+      }
+    };
+
+    return (
+      <>
+        <HonestyVsRestraintTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={honestyVsRestraintQuestions}
+          results={honestyVsRestraintResults}
+          questionCount={honestyVsRestraintQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

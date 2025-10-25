@@ -1476,6 +1476,57 @@
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "honestyVsRestraintTest": {
+    "startMessage": {
+      "line1": "\"Express emotions as they are? Or filter first?\"",
+      "line2": "Some people say what comes to mind right away,",
+      "line3": "Some people think carefully before speaking.",
+      "line4": "People who show anger immediately,",
+      "line5": "People who suppress it inside and don't express.\nPeople who say they like something right away,\nPeople who don't easily reveal their feelings.",
+      "line6": "Which side are you?\nTakes only 2 minutes! Choose intuitively 💭"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "participants",
+      "shareWithFriends": "Share with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "similarTests": "🎯 Top 5 Similar Test Recommendations",
+      "popularTests": "🔥 Top 5 Popular Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "AdSense Ad Area"
+    },
+    "result": {
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "score": "Expression Score",
+      "advice": "Advice"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! 💭 Honest vs Restrained, which side are you?",
+      "kakao": "I'm {type}! 💭 Honest vs Restrained, which side are you?",
+      "wechat": "I'm {type}! 💭 Honest vs Restrained, which side are you?",
+      "whatsapp": "I'm {type}! 💭 Honest vs Restrained, which side are you?",
+      "telegram": "I'm {type}! 💭 Honest vs Restrained, which side are you?",
+      "line": "I'm {type}! 💭 Honest vs Restrained, which side are you?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    }
   }
 }
 

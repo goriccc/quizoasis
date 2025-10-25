@@ -1417,5 +1417,56 @@
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "honestyVsRestraintTest": {
+    "startMessage": {
+      "line1": "\"Thể hiện cảm xúc như vốn có? Hay lọc trước?\"",
+      "line2": "Một số người nói ngay những gì nghĩ đến,",
+      "line3": "Một số người suy nghĩ kỹ trước khi nói.",
+      "line4": "Người thể hiện tức giận ngay lập tức,",
+      "line5": "Người nuốt vào trong và không thể hiện.\nNgười nói thích ngay,\nNgười không dễ lộ cảm xúc.",
+      "line6": "Bạn thuộc phía nào?\nChỉ mất 2 phút! Chọn theo trực giác 💭"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Kiểm tra khác",
+      "similarTests": "🎯 TOP5 Kiểm tra tương tự",
+      "popularTests": "🔥 TOP5 Kiểm tra phổ biến",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Khu vực quảng cáo AdSense"
+    },
+    "result": {
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "score": "Điểm biểu hiện",
+      "advice": "Lời khuyên"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 💭 Thành thật vs Tự chế, bạn thuộc phía nào?",
+      "kakao": "Tôi là {type}! 💭 Thành thật vs Tự chế, bạn thuộc phía nào?",
+      "wechat": "Tôi là {type}! 💭 Thành thật vs Tự chế, bạn thuộc phía nào?",
+      "whatsapp": "Tôi là {type}! 💭 Thành thật vs Tự chế, bạn thuộc phía nào?",
+      "telegram": "Tôi là {type}! 💭 Thành thật vs Tự chế, bạn thuộc phía nào?",
+      "line": "Tôi là {type}! 💭 Thành thật vs Tự chế, bạn thuộc phía nào?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

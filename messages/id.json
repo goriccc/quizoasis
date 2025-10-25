@@ -1417,5 +1417,56 @@
       "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
+  },
+  "honestyVsRestraintTest": {
+    "startMessage": {
+      "line1": "\"Ekspresikan emosi apa adanya? Atau filter dulu?\"",
+      "line2": "Beberapa orang langsung mengatakan apa yang terlintas,",
+      "line3": "Beberapa orang berpikir hati-hati sebelum berbicara.",
+      "line4": "Orang yang menunjukkan kemarahan langsung,",
+      "line5": "Orang yang menyimpannya di dalam dan tidak mengekspresikan.\nOrang yang langsung mengatakan suka,\nOrang yang tidak mudah menampilkan perasaan.",
+      "line6": "Anda di sisi mana?\nHanya butuh 2 menit! Pilih secara intuitif 💭"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang telah berpartisipasi",
+      "shareWithFriends": "Coba dengan teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "similarTests": "🎯 TOP5 Tes Serupa",
+      "popularTests": "🔥 TOP5 Tes Populer",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Area Iklan AdSense"
+    },
+    "result": {
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "score": "Skor Ekspresi",
+      "advice": "Nasihat"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! 💭 Jujur vs Menahan Diri, Anda di sisi mana?",
+      "kakao": "Saya {type}! 💭 Jujur vs Menahan Diri, Anda di sisi mana?",
+      "wechat": "Saya {type}! 💭 Jujur vs Menahan Diri, Anda di sisi mana?",
+      "whatsapp": "Saya {type}! 💭 Jujur vs Menahan Diri, Anda di sisi mana?",
+      "telegram": "Saya {type}! 💭 Jujur vs Menahan Diri, Anda di sisi mana?",
+      "line": "Saya {type}! 💭 Jujur vs Menahan Diri, Anda di sisi mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan telah disalin! Silakan tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    }
   }
 }
