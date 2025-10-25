@@ -30,6 +30,7 @@ import { independenceQuestions, independenceResults } from '@/lib/independenceDa
 import { decisionSpeedQuestions, decisionSpeedResults } from '@/lib/decisionSpeedData';
 import { competitivenessQuestions, competitivenessResults } from '@/lib/competitivenessData';
 import { plannerVsSpontaneousQuestions, plannerVsSpontaneousResults } from '@/lib/plannerVsSpontaneousData';
+import { datingStyleQuestions, datingStyleResults } from '@/lib/datingStyleData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -162,6 +163,9 @@ const CompetitivenessTestClient = dynamic(() => import('@/components/Competitive
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const PlannerVsSpontaneousTestClient = dynamic(() => import('@/components/PlannerVsSpontaneousTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const DatingStyleTestClient = dynamic(() => import('@/components/DatingStyleTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1674,6 +1678,59 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
+  // 데이트 스타일 테스트
+  if (slug === 'my-dating-style') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'my-dating-style',
+      title: {
+        ko: '나에게 맞는 데이트 스타일은?',
+        en: 'What is your dating style?',
+        ja: 'あなたのデートスタイルは？',
+        'zh-CN': '你的约会风格是什么？',
+        'zh-TW': '你的約會風格是什麼？',
+        vi: 'Phong cách hẹn hò của bạn là gì?',
+        id: 'Apa gaya kencan Anda?'
+      },
+      description: {
+        ko: '연애 상세 분석! 당신만의 데이트 스타일은? 완벽하게 준비된 데이트를 선호하나요? 즉흥적이고 자유로운 시간을 좋아하나요?',
+        en: 'Detailed dating analysis! What is your dating style? Do you prefer perfectly prepared dates? Do you like spontaneous and free time?',
+        ja: 'デート詳細分析！あなただけのデートスタイルは？完璧に準備されたデートを好みますか？即興的で自由な時間が好きですか？',
+        'zh-CN': '详细约会分析！你的约会风格是什么？你喜欢完全准备好的约会吗？你喜欢自发自由的时间吗？',
+        'zh-TW': '詳細約會分析！你的約會風格是什麼？你喜歡完全準備好的約會嗎？你喜歡自發自由的時間嗎？',
+        vi: 'Phân tích chi tiết hẹn hò! Phong cách hẹn hò của bạn là gì? Bạn có thích những cuộc hẹn được chuẩn bị hoàn hảo không? Bạn có thích thời gian tự phát và tự do không?',
+        id: 'Analisis kencan detail! Apa gaya kencan Anda? Apakah Anda lebih suka kencan yang disiapkan dengan sempurna? Apakah Anda suka waktu spontan dan bebas?'
+      },
+      thumbnail: 'test_221_dating_style.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '관계'],
+        en: ['Love', 'Relationships'],
+        ja: ['恋愛', '関係'],
+        'zh-CN': ['恋爱', '关系'],
+        'zh-TW': ['戀愛', '關係'],
+        vi: ['Tình yêu', 'Mối quan hệ'],
+        id: ['Cinta', 'Hubungan']
+      }
+    };
+
+    return (
+      <>
+        <DatingStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={datingStyleQuestions}
+          results={datingStyleResults}
+          questionCount={datingStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
   // 계획형 vs 즉흥형 테스트
   if (slug === 'planner-vs-spontaneous-test') {
     const test = await getTestBySlug(slug) || {
@@ -2021,6 +2078,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'trustworthiness-level-test') TestClient = TrustTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;
+    else if (slug === 'my-dating-style') TestClient = DatingStyleTestClient;
     else if (slug === 'future-career-match-test') TestClient = CareerTestClient;
     else if (slug === 'job-strength-test') TestClient = JobStrengthTestClient;
     else if (slug === 'work-values-test') TestClient = WorkValuesTestClient;

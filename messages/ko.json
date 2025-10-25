@@ -616,6 +616,58 @@
       "difficultMatch": "어려운 궁합"
     }
   },
+  "datingStyleTest": {
+    "startMessage": {
+      "line1": "연애 상세 분석! 당신만의 데이트 스타일은?",
+      "line2": "완벽하게 준비된 데이트를 선호하나요?",
+      "line3": "즉흥적이고 자유로운 시간을 좋아하나요?",
+      "line4": "감정 교류가 중요한가요, 편안함이 우선인가요?",
+      "line5": "데이트 스타일은 연애 궁합의 핵심입니다.",
+      "line6": "서로의 스타일을 이해하면 더 행복한 관계를 만들 수 있습니다."
+    },
+    "ui": {
+      "startTest": "테스트 시작하기",
+      "participants": "명이 참여했습니다",
+      "progress": "진행률",
+      "shareResult": "결과 공유하기",
+      "retake": "다시하기",
+      "otherTests": "다른 테스트",
+      "shareWithFriends": "친구와 같이 해보기"
+    },
+    "result": {
+      "yourResult": "당신의 결과는",
+      "analyzing": "결과 분석중...",
+      "analyzingDate": "당신의 데이트 스타일을 분석하고 있습니다",
+      "analyzed": "당신의 데이트 스타일이 분석되었습니다",
+      "completed": "테스트 완료!",
+      "showResult": "분석 결과 표시",
+      "characteristics": "데이트 특징",
+      "datingFeatures": "데이트 특징",
+      "pros": "장점",
+      "cons": "단점",
+      "recommendedPlaces": "추천 장소",
+      "advice": "조언",
+      "bestMatch": "최고 궁합",
+      "goodMatch": "좋은 궁합",
+      "carefulMatch": "주의 필요"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 💕 우리 데이트 스타일 맞을까? 같이 해보자!",
+      "kakao": "나는 {type}! 💕 우리 데이트 스타일 맞을까? 같이 해보자!",
+      "wechat": "나는 {type}! 💕 우리 데이트 스타일 맞을까? 같이 해보자!",
+      "whatsapp": "나는 {type}! 💕 우리 데이트 스타일 맞을까? 같이 해보자!",
+      "telegram": "나는 {type}! 💕 우리 데이트 스타일 맞을까? 같이 해보자!",
+      "line": "나는 {type}! 💕 우리 데이트 스타일 맞을까? 같이 해보자!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "friendTest": {
     "startMessage": {
       "line1": "\"내가 생각하는 나 vs 친구들이 보는 나\"",

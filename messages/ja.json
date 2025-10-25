@@ -1665,5 +1665,57 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。",
       "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。"
     }
+  },
+  "datingStyleTest": {
+    "startMessage": {
+      "line1": "デート詳細分析！あなただけのデートスタイルは？",
+      "line2": "完璧に準備されたデートを好みますか？",
+      "line3": "即興的で自由な時間が好きですか？",
+      "line4": "感情交流が重要ですか、それとも快適さが優先ですか？",
+      "line5": "デートスタイルは恋愛相性の核心です。",
+      "line6": "お互いのスタイルを理解すれば、より幸せな関係を作ることができます。"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "participants": "人が参加しました",
+      "progress": "進捗",
+      "shareResult": "結果を共有",
+      "retake": "やり直す",
+      "otherTests": "他のテスト",
+      "shareWithFriends": "友達と一緒にやってみる"
+    },
+    "result": {
+      "yourResult": "あなたの結果は",
+      "analyzing": "結果分析中...",
+      "analyzingDate": "あなたのデートスタイルを分析しています",
+      "analyzed": "あなたのデートスタイルが分析されました",
+      "completed": "テスト完了！",
+      "showResult": "分析結果を表示",
+      "characteristics": "デートの特徴",
+      "datingFeatures": "デートの特徴",
+      "pros": "長所",
+      "cons": "短所",
+      "recommendedPlaces": "おすすめの場所",
+      "advice": "アドバイス",
+      "bestMatch": "最高の相性",
+      "goodMatch": "良い相性",
+      "carefulMatch": "注意が必要"
+    },
+    "shareMessages": {
+      "default": "私は{type}！💕 私たちのデートスタイルは合うかな？一緒にやってみよう！",
+      "kakao": "私は{type}！💕 私たちのデートスタイルは合うかな？一緒にやってみよう！",
+      "wechat": "私は{type}！💕 私たちのデートスタイルは合うかな？一緒にやってみよう！",
+      "whatsapp": "私は{type}！💕 私たちのデートスタイルは合うかな？一緒にやってみよう！",
+      "telegram": "私は{type}！💕 私たちのデートスタイルは合うかな？一緒にやってみよう！",
+      "line": "私は{type}！💕 私たちのデートスタイルは合うかな？一緒にやってみよう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらく後でもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

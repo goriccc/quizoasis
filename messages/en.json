@@ -853,6 +853,58 @@
       "difficultMatch": "Difficult compatibility"
     }
   },
+  "datingStyleTest": {
+    "startMessage": {
+      "line1": "Detailed dating analysis! What is your dating style?",
+      "line2": "Do you prefer perfectly prepared dates?",
+      "line3": "Do you like spontaneous and free time?",
+      "line4": "Is emotional exchange important, or is comfort a priority?",
+      "line5": "Dating style is the key to love compatibility.",
+      "line6": "Understanding each other's styles can create happier relationships."
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "people have participated",
+      "progress": "Progress",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "shareWithFriends": "Try with Friends"
+    },
+    "result": {
+      "yourResult": "Your result is",
+      "analyzing": "Analyzing results...",
+      "analyzingDate": "Analyzing your dating style",
+      "analyzed": "Your dating style has been analyzed",
+      "completed": "Test completed!",
+      "showResult": "Show analysis results",
+      "characteristics": "Dating characteristics",
+      "datingFeatures": "Dating features",
+      "pros": "Pros",
+      "cons": "Cons",
+      "recommendedPlaces": "Recommended places",
+      "advice": "Advice",
+      "bestMatch": "Best match",
+      "goodMatch": "Good match",
+      "carefulMatch": "Need attention"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! 💕 Want to check if our dating styles match? Let's try together!",
+      "kakao": "I'm {type}! 💕 Want to check if our dating styles match? Let's try together!",
+      "wechat": "I'm {type}! 💕 Want to check if our dating styles match? Let's try together!",
+      "whatsapp": "I'm {type}! 💕 Want to check if our dating styles match? Let's try together!",
+      "telegram": "I'm {type}! 💕 Want to check if our dating styles match? Let's try together!",
+      "line": "I'm {type}! 💕 Want to check if our dating styles match? Let's try together!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Unable to use sharing feature.",
+      "wechatCopy": "Link copied! Paste and share on WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    }
+  },
   "friendTest": {
     "startMessage": {
       "line1": "\"Me as I think vs Me as friends see me\"",

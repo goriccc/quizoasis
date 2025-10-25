@@ -1664,5 +1664,57 @@
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk.",
       "wechatCopy": "Tautan telah disalin! Silakan tempel di WeChat untuk berbagi."
     }
+  },
+  "datingStyleTest": {
+    "startMessage": {
+      "line1": "Analisis detail kencan! Apa gaya kencan Anda?",
+      "line2": "Apakah Anda menyukai kencan yang dipersiapkan dengan sempurna?",
+      "line3": "Apakah Anda menyukai waktu spontan dan bebas?",
+      "line4": "Apakah pertukaran emosional penting atau kenyamanan adalah prioritas?",
+      "line5": "Gaya kencan adalah kunci kompatibilitas cinta.",
+      "line6": "Memahami gaya satu sama lain dapat menciptakan hubungan yang lebih bahagia."
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang telah berpartisipasi",
+      "progress": "Kemajuan",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "shareWithFriends": "Coba dengan Teman"
+    },
+    "result": {
+      "yourResult": "Hasil Anda adalah",
+      "analyzing": "Menganalisis hasil...",
+      "analyzingDate": "Menganalisis gaya kencan Anda",
+      "analyzed": "Gaya kencan Anda telah dianalisis",
+      "completed": "Tes Selesai!",
+      "showResult": "Tampilkan Hasil Analisis",
+      "characteristics": "Karakteristik Kencan",
+      "datingFeatures": "Fitur Kencan",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "recommendedPlaces": "Tempat Direkomendasikan",
+      "advice": "Saran",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik",
+      "carefulMatch": "Perlu Perhatian"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! 💕 Apakah gaya kencan kita cocok? Mari kita coba bersama!",
+      "kakao": "Saya {type}! 💕 Apakah gaya kencan kita cocok? Mari kita coba bersama!",
+      "wechat": "Saya {type}! 💕 Apakah gaya kencan kita cocok? Mari kita coba bersama!",
+      "whatsapp": "Saya {type}! 💕 Apakah gaya kencan kita cocok? Mari kita coba bersama!",
+      "telegram": "Saya {type}! 💕 Apakah gaya kencan kita cocok? Mari kita coba bersama!",
+      "line": "Saya {type}! 💕 Apakah gaya kencan kita cocok? Mari kita coba bersama!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "shareFailed": "Tidak dapat menggunakan fitur berbagi.",
+      "wechatCopy": "Tautan telah disalin! Silakan tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    }
   }
 }

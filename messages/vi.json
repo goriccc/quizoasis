@@ -1664,5 +1664,57 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk.",
       "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ."
     }
+  },
+  "datingStyleTest": {
+    "startMessage": {
+      "line1": "Phân tích chi tiết hẹn hò! Phong cách hẹn hò của bạn là gì?",
+      "line2": "Bạn có thích những cuộc hẹn được chuẩn bị hoàn hảo không?",
+      "line3": "Bạn có thích thời gian tự phát và tự do không?",
+      "line4": "Trao đổi cảm xúc quan trọng hay sự thoải mái là ưu tiên?",
+      "line5": "Phong cách hẹn hò là chìa khóa của sự tương thích tình yêu.",
+      "line6": "Hiểu phong cách của nhau có thể tạo ra những mối quan hệ hạnh phúc hơn."
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "progress": "Tiến độ",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Kiểm tra khác",
+      "shareWithFriends": "Thử với bạn bè"
+    },
+    "result": {
+      "yourResult": "Kết quả của bạn là",
+      "analyzing": "Đang phân tích kết quả...",
+      "analyzingDate": "Đang phân tích phong cách hẹn hò của bạn",
+      "analyzed": "Phong cách hẹn hò của bạn đã được phân tích",
+      "completed": "Kiểm tra hoàn thành!",
+      "showResult": "Hiển thị kết quả phân tích",
+      "characteristics": "Đặc điểm hẹn hò",
+      "datingFeatures": "Đặc điểm hẹn hò",
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "recommendedPlaces": "Địa điểm được đề xuất",
+      "advice": "Lời khuyên",
+      "bestMatch": "Kết hợp tốt nhất",
+      "goodMatch": "Kết hợp tốt",
+      "carefulMatch": "Cần chú ý"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 💕 Phong cách hẹn hò của chúng ta có khớp không? Hãy thử cùng nhau!",
+      "kakao": "Tôi là {type}! 💕 Phong cách hẹn hò của chúng ta có khớp không? Hãy thử cùng nhau!",
+      "wechat": "Tôi là {type}! 💕 Phong cách hẹn hò của chúng ta có khớp không? Hãy thử cùng nhau!",
+      "whatsapp": "Tôi là {type}! 💕 Phong cách hẹn hò của chúng ta có khớp không? Hãy thử cùng nhau!",
+      "telegram": "Tôi là {type}! 💕 Phong cách hẹn hò của chúng ta có khớp không? Hãy thử cùng nhau!",
+      "line": "Tôi là {type}! 💕 Phong cách hẹn hò của chúng ta có khớp không? Hãy thử cùng nhau!"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }
