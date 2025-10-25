@@ -1366,5 +1366,56 @@
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "communicationStyle": {
+    "startMessage": "Cùng từ, cách khác! Phong cách giao tiếp của bạn là gì?\n\nMột số người nói trực tiếp,\nMột số người nói cẩn thận và gián tiếp.\nMột số người ưu tiên cảm xúc,\nMột số người giải thích bằng logic.\n\n\"Thành thật mà nói...\" vs \"Tôi nghĩ có thể...\"\n\"Tại sao bạn nghĩ vậy?\" vs \"Bạn cảm thấy thế nào?\"\n\nBạn giao tiếp như thế nào?\nMất 3 phút! Trả lời như bạn thường làm 💬",
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "totalParticipants": "{count} người tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "otherTests": "Xem các bài kiểm tra khác",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "testButton": "Làm bài kiểm tra",
+      "yourResult": "Kết quả của bạn",
+      "characteristics": "Đặc điểm",
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "suitableSituations": "Tình huống phù hợp",
+      "advice": "Lời khuyên",
+      "bestMatch": "Khớp tốt nhất",
+      "goodMatch": "Khớp tốt",
+      "carefulMatch": "Khớp cần chú ý",
+      "difficultMatch": "Khớp khó",
+      "loadingResults": "Đang phân tích kết quả...",
+      "testCompleted": "Kiểm tra hoàn thành!",
+      "viewAnalysisResults": "Xem kết quả phân tích"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 💬 Phong cách giao tiếp của bạn là gì? Hãy cùng làm nhé!",
+      "kakao": "Tôi là {type}! 💬 Phong cách giao tiếp của bạn là gì? Hãy cùng làm nhé!",
+      "wechat": "Tôi là {type}! 💬 Phong cách giao tiếp của bạn là gì? Hãy cùng làm nhé!",
+      "whatsapp": "Tôi là {type}! 💬 Phong cách giao tiếp của bạn là gì? Hãy cùng làm nhé!",
+      "telegram": "Tôi là {type}! 💬 Phong cách giao tiếp của bạn là gì? Hãy cùng làm nhé!",
+      "line": "Tôi là {type}! 💬 Phong cách giao tiếp của bạn là gì? Hãy cùng làm nhé!"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Vui lòng dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

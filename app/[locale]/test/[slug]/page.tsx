@@ -24,6 +24,7 @@ import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
 import { optimismQuestions, optimismResults } from '@/lib/optimismData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
+import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -138,6 +139,9 @@ const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioriti
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const AdventurerTestClient = dynamic(() => import('@/components/AdventurerTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const CommunicationStyleTestClient = dynamic(() => import('@/components/CommunicationStyleTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -1378,6 +1382,59 @@ export default async function TestPage({ params }: Props) {
           questions={adventurerQuestions}
           results={adventurerResults}
           questionCount={adventurerQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 소통 스타일 테스트
+  if (slug === 'communication-style-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'communication-style-test',
+      title: {
+        ko: '당신의 소통 스타일은?',
+        en: 'What is your communication style?',
+        ja: 'あなたのコミュニケーションスタイルは？',
+        'zh-CN': '你的沟通风格是什么？',
+        'zh-TW': '你的溝通風格是什麼？',
+        vi: 'Phong cách giao tiếp của bạn là gì?',
+        id: 'Apa gaya komunikasi Anda?'
+      },
+      description: {
+        ko: '직설적 vs 간접적 vs 감성적 vs 논리적',
+        en: 'Direct vs Indirect vs Emotional vs Logical',
+        ja: '直接的 vs 間接的 vs 感情的 vs 論理的',
+        'zh-CN': '直接 vs 间接 vs 感性 vs 逻辑',
+        'zh-TW': '直接 vs 間接 vs 感性 vs 邏輯',
+        vi: 'Trực tiếp vs Gián tiếp vs Cảm xúc vs Logic',
+        id: 'Langsung vs Tidak langsung vs Emosional vs Logis'
+      },
+      thumbnail: 'test_207_communication_style.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['소통', '관계', '성격'],
+        en: ['Communication', 'Relationships', 'Personality'],
+        ja: ['コミュニケーション', '関係', '性格'],
+        'zh-CN': ['沟通', '关系', '性格'],
+        'zh-TW': ['溝通', '關係', '性格'],
+        vi: ['Giao tiếp', 'Mối quan hệ', 'Tính cách'],
+        id: ['Komunikasi', 'Hubungan', 'Kepribadian']
+      }
+    };
+
+    return (
+      <>
+        <CommunicationStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title[locale] || test.title.ko}
+          description={test.description[locale] || test.description.ko}
+          questions={communicationStyleQuestions}
+          results={communicationStyleResults}
+          questionCount={communicationStyleQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

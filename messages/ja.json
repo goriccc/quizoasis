@@ -1367,5 +1367,56 @@
       "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "communicationStyle": {
+    "startMessage": "同じ言葉、違う方法！あなたのコミュニケーションスタイルは？\n\n一部の人は単刀直入に話し、\n一部の人は回りくどく慎重に話します。\n一部の人は感情を重視し、\n一部の人は論理で説明します。\n\n「正直に言うと...」 vs 「私は思うに...」\n「なぜそう思うの？」 vs 「気分はどう？」\n\nあなたはどうコミュニケーションしますか？\n所要時間3分！普段通りに答えてください 💬",
+    "ui": {
+      "startTest": "テスト開始",
+      "totalParticipants": "{count}人が参加しました",
+      "shareWithFriends": "友達と一緒に試す",
+      "progress": "進捗",
+      "retakeTest": "やり直す",
+      "shareResult": "結果を共有",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似の他のテスト",
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 人気テストおすすめトップ5",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "testButton": "テストを受ける",
+      "yourResult": "あなたの結果",
+      "characteristics": "特徴",
+      "strengths": "強み",
+      "weaknesses": "弱み",
+      "suitableSituations": "適した状況",
+      "advice": "アドバイス",
+      "bestMatch": "最高の相性",
+      "goodMatch": "良い相性",
+      "carefulMatch": "注意すべき相性",
+      "difficultMatch": "難しい相性",
+      "loadingResults": "結果を分析中...",
+      "testCompleted": "テスト完了！",
+      "viewAnalysisResults": "分析結果を見る"
+    },
+    "shareMessages": {
+      "default": "私は{type}！💬 あなたのコミュニケーションスタイルは？一緒に試しましょう！",
+      "kakao": "私は{type}！💬 あなたのコミュニケーションスタイルは？一緒に試しましょう！",
+      "wechat": "私は{type}！💬 あなたのコミュニケーションスタイルは？一緒に試しましょう！",
+      "whatsapp": "私は{type}！💬 あなたのコミュニケーションスタイルは？一緒に試しましょう！",
+      "telegram": "私は{type}！💬 あなたのコミュニケーションスタイルは？一緒に試しましょう！",
+      "line": "私は{type}！💬 あなたのコミュニケーションスタイルは？一緒に試しましょう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

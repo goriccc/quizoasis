@@ -1366,5 +1366,56 @@
       "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
+  },
+  "communicationStyle": {
+    "startMessage": "Kata yang sama, cara berbeda! Apa gaya komunikasi Anda?\n\nBeberapa orang berbicara langsung,\nBeberapa orang berbicara hati-hati dan tidak langsung.\nBeberapa orang memprioritaskan emosi,\nBeberapa orang menjelaskan dengan logika.\n\n\"Sejujurnya...\" vs \"Saya pikir mungkin...\"\n\"Mengapa Anda berpikir begitu?\" vs \"Bagaimana perasaan Anda?\"\n\nBagaimana Anda berkomunikasi?\nMemakan waktu 3 menit! Jawab seperti biasanya 💬",
+    "ui": {
+      "startTest": "Mulai Tes",
+      "totalParticipants": "{count} peserta",
+      "shareWithFriends": "Coba dengan Teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi",
+      "shareResult": "Bagikan Hasil",
+      "otherTests": "Lihat Tes Lainnya",
+      "similarTests": "Tes Serupa Lainnya",
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa yang Direkomendasikan",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "testButton": "Ikuti Tes",
+      "yourResult": "Hasil Anda",
+      "characteristics": "Karakteristik",
+      "strengths": "Kekuatan",
+      "weaknesses": "Kelemahan",
+      "suitableSituations": "Situasi yang Cocok",
+      "advice": "Nasihat",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik",
+      "carefulMatch": "Kecocokan Perlu Diperhatikan",
+      "difficultMatch": "Kecocokan Sulit",
+      "loadingResults": "Menganalisis hasil...",
+      "testCompleted": "Tes Selesai!",
+      "viewAnalysisResults": "Lihat Hasil Analisis"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! 💬 Apa gaya komunikasi Anda? Mari kita lakukan bersama!",
+      "kakao": "Saya {type}! 💬 Apa gaya komunikasi Anda? Mari kita lakukan bersama!",
+      "wechat": "Saya {type}! 💬 Apa gaya komunikasi Anda? Mari kita lakukan bersama!",
+      "whatsapp": "Saya {type}! 💬 Apa gaya komunikasi Anda? Mari kita lakukan bersama!",
+      "telegram": "Saya {type}! 💬 Apa gaya komunikasi Anda? Mari kita lakukan bersama!",
+      "line": "Saya {type}! 💬 Apa gaya komunikasi Anda? Mari kita lakukan bersama!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan telah disalin! Silakan tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    }
   }
 }

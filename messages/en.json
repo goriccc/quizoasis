@@ -1425,6 +1425,57 @@
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "communicationStyle": {
+    "startMessage": "Same words, different ways! What's your communication style?\n\nSome people speak directly,\nSome people speak carefully and indirectly.\nSome people prioritize emotions,\nSome people explain with logic.\n\n\"To be honest...\" vs \"I think maybe...\"\n\"Why do you think that?\" vs \"How do you feel?\"\n\nHow do you communicate?\nTakes 3 minutes! Answer as you normally would 💬",
+    "ui": {
+      "startTest": "Start Test",
+      "totalParticipants": "{count} participants",
+      "shareWithFriends": "Share with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake",
+      "shareResult": "Share Result",
+      "otherTests": "Other Tests",
+      "similarTests": "Similar Tests",
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "Take Test",
+      "yourResult": "Your Result",
+      "characteristics": "Characteristics",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "suitableSituations": "Suitable Situations",
+      "advice": "Advice",
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match",
+      "carefulMatch": "Careful Match",
+      "difficultMatch": "Difficult Match",
+      "loadingResults": "Analyzing results...",
+      "testCompleted": "Test Completed!",
+      "viewAnalysisResults": "View Analysis Results"
+    },
+    "shareMessages": {
+      "default": "I'm {type}! 💬 What's your communication style? Let's do it together!",
+      "kakao": "I'm {type}! 💬 What's your communication style? Let's do it together!",
+      "wechat": "I'm {type}! 💬 What's your communication style? Let's do it together!",
+      "whatsapp": "I'm {type}! 💬 What's your communication style? Let's do it together!",
+      "telegram": "I'm {type}! 💬 What's your communication style? Let's do it together!",
+      "line": "I'm {type}! 💬 What's your communication style? Let's do it together!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    }
   }
 }
 

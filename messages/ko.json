@@ -902,6 +902,57 @@
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
   },
+  "communicationStyle": {
+    "startMessage": "같은 말, 다른 방식! 당신의 소통 스타일은?\n\n어떤 사람은 단도직입적으로 말하고,\n어떤 사람은 에둘러 조심스럽게 말합니다.\n어떤 사람은 감정을 중시하고,\n어떤 사람은 논리로 설명합니다.\n\n\"솔직히 말하면...\" vs \"제 생각엔 혹시...\"\n\"왜 그렇게 생각해?\" vs \"기분이 어때?\"\n\n당신은 어떻게 소통하나요?\n소요 시간 3분! 평소 모습 그대로 답해주세요 💬",
+    "ui": {
+      "startTest": "테스트 시작",
+      "totalParticipants": "{count}명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "testButton": "테스트 하러 가기",
+      "yourResult": "당신의 결과는",
+      "characteristics": "특징",
+      "strengths": "강점",
+      "weaknesses": "약점",
+      "suitableSituations": "적합한 상황",
+      "advice": "조언",
+      "bestMatch": "최고 궁합",
+      "goodMatch": "좋은 궁합",
+      "carefulMatch": "주의 궁합",
+      "difficultMatch": "어려운 궁합",
+      "loadingResults": "결과 분석 중...",
+      "testCompleted": "테스트 완료!",
+      "viewAnalysisResults": "분석 결과 보기"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 💬 당신의 소통 스타일은? 같이 해보자!",
+      "kakao": "나는 {type}! 💬 당신의 소통 스타일은? 같이 해보자!",
+      "wechat": "나는 {type}! 💬 당신의 소통 스타일은? 같이 해보자!",
+      "whatsapp": "나는 {type}! 💬 당신의 소통 스타일은? 같이 해보자!",
+      "telegram": "나는 {type}! 💬 당신의 소통 스타일은? 같이 해보자!",
+      "line": "나는 {type}! 💬 당신의 소통 스타일은? 같이 해보자!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "idealTypeTest": {
     "startMessageLine1": "머리? 가슴? 아니면 든든함?",
     "startMessageLine2": "똑똑한 사람에게 끌리나요? 재미있는 사람이 좋은가요? 따뜻한 사람을 원하나요?",
