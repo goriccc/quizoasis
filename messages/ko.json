@@ -799,6 +799,58 @@
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
   },
+  "independenceTest": {
+    "startMessage": {
+      "line1": "\"혼자서도 괜찮아 vs 누군가 필요해\"",
+      "line2": "어떤 사람은 모든 것을 혼자 해결하고,",
+      "line3": "어떤 사람은 누군가의 도움이 필요합니다.",
+      "line4": "혼자 여행 떠나는 게 자연스러운 사람,",
+      "line5": "혼자 밥 먹는 것도 어색한 사람.",
+      "line6": "당신은 얼마나 독립적인가요?",
+      "line7": "소요 시간 단 2분! 솔직하게 답해주세요 🌱"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "participants": "명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTests": "🔥 요즘 인기 테스트 추천 톱5",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱"
+    },
+    "result": {
+      "characteristics": "특징",
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "independenceScore": "독립성 점수",
+      "advice": "조언"
+    },
+    "shareMessages": {
+      "default": "나는 {type} 스타일! 🌱 독립 vs 의존, 너는 어느 쪽?",
+      "kakao": "나는 {type} 스타일! 🌱 독립 vs 의존, 너는 어느 쪽?",
+      "wechat": "나는 {type} 스타일! 🌱 독립 vs 의존, 너는 어느 쪽?",
+      "whatsapp": "나는 {type} 스타일! 🌱 독립 vs 의존, 너는 어느 쪽?",
+      "telegram": "나는 {type} 스타일! 🌱 독립 vs 의존, 너는 어느 쪽?",
+      "line": "나는 {type} 스타일! 🌱 독립 vs 의존, 너는 어느 쪽?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "\"당신 인생에서 정말 중요한 것은 무엇인가요?\"",

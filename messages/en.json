@@ -713,6 +713,58 @@
       "kakaoError": "An error occurred while sharing to KakaoTalk."
     }
   },
+  "independenceTest": {
+    "startMessage": {
+      "line1": "\"Okay alone vs Need someone\"",
+      "line2": "Some people solve everything alone,",
+      "line3": "others need someone's help.",
+      "line4": "Natural to travel alone,",
+      "line5": "awkward to eat alone.",
+      "line6": "How independent are you?",
+      "line7": "Just 2 minutes! Answer honestly 🌱"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "people participated",
+      "shareWithFriends": "Try with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "popularTests": "🔥 Top 5 Popular Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "characteristics": "Characteristics",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "independenceScore": "Independence Score",
+      "advice": "Advice"
+    },
+    "shareMessages": {
+      "default": "I am {type} style! 🌱 Independent vs Dependent, which are you?",
+      "kakao": "I am {type} style! 🌱 Independent vs Dependent, which are you?",
+      "wechat": "I am {type} style! 🌱 Independent vs Dependent, which are you?",
+      "whatsapp": "I am {type} style! 🌱 Independent vs Dependent, which are you?",
+      "telegram": "I am {type} style! 🌱 Independent vs Dependent, which are you?",
+      "line": "I am {type} style! 🌱 Independent vs Dependent, which are you?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "\"What is truly important in your life?\"",

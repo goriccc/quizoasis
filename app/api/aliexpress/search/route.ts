@@ -50,6 +50,36 @@ async function callAliExpressAPI(method: string, params: Record<string, any>) {
   }
 }
 
+// Locale에 따른 국가 코드 매핑
+function getCountryCodeByLocale(locale: string): string {
+  const countryMap: Record<string, string> = {
+    'ko': 'KR',      // 한국
+    'en': 'US',      // 미국
+    'ja': 'JP',      // 일본
+    'zh-CN': 'CN',   // 중국
+    'zh-TW': 'TW',   // 대만
+    'vi': 'VN',      // 베트남
+    'id': 'ID'       // 인도네시아
+  };
+  
+  return countryMap[locale] || 'US';
+}
+
+// Locale에 따른 언어 코드 매핑
+function getLanguageCodeByLocale(locale: string): string {
+  const languageMap: Record<string, string> = {
+    'ko': 'KO',
+    'en': 'EN',
+    'ja': 'JA',
+    'zh-CN': 'ZH',
+    'zh-TW': 'ZH',
+    'vi': 'VI',
+    'id': 'ID'
+  };
+  
+  return languageMap[locale] || 'EN';
+}
+
 // 상품 검색 API (POST 메서드)
 export async function POST(request: NextRequest) {
   try {
@@ -57,16 +87,20 @@ export async function POST(request: NextRequest) {
     const keyword = body.keyword || 'fashion';
     const limit = body.limit || 10;
     const locale = body.locale || 'en';
+    
+    // Locale에 따른 국가 코드와 언어 코드 가져오기
+    const countryCode = getCountryCodeByLocale(locale);
+    const languageCode = getLanguageCodeByLocale(locale);
 
     // AliExpress Affiliate 상품 검색 API 호출 (Advanced API)
     const response = await callAliExpressAPI('aliexpress.affiliate.product.query', {
       keywords: keyword,
       target_currency: 'USD',
-      target_language: locale === 'ko' ? 'KO' : 'EN',
+      target_language: languageCode,
       page_no: '1',
       page_size: limit.toString(),
       sort: 'SALE_PRICE_ASC',
-      ship_to_country: 'US'
+      ship_to_country: countryCode
     });
 
     if (response.error_response) {

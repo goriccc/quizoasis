@@ -713,6 +713,58 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
+  "independenceTest": {
+    "startMessage": {
+      "line1": "「一人でも大丈夫 vs 誰かが必要」",
+      "line2": "すべてを一人で解決する人もいれば、",
+      "line3": "誰かの助けが必要な人もいます。",
+      "line4": "一人で旅行するのが自然な人、",
+      "line5": "一人で食事するのも気まずい人。",
+      "line6": "あなたはどのくらい独立していますか？",
+      "line7": "所要時間わずか2分！正直に答えてください 🌱"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "participants": "人が参加しました",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "progress": "進捗率",
+      "retakeTest": "もう一度",
+      "shareResult": "結果を共有",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "🎯 類似の他のテスト推奨トップ5",
+      "popularTests": "🔥 最近人気のテスト推奨トップ5",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "characteristics": "特徴",
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "independenceScore": "独立性スコア",
+      "advice": "アドバイス"
+    },
+    "shareMessages": {
+      "default": "私は{type}スタイル！ 🌱 独立 vs 依存、あなたはどちら？",
+      "kakao": "私は{type}スタイル！ 🌱 独立 vs 依存、あなたはどちら？",
+      "wechat": "私は{type}スタイル！ 🌱 独立 vs 依存、あなたはどちら？",
+      "whatsapp": "私は{type}スタイル！ 🌱 独立 vs 依存、あなたはどちら？",
+      "telegram": "私は{type}スタイル！ 🌱 独立 vs 依存、あなたはどちら？",
+      "line": "私は{type}スタイル！ 🌱 独立 vs 依存、あなたはどちら？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "「あなたの人生で本当に重要なことは何ですか？」",

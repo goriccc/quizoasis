@@ -712,6 +712,58 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
+  "independenceTest": {
+    "startMessage": {
+      "line1": "\"Ổn một mình vs Cần ai đó\"",
+      "line2": "Một số người giải quyết mọi thứ một mình,",
+      "line3": "người khác cần sự giúp đỡ của ai đó.",
+      "line4": "Người tự nhiên khi đi du lịch một mình,",
+      "line5": "người khó chịu khi ăn một mình.",
+      "line6": "Bạn độc lập đến mức nào?",
+      "line7": "Chỉ mất 2 phút! Hãy trả lời thành thật 🌱"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp"
+    },
+    "result": {
+      "characteristics": "Đặc điểm",
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
+      "independenceScore": "Điểm độc lập",
+      "advice": "Lời khuyên"
+    },
+    "shareMessages": {
+      "default": "Tôi là phong cách {type}! 🌱 Độc lập vs Phụ thuộc, bạn là gì?",
+      "kakao": "Tôi là phong cách {type}! 🌱 Độc lập vs Phụ thuộc, bạn là gì?",
+      "wechat": "Tôi là phong cách {type}! 🌱 Độc lập vs Phụ thuộc, bạn là gì?",
+      "whatsapp": "Tôi là phong cách {type}! 🌱 Độc lập vs Phụ thuộc, bạn là gì?",
+      "telegram": "Tôi là phong cách {type}! 🌱 Độc lập vs Phụ thuộc, bạn là gì?",
+      "line": "Tôi là phong cách {type}! 🌱 Độc lập vs Phụ thuộc, bạn là gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "\"Điều gì thực sự quan trọng trong cuộc sống của bạn?\"",
