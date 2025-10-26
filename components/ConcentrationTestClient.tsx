@@ -11,7 +11,7 @@ import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
-import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import AdSensePlaceholder, { ADSENSE_CONFIG, loadAdSense } from '@/lib/adsense';
 
 interface ConcentrationTestClientProps {
   locale: Locale;
@@ -129,13 +129,7 @@ export default function ConcentrationTestClient({
 
   // AdSense 광고 로드
   useEffect(() => {
-    if (typeof window !== 'undefined' && (window as any).adsbygoogle) {
-      try {
-        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-      } catch (error) {
-        console.error('AdSense 로드 실패:', error);
-      }
-    }
+    loadAdSense();
   }, []);
 
   // 유사한 테스트 로드

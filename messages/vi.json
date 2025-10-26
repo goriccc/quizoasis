@@ -1994,6 +1994,41 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
   },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "Đo lường MBTI chính xác! Kiểu tính cách thật của bạn là gì?",
+      "line2": "Hướng ngoại? Hướng nội? Cảm giác? Trực giác? Suy nghĩ? Cảm xúc? Phán đoán? Nhận thức?",
+      "line3": "Không phải bài kiểm tra đơn giản, mà là 32 câu hỏi với độ chính xác cao để tìm ra MBTI thật của bạn.",
+      "line4": "Trong 16 kiểu tính cách, bạn thuộc loại nào?",
+      "line5": "Dựa trên các tình huống thực tế, đạt độ chính xác hơn 85%!",
+      "line6": "Mất khoảng 15 phút! Hãy trả lời thành thật 🎯"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
+      "kakao": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
+      "wechat": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
+      "whatsapp": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
+      "telegram": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
+      "line": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "ui": {
+      "noData": "Không có dữ liệu",
+      "compatibleTypes": "Các kiểu tương thích",
+      "warningTypes": "Các kiểu cần chú ý",
+      "advice": "Lời khuyên",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Quảng cáo"
+    }
+  },
   "quickDecisionTest": {
     "startMessage": {
       "title": "Một phán đoán 1 giây thay đổi mọi thứ! Sự nhanh nhẹn của bạn như thế nào?",
@@ -2039,6 +2074,60 @@
       "wechatCopy": "Liên kết đã được sao chép! Dán trong WeChat để chia sẻ.",
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "ui": {
+      "noData": "Không có dữ liệu",
+      "compatibleTypes": "Loại tương thích",
+      "warningTypes": "Loại cần chú ý",
+      "advice": "Lời khuyên",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Quảng cáo",
+      "careers": "Nghề nghiệp",
+      "dating": "Hẹn hò",
+      "celebrities": "Người nổi tiếng",
+      "compatibleTypesTitle": "Loại tương thích",
+      "warningTypesTitle": "Loại cần chú ý"
+    }
+  },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "Đo lường MBTI chính xác! Kiểu tính cách thực sự của bạn là gì?",
+      "line2": "Hướng ngoại? Hướng nội? Cảm giác? Trực giác? Suy nghĩ? Cảm xúc? Phán đoán? Nhận thức?",
+      "line3": "Không phải là bài kiểm tra đơn giản, mà là 32 câu hỏi với độ chính xác cao để tìm ra MBTI thực sự của bạn.",
+      "line4": "Bạn thuộc loại nào trong 16 kiểu tính cách?",
+      "line5": "Câu hỏi dựa trên tình huống thực tế với độ chính xác hơn 85%!",
+      "line6": "Mất khoảng 15 phút! Hãy trả lời thành thật 🎯"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra MBTI chính xác tối đa! Bạn cũng thử đi! 🎯",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra MBTI chính xác tối đa! Bạn cũng thử đi! 🎯",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra MBTI chính xác tối đa! Bạn cũng thử đi! 🎯",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra MBTI chính xác tối đa! Bạn cũng thử đi! 🎯",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra MBTI chính xác tối đa! Bạn cũng thử đi! 🎯",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra MBTI chính xác tối đa! Bạn cũng thử đi! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "ui": {
+      "noData": "Không có dữ liệu",
+      "compatibleTypes": "Loại tương thích",
+      "warningTypes": "Loại cần chú ý",
+      "advice": "Lời khuyên",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Quảng cáo",
+      "careers": "Nghề nghiệp",
+      "dating": "Hẹn hò",
+      "celebrities": "Người nổi tiếng",
+      "compatibleTypesTitle": "Loại tương thích",
+      "warningTypesTitle": "Loại cần chú ý"
     }
   }
 }

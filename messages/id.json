@@ -1994,6 +1994,41 @@
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
   },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "Pengukuran MBTI yang akurat! Apa tipe kepribadian asli Anda?",
+      "line2": "Ekstrovert? Introvert? Sensing? Intuition? Thinking? Feeling? Judging? Perceiving?",
+      "line3": "Bukan tes sederhana, tetapi 32 pertanyaan dengan akurasi tinggi untuk menemukan MBTI asli Anda.",
+      "line4": "Dari 16 tipe kepribadian, Anda termasuk yang mana?",
+      "line5": "Berdasarkan situasi nyata, mencapai akurasi lebih dari 85%!",
+      "line6": "Memakan waktu sekitar 15 menit! Jawablah dengan jujur 🎯"
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type}! Tes MBTI akurat tertinggi selesai! Anda juga coba! 🎯",
+      "kakao": "Saya adalah {type}! Tes MBTI akurat tertinggi selesai! Anda juga coba! 🎯",
+      "wechat": "Saya adalah {type}! Tes MBTI akurat tertinggi selesai! Anda juga coba! 🎯",
+      "whatsapp": "Saya adalah {type}! Tes MBTI akurat tertinggi selesai! Anda juga coba! 🎯",
+      "telegram": "Saya adalah {type}! Tes MBTI akurat tertinggi selesai! Anda juga coba! 🎯",
+      "line": "Saya adalah {type}! Tes MBTI akurat tertinggi selesai! Anda juga coba! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Link disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Link disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    },
+    "ui": {
+      "noData": "Tidak Ada Data",
+      "compatibleTypes": "Tipe yang Cocok",
+      "warningTypes": "Tipe Peringatan",
+      "advice": "Saran",
+      "linkCopy": "Salin Link",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Iklan"
+    }
+  },
   "quickDecisionTest": {
     "startMessage": {
       "title": "Penilaian 1 detik mengubah segalanya! Seberapa cepat Anda?",
@@ -2039,6 +2074,60 @@
       "wechatCopy": "Link disalin! Tempel di WeChat untuk berbagi.",
       "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
       "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "ui": {
+      "noData": "Tidak ada data",
+      "compatibleTypes": "Tipe yang Kompatibel",
+      "warningTypes": "Tipe Peringatan",
+      "advice": "Saran",
+      "linkCopy": "Salin Link",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Iklan",
+      "careers": "Karier",
+      "dating": "Kencan",
+      "celebrities": "Selebritas",
+      "compatibleTypesTitle": "Tipe yang Kompatibel",
+      "warningTypesTitle": "Tipe Peringatan"
+    }
+  },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "Pengukuran MBTI yang Akurat! Apa tipe kepribadian asli Anda?",
+      "line2": "Ekstrovert? Introvert? Sensing? Intuitive? Thinking? Feeling? Judging? Perceiving?",
+      "line3": "Bukan tes sederhana, tetapi 32 pertanyaan dengan akurasi tinggi untuk menemukan MBTI asli Anda.",
+      "line4": "Dari 16 tipe kepribadian, yang manakah Anda?",
+      "line5": "Pertanyaan berbasis situasi nyata dengan akurasi lebih dari 85%!",
+      "line6": "Memakan waktu sekitar 15 menit! Jawab dengan jujur 🎯"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Tes MBTI Akurat Ultimate selesai! Anda juga coba! 🎯",
+      "kakao": "Saya {type}! Tes MBTI Akurat Ultimate selesai! Anda juga coba! 🎯",
+      "wechat": "Saya {type}! Tes MBTI Akurat Ultimate selesai! Anda juga coba! 🎯",
+      "whatsapp": "Saya {type}! Tes MBTI Akurat Ultimate selesai! Anda juga coba! 🎯",
+      "telegram": "Saya {type}! Tes MBTI Akurat Ultimate selesai! Anda juga coba! 🎯",
+      "line": "Saya {type}! Tes MBTI Akurat Ultimate selesai! Anda juga coba! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Link disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Link disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "ui": {
+      "noData": "Tidak ada data",
+      "compatibleTypes": "Tipe yang Kompatibel",
+      "warningTypes": "Tipe Peringatan",
+      "advice": "Saran",
+      "linkCopy": "Salin Link",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Iklan",
+      "careers": "Karier",
+      "dating": "Kencan",
+      "celebrities": "Selebritas",
+      "compatibleTypesTitle": "Tipe yang Kompatibel",
+      "warningTypesTitle": "Tipe Peringatan"
     }
   }
 }

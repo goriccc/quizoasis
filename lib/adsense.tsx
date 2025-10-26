@@ -21,6 +21,67 @@ export interface AdSensePlaceholderProps {
   label?: string;
 }
 
+// 공통 AdSense 로드 함수 (중복 로드 방지)
+export const loadAdSense = () => {
+  if (typeof window === 'undefined' || !ADSENSE_CONFIG.ENABLED) return;
+  
+  try {
+    // 이미 로드된 AdSense 요소가 있는지 확인
+    const existingAds = document.querySelectorAll('.adsbygoogle[data-adsbygoogle-status]');
+    if (existingAds.length > 0) {
+      // 이미 로드된 요소가 있으면 새로 로드하지 않음
+      return;
+    }
+    
+    // AdSense가 이미 초기화되었는지 확인
+    if ((window as any).adsbygoogle && (window as any).adsbygoogle.length > 0) {
+      return;
+    }
+    
+    (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+    (window as any).adsbygoogle.push({});
+  } catch (err) {
+    // AdSense 로드 실패 시 조용히 처리
+    console.warn('AdSense 로드 실패:', err);
+  }
+};
+
+// 전역 AdSense 로드 함수 (모든 컴포넌트에서 사용)
+export const safeLoadAdSense = () => {
+  if (typeof window === 'undefined' || !ADSENSE_CONFIG.ENABLED) return;
+  
+  try {
+    // 이미 로드된 AdSense 요소가 있는지 확인
+    const existingAds = document.querySelectorAll('.adsbygoogle[data-adsbygoogle-status]');
+    if (existingAds.length > 0) {
+      return;
+    }
+    
+    // AdSense가 이미 초기화되었는지 확인
+    if ((window as any).adsbygoogle && (window as any).adsbygoogle.length > 0) {
+      return;
+    }
+    
+    // 중복 로드 방지를 위한 플래그 설정
+    if ((window as any).adsbygoogleLoading) {
+      return;
+    }
+    
+    (window as any).adsbygoogleLoading = true;
+    (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+    (window as any).adsbygoogle.push({});
+    
+    // 로드 완료 후 플래그 해제
+    setTimeout(() => {
+      (window as any).adsbygoogleLoading = false;
+    }, 1000);
+  } catch (err) {
+    // AdSense 로드 실패 시 조용히 처리
+    console.warn('AdSense 로드 실패:', err);
+    (window as any).adsbygoogleLoading = false;
+  }
+};
+
 // AdSense Placeholder Component
 export default function AdSensePlaceholder({ 
   slot, 
@@ -29,14 +90,7 @@ export default function AdSensePlaceholder({
   label = '광고 영역' 
 }: AdSensePlaceholderProps) {
   useEffect(() => {
-    if (ADSENSE_CONFIG.ENABLED && typeof window !== 'undefined') {
-      try {
-        (window as any).adsbygoogle = (window as any).adsbygoogle || [];
-        (window as any).adsbygoogle.push({});
-      } catch (err) {
-        console.error('AdSense error:', err);
-      }
-    }
+    loadAdSense();
   }, []);
 
   if (ADSENSE_CONFIG.ENABLED) {

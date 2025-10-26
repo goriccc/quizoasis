@@ -10,7 +10,7 @@ import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
-import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
 interface IdealTypeTestClientProps {
   locale: string;
@@ -110,13 +110,7 @@ export default function IdealTypeTestClient({
           adElements.forEach((el) => {
             const status = (el as HTMLElement).getAttribute('data-adsbygoogle-status');
             if (!status || status === '') {
-              try {
-                ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-              } catch (err) {
-                if (!(err as Error).message.includes('already have ads')) {
-                  console.error('AdSense error:', err);
-                }
-              }
+              safeLoadAdSense();
             }
           });
         }

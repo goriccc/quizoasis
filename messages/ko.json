@@ -1976,5 +1976,45 @@
       "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
+  },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "정확한 MBTI 측정! 당신의 진짜 성격 유형은?",
+      "line2": "외향형? 내향형? 감각형? 직관형? 사고형? 감정형? 판단형? 인식형?",
+      "line3": "간단한 테스트가 아닌, 정확도를 높인 32개 질문으로 당신의 진짜 MBTI를 찾아드립니다.",
+      "line4": "16가지 성격 유형 중 당신은 어디에 속할까요?",
+      "line5": "실제 상황 기반의 질문으로 85% 이상의 정확도를 자랑합니다!",
+      "line6": "소요 시간 약 15분! 솔직하게 답변해주세요 🎯"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 궁극의 정확한 MBTI 테스트 완료! 너도 해봐! 🎯",
+      "kakao": "나는 {type}! 궁극의 정확한 MBTI 테스트 완료! 너도 해봐! 🎯",
+      "wechat": "나는 {type}! 궁극의 정확한 MBTI 테스트 완료! 너도 해봐! 🎯",
+      "whatsapp": "나는 {type}! 궁극의 정확한 MBTI 테스트 완료! 너도 해봐! 🎯",
+      "telegram": "나는 {type}! 궁극의 정확한 MBTI 테스트 완료! 너도 해봐! 🎯",
+      "line": "나는 {type}! 궁극의 정확한 MBTI 테스트 완료! 너도 해봐! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "ui": {
+      "noData": "데이터 없음",
+      "compatibleTypes": "어울리는 유형",
+      "warningTypes": "주의할 유형",
+      "advice": "조언",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "adsenseTitle": "광고",
+      "careers": "직업",
+      "dating": "연애",
+      "celebrities": "유명인",
+      "compatibleTypesTitle": "어울리는 유형",
+      "warningTypesTitle": "주의할 유형"
+    }
   }
 }

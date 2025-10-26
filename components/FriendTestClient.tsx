@@ -10,7 +10,7 @@ import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
-import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
 interface FriendTestClientProps {
   locale: string;
@@ -119,8 +119,7 @@ export default function FriendTestClient({
     const timer = setTimeout(() => {
       try {
         if (typeof window !== 'undefined') {
-          // @ts-ignore
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          safeLoadAdSense();
         }
       } catch (error) {
         console.error('AdSense 광고 로드 오류:', error);

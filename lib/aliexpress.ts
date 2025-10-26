@@ -126,8 +126,21 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
       'travel': '旅行',
       'home': '家居',
       'office': '办公',
+      'gift': '礼物',
+      'gifts': '礼物',
+      'present': '礼物',
+      'presents': 'presents',
       'sports': '运动',
-      'fashion': '时尚'
+      'fashion': '时尚',
+      'product': '商品',
+      'products': '商品',
+      'item': '物品',
+      'items': '物品',
+      'goods': '好物',
+      'trending': '热门',
+      'popular': '流行',
+      'best': '精选',
+      'quality': '品质'
     },
     'zh-TW': {
       'planner': '計畫本',
@@ -144,7 +157,20 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
       'home': '家居',
       'office': '辦公',
       'sports': '運動',
-      'fashion': '時尚'
+      'fashion': '時尚',
+      'gift': '禮物',
+      'gifts': '禮物',
+      'present': 'present',
+      'presents': 'presents',
+      'product': '商品',
+      'products': '商品',
+      'item': '物品',
+      'items': '物品',
+      'goods': '好物',
+      'trending': '熱門',
+      'popular': '流行',
+      'best': '精選',
+      'quality': '品質'
     },
     id: {
       'planner': 'perencana',
@@ -162,7 +188,6 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
       'office': 'kantor',
       'sports': 'olahraga',
       'fashion': 'mode',
-      'gifts': 'hadiah',
       'accessories': 'aksesoris',
       'books': 'buku',
       'toys': 'mainan',
@@ -182,7 +207,19 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
       'phone': 'hp',
       'case': 'case',
       'bag': 'tas',
-      'gift': 'hadiah'
+      'gift': 'hadiah',
+      'gifts': 'hadiah',
+      'present': 'hadiah',
+      'presents': 'hadiah',
+      'product': 'produk',
+      'products': 'produk',
+      'item': 'barang',
+      'items': 'barang',
+      'goods': 'barang bagus',
+      'trending': 'trending',
+      'popular': 'populer',
+      'best': 'terbaik',
+      'quality': 'kualitas'
     },
     vi: {
       'planner': 'kế hoạch',
@@ -200,6 +237,7 @@ export const translateKeywords = (keywords: string[], locale: string): string[] 
       'office': 'văn phòng',
       'sports': 'thể thao',
       'fashion': 'thời trang',
+      'gift': 'quà tặng',
       'gifts': 'quà tặng',
       'accessories': 'phụ kiện',
       'books': 'sách',
@@ -240,6 +278,14 @@ export const getProductKeywordsForMBTI = (mbtiType: string, locale: string = 'en
     // 단일 단어이거나 너무 일반적인 경우 'gifts' 추가
     const genericWords = ['book', 'watch', 'suit', 'candle', 'art', 'game', 'tool', 'sports'];
     if (genericWords.includes(keyword)) {
+      // 중국어의 경우 '好物' 키워드 사용
+      if (locale === 'zh-CN' || locale === 'zh-TW') {
+        return `${keyword} 好物`;
+      }
+      // 인도네시아어의 경우 'hadiah' 키워드 사용
+      if (locale === 'id') {
+        return `${keyword} hadiah`;
+      }
       return `${keyword} gifts`;
     }
     return keyword;
@@ -332,15 +378,32 @@ export const getEnhancedKeywords = (
     // 단일 일반 단어 목록 (gifts 추가)
     const genericSingleWords = [
       'book', 'watch', 'candle', 'art', 'game', 'tool', 'sports',
-      'planner', 'organizer', 'journal', 'notebook', 'calendar'
+      'planner', 'organizer', 'journal', 'notebook', 'calendar',
+      'gift', 'gifts', 'present', 'presents'
     ];
     
     if (genericSingleWords.includes(keyword.toLowerCase())) {
+      // 중국어의 경우 '好物' 키워드 사용
+      if (locale === 'zh-CN' || locale === 'zh-TW') {
+        return `${keyword} 好物`;
+      }
+      // 인도네시아어의 경우 'hadiah' 키워드 사용
+      if (locale === 'id') {
+        return `${keyword} hadiah`;
+      }
       return `${keyword} ${testTheme}`;
     }
     
     // 그 외 짧은 키워드는 앞에 테스트 주제 추가
     if (keyword.split(' ').length <= 2) {
+      // 중국어의 경우 '好物' 키워드 사용
+      if (locale === 'zh-CN' || locale === 'zh-TW') {
+        return `${keyword} 好物`;
+      }
+      // 인도네시아어의 경우 'hadiah' 키워드 사용
+      if (locale === 'id') {
+        return `${keyword} hadiah`;
+      }
       return `${testTheme} ${keyword}`;
     }
     
@@ -379,6 +442,10 @@ export const searchAliExpressProducts = async (keyword: string, limit: number = 
     }
     
   } catch (error) {
+    // 중국어(대만어 제외)와 인도네시아어의 경우 더미 상품 노출하지 않음
+    if (locale === 'zh-CN' || locale === 'id') {
+      return [];
+    }
     // API 호출 실패 시 더미 데이터 반환
     return getDummyProductsByKeyword(keyword, limit);
   }
@@ -420,6 +487,70 @@ const generateProductLink = (productId: string, keyword: string = 'product'): st
   return 'https://s.click.aliexpress.com/e/_DkxeC0n';
 };
 
+// 중국어와 베트남어에서 상품이 없을 경우 디폴트 배너 표시
+export const getDefaultBannerProducts = (locale: string, limit: number = 4): AliExpressProduct[] => {
+  const defaultProductIds = [
+    '1005004304600890', // 스마트워치
+    '1005004788576458', // 무선 이어폰
+    '1005004621772134', // 휴대폰 케이스
+    '1005004517832625'  // 가방
+  ];
+
+  const defaultProducts = [
+    {
+      id: defaultProductIds[0],
+      title: locale === 'zh-CN' ? '精选好物推荐 - 热门商品' : 
+             locale === 'vi' ? 'Sản phẩm nổi bật - Hàng hot' :
+             locale === 'id' ? 'Produk Unggulan - Trending Sekarang' :
+             'Featured Products - Trending Now',
+      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop',
+      originalPrice: '29.99',
+      salePrice: '24.99'
+    },
+    {
+      id: defaultProductIds[1],
+      title: locale === 'zh-CN' ? '品质生活 - 精选商品' :
+             locale === 'vi' ? 'Chất lượng cuộc sống - Sản phẩm chọn lọc' :
+             locale === 'id' ? 'Kualitas Hidup - Produk Pilihan' :
+             'Quality Life - Curated Products',
+      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop',
+      originalPrice: '24.99',
+      salePrice: '19.99'
+    },
+    {
+      id: defaultProductIds[2],
+      title: locale === 'zh-CN' ? '时尚潮流 - 热门推荐' :
+             locale === 'vi' ? 'Xu hướng thời trang - Gợi ý hot' :
+             locale === 'id' ? 'Tren Fashion - Rekomendasi Hot' :
+             'Fashion Trends - Hot Recommendations',
+      image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop',
+      originalPrice: '39.99',
+      salePrice: '32.99'
+    },
+    {
+      id: defaultProductIds[3],
+      title: locale === 'zh-CN' ? '生活必备 - 实用好物' :
+             locale === 'vi' ? 'Đồ dùng cần thiết - Hàng hữu ích' :
+             locale === 'id' ? 'Kebutuhan Sehari-hari - Barang Berguna' :
+             'Daily Essentials - Useful Items',
+      image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=300&h=300&fit=crop',
+      originalPrice: '19.99',
+      salePrice: '16.99'
+    }
+  ];
+
+  return defaultProducts.slice(0, limit).map(product => ({
+    product_id: product.id,
+    product_title: product.title,
+    product_main_image_url: product.image,
+    target_sale_price: product.originalPrice,
+    target_sale_price_currency: 'USD',
+    target_app_sale_price: product.salePrice,
+    promotion_link: 'https://s.click.aliexpress.com/e/_DkxeC0n', // 기본 링크
+    sale_price: product.originalPrice
+  }));
+};
+
 // 키워드별 더미 상품 데이터 (실제 API 연동 전까지 사용)
 export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): AliExpressProduct[] => {
   // 실제 존재하는 알리익스프레스 베스트셀러 상품 ID들
@@ -439,12 +570,14 @@ export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): 
              keyword.includes('planner') ? 'Smart Planner & Organizer' :
              keyword.includes('home') ? 'Cozy Home Essentials' :
              keyword.includes('sports') || keyword.includes('active') ? 'Sports & Outdoor Gear' :
+             keyword.includes('gift') || keyword.includes('present') ? 'Perfect Gift Ideas - Trending Now' :
              `Premium ${keyword} - Best Seller`,
       image: keyword.includes('couple') ? 'https://images.unsplash.com/photo-1522543558187-768b6df7c25c?w=300&h=300&fit=crop' :
              keyword.includes('stress') ? 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=300&h=300&fit=crop' :
              keyword.includes('planner') ? 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&h=300&fit=crop' :
              keyword.includes('home') ? 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&h=300&fit=crop' :
              keyword.includes('sports') ? 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=300&h=300&fit=crop' :
+             keyword.includes('gift') || keyword.includes('present') ? 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=300&h=300&fit=crop' :
              'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop',
       originalPrice: '29.99',
       salePrice: '24.99'
@@ -454,6 +587,7 @@ export const getDummyProductsByKeyword = (keyword: string, limit: number = 10): 
       title: keyword.includes('couple') ? 'Romantic Date Night Essentials' :
              keyword.includes('stress') ? 'Relaxation & Mindfulness Set' :
              keyword.includes('personality') ? 'Unique Personality Gifts' :
+             keyword.includes('gift') || keyword.includes('present') ? 'Unique Gift Collection - Best Sellers' :
              `Best ${keyword} - Top Rated`,
       image: keyword.includes('couple') ? 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=300&h=300&fit=crop' :
              keyword.includes('stress') ? 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&h=300&fit=crop' :

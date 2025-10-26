@@ -2053,5 +2053,45 @@
       "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "正確なMBTI測定！あなたの本当の性格タイプは？",
+      "line2": "外向型？内向型？感覚型？直感型？思考型？感情型？判断型？知覚型？",
+      "line3": "簡単なテストではなく、精度を高めた32の質問であなたの本当のMBTIを見つけます。",
+      "line4": "16の性格タイプのうち、あなたはどこに属するでしょうか？",
+      "line5": "実際の状況に基づく質問で85%以上の精度を誇ります！",
+      "line6": "所要時間約15分！正直に答えてください 🎯"
+    },
+    "shareMessages": {
+      "default": "私は{type}！究極の正確なMBTIテスト完了！あなたもやってみて！ 🎯",
+      "kakao": "私は{type}！究極の正確なMBTIテスト完了！あなたもやってみて！ 🎯",
+      "wechat": "私は{type}！究極の正確なMBTIテスト完了！あなたもやってみて！ 🎯",
+      "whatsapp": "私は{type}！究極の正確なMBTIテスト完了！あなたもやってみて！ 🎯",
+      "telegram": "私は{type}！究極の正確なMBTIテスト完了！あなたもやってみて！ 🎯",
+      "line": "私は{type}！究極の正確なMBTIテスト完了！あなたもやってみて！ 🎯"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "ui": {
+      "noData": "データなし",
+      "compatibleTypes": "相性の良いタイプ",
+      "warningTypes": "注意タイプ",
+      "advice": "アドバイス",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "adsenseTitle": "広告",
+      "careers": "職業",
+      "dating": "恋愛",
+      "celebrities": "有名人",
+      "compatibleTypesTitle": "相性の良いタイプ",
+      "warningTypesTitle": "注意タイプ"
+    }
   }
 }

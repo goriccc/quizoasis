@@ -2092,6 +2092,46 @@
       "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "Accurate MBTI measurement! What is your real personality type?",
+      "line2": "Extrovert? Introvert? Sensing? Intuitive? Thinking? Feeling? Judging? Perceiving?",
+      "line3": "Not a simple test, but 32 questions with increased accuracy to find your real MBTI.",
+      "line4": "Which of the 16 personality types do you belong to?",
+      "line5": "Based on real situations, it boasts over 85% accuracy!",
+      "line6": "Takes about 15 minutes! Please answer honestly 🎯"
+    },
+    "shareMessages": {
+      "default": "I am {type}! Ultimate accurate MBTI test completed! You try it too! 🎯",
+      "kakao": "I am {type}! Ultimate accurate MBTI test completed! You try it too! 🎯",
+      "wechat": "I am {type}! Ultimate accurate MBTI test completed! You try it too! 🎯",
+      "whatsapp": "I am {type}! Ultimate accurate MBTI test completed! You try it too! 🎯",
+      "telegram": "I am {type}! Ultimate accurate MBTI test completed! You try it too! 🎯",
+      "line": "I am {type}! Ultimate accurate MBTI test completed! You try it too! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    },
+    "ui": {
+      "noData": "No Data",
+      "compatibleTypes": "Compatible Types",
+      "warningTypes": "Warning Types",
+      "advice": "Advice",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Advertisement",
+      "careers": "Careers",
+      "dating": "Dating",
+      "celebrities": "Celebrities",
+      "compatibleTypesTitle": "Compatible Types",
+      "warningTypesTitle": "Warning Types"
+    }
   }
 }
 

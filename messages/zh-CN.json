@@ -2040,5 +2040,45 @@
       "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
       "kakaoError": "KakaoTalk分享时发生错误。"
     }
+  },
+  "mbtiAccurateTest": {
+    "startMessage": {
+      "line1": "准确的MBTI测量！你真正的性格类型是什么？",
+      "line2": "外向？内向？感觉？直觉？思考？情感？判断？感知？",
+      "line3": "不是简单的测试，而是通过32个提高准确性的问题来找到你真正的MBTI。",
+      "line4": "在16种性格类型中，你属于哪一种？",
+      "line5": "基于真实情况的问题，准确率超过85%！",
+      "line6": "大约需要15分钟！请诚实回答 🎯"
+    },
+    "shareMessages": {
+      "default": "我是{type}！终极准确MBTI测试完成！你也试试吧！ 🎯",
+      "kakao": "我是{type}！终极准确MBTI测试完成！你也试试吧！ 🎯",
+      "wechat": "我是{type}！终极准确MBTI测试完成！你也试试吧！ 🎯",
+      "whatsapp": "我是{type}！终极准确MBTI测试完成！你也试试吧！ 🎯",
+      "telegram": "我是{type}！终极准确MBTI测试完成！你也试试吧！ 🎯",
+      "line": "我是{type}！终极准确MBTI测试完成！你也试试吧！ 🎯"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "ui": {
+      "noData": "无数据",
+      "compatibleTypes": "相配类型",
+      "warningTypes": "注意类型",
+      "advice": "建议",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "广告",
+      "careers": "职业",
+      "dating": "恋爱",
+      "celebrities": "名人",
+      "compatibleTypesTitle": "相配类型",
+      "warningTypesTitle": "注意类型"
+    }
   }
 }
