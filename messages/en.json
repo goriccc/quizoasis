@@ -41,6 +41,54 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "trustTest": {
+    "startMessage": {
+      "line1": "How much do people trust you? We measure your trustworthiness!",
+      "line2": "Do you keep promises? Can you keep secrets? Do you have a sense of responsibility for your work? Do you not lie?",
+      "line3": "Trust is the foundation of relationships. Friends, lovers, colleagues, family... trust must be the basis of all relationships.",
+      "line4": "Can people believe and rely on you? Do you think of yourself as a trustworthy person?",
+      "line5": "Just 3 minutes to know your trust index!",
+      "line6": ""
+    },
+    "result": {
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match", 
+      "carefulMatch": "Careful Match",
+      "difficultMatch": "Difficult Match"
+    },
+    "shareMessages": {
+      "default": "I am {type}! Trust test completed! How much do people trust me? What about you? Let's try together! 🤝✨",
+      "kakao": "I am {type}! Trust test completed! How much do people trust me? What about you? Let's try together! 🤝✨",
+      "wechat": "I am {type}! Trust test completed! How much do people trust me? What about you? Let's try together! 🤝✨",
+      "whatsapp": "I am {type}! Trust test completed! How much do people trust me? What about you? Let's try together! 🤝✨",
+      "telegram": "I am {type}! Trust test completed! How much do people trust me? What about you? Let's try together! 🤝✨",
+      "line": "I am {type}! Trust test completed! How much do people trust me? What about you? Let's try together! 🤝✨"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "ui": {
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "adsenseTitle": "AdSense Ad Area",
+      "similarTests": "Similar Other Tests",
+      "goodTypes": "Compatible Types",
+      "cautionTypes": "Caution Types",
+      "shareResult": "Share Result",
+      "reputation": "Reputation",
+      "advice": "Advice",
+      "none": "None"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"Leadership in-depth diagnosis! What is your unique leadership style?\"",
@@ -441,74 +489,6 @@
       "shareNotAvailable": "Sharing feature is not available.",
       "kakaoInitializing": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoShareError": "An error occurred while sharing on KakaoTalk."
-    }
-  },
-  "trustTest": {
-    "startMessage": {
-      "title": "\"How much can people trust and rely on you?\"",
-      "line1": "People who keep promises religiously, people who take secrets to the grave,",
-      "line2": "people with good intentions but who forget things, people who find responsibility burdensome because they're free-spirited.",
-      "line3": "What kind of person are you?",
-      "line4": "Get tips on becoming a more trustworthy person!",
-      "line5": "Takes only 3 minutes! Please answer honestly 😊"
-    },
-    "ui": {
-      "startTest": "Start Test",
-      "shareWithFriends": "Try with Friends",
-      "totalParticipants": "{count} people participated!",
-      "progress": "Progress",
-      "analyzing": "Analyzing results...",
-      "viewResults": "View Analysis Results",
-      "yourResult": "Your Result",
-      "trustScore": "Trust Score",
-      "pros": "Pros",
-      "cons": "Cons",
-      "advice": "Advice",
-      "bestMatch": "Best Match",
-      "goodMatch": "Good Match",
-      "cautionNeeded": "Caution Needed",
-      "difficultMatch": "Difficult Match",
-      "shareResult": "Share Result",
-      "retake": "Retake Test",
-      "otherTests": "View Other Tests",
-      "none": "None",
-      "testCompleted": "🎉 Test completed!",
-      "similarTests": "Similar Tests",
-      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
-      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
-    },
-    "result": {
-      "shareMessage": "My trustworthiness is {type}! 😊 How trustworthy are you? Let's compare our trustworthiness 💕",
-      "compatibility": {
-        "Type1_Type1": "Absolute mutual trust",
-        "Type1_Type2": "Perfect trust relationship",
-        "Type1_Type3": "Help with growth",
-        "Type1_Type6": "May feel suffocating",
-        "Type2_Type1": "Perfect trust relationship",
-        "Type2_Type2": "Comfortably rely on each other",
-        "Type2_Type3": "Grow with help",
-        "Type2_Type5": "Value differences",
-        "Type3_Type1": "High standards are difficult",
-        "Type3_Type2": "Grow with help",
-        "Type3_Type3": "Grow together",
-        "Type4_Type4": "No burden on each other",
-        "Type4_Type5": "Realistic relationship",
-        "Type4_Type1": "Value conflicts",
-        "Type5_Type2": "Trust conflicts",
-        "Type5_Type4": "No burden",
-        "Type5_Type5": "Understand each other",
-        "Type5_Type1": "Trust conflicts",
-        "Type6_Type1": "Trust conflicts",
-        "Type6_Type2": "Trust conflicts",
-        "Type6_Type4": "Burden-free relationship",
-        "Type6_Type6": "Understand each other"
-      }
-    },
-    "alerts": {
-      "linkCopied": "Link copied!",
-      "resultCopied": "Result copied to clipboard!",
-      "shareError": "Sharing feature is not available.",
-      "wechatInstructions": "WeChat link copied to clipboard. Paste it in WeChat!"
     }
   },
   "spouseTest": {

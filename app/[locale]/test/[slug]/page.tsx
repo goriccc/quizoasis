@@ -2090,7 +2090,7 @@ export default async function TestPage({ params }: Props) {
       questions: humorCodeQuestions,
       results: humorCodeResults
     };
-  } else if (slug === 'trustworthiness-level-test') {
+  } else if (slug === 'trustworthiness-test') {
     testData = {
       questions: trustQuestions,
       results: trustResults
@@ -2239,7 +2239,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'love-obstacles') TestClient = LoveObstaclesTestClient;
     else if (slug === 'jealousy-level-test') TestClient = JealousyTestClient;
     else if (slug === 'humor-code-test') TestClient = HumorCodeTestClient;
-    else if (slug === 'trustworthiness-level-test') TestClient = TrustTestClient;
+    else if (slug === 'trustworthiness-test') TestClient = TrustTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;
     else if (slug === 'my-dating-style') TestClient = DatingStyleTestClient;

@@ -11,761 +11,758 @@ export interface TrustResult {
   type: string;
   emoji: string;
   title: Record<string, string>;
-  description: Record<string, string>;
+  shortDescription: Record<string, string>;
+  longDescription: Record<string, string>;
   pros: Record<string, string>[];
   cons: Record<string, string>[];
   advice: Record<string, string>;
-  trustScore: string;
-  compatibility: {
-    best: string[];
-    good: string[];
-    careful: string[];
-    difficult?: string[];
-  };
+  reputation: Record<string, string>;
+  goodTypes: string[];
+  cautionTypes: string[];
 }
 
 export const trustQuestions: TrustQuestion[] = [
   {
     id: 1,
     question: {
-      ko: "친구와 약속을 잡았는데 더 좋은 약속이 생긴다면?",
-      en: "You have a date with a friend, but a better opportunity comes up. What do you do?",
-      ja: "友達と約束をしていたが、もっと良い約束が入ったら？",
-      'zh-CN': "你已经和朋友约好了，但有一个更好的约会，你会怎么做？",
-      'zh-TW': "你已經和朋友約好了，但有一個更好的約會，你會怎麼做？",
-      vi: "Bạn đã hẹn với bạn bè, nhưng có một cuộc hẹn tốt hơn. Bạn sẽ làm gì?",
-      id: "Anda sudah janji dengan teman, tapi ada janji yang lebih baik. Apa yang akan Anda lakukan?"
+      ko: "친구와 약속을 잡았는데 급한 일이 생겼습니다. 당신은?",
+      en: "You made plans with a friend but something urgent came up. What do you do?",
+      ja: "友達と約束をしたが急用ができました。あなたは？",
+      'zh-CN': "你和朋友约好了但有急事。你会怎么做？",
+      'zh-TW': "你和朋友約好了但有急事。你會怎麼做？",
+      id: "Anda membuat janji dengan teman tapi ada hal mendesak. Apa yang Anda lakukan?",
+      vi: "Bạn đã hẹn với bạn bè nhưng có việc gấp. Bạn sẽ làm gì?"
     },
     options: [
       {
         text: {
-          ko: "원래 약속을 절대 안 바꿈",
-          en: "Never change the original promise",
-          ja: "元の約束は絶対に変更しない",
-          'zh-CN': "绝不改变原定约会",
-          'zh-TW': "絕不改變原定約會",
-          vi: "Không bao giờ thay đổi lời hứa ban đầu",
-          id: "Tidak pernah mengubah janji asli"
+          ko: "약속을 지키고 나중에 일 처리",
+          en: "Keep the promise and handle work later",
+          ja: "約束を守って後で仕事を処理",
+          'zh-CN': "遵守约定，稍后处理工作",
+          'zh-TW': "遵守約定，稍後處理工作",
+          id: "Menepati janji dan menangani pekerjaan nanti",
+          vi: "Giữ lời hẹn và xử lý công việc sau"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "친구에게 양해를 구하고 조율",
-          en: "Ask for understanding and coordinate",
-          ja: "友達に理解を求めて調整する",
-          'zh-CN': "请求朋友理解并协调",
-          'zh-TW': "請求朋友理解並協調",
-          vi: "Xin bạn hiểu và điều phối",
-          id: "Meminta pengertian dan berkoordinasi"
+          ko: "친구에게 양해를 구하고 일정 조율",
+          en: "Ask friend for understanding and adjust schedule",
+          ja: "友達に理解を求めてスケジュール調整",
+          'zh-CN': "请求朋友理解并调整日程",
+          'zh-TW': "請求朋友理解並調整日程",
+          id: "Minta pengertian teman dan sesuaikan jadwal",
+          vi: "Xin bạn hiểu và điều chỉnh lịch trình"
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "친구가 괜찮다면 바꿀 수도",
-          en: "Might change if friend is okay with it",
-          ja: "友達が大丈夫なら変更するかもしれない",
-          'zh-CN': "如果朋友同意可能会改变",
-          'zh-TW': "如果朋友同意可能會改變",
-          vi: "Có thể thay đổi nếu bạn đồng ý",
-          id: "Mungkin berubah jika teman setuju"
+          ko: "급한 일 먼저 하고 친구에게 연락",
+          en: "Handle urgent work first and contact friend",
+          ja: "急用を先に処理して友達に連絡",
+          'zh-CN': "先处理急事再联系朋友",
+          'zh-TW': "先處理急事再聯繫朋友",
+          id: "Tangani pekerjaan mendesak dulu dan hubungi teman",
+          vi: "Xử lý việc gấp trước rồi liên lạc bạn"
         },
-        scores: { Type3: 3, Type4: 2 }
+        scores: { Type4: 8, Type3: 2 }
       },
       {
         text: {
-          ko: "솔직히 더 좋은 쪽으로 갈 것 같음",
-          en: "Honestly, would probably go with the better one",
-          ja: "正直、より良い方に行きそう",
-          'zh-CN': "老实说，可能会选择更好的",
-          'zh-TW': "老實說，可能會選擇更好的",
-          vi: "Thành thật mà nói, có lẽ sẽ chọn cái tốt hơn",
-          id: "Jujur, mungkin akan memilih yang lebih baik"
+          ko: "그냥 약속 취소하고 나중에 사과",
+          en: "Just cancel the promise and apologize later",
+          ja: "約束をキャンセルして後で謝る",
+          'zh-CN': "直接取消约定，稍后道歉",
+          'zh-TW': "直接取消約定，稍後道歉",
+          id: "Batalkan janji dan minta maaf nanti",
+          vi: "Hủy hẹn và xin lỗi sau"
         },
-        scores: { Type4: 8, Type6: 2 }
+        scores: { Type5: 8, Type6: 2 }
       }
     ]
   },
   {
     id: 2,
     question: {
-      ko: "친구가 중요한 비밀을 털어놨을 때?",
-      en: "When a friend tells you an important secret?",
-      ja: "友達が重要な秘密を打ち明けたとき？",
-      'zh-CN': "当朋友告诉你一个重要秘密时？",
-      'zh-TW': "當朋友告訴你一個重要秘密時？",
-      vi: "Khi bạn bè kể cho bạn một bí mật quan trọng?",
-      id: "Ketika teman menceritakan rahasia penting kepada Anda?"
+      ko: "친구가 고민을 털어놓으며 \"아무에게도 말하지 마\"라고 합니다. 당신은?",
+      en: "A friend confides in you and says \"don't tell anyone\". What do you do?",
+      ja: "友達が悩みを打ち明けて「誰にも言わないで」と言います。あなたは？",
+      'zh-CN': "朋友向你倾诉烦恼并说「不要告诉任何人」。你会怎么做？",
+      'zh-TW': "朋友向你傾訴煩惱並說「不要告訴任何人」。你會怎麼做？",
+      id: "Teman curhat dan berkata \"jangan bilang siapa-siapa\". Apa yang Anda lakukan?",
+      vi: "Bạn bè tâm sự và nói \"đừng nói với ai\". Bạn sẽ làm gì?"
     },
     options: [
       {
         text: {
-          ko: "무덤까지 가져감, 절대 말 안 함",
-          en: "Take it to the grave, never tell anyone",
-          ja: "墓場まで持っていく、絶対に言わない",
-          'zh-CN': "带到坟墓里，绝不告诉任何人",
-          'zh-TW': "帶到墳墓裡，絕不告訴任何人",
-          vi: "Mang theo đến mộ, không bao giờ nói với ai",
-          id: "Bawa ke kuburan, tidak pernah memberitahu siapa pun"
+          ko: "무슨 일이 있어도 절대 말 안 함",
+          en: "Never tell anyone no matter what",
+          ja: "何があっても絶対に言わない",
+          'zh-CN': "无论如何绝不告诉任何人",
+          'zh-TW': "無論如何絕不告訴任何人",
+          id: "Tidak akan bilang siapa-siapa apapun yang terjadi",
+          vi: "Không bao giờ nói với ai dù có chuyện gì"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "정말 필요한 경우가 아니면 안 함",
-          en: "Won't tell unless really necessary",
-          ja: "本当に必要な場合でなければ言わない",
-          'zh-CN': "除非真的需要否则不会说",
-          'zh-TW': "除非真的需要否則不會說",
-          vi: "Không nói trừ khi thực sự cần thiết",
-          id: "Tidak akan memberitahu kecuali benar-benar diperlukan"
+          ko: "원칙적으로 안 하지만 필요하면 조언 구함",
+          en: "Principally don't but seek advice if needed",
+          ja: "原則的には言わないが、必要ならアドバイスを求める",
+          'zh-CN': "原则上不说，但需要时会寻求建议",
+          'zh-TW': "原則上不說，但需要時會尋求建議",
+          id: "Prinsipnya tidak, tapi cari saran jika diperlukan",
+          vi: "Nguyên tắc là không, nhưng cần thì xin lời khuyên"
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "가까운 사람에게는 말할 수도",
-          en: "Might tell close people",
-          ja: "親しい人には話すかもしれない",
-          'zh-CN': "可能会告诉亲近的人",
-          'zh-TW': "可能會告訴親近的人",
-          vi: "Có thể nói với những người thân thiết",
-          id: "Mungkin memberitahu orang terdekat"
+          ko: "아주 친한 사람에게만 말함",
+          en: "Only tell very close people",
+          ja: "とても親しい人にだけ話す",
+          'zh-CN': "只告诉非常亲近的人",
+          'zh-TW': "只告訴非常親近的人",
+          id: "Hanya bilang ke orang yang sangat dekat",
+          vi: "Chỉ nói với người rất thân"
         },
-        scores: { Type3: 3 }
+        scores: { Type4: 8, Type3: 2 }
       },
       {
         text: {
-          ko: "재미있으면 몇 명에게 말할 수도",
-          en: "Might tell a few people if it's interesting",
-          ja: "面白ければ数人に話すかもしれない",
-          'zh-CN': "如果有趣可能会告诉几个人",
-          'zh-TW': "如果有趣可能會告訴幾個人",
-          vi: "Nếu thú vị có thể nói với vài người",
-          id: "Jika menarik mungkin akan memberitahu beberapa orang"
+          ko: "궁금해하면 말해줌",
+          en: "Tell if someone is curious",
+          ja: "気になったら話す",
+          'zh-CN': "好奇的话就告诉",
+          'zh-TW': "好奇的話就告訴",
+          id: "Bilang jika ada yang penasaran",
+          vi: "Tò mò thì nói"
         },
-        scores: { Type6: 8 }
+        scores: { Type5: 8, Type6: 2 }
       }
     ]
   },
   {
     id: 3,
     question: {
-      ko: "마감이 있는 일을 맡았을 때 당신은?",
-      en: "When you have a task with a deadline, you?",
-      ja: "締切がある仕事を任されたとき、あなたは？",
-      'zh-CN': "当你有一个有截止日期的任务时，你会？",
-      'zh-TW': "當你有一個有截止日期的任務時，你會？",
-      vi: "Khi bạn có một nhiệm vụ có thời hạn, bạn sẽ?",
-      id: "Ketika Anda memiliki tugas dengan tenggat waktu, Anda akan?"
+      ko: "팀 프로젝트에서 당신에게 주어진 역할은?",
+      en: "What is your role in a team project?",
+      ja: "チームプロジェクトであなたに与えられた役割は？",
+      'zh-CN': "在团队项目中你的角色是什么？",
+      'zh-TW': "在團隊項目中你的角色是什麼？",
+      id: "Apa peran Anda dalam proyek tim?",
+      vi: "Vai trò của bạn trong dự án nhóm là gì?"
     },
     options: [
       {
         text: {
-          ko: "여유있게 미리미리 처리",
-          en: "Handle it leisurely in advance",
-          ja: "余裕を持って事前に処理する",
-          'zh-CN': "提前悠闲地处理",
-          'zh-TW': "提前悠閒地處理",
-          vi: "Xử lý một cách thoải mái trước thời hạn",
-          id: "Menangani dengan santai di muka"
+          ko: "항상 완벽하게 끝냄",
+          en: "Always complete perfectly",
+          ja: "いつも完璧に終わらせる",
+          'zh-CN': "总是完美完成",
+          'zh-TW': "總是完美完成",
+          id: "Selalu menyelesaikan dengan sempurna",
+          vi: "Luôn hoàn thành hoàn hảo"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "기한 맞춰서 정확하게 완수",
-          en: "Complete it accurately by the deadline",
-          ja: "締切通りに正確に完了させる",
-          'zh-CN': "按时准确完成",
-          'zh-TW': "按時準確完成",
-          vi: "Hoàn thành chính xác đúng thời hạn",
-          id: "Menyelesaikan dengan akurat tepat waktu"
+          ko: "대체로 잘 해냄",
+          en: "Generally do well",
+          ja: "だいたいうまくやる",
+          'zh-CN': "大体做得很好",
+          'zh-TW': "大體做得很好",
+          id: "Umumnya melakukan dengan baik",
+          vi: "Nhìn chung làm tốt"
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "가끔 늦지만 결국엔 해냄",
-          en: "Sometimes late but eventually get it done",
-          ja: "時々遅れるが結局はやり遂げる",
-          'zh-CN': "有时会迟到但最终会完成",
-          'zh-TW': "有時會遲到但最終會完成",
-          vi: "Đôi khi trễ nhưng cuối cùng vẫn hoàn thành",
-          id: "Kadang terlambat tapi akhirnya selesai juga"
+          ko: "하긴 하는데 가끔 미룸",
+          en: "Do it but sometimes procrastinate",
+          ja: "やるけど時々先延ばしにする",
+          'zh-CN': "会做但有时拖延",
+          'zh-TW': "會做但有時拖延",
+          id: "Melakukan tapi kadang menunda",
+          vi: "Làm nhưng đôi khi trì hoãn"
         },
-        scores: { Type3: 3 }
+        scores: { Type3: 8, Type4: 2 }
       },
       {
         text: {
-          ko: "연장 요청하거나 깜빡할 때 있음",
-          en: "Sometimes ask for extension or forget",
-          ja: "時々延長を依頼したり忘れたりする",
-          'zh-CN': "有时会要求延期或忘记",
-          'zh-TW': "有時會要求延期或忘記",
-          vi: "Đôi khi xin gia hạn hoặc quên mất",
-          id: "Kadang minta perpanjangan atau lupa"
+          ko: "다른 사람이 도와줘야 함",
+          en: "Need others to help",
+          ja: "他の人が手伝う必要がある",
+          'zh-CN': "需要别人帮助",
+          'zh-TW': "需要別人幫助",
+          id: "Perlu bantuan orang lain",
+          vi: "Cần người khác giúp đỡ"
         },
-        scores: { Type4: 8, Type6: 2 }
+        scores: { Type6: 8, Type5: 2 }
       }
     ]
   },
   {
     id: 4,
     question: {
-      ko: "「나만 믿어!」라고 말한 적이 있다면?",
-      en: "Have you ever said \"Trust only me!\"?",
-      ja: "「僕だけを信じて！」と言ったことがありますか？",
-      'zh-CN': "你是否说过\"只相信我\"？",
-      'zh-TW': "你是否說過\"只相信我\"？",
-      vi: "Bạn có bao giờ nói \"Chỉ tin tôi!\" không?",
-      id: "Pernahkah Anda mengatakan \"Percayai hanya saya!\"?"
+      ko: "실수로 친구 물건을 망가뜨렸습니다. 당신은?",
+      en: "You accidentally broke a friend's item. What do you do?",
+      ja: "友達の物を壊してしまいました。あなたは？",
+      'zh-CN': "你不小心弄坏了朋友的物品。你会怎么做？",
+      'zh-TW': "你不小心弄壞了朋友的物品。你會怎麼做？",
+      id: "Tidak sengaja merusak barang teman. Apa yang Anda lakukan?",
+      vi: "Vô tình làm hỏng đồ của bạn. Bạn sẽ làm gì?"
     },
     options: [
       {
         text: {
-          ko: "말한 적 있고, 항상 지킴",
-          en: "Said it and always kept it",
-          ja: "言ったことがあり、いつも守った",
-          'zh-CN': "说过并且总是遵守",
-          'zh-TW': "說過並且總是遵守",
-          vi: "Đã nói và luôn giữ lời",
-          id: "Mengatakan dan selalu menepatinya"
+          ko: "즉시 말하고 변상",
+          en: "Tell immediately and compensate",
+          ja: "すぐに言って弁償する",
+          'zh-CN': "立即告知并赔偿",
+          'zh-TW': "立即告知並賠償",
+          id: "Bilang langsung dan ganti rugi",
+          vi: "Nói ngay và bồi thường"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "말하고 최대한 노력함",
-          en: "Said it and tried my best",
-          ja: "言って最善を尽くした",
-          'zh-CN': "说过并尽力做到",
-          'zh-TW': "說過並盡力做到",
-          vi: "Đã nói và cố gắng hết sức",
-          id: "Mengatakan dan berusaha sebaik mungkin"
+          ko: "솔직히 말하고 사과",
+          en: "Tell honestly and apologize",
+          ja: "正直に話して謝る",
+          'zh-CN': "诚实告知并道歉",
+          'zh-TW': "誠實告知並道歉",
+          id: "Jujur bilang dan minta maaf",
+          vi: "Thành thật nói và xin lỗi"
         },
-        scores: { Type2: 3, Type3: 2 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "말했는데 못 지킨 적 있음",
-          en: "Said it but sometimes couldn't keep it",
-          ja: "言ったが守れなかったことがある",
-          'zh-CN': "说过但有时没能遵守",
-          'zh-TW': "說過但有時沒能遵守",
-          vi: "Đã nói nhưng đôi khi không giữ được",
-          id: "Mengatakan tapi kadang tidak bisa menepatinya"
+          ko: "눈치 보다가 들키면 말함",
+          en: "Wait and see, tell if caught",
+          ja: "様子を見て、バレたら言う",
+          'zh-CN': "观察情况，被发现才说",
+          'zh-TW': "觀察情況，被發現才說",
+          id: "Tunggu dan lihat, bilang jika ketahuan",
+          vi: "Chờ xem, bị phát hiện thì nói"
         },
-        scores: { Type3: 3, Type6: 2 }
+        scores: { Type3: 2, Type4: 2 }
       },
       {
         text: {
-          ko: "그런 말 잘 안 함, 부담스러움",
-          en: "Don't say such things, it's burdensome",
-          ja: "そんなことは言わない、負担だから",
-          'zh-CN': "不说那样的话，太有负担",
-          'zh-TW': "不說那樣的話，太有負擔",
-          vi: "Không nói những điều như vậy, quá áp lực",
-          id: "Tidak mengatakan hal seperti itu, terlalu memberatkan"
+          ko: "모르는 척하거나 발뺌",
+          en: "Pretend not to know or make excuses",
+          ja: "知らないふりをするか言い訳する",
+          'zh-CN': "假装不知道或找借口",
+          'zh-TW': "假裝不知道或找藉口",
+          id: "Pura-pura tidak tahu atau cari alasan",
+          vi: "Giả vờ không biết hoặc tìm cớ"
         },
-        scores: { Type4: 3, Type5: 2 }
+        scores: { Type6: 8, Type5: 2 }
       }
     ]
   },
   {
     id: 5,
     question: {
-      ko: "돈을 빌려줬을 때 당신의 생각은?",
-      en: "When you lend money, what do you think?",
-      ja: "お金を貸したとき、あなたの考えは？",
-      'zh-CN': "当你借钱给别人时，你的想法是？",
-      'zh-TW': "當你借錢給別人時，你的想法是？",
-      vi: "Khi bạn cho ai đó mượn tiền, bạn nghĩ gì?",
-      id: "Ketika Anda meminjamkan uang, apa yang Anda pikirkan?"
+      ko: "약속 시간에 늦을 것 같으면?",
+      en: "If you're going to be late for an appointment?",
+      ja: "約束の時間に遅れそうになったら？",
+      'zh-CN': "如果约会要迟到了？",
+      'zh-TW': "如果約會要遲到了？",
+      id: "Jika akan terlambat untuk janji?",
+      vi: "Nếu sắp muộn hẹn?"
     },
     options: [
       {
         text: {
-          ko: "빌려준 날짜와 금액 정확히 기억",
-          en: "Remember the exact date and amount",
-          ja: "貸した日付と金額を正確に覚えている",
-          'zh-CN': "准确记住借出的日期和金额",
-          'zh-TW': "準確記住借出的日期和金額",
-          vi: "Nhớ chính xác ngày và số tiền đã cho mượn",
-          id: "Mengingat tanggal dan jumlah yang tepat"
+          ko: "미리 연락하고 사과",
+          en: "Contact in advance and apologize",
+          ja: "事前に連絡して謝る",
+          'zh-CN': "提前联系并道歉",
+          'zh-TW': "提前聯繫並道歉",
+          id: "Kontak sebelumnya dan minta maaf",
+          vi: "Liên lạc trước và xin lỗi"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "대략 기억하고 언젠가 받겠지",
-          en: "Remember roughly and will get it back someday",
-          ja: "大体覚えていて、いつか返してもらえるだろう",
-          'zh-CN': "大概记住，总有一天会还的",
-          'zh-TW': "大概記住，總有一天會還的",
-          vi: "Nhớ đại khái và sẽ nhận lại một ngày nào đó",
-          id: "Mengingat secara kasar dan akan mendapatkannya kembali suatu hari"
+          ko: "늦을 때쯤 연락",
+          en: "Contact when about to be late",
+          ja: "遅れそうな時に連絡",
+          'zh-CN': "快迟到时联系",
+          'zh-TW': "快遲到時聯繫",
+          id: "Kontak saat akan terlambat",
+          vi: "Liên lạc khi sắp muộn"
         },
         scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "안 받아도 그러려니 함",
-          en: "It's okay if I don't get it back",
-          ja: "返してもらえなくても仕方ないと思う",
-          'zh-CN': "不还也没关系",
-          'zh-TW': "不還也沒關係",
-          vi: "Không nhận lại cũng không sao",
-          id: "Tidak apa-apa jika tidak dikembalikan"
+          ko: "도착해서 사과",
+          en: "Apologize when arriving",
+          ja: "到着してから謝る",
+          'zh-CN': "到达后道歉",
+          'zh-TW': "到達後道歉",
+          id: "Minta maaf saat tiba",
+          vi: "Xin lỗi khi đến nơi"
         },
-        scores: { Type4: 3 }
+        scores: { Type3: 8, Type4: 2 }
       },
       {
         text: {
-          ko: "빌려준 것 자체를 잊어버림",
-          en: "Forget that I lent it in the first place",
-          ja: "貸したこと自体を忘れてしまう",
-          'zh-CN': "忘记借出这件事本身",
-          'zh-TW': "忘記借出這件事本身",
-          vi: "Quên mất việc đã cho mượn",
-          id: "Lupa bahwa saya sudah meminjamkannya"
+          ko: "늦는 걸 대수롭지 않게 생각",
+          en: "Don't think being late is a big deal",
+          ja: "遅れることを大したことだと思わない",
+          'zh-CN': "不把迟到当回事",
+          'zh-TW': "不把遲到當回事",
+          id: "Tidak menganggap terlambat sebagai masalah besar",
+          vi: "Không coi việc muộn là vấn đề lớn"
         },
-        scores: { Type6: 8 }
+        scores: { Type6: 8, Type5: 2 }
       }
     ]
   },
   {
     id: 6,
     question: {
-      ko: "작은 거짓말에 대한 당신의 생각은?",
-      en: "What do you think about small lies?",
-      ja: "小さな嘘について、あなたの考えは？",
-      'zh-CN': "你对小谎言的看法是？",
-      'zh-TW': "你對小謊言的看法是？",
-      vi: "Bạn nghĩ gì về những lời nói dối nhỏ?",
-      id: "Apa pendapat Anda tentang kebohongan kecil?"
+      ko: "누군가 당신에게 돈을 빌려달라고 하면?",
+      en: "If someone asks you to lend them money?",
+      ja: "誰かがあなたにお金を貸してほしいと言ったら？",
+      'zh-CN': "如果有人向你借钱？",
+      'zh-TW': "如果有人向你借錢？",
+      id: "Jika seseorang meminta Anda meminjamkan uang?",
+      vi: "Nếu ai đó xin bạn cho mượn tiền?"
     },
     options: [
       {
         text: {
-          ko: "작은 거짓말도 거짓말, 안 함",
-          en: "Small lies are still lies, I don't do them",
-          ja: "小さな嘘でも嘘、しない",
-          'zh-CN': "小谎言也是谎言，我不说",
-          'zh-TW': "小謊言也是謊言，我不說",
-          vi: "Lời nói dối nhỏ cũng là nói dối, tôi không làm",
-          id: "Kebohongan kecil tetap bohong, saya tidak melakukannya"
+          ko: "빌려주면 돌려받을 때까지 기억함",
+          en: "Remember until they pay back if I lend",
+          ja: "貸したら返してもらうまで覚えている",
+          'zh-CN': "借出后记住直到还钱",
+          'zh-TW': "借出後記住直到還錢",
+          id: "Ingat sampai mereka bayar kembali jika saya pinjamkan",
+          vi: "Nhớ cho đến khi họ trả lại nếu tôi cho mượn"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "상대를 위한 거짓말은 괜찮음",
-          en: "Lies for the other person's sake are okay",
-          ja: "相手のための嘘なら大丈夫",
-          'zh-CN': "为对方好的谎言是可以的",
-          'zh-TW': "為對方好的謊言是可以的",
-          vi: "Nói dối vì lợi ích của người khác thì không sao",
-          id: "Bohong untuk kebaikan orang lain tidak apa-apa"
+          ko: "빌려주고 돌려주면 받음",
+          en: "Lend and accept when they return",
+          ja: "貸して返されたら受け取る",
+          'zh-CN': "借出，还了就接受",
+          'zh-TW': "借出，還了就接受",
+          id: "Pinjamkan dan terima saat mereka kembalikan",
+          vi: "Cho mượn và nhận khi họ trả lại"
         },
         scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "상황에 따라 필요하면 함",
-          en: "Do it if necessary depending on the situation",
-          ja: "状況に応じて必要ならする",
-          'zh-CN': "根据情况必要时会说",
-          'zh-TW': "根據情況必要時會說",
-          vi: "Tùy tình huống, nếu cần thiết thì sẽ nói dối",
-          id: "Bergantung pada situasi, jika perlu akan berbohong"
+          ko: "빌려주고 그냥 있음",
+          en: "Lend and just leave it",
+          ja: "貸してそのままにしておく",
+          'zh-CN': "借出后就不管了",
+          'zh-TW': "借出後就不管了",
+          id: "Pinjamkan dan biarkan begitu saja",
+          vi: "Cho mượn và để vậy"
         },
-        scores: { Type3: 3, Type4: 2 }
+        scores: { Type3: 8, Type4: 2 }
       },
       {
         text: {
-          ko: "솔직히 자주 하는 편",
-          en: "Honestly, I do it quite often",
-          ja: "正直、よくする方",
-          'zh-CN': "老实说，经常这样做",
-          'zh-TW': "老實說，經常這樣做",
-          vi: "Thành thật mà nói, tôi thường xuyên làm vậy",
-          id: "Jujur, saya sering melakukannya"
+          ko: "거의 안 빌려줌",
+          en: "Almost never lend",
+          ja: "ほとんど貸さない",
+          'zh-CN': "几乎不借",
+          'zh-TW': "幾乎不借",
+          id: "Hampir tidak pernah meminjamkan",
+          vi: "Hầu như không cho mượn"
         },
-        scores: { Type5: 3, Type6: 2 }
+        scores: { Type6: 8, Type5: 2 }
       }
     ]
   },
   {
     id: 7,
     question: {
-      ko: "누군가 당신에게 부탁을 했을 때?",
-      en: "When someone asks you for a favor?",
-      ja: "誰かがあなたにお願いをしたとき？",
-      'zh-CN': "当有人请你帮忙时？",
-      'zh-TW': "當有人請你幫忙時？",
-      vi: "Khi ai đó nhờ bạn giúp đỡ?",
-      id: "Ketika seseorang meminta bantuan Anda?"
+      ko: "회사에서 중요한 업무를 맡겼습니다. 당신은?",
+      en: "You've been given important work at the company. What do you do?",
+      ja: "会社で重要な業務を任されました。あなたは？",
+      'zh-CN': "公司给你重要工作。你会怎么做？",
+      'zh-TW': "公司給你重要工作。你會怎麼做？",
+      id: "Anda diberi tugas penting di perusahaan. Apa yang Anda lakukan?",
+      vi: "Bạn được giao công việc quan trọng ở công ty. Bạn sẽ làm gì?"
     },
     options: [
       {
         text: {
-          ko: "할 수 있으면 꼭 들어줌",
-          en: "If I can do it, I definitely help",
-          ja: "できるなら必ず聞いてあげる",
-          'zh-CN': "如果能做到就一定会帮忙",
-          'zh-TW': "如果能做到就一定會幫忙",
-          vi: "Nếu có thể làm thì nhất định giúp",
-          id: "Jika bisa melakukan, pasti akan membantu"
+          ko: "마감 전에 여유있게 완성",
+          en: "Complete comfortably before deadline",
+          ja: "締切前に余裕を持って完成",
+          'zh-CN': "截止日期前轻松完成",
+          'zh-TW': "截止日期前輕鬆完成",
+          id: "Selesaikan dengan nyaman sebelum tenggat",
+          vi: "Hoàn thành thoải mái trước hạn"
         },
-        scores: { Type1: 3, Type2: 2 }
+        scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "가능한지 생각하고 결정",
-          en: "Think about whether it's possible and decide",
-          ja: "可能かどうか考えて決める",
-          'zh-CN': "考虑是否可能然后决定",
-          'zh-TW': "考慮是否可能然後決定",
-          vi: "Suy nghĩ xem có thể không rồi quyết định",
-          id: "Pikirkan apakah mungkin dan putuskan"
+          ko: "마감 맞춰서 제출",
+          en: "Submit right at deadline",
+          ja: "締切に合わせて提出",
+          'zh-CN': "正好在截止日期提交",
+          'zh-TW': "正好在截止日期提交",
+          id: "Kirim tepat pada tenggat waktu",
+          vi: "Nộp đúng hạn"
         },
-        scores: { Type2: 3, Type3: 2 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "일단 좋다고 하고 나중에 생각",
-          en: "Say yes first and think about it later",
-          ja: "とりあえずいいと言って後で考える",
-          'zh-CN': "先答应然后稍后考虑",
-          'zh-TW': "先答應然後稍後考慮",
-          vi: "Nói đồng ý trước rồi suy nghĩ sau",
-          id: "Bilang setuju dulu dan pikirkan nanti"
+          ko: "마감 조금 넘기지만 완성",
+          en: "Slightly past deadline but complete",
+          ja: "締切を少し過ぎるが完成",
+          'zh-CN': "稍微超过截止日期但完成",
+          'zh-TW': "稍微超過截止日期但完成",
+          id: "Sedikit lewat tenggat tapi selesai",
+          vi: "Hơi quá hạn nhưng hoàn thành"
         },
-        scores: { Type3: 3, Type4: 2 }
+        scores: { Type3: 8, Type4: 2 }
       },
       {
         text: {
-          ko: "부담돼서 거절하는 편",
-          en: "Usually refuse because it's burdensome",
-          ja: "負担だから断る方",
-          'zh-CN': "通常因为负担而拒绝",
-          'zh-TW': "通常因為負擔而拒絕",
-          vi: "Thường từ chối vì thấy áp lực",
-          id: "Biasanya menolak karena memberatkan"
+          ko: "자주 연장 요청하거나 미완성",
+          en: "Frequently request extensions or incomplete",
+          ja: "よく延長を依頼したり未完成",
+          'zh-CN': "经常请求延期或未完成",
+          'zh-TW': "經常請求延期或未完成",
+          id: "Sering minta perpanjangan atau tidak selesai",
+          vi: "Thường xin gia hạn hoặc chưa hoàn thành"
         },
-        scores: { Type5: 8 }
+        scores: { Type6: 8, Type5: 2 }
       }
     ]
   },
   {
     id: 8,
     question: {
-      ko: "단체 프로젝트에서 당신의 역할은?",
-      en: "What is your role in group projects?",
-      ja: "グループプロジェクトでのあなたの役割は？",
-      'zh-CN': "在团队项目中你的角色是？",
-      'zh-TW': "在團隊項目中你的角色是？",
-      vi: "Vai trò của bạn trong dự án nhóm là gì?",
-      id: "Apa peran Anda dalam proyek kelompok?"
+      ko: "친구가 \"내일 도와줄 수 있어?\"라고 물으면?",
+      en: "If a friend asks \"can you help me tomorrow?\"?",
+      ja: "友達が「明日手伝ってくれる？」と聞いたら？",
+      'zh-CN': "如果朋友问「明天能帮我吗？」？",
+      'zh-TW': "如果朋友問「明天能幫我嗎？」？",
+      id: "Jika teman bertanya \"besok bisa bantu?\"?",
+      vi: "Nếu bạn hỏi \"ngày mai có thể giúp tôi không?\"?"
     },
     options: [
       {
         text: {
-          ko: "리더나 책임자 역할",
-          en: "Leader or responsible person role",
-          ja: "リーダーや責任者役",
-          'zh-CN': "领导者或负责人角色",
-          'zh-TW': "領導者或負責人角色",
-          vi: "Vai trò lãnh đạo hoặc người chịu trách nhiệm",
-          id: "Peran pemimpin atau penanggung jawab"
+          ko: "가능하면 \"응\", 안 되면 \"안 돼\"",
+          en: "Say \"yes\" if possible, \"no\" if not",
+          ja: "可能なら「うん」、無理なら「ダメ」",
+          'zh-CN': "可能就说「好」，不行就说「不行」",
+          'zh-TW': "可能就說「好」，不行就說「不行」",
+          id: "Bilang \"ya\" jika bisa, \"tidak\" jika tidak",
+          vi: "Nói \"có\" nếu được, \"không\" nếu không"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "맡은 부분 확실히 처리",
-          en: "Handle my assigned part properly",
-          ja: "担当部分を確実に処理する",
-          'zh-CN': "确保处理分配给我的部分",
-          'zh-TW': "確保處理分配給我的部分",
-          vi: "Xử lý chắc chắn phần được giao",
-          id: "Menangani bagian yang ditugaskan dengan pasti"
+          ko: "일단 \"응\" 하고 나중에 조율",
+          en: "Say \"yes\" first and coordinate later",
+          ja: "とりあえず「うん」と言って後で調整",
+          'zh-CN': "先说「好」然后稍后协调",
+          'zh-TW': "先說「好」然後稍後協調",
+          id: "Bilang \"ya\" dulu dan koordinasi nanti",
+          vi: "Nói \"có\" trước rồi điều chỉnh sau"
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "도와달라고 하면 도움",
-          en: "Help when asked for help",
-          ja: "助けてと言われたら助ける",
-          'zh-CN': "被要求帮助时就帮忙",
-          'zh-TW': "被要求幫助時就幫忙",
-          vi: "Khi được yêu cầu giúp đỡ thì giúp",
-          id: "Membantu ketika diminta bantuan"
+          ko: "\"응\" 했는데 까먹거나 못 감",
+          en: "Say \"yes\" but forget or can't go",
+          ja: "「うん」と言ったが忘れたり行けない",
+          'zh-CN': "说「好」但忘记或去不了",
+          'zh-TW': "說「好」但忘記或去不了",
+          id: "Bilang \"ya\" tapi lupa atau tidak bisa",
+          vi: "Nói \"có\" nhưng quên hoặc không đi được"
         },
-        scores: { Type3: 3 }
+        scores: { Type3: 8, Type4: 2 }
       },
       {
         text: {
-          ko: "최소한만 하는 편",
-          en: "Usually do the minimum",
-          ja: "最小限しかしない方",
-          'zh-CN': "通常只做最少的工作",
-          'zh-TW': "通常只做最少的工作",
-          vi: "Thường chỉ làm tối thiểu",
-          id: "Biasanya hanya melakukan minimum"
+          ko: "자주 \"응\" 했다가 안 감",
+          en: "Often say \"yes\" but don't go",
+          ja: "よく「うん」と言うが行かない",
+          'zh-CN': "经常说「好」但不去",
+          'zh-TW': "經常說「好」但不去",
+          id: "Sering bilang \"ya\" tapi tidak pergi",
+          vi: "Thường nói \"có\" nhưng không đi"
         },
-        scores: { Type4: 8, Type5: 2 }
+        scores: { Type5: 8, Type6: 2 }
       }
     ]
   },
   {
     id: 9,
     question: {
-      ko: "약속 시간에 늦었을 때?",
-      en: "When you're late for an appointment?",
-      ja: "約束時間に遅れたとき？",
-      'zh-CN': "当你约会迟到时？",
-      'zh-TW': "當你約會遲到時？",
-      vi: "Khi bạn trễ hẹn?",
-      id: "Ketika Anda terlambat janji?"
+      ko: "거짓말에 대한 당신의 생각은?",
+      en: "What do you think about lying?",
+      ja: "嘘についてあなたの考えは？",
+      'zh-CN': "你对说谎的看法是？",
+      'zh-TW': "你對說謊的看法是？",
+      id: "Apa pendapat Anda tentang berbohong?",
+      vi: "Bạn nghĩ gì về việc nói dối?"
     },
     options: [
       {
         text: {
-          ko: "거의 늦지 않음, 미리 도착",
-          en: "Almost never late, arrive early",
-          ja: "ほとんど遅れない、早めに到着",
-          'zh-CN': "几乎从不迟到，提前到达",
-          'zh-TW': "幾乎從不遲到，提前到達",
-          vi: "Hầu như không bao giờ trễ, đến sớm",
-          id: "Hampir tidak pernah terlambat, datang lebih awal"
+          ko: "절대 안 함",
+          en: "Never do it",
+          ja: "絶対にしない",
+          'zh-CN': "绝对不做",
+          'zh-TW': "絕對不做",
+          id: "Tidak pernah melakukannya",
+          vi: "Không bao giờ làm"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "늦으면 미리 연락하고 사과",
-          en: "If late, contact in advance and apologize",
-          ja: "遅れそうなら事前に連絡して謝る",
-          'zh-CN': "如果迟到，提前联系并道歉",
-          'zh-TW': "如果遲到，提前聯繫並道歉",
-          vi: "Nếu trễ thì liên hệ trước và xin lỗi",
-          id: "Jika terlambat, hubungi terlebih dahulu dan minta maaf"
+          ko: "필요악으로 가끔 함",
+          en: "Sometimes do it as necessary evil",
+          ja: "必要悪として時々する",
+          'zh-CN': "作为必要之恶偶尔做",
+          'zh-TW': "作為必要之惡偶爾做",
+          id: "Kadang melakukannya sebagai kejahatan yang diperlukan",
+          vi: "Đôi khi làm như điều ác cần thiết"
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "가끔 늦지만 크게 늦진 않음",
-          en: "Sometimes late but not very late",
-          ja: "時々遅れるが大きく遅れない",
-          'zh-CN': "有时迟到但不会很晚",
-          'zh-TW': "有時遲到但不會很晚",
-          vi: "Đôi khi trễ nhưng không trễ quá nhiều",
-          id: "Kadang terlambat tapi tidak terlalu terlambat"
+          ko: "상황에 따라 자주 함",
+          en: "Do it frequently depending on situation",
+          ja: "状況によってよくする",
+          'zh-CN': "根据情况经常做",
+          'zh-TW': "根據情況經常做",
+          id: "Sering melakukannya tergantung situasi",
+          vi: "Thường làm tùy theo tình huống"
         },
-        scores: { Type3: 3 }
+        scores: { Type3: 8, Type4: 2 }
       },
       {
         text: {
-          ko: "자주 늦는 편, 시간 개념 약함",
-          en: "Often late, weak sense of time",
-          ja: "よく遅れる方、時間感覚が弱い",
-          'zh-CN': "经常迟到，时间观念不强",
-          'zh-TW': "經常遲到，時間觀念不強",
-          vi: "Thường xuyên trễ, ý thức thời gian yếu",
-          id: "Sering terlambat, kesadaran waktu lemah"
+          ko: "큰 문제 아니라고 생각",
+          en: "Don't think it's a big problem",
+          ja: "大した問題だと思わない",
+          'zh-CN': "不认为是大问题",
+          'zh-TW': "不認為是大問題",
+          id: "Tidak menganggapnya masalah besar",
+          vi: "Không coi là vấn đề lớn"
         },
-        scores: { Type6: 8 }
+        scores: { Type5: 8, Type6: 2 }
       }
     ]
   },
   {
     id: 10,
     question: {
-      ko: "친구가 힘들 때 당신은?",
-      en: "When your friend is having a hard time?",
-      ja: "友達が大変なとき、あなたは？",
-      'zh-CN': "当朋友遇到困难时？",
-      'zh-TW': "當朋友遇到困難時？",
-      vi: "Khi bạn bè gặp khó khăn?",
-      id: "Ketika teman mengalami kesulitan?"
+      ko: "다른 사람의 비밀을 알게 되었습니다. 당신은?",
+      en: "You found out someone else's secret. What do you do?",
+      ja: "他の人の秘密を知ってしまいました。あなたは？",
+      'zh-CN': "你知道了别人的秘密。你会怎么做？",
+      'zh-TW': "你知道了別人的秘密。你會怎麼做？",
+      id: "Anda mengetahui rahasia orang lain. Apa yang Anda lakukan?",
+      vi: "Bạn biết bí mật của người khác. Bạn sẽ làm gì?"
     },
     options: [
       {
         text: {
-          ko: "무슨 일이든 달려감",
-          en: "Run to help no matter what",
-          ja: "何があっても駆けつける",
-          'zh-CN': "不管什么事都会跑去帮忙",
-          'zh-TW': "不管什麼事都會跑去幫忙",
-          vi: "Dù có chuyện gì cũng chạy đến giúp",
-          id: "Lari membantu apapun yang terjadi"
+          ko: "무덤까지 가져감",
+          en: "Take it to the grave",
+          ja: "墓場まで持っていく",
+          'zh-CN': "带到坟墓",
+          'zh-TW': "帶到墳墓",
+          id: "Bawa ke kuburan",
+          vi: "Mang theo đến mộ"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "필요하면 언제든 도와줌",
-          en: "Help whenever needed",
-          ja: "必要ならいつでも助ける",
-          'zh-CN': "需要时随时帮忙",
-          'zh-TW': "需要時隨時幫忙",
-          vi: "Khi cần thì lúc nào cũng giúp",
-          id: "Membantu kapan saja jika diperlukan"
+          ko: "원칙적으로 지킴",
+          en: "Keep it in principle",
+          ja: "原則的に守る",
+          'zh-CN': "原则上保守",
+          'zh-TW': "原則上保守",
+          id: "Prinsipnya dijaga",
+          vi: "Nguyên tắc là giữ"
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "가능하면 도와주려고 노력",
-          en: "Try to help if possible",
-          ja: "可能なら助けようと努力する",
-          'zh-CN': "如果可能就努力帮助",
-          'zh-TW': "如果可能就努力幫助",
-          vi: "Cố gắng giúp nếu có thể",
-          id: "Berusaha membantu jika memungkinkan"
+          ko: "친한 사람에게는 말함",
+          en: "Tell close people",
+          ja: "親しい人には話す",
+          'zh-CN': "告诉亲近的人",
+          'zh-TW': "告訴親近的人",
+          id: "Bilang ke orang dekat",
+          vi: "Nói với người thân"
         },
-        scores: { Type3: 3 }
+        scores: { Type4: 8, Type3: 2 }
       },
       {
         text: {
-          ko: "위로는 하지만 실제 도움은 어려움",
-          en: "Comfort them but actual help is difficult",
-          ja: "慰めるが実際の助けは難しい",
-          'zh-CN': "安慰他们但实际帮助很困难",
-          'zh-TW': "安慰他們但實際幫助很困難",
-          vi: "An ủi nhưng giúp đỡ thực tế thì khó",
-          id: "Menghibur tapi bantuan nyata sulit"
+          ko: "재미있으면 말함",
+          en: "Tell if it's interesting",
+          ja: "面白ければ話す",
+          'zh-CN': "有趣就说",
+          'zh-TW': "有趣就說",
+          id: "Bilang jika menarik",
+          vi: "Thú vị thì nói"
         },
-        scores: { Type5: 8 }
+        scores: { Type5: 8, Type6: 2 }
       }
     ]
   },
   {
     id: 11,
     question: {
-      ko: "비밀번호나 개인정보를 맡긴다면?",
-      en: "If someone entrusts you with passwords or personal information?",
-      ja: "パスワードや個人情報を預けられたら？",
-      'zh-CN': "如果有人托付你密码或个人资料？",
-      'zh-TW': "如果有人託付你密碼或個人資料？",
-      vi: "Nếu ai đó giao cho bạn mật khẩu hoặc thông tin cá nhân?",
-      id: "Jika seseorang mempercayakan Anda dengan kata sandi atau informasi pribadi?"
+      ko: "당신이 한 말은?",
+      en: "What about the words you say?",
+      ja: "あなたが言った言葉は？",
+      'zh-CN': "你说的话呢？",
+      'zh-TW': "你說的話呢？",
+      id: "Bagaimana dengan kata-kata yang Anda ucapkan?",
+      vi: "Những lời bạn nói thì sao?"
     },
     options: [
       {
         text: {
-          ko: "절대 안전하게 지킴",
-          en: "Keep it absolutely safe",
-          ja: "絶対に安全に守る",
-          'zh-CN': "绝对安全地保管",
-          'zh-TW': "絕對安全地保管",
-          vi: "Giữ gìn tuyệt đối an toàn",
-          id: "Menjaga dengan sangat aman"
+          ko: "반드시 지킴",
+          en: "Always keep them",
+          ja: "必ず守る",
+          'zh-CN': "一定遵守",
+          'zh-TW': "一定遵守",
+          id: "Selalu menepatinya",
+          vi: "Luôn giữ lời"
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "조심해서 관리함",
-          en: "Manage it carefully",
-          ja: "注意深く管理する",
-          'zh-CN': "小心谨慎地管理",
-          'zh-TW': "小心謹慎地管理",
-          vi: "Quản lý một cách cẩn thận",
-          id: "Mengelolanya dengan hati-hati"
+          ko: "거의 지킴",
+          en: "Almost always keep them",
+          ja: "ほとんど守る",
+          'zh-CN': "几乎都遵守",
+          'zh-TW': "幾乎都遵守",
+          id: "Hampir selalu menepatinya",
+          vi: "Hầu như luôn giữ lời"
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "잊어버릴까봐 걱정됨",
-          en: "Worried I might forget it",
-          ja: "忘れちゃうかもしれないと心配",
-          'zh-CN': "担心可能会忘记",
-          'zh-TW': "擔心可能會忘記",
-          vi: "Lo lắng có thể quên mất",
-          id: "Khawatir mungkin akan lupa"
+          ko: "지키려 하지만 가끔 못 지킴",
+          en: "Try to keep but sometimes can't",
+          ja: "守ろうとするが時々守れない",
+          'zh-CN': "想遵守但有时做不到",
+          'zh-TW': "想遵守但有時做不到",
+          id: "Berusaha menepati tapi kadang tidak bisa",
+          vi: "Cố gắng giữ lời nhưng đôi khi không được"
         },
-        scores: { Type3: 3, Type6: 2 }
+        scores: { Type4: 8, Type3: 2 }
       },
       {
         text: {
-          ko: "그런 거 맡기지 말라고 함",
-          en: "Tell them not to entrust such things to me",
-          ja: "そんなものは預けないでと言う",
-          'zh-CN': "告诉他们不要托付给我",
-          'zh-TW': "告訴他們不要託付給我",
-          vi: "Nói họ đừng giao những thứ như vậy cho tôi",
-          id: "Bilang mereka jangan percayakan hal seperti itu kepada saya"
+          ko: "말만 하고 안 지킬 때 많음",
+          en: "Often just talk without keeping",
+          ja: "言うだけで守らないことが多い",
+          'zh-CN': "经常只是说说不遵守",
+          'zh-TW': "經常只是說說不遵守",
+          id: "Sering hanya bicara tanpa menepati",
+          vi: "Thường chỉ nói mà không giữ lời"
         },
-        scores: { Type4: 8, Type5: 2 }
+        scores: { Type5: 8, Type6: 2 }
       }
     ]
   },
   {
     id: 12,
     question: {
-      ko: "사람들이 당신을 어떻게 평가할까?",
-      en: "How would people evaluate you?",
-      ja: "人々はあなたをどう評価するでしょうか？",
-      'zh-CN': "人们会如何评价你？",
-      'zh-TW': "人們會如何評價你？",
-      vi: "Mọi người sẽ đánh giá bạn như thế nào?",
-      id: "Bagaimana orang-orang akan mengevaluasi Anda?"
+      ko: "누군가 당신을 소개할 때 하는 말은?",
+      en: "What do people say when introducing you?",
+      ja: "誰かがあなたを紹介する時、何と言う？",
+      'zh-CN': "别人介绍你时会说什么？",
+      'zh-TW': "別人介紹你時會說什麼？",
+      id: "Apa yang orang katakan saat memperkenalkan Anda?",
+      vi: "Người khác giới thiệu bạn sẽ nói gì?"
     },
     options: [
       {
         text: {
-          ko: "「쟤는 진짜 믿을 수 있어」",
-          en: "\"They are really trustworthy\"",
-          ja: "「あの人は本当に信頼できる」",
-          'zh-CN': "\"那个人真的很值得信任\"",
-          'zh-TW': "\"那個人真的很值得信任\"",
-          vi: "\"Người đó thực sự đáng tin cậy\"",
-          id: "\"Orang itu benar-benar dapat dipercaya\""
+          ko: "\"정말 믿을 수 있는 사람\"",
+          en: "\"Really trustworthy person\"",
+          ja: "「本当に信頼できる人」",
+          'zh-CN': "「真正值得信赖的人」",
+          'zh-TW': "「真正值得信賴的人」",
+          id: "\"Orang yang benar-benar bisa dipercaya\"",
+          vi: "\"Người thực sự đáng tin cậy\""
         },
         scores: { Type1: 3 }
       },
       {
         text: {
-          ko: "「착하고 믿음직해」",
-          en: "\"Kind and reliable\"",
-          ja: "「優しくて信頼できる」",
-          'zh-CN': "\"善良可靠\"",
-          'zh-TW': "\"善良可靠\"",
-          vi: "\"Tốt bụng và đáng tin cậy\"",
-          id: "\"Baik dan dapat dipercaya\""
+          ko: "\"괜찮은 사람\"",
+          en: "\"Good person\"",
+          ja: "「いい人」",
+          'zh-CN': "「好人」",
+          'zh-TW': "「好人」",
+          id: "\"Orang yang baik\"",
+          vi: "\"Người tốt\""
         },
-        scores: { Type2: 3, Type3: 1 }
+        scores: { Type2: 3 }
       },
       {
         text: {
-          ko: "「좋은 사람인데 가끔 불안해」",
-          en: "\"Good person but sometimes unreliable\"",
-          ja: "「良い人だけど時々不安」",
-          'zh-CN': "\"好人但有时不可靠\"",
-          'zh-TW': "\"好人但有時不可靠\"",
-          vi: "\"Người tốt nhưng đôi khi không đáng tin cậy\"",
-          id: "\"Orang baik tapi kadang tidak bisa diandalkan\""
+          ko: "\"그럭저럭 괜찮음\"",
+          en: "\"So-so okay\"",
+          ja: "「まあまあいい」",
+          'zh-CN': "「还算可以」",
+          'zh-TW': "「還算可以」",
+          id: "\"Lumayan baik\"",
+          vi: "\"Tạm được\""
         },
-        scores: { Type3: 3 }
+        scores: { Type3: 8, Type4: 2 }
       },
       {
         text: {
-          ko: "「자유로운 영혼이야」",
-          en: "\"Free spirit\"",
-          ja: "「自由な魂だ」",
-          'zh-CN': "\"自由的灵魂\"",
-          'zh-TW': "\"自由的靈魂\"",
-          vi: "\"Linh hồn tự do\"",
-          id: "\"Jiwa yang bebas\""
+          ko: "\"재미있지만...\" 뒤에 뭔가 붙음",
+          en: "\"Fun but...\" something follows",
+          ja: "「面白いけど...」何かが続く",
+          'zh-CN': "「有趣但是...」后面有东西",
+          'zh-TW': "「有趣但是...」後面有東西",
+          id: "\"Menyenangkan tapi...\" ada yang mengikuti",
+          vi: "\"Thú vị nhưng...\" có gì đó theo sau"
         },
-        scores: { Type4: 3, Type5: 2 }
+        scores: { Type5: 8, Type6: 2 }
       }
     ]
   }
@@ -774,34 +771,43 @@ export const trustQuestions: TrustQuestion[] = [
 export const trustResults: TrustResult[] = [
   {
     type: "Type1",
-    emoji: "🗿",
+    emoji: "🏆",
     title: {
-      ko: "바위같은 신뢰형",
-      en: "Rock-Solid Trust Type",
-      ja: "岩のような信頼型",
-      'zh-CN': "坚如磐石的信任型",
-      'zh-TW': "堅如磐石的信任型",
-      vi: "Kiểu tin cậy vững như đá",
-      id: "Tipe Kepercayaan Kokoh Seperti Batu"
+      ko: "절대 신뢰형",
+      en: "Absolute Trust Type",
+      ja: "絶対信頼型",
+      'zh-CN': "绝对信任型",
+      'zh-TW': "絕對信任型",
+      id: "Tipe Kepercayaan Mutlak",
+      vi: "Kiểu Tin Tưởng Tuyệt Đối"
     },
-    description: {
-      ko: "흔들림 없는 신뢰! 100% 믿을 수 있는 사람\n\n약속은 생명이고 비밀은 무덤까지 가져갑니다. 책임감이 강하고 일관성이 있어 사람들이 가장 의지하는 타입입니다. 한 번 믿으면 끝까지 믿을 수 있고, 배신하지 않습니다. 다만 너무 완벽해서 스스로에게 스트레스를 줄 수 있으니 가끔은 여유를 가져도 괜찮습니다.",
-      en: "Unshakeable trust! 100% reliable person\n\nPromises are life and secrets are taken to the grave. You have strong responsibility and consistency, making you the most dependable type that people rely on. Once you trust someone, you trust them to the end and never betray them. However, being too perfect can cause stress to yourself, so it's okay to take a break sometimes.",
-      ja: "揺るぎない信頼！100%信頼できる人\n\n約束は命であり、秘密は墓まで持参します。責任感が強く一貫性があり、人々が最も頼りにするタイプです。一度信じれば最後まで信じ、裏切りません。ただし、完璧すぎて自分にストレスを与える可能性があるので、時々余裕を持つことも大丈夫です。",
-      'zh-CN': "不可动摇的信任！100%可靠的人\n\n承诺就是生命，秘密带到坟墓。你责任心强，一致性好，是人们最依赖的类型。一旦信任就会信任到底，从不背叛。但过于完美可能会给自己带来压力，所以偶尔放松一下也没关系。",
-      'zh-TW': "不可動搖的信任！100%可靠的人\n\n承諾就是生命，秘密帶到墳墓。你責任心強，一致性好，是人們最依賴的類型。一旦信任就會信任到底，從不背叛。但過於完美可能會給自己帶來壓力，所以偶爾放鬆一下也沒關係。",
-      vi: "Niềm tin không lay chuyển! Người đáng tin cậy 100%\n\nLời hứa là mạng sống và bí mật được mang đến mồ. Bạn có trách nhiệm mạnh mẽ và tính nhất quán, là kiểu người đáng tin cậy nhất mà mọi người dựa vào. Một khi tin tưởng ai đó, bạn tin họ đến cùng và không bao giờ phản bội. Tuy nhiên, quá hoàn hảo có thể gây căng thẳng cho bản thân, nên thỉnh thoảng nghỉ ngơi cũng không sao.",
-      id: "Kepercayaan yang tak tergoyahkan! Orang yang 100% dapat dipercaya\n\nJanji adalah hidup dan rahasia dibawa ke kubur. Anda memiliki tanggung jawab yang kuat dan konsistensi, menjadikan Anda tipe yang paling dapat diandalkan yang diandalkan orang. Begitu mempercayai seseorang, Anda mempercayai mereka sampai akhir dan tidak pernah mengkhianati. Namun, terlalu sempurna dapat menyebabkan stres pada diri sendiri, jadi sesekali beristirahat juga tidak apa-apa."
+    shortDescription: {
+      ko: "100% 신뢰! 당신은 사람들의 든든한 바위입니다",
+      en: "100% Trust! You are people's solid rock",
+      ja: "100%信頼！あなたは人々の頼もしい岩です",
+      'zh-CN': "100%信任！你是人们坚实的依靠",
+      'zh-TW': "100%信任！你是人們堅實的依靠",
+      id: "100% Kepercayaan! Anda adalah batu karang yang kokoh bagi orang-orang",
+      vi: "100% Tin tưởng! Bạn là tảng đá vững chắc của mọi người"
+    },
+    longDescription: {
+      ko: "당신은 완벽하게 신뢰할 수 있는 사람입니다. 약속은 반드시 지키고, 비밀은 무덤까지 가져가며, 맡은 일은 책임지고 완수합니다. 거짓말을 하지 않고 정직하며, 누구나 당신을 믿고 의지합니다. 리더, 친구, 동료로서 최고의 평가를 받습니다.",
+      en: "You are a perfectly trustworthy person. You keep promises, take secrets to the grave, and take responsibility for completing assigned tasks. You don't lie and are honest, and everyone trusts and relies on you. You receive the highest evaluation as a leader, friend, and colleague.",
+      ja: "あなたは完璧に信頼できる人です。約束は必ず守り、秘密は墓場まで持っていき、任された仕事は責任を持って完遂します。嘘をつかず正直で、誰もがあなたを信頼し頼りにします。リーダー、友人、同僚として最高の評価を受けます。",
+      'zh-CN': "你是一个完全值得信赖的人。遵守承诺，保守秘密到坟墓，负责任地完成分配的任务。不说谎且诚实，每个人都信任和依赖你。作为领导者、朋友、同事，你获得最高评价。",
+      'zh-TW': "你是一個完全值得信賴的人。遵守承諾，保守秘密到墳墓，負責任地完成分配的任務。不說謊且誠實，每個人都信任和依賴你。作為領導者、朋友、同事，你獲得最高評價。",
+      id: "Anda adalah orang yang dapat dipercaya dengan sempurna. Anda menepati janji, membawa rahasia ke kuburan, dan bertanggung jawab menyelesaikan tugas yang diberikan. Anda tidak berbohong dan jujur, dan semua orang mempercayai dan mengandalkan Anda. Anda menerima evaluasi tertinggi sebagai pemimpin, teman, dan rekan kerja.",
+      vi: "Bạn là người hoàn toàn đáng tin cậy. Bạn giữ lời hứa, mang bí mật đến mộ, và có trách nhiệm hoàn thành nhiệm vụ được giao. Bạn không nói dối và trung thực, mọi người đều tin tưởng và dựa vào bạn. Bạn nhận được đánh giá cao nhất với tư cách là lãnh đạo, bạn bè và đồng nghiệp."
     },
     pros: [
       { 
-        ko: "신뢰도 100%",
-        en: "100% reliability",
-        ja: "信頼度100%",
-        'zh-CN': "100%可靠性",
-        'zh-TW': "100%可靠性",
-        vi: "Độ tin cậy 100%",
-        id: "Keandalan 100%"
+        ko: "완벽한 신뢰성",
+        en: "Perfect reliability",
+        ja: "完璧な信頼性",
+        'zh-CN': "完美的可靠性",
+        'zh-TW': "完美的可靠性",
+        id: "Keandalan sempurna",
+        vi: "Độ tin cậy hoàn hảo"
       },
       { 
         ko: "책임감",
@@ -809,8 +815,17 @@ export const trustResults: TrustResult[] = [
         ja: "責任感",
         'zh-CN': "责任感",
         'zh-TW': "責任感",
-        vi: "Tinh thần trách nhiệm",
-        id: "Tanggung jawab"
+        id: "Tanggung jawab",
+        vi: "Trách nhiệm"
+      },
+      {
+        ko: "정직함",
+        en: "Honesty",
+        ja: "正直さ",
+        'zh-CN': "诚实",
+        'zh-TW': "誠實",
+        id: "Kejujuran",
+        vi: "Trung thực"
       },
       { 
         ko: "일관성",
@@ -818,583 +833,586 @@ export const trustResults: TrustResult[] = [
         ja: "一貫性",
         'zh-CN': "一致性",
         'zh-TW': "一致性",
-        vi: "Tính nhất quán",
-        id: "Konsistensi"
-      },
-      { 
-        ko: "의지됨",
-        en: "Dependable",
-        ja: "頼れる",
-        'zh-CN': "可靠",
-        'zh-TW': "可靠",
-        vi: "Đáng tin cậy",
-        id: "Dapat diandalkan"
+        id: "Konsistensi",
+        vi: "Tính nhất quán"
       }
     ],
     cons: [
+      {
+        ko: "때로 부담감",
+        en: "Sometimes burden",
+        ja: "時々負担感",
+        'zh-CN': "有时负担",
+        'zh-TW': "有時負擔",
+        id: "Kadang beban",
+        vi: "Đôi khi gánh nặng"
+      },
       { 
         ko: "완벽주의 스트레스",
         en: "Perfectionist stress",
         ja: "完璧主義ストレス",
         'zh-CN': "完美主义压力",
         'zh-TW': "完美主義壓力",
-        vi: "Căng thẳng vì chủ nghĩa hoàn hảo",
-        id: "Stres perfeksionis"
-      },
-      { 
-        ko: "융통성 부족",
-        en: "Lack of flexibility",
-        ja: "柔軟性の欠如",
-        'zh-CN': "缺乏灵活性",
-        'zh-TW': "缺乏靈活性",
-        vi: "Thiếu tính linh hoạt",
-        id: "Kurang fleksibilitas"
+        id: "Stres perfeksionis",
+        vi: "Căng thẳng hoàn hảo"
       }
     ],
     advice: {
-      ko: "당신은 이미 충분히 믿음직해요. 가끔은 실수해도 괜찮다는 걸 기억하세요!",
-      en: "You are already reliable enough. Remember that it's okay to make mistakes sometimes!",
-      ja: "あなたはすでに十分信頼できます。時々ミスをしても大丈夫だということを覚えておいてください！",
-      'zh-CN': "你已经足够可靠了。记住偶尔犯错也没关系！",
-      'zh-TW': "你已經足夠可靠了。記住偶爾犯錯也沒關係！",
-      vi: "Bạn đã đủ đáng tin cậy rồi. Hãy nhớ rằng đôi khi mắc lỗi cũng không sao!",
-      id: "Anda sudah cukup dapat dipercaya. Ingat bahwa sesekali membuat kesalahan tidak apa-apa!"
+      ko: "완벽하지만 가끔은 자신에게도 관대하세요!",
+      en: "Perfect but sometimes be generous to yourself too!",
+      ja: "完璧ですが、時には自分にも寛大にしてください！",
+      'zh-CN': "完美但有时也要对自己宽容！",
+      'zh-TW': "完美但有時也要對自己寬容！",
+      id: "Sempurna tapi kadang-kadang juga murah hati pada diri sendiri!",
+      vi: "Hoàn hảo nhưng đôi khi cũng hãy khoan dung với chính mình!"
     },
-    trustScore: "★★★★★ (5/5)",
-    compatibility: {
-      best: ["Type1"],
-      good: ["Type2", "Type3"],
-      careful: ["Type6"]
-    }
+    reputation: {
+      ko: "\"저 사람 말이면 믿을 수 있어\"",
+      en: "\"You can trust what that person says\"",
+      ja: "\"あの人の言うことなら信じられる\"",
+      'zh-CN': "\"那个人的话可以相信\"",
+      'zh-TW': "\"那個人的話可以相信\"",
+      id: "\"Kata orang itu bisa dipercaya\"",
+      vi: "\"Lời người đó có thể tin được\""
+    },
+    goodTypes: ["Type1", "Type2"],
+    cautionTypes: ["Type6"]
   },
   {
     type: "Type2",
-    emoji: "🛡️",
+    emoji: "🌟",
     title: {
-      ko: "든든한 지킴이형",
-      en: "Reliable Guardian Type",
-      ja: "頼れる守護型",
-      'zh-CN': "可靠守护型",
-      'zh-TW': "可靠守護型",
-      vi: "Kiểu người bảo vệ đáng tin cậy",
-      id: "Tipe Penjaga yang Dapat Dipercaya"
+      ko: "높은 신뢰형",
+      en: "High Trust Type",
+      ja: "高い信頼型",
+      'zh-CN': "高信任型",
+      'zh-TW': "高信任型",
+      id: "Tipe Kepercayaan Tinggi",
+      vi: "Kiểu Tin Tưởng Cao"
     },
-    description: {
-      ko: "언제나 곁에 있는 사람! 의지되는 친구\n\n신뢰할 수 있고 책임감 있는 사람입니다. 약속을 잘 지키고 필요할 때 도와줍니다. 완벽하진 않아도 최선을 다하는 모습이 신뢰를 줍니다. 균형잡힌 신뢰도로 주변 사람들에게 든든한 존재입니다. 가장 현실적이고 이상적인 타입입니다.",
-      en: "Always by your side! A dependable friend\n\nYou are a trustworthy and responsible person. You keep promises well and help when needed. Although not perfect, your effort to do your best gives trust. You are a solid presence to people around you with balanced reliability. You are the most realistic and ideal type.",
-      ja: "いつもそばにいる人！頼れる友達\n\n信頼できて責任感のある人です。約束をよく守り、必要な時に助けてくれます。完璧ではありませんが、最善を尽くす姿が信頼を与えます。バランスの取れた信頼度で周りの人々にとって心強い存在です。最も現実的で理想的なタイプです。",
-      'zh-CN': "总是在身边的人！值得信赖的朋友\n\n你是值得信赖和有责任心的人。你很好地遵守承诺，在需要时提供帮助。虽然不完美，但你尽力而为的样子给人以信任。你以平衡的可靠性成为周围人的坚实存在。你是最现实和理想的类型。",
-      'zh-TW': "總是在身邊的人！值得信賴的朋友\n\n你是值得信賴和有責任心的人。你很好地遵守承諾，在需要時提供幫助。雖然不完美，但你盡力而為的樣子給人以信任。你以平衡的可靠性成為周圍人的堅實存在。你是最現實和理想的類型。",
-      vi: "Luôn ở bên cạnh! Người bạn đáng tin cậy\n\nBạn là người đáng tin cậy và có trách nhiệm. Bạn giữ lời hứa tốt và giúp đỡ khi cần thiết. Mặc dù không hoàn hảo, nhưng nỗ lực hết mình của bạn tạo ra niềm tin. Bạn là sự hiện diện vững chắc cho những người xung quanh với độ tin cậy cân bằng. Bạn là kiểu người thực tế và lý tưởng nhất.",
-      id: "Selalu ada di samping! Teman yang dapat diandalkan\n\nAnda adalah orang yang dapat dipercaya dan bertanggung jawab. Anda menepati janji dengan baik dan membantu saat dibutuhkan. Meskipun tidak sempurna, upaya terbaik Anda memberikan kepercayaan. Anda adalah kehadiran yang solid bagi orang-orang di sekitar Anda dengan keandalan yang seimbang. Anda adalah tipe yang paling realistis dan ideal."
+    shortDescription: {
+      ko: "90% 신뢰! 대부분 믿을 수 있는 사람",
+      en: "90% Trust! Mostly trustworthy person",
+      ja: "90%信頼！ほとんどの場合信頼できる人",
+      'zh-CN': "90%信任！大部分值得信赖的人",
+      'zh-TW': "90%信任！大部分值得信賴的人",
+      id: "90% Kepercayaan! Orang yang sebagian besar bisa dipercaya",
+      vi: "90% Tin tưởng! Người hầu hết đáng tin cậy"
+    },
+    longDescription: {
+      ko: "당신은 매우 믿음직한 사람입니다. 거의 모든 약속을 지키고 비밀을 잘 지킵니다. 책임감이 있고 정직한 편입니다. 가끔 작은 실수는 있지만 전반적으로 신뢰할 수 있습니다. 사람들이 당신을 믿고 중요한 일을 맡깁니다.",
+      en: "You are a very reliable person. You keep almost all promises and keep secrets well. You have a sense of responsibility and are honest. You occasionally make small mistakes, but overall you are trustworthy. People trust you and entrust you with important tasks.",
+      ja: "あなたは非常に信頼できる人です。ほぼすべての約束を守り、秘密をよく守ります。責任感があり、正直な方です。時々小さなミスはありますが、全体的に信頼できます。人々はあなたを信頼し、重要な仕事を任せます。",
+      'zh-CN': "你是一个非常可靠的人。你遵守几乎所有承诺并很好地保守秘密。你有责任感且诚实。偶尔会有小错误，但总体上值得信赖。人们信任你并委托你重要任务。",
+      'zh-TW': "你是一個非常可靠的人。你遵守幾乎所有承諾並很好地保守秘密。你有責任感且誠實。偶爾會有小錯誤，但總體上值得信賴。人們信任你並委託你重要任務。",
+      id: "Anda adalah orang yang sangat dapat diandalkan. Anda menepati hampir semua janji dan menjaga rahasia dengan baik. Anda memiliki rasa tanggung jawab dan jujur. Anda sesekali membuat kesalahan kecil, tetapi secara keseluruhan dapat dipercaya. Orang-orang mempercayai Anda dan mempercayakan tugas-tugas penting kepada Anda.",
+      vi: "Bạn là người rất đáng tin cậy. Bạn giữ hầu hết mọi lời hứa và giữ bí mật tốt. Bạn có trách nhiệm và trung thực. Thỉnh thoảng có những sai lầm nhỏ, nhưng nhìn chung đáng tin cậy. Mọi người tin tưởng bạn và giao phó những công việc quan trọng."
     },
     pros: [
-      { 
-        ko: "균형감",
-        en: "Balance",
-        ja: "バランス感覚",
-        'zh-CN': "平衡感",
-        'zh-TW': "平衡感",
-        vi: "Cảm giác cân bằng",
-        id: "Keseimbangan"
+      {
+        ko: "높은 신뢰성",
+        en: "High reliability",
+        ja: "高い信頼性",
+        'zh-CN': "高可靠性",
+        'zh-TW': "高可靠性",
+        id: "Keandalan tinggi",
+        vi: "Độ tin cậy cao"
       },
-      { 
-        ko: "현실적",
-        en: "Realistic",
-        ja: "現実的",
-        'zh-CN': "现实",
-        'zh-TW': "現實",
-        vi: "Thực tế",
-        id: "Realistis"
+      {
+        ko: "책임감",
+        en: "Responsibility",
+        ja: "責任感",
+        'zh-CN': "责任感",
+        'zh-TW': "責任感",
+        id: "Tanggung jawab",
+        vi: "Trách nhiệm"
       },
-      { 
-        ko: "노력",
-        en: "Effort",
-        ja: "努力",
-        'zh-CN': "努力",
-        'zh-TW': "努力",
-        vi: "Nỗ lực",
-        id: "Usaha"
-      },
-      { 
-        ko: "신뢰",
-        en: "Trust",
-        ja: "信頼",
-        'zh-CN': "信任",
-        'zh-TW': "信任",
-        vi: "Niềm tin",
-        id: "Kepercayaan"
+      {
+        ko: "정직함",
+        en: "Honesty",
+        ja: "正直さ",
+        'zh-CN': "诚实",
+        'zh-TW': "誠實",
+        id: "Kejujuran",
+        vi: "Trung thực"
       }
     ],
     cons: [
-      { 
-        ko: "가끔 부담감",
-        en: "Sometimes burdened",
-        ja: "時々負担感",
-        'zh-CN': "有时有负担感",
-        'zh-TW': "有時有負擔感",
-        vi: "Đôi khi cảm thấy áp lực",
-        id: "Kadang merasa terbebani"
+      {
+        ko: "가끔 작은 실수",
+        en: "Occasional small mistakes",
+        ja: "時々小さなミス",
+        'zh-CN': "偶尔小错误",
+        'zh-TW': "偶爾小錯誤",
+        id: "Kadang kesalahan kecil",
+        vi: "Thỉnh thoảng sai lầm nhỏ"
       },
-      { 
-        ko: "완벽하지 않음",
+      {
+        ko: "완벽하진 않음",
         en: "Not perfect",
         ja: "完璧ではない",
-        'zh-CN': "不完美",
-        'zh-TW': "不完美",
-        vi: "Không hoàn hảo",
-        id: "Tidak sempurna"
+        'zh-CN': "不够完美",
+        'zh-TW': "不夠完美",
+        id: "Tidak sempurna",
+        vi: "Không hoàn hảo"
       }
     ],
     advice: {
-      ko: "지금처럼만 하면 완벽해요. 무리하지 않으면서도 믿음직한 당신이 최고입니다!",
-      en: "You're perfect just as you are. You're the best - reliable without overexerting yourself!",
-      ja: "今のままで完璧です。無理せずに信頼できるあなたが最高です！",
-      'zh-CN': "保持现状就很完美。不勉强自己却值得信赖的你是最好的！",
-      'zh-TW': "保持現狀就很完美。專勉強自己卻值得信賴的你是最好的！",
-      vi: "Bạn hoàn hảo như bây giờ. Bạn là tốt nhất - đáng tin cậy mà không cần gắng sức!",
-      id: "Anda sempurna apa adanya. Anda yang terbaik - dapat dipercaya tanpa memaksakan diri!"
+      ko: "이미 훌륭합니다! 작은 부분만 보완하세요.",
+      en: "You're already great! Just improve the small parts.",
+      ja: "すでに素晴らしいです！小さな部分だけ補完してください。",
+      'zh-CN': "已经很棒了！只需要完善小部分。",
+      'zh-TW': "已經很棒了！只需要完善小部分。",
+      id: "Sudah hebat! Tinggal perbaiki bagian kecil saja.",
+      vi: "Đã tuyệt vời rồi! Chỉ cần hoàn thiện những phần nhỏ."
     },
-    trustScore: "★★★★☆ (4/5)",
-    compatibility: {
-      best: ["Type2"],
-      good: ["Type1", "Type3"],
-      careful: ["Type5"]
-    }
+    reputation: {
+      ko: "\"믿을 만한 사람\"",
+      en: "\"Trustworthy person\"",
+      ja: "\"信頼できる人\"",
+      'zh-CN': "\"值得信赖的人\"",
+      'zh-TW': "\"值得信賴的人\"",
+      id: "\"Orang yang bisa dipercaya\"",
+      vi: "\"Người đáng tin cậy\""
+    },
+    goodTypes: ["Type1", "Type2", "Type3"],
+    cautionTypes: ["Type5", "Type6"]
   },
   {
     type: "Type3",
-    emoji: "💪",
+    emoji: "✨",
     title: {
-      ko: "노력하는 책임형",
-      en: "Effortful Responsibility Type",
-      ja: "努力する責任型",
-      'zh-CN': "努力负责型",
-      'zh-TW': "努力負責型",
-      vi: "Kiểu trách nhiệm nỗ lực",
-      id: "Tipe Tanggung Jawab yang Berusaha"
+      ko: "안정적 신뢰형",
+      en: "Stable Trust Type",
+      ja: "安定信頼型",
+      'zh-CN': "稳定信任型",
+      'zh-TW': "穩定信任型",
+      id: "Tipe Kepercayaan Stabil",
+      vi: "Kiểu Tin Tưởng Ổn Định"
     },
-    description: {
-      ko: "의도는 좋아! 최선을 다하는 사람\n\n책임감 있으려고 노력하지만 가끔 실수합니다. 진심은 있지만 능력이 따라가지 않을 때가 있습니다. 약속을 지키려고 애쓰고, 비밀도 지키려 노력합니다. 성장하고 있는 단계로, 조금만 더 노력하면 완전히 믿음직한 사람이 될 수 있습니다.",
-      en: "Good intentions! Someone who does their best\n\nYou try to be responsible but sometimes make mistakes. You have sincerity but sometimes your abilities don't keep up. You work hard to keep promises and try to keep secrets. You're in a growing stage, and with a little more effort, you can become a completely trustworthy person.",
-      ja: "意図は良い！最善を尽くす人\n\n責任感を持とうと努力しますが、時々失敗します。真心はありますが、能力が追いつかない時があります。約束を守ろうと努力し、秘密も守ろうと努力します。成長段階にあり、もう少し努力すれば完全に信頼できる人になることができます。",
-      'zh-CN': "意图很好！尽力而为的人\n\n你努力承担责任，但有时会犯错误。你有诚意，但有时能力跟不上。你努力遵守承诺，努力保守秘密。你处于成长阶段，只要再努力一点，就能成为完全值得信赖的人。",
-      'zh-TW': "意圖很好！盡力而為的人\n\n你努力承擔責任，但有時會犯錯誤。你有誠意，但有時能力跟不上。你努力遵守承諾，努力保守秘密。你處於成長階段，只要再努力一點，就能成為完全值得信賴的人。",
-      vi: "Ý định tốt! Người luôn cố gắng hết sức\n\nBạn cố gắng có trách nhiệm nhưng đôi khi mắc lỗi. Bạn có sự chân thành nhưng đôi khi khả năng không theo kịp. Bạn nỗ lực giữ lời hứa và cố gắng giữ bí mật. Bạn đang trong giai đoạn phát triển, chỉ cần nỗ lực thêm một chút nữa, bạn có thể trở thành một người hoàn toàn đáng tin cậy.",
-      id: "Niat baik! Seseorang yang berusaha sebaik mungkin\n\nAnda mencoba bertanggung jawab tetapi kadang-kadang membuat kesalahan. Anda memiliki ketulusan tetapi kadang-kadang kemampuan tidak mengikuti. Anda berusaha keras untuk menepati janji dan berusaha menjaga rahasia. Anda berada dalam tahap pertumbuhan, dan dengan sedikit usaha lagi, Anda dapat menjadi orang yang sepenuhnya dapat dipercaya."
+    shortDescription: {
+      ko: "75% 신뢰! 평균 이상으로 믿을 수 있는 사람",
+      en: "75% Trust! Above average trustworthy person",
+      ja: "75%信頼！平均以上に信頼できる人",
+      'zh-CN': "75%信任！高于平均水平的值得信赖的人",
+      'zh-TW': "75%信任！高於平均水平的值得信賴的人",
+      id: "75% Kepercayaan! Orang yang bisa dipercaya di atas rata-rata",
+      vi: "75% Tin tưởng! Người đáng tin cậy trên mức trung bình"
+    },
+    longDescription: {
+      ko: "당신은 대체로 믿을 수 있는 사람입니다. 중요한 약속은 지키고 큰 비밀은 지킵니다. 책임감이 있지만 가끔 실수합니다. 정직한 편이지만 작은 거짓말은 할 수 있습니다. 일상적인 관계에서 충분히 신뢰받을 수 있는 수준입니다.",
+      en: "You are generally a trustworthy person. You keep important promises and keep big secrets. You have a sense of responsibility but occasionally make mistakes. You are honest but can tell small lies. You are trustworthy enough in everyday relationships.",
+      ja: "あなたは概して信頼できる人です。重要な約束は守り、大きな秘密は守ります。責任感はありますが、時々ミスをします。正直な方ですが、小さな嘘はつくことがあります。日常的な関係では十分に信頼されるレベルです。",
+      'zh-CN': "你总体上是一个值得信赖的人。你遵守重要承诺并保守重大秘密。你有责任感但偶尔会犯错。你诚实但可能会说小谎。在日常关系中足以获得信任。",
+      'zh-TW': "你總體上是一個值得信賴的人。你遵守重要承諾並保守重大秘密。你有責任感但偶爾會犯錯。你誠實但可能會說小謊。在日常關係中足以獲得信任。",
+      id: "Anda secara umum adalah orang yang bisa dipercaya. Anda menepati janji penting dan menjaga rahasia besar. Anda memiliki rasa tanggung jawab tetapi sesekali membuat kesalahan. Anda jujur tetapi bisa berbohong kecil. Anda cukup dapat dipercaya dalam hubungan sehari-hari.",
+      vi: "Bạn nhìn chung là người đáng tin cậy. Bạn giữ những lời hứa quan trọng và giữ bí mật lớn. Bạn có trách nhiệm nhưng thỉnh thoảng mắc lỗi. Bạn trung thực nhưng có thể nói dối nhỏ. Bạn đủ đáng tin cậy trong các mối quan hệ hàng ngày."
     },
     pros: [
-      { 
-        ko: "진심",
-        en: "Sincerity",
-        ja: "真心",
-        'zh-CN': "真诚",
-        'zh-TW': "真誠",
-        vi: "Chân thành",
-        id: "Ketulusan"
+      {
+        ko: "안정적",
+        en: "Stable",
+        ja: "安定",
+        'zh-CN': "稳定",
+        'zh-TW': "穩定",
+        id: "Stabil",
+        vi: "Ổn định"
       },
-      { 
-        ko: "노력",
-        en: "Effort",
-        ja: "努力",
-        'zh-CN': "努力",
-        'zh-TW': "努力",
-        vi: "Nỗ lực",
-        id: "Usaha"
+      {
+        ko: "대체로 믿을 만함",
+        en: "Generally trustworthy",
+        ja: "概して信頼できる",
+        'zh-CN': "大体值得信赖",
+        'zh-TW': "大體值得信賴",
+        id: "Secara umum bisa dipercaya",
+        vi: "Nhìn chung đáng tin cậy"
       },
-      { 
-        ko: "성장",
-        en: "Growth",
-        ja: "成長",
-        'zh-CN': "成长",
-        'zh-TW': "成長",
-        vi: "Phát triển",
-        id: "Pertumbuhan"
-      },
-      { 
-        ko: "착함",
-        en: "Kindness",
-        ja: "優しさ",
-        'zh-CN': "善良",
-        'zh-TW': "善良",
-        vi: "Tốt bụng",
-        id: "Kebaikan"
+      {
+        ko: "양심적",
+        en: "Conscientious",
+        ja: "良心的",
+        'zh-CN': "有良心的",
+        'zh-TW': "有良心的",
+        id: "Berhati nurani",
+        vi: "Có lương tâm"
       }
     ],
     cons: [
-      { 
-        ko: "실수 많음",
-        en: "Many mistakes",
-        ja: "ミスが多い",
-        'zh-CN': "错误很多",
-        'zh-TW': "錯誤很多",
-        vi: "Nhiều lỗi lầm",
-        id: "Banyak kesalahan"
+      {
+        ko: "가끔 약속 못 지킴",
+        en: "Sometimes can't keep promises",
+        ja: "時々約束を守れない",
+        'zh-CN': "有时不能遵守承诺",
+        'zh-TW': "有時不能遵守承諾",
+        id: "Kadang tidak bisa menepati janji",
+        vi: "Thỉnh thoảng không giữ được lời hứa"
       },
-      { 
-        ko: "능력 부족",
-        en: "Lack of ability",
-        ja: "能力不足",
-        'zh-CN': "能力不足",
-        'zh-TW': "能力不足",
-        vi: "Thiếu năng lực",
-        id: "Kurang kemampuan"
-      },
-      { 
-        ko: "불안정",
-        en: "Unstable",
-        ja: "不安定",
-        'zh-CN': "不稳定",
-        'zh-TW': "不穩定",
-        vi: "Không ổn định",
-        id: "Tidak stabil"
+      {
+        ko: "작은 거짓말",
+        en: "Small lies",
+        ja: "小さな嘘",
+        'zh-CN': "小谎言",
+        'zh-TW': "小謊言",
+        id: "Kebohongan kecil",
+        vi: "Những lời nói dối nhỏ"
       }
     ],
     advice: {
-      ko: "의도는 좋아요! 실천력을 키우고 메모 습관을 들이면 더 믿음직해질 거예요.",
-      en: "Your intentions are good! You'll become more reliable by improving your execution skills and developing memo habits.",
-      ja: "意図は良いです！実行力を高めてメモの習慣を身につければ、より信頼できるようになります。",
-      'zh-CN': "你的意图很好！通过提高执行力和养成记录习惯，你会变得更可靠。",
-      'zh-TW': "你的意圖很好！通過提高執行力和養成記錄習慣，你會變得更可靠。",
-      vi: "Ý định của bạn tốt! Bạn sẽ trở nên đáng tin cậy hơn bằng cách cải thiện kỹ năng thực hiện và phát triển thói quen ghi chú.",
-      id: "Niat Anda baik! Anda akan menjadi lebih dapat dipercaya dengan meningkatkan keterampilan eksekusi dan mengembangkan kebiasaan mencatat."
+      ko: "작은 약속도 지키는 습관을 들이세요!",
+      en: "Develop the habit of keeping small promises too!",
+      ja: "小さな約束も守る習慣をつけましょう！",
+      'zh-CN': "养成遵守小承诺的习惯！",
+      'zh-TW': "養成遵守小承諾的習慣！",
+      id: "Kembangkan kebiasaan menepati janji kecil juga!",
+      vi: "Hãy phát triển thói quen giữ cả những lời hứa nhỏ!"
     },
-    trustScore: "★★★☆☆ (3/5)",
-    compatibility: {
-      best: ["Type2"],
-      good: ["Type3"],
-      careful: ["Type1"]
-    }
+    reputation: {
+      ko: "\"나쁘지 않은 사람\"",
+      en: "\"Not a bad person\"",
+      ja: "\"悪くない人\"",
+      'zh-CN': "\"不是坏人\"",
+      'zh-TW': "\"不是壞人\"",
+      id: "\"Orang yang tidak buruk\"",
+      vi: "\"Người không tệ\""
+    },
+    goodTypes: ["Type2", "Type3", "Type4"],
+    cautionTypes: ["Type1"]
   },
   {
     type: "Type4",
-    emoji: "🦋",
+    emoji: "⚖️",
     title: {
-      ko: "자유로운 영혼형",
-      en: "Free Spirit Type",
-      ja: "自由な魂型",
-      'zh-CN': "自由灵魂型",
-      'zh-TW': "自由靈魂型",
-      vi: "Kiểu linh hồn tự do",
-      id: "Tipe Jiwa Bebas"
+      ko: "보통 신뢰형",
+      en: "Average Trust Type",
+      ja: "普通信頼型",
+      'zh-CN': "普通信任型",
+      'zh-TW': "普通信任型",
+      id: "Tipe Kepercayaan Rata-rata",
+      vi: "Kiểu Tin Tưởng Bình Thường"
     },
-    description: {
-      ko: "구속 싫어! 가벼운 관계를 선호하는 자유인\n\n약속이나 책임이 부담스러운 타입입니다. 자유롭게 살고 싶어하고 얽매이는 걸 싫어합니다. 신뢰를 주기보단 편한 관계를 원합니다. 중요한 일을 맡기긴 어렵지만 가벼운 친구로는 좋습니다. 책임감을 조금만 키우면 관계가 더 깊어질 수 있습니다.",
-      en: "Hate restrictions! A free person who prefers light relationships\n\nYou find promises and responsibilities burdensome. You want to live freely and hate being tied down. You prefer comfortable relationships over building trust. While it's hard to entrust important matters to you, you're good as a light friend. If you develop just a little more responsibility, relationships can become deeper.",
-      ja: "束縛嫌い！軽い関係を好む自由人\n\n約束や責任が負担になるタイプです。自由に生きたいと思い、縛られることを嫌います。信頼を築くよりも楽な関係を求めます。重要なことを任せるのは難しいですが、軽い友人としては良いです。責任感を少し育てれば、関係はより深くなることができます。",
-      'zh-CN': "讨厌束缚！喜欢轻松关系的自由人\n\n你觉得承诺和责任是负担。你想自由地生活，讨厌被束缚。你更喜欢舒适的关系而不是建立信任。虽然很难把重要的事情托付给你，但作为轻松的朋友你是很好的。如果你能培养多一点责任感，关系就会变得更深。",
-      'zh-TW': "討厭束縛！喜歡輕鬆關係的自由人\n\n你覺得承諾和責任是負擔。你想自由地生活，討厭被束縛。你更喜歡舒適的關係而不是建立信任。雖然很難把重要的事情託付給你，但作為輕鬆的朋友你是很好的。如果你能培養多一點責任感，關係就會變得更深。",
-      vi: "Ghét ràng buộc! Người tự do thích những mối quan hệ nhẹ nhàng\n\nBạn cảm thấy lời hứa và trách nhiệm là gánh nặng. Bạn muốn sống tự do và ghét bị ràng buộc. Bạn thích những mối quan hệ thoải mái hơn là xây dựng niềm tin. Mặc dù khó có thể giao phó những việc quan trọng cho bạn, nhưng bạn là một người bạn nhẹ nhàng tốt. Nếu bạn phát triển thêm một chút trách nhiệm, các mối quan hệ có thể trở nên sâu sắc hơn.",
-      id: "Benci pembatasan! Orang bebas yang menyukai hubungan ringan\n\nAnda merasa janji dan tanggung jawab adalah beban. Anda ingin hidup bebas dan benci dibatasi. Anda lebih suka hubungan yang nyaman daripada membangun kepercayaan. Meskipun sulit mempercayakan hal-hal penting kepada Anda, Anda adalah teman yang baik untuk hubungan ringan. Jika Anda mengembangkan sedikit lebih banyak tanggung jawab, hubungan dapat menjadi lebih dalam."
+    shortDescription: {
+      ko: "50% 신뢰! 평균적인 수준",
+      en: "50% Trust! Average level",
+      ja: "50%信頼！平均的なレベル",
+      'zh-CN': "50%信任！平均水平",
+      'zh-TW': "50%信任！平均水平",
+      id: "50% Kepercayaan! Level rata-rata",
+      vi: "50% Tin tưởng! Mức trung bình"
+    },
+    longDescription: {
+      ko: "당신은 평균적인 신뢰도를 가지고 있습니다. 약속을 지키려 하지만 자주 못 지킵니다. 비밀을 지키려 하지만 가끔 말합니다. 책임감이 있지만 미루거나 회피할 때가 있습니다. 사람들이 당신을 완전히 믿기는 어렵습니다. 개선이 필요합니다.",
+      en: "You have an average level of trustworthiness. You try to keep promises but often fail. You try to keep secrets but sometimes tell them. You have a sense of responsibility but sometimes procrastinate or avoid. It's difficult for people to fully trust you. Improvement is needed.",
+      ja: "あなたは平均的な信頼度を持っています。約束を守ろうとしますが、しばしば守れません。秘密を守ろうとしますが、時々話してしまいます。責任感はありますが、先延ばししたり避けたりすることがあります。人々があなたを完全に信頼するのは困難です。改善が必要です。",
+      'zh-CN': "你拥有平均水平的可信度。你试图遵守承诺但经常失败。你试图保守秘密但有时会说出来。你有责任感但有时会拖延或回避。人们很难完全信任你。需要改进。",
+      'zh-TW': "你擁有平均水平的可信度。你試圖遵守承諾但經常失敗。你試圖保守秘密但有時會說出來。你有責任感但有時會拖延或迴避。人們很難完全信任你。需要改進。",
+      id: "Anda memiliki tingkat kepercayaan rata-rata. Anda berusaha menepati janji tetapi sering gagal. Anda berusaha menjaga rahasia tetapi kadang-kadang mengatakannya. Anda memiliki rasa tanggung jawab tetapi kadang-kadang menunda atau menghindar. Sulit bagi orang untuk sepenuhnya mempercayai Anda. Perbaikan diperlukan.",
+      vi: "Bạn có mức độ đáng tin cậy trung bình. Bạn cố gắng giữ lời hứa nhưng thường thất bại. Bạn cố gắng giữ bí mật nhưng đôi khi nói ra. Bạn có trách nhiệm nhưng đôi khi trì hoãn hoặc tránh né. Mọi người khó hoàn toàn tin tưởng bạn. Cần cải thiện."
     },
     pros: [
-      { 
-        ko: "자유로움",
-        en: "Freedom",
-        ja: "自由さ",
-        'zh-CN': "自由",
-        'zh-TW': "自由",
-        vi: "Tự do",
-        id: "Kebebasan"
+      {
+        ko: "노력은 함",
+        en: "Tries hard",
+        ja: "努力はする",
+        'zh-CN': "努力尝试",
+        'zh-TW': "努力嘗試",
+        id: "Berusaha keras",
+        vi: "Cố gắng"
       },
-      { 
-        ko: "부담 없음",
-        en: "No burden",
-        ja: "負担がない",
-        'zh-CN': "无负担",
-        'zh-TW': "無負擔",
-        vi: "Không có gánh nặng",
-        id: "Tidak ada beban"
-      },
-      { 
-        ko: "솔직함",
-        en: "Honesty",
-        ja: "正直さ",
-        'zh-CN': "诚实",
-        'zh-TW': "誠實",
-        vi: "Thành thật",
-        id: "Kejujuran"
+      {
+        ko: "악의는 없음",
+        en: "No malice",
+        ja: "悪意はない",
+        'zh-CN': "没有恶意",
+        'zh-TW': "沒有惡意",
+        id: "Tidak ada niat jahat",
+        vi: "Không có ác ý"
       }
     ],
     cons: [
-      { 
-        ko: "책임감 부족",
-        en: "Lack of responsibility",
-        ja: "責任感の欠如",
-        'zh-CN': "缺乏责任感",
-        'zh-TW': "缺乏責任感",
-        vi: "Thiếu trách nhiệm",
-        id: "Kurang tanggung jawab"
+      {
+        ko: "신뢰도 낮음",
+        en: "Low trustworthiness",
+        ja: "信頼度が低い",
+        'zh-CN': "可信度低",
+        'zh-TW': "可信度低",
+        id: "Kepercayaan rendah",
+        vi: "Độ tin cậy thấp"
       },
-      { 
-        ko: "신뢰 어려움",
-        en: "Difficulty trusting",
-        ja: "信頼の困難",
-        'zh-CN': "难以信任",
-        'zh-TW': "難以信任",
-        vi: "Khó tin tưởng",
-        id: "Sulit dipercaya"
+      {
+        ko: "자주 약속 못 지킴",
+        en: "Often can't keep promises",
+        ja: "よく約束を守れない",
+        'zh-CN': "经常不能遵守承诺",
+        'zh-TW': "經常不能遵守承諾",
+        id: "Sering tidak bisa menepati janji",
+        vi: "Thường không giữ được lời hứa"
       },
-      { 
-        ko: "의존 불가",
-        en: "Cannot depend on",
-        ja: "依存できない",
-        'zh-CN': "不可依赖",
-        'zh-TW': "不可依賴",
-        vi: "Không thể phụ thuộc",
-        id: "Tidak dapat diandalkan"
+      {
+        ko: "일관성 부족",
+        en: "Lack of consistency",
+        ja: "一貫性の不足",
+        'zh-CN': "缺乏一致性",
+        'zh-TW': "缺乏一致性",
+        id: "Kurang konsistensi",
+        vi: "Thiếu tính nhất quán"
       }
     ],
     advice: {
-      ko: "자유도 좋지만 작은 약속부터 지켜보세요. 신뢰는 관계를 더 깊게 만듭니다!",
-      en: "Freedom is good, but start by keeping small promises. Trust makes relationships deeper!",
-      ja: "自由も良いですが、小さな約束から守ってみてください。信頼は関係をより深くします！",
-      'zh-CN': "自由很好，但从小承诺开始遵守。信任让关系更深入！",
-      'zh-TW': "自由很好，但從小承諾開始遵守。信任讓關係更深入！",
-      vi: "Tự do cũng tốt, nhưng hãy bắt đầu bằng việc giữ những lời hứa nhỏ. Niềm tin làm cho mối quan hệ sâu sắc hơn!",
-      id: "Kebebasan itu baik, tapi mulailah dengan menepati janji kecil. Kepercayaan membuat hubungan lebih dalam!"
+      ko: "작은 약속부터 지키는 연습을 하세요!",
+      en: "Practice keeping small promises first!",
+      ja: "小さな約束から守る練習をしましょう！",
+      'zh-CN': "从遵守小承诺开始练习！",
+      'zh-TW': "從遵守小承諾開始練習！",
+      id: "Berlatih menepati janji kecil terlebih dahulu!",
+      vi: "Hãy luyện tập giữ những lời hứa nhỏ trước!"
     },
-    trustScore: "★★☆☆☆ (2/5)",
-    compatibility: {
-      best: ["Type4"],
-      good: ["Type5"],
-      careful: ["Type1"]
-    }
+    reputation: {
+      ko: "\"저 사람 말은 글쎄...\"",
+      en: "\"That person's words are questionable...\"",
+      ja: "\"あの人の言葉はどうかな...\"",
+      'zh-CN': "\"那个人的话值得怀疑...\"",
+      'zh-TW': "\"那個人的話值得懷疑...\"",
+      id: "\"Kata orang itu diragukan...\"",
+      vi: "\"Lời người đó đáng nghi...\""
+    },
+    goodTypes: ["Type4"],
+    cautionTypes: ["Type1", "Type2"]
   },
   {
     type: "Type5",
-    emoji: "😎",
+    emoji: "⚠️",
     title: {
-      ko: "솔직한 현실형",
-      en: "Honest Realist Type",
-      ja: "正直な現実型",
-      'zh-CN': "诚实现实型",
-      'zh-TW': "誠實現實型",
-      vi: "Kiểu thực tế thành thật",
-      id: "Tipe Realis yang Jujur"
+      ko: "불안정 신뢰형",
+      en: "Unstable Trust Type",
+      ja: "不安定信頼型",
+      'zh-CN': "不稳定信任型",
+      'zh-TW': "不穩定信任型",
+      id: "Tipe Kepercayaan Tidak Stabil",
+      vi: "Kiểu Tin Tưởng Không Ổn Định"
     },
-    description: {
-      ko: "있는 그대로! 기대는 적게, 실망도 적게\n\n거짓말하지 않고 자신의 한계를 솔직히 인정합니다. \"나 이런 사람이야\"라고 먼저 말해서 기대치를 조절합니다. 못 지킬 약속은 안 하고, 비밀 지킬 자신 없으면 받지 않습니다. 어떤 의미로는 가장 정직한 타입이지만, 깊은 신뢰 관계를 만들기는 어렵습니다.",
-      en: "As is! Low expectations, low disappointment\n\nYou don't lie and honestly acknowledge your limitations. You say \"This is who I am\" first to manage expectations. You don't make promises you can't keep, and you don't accept secrets you can't keep. In a way, you're the most honest type, but it's hard to build deep trust relationships.",
-      ja: "ありのまま！期待は少なく、失望も少なく\n\n嘘をつかず、自分の限界を正直に認めます。先に「私ってこういう人なの」と言って期待値を調整します。守れない約束はせず、守れない秘密は受けません。ある意味最も正直なタイプですが、深い信頼関係を築くのは難しいです。",
-      'zh-CN': "如其所是！期望低，失望也低\n\n不说谎，诚实地承认自己的局限。先说\"我就是这样的人\"来调节期望值。不承诺做不到的事，不接受守不住的秘密。某种意义上是最诚实的类型，但很难建立深度的信任关系。",
-      'zh-TW': "如其所是！期望低，失望也低\n\n不說謊，誠實地承認自己的局限。先說\"我就是這樣的人\"來調節期望值。不承諾做不到的事，不接受守不住的秘密。某種意義上是最誠實的類型，但很難建立深度的信任關係。",
-      vi: "Như vốn có! Kỳ vọng ít, thất vọng cũng ít\n\nBạn không nói dối và thành thật thừa nhận giới hạn của mình. Bạn nói \"Tôi là người như vậy\" trước để điều chỉnh kỳ vọng. Bạn không hứa những gì không thể giữ và không nhận những bí mật không thể giữ. Theo cách nào đó, bạn là kiểu người thành thật nhất, nhưng khó xây dựng mối quan hệ tin cậy sâu sắc.",
-      id: "Apa adanya! Ekspektasi rendah, kekecewaan juga rendah\n\nAnda tidak berbohong dan dengan jujur mengakui keterbatasan Anda. Anda mengatakan \"Saya seperti ini\" terlebih dahulu untuk mengatur ekspektasi. Anda tidak membuat janji yang tidak bisa ditepati, dan tidak menerima rahasia yang tidak bisa dijaga. Dalam arti tertentu, Anda adalah tipe yang paling jujur, tetapi sulit membangun hubungan kepercayaan yang mendalam."
+    shortDescription: {
+      ko: "30% 신뢰! 믿기 어려운 수준",
+      en: "30% Trust! Difficult to trust level",
+      ja: "30%信頼！信頼しにくいレベル",
+      'zh-CN': "30%信任！难以信任的水平",
+      'zh-TW': "30%信任！難以信任的水平",
+      id: "30% Kepercayaan! Level sulit dipercaya",
+      vi: "30% Tin tưởng! Mức khó tin tưởng"
+    },
+    longDescription: {
+      ko: "당신은 신뢰도가 낮습니다. 약속을 자주 못 지키고 비밀을 잘 못 지킵니다. 책임감이 부족하고 거짓말을 자주 합니다. 사람들이 당신을 믿기 어려워하고 중요한 일을 맡기지 않습니다. 관계에서 문제가 생길 수 있습니다. 변화가 필요합니다.",
+      en: "You have low trustworthiness. You often fail to keep promises and don't keep secrets well. You lack responsibility and lie frequently. People find it difficult to trust you and don't entrust you with important tasks. Problems may arise in relationships. Change is needed.",
+      ja: "あなたは信頼度が低いです。約束を守れず、秘密を守れません。責任感が不足し、嘘を頻繁につきます。人々はあなたを信頼するのが困難で、重要な仕事を任せません。関係で問題が生じる可能性があります。変化が必要です。",
+      'zh-CN': "你的可信度很低。你经常不能遵守承诺，不能很好地保守秘密。你缺乏责任感，经常说谎。人们很难信任你，不会委托你重要任务。关系中可能出现问题。需要改变。",
+      'zh-TW': "你的可信度很低。你經常不能遵守承諾，不能很好地保守秘密。你缺乏責任感，經常說謊。人們很難信任你，不會委託你重要任務。關係中可能出現問題。需要改變。",
+      id: "Anda memiliki kepercayaan rendah. Anda sering gagal menepati janji dan tidak menjaga rahasia dengan baik. Anda kurang bertanggung jawab dan sering berbohong. Orang sulit mempercayai Anda dan tidak mempercayakan tugas penting kepada Anda. Masalah mungkin timbul dalam hubungan. Perubahan diperlukan.",
+      vi: "Bạn có độ tin cậy thấp. Bạn thường không giữ được lời hứa và không giữ bí mật tốt. Bạn thiếu trách nhiệm và thường nói dối. Mọi người khó tin tưởng bạn và không giao phó những công việc quan trọng. Có thể nảy sinh vấn đề trong mối quan hệ. Cần thay đổi."
     },
     pros: [
-      { 
-        ko: "솔직함",
-        en: "Honesty",
-        ja: "正直さ",
-        'zh-CN': "诚实",
-        'zh-TW': "誠實",
-        vi: "Thành thật",
-        id: "Kejujuran"
-      },
-      { 
-        ko: "현실적",
-        en: "Realistic",
-        ja: "現実的",
-        'zh-CN': "现实",
-        'zh-TW': "現實",
-        vi: "Thực tế",
-        id: "Realistis"
-      },
-      { 
-        ko: "정직",
-        en: "Integrity",
-        ja: "誠実",
-        'zh-CN': "正直",
-        'zh-TW': "正直",
-        vi: "Chính trực",
-        id: "Integritas"
-      },
-      { 
-        ko: "기대 조절",
-        en: "Expectation control",
-        ja: "期待値調整",
-        'zh-CN': "期望控制",
-        'zh-TW': "期望控制",
-        vi: "Kiểm soát kỳ vọng",
-        id: "Kontrol ekspektasi"
+      {
+        ko: "(찾기 어려움)",
+        en: "(Hard to find)",
+        ja: "（見つけにくい）",
+        'zh-CN': "（难以找到）",
+        'zh-TW': "（難以找到）",
+        id: "(Sulit ditemukan)",
+        vi: "(Khó tìm thấy)"
       }
     ],
     cons: [
-      { 
-        ko: "노력 부족",
-        en: "Lack of effort",
-        ja: "努力不足",
-        'zh-CN': "努力不足",
-        'zh-TW': "努力不足",
-        vi: "Thiếu nỗ lực",
-        id: "Kurang usaha"
+      {
+        ko: "낮은 신뢰도",
+        en: "Low trustworthiness",
+        ja: "低い信頼度",
+        'zh-CN': "可信度低",
+        'zh-TW': "可信度低",
+        id: "Kepercayaan rendah",
+        vi: "Độ tin cậy thấp"
       },
-      { 
-        ko: "관계 얕음",
-        en: "Shallow relationships",
-        ja: "関係が浅い",
-        'zh-CN': "关系浅薄",
-        'zh-TW': "關係淺薄",
-        vi: "Mối quan hệ nông cạn",
-        id: "Hubungan dangkal"
+      {
+        ko: "약속 안 지킴",
+        en: "Don't keep promises",
+        ja: "約束を守らない",
+        'zh-CN': "不遵守承诺",
+        'zh-TW': "不遵守承諾",
+        id: "Tidak menepati janji",
+        vi: "Không giữ lời hứa"
       },
-      { 
-        ko: "책임 회피",
-        en: "Avoiding responsibility",
-        ja: "責任回避",
-        'zh-CN': "逃避责任",
-        'zh-TW': "逃避責任",
-        vi: "Tránh trách nhiệm",
-        id: "Menghindari tanggung jawab"
+      {
+        ko: "거짓말",
+        en: "Lies",
+        ja: "嘘",
+        'zh-CN': "谎言",
+        'zh-TW': "謊言",
+        id: "Kebohongan",
+        vi: "Nói dối"
+      },
+      {
+        ko: "무책임",
+        en: "Irresponsible",
+        ja: "無責任",
+        'zh-CN': "不负责任",
+        'zh-TW': "不負責任",
+        id: "Tidak bertanggung jawab",
+        vi: "Vô trách nhiệm"
       }
     ],
     advice: {
-      ko: "솔직한 건 좋지만 가끔은 도전해보세요. 의외로 해낼 수 있을지도 몰라요!",
-      en: "Being honest is good, but try challenging yourself sometimes. You might be able to do it unexpectedly!",
-      ja: "正直なのは良いですが、時々挑戦してみてください。意外とできるかもしれません！",
-      'zh-CN': "诚实很好，但有时要挑战自己。你可能会意外地成功！",
-      'zh-TW': "誠實很好，但有時要挑戰自己。你可能會意外地成功！",
-      vi: "Thành thật là tốt, nhưng thỉnh thoảng hãy thử thách bản thân. Bạn có thể làm được một cách bất ngờ!",
-      id: "Jujur itu baik, tapi sesekali cobalah tantang diri sendiri. Anda mungkin bisa melakukannya secara tak terduga!"
+      ko: "지금부터라도 변화하세요! 신뢰는 한 번에 쌓입니다.",
+      en: "Start changing now! Trust builds up over time.",
+      ja: "今からでも変化してください！信頼は一度に積み重なります。",
+      'zh-CN': "从现在开始改变！信任是逐渐积累的。",
+      'zh-TW': "從現在開始改變！信任是逐漸積累的。",
+      id: "Mulai berubah sekarang juga! Kepercayaan terbangun seiring waktu.",
+      vi: "Hãy bắt đầu thay đổi ngay bây giờ! Niềm tin được xây dựng theo thời gian."
     },
-    trustScore: "★★☆☆☆ (2/5)",
-    compatibility: {
-      best: ["Type5"],
-      good: ["Type4"],
-      careful: ["Type1", "Type2"]
-    }
+    reputation: {
+      ko: "\"저 사람은 믿으면 안 돼\"",
+      en: "\"You shouldn't trust that person\"",
+      ja: "\"あの人を信じてはいけない\"",
+      'zh-CN': "\"不应该信任那个人\"",
+      'zh-TW': "\"不應該信任那個人\"",
+      id: "\"Orang itu tidak boleh dipercaya\"",
+      vi: "\"Không nên tin tưởng người đó\""
+    },
+    goodTypes: ["Type5", "Type6"],
+    cautionTypes: ["Type1", "Type2", "Type3"]
   },
   {
     type: "Type6",
-    emoji: "🎭",
+    emoji: "❌",
     title: {
-      ko: "변화무쌍 불안형",
-      en: "Unpredictable Unstable Type",
-      ja: "変化無常不安型",
-      'zh-CN': "变化无常不稳定型",
-      'zh-TW': "變化無常不穩定型",
-      vi: "Kiểu bất ổn thất thường",
-      id: "Tipe Tidak Stabil yang Tidak Terduga"
+      ko: "신뢰 부족형",
+      en: "Trust Deficient Type",
+      ja: "信頼不足型",
+      'zh-CN': "信任缺乏型",
+      'zh-TW': "信任缺乏型",
+      id: "Tipe Kekurangan Kepercayaan",
+      vi: "Kiểu Thiếu Tin Tưởng"
     },
-    description: {
-      ko: "오늘의 나와 내일의 나는 다르다!\n\n일관성이 없고 예측하기 어려운 타입입니다. 기분이나 상황에 따라 행동이 달라지고, 약속도 잘 잊어버립니다. 나쁜 의도는 없지만 믿기 어렵습니다. 충동적이고 계획성이 없어 중요한 일을 맡기기 힘듭니다. 자기관리와 책임감을 키워야 관계가 개선됩니다.",
-      en: "Today's me and tomorrow's me are different!\n\nYou are an inconsistent and unpredictable type. Your behavior changes depending on your mood or situation, and you often forget promises. You don't have bad intentions, but you're hard to trust. You're impulsive and lack planning, making it difficult to entrust important matters to you. You need to develop self-management and responsibility to improve relationships.",
-      ja: "今日の私と明日の私は違う！\n\n一貫性がなく、予測しにくいタイプです。気分や状況によって行動が変わり、約束もよく忘れてしまいます。悪意はありませんが、信頼しにくいです。衝動的で計画性がなく、重要なことを任せるのは困難です。自己管理と責任感を育てることで関係が改善されます。",
-      'zh-CN': "今天的我和明天的我不一样！\n\n你是不一致和不可预测的类型。你的行为会根据心情或情况而变化，经常忘记承诺。你没有恶意，但很难信任。你冲动且缺乏计划性，很难把重要的事情托付给你。你需要培养自我管理和责任感来改善关系。",
-      'zh-TW': "今天的我和明天的我不一樣！\n\n你是不一致和不可預測的類型。你的行為會根據心情或情況而變化，經常忘記承諾。你沒有惡意，但很難信任。你衝動且缺乏計劃性，很難把重要的事情託付給你。你需要培養自我管理和責任感來改善關係。",
-      vi: "Tôi hôm nay và tôi ngày mai khác nhau!\n\nBạn là kiểu người không nhất quán và khó dự đoán. Hành vi của bạn thay đổi tùy theo tâm trạng hoặc tình huống, và bạn thường quên lời hứa. Bạn không có ý định xấu, nhưng khó tin tưởng. Bạn bốc đồng và thiếu kế hoạch, khiến việc giao phó những việc quan trọng cho bạn trở nên khó khăn. Bạn cần phát triển khả năng tự quản lý và trách nhiệm để cải thiện các mối quan hệ.",
-      id: "Saya hari ini dan saya besok berbeda!\n\nAnda adalah tipe yang tidak konsisten dan tidak dapat diprediksi. Perilaku Anda berubah tergantung pada suasana hati atau situasi, dan Anda sering melupakan janji. Anda tidak memiliki niat buruk, tetapi sulit dipercaya. Anda impulsif dan kurang perencanaan, sehingga sulit untuk mempercayakan hal-hal penting kepada Anda. Anda perlu mengembangkan manajemen diri dan tanggung jawab untuk meningkatkan hubungan."
+    shortDescription: {
+      ko: "10% 신뢰! 심각한 수준",
+      en: "10% Trust! Serious level",
+      ja: "10%信頼！深刻なレベル",
+      'zh-CN': "10%信任！严重水平",
+      'zh-TW': "10%信任！嚴重水平",
+      id: "10% Kepercayaan! Level serius",
+      vi: "10% Tin tưởng! Mức nghiêm trọng"
+    },
+    longDescription: {
+      ko: "당신은 거의 신뢰할 수 없는 사람입니다. 약속을 거의 안 지키고 비밀을 못 지킵니다. 책임감이 없고 거짓말을 습관적으로 합니다. 사람들이 당신을 피하고 관계가 오래 가지 못합니다. 이대로는 인생이 힘들어집니다. 즉시 변화가 필요합니다.",
+      en: "You are almost an untrustworthy person. You almost never keep promises and can't keep secrets. You have no sense of responsibility and habitually lie. People avoid you and relationships don't last long. If this continues, life will be difficult. Immediate change is needed.",
+      ja: "あなたはほとんど信頼できない人です。約束を守らず、秘密を守れません。責任感がなく、習慣的に嘘をつきます。人々はあなたを避け、関係は長続きしません。このままでは人生が困難になります。即座の変化が必要です。",
+      'zh-CN': "你几乎是一个不值得信赖的人。你几乎不遵守承诺，不能保守秘密。你没有责任感，习惯性地说谎。人们避开你，关系不会长久。如果这样下去，生活会很困难。需要立即改变。",
+      'zh-TW': "你幾乎是一個不值得信賴的人。你幾乎不遵守承諾，不能保守秘密。你沒有責任感，習慣性地說謊。人們避開你，關係不會長久。如果這樣下去，生活會很困難。需要立即改變。",
+      id: "Anda hampir tidak dapat dipercaya. Anda hampir tidak pernah menepati janji dan tidak bisa menjaga rahasia. Anda tidak memiliki rasa tanggung jawab dan secara kebiasaan berbohong. Orang-orang menghindari Anda dan hubungan tidak bertahan lama. Jika ini berlanjut, hidup akan sulit. Perubahan segera diperlukan.",
+      vi: "Bạn gần như là người không đáng tin cậy. Bạn hầu như không giữ lời hứa và không thể giữ bí mật. Bạn không có trách nhiệm và thường xuyên nói dối. Mọi người tránh bạn và các mối quan hệ không kéo dài. Nếu cứ như vậy, cuộc sống sẽ khó khăn. Cần thay đổi ngay lập tức."
     },
     pros: [
-      { 
-        ko: "솔직함",
-        en: "Honesty",
-        ja: "正直さ",
-        'zh-CN': "诚实",
-        'zh-TW': "誠實",
-        vi: "Thành thật",
-        id: "Kejujuran"
-      },
-      { 
-        ko: "자유로움",
-        en: "Freedom",
-        ja: "自由さ",
-        'zh-CN': "自由",
-        'zh-TW': "自由",
-        vi: "Tự do",
-        id: "Kebebasan"
-      },
-      { 
-        ko: "재미",
-        en: "Fun",
-        ja: "面白さ",
-        'zh-CN': "有趣",
-        'zh-TW': "有趣",
-        vi: "Thú vị",
-        id: "Menyenangkan"
+      {
+        ko: "없음 (변화가 필요한 상태)",
+        en: "None (state requiring change)",
+        ja: "なし（変化が必要な状態）",
+        'zh-CN': "无（需要改变的状态）",
+        'zh-TW': "無（需要改變的狀態）",
+        id: "Tidak ada (keadaan yang memerlukan perubahan)",
+        vi: "Không có (trạng thái cần thay đổi)"
       }
     ],
     cons: [
-      { 
-        ko: "신뢰 불가",
-        en: "Cannot be trusted",
-        ja: "信頼できない",
-        'zh-CN': "不可信任",
-        'zh-TW': "不可信任",
-        vi: "Không thể tin tưởng",
-        id: "Tidak dapat dipercaya"
+      {
+        ko: "신뢰 제로",
+        en: "Zero trust",
+        ja: "信頼ゼロ",
+        'zh-CN': "零信任",
+        'zh-TW': "零信任",
+        id: "Kepercayaan nol",
+        vi: "Tin tưởng bằng không"
       },
-      { 
-        ko: "일관성 없음",
-        en: "Inconsistent",
-        ja: "一貫性がない",
-        'zh-CN': "不一致",
-        'zh-TW': "不一致",
-        vi: "Không nhất quán",
-        id: "Tidak konsisten"
+      {
+        ko: "거짓말쟁이",
+        en: "Liar",
+        ja: "嘘つき",
+        'zh-CN': "骗子",
+        'zh-TW': "騙子",
+        id: "Pembohong",
+        vi: "Kẻ nói dối"
       },
-      { 
-        ko: "책임감 제로",
-        en: "Zero responsibility",
-        ja: "責任感ゼロ",
-        'zh-CN': "零责任感",
-        'zh-TW': "零責任感",
-        vi: "Trách nhiệm bằng không",
-        id: "Tanggung jawab nol"
+      {
+        ko: "무책임",
+        en: "Irresponsible",
+        ja: "無責任",
+        'zh-CN': "不负责任",
+        'zh-TW': "不負責任",
+        id: "Tidak bertanggung jawab",
+        vi: "Vô trách nhiệm"
+      },
+      {
+        ko: "관계 파괴",
+        en: "Relationship destroyer",
+        ja: "関係破壊",
+        'zh-CN': "关系破坏者",
+        'zh-TW': "關係破壞者",
+        id: "Perusak hubungan",
+        vi: "Kẻ phá hoại mối quan hệ"
       }
     ],
     advice: {
-      ko: "작은 것부터 시작해보세요. 약속 메모하고, 알람 맞추고, 한 가지씩 지켜보세요!",
-      en: "Start with small things. Make promise memos, set alarms, and keep one thing at a time!",
-      ja: "小さなことから始めてみてください。約束をメモして、アラームを設定して、一つずつ守ってみてください！",
-      'zh-CN': "从小事开始。记录承诺，设置闹钟，一次坚持一件事！",
-      'zh-TW': "從小事開始。記錄承諾，設置鬧鐘，一次堅持一件事！",
-      vi: "Hãy bắt đầu từ những việc nhỏ. Ghi chú lời hứa, đặt báo thức, và giữ một việc một lần!",
-      id: "Mulailah dengan hal-hal kecil. Catat janji, setel alarm, dan jaga satu hal pada satu waktu!"
+      ko: "심각합니다. 전문가 도움을 받고 근본적인 변화가 필요합니다!",
+      en: "This is serious. You need professional help and fundamental change!",
+      ja: "深刻です。専門家の助けを受け、根本的な変化が必要です！",
+      'zh-CN': "这很严重。你需要专业帮助和根本性改变！",
+      'zh-TW': "這很嚴重。你需要專業幫助和根本性改變！",
+      id: "Ini serius. Anda memerlukan bantuan profesional dan perubahan mendasar!",
+      vi: "Điều này nghiêm trọng. Bạn cần sự giúp đỡ chuyên nghiệp và thay đổi cơ bản!"
     },
-    trustScore: "★☆☆☆☆ (1/5)",
-    compatibility: {
-      best: ["Type6"],
-      good: ["Type4"],
-      careful: ["Type1", "Type2"]
-    }
+    reputation: {
+      ko: "\"절대 믿으면 안 되는 사람\"",
+      en: "\"Person you should never trust\"",
+      ja: "\"絶対に信じてはいけない人\"",
+      'zh-CN': "\"绝对不应该信任的人\"",
+      'zh-TW': "\"絕對不應該信任的人\"",
+      id: "\"Orang yang tidak boleh dipercaya sama sekali\"",
+      vi: "\"Người tuyệt đối không nên tin tưởng\""
+    },
+    goodTypes: [],
+    cautionTypes: ["Type1", "Type2", "Type3", "Type4", "Type5", "Type6"]
   }
 ];
 
-// 신뢰도 테스트 결과 계산 함수
-export const calculateTrustResult = (answers: { scores: Record<string, number> }[]): TrustResult => {
-  const scores: Record<string, number> = { Type1: 0, Type2: 0, Type3: 0, Type4: 0, Type5: 0, Type6: 0 };
+export function calculateTrustResult(answers: any[]): string {
+  const scores = { Type1: 0, Type2: 0, Type3: 0, Type4: 0, Type5: 0, Type6: 0 };
   
-  answers.forEach((answer, index) => {
-    Object.entries(answer.scores).forEach(([type, score]) => {
-      scores[type] += score;
+  answers.forEach(answer => {
+    Object.keys(answer).forEach(type => {
+      if (scores[type as keyof typeof scores] !== undefined) {
+        scores[type as keyof typeof scores] += answer[type];
+      }
     });
   });
   
-  // 최고 점수 찾기
+  // 최고 점수의 타입 반환
   const maxScore = Math.max(...Object.values(scores));
-  const topTypes = Object.entries(scores)
-    .filter(([, score]) => score === maxScore)
-    .map(([type]) => type);
+  const resultType = Object.keys(scores).find(type => scores[type as keyof typeof scores] === maxScore);
   
-  // 동점일 경우 Q10-Q12 우선순위 적용
-  if (topTypes.length > 1) {
-    const priorityScores: Record<string, number> = { Type1: 0, Type2: 0, Type3: 0, Type4: 0, Type5: 0, Type6: 0 };
+  // 동점일 경우 Q10-Q12의 선택을 우선 반영 (마지막 3개 답변 확인)
+  if (resultType && answers.length >= 10) {
+    const lastThreeAnswers = answers.slice(-3);
+    const lastThreeScores = { Type1: 0, Type2: 0, Type3: 0, Type4: 0, Type5: 0, Type6: 0 };
     
-    // Q10-Q12 점수만 계산
-    answers.slice(9, 12).forEach((answer) => {
-      Object.entries(answer.scores).forEach(([type, score]) => {
-        priorityScores[type] += score;
+    lastThreeAnswers.forEach(answer => {
+      Object.keys(answer).forEach(type => {
+        if (lastThreeScores[type as keyof typeof lastThreeScores] !== undefined) {
+          lastThreeScores[type as keyof typeof lastThreeScores] += answer[type];
+        }
       });
     });
     
-    // 우선순위 점수가 높은 타입 선택
-    const maxPriorityScore = Math.max(...topTypes.map(type => priorityScores[type]));
-    const finalType = topTypes.find(type => priorityScores[type] === maxPriorityScore) || topTypes[0];
+    const maxLastScore = Math.max(...Object.values(lastThreeScores));
+    const lastResultType = Object.keys(lastThreeScores).find(type => lastThreeScores[type as keyof typeof lastThreeScores] === maxLastScore);
     
-    return trustResults.find(result => result.type === finalType) || trustResults[0];
+    return lastResultType || resultType;
   }
   
-  return trustResults.find(result => result.type === topTypes[0]) || trustResults[0];
-};
+  return resultType || "Type1";
+}

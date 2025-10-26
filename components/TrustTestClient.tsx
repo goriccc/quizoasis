@@ -33,10 +33,10 @@ interface TrustTestClientProps {
 }
 
 // 궁합 설명 함수
-  const getCompatibilityDescription = (myType: string, partnerType: string, t: any): string => {
-    const compatibilityKey = `${myType}_${partnerType}`;
-    return t(`trustTest.result.compatibility.${compatibilityKey}`, { defaultValue: '관계 분석 중...' });
-  };
+const getCompatibilityDescription = (myType: string, partnerType: string, t: any): string => {
+  const key = `${myType}_${partnerType}`;
+  return t(`trustTest.result.compatibility.${key}`) || '';
+};
 
 export default function TrustTestClient({ 
   locale, 
@@ -151,41 +151,12 @@ export default function TrustTestClient({
       const loadTests = async () => {
         try {
           const allTests = await getTests();
-          const currentTest = allTests.find((t: any) => t.slug === slug);
-          
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter((t: any) => t.slug !== slug)
-              .slice(0, 10)
-              .map((t: any) => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
+        const currentTest = allTests.find((t: any) => t.slug === slug);
+        
+        if (!currentTest) {
+          const latestTests = allTests
             .filter((t: any) => t.slug !== slug)
-            .filter((t: any) => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-            })
-            .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-            .slice(0, 5)
+            .slice(0, 10)
             .map((t: any) => ({
               id: t.id,
               slug: t.slug,
@@ -193,28 +164,57 @@ export default function TrustTestClient({
               thumbnail: t.thumbnail,
               playCount: t.play_count
             }));
-
-          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
-          const popularTestsList = allTests
-            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }));
-
-          setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
+          
+          setSimilarTestsState(latestTests.slice(0, 5));
+          setPopularTestsState(latestTests.slice(5, 10));
+          return;
         }
-      };
 
-      loadTests();
+        const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
+          ? currentTest.tags[locale] || currentTest.tags.ko || []
+          : currentTest.tags || [];
+
+        const similarTestsList = allTests
+          .filter((t: any) => t.slug !== slug)
+          .filter((t: any) => {
+            const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
+              ? t.tags[locale] || t.tags.ko || []
+              : t.tags || [];
+            
+            return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
+              currentTestTags.some((tag: string) => otherTestTags.includes(tag));
+          })
+          .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+          .slice(0, 5)
+          .map((t: any) => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count
+          }));
+
+        const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
+        const popularTestsList = allTests
+          .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
+          .sort((a: any, b: any) => b.play_count - a.play_count)
+          .slice(0, 5)
+          .map((t: any) => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count
+          }));
+
+        setSimilarTestsState(similarTestsList);
+        setPopularTestsState(popularTestsList);
+      } catch (error) {
+        console.error('테스트 로드 실패:', error);
+      }
+    };
+
+    loadTests();
     }
   }, [slug, locale, similarTests]);
 
@@ -256,7 +256,7 @@ export default function TrustTestClient({
 
   // 답변 처리
   const handleAnswer = (scores: any) => {
-    const newAnswers = [...answers, { scores }];
+    const newAnswers = [...answers, scores];
     setAnswers(newAnswers);
 
     if (currentQuestion < shuffledQuestions.length - 1) {
@@ -265,7 +265,8 @@ export default function TrustTestClient({
       setShowLoadingSpinner(true);
       
       // 결과 계산
-      const trustResult = calculateTrustResult(newAnswers);
+      const resultType = calculateTrustResult(newAnswers);
+      const trustResult = results.find(r => r.type === resultType);
       
       // 결과 설정
       if (trustResult) {
@@ -276,6 +277,7 @@ export default function TrustTestClient({
       if (trustResult && locale !== 'ko') {
         const keywords = getProductKeywordsForDating(trustResult.type, locale);
         const loadStartTime = Date.now();
+        console.log('🔮 [시작] 신뢰도 결과:', trustResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -290,7 +292,8 @@ export default function TrustTestClient({
 
   // 결과 계산
   const calculateResult = (finalAnswers: any[]) => {
-    const trustResult = calculateTrustResult(finalAnswers);
+    const resultType = calculateTrustResult(finalAnswers);
+    const trustResult = results.find(r => r.type === resultType);
     
     if (trustResult) {
       setResult(trustResult);
@@ -313,7 +316,7 @@ export default function TrustTestClient({
     if (!result) return;
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = t('trustTest.result.shareMessage', { type: resultTitle }) + `\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
+    const shareText = `${t('trustTest.shareMessages.default', { type: resultTitle })}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -326,10 +329,10 @@ export default function TrustTestClient({
     } else {
       try {
         await navigator.clipboard.writeText(shareText);
-        alert(t('trustTest.alerts.resultCopied'));
+        alert('결과가 클립보드에 복사되었습니다!');
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
-        alert(t('trustTest.alerts.shareError'));
+        alert(t('trustTest.alerts.shareFailed'));
       }
     }
   };
@@ -344,7 +347,7 @@ export default function TrustTestClient({
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? `${t('trustTest.result.shareMessage', { type: resultTitle })}\n\n${url}`
+      ? `${t('trustTest.shareMessages.default', { type: resultTitle })}\n\n${url}`
       : `${title}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
@@ -362,7 +365,7 @@ export default function TrustTestClient({
     // Fallback: 링크 복사
     try {
       await navigator.clipboard.writeText(url);
-      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+      alert(t('trustTest.alerts.wechatCopy'));
     } catch (error) {
       alert('공유 기능을 사용할 수 없습니다.');
     }
@@ -372,7 +375,7 @@ export default function TrustTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('trustTest.result.shareMessage', { type: resultTitle }))
+      ? encodeURIComponent(t('trustTest.shareMessages.default', { type: resultTitle }))
       : encodeURIComponent(title);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
@@ -381,7 +384,7 @@ export default function TrustTestClient({
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
-      alert('카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.');
+      alert(t('trustTest.alerts.kakaoInit'));
       return;
     }
 
@@ -391,7 +394,7 @@ export default function TrustTestClient({
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
-      ? t('trustTest.result.shareMessage', { type: resultTitle })
+      ? t('trustTest.shareMessages.default', { type: resultTitle })
       : description;
     
     try {
@@ -418,7 +421,7 @@ export default function TrustTestClient({
       });
     } catch (error) {
       console.error('카카오톡 공유 오류:', error);
-      alert('카카오톡 공유 중 오류가 발생했습니다.');
+      alert(t('trustTest.alerts.kakaoError'));
     }
   };
 
@@ -426,7 +429,7 @@ export default function TrustTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? t('trustTest.result.shareMessage', { type: resultTitle })
+      ? t('trustTest.shareMessages.default', { type: resultTitle })
       : title;
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
@@ -434,13 +437,12 @@ export default function TrustTestClient({
 
   const copyLink = () => {
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-        alert(t('trustTest.alerts.linkCopied'));
+    alert(t('trustTest.alerts.linkCopied'));
   };
 
   // 팝업에서 결과 보기
   const handleShowResult = () => {
     setShowResultPopup(false);
-    setShowLoadingSpinner(false);
     setShowResult(true);
     window.scrollTo(0, 0);
   };
@@ -452,7 +454,7 @@ export default function TrustTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_043_trustworthiness.jpg')}
+              src={getThumbnailUrl(thumbnail || 'test_238_trustworthy.jpg')}
               alt={title}
               fill
               className="object-cover"
@@ -472,17 +474,17 @@ export default function TrustTestClient({
                 slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역 (타이틀-설명 사이)"
+                label={t('trustTest.ui.adsenseTitle')}
               />
             </div>
 
             <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
-              <p className="font-bold text-gray-700">{t('trustTest.startMessage.title')}</p>
-              <p>{t('trustTest.startMessage.line1')}</p>
+              <p className="font-bold text-gray-700">{t('trustTest.startMessage.line1')}</p>
               <p>{t('trustTest.startMessage.line2')}</p>
-              <p className="whitespace-pre-line">{t('trustTest.startMessage.line3')}</p>
+              <p>{t('trustTest.startMessage.line3')}</p>
               <p>{t('trustTest.startMessage.line4')}</p>
-              <p>{t('trustTest.startMessage.line5')}</p>
+              <p className="whitespace-pre-line">{t('trustTest.startMessage.line5')}</p>
+              <p className="whitespace-pre-line">{t('trustTest.startMessage.line6')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -490,12 +492,12 @@ export default function TrustTestClient({
                 onClick={handleStartTest}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-{t('trustTest.ui.startTest')}
+                {t('mbti.startTest')}
               </button>
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-{t('trustTest.ui.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
+              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -540,26 +542,26 @@ export default function TrustTestClient({
 
             <div className="mb-8 text-center">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-  {t('trustTest.ui.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt={t('trustTest.ui.linkCopy')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt={t('trustTest.ui.kakao')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt={t('trustTest.ui.telegram')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt={t('trustTest.ui.wechat')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt={t('trustTest.ui.line')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt={t('trustTest.ui.whatsapp')} width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
@@ -567,7 +569,7 @@ export default function TrustTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('trustTest.ui.similarTests')}
+                {t('trustTest.ui.similarTests')}
               </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
@@ -615,13 +617,13 @@ export default function TrustTestClient({
             slot={ADSENSE_CONFIG.SLOTS.LOADING_TOP}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역 (로딩 스피너 상단)"
+            label={t('trustTest.ui.adsenseTitle')}
           />
         </div>
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-lg text-gray-700">{t('trustTest.ui.analyzing')}</p>
+          <p className="mt-4 text-lg text-gray-700">{t('mbti.loadingResults')}</p>
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
@@ -630,7 +632,7 @@ export default function TrustTestClient({
             slot={ADSENSE_CONFIG.SLOTS.LOADING_BOTTOM}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역 (로딩 스피너 하단)"
+            label={t('trustTest.ui.adsenseTitle')}
           />
         </div>
       </div>
@@ -643,7 +645,7 @@ export default function TrustTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-{t('trustTest.ui.testCompleted')}
+            🎉 {t('mbti.testCompleted')}
           </h2>
           
           
@@ -697,7 +699,7 @@ export default function TrustTestClient({
             onClick={handleShowResult}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-{t('trustTest.ui.viewResults')}
+            {t('mbti.viewAnalysisResults')}
           </button>
         </div>
       </div>
@@ -707,10 +709,14 @@ export default function TrustTestClient({
   // 결과 화면
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
+    const resultShortDescription = result.shortDescription[locale as keyof typeof result.shortDescription] || result.shortDescription.ko;
+    const resultLongDescription = result.longDescription[locale as keyof typeof result.longDescription] || result.longDescription.ko;
     const resultPros = result.pros;
     const resultCons = result.cons;
     const resultAdvice = result.advice[locale as keyof typeof result.advice] || result.advice.ko;
+    const resultReputation = result.reputation[locale as keyof typeof result.reputation] || result.reputation.ko;
+    const resultGoodTypes = result.goodTypes;
+    const resultCautionTypes = result.cautionTypes;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -718,33 +724,24 @@ export default function TrustTestClient({
           <div>
             <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
               <h2 className="text-xl font-bold text-gray-800 mb-3">
-                {t('trustTest.ui.yourResult')}
+                {t('mbti.yourResult')}
               </h2>
               <div className="text-6xl mb-3">{result.emoji}</div>
-              <h1 className="text-2xl md:text-3xl font-bold mb-2 text-gray-800">
+              <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
               </h1>
-              <p className="text-base text-gray-600 leading-relaxed">
-                {resultDescription}
+              <p className="text-lg font-semibold text-gray-700 mb-3">
+                {resultShortDescription}
               </p>
-            </div>
-
-            {/* 신뢰 점수 섹션 */}
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                🎯 {t('trustTest.ui.trustScore')}
-              </h3>
-              <div className="flex items-center justify-center">
-                <div className="text-2xl font-bold text-blue-600">
-                  {result.trustScore}
-                </div>
-              </div>
+              <p className="text-base text-gray-600 leading-relaxed">
+                {resultLongDescription}
+              </p>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ✅ {t('trustTest.ui.pros')}
+                  ✅ {t('mbti.pros')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {resultPros.map((pro, index) => (
@@ -760,7 +757,7 @@ export default function TrustTestClient({
 
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ⚠️ {t('trustTest.ui.cons')}
+                  ⚠️ {t('mbti.cons')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {resultCons.map((con, index) => (
@@ -776,120 +773,78 @@ export default function TrustTestClient({
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                💡 {t('trustTest.ui.advice')}
-              </h3>
+                    <h3 className="text-base font-bold text-gray-800 mb-3">
+                      🗣️ {t('trustTest.ui.reputation')}
+                    </h3>
+              <p className="text-sm text-gray-700 leading-relaxed italic">
+                {resultReputation}
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+                    <h3 className="text-base font-bold text-gray-800 mb-3">
+                      💡 {t('trustTest.ui.advice')}
+                    </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {resultAdvice}
               </p>
             </div>
 
-            {result.compatibility && (
-              <>
-                {result.compatibility.best && (
-                  <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-                    <h3 className="text-base font-bold text-gray-800 mb-3">
-                      💖 {t('trustTest.ui.bestMatch')}
-                    </h3>
-                    {typeof result.compatibility.best === 'string' ? (
-                      <p className="text-sm text-gray-700">{result.compatibility.best}</p>
-                    ) : Array.isArray(result.compatibility.best) ? (
-                      <div className="space-y-2">
-                        {result.compatibility.best.map(type => {
-                          const partner = results.find(r => r.type === type);
-                          if (!partner) return null;
-                          const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                          const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                          return (
-                              <div key={type} className="bg-gradient-to-r from-red-100 to-pink-100 rounded-lg px-3 py-2">
-                                <div className="flex items-center gap-2.5">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}: {compatibilityDesc}</span>
-                                </div>
-                              </div>
-                          );
-                        })}
-                      </div>
-                    ) : (
-                      <p className="text-sm text-gray-700">
-                        {typeof result.compatibility.best === 'string' 
-                          ? result.compatibility.best 
-                          : (result.compatibility.best as any)[locale] || (result.compatibility.best as any).ko}
-                      </p>
-                    )}
-                  </div>
-                )}
-
-                  {result.compatibility.good && (
-                    <div className="bg-white rounded-xl shadow-lg p-4">
-                    <h3 className="text-base font-bold text-gray-800 mb-3">
-                      😊 {t('trustTest.ui.goodMatch')}
-                    </h3>
-                      {typeof result.compatibility.good === 'string' ? (
-                        <p className="text-sm text-gray-700">{result.compatibility.good}</p>
-                      ) : Array.isArray(result.compatibility.good) ? (
-                        <div className="space-y-2">
-                          {result.compatibility.good.map(type => {
-                            const partner = results.find(r => r.type === type);
-                            if (!partner) return null;
-                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                            return (
-                              <div key={type} className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg px-3 py-2">
-                                <div className="flex items-center gap-2.5">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}: {compatibilityDesc}</span>
-                                </div>
-                              </div>
-                            );
-                          })}
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
+                  🤝 {t('trustTest.ui.goodTypes')}
+                </h3>
+                <div className="space-y-2">
+                  {resultGoodTypes && resultGoodTypes.length > 0 ? (
+                    resultGoodTypes.map(type => {
+                      const partner = results.find(r => r.type === type);
+                      if (!partner) return null;
+                      const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                      return (
+                        <div key={type} className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg px-3 py-2">
+                          <div className="flex items-center gap-2.5">
+                            <span className="text-xl">{partner.emoji}</span>
+                            <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                          </div>
                         </div>
-                      ) : (
-                        <p className="text-sm text-gray-700">
-                          {typeof result.compatibility.good === 'string' 
-                            ? result.compatibility.good 
-                            : (result.compatibility.good as any)[locale] || (result.compatibility.good as any).ko}
-                        </p>
-                      )}
+                      );
+                    })
+                  ) : (
+                    <div className="text-sm text-gray-500">
+                      {t('trustTest.ui.none')}
                     </div>
-                )}
+                  )}
+                </div>
+              </div>
 
-                {result.compatibility.careful && (
-                  <div className="bg-white rounded-xl shadow-lg p-4 mb-3 mt-3">
-                    <h3 className="text-base font-bold text-gray-800 mb-3">
-                      ⚠️ {t('trustTest.ui.cautionNeeded')}
-                    </h3>
-                      {typeof result.compatibility.careful === 'string' ? (
-                        <p className="text-sm text-gray-700">{result.compatibility.careful}</p>
-                      ) : Array.isArray(result.compatibility.careful) ? (
-                        <div className="space-y-2">
-                          {result.compatibility.careful.map(type => {
-                            const partner = results.find(r => r.type === type);
-                            if (!partner) return null;
-                            const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
-                            const compatibilityDesc = getCompatibilityDescription(result.type, type, t);
-                            return (
-                              <div key={type} className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg px-3 py-2">
-                                <div className="flex items-center gap-2.5">
-                                  <span className="text-xl">{partner.emoji}</span>
-                                  <span className="text-sm font-medium text-gray-800">{partnerTitle}: {compatibilityDesc}</span>
-                                </div>
-                              </div>
-                            );
-                          })}
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
+                  ⚠️ {t('trustTest.ui.cautionTypes')}
+                </h3>
+                <div className="space-y-2">
+                  {resultCautionTypes && resultCautionTypes.length > 0 ? (
+                    resultCautionTypes.map(type => {
+                      const partner = results.find(r => r.type === type);
+                      if (!partner) return null;
+                      const partnerTitle = partner.title[locale as keyof typeof partner.title] || partner.title.ko;
+                      return (
+                        <div key={type} className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg px-3 py-2">
+                          <div className="flex items-center gap-2.5">
+                            <span className="text-xl">{partner.emoji}</span>
+                            <span className="text-sm font-medium text-gray-800">{partnerTitle}</span>
+                          </div>
                         </div>
-                      ) : (
-                        <p className="text-sm text-gray-700">
-                          {typeof result.compatibility.careful === 'string' 
-                            ? result.compatibility.careful 
-                            : (result.compatibility.careful as any)[locale] || (result.compatibility.careful as any).ko}
-                        </p>
-                      )}
+                      );
+                    })
+                  ) : (
+                    <div className="text-sm text-gray-500">
+                      {t('trustTest.ui.none')}
                     </div>
-                )}
-
-              </>
-            )}
+                  )}
+                </div>
+              </div>
+            </div>
 
             <div className="mt-8 mb-6 px-4">
               <button
@@ -909,7 +864,7 @@ export default function TrustTestClient({
                 slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역 (결과-다시하기 사이)"
+                label={t('trustTest.ui.adsenseTitle')}
               />
             </div>
 
@@ -918,38 +873,38 @@ export default function TrustTestClient({
                 onClick={handleRetake}
                 className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
               >
-{t('trustTest.ui.retake')}
+                {t('mbti.retakeTest')}
               </button>
               <Link
                 href={`/${locale}`}
                 className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
               >
-{t('trustTest.ui.otherTests')}
+                {t('mbti.otherTests')}
               </Link>
             </div>
 
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-  {t('trustTest.ui.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt={t('trustTest.ui.linkCopy')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt={t('trustTest.ui.kakao')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt={t('trustTest.ui.telegram')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt={t('trustTest.ui.wechat')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt={t('trustTest.ui.line')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt={t('trustTest.ui.whatsapp')} width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
@@ -958,7 +913,7 @@ export default function TrustTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('trustTest.ui.similarTestsTop5')}
+                  {t('recommendations.similarTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -995,7 +950,7 @@ export default function TrustTestClient({
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-{t('trustTest.ui.popularTestsTop5')}
+                  {t('recommendations.popularTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (
@@ -1046,7 +1001,7 @@ export default function TrustTestClient({
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-600">
-{t('trustTest.ui.progress')}
+              {t('mbti.progress')}
             </span>
             <span className="text-sm font-bold text-purple-600">
               {currentQuestion + 1} / {shuffledQuestions.length}
@@ -1100,32 +1055,32 @@ export default function TrustTestClient({
               slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
               style={{ width: '100%', height: '250px' }}
               className="mx-auto"
-              label="AdSense 광고 영역 (테스트 진행 마지막 답변 밑)"
+              label={t('trustTest.ui.adsenseTitle')}
             />
           </div>
 
           <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('trustTest.ui.shareWithFriends')}
+              {t('mbti.shareWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/link.jpeg" alt={t('trustTest.ui.linkCopy')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/kakao.jpeg" alt={t('trustTest.ui.kakao')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/telegram.jpeg" alt={t('trustTest.ui.telegram')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/wechat.jpeg" alt={t('trustTest.ui.wechat')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/line.jpeg" alt={t('trustTest.ui.line')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/whatsapp.jpeg" alt={t('trustTest.ui.whatsapp')} width={46} height={46} className="rounded-lg" />
               </button>
             </div>
           </div>
