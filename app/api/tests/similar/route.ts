@@ -16,6 +16,7 @@ export async function GET(request: NextRequest) {
     const limit = parseInt(searchParams.get('limit') || '12');
     const locale = searchParams.get('locale') as Locale || 'ko';
     const excludeSlug = searchParams.get('excludeSlug');
+    const category = searchParams.get('category');
 
     // 캐시 확인
     const now = Date.now();
@@ -51,9 +52,21 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // 현재 테스트 제외
+    // 현재 테스트 제외 (excludeSlug 파라미터가 있거나 category가 있으면 자동 제외)
     if (excludeSlug) {
       filteredTests = filteredTests.filter((test: any) => test.slug !== excludeSlug);
+    } else if (category) {
+      // category가 있으면 해당 카테고리의 현재 테스트를 자동으로 제외
+      // URL에서 현재 테스트 slug를 추출 (Referer 헤더에서)
+      const referer = request.headers.get('referer');
+      if (referer) {
+        const url = new URL(referer);
+        const pathParts = url.pathname.split('/');
+        const currentSlug = pathParts[pathParts.length - 1];
+        if (currentSlug && currentSlug !== 'test') {
+          filteredTests = filteredTests.filter((test: any) => test.slug !== currentSlug);
+        }
+      }
     }
 
     // 정렬 순서 고정 (created_at 기준, 최신순)

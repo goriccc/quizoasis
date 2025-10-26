@@ -41,6 +41,44 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "concentrationTest": {
+    "startMessage": {
+      "line1": "Sức mạnh tập trung của bạn như thế nào?",
+      "line2": "Thông báo điện thoại, tiếng ồn xung quanh, những cám dỗ bất tận... Người ta nói rằng khả năng tập trung của con người hiện đại ngắn hơn cả cá vàng.",
+      "line3": "Bạn có thể tập trung vào một việc bao lâu? Bạn mạnh mẽ đến mức nào trước những phiền nhiễu bên ngoài? Bạn đã từng đạt đến trạng thái nhập tâm chưa?",
+      "line4": "Chỉ 3 phút để khám phá loại tập trung của bạn!",
+      "line5": "",
+      "line6": ""
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Kết quả kiểm tra khả năng tập trung đã ra! Bạn tập trung như thế nào? Hãy thử cùng nhau! 🎯",
+      "kakao": "Tôi là {type}! Kết quả kiểm tra khả năng tập trung đã ra! Bạn tập trung như thế nào? Hãy thử cùng nhau! 🎯",
+      "wechat": "Tôi là {type}! Kết quả kiểm tra khả năng tập trung đã ra! Bạn tập trung như thế nào? Hãy thử cùng nhau! 🎯",
+      "whatsapp": "Tôi là {type}! Kết quả kiểm tra khả năng tập trung đã ra! Bạn tập trung như thế nào? Hãy thử cùng nhau! 🎯",
+      "telegram": "Tôi là {type}! Kết quả kiểm tra khả năng tập trung đã ra! Bạn tập trung như thế nào? Hãy thử cùng nhau! 🎯",
+      "line": "Tôi là {type}! Kết quả kiểm tra khả năng tập trung đã ra! Bạn tập trung như thế nào? Hãy thử cùng nhau! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "ui": {
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "advice": "Lời khuyên",
+      "noData": "Không có dữ liệu",
+      "compatibleTypes": "Loại tương thích",
+      "warningTypes": "Loại cần chú ý"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "Điều gì thực sự quan trọng trong cuộc sống?",

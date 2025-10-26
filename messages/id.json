@@ -41,6 +41,44 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "concentrationTest": {
+    "startMessage": {
+      "line1": "Seberapa kuat konsentrasi Anda?",
+      "line2": "Notifikasi smartphone, kebisingan sekitar, godaan tak berujung... Konsentrasi manusia modern dikatakan lebih pendek dari ikan mas.",
+      "line3": "Berapa lama Anda bisa fokus pada satu hal? Seberapa kuat Anda melawan gangguan eksternal? Pernahkah Anda mencapai keadaan imersi?",
+      "line4": "Hanya 3 menit untuk menemukan tipe konsentrasi Anda!",
+      "line5": "",
+      "line6": ""
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Hasil tes konsentrasi keluar! Seberapa baik Anda berkonsentrasi? Mari coba bersama! 🎯",
+      "kakao": "Saya {type}! Hasil tes konsentrasi keluar! Seberapa baik Anda berkonsentrasi? Mari coba bersama! 🎯",
+      "wechat": "Saya {type}! Hasil tes konsentrasi keluar! Seberapa baik Anda berkonsentrasi? Mari coba bersama! 🎯",
+      "whatsapp": "Saya {type}! Hasil tes konsentrasi keluar! Seberapa baik Anda berkonsentrasi? Mari coba bersama! 🎯",
+      "telegram": "Saya {type}! Hasil tes konsentrasi keluar! Seberapa baik Anda berkonsentrasi? Mari coba bersama! 🎯",
+      "line": "Saya {type}! Hasil tes konsentrasi keluar! Seberapa baik Anda berkonsentrasi? Mari coba bersama! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Silakan tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "ui": {
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "advice": "Saran",
+      "noData": "Tidak Ada Data",
+      "compatibleTypes": "Tipe Kompatibel",
+      "warningTypes": "Tipe Peringatan"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "Apa yang benar-benar penting dalam hidup?",

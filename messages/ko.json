@@ -44,6 +44,44 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "concentrationTest": {
+    "startMessage": {
+      "line1": "당신의 집중력, 과연 얼마나 강력한가요?",
+      "line2": "스마트폰 알림, 주변 소음, 끊임없는 유혹... 현대인의 집중력은 금붕어보다 짧다는 말도 있습니다.",
+      "line3": "한 가지 일에 얼마나 오래 집중할 수 있나요? 외부 방해에 얼마나 강한가요? 몰입의 경지에 도달한 적이 있나요?",
+      "line4": "단 3분이면 당신의 집중력 유형을 발견할 수 있습니다!",
+      "line5": "",
+      "line6": ""
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 집중력 테스트 결과 나왔다! 너는 얼마나 집중 잘해? 같이 해보자! 🎯",
+      "kakao": "나는 {type}! 집중력 테스트 결과 나왔다! 너는 얼마나 집중 잘해? 같이 해보자! 🎯",
+      "wechat": "나는 {type}! 집중력 테스트 결과 나왔다! 너는 얼마나 집중 잘해? 같이 해보자! 🎯",
+      "whatsapp": "나는 {type}! 집중력 테스트 결과 나왔다! 너는 얼마나 집중 잘해? 같이 해보자! 🎯",
+      "telegram": "나는 {type}! 집중력 테스트 결과 나왔다! 너는 얼마나 집중 잘해? 같이 해보자! 🎯",
+      "line": "나는 {type}! 집중력 테스트 결과 나왔다! 너는 얼마나 집중 잘해? 같이 해보자! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "ui": {
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "advice": "조언",
+      "noData": "데이터 없음",
+      "compatibleTypes": "어울리는 타입",
+      "warningTypes": "주의 타입"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "인생에서 정말 중요한 것은 무엇인가요?",

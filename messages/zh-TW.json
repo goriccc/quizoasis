@@ -41,6 +41,44 @@
   "loveFlavorTest": {
     "resultShareMessage": "我的戀愛是{type}！你的戀愛是什麼味道？我們也來測測配對度吧 🍭💕"
   },
+  "concentrationTest": {
+    "startMessage": {
+      "line1": "你的專注力有多強大？",
+      "line2": "智能手機通知、周圍噪音、無盡的誘惑...現代人的專注力據說比金魚還短。",
+      "line3": "你能在一件事上專注多久？對外部干擾有多強？你是否達到過沉浸狀態？",
+      "line4": "只需3分鐘就能發現你的專注力類型！",
+      "line5": "",
+      "line6": ""
+    },
+    "shareMessages": {
+      "default": "我是{type}！專注力測試結果出來了！你專注力如何？一起來試試吧！🎯",
+      "kakao": "我是{type}！專注力測試結果出來了！你專注力如何？一起來試試吧！🎯",
+      "wechat": "我是{type}！專注力測試結果出來了！你專注力如何？一起來試試吧！🎯",
+      "whatsapp": "我是{type}！專注力測試結果出來了！你專注力如何？一起來試試吧！🎯",
+      "telegram": "我是{type}！專注力測試結果出來了！你專注力如何？一起來試試吧！🎯",
+      "line": "我是{type}！專注力測試結果出來了！你專注力如何？一起來試試吧！🎯"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後重試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "ui": {
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "advice": "建議",
+      "noData": "無數據",
+      "compatibleTypes": "相容類型",
+      "warningTypes": "注意類型"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "生活中真正重要的是什麼？",

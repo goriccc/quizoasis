@@ -41,6 +41,44 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "concentrationTest": {
+    "startMessage": {
+      "line1": "あなたの集中力、いったいどのくらい強力ですか？",
+      "line2": "スマートフォンの通知、周囲の騒音、絶え間ない誘惑...現代人の集中力は金魚より短いと言われています。",
+      "line3": "一つのことにどのくらい長く集中できますか？外部の妨害にどのくらい強いですか？没入の境地に達したことはありますか？",
+      "line4": "たった3分であなたの集中力タイプを発見できます！",
+      "line5": "",
+      "line6": ""
+    },
+    "shareMessages": {
+      "default": "私は{type}！集中力テスト結果が出た！あなたはどのくらい集中できる？一緒にやってみよう！🎯",
+      "kakao": "私は{type}！集中力テスト結果が出た！あなたはどのくらい集中できる？一緒にやってみよう！🎯",
+      "wechat": "私は{type}！集中力テスト結果が出た！あなたはどのくらい集中できる？一緒にやってみよう！🎯",
+      "whatsapp": "私は{type}！集中力テスト結果が出た！あなたはどのくらい集中できる？一緒にやってみよう！🎯",
+      "telegram": "私は{type}！集中力テスト結果が出た！あなたはどのくらい集中できる？一緒にやってみよう！🎯",
+      "line": "私は{type}！集中力テスト結果が出た！あなたはどのくらい集中できる？一緒にやってみよう！🎯"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "ui": {
+      "linkCopy": "リンクコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "advice": "アドバイス",
+      "noData": "データなし",
+      "compatibleTypes": "相性の良いタイプ",
+      "warningTypes": "注意タイプ"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "人生で本当に重要なことは何ですか？",
@@ -1955,6 +1993,18 @@
       "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
       "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "ui": {
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "advice": "アドバイス",
+      "noData": "データなし",
+      "compatibleTypes": "相性の良いタイプ",
+      "warningTypes": "注意タイプ"
     }
   },
   "quickDecisionTest": {

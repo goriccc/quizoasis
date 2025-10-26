@@ -41,6 +41,44 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "concentrationTest": {
+    "startMessage": {
+      "line1": "How powerful is your concentration?",
+      "line2": "Smartphone notifications, ambient noise, endless temptations... Modern people's concentration is said to be shorter than a goldfish.",
+      "line3": "How long can you focus on one thing? How strong are you against external distractions? Have you ever reached a state of immersion?",
+      "line4": "Just 3 minutes to discover your concentration type!",
+      "line5": "",
+      "line6": ""
+    },
+    "shareMessages": {
+      "default": "I'm {type}! Concentration test results are out! How well do you concentrate? Let's try it together! 🎯",
+      "kakao": "I'm {type}! Concentration test results are out! How well do you concentrate? Let's try it together! 🎯",
+      "wechat": "I'm {type}! Concentration test results are out! How well do you concentrate? Let's try it together! 🎯",
+      "whatsapp": "I'm {type}! Concentration test results are out! How well do you concentrate? Let's try it together! 🎯",
+      "telegram": "I'm {type}! Concentration test results are out! How well do you concentrate? Let's try it together! 🎯",
+      "line": "I'm {type}! Concentration test results are out! How well do you concentrate? Let's try it together! 🎯"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "ui": {
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "advice": "Advice",
+      "noData": "No Data",
+      "compatibleTypes": "Compatible Types",
+      "warningTypes": "Warning Types"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "What do you value most in life?",

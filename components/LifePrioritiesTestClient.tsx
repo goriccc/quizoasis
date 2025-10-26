@@ -842,11 +842,9 @@ export default function LifePrioritiesTestClient({
             <p className="text-base text-gray-600 leading-relaxed">
                 {resultDescription}
               </p>
-              <div className="mt-4 p-4 bg-gray-50 rounded-xl">
-                <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="mt-4 text-sm text-gray-700 leading-relaxed">
                   {resultCharacteristics}
-            </p>
-          </div>
+              </p>
             </div>
 
             <div className="grid grid-cols-1 gap-3 mb-3">
