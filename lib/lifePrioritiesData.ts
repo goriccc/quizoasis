@@ -1,12 +1,10 @@
-// 나의 인생 우선순위 찾기 테스트 데이터
-
 export interface LifePrioritiesQuestion {
   id: number;
   question: Record<string, string>;
-  options: Array<{
+  options: {
     text: Record<string, string>;
-    scores: { type1: number; type2: number; type3: number; type4: number; type5: number; type6: number; };
-  }>;
+    scores: Record<string, number>;
+  }[];
 }
 
 export interface LifePrioritiesResult {
@@ -14,1171 +12,915 @@ export interface LifePrioritiesResult {
   emoji: string;
   title: Record<string, string>;
   description: Record<string, string>;
-  coreValues: Record<string, string>;
-  strengths: Array<Record<string, string>>;
-  weaknesses: Array<Record<string, string>>;
+  characteristics: Record<string, string>;
+  impression: Record<string, string>;
+  pros: Record<string, string>;
+  cons: Record<string, string>;
   advice: Record<string, string>;
-  compatibility: {
-    best: string[];
-    good: string[];
-    careful: string[];
-  };
 }
 
-// 12개 질문
 export const lifePrioritiesQuestions: LifePrioritiesQuestion[] = [
   {
     id: 1,
     question: {
-      ko: "인생에서 가장 후회하고 싶지 않은 것은?",
-      en: "What do you most regret not having done in life?",
-      ja: "人生で最も後悔したくないことは？",
-      "zh-CN": "人生中最不想后悔的事是什么？",
-      "zh-TW": "人生中最不想後悔的事是什麼？",
-      id: "Apa yang paling tidak ingin kamu sesali dalam hidup?",
-      vi: "Điều gì bạn không muốn hối tiếc nhất trong cuộc sống?"
+      ko: "꿈의 직장 제안 vs 연인과의 안정된 관계",
+      en: "Dream job offer vs stable relationship with partner",
+      ja: "夢の職場提案 vs 恋人との安定した関係",
+      'zh-CN': "梦想工作机会 vs 与恋人的稳定关系",
+      'zh-TW': "夢想工作機會 vs 與戀人的穩定關係",
+      id: "Tawaran pekerjaan impian vs hubungan stabil dengan pasangan",
+      vi: "Cơ hội công việc mơ ước vs mối quan hệ ổn định với người yêu"
     },
     options: [
       {
         text: {
-          ko: "가족과 소중한 사람들에게 소홀했던 것",
-          en: "Neglecting family and loved ones",
-          ja: "家族や大切な人を疎かにしたこと",
-          "zh-CN": "忽视家人和重要的人",
-          "zh-TW": "忽視家人和重要的人",
-          id: "Mengabaikan keluarga dan orang terkasih",
-          vi: "Bỏ bê gia đình và người thân"
+          ko: "꿈의 직장, 연인과는 원거리로",
+          en: "Dream job, long distance with partner",
+          ja: "夢の職場、恋人は遠距離で",
+          'zh-CN': "梦想工作，与恋人异地",
+          'zh-TW': "夢想工作，與戀人異地",
+          id: "Pekerjaan impian, pasangan jarak jauh",
+          vi: "Công việc mơ ước, người yêu ở xa"
         },
-        scores: { type1: 8, type2: 0, type3: 0, type4: 0, type5: 2, type6: 0 }
+        scores: { Type1: 8, Type3: 8 }
       },
       {
         text: {
-          ko: "내 꿈과 목표를 이루지 못한 것",
-          en: "Not achieving my dreams and goals",
-          ja: "自分の夢と目標を達成できなかったこと",
-          "zh-CN": "没有实现梦想和目标",
-          "zh-TW": "沒有實現夢想和目標",
-          id: "Tidak mencapai impian dan tujuan",
-          vi: "Không đạt được ước mơ và mục tiêu"
+          ko: "연인 곁에 남기, 다른 기회 찾기",
+          en: "Stay with partner, look for other opportunities",
+          ja: "恋人のそばに残る、他の機会を探す",
+          'zh-CN': "留在恋人身边，寻找其他机会",
+          'zh-TW': "留在戀人身邊，尋找其他機會",
+          id: "Tetap dengan pasangan, cari peluang lain",
+          vi: "Ở lại bên người yêu, tìm cơ hội khác"
         },
-        scores: { type1: 0, type2: 8, type3: 0, type4: 0, type5: 0, type6: 2 }
-      },
-      {
-        text: {
-          ko: "하고 싶은 것을 하지 못하고 참기만 한 것",
-          en: "Not doing what I wanted and just enduring",
-          ja: "やりたいことをせず我慢ばかりしたこと",
-          "zh-CN": "没做想做的事，只是一味忍耐",
-          "zh-TW": "沒做想做的事，只是一味忍耐",
-          id: "Tidak melakukan yang diinginkan dan hanya menahan",
-          vi: "Không làm những gì muốn và chỉ chịu đựng"
-        },
-        scores: { type1: 0, type2: 0, type3: 8, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "불행하고 즐겁지 않게 산 것",
-          en: "Living unhappily and without joy",
-          ja: "不幸で楽しくない人生を送ったこと",
-          "zh-CN": "过着不快乐的生活",
-          "zh-TW": "過著不快樂的生活",
-          id: "Hidup dengan tidak bahagia dan tanpa sukacita",
-          vi: "Sống không hạnh phúc và không vui vẻ"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 8, type5: 0, type6: 0 }
+        scores: { Type2: 2, Type4: 2 }
       }
     ]
   },
   {
     id: 2,
     question: {
-      ko: "인생의 마지막 순간, 무엇을 떠올리고 싶나요?",
-      en: "What do you want to remember in your final moments?",
-      ja: "人生の最後の瞬間、何を思い出したいですか？",
-      "zh-CN": "人生的最后时刻，你想回忆什么？",
-      "zh-TW": "人生的最後時刻，你想回憶什麼？",
-      id: "Di saat-saat terakhir hidup, apa yang ingin kamu ingat?",
-      vi: "Trong những khoảnh khắc cuối cùng của cuộc đời, bạn muốn nhớ đến điều gì?"
+      ko: "인생에서 더 필요한 것은?",
+      en: "What do you need more in life?",
+      ja: "人生でより必要なものは？",
+      'zh-CN': "生活中更需要什么？",
+      'zh-TW': "生活中更需要什麼？",
+      id: "Apa yang lebih Anda butuhkan dalam hidup?",
+      vi: "Bạn cần gì hơn trong cuộc sống?"
     },
     options: [
       {
         text: {
-          ko: "사랑했던 사람들과의 따뜻한 추억",
-          en: "Warm memories with loved ones",
-          ja: "愛した人たちとの温かい思い出",
-          "zh-CN": "与所爱之人的温暖回忆",
-          "zh-TW": "與所愛之人的溫暖回憶",
-          id: "Kenangan hangat dengan orang terkasih",
-          vi: "Những kỷ niệm ấm áp với người thân yêu"
+          ko: "설렘과 열정",
+          en: "Excitement and passion",
+          ja: "ワクワクと情熱",
+          'zh-CN': "兴奋和激情",
+          'zh-TW': "興奮和激情",
+          id: "Kegembiraan dan gairah",
+          vi: "Hứng thú và đam mê"
         },
-        scores: { type1: 8, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type6: 8, Type3: 2 }
       },
       {
         text: {
-          ko: "내가 이룬 성취와 남긴 업적",
-          en: "My achievements and legacy",
-          ja: "成し遂げた成果と残した功績",
-          "zh-CN": "我取得的成就和留下的业绩",
-          "zh-TW": "我取得的成就和留下的業績",
-          id: "Pencapaian dan warisan saya",
-          vi: "Những thành tựu và di sản tôi để lại"
+          ko: "평온과 안정",
+          en: "Peace and stability",
+          ja: "平穏と安定",
+          'zh-CN': "平静和稳定",
+          'zh-TW': "平靜和穩定",
+          id: "Kedamaian dan stabilitas",
+          vi: "Bình yên và ổn định"
         },
-        scores: { type1: 0, type2: 8, type3: 0, type4: 0, type5: 0, type6: 2 }
-      },
-      {
-        text: {
-          ko: "자유롭게 원하는 대로 살았던 순간들",
-          en: "Moments I lived freely as I wanted",
-          ja: "自由に望む通りに生きた瞬間",
-          "zh-CN": "自由自在地生活的瞬间",
-          "zh-TW": "自由自在地生活的瞬間",
-          id: "Momen-momen hidup bebas sesuai keinginan",
-          vi: "Những khoảnh khắc sống tự do theo ý muốn"
-        },
-        scores: { type1: 0, type2: 0, type3: 8, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "행복했던 일상의 작은 기쁨들",
-          en: "Small joys of everyday happiness",
-          ja: "幸せだった日常の小さな喜び",
-          "zh-CN": "日常中幸福的小快乐",
-          "zh-TW": "日常中幸福的小快樂",
-          id: "Kesenangan kecil dari kebahagiaan sehari-hari",
-          vi: "Những niềm vui nhỏ trong cuộc sống hạnh phúc hàng ngày"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 8, type5: 0, type6: 0 }
+        scores: { Type4: 8, Type5: 8 }
       }
     ]
   },
   {
     id: 3,
     question: {
-      ko: "갑자기 10억이 생긴다면?",
-      en: "If you suddenly had 1 billion won?",
-      ja: "突然10億円が生まれたら？",
-      "zh-CN": "如果突然有10亿韩元？",
-      "zh-TW": "如果突然有10億韓元？",
-      id: "Jika tiba-tiba punya 1 miliar won?",
-      vi: "Nếu đột nhiên có 1 tỷ won?"
+      ko: "선택해야 한다면?",
+      en: "If you had to choose?",
+      ja: "選ばなければならないなら？",
+      'zh-CN': "如果必须选择？",
+      'zh-TW': "如果必須選擇？",
+      id: "Jika harus memilih?",
+      vi: "Nếu phải chọn?"
     },
     options: [
       {
         text: {
-          ko: "가족과 사랑하는 사람들과 함께 쓸 것",
-          en: "Spend it with family and loved ones",
-          ja: "家族と愛する人と一緒に使う",
-          "zh-CN": "和家人爱人一起用",
-          "zh-TW": "和家人愛人一起用",
-          id: "Menghabiskannya dengan keluarga dan orang terkasih",
-          vi: "Dùng với gia đình và người thân yêu"
+          ko: "자유롭게 혼자",
+          en: "Free and alone",
+          ja: "自由に一人で",
+          'zh-CN': "自由地独自一人",
+          'zh-TW': "自由地獨自一人",
+          id: "Bebas sendirian",
+          vi: "Tự do một mình"
         },
-        scores: { type1: 8, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type3: 8, Type1: 2 }
       },
       {
         text: {
-          ko: "더 큰 성공을 위한 투자와 도전",
-          en: "Invest and challenge for greater success",
-          ja: "より大きな成功のための投資と挑戦",
-          "zh-CN": "为更大成功投资和挑战",
-          "zh-TW": "為更大成功投資和挑戰",
-          id: "Berinvestasi dan menantang untuk kesuksesan yang lebih besar",
-          vi: "Đầu tư và thử thách để thành công lớn hơn"
+          ko: "함께하지만 타협",
+          en: "Together but with compromise",
+          ja: "一緒だが妥協",
+          'zh-CN': "在一起但要妥协",
+          'zh-TW': "在一起但要妥協",
+          id: "Bersama tapi kompromi",
+          vi: "Cùng nhau nhưng phải thỏa hiệp"
         },
-        scores: { type1: 0, type2: 8, type3: 0, type4: 0, type5: 0, type6: 2 }
-      },
-      {
-        text: {
-          ko: "회사 그만두고 하고 싶은 거 다 하기",
-          en: "Quit work and do everything I want",
-          ja: "会社を辞めてやりたいことを全部やる",
-          "zh-CN": "辞职做所有想做的事",
-          "zh-TW": "辭職做所有想做的事",
-          id: "Berhenti kerja dan melakukan semua yang diinginkan",
-          vi: "Nghỉ việc và làm tất cả những gì muốn"
-        },
-        scores: { type1: 0, type2: 0, type3: 8, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "여유롭게 행복한 삶 즐기기",
-          en: "Enjoy a relaxed and happy life",
-          ja: "ゆったりと幸せな人生を楽しむ",
-          "zh-CN": "悠闲地享受幸福生活",
-          "zh-TW": "悠閒地享受幸福生活",
-          id: "Menikmati hidup santai dan bahagia",
-          vi: "Tận hưởng cuộc sống thoải mái và hạnh phúc"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 8, type5: 0, type6: 0 }
+        scores: { Type2: 8, Type4: 2 }
       }
     ]
   },
   {
     id: 4,
     question: {
-      ko: "직장을 선택할 때 가장 중요한 기준은?",
-      en: "What's most important when choosing a job?",
-      ja: "職場を選ぶ際に最も重要な基準は？",
-      "zh-CN": "选择工作时最重要的标准是什么？",
-      "zh-TW": "選擇工作時最重要的標準是什麼？",
-      id: "Apa yang paling penting saat memilih pekerjaan?",
-      vi: "Điều gì quan trọng nhất khi chọn công việc?"
+      ko: "관계에서 더 중요한 것은?",
+      en: "What is more important in relationships?",
+      ja: "関係でより重要なものは？",
+      'zh-CN': "关系中更重要的是什么？",
+      'zh-TW': "關係中更重要的是什麼？",
+      id: "Apa yang lebih penting dalam hubungan?",
+      vi: "Điều gì quan trọng hơn trong mối quan hệ?"
     },
     options: [
       {
         text: {
-          ko: "가족과 함께할 시간이 충분한지",
-          en: "Enough time with family",
-          ja: "家族と過ごす時間が十分か",
-          "zh-CN": "是否有足够时间陪伴家人",
-          "zh-TW": "是否有足夠時間陪伴家人",
-          id: "Waktu yang cukup bersama keluarga",
-          vi: "Có đủ thời gian với gia đình"
+          ko: "내가 사랑하는 것",
+          en: "What I love",
+          ja: "私が愛するもの",
+          'zh-CN': "我所爱的",
+          'zh-TW': "我所愛的",
+          id: "Yang saya cintai",
+          vi: "Điều tôi yêu thích"
         },
-        scores: { type1: 3, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type6: 8, Type5: 2 }
       },
       {
         text: {
-          ko: "성장 가능성과 성취감이 있는지",
-          en: "Growth potential and sense of achievement",
-          ja: "成長の可能性と達成感があるか",
-          "zh-CN": "是否有成长可能性和成就感",
-          "zh-TW": "是否有成長可能性和成就感",
-          id: "Potensi pertumbuhan dan rasa pencapaian",
-          vi: "Tiềm năng phát triển và cảm giác thành tựu"
+          ko: "나를 사랑해주는 것",
+          en: "What loves me",
+          ja: "私を愛してくれるもの",
+          'zh-CN': "爱我的",
+          'zh-TW': "愛我的",
+          id: "Yang mencintai saya",
+          vi: "Điều yêu thương tôi"
         },
-        scores: { type1: 0, type2: 3, type3: 0, type4: 0, type5: 2, type6: 0 }
-      },
-      {
-        text: {
-          ko: "자유롭고 제약이 적은지",
-          en: "Freedom and few restrictions",
-          ja: "自由で制約が少ないか",
-          "zh-CN": "是否自由且限制少",
-          "zh-TW": "是否自由且限制少",
-          id: "Kebebasan dan sedikit pembatasan",
-          vi: "Tự do và ít hạn chế"
-        },
-        scores: { type1: 0, type2: 0, type3: 3, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "즐겁고 스트레스 없는지",
-          en: "Enjoyable and stress-free",
-          ja: "楽しくストレスのないか",
-          "zh-CN": "是否愉快且无压力",
-          "zh-TW": "是否愉快且無壓力",
-          id: "Menyenangkan dan bebas stres",
-          vi: "Vui vẻ và không căng thẳng"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 3, type5: 0, type6: 0 }
+        scores: { Type2: 8 }
       }
     ]
   },
   {
     id: 5,
     question: {
-      ko: "친구가 전혀 다른 길을 가라고 조언한다면?",
-      en: "If a friend advises you to take a completely different path?",
-      ja: "友達が全く違う道を進むよう勧めたら？",
-      "zh-CN": "如果朋友建议你走完全不同的路？",
-      "zh-TW": "如果朋友建議你走完全不同的路？",
-      id: "Jika teman menyarankan jalan yang sama sekali berbeda?",
-      vi: "Nếu bạn bè khuyên bạn đi con đường hoàn toàn khác?"
+      ko: "인생의 우선순위는?",
+      en: "What is your life priority?",
+      ja: "人生の優先順位は？",
+      'zh-CN': "你的人生优先级是什么？",
+      'zh-TW': "你的人生優先級是什麼？",
+      id: "Apa prioritas hidup Anda?",
+      vi: "Ưu tiên trong cuộc sống của bạn là gì?"
     },
     options: [
       {
         text: {
-          ko: "가까운 사람들의 의견이 중요함",
-          en: "Opinions of close people matter",
-          ja: "身近な人の意見が重要",
-          "zh-CN": "亲近的人的意见很重要",
-          "zh-TW": "親近的人的意見很重要",
-          id: "Pendapat orang terdekat penting",
-          vi: "Ý kiến của người thân quan trọng"
+          ko: "나의 성장과 발전",
+          en: "My growth and development",
+          ja: "私の成長と発展",
+          'zh-CN': "我的成长和发展",
+          'zh-TW': "我的成長和發展",
+          id: "Pertumbuhan dan perkembangan saya",
+          vi: "Sự phát triển và tiến bộ của tôi"
         },
-        scores: { type1: 3, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type1: 8, Type3: 8 }
       },
       {
         text: {
-          ko: "내 목표에 맞는지가 중요함",
-          en: "Whether it matches my goals matters",
-          ja: "自分の目標に合っているかが重要",
-          "zh-CN": "是否符合我的目标很重要",
-          "zh-TW": "是否符合我的目標很重要",
-          id: "Apakah sesuai dengan tujuan saya",
-          vi: "Việc phù hợp với mục tiêu của tôi quan trọng"
+          ko: "소중한 사람들과의 관계",
+          en: "Relationships with precious people",
+          ja: "大切な人々との関係",
+          'zh-CN': "与珍贵的人的关系",
+          'zh-TW': "與珍貴的人的關係",
+          id: "Hubungan dengan orang-orang berharga",
+          vi: "Mối quan hệ với những người quý giá"
         },
-        scores: { type1: 0, type2: 2, type3: 0, type4: 0, type5: 8, type6: 2 }
-      },
-      {
-        text: {
-          ko: "내가 원하는 게 뭔지가 중요함",
-          en: "What I want matters",
-          ja: "自分が望むことが何かが重要",
-          "zh-CN": "我想要什么很重要",
-          "zh-TW": "我想要什麼很重要",
-          id: "Apa yang saya inginkan penting",
-          vi: "Điều tôi muốn quan trọng"
-        },
-        scores: { type1: 0, type2: 0, type3: 2, type4: 0, type5: 2, type6: 0 }
-      },
-      {
-        text: {
-          ko: "내가 행복할지가 중요함",
-          en: "Whether I'll be happy matters",
-          ja: "自分が幸せになれるかが重要",
-          "zh-CN": "我是否会快乐很重要",
-          "zh-TW": "我是否會快樂很重要",
-          id: "Apakah saya akan bahagia penting",
-          vi: "Việc tôi có hạnh phúc hay không quan trọng"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 2, type5: 0, type6: 8 }
+        scores: { Type2: 2, Type4: 2 }
       }
     ]
   },
   {
     id: 6,
     question: {
-      ko: "80세가 된 당신, 어떤 삶이었기를 바라나요?",
-      en: "What kind of life do you want at 80?",
-      ja: "80歳になったあなた、どんな人生だったら良いですか？",
-      "zh-CN": "80岁的你，希望过什么样的生活？",
-      "zh-TW": "80歲的你，希望過什麼樣的生活？",
-      id: "Pada usia 80, kehidupan seperti apa yang Anda inginkan?",
-      vi: "Ở tuổi 80, bạn muốn có cuộc sống như thế nào?"
+      ko: "주말을 보내는 이상적인 방법은?",
+      en: "What is your ideal way to spend weekends?",
+      ja: "週末を過ごす理想的な方法は？",
+      'zh-CN': "度过周末的理想方式是什么？",
+      'zh-TW': "度過週末的理想方式是什麼？",
+      id: "Apa cara ideal Anda menghabiskan akhir pekan?",
+      vi: "Cách lý tưởng để trải qua cuối tuần của bạn là gì?"
     },
     options: [
       {
         text: {
-          ko: "사랑받고 사랑했던 삶",
-          en: "A life loved and loving",
-          ja: "愛され愛した人生",
-          "zh-CN": "被爱并爱过的生活",
-          "zh-TW": "被愛並愛過的生活",
-          id: "Hidup dicintai dan mencintai",
-          vi: "Cuộc sống được yêu và đã yêu"
+          ko: "새로운 경험과 도전",
+          en: "New experiences and challenges",
+          ja: "新しい経験と挑戦",
+          'zh-CN': "新的体验和挑战",
+          'zh-TW': "新的體驗和挑戰",
+          id: "Pengalaman dan tantangan baru",
+          vi: "Trải nghiệm và thử thách mới"
         },
-        scores: { type1: 8, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type6: 8, Type3: 2 }
       },
       {
         text: {
-          ko: "성공하고 인정받았던 삶",
-          en: "A successful and recognized life",
-          ja: "成功し認められた人生",
-          "zh-CN": "成功且被认可的生活",
-          "zh-TW": "成功且被認可的生活",
-          id: "Hidup sukses dan diakui",
-          vi: "Cuộc sống thành công và được công nhận"
+          ko: "편안한 휴식과 충전",
+          en: "Comfortable rest and recharge",
+          ja: "快適な休息と充電",
+          'zh-CN': "舒适的休息和充电",
+          'zh-TW': "舒適的休息和充電",
+          id: "Istirahat dan pengisian yang nyaman",
+          vi: "Nghỉ ngơi thoải mái và nạp năng lượng"
         },
-        scores: { type1: 0, type2: 8, type3: 0, type4: 0, type5: 0, type6: 2 }
-      },
-      {
-        text: {
-          ko: "자유롭고 제약 없었던 삶",
-          en: "A free and unrestricted life",
-          ja: "自由で制約のない人生",
-          "zh-CN": "自由且无限制的生活",
-          "zh-TW": "自由且無限制的生活",
-          id: "Hidup bebas dan tanpa pembatasan",
-          vi: "Cuộc sống tự do và không bị hạn chế"
-        },
-        scores: { type1: 0, type2: 0, type3: 8, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "평온하고 행복했던 삶",
-          en: "A peaceful and happy life",
-          ja: "平穏で幸せだった人生",
-          "zh-CN": "平静且幸福的生活",
-          "zh-TW": "平靜且幸福的生活",
-          id: "Hidup damai dan bahagia",
-          vi: "Cuộc sống bình yên và hạnh phúc"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 8, type5: 0, type6: 0 }
+        scores: { Type4: 8, Type5: 8 }
       }
     ]
   },
   {
     id: 7,
     question: {
-      ko: "힘든 결정을 내려야 할 때, 무엇을 가장 먼저 생각하나요?",
-      en: "When making difficult decisions, what do you think about first?",
-      ja: "難しい決断を下すとき、まず何を考えますか？",
-      "zh-CN": "做艰难决定时，你首先考虑什么？",
-      "zh-TW": "做艱難決定時，你首先考慮什麼？",
-      id: "Saat membuat keputusan sulit, apa yang pertama Anda pikirkan?",
-      vi: "Khi đưa ra quyết định khó khăn, bạn nghĩ đến điều gì đầu tiên?"
+      ko: "더 가치있다고 생각하는 것은?",
+      en: "What do you think is more valuable?",
+      ja: "より価値があると思うものは？",
+      'zh-CN': "你认为更有价值的是什么？",
+      'zh-TW': "你認為更有價值的是什麼？",
+      id: "Apa yang menurut Anda lebih berharga?",
+      vi: "Bạn nghĩ điều gì có giá trị hơn?"
     },
     options: [
       {
         text: {
-          ko: "주변 사람들에게 미치는 영향",
-          en: "Impact on people around me",
-          ja: "周りの人への影響",
-          "zh-CN": "对周围人的影响",
-          "zh-TW": "對周圍人的影響",
-          id: "Dampak pada orang sekitar",
-          vi: "Ảnh hưởng đến những người xung quanh"
+          ko: "많은 사람들과 넓은 인연",
+          en: "Many people and wide connections",
+          ja: "多くの人々との広い縁",
+          'zh-CN': "与很多人的广泛人脉",
+          'zh-TW': "與很多人的廣泛人脈",
+          id: "Banyak orang dan koneksi luas",
+          vi: "Nhiều người và mối quan hệ rộng"
         },
-        scores: { type1: 3, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type3: 8 }
       },
       {
         text: {
-          ko: "내 미래 목표에 도움이 되는지",
-          en: "Whether it helps my future goals",
-          ja: "自分の将来の目標に役立つか",
-          "zh-CN": "是否有助于我未来的目标",
-          "zh-TW": "是否有助於我未來的目標",
-          id: "Apakah membantu tujuan masa depan saya",
-          vi: "Có giúp ích cho mục tiêu tương lai của tôi không"
+          ko: "소수와의 깊은 관계",
+          en: "Deep relationships with a few",
+          ja: "少数との深い関係",
+          'zh-CN': "与少数人的深厚关系",
+          'zh-TW': "與少數人的深厚關係",
+          id: "Hubungan mendalam dengan sedikit orang",
+          vi: "Mối quan hệ sâu sắc với ít người"
         },
-        scores: { type1: 0, type2: 2, type3: 0, type4: 0, type5: 8, type6: 2 }
-      },
-      {
-        text: {
-          ko: "내가 진짜 원하는 게 뭔지",
-          en: "What I really want",
-          ja: "自分が本当に望むことは何か",
-          "zh-CN": "我真正想要什么",
-          "zh-TW": "我真正想要什麼",
-          id: "Apa yang benar-benar saya inginkan",
-          vi: "Điều tôi thực sự muốn"
-        },
-        scores: { type1: 0, type2: 0, type3: 2, type4: 0, type5: 2, type6: 0 }
-      },
-      {
-        text: {
-          ko: "어떤 선택이 더 편안하고 행복한지",
-          en: "Which choice is more comfortable and happy",
-          ja: "どの選択がより快適で幸せか",
-          "zh-CN": "哪个选择更舒适快乐",
-          "zh-TW": "哪個選擇更舒適快樂",
-          id: "Pilihan mana yang lebih nyaman dan bahagia",
-          vi: "Lựa chọn nào thoải mái và hạnh phúc hơn"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 2, type5: 0, type6: 8 }
+        scores: { Type2: 8 }
       }
     ]
   },
   {
     id: 8,
     question: {
-      ko: "1년의 안식년이 주어진다면?",
-      en: "If given a year-long sabbatical?",
-      ja: "1年間のサバティカルが与えられたら？",
-      "zh-CN": "如果给一年休假？",
-      "zh-TW": "如果給一年休假？",
-      id: "Jika diberi sabatikal selama setahun?",
-      vi: "Nếu được cho nghỉ phép một năm?"
+      ko: "갈등 상황에서?",
+      en: "In conflict situations?",
+      ja: "対立状況では？",
+      'zh-CN': "在冲突情况下？",
+      'zh-TW': "在衝突情況下？",
+      id: "Dalam situasi konflik?",
+      vi: "Trong tình huống xung đột?"
     },
     options: [
       {
         text: {
-          ko: "가족, 친구들과 깊은 시간 보내기",
-          en: "Spend deep time with family and friends",
-          ja: "家族、友人と深い時間を過ごす",
-          "zh-CN": "与家人朋友共度深度时光",
-          "zh-TW": "與家人朋友共度深度時光",
-          id: "Menghabiskan waktu yang dalam dengan keluarga dan teman",
-          vi: "Dành thời gian sâu sắc với gia đình và bạn bè"
+          ko: "내 의견을 관철시키는 것",
+          en: "Getting my opinion across",
+          ja: "私の意見を通すこと",
+          'zh-CN': "坚持我的观点",
+          'zh-TW': "堅持我的觀點",
+          id: "Menyampaikan pendapat saya",
+          vi: "Thể hiện ý kiến của tôi"
         },
-        scores: { type1: 3, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type1: 8, Type5: 8 }
       },
       {
         text: {
-          ko: "자기계발과 새로운 도전",
-          en: "Self-development and new challenges",
-          ja: "自己啓発と新しい挑戦",
-          "zh-CN": "自我提升和新挑战",
-          "zh-TW": "自我提升和新挑戰",
-          id: "Pengembangan diri dan tantangan baru",
-          vi: "Phát triển bản thân và thử thách mới"
+          ko: "관계를 유지하는 것",
+          en: "Maintaining the relationship",
+          ja: "関係を維持すること",
+          'zh-CN': "维持关系",
+          'zh-TW': "維持關係",
+          id: "Mempertahankan hubungan",
+          vi: "Duy trì mối quan hệ"
         },
-        scores: { type1: 0, type2: 3, type3: 0, type4: 0, type5: 2, type6: 2 }
-      },
-      {
-        text: {
-          ko: "세계여행이나 버킷리스트 실현",
-          en: "World travel or fulfilling bucket list",
-          ja: "世界旅行やバケットリスト実現",
-          "zh-CN": "世界旅行或实现愿望清单",
-          "zh-TW": "世界旅行或實現願望清單",
-          id: "Perjalanan dunia atau mewujudkan daftar keinginan",
-          vi: "Du lịch thế giới hoặc thực hiện danh sách mong muốn"
-        },
-        scores: { type1: 0, type2: 0, type3: 3, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "쉬면서 여유롭게 즐기기",
-          en: "Rest and enjoy leisurely",
-          ja: "休みながらゆったり楽しむ",
-          "zh-CN": "休息并悠闲享受",
-          "zh-TW": "休息並悠閒享受",
-          id: "Beristirahat dan menikmati dengan santai",
-          vi: "Nghỉ ngơi và tận hưởng nhàn nhã"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 3, type5: 0, type6: 0 }
+        scores: { Type2: 2, Type4: 2 }
       }
     ]
   },
   {
     id: 9,
     question: {
-      ko: "당신에게 성공이란?",
-      en: "What is success to you?",
-      ja: "あなたにとって成功とは？",
-      "zh-CN": "对你来说成功是什么？",
-      "zh-TW": "對你來說成功是什麼？",
-      id: "Apa itu kesuksesan bagimu?",
-      vi: "Thành công đối với bạn là gì?"
+      ko: "돈 vs 시간",
+      en: "Money vs Time",
+      ja: "お金 vs 時間",
+      'zh-CN': "金钱 vs 时间",
+      'zh-TW': "金錢 vs 時間",
+      id: "Uang vs Waktu",
+      vi: "Tiền bạc vs Thời gian"
     },
     options: [
       {
         text: {
-          ko: "사랑하는 사람들과 좋은 관계 유지",
-          en: "Maintaining good relationships with loved ones",
-          ja: "愛する人との良い関係を維持すること",
-          "zh-CN": "与所爱的人保持良好关系",
-          "zh-TW": "與所愛的人保持良好關係",
-          id: "Mempertahankan hubungan baik dengan orang terkasih",
-          vi: "Duy trì mối quan hệ tốt với người thân yêu"
+          ko: "돈을 더 벌어서 나중에 여유",
+          en: "Earn more money for later freedom",
+          ja: "もっとお金を稼いで後で余裕を",
+          'zh-CN': "赚更多钱以后享受",
+          'zh-TW': "賺更多錢以後享受",
+          id: "Cari lebih banyak uang untuk kebebasan nanti",
+          vi: "Kiếm nhiều tiền hơn để sau này thoải mái"
         },
-        scores: { type1: 8, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type1: 8, Type3: 8, Type5: 8 }
       },
       {
         text: {
-          ko: "목표 달성과 사회적 인정",
-          en: "Achieving goals and social recognition",
-          ja: "目標達成と社会的承認",
-          "zh-CN": "实现目标和社会认可",
-          "zh-TW": "實現目標和社會認可",
-          id: "Mencapai tujuan dan pengakuan sosial",
-          vi: "Đạt được mục tiêu và sự công nhận xã hội"
+          ko: "시간 여유를 가지며 지금 즐기기",
+          en: "Take time to enjoy now",
+          ja: "時間の余裕を持って今を楽しむ",
+          'zh-CN': "现在享受时间自由",
+          'zh-TW': "現在享受時間自由",
+          id: "Nikmati waktu luang sekarang",
+          vi: "Tận hưởng thời gian rảnh rỗi ngay bây giờ"
         },
-        scores: { type1: 0, type2: 8, type3: 0, type4: 0, type5: 0, type6: 2 }
-      },
-      {
-        text: {
-          ko: "원하는 대로 살 수 있는 자유",
-          en: "Freedom to live as I want",
-          ja: "望む通りに生きられる自由",
-          "zh-CN": "按自己意愿生活的自由",
-          "zh-TW": "按自己意願生活的自由",
-          id: "Kebebasan untuk hidup sesuai keinginan",
-          vi: "Tự do sống theo ý muốn"
-        },
-        scores: { type1: 0, type2: 0, type3: 8, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "매일 행복하고 만족스러운 삶",
-          en: "Happy and satisfying life every day",
-          ja: "毎日幸せで満足できる人生",
-          "zh-CN": "每天快乐且满足的生活",
-          "zh-TW": "每天快樂且滿足的生活",
-          id: "Hidup bahagia dan memuaskan setiap hari",
-          vi: "Cuộc sống hạnh phúc và thỏa mãn mỗi ngày"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 8, type5: 0, type6: 0 }
+        scores: { Type4: 2 }
       }
     ]
   },
   {
     id: 10,
     question: {
-      ko: "지금 당장 무엇이 채워지면 만족할까요?",
-      en: "What would satisfy you right now?",
-      ja: "今すぐ何が満たされれば満足しますか？",
-      "zh-CN": "现在立即什么会让你满足？",
-      "zh-TW": "現在立即什麼會讓你滿足？",
-      id: "Apa yang akan memuaskanmu sekarang?",
-      vi: "Điều gì sẽ làm bạn thỏa mãn ngay bây giờ?"
+      ko: "인생의 목표는?",
+      en: "What is your life goal?",
+      ja: "人生の目標は？",
+      'zh-CN': "你的人生目标是什么？",
+      'zh-TW': "你的人生目標是什麼？",
+      id: "Apa tujuan hidup Anda?",
+      vi: "Mục tiêu cuộc sống của bạn là gì?"
     },
     options: [
       {
         text: {
-          ko: "더 깊고 진실한 관계",
-          en: "Deeper and truer relationships",
-          ja: "より深く真実な関係",
-          "zh-CN": "更深层和真实的关系",
-          "zh-TW": "更深層和真實的關係",
-          id: "Hubungan yang lebih dalam dan benar",
-          vi: "Mối quan hệ sâu sắc và chân thật hơn"
+          ko: "크게 성공하고 인정받기",
+          en: "Achieve great success and recognition",
+          ja: "大きく成功して認められること",
+          'zh-CN': "取得巨大成功并获得认可",
+          'zh-TW': "取得巨大成功並獲得認可",
+          id: "Mencapai kesuksesan besar dan pengakuan",
+          vi: "Đạt được thành công lớn và được công nhận"
         },
-        scores: { type1: 3, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type1: 8, Type6: 8 }
       },
       {
         text: {
-          ko: "더 큰 성취와 발전",
-          en: "Greater achievements and growth",
-          ja: "より大きな成果と発展",
-          "zh-CN": "更大的成就和发展",
-          "zh-TW": "更大的成就和發展",
-          id: "Pencapaian dan pertumbuhan yang lebih besar",
-          vi: "Thành tựu và phát triển lớn hơn"
+          ko: "행복하고 만족스럽게 살기",
+          en: "Live happily and contentedly",
+          ja: "幸せで満足して生きること",
+          'zh-CN': "幸福满足地生活",
+          'zh-TW': "幸福滿足地生活",
+          id: "Hidup bahagia dan puas",
+          vi: "Sống hạnh phúc và mãn nguyện"
         },
-        scores: { type1: 0, type2: 2, type3: 0, type4: 0, type5: 8, type6: 2 }
-      },
-      {
-        text: {
-          ko: "더 많은 자유와 선택권",
-          en: "More freedom and choices",
-          ja: "より多くの自由と選択権",
-          "zh-CN": "更多自由和选择权",
-          "zh-TW": "更多自由和選擇權",
-          id: "Lebih banyak kebebasan dan pilihan",
-          vi: "Nhiều tự do và lựa chọn hơn"
-        },
-        scores: { type1: 0, type2: 0, type3: 3, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "더 많은 평온과 즐거움",
-          en: "More peace and joy",
-          ja: "より多くの平穏と喜び",
-          "zh-CN": "更多平静和快乐",
-          "zh-TW": "更多平靜和快樂",
-          id: "Lebih banyak kedamaian dan kegembiraan",
-          vi: "Nhiều bình yên và niềm vui hơn"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 2, type5: 0, type6: 8 }
+        scores: { Type4: 8, Type2: 2 }
       }
     ]
   },
   {
     id: 11,
     question: {
-      ko: "당신의 장례식에서 사람들이 뭐라고 말하길 바라나요?",
-      en: "What do you want people to say at your funeral?",
-      ja: "あなたの葬儀で人々に何と言ってほしいですか？",
-      "zh-CN": "你希望人们在你的葬礼上说什么？",
-      "zh-TW": "你希望人們在你的葬禮上說什麼？",
-      id: "Apa yang ingin orang katakan di pemakamanmu?",
-      vi: "Bạn muốn mọi người nói gì tại đám tang của bạn?"
+      ko: "사랑하는 사람이 힘들어할 때?",
+      en: "When someone you love is struggling?",
+      ja: "愛する人が苦しんでいるとき？",
+      'zh-CN': "当你爱的人遇到困难时？",
+      'zh-TW': "當你愛的人遇到困難時？",
+      id: "Ketika orang yang Anda cintai sedang berjuang?",
+      vi: "Khi người bạn yêu đang gặp khó khăn?"
     },
     options: [
       {
         text: {
-          ko: "\"정말 사랑이 많은 사람이었어\"",
-          en: "\"A truly loving person\"",
-          ja: "「本当に愛にあふれた人だった」",
-          "zh-CN": "「真是个充满爱的人」",
-          "zh-TW": "「真是個充滿愛的人」",
-          id: "\"Orang yang benar-benar penuh cinta\"",
-          vi: "\"Người thực sự đầy tình yêu\""
+          ko: "문제 해결을 도와줌",
+          en: "Help solve the problem",
+          ja: "問題解決を手伝う",
+          'zh-CN': "帮助解决问题",
+          'zh-TW': "幫助解決問題",
+          id: "Membantu menyelesaikan masalah",
+          vi: "Giúp giải quyết vấn đề"
         },
-        scores: { type1: 3, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type5: 8, Type1: 2 }
       },
       {
         text: {
-          ko: "\"훌륭한 업적을 남긴 사람이었어\"",
-          en: "\"Left great achievements\"",
-          ja: "「素晴らしい功績を残した人だった」",
-          "zh-CN": "「留下了杰出成就的人」",
-          "zh-TW": "「留下了傑出成就的人」",
-          id: "\"Meninggalkan pencapaian besar\"",
-          vi: "\"Để lại thành tựu vĩ đại\""
+          ko: "곁에서 감정적 위로",
+          en: "Provide emotional comfort by their side",
+          ja: "そばで感情的慰め",
+          'zh-CN': "在身边给予情感安慰",
+          'zh-TW': "在身邊給予情感安慰",
+          id: "Memberikan kenyamanan emosional di samping mereka",
+          vi: "An ủi tình cảm bên cạnh họ"
         },
-        scores: { type1: 0, type2: 3, type3: 0, type4: 0, type5: 8, type6: 2 }
-      },
-      {
-        text: {
-          ko: "\"자기 인생을 멋지게 산 사람이었어\"",
-          en: "\"Lived life magnificently\"",
-          ja: "「自分の人生を素晴らしく生きた人だった」",
-          "zh-CN": "「精彩地过完自己人生的人」",
-          "zh-TW": "「精彩地過完自己人生的人」",
-          id: "\"Hidup dengan luar biasa\"",
-          vi: "\"Đã sống cuộc đời tuyệt vời\""
-        },
-        scores: { type1: 0, type2: 0, type3: 2, type4: 0, type5: 2, type6: 0 }
-      },
-      {
-        text: {
-          ko: "\"항상 행복해 보이던 사람이었어\"",
-          en: "\"Always seemed happy\"",
-          ja: "「いつも幸せそうに見えた人だった」",
-          "zh-CN": "「总是看起来很幸福的人」",
-          "zh-TW": "「總是很幸福的樣子的人」",
-          id: "\"Selalu terlihat bahagia\"",
-          vi: "\"Luôn có vẻ hạnh phúc\""
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 2, type5: 0, type6: 8 }
+        scores: { Type2: 8, Type4: 2 }
       }
     ]
   },
   {
     id: 12,
     question: {
-      ko: "인생에서 절대 포기하고 싶지 않은 것은?",
-      en: "What you absolutely don't want to give up in life?",
-      ja: "人生で絶対に諦めたくないことは？",
-      "zh-CN": "生活中你绝对不想放弃的是什么？",
-      "zh-TW": "生活中你絕對不想放棄的是什麼？",
-      id: "Apa yang sama sekali tidak ingin kamu lepaskan dalam hidup?",
-      vi: "Điều gì bạn hoàn toàn không muốn từ bỏ trong cuộc sống?"
+      ko: "당신의 인생 철학은?",
+      en: "What is your life philosophy?",
+      ja: "あなたの人生哲学は？",
+      'zh-CN': "你的人生哲学是什么？",
+      'zh-TW': "你的人生哲學是什麼？",
+      id: "Apa filosofi hidup Anda?",
+      vi: "Triết lý cuộc sống của bạn là gì?"
     },
     options: [
       {
         text: {
-          ko: "소중한 관계와 유대감",
-          en: "Precious relationships and bonds",
-          ja: "大切な関係と絆",
-          "zh-CN": "珍贵的关系和纽带",
-          "zh-TW": "珍貴的關係和紐帶",
-          id: "Hubungan dan ikatan yang berharga",
-          vi: "Mối quan hệ và sợi dây liên kết quý giá"
+          ko: "후회 없이 도전하며 살기",
+          en: "Live without regret, taking challenges",
+          ja: "後悔なく挑戦して生きる",
+          'zh-CN': "无怨无悔地挑战生活",
+          'zh-TW': "無怨無悔地挑戰生活",
+          id: "Hidup tanpa penyesalan, mengambil tantangan",
+          vi: "Sống không hối tiếc, dám thử thách"
         },
-        scores: { type1: 3, type2: 0, type3: 0, type4: 0, type5: 0, type6: 0 }
+        scores: { Type6: 2, Type3: 2 }
       },
       {
         text: {
-          ko: "나의 꿈과 성장",
-          en: "My dreams and growth",
-          ja: "自分の夢と成長",
-          "zh-CN": "我的梦想和成长",
-          "zh-TW": "我的夢想和成長",
-          id: "Impian dan pertumbuhan saya",
-          vi: "Ước mơ và sự phát triển của tôi"
+          ko: "소중한 것들을 지키며 살기",
+          en: "Live protecting precious things",
+          ja: "大切なものを守って生きる",
+          'zh-CN': "守护珍贵的东西生活",
+          'zh-TW': "守護珍貴的東西生活",
+          id: "Hidup melindungi hal-hal berharga",
+          vi: "Sống bảo vệ những điều quý giá"
         },
-        scores: { type1: 0, type2: 2, type3: 0, type4: 0, type5: 8, type6: 2 }
-      },
-      {
-        text: {
-          ko: "나의 자유와 독립성",
-          en: "My freedom and independence",
-          ja: "自分の自由と独立性",
-          "zh-CN": "我的自由和独立",
-          "zh-TW": "我的自由和獨立",
-          id: "Kebebasan dan kemandirian saya",
-          vi: "Tự do và độc lập của tôi"
-        },
-        scores: { type1: 0, type2: 0, type3: 3, type4: 0, type5: 0, type6: 0 }
-      },
-      {
-        text: {
-          ko: "나의 평화와 행복",
-          en: "My peace and happiness",
-          ja: "自分の平和と幸せ",
-          "zh-CN": "我的平静和幸福",
-          "zh-TW": "我的平靜和幸福",
-          id: "Kedamaian dan kebahagiaan saya",
-          vi: "Sự bình yên và hạnh phúc của tôi"
-        },
-        scores: { type1: 0, type2: 0, type3: 0, type4: 2, type5: 0, type6: 8 }
+        scores: { Type4: 8, Type2: 2 }
       }
     ]
   }
 ];
 
-// 6가지 결과
 export const lifePrioritiesResults: LifePrioritiesResult[] = [
   {
-    type: 'type1',
-    emoji: '💕',
+    type: "Type1",
+    emoji: "🏆",
     title: {
-      ko: '관계 중심형',
-      en: 'Relationship-Focused',
-      ja: '関係中心型',
-      "zh-CN": '关系中心型',
-      "zh-TW": '關係中心型',
-      id: 'Fokus Hubungan',
-      vi: 'Trọng tâm Mối quan hệ'
+      ko: "성취 지향형",
+      en: "Achievement-Oriented",
+      ja: "達成志向型",
+      'zh-CN': "成就导向型",
+      'zh-TW': "成就導向型",
+      id: "Berorientasi Pencapaian",
+      vi: "Định Hướng Thành Tích"
     },
     description: {
-      ko: '"사랑이 전부! 사람이 최고의 가치"\n인생에서 가장 중요한 것은 사람입니다. 가족, 연인, 친구와의 관계가 성공이나 돈보다 우선입니다. 혼자 성공하는 것보다 함께 행복한 것을 선택합니다. 사랑하고 사랑받는 것이 인생의 목표이며, 관계 속에서 의미를 찾습니다. 따뜻하고 헌신적이지만 때로는 자신을 잃을 수 있으니 균형이 필요합니다.',
-      en: '"Love is everything! People are the greatest value"\nThe most important thing in life is people. Relationships with family, lovers, and friends take priority over success or money. You choose happiness together over achieving alone. Loving and being loved is the goal of life, and you find meaning in relationships. Warm and devoted, but may lose yourself sometimes, so balance is needed.',
-      ja: '「愛がすべて！人が最高の価値」\n人生で最も重要なのは人です。家族、恋人、友人との関係が成功やお金より優先されます。一人で成功するより一緒に幸せになることを選びます。愛し愛されることが人生の目標であり、関係の中で意味を見出します。温かく献身的ですが、時には自分を見失うこともあるのでバランスが必要です。',
-      "zh-CN": '"爱是一切！人是最高价值"\n生活中最重要的是人。与家人、恋人、朋友的关系优先于成功或金钱。比起独自成功，你选择一起幸福。爱与被爱是人生目标，你在关系中寻找意义。温暖且奉献，但有时可能迷失自我，所以需要平衡。',
-      "zh-TW": '"愛是一切！人是最高價值"\n生活中最重要的是人。與家人、戀人、朋友的關係優先於成功或金錢。比起獨自成功，你選擇一起幸福。愛與被愛是人生目標，你在關係中尋找意義。溫暖且奉獻，但有時可能迷失自我，所以需要平衡。',
-      id: '"Cinta adalah segalanya! Orang adalah nilai terbesar"\nYang paling penting dalam hidup adalah orang. Hubungan dengan keluarga, kekasih, dan teman lebih diutamakan daripada kesuksesan atau uang. Kamu memilih kebahagiaan bersama daripada mencapai sendiri. Mencintai dan dicintai adalah tujuan hidup, dan kamu menemukan makna dalam hubungan. Hangat dan setia, tapi kadang kehilangan diri sendiri, jadi keseimbangan diperlukan.',
-      vi: '"Tình yêu là tất cả! Con người là giá trị lớn nhất"\nĐiều quan trọng nhất trong cuộc sống là con người. Mối quan hệ với gia đình, người yêu và bạn bè được ưu tiên hơn thành công hay tiền bạc. Bạn chọn hạnh phúc cùng nhau thay vì đạt được một mình. Yêu và được yêu là mục tiêu cuộc sống, và bạn tìm thấy ý nghĩa trong các mối quan hệ. Ấm áp và tận tụy, nhưng đôi khi có thể mất đi bản thân, nên cần cân bằng.'
+      ko: "성공이 곧 나! 꿈을 향해 달리는 야심가",
+      en: "Success is me! An ambitious person running towards dreams",
+      ja: "成功こそ私！夢に向かって走る野心家",
+      'zh-CN': "成功就是我！奔向梦想的野心家",
+      'zh-TW': "成功就是我！奔向夢想的野心家",
+      id: "Kesuksesan adalah saya! Orang ambisius yang berlari menuju mimpi",
+      vi: "Thành công chính là tôi! Người đầy tham vọng chạy về phía ước mơ"
     },
-    coreValues: {
-      ko: '사랑, 가족, 우정, 유대감',
-      en: 'Love, family, friendship, bonds',
-      ja: '愛、家族、友情、絆',
-      "zh-CN": '爱、家庭、友谊、纽带',
-      "zh-TW": '愛、家庭、友誼、紐帶',
-      id: 'Cinta, keluarga, persahabatan, ikatan',
-      vi: 'Tình yêu, gia đình, tình bạn, sợi dây liên kết'
+    characteristics: {
+      ko: "개인의 성장과 성취를 최우선으로 여깁니다. 커리어와 자기계발이 가장 중요하며, 관계보다 목표 달성에 집중합니다. 열정적이고 야심차게 살아가며 성공을 위해서는 희생도 감수합니다. 인정받고 싶고 크게 성공하고 싶은 욕구가 강합니다. 다만 관계나 건강을 소홀히 할 수 있으니 균형이 필요합니다.",
+      en: "Prioritizes personal growth and achievement above all. Career and self-development are most important, focusing on goal achievement rather than relationships. Lives passionately and ambitiously, willing to make sacrifices for success. Has a strong desire to be recognized and achieve great success. However, may neglect relationships or health, so balance is needed.",
+      ja: "個人の成長と達成を最優先にします。キャリアと自己啓発が最も重要で、関係よりも目標達成に集中します。情熱的で野心的に生き、成功のためには犠牲も受け入れます。認められたい、大きく成功したい欲求が強いです。ただし関係や健康を疎かにする可能性があるのでバランスが必要です。",
+      'zh-CN': "将个人成长和成就放在首位。职业和自我发展最重要，专注于目标实现而非关系。充满激情和野心地生活，愿意为成功做出牺牲。有强烈的被认可和取得巨大成功的欲望。但可能会忽视关系或健康，所以需要平衡。",
+      'zh-TW': "將個人成長和成就放在首位。職業和自我發展最重要，專注於目標實現而非關係。充滿激情和野心地生活，願意為成功做出犧牲。有強烈的被認可和取得巨大成功的慾望。但可能會忽視關係或健康，所以需要平衡。",
+      id: "Mengutamakan pertumbuhan dan pencapaian pribadi di atas segalanya. Karier dan pengembangan diri paling penting, fokus pada pencapaian tujuan daripada hubungan. Hidup dengan penuh semangat dan ambisi, bersedia berkorban untuk kesuksesan. Memiliki keinginan kuat untuk diakui dan mencapai kesuksesan besar. Namun mungkin mengabaikan hubungan atau kesehatan, jadi keseimbangan diperlukan.",
+      vi: "Ưu tiên sự phát triển cá nhân và thành tích trên tất cả. Sự nghiệp và phát triển bản thân quan trọng nhất, tập trung vào việc đạt mục tiêu hơn là các mối quan hệ. Sống đầy đam mê và tham vọng, sẵn sàng hy sinh vì thành công. Có mong muốn mạnh mẽ được công nhận và đạt được thành công lớn. Tuy nhiên có thể bỏ bê các mối quan hệ hoặc sức khỏe, nên cần cân bằng."
     },
-    strengths: [
-      { ko: '따뜻함', en: 'Warmth', ja: '温かさ', "zh-CN": '温暖', "zh-TW": '溫暖', id: 'Kehangatan', vi: 'Ấm áp' },
-      { ko: '헌신', en: 'Devotion', ja: '献身', "zh-CN": '奉献', "zh-TW": '奉獻', id: 'Pengabdian', vi: 'Tận tụy' },
-      { ko: '공감', en: 'Empathy', ja: '共感', "zh-CN": '共情', "zh-TW": '共情', id: 'Empati', vi: 'Đồng cảm' },
-      { ko: '관계 능력', en: 'Relationship skills', ja: '関係能力', "zh-CN": '关系能力', "zh-TW": '關係能力', id: 'Keterampilan hubungan', vi: 'Kỹ năng quan hệ' }
-    ],
-    weaknesses: [
-      { ko: '자아 상실 위험', en: 'Risk of losing self', ja: '自己喪失のリスク', "zh-CN": '自我迷失风险', "zh-TW": '自我迷失風險', id: 'Risiko kehilangan diri', vi: 'Nguy cơ mất bản thân' },
-      { ko: '의존성', en: 'Dependency', ja: '依存性', "zh-CN": '依赖性', "zh-TW": '依賴性', id: 'Ketergantungan', vi: 'Sự phụ thuộc' },
-      { ko: '이별 힘듦', en: 'Difficult separation', ja: '別れが辛い', "zh-CN": '离别痛苦', "zh-TW": '離別痛苦', id: 'Perpisahan sulit', vi: 'Chia ly khó khăn' }
-    ],
+    impression: {
+      ko: "핵심 가치: 성공, 성장, 인정, 목표",
+      en: "Core values: Success, growth, recognition, goals",
+      ja: "核心価値：成功、成長、承認、目標",
+      'zh-CN': "核心价值：成功、成长、认可、目标",
+      'zh-TW': "核心價值：成功、成長、認可、目標",
+      id: "Nilai inti: Kesuksesan, pertumbuhan, pengakuan, tujuan",
+      vi: "Giá trị cốt lõi: Thành công, phát triển, công nhận, mục tiêu"
+    },
+    pros: {
+      ko: "추진력, 열정, 성취욕, 발전",
+      en: "Drive, passion, achievement desire, development",
+      ja: "推進力、情熱、達成欲、発展",
+      'zh-CN': "推动力、激情、成就欲、发展",
+      'zh-TW': "推動力、激情、成就慾、發展",
+      id: "Dorongan, gairah, keinginan pencapaian, pengembangan",
+      vi: "Động lực, đam mê, khát vọng thành tích, phát triển"
+    },
+    cons: {
+      ko: "관계 소홀, 번아웃, 외로움",
+      en: "Neglecting relationships, burnout, loneliness",
+      ja: "関係軽視、燃え尽き、孤独",
+      'zh-CN': "忽视关系、倦怠、孤独",
+      'zh-TW': "忽視關係、倦怠、孤獨",
+      id: "Mengabaikan hubungan, kelelahan, kesepian",
+      vi: "Bỏ bê mối quan hệ, kiệt sức, cô đơn"
+    },
     advice: {
-      ko: '사람도 중요하지만 나 자신도 소중해요. 건강한 관계는 독립적인 두 사람이 만듭니다.',
-      en: 'People are important, but you are precious too. Healthy relationships are built by two independent people.',
-      ja: '人も大切ですが、自分自身も大切です。健全な関係は独立した二人が作ります。',
-      "zh-CN": '人固然重要，但你自己也很珍贵。健康的关系是由两个独立的人建立的。',
-      "zh-TW": '人固然重要，但你自己也很珍貴。健康的關係是由兩個獨立的人建立的。',
-      id: 'Orang penting, tapi kamu juga berharga. Hubungan sehat dibangun oleh dua orang yang mandiri.',
-      vi: 'Con người quan trọng, nhưng bạn cũng quý giá. Mối quan hệ lành mạnh được xây dựng bởi hai người độc lập.'
-    },
-    compatibility: {
-      best: ['type1'],
-      good: ['type4'],
-      careful: ['type2', 'type3']
+      ko: "성공도 중요하지만 과정을 함께할 사람도 필요해요. 때로는 멈춰서 주변을 돌아보세요.",
+      en: "Success is important, but you also need people to share the journey with. Sometimes stop and look around.",
+      ja: "成功も重要ですが、過程を共にする人も必要です。時には立ち止まって周りを見回してください。",
+      'zh-CN': "成功很重要，但你也需要有人一起分享这个过程。有时停下来环顾四周。",
+      'zh-TW': "成功很重要，但你也需要有人一起分享這個過程。有時停下來環顧四周。",
+      id: "Kesuksesan penting, tapi Anda juga perlu orang untuk berbagi perjalanan. Terkadang berhenti dan lihat sekeliling.",
+      vi: "Thành công quan trọng, nhưng bạn cũng cần người để chia sẻ hành trình. Đôi khi hãy dừng lại và nhìn xung quanh."
     }
   },
   {
-    type: 'type2',
-    emoji: '🏆',
+    type: "Type2",
+    emoji: "💕",
     title: {
-      ko: '성취 지향형',
-      en: 'Achievement-Oriented',
-      ja: '達成志向型',
-      "zh-CN": '成就导向型',
-      "zh-TW": '成就導向型',
-      id: 'Berorientasi Pencapaian',
-      vi: 'Định hướng Thành tựu'
+      ko: "관계 중심형",
+      en: "Relationship-Centered",
+      ja: "関係中心型",
+      'zh-CN': "关系中心型",
+      'zh-TW': "關係中心型",
+      id: "Berpusat pada Hubungan",
+      vi: "Tập Trung Mối Quan Hệ"
     },
     description: {
-      ko: '"성공이 목표! 끊임없이 성장하는 야심가"\n인생에서 가장 중요한 것은 성취와 성장입니다. 목표를 이루고, 인정받고, 발전하는 것이 최우선입니다. 현재의 편안함보다 미래의 성공을 선택하고, 도전을 즐깁니다. 야망이 크고 추진력이 강하지만, 관계나 행복을 소홀히 할 수 있습니다. 성공과 삶의 균형이 필요합니다.',
-      en: '"Success is the goal! An ambitious person who constantly grows"\nThe most important thing in life is achievement and growth. Achieving goals, being recognized, and developing are top priorities. You choose future success over current comfort and enjoy challenges. Great ambition and strong drive, but may neglect relationships or happiness. Balance between success and life is needed.',
-      ja: '「成功が目標！絶えず成長する野心家」\n人生で最も重要なのは達成と成長です。目標を達成し、認められ、発展することが最優先です。現在の安らかさより未来の成功を選び、挑戦を楽しみます。野心が大きく推進力が強いですが、関係や幸せを疎かにすることがあります。成功と人生のバランスが必要です。',
-      "zh-CN": '"成功是目标！不断成长的野心家"\n生活中最重要的是成就和成长。实现目标、获得认可、发展是首要任务。你选择未来的成功而不是当下的舒适，享受挑战。雄心壮志且推动力强，但可能忽视关系或幸福。需要平衡成功与生活。',
-      "zh-TW": '"成功是目標！不斷成長的野心家"\n生活中最重要的是成就和成長。實現目標、獲得認可、發展是首要任務。你選擇未來的成功而不是當下的舒適，享受挑戰。雄心壯志且推動力強，但可能忽視關係或幸福。需要平衡成功與生活。',
-      id: '"Kesuksesan adalah tujuan! Orang ambisius yang terus tumbuh"\nYang paling penting dalam hidup adalah pencapaian dan pertumbuhan. Mencapai tujuan, diakui, dan berkembang adalah prioritas utama. Kamu memilih kesuksesan masa depan daripada kenyamanan saat ini dan menikmati tantangan. Ambisi besar dan dorongan kuat, tapi mungkin mengabaikan hubungan atau kebahagiaan. Keseimbangan antara kesuksesan dan hidup diperlukan.',
-      vi: '"Thành công là mục tiêu! Người đầy tham vọng không ngừng phát triển"\nĐiều quan trọng nhất trong cuộc sống là thành tựu và phát triển. Đạt được mục tiêu, được công nhận và phát triển là ưu tiên hàng đầu. Bạn chọn thành công tương lai thay vì sự thoải mái hiện tại và tận hưởng thử thách. Tham vọng lớn và động lực mạnh mẽ, nhưng có thể bỏ bê các mối quan hệ hoặc hạnh phúc. Cần cân bằng giữa thành công và cuộc sống.'
+      ko: "사랑이 전부! 사람을 최우선으로 하는 감성파",
+      en: "Love is everything! An emotional person who prioritizes people",
+      ja: "愛がすべて！人を最優先にする感情派",
+      'zh-CN': "爱就是一切！优先考虑人的感性派",
+      'zh-TW': "愛就是一切！優先考慮人的感性派",
+      id: "Cinta adalah segalanya! Orang emosional yang memprioritaskan orang",
+      vi: "Tình yêu là tất cả! Người cảm xúc ưu tiên con người"
     },
-    coreValues: {
-      ko: '성공, 성장, 목표, 인정',
-      en: 'Success, growth, goals, recognition',
-      ja: '成功、成長、目標、承認',
-      "zh-CN": '成功、成长、目标、认可',
-      "zh-TW": '成功、成長、目標、認可',
-      id: 'Kesuksesan, pertumbuhan, tujuan, pengakuan',
-      vi: 'Thành công, phát triển, mục tiêu, công nhận'
+    characteristics: {
+      ko: "인간관계를 인생 최고의 가치로 여깁니다. 가족, 연인, 친구와의 유대가 성공보다 중요합니다. 사랑하는 사람들을 위해 자신을 희생할 수 있고, 관계 속에서 행복을 찾습니다. 따뜻하고 헌신적이지만 자신을 잃을 위험도 있습니다. 관계와 자아의 균형이 필요합니다.",
+      en: "Values human relationships as the highest value in life. Bonds with family, lovers, and friends are more important than success. Can sacrifice themselves for loved ones and find happiness in relationships. Warm and devoted but at risk of losing themselves. Balance between relationships and self is needed.",
+      ja: "人間関係を人生の最高の価値とします。家族、恋人、友人との絆が成功よりも重要です。愛する人のために自分を犠牲にでき、関係の中で幸せを見つけます。温かく献身的ですが、自分を失う危険もあります。関係と自己のバランスが必要です。",
+      'zh-CN': "将人际关系视为人生最高价值。与家人、恋人、朋友的纽带比成功更重要。可以为所爱的人牺牲自己，在关系中寻找幸福。温暖而忠诚，但可能失去自我。需要在关系和自我之间保持平衡。",
+      'zh-TW': "將人際關係視為人生最高價值。與家人、戀人、朋友的紐帶比成功更重要。可以為所愛的人犧牲自己，在關係中尋找幸福。溫暖而忠誠，但可能失去自我。需要在關係和自我之間保持平衡。",
+      id: "Menghargai hubungan manusia sebagai nilai tertinggi dalam hidup. Ikatan dengan keluarga, kekasih, dan teman lebih penting daripada kesuksesan. Dapat mengorbankan diri untuk orang yang dicintai dan menemukan kebahagiaan dalam hubungan. Hangat dan setia tetapi berisiko kehilangan diri. Keseimbangan antara hubungan dan diri diperlukan.",
+      vi: "Coi trọng các mối quan hệ con người như giá trị cao nhất trong cuộc sống. Mối liên kết với gia đình, người yêu, bạn bè quan trọng hơn thành công. Có thể hy sinh bản thân vì người yêu thương và tìm thấy hạnh phúc trong các mối quan hệ. Ấm áp và tận tụy nhưng có nguy cơ mất bản thân. Cần cân bằng giữa mối quan hệ và bản thân."
     },
-    strengths: [
-      { ko: '추진력', en: 'Drive', ja: '推進力', "zh-CN": '推动力', "zh-TW": '推動力', id: 'Dorongan', vi: 'Động lực' },
-      { ko: '성취욕', en: 'Achievement desire', ja: '達成欲', "zh-CN": '成就欲', "zh-TW": '成就欲', id: 'Keinginan pencapaian', vi: 'Khát vọng thành tựu' },
-      { ko: '발전', en: 'Progress', ja: '発展', "zh-CN": '发展', "zh-TW": '發展', id: 'Kemajuan', vi: 'Tiến bộ' },
-      { ko: '리더십', en: 'Leadership', ja: 'リーダーシップ', "zh-CN": '领导力', "zh-TW": '領導力', id: 'Kepemimpinan', vi: 'Khả năng lãnh đạo' }
-    ],
-    weaknesses: [
-      { ko: '관계 소홀', en: 'Neglecting relationships', ja: '関係疎か', "zh-CN": '忽视关系', "zh-TW": '忽視關係', id: 'Mengabaikan hubungan', vi: 'Bỏ bê mối quan hệ' },
-      { ko: '번아웃', en: 'Burnout', ja: '燃え尽き', "zh-CN": '倦怠', "zh-TW": '倦怠', id: 'Kelelahan', vi: 'Kiệt sức' },
-      { ko: '워커홀릭', en: 'Workaholic', ja: 'ワーカホリック', "zh-CN": '工作狂', "zh-TW": '工作狂', id: 'Workaholic', vi: 'Nghiện công việc' }
-    ],
+    impression: {
+      ko: "핵심 가치: 사랑, 관계, 유대, 헌신",
+      en: "Core values: Love, relationships, bonds, devotion",
+      ja: "核心価値：愛、関係、絆、献身",
+      'zh-CN': "核心价值：爱、关系、纽带、奉献",
+      'zh-TW': "核心價值：愛、關係、紐帶、奉獻",
+      id: "Nilai inti: Cinta, hubungan, ikatan, pengabdian",
+      vi: "Giá trị cốt lõi: Tình yêu, mối quan hệ, liên kết, tận tụy"
+    },
+    pros: {
+      ko: "따뜻함, 헌신, 공감, 유대감",
+      en: "Warmth, devotion, empathy, sense of connection",
+      ja: "温かさ、献身、共感、絆",
+      'zh-CN': "温暖、奉献、共情、纽带感",
+      'zh-TW': "溫暖、奉獻、共情、紐帶感",
+      id: "Kehangatan, pengabdian, empati, rasa keterhubungan",
+      vi: "Sự ấm áp, tận tụy, đồng cảm, cảm giác kết nối"
+    },
+    cons: {
+      ko: "자아 상실, 의존, 희생 과다",
+      en: "Loss of self, dependence, excessive sacrifice",
+      ja: "自己喪失、依存、過度な犠牲",
+      'zh-CN': "失去自我、依赖、过度牺牲",
+      'zh-TW': "失去自我、依賴、過度犧牲",
+      id: "Kehilangan diri, ketergantungan, pengorbanan berlebihan",
+      vi: "Mất bản thân, phụ thuộc, hy sinh quá mức"
+    },
     advice: {
-      ko: '정상에 올라도 혼자면 외로워요. 과정을 함께할 사람들도 소중히 하세요.',
-      en: 'Even at the top, you\'ll be lonely alone. Cherish the people who walk the journey with you.',
-      ja: '頂上に立っても一人なら寂しいです。過程を共にする人も大切にしてください。',
-      "zh-CN": '即使站在顶峰，独自一人也会孤独。珍惜与你同行的人。',
-      "zh-TW": '即使站在頂峰，獨自一人也會孤獨。珍惜與你同行的人。',
-      id: 'Bahkan di puncak, kamu akan kesepian sendirian. Hargai orang-orang yang berjalan bersama kamu.',
-      vi: 'Ngay cả ở đỉnh cao, bạn sẽ cô đơn một mình. Trân trọng những người đi cùng bạn trên hành trình.'
-    },
-    compatibility: {
-      best: ['type2'],
-      good: ['type5'],
-      careful: ['type1', 'type4']
+      ko: "사랑도 중요하지만 나 자신도 소중해요. 나를 먼저 사랑하는 것이 진짜 사랑입니다.",
+      en: "Love is important, but you are also precious. Loving yourself first is true love.",
+      ja: "愛も重要ですが、自分自身も大切です。自分をまず愛することが真の愛です。",
+      'zh-CN': "爱很重要，但你自己也很珍贵。先爱自己才是真正的爱。",
+      'zh-TW': "愛很重要，但你自己也很珍貴。先愛自己才是真正的愛。",
+      id: "Cinta penting, tapi Anda juga berharga. Mencintai diri sendiri terlebih dahulu adalah cinta sejati.",
+      vi: "Tình yêu quan trọng, nhưng bạn cũng quý giá. Yêu bản thân trước là tình yêu thật sự."
     }
   },
   {
-    type: 'type3',
-    emoji: '🦅',
+    type: "Type3",
+    emoji: "🦅",
     title: {
-      ko: '자유 추구형',
-      en: 'Freedom-Seeking',
-      ja: '自由追求型',
-      "zh-CN": '自由追求型',
-      "zh-TW": '自由追求型',
-      id: 'Mencari Kebebasan',
-      vi: 'Theo đuổi Tự do'
+      ko: "자유 추구형",
+      en: "Freedom-Seeking",
+      ja: "自由追求型",
+      'zh-CN': "自由追求型",
+      'zh-TW': "自由追求型",
+      id: "Mencari Kebebasan",
+      vi: "Theo Đuổi Tự Do"
     },
     description: {
-      ko: '"자유가 최고! 내 삶은 내가 결정해"\n인생에서 가장 중요한 것은 자유와 독립입니다. 누구에게도 얽매이지 않고, 하고 싶은 대로 사는 것이 목표입니다. 안정보다 모험을, 타협보다 자기 길을 선택합니다. 독립적이고 용감하지만 때로는 외롭고 불안정할 수 있습니다. 자유와 책임의 균형이 필요합니다.',
-      en: '"Freedom is the best! I decide my own life"\nThe most important thing in life is freedom and independence. Living as you want without being bound to anyone is the goal. You choose adventure over stability, your own path over compromise. Independent and brave, but can be lonely and unstable sometimes. Balance between freedom and responsibility is needed.',
-      ja: '「自由が最高！自分の人生は自分が決める」\n人生で最も重要なのは自由と独立です。誰にも束縛されず、やりたいように生きることが目標です。安定より冒険を、妥協より自分の道を選びます。独立的で勇敢ですが、時には孤独で不安定になることがあります。自由と責任のバランスが必要です。',
-      "zh-CN": '"自由最好！我决定自己的生活"\n生活中最重要的是自由和独立。目标是活出自己想要的样子，不被任何人束缚。你选择冒险而非稳定，走自己的路而非妥协。独立且勇敢，但有时可能孤独不稳定。需要平衡自由与责任。',
-      "zh-TW": '"自由最好！我決定自己的生活"\n生活中最重要的是自由和獨立。目標是活出自己想要的樣子，不被任何人束縛。你選擇冒險而非穩定，走自己的路而非妥協。獨立且勇敢，但有時可能孤獨不穩定。需要平衡自由與責任。',
-      id: '"Kebebasan adalah yang terbaik! Saya putuskan hidup saya sendiri"\nYang paling penting dalam hidup adalah kebebasan dan kemandirian. Hidup sesuai keinginan tanpa terikat siapa pun adalah tujuan. Kamu memilih petualangan daripada stabilitas, jalan sendiri daripada kompromi. Mandiri dan berani, tapi bisa kesepian dan tidak stabil kadang-kadang. Keseimbangan antara kebebasan dan tanggung jawab diperlukan.',
-      vi: '"Tự do là nhất! Tôi quyết định cuộc sống của mình"\nĐiều quan trọng nhất trong cuộc sống là tự do và độc lập. Sống theo ý muốn mà không bị ràng buộc bởi ai là mục tiêu. Bạn chọn phiêu lưu thay vì ổn định, con đường của mình thay vì thỏa hiệp. Độc lập và dũng cảm, nhưng đôi khi có thể cô đơn và không ổn định. Cần cân bằng giữa tự do và trách nhiệm.'
+      ko: "자유가 최고! 구속 없이 날아가는 자유로운 영혼",
+      en: "Freedom is the best! A free spirit flying without constraints",
+      ja: "自由が最高！束縛なく飛ぶ自由な魂",
+      'zh-CN': "自由最好！无拘无束飞翔的自由灵魂",
+      'zh-TW': "自由最好！無拘無束飛翔的自由靈魂",
+      id: "Kebebasan adalah yang terbaik! Jiwa bebas yang terbang tanpa batasan",
+      vi: "Tự do là tốt nhất! Tâm hồn tự do bay lượn không ràng buộc"
     },
-    coreValues: {
-      ko: '자유, 독립, 모험, 자율성',
-      en: 'Freedom, independence, adventure, autonomy',
-      ja: '自由、独立、冒険、自律性',
-      "zh-CN": '自由、独立、冒险、自主',
-      "zh-TW": '自由、獨立、冒險、自主',
-      id: 'Kebebasan, kemandirian, petualangan, otonomi',
-      vi: 'Tự do, độc lập, phiêu lưu, tự chủ'
+    characteristics: {
+      ko: "자유와 독립을 가장 중요하게 생각합니다. 어디에도 얽매이지 않고 하고 싶은 것을 하며 살고 싶어 합니다. 새로운 경험과 모험을 즐기고 루틴을 싫어합니다. 관계에서도 적당한 거리를 유지하며 자신만의 공간을 중시합니다. 자유롭지만 때로는 외로울 수 있습니다.",
+      en: "Values freedom and independence most. Wants to live without being tied down, doing what they want. Enjoys new experiences and adventures, dislikes routines. Maintains appropriate distance in relationships and values their own space. Free but can sometimes be lonely.",
+      ja: "自由と独立を最も重要に考えます。どこにも縛られずにしたいことをして生きたいです。新しい経験と冒険を楽しみ、ルーティンを嫌います。関係でも適度な距離を保ち、自分の空間を重視します。自由ですが時々孤独になることがあります。",
+      'zh-CN': "最重视自由和独立。希望不受任何束缚，做自己想做的事。享受新体验和冒险，讨厌例行公事。在关系中也保持适当距离，重视自己的空间。自由但有时可能孤独。",
+      'zh-TW': "最重視自由和獨立。希望不受任何束縛，做自己想做的事。享受新體驗和冒險，討厭例行公事。在關係中也保持適當距離，重視自己的空間。自由但有時可能孤獨。",
+      id: "Menghargai kebebasan dan kemandirian paling tinggi. Ingin hidup tanpa terikat, melakukan apa yang diinginkan. Menikmati pengalaman dan petualangan baru, tidak suka rutinitas. Mempertahankan jarak yang tepat dalam hubungan dan menghargai ruang sendiri. Bebas tapi kadang bisa kesepian.",
+      vi: "Coi trọng tự do và độc lập nhất. Muốn sống không bị ràng buộc, làm những gì mình muốn. Thích thú với trải nghiệm và phiêu lưu mới, ghét thói quen. Duy trì khoảng cách phù hợp trong mối quan hệ và coi trọng không gian riêng. Tự do nhưng đôi khi có thể cô đơn."
     },
-    strengths: [
-      { ko: '독립성', en: 'Independence', ja: '独立性', "zh-CN": '独立性', "zh-TW": '獨立性', id: 'Kemandirian', vi: 'Độc lập' },
-      { ko: '용기', en: 'Courage', ja: '勇気', "zh-CN": '勇气', "zh-TW": '勇氣', id: 'Keberanian', vi: 'Can đảm' },
-      { ko: '창의성', en: 'Creativity', ja: '創造性', "zh-CN": '创造性', "zh-TW": '創造性', id: 'Kreativitas', vi: 'Sáng tạo' },
-      { ko: '모험심', en: 'Adventurous spirit', ja: '冒険心', "zh-CN": '冒险精神', "zh-TW": '冒險精神', id: 'Semangat petualangan', vi: 'Tinh thần phiêu lưu' }
-    ],
-    weaknesses: [
-      { ko: '외로움', en: 'Loneliness', ja: '孤独', "zh-CN": '孤独', "zh-TW": '孤獨', id: 'Kesepian', vi: 'Cô đơn' },
-      { ko: '불안정', en: 'Instability', ja: '不安定', "zh-CN": '不稳定', "zh-TW": '不穩定', id: 'Ketidakstabilan', vi: 'Không ổn định' },
-      { ko: '깊은 관계 어려움', en: 'Difficulty with deep relationships', ja: '深い関係の困難', "zh-CN": '深入关系困难', "zh-TW": '深入關係困難', id: 'Kesulitan dengan hubungan mendalam', vi: 'Khó khăn với mối quan hệ sâu sắc' }
-    ],
+    impression: {
+      ko: "핵심 가치: 자유, 독립, 모험, 자율성",
+      en: "Core values: Freedom, independence, adventure, autonomy",
+      ja: "核心価値：自由、独立、冒険、自律性",
+      'zh-CN': "核心价值：自由、独立、冒险、自主性",
+      'zh-TW': "核心價值：自由、獨立、冒險、自主性",
+      id: "Nilai inti: Kebebasan, kemandirian, petualangan, otonomi",
+      vi: "Giá trị cốt lõi: Tự do, độc lập, phiêu lưu, tự chủ"
+    },
+    pros: {
+      ko: "독립성, 모험심, 창의성, 유연성",
+      en: "Independence, adventurous spirit, creativity, flexibility",
+      ja: "独立性、冒険心、創造性、柔軟性",
+      'zh-CN': "独立性、冒险精神、创造力、灵活性",
+      'zh-TW': "獨立性、冒險精神、創造力、靈活性",
+      id: "Kemandirian, semangat petualangan, kreativitas, fleksibilitas",
+      vi: "Tính độc lập, tinh thần phiêu lưu, sáng tạo, linh hoạt"
+    },
+    cons: {
+      ko: "외로움, 깊은 관계 어려움, 불안정",
+      en: "Loneliness, difficulty with deep relationships, instability",
+      ja: "孤独、深い関係の困難、不安定",
+      'zh-CN': "孤独、难以建立深层关系、不稳定",
+      'zh-TW': "孤獨、難以建立深層關係、不穩定",
+      id: "Kesepian, kesulitan dengan hubungan mendalam, ketidakstabilan",
+      vi: "Cô đơn, khó khăn với mối quan hệ sâu sắc, không ổn định"
+    },
     advice: {
-      ko: '완전한 자유는 외로울 수 있어요. 가끔은 의지할 사람도 필요합니다.',
-      en: 'Complete freedom can be lonely. Sometimes you need someone to lean on.',
-      ja: '完全な自由は孤独になることがあります。時には頼れる人も必要です。',
-      "zh-CN": '完全的自由可能会孤独。有时你需要一个可以依靠的人。',
-      "zh-TW": '完全的自由可能會孤獨。有時你需要一個可以依靠的人。',
-      id: 'Kebebasan penuh bisa kesepian. Kadang-kadang kamu perlu seseorang untuk diandalkan.',
-      vi: 'Tự do hoàn toàn có thể cô đơn. Đôi khi bạn cần ai đó để dựa vào.'
-    },
-    compatibility: {
-      best: ['type3'],
-      good: ['type5'],
-      careful: ['type1', 'type4']
+      ko: "자유도 좋지만 가끔은 의지할 사람도 필요해요. 자유와 관계는 공존할 수 있습니다.",
+      en: "Freedom is good, but sometimes you need people to rely on. Freedom and relationships can coexist.",
+      ja: "自由もいいですが、時々頼れる人も必要です。自由と関係は共存できます。",
+      'zh-CN': "自由很好，但有时你也需要可以依靠的人。自由和关系可以共存。",
+      'zh-TW': "自由很好，但有時你也需要可以依靠的人。自由和關係可以共存。",
+      id: "Kebebasan baik, tapi kadang Anda perlu orang untuk diandalkan. Kebebasan dan hubungan bisa hidup berdampingan.",
+      vi: "Tự do tốt, nhưng đôi khi bạn cần người để dựa vào. Tự do và mối quan hệ có thể cùng tồn tại."
     }
   },
   {
-    type: 'type4',
-    emoji: '🏡',
+    type: "Type4",
+    emoji: "🏡",
     title: {
-      ko: '평화 안정형',
-      en: 'Peace and Stability',
-      ja: '平和安定型',
-      "zh-CN": '和平稳定型',
-      "zh-TW": '和平穩定型',
-      id: 'Perdamaian dan Stabilitas',
-      vi: 'Hòa bình và Ổn định'
+      ko: "평온 안정형",
+      en: "Peaceful Stability",
+      ja: "平穏安定型",
+      'zh-CN': "平静稳定型",
+      'zh-TW': "平靜穩定型",
+      id: "Kedamaian Stabilitas",
+      vi: "Bình Yên Ổn Định"
     },
     description: {
-      ko: '평온이 최고! 편안하고 행복한 일상\n인생에서 가장 중요한 것은 평화와 안정입니다. 큰 성공보다 매일의 행복, 변화보다 편안한 일상을 선택합니다. 스트레스 없이 평온하게 사는 것이 목표이며, 익숙하고 안정적인 것을 좋아합니다. 평화롭고 만족스럽지만 때로는 성장이 정체될 수 있습니다.',
-      en: 'Peace is the best! Comfortable and happy daily life\nThe most important thing in life is peace and stability. You choose daily happiness over great success, comfortable routine over change. Living peacefully without stress is the goal, and you like familiar and stable things. Peaceful and satisfying, but growth may stagnate sometimes.',
-      ja: '平穏が最高！快適で幸せな日常\n人生で最も重要なのは平和と安定です。大きな成功より毎日の幸せ、変化より快適な日常を選びます。ストレスなく平穏に生きることが目標であり、慣れ親しんだ安定したものを好みます。平和的で満足していますが、時には成長が停滞することがあります。',
-      "zh-CN": '平静最好！舒适快乐的日常生活\n生活中最重要的是和平与稳定。你选择日常幸福而非巨大成功，舒适常规而非变化。目标是平静无压力地生活，喜欢熟悉和稳定的东西。平静且满足，但成长有时可能停滞。',
-      "zh-TW": '平靜最好！舒適快樂的日常生活\n生活中最重要的是和平與穩定。你選擇日常幸福而非巨大成功，舒適常規而非變化。目標是平靜無壓力地生活，喜歡熟悉和穩定的東西。平靜且滿足，但成長有時可能停滯。',
-      id: 'Kedamaian adalah yang terbaik! Kehidupan sehari-hari yang nyaman dan bahagia\nYang paling penting dalam hidup adalah perdamaian dan stabilitas. Kamu memilih kebahagiaan sehari-hari daripada kesuksesan besar, rutinitas nyaman daripada perubahan. Hidup damai tanpa stres adalah tujuan, dan kamu menyukai hal-hal yang akrab dan stabil. Damai dan memuaskan, tapi pertumbuhan mungkin stagnan kadang-kadang.',
-      vi: 'Hòa bình là nhất! Cuộc sống hàng ngày thoải mái và hạnh phúc\nĐiều quan trọng nhất trong cuộc sống là hòa bình và ổn định. Bạn chọn hạnh phúc hàng ngày thay vì thành công lớn, thói quen thoải mái thay vì thay đổi. Sống bình yên không căng thẳng là mục tiêu, và bạn thích những điều quen thuộc và ổn định. Bình yên và thỏa mãn, nhưng sự phát triển có thể bị trì trệ đôi khi.'
+      ko: "평화가 최고! 편안하고 안정적인 삶을 원해요",
+      en: "Peace is the best! Want a comfortable and stable life",
+      ja: "平和が最高！快適で安定した生活を望む",
+      'zh-CN': "和平最好！想要舒适稳定的生活",
+      'zh-TW': "和平最好！想要舒適穩定的生活",
+      id: "Kedamaian adalah yang terbaik! Ingin hidup nyaman dan stabil",
+      vi: "Hòa bình là tốt nhất! Muốn cuộc sống thoải mái và ổn định"
     },
-    coreValues: {
-      ko: '평화, 안정, 행복, 편안함',
-      en: 'Peace, stability, happiness, comfort',
-      ja: '平和、安定、幸せ、快適',
-      "zh-CN": '和平、稳定、幸福、舒适',
-      "zh-TW": '和平、穩定、幸福、舒適',
-      id: 'Kedamaian, stabilitas, kebahagiaan, kenyamanan',
-      vi: 'Hòa bình, ổn định, hạnh phúc, thoải mái'
+    characteristics: {
+      ko: "평온하고 안정적인 삶을 추구합니다. 큰 변화나 모험보다는 예측 가능하고 편안한 일상을 좋아합니다. 가족과 함께하는 시간, 익숙한 것들, 변하지 않는 관계를 소중히 여깁니다. 평화롭고 따뜻하지만 때로는 도전이 필요할 수도 있습니다.",
+      en: "Pursues peaceful and stable life. Prefers predictable and comfortable daily life over big changes or adventures. Values time with family, familiar things, and unchanging relationships. Peaceful and warm but sometimes may need challenges.",
+      ja: "平穏で安定した生活を追求します。大きな変化や冒険よりも予測可能で快適な日常を好みます。家族と過ごす時間、慣れ親しんだもの、変わらない関係を大切にします。平和的で温かいですが、時々挑戦が必要かもしれません。",
+      'zh-CN': "追求平静稳定的生活。喜欢可预测和舒适的日常生活，而不是大的变化或冒险。珍惜与家人共度的时光、熟悉的事物、不变的关系。平静温暖，但有时可能需要挑战。",
+      'zh-TW': "追求平靜穩定的生活。喜歡可預測和舒適的日常生活，而不是大的變化或冒險。珍惜與家人共度的時光、熟悉的事物、不變的關係。平靜溫暖，但有時可能需要挑戰。",
+      id: "Mengejar kehidupan yang damai dan stabil. Lebih suka kehidupan sehari-hari yang dapat diprediksi dan nyaman daripada perubahan besar atau petualangan. Menghargai waktu dengan keluarga, hal-hal yang akrab, dan hubungan yang tidak berubah. Damai dan hangat tapi kadang mungkin perlu tantangan.",
+      vi: "Theo đuổi cuộc sống bình yên và ổn định. Thích cuộc sống hàng ngày có thể dự đoán và thoải mái hơn là những thay đổi lớn hay phiêu lưu. Trân trọng thời gian với gia đình, những điều quen thuộc, và các mối quan hệ không đổi. Bình yên và ấm áp nhưng đôi khi có thể cần thử thách."
     },
-    strengths: [
-      { ko: '평온함', en: 'Serenity', ja: '平穏', "zh-CN": '平静', "zh-TW": '平靜', id: 'Ketenangan', vi: 'Thanh thản' },
-      { ko: '만족', en: 'Satisfaction', ja: '満足', "zh-CN": '满足', "zh-TW": '滿足', id: 'Kepuasan', vi: 'Thỏa mãn' },
-      { ko: '감사', en: 'Gratitude', ja: '感謝', "zh-CN": '感恩', "zh-TW": '感恩', id: 'Rasa syukur', vi: 'Biết ơn' },
-      { ko: '안정성', en: 'Stability', ja: '安定性', "zh-CN": '稳定性', "zh-TW": '穩定性', id: 'Stabilitas', vi: 'Ổn định' }
-    ],
-    weaknesses: [
-      { ko: '도전 회피', en: 'Avoiding challenges', ja: '挑戦回避', "zh-CN": '回避挑战', "zh-TW": '迴避挑戰', id: 'Menghindari tantangan', vi: 'Tránh thử thách' },
-      { ko: '성장 정체', en: 'Stagnation', ja: '成長停滞', "zh-CN": '成长停滞', "zh-TW": '成長停滯', id: 'Stagnasi', vi: 'Trì trệ' },
-      { ko: '변화 두려움', en: 'Fear of change', ja: '変化への恐れ', "zh-CN": '恐惧变化', "zh-TW": '恐懼變化', id: 'Takut akan perubahan', vi: 'Sợ thay đổi' }
-    ],
+    impression: {
+      ko: "핵심 가치: 평온, 안정, 편안함, 지속성",
+      en: "Core values: Peace, stability, comfort, continuity",
+      ja: "核心価値：平穏、安定、快適、持続性",
+      'zh-CN': "核心价值：平静、稳定、舒适、持续性",
+      'zh-TW': "核心價值：平靜、穩定、舒適、持續性",
+      id: "Nilai inti: Kedamaian, stabilitas, kenyamanan, kontinuitas",
+      vi: "Giá trị cốt lõi: Bình yên, ổn định, thoải mái, liên tục"
+    },
+    pros: {
+      ko: "평화로움, 안정감, 신뢰, 지속성",
+      en: "Peacefulness, sense of stability, trust, continuity",
+      ja: "平和さ、安定感、信頼、持続性",
+      'zh-CN': "平和、稳定感、信任、持续性",
+      'zh-TW': "平和、穩定感、信任、持續性",
+      id: "Kedamaian, rasa stabilitas, kepercayaan, kontinuitas",
+      vi: "Sự bình yên, cảm giác ổn định, tin tưởng, liên tục"
+    },
+    cons: {
+      ko: "변화 두려움, 도전 회피, 성장 정체",
+      en: "Fear of change, avoiding challenges, growth stagnation",
+      ja: "変化への恐れ、挑戦回避、成長停滞",
+      'zh-CN': "害怕变化、回避挑战、成长停滞",
+      'zh-TW': "害怕變化、迴避挑戰、成長停滯",
+      id: "Takut perubahan, menghindari tantangan, stagnasi pertumbuhan",
+      vi: "Sợ thay đổi, tránh thử thách, trì trệ phát triển"
+    },
     advice: {
-      ko: '안정도 좋지만 가끔은 새로운 도전이 삶을 더 풍요롭게 만들어요!',
-      en: 'Stability is good, but sometimes new challenges enrich life!',
-      ja: '安定も良いですが、時には新しい挑戦が人生をより豊かにします！',
-      "zh-CN": '稳定很好，但有时新的挑战会让生活更丰富！',
-      "zh-TW": '穩定很好，但有時新的挑戰會讓生活更豐富！',
-      id: 'Stabilitas baik, tapi kadang-kadang tantangan baru memperkaya hidup!',
-      vi: 'Ổn định tốt, nhưng đôi khi những thử thách mới làm phong phú cuộc sống!'
-    },
-    compatibility: {
-      best: ['type4'],
-      good: ['type1'],
-      careful: ['type2', 'type3']
+      ko: "안정도 좋지만 가끔은 새로운 도전이 삶을 더 풍요롭게 만들어요!",
+      en: "Stability is good, but sometimes new challenges make life more enriching!",
+      ja: "安定もいいですが、時々新しい挑戦が人生をより豊かにします！",
+      'zh-CN': "稳定很好，但有时新的挑战让生活更丰富！",
+      'zh-TW': "穩定很好，但有時新的挑戰讓生活更豐富！",
+      id: "Stabilitas baik, tapi kadang tantangan baru membuat hidup lebih kaya!",
+      vi: "Ổn định tốt, nhưng đôi khi thử thách mới làm cuộc sống phong phú hơn!"
     }
   },
   {
-    type: 'type5',
-    emoji: '⚖️',
+    type: "Type5",
+    emoji: "⚖️",
     title: {
-      ko: '현명한 균형형',
-      en: 'Wise Balance',
-      ja: '賢明な均衡型',
-      "zh-CN": '明智平衡型',
-      "zh-TW": '明智平衡型',
-      id: 'Keseimbangan Bijak',
-      vi: 'Cân bằng Khôn ngoan'
+      ko: "이성 균형형",
+      en: "Rational Balance",
+      ja: "理性バランス型",
+      'zh-CN': "理性平衡型",
+      'zh-TW': "理性平衡型",
+      id: "Keseimbangan Rasional",
+      vi: "Cân Bằng Lý Trí"
     },
     description: {
-      ko: '"모두 중요해! 균형잡힌 삶을 추구"\n인생의 모든 영역이 중요하다고 생각합니다. 관계도, 성공도, 자유도, 행복도 모두 필요합니다. 어느 하나에 치우치지 않고 균형을 추구하며, 상황에 따라 우선순위를 조절합니다. 지혜롭고 성숙하지만 때로는 우유부단하거나 명확한 방향성이 부족할 수 있습니다.',
-      en: '"Everything matters! Pursuing a balanced life"\nYou think all areas of life are important. Relationships, success, freedom, happiness - all are needed. You pursue balance without leaning toward any one, adjusting priorities according to the situation. Wise and mature, but can be indecisive or lack clear direction sometimes.',
-      ja: '「すべてが重要！バランスの取れた人生を追求」\n人生のすべての領域が重要だと考えます。関係も成功も自由も幸せもすべて必要です。どれか一つに偏らずバランスを追求し、状況に応じて優先順位を調整します。賢明で成熟していますが、時には優柔不断だったり明確な方向性が欠けていることがあります。',
-      "zh-CN": '"一切都重要！追求平衡的生活"\n你认为生活的所有领域都很重要。关系、成功、自由、幸福——都需要。你追求平衡而不偏向任何一方，根据情况调整优先级。明智且成熟，但有时可能优柔寡断或缺乏明确方向。',
-      "zh-TW": '"一切都重要！追求平衡的生活"\n你認為生活的所有領域都很重要。關係、成功、自由、幸福——都需要。你追求平衡而不偏向任何一方，根據情況調整優先級。明智且成熟，但有時可能優柔寡斷或缺乏明確方向。',
-      id: '"Semuanya penting! Mengejar kehidupan seimbang"\nKamu menganggap semua area kehidupan penting. Hubungan, kesuksesan, kebebasan, kebahagiaan - semuanya diperlukan. Kamu mengejar keseimbangan tanpa condong ke satu pun, menyesuaikan prioritas sesuai situasi. Bijak dan dewasa, tapi bisa ragu-ragu atau kurang arah jelas kadang-kadang.',
-      vi: '"Mọi thứ đều quan trọng! Theo đuổi cuộc sống cân bằng"\nBạn nghĩ tất cả các lĩnh vực của cuộc sống đều quan trọng. Mối quan hệ, thành công, tự do, hạnh phúc - tất cả đều cần. Bạn theo đuổi sự cân bằng mà không nghiêng về bất kỳ điều gì, điều chỉnh ưu tiên theo tình huống. Khôn ngoan và trưởng thành, nhưng đôi khi có thể do dự hoặc thiếu hướng đi rõ ràng.'
+      ko: "논리가 답! 합리적으로 균형잡는 현실주의자",
+      en: "Logic is the answer! A realist who balances rationally",
+      ja: "論理が答え！合理的にバランスを取る現実主義者",
+      'zh-CN': "逻辑就是答案！理性平衡的现实主义者",
+      'zh-TW': "邏輯就是答案！理性平衡的現實主義者",
+      id: "Logika adalah jawabannya! Realis yang menyeimbangkan secara rasional",
+      vi: "Logic là câu trả lời! Người thực tế cân bằng một cách hợp lý"
     },
-    coreValues: {
-      ko: '균형, 조화, 지혜, 유연성',
-      en: 'Balance, harmony, wisdom, flexibility',
-      ja: '均衡、調和、知恵、柔軟性',
-      "zh-CN": '平衡、和谐、智慧、灵活性',
-      "zh-TW": '平衡、和諧、智慧、靈活性',
-      id: 'Keseimbangan, harmoni, kebijaksanaan, fleksibilitas',
-      vi: 'Cân bằng, hài hòa, trí tuệ, linh hoạt'
+    characteristics: {
+      ko: "이성적이고 균형잡힌 가치관을 가지고 있습니다. 감정보다는 논리로 판단하고, 모든 것의 균형을 추구합니다. 일과 관계, 나와 타인, 현재와 미래를 모두 고려하는 현명한 선택을 합니다. 합리적이고 안정적이지만 때로는 감정 표현이 부족할 수 있습니다.",
+      en: "Has rational and balanced values. Judges by logic rather than emotions, pursues balance in everything. Makes wise choices considering work and relationships, self and others, present and future. Rational and stable but sometimes may lack emotional expression.",
+      ja: "理性的でバランスの取れた価値観を持っています。感情よりも論理で判断し、すべてのバランスを追求します。仕事と関係、自分と他人、現在と未来をすべて考慮した賢明な選択をします。合理的で安定していますが、時々感情表現が不足することがあります。",
+      'zh-CN': "拥有理性和平衡的价值观。用逻辑而非情感判断，追求一切事物的平衡。做出明智的选择，考虑工作和关系、自己和他人、现在和未来。理性稳定，但有时可能缺乏情感表达。",
+      'zh-TW': "擁有理性和平衡的價值觀。用邏輯而非情感判斷，追求一切事物的平衡。做出明智的選擇，考慮工作和關係、自己和他人、現在和未來。理性穩定，但有時可能缺乏情感表達。",
+      id: "Memiliki nilai-nilai rasional dan seimbang. Menilai dengan logika daripada emosi, mengejar keseimbangan dalam segala hal. Membuat pilihan bijak dengan mempertimbangkan pekerjaan dan hubungan, diri dan orang lain, sekarang dan masa depan. Rasional dan stabil tapi kadang mungkin kurang ekspresi emosional.",
+      vi: "Có giá trị quan lý trí và cân bằng. Đánh giá bằng logic hơn là cảm xúc, theo đuổi sự cân bằng trong mọi thứ. Đưa ra lựa chọn khôn ngoan xem xét công việc và mối quan hệ, bản thân và người khác, hiện tại và tương lai. Lý trí và ổn định nhưng đôi khi có thể thiếu biểu cảm cảm xúc."
     },
-    strengths: [
-      { ko: '지혜', en: 'Wisdom', ja: '知恵', "zh-CN": '智慧', "zh-TW": '智慧', id: 'Kebijaksanaan', vi: 'Trí tuệ' },
-      { ko: '균형감', en: 'Sense of balance', ja: 'バランス感', "zh-CN": '平衡感', "zh-TW": '平衡感', id: 'Rasa keseimbangan', vi: 'Cảm giác cân bằng' },
-      { ko: '적응력', en: 'Adaptability', ja: '適応力', "zh-CN": '适应力', "zh-TW": '適應力', id: 'Kemampuan beradaptasi', vi: 'Khả năng thích ứng' },
-      { ko: '성숙함', en: 'Maturity', ja: '成熟', "zh-CN": '成熟', "zh-TW": '成熟', id: 'Kedewasaan', vi: 'Trưởng thành' }
-    ],
-    weaknesses: [
-      { ko: '우유부단', en: 'Indecisiveness', ja: '優柔不断', "zh-CN": '优柔寡断', "zh-TW": '優柔寡斷', id: 'Keraguan', vi: 'Do dự' },
-      { ko: '방향성 부족', en: 'Lack of direction', ja: '方向性の欠如', "zh-CN": '缺乏方向', "zh-TW": '缺乏方向', id: 'Kurang arah', vi: 'Thiếu hướng đi' },
-      { ko: '깊이 부족', en: 'Lack of depth', ja: '深さの欠如', "zh-CN": '缺乏深度', "zh-TW": '缺乏深度', id: 'Kurang kedalaman', vi: 'Thiếu chiều sâu' }
-    ],
+    impression: {
+      ko: "핵심 가치: 균형, 논리, 합리성, 효율",
+      en: "Core values: Balance, logic, rationality, efficiency",
+      ja: "核心価値：バランス、論理、合理性、効率",
+      'zh-CN': "核心价值：平衡、逻辑、理性、效率",
+      'zh-TW': "核心價值：平衡、邏輯、理性、效率",
+      id: "Nilai inti: Keseimbangan, logika, rasionalitas, efisiensi",
+      vi: "Giá trị cốt lõi: Cân bằng, logic, lý trí, hiệu quả"
+    },
+    pros: {
+      ko: "합리성, 균형감, 안정성, 지혜",
+      en: "Rationality, sense of balance, stability, wisdom",
+      ja: "合理性、バランス感、安定性、知恵",
+      'zh-CN': "理性、平衡感、稳定性、智慧",
+      'zh-TW': "理性、平衡感、穩定性、智慧",
+      id: "Rasionalitas, rasa keseimbangan, stabilitas, kebijaksanaan",
+      vi: "Tính lý trí, cảm giác cân bằng, ổn định, khôn ngoan"
+    },
+    cons: {
+      ko: "감정 부족, 재미 없음, 냉정함",
+      en: "Lack of emotion, not fun, coldness",
+      ja: "感情不足、面白みがない、冷たさ",
+      'zh-CN': "缺乏情感、无趣、冷漠",
+      'zh-TW': "缺乏情感、無趣、冷漠",
+      id: "Kurang emosi, tidak menyenangkan, dingin",
+      vi: "Thiếu cảm xúc, không thú vị, lạnh lùng"
+    },
     advice: {
-      ko: '균형도 좋지만 가끔은 한 가지에 집중하는 열정도 필요해요!',
-      en: 'Balance is good, but sometimes you need passion focused on one thing!',
-      ja: 'バランスも良いですが、時には一つのことに集中する情熱も必要です！',
-      "zh-CN": '平衡很好，但有时你也需要对一件事的专注热情！',
-      "zh-TW": '平衡很好，但有時你也需要對一件事的專注熱情！',
-      id: 'Keseimbangan baik, tapi kadang-kadang kamu perlu gairah yang fokus pada satu hal!',
-      vi: 'Cân bằng tốt, nhưng đôi khi bạn cần đam mê tập trung vào một điều!'
-    },
-    compatibility: {
-      best: ['type5'],
-      good: ['type1', 'type2', 'type3', 'type4'],
-      careful: []
+      ko: "논리도 중요하지만 가끔은 비합리적인 선택이 인생을 더 풍성하게 만들어요!",
+      en: "Logic is important, but sometimes irrational choices make life richer!",
+      ja: "論理も重要ですが、時々非合理的な選択が人生をより豊かにします！",
+      'zh-CN': "逻辑很重要，但有时非理性的选择让生活更丰富！",
+      'zh-TW': "邏輯很重要，但有時非理性的選擇讓生活更豐富！",
+      id: "Logika penting, tapi kadang pilihan tidak rasional membuat hidup lebih kaya!",
+      vi: "Logic quan trọng, nhưng đôi khi lựa chọn phi lý làm cuộc sống phong phú hơn!"
     }
   },
   {
-    type: 'type6',
-    emoji: '🌱',
+    type: "Type6",
+    emoji: "🔥",
     title: {
-      ko: '자기실현형',
-      en: 'Self-Actualization',
-      ja: '自己実現型',
-      "zh-CN": '自我实现型',
-      "zh-TW": '自我實現型',
-      id: 'Aktualisasi Diri',
-      vi: 'Tự hoàn thiện'
+      ko: "열정 도전형",
+      en: "Passionate Challenge",
+      ja: "情熱挑戦型",
+      'zh-CN': "激情挑战型",
+      'zh-TW': "激情挑戰型",
+      id: "Tantangan Bergairah",
+      vi: "Thử Thách Đam Mê"
     },
     description: {
-      ko: '"성장이 목표! 더 나은 나를 향해"\n인생에서 가장 중요한 것은 자기 성장과 실현입니다. 더 나은 사람이 되고, 배우고, 발전하는 것이 목표입니다. 물질적 성공보다 내면의 성장, 외부 인정보다 자기 만족을 추구합니다. 성숙하고 깊이 있지만 때로는 자신에게 너무 엄격할 수 있습니다.',
-      en: '"Growth is the goal! Toward a better me"\nThe most important thing in life is self-growth and actualization. Becoming a better person, learning, and developing is the goal. You pursue inner growth over material success, self-satisfaction over external recognition. Mature and deep, but can be too strict with yourself sometimes.',
-      ja: '「成長が目標！より良い自分へ」\n人生で最も重要なのは自己成長と実現です。より良い人になり、学び、発展することが目標です。物質的成功より内面の成長、外部の承認より自己満足を追求します。成熟していて深みがありますが、時には自分に対して厳しすぎることがあります。',
-      "zh-CN": '"成长是目标！向更好的自己"\n生活中最重要的是自我成长和实现。目标是成为更好的人、学习和发展。你追求内在成长而非物质成功，自我满足而非外部认可。成熟且有深度，但有时可能对自己过于严格。',
-      "zh-TW": '"成長是目標！向更好的自己"\n生活中最重要的是自我成長和實現。目標是成為更好的人、學習和發展。你追求內在成長而非物質成功，自我滿足而非外部認可。成熟且有深度，但有時可能對自己過於嚴格。',
-      id: '"Pertumbuhan adalah tujuan! Menuju diri yang lebih baik"\nYang paling penting dalam hidup adalah pertumbuhan diri dan aktualisasi. Menjadi orang yang lebih baik, belajar, dan berkembang adalah tujuan. Kamu mengejar pertumbuhan batin daripada kesuksesan materi, kepuasan diri daripada pengakuan eksternal. Dewasa dan mendalam, tapi bisa terlalu ketat pada diri sendiri kadang-kadang.',
-      vi: '"Phát triển là mục tiêu! Hướng tới bản thân tốt hơn"\nĐiều quan trọng nhất trong cuộc sống là sự phát triển bản thân và tự hoàn thiện. Trở thành người tốt hơn, học hỏi và phát triển là mục tiêu. Bạn theo đuổi sự phát triển nội tâm thay vì thành công vật chất, sự thỏa mãn bản thân thay vì sự công nhận bên ngoài. Trưởng thành và sâu sắc, nhưng đôi khi có thể quá nghiêm khắc với chính mình.'
+      ko: "지금 이 순간! 열정적으로 살아가는 모험가",
+      en: "This moment! A passionate adventurer",
+      ja: "今この瞬間！情熱的に生きる冒険家",
+      'zh-CN': "此时此刻！充满激情生活的冒险家",
+      'zh-TW': "此時此刻！充滿激情生活的冒險家",
+      id: "Saat ini! Petualang yang hidup dengan penuh gairah",
+      vi: "Ngay bây giờ! Nhà thám hiểm sống đầy đam mê"
     },
-    coreValues: {
-      ko: '성장, 배움, 자아실현, 의미',
-      en: 'Growth, learning, self-actualization, meaning',
-      ja: '成長、学び、自己実現、意味',
-      "zh-CN": '成长、学习、自我实现、意义',
-      "zh-TW": '成長、學習、自我實現、意義',
-      id: 'Pertumbuhan, pembelajaran, aktualisasi diri, makna',
-      vi: 'Phát triển, học hỏi, tự hoàn thiện, ý nghĩa'
+    characteristics: {
+      ko: "열정과 도전을 삶의 원동력으로 삼습니다. 새로운 것에 도전하고, 설레는 경험을 추구하며, 후회 없이 살고 싶어 합니다. 현재를 즐기고 순간을 불태우며 삽니다. 에너지 넘치고 매력적이지만 안정성은 부족할 수 있습니다.",
+      en: "Uses passion and challenge as life's driving force. Challenges new things, pursues exciting experiences, wants to live without regret. Enjoys the present and burns each moment. Full of energy and attractive but may lack stability.",
+      ja: "情熱と挑戦を人生の原動力とします。新しいことに挑戦し、ワクワクする経験を追求し、後悔なく生きたいです。現在を楽しみ、瞬間を燃やして生きます。エネルギーに溢れ魅力的ですが、安定性は不足するかもしれません。",
+      'zh-CN': "将激情和挑战作为生活的动力。挑战新事物，追求令人兴奋的体验，希望无悔地生活。享受现在，燃烧每一刻。充满活力和魅力，但可能缺乏稳定性。",
+      'zh-TW': "將激情和挑戰作為生活的動力。挑戰新事物，追求令人興奮的體驗，希望無悔地生活。享受現在，燃燒每一刻。充滿活力和魅力，但可能缺乏穩定性。",
+      id: "Menggunakan gairah dan tantangan sebagai kekuatan pendorong hidup. Menantang hal-hal baru, mengejar pengalaman yang menggairahkan, ingin hidup tanpa penyesalan. Menikmati saat ini dan membakar setiap momen. Penuh energi dan menarik tapi mungkin kurang stabilitas.",
+      vi: "Sử dụng đam mê và thử thách làm động lực sống. Thử thách những điều mới, theo đuổi trải nghiệm thú vị, muốn sống không hối tiếc. Tận hưởng hiện tại và đốt cháy từng khoảnh khắc. Tràn đầy năng lượng và hấp dẫn nhưng có thể thiếu ổn định."
     },
-    strengths: [
-      { ko: '성찰', en: 'Reflection', ja: '省察', "zh-CN": '反思', "zh-TW": '反思', id: 'Refleksi', vi: 'Suy ngẫm' },
-      { ko: '성장', en: 'Growth', ja: '成長', "zh-CN": '成长', "zh-TW": '成長', id: 'Pertumbuhan', vi: 'Phát triển' },
-      { ko: '지혜', en: 'Wisdom', ja: '知恵', "zh-CN": '智慧', "zh-TW": '智慧', id: 'Kebijaksanaan', vi: 'Trí tuệ' },
-      { ko: '깊이', en: 'Depth', ja: '深さ', "zh-CN": '深度', "zh-TW": '深度', id: 'Kedalaman', vi: 'Chiều sâu' }
-    ],
-    weaknesses: [
-      { ko: '자기비판', en: 'Self-criticism', ja: '自己批判', "zh-CN": '自我批评', "zh-TW": '自我批評', id: 'Kritik diri', vi: 'Tự phê bình' },
-      { ko: '완벽주의', en: 'Perfectionism', ja: '完璧主義', "zh-CN": '完美主义', "zh-TW": '完美主義', id: 'Perfeksionisme', vi: 'Chủ nghĩa hoàn hảo' },
-      { ko: '현재 즐기지 못함', en: 'Difficulty enjoying present', ja: '現在を楽しめない', "zh-CN": '难以享受当下', "zh-TW": '難以享受當下', id: 'Kesulitan menikmati saat ini', vi: 'Khó tận hưởng hiện tại' }
-    ],
+    impression: {
+      ko: "핵심 가치: 열정, 도전, 설렘, 현재",
+      en: "Core values: Passion, challenge, excitement, present",
+      ja: "核心価値：情熱、挑戦、ワクワク、現在",
+      'zh-CN': "核心价值：激情、挑战、兴奋、现在",
+      'zh-TW': "核心價值：激情、挑戰、興奮、現在",
+      id: "Nilai inti: Gairah, tantangan, kegembiraan, saat ini",
+      vi: "Giá trị cốt lõi: Đam mê, thử thách, hứng thú, hiện tại"
+    },
+    pros: {
+      ko: "열정, 에너지, 용기, 재미",
+      en: "Passion, energy, courage, fun",
+      ja: "情熱、エネルギー、勇気、楽しさ",
+      'zh-CN': "激情、能量、勇气、乐趣",
+      'zh-TW': "激情、能量、勇氣、樂趣",
+      id: "Gairah, energi, keberanian, kesenangan",
+      vi: "Đam mê, năng lượng, can đảm, thú vị"
+    },
+    cons: {
+      ko: "불안정, 계획성 부족, 충동적",
+      en: "Instability, lack of planning, impulsive",
+      ja: "不安定、計画性不足、衝動的",
+      'zh-CN': "不稳定、缺乏计划性、冲动",
+      'zh-TW': "不穩定、缺乏計劃性、衝動",
+      id: "Ketidakstabilan, kurang perencanaan, impulsif",
+      vi: "Không ổn định, thiếu kế hoạch, bốc đồng"
+    },
     advice: {
-      ko: '성장도 중요하지만 지금의 당신도 충분히 괜찮아요!',
-      en: 'Growth is important, but who you are now is enough!',
-      ja: '成長も重要ですが、今のあなたも十分に素晴らしいです！',
-      "zh-CN": '成长很重要，但现在的你也足够好了！',
-      "zh-TW": '成長很重要，但現在的你 also足夠好了！',
-      id: 'Pertumbuhan penting, tapi siapa kamu sekarang sudah cukup!',
-      vi: 'Phát triển quan trọng, nhưng con người bạn hiện tại đã đủ tốt!'
-    },
-    compatibility: {
-      best: ['type6'],
-      good: ['type2', 'type5'],
-      careful: ['type4']
+      ko: "열정도 좋지만 가끔은 안정도 필요해요. 현재와 미래의 균형을 생각해보세요!",
+      en: "Passion is good, but sometimes stability is needed too. Think about the balance between present and future!",
+      ja: "情熱もいいですが、時々安定も必要です。現在と未来のバランスを考えてみてください！",
+      'zh-CN': "激情很好，但有时也需要稳定。想想现在和未来的平衡！",
+      'zh-TW': "激情很好，但有時也需要穩定。想想現在和未來的平衡！",
+      id: "Gairah baik, tapi kadang stabilitas juga diperlukan. Pikirkan keseimbangan antara sekarang dan masa depan!",
+      vi: "Đam mê tốt, nhưng đôi khi cũng cần ổn định. Hãy nghĩ về sự cân bằng giữa hiện tại và tương lai!"
     }
   }
 ];
 
-// 점수 계산 함수
-export function calculateLifePrioritiesResult(answers: Array<{ type1: number; type2: number; type3: number; type4: number; type5: number; type6: number; }>): string {
-  const totalScores = {
-    type1: 0,
-    type2: 0,
-    type3: 0,
-    type4: 0,
-    type5: 0,
-    type6: 0
-  };
-
+export function calculateLifePrioritiesResult(answers: any[]): string {
+  const scores = { Type1: 0, Type2: 0, Type3: 0, Type4: 0, Type5: 0, Type6: 0 };
+  
+  // 기본 점수 계산
   answers.forEach(answer => {
-    totalScores.type1 += answer.type1;
-    totalScores.type2 += answer.type2;
-    totalScores.type3 += answer.type3;
-    totalScores.type4 += answer.type4;
-    totalScores.type5 += answer.type5;
-    totalScores.type6 += answer.type6;
-  });
-
-  let maxScore = 0;
-  let resultType = 'type1';
-
-  Object.entries(totalScores).forEach(([type, score]) => {
-    if (score > maxScore) {
-      maxScore = score;
-      resultType = type;
+    if (answer && typeof answer === 'object') {
+      Object.keys(answer).forEach(type => {
+        if (scores[type as keyof typeof scores] !== undefined) {
+          scores[type as keyof typeof scores] += answer[type];
+        }
+      });
     }
   });
-
-  // 동점일 경우 Q10-Q12의 선택을 우선 반영
-  const tieTypes: string[] = [];
-  Object.entries(totalScores).forEach(([type, score]) => {
-    if (score === maxScore) {
-      tieTypes.push(type);
-    }
-  });
-
-  if (tieTypes.length > 1) {
-    const lastThreeScores = {
-      type1: 0,
-      type2: 0,
-      type3: 0,
-      type4: 0,
-      type5: 0,
-      type6: 0
-    };
-
-    for (let i = 9; i < 12 && i < answers.length; i++) {
-      lastThreeScores.type1 += answers[i].type1;
-      lastThreeScores.type2 += answers[i].type2;
-      lastThreeScores.type3 += answers[i].type3;
-      lastThreeScores.type4 += answers[i].type4;
-      lastThreeScores.type5 += answers[i].type5;
-      lastThreeScores.type6 += answers[i].type6;
-    }
-
-    let maxLastScore = 0;
-    tieTypes.forEach(type => {
-      if (lastThreeScores[type as keyof typeof lastThreeScores] > maxLastScore) {
-        maxLastScore = lastThreeScores[type as keyof typeof lastThreeScores];
-        resultType = type;
+  
+  // 최고 점수의 타입 반환
+  const maxScore = Math.max(...Object.values(scores));
+  const resultType = Object.keys(scores).find(type => scores[type as keyof typeof scores] === maxScore);
+  
+  // 동점일 경우 Q10-Q12의 선택을 우선 반영 (마지막 3개 답변 확인)
+  if (resultType && answers.length >= 10) {
+    const lastThreeAnswers = answers.slice(-3);
+    const lastThreeScores = { Type1: 0, Type2: 0, Type3: 0, Type4: 0, Type5: 0, Type6: 0 };
+    
+    lastThreeAnswers.forEach(answer => {
+      if (answer && typeof answer === 'object') {
+        Object.keys(answer).forEach(type => {
+          if (lastThreeScores[type as keyof typeof lastThreeScores] !== undefined) {
+            lastThreeScores[type as keyof typeof lastThreeScores] += answer[type];
+          }
+        });
       }
     });
+    
+    const maxLastScore = Math.max(...Object.values(lastThreeScores));
+    const lastResultType = Object.keys(lastThreeScores).find(type => lastThreeScores[type as keyof typeof lastThreeScores] === maxLastScore);
+    
+    return lastResultType || resultType;
   }
-
-  return resultType;
+  
+  return resultType || "Type1";
 }
-

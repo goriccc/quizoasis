@@ -41,6 +41,97 @@
   "loveFlavorTest": {
     "resultShareMessage": "我的恋爱是{type}！你的恋爱是什么味道？我们也来测测配对度吧 🍭💕"
   },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "生活中真正重要的是什么？",
+      "line2": "爱与成功，自由与稳定，激情与平静...",
+      "line3": "我们每时每刻都站在选择的十字路口。",
+      "line4": "有些人为了爱放弃一切，",
+      "line5": "有些人把自己的梦想放在首位。",
+      "line6": "有些人追求稳定，有些人渴望自由。",
+      "line7": "你生活中最重要的价值是什么？",
+      "line8": "只需2分钟！快速直观地选择 💭"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "progress": "进度",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "其他测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "wechat": "微信",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "adsenseTitle": "AdSense广告区域",
+      "similarTests": "相似的其他测试",
+      "goodTypes": "相配类型",
+      "cautionTypes": "注意类型",
+      "reputation": "声誉",
+      "advice": "建议",
+      "none": "无"
+    },
+    "result": {
+      "yourResult": "你的人生优先级",
+      "pros": "优点",
+      "cons": "缺点",
+      "advice": "建议",
+      "coreValues": "核心价值",
+      "type1": {
+        "title": "成就导向型",
+        "emoji": "🏆",
+        "subtitle": "成功就是我！朝着梦想奔跑的野心家",
+        "keywords": ["成功", "成长", "认可", "目标"]
+      },
+      "type2": {
+        "title": "关系中心型",
+        "emoji": "💕",
+        "subtitle": "爱就是一切！优先考虑人的感性派",
+        "keywords": ["爱", "关系", "纽带", "奉献"]
+      },
+      "type3": {
+        "title": "自由追求型",
+        "emoji": "🦅",
+        "subtitle": "自由最好！无拘无束飞翔的自由灵魂",
+        "keywords": ["自由", "独立", "冒险", "自主性"]
+      },
+      "type4": {
+        "title": "平静稳定型",
+        "emoji": "🏡",
+        "subtitle": "和平最好！想要舒适稳定的生活",
+        "keywords": ["平静", "稳定", "舒适", "持续性"]
+      },
+      "type5": {
+        "title": "理性平衡型",
+        "emoji": "⚖️",
+        "subtitle": "逻辑是答案！理性平衡的现实主义者",
+        "keywords": ["平衡", "逻辑", "合理性", "效率"]
+      },
+      "type6": {
+        "title": "激情挑战型",
+        "emoji": "🔥",
+        "subtitle": "此时此刻！激情生活的冒险家",
+        "keywords": ["激情", "挑战", "兴奋", "现在"]
+      }
+    },
+    "shareMessages": {
+      "default": "我是{type}！我找到了人生中最重要的价值 💭 你会选择什么？",
+      "kakao": "我是{type}！我找到了人生中最重要的价值 💭 你会选择什么？",
+      "wechat": "我是{type}！我找到了人生中最重要的价值 💭 你会选择什么？",
+      "whatsapp": "我是{type}！我找到了人生中最重要的价值 💭 你会选择什么？",
+      "telegram": "我是{type}！我找到了人生中最重要的价值 💭 你会选择什么？",
+      "line": "我是{type}！我找到了人生中最重要的价值 💭 你会选择什么？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后重试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    }
+  },
   "trustTest": {
     "startMessage": {
       "line1": "人们有多信任你？我们测量你的可信度！",

@@ -41,6 +41,97 @@
   "loveFlavorTest": {
     "resultShareMessage": "私の恋は{type}！あなたの恋はどんな味？私たちの相性もチェックしてみよう 🍭💕"
   },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "人生で本当に重要なことは何ですか？",
+      "line2": "愛と成功、自由と安定、情熱と平穏...",
+      "line3": "私たちは毎瞬間選択の岐路に立っています。",
+      "line4": "ある人は愛のためにすべてを放棄し、",
+      "line5": "ある人は自分の夢を最優先にします。",
+      "line6": "ある人は安定を追求し、ある人は自由を渇望します。",
+      "line7": "あなたの人生で最も重要な価値は何ですか？",
+      "line8": "所要時間わずか2分！直感的に素早く選択してください 💭"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "progress": "進捗",
+      "shareResult": "結果を共有",
+      "retakeTest": "再挑戦",
+      "otherTests": "他のテスト",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "adsenseTitle": "AdSense広告エリア",
+      "similarTests": "類似の他のテスト",
+      "goodTypes": "相性の良いタイプ",
+      "cautionTypes": "注意タイプ",
+      "reputation": "評判",
+      "advice": "アドバイス",
+      "none": "なし"
+    },
+    "result": {
+      "yourResult": "あなたの人生優先順位",
+      "pros": "長所",
+      "cons": "短所",
+      "advice": "アドバイス",
+      "coreValues": "核心価値",
+      "type1": {
+        "title": "達成志向型",
+        "emoji": "🏆",
+        "subtitle": "成功こそが私！夢に向かって走る野心家",
+        "keywords": ["成功", "成長", "承認", "目標"]
+      },
+      "type2": {
+        "title": "関係中心型",
+        "emoji": "💕",
+        "subtitle": "愛がすべて！人を最優先にする感情派",
+        "keywords": ["愛", "関係", "絆", "献身"]
+      },
+      "type3": {
+        "title": "自由追求型",
+        "emoji": "🦅",
+        "subtitle": "自由が最高！束縛なく飛ぶ自由な魂",
+        "keywords": ["自由", "独立", "冒険", "自律性"]
+      },
+      "type4": {
+        "title": "平穏安定型",
+        "emoji": "🏡",
+        "subtitle": "平和が最高！快適で安定した生活を求める",
+        "keywords": ["平穏", "安定", "快適", "持続性"]
+      },
+      "type5": {
+        "title": "理性均衡型",
+        "emoji": "⚖️",
+        "subtitle": "論理が答え！合理的にバランスを取る現実主義者",
+        "keywords": ["均衡", "論理", "合理性", "効率"]
+      },
+      "type6": {
+        "title": "情熱挑戦型",
+        "emoji": "🔥",
+        "subtitle": "今この瞬間！情熱的に生きる冒険家",
+        "keywords": ["情熱", "挑戦", "ワクワク", "現在"]
+      }
+    },
+    "shareMessages": {
+      "default": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
+      "kakao": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
+      "wechat": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
+      "whatsapp": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
+      "telegram": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
+      "line": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    }
+  },
   "trustTest": {
     "startMessage": {
       "line1": "人々はあなたをどのくらい信頼していますか？あなたの信頼度を測定します！",

@@ -92,6 +92,9 @@ const HumorCodeTestClient = dynamic(() => import('@/components/HumorCodeTestClie
 const TrustTestClient = dynamic(() => import('@/components/TrustTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
+const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 const ApologyTestClient = dynamic(() => import('@/components/ApologyTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
@@ -144,9 +147,6 @@ const BrainTestClient = dynamic(() => import('@/components/BrainTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const OptimismTestClient = dynamic(() => import('@/components/OptimismTestClient'), {
-  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
-});
-const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const AdventurerTestClient = dynamic(() => import('@/components/AdventurerTestClient'), {
@@ -1351,7 +1351,7 @@ export default async function TestPage({ params }: Props) {
     return (
       <>
         <LifePrioritiesTestClient
-          locale={locale}
+          locale={locale as "ko" | "en" | "ja" | "zh-CN" | "zh-TW" | "id" | "vi"}
           slug={test.slug}
           title={test.title[locale] || test.title.ko}
           description={test.description[locale] || test.description.ko}
@@ -2095,6 +2095,11 @@ export default async function TestPage({ params }: Props) {
       questions: trustQuestions,
       results: trustResults
     };
+  } else if (slug === 'life-priorities-test') {
+    testData = {
+      questions: lifePrioritiesQuestions,
+      results: lifePrioritiesResults
+    };
   } else if (slug === 'empathy-level-test') {
     testData = {
       questions: empathyQuestions,
@@ -2240,6 +2245,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'jealousy-level-test') TestClient = JealousyTestClient;
     else if (slug === 'humor-code-test') TestClient = HumorCodeTestClient;
     else if (slug === 'trustworthiness-test') TestClient = TrustTestClient;
+    else if (slug === 'life-priorities-test') TestClient = LifePrioritiesTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;
     else if (slug === 'my-dating-style') TestClient = DatingStyleTestClient;

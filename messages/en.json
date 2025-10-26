@@ -41,6 +41,96 @@
   "loveFlavorTest": {
     "resultShareMessage": "My love is {type}! What flavor is your love? Let's check our compatibility 🍭💕"
   },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "What do you value most in life?",
+      "line2": "Love and success, freedom and stability, passion and peace...",
+      "line3": "We stand at crossroads of choice every moment.",
+      "line4": "Some people give up everything for love,",
+      "line5": "Some people prioritize their dreams first.",
+      "line6": "Some people pursue stability, some people crave freedom.",
+      "line7": "What is the most important value in your life?",
+      "line8": "Takes only 2 minutes! Choose quickly and intuitively 💭"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "progress": "Progress",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "adsenseTitle": "AdSense Ad Area",
+      "similarTests": "Similar Other Tests",
+      "goodTypes": "Compatible Types",
+      "cautionTypes": "Caution Types",
+      "reputation": "Reputation",
+      "advice": "Advice",
+      "none": "None"
+    },
+    "result": {
+      "yourResult": "Your Life Priorities",
+      "pros": "Pros",
+      "cons": "Cons",
+      "advice": "Advice",
+      "type1": {
+        "title": "Achievement-Oriented",
+        "emoji": "🏆",
+        "subtitle": "Success is me! An ambitious person running towards dreams",
+        "keywords": ["Success", "Growth", "Recognition", "Goals"]
+      },
+      "type2": {
+        "title": "Relationship-Centered",
+        "emoji": "💕",
+        "subtitle": "Love is everything! An emotional person who prioritizes people",
+        "keywords": ["Love", "Relationships", "Bonds", "Devotion"]
+      },
+      "type3": {
+        "title": "Freedom-Seeking",
+        "emoji": "🦅",
+        "subtitle": "Freedom is the best! A free spirit flying without constraints",
+        "keywords": ["Freedom", "Independence", "Adventure", "Autonomy"]
+      },
+      "type4": {
+        "title": "Peaceful Stability",
+        "emoji": "🏡",
+        "subtitle": "Peace is the best! Wanting a comfortable and stable life",
+        "keywords": ["Peace", "Stability", "Comfort", "Continuity"]
+      },
+      "type5": {
+        "title": "Rational Balance",
+        "emoji": "⚖️",
+        "subtitle": "Logic is the answer! A realist who balances rationally",
+        "keywords": ["Balance", "Logic", "Rationality", "Efficiency"]
+      },
+      "type6": {
+        "title": "Passionate Challenge",
+        "emoji": "🔥",
+        "subtitle": "This moment! An adventurer living passionately",
+        "keywords": ["Passion", "Challenge", "Excitement", "Present"]
+      }
+    },
+    "shareMessages": {
+      "default": "I am {type}! I found the most important value in life 💭 What would you choose?",
+      "kakao": "I am {type}! I found the most important value in life 💭 What would you choose?",
+      "wechat": "I am {type}! I found the most important value in life 💭 What would you choose?",
+      "whatsapp": "I am {type}! I found the most important value in life 💭 What would you choose?",
+      "telegram": "I am {type}! I found the most important value in life 💭 What would you choose?",
+      "line": "I am {type}! I found the most important value in life 💭 What would you choose?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    }
+  },
   "trustTest": {
     "startMessage": {
       "line1": "How much do people trust you? We measure your trustworthiness!",

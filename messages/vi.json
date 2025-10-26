@@ -41,6 +41,97 @@
   "loveFlavorTest": {
     "resultShareMessage": "Tình yêu của tôi là {type}! Tình yêu của bạn có vị gì? Hãy cùng kiểm tra độ tương hợp của chúng ta 🍭💕"
   },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "Điều gì thực sự quan trọng trong cuộc sống?",
+      "line2": "Tình yêu và thành công, tự do và ổn định, đam mê và bình yên...",
+      "line3": "Chúng ta đứng ở ngã tư lựa chọn mỗi khoảnh khắc.",
+      "line4": "Một số người từ bỏ mọi thứ vì tình yêu,",
+      "line5": "Một số người ưu tiên ước mơ của họ trước.",
+      "line6": "Một số người theo đuổi sự ổn định, một số người khao khát tự do.",
+      "line7": "Giá trị quan trọng nhất trong cuộc sống của bạn là gì?",
+      "line8": "Chỉ mất 2 phút! Chọn nhanh và trực quan 💭"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "progress": "Tiến độ",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Kiểm tra khác",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "adsenseTitle": "Khu vực quảng cáo AdSense",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "goodTypes": "Loại tương thích",
+      "cautionTypes": "Loại cần thận trọng",
+      "reputation": "Danh tiếng",
+      "advice": "Lời khuyên",
+      "none": "Không có"
+    },
+    "result": {
+      "yourResult": "Ưu tiên cuộc sống của bạn",
+      "pros": "Ưu điểm",
+      "cons": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "coreValues": "Giá Trị Cốt Lõi",
+      "type1": {
+        "title": "Định hướng thành tựu",
+        "emoji": "🏆",
+        "subtitle": "Thành công chính là tôi! Người tham vọng chạy về phía ước mơ",
+        "keywords": ["Thành công", "Tăng trưởng", "Công nhận", "Mục tiêu"]
+      },
+      "type2": {
+        "title": "Tập trung vào mối quan hệ",
+        "emoji": "💕",
+        "subtitle": "Tình yêu là tất cả! Người cảm xúc ưu tiên con người",
+        "keywords": ["Tình yêu", "Mối quan hệ", "Liên kết", "Cống hiến"]
+      },
+      "type3": {
+        "title": "Tìm kiếm tự do",
+        "emoji": "🦅",
+        "subtitle": "Tự do là tốt nhất! Linh hồn tự do bay không ràng buộc",
+        "keywords": ["Tự do", "Độc lập", "Phiêu lưu", "Tự chủ"]
+      },
+      "type4": {
+        "title": "Bình yên ổn định",
+        "emoji": "🏡",
+        "subtitle": "Hòa bình là tốt nhất! Muốn cuộc sống thoải mái và ổn định",
+        "keywords": ["Bình yên", "Ổn định", "Thoải mái", "Liên tục"]
+      },
+      "type5": {
+        "title": "Cân bằng hợp lý",
+        "emoji": "⚖️",
+        "subtitle": "Logic là câu trả lời! Người thực tế cân bằng một cách hợp lý",
+        "keywords": ["Cân bằng", "Logic", "Hợp lý", "Hiệu quả"]
+      },
+      "type6": {
+        "title": "Thử thách đam mê",
+        "emoji": "🔥",
+        "subtitle": "Khoảnh khắc này! Nhà thám hiểm sống đam mê",
+        "keywords": ["Đam mê", "Thử thách", "Hứng thú", "Hiện tại"]
+      }
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
+      "kakao": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
+      "wechat": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
+      "whatsapp": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
+      "telegram": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
+      "line": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    }
+  },
   "trustTest": {
     "startMessage": {
       "line1": "Mọi người tin tưởng bạn đến mức nào? Chúng tôi đo lường mức độ đáng tin cậy của bạn!",

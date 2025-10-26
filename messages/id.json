@@ -41,6 +41,97 @@
   "loveFlavorTest": {
     "resultShareMessage": "Cinta saya adalah {type}! Rasa apa cinta Anda? Mari kita periksa kecocokan kita 🍭💕"
   },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "Apa yang benar-benar penting dalam hidup?",
+      "line2": "Cinta dan kesuksesan, kebebasan dan stabilitas, gairah dan kedamaian...",
+      "line3": "Kita berdiri di persimpangan pilihan setiap saat.",
+      "line4": "Beberapa orang mengorbankan segalanya untuk cinta,",
+      "line5": "Beberapa orang memprioritaskan mimpi mereka terlebih dahulu.",
+      "line6": "Beberapa orang mengejar stabilitas, beberapa orang mendambakan kebebasan.",
+      "line7": "Apa nilai terpenting dalam hidup Anda?",
+      "line8": "Hanya butuh 2 menit! Pilih dengan cepat dan intuitif 💭"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "progress": "Kemajuan",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulang",
+      "otherTests": "Tes Lainnya",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "adsenseTitle": "Area Iklan AdSense",
+      "similarTests": "Tes Serupa Lainnya",
+      "goodTypes": "Tipe yang Cocok",
+      "cautionTypes": "Tipe Hati-hati",
+      "reputation": "Reputasi",
+      "advice": "Saran",
+      "none": "Tidak ada"
+    },
+    "result": {
+      "yourResult": "Prioritas Hidup Anda",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "advice": "Saran",
+      "coreValues": "Nilai Inti",
+      "type1": {
+        "title": "Berorientasi Pencapaian",
+        "emoji": "🏆",
+        "subtitle": "Kesuksesan adalah saya! Orang ambisius yang berlari menuju mimpi",
+        "keywords": ["Kesuksesan", "Pertumbuhan", "Pengakuan", "Tujuan"]
+      },
+      "type2": {
+        "title": "Berpusat pada Hubungan",
+        "emoji": "💕",
+        "subtitle": "Cinta adalah segalanya! Orang emosional yang memprioritaskan orang",
+        "keywords": ["Cinta", "Hubungan", "Ikatan", "Pengabdian"]
+      },
+      "type3": {
+        "title": "Mencari Kebebasan",
+        "emoji": "🦅",
+        "subtitle": "Kebebasan adalah yang terbaik! Jiwa bebas yang terbang tanpa batasan",
+        "keywords": ["Kebebasan", "Kemandirian", "Petualangan", "Otonomi"]
+      },
+      "type4": {
+        "title": "Ketenangan Stabilitas",
+        "emoji": "🏡",
+        "subtitle": "Kedamaian adalah yang terbaik! Menginginkan kehidupan yang nyaman dan stabil",
+        "keywords": ["Kedamaian", "Stabilitas", "Kenyamanan", "Kontinuitas"]
+      },
+      "type5": {
+        "title": "Keseimbangan Rasional",
+        "emoji": "⚖️",
+        "subtitle": "Logika adalah jawabannya! Realis yang menyeimbangkan secara rasional",
+        "keywords": ["Keseimbangan", "Logika", "Rasionalitas", "Efisiensi"]
+      },
+      "type6": {
+        "title": "Tantangan Berapi-api",
+        "emoji": "🔥",
+        "subtitle": "Saat ini! Petualang yang hidup dengan penuh semangat",
+        "keywords": ["Semangat", "Tantangan", "Kegembiraan", "Saat ini"]
+      }
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Saya menemukan nilai terpenting dalam hidup 💭 Apa yang akan Anda pilih?",
+      "kakao": "Saya {type}! Saya menemukan nilai terpenting dalam hidup 💭 Apa yang akan Anda pilih?",
+      "wechat": "Saya {type}! Saya menemukan nilai terpenting dalam hidup 💭 Apa yang akan Anda pilih?",
+      "whatsapp": "Saya {type}! Saya menemukan nilai terpenting dalam hidup 💭 Apa yang akan Anda pilih?",
+      "telegram": "Saya {type}! Saya menemukan nilai terpenting dalam hidup 💭 Apa yang akan Anda pilih?",
+      "line": "Saya {type}! Saya menemukan nilai terpenting dalam hidup 💭 Apa yang akan Anda pilih?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    }
+  },
   "trustTest": {
     "startMessage": {
       "line1": "Seberapa banyak orang mempercayai Anda? Kami mengukur tingkat kepercayaan Anda!",

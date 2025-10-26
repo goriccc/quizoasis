@@ -2,20 +2,21 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { LifePrioritiesQuestion, LifePrioritiesResult, calculateLifePrioritiesResult } from '../lib/lifePrioritiesData';
+import { LifePrioritiesQuestion, LifePrioritiesResult, calculateLifePrioritiesResult } from '@/lib/lifePrioritiesData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 
 interface LifePrioritiesTestClientProps {
-  locale: string;
+  locale: Locale;
   slug: string;
-  title: string;
+  title: string | Record<string, string>;
   description: string;
   questions: LifePrioritiesQuestion[];
   results: LifePrioritiesResult[];
@@ -43,57 +44,58 @@ export default function LifePrioritiesTestClient({
   playCount = 0,
   similarTests = []
 }: LifePrioritiesTestClientProps) {
-  // locale 매핑 (데이터 파일의 키와 일치)
-  const getLocaleKey = (locale: string): string => {
-    return locale;
-  };
+  const t = useTranslations();
   
-  const localeKey = getLocaleKey(locale);
-  
-  const t = useTranslations('lifePrioritiesTest');
-  const tGlobal = useTranslations();
-  
+  // 상태 관리
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
   const [result, setResult] = useState<LifePrioritiesResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<LifePrioritiesQuestion[]>(questions);
-  const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
-  const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
-  const [aliProducts, setAliProducts] = useState<any[]>([]);
-  const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
+  const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
+  const [shuffledQuestions, setShuffledQuestions] = useState<LifePrioritiesQuestion[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [similarTestsData, setSimilarTestsData] = useState<Array<{
+    id: number;
+    slug: string;
+    title: string;
+    thumbnail: string;
+    playCount: number;
+  }>>([]);
+  const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
+  const [aliProducts, setAliProducts] = useState<any[]>([]);
 
-  // 답변 순서 섞기 (질문이 바뀔 때마다)
+  // 질문 셔플 함수
+  const shuffleQuestions = (questions: LifePrioritiesQuestion[]): LifePrioritiesQuestion[] => {
+    return [...questions].sort(() => Math.random() - 0.5);
+  };
+
+  // 질문 셔플 초기화
   useEffect(() => {
-    if (!started) return;
-    
-    const questionKey = currentQuestion;
-    if (!shuffledOptionsMap[questionKey]) {
-      const optionsCopy = [...shuffledQuestions[currentQuestion].options];
-      // Fisher-Yates 셔플 알고리즘
-      for (let i = optionsCopy.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
-      }
-      
-      setShuffledOptionsMap(prev => ({
-        ...prev,
-        [questionKey]: optionsCopy
-      }));
+    if (questions.length > 0) {
+      const shuffled = shuffleQuestions(questions);
+      setShuffledQuestions(shuffled);
     }
-  }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
+  }, [questions]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
     if (locale !== 'ko' && !started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
-          const products = await searchAliExpressProducts('couple gifts', 4, locale);
+          // 언어별로 선물 관련 키워드 사용
+          const searchKeywords = {
+            'en': 'present',
+            'ja': 'プレゼント',
+            'zh-CN': '礼物',
+            'zh-TW': '禮物',
+            'id': 'present',  // 인도네시아어는 영어 키워드 사용
+            'vi': 'quà tặng'
+          };
+          const keyword = searchKeywords[locale as keyof typeof searchKeywords] || 'gifts';
+          const products = await searchAliExpressProducts(keyword, 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -103,151 +105,82 @@ export default function LifePrioritiesTestClient({
     }
   }, [locale, started, aliProducts.length]);
 
-  // AdSense 광고 로드
+  // 3초 지연 로딩 스피너
   useEffect(() => {
-    if (showResult) return;
-    
+    if (showLoadingSpinner) {
     const timer = setTimeout(() => {
-      try {
-        if (typeof window !== 'undefined') {
-          // @ts-ignore
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-        }
-      } catch (error) {
-        console.error('AdSense 광고 로드 오류:', error);
-      }
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, [currentQuestion, showResult]);
-
-  // 유사한 테스트 로드
-  useEffect(() => {
-    const loadSimilarTests = async () => {
-      try {
-        const allTests = await getTests();
-        const filteredTests = allTests.filter((test: any) => {
-          if (test.slug === slug) return false;
-          
-          // tags가 배열인지 확인하고, 아니면 파싱 시도
-          let tagsArray = test.tags;
-          if (typeof tagsArray === 'string') {
-            try {
-              tagsArray = JSON.parse(tagsArray);
-            } catch (e) {
-              console.warn('Tags 파싱 실패:', test.slug, test.tags);
-              return false;
-            }
-          }
-          
-          // 배열이 아니면 스킵
-          if (!Array.isArray(tagsArray)) {
-            return false;
-          }
-          
-          return tagsArray.includes('심리') || tagsArray.includes('관계');
-        });
-        
-        // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
-        const sortedTests = filteredTests
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5);
-        
-        setSimilarTestsState(sortedTests);
-      } catch (error) {
-        console.error('유사한 테스트 로드 실패:', error);
-      }
-    };
-
-    loadSimilarTests();
-  }, [slug]);
-
-  // 인기 테스트 로드
-  useEffect(() => {
-    const loadPopularTests = async () => {
-      try {
-        const allTests = await getTests();
-        const filteredTests = allTests.filter((test: any) => test.slug !== slug);
-        
-        // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
-        const sortedTests = filteredTests
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5);
-        
-        setPopularTestsState(sortedTests);
-      } catch (error) {
-        console.error('인기 테스트 로드 실패:', error);
-      }
-    };
-
-    loadPopularTests();
-  }, [slug]);
-
-  const shuffleQuestions = (questionList: LifePrioritiesQuestion[]) => {
-    const shuffled = [...questionList];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-  };
-
-  const handleStartTest = async () => {
-    setShuffledQuestions(shuffleQuestions(questions));
-    
-    if (!hasIncrementedPlayCount) {
-      try {
-        await incrementPlayCount(slug);
-        setHasIncrementedPlayCount(true);
-        setDisplayPlayCount(prev => prev + 1);
-      } catch (error) {
-        console.error('플레이 카운트 증가 실패:', error);
-      }
-    }
-    
-    setStarted(true);
-    window.scrollTo(0, 0);
-  };
-
-  const handleAnswer = (scores: any) => {
-    const newAnswers = [...answers, scores];
-    setAnswers(newAnswers);
-
-    if (currentQuestion < shuffledQuestions.length - 1) {
-      setCurrentQuestion(prev => prev + 1);
-    } else {
-      // 테스트 완료
-      const calculatedResult = calculateLifePrioritiesResult(newAnswers);
-      const lifePrioritiesResult = results.find(r => r.type === calculatedResult);
-      if (lifePrioritiesResult) {
-        setResult(lifePrioritiesResult);
-      }
-      setShowLoadingSpinner(true);
-      
-      setTimeout(() => {
         setShowLoadingSpinner(false);
         setShowResultPopup(true);
-      }, 2000);
+      }, 3000);
+      return () => clearTimeout(timer);
     }
-    
-    window.scrollTo(0, 0);
-  };
+  }, [showLoadingSpinner]);
 
+  // 공유 함수들
+  const handleShareResult = async () => {
+    if (!result) return;
+    
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const shareMessage = t('lifePrioritiesTest.shareMessages.default', { type: resultTitle });
+    const shareText = `${shareMessage}\n\n${window.location.href}`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: typeof title === 'string' ? title : title[locale] || title.ko,
+          text: shareText,
+          url: window.location.href
+        });
+      } catch (error) {
+        console.error('Error sharing:', error);
+      }
+    } else {
+      // 클립보드에 복사
+      try {
+        await navigator.clipboard.writeText(shareText);
+        alert(t('lifePrioritiesTest.alerts.resultCopied'));
+      } catch (error) {
+        console.error('Error copying to clipboard:', error);
+      }
+    }
+  };
+  
   const shareToKakao = () => {
+    if (typeof window === 'undefined') return;
+    
+    if (!window.Kakao || !window.Kakao.isInitialized()) {
+      alert('카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.');
+      return;
+    }
+
     const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
-    const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
+    const thumbnailUrl = getThumbnailUrl(thumbnail || '');
+    
+    // 결과가 있으면 맞춤형 공유 문구 사용
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareDescription = result 
-      ? t('shareMessages.kakao', { type: resultTitle })
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your life priority? Let's test together 💭` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたの人生の優先順位は？一緒にテストしましょう 💭` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的人生优先级是什么？一起来测试吧 💭` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的人生優先級是什麼？一起來測試吧 💭` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Apa prioritas hidup Anda? Mari tes bersama 💭` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Ưu tiên cuộc sống của bạn là gì? Hãy cùng kiểm tra 💭` :
+        `나는 ${resultTitle}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?`
       : description;
     
     try {
-      // @ts-ignore
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-          title: title,
+          title: typeof title === 'string' ? title : title[locale] || title.ko,
           description: shareDescription,
-          imageUrl: getThumbnailUrl(thumbnail || 'test_205_life_priorities.jpg'),
+          imageUrl: thumbnailUrl,
           link: {
             mobileWebUrl: currentUrl,
             webUrl: currentUrl,
@@ -255,7 +188,7 @@ export default function LifePrioritiesTestClient({
         },
         buttons: [
           {
-            title: t('ui.startTest'),
+            title: '테스트 하러 가기',
             link: {
               mobileWebUrl: currentUrl,
               webUrl: currentUrl,
@@ -265,25 +198,209 @@ export default function LifePrioritiesTestClient({
       });
     } catch (error) {
       console.error('카카오톡 공유 오류:', error);
-      alert(t('alerts.kakaoError'));
+      alert('카카오톡 공유 중 오류가 발생했습니다.');
     }
+  };
+  
+  const shareToWeChat = async () => {
+    const url = `https://myquizoasis.com${window.location.pathname}`;
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
+    const shareText = result 
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your life priority? Let's test together 💭\n\n${url}` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたの人生の優先順位は？一緒にテストしましょう 💭\n\n${url}` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的人生优先级是什么？一起来测试吧 💭\n\n${url}` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的人生優先級是什麼？一起來測試吧 💭\n\n${url}` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Apa prioritas hidup Anda? Mari tes bersama 💭\n\n${url}` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Ưu tiên cuộc sống của bạn là gì? Hãy cùng kiểm tra 💭\n\n${url}` :
+        `나는 ${resultTitle}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?\n\n${url}`
+      : `${typeof title === 'string' ? title : title[locale] || title.ko}\n\n${url}`;
+    
+    // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
+    if (navigator.share) {
+      try {
+        await navigator.share({ text: shareText });
+        return;
+      } catch (error) {
+        if (error instanceof Error && error.name === 'AbortError') {
+          return; // 사용자가 취소
+        }
+      }
+    }
+    
+    // Fallback: 링크 복사
+    try {
+      await navigator.clipboard.writeText(url);
+      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+    } catch (error) {
+      alert('공유 기능을 사용할 수 없습니다.');
+    }
+  };
+  
+  const shareToWhatsApp = () => {
+    if (typeof window === 'undefined') return;
+    
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
+    const shareText = result 
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your life priority? Let's test together 💭` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたの人生の優先順位は？一緒にテストしましょう 💭` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的人生优先级是什么？一起来测试吧 💭` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的人生優先級是什麼？一起來測試吧 💭` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Apa prioritas hidup Anda? Mari tes bersama 💭` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Ưu tiên cuộc sống của bạn là gì? Hãy cùng kiểm tra 💭` :
+        `나는 ${resultTitle}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?`
+      : locale === 'en' ?
+        'What do you value more? Find your life priorities!' :
+        locale === 'ja' ?
+        'あなたは何をより重要に考えますか？人生の優先順位を見つけよう！' :
+        locale === 'zh-CN' ?
+        '你更重视什么？找到你的人生优先级！' :
+        locale === 'zh-TW' ?
+        '你更重視什麼？找到你的人生優先級！' :
+        locale === 'id' ?
+        'Apa yang lebih Anda hargai? Temukan prioritas hidup Anda!' :
+        locale === 'vi' ?
+        'Bạn coi trọng điều gì hơn? Tìm ưu tiên cuộc sống của bạn!' :
+        '당신은 무엇을 더 중요하게 생각하나요? 인생 우선순위를 찾아보세요!';
+    
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(`${shareText}\n\n${currentUrl}`)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const shareToTelegram = () => {
-    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
-    const shareMessage = result 
-      ? t('shareMessages.telegram', { type: resultTitle })
-      : description;
-    const text = encodeURIComponent(shareMessage);
-    window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+    if (typeof window === 'undefined') return;
+    
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
+    const shareText = result 
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your life priority? Let's test together 💭` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたの人生の優先順位は？一緒にテストしましょう 💭` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的人生优先级是什么？一起来测试吧 💭` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的人生優先級是什麼？一起來測試吧 💭` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Apa prioritas hidup Anda? Mari tes bersama 💭` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Ưu tiên cuộc sống của bạn là gì? Hãy cùng kiểm tra 💭` :
+        `나는 ${resultTitle}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?`
+      : locale === 'en' ?
+        'What do you value more? Find your life priorities!' :
+        locale === 'ja' ?
+        'あなたは何をより重要に考えますか？人生の優先順位を見つけよう！' :
+        locale === 'zh-CN' ?
+        '你更重视什么？找到你的人生优先级！' :
+        locale === 'zh-TW' ?
+        '你更重視什麼？找到你的人生優先級！' :
+        locale === 'id' ?
+        'Apa yang lebih Anda hargai? Temukan prioritas hidup Anda!' :
+        locale === 'vi' ?
+        'Bạn coi trọng điều gì hơn? Tìm ưu tiên cuộc sống của bạn!' :
+        '당신은 무엇을 더 중요하게 생각하나요? 인생 우선순위를 찾아보세요!';
+    
+    const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(shareText)}`;
+    window.open(telegramUrl, '_blank');
+  };
+
+  const shareToLine = () => {
+    if (typeof window === 'undefined') return;
+    
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
+    const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
+    const shareText = result 
+      ? locale === 'en' ?
+        `I'm ${resultTitle}! What's your life priority? Let's test together 💭` :
+        locale === 'ja' ?
+        `私は${resultTitle}！あなたの人生の優先順位は？一緒にテストしましょう 💭` :
+        locale === 'zh-CN' ?
+        `我是${resultTitle}！你的人生优先级是什么？一起来测试吧 💭` :
+        locale === 'zh-TW' ?
+        `我是${resultTitle}！你的人生優先級是什麼？一起來測試吧 💭` :
+        locale === 'id' ?
+        `Saya ${resultTitle}! Apa prioritas hidup Anda? Mari tes bersama 💭` :
+        locale === 'vi' ?
+        `Tôi là ${resultTitle}! Ưu tiên cuộc sống của bạn là gì? Hãy cùng kiểm tra 💭` :
+        `나는 ${resultTitle}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?`
+      : locale === 'en' ?
+        'What do you value more? Find your life priorities!' :
+        locale === 'ja' ?
+        'あなたは何をより重要に考えますか？人生の優先順位を見つけよう！' :
+        locale === 'zh-CN' ?
+        '你更重视什么？找到你的人生优先级！' :
+        locale === 'zh-TW' ?
+        '你更重視什麼？找到你的人生優先級！' :
+        locale === 'id' ?
+        'Apa yang lebih Anda hargai? Temukan prioritas hidup Anda!' :
+        locale === 'vi' ?
+        'Bạn coi trọng điều gì hơn? Tìm ưu tiên cuộc sống của bạn!' :
+        '당신은 무엇을 더 중요하게 생각하나요? 인생 우선순위를 찾아보세요!';
+    
+    const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(shareText)}`;
+    window.open(lineUrl, '_blank');
+  };
+  
+  const handleAnswerSelect = (scores: Record<string, number>) => {
+    const newAnswers = [...answers, scores];
+    setAnswers(newAnswers);
+    
+    if (currentQuestion < shuffledQuestions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      // 테스트 완료 - 로딩 스피너 표시
+      setShowLoadingSpinner(true);
+      
+      const resultType = calculateLifePrioritiesResult(newAnswers);
+      const foundResult = results.find(r => r.type === resultType);
+      if (foundResult) {
+        setResult(foundResult);
+        setShowResult(true);
+      }
+    }
+  };
+
+  // 테스트 시작 시 스크롤 맨 위로
+  const handleStartTest = async () => {
+    setStarted(true);
+    window.scrollTo(0, 0);
+    
+    // 플레이 카운트 증가
+    if (!hasIncrementedPlayCount) {
+      try {
+        await incrementPlayCount(slug);
+        setHasIncrementedPlayCount(true);
+        setDisplayPlayCount(prev => prev + 1);
+      } catch (error) {
+        console.error('플레이 카운트 증가 실패:', error);
+      }
+    }
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert(t('alerts.linkCopied'));
+    if (typeof window === 'undefined') return;
+    
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
+    navigator.clipboard.writeText(currentUrl).then(() => {
+      alert('링크가 복사되었습니다!');
+    }).catch(() => {
+      alert('공유 기능을 사용할 수 없습니다.');
+    });
   };
 
+  // 다시 하기
   const handleRetake = () => {
     setShuffledQuestions(shuffleQuestions(questions));
     setStarted(false);
@@ -293,90 +410,202 @@ export default function LifePrioritiesTestClient({
     setShowResult(false);
     setShowResultPopup(false);
     setShowLoadingSpinner(false);
-    setShuffledOptionsMap({});
     setHasIncrementedPlayCount(false);
-    window.scrollTo(0, 0);
   };
 
-  // 결과 공유하기
-  const handleShareResult = async () => {
-    if (!result) return;
-    
-    const resultTitle = result.title[localeKey as keyof typeof result.title] || result.title.ko;
-    const shareMessage = t('shareMessages.default', { type: resultTitle });
-    const shareText = `${shareMessage}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
-    
-    if (navigator.share) {
-      try {
-        await navigator.share({ text: shareText });
-      } catch (error) {
-        if (error instanceof Error && error.name !== 'AbortError') {
-          console.error('공유 오류:', error);
-          try {
-            await navigator.clipboard.writeText(shareText);
-            alert(t('alerts.resultCopied'));
-          } catch (err) {
-            alert(t('alerts.shareFailed'));
-          }
-        }
-      }
-    } else {
-      try {
-        await navigator.clipboard.writeText(shareText);
-        alert(t('alerts.resultCopied'));
-      } catch (err) {
-        alert(t('alerts.shareFailed'));
+  // 결과 계산
+  useEffect(() => {
+    if (answers.length === questions.length && !result) {
+      const resultType = calculateLifePrioritiesResult(answers);
+      const foundResult = results.find(r => r.type === resultType);
+      if (foundResult) {
+        setResult(foundResult);
+        // 플레이 카운트 증가
+        incrementPlayCount(slug);
       }
     }
-  };
-
-  const shareToLine = () => {
-    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
-    const shareMessage = result ? t('shareMessages.line', { type: resultTitle }) : description;
-    const text = encodeURIComponent(shareMessage);
-    window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
-  };
-
-  const shareToWeChat = async () => {
-    const url = `https://myquizoasis.com${window.location.pathname}`;
-    const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
-    const shareMessage = result ? t('shareMessages.wechat', { type: resultTitle }) : description;
-    const shareText = `${shareMessage}\n\n${url}`;
-    
-    // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
-    if (navigator.share) {
+  }, [answers, questions.length, result, results, slug]);
+  
+  // 유사한 테스트 로드
+  useEffect(() => {
+    const loadTests = async () => {
       try {
-        await navigator.share({ text: shareText });
+        const tests = await getTests();
+        const filteredTests = tests
+          .filter((test: any) => test.slug !== slug)
+          .sort((a: any, b: any) => b.playCount - a.playCount)
+          .slice(0, 10);
+        setSimilarTestsData(filteredTests);
       } catch (error) {
-        if (error instanceof Error && error.name !== 'AbortError') {
-          console.error('공유 오류:', error);
-          // Web Share API 실패 시 클립보드에 복사
-          navigator.clipboard.writeText(shareText);
-          alert(t('alerts.wechatCopy'));
-        }
+        console.error('Failed to load similar tests:', error);
       }
-    } else {
-      // Web Share API 미지원 시 클립보드에 복사
-      navigator.clipboard.writeText(shareText);
-      alert(t('alerts.wechatCopy'));
-    }
-  };
+    };
 
-  const shareToWhatsApp = () => {
-    const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
-    const shareMessage = result ? t('shareMessages.whatsapp', { type: resultTitle }) : description;
-    const shareText = encodeURIComponent(shareMessage);
-    window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
-  };
+    loadTests();
+  }, [slug]);
 
-  // 팝업에서 결과 보기
-  const handleShowResult = () => {
-    setShowResultPopup(false);
-    setShowResult(true);
-    window.scrollTo(0, 0);
-  };
+  // 시작 화면
+  if (!started) {
+    return (
+      <div className="min-h-screen bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
+            <Image
+              src={getThumbnailUrl(thumbnail || 'test_240_life_priorities.jpg')}
+              alt={typeof title === 'string' ? title : title[locale] || title.ko}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
+              priority
+            />
+          </div>
+
+          <div className="px-4">
+            <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">
+              {typeof title === 'string' ? title : title[locale] || title.ko}
+            </h1>
+
+            {/* AdSense 광고 - 타이틀과 설명 사이 */}
+            <div className="my-6">
+              <AdSensePlaceholder 
+                slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto"
+                label="AdSense 광고 영역 (타이틀-설명 사이)"
+              />
+            </div>
+
+            <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
+              <p className="font-bold text-gray-700">「{t('lifePrioritiesTest.startMessage.line1')}」</p>
+              <p>{t('lifePrioritiesTest.startMessage.line2')}</p>
+              <p>{t('lifePrioritiesTest.startMessage.line3')}</p>
+              <p>{t('lifePrioritiesTest.startMessage.line4')}</p>
+              <p>{t('lifePrioritiesTest.startMessage.line5')}</p>
+              <p>{t('lifePrioritiesTest.startMessage.line6')}</p>
+              <p>{t('lifePrioritiesTest.startMessage.line7')}</p>
+              <p>{t('lifePrioritiesTest.startMessage.line8')}</p>
+            </div>
+
+            <div className="flex justify-center mb-4">
+              <button
+                onClick={handleStartTest}
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                {t('mbti.startTest')}
+              </button>
+            </div>
+
+            <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
+              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale) })}
+            </p>
+
+            <div className="max-w-[680px] mx-auto mb-6">
+              {locale === 'ko' ? (
+                <iframe 
+                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
+                  width="680" 
+                  height="140" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  referrerPolicy="unsafe-url"
+                  className="w-full"
+                />
+              ) : aliProducts.length > 0 ? (
+                <ProductRecommendations 
+                  products={aliProducts}
+                  title={locale === 'ja' ? '関連商品' :
+                         locale === 'zh-CN' ? '相关产品' :
+                         locale === 'zh-TW' ? '相關產品' :
+                         locale === 'vi' ? 'Sản phẩm liên quan' :
+                         locale === 'id' ? 'Produk terkait' :
+                         'Related Products'}
+                  locale={locale}
+                />
+              ) : (
+                <div className="flex justify-center">
+                  <a 
+                    href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
+                    target="_parent"
+                  >
+                    <Image 
+                      width={300} 
+                      height={250} 
+                      src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                      alt="AliExpress"
+                      style={{ maxWidth: '300px', height: 'auto' }}
+                    />
+                  </a>
+                </div>
+              )}
+            </div>
+
+            <div className="mb-8 text-center">
+              <h2 className="text-lg font-bold text-gray-800 mb-4">
+                {t('mbti.shareWithFriends')}
+              </h2>
+              <div className="flex justify-center gap-2">
+                <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                </button>
+                <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
+                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                </button>
+              </div>
+            </div>
+
+                  {/* 유사한 다른 테스트 */}
+                  {similarTestsData.length > 0 && (
+                    <div className="mb-8 pb-4">
+                <h2 className="text-xl font-bold text-gray-800 mb-6">
+                        {t('recommendations.similarTests') || '유사한 다른 테스트'}
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+                        {similarTestsData.map((test) => (
+                      <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
+                        <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
+                          <div className="relative aspect-video">
+                            <Image
+                              src={getThumbnailUrl(test.thumbnail)}
+                                  alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
+                            />
+                          </div>
+                          <div className="p-4">
+                            <div className="flex items-center justify-end gap-3">
+                              <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
+                                    {typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
+                              </h3>
+                              <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
+                                <Play size={14} />
+                                    <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale)}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                        ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // 로딩 스피너
   if (showLoadingSpinner) {
@@ -390,11 +619,11 @@ export default function LifePrioritiesTestClient({
             className="mx-auto"
             label="AdSense 광고 영역 (로딩 스피너 상단)"
           />
-        </div>
+                </div>
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-lg text-gray-700">{t('result.analyzing')}</p>
+          <p className="mt-4 text-lg text-gray-700">{t('mbti.loadingResults')}</p>
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
@@ -415,8 +644,8 @@ export default function LifePrioritiesTestClient({
     return (
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
-🎉 {t('result.completed')}
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            🎉 {t('mbti.testCompleted')}
           </h2>
           
           <div className="mb-6">
@@ -466,114 +695,92 @@ export default function LifePrioritiesTestClient({
           </div>
 
           <button
-            onClick={handleShowResult}
+            onClick={() => {
+              setShowResultPopup(false);
+              setShowResult(true);
+            }}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-{t('result.showResult')}
+            {t('mbti.viewAnalysisResults')}
           </button>
         </div>
       </div>
     );
   }
 
-  // 시작 화면
-  if (!started) {
+  // 질문 화면
+  if (started && !showResult && shuffledQuestions.length > 0) {
+    const question = shuffledQuestions[currentQuestion];
+    const questionText = question.question && question.question[locale as keyof typeof question.question] || (question.question && question.question.ko) || '';
+    const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
+    
+    const optionsArray = question.options;
+
     return (
-      <div className="min-h-screen bg-white">
-        <div className="max-w-4xl mx-auto">
-          <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
-            <Image
-              src={getThumbnailUrl(thumbnail || 'test_205_life_priorities.jpg')}
-              alt={title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
-              priority
-            />
-          </div>
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+        <div className="max-w-2xl mx-auto px-4 py-8">
+          <div className="mb-8">
+            <div className="flex justify-between items-center mb-2">
+              <span className="text-sm font-medium text-gray-600">
+                {t('mbti.progress')}
+              </span>
+              <span className="text-sm font-bold text-purple-600">
+                {currentQuestion + 1} / {shuffledQuestions.length}
+              </span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+              <div
+                className="bg-gradient-to-r from-purple-600 to-pink-600 h-full rounded-full transition-all duration-300 ease-out"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+            </div>
 
-          <div className="px-4">
-            <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">
-              {title}
-            </h1>
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center leading-relaxed px-4">
+              {questionText}
+            </h2>
 
-            {/* AdSense 광고 - 타이틀과 설명 사이 */}
-            <div className="my-6">
+            <div className="space-y-4 px-4">
+              {optionsArray.map((option, index) => {
+                const optionText = option.text[locale as keyof typeof option.text] || option.text.ko;
+                const label = String.fromCharCode(65 + index);
+                const colors = [
+                  'from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border-purple-200 hover:border-purple-400',
+                  'from-pink-50 to-pink-100 hover:from-pink-100 hover:to-pink-200 border-pink-200 hover:border-pink-400',
+                ];
+                const bgColors = ['bg-purple-600', 'bg-pink-600'];
+
+                return (
+              <button
+                    key={index}
+                    onClick={() => handleAnswerSelect(option.scores)}
+                    className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-7 h-7 ${bgColors[index]} text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm`}>
+                        {label}
+                      </div>
+                      <span className="text-base">{optionText}</span>
+                    </div>
+              </button>
+                );
+              })}
+            </div>
+
+            {/* AdSense 광고 - 테스트 진행 마지막 답변 밑 */}
+            <div className="mt-8 px-4">
               <AdSensePlaceholder 
-                slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
+                slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역 (타이틀-설명 사이)"
+                label="AdSense 광고 영역 (테스트 진행 마지막 답변 밑)"
               />
             </div>
 
-            <div className="text-gray-600 mb-6 leading-relaxed text-center whitespace-pre-line">
-              <p className="font-bold">{t('startMessage.line1')}</p>
-              <p>{t('startMessage.line2')}</p>
-              <p>{t('startMessage.line3')}</p>
-              <p>{t('startMessage.line4')}</p>
-              <p>{t('startMessage.line5')}</p>
-              <p>{t('startMessage.line6')}</p>
-              <p>{t('startMessage.line7')}</p>
-              <p>{t('startMessage.line8')}</p>
-            </div>
-
-            <div className="flex justify-center mb-4">
-              <button
-                onClick={handleStartTest}
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
-              >
-{t('ui.startTest')}
-              </button>
-            </div>
-
-            <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-              총 {formatPlayCount(displayPlayCount, locale as any)}{t('ui.participants')}
-            </p>
-
-            <div className="max-w-[680px] mx-auto mb-6">
-              {locale === 'ko' ? (
-                <iframe 
-                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
-                  width="680" 
-                  height="140" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  referrerPolicy="unsafe-url"
-                  className="w-full"
-                />
-              ) : aliProducts.length > 0 ? (
-                <ProductRecommendations 
-                  products={aliProducts}
-                  title={locale === 'ja' ? '関連商品' :
-                         locale === 'zh-CN' ? '相关产品' :
-                         locale === 'zh-TW' ? '相關產品' :
-                         locale === 'vi' ? 'Sản phẩm liên quan' :
-                         locale === 'id' ? 'Produk terkait' :
-                         'Related Products'}
-                  locale={locale}
-                />
-              ) : (
-                <div className="flex justify-center">
-                  <a 
-                    href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
-                    target="_parent"
-                  >
-                    <Image 
-                      width={300} 
-                      height={250} 
-                      src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                      alt="AliExpress"
-                      style={{ maxWidth: '300px', height: 'auto' }}
-                    />
-                  </a>
-                </div>
-              )}
-            </div>
-
-            <div className="mb-8 text-center">
+            <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-  {t('ui.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -596,45 +803,6 @@ export default function LifePrioritiesTestClient({
                 </button>
               </div>
             </div>
-
-            {similarTestsState.length > 0 && (
-              <div className="pb-4">
-                <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {tGlobal('recommendations.similarTests') || '유사한 다른 테스트'}
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
-                  {similarTestsState.map((test) => {
-                    const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
-                    return (
-                      <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
-                        <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
-                          <div className="relative aspect-video">
-                            <Image
-                              src={getThumbnailUrl(test.thumbnail)}
-                              alt={testTitle}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
-                            />
-                          </div>
-                          <div className="p-4">
-                            <div className="flex items-center justify-end gap-3">
-                              <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                                {testTitle}
-                              </h3>
-                              <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
-                                <Play size={14} />
-                                <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale as any)}</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </div>
@@ -643,60 +811,161 @@ export default function LifePrioritiesTestClient({
 
   // 결과 화면
   if (showResult && result) {
-    const fullDescription = result.description[localeKey as keyof typeof result.description];
-    const shortDescription = fullDescription.split('\n')[0];
-    const longDescription = fullDescription.split('\n').slice(1).join('\n');
+    const resultTitle = typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko) || '';
+    const resultDescription = typeof result.description === 'string' ? result.description : (result.description && result.description[locale as keyof typeof result.description]) || (result.description && result.description.ko) || '';
+    const resultCharacteristics = typeof result.characteristics === 'string' ? result.characteristics : (result.characteristics && result.characteristics[locale as keyof typeof result.characteristics]) || (result.characteristics && result.characteristics.ko) || '';
+    
+    // 다국어 쉼표 처리: 영어 쉼표+공백, 일본어 쉼표, 중국어 쉼표 모두 지원
+    const splitByCommas = (text: string) => {
+      // 쉼표 뒤 공백을 포함한 패턴으로 분할
+      return text.split(/,\s+|，\s*|、\s*/).map(item => item.trim()).filter(item => item.length > 0);
+    };
+    
+    const resultImpression = splitByCommas(typeof result.impression === 'string' ? result.impression : (result.impression && result.impression[locale as keyof typeof result.impression]) || (result.impression && result.impression.ko) || '');
+    const resultPros = splitByCommas(typeof result.pros === 'string' ? result.pros : (result.pros && result.pros[locale as keyof typeof result.pros]) || (result.pros && result.pros.ko) || '');
+    const resultCons = splitByCommas(typeof result.cons === 'string' ? result.cons : (result.cons && result.cons[locale as keyof typeof result.cons]) || (result.cons && result.cons.ko) || '');
+    const resultAdvice = typeof result.advice === 'string' ? result.advice : (result.advice && result.advice[locale as keyof typeof result.advice]) || (result.advice && result.advice.ko) || '';
     
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-3xl mx-auto px-4 py-8">
-          {/* 결과 헤더 */}
+          <div>
           <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
             <h2 className="text-xl font-bold text-gray-800 mb-3">
-              {t('result.yourResult')}
+                {t('lifePrioritiesTest.result.yourResult')}
             </h2>
             <div className="text-6xl mb-3">{result.emoji}</div>
             <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
-              {result.title[localeKey as keyof typeof result.title]}
+                {resultTitle}
             </h1>
-            <p className="text-base font-semibold text-gray-700 leading-relaxed mb-3">
-              {shortDescription}
-            </p>
             <p className="text-base text-gray-600 leading-relaxed">
-              {longDescription}
+                {resultDescription}
+              </p>
+              <div className="mt-4 p-4 bg-gray-50 rounded-xl">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {resultCharacteristics}
             </p>
           </div>
+            </div>
 
-          {/* 핵심 가치 */}
-          <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+            <div className="grid grid-cols-1 gap-3 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-4">
             <h3 className="text-base font-bold text-gray-800 mb-3">
-              💎 {t('result.coreValues')}
+                  📊 {t('lifePrioritiesTest.result.coreValues')}
             </h3>
             <div className="flex flex-wrap gap-2">
-              {result.coreValues[localeKey as keyof typeof result.coreValues].split(/[,，、]\s*/).map((value, index) => (
+                  {result.type === 'Type1' ? (locale === 'ko' ? ['성공', '성장', '인정', '목표'] :
+                     locale === 'en' ? ['Success', 'Growth', 'Recognition', 'Goals'] :
+                     locale === 'ja' ? ['成功', '成長', '承認', '目標'] :
+                     locale === 'zh-CN' ? ['成功', '成长', '认可', '目标'] :
+                     locale === 'zh-TW' ? ['成功', '成長', '認可', '目標'] :
+                     locale === 'id' ? ['Kesuksesan', 'Pertumbuhan', 'Pengakuan', 'Tujuan'] :
+                     locale === 'vi' ? ['Thành công', 'Tăng trưởng', 'Công nhận', 'Mục tiêu'] :
+                     ['성공', '성장', '인정', '목표']).map((char, index) => (
                 <span
                   key={index}
-                  className="bg-gradient-to-r from-purple-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                      className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                 >
-                  {value}
+                      {char}
                 </span>
-              ))}
+                  )) :
+                   result.type === 'Type2' ? (locale === 'ko' ? ['사랑', '관계', '유대', '헌신'] :
+                     locale === 'en' ? ['Love', 'Relationships', 'Bonds', 'Devotion'] :
+                     locale === 'ja' ? ['愛', '関係', '絆', '献身'] :
+                     locale === 'zh-CN' ? ['爱', '关系', '纽带', '奉献'] :
+                     locale === 'zh-TW' ? ['愛', '關係', '紐帶', '奉獻'] :
+                     locale === 'id' ? ['Cinta', 'Hubungan', 'Ikatan', 'Pengabdian'] :
+                     locale === 'vi' ? ['Tình yêu', 'Mối quan hệ', 'Liên kết', 'Cống hiến'] :
+                     ['사랑', '관계', '유대', '헌신']).map((char, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    >
+                      {char}
+                    </span>
+                  )) :
+                   result.type === 'Type3' ? (locale === 'ko' ? ['자유', '독립', '모험', '자율성'] :
+                     locale === 'en' ? ['Freedom', 'Independence', 'Adventure', 'Autonomy'] :
+                     locale === 'ja' ? ['自由', '独立', '冒険', '自律性'] :
+                     locale === 'zh-CN' ? ['自由', '独立', '冒险', '自主性'] :
+                     locale === 'zh-TW' ? ['自由', '獨立', '冒險', '自主性'] :
+                     locale === 'id' ? ['Kebebasan', 'Kemandirian', 'Petualangan', 'Otonomi'] :
+                     locale === 'vi' ? ['Tự do', 'Độc lập', 'Phiêu lưu', 'Tự chủ'] :
+                     ['자유', '독립', '모험', '자율성']).map((char, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    >
+                      {char}
+                    </span>
+                  )) :
+                   result.type === 'Type4' ? (locale === 'ko' ? ['평온', '안정', '편안함', '지속성'] :
+                     locale === 'en' ? ['Peace', 'Stability', 'Comfort', 'Continuity'] :
+                     locale === 'ja' ? ['平穏', '安定', '快適', '持続性'] :
+                     locale === 'zh-CN' ? ['平静', '稳定', '舒适', '持续性'] :
+                     locale === 'zh-TW' ? ['平靜', '穩定', '舒適', '持續性'] :
+                     locale === 'id' ? ['Kedamaian', 'Stabilitas', 'Kenyamanan', 'Kontinuitas'] :
+                     locale === 'vi' ? ['Bình yên', 'Ổn định', 'Thoải mái', 'Liên tục'] :
+                     ['평온', '안정', '편안함', '지속성']).map((char, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    >
+                      {char}
+                    </span>
+                  )) :
+                   result.type === 'Type5' ? (locale === 'ko' ? ['균형', '논리', '합리성', '효율'] :
+                     locale === 'en' ? ['Balance', 'Logic', 'Rationality', 'Efficiency'] :
+                     locale === 'ja' ? ['均衡', '論理', '合理性', '効率'] :
+                     locale === 'zh-CN' ? ['平衡', '逻辑', '合理性', '效率'] :
+                     locale === 'zh-TW' ? ['平衡', '邏輯', '合理性', '效率'] :
+                     locale === 'id' ? ['Keseimbangan', 'Logika', 'Rasionalitas', 'Efisiensi'] :
+                     locale === 'vi' ? ['Cân bằng', 'Logic', 'Hợp lý', 'Hiệu quả'] :
+                     ['균형', '논리', '합리성', '효율']).map((char, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    >
+                      {char}
+                    </span>
+                  )) :
+                   result.type === 'Type6' ? (locale === 'ko' ? ['열정', '도전', '설렘', '현재'] :
+                     locale === 'en' ? ['Passion', 'Challenge', 'Excitement', 'Present'] :
+                     locale === 'ja' ? ['情熱', '挑戦', 'ワクワク', '現在'] :
+                     locale === 'zh-CN' ? ['激情', '挑战', '兴奋', '现在'] :
+                     locale === 'zh-TW' ? ['激情', '挑戰', '興奮', '現在'] :
+                     locale === 'id' ? ['Semangat', 'Tantangan', 'Kegembiraan', 'Saat ini'] :
+                     locale === 'vi' ? ['Đam mê', 'Thử thách', 'Hứng thú', 'Hiện tại'] :
+                     ['열정', '도전', '설렘', '현재']).map((char, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                    >
+                      {char}
+                    </span>
+                  )) : null}
+                </div>
             </div>
           </div>
 
-          {/* 강점과 약점 */}
           <div className="grid grid-cols-2 gap-3 mb-3">
             <div className="bg-white rounded-xl shadow-lg p-4">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                ✅ {t('result.strengths')}
+                  ✅ {locale === 'ko' ? '장점' : 
+                       locale === 'en' ? 'Pros' :
+                       locale === 'ja' ? '長所' :
+                       locale === 'zh-CN' ? '优点' :
+                       locale === 'zh-TW' ? '優點' :
+                       locale === 'id' ? 'Kelebihan' :
+                       locale === 'vi' ? 'Ưu Điểm' : '장점'}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {result.strengths.map((strength, index) => (
+                  {resultPros.map((pro, index) => (
                   <span
                     key={index}
                     className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                   >
-                    {strength[localeKey as keyof typeof strength] || strength.ko}
+                      {pro}
                   </span>
                 ))}
               </div>
@@ -704,101 +973,41 @@ export default function LifePrioritiesTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                ⚠️ {t('result.weaknesses')}
+                  ⚠️ {locale === 'ko' ? '단점' : 
+                       locale === 'en' ? 'Cons' :
+                       locale === 'ja' ? '短所' :
+                       locale === 'zh-CN' ? '缺点' :
+                       locale === 'zh-TW' ? '缺點' :
+                       locale === 'id' ? 'Kekurangan' :
+                       locale === 'vi' ? 'Nhược Điểm' : '단점'}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {result.weaknesses.map((weakness, index) => (
+                  {resultCons.map((con, index) => (
                   <span
                     key={index}
                     className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
                   >
-                    {weakness[localeKey as keyof typeof weakness] || weakness.ko}
+                      {con}
                   </span>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* 조언 */}
           <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
             <h3 className="text-base font-bold text-gray-800 mb-3">
-              💡 {t('result.advice')}
+                💡 {locale === 'ko' ? '조언' : 
+                     locale === 'en' ? 'Advice' :
+                     locale === 'ja' ? 'アドバイス' :
+                     locale === 'zh-CN' ? '建议' :
+                     locale === 'zh-TW' ? '建議' :
+                     locale === 'id' ? 'Saran' :
+                     locale === 'vi' ? 'Lời Khuyên' : '조언'}
             </h3>
-            <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
-              {result.advice[localeKey as keyof typeof result.advice]}
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {resultAdvice}
             </p>
           </div>
-
-          {/* 어울리는 타입 */}
-          {result.compatibility && (
-            <div className="space-y-3 mb-3">
-              {result.compatibility.best && result.compatibility.best.length > 0 && (
-                <div className="bg-white rounded-xl shadow-lg p-4">
-                  <h3 className="text-base font-bold text-gray-800 mb-3">
-                    {t('result.bestMatch')}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {result.compatibility.best.map(type => {
-                      const partner = results.find(r => r.type === type);
-                      if (!partner) return null;
-                      return (
-                        <div key={type} className="flex items-center gap-2 bg-gradient-to-r from-red-100 to-pink-100 px-3 py-1 rounded-full">
-                          <span className="text-xl">{partner.emoji}</span>
-                          <span className="text-sm font-medium text-gray-800">
-                            {partner.title[localeKey as keyof typeof partner.title] || partner.title.ko}
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {result.compatibility.good && result.compatibility.good.length > 0 && (
-                <div className="bg-white rounded-xl shadow-lg p-4">
-                  <h3 className="text-base font-bold text-gray-800 mb-3">
-                    {t('result.goodMatch')}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {result.compatibility.good.map(type => {
-                      const partner = results.find(r => r.type === type);
-                      if (!partner) return null;
-                      return (
-                        <div key={type} className="flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 px-3 py-1 rounded-full">
-                          <span className="text-xl">{partner.emoji}</span>
-                          <span className="text-sm font-medium text-gray-800">
-                            {partner.title[localeKey as keyof typeof partner.title] || partner.title.ko}
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {result.compatibility.careful && result.compatibility.careful.length > 0 && (
-                <div className="bg-white rounded-xl shadow-lg p-4">
-                  <h3 className="text-base font-bold text-gray-800 mb-3">
-                    {t('result.carefulMatch')}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {result.compatibility.careful.map(type => {
-                      const partner = results.find(r => r.type === type);
-                      if (!partner) return null;
-                      return (
-                        <div key={type} className="flex items-center gap-2 bg-gradient-to-r from-yellow-100 to-orange-100 px-3 py-1 rounded-full">
-                          <span className="text-xl">{partner.emoji}</span>
-                          <span className="text-sm font-medium text-gray-800">
-                            {partner.title[localeKey as keyof typeof partner.title] || partner.title.ko}
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
 
           <div className="mt-8 mb-6 px-4">
             <button
@@ -808,17 +1017,17 @@ export default function LifePrioritiesTestClient({
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
               </svg>
-{t('ui.shareResult')}
+                {t('mbti.shareResult')}
             </button>
           </div>
 
-          {/* AdSense 광고 - 결과와 다시하기 버튼 사이 */}
+            {/* AdSense 광고 - 결과 공유하기 버튼 밑 */}
           <div className="my-6 px-4">
             <AdSensePlaceholder 
               slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
               style={{ width: '100%', height: '250px' }}
               className="mx-auto"
-              label="AdSense 광고 영역 (결과-다시하기 사이)"
+                label="AdSense 광고 영역 (결과 공유하기 버튼 밑)"
             />
           </div>
 
@@ -827,19 +1036,20 @@ export default function LifePrioritiesTestClient({
               onClick={handleRetake}
               className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
             >
-{t('ui.retake')}
+                {t('mbti.retakeTest')}
             </button>
             <Link
-              href={`/${locale}`}
-              className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
+                href={`/${locale}/test`}
+                className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 text-center"
             >
-{t('ui.otherTests')}
+                {t('mbti.otherTests')}
             </Link>
           </div>
 
-          <div className="mt-8 mb-8 text-center px-4">
+            {/* 친구와 같이 해보기 */}
+            <div className="mt-12 mb-8 text-center">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('ui.shareWithFriends')}
+                {t('mbti.shareWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -864,21 +1074,25 @@ export default function LifePrioritiesTestClient({
           </div>
 
           {/* 🎯 유사한 다른 테스트 추천 톱5 */}
-          {similarTestsState.length > 0 && (
+            {similarTestsData.length > 0 && (
             <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-                {tGlobal('recommendations.similarTestsTop5') || '🎯 유사한 다른 테스트 추천 톱5'}
+                  🎯 {locale === 'ko' ? '유사한 다른 테스트 추천 톱5' : 
+                       locale === 'en' ? 'Top 5 Similar Test Recommendations' :
+                       locale === 'ja' ? '類似の他のテストおすすめトップ5' :
+                       locale === 'zh-CN' ? '相似测试推荐前5' :
+                       locale === 'zh-TW' ? '相似測試推薦前5' :
+                       locale === 'id' ? 'Rekomendasi 5 Tes Serupa Teratas' :
+                       locale === 'vi' ? 'Top 5 Bài Kiểm Tra Tương Tự' : '유사한 다른 테스트 추천 톱5'}
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                {similarTestsState.slice(0, 5).map((test) => {
-                  const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
-                  return (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+                  {similarTestsData.slice(0, 5).map((test) => (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                         <div className="relative aspect-video">
                           <Image
                             src={getThumbnailUrl(test.thumbnail)}
-                            alt={testTitle}
+                            alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             fill
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
@@ -887,38 +1101,41 @@ export default function LifePrioritiesTestClient({
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
                             <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                              {testTitle}
+                              {typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale)}</span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </Link>
-                  );
-                })}
+                  ))}
               </div>
             </div>
           )}
 
           {/* 🔥 요즘 인기 테스트 추천 톱5 */}
-          {popularTestsState.length > 0 && (
+            {similarTestsData.length > 5 && (
             <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-                {tGlobal('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}
+                  🔥 {locale === 'ko' ? '요즘 인기 테스트 추천 톱5' : 
+                       locale === 'en' ? 'Top 5 Popular Test Recommendations' :
+                       locale === 'ja' ? '人気テストおすすめトップ5' :
+                       locale === 'zh-CN' ? '热门测试推荐前5' :
+                       locale === 'zh-TW' ? '熱門測試推薦前5' :
+                       locale === 'id' ? 'Rekomendasi 5 Tes Populer Teratas' :
+                       locale === 'vi' ? 'Top 5 Bài Kiểm Tra Phổ Biến' : '요즘 인기 테스트 추천 톱5'}
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                {popularTestsState.map((test) => {
-                  const testTitle = typeof test.title === 'object' ? (test.title as any)[locale] || (test.title as any).ko : test.title;
-                  return (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+                  {similarTestsData.slice(5, 10).map((test) => (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                         <div className="relative aspect-video">
                           <Image
                             src={getThumbnailUrl(test.thumbnail)}
-                            alt={testTitle}
+                            alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             fill
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
@@ -927,122 +1144,25 @@ export default function LifePrioritiesTestClient({
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
                             <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                              {testTitle}
+                              {typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount || (test as any).play_count || 0, locale)}</span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </Link>
-                  );
-                })}
+                  ))}
               </div>
             </div>
           )}
         </div>
       </div>
-    );
-  }
-
-  // 질문 화면
-  const question = shuffledQuestions[currentQuestion];
-  const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
-  const optionsArray = shuffledOptionsMap[currentQuestion] || question.options;
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
-      <div className="max-w-2xl mx-auto px-4 py-8">
-        <div className="mb-8">
-          <div className="flex justify-between items-center mb-2">
-            <span className="text-sm font-medium text-gray-600">
-{t('ui.progress')}
-            </span>
-            <span className="text-sm font-bold text-purple-600">
-              {currentQuestion + 1} / {shuffledQuestions.length}
-            </span>
-          </div>
-          <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-            <div
-              className="bg-gradient-to-r from-purple-600 to-pink-600 h-full rounded-full transition-all duration-300 ease-out"
-              style={{ width: `${progress}%` }}
-            />
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center leading-relaxed px-4">
-            {question.question[localeKey as keyof typeof question.question] || question.question.ko}
-          </h2>
-
-          <div className="space-y-4 px-4">
-            {optionsArray.map((option, index) => {
-              const optionText = option.text[localeKey as keyof typeof option.text] || option.text.ko;
-              const label = String.fromCharCode(65 + index);
-              const colors = [
-                'from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border-purple-200 hover:border-purple-400',
-                'from-pink-50 to-pink-100 hover:from-pink-100 hover:to-pink-200 border-pink-200 hover:border-pink-400',
-                'from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 border-blue-200 hover:border-blue-400',
-                'from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 border-green-200 hover:border-green-400',
-              ];
-              const bgColors = ['bg-purple-600', 'bg-pink-600', 'bg-blue-600', 'bg-green-600'];
-
-              return (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(option.scores)}
-                  className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
-                >
-                  <div className="flex items-center">
-                    <div className={`w-7 h-7 ${bgColors[index]} text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm`}>
-                      {label}
-                    </div>
-                    <span className="text-base">{optionText}</span>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* AdSense 광고 - 테스트 진행 마지막 답변 밑 */}
-          <div className="mt-8 px-4">
-            <AdSensePlaceholder 
-              slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
-              style={{ width: '100%', height: '250px' }}
-              className="mx-auto"
-              label="AdSense 광고 영역 (테스트 진행 마지막 답변 밑)"
-            />
-          </div>
-
-          <div className="mt-8 mb-8 text-center px-4">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">
-{t('ui.shareWithFriends')}
-            </h2>
-            <div className="flex justify-center gap-2">
-              <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
-              </button>
-              <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
+}
+
+  return null;
 }

@@ -44,6 +44,97 @@
   "loveFlavorTest": {
     "resultShareMessage": "나의 연애는 {type}! 너의 사랑은 어떤 맛이야? 우리 궁합도 확인해보자 🍭💕"
   },
+  "lifePrioritiesTest": {
+    "startMessage": {
+      "line1": "인생에서 정말 중요한 것은 무엇인가요?",
+      "line2": "사랑과 성공, 자유와 안정, 열정과 평온...",
+      "line3": "우리는 매 순간 선택의 기로에 섭니다.",
+      "line4": "어떤 사람은 사랑을 위해 모든 것을 포기하고,",
+      "line5": "어떤 사람은 자신의 꿈을 최우선으로 삼습니다.",
+      "line6": "어떤 사람은 안정을 추구하고, 어떤 사람은 자유를 갈망합니다.",
+      "line7": "당신의 인생에서 가장 중요한 가치는 무엇인가요?",
+      "line8": "소요 시간 단 2분! 직관으로 빠르게 선택하세요 💭"
+    },
+    "ui": {
+      "startTest": "테스트 시작하기",
+      "progress": "진행률",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "wechat": "위챗",
+      "whatsapp": "왓츠앱",
+      "telegram": "텔레그램",
+      "line": "라인",
+      "adsenseTitle": "AdSense 광고 영역",
+      "similarTests": "유사한 다른 테스트",
+      "goodTypes": "어울리는 타입",
+      "cautionTypes": "주의 타입",
+      "reputation": "평판",
+      "advice": "조언",
+      "none": "없음"
+    },
+    "result": {
+      "yourResult": "당신의 인생 우선순위",
+      "coreValues": "핵심 가치",
+      "pros": "장점",
+      "cons": "단점",
+      "advice": "조언",
+      "type1": {
+        "title": "성취 지향형",
+        "emoji": "🏆",
+        "subtitle": "성공이 곧 나! 꿈을 향해 달리는 야심가",
+        "keywords": ["성공", "성장", "인정", "목표"]
+      },
+      "type2": {
+        "title": "관계 중심형",
+        "emoji": "💕",
+        "subtitle": "사랑이 전부! 사람을 최우선으로 하는 감성파",
+        "keywords": ["사랑", "관계", "유대", "헌신"]
+      },
+      "type3": {
+        "title": "자유 추구형",
+        "emoji": "🦅",
+        "subtitle": "자유가 최고! 구속 없이 날아가는 자유로운 영혼",
+        "keywords": ["자유", "독립", "모험", "자율성"]
+      },
+      "type4": {
+        "title": "평온 안정형",
+        "emoji": "🏡",
+        "subtitle": "평화가 최고! 편안하고 안정적인 삶을 원해요",
+        "keywords": ["평온", "안정", "편안함", "지속성"]
+      },
+      "type5": {
+        "title": "이성 균형형",
+        "emoji": "⚖️",
+        "subtitle": "논리가 답! 합리적으로 균형잡는 현실주의자",
+        "keywords": ["균형", "논리", "합리성", "효율"]
+      },
+      "type6": {
+        "title": "열정 도전형",
+        "emoji": "🔥",
+        "subtitle": "지금 이 순간! 열정적으로 살아가는 모험가",
+        "keywords": ["열정", "도전", "설렘", "현재"]
+      }
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?",
+      "kakao": "나는 {type}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?",
+      "wechat": "나는 {type}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?",
+      "whatsapp": "나는 {type}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?",
+      "telegram": "나는 {type}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?",
+      "line": "나는 {type}! 인생에서 가장 중요한 가치를 찾았어 💭 너는 무엇을 선택할래?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "trustTest": {
     "startMessage": {
       "line1": "사람들이 당신을 얼마나 신뢰할까요? 당신의 신뢰도를 측정합니다!",
@@ -924,61 +1015,6 @@
       "whatsapp": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?",
       "telegram": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?",
       "line": "나는 {type}! 🏆 승부욕 점수 ★★★☆☆ 받았어. 너는 얼마나 경쟁심 강해?"
-    },
-    "alerts": {
-      "linkCopied": "링크가 복사되었습니다!",
-      "resultCopied": "결과가 클립보드에 복사되었습니다!",
-      "shareFailed": "공유 기능을 사용할 수 없습니다.",
-      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
-      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
-      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
-    }
-  },
-  "lifePrioritiesTest": {
-    "startMessage": {
-      "line1": "\"당신 인생에서 정말 중요한 것은 무엇인가요?\"",
-      "line2": "돈, 명예, 사랑, 자유, 가족, 행복...",
-      "line3": "모두 중요하지만, 선택해야 한다면?",
-      "line4": "성공을 위해 관계를 포기할 수 있나요?",
-      "line5": "자유를 위해 안정을 버릴 수 있나요?",
-      "line6": "행복을 위해 야망을 내려놓을 수 있나요?",
-      "line7": "당신의 진짜 우선순위를 찾아보세요.",
-      "line8": "소요 시간 3분! 깊이 생각하며 답해주세요 💭"
-    },
-    "ui": {
-      "startTest": "테스트 시작",
-      "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
-      "progress": "진행률",
-      "retakeTest": "다시 하기",
-      "shareResult": "결과 공유하기",
-      "retake": "다시 하기",
-      "otherTests": "다른 테스트 보기",
-      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
-      "popularTests": "🔥 요즘 인기 테스트 추천 톱5"
-    },
-    "result": {
-      "analyzing": "결과 분석 중...",
-      "analyzingDetail": "당신의 인생 우선순위를 분석하고 있습니다",
-      "completed": "테스트 완료!",
-      "completedDetail": "당신의 인생 우선순위가 분석되었습니다",
-      "showResult": "분석 결과 보기",
-      "yourResult": "당신의 결과는",
-      "coreValues": "핵심 가치",
-      "strengths": "강점",
-      "weaknesses": "약점",
-      "advice": "조언",
-      "bestMatch": "💖 어울리는 타입",
-      "goodMatch": "😊 괜찮은 타입",
-      "carefulMatch": "⚠️ 주의 타입"
-    },
-    "shareMessages": {
-      "default": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
-      "kakao": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
-      "wechat": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
-      "whatsapp": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
-      "telegram": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!",
-      "line": "나는 {type}! 💭 인생에서 무엇이 가장 중요할까? 너는 뭐가 제일 중요해? 우리 우선순위 비교해보자!"
     },
     "alerts": {
       "linkCopied": "링크가 복사되었습니다!",
