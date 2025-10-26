@@ -2007,6 +2007,53 @@
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "quickDecisionTest": {
+    "startMessage": {
+      "title": "A 1-second judgment changes everything! What is your quickness?",
+      "description": "Sudden crisis situations, unexpected moments of choice, moments when quick decisions are needed...\nSome people react immediately, some think carefully, and some freeze.\nHow do you react in emergency situations? In moments when quick judgment is needed, what is your choice?\nJust 3 minutes to discover your decision-making style and quickness level!",
+      "startButton": "Start Test"
+    },
+    "ui": {
+      "share": "Share",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "retake": "Retake",
+      "shareResult": "Share Result",
+      "otherTests": "Other Tests",
+      "similarTests": "Similar Other Tests",
+      "adsenseTitle": "Check out related products!",
+      "noData": "No Data"
+    },
+    "result": {
+      "advice": "Advice",
+      "compatibleTypes": "Compatible Types",
+      "warningTypes": "Warning Types",
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match",
+      "carefulMatch": "Needs Caution",
+      "difficultMatch": "Difficult Relationship"
+    },
+    "shareMessages": {
+      "default": "I am {type}! Quick decision test completed! How do I react in crisis situations? What about you? 🚨",
+      "kakao": "I am {type}! Quick decision test completed! How do I react in crisis situations? What about you? 🚨",
+      "wechat": "I am {type}! Quick decision test completed! How do I react in crisis situations? What about you? 🚨",
+      "whatsapp": "I am {type}! Quick decision test completed! How do I react in crisis situations? What about you? 🚨",
+      "telegram": "I am {type}! Quick decision test completed! How do I react in crisis situations? What about you? 🚨",
+      "line": "I am {type}! Quick decision test completed! How do I react in crisis situations? What about you? 🚨"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    }
   }
 }
 

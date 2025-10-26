@@ -1955,5 +1955,52 @@
       "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
+  },
+  "quickDecisionTest": {
+    "startMessage": {
+      "title": "Penilaian 1 detik mengubah segalanya! Seberapa cepat Anda?",
+      "description": "Situasi krisis tiba-tiba, momen pilihan yang tak terduga, momen ketika keputusan cepat diperlukan...\nBeberapa orang bereaksi segera, beberapa berpikir hati-hati, dan beberapa membeku.\nBagaimana Anda bereaksi dalam situasi darurat? Dalam momen ketika penilaian cepat diperlukan, apa pilihan Anda?\nHanya 3 menit untuk menemukan gaya pengambilan keputusan dan tingkat kecepatan Anda!",
+      "startButton": "Mulai Tes"
+    },
+    "ui": {
+      "share": "Bagikan",
+      "linkCopy": "Salin Link",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "retake": "Ulang",
+      "shareResult": "Bagikan Hasil",
+      "otherTests": "Tes Lainnya",
+      "similarTests": "Tes Serupa Lainnya",
+      "adsenseTitle": "Periksa produk terkait!",
+      "noData": "Tidak Ada Data"
+    },
+    "result": {
+      "advice": "Saran",
+      "compatibleTypes": "Tipe yang Cocok",
+      "warningTypes": "Tipe Peringatan",
+      "bestMatch": "Kecocokan Terbaik",
+      "goodMatch": "Kecocokan Baik",
+      "carefulMatch": "Perlu Hati-hati",
+      "difficultMatch": "Hubungan Sulit"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Tes keputusan sekejap selesai! Bagaimana saya bereaksi dalam situasi krisis? Bagaimana dengan Anda? 🚨",
+      "kakao": "Saya {type}! Tes keputusan sekejap selesai! Bagaimana saya bereaksi dalam situasi krisis? Bagaimana dengan Anda? 🚨",
+      "wechat": "Saya {type}! Tes keputusan sekejap selesai! Bagaimana saya bereaksi dalam situasi krisis? Bagaimana dengan Anda? 🚨",
+      "whatsapp": "Saya {type}! Tes keputusan sekejap selesai! Bagaimana saya bereaksi dalam situasi krisis? Bagaimana dengan Anda? 🚨",
+      "telegram": "Saya {type}! Tes keputusan sekejap selesai! Bagaimana saya bereaksi dalam situasi krisis? Bagaimana dengan Anda? 🚨",
+      "line": "Saya {type}! Tes keputusan sekejap selesai! Bagaimana saya bereaksi dalam situasi krisis? Bagaimana dengan Anda? 🚨"
+    },
+    "alerts": {
+      "linkCopied": "Link disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Link disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    }
   }
 }

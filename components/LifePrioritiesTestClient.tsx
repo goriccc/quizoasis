@@ -698,6 +698,7 @@ export default function LifePrioritiesTestClient({
             onClick={() => {
               setShowResultPopup(false);
               setShowResult(true);
+              window.scrollTo(0, 0);
             }}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >

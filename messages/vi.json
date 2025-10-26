@@ -1955,5 +1955,52 @@
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "quickDecisionTest": {
+    "startMessage": {
+      "title": "Một phán đoán 1 giây thay đổi mọi thứ! Sự nhanh nhẹn của bạn như thế nào?",
+      "description": "Tình huống khủng hoảng đột ngột, khoảnh khắc lựa chọn bất ngờ, khoảnh khắc cần quyết định nhanh...\nMột số người phản ứng ngay lập tức, một số người suy nghĩ cẩn thận, và một số người đóng băng.\nBạn phản ứng như thế nào trong tình huống khẩn cấp? Trong những khoảnh khắc cần phán đoán nhanh, lựa chọn của bạn là gì?\nChỉ 3 phút để khám phá phong cách ra quyết định và mức độ nhanh nhẹn của bạn!",
+      "startButton": "Bắt đầu kiểm tra"
+    },
+    "ui": {
+      "share": "Chia sẻ",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "retake": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "otherTests": "Các bài kiểm tra khác",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "adsenseTitle": "Kiểm tra các sản phẩm liên quan!",
+      "noData": "Không có dữ liệu"
+    },
+    "result": {
+      "advice": "Lời khuyên",
+      "compatibleTypes": "Loại tương thích",
+      "warningTypes": "Loại cần chú ý",
+      "bestMatch": "Kết hợp tốt nhất",
+      "goodMatch": "Kết hợp tốt",
+      "carefulMatch": "Cần thận trọng",
+      "difficultMatch": "Mối quan hệ khó khăn"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    }
   }
 }

@@ -1961,5 +1961,52 @@
       "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
       "kakaoError": "KakaoTalk分享時發生錯誤。"
     }
+  },
+  "quickDecisionTest": {
+    "startMessage": {
+      "title": "1秒的判斷改變一切！你的敏捷度如何？",
+      "description": "突然的危機情況、意想不到的選擇時刻、需要快速決定的瞬間...\n有些人立即反應，有些人仔細思考，有些人凍結。\n在緊急情況下你如何反應？在需要快速判斷的時刻，你的選擇是什麼？\n只需3分鐘就能發現你的決策風格和敏捷度水平！",
+      "startButton": "開始測試"
+    },
+    "ui": {
+      "share": "分享",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "wechat": "微信",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "retake": "重新測試",
+      "shareResult": "分享結果",
+      "otherTests": "其他測試",
+      "similarTests": "類似的其他測試",
+      "adsenseTitle": "查看相關產品！",
+      "noData": "無數據"
+    },
+    "result": {
+      "advice": "建議",
+      "compatibleTypes": "相配類型",
+      "warningTypes": "注意類型",
+      "bestMatch": "最佳匹配",
+      "goodMatch": "良好匹配",
+      "carefulMatch": "需要謹慎",
+      "difficultMatch": "困難關係"
+    },
+    "shareMessages": {
+      "default": "我是{type}！剎那瞬間決策測試完成！在危機情況下我如何反應？你呢？ 🚨",
+      "kakao": "我是{type}！剎那瞬間決策測試完成！在危機情況下我如何反應？你呢？ 🚨",
+      "wechat": "我是{type}！剎那瞬間決策測試完成！在危機情況下我如何反應？你呢？ 🚨",
+      "whatsapp": "我是{type}！剎那瞬間決策測試完成！在危機情況下我如何反應？你呢？ 🚨",
+      "telegram": "我是{type}！剎那瞬間決策測試完成！在危機情況下我如何反應？你呢？ 🚨",
+      "line": "我是{type}！剎那瞬間決策測試完成！在危機情況下我如何反應？你呢？ 🚨"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    }
   }
 }
