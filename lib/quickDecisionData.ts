@@ -794,13 +794,13 @@ export const quickDecisionResults: QuickDecisionResult[] = [
       vi: "Phán đoán 0.1 giây! Bậc thầy quyết định siêu nhanh"
     },
     longDescription: {
-      ko: "생각보다 행동이 빠릅니다! 위기 상황에서 즉각적으로 반응하며 주저함 없이 결정합니다. 직관적 판단이 뛰어나고 행동력이 탁월합니다. 긴급 상황에서 리더 역할을 자연스럽게 맡으며, 빠른 대응으로 문제를 해결합니다. 군인, 소방관, 응급구조사에게 필요한 능력입니다.\n\n장점: 빠른 반응, 행동력, 위기 대응, 리더십\n단점: 충동적, 실수 가능, 신중함 부족\n추천 직업: 응급의료, 소방관, 군인, 스포츠, 트레이더\n조언: 가끔은 한 템포 쉬어가세요. 모든 상황이 긴급한 것은 아닙니다!",
-      en: "You act faster than you think! You react instantly in crisis situations and make decisions without hesitation. Your intuitive judgment is excellent and your action power is outstanding. You naturally take on leadership roles in emergency situations and solve problems with quick responses. This is an ability needed for soldiers, firefighters, and emergency responders.\n\nStrengths: Quick response, action power, crisis response, leadership\nWeaknesses: Impulsive, prone to mistakes, lack of caution\nRecommended jobs: Emergency medical, firefighter, soldier, sports, trader\nAdvice: Sometimes take a step back. Not every situation is urgent!",
-      ja: "考えるより行動が速い！危機状況で即座に反応し、躊躇なく決定します。直感的判断が優れており、行動力が卓越しています。緊急事態で自然にリーダー役を務め、迅速な対応で問題を解決します。軍人、消防士、救急隊員に必要な能力です。\n\n長所：迅速な反応、行動力、危機対応、リーダーシップ\n短所：衝動的、ミスの可能性、慎重さの欠如\n推奨職業：救急医療、消防士、軍人、スポーツ、トレーダー\nアドバイス：時には一歩下がってください。すべての状況が緊急ではありません！",
-      'zh-CN': "行动比思考更快！在危机情况下立即反应，毫不犹豫地做决定。直觉判断出色，行动力卓越。在紧急情况下自然承担领导角色，通过快速应对解决问题。这是军人、消防员、急救人员需要的能力。\n\n优点：快速反应、行动力、危机应对、领导力\n缺点：冲动、可能犯错、缺乏谨慎\n推荐职业：急救医疗、消防员、军人、体育、交易员\n建议：有时要放慢脚步。不是所有情况都紧急！",
-      'zh-TW': "行動比思考更快！在危機情況下立即反應，毫不猶豫地做決定。直覺判斷出色，行動力卓越。在緊急情況下自然承擔領導角色，通過快速應對解決問題。這是軍人、消防員、急救人員需要的能力。\n\n優點：快速反應、行動力、危機應對、領導力\n缺點：衝動、可能犯錯、缺乏謹慎\n推薦職業：急救醫療、消防員、軍人、體育、交易員\n建議：有時要放慢腳步。不是所有情況都緊急！",
-      id: "Bertindak lebih cepat dari berpikir! Bereaksi instan dalam situasi krisis dan membuat keputusan tanpa ragu. Penilaian intuitif Anda sangat baik dan kekuatan aksi Anda luar biasa. Secara alami mengambil peran kepemimpinan dalam situasi darurat dan menyelesaikan masalah dengan respons cepat. Ini adalah kemampuan yang dibutuhkan tentara, pemadam kebakaran, dan petugas darurat.\n\nKelebihan: Respons cepat, kekuatan aksi, respons krisis, kepemimpinan\nKekurangan: Impulsif, kemungkinan kesalahan, kurang hati-hati\nPekerjaan yang direkomendasikan: Medis darurat, pemadam kebakaran, tentara, olahraga, trader\nSaran: Kadang-kadang mundur selangkah. Tidak semua situasi mendesak!",
-      vi: "Hành động nhanh hơn suy nghĩ! Phản ứng ngay lập tức trong tình huống khủng hoảng và đưa ra quyết định không do dự. Phán đoán trực giác xuất sắc và sức mạnh hành động vượt trội. Tự nhiên đảm nhận vai trò lãnh đạo trong tình huống khẩn cấp và giải quyết vấn đề bằng phản ứng nhanh. Đây là khả năng cần thiết cho binh lính, lính cứu hỏa và nhân viên cấp cứu.\n\nƯu điểm: Phản ứng nhanh, sức mạnh hành động, ứng phó khủng hoảng, lãnh đạo\nNhược điểm: Bốc đồng, có thể mắc lỗi, thiếu thận trọng\nNghề nghiệp được khuyến nghị: Y tế khẩn cấp, lính cứu hỏa, binh lính, thể thao, trader\nLời khuyên: Đôi khi hãy lùi một bước. Không phải mọi tình huống đều khẩn cấp!"
+      ko: "생각보다 행동이 빠릅니다! 위기 상황에서 즉각적으로 반응하며 주저함 없이 결정합니다. 직관적 판단이 뛰어나고 행동력이 탁월합니다. 긴급 상황에서 리더 역할을 자연스럽게 맡으며, 빠른 대응으로 문제를 해결합니다. 군인, 소방관, 응급구조사에게 필요한 능력입니다.",
+      en: "You act faster than you think! You react instantly in crisis situations and make decisions without hesitation. Your intuitive judgment is excellent and your action power is outstanding. You naturally take on leadership roles in emergency situations and solve problems with quick responses. This is an ability needed for soldiers, firefighters, and emergency responders.",
+      ja: "考えるより行動が速い！危機状況で即座に反応し、躊躇なく決定します。直感的判断が優れており、行動力が卓越しています。緊急事態で自然にリーダー役を務め、迅速な対応で問題を解決します。軍人、消防士、救急隊員に必要な能力です。",
+      'zh-CN': "行动比思考更快！在危机情况下立即反应，毫不犹豫地做决定。直觉判断出色，行动力卓越。在紧急情况下自然承担领导角色，通过快速应对解决问题。这是军人、消防员、急救人员需要的能力。",
+      'zh-TW': "行動比思考更快！在危機情況下立即反應，毫不猶豫地做決定。直覺判斷出色，行動力卓越。在緊急情況下自然承擔領導角色，通過快速應對解決問題。這是軍人、消防員、急救人員需要的能力。",
+      id: "Bertindak lebih cepat dari berpikir! Bereaksi instan dalam situasi krisis dan membuat keputusan tanpa ragu. Penilaian intuitif Anda sangat baik dan kekuatan aksi Anda luar biasa. Secara alami mengambil peran kepemimpinan dalam situasi darurat dan menyelesaikan masalah dengan respons cepat. Ini adalah kemampuan yang dibutuhkan tentara, pemadam kebakaran, dan petugas darurat.",
+      vi: "Hành động nhanh hơn suy nghĩ! Phản ứng ngay lập tức trong tình huống khủng hoảng và đưa ra quyết định không do dự. Phán đoán trực giác xuất sắc và sức mạnh hành động vượt trội. Tự nhiên đảm nhận vai trò lãnh đạo trong tình huống khẩn cấp và giải quyết vấn đề bằng phản ứng nhanh. Đây là khả năng cần thiết cho binh lính, lính cứu hỏa và nhân viên cấp cứu."
     },
     pros: [
       {
@@ -907,13 +907,13 @@ export const quickDecisionResults: QuickDecisionResult[] = [
       vi: "Phán đoán 3 giây! Người thực hiện đưa ra quyết định nhanh bằng trực giác và kinh nghiệm"
     },
     longDescription: {
-      ko: "빠르게 상황을 파악하고 합리적으로 판단합니다. 경험과 직관을 바탕으로 신속하게 결정하되, 무모하지 않습니다. 긴급 상황에서도 침착하게 대응하며 실수가 적습니다. 속도와 정확성의 균형이 잘 잡힌 이상적인 타입입니다.\n\n장점: 빠른 판단, 정확성, 경험 활용, 균형감\n단점: 가끔 조급함, 신중한 검토 부족\n추천 직업: 프로젝트 매니저, 영업, 스타트업, 언론\n조언: 이미 훌륭합니다! 중요한 결정은 한 번 더 생각해보세요.",
-      en: "You quickly grasp the situation and judge rationally. You make quick decisions based on experience and intuition, but not recklessly. You respond calmly even in emergency situations with few mistakes. This is an ideal type with good balance between speed and accuracy.\n\nStrengths: Quick judgment, accuracy, experience utilization, balance\nWeaknesses: Sometimes impatient, lack of careful review\nRecommended jobs: Project manager, sales, startup, journalism\nAdvice: You're already great! Think once more about important decisions.",
-      ja: "状況を素早く把握し、合理的に判断します。経験と直感に基づいて迅速に決定しますが、無謀ではありません。緊急事態でも冷静に対応し、ミスが少ないです。速度と正確性のバランスが取れた理想的なタイプです。\n\n長所：迅速な判断、正確性、経験活用、バランス感覚\n短所：時々せっかち、慎重な検討不足\n推奨職業：プロジェクトマネージャー、営業、スタートアップ、ジャーナリズム\nアドバイス：もう素晴らしいです！重要な決定はもう一度考えてみてください。",
-      'zh-CN': "快速掌握情况并合理判断。基于经验和直觉快速决定，但不鲁莽。即使在紧急情况下也能冷静应对，错误很少。这是速度和准确性平衡良好的理想类型。\n\n优点：快速判断、准确性、经验利用、平衡感\n缺点：有时急躁、缺乏仔细审查\n推荐职业：项目经理、销售、初创企业、新闻业\n建议：已经很棒了！重要决定要再想想。",
-      'zh-TW': "快速掌握情況並合理判斷。基於經驗和直覺快速決定，但不魯莽。即使在緊急情況下也能冷靜應對，錯誤很少。這是速度和準確性平衡良好的理想類型。\n\n優點：快速判斷、準確性、經驗利用、平衡感\n缺點：有時急躁、缺乏仔細審查\n推薦職業：專案經理、銷售、新創企業、新聞業\n建議：已經很棒了！重要決定要再想想。",
-      id: "Anda dengan cepat memahami situasi dan menilai secara rasional. Anda membuat keputusan cepat berdasarkan pengalaman dan intuisi, tetapi tidak sembrono. Anda merespons dengan tenang bahkan dalam situasi darurat dengan sedikit kesalahan. Ini adalah tipe ideal dengan keseimbangan yang baik antara kecepatan dan akurasi.\n\nKelebihan: Penilaian cepat, akurasi, pemanfaatan pengalaman, keseimbangan\nKekurangan: Terkadang tidak sabar, kurang tinjauan hati-hati\nPekerjaan yang direkomendasikan: Manajer proyek, penjualan, startup, jurnalisme\nSaran: Anda sudah hebat! Pikirkan sekali lagi tentang keputusan penting.",
-      vi: "Bạn nhanh chóng nắm bắt tình huống và đánh giá một cách hợp lý. Bạn đưa ra quyết định nhanh dựa trên kinh nghiệm và trực giác, nhưng không liều lĩnh. Bạn phản ứng bình tĩnh ngay cả trong tình huống khẩn cấp với ít sai sót. Đây là kiểu lý tưởng với sự cân bằng tốt giữa tốc độ và độ chính xác.\n\nƯu điểm: Phán đoán nhanh, chính xác, tận dụng kinh nghiệm, cân bằng\nNhược điểm: Đôi khi nóng vội, thiếu xem xét cẩn thận\nNghề nghiệp được khuyến nghị: Quản lý dự án, bán hàng, khởi nghiệp, báo chí\nLời khuyên: Bạn đã tuyệt vời rồi! Hãy suy nghĩ thêm về những quyết định quan trọng."
+      ko: "빠르게 상황을 파악하고 합리적으로 판단합니다. 경험과 직관을 바탕으로 신속하게 결정하되, 무모하지 않습니다. 긴급 상황에서도 침착하게 대응하며 실수가 적습니다. 속도와 정확성의 균형이 잘 잡힌 이상적인 타입입니다.",
+      en: "You quickly grasp the situation and judge rationally. You make quick decisions based on experience and intuition, but not recklessly. You respond calmly even in emergency situations with few mistakes. This is an ideal type with good balance between speed and accuracy.",
+      ja: "状況を素早く把握し、合理的に判断します。経験と直感に基づいて迅速に決定しますが、無謀ではありません。緊急事態でも冷静に対応し、ミスが少ないです。速度と正確性のバランスが取れた理想的なタイプです。",
+      'zh-CN': "快速掌握情况并合理判断。基于经验和直觉快速决定，但不鲁莽。即使在紧急情况下也能冷静应对，错误很少。这是速度和准确性平衡良好的理想类型。",
+      'zh-TW': "快速掌握情況並合理判斷。基於經驗和直覺快速決定，但不魯莽。即使在緊急情況下也能冷靜應對，錯誤很少。這是速度和準確性平衡良好的理想類型。",
+      id: "Anda dengan cepat memahami situasi dan menilai secara rasional. Anda membuat keputusan cepat berdasarkan pengalaman dan intuisi, tetapi tidak sembrono. Anda merespons dengan tenang bahkan dalam situasi darurat dengan sedikit kesalahan. Ini adalah tipe ideal dengan keseimbangan yang baik antara kecepatan dan akurasi.",
+      vi: "Bạn nhanh chóng nắm bắt tình huống và đánh giá một cách hợp lý. Bạn đưa ra quyết định nhanh dựa trên kinh nghiệm và trực giác, nhưng không liều lĩnh. Bạn phản ứng bình tĩnh ngay cả trong tình huống khẩn cấp với ít sai sót. Đây là kiểu lý tưởng với sự cân bằng tốt giữa tốc độ và độ chính xác."
     },
     pros: [
       {
@@ -1011,13 +1011,13 @@ export const quickDecisionResults: QuickDecisionResult[] = [
       vi: "Phán đoán 10 giây! Bậc thầy cân bằng nhanh nhưng cẩn thận"
     },
     longDescription: {
-      ko: "빠르게 결정하되 최소한의 검토는 합니다. 긴급 상황에서도 침착함을 유지하며 합리적으로 판단합니다. 속도와 신중함의 균형이 완벽하며 실수가 거의 없습니다. 대부분의 상황에 적절히 대응하는 실용적 타입입니다.\n\n장점: 균형감, 침착함, 합리성, 안정성\n단점: 때로 기회 놓침, 결단력 약할 수 있음\n추천 직업: 관리직, 컨설팅, 의료, 교육\n조언: 당신의 스타일이 가장 안정적입니다. 자신감을 가지세요!",
-      en: "You make quick decisions but with minimal review. You maintain composure even in emergency situations and judge rationally. The balance between speed and caution is perfect with almost no mistakes. This is a practical type that responds appropriately to most situations.\n\nStrengths: Balance, composure, rationality, stability\nWeaknesses: Sometimes miss opportunities, may lack decisiveness\nRecommended jobs: Management, consulting, medical, education\nAdvice: Your style is the most stable. Have confidence!",
-      ja: "迅速に決定しますが、最小限の検討は行います。緊急事態でも冷静さを保ち、合理的に判断します。速度と慎重さのバランスが完璧で、ミスはほとんどありません。ほとんどの状況に適切に対応する実用的なタイプです。\n\n長所：バランス感覚、冷静さ、合理性、安定性\n短所：時々機会を逃す、決断力が弱い場合がある\n推奨職業：管理職、コンサルティング、医療、教育\nアドバイス：あなたのスタイルが最も安定しています。自信を持ってください！",
-      'zh-CN': "快速决定但进行最少的审查。即使在紧急情况下也保持冷静并合理判断。速度与谨慎的平衡完美，几乎不出错。这是对大多数情况都能适当应对的实用类型。\n\n优点：平衡感、冷静、合理性、稳定性\n缺点：有时错过机会、可能缺乏决断力\n推荐职业：管理、咨询、医疗、教育\n建议：你的风格最稳定。要有信心！",
-      'zh-TW': "快速決定但進行最少的審查。即使在緊急情況下也保持冷靜並合理判斷。速度與謹慎的平衡完美，幾乎不出錯。這是對大多數情況都能適當應對的實用類型。\n\n優點：平衡感、冷靜、合理性、穩定性\n缺點：有時錯過機會、可能缺乏決斷力\n推薦職業：管理、諮詢、醫療、教育\n建議：你的風格最穩定。要有信心！",
-      id: "Anda membuat keputusan cepat tetapi dengan tinjauan minimal. Anda mempertahankan ketenangan bahkan dalam situasi darurat dan menilai secara rasional. Keseimbangan antara kecepatan dan kehati-hatian sempurna dengan hampir tidak ada kesalahan. Ini adalah tipe praktis yang merespons dengan tepat terhadap sebagian besar situasi.\n\nKelebihan: Keseimbangan, ketenangan, rasionalitas, stabilitas\nKekurangan: Terkadang melewatkan peluang, mungkin kurang tegas\nPekerjaan yang direkomendasikan: Manajemen, konsultasi, medis, pendidikan\nSaran: Gaya Anda yang paling stabil. Miliki kepercayaan diri!",
-      vi: "Bạn đưa ra quyết định nhanh nhưng với việc xem xét tối thiểu. Bạn duy trì sự bình tĩnh ngay cả trong tình huống khẩn cấp và đánh giá một cách hợp lý. Sự cân bằng giữa tốc độ và thận trọng là hoàn hảo với hầu như không có sai sót. Đây là kiểu thực tế phản ứng phù hợp với hầu hết các tình huống.\n\nƯu điểm: Cân bằng, bình tĩnh, hợp lý, ổn định\nNhược điểm: Đôi khi bỏ lỡ cơ hội, có thể thiếu quyết đoán\nNghề nghiệp được khuyến nghị: Quản lý, tư vấn, y tế, giáo dục\nLời khuyên: Phong cách của bạn ổn định nhất. Hãy tự tin!"
+      ko: "빠르게 결정하되 최소한의 검토는 합니다. 긴급 상황에서도 침착함을 유지하며 합리적으로 판단합니다. 속도와 신중함의 균형이 완벽하며 실수가 거의 없습니다. 대부분의 상황에 적절히 대응하는 실용적 타입입니다.",
+      en: "You make quick decisions but with minimal review. You maintain composure even in emergency situations and judge rationally. The balance between speed and caution is perfect with almost no mistakes. This is a practical type that responds appropriately to most situations.",
+      ja: "迅速に決定しますが、最小限の検討は行います。緊急事態でも冷静さを保ち、合理的に判断します。速度と慎重さのバランスが完璧で、ミスはほとんどありません。ほとんどの状況に適切に対応する実用的なタイプです。",
+      'zh-CN': "快速决定但进行最少的审查。即使在紧急情况下也保持冷静并合理判断。速度与谨慎的平衡完美，几乎不出错。这是对大多数情况都能适当应对的实用类型。",
+      'zh-TW': "快速決定但進行最少的審查。即使在緊急情況下也保持冷靜並合理判斷。速度與謹慎的平衡完美，幾乎不出錯。這是對大多數情況都能適當應對的實用類型。",
+      id: "Anda membuat keputusan cepat tetapi dengan tinjauan minimal. Anda mempertahankan ketenangan bahkan dalam situasi darurat dan menilai secara rasional. Keseimbangan antara kecepatan dan kehati-hatian sempurna dengan hampir tidak ada kesalahan. Ini adalah tipe praktis yang merespons dengan tepat terhadap sebagian besar situasi.",
+      vi: "Bạn đưa ra quyết định nhanh nhưng với việc xem xét tối thiểu. Bạn duy trì sự bình tĩnh ngay cả trong tình huống khẩn cấp và đánh giá một cách hợp lý. Sự cân bằng giữa tốc độ và thận trọng là hoàn hảo với hầu như không có sai sót. Đây là kiểu thực tế phản ứng phù hợp với hầu hết các tình huống."
     },
     pros: [
       {
@@ -1115,13 +1115,13 @@ export const quickDecisionResults: QuickDecisionResult[] = [
       vi: "Phán đoán 30 giây! Nhà chiến lược đưa ra quyết định chính xác thông qua phân tích có hệ thống"
     },
     longDescription: {
-      ko: "빠른 결정보다 정확한 결정을 중시합니다. 상황을 분석하고 여러 옵션을 검토한 후 결정합니다. 실수는 적지만 긴급 상황에서는 어려움을 겪을 수 있습니다. 중요한 결정일수록 빛을 발하는 타입입니다.\n\n장점: 정확성, 분석력, 실수 적음, 논리적\n단점: 느린 결정, 기회 상실, 긴급 대응 약함\n추천 직업: 연구원, 분석가, 회계사, 기획자\n조언: 때로는 70% 정보로도 결정할 수 있어요. 완벽은 없습니다!",
-      en: "You value accurate decisions over quick ones. You analyze situations and review multiple options before deciding. You make few mistakes but may struggle in emergency situations. This type shines the most in important decisions.\n\nStrengths: Accuracy, analytical ability, few mistakes, logical\nWeaknesses: Slow decisions, missed opportunities, weak emergency response\nRecommended jobs: Researcher, analyst, accountant, planner\nAdvice: Sometimes you can decide with 70% information. Nothing is perfect!",
-      ja: "迅速な決定よりも正確な決定を重視します。状況を分析し、複数の選択肢を検討してから決定します。ミスは少ないですが、緊急事態では困難を経験する可能性があります。重要な決定ほど光るタイプです。\n\n長所：正確性、分析力、ミスが少ない、論理的\n短所：決定が遅い、機会損失、緊急対応が弱い\n推奨職業：研究者、アナリスト、会計士、企画者\nアドバイス：時には70%の情報でも決定できます。完璧はありません！",
-      'zh-CN': "重视准确决定胜过快速决定。分析情况并审查多个选项后做决定。错误很少但在紧急情况下可能遇到困难。这是越重要决定越能发挥的类型。\n\n优点：准确性、分析能力、错误少、逻辑性\n缺点：决定慢、错失机会、紧急应对弱\n推荐职业：研究员、分析师、会计师、策划者\n建议：有时70%信息也能决定。没有完美！",
-      'zh-TW': "重視準確決定勝過快速決定。分析情況並審查多個選項後做決定。錯誤很少但在緊急情況下可能遇到困難。這是越重要決定越能發揮的類型。\n\n優點：準確性、分析能力、錯誤少、邏輯性\n缺點：決定慢、錯失機會、緊急應對弱\n推薦職業：研究員、分析師、會計師、策劃者\n建議：有時70%資訊也能決定。沒有完美！",
-      id: "Anda menghargai keputusan akurat daripada keputusan cepat. Anda menganalisis situasi dan meninjau beberapa opsi sebelum memutuskan. Anda membuat sedikit kesalahan tetapi mungkin kesulitan dalam situasi darurat. Tipe ini bersinar paling terang dalam keputusan penting.\n\nKelebihan: Akurasi, kemampuan analitis, sedikit kesalahan, logis\nKekurangan: Keputusan lambat, peluang terlewat, respons darurat lemah\nPekerjaan yang direkomendasikan: Peneliti, analis, akuntan, perencana\nSaran: Terkadang Anda bisa memutuskan dengan 70% informasi. Tidak ada yang sempurna!",
-      vi: "Bạn coi trọng quyết định chính xác hơn quyết định nhanh. Bạn phân tích tình huống và xem xét nhiều lựa chọn trước khi quyết định. Bạn ít mắc lỗi nhưng có thể gặp khó khăn trong tình huống khẩn cấp. Kiểu này tỏa sáng nhất trong những quyết định quan trọng.\n\nƯu điểm: Chính xác, khả năng phân tích, ít sai sót, logic\nNhược điểm: Quyết định chậm, bỏ lỡ cơ hội, ứng phó khẩn cấp yếu\nNghề nghiệp được khuyến nghị: Nhà nghiên cứu, nhà phân tích, kế toán, người lập kế hoạch\nLời khuyên: Đôi khi bạn có thể quyết định với 70% thông tin. Không có gì hoàn hảo!"
+      ko: "빠른 결정보다 정확한 결정을 중시합니다. 상황을 분석하고 여러 옵션을 검토한 후 결정합니다. 실수는 적지만 긴급 상황에서는 어려움을 겪을 수 있습니다. 중요한 결정일수록 빛을 발하는 타입입니다.",
+      en: "You value accurate decisions over quick ones. You analyze situations and review multiple options before deciding. You make few mistakes but may struggle in emergency situations. This type shines the most in important decisions.",
+      ja: "迅速な決定よりも正確な決定を重視します。状況を分析し、複数の選択肢を検討してから決定します。ミスは少ないですが、緊急事態では困難を経験する可能性があります。重要な決定ほど光るタイプです。",
+      'zh-CN': "重视准确决定胜过快速决定。分析情况并审查多个选项后做决定。错误很少但在紧急情况下可能遇到困难。这是越重要决定越能发挥的类型。",
+      'zh-TW': "重視準確決定勝過快速決定。分析情況並審查多個選項後做決定。錯誤很少但在緊急情況下可能遇到困難。這是越重要決定越能發揮的類型。",
+      id: "Anda menghargai keputusan akurat daripada keputusan cepat. Anda menganalisis situasi dan meninjau beberapa opsi sebelum memutuskan. Anda membuat sedikit kesalahan tetapi mungkin kesulitan dalam situasi darurat. Tipe ini bersinar paling terang dalam keputusan penting.",
+      vi: "Bạn coi trọng quyết định chính xác hơn quyết định nhanh. Bạn phân tích tình huống và xem xét nhiều lựa chọn trước khi quyết định. Bạn ít mắc lỗi nhưng có thể gặp khó khăn trong tình huống khẩn cấp. Kiểu này tỏa sáng nhất trong những quyết định quan trọng."
     },
     pros: [
       {
@@ -1228,13 +1228,13 @@ export const quickDecisionResults: QuickDecisionResult[] = [
       vi: "Phán đoán 1 phút! Kiểu thận trọng đôi khi bỏ lỡ cơ hội"
     },
     longDescription: {
-      ko: "실수를 두려워해 매우 신중합니다. 여러 번 확인하고 다시 생각합니다. 안전하고 확실한 선택을 하지만 기회를 놓칠 때가 많습니다. 긴급 상황에서 스트레스를 많이 받는 편입니다.\n\n장점: 신중함, 안전성, 실수 회피\n단점: 기회 상실, 결정 지연, 스트레스\n추천 직업: 품질관리, 안전관리, 감사, 검수\n조언: 모든 결정이 완벽할 수는 없어요. 70%면 충분합니다!",
-      en: "You are very careful because you fear mistakes. You check multiple times and think again. You make safe and certain choices but often miss opportunities. You experience a lot of stress in emergency situations.\n\nStrengths: Caution, safety, mistake avoidance\nWeaknesses: Missed opportunities, delayed decisions, stress\nRecommended jobs: Quality control, safety management, audit, inspection\nAdvice: Not every decision can be perfect. 70% is enough!",
-      ja: "ミスを恐れて非常に慎重です。何度も確認し、再考します。安全で確実な選択をしますが、機会を逃すことが多いです。緊急事態ではストレスを多く受ける傾向があります。\n\n長所：慎重さ、安全性、ミス回避\n短所：機会損失、決定遅延、ストレス\n推奨職業：品質管理、安全管理、監査、検品\nアドバイス：すべての決定が完璧である必要はありません。70%で十分です！",
-      'zh-CN': "因为害怕错误而非常谨慎。多次确认并重新思考。做出安全确定的选择但经常错过机会。在紧急情况下承受很大压力。\n\n优点：谨慎、安全性、避免错误\n缺点：错失机会、决定延迟、压力\n推荐职业：质量管理、安全管理、审计、检验\n建议：不是每个决定都要完美。70%就够了！",
-      'zh-TW': "因為害怕錯誤而非常謹慎。多次確認並重新思考。做出安全確定的選擇但經常錯過機會。在緊急情況下承受很大壓力。\n\n優點：謹慎、安全性、避免錯誤\n缺點：錯失機會、決定延遲、壓力\n推薦職業：品質管理、安全管理、審計、檢驗\n建議：不是每個決定都要完美。70%就夠了！",
-      id: "Anda sangat hati-hati karena takut kesalahan. Anda memeriksa berkali-kali dan berpikir lagi. Anda membuat pilihan yang aman dan pasti tetapi sering melewatkan peluang. Anda mengalami banyak stres dalam situasi darurat.\n\nKelebihan: Kehati-hatian, keamanan, menghindari kesalahan\nKekurangan: Peluang terlewat, keputusan tertunda, stres\nPekerjaan yang direkomendasikan: Kontrol kualitas, manajemen keselamatan, audit, inspeksi\nSaran: Tidak setiap keputusan harus sempurna. 70% sudah cukup!",
-      vi: "Bạn rất thận trọng vì sợ mắc lỗi. Bạn kiểm tra nhiều lần và suy nghĩ lại. Bạn đưa ra lựa chọn an toàn và chắc chắn nhưng thường bỏ lỡ cơ hội. Bạn trải qua nhiều căng thẳng trong tình huống khẩn cấp.\n\nƯu điểm: Thận trọng, an toàn, tránh sai sót\nNhược điểm: Bỏ lỡ cơ hội, quyết định chậm trễ, căng thẳng\nNghề nghiệp được khuyến nghị: Kiểm soát chất lượng, quản lý an toàn, kiểm toán, thanh tra\nLời khuyên: Không phải mọi quyết định đều phải hoàn hảo. 70% là đủ!"
+      ko: "실수를 두려워해 매우 신중합니다. 여러 번 확인하고 다시 생각합니다. 안전하고 확실한 선택을 하지만 기회를 놓칠 때가 많습니다. 긴급 상황에서 스트레스를 많이 받는 편입니다.",
+      en: "You are very careful because you fear mistakes. You check multiple times and think again. You make safe and certain choices but often miss opportunities. You experience a lot of stress in emergency situations.",
+      ja: "ミスを恐れて非常に慎重です。何度も確認し、再考します。安全で確実な選択をしますが、機会を逃すことが多いです。緊急事態ではストレスを多く受ける傾向があります。",
+      'zh-CN': "因为害怕错误而非常谨慎。多次确认并重新思考。做出安全确定的选择但经常错过机会。在紧急情况下承受很大压力。",
+      'zh-TW': "因為害怕錯誤而非常謹慎。多次確認並重新思考。做出安全確定的選擇但經常錯過機會。在緊急情況下承受很大壓力。",
+      id: "Anda sangat hati-hati karena takut kesalahan. Anda memeriksa berkali-kali dan berpikir lagi. Anda membuat pilihan yang aman dan pasti tetapi sering melewatkan peluang. Anda mengalami banyak stres dalam situasi darurat.",
+      vi: "Bạn rất thận trọng vì sợ mắc lỗi. Bạn kiểm tra nhiều lần và suy nghĩ lại. Bạn đưa ra lựa chọn an toàn và chắc chắn nhưng thường bỏ lỡ cơ hội. Bạn trải qua nhiều căng thẳng trong tình huống khẩn cấp."
     },
     pros: [
       {
@@ -1332,13 +1332,13 @@ export const quickDecisionResults: QuickDecisionResult[] = [
       vi: "Không thể phán đoán! Cực điểm của rối loạn lựa chọn và do dự"
     },
     longDescription: {
-      ko: "결정을 내리는 것이 매우 어렵습니다. 긴급 상황에서 얼어붙거나 당황합니다. 여러 선택지 앞에서 혼란스러워하고 결국 다른 사람을 따르거나 결정을 미룹니다. 하지만 걱정 마세요! 의사결정은 훈련으로 향상됩니다.\n\n강점: 신중함 (장점으로 전환 가능)\n단점: 우유부단, 기회 상실, 스트레스, 의존성\n추천 활동: 작은 결정부터 연습, 의사결정 훈련\n조언: 작은 것부터 시작하세요. 오늘 점심 메뉴를 5초 안에 정해보세요!",
-      en: "Making decisions is very difficult. You freeze or panic in emergency situations. You get confused in front of multiple choices and end up following others or postponing decisions. But don't worry! Decision-making can be improved through training.\n\nStrengths: Caution (can be converted to strength)\nWeaknesses: Indecisiveness, missed opportunities, stress, dependency\nRecommended activities: Practice with small decisions, decision-making training\nAdvice: Start small. Try deciding on today's lunch menu within 5 seconds!",
-      ja: "決定を下すことが非常に困難です。緊急事態で凍りついたりパニックになります。複数の選択肢の前で混乱し、結局他の人に従ったり決定を先延ばしにしたりします。でも心配しないで！意思決定は訓練で向上します。\n\n強み：慎重さ（長所に転換可能）\n短所：優柔不断、機会損失、ストレス、依存性\n推奨活動：小さな決定から練習、意思決定訓練\nアドバイス：小さなことから始めてください。今日の昼食メニューを5秒以内に決めてみてください！",
-      'zh-CN': "做决定非常困难。在紧急情况下冻结或恐慌。在多个选择面前感到困惑，最终跟随他人或推迟决定。但别担心！决策能力可以通过训练提高。\n\n强项：谨慎（可转化为优势）\n弱点：优柔寡断、错失机会、压力、依赖性\n推荐活动：从小决定开始练习、决策训练\n建议：从小事开始。试着在5秒内决定今天的午餐菜单！",
-      'zh-TW': "做決定非常困難。在緊急情況下凍結或恐慌。在多個選擇面前感到困惑，最終跟隨他人或推遲決定。但別擔心！決策能力可以通過訓練提高。\n\n強項：謹慎（可轉化為優勢）\n弱點：優柔寡斷、錯失機會、壓力、依賴性\n推薦活動：從小決定開始練習、決策訓練\n建議：從小事開始。試著在5秒內決定今天的午餐菜單！",
-      id: "Membuat keputusan sangat sulit. Anda membeku atau panik dalam situasi darurat. Anda bingung di depan banyak pilihan dan akhirnya mengikuti orang lain atau menunda keputusan. Tapi jangan khawatir! Pengambilan keputusan dapat ditingkatkan melalui pelatihan.\n\nKekuatan: Kehati-hatian (dapat diubah menjadi kelebihan)\nKelemahan: Keraguan, peluang terlewat, stres, ketergantungan\nAktivitas yang direkomendasikan: Berlatih dengan keputusan kecil, pelatihan pengambilan keputusan\nSaran: Mulai dari yang kecil. Coba putuskan menu makan siang hari ini dalam 5 detik!",
-      vi: "Đưa ra quyết định rất khó khăn. Bạn đóng băng hoặc hoảng sợ trong tình huống khẩn cấp. Bạn bối rối trước nhiều lựa chọn và cuối cùng theo người khác hoặc trì hoãn quyết định. Nhưng đừng lo lắng! Khả năng quyết định có thể được cải thiện thông qua luyện tập.\n\nĐiểm mạnh: Thận trọng (có thể chuyển thành ưu điểm)\nĐiểm yếu: Do dự, bỏ lỡ cơ hội, căng thẳng, phụ thuộc\nHoạt động được khuyến nghị: Luyện tập với quyết định nhỏ, đào tạo ra quyết định\nLời khuyên: Bắt đầu từ những việc nhỏ. Hãy thử quyết định thực đơn trưa hôm nay trong 5 giây!"
+      ko: "결정을 내리는 것이 매우 어렵습니다. 긴급 상황에서 얼어붙거나 당황합니다. 여러 선택지 앞에서 혼란스러워하고 결국 다른 사람을 따르거나 결정을 미룹니다. 하지만 걱정 마세요! 의사결정은 훈련으로 향상됩니다.",
+      en: "Making decisions is very difficult. You freeze or panic in emergency situations. You get confused in front of multiple choices and end up following others or postponing decisions. But don't worry! Decision-making can be improved through training.",
+      ja: "決定を下すことが非常に困難です。緊急事態で凍りついたりパニックになります。複数の選択肢の前で混乱し、結局他の人に従ったり決定を先延ばしにしたりします。でも心配しないで！意思決定は訓練で向上します。",
+      'zh-CN': "做决定非常困难。在紧急情况下冻结或恐慌。在多个选择面前感到困惑，最终跟随他人或推迟决定。但别担心！决策能力可以通过训练提高。",
+      'zh-TW': "做決定非常困難。在緊急情況下凍結或恐慌。在多個選擇面前感到困惑，最終跟隨他人或推遲決定。但別擔心！決策能力可以通過訓練提高。",
+      id: "Membuat keputusan sangat sulit. Anda membeku atau panik dalam situasi darurat. Anda bingung di depan banyak pilihan dan akhirnya mengikuti orang lain atau menunda keputusan. Tapi jangan khawatir! Pengambilan keputusan dapat ditingkatkan melalui pelatihan.",
+      vi: "Đưa ra quyết định rất khó khăn. Bạn đóng băng hoặc hoảng sợ trong tình huống khẩn cấp. Bạn bối rối trước nhiều lựa chọn và cuối cùng theo người khác hoặc trì hoãn quyết định. Nhưng đừng lo lắng! Khả năng quyết định có thể được cải thiện thông qua luyện tập."
     },
     pros: [
       {
