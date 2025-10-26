@@ -12,7 +12,6 @@ export interface ReactionStyleResult {
   emoji: string;
   title: Record<string, string>;
   description: Record<string, string>;
-  characteristics: Record<string, string>;
   strengths: Record<string, string[]>;
   weaknesses: Record<string, string[]>;
   advice: Record<string, string>;
@@ -788,15 +787,6 @@ export const reactionStyleResults: ReactionStyleResult[] = [
       id: "Pikir dulu! Analis rasional",
       vi: "Suy nghĩ trước! Người phân tích lý trí"
     },
-    characteristics: {
-      ko: "감정보다 이성이 먼저 작동하는 타입입니다. 상황을 분석하고, 원인을 파악하며, 논리적으로 생각합니다. 즉각적인 반응보다는 생각한 후 대응하며, 감정보다 사실에 집중합니다. 냉정하고 객관적이지만, 때로는 감정 표현이 필요할 수 있습니다. 문제 해결 능력이 뛰어납니다.",
-      en: "A type where reason works before emotions. Analyzes situations, identifies causes, and thinks logically. Responds after thinking rather than reacting immediately, focusing on facts rather than emotions. Cool and objective, but sometimes emotional expression may be needed. Has excellent problem-solving abilities.",
-      ja: "感情より理性が先に働くタイプです。状況を分析し、原因を把握し、論理的に考えます。即座の反応より考えた後に対応し、感情より事実に集中します。冷静で客観的ですが、時には感情表現が必要かもしれません。問題解決能力が優れています。",
-      'zh-CN': "理性先于情感的类型。分析情况，找出原因，逻辑思考。先思考后应对，而非立即反应，关注事实而非情感。冷静客观，但有时可能需要情感表达。具有出色的解决问题的能力。",
-      'zh-TW': "理性先於情感的類型。分析情況，找出原因，邏輯思考。先思考後應對，而非立即反應，關注事實而非情感。冷靜客觀，但有時可能需要情感表達。具有出色的解決問題的能力。",
-      id: "Tipe di mana akal bekerja sebelum emosi. Menganalisis situasi, mengidentifikasi penyebab, dan berpikir logis. Merespons setelah berpikir daripada bereaksi langsung, fokus pada fakta daripada emosi. Dingin dan objektif, tetapi kadang-kadang ekspresi emosional mungkin diperlukan. Memiliki kemampuan pemecahan masalah yang luar biasa.",
-      vi: "Kiểu người mà lý trí hoạt động trước cảm xúc. Phân tích tình huống, xác định nguyên nhân, và suy nghĩ logic. Phản ứng sau khi suy nghĩ thay vì phản ứng ngay lập tức, tập trung vào sự thật thay vì cảm xúc. Lạnh lùng và khách quan, nhưng đôi khi có thể cần thể hiện cảm xúc. Có khả năng giải quyết vấn đề xuất sắc."
-    },
     strengths: {
       ko: ["냉정함", "객관성", "문제 해결", "합리성"],
       en: ["Coolness", "Objectivity", "Problem solving", "Rationality"],
@@ -854,15 +844,6 @@ export const reactionStyleResults: ReactionStyleResult[] = [
       'zh-TW': "情感立即顯現的類型。高興時就是高興，悲傷時就是悲傷，誠實表達。不壓抑情感，自然流露，表情和聲音中直接體現情感。真誠且人性化，但有時可能需要情感控制。具有出色的共情能力和溫暖。",
       id: "Tipe di mana emosi muncul segera. Mengekspresikan kegembiraan sebagai kegembiraan, kesedihan sebagai kesedihan dengan jujur. Tidak menekan emosi dan mengungkapkannya secara alami, dengan emosi muncul langsung dalam ekspresi wajah dan suara. Tulus dan manusiawi, tetapi kadang-kadang kontrol emosional mungkin diperlukan. Memiliki empati yang luar biasa dan kehangatan.",
       vi: "Kiểu người mà cảm xúc xuất hiện ngay lập tức. Thể hiện niềm vui như niềm vui, nỗi buồn như nỗi buồn một cách thành thật. Không kìm nén cảm xúc và bộc lộ chúng một cách tự nhiên, với cảm xúc hiện trực tiếp trên nét mặt và giọng nói. Chân thành và có tính người, nhưng đôi khi có thể cần kiểm soát cảm xúc. Có khả năng đồng cảm xuất sắc và sự ấm áp."
-    },
-    characteristics: {
-      ko: "즉각적, 감정적, 표현적, 솔직, 진솔",
-      en: "Immediate, emotional, expressive, honest, genuine",
-      ja: "即座、感情的、表現的、正直、真摯",
-      'zh-CN': "即时、情感化、表达性、诚实、真诚",
-      'zh-TW': "即時、情感化、表達性、誠實、真誠",
-      id: "Langsung, emosional, ekspresif, jujur, tulus",
-      vi: "Tức thì, cảm xúc, biểu cảm, thành thật, chân thành"
     },
     strengths: {
       ko: ["진실함", "공감 능력", "솔직함", "인간미"],
@@ -922,15 +903,6 @@ export const reactionStyleResults: ReactionStyleResult[] = [
       id: "Aksi dulu! Praktisi langsung",
       vi: "Hành động trước! Người thực hành ngay lập tức"
     },
-    characteristics: {
-      ko: "생각이나 감정보다 행동이 먼저인 타입입니다. 문제가 생기면 즉시 해결책을 찾아 실행하고, 기회가 오면 빠르게 결단합니다. 실행력이 뛰어나고 추진력이 강하며, 말보다 행동으로 보여줍니다. 역동적이고 효율적이지만, 때로는 신중함이 필요할 수 있습니다.",
-      en: "A type where action comes before thoughts or emotions. When problems arise, immediately finds solutions and executes them, and when opportunities come, makes quick decisions. Has excellent execution power and strong drive, showing through actions rather than words. Dynamic and efficient, but sometimes caution may be needed.",
-      ja: "思考や感情より行動が先のタイプです。問題が生じるとすぐに解決策を見つけて実行し、機会が来ると素早く決断します。実行力が優れており推進力が強く、言葉より行動で示します。動的で効率的ですが、時には慎重さが必要かもしれません。",
-      'zh-CN': "行动先于思考或情感的类型。问题出现时立即寻找解决方案并执行，机会来临时快速决断。执行力出色，推动力强，通过行动而非言语展现。动态高效，但有时可能需要谨慎。",
-      'zh-TW': "行動先於思考或情感的類型。問題出現時立即尋找解決方案並執行，機會來臨時快速決斷。執行力出色，推動力強，通過行動而非言語展現。動態高效，但有時可能需要謹慎。",
-      id: "Tipe di mana aksi datang sebelum pikiran atau emosi. Ketika masalah muncul, segera menemukan solusi dan mengeksekusinya, dan ketika kesempatan datang, membuat keputusan cepat. Memiliki kekuatan eksekusi yang luar biasa dan dorongan yang kuat, menunjukkan melalui aksi daripada kata-kata. Dinamis dan efisien, tetapi kadang-kadang kehati-hatian mungkin diperlukan.",
-      vi: "Kiểu người mà hành động đến trước suy nghĩ hoặc cảm xúc. Khi vấn đề xảy ra, ngay lập tức tìm giải pháp và thực hiện, khi cơ hội đến thì quyết định nhanh chóng. Có khả năng thực hiện xuất sắc và động lực mạnh mẽ, thể hiện qua hành động thay vì lời nói. Năng động và hiệu quả, nhưng đôi khi có thể cần sự cẩn thận."
-    },
     strengths: {
       ko: ["실행력", "결단력", "효율성", "추진력"],
       en: ["Execution power", "Decisiveness", "Efficiency", "Driving force"],
@@ -988,15 +960,6 @@ export const reactionStyleResults: ReactionStyleResult[] = [
       'zh-TW': "冷靜先行！謹慎觀察派",
       id: "Tenang dulu! Pengamat hati-hati",
       vi: "Bình tĩnh trước! Người quan sát cẩn thận"
-    },
-    characteristics: {
-      ko: "어떤 상황에서도 침착함을 유지하는 타입입니다. 즉각적으로 반응하지 않고, 상황을 관찰하고 생각한 후 대응합니다. 감정을 잘 드러내지 않고 차분하게 행동하며, 안정적이고 신뢰감을 줍니다. 신중하고 현명하지만, 때로는 적극성이 필요할 수 있습니다.",
-      en: "A type that maintains calmness in any situation. Doesn't react immediately, observes the situation and responds after thinking. Doesn't reveal emotions well and acts calmly, providing stability and trust. Careful and wise, but sometimes proactivity may be needed.",
-      ja: "どんな状況でも冷静さを保つタイプです。即座に反応せず、状況を観察して考えてから対応します。感情をあまり表に出さずに落ち着いて行動し、安定感と信頼感を与えます。慎重で賢明ですが、時には積極性が必要かもしれません。",
-      'zh-CN': "在任何情况下都保持冷静的类型。不立即反应，观察情况后思考再应对。不轻易表露情感，冷静行动，提供稳定感和信任感。谨慎明智，但有时可能需要积极性。",
-      'zh-TW': "在任何情況下都保持冷靜的類型。不立即反應，觀察情況後思考再應對。不輕易表露情感，冷靜行動，提供穩定感和信任感。謹慎明智，但有時可能需要積極性。",
-      id: "Tipe yang mempertahankan ketenangan dalam situasi apa pun. Tidak bereaksi langsung, mengamati situasi dan merespons setelah berpikir. Tidak mengungkapkan emosi dengan baik dan bertindak dengan tenang, memberikan stabilitas dan kepercayaan. Hati-hati dan bijaksana, tetapi kadang-kadang proaktivitas mungkin diperlukan.",
-      vi: "Kiểu người duy trì sự bình tĩnh trong mọi tình huống. Không phản ứng ngay lập tức, quan sát tình huống và phản ứng sau khi suy nghĩ. Không dễ dàng bộc lộ cảm xúc và hành động một cách bình tĩnh, mang lại cảm giác ổn định và tin cậy. Cẩn thận và khôn ngoan, nhưng đôi khi có thể cần tính tích cực."
     },
     strengths: {
       ko: ["안정감", "신뢰감", "현명함", "실수 적음"],

@@ -714,7 +714,6 @@ export default function ReactionStyleTestClient({
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const resultDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultCharacteristics = result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
     const resultReactionFeatures = result.reactionFeatures[locale as keyof typeof result.reactionFeatures] || result.reactionFeatures.ko;
     const resultStrengths = result.strengths[locale as keyof typeof result.strengths] || result.strengths.ko;
     const resultWeaknesses = result.weaknesses[locale as keyof typeof result.weaknesses] || result.weaknesses.ko;
@@ -732,11 +731,8 @@ export default function ReactionStyleTestClient({
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
               </h1>
-              <p className="text-base text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed">
                 {resultDescription}
-              </p>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                {resultCharacteristics}
               </p>
             </div>
 

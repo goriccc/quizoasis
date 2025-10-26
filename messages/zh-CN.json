@@ -1771,5 +1771,118 @@
       "kakaoInit": "正在初始化KakaoTalk分享。请稍后再试。",
       "kakaoError": "KakaoTalk分享过程中发生错误。"
     }
+  },
+  "jealousyTest": {
+    "startMessage": {
+      "line1": "爱与嫉妒只有一步之遥！你的嫉妒指数是多少？",
+      "line2": "当你看到恋人与异性交谈时？",
+      "line3": "当过去的恋爱故事出现时？",
+      "line4": "当异性朋友在SNS上评论时？",
+      "line5": "嫉妒是自然的情感，但如果太强烈，可能会伤害关系。",
+      "line6": "你的嫉妒心是健康水平吗？\n还是需要控制？\n只需3分钟就能知道你的嫉妒水平！"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "totalParticipants": "{count}人参与",
+      "progress": "分析中...",
+      "shareResult": "分享结果",
+      "share": "分享",
+      "kakao": "KakaoTalk",
+      "wechat": "微信",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "LINE",
+      "linkCopy": "复制链接",
+      "retake": "重新测试",
+      "productRecommendations": "商品推荐",
+      "adsenseTitle": "查看相关商品！",
+      "similarTests": "类似测试",
+      "yourResult": "你的结果",
+      "strengths": "优点",
+      "weaknesses": "缺点",
+      "advice": "建议",
+      "compatibleTypes": "相配类型",
+      "warningTypes": "注意类型",
+      "warning": "注意",
+      "noData": "无",
+      "close": "关闭"
+    },
+    "shareMessages": {
+      "default": "我是{type}！嫉妒心测试结果...你呢？一起试试吧！💚",
+      "kakao": "我是{type}！嫉妒心测试结果...你呢？一起试试吧！💚",
+      "wechat": "我是{type}！嫉妒心测试结果...你呢？一起试试吧！💚",
+      "whatsapp": "我是{type}！嫉妒心测试结果...你呢？一起试试吧！💚",
+      "telegram": "我是{type}！嫉妒心测试结果...你呢？一起试试吧！💚",
+      "line": "我是{type}！嫉妒心测试结果...你呢？一起试试吧！💚"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "result": {
+      "reactionFeatures": "反应特征",
+      "bestMatch": "完美匹配",
+      "goodMatch": "良好匹配",
+      "carefulMatch": "需要谨慎",
+      "difficultMatch": "困难匹配",
+      "compatibility": {
+        "Type1_Type1": "完美信任和理解",
+        "Type1_Type2": "健康关系",
+        "Type1_Type3": "有温差但可能",
+        "Type1_Type4": "需要注意",
+        "Type1_Type5": "困难关系",
+        "Type1_Type6": "极端温差",
+        "Type2_Type1": "健康关系",
+        "Type2_Type2": "完美平衡",
+        "Type2_Type3": "顺利关系",
+        "Type2_Type4": "提供稳定感",
+        "Type2_Type5": "温差",
+        "Type2_Type6": "温差",
+        "Type3_Type1": "有温差但可能",
+        "Type3_Type2": "顺利关系",
+        "Type3_Type3": "相互理解",
+        "Type3_Type4": "需要注意",
+        "Type3_Type5": "困难关系",
+        "Type3_Type6": "极端温差",
+        "Type4_Type1": "需要注意",
+        "Type4_Type2": "提供稳定感",
+        "Type4_Type3": "需要注意",
+        "Type4_Type4": "在一起会恶化",
+        "Type4_Type5": "在一起会恶化",
+        "Type4_Type6": "在一起会恶化",
+        "Type5_Type1": "困难关系",
+        "Type5_Type2": "温差",
+        "Type5_Type3": "困难关系",
+        "Type5_Type4": "在一起会恶化",
+        "Type5_Type5": "在一起会恶化",
+        "Type5_Type6": "在一起会恶化",
+        "Type6_Type1": "极端温差",
+        "Type6_Type2": "温差",
+        "Type6_Type3": "极端温差",
+        "Type6_Type4": "在一起会恶化",
+        "Type6_Type5": "在一起会恶化",
+        "Type6_Type6": "在一起会恶化"
+      }
+    },
+    "shareMessages": {
+      "default": "我是{type}！嫉妒测试完成！我嫉妒吗？你呢？一起试试吧！💚❤️",
+      "kakao": "我是{type}！嫉妒测试完成！我嫉妒吗？你呢？一起试试吧！💚❤️",
+      "wechat": "我是{type}！嫉妒测试完成！我嫉妒吗？你呢？一起试试吧！💚❤️",
+      "whatsapp": "我是{type}！嫉妒测试完成！我嫉妒吗？你呢？一起试试吧！💚❤️",
+      "telegram": "我是{type}！嫉妒测试完成！我嫉妒吗？你呢？一起试试吧！💚❤️",
+      "line": "我是{type}！嫉妒测试完成！我嫉妒吗？你呢？一起试试吧！💚❤️"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    }
   }
 }

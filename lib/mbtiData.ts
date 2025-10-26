@@ -999,6 +999,10 @@ export const testDataMap: Record<string, { questions: any[]; results: any[] }> =
   'entrepreneur-spirit-test': {
     questions: entrepreneurSpiritQuestions,
     results: entrepreneurSpiritResults
+  },
+  'jealousy-test': {
+    questions: jealousyQuestions,
+    results: jealousyResults
   }
 };
 

@@ -1772,5 +1772,118 @@
       "kakaoInit": "カカオトーク共有機能を初期化しています。しばらく後でもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "jealousyTest": {
+    "startMessage": {
+      "line1": "愛と嫉妬は紙一重！あなたの嫉妬指数は？",
+      "line2": "恋人が異性と話しているのを見ると？",
+      "line3": "過去の恋愛話が出ると？",
+      "line4": "SNSに異性の友達がコメントすると？",
+      "line5": "嫉妬は自然な感情ですが、強すぎると関係を害することがあります。",
+      "line6": "あなたの嫉妬心は健康的なレベルですか？\nそれともコントロールが必要ですか？\nたった3分であなたの嫉妬レベルがわかります！"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "totalParticipants": "{count}名参加",
+      "progress": "分析中...",
+      "shareResult": "結果共有",
+      "share": "共有",
+      "kakao": "カカオトーク",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "LINE",
+      "linkCopy": "リンクコピー",
+      "retake": "再挑戦",
+      "productRecommendations": "商品推薦",
+      "adsenseTitle": "関連商品をチェック！",
+      "similarTests": "類似テスト",
+      "yourResult": "あなたの結果",
+      "strengths": "長所",
+      "weaknesses": "短所",
+      "advice": "アドバイス",
+      "compatibleTypes": "相性の良いタイプ",
+      "warningTypes": "注意タイプ",
+      "warning": "注意",
+      "noData": "なし",
+      "close": "閉じる"
+    },
+    "shareMessages": {
+      "default": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
+      "kakao": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
+      "wechat": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
+      "whatsapp": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
+      "telegram": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
+      "line": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "result": {
+      "reactionFeatures": "反応特徴",
+      "bestMatch": "完璧な相性",
+      "goodMatch": "良い相性",
+      "carefulMatch": "注意が必要な相性",
+      "difficultMatch": "難しい相性",
+      "compatibility": {
+        "Type1_Type1": "完璧な信頼と理解",
+        "Type1_Type2": "健康的な関係",
+        "Type1_Type3": "温度差があるが可能",
+        "Type1_Type4": "注意が必要",
+        "Type1_Type5": "難しい関係",
+        "Type1_Type6": "極端な温度差",
+        "Type2_Type1": "健康的な関係",
+        "Type2_Type2": "完璧なバランス",
+        "Type2_Type3": "スムーズな関係",
+        "Type2_Type4": "安定感を提供",
+        "Type2_Type5": "温度差",
+        "Type2_Type6": "温度差",
+        "Type3_Type1": "温度差があるが可能",
+        "Type3_Type2": "スムーズな関係",
+        "Type3_Type3": "相互理解",
+        "Type3_Type4": "注意が必要",
+        "Type3_Type5": "難しい関係",
+        "Type3_Type6": "極端な温度差",
+        "Type4_Type1": "注意が必要",
+        "Type4_Type2": "安定感を提供",
+        "Type4_Type3": "注意が必要",
+        "Type4_Type4": "一緒にいると悪化",
+        "Type4_Type5": "一緒にいると悪化",
+        "Type4_Type6": "一緒にいると悪化",
+        "Type5_Type1": "難しい関係",
+        "Type5_Type2": "温度差",
+        "Type5_Type3": "難しい関係",
+        "Type5_Type4": "一緒にいると悪化",
+        "Type5_Type5": "一緒にいると悪化",
+        "Type5_Type6": "一緒にいると悪化",
+        "Type6_Type1": "極端な温度差",
+        "Type6_Type2": "温度差",
+        "Type6_Type3": "極端な温度差",
+        "Type6_Type4": "一緒にいると悪化",
+        "Type6_Type5": "一緒にいると悪化",
+        "Type6_Type6": "一緒にいると悪化"
+      }
+    },
+    "shareMessages": {
+      "default": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "kakao": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "wechat": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "whatsapp": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "telegram": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "line": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

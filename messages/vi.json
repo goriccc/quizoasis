@@ -1771,5 +1771,118 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "jealousyTest": {
+    "startMessage": {
+      "line1": "Tình yêu và ghen tuông chỉ cách nhau một bước! Chỉ số ghen tuông của bạn là gì?",
+      "line2": "Khi thấy người yêu nói chuyện với người khác giới?",
+      "line3": "Khi câu chuyện tình cũ xuất hiện?",
+      "line4": "Khi bạn khác giới bình luận trên SNS?",
+      "line5": "Ghen tuông là cảm xúc tự nhiên, nhưng nếu quá mạnh có thể làm tổn hại mối quan hệ.",
+      "line6": "Sự ghen tuông của bạn ở mức độ lành mạnh?\nHay cần được kiểm soát?\nChỉ 3 phút để biết mức độ ghen tuông của bạn!"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "totalParticipants": "{count} người tham gia",
+      "progress": "Đang phân tích...",
+      "shareResult": "Chia sẻ kết quả",
+      "share": "Chia sẻ",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "LINE",
+      "linkCopy": "Sao chép liên kết",
+      "retake": "Làm lại",
+      "productRecommendations": "Gợi ý sản phẩm",
+      "adsenseTitle": "Xem sản phẩm liên quan!",
+      "similarTests": "Bài kiểm tra tương tự",
+      "yourResult": "Kết quả của bạn",
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
+      "advice": "Lời khuyên",
+      "compatibleTypes": "Kiểu tương thích",
+      "warningTypes": "Kiểu cần chú ý",
+      "warning": "Cảnh báo",
+      "noData": "Không có",
+      "close": "Đóng"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
+      "kakao": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
+      "wechat": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
+      "whatsapp": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
+      "telegram": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
+      "line": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "result": {
+      "reactionFeatures": "Đặc điểm phản ứng",
+      "bestMatch": "Kết hợp hoàn hảo",
+      "goodMatch": "Kết hợp tốt",
+      "carefulMatch": "Cần thận trọng",
+      "difficultMatch": "Kết hợp khó khăn",
+      "compatibility": {
+        "Type1_Type1": "Tin tưởng và hiểu biết hoàn hảo",
+        "Type1_Type2": "Mối quan hệ lành mạnh",
+        "Type1_Type3": "Có sự khác biệt nhiệt độ nhưng có thể",
+        "Type1_Type4": "Cần chú ý",
+        "Type1_Type5": "Mối quan hệ khó khăn",
+        "Type1_Type6": "Sự khác biệt nhiệt độ cực đoan",
+        "Type2_Type1": "Mối quan hệ lành mạnh",
+        "Type2_Type2": "Cân bằng hoàn hảo",
+        "Type2_Type3": "Mối quan hệ suôn sẻ",
+        "Type2_Type4": "Cung cấp sự ổn định",
+        "Type2_Type5": "Sự khác biệt nhiệt độ",
+        "Type2_Type6": "Sự khác biệt nhiệt độ",
+        "Type3_Type1": "Có sự khác biệt nhiệt độ nhưng có thể",
+        "Type3_Type2": "Mối quan hệ suôn sẻ",
+        "Type3_Type3": "Hiểu biết lẫn nhau",
+        "Type3_Type4": "Cần chú ý",
+        "Type3_Type5": "Mối quan hệ khó khăn",
+        "Type3_Type6": "Sự khác biệt nhiệt độ cực đoan",
+        "Type4_Type1": "Cần chú ý",
+        "Type4_Type2": "Cung cấp sự ổn định",
+        "Type4_Type3": "Cần chú ý",
+        "Type4_Type4": "Xấu đi khi ở cùng nhau",
+        "Type4_Type5": "Xấu đi khi ở cùng nhau",
+        "Type4_Type6": "Xấu đi khi ở cùng nhau",
+        "Type5_Type1": "Mối quan hệ khó khăn",
+        "Type5_Type2": "Sự khác biệt nhiệt độ",
+        "Type5_Type3": "Mối quan hệ khó khăn",
+        "Type5_Type4": "Xấu đi khi ở cùng nhau",
+        "Type5_Type5": "Xấu đi khi ở cùng nhau",
+        "Type5_Type6": "Xấu đi khi ở cùng nhau",
+        "Type6_Type1": "Sự khác biệt nhiệt độ cực đoan",
+        "Type6_Type2": "Sự khác biệt nhiệt độ",
+        "Type6_Type3": "Sự khác biệt nhiệt độ cực đoan",
+        "Type6_Type4": "Xấu đi khi ở cùng nhau",
+        "Type6_Type5": "Xấu đi khi ở cùng nhau",
+        "Type6_Type6": "Xấu đi khi ở cùng nhau"
+      }
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

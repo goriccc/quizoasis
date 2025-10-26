@@ -1824,6 +1824,119 @@
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
       "kakaoError": "Error occurred during KakaoTalk sharing."
     }
+  },
+  "jealousyTest": {
+    "startMessage": {
+      "line1": "Love and jealousy are just one step apart! What's your jealousy index?",
+      "line2": "When you see your partner talking to someone of the opposite sex?",
+      "line3": "When past relationship stories come up?",
+      "line4": "When opposite-sex friends comment on SNS?",
+      "line5": "Jealousy is a natural emotion, but if it's too strong, it can harm relationships.",
+      "line6": "Is your jealousy at a healthy level?\nOr does it need to be controlled?\nJust 3 minutes to know your jealousy level!"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "totalParticipants": "{count} participants",
+      "progress": "Analyzing...",
+      "shareResult": "Share Result",
+      "share": "Share",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "Copy Link",
+      "retake": "Retake",
+      "productRecommendations": "Product Recommendations",
+      "adsenseTitle": "Check out related products!",
+      "similarTests": "Similar Tests",
+      "yourResult": "Your Result",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "advice": "Advice",
+      "compatibleTypes": "Compatible Types",
+      "warningTypes": "Warning Types",
+      "warning": "Warning",
+      "noData": "None",
+      "close": "Close"
+    },
+    "shareMessages": {
+      "default": "I am {type}! Jealousy test result... What about you? Let's try together! 💚",
+      "kakao": "I am {type}! Jealousy test result... What about you? Let's try together! 💚",
+      "wechat": "I am {type}! Jealousy test result... What about you? Let's try together! 💚",
+      "whatsapp": "I am {type}! Jealousy test result... What about you? Let's try together! 💚",
+      "telegram": "I am {type}! Jealousy test result... What about you? Let's try together! 💚",
+      "line": "I am {type}! Jealousy test result... What about you? Let's try together! 💚"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "result": {
+      "reactionFeatures": "Reaction Features",
+      "bestMatch": "Perfect Match",
+      "goodMatch": "Good Match",
+      "carefulMatch": "Needs Caution",
+      "difficultMatch": "Difficult Match",
+      "compatibility": {
+        "Type1_Type1": "Perfect trust and understanding",
+        "Type1_Type2": "Healthy relationship",
+        "Type1_Type3": "Temperature difference but possible",
+        "Type1_Type4": "Needs attention",
+        "Type1_Type5": "Difficult relationship",
+        "Type1_Type6": "Extreme temperature difference",
+        "Type2_Type1": "Healthy relationship",
+        "Type2_Type2": "Perfect balance",
+        "Type2_Type3": "Smooth relationship",
+        "Type2_Type4": "Provides stability",
+        "Type2_Type5": "Temperature difference",
+        "Type2_Type6": "Temperature difference",
+        "Type3_Type1": "Temperature difference but possible",
+        "Type3_Type2": "Smooth relationship",
+        "Type3_Type3": "Mutual understanding",
+        "Type3_Type4": "Needs attention",
+        "Type3_Type5": "Difficult relationship",
+        "Type3_Type6": "Extreme temperature difference",
+        "Type4_Type1": "Needs attention",
+        "Type4_Type2": "Provides stability",
+        "Type4_Type3": "Needs attention",
+        "Type4_Type4": "Worsens when together",
+        "Type4_Type5": "Worsens when together",
+        "Type4_Type6": "Worsens when together",
+        "Type5_Type1": "Difficult relationship",
+        "Type5_Type2": "Temperature difference",
+        "Type5_Type3": "Difficult relationship",
+        "Type5_Type4": "Worsens when together",
+        "Type5_Type5": "Worsens when together",
+        "Type5_Type6": "Worsens when together",
+        "Type6_Type1": "Extreme temperature difference",
+        "Type6_Type2": "Temperature difference",
+        "Type6_Type3": "Extreme temperature difference",
+        "Type6_Type4": "Worsens when together",
+        "Type6_Type5": "Worsens when together",
+        "Type6_Type6": "Worsens when together"
+      }
+    },
+    "shareMessages": {
+      "default": "I'm {type}! Jealousy test completed! Am I jealous? How about you? Let's try together! 💚❤️",
+      "kakao": "I'm {type}! Jealousy test completed! Am I jealous? How about you? Let's try together! 💚❤️",
+      "wechat": "I'm {type}! Jealousy test completed! Am I jealous? How about you? Let's try together! 💚❤️",
+      "whatsapp": "I'm {type}! Jealousy test completed! Am I jealous? How about you? Let's try together! 💚❤️",
+      "telegram": "I'm {type}! Jealousy test completed! Am I jealous? How about you? Let's try together! 💚❤️",
+      "line": "I'm {type}! Jealousy test completed! Am I jealous? How about you? Let's try together! 💚❤️"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    }
   }
 }
 

@@ -1771,5 +1771,118 @@
       "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
       "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
     }
+  },
+  "jealousyTest": {
+    "startMessage": {
+      "line1": "Cinta dan kecemburuan hanya terpisah satu langkah! Berapa indeks kecemburuan Anda?",
+      "line2": "Ketika melihat pasangan berbicara dengan lawan jenis?",
+      "line3": "Ketika cerita hubungan masa lalu muncul?",
+      "line4": "Ketika teman lawan jenis berkomentar di SNS?",
+      "line5": "Kecemburuan adalah emosi alami, tapi jika terlalu kuat bisa merusak hubungan.",
+      "line6": "Apakah kecemburuan Anda pada tingkat sehat?\nAtau perlu dikontrol?\nHanya 3 menit untuk mengetahui tingkat kecemburuan Anda!"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "totalParticipants": "{count} orang berpartisipasi",
+      "progress": "Menganalisis...",
+      "shareResult": "Bagikan Hasil",
+      "share": "Bagikan",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "LINE",
+      "linkCopy": "Salin Tautan",
+      "retake": "Ulang",
+      "productRecommendations": "Rekomendasi Produk",
+      "adsenseTitle": "Lihat produk terkait!",
+      "similarTests": "Tes Serupa",
+      "yourResult": "Hasil Anda",
+      "strengths": "Kelebihan",
+      "weaknesses": "Kekurangan",
+      "advice": "Saran",
+      "compatibleTypes": "Tipe yang Cocok",
+      "warningTypes": "Tipe Peringatan",
+      "warning": "Peringatan",
+      "noData": "Tidak ada",
+      "close": "Tutup"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Hasil tes kecemburuan... Bagaimana denganmu? Mari coba bersama! 💚",
+      "kakao": "Saya {type}! Hasil tes kecemburuan... Bagaimana denganmu? Mari coba bersama! 💚",
+      "wechat": "Saya {type}! Hasil tes kecemburuan... Bagaimana denganmu? Mari coba bersama! 💚",
+      "whatsapp": "Saya {type}! Hasil tes kecemburuan... Bagaimana denganmu? Mari coba bersama! 💚",
+      "telegram": "Saya {type}! Hasil tes kecemburuan... Bagaimana denganmu? Mari coba bersama! 💚",
+      "line": "Saya {type}! Hasil tes kecemburuan... Bagaimana denganmu? Mari coba bersama! 💚"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "result": {
+      "reactionFeatures": "Fitur Reaksi",
+      "bestMatch": "Kecocokan sempurna",
+      "goodMatch": "Kecocokan baik",
+      "carefulMatch": "Perlu hati-hati",
+      "difficultMatch": "Kecocokan sulit",
+      "compatibility": {
+        "Type1_Type1": "Kepercayaan dan pemahaman sempurna",
+        "Type1_Type2": "Hubungan sehat",
+        "Type1_Type3": "Perbedaan suhu tapi mungkin",
+        "Type1_Type4": "Perlu perhatian",
+        "Type1_Type5": "Hubungan sulit",
+        "Type1_Type6": "Perbedaan suhu ekstrem",
+        "Type2_Type1": "Hubungan sehat",
+        "Type2_Type2": "Keseimbangan sempurna",
+        "Type2_Type3": "Hubungan lancar",
+        "Type2_Type4": "Memberikan stabilitas",
+        "Type2_Type5": "Perbedaan suhu",
+        "Type2_Type6": "Perbedaan suhu",
+        "Type3_Type1": "Perbedaan suhu tapi mungkin",
+        "Type3_Type2": "Hubungan lancar",
+        "Type3_Type3": "Saling memahami",
+        "Type3_Type4": "Perlu perhatian",
+        "Type3_Type5": "Hubungan sulit",
+        "Type3_Type6": "Perbedaan suhu ekstrem",
+        "Type4_Type1": "Perlu perhatian",
+        "Type4_Type2": "Memberikan stabilitas",
+        "Type4_Type3": "Perlu perhatian",
+        "Type4_Type4": "Memburuk saat bersama",
+        "Type4_Type5": "Memburuk saat bersama",
+        "Type4_Type6": "Memburuk saat bersama",
+        "Type5_Type1": "Hubungan sulit",
+        "Type5_Type2": "Perbedaan suhu",
+        "Type5_Type3": "Hubungan sulit",
+        "Type5_Type4": "Memburuk saat bersama",
+        "Type5_Type5": "Memburuk saat bersama",
+        "Type5_Type6": "Memburuk saat bersama",
+        "Type6_Type1": "Perbedaan suhu ekstrem",
+        "Type6_Type2": "Perbedaan suhu",
+        "Type6_Type3": "Perbedaan suhu ekstrem",
+        "Type6_Type4": "Memburuk saat bersama",
+        "Type6_Type5": "Memburuk saat bersama",
+        "Type6_Type6": "Memburuk saat bersama"
+      }
+    },
+    "shareMessages": {
+      "default": "Saya {type}! Tes kecemburuan selesai! Apakah saya cemburu? Bagaimana dengan Anda? Mari coba bersama! 💚❤️",
+      "kakao": "Saya {type}! Tes kecemburuan selesai! Apakah saya cemburu? Bagaimana dengan Anda? Mari coba bersama! 💚❤️",
+      "wechat": "Saya {type}! Tes kecemburuan selesai! Apakah saya cemburu? Bagaimana dengan Anda? Mari coba bersama! 💚❤️",
+      "whatsapp": "Saya {type}! Tes kecemburuan selesai! Apakah saya cemburu? Bagaimana dengan Anda? Mari coba bersama! 💚❤️",
+      "telegram": "Saya {type}! Tes kecemburuan selesai! Apakah saya cemburu? Bagaimana dengan Anda? Mari coba bersama! 💚❤️",
+      "line": "Saya {type}! Tes kecemburuan selesai! Apakah saya cemburu? Bagaimana dengan Anda? Mari coba bersama! 💚❤️"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    }
   }
 }

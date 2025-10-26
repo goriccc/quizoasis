@@ -1762,5 +1762,118 @@
       "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
+  },
+  "jealousyTest": {
+    "startMessage": {
+      "line1": "사랑과 질투는 한 끗 차이! 당신의 질투 지수는?",
+      "line2": "연인이 다른 이성과 대화하는 걸 보면?",
+      "line3": "과거 연애 이야기가 나오면?",
+      "line4": "SNS에 이성 친구가 댓글을 달면?",
+      "line5": "질투는 자연스러운 감정이지만, 너무 강하면 관계를 해칠 수 있습니다.",
+      "line6": "당신의 질투심은 건강한 수준일까요?\n아니면 조절이 필요할까요?\n단 3분이면 당신의 질투 수준을 알 수 있습니다!"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "totalParticipants": "{count}명 참여",
+      "progress": "분석 중...",
+      "shareResult": "결과 공유하기",
+      "share": "공유하기",
+      "kakao": "카카오톡",
+      "wechat": "위챗",
+      "whatsapp": "왓츠앱",
+      "telegram": "텔레그램",
+      "line": "라인",
+      "linkCopy": "링크 복사",
+      "retake": "다시 하기",
+      "productRecommendations": "상품 추천",
+      "adsenseTitle": "관련 상품을 확인해보세요!",
+      "similarTests": "유사한 다른 테스트",
+      "yourResult": "당신의 결과는",
+      "strengths": "장점",
+      "weaknesses": "단점",
+      "advice": "조언",
+      "compatibleTypes": "어울리는 타입",
+      "warningTypes": "주의 타입",
+      "warning": "주의",
+      "noData": "없음",
+      "close": "닫기"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 질투심 테스트 결과... 너는 어떻게 해? 같이 해보자! 💚",
+      "kakao": "나는 {type}! 질투심 테스트 결과... 너는 어떻게 해? 같이 해보자! 💚",
+      "wechat": "나는 {type}! 질투심 테스트 결과... 너는 어떻게 해? 같이 해보자! 💚",
+      "whatsapp": "나는 {type}! 질투심 테스트 결과... 너는 어떻게 해? 같이 해보자! 💚",
+      "telegram": "나는 {type}! 질투심 테스트 결과... 너는 어떻게 해? 같이 해보자! 💚",
+      "line": "나는 {type}! 질투심 테스트 결과... 너는 어떻게 해? 같이 해보자! 💚"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "result": {
+      "reactionFeatures": "반응 특징",
+      "bestMatch": "완벽한 궁합",
+      "goodMatch": "좋은 궁합",
+      "carefulMatch": "주의가 필요한 궁합",
+      "difficultMatch": "어려운 궁합",
+      "compatibility": {
+        "Type1_Type1": "완벽한 신뢰와 이해",
+        "Type1_Type2": "건강한 관계",
+        "Type1_Type3": "온도차 있지만 가능",
+        "Type1_Type4": "주의 필요",
+        "Type1_Type5": "어려운 관계",
+        "Type1_Type6": "극심한 온도차",
+        "Type2_Type1": "건강한 관계",
+        "Type2_Type2": "완벽한 균형",
+        "Type2_Type3": "무난한 관계",
+        "Type2_Type4": "안정감 제공",
+        "Type2_Type5": "온도 차이",
+        "Type2_Type6": "온도 차이",
+        "Type3_Type1": "온도차 있지만 가능",
+        "Type3_Type2": "무난한 관계",
+        "Type3_Type3": "서로 이해",
+        "Type3_Type4": "주의 필요",
+        "Type3_Type5": "어려운 관계",
+        "Type3_Type6": "극심한 온도차",
+        "Type4_Type1": "주의 필요",
+        "Type4_Type2": "안정감 제공",
+        "Type4_Type3": "주의 필요",
+        "Type4_Type4": "함께 있으면 악화",
+        "Type4_Type5": "함께 있으면 악화",
+        "Type4_Type6": "함께 있으면 악화",
+        "Type5_Type1": "어려운 관계",
+        "Type5_Type2": "온도 차이",
+        "Type5_Type3": "어려운 관계",
+        "Type5_Type4": "함께 있으면 악화",
+        "Type5_Type5": "함께 있으면 악화",
+        "Type5_Type6": "함께 있으면 악화",
+        "Type6_Type1": "극심한 온도차",
+        "Type6_Type2": "온도 차이",
+        "Type6_Type3": "극심한 온도차",
+        "Type6_Type4": "함께 있으면 악화",
+        "Type6_Type5": "함께 있으면 악화",
+        "Type6_Type6": "함께 있으면 악화"
+      }
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 질투심 테스트 완료! 나는 질투 많이 하는 편? 너는? 같이 해보자! 💚❤️",
+      "kakao": "나는 {type}! 질투심 테스트 완료! 나는 질투 많이 하는 편? 너는? 같이 해보자! 💚❤️",
+      "wechat": "나는 {type}! 질투심 테스트 완료! 나는 질투 많이 하는 편? 너는? 같이 해보자! 💚❤️",
+      "whatsapp": "나는 {type}! 질투심 테스트 완료! 나는 질투 많이 하는 편? 너는? 같이 해보자! 💚❤️",
+      "telegram": "나는 {type}! 질투심 테스트 완료! 나는 질투 많이 하는 편? 너는? 같이 해보자! 💚❤️",
+      "line": "나는 {type}! 질투심 테스트 완료! 나는 질투 많이 하는 편? 너는? 같이 해보자! 💚❤️"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
   }
 }
