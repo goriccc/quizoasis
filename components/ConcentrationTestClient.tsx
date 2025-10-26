@@ -294,26 +294,33 @@ export default function ConcentrationTestClient({
   const shareToKakao = () => {
     if (typeof window === 'undefined') return;
     
-    if (!(window as any).Kakao) {
+    if (!(window as any).Kakao || !(window as any).Kakao.isInitialized()) {
       alert(t('concentrationTest.alerts.kakaoInit'));
       return;
     }
 
+    const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
+    const thumbnailUrl = getThumbnailUrl(thumbnail || '');
+    
+    // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const shareText = result 
+    const shareDescription = result 
       ? t('concentrationTest.shareMessages.kakao', { type: resultTitle })
       : description;
-    const url = `https://myquizoasis.com${window.location.pathname}`;
-
+    
     try {
-        (window as any).Kakao.Share.sendDefault({
-          objectType: 'text',
-          text: shareText,
+      (window as any).Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: title,
+          description: shareDescription,
+          imageUrl: thumbnailUrl,
           link: {
-            mobileWebUrl: url,
-            webUrl: url,
+            mobileWebUrl: currentUrl,
+            webUrl: currentUrl,
           },
-        });
+        },
+      });
     } catch (error) {
       console.error('카카오톡 공유 실패:', error);
       alert(t('concentrationTest.alerts.kakaoError'));
@@ -324,9 +331,10 @@ export default function ConcentrationTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('concentrationTest.shareMessages.telegram', { type: resultTitle }))
-      : encodeURIComponent(description);
-    window.open(`https://t.me/share/url?url=${url}&text=${shareText}`, '_blank');
+      ? t('concentrationTest.shareMessages.telegram', { type: resultTitle })
+      : title;
+    const text = encodeURIComponent(shareText);
+    window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
   const shareToWeChat = async () => {
@@ -334,7 +342,7 @@ export default function ConcentrationTestClient({
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? t('concentrationTest.shareMessages.wechat', { type: resultTitle }) + `\n\n${url}`
-      : `${description}\n\n${url}`;
+      : `${title}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
     if (navigator.share) {
@@ -361,18 +369,20 @@ export default function ConcentrationTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('concentrationTest.shareMessages.line', { type: resultTitle }))
-      : encodeURIComponent(description);
-    window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${shareText}`, '_blank');
+      ? t('concentrationTest.shareMessages.line', { type: resultTitle })
+      : title;
+    const text = encodeURIComponent(shareText);
+    window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
   };
 
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('concentrationTest.shareMessages.whatsapp', { type: resultTitle }))
-      : encodeURIComponent(description);
-    window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
+      ? t('concentrationTest.shareMessages.whatsapp', { type: resultTitle })
+      : title;
+    const text = encodeURIComponent(shareText);
+    window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
   };
 
   const copyLink = async () => {
@@ -380,7 +390,7 @@ export default function ConcentrationTestClient({
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
       ? t('concentrationTest.shareMessages.default', { type: resultTitle }) + `\n\n${url}`
-      : `${description}\n\n${url}`;
+      : `${title}\n\n${url}`;
     
     try {
       await navigator.clipboard.writeText(shareText);

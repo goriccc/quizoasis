@@ -1834,19 +1834,88 @@ export default async function TestPage({ params }: Props) {
       play_count: 0
     };
 
+    const title = test.title[locale] || test.title.ko;
+    const description = test.description?.[locale] || test.description?.ko || '';
+    const thumbnailUrl = getThumbnailUrl(test.thumbnail);
+    const canonicalUrl = `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`;
+
+    // JSON-LD Schema 생성
+    const jsonLdQuiz = {
+      '@context': 'https://schema.org',
+      '@type': 'Quiz',
+      name: title,
+      description: description,
+      url: canonicalUrl,
+      image: thumbnailUrl,
+      mainEntity: {
+        '@type': 'Question',
+        text: '집중력 테스트',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '심리학 기반 집중력 분석'
+        }
+      },
+      author: {
+        '@type': 'Organization',
+        name: 'QuizOasis'
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'QuizOasis'
+      }
+    };
+
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `https://quizoasis-coral.vercel.app/${locale}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Tests',
+          item: `https://quizoasis-coral.vercel.app/${locale}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: title,
+        },
+      ],
+    };
+
     return (
-      <ConcentrationTestClient
-        locale={locale as Locale}
-        slug={slug}
-        title={test.title[locale] || test.title.ko}
-        description={test.description?.[locale] || test.description?.ko || ''}
-        questions={concentrationQuestions}
-        results={concentrationResults}
-        questionCount={concentrationQuestions.length}
-        thumbnail={test.thumbnail}
-        playCount={test.play_count}
-        similarTests={[]}
-      />
+      <>
+        {/* JSON-LD Schema - Quiz */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
+        />
+        
+        {/* JSON-LD Schema - Breadcrumb */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        
+        <ConcentrationTestClient
+          locale={locale as Locale}
+          slug={slug}
+          title={title}
+          description={description}
+          questions={concentrationQuestions}
+          results={concentrationResults}
+          questionCount={concentrationQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          similarTests={[]}
+        />
+      </>
     );
   }
 
