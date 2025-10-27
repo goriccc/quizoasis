@@ -39,6 +39,7 @@ import { mbtiAccurateQuestions, mbtiAccurateResults } from '@/lib/mbtiAccurateDa
 import { brainQuizQuestions, brainQuizResults } from '@/lib/brainQuizData';
 import { realIQQuestions, realIQResults } from '@/lib/realIQData';
 import { mensaExtremeQuestions, mensaExtremeResults } from '@/lib/mensaExtremeData';
+import { extremeQuizQuestions, extremeQuizResults } from '@/lib/extremeQuizData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -195,6 +196,10 @@ const RealIQTestClient = dynamic(() => import('@/components/RealIQTestClient'), 
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const MensaExtremeTestClient = dynamic(() => import('@/components/MensaExtremeTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+
+const ExtremeQuizTestClient = dynamic(() => import('@/components/ExtremeQuizTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -2131,9 +2136,9 @@ export default async function TestPage({ params }: Props) {
   }
 
   // 초고난도 퀴즈 테스트
-  if (slug === 'mensa-extreme') {
+  if (slug === 'extreme-quiz') {
     const test = await getTestBySlug(slug) || {
-      slug: 'mensa-extreme',
+      slug: 'extreme-quiz',
       title: {
         ko: '3%만 풀 수 있는 초고난도 퀴즈',
         en: 'Extreme Difficulty Quiz Only 3% Can Solve',
@@ -2144,7 +2149,7 @@ export default async function TestPage({ params }: Props) {
         id: 'Kuis Kesulitan Ekstrem Hanya 3% yang Bisa Menyelesaikan'
       },
       description: {
-        ko: '인류 상위 3%만이 풀 수 있는 초고난도 퀴즈!\n\n수학, 논리, 추론, 패턴 인식... 모든 영역의 극한을 시험합니다.\n\n97%의 사람들이 절반도 못 맞히는 문제들로 구성되어 있습니다.\n\n당신은 진정한 천재인가요? 지금 바로 확인해보세요!\n\n정 못 풀겠으면 퀴즈 진행화면에 힌트 버튼을 누르세요!\n(하지만 가급적 누르지 말고 풀어보는 걸 추천해요)\n\n단 10분이면 당신의 진짜 실력을 알 수 있습니다!',
+        ko: '당신은 상위 3%에 속할 수 있을까? 지금 도전하세요!\n\n⚠️ 경고: 이 테스트는 매우 어렵습니다 ⚠️\n\n멘사 회원도 어려워하는 초고난도 문제!\n97%의 사람들이 절반도 못 맞힙니다.\n천재들만이 도달할 수 있는 영역!\n\n정 못 풀겠으면 퀴즈 진행화면에 힌트 버튼을 누르세요!\n(하지만 가급적 누르지 말고 풀어보는 걸 추천해요)\n\n집중하세요! 포기하지 마세요!\n친구들과 점수를 겨뤄보세요!',
         en: 'Extreme difficulty quiz that only the top 3% of humanity can solve!\n\nTests the limits of mathematics, logic, reasoning, pattern recognition... all areas.\n\nComposed of problems that 97% of people can\'t even get half right.\n\nAre you a true genius? Find out right now!\n\nIf you can\'t solve it, press the hint button on the quiz screen!\n(But we recommend trying to solve it without hints)\n\nIn just 10 minutes, you can know your true ability!',
         ja: '人類上位3%しか解けない超難問クイズ！\n\n数学、論理、推理、パターン認識...すべての領域の極限を試します。\n\n97%の人が半分も正解できない問題で構成されています。\n\nあなたは真の天才ですか？今すぐ確認してみてください！\n\nどうしても解けない場合は、クイズ進行画面のヒントボタンを押してください！\n（ただし、できるだけヒントを使わずに解くことをお勧めします）\n\nたった10分で、あなたの本当の実力を知ることができます！',
         'zh-CN': '只有人类前3%能解决的超高难度测验！\n\n测试数学、逻辑、推理、模式识别...所有领域的极限。\n\n由97%的人连一半都答不出的问题组成。\n\n你是真正的天才吗？现在就来确认吧！\n\n实在解不出来，就按测验进行画面的提示按钮！\n（但我们建议尽量不用提示来解答）\n\n只需10分钟，你就能知道自己的真正实力！',
@@ -2163,6 +2168,61 @@ export default async function TestPage({ params }: Props) {
         'zh-TW': ['大腦', '測驗', 'IQ', '超高難度'],
         vi: ['não bộ', 'câu đố', 'IQ', 'siêu khó'],
         id: ['otak', 'kuis', 'IQ', 'ekstrem']
+      },
+      question_count: 12,
+      play_count: 0,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    };
+
+    return (
+      <ExtremeQuizTestClient
+        locale={locale}
+        slug={test.slug}
+        title={test.title[locale as keyof typeof test.title] || test.title.ko}
+        description={test.description[locale as keyof typeof test.description] || test.description.ko}
+        questions={extremeQuizQuestions}
+        results={extremeQuizResults}
+        questionCount={test.question_count}
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+      />
+    );
+  }
+
+  // 멘사 극한 도전 퀴즈 테스트
+  if (slug === 'mensa-extreme') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'mensa-extreme',
+      title: {
+        ko: 'IQ 148 이상만 맞히는 문제',
+        en: 'Problems Only IQ 148+ Can Solve',
+        ja: 'IQ 148以上のみ解ける問題',
+        'zh-CN': '只有IQ 148以上才能解决的问题',
+        'zh-TW': '只有IQ 148以上才能解決的問題',
+        vi: 'Chỉ có IQ 148+ mới giải được',
+        id: 'Hanya IQ 148+ yang bisa menyelesaikan'
+      },
+      description: {
+        ko: '멘사 회원도 어려워하는 극한의 도전! IQ 148 이상, 인구의 상위 0.1%만이 도달하는 영역의 문제들입니다.\n\n수학, 논리, 추론, 패턴 인식... 모든 영역의 극한을 시험합니다.\n\n99.9%의 사람들이 절반도 못 맞히는 문제들로 구성되어 있습니다.\n\n당신은 진정한 천재인가요? 지금 바로 확인해보세요!\n\n정 못 풀겠으면 퀴즈 진행화면에 힌트 버튼을 누르세요!\n(하지만 가급적 누르지 말고 풀어보는 걸 추천해요)\n\n단 12분이면 당신의 진짜 지능을 알 수 있습니다!',
+        en: 'Extreme challenge that even Mensa members find difficult! IQ 148+, only the top 0.1% of the population reaches this level.\n\nTests the limits of mathematics, logic, reasoning, pattern recognition... all areas.\n\nComposed of problems that 99.9% of people can\'t even get half right.\n\nAre you a true genius? Find out right now!\n\nIf you can\'t solve it, press the hint button on the quiz screen!\n(But we recommend trying to solve it without hints)\n\nIn just 12 minutes, you can know your true intelligence!',
+        ja: 'メンサ会員も困難に感じる極限の挑戦！IQ 148以上、人口の上位0.1%のみが到達する領域の問題です。\n\n数学、論理、推理、パターン認識...すべての領域の極限を試します。\n\n99.9%の人が半分も正解できない問題で構成されています。\n\nあなたは真の天才ですか？今すぐ確認してみてください！\n\nどうしても解けない場合は、クイズ進行画面のヒントボタンを押してください！\n（ただし、できるだけヒントを使わずに解くことをお勧めします）\n\nたった12分で、あなたの本当の知能がわかります！',
+        'zh-CN': '连门萨会员都觉得困难的极限挑战！IQ 148以上，只有人口前0.1%能达到的领域的问题。\n\n测试数学、逻辑、推理、模式识别...所有领域的极限。\n\n由99.9%的人连一半都答不出的问题组成。\n\n你是真正的天才吗？现在就来确认吧！\n\n实在解不出来，就按测验进行画面的提示按钮！\n（但我们建议尽量不用提示来解答）\n\n只需12分钟，你就能知道自己的真实智力！',
+        'zh-TW': '連門薩會員都覺得困難的極限挑戰！IQ 148以上，只有人口前0.1%能達到的領域的問題。\n\n測試數學、邏輯、推理、模式識別...所有領域的極限。\n\n由99.9%的人連一半都答不出的問題組成。\n\n你是真正的天才嗎？現在就來確認吧！\n\n實在解不出來，就按測驗進行畫面的提示按鈕！\n（但我們建議盡量不用提示來解答）\n\n只需12分鐘，你就能知道自己的真實智力！',
+        vi: 'Thử thách cực hạn mà ngay cả thành viên Mensa cũng thấy khó! IQ 148+, chỉ có 0.1% dân số đạt được mức này.\n\nKiểm tra giới hạn của toán học, logic, lý luận, nhận dạng mẫu... tất cả các lĩnh vực.\n\nĐược tạo thành từ những vấn đề mà 99.9% mọi người không thể trả lời đúng được một nửa.\n\nBạn có phải là thiên tài thực sự? Hãy tìm hiểu ngay bây giờ!\n\nNếu không giải được, hãy nhấn nút gợi ý trên màn hình câu đố!\n(Nhưng chúng tôi khuyên bạn nên cố gắng giải mà không cần gợi ý)\n\nChỉ trong 12 phút, bạn có thể biết trí thông minh thực sự của mình!',
+        id: 'Tantangan ekstrem yang bahkan anggota Mensa pun merasa sulit! IQ 148+, hanya 0.1% populasi yang mencapai level ini.\n\nMenguji batas matematika, logika, penalaran, pengenalan pola... semua bidang.\n\nTerdiri dari masalah yang 99.9% orang bahkan tidak bisa menjawab setengahnya dengan benar.\n\nApakah Anda jenius sejati? Cari tahu sekarang juga!\n\nJika tidak bisa menyelesaikan, tekan tombol petunjuk di layar kuis!\n(Tapi kami sarankan untuk mencoba menyelesaikan tanpa petunjuk)\n\nHanya dalam 12 menit, Anda bisa mengetahui kecerdasan sejati Anda!'
+      },
+      thumbnail: 'test_103_mensa_extreme.jpg',
+      type: 'quiz',
+      category: 'brain',
+      tags: {
+        ko: ['두뇌', '퀴즈', 'IQ'],
+        en: ['brain', 'quiz', 'IQ'],
+        ja: ['脳', 'クイズ', 'IQ'],
+        'zh-CN': ['大脑', '测验', 'IQ'],
+        'zh-TW': ['大腦', '測驗', 'IQ'],
+        vi: ['não bộ', 'câu đố', 'IQ'],
+        id: ['otak', 'kuis', 'IQ']
       },
       question_count: 12,
       play_count: 0,
@@ -2690,6 +2750,11 @@ export default async function TestPage({ params }: Props) {
     testData = {
       questions: concentrationQuestions,
       results: concentrationResults
+    };
+  } else if (slug === 'extreme-quiz') {
+    testData = {
+      questions: extremeQuizQuestions,
+      results: extremeQuizResults
     };
   } else if (slug === 'mensa-extreme') {
     testData = {
