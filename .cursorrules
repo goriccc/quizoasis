@@ -117,6 +117,40 @@ const handleShareResult = async () => {
 };
 ```
 
+## Slug Management Rules (CRITICAL)
+
+### 1. Slug Uniqueness Requirements
+❌ DON'T:
+- Overwrite existing slugs with new content
+- Use the same slug for different tests
+- Change existing slug mappings without explicit user permission
+- Assume you can modify existing slug behavior
+
+✅ DO:
+- ALWAYS create new unique slugs for new tests
+- Check existing slugs before creating new ones
+- Ask user for explicit permission before modifying existing slugs
+- Use descriptive, unique slug names that don't conflict
+
+### 2. Slug Conflict Resolution
+✅ DO follow this process:
+1. **Check existing slugs first** - Search for similar slugs in the codebase
+2. **Create unique slug** - If similar content exists, use a different slug name
+3. **Ask user permission** - If you must modify existing slug, ask explicitly
+4. **Document changes** - Clearly explain what slug changes were made
+
+### 3. Slug Naming Convention
+✅ DO use descriptive, unique names:
+- `test-name-1`, `test-name-2` for similar tests
+- `test-name-v2` for updated versions
+- `test-name-extreme` for harder versions
+- `test-name-advanced` for advanced versions
+
+❌ DON'T reuse existing slugs:
+- If `extreme-quiz` exists, don't use it for different content
+- If `mensa-test` exists, don't overwrite it with new content
+- Always create new slugs: `mensa-extreme`, `mensa-advanced`, etc.
+
 ## Common Mistakes to Avoid
 
 1. **Hardcoding Korean in sharing functions** - Always use t() function
@@ -124,3 +158,5 @@ const handleShareResult = async () => {
 3. **Inconsistent message formats** - Keep message structure consistent across platforms
 4. **Missing translation keys** - Ensure all 7 languages have complete keys
 5. **Ignoring locale parameter** - Always check locale before displaying text
+6. **Slug conflicts** - NEVER overwrite existing slugs without explicit permission
+7. **Slug reuse** - Always create unique slugs for new content
