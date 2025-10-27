@@ -38,7 +38,7 @@ import { concentrationQuestions, concentrationResults } from '@/lib/concentratio
 import { mbtiAccurateQuestions, mbtiAccurateResults } from '@/lib/mbtiAccurateData';
 import { brainQuizQuestions, brainQuizResults } from '@/lib/brainQuizData';
 import { realIQQuestions, realIQResults } from '@/lib/realIQData';
-import { extremeQuizQuestions, extremeQuizResults } from '@/lib/extremeQuizData';
+import { mensaExtremeQuestions, mensaExtremeResults } from '@/lib/mensaExtremeData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
@@ -194,7 +194,7 @@ const BrainQuizTestClient = dynamic(() => import('@/components/BrainQuizTestClie
 const RealIQTestClient = dynamic(() => import('@/components/RealIQTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
-const ExtremeQuizTestClient = dynamic(() => import('@/components/ExtremeQuizTestClient'), {
+const MensaExtremeTestClient = dynamic(() => import('@/components/MensaExtremeTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 
@@ -2131,9 +2131,9 @@ export default async function TestPage({ params }: Props) {
   }
 
   // 초고난도 퀴즈 테스트
-  if (slug === 'extreme-quiz') {
+  if (slug === 'mensa-extreme') {
     const test = await getTestBySlug(slug) || {
-      slug: 'extreme-quiz',
+      slug: 'mensa-extreme',
       title: {
         ko: '3%만 풀 수 있는 초고난도 퀴즈',
         en: 'Extreme Difficulty Quiz Only 3% Can Solve',
@@ -2171,13 +2171,13 @@ export default async function TestPage({ params }: Props) {
     };
 
     return (
-      <ExtremeQuizTestClient
+      <MensaExtremeTestClient
         locale={locale}
         slug={test.slug}
         title={test.title[locale as keyof typeof test.title] || test.title.ko}
         description={test.description[locale as keyof typeof test.description] || test.description.ko}
-        questions={extremeQuizQuestions}
-        results={extremeQuizResults}
+        questions={mensaExtremeQuestions}
+        results={mensaExtremeResults}
         questionCount={test.question_count}
         thumbnail={test.thumbnail}
         playCount={test.play_count}
@@ -2691,10 +2691,10 @@ export default async function TestPage({ params }: Props) {
       questions: concentrationQuestions,
       results: concentrationResults
     };
-  } else if (slug === 'extreme-quiz') {
+  } else if (slug === 'mensa-extreme') {
     testData = {
-      questions: extremeQuizQuestions,
-      results: extremeQuizResults
+      questions: mensaExtremeQuestions,
+      results: mensaExtremeResults
     };
   } else {
     testData = getTestData(slug);
