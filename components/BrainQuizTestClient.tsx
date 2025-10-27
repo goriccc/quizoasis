@@ -617,6 +617,7 @@ export default function BrainQuizTestClient({
             onClick={() => {
               setShowResultPopup(false);
               setShowResult(true);
+              window.scrollTo(0, 0);
             }}
             className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
           >
