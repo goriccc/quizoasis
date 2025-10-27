@@ -2135,5 +2135,29 @@
       "compatibleTypesTitle": "相配類型",
       "warningTypesTitle": "注意類型"
     }
+  },
+  "brainQuizTest": {
+    "startMessage": {
+      "line1": "你的大腦有多清醒？現在就來測試！",
+      "line2": "邏輯力？計算力？語言感覺？空間知覺？你的大腦哪個領域最發達？",
+      "line3": "和朋友一起挑戰，比較分數！",
+      "line4": "實在解不出來，就按測驗進行畫面的提示按鈕！",
+      "line5": "（但我們建議盡量不用提示來解答）",
+      "line6": "只需5分鐘，你就能知道自己的分數和大腦類型！"
+    },
+    "hint": "提示",
+    "close": "關閉",
+    "score": "分數",
+    "strengths": "優勢",
+    "recommendations": "推薦活動",
+    "advice": "建議",
+    "preparingQuestions": "正在準備問題...",
+    "viewResults": "查看分析結果",
+    "shareMessage": "我是{type}！12分滿分得了{score}分！腦力刺激測驗挑戰完成！你能得多少分？一起來挑戰吧！🧠⚡",
+    "testCompleted": "測試完成！",
+    "scoreFormat": "{current}分 / {total}分",
+    "linkCopied": "連結已複製！",
+    "shareFailed": "分享功能不可用。",
+    "wechatCopy": "連結已複製！請在微信中貼上分享。"
   }
 }

@@ -2016,5 +2016,29 @@
       "compatibleTypesTitle": "어울리는 유형",
       "warningTypesTitle": "주의할 유형"
     }
+  },
+  "brainQuizTest": {
+    "startMessage": {
+      "line1": "당신의 두뇌, 얼마나 깨어있나요? 지금 바로 테스트!",
+      "line2": "논리력? 계산력? 언어 감각? 공간 지각? 당신의 두뇌는 어떤 영역이 가장 발달했을까요?",
+      "line3": "친구들과 함께 도전하고 점수를 비교해보세요!",
+      "line4": "정 못 풀겠으면 퀴즈 진행화면에 힌트 버튼을 누르세요!",
+      "line5": "(하지만 가급적 누르지 말고 풀어보는 걸 추천해요)",
+      "line6": "단 5분이면 당신의 점수와 두뇌 유형을 알 수 있습니다!"
+    },
+    "hint": "힌트",
+    "close": "닫기",
+    "score": "점수",
+    "strengths": "강점",
+    "recommendations": "추천 활동",
+    "advice": "조언",
+    "preparingQuestions": "질문을 준비하고 있습니다...",
+    "viewResults": "분석 결과 보기",
+    "shareMessage": "나는 {type}! 12점 만점에 {score}점! 두뇌 자극 퀴즈 도전 완료! 너는 몇 점 나올까? 같이 도전해보자! 🧠⚡",
+    "testCompleted": "테스트 완료!",
+    "scoreFormat": "{current}점 / {total}점",
+    "linkCopied": "링크가 복사되었습니다!",
+    "shareFailed": "공유 기능을 사용할 수 없습니다.",
+    "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요."
   }
 }

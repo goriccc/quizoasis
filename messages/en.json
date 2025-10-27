@@ -2132,6 +2132,30 @@
       "compatibleTypesTitle": "Compatible Types",
       "warningTypesTitle": "Warning Types"
     }
+  },
+  "brainQuizTest": {
+    "startMessage": {
+      "line1": "How awake is your brain? Test it right now!",
+      "line2": "Logic? Calculation? Language sense? Spatial perception? Which area of your brain is most developed?",
+      "line3": "Challenge with friends and compare scores!",
+      "line4": "If you can't solve it, press the hint button on the quiz screen!",
+      "line5": "(But we recommend trying to solve it without hints)",
+      "line6": "In just 5 minutes, you can know your score and brain type!"
+    },
+    "hint": "Hint",
+    "close": "Close",
+    "score": "Score",
+    "strengths": "Strengths",
+    "recommendations": "Recommended Activities",
+    "advice": "Advice",
+    "preparingQuestions": "Preparing questions...",
+    "viewResults": "View Analysis Results",
+    "shareMessage": "I'm {type}! {score} out of 12 points! Brain stimulation quiz challenge completed! What score will you get? Let's try together! 🧠⚡",
+    "testCompleted": "Test Completed!",
+    "scoreFormat": "{current} / {total} points",
+    "linkCopied": "Link copied!",
+    "shareFailed": "Sharing feature is not available.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share."
   }
 }
 

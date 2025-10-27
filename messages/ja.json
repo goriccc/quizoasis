@@ -2093,5 +2093,29 @@
       "compatibleTypesTitle": "相性の良いタイプ",
       "warningTypesTitle": "注意タイプ"
     }
+  },
+  "brainQuizTest": {
+    "startMessage": {
+      "line1": "あなたの脳はどのくらい覚醒していますか？今すぐテスト！",
+      "line2": "論理力？計算力？言語感覚？空間知覚？あなたの脳のどの領域が最も発達しているでしょうか？",
+      "line3": "友達と一緒に挑戦してスコアを比較してみてください！",
+      "line4": "どうしても解けない場合は、クイズ進行画面のヒントボタンを押してください！",
+      "line5": "（ただし、できるだけヒントを使わずに解くことをお勧めします）",
+      "line6": "たった5分で、あなたのスコアと脳タイプがわかります！"
+    },
+    "hint": "ヒント",
+    "close": "閉じる",
+    "score": "スコア",
+    "strengths": "強み",
+    "recommendations": "おすすめ活動",
+    "advice": "アドバイス",
+    "preparingQuestions": "質問を準備しています...",
+    "viewResults": "分析結果を見る",
+    "shareMessage": "私は{type}！12点満点中{score}点！脳刺激クイズチャレンジ完了！あなたは何点取れるかな？一緒に挑戦しよう！🧠⚡",
+    "testCompleted": "テスト完了！",
+    "scoreFormat": "{current}点 / {total}点",
+    "linkCopied": "リンクがコピーされました！",
+    "shareFailed": "共有機能を使用できません。",
+    "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。"
   }
 }

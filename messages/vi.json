@@ -2129,5 +2129,29 @@
       "compatibleTypesTitle": "Loại tương thích",
       "warningTypesTitle": "Loại cần chú ý"
     }
+  },
+  "brainQuizTest": {
+    "startMessage": {
+      "line1": "Bộ não của bạn có tỉnh táo đến mức nào? Hãy kiểm tra ngay bây giờ!",
+      "line2": "Logic? Tính toán? Cảm giác ngôn ngữ? Nhận thức không gian? Lĩnh vực nào của não bộ bạn phát triển nhất?",
+      "line3": "Thử thách cùng bạn bè và so sánh điểm số!",
+      "line4": "Nếu không giải được, hãy nhấn nút gợi ý trên màn hình câu đố!",
+      "line5": "(Nhưng chúng tôi khuyên bạn nên cố gắng giải mà không cần gợi ý)",
+      "line6": "Chỉ trong 5 phút, bạn có thể biết điểm số và loại não bộ của mình!"
+    },
+    "hint": "Gợi ý",
+    "close": "Đóng",
+    "score": "Điểm số",
+    "strengths": "Điểm mạnh",
+    "recommendations": "Hoạt động đề xuất",
+    "advice": "Lời khuyên",
+    "preparingQuestions": "Đang chuẩn bị câu hỏi...",
+    "viewResults": "Xem kết quả phân tích",
+    "shareMessage": "Tôi là {type}! {score} trên 12 điểm! Hoàn thành thử thách câu đố kích thích não bộ! Bạn sẽ được bao nhiêu điểm? Hãy thử cùng nhau! 🧠⚡",
+    "testCompleted": "Hoàn thành bài kiểm tra!",
+    "scoreFormat": "{current} / {total} điểm",
+    "linkCopied": "Đã sao chép liên kết!",
+    "shareFailed": "Tính năng chia sẻ không khả dụng.",
+    "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ."
   }
 }

@@ -2080,5 +2080,29 @@
       "compatibleTypesTitle": "相配类型",
       "warningTypesTitle": "注意类型"
     }
+  },
+  "brainQuizTest": {
+    "startMessage": {
+      "line1": "你的大脑有多清醒？现在就来测试！",
+      "line2": "逻辑力？计算力？语言感觉？空间知觉？你的大脑哪个领域最发达？",
+      "line3": "和朋友一起挑战，比较分数！",
+      "line4": "实在解不出来，就按测验进行画面的提示按钮！",
+      "line5": "（但我们建议尽量不用提示来解答）",
+      "line6": "只需5分钟，你就能知道自己的分数和大脑类型！"
+    },
+    "hint": "提示",
+    "close": "关闭",
+    "score": "分数",
+    "strengths": "优势",
+    "recommendations": "推荐活动",
+    "advice": "建议",
+    "preparingQuestions": "正在准备问题...",
+    "viewResults": "查看分析结果",
+    "shareMessage": "我是{type}！12分满分得了{score}分！脑力刺激测验挑战完成！你能得多少分？一起来挑战吧！🧠⚡",
+    "testCompleted": "测试完成！",
+    "scoreFormat": "{current}分 / {total}分",
+    "linkCopied": "链接已复制！",
+    "shareFailed": "分享功能不可用。",
+    "wechatCopy": "链接已复制！请在微信中粘贴分享。"
   }
 }

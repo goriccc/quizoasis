@@ -2129,5 +2129,29 @@
       "compatibleTypesTitle": "Tipe yang Kompatibel",
       "warningTypesTitle": "Tipe Peringatan"
     }
+  },
+  "brainQuizTest": {
+    "startMessage": {
+      "line1": "Seberapa sadar otak Anda? Uji sekarang juga!",
+      "line2": "Logika? Perhitungan? Rasa bahasa? Persepsi spasial? Area otak mana yang paling berkembang?",
+      "line3": "Tantang bersama teman dan bandingkan skor!",
+      "line4": "Jika tidak bisa menyelesaikan, tekan tombol petunjuk di layar kuis!",
+      "line5": "(Tapi kami sarankan untuk mencoba menyelesaikan tanpa petunjuk)",
+      "line6": "Hanya dalam 5 menit, Anda bisa mengetahui skor dan tipe otak Anda!"
+    },
+    "hint": "Petunjuk",
+    "close": "Tutup",
+    "score": "Skor",
+    "strengths": "Kekuatan",
+    "recommendations": "Aktivitas yang Direkomendasikan",
+    "advice": "Saran",
+    "preparingQuestions": "Mempersiapkan pertanyaan...",
+    "viewResults": "Lihat Hasil Analisis",
+    "shareMessage": "Saya {type}! {score} dari 12 poin! Tantangan kuis stimulasi otak selesai! Berapa skor yang akan Anda dapatkan? Mari coba bersama! 🧠⚡",
+    "testCompleted": "Tes Selesai!",
+    "scoreFormat": "{current} / {total} poin",
+    "linkCopied": "Tautan disalin!",
+    "shareFailed": "Fitur berbagi tidak tersedia.",
+    "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi."
   }
 }

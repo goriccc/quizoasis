@@ -14,12 +14,10 @@ const CACHE_DURATION = 60000; // 1분
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
-    const tags = searchParams.get('tags')?.split(',') || [];
     const page = parseInt(searchParams.get('page') || '1');
-    const limit = parseInt(searchParams.get('limit') || '12');
+    const limit = parseInt(searchParams.get('limit') || '5');
     const locale = searchParams.get('locale') as Locale || 'ko';
     const excludeSlug = searchParams.get('excludeSlug');
-    const category = searchParams.get('category');
 
     // 캐시 확인
     const now = Date.now();
@@ -47,19 +45,11 @@ export async function GET(request: NextRequest) {
       convertDBTestToQuizTest(dbTest, locale)
     );
 
-    // 태그 필터링
+    // 현재 테스트 제외
     let filteredTests = allTests;
-    if (tags.length > 0) {
-      filteredTests = allTests.filter((test: any) => 
-        test.tags.some((tag: string) => tags.includes(tag))
-      );
-    }
-
-    // 현재 테스트 제외 (excludeSlug 파라미터가 있거나 category가 있으면 자동 제외)
     if (excludeSlug) {
-      filteredTests = filteredTests.filter((test: any) => test.slug !== excludeSlug);
-    } else if (category) {
-      // category가 있으면 해당 카테고리의 현재 테스트를 자동으로 제외
+      filteredTests = allTests.filter((test: any) => test.slug !== excludeSlug);
+    } else {
       // URL에서 현재 테스트 slug를 추출 (Referer 헤더에서)
       const referer = request.headers.get('referer');
       if (referer) {
@@ -67,17 +57,22 @@ export async function GET(request: NextRequest) {
         const pathParts = url.pathname.split('/');
         const currentSlug = pathParts[pathParts.length - 1];
         if (currentSlug && currentSlug !== 'test') {
-          filteredTests = filteredTests.filter((test: any) => test.slug !== currentSlug);
+          filteredTests = allTests.filter((test: any) => test.slug !== currentSlug);
         }
       }
     }
 
-    // 정렬 순서 고정 (created_at 기준, 최신순)
+    // 인기순 정렬 (playCount 기준, 내림차순)
     filteredTests.sort((a: any, b: any) => {
+      const aCount = a.playCount || 0;
+      const bCount = b.playCount || 0;
+      if (aCount !== bCount) {
+        return bCount - aCount;
+      }
+      // playCount가 같으면 최신순
       if (a.createdAt && b.createdAt) {
         return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
       }
-      // createdAt이 없는 경우 slug 기준으로 정렬
       return a.slug.localeCompare(b.slug);
     });
 
@@ -108,9 +103,9 @@ export async function GET(request: NextRequest) {
     return response;
 
   } catch (error) {
-    console.error('Error fetching similar tests:', error);
+    console.error('Error fetching popular tests:', error);
     const errorResponse = NextResponse.json(
-      { error: 'Failed to fetch similar tests' },
+      { error: 'Failed to fetch popular tests' },
       { status: 500 }
     );
     errorResponse.headers.set('Cache-Control', 'no-cache');
