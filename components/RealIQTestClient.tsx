@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { BrainQuizQuestion, BrainQuizResult, calculateBrainQuizResult } from '@/lib/brainQuizData';
+import { RealIQQuestion, RealIQResult, calculateRealIQResult } from '@/lib/realIQData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon, Lightbulb, X } from 'lucide-react';
@@ -13,13 +13,13 @@ import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/ali
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
-interface BrainQuizTestClientProps {
+interface RealIQTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: BrainQuizQuestion[];
-  results: BrainQuizResult[];
+  questions: RealIQQuestion[];
+  results: RealIQResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -32,7 +32,7 @@ interface BrainQuizTestClientProps {
   }>;
 }
 
-export default function BrainQuizTestClient({ 
+export default function RealIQTestClient({ 
   locale, 
   slug, 
   title, 
@@ -43,14 +43,14 @@ export default function BrainQuizTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: BrainQuizTestClientProps) {
+}: RealIQTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<boolean[]>([]);
-  const [result, setResult] = useState<BrainQuizResult | null>(null);
+  const [result, setResult] = useState<RealIQResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<BrainQuizQuestion[]>([]);
+  const [shuffledQuestions, setShuffledQuestions] = useState<RealIQQuestion[]>([]);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
@@ -60,24 +60,51 @@ export default function BrainQuizTestClient({
   const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
   const [showHint, setShowHint] = useState(false);
-  const [currentQuestionOptions, setCurrentQuestionOptions] = useState<any[]>([]);
 
-  // 질문 셔플링 로직
-  useEffect(() => {
-    if (questions.length > 0) {
-      const shuffled = [...questions].sort(() => Math.random() - 0.5);
-      setShuffledQuestions(shuffled);
+  // IQ 범위 추출 함수
+  const getIQRange = (result: RealIQResult): string => {
+    const description = result.description[locale as keyof typeof result.description] || result.description.ko;
+    
+    // IQ 140+ 패턴 매칭 (천재 수준)
+    let match = description.match(/IQ\s*(\d+\+?)\s*\(([^)]+)\)/);
+    if (match) {
+      return `${match[1]} (${match[2]})`;
     }
+    
+    // IQ dưới/di bawah 90 패턴 매칭 (베트남어/인도네시아어 - 단어가 숫자 앞에 옴)
+    match = description.match(/IQ\s*(dưới|di bawah|below|under)\s*(\d+)/);
+    if (match) {
+      return `${match[1]} ${match[2]}`; // "dưới 90", "di bawah 90" 등 반환
+    }
+    
+    // IQ 90 미만/以下 패턴 매칭 (한국어/중국어 - 숫자가 단어 앞에 옴)
+    match = description.match(/IQ\s*(\d+\s*(?:미만|以下))/);
+    if (match) {
+      return match[1]; // "90 미만", "90以下" 등 반환
+    }
+    
+    // IQ 범위 패턴 매칭 (예: 120-129, 130-139 등)
+    match = description.match(/IQ\s*(\d+-\d+)\s*\(([^)]+)\)/);
+    if (match) {
+      return `${match[1]} (${match[2]})`;
+    }
+    
+    // 기본값
+    return 'IQ 측정 완료';
+  };
+
+  // 문제 섞기
+  useEffect(() => {
+    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    setShuffledQuestions(shuffled);
+    
+    // 각 문제의 선택지도 섞기
+    const optionsMap: Record<number, any[]> = {};
+    shuffled.forEach((question, index) => {
+      optionsMap[index] = [...question.options].sort(() => Math.random() - 0.5);
+    });
+    setShuffledOptionsMap(optionsMap);
   }, [questions]);
-
-  // 현재 질문의 옵션 셔플링 (질문이 변경될 때만)
-  useEffect(() => {
-    if (shuffledQuestions.length > 0 && currentQuestion < shuffledQuestions.length) {
-      const question = shuffledQuestions[currentQuestion];
-      const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
-      setCurrentQuestionOptions(shuffledOptions);
-    }
-  }, [shuffledQuestions, currentQuestion]);
 
   // 3초 지연 로딩 스피너
   useEffect(() => {
@@ -141,64 +168,36 @@ export default function BrainQuizTestClient({
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
               
-              return testTags.some((tag: string) => currentTestTags.includes(tag));
+              return testTags.some((tag: string) => 
+                currentTestTags.some((currentTag: string) => 
+                  tag.toLowerCase().includes(currentTag.toLowerCase()) || 
+                  currentTag.toLowerCase().includes(tag.toLowerCase())
+                )
+              );
             })
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
             .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
               thumbnail: t.thumbnail,
               playCount: t.play_count
-            }));
-
-          const popularTestsList = latestTests
-            .filter((t: any) => t.slug !== slug)
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }));
+            }))
+            .sort((a: any, b: any) => (b.playCount || 0) - (a.playCount || 0))
+            .slice(0, 5);
 
           setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
         }
       } catch (error) {
         console.error('테스트 로드 실패:', error);
       }
     };
-
     loadTests();
-  }, [locale, slug]);
+  }, [slug, locale]);
 
-  // AdSense 광고 로드
+  // AdSense 로드
   useEffect(() => {
-    if (showResult) return;
-    
-    const timer = setTimeout(() => {
-      try {
-        if (typeof window !== 'undefined') {
-          const adElements = document.querySelectorAll('.adsbygoogle');
-          
-          adElements.forEach((el) => {
-            const status = (el as HTMLElement).getAttribute('data-adsbygoogle-status');
-            if (!status || status === '') {
-              safeLoadAdSense();
-            }
-          });
-        }
-      } catch (error) {
-        console.error('AdSense 로드 실패:', error);
-      }
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, [showResult]);
+    safeLoadAdSense();
+  }, []);
 
   // 힌트 팝업 닫기
   const closeHint = () => {
@@ -229,7 +228,7 @@ export default function BrainQuizTestClient({
   // 소셜 공유 함수들
   const copyLink = () => {
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert(t('brainQuizTest.linkCopied'));
+    alert(t('realIQTest.linkCopied'));
   };
 
   const shareToKakao = () => {
@@ -246,9 +245,9 @@ export default function BrainQuizTestClient({
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
-      ? t('brainQuizTest.shareMessage', { 
+      ? t('realIQTest.shareMessages.kakao', { 
           type: resultTitle, 
-          score: answers.filter(answer => answer).length 
+          iqRange: getIQRange(result)
         })
       : description;
     
@@ -284,9 +283,9 @@ export default function BrainQuizTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? t('brainQuizTest.shareMessage', { 
+      ? t('realIQTest.shareMessages.telegram', { 
           type: resultTitle, 
-          score: answers.filter(answer => answer).length 
+          iqRange: getIQRange(result)
         })
       : title;
     const text = encodeURIComponent(shareText);
@@ -297,9 +296,9 @@ export default function BrainQuizTestClient({
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? `${t('brainQuizTest.shareMessage', { 
+      ? `${t('realIQTest.shareMessages.wechat', { 
           type: resultTitle, 
-          score: answers.filter(answer => answer).length 
+          iqRange: getIQRange(result)
         })}\n\n${url}`
       : `${title}\n\n${url}`;
     
@@ -307,21 +306,18 @@ export default function BrainQuizTestClient({
     if (navigator.share) {
       try {
         await navigator.share({ text: shareText });
-        return;
       } catch (error) {
-        if (error instanceof Error && error.name === 'AbortError') {
-          return; // 사용자가 취소
-        }
+        console.error('공유 실패:', error);
       }
-    }
-    
-    // Fallback: 링크 복사
-    try {
-      await navigator.clipboard.writeText(shareText);
-      alert(t('brainQuizTest.wechatCopy'));
-    } catch (error) {
-      console.error('링크 복사 실패:', error);
-      alert(t('brainQuizTest.shareFailed'));
+    } else {
+      // Web Share API를 지원하지 않는 경우 클립보드에 복사
+      try {
+        await navigator.clipboard.writeText(shareText);
+        alert(t('realIQTest.wechatCopy'));
+      } catch (error) {
+        console.error('링크 복사 실패:', error);
+        alert(t('realIQTest.shareFailed'));
+      }
     }
   };
 
@@ -334,9 +330,9 @@ export default function BrainQuizTestClient({
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('brainQuizTest.shareMessage', { 
+      ? encodeURIComponent(t('realIQTest.shareMessages.whatsapp', { 
           type: resultTitle, 
-          score: answers.filter(answer => answer).length 
+          iqRange: getIQRange(result)
         }))
       : encodeURIComponent(title);
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
@@ -349,7 +345,7 @@ export default function BrainQuizTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_066_brain_quiz.jpg')}
+              src={getThumbnailUrl(thumbnail || 'test_101_real_iq.pn.jpg')}
               alt={title}
               fill
               className="object-cover"
@@ -374,12 +370,12 @@ export default function BrainQuizTestClient({
             </div>
 
             <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
-              <p className="font-bold text-gray-700">{t('brainQuizTest.startMessage.line1')}</p>
-              <p>{t('brainQuizTest.startMessage.line2')}</p>
-              <p>{t('brainQuizTest.startMessage.line3')}</p>
-              <p>{t('brainQuizTest.startMessage.line4')}</p>
-              <p className="whitespace-pre-line">{t('brainQuizTest.startMessage.line5')}</p>
-              <p>{t('brainQuizTest.startMessage.line6')}</p>
+              <p className="font-bold text-gray-700">{t('realIQTest.startMessage.line1')}</p>
+              <p>{t('realIQTest.startMessage.line2')}</p>
+              <p>{t('realIQTest.startMessage.line3')}</p>
+              <p>{t('realIQTest.startMessage.line4')}</p>
+              <p className="whitespace-pre-line">{t('realIQTest.startMessage.line5')}</p>
+              <p>{t('realIQTest.startMessage.line6')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -395,17 +391,20 @@ export default function BrainQuizTestClient({
               {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
             </p>
 
-            <div className="max-w-[680px] mx-auto mb-6">
+            {/* 상품 추천 */}
+            <div className="mb-8">
               {locale === 'ko' ? (
-                <iframe 
-                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
-                  width="680" 
-                  height="140" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  referrerPolicy="unsafe-url"
-                  className="w-full"
-                />
+                <div className="flex justify-center">
+                  <iframe 
+                    src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
+                    width="680" 
+                    height="140" 
+                    frameBorder="0" 
+                    scrolling="no" 
+                    referrerPolicy="unsafe-url"
+                    className="w-full"
+                  />
+                </div>
               ) : aliProducts.length > 0 ? (
                 <ProductRecommendations 
                   products={aliProducts}
@@ -473,7 +472,7 @@ export default function BrainQuizTestClient({
                         <div className="relative aspect-video">
                           <Image
                             src={getThumbnailUrl(test.thumbnail)}
-                            alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
+                            alt={test.title}
                             fill
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
@@ -482,7 +481,7 @@ export default function BrainQuizTestClient({
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
                             <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                              {typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'}
+                              {test.title}
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
@@ -501,32 +500,6 @@ export default function BrainQuizTestClient({
       </div>
     );
   }
-
-  // 답변 처리
-  const handleAnswer = (isCorrect: boolean) => {
-    const newAnswers = [...answers, isCorrect];
-    setAnswers(newAnswers);
-
-    // 다음 문항으로 이동
-    const nextQuestion = currentQuestion + 1;
-    
-    if (nextQuestion >= shuffledQuestions.length) {
-      // 마지막 문항을 완료했을 때
-      setShowLoadingSpinner(true);
-      
-      // 결과 계산
-      const resultType = calculateBrainQuizResult(newAnswers);
-      const brainResult = results.find(r => r.type === resultType);
-      
-      if (brainResult) {
-        setResult(brainResult);
-      }
-    } else {
-      // 다음 문항으로 이동
-      setCurrentQuestion(nextQuestion);
-      setShowHint(false);
-    }
-  };
 
   // 로딩 스피너
   if (showLoadingSpinner) {
@@ -566,7 +539,7 @@ export default function BrainQuizTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            🎉 {t('brainQuizTest.testCompleted')}
+            🎉 {t('realIQTest.testCompleted')}
           </h2>
           
           
@@ -616,12 +589,23 @@ export default function BrainQuizTestClient({
           <button
             onClick={() => {
               setShowResultPopup(false);
+              setShowLoadingSpinner(false);
+              
+              // result가 없으면 다시 계산
+              if (!result) {
+                const resultType = calculateRealIQResult(answers);
+                const iqResult = results.find(r => r.type === resultType);
+                if (iqResult) {
+                  setResult(iqResult);
+                }
+              }
+              
               setShowResult(true);
               window.scrollTo(0, 0);
             }}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-            {t('brainQuizTest.viewResults')}
+            {t('realIQTest.viewResults')}
           </button>
         </div>
       </div>
@@ -659,12 +643,12 @@ export default function BrainQuizTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                📊 {t('brainQuizTest.score')}
+                📊 {t('realIQTest.score')}
               </h3>
               <p className="text-center text-3xl font-bold text-blue-600">
-                {t('brainQuizTest.scoreFormat', { 
+                {t('realIQTest.scoreFormat', { 
                   current: answers.filter(answer => answer).length, 
-                  total: questions.length 
+                  total: shuffledQuestions.length 
                 })}
               </p>
             </div>
@@ -672,7 +656,7 @@ export default function BrainQuizTestClient({
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  💪 {t('brainQuizTest.strengths')}
+                  💪 {t('realIQTest.strengths')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {resultStrengths.map((strength, index) => (
@@ -688,7 +672,7 @@ export default function BrainQuizTestClient({
 
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  🎯 {t('brainQuizTest.recommendations')}
+                  🎯 {t('realIQTest.recommendations')}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {resultRecommendations.map((recommendation, index) => (
@@ -705,7 +689,7 @@ export default function BrainQuizTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-3">
-                💡 {t('brainQuizTest.advice')}
+                💡 {t('realIQTest.advice')}
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {resultAdvice}
@@ -716,9 +700,10 @@ export default function BrainQuizTestClient({
               <button
                 onClick={() => {
                   const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-                  const shareText = t('brainQuizTest.shareMessage', { 
+                  const iqRange = getIQRange(result);
+                  const shareText = t('realIQTest.shareMessages.default', { 
                     type: resultTitle, 
-                    score: answers.filter(answer => answer).length 
+                    iqRange: iqRange
                   });
                   const url = `https://myquizoasis.com${window.location.pathname}`;
                   const shareMessage = `${shareText}\n\n${url}`;
@@ -731,7 +716,7 @@ export default function BrainQuizTestClient({
                     });
                   } else {
                     navigator.clipboard.writeText(shareMessage);
-                    alert(t('brainQuizTest.linkCopied'));
+                    alert(t('realIQTest.linkCopied'));
                   }
                 }}
                 className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
@@ -880,12 +865,12 @@ export default function BrainQuizTestClient({
   }
 
   // 질문 화면
-  if (shuffledQuestions.length === 0 || currentQuestionOptions.length === 0) {
+  if (shuffledQuestions.length === 0) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">{t('brainQuizTest.preparingQuestions')}</p>
+          <p className="text-gray-600">{t('realIQTest.preparingQuestions')}</p>
         </div>
       </div>
     );
@@ -894,6 +879,31 @@ export default function BrainQuizTestClient({
   const question = shuffledQuestions[currentQuestion];
   const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
+
+  // 현재 문제의 선택지 가져오기
+  const currentQuestionOptions = shuffledOptionsMap[currentQuestion] || [];
+
+  // 답변 처리 함수
+  const handleAnswer = (isCorrect: boolean) => {
+    const newAnswers = [...answers, isCorrect];
+    setAnswers(newAnswers);
+    
+    if (currentQuestion + 1 >= shuffledQuestions.length) {
+      // 마지막 문제
+      setShowLoadingSpinner(true);
+      
+      // 결과 계산
+      const resultType = calculateRealIQResult(newAnswers);
+      const iqResult = results.find(r => r.type === resultType);
+      
+      if (iqResult) {
+        setResult(iqResult);
+      }
+    } else {
+      setCurrentQuestion(currentQuestion + 1);
+      setShowHint(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -977,7 +987,7 @@ export default function BrainQuizTestClient({
               }}
             >
               <Lightbulb size={20} />
-              {t('brainQuizTest.hint')}
+              {t('realIQTest.hint')}
             </button>
           </div>
 
@@ -1013,7 +1023,7 @@ export default function BrainQuizTestClient({
       {showHint && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl p-6 max-w-md w-full mx-4 text-center shadow-2xl">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">{t('brainQuizTest.hint')}</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-4">{t('realIQTest.hint')}</h3>
             <div className="w-full h-px bg-gray-300 mb-4"></div>
             <p className="text-gray-700 mb-6">
               {question.hint[locale as keyof typeof question.hint] || question.hint.ko}
@@ -1022,7 +1032,6 @@ export default function BrainQuizTestClient({
               onClick={closeHint}
               className="w-full text-white font-bold py-3 px-6 rounded-full transition-all duration-300"
               style={{
-                width: '100%',
                 background: 'linear-gradient(to right, #8B5CF6, #7C3AED)',
                 boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
               }}
@@ -1033,7 +1042,7 @@ export default function BrainQuizTestClient({
                 e.currentTarget.style.background = 'linear-gradient(to right, #8B5CF6, #7C3AED)';
               }}
             >
-              {t('brainQuizTest.close')}
+              {t('realIQTest.close')}
             </button>
           </div>
         </div>

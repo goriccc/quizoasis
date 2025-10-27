@@ -2153,5 +2153,49 @@
     "linkCopied": "Đã sao chép liên kết!",
     "shareFailed": "Tính năng chia sẻ không khả dụng.",
     "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ."
+  },
+  "realIQTest": {
+    "startMessage": {
+      "line1": "Đo IQ thực tế của bạn!",
+      "line2": "Chỉ số thông minh của bạn là bao nhiêu?",
+      "line3": "Thiên tài cấp Mensa? Trung bình? Xuất sắc?",
+      "line4": "Hãy tìm hiểu IQ chính xác của bạn ngay bây giờ!",
+      "line5": "Nếu không giải được, hãy nhấn nút gợi ý trên màn hình câu đố!\n(Nhưng tôi khuyên bạn nên cố gắng giải mà không cần gợi ý)",
+      "line6": "Tập trung! Trả lời cẩn thận!\nChỉ trong 5 phút, bạn có thể biết IQ thực tế của mình!"
+    },
+    "testCompleted": "Hoàn thành bài kiểm tra!",
+    "viewResults": "Xem kết quả phân tích",
+    "analyzeResults": "Xem kết quả phân tích",
+    "score": "Điểm số",
+    "scoreFormat": "{current} / {total} điểm",
+    "strengths": "Điểm mạnh",
+    "recommendations": "Lĩnh vực đề xuất",
+    "advice": "Lời khuyên",
+    "hint": "Gợi ý",
+    "close": "Đóng",
+    "preparingQuestions": "Đang chuẩn bị câu hỏi...",
+    "linkCopied": "Đã sao chép liên kết!",
+    "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+    "shareFailed": "Tính năng chia sẻ không khả dụng.",
+    "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk, vui lòng thử lại sau.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk.",
+    "shareMessages": {
+      "default": "Tôi là IQ {iqRange} {type}! Bạn có thể vượt qua tôi không?",
+      "kakao": "Tôi là IQ {iqRange} {type}! Bạn có thể vượt qua tôi không?",
+      "wechat": "Tôi là IQ {iqRange} {type}! Bạn có thể vượt qua tôi không?",
+      "whatsapp": "Tôi là IQ {iqRange} {type}! Bạn có thể vượt qua tôi không?",
+      "telegram": "Tôi là IQ {iqRange} {type}! Bạn có thể vượt qua tôi không?",
+      "line": "Tôi là IQ {iqRange} {type}! Bạn có thể vượt qua tôi không?"
+    },
+    "ui": {
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "Bắt đầu kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (giữa tiêu đề-mô tả)"
+    }
   }
 }

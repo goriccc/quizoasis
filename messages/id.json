@@ -2153,5 +2153,49 @@
     "linkCopied": "Tautan disalin!",
     "shareFailed": "Fitur berbagi tidak tersedia.",
     "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi."
+  },
+  "realIQTest": {
+    "startMessage": {
+      "line1": "Ukur IQ asli Anda!",
+      "line2": "Berapa indeks kecerdasan Anda?",
+      "line3": "Jenius level Mensa? Rata-rata? Unggul?",
+      "line4": "Temukan IQ tepat Anda sekarang juga!",
+      "line5": "Jika tidak bisa menyelesaikan, tekan tombol petunjuk di layar kuis!\n(Tapi saya sarankan mencoba tanpa petunjuk)",
+      "line6": "Fokus! Jawab dengan hati-hati!\nHanya dalam 5 menit, Anda bisa mengetahui IQ asli Anda!"
+    },
+    "testCompleted": "Tes Selesai!",
+    "viewResults": "Lihat Hasil Analisis",
+    "analyzeResults": "Lihat Hasil Analisis",
+    "score": "Skor",
+    "scoreFormat": "{current} / {total} poin",
+    "strengths": "Kekuatan",
+    "recommendations": "Bidang yang Direkomendasikan",
+    "advice": "Saran",
+    "hint": "Petunjuk",
+    "close": "Tutup",
+    "preparingQuestions": "Mempersiapkan pertanyaan...",
+    "linkCopied": "Tautan disalin!",
+    "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+    "shareFailed": "Fitur berbagi tidak tersedia.",
+    "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk, silakan coba lagi sebentar lagi.",
+    "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk.",
+    "shareMessages": {
+      "default": "Saya IQ {iqRange} {type}! Bisakah Anda mengalahkan saya?",
+      "kakao": "Saya IQ {iqRange} {type}! Bisakah Anda mengalahkan saya?",
+      "wechat": "Saya IQ {iqRange} {type}! Bisakah Anda mengalahkan saya?",
+      "whatsapp": "Saya IQ {iqRange} {type}! Bisakah Anda mengalahkan saya?",
+      "telegram": "Saya IQ {iqRange} {type}! Bisakah Anda mengalahkan saya?",
+      "line": "Saya IQ {iqRange} {type}! Bisakah Anda mengalahkan saya?"
+    },
+    "ui": {
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "Mulai Tes",
+      "adsenseTitle": "Area Iklan AdSense (antara judul-deskripsi)"
+    }
   }
 }

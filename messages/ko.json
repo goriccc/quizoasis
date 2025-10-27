@@ -2040,5 +2040,49 @@
     "linkCopied": "링크가 복사되었습니다!",
     "shareFailed": "공유 기능을 사용할 수 없습니다.",
     "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요."
+  },
+  "realIQTest": {
+    "startMessage": {
+      "line1": "진짜 IQ를 측정합니다!",
+      "line2": "당신의 지능 지수는 몇일까요?",
+      "line3": "멘사 수준의 천재? 평균? 우수?",
+      "line4": "당신의 정확한 IQ를 지금 바로 확인하세요!",
+      "line5": "정 못 풀겠으면 퀴즈 진행화면에 힌트 버튼을 누르세요!\n(하지만 가급적 누르지 말고 풀어보는 걸 추천해요)",
+      "line6": "집중하세요! 신중하게 답변하세요!\n단 5분이면 당신의 실제 IQ를 알 수 있습니다!"
+    },
+    "testCompleted": "테스트 완료!",
+    "viewResults": "분석 결과 보기",
+    "analyzeResults": "분석 결과 보기",
+    "score": "점수",
+    "scoreFormat": "{current}점 / {total}점",
+    "strengths": "강점",
+    "recommendations": "추천 분야",
+    "advice": "조언",
+    "hint": "힌트",
+    "close": "닫기",
+    "preparingQuestions": "문제를 준비하고 있습니다...",
+    "linkCopied": "링크가 복사되었습니다!",
+    "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+    "shareFailed": "공유 기능을 사용할 수 없습니다.",
+    "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+    "kakaoError": "카카오톡 공유 중 오류가 발생했습니다.",
+    "shareMessages": {
+      "default": "나는 IQ {iqRange} {type}! 너는 나보다 높을 수 있어?",
+      "kakao": "나는 IQ {iqRange} {type}! 너는 나보다 높을 수 있어?",
+      "wechat": "나는 IQ {iqRange} {type}! 너는 나보다 높을 수 있어?",
+      "whatsapp": "나는 IQ {iqRange} {type}! 너는 나보다 높을 수 있어?",
+      "telegram": "나는 IQ {iqRange} {type}! 너는 나보다 높을 수 있어?",
+      "line": "나는 IQ {iqRange} {type}! 너는 나보다 높을 수 있어?"
+    },
+    "ui": {
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "testButton": "테스트 하기",
+      "adsenseTitle": "AdSense 광고 영역 (타이틀-설명 사이)"
+    }
   }
 }

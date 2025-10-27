@@ -2156,6 +2156,50 @@
     "linkCopied": "Link copied!",
     "shareFailed": "Sharing feature is not available.",
     "wechatCopy": "Link copied! Paste it in WeChat to share."
+  },
+  "realIQTest": {
+    "startMessage": {
+      "line1": "Measure your real IQ!",
+      "line2": "What is your intelligence quotient?",
+      "line3": "Mensa-level genius? Average? Excellent?",
+      "line4": "Find out your exact IQ right now!",
+      "line5": "If you can't solve it, press the hint button on the quiz screen!\n(But I recommend trying without hints)",
+      "line6": "Focus! Answer carefully!\nYou can find out your real IQ in just 5 minutes!"
+    },
+    "testCompleted": "Test completed!",
+    "viewResults": "View results",
+    "analyzeResults": "View analysis results",
+    "score": "Score",
+    "scoreFormat": "{current} / {total}",
+    "strengths": "Strengths",
+    "recommendations": "Recommended fields",
+    "advice": "Advice",
+    "hint": "Hint",
+    "close": "Close",
+    "preparingQuestions": "Preparing questions...",
+    "linkCopied": "Link copied!",
+    "wechatCopy": "Link copied! Paste in WeChat to share.",
+    "shareFailed": "Sharing feature is not available.",
+    "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+    "kakaoError": "Error occurred during KakaoTalk sharing.",
+    "shareMessages": {
+      "default": "I'm IQ {iqRange} {type}! Can you beat me?",
+      "kakao": "I'm IQ {iqRange} {type}! Can you beat me?",
+      "wechat": "I'm IQ {iqRange} {type}! Can you beat me?",
+      "whatsapp": "I'm IQ {iqRange} {type}! Can you beat me?",
+      "telegram": "I'm IQ {iqRange} {type}! Can you beat me?",
+      "line": "I'm IQ {iqRange} {type}! Can you beat me?"
+    },
+    "ui": {
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "Take test",
+      "adsenseTitle": "AdSense ad area (between title and description)"
+    }
   }
 }
 

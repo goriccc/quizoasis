@@ -2159,5 +2159,49 @@
     "linkCopied": "連結已複製！",
     "shareFailed": "分享功能不可用。",
     "wechatCopy": "連結已複製！請在微信中貼上分享。"
+  },
+  "realIQTest": {
+    "startMessage": {
+      "line1": "測量你的實際IQ！",
+      "line2": "你的智商是多少？",
+      "line3": "門薩級別的天才？平均？優秀？",
+      "line4": "現在就來找出你的確切IQ！",
+      "line5": "實在解不出來，就按測驗進行畫面的提示按鈕！\n（但我建議盡量不用提示來解答）",
+      "line6": "集中注意力！仔細回答！\n只需5分鐘，你就能知道自己的實際IQ！"
+    },
+    "testCompleted": "測試完成！",
+    "viewResults": "查看分析結果",
+    "analyzeResults": "查看分析結果",
+    "score": "分數",
+    "scoreFormat": "{current}分 / {total}分",
+    "strengths": "優勢",
+    "recommendations": "推薦領域",
+    "advice": "建議",
+    "hint": "提示",
+    "close": "關閉",
+    "preparingQuestions": "正在準備問題...",
+    "linkCopied": "連結已複製！",
+    "wechatCopy": "連結已複製！請在微信中貼上分享。",
+    "shareFailed": "分享功能不可用。",
+    "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後重試。",
+    "kakaoError": "KakaoTalk分享時發生錯誤。",
+    "shareMessages": {
+      "default": "我是IQ {iqRange} {type}！你能超過我嗎？",
+      "kakao": "我是IQ {iqRange} {type}！你能超過我嗎？",
+      "wechat": "我是IQ {iqRange} {type}！你能超過我嗎？",
+      "whatsapp": "我是IQ {iqRange} {type}！你能超過我嗎？",
+      "telegram": "我是IQ {iqRange} {type}！你能超過我嗎？",
+      "line": "我是IQ {iqRange} {type}！你能超過我嗎？"
+    },
+    "ui": {
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "testButton": "開始測試",
+      "adsenseTitle": "AdSense廣告區域（標題-描述之間）"
+    }
   }
 }

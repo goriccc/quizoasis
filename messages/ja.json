@@ -2117,5 +2117,49 @@
     "linkCopied": "リンクがコピーされました！",
     "shareFailed": "共有機能を使用できません。",
     "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。"
+  },
+  "realIQTest": {
+    "startMessage": {
+      "line1": "本当のIQを測定します！",
+      "line2": "あなたの知能指数はいくつでしょうか？",
+      "line3": "メンサレベルの天才？平均？優秀？",
+      "line4": "あなたの正確なIQを今すぐ確認してください！",
+      "line5": "どうしても解けない場合は、クイズ進行画面のヒントボタンを押してください！\n（ただし、できるだけヒントを使わずに解くことをお勧めします）",
+      "line6": "集中してください！慎重に答えてください！\nたった5分で、あなたの実際のIQがわかります！"
+    },
+    "testCompleted": "テスト完了！",
+    "viewResults": "結果を見る",
+    "analyzeResults": "分析結果を見る",
+    "score": "点数",
+    "scoreFormat": "{current}点 / {total}点",
+    "strengths": "強み",
+    "recommendations": "おすすめ分野",
+    "advice": "アドバイス",
+    "hint": "ヒント",
+    "close": "閉じる",
+    "preparingQuestions": "問題を準備しています...",
+    "linkCopied": "リンクがコピーされました！",
+    "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+    "shareFailed": "共有機能を使用できません。",
+    "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+    "kakaoError": "カカオトーク共有中にエラーが発生しました。",
+    "shareMessages": {
+      "default": "私はIQ {iqRange} {type}！私より高い？",
+      "kakao": "私はIQ {iqRange} {type}！私より高い？",
+      "wechat": "私はIQ {iqRange} {type}！私より高い？",
+      "whatsapp": "私はIQ {iqRange} {type}！私より高い？",
+      "telegram": "私はIQ {iqRange} {type}！私より高い？",
+      "line": "私はIQ {iqRange} {type}！私より高い？"
+    },
+    "ui": {
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "testButton": "テストする",
+      "adsenseTitle": "AdSense広告エリア（タイトル-説明間）"
+    }
   }
 }
