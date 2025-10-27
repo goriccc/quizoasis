@@ -821,6 +821,70 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
+  "extremeQuizTest": {
+    "startMessage": {
+      "line1": "Câu đố siêu khó chỉ có top 3% nhân loại mới giải được!",
+      "line2": "Toán học, logic, suy luận, nhận dạng mẫu... Kiểm tra giới hạn của tất cả các lĩnh vực.",
+      "line3": "Được tạo thành từ những vấn đề mà 97% mọi người không thể trả lời đúng được một nửa.",
+      "line4": "Bạn có phải là thiên tài thực sự? Hãy xác nhận ngay bây giờ!",
+      "line5": "Nếu thực sự không giải được, hãy nhấn nút gợi ý trên màn hình câu đố!\n(Nhưng chúng tôi khuyên bạn nên cố gắng giải mà không cần gợi ý)",
+      "line6": "Chỉ trong 10 phút, bạn có thể biết năng lực thực sự của mình!",
+      "title": "Câu đố siêu khó chỉ 3% có thể giải được",
+      "subtitle": "Thử thách tối thượng chỉ có top 3% nhân loại mới giải được",
+      "difficulty": "Siêu khó",
+      "questions": "12 câu hỏi",
+      "top3": "Top 3%",
+      "description": "Câu đố này thực sự rất khó",
+      "warning": "Những vấn đề mà 97% mọi người không thể trả lời đúng được một nửa",
+      "challenge": "Bạn có phải là thiên tài thực sự?",
+      "ready": "Bạn đã sẵn sàng chưa? Hãy thử thách ngay bây giờ!",
+      "startButton": "Bắt đầu thử thách",
+      "playCount": "người đã thử thách",
+      "failRate": "Tỷ lệ thất bại",
+      "successRate": "Tỷ lệ thành công",
+      "recommendedProducts": "🧠 Sản phẩm luyện tập não bộ được đề xuất"
+    },
+    "ui": {
+      "question": "Câu hỏi",
+      "correct": "Đúng",
+      "analyzing": "Đang phân tích kết quả...",
+      "strengths": "Điểm mạnh",
+      "recommendations": "Lĩnh vực được đề xuất",
+      "advice": "Lời khuyên",
+      "shareResult": "Chia sẻ kết quả",
+      "share": "Chia sẻ",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "Sao chép liên kết",
+      "retake": "Thử thách lại",
+      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến",
+      "plays": "lần",
+      "showHint": "Hiện gợi ý",
+      "hideHint": "Ẩn gợi ý",
+      "hint": "Gợi ý",
+      "difficultyWarning": "Những vấn đề này thực sự rất khó. Hãy suy nghĩ cẩn thận!"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! 🧠 Tôi đã đạt được điểm số này trong câu đố siêu khó! Bạn có muốn thử thách không?",
+      "kakao": "Tôi là {type}! 🧠 Tôi đã đạt được điểm số này trong câu đố siêu khó! Bạn có muốn thử thách không?",
+      "wechat": "Tôi là {type}! 🧠 Tôi đã đạt được điểm số này trong câu đố siêu khó! Bạn có muốn thử thách không?",
+      "whatsapp": "Tôi là {type}! 🧠 Tôi đã đạt được điểm số này trong câu đố siêu khó! Bạn có muốn thử thách không?",
+      "telegram": "Tôi là {type}! 🧠 Tôi đã đạt được điểm số này trong câu đố siêu khó! Bạn có muốn thử thách không?",
+      "line": "Tôi là {type}! 🧠 Tôi đã đạt được điểm số này trong câu đố siêu khó! Bạn có muốn thử thách không?"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Hãy dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Ổn một mình vs Cần ai đó\"",
@@ -2142,7 +2206,7 @@
     "hint": "Gợi ý",
     "close": "Đóng",
     "score": "Điểm số",
-    "strengths": "Điểm mạnh",
+    "strengths": "Đặc điểm",
     "recommendations": "Hoạt động đề xuất",
     "advice": "Lời khuyên",
     "preparingQuestions": "Đang chuẩn bị câu hỏi...",

@@ -821,6 +821,70 @@
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
   },
+  "extremeQuizTest": {
+    "startMessage": {
+      "line1": "Kuis Kesulitan Ekstrem Hanya Top 3% Umat Manusia yang Bisa Menyelesaikan!",
+      "line2": "Matematika, logika, penalaran, pengenalan pola... Menguji batas semua bidang.",
+      "line3": "Terdiri dari masalah yang 97% orang bahkan tidak bisa menjawab setengahnya dengan benar.",
+      "line4": "Apakah Anda jenius sejati? Konfirmasi sekarang juga!",
+      "line5": "Jika benar-benar tidak bisa menyelesaikan, tekan tombol petunjuk di layar kuis!\n(Tapi kami sarankan untuk mencoba menyelesaikan tanpa petunjuk)",
+      "line6": "Hanya dalam 10 menit, Anda bisa mengetahui kemampuan asli Anda!",
+      "title": "Kuis Kesulitan Ekstrem Hanya 3% yang Bisa Menyelesaikan",
+      "subtitle": "Tantangan tertinggi yang hanya bisa diselesaikan oleh top 3% umat manusia",
+      "difficulty": "Ekstrem",
+      "questions": "12 Soal",
+      "top3": "Top 3%",
+      "description": "Kuis ini benar-benar sulit",
+      "warning": "Masalah yang 97% orang bahkan tidak bisa menjawab setengahnya dengan benar",
+      "challenge": "Apakah Anda jenius sejati?",
+      "ready": "Apakah Anda siap? Ambil tantangan sekarang!",
+      "startButton": "Mulai Tantangan",
+      "playCount": "orang telah menantang",
+      "failRate": "Tingkat Kegagalan",
+      "successRate": "Tingkat Keberhasilan",
+      "recommendedProducts": "🧠 Produk Latihan Otak yang Direkomendasikan"
+    },
+    "ui": {
+      "question": "Soal",
+      "correct": "Benar",
+      "analyzing": "Menganalisis hasil...",
+      "strengths": "Kekuatan",
+      "recommendations": "Bidang yang Direkomendasikan",
+      "advice": "Nasihat",
+      "shareResult": "Bagikan Hasil",
+      "share": "Bagikan",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "Salin Tautan",
+      "retake": "Tantang Lagi",
+      "similarTests": "🎯 Top 5 Tes Serupa",
+      "popularTests": "🔥 Top 5 Tes Populer",
+      "plays": "kali",
+      "showHint": "Tampilkan Petunjuk",
+      "hideHint": "Sembunyikan Petunjuk",
+      "hint": "Petunjuk",
+      "difficultyWarning": "Masalah-masalah ini benar-benar sulit. Pikirkan dengan hati-hati!"
+    },
+    "shareMessages": {
+      "default": "Saya {type}! 🧠 Saya mendapat skor ini dalam kuis kesulitan ekstrem! Mau tantang diri sendiri?",
+      "kakao": "Saya {type}! 🧠 Saya mendapat skor ini dalam kuis kesulitan ekstrem! Mau tantang diri sendiri?",
+      "wechat": "Saya {type}! 🧠 Saya mendapat skor ini dalam kuis kesulitan ekstrem! Mau tantang diri sendiri?",
+      "whatsapp": "Saya {type}! 🧠 Saya mendapat skor ini dalam kuis kesulitan ekstrem! Mau tantang diri sendiri?",
+      "telegram": "Saya {type}! 🧠 Saya mendapat skor ini dalam kuis kesulitan ekstrem! Mau tantang diri sendiri?",
+      "line": "Saya {type}! 🧠 Saya mendapat skor ini dalam kuis kesulitan ekstrem! Mau tantang diri sendiri?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Baik-baik saja sendirian vs Perlu seseorang\"",
@@ -2142,7 +2206,7 @@
     "hint": "Petunjuk",
     "close": "Tutup",
     "score": "Skor",
-    "strengths": "Kekuatan",
+    "strengths": "Karakteristik",
     "recommendations": "Aktivitas yang Direkomendasikan",
     "advice": "Saran",
     "preparingQuestions": "Mempersiapkan pertanyaan...",

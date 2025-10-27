@@ -821,6 +821,56 @@
       "kakaoError": "An error occurred while sharing to KakaoTalk."
     }
   },
+  "extremeQuizTest": {
+    "startMessage": {
+      "line1": "Extreme difficulty quiz that only the top 3% of humanity can solve!",
+      "line2": "Tests the limits of mathematics, logic, reasoning, pattern recognition... all areas.",
+      "line3": "Composed of problems that 97% of people can't even get half right.",
+      "line4": "Are you a true genius? Find out right now!",
+      "line5": "If you can't solve it, press the hint button on the quiz screen!\n(But we recommend trying to solve it without hints)",
+      "line6": "In just 10 minutes, you can know your true ability!"
+    },
+    "ui": {
+      "question": "Question",
+      "correct": "Correct",
+      "analyzing": "Analyzing results...",
+      "strengths": "Strengths",
+      "recommendations": "Recommended Fields",
+      "advice": "Advice",
+      "shareResult": "Share Result",
+      "share": "Share",
+      "kakao": "KakaoTalk",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "Copy Link",
+      "retake": "Retake Challenge",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "popularTests": "🔥 Top 5 Popular Tests",
+      "plays": "plays",
+      "showHint": "Show Hint",
+      "hideHint": "Hide Hint",
+      "hint": "Hint",
+      "difficultyWarning": "These problems are really difficult. Think carefully!"
+    },
+    "shareMessages": {
+      "default": "I am {type}! 🧠 I got this score on the extreme difficulty quiz! Want to challenge yourself?",
+      "kakao": "I am {type}! 🧠 I got this score on the extreme difficulty quiz! Want to challenge yourself?",
+      "wechat": "I am {type}! 🧠 I got this score on the extreme difficulty quiz! Want to challenge yourself?",
+      "whatsapp": "I am {type}! 🧠 I got this score on the extreme difficulty quiz! Want to challenge yourself?",
+      "telegram": "I am {type}! 🧠 I got this score on the extreme difficulty quiz! Want to challenge yourself?",
+      "line": "I am {type}! 🧠 I got this score on the extreme difficulty quiz! Want to challenge yourself?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Okay alone vs Need someone\"",
@@ -2145,7 +2195,7 @@
     "hint": "Hint",
     "close": "Close",
     "score": "Score",
-    "strengths": "Strengths",
+    "strengths": "Characteristics",
     "recommendations": "Recommended Activities",
     "advice": "Advice",
     "preparingQuestions": "Preparing questions...",

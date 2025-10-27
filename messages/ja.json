@@ -822,6 +822,70 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
+  "extremeQuizTest": {
+    "startMessage": {
+      "line1": "人類上位3%しか解けない超難問クイズ！",
+      "line2": "数学、論理、推理、パターン認識...すべての領域の極限を試します。",
+      "line3": "97%の人が半分も正解できない問題で構成されています。",
+      "line4": "あなたは真の天才ですか？今すぐ確認してみてください！",
+      "line5": "どうしても解けない場合は、クイズ進行画面のヒントボタンを押してください！\n（ただし、できるだけヒントを使わずに解くことをお勧めします）",
+      "line6": "たった10分で、あなたの本当の実力を知ることができます！",
+      "title": "3%しか解けない超難問クイズ",
+      "subtitle": "人類上位3%しか解決できない究極の挑戦",
+      "difficulty": "超難問",
+      "questions": "12問",
+      "top3": "上位3%",
+      "description": "このクイズは本当に難しいです",
+      "warning": "97%の人が半分も正解できない問題です",
+      "challenge": "あなたは真の天才ですか？",
+      "ready": "準備はできましたか？今すぐ挑戦してください！",
+      "startButton": "挑戦開始",
+      "playCount": "人が挑戦しました",
+      "failRate": "失敗率",
+      "successRate": "成功率",
+      "recommendedProducts": "🧠 脳トレーニングおすすめ商品"
+    },
+    "ui": {
+      "question": "問題",
+      "correct": "正解",
+      "analyzing": "結果分析中...",
+      "strengths": "強み",
+      "recommendations": "おすすめ分野",
+      "advice": "アドバイス",
+      "shareResult": "結果をシェア",
+      "share": "シェア",
+      "kakao": "カカオトーク",
+      "wechat": "WeChat",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "リンクコピー",
+      "retake": "再挑戦",
+      "similarTests": "🎯 類似テストおすすめトップ5",
+      "popularTests": "🔥 人気テストおすすめトップ5",
+      "plays": "回",
+      "showHint": "ヒント表示",
+      "hideHint": "ヒント非表示",
+      "hint": "ヒント",
+      "difficultyWarning": "これらの問題は本当に難しいです。慎重に考えてください！"
+    },
+    "shareMessages": {
+      "default": "私は{type}！🧠 超難問クイズでこのスコアを獲得！あなたも挑戦してみませんか？",
+      "kakao": "私は{type}！🧠 超難問クイズでこのスコアを獲得！あなたも挑戦してみませんか？",
+      "wechat": "私は{type}！🧠 超難問クイズでこのスコアを獲得！あなたも挑戦してみませんか？",
+      "whatsapp": "私は{type}！🧠 超難問クイズでこのスコアを獲得！あなたも挑戦してみませんか？",
+      "telegram": "私は{type}！🧠 超難問クイズでこのスコアを獲得！あなたも挑戦してみませんか？",
+      "line": "私は{type}！🧠 超難問クイズでこのスコアを獲得！あなたも挑戦してみませんか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "「一人でも大丈夫 vs 誰かが必要」",
@@ -2106,7 +2170,7 @@
     "hint": "ヒント",
     "close": "閉じる",
     "score": "スコア",
-    "strengths": "強み",
+    "strengths": "特徴",
     "recommendations": "おすすめ活動",
     "advice": "アドバイス",
     "preparingQuestions": "質問を準備しています...",

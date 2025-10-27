@@ -960,6 +960,56 @@
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
   },
+  "extremeQuizTest": {
+    "startMessage": {
+      "line1": "인류 상위 3%만이 풀 수 있는 초고난도 퀴즈!",
+      "line2": "수학, 논리, 추론, 패턴 인식... 모든 영역의 극한을 시험합니다.",
+      "line3": "97%의 사람들이 절반도 못 맞히는 문제들로 구성되어 있습니다.",
+      "line4": "당신은 진정한 천재인가요? 지금 바로 확인해보세요!",
+      "line5": "정 못 풀겠으면 퀴즈 진행화면에 힌트 버튼을 누르세요!\n(하지만 가급적 누르지 말고 풀어보는 걸 추천해요)",
+      "line6": "단 10분이면 당신의 진짜 실력을 알 수 있습니다!"
+    },
+    "ui": {
+      "question": "문제",
+      "correct": "정답",
+      "analyzing": "결과 분석 중...",
+      "strengths": "강점",
+      "recommendations": "추천 분야",
+      "advice": "조언",
+      "shareResult": "결과 공유하기",
+      "share": "공유",
+      "kakao": "카카오톡",
+      "wechat": "위챗",
+      "whatsapp": "왓츠앱",
+      "telegram": "텔레그램",
+      "line": "라인",
+      "linkCopy": "링크 복사",
+      "retake": "다시 도전",
+      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTests": "🔥 요즘 인기 테스트 추천 톱5",
+      "plays": "회",
+      "showHint": "힌트 보기",
+      "hideHint": "힌트 숨기기",
+      "hint": "힌트",
+      "difficultyWarning": "이 문제들은 정말 어렵습니다. 신중하게 생각해보세요!"
+    },
+    "shareMessages": {
+      "default": "나는 {type}! 🧠 초고난도 퀴즈에서 이 점수를 받았어! 너도 도전해볼래?",
+      "kakao": "나는 {type}! 🧠 초고난도 퀴즈에서 이 점수를 받았어! 너도 도전해볼래?",
+      "wechat": "나는 {type}! 🧠 초고난도 퀴즈에서 이 점수를 받았어! 너도 도전해볼래?",
+      "whatsapp": "나는 {type}! 🧠 초고난도 퀴즈에서 이 점수를 받았어! 너도 도전해볼래?",
+      "telegram": "나는 {type}! 🧠 초고난도 퀴즈에서 이 점수를 받았어! 너도 도전해볼래?",
+      "line": "나는 {type}! 🧠 초고난도 퀴즈에서 이 점수를 받았어! 너도 도전해볼래?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"혼자서도 괜찮아 vs 누군가 필요해\"",
@@ -2029,7 +2079,7 @@
     "hint": "힌트",
     "close": "닫기",
     "score": "점수",
-    "strengths": "강점",
+    "strengths": "특징",
     "recommendations": "추천 활동",
     "advice": "조언",
     "preparingQuestions": "질문을 준비하고 있습니다...",

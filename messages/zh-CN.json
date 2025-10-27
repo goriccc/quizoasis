@@ -821,6 +821,70 @@
       "kakaoError": "KakaoTalk分享时发生错误。"
     }
   },
+  "extremeQuizTest": {
+    "startMessage": {
+      "line1": "只有人类前3%能解决的超高难度测验！",
+      "line2": "数学、逻辑、推理、模式识别...测试所有领域的极限。",
+      "line3": "由97%的人连一半都答不出的问题组成。",
+      "line4": "你是真正的天才吗？现在就来确认一下吧！",
+      "line5": "实在解不出来，就按测验进行画面的提示按钮！\n（但我们建议尽量不用提示来解答）",
+      "line6": "只需10分钟，你就能知道自己的真正实力！",
+      "title": "只有3%能解决的超高难度测验",
+      "subtitle": "只有人类前3%能解决的终极挑战",
+      "difficulty": "超高难度",
+      "questions": "12题",
+      "top3": "前3%",
+      "description": "这个测验真的很难",
+      "warning": "97%的人连一半都答不出的问题",
+      "challenge": "你是真正的天才吗？",
+      "ready": "准备好了吗？现在就来挑战吧！",
+      "startButton": "开始挑战",
+      "playCount": "人已挑战",
+      "failRate": "失败率",
+      "successRate": "成功率",
+      "recommendedProducts": "🧠 推荐大脑训练产品"
+    },
+    "ui": {
+      "question": "问题",
+      "correct": "正确",
+      "analyzing": "分析结果中...",
+      "strengths": "优势",
+      "recommendations": "推荐领域",
+      "advice": "建议",
+      "shareResult": "分享结果",
+      "share": "分享",
+      "kakao": "KakaoTalk",
+      "wechat": "微信",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "line": "Line",
+      "linkCopy": "复制链接",
+      "retake": "重新挑战",
+      "similarTests": "🎯 推荐类似测试前5",
+      "popularTests": "🔥 推荐热门测试前5",
+      "plays": "次",
+      "showHint": "显示提示",
+      "hideHint": "隐藏提示",
+      "hint": "提示",
+      "difficultyWarning": "这些问题真的很难。请仔细思考！"
+    },
+    "shareMessages": {
+      "default": "我是{type}！🧠 在超高难度测验中获得了这个分数！你也来挑战一下吧？",
+      "kakao": "我是{type}！🧠 在超高难度测验中获得了这个分数！你也来挑战一下吧？",
+      "wechat": "我是{type}！🧠 在超高难度测验中获得了这个分数！你也来挑战一下吧？",
+      "whatsapp": "我是{type}！🧠 在超高难度测验中获得了这个分数！你也来挑战一下吧？",
+      "telegram": "我是{type}！🧠 在超高难度测验中获得了这个分数！你也来挑战一下吧？",
+      "line": "我是{type}！🧠 在超高难度测验中获得了这个分数！你也来挑战一下吧？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"独自也可以 vs 需要有人\"",
@@ -2093,7 +2157,7 @@
     "hint": "提示",
     "close": "关闭",
     "score": "分数",
-    "strengths": "优势",
+    "strengths": "特点",
     "recommendations": "推荐活动",
     "advice": "建议",
     "preparingQuestions": "正在准备问题...",
