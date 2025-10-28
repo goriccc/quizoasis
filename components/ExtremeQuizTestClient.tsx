@@ -114,7 +114,12 @@ export default function ExtremeQuizTestClient({
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
               
-              return testTags.some((tag: string) => currentTestTags.includes(tag));
+              // 정확한 태그 매칭 (대소문자 무시)
+              return testTags.some((tag: string) => 
+                currentTestTags.some((currentTag: string) => 
+                  tag.toLowerCase() === currentTag.toLowerCase()
+                )
+              );
             })
             .sort((a: any, b: any) => b.play_count - a.play_count)
             .slice(0, 5)

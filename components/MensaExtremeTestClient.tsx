@@ -111,22 +111,6 @@ export default function MensaExtremeTestClient({
       try {
         const latestTests = await getTests();
         
-        if (latestTests && latestTests.length > 0) {
-          const testsList = latestTests
-            .filter((t: any) => t.slug !== slug) // 자기 자신 제외
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }));
-          
-          setSimilarTestsState(testsList.slice(0, 5));
-          setPopularTestsState(testsList.slice(5, 10));
-          return;
-        }
-
         // 현재 테스트와 유사한 테스트 찾기
         const currentTest = latestTests.find((t: any) => t.slug === slug);
         if (currentTest) {
@@ -140,7 +124,12 @@ export default function MensaExtremeTestClient({
               const testTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
-              return testTags.some((tag: string) => currentTestTags.includes(tag));
+              // 정확한 태그 매칭 (대소문자 무시)
+              return testTags.some((tag: string) => 
+                currentTestTags.some((currentTag: string) => 
+                  tag.toLowerCase() === currentTag.toLowerCase()
+                )
+              );
             })
             .map((t: any) => ({
               id: t.id,
@@ -149,10 +138,23 @@ export default function MensaExtremeTestClient({
               thumbnail: t.thumbnail,
               playCount: t.play_count
             }))
-            .sort((a: any, b: any) => b.playCount - a.playCount);
+            .sort((a: any, b: any) => b.playCount - a.playCount)
+            .slice(0, 5);
 
-          setSimilarTestsState(similarTestsList.slice(0, 5));
-          setPopularTestsState(similarTestsList.slice(5, 10));
+          const popularTestsList = latestTests
+            .filter((t: any) => t.slug !== slug)
+            .sort((a: any, b: any) => (b.play_count || 0) - (a.play_count || 0))
+            .slice(0, 5)
+            .map((t: any) => ({
+              id: t.id,
+              slug: t.slug,
+              title: t.title[locale] || t.title.ko,
+              thumbnail: t.thumbnail,
+              playCount: t.play_count
+            }));
+
+          setSimilarTestsState(similarTestsList);
+          setPopularTestsState(popularTestsList);
         }
       } catch (error) {
         console.error('테스트 로드 실패:', error);

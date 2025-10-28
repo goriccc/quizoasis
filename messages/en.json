@@ -2416,6 +2416,80 @@
       "faceDetectionTimeout": "Face detection timeout (exceeded 8 seconds)",
       "modelLoadFailed": "Unable to load model"
     }
+  },
+  "faceLoveFortuneTest": {
+    "startMessage": {
+      "line1": "Will love find you this year?",
+      "line2": "Crush? Flirting? Dating? Marriage?",
+      "line3": "We read your love fortune this year from your face.",
+      "line4": "When and where will you meet your destiny?",
+      "line5": "What style will that person be?\nWhat period should you be careful?",
+      "line6": "We accurately predict your love fortune this year!"
+    },
+    "ui": {
+      "startTest": "Read Love Fortune",
+      "faceReadingTitle": "My Love Fortune This Year by Face Reading",
+      "faceReadingDescription": "We read your love fortune this year from your face\n(Photos are not stored on the server, so you can rest assured)",
+      "takePhoto": "Take Photo",
+      "selectPhoto": "Select Photo",
+      "analyzing": "Analyzing love fortune",
+      "strengths": "Features",
+      "recommendations": "Recommended Activities",
+      "advice": "Advice",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "totalParticipants": "{count} participants",
+      "shareWithFriends": "Try with Friends",
+      "testCompleted": "Test completed!",
+      "viewResults": "View Analysis Results",
+      "yourResult": "Your result is",
+      "shareResult": "Share Result",
+      "whenFortune": "When will you meet your destiny",
+      "styleFortune": "What style will that person be",
+      "warningFortune": "Period to be careful",
+      "personalityAnalysis": "Personality Analysis",
+      "selectPhotoPlaceholder": "Please select a photo",
+      "proceedingWithPhoto": "Checking if face is detected",
+      "faceNotDetected": "Face not detected",
+      "faceNotDetectedDescription": "Please upload a photo of a person facing forward",
+      "tips": "Tips",
+      "tipCenter": "Take photo with face centered on screen",
+      "tipLighting": "Take photo in sufficient lighting",
+      "tipNoObstruction": "Make sure face is not covered",
+      "tipClear": "Use clear photo",
+      "selectPhotoAgain": "Select Photo Again",
+      "selectedPhoto": "Selected photo",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "cancel": "Cancel",
+      "retake": "Retake",
+      "viewResult": "View Result",
+      "otherTests": "View Other Tests"
+    },
+    "shareMessages": {
+      "default": "My Love Fortune This Year by Face Reading! I am {type}! What's your love fortune this year? 💕✨",
+      "kakao": "My Love Fortune This Year by Face Reading! I am {type}! What's your love fortune this year? 💕✨",
+      "wechat": "My Love Fortune This Year by Face Reading! I am {type}! What's your love fortune this year? 💕✨",
+      "whatsapp": "My Love Fortune This Year by Face Reading! I am {type}! What's your love fortune this year? 💕✨",
+      "telegram": "My Love Fortune This Year by Face Reading! I am {type}! What's your love fortune this year? 💕✨",
+      "line": "My Love Fortune This Year by Face Reading! I am {type}! What's your love fortune this year? 💕✨"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing.",
+      "cameraError": "Cannot access camera. Please select a file.",
+      "faceDetectionError": "Face not detected. Please take a clearer face photo.",
+      "analysisError": "Error occurred during face analysis. Please try again.",
+      "faceDetectionTimeout": "Face detection timeout (exceeded 8 seconds)",
+      "modelLoadFailed": "Unable to load model"
+    }
   }
 }
 

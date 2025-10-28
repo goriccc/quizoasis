@@ -138,19 +138,7 @@ export default function RealIQTestClient({
       try {
         const latestTests = await getTests();
         
-        if (latestTests && latestTests.length > 0) {
-          const testsList = latestTests
-            .filter((t: any) => t.slug !== slug) // 자기 자신 제외
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }));
-          
-          setSimilarTestsState(testsList.slice(0, 5));
-          setPopularTestsState(testsList.slice(5, 10));
+        if (!latestTests || latestTests.length === 0) {
           return;
         }
 
@@ -168,10 +156,10 @@ export default function RealIQTestClient({
                 ? t.tags[locale] || t.tags.ko || []
                 : t.tags || [];
               
+              // 정확한 태그 매칭 (대소문자 무시)
               return testTags.some((tag: string) => 
                 currentTestTags.some((currentTag: string) => 
-                  tag.toLowerCase().includes(currentTag.toLowerCase()) || 
-                  currentTag.toLowerCase().includes(tag.toLowerCase())
+                  tag.toLowerCase() === currentTag.toLowerCase()
                 )
               );
             })
@@ -185,7 +173,20 @@ export default function RealIQTestClient({
             .sort((a: any, b: any) => (b.playCount || 0) - (a.playCount || 0))
             .slice(0, 5);
 
+          const popularTestsList = latestTests
+            .filter((t: any) => t.slug !== slug)
+            .sort((a: any, b: any) => (b.play_count || 0) - (a.play_count || 0))
+            .slice(0, 5)
+            .map((t: any) => ({
+              id: t.id,
+              slug: t.slug,
+              title: t.title[locale] || t.title.ko,
+              thumbnail: t.thumbnail,
+              playCount: t.play_count
+            }));
+
           setSimilarTestsState(similarTestsList);
+          setPopularTestsState(popularTestsList);
         }
       } catch (error) {
         console.error('테스트 로드 실패:', error);

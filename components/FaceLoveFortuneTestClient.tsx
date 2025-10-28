@@ -11,7 +11,7 @@ import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 import ProductRecommendations from '@/components/ProductRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
-import { FaceReadingResult, calculateFaceReadingResult, FaceReadingTestClientProps } from '@/lib/faceReadingData';
+import { FaceLoveFortuneResult, calculateFaceLoveFortuneResult, FaceLoveFortuneTestClientProps } from '@/lib/faceLoveFortuneData';
 
 // TensorFlow.js 및 Face-api.js 타입 정의
 declare global {
@@ -24,7 +24,7 @@ declare global {
   }
 }
 
-export default function FaceReadingTestClient({ 
+export default function FaceLoveFortuneTestClient({ 
   locale, 
   slug, 
   title, 
@@ -32,12 +32,12 @@ export default function FaceReadingTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: FaceReadingTestClientProps) {
-  const t = useTranslations('faceReadingTest');
+}: FaceLoveFortuneTestClientProps) {
+  const t = useTranslations('faceLoveFortuneTest');
   const tGlobal = useTranslations();
   const [started, setStarted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<FaceReadingResult | null>(null);
+  const [result, setResult] = useState<FaceLoveFortuneResult | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [capturedImage, setCapturedImage] = useState<string | null>(null);
   const [faceDetected, setFaceDetected] = useState(false);
@@ -164,7 +164,7 @@ export default function FaceReadingTestClient({
       const loadTests = async () => {
         try {
           // 유사한 테스트 로드 (태그 기반)
-          const similarResponse = await fetch(`/api/tests/similar?excludeSlug=${slug}&locale=${locale}&tags=얼굴`);
+          const similarResponse = await fetch(`/api/tests/similar?excludeSlug=${slug}&locale=${locale}&tags=얼굴,연애`);
           if (similarResponse.ok) {
             const similarData = await similarResponse.json();
             console.log('유사한 테스트 결과:', similarData.tests);
@@ -343,7 +343,7 @@ export default function FaceReadingTestClient({
               setFaceQuality(quality);
               
               // 결과 계산
-              const faceResult = calculateFaceReadingResult(true, quality);
+              const faceResult = calculateFaceLoveFortuneResult(true, quality);
               setResult(faceResult);
               // 로딩 스피너 화면으로 전환
               setShowLoadingSpinner(true);
@@ -360,7 +360,7 @@ export default function FaceReadingTestClient({
             // Face-api.js가 로드되지 않은 경우 기본 결과
             setFaceDetected(true);
             setFaceQuality(70);
-            const faceResult = calculateFaceReadingResult(true, 70);
+            const faceResult = calculateFaceLoveFortuneResult(true, 70);
             setResult(faceResult);
             // 로딩 스피너 화면으로 전환
             setShowLoadingSpinner(true);
@@ -525,16 +525,31 @@ export default function FaceReadingTestClient({
     const resultTitle = result?.title?.[locale as keyof typeof result.title] || result?.title?.ko || '';
     const descriptions = result?.description?.[locale as keyof typeof result.description] || result?.description?.ko || [];
     const resultDescription = Array.isArray(descriptions) ? descriptions[Math.floor(Math.random() * descriptions.length)] : descriptions;
-    const resultStrengths = result?.strengths?.[locale as keyof typeof result.strengths] || result?.strengths?.ko || [];
-    const resultRecommendations = result?.recommendations?.[locale as keyof typeof result.recommendations] || result?.recommendations?.ko || [];
+    
+    // 특징(strengths)과 추천 활동(recommendations)을 10개 중 랜덤하게 3개만 선택
+    const allStrengths = result?.strengths?.[locale as keyof typeof result.strengths] || result?.strengths?.ko || [];
+    const allRecommendations = result?.recommendations?.[locale as keyof typeof result.recommendations] || result?.recommendations?.ko || [];
+    
+    // 배열을 섞고 앞에서 3개만 선택하는 함수
+    const shuffleAndPick = <T,>(array: T[], count: number): T[] => {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled.slice(0, Math.min(count, shuffled.length));
+    };
+    
+    const resultStrengths = shuffleAndPick(allStrengths, 3);
+    const resultRecommendations = shuffleAndPick(allRecommendations, 3);
     const advices = result?.advice?.[locale as keyof typeof result.advice] || result?.advice?.ko || [];
     const resultAdvice = Array.isArray(advices) ? advices[Math.floor(Math.random() * advices.length)] : advices;
-    const wealthFortunes = result?.fortune?.wealth?.[locale as keyof typeof result.fortune.wealth] || result?.fortune?.wealth?.ko || [];
-    const loveFortunes = result?.fortune?.love?.[locale as keyof typeof result.fortune.love] || result?.fortune?.love?.ko || [];
-    const successFortunes = result?.fortune?.success?.[locale as keyof typeof result.fortune.success] || result?.fortune?.success?.ko || [];
-    const wealthFortune = Array.isArray(wealthFortunes) ? wealthFortunes[Math.floor(Math.random() * wealthFortunes.length)] : wealthFortunes;
-    const loveFortune = Array.isArray(loveFortunes) ? loveFortunes[Math.floor(Math.random() * loveFortunes.length)] : loveFortunes;
-    const successFortune = Array.isArray(successFortunes) ? successFortunes[Math.floor(Math.random() * successFortunes.length)] : successFortunes;
+    const whenFortunes = result?.fortune?.when?.[locale as keyof typeof result.fortune.when] || result?.fortune?.when?.ko || [];
+    const styleFortunes = result?.fortune?.style?.[locale as keyof typeof result.fortune.style] || result?.fortune?.style?.ko || [];
+    const warningFortunes = result?.fortune?.warning?.[locale as keyof typeof result.fortune.warning] || result?.fortune?.warning?.ko || [];
+    const whenFortune = Array.isArray(whenFortunes) ? whenFortunes[Math.floor(Math.random() * whenFortunes.length)] : whenFortunes;
+    const styleFortune = Array.isArray(styleFortunes) ? styleFortunes[Math.floor(Math.random() * styleFortunes.length)] : styleFortunes;
+    const warningFortune = Array.isArray(warningFortunes) ? warningFortunes[Math.floor(Math.random() * warningFortunes.length)] : warningFortunes;
     
     return {
       resultTitle,
@@ -542,9 +557,9 @@ export default function FaceReadingTestClient({
       resultStrengths,
       resultRecommendations,
       resultAdvice,
-      wealthFortune,
-      loveFortune,
-      successFortune
+      whenFortune,
+      styleFortune,
+      warningFortune
     };
   }, [result, locale]);
 
@@ -653,7 +668,7 @@ export default function FaceReadingTestClient({
 
   // 결과 화면
   if (showResult && result && resultData) {
-    const { resultTitle, resultDescription, resultStrengths, resultRecommendations, resultAdvice, wealthFortune, loveFortune, successFortune } = resultData;
+    const { resultTitle, resultDescription, resultStrengths, resultRecommendations, resultAdvice, whenFortune, styleFortune, warningFortune } = resultData;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -712,28 +727,28 @@ export default function FaceReadingTestClient({
               <div className="space-y-4">
                 <div>
                   <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
-                    💰 {t('ui.wealthFortune')}
+                    📅 {t('ui.whenFortune')}
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed text-left">
-                    {wealthFortune}
+                    {whenFortune}
                   </p>
                 </div>
                 
                 <div>
                   <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
-                    💕 {t('ui.loveFortune')}
+                    💕 {t('ui.styleFortune')}
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed text-left">
-                    {loveFortune}
+                    {styleFortune}
                   </p>
                 </div>
                 
                 <div>
                   <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
-                    🚀 {t('ui.successFortune')}
+                    ⚠️ {t('ui.warningFortune')}
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed text-left">
-                    {successFortune}
+                    {warningFortune}
                   </p>
                 </div>
               </div>
@@ -1164,7 +1179,7 @@ export default function FaceReadingTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'I_offe_ palm_reading_services.jpg')}
+              src={getThumbnailUrl(thumbnail || 'Face_Love_Fortune.jpg')}
               alt={title}
               fill
               className="object-cover"
