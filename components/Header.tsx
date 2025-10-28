@@ -44,7 +44,7 @@ export default function Header() {
       data-font-force="true"
     >
       <div className="max-w-7xl mx-auto px-1 sm:px-4 h-16 flex items-center justify-between">
-        {/* 좌측: 햄버거 메뉴 + 검색 + 언어 */}
+        {/* 좌측: 햄버거 메뉴 + 검색 */}
         <div className="flex items-center" style={{ gap: '5px' }}>
           {/* 햄버거 메뉴 */}
           <button
@@ -52,7 +52,7 @@ export default function Header() {
             className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label="Menu"
           >
-            <Menu size={24} />
+            <Menu width={24} height={24} />
           </button>
 
           {/* 검색 아이콘 */}
@@ -60,11 +60,39 @@ export default function Header() {
             onClick={() => setIsSearchOpen(!isSearchOpen)}
             className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label={t('search')}
+            style={{ transform: 'translateX(4px)' }}
           >
-            <Search size={24} />
+            <Search width={24} height={24} />
           </button>
+        </div>
 
-          {/* 언어 선택 (개발용 - 런칭 시 제거 가능) */}
+        {/* 중앙: 타이틀 */}
+        <Link href={`/${locale}`} className="absolute left-1/2 transform -translate-x-1/2">
+          <h1 
+            className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+            style={{ 
+              fontFamily: "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+              textRendering: 'optimizeLegibility',
+              WebkitFontSmoothing: 'antialiased',
+              MozOsxFontSmoothing: 'grayscale'
+            }}
+          >
+            {t('title')}
+          </h1>
+        </Link>
+
+        {/* 우측: 얼굴 텍스트 + 언어 선택 */}
+        <div className="flex items-center" style={{ gap: '5px' }}>
+          {/* 얼굴 텍스트 */}
+          <Link
+            href={`/${locale}/face`}
+            className="text-sm font-medium hover:text-primary-600 transition-colors"
+            style={{ transform: 'translateX(-4px)' }}
+          >
+            {t('face')}
+          </Link>
+
+          {/* 언어 선택 */}
           <div className="relative">
             <button
               onClick={(e) => {
@@ -73,14 +101,15 @@ export default function Header() {
               }}
               className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
               aria-label="Language"
+              style={{ transform: 'translateY(2px)' }}
             >
-              <Globe size={24} />
+              <Globe width={24} height={24} />
             </button>
 
             {/* 언어 드롭다운 */}
             {isLanguageOpen && (
               <div 
-                className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg overflow-hidden min-w-[160px] border border-gray-200 z-50"
+                className="absolute top-full right-0 mt-2 bg-white shadow-lg rounded-lg overflow-hidden min-w-[160px] border border-gray-200 z-50"
                 onClick={(e) => e.stopPropagation()}
                 style={{ 
                   fontFamily: "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -112,37 +141,6 @@ export default function Header() {
               </div>
             )}
           </div>
-        </div>
-
-        {/* 중앙: 타이틀 */}
-        <Link href={`/${locale}`} className="absolute left-1/2 transform -translate-x-1/2">
-          <h1 
-            className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent"
-            style={{ 
-              fontFamily: "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-              textRendering: 'optimizeLegibility',
-              WebkitFontSmoothing: 'antialiased',
-              MozOsxFontSmoothing: 'grayscale'
-            }}
-          >
-            {t('title')}
-          </h1>
-        </Link>
-
-        {/* 우측: 네비게이션 */}
-        <div className="flex items-center gap-4 translate-y-1">
-          <Link
-            href={`/${locale}/fortune`}
-            className="text-sm font-medium hover:text-primary-600 transition-colors"
-          >
-            {t('fortune')}
-          </Link>
-          <Link
-            href={`/${locale}/face`}
-            className="text-sm font-medium hover:text-primary-600 transition-colors"
-          >
-            {t('face')}
-          </Link>
         </div>
       </div>
 
