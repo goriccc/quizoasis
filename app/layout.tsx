@@ -131,6 +131,12 @@ export default function RootLayout({
         crossOrigin="anonymous"
       />
       
+      {/* Face-api.js and TensorFlow.js */}
+      <Script
+        src="/face-api.js"
+        strategy="afterInteractive"
+      />
+      
       {/* Kakao SDK */}
       <Script
         src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
