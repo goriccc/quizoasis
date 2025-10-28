@@ -142,6 +142,8 @@ export default function FaceReadingTestClient({
   const handleStartTest = async () => {
     setStarted(true);
     await incrementPlayCount(slug);
+    // 진행 화면 맨 처음으로 스크롤
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // 이미지 소스 선택 (모바일에서만)
