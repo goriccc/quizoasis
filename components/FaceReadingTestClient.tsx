@@ -55,6 +55,7 @@ export default function FaceReadingTestClient({
   const [showImagePreview, setShowImagePreview] = useState(false);
   
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const cameraInputRef = useRef<HTMLInputElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -147,7 +148,8 @@ export default function FaceReadingTestClient({
   const handleImageSourceSelect = (source: 'camera' | 'gallery') => {
     setShowImageSourceModal(false);
     if (source === 'camera') {
-      startCamera();
+      // 모바일에서는 capture 속성이 있는 input을 클릭하여 네이티브 카메라 앱 열기
+      cameraInputRef.current?.click();
     } else {
       fileInputRef.current?.click();
     }
@@ -971,10 +973,21 @@ export default function FaceReadingTestClient({
                   </div>
                 </div>
                 
+            {/* 파일 입력 (갤러리용) */}
             <input
               ref={fileInputRef}
               type="file"
               accept="image/*"
+              onChange={handleFileSelect}
+              className="hidden"
+            />
+
+            {/* 카메라 입력 (모바일 카메라 촬영용) */}
+            <input
+              ref={cameraInputRef}
+              type="file"
+              accept="image/*"
+              capture="user"
               onChange={handleFileSelect}
               className="hidden"
             />
