@@ -1,11 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { Menu, Search, Globe, X } from 'lucide-react';
 import { locales, localeNames, Locale } from '@/i18n';
 import Link from 'next/link';
+import Image from 'next/image';
+import { getThumbnailUrl } from '@/lib/utils';
 
 export default function Header() {
   const t = useTranslations('header');
@@ -17,6 +19,8 @@ export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [searchResults, setSearchResults] = useState<any[]>([]);
 
   // 언어 변경
   const changeLanguage = (newLocale: Locale) => {
@@ -28,9 +32,34 @@ export default function Header() {
   // 검색 처리
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: 검색 기능 구현
-    console.log('Search:', searchQuery);
+    const q = searchQuery.trim();
+    if (!q) return;
+    router.push(`/${locale}/search?q=${encodeURIComponent(q)}`);
+    setIsSearchOpen(false);
   };
+
+  // 실시간 검색 (디바운스)
+  useEffect(() => {
+    let active = true;
+    const q = searchQuery.trim();
+    if (!isSearchOpen) return;
+    if (!q) { setSearchResults([]); return; }
+    setSearchLoading(true);
+    const h = setTimeout(async () => {
+      try {
+        const res = await fetch(`/api/tests/search?locale=${locale}&q=${encodeURIComponent(q)}&limit=6`, { cache: 'no-store' });
+        const data = await res.json();
+        if (active) {
+          setSearchResults(Array.isArray(data.tests) ? data.tests : []);
+        }
+      } catch (e) {
+        if (active) setSearchResults([]);
+      } finally {
+        if (active) setSearchLoading(false);
+      }
+    }, 250);
+    return () => { active = false; clearTimeout(h); };
+  }, [searchQuery, isSearchOpen, locale]);
 
   return (
     <header 
@@ -85,7 +114,7 @@ export default function Header() {
         <div className="flex items-center" style={{ gap: '5px' }}>
           {/* 얼굴 텍스트 */}
           <Link
-            href={`/${locale}/face`}
+            href={`/${locale}?tag=${encodeURIComponent('얼굴')}`}
             className="text-sm font-medium hover:text-primary-600 transition-colors"
             style={{ transform: 'translateX(-4px)' }}
           >
@@ -196,7 +225,46 @@ export default function Header() {
               </button>
             </div>
             <div className="p-4">
-              <p className="text-gray-500 text-sm">검색 결과가 여기에 표시됩니다.</p>
+              {searchQuery.trim().length === 0 && (
+                <p className="text-gray-500 text-sm">검색 결과가 여기에 표시됩니다.</p>
+              )}
+              {searchQuery.trim().length > 0 && (
+                <div className="space-y-3">
+                  {searchLoading && (
+                    <p className="text-gray-500 text-sm">검색 중...</p>
+                  )}
+                  {!searchLoading && searchResults.length === 0 && (
+                    <p className="text-gray-500 text-sm">검색 결과가 없습니다.</p>
+                  )}
+                  {!searchLoading && searchResults.length > 0 && (
+                    <ul className="divide-y divide-gray-100">
+                      {searchResults.map((item) => (
+                        <li key={item.slug}>
+                          <Link
+                            href={`/${locale}/test/${item.slug}`}
+                            className="flex items-center gap-3 py-2 hover:bg-gray-50 rounded px-2"
+                            onClick={() => setIsSearchOpen(false)}
+                          >
+                            <div className="relative flex-shrink-0 rounded overflow-hidden bg-gray-100" style={{ width: '96px', height: '60px' }}>
+                              <Image
+                                src={getThumbnailUrl(item.thumbnail)}
+                                alt={typeof item.title === 'string' ? item.title : 'thumbnail'}
+                                fill
+                                sizes="96px"
+                                className="object-cover"
+                              />
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <p className="text-sm font-medium text-gray-800 truncate">{item.title}</p>
+                              <p className="text-xs text-gray-500 truncate">{(item.tags || []).join(', ')}</p>
+                            </div>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>

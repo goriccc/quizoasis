@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { QuizTest } from '@/lib/types';
 import { Locale } from '@/i18n';
@@ -15,7 +16,17 @@ interface HomePageClientProps {
 
 export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   const t = useTranslations();
-  const [selectedTag, setSelectedTag] = useState('all');
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+  const initialTag = searchParams.get('tag') || 'all';
+  const [selectedTag, setSelectedTag] = useState(initialTag);
+
+  useEffect(() => {
+    const tag = searchParams.get('tag') || 'all';
+    setSelectedTag(tag);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   // 테스트 데이터에서 태그 추출
   const tags = useMemo(() => {
@@ -34,7 +45,13 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   }, [tests]);
 
   const handleTagSelect = (tagId: string) => {
-    setSelectedTag(tagId);
+    const params = new URLSearchParams(Array.from(searchParams.entries()));
+    if (tagId === 'all') {
+      params.delete('tag');
+    } else {
+      params.set('tag', tagId);
+    }
+    router.push(`${pathname}${params.toString() ? `?${params.toString()}` : ''}`);
   };
 
   // 선택된 태그에 따라 필터링된 테스트 (랜덤 순서)

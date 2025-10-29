@@ -1,4 +1,5 @@
 import { setRequestLocale } from 'next-intl/server';
+import { redirect } from 'next/navigation';
 
 interface Props {
   params: {
@@ -9,15 +10,8 @@ interface Props {
 export default function FacePage({ params }: Props) {
   const { locale } = params;
   setRequestLocale(locale);
-  
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8">얼굴 분석 페이지</h1>
-      <p className="text-gray-600">
-        이 페이지는 추후 구현될 예정입니다.
-      </p>
-    </div>
-  );
+  // 헤더 "얼굴" 클릭 시, 홈으로 리다이렉트하며 태그=얼굴 필터 적용
+  redirect(`/${locale}?tag=${encodeURIComponent('얼굴')}`);
 }
 
 

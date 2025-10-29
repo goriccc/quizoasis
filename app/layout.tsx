@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning>
       <Head>
         {/* Google Fonts - Noto Sans 다국어 지원 (안드로이드 갤럭시 최적화) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -131,6 +131,21 @@ export default function RootLayout({
         crossOrigin="anonymous"
       />
       
+      {/* 동적 lang 설정 (클라이언트) */}
+      <Script id="set-html-lang" strategy="afterInteractive">
+        {`
+          (function(){
+            try {
+              var locales = ['ko','en','ja','zh-CN','zh-TW','id','vi'];
+              var seg = (window.location.pathname.split('/')[1] || '').trim();
+              var loc = locales.includes(seg) ? seg : 'ko';
+              if (document.documentElement.lang !== loc) {
+                document.documentElement.lang = loc;
+              }
+            } catch (e) { /* noop */ }
+          })();
+        `}
+      </Script>
       {/* Face-api.js and TensorFlow.js */}
       <Script
         src="/face-api.js"
