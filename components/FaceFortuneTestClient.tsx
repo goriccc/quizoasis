@@ -11,7 +11,7 @@ import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 import ProductRecommendations from '@/components/ProductRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
-import { FaceLoveFortuneResult, calculateFaceLoveFortuneResult, FaceLoveFortuneTestClientProps } from '@/lib/faceLoveFortuneData';
+import { FaceFortuneResult, calculateFaceFortuneResult, FaceFortuneTestClientProps } from '@/lib/faceFortuneData';
 
 // TensorFlow.js 및 Face-api.js 타입 정의
 declare global {
@@ -24,7 +24,7 @@ declare global {
   }
 }
 
-export default function FaceLoveFortuneTestClient({ 
+export default function FaceFortuneTestClient({ 
   locale, 
   slug, 
   title, 
@@ -32,12 +32,12 @@ export default function FaceLoveFortuneTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: FaceLoveFortuneTestClientProps) {
-  const t = useTranslations('faceLoveFortuneTest');
+}: FaceFortuneTestClientProps) {
+  const t = useTranslations('faceFortuneTest');
   const tGlobal = useTranslations();
   const [started, setStarted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<FaceLoveFortuneResult | null>(null);
+  const [result, setResult] = useState<FaceFortuneResult | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [capturedImage, setCapturedImage] = useState<string | null>(null);
   const [faceDetected, setFaceDetected] = useState(false);
@@ -163,10 +163,11 @@ export default function FaceLoveFortuneTestClient({
     if (showResult) {
       const loadTests = async () => {
         try {
-          // 유사한 테스트 로드 (태그 기반) - 얼굴 태그만 사용
+          // 유사한 테스트 로드 (태그 기반)
           const similarResponse = await fetch(`/api/tests/similar?excludeSlug=${slug}&locale=${locale}&tags=얼굴`);
           if (similarResponse.ok) {
             const similarData = await similarResponse.json();
+            console.log('유사한 테스트 결과:', similarData.tests);
             setSimilarTestsState(similarData.tests || []);
           }
 
@@ -342,7 +343,7 @@ export default function FaceLoveFortuneTestClient({
               setFaceQuality(quality);
               
               // 결과 계산
-              const faceResult = calculateFaceLoveFortuneResult(true, quality);
+              const faceResult = calculateFaceFortuneResult(quality);
               setResult(faceResult);
               // 로딩 스피너 화면으로 전환
               setShowLoadingSpinner(true);
@@ -359,7 +360,7 @@ export default function FaceLoveFortuneTestClient({
             // Face-api.js가 로드되지 않은 경우 기본 결과
             setFaceDetected(true);
             setFaceQuality(70);
-            const faceResult = calculateFaceLoveFortuneResult(true, 70);
+            const faceResult = calculateFaceFortuneResult(70);
             setResult(faceResult);
             // 로딩 스피너 화면으로 전환
             setShowLoadingSpinner(true);
@@ -543,12 +544,20 @@ export default function FaceLoveFortuneTestClient({
     const resultRecommendations = shuffleAndPick(allRecommendations, 3);
     const advices = result?.advice?.[locale as keyof typeof result.advice] || result?.advice?.ko || [];
     const resultAdvice = Array.isArray(advices) ? advices[Math.floor(Math.random() * advices.length)] : advices;
-    const whenFortunes = result?.fortune?.when?.[locale as keyof typeof result.fortune.when] || result?.fortune?.when?.ko || [];
-    const styleFortunes = result?.fortune?.style?.[locale as keyof typeof result.fortune.style] || result?.fortune?.style?.ko || [];
+    
+    // 운세 섹션 데이터 (재물운, 건강운, 연애운, 사업운, 학업운, 좋은 시기, 주의 시기)
+    const getFortuneItem = (fortuneArray: string[]) => {
+      if (!Array.isArray(fortuneArray) || fortuneArray.length === 0) return '';
+      return fortuneArray[Math.floor(Math.random() * fortuneArray.length)];
+    };
+    
+    const wealthFortunes = result?.fortune?.wealth?.[locale as keyof typeof result.fortune.wealth] || result?.fortune?.wealth?.ko || [];
+    const healthFortunes = result?.fortune?.health?.[locale as keyof typeof result.fortune.health] || result?.fortune?.health?.ko || [];
+    const loveFortunes = result?.fortune?.love?.[locale as keyof typeof result.fortune.love] || result?.fortune?.love?.ko || [];
+    const businessFortunes = result?.fortune?.business?.[locale as keyof typeof result.fortune.business] || result?.fortune?.business?.ko || [];
+    const studyFortunes = result?.fortune?.study?.[locale as keyof typeof result.fortune.study] || result?.fortune?.study?.ko || [];
+    const goodTimeFortunes = result?.fortune?.goodTime?.[locale as keyof typeof result.fortune.goodTime] || result?.fortune?.goodTime?.ko || [];
     const warningFortunes = result?.fortune?.warning?.[locale as keyof typeof result.fortune.warning] || result?.fortune?.warning?.ko || [];
-    const whenFortune = Array.isArray(whenFortunes) ? whenFortunes[Math.floor(Math.random() * whenFortunes.length)] : whenFortunes;
-    const styleFortune = Array.isArray(styleFortunes) ? styleFortunes[Math.floor(Math.random() * styleFortunes.length)] : styleFortunes;
-    const warningFortune = Array.isArray(warningFortunes) ? warningFortunes[Math.floor(Math.random() * warningFortunes.length)] : warningFortunes;
     
     return {
       resultTitle,
@@ -556,9 +565,13 @@ export default function FaceLoveFortuneTestClient({
       resultStrengths,
       resultRecommendations,
       resultAdvice,
-      whenFortune,
-      styleFortune,
-      warningFortune
+      wealthFortune: getFortuneItem(wealthFortunes),
+      healthFortune: getFortuneItem(healthFortunes),
+      loveFortune: getFortuneItem(loveFortunes),
+      businessFortune: getFortuneItem(businessFortunes),
+      studyFortune: getFortuneItem(studyFortunes),
+      goodTimeFortune: getFortuneItem(goodTimeFortunes),
+      warningFortune: getFortuneItem(warningFortunes)
     };
   }, [result, locale]);
 
@@ -667,7 +680,7 @@ export default function FaceLoveFortuneTestClient({
 
   // 결과 화면
   if (showResult && result && resultData) {
-    const { resultTitle, resultDescription, resultStrengths, resultRecommendations, resultAdvice, whenFortune, styleFortune, warningFortune } = resultData;
+    const { resultTitle, resultDescription, resultStrengths, resultRecommendations, resultAdvice, wealthFortune, healthFortune, loveFortune, businessFortune, studyFortune, goodTimeFortune, warningFortune } = resultData;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -726,19 +739,55 @@ export default function FaceLoveFortuneTestClient({
               <div className="space-y-4">
                 <div>
                   <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
-                    📅 {t('ui.whenFortune')}
+                    💰 {t('ui.wealthFortune')}
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed text-left">
-                    {whenFortune}
+                    {wealthFortune}
                   </p>
                 </div>
                 
                 <div>
                   <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
-                    💕 {t('ui.styleFortune')}
+                    🏥 {t('ui.healthFortune')}
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed text-left">
-                    {styleFortune}
+                    {healthFortune}
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
+                    💕 {t('ui.loveFortune')}
+                  </h3>
+                  <p className="text-sm text-gray-700 leading-relaxed text-left">
+                    {loveFortune}
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
+                    💼 {t('ui.businessFortune')}
+                  </h3>
+                  <p className="text-sm text-gray-700 leading-relaxed text-left">
+                    {businessFortune}
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
+                    📚 {t('ui.studyFortune')}
+                  </h3>
+                  <p className="text-sm text-gray-700 leading-relaxed text-left">
+                    {studyFortune}
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
+                    ✨ {t('ui.goodTimeFortune')}
+                  </h3>
+                  <p className="text-sm text-gray-700 leading-relaxed text-left">
+                    {goodTimeFortune}
                   </p>
                 </div>
                 
@@ -879,7 +928,7 @@ export default function FaceLoveFortuneTestClient({
             )}
 
             {/* 🔥 요즘 인기 테스트 추천 톱5 */}
-            {popularTestsState && popularTestsState.length > 0 && (
+            {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
                   {tGlobal('recommendations.popularTestsTop5')}

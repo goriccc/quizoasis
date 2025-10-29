@@ -148,7 +148,21 @@ export default function FaceReadingTestClient({
               playCount: t.play_count
             }));
 
+          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
+          const popularTestsList = allTests
+            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
+            .sort((a: any, b: any) => (b.play_count || 0) - (a.play_count || 0))
+            .slice(0, 5)
+            .map((t: any) => ({
+              id: t.id,
+              slug: t.slug,
+              title: typeof t.title === 'string' ? t.title : (t.title[locale] || t.title.ko),
+              thumbnail: t.thumbnail,
+              playCount: t.play_count
+            }));
+
           setSimilarTestsState(similarTestsList);
+          setPopularTestsState(popularTestsList);
         } catch (error) {
           console.error('테스트 로드 실패:', error);
         }
@@ -865,10 +879,10 @@ export default function FaceReadingTestClient({
             )}
 
             {/* 🔥 요즘 인기 테스트 추천 톱5 */}
-            {popularTestsState.length > 0 && (
+            {popularTestsState && popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {tGlobal('recommendations.popularTestsTop5')}
+                  {tGlobal('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.slice(0, 5).map((test) => (

@@ -47,12 +47,25 @@ export async function GET(request: NextRequest) {
       convertDBTestToQuizTest(dbTest, locale)
     );
 
-    // 태그 필터링
+    // 태그 필터링 - locale로 변환된 태그와 원본 한국어 태그 모두 검사
     let filteredTests = allTests;
     if (tags.length > 0) {
-      filteredTests = allTests.filter((test: any) => 
-        test.tags.some((tag: string) => tags.includes(tag))
-      );
+      filteredTests = allTests.filter((test: any, index: number) => {
+        const dbTest = dbTests[index];
+        // 변환된 태그 확인
+        const convertedTagsMatch = test.tags.some((tag: string) => tags.includes(tag));
+        
+        // 원본 한국어 태그도 확인 (다른 locale에서도 한국어 태그로 매칭 가능)
+        let originalTagsMatch = false;
+        if (dbTest && dbTest.tags) {
+          const originalTags = Array.isArray(dbTest.tags) 
+            ? dbTest.tags 
+            : (dbTest.tags.ko || []);
+          originalTagsMatch = originalTags.some((tag: string) => tags.includes(tag));
+        }
+        
+        return convertedTagsMatch || originalTagsMatch;
+      });
     }
 
     // 현재 테스트 제외 (excludeSlug 파라미터가 있거나 category가 있으면 자동 제외)
