@@ -9,6 +9,31 @@
       "report": "报告错误"
     }
   },
+  "feedback": {
+    "title": "发送反馈",
+    "description": "请发送您对新测试开发、有趣想法等的建议。",
+    "fields": { "category": "类别", "title": "标题", "details": "详细内容", "email": "邮箱（可选）" },
+    "categories": { "newTest": "新测试请求", "ux": "UI/UX改进", "idea": "想法建议", "other": "其他" },
+    "submit": "提交", "submitting": "提交中...", "successTitle": "提交完成", "successDescription": "感谢您的宝贵反馈，我们会审查并反映。", "goHome": "返回首页"
+  },
+  "report": {
+    "title": "错误报告",
+    "description": "请报告应用错误、翻译问题或结果异常。",
+    "fields": { "category": "类别", "title": "标题", "details": "详细内容", "email": "邮箱（可选）" },
+    "categories": { "bug": "错误", "translation": "翻译", "result": "结果问题", "other": "其他" },
+    "submit": "提交", "submitting": "提交中...", "successTitle": "提交完成", "successDescription": "感谢您的报告，我们会尽快修复。", "goHome": "返回首页"
+  },
+  "admin": {
+    "title": "管理页面",
+    "feedback": "反馈",
+    "reports": "错误报告",
+    "loading": "加载中...",
+    "noFeedback": "暂无反馈提交。",
+    "noReports": "暂无错误报告提交。",
+    "email": "邮箱",
+    "category": "类别",
+    "date": "提交日期"
+  },
   "tags": {
     "all": "全部",
     "personality": "性格",
@@ -27,6 +52,12 @@
   "sections": {
     "latest": "最新测试",
     "category": "分类"
+  },
+  "search": {
+    "resultsFor": "[{query}] 的搜索结果",
+    "placeholder": "搜索结果将显示在此处。",
+    "loading": "正在搜索...",
+    "empty": "未找到结果。"
   },
   "recommendations": {
     "similarTests": "类似的其他测试",

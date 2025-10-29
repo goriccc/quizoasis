@@ -9,6 +9,31 @@
       "report": "Laporkan Kesalahan"
     }
   },
+  "feedback": {
+    "title": "Kirim Umpan Balik",
+    "description": "Silakan kirim ide Anda untuk pengembangan tes baru, ide menarik, dll.",
+    "fields": { "category": "Kategori", "title": "Judul", "details": "Detail", "email": "Email (Opsional)" },
+    "categories": { "newTest": "Permintaan Tes Baru", "ux": "Peningkatan UI/UX", "idea": "Saran Ide", "other": "Lainnya" },
+    "submit": "Kirim", "submitting": "Mengirim...", "successTitle": "Terkirim", "successDescription": "Terima kasih atas umpan balik berharga Anda. Kami akan meninjau dan merefleksikannya.", "goHome": "Ke Beranda"
+  },
+  "report": {
+    "title": "Laporkan Error",
+    "description": "Silakan laporkan error aplikasi, masalah terjemahan, atau masalah hasil.",
+    "fields": { "category": "Kategori", "title": "Judul", "details": "Detail", "email": "Email (Opsional)" },
+    "categories": { "bug": "Bug", "translation": "Terjemahan", "result": "Masalah Hasil", "other": "Lainnya" },
+    "submit": "Kirim", "submitting": "Mengirim...", "successTitle": "Terkirim", "successDescription": "Terima kasih atas laporan Anda. Kami akan memperbaikinya secepat mungkin.", "goHome": "Ke Beranda"
+  },
+  "admin": {
+    "title": "Halaman Admin",
+    "feedback": "Umpan Balik",
+    "reports": "Laporan Error",
+    "loading": "Memuat...",
+    "noFeedback": "Tidak ada umpan balik yang dikirim.",
+    "noReports": "Tidak ada laporan error yang dikirim.",
+    "email": "Email",
+    "category": "Kategori",
+    "date": "Tanggal"
+  },
   "tags": {
     "all": "Semua",
     "personality": "Kepribadian",
@@ -27,6 +52,12 @@
   "sections": {
     "latest": "Tes Terbaru",
     "category": "Kategori"
+  },
+  "search": {
+    "resultsFor": "Hasil pencarian untuk [{query}]",
+    "placeholder": "Hasil pencarian akan tampil di sini.",
+    "loading": "Mencari...",
+    "empty": "Tidak ada hasil."
   },
   "recommendations": {
     "similarTests": "Tes Serupa Lainnya",

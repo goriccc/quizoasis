@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import Head from 'next/head';
 import './globals.css';
+import Analytics from '@/components/Analytics';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   title: 'QuizOasis - 당신의 마음을 탐험하는 심리테스트의 오아시스',
@@ -187,6 +189,9 @@ export default function RootLayout({
         `}
       </Script>
       
+      <Suspense fallback={null}>
+        <Analytics />
+      </Suspense>
       {children}
       </body>
     </html>

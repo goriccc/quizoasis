@@ -9,6 +9,31 @@
       "report": "Báo lỗi"
     }
   },
+  "feedback": {
+    "title": "Gửi Phản Hồi",
+    "description": "Vui lòng gửi ý tưởng của bạn về phát triển bài kiểm tra mới, ý tưởng thú vị, v.v.",
+    "fields": { "category": "Danh mục", "title": "Tiêu đề", "details": "Chi tiết", "email": "Email (Tùy chọn)" },
+    "categories": { "newTest": "Yêu cầu Bài kiểm tra Mới", "ux": "Cải thiện UI/UX", "idea": "Đề xuất Ý tưởng", "other": "Khác" },
+    "submit": "Gửi", "submitting": "Đang gửi...", "successTitle": "Đã gửi", "successDescription": "Cảm ơn phản hồi quý giá của bạn. Chúng tôi sẽ xem xét và phản ánh.", "goHome": "Về Trang chủ"
+  },
+  "report": {
+    "title": "Báo cáo Lỗi",
+    "description": "Vui lòng báo cáo lỗi ứng dụng, vấn đề dịch thuật hoặc vấn đề kết quả.",
+    "fields": { "category": "Danh mục", "title": "Tiêu đề", "details": "Chi tiết", "email": "Email (Tùy chọn)" },
+    "categories": { "bug": "Lỗi", "translation": "Dịch thuật", "result": "Vấn đề Kết quả", "other": "Khác" },
+    "submit": "Gửi", "submitting": "Đang gửi...", "successTitle": "Đã gửi", "successDescription": "Cảm ơn báo cáo của bạn. Chúng tôi sẽ sửa chữa sớm nhất có thể.", "goHome": "Về Trang chủ"
+  },
+  "admin": {
+    "title": "Trang Quản Trị",
+    "feedback": "Phản Hồi",
+    "reports": "Báo Cáo Lỗi",
+    "loading": "Đang tải...",
+    "noFeedback": "Chưa có phản hồi nào được gửi.",
+    "noReports": "Chưa có báo cáo lỗi nào được gửi.",
+    "email": "Email",
+    "category": "Danh mục",
+    "date": "Ngày"
+  },
   "tags": {
     "all": "Tất cả",
     "personality": "Tính cách",
@@ -27,6 +52,12 @@
   "sections": {
     "latest": "Bài kiểm tra mới nhất",
     "category": "Danh mục"
+  },
+  "search": {
+    "resultsFor": "Kết quả tìm kiếm cho [{query}]",
+    "placeholder": "Kết quả tìm kiếm sẽ hiển thị ở đây.",
+    "loading": "Đang tìm kiếm...",
+    "empty": "Không tìm thấy kết quả."
   },
   "recommendations": {
     "similarTests": "Các bài kiểm tra tương tự khác",

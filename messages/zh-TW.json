@@ -9,6 +9,31 @@
       "report": "回報錯誤"
     }
   },
+  "feedback": {
+    "title": "發送反饋",
+    "description": "請發送您對新測試開發、有趣想法等的建議。",
+    "fields": { "category": "類別", "title": "標題", "details": "詳細內容", "email": "信箱（可選）" },
+    "categories": { "newTest": "新測試請求", "ux": "UI/UX改進", "idea": "想法建議", "other": "其他" },
+    "submit": "提交", "submitting": "提交中...", "successTitle": "提交完成", "successDescription": "感謝您的寶貴反饋，我們會審查並反映。", "goHome": "返回首頁"
+  },
+  "report": {
+    "title": "錯誤報告",
+    "description": "請報告應用錯誤、翻譯問題或結果異常。",
+    "fields": { "category": "類別", "title": "標題", "details": "詳細內容", "email": "信箱（可選）" },
+    "categories": { "bug": "錯誤", "translation": "翻譯", "result": "結果問題", "other": "其他" },
+    "submit": "提交", "submitting": "提交中...", "successTitle": "提交完成", "successDescription": "感謝您的報告，我們會盡快修復。", "goHome": "返回首頁"
+  },
+  "admin": {
+    "title": "管理頁面",
+    "feedback": "反饋",
+    "reports": "錯誤報告",
+    "loading": "載入中...",
+    "noFeedback": "暫無反饋提交。",
+    "noReports": "暫無錯誤報告提交。",
+    "email": "信箱",
+    "category": "類別",
+    "date": "提交日期"
+  },
   "tags": {
     "all": "全部",
     "personality": "性格",
@@ -27,6 +52,12 @@
   "sections": {
     "latest": "最新測試",
     "category": "分類"
+  },
+  "search": {
+    "resultsFor": "[{query}] 的搜尋結果",
+    "placeholder": "搜尋結果將顯示在此處。",
+    "loading": "搜尋中...",
+    "empty": "找不到結果。"
   },
   "recommendations": {
     "similarTests": "類似的其他測試",

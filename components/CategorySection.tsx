@@ -12,9 +12,10 @@ interface CategorySectionProps {
   tests: QuizTest[];
   categoryName: string;
   locale: Locale;
+  showHeader?: boolean;
 }
 
-export default function CategorySection({ tests, categoryName, locale }: CategorySectionProps) {
+export default function CategorySection({ tests, categoryName, locale, showHeader = true }: CategorySectionProps) {
   const t = useTranslations();
   const currentLocale = useLocale();
 
@@ -87,9 +88,11 @@ export default function CategorySection({ tests, categoryName, locale }: Categor
   return (
     <section className="pt-0 pb-6">
       <div className="max-w-7xl mx-auto px-1 sm:px-4">
-        <h2 className="text-xl font-bold mb-6 text-gray-800">
-          {t('sections.category')} : {getSafeCategoryName(categoryName)}
-        </h2>
+        {showHeader && (
+          <h2 className="text-xl font-bold mb-6 text-gray-800">
+            {t('sections.category')} : {getSafeCategoryName(categoryName)}
+          </h2>
+        )}
         
         {/* 반응형 그리드 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

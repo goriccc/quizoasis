@@ -9,6 +9,31 @@
       "report": "Report Error"
     }
   },
+  "feedback": {
+    "title": "Send Feedback",
+    "description": "Please send us your ideas for new test development, fun ideas, etc.",
+    "fields": { "category": "Category", "title": "Title", "details": "Details", "email": "Email (Optional)" },
+    "categories": { "newTest": "New Test Request", "ux": "UI/UX Improvement", "idea": "Idea Suggestion", "other": "Other" },
+    "submit": "Submit", "submitting": "Submitting...", "successTitle": "Submitted", "successDescription": "Thank you for your valuable feedback. We will review and reflect it.", "goHome": "Go Home"
+  },
+  "report": {
+    "title": "Report Error",
+    "description": "Please report app errors, translation issues, or result problems.",
+    "fields": { "category": "Category", "title": "Title", "details": "Details", "email": "Email (Optional)" },
+    "categories": { "bug": "Bug", "translation": "Translation", "result": "Result Issue", "other": "Other" },
+    "submit": "Submit", "submitting": "Submitting...", "successTitle": "Submitted", "successDescription": "Thank you for your report. We will fix it as soon as possible.", "goHome": "Go Home"
+  },
+  "admin": {
+    "title": "Admin Page",
+    "feedback": "Feedback",
+    "reports": "Error Reports",
+    "loading": "Loading...",
+    "noFeedback": "No feedback submitted.",
+    "noReports": "No error reports submitted.",
+    "email": "Email",
+    "category": "Category",
+    "date": "Date"
+  },
   "tags": {
     "all": "All",
     "personality": "Personality",
@@ -27,6 +52,12 @@
   "sections": {
     "latest": "Latest Tests",
     "category": "Category"
+  },
+  "search": {
+    "resultsFor": "Search results for [{query}]",
+    "placeholder": "Search results will appear here.",
+    "loading": "Searching...",
+    "empty": "No results found."
   },
   "recommendations": {
     "similarTests": "Similar Other Tests",

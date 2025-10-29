@@ -19,8 +19,19 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
+  const tagKey = searchParams.get('tagKey');
   const initialTag = searchParams.get('tag') || 'all';
   const [selectedTag, setSelectedTag] = useState(initialTag);
+  const displayTag = useMemo(() => {
+    if (tagKey === 'face') {
+      // 로케일별 "얼굴" 라벨
+      const map: Record<string, string> = {
+        ko: '얼굴', en: 'Face', ja: '顔', 'zh-CN': '面相', 'zh-TW': '臉', id: 'Wajah', vi: 'Khuôn mặt'
+      } as any;
+      return map[locale] || '얼굴';
+    }
+    return selectedTag;
+  }, [tagKey, selectedTag, locale]);
 
   useEffect(() => {
     const tag = searchParams.get('tag') || 'all';
@@ -48,8 +59,10 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     const params = new URLSearchParams(Array.from(searchParams.entries()));
     if (tagId === 'all') {
       params.delete('tag');
+      params.delete('tagKey');
     } else {
       params.set('tag', tagId);
+      params.delete('tagKey');
     }
     router.push(`${pathname}${params.toString() ? `?${params.toString()}` : ''}`);
   };
@@ -57,10 +70,24 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   // 선택된 태그에 따라 필터링된 테스트 (랜덤 순서)
   const filteredTests = useMemo(() => {
     let filtered;
-    if (selectedTag === 'all') {
-      filtered = tests;
+    if ((tagKey && tagKey === 'face') || (displayTag && displayTag.length > 0 && selectedTag !== 'all')) {
+      if (tagKey === 'face') {
+        const aliasSet = new Set(
+          ['얼굴','face','顔','面相','臉','脸','wajah','khuôn mặt','khuon mat']
+            .map((s) => s.toLowerCase())
+        );
+        filtered = tests.filter((test) => {
+          const tagsLower = (test.tags || []).map((t) => (t || '').toLowerCase());
+          const tagMatch = tagsLower.some((t) => aliasSet.has(t));
+          const slugLower = (test.slug || '').toLowerCase();
+          const slugMatch = slugLower.includes('face');
+          return tagMatch || slugMatch;
+        });
+      } else {
+        filtered = tests.filter(test => test.tags.includes(displayTag));
+      }
     } else {
-      filtered = tests.filter(test => test.tags.includes(selectedTag));
+      filtered = tests;
     }
     
     // Fisher-Yates 셔플 알고리즘으로 랜덤 순서 생성
@@ -71,7 +98,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     }
     
     return shuffled;
-  }, [tests, selectedTag]);
+  }, [tests, selectedTag, tagKey, displayTag]);
 
   return (
     <div className="min-h-screen bg-white">
@@ -96,7 +123,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
       <div className="pt-8.5 bg-white">
         <CategorySection 
           tests={filteredTests} 
-          categoryName={selectedTag}
+          categoryName={tagKey === 'face' ? displayTag : selectedTag}
           locale={locale}
         />
       </div>

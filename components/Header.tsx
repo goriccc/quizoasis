@@ -11,6 +11,7 @@ import { getThumbnailUrl } from '@/lib/utils';
 
 export default function Header() {
   const t = useTranslations('header');
+  const ts = useTranslations('search');
   const locale = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
@@ -38,16 +39,17 @@ export default function Header() {
     setIsSearchOpen(false);
   };
 
-  // 실시간 검색 (디바운스)
+  // 실시간 검색 (디바운스 + AbortController)
   useEffect(() => {
     let active = true;
+    const controller = new AbortController();
     const q = searchQuery.trim();
     if (!isSearchOpen) return;
-    if (!q) { setSearchResults([]); return; }
+    if (q.length === 0) { setSearchResults([]); return; }
     setSearchLoading(true);
     const h = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/tests/search?locale=${locale}&q=${encodeURIComponent(q)}&limit=6`, { cache: 'no-store' });
+        const res = await fetch(`/api/tests/search?locale=${locale}&q=${encodeURIComponent(q)}&limit=10`, { cache: 'no-store', signal: controller.signal });
         const data = await res.json();
         if (active) {
           setSearchResults(Array.isArray(data.tests) ? data.tests : []);
@@ -57,9 +59,22 @@ export default function Header() {
       } finally {
         if (active) setSearchLoading(false);
       }
-    }, 250);
-    return () => { active = false; clearTimeout(h); };
+    }, 150);
+    return () => { active = false; clearTimeout(h); controller.abort(); };
   }, [searchQuery, isSearchOpen, locale]);
+
+  // 모달 열릴 때 1회 프리페치(캐시 워밍)
+  useEffect(() => {
+    if (!isSearchOpen) return;
+    if (searchQuery.trim().length > 0) return;
+    (async () => {
+      try {
+        const res = await fetch(`/api/tests/search?locale=${locale}&limit=10`, { cache: 'no-store' });
+        const data = await res.json();
+        setSearchResults(Array.isArray(data.tests) ? data.tests : []);
+      } catch {}
+    })();
+  }, [isSearchOpen, locale]);
 
   return (
     <header 
@@ -78,7 +93,7 @@ export default function Header() {
           {/* 햄버거 메뉴 */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-0 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
             aria-label="Menu"
           >
             <Menu width={24} height={24} />
@@ -87,7 +102,7 @@ export default function Header() {
           {/* 검색 아이콘 */}
           <button
             onClick={() => setIsSearchOpen(!isSearchOpen)}
-            className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-0 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
             aria-label={t('search')}
             style={{ transform: 'translateX(4px)' }}
           >
@@ -96,7 +111,7 @@ export default function Header() {
         </div>
 
         {/* 중앙: 타이틀 */}
-        <Link href={`/${locale}`} className="absolute left-1/2 transform -translate-x-1/2">
+        <Link href={`/${locale}`} className="absolute left-1/2 transform -translate-x-1/2 cursor-pointer">
           <h1 
             className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent"
             style={{ 
@@ -114,8 +129,8 @@ export default function Header() {
         <div className="flex items-center" style={{ gap: '5px' }}>
           {/* 얼굴 텍스트 */}
           <Link
-            href={`/${locale}?tag=${encodeURIComponent('얼굴')}`}
-            className="text-sm font-medium hover:text-primary-600 transition-colors"
+            href={`/${locale}/face`}
+            className="text-sm font-medium hover:text-primary-600 transition-colors cursor-pointer"
             style={{ transform: 'translateX(-4px)' }}
           >
             {t('face')}
@@ -128,7 +143,7 @@ export default function Header() {
                 e.stopPropagation();
                 setIsLanguageOpen(!isLanguageOpen);
               }}
-              className="p-0 hover:bg-gray-100 rounded-lg transition-colors"
+              className="p-0 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
               aria-label="Language"
               style={{ transform: 'translateY(2px)' }}
             >
@@ -160,7 +175,7 @@ export default function Header() {
                       WebkitFontSmoothing: 'antialiased',
                       MozOsxFontSmoothing: 'grayscale'
                     }}
-                    className={`block w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${
+                    className={`block w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors cursor-pointer ${
                       locale === loc ? 'bg-primary-50 text-primary-600 font-semibold' : ''
                     }`}
                   >
@@ -175,28 +190,22 @@ export default function Header() {
 
       {/* 햄버거 메뉴 드롭다운 */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-white shadow-lg border-t border-gray-200">
+        <div className="absolute top-16 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50">
           <div className="max-w-7xl mx-auto px-4 py-3">
-            <button
-              onClick={() => {
-                // TODO: 의견 보내기 기능
-                console.log('Feedback');
-                setIsMenuOpen(false);
-              }}
-              className="block w-full text-left px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
+            <Link
+              href={`/${locale}/feedback`}
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
             >
               {t('menu.feedback')}
-            </button>
-            <button
-              onClick={() => {
-                // TODO: 오류 수정 요청 기능
-                console.log('Report');
-                setIsMenuOpen(false);
-              }}
-              className="block w-full text-left px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
+            </Link>
+            <Link
+              href={`/${locale}/report`}
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
             >
               {t('menu.report')}
-            </button>
+            </Link>
           </div>
         </div>
       )}
@@ -219,22 +228,22 @@ export default function Header() {
               </form>
               <button
                 onClick={() => setIsSearchOpen(false)}
-                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
               >
                 <X size={20} />
               </button>
             </div>
             <div className="p-4">
               {searchQuery.trim().length === 0 && (
-                <p className="text-gray-500 text-sm">검색 결과가 여기에 표시됩니다.</p>
+                <p className="text-gray-500 text-sm">{ts('placeholder')}</p>
               )}
               {searchQuery.trim().length > 0 && (
-                <div className="space-y-3">
+                <div className="space-y-3" style={{ maxHeight: '420px', overflowY: 'auto' }}>
                   {searchLoading && (
-                    <p className="text-gray-500 text-sm">검색 중...</p>
+                    <p className="text-gray-500 text-sm">{ts('loading')}</p>
                   )}
                   {!searchLoading && searchResults.length === 0 && (
-                    <p className="text-gray-500 text-sm">검색 결과가 없습니다.</p>
+                    <p className="text-gray-500 text-sm">{ts('empty')}</p>
                   )}
                   {!searchLoading && searchResults.length > 0 && (
                     <ul className="divide-y divide-gray-100">
