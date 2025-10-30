@@ -27,6 +27,15 @@ export const metadata: Metadata = {
     url: 'https://myquizoasis.com',
     siteName: 'QuizOasis',
     locale: 'ko_KR',
+    images: [
+      {
+        url: 'https://myquizoasis.com/og-home.png',
+        width: 1200,
+        height: 630,
+        alt: 'QuizOasis',
+        type: 'image/png',
+      }
+    ],
   },
 };
 
