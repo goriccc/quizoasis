@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 // AdSense Configuration
 export const ADSENSE_CONFIG = {
-  ENABLED: false, // 개발 완료 후 true로 변경
+  ENABLED: true, // 개발 완료 후 true로 변경
   PUBLISHER_ID: 'ca-pub-3192752766652582',
   SLOTS: {
     START_SCREEN: '5341240098',        // 타이틀-설명 사이
