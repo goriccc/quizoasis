@@ -6,6 +6,10 @@ Allow: /
 
 Sitemap: https://myquizoasis.com/sitemap.xml
 
+# RSS Feed
+User-agent: Googlebot
+Allow: /feed.xml
+
 # API 및 내부 파일은 크롤링 제외
 Disallow: /api/
 Disallow: /_next/
