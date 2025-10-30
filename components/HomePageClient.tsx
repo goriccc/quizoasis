@@ -47,10 +47,21 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
       test.tags.forEach((tag) => allTagsSet.add(tag));
     });
     
-    const tagList = Array.from(allTagsSet).map((tag) => ({
-      id: tag,
-      name: tag,
-    }));
+    // 각 태그별 테스트 개수 계산
+    const tagCount = new Map<string, number>();
+    tests.forEach((test) => {
+      test.tags.forEach((tag) => {
+        tagCount.set(tag, (tagCount.get(tag) || 0) + 1);
+      });
+    });
+    
+    // 1개만 검색되는 태그는 제외
+    const tagList = Array.from(allTagsSet)
+      .filter((tag) => (tagCount.get(tag) || 0) > 1)
+      .map((tag) => ({
+        id: tag,
+        name: tag,
+      }));
     
     return [{ id: 'all', name: 'all' }, ...tagList];
   }, [tests]);
