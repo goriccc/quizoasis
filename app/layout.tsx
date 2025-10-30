@@ -148,11 +148,11 @@ export default function RootLayout({
           })();
         `}
       </Script>
-      {/* Face-api.js and TensorFlow.js */}
-      <Script
-        src="/face-api.js"
+      {/* Face-api.js and TensorFlow.js - Loaded dynamically by specific face tests */}
+      {/* <Script
+        src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"
         strategy="afterInteractive"
-      />
+      /> */}
       
       {/* Kakao SDK */}
       <Script

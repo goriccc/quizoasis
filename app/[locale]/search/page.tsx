@@ -11,7 +11,7 @@ interface Props {
   searchParams?: { q?: string };
 }
 
-export const revalidate = 0;
+export const revalidate = 60;
 
 export default async function SearchPage({ params, searchParams }: Props) {
   const { locale } = params;

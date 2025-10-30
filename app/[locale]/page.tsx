@@ -14,8 +14,8 @@ interface Props {
   };
 }
 
-// Dynamic rendering: 항상 최신 데이터 (play_count 실시간 업데이트)
-export const revalidate = 0;
+// ISR with 60 seconds cache: play_count 빠른 업데이트
+export const revalidate = 60;
 
 // metadata는 app/[locale]/layout.tsx에서 처리
 

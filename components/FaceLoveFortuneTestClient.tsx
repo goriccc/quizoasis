@@ -13,16 +13,7 @@ import ProductRecommendations from '@/components/ProductRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import { FaceLoveFortuneResult, calculateFaceLoveFortuneResult, FaceLoveFortuneTestClientProps } from '@/lib/faceLoveFortuneData';
 
-// TensorFlow.js 및 Face-api.js 타입 정의
-declare global {
-  interface Window {
-    faceapi: any;
-    tf: any;
-    loadFaceApiModels?: () => Promise<boolean>;
-    detectFaces?: (imageElement: HTMLImageElement | HTMLCanvasElement) => Promise<any[]>;
-    calculateFaceQuality?: (detection: any, imageWidth: number, imageHeight: number) => number;
-  }
-}
+// MediaPipe will be dynamically imported
 
 export default function FaceLoveFortuneTestClient({ 
   locale, 
@@ -46,7 +37,7 @@ export default function FaceLoveFortuneTestClient({
   const [error, setError] = useState<string | null>(null);
   const [showImageSourceModal, setShowImageSourceModal] = useState(false);
   const [showFaceDetectError, setShowFaceDetectError] = useState(false);
-  const [modelsLoaded, setModelsLoaded] = useState(false);
+  const [modelsLoaded, setModelsLoaded] = useState(true);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
@@ -63,27 +54,7 @@ export default function FaceLoveFortuneTestClient({
   // 모바일 감지
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
-  // Face-api.js 모델 로드
-  useEffect(() => {
-    const loadModels = async () => {
-      try {
-        if (typeof window !== 'undefined' && window.loadFaceApiModels) {
-          console.log('Face-api.js 모델 로딩 시작...');
-          await window.loadFaceApiModels();
-          console.log('Face-api.js 모델 로딩 완료');
-          setModelsLoaded(true);
-        } else {
-          console.log('Face-api.js가 로드되지 않음, 기본 모드로 진행');
-          setModelsLoaded(true);
-        }
-      } catch (error) {
-        console.error('Face-api.js 모델 로드 실패:', error);
-        setModelsLoaded(true); // 실패해도 기본 모드로 진행
-      }
-    };
-
-    loadModels();
-  }, []);
+  // MediaPipe will be loaded dynamically when needed
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
@@ -283,109 +254,58 @@ export default function FaceLoveFortuneTestClient({
   const analyzeFace = async (imageData: string) => {
     setIsAnalyzing(true);
     setError(null);
-    
-    // 사진이 먼저 표시되도록 3초 지연
     await new Promise(resolve => setTimeout(resolve, 3000));
     
     try {
-      // 이미지 로드 확인 - window.Image() 사용하여 next/image와 충돌 방지
-      const img = typeof window !== 'undefined' ? new window.Image() : document.createElement('img');
+      // MediaPipe FaceLandmarker for detailed 468 landmarks analysis
+      const vision = await import('@mediapipe/tasks-vision');
+      const filesetResolver = await (vision as any).FilesetResolver.forVisionTasks(
+        'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm'
+      );
+
+      const landmarker = await (vision as any).FaceLandmarker.createFromOptions(filesetResolver, {
+        baseOptions: {
+          modelAssetPath:
+            'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task',
+          delegate: 'CPU',
+        },
+        numFaces: 1,
+        runningMode: 'IMAGE',
+        outputFaceBlendshapes: false,
+        outputFacialTransformationMatrixes: false,
+        minFaceDetectionConfidence: 0.5,
+        minFacePresenceConfidence: 0.5,
+        minTrackingConfidence: 0.5,
+      });
+
+      const img = document.createElement('img');
       img.crossOrigin = 'anonymous';
-      
-      img.onload = async () => {
-        try {
-          // Face-api.js가 로드되어 있는지 확인
-          if (typeof window !== 'undefined' && window.loadFaceApiModels && window.detectFaces && window.calculateFaceQuality) {
-            // 모델이 로드되지 않았으면 먼저 로드
-            if (!modelsLoaded && window.loadFaceApiModels) {
-              console.log('모델 로드되지 않음, 모델 로드 중...');
-              try {
-                const loaded = await window.loadFaceApiModels();
-                if (loaded) {
-                  console.log('모델 로드 완료');
-                  setModelsLoaded(true);
-                } else {
-                  throw new Error('모델 로드 실패');
-                }
-              } catch (modelError) {
-                console.error('모델 로드 실패:', modelError);
-                throw new Error(t('alerts.modelLoadFailed'));
-              }
-            }
-            
-            console.log('Face-api.js를 사용한 얼굴 감지 시작...');
-            console.log('이미지 크기:', img.width, 'x', img.height);
-            
-            // 타임아웃 추가 (8초로 단축)
-            const detectionPromise = window.detectFaces(img);
-            const timeoutPromise = new Promise((_, reject) => 
-              setTimeout(() => reject(new Error(t('alerts.faceDetectionTimeout'))), 8000)
-            );
-            
-            let detections: any[] = [];
-            try {
-              const result = await Promise.race([detectionPromise, timeoutPromise]);
-              detections = Array.isArray(result) ? result : [];
-              console.log('감지된 얼굴 수:', detections.length);
-            } catch (timeoutError) {
-              console.error('얼굴 감지 타임아웃:', timeoutError);
-              throw timeoutError;
-            }
-            
-            if (detections && detections.length > 0) {
-              const detection = detections[0];
-              console.log('얼굴 감지 결과:', detection);
-              const quality = window.calculateFaceQuality(detection, img.width, img.height);
-              console.log('얼굴 품질:', quality);
-              
-              setFaceDetected(true);
-              setFaceQuality(quality);
-              
-              // 결과 계산
-              const faceResult = calculateFaceLoveFortuneResult(true, quality);
-              setResult(faceResult);
-              // 로딩 스피너 화면으로 전환
-              setShowLoadingSpinner(true);
-            } else {
-              console.log('얼굴이 감지되지 않음 - 경고 팝업 표시');
-              setFaceDetected(false);
-              setFaceQuality(0);
-              setShowFaceDetectError(true);
-              setIsAnalyzing(false);
-              return;
-            }
-          } else {
-            console.log('Face-api.js가 로드되지 않음, 기본 결과로 진행');
-            // Face-api.js가 로드되지 않은 경우 기본 결과
-            setFaceDetected(true);
-            setFaceQuality(70);
-            const faceResult = calculateFaceLoveFortuneResult(true, 70);
-            setResult(faceResult);
-            // 로딩 스피너 화면으로 전환
-            setShowLoadingSpinner(true);
-          }
-        } catch (error) {
-          console.error('얼굴 분석 실패:', error);
-          // 오류 발생 시 경고 팝업 표시
-          setFaceDetected(false);
-          setFaceQuality(0);
-          setShowFaceDetectError(true);
-          setIsAnalyzing(false);
-        }
-      };
-      
-      img.onerror = () => {
-        console.error('이미지 로드 실패');
+      img.src = imageData;
+
+      await new Promise<void>((res, rej) => {
+        img.onload = () => res();
+        img.onerror = rej;
+      });
+
+      const detectionResult = await landmarker.detect(img as any);
+      const landmarks = detectionResult?.faceLandmarks?.[0];
+
+      if (landmarks && landmarks.length > 0) {
+        // Success: face detected
+        setFaceDetected(true);
+        setFaceQuality(75);
+        const faceResult = calculateFaceLoveFortuneResult(true, 75);
+        setResult(faceResult);
+        setShowLoadingSpinner(true);
+      } else {
+        // Face not detected
         setFaceDetected(false);
         setFaceQuality(0);
         setShowFaceDetectError(true);
         setIsAnalyzing(false);
-      };
-      
-      img.src = imageData;
+      }
     } catch (error) {
-      console.error('얼굴 분석 실패:', error);
-      // 오류 발생 시 경고 팝업 표시
+      console.error('MediaPipe 분석 오류:', error);
       setFaceDetected(false);
       setFaceQuality(0);
       setShowFaceDetectError(true);
