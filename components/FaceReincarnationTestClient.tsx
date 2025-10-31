@@ -51,6 +51,49 @@ export default function FaceReincarnationTestClient({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
 
+  // 이미지 품질 산정 유틸리티 (간단한 샤프니스 + 얼굴 박스 비율 기반)
+  function clamp(value: number, min: number, max: number): number { return Math.max(min, Math.min(max, value)); }
+
+  function estimateSharpness(ctx: CanvasRenderingContext2D, width: number, height: number): number {
+    // 그레이스케일 분산을 간단한 선명도 지표로 사용 (샘플링으로 비용 절감)
+    const step = 8; // 샘플 간격
+    const w = Math.max(1, Math.floor(width / step));
+    const h = Math.max(1, Math.floor(height / step));
+    const sampleData = ctx.getImageData(0, 0, width, height).data;
+    let sum = 0; let sumSq = 0; let count = 0;
+    for (let y = 0; y < height; y += step) {
+      for (let x = 0; x < width; x += step) {
+        const idx = (y * width + x) * 4;
+        const r = sampleData[idx];
+        const g = sampleData[idx + 1];
+        const b = sampleData[idx + 2];
+        const gray = 0.299 * r + 0.587 * g + 0.114 * b;
+        sum += gray; sumSq += gray * gray; count += 1;
+      }
+    }
+    if (count === 0) return 0;
+    const mean = sum / count;
+    const variance = clamp((sumSq / count) - mean * mean, 0, 255 * 255);
+    // 0~1 정규화 (경험적 스케일)
+    return clamp(variance / (255 * 255 / 6), 0, 1);
+  }
+
+  function estimateFaceBoxRatio(landmarks: any[], imgWidth: number, imgHeight: number): number {
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    landmarks.forEach((p: any) => {
+      const x = p.x ?? p[0];
+      const y = p.y ?? p[1];
+      if (x < minX) minX = x; if (y < minY) minY = y; if (x > maxX) maxX = x; if (y > maxY) maxY = y;
+    });
+    // 일부 라이브러리는 정규화 좌표(0~1)를 반환
+    const isNormalized = maxX <= 1.2 && maxY <= 1.2;
+    const w = (isNormalized ? (maxX - minX) * imgWidth : (maxX - minX));
+    const h = (isNormalized ? (maxY - minY) * imgHeight : (maxY - minY));
+    const area = Math.max(0, w) * Math.max(0, h);
+    const ratio = area / (imgWidth * imgHeight);
+    return clamp(ratio * 3, 0, 1); // 얼굴이 화면의 1/3 차지 시 1.0로 근사
+  }
+
   // 모바일 감지
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
@@ -291,10 +334,23 @@ export default function FaceReincarnationTestClient({
       const landmarks = detectionResult?.faceLandmarks?.[0];
 
       if (landmarks && landmarks.length > 0) {
-        // Success: face detected
+        // Success: face detected → 품질 산정
         setFaceDetected(true);
-        setFaceQuality(75);
-        const faceResult = calculateFaceReincarnationResult(true, 75);
+
+        // 캔버스 픽셀 기반 샤프니스 추정 + 얼굴 박스 비율
+        const cnv = canvasRef.current;
+        const ctx = cnv?.getContext('2d');
+        let quality = 70; // 기본값
+        if (cnv && ctx) {
+          const sharp = estimateSharpness(ctx, cnv.width, cnv.height); // 0~1
+          const boxRatio = estimateFaceBoxRatio(landmarks as any[], cnv.width, cnv.height); // 0~1
+          const base = 0.55 * sharp + 0.45 * boxRatio; // 가중 평균
+          const jitter = (Math.random() - 0.5) * 6; // ±3 가중치
+          quality = clamp(Math.round(20 + base * 75 + jitter), 0, 100);
+        }
+
+        setFaceQuality(quality);
+        const faceResult = calculateFaceReincarnationResult(true, quality);
         setResult(faceResult);
         setShowLoadingSpinner(true);
       } else {
