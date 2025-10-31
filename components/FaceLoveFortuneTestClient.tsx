@@ -185,18 +185,32 @@ export default function FaceLoveFortuneTestClient({
     }
   };
 
-  // 카메라 시작
+  // 카메라 시작 (전면 우선)
   const startCamera = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ 
-        video: { 
-          facingMode: 'user',
-          width: { ideal: 640 },
-          height: { ideal: 480 }
-        } 
-      });
+      let stream: MediaStream | null = null;
+
+      if (navigator.mediaDevices && navigator.mediaDevices.enumerateDevices) {
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        const front = devices.find(d => d.kind === 'videoinput' && /front|user|앞|전면/i.test(d.label || ''));
+        if (front && front.deviceId) {
+          try {
+            stream = await navigator.mediaDevices.getUserMedia({ video: { deviceId: { exact: front.deviceId }, width: { ideal: 640 }, height: { ideal: 480 } } });
+          } catch {}
+        }
+      }
+
+      if (!stream) {
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: 'user' }, width: { ideal: 640 }, height: { ideal: 480 } } });
+        } catch {}
+      }
+
+      if (!stream) {
+        stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } } });
+      }
       
-      if (videoRef.current) {
+      if (videoRef.current && stream) {
         videoRef.current.srcObject = stream;
         streamRef.current = stream;
       }

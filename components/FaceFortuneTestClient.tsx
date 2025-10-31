@@ -186,18 +186,35 @@ export default function FaceFortuneTestClient({
     }
   };
 
-  // 카메라 시작
+  // 카메라 시작 (전면 우선)
   const startCamera = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ 
-        video: { 
-          facingMode: 'user',
-          width: { ideal: 640 },
-          height: { ideal: 480 }
-        } 
-      });
+      let stream: MediaStream | null = null;
+
+      // 1) 전면 카메라 장치 탐색
+      if (navigator.mediaDevices && navigator.mediaDevices.enumerateDevices) {
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        const front = devices.find(d => d.kind === 'videoinput' && /front|user|앞|전면/i.test(d.label || ''));
+        if (front && front.deviceId) {
+          try {
+            stream = await navigator.mediaDevices.getUserMedia({ video: { deviceId: { exact: front.deviceId }, width: { ideal: 640 }, height: { ideal: 480 } } });
+          } catch {}
+        }
+      }
+
+      // 2) iOS Safari 호환: exact facingMode
+      if (!stream) {
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: 'user' }, width: { ideal: 640 }, height: { ideal: 480 } } });
+        } catch {}
+      }
+
+      // 3) 일반적인 전면 힌트
+      if (!stream) {
+        stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } } });
+      }
       
-      if (videoRef.current) {
+      if (videoRef.current && stream) {
         videoRef.current.srcObject = stream;
         streamRef.current = stream;
       }
