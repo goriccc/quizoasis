@@ -214,6 +214,17 @@ export default function FaceFortuneTestClient({
         stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } } });
       }
       
+      if (stream) {
+        const picked = stream.getVideoTracks()[0];
+        const s = picked.getSettings();
+        const lbl = (picked.label || '').toLowerCase();
+        const looksBack = /back|rear|environment|world/.test(lbl) || /environment/i.test(String(s.facingMode || ''));
+        if (looksBack) {
+          picked.stop();
+          try { stream = await navigator.mediaDevices.getUserMedia({ video: { advanced: [{ facingMode: 'user' }], width: { ideal: 640 }, height: { ideal: 480 } } }); } catch {}
+        }
+      }
+
       if (videoRef.current && stream) {
         videoRef.current.srcObject = stream;
         streamRef.current = stream;

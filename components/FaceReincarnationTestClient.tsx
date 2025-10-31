@@ -253,6 +253,22 @@ export default function FaceReincarnationTestClient({
         stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } } });
       }
       
+      if (stream) {
+        // 후면이 선택되었는지 확인 후 재시도 로직
+        const picked = stream.getVideoTracks()[0];
+        const s = picked.getSettings();
+        const lbl = (picked.label || '').toLowerCase();
+        const looksBack = /back|rear|environment|world/.test(lbl) || /environment/i.test(String(s.facingMode || ''));
+
+        if (looksBack) {
+          picked.stop();
+          try {
+            // iOS/안드 공통 강제 힌트
+            stream = await navigator.mediaDevices.getUserMedia({ video: { advanced: [{ facingMode: 'user' }], width: { ideal: 640 }, height: { ideal: 480 } } });
+          } catch {}
+        }
+      }
+
       if (videoRef.current && stream) {
         videoRef.current.srcObject = stream;
         streamRef.current = stream;
