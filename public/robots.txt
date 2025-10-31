@@ -18,3 +18,4 @@ Disallow: /static/
 # 크롤링 딜레이 설정
 Crawl-delay: 1
 
+#DaumWebMasterTool:7e5eb80a691284b6252d6ba825162ae196d7f6f9e39630187656ca004e61b902:nFArT0OIkE5+7VCbwTnXuA==
