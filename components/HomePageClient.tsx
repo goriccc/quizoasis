@@ -125,7 +125,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
       {/* 최신 테스트 섹션 */}
       <div className="pt-2 bg-white">
         <LatestTestsSection 
-          tests={tests}
+          tests={tests.slice(0, 15)}
           locale={locale}
         />
       </div>

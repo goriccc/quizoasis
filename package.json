@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy:new": "node scripts/deploy-new-test.js"
   },
   "dependencies": {
     "@mediapipe/tasks-vision": "^0.10.22-rc.20250304",

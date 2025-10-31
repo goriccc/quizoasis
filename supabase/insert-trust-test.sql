@@ -1,4 +1,9 @@
 -- 신뢰도 테스트 데이터 삽입
+-- 기존 데이터가 있다면 삭제 후 삽입
+
+DELETE FROM tests WHERE slug = 'trustworthiness-level-test';
+DELETE FROM tests WHERE slug = 'trustworthiness-test';
+
 INSERT INTO tests (
   slug,
   title,
@@ -9,7 +14,7 @@ INSERT INTO tests (
   tags,
   play_count
 ) VALUES (
-  'trustworthiness-level-test',
+  'trustworthiness-test',
   '{
     "ko": "당신은 얼마나 믿음직한 사람인가요?",
     "en": "How reliable are you?",
