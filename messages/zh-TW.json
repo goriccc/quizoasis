@@ -644,6 +644,10 @@
     "cons": "缺點",
     "advice": "戀愛建議"
   },
+  "ui": {
+    "shareWithFriends": "和朋友一起試試",
+    "shareResultWithFriends": "將結果分享給朋友"
+  },
   "footer": {
     "slogan": "探索您內心的心理測試綠洲",
     "disclaimer": "發布者可能透過廣告獲得一定佣金",

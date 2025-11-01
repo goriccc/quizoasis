@@ -698,6 +698,10 @@
     "cons": "Cons",
     "advice": "Relationship Advice"
   },
+  "ui": {
+    "shareWithFriends": "Try with friends",
+    "shareResultWithFriends": "Share results with friends"
+  },
   "footer": {
     "slogan": "An oasis of psychological tests to explore your mind",
     "disclaimer": "The publisher may receive a commission through advertising",

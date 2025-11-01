@@ -850,6 +850,10 @@
     "cons": "단점",
     "advice": "연애 조언"
   },
+  "ui": {
+    "shareWithFriends": "친구와 같이 해보기",
+    "shareResultWithFriends": "결과를 친구에게 공유하기"
+  },
   "footer": {
     "slogan": "당신의 마음을 탐험하는 심리테스트의 오아시스",
     "disclaimer": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다",

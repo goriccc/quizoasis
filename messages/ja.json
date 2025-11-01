@@ -638,6 +638,10 @@
     "cons": "短所",
     "advice": "恋愛アドバイス"
   },
+  "ui": {
+    "shareWithFriends": "友達と一緒にやってみる",
+    "shareResultWithFriends": "結果を友達に共有する"
+  },
   "footer": {
     "slogan": "あなたの心を探る心理テストのオアシス",
     "disclaimer": "運営者は広告を通じて一定の手数料を受け取る場合があります",

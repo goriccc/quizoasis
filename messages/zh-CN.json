@@ -637,6 +637,10 @@
     "cons": "缺点",
     "advice": "恋爱建议"
   },
+  "ui": {
+    "shareWithFriends": "和朋友一起试试",
+    "shareResultWithFriends": "将结果分享给朋友"
+  },
   "footer": {
     "slogan": "探索您内心的心理测试绿洲",
     "disclaimer": "发布者可能通过广告获得一定佣金",

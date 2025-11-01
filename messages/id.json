@@ -637,6 +637,10 @@
     "cons": "Kekurangan",
     "advice": "Saran Kencan"
   },
+  "ui": {
+    "shareWithFriends": "Coba bersama teman",
+    "shareResultWithFriends": "Bagikan hasil dengan teman"
+  },
   "footer": {
     "slogan": "Oasis tes psikologi untuk menjelajahi pikiran Anda",
     "disclaimer": "Penerbit dapat menerima komisi melalui iklan",
