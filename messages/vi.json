@@ -12,16 +12,44 @@
   "feedback": {
     "title": "Gửi Phản Hồi",
     "description": "Vui lòng gửi ý tưởng của bạn về phát triển bài kiểm tra mới, ý tưởng thú vị, v.v.",
-    "fields": { "category": "Danh mục", "title": "Tiêu đề", "details": "Chi tiết", "email": "Email (Tùy chọn)" },
-    "categories": { "newTest": "Yêu cầu Bài kiểm tra Mới", "ux": "Cải thiện UI/UX", "idea": "Đề xuất Ý tưởng", "other": "Khác" },
-    "submit": "Gửi", "submitting": "Đang gửi...", "successTitle": "Đã gửi", "successDescription": "Cảm ơn phản hồi quý giá của bạn. Chúng tôi sẽ xem xét và phản ánh.", "goHome": "Về Trang chủ"
+    "fields": {
+      "category": "Danh mục",
+      "title": "Tiêu đề",
+      "details": "Chi tiết",
+      "email": "Email (Tùy chọn)"
+    },
+    "categories": {
+      "newTest": "Yêu cầu Bài kiểm tra Mới",
+      "ux": "Cải thiện UI/UX",
+      "idea": "Đề xuất Ý tưởng",
+      "other": "Khác"
+    },
+    "submit": "Gửi",
+    "submitting": "Đang gửi...",
+    "successTitle": "Đã gửi",
+    "successDescription": "Cảm ơn phản hồi quý giá của bạn. Chúng tôi sẽ xem xét và phản ánh.",
+    "goHome": "Về Trang chủ"
   },
   "report": {
     "title": "Báo cáo Lỗi",
     "description": "Vui lòng báo cáo lỗi ứng dụng, vấn đề dịch thuật hoặc vấn đề kết quả.",
-    "fields": { "category": "Danh mục", "title": "Tiêu đề", "details": "Chi tiết", "email": "Email (Tùy chọn)" },
-    "categories": { "bug": "Lỗi", "translation": "Dịch thuật", "result": "Vấn đề Kết quả", "other": "Khác" },
-    "submit": "Gửi", "submitting": "Đang gửi...", "successTitle": "Đã gửi", "successDescription": "Cảm ơn báo cáo của bạn. Chúng tôi sẽ sửa chữa sớm nhất có thể.", "goHome": "Về Trang chủ"
+    "fields": {
+      "category": "Danh mục",
+      "title": "Tiêu đề",
+      "details": "Chi tiết",
+      "email": "Email (Tùy chọn)"
+    },
+    "categories": {
+      "bug": "Lỗi",
+      "translation": "Dịch thuật",
+      "result": "Vấn đề Kết quả",
+      "other": "Khác"
+    },
+    "submit": "Gửi",
+    "submitting": "Đang gửi...",
+    "successTitle": "Đã gửi",
+    "successDescription": "Cảm ơn báo cáo của bạn. Chúng tôi sẽ sửa chữa sớm nhất có thể.",
+    "goHome": "Về Trang chủ"
   },
   "admin": {
     "title": "Trang Quản Trị",
@@ -112,93 +140,58 @@
   },
   "lifePrioritiesTest": {
     "startMessage": {
-      "line1": "Điều gì thực sự quan trọng trong cuộc sống?",
-      "line2": "Tình yêu và thành công, tự do và ổn định, đam mê và bình yên...",
-      "line3": "Chúng ta đứng ở ngã tư lựa chọn mỗi khoảnh khắc.",
-      "line4": "Một số người từ bỏ mọi thứ vì tình yêu,",
-      "line5": "Một số người ưu tiên ước mơ của họ trước.",
-      "line6": "Một số người theo đuổi sự ổn định, một số người khao khát tự do.",
-      "line7": "Giá trị quan trọng nhất trong cuộc sống của bạn là gì?",
-      "line8": "Chỉ mất 2 phút! Chọn nhanh và trực quan 💭"
+      "line1": "\"Điều gì thực sự quan trọng trong cuộc sống của bạn?\"",
+      "line2": "Tiền bạc, danh vọng, tình yêu, tự do, gia đình, hạnh phúc...",
+      "line3": "Tất cả đều quan trọng, nhưng nếu phải chọn?",
+      "line4": "Bạn có thể từ bỏ mối quan hệ vì thành công không?",
+      "line5": "Bạn có thể bỏ sự ổn định vì tự do không?",
+      "line6": "Bạn có thể buông bỏ tham vọng vì hạnh phúc không?",
+      "line7": "Tìm thứ tự ưu tiên thực sự của bạn.",
+      "line8": "Mất 3 phút! Hãy suy nghĩ sâu sắc khi trả lời 💭"
     },
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
-      "shareResult": "Chia sẻ kết quả",
       "retakeTest": "Làm lại",
-      "otherTests": "Kiểm tra khác",
-      "linkCopy": "Sao chép liên kết",
-      "kakao": "KakaoTalk",
-      "wechat": "WeChat",
-      "whatsapp": "WhatsApp",
-      "telegram": "Telegram",
-      "line": "Line",
-      "adsenseTitle": "Khu vực quảng cáo AdSense",
-      "similarTests": "Các bài kiểm tra tương tự khác",
-      "goodTypes": "Loại tương thích",
-      "cautionTypes": "Loại cần thận trọng",
-      "reputation": "Danh tiếng",
-      "advice": "Lời khuyên",
-      "none": "Không có"
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến"
     },
     "result": {
-      "yourResult": "Ưu tiên cuộc sống của bạn",
-      "pros": "Ưu điểm",
-      "cons": "Nhược điểm",
+      "analyzing": "Đang phân tích kết quả...",
+      "analyzingDetail": "Đang phân tích thứ tự ưu tiên cuộc sống của bạn",
+      "completed": "Hoàn thành kiểm tra!",
+      "completedDetail": "Thứ tự ưu tiên cuộc sống của bạn đã được phân tích",
+      "showResult": "Xem kết quả phân tích",
+      "yourResult": "Kết quả của bạn là",
+      "coreValues": "Giá trị cốt lõi",
+      "strengths": "Ưu điểm",
+      "weaknesses": "Nhược điểm",
       "advice": "Lời khuyên",
-      "coreValues": "Giá Trị Cốt Lõi",
-      "type1": {
-        "title": "Định hướng thành tựu",
-        "emoji": "🏆",
-        "subtitle": "Thành công chính là tôi! Người tham vọng chạy về phía ước mơ",
-        "keywords": ["Thành công", "Tăng trưởng", "Công nhận", "Mục tiêu"]
-      },
-      "type2": {
-        "title": "Tập trung vào mối quan hệ",
-        "emoji": "💕",
-        "subtitle": "Tình yêu là tất cả! Người cảm xúc ưu tiên con người",
-        "keywords": ["Tình yêu", "Mối quan hệ", "Liên kết", "Cống hiến"]
-      },
-      "type3": {
-        "title": "Tìm kiếm tự do",
-        "emoji": "🦅",
-        "subtitle": "Tự do là tốt nhất! Linh hồn tự do bay không ràng buộc",
-        "keywords": ["Tự do", "Độc lập", "Phiêu lưu", "Tự chủ"]
-      },
-      "type4": {
-        "title": "Bình yên ổn định",
-        "emoji": "🏡",
-        "subtitle": "Hòa bình là tốt nhất! Muốn cuộc sống thoải mái và ổn định",
-        "keywords": ["Bình yên", "Ổn định", "Thoải mái", "Liên tục"]
-      },
-      "type5": {
-        "title": "Cân bằng hợp lý",
-        "emoji": "⚖️",
-        "subtitle": "Logic là câu trả lời! Người thực tế cân bằng một cách hợp lý",
-        "keywords": ["Cân bằng", "Logic", "Hợp lý", "Hiệu quả"]
-      },
-      "type6": {
-        "title": "Thử thách đam mê",
-        "emoji": "🔥",
-        "subtitle": "Khoảnh khắc này! Nhà thám hiểm sống đam mê",
-        "keywords": ["Đam mê", "Thử thách", "Hứng thú", "Hiện tại"]
-      }
+      "bestMatch": "💖 Phù hợp nhất",
+      "goodMatch": "😊 Phù hợp tốt",
+      "carefulMatch": "⚠️ Cần cẩn thận"
     },
     "shareMessages": {
-      "default": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
-      "kakao": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
-      "wechat": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
-      "whatsapp": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
-      "telegram": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?",
-      "line": "Tôi là {type}! Tôi đã tìm thấy giá trị quan trọng nhất trong cuộc sống 💭 Bạn sẽ chọn gì?"
+      "default": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "kakao": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "wechat": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "whatsapp": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "telegram": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
+      "line": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!"
     },
     "alerts": {
-      "linkCopied": "Liên kết đã được sao chép!",
-      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
-      "shareFailed": "Tính năng chia sẻ không khả dụng.",
-      "wechatCopy": "Liên kết đã được sao chép! Dán và chia sẻ trong WeChat.",
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
-      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
   "trustTest": {
@@ -212,7 +205,7 @@
     },
     "result": {
       "bestMatch": "Kết hợp tốt nhất",
-      "goodMatch": "Kết hợp tốt", 
+      "goodMatch": "Kết hợp tốt",
       "carefulMatch": "Kết hợp cẩn thận",
       "difficultMatch": "Kết hợp khó khăn"
     },
@@ -312,36 +305,87 @@
   },
   "empathyTest": {
     "startMessage": {
-      "line1": "\"Đo lường EQ chuyên nghiệp! Cấp độ khả năng đồng cảm của bạn là gì?\"",
-      "line2": "Bạn hiểu cảm xúc của người khác đến mức nào?",
-      "line3": "Bạn có thể cảm nhận được cảm xúc của người khác không?",
-      "line4": "Bạn có thể suy nghĩ từ góc độ của người khác không?",
-      "line5": "Khả năng đồng cảm là cốt lõi của các mối quan hệ và",
-      "line6": "là yếu tố quan trọng nhất của trí tuệ cảm xúc (EQ).",
-      "line7": "Hãy kiểm tra khả năng đồng cảm của bạn một cách chuyên nghiệp!",
-      "line8": "Mất 3 phút! Hãy trả lời thành thật 💙",
-      "line9": "Tổng cộng {count} người tham gia!"
+      "title": "\"Bạn có thể cảm nhận được bao nhiêu cảm xúc của người khác?\"",
+      "line1": "Một số người cảm thấy nỗi đau của người khác như của chính mình,",
+      "line2": "Một số người hiểu nhưng không cảm nhận cảm xúc.",
+      "line3": "Một số người nghĩ về giải pháp trước khi đồng cảm,",
+      "line4": "Một số người thấy khó hiểu chính cảm xúc.",
+      "line5": "Khả năng đồng cảm của bạn ở mức nào?",
+      "line6": "Kiểm tra mức độ đồng cảm của bạn với 12 câu hỏi, và nhận lời khuyên cho mối quan hệ tốt hơn!"
     },
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
+      "totalParticipants": "Tổng {count} người đã tham gia!",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất",
+      "played": "lần tham gia",
+      "recommendedProducts": "Sản phẩm được đề xuất",
       "progress": "Tiến độ",
       "analyzing": "Đang phân tích kết quả...",
+      "testCompleted": "🎉 Hoàn thành kiểm tra!",
+      "testCompletedMessage": "Phân tích khả năng đồng cảm đã hoàn thành!",
+      "viewResults": "Xem kết quả phân tích",
+      "retake": "Làm lại kiểm tra",
+      "shareResult": "Chia sẻ kết quả",
       "yourResult": "Kết quả của bạn",
-      "eqLevel": "Cấp độ EQ",
+      "empathyScore": "🎯 Điểm đồng cảm",
       "pros": "Ưu điểm",
       "cons": "Nhược điểm",
       "advice": "Lời khuyên",
-      "recommendedJobs": "Nghề nghiệp được đề xuất",
-      "compatibleTypes": "Loại tương thích",
-      "cautionTypes": "Loại cần chú ý",
-      "shareResult": "Chia sẻ kết quả",
-      "retake": "Làm lại kiểm tra",
-      "otherTests": "Các kiểm tra khác",
-      "whatsapp": "WhatsApp"
+      "compatibility": "Độ tương thích",
+      "bestMatch": "Kết hợp tốt nhất",
+      "goodMatch": "Kết hợp tốt",
+      "carefulMatch": "Cần thận trọng",
+      "difficultMatch": "Kết hợp khó khăn",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "copyLink": "Sao chép liên kết"
     },
     "result": {
-      "noCompatibleTypes": "Không có",
-      "noCautionTypes": "Không có"
+      "shareMessage": "Khả năng đồng cảm của tôi là {type}! Tôi đạt được {score} 💙 Bạn ở mức nào?",
+      "compatibility": {
+        "Type1_Type2": "Hiểu biết và tôn trọng lẫn nhau",
+        "Type1_Type3": "Giúp đỡ cân bằng",
+        "Type1_Type5": "Cô đơn và không được hiểu",
+        "Type1_Type6": "Cô đơn và không được hiểu",
+        "Type2_Type2": "Sự kết hợp hoàn hảo",
+        "Type2_Type1": "Hiểu biết và tôn trọng lẫn nhau",
+        "Type2_Type3": "Giúp đỡ cân bằng",
+        "Type2_Type6": "Khó khăn trong giao tiếp",
+        "Type3_Type3": "Hỗ trợ lẫn nhau thoải mái",
+        "Type3_Type4": "Hỗ trợ lẫn nhau thoải mái",
+        "Type3_Type2": "Giúp đỡ cân bằng",
+        "Type3_Type5": "Giúp đỡ cân bằng",
+        "Type3_Type1": "Chênh lệch nhiệt độ",
+        "Type4_Type4": "Hiểu biết lẫn nhau",
+        "Type4_Type5": "Hiểu biết lẫn nhau",
+        "Type4_Type3": "Giúp đỡ cân bằng",
+        "Type4_Type1": "Phương pháp khác nhau",
+        "Type4_Type2": "Phương pháp khác nhau",
+        "Type5_Type5": "Hiểu biết lẫn nhau",
+        "Type5_Type6": "Hiểu biết lẫn nhau",
+        "Type5_Type4": "Giúp đỡ cân bằng",
+        "Type5_Type1": "Dễ làm tổn thương",
+        "Type5_Type2": "Dễ làm tổn thương",
+        "Type6_Type6": "Hiểu biết lẫn nhau",
+        "Type6_Type5": "Hiểu biết lẫn nhau",
+        "Type6_Type1": "Rất khó duy trì mối quan hệ",
+        "Type6_Type2": "Rất khó duy trì mối quan hệ",
+        "Type6_Type3": "Rất khó duy trì mối quan hệ",
+        "Type6_Type4": "Rất khó duy trì mối quan hệ"
+      }
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "wechatLinkCopied": "Đã sao chép liên kết WeChat! Vui lòng dán vào WeChat.",
+      "copiedToClipboard": "Đã sao chép kết quả vào clipboard!",
+      "shareNotAvailable": "Tính năng chia sẻ không khả dụng.",
+      "kakaoInitializing": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
     }
   },
   "brainTest": {
@@ -355,20 +399,20 @@
     },
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
       "progress": "Tiến độ",
       "analyzing": "Đang phân tích kết quả...",
       "yourResult": "Kết quả của bạn",
       "characteristics": "🎯 Đặc điểm",
       "advantages": "✅ Ưu điểm",
       "disadvantages": "⚠️ Nhược điểm",
-      "advice": "💡 Lời khuyên",
+      "advice": "Lời khuyên",
       "recommendedJobs": "💼 Nghề nghiệp được đề xuất",
-      "compatibleTypes": "💖 Các kiểu tương thích",
-      "cautionTypes": "⚠️ Các kiểu cần thận trọng",
+      "compatibleTypes": "Các kiểu tương thích",
+      "cautionTypes": "Các kiểu cần thận trọng",
       "shareResult": "Chia sẻ kết quả",
       "retake": "Làm lại kiểm tra",
-      "otherTests": "Xem các kiểm tra khác",
+      "otherTests": "Xem kiểm tra khác",
       "linkCopy": "Sao chép liên kết",
       "kakao": "KakaoTalk",
       "wechat": "WeChat",
@@ -377,37 +421,26 @@
       "whatsapp": "WhatsApp",
       "adsenseTitle": "Khu vực quảng cáo AdSense",
       "similarTests": "Bài kiểm tra tương tự",
-      "advice": "Lời khuyên",
-      "compatibleTypes": "Các kiểu tương thích",
-      "cautionTypes": "Các kiểu cần thận trọng",
       "clipboardCopySuccess": "Kết quả đã được sao chép vào clipboard!",
       "shareFeatureError": "Tính năng chia sẻ không khả dụng.",
       "wechatLinkCopy": "Liên kết đã được sao chép! Dán vào WeChat để chia sẻ.",
       "kakaoInitializing": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk.",
       "linkCopySuccess": "Liên kết đã được sao chép!",
-      "startTest": "Bắt đầu kiểm tra",
-      "progress": "Tiến độ",
-      "analyzing": "Đang phân tích kết quả...",
       "questions": "câu hỏi",
       "time": "3 phút",
       "participants": "người tham gia",
-      "yourResult": "Kết quả của bạn",
       "strengths": "Điểm mạnh",
       "weaknesses": "Điểm yếu",
-      "totalParticipants": "Tổng cộng {count} người tham gia!",
-      "shareResult": "Chia sẻ kết quả",
-      "retake": "Làm lại kiểm tra",
-      "otherTests": "Xem kiểm tra khác",
-      "shareWithFriends": "Thử với bạn bè"
+      "totalParticipants": "Tổng cộng {count} người tham gia!"
     },
     "shareMessages": {
-      "default": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
-      "kakao": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
-      "wechat": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
-      "whatsapp": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
-      "telegram": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨",
-      "line": "Tôi là {type}! Kiểm tra Não trái vs Não phải hoàn thành! Bạn là gì? 🧠🎨"
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨"
     },
     "compatibility": {
       "Type1_Type2": "Có thể có cuộc trò chuyện logic với kiểu Não trái ưu thế.",
@@ -424,14 +457,6 @@
       "Type4_Type1": "Có thể có xung đột tư duy với kiểu Não trái cực đoan.",
       "Type5_Type1": "Thế giới hoàn toàn khác với kiểu Não trái cực đoan.",
       "Type6_Type1_Type5": "Hiểu biết có thể khó khăn với các kiểu cực đoan (Não trái/phải cực đoan)."
-    },
-    "shareMessages": {
-      "default": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
-      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
-      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
-      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
-      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨",
-      "line": "Tôi là {type}! Hoàn thành bài kiểm tra Não trái vs Não phải! Bạn là gì? 🧠🎨"
     },
     "result": {
       "longDescription": "Mô tả chi tiết",
@@ -565,91 +590,6 @@
       "wechatInstructions": "Sao chép liên kết và gửi qua WeChat!"
     }
   },
-  "empathyTest": {
-    "startMessage": {
-      "title": "\"Bạn có thể cảm nhận được bao nhiêu cảm xúc của người khác?\"",
-      "line1": "Một số người cảm thấy nỗi đau của người khác như của chính mình,",
-      "line2": "Một số người hiểu nhưng không cảm nhận cảm xúc.",
-      "line3": "Một số người nghĩ về giải pháp trước khi đồng cảm,",
-      "line4": "Một số người thấy khó hiểu chính cảm xúc.",
-      "line5": "Khả năng đồng cảm của bạn ở mức nào?",
-      "line6": "Kiểm tra mức độ đồng cảm của bạn với 12 câu hỏi, và nhận lời khuyên cho mối quan hệ tốt hơn!"
-    },
-    "ui": {
-      "startTest": "Bắt đầu kiểm tra",
-      "totalParticipants": "Tổng {count} người đã tham gia!",
-      "similarTests": "Các bài kiểm tra tương tự khác",
-      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
-      "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất",
-      "played": "lần tham gia",
-      "recommendedProducts": "Sản phẩm được đề xuất",
-      "progress": "Tiến độ",
-      "analyzing": "Đang phân tích kết quả...",
-      "testCompleted": "🎉 Hoàn thành kiểm tra!",
-      "testCompletedMessage": "Phân tích khả năng đồng cảm đã hoàn thành!",
-      "viewResults": "Xem kết quả phân tích",
-      "retake": "Làm lại kiểm tra",
-      "shareResult": "Chia sẻ kết quả",
-      "yourResult": "Kết quả của bạn",
-      "empathyScore": "🎯 Điểm đồng cảm",
-      "pros": "Ưu điểm",
-      "cons": "Nhược điểm",
-      "advice": "Lời khuyên",
-      "compatibility": "Độ tương thích",
-      "bestMatch": "Kết hợp tốt nhất",
-      "goodMatch": "Kết hợp tốt",
-      "carefulMatch": "Cần thận trọng",
-      "difficultMatch": "Kết hợp khó khăn",
-      "kakao": "KakaoTalk",
-      "telegram": "Telegram",
-      "wechat": "WeChat",
-      "line": "LINE",
-      "whatsapp": "WhatsApp",
-      "copyLink": "Sao chép liên kết"
-    },
-    "result": {
-      "shareMessage": "Khả năng đồng cảm của tôi là {type}! Tôi đạt được {score} 💙 Bạn ở mức nào?",
-      "compatibility": {
-        "Type1_Type2": "Hiểu biết và tôn trọng lẫn nhau",
-        "Type1_Type3": "Giúp đỡ cân bằng",
-        "Type1_Type5": "Cô đơn và không được hiểu",
-        "Type1_Type6": "Cô đơn và không được hiểu",
-        "Type2_Type2": "Sự kết hợp hoàn hảo",
-        "Type2_Type1": "Hiểu biết và tôn trọng lẫn nhau",
-        "Type2_Type3": "Giúp đỡ cân bằng",
-        "Type2_Type6": "Khó khăn trong giao tiếp",
-        "Type3_Type3": "Hỗ trợ lẫn nhau thoải mái",
-        "Type3_Type4": "Hỗ trợ lẫn nhau thoải mái",
-        "Type3_Type2": "Giúp đỡ cân bằng",
-        "Type3_Type5": "Giúp đỡ cân bằng",
-        "Type3_Type1": "Chênh lệch nhiệt độ",
-        "Type4_Type4": "Hiểu biết lẫn nhau",
-        "Type4_Type5": "Hiểu biết lẫn nhau",
-        "Type4_Type3": "Giúp đỡ cân bằng",
-        "Type4_Type1": "Phương pháp khác nhau",
-        "Type4_Type2": "Phương pháp khác nhau",
-        "Type5_Type5": "Hiểu biết lẫn nhau",
-        "Type5_Type6": "Hiểu biết lẫn nhau",
-        "Type5_Type4": "Giúp đỡ cân bằng",
-        "Type5_Type1": "Dễ làm tổn thương",
-        "Type5_Type2": "Dễ làm tổn thương",
-        "Type6_Type6": "Hiểu biết lẫn nhau",
-        "Type6_Type5": "Hiểu biết lẫn nhau",
-        "Type6_Type1": "Rất khó duy trì mối quan hệ",
-        "Type6_Type2": "Rất khó duy trì mối quan hệ",
-        "Type6_Type3": "Rất khó duy trì mối quan hệ",
-        "Type6_Type4": "Rất khó duy trì mối quan hệ"
-      }
-    },
-    "alerts": {
-      "linkCopied": "Đã sao chép liên kết!",
-      "wechatLinkCopied": "Đã sao chép liên kết WeChat! Vui lòng dán vào WeChat.",
-      "copiedToClipboard": "Đã sao chép kết quả vào clipboard!",
-      "shareNotAvailable": "Tính năng chia sẻ không khả dụng.",
-      "kakaoInitializing": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
-      "kakaoShareError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
-    }
-  },
   "spouseTest": {
     "startMessage": {
       "title": "「Người sẽ cùng bạn trải qua cuộc đời, kiểu nào sẽ tốt?」",
@@ -718,7 +658,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "participants": "người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại kiểm tra",
       "shareResult": "Chia sẻ kết quả",
@@ -820,7 +761,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "participants": "người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại",
       "shareResult": "Chia sẻ kết quả",
@@ -930,7 +872,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "participants": "người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại",
       "shareResult": "Chia sẻ kết quả",
@@ -969,61 +912,6 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
-  "lifePrioritiesTest": {
-    "startMessage": {
-      "line1": "\"Điều gì thực sự quan trọng trong cuộc sống của bạn?\"",
-      "line2": "Tiền bạc, danh vọng, tình yêu, tự do, gia đình, hạnh phúc...",
-      "line3": "Tất cả đều quan trọng, nhưng nếu phải chọn?",
-      "line4": "Bạn có thể từ bỏ mối quan hệ vì thành công không?",
-      "line5": "Bạn có thể bỏ sự ổn định vì tự do không?",
-      "line6": "Bạn có thể buông bỏ tham vọng vì hạnh phúc không?",
-      "line7": "Tìm thứ tự ưu tiên thực sự của bạn.",
-      "line8": "Mất 3 phút! Hãy suy nghĩ sâu sắc khi trả lời 💭"
-    },
-    "ui": {
-      "startTest": "Bắt đầu kiểm tra",
-      "participants": "người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
-      "progress": "Tiến độ",
-      "retakeTest": "Làm lại",
-      "shareResult": "Chia sẻ kết quả",
-      "retake": "Làm lại",
-      "otherTests": "Các bài kiểm tra khác",
-      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
-      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến"
-    },
-    "result": {
-      "analyzing": "Đang phân tích kết quả...",
-      "analyzingDetail": "Đang phân tích thứ tự ưu tiên cuộc sống của bạn",
-      "completed": "Hoàn thành kiểm tra!",
-      "completedDetail": "Thứ tự ưu tiên cuộc sống của bạn đã được phân tích",
-      "showResult": "Xem kết quả phân tích",
-      "yourResult": "Kết quả của bạn là",
-      "coreValues": "Giá trị cốt lõi",
-      "strengths": "Ưu điểm",
-      "weaknesses": "Nhược điểm",
-      "advice": "Lời khuyên",
-      "bestMatch": "💖 Phù hợp nhất",
-      "goodMatch": "😊 Phù hợp tốt",
-      "carefulMatch": "⚠️ Cần cẩn thận"
-    },
-    "shareMessages": {
-      "default": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
-      "kakao": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
-      "wechat": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
-      "whatsapp": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
-      "telegram": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!",
-      "line": "Tôi là {type}! 💭 Điều gì quan trọng nhất trong cuộc sống? Điều gì quan trọng nhất với bạn? Hãy so sánh thứ tự ưu tiên của chúng ta!"
-    },
-    "alerts": {
-      "linkCopied": "Đã sao chép liên kết!",
-      "resultCopied": "Đã sao chép kết quả vào clipboard!",
-      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
-      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
-      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
-      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
-    }
-  },
   "attachmentTest": {
     "startMessage": {
       "line1": "Cách yêu của bạn, được quyết định từ thời thơ ấu?",
@@ -1040,7 +928,8 @@
       "shareResult": "Chia sẻ Kết quả",
       "retake": "Làm lại",
       "otherTests": "Bài kiểm tra Khác",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "similarTests": "Top 5 Bài kiểm tra Tương tự Được đề xuất",
       "popularTests": "Top 5 Bài kiểm tra Phổ biến Được đề xuất"
     },
@@ -1069,7 +958,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "participants": " người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại",
       "shareResult": "Chia sẻ kết quả",
@@ -1189,7 +1079,8 @@
     },
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "totalParticipants": "Tổng {count} người đã tham gia！",
       "progress": "Tiến độ",
       "analyzing": "Đang phân tích kết quả...",
@@ -1261,7 +1152,8 @@
     },
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "participantCount": "Tổng cộng {count} người tham gia!",
       "progress": "Tiến độ",
       "analyzing": "Đang phân tích kết quả...",
@@ -1300,7 +1192,8 @@
     },
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "participantCount": "Tổng cộng {count} người đã tham gia!",
       "progress": "Tiến độ",
       "analyzing": "Đang phân tích kết quả...",
@@ -1591,7 +1484,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "participants": "Người tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại",
       "shareResult": "Chia sẻ kết quả",
@@ -1629,7 +1523,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "totalParticipants": "{count} người tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại",
       "shareResult": "Chia sẻ kết quả",
@@ -1687,7 +1582,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "participants": "người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại",
       "shareResult": "Chia sẻ kết quả",
@@ -1782,7 +1678,8 @@
     "ui": {
       "startTest": "Bắt đầu bài kiểm tra",
       "participants": " người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại bài kiểm tra",
       "shareResult": "Chia sẻ kết quả",
@@ -1832,7 +1729,8 @@
     "ui": {
       "startTest": "Bắt đầu kiểm tra",
       "participants": "người đã tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "progress": "Tiến độ",
       "retakeTest": "Làm lại kiểm tra",
       "shareResult": "Chia sẻ kết quả",
@@ -2013,20 +1911,20 @@
       "close": "Đóng"
     },
     "shareMessages": {
-      "default": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
-      "kakao": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
-      "wechat": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
-      "whatsapp": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
-      "telegram": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚",
-      "line": "Tôi là {type}! Kết quả kiểm tra ghen tuông... Bạn thì sao? Hãy thử cùng nhau! 💚"
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️"
     },
     "alerts": {
       "linkCopied": "Đã sao chép liên kết!",
-      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
-      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
-      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
-      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     },
     "result": {
       "reactionFeatures": "Đặc điểm phản ứng",
@@ -2072,118 +1970,6 @@
         "Type6_Type5": "Xấu đi khi ở cùng nhau",
         "Type6_Type6": "Xấu đi khi ở cùng nhau"
       }
-    },
-    "shareMessages": {
-      "default": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
-      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
-      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
-      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
-      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️",
-      "line": "Tôi là {type}! Hoàn thành bài kiểm tra ghen tuông! Tôi có ghen tuông không? Còn bạn? Hãy thử cùng nhau! 💚❤️"
-    },
-    "alerts": {
-      "linkCopied": "Đã sao chép liên kết!",
-      "resultCopied": "Đã sao chép kết quả vào clipboard!",
-      "shareFailed": "Tính năng chia sẻ không khả dụng.",
-      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
-      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
-      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
-    }
-  },
-  "mbtiAccurateTest": {
-    "startMessage": {
-      "line1": "Đo lường MBTI chính xác! Kiểu tính cách thật của bạn là gì?",
-      "line2": "Hướng ngoại? Hướng nội? Cảm giác? Trực giác? Suy nghĩ? Cảm xúc? Phán đoán? Nhận thức?",
-      "line3": "Không phải bài kiểm tra đơn giản, mà là 32 câu hỏi với độ chính xác cao để tìm ra MBTI thật của bạn.",
-      "line4": "Trong 16 kiểu tính cách, bạn thuộc loại nào?",
-      "line5": "Dựa trên các tình huống thực tế, đạt độ chính xác hơn 85%!",
-      "line6": "Mất khoảng 15 phút! Hãy trả lời thành thật 🎯"
-    },
-    "shareMessages": {
-      "default": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
-      "kakao": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
-      "wechat": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
-      "whatsapp": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
-      "telegram": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯",
-      "line": "Tôi là {type}! Bài kiểm tra MBTI chính xác tối đa hoàn thành! Bạn cũng thử đi! 🎯"
-    },
-    "alerts": {
-      "linkCopied": "Đã sao chép liên kết!",
-      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
-      "shareFailed": "Tính năng chia sẻ không khả dụng.",
-      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
-      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
-      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
-    },
-    "ui": {
-      "noData": "Không có dữ liệu",
-      "compatibleTypes": "Các kiểu tương thích",
-      "warningTypes": "Các kiểu cần chú ý",
-      "advice": "Lời khuyên",
-      "linkCopy": "Sao chép liên kết",
-      "kakao": "KakaoTalk",
-      "adsenseTitle": "Quảng cáo"
-    }
-  },
-  "quickDecisionTest": {
-    "startMessage": {
-      "title": "Một phán đoán 1 giây thay đổi mọi thứ! Sự nhanh nhẹn của bạn như thế nào?",
-      "description": "Tình huống khủng hoảng đột ngột, khoảnh khắc lựa chọn bất ngờ, khoảnh khắc cần quyết định nhanh...\nMột số người phản ứng ngay lập tức, một số người suy nghĩ cẩn thận, và một số người đóng băng.\nBạn phản ứng như thế nào trong tình huống khẩn cấp? Trong những khoảnh khắc cần phán đoán nhanh, lựa chọn của bạn là gì?\nChỉ 3 phút để khám phá phong cách ra quyết định và mức độ nhanh nhẹn của bạn!",
-      "startButton": "Bắt đầu"
-    },
-    "ui": {
-      "share": "Chia sẻ",
-      "linkCopy": "Sao chép liên kết",
-      "kakao": "KakaoTalk",
-      "wechat": "WeChat",
-      "whatsapp": "WhatsApp",
-      "telegram": "Telegram",
-      "line": "Line",
-      "retake": "Làm lại",
-      "shareResult": "Chia sẻ kết quả",
-      "otherTests": "Các bài kiểm tra khác",
-      "similarTests": "Các bài kiểm tra tương tự khác",
-      "adsenseTitle": "Kiểm tra các sản phẩm liên quan!",
-      "noData": "Không có dữ liệu"
-    },
-    "result": {
-      "advice": "Lời khuyên",
-      "compatibleTypes": "Loại tương thích",
-      "warningTypes": "Loại cần chú ý",
-      "bestMatch": "Kết hợp tốt nhất",
-      "goodMatch": "Kết hợp tốt",
-      "carefulMatch": "Cần thận trọng",
-      "difficultMatch": "Mối quan hệ khó khăn"
-    },
-    "shareMessages": {
-      "default": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
-      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
-      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
-      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
-      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
-      "line": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨"
-    },
-    "alerts": {
-      "linkCopied": "Liên kết đã được sao chép!",
-      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
-      "shareFailed": "Tính năng chia sẻ không khả dụng.",
-      "wechatCopy": "Liên kết đã được sao chép! Dán trong WeChat để chia sẻ.",
-      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
-      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
-    },
-    "ui": {
-      "noData": "Không có dữ liệu",
-      "compatibleTypes": "Loại tương thích",
-      "warningTypes": "Loại cần chú ý",
-      "advice": "Lời khuyên",
-      "linkCopy": "Sao chép liên kết",
-      "kakao": "KakaoTalk",
-      "adsenseTitle": "Quảng cáo",
-      "careers": "Nghề nghiệp",
-      "dating": "Hẹn hò",
-      "celebrities": "Người nổi tiếng",
-      "compatibleTypesTitle": "Loại tương thích",
-      "warningTypesTitle": "Loại cần chú ý"
     }
   },
   "mbtiAccurateTest": {
@@ -2224,6 +2010,52 @@
       "celebrities": "Người nổi tiếng",
       "compatibleTypesTitle": "Loại tương thích",
       "warningTypesTitle": "Loại cần chú ý"
+    }
+  },
+  "quickDecisionTest": {
+    "startMessage": {
+      "title": "Một phán đoán 1 giây thay đổi mọi thứ! Sự nhanh nhẹn của bạn như thế nào?",
+      "description": "Tình huống khủng hoảng đột ngột, khoảnh khắc lựa chọn bất ngờ, khoảnh khắc cần quyết định nhanh...\nMột số người phản ứng ngay lập tức, một số người suy nghĩ cẩn thận, và một số người đóng băng.\nBạn phản ứng như thế nào trong tình huống khẩn cấp? Trong những khoảnh khắc cần phán đoán nhanh, lựa chọn của bạn là gì?\nChỉ 3 phút để khám phá phong cách ra quyết định và mức độ nhanh nhẹn của bạn!",
+      "startButton": "Bắt đầu"
+    },
+    "ui": {
+      "noData": "Không có dữ liệu",
+      "compatibleTypes": "Loại tương thích",
+      "warningTypes": "Loại cần chú ý",
+      "advice": "Lời khuyên",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "adsenseTitle": "Quảng cáo",
+      "careers": "Nghề nghiệp",
+      "dating": "Hẹn hò",
+      "celebrities": "Người nổi tiếng",
+      "compatibleTypesTitle": "Loại tương thích",
+      "warningTypesTitle": "Loại cần chú ý"
+    },
+    "result": {
+      "advice": "Lời khuyên",
+      "compatibleTypes": "Loại tương thích",
+      "warningTypes": "Loại cần chú ý",
+      "bestMatch": "Kết hợp tốt nhất",
+      "goodMatch": "Kết hợp tốt",
+      "carefulMatch": "Cần thận trọng",
+      "difficultMatch": "Mối quan hệ khó khăn"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "kakao": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "wechat": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "whatsapp": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "telegram": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨",
+      "line": "Tôi là {type}! Hoàn thành bài kiểm tra quyết định trong khoảnh khắc! Tôi phản ứng như thế nào trong tình huống khủng hoảng? Còn bạn? 🚨"
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Liên kết đã được sao chép! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
     }
   },
   "brainQuizTest": {
@@ -2410,7 +2242,8 @@
       "similarTests": "🎯 Top 5 bài kiểm tra tương tự khác",
       "adsenseTitle": "Khu vực quảng cáo AdSense",
       "totalParticipants": "{count} người tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "testCompleted": "Hoàn thành bài kiểm tra!",
       "viewResults": "Xem kết quả phân tích",
       "yourResult": "Kết quả của bạn là",
@@ -2688,7 +2521,8 @@
       "similarTests": "🎯 Top 5 bài kiểm tra tương tự khác",
       "adsenseTitle": "Khu vực quảng cáo AdSense",
       "totalParticipants": "{count} người tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "testCompleted": "Hoàn thành bài kiểm tra!",
       "viewResults": "Xem kết quả phân tích",
       "yourResult": "Kết quả của bạn là",
@@ -2776,7 +2610,8 @@
       "similarTests": "🎯 Top 5 bài kiểm tra tương tự khác",
       "adsenseTitle": "Khu vực quảng cáo AdSense",
       "totalParticipants": "{count} người tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "testCompleted": "Hoàn thành bài kiểm tra!",
       "viewResults": "Xem kết quả phân tích",
       "yourResult": "Kết quả của bạn là",
@@ -2848,7 +2683,8 @@
       "analyzing": "Đang phân tích khuôn mặt của bạn...",
       "resultTitle": "Kiếp trước của bạn",
       "totalParticipants": "Tổng cộng {count} người tham gia!",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "similarTests": "🎯 Top 5 bài kiểm tra tương tự khác",
       "testCompleted": "Hoàn thành kiểm tra!",
       "adsenseTitle": "Khu vực quảng cáo AdSense",

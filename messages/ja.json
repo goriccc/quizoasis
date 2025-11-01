@@ -12,16 +12,44 @@
   "feedback": {
     "title": "フィードバック送信",
     "description": "新テスト開発、面白いアイデアなどをお送りください。",
-    "fields": { "category": "カテゴリ", "title": "タイトル", "details": "詳細内容", "email": "メール（任意）" },
-    "categories": { "newTest": "新テストリクエスト", "ux": "UI/UX改善", "idea": "アイデア提案", "other": "その他" },
-    "submit": "送信", "submitting": "送信中...", "successTitle": "送信完了", "successDescription": "貴重なフィードバックをありがとうございます。検討後反映いたします。", "goHome": "ホームへ"
+    "fields": {
+      "category": "カテゴリ",
+      "title": "タイトル",
+      "details": "詳細内容",
+      "email": "メール（任意）"
+    },
+    "categories": {
+      "newTest": "新テストリクエスト",
+      "ux": "UI/UX改善",
+      "idea": "アイデア提案",
+      "other": "その他"
+    },
+    "submit": "送信",
+    "submitting": "送信中...",
+    "successTitle": "送信完了",
+    "successDescription": "貴重なフィードバックをありがとうございます。検討後反映いたします。",
+    "goHome": "ホームへ"
   },
   "report": {
     "title": "エラー報告",
     "description": "アプリエラー、翻訳問題、結果異常などをお知らせください。",
-    "fields": { "category": "カテゴリ", "title": "タイトル", "details": "詳細内容", "email": "メール（任意）" },
-    "categories": { "bug": "バグ", "translation": "翻訳", "result": "結果問題", "other": "その他" },
-    "submit": "送信", "submitting": "送信中...", "successTitle": "送信完了", "successDescription": "報告ありがとうございます。できるだけ早く修正いたします。", "goHome": "ホームへ"
+    "fields": {
+      "category": "カテゴリ",
+      "title": "タイトル",
+      "details": "詳細内容",
+      "email": "メール（任意）"
+    },
+    "categories": {
+      "bug": "バグ",
+      "translation": "翻訳",
+      "result": "結果問題",
+      "other": "その他"
+    },
+    "submit": "送信",
+    "submitting": "送信中...",
+    "successTitle": "送信完了",
+    "successDescription": "報告ありがとうございます。できるだけ早く修正いたします。",
+    "goHome": "ホームへ"
   },
   "admin": {
     "title": "管理ページ",
@@ -112,93 +140,58 @@
   },
   "lifePrioritiesTest": {
     "startMessage": {
-      "line1": "人生で本当に重要なことは何ですか？",
-      "line2": "愛と成功、自由と安定、情熱と平穏...",
-      "line3": "私たちは毎瞬間選択の岐路に立っています。",
-      "line4": "ある人は愛のためにすべてを放棄し、",
-      "line5": "ある人は自分の夢を最優先にします。",
-      "line6": "ある人は安定を追求し、ある人は自由を渇望します。",
-      "line7": "あなたの人生で最も重要な価値は何ですか？",
-      "line8": "所要時間わずか2分！直感的に素早く選択してください 💭"
+      "line1": "「あなたの人生で本当に重要なことは何ですか？」",
+      "line2": "お金、名声、愛、自由、家族、幸せ...",
+      "line3": "すべて重要ですが、選ばなければならないなら？",
+      "line4": "成功のために関係を諦められますか？",
+      "line5": "自由のために安定を捨てられますか？",
+      "line6": "幸せのために野心を手放せますか？",
+      "line7": "あなたの本当の優先順位を見つけてください。",
+      "line8": "所要時間3分！深く考えながら答えてください 💭"
     },
     "ui": {
       "startTest": "テスト開始",
-      "progress": "進捗",
+      "participants": "人が参加しました",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
+      "progress": "進捗率",
+      "retakeTest": "もう一度",
       "shareResult": "結果を共有",
-      "retakeTest": "再挑戦",
-      "otherTests": "他のテスト",
-      "linkCopy": "リンクコピー",
-      "kakao": "カカオトーク",
-      "wechat": "WeChat",
-      "whatsapp": "WhatsApp",
-      "telegram": "Telegram",
-      "line": "Line",
-      "adsenseTitle": "AdSense広告エリア",
-      "similarTests": "類似の他のテスト",
-      "goodTypes": "相性の良いタイプ",
-      "cautionTypes": "注意タイプ",
-      "reputation": "評判",
-      "advice": "アドバイス",
-      "none": "なし"
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "🎯 類似の他のテスト推奨トップ5",
+      "popularTests": "🔥 最近人気のテスト推奨トップ5"
     },
     "result": {
-      "yourResult": "あなたの人生優先順位",
-      "pros": "長所",
-      "cons": "短所",
+      "analyzing": "結果を分析中...",
+      "analyzingDetail": "あなたの人生の優先順位を分析しています",
+      "completed": "テスト完了！",
+      "completedDetail": "あなたの人生の優先順位が分析されました",
+      "showResult": "分析結果を見る",
+      "yourResult": "あなたの結果は",
+      "coreValues": "核心的価値",
+      "strengths": "強み",
+      "weaknesses": "弱み",
       "advice": "アドバイス",
-      "coreValues": "核心価値",
-      "type1": {
-        "title": "達成志向型",
-        "emoji": "🏆",
-        "subtitle": "成功こそが私！夢に向かって走る野心家",
-        "keywords": ["成功", "成長", "承認", "目標"]
-      },
-      "type2": {
-        "title": "関係中心型",
-        "emoji": "💕",
-        "subtitle": "愛がすべて！人を最優先にする感情派",
-        "keywords": ["愛", "関係", "絆", "献身"]
-      },
-      "type3": {
-        "title": "自由追求型",
-        "emoji": "🦅",
-        "subtitle": "自由が最高！束縛なく飛ぶ自由な魂",
-        "keywords": ["自由", "独立", "冒険", "自律性"]
-      },
-      "type4": {
-        "title": "平穏安定型",
-        "emoji": "🏡",
-        "subtitle": "平和が最高！快適で安定した生活を求める",
-        "keywords": ["平穏", "安定", "快適", "持続性"]
-      },
-      "type5": {
-        "title": "理性均衡型",
-        "emoji": "⚖️",
-        "subtitle": "論理が答え！合理的にバランスを取る現実主義者",
-        "keywords": ["均衡", "論理", "合理性", "効率"]
-      },
-      "type6": {
-        "title": "情熱挑戦型",
-        "emoji": "🔥",
-        "subtitle": "今この瞬間！情熱的に生きる冒険家",
-        "keywords": ["情熱", "挑戦", "ワクワク", "現在"]
-      }
+      "bestMatch": "💖 相性の良いタイプ",
+      "goodMatch": "😊 まあまあのタイプ",
+      "carefulMatch": "⚠️ 注意タイプ"
     },
     "shareMessages": {
-      "default": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
-      "kakao": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
-      "wechat": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
-      "whatsapp": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
-      "telegram": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？",
-      "line": "私は{type}！人生で最も重要な価値を見つけました 💭 あなたは何を選びますか？"
+      "default": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
+      "kakao": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
+      "wechat": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
+      "whatsapp": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
+      "telegram": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
+      "line": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！"
     },
     "alerts": {
       "linkCopied": "リンクがコピーされました！",
       "resultCopied": "結果がクリップボードにコピーされました！",
       "shareFailed": "共有機能を使用できません。",
       "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
-      "kakaoInit": "KakaoTalk共有機能を初期化中です。しばらくしてから再試行してください。",
-      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
   "trustTest": {
@@ -212,7 +205,7 @@
     },
     "result": {
       "bestMatch": "最高の相性",
-      "goodMatch": "良い相性", 
+      "goodMatch": "良い相性",
       "carefulMatch": "注意の相性",
       "difficultMatch": "難しい相性"
     },
@@ -312,36 +305,87 @@
   },
   "empathyTest": {
     "startMessage": {
-      "line1": "\"EQ専門測定！あなたの共感能力レベルは？\"",
-      "line2": "他人の感情をどれくらい理解できますか？",
-      "line3": "相手の気持ちを感じることができますか？",
-      "line4": "他人の立場で考えることができますか？",
-      "line5": "共感能力は関係の核心であり、",
-      "line6": "感情知能(EQ)の最も重要な要素です。",
-      "line7": "あなたの共感能力を専門的に測定してみましょう！",
-      "line8": "所要時間3分！正直に答えてください 💙",
-      "line9": "合計{count}人が参加しました！"
+      "title": "「他の人の感情をどれくらい感じることができますか？」",
+      "line1": "ある人は他人の痛みを自分のことのように感じ、",
+      "line2": "ある人は理解はするが感情は感じません。",
+      "line3": "ある人は共感より解決策を先に考え、",
+      "line4": "ある人は感情そのものを理解するのが困難です。",
+      "line5": "あなたの共感能力はどの程度ですか？",
+      "line6": "12の質問であなたの共感レベルを確認し、より良い関係のためのアドバイスを受け取ってください！"
     },
     "ui": {
       "startTest": "テスト開始",
+      "totalParticipants": "総{count}人が参加しました！",
+      "similarTests": "類似の他のテスト",
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 人気テストおすすめトップ5",
+      "played": "回参加",
+      "recommendedProducts": "おすすめ商品",
       "progress": "進捗",
       "analyzing": "結果分析中...",
+      "testCompleted": "🎉 テスト完了！",
+      "testCompletedMessage": "共感能力分析が完了しました！",
+      "viewResults": "分析結果を見る",
+      "retake": "再テスト",
+      "shareResult": "結果を共有",
       "yourResult": "あなたの結果",
-      "eqLevel": "EQレベル",
+      "empathyScore": "🎯 共感スコア",
       "pros": "長所",
       "cons": "短所",
       "advice": "アドバイス",
-      "recommendedJobs": "おすすめ職業",
-      "compatibleTypes": "相性の良いタイプ",
-      "cautionTypes": "注意タイプ",
-      "shareResult": "結果を共有",
-      "retake": "再テスト",
-      "otherTests": "他のテスト",
-      "whatsapp": "WhatsApp"
+      "compatibility": "相性",
+      "bestMatch": "最高の相性",
+      "goodMatch": "良い相性",
+      "carefulMatch": "注意が必要",
+      "difficultMatch": "難しい相性",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "copyLink": "リンクをコピー"
     },
     "result": {
-      "noCompatibleTypes": "なし",
-      "noCautionTypes": "なし"
+      "shareMessage": "私の共感能力は{type}！{score}を獲得しました 💙 あなたはどの程度ですか？",
+      "compatibility": {
+        "Type1_Type2": "お互い理解し尊重",
+        "Type1_Type3": "バランスの取れた助け",
+        "Type1_Type5": "孤独で理解されない",
+        "Type1_Type6": "孤独で理解されない",
+        "Type2_Type2": "完璧な組み合わせ",
+        "Type2_Type1": "お互い理解し尊重",
+        "Type2_Type3": "バランスの取れた助け",
+        "Type2_Type6": "コミュニケーション困難",
+        "Type3_Type3": "お互い快適に依存",
+        "Type3_Type4": "お互い快適に依存",
+        "Type3_Type2": "バランスの取れた助け",
+        "Type3_Type5": "バランスの取れた助け",
+        "Type3_Type1": "温度差",
+        "Type4_Type4": "お互い理解",
+        "Type4_Type5": "お互い理解",
+        "Type4_Type3": "バランスの取れた助け",
+        "Type4_Type1": "アプローチの違い",
+        "Type4_Type2": "アプローチの違い",
+        "Type5_Type5": "お互い理解",
+        "Type5_Type6": "お互い理解",
+        "Type5_Type4": "バランスの取れた助け",
+        "Type5_Type1": "傷つけやすい",
+        "Type5_Type2": "傷つけやすい",
+        "Type6_Type6": "お互い理解",
+        "Type6_Type5": "お互い理解",
+        "Type6_Type1": "関係維持が非常に困難",
+        "Type6_Type2": "関係維持が非常に困難",
+        "Type6_Type3": "関係維持が非常に困難",
+        "Type6_Type4": "関係維持が非常に困難"
+      }
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "wechatLinkCopied": "WeChatリンクがコピーされました！WeChatで貼り付けてください。",
+      "copiedToClipboard": "結果がクリップボードにコピーされました！",
+      "shareNotAvailable": "共有機能を使用できません。",
+      "kakaoInitializing": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoShareError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
   "brainTest": {
@@ -355,18 +399,18 @@
     },
     "ui": {
       "startTest": "テスト開始",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみよう",
       "progress": "進捗",
       "analyzing": "結果分析中...",
       "yourResult": "あなたの結果",
       "characteristics": "🎯 特徴",
       "advantages": "✅ 長所",
       "disadvantages": "⚠️ 短所",
-      "advice": "💡 アドバイス",
+      "advice": "アドバイス",
       "recommendedJobs": "💼 おすすめ職業",
-      "compatibleTypes": "💖 相性の良いタイプ",
-      "cautionTypes": "⚠️ 注意が必要なタイプ",
-      "shareResult": "結果を共有する",
+      "compatibleTypes": "相性の良いタイプ",
+      "cautionTypes": "注意が必要なタイプ",
+      "shareResult": "結果を共有",
       "retake": "再テスト",
       "otherTests": "他のテストを見る",
       "linkCopy": "リンクをコピー",
@@ -378,37 +422,26 @@
       "adsenseTitle": "AdSense広告エリア",
       "similarTests": "類似テスト",
       "similarTestsTop5": "🎯 類似テスト トップ5",
-      "advice": "アドバイス",
-      "compatibleTypes": "相性の良いタイプ",
-      "cautionTypes": "注意が必要なタイプ",
       "clipboardCopySuccess": "結果がクリップボードにコピーされました！",
       "shareFeatureError": "共有機能が利用できません。",
       "wechatLinkCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
       "kakaoInitializing": "カカオトーク共有機能を初期化中です。しばらくしてから再度お試しください。",
       "kakaoShareError": "カカオトーク共有中にエラーが発生しました。",
       "linkCopySuccess": "リンクがコピーされました！",
-      "startTest": "テスト開始",
-      "progress": "進捗",
-      "analyzing": "結果分析中...",
       "questions": "質問",
       "time": "3分",
       "participants": "名参加",
-      "yourResult": "あなたの結果",
       "strengths": "長所",
       "weaknesses": "短所",
-      "totalParticipants": "合計{count}名が参加しました！",
-      "shareResult": "結果を共有",
-      "retake": "再テスト",
-      "otherTests": "他のテストを見る",
-      "shareWithFriends": "友達と一緒にやってみよう"
+      "totalParticipants": "合計{count}名が参加しました！"
     },
     "shareMessages": {
-      "default": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
-      "kakao": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
-      "wechat": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
-      "whatsapp": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
-      "telegram": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨",
-      "line": "私は{type}！左脳 vs 右脳テスト完了！あなたはどれ？ 🧠🎨"
+      "default": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "kakao": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "wechat": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "whatsapp": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "telegram": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
+      "line": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨"
     },
     "compatibility": {
       "Type1_Type2": "左脳優勢型と論理的な会話ができます。",
@@ -425,14 +458,6 @@
       "Type4_Type1": "極左脳型とは思考方式の衝突がある場合があります。",
       "Type5_Type1": "極左脳型とは完全に異なる世界です。",
       "Type6_Type1_Type5": "極端型（極左脳、極右脳）とは理解が難しい場合があります。"
-    },
-    "shareMessages": {
-      "default": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
-      "kakao": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
-      "wechat": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
-      "whatsapp": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
-      "telegram": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨",
-      "line": "私は{type}！左脳 vs 右脳テスト完了！あなたは？ 🧠🎨"
     },
     "result": {
       "longDescription": "詳細説明",
@@ -566,91 +591,6 @@
       "wechatInstructions": "リンクをコピーしてWeChatで送信してください！"
     }
   },
-  "empathyTest": {
-    "startMessage": {
-      "title": "「他の人の感情をどれくらい感じることができますか？」",
-      "line1": "ある人は他人の痛みを自分のことのように感じ、",
-      "line2": "ある人は理解はするが感情は感じません。",
-      "line3": "ある人は共感より解決策を先に考え、",
-      "line4": "ある人は感情そのものを理解するのが困難です。",
-      "line5": "あなたの共感能力はどの程度ですか？",
-      "line6": "12の質問であなたの共感レベルを確認し、より良い関係のためのアドバイスを受け取ってください！"
-    },
-    "ui": {
-      "startTest": "テスト開始",
-      "totalParticipants": "総{count}人が参加しました！",
-      "similarTests": "類似の他のテスト",
-      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
-      "popularTestsTop5": "🔥 人気テストおすすめトップ5",
-      "played": "回参加",
-      "recommendedProducts": "おすすめ商品",
-      "progress": "進捗",
-      "analyzing": "結果分析中...",
-      "testCompleted": "🎉 テスト完了！",
-      "testCompletedMessage": "共感能力分析が完了しました！",
-      "viewResults": "分析結果を見る",
-      "retake": "再テスト",
-      "shareResult": "結果を共有",
-      "yourResult": "あなたの結果",
-      "empathyScore": "🎯 共感スコア",
-      "pros": "長所",
-      "cons": "短所",
-      "advice": "アドバイス",
-      "compatibility": "相性",
-      "bestMatch": "最高の相性",
-      "goodMatch": "良い相性",
-      "carefulMatch": "注意が必要",
-      "difficultMatch": "難しい相性",
-      "kakao": "カカオトーク",
-      "telegram": "テレグラム",
-      "wechat": "WeChat",
-      "line": "LINE",
-      "whatsapp": "WhatsApp",
-      "copyLink": "リンクをコピー"
-    },
-    "result": {
-      "shareMessage": "私の共感能力は{type}！{score}を獲得しました 💙 あなたはどの程度ですか？",
-      "compatibility": {
-        "Type1_Type2": "お互い理解し尊重",
-        "Type1_Type3": "バランスの取れた助け",
-        "Type1_Type5": "孤独で理解されない",
-        "Type1_Type6": "孤独で理解されない",
-        "Type2_Type2": "完璧な組み合わせ",
-        "Type2_Type1": "お互い理解し尊重",
-        "Type2_Type3": "バランスの取れた助け",
-        "Type2_Type6": "コミュニケーション困難",
-        "Type3_Type3": "お互い快適に依存",
-        "Type3_Type4": "お互い快適に依存",
-        "Type3_Type2": "バランスの取れた助け",
-        "Type3_Type5": "バランスの取れた助け",
-        "Type3_Type1": "温度差",
-        "Type4_Type4": "お互い理解",
-        "Type4_Type5": "お互い理解",
-        "Type4_Type3": "バランスの取れた助け",
-        "Type4_Type1": "アプローチの違い",
-        "Type4_Type2": "アプローチの違い",
-        "Type5_Type5": "お互い理解",
-        "Type5_Type6": "お互い理解",
-        "Type5_Type4": "バランスの取れた助け",
-        "Type5_Type1": "傷つけやすい",
-        "Type5_Type2": "傷つけやすい",
-        "Type6_Type6": "お互い理解",
-        "Type6_Type5": "お互い理解",
-        "Type6_Type1": "関係維持が非常に困難",
-        "Type6_Type2": "関係維持が非常に困難",
-        "Type6_Type3": "関係維持が非常に困難",
-        "Type6_Type4": "関係維持が非常に困難"
-      }
-    },
-    "alerts": {
-      "linkCopied": "リンクがコピーされました！",
-      "wechatLinkCopied": "WeChatリンクがコピーされました！WeChatで貼り付けてください。",
-      "copiedToClipboard": "結果がクリップボードにコピーされました！",
-      "shareNotAvailable": "共有機能を使用できません。",
-      "kakaoInitializing": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
-      "kakaoShareError": "カカオトーク共有中にエラーが発生しました。"
-    }
-  },
   "spouseTest": {
     "startMessage": {
       "title": "「一生を共にする人、どんなタイプがいいかな？」",
@@ -719,7 +659,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "人が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進捗率",
       "retakeTest": "再テスト",
       "shareResult": "結果を共有する",
@@ -821,7 +762,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "人が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進捗率",
       "retakeTest": "もう一度",
       "shareResult": "結果を共有",
@@ -931,7 +873,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "人が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進捗率",
       "retakeTest": "もう一度",
       "shareResult": "結果を共有",
@@ -970,61 +913,6 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
-  "lifePrioritiesTest": {
-    "startMessage": {
-      "line1": "「あなたの人生で本当に重要なことは何ですか？」",
-      "line2": "お金、名声、愛、自由、家族、幸せ...",
-      "line3": "すべて重要ですが、選ばなければならないなら？",
-      "line4": "成功のために関係を諦められますか？",
-      "line5": "自由のために安定を捨てられますか？",
-      "line6": "幸せのために野心を手放せますか？",
-      "line7": "あなたの本当の優先順位を見つけてください。",
-      "line8": "所要時間3分！深く考えながら答えてください 💭"
-    },
-    "ui": {
-      "startTest": "テスト開始",
-      "participants": "人が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
-      "progress": "進捗率",
-      "retakeTest": "もう一度",
-      "shareResult": "結果を共有",
-      "retake": "もう一度",
-      "otherTests": "他のテストを見る",
-      "similarTests": "🎯 類似の他のテスト推奨トップ5",
-      "popularTests": "🔥 最近人気のテスト推奨トップ5"
-    },
-    "result": {
-      "analyzing": "結果を分析中...",
-      "analyzingDetail": "あなたの人生の優先順位を分析しています",
-      "completed": "テスト完了！",
-      "completedDetail": "あなたの人生の優先順位が分析されました",
-      "showResult": "分析結果を見る",
-      "yourResult": "あなたの結果は",
-      "coreValues": "核心的価値",
-      "strengths": "強み",
-      "weaknesses": "弱み",
-      "advice": "アドバイス",
-      "bestMatch": "💖 相性の良いタイプ",
-      "goodMatch": "😊 まあまあのタイプ",
-      "carefulMatch": "⚠️ 注意タイプ"
-    },
-    "shareMessages": {
-      "default": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
-      "kakao": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
-      "wechat": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
-      "whatsapp": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
-      "telegram": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！",
-      "line": "私は{type}！ 💭 人生で何が最も重要か？あなたにとって一番重要なことは？私たちの優先順位を比較してみましょう！"
-    },
-    "alerts": {
-      "linkCopied": "リンクがコピーされました！",
-      "resultCopied": "結果がクリップボードにコピーされました！",
-      "shareFailed": "共有機能を使用できません。",
-      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
-      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
-      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
-    }
-  },
   "attachmentTest": {
     "startMessage": {
       "line1": "あなたの愛し方、幼い頃から決まっている？",
@@ -1041,7 +929,8 @@
       "shareResult": "結果を共有",
       "retake": "再挑戦",
       "otherTests": "他のテスト",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "similarTests": "似ている他のテストおすすめトップ5",
       "popularTests": "今人気のテストおすすめトップ5"
     },
@@ -1070,7 +959,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "名が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進行率",
       "retakeTest": "やり直す",
       "shareResult": "結果を共有",
@@ -1190,7 +1080,8 @@
     },
     "ui": {
       "startTest": "テスト開始",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "totalParticipants": "総{count}人が参加しました！",
       "progress": "進捗率",
       "analyzing": "結果分析中...",
@@ -1262,7 +1153,8 @@
     },
     "ui": {
       "startTest": "テスト開始",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "participantCount": "総計{count}人が参加しました！",
       "progress": "進捗",
       "analyzing": "結果分析中...",
@@ -1301,7 +1193,8 @@
     },
     "ui": {
       "startTest": "テスト開始",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "participantCount": "総計{count}人が参加しました！",
       "progress": "進捗",
       "analyzing": "結果分析中...",
@@ -1592,7 +1485,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "参加者",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進捗",
       "retakeTest": "やり直す",
       "shareResult": "結果をシェア",
@@ -1630,7 +1524,8 @@
     "ui": {
       "startTest": "テスト開始",
       "totalParticipants": "{count}人が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進捗",
       "retakeTest": "やり直す",
       "shareResult": "結果を共有",
@@ -1688,7 +1583,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "人が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進捗",
       "retakeTest": "やり直す",
       "shareResult": "結果を共有",
@@ -1783,7 +1679,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "名が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進行率",
       "retakeTest": "やり直す",
       "shareResult": "結果を共有",
@@ -1833,7 +1730,8 @@
     "ui": {
       "startTest": "テスト開始",
       "participants": "人が参加しました",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "progress": "進捗率",
       "retakeTest": "再テスト",
       "shareResult": "結果を共有",
@@ -1988,38 +1886,24 @@
       "line6": "あなたの嫉妬心は健康的なレベルですか？\nそれともコントロールが必要ですか？\nたった3分であなたの嫉妬レベルがわかります！"
     },
     "ui": {
-      "startTest": "テスト開始",
-      "totalParticipants": "{count}名参加",
-      "progress": "分析中...",
-      "shareResult": "結果共有",
-      "share": "共有",
-      "kakao": "カカオトーク",
-      "wechat": "WeChat",
-      "whatsapp": "WhatsApp",
-      "telegram": "Telegram",
-      "line": "LINE",
       "linkCopy": "リンクコピー",
-      "retake": "再挑戦",
-      "productRecommendations": "商品推薦",
-      "adsenseTitle": "関連商品をチェック！",
-      "similarTests": "類似テスト",
-      "yourResult": "あなたの結果",
-      "strengths": "長所",
-      "weaknesses": "短所",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
       "advice": "アドバイス",
+      "noData": "データなし",
       "compatibleTypes": "相性の良いタイプ",
-      "warningTypes": "注意タイプ",
-      "warning": "注意",
-      "noData": "なし",
-      "close": "閉じる"
+      "warningTypes": "注意タイプ"
     },
     "shareMessages": {
-      "default": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
-      "kakao": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
-      "wechat": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
-      "whatsapp": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
-      "telegram": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚",
-      "line": "私は{type}！嫉妬心テスト結果...あなたはどう？一緒にやってみよう！💚"
+      "default": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "kakao": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "wechat": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "whatsapp": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "telegram": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
+      "line": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️"
     },
     "alerts": {
       "linkCopied": "リンクがコピーされました！",
@@ -2073,34 +1957,6 @@
         "Type6_Type5": "一緒にいると悪化",
         "Type6_Type6": "一緒にいると悪化"
       }
-    },
-    "shareMessages": {
-      "default": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
-      "kakao": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
-      "wechat": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
-      "whatsapp": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
-      "telegram": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️",
-      "line": "私は{type}！嫉妬テスト完了！私は嫉妬深い方？あなたは？一緒にやってみよう！💚❤️"
-    },
-    "alerts": {
-      "linkCopied": "リンクがコピーされました！",
-      "resultCopied": "結果がクリップボードにコピーされました！",
-      "shareFailed": "共有機能を使用できません。",
-      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
-      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
-      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
-    },
-    "ui": {
-      "linkCopy": "リンクコピー",
-      "kakao": "カカオトーク",
-      "telegram": "テレグラム",
-      "wechat": "WeChat",
-      "line": "ライン",
-      "whatsapp": "WhatsApp",
-      "advice": "アドバイス",
-      "noData": "データなし",
-      "compatibleTypes": "相性の良いタイプ",
-      "warningTypes": "注意タイプ"
     }
   },
   "quickDecisionTest": {
@@ -2374,7 +2230,8 @@
       "similarTests": "🎯 類似の他のテストおすすめトップ5",
       "adsenseTitle": "AdSense広告エリア",
       "totalParticipants": "{count}人参加",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "testCompleted": "テスト完了！",
       "viewResults": "分析結果を見る",
       "yourResult": "あなたの結果は",
@@ -2551,7 +2408,8 @@
       "similarTests": "🎯 類似の他のテストおすすめトップ5",
       "adsenseTitle": "AdSense広告エリア",
       "totalParticipants": "{count}人参加",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "testCompleted": "テスト完了！",
       "viewResults": "分析結果を見る",
       "yourResult": "あなたの結果は",
@@ -2740,7 +2598,8 @@
       "similarTests": "🎯 類似の他のテストおすすめトップ5",
       "adsenseTitle": "AdSense広告エリア",
       "totalParticipants": "{count}人参加",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "testCompleted": "テスト完了！",
       "viewResults": "分析結果を見る",
       "yourResult": "あなたの結果は",
@@ -2812,7 +2671,8 @@
       "analyzing": "顔を分析中...",
       "resultTitle": "あなたの前世",
       "totalParticipants": "総参加者数 {count}人！",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "similarTests": "🎯 類似の他のテストおすすめトップ5",
       "testCompleted": "テスト完了！",
       "adsenseTitle": "AdSense広告エリア",
