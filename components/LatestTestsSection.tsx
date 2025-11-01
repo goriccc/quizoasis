@@ -105,12 +105,12 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          {tests.map((test) => (
+          {tests.map((test, index) => (
               <Link
                 key={test.id}
                 href={`/${locale}/test/${test.slug}`}
                 className="flex-shrink-0 group"
-                prefetch={true}
+                prefetch={index < 3}
                 onClick={(e) => {
                   // 드래그 거리가 5px 이상이면 클릭 막기
                   if (isDragging || dragDistance > 5) {
@@ -129,8 +129,7 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
                       className="object-cover select-none"
                       sizes="(max-width: 640px) 80vw, (max-width: 768px) 60vw, (max-width: 1024px) 50vw, 435px"
                       draggable={false}
-                      priority={true}
-                      loading="eager"
+                      priority={index < 3}
                       quality={85}
                     />
                   

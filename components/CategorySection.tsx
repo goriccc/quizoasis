@@ -96,12 +96,12 @@ export default function CategorySection({ tests, categoryName, locale, showHeade
         
         {/* 반응형 그리드 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tests.map((test) => (
+          {tests.map((test, index) => (
             <Link
               key={test.id}
               href={`/${locale}/test/${test.slug}`}
               className="group"
-              prefetch={true}
+              prefetch={index < 3}
             >
               <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                 {/* 썸네일 */}
@@ -112,8 +112,7 @@ export default function CategorySection({ tests, categoryName, locale, showHeade
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority={true}
-                    loading="eager"
+                    priority={index < 3}
                     quality={85}
                   />
                   

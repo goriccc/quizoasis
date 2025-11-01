@@ -85,54 +85,6 @@ export default function RootLayout({
             }
           `
         }} />
-        {/* 안드로이드 갤럭시 폰트 로딩 강제 스크립트 */}
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            // 안드로이드 갤럭시 폰트 로딩 강제 적용
-            (function() {
-              const isAndroid = navigator.userAgent.includes('Android') || navigator.userAgent.includes('Samsung');
-              const fontFamily = "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif";
-              
-              function forceFonts() {
-                // 모든 요소에 폰트 강제 적용
-                const allElements = document.querySelectorAll('*');
-                allElements.forEach(function(element) {
-                  element.style.fontFamily = fontFamily;
-                  element.style.fontDisplay = 'block';
-                  element.style.textRendering = 'optimizeLegibility';
-                  element.style.webkitFontSmoothing = 'antialiased';
-                  element.style.mozOsxFontSmoothing = 'grayscale';
-                });
-                
-                // body에도 적용
-                document.body.style.fontFamily = fontFamily;
-                document.body.style.fontDisplay = 'block';
-                document.body.style.textRendering = 'optimizeLegibility';
-                document.body.style.webkitFontSmoothing = 'antialiased';
-                document.body.style.mozOsxFontSmoothing = 'grayscale';
-              }
-              
-              if (isAndroid) {
-                // 즉시 적용
-                forceFonts();
-                
-                // DOM 로딩 후 적용
-                document.addEventListener('DOMContentLoaded', forceFonts);
-                
-                // 폰트 로딩 완료 후 적용
-                if (document.fonts && document.fonts.ready) {
-                  document.fonts.ready.then(forceFonts);
-                }
-                
-                // 페이지 로딩 완료 후 적용
-                window.addEventListener('load', forceFonts);
-                
-                // 주기적으로 폰트 강제 적용 (안드로이드 특화)
-                setInterval(forceFonts, 1000);
-              }
-            })();
-          `
-        }} />
       </Head>
       <body>
         {/* Google AdSense */}
