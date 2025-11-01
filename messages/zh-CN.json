@@ -2449,7 +2449,6 @@
       "similarTests": "🎯 相似的其他测试推荐TOP5",
       "adsenseTitle": "AdSense广告区域",
       "totalParticipants": "{count}人参加",
-      "shareWithFriends": "与朋友分享结果",
       "testCompleted": "测试完成！",
       "viewResults": "查看分析结果",
       "yourResult": "你的结果是",
@@ -2476,7 +2475,9 @@
       "telegram": "Telegram",
       "wechat": "微信",
       "line": "Line",
-      "whatsapp": "WhatsApp"
+      "whatsapp": "WhatsApp",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果"
     },
     "shareMessages": {
       "default": "从面相看推荐职业！我是{type}！你适合什么职业？💼✨",
@@ -2569,7 +2570,8 @@
       "selectPhotoAgain": "重新选择照片",
       "selectedPhoto": "已选择的照片",
       "totalParticipants": "{count}人参加！",
-      "shareWithFriends": "与朋友分享结果",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
       "similarTests": "🎯 相似的其他测试推荐TOP5",
       "adsenseTitle": "AdSense广告区域",
       "strengths": "特点",

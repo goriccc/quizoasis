@@ -141,7 +141,8 @@
       "selectPhotoAgain": "다시 사진 선택하기",
       "selectedPhoto": "선택된 사진",
       "totalParticipants": "총 {count}명이 참여했어요!",
-      "shareWithFriends": "결과를 친구에게 공유하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "adsenseTitle": "AdSense 광고 영역",
       "strengths": "특징",
@@ -2557,7 +2558,6 @@
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "adsenseTitle": "AdSense 광고 영역",
       "totalParticipants": "{count}명 참여",
-      "shareWithFriends": "결과를 친구에게 공유하기",
       "testCompleted": "테스트 완료!",
       "viewResults": "분석 결과 보기",
       "yourResult": "당신의 결과는",
@@ -2584,7 +2584,9 @@
       "telegram": "텔레그램",
       "wechat": "위챗",
       "line": "라인",
-      "whatsapp": "왓츠앱"
+      "whatsapp": "왓츠앱",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기"
     },
     "shareMessages": {
       "default": "얼굴로 보는 추천 직업! 나는 {type}! 당신의 적합한 직업은? 💼✨",

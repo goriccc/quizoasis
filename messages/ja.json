@@ -2462,7 +2462,6 @@
       "similarTests": "🎯 類似の他のテスト推奨トップ5",
       "adsenseTitle": "AdSense広告エリア",
       "totalParticipants": "{count}名参加",
-      "shareWithFriends": "結果を友人と共有する",
       "testCompleted": "テスト完了！",
       "viewResults": "分析結果を見る",
       "yourResult": "あなたの結果は",
@@ -2489,7 +2488,9 @@
       "telegram": "Telegram",
       "wechat": "WeChat",
       "line": "Line",
-      "whatsapp": "WhatsApp"
+      "whatsapp": "WhatsApp",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する"
     },
     "shareMessages": {
       "default": "顔で見る推奨職業！私は{type}！あなたの適切な職業は？💼✨",
@@ -2670,7 +2671,8 @@
       "selectPhotoAgain": "写真を再選択",
       "selectedPhoto": "選択された写真",
       "totalParticipants": "{count}人が参加しました！",
-      "shareWithFriends": "結果を友人と共有する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
       "similarTests": "🎯 類似の他のテストおすすめトップ5",
       "adsenseTitle": "AdSense広告エリア",
       "strengths": "特徴",

@@ -1431,7 +1431,7 @@ export default function FacePsychStateTestClient({
               <Link href={`/${locale}`} className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md">{t('ui.otherTests')}</Link>
             </div>
             <div className="mt-8 mb-8 text-center px-4">
-              <h2 className="text-lg font-bold text-gray-800 mb-4">{t('ui.shareWithFriends')}</h2>
+              <h2 className="text-lg font-bold text-gray-800 mb-4">{t('ui.shareResultWithFriends')}</h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" /></button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" /></button>

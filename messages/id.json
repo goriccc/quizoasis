@@ -2498,7 +2498,6 @@
       "similarTests": "🎯 Top 5 Rekomendasi Tes Serupa",
       "adsenseTitle": "Area Iklan AdSense",
       "totalParticipants": "{count} peserta",
-      "shareWithFriends": "Bagikan Hasil ke Teman",
       "testCompleted": "Tes Selesai!",
       "viewResults": "Lihat Hasil Analisis",
       "yourResult": "Hasil Anda adalah",
@@ -2525,7 +2524,9 @@
       "telegram": "Telegram",
       "wechat": "WeChat",
       "line": "Line",
-      "whatsapp": "WhatsApp"
+      "whatsapp": "WhatsApp",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman"
     },
     "shareMessages": {
       "default": "Pekerjaan yang Direkomendasikan Melalui Wajah! Saya adalah {type}! Pekerjaan apa yang cocok untuk Anda? 💼✨",
@@ -2618,7 +2619,8 @@
       "selectPhotoAgain": "Pilih Foto Lagi",
       "selectedPhoto": "Foto Terpilih",
       "totalParticipants": "{count} peserta!",
-      "shareWithFriends": "Bagikan Hasil ke Teman",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
       "similarTests": "🎯 Top 5 Tes Serupa Lainnya",
       "adsenseTitle": "Area Iklan AdSense",
       "strengths": "Kekuatan",

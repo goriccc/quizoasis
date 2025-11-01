@@ -2498,7 +2498,6 @@
       "similarTests": "🎯 Top 5 Đề Xuất Bài Test Tương Tự",
       "adsenseTitle": "Khu Vực Quảng Cáo AdSense",
       "totalParticipants": "{count} người tham gia",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
       "testCompleted": "Hoàn Thành Bài Test!",
       "viewResults": "Xem Kết Quả Phân Tích",
       "yourResult": "Kết quả của bạn là",
@@ -2525,7 +2524,9 @@
       "telegram": "Telegram",
       "wechat": "WeChat",
       "line": "Line",
-      "whatsapp": "WhatsApp"
+      "whatsapp": "WhatsApp",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè"
     },
     "shareMessages": {
       "default": "Nghề Nghiệp Đề Xuất Qua Khuôn Mặt! Tôi là {type}! Nghề nghiệp nào phù hợp với bạn? 💼✨",
@@ -2618,7 +2619,8 @@
       "selectPhotoAgain": "Chọn ảnh lại",
       "selectedPhoto": "Ảnh đã chọn",
       "totalParticipants": "{count} người tham gia!",
-      "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
       "similarTests": "🎯 Top 5 bài kiểm tra tương tự khác",
       "adsenseTitle": "Khu vực quảng cáo AdSense",
       "strengths": "Điểm mạnh",

@@ -618,13 +618,7 @@ export default function ApologyTestClient({
 
             <div className="mb-8 text-center">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-{locale === 'ko' && "결과를 친구에게 공유하기"}
-                {locale === 'en' && "Share Result with Friends"}
-                {locale === 'ja' && "結果を友人と共有する"}
-                {locale === 'zh-CN' && "与朋友分享结果"}
-                {locale === 'zh-TW' && "與朋友分享結果"}
-                {locale === 'vi' && "Chia sẻ kết quả với bạn bè"}
-                {locale === 'id' && "Bagikan Hasil ke Teman"}
+                {t('ui.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -1005,13 +999,7 @@ export default function ApologyTestClient({
 
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-{locale === 'ko' && "결과를 친구에게 공유하기"}
-                {locale === 'en' && "Share Result with Friends"}
-                {locale === 'ja' && "結果を友人と共有する"}
-                {locale === 'zh-CN' && "与朋友分享结果"}
-                {locale === 'zh-TW' && "與朋友分享結果"}
-                {locale === 'vi' && "Chia sẻ kết quả với bạn bè"}
-                {locale === 'id' && "Bagikan Hasil ke Teman"}
+                {t('ui.shareResultWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
@@ -1205,13 +1193,7 @@ export default function ApologyTestClient({
 
           <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-              {locale === 'ko' && "결과를 친구에게 공유하기"}
-              {locale === 'en' && "Share Result with Friends"}
-              {locale === 'ja' && "結果を友人と共有する"}
-              {locale === 'zh-CN' && "与朋友分享结果"}
-              {locale === 'zh-TW' && "與朋友分享結果"}
-              {locale === 'vi' && "Chia sẻ kết quả với bạn bè"}
-              {locale === 'id' && "Bagikan Hasil ke Teman"}
+              {t('ui.shareWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
