@@ -45,6 +45,7 @@ export default function LifePrioritiesTestClient({
   similarTests = []
 }: LifePrioritiesTestClientProps) {
   const t = useTranslations();
+  const tGlobal = useTranslations();
   
   // 상태 관리
   const [started, setStarted] = useState(false);
@@ -1048,7 +1049,7 @@ export default function LifePrioritiesTestClient({
             {/* 친구와 같이 해보기 */}
             <div className="mt-12 mb-8 text-center">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {t('mbti.shareWithFriends')}
+                {tGlobal('ui.shareResultWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">

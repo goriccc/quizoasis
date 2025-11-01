@@ -44,6 +44,7 @@ export default function StressTestClient({
   similarTests = []
 }: StressTestClientProps) {
   const t = useTranslations();
+  const tGlobal = useTranslations();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
@@ -824,7 +825,7 @@ export default function StressTestClient({
             {/* 친구와 같이 해보기 - 결과 화면 */}
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {t('mbti.shareWithFriends')}
+                {tGlobal('ui.shareResultWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
