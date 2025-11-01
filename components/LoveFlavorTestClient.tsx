@@ -702,7 +702,7 @@ export default function LoveFlavorTestClient({
             </div>
 
             <div className="mt-8 mb-8 text-center px-4">
-              <h2 className="text-lg font-bold text-gray-800 mb-4">{t('mbti.shareWithFriends')}</h2>
+              <h2 className="text-lg font-bold text-gray-800 mb-4">{t('mbti.shareResultWithFriends')}</h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" /></button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" /></button>

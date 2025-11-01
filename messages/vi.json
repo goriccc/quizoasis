@@ -666,7 +666,8 @@
   "mbti": {
     "startTest": "Bắt đầu kiểm tra",
     "totalParticipants": "Tổng cộng {count} người đã tham gia",
-    "shareWithFriends": "Chia sẻ kết quả với bạn bè",
+    "shareWithFriends": "Thử với bạn bè",
+    "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
     "similarTests": "Các bài kiểm tra tương tự",
     "progress": "Tiến trình",
     "yourResult": "Kết quả của bạn",

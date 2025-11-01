@@ -581,7 +581,8 @@
   "mbti": {
     "startTest": "開始測試",
     "totalParticipants": "共有{count}人參與",
-    "shareWithFriends": "與朋友分享結果",
+    "shareWithFriends": "和朋友一起試試",
+    "shareResultWithFriends": "與朋友分享結果",
     "similarTests": "相似的其他測試",
     "progress": "進度",
     "yourResult": "您的結果",

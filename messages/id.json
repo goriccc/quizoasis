@@ -666,7 +666,8 @@
   "mbti": {
     "startTest": "Mulai Tes",
     "totalParticipants": "Total {count} orang telah berpartisipasi",
-    "shareWithFriends": "Bagikan Hasil ke Teman",
+    "shareWithFriends": "Coba dengan Teman",
+    "shareResultWithFriends": "Bagikan Hasil ke Teman",
     "similarTests": "Tes Serupa Lainnya",
     "progress": "Kemajuan",
     "yourResult": "Hasil Anda",

@@ -667,7 +667,8 @@
   "mbti": {
     "startTest": "テスト開始",
     "totalParticipants": "合計{count}人が参加しました",
-    "shareWithFriends": "結果を友人と共有する",
+    "shareWithFriends": "友達と一緒にやってみる",
+    "shareResultWithFriends": "結果を友人と共有する",
     "similarTests": "似た他のテスト",
     "progress": "進捗",
     "yourResult": "あなたの結果",
