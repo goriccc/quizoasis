@@ -730,9 +730,75 @@ export default function FacePsychStateTestClient({
   const handleImageSourceSelect = (source: 'camera' | 'gallery') => {
     setShowImageSourceModal(false);
     if (source === 'camera') {
-      cameraInputRef.current?.click();
+      startFrontCameraAndCapture();
     } else {
       fileInputRef.current?.click();
+    }
+  };
+
+  // 전면 카메라로 한 프레임 캡처 후 분석
+  const startFrontCameraAndCapture = async () => {
+    try {
+      let stream: MediaStream | null = null;
+
+      if (navigator.mediaDevices && navigator.mediaDevices.enumerateDevices) {
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        const front = devices.find(d => d.kind === 'videoinput' && /front|user|앞|전면/i.test(d.label || ''));
+        if (front && front.deviceId) {
+          try {
+            stream = await navigator.mediaDevices.getUserMedia({ video: { deviceId: { exact: front.deviceId }, width: { ideal: 640 }, height: { ideal: 480 } } });
+          } catch {}
+        }
+      }
+
+      if (!stream) {
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: 'user' }, width: { ideal: 640 }, height: { ideal: 480 } } });
+        } catch {}
+      }
+
+      if (!stream) {
+        stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } } });
+      }
+
+      if (!stream) return;
+
+      // 후면 감지 시 재시도
+      const picked = stream.getVideoTracks()[0];
+      const s = picked.getSettings();
+      const lbl = (picked.label || '').toLowerCase();
+      const looksBack = /back|rear|environment|world/.test(lbl) || /environment/i.test(String(s.facingMode || ''));
+      if (looksBack) {
+        picked.stop();
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({ video: { advanced: [{ facingMode: 'user' }], width: { ideal: 640 }, height: { ideal: 480 } } });
+        } catch {}
+      }
+
+      // 비디오에 연결하여 한 프레임 캡처
+      if (videoRef.current && canvasRef.current && stream) {
+        videoRef.current.srcObject = stream;
+        await new Promise(res => {
+          const v = videoRef.current!;
+          v.onloadedmetadata = () => res(null);
+        });
+        const v = videoRef.current;
+        const c = canvasRef.current;
+        const ctx = c.getContext('2d');
+        if (ctx) {
+          c.width = v.videoWidth || 640;
+          c.height = v.videoHeight || 480;
+          ctx.drawImage(v, 0, 0, c.width, c.height);
+          const imgData = c.toDataURL('image/jpeg');
+          capturePhotoFromImage(imgData);
+        }
+        // 스트림 종료
+        stream.getTracks().forEach(t => t.stop());
+        videoRef.current.srcObject = null;
+      }
+    } catch (e) {
+      console.error('카메라 캡처 실패:', e);
+      setError(t('alerts.cameraError'));
     }
   };
 

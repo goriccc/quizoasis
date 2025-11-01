@@ -141,7 +141,7 @@
       "selectPhotoAgain": "다시 사진 선택하기",
       "selectedPhoto": "선택된 사진",
       "totalParticipants": "총 {count}명이 참여했어요!",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "adsenseTitle": "AdSense 광고 영역",
       "strengths": "특징",
@@ -424,7 +424,7 @@
     },
     "ui": {
       "startTest": "테스트 시작",
-      "shareWithFriends": "친구와 함께 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "analyzing": "결과 분석 중...",
       "yourResult": "당신의 결과",
@@ -469,7 +469,7 @@
       "shareResult": "결과 공유하기",
       "retake": "다시 테스트하기",
       "otherTests": "다른 테스트 보기",
-      "shareWithFriends": "친구와 함께 해보기"
+      "shareWithFriends": "결과를 친구에게 공유하기"
     },
     "shareMessages": {
       "default": "나는 {type}! 좌뇌 vs 우뇌 테스트 완료! 너는 뭘까? 🧠🎨",
@@ -784,7 +784,7 @@
   "mbti": {
     "startTest": "테스트 시작",
     "totalParticipants": "총 {count}명이 참여했어요",
-    "shareWithFriends": "친구와 같이 해보기",
+    "shareWithFriends": "결과를 친구에게 공유하기",
     "similarTests": "유사한 다른 테스트",
     "progress": "진행률",
     "yourResult": "당신의 결과는",
@@ -839,7 +839,7 @@
       "shareResult": "결과 공유하기",
       "retake": "다시하기",
       "otherTests": "다른 테스트",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "similarTests": "유사한 다른 테스트 추천 톱5",
       "popularTests": "요즘 인기 테스트 추천 톱5"
     },
@@ -872,7 +872,7 @@
       "shareResult": "결과 공유하기",
       "retake": "다시하기",
       "otherTests": "다른 테스트",
-      "shareWithFriends": "친구와 같이 해보기"
+      "shareWithFriends": "결과를 친구에게 공유하기"
     },
     "result": {
       "yourResult": "당신의 결과는",
@@ -920,7 +920,7 @@
     "ui": {
       "startTest": "테스트 시작하기",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -956,7 +956,7 @@
     "ui": {
       "startTest": "테스트 시작하기",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -1058,7 +1058,7 @@
     "ui": {
       "startTest": "테스트 시작하기",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -1154,7 +1154,7 @@
     "ui": {
       "startTest": "테스트 시작",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -1206,7 +1206,7 @@
     "ui": {
       "startTest": "테스트 시작",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -1259,7 +1259,7 @@
     "ui": {
       "startTest": "테스트 시작",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -1297,7 +1297,7 @@
     "ui": {
       "startTest": "테스트 시작",
       "totalParticipants": "{count}명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -1399,7 +1399,7 @@
     "mbti": {
       "startTest": "테스트 시작",
       "totalParticipants": "총 참여자",
-      "shareWithFriends": "친구와 같이 해보기"
+      "shareWithFriends": "결과를 친구에게 공유하기"
     },
     "recommendations": {
       "similarTests": "유사한 다른 테스트",
@@ -1419,7 +1419,7 @@
     },
     "ui": {
       "startTest": "테스트 시작",
-      "shareWithFriends": "친구와 함께 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "totalParticipants": "총 {count}명이 참여했어요!",
       "progress": "진행률",
       "analyzing": "결과 분석 중...",
@@ -1491,7 +1491,7 @@
     },
     "ui": {
       "startTest": "테스트 시작",
-      "shareWithFriends": "친구와 함께 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "participantCount": "총 {count}명이 참여했어요!",
       "progress": "진행률",
       "analyzing": "결과 분석 중...",
@@ -1530,7 +1530,7 @@
     },
     "ui": {
       "startTest": "테스트 시작",
-      "shareWithFriends": "친구와 함께 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "participantCount": "총 {count}명이 참여했어요!",
       "progress": "진행률",
       "analyzing": "결과 분석 중...",
@@ -1585,7 +1585,7 @@
       "shareResult": "결과 공유하기",
       "retake": "다시 테스트하기",
       "otherTests": "다른 테스트 보기",
-      "shareWithFriends": "친구와 함께 해보기"
+      "shareWithFriends": "결과를 친구에게 공유하기"
     },
       "result": {
         "yourResult": "당신의 결과는",
@@ -1818,7 +1818,7 @@
     "ui": {
       "startTest": "테스트 시작",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -1912,7 +1912,7 @@
     "ui": {
       "startTest": "테스트 시작",
       "participants": "명이 참여했습니다",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "progress": "진행률",
       "retakeTest": "다시 하기",
       "shareResult": "결과 공유하기",
@@ -2380,7 +2380,7 @@
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "adsenseTitle": "AdSense 광고 영역",
       "totalParticipants": "{count}명 참여",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "testCompleted": "테스트 완료!",
       "viewResults": "분석 결과 보기",
       "yourResult": "당신의 결과는",
@@ -2468,7 +2468,7 @@
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "adsenseTitle": "AdSense 광고 영역",
       "totalParticipants": "{count}명 참여",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "testCompleted": "테스트 완료!",
       "viewResults": "분석 결과 보기",
       "yourResult": "당신의 결과는",
@@ -2556,7 +2556,7 @@
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "adsenseTitle": "AdSense 광고 영역",
       "totalParticipants": "{count}명 참여",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "testCompleted": "테스트 완료!",
       "viewResults": "분석 결과 보기",
       "yourResult": "당신의 결과는",
@@ -2644,7 +2644,7 @@
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "adsenseTitle": "AdSense 광고 영역",
       "totalParticipants": "{count}명 참여",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "testCompleted": "테스트 완료!",
       "viewResults": "분석 결과 보기",
       "yourResult": "당신의 결과는",
@@ -2756,7 +2756,7 @@
       "line": "라인",
       "whatsapp": "왓츠앱",
       "totalParticipants": "총 {count}명이 참여했어요!",
-      "shareWithFriends": "친구와 같이 해보기",
+      "shareWithFriends": "결과를 친구에게 공유하기",
       "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
       "testCompleted": "테스트 완료!",
       "adsenseTitle": "AdSense 광고 영역",
