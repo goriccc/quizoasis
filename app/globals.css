@@ -38,68 +38,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern' 1;
-  font-display: block;
 }
 
-/* 안드로이드 갤럭시 전용 폰트 강제 적용 */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  body, * {
-    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-  }
-}
-
-/* 갤럭시 브라우저 전용 최적화 */
-@supports (-webkit-touch-callout: none) {
-  body, * {
-    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-}
-
-/* 헤더 폰트 일관성 보장 */
-header, header * {
-  font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-  font-display: block !important;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-}
-
-/* 안드로이드 헤더 폰트 강제 적용 */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  header, header h1, header button, header div, header span, header a {
-    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-    font-display: block !important;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-  }
-}
-
-/* 안드로이드 전용 폰트 강제 적용 - 모든 요소 */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  * {
-    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-    font-display: block !important;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-  }
-}
-
-/* 안드로이드 갤럭시 브라우저 전용 */
-@supports (-webkit-touch-callout: none) and (display: -webkit-box) {
-  * {
-    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-    font-display: block !important;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-  }
-}
 
 /* 스크롤바 숨김 */
 .hide-scrollbar {
@@ -138,16 +78,11 @@ header, header * {
 
 /* 카드 호버 효과 */
 .card-hover {
-  will-change: transform;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  perspective: 1000px;
   transition: box-shadow 0.2s ease-in-out;
 }
 
 .card-hover:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  transform: translateZ(0);
 }
 
 /* 그라데이션 배경 */
