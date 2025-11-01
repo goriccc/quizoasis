@@ -761,7 +761,10 @@ export default function FacePsychStateTestClient({
         stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } } });
       }
 
-      if (!stream) return;
+      if (!stream) {
+        setError(t('alerts.cameraError'));
+        return;
+      }
 
       // 후면 감지 시 재시도
       const picked = stream.getVideoTracks()[0];
