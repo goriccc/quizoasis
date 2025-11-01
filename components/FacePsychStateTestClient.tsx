@@ -730,7 +730,12 @@ export default function FacePsychStateTestClient({
   const handleImageSourceSelect = (source: 'camera' | 'gallery') => {
     setShowImageSourceModal(false);
     if (source === 'camera') {
-      startFrontCameraAndCapture();
+      // 모바일에서는 capture 속성이 있는 input을 클릭하여 네이티브 카메라 앱 열기
+      if (isMobile) {
+        cameraInputRef.current?.click();
+      } else {
+        startFrontCameraAndCapture();
+      }
     } else {
       fileInputRef.current?.click();
     }
