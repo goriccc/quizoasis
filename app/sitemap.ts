@@ -64,6 +64,7 @@ const testSlugs = [
   'face-love-fortune',
   'face-occupations',
   'face-psych-state',
+  'honest-facial-evaluation',
   'face-fortune',
   'face-reincarnation',
   

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaPipe 감정 감지 테스트</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+    .upload-area {
+      border: 3px dashed #ccc;
+      border-radius: 10px;
+      padding: 40px;
+      text-align: center;
+      margin: 20px 0;
+      cursor: pointer;
+      transition: all 0.3s;
+      user-select: none;
+    }
+    .upload-area:hover {
+      border-color: #4CAF50;
+      background: #f9f9f9;
+    }
+    .upload-area.dragover {
+      border-color: #4CAF50;
+      background: #e8f5e9;
+    }
+    #fileInput {
+      display: none;
+    }
+    #preview {
+      max-width: 100%;
+      max-height: 500px;
+      margin: 20px 0;
+      border-radius: 10px;
+      display: none;
+    }
+    .results {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+    }
+    .emotion-item {
+      margin: 10px 0;
+      padding: 10px;
+      background: white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .emotion-bar {
+      height: 20px;
+      background: #4CAF50;
+      border-radius: 10px;
+      transition: width 0.3s;
+    }
+    .blendshapes {
+      margin-top: 20px;
+      max-height: 400px;
+      overflow-y: auto;
+      font-size: 12px;
+    }
+    .blendshape-item {
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    .dominant {
+      background: #ffeb3b !important;
+      font-weight: bold;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    .loading {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+    .error {
+      color: red;
+      padding: 10px;
+      background: #ffebee;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 MediaPipe 감정 감지 테스트</h1>
+    <p>이미지를 업로드하면 MediaPipe가 감지한 모든 blendshapes와 최종 감정 점수를 확인할 수 있습니다.</p>
+    
+    <div class="upload-area" id="uploadArea">
+      <p>📸 이미지를 드래그하거나 클릭하여 업로드</p>
+      <input type="file" id="fileInput" accept="image/*">
+    </div>
+    
+    <img id="preview" alt="미리보기">
+    <div id="errorMessage"></div>
+    
+    <div class="loading" id="loading" style="display: none;">
+      분석 중... 잠시만 기다려주세요.
+    </div>
+    
+    <div class="results" id="results" style="display: none;">
+      <h2>📊 감정 분석 결과</h2>
+      <div id="emotions"></div>
+      
+      <h3 style="margin-top: 30px;">🔬 MediaPipe Blendshapes (상위 50개)</h3>
+      <div class="blendshapes" id="blendshapes"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    let faceLandmarker = null;
+    let initialized = false;
+
+    // MediaPipe 초기화
+    async function initializeMediaPipe() {
+      if (initialized) return faceLandmarker;
+      
+      try {
+        console.log('MediaPipe 초기화 시작...');
+        
+        // 동적 import 사용 (React 컴포넌트와 동일한 방식)
+        const vision = await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/+esm');
+        
+        const filesetResolver = await vision.FilesetResolver.forVisionTasks(
+          'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm'
+        );
+        
+        faceLandmarker = await vision.FaceLandmarker.createFromOptions(filesetResolver, {
+          baseOptions: {
+            modelAssetPath: 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task',
+            delegate: 'GPU'
+          },
+          outputFaceBlendshapes: true,
+          runningMode: 'IMAGE',
+          numFaces: 1
+        });
+        
+        initialized = true;
+        console.log('✅ MediaPipe 초기화 완료');
+        return faceLandmarker;
+      } catch (error) {
+        console.error('❌ MediaPipe 초기화 실패:', error);
+        showError('MediaPipe 초기화에 실패했습니다: ' + error.message);
+        throw error;
+      }
+    }
+
+    function showError(message) {
+      const errorEl = document.getElementById('errorMessage');
+      errorEl.innerHTML = `<div class="error">${message}</div>`;
+      setTimeout(() => {
+        errorEl.innerHTML = '';
+      }, 5000);
+    }
+
+    // 감정 분석 함수 (HonestFacialEvaluationTestClient와 동일한 로직)
+    function analyzeEmotionsFromBlendshapes(blendshapes) {
+      const scores = {};
+      let jawOpen = 0;
+      let browDown = 0;
+      let mouthFrown = 0;
+      let mouthSmile = 0;
+      
+      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+      console.log('🔍 모든 Blendshapes:', blendshapes.length, '개');
+      
+      // Map MediaPipe blendshapes to emotions
+      for (const blend of blendshapes) {
+        const name = blend.categoryName.toLowerCase();
+        
+        // Happy indicators
+        if (name.includes('smile') || name.includes('mouthsmile')) {
+          const smileScore = blend.score;
+          scores.happy = (scores.happy || 0) + smileScore;
+          mouthSmile = Math.max(mouthSmile, smileScore);
+          console.log(`😊 Happy (${name}): ${blend.score.toFixed(4)}`);
+        }
+        
+        // Sad indicators
+        if (name.includes('frown') || name.includes('mouthfrown')) {
+          const frownScore = blend.score;
+          scores.sad = (scores.sad || 0) + frownScore;
+          mouthFrown = Math.max(mouthFrown, frownScore);
+          console.log(`😢 Sad (${name}): ${blend.score.toFixed(4)}`);
+        }
+        
+        // Jaw open
+        if (name.includes('jawopen')) {
+          jawOpen = blend.score;
+          if (blend.score > 0.3) {
+            scores.surprised = (scores.surprised || 0) + blend.score * 0.7;
+          }
+          console.log(`😮 JawOpen: ${blend.score.toFixed(4)}`);
+        }
+        
+        // Mouth close/jaw clench - anger indicator
+        if (name.includes('mouthclose') || name.includes('jawclench')) {
+          scores.angry = (scores.angry || 0) + blend.score;
+          console.log(`😠 Angry (${name}): ${blend.score.toFixed(4)}`);
+        }
+        
+        // Eyebrow up - surprised/fearful
+        if (name.includes('browinnerup')) {
+          scores.surprised = (scores.surprised || 0) + blend.score;
+          scores.fearful = (scores.fearful || 0) + blend.score * 0.5;
+          console.log(`😲 Surprised/Fearful (${name}): ${blend.score.toFixed(4)}`);
+        }
+        
+        // Eyebrow down - ANGRY indicator (strong signal)
+        if (name.includes('browdownleft') || name.includes('browdownright')) {
+          const browScore = blend.score;
+          scores.angry = (scores.angry || 0) + browScore * 1.5;
+          browDown = Math.max(browDown, browScore);
+          console.log(`😡 Angry - BrowDown (${name}): ${blend.score.toFixed(4)} → ${(browScore * 1.5).toFixed(4)} (가중치 1.5배)`);
+        }
+        
+        // Nose sneer - disgust
+        if (name.includes('nosesneerleft') || name.includes('nosesneerright')) {
+          scores.disgusted = (scores.disgusted || 0) + blend.score;
+          console.log(`🤢 Disgusted (${name}): ${blend.score.toFixed(4)}`);
+        }
+        
+        // Mouth roll/lip suck - contempt
+        if (name.includes('mouthroll') || name.includes('lipsuck')) {
+          scores.contempt = (scores.contempt || 0) + blend.score;
+          console.log(`😤 Contempt (${name}): ${blend.score.toFixed(4)}`);
+        }
+      }
+      
+      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+      console.log('📊 조합 규칙 적용 전 점수:', scores);
+      console.log(`   jawOpen: ${jawOpen.toFixed(4)}, browDown: ${browDown.toFixed(4)}`);
+      console.log(`   mouthFrown: ${mouthFrown.toFixed(4)}, mouthSmile: ${mouthSmile.toFixed(4)}`);
+      
+      // IMPORTANT: If jawOpen is high AND browDown is present, it's likely ANGRY
+      if (jawOpen > 0.3 && browDown > 0.2) {
+        console.log('🔥 조합 규칙 적용: jawOpen + browDown → angry 강화');
+        scores.angry = (scores.angry || 0) + jawOpen * 1.2;
+        scores.surprised = Math.max(0, (scores.surprised || 0) - jawOpen * 0.5);
+        console.log(`   → angry: ${scores.angry.toFixed(4)}, surprised 감소`);
+      }
+      
+      // If mouthFrown is high with browDown, it's likely angry/sad mix
+      if (mouthFrown > 0.3 && browDown > 0.2) {
+        console.log('🔥 조합 규칙 적용: mouthFrown + browDown → angry 추가');
+        scores.angry = (scores.angry || 0) + mouthFrown * 0.8;
+        console.log(`   → angry: ${scores.angry.toFixed(4)}`);
+      }
+      
+      // If mouthSmile is very low and browDown is high, reduce happy score
+      if (mouthSmile < 0.1 && browDown > 0.3) {
+        console.log('🔥 조합 규칙 적용: mouthSmile 낮음 + browDown 높음 → happy 감소');
+        scores.happy = Math.max(0, (scores.happy || 0) * 0.3);
+        console.log(`   → happy: ${scores.happy.toFixed(4)} (70% 감소)`);
+      }
+      
+      // Calculate neutral
+      const emotionSum = Object.values(scores).reduce((a, b) => a + b, 0);
+      const neutralScore = Math.max(0, 1 - emotionSum / 2);
+      
+      // Normalize and return
+      const emotions = {
+        happy: Math.min(1, scores.happy || 0),
+        sad: Math.min(1, scores.sad || 0),
+        neutral: neutralScore,
+        angry: Math.min(1, scores.angry || 0),
+        surprised: Math.min(1, scores.surprised || 0),
+        fearful: Math.min(1, scores.fearful || 0),
+        disgusted: Math.min(1, scores.disgusted || 0),
+        contempt: Math.min(1, scores.contempt || 0)
+      };
+      
+      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+      console.log('📊 최종 감정 점수:', emotions);
+      
+      // Find dominant emotion
+      const dominantEmotion = Object.entries(emotions).sort(([,a], [,b]) => b - a)[0];
+      console.log(`🎯 Dominant Emotion: ${dominantEmotion[0]} (${dominantEmotion[1].toFixed(4)})`);
+      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+      
+      return { emotions, dominantEmotion: dominantEmotion[0] };
+    }
+
+    // 이미지 분석
+    async function analyzeImage(imageFile) {
+      const loadingEl = document.getElementById('loading');
+      const resultsEl = document.getElementById('results');
+      const previewEl = document.getElementById('preview');
+      
+      loadingEl.style.display = 'block';
+      resultsEl.style.display = 'none';
+      previewEl.style.display = 'none';
+
+      try {
+        // MediaPipe 초기화 확인
+        if (!faceLandmarker) {
+          await initializeMediaPipe();
+        }
+
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.src = URL.createObjectURL(imageFile);
+        
+        await new Promise((resolve, reject) => {
+          img.onload = resolve;
+          img.onerror = () => reject(new Error('이미지 로드 실패'));
+        });
+
+        previewEl.src = img.src;
+        previewEl.style.display = 'block';
+
+        console.log('얼굴 분석 시작...');
+        const results = faceLandmarker.detect(img);
+        const blendshapes = results.faceBlendshapes?.[0]?.categories || [];
+        const landmarks = results.faceLandmarks?.[0];
+
+        if (!blendshapes.length && !landmarks) {
+          throw new Error('얼굴을 감지할 수 없습니다.');
+        }
+
+        console.log(`감지된 Blendshapes: ${blendshapes.length}개`);
+        console.log(`감지된 Landmarks: ${landmarks ? landmarks.length : 0}개`);
+
+        // 감정 분석
+        const { emotions, dominantEmotion } = blendshapes.length > 0 
+          ? analyzeEmotionsFromBlendshapes(blendshapes)
+          : { emotions: { happy: 0, sad: 0, neutral: 0.7, angry: 0, surprised: 0, fearful: 0, disgusted: 0, contempt: 0 }, dominantEmotion: 'neutral' };
+
+        // 결과 표시
+        displayResults(emotions, dominantEmotion, blendshapes);
+        
+        loadingEl.style.display = 'none';
+        resultsEl.style.display = 'block';
+        
+        // 메모리 정리
+        URL.revokeObjectURL(img.src);
+
+      } catch (error) {
+        console.error('분석 오류:', error);
+        showError('분석 중 오류가 발생했습니다: ' + error.message);
+        loadingEl.style.display = 'none';
+      }
+    }
+
+    // 결과 표시
+    function displayResults(emotions, dominantEmotion, blendshapes) {
+      const emotionsEl = document.getElementById('emotions');
+      const blendshapesEl = document.getElementById('blendshapes');
+      
+      // 감정 점수 표시
+      emotionsEl.innerHTML = '';
+      const emotionNames = {
+        happy: '😊 행복',
+        sad: '😢 슬픔',
+        neutral: '😐 중립',
+        angry: '😠 화남',
+        surprised: '😲 놀람',
+        fearful: '😨 두려움',
+        disgusted: '🤢 혐오',
+        contempt: '😤 경멸'
+      };
+
+      Object.entries(emotions)
+        .sort(([,a], [,b]) => b - a)
+        .forEach(([emotion, score]) => {
+          const item = document.createElement('div');
+          item.className = 'emotion-item' + (emotion === dominantEmotion ? ' dominant' : '');
+          item.innerHTML = `
+            <span>${emotionNames[emotion]}: ${(score * 100).toFixed(2)}%</span>
+            <div style="width: 300px;">
+              <div class="emotion-bar" style="width: ${score * 100}%"></div>
+            </div>
+          `;
+          emotionsEl.appendChild(item);
+        });
+
+      // 모든 blendshapes 표시
+      blendshapesEl.innerHTML = '';
+      blendshapes
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 50) // 상위 50개만
+        .forEach(blend => {
+          const item = document.createElement('div');
+          item.className = 'blendshape-item';
+          item.innerHTML = `
+            <strong>${blend.categoryName}</strong>: ${blend.score.toFixed(4)}
+          `;
+          blendshapesEl.appendChild(item);
+        });
+    }
+
+    // 이벤트 리스너 설정
+    const uploadArea = document.getElementById('uploadArea');
+    const fileInput = document.getElementById('fileInput');
+
+    // 클릭 이벤트
+    uploadArea.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      fileInput.click();
+    });
+    
+    // 드래그 앤 드롭 이벤트
+    uploadArea.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      uploadArea.classList.add('dragover');
+    });
+    
+    uploadArea.addEventListener('dragleave', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      uploadArea.classList.remove('dragover');
+    });
+    
+    uploadArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      uploadArea.classList.remove('dragover');
+      const file = e.dataTransfer.files[0];
+      if (file && file.type.startsWith('image/')) {
+        analyzeImage(file);
+      } else {
+        showError('이미지 파일만 업로드 가능합니다.');
+      }
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        if (file.type.startsWith('image/')) {
+          analyzeImage(file);
+        } else {
+          showError('이미지 파일만 업로드 가능합니다.');
+        }
+      }
+    });
+
+    // 초기화
+    console.log('페이지 로드 완료. MediaPipe 초기화 중...');
+    initializeMediaPipe().catch(err => {
+      console.error('초기화 실패:', err);
+    });
+  </script>
+</body>
+</html>
