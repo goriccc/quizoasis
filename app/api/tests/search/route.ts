@@ -98,6 +98,29 @@ export async function GET(request: NextRequest) {
 
     // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)
 
+    // "얼굴" 태그를 가진 테스트 slug 목록 (디버깅용)
+    const faceTaggedSlugs: string[] = [];
+    if (dbTests) {
+      dbTests.forEach((db: any) => {
+        if (db && db.tags) {
+          let hasFaceTag = false;
+          if (Array.isArray(db.tags)) {
+            hasFaceTag = db.tags.some((tag: string) => 
+              tag.toLowerCase().includes('얼굴') || tag.toLowerCase().includes('face')
+            );
+          } else if (typeof db.tags === 'object') {
+            const koTags = db.tags.ko || [];
+            hasFaceTag = koTags.some((tag: string) => 
+              tag.toLowerCase().includes('얼굴')
+            );
+          }
+          if (hasFaceTag && db.slug) {
+            faceTaggedSlugs.push(db.slug);
+          }
+        }
+      });
+    }
+
     // 디버깅 정보를 응답에 포함 (프로덕션에서도 확인 가능)
     const res = NextResponse.json({ 
       tests: filtered,
@@ -107,7 +130,10 @@ export async function GET(request: NextRequest) {
         totalDbTests: dbTests?.length || 0,
         filteredCount: filtered.length,
         query: q,
-        hasDbTests: !!dbTests && dbTests.length > 0
+        hasDbTests: !!dbTests && dbTests.length > 0,
+        faceTaggedCount: faceTaggedSlugs.length,
+        faceTaggedSlugs: faceTaggedSlugs,
+        filteredSlugs: filtered.map((t: any) => t.slug)
       }
     });
     res.headers.set('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=120');

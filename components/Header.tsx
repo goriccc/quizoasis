@@ -260,6 +260,31 @@ export default function Header() {
                             <p>필터링 결과: {searchDebug.filteredCount}개</p>
                             <p>검색어: &quot;{searchDebug.query}&quot;</p>
                             <p>DB 데이터 존재: {searchDebug.hasDbTests ? '✅ 있음' : '❌ 없음'}</p>
+                            {searchDebug.faceTaggedCount !== undefined && (
+                              <>
+                                <p>얼굴 태그 테스트: {searchDebug.faceTaggedCount}개</p>
+                                {searchDebug.faceTaggedSlugs && searchDebug.faceTaggedSlugs.length > 0 && (
+                                  <details className="mt-1">
+                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">얼굴 태그 테스트 목록</summary>
+                                    <div className="mt-1 pl-2 space-y-0.5">
+                                      {searchDebug.faceTaggedSlugs.map((slug: string, idx: number) => (
+                                        <p key={idx} className="text-xs">- {slug}</p>
+                                      ))}
+                                    </div>
+                                  </details>
+                                )}
+                                {searchDebug.filteredSlugs && searchDebug.filteredSlugs.length > 0 && (
+                                  <details className="mt-1">
+                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">필터링된 테스트 목록</summary>
+                                    <div className="mt-1 pl-2 space-y-0.5">
+                                      {searchDebug.filteredSlugs.map((slug: string, idx: number) => (
+                                        <p key={idx} className="text-xs">- {slug}</p>
+                                      ))}
+                                    </div>
+                                  </details>
+                                )}
+                              </>
+                            )}
                           </div>
                         </div>
                       )}
@@ -302,6 +327,31 @@ export default function Header() {
                             <p>필터링 결과: {searchDebug.filteredCount}개</p>
                             <p>검색어: &quot;{searchDebug.query}&quot;</p>
                             <p>DB 데이터 존재: {searchDebug.hasDbTests ? '✅ 있음' : '❌ 없음'}</p>
+                            {searchDebug.faceTaggedCount !== undefined && (
+                              <>
+                                <p>얼굴 태그 테스트: {searchDebug.faceTaggedCount}개</p>
+                                {searchDebug.faceTaggedSlugs && searchDebug.faceTaggedSlugs.length > 0 && (
+                                  <details className="mt-1">
+                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">얼굴 태그 테스트 목록</summary>
+                                    <div className="mt-1 pl-2 space-y-0.5">
+                                      {searchDebug.faceTaggedSlugs.map((slug: string, idx: number) => (
+                                        <p key={idx} className="text-xs">- {slug}</p>
+                                      ))}
+                                    </div>
+                                  </details>
+                                )}
+                                {searchDebug.filteredSlugs && searchDebug.filteredSlugs.length > 0 && (
+                                  <details className="mt-1">
+                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">필터링된 테스트 목록</summary>
+                                    <div className="mt-1 pl-2 space-y-0.5">
+                                      {searchDebug.filteredSlugs.map((slug: string, idx: number) => (
+                                        <p key={idx} className="text-xs">- {slug}</p>
+                                      ))}
+                                    </div>
+                                  </details>
+                                )}
+                              </>
+                            )}
                           </div>
                         </div>
                       )}
