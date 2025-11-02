@@ -22,7 +22,6 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchLoading, setSearchLoading] = useState(false);
   const [searchResults, setSearchResults] = useState<any[]>([]);
-  const [searchDebug, setSearchDebug] = useState<any>(null);
 
   // 언어 변경
   const changeLanguage = (newLocale: Locale) => {
@@ -54,12 +53,10 @@ export default function Header() {
         const data = await res.json();
         if (active) {
           setSearchResults(Array.isArray(data.tests) ? data.tests : []);
-          setSearchDebug(data._debug || null); // 디버깅 정보 저장
         }
       } catch (e) {
         if (active) {
           setSearchResults([]);
-          setSearchDebug(null);
         }
       } finally {
         if (active) setSearchLoading(false);
@@ -248,57 +245,7 @@ export default function Header() {
                     <p className="text-gray-500 text-sm">{ts('loading')}</p>
                   )}
                   {!searchLoading && searchResults.length === 0 && (
-                    <>
-                      <p className="text-gray-500 text-sm">{ts('empty')}</p>
-                      {/* 디버깅 정보 표시 (결과가 없을 때도) */}
-                      {searchDebug && (
-                        <div className="mt-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
-                          <p className="text-xs font-semibold text-gray-700 mb-1">🔍 검색 디버그 정보</p>
-                          <div className="text-xs text-gray-600 space-y-0.5">
-                            <p>전체 테스트: {searchDebug.totalTests}개</p>
-                            <p>DB 테스트: {searchDebug.totalDbTests}개</p>
-                            <p>필터링 결과: {searchDebug.filteredCount}개</p>
-                            <p>검색어: &quot;{searchDebug.query}&quot;</p>
-                            <p>DB 데이터 존재: {searchDebug.hasDbTests ? '✅ 있음' : '❌ 없음'}</p>
-                            {searchDebug.faceTaggedCount !== undefined && (
-                              <>
-                                <p>얼굴 태그 테스트: {searchDebug.faceTaggedCount}개</p>
-                                {searchDebug.newTestsCheck && (
-                                  <div className="mt-1 p-2 bg-yellow-50 rounded border border-yellow-200">
-                                    <p className="text-xs font-semibold text-yellow-800 mb-1">새 테스트 존재 여부:</p>
-                                    <div className="text-xs text-yellow-700 space-y-0.5">
-                                      <p>honest-facial-evaluation: {searchDebug.newTestsCheck['honest-facial-evaluation'] ? '✅ 있음' : '❌ 없음'}</p>
-                                      <p>face-psych-state: {searchDebug.newTestsCheck['face-psych-state'] ? '✅ 있음' : '❌ 없음'}</p>
-                                      <p>face-occupations: {searchDebug.newTestsCheck['face-occupations'] ? '✅ 있음' : '❌ 없음'}</p>
-                                    </div>
-                                  </div>
-                                )}
-                                {searchDebug.faceTaggedSlugs && searchDebug.faceTaggedSlugs.length > 0 && (
-                                  <details className="mt-1">
-                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">얼굴 태그 테스트 목록</summary>
-                                    <div className="mt-1 pl-2 space-y-0.5">
-                                      {searchDebug.faceTaggedSlugs.map((slug: string, idx: number) => (
-                                        <p key={idx} className="text-xs">- {slug}</p>
-                                      ))}
-                                    </div>
-                                  </details>
-                                )}
-                                {searchDebug.filteredSlugs && searchDebug.filteredSlugs.length > 0 && (
-                                  <details className="mt-1">
-                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">필터링된 테스트 목록</summary>
-                                    <div className="mt-1 pl-2 space-y-0.5">
-                                      {searchDebug.filteredSlugs.map((slug: string, idx: number) => (
-                                        <p key={idx} className="text-xs">- {slug}</p>
-                                      ))}
-                                    </div>
-                                  </details>
-                                )}
-                              </>
-                            )}
-                          </div>
-                        </div>
-                      )}
-                    </>
+                    <p className="text-gray-500 text-sm">{ts('empty')}</p>
                   )}
                   {!searchLoading && searchResults.length > 0 && (
                     <>
@@ -327,54 +274,6 @@ export default function Header() {
                           </li>
                         ))}
                       </ul>
-                      {/* 디버깅 정보 표시 */}
-                      {searchDebug && (
-                        <div className="mt-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
-                          <p className="text-xs font-semibold text-gray-700 mb-1">🔍 검색 디버그 정보</p>
-                          <div className="text-xs text-gray-600 space-y-0.5">
-                            <p>전체 테스트: {searchDebug.totalTests}개</p>
-                            <p>DB 테스트: {searchDebug.totalDbTests}개</p>
-                            <p>필터링 결과: {searchDebug.filteredCount}개</p>
-                            <p>검색어: &quot;{searchDebug.query}&quot;</p>
-                            <p>DB 데이터 존재: {searchDebug.hasDbTests ? '✅ 있음' : '❌ 없음'}</p>
-                            {searchDebug.faceTaggedCount !== undefined && (
-                              <>
-                                <p>얼굴 태그 테스트: {searchDebug.faceTaggedCount}개</p>
-                                {searchDebug.newTestsCheck && (
-                                  <div className="mt-1 p-2 bg-yellow-50 rounded border border-yellow-200">
-                                    <p className="text-xs font-semibold text-yellow-800 mb-1">새 테스트 존재 여부:</p>
-                                    <div className="text-xs text-yellow-700 space-y-0.5">
-                                      <p>honest-facial-evaluation: {searchDebug.newTestsCheck['honest-facial-evaluation'] ? '✅ 있음' : '❌ 없음'}</p>
-                                      <p>face-psych-state: {searchDebug.newTestsCheck['face-psych-state'] ? '✅ 있음' : '❌ 없음'}</p>
-                                      <p>face-occupations: {searchDebug.newTestsCheck['face-occupations'] ? '✅ 있음' : '❌ 없음'}</p>
-                                    </div>
-                                  </div>
-                                )}
-                                {searchDebug.faceTaggedSlugs && searchDebug.faceTaggedSlugs.length > 0 && (
-                                  <details className="mt-1">
-                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">얼굴 태그 테스트 목록</summary>
-                                    <div className="mt-1 pl-2 space-y-0.5">
-                                      {searchDebug.faceTaggedSlugs.map((slug: string, idx: number) => (
-                                        <p key={idx} className="text-xs">- {slug}</p>
-                                      ))}
-                                    </div>
-                                  </details>
-                                )}
-                                {searchDebug.filteredSlugs && searchDebug.filteredSlugs.length > 0 && (
-                                  <details className="mt-1">
-                                    <summary className="cursor-pointer text-gray-700 hover:text-gray-900">필터링된 테스트 목록</summary>
-                                    <div className="mt-1 pl-2 space-y-0.5">
-                                      {searchDebug.filteredSlugs.map((slug: string, idx: number) => (
-                                        <p key={idx} className="text-xs">- {slug}</p>
-                                      ))}
-                                    </div>
-                                  </details>
-                                )}
-                              </>
-                            )}
-                          </div>
-                        </div>
-                      )}
                     </>
                   )}
                 </div>
