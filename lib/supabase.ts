@@ -25,28 +25,7 @@ export async function getTests() {
     // Supabase 클라이언트는 이미 8초 타임아웃이 설정되어 있음
     // AbortSignal.timeout으로 자동 처리되므로 Promise.race 불필요
     
-    // 특정 테스트들을 직접 확인 (디버깅용)
-    const specificSlugs = ['honest-facial-evaluation', 'face-psych-state', 'face-occupations'];
-    const specificTests: any[] = [];
-    
-    // 특정 slug들을 개별적으로 조회
-    for (const slug of specificSlugs) {
-      try {
-        const { data: specificData, error: specificError } = await supabase
-          .from('tests')
-          .select('*')
-          .eq('slug', slug)
-          .single();
-        
-        if (!specificError && specificData) {
-          specificTests.push(specificData);
-        }
-      } catch (e) {
-        // 개별 조회 실패는 무시
-      }
-    }
-    
-    // 전체 테스트 조회
+    // 전체 테스트 조회 (먼저 실행)
     const { data, error } = await supabase
       .from('tests')
       .select('*')
@@ -56,8 +35,7 @@ export async function getTests() {
       if (process.env.NODE_ENV === 'development') {
         console.error('Error fetching tests:', error);
       }
-      // 에러 발생 시에도 개별 조회한 테스트들을 포함
-      return specificTests.length > 0 ? specificTests : getFallbackTests();
+      return getFallbackTests();
     }
 
     // 데이터가 없거나 빈 배열인 경우 확인
@@ -65,16 +43,36 @@ export async function getTests() {
       if (process.env.NODE_ENV === 'development') {
         console.error('Invalid data format from Supabase');
       }
-      return specificTests.length > 0 ? specificTests : getFallbackTests();
+      return getFallbackTests();
     }
 
-    // 개별 조회로 찾은 테스트들이 전체 조회 결과에 없는 경우 추가
+    // 특정 테스트들이 누락되었는지 확인 (조건부 개별 조회)
+    const specificSlugs = ['honest-facial-evaluation', 'face-psych-state', 'face-occupations'];
     const existingSlugs = new Set(data.map((t: any) => t?.slug).filter(Boolean));
-    specificTests.forEach((test: any) => {
-      if (test?.slug && !existingSlugs.has(test.slug)) {
-        data.push(test);
-      }
-    });
+    const missingSlugs = specificSlugs.filter(slug => !existingSlugs.has(slug));
+
+    // 누락된 slug가 있을 때만 개별 조회 (병렬 실행으로 최적화)
+    if (missingSlugs.length > 0) {
+      const specificQueries = missingSlugs.map(slug =>
+        supabase
+          .from('tests')
+          .select('*')
+          .eq('slug', slug)
+          .single()
+      );
+
+      // 병렬 실행으로 성능 최적화 (순차 실행 대비 약 3배 빠름)
+      const specificResults = await Promise.allSettled(specificQueries);
+      
+      specificResults.forEach((result, index) => {
+        if (result.status === 'fulfilled') {
+          const { data: specificData, error: specificError } = result.value as any;
+          if (!specificError && specificData) {
+            data.push(specificData);
+          }
+        }
+      });
+    }
 
     return data;
   } catch (error) {
