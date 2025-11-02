@@ -69,15 +69,20 @@ export async function GET(request: NextRequest) {
       });
     }
     
+    // 검색 결과 페이지와 동일한 단순 로직 사용
     const filtered = tests.filter((t: any) => {
       const title = (t.title || '').toLowerCase();
       const tags = ((t.tags || []) as string[]).map((x: string) => (x || '').toLowerCase());
       
-      // 1차: 제목이나 변환된 태그에 검색어 포함 확인
-      let matches = title.includes(lower) || tags.some((tag) => tag.includes(lower));
+      // 변환된 태그 확인 (검색 결과 페이지와 동일)
+      const matchesConverted = title.includes(lower) || tags.some((tag: string) => tag.includes(lower));
       
-      // 2차: 매칭되지 않으면 원본 DB 데이터에서 모든 언어의 태그 확인 (slug 기반 매칭)
-      if (!matches && t.slug && dbTestsMap.has(t.slug)) {
+      if (matchesConverted) {
+        return true;
+      }
+      
+      // 추가: 원본 DB의 모든 언어 태그도 확인 (한국어 "얼굴" 검색 시 다른 언어 태그도 매칭)
+      if (t.slug && dbTestsMap.has(t.slug)) {
         const dbTest = dbTestsMap.get(t.slug);
         if (dbTest && dbTest.tags) {
           if (typeof dbTest.tags === 'object' && !Array.isArray(dbTest.tags)) {
@@ -89,16 +94,20 @@ export async function GET(request: NextRequest) {
               }
             });
             const allTagsLower = allTags.map((tag: string) => (tag || '').toLowerCase());
-            matches = allTagsLower.some((tag: string) => tag.includes(lower));
+            if (allTagsLower.some((tag: string) => tag.includes(lower))) {
+              return true;
+            }
           } else if (Array.isArray(dbTest.tags)) {
             // 배열 형식 태그인 경우
             const tagsLower = dbTest.tags.map((tag: string) => (tag || '').toLowerCase());
-            matches = tagsLower.some((tag: string) => tag.includes(lower));
+            if (tagsLower.some((tag: string) => tag.includes(lower))) {
+              return true;
+            }
           }
         }
       }
       
-      return matches;
+      return false;
     }).slice(0, limit);
 
     // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)
