@@ -41,5 +41,13 @@ INSERT INTO tests (
     "id": ["wajah"]
   }',
   0
-);
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  description = EXCLUDED.description,
+  thumbnail = EXCLUDED.thumbnail,
+  type = EXCLUDED.type,
+  category = EXCLUDED.category,
+  tags = EXCLUDED.tags,
+  updated_at = NOW();
 

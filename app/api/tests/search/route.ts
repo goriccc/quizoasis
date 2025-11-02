@@ -100,22 +100,37 @@ export async function GET(request: NextRequest) {
 
     // "얼굴" 태그를 가진 테스트 slug 목록 (디버깅용)
     const faceTaggedSlugs: string[] = [];
+    const faceTaggedDetails: Array<{slug: string, tags: any}> = [];
     if (dbTests) {
       dbTests.forEach((db: any) => {
         if (db && db.tags) {
           let hasFaceTag = false;
+          let tagDetails: any = null;
+          
           if (Array.isArray(db.tags)) {
             hasFaceTag = db.tags.some((tag: string) => 
               tag.toLowerCase().includes('얼굴') || tag.toLowerCase().includes('face')
             );
+            tagDetails = db.tags;
           } else if (typeof db.tags === 'object') {
             const koTags = db.tags.ko || [];
             hasFaceTag = koTags.some((tag: string) => 
               tag.toLowerCase().includes('얼굴')
             );
+            tagDetails = { ko: koTags, all: db.tags };
           }
+          
           if (hasFaceTag && db.slug) {
             faceTaggedSlugs.push(db.slug);
+            faceTaggedDetails.push({ slug: db.slug, tags: tagDetails });
+          }
+          
+          // 특정 slug 확인 (새로 추가한 테스트들)
+          if (db.slug && ['honest-facial-evaluation', 'face-psych-state', 'face-occupations'].includes(db.slug)) {
+            faceTaggedDetails.push({ 
+              slug: db.slug, 
+              tags: Array.isArray(db.tags) ? db.tags : db.tags.ko || 'no tags' 
+            });
           }
         }
       });
@@ -133,7 +148,14 @@ export async function GET(request: NextRequest) {
         hasDbTests: !!dbTests && dbTests.length > 0,
         faceTaggedCount: faceTaggedSlugs.length,
         faceTaggedSlugs: faceTaggedSlugs,
-        filteredSlugs: filtered.map((t: any) => t.slug)
+        filteredSlugs: filtered.map((t: any) => t.slug),
+        // 새로 추가한 테스트들 존재 여부 확인
+        newTestsCheck: {
+          'honest-facial-evaluation': dbTests?.some((t: any) => t.slug === 'honest-facial-evaluation') || false,
+          'face-psych-state': dbTests?.some((t: any) => t.slug === 'face-psych-state') || false,
+          'face-occupations': dbTests?.some((t: any) => t.slug === 'face-occupations') || false
+        },
+        faceTaggedDetails: faceTaggedDetails
       }
     });
     res.headers.set('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=120');

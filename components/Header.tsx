@@ -263,6 +263,16 @@ export default function Header() {
                             {searchDebug.faceTaggedCount !== undefined && (
                               <>
                                 <p>얼굴 태그 테스트: {searchDebug.faceTaggedCount}개</p>
+                                {searchDebug.newTestsCheck && (
+                                  <div className="mt-1 p-2 bg-yellow-50 rounded border border-yellow-200">
+                                    <p className="text-xs font-semibold text-yellow-800 mb-1">새 테스트 존재 여부:</p>
+                                    <div className="text-xs text-yellow-700 space-y-0.5">
+                                      <p>honest-facial-evaluation: {searchDebug.newTestsCheck['honest-facial-evaluation'] ? '✅ 있음' : '❌ 없음'}</p>
+                                      <p>face-psych-state: {searchDebug.newTestsCheck['face-psych-state'] ? '✅ 있음' : '❌ 없음'}</p>
+                                      <p>face-occupations: {searchDebug.newTestsCheck['face-occupations'] ? '✅ 있음' : '❌ 없음'}</p>
+                                    </div>
+                                  </div>
+                                )}
                                 {searchDebug.faceTaggedSlugs && searchDebug.faceTaggedSlugs.length > 0 && (
                                   <details className="mt-1">
                                     <summary className="cursor-pointer text-gray-700 hover:text-gray-900">얼굴 태그 테스트 목록</summary>
@@ -330,6 +340,16 @@ export default function Header() {
                             {searchDebug.faceTaggedCount !== undefined && (
                               <>
                                 <p>얼굴 태그 테스트: {searchDebug.faceTaggedCount}개</p>
+                                {searchDebug.newTestsCheck && (
+                                  <div className="mt-1 p-2 bg-yellow-50 rounded border border-yellow-200">
+                                    <p className="text-xs font-semibold text-yellow-800 mb-1">새 테스트 존재 여부:</p>
+                                    <div className="text-xs text-yellow-700 space-y-0.5">
+                                      <p>honest-facial-evaluation: {searchDebug.newTestsCheck['honest-facial-evaluation'] ? '✅ 있음' : '❌ 없음'}</p>
+                                      <p>face-psych-state: {searchDebug.newTestsCheck['face-psych-state'] ? '✅ 있음' : '❌ 없음'}</p>
+                                      <p>face-occupations: {searchDebug.newTestsCheck['face-occupations'] ? '✅ 있음' : '❌ 없음'}</p>
+                                    </div>
+                                  </div>
+                                )}
                                 {searchDebug.faceTaggedSlugs && searchDebug.faceTaggedSlugs.length > 0 && (
                                   <details className="mt-1">
                                     <summary className="cursor-pointer text-gray-700 hover:text-gray-900">얼굴 태그 테스트 목록</summary>
