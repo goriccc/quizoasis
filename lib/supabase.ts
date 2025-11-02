@@ -24,6 +24,29 @@ export async function getTests() {
   try {
     // Supabase 클라이언트는 이미 8초 타임아웃이 설정되어 있음
     // AbortSignal.timeout으로 자동 처리되므로 Promise.race 불필요
+    
+    // 특정 테스트들을 직접 확인 (디버깅용)
+    const specificSlugs = ['honest-facial-evaluation', 'face-psych-state', 'face-occupations'];
+    const specificTests: any[] = [];
+    
+    // 특정 slug들을 개별적으로 조회
+    for (const slug of specificSlugs) {
+      try {
+        const { data: specificData, error: specificError } = await supabase
+          .from('tests')
+          .select('*')
+          .eq('slug', slug)
+          .single();
+        
+        if (!specificError && specificData) {
+          specificTests.push(specificData);
+        }
+      } catch (e) {
+        // 개별 조회 실패는 무시
+      }
+    }
+    
+    // 전체 테스트 조회
     const { data, error } = await supabase
       .from('tests')
       .select('*')
@@ -33,7 +56,8 @@ export async function getTests() {
       if (process.env.NODE_ENV === 'development') {
         console.error('Error fetching tests:', error);
       }
-      return getFallbackTests();
+      // 에러 발생 시에도 개별 조회한 테스트들을 포함
+      return specificTests.length > 0 ? specificTests : getFallbackTests();
     }
 
     // 데이터가 없거나 빈 배열인 경우 확인
@@ -41,8 +65,16 @@ export async function getTests() {
       if (process.env.NODE_ENV === 'development') {
         console.error('Invalid data format from Supabase');
       }
-      return getFallbackTests();
+      return specificTests.length > 0 ? specificTests : getFallbackTests();
     }
+
+    // 개별 조회로 찾은 테스트들이 전체 조회 결과에 없는 경우 추가
+    const existingSlugs = new Set(data.map((t: any) => t?.slug).filter(Boolean));
+    specificTests.forEach((test: any) => {
+      if (test?.slug && !existingSlugs.has(test.slug)) {
+        data.push(test);
+      }
+    });
 
     return data;
   } catch (error) {
