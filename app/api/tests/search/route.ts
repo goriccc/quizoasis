@@ -29,9 +29,19 @@ export async function GET(request: NextRequest) {
     } else {
       // 타임아웃 8초
       const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('API Timeout')), 8000));
-      dbTests = await Promise.race([getTests(), timeout]) as any[];
-      tests = dbTests.map((db) => convertDBTestToQuizTest(db, locale));
-      cacheByLocale[locale] = { tests, dbTests, time: now };
+      try {
+        dbTests = await Promise.race([getTests(), timeout]) as any[];
+        tests = dbTests.map((db) => convertDBTestToQuizTest(db, locale));
+        cacheByLocale[locale] = { tests, dbTests, time: now };
+      } catch (error) {
+        // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)
+        if (process.env.NODE_ENV === 'development') {
+          console.error('[Search API] Error fetching tests:', error);
+        }
+        // 에러 발생 시에도 빈 배열 반환하여 검색 실패 명확히 표시
+        dbTests = [];
+        tests = [];
+      }
     }
 
     if (!q) {
@@ -41,31 +51,59 @@ export async function GET(request: NextRequest) {
     }
 
     const lower = q.toLowerCase();
-    const filtered = tests.filter((t: any, index: number) => {
+    
+    // dbTests를 slug를 키로 하는 Map으로 변환 (인덱스 매칭 문제 해결)
+    const dbTestsMap = new Map();
+    if (dbTests) {
+      dbTests.forEach((dbTest: any) => {
+        if (dbTest && dbTest.slug) {
+          dbTestsMap.set(dbTest.slug, dbTest);
+        }
+      });
+    }
+    
+    const filtered = tests.filter((t: any) => {
       const title = (t.title || '').toLowerCase();
       const tags = ((t.tags || []) as string[]).map((x: string) => (x || '').toLowerCase());
       
-      // 제목이나 태그에 검색어 포함 확인
+      // 1차: 제목이나 변환된 태그에 검색어 포함 확인
       let matches = title.includes(lower) || tags.some((tag) => tag.includes(lower));
       
-      // 원본 한국어 태그도 확인 (다른 locale에서도 한국어 태그로 검색 가능)
-      if (!matches && dbTests && dbTests[index]) {
-        const dbTest = dbTests[index];
-        if (dbTest.tags && typeof dbTest.tags === 'object' && !Array.isArray(dbTest.tags)) {
-          const koTags = dbTest.tags.ko || [];
-          const koTagsLower = koTags.map((tag: string) => (tag || '').toLowerCase());
-          matches = koTagsLower.some((tag: string) => tag.includes(lower));
+      // 2차: 매칭되지 않으면 원본 DB 데이터에서 모든 언어의 태그 확인 (slug 기반 매칭)
+      if (!matches && t.slug && dbTestsMap.has(t.slug)) {
+        const dbTest = dbTestsMap.get(t.slug);
+        if (dbTest && dbTest.tags) {
+          if (typeof dbTest.tags === 'object' && !Array.isArray(dbTest.tags)) {
+            // 다국어 태그 객체인 경우 - 모든 언어의 태그 확인
+            const allTags: string[] = [];
+            Object.values(dbTest.tags).forEach((langTags: any) => {
+              if (Array.isArray(langTags)) {
+                allTags.push(...langTags);
+              }
+            });
+            const allTagsLower = allTags.map((tag: string) => (tag || '').toLowerCase());
+            matches = allTagsLower.some((tag: string) => tag.includes(lower));
+          } else if (Array.isArray(dbTest.tags)) {
+            // 배열 형식 태그인 경우
+            const tagsLower = dbTest.tags.map((tag: string) => (tag || '').toLowerCase());
+            matches = tagsLower.some((tag: string) => tag.includes(lower));
+          }
         }
       }
       
       return matches;
     }).slice(0, limit);
 
+    // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)
+
     const res = NextResponse.json({ tests: filtered });
     res.headers.set('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=120');
     return res;
   } catch (e) {
-    console.error('Error in search API:', e);
+    // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Error in search API:', e);
+    }
     return NextResponse.json({ tests: [] }, { status: 200 });
   }
 }
