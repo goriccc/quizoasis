@@ -94,6 +94,11 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       description: meta.description,
       images: [`${baseUrl}/og-home.png`],
     },
+    verification: {
+      other: {
+        'naver-site-verification': '27343d8b05fa5eb547f7657cae7d5c43efd6ebd9',
+      },
+    },
   };
 }
 
