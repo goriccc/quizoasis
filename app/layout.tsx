@@ -6,9 +6,13 @@ import Analytics from '@/components/Analytics';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-  title: 'QuizOasis - 당신의 마음을 탐험하는 심리테스트의 오아시스',
+  title: 'QuizOasis',
   description: '다양한 심리테스트로 당신의 성격, 연애 스타일, 직업 적성을 알아보세요.',
   keywords: '심리테스트, MBTI, 성격테스트, 연애테스트, 심리분석',
+  applicationName: 'QuizOasis',
+  appleWebApp: {
+    title: 'QuizOasis',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
@@ -49,6 +53,10 @@ export default function RootLayout({
       <Head>
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
+        {/* iOS Safari 홈 화면 추가 이름 */}
+        <meta name="apple-mobile-web-app-title" content="QuizOasis" />
+        {/* Android Chrome 홈 화면 추가 이름 */}
+        <meta name="application-name" content="QuizOasis" />
         {/* Google Fonts - Noto Sans 다국어 지원 (안드로이드 갤럭시 최적화) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
