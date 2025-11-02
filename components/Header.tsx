@@ -22,6 +22,7 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchLoading, setSearchLoading] = useState(false);
   const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [searchDebug, setSearchDebug] = useState<any>(null);
 
   // 언어 변경
   const changeLanguage = (newLocale: Locale) => {
@@ -53,9 +54,13 @@ export default function Header() {
         const data = await res.json();
         if (active) {
           setSearchResults(Array.isArray(data.tests) ? data.tests : []);
+          setSearchDebug(data._debug || null); // 디버깅 정보 저장
         }
       } catch (e) {
-        if (active) setSearchResults([]);
+        if (active) {
+          setSearchResults([]);
+          setSearchDebug(null);
+        }
       } finally {
         if (active) setSearchLoading(false);
       }
@@ -243,34 +248,64 @@ export default function Header() {
                     <p className="text-gray-500 text-sm">{ts('loading')}</p>
                   )}
                   {!searchLoading && searchResults.length === 0 && (
-                    <p className="text-gray-500 text-sm">{ts('empty')}</p>
+                    <>
+                      <p className="text-gray-500 text-sm">{ts('empty')}</p>
+                      {/* 디버깅 정보 표시 (결과가 없을 때도) */}
+                      {searchDebug && (
+                        <div className="mt-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                          <p className="text-xs font-semibold text-gray-700 mb-1">🔍 검색 디버그 정보</p>
+                          <div className="text-xs text-gray-600 space-y-0.5">
+                            <p>전체 테스트: {searchDebug.totalTests}개</p>
+                            <p>DB 테스트: {searchDebug.totalDbTests}개</p>
+                            <p>필터링 결과: {searchDebug.filteredCount}개</p>
+                            <p>검색어: &quot;{searchDebug.query}&quot;</p>
+                            <p>DB 데이터 존재: {searchDebug.hasDbTests ? '✅ 있음' : '❌ 없음'}</p>
+                          </div>
+                        </div>
+                      )}
+                    </>
                   )}
                   {!searchLoading && searchResults.length > 0 && (
-                    <ul className="divide-y divide-gray-100">
-                      {searchResults.map((item) => (
-                        <li key={item.slug}>
-                          <Link
-                            href={`/${locale}/test/${item.slug}`}
-                            className="flex items-center gap-3 py-2 hover:bg-gray-50 rounded px-2"
-                            onClick={() => setIsSearchOpen(false)}
-                          >
-                            <div className="relative flex-shrink-0 rounded overflow-hidden bg-gray-100" style={{ width: '96px', height: '60px' }}>
-                              <Image
-                                src={getThumbnailUrl(item.thumbnail)}
-                                alt={typeof item.title === 'string' ? item.title : 'thumbnail'}
-                                fill
-                                sizes="96px"
-                                className="object-cover"
-                              />
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <p className="text-sm font-medium text-gray-800 truncate">{item.title}</p>
-                              <p className="text-xs text-gray-500 truncate">{(item.tags || []).join(', ')}</p>
-                            </div>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    <>
+                      <ul className="divide-y divide-gray-100">
+                        {searchResults.map((item) => (
+                          <li key={item.slug}>
+                            <Link
+                              href={`/${locale}/test/${item.slug}`}
+                              className="flex items-center gap-3 py-2 hover:bg-gray-50 rounded px-2"
+                              onClick={() => setIsSearchOpen(false)}
+                            >
+                              <div className="relative flex-shrink-0 rounded overflow-hidden bg-gray-100" style={{ width: '96px', height: '60px' }}>
+                                <Image
+                                  src={getThumbnailUrl(item.thumbnail)}
+                                  alt={typeof item.title === 'string' ? item.title : 'thumbnail'}
+                                  fill
+                                  sizes="96px"
+                                  className="object-cover"
+                                />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <p className="text-sm font-medium text-gray-800 truncate">{item.title}</p>
+                                <p className="text-xs text-gray-500 truncate">{(item.tags || []).join(', ')}</p>
+                              </div>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      {/* 디버깅 정보 표시 */}
+                      {searchDebug && (
+                        <div className="mt-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                          <p className="text-xs font-semibold text-gray-700 mb-1">🔍 검색 디버그 정보</p>
+                          <div className="text-xs text-gray-600 space-y-0.5">
+                            <p>전체 테스트: {searchDebug.totalTests}개</p>
+                            <p>DB 테스트: {searchDebug.totalDbTests}개</p>
+                            <p>필터링 결과: {searchDebug.filteredCount}개</p>
+                            <p>검색어: &quot;{searchDebug.query}&quot;</p>
+                            <p>DB 데이터 존재: {searchDebug.hasDbTests ? '✅ 있음' : '❌ 없음'}</p>
+                          </div>
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               )}

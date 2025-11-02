@@ -27,10 +27,12 @@ export async function GET(request: NextRequest) {
       tests = cached.tests;
       dbTests = cached.dbTests;
     } else {
-      // 타임아웃 8초
-      const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('API Timeout')), 8000));
       try {
-        dbTests = await Promise.race([getTests(), timeout]) as any[];
+        // getTests()는 이미 타임아웃이 설정되어 있으므로 직접 호출
+        dbTests = await getTests();
+        if (!dbTests || !Array.isArray(dbTests)) {
+          dbTests = [];
+        }
         tests = dbTests.map((db) => convertDBTestToQuizTest(db, locale));
         cacheByLocale[locale] = { tests, dbTests, time: now };
       } catch (error) {
@@ -96,7 +98,18 @@ export async function GET(request: NextRequest) {
 
     // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)
 
-    const res = NextResponse.json({ tests: filtered });
+    // 디버깅 정보를 응답에 포함 (프로덕션에서도 확인 가능)
+    const res = NextResponse.json({ 
+      tests: filtered,
+      // 디버깅 정보 (프로덕션에서 문제 확인용)
+      _debug: {
+        totalTests: tests.length,
+        totalDbTests: dbTests?.length || 0,
+        filteredCount: filtered.length,
+        query: q,
+        hasDbTests: !!dbTests && dbTests.length > 0
+      }
+    });
     res.headers.set('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=120');
     return res;
   } catch (e) {

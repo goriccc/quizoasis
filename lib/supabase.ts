@@ -22,26 +22,33 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
  */
 export async function getTests() {
   try {
-    // Promise.race를 사용하여 5초 내에 응답이 없으면 폴백 데이터 반환
-    const timeoutPromise = new Promise((_, reject) => 
-      setTimeout(() => reject(new Error('Timeout')), 5000)
-    );
-    
-    const fetchPromise = supabase
+    // Supabase 클라이언트는 이미 8초 타임아웃이 설정되어 있음
+    // AbortSignal.timeout으로 자동 처리되므로 Promise.race 불필요
+    const { data, error } = await supabase
       .from('tests')
       .select('*')
       .order('created_at', { ascending: false });
 
-    const { data, error } = await Promise.race([fetchPromise, timeoutPromise]) as any;
-
     if (error) {
-      console.error('Error fetching tests:', error);
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Error fetching tests:', error);
+      }
       return getFallbackTests();
     }
 
-    return data || [];
+    // 데이터가 없거나 빈 배열인 경우 확인
+    if (!data || !Array.isArray(data)) {
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Invalid data format from Supabase');
+      }
+      return getFallbackTests();
+    }
+
+    return data;
   } catch (error) {
-    console.error('Network error fetching tests:', error);
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Network error fetching tests:', error);
+    }
     return getFallbackTests();
   }
 }
