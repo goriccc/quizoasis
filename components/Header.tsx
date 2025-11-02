@@ -50,7 +50,7 @@ export default function Header() {
     setSearchLoading(true);
     const h = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/tests/search?locale=${locale}&q=${encodeURIComponent(q)}&limit=10`, { cache: 'no-store', signal: controller.signal });
+        const res = await fetch(`/api/tests/search?locale=${locale}&q=${encodeURIComponent(q)}&limit=10&noCache=true`, { cache: 'no-store', signal: controller.signal });
         const data = await res.json();
         if (active) {
           setSearchResults(Array.isArray(data.tests) ? data.tests : []);

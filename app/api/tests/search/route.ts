@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 // 간단한 메모리 캐시 (locale별로 유지)
 let cacheByLocale: Record<string, { tests: any[]; dbTests: any[]; time: number }> = {};
-const CACHE_DURATION = 60_000; // 60초
+const CACHE_DURATION = 5_000; // 5초로 단축 (프로덕션에서 새 데이터 빠른 반영)
 
 export async function GET(request: NextRequest) {
   try {
@@ -22,11 +22,16 @@ export async function GET(request: NextRequest) {
     let dbTests: any[] | undefined;
 
     // 캐시 조회 (noCache가 true면 캐시 사용 안함)
+    // 프로덕션에서는 캐시 시간을 더 짧게 설정하거나 무시
     const cached = cacheByLocale[locale];
-    if (!noCache && cached && now - cached.time < CACHE_DURATION) {
+    const isProduction = process.env.NODE_ENV === 'production';
+    const shouldUseCache = !noCache && !isProduction && cached && now - cached.time < CACHE_DURATION;
+    
+    if (shouldUseCache) {
       tests = cached.tests;
       dbTests = cached.dbTests;
     } else {
+      // 프로덕션에서는 항상 최신 데이터 가져오기
       try {
         // getTests()는 이미 타임아웃이 설정되어 있으므로 직접 호출
         dbTests = await getTests();
