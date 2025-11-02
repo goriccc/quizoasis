@@ -39,7 +39,11 @@ export async function GET(request: NextRequest) {
           dbTests = [];
         }
         tests = dbTests.map((db) => convertDBTestToQuizTest(db, locale));
-        cacheByLocale[locale] = { tests, dbTests, time: now };
+        
+        // 프로덕션 캐시 무효화: 캐시 저장하지 않음
+        if (!isProduction) {
+          cacheByLocale[locale] = { tests, dbTests, time: now };
+        }
       } catch (error) {
         // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)
         if (process.env.NODE_ENV === 'development') {
@@ -150,6 +154,15 @@ export async function GET(request: NextRequest) {
       });
     }
 
+    // 특정 slug 확인 (직접 배열에서 찾기)
+    const allSlugs = dbTests?.map((t: any) => t?.slug).filter(Boolean) || [];
+    const newTestsSlugs = ['honest-facial-evaluation', 'face-psych-state', 'face-occupations'];
+    const newTestsFound = newTestsSlugs.map(slug => ({
+      slug,
+      exists: allSlugs.includes(slug),
+      index: allSlugs.indexOf(slug)
+    }));
+    
     // 디버깅 정보를 응답에 포함 (프로덕션에서도 확인 가능)
     const res = NextResponse.json({ 
       tests: filtered,
@@ -163,12 +176,15 @@ export async function GET(request: NextRequest) {
         faceTaggedCount: faceTaggedSlugs.length,
         faceTaggedSlugs: faceTaggedSlugs,
         filteredSlugs: filtered.map((t: any) => t.slug),
-        // 새로 추가한 테스트들 존재 여부 확인
+        // 새로 추가한 테스트들 존재 여부 확인 (더 상세한 정보)
         newTestsCheck: {
           'honest-facial-evaluation': dbTests?.some((t: any) => t.slug === 'honest-facial-evaluation') || false,
           'face-psych-state': dbTests?.some((t: any) => t.slug === 'face-psych-state') || false,
           'face-occupations': dbTests?.some((t: any) => t.slug === 'face-occupations') || false
         },
+        newTestsDetailed: newTestsFound,
+        allSlugsCount: allSlugs.length,
+        allSlugsSample: allSlugs.slice(0, 10), // 처음 10개만 샘플로
         faceTaggedDetails: faceTaggedDetails
       }
     });
