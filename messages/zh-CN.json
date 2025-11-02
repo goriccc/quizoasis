@@ -641,6 +641,17 @@
     "shareWithFriends": "和朋友一起试试",
     "shareResultWithFriends": "将结果分享给朋友"
   },
+  "installPrompt": {
+    "close": "关闭",
+    "title": "添加到主屏幕",
+    "description": "将QuizOasis添加到主屏幕\n快速方便地访问！",
+    "step1": "点击浏览器顶部或底部三点菜单",
+    "step2": "选择&quot;添加到主屏幕&quot;",
+    "step3": "完成！现在可以随时轻松访问",
+    "dontShow24h": "24小时内不显示",
+    "installButton": "添加QuizOasis",
+    "manualInstructions": "请按照上述步骤手动添加。"
+  },
   "footer": {
     "slogan": "探索您内心的心理测试绿洲",
     "disclaimer": "发布者可能通过广告获得一定佣金",

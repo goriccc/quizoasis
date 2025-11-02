@@ -641,6 +641,17 @@
     "shareWithFriends": "Coba bersama teman",
     "shareResultWithFriends": "Bagikan hasil dengan teman"
   },
+  "installPrompt": {
+    "close": "Tutup",
+    "title": "Tambahkan ke Layar Utama",
+    "description": "Tambahkan QuizOasis ke layar utama\nuntuk akses yang lebih cepat dan nyaman!",
+    "step1": "Ketuk menu 3 titik di bagian atas atau bawah browser",
+    "step2": "Pilih &quot;Tambahkan ke Layar Utama&quot;",
+    "step3": "Selesai! Sekarang Anda dapat dengan mudah mengakses kapan saja",
+    "dontShow24h": "Jangan tampilkan selama 24 jam",
+    "installButton": "Tambahkan QuizOasis",
+    "manualInstructions": "Silakan ikuti langkah-langkah di atas untuk menambahkan secara manual."
+  },
   "footer": {
     "slogan": "Oasis tes psikologi untuk menjelajahi pikiran Anda",
     "disclaimer": "Penerbit dapat menerima komisi melalui iklan",

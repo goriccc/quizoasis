@@ -702,6 +702,17 @@
     "shareWithFriends": "Try with friends",
     "shareResultWithFriends": "Share results with friends"
   },
+  "installPrompt": {
+    "close": "Close",
+    "title": "Add to Home Screen",
+    "description": "Add QuizOasis to your home screen\nfor faster and more convenient access!",
+    "step1": "Tap the 3-dot menu at the top or bottom",
+    "step2": "Select &quot;Add to Home Screen&quot;",
+    "step3": "Done! Now you can easily access anytime",
+    "dontShow24h": "Don&apos;t show for 24 hours",
+    "installButton": "Add QuizOasis",
+    "manualInstructions": "Please follow the steps above to add manually."
+  },
   "footer": {
     "slogan": "An oasis of psychological tests to explore your mind",
     "disclaimer": "The publisher may receive a commission through advertising",
@@ -2914,4 +2925,3 @@
     }
   }
 }
-

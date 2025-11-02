@@ -642,6 +642,17 @@
     "shareWithFriends": "友達と一緒にやってみる",
     "shareResultWithFriends": "結果を友達に共有する"
   },
+  "installPrompt": {
+    "close": "閉じる",
+    "title": "ホーム画面に追加",
+    "description": "QuizOasisをホーム画面に追加すると\nより早く便利にご利用いただけます！",
+    "step1": "ブラウザ上部または下部の3点メニューをタップ",
+    "step2": "&quot;ホーム画面に追加&quot;を選択",
+    "step3": "完了！これでいつでも簡単にアクセスできます",
+    "dontShow24h": "24時間表示しない",
+    "installButton": "QuizOasisを追加",
+    "manualInstructions": "上記の手順に従って手動で追加してください。"
+  },
   "footer": {
     "slogan": "あなたの心を探る心理テストのオアシス",
     "disclaimer": "運営者は広告を通じて一定の手数料を受け取る場合があります",

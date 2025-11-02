@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import InstallPrompt from '@/components/InstallPrompt';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -118,8 +119,11 @@ export default async function LocaleLayout({
         {children}
       </main>
       <Footer />
+      <InstallPrompt />
     </NextIntlClientProvider>
   );
 }
+
+
 
 

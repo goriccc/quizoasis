@@ -641,6 +641,17 @@
     "shareWithFriends": "Thử cùng bạn bè",
     "shareResultWithFriends": "Chia sẻ kết quả với bạn bè"
   },
+  "installPrompt": {
+    "close": "Đóng",
+    "title": "Thêm vào Màn hình chính",
+    "description": "Thêm QuizOasis vào màn hình chính\nđể truy cập nhanh hơn và thuận tiện hơn!",
+    "step1": "Nhấp vào menu 3 chấm ở trên hoặc dưới cùng trình duyệt",
+    "step2": "Chọn &quot;Thêm vào Màn hình chính&quot;",
+    "step3": "Hoàn tất! Bây giờ bạn có thể dễ dàng truy cập bất cứ lúc nào",
+    "dontShow24h": "Không hiển thị trong 24 giờ",
+    "installButton": "Thêm QuizOasis",
+    "manualInstructions": "Vui lòng làm theo các bước trên để thêm thủ công."
+  },
   "footer": {
     "slogan": "Ốc đảo của các bài kiểm tra tâm lý để khám phá tâm trí bạn",
     "disclaimer": "Nhà xuất bản có thể nhận hoa hồng thông qua quảng cáo",

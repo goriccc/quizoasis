@@ -47,6 +47,8 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <Head>
+        {/* PWA Manifest */}
+        <link rel="manifest" href="/manifest.json" />
         {/* Google Fonts - Noto Sans 다국어 지원 (안드로이드 갤럭시 최적화) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

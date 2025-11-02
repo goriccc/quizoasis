@@ -648,6 +648,17 @@
     "shareWithFriends": "和朋友一起試試",
     "shareResultWithFriends": "將結果分享給朋友"
   },
+  "installPrompt": {
+    "close": "關閉",
+    "title": "加入主畫面",
+    "description": "將QuizOasis加入主畫面\n快速方便地訪問！",
+    "step1": "點擊瀏覽器頂部或底部三點選單",
+    "step2": "選擇&quot;加入主畫面&quot;",
+    "step3": "完成！現在可以隨時輕鬆訪問",
+    "dontShow24h": "24小時內不顯示",
+    "installButton": "加入QuizOasis",
+    "manualInstructions": "請按照上述步驟手動加入。"
+  },
   "footer": {
     "slogan": "探索您內心的心理測試綠洲",
     "disclaimer": "發布者可能透過廣告獲得一定佣金",

@@ -1,0 +1,28 @@
+{
+  "name": "QuizOasis",
+  "short_name": "QuizOasis",
+  "description": "당신의 마음을 탐험하는 심리테스트의 오아시스",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "lifestyle", "entertainment"],
+  "lang": "ko",
+  "dir": "ltr"
+}
+
