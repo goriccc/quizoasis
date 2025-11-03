@@ -1636,7 +1636,7 @@
     "startMessage": "同樣的詞，不同的方式！你的溝通風格是什麼？\n\n有人說話單刀直入，\n有人說話委婉謹慎。\n有人重視情感，\n有人用邏輯解釋。\n\n「實話實說...」 vs 「我想或許...」\n「為什麼這麼想？」 vs 「心情如何？」\n\n你如何溝通？\n耗時3分鐘！請像平時一樣回答 💬",
     "ui": {
       "startTest": "開始測試",
-      "totalParticipants": "{count}人參與",
+      "totalParticipants": "共有 {count} 人參與！",
       "shareWithFriends": "和朋友一起試試",
       "shareResultWithFriends": "與朋友分享結果",
       "progress": "進度",
@@ -1944,7 +1944,7 @@
     },
     "ui": {
       "startTest": "開始測試",
-      "totalParticipants": "{count}人參與",
+      "totalParticipants": "共有 {count} 人參與！",
       "progress": "進度",
       "duration": "3分鐘",
       "questions": "題",
@@ -2000,7 +2000,7 @@
     },
     "ui": {
       "startTest": "開始測試",
-      "totalParticipants": "{count}人參與",
+      "totalParticipants": "共有 {count} 人參與！",
       "progress": "分析中...",
       "shareResult": "分享結果",
       "share": "分享",
@@ -2444,7 +2444,7 @@
       "advice": "建議",
       "similarTests": "🎯 相似的其他測試推薦TOP5",
       "adsenseTitle": "AdSense廣告區域",
-      "totalParticipants": "{count}人參加",
+      "totalParticipants": "共有 {count} 人參與！",
       "testCompleted": "測試完成！",
       "viewResults": "查看分析結果",
       "yourResult": "你的結果是",
