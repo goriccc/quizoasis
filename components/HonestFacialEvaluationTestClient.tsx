@@ -931,7 +931,7 @@ export default function HonestFacialEvaluationTestClient({
         jawOpen = blend.score;
         if (blend.score > 0.3) {
           scores.surprised = (scores.surprised || 0) + blend.score * 0.5; // Lower weight initially
-        }
+      }
       }
       
       // Mouth close/jaw clench - anger indicator
@@ -1341,9 +1341,9 @@ export default function HonestFacialEvaluationTestClient({
               <div className="text-center p-4 bg-gradient-to-br from-pink-50 to-rose-50 rounded-lg border border-pink-200">
                 <div className="text-4xl font-bold text-pink-600">
                   {result.oppositeGenderScore}{t('ui.points')}
-                </div>
-              </div>
-            </div>
+                    </div>
+                    </div>
+                  </div>
             
             {/* 동성이 보는 첫인상 점수 섹션 */}
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">

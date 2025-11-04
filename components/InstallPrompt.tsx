@@ -124,12 +124,23 @@ export default function InstallPrompt() {
 
           {/* Instructions */}
           <div className="bg-gray-50 rounded-lg p-4 mb-4">
-            <div className="text-sm text-gray-700 space-y-2">
-              <div className="flex items-start gap-3">
+            <div className="text-sm text-gray-700 space-y-2 overflow-hidden">
+              <div className="flex items-start gap-3 min-w-0">
                 <span className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
                   1
                 </span>
-                <span>{t('step1')}</span>
+                <span className="min-w-0 flex-1">
+                  {t('step1').split('[ICON]')[0]}
+                  <img 
+                    src="/iphone_shere.png" 
+                    alt="iOS Share Icon" 
+                    width="16" 
+                    height="16" 
+                    className="inline align-middle mx-0.5"
+                    style={{ verticalAlign: 'middle' }}
+                  />
+                  {t('step1').split('[ICON]')[1] || ' 클릭'}
+                </span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
