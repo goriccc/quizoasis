@@ -88,7 +88,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://x.com/goriccc"
+            href="https://x.com/QuizOasis_en"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-black rounded-full transition-colors"
