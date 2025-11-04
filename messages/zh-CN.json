@@ -737,7 +737,7 @@
     "close": "关闭",
     "title": "添加到主屏幕",
     "description": "将QuizOasis添加到主屏幕\n快速方便地访问！",
-    "step1": "点击浏览器顶部或底部三点菜单",
+    "step1": "安卓（顶部或底部三点），iPhone [ICON] 点击",
     "step2": "选择&quot;添加到主屏幕&quot;",
     "step3": "完成！现在可以随时轻松访问",
     "dontShow24h": "24小时内不显示",
