@@ -127,14 +127,19 @@ export default function AdSensePlaceholder({
         const adHeight = adElement.offsetHeight;
         const adWidth = adElement.offsetWidth;
         
-        // 광고가 로드되었거나 높이/너비가 있으면 표시
-        if (adStatus === 'done' || (adHeight > 0 && adWidth > 0)) {
+        // 광고가 로드되었는지 확인 (status가 'done'이거나 실제 크기가 있어야 함)
+        const isLoaded = adStatus === 'done' || (adHeight > 50 && adWidth > 50);
+        
+        if (isLoaded) {
+          // 광고가 로드되었으면 표시
           setIsAdLoaded(true);
           setShouldHide(false);
           return true;
+        } else {
+          // 광고가 로드되지 않았으면 숨기기
+          setShouldHide(true);
+          return false;
         }
-        
-        return false;
       };
 
       // MutationObserver로 광고 상태 변화 즉시 감지
@@ -150,23 +155,12 @@ export default function AdSensePlaceholder({
           subtree: true
         });
         
-        // 초기 확인
-        if (checkAdStatus()) {
-          return; // 광고가 이미 로드되었으면 주기적 확인 불필요
-        }
-        
-        // 광고가 없으면 즉시 숨기기 (게재 제한 중)
+        // 초기에는 숨겨두고 시작 (광고 요소가 완전히 렌더링될 때까지 대기)
         setShouldHide(true);
         
-        // 주기적으로 확인 (광고가 나중에 로드될 수 있음)
+        // 주기적으로 확인 (광고가 로드되었는지 확인)
         interval = setInterval(() => {
-          if (checkAdStatus()) {
-            // 광고가 로드되었으면 interval 정리
-            if (interval) {
-              clearInterval(interval);
-              interval = null;
-            }
-          }
+          checkAdStatus();
         }, 1000);
       }
     };
