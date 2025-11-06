@@ -108,7 +108,6 @@ export default function AdSensePlaceholder({
     let observer: MutationObserver | null = null;
     let interval: NodeJS.Timeout | null = null;
     let rafId: number | null = null;
-    let hideTimeout: NodeJS.Timeout | null = null;
     
     // ref가 설정될 때까지 대기
     const checkAndSetup = () => {
@@ -132,11 +131,6 @@ export default function AdSensePlaceholder({
         if (adStatus === 'done' || (adHeight > 0 && adWidth > 0)) {
           setIsAdLoaded(true);
           setShouldHide(false);
-          // 타임아웃 취소
-          if (hideTimeout) {
-            clearTimeout(hideTimeout);
-            hideTimeout = null;
-          }
           return true;
         }
         
@@ -161,12 +155,8 @@ export default function AdSensePlaceholder({
           return; // 광고가 이미 로드되었으면 주기적 확인 불필요
         }
         
-        // 5초 후에도 광고가 로드되지 않으면 숨기기 (게재 제한 중)
-        hideTimeout = setTimeout(() => {
-          if (!checkAdStatus()) {
-            setShouldHide(true);
-          }
-        }, 5000);
+        // 광고가 없으면 즉시 숨기기 (게재 제한 중)
+        setShouldHide(true);
         
         // 주기적으로 확인 (광고가 나중에 로드될 수 있음)
         interval = setInterval(() => {
@@ -194,9 +184,6 @@ export default function AdSensePlaceholder({
       }
       if (interval) {
         clearInterval(interval);
-      }
-      if (hideTimeout) {
-        clearTimeout(hideTimeout);
       }
     };
   }, []);
