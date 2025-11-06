@@ -78,6 +78,9 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     router.push(`${pathname}${params.toString() ? `?${params.toString()}` : ''}`);
   };
 
+  // 카테고리 셔플링을 위한 state
+  const [shuffleKey, setShuffleKey] = useState(0);
+
   // 선택된 태그에 따라 필터링된 테스트 (최초 접속시에만 섞기)
   const filteredTests = useMemo(() => {
     let filtered;
@@ -101,12 +104,12 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
       filtered = tests;
     }
     
-    // sessionStorage에서 저장된 순서 확인
+    // sessionStorage에서 저장된 순서 확인 (풀 투 리프레시가 아닐 때만)
     const storageKey = `home_tests_order_${selectedTag}_${tagKey || 'all'}`;
     const savedOrder = typeof window !== 'undefined' ? sessionStorage.getItem(storageKey) : null;
     
-    if (savedOrder) {
-      // 저장된 순서가 있으면 그대로 사용
+    if (savedOrder && shuffleKey === 0) {
+      // 저장된 순서가 있고 풀 투 리프레시가 아니면 그대로 사용
       try {
         const order = JSON.parse(savedOrder);
         const testMap = new Map(filtered.map(test => [test.id, test]));
@@ -116,7 +119,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
       }
     }
     
-    // 최초 접속이거나 저장된 순서가 없으면 Fisher-Yates 셔플 알고리즘으로 랜덤 순서 생성
+    // 최초 접속이거나 저장된 순서가 없거나 풀 투 리프레시면 Fisher-Yates 셔플 알고리즘으로 랜덤 순서 생성
     const shuffled = [...filtered];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -130,7 +133,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     }
     
     return shuffled;
-  }, [tests, selectedTag, tagKey, displayTag]);
+  }, [tests, selectedTag, tagKey, displayTag, shuffleKey]);
 
   // 스크롤 위치 저장 및 복원
   useEffect(() => {
@@ -168,6 +171,50 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     return () => {
       window.removeEventListener('scroll', debouncedHandleScroll);
       clearTimeout(scrollTimeout);
+    };
+  }, []);
+
+  // 풀 투 리프레시 감지 (모바일)
+  useEffect(() => {
+    let touchStartY = 0;
+    let touchEndY = 0;
+    let isPulling = false;
+    let hasTriggered = false;
+
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartY = e.touches[0].clientY;
+      isPulling = window.scrollY === 0;
+      hasTriggered = false;
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (!isPulling) return;
+      touchEndY = e.touches[0].clientY;
+      const pullDistance = touchEndY - touchStartY;
+      
+      // 아래로 80px 이상 당기면 풀 투 리프레시 준비
+      if (pullDistance > 80 && window.scrollY === 0 && !hasTriggered) {
+        hasTriggered = true;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      if (isPulling && hasTriggered && window.scrollY === 0) {
+        // 풀 투 리프레시 완료 - 셔플링 실행
+        setShuffleKey(prev => prev + 1);
+      }
+      isPulling = false;
+      hasTriggered = false;
+    };
+
+    window.addEventListener('touchstart', handleTouchStart, { passive: true });
+    window.addEventListener('touchmove', handleTouchMove, { passive: true });
+    window.addEventListener('touchend', handleTouchEnd, { passive: true });
+
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
     };
   }, []);
 

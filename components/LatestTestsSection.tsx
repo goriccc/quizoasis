@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,6 +24,54 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
   const [dragDistance, setDragDistance] = useState(0);
   const [lastMoveTime, setLastMoveTime] = useState(0);
   const [lastMoveX, setLastMoveX] = useState(0);
+
+  // 스크롤 위치 저장 및 복원
+  useEffect(() => {
+    if (!scrollRef.current) return;
+
+    // 저장된 스크롤 위치 복원
+    const savedScrollPosition = typeof window !== 'undefined' 
+      ? sessionStorage.getItem('latest_tests_scroll_position') 
+      : null;
+    
+    if (savedScrollPosition) {
+      const position = parseInt(savedScrollPosition, 10);
+      // 약간의 지연을 두고 스크롤 (렌더링 완료 후)
+      setTimeout(() => {
+        if (scrollRef.current) {
+          scrollRef.current.scrollLeft = position;
+        }
+        // 복원 후 저장된 위치 삭제 (한 번만 복원)
+        sessionStorage.removeItem('latest_tests_scroll_position');
+      }, 100);
+    }
+
+    // 스크롤 이벤트로 위치 저장
+    const handleScroll = () => {
+      if (scrollRef.current && typeof window !== 'undefined') {
+        sessionStorage.setItem('latest_tests_scroll_position', scrollRef.current.scrollLeft.toString());
+      }
+    };
+
+    // 디바운스 적용 (성능 최적화)
+    let scrollTimeout: NodeJS.Timeout;
+    const debouncedHandleScroll = () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(handleScroll, 100);
+    };
+
+    const scrollElement = scrollRef.current;
+    if (scrollElement) {
+      scrollElement.addEventListener('scroll', debouncedHandleScroll, { passive: true });
+    }
+
+    return () => {
+      if (scrollElement) {
+        scrollElement.removeEventListener('scroll', debouncedHandleScroll);
+      }
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!scrollRef.current) return;
