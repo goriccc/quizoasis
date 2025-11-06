@@ -108,7 +108,7 @@ export default function AdSensePlaceholder({
     let observer: MutationObserver | null = null;
     let interval: NodeJS.Timeout | null = null;
     let rafId: number | null = null;
-    let checkCount = 0;
+    let hideTimeout: NodeJS.Timeout | null = null;
     
     // ref가 설정될 때까지 대기
     const checkAndSetup = () => {
@@ -132,13 +132,18 @@ export default function AdSensePlaceholder({
         if (adStatus === 'done' || (adHeight > 0 && adWidth > 0)) {
           setIsAdLoaded(true);
           setShouldHide(false);
+          // 타임아웃 취소
+          if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+          }
           return true;
         }
         
         return false;
       };
 
-      // MutationObserver로 광고 상태 변화 감지
+      // MutationObserver로 광고 상태 변화 즉시 감지
       observer = new MutationObserver(() => {
         checkAdStatus();
       });
@@ -156,20 +161,21 @@ export default function AdSensePlaceholder({
           return; // 광고가 이미 로드되었으면 주기적 확인 불필요
         }
         
+        // 5초 후에도 광고가 로드되지 않으면 숨기기 (게재 제한 중)
+        hideTimeout = setTimeout(() => {
+          if (!checkAdStatus()) {
+            setShouldHide(true);
+          }
+        }, 5000);
+        
         // 주기적으로 확인 (광고가 나중에 로드될 수 있음)
         interval = setInterval(() => {
-          checkCount++;
-          
           if (checkAdStatus()) {
             // 광고가 로드되었으면 interval 정리
             if (interval) {
               clearInterval(interval);
               interval = null;
             }
-          } else if (checkCount >= 5) {
-            // 5회 확인 후에도 로드되지 않으면 숨기기 (게재 제한 중)
-            setShouldHide(true);
-            // 계속 확인하여 나중에 로드되면 다시 표시
           }
         }, 1000);
       }
@@ -188,6 +194,9 @@ export default function AdSensePlaceholder({
       }
       if (interval) {
         clearInterval(interval);
+      }
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
       }
     };
   }, []);
