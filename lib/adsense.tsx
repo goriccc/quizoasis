@@ -106,9 +106,9 @@ export default function AdSensePlaceholder({
     if (!ADSENSE_CONFIG.ENABLED) return;
     
     let observer: MutationObserver | null = null;
-    let hideTimeout: NodeJS.Timeout | null = null;
     let interval: NodeJS.Timeout | null = null;
     let rafId: number | null = null;
+    let checkCount = 0;
     
     // ref가 설정될 때까지 대기
     const checkAndSetup = () => {
@@ -152,22 +152,24 @@ export default function AdSensePlaceholder({
         });
         
         // 초기 확인
-        checkAdStatus();
-        
-        // 5초 후에도 광고가 로드되지 않으면 숨기기 (게재 제한 중)
-        hideTimeout = setTimeout(() => {
-          if (!checkAdStatus()) {
-            setShouldHide(true);
-          }
-        }, 5000);
+        if (checkAdStatus()) {
+          return; // 광고가 이미 로드되었으면 주기적 확인 불필요
+        }
         
         // 주기적으로 확인 (광고가 나중에 로드될 수 있음)
         interval = setInterval(() => {
+          checkCount++;
+          
           if (checkAdStatus()) {
+            // 광고가 로드되었으면 interval 정리
             if (interval) {
               clearInterval(interval);
               interval = null;
             }
+          } else if (checkCount >= 5) {
+            // 5회 확인 후에도 로드되지 않으면 숨기기 (게재 제한 중)
+            setShouldHide(true);
+            // 계속 확인하여 나중에 로드되면 다시 표시
           }
         }, 1000);
       }
@@ -186,9 +188,6 @@ export default function AdSensePlaceholder({
       }
       if (interval) {
         clearInterval(interval);
-      }
-      if (hideTimeout) {
-        clearTimeout(hideTimeout);
       }
     };
   }, []);
