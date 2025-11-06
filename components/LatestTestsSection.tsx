@@ -56,9 +56,10 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
     return ordered;
   }, [tests, shuffleKey]);
 
-  // 스크롤 위치 저장 및 복원
+  // 스크롤 위치 저장 및 복원 (한 번만 실행)
+  const hasRestoredScroll = useRef(false);
   useEffect(() => {
-    if (!scrollRef.current) return;
+    if (!scrollRef.current || orderedTests.length === 0 || hasRestoredScroll.current) return;
 
     // 저장된 스크롤 위치 복원
     const savedScrollPosition = typeof window !== 'undefined' 
@@ -66,15 +67,29 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
       : null;
     
     if (savedScrollPosition) {
+      hasRestoredScroll.current = true;
       const position = parseInt(savedScrollPosition, 10);
-      // 약간의 지연을 두고 스크롤 (렌더링 완료 후)
-      setTimeout(() => {
-        if (scrollRef.current) {
-          scrollRef.current.scrollLeft = position;
-        }
-        // 복원 후 저장된 위치 삭제 (한 번만 복원)
-        sessionStorage.removeItem('latest_tests_scroll_position');
-      }, 100);
+      // 렌더링 완료 후 즉시 위치로 이동 (애니메이션 없이)
+      // requestAnimationFrame을 두 번 사용하여 DOM 업데이트 완료 보장
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          if (scrollRef.current) {
+            // scrollBehavior를 auto로 임시 변경하여 즉시 이동
+            const originalScrollBehavior = scrollRef.current.style.scrollBehavior;
+            scrollRef.current.style.scrollBehavior = 'auto';
+            scrollRef.current.scrollLeft = position;
+            
+            // 다음 프레임에서 원래대로 복원
+            requestAnimationFrame(() => {
+              if (scrollRef.current) {
+                scrollRef.current.style.scrollBehavior = originalScrollBehavior || 'smooth';
+              }
+            });
+          }
+          // 복원 후 저장된 위치 삭제 (한 번만 복원)
+          sessionStorage.removeItem('latest_tests_scroll_position');
+        });
+      });
     }
 
     // 스크롤 이벤트로 위치 저장
@@ -102,7 +117,7 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
       }
       clearTimeout(scrollTimeout);
     };
-  }, []);
+  }, [orderedTests]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!scrollRef.current) return;
