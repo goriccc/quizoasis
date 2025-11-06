@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,9 +12,10 @@ import { Locale } from '@/i18n';
 interface LatestTestsSectionProps {
   tests: QuizTest[];
   locale: Locale;
+  shuffleKey: number;
 }
 
-export default function LatestTestsSection({ tests, locale }: LatestTestsSectionProps) {
+export default function LatestTestsSection({ tests, locale, shuffleKey }: LatestTestsSectionProps) {
   const t = useTranslations('sections');
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -24,6 +25,36 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
   const [dragDistance, setDragDistance] = useState(0);
   const [lastMoveTime, setLastMoveTime] = useState(0);
   const [lastMoveX, setLastMoveX] = useState(0);
+
+  // 최초 접속시에만 순서 결정 (카테고리와 동일한 방식)
+  const orderedTests = useMemo(() => {
+    // sessionStorage에서 저장된 순서 확인 (풀 투 리프레시가 아닐 때만)
+    const storageKey = 'latest_tests_order';
+    const savedOrder = typeof window !== 'undefined' ? sessionStorage.getItem(storageKey) : null;
+    
+    if (savedOrder && shuffleKey === 0) {
+      // 저장된 순서가 있고 풀 투 리프레시가 아니면 그대로 사용
+      try {
+        const order = JSON.parse(savedOrder);
+        const testMap = new Map(tests.map(test => [test.id, test]));
+        return order.map((id: number) => testMap.get(id)).filter(Boolean) as QuizTest[];
+      } catch (e) {
+        // 파싱 실패 시 원래 순서 사용
+      }
+    }
+    
+    // 최초 접속이거나 저장된 순서가 없거나 풀 투 리프레시면 원래 순서 사용 (또는 섞기)
+    // 최신 테스트는 원래 순서 유지 (최신순)
+    const ordered = [...tests];
+    
+    // 순서를 sessionStorage에 저장
+    if (typeof window !== 'undefined') {
+      const order = ordered.map(test => test.id);
+      sessionStorage.setItem(storageKey, JSON.stringify(order));
+    }
+    
+    return ordered;
+  }, [tests, shuffleKey]);
 
   // 스크롤 위치 저장 및 복원
   useEffect(() => {
@@ -153,7 +184,7 @@ export default function LatestTestsSection({ tests, locale }: LatestTestsSection
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          {tests.map((test, index) => (
+          {orderedTests.map((test, index) => (
               <Link
                 key={test.id}
                 href={`/${locale}/test/${test.slug}`}

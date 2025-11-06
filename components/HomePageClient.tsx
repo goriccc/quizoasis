@@ -234,6 +234,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
         <LatestTestsSection 
           tests={tests.slice(0, 15)}
           locale={locale}
+          shuffleKey={shuffleKey}
         />
       </div>
 
