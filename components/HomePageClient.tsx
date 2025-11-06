@@ -78,7 +78,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     router.push(`${pathname}${params.toString() ? `?${params.toString()}` : ''}`);
   };
 
-  // 선택된 태그에 따라 필터링된 테스트 (랜덤 순서)
+  // 선택된 태그에 따라 필터링된 테스트 (최초 접속시에만 섞기)
   const filteredTests = useMemo(() => {
     let filtered;
     if ((tagKey && tagKey === 'face') || (displayTag && displayTag.length > 0 && selectedTag !== 'all')) {
@@ -101,15 +101,75 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
       filtered = tests;
     }
     
-    // Fisher-Yates 셔플 알고리즘으로 랜덤 순서 생성
+    // sessionStorage에서 저장된 순서 확인
+    const storageKey = `home_tests_order_${selectedTag}_${tagKey || 'all'}`;
+    const savedOrder = typeof window !== 'undefined' ? sessionStorage.getItem(storageKey) : null;
+    
+    if (savedOrder) {
+      // 저장된 순서가 있으면 그대로 사용
+      try {
+        const order = JSON.parse(savedOrder);
+        const testMap = new Map(filtered.map(test => [test.id, test]));
+        return order.map((id: number) => testMap.get(id)).filter(Boolean) as QuizTest[];
+      } catch (e) {
+        // 파싱 실패 시 새로 섞기
+      }
+    }
+    
+    // 최초 접속이거나 저장된 순서가 없으면 Fisher-Yates 셔플 알고리즘으로 랜덤 순서 생성
     const shuffled = [...filtered];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     
+    // 섞인 순서를 sessionStorage에 저장
+    if (typeof window !== 'undefined') {
+      const order = shuffled.map(test => test.id);
+      sessionStorage.setItem(storageKey, JSON.stringify(order));
+    }
+    
     return shuffled;
   }, [tests, selectedTag, tagKey, displayTag]);
+
+  // 스크롤 위치 저장 및 복원
+  useEffect(() => {
+    // 스크롤 위치 복원
+    const savedScrollPosition = typeof window !== 'undefined' 
+      ? sessionStorage.getItem('home_scroll_position') 
+      : null;
+    
+    if (savedScrollPosition) {
+      const position = parseInt(savedScrollPosition, 10);
+      // 약간의 지연을 두고 스크롤 (렌더링 완료 후)
+      setTimeout(() => {
+        window.scrollTo(0, position);
+        // 복원 후 저장된 위치 삭제 (한 번만 복원)
+        sessionStorage.removeItem('home_scroll_position');
+      }, 100);
+    }
+
+    // 스크롤 이벤트로 위치 저장
+    const handleScroll = () => {
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('home_scroll_position', window.scrollY.toString());
+      }
+    };
+
+    // 디바운스 적용 (성능 최적화)
+    let scrollTimeout: NodeJS.Timeout;
+    const debouncedHandleScroll = () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(handleScroll, 100);
+    };
+
+    window.addEventListener('scroll', debouncedHandleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', debouncedHandleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
