@@ -7,6 +7,60 @@ import { Play } from 'lucide-react';
 import { QuizTest } from '@/lib/types';
 import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
 import { Locale } from '@/i18n';
+import { usePrefetchOnVisible } from '@/hooks/usePrefetchOnVisible';
+
+// 개별 테스트 카드 컴포넌트
+function TestCard({ 
+  test, 
+  index, 
+  locale, 
+  getSafeTitle 
+}: { 
+  test: QuizTest; 
+  index: number; 
+  locale: Locale;
+  getSafeTitle: (test: QuizTest) => string;
+}) {
+  const href = `/${locale}/test/${test.slug}`;
+  const prefetchRef = usePrefetchOnVisible(href, index >= 3); // 처음 3개는 기본 prefetch, 나머지는 뷰포트에 보일 때
+
+  return (
+    <Link
+      ref={prefetchRef as any}
+      href={href}
+      className="group"
+      prefetch={index < 3}
+    >
+      <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
+        {/* 썸네일 */}
+        <div className="relative w-full aspect-video">
+          <Image
+            src={getThumbnailUrl(test.thumbnail)}
+            alt={getSafeTitle(test)}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            priority={index < 3}
+            quality={85}
+          />
+        </div>
+        
+        {/* 타이틀과 플레이 횟수 */}
+        <div className="p-4">
+          <div className="flex items-center justify-end gap-3">
+            <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
+              {getSafeTitle(test)}
+            </h3>
+            <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
+              <Play size={14} />
+              <span>{formatPlayCount(test.playCount, locale)}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+}
 
 interface CategorySectionProps {
   tests: QuizTest[];
@@ -97,41 +151,13 @@ export default function CategorySection({ tests, categoryName, locale, showHeade
         {/* 반응형 그리드 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tests.map((test, index) => (
-            <Link
+            <TestCard
               key={test.id}
-              href={`/${locale}/test/${test.slug}`}
-              className="group"
-              prefetch={index < 3}
-            >
-              <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
-                {/* 썸네일 */}
-                <div className="relative w-full aspect-video">
-                  <Image
-                    src={getThumbnailUrl(test.thumbnail)}
-                    alt={getSafeTitle(test)}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority={index < 3}
-                    quality={85}
-                  />
-                  
-                </div>
-                
-                {/* 타이틀과 플레이 횟수 */}
-                <div className="p-4">
-                  <div className="flex items-center justify-end gap-3">
-                    <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-                      {getSafeTitle(test)}
-                    </h3>
-                    <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
-                      <Play size={14} />
-                      <span>{formatPlayCount(test.playCount, locale)}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
+              test={test}
+              index={index}
+              locale={locale}
+              getSafeTitle={getSafeTitle}
+            />
           ))}
         </div>
       </div>

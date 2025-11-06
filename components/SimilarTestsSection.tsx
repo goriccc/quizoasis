@@ -135,7 +135,7 @@ export default function SimilarTestsSection({
               key={test.id}
               href={`/${locale}/test/${test.slug}`}
               className="group"
-              prefetch={index < 2}
+              prefetch={index < 3}
               ref={index === tests.length - 1 ? (lastTestElementRef as any) : null}
             >
               <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
