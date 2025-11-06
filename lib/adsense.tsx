@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 // AdSense Configuration
 export const ADSENSE_CONFIG = {
@@ -89,21 +89,131 @@ export default function AdSensePlaceholder({
   className = '', 
   label = '광고 영역' 
 }: AdSensePlaceholderProps) {
+  const adRef = useRef<HTMLElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isAdLoaded, setIsAdLoaded] = useState(false);
+  const [shouldHide, setShouldHide] = useState(false);
+
+  // 광고 로드 및 상태 확인
   useEffect(() => {
+    if (!ADSENSE_CONFIG.ENABLED) return;
+    
     loadAdSense();
+  }, []);
+
+  // 광고 로드 상태 확인 (게재 제한 중일 때 영역 숨기기)
+  useEffect(() => {
+    if (!ADSENSE_CONFIG.ENABLED) return;
+    
+    let observer: MutationObserver | null = null;
+    let hideTimeout: NodeJS.Timeout | null = null;
+    let interval: NodeJS.Timeout | null = null;
+    let rafId: number | null = null;
+    
+    // ref가 설정될 때까지 대기
+    const checkAndSetup = () => {
+      if (!adRef.current) {
+        // ref가 아직 설정되지 않았으면 다음 프레임에서 다시 시도
+        rafId = requestAnimationFrame(checkAndSetup);
+        return;
+      }
+      
+      const checkAdStatus = () => {
+        if (!adRef.current) return false;
+        
+        const adElement = adRef.current;
+        
+        // 광고가 로드되었는지 확인
+        const adStatus = adElement.getAttribute('data-adsbygoogle-status');
+        const adHeight = adElement.offsetHeight;
+        const adWidth = adElement.offsetWidth;
+        
+        // 광고가 로드되었거나 높이/너비가 있으면 표시
+        if (adStatus === 'done' || (adHeight > 0 && adWidth > 0)) {
+          setIsAdLoaded(true);
+          setShouldHide(false);
+          return true;
+        }
+        
+        return false;
+      };
+
+      // MutationObserver로 광고 상태 변화 감지
+      observer = new MutationObserver(() => {
+        checkAdStatus();
+      });
+
+      if (adRef.current) {
+        observer.observe(adRef.current, {
+          attributes: true,
+          attributeFilter: ['data-adsbygoogle-status'],
+          childList: true,
+          subtree: true
+        });
+        
+        // 초기 확인
+        checkAdStatus();
+        
+        // 5초 후에도 광고가 로드되지 않으면 숨기기 (게재 제한 중)
+        hideTimeout = setTimeout(() => {
+          if (!checkAdStatus()) {
+            setShouldHide(true);
+          }
+        }, 5000);
+        
+        // 주기적으로 확인 (광고가 나중에 로드될 수 있음)
+        interval = setInterval(() => {
+          if (checkAdStatus()) {
+            if (interval) {
+              clearInterval(interval);
+              interval = null;
+            }
+          }
+        }, 1000);
+      }
+    };
+    
+    // ref 설정 대기 후 시작
+    rafId = requestAnimationFrame(checkAndSetup);
+    
+    // cleanup 함수
+    return () => {
+      if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+      }
+      if (observer) {
+        observer.disconnect();
+      }
+      if (interval) {
+        clearInterval(interval);
+      }
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
+      }
+    };
   }, []);
 
   if (ADSENSE_CONFIG.ENABLED) {
     // 실제 애드센스 광고
     return (
-      <ins
-        className={`adsbygoogle ${className}`}
-        style={{ display: 'block', ...style }}
-        data-ad-client={ADSENSE_CONFIG.PUBLISHER_ID}
-        data-ad-slot={slot}
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
+      <div 
+        ref={containerRef}
+        style={{ 
+          display: shouldHide ? 'none' : 'block',
+          ...style 
+        }}
+        className={className}
+      >
+        <ins
+          ref={adRef as any}
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client={ADSENSE_CONFIG.PUBLISHER_ID}
+          data-ad-slot={slot}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+      </div>
     );
   } else {
     // 개발용 플레이스홀더 (광고 영역 표시)
