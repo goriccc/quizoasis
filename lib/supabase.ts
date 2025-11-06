@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { cache } from 'react';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
@@ -159,9 +160,9 @@ function getFallbackTests() {
 }
 
 /**
- * 특정 테스트 조회
+ * 특정 테스트 조회 (내부 함수 - 실제 데이터베이스 쿼리)
  */
-export async function getTestBySlug(slug: string) {
+async function _getTestBySlugInternal(slug: string) {
   try {
     // Promise.race를 사용하여 5초 내에 응답이 없으면 폴백 데이터 반환
     const timeoutPromise = new Promise((_, reject) => 
@@ -187,6 +188,12 @@ export async function getTestBySlug(slug: string) {
     return getFallbackTestBySlug(slug);
   }
 }
+
+/**
+ * 특정 테스트 조회 (React cache로 감싸서 같은 요청 내 중복 호출 방지)
+ * generateMetadata와 메인 컴포넌트에서 동시에 호출해도 한 번만 쿼리 실행
+ */
+export const getTestBySlug = cache(_getTestBySlugInternal);
 
 function getFallbackTestBySlug(slug: string) {
   // Supabase 연결 실패 시 더미 데이터 반환
