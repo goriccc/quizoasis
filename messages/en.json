@@ -963,6 +963,58 @@
       "kakaoError": "An error occurred while sharing to KakaoTalk."
     }
   },
+  "enneagramTest": {
+    "startMessage": {
+      "line1": "\"What is the inner force that drives me?\"",
+      "line2": "Everyone has their own unique personality type from birth.",
+      "line3": "From reformers who pursue perfection to mediators who love peace.",
+      "line4": "Explore your essence through the Enneagram, the 9 ancient wisdoms passed down through generations.",
+      "line5": "Time to meet the real you hidden behind the mask.",
+      "line6": "Find my Enneagram type 🔮 Start inner exploration 🧘‍♂️"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "participants": "people participated",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "progress": "Progress",
+      "retakeTest": "Retake",
+      "shareResult": "Share Result",
+      "retake": "Retake",
+      "otherTests": "Other Tests",
+      "similarTests": "🎯 Top 5 Similar Tests",
+      "popularTests": "🔥 Top 5 Popular Tests",
+      "goToTest": "Go to Test"
+    },
+    "result": {
+      "coreValue": "Core Values",
+      "caution": "Caution",
+      "idealMatch": "Ideal Match",
+      "worstMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My Enneagram type is {type}! 🔮 What is the inner force that drives me?",
+      "kakao": "My Enneagram type is {type}! 🔮 What is the inner force that drives me?",
+      "wechat": "My Enneagram type is {type}! 🔮 What is the inner force that drives me?",
+      "whatsapp": "My Enneagram type is {type}! 🔮 What is the inner force that drives me?",
+      "telegram": "My Enneagram type is {type}! 🔮 What is the inner force that drives me?",
+      "line": "My Enneagram type is {type}! 🔮 What is the inner force that drives me?",
+      "startDefault": "What is the inner force that drives me? 🔮 Try the Enneagram test!",
+      "startKakao": "What is the inner force that drives me? 🔮 Try the Enneagram test!",
+      "startWechat": "What is the inner force that drives me? 🔮 Try the Enneagram test!",
+      "startWhatsapp": "What is the inner force that drives me? 🔮 Try the Enneagram test!",
+      "startTelegram": "What is the inner force that drives me? 🔮 Try the Enneagram test!",
+      "startLine": "What is the inner force that drives me? 🔮 Try the Enneagram test!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Extreme difficulty quiz that only the top 3% of humanity can solve!",

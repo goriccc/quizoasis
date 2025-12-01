@@ -902,6 +902,58 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
+  "enneagramTest": {
+    "startMessage": {
+      "line1": "\"Lực lượng nội tâm nào thúc đẩy tôi?\"",
+      "line2": "Mỗi người đều có kiểu tính cách độc đáo của riêng mình từ khi sinh ra.",
+      "line3": "Từ những người cải cách theo đuổi sự hoàn hảo đến những người hòa giải yêu hòa bình.",
+      "line4": "Khám phá bản chất của bạn thông qua Enneagram, 9 trí tuệ cổ xưa được truyền lại qua các thế hệ.",
+      "line5": "Thời gian để gặp gỡ con người thật của bạn ẩn sau mặt nạ.",
+      "line6": "Tìm kiểu Enneagram của tôi 🔮 Bắt đầu khám phá nội tâm 🧘‍♂️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "participants": "người đã tham gia",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "progress": "Tiến độ",
+      "retakeTest": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "similarTests": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTests": "🔥 Top 5 bài kiểm tra phổ biến",
+      "goToTest": "Đi đến bài kiểm tra"
+    },
+    "result": {
+      "coreValue": "Giá trị cốt lõi",
+      "caution": "Lưu ý",
+      "idealMatch": "Cặp đôi lý tưởng",
+      "worstMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Kiểu Enneagram của tôi là {type}! 🔮 Lực lượng nội tâm nào thúc đẩy tôi?",
+      "kakao": "Kiểu Enneagram của tôi là {type}! 🔮 Lực lượng nội tâm nào thúc đẩy tôi?",
+      "wechat": "Kiểu Enneagram của tôi là {type}! 🔮 Lực lượng nội tâm nào thúc đẩy tôi?",
+      "whatsapp": "Kiểu Enneagram của tôi là {type}! 🔮 Lực lượng nội tâm nào thúc đẩy tôi?",
+      "telegram": "Kiểu Enneagram của tôi là {type}! 🔮 Lực lượng nội tâm nào thúc đẩy tôi?",
+      "line": "Kiểu Enneagram của tôi là {type}! 🔮 Lực lượng nội tâm nào thúc đẩy tôi?",
+      "startDefault": "Lực lượng nội tâm nào thúc đẩy tôi? 🔮 Hãy thử bài kiểm tra Enneagram!",
+      "startKakao": "Lực lượng nội tâm nào thúc đẩy tôi? 🔮 Hãy thử bài kiểm tra Enneagram!",
+      "startWechat": "Lực lượng nội tâm nào thúc đẩy tôi? 🔮 Hãy thử bài kiểm tra Enneagram!",
+      "startWhatsapp": "Lực lượng nội tâm nào thúc đẩy tôi? 🔮 Hãy thử bài kiểm tra Enneagram!",
+      "startTelegram": "Lực lượng nội tâm nào thúc đẩy tôi? 🔮 Hãy thử bài kiểm tra Enneagram!",
+      "startLine": "Lực lượng nội tâm nào thúc đẩy tôi? 🔮 Hãy thử bài kiểm tra Enneagram!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Câu đố siêu khó chỉ có top 3% nhân loại mới giải được!",

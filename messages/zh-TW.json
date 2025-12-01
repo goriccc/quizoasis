@@ -909,6 +909,58 @@
       "kakaoError": "KakaoTalk分享時發生錯誤。"
     }
   },
+  "enneagramTest": {
+    "startMessage": {
+      "line1": "\"驅動我的內在力量是什麼？\"",
+      "line2": "每個人從出生起就擁有自己獨特的性格類型。",
+      "line3": "從追求完美的改革者到熱愛和平的調解者。",
+      "line4": "通過世代相傳的9種智慧——九型人格，探索你的本質。",
+      "line5": "遇見隱藏在面具背後的真實自我。",
+      "line6": "找到我的九型人格類型 🔮 開始內在探索 🧘‍♂️"
+    },
+    "ui": {
+      "startTest": "開始測試",
+      "participants": "人參與了",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "progress": "進度",
+      "retakeTest": "重新測試",
+      "shareResult": "分享結果",
+      "retake": "重新測試",
+      "otherTests": "其他測試",
+      "similarTests": "🎯 推薦類似測試前5名",
+      "popularTests": "🔥 推薦熱門測試前5名",
+      "goToTest": "去測試"
+    },
+    "result": {
+      "coreValue": "核心價值",
+      "caution": "注意事項",
+      "idealMatch": "理想配對",
+      "worstMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的九型人格類型是{type}！ 🔮 驅動我的內在力量是什麼？",
+      "kakao": "我的九型人格類型是{type}！ 🔮 驅動我的內在力量是什麼？",
+      "wechat": "我的九型人格類型是{type}！ 🔮 驅動我的內在力量是什麼？",
+      "whatsapp": "我的九型人格類型是{type}！ 🔮 驅動我的內在力量是什麼？",
+      "telegram": "我的九型人格類型是{type}！ 🔮 驅動我的內在力量是什麼？",
+      "line": "我的九型人格類型是{type}！ 🔮 驅動我的內在力量是什麼？",
+      "startDefault": "驅動我的內在力量是什麼？ 🔮 來試試九型人格測試吧！",
+      "startKakao": "驅動我的內在力量是什麼？ 🔮 來試試九型人格測試吧！",
+      "startWechat": "驅動我的內在力量是什麼？ 🔮 來試試九型人格測試吧！",
+      "startWhatsapp": "驅動我的內在力量是什麼？ 🔮 來試試九型人格測試吧！",
+      "startTelegram": "驅動我的內在力量是什麼？ 🔮 來試試九型人格測試吧！",
+      "startLine": "驅動我的內在力量是什麼？ 🔮 來試試九型人格測試吧！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "只有人類前3%能解決的超高難度測驗！",

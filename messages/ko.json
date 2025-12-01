@@ -1239,6 +1239,58 @@
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
   },
+  "enneagramTest": {
+    "startMessage": {
+      "line1": "\"나를 움직이는 내면의 힘은 무엇일까요?\"",
+      "line2": "사람은 누구나 태어날 때부터 자신만의 고유한 성격 유형을 가지고 살아갑니다.",
+      "line3": "완벽함을 추구하는 개혁가부터 평화를 사랑하는 중재자까지.",
+      "line4": "고대부터 전해져 내려온 9가지 지혜, 에니어그램을 통해 나의 본질을 탐구해 보세요.",
+      "line5": "가면 뒤에 숨겨진 진짜 나를 만나는 시간.",
+      "line6": "나의 에니어그램 유형 찾기 🔮 내면 탐구 시작 🧘‍♂️"
+    },
+    "ui": {
+      "startTest": "테스트 시작하기",
+      "participants": "명이 참여했습니다",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "progress": "진행률",
+      "retakeTest": "다시 하기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTests": "🔥 요즘 인기 테스트 추천 톱5",
+      "goToTest": "테스트 하러 가기"
+    },
+    "result": {
+      "coreValue": "핵심 가치",
+      "caution": "주의할 점",
+      "idealMatch": "환상의 짝꿍",
+      "worstMatch": "환장의 짝꿍"
+    },
+    "shareMessages": {
+      "default": "내 에니어그램 유형은 {type}! 🔮 나를 움직이는 내면의 힘은 뭘까?",
+      "kakao": "내 에니어그램 유형은 {type}! 🔮 나를 움직이는 내면의 힘은 뭘까?",
+      "wechat": "내 에니어그램 유형은 {type}! 🔮 나를 움직이는 내면의 힘은 뭘까?",
+      "whatsapp": "내 에니어그램 유형은 {type}! 🔮 나를 움직이는 내면의 힘은 뭘까?",
+      "telegram": "내 에니어그램 유형은 {type}! 🔮 나를 움직이는 내면의 힘은 뭘까?",
+      "line": "내 에니어그램 유형은 {type}! 🔮 나를 움직이는 내면의 힘은 뭘까?",
+      "startDefault": "나를 움직이는 내면의 힘은 무엇일까요? 🔮 에니어그램 테스트 해보세요!",
+      "startKakao": "나를 움직이는 내면의 힘은 무엇일까요? 🔮 에니어그램 테스트 해보세요!",
+      "startWechat": "나를 움직이는 내면의 힘은 무엇일까요? 🔮 에니어그램 테스트 해보세요!",
+      "startWhatsapp": "나를 움직이는 내면의 힘은 무엇일까요? 🔮 에니어그램 테스트 해보세요!",
+      "startTelegram": "나를 움직이는 내면의 힘은 무엇일까요? 🔮 에니어그램 테스트 해보세요!",
+      "startLine": "나를 움직이는 내면의 힘은 무엇일까요? 🔮 에니어그램 테스트 해보세요!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "인류 상위 3%만이 풀 수 있는 초고난도 퀴즈!",

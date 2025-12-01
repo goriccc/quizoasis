@@ -902,6 +902,58 @@
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
   },
+  "enneagramTest": {
+    "startMessage": {
+      "line1": "\"Apa kekuatan batin yang menggerakkan saya?\"",
+      "line2": "Setiap orang memiliki tipe kepribadian unik mereka sendiri sejak lahir.",
+      "line3": "Dari reformis yang mengejar kesempurnaan hingga mediator yang mencintai perdamaian.",
+      "line4": "Jelajahi esensi Anda melalui Enneagram, 9 kebijaksanaan kuno yang diturunkan melalui generasi.",
+      "line5": "Waktu untuk bertemu diri Anda yang sebenarnya tersembunyi di balik topeng.",
+      "line6": "Temukan tipe Enneagram saya 🔮 Mulai eksplorasi batin 🧘‍♂️"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "participants": "orang telah berpartisipasi",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "progress": "Kemajuan",
+      "retakeTest": "Ulangi",
+      "shareResult": "Bagikan Hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "similarTests": "🎯 Top 5 Tes Serupa",
+      "popularTests": "🔥 Top 5 Tes Populer",
+      "goToTest": "Pergi ke Tes"
+    },
+    "result": {
+      "coreValue": "Nilai Inti",
+      "caution": "Perhatian",
+      "idealMatch": "Pasangan Ideal",
+      "worstMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Tipe Enneagram saya adalah {type}! 🔮 Apa kekuatan batin yang menggerakkan saya?",
+      "kakao": "Tipe Enneagram saya adalah {type}! 🔮 Apa kekuatan batin yang menggerakkan saya?",
+      "wechat": "Tipe Enneagram saya adalah {type}! 🔮 Apa kekuatan batin yang menggerakkan saya?",
+      "whatsapp": "Tipe Enneagram saya adalah {type}! 🔮 Apa kekuatan batin yang menggerakkan saya?",
+      "telegram": "Tipe Enneagram saya adalah {type}! 🔮 Apa kekuatan batin yang menggerakkan saya?",
+      "line": "Tipe Enneagram saya adalah {type}! 🔮 Apa kekuatan batin yang menggerakkan saya?",
+      "startDefault": "Apa kekuatan batin yang menggerakkan saya? 🔮 Coba tes Enneagram!",
+      "startKakao": "Apa kekuatan batin yang menggerakkan saya? 🔮 Coba tes Enneagram!",
+      "startWechat": "Apa kekuatan batin yang menggerakkan saya? 🔮 Coba tes Enneagram!",
+      "startWhatsapp": "Apa kekuatan batin yang menggerakkan saya? 🔮 Coba tes Enneagram!",
+      "startTelegram": "Apa kekuatan batin yang menggerakkan saya? 🔮 Coba tes Enneagram!",
+      "startLine": "Apa kekuatan batin yang menggerakkan saya? 🔮 Coba tes Enneagram!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Kuis Kesulitan Ekstrem Hanya Top 3% Umat Manusia yang Bisa Menyelesaikan!",

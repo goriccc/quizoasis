@@ -22,6 +22,7 @@ import { brainQuestions, brainResults } from '@/lib/brainData';
 import { leadershipQuestions, leadershipResults } from '@/lib/leadershipData';
 import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
 import { optimismQuestions, optimismResults } from '@/lib/optimismData';
+import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
@@ -160,6 +161,9 @@ const BrainTestClient = dynamic(() => import('@/components/BrainTestClient'), {
 const OptimismTestClient = dynamic(() => import('@/components/OptimismTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
+const EnneagramTestClient = dynamic(() => import('@/components/EnneagramTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 const AdventurerTestClient = dynamic(() => import('@/components/AdventurerTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
@@ -250,7 +254,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = test.title[locale] || test.title.ko || '심리테스트';
   const description = test.description?.[locale] || test.description?.ko || '';
-  
+
   // 태그가 다국어 객체인 경우 현재 언어의 태그 배열 추출
   const tags = typeof test.tags === 'object' && !Array.isArray(test.tags)
     ? test.tags[locale] || test.tags.ko || []
@@ -259,7 +263,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // 썸네일을 절대 URL로 변환 (공유 앱용 원본 URL 사용)
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}?v=${Date.now()}`;
-  
+
 
   const baseUrl = 'https://myquizoasis.com';
   const canonicalUrl = `${baseUrl}/${locale}/test/${slug}`;
@@ -350,7 +354,7 @@ export default async function TestPage({ params }: Props) {
   // 애착 스타일 테스트의 경우 Supabase에서 시도
   if (slug === 'attachment-style-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'attachment-style-test',
@@ -395,7 +399,7 @@ export default async function TestPage({ params }: Props) {
   // 친구 테스트의 경우 Supabase에서 시도
   if (slug === 'friend-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'friend-test',
@@ -441,7 +445,7 @@ export default async function TestPage({ params }: Props) {
   // 시간 효율성 테스트의 경우 Supabase에서 시도
   if (slug === 'time-efficiency-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'time-efficiency-test',
@@ -555,13 +559,13 @@ export default async function TestPage({ params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
         />
-        
+
         {/* JSON-LD Schema - Breadcrumb */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-        
+
         <TimeEfficiencyTestClient
           locale={locale as Locale}
           slug={slug}
@@ -580,7 +584,7 @@ export default async function TestPage({ params }: Props) {
 
   if (slug === 'apology-style-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'apology-style-test',
@@ -703,7 +707,7 @@ export default async function TestPage({ params }: Props) {
 
   if (slug === 'breakup-coping-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'breakup-coping-test',
@@ -828,7 +832,7 @@ export default async function TestPage({ params }: Props) {
 
   if (slug === 'jealousy-level-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'jealousy-level-test',
@@ -931,13 +935,13 @@ export default async function TestPage({ params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
         />
-        
+
         {/* JSON-LD Schema - Breadcrumb */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-        
+
         <JealousyTestClient
           locale={locale as Locale}
           slug={slug}
@@ -956,7 +960,7 @@ export default async function TestPage({ params }: Props) {
 
   if (slug === 'first-impression-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'first-impression-test',
@@ -1059,13 +1063,13 @@ export default async function TestPage({ params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
         />
-        
+
         {/* JSON-LD Schema - Breadcrumb */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-        
+
         <FirstImpressionTestClient
           locale={locale as Locale}
           slug={slug}
@@ -1085,7 +1089,7 @@ export default async function TestPage({ params }: Props) {
   // 워라밸 테스트의 경우 Supabase에서 시도
   if (slug === 'work-life-balance-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'work-life-balance-test',
@@ -1131,7 +1135,7 @@ export default async function TestPage({ params }: Props) {
   // 리더십 스타일 테스트의 경우 Supabase에서 시도
   if (slug === 'leadership-style-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'leadership-style-test',
@@ -1177,7 +1181,7 @@ export default async function TestPage({ params }: Props) {
   // 강박 테스트의 경우 Supabase에서 시도
   if (slug === 'obsession-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'obsession-test',
@@ -1223,7 +1227,7 @@ export default async function TestPage({ params }: Props) {
   // 팀 플레이어 테스트의 경우 Supabase에서 시도
   if (slug === 'team-player-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'team-player-test',
@@ -1269,7 +1273,7 @@ export default async function TestPage({ params }: Props) {
   // 도전 잠재력 테스트의 경우 Supabase에서 시도
   if (slug === 'challenge-potential-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'challenge-potential-test',
@@ -1358,6 +1362,59 @@ export default async function TestPage({ params }: Props) {
           questions={optimismQuestions}
           results={optimismResults}
           questionCount={optimismQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 에니어그램 테스트
+  if (slug === 'enneagram-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'enneagram-test',
+      title: {
+        ko: '9가지 성격! 에니어그램 테스트',
+        en: '9 Types of Personality! Enneagram Test',
+        ja: '9種類の性格！エニアグラムテスト',
+        'zh-CN': '9种性格类型！九型人格测试',
+        'zh-TW': '9種性格類型！九型人格測試',
+        vi: '9 Loại Tính Cách! Bài Kiểm Tra Enneagram',
+        id: '9 Tipe Kepribadian! Tes Enneagram'
+      },
+      description: {
+        ko: '나를 움직이는 내면의 힘은 무엇일까요?',
+        en: 'What is the inner force that drives me?',
+        ja: '私を動かす内なる力は何だろう？',
+        'zh-CN': '驱动我的内在力量是什么？',
+        'zh-TW': '驅動我的內在力量是什麼？',
+        vi: 'Lực lượng nội tâm nào thúc đẩy tôi?',
+        id: 'Apa kekuatan batin yang menggerakkan saya?'
+      },
+      thumbnail: 'phase2_test_145_enneagram.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: ['psychology', 'personality'],
+        ja: ['心理', '性格'],
+        'zh-CN': ['心理学', '性格'],
+        'zh-TW': ['心理學', '性格'],
+        vi: ['tâm lý học', 'tính cách'],
+        id: ['psikologi', 'kepribadian']
+      }
+    };
+
+    return (
+      <>
+        <EnneagramTestClient
+          locale={locale}
+          slug={test.slug}
+          title={test.title}
+          description={test.description}
+          questions={enneagramQuestions}
+          results={enneagramResults}
+          questionCount={enneagramQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -1941,13 +1998,13 @@ export default async function TestPage({ params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
         />
-        
+
         {/* JSON-LD Schema - Breadcrumb */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-        
+
         <ConcentrationTestClient
           locale={locale as Locale}
           slug={slug}
@@ -2044,25 +2101,25 @@ export default async function TestPage({ params }: Props) {
         {
           '@type': 'ListItem',
           position: 1,
-          name: locale === 'ko' ? '홈' : 
-                locale === 'en' ? 'Home' :
-                locale === 'ja' ? 'ホーム' :
+          name: locale === 'ko' ? '홈' :
+            locale === 'en' ? 'Home' :
+              locale === 'ja' ? 'ホーム' :
                 locale === 'zh-CN' ? '首页' :
-                locale === 'zh-TW' ? '首頁' :
-                locale === 'vi' ? 'Trang chủ' :
-                locale === 'id' ? 'Beranda' : 'Home',
+                  locale === 'zh-TW' ? '首頁' :
+                    locale === 'vi' ? 'Trang chủ' :
+                      locale === 'id' ? 'Beranda' : 'Home',
           item: `https://quizoasis-coral.vercel.app/${locale}`
         },
         {
           '@type': 'ListItem',
           position: 2,
-          name: locale === 'ko' ? '테스트' : 
-                locale === 'en' ? 'Tests' :
-                locale === 'ja' ? 'テスト' :
+          name: locale === 'ko' ? '테스트' :
+            locale === 'en' ? 'Tests' :
+              locale === 'ja' ? 'テスト' :
                 locale === 'zh-CN' ? '测试' :
-                locale === 'zh-TW' ? '測試' :
-                locale === 'vi' ? 'Kiểm tra' :
-                locale === 'id' ? 'Tes' : 'Tests',
+                  locale === 'zh-TW' ? '測試' :
+                    locale === 'vi' ? 'Kiểm tra' :
+                      locale === 'id' ? 'Tes' : 'Tests',
           item: `https://quizoasis-coral.vercel.app/${locale}/test`
         },
         {
@@ -2081,13 +2138,13 @@ export default async function TestPage({ params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
         />
-        
+
         {/* JSON-LD Schema - Breadcrumb */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-        
+
         <MBTIAccurateTestClient
           locale={locale as Locale}
           slug={slug}
@@ -2947,7 +3004,7 @@ export default async function TestPage({ params }: Props) {
   // 창업가 기질 테스트의 경우 Supabase에서 시도
   if (slug === 'entrepreneur-spirit-test') {
     const supabaseTest = await getTestBySlug(slug);
-    
+
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
     const test = supabaseTest || {
       slug: 'entrepreneur-spirit-test',
@@ -3050,13 +3107,13 @@ export default async function TestPage({ params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
         />
-        
+
         {/* JSON-LD Schema - Breadcrumb */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-        
+
         <EntrepreneurSpiritTestClient
           locale={locale as Locale}
           slug={slug}
@@ -3159,7 +3216,7 @@ export default async function TestPage({ params }: Props) {
   } else {
     testData = getTestData(slug);
   }
-  
+
   if (!testData) {
     notFound();
   }
@@ -3231,7 +3288,7 @@ export default async function TestPage({ params }: Props) {
 
   // 테스트 타입에 따라 다른 클라이언트 컴포넌트 렌더링
   let TestClient;
-  
+
   if (slug === 'leadership-style-test') {
     TestClient = LeadershipTestClient;
   } else if (slug === 'obsession-test') {
@@ -3298,13 +3355,13 @@ export default async function TestPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdQuiz) }}
       />
-      
+
       {/* JSON-LD Schema - Breadcrumb */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      
+
       <TestClient
         locale={locale as Locale}
         slug={slug}
