@@ -49,5 +49,9 @@ ON CONFLICT (slug) DO UPDATE SET
   type = EXCLUDED.type,
   category = EXCLUDED.category,
   tags = EXCLUDED.tags,
-  updated_at = NOW();
+  updated_at = NOW(),
+  created_at = CASE 
+    WHEN tests.created_at IS NULL THEN NOW()
+    ELSE tests.created_at
+  END;
 

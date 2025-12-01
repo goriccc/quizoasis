@@ -22,6 +22,14 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   const tagKey = searchParams.get('tagKey');
   const initialTag = searchParams.get('tag') || 'all';
   const [selectedTag, setSelectedTag] = useState(initialTag);
+  
+  // 디버깅: 테스트 개수 확인
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      console.log('📊 HomePageClient - 전체 테스트 개수:', tests.length);
+      console.log('📊 HomePageClient - 최신 15개 테스트:', tests.slice(0, 15).map(t => t.slug));
+    }
+  }, [tests]);
   const displayTag = useMemo(() => {
     if (tagKey === 'face') {
       // 로케일별 "얼굴" 라벨
@@ -113,7 +121,14 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
       try {
         const order = JSON.parse(savedOrder);
         const testMap = new Map(filtered.map(test => [test.id, test]));
-        return order.map((id: number) => testMap.get(id)).filter(Boolean) as QuizTest[];
+        const orderedTests = order.map((id: number) => testMap.get(id)).filter(Boolean) as QuizTest[];
+        
+        // 현재 테스트 목록에 있지만 sessionStorage 순서에 없는 테스트들 추가 (새로 추가된 테스트)
+        const orderedIds = new Set(order);
+        const missingTests = filtered.filter(test => !orderedIds.has(test.id));
+        
+        // 기존 순서 + 새로 추가된 테스트들
+        return [...orderedTests, ...missingTests];
       } catch (e) {
         // 파싱 실패 시 새로 섞기
       }

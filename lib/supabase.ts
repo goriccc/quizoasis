@@ -27,10 +27,10 @@ export async function getTests() {
     // AbortSignal.timeout으로 자동 처리되므로 Promise.race 불필요
     
     // 전체 테스트 조회 (먼저 실행)
+    // updated_at을 우선으로 정렬하고, 없으면 created_at 사용
     const { data, error } = await supabase
       .from('tests')
-      .select('*')
-      .order('created_at', { ascending: false });
+      .select('*');
 
     if (error) {
       if (process.env.NODE_ENV === 'development') {
@@ -73,6 +73,34 @@ export async function getTests() {
           }
         }
       });
+    }
+
+    // 클라이언트에서 정렬: updated_at 우선, 없으면 created_at 사용
+    if (data && Array.isArray(data)) {
+      data.sort((a: any, b: any) => {
+        // updated_at 또는 created_at을 타임스탬프로 변환
+        const getTime = (test: any) => {
+          if (test.updated_at) {
+            return new Date(test.updated_at).getTime();
+          }
+          if (test.created_at) {
+            return new Date(test.created_at).getTime();
+          }
+          return 0;
+        };
+        
+        const aTime = getTime(a);
+        const bTime = getTime(b);
+        return bTime - aTime; // 내림차순 (최신이 먼저)
+      });
+      
+      // 디버깅: 개발 환경에서만 로그 출력
+      if (process.env.NODE_ENV === 'development' && data.length > 0) {
+        console.log('📊 테스트 정렬 결과 (상위 5개):');
+        data.slice(0, 5).forEach((test: any, index: number) => {
+          console.log(`${index + 1}. ${test.slug} - updated_at: ${test.updated_at || 'NULL'}, created_at: ${test.created_at || 'NULL'}`);
+        });
+      }
     }
 
     return data;
