@@ -75,14 +75,12 @@ export async function getTests() {
       });
     }
 
-    // 클라이언트에서 정렬: updated_at 우선, 없으면 created_at 사용
+    // 클라이언트에서 정렬: created_at 우선 (DB에 추가된 순서)
+    // updated_at은 play_count 증가 시 변경되므로 정렬에 사용하지 않음
     if (data && Array.isArray(data)) {
       data.sort((a: any, b: any) => {
-        // updated_at 또는 created_at을 타임스탬프로 변환
+        // created_at을 타임스탬프로 변환
         const getTime = (test: any) => {
-          if (test.updated_at) {
-            return new Date(test.updated_at).getTime();
-          }
           if (test.created_at) {
             return new Date(test.created_at).getTime();
           }
