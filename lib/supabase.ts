@@ -94,13 +94,13 @@ export async function getTests() {
         return bTime - aTime; // 내림차순 (최신이 먼저)
       });
       
-      // 디버깅: 개발 환경에서만 로그 출력
-      if (process.env.NODE_ENV === 'development' && data.length > 0) {
-        console.log('📊 테스트 정렬 결과 (상위 5개):');
-        data.slice(0, 5).forEach((test: any, index: number) => {
-          console.log(`${index + 1}. ${test.slug} - updated_at: ${test.updated_at || 'NULL'}, created_at: ${test.created_at || 'NULL'}`);
-        });
-      }
+      // 디버깅 로그 제거 (필요시 주석 해제)
+      // if (process.env.NODE_ENV === 'development' && data.length > 0) {
+      //   console.log('📊 테스트 정렬 결과 (상위 5개):');
+      //   data.slice(0, 5).forEach((test: any, index: number) => {
+      //     console.log(`${index + 1}. ${test.slug} - updated_at: ${test.updated_at || 'NULL'}, created_at: ${test.created_at || 'NULL'}`);
+      //   });
+      // }
     }
 
     return data;

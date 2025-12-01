@@ -954,6 +954,62 @@
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
   },
+  "kpopDebutTest": {
+    "startMessage": {
+      "line1": "\"Debut Anda telah dikonfirmasi!\"",
+      "line2": "Anda yang telah mengalahkan puluhan ribu pesaing dan akhirnya berdiri di panggung impian.",
+      "line3": "Tapi masih ada satu hal yang belum ditentukan.",
+      "line4": "Itu adalah 'posisi' dan 'konsep' Anda dalam grup.",
+      "line5": "Apakah Anda leader yang memimpin tim? Atau center yang mencuri perhatian?\nAtau main vocal yang merobek panggung dengan nada tinggi?",
+      "line6": "Kami menganalisis bakat tersembunyi Anda dan menemukan posisi di mana Anda bisa bersinar paling terang.\nTemukan diri idol saya 🎤 Naik ke panggung debut ✨"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes K-POP Debut)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "position": "Posisi",
+      "agency": "Agensi yang Cocok",
+      "entryPoint": "Titik Masuk Fan"
+    },
+    "result": {
+      "position": "Posisi",
+      "agency": "Agensi yang Cocok",
+      "entryPoint": "Titik Masuk Fan"
+    },
+    "shareMessages": {
+      "default": "Saya debut kali ini! Posisi saya adalah {type} 🎤 Center adalah saya!",
+      "kakao": "Saya debut kali ini! Posisi saya adalah {type} 🎤 Center adalah saya!",
+      "wechat": "Saya debut kali ini! Posisi saya adalah {type} 🎤 Center adalah saya!",
+      "whatsapp": "Saya debut kali ini! Posisi saya adalah {type} 🎤 Center adalah saya!",
+      "telegram": "Saya debut kali ini! Posisi saya adalah {type} 🎤 Center adalah saya!",
+      "line": "Saya debut kali ini! Posisi saya adalah {type} 🎤 Center adalah saya!",
+      "startDefault": "Debut Anda telah dikonfirmasi! Coba tes K-POP Idol Debut? Temukan Posisi Saya! 🎤",
+      "startKakao": "Debut Anda telah dikonfirmasi! Coba tes K-POP Idol Debut? Temukan Posisi Saya! 🎤",
+      "startWechat": "Debut Anda telah dikonfirmasi! Coba tes K-POP Idol Debut? Temukan Posisi Saya! 🎤",
+      "startWhatsapp": "Debut Anda telah dikonfirmasi! Coba tes K-POP Idol Debut? Temukan Posisi Saya! 🎤",
+      "startTelegram": "Debut Anda telah dikonfirmasi! Coba tes K-POP Idol Debut? Temukan Posisi Saya! 🎤",
+      "startLine": "Debut Anda telah dikonfirmasi! Coba tes K-POP Idol Debut? Temukan Posisi Saya! 🎤"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Kuis Kesulitan Ekstrem Hanya Top 3% Umat Manusia yang Bisa Menyelesaikan!",

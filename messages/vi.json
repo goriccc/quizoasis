@@ -954,6 +954,62 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
+  "kpopDebutTest": {
+    "startMessage": {
+      "line1": "\"Debut của bạn đã được xác nhận!\"",
+      "line2": "Bạn đã vượt qua hàng chục nghìn đối thủ và cuối cùng đã đứng trên sân khấu trong mơ.",
+      "line3": "Nhưng vẫn còn một điều chưa được quyết định.",
+      "line4": "Đó là 'vị trí' và 'concept' của bạn trong nhóm.",
+      "line5": "Bạn là leader dẫn dắt đội? Hay center thu hút ánh nhìn?\nHay là main vocal xé toạc sân khấu bằng nốt cao?",
+      "line6": "Chúng tôi phân tích tài năng ẩn giấu của bạn và tìm vị trí nơi bạn có thể tỏa sáng nhất.\nTìm bản thân idol của tôi 🎤 Bước lên sân khấu debut ✨"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem các bài kiểm tra khác",
+      "goToTest": "Đi đến bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Kiểm tra K-POP Debut)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "position": "Vị trí",
+      "agency": "Công ty phù hợp",
+      "entryPoint": "Điểm vào cửa"
+    },
+    "result": {
+      "position": "Vị trí",
+      "agency": "Công ty phù hợp",
+      "entryPoint": "Điểm vào cửa"
+    },
+    "shareMessages": {
+      "default": "Tôi đã debut lần này! Vị trí của tôi là {type} 🎤 Center là tôi!",
+      "kakao": "Tôi đã debut lần này! Vị trí của tôi là {type} 🎤 Center là tôi!",
+      "wechat": "Tôi đã debut lần này! Vị trí của tôi là {type} 🎤 Center là tôi!",
+      "whatsapp": "Tôi đã debut lần này! Vị trí của tôi là {type} 🎤 Center là tôi!",
+      "telegram": "Tôi đã debut lần này! Vị trí của tôi là {type} 🎤 Center là tôi!",
+      "line": "Tôi đã debut lần này! Vị trí của tôi là {type} 🎤 Center là tôi!",
+      "startDefault": "Debut của bạn đã được xác nhận! Hãy thử bài kiểm tra K-POP Idol Debut? Tìm Vị Trí Của Tôi! 🎤",
+      "startKakao": "Debut của bạn đã được xác nhận! Hãy thử bài kiểm tra K-POP Idol Debut? Tìm Vị Trí Của Tôi! 🎤",
+      "startWechat": "Debut của bạn đã được xác nhận! Hãy thử bài kiểm tra K-POP Idol Debut? Tìm Vị Trí Của Tôi! 🎤",
+      "startWhatsapp": "Debut của bạn đã được xác nhận! Hãy thử bài kiểm tra K-POP Idol Debut? Tìm Vị Trí Của Tôi! 🎤",
+      "startTelegram": "Debut của bạn đã được xác nhận! Hãy thử bài kiểm tra K-POP Idol Debut? Tìm Vị Trí Của Tôi! 🎤",
+      "startLine": "Debut của bạn đã được xác nhận! Hãy thử bài kiểm tra K-POP Idol Debut? Tìm Vị Trí Của Tôi! 🎤"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Câu đố siêu khó chỉ có top 3% nhân loại mới giải được!",

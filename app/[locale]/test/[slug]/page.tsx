@@ -23,6 +23,7 @@ import { leadershipQuestions, leadershipResults } from '@/lib/leadershipData';
 import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
 import { optimismQuestions, optimismResults } from '@/lib/optimismData';
 import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
+import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
@@ -102,6 +103,9 @@ const HumorCodeTestClient = dynamic(() => import('@/components/HumorCodeTestClie
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TrustTestClient = dynamic(() => import('@/components/TrustTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const KpopDebutTestClient = dynamic(() => import('@/components/KpopDebutTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
@@ -1415,6 +1419,59 @@ export default async function TestPage({ params }: Props) {
           questions={enneagramQuestions}
           results={enneagramResults}
           questionCount={enneagramQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // K-POP 아이돌 데뷔? 내 포지션 찾기 테스트
+  if (slug === 'kpop-debut-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'kpop-debut-test',
+      title: {
+        ko: 'K-POP 아이돌 데뷔? 내 포지션 찾기',
+        en: 'K-POP Idol Debut? Find My Position',
+        ja: 'K-POPアイドルデビュー？私のポジションを見つける',
+        'zh-CN': 'K-POP偶像出道？找到我的位置',
+        'zh-TW': 'K-POP偶像出道？找到我的位置',
+        vi: 'K-POP Idol Debut? Tìm Vị Trí Của Tôi',
+        id: 'K-POP Idol Debut? Temukan Posisi Saya'
+      },
+      description: {
+        ko: '당신의 데뷔가 확정되었습니다!',
+        en: 'Your debut has been confirmed!',
+        ja: 'あなたのデビューが確定しました！',
+        'zh-CN': '你的出道已确定！',
+        'zh-TW': '你的出道已確定！',
+        vi: 'Debut của bạn đã được xác nhận!',
+        id: 'Debut Anda telah dikonfirmasi!'
+      },
+      thumbnail: 'phase2_test_038_kpop_debut.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '트렌드'],
+        en: ['Psychology', 'Trend'],
+        ja: ['心理', 'トレンド'],
+        'zh-CN': ['心理', '趋势'],
+        'zh-TW': ['心理', '趨勢'],
+        vi: ['Tâm lý', 'Xu hướng'],
+        id: ['Psikologi', 'Tren']
+      }
+    };
+
+    return (
+      <>
+        <KpopDebutTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={kpopDebutQuestions}
+          results={kpopDebutResults}
+          questionCount={kpopDebutQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3148,6 +3205,11 @@ export default async function TestPage({ params }: Props) {
       questions: trustQuestions,
       results: trustResults
     };
+  } else if (slug === 'kpop-debut-test') {
+    testData = {
+      questions: kpopDebutQuestions,
+      results: kpopDebutResults
+    };
   } else if (slug === 'life-priorities-test') {
     testData = {
       questions: lifePrioritiesQuestions,
@@ -3313,6 +3375,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'jealousy-level-test') TestClient = JealousyTestClient;
     else if (slug === 'humor-code-test') TestClient = HumorCodeTestClient;
     else if (slug === 'trustworthiness-test') TestClient = TrustTestClient;
+    else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'life-priorities-test') TestClient = LifePrioritiesTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;

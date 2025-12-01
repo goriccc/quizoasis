@@ -954,6 +954,62 @@
       "kakaoError": "KakaoTalk分享时发生错误。"
     }
   },
+  "kpopDebutTest": {
+    "startMessage": {
+      "line1": "\"你的出道已确定！\"",
+      "line2": "你突破了数万竞争者，终于站上了梦想的舞台。",
+      "line3": "但还有一件事没有决定。",
+      "line4": "那就是你在组合中的「位置」和「概念」。",
+      "line5": "是带领团队的队长？还是吸引视线的中心位？\n或者是用高音撕裂舞台的主唱？",
+      "line6": "我们分析你隐藏的才能，找到最能发光的职位。\n寻找我的偶像自我 🎤 登上出道舞台 ✨"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "前往测试",
+      "adsenseTitle": "AdSense广告区域（K-POP出道测试）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "position": "位置",
+      "agency": "适合的经纪公司",
+      "entryPoint": "入坑点"
+    },
+    "result": {
+      "position": "位置",
+      "agency": "适合的经纪公司",
+      "entryPoint": "入坑点"
+    },
+    "shareMessages": {
+      "default": "我这次出道了！我的位置是{type} 🎤 中心位是我！",
+      "kakao": "我这次出道了！我的位置是{type} 🎤 中心位是我！",
+      "wechat": "我这次出道了！我的位置是{type} 🎤 中心位是我！",
+      "whatsapp": "我这次出道了！我的位置是{type} 🎤 中心位是我！",
+      "telegram": "我这次出道了！我的位置是{type} 🎤 中心位是我！",
+      "line": "我这次出道了！我的位置是{type} 🎤 中心位是我！",
+      "startDefault": "你的出道已确定！试试K-POP偶像出道？找到我的位置测试！ 🎤",
+      "startKakao": "你的出道已确定！试试K-POP偶像出道？找到我的位置测试！ 🎤",
+      "startWechat": "你的出道已确定！试试K-POP偶像出道？找到我的位置测试！ 🎤",
+      "startWhatsapp": "你的出道已确定！试试K-POP偶像出道？找到我的位置测试！ 🎤",
+      "startTelegram": "你的出道已确定！试试K-POP偶像出道？找到我的位置测试！ 🎤",
+      "startLine": "你的出道已确定！试试K-POP偶像出道？找到我的位置测试！ 🎤"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "只有人类前3%能解决的超高难度测验！",

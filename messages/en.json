@@ -1015,6 +1015,62 @@
       "kakaoError": "An error occurred while sharing to KakaoTalk."
     }
   },
+  "kpopDebutTest": {
+    "startMessage": {
+      "line1": "\"Your debut has been confirmed!\"",
+      "line2": "You who have finally made it to the stage of your dreams after beating tens of thousands of competitors.",
+      "line3": "But there's one thing that hasn't been decided yet.",
+      "line4": "It's your 'position' and 'concept' within the group.",
+      "line5": "Are you the leader who leads the team? The center who steals attention?\nOr the main vocal who tears up the stage with high notes?",
+      "line6": "We analyze your hidden talent and find the position where you can shine the brightest.\nFind my idol self 🎤 Step on the debut stage ✨"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (K-POP Debut Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "position": "Position",
+      "agency": "Suitable Agency",
+      "entryPoint": "Fan Entry Point"
+    },
+    "result": {
+      "position": "Position",
+      "agency": "Suitable Agency",
+      "entryPoint": "Fan Entry Point"
+    },
+    "shareMessages": {
+      "default": "I'm debuting this time! My position is {type} 🎤 I'm the center!",
+      "kakao": "I'm debuting this time! My position is {type} 🎤 I'm the center!",
+      "wechat": "I'm debuting this time! My position is {type} 🎤 I'm the center!",
+      "whatsapp": "I'm debuting this time! My position is {type} 🎤 I'm the center!",
+      "telegram": "I'm debuting this time! My position is {type} 🎤 I'm the center!",
+      "line": "I'm debuting this time! My position is {type} 🎤 I'm the center!",
+      "startDefault": "Your debut has been confirmed! Try the K-POP Idol Debut? Find My Position test! 🎤",
+      "startKakao": "Your debut has been confirmed! Try the K-POP Idol Debut? Find My Position test! 🎤",
+      "startWechat": "Your debut has been confirmed! Try the K-POP Idol Debut? Find My Position test! 🎤",
+      "startWhatsapp": "Your debut has been confirmed! Try the K-POP Idol Debut? Find My Position test! 🎤",
+      "startTelegram": "Your debut has been confirmed! Try the K-POP Idol Debut? Find My Position test! 🎤",
+      "startLine": "Your debut has been confirmed! Try the K-POP Idol Debut? Find My Position test! 🎤"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Extreme difficulty quiz that only the top 3% of humanity can solve!",
