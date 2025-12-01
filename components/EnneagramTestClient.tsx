@@ -778,9 +778,16 @@ export default function EnneagramTestClient({
               <h3 className="text-base font-bold text-gray-800 mb-3">
                 ✅ {t('result.coreValue')}
               </h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                {resultCoreValue}
-              </p>
+              <div className="flex flex-wrap gap-2">
+                {resultCoreValue.split(',').map((value, index) => (
+                  <span
+                    key={index}
+                    className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 font-medium px-4 py-2 rounded-full text-sm border border-purple-200"
+                  >
+                    {value.trim()}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
