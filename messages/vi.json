@@ -1010,6 +1010,60 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
+  "kpopExamTest": {
+    "startMessage": {
+      "line1": "\"Kiến thức K-POP của bạn ở cấp độ nào?\"",
+      "line2": "K-POP đã làm rung chuyển thế giới vượt ra ngoài Hàn Quốc!",
+      "line3": "Bạn chỉ là người nghe chỉ nghe nhạc, hay là fan thật sự biết tất cả?",
+      "line4": "Từ huyền thoại thế hệ 1 đến tân binh thế hệ 4. Các câu hỏi về tên fandom, lightstick, khái niệm vũ trụ, meme và hơn thế nữa mà fan K-POP phải biết.",
+      "line5": "Thử thách top 1% 'Giáo sư K-POP'!",
+      "line6": "Bắt đầu kỳ thi kiến thức fan 📝"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem các bài kiểm tra khác",
+      "goToTest": "Đi đến bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra tương tự"
+    },
+    "result": {
+      "scoreRange": "Số câu đúng",
+      "level": "Cấp độ fan",
+      "recommendation": "Đề xuất"
+    },
+    "shareMessages": {
+      "default": "Kiến thức K-POP của tôi là {level}! {type} 🎤 Bạn có phải là fan thật sự không?",
+      "kakao": "Kiến thức K-POP của tôi là {level}! {type} 🎤 Bạn có phải là fan thật sự không?",
+      "wechat": "Kiến thức K-POP của tôi là {level}! {type} 🎤 Bạn có phải là fan thật sự không?",
+      "whatsapp": "Kiến thức K-POP của tôi là {level}! {type} 🎤 Bạn có phải là fan thật sự không?",
+      "telegram": "Kiến thức K-POP của tôi là {level}! {type} 🎤 Bạn có phải là fan thật sự không?",
+      "line": "Kiến thức K-POP của tôi là {level}! {type} 🎤 Bạn có phải là fan thật sự không?",
+      "startDefault": "Kỳ thi kiến thức fan K-POP (Bài kiểm tra cấp độ fan) 📝 Hãy thử bài kiểm tra!",
+      "startKakao": "Kỳ thi kiến thức fan K-POP (Bài kiểm tra cấp độ fan) 📝 Hãy thử bài kiểm tra!",
+      "startWechat": "Kỳ thi kiến thức fan K-POP (Bài kiểm tra cấp độ fan) 📝 Hãy thử bài kiểm tra!",
+      "startWhatsapp": "Kỳ thi kiến thức fan K-POP (Bài kiểm tra cấp độ fan) 📝 Hãy thử bài kiểm tra!",
+      "startTelegram": "Kỳ thi kiến thức fan K-POP (Bài kiểm tra cấp độ fan) 📝 Hãy thử bài kiểm tra!",
+      "startLine": "Kỳ thi kiến thức fan K-POP (Bài kiểm tra cấp độ fan) 📝 Hãy thử bài kiểm tra!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Câu đố siêu khó chỉ có top 3% nhân loại mới giải được!",

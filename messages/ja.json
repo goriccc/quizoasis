@@ -1011,6 +1011,60 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
+  "kpopExamTest": {
+    "startMessage": {
+      "line1": "\"あなたのK-POPファン知識レベルはいくつですか？\"",
+      "line2": "韓国を超えて世界中を揺るがしたK-POP！",
+      "line3": "単に歌を聞くだけのリスナーですか、それともすべてを知っている真のファンですか？",
+      "line4": "1世代のレジェンドから4世代のルーキーまで。ファンダム名、応援棒、世界観、ミームなど、K-POPファンなら知らないといけない問題が出題されます。",
+      "line5": "上位1%の「K-POP教授」に挑戦してください！",
+      "line6": "ファン知識試験を開始 📝"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有",
+      "retakeTest": "再挑戦",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似のテスト"
+    },
+    "result": {
+      "scoreRange": "正解数",
+      "level": "ファンレベル",
+      "recommendation": "おすすめ"
+    },
+    "shareMessages": {
+      "default": "私のK-POPファン知識は{level}！{type} 🎤 あなたは真のファンですか？",
+      "kakao": "私のK-POPファン知識は{level}！{type} 🎤 あなたは真のファンですか？",
+      "wechat": "私のK-POPファン知識は{level}！{type} 🎤 あなたは真のファンですか？",
+      "whatsapp": "私のK-POPファン知識は{level}！{type} 🎤 あなたは真のファンですか？",
+      "telegram": "私のK-POPファン知識は{level}！{type} 🎤 あなたは真のファンですか？",
+      "line": "私のK-POPファン知識は{level}！{type} 🎤 あなたは真のファンですか？",
+      "startDefault": "K-POPファン知識試験（ファンレベルテスト）📝 テストを試してみてください！",
+      "startKakao": "K-POPファン知識試験（ファンレベルテスト）📝 テストを試してみてください！",
+      "startWechat": "K-POPファン知識試験（ファンレベルテスト）📝 テストを試してみてください！",
+      "startWhatsapp": "K-POPファン知識試験（ファンレベルテスト）📝 テストを試してみてください！",
+      "startTelegram": "K-POPファン知識試験（ファンレベルテスト）📝 テストを試してみてください！",
+      "startLine": "K-POPファン知識試験（ファンレベルテスト）📝 テストを試してみてください！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "人類上位3%しか解けない超難問クイズ！",

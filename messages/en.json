@@ -1071,6 +1071,60 @@
       "kakaoError": "An error occurred while sharing to KakaoTalk."
     }
   },
+  "kpopExamTest": {
+    "startMessage": {
+      "line1": "\"What level is your K-POP fan knowledge?\"",
+      "line2": "K-POP that has shaken the world beyond Korea!",
+      "line3": "Are you just a listener who only listens to songs, or a true fan who knows everything?",
+      "line4": "From 1st generation legends to 4th generation rookies. Questions about fandom names, lightsticks, universe concepts, memes, and more that K-POP fans must know.",
+      "line5": "Challenge the top 1% 'K-POP Professor'!",
+      "line6": "Start the fan knowledge exam 📝"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests"
+    },
+    "result": {
+      "scoreRange": "Correct Answers",
+      "level": "Fan Level",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My K-POP fan knowledge is {level}! {type} 🎤 Are you a true fan?",
+      "kakao": "My K-POP fan knowledge is {level}! {type} 🎤 Are you a true fan?",
+      "wechat": "My K-POP fan knowledge is {level}! {type} 🎤 Are you a true fan?",
+      "whatsapp": "My K-POP fan knowledge is {level}! {type} 🎤 Are you a true fan?",
+      "telegram": "My K-POP fan knowledge is {level}! {type} 🎤 Are you a true fan?",
+      "line": "My K-POP fan knowledge is {level}! {type} 🎤 Are you a true fan?",
+      "startDefault": "K-POP Fan Knowledge Exam (Fan Level Test) 📝 Try the test!",
+      "startKakao": "K-POP Fan Knowledge Exam (Fan Level Test) 📝 Try the test!",
+      "startWechat": "K-POP Fan Knowledge Exam (Fan Level Test) 📝 Try the test!",
+      "startWhatsapp": "K-POP Fan Knowledge Exam (Fan Level Test) 📝 Try the test!",
+      "startTelegram": "K-POP Fan Knowledge Exam (Fan Level Test) 📝 Try the test!",
+      "startLine": "K-POP Fan Knowledge Exam (Fan Level Test) 📝 Try the test!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Extreme difficulty quiz that only the top 3% of humanity can solve!",

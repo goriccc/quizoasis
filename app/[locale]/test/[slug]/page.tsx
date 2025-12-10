@@ -24,6 +24,7 @@ import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
 import { optimismQuestions, optimismResults } from '@/lib/optimismData';
 import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
 import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
+import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
@@ -106,6 +107,9 @@ const TrustTestClient = dynamic(() => import('@/components/TrustTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const KpopDebutTestClient = dynamic(() => import('@/components/KpopDebutTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
@@ -1419,6 +1423,59 @@ export default async function TestPage({ params }: Props) {
           questions={enneagramQuestions}
           results={enneagramResults}
           questionCount={enneagramQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // K-POP 팬덤 능력 고사 (덕력 측정기) 테스트
+  if (slug === 'kpop-exam-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'kpop-exam-test',
+      title: {
+        ko: 'K-POP 팬덤 능력 고사 (덕력 측정기)',
+        en: 'K-POP Fan Knowledge Exam (Fan Level Test)',
+        ja: 'K-POPファン知識試験（ファンレベルテスト）',
+        'zh-CN': 'K-POP粉丝知识考试（粉丝等级测试）',
+        'zh-TW': 'K-POP粉絲知識考試（粉絲等級測試）',
+        vi: 'Kỳ thi kiến thức fan K-POP (Bài kiểm tra cấp độ fan)',
+        id: 'Ujian Pengetahuan Penggemar K-POP (Tes Level Penggemar)'
+      },
+      description: {
+        ko: '당신의 덕력은 몇 레벨입니까?',
+        en: 'What level is your K-POP fan knowledge?',
+        ja: 'あなたのK-POPファン知識レベルはいくつですか？',
+        'zh-CN': '你的K-POP粉丝知识是几级？',
+        'zh-TW': '你的K-POP粉絲知識是幾級？',
+        vi: 'Kiến thức K-POP của bạn ở cấp độ nào?',
+        id: 'Berapa level pengetahuan K-POP Anda?'
+      },
+      thumbnail: 'phase2_test_076_kpop_exam.jpg',
+      type: 'dating',
+      play_count: 0,
+      tags: {
+        ko: ['지식', '챌린지'],
+        en: ['Knowledge', 'Challenge'],
+        ja: ['知識', 'チャレンジ'],
+        'zh-CN': ['知识', '挑战'],
+        'zh-TW': ['知識', '挑戰'],
+        vi: ['Kiến thức', 'Thử thách'],
+        id: ['Pengetahuan', 'Tantangan']
+      }
+    };
+
+    return (
+      <>
+        <KpopExamTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={kpopExamQuestions}
+          results={kpopExamResults}
+          questionCount={kpopExamQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3210,6 +3267,11 @@ export default async function TestPage({ params }: Props) {
       questions: kpopDebutQuestions,
       results: kpopDebutResults
     };
+  } else if (slug === 'kpop-exam-test') {
+    testData = {
+      questions: kpopExamQuestions,
+      results: kpopExamResults
+    };
   } else if (slug === 'life-priorities-test') {
     testData = {
       questions: lifePrioritiesQuestions,
@@ -3376,6 +3438,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'humor-code-test') TestClient = HumorCodeTestClient;
     else if (slug === 'trustworthiness-test') TestClient = TrustTestClient;
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
+    else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'life-priorities-test') TestClient = LifePrioritiesTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;

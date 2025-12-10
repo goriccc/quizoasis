@@ -1010,6 +1010,60 @@
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
   },
+  "kpopExamTest": {
+    "startMessage": {
+      "line1": "\"Berapa level pengetahuan K-POP Anda?\"",
+      "line2": "K-POP yang telah mengguncang dunia melampaui Korea!",
+      "line3": "Apakah Anda hanya pendengar yang hanya mendengarkan lagu, atau penggemar sejati yang tahu segalanya?",
+      "line4": "Dari legenda generasi 1 hingga rookie generasi 4. Pertanyaan tentang nama fandom, lightstick, konsep alam semesta, meme, dan lainnya yang harus diketahui penggemar K-POP.",
+      "line5": "Tantang top 1% 'Profesor K-POP'!",
+      "line6": "Mulai ujian pengetahuan penggemar 📝"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa"
+    },
+    "result": {
+      "scoreRange": "Jawaban Benar",
+      "level": "Level Penggemar",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Pengetahuan K-POP saya adalah {level}! {type} 🎤 Apakah Anda penggemar sejati?",
+      "kakao": "Pengetahuan K-POP saya adalah {level}! {type} 🎤 Apakah Anda penggemar sejati?",
+      "wechat": "Pengetahuan K-POP saya adalah {level}! {type} 🎤 Apakah Anda penggemar sejati?",
+      "whatsapp": "Pengetahuan K-POP saya adalah {level}! {type} 🎤 Apakah Anda penggemar sejati?",
+      "telegram": "Pengetahuan K-POP saya adalah {level}! {type} 🎤 Apakah Anda penggemar sejati?",
+      "line": "Pengetahuan K-POP saya adalah {level}! {type} 🎤 Apakah Anda penggemar sejati?",
+      "startDefault": "Ujian Pengetahuan Penggemar K-POP (Tes Level Penggemar) 📝 Coba tesnya!",
+      "startKakao": "Ujian Pengetahuan Penggemar K-POP (Tes Level Penggemar) 📝 Coba tesnya!",
+      "startWechat": "Ujian Pengetahuan Penggemar K-POP (Tes Level Penggemar) 📝 Coba tesnya!",
+      "startWhatsapp": "Ujian Pengetahuan Penggemar K-POP (Tes Level Penggemar) 📝 Coba tesnya!",
+      "startTelegram": "Ujian Pengetahuan Penggemar K-POP (Tes Level Penggemar) 📝 Coba tesnya!",
+      "startLine": "Ujian Pengetahuan Penggemar K-POP (Tes Level Penggemar) 📝 Coba tesnya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "Kuis Kesulitan Ekstrem Hanya Top 3% Umat Manusia yang Bisa Menyelesaikan!",

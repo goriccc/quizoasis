@@ -1017,6 +1017,60 @@
       "kakaoError": "KakaoTalk分享時發生錯誤。"
     }
   },
+  "kpopExamTest": {
+    "startMessage": {
+      "line1": "\"你的K-POP粉絲知識是幾級？\"",
+      "line2": "超越韓國，撼動全世界的K-POP！",
+      "line3": "你只是單純聽歌的聽眾，還是了解一切的真正粉絲？",
+      "line4": "從1代傳奇到4代新秀。粉絲名、應援棒、世界觀、表情包等K-POP粉絲必須知道的問題。",
+      "line5": "挑戰前1%的'K-POP教授'！",
+      "line6": "開始粉絲知識考試 📝"
+    },
+    "ui": {
+      "startTest": "開始測試",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試"
+    },
+    "result": {
+      "scoreRange": "正確答案數",
+      "level": "粉絲等級",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的K-POP粉絲知識是{level}！{type} 🎤 你是真正的粉絲嗎？",
+      "kakao": "我的K-POP粉絲知識是{level}！{type} 🎤 你是真正的粉絲嗎？",
+      "wechat": "我的K-POP粉絲知識是{level}！{type} 🎤 你是真正的粉絲嗎？",
+      "whatsapp": "我的K-POP粉絲知識是{level}！{type} 🎤 你是真正的粉絲嗎？",
+      "telegram": "我的K-POP粉絲知識是{level}！{type} 🎤 你是真正的粉絲嗎？",
+      "line": "我的K-POP粉絲知識是{level}！{type} 🎤 你是真正的粉絲嗎？",
+      "startDefault": "K-POP粉絲知識考試（粉絲等級測試）📝 試試測試吧！",
+      "startKakao": "K-POP粉絲知識考試（粉絲等級測試）📝 試試測試吧！",
+      "startWechat": "K-POP粉絲知識考試（粉絲等級測試）📝 試試測試吧！",
+      "startWhatsapp": "K-POP粉絲知識考試（粉絲等級測試）📝 試試測試吧！",
+      "startTelegram": "K-POP粉絲知識考試（粉絲等級測試）📝 試試測試吧！",
+      "startLine": "K-POP粉絲知識考試（粉絲等級測試）📝 試試測試吧！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "只有人類前3%能解決的超高難度測驗！",

@@ -1344,6 +1344,60 @@
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
   },
+  "kpopExamTest": {
+    "startMessage": {
+      "line1": "\"당신의 덕력은 몇 레벨입니까?\"",
+      "line2": "대한민국을 넘어 전 세계를 뒤흔든 K-POP!",
+      "line3": "단순히 노래만 듣는 리스너인가요, 아니면 모든 것을 꿰뚫고 있는 찐팬인가요?",
+      "line4": "1세대 레전드부터 4세대 루키까지. 팬덤 이름, 응원봉, 세계관, 밈(Meme) 등 K-POP 팬이라면 모를 수 없는 문제들이 출제됩니다.",
+      "line5": "상위 1% 'K-POP 교수님'에 도전하세요!",
+      "line6": "덕력 고사 시작하기 📝"
+    },
+    "ui": {
+      "startTest": "테스트 시작하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 테스트"
+    },
+    "result": {
+      "scoreRange": "정답 개수",
+      "level": "덕력 등급",
+      "recommendation": "추천"
+    },
+    "shareMessages": {
+      "default": "내 K-POP 덕력은 {level}! {type} 🎤 당신은 찐팬인가요?",
+      "kakao": "내 K-POP 덕력은 {level}! {type} 🎤 당신은 찐팬인가요?",
+      "wechat": "내 K-POP 덕력은 {level}! {type} 🎤 당신은 찐팬인가요?",
+      "whatsapp": "내 K-POP 덕력은 {level}! {type} 🎤 당신은 찐팬인가요?",
+      "telegram": "내 K-POP 덕력은 {level}! {type} 🎤 당신은 찐팬인가요?",
+      "line": "내 K-POP 덕력은 {level}! {type} 🎤 당신은 찐팬인가요?",
+      "startDefault": "K-POP 팬덤 능력 고사 (덕력 측정기) 📝 테스트 해보세요!",
+      "startKakao": "K-POP 팬덤 능력 고사 (덕력 측정기) 📝 테스트 해보세요!",
+      "startWechat": "K-POP 팬덤 능력 고사 (덕력 측정기) 📝 테스트 해보세요!",
+      "startWhatsapp": "K-POP 팬덤 능력 고사 (덕력 측정기) 📝 테스트 해보세요!",
+      "startTelegram": "K-POP 팬덤 능력 고사 (덕력 측정기) 📝 테스트 해보세요!",
+      "startLine": "K-POP 팬덤 능력 고사 (덕력 측정기) 📝 테스트 해보세요!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
+  },
   "extremeQuizTest": {
     "startMessage": {
       "line1": "인류 상위 3%만이 풀 수 있는 초고난도 퀴즈!",
