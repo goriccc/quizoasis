@@ -1453,7 +1453,8 @@ export default async function TestPage({ params }: Props) {
         id: 'Berapa level pengetahuan K-POP Anda?'
       },
       thumbnail: 'phase2_test_076_kpop_exam.jpg',
-      type: 'dating',
+      type: 'knowledge',
+      category: 'challenge',
       play_count: 0,
       tags: {
         ko: ['지식', '챌린지'],
