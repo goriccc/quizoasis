@@ -37,8 +37,8 @@ INSERT INTO tests (
     "id": "Berapa level pengetahuan K-POP Anda?"
   }',
   'phase2_test_076_kpop_exam.jpg',
-  'dating',
-  'love',
+  'knowledge',
+  'challenge',
   '{
     "ko": ["지식", "챌린지"],
     "en": ["Knowledge", "Challenge"],
