@@ -3071,5 +3071,61 @@
       "faceDetectionTimeout": "Hết thời gian phát hiện khuôn mặt (vượt quá 8 giây)",
       "modelLoadFailed": "Không thể tải mô hình"
     }
+  },
+  "timePerspectiveTest": {
+    "startMessage": {
+      "line1": "\"Ánh mắt của bạn đang hướng về đâu?\"",
+      "line2": "Có người sống bằng ký ức đã qua, có người mơ về ngày mai chưa đến.",
+      "line3": "Hoặc có người hô hào rằng chỉ khoảnh khắc này mới quan trọng.",
+      "line4": "Khi xem album ảnh cũ và khi mua nhật ký năm mới. Khoảnh khắc nào khiến trái tim bạn đập nhanh hơn?",
+      "line5": "Tìm 'múi giờ' nơi tâm trí vô thức của bạn đang ở. Kiểm tra quan điểm thời gian của tôi 🕰️ Bắt đầu chẩn đoán giá trị ⏳"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Quan điểm Thời gian",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Làm Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Bài kiểm tra Quan điểm Thời gian)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "timePerspective": "Múi giờ",
+      "characteristics": "Đặc điểm Chính",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Ánh mắt của tôi hướng về {type}! 🕰️ Tôi là kiểu quá khứ hay tương lai?",
+      "kakao": "Ánh mắt của tôi hướng về {type}! 🕰️ Tôi là kiểu quá khứ hay tương lai?",
+      "wechat": "Ánh mắt của tôi hướng về {type}! 🕰️ Tôi là kiểu quá khứ hay tương lai?",
+      "whatsapp": "Ánh mắt của tôi hướng về {type}! 🕰️ Tôi là kiểu quá khứ hay tương lai?",
+      "telegram": "Ánh mắt của tôi hướng về {type}! 🕰️ Tôi là kiểu quá khứ hay tương lai?",
+      "line": "Ánh mắt của tôi hướng về {type}! 🕰️ Tôi là kiểu quá khứ hay tương lai?",
+      "startDefault": "Tôi là 'Quá khứ' hay 'Tương lai'? (Bài kiểm tra Quan điểm Thời gian) 🕰️ Kiểm tra quan điểm thời gian của tôi!",
+      "startKakao": "Tôi là 'Quá khứ' hay 'Tương lai'? (Bài kiểm tra Quan điểm Thời gian) 🕰️ Kiểm tra quan điểm thời gian của tôi!",
+      "startWechat": "Tôi là 'Quá khứ' hay 'Tương lai'? (Bài kiểm tra Quan điểm Thời gian) 🕰️ Kiểm tra quan điểm thời gian của tôi!",
+      "startWhatsapp": "Tôi là 'Quá khứ' hay 'Tương lai'? (Bài kiểm tra Quan điểm Thời gian) 🕰️ Kiểm tra quan điểm thời gian của tôi!",
+      "startTelegram": "Tôi là 'Quá khứ' hay 'Tương lai'? (Bài kiểm tra Quan điểm Thời gian) 🕰️ Kiểm tra quan điểm thời gian của tôi!",
+      "startLine": "Tôi là 'Quá khứ' hay 'Tương lai'? (Bài kiểm tra Quan điểm Thời gian) 🕰️ Kiểm tra quan điểm thời gian của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }

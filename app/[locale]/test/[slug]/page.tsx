@@ -27,6 +27,7 @@ import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
+import { timePerspectiveQuestions, timePerspectiveResults } from '@/lib/timePerspectiveData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
 import { honestyVsRestraintQuestions, honestyVsRestraintResults } from '@/lib/honestyVsRestraintData';
@@ -114,6 +115,9 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const TimePerspectiveTestClient = dynamic(() => import('@/components/TimePerspectiveTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
@@ -1534,6 +1538,59 @@ export default async function TestPage({ params }: Props) {
           questions={empathyFQuestions}
           results={empathyFResults}
           questionCount={empathyFQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트)
+  if (slug === 'time-perspective-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'time-perspective-test',
+      title: {
+        ko: '나는 \'과거\' 지향 vs \'미래\' 지향? (시간 관점 테스트)',
+        en: 'Am I \'Past\' Oriented vs \'Future\' Oriented? (Time Perspective Test)',
+        ja: '私は「過去」志向 vs 「未来」志向？(時間観点テスト)',
+        'zh-CN': '我是「过去」导向 vs 「未来」导向？(时间观点测试)',
+        'zh-TW': '我是「過去」導向 vs 「未來」導向？(時間觀點測試)',
+        vi: 'Tôi là \'Quá khứ\' hay \'Tương lai\'? (Bài kiểm tra Quan điểm Thời gian)',
+        id: 'Apakah Saya Berorientasi \'Masa Lalu\' vs \'Masa Depan\'? (Tes Perspektif Waktu)'
+      },
+      description: {
+        ko: '당신의 시선은 어디를 향해 있나요?',
+        en: 'Where is your gaze directed?',
+        ja: 'あなたの視線はどこに向かっていますか？',
+        'zh-CN': '你的目光朝向哪里？',
+        'zh-TW': '你的目光朝向哪裡？',
+        vi: 'Ánh mắt của bạn đang hướng về đâu?',
+        id: 'Ke mana pandangan Anda diarahkan?'
+      },
+      thumbnail: 'phase2_test_152_time_perspective.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리'],
+        en: ['Psychology'],
+        ja: ['心理'],
+        'zh-CN': ['心理'],
+        'zh-TW': ['心理'],
+        vi: ['Tâm lý'],
+        id: ['Psikologi']
+      }
+    };
+    return (
+      <>
+        <TimePerspectiveTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={timePerspectiveQuestions}
+          results={timePerspectiveResults}
+          questionCount={timePerspectiveQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3335,6 +3392,11 @@ export default async function TestPage({ params }: Props) {
       questions: empathyFQuestions,
       results: empathyFResults
     };
+  } else if (slug === 'time-perspective-test') {
+    testData = {
+      questions: timePerspectiveQuestions,
+      results: timePerspectiveResults
+    };
   } else if (slug === 'life-priorities-test') {
     testData = {
       questions: lifePrioritiesQuestions,
@@ -3503,6 +3565,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
+    else if (slug === 'time-perspective-test') TestClient = TimePerspectiveTestClient;
     else if (slug === 'life-priorities-test') TestClient = LifePrioritiesTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;

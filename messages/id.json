@@ -3071,5 +3071,61 @@
       "faceDetectionTimeout": "Waktu deteksi wajah habis (melebihi 8 detik)",
       "modelLoadFailed": "Tidak dapat memuat model"
     }
+  },
+  "timePerspectiveTest": {
+    "startMessage": {
+      "line1": "\"Ke mana pandangan Anda diarahkan?\"",
+      "line2": "Ada orang yang hidup dari kenangan masa lalu, ada juga yang memimpikan hari esok yang belum datang.",
+      "line3": "Atau ada yang berteriak bahwa hanya momen ini yang penting.",
+      "line4": "Saat melihat album foto lama dan saat membeli buku harian tahun baru. Kapan momen jantung Anda berdetak lebih cepat?",
+      "line5": "Temukan 'zona waktu' di mana pikiran bawah sadar Anda berada. Periksa perspektif waktu saya 🕰️ Mulai diagnosis nilai ⏳"
+    },
+    "ui": {
+      "startTest": "Periksa Perspektif Waktu",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Perspektif Waktu)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "timePerspective": "Zona Waktu",
+      "characteristics": "Fitur Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Pandangan saya mengarah ke {type}! 🕰️ Apakah saya tipe masa lalu atau masa depan?",
+      "kakao": "Pandangan saya mengarah ke {type}! 🕰️ Apakah saya tipe masa lalu atau masa depan?",
+      "wechat": "Pandangan saya mengarah ke {type}! 🕰️ Apakah saya tipe masa lalu atau masa depan?",
+      "whatsapp": "Pandangan saya mengarah ke {type}! 🕰️ Apakah saya tipe masa lalu atau masa depan?",
+      "telegram": "Pandangan saya mengarah ke {type}! 🕰️ Apakah saya tipe masa lalu atau masa depan?",
+      "line": "Pandangan saya mengarah ke {type}! 🕰️ Apakah saya tipe masa lalu atau masa depan?",
+      "startDefault": "Apakah Saya Berorientasi 'Masa Lalu' vs 'Masa Depan'? (Tes Perspektif Waktu) 🕰️ Periksa perspektif waktu saya!",
+      "startKakao": "Apakah Saya Berorientasi 'Masa Lalu' vs 'Masa Depan'? (Tes Perspektif Waktu) 🕰️ Periksa perspektif waktu saya!",
+      "startWechat": "Apakah Saya Berorientasi 'Masa Lalu' vs 'Masa Depan'? (Tes Perspektif Waktu) 🕰️ Periksa perspektif waktu saya!",
+      "startWhatsapp": "Apakah Saya Berorientasi 'Masa Lalu' vs 'Masa Depan'? (Tes Perspektif Waktu) 🕰️ Periksa perspektif waktu saya!",
+      "startTelegram": "Apakah Saya Berorientasi 'Masa Lalu' vs 'Masa Depan'? (Tes Perspektif Waktu) 🕰️ Periksa perspektif waktu saya!",
+      "startLine": "Apakah Saya Berorientasi 'Masa Lalu' vs 'Masa Depan'? (Tes Perspektif Waktu) 🕰️ Periksa perspektif waktu saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

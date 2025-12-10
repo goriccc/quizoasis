@@ -3078,5 +3078,61 @@
       "faceDetectionTimeout": "面部檢測超時（超過8秒）",
       "modelLoadFailed": "無法載入模型"
     }
+  },
+  "timePerspectiveTest": {
+    "startMessage": {
+      "line1": "\"你的目光朝向哪裡？\"",
+      "line2": "有些人靠過去的回憶生活，有些人夢想著尚未到來的明天。",
+      "line3": "或者有些人高呼只有此刻才重要。",
+      "line4": "看舊相冊時和買新年日記本時。你的心跳得更快的瞬間是什麼時候？",
+      "line5": "找到你潛意識停留的「時間段」。確認我的時間觀點 🕰️ 價值觀診斷開始 ⏳"
+    },
+    "ui": {
+      "startTest": "確認時間觀點",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "進行測試",
+      "adsenseTitle": "AdSense廣告區域（時間觀點測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "timePerspective": "時間段",
+      "characteristics": "主要特徵",
+      "goodMatch": "理想配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的目光朝向{type}！🕰️ 我是過去型還是未來型？",
+      "kakao": "我的目光朝向{type}！🕰️ 我是過去型還是未來型？",
+      "wechat": "我的目光朝向{type}！🕰️ 我是過去型還是未來型？",
+      "whatsapp": "我的目光朝向{type}！🕰️ 我是過去型還是未來型？",
+      "telegram": "我的目光朝向{type}！🕰️ 我是過去型還是未來型？",
+      "line": "我的目光朝向{type}！🕰️ 我是過去型還是未來型？",
+      "startDefault": "我是「過去」導向 vs 「未來」導向？（時間觀點測試）🕰️ 確認我的時間觀點！",
+      "startKakao": "我是「過去」導向 vs 「未來」導向？（時間觀點測試）🕰️ 確認我的時間觀點！",
+      "startWechat": "我是「過去」導向 vs 「未來」導向？（時間觀點測試）🕰️ 確認我的時間觀點！",
+      "startWhatsapp": "我是「過去」導向 vs 「未來」導向？（時間觀點測試）🕰️ 確認我的時間觀點！",
+      "startTelegram": "我是「過去」導向 vs 「未來」導向？（時間觀點測試）🕰️ 確認我的時間觀點！",
+      "startLine": "我是「過去」導向 vs 「未來」導向？（時間觀點測試）🕰️ 確認我的時間觀點！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }

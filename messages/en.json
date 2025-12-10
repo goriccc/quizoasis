@@ -3233,5 +3233,61 @@
       "faceDetectionTimeout": "Face detection timeout (exceeded 8 seconds)",
       "modelLoadFailed": "Unable to load model"
     }
+  },
+  "timePerspectiveTest": {
+    "startMessage": {
+      "line1": "\"Where is your gaze directed?\"",
+      "line2": "Some people live on past memories, while others dream of tomorrow that hasn't come yet.",
+      "line3": "Or some shout that only this moment matters.",
+      "line4": "When looking at old photo albums and when buying a new year diary. When does your heart beat faster?",
+      "line5": "Find the 'time zone' where your unconscious mind resides. Check my time perspective 🕰️ Start values diagnosis ⏳"
+    },
+    "ui": {
+      "startTest": "Check Time Perspective",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Results",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Take Test",
+      "adsenseTitle": "AdSense Ad Area (Time Perspective Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "timePerspective": "Time Zone",
+      "characteristics": "Main Features",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My gaze is directed toward {type}! 🕰️ Am I past-oriented or future-oriented?",
+      "kakao": "My gaze is directed toward {type}! 🕰️ Am I past-oriented or future-oriented?",
+      "wechat": "My gaze is directed toward {type}! 🕰️ Am I past-oriented or future-oriented?",
+      "whatsapp": "My gaze is directed toward {type}! 🕰️ Am I past-oriented or future-oriented?",
+      "telegram": "My gaze is directed toward {type}! 🕰️ Am I past-oriented or future-oriented?",
+      "line": "My gaze is directed toward {type}! 🕰️ Am I past-oriented or future-oriented?",
+      "startDefault": "Am I 'Past' Oriented vs 'Future' Oriented? (Time Perspective Test) 🕰️ Check my time perspective!",
+      "startKakao": "Am I 'Past' Oriented vs 'Future' Oriented? (Time Perspective Test) 🕰️ Check my time perspective!",
+      "startWechat": "Am I 'Past' Oriented vs 'Future' Oriented? (Time Perspective Test) 🕰️ Check my time perspective!",
+      "startWhatsapp": "Am I 'Past' Oriented vs 'Future' Oriented? (Time Perspective Test) 🕰️ Check my time perspective!",
+      "startTelegram": "Am I 'Past' Oriented vs 'Future' Oriented? (Time Perspective Test) 🕰️ Check my time perspective!",
+      "startLine": "Am I 'Past' Oriented vs 'Future' Oriented? (Time Perspective Test) 🕰️ Check my time perspective!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature unavailable.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "Error occurred during KakaoTalk sharing."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Other Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
   }
 }

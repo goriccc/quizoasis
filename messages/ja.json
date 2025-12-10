@@ -3059,5 +3059,61 @@
       "faceDetectionTimeout": "顔検出タイムアウト（8秒超過）",
       "modelLoadFailed": "モデルをロードできません"
     }
+  },
+  "timePerspectiveTest": {
+    "startMessage": {
+      "line1": "「あなたの視線はどこに向かっていますか？」",
+      "line2": "過ぎ去った思い出を食べて生きる人もいれば、まだ来ていない明日を夢見て生きる人もいます。",
+      "line3": "あるいは、今この瞬間だけが重要だと叫ぶ人もいます。",
+      "line4": "古い写真アルバムを見るときと新年のダイアリーを買うとき。あなたの心臓がより速く鼓動する瞬間はいつですか？",
+      "line5": "あなたの無意識が留まっている「時間帯」を見つけます。私の時間観点を確認 🕰️ 価値観診断開始 ⏳"
+    },
+    "ui": {
+      "startTest": "時間観点を確認",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（時間観点テスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "timePerspective": "時間帯",
+      "characteristics": "主な特徴",
+      "goodMatch": "理想の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の視線は{type}に向かっています！🕰️ 私は過去型でしょうか、未来型でしょうか？",
+      "kakao": "私の視線は{type}に向かっています！🕰️ 私は過去型でしょうか、未来型でしょうか？",
+      "wechat": "私の視線は{type}に向かっています！🕰️ 私は過去型でしょうか、未来型でしょうか？",
+      "whatsapp": "私の視線は{type}に向かっています！🕰️ 私は過去型でしょうか、未来型でしょうか？",
+      "telegram": "私の視線は{type}に向かっています！🕰️ 私は過去型でしょうか、未来型でしょうか？",
+      "line": "私の視線は{type}に向かっています！🕰️ 私は過去型でしょうか、未来型でしょうか？",
+      "startDefault": "私は「過去」志向 vs 「未来」志向？（時間観点テスト）🕰️ 私の時間観点を確認！",
+      "startKakao": "私は「過去」志向 vs 「未来」志向？（時間観点テスト）🕰️ 私の時間観点を確認！",
+      "startWechat": "私は「過去」志向 vs 「未来」志向？（時間観点テスト）🕰️ 私の時間観点を確認！",
+      "startWhatsapp": "私は「過去」志向 vs 「未来」志向？（時間観点テスト）🕰️ 私の時間観点を確認！",
+      "startTelegram": "私は「過去」志向 vs 「未来」志向？（時間観点テスト）🕰️ 私の時間観点を確認！",
+      "startLine": "私は「過去」志向 vs 「未来」志向？（時間観点テスト）🕰️ 私の時間観点を確認！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

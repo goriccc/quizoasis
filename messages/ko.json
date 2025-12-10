@@ -3148,5 +3148,61 @@
       "faceDetectionTimeout": "얼굴 감지 타임아웃 (8초 초과)",
       "modelLoadFailed": "모델을 로드할 수 없습니다"
     }
+  },
+  "timePerspectiveTest": {
+    "startMessage": {
+      "line1": "\"당신의 시선은 어디를 향해 있나요?\"",
+      "line2": "지나간 추억을 먹고 사는 사람이 있고, 오지 않은 내일을 꿈꾸며 사는 사람이 있습니다.",
+      "line3": "혹은, 지금 이 순간만이 중요하다고 외치기도 하죠.",
+      "line4": "오래된 사진첩을 볼 때와 새해 다이어리를 살 때. 당신의 심장이 더 뛰는 순간은 언제인가요?",
+      "line5": "나의 무의식이 머물고 있는 '시간대'를 찾아드립니다. 나의 시간 관점 확인하기 🕰️ 가치관 진단 시작 ⏳"
+    },
+    "ui": {
+      "startTest": "시간 관점 확인하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (시간 관점 테스트)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "timePerspective": "시간대",
+      "characteristics": "주요 특징",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍"
+    },
+    "shareMessages": {
+      "default": "내 시선은 {type}를 향해 있어요! 🕰️ 나는 과거형일까, 미래형일까?",
+      "kakao": "내 시선은 {type}를 향해 있어요! 🕰️ 나는 과거형일까, 미래형일까?",
+      "wechat": "내 시선은 {type}를 향해 있어요! 🕰️ 나는 과거형일까, 미래형일까?",
+      "whatsapp": "내 시선은 {type}를 향해 있어요! 🕰️ 나는 과거형일까, 미래형일까?",
+      "telegram": "내 시선은 {type}를 향해 있어요! 🕰️ 나는 과거형일까, 미래형일까?",
+      "line": "내 시선은 {type}를 향해 있어요! 🕰️ 나는 과거형일까, 미래형일까?",
+      "startDefault": "나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트) 🕰️ 나의 시간 관점 확인하기!",
+      "startKakao": "나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트) 🕰️ 나의 시간 관점 확인하기!",
+      "startWechat": "나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트) 🕰️ 나의 시간 관점 확인하기!",
+      "startWhatsapp": "나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트) 🕰️ 나의 시간 관점 확인하기!",
+      "startTelegram": "나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트) 🕰️ 나의 시간 관점 확인하기!",
+      "startLine": "나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트) 🕰️ 나의 시간 관점 확인하기!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }
