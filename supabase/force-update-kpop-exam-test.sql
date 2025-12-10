@@ -1,3 +1,10 @@
+-- K-POP 팬덤 능력 고사 테스트 강제 업데이트 (프로덕션용)
+-- created_at을 현재 시간으로 설정하여 최신 테스트로 표시
+
+-- 1. 기존 데이터가 있으면 삭제
+DELETE FROM tests WHERE slug = 'kpop-exam-test';
+
+-- 2. 새로 삽입 (created_at을 명시적으로 NOW()로 설정)
 INSERT INTO tests (
   slug,
   title,
@@ -46,6 +53,14 @@ INSERT INTO tests (
   NOW()
 );
 
-
-
+-- 3. 확인: 최신 테스트 상위 10개
+SELECT 
+  slug, 
+  title->>'ko' as title_ko, 
+  created_at, 
+  updated_at,
+  play_count
+FROM tests 
+ORDER BY created_at DESC 
+LIMIT 10;
 
