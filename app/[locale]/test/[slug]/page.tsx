@@ -25,6 +25,7 @@ import { optimismQuestions, optimismResults } from '@/lib/optimismData';
 import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
 import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
+import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
@@ -110,6 +111,9 @@ const KpopDebutTestClient = dynamic(() => import('@/components/KpopDebutTestClie
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
@@ -1477,6 +1481,59 @@ export default async function TestPage({ params }: Props) {
           questions={kpopExamQuestions}
           results={kpopExamResults}
           questionCount={kpopExamQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'empathy-f-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'empathy-f-test',
+      title: {
+        ko: '공감 능력 F 테스트 (간편)',
+        en: 'Empathy F Test (Simple)',
+        ja: '共感能力Fテスト（簡易）',
+        'zh-CN': '共情能力F测试（简易）',
+        'zh-TW': '共情能力F測試（簡易）',
+        vi: 'Bài kiểm tra F khả năng đồng cảm (Đơn giản)',
+        id: 'Tes F Kemampuan Empati (Sederhana)'
+      },
+      description: {
+        ko: '친구가 우울하다고 할 때 당신의 반응은?',
+        en: 'How do you react when a friend says they are depressed?',
+        ja: '友達が落ち込んでいるとき、あなたの反応は？',
+        'zh-CN': '朋友说心情不好时你的反应是？',
+        'zh-TW': '朋友說心情不好時你的反應是？',
+        vi: 'Phản ứng của bạn khi bạn bè nói buồn là gì?',
+        id: 'Bagaimana reaksi Anda saat teman mengatakan mereka sedih?'
+      },
+      thumbnail: 'phase2_test_064_empathy_level.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <EmpathyFTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={empathyFQuestions}
+          results={empathyFResults}
+          questionCount={empathyFQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3273,6 +3330,11 @@ export default async function TestPage({ params }: Props) {
       questions: kpopExamQuestions,
       results: kpopExamResults
     };
+  } else if (slug === 'empathy-f-test') {
+    testData = {
+      questions: empathyFQuestions,
+      results: empathyFResults
+    };
   } else if (slug === 'life-priorities-test') {
     testData = {
       questions: lifePrioritiesQuestions,
@@ -3440,6 +3502,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'trustworthiness-test') TestClient = TrustTestClient;
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
+    else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'life-priorities-test') TestClient = LifePrioritiesTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;

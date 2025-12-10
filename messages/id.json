@@ -1128,6 +1128,62 @@
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
   },
+  "empathyFTest": {
+    "startMessage": {
+      "line1": "\"Bagaimana reaksi Anda saat teman mengatakan mereka sedih?\"",
+      "line2": "A. \"Kenapa sedih? Apa yang terjadi?\" (Solusi)",
+      "line3": "B. \"Oh tidak... Apakah kamu baik-baik saja? Pasti sangat sulit...\" (Empati)",
+      "line4": "Apakah Anda perlu memahami dengan kepala sebelum hati tergerak, atau hati bereaksi terlebih dahulu?",
+      "line5": "Dari 'Power F' yang menangis karena setiap kata kecil hingga 'Clumsy T' yang canggung dalam mengekspresikan emosi. Kami mengukur tingkat kecerdasan empati (EQ) Anda. Periksa indeks F saya 💕"
+    },
+    "ui": {
+      "startTest": "Periksa Indeks F",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes F Kemampuan Empati)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "empathyLevel": "Tingkat Empati",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Ideal",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Kemampuan empati saya adalah {type}! 💕 Apakah hanya saya yang menangis? F's berkumpul 😭",
+      "kakao": "Kemampuan empati saya adalah {type}! 💕 Apakah hanya saya yang menangis? F's berkumpul 😭",
+      "wechat": "Kemampuan empati saya adalah {type}! 💕 Apakah hanya saya yang menangis? F's berkumpul 😭",
+      "whatsapp": "Kemampuan empati saya adalah {type}! 💕 Apakah hanya saya yang menangis? F's berkumpul 😭",
+      "telegram": "Kemampuan empati saya adalah {type}! 💕 Apakah hanya saya yang menangis? F's berkumpul 😭",
+      "line": "Kemampuan empati saya adalah {type}! 💕 Apakah hanya saya yang menangis? F's berkumpul 😭",
+      "startDefault": "Tes F Kemampuan Empati (Sederhana) 💕 Periksa indeks F saya!",
+      "startKakao": "Tes F Kemampuan Empati (Sederhana) 💕 Periksa indeks F saya!",
+      "startWechat": "Tes F Kemampuan Empati (Sederhana) 💕 Periksa indeks F saya!",
+      "startWhatsapp": "Tes F Kemampuan Empati (Sederhana) 💕 Periksa indeks F saya!",
+      "startTelegram": "Tes F Kemampuan Empati (Sederhana) 💕 Periksa indeks F saya!",
+      "startLine": "Tes F Kemampuan Empati (Sederhana) 💕 Periksa indeks F saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Baik-baik saja sendirian vs Perlu seseorang\"",

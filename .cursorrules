@@ -160,3 +160,155 @@ const handleShareResult = async () => {
 5. **Ignoring locale parameter** - Always check locale before displaying text
 6. **Slug conflicts** - NEVER overwrite existing slugs without explicit permission
 7. **Slug reuse** - Always create unique slugs for new content
+
+## New Test Development Common Mistakes (CRITICAL)
+
+### 1. Translation Key Path Errors
+❌ DON'T:
+- Use incorrect translation key paths like `t('testName.otherTest.ui.*')` when using `useTranslations('testName')`
+- Mix translation namespaces incorrectly
+- Use global keys without `tGlobal = useTranslations()`
+
+✅ DO:
+- When using `useTranslations('testName')`, call `t('ui.*')` not `t('testName.ui.*')`
+- For global keys (like `mbti.*`), use `const tGlobal = useTranslations()` then `tGlobal('mbti.*')`
+- Always verify translation key paths match the namespace structure
+
+### 2. Translation Keys Exposed in UI
+❌ DON'T:
+- Leave missing translation keys in messages files
+- Use translation keys that don't exist in all language files
+
+✅ DO:
+- Add ALL required translation keys to ALL 7 language files (ko, en, ja, zh-CN, zh-TW, vi, id)
+- Verify keys exist before using them: `t('testName.ui.similarTests')` requires `testName.ui.similarTests` in all message files
+- Check for missing keys in recommendations, alerts, and UI sections
+
+### 3. Chinese Comma Separation Issues
+❌ DON'T:
+- Only split by English comma (`,`) and Japanese comma (`、`)
+- Ignore Chinese comma (`，`) in characteristics/features data
+
+✅ DO:
+- Use `split(/[,、，]/)` to handle English, Japanese, and Chinese commas
+- Test with Chinese simplified and traditional text to ensure proper splitting
+
+### 4. Start Screen Title Multilingual Missing
+❌ DON'T:
+- Forget to create SQL file for new test
+- Leave fallback data with empty multilingual fields
+- Assume DB will have multilingual data without inserting it
+
+✅ DO:
+- ALWAYS create `supabase/insert-test-name.sql` file with complete multilingual data
+- Include all 7 languages in title and description fields
+- Run SQL file to insert data into database
+- Verify fallback data in `page.tsx` has complete multilingual fields
+
+### 5. Social Sharing Messages Missing for Start Screen
+❌ DON'T:
+- Only add result sharing messages (`shareMessages.default`, `shareMessages.kakao`, etc.)
+- Forget start screen sharing messages
+
+✅ DO:
+- Add BOTH result and start screen sharing messages:
+  ```json
+  "shareMessages": {
+    "default": "Result message...",
+    "kakao": "Result message...",
+    "startDefault": "Start screen message...",
+    "startKakao": "Start screen message...",
+    "startWechat": "Start screen message...",
+    "startWhatsapp": "Start screen message...",
+    "startTelegram": "Start screen message...",
+    "startLine": "Start screen message..."
+  }
+  ```
+- Update all sharing functions to use start messages when `result` is null
+
+### 6. Result Screen Type Display Issues
+❌ DON'T:
+- Display only Type number (e.g., "Type 1", "Type 2")
+- Show Type without emoji and title
+
+✅ DO:
+- Display Type with emoji and localized title:
+  ```typescript
+  const matchTitle = matchResult.title[locale as keyof typeof matchResult.title] || matchResult.title.ko;
+  const matchEmoji = matchResult.emoji;
+  // Display: {matchEmoji} {matchTitle}
+  ```
+
+### 7. Question/Answer Shuffling Score Calculation
+❌ DON'T:
+- Store scores using shuffled question indices
+- Calculate results with shuffled order
+
+✅ DO:
+- Map shuffled questions to original indices: `originalQuestionIndices`
+- Store scores using original question indices: `answers[originalIndex] = score`
+- Reconstruct answers array in original order before calculation:
+  ```typescript
+  const answersArray = questions.map((_, idx) => answers[idx] ?? 0);
+  const resultType = calculateResult(answersArray);
+  ```
+
+### 8. Font Size and Alignment Issues
+❌ DON'T:
+- Use oversized fonts (e.g., `fontSize: '1.5em'`) for section data
+- Mix alignment styles inconsistently
+
+✅ DO:
+- Use normal font size for section data
+- Left-align section titles: `text-left`
+- Center-align section data: `justify-center` or `text-center`
+- Add emojis to section titles: `📊 공감 지수`, `⭐ 주요 특징`
+
+### 9. Characteristics Section Styling
+❌ DON'T:
+- Display characteristics as plain text
+- Ignore visual separation of multiple characteristics
+
+✅ DO:
+- Split characteristics by comma: `split(/[,、，]/)`
+- Display each characteristic in a rounded box:
+  ```typescript
+  {characteristics.split(/[,、，]/).map((char, idx) => (
+    <span key={idx} className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm">
+      {char.trim()}
+    </span>
+  ))}
+  ```
+
+### 10. Multilingual Translation Order
+❌ DON'T:
+- Try to translate all 7 languages at once
+- Start multilingual translation before Korean version is complete and tested
+
+✅ DO:
+- Complete Korean version first
+- Test functionality thoroughly with Korean version
+- Then translate to other languages one by one or in small batches
+- Verify each language works before moving to next
+
+### 11. SQL File Creation Checklist
+✅ DO create SQL file with:
+- [ ] Complete multilingual title (7 languages)
+- [ ] Complete multilingual description (7 languages)
+- [ ] Correct thumbnail filename
+- [ ] Correct type and category values
+- [ ] Complete multilingual tags (7 languages)
+- [ ] `ON CONFLICT` clause for updates
+- [ ] Test the SQL file before committing
+
+### 12. Component Development Checklist
+✅ DO verify:
+- [ ] Translation key paths are correct for namespace
+- [ ] All UI text uses translation keys
+- [ ] All sharing functions handle both result and start screen cases
+- [ ] Question shuffling preserves score calculation
+- [ ] Result display shows emoji and localized titles
+- [ ] Characteristics are properly styled and split
+- [ ] Font sizes and alignments are consistent
+- [ ] All 7 languages have complete translation keys
+- [ ] SQL file is created and ready to run

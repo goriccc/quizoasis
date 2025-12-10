@@ -1129,6 +1129,62 @@
       "kakaoError": "カカオトークシェア中にエラーが発生しました。"
     }
   },
+  "empathyFTest": {
+    "startMessage": {
+      "line1": "\"友達が落ち込んでいるとき、あなたの反応は？\"",
+      "line2": "A. \"どうして落ち込んでるの？何があったの？\" (解決策)",
+      "line3": "B. \"えー...大丈夫？すごく大変だったね...\" (共感)",
+      "line4": "あなたは頭で理解してから心が動くタイプですか、それとも心が先に反応するタイプですか？",
+      "line5": "些細な一言にも涙を流す「パワーF」から感情表現が下手な「不器用T」まで。あなたの共感知能(EQ)レベルを測定します。私のF指数を確認 💕"
+    },
+    "ui": {
+      "startTest": "F指数を確認",
+      "shareWithFriends": "友達と一緒に",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア (共感能力Fテスト)",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "empathyLevel": "共感指数",
+      "characteristics": "主な特徴",
+      "goodMatch": "理想の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の共感能力は{type}！💕 私だけ泣いてるんじゃないよね？Fたち集まれ 😭",
+      "kakao": "私の共感能力は{type}！💕 私だけ泣いてるんじゃないよね？Fたち集まれ 😭",
+      "wechat": "私の共感能力は{type}！💕 私だけ泣いてるんじゃないよね？Fたち集まれ 😭",
+      "whatsapp": "私の共感能力は{type}！💕 私だけ泣いてるんじゃないよね？Fたち集まれ 😭",
+      "telegram": "私の共感能力は{type}！💕 私だけ泣いてるんじゃないよね？Fたち集まれ 😭",
+      "line": "私の共感能力は{type}！💕 私だけ泣いてるんじゃないよね？Fたち集まれ 😭",
+      "startDefault": "共感能力Fテスト（簡易）💕 私のF指数を確認！",
+      "startKakao": "共感能力Fテスト（簡易）💕 私のF指数を確認！",
+      "startWechat": "共感能力Fテスト（簡易）💕 私のF指数を確認！",
+      "startWhatsapp": "共感能力Fテスト（簡易）💕 私のF指数を確認！",
+      "startTelegram": "共感能力Fテスト（簡易）💕 私のF指数を確認！",
+      "startLine": "共感能力Fテスト（簡易）💕 私のF指数を確認！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "「一人でも大丈夫 vs 誰かが必要」",

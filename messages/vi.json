@@ -1128,6 +1128,62 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
     }
   },
+  "empathyFTest": {
+    "startMessage": {
+      "line1": "\"Phản ứng của bạn khi bạn bè nói buồn là gì?\"",
+      "line2": "A. \"Sao buồn vậy? Có chuyện gì xảy ra?\" (Giải pháp)",
+      "line3": "B. \"Ồ không... Bạn ổn chứ? Chắc là rất khó khăn...\" (Đồng cảm)",
+      "line4": "Bạn cần hiểu bằng đầu trước khi trái tim lay động, hay trái tim phản ứng trước?",
+      "line5": "Từ 'Power F' khóc vì mọi lời nói nhỏ đến 'Clumsy T' vụng về trong biểu đạt cảm xúc. Chúng tôi đo lường mức độ trí tuệ đồng cảm (EQ) của bạn. Kiểm tra chỉ số F của tôi 💕"
+    },
+    "ui": {
+      "startTest": "Kiểm tra chỉ số F",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài kiểm tra F khả năng đồng cảm)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "empathyLevel": "Mức độ đồng cảm",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Khả năng đồng cảm của tôi là {type}! 💕 Có phải chỉ mình tôi đang khóc không? F's tập hợp lại 😭",
+      "kakao": "Khả năng đồng cảm của tôi là {type}! 💕 Có phải chỉ mình tôi đang khóc không? F's tập hợp lại 😭",
+      "wechat": "Khả năng đồng cảm của tôi là {type}! 💕 Có phải chỉ mình tôi đang khóc không? F's tập hợp lại 😭",
+      "whatsapp": "Khả năng đồng cảm của tôi là {type}! 💕 Có phải chỉ mình tôi đang khóc không? F's tập hợp lại 😭",
+      "telegram": "Khả năng đồng cảm của tôi là {type}! 💕 Có phải chỉ mình tôi đang khóc không? F's tập hợp lại 😭",
+      "line": "Khả năng đồng cảm của tôi là {type}! 💕 Có phải chỉ mình tôi đang khóc không? F's tập hợp lại 😭",
+      "startDefault": "Bài kiểm tra F khả năng đồng cảm (Đơn giản) 💕 Kiểm tra chỉ số F của tôi!",
+      "startKakao": "Bài kiểm tra F khả năng đồng cảm (Đơn giản) 💕 Kiểm tra chỉ số F của tôi!",
+      "startWechat": "Bài kiểm tra F khả năng đồng cảm (Đơn giản) 💕 Kiểm tra chỉ số F của tôi!",
+      "startWhatsapp": "Bài kiểm tra F khả năng đồng cảm (Đơn giản) 💕 Kiểm tra chỉ số F của tôi!",
+      "startTelegram": "Bài kiểm tra F khả năng đồng cảm (Đơn giản) 💕 Kiểm tra chỉ số F của tôi!",
+      "startLine": "Bài kiểm tra F khả năng đồng cảm (Đơn giản) 💕 Kiểm tra chỉ số F của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Ổn một mình vs Cần ai đó\"",

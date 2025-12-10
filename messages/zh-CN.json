@@ -1128,6 +1128,62 @@
       "kakaoError": "KakaoTalk分享时发生错误。"
     }
   },
+  "empathyFTest": {
+    "startMessage": {
+      "line1": "\"朋友说心情不好时你的反应是？\"",
+      "line2": "A. \"为什么心情不好？发生什么事了？\" (解决方案)",
+      "line3": "B. \"哎呀...你还好吗？一定很难受吧...\" (共情)",
+      "line4": "你是需要先理解才能感动，还是心会先反应？",
+      "line5": "从一句话就能流泪的「力量F」到情感表达笨拙的「笨拙T」。我们测量你的共情智能(EQ)水平。查看我的F指数 💕"
+    },
+    "ui": {
+      "startTest": "查看F指数",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域 (共情能力F测试)",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "empathyLevel": "共情指数",
+      "characteristics": "主要特征",
+      "goodMatch": "理想配对",
+      "badMatch": "最差配对"
+    },
+    "shareMessages": {
+      "default": "我的共情能力是{type}！💕 难道只有我在哭吗？F们集合 😭",
+      "kakao": "我的共情能力是{type}！💕 难道只有我在哭吗？F们集合 😭",
+      "wechat": "我的共情能力是{type}！💕 难道只有我在哭吗？F们集合 😭",
+      "whatsapp": "我的共情能力是{type}！💕 难道只有我在哭吗？F们集合 😭",
+      "telegram": "我的共情能力是{type}！💕 难道只有我在哭吗？F们集合 😭",
+      "line": "我的共情能力是{type}！💕 难道只有我在哭吗？F们集合 😭",
+      "startDefault": "共情能力F测试（简易）💕 查看我的F指数！",
+      "startKakao": "共情能力F测试（简易）💕 查看我的F指数！",
+      "startWechat": "共情能力F测试（简易）💕 查看我的F指数！",
+      "startWhatsapp": "共情能力F测试（简易）💕 查看我的F指数！",
+      "startTelegram": "共情能力F测试（简易）💕 查看我的F指数！",
+      "startLine": "共情能力F测试（简易）💕 查看我的F指数！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"独自也可以 vs 需要有人\"",
