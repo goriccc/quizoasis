@@ -33,13 +33,13 @@ INSERT INTO tests (
   'knowledge',
   'challenge',
   '{
-    "ko": ["지식", "챌린지"],
-    "en": ["Knowledge", "Challenge"],
-    "ja": ["知識", "チャレンジ"],
-    "zh-CN": ["知识", "挑战"],
-    "zh-TW": ["知識", "挑戰"],
-    "vi": ["Kiến thức", "Thử thách"],
-    "id": ["Pengetahuan", "Tantangan"]
+    "ko": ["지식", "심리"],
+    "en": ["Knowledge", "Psychology"],
+    "ja": ["知識", "心理"],
+    "zh-CN": ["知识", "心理"],
+    "zh-TW": ["知識", "心理"],
+    "vi": ["Kiến thức", "Tâm lý"],
+    "id": ["Pengetahuan", "Psikologi"]
   }',
   0,
   NOW(),
