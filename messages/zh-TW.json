@@ -390,6 +390,63 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
   },
+  "flirtingStyleTest": {
+    "startMessage": {
+      "line1": "\"等等...你現在是在撩我嗎？\"",
+      "line2": "你有沒有遇到過即使你只是靜靜地站著，周圍也會有異性被吸引，或者即使你下定決心接近，曖昧關係也會奇怪地破裂？",
+      "line3": "這可能是因為你自己都不知道的'調情技巧'。",
+      "line4": "你是用眼神一笑就能解除武裝的'狐狸'，還是裝作漠不關心卻默默照顧的'傲嬌'？",
+      "line5": "你吸引異性的致命武器是什麼？",
+      "line6": "診斷我的誘惑技能 💋 檢查我的無意識調情 🦊"
+    },
+    "ui": {
+      "startTest": "檢查調情風格",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（調情風格測試）",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "flirtingTechnique": "調情技巧",
+      "characteristics": "主要特徵",
+      "goodMatch": "完美匹配",
+      "badMatch": "最差匹配"
+    },
+    "shareMessages": {
+      "default": "我的無意識調情是{type}！💋 所有被我吸引的人都有原因...",
+      "kakao": "我的無意識調情是{type}！💋 所有被我吸引的人都有原因...",
+      "wechat": "我的無意識調情是{type}！💋 所有被我吸引的人都有原因...",
+      "whatsapp": "我的無意識調情是{type}！💋 所有被我吸引的人都有原因...",
+      "telegram": "我的無意識調情是{type}！💋 所有被我吸引的人都有原因...",
+      "line": "我的無意識調情是{type}！💋 所有被我吸引的人都有原因...",
+      "startDefault": "我的無意識調情風格（戀愛技能診斷）💋 診斷我的誘惑技能！",
+      "startKakao": "我的無意識調情風格（戀愛技能診斷）💋 診斷我的誘惑技能！",
+      "startWechat": "我的無意識調情風格（戀愛技能診斷）💋 診斷我的誘惑技能！",
+      "startWhatsapp": "我的無意識調情風格（戀愛技能診斷）💋 診斷我的誘惑技能！",
+      "startTelegram": "我的無意識調情風格（戀愛技能診斷）💋 診斷我的誘惑技能！",
+      "startLine": "我的無意識調情風格（戀愛技能診斷）💋 診斷我的誘惑技能！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "鏈接已複製！在微信中粘貼以分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "在KakaoTalk上分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"領導力深度診斷！你獨特的領導風格是什麼？\"",

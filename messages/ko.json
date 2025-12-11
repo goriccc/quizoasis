@@ -670,6 +670,122 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "flirtingStyleTest": {
+    "startMessage": {
+      "line1": "\"혹시... 너 지금 나 꼬시는 거야?\"",
+      "line2": "나는 가만히 있었는데 주변에 이성이 꼬이거나, 맘 먹고 다가가도 이상하게 썸이 깨진 적 있나요?",
+      "line3": "그건 당신도 모르는 당신만의 '플러팅 기술' 때문일 수 있습니다.",
+      "line4": "눈웃음 한 방으로 무장 해제시키는 '여우'인지, 무심한 척 챙겨주는 '츤데레'인지.",
+      "line5": "당신이 이성을 홀리는 치명적인 무기는 무엇일까요?",
+      "line6": "나의 유혹 스킬 진단하기 💋 무의식 플러팅 확인 🦊"
+    },
+    "ui": {
+      "startTest": "플러팅 스타일 확인하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (플러팅 스타일 테스트)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "flirtingTechnique": "플러팅 기술",
+      "characteristics": "주요 특징",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍"
+    },
+    "shareMessages": {
+      "default": "내 무의식 플러팅은 {type}! 💋 나한테 넘어온 사람 다 이유가 있었네...",
+      "kakao": "내 무의식 플러팅은 {type}! 💋 나한테 넘어온 사람 다 이유가 있었네...",
+      "wechat": "내 무의식 플러팅은 {type}! 💋 나한테 넘어온 사람 다 이유가 있었네...",
+      "whatsapp": "내 무의식 플러팅은 {type}! 💋 나한테 넘어온 사람 다 이유가 있었네...",
+      "telegram": "내 무의식 플러팅은 {type}! 💋 나한테 넘어온 사람 다 이유가 있었네...",
+      "line": "내 무의식 플러팅은 {type}! 💋 나한테 넘어온 사람 다 이유가 있었네...",
+      "startDefault": "나의 무의식 플러팅 스타일 (연애 기술 진단) 💋 나의 유혹 스킬 진단하기!",
+      "startKakao": "나의 무의식 플러팅 스타일 (연애 기술 진단) 💋 나의 유혹 스킬 진단하기!",
+      "startWechat": "나의 무의식 플러팅 스타일 (연애 기술 진단) 💋 나의 유혹 스킬 진단하기!",
+      "startWhatsapp": "나의 무의식 플러팅 스타일 (연애 기술 진단) 💋 나의 유혹 스킬 진단하기!",
+      "startTelegram": "나의 무의식 플러팅 스타일 (연애 기술 진단) 💋 나의 유혹 스킬 진단하기!",
+      "startLine": "나의 무의식 플러팅 스타일 (연애 기술 진단) 💋 나의 유혹 스킬 진단하기!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
+  "leadershipStyleTest": {
+    "startMessage": {
+      "line1": "\"당신은 어떤 리더인가요? 혹은 어떤 리더가 될까요?\"",
+      "line2": "모든 조직에는 리더가 필요합니다.",
+      "line3": "하지만 훌륭한 리더의 모습이 단 하나인 것은 아닙니다.",
+      "line4": "앞장서서 이끄는 카리스마형 리더부터 뒤에서 묵묵히 밀어주는 서번트형 리더까지.",
+      "line5": "나의 성향과 업무 스타일을 분석해 당신에게 가장 잘 어울리는 '최적의 리더십'을 찾아드립니다.",
+      "line6": "나의 리더십 DNA 확인하기 🧬 커리어 성향 진단 💼"
+    },
+    "ui": {
+      "startTest": "리더십 스타일 확인하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (리더십 스타일 테스트)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "leadershipStyle": "리더십 스타일",
+      "strengths": "강점",
+      "weaknesses": "주의할 점",
+      "characteristics": "주요 특징",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍"
+    },
+    "shareMessages": {
+      "default": "내 리더십 스타일은 {type}! 🦁 나중에 내가 팀장이 된다면?",
+      "kakao": "내 리더십 스타일은 {type}! 🦁 나중에 내가 팀장이 된다면?",
+      "wechat": "내 리더십 스타일은 {type}! 🦁 나중에 내가 팀장이 된다면?",
+      "whatsapp": "내 리더십 스타일은 {type}! 🦁 나중에 내가 팀장이 된다면?",
+      "telegram": "내 리더십 스타일은 {type}! 🦁 나중에 내가 팀장이 된다면?",
+      "line": "내 리더십 스타일은 {type}! 🦁 나중에 내가 팀장이 된다면?",
+      "startDefault": "나의 '리더십' 스타일 테스트 🦁 나의 리더십 DNA 확인하기!",
+      "startKakao": "나의 '리더십' 스타일 테스트 🦁 나의 리더십 DNA 확인하기!",
+      "startWechat": "나의 '리더십' 스타일 테스트 🦁 나의 리더십 DNA 확인하기!",
+      "startWhatsapp": "나의 '리더십' 스타일 테스트 🦁 나의 리더십 DNA 확인하기!",
+      "startTelegram": "나의 '리더십' 스타일 테스트 🦁 나의 리더십 DNA 확인하기!",
+      "startLine": "나의 '리더십' 스타일 테스트 🦁 나의 리더십 DNA 확인하기!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"리더십 심화 진단! 당신만의 리더십 스타일은?\"",

@@ -390,6 +390,63 @@
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài test Phổ biến"
     }
   },
+  "flirtingStyleTest": {
+    "startMessage": {
+      "line1": "\"Đợi đã... bạn đang tán tỉnh tôi à?\"",
+      "line2": "Bạn có bao giờ gặp trường hợp người khác giới bị thu hút dù bạn chỉ đứng yên, hoặc mối quan hệ mơ hồ bị tan vỡ một cách kỳ lạ dù bạn đã cố gắng tiếp cận?",
+      "line3": "Có thể là do 'kỹ thuật tán tỉnh' của chính bạn mà bạn không hề biết.",
+      "line4": "Bạn là 'cáo' giải giáp bằng một nụ cười mắt, hay 'tsundere' tỏ ra thờ ơ nhưng lại chăm sóc?",
+      "line5": "Vũ khí chết người của bạn để thu hút người khác giới là gì?",
+      "line6": "Chẩn đoán kỹ năng quyến rũ của tôi 💋 Kiểm tra sự tán tỉnh vô thức của tôi 🦊"
+    },
+    "ui": {
+      "startTest": "Kiểm tra phong cách tán tỉnh",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài test Phong cách Tán tỉnh)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự khác",
+      "flirtingTechnique": "Kỹ thuật tán tỉnh",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tồi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Sự tán tỉnh vô thức của tôi là {type}! 💋 Tất cả những người bị tôi thu hút đều có lý do...",
+      "kakao": "Sự tán tỉnh vô thức của tôi là {type}! 💋 Tất cả những người bị tôi thu hút đều có lý do...",
+      "wechat": "Sự tán tỉnh vô thức của tôi là {type}! 💋 Tất cả những người bị tôi thu hút đều có lý do...",
+      "whatsapp": "Sự tán tỉnh vô thức của tôi là {type}! 💋 Tất cả những người bị tôi thu hút đều có lý do...",
+      "telegram": "Sự tán tỉnh vô thức của tôi là {type}! 💋 Tất cả những người bị tôi thu hút đều có lý do...",
+      "line": "Sự tán tỉnh vô thức của tôi là {type}! 💋 Tất cả những người bị tôi thu hút đều có lý do...",
+      "startDefault": "Phong cách Tán tỉnh Vô thức của tôi (Chẩn đoán Kỹ năng Hẹn hò) 💋 Chẩn đoán kỹ năng quyến rũ của tôi!",
+      "startKakao": "Phong cách Tán tỉnh Vô thức của tôi (Chẩn đoán Kỹ năng Hẹn hò) 💋 Chẩn đoán kỹ năng quyến rũ của tôi!",
+      "startWechat": "Phong cách Tán tỉnh Vô thức của tôi (Chẩn đoán Kỹ năng Hẹn hò) 💋 Chẩn đoán kỹ năng quyến rũ của tôi!",
+      "startWhatsapp": "Phong cách Tán tỉnh Vô thức của tôi (Chẩn đoán Kỹ năng Hẹn hò) 💋 Chẩn đoán kỹ năng quyến rũ của tôi!",
+      "startTelegram": "Phong cách Tán tỉnh Vô thức của tôi (Chẩn đoán Kỹ năng Hẹn hò) 💋 Chẩn đoán kỹ năng quyến rũ của tôi!",
+      "startLine": "Phong cách Tán tỉnh Vô thức của tôi (Chẩn đoán Kỹ năng Hẹn hò) 💋 Chẩn đoán kỹ năng quyến rũ của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài test Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài test Phổ biến"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"Chẩn đoán sâu về khả năng lãnh đạo! Phong cách lãnh đạo độc đáo của bạn là gì?\"",

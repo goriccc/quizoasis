@@ -28,6 +28,8 @@ import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
+import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
+import { leadershipStyleQuestions, leadershipStyleResults } from '@/lib/leadershipStyleData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { timePerspectiveQuestions, timePerspectiveResults } from '@/lib/timePerspectiveData';
 import { defenseMechanismQuestions, defenseMechanismResults } from '@/lib/defenseMechanismData';
@@ -125,6 +127,12 @@ const ConflictStyleTestClient = dynamic(() => import('@/components/ConflictStyle
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const ConversationStyleTestClient = dynamic(() => import('@/components/ConversationStyleTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const FlirtingStyleTestClient = dynamic(() => import('@/components/FlirtingStyleTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const LeadershipStyleTestClient = dynamic(() => import('@/components/LeadershipStyleTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TimePerspectiveTestClient = dynamic(() => import('@/components/TimePerspectiveTestClient'), {
@@ -1661,6 +1669,116 @@ export default async function TestPage({ params }: Props) {
           questions={conversationStyleQuestions}
           results={conversationStyleResults}
           questionCount={conversationStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count || 0}
+          similarTests={[]}
+        />
+      </>
+    );
+  }
+
+  // 나의 무의식 플러팅 스타일 테스트
+  if (slug === 'flirting-style-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'flirting-style-test',
+      title: {
+        ko: '나의 무의식 플러팅 스타일 (연애 기술 진단)',
+        en: 'My Unconscious Flirting Style (Dating Skill Diagnosis)',
+        ja: '私の無意識フリートスタイル（恋愛スキル診断）',
+        'zh-CN': '我的无意识调情风格（恋爱技能诊断）',
+        'zh-TW': '我的無意識調情風格（戀愛技能診斷）',
+        vi: 'Phong cách Tán tỉnh Vô thức của tôi (Chẩn đoán Kỹ năng Hẹn hò)',
+        id: 'Gaya Flirting Bawah Sadar Saya (Diagnosis Keterampilan Kencan)'
+      },
+      description: {
+        ko: '혹시... 너 지금 나 꼬시는 거야?',
+        en: 'Wait... are you flirting with me?',
+        ja: 'もしかして...今、私を口説いてるの？',
+        'zh-CN': '等等...你现在是在撩我吗？',
+        'zh-TW': '等等...你現在是在撩我嗎？',
+        vi: 'Đợi đã... bạn đang tán tỉnh tôi à?',
+        id: 'Tunggu... apakah kamu sedang menggoda saya?'
+      },
+      thumbnail: 'phase2_test_141_flirting_style.jpg',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: ['Romance', 'Psychology'],
+        ja: ['恋愛', '心理'],
+        'zh-CN': ['恋爱', '心理'],
+        'zh-TW': ['戀愛', '心理'],
+        vi: ['Tình yêu', 'Tâm lý'],
+        id: ['Romantis', 'Psikologi']
+      }
+    };
+
+    return (
+      <>
+        <FlirtingStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={flirtingStyleQuestions}
+          results={flirtingStyleResults}
+          questionCount={flirtingStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count || 0}
+          similarTests={[]}
+        />
+      </>
+    );
+  }
+
+  // 나의 '리더십' 스타일 테스트
+  if (slug === 'leadership-style-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'leadership-style-test',
+      title: {
+        ko: '나의 \'리더십\' 스타일 테스트',
+        en: '', // To be translated
+        ja: '', // To be translated
+        'zh-CN': '', // To be translated
+        'zh-TW': '', // To be translated
+        vi: '', // To be translated
+        id: '' // To be translated
+      },
+      description: {
+        ko: '당신은 어떤 리더인가요? 혹은 어떤 리더가 될까요?',
+        en: '', // To be translated
+        ja: '', // To be translated
+        'zh-CN': '', // To be translated
+        'zh-TW': '', // To be translated
+        vi: '', // To be translated
+        id: '' // To be translated
+      },
+      thumbnail: 'phase2_test_149_leadership_style.jpg',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['자아탐색', '진로'],
+        en: [], // To be translated
+        ja: [], // To be translated
+        'zh-CN': [], // To be translated
+        'zh-TW': [], // To be translated
+        vi: [], // To be translated
+        id: [] // To be translated
+      }
+    };
+
+    return (
+      <>
+        <LeadershipStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={leadershipStyleQuestions}
+          results={leadershipStyleResults}
+          questionCount={leadershipStyleQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count || 0}
           similarTests={[]}
@@ -3632,6 +3750,11 @@ export default async function TestPage({ params }: Props) {
       questions: conversationStyleQuestions,
       results: conversationStyleResults
     };
+  } else if (slug === 'flirting-style-test') {
+    testData = {
+      questions: flirtingStyleQuestions,
+      results: flirtingStyleResults
+    };
   } else if (slug === 'time-perspective-test') {
     testData = {
       questions: timePerspectiveQuestions,
@@ -3817,6 +3940,8 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'conflict-style-test') TestClient = ConflictStyleTestClient;
     else if (slug === 'conversation-style-test') TestClient = ConversationStyleTestClient;
+    else if (slug === 'flirting-style-test') TestClient = FlirtingStyleTestClient;
+    else if (slug === 'leadership-style-test') TestClient = LeadershipStyleTestClient;
     else if (slug === 'time-perspective-test') TestClient = TimePerspectiveTestClient;
     else if (slug === 'love-language-test') TestClient = LoveLanguageTestClient;
     else if (slug === 'defense-mechanism-test') TestClient = DefenseMechanismTestClient;

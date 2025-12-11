@@ -396,6 +396,63 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests Recommendations"
     }
   },
+  "flirtingStyleTest": {
+    "startMessage": {
+      "line1": "\"Wait... are you flirting with me?\"",
+      "line2": "Have you ever had people attracted to you even when you were just standing still, or had a crush fall apart strangely even when you tried to approach them?",
+      "line3": "It might be because of your own 'flirting technique' that you don't even know about.",
+      "line4": "Are you a 'fox' who disarms with one eye smile, or a 'tsundere' who acts indifferent but takes care of things?",
+      "line5": "What is your fatal weapon for captivating the opposite sex?",
+      "line6": "Diagnose my seduction skills 💋 Check my unconscious flirting 🦊"
+    },
+    "ui": {
+      "startTest": "Check Flirting Style",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Flirting Style Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "flirtingTechnique": "Flirting Technique",
+      "characteristics": "Key Features",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My unconscious flirting is {type}! 💋 There was a reason everyone fell for me...",
+      "kakao": "My unconscious flirting is {type}! 💋 There was a reason everyone fell for me...",
+      "wechat": "My unconscious flirting is {type}! 💋 There was a reason everyone fell for me...",
+      "whatsapp": "My unconscious flirting is {type}! 💋 There was a reason everyone fell for me...",
+      "telegram": "My unconscious flirting is {type}! 💋 There was a reason everyone fell for me...",
+      "line": "My unconscious flirting is {type}! 💋 There was a reason everyone fell for me...",
+      "startDefault": "My Unconscious Flirting Style (Dating Skill Diagnosis) 💋 Diagnose my seduction skills!",
+      "startKakao": "My Unconscious Flirting Style (Dating Skill Diagnosis) 💋 Diagnose my seduction skills!",
+      "startWechat": "My Unconscious Flirting Style (Dating Skill Diagnosis) 💋 Diagnose my seduction skills!",
+      "startWhatsapp": "My Unconscious Flirting Style (Dating Skill Diagnosis) 💋 Diagnose my seduction skills!",
+      "startTelegram": "My Unconscious Flirting Style (Dating Skill Diagnosis) 💋 Diagnose my seduction skills!",
+      "startLine": "My Unconscious Flirting Style (Dating Skill Diagnosis) 💋 Diagnose my seduction skills!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is unavailable.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Other Tests Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Recommendations"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"Leadership in-depth diagnosis! What is your unique leadership style?\"",

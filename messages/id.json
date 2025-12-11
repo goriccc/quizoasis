@@ -390,6 +390,63 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
     }
   },
+  "flirtingStyleTest": {
+    "startMessage": {
+      "line1": "\"Tunggu... apakah kamu sedang menggoda saya?\"",
+      "line2": "Pernahkah Anda mengalami orang lain tertarik pada Anda bahkan ketika Anda hanya berdiri diam, atau hubungan samar-samar hancur dengan aneh meskipun Anda mencoba mendekati?",
+      "line3": "Mungkin karena 'teknik flirting' Anda sendiri yang bahkan tidak Anda ketahui.",
+      "line4": "Apakah Anda 'rubah' yang melucuti senjata dengan satu senyuman mata, atau 'tsundere' yang bertindak acuh tak acuh tapi merawat?",
+      "line5": "Apa senjata mematikan Anda untuk memikat lawan jenis?",
+      "line6": "Diagnosis keterampilan godaan saya 💋 Periksa flirting bawah sadar saya 🦊"
+    },
+    "ui": {
+      "startTest": "Periksa Gaya Flirting",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Gaya Flirting)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "flirtingTechnique": "Teknik Flirting",
+      "characteristics": "Fitur Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Flirting bawah sadar saya adalah {type}! 💋 Ada alasan semua orang tertarik pada saya...",
+      "kakao": "Flirting bawah sadar saya adalah {type}! 💋 Ada alasan semua orang tertarik pada saya...",
+      "wechat": "Flirting bawah sadar saya adalah {type}! 💋 Ada alasan semua orang tertarik pada saya...",
+      "whatsapp": "Flirting bawah sadar saya adalah {type}! 💋 Ada alasan semua orang tertarik pada saya...",
+      "telegram": "Flirting bawah sadar saya adalah {type}! 💋 Ada alasan semua orang tertarik pada saya...",
+      "line": "Flirting bawah sadar saya adalah {type}! 💋 Ada alasan semua orang tertarik pada saya...",
+      "startDefault": "Gaya Flirting Bawah Sadar Saya (Diagnosis Keterampilan Kencan) 💋 Diagnosis keterampilan godaan saya!",
+      "startKakao": "Gaya Flirting Bawah Sadar Saya (Diagnosis Keterampilan Kencan) 💋 Diagnosis keterampilan godaan saya!",
+      "startWechat": "Gaya Flirting Bawah Sadar Saya (Diagnosis Keterampilan Kencan) 💋 Diagnosis keterampilan godaan saya!",
+      "startWhatsapp": "Gaya Flirting Bawah Sadar Saya (Diagnosis Keterampilan Kencan) 💋 Diagnosis keterampilan godaan saya!",
+      "startTelegram": "Gaya Flirting Bawah Sadar Saya (Diagnosis Keterampilan Kencan) 💋 Diagnosis keterampilan godaan saya!",
+      "startLine": "Gaya Flirting Bawah Sadar Saya (Diagnosis Keterampilan Kencan) 💋 Diagnosis keterampilan godaan saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"Diagnosis mendalam kepemimpinan! Apa gaya kepemimpinan unik Anda?\"",
