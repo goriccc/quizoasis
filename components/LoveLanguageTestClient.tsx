@@ -43,7 +43,7 @@ export default function LoveLanguageTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: EmpathyFTestClientProps) {
+}: LoveLanguageTestClientProps) {
   const t = useTranslations('loveLanguageTest');
   const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
   const [started, setStarted] = useState(false);
