@@ -28,6 +28,7 @@ import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { timePerspectiveQuestions, timePerspectiveResults } from '@/lib/timePerspectiveData';
+import { defenseMechanismQuestions, defenseMechanismResults } from '@/lib/defenseMechanismData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
 import { honestyVsRestraintQuestions, honestyVsRestraintResults } from '@/lib/honestyVsRestraintData';
@@ -118,6 +119,9 @@ const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TimePerspectiveTestClient = dynamic(() => import('@/components/TimePerspectiveTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const DefenseMechanismTestClient = dynamic(() => import('@/components/DefenseMechanismTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
@@ -1591,6 +1595,59 @@ export default async function TestPage({ params }: Props) {
           questions={timePerspectiveQuestions}
           results={timePerspectiveResults}
           questionCount={timePerspectiveQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 나를 지키는 '방어기제' 테스트
+  if (slug === 'defense-mechanism-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'defense-mechanism-test',
+      title: {
+        ko: '나를 지키는 \'방어기제\' 테스트',
+        en: 'Defense Mechanism Test',
+        ja: '防衛機制テスト',
+        'zh-CN': '防御机制测试',
+        'zh-TW': '防禦機制測試',
+        vi: 'Bài kiểm tra Cơ chế Phòng vệ',
+        id: 'Tes Mekanisme Pertahanan'
+      },
+      description: {
+        ko: '힘들 때, 당신의 마음은 어떻게 반응하나요?',
+        en: 'How does your mind react when things are difficult?',
+        ja: '困難な時、あなたの心はどう反応しますか？',
+        'zh-CN': '困难时，你的心如何反应？',
+        'zh-TW': '困難時，你的心如何反應？',
+        vi: 'Khi khó khăn, tâm trí bạn phản ứng như thế nào?',
+        id: 'Bagaimana pikiran Anda bereaksi saat sulit?'
+      },
+      thumbnail: 'phase2_test_134_defense_mechanism.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: ['Psychology', 'Personality'],
+        ja: ['心理', '性格'],
+        'zh-CN': ['心理', '性格'],
+        'zh-TW': ['心理', '性格'],
+        vi: ['Tâm lý', 'Tính cách'],
+        id: ['Psikologi', 'Kepribadian']
+      }
+    };
+    return (
+      <>
+        <DefenseMechanismTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={defenseMechanismQuestions}
+          results={defenseMechanismResults}
+          questionCount={defenseMechanismQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3397,6 +3454,11 @@ export default async function TestPage({ params }: Props) {
       questions: timePerspectiveQuestions,
       results: timePerspectiveResults
     };
+  } else if (slug === 'defense-mechanism-test') {
+    testData = {
+      questions: defenseMechanismQuestions,
+      results: defenseMechanismResults
+    };
   } else if (slug === 'life-priorities-test') {
     testData = {
       questions: lifePrioritiesQuestions,
@@ -3566,6 +3628,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'time-perspective-test') TestClient = TimePerspectiveTestClient;
+    else if (slug === 'defense-mechanism-test') TestClient = DefenseMechanismTestClient;
     else if (slug === 'life-priorities-test') TestClient = LifePrioritiesTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
     else if (slug === 'honesty-vs-consideration-test') TestClient = HonestyTestClient;

@@ -3115,5 +3115,61 @@
       "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "defenseMechanismTest": {
+    "startMessage": {
+      "line1": "\"困難な時、あなたの心はどう反応しますか？\"",
+      "line2": "私たちは誰もが傷つかないように無意識に心の盾を使います。",
+      "line3": "もっともらしい言い訳をしたり、記憶を消したり、他人のせいにしたりします。",
+      "line4": "自分も知らなかった無意識の習慣。あなたを守っている「防衛機制」の正体をお伝えします。",
+      "line5": "私の心理的盾を確認する 🛡️ 無意識診断開始 🧠"
+    },
+    "ui": {
+      "startTest": "心理的盾を確認する",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（防衛機制テスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "defenseMechanism": "防衛機制",
+      "characteristics": "主な特徴",
+      "goodMatch": "完璧な相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私を守る無意識の盾は{type}！🛡️ 困難な時、私の心はどう反応する？",
+      "kakao": "私を守る無意識の盾は{type}！🛡️ 困難な時、私の心はどう反応する？",
+      "wechat": "私を守る無意識の盾は{type}！🛡️ 困難な時、私の心はどう反応する？",
+      "whatsapp": "私を守る無意識の盾は{type}！🛡️ 困難な時、私の心はどう反応する？",
+      "telegram": "私を守る無意識の盾は{type}！🛡️ 困難な時、私の心はどう反応する？",
+      "line": "私を守る無意識の盾は{type}！🛡️ 困難な時、私の心はどう反応する？",
+      "startDefault": "防衛機制テスト 🛡️ 私の心理的盾を確認する！",
+      "startKakao": "防衛機制テスト 🛡️ 私の心理的盾を確認する！",
+      "startWechat": "防衛機制テスト 🛡️ 私の心理的盾を確認する！",
+      "startWhatsapp": "防衛機制テスト 🛡️ 私の心理的盾を確認する！",
+      "startTelegram": "防衛機制テスト 🛡️ 私の心理的盾を確認する！",
+      "startLine": "防衛機制テスト 🛡️ 私の心理的盾を確認する！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

@@ -3127,5 +3127,61 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "defenseMechanismTest": {
+    "startMessage": {
+      "line1": "\"Bagaimana pikiran Anda bereaksi saat sulit?\"",
+      "line2": "Kita semua secara tidak sadar menggunakan perisai mental untuk menghindari terluka.",
+      "line3": "Kita membuat alasan yang masuk akal, menghapus ingatan, atau menyalahkan orang lain.",
+      "line4": "Kebiasaan tidak sadar yang tidak Anda ketahui. Kami akan mengungkap identitas 'mekanisme pertahanan' yang melindungi Anda.",
+      "line5": "Periksa perisai psikologis saya 🛡️ Mulai diagnosis tidak sadar 🧠"
+    },
+    "ui": {
+      "startTest": "Periksa Perisai Psikologis",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Mekanisme Pertahanan)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "defenseMechanism": "Mekanisme Pertahanan",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Kecocokan Sempurna",
+      "badMatch": "Kecocokan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Perisai tidak sadar yang melindungi saya adalah {type}! 🛡️ Bagaimana pikiran saya bereaksi saat sulit?",
+      "kakao": "Perisai tidak sadar yang melindungi saya adalah {type}! 🛡️ Bagaimana pikiran saya bereaksi saat sulit?",
+      "wechat": "Perisai tidak sadar yang melindungi saya adalah {type}! 🛡️ Bagaimana pikiran saya bereaksi saat sulit?",
+      "whatsapp": "Perisai tidak sadar yang melindungi saya adalah {type}! 🛡️ Bagaimana pikiran saya bereaksi saat sulit?",
+      "telegram": "Perisai tidak sadar yang melindungi saya adalah {type}! 🛡️ Bagaimana pikiran saya bereaksi saat sulit?",
+      "line": "Perisai tidak sadar yang melindungi saya adalah {type}! 🛡️ Bagaimana pikiran saya bereaksi saat sulit?",
+      "startDefault": "Tes Mekanisme Pertahanan 🛡️ Periksa perisai psikologis saya!",
+      "startKakao": "Tes Mekanisme Pertahanan 🛡️ Periksa perisai psikologis saya!",
+      "startWechat": "Tes Mekanisme Pertahanan 🛡️ Periksa perisai psikologis saya!",
+      "startWhatsapp": "Tes Mekanisme Pertahanan 🛡️ Periksa perisai psikologis saya!",
+      "startTelegram": "Tes Mekanisme Pertahanan 🛡️ Periksa perisai psikologis saya!",
+      "startLine": "Tes Mekanisme Pertahanan 🛡️ Periksa perisai psikologis saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

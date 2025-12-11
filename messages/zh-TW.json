@@ -3134,5 +3134,61 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "defenseMechanismTest": {
+    "startMessage": {
+      "line1": "\"困難時，你的心如何反應？\"",
+      "line2": "我們都會無意識地使用心理盾牌來避免受傷。",
+      "line3": "我們會找看似合理的藉口，刪除記憶，或責怪他人。",
+      "line4": "你都不知道的無意識習慣。我們將揭示保護你的「防禦機制」的真面目。",
+      "line5": "檢查我的心理盾牌 🛡️ 開始無意識診斷 🧠"
+    },
+    "ui": {
+      "startTest": "檢查心理盾牌",
+      "shareWithFriends": "與朋友一起嘗試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（防禦機制測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "defenseMechanism": "防禦機制",
+      "characteristics": "主要特徵",
+      "goodMatch": "完美匹配",
+      "badMatch": "最差匹配"
+    },
+    "shareMessages": {
+      "default": "保護我的無意識盾牌是{type}！🛡️ 困難時，我的心如何反應？",
+      "kakao": "保護我的無意識盾牌是{type}！🛡️ 困難時，我的心如何反應？",
+      "wechat": "保護我的無意識盾牌是{type}！🛡️ 困難時，我的心如何反應？",
+      "whatsapp": "保護我的無意識盾牌是{type}！🛡️ 困難時，我的心如何反應？",
+      "telegram": "保護我的無意識盾牌是{type}！🛡️ 困難時，我的心如何反應？",
+      "line": "保護我的無意識盾牌是{type}！🛡️ 困難時，我的心如何反應？",
+      "startDefault": "防禦機制測試 🛡️ 檢查我的心理盾牌！",
+      "startKakao": "防禦機制測試 🛡️ 檢查我的心理盾牌！",
+      "startWechat": "防禦機制測試 🛡️ 檢查我的心理盾牌！",
+      "startWhatsapp": "防禦機制測試 🛡️ 檢查我的心理盾牌！",
+      "startTelegram": "防禦機制測試 🛡️ 檢查我的心理盾牌！",
+      "startLine": "防禦機制測試 🛡️ 檢查我的心理盾牌！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在WeChat中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }

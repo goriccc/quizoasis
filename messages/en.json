@@ -3289,5 +3289,61 @@
       "similarTestsTop5": "🎯 Top 5 Similar Other Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
+  },
+  "defenseMechanismTest": {
+    "startMessage": {
+      "line1": "\"How does your mind react when things are difficult?\"",
+      "line2": "We all unconsciously use mental shields to avoid getting hurt.",
+      "line3": "We make plausible excuses, erase memories, or blame others.",
+      "line4": "The unconscious habits you didn't know about. We'll reveal the identity of the 'defense mechanism' protecting you.",
+      "line5": "Check my psychological shield 🛡️ Start unconscious diagnosis 🧠"
+    },
+    "ui": {
+      "startTest": "Check Psychological Shield",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Results",
+      "retakeTest": "Retake Test",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Defense Mechanism Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "defenseMechanism": "Defense Mechanism",
+      "characteristics": "Key Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My unconscious shield is {type}! 🛡️ How does my mind react when things are difficult?",
+      "kakao": "My unconscious shield is {type}! 🛡️ How does my mind react when things are difficult?",
+      "wechat": "My unconscious shield is {type}! 🛡️ How does my mind react when things are difficult?",
+      "whatsapp": "My unconscious shield is {type}! 🛡️ How does my mind react when things are difficult?",
+      "telegram": "My unconscious shield is {type}! 🛡️ How does my mind react when things are difficult?",
+      "line": "My unconscious shield is {type}! 🛡️ How does my mind react when things are difficult?",
+      "startDefault": "Defense Mechanism Test 🛡️ Check my psychological shield!",
+      "startKakao": "Defense Mechanism Test 🛡️ Check my psychological shield!",
+      "startWechat": "Defense Mechanism Test 🛡️ Check my psychological shield!",
+      "startWhatsapp": "Defense Mechanism Test 🛡️ Check my psychological shield!",
+      "startTelegram": "Defense Mechanism Test 🛡️ Check my psychological shield!",
+      "startLine": "Defense Mechanism Test 🛡️ Check my psychological shield!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Other Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
   }
 }

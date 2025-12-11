@@ -896,7 +896,10 @@ export function calculateEmpathyFResult(answers: number[]): string {
     return "Type4";
   } else if (totalScore >= 10 && totalScore <= 11) {
     return "Type5";
+  } else if (totalScore === 12) {
+    return "Type6";
   } else {
+    // Fallback for any unexpected scores (should not happen with 12 questions)
     return "Type6";
   }
 }

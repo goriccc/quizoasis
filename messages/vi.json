@@ -3127,5 +3127,61 @@
       "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "defenseMechanismTest": {
+    "startMessage": {
+      "line1": "\"Khi khó khăn, tâm trí bạn phản ứng như thế nào?\"",
+      "line2": "Tất cả chúng ta đều vô thức sử dụng lá chắn tinh thần để tránh bị tổn thương.",
+      "line3": "Chúng ta đưa ra những lý do hợp lý, xóa ký ức, hoặc đổ lỗi cho người khác.",
+      "line4": "Thói quen vô thức mà bạn không biết. Chúng tôi sẽ tiết lộ bản chất của 'cơ chế phòng vệ' đang bảo vệ bạn.",
+      "line5": "Kiểm tra lá chắn tâm lý của tôi 🛡️ Bắt đầu chẩn đoán vô thức 🧠"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Lá chắn Tâm lý",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại Bài kiểm tra",
+      "otherTests": "Xem Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Bài kiểm tra Cơ chế Phòng vệ)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra Tương tự Khác",
+      "defenseMechanism": "Cơ chế Phòng vệ",
+      "characteristics": "Đặc điểm Chính",
+      "goodMatch": "Kết hợp Hoàn hảo",
+      "badMatch": "Kết hợp Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Lá chắn vô thức bảo vệ tôi là {type}! 🛡️ Khi khó khăn, tâm trí tôi phản ứng như thế nào?",
+      "kakao": "Lá chắn vô thức bảo vệ tôi là {type}! 🛡️ Khi khó khăn, tâm trí tôi phản ứng như thế nào?",
+      "wechat": "Lá chắn vô thức bảo vệ tôi là {type}! 🛡️ Khi khó khăn, tâm trí tôi phản ứng như thế nào?",
+      "whatsapp": "Lá chắn vô thức bảo vệ tôi là {type}! 🛡️ Khi khó khăn, tâm trí tôi phản ứng như thế nào?",
+      "telegram": "Lá chắn vô thức bảo vệ tôi là {type}! 🛡️ Khi khó khăn, tâm trí tôi phản ứng như thế nào?",
+      "line": "Lá chắn vô thức bảo vệ tôi là {type}! 🛡️ Khi khó khăn, tâm trí tôi phản ứng như thế nào?",
+      "startDefault": "Bài kiểm tra Cơ chế Phòng vệ 🛡️ Kiểm tra lá chắn tâm lý của tôi!",
+      "startKakao": "Bài kiểm tra Cơ chế Phòng vệ 🛡️ Kiểm tra lá chắn tâm lý của tôi!",
+      "startWechat": "Bài kiểm tra Cơ chế Phòng vệ 🛡️ Kiểm tra lá chắn tâm lý của tôi!",
+      "startWhatsapp": "Bài kiểm tra Cơ chế Phòng vệ 🛡️ Kiểm tra lá chắn tâm lý của tôi!",
+      "startTelegram": "Bài kiểm tra Cơ chế Phòng vệ 🛡️ Kiểm tra lá chắn tâm lý của tôi!",
+      "startLine": "Bài kiểm tra Cơ chế Phòng vệ 🛡️ Kiểm tra lá chắn tâm lý của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }
