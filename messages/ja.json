@@ -1185,6 +1185,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "conflictStyleTest": {
+    "startMessage": {
+      "line1": "「喧嘩、避けられないならどうしますか？」",
+      "line2": "恋人、友達、同僚との葛藤状況。誰かはその場で決着をつけなければならず、誰かは洞窟に隠れてしまいます。",
+      "line3": "喧嘩の仕方を見ると、その人の性格が見えます。",
+      "line4": "無条件に我慢するのが最善でしょうか？それとも勝つことが重要でしょうか？",
+      "line5": "あなたの葛藤対処法を分析し、より健康的な関係のためのソリューションを提供します。\n私の喧嘩スタイルを確認 🥊 葛藤解決タイプ診断 🕊️"
+    },
+    "ui": {
+      "startTest": "喧嘩スタイル確認",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（葛藤解決スタイルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "characteristics": "主な特徴",
+      "goodMatch": "理想の相棒",
+      "badMatch": "最悪の相棒"
+    },
+    "shareMessages": {
+      "default": "私の葛藤解決タイプは{type}！🥊 喧嘩するとき、私は逃げるか、立ち向かうか？",
+      "kakao": "私の葛藤解決タイプは{type}！🥊 喧嘩するとき、私は逃げるか、立ち向かうか？",
+      "wechat": "私の葛藤解決タイプは{type}！🥊 喧嘩するとき、私は逃げるか、立ち向かうか？",
+      "whatsapp": "私の葛藤解決タイプは{type}！🥊 喧嘩するとき、私は逃げるか、立ち向かうか？",
+      "telegram": "私の葛藤解決タイプは{type}！🥊 喧嘩するとき、私は逃げるか、立ち向かうか？",
+      "line": "私の葛藤解決タイプは{type}！🥊 喧嘩するとき、私は逃げるか、立ち向かうか？",
+      "startDefault": "私の「葛藤解決」スタイル（喧嘩タイプ診断）🥊 私の喧嘩スタイルを確認！",
+      "startKakao": "私の「葛藤解決」スタイル（喧嘩タイプ診断）🥊 私の喧嘩スタイルを確認！",
+      "startWechat": "私の「葛藤解決」スタイル（喧嘩タイプ診断）🥊 私の喧嘩スタイルを確認！",
+      "startWhatsapp": "私の「葛藤解決」スタイル（喧嘩タイプ診断）🥊 私の喧嘩スタイルを確認！",
+      "startTelegram": "私の「葛藤解決」スタイル（喧嘩タイプ診断）🥊 私の喧嘩スタイルを確認！",
+      "startLine": "私の「葛藤解決」スタイル（喧嘩タイプ診断）🥊 私の喧嘩スタイルを確認！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "「一人でも大丈夫 vs 誰かが必要」",

@@ -1284,6 +1284,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "conflictStyleTest": {
+    "startMessage": {
+      "line1": "\"If you can't avoid a fight, what do you do?\"",
+      "line2": "Conflict situations with lovers, friends, and colleagues. Some need to settle it right there, while others hide in a cave.",
+      "line3": "The way you fight shows your personality.",
+      "line4": "Is it better to always endure? Or is winning important?",
+      "line5": "We analyze your conflict coping methods and provide solutions for healthier relationships.\nCheck my fighting style 🥊 Conflict resolution type diagnosis 🕊️"
+    },
+    "ui": {
+      "startTest": "Check Fighting Style",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Conflict Resolution Style Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "characteristics": "Main Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My conflict resolution type is {type}! 🥊 When I fight, do I run away or face it?",
+      "kakao": "My conflict resolution type is {type}! 🥊 When I fight, do I run away or face it?",
+      "wechat": "My conflict resolution type is {type}! 🥊 When I fight, do I run away or face it?",
+      "whatsapp": "My conflict resolution type is {type}! 🥊 When I fight, do I run away or face it?",
+      "telegram": "My conflict resolution type is {type}! 🥊 When I fight, do I run away or face it?",
+      "line": "My conflict resolution type is {type}! 🥊 When I fight, do I run away or face it?",
+      "startDefault": "My 'Conflict Resolution' Style (Fight Type Diagnosis) 🥊 Check my fighting style!",
+      "startKakao": "My 'Conflict Resolution' Style (Fight Type Diagnosis) 🥊 Check my fighting style!",
+      "startWechat": "My 'Conflict Resolution' Style (Fight Type Diagnosis) 🥊 Check my fighting style!",
+      "startWhatsapp": "My 'Conflict Resolution' Style (Fight Type Diagnosis) 🥊 Check my fighting style!",
+      "startTelegram": "My 'Conflict Resolution' Style (Fight Type Diagnosis) 🥊 Check my fighting style!",
+      "startLine": "My 'Conflict Resolution' Style (Fight Type Diagnosis) 🥊 Check my fighting style!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "lifePrioritiesTest": {
     "startMessage": {
       "line1": "\"What is truly important in your life?\"",

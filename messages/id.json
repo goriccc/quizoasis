@@ -1184,6 +1184,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "conflictStyleTest": {
+    "startMessage": {
+      "line1": "\"Jika Anda tidak bisa menghindari pertengkaran, apa yang akan Anda lakukan?\"",
+      "line2": "Situasi konflik dengan kekasih, teman, rekan kerja. Beberapa orang perlu menyelesaikannya di tempat, sementara yang lain bersembunyi di gua.",
+      "line3": "Cara Anda bertengkar menunjukkan kepribadian Anda.",
+      "line4": "Apakah menahan diri tanpa syarat adalah solusi terbaik? Atau menang yang penting?",
+      "line5": "Kami menganalisis metode penanganan konflik Anda dan memberikan solusi untuk hubungan yang lebih sehat.\nPeriksa gaya bertengkar saya 🥊 Diagnosis tipe resolusi konflik 🕊️"
+    },
+    "ui": {
+      "startTest": "Periksa Gaya Bertengkar",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Gaya Resolusi Konflik)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Tipe resolusi konflik saya adalah {type}! 🥊 Saat bertengkar, apakah saya akan lari atau menghadapinya?",
+      "kakao": "Tipe resolusi konflik saya adalah {type}! 🥊 Saat bertengkar, apakah saya akan lari atau menghadapinya?",
+      "wechat": "Tipe resolusi konflik saya adalah {type}! 🥊 Saat bertengkar, apakah saya akan lari atau menghadapinya?",
+      "whatsapp": "Tipe resolusi konflik saya adalah {type}! 🥊 Saat bertengkar, apakah saya akan lari atau menghadapinya?",
+      "telegram": "Tipe resolusi konflik saya adalah {type}! 🥊 Saat bertengkar, apakah saya akan lari atau menghadapinya?",
+      "line": "Tipe resolusi konflik saya adalah {type}! 🥊 Saat bertengkar, apakah saya akan lari atau menghadapinya?",
+      "startDefault": "Gaya 'Resolusi Konflik' Saya (Diagnosis Tipe Pertengkaran) 🥊 Periksa gaya bertengkar saya!",
+      "startKakao": "Gaya 'Resolusi Konflik' Saya (Diagnosis Tipe Pertengkaran) 🥊 Periksa gaya bertengkar saya!",
+      "startWechat": "Gaya 'Resolusi Konflik' Saya (Diagnosis Tipe Pertengkaran) 🥊 Periksa gaya bertengkar saya!",
+      "startWhatsapp": "Gaya 'Resolusi Konflik' Saya (Diagnosis Tipe Pertengkaran) 🥊 Periksa gaya bertengkar saya!",
+      "startTelegram": "Gaya 'Resolusi Konflik' Saya (Diagnosis Tipe Pertengkaran) 🥊 Periksa gaya bertengkar saya!",
+      "startLine": "Gaya 'Resolusi Konflik' Saya (Diagnosis Tipe Pertengkaran) 🥊 Periksa gaya bertengkar saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Silakan tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Baik-baik saja sendirian vs Perlu seseorang\"",

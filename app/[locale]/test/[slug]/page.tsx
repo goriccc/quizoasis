@@ -26,6 +26,7 @@ import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
 import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
+import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { timePerspectiveQuestions, timePerspectiveResults } from '@/lib/timePerspectiveData';
 import { defenseMechanismQuestions, defenseMechanismResults } from '@/lib/defenseMechanismData';
@@ -117,6 +118,9 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const ConflictStyleTestClient = dynamic(() => import('@/components/ConflictStyleTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TimePerspectiveTestClient = dynamic(() => import('@/components/TimePerspectiveTestClient'), {
@@ -1548,6 +1552,60 @@ export default async function TestPage({ params }: Props) {
           questionCount={empathyFQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'conflict-style-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'conflict-style-test',
+      title: {
+        ko: '나의 \'갈등 해결\' 스타일 (싸움 유형 진단)',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '싸움, 피할 수 없다면 어떻게 하시나요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_156_conflict_style.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <ConflictStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={conflictStyleQuestions}
+          results={conflictStyleResults}
+          questionCount={conflictStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count || 0}
+          similarTests={[]}
         />
       </>
     );
@@ -3506,6 +3564,11 @@ export default async function TestPage({ params }: Props) {
       questions: empathyFQuestions,
       results: empathyFResults
     };
+  } else if (slug === 'conflict-style-test') {
+    testData = {
+      questions: conflictStyleQuestions,
+      results: conflictStyleResults
+    };
   } else if (slug === 'time-perspective-test') {
     testData = {
       questions: timePerspectiveQuestions,
@@ -3689,6 +3752,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
+    else if (slug === 'conflict-style-test') TestClient = ConflictStyleTestClient;
     else if (slug === 'time-perspective-test') TestClient = TimePerspectiveTestClient;
     else if (slug === 'love-language-test') TestClient = LoveLanguageTestClient;
     else if (slug === 'defense-mechanism-test') TestClient = DefenseMechanismTestClient;

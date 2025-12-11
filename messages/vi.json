@@ -1184,6 +1184,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "conflictStyleTest": {
+    "startMessage": {
+      "line1": "\"Nếu không thể tránh khỏi cãi vã, bạn sẽ làm gì?\"",
+      "line2": "Tình huống xung đột với người yêu, bạn bè, đồng nghiệp. Một số người cần giải quyết ngay tại chỗ, một số người khác thì trốn vào hang.",
+      "line3": "Cách bạn cãi nhau cho thấy tính cách của bạn.",
+      "line4": "Nhẫn nhịn vô điều kiện có phải là giải pháp tốt không? Hay chiến thắng mới quan trọng?",
+      "line5": "Chúng tôi phân tích cách bạn đối phó với xung đột và cung cấp giải pháp cho mối quan hệ lành mạnh hơn.\nKiểm tra phong cách cãi nhau của tôi 🥊 Chẩn đoán kiểu giải quyết xung đột 🕊️"
+    },
+    "ui": {
+      "startTest": "Kiểm tra phong cách cãi nhau",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài test phong cách giải quyết xung đột)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự khác",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Kiểu giải quyết xung đột của tôi là {type}! 🥊 Khi cãi nhau, tôi sẽ chạy trốn hay đối mặt?",
+      "kakao": "Kiểu giải quyết xung đột của tôi là {type}! 🥊 Khi cãi nhau, tôi sẽ chạy trốn hay đối mặt?",
+      "wechat": "Kiểu giải quyết xung đột của tôi là {type}! 🥊 Khi cãi nhau, tôi sẽ chạy trốn hay đối mặt?",
+      "whatsapp": "Kiểu giải quyết xung đột của tôi là {type}! 🥊 Khi cãi nhau, tôi sẽ chạy trốn hay đối mặt?",
+      "telegram": "Kiểu giải quyết xung đột của tôi là {type}! 🥊 Khi cãi nhau, tôi sẽ chạy trốn hay đối mặt?",
+      "line": "Kiểu giải quyết xung đột của tôi là {type}! 🥊 Khi cãi nhau, tôi sẽ chạy trốn hay đối mặt?",
+      "startDefault": "Phong cách 'Giải quyết xung đột' của tôi (Chẩn đoán kiểu cãi vã) 🥊 Kiểm tra phong cách cãi nhau của tôi!",
+      "startKakao": "Phong cách 'Giải quyết xung đột' của tôi (Chẩn đoán kiểu cãi vã) 🥊 Kiểm tra phong cách cãi nhau của tôi!",
+      "startWechat": "Phong cách 'Giải quyết xung đột' của tôi (Chẩn đoán kiểu cãi vã) 🥊 Kiểm tra phong cách cãi nhau của tôi!",
+      "startWhatsapp": "Phong cách 'Giải quyết xung đột' của tôi (Chẩn đoán kiểu cãi vã) 🥊 Kiểm tra phong cách cãi nhau của tôi!",
+      "startTelegram": "Phong cách 'Giải quyết xung đột' của tôi (Chẩn đoán kiểu cãi vã) 🥊 Kiểm tra phong cách cãi nhau của tôi!",
+      "startLine": "Phong cách 'Giải quyết xung đột' của tôi (Chẩn đoán kiểu cãi vã) 🥊 Kiểm tra phong cách cãi nhau của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Ổn một mình vs Cần ai đó\"",

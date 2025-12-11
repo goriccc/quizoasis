@@ -1191,6 +1191,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "conflictStyleTest": {
+    "startMessage": {
+      "line1": "\"如果無法避免爭吵，你會怎麼做？\"",
+      "line2": "與戀人、朋友、同事的衝突情況。有些人需要當場解決，有些人則躲進洞穴。",
+      "line3": "看爭吵的方式就能看出那個人的性格。",
+      "line4": "無條件忍耐是上策嗎？還是獲勝更重要？",
+      "line5": "我們分析你的衝突應對方法，為更健康的關係提供解決方案。\n確認我的爭吵風格 🥊 衝突解決類型診斷 🕊️"
+    },
+    "ui": {
+      "startTest": "確認爭吵風格",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（衝突解決風格測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "characteristics": "主要特徵",
+      "goodMatch": "理想搭檔",
+      "badMatch": "最差搭檔"
+    },
+    "shareMessages": {
+      "default": "我的衝突解決類型是{type}！🥊 爭吵時，我是逃跑還是面對？",
+      "kakao": "我的衝突解決類型是{type}！🥊 爭吵時，我是逃跑還是面對？",
+      "wechat": "我的衝突解決類型是{type}！🥊 爭吵時，我是逃跑還是面對？",
+      "whatsapp": "我的衝突解決類型是{type}！🥊 爭吵時，我是逃跑還是面對？",
+      "telegram": "我的衝突解決類型是{type}！🥊 爭吵時，我是逃跑還是面對？",
+      "line": "我的衝突解決類型是{type}！🥊 爭吵時，我是逃跑還是面對？",
+      "startDefault": "我的「衝突解決」風格（吵架類型診斷）🥊 確認我的爭吵風格！",
+      "startKakao": "我的「衝突解決」風格（吵架類型診斷）🥊 確認我的爭吵風格！",
+      "startWechat": "我的「衝突解決」風格（吵架類型診斷）🥊 確認我的爭吵風格！",
+      "startWhatsapp": "我的「衝突解決」風格（吵架類型診斷）🥊 確認我的爭吵風格！",
+      "startTelegram": "我的「衝突解決」風格（吵架類型診斷）🥊 確認我的爭吵風格！",
+      "startLine": "我的「衝突解決」風格（吵架類型診斷）🥊 確認我的爭吵風格！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"獨自也可以 vs 需要有人\"",
