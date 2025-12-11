@@ -334,6 +334,62 @@
       "testCompleted": "テスト完了！"
     }
   },
+  "conversationStyleTest": {
+    "startMessage": {
+      "line1": "\"あなたと話すと時間はどう過ぎますか？\"",
+      "line2": "ある人は一晩中話しても話すことが溢れ、ある人は聞くだけでエネルギーを消費します。",
+      "line3": "もしかして私の話が多すぎて相手を疲れさせたり、逆に話が少なすぎてイライラさせたりしていませんか？",
+      "line4": "話すことと聞くこと、理性と感情の間。あなたの言語温度を分析します。",
+      "line5": "私のコミュニケーションタイプを確認 💬 会話スタイル診断 🗣️"
+    },
+    "ui": {
+      "startTest": "会話スタイル確認",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストへ",
+      "adsenseTitle": "AdSense広告エリア（会話スタイルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "characteristics": "主な特徴",
+      "conversationShare": "会話シェア",
+      "goodMatch": "完璧な相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の会話スタイルは{type}！💬 私とおしゃべりしたい人はこちら！",
+      "kakao": "私の会話スタイルは{type}！💬 私とおしゃべりしたい人はこちら！",
+      "wechat": "私の会話スタイルは{type}！💬 私とおしゃべりしたい人はこちら！",
+      "whatsapp": "私の会話スタイルは{type}！💬 私とおしゃべりしたい人はこちら！",
+      "telegram": "私の会話スタイルは{type}！💬 私とおしゃべりしたい人はこちら！",
+      "line": "私の会話スタイルは{type}！💬 私とおしゃべりしたい人はこちら！",
+      "startDefault": "私の「会話」スタイルテスト（コミュニケーション方法診断）💬 私のコミュニケーションタイプを確認！",
+      "startKakao": "私の「会話」スタイルテスト（コミュニケーション方法診断）💬 私のコミュニケーションタイプを確認！",
+      "startWechat": "私の「会話」スタイルテスト（コミュニケーション方法診断）💬 私のコミュニケーションタイプを確認！",
+      "startWhatsapp": "私の「会話」スタイルテスト（コミュニケーション方法診断）💬 私のコミュニケーションタイプを確認！",
+      "startTelegram": "私の「会話」スタイルテスト（コミュニケーション方法診断）💬 私のコミュニケーションタイプを確認！",
+      "startLine": "私の「会話」スタイルテスト（コミュニケーション方法診断）💬 私のコミュニケーションタイプを確認！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "「リーダーシップ深化診断！あなただけのリーダーシップスタイルは？」",

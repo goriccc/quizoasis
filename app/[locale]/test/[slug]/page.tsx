@@ -27,6 +27,7 @@ import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
+import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { timePerspectiveQuestions, timePerspectiveResults } from '@/lib/timePerspectiveData';
 import { defenseMechanismQuestions, defenseMechanismResults } from '@/lib/defenseMechanismData';
@@ -121,6 +122,9 @@ const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const ConflictStyleTestClient = dynamic(() => import('@/components/ConflictStyleTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const ConversationStyleTestClient = dynamic(() => import('@/components/ConversationStyleTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const TimePerspectiveTestClient = dynamic(() => import('@/components/TimePerspectiveTestClient'), {
@@ -1603,6 +1607,60 @@ export default async function TestPage({ params }: Props) {
           questions={conflictStyleQuestions}
           results={conflictStyleResults}
           questionCount={conflictStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count || 0}
+          similarTests={[]}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'conversation-style-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'conversation-style-test',
+      title: {
+        ko: '나의 \'대화\' 스타일 테스트 (소통 방식 진단)',
+        en: 'My \'Conversation\' Style Test (Communication Method Diagnosis)',
+        ja: '私の「会話」スタイルテスト（コミュニケーション方法診断）',
+        'zh-CN': '我的「对话」风格测试（沟通方式诊断）',
+        'zh-TW': '我的「對話」風格測試（溝通方式診斷）',
+        vi: 'Bài kiểm tra Phong cách \'Trò chuyện\' của tôi (Chẩn đoán Phương thức Giao tiếp)',
+        id: 'Tes Gaya \'Percakapan\' Saya (Diagnosis Metode Komunikasi)'
+      },
+      description: {
+        ko: '당신과 대화하면 시간이 어떻게 가나요?',
+        en: 'How does time pass when talking with you?',
+        ja: 'あなたと話すと時間はどう過ぎますか？',
+        'zh-CN': '和你聊天时，时间过得怎么样？',
+        'zh-TW': '和你聊天時，時間過得怎麼樣？',
+        vi: 'Thời gian trôi như thế nào khi nói chuyện với bạn?',
+        id: 'Bagaimana waktu berlalu saat berbicara dengan Anda?'
+      },
+      thumbnail: 'phase2_test_155_conversation_style.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '인간관계', '자아탐색'],
+        en: ['Psychology', 'Relationships', 'Self-discovery'],
+        ja: ['心理', '人間関係', '自己探求'],
+        'zh-CN': ['心理', '人际关系', '自我探索'],
+        'zh-TW': ['心理', '人際關係', '自我探索'],
+        vi: ['Tâm lý', 'Quan hệ', 'Khám phá bản thân'],
+        id: ['Psikologi', 'Hubungan', 'Penemuan diri']
+      }
+    };
+
+    return (
+      <>
+        <ConversationStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={conversationStyleQuestions}
+          results={conversationStyleResults}
+          questionCount={conversationStyleQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count || 0}
           similarTests={[]}
@@ -3569,6 +3627,11 @@ export default async function TestPage({ params }: Props) {
       questions: conflictStyleQuestions,
       results: conflictStyleResults
     };
+  } else if (slug === 'conversation-style-test') {
+    testData = {
+      questions: conversationStyleQuestions,
+      results: conversationStyleResults
+    };
   } else if (slug === 'time-perspective-test') {
     testData = {
       questions: timePerspectiveQuestions,
@@ -3753,6 +3816,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'conflict-style-test') TestClient = ConflictStyleTestClient;
+    else if (slug === 'conversation-style-test') TestClient = ConversationStyleTestClient;
     else if (slug === 'time-perspective-test') TestClient = TimePerspectiveTestClient;
     else if (slug === 'love-language-test') TestClient = LoveLanguageTestClient;
     else if (slug === 'defense-mechanism-test') TestClient = DefenseMechanismTestClient;

@@ -334,6 +334,62 @@
       "testCompleted": "Hoàn thành bài test!"
     }
   },
+  "conversationStyleTest": {
+    "startMessage": {
+      "line1": "\"Thời gian trôi như thế nào khi nói chuyện với bạn?\"",
+      "line2": "Một số người có vô số điều để nói ngay cả sau khi nói chuyện cả đêm, trong khi một số người khác chỉ cần lắng nghe là đã có năng lượng.",
+      "line3": "Bạn có bao giờ làm người khác mệt mỏi vì nói quá nhiều, hoặc làm họ thất vọng vì quá im lặng không?",
+      "line4": "Giữa nói và nghe, logic và cảm xúc. Chúng tôi phân tích nhiệt độ ngôn ngữ của bạn.",
+      "line5": "Kiểm tra loại giao tiếp của tôi 💬 Chẩn đoán phong cách trò chuyện 🗣️"
+    },
+    "ui": {
+      "startTest": "Kiểm tra phong cách trò chuyện",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài test Phong cách Trò chuyện)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự khác",
+      "characteristics": "Đặc điểm chính",
+      "conversationShare": "Tỷ lệ trò chuyện",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tồi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Phong cách trò chuyện của tôi là {type}! 💬 Ai muốn tán gẫu với tôi thì đến đây!",
+      "kakao": "Phong cách trò chuyện của tôi là {type}! 💬 Ai muốn tán gẫu với tôi thì đến đây!",
+      "wechat": "Phong cách trò chuyện của tôi là {type}! 💬 Ai muốn tán gẫu với tôi thì đến đây!",
+      "whatsapp": "Phong cách trò chuyện của tôi là {type}! 💬 Ai muốn tán gẫu với tôi thì đến đây!",
+      "telegram": "Phong cách trò chuyện của tôi là {type}! 💬 Ai muốn tán gẫu với tôi thì đến đây!",
+      "line": "Phong cách trò chuyện của tôi là {type}! 💬 Ai muốn tán gẫu với tôi thì đến đây!",
+      "startDefault": "Bài test Phong cách 'Trò chuyện' của tôi (Chẩn đoán Phương thức Giao tiếp) 💬 Kiểm tra loại giao tiếp của tôi!",
+      "startKakao": "Bài test Phong cách 'Trò chuyện' của tôi (Chẩn đoán Phương thức Giao tiếp) 💬 Kiểm tra loại giao tiếp của tôi!",
+      "startWechat": "Bài test Phong cách 'Trò chuyện' của tôi (Chẩn đoán Phương thức Giao tiếp) 💬 Kiểm tra loại giao tiếp của tôi!",
+      "startWhatsapp": "Bài test Phong cách 'Trò chuyện' của tôi (Chẩn đoán Phương thức Giao tiếp) 💬 Kiểm tra loại giao tiếp của tôi!",
+      "startTelegram": "Bài test Phong cách 'Trò chuyện' của tôi (Chẩn đoán Phương thức Giao tiếp) 💬 Kiểm tra loại giao tiếp của tôi!",
+      "startLine": "Bài test Phong cách 'Trò chuyện' của tôi (Chẩn đoán Phương thức Giao tiếp) 💬 Kiểm tra loại giao tiếp của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài test Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài test Phổ biến"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"Chẩn đoán sâu về khả năng lãnh đạo! Phong cách lãnh đạo độc đáo của bạn là gì?\"",

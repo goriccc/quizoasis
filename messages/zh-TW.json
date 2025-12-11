@@ -334,6 +334,62 @@
       "testCompleted": "測試完成！"
     }
   },
+  "conversationStyleTest": {
+    "startMessage": {
+      "line1": "\"和你聊天時，時間過得怎麼樣？\"",
+      "line2": "有些人徹夜聊天仍有說不完的話，而有些人僅僅通過傾聽就能獲得能量。",
+      "line3": "你是否曾經因為話太多而讓對方疲憊，或者因為話太少而讓對方感到沮喪？",
+      "line4": "在說話與傾聽、理性與感性之間。我們分析你的語言溫度。",
+      "line5": "檢查我的溝通類型 💬 對話風格診斷 🗣️"
+    },
+    "ui": {
+      "startTest": "檢查對話風格",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（對話風格測試）",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "characteristics": "主要特徵",
+      "conversationShare": "對話份額",
+      "goodMatch": "完美匹配",
+      "badMatch": "最差匹配"
+    },
+    "shareMessages": {
+      "default": "我的對話風格是{type}！💬 想和我聊天的人來這裡！",
+      "kakao": "我的對話風格是{type}！💬 想和我聊天的人來這裡！",
+      "wechat": "我的對話風格是{type}！💬 想和我聊天的人來這裡！",
+      "whatsapp": "我的對話風格是{type}！💬 想和我聊天的人來這裡！",
+      "telegram": "我的對話風格是{type}！💬 想和我聊天的人來這裡！",
+      "line": "我的對話風格是{type}！💬 想和我聊天的人來這裡！",
+      "startDefault": "我的「對話」風格測試（溝通方式診斷）💬 檢查我的溝通類型！",
+      "startKakao": "我的「對話」風格測試（溝通方式診斷）💬 檢查我的溝通類型！",
+      "startWechat": "我的「對話」風格測試（溝通方式診斷）💬 檢查我的溝通類型！",
+      "startWhatsapp": "我的「對話」風格測試（溝通方式診斷）💬 檢查我的溝通類型！",
+      "startTelegram": "我的「對話」風格測試（溝通方式診斷）💬 檢查我的溝通類型！",
+      "startLine": "我的「對話」風格測試（溝通方式診斷）💬 檢查我的溝通類型！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "鏈接已複製！在微信中粘貼以分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "在KakaoTalk上分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"領導力深度診斷！你獨特的領導風格是什麼？\"",

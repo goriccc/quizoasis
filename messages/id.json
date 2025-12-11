@@ -334,6 +334,62 @@
       "testCompleted": "Tes Selesai!"
     }
   },
+  "conversationStyleTest": {
+    "startMessage": {
+      "line1": "\"Bagaimana waktu berlalu saat berbicara dengan Anda?\"",
+      "line2": "Beberapa orang memiliki banyak hal untuk dikatakan bahkan setelah berbicara sepanjang malam, sementara yang lain hanya mendengarkan saja sudah mendapat energi.",
+      "line3": "Pernahkah Anda membuat orang lain lelah karena terlalu banyak bicara, atau membuat mereka frustrasi karena terlalu pendiam?",
+      "line4": "Antara berbicara dan mendengarkan, logika dan emosi. Kami menganalisis suhu bahasa Anda.",
+      "line5": "Periksa tipe komunikasi saya 💬 Diagnosis gaya percakapan 🗣️"
+    },
+    "ui": {
+      "startTest": "Periksa Gaya Percakapan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Gaya Percakapan)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "characteristics": "Fitur Utama",
+      "conversationShare": "Bagian Percakapan",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Gaya percakapan saya adalah {type}! 💬 Siapa yang ingin ngobrol dengan saya?",
+      "kakao": "Gaya percakapan saya adalah {type}! 💬 Siapa yang ingin ngobrol dengan saya?",
+      "wechat": "Gaya percakapan saya adalah {type}! 💬 Siapa yang ingin ngobrol dengan saya?",
+      "whatsapp": "Gaya percakapan saya adalah {type}! 💬 Siapa yang ingin ngobrol dengan saya?",
+      "telegram": "Gaya percakapan saya adalah {type}! 💬 Siapa yang ingin ngobrol dengan saya?",
+      "line": "Gaya percakapan saya adalah {type}! 💬 Siapa yang ingin ngobrol dengan saya?",
+      "startDefault": "Tes Gaya ''Percakapan'' Saya (Diagnosis Metode Komunikasi) 💬 Periksa tipe komunikasi saya!",
+      "startKakao": "Tes Gaya ''Percakapan'' Saya (Diagnosis Metode Komunikasi) 💬 Periksa tipe komunikasi saya!",
+      "startWechat": "Tes Gaya ''Percakapan'' Saya (Diagnosis Metode Komunikasi) 💬 Periksa tipe komunikasi saya!",
+      "startWhatsapp": "Tes Gaya ''Percakapan'' Saya (Diagnosis Metode Komunikasi) 💬 Periksa tipe komunikasi saya!",
+      "startTelegram": "Tes Gaya ''Percakapan'' Saya (Diagnosis Metode Komunikasi) 💬 Periksa tipe komunikasi saya!",
+      "startLine": "Tes Gaya ''Percakapan'' Saya (Diagnosis Metode Komunikasi) 💬 Periksa tipe komunikasi saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"Diagnosis mendalam kepemimpinan! Apa gaya kepemimpinan unik Anda?\"",

@@ -340,6 +340,62 @@
       "testCompleted": "Test Completed!"
     }
   },
+  "conversationStyleTest": {
+    "startMessage": {
+      "line1": "\"How does time pass when talking with you?\"",
+      "line2": "Some people have endless things to say even after talking all night, while others gain energy just by listening.",
+      "line3": "Have you ever made others tired by talking too much, or frustrated them by being too quiet?",
+      "line4": "Between speaking and listening, logic and emotion. We analyze your language temperature.",
+      "line5": "Check my communication type 💬 Conversation style diagnosis 🗣️"
+    },
+    "ui": {
+      "startTest": "Check Conversation Style",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Conversation Style Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "characteristics": "Key Features",
+      "conversationShare": "Conversation Share",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My conversation style is {type}! 💬 Who wants to chat with me?",
+      "kakao": "My conversation style is {type}! 💬 Who wants to chat with me?",
+      "wechat": "My conversation style is {type}! 💬 Who wants to chat with me?",
+      "whatsapp": "My conversation style is {type}! 💬 Who wants to chat with me?",
+      "telegram": "My conversation style is {type}! 💬 Who wants to chat with me?",
+      "line": "My conversation style is {type}! 💬 Who wants to chat with me?",
+      "startDefault": "My 'Conversation' Style Test (Communication Method Diagnosis) 💬 Check my communication type!",
+      "startKakao": "My 'Conversation' Style Test (Communication Method Diagnosis) 💬 Check my communication type!",
+      "startWechat": "My 'Conversation' Style Test (Communication Method Diagnosis) 💬 Check my communication type!",
+      "startWhatsapp": "My 'Conversation' Style Test (Communication Method Diagnosis) 💬 Check my communication type!",
+      "startTelegram": "My 'Conversation' Style Test (Communication Method Diagnosis) 💬 Check my communication type!",
+      "startLine": "My 'Conversation' Style Test (Communication Method Diagnosis) 💬 Check my communication type!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is unavailable.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Other Tests Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Recommendations"
+    }
+  },
   "leadershipTest": {
     "startMessage": {
       "line1": "\"Leadership in-depth diagnosis! What is your unique leadership style?\"",
