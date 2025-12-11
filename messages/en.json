@@ -3345,5 +3345,61 @@
       "similarTestsTop5": "🎯 Top 5 Similar Other Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
+  },
+  "loveLanguageTest": {
+    "startMessage": {
+      "line1": "\"What language does your love speak?\"",
+      "line2": "Have you ever felt lonely even though you're in love, or felt that you did your best but your partner was hurt?",
+      "line3": "It might be because your 'love languages' are different.",
+      "line4": "Some people value warm words, others need affectionate touch, or thoughtful gifts.",
+      "line5": "We'll help you find your true 'love language' to increase your relationship happiness.\nCheck my relationship cheat code 💌 Start Love Language Diagnosis 💕"
+    },
+    "ui": {
+      "startTest": "Start Love Language Diagnosis",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Results",
+      "retakeTest": "Retake Test",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Love Language Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "keywords": "Key Keywords",
+      "tip": "Relationship Tips",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My love language is {type}! 💕 This is what matters most to me!",
+      "kakao": "My love language is {type}! 💕 This is what matters most to me!",
+      "wechat": "My love language is {type}! 💕 This is what matters most to me!",
+      "whatsapp": "My love language is {type}! 💕 This is what matters most to me!",
+      "telegram": "My love language is {type}! 💕 This is what matters most to me!",
+      "line": "My love language is {type}! 💕 This is what matters most to me!",
+      "startDefault": "What's My #1 Love Language? (Relationship Tendency Diagnosis) 💌 Check my relationship cheat code!",
+      "startKakao": "What's My #1 Love Language? (Relationship Tendency Diagnosis) 💌 Check my relationship cheat code!",
+      "startWechat": "What's My #1 Love Language? (Relationship Tendency Diagnosis) 💌 Check my relationship cheat code!",
+      "startWhatsapp": "What's My #1 Love Language? (Relationship Tendency Diagnosis) 💌 Check my relationship cheat code!",
+      "startTelegram": "What's My #1 Love Language? (Relationship Tendency Diagnosis) 💌 Check my relationship cheat code!",
+      "startLine": "What's My #1 Love Language? (Relationship Tendency Diagnosis) 💌 Check my relationship cheat code!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Other Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
   }
 }

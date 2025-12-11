@@ -3190,5 +3190,61 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "loveLanguageTest": {
+    "startMessage": {
+      "line1": "\"你的愛是用什麼語言表達的？\"",
+      "line2": "即使和戀人相愛，有時也會感到孤獨，或者你盡力了但對方卻感到難過，有過這樣的經歷嗎？",
+      "line3": "這可能是因為你們的「愛的語言」不同。",
+      "line4": "有人重視溫暖的話語，有人需要深情的觸摸，或者充滿心意的禮物。",
+      "line5": "我們將幫你找到真正的「我的愛的語言」，提高你的戀愛幸福度。\n查看我的戀愛秘籍 💌 開始愛的語言診斷 💕"
+    },
+    "ui": {
+      "startTest": "開始愛的語言診斷",
+      "shareWithFriends": "和朋友一起嘗試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（愛的語言測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "keywords": "核心關鍵詞",
+      "tip": "戀愛小貼士",
+      "goodMatch": "完美匹配",
+      "badMatch": "最差匹配"
+    },
+    "shareMessages": {
+      "default": "我的愛的語言是{type}！💕 這對我最重要！",
+      "kakao": "我的愛的語言是{type}！💕 這對我最重要！",
+      "wechat": "我的愛的語言是{type}！💕 這對我最重要！",
+      "whatsapp": "我的愛的語言是{type}！💕 這對我最重要！",
+      "telegram": "我的愛的語言是{type}！💕 這對我最重要！",
+      "line": "我的愛的語言是{type}！💕 這對我最重要！",
+      "startDefault": "我的第一愛的語言是什麼？（戀愛傾向診斷）💌 查看我的戀愛秘籍！",
+      "startKakao": "我的第一愛的語言是什麼？（戀愛傾向診斷）💌 查看我的戀愛秘籍！",
+      "startWechat": "我的第一愛的語言是什麼？（戀愛傾向診斷）💌 查看我的戀愛秘籍！",
+      "startWhatsapp": "我的第一愛的語言是什麼？（戀愛傾向診斷）💌 查看我的戀愛秘籍！",
+      "startTelegram": "我的第一愛的語言是什麼？（戀愛傾向診斷）💌 查看我的戀愛秘籍！",
+      "startLine": "我的第一愛的語言是什麼？（戀愛傾向診斷）💌 查看我的戀愛秘籍！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在WeChat中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }

@@ -3183,5 +3183,61 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "loveLanguageTest": {
+    "startMessage": {
+      "line1": "\"Bahasa apa yang digunakan cintamu?\"",
+      "line2": "Pernahkah Anda merasa kesepian meskipun sedang jatuh cinta, atau Anda sudah berusaha keras tetapi pasangan tetap sedih?",
+      "line3": "Itu mungkin karena 'bahasa cinta' kalian berbeda.",
+      "line4": "Beberapa orang menghargai kata-kata hangat, yang lain membutuhkan sentuhan penuh kasih sayang, atau hadiah yang penuh perhatian.",
+      "line5": "Kami akan membantu Anda menemukan 'bahasa cinta' sejati Anda untuk meningkatkan kebahagiaan dalam hubungan.\nPeriksa kode rahasia hubungan saya 💌 Mulai Diagnosis Bahasa Cinta 💕"
+    },
+    "ui": {
+      "startTest": "Mulai Diagnosis Bahasa Cinta",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Bahasa Cinta)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "keywords": "Kata Kunci Utama",
+      "tip": "Tips Hubungan",
+      "goodMatch": "Kecocokan Sempurna",
+      "badMatch": "Kecocokan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Bahasa cinta saya adalah {type}! 💕 Inilah yang paling penting bagi saya!",
+      "kakao": "Bahasa cinta saya adalah {type}! 💕 Inilah yang paling penting bagi saya!",
+      "wechat": "Bahasa cinta saya adalah {type}! 💕 Inilah yang paling penting bagi saya!",
+      "whatsapp": "Bahasa cinta saya adalah {type}! 💕 Inilah yang paling penting bagi saya!",
+      "telegram": "Bahasa cinta saya adalah {type}! 💕 Inilah yang paling penting bagi saya!",
+      "line": "Bahasa cinta saya adalah {type}! 💕 Inilah yang paling penting bagi saya!",
+      "startDefault": "Apa Bahasa Cinta #1 Saya? (Diagnosis Kecenderungan Hubungan) 💌 Periksa kode rahasia hubungan saya!",
+      "startKakao": "Apa Bahasa Cinta #1 Saya? (Diagnosis Kecenderungan Hubungan) 💌 Periksa kode rahasia hubungan saya!",
+      "startWechat": "Apa Bahasa Cinta #1 Saya? (Diagnosis Kecenderungan Hubungan) 💌 Periksa kode rahasia hubungan saya!",
+      "startWhatsapp": "Apa Bahasa Cinta #1 Saya? (Diagnosis Kecenderungan Hubungan) 💌 Periksa kode rahasia hubungan saya!",
+      "startTelegram": "Apa Bahasa Cinta #1 Saya? (Diagnosis Kecenderungan Hubungan) 💌 Periksa kode rahasia hubungan saya!",
+      "startLine": "Apa Bahasa Cinta #1 Saya? (Diagnosis Kecenderungan Hubungan) 💌 Periksa kode rahasia hubungan saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

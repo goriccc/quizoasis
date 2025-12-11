@@ -3183,5 +3183,61 @@
       "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "loveLanguageTest": {
+    "startMessage": {
+      "line1": "\"Tình yêu của bạn nói bằng ngôn ngữ gì?\"",
+      "line2": "Bạn có bao giờ cảm thấy cô đơn dù đang yêu, hoặc bạn đã cố gắng hết sức nhưng người yêu vẫn buồn không?",
+      "line3": "Có thể là do 'ngôn ngữ tình yêu' của các bạn khác nhau.",
+      "line4": "Có người coi trọng lời nói ấm áp, có người cần sự tiếp xúc âu yếm, hoặc những món quà đầy tình cảm.",
+      "line5": "Chúng tôi sẽ giúp bạn tìm ra 'ngôn ngữ tình yêu' thật sự của mình để tăng hạnh phúc trong mối quan hệ.\nKiểm tra mã bí mật tình yêu của tôi 💌 Bắt đầu Chẩn đoán Ngôn ngữ Tình yêu 💕"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Chẩn đoán Ngôn ngữ Tình yêu",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại Bài kiểm tra",
+      "otherTests": "Xem Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Bài kiểm tra Ngôn ngữ Tình yêu)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra Tương tự Khác",
+      "keywords": "Từ khóa Chính",
+      "tip": "Mẹo Tình yêu",
+      "goodMatch": "Kết hợp Hoàn hảo",
+      "badMatch": "Kết hợp Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Ngôn ngữ tình yêu của tôi là {type}! 💕 Đây là điều quan trọng nhất với tôi!",
+      "kakao": "Ngôn ngữ tình yêu của tôi là {type}! 💕 Đây là điều quan trọng nhất với tôi!",
+      "wechat": "Ngôn ngữ tình yêu của tôi là {type}! 💕 Đây là điều quan trọng nhất với tôi!",
+      "whatsapp": "Ngôn ngữ tình yêu của tôi là {type}! 💕 Đây là điều quan trọng nhất với tôi!",
+      "telegram": "Ngôn ngữ tình yêu của tôi là {type}! 💕 Đây là điều quan trọng nhất với tôi!",
+      "line": "Ngôn ngữ tình yêu của tôi là {type}! 💕 Đây là điều quan trọng nhất với tôi!",
+      "startDefault": "Ngôn ngữ Tình yêu #1 của Tôi là gì? (Chẩn đoán Xu hướng Tình yêu) 💌 Kiểm tra mã bí mật tình yêu của tôi!",
+      "startKakao": "Ngôn ngữ Tình yêu #1 của Tôi là gì? (Chẩn đoán Xu hướng Tình yêu) 💌 Kiểm tra mã bí mật tình yêu của tôi!",
+      "startWechat": "Ngôn ngữ Tình yêu #1 của Tôi là gì? (Chẩn đoán Xu hướng Tình yêu) 💌 Kiểm tra mã bí mật tình yêu của tôi!",
+      "startWhatsapp": "Ngôn ngữ Tình yêu #1 của Tôi là gì? (Chẩn đoán Xu hướng Tình yêu) 💌 Kiểm tra mã bí mật tình yêu của tôi!",
+      "startTelegram": "Ngôn ngữ Tình yêu #1 của Tôi là gì? (Chẩn đoán Xu hướng Tình yêu) 💌 Kiểm tra mã bí mật tình yêu của tôi!",
+      "startLine": "Ngôn ngữ Tình yêu #1 của Tôi là gì? (Chẩn đoán Xu hướng Tình yêu) 💌 Kiểm tra mã bí mật tình yêu của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }

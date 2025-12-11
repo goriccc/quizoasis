@@ -29,6 +29,7 @@ import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
 import { timePerspectiveQuestions, timePerspectiveResults } from '@/lib/timePerspectiveData';
 import { defenseMechanismQuestions, defenseMechanismResults } from '@/lib/defenseMechanismData';
+import { loveLanguageQuestions, loveLanguageResults } from '@/lib/loveLanguageData';
 import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
 import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
 import { honestyVsRestraintQuestions, honestyVsRestraintResults } from '@/lib/honestyVsRestraintData';
@@ -122,6 +123,9 @@ const TimePerspectiveTestClient = dynamic(() => import('@/components/TimePerspec
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const DefenseMechanismTestClient = dynamic(() => import('@/components/DefenseMechanismTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const LoveLanguageTestClient = dynamic(() => import('@/components/LoveLanguageTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const LifePrioritiesTestClient = dynamic(() => import('@/components/LifePrioritiesTestClient'), {
@@ -1595,6 +1599,59 @@ export default async function TestPage({ params }: Props) {
           questions={timePerspectiveQuestions}
           results={timePerspectiveResults}
           questionCount={timePerspectiveQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 나의 1순위 사랑의 언어는? (연애 성향 진단)
+  if (slug === 'love-language-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'love-language-test',
+      title: {
+        ko: '나의 1순위 사랑의 언어는? (연애 성향 진단)',
+        en: "What's My #1 Love Language? (Relationship Tendency Diagnosis)",
+        ja: '私の1位の愛の言語は？(恋愛傾向診断)',
+        'zh-CN': '我的第一爱的语言是什么？(恋爱倾向诊断)',
+        'zh-TW': '我的第一愛的語言是什麼？(戀愛傾向診斷)',
+        vi: 'Ngôn ngữ Tình yêu #1 của Tôi là gì? (Chẩn đoán Xu hướng Tình yêu)',
+        id: 'Apa Bahasa Cinta #1 Saya? (Diagnosis Kecenderungan Hubungan)'
+      },
+      description: {
+        ko: '당신의 사랑은 어떤 언어로 말하고 있나요?',
+        en: "What language does your love speak?",
+        ja: 'あなたの愛はどんな言葉で語っていますか？',
+        'zh-CN': '你的爱是用什么语言表达的？',
+        'zh-TW': '你的愛是用什麼語言表達的？',
+        vi: 'Tình yêu của bạn nói bằng ngôn ngữ gì?',
+        id: 'Bahasa apa yang digunakan cintamu?'
+      },
+      thumbnail: 'phase2_test_131_love_language.jpg',
+      type: 'dating',
+      category: 'psychology',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: ['Dating', 'Psychology'],
+        ja: ['恋愛', '心理'],
+        'zh-CN': ['恋爱', '心理'],
+        'zh-TW': ['戀愛', '心理'],
+        vi: ['Tình yêu', 'Tâm lý'],
+        id: ['Kencan', 'Psikologi']
+      }
+    };
+    return (
+      <>
+        <LoveLanguageTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={loveLanguageQuestions}
+          results={loveLanguageResults}
+          questionCount={loveLanguageQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3454,6 +3511,11 @@ export default async function TestPage({ params }: Props) {
       questions: timePerspectiveQuestions,
       results: timePerspectiveResults
     };
+  } else if (slug === 'love-language-test') {
+    testData = {
+      questions: loveLanguageQuestions,
+      results: loveLanguageResults
+    };
   } else if (slug === 'defense-mechanism-test') {
     testData = {
       questions: defenseMechanismQuestions,
@@ -3628,6 +3690,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'time-perspective-test') TestClient = TimePerspectiveTestClient;
+    else if (slug === 'love-language-test') TestClient = LoveLanguageTestClient;
     else if (slug === 'defense-mechanism-test') TestClient = DefenseMechanismTestClient;
     else if (slug === 'life-priorities-test') TestClient = LifePrioritiesTestClient;
     else if (slug === 'empathy-level-test') TestClient = EmpathyTestClient;
