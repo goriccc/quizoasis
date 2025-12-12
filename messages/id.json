@@ -1297,6 +1297,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "soulDrinkTest": {
+    "startMessage": {
+      "line1": "\"Minuman apa yang mengisi jiwa Anda?\"",
+      "line2": "Kopi yang membangunkan pagi yang lelah, anggur yang menghibur malam yang malas.",
+      "line3": "Tidak hanya 'rasa', tetapi ada 'minuman jiwa' yang sempurna sesuai dengan kepribadian, suasana, dan gaya hidup Anda.",
+      "line4": "Apakah itu espresso yang kesepian? Atau Moscato yang manis?",
+      "line5": "Kami menganalisis DNA rasa Anda. Temukan minuman jiwa saya 🍷☕"
+    },
+    "ui": {
+      "startTest": "Temukan Minuman Jiwa",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Minuman Jiwa Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "soulCoffee": "Soul Coffee",
+      "soulWine": "Soul Wine",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Minuman jiwa saya adalah {type}! 🍷 Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "kakao": "Minuman jiwa saya adalah {type}! 🍷 Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "wechat": "Minuman jiwa saya adalah {type}! 🍷 Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "whatsapp": "Minuman jiwa saya adalah {type}! 🍷 Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "telegram": "Minuman jiwa saya adalah {type}! 🍷 Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "line": "Minuman jiwa saya adalah {type}! 🍷 Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "startDefault": "Temukan Minuman Jiwa Saya (Kopi & Anggur) 🍷☕ Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "startKakao": "Temukan Minuman Jiwa Saya (Kopi & Anggur) 🍷☕ Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "startWechat": "Temukan Minuman Jiwa Saya (Kopi & Anggur) 🍷☕ Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "startWhatsapp": "Temukan Minuman Jiwa Saya (Kopi & Anggur) 🍷☕ Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "startTelegram": "Temukan Minuman Jiwa Saya (Kopi & Anggur) 🍷☕ Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?",
+      "startLine": "Temukan Minuman Jiwa Saya (Kopi & Anggur) 🍷☕ Bagaimana Anda mengekspresikan kepribadian Anda dalam rasa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Jika Anda tidak bisa menghindari pertengkaran, apa yang akan Anda lakukan?\"",

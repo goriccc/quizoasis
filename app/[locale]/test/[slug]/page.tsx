@@ -26,6 +26,7 @@ import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
 import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
+import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -121,6 +122,9 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const ConflictStyleTestClient = dynamic(() => import('@/components/ConflictStyleTestClient'), {
@@ -1562,6 +1566,59 @@ export default async function TestPage({ params }: Props) {
           questions={empathyFQuestions}
           results={empathyFResults}
           questionCount={empathyFQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'soul-drink-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'soul-drink-test',
+      title: {
+        ko: '나의 소울 드링크 찾기 (커피 & 와인)',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '당신의 영혼을 채워줄 한 잔은 무엇인가요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_035_soul_drink.jpg',
+      type: 'fun',
+      category: 'lifestyle',
+      play_count: 0,
+      tags: {
+        ko: ['재미'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <SoulDrinkTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={soulDrinkQuestions}
+          results={soulDrinkResults}
+          questionCount={soulDrinkQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3740,6 +3797,11 @@ export default async function TestPage({ params }: Props) {
       questions: empathyFQuestions,
       results: empathyFResults
     };
+  } else if (slug === 'soul-drink-test') {
+    testData = {
+      questions: soulDrinkQuestions,
+      results: soulDrinkResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -3938,6 +4000,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
+    else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'conflict-style-test') TestClient = ConflictStyleTestClient;
     else if (slug === 'conversation-style-test') TestClient = ConversationStyleTestClient;
     else if (slug === 'flirting-style-test') TestClient = FlirtingStyleTestClient;

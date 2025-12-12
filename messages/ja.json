@@ -1298,6 +1298,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "soulDrinkTest": {
+    "startMessage": {
+      "line1": "\"あなたの魂を満たす一杯は何ですか？\"",
+      "line2": "疲れた朝を目覚めさせるコーヒー、だらだらした夜を慰めるワイン。",
+      "line3": "単に「味」だけでなく、あなたの性格、雰囲気、そしてライフスタイルと最も完璧に合う「ソウルドリンク」があります。",
+      "line4": "孤独なエスプレッソでしょうか？それとも甘いモスカートでしょうか？",
+      "line5": "あなたの味覚DNAを分析します。私のソウルドリンクを確認 🍷☕"
+    },
+    "ui": {
+      "startTest": "ソウルドリンクを確認",
+      "shareWithFriends": "友達と一緒に",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア (私のソウルドリンクを見つける)",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "soulCoffee": "Soul Coffee",
+      "soulWine": "Soul Wine",
+      "recommendation": "おすすめ"
+    },
+    "shareMessages": {
+      "default": "私のソウルドリンクは{type}！🍷 あなたの性格を味で表現すると？",
+      "kakao": "私のソウルドリンクは{type}！🍷 あなたの性格を味で表現すると？",
+      "wechat": "私のソウルドリンクは{type}！🍷 あなたの性格を味で表現すると？",
+      "whatsapp": "私のソウルドリンクは{type}！🍷 あなたの性格を味で表現すると？",
+      "telegram": "私のソウルドリンクは{type}！🍷 あなたの性格を味で表現すると？",
+      "line": "私のソウルドリンクは{type}！🍷 あなたの性格を味で表現すると？",
+      "startDefault": "私のソウルドリンクを見つける (コーヒー & ワイン) 🍷☕ あなたの性格を味で表現すると？",
+      "startKakao": "私のソウルドリンクを見つける (コーヒー & ワイン) 🍷☕ あなたの性格を味で表現すると？",
+      "startWechat": "私のソウルドリンクを見つける (コーヒー & ワイン) 🍷☕ あなたの性格を味で表現すると？",
+      "startWhatsapp": "私のソウルドリンクを見つける (コーヒー & ワイン) 🍷☕ あなたの性格を味で表現すると？",
+      "startTelegram": "私のソウルドリンクを見つける (コーヒー & ワイン) 🍷☕ あなたの性格を味で表現すると？",
+      "startLine": "私のソウルドリンクを見つける (コーヒー & ワイン) 🍷☕ あなたの性格を味で表現すると？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "「喧嘩、避けられないならどうしますか？」",

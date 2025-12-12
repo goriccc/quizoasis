@@ -1297,6 +1297,61 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "soulDrinkTest": {
+    "startMessage": {
+      "line1": "\"什么饮品能填满你的灵魂？\"",
+      "line2": "唤醒疲惫早晨的咖啡，安慰慵懒夜晚的葡萄酒。",
+      "line3": "不仅有'味道'，还有与你的性格、氛围和生活方式完美匹配的'灵魂饮品'。",
+      "line4": "是孤独的意式浓缩咖啡？还是甜美的莫斯卡托？",
+      "line5": "我们分析你的味觉DNA。找到我的灵魂饮品 🍷☕"
+    },
+    "ui": {
+      "startTest": "找到我的灵魂饮品",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域 (找到我的灵魂饮品)",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "soulCoffee": "Soul Coffee",
+      "soulWine": "Soul Wine",
+      "recommendation": "推荐"
+    },
+    "shareMessages": {
+      "default": "我的灵魂饮品是{type}！🍷 如何用味道表达你的性格？",
+      "kakao": "我的灵魂饮品是{type}！🍷 如何用味道表达你的性格？",
+      "wechat": "我的灵魂饮品是{type}！🍷 如何用味道表达你的性格？",
+      "whatsapp": "我的灵魂饮品是{type}！🍷 如何用味道表达你的性格？",
+      "telegram": "我的灵魂饮品是{type}！🍷 如何用味道表达你的性格？",
+      "line": "我的灵魂饮品是{type}！🍷 如何用味道表达你的性格？",
+      "startDefault": "找到我的灵魂饮品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表达你的性格？",
+      "startKakao": "找到我的灵魂饮品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表达你的性格？",
+      "startWechat": "找到我的灵魂饮品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表达你的性格？",
+      "startWhatsapp": "找到我的灵魂饮品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表达你的性格？",
+      "startTelegram": "找到我的灵魂饮品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表达你的性格？",
+      "startLine": "找到我的灵魂饮品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表达你的性格？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"如果无法避免争吵，你会怎么做？\"",

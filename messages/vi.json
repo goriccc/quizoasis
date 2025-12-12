@@ -1297,6 +1297,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "soulDrinkTest": {
+    "startMessage": {
+      "line1": "\"Đồ uống nào sẽ làm đầy tâm hồn bạn?\"",
+      "line2": "Cà phê đánh thức buổi sáng mệt mỏi, rượu vang an ủi buổi tối lười biếng.",
+      "line3": "Không chỉ đơn giản là 'vị', mà còn có 'đồ uống tâm hồn' hoàn hảo phù hợp với tính cách, không khí và lối sống của bạn.",
+      "line4": "Có phải là espresso cô đơn? Hay là Moscato ngọt ngào?",
+      "line5": "Chúng tôi phân tích DNA vị giác của bạn. Tìm đồ uống tâm hồn của tôi 🍷☕"
+    },
+    "ui": {
+      "startTest": "Tìm đồ uống tâm hồn",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tìm đồ uống tâm hồn của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự khác",
+      "soulCoffee": "Soul Coffee",
+      "soulWine": "Soul Wine",
+      "recommendation": "Đề xuất"
+    },
+    "shareMessages": {
+      "default": "Đồ uống tâm hồn của tôi là {type}! 🍷 Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "kakao": "Đồ uống tâm hồn của tôi là {type}! 🍷 Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "wechat": "Đồ uống tâm hồn của tôi là {type}! 🍷 Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "whatsapp": "Đồ uống tâm hồn của tôi là {type}! 🍷 Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "telegram": "Đồ uống tâm hồn của tôi là {type}! 🍷 Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "line": "Đồ uống tâm hồn của tôi là {type}! 🍷 Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "startDefault": "Tìm đồ uống tâm hồn của tôi (Cà phê & Rượu vang) 🍷☕ Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "startKakao": "Tìm đồ uống tâm hồn của tôi (Cà phê & Rượu vang) 🍷☕ Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "startWechat": "Tìm đồ uống tâm hồn của tôi (Cà phê & Rượu vang) 🍷☕ Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "startWhatsapp": "Tìm đồ uống tâm hồn của tôi (Cà phê & Rượu vang) 🍷☕ Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "startTelegram": "Tìm đồ uống tâm hồn của tôi (Cà phê & Rượu vang) 🍷☕ Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?",
+      "startLine": "Tìm đồ uống tâm hồn của tôi (Cà phê & Rượu vang) 🍷☕ Bạn sẽ thể hiện tính cách của mình bằng vị như thế nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Nếu không thể tránh khỏi cãi vã, bạn sẽ làm gì?\"",

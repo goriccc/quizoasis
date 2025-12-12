@@ -1397,6 +1397,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "soulDrinkTest": {
+    "startMessage": {
+      "line1": "\"What drink fills your soul?\"",
+      "line2": "Coffee that wakes up tired mornings, wine that comforts lazy evenings.",
+      "line3": "There's a 'soul drink' that perfectly matches not just 'taste', but your personality, atmosphere, and lifestyle.",
+      "line4": "Is it a lonely espresso? Or a sweet Moscato?",
+      "line5": "We analyze your taste DNA. Find my soul drink 🍷☕"
+    },
+    "ui": {
+      "startTest": "Find My Soul Drink",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Soul Drink)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "soulCoffee": "Soul Coffee",
+      "soulWine": "Soul Wine",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My soul drink is {type}! 🍷 How would you express your personality in taste?",
+      "kakao": "My soul drink is {type}! 🍷 How would you express your personality in taste?",
+      "wechat": "My soul drink is {type}! 🍷 How would you express your personality in taste?",
+      "whatsapp": "My soul drink is {type}! 🍷 How would you express your personality in taste?",
+      "telegram": "My soul drink is {type}! 🍷 How would you express your personality in taste?",
+      "line": "My soul drink is {type}! 🍷 How would you express your personality in taste?",
+      "startDefault": "Find My Soul Drink (Coffee & Wine) 🍷☕ How would you express your personality in taste?",
+      "startKakao": "Find My Soul Drink (Coffee & Wine) 🍷☕ How would you express your personality in taste?",
+      "startWechat": "Find My Soul Drink (Coffee & Wine) 🍷☕ How would you express your personality in taste?",
+      "startWhatsapp": "Find My Soul Drink (Coffee & Wine) 🍷☕ How would you express your personality in taste?",
+      "startTelegram": "Find My Soul Drink (Coffee & Wine) 🍷☕ How would you express your personality in taste?",
+      "startLine": "Find My Soul Drink (Coffee & Wine) 🍷☕ How would you express your personality in taste?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"If you can't avoid a fight, what do you do?\"",

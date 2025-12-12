@@ -1304,6 +1304,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "soulDrinkTest": {
+    "startMessage": {
+      "line1": "\"什麼飲品能填滿你的靈魂？\"",
+      "line2": "喚醒疲憊早晨的咖啡，安慰慵懶夜晚的葡萄酒。",
+      "line3": "不僅有「味道」，還有與你的性格、氛圍和生活方式完美匹配的「靈魂飲品」。",
+      "line4": "是孤獨的義式濃縮咖啡？還是甜美的莫斯卡托？",
+      "line5": "我們分析你的味覺DNA。找到我的靈魂飲品 🍷☕"
+    },
+    "ui": {
+      "startTest": "找到我的靈魂飲品",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域 (找到我的靈魂飲品)",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "soulCoffee": "Soul Coffee",
+      "soulWine": "Soul Wine",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的靈魂飲品是{type}！🍷 如何用味道表達你的性格？",
+      "kakao": "我的靈魂飲品是{type}！🍷 如何用味道表達你的性格？",
+      "wechat": "我的靈魂飲品是{type}！🍷 如何用味道表達你的性格？",
+      "whatsapp": "我的靈魂飲品是{type}！🍷 如何用味道表達你的性格？",
+      "telegram": "我的靈魂飲品是{type}！🍷 如何用味道表達你的性格？",
+      "line": "我的靈魂飲品是{type}！🍷 如何用味道表達你的性格？",
+      "startDefault": "找到我的靈魂飲品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表達你的性格？",
+      "startKakao": "找到我的靈魂飲品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表達你的性格？",
+      "startWechat": "找到我的靈魂飲品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表達你的性格？",
+      "startWhatsapp": "找到我的靈魂飲品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表達你的性格？",
+      "startTelegram": "找到我的靈魂飲品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表達你的性格？",
+      "startLine": "找到我的靈魂飲品 (咖啡 & 葡萄酒) 🍷☕ 如何用味道表達你的性格？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"如果無法避免爭吵，你會怎麼做？\"",
