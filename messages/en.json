@@ -1507,6 +1507,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "travelStyleTest": {
+    "startMessage": {
+      "line1": "\"Does travel start the moment you prepare, or the moment you leave?\"",
+      "line2": "Some people need a minute-by-minute Excel spreadsheet to feel at ease, while others just book a flight and go.",
+      "line3": "Travel styles that could lead to disaster or show unexpectedly amazing chemistry when traveling together!",
+      "line4": "Are you a thorough planner or a free spirit? We analyze your travel DNA.",
+      "line5": "Discover my travel type ✈️ J vs P tendency diagnosis 🗺️"
+    },
+    "ui": {
+      "startTest": "Discover My Travel Type",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Travel Style)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "jScore": "J Score",
+      "characteristics": "Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My travel style is {type}! ✈️ Who would fight with me if we traveled together?",
+      "kakao": "My travel style is {type}! ✈️ Who would fight with me if we traveled together?",
+      "wechat": "My travel style is {type}! ✈️ Who would fight with me if we traveled together?",
+      "whatsapp": "My travel style is {type}! ✈️ Who would fight with me if we traveled together?",
+      "telegram": "My travel style is {type}! ✈️ Who would fight with me if we traveled together?",
+      "line": "My travel style is {type}! ✈️ Who would fight with me if we traveled together?",
+      "startDefault": "My 'Travel' Style (J vs P Diagnosis) ✈️ Who would fight with me if we traveled together?",
+      "startKakao": "My 'Travel' Style (J vs P Diagnosis) ✈️ Who would fight with me if we traveled together?",
+      "startWechat": "My 'Travel' Style (J vs P Diagnosis) ✈️ Who would fight with me if we traveled together?",
+      "startWhatsapp": "My 'Travel' Style (J vs P Diagnosis) ✈️ Who would fight with me if we traveled together?",
+      "startTelegram": "My 'Travel' Style (J vs P Diagnosis) ✈️ Who would fight with me if we traveled together?",
+      "startLine": "My 'Travel' Style (J vs P Diagnosis) ✈️ Who would fight with me if we traveled together?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"If you can't avoid a fight, what do you do?\"",

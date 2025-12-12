@@ -1463,6 +1463,62 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "travelStyleTest": {
+    "startMessage": {
+      "line1": "\"旅行は準備する瞬間から始まるのか、出発する瞬間から始まるのか？\"",
+      "line2": "分単位で細かく分けられたエクセルの計画表がないと不安な人と、飛行機のチケットだけ取ってとりあえず出発する人がいます。",
+      "line3": "一緒に旅行に行くと破局を迎えるかもしれない、または意外な素晴らしいケミストリーを見せるかもしれない旅行スタイル！",
+      "line4": "あなたは徹底的な計画派ですか、それとも自由な魂ですか？あなたの旅行DNAを分析します。",
+      "line5": "私の旅行タイプを確認する ✈️ J vs P 傾向診断 🗺️"
+    },
+    "ui": {
+      "startTest": "旅行タイプを確認する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の旅行スタイル）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "jScore": "J指数",
+      "characteristics": "主な特徴",
+      "goodMatch": "理想の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の旅行スタイルは{type}！ ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "kakao": "私の旅行スタイルは{type}！ ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "wechat": "私の旅行スタイルは{type}！ ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "whatsapp": "私の旅行スタイルは{type}！ ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "telegram": "私の旅行スタイルは{type}！ ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "line": "私の旅行スタイルは{type}！ ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "startDefault": "私の「旅行」スタイル（J vs P診断） ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "startKakao": "私の「旅行」スタイル（J vs P診断） ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "startWechat": "私の「旅行」スタイル（J vs P診断） ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "startWhatsapp": "私の「旅行」スタイル（J vs P診断） ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "startTelegram": "私の「旅行」スタイル（J vs P診断） ✈️ 私と旅行に行くと喧嘩する人は誰？",
+      "startLine": "私の「旅行」スタイル（J vs P診断） ✈️ 私と旅行に行くと喧嘩する人は誰？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "「一人でも大丈夫 vs 誰かが必要」",

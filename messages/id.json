@@ -1462,6 +1462,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "travelStyleTest": {
+    "startMessage": {
+      "line1": "\"Apakah perjalanan dimulai saat Anda mempersiapkan, atau saat Anda berangkat?\"",
+      "line2": "Beberapa orang membutuhkan spreadsheet Excel per menit untuk merasa tenang, sementara yang lain hanya memesan tiket pesawat dan pergi.",
+      "line3": "Gaya perjalanan yang bisa menyebabkan bencana atau menunjukkan chemistry yang luar biasa secara tak terduga saat bepergian bersama!",
+      "line4": "Apakah Anda perencana yang teliti atau jiwa bebas? Kami menganalisis DNA perjalanan Anda.",
+      "line5": "Temukan tipe perjalanan saya ✈️ Diagnosis kecenderungan J vs P 🗺️"
+    },
+    "ui": {
+      "startTest": "Temukan Tipe Perjalanan Saya",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Gaya Perjalanan Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa",
+      "jScore": "Skor J",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Ideal",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Gaya perjalanan saya adalah {type}! ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "kakao": "Gaya perjalanan saya adalah {type}! ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "wechat": "Gaya perjalanan saya adalah {type}! ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "whatsapp": "Gaya perjalanan saya adalah {type}! ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "telegram": "Gaya perjalanan saya adalah {type}! ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "line": "Gaya perjalanan saya adalah {type}! ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "startDefault": "Gaya 'Perjalanan' Saya (Diagnosis J vs P) ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "startKakao": "Gaya 'Perjalanan' Saya (Diagnosis J vs P) ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "startWechat": "Gaya 'Perjalanan' Saya (Diagnosis J vs P) ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "startWhatsapp": "Gaya 'Perjalanan' Saya (Diagnosis J vs P) ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "startTelegram": "Gaya 'Perjalanan' Saya (Diagnosis J vs P) ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?",
+      "startLine": "Gaya 'Perjalanan' Saya (Diagnosis J vs P) ✈️ Siapa yang akan bertengkar dengan saya jika kita bepergian bersama?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Baik-baik saja sendirian vs Perlu seseorang\"",

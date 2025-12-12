@@ -669,6 +669,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "travelStyleTest": {
+    "startMessage": {
+      "line1": "\"여행은 준비하는 순간부터 시작일까요, 떠나는 순간부터 시작일까요?\"",
+      "line2": "분단위로 쪼개진 엑셀 계획표가 있어야 마음이 놓이는 사람과, 비행기 표만 끊고 일단 떠나는 사람이 있습니다.",
+      "line3": "함께 여행 가면 파국을 맞이할 수도, 의외의 환상 케미를 보여줄 수도 있는 여행 스타일!",
+      "line4": "당신은 철저한 계획파인가요, 아니면 자유로운 영혼인가요? 당신의 여행 DNA를 분석해 드립니다.",
+      "line5": "나의 여행 유형 확인하기 ✈️ J vs P 성향 진단 🗺️"
+    },
+    "ui": {
+      "startTest": "여행 유형 확인하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나의 여행 스타일)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "jScore": "J 지수",
+      "characteristics": "주요 특징",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍"
+    },
+    "shareMessages": {
+      "default": "내 여행 스타일은 {type}! ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "kakao": "내 여행 스타일은 {type}! ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "wechat": "내 여행 스타일은 {type}! ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "whatsapp": "내 여행 스타일은 {type}! ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "telegram": "내 여행 스타일은 {type}! ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "line": "내 여행 스타일은 {type}! ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "startDefault": "나의 '여행' 스타일 (J vs P 진단) ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "startKakao": "나의 '여행' 스타일 (J vs P 진단) ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "startWechat": "나의 '여행' 스타일 (J vs P 진단) ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "startWhatsapp": "나의 '여행' 스타일 (J vs P 진단) ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "startTelegram": "나의 '여행' 스타일 (J vs P 진단) ✈️ 나랑 여행 가면 싸울 사람 누구?",
+      "startLine": "나의 '여행' 스타일 (J vs P 진단) ✈️ 나랑 여행 가면 싸울 사람 누구?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"싸움, 피할 수 없다면 어떻게 하시나요?\"",

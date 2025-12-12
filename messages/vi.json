@@ -1462,6 +1462,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "travelStyleTest": {
+    "startMessage": {
+      "line1": "\"Du lịch bắt đầu từ lúc chuẩn bị hay từ lúc lên đường?\"",
+      "line2": "Có người cần bảng kế hoạch Excel chia từng phút mới yên tâm, có người chỉ cần mua vé máy bay là đi.",
+      "line3": "Phong cách du lịch có thể dẫn đến thảm họa hoặc tạo ra sự hòa hợp tuyệt vời bất ngờ khi đi cùng nhau!",
+      "line4": "Bạn là người lập kế hoạch kỹ lưỡng hay linh hồn tự do? Chúng tôi phân tích DNA du lịch của bạn.",
+      "line5": "Khám phá kiểu du lịch của tôi ✈️ Chẩn đoán xu hướng J vs P 🗺️"
+    },
+    "ui": {
+      "startTest": "Khám phá kiểu du lịch của tôi",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Phong cách du lịch của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "jScore": "Chỉ số J",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi lý tưởng",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Phong cách du lịch của tôi là {type}! ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "kakao": "Phong cách du lịch của tôi là {type}! ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "wechat": "Phong cách du lịch của tôi là {type}! ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "whatsapp": "Phong cách du lịch của tôi là {type}! ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "telegram": "Phong cách du lịch của tôi là {type}! ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "line": "Phong cách du lịch của tôi là {type}! ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "startDefault": "Phong cách 'Du lịch' của tôi (Chẩn đoán J vs P) ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "startKakao": "Phong cách 'Du lịch' của tôi (Chẩn đoán J vs P) ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "startWechat": "Phong cách 'Du lịch' của tôi (Chẩn đoán J vs P) ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "startWhatsapp": "Phong cách 'Du lịch' của tôi (Chẩn đoán J vs P) ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "startTelegram": "Phong cách 'Du lịch' của tôi (Chẩn đoán J vs P) ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?",
+      "startLine": "Phong cách 'Du lịch' của tôi (Chẩn đoán J vs P) ✈️ Ai sẽ cãi nhau với tôi nếu đi du lịch cùng?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Ổn một mình vs Cần ai đó\"",

@@ -1469,6 +1469,62 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "travelStyleTest": {
+    "startMessage": {
+      "line1": "\"旅行是從準備的那一刻開始，還是從出發的那一刻開始？\"",
+      "line2": "有些人需要按分鐘劃分的Excel計劃表才能安心，而有些人只買機票就出發。",
+      "line3": "一起旅行可能會面臨災難，也可能展現出意想不到的絕佳默契的旅行風格！",
+      "line4": "你是徹底的計劃派，還是自由的靈魂？我們分析你的旅行DNA。",
+      "line5": "發現我的旅行類型 ✈️ J vs P 傾向診斷 🗺️"
+    },
+    "ui": {
+      "startTest": "發現我的旅行類型",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的旅行風格）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "jScore": "J指數",
+      "characteristics": "主要特徵",
+      "goodMatch": "理想配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的旅行風格是{type}！ ✈️ 和我一起旅行會吵架的人是誰？",
+      "kakao": "我的旅行風格是{type}！ ✈️ 和我一起旅行會吵架的人是誰？",
+      "wechat": "我的旅行風格是{type}！ ✈️ 和我一起旅行會吵架的人是誰？",
+      "whatsapp": "我的旅行風格是{type}！ ✈️ 和我一起旅行會吵架的人是誰？",
+      "telegram": "我的旅行風格是{type}！ ✈️ 和我一起旅行會吵架的人是誰？",
+      "line": "我的旅行風格是{type}！ ✈️ 和我一起旅行會吵架的人是誰？",
+      "startDefault": "我的「旅行」風格（J vs P診斷） ✈️ 和我一起旅行會吵架的人是誰？",
+      "startKakao": "我的「旅行」風格（J vs P診斷） ✈️ 和我一起旅行會吵架的人是誰？",
+      "startWechat": "我的「旅行」風格（J vs P診斷） ✈️ 和我一起旅行會吵架的人是誰？",
+      "startWhatsapp": "我的「旅行」風格（J vs P診斷） ✈️ 和我一起旅行會吵架的人是誰？",
+      "startTelegram": "我的「旅行」風格（J vs P診斷） ✈️ 和我一起旅行會吵架的人是誰？",
+      "startLine": "我的「旅行」風格（J vs P診斷） ✈️ 和我一起旅行會吵架的人是誰？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"獨自也可以 vs 需要有人\"",
