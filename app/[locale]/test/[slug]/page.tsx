@@ -27,6 +27,7 @@ import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
+import { superpowerQuestions, superpowerResults } from '@/lib/superpowerData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -125,6 +126,9 @@ const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const SuperpowerTestClient = dynamic(() => import('@/components/SuperpowerTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const ConflictStyleTestClient = dynamic(() => import('@/components/ConflictStyleTestClient'), {
@@ -1619,6 +1623,59 @@ export default async function TestPage({ params }: Props) {
           questions={soulDrinkQuestions}
           results={soulDrinkResults}
           questionCount={soulDrinkQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_superpower-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_superpower-test',
+      title: {
+        ko: '나의 숨겨진 \'초능력\' 찾기',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '남들에게는 없는 특별한 힘이 나에게 있다면?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_041_superpower.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <SuperpowerTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={superpowerQuestions}
+          results={superpowerResults}
+          questionCount={superpowerQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3802,6 +3859,11 @@ export default async function TestPage({ params }: Props) {
       questions: soulDrinkQuestions,
       results: soulDrinkResults
     };
+  } else if (slug === 'phase2_superpower-test') {
+    testData = {
+      questions: superpowerQuestions,
+      results: superpowerResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -4001,6 +4063,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
+    else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'conflict-style-test') TestClient = ConflictStyleTestClient;
     else if (slug === 'conversation-style-test') TestClient = ConversationStyleTestClient;
     else if (slug === 'flirting-style-test') TestClient = FlirtingStyleTestClient;

@@ -1408,6 +1408,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "superpowerTest": {
+    "startMessage": {
+      "line1": "\"他の人にはない特別な力が私にあるとしたら？\"",
+      "line2": "誰もが一度は想像したことのある超能力。",
+      "line3": "時間を戻したい、誰かの心を読みたいと思った瞬間はありませんか？",
+      "line4": "あなたの無意識の欲望と性格を分析し、潜在している「魂の超能力」を目覚めさせます。",
+      "line5": "マーベルヒーローも羨む私の能力は？私の潜在能力を確認する ⚡"
+    },
+    "ui": {
+      "startTest": "潜在能力を確認する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の隠された超能力を見つける）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "mainAbility": "主な能力",
+      "personalityKeywords": "性格キーワード",
+      "usage": "活用方法"
+    },
+    "shareMessages": {
+      "default": "私の潜在能力は{type}！ ⚡ マーベルヒーローデビュー可能？",
+      "kakao": "私の潜在能力は{type}！ ⚡ マーベルヒーローデビュー可能？",
+      "wechat": "私の潜在能力は{type}！ ⚡ マーベルヒーローデビュー可能？",
+      "whatsapp": "私の潜在能力は{type}！ ⚡ マーベルヒーローデビュー可能？",
+      "telegram": "私の潜在能力は{type}！ ⚡ マーベルヒーローデビュー可能？",
+      "line": "私の潜在能力は{type}！ ⚡ マーベルヒーローデビュー可能？",
+      "startDefault": "私の隠された「超能力」を見つける ⚡ マーベルヒーローデビュー可能？",
+      "startKakao": "私の隠された「超能力」を見つける ⚡ マーベルヒーローデビュー可能？",
+      "startWechat": "私の隠された「超能力」を見つける ⚡ マーベルヒーローデビュー可能？",
+      "startWhatsapp": "私の隠された「超能力」を見つける ⚡ マーベルヒーローデビュー可能？",
+      "startTelegram": "私の隠された「超能力」を見つける ⚡ マーベルヒーローデビュー可能？",
+      "startLine": "私の隠された「超能力」を見つける ⚡ マーベルヒーローデビュー可能？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "「一人でも大丈夫 vs 誰かが必要」",

@@ -1414,6 +1414,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "superpowerTest": {
+    "startMessage": {
+      "line1": "\"如果我有別人沒有的特殊力量？\"",
+      "line2": "每個人都曾想像過的超能力。",
+      "line3": "你是否曾想過回到過去或讀懂別人的心？",
+      "line4": "我們分析你的潛意識慾望和性格，喚醒你潛在的「靈魂超能力」。",
+      "line5": "讓漫威英雄都羨慕的能力是什麼？發現我的潛在能力 ⚡"
+    },
+    "ui": {
+      "startTest": "發現我的潛在能力",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（找到我隱藏的超能力）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "mainAbility": "主要能力",
+      "personalityKeywords": "性格關鍵詞",
+      "usage": "使用方法"
+    },
+    "shareMessages": {
+      "default": "我的潛在能力是{type}！ ⚡ 準備好漫威首秀了嗎？",
+      "kakao": "我的潛在能力是{type}！ ⚡ 準備好漫威首秀了嗎？",
+      "wechat": "我的潛在能力是{type}！ ⚡ 準備好漫威首秀了嗎？",
+      "whatsapp": "我的潛在能力是{type}！ ⚡ 準備好漫威首秀了嗎？",
+      "telegram": "我的潛在能力是{type}！ ⚡ 準備好漫威首秀了嗎？",
+      "line": "我的潛在能力是{type}！ ⚡ 準備好漫威首秀了嗎？",
+      "startDefault": "找到我隱藏的「超能力」 ⚡ 準備好漫威首秀了嗎？",
+      "startKakao": "找到我隱藏的「超能力」 ⚡ 準備好漫威首秀了嗎？",
+      "startWechat": "找到我隱藏的「超能力」 ⚡ 準備好漫威首秀了嗎？",
+      "startWhatsapp": "找到我隱藏的「超能力」 ⚡ 準備好漫威首秀了嗎？",
+      "startTelegram": "找到我隱藏的「超能力」 ⚡ 準備好漫威首秀了嗎？",
+      "startLine": "找到我隱藏的「超能力」 ⚡ 準備好漫威首秀了嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"獨自也可以 vs 需要有人\"",

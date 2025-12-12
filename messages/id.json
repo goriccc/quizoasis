@@ -1407,6 +1407,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "superpowerTest": {
+    "startMessage": {
+      "line1": "\"Bagaimana jika saya memiliki kekuatan khusus yang tidak dimiliki orang lain?\"",
+      "line2": "Kekuatan super yang pernah dibayangkan semua orang setidaknya sekali.",
+      "line3": "Pernahkah Anda ingin memutar kembali waktu atau membaca pikiran seseorang?",
+      "line4": "Kami menganalisis keinginan bawah sadar dan kepribadian Anda untuk membangunkan 'kekuatan super jiwa' yang tersembunyi.",
+      "line5": "Kemampuan apa yang akan membuat pahlawan Marvel iri? Temukan potensi tersembunyi saya ⚡"
+    },
+    "ui": {
+      "startTest": "Temukan Potensi Saya",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Kekuatan Super Tersembunyi Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa",
+      "mainAbility": "Kemampuan Utama",
+      "personalityKeywords": "Kata Kunci Kepribadian",
+      "usage": "Penggunaan"
+    },
+    "shareMessages": {
+      "default": "Kemampuan tersembunyi saya adalah {type}! ⚡ Siap untuk debut Marvel?",
+      "kakao": "Kemampuan tersembunyi saya adalah {type}! ⚡ Siap untuk debut Marvel?",
+      "wechat": "Kemampuan tersembunyi saya adalah {type}! ⚡ Siap untuk debut Marvel?",
+      "whatsapp": "Kemampuan tersembunyi saya adalah {type}! ⚡ Siap untuk debut Marvel?",
+      "telegram": "Kemampuan tersembunyi saya adalah {type}! ⚡ Siap untuk debut Marvel?",
+      "line": "Kemampuan tersembunyi saya adalah {type}! ⚡ Siap untuk debut Marvel?",
+      "startDefault": "Temukan 'Kekuatan Super' Tersembunyi Saya ⚡ Siap untuk debut Marvel?",
+      "startKakao": "Temukan 'Kekuatan Super' Tersembunyi Saya ⚡ Siap untuk debut Marvel?",
+      "startWechat": "Temukan 'Kekuatan Super' Tersembunyi Saya ⚡ Siap untuk debut Marvel?",
+      "startWhatsapp": "Temukan 'Kekuatan Super' Tersembunyi Saya ⚡ Siap untuk debut Marvel?",
+      "startTelegram": "Temukan 'Kekuatan Super' Tersembunyi Saya ⚡ Siap untuk debut Marvel?",
+      "startLine": "Temukan 'Kekuatan Super' Tersembunyi Saya ⚡ Siap untuk debut Marvel?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Baik-baik saja sendirian vs Perlu seseorang\"",

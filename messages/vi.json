@@ -1407,6 +1407,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "superpowerTest": {
+    "startMessage": {
+      "line1": "\"Nếu tôi có sức mạnh đặc biệt mà người khác không có?\"",
+      "line2": "Siêu năng lực mà ai cũng đã từng tưởng tượng ít nhất một lần.",
+      "line3": "Bạn đã bao giờ muốn quay ngược thời gian hoặc đọc được suy nghĩ của ai đó chưa?",
+      "line4": "Chúng tôi phân tích những mong muốn vô thức và tính cách của bạn để đánh thức 'siêu năng lực tâm hồn' tiềm ẩn.",
+      "line5": "Khả năng nào khiến các anh hùng Marvel phải ghen tị? Khám phá tiềm năng ẩn giấu của tôi ⚡"
+    },
+    "ui": {
+      "startTest": "Khám phá tiềm năng của tôi",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tìm siêu năng lực ẩn giấu của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "mainAbility": "Khả năng chính",
+      "personalityKeywords": "Từ khóa tính cách",
+      "usage": "Cách sử dụng"
+    },
+    "shareMessages": {
+      "default": "Khả năng ẩn giấu của tôi là {type}! ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "kakao": "Khả năng ẩn giấu của tôi là {type}! ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "wechat": "Khả năng ẩn giấu của tôi là {type}! ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "whatsapp": "Khả năng ẩn giấu của tôi là {type}! ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "telegram": "Khả năng ẩn giấu của tôi là {type}! ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "line": "Khả năng ẩn giấu của tôi là {type}! ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "startDefault": "Tìm 'Siêu năng lực' ẩn giấu của tôi ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "startKakao": "Tìm 'Siêu năng lực' ẩn giấu của tôi ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "startWechat": "Tìm 'Siêu năng lực' ẩn giấu của tôi ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "startWhatsapp": "Tìm 'Siêu năng lực' ẩn giấu của tôi ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "startTelegram": "Tìm 'Siêu năng lực' ẩn giấu của tôi ⚡ Sẵn sàng cho lần ra mắt Marvel?",
+      "startLine": "Tìm 'Siêu năng lực' ẩn giấu của tôi ⚡ Sẵn sàng cho lần ra mắt Marvel?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "\"Ổn một mình vs Cần ai đó\"",

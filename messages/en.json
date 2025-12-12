@@ -1452,6 +1452,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "superpowerTest": {
+    "startMessage": {
+      "line1": "\"What special power would I have that others don't?\"",
+      "line2": "Superpowers that everyone has imagined at least once.",
+      "line3": "Have you ever wanted to turn back time or read someone's mind?",
+      "line4": "We analyze your unconscious desires and personality to awaken your hidden 'soul superpower'.",
+      "line5": "What ability would make Marvel heroes jealous? Discover my hidden potential ⚡"
+    },
+    "ui": {
+      "startTest": "Discover My Potential",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Hidden Superpower)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "mainAbility": "Main Ability",
+      "personalityKeywords": "Personality Keywords",
+      "usage": "Usage"
+    },
+    "shareMessages": {
+      "default": "My hidden ability is {type}! ⚡ Ready for Marvel debut?",
+      "kakao": "My hidden ability is {type}! ⚡ Ready for Marvel debut?",
+      "wechat": "My hidden ability is {type}! ⚡ Ready for Marvel debut?",
+      "whatsapp": "My hidden ability is {type}! ⚡ Ready for Marvel debut?",
+      "telegram": "My hidden ability is {type}! ⚡ Ready for Marvel debut?",
+      "line": "My hidden ability is {type}! ⚡ Ready for Marvel debut?",
+      "startDefault": "Find My Hidden 'Superpower' ⚡ Ready for Marvel debut?",
+      "startKakao": "Find My Hidden 'Superpower' ⚡ Ready for Marvel debut?",
+      "startWechat": "Find My Hidden 'Superpower' ⚡ Ready for Marvel debut?",
+      "startWhatsapp": "Find My Hidden 'Superpower' ⚡ Ready for Marvel debut?",
+      "startTelegram": "Find My Hidden 'Superpower' ⚡ Ready for Marvel debut?",
+      "startLine": "Find My Hidden 'Superpower' ⚡ Ready for Marvel debut?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"If you can't avoid a fight, what do you do?\"",
