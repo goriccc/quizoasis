@@ -1462,6 +1462,62 @@
       "popularTestsTop5": "🔥 Top 5 Test Populer Terkini"
     }
   },
+  "phase2RelationshipCutTest": {
+    "startMessage": {
+      "line1": "\"Bagaimana daftar jaringan sosial Anda?\"",
+      "line2": "Anda tidak bisa mempertahankan semua hubungan.",
+      "line3": "Orang yang hanya menyakiti Anda, orang yang hanya menguras energi Anda...",
+      "line4": "Bagaimana Anda menangani hubungan yang tidak cocok?",
+      "line5": "Apakah Anda tipe 'pemotong tajam' yang dengan dingin menekan tombol blokir, atau tipe 'penurut' yang tidak bisa memutuskan hubungan dan menderita di dalam. Kami mendiagnosis tanggal kedaluwarsa hubungan dan gaya pembersihan Anda. Periksa gaya diet jaringan sosial saya ✂️ Tes tipe pembersihan hubungan 🗑️"
+    },
+    "ui": {
+      "startTest": "Tes Tipe Pembersihan Hubungan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Test Lainnya",
+      "goToTest": "Pergi ke Test",
+      "adsenseTitle": "Area Iklan AdSense (Test Tipe Pembersihan Hubungan Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test Serupa Lainnya",
+      "cutSpeed": "Kecepatan Pemutusan",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Gaya pembersihan hubungan saya adalah {type}! ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "kakao": "Gaya pembersihan hubungan saya adalah {type}! ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "wechat": "Gaya pembersihan hubungan saya adalah {type}! ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "whatsapp": "Gaya pembersihan hubungan saya adalah {type}! ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "telegram": "Gaya pembersihan hubungan saya adalah {type}! ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "line": "Gaya pembersihan hubungan saya adalah {type}! ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "startDefault": "Test Tipe Pembersihan 'Hubungan' Saya ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "startKakao": "Test Tipe Pembersihan 'Hubungan' Saya ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "startWechat": "Test Tipe Pembersihan 'Hubungan' Saya ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "startWhatsapp": "Test Tipe Pembersihan 'Hubungan' Saya ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "startTelegram": "Test Tipe Pembersihan 'Hubungan' Saya ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?",
+      "startLine": "Test Tipe Pembersihan 'Hubungan' Saya ✂️ Jika Anda menyeberang saya, tidak ada yang tersisa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Test Serupa",
+      "popularTestsTop5": "🔥 Top 5 Test Populer Terkini"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Jika Anda tidak bisa menghindari pertengkaran, apa yang akan Anda lakukan?\"",

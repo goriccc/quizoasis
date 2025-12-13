@@ -1462,6 +1462,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase2RelationshipCutTest": {
+    "startMessage": {
+      "line1": "\"Danh sách mối quan hệ của bạn, ổn chứ?\"",
+      "line2": "Bạn không thể giữ tất cả các mối quan hệ.",
+      "line3": "Những người chỉ làm tổn thương bạn, những người chỉ lấy đi năng lượng của bạn...",
+      "line4": "Bạn xử lý những mối quan hệ không phù hợp như thế nào?",
+      "line5": "Bạn là kiểu 'cắt đứt sắc bén' nhấn nút chặn lạnh lùng, hay kiểu 'dễ bị lợi dụng' không thể cắt đứt và đau khổ trong lòng. Chúng tôi chẩn đoán hạn sử dụng và phong cách dọn dẹp mối quan hệ của bạn. Kiểm tra phong cách ăn kiêng mạng lưới xã hội của tôi ✂️ Kiểm tra loại dọn dẹp mối quan hệ 🗑️"
+    },
+    "ui": {
+      "startTest": "Kiểm tra loại dọn dẹp mối quan hệ",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài test loại dọn dẹp mối quan hệ của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự khác",
+      "cutSpeed": "Tốc độ cắt đứt",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Phong cách dọn dẹp mối quan hệ của tôi là {type}! ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "kakao": "Phong cách dọn dẹp mối quan hệ của tôi là {type}! ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "wechat": "Phong cách dọn dẹp mối quan hệ của tôi là {type}! ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "whatsapp": "Phong cách dọn dẹp mối quan hệ của tôi là {type}! ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "telegram": "Phong cách dọn dẹp mối quan hệ của tôi là {type}! ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "line": "Phong cách dọn dẹp mối quan hệ của tôi là {type}! ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "startDefault": "Bài test loại dọn dẹp 'Mối quan hệ' của tôi ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "startKakao": "Bài test loại dọn dẹp 'Mối quan hệ' của tôi ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "startWechat": "Bài test loại dọn dẹp 'Mối quan hệ' của tôi ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "startWhatsapp": "Bài test loại dọn dẹp 'Mối quan hệ' của tôi ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "startTelegram": "Bài test loại dọn dẹp 'Mối quan hệ' của tôi ✂️ Nếu bạn chọc tôi, sẽ không còn gì?",
+      "startLine": "Bài test loại dọn dẹp 'Mối quan hệ' của tôi ✂️ Nếu bạn chọc tôi, sẽ không còn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Nếu không thể tránh khỏi cãi vã, bạn sẽ làm gì?\"",

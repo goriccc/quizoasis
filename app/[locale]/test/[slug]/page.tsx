@@ -31,6 +31,7 @@ import { superpowerQuestions, superpowerResults } from '@/lib/superpowerData';
 import { travelStyleQuestions, travelStyleResults } from '@/lib/travelStyleData';
 import { phase2PerfectionismQuestions, phase2PerfectionismResults } from '@/lib/phase2PerfectionismData';
 import { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } from '@/lib/phase2FriendshipStyleData';
+import { phase2RelationshipCutQuestions, phase2RelationshipCutResults } from '@/lib/phase2RelationshipCutData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -132,6 +133,9 @@ const Phase2PerfectionismTestClient = dynamic(() => import('@/components/Phase2P
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const Phase2FriendshipStyleTestClient = dynamic(() => import('@/components/Phase2FriendshipStyleTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const Phase2RelationshipCutTestClient = dynamic(() => import('@/components/Phase2RelationshipCutTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1848,6 +1852,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2FriendshipStyleQuestions}
           results={phase2FriendshipStyleResults}
           questionCount={phase2FriendshipStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_relationship-cut-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_relationship-cut-test',
+      title: {
+        ko: "나의 '인간관계' 정리 유형 (손절 스타일 테스트)",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      description: {
+        ko: "당신의 인맥 리스트, 안녕하신가요?",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      thumbnail: 'phase2_test_153_relationship_cut.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '자아탐색'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2RelationshipCutTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2RelationshipCutQuestions}
+          results={phase2RelationshipCutResults}
+          questionCount={phase2RelationshipCutQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -4051,6 +4108,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2FriendshipStyleQuestions,
       results: phase2FriendshipStyleResults
     };
+  } else if (slug === 'phase2_relationship-cut-test') {
+    testData = {
+      questions: phase2RelationshipCutQuestions,
+      results: phase2RelationshipCutResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -4251,6 +4313,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'phase2_perfectionism-test') TestClient = Phase2PerfectionismTestClient;
     else if (slug === 'phase2_friendship-style-test') TestClient = Phase2FriendshipStyleTestClient;
+    else if (slug === 'phase2_relationship-cut-test') TestClient = Phase2RelationshipCutTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

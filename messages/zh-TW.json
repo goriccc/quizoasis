@@ -1469,6 +1469,62 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
   },
+  "phase2RelationshipCutTest": {
+    "startMessage": {
+      "line1": "「你的人脈列表，還好嗎？」",
+      "line2": "無法維持所有關係。",
+      "line3": "只傷害我的人，只消耗我能量的人...",
+      "line4": "你如何處理不合適的關係？",
+      "line5": "是冷靜按下屏蔽按鈕的「果斷斷交型」，還是無法斷交而內心痛苦的「老好人型」。我們診斷你的人際關係保質期和整理風格。查看我的人脈減肥風格 ✂️ 關係整理類型檢查 🗑️"
+    },
+    "ui": {
+      "startTest": "關係整理類型檢查",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的人際關係整理類型測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "cutSpeed": "斷交速度",
+      "characteristics": "主要特徵",
+      "goodMatch": "理想配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的人際關係整理風格是{type}！✂️ 惹到我什麼都沒有？",
+      "kakao": "我的人際關係整理風格是{type}！✂️ 惹到我什麼都沒有？",
+      "wechat": "我的人際關係整理風格是{type}！✂️ 惹到我什麼都沒有？",
+      "whatsapp": "我的人際關係整理風格是{type}！✂️ 惹到我什麼都沒有？",
+      "telegram": "我的人際關係整理風格是{type}！✂️ 惹到我什麼都沒有？",
+      "line": "我的人際關係整理風格是{type}！✂️ 惹到我什麼都沒有？",
+      "startDefault": "我的「人際關係」整理類型測試 ✂️ 惹到我什麼都沒有？",
+      "startKakao": "我的「人際關係」整理類型測試 ✂️ 惹到我什麼都沒有？",
+      "startWechat": "我的「人際關係」整理類型測試 ✂️ 惹到我什麼都沒有？",
+      "startWhatsapp": "我的「人際關係」整理類型測試 ✂️ 惹到我什麼都沒有？",
+      "startTelegram": "我的「人際關係」整理類型測試 ✂️ 惹到我什麼都沒有？",
+      "startLine": "我的「人際關係」整理類型測試 ✂️ 惹到我什麼都沒有？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"如果無法避免爭吵，你會怎麼做？\"",

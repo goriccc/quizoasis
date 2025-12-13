@@ -835,6 +835,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2RelationshipCutTest": {
+    "startMessage": {
+      "line1": "\"당신의 인맥 리스트, 안녕하신가요?\"",
+      "line2": "모든 관계를 다 안고 갈 수는 없습니다.",
+      "line3": "나에게 상처만 주는 사람, 에너지만 뺏는 사람...",
+      "line4": "당신은 맞지 않는 관계를 어떻게 정리하나요?",
+      "line5": "냉정하게 차단 버튼을 누르는 '칼손절러'인지, 차마 끊지 못해 속앓이하는 '호구형'인지. 당신의 인간관계 유통기한과 정리 스타일을 진단해 드립니다. 내 인맥 다이어트 스타일 확인하기 ✂️ 관계 정리 유형 검사 🗑️"
+    },
+    "ui": {
+      "startTest": "관계 정리 유형 검사",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나의 인간관계 정리 유형 테스트)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "cutSpeed": "손절 속도",
+      "characteristics": "주요 특징",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍"
+    },
+    "shareMessages": {
+      "default": "내 인간관계 정리 스타일은 {type}! ✂️ 나한테 걸리면 국물도 없음?",
+      "kakao": "내 인간관계 정리 스타일은 {type}! ✂️ 나한테 걸리면 국물도 없음?",
+      "wechat": "내 인간관계 정리 스타일은 {type}! ✂️ 나한테 걸리면 국물도 없음?",
+      "whatsapp": "내 인간관계 정리 스타일은 {type}! ✂️ 나한테 걸리면 국물도 없음?",
+      "telegram": "내 인간관계 정리 스타일은 {type}! ✂️ 나한테 걸리면 국물도 없음?",
+      "line": "내 인간관계 정리 스타일은 {type}! ✂️ 나한테 걸리면 국물도 없음?",
+      "startDefault": "나의 '인간관계' 정리 유형 테스트 ✂️ 나한테 걸리면 국물도 없음?",
+      "startKakao": "나의 '인간관계' 정리 유형 테스트 ✂️ 나한테 걸리면 국물도 없음?",
+      "startWechat": "나의 '인간관계' 정리 유형 테스트 ✂️ 나한테 걸리면 국물도 없음?",
+      "startWhatsapp": "나의 '인간관계' 정리 유형 테스트 ✂️ 나한테 걸리면 국물도 없음?",
+      "startTelegram": "나의 '인간관계' 정리 유형 테스트 ✂️ 나한테 걸리면 국물도 없음?",
+      "startLine": "나의 '인간관계' 정리 유형 테스트 ✂️ 나한테 걸리면 국물도 없음?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! 위챗에 붙여넣어 공유해주세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"싸움, 피할 수 없다면 어떻게 하시나요?\"",

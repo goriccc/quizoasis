@@ -1673,6 +1673,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2RelationshipCutTest": {
+    "startMessage": {
+      "line1": "\"How are your social connections doing?\"",
+      "line2": "You can't hold onto all relationships.",
+      "line3": "People who only hurt you, people who only drain your energy...",
+      "line4": "How do you handle relationships that don't fit?",
+      "line5": "Are you a 'sharp cutter' who coldly presses the block button, or a 'pushover type' who can't bring yourself to cut ties and suffers inside? We diagnose your relationship expiration date and cleanup style. Check my social network diet style ✂️ Relationship cleanup type test 🗑️"
+    },
+    "ui": {
+      "startTest": "Relationship Cleanup Type Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Relationship Cleanup Type Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "cutSpeed": "Cut-off Speed",
+      "characteristics": "Main Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My relationship cleanup style is {type}! ✂️ If you cross me, there's nothing left?",
+      "kakao": "My relationship cleanup style is {type}! ✂️ If you cross me, there's nothing left?",
+      "wechat": "My relationship cleanup style is {type}! ✂️ If you cross me, there's nothing left?",
+      "whatsapp": "My relationship cleanup style is {type}! ✂️ If you cross me, there's nothing left?",
+      "telegram": "My relationship cleanup style is {type}! ✂️ If you cross me, there's nothing left?",
+      "line": "My relationship cleanup style is {type}! ✂️ If you cross me, there's nothing left?",
+      "startDefault": "My 'Relationship' Cleanup Type Test ✂️ If you cross me, there's nothing left?",
+      "startKakao": "My 'Relationship' Cleanup Type Test ✂️ If you cross me, there's nothing left?",
+      "startWechat": "My 'Relationship' Cleanup Type Test ✂️ If you cross me, there's nothing left?",
+      "startWhatsapp": "My 'Relationship' Cleanup Type Test ✂️ If you cross me, there's nothing left?",
+      "startTelegram": "My 'Relationship' Cleanup Type Test ✂️ If you cross me, there's nothing left?",
+      "startLine": "My 'Relationship' Cleanup Type Test ✂️ If you cross me, there's nothing left?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"If you can't avoid a fight, what do you do?\"",

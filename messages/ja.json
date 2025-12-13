@@ -1408,6 +1408,62 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2RelationshipCutTest": {
+    "startMessage": {
+      "line1": "「あなたの人脈リスト、元気ですか？」",
+      "line2": "すべての関係を抱え込むことはできません。",
+      "line3": "私を傷つけるだけの人、エネルギーを奪うだけの人...",
+      "line4": "あなたは合わない関係をどう整理しますか？",
+      "line5": "冷たくブロックボタンを押す「カット型」か、切れずに苦しむ「お人好し型」か。あなたの人間関係の賞味期限と整理スタイルを診断します。私の人脈ダイエットスタイルを確認 ✂️ 関係整理タイプ検診 🗑️"
+    },
+    "ui": {
+      "startTest": "関係整理タイプ検診",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテスト",
+      "goToTest": "テストへ",
+      "adsenseTitle": "AdSense広告エリア（私の人間関係整理タイプテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "cutSpeed": "手切れ速度",
+      "characteristics": "主要特徴",
+      "goodMatch": "理想の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の人間関係整理スタイルは{type}！✂️ 私に当たったら何も残らない？",
+      "kakao": "私の人間関係整理スタイルは{type}！✂️ 私に当たったら何も残らない？",
+      "wechat": "私の人間관계整理スタイルは{type}！✂️ 私に当たったら何も残らない？",
+      "whatsapp": "私の人間関係整理スタイルは{type}！✂️ 私に当たったら何も残らない？",
+      "telegram": "私の人間関係整理スタイルは{type}！✂️ 私に当たったら何も残らない？",
+      "line": "私の人間関係整理スタイルは{type}！✂️ 私に当たったら何も残らない？",
+      "startDefault": "私の「人間関係」整理タイプテスト ✂️ 私に当たったら何も残らない？",
+      "startKakao": "私の「人間関係」整理タイプテスト ✂️ 私に当たったら何も残らない？",
+      "startWechat": "私の「人間関係」整理タイプテスト ✂️ 私に当たったら何も残らない？",
+      "startWhatsapp": "私の「人間関係」整理タイプテスト ✂️ 私に当たったら何も残らない？",
+      "startTelegram": "私の「人間関係」整理タイプテスト ✂️ 私に当たったら何も残らない？",
+      "startLine": "私の「人間関係」整理タイプテスト ✂️ 私に当たったら何も残らない？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！ウィーチャットで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "「喧嘩、避けられないならどうしますか？」",
