@@ -3727,5 +3727,60 @@
       "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "phase2SelfEsteemTest": {
+    "startMessage": {
+      "line1": "\"あなたは自分の最も親しい友達ですか？\"",
+      "line2": "それとも最も厳しい批評家ですか？",
+      "line3": "自尊心は「自分を愛する心」であり、この世界で生きる心の免疫力です。",
+      "line4": "小さな失敗で崩れるガラスのメンタルから、どんな試練にも揺るがないダイヤモンドのメンタルまで。",
+      "line5": "あなたの心の筋肉がどれだけ強いか診断します。私の自尊心の状態を確認する 💖 心の健康診断を開始 🩺"
+    },
+    "ui": {
+      "startTest": "自尊心レベルテスト",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の自尊心レベルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "selfEsteemLevel": "自尊心レベル",
+      "characteristics": "主な特徴",
+      "recommendedActivity": "推奨活動"
+    },
+    "shareMessages": {
+      "default": "私の自尊心レベルは{level}！{type} 💖 自分をどれだけ愛しているか？",
+      "kakao": "私の自尊心レベルは{level}！{type} 💖 自分をどれだけ愛しているか？",
+      "wechat": "私の自尊心レベルは{level}！{type} 💖 自分をどれだけ愛しているか？",
+      "whatsapp": "私の自尊心レベルは{level}！{type} 💖 自分をどれだけ愛しているか？",
+      "telegram": "私の自尊心レベルは{level}！{type} 💖 自分をどれだけ愛しているか？",
+      "line": "私の自尊心レベルは{level}！{type} 💖 自分をどれだけ愛しているか？",
+      "startDefault": "私の「自尊心」レベルテスト 💖 自分をどれだけ愛しているか？",
+      "startKakao": "私の「自尊心」レベルテスト 💖 自分をどれだけ愛しているか？",
+      "startWechat": "私の「自尊心」レベルテスト 💖 自分をどれだけ愛しているか？",
+      "startWhatsapp": "私の「自尊心」レベルテスト 💖 自分をどれだけ愛しているか？",
+      "startTelegram": "私の「自尊心」レベルテスト 💖 自分をどれだけ愛しているか？",
+      "startLine": "私の「自尊心」レベルテスト 💖 自分をどれだけ愛しているか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

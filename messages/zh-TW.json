@@ -3746,5 +3746,60 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "phase2SelfEsteemTest": {
+    "startMessage": {
+      "line1": "\"你是自己最好的朋友嗎？\"",
+      "line2": "還是最嚴厲的批評者？",
+      "line3": "自尊心是「愛自己的心」，也是在這個世界上生活的心靈免疫力。",
+      "line4": "從小錯誤就會崩潰的玻璃心態，到任何考驗都不會動搖的鑽石心態。",
+      "line5": "我們診斷你的心靈肌肉有多強。檢查我的自尊心狀態 💖 開始心理健康檢查 🩺"
+    },
+    "ui": {
+      "startTest": "自尊心水平測試",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的自尊心水平測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "selfEsteemLevel": "自尊心水平",
+      "characteristics": "主要特徵",
+      "recommendedActivity": "推薦活動"
+    },
+    "shareMessages": {
+      "default": "我的自尊心水平是{level}！{type} 💖 我有多愛自己？",
+      "kakao": "我的自尊心水平是{level}！{type} 💖 我有多愛自己？",
+      "wechat": "我的自尊心水平是{level}！{type} 💖 我有多愛自己？",
+      "whatsapp": "我的自尊心水平是{level}！{type} 💖 我有多愛自己？",
+      "telegram": "我的自尊心水平是{level}！{type} 💖 我有多愛自己？",
+      "line": "我的自尊心水平是{level}！{type} 💖 我有多愛自己？",
+      "startDefault": "我的「自尊心」水平測試 💖 我有多愛自己？",
+      "startKakao": "我的「自尊心」水平測試 💖 我有多愛自己？",
+      "startWechat": "我的「自尊心」水平測試 💖 我有多愛自己？",
+      "startWhatsapp": "我的「自尊心」水平測試 💖 我有多愛自己？",
+      "startTelegram": "我的「自尊心」水平測試 💖 我有多愛自己？",
+      "startLine": "我的「自尊心」水平測試 💖 我有多愛自己？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }

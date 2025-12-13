@@ -32,6 +32,7 @@ import { travelStyleQuestions, travelStyleResults } from '@/lib/travelStyleData'
 import { phase2PerfectionismQuestions, phase2PerfectionismResults } from '@/lib/phase2PerfectionismData';
 import { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } from '@/lib/phase2FriendshipStyleData';
 import { phase2RelationshipCutQuestions, phase2RelationshipCutResults } from '@/lib/phase2RelationshipCutData';
+import { phase2SelfEsteemQuestions, phase2SelfEsteemResults } from '@/lib/phase2SelfEsteemData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -136,6 +137,9 @@ const Phase2FriendshipStyleTestClient = dynamic(() => import('@/components/Phase
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const Phase2RelationshipCutTestClient = dynamic(() => import('@/components/Phase2RelationshipCutTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const Phase2SelfEsteemTestClient = dynamic(() => import('@/components/Phase2SelfEsteemTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1905,6 +1909,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2RelationshipCutQuestions}
           results={phase2RelationshipCutResults}
           questionCount={phase2RelationshipCutQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_self-esteem-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_self-esteem-test',
+      title: {
+        ko: "나의 '자존감' 레벨 테스트",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      description: {
+        ko: "당신은 자신의 가장 친한 친구인가요?",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      thumbnail: 'phase2_test_135_self_esteem.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2SelfEsteemTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2SelfEsteemQuestions}
+          results={phase2SelfEsteemResults}
+          questionCount={phase2SelfEsteemQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -4113,6 +4170,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2RelationshipCutQuestions,
       results: phase2RelationshipCutResults
     };
+  } else if (slug === 'phase2_self-esteem-test') {
+    testData = {
+      questions: phase2SelfEsteemQuestions,
+      results: phase2SelfEsteemResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -4314,6 +4376,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_perfectionism-test') TestClient = Phase2PerfectionismTestClient;
     else if (slug === 'phase2_friendship-style-test') TestClient = Phase2FriendshipStyleTestClient;
     else if (slug === 'phase2_relationship-cut-test') TestClient = Phase2RelationshipCutTestClient;
+    else if (slug === 'phase2_self-esteem-test') TestClient = Phase2SelfEsteemTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

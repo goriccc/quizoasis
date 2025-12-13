@@ -3739,5 +3739,60 @@
       "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "phase2SelfEsteemTest": {
+    "startMessage": {
+      "line1": "\"Bạn có phải là người bạn thân nhất của chính mình không?\"",
+      "line2": "Hay là nhà phê bình khắc nghiệt nhất?",
+      "line3": "Lòng tự trọng là 'trái tim yêu chính mình' và khả năng miễn dịch tinh thần để sống trong thế giới này.",
+      "line4": "Từ tinh thần thủy tinh dễ vỡ khi gặp sai lầm nhỏ đến tinh thần kim cương không lay chuyển trước bất kỳ thử thách nào.",
+      "line5": "Chúng tôi chẩn đoán cơ bắp tinh thần của bạn mạnh đến đâu. Kiểm tra tình trạng lòng tự trọng của tôi 💖 Bắt đầu kiểm tra sức khỏe tinh thần 🩺"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Mức độ Tự trọng",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Kiểm tra Mức độ Tự trọng của tôi)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "selfEsteemLevel": "Mức độ Tự trọng",
+      "characteristics": "Đặc điểm Chính",
+      "recommendedActivity": "Hoạt động Đề xuất"
+    },
+    "shareMessages": {
+      "default": "Mức độ tự trọng của tôi là {level}! {type} 💖 Tôi yêu bản thân mình đến mức nào?",
+      "kakao": "Mức độ tự trọng của tôi là {level}! {type} 💖 Tôi yêu bản thân mình đến mức nào?",
+      "wechat": "Mức độ tự trọng của tôi là {level}! {type} 💖 Tôi yêu bản thân mình đến mức nào?",
+      "whatsapp": "Mức độ tự trọng của tôi là {level}! {type} 💖 Tôi yêu bản thân mình đến mức nào?",
+      "telegram": "Mức độ tự trọng của tôi là {level}! {type} 💖 Tôi yêu bản thân mình đến mức nào?",
+      "line": "Mức độ tự trọng của tôi là {level}! {type} 💖 Tôi yêu bản thân mình đến mức nào?",
+      "startDefault": "Kiểm tra Mức độ 'Tự trọng' của tôi 💖 Tôi yêu bản thân mình đến mức nào?",
+      "startKakao": "Kiểm tra Mức độ 'Tự trọng' của tôi 💖 Tôi yêu bản thân mình đến mức nào?",
+      "startWechat": "Kiểm tra Mức độ 'Tự trọng' của tôi 💖 Tôi yêu bản thân mình đến mức nào?",
+      "startWhatsapp": "Kiểm tra Mức độ 'Tự trọng' của tôi 💖 Tôi yêu bản thân mình đến mức nào?",
+      "startTelegram": "Kiểm tra Mức độ 'Tự trọng' của tôi 💖 Tôi yêu bản thân mình đến mức nào?",
+      "startLine": "Kiểm tra Mức độ 'Tự trọng' của tôi 💖 Tôi yêu bản thân mình đến mức nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }

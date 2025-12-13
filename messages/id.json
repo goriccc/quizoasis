@@ -3739,5 +3739,60 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "phase2SelfEsteemTest": {
+    "startMessage": {
+      "line1": "\"Apakah Anda sahabat terbaik diri sendiri?\"",
+      "line2": "Atau kritikus terkeras?",
+      "line3": "Harga diri adalah 'hati yang mencintai diri sendiri' dan kekebalan mental untuk hidup di dunia ini.",
+      "line4": "Dari mentalitas kaca rapuh yang runtuh pada kesalahan kecil hingga mentalitas berlian yang tidak tergoyahkan oleh cobaan apa pun.",
+      "line5": "Kami mendiagnosis seberapa kuat otot hati Anda. Periksa status harga diri saya 💖 Mulai pemeriksaan kesehatan mental 🩺"
+    },
+    "ui": {
+      "startTest": "Tes Tingkat Harga Diri",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Tingkat Harga Diri Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "selfEsteemLevel": "Tingkat Harga Diri",
+      "characteristics": "Karakteristik Utama",
+      "recommendedActivity": "Aktivitas yang Direkomendasikan"
+    },
+    "shareMessages": {
+      "default": "Tingkat harga diri saya adalah {level}! {type} 💖 Seberapa besar saya mencintai diri sendiri?",
+      "kakao": "Tingkat harga diri saya adalah {level}! {type} 💖 Seberapa besar saya mencintai diri sendiri?",
+      "wechat": "Tingkat harga diri saya adalah {level}! {type} 💖 Seberapa besar saya mencintai diri sendiri?",
+      "whatsapp": "Tingkat harga diri saya adalah {level}! {type} 💖 Seberapa besar saya mencintai diri sendiri?",
+      "telegram": "Tingkat harga diri saya adalah {level}! {type} 💖 Seberapa besar saya mencintai diri sendiri?",
+      "line": "Tingkat harga diri saya adalah {level}! {type} 💖 Seberapa besar saya mencintai diri sendiri?",
+      "startDefault": "Tes Tingkat 'Harga Diri' Saya 💖 Seberapa besar saya mencintai diri sendiri?",
+      "startKakao": "Tes Tingkat 'Harga Diri' Saya 💖 Seberapa besar saya mencintai diri sendiri?",
+      "startWechat": "Tes Tingkat 'Harga Diri' Saya 💖 Seberapa besar saya mencintai diri sendiri?",
+      "startWhatsapp": "Tes Tingkat 'Harga Diri' Saya 💖 Seberapa besar saya mencintai diri sendiri?",
+      "startTelegram": "Tes Tingkat 'Harga Diri' Saya 💖 Seberapa besar saya mencintai diri sendiri?",
+      "startLine": "Tes Tingkat 'Harga Diri' Saya 💖 Seberapa besar saya mencintai diri sendiri?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

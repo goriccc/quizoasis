@@ -3901,5 +3901,60 @@
       "similarTestsTop5": "🎯 Top 5 Similar Other Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
+  },
+  "phase2SelfEsteemTest": {
+    "startMessage": {
+      "line1": "\"Are you your own best friend?\"",
+      "line2": "Or your harshest critic?",
+      "line3": "Self-esteem is 'the heart that loves oneself' and the mental immunity to live in this world.",
+      "line4": "From fragile glass mentality that crumbles at small mistakes to diamond mentality that remains unshaken by any trial.",
+      "line5": "We diagnose how strong your heart muscle is. Check my self-esteem status 💖 Start mental health checkup 🩺"
+    },
+    "ui": {
+      "startTest": "Self-Esteem Level Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Self-Esteem Level Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "selfEsteemLevel": "Self-Esteem Level",
+      "characteristics": "Main Characteristics",
+      "recommendedActivity": "Recommended Activity"
+    },
+    "shareMessages": {
+      "default": "My self-esteem level is {level}! {type} 💖 How much do I love myself?",
+      "kakao": "My self-esteem level is {level}! {type} 💖 How much do I love myself?",
+      "wechat": "My self-esteem level is {level}! {type} 💖 How much do I love myself?",
+      "whatsapp": "My self-esteem level is {level}! {type} 💖 How much do I love myself?",
+      "telegram": "My self-esteem level is {level}! {type} 💖 How much do I love myself?",
+      "line": "My self-esteem level is {level}! {type} 💖 How much do I love myself?",
+      "startDefault": "My 'Self-Esteem' Level Test 💖 How much do I love myself?",
+      "startKakao": "My 'Self-Esteem' Level Test 💖 How much do I love myself?",
+      "startWechat": "My 'Self-Esteem' Level Test 💖 How much do I love myself?",
+      "startWhatsapp": "My 'Self-Esteem' Level Test 💖 How much do I love myself?",
+      "startTelegram": "My 'Self-Esteem' Level Test 💖 How much do I love myself?",
+      "startLine": "My 'Self-Esteem' Level Test 💖 How much do I love myself?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }
