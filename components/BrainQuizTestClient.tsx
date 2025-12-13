@@ -591,11 +591,14 @@ export default function BrainQuizTestClient({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img 
+                  <Image 
                     src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" 
                     alt="AliExpress" 
+                    width={300}
+                    height={250}
                     className="rounded-lg" 
                     style={{ maxWidth: '300px', height: 'auto' }}
+                    unoptimized
                   />
                 </a>
               </div>

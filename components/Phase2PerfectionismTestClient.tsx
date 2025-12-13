@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { CommunicationStyleQuestion, CommunicationStyleResult, calculateCommunicationStyleResult } from '@/lib/communicationStyleData';
+import { Phase2PerfectionismQuestion, Phase2PerfectionismResult, calculatePhase2PerfectionismResult } from '@/lib/phase2PerfectionismData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
@@ -13,13 +13,13 @@ import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/ali
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
-interface CommunicationStyleTestClientProps {
+interface Phase2PerfectionismTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: CommunicationStyleQuestion[];
-  results: CommunicationStyleResult[];
+  questions: Phase2PerfectionismQuestion[];
+  results: Phase2PerfectionismResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -32,7 +32,7 @@ interface CommunicationStyleTestClientProps {
   }>;
 }
 
-export default function CommunicationStyleTestClient({ 
+export default function Phase2PerfectionismTestClient({ 
   locale, 
   slug, 
   title, 
@@ -43,42 +43,42 @@ export default function CommunicationStyleTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: CommunicationStyleTestClientProps) {
-  const t = useTranslations();
-  const tGlobal = useTranslations();
+}: Phase2PerfectionismTestClientProps) {
+  const t = useTranslations('phase2PerfectionismTest');
+  const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<string[]>([]);
-  const [result, setResult] = useState<CommunicationStyleResult | null>(null);
+  const [answers, setAnswers] = useState<Record<number, number>>({}); // 원래 질문 인덱스를 키로 사용
+  const [result, setResult] = useState<Phase2PerfectionismResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<CommunicationStyleQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<Phase2PerfectionismQuestion[]>([]);
+  const [originalQuestionIndices, setOriginalQuestionIndices] = useState<number[]>([]); // 셔플링된 질문의 원래 인덱스 매핑
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
-  const [shuffledOptionsOrder, setShuffledOptionsOrder] = useState<Record<number, string[]>>({});
+  const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
   useEffect(() => {
-    if (!started) return;
+    if (!started || shuffledQuestions.length === 0) return;
     
     const questionKey = currentQuestion;
-    if (!shuffledOptionsOrder[questionKey]) {
-      const options = ['a', 'b', 'c', 'd'];
-      const shuffled = [...options];
-      for (let i = shuffled.length - 1; i > 0; i--) {
+    if (!shuffledOptionsMap[questionKey] && shuffledQuestions[currentQuestion]) {
+      const optionsCopy = [...shuffledQuestions[currentQuestion].options];
+      for (let i = optionsCopy.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
       }
-      setShuffledOptionsOrder(prev => ({
+      setShuffledOptionsMap(prev => ({
         ...prev,
-        [questionKey]: shuffled
+        [questionKey]: optionsCopy
       }));
     }
-  }, [currentQuestion, started, shuffledOptionsOrder]);
+  }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
@@ -124,7 +124,7 @@ export default function CommunicationStyleTestClient({
     if (result && locale !== 'ko') {
       const loadProducts = async () => {
         try {
-          const keywords = getProductKeywordsForDating(String(result.type), locale);
+          const keywords = getProductKeywordsForDating(result.type, locale);
           const products = await searchAliExpressProducts(keywords[0], 4, locale);
           setAliProducts(products);
         } catch (error) {
@@ -137,43 +137,15 @@ export default function CommunicationStyleTestClient({
 
   // 유사한 테스트와 인기 테스트 로드
   useEffect(() => {
-    if (similarTests.length === 0 && similarTestsState.length === 0) {
+    if (similarTests.length === 0) {
       const loadTests = async () => {
         try {
           const allTests = await getTests();
-          const currentTest = allTests.find((t: any) => t.slug === slug);
-          
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter((t: any) => t.slug !== slug)
-              .slice(0, 10)
-              .map((t: any) => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
+        const currentTest = allTests.find((t: any) => t.slug === slug);
+        
+        if (!currentTest) {
+          const latestTests = allTests
             .filter((t: any) => t.slug !== slug)
-            .filter((t: any) => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-            })
             .slice(0, 10)
             .map((t: any) => ({
               id: t.id,
@@ -182,46 +154,59 @@ export default function CommunicationStyleTestClient({
               thumbnail: t.thumbnail,
               playCount: t.play_count
             }));
-
-          // 고정된 셔플 순서 (slug 기반)
-          const shuffled = [...similarTestsList].sort((a, b) => {
-            const seedA = slug + a.slug;
-            const seedB = slug + b.slug;
-            let hashA = 0, hashB = 0;
-            for (let i = 0; i < seedA.length; i++) {
-              hashA = ((hashA << 5) - hashA) + seedA.charCodeAt(i);
-              hashA = hashA & hashA;
-            }
-            for (let i = 0; i < seedB.length; i++) {
-              hashB = ((hashB << 5) - hashB) + seedB.charCodeAt(i);
-              hashB = hashB & hashB;
-            }
-            return hashA - hashB;
-          });
-
-          const similarTestSlugs = new Set(shuffled.slice(0, 5).map((t: any) => t.slug));
-          const popularTestsList = allTests
-            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }));
-
-          setSimilarTestsState(shuffled.slice(0, 5));
-          setPopularTestsState(popularTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
+          
+          setSimilarTestsState(latestTests.slice(0, 5));
+          setPopularTestsState(latestTests.slice(5, 10));
+          return;
         }
-      };
 
-      loadTests();
+        const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
+          ? currentTest.tags[locale] || currentTest.tags.ko || []
+          : currentTest.tags || [];
+
+        const similarTestsList = allTests
+          .filter((t: any) => t.slug !== slug)
+          .filter((t: any) => {
+            const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
+              ? t.tags[locale] || t.tags.ko || []
+              : t.tags || [];
+            
+            return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
+              currentTestTags.some((tag: string) => otherTestTags.includes(tag));
+          })
+          .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+          .slice(0, 5)
+          .map((t: any) => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count
+          }));
+
+        const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
+        const popularTestsList = allTests
+          .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
+          .sort((a: any, b: any) => b.play_count - a.play_count)
+          .slice(0, 5)
+          .map((t: any) => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count
+          }));
+
+        setSimilarTestsState(similarTestsList);
+        setPopularTestsState(popularTestsList);
+      } catch (error) {
+        console.error('테스트 로드 실패:', error);
+      }
+    };
+
+    loadTests();
     }
-  }, [slug, locale, similarTests.length, similarTestsState.length]);
+  }, [slug, locale, similarTests]);
 
   // 3초 지연 로딩 스피너
   useEffect(() => {
@@ -235,18 +220,25 @@ export default function CommunicationStyleTestClient({
   }, [showLoadingSpinner]);
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: CommunicationStyleQuestion[]) => {
-    const shuffled = [...questionList];
+  const shuffleQuestions = (questionList: Phase2PerfectionismQuestion[]) => {
+    // 원래 인덱스와 함께 질문을 쌍으로 만들어서 셔플링
+    const questionsWithIndices = questionList.map((q, idx) => ({ question: q, originalIndex: idx }));
+    const shuffled = [...questionsWithIndices];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return shuffled;
+    return {
+      questions: shuffled.map(item => item.question),
+      originalIndices: shuffled.map(item => item.originalIndex)
+    };
   };
 
   // 테스트 시작
   const handleStartTest = () => {
-    setShuffledQuestions(shuffleQuestions(questions));
+    const { questions: shuffled, originalIndices } = shuffleQuestions(questions);
+    setShuffledQuestions(shuffled);
+    setOriginalQuestionIndices(originalIndices);
     setDisplayPlayCount(prev => prev + 1);
     
     // 중복 호출 방지
@@ -260,8 +252,10 @@ export default function CommunicationStyleTestClient({
   };
 
   // 답변 처리
-  const handleAnswer = (answer: string) => {
-    const newAnswers = [...answers, answer];
+  const handleAnswer = (score: number) => {
+    // 현재 질문의 원래 인덱스를 찾아서 답변 저장
+    const currentOriginalIndex = originalQuestionIndices[currentQuestion];
+    const newAnswers = { ...answers, [currentOriginalIndex]: score };
     setAnswers(newAnswers);
 
     if (currentQuestion < shuffledQuestions.length - 1) {
@@ -269,20 +263,23 @@ export default function CommunicationStyleTestClient({
     } else {
       setShowLoadingSpinner(true);
       
+      // 원래 질문 순서대로 점수 배열 재구성 (newAnswers에는 모든 답변이 포함됨)
+      const answersArray = questions.map((_, idx) => newAnswers[idx] ?? 0);
+      
       // 결과 계산
-      const resultType = calculateCommunicationStyleResult(newAnswers);
-      const communicationResult = results.find(r => r.type === resultType);
+      const resultType = calculatePhase2PerfectionismResult(answersArray);
+      const perfectionismResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (communicationResult) {
-        setResult(communicationResult);
+      if (perfectionismResult) {
+        setResult(perfectionismResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (communicationResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(String(communicationResult.type), locale);
+      if (perfectionismResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(perfectionismResult.type, locale);
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] 소통 스타일 결과:', communicationResult.type, '→ 검색 키워드:', keywords[0]);
+        console.log('🔮 [시작] 완벽주의 결과:', perfectionismResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -297,26 +294,27 @@ export default function CommunicationStyleTestClient({
 
   // 다시 하기
   const handleRetake = () => {
-    setShuffledQuestions(shuffleQuestions(questions));
+    const { questions: shuffled, originalIndices } = shuffleQuestions(questions);
+    setShuffledQuestions(shuffled);
+    setOriginalQuestionIndices(originalIndices);
     setStarted(false);
     setCurrentQuestion(0);
-    setAnswers([]);
+    setAnswers({});
     setResult(null);
     setShowResult(false);
-    setShuffledOptionsOrder({});
+    setShuffledOptionsMap({});
   };
 
   // 결과 공유하기
   const handleShareResult = async () => {
     if (!result) return;
     
-    const resultTitle = typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko;
-    const shareText = t('communicationStyle.shareMessages.default', { type: resultTitle });
-    const shareFullText = `${shareText}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const shareText = `${t('shareMessages.default', { type: resultTitle })}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
-        await navigator.share({ text: shareFullText });
+        await navigator.share({ text: shareText });
       } catch (error) {
         if (error instanceof Error && error.name !== 'AbortError') {
           console.error('공유 실패:', error);
@@ -324,11 +322,11 @@ export default function CommunicationStyleTestClient({
       }
     } else {
       try {
-        await navigator.clipboard.writeText(shareFullText);
-        alert(t('communicationStyle.alerts.resultCopied'));
+        await navigator.clipboard.writeText(shareText);
+        alert(t('alerts.resultCopied'));
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
-        alert(t('communicationStyle.alerts.shareFailed'));
+        alert(t('alerts.shareFailed'));
       }
     }
   };
@@ -336,21 +334,24 @@ export default function CommunicationStyleTestClient({
   // 공유 함수들
   const shareToLine = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const shareText = result 
+      ? encodeURIComponent(t('shareMessages.line', { type: resultTitle }))
+      : encodeURIComponent(t('shareMessages.startLine'));
+    window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${shareText}`, '_blank');
   };
 
   const shareToWeChat = async () => {
     const url = `https://myquizoasis.com${window.location.pathname}`;
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? t('communicationStyle.shareMessages.wechat', { type: resultTitle })
-      : title;
-    const shareFullText = `${shareText}\n\n${url}`;
+      ? `${t('shareMessages.wechat', { type: resultTitle })}\n\n${url}`
+      : `${t('shareMessages.startWechat')}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
     if (navigator.share) {
       try {
-        await navigator.share({ text: shareFullText });
+        await navigator.share({ text: shareText });
         return;
       } catch (error) {
         if (error instanceof Error && error.name === 'AbortError') {
@@ -362,18 +363,18 @@ export default function CommunicationStyleTestClient({
     // Fallback: 링크 복사
     try {
       await navigator.clipboard.writeText(url);
-      alert(t('communicationStyle.alerts.wechatCopy'));
+      alert(t('alerts.wechatCopy'));
     } catch (error) {
-      alert(t('communicationStyle.alerts.shareFailed'));
+      alert(t('alerts.shareFailed'));
     }
   };
 
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('communicationStyle.shareMessages.whatsapp', { type: resultTitle }))
-      : encodeURIComponent(title);
+      ? encodeURIComponent(t('shareMessages.whatsapp', { type: resultTitle }))
+      : encodeURIComponent(t('shareMessages.startWhatsapp'));
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
 
@@ -381,7 +382,7 @@ export default function CommunicationStyleTestClient({
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
-      alert(t('communicationStyle.alerts.kakaoInit'));
+      alert(t('alerts.kakaoInit'));
       return;
     }
 
@@ -389,10 +390,10 @@ export default function CommunicationStyleTestClient({
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
-      ? t('communicationStyle.shareMessages.kakao', { type: resultTitle })
-      : description;
+      ? t('shareMessages.kakao', { type: resultTitle })
+      : t('shareMessages.startKakao');
     
     try {
       window.Kakao.Share.sendDefault({
@@ -408,7 +409,7 @@ export default function CommunicationStyleTestClient({
         },
         buttons: [
           {
-            title: t('communicationStyle.ui.testButton'),
+            title: t('ui.goToTest'),
             link: {
               mobileWebUrl: currentUrl,
               webUrl: currentUrl,
@@ -418,23 +419,23 @@ export default function CommunicationStyleTestClient({
       });
     } catch (error) {
       console.error('카카오톡 공유 오류:', error);
-      alert(t('communicationStyle.alerts.kakaoError'));
+      alert(t('alerts.kakaoError'));
     }
   };
 
   const shareToTelegram = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
-      ? t('communicationStyle.shareMessages.telegram', { type: resultTitle })
-      : title;
+      ? t('shareMessages.telegram', { type: resultTitle })
+      : t('shareMessages.startTelegram');
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
   const copyLink = () => {
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert(t('communicationStyle.alerts.linkCopied'));
+    alert(t('alerts.linkCopied'));
   };
 
   // 팝업에서 결과 보기
@@ -451,7 +452,7 @@ export default function CommunicationStyleTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_communication_style.jpg')}
+              src={getThumbnailUrl(thumbnail || '')}
               alt={title}
               fill
               className="object-cover"
@@ -471,16 +472,16 @@ export default function CommunicationStyleTestClient({
                 slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역 (타이틀-설명 사이)"
+                label={t('ui.adsenseTitle')}
               />
             </div>
 
-            <div className="text-gray-600 mb-6 leading-relaxed text-center whitespace-pre-line">
-              {t('communicationStyle.startMessage').split('\n').map((line, index) => (
-                <p key={index} className={index === 0 ? "font-bold" : ""}>
-                  {line}
-                </p>
-              ))}
+            <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
+              <p className="font-bold text-gray-700">{t('startMessage.line1')}</p>
+              <p>{t('startMessage.line2')}</p>
+              <p>{t('startMessage.line3')}</p>
+              <p>{t('startMessage.line4')}</p>
+              <p className="whitespace-pre-line">{t('startMessage.line5')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -488,12 +489,12 @@ export default function CommunicationStyleTestClient({
                 onClick={handleStartTest}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-                {t('communicationStyle.ui.startTest')}
+                {tGlobal('mbti.startTest')}
               </button>
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-              {t('communicationStyle.ui.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as any) })}
+              {tGlobal('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -538,26 +539,26 @@ export default function CommunicationStyleTestClient({
 
             <div className="mb-8 text-center">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {t('communicationStyle.ui.shareWithFriends')}
+                {tGlobal('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt={t('communicationStyle.ui.linkCopy')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt={t('communicationStyle.ui.kakao')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt={t('communicationStyle.ui.telegram')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt={t('communicationStyle.ui.wechat')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt={t('communicationStyle.ui.line')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt={t('communicationStyle.ui.whatsapp')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
@@ -565,7 +566,7 @@ export default function CommunicationStyleTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-                {t('communicationStyle.ui.similarTests')}
+                {t('ui.similarTests')}
               </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
@@ -587,7 +588,7 @@ export default function CommunicationStyleTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount, locale as Locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -613,13 +614,13 @@ export default function CommunicationStyleTestClient({
             slot={ADSENSE_CONFIG.SLOTS.LOADING_TOP}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역 (로딩 스피너 상단)"
+            label={t('ui.adsenseTitle')}
           />
         </div>
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-lg text-gray-700">{t('communicationStyle.ui.loadingResults')}</p>
+          <p className="mt-4 text-lg text-gray-700">{tGlobal('mbti.loadingResults')}</p>
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
@@ -628,7 +629,7 @@ export default function CommunicationStyleTestClient({
             slot={ADSENSE_CONFIG.SLOTS.LOADING_BOTTOM}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역 (로딩 스피너 하단)"
+            label={t('ui.adsenseTitle')}
           />
         </div>
       </div>
@@ -637,18 +638,13 @@ export default function CommunicationStyleTestClient({
 
   // 결과 팝업
   if (showResultPopup) {
-    console.log('🎁 팝업 렌더링 - aliProducts 상태:', {
-      길이: aliProducts.length,
-      locale,
-      첫상품: aliProducts[0]?.product_title
-    });
-    
     return (
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            🎉 {t('communicationStyle.ui.testCompleted')}
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            🎉 {tGlobal('mbti.testCompleted')}
           </h2>
+          
           
           <div className="mb-6">
             {locale === 'ko' ? (
@@ -700,35 +696,21 @@ export default function CommunicationStyleTestClient({
             onClick={handleShowResult}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-            {t('communicationStyle.ui.viewAnalysisResults')}
+            {tGlobal('mbti.viewAnalysisResults')}
           </button>
         </div>
       </div>
     );
   }
 
-  // 궁합 텍스트에서 타입 이모지 제거하는 함수 (데이터에 이미 이모지가 포함되어 있음)
-  const addEmojiToMatchText = (matchText: string) => {
-    // 앞에 있는 궁합 표시 이모지만 제거 (💖, 😊, ⚠️, ❌ 등)
-    const textWithoutPrefixEmoji = matchText.replace(/^[💖😊⚠️❌]\s*/, '');
-    
-    // 이미 타입 이모지가 포함되어 있으므로 그대로 반환
-    return textWithoutPrefixEmoji;
-  };
-
   // 결과 화면
   if (showResult && result) {
-    const resultTitle = typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko;
-    const resultDescription = typeof result.description === 'string' ? result.description : result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultCharacteristics = typeof result.characteristics === 'string' ? result.characteristics : result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
-    const resultStrengths = result.strengths[locale as keyof typeof result.strengths] || result.strengths.ko;
-    const resultWeaknesses = result.weaknesses[locale as keyof typeof result.weaknesses] || result.weaknesses.ko;
-    const resultSuitableSituations = result.suitableSituations[locale as keyof typeof result.suitableSituations] || result.suitableSituations.ko;
-    const resultAdvice = typeof result.advice === 'string' ? result.advice : result.advice[locale as keyof typeof result.advice] || result.advice.ko;
-    const resultBestMatch = addEmojiToMatchText(typeof result.bestMatch === 'string' ? result.bestMatch : result.bestMatch[locale as keyof typeof result.bestMatch] || result.bestMatch.ko);
-    const resultGoodMatch = addEmojiToMatchText(typeof result.goodMatch === 'string' ? result.goodMatch : result.goodMatch[locale as keyof typeof result.goodMatch] || result.goodMatch.ko);
-    const resultCarefulMatch = addEmojiToMatchText(typeof result.carefulMatch === 'string' ? result.carefulMatch : result.carefulMatch[locale as keyof typeof result.carefulMatch] || result.carefulMatch.ko);
-    const resultDifficultMatch = addEmojiToMatchText(typeof result.difficultMatch === 'string' ? result.difficultMatch : result.difficultMatch[locale as keyof typeof result.difficultMatch] || result.difficultMatch.ko);
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const resultShortDescription = result.shortDescription[locale as keyof typeof result.shortDescription] || result.shortDescription.ko;
+    const resultLongDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
+    const resultPerfectionismLevel = result.perfectionismLevel[locale as keyof typeof result.perfectionismLevel] || result.perfectionismLevel.ko;
+    const resultCharacteristics = result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
+    const resultPrescription = result.prescription[locale as keyof typeof result.prescription] || result.prescription.ko;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -736,106 +718,57 @@ export default function CommunicationStyleTestClient({
           <div>
             <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
               <h2 className="text-xl font-bold text-gray-800 mb-3">
-                {t('communicationStyle.ui.yourResult')}
+                {tGlobal('mbti.yourResult')}
               </h2>
               <div className="text-6xl mb-3">{result.emoji}</div>
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
               </h1>
+              <p className="text-lg font-semibold text-gray-700 mb-3">
+                {resultShortDescription}
+              </p>
               <p className="text-base text-gray-600 leading-relaxed">
-                {resultDescription}
+                {resultLongDescription}
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                ✨ {t('communicationStyle.ui.characteristics')}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {resultCharacteristics.split(/[,，、]\s*/).map((characteristic, index) => (
-                  <span
-                    key={index}
-                    className="bg-gradient-to-r from-purple-100 to-indigo-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
-                  >
-                    {characteristic}
-                  </span>
-                ))}
+            <div className="mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-2">
+                  📊 {t('ui.perfectionismLevel')}
+                </h3>
+                <p className="text-2xl font-bold text-purple-600 text-center" style={{ fontSize: '1.5em' }}>
+                  {resultPerfectionismLevel}
+                </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 mb-3">
+            <div className="mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ✅ {t('communicationStyle.ui.strengths')}
+                <h3 className="text-base font-bold text-gray-800 mb-2">
+                  ⭐ {t('ui.characteristics')}
                 </h3>
-                <div className="flex flex-wrap gap-2">
-                  {resultStrengths.map((strength, index) => (
+                <div className="flex flex-wrap justify-center gap-2">
+                  {resultCharacteristics.split(/[,、，]/).map((char, index) => (
                     <span
                       key={index}
-                      className="bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
+                      className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-3 py-1.5 rounded-full text-sm font-medium"
                     >
-                      {strength}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ⚠️ {t('communicationStyle.ui.weaknesses')}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {resultWeaknesses.map((weakness, index) => (
-                    <span
-                      key={index}
-                      className="bg-gradient-to-r from-orange-100 to-red-100 px-3 py-1.5 rounded-full text-sm font-medium text-gray-800 shadow-sm"
-                    >
-                      {weakness}
+                      {char.trim()}
                     </span>
                   ))}
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                💡 {t('communicationStyle.ui.advice')}
-              </h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                {resultAdvice}
-              </p>
-            </div>
-
-            {/* 궁합 정보 */}
-            <div className="grid grid-cols-2 gap-3 mb-3">
+            <div className="mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  💖 {t('communicationStyle.ui.bestMatch')}
+                  💊 {t('ui.prescription')}
                 </h3>
-                <p className="text-sm text-gray-700">{resultBestMatch}</p>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  😊 {t('communicationStyle.ui.goodMatch')}
-                </h3>
-                <p className="text-sm text-gray-700">{resultGoodMatch}</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-3 mb-3">
-              <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ⚠️ {t('communicationStyle.ui.carefulMatch')}
-                </h3>
-                <p className="text-sm text-gray-700">{resultCarefulMatch}</p>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ❌ {t('communicationStyle.ui.difficultMatch')}
-                </h3>
-                <p className="text-sm text-gray-700">{resultDifficultMatch}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {resultPrescription}
+                </p>
               </div>
             </div>
 
@@ -845,9 +778,9 @@ export default function CommunicationStyleTestClient({
                 className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md flex items-center justify-center gap-3"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.912 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                 </svg>
-                {t('communicationStyle.ui.shareResult')}
+                {t('ui.shareResult')}
               </button>
             </div>
 
@@ -857,7 +790,7 @@ export default function CommunicationStyleTestClient({
                 slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역 (결과-다시하기 사이)"
+                label={t('ui.adsenseTitle')}
               />
             </div>
 
@@ -866,38 +799,38 @@ export default function CommunicationStyleTestClient({
                 onClick={handleRetake}
                 className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
               >
-                {t('communicationStyle.ui.retakeTest')}
+                {tGlobal('mbti.retakeTest')}
               </button>
               <Link
                 href={`/${locale}`}
                 className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
               >
-                {t('communicationStyle.ui.otherTests')}
+                {tGlobal('mbti.otherTests')}
               </Link>
             </div>
 
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {tGlobal('ui.shareResultWithFriends')}
+                {tGlobal('mbti.shareResultWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt={t('communicationStyle.ui.linkCopy')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt={t('communicationStyle.ui.kakao')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt={t('communicationStyle.ui.telegram')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt={t('communicationStyle.ui.wechat')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt={t('communicationStyle.ui.line')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt={t('communicationStyle.ui.whatsapp')} width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
@@ -906,7 +839,7 @@ export default function CommunicationStyleTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {t('communicationStyle.ui.similarTestsTop5')}
+                  {t('recommendations.similarTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -928,7 +861,7 @@ export default function CommunicationStyleTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount, locale as Locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -943,7 +876,7 @@ export default function CommunicationStyleTestClient({
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {t('communicationStyle.ui.popularTestsTop5')}
+                  {t('recommendations.popularTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (
@@ -965,7 +898,7 @@ export default function CommunicationStyleTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount, locale as Locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -982,15 +915,15 @@ export default function CommunicationStyleTestClient({
   }
 
   // 질문 화면
+  if (shuffledQuestions.length === 0 || !shuffledQuestions[currentQuestion]) {
+    return null; // 질문이 준비되지 않았으면 렌더링하지 않음
+  }
+  
   const question = shuffledQuestions[currentQuestion];
   const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
   
-  const optionsOrder = shuffledOptionsOrder[currentQuestion] || ['a', 'b', 'c', 'd'];
-  const optionsArray = optionsOrder.map(key => ({
-    key,
-    text: question.options[key as keyof typeof question.options][locale as keyof typeof question.options[keyof typeof question.options]] || question.options[key as keyof typeof question.options].ko
-  }));
+  const optionsArray = shuffledOptionsMap[currentQuestion] || question.options;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -998,7 +931,7 @@ export default function CommunicationStyleTestClient({
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-600">
-              {t('communicationStyle.ui.progress')}
+              {tGlobal('mbti.progress')}
             </span>
             <span className="text-sm font-bold text-purple-600">
               {currentQuestion + 1} / {shuffledQuestions.length}
@@ -1019,6 +952,7 @@ export default function CommunicationStyleTestClient({
 
           <div className="space-y-4 px-4">
             {optionsArray.map((option, index) => {
+              const optionText = option.text[locale as keyof typeof option.text] || option.text.ko;
               const label = String.fromCharCode(65 + index);
               const colors = [
                 'from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border-purple-200 hover:border-purple-400',
@@ -1031,14 +965,14 @@ export default function CommunicationStyleTestClient({
               return (
                 <button
                   key={index}
-                  onClick={() => handleAnswer(option.key)}
+                  onClick={() => handleAnswer(option.score)}
                   className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
                 >
                   <div className="flex items-center">
                     <div className={`w-7 h-7 ${bgColors[index]} text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm`}>
                       {label}
                     </div>
-                    <span className="text-base">{option.text}</span>
+                    <span className="text-base">{optionText}</span>
                   </div>
                 </button>
               );
@@ -1051,32 +985,32 @@ export default function CommunicationStyleTestClient({
               slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
               style={{ width: '100%', height: '250px' }}
               className="mx-auto"
-              label="AdSense 광고 영역 (테스트 진행 마지막 답변 밑)"
+              label={t('ui.adsenseTitle')}
             />
           </div>
 
           <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-              {t('communicationStyle.ui.shareWithFriends')}
+              {tGlobal('mbti.shareWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/link.jpeg" alt={t('communicationStyle.ui.linkCopy')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/kakao.jpeg" alt={t('communicationStyle.ui.kakao')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/telegram.jpeg" alt={t('communicationStyle.ui.telegram')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/wechat.jpeg" alt={t('communicationStyle.ui.wechat')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/line.jpeg" alt={t('communicationStyle.ui.line')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/whatsapp.jpeg" alt={t('communicationStyle.ui.whatsapp')} width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
               </button>
             </div>
           </div>
@@ -1085,4 +1019,3 @@ export default function CommunicationStyleTestClient({
     </div>
   );
 }
-

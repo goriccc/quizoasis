@@ -1352,6 +1352,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase2PerfectionismTest": {
+    "startMessage": {
+      "line1": "\"Điểm chuẩn của bạn ở đâu?\"",
+      "line2": "Không thể chịu được việc làm đại khái, và mất ngủ vì một sai lầm nhỏ?",
+      "line3": "Chủ nghĩa hoàn hảo là đôi cánh đưa bạn lên cao, nhưng đôi khi nó cũng trở thành gánh nặng đè nén bạn.",
+      "line4": "Giữa mong muốn làm tốt và sự ép buộc làm khổ chính mình. Chỉ số hoàn hảo của bạn có ở trạng thái an toàn không?",
+      "line5": "Chẩn đoán mức độ ám ảnh của tôi 📏 Kiểm tra chủ nghĩa hoàn hảo 🔍"
+    },
+    "ui": {
+      "startTest": "Chẩn đoán Mức độ Ám ảnh",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Test Khác",
+      "goToTest": "Đi đến Test",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Test Xu hướng Chủ nghĩa Hoàn hảo của tôi)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test Tương tự Khác",
+      "perfectionismLevel": "Chỉ số Chủ nghĩa Hoàn hảo",
+      "characteristics": "Đặc điểm Chính",
+      "prescription": "Đơn thuốc"
+    },
+    "shareMessages": {
+      "default": "Chỉ số chủ nghĩa hoàn hảo của tôi là {type}! 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "kakao": "Chỉ số chủ nghĩa hoàn hảo của tôi là {type}! 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "wechat": "Chỉ số chủ nghĩa hoàn hảo của tôi là {type}! 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "whatsapp": "Chỉ số chủ nghĩa hoàn hảo của tôi là {type}! 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "telegram": "Chỉ số chủ nghĩa hoàn hảo của tôi là {type}! 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "line": "Chỉ số chủ nghĩa hoàn hảo của tôi là {type}! 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "startDefault": "Test Xu hướng 'Chủ nghĩa Hoàn hảo' của tôi (Chẩn đoán Kiệt sức) 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "startKakao": "Test Xu hướng 'Chủ nghĩa Hoàn hảo' của tôi (Chẩn đoán Kiệt sức) 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "startWechat": "Test Xu hướng 'Chủ nghĩa Hoàn hảo' của tôi (Chẩn đoán Kiệt sức) 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "startWhatsapp": "Test Xu hướng 'Chủ nghĩa Hoàn hảo' của tôi (Chẩn đoán Kiệt sức) 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "startTelegram": "Test Xu hướng 'Chủ nghĩa Hoàn hảo' của tôi (Chẩn đoán Kiệt sức) 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?",
+      "startLine": "Test Xu hướng 'Chủ nghĩa Hoàn hảo' của tôi (Chẩn đoán Kiệt sức) 📏 Tôi là người cẩn thận hay đang tự hành hạ mình?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Nếu không thể tránh khỏi cãi vã, bạn sẽ làm gì?\"",

@@ -1359,6 +1359,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase2PerfectionismTest": {
+    "startMessage": {
+      "line1": "\"你的標準點在哪裡？\"",
+      "line2": "無法忍受做事馬虎，一個小錯誤也會讓你夜不能寐嗎？",
+      "line3": "完美主義是帶你飛向高處的翅膀，但有時也會成為壓垮你的沉重負擔。",
+      "line4": "在想要做好的心情和折磨自己的強迫之間。你的完美主義指數處於安全狀態嗎？",
+      "line5": "診斷我的強迫程度 📏 完美主義檢查 🔍"
+    },
+    "ui": {
+      "startTest": "診斷強迫程度",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的完美主義傾向測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "perfectionismLevel": "完美主義指數",
+      "characteristics": "主要特徵",
+      "prescription": "處方"
+    },
+    "shareMessages": {
+      "default": "我的完美主義指數是{type}！ 📏 我是細緻還是折磨自己？",
+      "kakao": "我的完美主義指數是{type}！ 📏 我是細緻還是折磨自己？",
+      "wechat": "我的完美主義指數是{type}！ 📏 我是細緻還是折磨自己？",
+      "whatsapp": "我的完美主義指數是{type}！ 📏 我是細緻還是折磨自己？",
+      "telegram": "我的完美主義指數是{type}！ 📏 我是細緻還是折磨自己？",
+      "line": "我的完美主義指數是{type}！ 📏 我是細緻還是折磨自己？",
+      "startDefault": "我的「完美主義」傾向測試（倦怠診斷） 📏 我是細緻還是折磨自己？",
+      "startKakao": "我的「完美主義」傾向測試（倦怠診斷） 📏 我是細緻還是折磨自己？",
+      "startWechat": "我的「完美主義」傾向測試（倦怠診斷） 📏 我是細緻還是折磨自己？",
+      "startWhatsapp": "我的「完美主義」傾向測試（倦怠診斷） 📏 我是細緻還是折磨自己？",
+      "startTelegram": "我的「完美主義」傾向測試（倦怠診斷） 📏 我是細緻還是折磨自己？",
+      "startLine": "我的「完美主義」傾向測試（倦怠診斷） 📏 我是細緻還是折磨自己？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"如果無法避免爭吵，你會怎麼做？\"",

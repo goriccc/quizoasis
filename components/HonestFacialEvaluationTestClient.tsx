@@ -1308,7 +1308,7 @@ export default function HonestFacialEvaluationTestClient({
             ) : (
               <div className="flex justify-center">
                 <a href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" target="_blank" rel="noopener noreferrer">
-                  <img src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" alt="AliExpress" className="rounded-lg" style={{ maxWidth: '300px', height: 'auto' }} />
+                  <Image src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" alt="AliExpress" width={300} height={250} className="rounded-lg" style={{ maxWidth: '300px', height: 'auto' }} unoptimized />
                 </a>
               </div>
             )}
@@ -1496,8 +1496,8 @@ export default function HonestFacialEvaluationTestClient({
                   ) : (
                     <div className="mb-6">
                       <p className="mb-4 text-center font-bold text-gray-700 flex items-center justify-center">{t('ui.proceedingWithPhoto')}<span className="ml-1 inline-flex"><span className="animate-bounce" style={{ animationDelay: '0ms' }}>.</span><span className="animate-bounce" style={{ animationDelay: '200ms' }}>.</span><span className="animate-bounce" style={{ animationDelay: '400ms' }}>.</span></span></p>
-                      <div className="flex items-center justify-center">
-                        <img src={capturedImage} alt={t('ui.selectedPhoto')} className="w-full max-w-full h-auto rounded-lg object-contain" style={{ maxHeight: '600px' }} />
+                      <div className="flex items-center justify-center relative w-full" style={{ maxHeight: '600px' }}>
+                        <Image src={capturedImage} alt={t('ui.selectedPhoto')} width={800} height={600} className="w-full max-w-full h-auto rounded-lg object-contain" style={{ maxHeight: '600px' }} unoptimized />
                       </div>
                     </div>
                   )}

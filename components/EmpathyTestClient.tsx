@@ -142,7 +142,7 @@ export default function EmpathyTestClient({
       };
 
     loadSimilarTests();
-  }, [started, showResult, slug]);
+  }, [started, showResult, slug, locale]);
 
   // 인기 테스트 로드
   useEffect(() => {
@@ -169,7 +169,7 @@ export default function EmpathyTestClient({
     if (started || showResult) {
       loadPopularTests();
     }
-  }, [started, showResult, slug]);
+  }, [started, showResult, slug, locale]);
 
   // 플레이 카운트 증가
   useEffect(() => {

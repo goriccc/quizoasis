@@ -29,6 +29,7 @@ import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
 import { superpowerQuestions, superpowerResults } from '@/lib/superpowerData';
 import { travelStyleQuestions, travelStyleResults } from '@/lib/travelStyleData';
+import { phase2PerfectionismQuestions, phase2PerfectionismResults } from '@/lib/phase2PerfectionismData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -124,6 +125,9 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
+  ssr: false
+});
+const Phase2PerfectionismTestClient = dynamic(() => import('@/components/Phase2PerfectionismTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -386,6 +390,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'og:url': canonicalUrl,
       'og:type': 'website',
       'mobile-web-app-capable': 'yes',
+      'apple-mobile-web-app-capable': 'yes',
       'apple-mobile-web-app-status-bar-style': 'default',
       'apple-mobile-web-app-title': 'QuizOasis',
       'application-name': 'QuizOasis',
@@ -1733,6 +1738,59 @@ export default async function TestPage({ params }: Props) {
           questions={travelStyleQuestions}
           results={travelStyleResults}
           questionCount={travelStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_perfectionism-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_perfectionism-test',
+      title: {
+        ko: "나의 '완벽주의' 성향 테스트 (번아웃 진단)",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      description: {
+        ko: "당신의 기준점은 어디인가요?",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      thumbnail: 'phase2_test_150_perfectionism.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ["자아탐색"],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2PerfectionismTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2PerfectionismQuestions}
+          results={phase2PerfectionismResults}
+          questionCount={phase2PerfectionismQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -3926,6 +3984,11 @@ export default async function TestPage({ params }: Props) {
       questions: travelStyleQuestions,
       results: travelStyleResults
     };
+  } else if (slug === 'phase2_perfectionism-test') {
+    testData = {
+      questions: phase2PerfectionismQuestions,
+      results: phase2PerfectionismResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -4124,6 +4187,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
+    else if (slug === 'phase2_perfectionism-test') TestClient = Phase2PerfectionismTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

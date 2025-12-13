@@ -92,14 +92,67 @@ export default function AdSensePlaceholder({
   const adRef = useRef<HTMLElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isAdLoaded, setIsAdLoaded] = useState(false);
-  const [shouldHide, setShouldHide] = useState(false);
+  const [shouldHide, setShouldHide] = useState(false); // 항상 false로 유지하여 항상 보이도록
+  const [isInitialized, setIsInitialized] = useState(false);
 
-  // 광고 로드 및 상태 확인
+  // 광고 요소가 렌더링된 후 개별적으로 초기화
   useEffect(() => {
-    if (!ADSENSE_CONFIG.ENABLED) return;
+    if (!ADSENSE_CONFIG.ENABLED || isInitialized) return;
     
-    loadAdSense();
-  }, []);
+    const initializeAd = () => {
+      // 광고 요소가 DOM에 있는지 확인
+      if (!adRef.current || !document.body.contains(adRef.current)) {
+        // 아직 DOM에 없으면 재시도
+        setTimeout(initializeAd, 100);
+        return;
+      }
+      
+      try {
+        const adElement = adRef.current;
+        const status = adElement.getAttribute('data-adsbygoogle-status');
+        
+        // 이미 초기화되었으면 스킵
+        if (status && status !== '') {
+          setIsInitialized(true);
+          return;
+        }
+        
+        // AdSense 전역 객체 초기화
+        if (typeof window !== 'undefined') {
+          (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+          
+          // AdSense 스크립트가 로드되었는지 확인
+          const checkAdSenseScript = () => {
+            if (typeof (window as any).adsbygoogle !== 'undefined' && adRef.current) {
+              try {
+                // 광고 요소가 여전히 DOM에 있는지 다시 확인
+                if (document.body.contains(adRef.current)) {
+                  (window as any).adsbygoogle.push({});
+                  setIsInitialized(true);
+                }
+              } catch (err) {
+                // AdSense 오류는 조용히 무시 (no_div, 403, Failed to load resource 등)
+                // 로컬호스트에서 403 오류는 정상이므로 무시
+                // 재시도
+                setTimeout(checkAdSenseScript, 200);
+              }
+            } else {
+              // 스크립트가 아직 로드되지 않았으면 재시도
+              setTimeout(checkAdSenseScript, 200);
+            }
+          };
+          
+          // 약간의 지연 후 초기화 (DOM이 완전히 준비될 때까지)
+          setTimeout(checkAdSenseScript, 200);
+        }
+      } catch (err) {
+        console.warn('AdSense initialization error:', err);
+      }
+    };
+    
+    // 초기화 시작
+    initializeAd();
+  }, [isInitialized]);
 
   // 광고 로드 상태 확인 (게재 제한 중일 때 영역 숨기기)
   useEffect(() => {
@@ -136,8 +189,8 @@ export default function AdSensePlaceholder({
           setShouldHide(false);
           return true;
         } else {
-          // 광고가 로드되지 않았으면 숨기기
-          setShouldHide(true);
+          // 광고가 로드되지 않았어도 항상 표시 (영역은 유지)
+          setShouldHide(false);
           return false;
         }
       };
@@ -155,8 +208,8 @@ export default function AdSensePlaceholder({
           subtree: true
         });
         
-        // 초기에는 숨겨두고 시작 (광고 요소가 완전히 렌더링될 때까지 대기)
-        setShouldHide(true);
+        // 초기에는 표시 상태로 시작 (항상 보이도록)
+        setShouldHide(false);
         
         // 주기적으로 확인 (광고가 로드되었는지 확인)
         interval = setInterval(() => {
@@ -184,11 +237,14 @@ export default function AdSensePlaceholder({
 
   if (ADSENSE_CONFIG.ENABLED) {
     // 실제 애드센스 광고
+    // 항상 보이도록 설정 (광고가 로드되지 않아도 영역은 유지)
     return (
       <div 
         ref={containerRef}
         style={{ 
-          display: shouldHide ? 'none' : 'block',
+          visibility: 'visible',
+          height: 'auto',
+          minHeight: '250px',
           ...style 
         }}
         className={className}
@@ -196,7 +252,11 @@ export default function AdSensePlaceholder({
         <ins
           ref={adRef as any}
           className="adsbygoogle"
-          style={{ display: 'block' }}
+          style={{ 
+            display: 'block',
+            minHeight: '250px',
+            width: '100%'
+          }}
           data-ad-client={ADSENSE_CONFIG.PUBLISHER_ID}
           data-ad-slot={slot}
           data-ad-format="auto"

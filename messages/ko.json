@@ -725,6 +725,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2PerfectionismTest": {
+    "startMessage": {
+      "line1": "\"당신의 기준점은 어디인가요?\"",
+      "line2": "일을 대충 하는 것은 참을 수 없고, 작은 실수 하나에도 밤잠을 설치시나요?",
+      "line3": "완벽주의는 당신을 높은 곳으로 이끌어주는 날개지만, 때로는 당신을 짓누르는 무거운 짐이 되기도 합니다.",
+      "line4": "잘하고 싶은 마음과 스스로를 괴롭히는 강박 사이. 당신의 완벽주의 지수는 안전한 상태일까요?",
+      "line5": "나의 강박 레벨 진단하기 📏 완벽주의 점검 🔍"
+    },
+    "ui": {
+      "startTest": "강박 레벨 진단하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나의 완벽주의 성향 테스트)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "perfectionismLevel": "완벽주의 지수",
+      "characteristics": "주요 특징",
+      "prescription": "처방"
+    },
+    "shareMessages": {
+      "default": "내 완벽주의 지수는 {type}! 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "kakao": "내 완벽주의 지수는 {type}! 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "wechat": "내 완벽주의 지수는 {type}! 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "whatsapp": "내 완벽주의 지수는 {type}! 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "telegram": "내 완벽주의 지수는 {type}! 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "line": "내 완벽주의 지수는 {type}! 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "startDefault": "나의 '완벽주의' 성향 테스트 (번아웃 진단) 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "startKakao": "나의 '완벽주의' 성향 테스트 (번아웃 진단) 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "startWechat": "나의 '완벽주의' 성향 테스트 (번아웃 진단) 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "startWhatsapp": "나의 '완벽주의' 성향 테스트 (번아웃 진단) 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "startTelegram": "나의 '완벽주의' 성향 테스트 (번아웃 진단) 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?",
+      "startLine": "나의 '완벽주의' 성향 테스트 (번아웃 진단) 📏 나는 꼼꼼한 걸까, 스스로를 괴롭히는 걸까?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"싸움, 피할 수 없다면 어떻게 하시나요?\"",

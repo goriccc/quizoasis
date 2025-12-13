@@ -8,6 +8,7 @@ import { QuizTest } from '@/lib/types';
 import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { usePrefetchOnVisible } from '@/hooks/usePrefetchOnVisible';
+import { useMemo, useState, useEffect, useCallback } from 'react';
 
 // 개별 테스트 카드 컴포넌트
 function TestCard({ 
@@ -23,6 +24,14 @@ function TestCard({
 }) {
   const href = `/${locale}/test/${test.slug}`;
   const prefetchRef = usePrefetchOnVisible(href, index >= 3); // 처음 3개는 기본 prefetch, 나머지는 뷰포트에 보일 때
+  
+  // Hydration 오류 방지를 위해 클라이언트에서만 계산
+  const [mounted, setMounted] = useState(false);
+  const safeTitle = useMemo(() => getSafeTitle(test), [test, getSafeTitle]);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <Link
@@ -36,24 +45,29 @@ function TestCard({
         <div className="relative w-full aspect-video">
           <Image
             src={getThumbnailUrl(test.thumbnail)}
-            alt={getSafeTitle(test)}
+            alt={safeTitle}
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            priority={index < 3}
+            priority={index < 2}
             quality={85}
+            suppressHydrationWarning
+            loading={index < 2 ? undefined : 'lazy'}
           />
         </div>
         
         {/* 타이틀과 플레이 횟수 */}
         <div className="p-4">
           <div className="flex items-center justify-end gap-3">
-            <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
-              {getSafeTitle(test)}
+            <h3 
+              className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1"
+              suppressHydrationWarning
+            >
+              {safeTitle}
             </h3>
             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
               <Play size={14} />
-              <span>{formatPlayCount(test.playCount, locale)}</span>
+              <span suppressHydrationWarning>{mounted ? formatPlayCount(test.playCount, locale) : '0'}</span>
             </div>
           </div>
         </div>
@@ -72,6 +86,11 @@ interface CategorySectionProps {
 export default function CategorySection({ tests, categoryName, locale, showHeader = true }: CategorySectionProps) {
   const t = useTranslations();
   const currentLocale = useLocale();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // 안전한 카테고리 이름 가져오기 함수
   const getSafeCategoryName = (category: string, fallbackLocale: string = 'ko') => {
@@ -131,19 +150,22 @@ export default function CategorySection({ tests, categoryName, locale, showHeade
   };
 
   // 안전한 제목 가져오기 함수
-  const getSafeTitle = (test: QuizTest, fallbackLocale: string = 'ko') => {
+  const getSafeTitle = useCallback((test: QuizTest, fallbackLocale: string = 'ko') => {
     if (typeof test.title === 'string') {
       return test.title;
     }
     const titleObj = test.title as Record<string, string>;
     return titleObj[locale] || titleObj[fallbackLocale] || titleObj.en || 'Test Title';
-  };
+  }, [locale]);
 
   return (
     <section className="pt-0 pb-6">
       <div className="max-w-7xl mx-auto px-1 sm:px-4">
         {showHeader && (
-          <h2 className="text-xl font-bold mb-6 text-gray-800">
+          <h2 
+            className="text-xl font-bold mb-6 text-gray-800"
+            suppressHydrationWarning
+          >
             {t('sections.category')} : {getSafeCategoryName(categoryName)}
           </h2>
         )}

@@ -667,11 +667,14 @@ export default function FaceReincarnationTestClient({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" 
-                    alt="AliExpress" 
-                    className="rounded-lg" 
+                  <Image
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                    alt="AliExpress"
+                    width={300}
+                    height={250}
+                    className="rounded-lg"
                     style={{ maxWidth: '300px', height: 'auto' }}
+                    unoptimized
                   />
                 </a>
               </div>
@@ -1006,12 +1009,15 @@ export default function FaceReincarnationTestClient({
                           <span className="animate-bounce" style={{ animationDelay: '400ms' }}>.</span>
                         </span>
                       </p>
-                      <div className="flex items-center justify-center">
-                        <img 
+                      <div className="flex items-center justify-center relative w-full" style={{ maxHeight: '600px' }}>
+                        <Image 
                           src={capturedImage} 
                           alt={t('ui.selectedPhoto')} 
+                          width={800}
+                          height={600}
                           className="w-full max-w-full h-auto rounded-lg object-contain"
                           style={{ maxHeight: '600px' }}
+                          unoptimized
                         />
                       </div>
                     </div>

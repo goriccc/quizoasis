@@ -91,7 +91,7 @@ export default function StressReliefTestClient({
       };
       loadProducts();
     }
-  }, [locale, started, aliProducts.length]);
+  }, [locale, started, aliProducts.length, t]);
 
   // AdSense 광고 로드
   useEffect(() => {
@@ -131,7 +131,7 @@ export default function StressReliefTestClient({
       };
       loadProducts();
     }
-  }, [result, locale]);
+  }, [result, locale, t]);
 
   // 유사한 테스트와 인기 테스트 로드
   useEffect(() => {
@@ -204,7 +204,7 @@ export default function StressReliefTestClient({
 
       loadTests();
     }
-  }, [slug, locale, similarTests]);
+  }, [slug, locale, similarTests, t]);
 
   // 3초 지연 로딩 스피너
   useEffect(() => {

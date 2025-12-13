@@ -76,7 +76,7 @@ export default function Header() {
         setSearchResults(Array.isArray(data.tests) ? data.tests : []);
       } catch {}
     })();
-  }, [isSearchOpen, locale]);
+  }, [isSearchOpen, locale, searchQuery]);
 
   return (
     <header 

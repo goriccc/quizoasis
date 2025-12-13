@@ -21,6 +21,21 @@ body {
   overflow-x: hidden;
 }
 
+/* 폰트 fallback 최적화 */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.gstatic.com/s/notosanskr/v36/PbykFmXiEBPT4ITbgNA5Cgm20xz64px_1hVWr0wuPNGmlQNMEfD4.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 300 700;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('https://fonts.gstatic.com/s/notosans/v36/o-0IIpQlx3QUlC5A4PNb4j5Ba_2c7A.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 300 700;
+}
+
 body {
   color: var(--foreground);
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

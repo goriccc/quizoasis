@@ -1519,6 +1519,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase2PerfectionismTest": {
+    "startMessage": {
+      "line1": "\"あなたの基準点はどこですか？\"",
+      "line2": "適当に仕事をするのは我慢できず、小さなミス一つでも夜眠れなくなりますか？",
+      "line3": "完璧主義はあなたを高い場所へ導く翼ですが、時にはあなたを押しつぶす重い荷物にもなります。",
+      "line4": "うまくやりたい気持ちと自分を苦しめる強迫の間。あなたの完璧主義指数は安全な状態ですか？",
+      "line5": "私の強迫レベルを診断する 📏 完璧主義チェック 🔍"
+    },
+    "ui": {
+      "startTest": "強迫レベルを診断する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の完璧主義傾向テスト）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "perfectionismLevel": "完璧主義指数",
+      "characteristics": "主な特徴",
+      "prescription": "処方"
+    },
+    "shareMessages": {
+      "default": "私の完璧主義指数は{type}！ 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "kakao": "私の完璧主義指数は{type}！ 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "wechat": "私の完璧主義指数は{type}！ 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "whatsapp": "私の完璧主義指数は{type}！ 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "telegram": "私の完璧主義指数は{type}！ 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "line": "私の完璧主義指数は{type}！ 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "startDefault": "私の「完璧主義」傾向テスト（燃え尽き症候群診断） 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "startKakao": "私の「完璧主義」傾向テスト（燃え尽き症候群診断） 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "startWechat": "私の「完璧主義」傾向テスト（燃え尽き症候群診断） 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "startWhatsapp": "私の「完璧主義」傾向テスト（燃え尽き症候群診断） 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "startTelegram": "私の「完璧主義」傾向テスト（燃え尽き症候群診断） 📏 私は几帳面なのか、自分を苦しめているのか？",
+      "startLine": "私の「完璧主義」傾向テスト（燃え尽き症候群診断） 📏 私は几帳面なのか、自分を苦しめているのか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "independenceTest": {
     "startMessage": {
       "line1": "「一人でも大丈夫 vs 誰かが必要」",

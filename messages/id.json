@@ -1352,6 +1352,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase2PerfectionismTest": {
+    "startMessage": {
+      "line1": "\"Di mana titik standar Anda?\"",
+      "line2": "Tidak tahan melakukan sesuatu dengan sembarangan, dan kehilangan tidur karena satu kesalahan kecil?",
+      "line3": "Perfeksionisme adalah sayap yang membawa Anda tinggi, tetapi terkadang menjadi beban berat yang menindas Anda.",
+      "line4": "Antara keinginan untuk melakukan dengan baik dan paksaan yang menyiksa diri sendiri. Apakah tingkat perfeksionisme Anda dalam keadaan aman?",
+      "line5": "Diagnosis tingkat obsesi saya 📏 Pemeriksaan perfeksionisme 🔍"
+    },
+    "ui": {
+      "startTest": "Diagnosis Tingkat Obsesi",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Test Lain",
+      "goToTest": "Pergi ke Test",
+      "adsenseTitle": "Area Iklan AdSense (Test Kecenderungan Perfeksionisme Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test Serupa Lain",
+      "perfectionismLevel": "Tingkat Perfeksionisme",
+      "characteristics": "Karakteristik Utama",
+      "prescription": "Resep"
+    },
+    "shareMessages": {
+      "default": "Tingkat perfeksionisme saya adalah {type}! 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "kakao": "Tingkat perfeksionisme saya adalah {type}! 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "wechat": "Tingkat perfeksionisme saya adalah {type}! 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "whatsapp": "Tingkat perfeksionisme saya adalah {type}! 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "telegram": "Tingkat perfeksionisme saya adalah {type}! 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "line": "Tingkat perfeksionisme saya adalah {type}! 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "startDefault": "Test Kecenderungan 'Perfeksionisme' Saya (Diagnosis Kelelahan) 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "startKakao": "Test Kecenderungan 'Perfeksionisme' Saya (Diagnosis Kelelahan) 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "startWechat": "Test Kecenderungan 'Perfeksionisme' Saya (Diagnosis Kelelahan) 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "startWhatsapp": "Test Kecenderungan 'Perfeksionisme' Saya (Diagnosis Kelelahan) 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "startTelegram": "Test Kecenderungan 'Perfeksionisme' Saya (Diagnosis Kelelahan) 📏 Apakah saya teliti atau menyiksa diri sendiri?",
+      "startLine": "Test Kecenderungan 'Perfeksionisme' Saya (Diagnosis Kelelahan) 📏 Apakah saya teliti atau menyiksa diri sendiri?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Jika Anda tidak bisa menghindari pertengkaran, apa yang akan Anda lakukan?\"",

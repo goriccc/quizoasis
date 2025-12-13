@@ -159,7 +159,7 @@ export default function ConcentrationTestClient({
     };
 
     loadTests();
-  }, []);
+  }, [slug]);
 
   // 3초 지연 로딩 스피너
   useEffect(() => {

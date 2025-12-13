@@ -200,7 +200,8 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
                       className="object-cover select-none"
                       sizes="(max-width: 640px) 80vw, (max-width: 768px) 60vw, (max-width: 1024px) 50vw, 435px"
                       draggable={false}
-                      priority={index < 3}
+                      priority={index < 2}
+                      loading={index < 2 ? undefined : 'lazy'}
                       quality={85}
                     />
                   

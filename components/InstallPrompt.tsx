@@ -131,11 +131,11 @@ export default function InstallPrompt() {
                 </span>
                 <span className="min-w-0 flex-1">
                   {t('step1').split('[ICON]')[0]}
-                  <img 
+                  <Image 
                     src="/iphone_shere.png" 
                     alt="iOS Share Icon" 
-                    width="16" 
-                    height="16" 
+                    width={16} 
+                    height={16} 
                     className="inline align-middle mx-0.5"
                     style={{ verticalAlign: 'middle' }}
                   />
