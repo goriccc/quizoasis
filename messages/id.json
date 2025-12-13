@@ -1407,6 +1407,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase2FriendshipStyleTest": {
+    "startMessage": {
+      "line1": "\"Apa arti 'teman sejati' bagi Anda?\"",
+      "line2": "Dari 'social butterfly' yang membanggakan koneksi luas dan dangkal hingga 'bunga matahari' yang puas dengan hanya satu soulmate.",
+      "line3": "Setiap orang memiliki cara berbeda dalam berteman dan mempertahankan hubungan.",
+      "line4": "Apakah saya tipe yang berdedikasi pada teman, atau tipe yang membutuhkan jarak yang tepat?",
+      "line5": "Kami menganalisis konsentrasi persahabatan Anda. Temukan tipe hubungan teman saya 🤝 Diagnosis gaya persahabatan 💌"
+    },
+    "ui": {
+      "startTest": "Diagnosis Gaya Persahabatan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Test Lainnya",
+      "goToTest": "Pergi ke Test",
+      "adsenseTitle": "Area Iklan AdSense (Test Gaya Persahabatan Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test Serupa Lainnya",
+      "friendshipStyle": "Gaya Persahabatan",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Gaya persahabatan saya adalah {type}! 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "kakao": "Gaya persahabatan saya adalah {type}! 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "wechat": "Gaya persahabatan saya adalah {type}! 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "whatsapp": "Gaya persahabatan saya adalah {type}! 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "telegram": "Gaya persahabatan saya adalah {type}! 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "line": "Gaya persahabatan saya adalah {type}! 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "startDefault": "Test Gaya 'Persahabatan' Saya 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "startKakao": "Test Gaya 'Persahabatan' Saya 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "startWechat": "Test Gaya 'Persahabatan' Saya 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "startWhatsapp": "Test Gaya 'Persahabatan' Saya 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "startTelegram": "Test Gaya 'Persahabatan' Saya 🤝 Siapa yang akan menjadi teman seumur hidup saya?",
+      "startLine": "Test Gaya 'Persahabatan' Saya 🤝 Siapa yang akan menjadi teman seumur hidup saya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Test Serupa",
+      "popularTestsTop5": "🔥 Top 5 Test Populer Terkini"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Jika Anda tidak bisa menghindari pertengkaran, apa yang akan Anda lakukan?\"",

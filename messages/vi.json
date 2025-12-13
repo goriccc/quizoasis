@@ -1407,6 +1407,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase2FriendshipStyleTest": {
+    "startMessage": {
+      "line1": "\"Đối với bạn, 'người bạn thật sự' có nghĩa là gì?\"",
+      "line2": "Từ những 'người quảng giao' tự hào về mạng lưới rộng và nông đến những 'hoa hướng dương' chỉ cần một người bạn tâm giao là đủ.",
+      "line3": "Mỗi người có cách kết bạn và duy trì mối quan hệ khác nhau.",
+      "line4": "Tôi là kiểu người tận tụy với bạn bè, hay là kiểu cần khoảng cách phù hợp?",
+      "line5": "Chúng tôi phân tích nồng độ tình bạn của bạn. Tìm kiểu quan hệ bạn bè của tôi 🤝 Chẩn đoán phong cách tình bạn 💌"
+    },
+    "ui": {
+      "startTest": "Chẩn đoán phong cách tình bạn",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài test phong cách tình bạn của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự khác",
+      "friendshipStyle": "Phong cách tình bạn",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Phong cách tình bạn của tôi là {type}! 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "kakao": "Phong cách tình bạn của tôi là {type}! 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "wechat": "Phong cách tình bạn của tôi là {type}! 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "whatsapp": "Phong cách tình bạn của tôi là {type}! 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "telegram": "Phong cách tình bạn của tôi là {type}! 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "line": "Phong cách tình bạn của tôi là {type}! 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "startDefault": "Bài test phong cách 'Tình bạn' của tôi 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "startKakao": "Bài test phong cách 'Tình bạn' của tôi 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "startWechat": "Bài test phong cách 'Tình bạn' của tôi 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "startWhatsapp": "Bài test phong cách 'Tình bạn' của tôi 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "startTelegram": "Bài test phong cách 'Tình bạn' của tôi 🤝 Ai sẽ là người bạn suốt đời của tôi?",
+      "startLine": "Bài test phong cách 'Tình bạn' của tôi 🤝 Ai sẽ là người bạn suốt đời của tôi?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"Nếu không thể tránh khỏi cãi vã, bạn sẽ làm gì?\"",

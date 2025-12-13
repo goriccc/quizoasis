@@ -1414,6 +1414,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase2FriendshipStyleTest": {
+    "startMessage": {
+      "line1": "「對你來說『真正的朋友』意味著什麼？」",
+      "line2": "從以廣泛淺薄人脈為傲的「社交達人」到只要一個靈魂伴侶就滿足的「向日葵」。",
+      "line3": "每個人交朋友和維持關係的方式都不同。",
+      "line4": "我是為朋友奉獻的類型，還是需要適當距離的類型？",
+      "line5": "我們分析你的友誼濃度。找到我的朋友關係類型 🤝 友誼風格診斷 💌"
+    },
+    "ui": {
+      "startTest": "診斷友誼風格",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的友誼風格測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "friendshipStyle": "友誼風格",
+      "goodMatch": "理想配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的友誼風格是{type}！🤝 誰會成為我一生的朋友？",
+      "kakao": "我的友誼風格是{type}！🤝 誰會成為我一生的朋友？",
+      "wechat": "我的友誼風格是{type}！🤝 誰會成為我一生的朋友？",
+      "whatsapp": "我的友誼風格是{type}！🤝 誰會成為我一生的朋友？",
+      "telegram": "我的友誼風格是{type}！🤝 誰會成為我一生的朋友？",
+      "line": "我的友誼風格是{type}！🤝 誰會成為我一生的朋友？",
+      "startDefault": "我的「友誼」風格測試 🤝 誰會成為我一生的朋友？",
+      "startKakao": "我的「友誼」風格測試 🤝 誰會成為我一生的朋友？",
+      "startWechat": "我的「友誼」風格測試 🤝 誰會成為我一生的朋友？",
+      "startWhatsapp": "我的「友誼」風格測試 🤝 誰會成為我一生的朋友？",
+      "startTelegram": "我的「友誼」風格測試 🤝 誰會成為我一生的朋友？",
+      "startLine": "我的「友誼」風格測試 🤝 誰會成為我一生的朋友？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"如果無法避免爭吵，你會怎麼做？\"",

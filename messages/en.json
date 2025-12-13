@@ -1618,6 +1618,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2FriendshipStyleTest": {
+    "startMessage": {
+      "line1": "\"What does a 'true friend' mean to you?\"",
+      "line2": "From 'social butterflies' who boast wide and shallow connections to 'sunflowers' who are content with just one soulmate.",
+      "line3": "Everyone has different ways of making and maintaining friendships.",
+      "line4": "Am I the type who devotes myself to friends, or do I need appropriate distance?",
+      "line5": "We analyze your friendship concentration. Find my friend relationship type 🤝 Friendship style diagnosis 💌"
+    },
+    "ui": {
+      "startTest": "Diagnose Friendship Style",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Friendship Style Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "friendshipStyle": "Friendship Style",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My friendship style is {type}! 🤝 Who would be my lifelong friend?",
+      "kakao": "My friendship style is {type}! 🤝 Who would be my lifelong friend?",
+      "wechat": "My friendship style is {type}! 🤝 Who would be my lifelong friend?",
+      "whatsapp": "My friendship style is {type}! 🤝 Who would be my lifelong friend?",
+      "telegram": "My friendship style is {type}! 🤝 Who would be my lifelong friend?",
+      "line": "My friendship style is {type}! 🤝 Who would be my lifelong friend?",
+      "startDefault": "My 'Friendship' Style Test 🤝 Who would be my lifelong friend?",
+      "startKakao": "My 'Friendship' Style Test 🤝 Who would be my lifelong friend?",
+      "startWechat": "My 'Friendship' Style Test 🤝 Who would be my lifelong friend?",
+      "startWhatsapp": "My 'Friendship' Style Test 🤝 Who would be my lifelong friend?",
+      "startTelegram": "My 'Friendship' Style Test 🤝 Who would be my lifelong friend?",
+      "startLine": "My 'Friendship' Style Test 🤝 Who would be my lifelong friend?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "conflictStyleTest": {
     "startMessage": {
       "line1": "\"If you can't avoid a fight, what do you do?\"",
