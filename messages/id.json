@@ -1353,6 +1353,77 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase2BirthGemFlowerTest": {
+    "startMessage": {
+      "line1": "\"Permata kelahiran yang hanya ditentukan oleh hari ulang tahun membosankan, kan?\"",
+      "line2": "Ada permata lain yang paling mewakili kepribadian dan jiwa Anda.",
+      "line3": "Apa batu pelindung yang melindungi saya?",
+      "line4": "Bunga apa yang paling mirip dengan saya?",
+      "line5": "Kami menemukan 'permata dan bunga jiwa' yang akan membuat Anda paling bersinar.\nTemukan aura tersembunyi saya ✨ Periksa permata kelahiran Anda 💎"
+    },
+    "ui": {
+      "startTest": "Periksa Permata Kelahiran",
+      "birthMonth": "Bulan Kelahiran",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Permata & Bunga Kelahiran Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "gem": "Permata Simbolis",
+      "flower": "Bunga Simbolis",
+      "recommendation": "Item yang Direkomendasikan",
+      "months": {
+        "1": "Januari",
+        "2": "Februari",
+        "3": "Maret",
+        "4": "April",
+        "5": "Mei",
+        "6": "Juni",
+        "7": "Juli",
+        "8": "Agustus",
+        "9": "September",
+        "10": "Oktober",
+        "11": "November",
+        "12": "Desember"
+      }
+    },
+    "shareMessages": {
+      "default": "Permata kelahiran jiwa saya adalah {type}! 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "kakao": "Permata kelahiran jiwa saya adalah {type}! 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "wechat": "Permata kelahiran jiwa saya adalah {type}! 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "whatsapp": "Permata kelahiran jiwa saya adalah {type}! 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "telegram": "Permata kelahiran jiwa saya adalah {type}! 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "line": "Permata kelahiran jiwa saya adalah {type}! 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "startDefault": "Temukan Permata & Bunga Kelahiran Saya 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "startKakao": "Temukan Permata & Bunga Kelahiran Saya 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "startWechat": "Temukan Permata & Bunga Kelahiran Saya 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "startWhatsapp": "Temukan Permata & Bunga Kelahiran Saya 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "startTelegram": "Temukan Permata & Bunga Kelahiran Saya 💎 Permata dan bunga apa yang paling mirip dengan saya?",
+      "startLine": "Temukan Permata & Bunga Kelahiran Saya 💎 Permata dan bunga apa yang paling mirip dengan saya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk.",
+      "selectBirthMonth": "Silakan pilih bulan kelahiran Anda."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"Minuman apa yang mengisi jiwa Anda?\"",

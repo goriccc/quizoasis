@@ -1453,6 +1453,77 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2BirthGemFlowerTest": {
+    "startMessage": {
+      "line1": "\"Birthstones determined only by birthday are boring, right?\"",
+      "line2": "There's a gem that best represents your personality and soul.",
+      "line3": "What is the protective stone that guards me?",
+      "line4": "What flower resembles me the most?",
+      "line5": "We find the 'soul gem and flower' that will make you shine the most.\nFind my hidden aura ✨ Check your birth gem 💎"
+    },
+    "ui": {
+      "startTest": "Check Birth Gem",
+      "birthMonth": "Birth Month",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Birth Gem & Flower)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "gem": "Symbolic Gem",
+      "flower": "Symbolic Flower",
+      "recommendation": "Recommended Items",
+      "months": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      }
+    },
+    "shareMessages": {
+      "default": "My soul's birth gem is {type}! 💎 What gem and flower resemble me the most?",
+      "kakao": "My soul's birth gem is {type}! 💎 What gem and flower resemble me the most?",
+      "wechat": "My soul's birth gem is {type}! 💎 What gem and flower resemble me the most?",
+      "whatsapp": "My soul's birth gem is {type}! 💎 What gem and flower resemble me the most?",
+      "telegram": "My soul's birth gem is {type}! 💎 What gem and flower resemble me the most?",
+      "line": "My soul's birth gem is {type}! 💎 What gem and flower resemble me the most?",
+      "startDefault": "Find My Birth Gem & Flower 💎 What gem and flower resemble me the most?",
+      "startKakao": "Find My Birth Gem & Flower 💎 What gem and flower resemble me the most?",
+      "startWechat": "Find My Birth Gem & Flower 💎 What gem and flower resemble me the most?",
+      "startWhatsapp": "Find My Birth Gem & Flower 💎 What gem and flower resemble me the most?",
+      "startTelegram": "Find My Birth Gem & Flower 💎 What gem and flower resemble me the most?",
+      "startLine": "Find My Birth Gem & Flower 💎 What gem and flower resemble me the most?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk.",
+      "selectBirthMonth": "Please select your birth month."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"What drink fills your soul?\"",

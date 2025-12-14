@@ -1354,6 +1354,77 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase2BirthGemFlowerTest": {
+    "startMessage": {
+      "line1": "\"単に誕生日だけで決まる誕生石はつまらないですよね？\"",
+      "line2": "あなたの性格と魂を最もよく表す宝石は別にあります。",
+      "line3": "私を守ってくれる守護石は何でしょうか？",
+      "line4": "私に最も似ている花は何でしょうか？",
+      "line5": "あなたを最も輝かせてくれる「魂の宝石と花」を見つけます。\n私の隠されたオーラを見つける ✨ あなたの誕生石を確認 💎"
+    },
+    "ui": {
+      "startTest": "誕生石を確認",
+      "birthMonth": "生まれた月",
+      "shareWithFriends": "友達と一緒に",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア (私の誕生石/誕生花を見つける)",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "gem": "象徴的な宝石",
+      "flower": "象徴的な花",
+      "recommendation": "おすすめアイテム",
+      "months": {
+        "1": "1月",
+        "2": "2月",
+        "3": "3月",
+        "4": "4月",
+        "5": "5月",
+        "6": "6月",
+        "7": "7月",
+        "8": "8月",
+        "9": "9月",
+        "10": "10月",
+        "11": "11月",
+        "12": "12月"
+      }
+    },
+    "shareMessages": {
+      "default": "私の魂の誕生石は{type}！💎 私に最も似ている宝石と花は何でしょうか？",
+      "kakao": "私の魂の誕生石は{type}！💎 私に最も似ている宝石と花は何でしょうか？",
+      "wechat": "私の魂の誕生石は{type}！💎 私に最も似ている宝石と花は何でしょうか？",
+      "whatsapp": "私の魂の誕生石は{type}！💎 私に最も似ている宝石と花は何でしょうか？",
+      "telegram": "私の魂の誕生石は{type}！💎 私に最も似ている宝石と花は何でしょうか？",
+      "line": "私の魂の誕生石は{type}！💎 私に最も似ている宝石と花は何でしょうか？",
+      "startDefault": "私の誕生石/誕生花を見つける 💎 私に最も似ている宝石と花は？",
+      "startKakao": "私の誕生石/誕生花を見つける 💎 私に最も似ている宝石と花は？",
+      "startWechat": "私の誕生石/誕生花を見つける 💎 私に最も似ている宝石と花は？",
+      "startWhatsapp": "私の誕生石/誕生花を見つける 💎 私に最も似ている宝石と花は？",
+      "startTelegram": "私の誕生石/誕生花を見つける 💎 私に最も似ている宝石と花は？",
+      "startLine": "私の誕生石/誕生花を見つける 💎 私に最も似ている宝石と花は？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。",
+      "selectBirthMonth": "生まれた月を選択してください。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"あなたの魂を満たす一杯は何ですか？\"",

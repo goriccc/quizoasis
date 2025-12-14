@@ -1360,6 +1360,77 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase2BirthGemFlowerTest": {
+    "startMessage": {
+      "line1": "\"僅僅由生日決定的誕生石很無聊，對吧？\"",
+      "line2": "最能代表你性格和靈魂的寶石是另外的。",
+      "line3": "守護我的守護石是什麼？",
+      "line4": "最像我的花是什麼？",
+      "line5": "我們為你找到最能讓你閃耀的「靈魂寶石與花」。\n尋找我隱藏的光環 ✨ 查看你的誕生石 💎"
+    },
+    "ui": {
+      "startTest": "查看誕生石",
+      "birthMonth": "出生月份",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域 (尋找我的誕生石/誕生花)",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "gem": "象徵寶石",
+      "flower": "象徵花朵",
+      "recommendation": "推薦物品",
+      "months": {
+        "1": "1月",
+        "2": "2月",
+        "3": "3月",
+        "4": "4月",
+        "5": "5月",
+        "6": "6月",
+        "7": "7月",
+        "8": "8月",
+        "9": "9月",
+        "10": "10月",
+        "11": "11月",
+        "12": "12月"
+      }
+    },
+    "shareMessages": {
+      "default": "我靈魂的誕生石是{type}！💎 最像我的寶石和花是什麼？",
+      "kakao": "我靈魂的誕生石是{type}！💎 最像我的寶石和花是什麼？",
+      "wechat": "我靈魂的誕生石是{type}！💎 最像我的寶石和花是什麼？",
+      "whatsapp": "我靈魂的誕生石是{type}！💎 最像我的寶石和花是什麼？",
+      "telegram": "我靈魂的誕生石是{type}！💎 最像我的寶石和花是什麼？",
+      "line": "我靈魂的誕生石是{type}！💎 最像我的寶石和花是什麼？",
+      "startDefault": "尋找我的誕生石/誕生花 💎 最像我的寶石和花是什麼？",
+      "startKakao": "尋找我的誕生石/誕生花 💎 最像我的寶石和花是什麼？",
+      "startWechat": "尋找我的誕生石/誕生花 💎 最像我的寶石和花是什麼？",
+      "startWhatsapp": "尋找我的誕生石/誕生花 💎 最像我的寶石和花是什麼？",
+      "startTelegram": "尋找我的誕生石/誕生花 💎 最像我的寶石和花是什麼？",
+      "startLine": "尋找我的誕生石/誕生花 💎 最像我的寶石和花是什麼？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。",
+      "selectBirthMonth": "請選擇您的出生月份。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"什麼飲品能填滿你的靈魂？\"",
