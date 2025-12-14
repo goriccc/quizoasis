@@ -4206,6 +4206,61 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
   },
+  "phase2BodySignalTest": {
+    "startMessage": {
+      "line1": "\"睡再多也累，眼睛模糊？\"",
+      "line2": "不要忽視你身體發出的求救信號！",
+      "line3": "早上難以起床，一到下午就沒電了嗎？",
+      "line4": "你的眼下是否在跳動，或者肚子感到脹？",
+      "line5": "我們會在1分鐘內分析你身體最需要的成分。去醫院前，先輕鬆檢查一下吧！🩺 找出我身體缺少的成分 💊"
+    },
+    "ui": {
+      "startTest": "確認缺少的成分",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區域（尋找我身體SOS信號）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "symptoms": "主要症狀",
+      "prescription": "為我身體定制的處方",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的身體狀況是{type}！我需要的營養補充劑是這個 💊 你也來檢查一下吧！",
+      "kakao": "我的身體狀況是{type}！我需要的營養補充劑是這個 💊 你也來檢查一下吧！",
+      "wechat": "我的身體狀況是{type}！我需要的營養補充劑是這個 💊 你也來檢查一下吧！",
+      "whatsapp": "我的身體狀況是{type}！我需要的營養補充劑是這個 💊 你也來檢查一下吧！",
+      "telegram": "我的身體狀況是{type}！我需要的營養補充劑是這個 💊 你也來檢查一下吧！",
+      "line": "我的身體狀況是{type}！我需要的營養補充劑是這個 💊 你也來檢查一下吧！",
+      "startDefault": "我身體發出的SOS信號！我需要什麼營養補充劑？ 💊 你也來檢查一下吧！",
+      "startKakao": "我身體發出的SOS信號！我需要什麼營養補充劑？ 💊 你也來檢查一下吧！",
+      "startWechat": "我身體發出的SOS信號！我需要什麼營養補充劑？ 💊 你也來檢查一下吧！",
+      "startWhatsapp": "我身體發出的SOS信號！我需要什麼營養補充劑？ 💊 你也來檢查一下吧！",
+      "startTelegram": "我身體發出的SOS信號！我需要什麼營養補充劑？ 💊 你也來檢查一下吧！",
+      "startLine": "我身體發出的SOS信號！我需要什麼營養補充劑？ 💊 你也來檢查一下吧！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請貼上到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大腦有多靈活？\"",

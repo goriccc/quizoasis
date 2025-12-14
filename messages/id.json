@@ -4199,6 +4199,61 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2BodySignalTest": {
+    "startMessage": {
+      "line1": "\"Masih lelah setelah tidur, dan mata kabur?\"",
+      "line2": "Jangan abaikan sinyal darurat dari tubuh Anda!",
+      "line3": "Apakah Anda kesulitan bangun di pagi hari dan merasa lelah di sore hari?",
+      "line4": "Apakah mata Anda berkedut atau perut terasa kembung?",
+      "line5": "Kami menganalisis nutrisi yang paling dibutuhkan tubuh Anda hanya dalam 1 menit. Coba periksa dengan ringan sebelum pergi ke rumah sakit! 🩺 Temukan Nutrisi yang Kurang dari Tubuh Saya 💊"
+    },
+    "ui": {
+      "startTest": "Periksa Nutrisi yang Kurang",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Sinyal SOS Tubuh Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "symptoms": "Gejala Utama",
+      "prescription": "Resep Kustom untuk Tubuh Saya",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Kondisi tubuh saya adalah {type}! Ini adalah suplemen yang saya butuhkan 💊 Anda juga harus memeriksanya!",
+      "kakao": "Kondisi tubuh saya adalah {type}! Ini adalah suplemen yang saya butuhkan 💊 Anda juga harus memeriksanya!",
+      "wechat": "Kondisi tubuh saya adalah {type}! Ini adalah suplemen yang saya butuhkan 💊 Anda juga harus memeriksanya!",
+      "whatsapp": "Kondisi tubuh saya adalah {type}! Ini adalah suplemen yang saya butuhkan 💊 Anda juga harus memeriksanya!",
+      "telegram": "Kondisi tubuh saya adalah {type}! Ini adalah suplemen yang saya butuhkan 💊 Anda juga harus memeriksanya!",
+      "line": "Kondisi tubuh saya adalah {type}! Ini adalah suplemen yang saya butuhkan 💊 Anda juga harus memeriksanya!",
+      "startDefault": "Sinyal SOS Tubuh Saya! Suplemen Apa yang Saya Butuhkan? 💊 Anda juga harus memeriksanya!",
+      "startKakao": "Sinyal SOS Tubuh Saya! Suplemen Apa yang Saya Butuhkan? 💊 Anda juga harus memeriksanya!",
+      "startWechat": "Sinyal SOS Tubuh Saya! Suplemen Apa yang Saya Butuhkan? 💊 Anda juga harus memeriksanya!",
+      "startWhatsapp": "Sinyal SOS Tubuh Saya! Suplemen Apa yang Saya Butuhkan? 💊 Anda juga harus memeriksanya!",
+      "startTelegram": "Sinyal SOS Tubuh Saya! Suplemen Apa yang Saya Butuhkan? 💊 Anda juga harus memeriksanya!",
+      "startLine": "Sinyal SOS Tubuh Saya! Suplemen Apa yang Saya Butuhkan? 💊 Anda juga harus memeriksanya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

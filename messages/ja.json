@@ -4187,6 +4187,61 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2BodySignalTest": {
+    "startMessage": {
+      "line1": "「寝ても寝ても疲れて、目はぼやけてる？」",
+      "line2": "体が送るSOSシグナルを無視しないでください！",
+      "line3": "朝起きるのが難しく、午後になると電池切れですか？",
+      "line4": "目の下がピクピクしたり、お腹が重くなったりしていませんか？",
+      "line5": "今、あなたの体が最も必要とする成分を1分で分析します。病院に行く前に軽くチェックしてみてください！🩺 私の体の不足成分を見つける 💊"
+    },
+    "ui": {
+      "startTest": "不足成分を確認",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の体SOSシグナルを見つける）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "symptoms": "主な症状",
+      "prescription": "私の体に合わせた処方",
+      "recommendation": "おすすめ"
+    },
+    "shareMessages": {
+      "default": "私の体の状態は{type}！私に必要なサプリメントはこれだって 💊 あなたもチェックしてみて！",
+      "kakao": "私の体の状態は{type}！私に必要なサプリメントはこれだって 💊 あなたもチェックしてみて！",
+      "wechat": "私の体の状態は{type}！私に必要なサプリメントはこれだって 💊 あなたもチェックしてみて！",
+      "whatsapp": "私の体の状態は{type}！私に必要なサプリメントはこれだって 💊 あなたもチェックしてみて！",
+      "telegram": "私の体の状態は{type}！私に必要なサプリメントはこれだって 💊 あなたもチェックしてみて！",
+      "line": "私の体の状態は{type}！私に必要なサプリメントはこれだって 💊 あなたもチェックしてみて！",
+      "startDefault": "私の体が送るSOSシグナル！私に必要なサプリメントは？ 💊 あなたもチェックしてみて！",
+      "startKakao": "私の体が送るSOSシグナル！私に必要なサプリメントは？ 💊 あなたもチェックしてみて！",
+      "startWechat": "私の体が送るSOSシグナル！私に必要なサプリメントは？ 💊 あなたもチェックしてみて！",
+      "startWhatsapp": "私の体が送るSOSシグナル！私に必要なサプリメントは？ 💊 あなたもチェックしてみて！",
+      "startTelegram": "私の体が送るSOSシグナル！私に必要なサプリメントは？ 💊 あなたもチェックしてみて！",
+      "startLine": "私の体が送るSOSシグナル！私に必要なサプリメントは？ 💊 あなたもチェックしてみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！ウィーチャットに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

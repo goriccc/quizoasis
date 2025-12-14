@@ -4199,6 +4199,61 @@
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2BodySignalTest": {
+    "startMessage": {
+      "line1": "\"Ngủ mãi vẫn mệt, và mắt mờ?\"",
+      "line2": "Đừng bỏ qua các tín hiệu cầu cứu từ cơ thể của bạn!",
+      "line3": "Bạn có khó thức dậy vào buổi sáng và cảm thấy kiệt sức vào buổi chiều không?",
+      "line4": "Mắt dưới của bạn có đang giật hoặc bụng có cảm thấy đầy hơi không?",
+      "line5": "Chúng tôi phân tích các thành phần mà cơ thể bạn cần nhất trong vòng 1 phút. Hãy kiểm tra nhẹ nhàng trước khi đến bệnh viện! 🩺 Tìm Các Dưỡng Chất Thiếu Của Cơ Thể Tôi 💊"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Dưỡng Chất Thiếu",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Đi làm Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Tìm Tín Hiệu SOS Cơ Thể Tôi)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "symptoms": "Triệu Chứng Chính",
+      "prescription": "Đơn Thuốc Tùy Chỉnh Cho Cơ Thể Tôi",
+      "recommendation": "Khuyến Nghị"
+    },
+    "shareMessages": {
+      "default": "Tình trạng cơ thể của tôi là {type}! Đây là thực phẩm chức năng tôi cần 💊 Bạn cũng nên kiểm tra!",
+      "kakao": "Tình trạng cơ thể của tôi là {type}! Đây là thực phẩm chức năng tôi cần 💊 Bạn cũng nên kiểm tra!",
+      "wechat": "Tình trạng cơ thể của tôi là {type}! Đây là thực phẩm chức năng tôi cần 💊 Bạn cũng nên kiểm tra!",
+      "whatsapp": "Tình trạng cơ thể của tôi là {type}! Đây là thực phẩm chức năng tôi cần 💊 Bạn cũng nên kiểm tra!",
+      "telegram": "Tình trạng cơ thể của tôi là {type}! Đây là thực phẩm chức năng tôi cần 💊 Bạn cũng nên kiểm tra!",
+      "line": "Tình trạng cơ thể của tôi là {type}! Đây là thực phẩm chức năng tôi cần 💊 Bạn cũng nên kiểm tra!",
+      "startDefault": "Tín Hiệu SOS từ Cơ Thể Tôi! Tôi Cần Thực Phẩm Chức Năng Gì? 💊 Bạn cũng nên kiểm tra!",
+      "startKakao": "Tín Hiệu SOS từ Cơ Thể Tôi! Tôi Cần Thực Phẩm Chức Năng Gì? 💊 Bạn cũng nên kiểm tra!",
+      "startWechat": "Tín Hiệu SOS từ Cơ Thể Tôi! Tôi Cần Thực Phẩm Chức Năng Gì? 💊 Bạn cũng nên kiểm tra!",
+      "startWhatsapp": "Tín Hiệu SOS từ Cơ Thể Tôi! Tôi Cần Thực Phẩm Chức Năng Gì? 💊 Bạn cũng nên kiểm tra!",
+      "startTelegram": "Tín Hiệu SOS từ Cơ Thể Tôi! Tôi Cần Thực Phẩm Chức Năng Gì? 💊 Bạn cũng nên kiểm tra!",
+      "startLine": "Tín Hiệu SOS từ Cơ Thể Tôi! Tôi Cần Thực Phẩm Chức Năng Gì? 💊 Bạn cũng nên kiểm tra!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

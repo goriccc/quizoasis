@@ -4361,6 +4361,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2BodySignalTest": {
+    "startMessage": {
+      "line1": "\"Still tired after sleeping, and eyes are blurry?\"",
+      "line2": "Don't ignore your body's distress signals!",
+      "line3": "Do you have trouble waking up in the morning and feel drained by the afternoon?",
+      "line4": "Are your eyes twitching or is your stomach feeling bloated?",
+      "line5": "We analyze what nutrients your body needs most in just 1 minute. Check it out before going to the hospital! 🩺 Find My Body's Missing Nutrients 💊"
+    },
+    "ui": {
+      "startTest": "Check Missing Nutrients",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Body SOS Signal)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "symptoms": "Main Symptoms",
+      "prescription": "Custom Prescription for My Body",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My body condition is {type}! This is the supplement I need 💊 You should check it too!",
+      "kakao": "My body condition is {type}! This is the supplement I need 💊 You should check it too!",
+      "wechat": "My body condition is {type}! This is the supplement I need 💊 You should check it too!",
+      "whatsapp": "My body condition is {type}! This is the supplement I need 💊 You should check it too!",
+      "telegram": "My body condition is {type}! This is the supplement I need 💊 You should check it too!",
+      "line": "My body condition is {type}! This is the supplement I need 💊 You should check it too!",
+      "startDefault": "My Body's SOS Signal! What Supplements Do I Need? 💊 You should check it too!",
+      "startKakao": "My Body's SOS Signal! What Supplements Do I Need? 💊 You should check it too!",
+      "startWechat": "My Body's SOS Signal! What Supplements Do I Need? 💊 You should check it too!",
+      "startWhatsapp": "My Body's SOS Signal! What Supplements Do I Need? 💊 You should check it too!",
+      "startTelegram": "My Body's SOS Signal! What Supplements Do I Need? 💊 You should check it too!",
+      "startLine": "My Body's SOS Signal! What Supplements Do I Need? 💊 You should check it too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"How flexible is your brain?\"",

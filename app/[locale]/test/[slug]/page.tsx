@@ -41,6 +41,7 @@ import { phase2BirthGemFlowerQuestions, phase2BirthGemFlowerResults } from '@/li
 import { phase2CoreEmotionQuestions, phase2CoreEmotionResults } from '@/lib/phase2_core_emotion_data';
 import { phase2ResilienceQuestions, phase2ResilienceResults } from '@/lib/phase2_resilience_data';
 import { phase2DreamCarQuestions, phase2DreamCarResults } from '@/lib/phase2_dream_car_data';
+import { phase2BodySignalQuestions, phase2BodySignalResults } from '@/lib/phase2_body_signal_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -172,6 +173,9 @@ const Phase2ResilienceTestClient = dynamic(() => import('@/components/Phase2Resi
   ssr: false
 });
 const Phase2DreamCarTestClient = dynamic(() => import('@/components/Phase2DreamCarTestClient'), {
+  ssr: false
+});
+const Phase2BodySignalTestClient = dynamic(() => import('@/components/Phase2BodySignalTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1888,6 +1892,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2DreamCarQuestions}
           results={phase2DreamCarResults}
           questionCount={phase2DreamCarQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_body_signal_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_body_signal_test',
+      title: {
+        ko: "내 몸이 보내는 SOS 신호! 나에게 필요한 영양제는?",
+        en: "My Body's SOS Signal! What Supplements Do I Need?",
+        ja: "私の体が送るSOSシグナル！私に必要なサプリメントは？",
+        'zh-CN': "我身体发出的SOS信号！我需要什么营养补充剂？",
+        'zh-TW': "我身體發出的SOS信號！我需要什麼營養補充劑？",
+        vi: "Tín Hiệu SOS từ Cơ Thể Tôi! Tôi Cần Thực Phẩm Chức Năng Gì?",
+        id: "Sinyal SOS Tubuh Saya! Suplemen Apa yang Saya Butuhkan?"
+      },
+      description: {
+        ko: '자도 자도 피곤하고, 눈은 침침?',
+        en: 'Still tired after sleeping, and eyes are blurry?',
+        ja: '寝ても寝ても疲れて、目はぼやけてる？',
+        'zh-CN': '睡再多也累，眼睛模糊？',
+        'zh-TW': '睡再多也累，眼睛模糊？',
+        vi: 'Ngủ mãi vẫn mệt, và mắt mờ?',
+        id: 'Masih lelah setelah tidur, dan mata kabur?'
+      },
+      thumbnail: 'phase2_test_032_body_signal.jpg',
+      type: 'knowledge',
+      category: 'health',
+      play_count: 0,
+      tags: {
+        ko: ['지식', '상식'],
+        en: ['Knowledge', 'General Knowledge'],
+        ja: ['知識', '常識'],
+        'zh-CN': ['知识', '常识'],
+        'zh-TW': ['知識', '常識'],
+        vi: ['Kiến thức', 'Kiến thức chung'],
+        id: ['Pengetahuan', 'Pengetahuan Umum']
+      }
+    };
+
+    return (
+      <>
+        <Phase2BodySignalTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2BodySignalQuestions}
+          results={phase2BodySignalResults}
+          questionCount={phase2BodySignalQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

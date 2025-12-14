@@ -4199,6 +4199,61 @@
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },
+  "phase2BodySignalTest": {
+    "startMessage": {
+      "line1": "\"睡再多也累，眼睛模糊？\"",
+      "line2": "不要忽视你身体发出的求救信号！",
+      "line3": "早上难以起床，一到下午就没电了吗？",
+      "line4": "你的眼下是否在跳动，或者肚子感到胀？",
+      "line5": "我们会在1分钟内分析你身体最需要的成分。去医院前，先轻松检查一下吧！🩺 找出我身体缺少的成分 💊"
+    },
+    "ui": {
+      "startTest": "确认缺少的成分",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区域（寻找我身体SOS信号）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "symptoms": "主要症状",
+      "prescription": "为我身体定制的处方",
+      "recommendation": "推荐"
+    },
+    "shareMessages": {
+      "default": "我的身体状况是{type}！我需要的营养补充剂是这个 💊 你也来检查一下吧！",
+      "kakao": "我的身体状况是{type}！我需要的营养补充剂是这个 💊 你也来检查一下吧！",
+      "wechat": "我的身体状况是{type}！我需要的营养补充剂是这个 💊 你也来检查一下吧！",
+      "whatsapp": "我的身体状况是{type}！我需要的营养补充剂是这个 💊 你也来检查一下吧！",
+      "telegram": "我的身体状况是{type}！我需要的营养补充剂是这个 💊 你也来检查一下吧！",
+      "line": "我的身体状况是{type}！我需要的营养补充剂是这个 💊 你也来检查一下吧！",
+      "startDefault": "我身体发出的SOS信号！我需要什么营养补充剂？ 💊 你也来检查一下吧！",
+      "startKakao": "我身体发出的SOS信号！我需要什么营养补充剂？ 💊 你也来检查一下吧！",
+      "startWechat": "我身体发出的SOS信号！我需要什么营养补充剂？ 💊 你也来检查一下吧！",
+      "startWhatsapp": "我身体发出的SOS信号！我需要什么营养补充剂？ 💊 你也来检查一下吧！",
+      "startTelegram": "我身体发出的SOS信号！我需要什么营养补充剂？ 💊 你也来检查一下吧！",
+      "startLine": "我身体发出的SOS信号！我需要什么营养补充剂？ 💊 你也来检查一下吧！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请粘贴到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",
