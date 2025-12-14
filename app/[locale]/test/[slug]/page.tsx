@@ -39,6 +39,7 @@ import { phase2CreativityLevelQuestions, phase2CreativityLevelResults } from '@/
 import { phase2ImpulseBuyingQuestions, phase2ImpulseBuyingResults } from '@/lib/phase2_impulse_buying_data';
 import { phase2BirthGemFlowerQuestions, phase2BirthGemFlowerResults } from '@/lib/phase2_birth_gem_flower_data';
 import { phase2CoreEmotionQuestions, phase2CoreEmotionResults } from '@/lib/phase2_core_emotion_data';
+import { phase2ResilienceQuestions, phase2ResilienceResults } from '@/lib/phase2_resilience_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -164,6 +165,9 @@ const Phase2BirthGemFlowerTestClient = dynamic(() => import('@/components/Phase2
   ssr: false
 });
 const Phase2CoreEmotionTestClient = dynamic(() => import('@/components/Phase2CoreEmotionTestClient'), {
+  ssr: false
+});
+const Phase2ResilienceTestClient = dynamic(() => import('@/components/Phase2ResilienceTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1774,6 +1778,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2CoreEmotionQuestions}
           results={phase2CoreEmotionResults}
           questionCount={phase2CoreEmotionQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_resilience_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_resilience_test',
+      title: {
+        ko: "나의 '회복탄력성' 지수 (멘탈 강도 진단)",
+        en: "My 'Resilience' Index (Mental Strength Diagnosis)",
+        ja: "私の「回復力」指数（メンタル強度診断）",
+        'zh-CN': "我的「恢复力」指数（心理强度诊断）",
+        'zh-TW': "我的「恢復力」指數（心理強度診斷）",
+        vi: "Chỉ Số 'Khả Năng Phục Hồi' Của Tôi (Chẩn Đoán Sức Mạnh Tinh Thần)",
+        id: "Indeks 'Ketahanan' Saya (Diagnosis Kekuatan Mental)"
+      },
+      description: {
+        ko: '당신의 마음은 시련 앞에서 얼마나 단단한가요?',
+        en: "How strong is your heart in the face of trials?",
+        ja: "あなたの心は試練の前でどれほど強固ですか？",
+        'zh-CN': "在考验面前，你的心有多坚强？",
+        'zh-TW': "在考驗面前，你的心有多堅強？",
+        vi: "Trái tim của bạn mạnh mẽ đến mức nào trước những thử thách?",
+        id: "Seberapa kuat hati Anda di hadapan cobaan?"
+      },
+      thumbnail: 'phase2_test_152_resilience.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리'],
+        en: ['Psychology'],
+        ja: ['心理'],
+        'zh-CN': ['心理'],
+        'zh-TW': ['心理'],
+        vi: ['Tâm lý'],
+        id: ['Psikologi']
+      }
+    };
+
+    return (
+      <>
+        <Phase2ResilienceTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2ResilienceQuestions}
+          results={phase2ResilienceResults}
+          questionCount={phase2ResilienceQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

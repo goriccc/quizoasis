@@ -1478,6 +1478,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase2ResilienceTest": {
+    "startMessage": {
+      "line1": "\"Seberapa kuat hati Anda di hadapan cobaan?\"",
+      "line2": "Dalam hidup, semua orang akan jatuh, gagal, dan terluka.",
+      "line3": "Yang penting bukan 'tidak jatuh', tapi 'kekuatan untuk bangkit kembali saat jatuh'.",
+      "line4": "Dari mental kaca yang runtuh karena guncangan kecil hingga mental baja yang tetap tenang meski badai.",
+      "line5": "Kami mendiagnosis seberapa kuat otot mental Anda.\nUkur tingkat mental saya 🛡️ Periksa ketahanan 🩺"
+    },
+    "ui": {
+      "startTest": "Periksa Ketahanan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Indeks Ketahanan Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "resilienceScore": "Skor Ketahanan",
+      "characteristics": "Karakteristik Utama",
+      "prescription": "Resep Mental"
+    },
+    "shareMessages": {
+      "default": "Indeks ketahanan saya adalah {type}! 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "kakao": "Indeks ketahanan saya adalah {type}! 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "wechat": "Indeks ketahanan saya adalah {type}! 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "whatsapp": "Indeks ketahanan saya adalah {type}! 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "telegram": "Indeks ketahanan saya adalah {type}! 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "line": "Indeks ketahanan saya adalah {type}! 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "startDefault": "Temukan Indeks Ketahanan Saya 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "startKakao": "Temukan Indeks Ketahanan Saya 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "startWechat": "Temukan Indeks Ketahanan Saya 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "startWhatsapp": "Temukan Indeks Ketahanan Saya 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "startTelegram": "Temukan Indeks Ketahanan Saya 🛡️ Bisakah saya mengatasi cobaan apa pun?",
+      "startLine": "Temukan Indeks Ketahanan Saya 🛡️ Bisakah saya mengatasi cobaan apa pun?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"Minuman apa yang mengisi jiwa Anda?\"",

@@ -1478,6 +1478,61 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase2ResilienceTest": {
+    "startMessage": {
+      "line1": "\"在考验面前，你的心有多坚强？\"",
+      "line2": "在生活中，每个人都会跌倒、失败、受伤。",
+      "line3": "重要的不是'不跌倒'，而是'跌倒时重新站起来的力量'。",
+      "line4": "从轻微冲击就会崩溃的玻璃心态，到暴风雨中也能保持镇定的钢铁心态。",
+      "line5": "我们诊断你的心理肌肉有多强壮。\n测量我的心理等级 🛡️ 检查恢复力 🩺"
+    },
+    "ui": {
+      "startTest": "检查恢复力",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域 (寻找我的恢复力指数)",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "resilienceScore": "恢复力分数",
+      "characteristics": "主要特征",
+      "prescription": "心理处方"
+    },
+    "shareMessages": {
+      "default": "我的恢复力指数是{type}！🛡️ 无论什么考验都能战胜吗？",
+      "kakao": "我的恢复力指数是{type}！🛡️ 无论什么考验都能战胜吗？",
+      "wechat": "我的恢复力指数是{type}！🛡️ 无论什么考验都能战胜吗？",
+      "whatsapp": "我的恢复力指数是{type}！🛡️ 无论什么考验都能战胜吗？",
+      "telegram": "我的恢复力指数是{type}！🛡️ 无论什么考验都能战胜吗？",
+      "line": "我的恢复力指数是{type}！🛡️ 无论什么考验都能战胜吗？",
+      "startDefault": "寻找我的恢复力指数 🛡️ 无论什么考验都能战胜吗？",
+      "startKakao": "寻找我的恢复力指数 🛡️ 无论什么考验都能战胜吗？",
+      "startWechat": "寻找我的恢复力指数 🛡️ 无论什么考验都能战胜吗？",
+      "startWhatsapp": "寻找我的恢复力指数 🛡️ 无论什么考验都能战胜吗？",
+      "startTelegram": "寻找我的恢复力指数 🛡️ 无论什么考验都能战胜吗？",
+      "startLine": "寻找我的恢复力指数 🛡️ 无论什么考验都能战胜吗？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"什么饮品能填满你的灵魂？\"",

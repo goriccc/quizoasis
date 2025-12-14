@@ -1534,6 +1534,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase2ResilienceTest": {
+    "startMessage": {
+      "line1": "\"あなたの心は試練の前でどれほど強固ですか？\"",
+      "line2": "人生を生きていれば、誰でも転び、失敗し、傷つきます。",
+      "line3": "重要なのは「転ばないこと」ではなく、「転んだ時に再び立ち上がる力」です。",
+      "line4": "小さな衝撃にも崩れ落ちるガラスのメンタルから、嵐が吹き荒れても平気な鋼のメンタルまで。",
+      "line5": "あなたの心の筋肉がどれほど丈夫か診断します。\n私のメンタル等級を測定 🛡️ 回復力をチェック 🩺"
+    },
+    "ui": {
+      "startTest": "回復力を確認",
+      "shareWithFriends": "友達と一緒に",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア (私の回復力指数を見つける)",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "resilienceScore": "回復力スコア",
+      "characteristics": "主な特徴",
+      "prescription": "心の処方"
+    },
+    "shareMessages": {
+      "default": "私の回復力指数は{type}！🛡️ どんな試練が来ても勝てるかな？",
+      "kakao": "私の回復力指数は{type}！🛡️ どんな試練が来ても勝てるかな？",
+      "wechat": "私の回復力指数は{type}！🛡️ どんな試練が来ても勝てるかな？",
+      "whatsapp": "私の回復力指数は{type}！🛡️ どんな試練が来ても勝てるかな？",
+      "telegram": "私の回復力指数は{type}！🛡️ どんな試練が来ても勝てるかな？",
+      "line": "私の回復力指数は{type}！🛡️ どんな試練が来ても勝てるかな？",
+      "startDefault": "私の回復力指数を見つける 🛡️ どんな試練が来ても勝てるかな？",
+      "startKakao": "私の回復力指数を見つける 🛡️ どんな試練が来ても勝てるかな？",
+      "startWechat": "私の回復力指数を見つける 🛡️ どんな試練が来ても勝てるかな？",
+      "startWhatsapp": "私の回復力指数を見つける 🛡️ どんな試練が来ても勝てるかな？",
+      "startTelegram": "私の回復力指数を見つける 🛡️ どんな試練が来ても勝てるかな？",
+      "startLine": "私の回復力指数を見つける 🛡️ どんな試練が来ても勝てるかな？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase2FriendshipStyleTest": {
     "startMessage": {
       "line1": "「あなたにとって『真の友達』はどんな意味ですか？」",

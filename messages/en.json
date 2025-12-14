@@ -1578,6 +1578,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2ResilienceTest": {
+    "startMessage": {
+      "line1": "\"How strong is your heart in the face of trials?\"",
+      "line2": "In life, everyone falls, fails, and gets hurt.",
+      "line3": "What matters is not 'not falling', but 'the power to get back up when you fall'.",
+      "line4": "From glass mental that crumbles at the slightest shock to steel mental that remains unfazed even in storms.",
+      "line5": "We diagnose how strong your mental muscles are.\nMeasure my mental grade 🛡️ Check resilience 🩺"
+    },
+    "ui": {
+      "startTest": "Check Resilience",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Resilience Index)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "resilienceScore": "Resilience Score",
+      "characteristics": "Main Characteristics",
+      "prescription": "Mental Prescription"
+    },
+    "shareMessages": {
+      "default": "My resilience index is {type}! 🛡️ Can I overcome any trial?",
+      "kakao": "My resilience index is {type}! 🛡️ Can I overcome any trial?",
+      "wechat": "My resilience index is {type}! 🛡️ Can I overcome any trial?",
+      "whatsapp": "My resilience index is {type}! 🛡️ Can I overcome any trial?",
+      "telegram": "My resilience index is {type}! 🛡️ Can I overcome any trial?",
+      "line": "My resilience index is {type}! 🛡️ Can I overcome any trial?",
+      "startDefault": "Find My Resilience Index 🛡️ Can I overcome any trial?",
+      "startKakao": "Find My Resilience Index 🛡️ Can I overcome any trial?",
+      "startWechat": "Find My Resilience Index 🛡️ Can I overcome any trial?",
+      "startWhatsapp": "Find My Resilience Index 🛡️ Can I overcome any trial?",
+      "startTelegram": "Find My Resilience Index 🛡️ Can I overcome any trial?",
+      "startLine": "Find My Resilience Index 🛡️ Can I overcome any trial?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"What drink fills your soul?\"",

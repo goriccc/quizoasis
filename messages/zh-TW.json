@@ -1485,6 +1485,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase2ResilienceTest": {
+    "startMessage": {
+      "line1": "\"在考驗面前，你的心有多堅強？\"",
+      "line2": "在生活中，每個人都會跌倒、失敗、受傷。",
+      "line3": "重要的不是「不跌倒」，而是「跌倒時重新站起來的力量」。",
+      "line4": "從輕微衝擊就會崩潰的玻璃心態，到暴風雨中也能保持鎮定的鋼鐵心態。",
+      "line5": "我們診斷你的心理肌肉有多強壯。\n測量我的心理等級 🛡️ 檢查恢復力 🩺"
+    },
+    "ui": {
+      "startTest": "檢查恢復力",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域 (尋找我的恢復力指數)",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "resilienceScore": "恢復力分數",
+      "characteristics": "主要特徵",
+      "prescription": "心理處方"
+    },
+    "shareMessages": {
+      "default": "我的恢復力指數是{type}！🛡️ 無論什麼考驗都能戰勝嗎？",
+      "kakao": "我的恢復力指數是{type}！🛡️ 無論什麼考驗都能戰勝嗎？",
+      "wechat": "我的恢復力指數是{type}！🛡️ 無論什麼考驗都能戰勝嗎？",
+      "whatsapp": "我的恢復力指數是{type}！🛡️ 無論什麼考驗都能戰勝嗎？",
+      "telegram": "我的恢復力指數是{type}！🛡️ 無論什麼考驗都能戰勝嗎？",
+      "line": "我的恢復力指數是{type}！🛡️ 無論什麼考驗都能戰勝嗎？",
+      "startDefault": "尋找我的恢復力指數 🛡️ 無論什麼考驗都能戰勝嗎？",
+      "startKakao": "尋找我的恢復力指數 🛡️ 無論什麼考驗都能戰勝嗎？",
+      "startWechat": "尋找我的恢復力指數 🛡️ 無論什麼考驗都能戰勝嗎？",
+      "startWhatsapp": "尋找我的恢復力指數 🛡️ 無論什麼考驗都能戰勝嗎？",
+      "startTelegram": "尋找我的恢復力指數 🛡️ 無論什麼考驗都能戰勝嗎？",
+      "startLine": "尋找我的恢復力指數 🛡️ 無論什麼考驗都能戰勝嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"什麼飲品能填滿你的靈魂？\"",
