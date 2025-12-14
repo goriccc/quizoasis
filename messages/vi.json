@@ -3908,5 +3908,62 @@
       "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "phase2CreativityLevelTest": {
+    "startMessage": {
+      "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",
+      "line2": "Những người thấy điều người khác không thấy, những người thay đổi thế giới bằng trí tưởng tượng hoang dã.",
+      "line3": "Chúng ta gọi họ là 'người sáng tạo'.",
+      "line4": "Từ 'bộ não gạch' cứng nhắc chỉ di chuyển theo sách hướng dẫn đến 'bộ não linh hoạt' 4D vượt qua vũ trụ.",
+      "line5": "Chúng tôi đánh thức trí tưởng tượng đang ngủ của bạn.\nKiểm tra điểm sáng tạo của tôi 💡 Kiểm tra tính linh hoạt của não 🧠"
+    },
+    "ui": {
+      "startTest": "Đo mức độ sáng tạo",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài kiểm tra khác",
+      "goToTest": "Đi làm bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài kiểm tra Mức độ sáng tạo của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra tương tự khác",
+      "resultDescription": "Mô tả kết quả chi tiết",
+      "creativityLevel": "Mức độ sáng tạo",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Mức độ sáng tạo của tôi là {level}! {type} 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "kakao": "Mức độ sáng tạo của tôi là {level}! {type} 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "wechat": "Mức độ sáng tạo của tôi là {level}! {type} 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "whatsapp": "Mức độ sáng tạo của tôi là {level}! {type} 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "telegram": "Mức độ sáng tạo của tôi là {level}! {type} 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "line": "Mức độ sáng tạo của tôi là {level}! {type} 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "startDefault": "Bài kiểm tra 'Mức độ sáng tạo' của tôi (Chẩn đoán tính linh hoạt của não) 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "startKakao": "Bài kiểm tra 'Mức độ sáng tạo' của tôi (Chẩn đoán tính linh hoạt của não) 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "startWechat": "Bài kiểm tra 'Mức độ sáng tạo' của tôi (Chẩn đoán tính linh hoạt của não) 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "startWhatsapp": "Bài kiểm tra 'Mức độ sáng tạo' của tôi (Chẩn đoán tính linh hoạt của não) 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "startTelegram": "Bài kiểm tra 'Mức độ sáng tạo' của tôi (Chẩn đoán tính linh hoạt của não) 🧠 Bộ não của tôi linh hoạt đến mức nào?",
+      "startLine": "Bài kiểm tra 'Mức độ sáng tạo' của tôi (Chẩn đoán tính linh hoạt của não) 🧠 Bộ não của tôi linh hoạt đến mức nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }

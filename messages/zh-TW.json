@@ -3915,5 +3915,62 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "phase2CreativityLevelTest": {
+    "startMessage": {
+      "line1": "\"你的大腦有多靈活？\"",
+      "line2": "能看到別人看不到的東西的人，用天馬行空的想像改變世界的人。",
+      "line3": "我們稱他們為「有創造力的人」。",
+      "line4": "從只按手冊行動的僵硬「磚頭大腦」到穿越宇宙的四維「靈活大腦」。",
+      "line5": "我們喚醒你沉睡的想像力。\n檢查我的創造力分數 💡 大腦靈活性測試 🧠"
+    },
+    "ui": {
+      "startTest": "測量創造力水平",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "和朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的創造力水平測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似其他測試",
+      "resultDescription": "結果詳細說明",
+      "creativityLevel": "創造力水平",
+      "characteristics": "主要特徵",
+      "goodMatch": "完美配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的創造力水平是{level}！{type} 🧠 我的大腦有多靈活？",
+      "kakao": "我的創造力水平是{level}！{type} 🧠 我的大腦有多靈活？",
+      "wechat": "我的創造力水平是{level}！{type} 🧠 我的大腦有多靈活？",
+      "whatsapp": "我的創造力水平是{level}！{type} 🧠 我的大腦有多靈活？",
+      "telegram": "我的創造力水平是{level}！{type} 🧠 我的大腦有多靈活？",
+      "line": "我的創造力水平是{level}！{type} 🧠 我的大腦有多靈活？",
+      "startDefault": "我的「創造力」水平測試（大腦靈活性診斷） 🧠 我的大腦有多靈活？",
+      "startKakao": "我的「創造力」水平測試（大腦靈活性診斷） 🧠 我的大腦有多靈活？",
+      "startWechat": "我的「創造力」水平測試（大腦靈活性診斷） 🧠 我的大腦有多靈活？",
+      "startWhatsapp": "我的「創造力」水平測試（大腦靈活性診斷） 🧠 我的大腦有多靈活？",
+      "startTelegram": "我的「創造力」水平測試（大腦靈活性診斷） 🧠 我的大腦有多靈活？",
+      "startLine": "我的「創造力」水平測試（大腦靈活性診斷） 🧠 我的大腦有多靈活？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }

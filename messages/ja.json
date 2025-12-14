@@ -3896,5 +3896,62 @@
       "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "phase2CreativityLevelTest": {
+    "startMessage": {
+      "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",
+      "line2": "他の人が見えないものを見る人、突飛な想像で世界を変える人。",
+      "line3": "私たちは彼らを「創造的な人」と呼びます。",
+      "line4": "マニュアル通りにしか動かない硬い「レンガの脳」から、宇宙を渡り歩く4次元「柔らかい脳」まで。",
+      "line5": "あなたの眠っている想像力を目覚めさせます。\n私の創造力スコアを確認する 💡 脳の柔軟性テスト 🧠"
+    },
+    "ui": {
+      "startTest": "創造力レベルを測定する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェアする",
+      "shareResult": "結果をシェアする",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストをする",
+      "adsenseTitle": "AdSense広告エリア（私の創造力レベルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "resultDescription": "結果の詳細説明",
+      "creativityLevel": "創造力レベル",
+      "characteristics": "主な特徴",
+      "goodMatch": "最高の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の創造力レベルは{level}！{type} 🧠 私の脳はどれくらい柔軟？",
+      "kakao": "私の創造力レベルは{level}！{type} 🧠 私の脳はどれくらい柔軟？",
+      "wechat": "私の創造力レベルは{level}！{type} 🧠 私の脳はどれくらい柔軟？",
+      "whatsapp": "私の創造力レベルは{level}！{type} 🧠 私の脳はどれくらい柔軟？",
+      "telegram": "私の創造力レベルは{level}！{type} 🧠 私の脳はどれくらい柔軟？",
+      "line": "私の創造力レベルは{level}！{type} 🧠 私の脳はどれくらい柔軟？",
+      "startDefault": "私の「創造力」レベルテスト（脳の柔軟性診断） 🧠 私の脳はどれくらい柔軟？",
+      "startKakao": "私の「創造力」レベルテスト（脳の柔軟性診断） 🧠 私の脳はどれくらい柔軟？",
+      "startWechat": "私の「創造力」レベルテスト（脳の柔軟性診断） 🧠 私の脳はどれくらい柔軟？",
+      "startWhatsapp": "私の「創造力」レベルテスト（脳の柔軟性診断） 🧠 私の脳はどれくらい柔軟？",
+      "startTelegram": "私の「創造力」レベルテスト（脳の柔軟性診断） 🧠 私の脳はどれくらい柔軟？",
+      "startLine": "私の「創造力」レベルテスト（脳の柔軟性診断） 🧠 私の脳はどれくらい柔軟？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

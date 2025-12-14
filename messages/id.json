@@ -3908,5 +3908,62 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "phase2CreativityLevelTest": {
+    "startMessage": {
+      "line1": "\"Seberapa fleksibel otak Anda?\"",
+      "line2": "Orang yang melihat apa yang tidak dilihat orang lain, orang yang mengubah dunia dengan imajinasi liar.",
+      "line3": "Kami menyebut mereka 'orang kreatif'.",
+      "line4": "Dari 'otak bata' yang kaku yang hanya bergerak sesuai manual hingga 'otak fleksibel' 4D yang melintasi alam semesta.",
+      "line5": "Kami membangunkan imajinasi Anda yang tertidur.\nPeriksa skor kreativitas saya 💡 Tes fleksibilitas otak 🧠"
+    },
+    "ui": {
+      "startTest": "Ukur Tingkat Kreativitas",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Tingkat Kreativitas Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "resultDescription": "Deskripsi Hasil Detail",
+      "creativityLevel": "Tingkat Kreativitas",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Tingkat kreativitas saya adalah {level}! {type} 🧠 Seberapa fleksibel otak saya?",
+      "kakao": "Tingkat kreativitas saya adalah {level}! {type} 🧠 Seberapa fleksibel otak saya?",
+      "wechat": "Tingkat kreativitas saya adalah {level}! {type} 🧠 Seberapa fleksibel otak saya?",
+      "whatsapp": "Tingkat kreativitas saya adalah {level}! {type} 🧠 Seberapa fleksibel otak saya?",
+      "telegram": "Tingkat kreativitas saya adalah {level}! {type} 🧠 Seberapa fleksibel otak saya?",
+      "line": "Tingkat kreativitas saya adalah {level}! {type} 🧠 Seberapa fleksibel otak saya?",
+      "startDefault": "Tes 'Tingkat Kreativitas' Saya (Diagnosis Fleksibilitas Otak) 🧠 Seberapa fleksibel otak saya?",
+      "startKakao": "Tes 'Tingkat Kreativitas' Saya (Diagnosis Fleksibilitas Otak) 🧠 Seberapa fleksibel otak saya?",
+      "startWechat": "Tes 'Tingkat Kreativitas' Saya (Diagnosis Fleksibilitas Otak) 🧠 Seberapa fleksibel otak saya?",
+      "startWhatsapp": "Tes 'Tingkat Kreativitas' Saya (Diagnosis Fleksibilitas Otak) 🧠 Seberapa fleksibel otak saya?",
+      "startTelegram": "Tes 'Tingkat Kreativitas' Saya (Diagnosis Fleksibilitas Otak) 🧠 Seberapa fleksibel otak saya?",
+      "startLine": "Tes 'Tingkat Kreativitas' Saya (Diagnosis Fleksibilitas Otak) 🧠 Seberapa fleksibel otak saya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

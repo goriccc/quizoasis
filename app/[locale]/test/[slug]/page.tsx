@@ -35,6 +35,7 @@ import { phase2RelationshipCutQuestions, phase2RelationshipCutResults } from '@/
 import { phase2SelfEsteemQuestions, phase2SelfEsteemResults } from '@/lib/phase2SelfEsteemData';
 import { phase2MentalAgeQuestions, phase2MentalAgeResults } from '@/lib/phase2MentalAgeData';
 import { phase2GuiltLevelQuestions, phase2GuiltLevelResults } from '@/lib/phase2GuiltLevelData';
+import { phase2CreativityLevelQuestions, phase2CreativityLevelResults } from '@/lib/phase2CreativityLevelData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -148,6 +149,9 @@ const Phase2MentalAgeTestClient = dynamic(() => import('@/components/Phase2Menta
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const Phase2GuiltLevelTestClient = dynamic(() => import('@/components/Phase2GuiltLevelTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const Phase2CreativityLevelTestClient = dynamic(() => import('@/components/Phase2CreativityLevelTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2076,6 +2080,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2GuiltLevelQuestions}
           results={phase2GuiltLevelResults}
           questionCount={phase2GuiltLevelQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_creativity-level-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_creativity-level-test',
+      title: {
+        ko: "나의 '창의력' 레벨 테스트 (뇌 말랑함 진단)",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      description: {
+        ko: "당신의 뇌는 얼마나 말랑말랑한가요? 남들은 보지 못하는 것을 보는 사람, 엉뚱한 상상으로 세상을 바꾸는 사람. 우리는 그들을 '창의적인 사람'이라고 부릅니다. 나의 창의력 점수 확인하기 💡 두뇌 유연성 테스트 🧠",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      thumbnail: 'phase2_test_148_creativity_level.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '자아탐색'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2CreativityLevelTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2CreativityLevelQuestions}
+          results={phase2CreativityLevelResults}
+          questionCount={phase2CreativityLevelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
