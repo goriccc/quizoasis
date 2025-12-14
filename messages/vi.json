@@ -3794,5 +3794,62 @@
       "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "phase2MentalAgeTest": {
+    "startMessage": {
+      "line1": "\"Tâm hồn bạn bao nhiêu tuổi?\"",
+      "line2": "Tuổi trên CMND chỉ là con số.",
+      "line3": "Có người trông chín chắn nhưng bên trong như trẻ con, cũng có người trẻ nhưng có sự trưởng thành như đã sống lần thứ hai.",
+      "line4": "Cách bạn nhìn thế giới, thái độ đối phó với khủng hoảng, và giá trị về tiền bạc và hạnh phúc.",
+      "line5": "Chúng tôi tiết lộ tuổi thật ẩn trong tiềm thức của bạn. Đo tuổi tinh thần của tôi 🧠 Kiểm tra xem tôi đã lớn chưa 👶👴"
+    },
+    "ui": {
+      "startTest": "Đo tuổi tinh thần",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài kiểm tra khác",
+      "goToTest": "Đi làm bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài kiểm tra Tuổi tinh thần của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra tương tự khác",
+      "resultDescription": "Mô tả kết quả chi tiết",
+      "mentalAgeLevel": "Tuổi tinh thần",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Tuổi tinh thần của tôi là {level}! {type} 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "kakao": "Tuổi tinh thần của tôi là {level}! {type} 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "wechat": "Tuổi tinh thần của tôi là {level}! {type} 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "whatsapp": "Tuổi tinh thần của tôi là {level}! {type} 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "telegram": "Tuổi tinh thần của tôi là {level}! {type} 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "line": "Tuổi tinh thần của tôi là {level}! {type} 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "startDefault": "Bài kiểm tra 'Tuổi tinh thần' của tôi 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "startKakao": "Bài kiểm tra 'Tuổi tinh thần' của tôi 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "startWechat": "Bài kiểm tra 'Tuổi tinh thần' của tôi 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "startWhatsapp": "Bài kiểm tra 'Tuổi tinh thần' của tôi 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "startTelegram": "Bài kiểm tra 'Tuổi tinh thần' của tôi 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?",
+      "startLine": "Bài kiểm tra 'Tuổi tinh thần' của tôi 🧠 Cơ thể là người lớn nhưng tâm trí vẫn...?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }

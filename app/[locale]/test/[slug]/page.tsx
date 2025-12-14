@@ -33,6 +33,7 @@ import { phase2PerfectionismQuestions, phase2PerfectionismResults } from '@/lib/
 import { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } from '@/lib/phase2FriendshipStyleData';
 import { phase2RelationshipCutQuestions, phase2RelationshipCutResults } from '@/lib/phase2RelationshipCutData';
 import { phase2SelfEsteemQuestions, phase2SelfEsteemResults } from '@/lib/phase2SelfEsteemData';
+import { phase2MentalAgeQuestions, phase2MentalAgeResults } from '@/lib/phase2MentalAgeData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -140,6 +141,9 @@ const Phase2RelationshipCutTestClient = dynamic(() => import('@/components/Phase
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const Phase2SelfEsteemTestClient = dynamic(() => import('@/components/Phase2SelfEsteemTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const Phase2MentalAgeTestClient = dynamic(() => import('@/components/Phase2MentalAgeTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1962,6 +1966,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2SelfEsteemQuestions}
           results={phase2SelfEsteemResults}
           questionCount={phase2SelfEsteemQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_mental-age-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_mental-age-test',
+      title: {
+        ko: "나의 '정신 연령' 테스트",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      description: {
+        ko: "당신의 속마음은 몇 살인가요? 주민등록증 나이는 숫자에 불과합니다. 나의 정신 연령 측정하기 🧠",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      thumbnail: 'phase2_test_143_mental_age.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '재미'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2MentalAgeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2MentalAgeQuestions}
+          results={phase2MentalAgeResults}
+          questionCount={phase2MentalAgeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -4175,6 +4232,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2SelfEsteemQuestions,
       results: phase2SelfEsteemResults
     };
+  } else if (slug === 'phase2_mental-age-test') {
+    testData = {
+      questions: phase2MentalAgeQuestions,
+      results: phase2MentalAgeResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -4377,6 +4439,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_friendship-style-test') TestClient = Phase2FriendshipStyleTestClient;
     else if (slug === 'phase2_relationship-cut-test') TestClient = Phase2RelationshipCutTestClient;
     else if (slug === 'phase2_self-esteem-test') TestClient = Phase2SelfEsteemTestClient;
+    else if (slug === 'phase2_mental-age-test') TestClient = Phase2MentalAgeTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

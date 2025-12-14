@@ -3794,5 +3794,62 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "phase2MentalAgeTest": {
+    "startMessage": {
+      "line1": "\"Berapa usia batin Anda?\"",
+      "line2": "Usia di KTP hanyalah angka.",
+      "line3": "Ada orang yang terlihat dewasa tapi dalamnya seperti anak kecil, ada juga yang muda tapi memiliki kematangan seperti hidup kedua kalinya.",
+      "line4": "Cara Anda memandang dunia, sikap menghadapi krisis, dan nilai tentang uang dan kebahagiaan.",
+      "line5": "Kami mengungkap usia sejati yang tersembunyi dalam alam bawah sadar Anda. Ukur usia mental saya 🧠 Periksa apakah saya sudah dewasa 👶👴"
+    },
+    "ui": {
+      "startTest": "Ukur Usia Mental",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Usia Mental Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "resultDescription": "Deskripsi Hasil Detail",
+      "mentalAgeLevel": "Usia Mental",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Usia mental saya adalah {level}! {type} 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "kakao": "Usia mental saya adalah {level}! {type} 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "wechat": "Usia mental saya adalah {level}! {type} 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "whatsapp": "Usia mental saya adalah {level}! {type} 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "telegram": "Usia mental saya adalah {level}! {type} 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "line": "Usia mental saya adalah {level}! {type} 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "startDefault": "Tes 'Usia Mental' Saya 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "startKakao": "Tes 'Usia Mental' Saya 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "startWechat": "Tes 'Usia Mental' Saya 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "startWhatsapp": "Tes 'Usia Mental' Saya 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "startTelegram": "Tes 'Usia Mental' Saya 🧠 Tubuh saya dewasa tapi pikiran masih...?",
+      "startLine": "Tes 'Usia Mental' Saya 🧠 Tubuh saya dewasa tapi pikiran masih...?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

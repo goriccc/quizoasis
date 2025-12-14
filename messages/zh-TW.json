@@ -3801,5 +3801,62 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "phase2MentalAgeTest": {
+    "startMessage": {
+      "line1": "\"你的內心幾歲了？\"",
+      "line2": "身分證上的年齡只是數字。",
+      "line3": "有人看起來成熟但內心像孩子，也有人年輕但有著第二次人生般的成熟。",
+      "line4": "你看待世界的方式，應對危機的態度，以及對金錢和幸福的價值觀。",
+      "line5": "我們揭示你潛意識中隱藏的真實年齡。測量我的精神年齡 🧠 檢查我是否長大了 👶👴"
+    },
+    "ui": {
+      "startTest": "測量精神年齡",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "和朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的精神年齡測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似其他測試",
+      "resultDescription": "結果詳細說明",
+      "mentalAgeLevel": "精神年齡",
+      "characteristics": "主要特徵",
+      "goodMatch": "完美配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的精神年齡是{level}！{type} 🧠 身體是大人但內心還是...？",
+      "kakao": "我的精神年齡是{level}！{type} 🧠 身體是大人但內心還是...？",
+      "wechat": "我的精神年齡是{level}！{type} 🧠 身體是大人但內心還是...？",
+      "whatsapp": "我的精神年齡是{level}！{type} 🧠 身體是大人但內心還是...？",
+      "telegram": "我的精神年齡是{level}！{type} 🧠 身體是大人但內心還是...？",
+      "line": "我的精神年齡是{level}！{type} 🧠 身體是大人但內心還是...？",
+      "startDefault": "我的「精神年齡」測試 🧠 身體是大人但內心還是...？",
+      "startKakao": "我的「精神年齡」測試 🧠 身體是大人但內心還是...？",
+      "startWechat": "我的「精神年齡」測試 🧠 身體是大人但內心還是...？",
+      "startWhatsapp": "我的「精神年齡」測試 🧠 身體是大人但內心還是...？",
+      "startTelegram": "我的「精神年齡」測試 🧠 身體是大人但內心還是...？",
+      "startLine": "我的「精神年齡」測試 🧠 身體是大人但內心還是...？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }

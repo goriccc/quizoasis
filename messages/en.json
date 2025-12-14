@@ -3956,5 +3956,62 @@
       "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2MentalAgeTest": {
+    "startMessage": {
+      "line1": "\"How old is your inner self?\"",
+      "line2": "Your ID age is just a number.",
+      "line3": "Some people act mature but are childish inside, while others are young but have the maturity of someone on their second life.",
+      "line4": "How you view the world, how you handle crises, and your values about money and happiness.",
+      "line5": "We reveal your true age hidden in your subconscious. Measure my mental age 🧠 Check if I've grown up 👶👴"
+    },
+    "ui": {
+      "startTest": "Measure Mental Age",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Mental Age Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "resultDescription": "Result Description",
+      "mentalAgeLevel": "Mental Age",
+      "characteristics": "Main Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My mental age is {level}! {type} 🧠 My body is an adult but my mind is still...?",
+      "kakao": "My mental age is {level}! {type} 🧠 My body is an adult but my mind is still...?",
+      "wechat": "My mental age is {level}! {type} 🧠 My body is an adult but my mind is still...?",
+      "whatsapp": "My mental age is {level}! {type} 🧠 My body is an adult but my mind is still...?",
+      "telegram": "My mental age is {level}! {type} 🧠 My body is an adult but my mind is still...?",
+      "line": "My mental age is {level}! {type} 🧠 My body is an adult but my mind is still...?",
+      "startDefault": "My 'Mental Age' Test 🧠 My body is an adult but my mind is still...?",
+      "startKakao": "My 'Mental Age' Test 🧠 My body is an adult but my mind is still...?",
+      "startWechat": "My 'Mental Age' Test 🧠 My body is an adult but my mind is still...?",
+      "startWhatsapp": "My 'Mental Age' Test 🧠 My body is an adult but my mind is still...?",
+      "startTelegram": "My 'Mental Age' Test 🧠 My body is an adult but my mind is still...?",
+      "startLine": "My 'Mental Age' Test 🧠 My body is an adult but my mind is still...?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }
