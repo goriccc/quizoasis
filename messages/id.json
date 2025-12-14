@@ -4145,6 +4145,60 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2DreamCarTest": {
+    "startMessage": {
+      "line1": "\"Mobil bukan hanya sarana transportasi.\"",
+      "line2": "Ini adalah kartu nama lain yang mewakili kepribadian dan gaya hidup Anda.",
+      "line3": "Dari sedan canggih yang melintasi kota hingga off-roader yang tidak takut jalan kasar, dan kendaraan listrik yang berorientasi masa depan.",
+      "line4": "Kami menganalisis kebiasaan mengemudi dan nilai yang Anda kejar untuk menemukan 'mobil impian' yang akan menjadi sahabat jiwa Anda.",
+      "line5": "Bangunkan insting balap saya 🏎️ Konfirmasi tipe mobil yang cocok untuk saya 🚘"
+    },
+    "ui": {
+      "startTest": "Temukan Mobil Impian Saya",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Mobil Impian Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "recommendedModels": "Model yang Direkomendasikan",
+      "keywords": "Kata Kunci"
+    },
+    "shareMessages": {
+      "default": "Mobil impian yang sempurna untuk kepribadian saya adalah {type}! 🚘 Pergi menandatangani kontrak hari ini...",
+      "kakao": "Mobil impian yang sempurna untuk kepribadian saya adalah {type}! 🚘 Pergi menandatangani kontrak hari ini...",
+      "wechat": "Mobil impian yang sempurna untuk kepribadian saya adalah {type}! 🚘 Pergi menandatangani kontrak hari ini...",
+      "whatsapp": "Mobil impian yang sempurna untuk kepribadian saya adalah {type}! 🚘 Pergi menandatangani kontrak hari ini...",
+      "telegram": "Mobil impian yang sempurna untuk kepribadian saya adalah {type}! 🚘 Pergi menandatangani kontrak hari ini...",
+      "line": "Mobil impian yang sempurna untuk kepribadian saya adalah {type}! 🚘 Pergi menandatangani kontrak hari ini...",
+      "startDefault": "Temukan Mobil Impian Saya 🚘 Pergi menandatangani kontrak hari ini...",
+      "startKakao": "Temukan Mobil Impian Saya 🚘 Pergi menandatangani kontrak hari ini...",
+      "startWechat": "Temukan Mobil Impian Saya 🚘 Pergi menandatangani kontrak hari ini...",
+      "startWhatsapp": "Temukan Mobil Impian Saya 🚘 Pergi menandatangani kontrak hari ini...",
+      "startTelegram": "Temukan Mobil Impian Saya 🚘 Pergi menandatangani kontrak hari ini...",
+      "startLine": "Temukan Mobil Impian Saya 🚘 Pergi menandatangani kontrak hari ini..."
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

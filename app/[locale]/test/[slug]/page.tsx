@@ -40,6 +40,7 @@ import { phase2ImpulseBuyingQuestions, phase2ImpulseBuyingResults } from '@/lib/
 import { phase2BirthGemFlowerQuestions, phase2BirthGemFlowerResults } from '@/lib/phase2_birth_gem_flower_data';
 import { phase2CoreEmotionQuestions, phase2CoreEmotionResults } from '@/lib/phase2_core_emotion_data';
 import { phase2ResilienceQuestions, phase2ResilienceResults } from '@/lib/phase2_resilience_data';
+import { phase2DreamCarQuestions, phase2DreamCarResults } from '@/lib/phase2_dream_car_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -168,6 +169,9 @@ const Phase2CoreEmotionTestClient = dynamic(() => import('@/components/Phase2Cor
   ssr: false
 });
 const Phase2ResilienceTestClient = dynamic(() => import('@/components/Phase2ResilienceTestClient'), {
+  ssr: false
+});
+const Phase2DreamCarTestClient = dynamic(() => import('@/components/Phase2DreamCarTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1831,6 +1835,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2ResilienceQuestions}
           results={phase2ResilienceResults}
           questionCount={phase2ResilienceQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_dream_car_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_dream_car_test',
+      title: {
+        ko: "내 드림카는? 성향별 자동차 추천",
+        en: "What's My Dream Car? Car Recommendation by Personality",
+        ja: "私のドリームカーは？性格別自動車おすすめ",
+        'zh-CN': "我的梦想车是什么？按性格推荐汽车",
+        'zh-TW': "我的夢想車是什麼？按性格推薦汽車",
+        vi: "Xe mơ ước của tôi là gì? Đề xuất xe theo tính cách",
+        id: "Apa Mobil Impian Saya? Rekomendasi Mobil Berdasarkan Kepribadian"
+      },
+      description: {
+        ko: '차는 단순한 이동 수단이 아닙니다.',
+        en: 'A car is not just a means of transportation.',
+        ja: '車は単なる移動手段ではありません。',
+        'zh-CN': '汽车不仅仅是交通工具。',
+        'zh-TW': '汽車不僅僅是交通工具。',
+        vi: 'Xe hơi không chỉ là phương tiện di chuyển.',
+        id: 'Mobil bukan hanya sarana transportasi.'
+      },
+      thumbnail: 'phase2_test_037_dream_car.jpg',
+      type: 'fun',
+      category: 'lifestyle',
+      play_count: 0,
+      tags: {
+        ko: ['재미'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2DreamCarTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2DreamCarQuestions}
+          results={phase2DreamCarResults}
+          questionCount={phase2DreamCarQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

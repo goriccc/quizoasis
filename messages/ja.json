@@ -4133,6 +4133,60 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2DreamCarTest": {
+    "startMessage": {
+      "line1": "「車は単なる移動手段ではありません。」",
+      "line2": "あなたの性格とライフスタイルを表すもう一つの名刺です。",
+      "line3": "都心を走り回る洗練されたセダンから、荒れた道も問題ないオフローダー、そして未来志向の電気自動車まで。",
+      "line4": "あなたの運転習慣と追求する価値を分析し、魂の相棒となってくれる「ドリームカー」を見つけます。",
+      "line5": "私の疾走本能を目覚めさせる 🏎️ 私にぴったりの車種を確認 🚘"
+    },
+    "ui": {
+      "startTest": "ドリームカーを確認",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私のドリームカーを見つける）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "recommendedModels": "おすすめモデル",
+      "keywords": "キーワード"
+    },
+    "shareMessages": {
+      "default": "私の性格にぴったりのドリームカーは{type}！🚘 今日契約しに行きます...",
+      "kakao": "私の性格にぴったりのドリームカーは{type}！🚘 今日契約しに行きます...",
+      "wechat": "私の性格にぴったりのドリームカーは{type}！🚘 今日契約しに行きます...",
+      "whatsapp": "私の性格にぴったりのドリームカーは{type}！🚘 今日契約しに行きます...",
+      "telegram": "私の性格にぴったりのドリームカーは{type}！🚘 今日契約しに行きます...",
+      "line": "私の性格にぴったりのドリームカーは{type}！🚘 今日契約しに行きます...",
+      "startDefault": "私のドリームカーを見つける 🚘 今日契約しに行きます...",
+      "startKakao": "私のドリームカーを見つける 🚘 今日契約しに行きます...",
+      "startWechat": "私のドリームカーを見つける 🚘 今日契約しに行きます...",
+      "startWhatsapp": "私のドリームカーを見つける 🚘 今日契約しに行きます...",
+      "startTelegram": "私のドリームカーを見つける 🚘 今日契約しに行きます...",
+      "startLine": "私のドリームカーを見つける 🚘 今日契約しに行きます..."
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！ウィーチャットに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

@@ -795,6 +795,60 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2DreamCarTest": {
+    "startMessage": {
+      "line1": "\"차는 단순한 이동 수단이 아닙니다.\"",
+      "line2": "당신의 성격과 라이프스타일을 대변하는 또 다른 명함이죠.",
+      "line3": "도심을 누비는 세련된 세단부터 거친 길도 문제없는 오프로더, 그리고 미래지향적인 전기차까지.",
+      "line4": "당신의 운전 습관과 추구하는 가치를 분석해 영혼의 단짝이 되어줄 '드림카'를 찾아드립니다.",
+      "line5": "나의 질주 본능 깨우기 🏎️ 나에게 딱 맞는 차종 확인하기 🚘"
+    },
+    "ui": {
+      "startTest": "드림카 확인하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (내 드림카 찾기)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "recommendedModels": "추천 모델",
+      "keywords": "키워드"
+    },
+    "shareMessages": {
+      "default": "내 성향에 딱 맞는 드림카는 {type}! 🚘 오늘 계약하러 갑니다...",
+      "kakao": "내 성향에 딱 맞는 드림카는 {type}! 🚘 오늘 계약하러 갑니다...",
+      "wechat": "내 성향에 딱 맞는 드림카는 {type}! 🚘 오늘 계약하러 갑니다...",
+      "whatsapp": "내 성향에 딱 맞는 드림카는 {type}! 🚘 오늘 계약하러 갑니다...",
+      "telegram": "내 성향에 딱 맞는 드림카는 {type}! 🚘 오늘 계약하러 갑니다...",
+      "line": "내 성향에 딱 맞는 드림카는 {type}! 🚘 오늘 계약하러 갑니다...",
+      "startDefault": "내 드림카 찾기 🚘 오늘 계약하러 갑니다...",
+      "startKakao": "내 드림카 찾기 🚘 오늘 계약하러 갑니다...",
+      "startWechat": "내 드림카 찾기 🚘 오늘 계약하러 갑니다...",
+      "startWhatsapp": "내 드림카 찾기 🚘 오늘 계약하러 갑니다...",
+      "startTelegram": "내 드림카 찾기 🚘 오늘 계약하러 갑니다...",
+      "startLine": "내 드림카 찾기 🚘 오늘 계약하러 갑니다..."
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! 위챗에 붙여넣어 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"당신의 영혼을 채워줄 한 잔은 무엇인가요?\"",

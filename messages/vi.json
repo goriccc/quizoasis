@@ -4145,6 +4145,60 @@
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2DreamCarTest": {
+    "startMessage": {
+      "line1": "\"Xe hơi không chỉ là phương tiện di chuyển.\"",
+      "line2": "Đó là một tấm danh thiếp khác đại diện cho tính cách và lối sống của bạn.",
+      "line3": "Từ những chiếc sedan tinh tế lướt qua thành phố đến những chiếc off-roader không sợ đường gồ ghề, và cả những chiếc xe điện hướng tương lai.",
+      "line4": "Chúng tôi phân tích thói quen lái xe và giá trị bạn theo đuổi để tìm 'xe mơ ước' sẽ là người bạn tâm giao của bạn.",
+      "line5": "Đánh thức bản năng tốc độ của tôi 🏎️ Xác nhận loại xe phù hợp với tôi 🚘"
+    },
+    "ui": {
+      "startTest": "Tìm Xe Mơ Ước Của Tôi",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Đi làm Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Tìm Xe Mơ Ước Của Tôi)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "recommendedModels": "Mẫu Xe Đề xuất",
+      "keywords": "Từ khóa"
+    },
+    "shareMessages": {
+      "default": "Xe mơ ước hoàn hảo cho tính cách của tôi là {type}! 🚘 Hôm nay đi ký hợp đồng...",
+      "kakao": "Xe mơ ước hoàn hảo cho tính cách của tôi là {type}! 🚘 Hôm nay đi ký hợp đồng...",
+      "wechat": "Xe mơ ước hoàn hảo cho tính cách của tôi là {type}! 🚘 Hôm nay đi ký hợp đồng...",
+      "whatsapp": "Xe mơ ước hoàn hảo cho tính cách của tôi là {type}! 🚘 Hôm nay đi ký hợp đồng...",
+      "telegram": "Xe mơ ước hoàn hảo cho tính cách của tôi là {type}! 🚘 Hôm nay đi ký hợp đồng...",
+      "line": "Xe mơ ước hoàn hảo cho tính cách của tôi là {type}! 🚘 Hôm nay đi ký hợp đồng...",
+      "startDefault": "Tìm Xe Mơ Ước Của Tôi 🚘 Hôm nay đi ký hợp đồng...",
+      "startKakao": "Tìm Xe Mơ Ước Của Tôi 🚘 Hôm nay đi ký hợp đồng...",
+      "startWechat": "Tìm Xe Mơ Ước Của Tôi 🚘 Hôm nay đi ký hợp đồng...",
+      "startWhatsapp": "Tìm Xe Mơ Ước Của Tôi 🚘 Hôm nay đi ký hợp đồng...",
+      "startTelegram": "Tìm Xe Mơ Ước Của Tôi 🚘 Hôm nay đi ký hợp đồng...",
+      "startLine": "Tìm Xe Mơ Ước Của Tôi 🚘 Hôm nay đi ký hợp đồng..."
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

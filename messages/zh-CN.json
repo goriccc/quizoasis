@@ -4145,6 +4145,60 @@
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },
+  "phase2DreamCarTest": {
+    "startMessage": {
+      "line1": "\"汽车不仅仅是交通工具。\"",
+      "line2": "它是代表你性格和生活方式的另一张名片。",
+      "line3": "从穿梭都市的精致轿车到无惧崎岖道路的越野车，以及面向未来的电动汽车。",
+      "line4": "我们分析你的驾驶习惯和追求的价值观，为你找到将成为你灵魂伴侣的「梦想车」。",
+      "line5": "唤醒我的疾驰本能 🏎️ 确认最适合我的车型 🚘"
+    },
+    "ui": {
+      "startTest": "确认我的梦想车",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区域（寻找我的梦想车）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "recommendedModels": "推荐车型",
+      "keywords": "关键词"
+    },
+    "shareMessages": {
+      "default": "最适合我性格的梦想车是{type}！🚘 今天去签约...",
+      "kakao": "最适合我性格的梦想车是{type}！🚘 今天去签约...",
+      "wechat": "最适合我性格的梦想车是{type}！🚘 今天去签约...",
+      "whatsapp": "最适合我性格的梦想车是{type}！🚘 今天去签约...",
+      "telegram": "最适合我性格的梦想车是{type}！🚘 今天去签约...",
+      "line": "最适合我性格的梦想车是{type}！🚘 今天去签约...",
+      "startDefault": "寻找我的梦想车 🚘 今天去签约...",
+      "startKakao": "寻找我的梦想车 🚘 今天去签约...",
+      "startWechat": "寻找我的梦想车 🚘 今天去签约...",
+      "startWhatsapp": "寻找我的梦想车 🚘 今天去签约...",
+      "startTelegram": "寻找我的梦想车 🚘 今天去签约...",
+      "startLine": "寻找我的梦想车 🚘 今天去签约..."
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请粘贴到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

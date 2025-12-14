@@ -4307,6 +4307,60 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2DreamCarTest": {
+    "startMessage": {
+      "line1": "\"A car is not just a means of transportation.\"",
+      "line2": "It's another business card that represents your personality and lifestyle.",
+      "line3": "From sophisticated sedans that navigate the city to off-roaders that handle rough roads, and future-oriented electric vehicles.",
+      "line4": "We analyze your driving habits and values to find your 'dream car' that will be your soulmate.",
+      "line5": "Awaken my racing instinct 🏎️ Check the perfect car type for me 🚘"
+    },
+    "ui": {
+      "startTest": "Find My Dream Car",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Dream Car)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "recommendedModels": "Recommended Models",
+      "keywords": "Keywords"
+    },
+    "shareMessages": {
+      "default": "My perfect dream car is {type}! 🚘 Going to sign the contract today...",
+      "kakao": "My perfect dream car is {type}! 🚘 Going to sign the contract today...",
+      "wechat": "My perfect dream car is {type}! 🚘 Going to sign the contract today...",
+      "whatsapp": "My perfect dream car is {type}! 🚘 Going to sign the contract today...",
+      "telegram": "My perfect dream car is {type}! 🚘 Going to sign the contract today...",
+      "line": "My perfect dream car is {type}! 🚘 Going to sign the contract today...",
+      "startDefault": "Find My Dream Car 🚘 Going to sign the contract today...",
+      "startKakao": "Find My Dream Car 🚘 Going to sign the contract today...",
+      "startWechat": "Find My Dream Car 🚘 Going to sign the contract today...",
+      "startWhatsapp": "Find My Dream Car 🚘 Going to sign the contract today...",
+      "startTelegram": "Find My Dream Car 🚘 Going to sign the contract today...",
+      "startLine": "Find My Dream Car 🚘 Going to sign the contract today..."
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"How flexible is your brain?\"",
