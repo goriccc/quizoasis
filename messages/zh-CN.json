@@ -3851,5 +3851,62 @@
       "similarTestsTop5": "🎯 类似其他测试推荐前5",
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
+  },
+  "phase2GuiltLevelTest": {
+    "startMessage": {
+      "line1": "\"你的口头禅是'对不起'吗？\"",
+      "line2": "有时我们会习惯性地为没有做错的事感到抱歉并自责。",
+      "line3": "会因为拒绝感到抱歉而勉强答应请求，或者看到对方看起来不高兴就觉得是自己的错而焦虑吗？",
+      "line4": "适当的内疚是道德，但过度的内疚是心灵的监狱。",
+      "line5": "检查一下你心中的负担有多重。诊断内疚敏感度 🎒 测量心灵的重量 ⚖️"
+    },
+    "ui": {
+      "startTest": "测量内疚水平",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "和朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（我的内疚水平测试）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似其他测试",
+      "resultDescription": "结果详细说明",
+      "guiltLevel": "内疚水平",
+      "characteristics": "主要特征",
+      "goodMatch": "完美配对",
+      "badMatch": "最差配对"
+    },
+    "shareMessages": {
+      "default": "我的内疚水平是{type}！🎒 我是不是在假装太善良？",
+      "kakao": "我的内疚水平是{type}！🎒 我是不是在假装太善良？",
+      "wechat": "我的内疚水平是{type}！🎒 我是不是在假装太善良？",
+      "whatsapp": "我的内疚水平是{type}！🎒 我是不是在假装太善良？",
+      "telegram": "我的内疚水平是{type}！🎒 我是不是在假装太善良？",
+      "line": "我的内疚水平是{type}！🎒 我是不是在假装太善良？",
+      "startDefault": "我的「内疚感」水平测试 🎒 我是不是在假装太善良？",
+      "startKakao": "我的「内疚感」水平测试 🎒 我是不是在假装太善良？",
+      "startWechat": "我的「内疚感」水平测试 🎒 我是不是在假装太善良？",
+      "startWhatsapp": "我的「内疚感」水平测试 🎒 我是不是在假装太善良？",
+      "startTelegram": "我的「内疚感」水平测试 🎒 我是不是在假装太善良？",
+      "startLine": "我的「内疚感」水平测试 🎒 我是不是在假装太善良？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
   }
 }

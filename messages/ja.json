@@ -3839,5 +3839,62 @@
       "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "phase2GuiltLevelTest": {
+    "startMessage": {
+      "line1": "\"もしかして口癖が「すみません」ですか？\"",
+      "line2": "私たちは時々、自分が間違っていないことにも習慣的に申し訳なく思い、自分を責めます。",
+      "line3": "断ることが申し訳なくて無理に頼みを聞いたり、相手の機嫌が悪そうに見えると自分のせいのように不安になりますか？",
+      "line4": "適度な罪悪感は道徳性ですが、過度な罪悪感は心の牢獄です。",
+      "line5": "あなたの心の重荷がどれくらい重いか確認してみてください。罪悪感の敏感度を診断する 🎒 心の重さを測る ⚖️"
+    },
+    "ui": {
+      "startTest": "罪悪感レベルを測定する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェアする",
+      "shareResult": "結果をシェアする",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストをする",
+      "adsenseTitle": "AdSense広告エリア（私の罪悪感レベルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "resultDescription": "結果の詳細説明",
+      "guiltLevel": "罪悪感レベル",
+      "characteristics": "主な特徴",
+      "goodMatch": "最高の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の罪悪感レベルは{type}！🎒 私、もしかして優しすぎるふりしてる？",
+      "kakao": "私の罪悪感レベルは{type}！🎒 私、もしかして優しすぎるふりしてる？",
+      "wechat": "私の罪悪感レベルは{type}！🎒 私、もしかして優しすぎるふりしてる？",
+      "whatsapp": "私の罪悪感レベルは{type}！🎒 私、もしかして優しすぎるふりしてる？",
+      "telegram": "私の罪悪感レベルは{type}！🎒 私、もしかして優しすぎるふりしてる？",
+      "line": "私の罪悪感レベルは{type}！🎒 私、もしかして優しすぎるふりしてる？",
+      "startDefault": "私の「罪悪感」レベルテスト 🎒 私、もしかして優しすぎるふりしてる？",
+      "startKakao": "私の「罪悪感」レベルテスト 🎒 私、もしかして優しすぎるふりしてる？",
+      "startWechat": "私の「罪悪感」レベルテスト 🎒 私、もしかして優しすぎるふりしてる？",
+      "startWhatsapp": "私の「罪悪感」レベルテスト 🎒 私、もしかして優しすぎるふりしてる？",
+      "startTelegram": "私の「罪悪感」レベルテスト 🎒 私、もしかして優しすぎるふりしてる？",
+      "startLine": "私の「罪悪感」レベルテスト 🎒 私、もしかして優しすぎるふりしてる？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

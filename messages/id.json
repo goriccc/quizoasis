@@ -3851,5 +3851,62 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "phase2GuiltLevelTest": {
+    "startMessage": {
+      "line1": "\"Apakah kebiasaan Anda mengatakan 'Maaf'?\"",
+      "line2": "Terkadang kita secara kebiasaan merasa menyesal dan menyalahkan diri sendiri bahkan untuk hal-hal yang tidak kita lakukan salah.",
+      "line3": "Apakah Anda merasa bersalah tentang menolak permintaan, atau merasa cemas mengira itu kesalahan Anda ketika seseorang terlihat tidak senang?",
+      "line4": "Rasa bersalah yang tepat adalah moralitas, tetapi rasa bersalah yang berlebihan adalah penjara pikiran.",
+      "line5": "Periksa seberapa berat beban hati Anda. Diagnosa sensitivitas rasa bersalah 🎒 Ukur berat hati ⚖️"
+    },
+    "ui": {
+      "startTest": "Ukur Tingkat Rasa Bersalah",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Tingkat Rasa Bersalah Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "resultDescription": "Deskripsi Hasil Detail",
+      "guiltLevel": "Tingkat Rasa Bersalah",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Tingkat rasa bersalah saya adalah {type}! 🎒 Apakah saya berpura-pura terlalu baik?",
+      "kakao": "Tingkat rasa bersalah saya adalah {type}! 🎒 Apakah saya berpura-pura terlalu baik?",
+      "wechat": "Tingkat rasa bersalah saya adalah {type}! 🎒 Apakah saya berpura-pura terlalu baik?",
+      "whatsapp": "Tingkat rasa bersalah saya adalah {type}! 🎒 Apakah saya berpura-pura terlalu baik?",
+      "telegram": "Tingkat rasa bersalah saya adalah {type}! 🎒 Apakah saya berpura-pura terlalu baik?",
+      "line": "Tingkat rasa bersalah saya adalah {type}! 🎒 Apakah saya berpura-pura terlalu baik?",
+      "startDefault": "Tes 'Tingkat Rasa Bersalah' Saya 🎒 Apakah saya berpura-pura terlalu baik?",
+      "startKakao": "Tes 'Tingkat Rasa Bersalah' Saya 🎒 Apakah saya berpura-pura terlalu baik?",
+      "startWechat": "Tes 'Tingkat Rasa Bersalah' Saya 🎒 Apakah saya berpura-pura terlalu baik?",
+      "startWhatsapp": "Tes 'Tingkat Rasa Bersalah' Saya 🎒 Apakah saya berpura-pura terlalu baik?",
+      "startTelegram": "Tes 'Tingkat Rasa Bersalah' Saya 🎒 Apakah saya berpura-pura terlalu baik?",
+      "startLine": "Tes 'Tingkat Rasa Bersalah' Saya 🎒 Apakah saya berpura-pura terlalu baik?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

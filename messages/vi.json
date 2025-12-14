@@ -3851,5 +3851,62 @@
       "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "phase2GuiltLevelTest": {
+    "startMessage": {
+      "line1": "\"Thói quen của bạn có phải là 'Xin lỗi' không?\"",
+      "line2": "Đôi khi chúng ta thường xuyên cảm thấy có lỗi và tự trách mình ngay cả khi không làm gì sai.",
+      "line3": "Bạn có cảm thấy tội lỗi khi từ chối nên miễn cưỡng đồng ý với yêu cầu, hoặc lo lắng nghĩ đó là lỗi của mình khi thấy người khác trông không vui không?",
+      "line4": "Cảm giác tội lỗi vừa phải là đạo đức, nhưng cảm giác tội lỗi quá mức là nhà tù của tâm trí.",
+      "line5": "Hãy kiểm tra xem gánh nặng trong lòng bạn nặng đến mức nào. Chẩn đoán độ nhạy cảm tội lỗi 🎒 Đo trọng lượng của tâm hồn ⚖️"
+    },
+    "ui": {
+      "startTest": "Đo mức độ tội lỗi",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài kiểm tra khác",
+      "goToTest": "Đi làm bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài kiểm tra Mức độ tội lỗi của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra tương tự khác",
+      "resultDescription": "Mô tả kết quả chi tiết",
+      "guiltLevel": "Mức độ tội lỗi",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Mức độ tội lỗi của tôi là {type}! 🎒 Mình có đang giả vờ quá tốt không?",
+      "kakao": "Mức độ tội lỗi của tôi là {type}! 🎒 Mình có đang giả vờ quá tốt không?",
+      "wechat": "Mức độ tội lỗi của tôi là {type}! 🎒 Mình có đang giả vờ quá tốt không?",
+      "whatsapp": "Mức độ tội lỗi của tôi là {type}! 🎒 Mình có đang giả vờ quá tốt không?",
+      "telegram": "Mức độ tội lỗi của tôi là {type}! 🎒 Mình có đang giả vờ quá tốt không?",
+      "line": "Mức độ tội lỗi của tôi là {type}! 🎒 Mình có đang giả vờ quá tốt không?",
+      "startDefault": "Bài kiểm tra 'Mức độ tội lỗi' của tôi 🎒 Mình có đang giả vờ quá tốt không?",
+      "startKakao": "Bài kiểm tra 'Mức độ tội lỗi' của tôi 🎒 Mình có đang giả vờ quá tốt không?",
+      "startWechat": "Bài kiểm tra 'Mức độ tội lỗi' của tôi 🎒 Mình có đang giả vờ quá tốt không?",
+      "startWhatsapp": "Bài kiểm tra 'Mức độ tội lỗi' của tôi 🎒 Mình có đang giả vờ quá tốt không?",
+      "startTelegram": "Bài kiểm tra 'Mức độ tội lỗi' của tôi 🎒 Mình có đang giả vờ quá tốt không?",
+      "startLine": "Bài kiểm tra 'Mức độ tội lỗi' của tôi 🎒 Mình có đang giả vờ quá tốt không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }

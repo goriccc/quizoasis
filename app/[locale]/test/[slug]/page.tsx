@@ -34,6 +34,7 @@ import { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } from '@/
 import { phase2RelationshipCutQuestions, phase2RelationshipCutResults } from '@/lib/phase2RelationshipCutData';
 import { phase2SelfEsteemQuestions, phase2SelfEsteemResults } from '@/lib/phase2SelfEsteemData';
 import { phase2MentalAgeQuestions, phase2MentalAgeResults } from '@/lib/phase2MentalAgeData';
+import { phase2GuiltLevelQuestions, phase2GuiltLevelResults } from '@/lib/phase2GuiltLevelData';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -144,6 +145,9 @@ const Phase2SelfEsteemTestClient = dynamic(() => import('@/components/Phase2Self
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const Phase2MentalAgeTestClient = dynamic(() => import('@/components/Phase2MentalAgeTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const Phase2GuiltLevelTestClient = dynamic(() => import('@/components/Phase2GuiltLevelTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2019,6 +2023,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2MentalAgeQuestions}
           results={phase2MentalAgeResults}
           questionCount={phase2MentalAgeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_guilt-level-test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_guilt-level-test',
+      title: {
+        ko: "나의 '죄책감' 레벨 테스트",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      description: {
+        ko: "혹시 말버릇이 '죄송합니다' 인가요? 우리는 때로 내가 잘못하지 않은 일에도 습관적으로 미안해하고, 자책하곤 합니다. 나의 죄책감 민감도 진단하기 🎒",
+        en: "",
+        ja: "",
+        'zh-CN': "",
+        'zh-TW': "",
+        vi: "",
+        id: ""
+      },
+      thumbnail: 'phase2_test_147_guilt_level.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '자아탐색'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2GuiltLevelTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2GuiltLevelQuestions}
+          results={phase2GuiltLevelResults}
+          questionCount={phase2GuiltLevelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -4236,6 +4293,11 @@ export default async function TestPage({ params }: Props) {
     testData = {
       questions: phase2MentalAgeQuestions,
       results: phase2MentalAgeResults
+    };
+  } else if (slug === 'phase2_guilt-level-test') {
+    testData = {
+      questions: phase2GuiltLevelQuestions,
+      results: phase2GuiltLevelResults
     };
   } else if (slug === 'conflict-style-test') {
     testData = {

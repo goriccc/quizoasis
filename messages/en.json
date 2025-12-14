@@ -4013,5 +4013,62 @@
       "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2GuiltLevelTest": {
+    "startMessage": {
+      "line1": "\"Is your habit saying 'I'm sorry'?\"",
+      "line2": "Sometimes we habitually feel sorry and blame ourselves even for things we didn't do wrong.",
+      "line3": "Do you feel guilty about refusing requests, or feel anxious thinking it's your fault when someone looks upset?",
+      "line4": "Appropriate guilt is morality, but excessive guilt is a prison of the mind.",
+      "line5": "Check how heavy your heart's burden is. Diagnose guilt sensitivity 🎒 Measure the weight of your heart ⚖️"
+    },
+    "ui": {
+      "startTest": "Measure Guilt Level",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Guilt Level Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "resultDescription": "Result Description",
+      "guiltLevel": "Guilt Level",
+      "characteristics": "Main Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My guilt level is {type}! 🎒 Am I pretending to be too nice?",
+      "kakao": "My guilt level is {type}! 🎒 Am I pretending to be too nice?",
+      "wechat": "My guilt level is {type}! 🎒 Am I pretending to be too nice?",
+      "whatsapp": "My guilt level is {type}! 🎒 Am I pretending to be too nice?",
+      "telegram": "My guilt level is {type}! 🎒 Am I pretending to be too nice?",
+      "line": "My guilt level is {type}! 🎒 Am I pretending to be too nice?",
+      "startDefault": "My 'Guilt Level' Test 🎒 Am I pretending to be too nice?",
+      "startKakao": "My 'Guilt Level' Test 🎒 Am I pretending to be too nice?",
+      "startWechat": "My 'Guilt Level' Test 🎒 Am I pretending to be too nice?",
+      "startWhatsapp": "My 'Guilt Level' Test 🎒 Am I pretending to be too nice?",
+      "startTelegram": "My 'Guilt Level' Test 🎒 Am I pretending to be too nice?",
+      "startLine": "My 'Guilt Level' Test 🎒 Am I pretending to be too nice?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }

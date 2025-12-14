@@ -3858,5 +3858,62 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "phase2GuiltLevelTest": {
+    "startMessage": {
+      "line1": "\"你的口頭禪是「對不起」嗎？\"",
+      "line2": "有時我們會習慣性地為沒有做錯的事感到抱歉並自責。",
+      "line3": "會因為拒絕感到抱歉而勉強答應請求，或者看到對方看起來不高興就覺得是自己的錯而焦慮嗎？",
+      "line4": "適當的內疚是道德，但過度的內疚是心靈的監獄。",
+      "line5": "檢查一下你心中的負擔有多重。診斷內疚敏感度 🎒 測量心靈的重量 ⚖️"
+    },
+    "ui": {
+      "startTest": "測量內疚水平",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "和朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（我的內疚水平測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似其他測試",
+      "resultDescription": "結果詳細說明",
+      "guiltLevel": "內疚水平",
+      "characteristics": "主要特徵",
+      "goodMatch": "完美配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的內疚水平是{type}！🎒 我是不是在假裝太善良？",
+      "kakao": "我的內疚水平是{type}！🎒 我是不是在假裝太善良？",
+      "wechat": "我的內疚水平是{type}！🎒 我是不是在假裝太善良？",
+      "whatsapp": "我的內疚水平是{type}！🎒 我是不是在假裝太善良？",
+      "telegram": "我的內疚水平是{type}！🎒 我是不是在假裝太善良？",
+      "line": "我的內疚水平是{type}！🎒 我是不是在假裝太善良？",
+      "startDefault": "我的「內疚感」水平測試 🎒 我是不是在假裝太善良？",
+      "startKakao": "我的「內疚感」水平測試 🎒 我是不是在假裝太善良？",
+      "startWechat": "我的「內疚感」水平測試 🎒 我是不是在假裝太善良？",
+      "startWhatsapp": "我的「內疚感」水平測試 🎒 我是不是在假裝太善良？",
+      "startTelegram": "我的「內疚感」水平測試 🎒 我是不是在假裝太善良？",
+      "startLine": "我的「內疚感」水平測試 🎒 我是不是在假裝太善良？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }
