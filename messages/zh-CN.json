@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase2ImpulseBuyingTest": {
+    "startMessage": {
+      "line1": "\"咦？好漂亮。先买了再说！\"",
+      "line2": "回过神来，是不是双手都拎满了购物袋？",
+      "line3": "从压力大时先按支付按钮的人，到连10韩元都不浪费的吝啬鬼。",
+      "line4": "我们分析您的消费模式和购物狂频率，告诉您当前的「冲动购买危险度」。",
+      "line5": "我的账户为什么空了 💸 查看我的购物狂等级 🛍️"
+    },
+    "ui": {
+      "startTest": "查看购物狂等级",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域 (我的冲动购买指数)",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "impulseLevel": "购物狂指数",
+      "characteristics": "主要特征",
+      "goodMatch": "理想配对",
+      "badMatch": "最差配对"
+    },
+    "shareMessages": {
+      "default": "我的冲动购买指数是{type}！💸 购物狂降临的我的状态是？",
+      "kakao": "我的冲动购买指数是{type}！💸 购物狂降临的我的状态是？",
+      "wechat": "我的冲动购买指数是{type}！💸 购物狂降临的我的状态是？",
+      "whatsapp": "我的冲动购买指数是{type}！💸 购物狂降临的我的状态是？",
+      "telegram": "我的冲动购买指数是{type}！💸 购物狂降临的我的状态是？",
+      "line": "我的冲动购买指数是{type}！💸 购物狂降临的我的状态是？",
+      "startDefault": "我的「冲动购买」指数（购物狂降临）💸 我的账户为什么空了？",
+      "startKakao": "我的「冲动购买」指数（购物狂降临）💸 我的账户为什么空了？",
+      "startWechat": "我的「冲动购买」指数（购物狂降临）💸 我的账户为什么空了？",
+      "startWhatsapp": "我的「冲动购买」指数（购物狂降临）💸 我的账户为什么空了？",
+      "startTelegram": "我的「冲动购买」指数（购物狂降临）💸 我的账户为什么空了？",
+      "startLine": "我的「冲动购买」指数（购物狂降临）💸 我的账户为什么空了？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"什么饮品能填满你的灵魂？\"",

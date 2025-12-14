@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase2ImpulseBuyingTest": {
+    "startMessage": {
+      "line1": "\"Hah? Cantik. Beli dulu!\"",
+      "line2": "Ketika sadar, bukankah Anda memegang tas belanja penuh di kedua tangan?",
+      "line3": "Dari orang yang menekan tombol pembayaran terlebih dahulu saat stres hingga orang pelit yang tidak menyia-nyiakan satu koin 10 won pun.",
+      "line4": "Kami menganalisis pola pengeluaran dan frekuensi iblis belanja turun untuk memberi tahu Anda 'tingkat risiko pembelian impulsif' saat ini.",
+      "line5": "Alasan akun saya kosong 💸 Periksa tingkat iblis belanja saya 🛍️"
+    },
+    "ui": {
+      "startTest": "Periksa Tingkat Iblis Belanja",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Indeks Pembelian Impulsif Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "impulseLevel": "Indeks Iblis Belanja",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Ideal",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Indeks pembelian impulsif saya adalah {type}! 💸 Apa status iblis belanja saya?",
+      "kakao": "Indeks pembelian impulsif saya adalah {type}! 💸 Apa status iblis belanja saya?",
+      "wechat": "Indeks pembelian impulsif saya adalah {type}! 💸 Apa status iblis belanja saya?",
+      "whatsapp": "Indeks pembelian impulsif saya adalah {type}! 💸 Apa status iblis belanja saya?",
+      "telegram": "Indeks pembelian impulsif saya adalah {type}! 💸 Apa status iblis belanja saya?",
+      "line": "Indeks pembelian impulsif saya adalah {type}! 💸 Apa status iblis belanja saya?",
+      "startDefault": "Indeks \"Pembelian Impulsif\" Saya (Iblis Belanja Turun) 💸 Mengapa akun saya kosong?",
+      "startKakao": "Indeks \"Pembelian Impulsif\" Saya (Iblis Belanja Turun) 💸 Mengapa akun saya kosong?",
+      "startWechat": "Indeks \"Pembelian Impulsif\" Saya (Iblis Belanja Turun) 💸 Mengapa akun saya kosong?",
+      "startWhatsapp": "Indeks \"Pembelian Impulsif\" Saya (Iblis Belanja Turun) 💸 Mengapa akun saya kosong?",
+      "startTelegram": "Indeks \"Pembelian Impulsif\" Saya (Iblis Belanja Turun) 💸 Mengapa akun saya kosong?",
+      "startLine": "Indeks \"Pembelian Impulsif\" Saya (Iblis Belanja Turun) 💸 Mengapa akun saya kosong?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"Minuman apa yang mengisi jiwa Anda?\"",

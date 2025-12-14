@@ -1298,6 +1298,62 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase2ImpulseBuyingTest": {
+    "startMessage": {
+      "line1": "\"あれ？きれいだ。とりあえず買う！\"",
+      "line2": "気がつくと両手いっぱいのショッピングバッグを持っていませんか？",
+      "line3": "ストレスを受けると決済ボタンを押す人から10ウォン1枚も無駄にしないケチまで。",
+      "line4": "あなたの消費パターンと買い物依存降臨頻度を分析して、現在の「衝動買い危険度」をお伝えします。",
+      "line5": "私の口座が空になる理由 💸 買い物依存レベルを確認 🛍️"
+    },
+    "ui": {
+      "startTest": "買い物依存レベルを確認",
+      "shareWithFriends": "友達と一緒に",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア (私の衝動買い指数)",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "impulseLevel": "買い物依存指数",
+      "characteristics": "主な特徴",
+      "goodMatch": "理想の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の衝動買い指数は{type}！💸 買い物依存が降臨した私の状態は？",
+      "kakao": "私の衝動買い指数は{type}！💸 買い物依存が降臨した私の状態は？",
+      "wechat": "私の衝動買い指数は{type}！💸 買い物依存が降臨した私の状態は？",
+      "whatsapp": "私の衝動買い指数は{type}！💸 買い物依存が降臨した私の状態は？",
+      "telegram": "私の衝動買い指数は{type}！💸 買い物依存が降臨した私の状態は？",
+      "line": "私の衝動買い指数は{type}！💸 買い物依存が降臨した私の状態は？",
+      "startDefault": "私の「衝動買い」指数（買い物依存降臨）💸 私の口座が空になる理由は？",
+      "startKakao": "私の「衝動買い」指数（買い物依存降臨）💸 私の口座が空になる理由は？",
+      "startWechat": "私の「衝動買い」指数（買い物依存降臨）💸 私の口座が空になる理由は？",
+      "startWhatsapp": "私の「衝動買い」指数（買い物依存降臨）💸 私の口座が空になる理由は？",
+      "startTelegram": "私の「衝動買い」指数（買い物依存降臨）💸 私の口座が空になる理由は？",
+      "startLine": "私の「衝動買い」指数（買い物依存降臨）💸 私の口座が空になる理由は？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"あなたの魂を満たす一杯は何ですか？\"",

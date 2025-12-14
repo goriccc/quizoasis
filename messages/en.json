@@ -1397,6 +1397,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2ImpulseBuyingTest": {
+    "startMessage": {
+      "line1": "\"Huh? It's pretty. Just buy it!\"",
+      "line2": "When you come to your senses, don't you have shopping bags full in both hands?",
+      "line3": "From people who press the payment button first when stressed to penny-pinchers who don't waste a single 10 won coin.",
+      "line4": "We analyze your spending patterns and shopping demon frequency to tell you your current 'impulse buying risk level'.",
+      "line5": "Why my account is empty 💸 Check my shopping demon level 🛍️"
+    },
+    "ui": {
+      "startTest": "Check Shopping Demon Level",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Impulse Buying Index)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "impulseLevel": "Shopping Demon Index",
+      "characteristics": "Main Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My impulse buying index is {type}! 💸 What's my shopping demon status?",
+      "kakao": "My impulse buying index is {type}! 💸 What's my shopping demon status?",
+      "wechat": "My impulse buying index is {type}! 💸 What's my shopping demon status?",
+      "whatsapp": "My impulse buying index is {type}! 💸 What's my shopping demon status?",
+      "telegram": "My impulse buying index is {type}! 💸 What's my shopping demon status?",
+      "line": "My impulse buying index is {type}! 💸 What's my shopping demon status?",
+      "startDefault": "My \"Impulse Buying\" Index (Shopping Demon Descends) 💸 Why is my account empty?",
+      "startKakao": "My \"Impulse Buying\" Index (Shopping Demon Descends) 💸 Why is my account empty?",
+      "startWechat": "My \"Impulse Buying\" Index (Shopping Demon Descends) 💸 Why is my account empty?",
+      "startWhatsapp": "My \"Impulse Buying\" Index (Shopping Demon Descends) 💸 Why is my account empty?",
+      "startTelegram": "My \"Impulse Buying\" Index (Shopping Demon Descends) 💸 Why is my account empty?",
+      "startLine": "My \"Impulse Buying\" Index (Shopping Demon Descends) 💸 Why is my account empty?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"What drink fills your soul?\"",

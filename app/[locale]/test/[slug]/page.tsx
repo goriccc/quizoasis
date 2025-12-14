@@ -36,6 +36,7 @@ import { phase2SelfEsteemQuestions, phase2SelfEsteemResults } from '@/lib/phase2
 import { phase2MentalAgeQuestions, phase2MentalAgeResults } from '@/lib/phase2MentalAgeData';
 import { phase2GuiltLevelQuestions, phase2GuiltLevelResults } from '@/lib/phase2GuiltLevelData';
 import { phase2CreativityLevelQuestions, phase2CreativityLevelResults } from '@/lib/phase2CreativityLevelData';
+import { phase2ImpulseBuyingQuestions, phase2ImpulseBuyingResults } from '@/lib/phase2_impulse_buying_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -153,6 +154,9 @@ const Phase2GuiltLevelTestClient = dynamic(() => import('@/components/Phase2Guil
 });
 const Phase2CreativityLevelTestClient = dynamic(() => import('@/components/Phase2CreativityLevelTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const Phase2ImpulseBuyingTestClient = dynamic(() => import('@/components/Phase2ImpulseBuyingTestClient'), {
+  ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
@@ -1603,6 +1607,59 @@ export default async function TestPage({ params }: Props) {
           questions={empathyFQuestions}
           results={empathyFResults}
           questionCount={empathyFQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_impulse_buying_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_impulse_buying_test',
+      title: {
+        ko: "나의 '충동구매' 지수 (지름신 강림)",
+        en: 'My "Impulse Buying" Index (Shopping Demon Descends)',
+        ja: '私の「衝動買い」指数（買い物依存降臨）',
+        'zh-CN': '我的「冲动购买」指数（购物狂降临）',
+        'zh-TW': '我的「衝動購買」指數（購物狂降臨）',
+        vi: 'Chỉ số "Mua sắm bốc đồng" của tôi (Quỷ mua sắm giáng lâm)',
+        id: 'Indeks "Pembelian Impulsif" Saya (Iblis Belanja Turun)'
+      },
+      description: {
+        ko: '어? 예쁘다. 일단 사!',
+        en: 'Huh? It\'s pretty. Just buy it!',
+        ja: 'あれ？きれいだ。とりあえず買う！',
+        'zh-CN': '咦？好漂亮。先买了再说！',
+        'zh-TW': '咦？好漂亮。先買了再說！',
+        vi: 'Ồ? Đẹp quá. Cứ mua đã!',
+        id: 'Hah? Cantik. Beli dulu!'
+      },
+      thumbnail: 'phase2_test_063_impulse_buying.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리'],
+        en: ['Psychology'],
+        ja: ['心理'],
+        'zh-CN': ['心理'],
+        'zh-TW': ['心理'],
+        vi: ['Tâm lý'],
+        id: ['Psikologi']
+      }
+    };
+
+    return (
+      <>
+        <Phase2ImpulseBuyingTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2ImpulseBuyingQuestions}
+          results={phase2ImpulseBuyingResults}
+          questionCount={phase2ImpulseBuyingQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
