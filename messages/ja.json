@@ -1425,6 +1425,60 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase2CoreEmotionTest": {
+    "startMessage": {
+      "line1": "\"今あなたの心を操っているのは誰ですか？\"",
+      "line2": "私たちの頭の中には無数の感情が住んでいます。",
+      "line3": "その中でも、あなたの人生を導く「大隊長感情」は別にあります。",
+      "line4": "いつもポジティブな「喜び」でしょうか？危険を察知する繊細な「恐れ」でしょうか？それとも正義感に満ちた「怒り」でしょうか？",
+      "line5": "あなたの選択と無意識を分析して、あなたを支配する「核心感情」を見つけます。\n内面のコントロールタワーにアクセス 🧠 私の核心感情を確認 🌈"
+    },
+    "ui": {
+      "startTest": "核心感情を確認",
+      "shareWithFriends": "友達と一緒に",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア (私の核心感情を見つける)",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "keywords": "核心キーワード",
+      "caution": "注意点"
+    },
+    "shareMessages": {
+      "default": "私の頭の中のコントロールタワーは{type}！🧠 私を支配する核心感情は何だろう？",
+      "kakao": "私の頭の中のコントロールタワーは{type}！🧠 私を支配する核心感情は何だろう？",
+      "wechat": "私の頭の中のコントロールタワーは{type}！🧠 私を支配する核心感情は何だろう？",
+      "whatsapp": "私の頭の中のコントロールタワーは{type}！🧠 私を支配する核心感情は何だろう？",
+      "telegram": "私の頭の中のコントロールタワーは{type}！🧠 私を支配する核心感情は何だろう？",
+      "line": "私の頭の中のコントロールタワーは{type}！🧠 私を支配する核心感情は何だろう？",
+      "startDefault": "私の核心感情を見つける 🧠 私を支配する核心感情は？",
+      "startKakao": "私の核心感情を見つける 🧠 私を支配する核心感情は？",
+      "startWechat": "私の核心感情を見つける 🧠 私を支配する核心感情は？",
+      "startWhatsapp": "私の核心感情を見つける 🧠 私を支配する核心感情は？",
+      "startTelegram": "私の核心感情を見つける 🧠 私を支配する核心感情は？",
+      "startLine": "私の核心感情を見つける 🧠 私を支配する核心感情は？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"あなたの魂を満たす一杯は何ですか？\"",

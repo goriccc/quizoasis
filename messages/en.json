@@ -1524,6 +1524,60 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2CoreEmotionTest": {
+    "startMessage": {
+      "line1": "\"Who is controlling your mind right now?\"",
+      "line2": "Countless emotions live in our minds.",
+      "line3": "Among them, there's a separate 'master emotion' that leads your life.",
+      "line4": "Is it always positive 'Joy'? Or the delicate 'Fear' that detects danger? Or the justice-filled 'Anger'?",
+      "line5": "We analyze your choices and unconscious to find the 'core emotion' that dominates you.\nAccess the inner control tower 🧠 Check my core emotion 🌈"
+    },
+    "ui": {
+      "startTest": "Check Core Emotion",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Core Emotion)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "keywords": "Core Keywords",
+      "caution": "Caution"
+    },
+    "shareMessages": {
+      "default": "My mind's control tower is {type}! 🧠 What core emotion dominates me?",
+      "kakao": "My mind's control tower is {type}! 🧠 What core emotion dominates me?",
+      "wechat": "My mind's control tower is {type}! 🧠 What core emotion dominates me?",
+      "whatsapp": "My mind's control tower is {type}! 🧠 What core emotion dominates me?",
+      "telegram": "My mind's control tower is {type}! 🧠 What core emotion dominates me?",
+      "line": "My mind's control tower is {type}! 🧠 What core emotion dominates me?",
+      "startDefault": "Find My Core Emotion 🧠 What core emotion dominates me?",
+      "startKakao": "Find My Core Emotion 🧠 What core emotion dominates me?",
+      "startWechat": "Find My Core Emotion 🧠 What core emotion dominates me?",
+      "startWhatsapp": "Find My Core Emotion 🧠 What core emotion dominates me?",
+      "startTelegram": "Find My Core Emotion 🧠 What core emotion dominates me?",
+      "startLine": "Find My Core Emotion 🧠 What core emotion dominates me?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"What drink fills your soul?\"",

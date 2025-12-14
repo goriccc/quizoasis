@@ -1424,6 +1424,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase2CoreEmotionTest": {
+    "startMessage": {
+      "line1": "\"Ai đang điều khiển tâm trí bạn ngay bây giờ?\"",
+      "line2": "Vô số cảm xúc sống trong tâm trí chúng ta.",
+      "line3": "Trong số đó, có một 'cảm xúc chủ đạo' riêng biệt dẫn dắt cuộc sống của bạn.",
+      "line4": "Có phải là 'Niềm vui' luôn tích cực? Hay 'Nỗi sợ' tinh tế phát hiện nguy hiểm? Hay là 'Sự tức giận' đầy công lý?",
+      "line5": "Chúng tôi phân tích lựa chọn và tiềm thức của bạn để tìm ra 'cảm xúc cốt lõi' đang chi phối bạn.\nKết nối tháp điều khiển nội tâm 🧠 Kiểm tra cảm xúc cốt lõi của tôi 🌈"
+    },
+    "ui": {
+      "startTest": "Kiểm tra cảm xúc cốt lõi",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem các bài test khác",
+      "goToTest": "Đi đến bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tìm Cảm Xúc Cốt Lõi Của Tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "keywords": "Từ khóa cốt lõi",
+      "caution": "Lưu ý"
+    },
+    "shareMessages": {
+      "default": "Tháp điều khiển trong tâm trí tôi là {type}! 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "kakao": "Tháp điều khiển trong tâm trí tôi là {type}! 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "wechat": "Tháp điều khiển trong tâm trí tôi là {type}! 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "whatsapp": "Tháp điều khiển trong tâm trí tôi là {type}! 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "telegram": "Tháp điều khiển trong tâm trí tôi là {type}! 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "line": "Tháp điều khiển trong tâm trí tôi là {type}! 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "startDefault": "Tìm Cảm Xúc Cốt Lõi Của Tôi 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "startKakao": "Tìm Cảm Xúc Cốt Lõi Của Tôi 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "startWechat": "Tìm Cảm Xúc Cốt Lõi Của Tôi 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "startWhatsapp": "Tìm Cảm Xúc Cốt Lõi Của Tôi 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "startTelegram": "Tìm Cảm Xúc Cốt Lõi Của Tôi 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?",
+      "startLine": "Tìm Cảm Xúc Cốt Lõi Của Tôi 🧠 Cảm xúc cốt lõi nào đang chi phối tôi?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"Đồ uống nào sẽ làm đầy tâm hồn bạn?\"",

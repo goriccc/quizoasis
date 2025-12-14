@@ -1424,6 +1424,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase2CoreEmotionTest": {
+    "startMessage": {
+      "line1": "\"Siapa yang mengendalikan pikiran Anda saat ini?\"",
+      "line2": "Banyak emosi hidup di dalam pikiran kita.",
+      "line3": "Di antara mereka, ada 'emosi master' terpisah yang memimpin hidup Anda.",
+      "line4": "Apakah selalu 'Kegembiraan' yang positif? Atau 'Ketakutan' yang halus yang mendeteksi bahaya? Atau 'Kemarahan' yang penuh keadilan?",
+      "line5": "Kami menganalisis pilihan dan ketidaksadaran Anda untuk menemukan 'emosi inti' yang mendominasi Anda.\nAkses menara kontrol batin 🧠 Periksa emosi inti saya 🌈"
+    },
+    "ui": {
+      "startTest": "Periksa Emosi Inti",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Emosi Inti Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "keywords": "Kata Kunci Inti",
+      "caution": "Perhatian"
+    },
+    "shareMessages": {
+      "default": "Menara kontrol di pikiran saya adalah {type}! 🧠 Emosi inti apa yang mendominasi saya?",
+      "kakao": "Menara kontrol di pikiran saya adalah {type}! 🧠 Emosi inti apa yang mendominasi saya?",
+      "wechat": "Menara kontrol di pikiran saya adalah {type}! 🧠 Emosi inti apa yang mendominasi saya?",
+      "whatsapp": "Menara kontrol di pikiran saya adalah {type}! 🧠 Emosi inti apa yang mendominasi saya?",
+      "telegram": "Menara kontrol di pikiran saya adalah {type}! 🧠 Emosi inti apa yang mendominasi saya?",
+      "line": "Menara kontrol di pikiran saya adalah {type}! 🧠 Emosi inti apa yang mendominasi saya?",
+      "startDefault": "Temukan Emosi Inti Saya 🧠 Emosi inti apa yang mendominasi saya?",
+      "startKakao": "Temukan Emosi Inti Saya 🧠 Emosi inti apa yang mendominasi saya?",
+      "startWechat": "Temukan Emosi Inti Saya 🧠 Emosi inti apa yang mendominasi saya?",
+      "startWhatsapp": "Temukan Emosi Inti Saya 🧠 Emosi inti apa yang mendominasi saya?",
+      "startTelegram": "Temukan Emosi Inti Saya 🧠 Emosi inti apa yang mendominasi saya?",
+      "startLine": "Temukan Emosi Inti Saya 🧠 Emosi inti apa yang mendominasi saya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"Minuman apa yang mengisi jiwa Anda?\"",

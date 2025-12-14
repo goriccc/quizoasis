@@ -1424,6 +1424,60 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase2CoreEmotionTest": {
+    "startMessage": {
+      "line1": "\"现在是谁在控制你的心？\"",
+      "line2": "我们的脑海中住着无数的情感。",
+      "line3": "其中，引领你生活的'主导情感'是另外的。",
+      "line4": "是总是积极的'快乐'吗？还是能察觉危险的细腻'恐惧'？或者是充满正义感的'愤怒'？",
+      "line5": "我们分析你的选择和潜意识，找出支配你的'核心情绪'。\n连接内心的控制塔 🧠 查看我的核心情绪 🌈"
+    },
+    "ui": {
+      "startTest": "查看核心情绪",
+      "shareWithFriends": "和朋友一起",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域 (寻找我的核心情绪)",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "keywords": "核心关键词",
+      "caution": "注意事项"
+    },
+    "shareMessages": {
+      "default": "我脑海中的控制塔是{type}！🧠 支配我的核心情绪是什么？",
+      "kakao": "我脑海中的控制塔是{type}！🧠 支配我的核心情绪是什么？",
+      "wechat": "我脑海中的控制塔是{type}！🧠 支配我的核心情绪是什么？",
+      "whatsapp": "我脑海中的控制塔是{type}！🧠 支配我的核心情绪是什么？",
+      "telegram": "我脑海中的控制塔是{type}！🧠 支配我的核心情绪是什么？",
+      "line": "我脑海中的控制塔是{type}！🧠 支配我的核心情绪是什么？",
+      "startDefault": "寻找我的核心情绪 🧠 支配我的核心情绪是什么？",
+      "startKakao": "寻找我的核心情绪 🧠 支配我的核心情绪是什么？",
+      "startWechat": "寻找我的核心情绪 🧠 支配我的核心情绪是什么？",
+      "startWhatsapp": "寻找我的核心情绪 🧠 支配我的核心情绪是什么？",
+      "startTelegram": "寻找我的核心情绪 🧠 支配我的核心情绪是什么？",
+      "startLine": "寻找我的核心情绪 🧠 支配我的核心情绪是什么？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "soulDrinkTest": {
     "startMessage": {
       "line1": "\"什么饮品能填满你的灵魂？\"",

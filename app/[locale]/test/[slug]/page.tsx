@@ -38,6 +38,7 @@ import { phase2GuiltLevelQuestions, phase2GuiltLevelResults } from '@/lib/phase2
 import { phase2CreativityLevelQuestions, phase2CreativityLevelResults } from '@/lib/phase2CreativityLevelData';
 import { phase2ImpulseBuyingQuestions, phase2ImpulseBuyingResults } from '@/lib/phase2_impulse_buying_data';
 import { phase2BirthGemFlowerQuestions, phase2BirthGemFlowerResults } from '@/lib/phase2_birth_gem_flower_data';
+import { phase2CoreEmotionQuestions, phase2CoreEmotionResults } from '@/lib/phase2_core_emotion_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -160,6 +161,9 @@ const Phase2ImpulseBuyingTestClient = dynamic(() => import('@/components/Phase2I
   ssr: false
 });
 const Phase2BirthGemFlowerTestClient = dynamic(() => import('@/components/Phase2BirthGemFlowerTestClient'), {
+  ssr: false
+});
+const Phase2CoreEmotionTestClient = dynamic(() => import('@/components/Phase2CoreEmotionTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1717,6 +1721,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2BirthGemFlowerQuestions}
           results={phase2BirthGemFlowerResults}
           questionCount={phase2BirthGemFlowerQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_core_emotion_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_core_emotion_test',
+      title: {
+        ko: "나의 '핵심 감정'은 무엇일까?",
+        en: "What is My 'Core Emotion'?",
+        ja: "私の「核心感情」は何だろう？",
+        'zh-CN': "我的「核心情绪」是什么？",
+        'zh-TW': "我的「核心情緒」是什麼？",
+        vi: "Cảm Xúc Cốt Lõi Của Tôi Là Gì?",
+        id: "Apa 'Emosi Inti' Saya?"
+      },
+      description: {
+        ko: '지금 당신의 마음을 조종하는 건 누구일까요?',
+        en: "Who is controlling your mind right now?",
+        ja: "今あなたの心を操っているのは誰ですか？",
+        'zh-CN': "现在是谁在控制你的心？",
+        'zh-TW': "現在是誰在控制你的心？",
+        vi: "Ai đang điều khiển tâm trí bạn ngay bây giờ?",
+        id: "Siapa yang mengendalikan pikiran Anda saat ini?"
+      },
+      thumbnail: 'phase2_test_146_core_emotion.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '자아탐색'],
+        en: ['Psychology', 'Self-Exploration'],
+        ja: ['心理', '自己探求'],
+        'zh-CN': ['心理', '自我探索'],
+        'zh-TW': ['心理', '自我探索'],
+        vi: ['Tâm lý', 'Khám phá bản thân'],
+        id: ['Psikologi', 'Eksplorasi Diri']
+      }
+    };
+
+    return (
+      <>
+        <Phase2CoreEmotionTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2CoreEmotionQuestions}
+          results={phase2CoreEmotionResults}
+          questionCount={phase2CoreEmotionQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
