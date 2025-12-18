@@ -4254,6 +4254,61 @@
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },
+  "phase2GreekGodTest": {
+    "startMessage": {
+      "line1": "\"我是奥林匹斯的统治者吗？\"",
+      "line2": "还是我是明智的战略家？",
+      "line3": "流传数千年的希腊罗马神话中的众神，各自拥有鲜明的性格和能力。",
+      "line4": "我们分析你的领导力、爱情方式和危机处理能力，找到与你灵魂最相似的神。",
+      "line5": "唤醒我体内沉睡的神力 ⚡ 确认我的守护神 🏛️"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "shareWithFriends": "与朋友一起尝试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重测",
+      "otherTests": "其他测试",
+      "goToTest": "前往测试",
+      "adsenseTitle": "AdSense广告区域（找到与我性格相似的神话中的神）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "symbols": "象征",
+      "traits": "主要性格",
+      "recommendedItems": "推荐物品"
+    },
+    "shareMessages": {
+      "default": "我在神话中是{type}！ 🏛️ 哪个神与我的性格相似？",
+      "kakao": "我在神话中是{type}！ 🏛️ 哪个神与我的性格相似？",
+      "wechat": "我在神话中是{type}！ 🏛️ 哪个神与我的性格相似？",
+      "whatsapp": "我在神话中是{type}！ 🏛️ 哪个神与我的性格相似？",
+      "telegram": "我在神话中是{type}！ 🏛️ 哪个神与我的性格相似？",
+      "line": "我在神话中是{type}！ 🏛️ 哪个神与我的性格相似？",
+      "startDefault": "找到与我性格相似的''神话中的神'' 🏛️ 确认我的守护神",
+      "startKakao": "找到与我性格相似的''神话中的神'' 🏛️ 确认我的守护神",
+      "startWechat": "找到与我性格相似的''神话中的神'' 🏛️ 确认我的守护神",
+      "startWhatsapp": "找到与我性格相似的''神话中的神'' 🏛️ 确认我的守护神",
+      "startTelegram": "找到与我性格相似的''神话中的神'' 🏛️ 确认我的守护神",
+      "startLine": "找到与我性格相似的''神话中的神'' 🏛️ 确认我的守护神"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请粘贴到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

@@ -4261,6 +4261,61 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
   },
+  "phase2GreekGodTest": {
+    "startMessage": {
+      "line1": "\"我是奧林匹斯的統治者嗎？\"",
+      "line2": "還是我是一個明智的戰略家？",
+      "line3": "流傳數千年的希臘羅馬神話中的眾神，各自擁有鮮明的性格和能力。",
+      "line4": "我們分析你的領導力、愛情方式和危機處理能力，找到與你靈魂最相似的神。",
+      "line5": "喚醒我體內沉睡的神力 ⚡ 確認我的守護神 🏛️"
+    },
+    "ui": {
+      "startTest": "開始測試",
+      "shareWithFriends": "與朋友一起嘗試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重測",
+      "otherTests": "其他測試",
+      "goToTest": "前往測試",
+      "adsenseTitle": "AdSense廣告區域（找到與我性格相似的神話中的神）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "symbols": "象徵",
+      "traits": "主要性格",
+      "recommendedItems": "推薦物品"
+    },
+    "shareMessages": {
+      "default": "我在神話中是{type}！ 🏛️ 哪個神與我的性格相似？",
+      "kakao": "我在神話中是{type}！ 🏛️ 哪個神與我的性格相似？",
+      "wechat": "我在神話中是{type}！ 🏛️ 哪個神與我的性格相似？",
+      "whatsapp": "我在神話中是{type}！ 🏛️ 哪個神與我的性格相似？",
+      "telegram": "我在神話中是{type}！ 🏛️ 哪個神與我的性格相似？",
+      "line": "我在神話中是{type}！ 🏛️ 哪個神與我的性格相似？",
+      "startDefault": "找到與我性格相似的''神話中的神'' 🏛️ 確認我的守護神",
+      "startKakao": "找到與我性格相似的''神話中的神'' 🏛️ 確認我的守護神",
+      "startWechat": "找到與我性格相似的''神話中的神'' 🏛️ 確認我的守護神",
+      "startWhatsapp": "找到與我性格相似的''神話中的神'' 🏛️ 確認我的守護神",
+      "startTelegram": "找到與我性格相似的''神話中的神'' 🏛️ 確認我的守護神",
+      "startLine": "找到與我性格相似的''神話中的神'' 🏛️ 確認我的守護神"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請貼上到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大腦有多靈活？\"",

@@ -4254,6 +4254,61 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2GreekGodTest": {
+    "startMessage": {
+      "line1": "\"Apakah saya penguasa Olympus?\"",
+      "line2": "Atau apakah saya seorang strategis yang bijak?",
+      "line3": "Para dewa dalam mitologi Yunani dan Romawi, yang diturunkan selama ribuan tahun, masing-masing memiliki kepribadian dan kemampuan yang berbeda.",
+      "line4": "Kami menganalisis kepemimpinan, gaya cinta, dan keterampilan manajemen krisis Anda untuk menemukan dewa yang jiwanya paling mirip dengan Anda.",
+      "line5": "Bangunkan kekuatan ilahi dalam diri saya ⚡ Periksa dewa pelindung saya 🏛️"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Dewa Mitologi yang Mirip dengan Kepribadian Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa",
+      "symbols": "Simbol",
+      "traits": "Sifat Utama",
+      "recommendedItems": "Item yang Direkomendasikan"
+    },
+    "shareMessages": {
+      "default": "Saya adalah {type} dalam mitologi! 🏛️ Dewa mana yang mirip dengan kepribadian saya?",
+      "kakao": "Saya adalah {type} dalam mitologi! 🏛️ Dewa mana yang mirip dengan kepribadian saya?",
+      "wechat": "Saya adalah {type} dalam mitologi! 🏛️ Dewa mana yang mirip dengan kepribadian saya?",
+      "whatsapp": "Saya adalah {type} dalam mitologi! 🏛️ Dewa mana yang mirip dengan kepribadian saya?",
+      "telegram": "Saya adalah {type} dalam mitologi! 🏛️ Dewa mana yang mirip dengan kepribadian saya?",
+      "line": "Saya adalah {type} dalam mitologi! 🏛️ Dewa mana yang mirip dengan kepribadian saya?",
+      "startDefault": "Temukan ''Dewa Mitologi'' yang Mirip dengan Kepribadian Saya 🏛️ Periksa dewa pelindung saya",
+      "startKakao": "Temukan ''Dewa Mitologi'' yang Mirip dengan Kepribadian Saya 🏛️ Periksa dewa pelindung saya",
+      "startWechat": "Temukan ''Dewa Mitologi'' yang Mirip dengan Kepribadian Saya 🏛️ Periksa dewa pelindung saya",
+      "startWhatsapp": "Temukan ''Dewa Mitologi'' yang Mirip dengan Kepribadian Saya 🏛️ Periksa dewa pelindung saya",
+      "startTelegram": "Temukan ''Dewa Mitologi'' yang Mirip dengan Kepribadian Saya 🏛️ Periksa dewa pelindung saya",
+      "startLine": "Temukan ''Dewa Mitologi'' yang Mirip dengan Kepribadian Saya 🏛️ Periksa dewa pelindung saya"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

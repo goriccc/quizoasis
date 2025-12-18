@@ -4242,6 +4242,61 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2GreekGodTest": {
+    "startMessage": {
+      "line1": "「私はオリンポスの支配者でしょうか？」",
+      "line2": "それとも賢い戦略家でしょうか？",
+      "line3": "数千年にわたって伝えられてきたギリシャ・ローマ神話の神々は、それぞれが明確な性格と能力を持っています。",
+      "line4": "あなたのリーダーシップ、愛のスタイル、危機対応能力を分析し、あなたの魂に最も似た神を見つけます。",
+      "line5": "私の中に眠る神の能力を目覚めさせる ⚡ 私の守護神を確認する 🏛️"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の性格に似た神話の神を見つける）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "symbols": "象徴",
+      "traits": "主要な性格",
+      "recommendedItems": "おすすめアイテム"
+    },
+    "shareMessages": {
+      "default": "私は神話の中で{type}！ 🏛️ 私の性格に似た神は誰でしょうか？",
+      "kakao": "私は神話の中で{type}！ 🏛️ 私の性格に似た神は誰でしょうか？",
+      "wechat": "私は神話の中で{type}！ 🏛️ 私の性格に似た神は誰でしょうか？",
+      "whatsapp": "私は神話の中で{type}！ 🏛️ 私の性格に似た神は誰でしょうか？",
+      "telegram": "私は神話の中で{type}！ 🏛️ 私の性格に似た神は誰でしょうか？",
+      "line": "私は神話の中で{type}！ 🏛️ 私の性格に似た神は誰でしょうか？",
+      "startDefault": "私の性格に似た「神話の神」を見つける 🏛️ 私の守護神を確認する",
+      "startKakao": "私の性格に似た「神話の神」を見つける 🏛️ 私の守護神を確認する",
+      "startWechat": "私の性格に似た「神話の神」を見つける 🏛️ 私の守護神を確認する",
+      "startWhatsapp": "私の性格に似た「神話の神」を見つける 🏛️ 私の守護神を確認する",
+      "startTelegram": "私の性格に似た「神話の神」を見つける 🏛️ 私の守護神を確認する",
+      "startLine": "私の性格に似た「神話の神」を見つける 🏛️ 私の守護神を確認する"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！ウィーチャットに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

@@ -4254,6 +4254,61 @@
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2GreekGodTest": {
+    "startMessage": {
+      "line1": "\"Tôi có phải là người cai trị Olympus không?\"",
+      "line2": "Hay tôi là một nhà chiến lược khôn ngoan?",
+      "line3": "Các vị thần trong thần thoại Hy Lạp và La Mã, được truyền lại qua hàng nghìn năm, mỗi vị đều có tính cách và khả năng riêng biệt.",
+      "line4": "Chúng tôi phân tích khả năng lãnh đạo, phong cách yêu đương và kỹ năng xử lý khủng hoảng của bạn để tìm ra vị thần có linh hồn giống bạn nhất.",
+      "line5": "Đánh thức sức mạnh thần thánh trong tôi ⚡ Kiểm tra vị thần bảo vệ của tôi 🏛️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "goToTest": "Đi đến bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tìm vị thần trong thần thoại giống tính cách của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài kiểm tra tương tự",
+      "symbols": "Biểu tượng",
+      "traits": "Tính cách chính",
+      "recommendedItems": "Vật phẩm được đề xuất"
+    },
+    "shareMessages": {
+      "default": "Tôi là {type} trong thần thoại! 🏛️ Vị thần nào giống tính cách của tôi?",
+      "kakao": "Tôi là {type} trong thần thoại! 🏛️ Vị thần nào giống tính cách của tôi?",
+      "wechat": "Tôi là {type} trong thần thoại! 🏛️ Vị thần nào giống tính cách của tôi?",
+      "whatsapp": "Tôi là {type} trong thần thoại! 🏛️ Vị thần nào giống tính cách của tôi?",
+      "telegram": "Tôi là {type} trong thần thoại! 🏛️ Vị thần nào giống tính cách của tôi?",
+      "line": "Tôi là {type} trong thần thoại! 🏛️ Vị thần nào giống tính cách của tôi?",
+      "startDefault": "Tìm ''Vị Thần Trong Thần Thoại'' Giống Tính Cách Của Tôi 🏛️ Kiểm tra vị thần bảo vệ của tôi",
+      "startKakao": "Tìm ''Vị Thần Trong Thần Thoại'' Giống Tính Cách Của Tôi 🏛️ Kiểm tra vị thần bảo vệ của tôi",
+      "startWechat": "Tìm ''Vị Thần Trong Thần Thoại'' Giống Tính Cách Của Tôi 🏛️ Kiểm tra vị thần bảo vệ của tôi",
+      "startWhatsapp": "Tìm ''Vị Thần Trong Thần Thoại'' Giống Tính Cách Của Tôi 🏛️ Kiểm tra vị thần bảo vệ của tôi",
+      "startTelegram": "Tìm ''Vị Thần Trong Thần Thoại'' Giống Tính Cách Của Tôi 🏛️ Kiểm tra vị thần bảo vệ của tôi",
+      "startLine": "Tìm ''Vị Thần Trong Thần Thoại'' Giống Tính Cách Của Tôi 🏛️ Kiểm tra vị thần bảo vệ của tôi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề Xuất Bài kiểm tra Tương tự",
+      "popularTestsTop5": "🔥 Top 5 Đề Xuất Bài kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

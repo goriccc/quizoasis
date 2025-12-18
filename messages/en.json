@@ -4416,6 +4416,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2GreekGodTest": {
+    "startMessage": {
+      "line1": "\"Am I the ruler of Olympus?\"",
+      "line2": "Or am I a wise strategist?",
+      "line3": "The gods in Greek and Roman mythology, passed down for thousands of years, each have distinct personalities and abilities.",
+      "line4": "We analyze your leadership, love style, and crisis management skills to find the god whose soul most resembles yours.",
+      "line5": "Awaken the divine power within me ⚡ Check my guardian god 🏛️"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find the Mythological God Who Resembles My Personality)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "symbols": "Symbols",
+      "traits": "Key Traits",
+      "recommendedItems": "Recommended Items"
+    },
+    "shareMessages": {
+      "default": "I am {type} in mythology! 🏛️ Which god resembles my personality?",
+      "kakao": "I am {type} in mythology! 🏛️ Which god resembles my personality?",
+      "wechat": "I am {type} in mythology! 🏛️ Which god resembles my personality?",
+      "whatsapp": "I am {type} in mythology! 🏛️ Which god resembles my personality?",
+      "telegram": "I am {type} in mythology! 🏛️ Which god resembles my personality?",
+      "line": "I am {type} in mythology! 🏛️ Which god resembles my personality?",
+      "startDefault": "Find the ''Mythological God'' Who Resembles My Personality 🏛️ Check my guardian god",
+      "startKakao": "Find the ''Mythological God'' Who Resembles My Personality 🏛️ Check my guardian god",
+      "startWechat": "Find the ''Mythological God'' Who Resembles My Personality 🏛️ Check my guardian god",
+      "startWhatsapp": "Find the ''Mythological God'' Who Resembles My Personality 🏛️ Check my guardian god",
+      "startTelegram": "Find the ''Mythological God'' Who Resembles My Personality 🏛️ Check my guardian god",
+      "startLine": "Find the ''Mythological God'' Who Resembles My Personality 🏛️ Check my guardian god"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"How flexible is your brain?\"",

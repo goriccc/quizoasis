@@ -42,6 +42,7 @@ import { phase2CoreEmotionQuestions, phase2CoreEmotionResults } from '@/lib/phas
 import { phase2ResilienceQuestions, phase2ResilienceResults } from '@/lib/phase2_resilience_data';
 import { phase2DreamCarQuestions, phase2DreamCarResults } from '@/lib/phase2_dream_car_data';
 import { phase2BodySignalQuestions, phase2BodySignalResults } from '@/lib/phase2_body_signal_data';
+import { phase2GreekGodQuestions, phase2GreekGodResults } from '@/lib/phase2_greek_god_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -176,6 +177,9 @@ const Phase2DreamCarTestClient = dynamic(() => import('@/components/Phase2DreamC
   ssr: false
 });
 const Phase2BodySignalTestClient = dynamic(() => import('@/components/Phase2BodySignalTestClient'), {
+  ssr: false
+});
+const Phase2GreekGodTestClient = dynamic(() => import('@/components/Phase2GreekGodTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1945,6 +1949,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2BodySignalQuestions}
           results={phase2BodySignalResults}
           questionCount={phase2BodySignalQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_greek_god_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_greek_god_test',
+      title: {
+        ko: "내 성격과 닮은 '신화 속 신' 찾기",
+        en: "Find the 'Mythological God' Who Resembles My Personality",
+        ja: "私の性格に似た「神話の神」を見つける",
+        "zh-CN": "找到与我性格相似的'神话中的神'",
+        "zh-TW": "找到與我性格相似的'神話中的神'",
+        vi: "Tìm 'Vị Thần Trong Thần Thoại' Giống Tính Cách Của Tôi",
+        id: "Temukan 'Dewa Mitologi' yang Mirip dengan Kepribadian Saya"
+      },
+      description: {
+        ko: "나는 올림푸스의 지배자일까요?",
+        en: "Am I the ruler of Olympus?",
+        ja: "私はオリンポスの支配者でしょうか？",
+        "zh-CN": "我是奥林匹斯的统治者吗？",
+        "zh-TW": "我是奧林匹斯的統治者嗎？",
+        vi: "Tôi có phải là người cai trị Olympus không?",
+        id: "Apakah saya penguasa Olympus?"
+      },
+      thumbnail: 'phase2_test_039_greek_god.jpg',
+      type: 'personality',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: ['Psychology', 'Personality'],
+        ja: ['心理', '性格'],
+        "zh-CN": ['心理', '性格'],
+        "zh-TW": ['心理', '性格'],
+        vi: ['Tâm lý', 'Tính cách'],
+        id: ['Psikologi', 'Kepribadian']
+      }
+    };
+
+    return (
+      <>
+        <Phase2GreekGodTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2GreekGodQuestions}
+          results={phase2GreekGodResults}
+          questionCount={phase2GreekGodQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
