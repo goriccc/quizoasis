@@ -4364,6 +4364,61 @@
       "popularTestsTop5": "🔥 Top 5 Đề Xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2StressCareTest": {
+    "startMessage": {
+      "line1": "\"Điều gì đang khiến bạn khó khăn nhất ngay bây giờ?\"",
+      "line2": "Dễ nghĩ rằng chỉ là \"bận quá\" hoặc \"có quá nhiều việc\", nhưng nguyên nhân thực sự của căng thẳng ẩn sâu trong trái tim bạn.",
+      "line3": "Từ trái tim mệt mỏi vì con người, lo lắng về tương lai không chắc chắn, đến chủ nghĩa hoàn hảo trói buộc chính mình.",
+      "line4": "Chúng tôi tìm ra nguyên nhân gốc rễ đè nén trái tim bạn và cung cấp một đơn thuốc tùy chỉnh để giảm bớt gánh nặng tinh thần.",
+      "line5": "Chẩn đoán tình trạng căng thẳng của tôi 🩺 Bắt đầu chữa lành trái tim 💊"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "goToTest": "Đi đến bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài kiểm tra tương tự",
+      "symptoms": "Triệu chứng chính",
+      "prescription": "Đơn thuốc tùy chỉnh",
+      "recommendedActivities": "Hoạt động được đề xuất"
+    },
+    "shareMessages": {
+      "default": "Nguyên nhân căng thẳng của tôi là {type}! 🤯 Tôi cần đơn thuốc gì ngay bây giờ?",
+      "kakao": "Nguyên nhân căng thẳng của tôi là {type}! 🤯 Tôi cần đơn thuốc gì ngay bây giờ?",
+      "wechat": "Nguyên nhân căng thẳng của tôi là {type}! 🤯 Tôi cần đơn thuốc gì ngay bây giờ?",
+      "whatsapp": "Nguyên nhân căng thẳng của tôi là {type}! 🤯 Tôi cần đơn thuốc gì ngay bây giờ?",
+      "telegram": "Nguyên nhân căng thẳng của tôi là {type}! 🤯 Tôi cần đơn thuốc gì ngay bây giờ?",
+      "line": "Nguyên nhân căng thẳng của tôi là {type}! 🤯 Tôi cần đơn thuốc gì ngay bây giờ?",
+      "startDefault": "Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi 🩺 Bắt đầu chữa lành trái tim 💊",
+      "startKakao": "Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi 🩺 Bắt đầu chữa lành trái tim 💊",
+      "startWechat": "Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi 🩺 Bắt đầu chữa lành trái tim 💊",
+      "startWhatsapp": "Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi 🩺 Bắt đầu chữa lành trái tim 💊",
+      "startTelegram": "Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi 🩺 Bắt đầu chữa lành trái tim 💊",
+      "startLine": "Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi 🩺 Bắt đầu chữa lành trái tim 💊"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề Xuất Bài kiểm tra Tương tự",
+      "popularTestsTop5": "🔥 Top 5 Đề Xuất Bài kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

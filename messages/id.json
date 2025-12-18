@@ -4364,6 +4364,61 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2StressCareTest": {
+    "startMessage": {
+      "line1": "\"Apa yang paling membuat Anda kesulitan sekarang?\"",
+      "line2": "Mudah untuk berpikir bahwa itu hanya \"sibuk\" atau \"banyak pekerjaan\", tetapi penyebab stres yang sebenarnya tersembunyi jauh di dalam hati Anda.",
+      "line3": "Dari hati yang lelah dengan orang, kecemasan tentang masa depan yang tidak pasti, hingga perfeksionisme yang membatasi diri sendiri.",
+      "line4": "Kami menemukan akar penyebab yang menekan hati Anda dan memberikan resep yang disesuaikan untuk meringankan beban pikiran Anda.",
+      "line5": "Diagnosis kondisi stres saya 🩺 Mulai menyembuhkan hati saya 💊"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Penyebab Stres & Resep Kustom Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "symptoms": "Gejala Utama",
+      "prescription": "Resep Kustom",
+      "recommendedActivities": "Aktivitas yang Direkomendasikan"
+    },
+    "shareMessages": {
+      "default": "Penyebab stres saya adalah {type}! 🤯 Resep apa yang saya butuhkan sekarang?",
+      "kakao": "Penyebab stres saya adalah {type}! 🤯 Resep apa yang saya butuhkan sekarang?",
+      "wechat": "Penyebab stres saya adalah {type}! 🤯 Resep apa yang saya butuhkan sekarang?",
+      "whatsapp": "Penyebab stres saya adalah {type}! 🤯 Resep apa yang saya butuhkan sekarang?",
+      "telegram": "Penyebab stres saya adalah {type}! 🤯 Resep apa yang saya butuhkan sekarang?",
+      "line": "Penyebab stres saya adalah {type}! 🤯 Resep apa yang saya butuhkan sekarang?",
+      "startDefault": "Penyebab Stres & Resep Kustom Saya 🩺 Mulai menyembuhkan hati saya 💊",
+      "startKakao": "Penyebab Stres & Resep Kustom Saya 🩺 Mulai menyembuhkan hati saya 💊",
+      "startWechat": "Penyebab Stres & Resep Kustom Saya 🩺 Mulai menyembuhkan hati saya 💊",
+      "startWhatsapp": "Penyebab Stres & Resep Kustom Saya 🩺 Mulai menyembuhkan hati saya 💊",
+      "startTelegram": "Penyebab Stres & Resep Kustom Saya 🩺 Mulai menyembuhkan hati saya 💊",
+      "startLine": "Penyebab Stres & Resep Kustom Saya 🩺 Mulai menyembuhkan hati saya 💊"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Silakan tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

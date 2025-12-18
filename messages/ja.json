@@ -4352,6 +4352,61 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2StressCareTest": {
+    "startMessage": {
+      "line1": "「今あなたを最も苦しめているのは何ですか？」",
+      "line2": "単に「忙しいから」「仕事が多いから」と思いがちですが、ストレスの本当の原因は心の奥底に隠れています。",
+      "line3": "人に疲れた心、不確実な未来への不安、そして自分自身を縛る完璧主義まで。",
+      "line4": "あなたの心を圧迫する根本的な原因を見つけ、心の負担を軽くするカスタマイズされた処方箋を提供します。",
+      "line5": "私のストレス状態を診断する 🩺 心のヒーリングを始める 💊"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友人と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "やり直す",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私のストレス原因＆カスタム処方箋）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "symptoms": "主な症状",
+      "prescription": "カスタム処方箋",
+      "recommendedActivities": "おすすめ活動"
+    },
+    "shareMessages": {
+      "default": "私のストレス原因は{type}！ 🤯 今私に必要な処方箋は？",
+      "kakao": "私のストレス原因は{type}！ 🤯 今私に必要な処方箋は？",
+      "wechat": "私のストレス原因は{type}！ 🤯 今私に必要な処方箋は？",
+      "whatsapp": "私のストレス原因は{type}！ 🤯 今私に必要な処方箋は？",
+      "telegram": "私のストレス原因は{type}！ 🤯 今私に必要な処方箋は？",
+      "line": "私のストレス原因は{type}！ 🤯 今私に必要な処方箋は？",
+      "startDefault": "私のストレス原因＆カスタム処方箋 🩺 心のヒーリングを始める 💊",
+      "startKakao": "私のストレス原因＆カスタム処方箋 🩺 心のヒーリングを始める 💊",
+      "startWechat": "私のスト레ス原因＆カスタム処方箋 🩺 心のヒーリングを始める 💊",
+      "startWhatsapp": "私のストレス原因＆カスタム処方箋 🩺 心のヒーリングを始める 💊",
+      "startTelegram": "私のストレス原因＆カスタム処方箋 🩺 心のヒーリングを始める 💊",
+      "startLine": "私のストレス原因＆カスタム処方箋 🩺 心のヒーリングを始める 💊"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

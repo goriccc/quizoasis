@@ -4364,6 +4364,61 @@
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },
+  "phase2StressCareTest": {
+    "startMessage": {
+      "line1": "\"现在最让你困扰的是什么？\"",
+      "line2": "很容易认为只是\"太忙了\"或\"工作太多了\"，但压力的真正原因深藏在你的内心。",
+      "line3": "从对人心累，对不确定未来的焦虑，到束缚自己的完美主义。",
+      "line4": "我们找出压迫你内心的根本原因，并提供量身定制的处方来减轻你心灵的负担。",
+      "line5": "诊断我的压力状态 🩺 开始心灵治愈 💊"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "shareWithFriends": "与朋友一起尝试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（我的压力原因和定制处方）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "symptoms": "主要症状",
+      "prescription": "定制处方",
+      "recommendedActivities": "推荐活动"
+    },
+    "shareMessages": {
+      "default": "我的压力原因是{type}！ 🤯 我现在需要什么处方？",
+      "kakao": "我的压力原因是{type}！ 🤯 我现在需要什么处方？",
+      "wechat": "我的压力原因是{type}！ 🤯 我现在需要什么处方？",
+      "whatsapp": "我的压力原因是{type}！ 🤯 我现在需要什么处方？",
+      "telegram": "我的压力原因是{type}！ 🤯 我现在需要什么处方？",
+      "line": "我的压力原因是{type}！ 🤯 我现在需要什么处方？",
+      "startDefault": "我的压力原因和定制处方 🩺 开始心灵治愈 💊",
+      "startKakao": "我的压力原因和定制处方 🩺 开始心灵治愈 💊",
+      "startWechat": "我的压力原因和定制处方 🩺 开始心灵治愈 💊",
+      "startWhatsapp": "我的压力原因和定制处方 🩺 开始心灵治愈 💊",
+      "startTelegram": "我的压力原因和定制处方 🩺 开始心灵治愈 💊",
+      "startLine": "我的压力原因和定制处方 🩺 开始心灵治愈 💊"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

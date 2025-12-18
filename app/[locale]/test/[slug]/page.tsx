@@ -44,6 +44,7 @@ import { phase2DreamCarQuestions, phase2DreamCarResults } from '@/lib/phase2_dre
 import { phase2BodySignalQuestions, phase2BodySignalResults } from '@/lib/phase2_body_signal_data';
 import { phase2GreekGodQuestions, phase2GreekGodResults } from '@/lib/phase2_greek_god_data';
 import { phase2TeaTherapyQuestions, phase2TeaTherapyResults } from '@/lib/phase2_tea_therapy_data';
+import { phase2StressCareQuestions, phase2StressCareResults } from '@/lib/phase2_stress_care_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -184,6 +185,9 @@ const Phase2GreekGodTestClient = dynamic(() => import('@/components/Phase2GreekG
   ssr: false
 });
 const Phase2TeaTherapyTestClient = dynamic(() => import('@/components/Phase2TeaTherapyTestClient'), {
+  ssr: false
+});
+const Phase2StressCareTestClient = dynamic(() => import('@/components/Phase2StressCareTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2059,6 +2063,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2TeaTherapyQuestions}
           results={phase2TeaTherapyResults}
           questionCount={phase2TeaTherapyQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_stress_care_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_stress_care_test',
+      title: {
+        ko: "내 스트레스 원인 & 맞춤 처방",
+        en: "My Stress Cause & Custom Prescription",
+        ja: "私のストレス原因＆カスタム処方箋",
+        "zh-CN": "我的压力原因和定制处方",
+        "zh-TW": "我的壓力原因和定制處方",
+        vi: "Nguyên Nhân Căng Thẳng & Đơn Thuốc Tùy Chỉnh Của Tôi",
+        id: "Penyebab Stres & Resep Kustom Saya"
+      },
+      description: {
+        ko: "지금 당신을 가장 힘들게 하는 건 무엇인가요?",
+        en: "What is making you struggle the most right now?",
+        ja: "今あなたを最も苦しめているのは何ですか？",
+        "zh-CN": "现在最让你困扰的是什么？",
+        "zh-TW": "現在最讓你困擾的是什麼？",
+        vi: "Điều gì đang khiến bạn khó khăn nhất ngay bây giờ?",
+        id: "Apa yang paling membuat Anda kesulitan sekarang?"
+      },
+      thumbnail: 'phase2_test_133_stress_care.jpg',
+      type: 'psychology',
+      category: 'healing',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '힐링'],
+        en: ['Psychology', 'Healing'],
+        ja: ['心理', '癒し'],
+        "zh-CN": ['心理', '治愈'],
+        "zh-TW": ['心理', '治愈'],
+        vi: ['Tâm lý', 'Chữa lành'],
+        id: ['Psikologi', 'Penyembuhan']
+      }
+    };
+
+    return (
+      <>
+        <Phase2StressCareTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2StressCareQuestions}
+          results={phase2StressCareResults}
+          questionCount={phase2StressCareQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
