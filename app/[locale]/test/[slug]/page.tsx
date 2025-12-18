@@ -43,6 +43,7 @@ import { phase2ResilienceQuestions, phase2ResilienceResults } from '@/lib/phase2
 import { phase2DreamCarQuestions, phase2DreamCarResults } from '@/lib/phase2_dream_car_data';
 import { phase2BodySignalQuestions, phase2BodySignalResults } from '@/lib/phase2_body_signal_data';
 import { phase2GreekGodQuestions, phase2GreekGodResults } from '@/lib/phase2_greek_god_data';
+import { phase2TeaTherapyQuestions, phase2TeaTherapyResults } from '@/lib/phase2_tea_therapy_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -180,6 +181,9 @@ const Phase2BodySignalTestClient = dynamic(() => import('@/components/Phase2Body
   ssr: false
 });
 const Phase2GreekGodTestClient = dynamic(() => import('@/components/Phase2GreekGodTestClient'), {
+  ssr: false
+});
+const Phase2TeaTherapyTestClient = dynamic(() => import('@/components/Phase2TeaTherapyTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2002,6 +2006,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2GreekGodQuestions}
           results={phase2GreekGodResults}
           questionCount={phase2GreekGodQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_tea_therapy_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_tea_therapy_test',
+      title: {
+        ko: "내 성격에 맞는 '힐링 티(Tea)' 찾기",
+        en: "Find the 'Healing Tea(Tea)' That Suits My Personality",
+        ja: "私の性格に合う「癒しのティー（Tea）」を見つける",
+        "zh-CN": "找到适合我性格的'治愈茶'",
+        "zh-TW": "找到適合我性格的'治癒茶'",
+        vi: "Tìm 'Trà Chữa Lành' Phù Hợp Với Tính Cách Của Tôi",
+        id: "Temukan 'Teh Penyembuhan' yang Cocok dengan Kepribadian Saya"
+      },
+      description: {
+        ko: "복잡한 하루, 당신에게 필요한 쉼표는?",
+        en: "A complex day, what pause do you need?",
+        ja: "複雑な一日、あなたに必要な休止符は？",
+        "zh-CN": "复杂的一天，你需要什么停顿？",
+        "zh-TW": "複雜的一天，你需要什麼停頓？",
+        vi: "Một ngày phức tạp, bạn cần khoảng dừng nào?",
+        id: "Hari yang kompleks, jeda apa yang Anda butuhkan?"
+      },
+      thumbnail: 'phase2_test_036_tea_therapy.jpg',
+      type: 'healing',
+      category: 'lifestyle',
+      play_count: 0,
+      tags: {
+        ko: ['힐링'],
+        en: ['Healing'],
+        ja: ['癒し'],
+        "zh-CN": ['治愈'],
+        "zh-TW": ['治愈'],
+        vi: ['Chữa lành'],
+        id: ['Penyembuhan']
+      }
+    };
+
+    return (
+      <>
+        <Phase2TeaTherapyTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2TeaTherapyQuestions}
+          results={phase2TeaTherapyResults}
+          questionCount={phase2TeaTherapyQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

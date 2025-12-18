@@ -4309,6 +4309,61 @@
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },
+  "phase2TeaTherapyTest": {
+    "startMessage": {
+      "line1": "\"复杂的一天，你需要什么停顿？\"",
+      "line2": "一杯温茶带来的安慰。",
+      "line3": "从提神醒脑的绿茶到安抚心灵的草本茶。",
+      "line4": "你知道吗，根据你的性格和当前的心理状态，最完美的'人生茶'会有所不同？",
+      "line5": "邀请您享受芳香茶时光。分析我的茶偏好 🍵"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "shareWithFriends": "与朋友一起尝试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（找到适合我性格的治愈茶）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "recommendedTeas": "推荐茶",
+      "effects": "功效",
+      "teaFoods": "搭配茶点"
+    },
+    "shareMessages": {
+      "default": "我需要的治愈茶是{type}！ 🍵 需要心灵平静吗？",
+      "kakao": "我需要的治愈茶是{type}！ 🍵 需要心灵平静吗？",
+      "wechat": "我需要的治愈茶是{type}！ 🍵 需要心灵平静吗？",
+      "whatsapp": "我需要的治愈茶是{type}！ 🍵 需要心灵平静吗？",
+      "telegram": "我需要的治愈茶是{type}！ 🍵 需要心灵平静吗？",
+      "line": "我需要的治愈茶是{type}！ 🍵 需要心灵平静吗？",
+      "startDefault": "找到适合我性格的''治愈茶(Tea)'' 🍵 分析我的茶偏好",
+      "startKakao": "找到适合我性格的''治愈茶(Tea)'' 🍵 分析我的茶偏好",
+      "startWechat": "找到适合我性格的''治愈茶(Tea)'' 🍵 分析我的茶偏好",
+      "startWhatsapp": "找到适合我性格的''治愈茶(Tea)'' 🍵 分析我的茶偏好",
+      "startTelegram": "找到适合我性格的''治愈茶(Tea)'' 🍵 分析我的茶偏好",
+      "startLine": "找到适合我性格的''治愈茶(Tea)'' 🍵 分析我的茶偏好"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

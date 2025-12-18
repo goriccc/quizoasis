@@ -4309,6 +4309,61 @@
       "popularTestsTop5": "🔥 Top 5 Đề Xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2TeaTherapyTest": {
+    "startMessage": {
+      "line1": "\"Một ngày phức tạp, bạn cần khoảng dừng nào?\"",
+      "line2": "Có sự an ủi trong một tách trà ấm.",
+      "line3": "Từ trà xanh làm tỉnh táo đầu óc đến trà thảo mộc xoa dịu tâm hồn.",
+      "line4": "Bạn có biết rằng 'trà của cuộc đời' hoàn hảo nhất thay đổi tùy theo tính cách và trạng thái tâm trí hiện tại của bạn không?",
+      "line5": "Mời bạn đến với thời gian trà thơm ngát. Phân tích sở thích trà của riêng tôi 🍵"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "goToTest": "Đi đến bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tìm Trà Chữa Lành Phù Hợp Với Tính Cách Của Tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài kiểm tra tương tự",
+      "recommendedTeas": "Trà được đề xuất",
+      "effects": "Hiệu quả",
+      "teaFoods": "Đồ ăn kèm trà"
+    },
+    "shareMessages": {
+      "default": "Trà chữa lành tôi cần là {type}! 🍵 Cần sự bình yên tâm hồn?",
+      "kakao": "Trà chữa lành tôi cần là {type}! 🍵 Cần sự bình yên tâm hồn?",
+      "wechat": "Trà chữa lành tôi cần là {type}! 🍵 Cần sự bình yên tâm hồn?",
+      "whatsapp": "Trà chữa lành tôi cần là {type}! 🍵 Cần sự bình yên tâm hồn?",
+      "telegram": "Trà chữa lành tôi cần là {type}! 🍵 Cần sự bình yên tâm hồn?",
+      "line": "Trà chữa lành tôi cần là {type}! 🍵 Cần sự bình yên tâm hồn?",
+      "startDefault": "Tìm ''Trà Chữa Lành(Tea)'' Phù Hợp Với Tính Cách Của Tôi 🍵 Phân tích sở thích trà của riêng tôi",
+      "startKakao": "Tìm ''Trà Chữa Lành(Tea)'' Phù Hợp Với Tính Cách Của Tôi 🍵 Phân tích sở thích trà của riêng tôi",
+      "startWechat": "Tìm ''Trà Chữa Lành(Tea)'' Phù Hợp Với Tính Cách Của Tôi 🍵 Phân tích sở thích trà của riêng tôi",
+      "startWhatsapp": "Tìm ''Trà Chữa Lành(Tea)'' Phù Hợp Với Tính Cách Của Tôi 🍵 Phân tích sở thích trà của riêng tôi",
+      "startTelegram": "Tìm ''Trà Chữa Lành(Tea)'' Phù Hợp Với Tính Cách Của Tôi 🍵 Phân tích sở thích trà của riêng tôi",
+      "startLine": "Tìm ''Trà Chữa Lành(Tea)'' Phù Hợp Với Tính Cách Của Tôi 🍵 Phân tích sở thích trà của riêng tôi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề Xuất Bài kiểm tra Tương tự",
+      "popularTestsTop5": "🔥 Top 5 Đề Xuất Bài kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

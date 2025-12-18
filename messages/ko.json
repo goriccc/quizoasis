@@ -959,6 +959,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2TeaTherapyTest": {
+    "startMessage": {
+      "line1": "\"복잡한 하루, 당신에게 필요한 쉼표는?\"",
+      "line2": "따뜻한 차 한 잔이 주는 위로가 있습니다.",
+      "line3": "머리를 맑게 하는 녹차부터 마음을 달래주는 허브티까지.",
+      "line4": "당신의 성격과 현재 마음 상태에 따라 가장 완벽한 '인생 차'가 달라진다는 사실, 알고 계셨나요?",
+      "line5": "향기로운 티타임으로 초대합니다. 나만의 티 취향 분석하기 🍵"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (내 성격에 맞는 힐링 티 찾기)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "recommendedTeas": "추천 차",
+      "effects": "효능",
+      "teaFoods": "어울리는 티푸드"
+    },
+    "shareMessages": {
+      "default": "나에게 필요한 힐링 티는 {type}! 🍵 마음의 안정이 필요하다면?",
+      "kakao": "나에게 필요한 힐링 티는 {type}! 🍵 마음의 안정이 필요하다면?",
+      "wechat": "나에게 필요한 힐링 티는 {type}! 🍵 마음의 안정이 필요하다면?",
+      "whatsapp": "나에게 필요한 힐링 티는 {type}! 🍵 마음의 안정이 필요하다면?",
+      "telegram": "나에게 필요한 힐링 티는 {type}! 🍵 마음의 안정이 필요하다면?",
+      "line": "나에게 필요한 힐링 티는 {type}! 🍵 마음의 안정이 필요하다면?",
+      "startDefault": "내 성격에 맞는 '힐링 티(Tea)' 찾기 🍵 나만의 티 취향 분석하기",
+      "startKakao": "내 성격에 맞는 '힐링 티(Tea)' 찾기 🍵 나만의 티 취향 분석하기",
+      "startWechat": "내 성격에 맞는 '힐링 티(Tea)' 찾기 🍵 나만의 티 취향 분석하기",
+      "startWhatsapp": "내 성격에 맞는 '힐링 티(Tea)' 찾기 🍵 나만의 티 취향 분석하기",
+      "startTelegram": "내 성격에 맞는 '힐링 티(Tea)' 찾기 🍵 나만의 티 취향 분석하기",
+      "startLine": "내 성격에 맞는 '힐링 티(Tea)' 찾기 🍵 나만의 티 취향 분석하기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! 위챗에 붙여넣어 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"남들에게는 없는 특별한 힘이 나에게 있다면?\"",

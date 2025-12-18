@@ -4297,6 +4297,61 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2TeaTherapyTest": {
+    "startMessage": {
+      "line1": "「複雑な一日、あなたに必要な休止符は？」",
+      "line2": "温かいお茶一杯がもたらす慰めがあります。",
+      "line3": "頭をすっきりさせる緑茶から心を癒すハーブティーまで。",
+      "line4": "あなたの性格と現在の心の状態によって、最も完璧な「人生のお茶」が変わるという事実、ご存知でしたか？",
+      "line5": "香り高いティータイムへご招待します。私だけのティーの好みを分析する 🍵"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友人と一緒にやってみる",
+      "shareResultWithFriends": "結果を友人と共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "やり直す",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の性格に合う癒しのティーを見つける）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "recommendedTeas": "おすすめのティー",
+      "effects": "効果",
+      "teaFoods": "合うティーフード"
+    },
+    "shareMessages": {
+      "default": "私に必要な癒しのティーは{type}！ 🍵 心の安定が必要なら？",
+      "kakao": "私に必要な癒しのティーは{type}！ 🍵 心の安定が必要なら？",
+      "wechat": "私に必要な癒しのティーは{type}！ 🍵 心の安定が必要なら？",
+      "whatsapp": "私に必要な癒しのティーは{type}！ 🍵 心の安定が必要なら？",
+      "telegram": "私に必要な癒しのティーは{type}！ 🍵 心の安定が必要なら？",
+      "line": "私に必要な癒しのティーは{type}！ 🍵 心の安定が必要なら？",
+      "startDefault": "私の性格に合う「癒しのティー（Tea）」を見つける 🍵 私だけのティーの好みを分析する",
+      "startKakao": "私の性格に合う「癒しのティー（Tea）」を見つける 🍵 私だけのティーの好みを分析する",
+      "startWechat": "私の性格に合う「癒しのティー（Tea）」を見つける 🍵 私だけのティーの好みを分析する",
+      "startWhatsapp": "私の性格に合う「癒しのティー（Tea）」を見つける 🍵 私だけのティーの好みを分析する",
+      "startTelegram": "私の性格に合う「癒しのティー（Tea）」を見つける 🍵 私だけのティーの好みを分析する",
+      "startLine": "私の性格に合う「癒しのティー（Tea）」を見つける 🍵 私だけのティーの好みを分析する"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

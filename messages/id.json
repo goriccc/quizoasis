@@ -4309,6 +4309,61 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2TeaTherapyTest": {
+    "startMessage": {
+      "line1": "\"Hari yang kompleks, jeda apa yang Anda butuhkan?\"",
+      "line2": "Ada kenyamanan dalam secangkir teh hangat.",
+      "line3": "Dari teh hijau yang menyegarkan kepala hingga teh herbal yang menenangkan hati.",
+      "line4": "Tahukah Anda bahwa 'teh kehidupan' yang paling sempurna berbeda tergantung pada kepribadian dan keadaan pikiran Anda saat ini?",
+      "line5": "Kami mengundang Anda ke waktu teh yang harum. Analisis preferensi teh saya 🍵"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Teh Penyembuhan yang Cocok dengan Kepribadian Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "recommendedTeas": "Teh yang Direkomendasikan",
+      "effects": "Efek",
+      "teaFoods": "Makanan Pendamping Teh"
+    },
+    "shareMessages": {
+      "default": "Teh penyembuhan yang saya butuhkan adalah {type}! 🍵 Butuh ketenangan pikiran?",
+      "kakao": "Teh penyembuhan yang saya butuhkan adalah {type}! 🍵 Butuh ketenangan pikiran?",
+      "wechat": "Teh penyembuhan yang saya butuhkan adalah {type}! 🍵 Butuh ketenangan pikiran?",
+      "whatsapp": "Teh penyembuhan yang saya butuhkan adalah {type}! 🍵 Butuh ketenangan pikiran?",
+      "telegram": "Teh penyembuhan yang saya butuhkan adalah {type}! 🍵 Butuh ketenangan pikiran?",
+      "line": "Teh penyembuhan yang saya butuhkan adalah {type}! 🍵 Butuh ketenangan pikiran?",
+      "startDefault": "Temukan ''Teh Penyembuhan(Tea)'' yang Cocok dengan Kepribadian Saya 🍵 Analisis preferensi teh saya",
+      "startKakao": "Temukan ''Teh Penyembuhan(Tea)'' yang Cocok dengan Kepribadian Saya 🍵 Analisis preferensi teh saya",
+      "startWechat": "Temukan ''Teh Penyembuhan(Tea)'' yang Cocok dengan Kepribadian Saya 🍵 Analisis preferensi teh saya",
+      "startWhatsapp": "Temukan ''Teh Penyembuhan(Tea)'' yang Cocok dengan Kepribadian Saya 🍵 Analisis preferensi teh saya",
+      "startTelegram": "Temukan ''Teh Penyembuhan(Tea)'' yang Cocok dengan Kepribadian Saya 🍵 Analisis preferensi teh saya",
+      "startLine": "Temukan ''Teh Penyembuhan(Tea)'' yang Cocok dengan Kepribadian Saya 🍵 Analisis preferensi teh saya"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Silakan tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

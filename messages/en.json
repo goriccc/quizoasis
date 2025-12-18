@@ -4471,6 +4471,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2TeaTherapyTest": {
+    "startMessage": {
+      "line1": "\"A complex day, what pause do you need?\"",
+      "line2": "There is comfort in a warm cup of tea.",
+      "line3": "From green tea that clears the head to herbal tea that soothes the heart.",
+      "line4": "Did you know that the perfect 'tea of your life' changes depending on your personality and current state of mind?",
+      "line5": "We invite you to an aromatic tea time. Analyze my tea preferences 🍵"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find the Healing Tea That Suits My Personality)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "recommendedTeas": "Recommended Teas",
+      "effects": "Effects",
+      "teaFoods": "Tea Foods"
+    },
+    "shareMessages": {
+      "default": "The healing tea I need is {type}! 🍵 Need peace of mind?",
+      "kakao": "The healing tea I need is {type}! 🍵 Need peace of mind?",
+      "wechat": "The healing tea I need is {type}! 🍵 Need peace of mind?",
+      "whatsapp": "The healing tea I need is {type}! 🍵 Need peace of mind?",
+      "telegram": "The healing tea I need is {type}! 🍵 Need peace of mind?",
+      "line": "The healing tea I need is {type}! 🍵 Need peace of mind?",
+      "startDefault": "Find the ''Healing Tea(Tea)'' That Suits My Personality 🍵 Analyze my tea preferences",
+      "startKakao": "Find the ''Healing Tea(Tea)'' That Suits My Personality 🍵 Analyze my tea preferences",
+      "startWechat": "Find the ''Healing Tea(Tea)'' That Suits My Personality 🍵 Analyze my tea preferences",
+      "startWhatsapp": "Find the ''Healing Tea(Tea)'' That Suits My Personality 🍵 Analyze my tea preferences",
+      "startTelegram": "Find the ''Healing Tea(Tea)'' That Suits My Personality 🍵 Analyze my tea preferences",
+      "startLine": "Find the ''Healing Tea(Tea)'' That Suits My Personality 🍵 Analyze my tea preferences"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"How flexible is your brain?\"",
