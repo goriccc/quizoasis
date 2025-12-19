@@ -4528,6 +4528,58 @@
       "popularTestsTop5": "🔥 Top 5 Bài Kiểm Tra Phổ Biến Đề Xuất"
     }
   },
+  "phase2DarkSideTest": {
+    "startMessage": {
+      "line1": "\"Mỗi người đều nuôi một con quỷ trong lòng.\"",
+      "line2": "Bạn trông như một người tốt có thể sống mà không cần luật pháp.",
+      "line3": "Nhưng khoảnh khắc sự kiên nhẫn của bạn đạt đến giới hạn, bạn sẽ biến thành hình dạng nào?",
+      "line4": "Phù thủy băng giá lạnh lùng? Kẻ hủy diệt đốt cháy mọi thứ? Hay một joker cười khi trả thù?",
+      "line5": "Chúng tôi phân tích 'kiểu biến đổi tối tăm' được niêm phong sâu trong tiềm thức của bạn. Kiểm tra bản chất ẩn giấu của tôi 👿 Chế độ tối ON 🖤"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Kiểu Tối",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài Kiểm Tra Khác",
+      "goToTest": "Làm Bài Kiểm Tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Nếu tôi trở nên tối tăm? Kiểm tra Bản chất Ẩn giấu)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài Kiểm Tra Tương tự",
+      "darkStyle": "Phong cách Tối",
+      "dangerLevel": "Mức độ Nguy hiểm",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tồi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Kẻ phản diện ẩn giấu trong tôi là {type}! 😈 Nếu bạn làm tôi tức giận... bạn biết đấy?",
+      "kakao": "Kẻ phản diện ẩn giấu trong tôi là {type}! 😈 Nếu bạn làm tôi tức giận... bạn biết đấy?",
+      "wechat": "Kẻ phản diện ẩn giấu trong tôi là {type}! 😈 Nếu bạn làm tôi tức giận... bạn biết đấy?",
+      "whatsapp": "Kẻ phản diện ẩn giấu trong tôi là {type}! 😈 Nếu bạn làm tôi tức giận... bạn biết đấy?",
+      "telegram": "Kẻ phản diện ẩn giấu trong tôi là {type}! 😈 Nếu bạn làm tôi tức giận... bạn biết đấy?",
+      "line": "Kẻ phản diện ẩn giấu trong tôi là {type}! 😈 Nếu bạn làm tôi tức giận... bạn biết đấy?",
+      "startDefault": "Nếu tôi trở nên tối tăm? Kiểm tra Bản chất Ẩn giấu 👿 Chế độ tối ON 🖤",
+      "startKakao": "Nếu tôi trở nên tối tăm? Kiểm tra Bản chất Ẩn giấu 👿 Chế độ tối ON 🖤",
+      "startWechat": "Nếu tôi trở nên tối tăm? Kiểm tra Bản chất Ẩn giấu 👿 Chế độ tối ON 🖤",
+      "startWhatsapp": "Nếu tôi trở nên tối tăm? Kiểm tra Bản chất Ẩn giấu 👿 Chế độ tối ON 🖤",
+      "startTelegram": "Nếu tôi trở nên tối tăm? Kiểm tra Bản chất Ẩn giấu 👿 Chế độ tối ON 🖤",
+      "startLine": "Nếu tôi trở nên tối tăm? Kiểm tra Bản chất Ẩn giấu 👿 Chế độ tối ON 🖤"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

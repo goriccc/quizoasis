@@ -4528,6 +4528,58 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
     }
   },
+  "phase2DarkSideTest": {
+    "startMessage": {
+      "line1": "\"Setiap orang memelihara satu setan di hatinya.\"",
+      "line2": "Anda tampak seperti orang baik yang bisa hidup tanpa hukum.",
+      "line3": "Tetapi saat kesabaran Anda mencapai batasnya, bentuk apa yang akan Anda ambil?",
+      "line4": "Penyihir es yang membeku dingin? Penghancur yang membakar segalanya? Atau joker yang tersenyum sambil membalas dendam?",
+      "line5": "Kami menganalisis 'tipe transformasi gelap' yang tersegel jauh di alam bawah sadar Anda. Periksa sifat tersembunyi saya 👿 Mode gelap ON 🖤"
+    },
+    "ui": {
+      "startTest": "Periksa Tipe Gelap",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Bagaimana jika saya berubah menjadi gelap? Tes Sifat Tersembunyi)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "darkStyle": "Gaya Gelap",
+      "dangerLevel": "Tingkat Bahaya",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Penjahat yang tersembunyi di dalam diriku adalah {type}! 😈 Jika kamu membuatku marah... kamu tahu?",
+      "kakao": "Penjahat yang tersembunyi di dalam diriku adalah {type}! 😈 Jika kamu membuatku marah... kamu tahu?",
+      "wechat": "Penjahat yang tersembunyi di dalam diriku adalah {type}! 😈 Jika kamu membuatku marah... kamu tahu?",
+      "whatsapp": "Penjahat yang tersembunyi di dalam diriku adalah {type}! 😈 Jika kamu membuatku marah... kamu tahu?",
+      "telegram": "Penjahat yang tersembunyi di dalam diriku adalah {type}! 😈 Jika kamu membuatku marah... kamu tahu?",
+      "line": "Penjahat yang tersembunyi di dalam diriku adalah {type}! 😈 Jika kamu membuatku marah... kamu tahu?",
+      "startDefault": "Bagaimana jika saya berubah menjadi gelap? Tes Sifat Tersembunyi 👿 Mode gelap ON 🖤",
+      "startKakao": "Bagaimana jika saya berubah menjadi gelap? Tes Sifat Tersembunyi 👿 Mode gelap ON 🖤",
+      "startWechat": "Bagaimana jika saya berubah menjadi gelap? Tes Sifat Tersembunyi 👿 Mode gelap ON 🖤",
+      "startWhatsapp": "Bagaimana jika saya berubah menjadi gelap? Tes Sifat Tersembunyi 👿 Mode gelap ON 🖤",
+      "startTelegram": "Bagaimana jika saya berubah menjadi gelap? Tes Sifat Tersembunyi 👿 Mode gelap ON 🖤",
+      "startLine": "Bagaimana jika saya berubah menjadi gelap? Tes Sifat Tersembunyi 👿 Mode gelap ON 🖤"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

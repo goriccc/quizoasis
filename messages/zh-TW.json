@@ -4535,6 +4535,58 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
     }
   },
+  "phase2DarkSideTest": {
+    "startMessage": {
+      "line1": "\"每個人心中都養著一個惡魔。\"",
+      "line2": "平時看起來即使沒有法律也能生活的善良的你。",
+      "line3": "但是當你的耐心達到極限的那一刻，你會變成什麼樣子？",
+      "line4": "冰冷凍結的冰之魔女？燒毀一切的破壞者？還是笑著復仇的小丑？",
+      "line5": "我們分析你潛意識深處被封印的「黑化類型」。確認我的隱藏本性 👿 黑化模式 ON 🖤"
+    },
+    "ui": {
+      "startTest": "確認黑化類型",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "進行測試",
+      "adsenseTitle": "AdSense廣告區域 (如果我黑化會怎樣？隱藏本性測試)",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "darkStyle": "黑化風格",
+      "dangerLevel": "危險度",
+      "goodMatch": "完美配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我內心隱藏的反派是 {type}！ 😈 如果你讓我生氣... 你知道的？",
+      "kakao": "我內心隱藏的反派是 {type}！ 😈 如果你讓我生氣... 你知道的？",
+      "wechat": "我內心隱藏的反派是 {type}！ 😈 如果你讓我生氣... 你知道的？",
+      "whatsapp": "我內心隱藏的反派是 {type}！ 😈 如果你讓我生氣... 你知道的？",
+      "telegram": "我內心隱藏的反派是 {type}！ 😈 如果你讓我生氣... 你知道的？",
+      "line": "我內心隱藏的反派是 {type}！ 😈 如果你讓我生氣... 你知道的？",
+      "startDefault": "如果我黑化會怎樣？隱藏本性測試 👿 黑化模式 ON 🖤",
+      "startKakao": "如果我黑化會怎樣？隱藏本性測試 👿 黑化模式 ON 🖤",
+      "startWechat": "如果我黑化會怎樣？隱藏本性測試 👿 黑化模式 ON 🖤",
+      "startWhatsapp": "如果我黑化會怎樣？隱藏本性測試 👿 黑化模式 ON 🖤",
+      "startTelegram": "如果我黑化會怎樣？隱藏本性測試 👿 黑化模式 ON 🖤",
+      "startLine": "如果我黑化會怎樣？隱藏本性測試 👿 黑化模式 ON 🖤"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！貼上到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大腦有多靈活？\"",

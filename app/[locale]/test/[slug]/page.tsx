@@ -47,6 +47,7 @@ import { phase2TeaTherapyQuestions, phase2TeaTherapyResults } from '@/lib/phase2
 import { phase2StressCareQuestions, phase2StressCareResults } from '@/lib/phase2_stress_care_data';
 import { phase2ConflictReasonQuestions, phase2ConflictReasonResults } from '@/lib/phase2_conflict_reason_data';
 import { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } from '@/lib/phase2_reincarnation_animal_data';
+import { phase2DarkSideQuestions, phase2DarkSideResults } from '@/lib/phase2_dark_side_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -196,6 +197,9 @@ const Phase2ConflictReasonTestClient = dynamic(() => import('@/components/Phase2
   ssr: false
 });
 const Phase2ReincarnationAnimalTestClient = dynamic(() => import('@/components/Phase2ReincarnationAnimalTestClient'), {
+  ssr: false
+});
+const Phase2DarkSideTestClient = dynamic(() => import('@/components/Phase2DarkSideTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1708,6 +1712,60 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
+  // 내가 흑화하면? 숨겨진 본성 테스트
+  if (slug === 'phase2_dark_side_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_dark_side_test',
+      title: {
+        ko: '내가 흑화하면? 숨겨진 본성 테스트',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '누구나 마음속에 악마 하나쯤은 키우고 있다.',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_144_dark_side.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격', '재미'],
+        en: ['Psychology', 'Personality', 'Fun'],
+        ja: ['心理', '性格', '面白い'],
+        'zh-CN': ['心理', '性格', '有趣'],
+        'zh-TW': ['心理', '性格', '有趣'],
+        vi: ['Tâm lý', 'Tính cách', 'Vui vẻ'],
+        id: ['Psikologi', 'Kepribadian', 'Menyenangkan']
+      }
+    };
+
+    return (
+      <>
+        <Phase2DarkSideTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2DarkSideQuestions}
+          results={phase2DarkSideResults}
+          questionCount={phase2DarkSideQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
   if (slug === 'phase2_impulse_buying_test') {
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_impulse_buying_test',
@@ -2285,6 +2343,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2ReincarnationAnimalQuestions}
           results={phase2ReincarnationAnimalResults}
           questionCount={phase2ReincarnationAnimalQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 내가 흑화하면? 숨겨진 본성 테스트
+  if (slug === 'phase2_dark_side_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_dark_side_test',
+      title: {
+        ko: '내가 흑화하면? 숨겨진 본성 테스트',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '누구나 마음속에 악마 하나쯤은 키우고 있다.',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_144_dark_side.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격', '재미'],
+        en: ['Psychology', 'Personality', 'Fun'],
+        ja: ['心理', '性格', '面白い'],
+        'zh-CN': ['心理', '性格', '有趣'],
+        'zh-TW': ['心理', '性格', '有趣'],
+        vi: ['Tâm lý', 'Tính cách', 'Vui vẻ'],
+        id: ['Psikologi', 'Kepribadian', 'Menyenangkan']
+      }
+    };
+
+    return (
+      <>
+        <Phase2DarkSideTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2DarkSideQuestions}
+          results={phase2DarkSideResults}
+          questionCount={phase2DarkSideQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5043,6 +5155,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2ReincarnationAnimalQuestions,
       results: phase2ReincarnationAnimalResults
     };
+  } else if (slug === 'phase2_dark_side_test') {
+    testData = {
+      questions: phase2DarkSideQuestions,
+      results: phase2DarkSideResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -5247,6 +5364,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_self-esteem-test') TestClient = Phase2SelfEsteemTestClient;
     else if (slug === 'phase2_mental-age-test') TestClient = Phase2MentalAgeTestClient;
     else if (slug === 'phase2_reincarnation_animal_test') TestClient = Phase2ReincarnationAnimalTestClient;
+    else if (slug === 'phase2_dark_side_test') TestClient = Phase2DarkSideTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

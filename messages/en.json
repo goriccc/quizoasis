@@ -1688,6 +1688,58 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2DarkSideTest": {
+    "startMessage": {
+      "line1": "\"Everyone keeps a devil in their heart.\"",
+      "line2": "You seem like a good person who would live without laws.",
+      "line3": "But the moment your patience reaches its limit, what form will you take?",
+      "line4": "An ice witch who freezes cold? A destroyer who burns everything? Or a joker who smiles while taking revenge?",
+      "line5": "We analyze the 'dark transformation type' sealed deep in your unconscious. Check my hidden nature 👿 Dark mode ON 🖤"
+    },
+    "ui": {
+      "startTest": "Check Dark Type",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Take Test",
+      "adsenseTitle": "AdSense Ad Area (What if I turn dark? Hidden Nature Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "darkStyle": "Dark Style",
+      "dangerLevel": "Danger Level",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "The villain hidden inside me is {type}! 😈 If you make me angry... you know?",
+      "kakao": "The villain hidden inside me is {type}! 😈 If you make me angry... you know?",
+      "wechat": "The villain hidden inside me is {type}! 😈 If you make me angry... you know?",
+      "whatsapp": "The villain hidden inside me is {type}! 😈 If you make me angry... you know?",
+      "telegram": "The villain hidden inside me is {type}! 😈 If you make me angry... you know?",
+      "line": "The villain hidden inside me is {type}! 😈 If you make me angry... you know?",
+      "startDefault": "What if I turn dark? Hidden Nature Test 👿 Dark mode ON 🖤",
+      "startKakao": "What if I turn dark? Hidden Nature Test 👿 Dark mode ON 🖤",
+      "startWechat": "What if I turn dark? Hidden Nature Test 👿 Dark mode ON 🖤",
+      "startWhatsapp": "What if I turn dark? Hidden Nature Test 👿 Dark mode ON 🖤",
+      "startTelegram": "What if I turn dark? Hidden Nature Test 👿 Dark mode ON 🖤",
+      "startLine": "What if I turn dark? Hidden Nature Test 👿 Dark mode ON 🖤"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"What special power would I have that others don't?\"",
