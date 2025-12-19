@@ -4461,6 +4461,61 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2ReincarnationAnimalTest": {
+    "startMessage": {
+      "line1": "\"現世に疲れたあなた、次の生はどんな姿でしょうか？\"",
+      "line2": "もし人間ではなく動物として生まれ変わるなら、あなたは広い草原を駆け抜けるライオンでしょうか？",
+      "line3": "それとも温かい日差しの下で昼寝をする猫でしょうか？",
+      "line4": "あなたの性格と本能を分析して、魂の相棒動物（スピリットアニマル）を見つけます。",
+      "line5": "次の生の私の姿をプレビュー 🐾 私の動物タイプを確認 🦁🐱"
+    },
+    "ui": {
+      "startTest": "動物タイプを確認",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私が生まれ変わるならどんな動物？）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "personalityKeywords": "性格キーワード",
+      "goodMatch": "相性の良い友達",
+      "badMatch": "相性の悪い友達"
+    },
+    "shareMessages": {
+      "default": "私の前世はもしかして{type}？ 🐾 次の生に生まれる動物を確認してみてください！",
+      "kakao": "私の前世はもしかして{type}？ 🐾 次の生に生まれる動物を確認してみてください！",
+      "wechat": "私の前世はもしかして{type}？ 🐾 次の生に生まれる動物を確認してみてください！",
+      "whatsapp": "私の前世はもしかして{type}？ 🐾 次の生に生まれる動物を確認してみてください！",
+      "telegram": "私の前世はもしかして{type}？ 🐾 次の生に生まれる動物を確認してみてください！",
+      "line": "私の前世はもしかして{type}？ 🐾 次の生に生まれる動物を確認してみてください！",
+      "startDefault": "私が生まれ変わるならどんな動物？ 🐾 私の動物タイプを確認 🦁🐱",
+      "startKakao": "私が生まれ変わるならどんな動物？ 🐾 私の動物タイプを確認 🦁🐱",
+      "startWechat": "私が生まれ変わるならどんな動物？ 🐾 私の動物タイプを確認 🦁🐱",
+      "startWhatsapp": "私が生まれ変わるならどんな動物？ 🐾 私の動物タイプを確認 🦁🐱",
+      "startTelegram": "私が生まれ変わるならどんな動物？ 🐾 私の動物タイプを確認 🦁🐱",
+      "startLine": "私が生まれ変わるならどんな動物？ 🐾 私の動物タイプを確認 🦁🐱"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

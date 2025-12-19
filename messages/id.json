@@ -4473,6 +4473,61 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
     }
   },
+  "phase2ReincarnationAnimalTest": {
+    "startMessage": {
+      "line1": "\"Lelah dengan kehidupan ini, bagaimana kehidupan berikutnya?\"",
+      "line2": "Jika Anda terlahir kembali sebagai hewan alih-alih manusia, apakah Anda akan menjadi singa yang berlari di padang rumput yang luas?",
+      "line3": "Atau kucing yang tidur siang di bawah sinar matahari yang hangat?",
+      "line4": "Kami menganalisis kepribadian dan naluri Anda untuk menemukan hewan jiwa (Spirit Animal) Anda.",
+      "line5": "Pratinjau bentuk saya di kehidupan berikutnya 🐾 Periksa jenis hewan saya 🦁🐱"
+    },
+    "ui": {
+      "startTest": "Periksa Jenis Hewan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Hewan apa yang akan saya jadikan jika reinkarnasi?)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "personalityKeywords": "Kata Kunci Kepribadian",
+      "goodMatch": "Cocok",
+      "badMatch": "Tidak Cocok"
+    },
+    "shareMessages": {
+      "default": "Kehidupan sebelumnya saya mungkin {type}? 🐾 Periksa hewan apa yang akan Anda lahirkan di kehidupan berikutnya!",
+      "kakao": "Kehidupan sebelumnya saya mungkin {type}? 🐾 Periksa hewan apa yang akan Anda lahirkan di kehidupan berikutnya!",
+      "wechat": "Kehidupan sebelumnya saya mungkin {type}? 🐾 Periksa hewan apa yang akan Anda lahirkan di kehidupan berikutnya!",
+      "whatsapp": "Kehidupan sebelumnya saya mungkin {type}? 🐾 Periksa hewan apa yang akan Anda lahirkan di kehidupan berikutnya!",
+      "telegram": "Kehidupan sebelumnya saya mungkin {type}? 🐾 Periksa hewan apa yang akan Anda lahirkan di kehidupan berikutnya!",
+      "line": "Kehidupan sebelumnya saya mungkin {type}? 🐾 Periksa hewan apa yang akan Anda lahirkan di kehidupan berikutnya!",
+      "startDefault": "Hewan apa yang akan saya jadikan jika reinkarnasi? 🐾 Periksa jenis hewan saya 🦁🐱",
+      "startKakao": "Hewan apa yang akan saya jadikan jika reinkarnasi? 🐾 Periksa jenis hewan saya 🦁🐱",
+      "startWechat": "Hewan apa yang akan saya jadikan jika reinkarnasi? 🐾 Periksa jenis hewan saya 🦁🐱",
+      "startWhatsapp": "Hewan apa yang akan saya jadikan jika reinkarnasi? 🐾 Periksa jenis hewan saya 🦁🐱",
+      "startTelegram": "Hewan apa yang akan saya jadikan jika reinkarnasi? 🐾 Periksa jenis hewan saya 🦁🐱",
+      "startLine": "Hewan apa yang akan saya jadikan jika reinkarnasi? 🐾 Periksa jenis hewan saya 🦁🐱"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

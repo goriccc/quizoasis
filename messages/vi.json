@@ -4473,6 +4473,61 @@
       "popularTestsTop5": "🔥 Top 5 đề xuất bài kiểm tra phổ biến"
     }
   },
+  "phase2ReincarnationAnimalTest": {
+    "startMessage": {
+      "line1": "\"Bạn mệt mỏi với kiếp này, kiếp sau sẽ như thế nào?\"",
+      "line2": "Nếu bạn được tái sinh như một con vật thay vì con người, bạn sẽ là một con sư tử chạy trên đồng cỏ rộng lớn?",
+      "line3": "Hay một con mèo đang ngủ trưa dưới ánh nắng ấm áp?",
+      "line4": "Chúng tôi phân tích tính cách và bản năng của bạn để tìm ra linh vật (Spirit Animal) của bạn.",
+      "line5": "Xem trước hình dạng của tôi ở kiếp sau 🐾 Kiểm tra loài động vật của tôi 🦁🐱"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Loài Động Vật",
+      "shareWithFriends": "Thử với Bạn Bè",
+      "shareResultWithFriends": "Chia Sẻ Kết Quả với Bạn Bè",
+      "shareResult": "Chia Sẻ Kết Quả",
+      "retakeTest": "Làm Lại",
+      "otherTests": "Xem Các Bài Test Khác",
+      "goToTest": "Làm Test",
+      "adsenseTitle": "Khu Vực Quảng Cáo AdSense (Tôi sẽ là con vật gì nếu tái sinh?)",
+      "linkCopy": "Sao Chép Liên Kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài Test Tương Tự Khác",
+      "personalityKeywords": "Từ Khóa Tính Cách",
+      "goodMatch": "Bạn Hợp",
+      "badMatch": "Bạn Không Hợp"
+    },
+    "shareMessages": {
+      "default": "Kiếp trước của tôi có thể là {type}? 🐾 Kiểm tra xem bạn sẽ được tái sinh thành con vật gì ở kiếp sau!",
+      "kakao": "Kiếp trước của tôi có thể là {type}? 🐾 Kiểm tra xem bạn sẽ được tái sinh thành con vật gì ở kiếp sau!",
+      "wechat": "Kiếp trước của tôi có thể là {type}? 🐾 Kiểm tra xem bạn sẽ được tái sinh thành con vật gì ở kiếp sau!",
+      "whatsapp": "Kiếp trước của tôi có thể là {type}? 🐾 Kiểm tra xem bạn sẽ được tái sinh thành con vật gì ở kiếp sau!",
+      "telegram": "Kiếp trước của tôi có thể là {type}? 🐾 Kiểm tra xem bạn sẽ được tái sinh thành con vật gì ở kiếp sau!",
+      "line": "Kiếp trước của tôi có thể là {type}? 🐾 Kiểm tra xem bạn sẽ được tái sinh thành con vật gì ở kiếp sau!",
+      "startDefault": "Tôi sẽ là con vật gì nếu tái sinh? 🐾 Kiểm tra loài động vật của tôi 🦁🐱",
+      "startKakao": "Tôi sẽ là con vật gì nếu tái sinh? 🐾 Kiểm tra loài động vật của tôi 🦁🐱",
+      "startWechat": "Tôi sẽ là con vật gì nếu tái sinh? 🐾 Kiểm tra loài động vật của tôi 🦁🐱",
+      "startWhatsapp": "Tôi sẽ là con vật gì nếu tái sinh? 🐾 Kiểm tra loài động vật của tôi 🦁🐱",
+      "startTelegram": "Tôi sẽ là con vật gì nếu tái sinh? 🐾 Kiểm tra loài động vật của tôi 🦁🐱",
+      "startLine": "Tôi sẽ là con vật gì nếu tái sinh? 🐾 Kiểm tra loài động vật của tôi 🦁🐱"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lúc.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Bài Kiểm Tra Tương Tự Đề Xuất",
+      "popularTestsTop5": "🔥 Top 5 Bài Kiểm Tra Phổ Biến Đề Xuất"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

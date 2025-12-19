@@ -1123,6 +1123,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2ReincarnationAnimalTest": {
+    "startMessage": {
+      "line1": "\"현생에 지친 당신, 다음 생은 어떤 모습일까요?\"",
+      "line2": "만약 인간이 아닌 동물로 다시 태어난다면 당신은 넓은 초원을 달리는 사자일까요?",
+      "line3": "아니면 따뜻한 햇살 아래 낮잠 자는 고양이일까요?",
+      "line4": "당신의 성격과 본능을 분석해 영혼의 단짝 동물(Spirit Animal)을 찾아드립니다.",
+      "line5": "다음 생의 내 모습 미리보기 🐾 나의 동물 유형 확인하기 🦁🐱"
+    },
+    "ui": {
+      "startTest": "동물 유형 확인하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (내가 환생한다면 어떤 동물일까?)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "personalityKeywords": "성격 키워드",
+      "goodMatch": "잘 맞는 친구",
+      "badMatch": "안 맞는 친구"
+    },
+    "shareMessages": {
+      "default": "내 전생은 혹시 {type}? 🐾 다음 생에 태어날 동물을 확인해보세요!",
+      "kakao": "내 전생은 혹시 {type}? 🐾 다음 생에 태어날 동물을 확인해보세요!",
+      "wechat": "내 전생은 혹시 {type}? 🐾 다음 생에 태어날 동물을 확인해보세요!",
+      "whatsapp": "내 전생은 혹시 {type}? 🐾 다음 생에 태어날 동물을 확인해보세요!",
+      "telegram": "내 전생은 혹시 {type}? 🐾 다음 생에 태어날 동물을 확인해보세요!",
+      "line": "내 전생은 혹시 {type}? 🐾 다음 생에 태어날 동물을 확인해보세요!",
+      "startDefault": "내가 환생한다면 어떤 동물일까? 🐾 나의 동물 유형 확인하기 🦁🐱",
+      "startKakao": "내가 환생한다면 어떤 동물일까? 🐾 나의 동물 유형 확인하기 🦁🐱",
+      "startWechat": "내가 환생한다면 어떤 동물일까? 🐾 나의 동물 유형 확인하기 🦁🐱",
+      "startWhatsapp": "내가 환생한다면 어떤 동물일까? 🐾 나의 동물 유형 확인하기 🦁🐱",
+      "startTelegram": "내가 환생한다면 어떤 동물일까? 🐾 나의 동물 유형 확인하기 🦁🐱",
+      "startLine": "내가 환생한다면 어떤 동물일까? 🐾 나의 동물 유형 확인하기 🦁🐱"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! 위챗에 붙여넣어 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"남들에게는 없는 특별한 힘이 나에게 있다면?\"",

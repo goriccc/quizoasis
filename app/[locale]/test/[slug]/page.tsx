@@ -46,6 +46,7 @@ import { phase2GreekGodQuestions, phase2GreekGodResults } from '@/lib/phase2_gre
 import { phase2TeaTherapyQuestions, phase2TeaTherapyResults } from '@/lib/phase2_tea_therapy_data';
 import { phase2StressCareQuestions, phase2StressCareResults } from '@/lib/phase2_stress_care_data';
 import { phase2ConflictReasonQuestions, phase2ConflictReasonResults } from '@/lib/phase2_conflict_reason_data';
+import { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } from '@/lib/phase2_reincarnation_animal_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -192,6 +193,9 @@ const Phase2StressCareTestClient = dynamic(() => import('@/components/Phase2Stre
   ssr: false
 });
 const Phase2ConflictReasonTestClient = dynamic(() => import('@/components/Phase2ConflictReasonTestClient'), {
+  ssr: false
+});
+const Phase2ReincarnationAnimalTestClient = dynamic(() => import('@/components/Phase2ReincarnationAnimalTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1650,6 +1654,60 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
+  // 내가 환생한다면 어떤 동물일까? 테스트
+  if (slug === 'phase2_reincarnation_animal_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_reincarnation_animal_test',
+      title: {
+        ko: '내가 환생한다면 어떤 동물일까?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '현생에 지친 당신, 다음 생은 어떤 모습일까요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_040_reincarnation_animal.jpg',
+      type: 'psychology',
+      category: 'healing',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '힐링'],
+        en: ['Psychology', 'Healing'],
+        ja: ['心理', 'ヒーリング'],
+        'zh-CN': ['心理', '治愈'],
+        'zh-TW': ['心理', '療癒'],
+        vi: ['Tâm lý', 'Chữa lành'],
+        id: ['Psikologi', 'Penyembuhan']
+      }
+    };
+
+    return (
+      <>
+        <Phase2ReincarnationAnimalTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2ReincarnationAnimalQuestions}
+          results={phase2ReincarnationAnimalResults}
+          questionCount={phase2ReincarnationAnimalQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
   if (slug === 'phase2_impulse_buying_test') {
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_impulse_buying_test',
@@ -2173,6 +2231,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2ConflictReasonQuestions}
           results={phase2ConflictReasonResults}
           questionCount={phase2ConflictReasonQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 내가 환생한다면 어떤 동물일까? 테스트
+  if (slug === 'phase2_reincarnation_animal_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_reincarnation_animal_test',
+      title: {
+        ko: '내가 환생한다면 어떤 동물일까?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '현생에 지친 당신, 다음 생은 어떤 모습일까요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_040_reincarnation_animal.jpg',
+      type: 'psychology',
+      category: 'healing',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '힐링'],
+        en: ['Psychology', 'Healing'],
+        ja: ['心理', 'ヒーリング'],
+        'zh-CN': ['心理', '治愈'],
+        'zh-TW': ['心理', '療癒'],
+        vi: ['Tâm lý', 'Chữa lành'],
+        id: ['Psikologi', 'Penyembuhan']
+      }
+    };
+
+    return (
+      <>
+        <Phase2ReincarnationAnimalTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2ReincarnationAnimalQuestions}
+          results={phase2ReincarnationAnimalResults}
+          questionCount={phase2ReincarnationAnimalQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -4926,6 +5038,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2GuiltLevelQuestions,
       results: phase2GuiltLevelResults
     };
+  } else if (slug === 'phase2_reincarnation_animal_test') {
+    testData = {
+      questions: phase2ReincarnationAnimalQuestions,
+      results: phase2ReincarnationAnimalResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -5129,6 +5246,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_relationship-cut-test') TestClient = Phase2RelationshipCutTestClient;
     else if (slug === 'phase2_self-esteem-test') TestClient = Phase2SelfEsteemTestClient;
     else if (slug === 'phase2_mental-age-test') TestClient = Phase2MentalAgeTestClient;
+    else if (slug === 'phase2_reincarnation_animal_test') TestClient = Phase2ReincarnationAnimalTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

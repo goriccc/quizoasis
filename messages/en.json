@@ -4635,6 +4635,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2ReincarnationAnimalTest": {
+    "startMessage": {
+      "line1": "\"Tired of this life, what will your next life look like?\"",
+      "line2": "If you were reborn as an animal instead of a human, would you be a lion running across the vast grasslands?",
+      "line3": "Or a cat napping under the warm sunshine?",
+      "line4": "We analyze your personality and instincts to find your spirit animal.",
+      "line5": "Preview of my next life 🐾 Check my animal type 🦁🐱"
+    },
+    "ui": {
+      "startTest": "Check Animal Type",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Take Test",
+      "adsenseTitle": "AdSense Ad Area (What animal would I be if I reincarnated?)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "personalityKeywords": "Personality Keywords",
+      "goodMatch": "Good Match",
+      "badMatch": "Bad Match"
+    },
+    "shareMessages": {
+      "default": "My previous life might be {type}? 🐾 Check what animal you'll be born as in your next life!",
+      "kakao": "My previous life might be {type}? 🐾 Check what animal you'll be born as in your next life!",
+      "wechat": "My previous life might be {type}? 🐾 Check what animal you'll be born as in your next life!",
+      "whatsapp": "My previous life might be {type}? 🐾 Check what animal you'll be born as in your next life!",
+      "telegram": "My previous life might be {type}? 🐾 Check what animal you'll be born as in your next life!",
+      "line": "My previous life might be {type}? 🐾 Check what animal you'll be born as in your next life!",
+      "startDefault": "What animal would I be if I reincarnated? 🐾 Check my animal type 🦁🐱",
+      "startKakao": "What animal would I be if I reincarnated? 🐾 Check my animal type 🦁🐱",
+      "startWechat": "What animal would I be if I reincarnated? 🐾 Check my animal type 🦁🐱",
+      "startWhatsapp": "What animal would I be if I reincarnated? 🐾 Check my animal type 🦁🐱",
+      "startTelegram": "What animal would I be if I reincarnated? 🐾 Check my animal type 🦁🐱",
+      "startLine": "What animal would I be if I reincarnated? 🐾 Check my animal type 🦁🐱"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"How flexible is your brain?\"",

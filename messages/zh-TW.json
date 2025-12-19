@@ -4480,6 +4480,61 @@
       "popularTestsTop5": "🔥 熱門測試推薦前5名"
     }
   },
+  "phase2ReincarnationAnimalTest": {
+    "startMessage": {
+      "line1": "\"厭倦今生的你，下一世會是什麼樣子？\"",
+      "line2": "如果你不是作為人類而是作為動物重生，你會是在廣闊草原上奔跑的獅子嗎？",
+      "line3": "還是在溫暖陽光下打盹的貓？",
+      "line4": "我們分析你的性格和本能，為你找到靈魂伴侶動物（Spirit Animal）。",
+      "line5": "預覽我下一世的樣子 🐾 確認我的動物類型 🦁🐱"
+    },
+    "ui": {
+      "startTest": "確認動物類型",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "進行測試",
+      "adsenseTitle": "AdSense廣告區域（如果我轉世會是什麼動物？）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "personalityKeywords": "性格關鍵詞",
+      "goodMatch": "匹配的朋友",
+      "badMatch": "不匹配的朋友"
+    },
+    "shareMessages": {
+      "default": "我的前世可能是{type}？ 🐾 查看你下一世會轉生為什麼動物！",
+      "kakao": "我的前世可能是{type}？ 🐾 查看你下一世會轉生為什麼動物！",
+      "wechat": "我的前世可能是{type}？ 🐾 查看你下一世會轉生為什麼動物！",
+      "whatsapp": "我的前世可能是{type}？ 🐾 查看你下一世會轉生為什麼動物！",
+      "telegram": "我的前世可能是{type}？ 🐾 查看你下一世會轉生為什麼動物！",
+      "line": "我的前世可能是{type}？ 🐾 查看你下一世會轉生為什麼動物！",
+      "startDefault": "如果我轉世會是什麼動物？ 🐾 確認我的動物類型 🦁🐱",
+      "startKakao": "如果我轉世會是什麼動物？ 🐾 確認我的動物類型 🦁🐱",
+      "startWechat": "如果我轉世會是什麼動物？ 🐾 確認我的動物類型 🦁🐱",
+      "startWhatsapp": "如果我轉世會是什麼動物？ 🐾 確認我的動物類型 🦁🐱",
+      "startTelegram": "如果我轉世會是什麼動物？ 🐾 確認我的動物類型 🦁🐱",
+      "startLine": "如果我轉世會是什麼動物？ 🐾 確認我的動物類型 🦁🐱"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！貼上到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦 Top 5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大腦有多靈活？\"",
