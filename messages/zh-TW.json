@@ -4587,6 +4587,62 @@
       "kakaoError": "KakaoTalk分享時發生錯誤。"
     }
   },
+  "phase2AreYouTTest": {
+    "startMessage": {
+      "line1": "「你是...T嗎？」最近聽過這句話嗎？",
+      "line2": "是否曾因對朋友的煩惱反應冷淡而被當作機器人，或因看悲傷電影時只有自己沒哭而尷尬？",
+      "line3": "相反，是否曾因小事就掉眼淚而困擾？",
+      "line4": "你的情感迴路是如何運作的？",
+      "line5": "從沒有血淚的「AI機器人」到吸收世間所有悲傷的「人類水龍頭」。我們為你驗證真實的T/F傾向。確認我的情感指數 🤖😭"
+    },
+    "ui": {
+      "startTest": "確認情感指數",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "進行測試",
+      "adsenseTitle": "AdSense廣告區域 (你是T嗎？機器人情感 vs 哭泣情感讀取器)",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "tLevel": "T/F指數",
+      "mainLines": "主要台詞",
+      "goodMatch": "完美配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的情感指數是 {type}！ 🤖 你是T還是F？在這裡確認一下！",
+      "kakao": "我的情感指數是 {type}！ 🤖 你是T還是F？在這裡確認一下！",
+      "wechat": "我的情感指數是 {type}！ 🤖 你是T還是F？在這裡確認一下！",
+      "whatsapp": "我的情感指數是 {type}！ 🤖 你是T還是F？在這裡確認一下！",
+      "telegram": "我的情感指數是 {type}！ 🤖 你是T還是F？在這裡確認一下！",
+      "line": "我的情感指數是 {type}！ 🤖 你是T還是F？在這裡確認一下！",
+      "startDefault": "你是T嗎？機器人情感 vs 哭泣情感讀取器 🤖😭",
+      "startKakao": "你是T嗎？機器人情感 vs 哭泣情感讀取器 🤖😭",
+      "startWechat": "你是T嗎？機器人情感 vs 哭泣情感讀取器 🤖😭",
+      "startWhatsapp": "你是T嗎？機器人情感 vs 哭泣情感讀取器 🤖😭",
+      "startTelegram": "你是T嗎？機器人情感 vs 哭泣情感讀取器 🤖😭",
+      "startLine": "你是T嗎？機器人情感 vs 哭泣情感讀取器 🤖😭"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！貼上到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦 Top 5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大腦有多靈活？\"",

@@ -4580,6 +4580,62 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
     }
   },
+  "phase2AreYouTTest": {
+    "startMessage": {
+      "line1": "\"Bạn có phải... T không?\" Bạn đã nghe câu này gần đây chưa?",
+      "line2": "Bạn đã bao giờ bị coi như robot vì phản ứng vô hồn với nỗi lo của bạn bè, hoặc cảm thấy khó xử vì không khóc một mình khi xem phim buồn chưa?",
+      "line3": "Ngược lại, bạn đã bao giờ gặp rắc rối vì nước mắt chảy ra ngay cả với những việc nhỏ nhặt chưa?",
+      "line4": "Mạch cảm xúc của bạn hoạt động như thế nào?",
+      "line5": "Từ 'Robot AI' không có máu và nước mắt đến 'Vòi nước người' hấp thụ mọi nỗi buồn trên thế giới. Chúng tôi kiểm tra xu hướng T/F thực sự của bạn. Kiểm tra chỉ số cảm xúc của tôi 🤖😭"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Chỉ số Cảm xúc",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài Kiểm Tra Khác",
+      "goToTest": "Làm Bài Kiểm Tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Bạn có phải T? Máy đọc Cảm xúc Robot vs Cảm xúc Khóc)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài Kiểm Tra Tương tự",
+      "tLevel": "Chỉ số T/F",
+      "mainLines": "Câu nói Chính",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tồi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Chỉ số cảm xúc của tôi là {type}! 🤖 Bạn là T hay F? Kiểm tra ở đây!",
+      "kakao": "Chỉ số cảm xúc của tôi là {type}! 🤖 Bạn là T hay F? Kiểm tra ở đây!",
+      "wechat": "Chỉ số cảm xúc của tôi là {type}! 🤖 Bạn là T hay F? Kiểm tra ở đây!",
+      "whatsapp": "Chỉ số cảm xúc của tôi là {type}! 🤖 Bạn là T hay F? Kiểm tra ở đây!",
+      "telegram": "Chỉ số cảm xúc của tôi là {type}! 🤖 Bạn là T hay F? Kiểm tra ở đây!",
+      "line": "Chỉ số cảm xúc của tôi là {type}! 🤖 Bạn là T hay F? Kiểm tra ở đây!",
+      "startDefault": "Bạn có phải T? Máy đọc Cảm xúc Robot vs Cảm xúc Khóc 🤖😭",
+      "startKakao": "Bạn có phải T? Máy đọc Cảm xúc Robot vs Cảm xúc Khóc 🤖😭",
+      "startWechat": "Bạn có phải T? Máy đọc Cảm xúc Robot vs Cảm xúc Khóc 🤖😭",
+      "startWhatsapp": "Bạn có phải T? Máy đọc Cảm xúc Robot vs Cảm xúc Khóc 🤖😭",
+      "startTelegram": "Bạn có phải T? Máy đọc Cảm xúc Robot vs Cảm xúc Khóc 🤖😭",
+      "startLine": "Bạn có phải T? Máy đọc Cảm xúc Robot vs Cảm xúc Khóc 🤖😭"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Các Bài Kiểm Tra Tương tự Top 5",
+      "popularTestsTop5": "🔥 Các Bài Kiểm Tra Phổ biến Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

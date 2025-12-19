@@ -4580,6 +4580,62 @@
       "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
     }
   },
+  "phase2AreYouTTest": {
+    "startMessage": {
+      "line1": "\"Apakah kamu... T?\" Pernahkah kamu mendengar kalimat ini belakangan ini?",
+      "line2": "Pernahkah kamu diperlakukan seperti robot karena bereaksi tanpa jiwa terhadap kekhawatiran teman, atau merasa canggung karena tidak menangis sendirian saat menonton film sedih?",
+      "line3": "Sebaliknya, pernahkah kamu dalam kesulitan karena air mata keluar bahkan untuk hal-hal sepele?",
+      "line4": "Bagaimana sirkuit emosional Anda bekerja?",
+      "line5": "Dari 'Robot AI' tanpa darah dan air mata hingga 'Keran Manusia' yang menyerap semua kesedihan di dunia. Kami memeriksa fakta kecenderungan T/F sejati Anda. Periksa indeks emosional saya 🤖😭"
+    },
+    "ui": {
+      "startTest": "Periksa Indeks Emosional",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Apakah Anda T? Pembaca Emosi Robot vs Emosi Menangis)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "tLevel": "Indeks T/F",
+      "mainLines": "Kalimat Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Indeks emosional saya adalah {type}! 🤖 Apakah Anda T atau F? Periksa di sini!",
+      "kakao": "Indeks emosional saya adalah {type}! 🤖 Apakah Anda T atau F? Periksa di sini!",
+      "wechat": "Indeks emosional saya adalah {type}! 🤖 Apakah Anda T atau F? Periksa di sini!",
+      "whatsapp": "Indeks emosional saya adalah {type}! 🤖 Apakah Anda T atau F? Periksa di sini!",
+      "telegram": "Indeks emosional saya adalah {type}! 🤖 Apakah Anda T atau F? Periksa di sini!",
+      "line": "Indeks emosional saya adalah {type}! 🤖 Apakah Anda T atau F? Periksa di sini!",
+      "startDefault": "Apakah Anda T? Pembaca Emosi Robot vs Emosi Menangis 🤖😭",
+      "startKakao": "Apakah Anda T? Pembaca Emosi Robot vs Emosi Menangis 🤖😭",
+      "startWechat": "Apakah Anda T? Pembaca Emosi Robot vs Emosi Menangis 🤖😭",
+      "startWhatsapp": "Apakah Anda T? Pembaca Emosi Robot vs Emosi Menangis 🤖😭",
+      "startTelegram": "Apakah Anda T? Pembaca Emosi Robot vs Emosi Menangis 🤖😭",
+      "startLine": "Apakah Anda T? Pembaca Emosi Robot vs Emosi Menangis 🤖😭"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
+      "popularTestsTop5": "🔥 Tes Populer Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

@@ -48,6 +48,7 @@ import { phase2StressCareQuestions, phase2StressCareResults } from '@/lib/phase2
 import { phase2ConflictReasonQuestions, phase2ConflictReasonResults } from '@/lib/phase2_conflict_reason_data';
 import { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } from '@/lib/phase2_reincarnation_animal_data';
 import { phase2DarkSideQuestions, phase2DarkSideResults } from '@/lib/phase2_dark_side_data';
+import { phase2AreYouTQuestions, phase2AreYouTResults } from '@/lib/phase2_are_you_T_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -200,6 +201,9 @@ const Phase2ReincarnationAnimalTestClient = dynamic(() => import('@/components/P
   ssr: false
 });
 const Phase2DarkSideTestClient = dynamic(() => import('@/components/Phase2DarkSideTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
+const Phase2AreYouTTestClient = dynamic(() => import('@/components/Phase2AreYouTTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1759,6 +1763,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2DarkSideQuestions}
           results={phase2DarkSideResults}
           questionCount={phase2DarkSideQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 너 T야? 로봇 감성 vs 오열 감성 판독기 테스트
+  if (slug === 'phase2_are_you_T_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_are_you_T_test',
+      title: {
+        ko: '너 T야? 로봇 감성 vs 오열 감성 판독기',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '혹시... 너 T야?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_042_are_you_T.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리'],
+        en: ['Psychology'],
+        ja: ['心理'],
+        'zh-CN': ['心理'],
+        'zh-TW': ['心理'],
+        vi: ['Tâm lý'],
+        id: ['Psikologi']
+      }
+    };
+
+    return (
+      <>
+        <Phase2AreYouTTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2AreYouTQuestions}
+          results={phase2AreYouTResults}
+          questionCount={phase2AreYouTQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5160,6 +5218,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2DarkSideQuestions,
       results: phase2DarkSideResults
     };
+  } else if (slug === 'phase2_are_you_T_test') {
+    testData = {
+      questions: phase2AreYouTQuestions,
+      results: phase2AreYouTResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -5365,6 +5428,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_mental-age-test') TestClient = Phase2MentalAgeTestClient;
     else if (slug === 'phase2_reincarnation_animal_test') TestClient = Phase2ReincarnationAnimalTestClient;
     else if (slug === 'phase2_dark_side_test') TestClient = Phase2DarkSideTestClient;
+    else if (slug === 'phase2_are_you_T_test') TestClient = Phase2AreYouTTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

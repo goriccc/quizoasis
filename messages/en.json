@@ -1740,6 +1740,62 @@
       "kakaoError": "An error occurred while sharing on KakaoTalk."
     }
   },
+  "phase2AreYouTTest": {
+    "startMessage": {
+      "line1": "\"Are you... a T?\" Have you heard this phrase lately?",
+      "line2": "Have you ever been treated like a robot for reacting soullessly to a friend's worries, or felt awkward for not crying alone while watching a sad movie?",
+      "line3": "On the other hand, have you ever been in trouble because tears came out even for trivial things?",
+      "line4": "How does your emotional circuit work?",
+      "line5": "From the 'AI robot' with no blood or tears to the 'human faucet' that absorbs all the sadness in the world. We fact-check your true T/F tendency. Check my emotional index 🤖😭"
+    },
+    "ui": {
+      "startTest": "Check Emotional Index",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Take Test",
+      "adsenseTitle": "AdSense Ad Area (Are you a T? Robot Emotion vs Sobbing Emotion Reader)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "tLevel": "T/F Index",
+      "mainLines": "Main Lines",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My emotional index is {type}! 🤖 Are you a T or F? Check it out here!",
+      "kakao": "My emotional index is {type}! 🤖 Are you a T or F? Check it out here!",
+      "wechat": "My emotional index is {type}! 🤖 Are you a T or F? Check it out here!",
+      "whatsapp": "My emotional index is {type}! 🤖 Are you a T or F? Check it out here!",
+      "telegram": "My emotional index is {type}! 🤖 Are you a T or F? Check it out here!",
+      "line": "My emotional index is {type}! 🤖 Are you a T or F? Check it out here!",
+      "startDefault": "Are you a T? Robot Emotion vs Sobbing Emotion Reader 🤖😭",
+      "startKakao": "Are you a T? Robot Emotion vs Sobbing Emotion Reader 🤖😭",
+      "startWechat": "Are you a T? Robot Emotion vs Sobbing Emotion Reader 🤖😭",
+      "startWhatsapp": "Are you a T? Robot Emotion vs Sobbing Emotion Reader 🤖😭",
+      "startTelegram": "Are you a T? Robot Emotion vs Sobbing Emotion Reader 🤖😭",
+      "startLine": "Are you a T? Robot Emotion vs Sobbing Emotion Reader 🤖😭"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar Other Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"What special power would I have that others don't?\"",

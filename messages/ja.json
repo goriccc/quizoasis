@@ -4568,6 +4568,62 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
+  "phase2AreYouTTest": {
+    "startMessage": {
+      "line1": "「もしかして...あなたT？」最近この言葉、聞いたことありますか？",
+      "line2": "友達の悩み相談に魂なく反応してロボット扱いされたり、悲しい映画を見て一人だけ泣かずに気まずかったことはありませんか？",
+      "line3": "逆に、大したことないことでも涙ボタンが押されて困ったことは？",
+      "line4": "あなたの感情回路はどう作動しているのでしょうか？",
+      "line5": "血も涙もない「AIロボット」から、世界のすべての悲しみを吸収する「人間の蛇口」まで。あなたの本物のT/F傾向をファクトチェックします。私の感情指数を確認 🤖😭"
+    },
+    "ui": {
+      "startTest": "感情指数を確認",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア (あなたT？ロボット感情 vs 号泣感情読取機)",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "tLevel": "T/F指数",
+      "mainLines": "主なセリフ",
+      "goodMatch": "完璧な相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の感情指数は {type}！ 🤖 あなたT？それともF？ここで確認してみて！",
+      "kakao": "私の感情指数は {type}！ 🤖 あなたT？それともF？ここで確認してみて！",
+      "wechat": "私の感情指数は {type}！ 🤖 あなたT？それともF？ここで確認してみて！",
+      "whatsapp": "私の感情指数は {type}！ 🤖 あなたT？それともF？ここで確認してみて！",
+      "telegram": "私の感情指数は {type}！ 🤖 あなたT？それともF？ここで確認してみて！",
+      "line": "私の感情指数は {type}！ 🤖 あなたT？それともF？ここで確認してみて！",
+      "startDefault": "あなたT？ロボット感情 vs 号泣感情読取機 🤖😭",
+      "startKakao": "あなたT？ロボット感情 vs 号泣感情読取機 🤖😭",
+      "startWechat": "あなたT？ロボット感情 vs 号泣感情読取機 🤖😭",
+      "startWhatsapp": "あなたT？ロボット感情 vs 号泣感情読取機 🤖😭",
+      "startTelegram": "あなたT？ロボット感情 vs 号泣感情読取機 🤖😭",
+      "startLine": "あなたT？ロボット感情 vs 号泣感情読取機 🤖😭"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！ウィーチャットに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテスト 추천 Top 5",
+      "popularTestsTop5": "🔥 最近人気のテスト 추천 Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",
