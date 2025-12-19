@@ -1796,6 +1796,62 @@
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     }
   },
+  "phase2CapitalQuizTest": {
+    "startMessage": {
+      "line1": "\"Is the capital of the US New York? Is Australia Sydney?\" If you think so, this test is urgent!",
+      "line2": "We've collected capital city questions from major countries around the world that everyone thinks they know but are surprisingly confusing.",
+      "line3": "How far does your general knowledge go? Find out if you're just a simple tourist level or a walking human globe.",
+      "line4": "We verify your brain power. Start the capital quiz 🌍📍",
+      "line5": ""
+    },
+    "ui": {
+      "startTest": "Start Capital Quiz",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Results",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Take Test",
+      "adsenseTitle": "AdSense Ad Area (Brain Challenge! World Capital Quiz)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "correctCount": "Correct Answers",
+      "knowledgeLevel": "Knowledge Level",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My capital quiz level is {type}! 🌍 Do you think New York is the capital of the US?",
+      "kakao": "My capital quiz level is {type}! 🌍 Do you think New York is the capital of the US?",
+      "wechat": "My capital quiz level is {type}! 🌍 Do you think New York is the capital of the US?",
+      "whatsapp": "My capital quiz level is {type}! 🌍 Do you think New York is the capital of the US?",
+      "telegram": "My capital quiz level is {type}! 🌍 Do you think New York is the capital of the US?",
+      "line": "My capital quiz level is {type}! 🌍 Do you think New York is the capital of the US?",
+      "startDefault": "Brain Challenge! World Capital Quiz 🌍 Do you think New York is the capital of the US?",
+      "startKakao": "Brain Challenge! World Capital Quiz 🌍 Do you think New York is the capital of the US?",
+      "startWechat": "Brain Challenge! World Capital Quiz 🌍 Do you think New York is the capital of the US?",
+      "startWhatsapp": "Brain Challenge! World Capital Quiz 🌍 Do you think New York is the capital of the US?",
+      "startTelegram": "Brain Challenge! World Capital Quiz 🌍 Do you think New York is the capital of the US?",
+      "startLine": "Brain Challenge! World Capital Quiz 🌍 Do you think New York is the capital of the US?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "whatsappCopy": "Link copied! Paste it in WhatsApp to share.",
+      "telegramCopy": "Link copied! Paste it in Telegram to share.",
+      "lineCopy": "Link copied! Paste it in Line to share.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar Other Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"What special power would I have that others don't?\"",

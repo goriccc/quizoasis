@@ -4636,6 +4636,62 @@
       "popularTestsTop5": "🔥 Tes Populer Top 5"
     }
   },
+  "phase2CapitalQuizTest": {
+    "startMessage": {
+      "line1": "\"Apakah ibu kota AS adalah New York? Apakah Australia adalah Sydney?\" Jika Anda berpikir begitu, tes ini sangat mendesak!",
+      "line2": "Kami telah mengumpulkan pertanyaan tentang ibu kota negara-negara besar di seluruh dunia yang semua orang pikir mereka tahu tetapi sebenarnya membingungkan.",
+      "line3": "Seberapa jauh pengetahuan umum Anda? Cari tahu apakah Anda hanya di tingkat turis sederhana atau globe berjalan.",
+      "line4": "Kami memverifikasi indeks kecerdasan Anda. Mulai kuis ibu kota 🌍📍",
+      "line5": ""
+    },
+    "ui": {
+      "startTest": "Mulai Kuis Ibu Kota",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tantangan Cerdas! Kuis Ibu Kota Dunia)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "correctCount": "Jawaban Benar",
+      "knowledgeLevel": "Tingkat Pengetahuan",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Tingkat kuis ibu kota saya adalah {type}! 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "kakao": "Tingkat kuis ibu kota saya adalah {type}! 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "wechat": "Tingkat kuis ibu kota saya adalah {type}! 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "whatsapp": "Tingkat kuis ibu kota saya adalah {type}! 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "telegram": "Tingkat kuis ibu kota saya adalah {type}! 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "line": "Tingkat kuis ibu kota saya adalah {type}! 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "startDefault": "Tantangan Cerdas! Kuis Ibu Kota Dunia 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "startKakao": "Tantangan Cerdas! Kuis Ibu Kota Dunia 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "startWechat": "Tantangan Cerdas! Kuis Ibu Kota Dunia 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "startWhatsapp": "Tantangan Cerdas! Kuis Ibu Kota Dunia 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "startTelegram": "Tantangan Cerdas! Kuis Ibu Kota Dunia 🌍 Apakah Anda berpikir New York adalah ibu kota AS?",
+      "startLine": "Tantangan Cerdas! Kuis Ibu Kota Dunia 🌍 Apakah Anda berpikir New York adalah ibu kota AS?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "whatsappCopy": "Tautan disalin! Tempel di WhatsApp untuk berbagi.",
+      "telegramCopy": "Tautan disalin! Tempel di Telegram untuk berbagi.",
+      "lineCopy": "Tautan disalin! Tempel di Line untuk berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
+      "popularTestsTop5": "🔥 Tes Populer Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

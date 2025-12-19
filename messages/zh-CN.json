@@ -4636,6 +4636,62 @@
       "popularTestsTop5": "🔥 最近热门测试推荐 Top 5"
     }
   },
+  "phase2CapitalQuizTest": {
+    "startMessage": {
+      "line1": "「美国的首都是纽约？澳大利亚是悉尼？」如果你这样认为，这个测试很紧急！",
+      "line2": "我们收集了世界各地主要国家的首都问题，每个人都认为自己知道，但实际上令人困惑。",
+      "line3": "你的常识有多广？看看你只是简单的游客水平，还是行走的地球仪。",
+      "line4": "我们验证你的聪明指数。开始首都测验 🌍📍",
+      "line5": ""
+    },
+    "ui": {
+      "startTest": "开始首都测验",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重做",
+      "otherTests": "其他测试",
+      "goToTest": "参加测试",
+      "adsenseTitle": "AdSense广告区域（聪明人挑战！世界首都测验）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "correctCount": "正确答案数",
+      "knowledgeLevel": "知识水平",
+      "recommendation": "推荐"
+    },
+    "shareMessages": {
+      "default": "我的首都测验水平是{type}！🌍 你认为纽约是美国的首都吗？",
+      "kakao": "我的首都测验水平是{type}！🌍 你认为纽约是美国的首都吗？",
+      "wechat": "我的首都测验水平是{type}！🌍 你认为纽约是美国的首都吗？",
+      "whatsapp": "我的首都测验水平是{type}！🌍 你认为纽约是美国的首都吗？",
+      "telegram": "我的首都测验水平是{type}！🌍 你认为纽约是美国的首都吗？",
+      "line": "我的首都测验水平是{type}！🌍 你认为纽约是美国的首都吗？",
+      "startDefault": "聪明人挑战！世界首都测验 🌍 你认为纽约是美国的首都吗？",
+      "startKakao": "聪明人挑战！世界首都测验 🌍 你认为纽约是美国的首都吗？",
+      "startWechat": "聪明人挑战！世界首都测验 🌍 你认为纽约是美国的首都吗？",
+      "startWhatsapp": "聪明人挑战！世界首都测验 🌍 你认为纽约是美国的首都吗？",
+      "startTelegram": "聪明人挑战！世界首都测验 🌍 你认为纽约是美国的首都吗？",
+      "startLine": "聪明人挑战！世界首都测验 🌍 你认为纽约是美国的首都吗？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "whatsappCopy": "链接已复制！粘贴到WhatsApp中分享。",
+      "telegramCopy": "链接已复制！粘贴到Telegram中分享。",
+      "lineCopy": "链接已复制！粘贴到Line中分享。",
+      "wechatCopy": "链接已复制！粘贴到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试推荐 Top 5",
+      "popularTestsTop5": "🔥 最近热门测试推荐 Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

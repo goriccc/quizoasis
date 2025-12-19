@@ -4636,6 +4636,62 @@
       "popularTestsTop5": "🔥 Các Bài Kiểm Tra Phổ biến Top 5"
     }
   },
+  "phase2CapitalQuizTest": {
+    "startMessage": {
+      "line1": "\"Thủ đô của Mỹ là New York? Australia là Sydney?\" Nếu bạn nghĩ vậy, bài kiểm tra này rất cấp thiết!",
+      "line2": "Chúng tôi đã thu thập các câu hỏi về thủ đô của các quốc gia lớn trên thế giới mà mọi người nghĩ mình biết nhưng thực ra rất dễ nhầm lẫn.",
+      "line3": "Kiến thức chung của bạn đến đâu? Hãy xem bạn chỉ ở mức khách du lịch đơn giản hay là một quả địa cầu biết đi.",
+      "line4": "Chúng tôi xác minh chỉ số thông minh của bạn. Bắt đầu đố vui thủ đô 🌍📍",
+      "line5": ""
+    },
+    "ui": {
+      "startTest": "Bắt đầu Đố vui Thủ đô",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Làm Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Thử thách Thông minh! Đố vui Thủ đô Thế giới)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "correctCount": "Số Câu Đúng",
+      "knowledgeLevel": "Mức Độ Kiến thức",
+      "recommendation": "Đề xuất"
+    },
+    "shareMessages": {
+      "default": "Mức độ đố vui thủ đô của tôi là {type}! 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "kakao": "Mức độ đố vui thủ đô của tôi là {type}! 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "wechat": "Mức độ đố vui thủ đô của tôi là {type}! 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "whatsapp": "Mức độ đố vui thủ đô của tôi là {type}! 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "telegram": "Mức độ đố vui thủ đô của tôi là {type}! 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "line": "Mức độ đố vui thủ đô của tôi là {type}! 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "startDefault": "Thử thách Thông minh! Đố vui Thủ đô Thế giới 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "startKakao": "Thử thách Thông minh! Đố vui Thủ đô Thế giới 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "startWechat": "Thử thách Thông minh! Đố vui Thủ đô Thế giới 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "startWhatsapp": "Thử thách Thông minh! Đố vui Thủ đô Thế giới 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "startTelegram": "Thử thách Thông minh! Đố vui Thủ đô Thế giới 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?",
+      "startLine": "Thử thách Thông minh! Đố vui Thủ đô Thế giới 🌍 Bạn có nghĩ New York là thủ đô của Mỹ không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "whatsappCopy": "Đã sao chép liên kết! Dán vào WhatsApp để chia sẻ.",
+      "telegramCopy": "Đã sao chép liên kết! Dán vào Telegram để chia sẻ.",
+      "lineCopy": "Đã sao chép liên kết! Dán vào Line để chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Các Bài Kiểm Tra Tương tự Top 5",
+      "popularTestsTop5": "🔥 Các Bài Kiểm Tra Phổ biến Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",

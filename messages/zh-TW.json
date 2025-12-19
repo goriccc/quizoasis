@@ -4643,6 +4643,62 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
     }
   },
+  "phase2CapitalQuizTest": {
+    "startMessage": {
+      "line1": "「美國的首都是紐約？澳洲是雪梨？」如果你這樣認為，這個測驗很緊急！",
+      "line2": "我們收集了世界各地主要國家的首都問題，每個人都認為自己知道，但實際上令人困惑。",
+      "line3": "你的常識有多廣？看看你只是簡單的遊客水平，還是行走的地球儀。",
+      "line4": "我們驗證你的聰明指數。開始首都測驗 🌍📍",
+      "line5": ""
+    },
+    "ui": {
+      "startTest": "開始首都測驗",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "其他測驗",
+      "goToTest": "參加測驗",
+      "adsenseTitle": "AdSense廣告區域（聰明人挑戰！世界首都測驗）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "correctCount": "正確答案數",
+      "knowledgeLevel": "知識水平",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的首都測驗水平是{type}！🌍 你認為紐約是美國的首都嗎？",
+      "kakao": "我的首都測驗水平是{type}！🌍 你認為紐約是美國的首都嗎？",
+      "wechat": "我的首都測驗水平是{type}！🌍 你認為紐約是美國的首都嗎？",
+      "whatsapp": "我的首都測驗水平是{type}！🌍 你認為紐約是美國的首都嗎？",
+      "telegram": "我的首都測驗水平是{type}！🌍 你認為紐約是美國的首都嗎？",
+      "line": "我的首都測驗水平是{type}！🌍 你認為紐約是美國的首都嗎？",
+      "startDefault": "聰明人挑戰！世界首都測驗 🌍 你認為紐約是美國的首都嗎？",
+      "startKakao": "聰明人挑戰！世界首都測驗 🌍 你認為紐約是美國的首都嗎？",
+      "startWechat": "聰明人挑戰！世界首都測驗 🌍 你認為紐約是美國的首都嗎？",
+      "startWhatsapp": "聰明人挑戰！世界首都測驗 🌍 你認為紐約是美國的首都嗎？",
+      "startTelegram": "聰明人挑戰！世界首都測驗 🌍 你認為紐約是美國的首都嗎？",
+      "startLine": "聰明人挑戰！世界首都測驗 🌍 你認為紐約是美國的首都嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "whatsappCopy": "連結已複製！貼上到WhatsApp中分享。",
+      "telegramCopy": "連結已複製！貼上到Telegram中分享。",
+      "lineCopy": "連結已複製！貼上到Line中分享。",
+      "wechatCopy": "連結已複製！貼上到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測驗推薦 Top 5",
+      "popularTestsTop5": "🔥 最近熱門測驗推薦 Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大腦有多靈活？\"",

@@ -49,6 +49,7 @@ import { phase2ConflictReasonQuestions, phase2ConflictReasonResults } from '@/li
 import { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } from '@/lib/phase2_reincarnation_animal_data';
 import { phase2DarkSideQuestions, phase2DarkSideResults } from '@/lib/phase2_dark_side_data';
 import { phase2AreYouTQuestions, phase2AreYouTResults } from '@/lib/phase2_are_you_T_data';
+import { phase2CapitalQuizQuestions, phase2CapitalQuizResults } from '@/lib/phase2_capital_quiz_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -204,6 +205,9 @@ const Phase2DarkSideTestClient = dynamic(() => import('@/components/Phase2DarkSi
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const Phase2AreYouTTestClient = dynamic(() => import('@/components/Phase2AreYouTTestClient'), {
+  ssr: false
+});
+const Phase2CapitalQuizTestClient = dynamic(() => import('@/components/Phase2CapitalQuizTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1817,6 +1821,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2AreYouTQuestions}
           results={phase2AreYouTResults}
           questionCount={phase2AreYouTQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 뇌섹남녀 도전! 세계 수도 퀴즈 테스트
+  if (slug === 'phase2_capital_quiz_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_capital_quiz_test',
+      title: {
+        ko: '뇌섹남녀 도전! 세계 수도 퀴즈',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '미국의 수도는 뉴욕? 호주는 시드니?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_082_capital_quiz.jpg',
+      type: 'quiz',
+      category: 'knowledge',
+      play_count: 0,
+      tags: {
+        ko: ['재미'],
+        en: [''],
+        ja: [''],
+        'zh-CN': [''],
+        'zh-TW': [''],
+        vi: [''],
+        id: ['']
+      }
+    };
+
+    return (
+      <>
+        <Phase2CapitalQuizTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2CapitalQuizQuestions}
+          results={phase2CapitalQuizResults}
+          questionCount={phase2CapitalQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5223,6 +5281,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2AreYouTQuestions,
       results: phase2AreYouTResults
     };
+  } else if (slug === 'phase2_capital_quiz_test') {
+    testData = {
+      questions: phase2CapitalQuizQuestions,
+      results: phase2CapitalQuizResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -5429,6 +5492,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_reincarnation_animal_test') TestClient = Phase2ReincarnationAnimalTestClient;
     else if (slug === 'phase2_dark_side_test') TestClient = Phase2DarkSideTestClient;
     else if (slug === 'phase2_are_you_T_test') TestClient = Phase2AreYouTTestClient;
+    else if (slug === 'phase2_capital_quiz_test') TestClient = Phase2CapitalQuizTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;
