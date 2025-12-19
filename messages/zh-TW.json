@@ -4426,6 +4426,60 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
   },
+  "phase2ConflictReasonTest": {
+    "startMessage": {
+      "line1": "\"明明相愛，為什麼總是吵架？\"",
+      "line2": "一開始愛得死去活來，但從某個瞬間開始，我們是不是因為小事而互相傷害？",
+      "line3": "聯絡問題、語氣、價值觀、自尊心...重複的爭吵一定有根本原因。",
+      "line4": "我們分析你的戀愛模式和衝突根源，告訴你爭吵的真正原因和解決方案。",
+      "line5": "診斷我們情侶的問題 💔 檢查衝突原因 🔍"
+    },
+    "ui": {
+      "startTest": "開始測試",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（為什麼我總是和戀人吵架？）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "conflictCauses": "主要衝突原因",
+      "solution": "解決方案"
+    },
+    "shareMessages": {
+      "default": "我們情侶吵架的真正原因是{type}！💔 你中招了嗎？",
+      "kakao": "我們情侶吵架的真正原因是{type}！💔 你中招了嗎？",
+      "wechat": "我們情侶吵架的真正原因是{type}！💔 你中招了嗎？",
+      "whatsapp": "我們情侶吵架的真正原因是{type}！💔 你中招了嗎？",
+      "telegram": "我們情侶吵架的真正原因是{type}！💔 你中招了嗎？",
+      "line": "我們情侶吵架的真正原因是{type}！💔 你中招了嗎？",
+      "startDefault": "為什麼我總是和戀人吵架？💔 檢查衝突原因 🔍",
+      "startKakao": "為什麼我總是和戀人吵架？💔 檢查衝突原因 🔍",
+      "startWechat": "為什麼我總是和戀人吵架？💔 檢查衝突原因 🔍",
+      "startWhatsapp": "為什麼我總是和戀人吵架？💔 檢查衝突原因 🔍",
+      "startTelegram": "為什麼我總是和戀人吵架？💔 檢查衝突原因 🔍",
+      "startLine": "為什麼我總是和戀人吵架？💔 檢查衝突原因 🔍"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 熱門測試推薦前5名"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大腦有多靈活？\"",

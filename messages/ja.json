@@ -4407,6 +4407,60 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2ConflictReasonTest": {
+    "startMessage": {
+      "line1": "「愛し合っているのに、なぜ喧嘩ばかりしてしまうのでしょうか？」",
+      "line2": "最初は死ぬほど好きだったのに、ある瞬間から些細なことでぶつかり合い、傷つけ合っていませんか？",
+      "line3": "連絡の問題、口調、価値観、プライド...繰り返される喧嘩には必ず根本的な原因があります。",
+      "line4": "あなたの恋愛パターンと対立の火種を分析し、喧嘩の本当の理由と解決策をお伝えします。",
+      "line5": "私たちのカップルの問題点診断 💔 対立の原因確認 🔍"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（恋人とよく喧嘩してしまう理由）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "ワッツアップ",
+      "similarTests": "類似の他のテスト",
+      "conflictCauses": "主な対立の原因",
+      "solution": "解決策"
+    },
+    "shareMessages": {
+      "default": "私たちのカップルが喧嘩する本当の理由は{type}のせい！💔 あなたも当てはまる？",
+      "kakao": "私たちのカップルが喧嘩する本当の理由は{type}のせい！💔 あなたも当てはまる？",
+      "wechat": "私たちのカップルが喧嘩する本当の理由は{type}のせい！💔 あなたも当てはまる？",
+      "whatsapp": "私たちのカップルが喧嘩する本当の理由は{type}のせい！💔 あなたも当てはまる？",
+      "telegram": "私たちのカップルが喧嘩する本当の理由は{type}のせい！💔 あなたも当てはまる？",
+      "line": "私たちのカップルが喧嘩する本当の理由は{type}のせい！💔 あなたも当てはまる？",
+      "startDefault": "恋人とよく喧嘩してしまう理由 💔 対立の原因確認 🔍",
+      "startKakao": "恋人とよく喧嘩してしまう理由 💔 対立の原因確認 🔍",
+      "startWechat": "恋人とよく喧嘩してしまう理由 💔 対立の原因確認 🔍",
+      "startWhatsapp": "恋人とよく喧嘩してしまう理由 💔 対立の原因確認 🔍",
+      "startTelegram": "恋人とよく喧嘩してしまう理由 💔 対立の原因確認 🔍",
+      "startLine": "恋人とよく喧嘩してしまう理由 💔 対立の原因確認 🔍"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！ウィーチャットに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

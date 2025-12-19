@@ -4419,6 +4419,60 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2ConflictReasonTest": {
+    "startMessage": {
+      "line1": "\"Mengapa kita terus bertengkar meskipun saling mencintai?\"",
+      "line2": "Awalnya sangat mencintai, tetapi dari suatu saat, apakah kita saling menyakiti karena hal-hal sepele?",
+      "line3": "Masalah kontak, nada suara, nilai-nilai, harga diri... Pertengkaran yang berulang selalu memiliki penyebab mendasar.",
+      "line4": "Kami menganalisis pola hubungan dan sumber konflik Anda untuk memberi tahu Anda alasan sebenarnya dari pertengkaran dan solusinya.",
+      "line5": "Diagnosis masalah pasangan kita 💔 Periksa penyebab konflik 🔍"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Mengapa Saya Sering Bertengkar dengan Pasangan?)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "conflictCauses": "Penyebab Konflik Utama",
+      "solution": "Solusi"
+    },
+    "shareMessages": {
+      "default": "Alasan sebenarnya pasangan kita bertengkar adalah {type}! 💔 Apakah ini mengenai Anda?",
+      "kakao": "Alasan sebenarnya pasangan kita bertengkar adalah {type}! 💔 Apakah ini mengenai Anda?",
+      "wechat": "Alasan sebenarnya pasangan kita bertengkar adalah {type}! 💔 Apakah ini mengenai Anda?",
+      "whatsapp": "Alasan sebenarnya pasangan kita bertengkar adalah {type}! 💔 Apakah ini mengenai Anda?",
+      "telegram": "Alasan sebenarnya pasangan kita bertengkar adalah {type}! 💔 Apakah ini mengenai Anda?",
+      "line": "Alasan sebenarnya pasangan kita bertengkar adalah {type}! 💔 Apakah ini mengenai Anda?",
+      "startDefault": "Mengapa Saya Sering Bertengkar dengan Pasangan? 💔 Periksa penyebab konflik 🔍",
+      "startKakao": "Mengapa Saya Sering Bertengkar dengan Pasangan? 💔 Periksa penyebab konflik 🔍",
+      "startWechat": "Mengapa Saya Sering Bertengkar dengan Pasangan? 💔 Periksa penyebab konflik 🔍",
+      "startWhatsapp": "Mengapa Saya Sering Bertengkar dengan Pasangan? 💔 Periksa penyebab konflik 🔍",
+      "startTelegram": "Mengapa Saya Sering Bertengkar dengan Pasangan? 💔 Periksa penyebab konflik 🔍",
+      "startLine": "Mengapa Saya Sering Bertengkar dengan Pasangan? 💔 Periksa penyebab konflik 🔍"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

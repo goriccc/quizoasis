@@ -45,6 +45,7 @@ import { phase2BodySignalQuestions, phase2BodySignalResults } from '@/lib/phase2
 import { phase2GreekGodQuestions, phase2GreekGodResults } from '@/lib/phase2_greek_god_data';
 import { phase2TeaTherapyQuestions, phase2TeaTherapyResults } from '@/lib/phase2_tea_therapy_data';
 import { phase2StressCareQuestions, phase2StressCareResults } from '@/lib/phase2_stress_care_data';
+import { phase2ConflictReasonQuestions, phase2ConflictReasonResults } from '@/lib/phase2_conflict_reason_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -188,6 +189,9 @@ const Phase2TeaTherapyTestClient = dynamic(() => import('@/components/Phase2TeaT
   ssr: false
 });
 const Phase2StressCareTestClient = dynamic(() => import('@/components/Phase2StressCareTestClient'), {
+  ssr: false
+});
+const Phase2ConflictReasonTestClient = dynamic(() => import('@/components/Phase2ConflictReasonTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2116,6 +2120,59 @@ export default async function TestPage({ params }: Props) {
           questions={phase2StressCareQuestions}
           results={phase2StressCareResults}
           questionCount={phase2StressCareQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_conflict_reason_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_conflict_reason_test',
+      title: {
+        ko: "내가 연인과 자꾸 싸우는 이유",
+        en: "",
+        ja: "",
+        "zh-CN": "",
+        "zh-TW": "",
+        vi: "",
+        id: ""
+      },
+      description: {
+        ko: "사랑하는데 왜 자꾸 싸우는 걸까요?",
+        en: "",
+        ja: "",
+        "zh-CN": "",
+        "zh-TW": "",
+        vi: "",
+        id: ""
+      },
+      thumbnail: 'phase2_test_142_conflict_reason.jpg',
+      type: 'dating',
+      category: 'psychology',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: ['Dating', 'Psychology'],
+        ja: ['恋愛', '心理'],
+        "zh-CN": ['恋爱', '心理'],
+        "zh-TW": ['戀愛', '心理'],
+        vi: ['Hẹn hò', 'Tâm lý'],
+        id: ['Kencan', 'Psikologi']
+      }
+    };
+
+    return (
+      <>
+        <Phase2ConflictReasonTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2ConflictReasonQuestions}
+          results={phase2ConflictReasonResults}
+          questionCount={phase2ConflictReasonQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

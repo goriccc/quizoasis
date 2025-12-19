@@ -4581,6 +4581,60 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2ConflictReasonTest": {
+    "startMessage": {
+      "line1": "\"Why do we keep fighting even though we love each other?\"",
+      "line2": "We were so in love at first, but at some point, aren't we hurting each other over trivial things?",
+      "line3": "Contact issues, tone of voice, values, pride... Repeated fights always have a fundamental cause.",
+      "line4": "We analyze your relationship patterns and sources of conflict to tell you the real reason for fights and solutions.",
+      "line5": "Diagnose our couple's problems 💔 Check conflict causes 🔍"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Why Do I Keep Fighting with My Partner?)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "conflictCauses": "Main Conflict Causes",
+      "solution": "Solution"
+    },
+    "shareMessages": {
+      "default": "The real reason our couple fights is {type}! 💔 Does this hit close to home?",
+      "kakao": "The real reason our couple fights is {type}! 💔 Does this hit close to home?",
+      "wechat": "The real reason our couple fights is {type}! 💔 Does this hit close to home?",
+      "whatsapp": "The real reason our couple fights is {type}! 💔 Does this hit close to home?",
+      "telegram": "The real reason our couple fights is {type}! 💔 Does this hit close to home?",
+      "line": "The real reason our couple fights is {type}! 💔 Does this hit close to home?",
+      "startDefault": "Why Do I Keep Fighting with My Partner? 💔 Check conflict causes 🔍",
+      "startKakao": "Why Do I Keep Fighting with My Partner? 💔 Check conflict causes 🔍",
+      "startWechat": "Why Do I Keep Fighting with My Partner? 💔 Check conflict causes 🔍",
+      "startWhatsapp": "Why Do I Keep Fighting with My Partner? 💔 Check conflict causes 🔍",
+      "startTelegram": "Why Do I Keep Fighting with My Partner? 💔 Check conflict causes 🔍",
+      "startLine": "Why Do I Keep Fighting with My Partner? 💔 Check conflict causes 🔍"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"How flexible is your brain?\"",

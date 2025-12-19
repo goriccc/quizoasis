@@ -4419,6 +4419,60 @@
       "popularTestsTop5": "🔥 Top 5 Đề Xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2ConflictReasonTest": {
+    "startMessage": {
+      "line1": "\"Tại sao chúng ta cứ cãi nhau dù yêu nhau?\"",
+      "line2": "Lúc đầu yêu nhau đến chết đi sống lại, nhưng từ một khoảnh khắc nào đó, chúng ta có đang làm tổn thương nhau vì những chuyện nhỏ nhặt không?",
+      "line3": "Vấn đề liên lạc, giọng điệu, giá trị, lòng tự trọng... Những cuộc cãi vã lặp đi lặp lại luôn có nguyên nhân cơ bản.",
+      "line4": "Chúng tôi phân tích mô hình mối quan hệ và nguồn gốc xung đột của bạn để cho bạn biết lý do thực sự của các cuộc cãi vã và giải pháp.",
+      "line5": "Chẩn đoán vấn đề của cặp đôi chúng ta 💔 Kiểm tra nguyên nhân xung đột 🔍"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài kiểm tra khác",
+      "goToTest": "Đi đến bài kiểm tra",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tại sao tôi cứ cãi nhau với người yêu?)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "conflictCauses": "Nguyên nhân xung đột chính",
+      "solution": "Giải pháp"
+    },
+    "shareMessages": {
+      "default": "Lý do thực sự cặp đôi chúng ta cãi nhau là {type}! 💔 Bạn có bị trúng không?",
+      "kakao": "Lý do thực sự cặp đôi chúng ta cãi nhau là {type}! 💔 Bạn có bị trúng không?",
+      "wechat": "Lý do thực sự cặp đôi chúng ta cãi nhau là {type}! 💔 Bạn có bị trúng không?",
+      "whatsapp": "Lý do thực sự cặp đôi chúng ta cãi nhau là {type}! 💔 Bạn có bị trúng không?",
+      "telegram": "Lý do thực sự cặp đôi chúng ta cãi nhau là {type}! 💔 Bạn có bị trúng không?",
+      "line": "Lý do thực sự cặp đôi chúng ta cãi nhau là {type}! 💔 Bạn có bị trúng không?",
+      "startDefault": "Tại sao tôi cứ cãi nhau với người yêu? 💔 Kiểm tra nguyên nhân xung đột 🔍",
+      "startKakao": "Tại sao tôi cứ cãi nhau với người yêu? 💔 Kiểm tra nguyên nhân xung đột 🔍",
+      "startWechat": "Tại sao tôi cứ cãi nhau với người yêu? 💔 Kiểm tra nguyên nhân xung đột 🔍",
+      "startWhatsapp": "Tại sao tôi cứ cãi nhau với người yêu? 💔 Kiểm tra nguyên nhân xung đột 🔍",
+      "startTelegram": "Tại sao tôi cứ cãi nhau với người yêu? 💔 Kiểm tra nguyên nhân xung đột 🔍",
+      "startLine": "Tại sao tôi cứ cãi nhau với người yêu? 💔 Kiểm tra nguyên nhân xung đột 🔍"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lúc.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 đề xuất bài kiểm tra tương tự",
+      "popularTestsTop5": "🔥 Top 5 đề xuất bài kiểm tra phổ biến"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Bộ não của bạn linh hoạt đến mức nào?\"",
