@@ -4692,6 +4692,62 @@
       "popularTestsTop5": "🔥 Tes Populer Top 5"
     }
   },
+  "phase2ItTechQuizTest": {
+    "startMessage": {
+      "line1": "\"Apakah Anda 'digital native'?\"",
+      "line2": "Dunia di mana kita menggunakan smartphone setiap hari dan AI memandu berita.",
+      "line3": "Tetapi seberapa banyak yang benar-benar kita ketahui tentang teknologi ini?",
+      "line4": "Dari perusahaan yang mengubah dunia seperti Apple, Google, dan Tesla hingga istilah tren teknologi terbaru.",
+      "line5": "Cari tahu apakah Anda adalah 'early adopter' yang melampaui zamannya, melampaui sekadar pengguna sederhana. Uji Tech IQ Anda. Mulai Kuis Pengetahuan IT 💻📱"
+    },
+    "ui": {
+      "startTest": "Mulai Kuis Pengetahuan IT",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tantangan! Kuis Pengetahuan IT/Teknologi Dunia)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "correctCount": "Jawaban Benar",
+      "itLevel": "Tingkat IT",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Tingkat Pengetahuan IT saya adalah {type}! 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "kakao": "Tingkat Pengetahuan IT saya adalah {type}! 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "wechat": "Tingkat Pengetahuan IT saya adalah {type}! 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "whatsapp": "Tingkat Pengetahuan IT saya adalah {type}! 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "telegram": "Tingkat Pengetahuan IT saya adalah {type}! 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "line": "Tingkat Pengetahuan IT saya adalah {type}! 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "startDefault": "Tantangan! Kuis Pengetahuan IT/Teknologi Dunia 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "startKakao": "Tantangan! Kuis Pengetahuan IT/Teknologi Dunia 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "startWechat": "Tantangan! Kuis Pengetahuan IT/Teknologi Dunia 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "startWhatsapp": "Tantangan! Kuis Pengetahuan IT/Teknologi Dunia 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "startTelegram": "Tantangan! Kuis Pengetahuan IT/Teknologi Dunia 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?",
+      "startLine": "Tantangan! Kuis Pengetahuan IT/Teknologi Dunia 💻 Apakah Anda tahu perusahaan mana yang menciptakan ChatGPT?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "whatsappCopy": "Tautan disalin! Tempel di WhatsApp untuk berbagi.",
+      "telegramCopy": "Tautan disalin! Tempel di Telegram untuk berbagi.",
+      "lineCopy": "Tautan disalin! Tempel di Line untuk berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
+      "popularTestsTop5": "🔥 Tes Populer Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

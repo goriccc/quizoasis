@@ -4643,6 +4643,62 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
     }
   },
+  "phase2ItTechQuizTest": {
+    "startMessage": {
+      "line1": "「你是『數位原住民』嗎？」",
+      "line2": "每天使用智慧型手機，AI主持新聞的世界。",
+      "line3": "但我們對這些技術了解多少呢？",
+      "line4": "從改變世界的公司如蘋果、谷歌、特斯拉到最新技術趨勢術語。",
+      "line5": "看看你是否是超越簡單用戶的『早期採用者』。測試你的科技智商(Tech IQ)。開始IT常識測驗 💻📱"
+    },
+    "ui": {
+      "startTest": "開始IT常識測驗",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（挑戰！世界IT/科技常識測驗）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "correctCount": "正確答案數",
+      "itLevel": "IT等級",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的IT常識等級是{type}！💻 你知道哪家公司創造了ChatGPT嗎？",
+      "kakao": "我的IT常識等級是{type}！💻 你知道哪家公司創造了ChatGPT嗎？",
+      "wechat": "我的IT常識等級是{type}！💻 你知道哪家公司創造了ChatGPT嗎？",
+      "whatsapp": "我的IT常識等級是{type}！💻 你知道哪家公司創造了ChatGPT嗎？",
+      "telegram": "我的IT常識等級是{type}！💻 你知道哪家公司創造了ChatGPT嗎？",
+      "line": "我的IT常識等級是{type}！💻 你知道哪家公司創造了ChatGPT嗎？",
+      "startDefault": "挑戰！世界IT/科技常識測驗 💻 你知道哪家公司創造了ChatGPT嗎？",
+      "startKakao": "挑戰！世界IT/科技常識測驗 💻 你知道哪家公司創造了ChatGPT嗎？",
+      "startWechat": "挑戰！世界IT/科技常識測驗 💻 你知道哪家公司創造了ChatGPT嗎？",
+      "startWhatsapp": "挑戰！世界IT/科技常識測驗 💻 你知道哪家公司創造了ChatGPT嗎？",
+      "startTelegram": "挑戰！世界IT/科技常識測驗 💻 你知道哪家公司創造了ChatGPT嗎？",
+      "startLine": "挑戰！世界IT/科技常識測驗 💻 你知道哪家公司創造了ChatGPT嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "whatsappCopy": "連結已複製！貼上到WhatsApp進行分享。",
+      "telegramCopy": "連結已複製！貼上到Telegram進行分享。",
+      "lineCopy": "連結已複製！貼上到Line進行分享。",
+      "wechatCopy": "連結已複製！貼上到微信進行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦 Top 5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
+    }
+  },
   "phase2CapitalQuizTest": {
     "startMessage": {
       "line1": "「美國的首都是紐約？澳洲是雪梨？」如果你這樣認為，這個測驗很緊急！",

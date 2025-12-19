@@ -4692,6 +4692,62 @@
       "popularTestsTop5": "🔥 最近热门测试推荐 Top 5"
     }
   },
+  "phase2ItTechQuizTest": {
+    "startMessage": {
+      "line1": "\"你是'数字原住民'吗？\"",
+      "line2": "每天使用智能手机，AI主持新闻的世界。",
+      "line3": "但我们对这些技术了解多少呢？",
+      "line4": "从改变世界的公司如苹果、谷歌、特斯拉到最新技术趋势术语。",
+      "line5": "看看你是否是超越简单用户的'早期采用者'。测试你的科技智商(Tech IQ)。开始IT常识测验 💻📱"
+    },
+    "ui": {
+      "startTest": "开始IT常识测验",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（挑战！世界IT/科技常识测验）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "correctCount": "正确答案数",
+      "itLevel": "IT等级",
+      "recommendation": "推荐"
+    },
+    "shareMessages": {
+      "default": "我的IT常识等级是{type}！💻 你知道哪家公司创造了ChatGPT吗？",
+      "kakao": "我的IT常识等级是{type}！💻 你知道哪家公司创造了ChatGPT吗？",
+      "wechat": "我的IT常识等级是{type}！💻 你知道哪家公司创造了ChatGPT吗？",
+      "whatsapp": "我的IT常识等级是{type}！💻 你知道哪家公司创造了ChatGPT吗？",
+      "telegram": "我的IT常识等级是{type}！💻 你知道哪家公司创造了ChatGPT吗？",
+      "line": "我的IT常识等级是{type}！💻 你知道哪家公司创造了ChatGPT吗？",
+      "startDefault": "挑战！世界IT/科技常识测验 💻 你知道哪家公司创造了ChatGPT吗？",
+      "startKakao": "挑战！世界IT/科技常识测验 💻 你知道哪家公司创造了ChatGPT吗？",
+      "startWechat": "挑战！世界IT/科技常识测验 💻 你知道哪家公司创造了ChatGPT吗？",
+      "startWhatsapp": "挑战！世界IT/科技常识测验 💻 你知道哪家公司创造了ChatGPT吗？",
+      "startTelegram": "挑战！世界IT/科技常识测验 💻 你知道哪家公司创造了ChatGPT吗？",
+      "startLine": "挑战！世界IT/科技常识测验 💻 你知道哪家公司创造了ChatGPT吗？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "whatsappCopy": "链接已复制！粘贴到WhatsApp进行分享。",
+      "telegramCopy": "链接已复制！粘贴到Telegram进行分享。",
+      "lineCopy": "链接已复制！粘贴到Line进行分享。",
+      "wechatCopy": "链接已复制！粘贴到微信进行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试推荐 Top 5",
+      "popularTestsTop5": "🔥 最近热门测试推荐 Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

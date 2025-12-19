@@ -4680,6 +4680,62 @@
       "popularTestsTop5": "🔥 最近人気のテスト おすすめ Top 5"
     }
   },
+  "phase2ItTechQuizTest": {
+    "startMessage": {
+      "line1": "「あなたは『デジタルネイティブ』ですか？」",
+      "line2": "毎日スマートフォンを使い、AIがニュースを進行する世界。",
+      "line3": "しかし、私たちはこれらの技術についてどれだけ知っているでしょうか？",
+      "line4": "Apple、Google、Teslaなど世界を変える企業から最新技術トレンド用語まで。",
+      "line5": "単純なユーザーを超えて時代を先取りする『アーリーアダプター』かどうか確認してみてください。あなたのテックIQをテストします。IT常識クイズ開始 💻📱"
+    },
+    "ui": {
+      "startTest": "IT常識クイズ開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（挑戦！世界IT/テック常識クイズ）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "correctCount": "正解数",
+      "itLevel": "ITレベル",
+      "recommendation": "おすすめ"
+    },
+    "shareMessages": {
+      "default": "私のIT常識レベルは{type}！💻 ChatGPTを作った会社を知っていますか？",
+      "kakao": "私のIT常識レベルは{type}！💻 ChatGPTを作った会社を知っていますか？",
+      "wechat": "私のIT常識レベルは{type}！💻 ChatGPTを作った会社を知っていますか？",
+      "whatsapp": "私のIT常識レベルは{type}！💻 ChatGPTを作った会社を知っていますか？",
+      "telegram": "私のIT常識レベルは{type}！💻 ChatGPTを作った会社を知っていますか？",
+      "line": "私のIT常識レベルは{type}！💻 ChatGPTを作った会社を知っていますか？",
+      "startDefault": "挑戦！世界IT/テック常識クイズ 💻 ChatGPTを作った会社を知っていますか？",
+      "startKakao": "挑戦！世界IT/テック常識クイズ 💻 ChatGPTを作った会社を知っていますか？",
+      "startWechat": "挑戦！世界IT/テック常識クイズ 💻 ChatGPTを作った会社を知っていますか？",
+      "startWhatsapp": "挑戦！世界IT/テック常識クイズ 💻 ChatGPTを作った会社を知っていますか？",
+      "startTelegram": "挑戦！世界IT/テック常識クイズ 💻 ChatGPTを作った会社を知っていますか？",
+      "startLine": "挑戦！世界IT/テック常識クイズ 💻 ChatGPTを作った会社を知っていますか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "whatsappCopy": "リンクがコピーされました！WhatsAppに貼り付けて共有してください。",
+      "telegramCopy": "リンクがコピーされました！テレグラムに貼り付けて共有してください。",
+      "lineCopy": "リンクがコピーされました！ラインに貼り付けて共有してください。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテスト おすすめ Top 5",
+      "popularTestsTop5": "🔥 最近人気のテスト おすすめ Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

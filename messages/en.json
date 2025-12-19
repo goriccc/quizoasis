@@ -1852,6 +1852,62 @@
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     }
   },
+  "phase2ItTechQuizTest": {
+    "startMessage": {
+      "line1": "\"Are you a 'digital native'?\"",
+      "line2": "A world where we use smartphones every day and AI hosts the news.",
+      "line3": "But how much do we really know about these technologies?",
+      "line4": "From companies that change the world like Apple, Google, and Tesla to the latest tech trend terms.",
+      "line5": "Find out if you're an 'early adopter' ahead of your time, beyond just a simple user. Test your Tech IQ. Start the IT Knowledge Quiz 💻📱"
+    },
+    "ui": {
+      "startTest": "Start IT Knowledge Quiz",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Challenge! World IT/Tech Knowledge Quiz)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "correctCount": "Correct Answers",
+      "itLevel": "IT Level",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My IT Knowledge Level is {type}! 💻 Do you know which company created ChatGPT?",
+      "kakao": "My IT Knowledge Level is {type}! 💻 Do you know which company created ChatGPT?",
+      "wechat": "My IT Knowledge Level is {type}! 💻 Do you know which company created ChatGPT?",
+      "whatsapp": "My IT Knowledge Level is {type}! 💻 Do you know which company created ChatGPT?",
+      "telegram": "My IT Knowledge Level is {type}! 💻 Do you know which company created ChatGPT?",
+      "line": "My IT Knowledge Level is {type}! 💻 Do you know which company created ChatGPT?",
+      "startDefault": "Challenge! World IT/Tech Knowledge Quiz 💻 Do you know which company created ChatGPT?",
+      "startKakao": "Challenge! World IT/Tech Knowledge Quiz 💻 Do you know which company created ChatGPT?",
+      "startWechat": "Challenge! World IT/Tech Knowledge Quiz 💻 Do you know which company created ChatGPT?",
+      "startWhatsapp": "Challenge! World IT/Tech Knowledge Quiz 💻 Do you know which company created ChatGPT?",
+      "startTelegram": "Challenge! World IT/Tech Knowledge Quiz 💻 Do you know which company created ChatGPT?",
+      "startLine": "Challenge! World IT/Tech Knowledge Quiz 💻 Do you know which company created ChatGPT?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "whatsappCopy": "Link copied! Paste it in WhatsApp to share.",
+      "telegramCopy": "Link copied! Paste it in Telegram to share.",
+      "lineCopy": "Link copied! Paste it in Line to share.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar Other Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"What special power would I have that others don't?\"",
