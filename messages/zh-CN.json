@@ -4857,6 +4857,62 @@
     },
     "recommendations": {
       "similarTestsTop5": "🎯 类似的其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近流行的测试推荐前5"
+    }
+  },
+  "phase2WorldHistoryQuizTest": {
+    "startMessage": {
+      "line1": "你是否将这句名言铭记在心：\"忘记历史的民族没有未来\"？",
+      "line2": "从辉煌的埃及文明到刀剑相撞的中世纪骑士时代。",
+      "line3": "人类历史在你的脑海中是多么生动地存在？",
+      "line4": "从如果你上课不睡觉就能回答的问题到为历史爱好者准备的高难度问题！",
+      "line5": "测试你的历史智商(History IQ)。踏上世界历史之旅 📜⚔️"
+    },
+    "ui": {
+      "startTest": "开始世界史测验",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（挑战！世界史测验）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "correctCount": "正确答案数",
+      "historyLevel": "知识水平",
+      "recommendation": "推荐"
+    },
+    "shareMessages": {
+      "default": "我的世界史常识水平是{type}！📜 你知道汉尼拔是谁吗？",
+      "kakao": "我的世界史常识水平是{type}！📜 你知道汉尼拔是谁吗？",
+      "wechat": "我的世界史常识水平是{type}！📜 你知道汉尼拔是谁吗？",
+      "whatsapp": "我的世界史常识水平是{type}！📜 你知道汉尼拔是谁吗？",
+      "telegram": "我的世界史常识水平是{type}！📜 你知道汉尼拔是谁吗？",
+      "line": "我的世界史常识水平是{type}！📜 你知道汉尼拔是谁吗？",
+      "startDefault": "挑战！世界史测验（古代/中世纪篇）📜 你知道汉尼拔是谁吗？",
+      "startKakao": "挑战！世界史测验（古代/中世纪篇）📜 你知道汉尼拔是谁吗？",
+      "startWechat": "挑战！世界史测验（古代/中世纪篇）📜 你知道汉尼拔是谁吗？",
+      "startWhatsapp": "挑战！世界史测验（古代/中世纪篇）📜 你知道汉尼拔是谁吗？",
+      "startTelegram": "挑战！世界史测验（古代/中世纪篇）📜 你知道汉尼拔是谁吗？",
+      "startLine": "挑战！世界史测验（古代/中世纪篇）📜 你知道汉尼拔是谁吗？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "whatsappCopy": "链接已复制！粘贴到WhatsApp进行分享。",
+      "telegramCopy": "链接已复制！粘贴到Telegram进行分享。",
+      "lineCopy": "链接已复制！粘贴到Line进行分享。",
+      "wechatCopy": "链接已复制！粘贴到微信进行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试推荐前5",
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },

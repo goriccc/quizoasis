@@ -5022,6 +5022,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
   },
+  "phase2WorldHistoryQuizTest": {
+    "startMessage": {
+      "line1": "Have you engraved this saying in your heart: \"A people without history have no future\"?",
+      "line2": "From the brilliant Egyptian civilization to the era of medieval knights clashing swords and shields.",
+      "line3": "How vividly does human history live in your mind?",
+      "line4": "From questions you could answer if you didn't sleep in class to high-difficulty questions for history enthusiasts!",
+      "line5": "Test your History IQ. Embark on a World History Journey 📜⚔️"
+    },
+    "ui": {
+      "startTest": "Start World History Quiz",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Challenge! World History Quiz)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "correctCount": "Correct Answers",
+      "historyLevel": "Knowledge Level",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
+      "kakao": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
+      "wechat": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
+      "whatsapp": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
+      "telegram": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
+      "line": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
+      "startDefault": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
+      "startKakao": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
+      "startWechat": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
+      "startWhatsapp": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
+      "startTelegram": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
+      "startLine": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "whatsappCopy": "Link copied! Paste it in WhatsApp to share.",
+      "telegramCopy": "Link copied! Paste it in Telegram to share.",
+      "lineCopy": "Link copied! Paste it in Line to share.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"How flexible is your brain?\"",

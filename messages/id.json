@@ -4860,6 +4860,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase2WorldHistoryQuizTest": {
+    "startMessage": {
+      "line1": "Apakah Anda mengukir pepatah ini di hati: \"Bangsa yang melupakan sejarah tidak memiliki masa depan\"?",
+      "line2": "Dari peradaban Mesir yang gemilang hingga era ksatria abad pertengahan dengan pedang dan perisai yang bertabrakan.",
+      "line3": "Seberapa hidup sejarah umat manusia dalam pikiran Anda?",
+      "line4": "Dari pertanyaan yang bisa Anda jawab jika tidak tidur di kelas hingga pertanyaan sulit untuk penggemar sejarah!",
+      "line5": "Uji IQ Sejarah (History IQ) Anda. Mulai Perjalanan Sejarah Dunia 📜⚔️"
+    },
+    "ui": {
+      "startTest": "Mulai Kuis Sejarah Dunia",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tantangan! Kuis Sejarah Dunia)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "correctCount": "Jumlah Jawaban Benar",
+      "historyLevel": "Tingkat Pengetahuan",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
+      "kakao": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
+      "wechat": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
+      "whatsapp": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
+      "telegram": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
+      "line": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
+      "startDefault": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
+      "startKakao": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
+      "startWechat": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
+      "startWhatsapp": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
+      "startTelegram": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
+      "startLine": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "whatsappCopy": "Tautan disalin! Tempel di WhatsApp untuk berbagi.",
+      "telegramCopy": "Tautan disalin! Tempel di Telegram untuk berbagi.",
+      "lineCopy": "Tautan disalin! Tempel di Line untuk berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

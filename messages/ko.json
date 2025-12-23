@@ -1510,6 +1510,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2WorldHistoryQuizTest": {
+    "startMessage": {
+      "line1": "\"역사를 잊은 민족에게 미래는 없다.\" 이 명언, 가슴에 새기고 계신가요?",
+      "line2": "찬란했던 이집트 문명부터 칼과 방패가 부딪히던 중세 기사들의 시대까지.",
+      "line3": "당신의 머릿속에는 인류의 역사가 얼마나 생생하게 살아있나요?",
+      "line4": "학창 시절 졸지 않았다면 맞힐 수 있는 문제부터 역사 덕후를 위한 고난도 문제까지!",
+      "line5": "당신의 역사 지능(History IQ)을 테스트합니다. 세계사 여행 떠나기 📜⚔️"
+    },
+    "ui": {
+      "startTest": "세계사 퀴즈 시작하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (도전! 세계사 퀴즈)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "correctCount": "정답 개수",
+      "historyLevel": "지식 레벨",
+      "recommendation": "추천"
+    },
+    "shareMessages": {
+      "default": "내 세계사 상식 레벨은 {type}! 📜 당신은 한니발이 누군지 아시나요?",
+      "kakao": "내 세계사 상식 레벨은 {type}! 📜 당신은 한니발이 누군지 아시나요?",
+      "wechat": "내 세계사 상식 레벨은 {type}! 📜 당신은 한니발이 누군지 아시나요?",
+      "whatsapp": "내 세계사 상식 레벨은 {type}! 📜 당신은 한니발이 누군지 아시나요?",
+      "telegram": "내 세계사 상식 레벨은 {type}! 📜 당신은 한니발이 누군지 아시나요?",
+      "line": "내 세계사 상식 레벨은 {type}! 📜 당신은 한니발이 누군지 아시나요?",
+      "startDefault": "도전! 세계사 퀴즈 (고대/중세편) 📜 당신은 한니발이 누군지 아시나요?",
+      "startKakao": "도전! 세계사 퀴즈 (고대/중세편) 📜 당신은 한니발이 누군지 아시나요?",
+      "startWechat": "도전! 세계사 퀴즈 (고대/중세편) 📜 당신은 한니발이 누군지 아시나요?",
+      "startWhatsapp": "도전! 세계사 퀴즈 (고대/중세편) 📜 당신은 한니발이 누군지 아시나요?",
+      "startTelegram": "도전! 세계사 퀴즈 (고대/중세편) 📜 당신은 한니발이 누군지 아시나요?",
+      "startLine": "도전! 세계사 퀴즈 (고대/중세편) 📜 당신은 한니발이 누군지 아시나요?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "whatsappCopy": "링크가 복사되었습니다! 왓츠앱에 붙여넣어 공유하세요.",
+      "telegramCopy": "링크가 복사되었습니다! 텔레그램에 붙여넣어 공유하세요.",
+      "lineCopy": "링크가 복사되었습니다! 라인에 붙여넣어 공유하세요.",
+      "wechatCopy": "링크가 복사되었습니다! 위챗에 붙여넣어 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"남들에게는 없는 특별한 힘이 나에게 있다면?\"",

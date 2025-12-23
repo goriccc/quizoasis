@@ -53,6 +53,7 @@ import { phase2CapitalQuizQuestions, phase2CapitalQuizResults } from '@/lib/phas
 import { phase2ItTechQuizQuestions, phase2ItTechQuizResults } from '@/lib/phase2_it_tech_quiz_data';
 import { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } from '@/lib/phase2_literature_quiz_data';
 import { phase2InventionQuizQuestions, phase2InventionQuizResults } from '@/lib/phase2_invention_quiz_data';
+import { phase2WorldHistoryQuizQuestions, phase2WorldHistoryQuizResults } from '@/lib/phase2_world_history_quiz_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -220,6 +221,9 @@ const Phase2LiteratureQuizTestClient = dynamic(() => import('@/components/Phase2
   ssr: false
 });
 const Phase2InventionQuizTestClient = dynamic(() => import('@/components/Phase2InventionQuizTestClient'), {
+  ssr: false
+});
+const Phase2WorldHistoryQuizTestClient = dynamic(() => import('@/components/Phase2WorldHistoryQuizTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2102,6 +2106,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2ImpulseBuyingQuestions}
           results={phase2ImpulseBuyingResults}
           questionCount={phase2ImpulseBuyingQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 도전! 세계사 퀴즈 (고대/중세편) 테스트
+  if (slug === 'phase2_world_history_quiz_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_world_history_quiz_test',
+      title: {
+        ko: '도전! 세계사 퀴즈 (고대/중세편)',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '"역사를 잊은 민족에게 미래는 없다." 이 명언, 가슴에 새기고 계신가요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_090_world_history.jpg',
+      type: 'quiz',
+      category: 'knowledge',
+      play_count: 0,
+      tags: {
+        ko: ['지식', '상식'],
+        en: [''],
+        ja: [''],
+        'zh-CN': [''],
+        'zh-TW': [''],
+        vi: [''],
+        id: ['']
+      }
+    };
+
+    return (
+      <>
+        <Phase2WorldHistoryQuizTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2WorldHistoryQuizQuestions}
+          results={phase2WorldHistoryQuizResults}
+          questionCount={phase2WorldHistoryQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5685,6 +5743,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_it_tech_quiz_test') TestClient = Phase2ItTechQuizTestClient;
     else if (slug === 'phase2_literature_quiz_test') TestClient = Phase2LiteratureQuizTestClient;
     else if (slug === 'phase2_invention_quiz_test') TestClient = Phase2InventionQuizTestClient;
+    else if (slug === 'phase2_world_history_quiz_test') TestClient = Phase2WorldHistoryQuizTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

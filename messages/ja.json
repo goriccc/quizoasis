@@ -4848,6 +4848,62 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2WorldHistoryQuizTest": {
+    "startMessage": {
+      "line1": "「歴史を忘れた民族に未来はない。」この名言、胸に刻んでいますか？",
+      "line2": "輝かしいエジプト文明から、剣と盾がぶつかり合った中世騎士たちの時代まで。",
+      "line3": "あなたの頭の中には人類の歴史がどれだけ鮮明に生きているでしょうか？",
+      "line4": "学生時代に居眠りしなければ答えられる問題から、歴史オタクのための高難度問題まで！",
+      "line5": "あなたの歴史知能（History IQ）をテストします。世界史の旅に出発 📜⚔️"
+    },
+    "ui": {
+      "startTest": "世界史クイズ開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（挑戦！世界史クイズ）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "correctCount": "正解数",
+      "historyLevel": "知識レベル",
+      "recommendation": "おすすめ"
+    },
+    "shareMessages": {
+      "default": "私の世界史常識レベルは{type}！📜 あなたはハンニバルが誰か知っていますか？",
+      "kakao": "私の世界史常識レベルは{type}！📜 あなたはハンニバルが誰か知っていますか？",
+      "wechat": "私の世界史常識レベルは{type}！📜 あなたはハンニバルが誰か知っていますか？",
+      "whatsapp": "私の世界史常識レベルは{type}！📜 あなたはハンニバルが誰か知っていますか？",
+      "telegram": "私の世界史常識レベルは{type}！📜 あなたはハンニバルが誰か知っていますか？",
+      "line": "私の世界史常識レベルは{type}！📜 あなたはハンニバルが誰か知っていますか？",
+      "startDefault": "挑戦！世界史クイズ（古代/中世編）📜 あなたはハンニバルが誰か知っていますか？",
+      "startKakao": "挑戦！世界史クイズ（古代/中世編）📜 あなたはハンニバルが誰か知っていますか？",
+      "startWechat": "挑戦！世界史クイズ（古代/中世編）📜 あなたはハンニバルが誰か知っていますか？",
+      "startWhatsapp": "挑戦！世界史クイズ（古代/中世編）📜 あなたはハンニバルが誰か知っていますか？",
+      "startTelegram": "挑戦！世界史クイズ（古代/中世編）📜 あなたはハンニバルが誰か知っていますか？",
+      "startLine": "挑戦！世界史クイズ（古代/中世編）📜 あなたはハンニバルが誰か知っていますか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "whatsappCopy": "リンクがコピーされました！WhatsAppに貼り付けて共有してください。",
+      "telegramCopy": "リンクがコピーされました！テレグラムに貼り付けて共有してください。",
+      "lineCopy": "リンクがコピーされました！ラインに貼り付けて共有してください。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

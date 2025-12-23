@@ -4748,6 +4748,62 @@
       "popularTestsTop5": "🔥 Top 5 Các Bài Kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2WorldHistoryQuizTest": {
+    "startMessage": {
+      "line1": "Bạn có khắc ghi câu nói này trong tim: \"Dân tộc quên lịch sử không có tương lai\"?",
+      "line2": "Từ nền văn minh Ai Cập rực rỡ đến thời đại của các hiệp sĩ Trung cổ với gươm và khiên va chạm.",
+      "line3": "Lịch sử nhân loại sống động đến mức nào trong tâm trí bạn?",
+      "line4": "Từ những câu hỏi bạn có thể trả lời nếu không ngủ gật trong lớp đến những câu hỏi khó dành cho người đam mê lịch sử!",
+      "line5": "Kiểm tra chỉ số thông minh Lịch sử (History IQ) của bạn. Bắt đầu hành trình Lịch sử Thế giới 📜⚔️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Câu đố Lịch sử Thế giới",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Thử thách! Câu đố Lịch sử Thế giới)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "correctCount": "Số Câu trả lời Đúng",
+      "historyLevel": "Cấp độ Kiến thức",
+      "recommendation": "Khuyến nghị"
+    },
+    "shareMessages": {
+      "default": "Cấp độ Kiến thức Lịch sử Thế giới của tôi là {type}! 📜 Bạn có biết Hannibal là ai không?",
+      "kakao": "Cấp độ Kiến thức Lịch sử Thế giới của tôi là {type}! 📜 Bạn có biết Hannibal là ai không?",
+      "wechat": "Cấp độ Kiến thức Lịch sử Thế giới của tôi là {type}! 📜 Bạn có biết Hannibal là ai không?",
+      "whatsapp": "Cấp độ Kiến thức Lịch sử Thế giới của tôi là {type}! 📜 Bạn có biết Hannibal là ai không?",
+      "telegram": "Cấp độ Kiến thức Lịch sử Thế giới của tôi là {type}! 📜 Bạn có biết Hannibal là ai không?",
+      "line": "Cấp độ Kiến thức Lịch sử Thế giới của tôi là {type}! 📜 Bạn có biết Hannibal là ai không?",
+      "startDefault": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cổ đại/Trung cổ) 📜 Bạn có biết Hannibal là ai không?",
+      "startKakao": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cổ đại/Trung cổ) 📜 Bạn có biết Hannibal là ai không?",
+      "startWechat": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cổ đại/Trung cổ) 📜 Bạn có biết Hannibal là ai không?",
+      "startWhatsapp": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cổ đại/Trung cổ) 📜 Bạn có biết Hannibal là ai không?",
+      "startTelegram": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cổ đại/Trung cổ) 📜 Bạn có biết Hannibal là ai không?",
+      "startLine": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cổ đại/Trung cổ) 📜 Bạn có biết Hannibal là ai không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "whatsappCopy": "Đã sao chép liên kết! Dán vào WhatsApp để chia sẻ.",
+      "telegramCopy": "Đã sao chép liên kết! Dán vào Telegram để chia sẻ.",
+      "lineCopy": "Đã sao chép liên kết! Dán vào Line để chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lúc.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Các Bài Kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Các Bài Kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2CapitalQuizTest": {
     "startMessage": {
       "line1": "\"Thủ đô của Mỹ là New York? Australia là Sydney?\" Nếu bạn nghĩ vậy, bài kiểm tra này rất cấp thiết!",

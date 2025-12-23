@@ -4811,6 +4811,62 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
   },
+  "phase2WorldHistoryQuizTest": {
+    "startMessage": {
+      "line1": "你是否將這句名言銘記在心：「忘記歷史的民族沒有未來」？",
+      "line2": "從輝煌的埃及文明到刀劍相撞的中世紀騎士時代。",
+      "line3": "人類歷史在你的腦海中是多麼生動地存在？",
+      "line4": "從如果你上課不睡覺就能回答的問題到為歷史愛好者準備的高難度問題！",
+      "line5": "測試你的歷史智商(History IQ)。踏上世界歷史之旅 📜⚔️"
+    },
+    "ui": {
+      "startTest": "開始世界史測驗",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（挑戰！世界史測驗）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "correctCount": "正確答案數",
+      "historyLevel": "知識水平",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的世界史常識水平是{type}！📜 你知道漢尼拔是誰嗎？",
+      "kakao": "我的世界史常識水平是{type}！📜 你知道漢尼拔是誰嗎？",
+      "wechat": "我的世界史常識水平是{type}！📜 你知道漢尼拔是誰嗎？",
+      "whatsapp": "我的世界史常識水平是{type}！📜 你知道漢尼拔是誰嗎？",
+      "telegram": "我的世界史常識水平是{type}！📜 你知道漢尼拔是誰嗎？",
+      "line": "我的世界史常識水平是{type}！📜 你知道漢尼拔是誰嗎？",
+      "startDefault": "挑戰！世界史測驗（古代/中世紀篇）📜 你知道漢尼拔是誰嗎？",
+      "startKakao": "挑戰！世界史測驗（古代/中世紀篇）📜 你知道漢尼拔是誰嗎？",
+      "startWechat": "挑戰！世界史測驗（古代/中世紀篇）📜 你知道漢尼拔是誰嗎？",
+      "startWhatsapp": "挑戰！世界史測驗（古代/中世紀篇）📜 你知道漢尼拔是誰嗎？",
+      "startTelegram": "挑戰！世界史測驗（古代/中世紀篇）📜 你知道漢尼拔是誰嗎？",
+      "startLine": "挑戰！世界史測驗（古代/中世紀篇）📜 你知道漢尼拔是誰嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "whatsappCopy": "連結已複製！貼上到WhatsApp進行分享。",
+      "telegramCopy": "連結已複製！貼上到Telegram進行分享。",
+      "lineCopy": "連結已複製！貼上到Line進行分享。",
+      "wechatCopy": "連結已複製！貼上到微信進行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "phase2CapitalQuizTest": {
     "startMessage": {
       "line1": "「美國的首都是紐約？澳洲是雪梨？」如果你這樣認為，這個測驗很緊急！",
