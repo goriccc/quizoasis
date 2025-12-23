@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { Phase2GuiltLevelQuestion, Phase2GuiltLevelResult, calculatePhase2GuiltLevelResult } from '@/lib/phase2GuiltLevelData';
+import { Phase2InventionQuizQuestion, Phase2InventionQuizResult, calculatePhase2InventionQuizResult } from '@/lib/phase2_invention_quiz_data';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
@@ -13,13 +13,13 @@ import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/ali
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
-interface Phase2GuiltLevelTestClientProps {
+interface Phase2InventionQuizTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: Phase2GuiltLevelQuestion[];
-  results: Phase2GuiltLevelResult[];
+  questions: Phase2InventionQuizQuestion[];
+  results: Phase2InventionQuizResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -32,7 +32,7 @@ interface Phase2GuiltLevelTestClientProps {
   }>;
 }
 
-export default function Phase2GuiltLevelTestClient({ 
+export default function Phase2InventionQuizTestClient({ 
   locale, 
   slug, 
   title, 
@@ -43,15 +43,15 @@ export default function Phase2GuiltLevelTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
-}: Phase2GuiltLevelTestClientProps) {
-  const t = useTranslations('phase2GuiltLevelTest');
+}: Phase2InventionQuizTestClientProps) {
+  const t = useTranslations('phase2InventionQuizTest');
   const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({}); // 원래 질문 인덱스를 키로 사용
-  const [result, setResult] = useState<Phase2GuiltLevelResult | null>(null);
+  const [result, setResult] = useState<Phase2InventionQuizResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<Phase2GuiltLevelQuestion[]>([]);
+  const [shuffledQuestions, setShuffledQuestions] = useState<Phase2InventionQuizQuestion[]>([]);
   const [originalQuestionIndices, setOriginalQuestionIndices] = useState<number[]>([]); // 셔플링된 질문의 원래 인덱스 매핑
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
@@ -60,6 +60,8 @@ export default function Phase2GuiltLevelTestClient({
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
+  const [correctAnswerIndicesMap, setCorrectAnswerIndicesMap] = useState<Record<number, number>>({}); // 셔플링된 옵션에서 정답 인덱스 추적
+  const [optionIndexMapping, setOptionIndexMapping] = useState<Record<number, Record<number, number>>>({}); // 셔플링된 옵션 인덱스 -> 원래 옵션 인덱스 매핑
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
@@ -68,14 +70,40 @@ export default function Phase2GuiltLevelTestClient({
     
     const questionKey = currentQuestion;
     if (!shuffledOptionsMap[questionKey] && shuffledQuestions[currentQuestion]) {
-      const optionsCopy = [...shuffledQuestions[currentQuestion].options];
-      for (let i = optionsCopy.length - 1; i > 0; i--) {
+      const question = shuffledQuestions[currentQuestion];
+      const originalCorrectAnswer = question.correctAnswer;
+      
+      // 옵션과 인덱스를 함께 셔플링
+      const optionsWithIndices = question.options.map((opt, idx) => ({ option: opt, originalIndex: idx }));
+      for (let i = optionsWithIndices.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+        [optionsWithIndices[i], optionsWithIndices[j]] = [optionsWithIndices[j], optionsWithIndices[i]];
       }
+      
+      // 셔플링된 옵션 배열
+      const shuffledOptions = optionsWithIndices.map(item => item.option);
+      
+      // 셔플링된 배열에서 정답의 새 인덱스 찾기
+      const newCorrectAnswerIndex = optionsWithIndices.findIndex(item => item.originalIndex === originalCorrectAnswer);
+      
       setShuffledOptionsMap(prev => ({
         ...prev,
-        [questionKey]: optionsCopy
+        [questionKey]: shuffledOptions
+      }));
+      
+      setCorrectAnswerIndicesMap(prev => ({
+        ...prev,
+        [questionKey]: newCorrectAnswerIndex
+      }));
+      
+      // 셔플링된 옵션 인덱스 -> 원래 옵션 인덱스 매핑 저장
+      const indexMapping: Record<number, number> = {};
+      optionsWithIndices.forEach((item, newIndex) => {
+        indexMapping[newIndex] = item.originalIndex;
+      });
+      setOptionIndexMapping(prev => ({
+        ...prev,
+        [questionKey]: indexMapping
       }));
     }
   }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
@@ -85,6 +113,7 @@ export default function Phase2GuiltLevelTestClient({
     if (!started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
+          // 한국어일 때는 시즌 상품이나 추천 상품 키워드 사용
           const keyword = locale === 'ko' ? 'trending products' : 'couple gifts';
           const products = await searchAliExpressProducts(keyword, 4, locale);
           setAliProducts(products);
@@ -122,11 +151,12 @@ export default function Phase2GuiltLevelTestClient({
 
   // 알리익스프레스 상품 로드 (결과에 맞춰)
   useEffect(() => {
-    if (result && locale !== 'ko') {
+    if (result) {
       const loadProducts = async () => {
         try {
-          const keywords = getProductKeywordsForDating(result.type, locale);
-          const products = await searchAliExpressProducts(keywords[0], 4, locale);
+          // 발명 퀴즈에 맞는 키워드 사용 (한국어일 때는 시즌/추천 상품, 다른 언어는 결과 타입 기반)
+          const keyword = locale === 'ko' ? 'trending products' : getProductKeywordsForDating(result.type, locale)[0];
+          const products = await searchAliExpressProducts(keyword, 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -221,7 +251,7 @@ export default function Phase2GuiltLevelTestClient({
   }, [showLoadingSpinner]);
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: Phase2GuiltLevelQuestion[]) => {
+  const shuffleQuestions = (questionList: Phase2InventionQuizQuestion[]) => {
     // 원래 인덱스와 함께 질문을 쌍으로 만들어서 셔플링
     const questionsWithIndices = questionList.map((q, idx) => ({ question: q, originalIndex: idx }));
     const shuffled = [...questionsWithIndices];
@@ -252,11 +282,15 @@ export default function Phase2GuiltLevelTestClient({
     window.scrollTo(0, 0);
   };
 
-  // 답변 처리
-  const handleAnswer = (score: number) => {
+  // 답변 처리 (선택한 옵션 인덱스를 저장)
+  const handleAnswer = (selectedOptionIndex: number) => {
     // 현재 질문의 원래 인덱스를 찾아서 답변 저장
     const currentOriginalIndex = originalQuestionIndices[currentQuestion];
-    const newAnswers = { ...answers, [currentOriginalIndex]: score };
+    
+    // 셔플링된 옵션 인덱스를 원래 옵션 인덱스로 변환
+    const originalOptionIndex = optionIndexMapping[currentQuestion]?.[selectedOptionIndex] ?? selectedOptionIndex;
+    
+    const newAnswers = { ...answers, [currentOriginalIndex]: originalOptionIndex };
     setAnswers(newAnswers);
 
     if (currentQuestion < shuffledQuestions.length - 1) {
@@ -264,24 +298,22 @@ export default function Phase2GuiltLevelTestClient({
     } else {
       setShowLoadingSpinner(true);
       
-      // 원래 질문 순서대로 점수 배열 재구성 (newAnswers에는 모든 답변이 포함됨)
-      const answersArray = questions.map((_, idx) => newAnswers[idx] ?? 0);
-      
-      // 결과 계산
-      const resultType = calculatePhase2GuiltLevelResult(answersArray);
-      const empathyFResult = results.find(r => r.type === resultType);
+      // 결과 계산 (정답 체크)
+      const resultType = calculatePhase2InventionQuizResult(newAnswers, questions);
+      const inventionQuizResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (empathyFResult) {
-        setResult(empathyFResult);
+      if (inventionQuizResult) {
+        setResult(inventionQuizResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (empathyFResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(empathyFResult.type, locale);
+      if (inventionQuizResult) {
+        // 한국어일 때는 시즌/추천 상품, 다른 언어는 결과 타입 기반
+        const keyword = locale === 'ko' ? 'trending products' : getProductKeywordsForDating(inventionQuizResult.type, locale)[0];
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] 공감 능력 결과:', empathyFResult.type, '→ 검색 키워드:', keywords[0]);
-        searchAliExpressProducts(keywords[0], 4, locale)
+        console.log('🔮 [시작] 발명 퀴즈 결과:', inventionQuizResult.type, '→ 검색 키워드:', keyword);
+        searchAliExpressProducts(keyword, 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
             console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map(p => p.product_title));
@@ -298,6 +330,9 @@ export default function Phase2GuiltLevelTestClient({
     const { questions: shuffled, originalIndices } = shuffleQuestions(questions);
     setShuffledQuestions(shuffled);
     setOriginalQuestionIndices(originalIndices);
+    setShuffledOptionsMap({});
+    setCorrectAnswerIndicesMap({});
+    setOptionIndexMapping({});
     setStarted(false);
     setCurrentQuestion(0);
     setAnswers({});
@@ -662,12 +697,11 @@ export default function Phase2GuiltLevelTestClient({
   // 결과 화면
   if (showResult && result) {
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const resultShortDescription = result.shortDescription?.[locale as keyof typeof result.shortDescription] || result.shortDescription?.ko || '';
+    const resultShortDescription = result.shortDescription[locale as keyof typeof result.shortDescription] || result.shortDescription.ko;
     const resultLongDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultGuiltLevel = result.guiltLevel[locale as keyof typeof result.guiltLevel] || result.guiltLevel.ko;
-    const resultCharacteristics = result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
-    const resultGoodMatch = result.goodMatch[locale as keyof typeof result.goodMatch] || result.goodMatch.ko;
-    const resultBadMatch = result.badMatch[locale as keyof typeof result.badMatch] || result.badMatch.ko;
+    const resultCorrectCount = result.correctCount[locale as keyof typeof result.correctCount] || result.correctCount.ko;
+    const resultInventionLevel = result.inventionLevel[locale as keyof typeof result.inventionLevel] || result.inventionLevel.ko;
+    const resultRecommendation = result.recommendation[locale as keyof typeof result.recommendation] || result.recommendation.ko;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -681,11 +715,9 @@ export default function Phase2GuiltLevelTestClient({
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
               </h1>
-              {resultShortDescription && (
-                <p className="text-lg font-semibold text-gray-700 mb-3">
-                  {resultShortDescription}
-                </p>
-              )}
+              <p className="text-lg font-semibold text-gray-700 mb-3">
+                {resultShortDescription}
+              </p>
               <p className="text-base text-gray-600 leading-relaxed">
                 {resultLongDescription}
               </p>
@@ -694,97 +726,32 @@ export default function Phase2GuiltLevelTestClient({
             <div className="mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
                 <h3 className="text-base font-bold text-gray-800 mb-2">
-                  📊 {t('ui.guiltLevel')}
+                  📊 {t('ui.correctCount')}
                 </h3>
-                <p className="text-2xl font-bold text-purple-600 text-center" style={{ fontSize: '1.5em' }}>
-                  {resultGuiltLevel}
+                <p className="text-2xl font-bold text-purple-600 text-center" style={{ fontSize: '2.25em' }}>
+                  {resultCorrectCount}
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+                <h3 className="text-base font-bold text-gray-800 mb-2">
+                  🎯 {t('ui.inventionLevel')}
+                </h3>
+                <p className="text-2xl font-bold text-blue-600 text-center" style={{ fontSize: '2.25em' }}>
+                  {resultInventionLevel}
                 </p>
               </div>
 
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-2">
-                  ⭐ {t('ui.characteristics')}
+                  💡 {t('ui.recommendation')}
                 </h3>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {resultCharacteristics.split(/[,、，]/).map((char, index) => (
-                    <span
-                      key={index}
-                      className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-3 py-1.5 rounded-full text-sm font-medium"
-                    >
-                      {char.trim()}
-                    </span>
-                  ))}
-                </div>
+                <p className="text-base text-gray-700 leading-relaxed">
+                  {resultRecommendation}
+                </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 mb-3">
-              <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  💖 {t('ui.goodMatch')}
-                </h3>
-                <div className="space-y-2">
-                  {(() => {
-                    // "Type 2 (서툰 뚝딱이)" 형식에서 Type 추출
-                    const matchType = resultGoodMatch.match(/Type\s*(\d+)/i);
-                    if (matchType) {
-                      const typeNumber = matchType[1];
-                      const matchTypeKey = `Type${typeNumber}`;
-                      const matchResult = results.find(r => r.type === matchTypeKey);
-                      if (matchResult) {
-                        const matchTitle = matchResult.title[locale as keyof typeof matchResult.title] || matchResult.title.ko;
-                        return (
-                          <div className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg px-3 py-2">
-                            <div className="flex items-center gap-2.5">
-                              <span className="text-xl">{matchResult.emoji}</span>
-                              <span className="text-sm font-medium text-gray-800">{matchTitle}</span>
-                            </div>
-                          </div>
-                        );
-                      }
-                    }
-                    return (
-                      <p className="text-sm text-gray-700">
-                        {resultGoodMatch}
-                      </p>
-                    );
-                  })()}
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  💔 {t('ui.badMatch')}
-                </h3>
-                <div className="space-y-2">
-                  {(() => {
-                    // "Type 6", "タイプ6", "类型6", "類型6", "Loại 6", "Tipe 6" 등 모든 언어 형식에서 숫자 추출
-                    const matchType = resultBadMatch.match(/(?:Type|タイプ|类型|類型|Loại|Tipe)\s*(\d+)/i);
-                    if (matchType) {
-                      const typeNumber = matchType[1];
-                      const matchTypeKey = `Type${typeNumber}`;
-                      const matchResult = results.find(r => r.type === matchTypeKey);
-                      if (matchResult) {
-                        const matchTitle = matchResult.title[locale as keyof typeof matchResult.title] || matchResult.title.ko;
-                        return (
-                          <div className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg px-3 py-2">
-                            <div className="flex items-center gap-2.5">
-                              <span className="text-xl">{matchResult.emoji}</span>
-                              <span className="text-sm font-medium text-gray-800">{matchTitle}</span>
-                            </div>
-                          </div>
-                        );
-                      }
-                    }
-                    return (
-                      <p className="text-sm text-gray-700">
-                        {resultBadMatch}
-                      </p>
-                    );
-                  })()}
-                </div>
-              </div>
-            </div>
 
             <div className="mt-8 mb-6 px-4">
               <button
@@ -979,7 +946,7 @@ export default function Phase2GuiltLevelTestClient({
               return (
                 <button
                   key={index}
-                  onClick={() => handleAnswer(option.score)}
+                  onClick={() => handleAnswer(index)}
                   className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
                 >
                   <div className="flex items-center">

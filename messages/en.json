@@ -1964,6 +1964,62 @@
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     }
   },
+  "phase2InventionQuizTest": {
+    "startMessage": {
+      "line1": "\"Was Edison the one who invented the light bulb?\"",
+      "line2": "Then who invented the telephone?",
+      "line3": "Countless inventions that have made our lives convenient. Behind them are great inventors who created new things with endless curiosity and passion.",
+      "line4": "Connect the world's famous inventions that you should know as common knowledge with their creators.",
+      "line5": "Test your Creativity IQ. Start the Invention Quiz 💡⚙️"
+    },
+    "ui": {
+      "startTest": "Start Invention Quiz",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Challenge! World Invention Quiz)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "correctCount": "Correct Answers",
+      "inventionLevel": "Invention Level",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My Invention Knowledge Level is {type}! 💡 Do you know who created the Internet (WWW)?",
+      "kakao": "My Invention Knowledge Level is {type}! 💡 Do you know who created the Internet (WWW)?",
+      "wechat": "My Invention Knowledge Level is {type}! 💡 Do you know who created the Internet (WWW)?",
+      "whatsapp": "My Invention Knowledge Level is {type}! 💡 Do you know who created the Internet (WWW)?",
+      "telegram": "My Invention Knowledge Level is {type}! 💡 Do you know who created the Internet (WWW)?",
+      "line": "My Invention Knowledge Level is {type}! 💡 Do you know who created the Internet (WWW)?",
+      "startDefault": "Challenge! World Invention Quiz 💡 Do you know who created the Internet (WWW)?",
+      "startKakao": "Challenge! World Invention Quiz 💡 Do you know who created the Internet (WWW)?",
+      "startWechat": "Challenge! World Invention Quiz 💡 Do you know who created the Internet (WWW)?",
+      "startWhatsapp": "Challenge! World Invention Quiz 💡 Do you know who created the Internet (WWW)?",
+      "startTelegram": "Challenge! World Invention Quiz 💡 Do you know who created the Internet (WWW)?",
+      "startLine": "Challenge! World Invention Quiz 💡 Do you know who created the Internet (WWW)?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "whatsappCopy": "Link copied! Paste it in WhatsApp to share.",
+      "telegramCopy": "Link copied! Paste it in Telegram to share.",
+      "lineCopy": "Link copied! Paste it in Line to share.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Other Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"What special power would I have that others don't?\"",

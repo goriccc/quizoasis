@@ -94,10 +94,16 @@ export default function AdSensePlaceholder({
   const [isAdLoaded, setIsAdLoaded] = useState(false);
   const [shouldHide, setShouldHide] = useState(false); // 항상 false로 유지하여 항상 보이도록
   const [isInitialized, setIsInitialized] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // 클라이언트 마운트 확인
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // 광고 요소가 렌더링된 후 개별적으로 초기화
   useEffect(() => {
-    if (!ADSENSE_CONFIG.ENABLED || isInitialized) return;
+    if (!ADSENSE_CONFIG.ENABLED || isInitialized || !isMounted) return;
     
     const initializeAd = () => {
       // 광고 요소가 DOM에 있는지 확인
@@ -152,11 +158,11 @@ export default function AdSensePlaceholder({
     
     // 초기화 시작
     initializeAd();
-  }, [isInitialized]);
+  }, [isInitialized, isMounted]);
 
   // 광고 로드 상태 확인 (게재 제한 중일 때 영역 숨기기)
   useEffect(() => {
-    if (!ADSENSE_CONFIG.ENABLED) return;
+    if (!ADSENSE_CONFIG.ENABLED || !isMounted) return;
     
     let observer: MutationObserver | null = null;
     let interval: NodeJS.Timeout | null = null;
@@ -233,7 +239,20 @@ export default function AdSensePlaceholder({
         clearInterval(interval);
       }
     };
-  }, []);
+  }, [isMounted]);
+
+  // 클라이언트에서만 렌더링 (hydration 오류 방지)
+  if (!isMounted) {
+    return (
+      <div 
+        style={{ 
+          minHeight: '250px',
+          ...style 
+        }}
+        className={className}
+      />
+    );
+  }
 
   if (ADSENSE_CONFIG.ENABLED) {
     // 실제 애드센스 광고

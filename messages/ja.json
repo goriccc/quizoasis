@@ -4792,6 +4792,62 @@
       "popularTestsTop5": "🔥 最近人気のテスト おすすめ Top 5"
     }
   },
+  "phase2InventionQuizTest": {
+    "startMessage": {
+      "line1": "「電球を発明したのはエジソン？」",
+      "line2": "では電話は誰が発明したのでしょうか？",
+      "line3": "私たちの生活を便利に変えた数々の発明品。その背後には、絶え間ない好奇心と情熱で新しいものを創造した偉大な発明家たちがいます。",
+      "line4": "常識として知っておくべき世界的な発明品とその主人公を結びつけてみてください。",
+      "line5": "あなたの創造力指数（Creativity IQ）をテストします。発明クイズ開始 💡⚙️"
+    },
+    "ui": {
+      "startTest": "発明クイズ開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（挑戦！世界発明品クイズ）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "correctCount": "正解数",
+      "inventionLevel": "発明レベル",
+      "recommendation": "おすすめ"
+    },
+    "shareMessages": {
+      "default": "私の発明常識レベルは{type}！💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "kakao": "私の発明常識レベルは{type}！💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "wechat": "私の発明常識レベルは{type}！💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "whatsapp": "私の発明常識レベルは{type}！💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "telegram": "私の発明常識レベルは{type}！💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "line": "私の発明常識レベルは{type}！💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "startDefault": "挑戦！世界発明品クイズ 💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "startKakao": "挑戦！世界発明品クイズ 💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "startWechat": "挑戦！世界発明品クイズ 💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "startWhatsapp": "挑戦！世界発明品クイズ 💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "startTelegram": "挑戦！世界発明品クイズ 💡 インターネット（WWW）を誰が作ったか知っていますか？",
+      "startLine": "挑戦！世界発明品クイズ 💡 インターネット（WWW）を誰が作ったか知っていますか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "whatsappCopy": "リンクがコピーされました！WhatsAppに貼り付けて共有してください。",
+      "telegramCopy": "リンクがコピーされました！テレグラムに貼り付けて共有してください。",
+      "lineCopy": "リンクがコピーされました！ラインに貼り付けて共有してください。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

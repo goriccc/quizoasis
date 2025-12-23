@@ -52,6 +52,7 @@ import { phase2AreYouTQuestions, phase2AreYouTResults } from '@/lib/phase2_are_y
 import { phase2CapitalQuizQuestions, phase2CapitalQuizResults } from '@/lib/phase2_capital_quiz_data';
 import { phase2ItTechQuizQuestions, phase2ItTechQuizResults } from '@/lib/phase2_it_tech_quiz_data';
 import { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } from '@/lib/phase2_literature_quiz_data';
+import { phase2InventionQuizQuestions, phase2InventionQuizResults } from '@/lib/phase2_invention_quiz_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -216,6 +217,9 @@ const Phase2ItTechQuizTestClient = dynamic(() => import('@/components/Phase2ItTe
   ssr: false
 });
 const Phase2LiteratureQuizTestClient = dynamic(() => import('@/components/Phase2LiteratureQuizTestClient'), {
+  ssr: false
+});
+const Phase2InventionQuizTestClient = dynamic(() => import('@/components/Phase2InventionQuizTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1991,6 +1995,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2LiteratureQuizQuestions}
           results={phase2LiteratureQuizResults}
           questionCount={phase2LiteratureQuizQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 도전! 세계 발명품 퀴즈 테스트
+  if (slug === 'phase2_invention_quiz_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_invention_quiz_test',
+      title: {
+        ko: '도전! 세계 발명품 퀴즈 (누가 만들었을까?)',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '전구를 발명한 사람은 에디슨?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_103_invention_quiz.jpg',
+      type: 'quiz',
+      category: 'knowledge',
+      play_count: 0,
+      tags: {
+        ko: ['지식'],
+        en: [''],
+        ja: [''],
+        'zh-CN': [''],
+        'zh-TW': [''],
+        vi: [''],
+        id: ['']
+      }
+    };
+
+    return (
+      <>
+        <Phase2InventionQuizTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2InventionQuizQuestions}
+          results={phase2InventionQuizResults}
+          questionCount={phase2InventionQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5412,6 +5470,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2LiteratureQuizQuestions,
       results: phase2LiteratureQuizResults
     };
+  } else if (slug === 'phase2_invention_quiz_test') {
+    testData = {
+      questions: phase2InventionQuizQuestions,
+      results: phase2InventionQuizResults
+    };
   } else if (slug === 'conflict-style-test') {
     testData = {
       questions: conflictStyleQuestions,
@@ -5621,6 +5684,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_capital_quiz_test') TestClient = Phase2CapitalQuizTestClient;
     else if (slug === 'phase2_it_tech_quiz_test') TestClient = Phase2ItTechQuizTestClient;
     else if (slug === 'phase2_literature_quiz_test') TestClient = Phase2LiteratureQuizTestClient;
+    else if (slug === 'phase2_invention_quiz_test') TestClient = Phase2InventionQuizTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

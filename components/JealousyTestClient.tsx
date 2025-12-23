@@ -86,10 +86,11 @@ export default function JealousyTestClient({
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
-    if (locale !== 'ko' && !started && aliProducts.length === 0) {
+    if (!started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
-          const products = await searchAliExpressProducts('couple gifts', 4, locale);
+          const keyword = locale === 'ko' ? 'trending products' : 'couple gifts';
+          const products = await searchAliExpressProducts(keyword, 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -510,43 +511,20 @@ export default function JealousyTestClient({
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
-              {locale === 'ko' ? (
-                <iframe 
-                  src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" 
-                  width="680" 
-                  height="140" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  referrerPolicy="unsafe-url"
-                  className="w-full"
-                />
-              ) : aliProducts.length > 0 ? (
-                <ProductRecommendations 
-                  products={aliProducts}
-                  title={locale === 'ja' ? '関連商品' :
-                         locale === 'zh-CN' ? '相关产品' :
-                         locale === 'zh-TW' ? '相關產品' :
-                         locale === 'vi' ? 'Sản phẩm liên quan' :
-                         locale === 'id' ? 'Produk terkait' :
-                         'Related Products'}
-                  locale={locale}
-                />
-              ) : (
-                <div className="flex justify-center">
-                  <a 
-                    href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
-                    target="_parent"
-                  >
-                    <Image 
-                      width={300} 
-                      height={250} 
-                      src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                      alt="AliExpress"
-                      style={{ maxWidth: '300px', height: 'auto' }}
-                    />
-                  </a>
-                </div>
-              )}
+              <div className="flex justify-center">
+                <a 
+                  href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
+                  target="_parent"
+                >
+                  <Image 
+                    width={300} 
+                    height={250} 
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                    alt="AliExpress"
+                    style={{ maxWidth: '300px', height: 'auto' }}
+                  />
+                </a>
+              </div>
             </div>
 
             <div className="mb-8 text-center">
@@ -658,50 +636,28 @@ export default function JealousyTestClient({
           </h2>
           
           
+          
+          
+          <p className="text-xs text-gray-500 text-center mb-3">
+            {t('footer.disclaimer')}
+          </p>
           <div className="mb-6">
-            {locale === 'ko' ? (
-              <div>
-                <p className="text-xs text-gray-500 text-center mb-3">
-                  쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다
-                </p>
-                <div className="flex justify-center">
-                <iframe 
-                  src="https://ads-partners.coupang.com/widgets.html?id=923499&template=carousel&trackingCode=AF6775264&subId=&width=300&height=250&tsource=" 
-                  width="300" 
-                  height="250" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  referrerPolicy="unsafe-url"
+            <div className="flex justify-center">
+              <a 
+                href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image 
+                  width={300} 
+                  height={250} 
+                  src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                  alt="AliExpress"
                   className="rounded-lg"
+                  style={{ maxWidth: '300px', height: 'auto' }}
                 />
-                </div>
-              </div>
-            ) : aliProducts.length > 0 ? (
-              <div className="max-w-sm mx-auto">
-                <ProductRecommendations 
-                  products={aliProducts.slice(0, 3)}
-                  title=""
-                  locale={locale}
-                />
-              </div>
-            ) : (
-              <div className="flex justify-center">
-                <a 
-                  href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image 
-                    width={300} 
-                    height={250} 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                    alt="AliExpress"
-                    className="rounded-lg"
-                    style={{ maxWidth: '300px', height: 'auto' }}
-                  />
-                </a>
-              </div>
-            )}
+              </a>
+            </div>
           </div>
 
           <button

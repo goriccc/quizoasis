@@ -4692,6 +4692,62 @@
       "popularTestsTop5": "🔥 Các Bài Kiểm tra Phổ biến Top 5"
     }
   },
+  "phase2InventionQuizTest": {
+    "startMessage": {
+      "line1": "\"Edison là người phát minh ra bóng đèn?\"",
+      "line2": "Vậy thì ai đã phát minh ra điện thoại?",
+      "line3": "Vô số phát minh đã làm thay đổi cuộc sống của chúng ta trở nên tiện lợi. Đằng sau chúng là những nhà phát minh vĩ đại đã tạo ra những điều mới với sự tò mò và niềm đam mê không ngừng.",
+      "line4": "Hãy kết nối những phát minh nổi tiếng thế giới mà bạn nên biết như kiến thức thông thường với những người tạo ra chúng.",
+      "line5": "Kiểm tra Chỉ số Sáng tạo (Creativity IQ) của bạn. Bắt đầu Câu đố Phát minh 💡⚙️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Câu đố Phát minh",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài Kiểm tra Khác",
+      "goToTest": "Đi đến Bài Kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Thử thách! Câu đố Phát minh Thế giới)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài Kiểm tra Tương tự Khác",
+      "correctCount": "Số Câu trả lời Đúng",
+      "inventionLevel": "Cấp độ Phát minh",
+      "recommendation": "Đề xuất"
+    },
+    "shareMessages": {
+      "default": "Cấp độ Kiến thức Phát minh của tôi là {type}! 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "kakao": "Cấp độ Kiến thức Phát minh của tôi là {type}! 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "wechat": "Cấp độ Kiến thức Phát minh của tôi là {type}! 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "whatsapp": "Cấp độ Kiến thức Phát minh của tôi là {type}! 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "telegram": "Cấp độ Kiến thức Phát minh của tôi là {type}! 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "line": "Cấp độ Kiến thức Phát minh của tôi là {type}! 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "startDefault": "Thử thách! Câu đố Phát minh Thế giới 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "startKakao": "Thử thách! Câu đố Phát minh Thế giới 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "startWechat": "Thử thách! Câu đố Phát minh Thế giới 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "startWhatsapp": "Thử thách! Câu đố Phát minh Thế giới 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "startTelegram": "Thử thách! Câu đố Phát minh Thế giới 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?",
+      "startLine": "Thử thách! Câu đố Phát minh Thế giới 💡 Bạn có biết ai đã tạo ra Internet (WWW) không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "whatsappCopy": "Đã sao chép liên kết! Dán vào WhatsApp để chia sẻ.",
+      "telegramCopy": "Đã sao chép liên kết! Dán vào Telegram để chia sẻ.",
+      "lineCopy": "Đã sao chép liên kết! Dán vào Line để chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lúc.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Các Bài Kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Các Bài Kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2CapitalQuizTest": {
     "startMessage": {
       "line1": "\"Thủ đô của Mỹ là New York? Australia là Sydney?\" Nếu bạn nghĩ vậy, bài kiểm tra này rất cấp thiết!",

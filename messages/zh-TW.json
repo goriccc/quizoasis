@@ -4755,6 +4755,62 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
     }
   },
+  "phase2InventionQuizTest": {
+    "startMessage": {
+      "line1": "「發明電燈的是愛迪生？」",
+      "line2": "那麼電話是誰發明的呢？",
+      "line3": "讓我們的生活變得便利的無數發明。它們的背後，是用無盡的好奇心和熱情創造新事物的偉大發明家們。",
+      "line4": "將作為常識必須了解的世界著名發明與其創造者連接起來吧。",
+      "line5": "測試你的創造力指數(Creativity IQ)。開始發明測驗 💡⚙️"
+    },
+    "ui": {
+      "startTest": "開始發明測驗",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（挑戰！世界發明品測驗）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "correctCount": "正確答案數",
+      "inventionLevel": "發明等級",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的發明常識等級是{type}！💡 你知道誰創造了網際網路(WWW)嗎？",
+      "kakao": "我的發明常識等級是{type}！💡 你知道誰創造了網際網路(WWW)嗎？",
+      "wechat": "我的發明常識等級是{type}！💡 你知道誰創造了網際網路(WWW)嗎？",
+      "whatsapp": "我的發明常識等級是{type}！💡 你知道誰創造了網際網路(WWW)嗎？",
+      "telegram": "我的發明常識等級是{type}！💡 你知道誰創造了網際網路(WWW)嗎？",
+      "line": "我的發明常識等級是{type}！💡 你知道誰創造了網際網路(WWW)嗎？",
+      "startDefault": "挑戰！世界發明品測驗 💡 你知道誰創造了網際網路(WWW)嗎？",
+      "startKakao": "挑戰！世界發明品測驗 💡 你知道誰創造了網際網路(WWW)嗎？",
+      "startWechat": "挑戰！世界發明品測驗 💡 你知道誰創造了網際網路(WWW)嗎？",
+      "startWhatsapp": "挑戰！世界發明品測驗 💡 你知道誰創造了網際網路(WWW)嗎？",
+      "startTelegram": "挑戰！世界發明品測驗 💡 你知道誰創造了網際網路(WWW)嗎？",
+      "startLine": "挑戰！世界發明品測驗 💡 你知道誰創造了網際網路(WWW)嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "whatsappCopy": "連結已複製！貼上到WhatsApp進行分享。",
+      "telegramCopy": "連結已複製！貼上到Telegram進行分享。",
+      "lineCopy": "連結已複製！貼上到Line進行分享。",
+      "wechatCopy": "連結已複製！貼上到微信進行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "phase2CapitalQuizTest": {
     "startMessage": {
       "line1": "「美國的首都是紐約？澳洲是雪梨？」如果你這樣認為，這個測驗很緊急！",

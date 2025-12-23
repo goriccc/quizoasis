@@ -4804,6 +4804,62 @@
       "popularTestsTop5": "🔥 Tes Populer Top 5"
     }
   },
+  "phase2InventionQuizTest": {
+    "startMessage": {
+      "line1": "\"Apakah Edison yang menemukan bola lampu?\"",
+      "line2": "Lalu siapa yang menemukan telepon?",
+      "line3": "Banyak penemuan yang telah membuat hidup kita menjadi nyaman. Di baliknya ada penemu hebat yang menciptakan hal-hal baru dengan rasa ingin tahu dan semangat yang tak pernah berakhir.",
+      "line4": "Hubungkan penemuan terkenal dunia yang harus Anda ketahui sebagai pengetahuan umum dengan penciptanya.",
+      "line5": "Uji Indeks Kreativitas (Creativity IQ) Anda. Mulai Kuis Penemuan 💡⚙️"
+    },
+    "ui": {
+      "startTest": "Mulai Kuis Penemuan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tantangan! Kuis Penemuan Dunia)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "correctCount": "Jawaban Benar",
+      "inventionLevel": "Tingkat Penemuan",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Tingkat Pengetahuan Penemuan saya adalah {type}! 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "kakao": "Tingkat Pengetahuan Penemuan saya adalah {type}! 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "wechat": "Tingkat Pengetahuan Penemuan saya adalah {type}! 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "whatsapp": "Tingkat Pengetahuan Penemuan saya adalah {type}! 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "telegram": "Tingkat Pengetahuan Penemuan saya adalah {type}! 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "line": "Tingkat Pengetahuan Penemuan saya adalah {type}! 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "startDefault": "Tantangan! Kuis Penemuan Dunia 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "startKakao": "Tantangan! Kuis Penemuan Dunia 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "startWechat": "Tantangan! Kuis Penemuan Dunia 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "startWhatsapp": "Tantangan! Kuis Penemuan Dunia 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "startTelegram": "Tantangan! Kuis Penemuan Dunia 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?",
+      "startLine": "Tantangan! Kuis Penemuan Dunia 💡 Apakah Anda tahu siapa yang menciptakan Internet (WWW)?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "whatsappCopy": "Tautan disalin! Tempel di WhatsApp untuk berbagi.",
+      "telegramCopy": "Tautan disalin! Tempel di Telegram untuk berbagi.",
+      "lineCopy": "Tautan disalin! Tempel di Line untuk berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

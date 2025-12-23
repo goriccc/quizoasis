@@ -4804,6 +4804,62 @@
       "popularTestsTop5": "🔥 最近热门测试推荐 Top 5"
     }
   },
+  "phase2InventionQuizTest": {
+    "startMessage": {
+      "line1": "\"发明电灯的是爱迪生？\"",
+      "line2": "那么电话是谁发明的呢？",
+      "line3": "让我们的生活变得便利的无数发明。它们的背后，是用无尽的好奇心和热情创造新事物的伟大发明家们。",
+      "line4": "将作为常识必须了解的世界著名发明与其创造者连接起来吧。",
+      "line5": "测试你的创造力指数(Creativity IQ)。开始发明测验 💡⚙️"
+    },
+    "ui": {
+      "startTest": "开始发明测验",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（挑战！世界发明品测验）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "correctCount": "正确答案数",
+      "inventionLevel": "发明等级",
+      "recommendation": "推荐"
+    },
+    "shareMessages": {
+      "default": "我的发明常识等级是{type}！💡 你知道谁创造了互联网(WWW)吗？",
+      "kakao": "我的发明常识等级是{type}！💡 你知道谁创造了互联网(WWW)吗？",
+      "wechat": "我的发明常识等级是{type}！💡 你知道谁创造了互联网(WWW)吗？",
+      "whatsapp": "我的发明常识等级是{type}！💡 你知道谁创造了互联网(WWW)吗？",
+      "telegram": "我的发明常识等级是{type}！💡 你知道谁创造了互联网(WWW)吗？",
+      "line": "我的发明常识等级是{type}！💡 你知道谁创造了互联网(WWW)吗？",
+      "startDefault": "挑战！世界发明品测验 💡 你知道谁创造了互联网(WWW)吗？",
+      "startKakao": "挑战！世界发明品测验 💡 你知道谁创造了互联网(WWW)吗？",
+      "startWechat": "挑战！世界发明品测验 💡 你知道谁创造了互联网(WWW)吗？",
+      "startWhatsapp": "挑战！世界发明品测验 💡 你知道谁创造了互联网(WWW)吗？",
+      "startTelegram": "挑战！世界发明品测验 💡 你知道谁创造了互联网(WWW)吗？",
+      "startLine": "挑战！世界发明品测验 💡 你知道谁创造了互联网(WWW)吗？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "whatsappCopy": "链接已复制！粘贴到WhatsApp进行分享。",
+      "telegramCopy": "链接已复制！粘贴到Telegram进行分享。",
+      "lineCopy": "链接已复制！粘贴到Line进行分享。",
+      "wechatCopy": "链接已复制！粘贴到微信进行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

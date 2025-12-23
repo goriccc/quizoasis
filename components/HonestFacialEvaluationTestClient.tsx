@@ -616,10 +616,11 @@ export default function HonestFacialEvaluationTestClient({
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
   useEffect(() => {
-    if (locale !== 'ko' && !started && aliProducts.length === 0) {
+    if (!started && aliProducts.length === 0) {
       const loadProducts = async () => {
         try {
-          const products = await searchAliExpressProducts('Beauty, Cosmetics, Gift', 4, locale);
+          const keyword = locale === 'ko' ? 'trending products' : 'Beauty, Cosmetics, Gift';
+          const products = await searchAliExpressProducts(keyword, 4, locale);
           setAliProducts(products);
         } catch (error) {
           console.error('상품 로드 실패:', error);
@@ -1293,25 +1294,28 @@ export default function HonestFacialEvaluationTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">🎉 {t('ui.testCompleted')}</h2>
+          
+          
+          <p className="text-xs text-gray-500 text-center mb-3">
+            {tGlobal('footer.disclaimer')}
+          </p>
           <div className="mb-6">
-            {locale === 'ko' ? (
-              <div>
-                <p className="text-xs text-gray-500 text-center mb-3">쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다</p>
-                <div className="flex justify-center">
-                  <iframe src="https://ads-partners.coupang.com/widgets.html?id=923499&template=carousel&trackingCode=AF6775264&subId=&width=300&height=250&tsource=" width="300" height="250" frameBorder="0" scrolling="no" referrerPolicy="unsafe-url" />
-                </div>
-              </div>
-            ) : aliProducts.length > 0 ? (
-              <div className="max-w-sm mx-auto">
-                <ProductRecommendations products={aliProducts.slice(0, 3)} title="" locale={locale} />
-              </div>
-            ) : (
-              <div className="flex justify-center">
-                <a href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" target="_blank" rel="noopener noreferrer">
-                  <Image src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" alt="AliExpress" width={300} height={250} className="rounded-lg" style={{ maxWidth: '300px', height: 'auto' }} unoptimized />
-                </a>
-              </div>
-            )}
+            <div className="flex justify-center">
+              <a 
+                href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image 
+                  width={300} 
+                  height={250} 
+                  src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                  alt="AliExpress"
+                  className="rounded-lg"
+                  style={{ maxWidth: '300px', height: 'auto' }}
+                />
+              </a>
+            </div>
           </div>
           <button onClick={handleShowResult} className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg">{t('ui.viewResults')}</button>
         </div>
@@ -1645,18 +1649,21 @@ export default function HonestFacialEvaluationTestClient({
           </div>
           <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>{t('ui.totalParticipants', { count: formatPlayCount(playCount, locale as Locale) })}</p>
           <div className="max-w-[680px] mx-auto mb-6">
-            {locale === 'ko' ? (
-              <iframe src="https://ads-partners.coupang.com/widgets.html?id=925074&template=carousel&trackingCode=AF6775264&subId=&width=680&height=140&tsource=" width="680" height="140" frameBorder="0" scrolling="no" referrerPolicy="unsafe-url" className="w-full" />
-            ) : aliProducts.length > 0 ? (
-              <div className="max-w-sm mx-auto"><ProductRecommendations products={aliProducts.slice(0, 3)} title="" locale={locale} /></div>
-            ) : (
               <div className="flex justify-center">
-                <a href="https://s.click.aliexpress.com/e/_c4VOb3UR?bz=300*250" target="_parent">
-                  <Image width={300} height={250} src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" alt="AliExpress" style={{ maxWidth: '300px', height: 'auto' }} />
+                <a 
+                  href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
+                  target="_parent"
+                >
+                  <Image 
+                    width={300} 
+                    height={250} 
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                    alt="AliExpress"
+                    style={{ maxWidth: '300px', height: 'auto' }}
+                  />
                 </a>
               </div>
-            )}
-          </div>
+            </div>
           <div className="mb-8 text-center">
             <h2 className="text-lg font-bold text-gray-800 mb-4">{t('ui.shareWithFriends')}</h2>
             <div className="flex justify-center gap-2">
