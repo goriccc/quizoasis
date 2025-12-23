@@ -4736,6 +4736,62 @@
       "popularTestsTop5": "🔥 最近人気のテスト おすすめ Top 5"
     }
   },
+  "phase2LiteratureQuizTest": {
+    "startMessage": {
+      "line1": "「本棚に並んでいるその本、読んだことがありますか？」",
+      "line2": "タイトルはとても馴染みがあるが、いざ作者名を聞かれると混乱する世界の名作たち。",
+      "line3": "シェイクスピアの悲劇から現代文学の傑作まで。",
+      "line4": "あなたの頭の中の書斎にはどれだけの知識が蓄積されていますか？単に本を集めるコレクターなのか、深い文学的教養を備えた知識人なのか確認してみてください。",
+      "line5": "私の文学知能テスト 📚 世界文学の旅に出発 ✒️"
+    },
+    "ui": {
+      "startTest": "文学クイズ開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（挑戦！世界文学クイズ）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "correctCount": "正解数",
+      "literatureLevel": "文学レベル",
+      "recommendation": "おすすめ"
+    },
+    "shareMessages": {
+      "default": "私の文学教養スコアは{type}！📚 あなたは『デミアン』の作者を知っていますか？",
+      "kakao": "私の文学教養スコアは{type}！📚 あなたは『デミアン』の作者を知っていますか？",
+      "wechat": "私の文学教養スコアは{type}！📚 あなたは『デミアン』の作者を知っていますか？",
+      "whatsapp": "私の文学教養スコアは{type}！📚 あなたは『デミアン』の作者を知っていますか？",
+      "telegram": "私の文学教養スコアは{type}！📚 あなたは『デミアン』の作者を知っていますか？",
+      "line": "私の文学教養スコアは{type}！📚 あなたは『デミアン』の作者を知っていますか？",
+      "startDefault": "挑戦！世界文学クイズ 📚 あなたは『デミアン』の作者を知っていますか？",
+      "startKakao": "挑戦！世界文学クイズ 📚 あなたは『デミアン』の作者を知っていますか？",
+      "startWechat": "挑戦！世界文学クイズ 📚 あなたは『デミアン』の作者を知っていますか？",
+      "startWhatsapp": "挑戦！世界文学クイズ 📚 あなたは『デミアン』の作者を知っていますか？",
+      "startTelegram": "挑戦！世界文学クイズ 📚 あなたは『デミアン』の作者を知っていますか？",
+      "startLine": "挑戦！世界文学クイズ 📚 あなたは『デミアン』の作者を知っていますか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "whatsappCopy": "リンクがコピーされました！WhatsAppに貼り付けて共有してください。",
+      "telegramCopy": "リンクがコピーされました！テレグラムに貼り付けて共有してください。",
+      "lineCopy": "リンクがコピーされました！ラインに貼り付けて共有してください。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテスト おすすめ Top 5",
+      "popularTestsTop5": "🔥 最近人気のテスト おすすめ Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"あなたの脳はどれくらい柔軟ですか？\"",

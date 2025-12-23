@@ -4748,6 +4748,62 @@
       "popularTestsTop5": "🔥 最近热门测试推荐 Top 5"
     }
   },
+  "phase2LiteratureQuizTest": {
+    "startMessage": {
+      "line1": "\"书架上的那本书，你读过了吗？\"",
+      "line2": "标题非常熟悉，但被问到作者名字时却会混淆的世界名著。",
+      "line3": "从莎士比亚的悲剧到现代文学的杰作。",
+      "line4": "你脑海中的书房里积累了多少知识？看看你只是收集书籍的收藏家，还是拥有深厚文学素养的知识分子。",
+      "line5": "我的文学智商测试 📚 开启世界文学之旅 ✒️"
+    },
+    "ui": {
+      "startTest": "开始文学测验",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（挑战！世界文学测验）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "correctCount": "正确答案数",
+      "literatureLevel": "文学等级",
+      "recommendation": "推荐"
+    },
+    "shareMessages": {
+      "default": "我的文学素养分数是{type}！📚 你知道《德米安》的作者吗？",
+      "kakao": "我的文学素养分数是{type}！📚 你知道《德米安》的作者吗？",
+      "wechat": "我的文学素养分数是{type}！📚 你知道《德米安》的作者吗？",
+      "whatsapp": "我的文学素养分数是{type}！📚 你知道《德米安》的作者吗？",
+      "telegram": "我的文学素养分数是{type}！📚 你知道《德米安》的作者吗？",
+      "line": "我的文学素养分数是{type}！📚 你知道《德米安》的作者吗？",
+      "startDefault": "挑战！世界文学测验 📚 你知道《德米安》的作者吗？",
+      "startKakao": "挑战！世界文学测验 📚 你知道《德米安》的作者吗？",
+      "startWechat": "挑战！世界文学测验 📚 你知道《德米安》的作者吗？",
+      "startWhatsapp": "挑战！世界文学测验 📚 你知道《德米安》的作者吗？",
+      "startTelegram": "挑战！世界文学测验 📚 你知道《德米安》的作者吗？",
+      "startLine": "挑战！世界文学测验 📚 你知道《德米安》的作者吗？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "whatsappCopy": "链接已复制！粘贴到WhatsApp进行分享。",
+      "telegramCopy": "链接已复制！粘贴到Telegram进行分享。",
+      "lineCopy": "链接已复制！粘贴到Line进行分享。",
+      "wechatCopy": "链接已复制！粘贴到微信进行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试推荐 Top 5",
+      "popularTestsTop5": "🔥 最近热门测试推荐 Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"你的大脑有多灵活？\"",

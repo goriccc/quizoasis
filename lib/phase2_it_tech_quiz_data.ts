@@ -1112,3 +1112,6 @@ export function calculatePhase2ItTechQuizResult(answers: Record<number, number>,
     return "Type1";
   }
 }
+
+
+

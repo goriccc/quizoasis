@@ -4748,6 +4748,62 @@
       "popularTestsTop5": "🔥 Tes Populer Top 5"
     }
   },
+  "phase2LiteratureQuizTest": {
+    "startMessage": {
+      "line1": "\"Apakah Anda sudah membaca buku itu di rak buku Anda?\"",
+      "line2": "Mahakarya dunia dengan judul yang sangat familiar tetapi membingungkan nama penulis ketika ditanya.",
+      "line3": "Dari tragedi Shakespeare hingga mahakarya sastra modern.",
+      "line4": "Berapa banyak pengetahuan yang tersimpan di perpustakaan mental Anda? Cari tahu apakah Anda hanya kolektor yang mengumpulkan buku atau orang berpengetahuan dengan wawasan sastra yang mendalam.",
+      "line5": "Tes Kecerdasan Sastra Saya 📚 Memulai Perjalanan Sastra Dunia ✒️"
+    },
+    "ui": {
+      "startTest": "Mulai Kuis Sastra",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tantangan! Kuis Sastra Dunia)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "correctCount": "Jawaban Benar",
+      "literatureLevel": "Tingkat Sastra",
+      "recommendation": "Rekomendasi"
+    },
+    "shareMessages": {
+      "default": "Skor Pengetahuan Sastra saya adalah {type}! 📚 Apakah Anda tahu penulis 'Demian'?",
+      "kakao": "Skor Pengetahuan Sastra saya adalah {type}! 📚 Apakah Anda tahu penulis 'Demian'?",
+      "wechat": "Skor Pengetahuan Sastra saya adalah {type}! 📚 Apakah Anda tahu penulis 'Demian'?",
+      "whatsapp": "Skor Pengetahuan Sastra saya adalah {type}! 📚 Apakah Anda tahu penulis 'Demian'?",
+      "telegram": "Skor Pengetahuan Sastra saya adalah {type}! 📚 Apakah Anda tahu penulis 'Demian'?",
+      "line": "Skor Pengetahuan Sastra saya adalah {type}! 📚 Apakah Anda tahu penulis 'Demian'?",
+      "startDefault": "Tantangan! Kuis Sastra Dunia 📚 Apakah Anda tahu penulis 'Demian'?",
+      "startKakao": "Tantangan! Kuis Sastra Dunia 📚 Apakah Anda tahu penulis 'Demian'?",
+      "startWechat": "Tantangan! Kuis Sastra Dunia 📚 Apakah Anda tahu penulis 'Demian'?",
+      "startWhatsapp": "Tantangan! Kuis Sastra Dunia 📚 Apakah Anda tahu penulis 'Demian'?",
+      "startTelegram": "Tantangan! Kuis Sastra Dunia 📚 Apakah Anda tahu penulis 'Demian'?",
+      "startLine": "Tantangan! Kuis Sastra Dunia 📚 Apakah Anda tahu penulis 'Demian'?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "whatsappCopy": "Tautan disalin! Tempel di WhatsApp untuk berbagi.",
+      "telegramCopy": "Tautan disalin! Tempel di Telegram untuk berbagi.",
+      "lineCopy": "Tautan disalin! Tempel di Line untuk berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
+      "popularTestsTop5": "🔥 Tes Populer Top 5"
+    }
+  },
   "phase2CreativityLevelTest": {
     "startMessage": {
       "line1": "\"Seberapa fleksibel otak Anda?\"",

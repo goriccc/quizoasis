@@ -4699,6 +4699,62 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
     }
   },
+  "phase2LiteratureQuizTest": {
+    "startMessage": {
+      "line1": "「書架上的那本書，你讀過了嗎？」",
+      "line2": "標題非常熟悉，但被問到作者名字時卻會混淆的世界名著。",
+      "line3": "從莎士比亞的悲劇到現代文學的傑作。",
+      "line4": "你腦海中的書房裡積累了多少知識？看看你只是收集書籍的收藏家，還是擁有深厚文學素養的知識分子。",
+      "line5": "我的文學智商測驗 📚 開啟世界文學之旅 ✒️"
+    },
+    "ui": {
+      "startTest": "開始文學測驗",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（挑戰！世界文學測驗）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "correctCount": "正確答案數",
+      "literatureLevel": "文學等級",
+      "recommendation": "推薦"
+    },
+    "shareMessages": {
+      "default": "我的文學素養分數是{type}！📚 你知道《徬徨少年時》的作者嗎？",
+      "kakao": "我的文學素養分數是{type}！📚 你知道《徬徨少年時》的作者嗎？",
+      "wechat": "我的文學素養分數是{type}！📚 你知道《徬徨少年時》的作者嗎？",
+      "whatsapp": "我的文學素養分數是{type}！📚 你知道《徬徨少年時》的作者嗎？",
+      "telegram": "我的文學素養分數是{type}！📚 你知道《徬徨少年時》的作者嗎？",
+      "line": "我的文學素養分數是{type}！📚 你知道《徬徨少年時》的作者嗎？",
+      "startDefault": "挑戰！世界文學測驗 📚 你知道《徬徨少年時》的作者嗎？",
+      "startKakao": "挑戰！世界文學測驗 📚 你知道《徬徨少年時》的作者嗎？",
+      "startWechat": "挑戰！世界文學測驗 📚 你知道《徬徨少年時》的作者嗎？",
+      "startWhatsapp": "挑戰！世界文學測驗 📚 你知道《徬徨少年時》的作者嗎？",
+      "startTelegram": "挑戰！世界文學測驗 📚 你知道《徬徨少年時》的作者嗎？",
+      "startLine": "挑戰！世界文學測驗 📚 你知道《徬徨少年時》的作者嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "whatsappCopy": "連結已複製！貼上到WhatsApp進行分享。",
+      "telegramCopy": "連結已複製！貼上到Telegram進行分享。",
+      "lineCopy": "連結已複製！貼上到Line進行分享。",
+      "wechatCopy": "連結已複製！貼上到微信進行分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似的其他測試推薦 Top 5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦 Top 5"
+    }
+  },
   "phase2CapitalQuizTest": {
     "startMessage": {
       "line1": "「美國的首都是紐約？澳洲是雪梨？」如果你這樣認為，這個測驗很緊急！",

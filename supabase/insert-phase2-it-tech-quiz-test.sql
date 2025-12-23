@@ -19,13 +19,13 @@ INSERT INTO tests (
     "id": "Tantangan! Kuis Pengetahuan IT/Teknologi Dunia"
   }',
   '{
-    "ko": "당신은 \'디지털 네이티브\'인가요?",
-    "en": "Are you a \'digital native\'?",
+    "ko": "당신은 ''디지털 네이티브''인가요?",
+    "en": "Are you a ''digital native''?",
     "ja": "あなたは「デジタルネイティブ」ですか？",
     "zh-CN": "你是「数字原住民」吗？",
     "zh-TW": "你是「數位原住民」嗎？",
-    "vi": "Bạn có phải là \'người bản địa số\' không?",
-    "id": "Apakah Anda \'digital native\'?"
+    "vi": "Bạn có phải là ''người bản địa số'' không?",
+    "id": "Apakah Anda ''digital native''?"
   }',
   'phase2_test_106_it_tech_quiz.jpg',
   'quiz',
@@ -48,3 +48,6 @@ ON CONFLICT (slug) DO UPDATE SET
   type = EXCLUDED.type,
   category = EXCLUDED.category,
   tags = EXCLUDED.tags;
+
+
+

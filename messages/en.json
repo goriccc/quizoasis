@@ -1908,6 +1908,62 @@
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     }
   },
+  "phase2LiteratureQuizTest": {
+    "startMessage": {
+      "line1": "\"Have you read that book on your bookshelf?\"",
+      "line2": "World masterpieces with familiar titles but confusing author names when asked.",
+      "line3": "From Shakespeare's tragedies to modern literary masterpieces.",
+      "line4": "How much knowledge is stored in your mental library? Find out if you're just a collector who gathers books or a knowledgeable person with deep literary insight.",
+      "line5": "My Literature Intelligence Test 📚 Embark on a World Literature Journey ✒️"
+    },
+    "ui": {
+      "startTest": "Start Literature Quiz",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Challenge! World Literature Quiz)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "correctCount": "Correct Answers",
+      "literatureLevel": "Literature Level",
+      "recommendation": "Recommendation"
+    },
+    "shareMessages": {
+      "default": "My Literature Knowledge Score is {type}! 📚 Do you know the author of 'Demian'?",
+      "kakao": "My Literature Knowledge Score is {type}! 📚 Do you know the author of 'Demian'?",
+      "wechat": "My Literature Knowledge Score is {type}! 📚 Do you know the author of 'Demian'?",
+      "whatsapp": "My Literature Knowledge Score is {type}! 📚 Do you know the author of 'Demian'?",
+      "telegram": "My Literature Knowledge Score is {type}! 📚 Do you know the author of 'Demian'?",
+      "line": "My Literature Knowledge Score is {type}! 📚 Do you know the author of 'Demian'?",
+      "startDefault": "Challenge! World Literature Quiz 📚 Do you know the author of 'Demian'?",
+      "startKakao": "Challenge! World Literature Quiz 📚 Do you know the author of 'Demian'?",
+      "startWechat": "Challenge! World Literature Quiz 📚 Do you know the author of 'Demian'?",
+      "startWhatsapp": "Challenge! World Literature Quiz 📚 Do you know the author of 'Demian'?",
+      "startTelegram": "Challenge! World Literature Quiz 📚 Do you know the author of 'Demian'?",
+      "startLine": "Challenge! World Literature Quiz 📚 Do you know the author of 'Demian'?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "whatsappCopy": "Link copied! Paste it in WhatsApp to share.",
+      "telegramCopy": "Link copied! Paste it in Telegram to share.",
+      "lineCopy": "Link copied! Paste it in Line to share.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar Other Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"What special power would I have that others don't?\"",

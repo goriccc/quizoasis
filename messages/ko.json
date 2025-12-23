@@ -1398,6 +1398,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2LiteratureQuizTest": {
+    "startMessage": {
+      "line1": "\"책장에 꽂혀있는 그 책, 읽어보셨나요?\"",
+      "line2": "제목은 너무나 익숙하지만 막상 작가 이름을 물어보면 헷갈리는 세계 명작들.",
+      "line3": "셰익스피어의 비극부터 현대 문학의 걸작까지.",
+      "line4": "당신의 머릿속 서재에는 얼마나 많은 지식이 쌓여있나요? 단순히 책을 모으는 수집가인지, 깊이 있는 문학적 소양을 갖춘 지식인인지 확인해 보세요.",
+      "line5": "나의 문학 지능 테스트 📚 세계 문학 여행 떠나기 ✒️"
+    },
+    "ui": {
+      "startTest": "문학 퀴즈 시작하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (도전! 세계 문학 퀴즈)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "correctCount": "정답 개수",
+      "literatureLevel": "문학 레벨",
+      "recommendation": "추천"
+    },
+    "shareMessages": {
+      "default": "내 문학 소양 점수는 {type}! 📚 당신은 '데미안' 작가를 아시나요?",
+      "kakao": "내 문학 소양 점수는 {type}! 📚 당신은 '데미안' 작가를 아시나요?",
+      "wechat": "내 문학 소양 점수는 {type}! 📚 당신은 '데미안' 작가를 아시나요?",
+      "whatsapp": "내 문학 소양 점수는 {type}! 📚 당신은 '데미안' 작가를 아시나요?",
+      "telegram": "내 문학 소양 점수는 {type}! 📚 당신은 '데미안' 작가를 아시나요?",
+      "line": "내 문학 소양 점수는 {type}! 📚 당신은 '데미안' 작가를 아시나요?",
+      "startDefault": "도전! 세계 문학 퀴즈 📚 당신은 '데미안' 작가를 아시나요?",
+      "startKakao": "도전! 세계 문학 퀴즈 📚 당신은 '데미안' 작가를 아시나요?",
+      "startWechat": "도전! 세계 문학 퀴즈 📚 당신은 '데미안' 작가를 아시나요?",
+      "startWhatsapp": "도전! 세계 문학 퀴즈 📚 당신은 '데미안' 작가를 아시나요?",
+      "startTelegram": "도전! 세계 문학 퀴즈 📚 당신은 '데미안' 작가를 아시나요?",
+      "startLine": "도전! 세계 문학 퀴즈 📚 당신은 '데미안' 작가를 아시나요?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "whatsappCopy": "링크가 복사되었습니다! 왓츠앱에 붙여넣어 공유하세요.",
+      "telegramCopy": "링크가 복사되었습니다! 텔레그램에 붙여넣어 공유하세요.",
+      "lineCopy": "링크가 복사되었습니다! 라인에 붙여넣어 공유하세요.",
+      "wechatCopy": "링크가 복사되었습니다! 위챗에 붙여넣어 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"남들에게는 없는 특별한 힘이 나에게 있다면?\"",

@@ -4636,6 +4636,62 @@
       "popularTestsTop5": "🔥 Các Bài Kiểm Tra Phổ biến Top 5"
     }
   },
+  "phase2LiteratureQuizTest": {
+    "startMessage": {
+      "line1": "\"Bạn đã đọc cuốn sách đó trên giá sách chưa?\"",
+      "line2": "Những kiệt tác thế giới với tiêu đề quen thuộc nhưng tên tác giả lại gây nhầm lẫn khi được hỏi.",
+      "line3": "Từ bi kịch của Shakespeare đến các kiệt tác văn học hiện đại.",
+      "line4": "Bao nhiêu kiến thức được tích lũy trong thư viện trong đầu bạn? Hãy xem bạn chỉ là người sưu tập sách hay là một trí thức có hiểu biết văn học sâu sắc.",
+      "line5": "Kiểm tra Trí thông minh Văn học của tôi 📚 Bắt đầu Hành trình Văn học Thế giới ✒️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Câu đố Văn học",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài Kiểm tra Khác",
+      "goToTest": "Đi đến Bài Kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Thử thách! Câu đố Văn học Thế giới)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài Kiểm tra Tương tự Khác",
+      "correctCount": "Số Câu trả lời Đúng",
+      "literatureLevel": "Cấp độ Văn học",
+      "recommendation": "Đề xuất"
+    },
+    "shareMessages": {
+      "default": "Điểm Kiến thức Văn học của tôi là {type}! 📚 Bạn có biết tác giả của 'Demian' không?",
+      "kakao": "Điểm Kiến thức Văn học của tôi là {type}! 📚 Bạn có biết tác giả của 'Demian' không?",
+      "wechat": "Điểm Kiến thức Văn học của tôi là {type}! 📚 Bạn có biết tác giả của 'Demian' không?",
+      "whatsapp": "Điểm Kiến thức Văn học của tôi là {type}! 📚 Bạn có biết tác giả của 'Demian' không?",
+      "telegram": "Điểm Kiến thức Văn học của tôi là {type}! 📚 Bạn có biết tác giả của 'Demian' không?",
+      "line": "Điểm Kiến thức Văn học của tôi là {type}! 📚 Bạn có biết tác giả của 'Demian' không?",
+      "startDefault": "Thử thách! Câu đố Văn học Thế giới 📚 Bạn có biết tác giả của 'Demian' không?",
+      "startKakao": "Thử thách! Câu đố Văn học Thế giới 📚 Bạn có biết tác giả của 'Demian' không?",
+      "startWechat": "Thử thách! Câu đố Văn học Thế giới 📚 Bạn có biết tác giả của 'Demian' không?",
+      "startWhatsapp": "Thử thách! Câu đố Văn học Thế giới 📚 Bạn có biết tác giả của 'Demian' không?",
+      "startTelegram": "Thử thách! Câu đố Văn học Thế giới 📚 Bạn có biết tác giả của 'Demian' không?",
+      "startLine": "Thử thách! Câu đố Văn học Thế giới 📚 Bạn có biết tác giả của 'Demian' không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "whatsappCopy": "Đã sao chép liên kết! Dán vào WhatsApp để chia sẻ.",
+      "telegramCopy": "Đã sao chép liên kết! Dán vào Telegram để chia sẻ.",
+      "lineCopy": "Đã sao chép liên kết! Dán vào Line để chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau một lúc.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Các Bài Kiểm tra Tương tự Khác Top 5",
+      "popularTestsTop5": "🔥 Các Bài Kiểm tra Phổ biến Top 5"
+    }
+  },
   "phase2CapitalQuizTest": {
     "startMessage": {
       "line1": "\"Thủ đô của Mỹ là New York? Australia là Sydney?\" Nếu bạn nghĩ vậy, bài kiểm tra này rất cấp thiết!",
