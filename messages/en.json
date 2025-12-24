@@ -5024,11 +5024,11 @@
   },
   "phase2WorldHistoryQuizTest": {
     "startMessage": {
-      "line1": "Have you engraved this saying in your heart: \"A people without history have no future\"?",
-      "line2": "From the brilliant Egyptian civilization to the era of medieval knights clashing swords and shields.",
-      "line3": "How vividly does human history live in your mind?",
-      "line4": "From questions you could answer if you didn't sleep in class to high-difficulty questions for history enthusiasts!",
-      "line5": "Test your History IQ. Embark on a World History Journey 📜⚔️"
+      "line1": "Do you remember the events that created the world we live in today?",
+      "line2": "From revolutions where dynasties fell and citizens became masters, to wars and ideological conflicts that shook the world, and the scientific advances that sent humanity into space.",
+      "line3": "It's time to find the roots of the 'modern society' we live in.",
+      "line4": "We've gathered only the major events you must know as common knowledge. Do you have the eye to read the times?",
+      "line5": "Test your Modern History IQ. Let's travel through time 🚂🚀"
     },
     "ui": {
       "startTest": "Start World History Quiz",
@@ -5038,7 +5038,7 @@
       "retakeTest": "Retake",
       "otherTests": "View Other Tests",
       "goToTest": "Go to Test",
-      "adsenseTitle": "AdSense Ad Area (Challenge! World History Quiz)",
+      "adsenseTitle": "AdSense Ad Area (Challenge! World History Quiz - Modern/Contemporary Edition)",
       "linkCopy": "Copy Link",
       "kakao": "KakaoTalk",
       "telegram": "Telegram",
@@ -5051,18 +5051,18 @@
       "recommendation": "Recommendation"
     },
     "shareMessages": {
-      "default": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
-      "kakao": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
-      "wechat": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
-      "whatsapp": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
-      "telegram": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
-      "line": "My World History Knowledge Level is {type}! 📜 Do you know who Hannibal is?",
-      "startDefault": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
-      "startKakao": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
-      "startWechat": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
-      "startWhatsapp": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
-      "startTelegram": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?",
-      "startLine": "Challenge! World History Quiz (Ancient/Medieval Edition) 📜 Do you know who Hannibal is?"
+      "default": "My Modern History Knowledge Score is {type}! 🌍 Do you know when the Berlin Wall fell?",
+      "kakao": "My Modern History Knowledge Score is {type}! 🌍 Do you know when the Berlin Wall fell?",
+      "wechat": "My Modern History Knowledge Score is {type}! 🌍 Do you know when the Berlin Wall fell?",
+      "whatsapp": "My Modern History Knowledge Score is {type}! 🌍 Do you know when the Berlin Wall fell?",
+      "telegram": "My Modern History Knowledge Score is {type}! 🌍 Do you know when the Berlin Wall fell?",
+      "line": "My Modern History Knowledge Score is {type}! 🌍 Do you know when the Berlin Wall fell?",
+      "startDefault": "Challenge! World History Quiz (Modern/Contemporary Edition) 🌍 Do you know when the Berlin Wall fell?",
+      "startKakao": "Challenge! World History Quiz (Modern/Contemporary Edition) 🌍 Do you know when the Berlin Wall fell?",
+      "startWechat": "Challenge! World History Quiz (Modern/Contemporary Edition) 🌍 Do you know when the Berlin Wall fell?",
+      "startWhatsapp": "Challenge! World History Quiz (Modern/Contemporary Edition) 🌍 Do you know when the Berlin Wall fell?",
+      "startTelegram": "Challenge! World History Quiz (Modern/Contemporary Edition) 🌍 Do you know when the Berlin Wall fell?",
+      "startLine": "Challenge! World History Quiz (Modern/Contemporary Edition) 🌍 Do you know when the Berlin Wall fell?"
     },
     "alerts": {
       "linkCopied": "Link copied!",

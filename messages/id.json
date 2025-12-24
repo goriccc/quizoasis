@@ -4862,11 +4862,11 @@
   },
   "phase2WorldHistoryQuizTest": {
     "startMessage": {
-      "line1": "Apakah Anda mengukir pepatah ini di hati: \"Bangsa yang melupakan sejarah tidak memiliki masa depan\"?",
-      "line2": "Dari peradaban Mesir yang gemilang hingga era ksatria abad pertengahan dengan pedang dan perisai yang bertabrakan.",
-      "line3": "Seberapa hidup sejarah umat manusia dalam pikiran Anda?",
-      "line4": "Dari pertanyaan yang bisa Anda jawab jika tidak tidur di kelas hingga pertanyaan sulit untuk penggemar sejarah!",
-      "line5": "Uji IQ Sejarah (History IQ) Anda. Mulai Perjalanan Sejarah Dunia 📜⚔️"
+      "line1": "Apakah Anda ingat peristiwa yang menciptakan dunia yang kita tinggali saat ini?",
+      "line2": "Dari revolusi di mana dinasti runtuh dan warga menjadi tuan, hingga perang dan konflik ideologis yang mengguncang dunia, dan kemajuan ilmiah yang mengirim umat manusia ke luar angkasa.",
+      "line3": "Saatnya menemukan akar 'masyarakat modern' yang kita tinggali.",
+      "line4": "Kami telah mengumpulkan hanya peristiwa-peristiwa besar yang harus Anda ketahui sebagai pengetahuan umum. Apakah Anda memiliki mata untuk membaca zaman?",
+      "line5": "Uji IQ Sejarah Modern/Kontemporer (History IQ) Anda. Mulai Perjalanan Waktu 🚂🚀"
     },
     "ui": {
       "startTest": "Mulai Kuis Sejarah Dunia",
@@ -4876,7 +4876,7 @@
       "retakeTest": "Ulangi",
       "otherTests": "Lihat Tes Lainnya",
       "goToTest": "Pergi ke Tes",
-      "adsenseTitle": "Area Iklan AdSense (Tantangan! Kuis Sejarah Dunia)",
+      "adsenseTitle": "Area Iklan AdSense (Tantangan! Kuis Sejarah Dunia - Edisi Modern/Kontemporer)",
       "linkCopy": "Salin Tautan",
       "kakao": "KakaoTalk",
       "telegram": "Telegram",
@@ -4889,18 +4889,18 @@
       "recommendation": "Rekomendasi"
     },
     "shareMessages": {
-      "default": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
-      "kakao": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
-      "wechat": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
-      "whatsapp": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
-      "telegram": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
-      "line": "Tingkat Pengetahuan Sejarah Dunia saya adalah {type}! 📜 Apakah Anda tahu siapa Hannibal?",
-      "startDefault": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
-      "startKakao": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
-      "startWechat": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
-      "startWhatsapp": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
-      "startTelegram": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?",
-      "startLine": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan) 📜 Apakah Anda tahu siapa Hannibal?"
+      "default": "Skor Pengetahuan Sejarah Modern/Kontemporer saya adalah {type}! 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "kakao": "Skor Pengetahuan Sejarah Modern/Kontemporer saya adalah {type}! 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "wechat": "Skor Pengetahuan Sejarah Modern/Kontemporer saya adalah {type}! 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "whatsapp": "Skor Pengetahuan Sejarah Modern/Kontemporer saya adalah {type}! 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "telegram": "Skor Pengetahuan Sejarah Modern/Kontemporer saya adalah {type}! 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "line": "Skor Pengetahuan Sejarah Modern/Kontemporer saya adalah {type}! 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "startDefault": "Tantangan! Kuis Sejarah Dunia (Edisi Modern/Kontemporer) 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "startKakao": "Tantangan! Kuis Sejarah Dunia (Edisi Modern/Kontemporer) 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "startWechat": "Tantangan! Kuis Sejarah Dunia (Edisi Modern/Kontemporer) 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "startWhatsapp": "Tantangan! Kuis Sejarah Dunia (Edisi Modern/Kontemporer) 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "startTelegram": "Tantangan! Kuis Sejarah Dunia (Edisi Modern/Kontemporer) 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?",
+      "startLine": "Tantangan! Kuis Sejarah Dunia (Edisi Modern/Kontemporer) 🌍 Apakah Anda tahu kapan Tembok Berlin runtuh?"
     },
     "alerts": {
       "linkCopied": "Tautan disalin!",

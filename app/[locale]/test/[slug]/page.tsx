@@ -2114,11 +2114,11 @@ export default async function TestPage({ params }: Props) {
   }
 
   // 도전! 세계사 퀴즈 (고대/중세편) 테스트
-  if (slug === 'phase2_world_history_quiz_test') {
+  if (slug === 'phase2_world_history_modern_quiz_test') {
     const test = await getTestBySlug(slug) || {
-      slug: 'phase2_world_history_quiz_test',
+      slug: 'phase2_world_history_modern_quiz_test',
       title: {
-        ko: '도전! 세계사 퀴즈 (고대/중세편)',
+        ko: '도전! 세계사 퀴즈 (근대/현대편)',
         en: '',
         ja: '',
         'zh-CN': '',
@@ -2127,7 +2127,7 @@ export default async function TestPage({ params }: Props) {
         id: ''
       },
       description: {
-        ko: '"역사를 잊은 민족에게 미래는 없다." 이 명언, 가슴에 새기고 계신가요?',
+        ko: '지금의 세상을 만든 사건들을 기억하시나요?',
         en: '',
         ja: '',
         'zh-CN': '',
@@ -2135,7 +2135,7 @@ export default async function TestPage({ params }: Props) {
         vi: '',
         id: ''
       },
-      thumbnail: 'phase2_test_090_world_history.jpg',
+      thumbnail: 'phase2_test_091_modern_history.jpg',
       type: 'quiz',
       category: 'knowledge',
       play_count: 0,
@@ -5743,7 +5743,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_it_tech_quiz_test') TestClient = Phase2ItTechQuizTestClient;
     else if (slug === 'phase2_literature_quiz_test') TestClient = Phase2LiteratureQuizTestClient;
     else if (slug === 'phase2_invention_quiz_test') TestClient = Phase2InventionQuizTestClient;
-    else if (slug === 'phase2_world_history_quiz_test') TestClient = Phase2WorldHistoryQuizTestClient;
+    else if (slug === 'phase2_world_history_modern_quiz_test') TestClient = Phase2WorldHistoryQuizTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

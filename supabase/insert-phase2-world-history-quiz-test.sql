@@ -8,26 +8,26 @@ INSERT INTO tests (
   tags,
   play_count
 ) VALUES (
-  'phase2_world_history_quiz_test',
+  'phase2_world_history_modern_quiz_test',
   '{
-    "ko": "도전! 세계사 퀴즈 (고대/중세편)",
-    "en": "Challenge! World History Quiz (Ancient/Medieval Edition)",
-    "ja": "挑戦！世界史クイズ（古代/中世編）",
-    "zh-CN": "挑战！世界史测验（古代/中世纪篇）",
-    "zh-TW": "挑戰！世界史測驗（古代/中世紀篇）",
-    "vi": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cổ đại/Trung cổ)",
-    "id": "Tantangan! Kuis Sejarah Dunia (Edisi Kuno/Abad Pertengahan)"
+    "ko": "도전! 세계사 퀴즈 (근대/현대편)",
+    "en": "Challenge! World History Quiz (Modern/Contemporary Edition)",
+    "ja": "挑戦！世界史クイズ（近代/現代編）",
+    "zh-CN": "挑战！世界史测验（近代/现代篇）",
+    "zh-TW": "挑戰！世界史測驗（近代/現代篇）",
+    "vi": "Thử thách! Câu đố Lịch sử Thế giới (Kỳ Cận đại/Hiện đại)",
+    "id": "Tantangan! Kuis Sejarah Dunia (Edisi Modern/Kontemporer)"
   }',
   '{
-    "ko": "\"역사를 잊은 민족에게 미래는 없다.\" 이 명언, 가슴에 새기고 계신가요?",
-    "en": "Have you engraved this saying in your heart: \"A people without history have no future\"?",
-    "ja": "「歴史を忘れた民族に未来はない。」この名言、胸に刻んでいますか？",
-    "zh-CN": "你是否将这句名言铭记在心：\"忘记历史的民族没有未来\"？",
-    "zh-TW": "你是否將這句名言銘記在心：「忘記歷史的民族沒有未來」？",
-    "vi": "Bạn có khắc ghi câu nói này trong tim: \"Dân tộc quên lịch sử không có tương lai\"?",
-    "id": "Apakah Anda mengukir pepatah ini di hati: \"Bangsa yang melupakan sejarah tidak memiliki masa depan\"?"
+    "ko": "지금의 세상을 만든 사건들을 기억하시나요?",
+    "en": "Do you remember the events that created the world we live in today?",
+    "ja": "今の世界を作った出来事を覚えていますか？",
+    "zh-CN": "你还记得创造了当今世界的事件吗？",
+    "zh-TW": "你還記得創造了當今世界的事件嗎？",
+    "vi": "Bạn có nhớ những sự kiện đã tạo nên thế giới chúng ta đang sống hôm nay?",
+    "id": "Apakah Anda ingat peristiwa yang menciptakan dunia yang kita tinggali saat ini?"
   }',
-  'phase2_test_090_world_history.jpg',
+  'phase2_test_091_modern_history.jpg',
   'quiz',
   'knowledge',
   '{
@@ -48,5 +48,4 @@ ON CONFLICT (slug) DO UPDATE SET
   type = EXCLUDED.type,
   category = EXCLUDED.category,
   tags = EXCLUDED.tags;
-
 
