@@ -4961,6 +4961,62 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2HiddenTalentTest": {
+    "startMessage": {
+      "line1": "あなたはまだ自分の100%を使っていません。",
+      "line2": "平凡な日常に埋もれて、自分でも気づかなかったあなたの潜在能力。",
+      "line3": "危機的状況で光を放つ瞬発力でしょうか？それとも時代を先取りする洞察力でしょうか？",
+      "line4": "心理分析を通じて、現在眠っているがすぐに目覚めるあなたの「隠された才能」を予測します。",
+      "line5": "私の潜在能力の封印解除 🔓 隠された才能を確認 ✨"
+    },
+    "ui": {
+      "startTest": "隠された才能を確認する",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに移動する",
+      "adsenseTitle": "AdSense広告エリア（まだ知らない私の隠れた才能を見つける）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "hiddenTalent": "隠された才能",
+      "recommendedFields": "おすすめ分野",
+      "goodMatch": "最高の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の中に眠っている隠された才能は{type}です！ ✨ 私って天才かも？",
+      "kakao": "私の中に眠っている隠された才能は{type}です！ ✨ 私って天才かも？",
+      "wechat": "私の中に眠っている隠された才能は{type}です！ ✨ 私って天才かも？",
+      "whatsapp": "私の中に眠っている隠された才能は{type}です！ ✨ 私って天才かも？",
+      "telegram": "私の中に眠っている隠された才能は{type}です！ ✨ 私って天才かも？",
+      "line": "私の中に眠っている隠された才能は{type}です！ ✨ 私って天才かも？",
+      "startDefault": "まだ知らない私の隠れた才能を見つける ✨ 私の潜在能力の封印解除！",
+      "startKakao": "まだ知らない私の隠れた才能を見つける ✨ 私の潜在能力の封印解除！",
+      "startWechat": "まだ知らない私の隠れた才能を見つける ✨ 私の潜在能力の封印解除！",
+      "startWhatsapp": "まだ知らない私の隠れた才能を見つける ✨ 私の潜在能力の封印解除！",
+      "startTelegram": "まだ知らない私の隠れた才能を見つける ✨ 私の潜在能力の封印解除！",
+      "startLine": "まだ知らない私の隠れた才能を見つける ✨ 私の潜在能力の封印解除！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "もし私がYouTubeを始めたら？",

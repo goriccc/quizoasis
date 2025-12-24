@@ -4973,6 +4973,62 @@
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },
+  "phase2HiddenTalentTest": {
+    "startMessage": {
+      "line1": "你还没有使用自己的100%。",
+      "line2": "埋没在平凡日常中，连自己都没有意识到的你的潜在能力。",
+      "line3": "是在危机情况下发光的敏捷力？还是走在时代前列的洞察力？",
+      "line4": "通过心理分析，预测你目前沉睡但即将觉醒的「隐藏才能」。",
+      "line5": "解锁我的潜力 🔓 确认隐藏才能 ✨"
+    },
+    "ui": {
+      "startTest": "确认隐藏才能",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "和朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重做",
+      "otherTests": "其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（寻找我还不知道的隐藏才能）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "hiddenTalent": "隐藏才能",
+      "recommendedFields": "推荐领域",
+      "goodMatch": "完美配对",
+      "badMatch": "最差配对"
+    },
+    "shareMessages": {
+      "default": "我内心沉睡的隐藏才能是{type}！ ✨ 我难道是天才？",
+      "kakao": "我内心沉睡的隐藏才能是{type}！ ✨ 我难道是天才？",
+      "wechat": "我内心沉睡的隐藏才能是{type}！ ✨ 我难道是天才？",
+      "whatsapp": "我内心沉睡的隐藏才能是{type}！ ✨ 我难道是天才？",
+      "telegram": "我内心沉睡的隐藏才能是{type}！ ✨ 我难道是天才？",
+      "line": "我内心沉睡的隐藏才能是{type}！ ✨ 我难道是天才？",
+      "startDefault": "寻找我还不知道的隐藏才能 ✨ 解锁我的潜力！",
+      "startKakao": "寻找我还不知道的隐藏才能 ✨ 解锁我的潜力！",
+      "startWechat": "寻找我还不知道的隐藏才能 ✨ 解锁我的潜力！",
+      "startWhatsapp": "寻找我还不知道的隐藏才能 ✨ 解锁我的潜力！",
+      "startTelegram": "寻找我还不知道的隐藏才能 ✨ 解锁我的潜力！",
+      "startLine": "寻找我还不知道的隐藏才能 ✨ 解锁我的潜力！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "如果我要开始YouTube呢？",

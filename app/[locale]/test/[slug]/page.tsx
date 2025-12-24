@@ -55,6 +55,7 @@ import { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } from '@/li
 import { phase2InventionQuizQuestions, phase2InventionQuizResults } from '@/lib/phase2_invention_quiz_data';
 import { phase2WorldHistoryQuizQuestions, phase2WorldHistoryQuizResults } from '@/lib/phase2_world_history_quiz_data';
 import { phase2YoutubeChannelQuestions, phase2YoutubeChannelResults } from '@/lib/phase2_youtube_channel_data';
+import { phase2HiddenTalentQuestions, phase2HiddenTalentResults } from '@/lib/phase2_hidden_talent_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -228,6 +229,9 @@ const Phase2WorldHistoryQuizTestClient = dynamic(() => import('@/components/Phas
   ssr: false
 });
 const Phase2YoutubeChannelTestClient = dynamic(() => import('@/components/Phase2YoutubeChannelTestClient'), {
+  ssr: false
+});
+const Phase2HiddenTalentTestClient = dynamic(() => import('@/components/Phase2HiddenTalentTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2218,6 +2222,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2YoutubeChannelQuestions}
           results={phase2YoutubeChannelResults}
           questionCount={phase2YoutubeChannelQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 아직 모르는 나의 숨겨진 재능 찾기 테스트
+  if (slug === 'phase2_hidden_talent_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_hidden_talent_test',
+      title: {
+        ko: '아직 모르는 나의 숨겨진 재능 찾기',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '당신은 아직 자신의 100%를 쓰지 않았습니다.',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_055_hidden_talent.jpg',
+      type: 'aptitude',
+      category: 'self-understanding',
+      play_count: 0,
+      tags: {
+        ko: ['적성'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2HiddenTalentTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2HiddenTalentQuestions}
+          results={phase2HiddenTalentResults}
+          questionCount={phase2HiddenTalentQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5803,6 +5861,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_invention_quiz_test') TestClient = Phase2InventionQuizTestClient;
     else if (slug === 'phase2_world_history_modern_quiz_test') TestClient = Phase2WorldHistoryQuizTestClient;
     else if (slug === 'phase2_youtube_channel_test') TestClient = Phase2YoutubeChannelTestClient;
+    else if (slug === 'phase2_hidden_talent_test') TestClient = Phase2HiddenTalentTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

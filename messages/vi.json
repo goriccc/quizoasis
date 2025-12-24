@@ -4973,6 +4973,62 @@
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2HiddenTalentTest": {
+    "startMessage": {
+      "line1": "Bạn vẫn chưa sử dụng 100% bản thân mình.",
+      "line2": "Khả năng tiềm ẩn của bạn bị chôn vùi trong cuộc sống hàng ngày bình thường mà ngay cả bạn cũng không nhận ra.",
+      "line3": "Là khả năng phản ứng nhanh tỏa sáng trong tình huống khủng hoảng? Hay là sự sáng suốt đi trước thời đại?",
+      "line4": "Thông qua phân tích tâm lý, chúng tôi dự đoán 'tài năng ẩn giấu' của bạn hiện đang ngủ yên nhưng sắp thức tỉnh.",
+      "line5": "Giải phóng tiềm năng của tôi 🔓 Kiểm tra tài năng ẩn giấu ✨"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Tài năng Ẩn giấu",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Tìm Kiếm Tài Năng Ẩn Giấu Của Tôi)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra Tương tự Khác",
+      "hiddenTalent": "Tài năng Ẩn giấu",
+      "recommendedFields": "Lĩnh vực Được Đề xuất",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Tài năng ẩn giấu đang ngủ trong tôi là {type}! ✨ Tôi có phải là thiên tài không?",
+      "kakao": "Tài năng ẩn giấu đang ngủ trong tôi là {type}! ✨ Tôi có phải là thiên tài không?",
+      "wechat": "Tài năng ẩn giấu đang ngủ trong tôi là {type}! ✨ Tôi có phải là thiên tài không?",
+      "whatsapp": "Tài năng ẩn giấu đang ngủ trong tôi là {type}! ✨ Tôi có phải là thiên tài không?",
+      "telegram": "Tài năng ẩn giấu đang ngủ trong tôi là {type}! ✨ Tôi có phải là thiên tài không?",
+      "line": "Tài năng ẩn giấu đang ngủ trong tôi là {type}! ✨ Tôi có phải là thiên tài không?",
+      "startDefault": "Tìm Kiếm Tài Năng Ẩn Giấu Của Tôi ✨ Giải phóng tiềm năng của tôi!",
+      "startKakao": "Tìm Kiếm Tài Năng Ẩn Giấu Của Tôi ✨ Giải phóng tiềm năng của tôi!",
+      "startWechat": "Tìm Kiếm Tài Năng Ẩn Giấu Của Tôi ✨ Giải phóng tiềm năng của tôi!",
+      "startWhatsapp": "Tìm Kiếm Tài Năng Ẩn Giấu Của Tôi ✨ Giải phóng tiềm năng của tôi!",
+      "startTelegram": "Tìm Kiếm Tài Năng Ẩn Giấu Của Tôi ✨ Giải phóng tiềm năng của tôi!",
+      "startLine": "Tìm Kiếm Tài Năng Ẩn Giấu Của Tôi ✨ Giải phóng tiềm năng của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "Nếu tôi bắt đầu YouTube thì sao?",

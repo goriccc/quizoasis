@@ -5135,6 +5135,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2HiddenTalentTest": {
+    "startMessage": {
+      "line1": "You haven&apos;t used 100% of yourself yet.",
+      "line2": "Your hidden potential abilities buried in ordinary daily life that even you haven&apos;t noticed.",
+      "line3": "Is it quick thinking that shines in crisis situations? Or insight ahead of the times?",
+      "line4": "Through psychological analysis, we predict your &apos;hidden talent&apos; that is currently dormant but will soon awaken.",
+      "line5": "Unlock my potential 🔓 Check hidden talent ✨"
+    },
+    "ui": {
+      "startTest": "Check Hidden Talent",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Hidden Talent)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "hiddenTalent": "Hidden Talent",
+      "recommendedFields": "Recommended Fields",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My hidden talent is {type}! ✨ Am I a genius?",
+      "kakao": "My hidden talent is {type}! ✨ Am I a genius?",
+      "wechat": "My hidden talent is {type}! ✨ Am I a genius?",
+      "whatsapp": "My hidden talent is {type}! ✨ Am I a genius?",
+      "telegram": "My hidden talent is {type}! ✨ Am I a genius?",
+      "line": "My hidden talent is {type}! ✨ Am I a genius?",
+      "startDefault": "Find My Hidden Talent ✨ Unlock my potential!",
+      "startKakao": "Find My Hidden Talent ✨ Unlock my potential!",
+      "startWechat": "Find My Hidden Talent ✨ Unlock my potential!",
+      "startWhatsapp": "Find My Hidden Talent ✨ Unlock my potential!",
+      "startTelegram": "Find My Hidden Talent ✨ Unlock my potential!",
+      "startLine": "Find My Hidden Talent ✨ Unlock my potential!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "What if I started YouTube?",

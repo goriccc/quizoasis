@@ -4973,6 +4973,62 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2HiddenTalentTest": {
+    "startMessage": {
+      "line1": "Anda belum menggunakan 100% dari diri Anda.",
+      "line2": "Kemampuan potensial Anda yang terkubur dalam kehidupan sehari-hari biasa yang bahkan Anda sendiri tidak menyadarinya.",
+      "line3": "Apakah itu kelincahan yang bersinar dalam situasi krisis? Atau wawasan yang melampaui zaman?",
+      "line4": "Melalui analisis psikologis, kami memprediksi 'bakat tersembunyi' Anda yang saat ini tertidur tetapi akan segera terbangun.",
+      "line5": "Buka potensi saya 🔓 Periksa bakat tersembunyi ✨"
+    },
+    "ui": {
+      "startTest": "Periksa Bakat Tersembunyi",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Temukan Bakat Tersembunyi Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "hiddenTalent": "Bakat Tersembunyi",
+      "recommendedFields": "Bidang yang Direkomendasikan",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Bakat tersembunyi yang tertidur dalam diriku adalah {type}! ✨ Apakah saya jenius?",
+      "kakao": "Bakat tersembunyi yang tertidur dalam diriku adalah {type}! ✨ Apakah saya jenius?",
+      "wechat": "Bakat tersembunyi yang tertidur dalam diriku adalah {type}! ✨ Apakah saya jenius?",
+      "whatsapp": "Bakat tersembunyi yang tertidur dalam diriku adalah {type}! ✨ Apakah saya jenius?",
+      "telegram": "Bakat tersembunyi yang tertidur dalam diriku adalah {type}! ✨ Apakah saya jenius?",
+      "line": "Bakat tersembunyi yang tertidur dalam diriku adalah {type}! ✨ Apakah saya jenius?",
+      "startDefault": "Temukan Bakat Tersembunyi Saya ✨ Buka potensi saya!",
+      "startKakao": "Temukan Bakat Tersembunyi Saya ✨ Buka potensi saya!",
+      "startWechat": "Temukan Bakat Tersembunyi Saya ✨ Buka potensi saya!",
+      "startWhatsapp": "Temukan Bakat Tersembunyi Saya ✨ Buka potensi saya!",
+      "startTelegram": "Temukan Bakat Tersembunyi Saya ✨ Buka potensi saya!",
+      "startLine": "Temukan Bakat Tersembunyi Saya ✨ Buka potensi saya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "Bagaimana jika saya memulai YouTube?",
