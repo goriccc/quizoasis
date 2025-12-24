@@ -4979,5 +4979,60 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "phase2YoutubeChannelTest": {
+    "startMessage": {
+      "line1": "如果我要開始YouTube呢？",
+      "line2": "吃播？Vlog？遊戲？我們分析你隱藏的「關注欲」和「才能」，找到能讓你成為百萬訂閱YouTuber的最佳頻道概念。",
+      "line3": "演算法會為你選擇什麼命運？",
+      "line4": "",
+      "line5": "查看我的定制頻道 📺"
+    },
+    "ui": {
+      "startTest": "查看YouTube頻道概念",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "和朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（走紅？我的YouTube頻道概念）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似其他測試",
+      "mainContent": "主力內容",
+      "cheatKey": "走紅秘笈",
+      "collabPartner": "推薦合作搭檔"
+    },
+    "shareMessages": {
+      "default": "我的YouTube頻道類型是{type}！📺 訂閱並開啟通知！",
+      "kakao": "我的YouTube頻道類型是{type}！📺 訂閱並開啟通知！",
+      "wechat": "我的YouTube頻道類型是{type}！📺 訂閱並開啟通知！",
+      "whatsapp": "我的YouTube頻道類型是{type}！📺 訂閱並開啟通知！",
+      "telegram": "我的YouTube頻道類型是{type}！📺 訂閱並開啟通知！",
+      "line": "我的YouTube頻道類型是{type}！📺 訂閱並開啟通知！",
+      "startDefault": "走紅？我的YouTube頻道概念 📺 訂閱並開啟通知！",
+      "startKakao": "走紅？我的YouTube頻道概念 📺 訂閱並開啟通知！",
+      "startWechat": "走紅？我的YouTube頻道概念 📺 訂閱並開啟通知！",
+      "startWhatsapp": "走紅？我的YouTube頻道概念 📺 訂閱並開啟通知！",
+      "startTelegram": "走紅？我的YouTube頻道概念 📺 訂閱並開啟通知！",
+      "startLine": "走紅？我的YouTube頻道概念 📺 訂閱並開啟通知！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }

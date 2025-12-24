@@ -4960,5 +4960,60 @@
       "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "phase2YoutubeChannelTest": {
+    "startMessage": {
+      "line1": "もし私がYouTubeを始めたら？",
+      "line2": "モッパン？ブログ？ゲーム？あなたの中に眠っている「注目欲求力」と「才能」を分析し、登録者100万人のYouTuberになれる最適なチャンネルコンセプトを見つけます。",
+      "line3": "アルゴリズムが選ぶあなたの運命は？",
+      "line4": "",
+      "line5": "私のカスタムチャンネルを確認する 📺"
+    },
+    "ui": {
+      "startTest": "YouTubeチャンネルコンセプトを確認する",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに移動する",
+      "adsenseTitle": "AdSense広告エリア（急上昇？私のYouTubeチャンネルコンセプト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "mainContent": "主力コンテンツ",
+      "cheatKey": "急上昇チートキー",
+      "collabPartner": "おすすめ合流パートナー"
+    },
+    "shareMessages": {
+      "default": "私のYouTubeチャンネルタイプは{type}です！📺 チャンネル登録と通知をオンにしてください！",
+      "kakao": "私のYouTubeチャンネルタイプは{type}です！📺 チャンネル登録と通知をオンにしてください！",
+      "wechat": "私のYouTubeチャンネルタイプは{type}です！📺 チャンネル登録と通知をオンにしてください！",
+      "whatsapp": "私のYouTubeチャンネルタイプは{type}です！📺 チャンネル登録と通知をオンにしてください！",
+      "telegram": "私のYouTubeチャンネルタイプは{type}です！📺 チャンネル登録と通知をオンにしてください！",
+      "line": "私のYouTubeチャンネルタイプは{type}です！📺 チャンネル登録と通知をオンにしてください！",
+      "startDefault": "急上昇？私のYouTubeチャンネルコンセプト 📺 チャンネル登録と通知をオンにしてください！",
+      "startKakao": "急上昇？私のYouTubeチャンネルコンセプト 📺 チャンネル登録と通知をオンにしてください！",
+      "startWechat": "急上昇？私のYouTubeチャンネルコンセプト 📺 チャンネル登録と通知をオンにしてください！",
+      "startWhatsapp": "急上昇？私のYouTubeチャンネルコンセプト 📺 チャンネル登録と通知をオンにしてください！",
+      "startTelegram": "急上昇？私のYouTubeチャンネルコンセプト 📺 チャンネル登録と通知をオンにしてください！",
+      "startLine": "急上昇？私のYouTubeチャンネルコンセプト 📺 チャンネル登録と通知をオンにしてください！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

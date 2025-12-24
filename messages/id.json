@@ -4972,5 +4972,60 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "phase2YoutubeChannelTest": {
+    "startMessage": {
+      "line1": "Bagaimana jika saya memulai YouTube?",
+      "line2": "Mukbang? Vlog? Gaming? Kami menganalisis 'kekuatan mencari perhatian' dan 'bakat' tersembunyi Anda untuk menemukan konsep saluran optimal yang dapat menjadikan Anda YouTuber dengan 1 juta pelanggan.",
+      "line3": "Apa takdir yang akan dipilih algoritma untuk Anda?",
+      "line4": "",
+      "line5": "Lihat saluran khusus saya 📺"
+    },
+    "ui": {
+      "startTest": "Lihat Konsep Saluran YouTube",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Naik? Konsep Saluran YouTube Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "mainContent": "Konten Utama",
+      "cheatKey": "Kunci Curang Naik",
+      "collabPartner": "Mitra Kolaborasi yang Direkomendasikan"
+    },
+    "shareMessages": {
+      "default": "Jenis saluran YouTube saya adalah {type}! 📺 Berlangganan dan aktifkan notifikasi!",
+      "kakao": "Jenis saluran YouTube saya adalah {type}! 📺 Berlangganan dan aktifkan notifikasi!",
+      "wechat": "Jenis saluran YouTube saya adalah {type}! 📺 Berlangganan dan aktifkan notifikasi!",
+      "whatsapp": "Jenis saluran YouTube saya adalah {type}! 📺 Berlangganan dan aktifkan notifikasi!",
+      "telegram": "Jenis saluran YouTube saya adalah {type}! 📺 Berlangganan dan aktifkan notifikasi!",
+      "line": "Jenis saluran YouTube saya adalah {type}! 📺 Berlangganan dan aktifkan notifikasi!",
+      "startDefault": "Naik? Konsep Saluran YouTube Saya 📺 Berlangganan dan aktifkan notifikasi!",
+      "startKakao": "Naik? Konsep Saluran YouTube Saya 📺 Berlangganan dan aktifkan notifikasi!",
+      "startWechat": "Naik? Konsep Saluran YouTube Saya 📺 Berlangganan dan aktifkan notifikasi!",
+      "startWhatsapp": "Naik? Konsep Saluran YouTube Saya 📺 Berlangganan dan aktifkan notifikasi!",
+      "startTelegram": "Naik? Konsep Saluran YouTube Saya 📺 Berlangganan dan aktifkan notifikasi!",
+      "startLine": "Naik? Konsep Saluran YouTube Saya 📺 Berlangganan dan aktifkan notifikasi!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
   }
 }

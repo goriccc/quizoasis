@@ -1566,6 +1566,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2YoutubeChannelTest": {
+    "startMessage": {
+      "line1": "내가 만약 유튜브를 시작한다면?",
+      "line2": "먹방? 브이로그? 게임? 당신 안에 잠들어 있는 '관종력'과 '재능'을 분석해 구독자 100만 유튜버가 될 수 있는 최적의 채널 컨셉을 찾아드립니다.",
+      "line3": "알고리즘이 선택할 당신의 운명은?",
+      "line4": "",
+      "line5": "나의 맞춤 채널 확인하기 📺"
+    },
+    "ui": {
+      "startTest": "유튜브 채널 컨셉 확인하기",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (떡상각? 내 유튜브 채널 컨셉)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "mainContent": "주력 콘텐츠",
+      "cheatKey": "떡상 치트키",
+      "collabPartner": "추천 합방 파트너"
+    },
+    "shareMessages": {
+      "default": "내 유튜브 채널 각은 {type}! 📺 구독과 좋아요 알림 설정까지!",
+      "kakao": "내 유튜브 채널 각은 {type}! 📺 구독과 좋아요 알림 설정까지!",
+      "wechat": "내 유튜브 채널 각은 {type}! 📺 구독과 좋아요 알림 설정까지!",
+      "whatsapp": "내 유튜브 채널 각은 {type}! 📺 구독과 좋아요 알림 설정까지!",
+      "telegram": "내 유튜브 채널 각은 {type}! 📺 구독과 좋아요 알림 설정까지!",
+      "line": "내 유튜브 채널 각은 {type}! 📺 구독과 좋아요 알림 설정까지!",
+      "startDefault": "떡상각? 내 유튜브 채널 컨셉 📺 구독과 좋아요 알림 설정까지!",
+      "startKakao": "떡상각? 내 유튜브 채널 컨셉 📺 구독과 좋아요 알림 설정까지!",
+      "startWechat": "떡상각? 내 유튜브 채널 컨셉 📺 구독과 좋아요 알림 설정까지!",
+      "startWhatsapp": "떡상각? 내 유튜브 채널 컨셉 📺 구독과 좋아요 알림 설정까지!",
+      "startTelegram": "떡상각? 내 유튜브 채널 컨셉 📺 구독과 좋아요 알림 설정까지!",
+      "startLine": "떡상각? 내 유튜브 채널 컨셉 📺 구독과 좋아요 알림 설정까지!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "superpowerTest": {
     "startMessage": {
       "line1": "\"남들에게는 없는 특별한 힘이 나에게 있다면?\"",

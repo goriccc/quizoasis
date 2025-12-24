@@ -4972,5 +4972,60 @@
       "similarTestsTop5": "🎯 类似其他测试推荐前5",
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
+  },
+  "phase2YoutubeChannelTest": {
+    "startMessage": {
+      "line1": "如果我要开始YouTube呢？",
+      "line2": "吃播？Vlog？游戏？我们分析你隐藏的「关注欲」和「才能」，找到能让你成为百万订阅YouTuber的最佳频道概念。",
+      "line3": "算法会为你选择什么命运？",
+      "line4": "",
+      "line5": "查看我的定制频道 📺"
+    },
+    "ui": {
+      "startTest": "查看YouTube频道概念",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "和朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重做",
+      "otherTests": "其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（走红？我的YouTube频道概念）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似其他测试",
+      "mainContent": "主力内容",
+      "cheatKey": "走红秘籍",
+      "collabPartner": "推荐合作搭档"
+    },
+    "shareMessages": {
+      "default": "我的YouTube频道类型是{type}！📺 订阅并开启通知！",
+      "kakao": "我的YouTube频道类型是{type}！📺 订阅并开启通知！",
+      "wechat": "我的YouTube频道类型是{type}！📺 订阅并开启通知！",
+      "whatsapp": "我的YouTube频道类型是{type}！📺 订阅并开启通知！",
+      "telegram": "我的YouTube频道类型是{type}！📺 订阅并开启通知！",
+      "line": "我的YouTube频道类型是{type}！📺 订阅并开启通知！",
+      "startDefault": "走红？我的YouTube频道概念 📺 订阅并开启通知！",
+      "startKakao": "走红？我的YouTube频道概念 📺 订阅并开启通知！",
+      "startWechat": "走红？我的YouTube频道概念 📺 订阅并开启通知！",
+      "startWhatsapp": "走红？我的YouTube频道概念 📺 订阅并开启通知！",
+      "startTelegram": "走红？我的YouTube频道概念 📺 订阅并开启通知！",
+      "startLine": "走红？我的YouTube频道概念 📺 订阅并开启通知！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试推荐前5",
+      "popularTestsTop5": "🔥 最近热门测试推荐前5"
+    }
   }
 }

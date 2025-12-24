@@ -54,6 +54,7 @@ import { phase2ItTechQuizQuestions, phase2ItTechQuizResults } from '@/lib/phase2
 import { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } from '@/lib/phase2_literature_quiz_data';
 import { phase2InventionQuizQuestions, phase2InventionQuizResults } from '@/lib/phase2_invention_quiz_data';
 import { phase2WorldHistoryQuizQuestions, phase2WorldHistoryQuizResults } from '@/lib/phase2_world_history_quiz_data';
+import { phase2YoutubeChannelQuestions, phase2YoutubeChannelResults } from '@/lib/phase2_youtube_channel_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -224,6 +225,9 @@ const Phase2InventionQuizTestClient = dynamic(() => import('@/components/Phase2I
   ssr: false
 });
 const Phase2WorldHistoryQuizTestClient = dynamic(() => import('@/components/Phase2WorldHistoryQuizTestClient'), {
+  ssr: false
+});
+const Phase2YoutubeChannelTestClient = dynamic(() => import('@/components/Phase2YoutubeChannelTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -2160,6 +2164,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2WorldHistoryQuizQuestions}
           results={phase2WorldHistoryQuizResults}
           questionCount={phase2WorldHistoryQuizQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 떡상각? 내 유튜브 채널 컨셉 테스트
+  if (slug === 'phase2_youtube_channel_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_youtube_channel_test',
+      title: {
+        ko: '떡상각? 내 유튜브 채널 컨셉',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '내가 만약 유튜브를 시작한다면?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_053_youtube_channel.jpg',
+      type: 'fun',
+      category: 'self-understanding',
+      play_count: 0,
+      tags: {
+        ko: ['재미', '자기이해'],
+        en: ['', ''],
+        ja: ['', ''],
+        'zh-CN': ['', ''],
+        'zh-TW': ['', ''],
+        vi: ['', ''],
+        id: ['', '']
+      }
+    };
+
+    return (
+      <>
+        <Phase2YoutubeChannelTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2YoutubeChannelQuestions}
+          results={phase2YoutubeChannelResults}
+          questionCount={phase2YoutubeChannelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5744,6 +5802,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_literature_quiz_test') TestClient = Phase2LiteratureQuizTestClient;
     else if (slug === 'phase2_invention_quiz_test') TestClient = Phase2InventionQuizTestClient;
     else if (slug === 'phase2_world_history_modern_quiz_test') TestClient = Phase2WorldHistoryQuizTestClient;
+    else if (slug === 'phase2_youtube_channel_test') TestClient = Phase2YoutubeChannelTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

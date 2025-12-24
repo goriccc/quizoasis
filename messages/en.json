@@ -5134,5 +5134,60 @@
       "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2YoutubeChannelTest": {
+    "startMessage": {
+      "line1": "What if I started YouTube?",
+      "line2": "Mukbang? Vlog? Gaming? We analyze your hidden 'attention-seeking power' and 'talent' to find the optimal channel concept that can make you a 1 million subscriber YouTuber.",
+      "line3": "What fate will the algorithm choose for you?",
+      "line4": "",
+      "line5": "Check my custom channel 📺"
+    },
+    "ui": {
+      "startTest": "Check YouTube Channel Concept",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Rising Star? My YouTube Channel Concept)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "mainContent": "Main Content",
+      "cheatKey": "Rising Star Cheat Key",
+      "collabPartner": "Recommended Collaboration Partner"
+    },
+    "shareMessages": {
+      "default": "My YouTube channel type is {type}! 📺 Subscribe and turn on notifications!",
+      "kakao": "My YouTube channel type is {type}! 📺 Subscribe and turn on notifications!",
+      "wechat": "My YouTube channel type is {type}! 📺 Subscribe and turn on notifications!",
+      "whatsapp": "My YouTube channel type is {type}! 📺 Subscribe and turn on notifications!",
+      "telegram": "My YouTube channel type is {type}! 📺 Subscribe and turn on notifications!",
+      "line": "My YouTube channel type is {type}! 📺 Subscribe and turn on notifications!",
+      "startDefault": "Rising Star? My YouTube Channel Concept 📺 Subscribe and turn on notifications!",
+      "startKakao": "Rising Star? My YouTube Channel Concept 📺 Subscribe and turn on notifications!",
+      "startWechat": "Rising Star? My YouTube Channel Concept 📺 Subscribe and turn on notifications!",
+      "startWhatsapp": "Rising Star? My YouTube Channel Concept 📺 Subscribe and turn on notifications!",
+      "startTelegram": "Rising Star? My YouTube Channel Concept 📺 Subscribe and turn on notifications!",
+      "startLine": "Rising Star? My YouTube Channel Concept 📺 Subscribe and turn on notifications!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }
