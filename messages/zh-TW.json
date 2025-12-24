@@ -5036,6 +5036,62 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
   },
+  "phase2SocialLevelTest": {
+    "startMessage": {
+      "line1": "你的社交電池有多少百分比？",
+      "line2": "從需要到處受到關注的有力社交達人，到認為被子外面很危險的家居族。",
+      "line3": "你是從人群中獲得能量，還是因為被消耗而想回家？",
+      "line4": "我們測量你對待世界的「社交溫度」，而不僅僅是你朋友多還是少。",
+      "line5": "測量我的社交力量 🔋 確認社交水平 🥳"
+    },
+    "ui": {
+      "startTest": "確認社交水平",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "前往測試",
+      "adsenseTitle": "AdSense廣告區域（社交達人？內向者？我的社交水平測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似其他測試",
+      "socialLevel": "社交水平",
+      "characteristics": "特徵",
+      "goodMatch": "最佳配對",
+      "badMatch": "最差配對"
+    },
+    "shareMessages": {
+      "default": "我的社交水平是{type}！ 🔋 你的社交力量得分是多少？",
+      "kakao": "我的社交水平是{type}！ 🔋 你的社交力量得分是多少？",
+      "wechat": "我的社交水平是{type}！ 🔋 你的社交力量得分是多少？",
+      "whatsapp": "我的社交水平是{type}！ 🔋 你的社交力量得分是多少？",
+      "telegram": "我的社交水平是{type}！ 🔋 你的社交力量得分是多少？",
+      "line": "我的社交水平是{type}！ 🔋 你的社交力量得分是多少？",
+      "startDefault": "社交達人？內向者？我的社交水平測試 🔋 你的社交力量得分是多少？",
+      "startKakao": "社交達人？內向者？我的社交水平測試 🔋 你的社交力量得分是多少？",
+      "startWechat": "社交達人？內向者？我的社交水平測試 🔋 你的社交力量得分是多少？",
+      "startWhatsapp": "社交達人？內向者？我的社交水平測試 🔋 你的社交力量得分是多少？",
+      "startTelegram": "社交達人？內向者？我的社交水平測試 🔋 你的社交力量得分是多少？",
+      "startLine": "社交達人？內向者？我的社交水平測試 🔋 你的社交力量得分是多少？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "如果我要開始YouTube呢？",

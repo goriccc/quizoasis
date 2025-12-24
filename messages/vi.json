@@ -5029,6 +5029,62 @@
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2SocialLevelTest": {
+    "startMessage": {
+      "line1": "Pin xã hội của bạn là bao nhiêu phần trăm?",
+      "line2": "Từ những người xã hội mạnh mẽ cần được chú ý ở khắp mọi nơi, đến những người ở nhà nghĩ rằng bên ngoài chăn là nguy hiểm.",
+      "line3": "Bạn có lấy năng lượng từ việc ở bên mọi người, hay bạn muốn về nhà vì nó làm bạn kiệt sức?",
+      "line4": "Chúng tôi đo lường 'nhiệt độ xã hội' của bạn trong cách đối phó với thế giới, không chỉ là bạn có nhiều hay ít bạn bè.",
+      "line5": "Đo sức mạnh xã hội của tôi 🔋 Kiểm tra mức độ xã hội 🥳"
+    },
+    "ui": {
+      "startTest": "Kiểm tra Mức độ Xã hội",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Người xã hội? Người hướng nội? Bài kiểm tra Mức độ Xã hội của Tôi)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "socialLevel": "Mức độ Xã hội",
+      "characteristics": "Đặc điểm",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Mức độ xã hội của tôi là {type}! 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "kakao": "Mức độ xã hội của tôi là {type}! 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "wechat": "Mức độ xã hội của tôi là {type}! 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "whatsapp": "Mức độ xã hội của tôi là {type}! 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "telegram": "Mức độ xã hội của tôi là {type}! 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "line": "Mức độ xã hội của tôi là {type}! 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "startDefault": "Người xã hội? Người hướng nội? Bài kiểm tra Mức độ Xã hội của Tôi 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "startKakao": "Người xã hội? Người hướng nội? Bài kiểm tra Mức độ Xã hội của Tôi 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "startWechat": "Người xã hội? Người hướng nội? Bài kiểm tra Mức độ Xã hội của Tôi 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "startWhatsapp": "Người xã hội? Người hướng nội? Bài kiểm tra Mức độ Xã hội của Tôi 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "startTelegram": "Người xã hội? Người hướng nội? Bài kiểm tra Mức độ Xã hội của Tôi 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?",
+      "startLine": "Người xã hội? Người hướng nội? Bài kiểm tra Mức độ Xã hội của Tôi 🔋 Điểm sức mạnh xã hội của bạn là bao nhiêu?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "Nếu tôi bắt đầu YouTube thì sao?",

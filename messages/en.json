@@ -5191,6 +5191,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2SocialLevelTest": {
+    "startMessage": {
+      "line1": "What percentage is your social battery?",
+      "line2": "From power social butterflies who need attention everywhere to homebodies who think outside the blanket is dangerous.",
+      "line3": "Do you get energy from being around people, or do you want to go home because it drains you?",
+      "line4": "We measure your 'social temperature' in dealing with the world, not just whether you have many or few friends.",
+      "line5": "Measure my social power 🔋 Check social level 🥳"
+    },
+    "ui": {
+      "startTest": "Check Social Level",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Insa? Assa? My Social Level Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "socialLevel": "Social Level",
+      "characteristics": "Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My social level is {type}! 🔋 What's your social power score?",
+      "kakao": "My social level is {type}! 🔋 What's your social power score?",
+      "wechat": "My social level is {type}! 🔋 What's your social power score?",
+      "whatsapp": "My social level is {type}! 🔋 What's your social power score?",
+      "telegram": "My social level is {type}! 🔋 What's your social power score?",
+      "line": "My social level is {type}! 🔋 What's your social power score?",
+      "startDefault": "Insa? Assa? My Social Level Test 🔋 What's your social power score?",
+      "startKakao": "Insa? Assa? My Social Level Test 🔋 What's your social power score?",
+      "startWechat": "Insa? Assa? My Social Level Test 🔋 What's your social power score?",
+      "startWhatsapp": "Insa? Assa? My Social Level Test 🔋 What's your social power score?",
+      "startTelegram": "Insa? Assa? My Social Level Test 🔋 What's your social power score?",
+      "startLine": "Insa? Assa? My Social Level Test 🔋 What's your social power score?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "What if I started YouTube?",

@@ -5029,6 +5029,62 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2SocialLevelTest": {
+    "startMessage": {
+      "line1": "Berapa persen baterai sosial Anda?",
+      "line2": "Dari kupu-kupu sosial yang kuat yang perlu mendapat perhatian di mana-mana, hingga orang yang di rumah yang menganggap di luar selimut berbahaya.",
+      "line3": "Apakah Anda mendapatkan energi dari berada di sekitar orang, atau apakah Anda ingin pulang karena itu menguras Anda?",
+      "line4": "Kami mengukur 'suhu sosial' Anda dalam menghadapi dunia, bukan hanya apakah Anda memiliki banyak atau sedikit teman.",
+      "line5": "Ukur kekuatan sosial saya 🔋 Periksa level sosial 🥳"
+    },
+    "ui": {
+      "startTest": "Periksa Level Sosial",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Insa? Assa? Tes Level Sosial Saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "socialLevel": "Level Sosial",
+      "characteristics": "Karakteristik",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Level sosial saya adalah {type}! 🔋 Berapa skor kekuatan sosial Anda?",
+      "kakao": "Level sosial saya adalah {type}! 🔋 Berapa skor kekuatan sosial Anda?",
+      "wechat": "Level sosial saya adalah {type}! 🔋 Berapa skor kekuatan sosial Anda?",
+      "whatsapp": "Level sosial saya adalah {type}! 🔋 Berapa skor kekuatan sosial Anda?",
+      "telegram": "Level sosial saya adalah {type}! 🔋 Berapa skor kekuatan sosial Anda?",
+      "line": "Level sosial saya adalah {type}! 🔋 Berapa skor kekuatan sosial Anda?",
+      "startDefault": "Insa? Assa? Tes Level Sosial Saya 🔋 Berapa skor kekuatan sosial Anda?",
+      "startKakao": "Insa? Assa? Tes Level Sosial Saya 🔋 Berapa skor kekuatan sosial Anda?",
+      "startWechat": "Insa? Assa? Tes Level Sosial Saya 🔋 Berapa skor kekuatan sosial Anda?",
+      "startWhatsapp": "Insa? Assa? Tes Level Sosial Saya 🔋 Berapa skor kekuatan sosial Anda?",
+      "startTelegram": "Insa? Assa? Tes Level Sosial Saya 🔋 Berapa skor kekuatan sosial Anda?",
+      "startLine": "Insa? Assa? Tes Level Sosial Saya 🔋 Berapa skor kekuatan sosial Anda?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "Bagaimana jika saya memulai YouTube?",

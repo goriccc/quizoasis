@@ -5017,6 +5017,62 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2SocialLevelTest": {
+    "startMessage": {
+      "line1": "あなたのソーシャルバッテリーは何パーセントですか？",
+      "line2": "どこでも注目されないと気が済まないパワー社交家から、布団の外は危険な家番まで。",
+      "line3": "人々の間でエネルギーを得ますか、それとも消耗して家に帰りたいですか？",
+      "line4": "友達が多いか少ないかではなく、あなたが世界に接する「社会的温度」を測定します。",
+      "line5": "私の社交力を測定 🔋 社会性レベル確認 🥳"
+    },
+    "ui": {
+      "startTest": "社会性レベル確認",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに移動する",
+      "adsenseTitle": "AdSense広告エリア（インサ？アッサ？私の社会性レベルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "socialLevel": "ソーシャルレベル",
+      "characteristics": "特徴",
+      "goodMatch": "最高の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の社会性レベルは{type}です！ 🔋 あなたの社交力は何点ですか？",
+      "kakao": "私の社会性レベルは{type}です！ 🔋 あなたの社交力は何点ですか？",
+      "wechat": "私の社会性レベルは{type}です！ 🔋 あなたの社交力は何点ですか？",
+      "whatsapp": "私の社会性レベルは{type}です！ 🔋 あなたの社交力は何点ですか？",
+      "telegram": "私の社会性レベルは{type}です！ 🔋 あなたの社交力は何点ですか？",
+      "line": "私の社会性レベルは{type}です！ 🔋 あなたの社交力は何点ですか？",
+      "startDefault": "インサ？アッサ？私の社会性レベルテスト 🔋 あなたの社交力は何点ですか？",
+      "startKakao": "インサ？アッサ？私の社会性レベルテスト 🔋 あなたの社交力は何点ですか？",
+      "startWechat": "インサ？アッサ？私の社会性レベルテスト 🔋 あなたの社交力は何点ですか？",
+      "startWhatsapp": "インサ？アッサ？私の社会性レベルテスト 🔋 あなたの社交力は何点ですか？",
+      "startTelegram": "インサ？アッサ？私の社会性レベルテスト 🔋 あなたの社交力は何点ですか？",
+      "startLine": "インサ？アッサ？私の社会性レベルテスト 🔋 あなたの社交力は何点ですか？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "もし私がYouTubeを始めたら？",
