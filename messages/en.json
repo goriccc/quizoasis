@@ -5355,5 +5355,58 @@
       "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2HomebodyLevelTest": {
+    "startMessage": {
+      "line1": "How much do you relate to \"Outside the blanket is dangerous!\"?",
+      "line2": "For some, home is just a place to sleep, but for others, home is the universe and heaven.",
+      "line3": "When an appointment is cancelled, do you feel sad, or do you do an internal dance?",
+      "line4": "We'll check how happy you can be at home, and whether you're a socially distanced optimized human.",
+      "line5": "Measure my homebody level 🏠 Start homebody diagnosis 🛌"
+    },
+    "ui": {
+      "startTest": "Start Homebody Diagnosis",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Take Test",
+      "adsenseTitle": "AdSense Ad Area (Homebody Level Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "homebodyLevel": "Homebody Level",
+      "habitat": "Main Habitat",
+      "characteristics": "Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My homebody level is Lv.{level}! {type} 🏠 Outside the blanket is dangerous!",
+      "kakao": "My homebody level is Lv.{level}! {type} 🏠 Outside the blanket is dangerous!",
+      "wechat": "My homebody level is Lv.{level}! {type} 🏠 Outside the blanket is dangerous!",
+      "whatsapp": "My homebody level is Lv.{level}! {type} 🏠 Outside the blanket is dangerous!",
+      "telegram": "My homebody level is Lv.{level}! {type} 🏠 Outside the blanket is dangerous!",
+      "line": "My homebody level is Lv.{level}! {type} 🏠 Outside the blanket is dangerous!",
+      "startDefault": "Homebody Level Test 🏠 Outside the blanket is dangerous!",
+      "startKakao": "Homebody Level Test 🏠 Outside the blanket is dangerous!",
+      "startWechat": "Homebody Level Test 🏠 Outside the blanket is dangerous!",
+      "startWhatsapp": "Homebody Level Test 🏠 Outside the blanket is dangerous!",
+      "startTelegram": "Homebody Level Test 🏠 Outside the blanket is dangerous!",
+      "startLine": "Homebody Level Test 🏠 Outside the blanket is dangerous!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    }
   }
 }

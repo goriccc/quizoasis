@@ -5193,5 +5193,58 @@
       "similarTestsTop5": "🎯 Top 5 Đề xuất Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "phase2HomebodyLevelTest": {
+    "startMessage": {
+      "line1": "Bạn đồng cảm đến mức nào với câu nói \"Bên ngoài chăn là nguy hiểm!\"?",
+      "line2": "Đối với một số người, nhà chỉ là nơi để ngủ, nhưng đối với những người khác, nhà là vũ trụ và thiên đường.",
+      "line3": "Khi cuộc hẹn bị hủy, bạn có cảm thấy buồn, hay bạn nhảy múa trong lòng?",
+      "line4": "Chúng tôi sẽ kiểm tra bạn có thể hạnh phúc đến mức nào ở nhà, và liệu bạn có phải là con người được tối ưu hóa giãn cách xã hội không.",
+      "line5": "Đo mức độ ở nhà của tôi 🏠 Bắt đầu chẩn đoán sức mạnh ở nhà 🛌"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Chẩn đoán Sức mạnh Ở nhà",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Bài Test Mức Độ Ở Nhà)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra Tương tự Khác",
+      "homebodyLevel": "Mức Độ Ở Nhà",
+      "habitat": "Môi trường Sống Chính",
+      "characteristics": "Đặc điểm",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Mức độ ở nhà của tôi là Lv.{level}! {type} 🏠 Bên ngoài chăn là nguy hiểm!",
+      "kakao": "Mức độ ở nhà của tôi là Lv.{level}! {type} 🏠 Bên ngoài chăn là nguy hiểm!",
+      "wechat": "Mức độ ở nhà của tôi là Lv.{level}! {type} 🏠 Bên ngoài chăn là nguy hiểm!",
+      "whatsapp": "Mức độ ở nhà của tôi là Lv.{level}! {type} 🏠 Bên ngoài chăn là nguy hiểm!",
+      "telegram": "Mức độ ở nhà của tôi là Lv.{level}! {type} 🏠 Bên ngoài chăn là nguy hiểm!",
+      "line": "Mức độ ở nhà của tôi là Lv.{level}! {type} 🏠 Bên ngoài chăn là nguy hiểm!",
+      "startDefault": "Bài Test Mức Độ Ở Nhà 🏠 Bên ngoài chăn là nguy hiểm!",
+      "startKakao": "Bài Test Mức Độ Ở Nhà 🏠 Bên ngoài chăn là nguy hiểm!",
+      "startWechat": "Bài Test Mức Độ Ở Nhà 🏠 Bên ngoài chăn là nguy hiểm!",
+      "startWhatsapp": "Bài Test Mức Độ Ở Nhà 🏠 Bên ngoài chăn là nguy hiểm!",
+      "startTelegram": "Bài Test Mức Độ Ở Nhà 🏠 Bên ngoài chăn là nguy hiểm!",
+      "startLine": "Bài Test Mức Độ Ở Nhà 🏠 Bên ngoài chăn là nguy hiểm!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    }
   }
 }

@@ -5200,5 +5200,58 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "phase2HomebodyLevelTest": {
+    "startMessage": {
+      "line1": "你有多認同「被子外面很危險！」這句話？",
+      "line2": "對某些人來說，家只是睡覺的地方，但對另一些人來說，家是宇宙和天堂。",
+      "line3": "當約會取消時，你會感到悲傷，還是內心在跳舞？",
+      "line4": "我們將檢查你在家能有多快樂，以及你是否是社交距離優化人類。",
+      "line5": "測量我的宅家等級 🏠 開始宅家力診斷 🛌"
+    },
+    "ui": {
+      "startTest": "開始宅家力診斷",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "和朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（宅家等級測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似其他測試",
+      "homebodyLevel": "宅家等級",
+      "habitat": "主要棲息地",
+      "characteristics": "特徵",
+      "goodMatch": "完美搭檔",
+      "badMatch": "最差搭檔"
+    },
+    "shareMessages": {
+      "default": "我的宅家等級是Lv.{level}！{type} 🏠 被子外面很危險！",
+      "kakao": "我的宅家等級是Lv.{level}！{type} 🏠 被子外面很危險！",
+      "wechat": "我的宅家等級是Lv.{level}！{type} 🏠 被子外面很危險！",
+      "whatsapp": "我的宅家等級是Lv.{level}！{type} 🏠 被子外面很危險！",
+      "telegram": "我的宅家等級是Lv.{level}！{type} 🏠 被子外面很危險！",
+      "line": "我的宅家等級是Lv.{level}！{type} 🏠 被子外面很危險！",
+      "startDefault": "宅家等級測試 🏠 被子外面很危險！",
+      "startKakao": "宅家等級測試 🏠 被子外面很危險！",
+      "startWechat": "宅家等級測試 🏠 被子外面很危險！",
+      "startWhatsapp": "宅家等級測試 🏠 被子外面很危險！",
+      "startTelegram": "宅家等級測試 🏠 被子外面很危險！",
+      "startLine": "宅家等級測試 🏠 被子外面很危險！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    }
   }
 }

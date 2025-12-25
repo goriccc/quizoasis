@@ -58,6 +58,7 @@ import { phase2YoutubeChannelQuestions, phase2YoutubeChannelResults } from '@/li
 import { phase2HiddenTalentQuestions, phase2HiddenTalentResults } from '@/lib/phase2_hidden_talent_data';
 import { phase2SocialLevelQuestions, phase2SocialLevelResults } from '@/lib/phase2_social_level_data';
 import { phase2LieDetectorQuestions, phase2LieDetectorResults } from '@/lib/phase2_lie_detector_data';
+import { phase2HomebodyLevelQuestions, phase2HomebodyLevelResults } from '@/lib/phase2_homebody_level_data';
 import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
 import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
 import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
@@ -240,6 +241,9 @@ const Phase2SocialLevelTestClient = dynamic(() => import('@/components/Phase2Soc
   ssr: false
 });
 const Phase2LieDetectorTestClient = dynamic(() => import('@/components/Phase2LieDetectorTestClient'), {
+  ssr: false
+});
+const Phase2HomebodyLevelTestClient = dynamic(() => import('@/components/Phase2HomebodyLevelTestClient'), {
   ssr: false
 });
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
@@ -1798,6 +1802,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase2LieDetectorQuestions}
           results={phase2LieDetectorResults}
           questionCount={phase2LieDetectorQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  // 집순이/집돌이 만렙 테스트
+  if (slug === 'phase2_homebody_level_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_homebody_level_test',
+      title: {
+        ko: '집순이/집돌이 만렙 테스트',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '"이불 밖은 위험해!" 이 말을 얼마나 공감하시나요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_064_homebody_level.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['성격'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2HomebodyLevelTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2HomebodyLevelQuestions}
+          results={phase2HomebodyLevelResults}
+          questionCount={phase2HomebodyLevelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5979,6 +6037,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'phase2_hidden_talent_test') TestClient = Phase2HiddenTalentTestClient;
     else if (slug === 'phase2_social_level_test') TestClient = Phase2SocialLevelTestClient;
     else if (slug === 'phase2_lie_detector_test') TestClient = Phase2LieDetectorTestClient;
+    else if (slug === 'phase2_homebody_level_test') TestClient = Phase2HomebodyLevelTestClient;
     else if (slug === 'soul-drink-test') TestClient = SoulDrinkTestClient;
     else if (slug === 'phase2_superpower-test') TestClient = SuperpowerTestClient;
     else if (slug === 'phase2_travel-style-test') TestClient = TravelStyleTestClient;

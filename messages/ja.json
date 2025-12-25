@@ -5181,5 +5181,58 @@
       "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "phase2HomebodyLevelTest": {
+    "startMessage": {
+      "line1": "「布団の外は危険だ！」この言葉にどれだけ共感しますか？",
+      "line2": "誰かにとって家は寝るだけの場所ですが、誰かにとって家は宇宙であり天国です。",
+      "line3": "約束がキャンセルされたら悲しみますか、それとも内なるダンスを踊りますか？",
+      "line4": "あなたが家でどれだけ幸せになれるか、社会的距離の最適化人間かを確認します。",
+      "line5": "私の家にこもるレベルを測定 🏠 家好き力診断開始 🛌"
+    },
+    "ui": {
+      "startTest": "家好き力診断開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（家好きレベルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "homebodyLevel": "家にこもるレベル",
+      "habitat": "主な生息地",
+      "characteristics": "特徴",
+      "goodMatch": "幻の相棒",
+      "badMatch": "狂った相棒"
+    },
+    "shareMessages": {
+      "default": "私の家にこもるレベルはLv.{level}！{type} 🏠 布団の外は危険だ！",
+      "kakao": "私の家にこもるレベルはLv.{level}！{type} 🏠 布団の外は危険だ！",
+      "wechat": "私の家にこもるレベルはLv.{level}！{type} 🏠 布団の外は危険だ！",
+      "whatsapp": "私の家にこもるレベルはLv.{level}！{type} 🏠 布団の外は危険だ！",
+      "telegram": "私の家にこもるレベルはLv.{level}！{type} 🏠 布団の外は危険だ！",
+      "line": "私の家にこもるレベルはLv.{level}！{type} 🏠 布団の外は危険だ！",
+      "startDefault": "家好きレベルテスト 🏠 布団の外は危険だ！",
+      "startKakao": "家好きレベルテスト 🏠 布団の外は危険だ！",
+      "startWechat": "家好きレベルテスト 🏠 布団の外は危険だ！",
+      "startWhatsapp": "家好きレベルテスト 🏠 布団の外は危険だ！",
+      "startTelegram": "家好きレベルテスト 🏠 布団の外は危険だ！",
+      "startLine": "家好きレベルテスト 🏠 布団の外は危険だ！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    }
   }
 }

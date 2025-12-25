@@ -5193,5 +5193,58 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa Lainnya",
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
+  },
+  "phase2HomebodyLevelTest": {
+    "startMessage": {
+      "line1": "Seberapa besar Anda setuju dengan \"Di luar selimut itu berbahaya!\"?",
+      "line2": "Bagi sebagian orang, rumah hanyalah tempat untuk tidur, tetapi bagi yang lain, rumah adalah alam semesta dan surga.",
+      "line3": "Ketika janji dibatalkan, apakah Anda merasa sedih, atau melakukan tarian internal?",
+      "line4": "Kami akan memeriksa seberapa bahagia Anda bisa di rumah, dan apakah Anda adalah manusia yang dioptimalkan untuk jarak sosial.",
+      "line5": "Ukur level homebody saya 🏠 Mulai diagnosis kekuatan homebody 🛌"
+    },
+    "ui": {
+      "startTest": "Mulai Diagnosis Kekuatan Homebody",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Level Homebody)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "homebodyLevel": "Level Homebody",
+      "habitat": "Habitat Utama",
+      "characteristics": "Karakteristik",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Level homebody saya adalah Lv.{level}! {type} 🏠 Di luar selimut itu berbahaya!",
+      "kakao": "Level homebody saya adalah Lv.{level}! {type} 🏠 Di luar selimut itu berbahaya!",
+      "wechat": "Level homebody saya adalah Lv.{level}! {type} 🏠 Di luar selimut itu berbahaya!",
+      "whatsapp": "Level homebody saya adalah Lv.{level}! {type} 🏠 Di luar selimut itu berbahaya!",
+      "telegram": "Level homebody saya adalah Lv.{level}! {type} 🏠 Di luar selimut itu berbahaya!",
+      "line": "Level homebody saya adalah Lv.{level}! {type} 🏠 Di luar selimut itu berbahaya!",
+      "startDefault": "Tes Level Homebody 🏠 Di luar selimut itu berbahaya!",
+      "startKakao": "Tes Level Homebody 🏠 Di luar selimut itu berbahaya!",
+      "startWechat": "Tes Level Homebody 🏠 Di luar selimut itu berbahaya!",
+      "startWhatsapp": "Tes Level Homebody 🏠 Di luar selimut itu berbahaya!",
+      "startTelegram": "Tes Level Homebody 🏠 Di luar selimut itu berbahaya!",
+      "startLine": "Tes Level Homebody 🏠 Di luar selimut itu berbahaya!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    }
   }
 }
