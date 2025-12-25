@@ -5246,5 +5246,61 @@
       "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
     }
+  },
+  "phase2LazinessLevelTest": {
+    "startMessage": {
+      "line1": "\"Bạn mất bao lâu để ra khỏi giường vào cuối tuần?\"",
+      "line2": "Ai cũng có một chút 'lười biếng' trong tim.",
+      "line3": "Nhưng mức độ khác biệt là rất lớn.",
+      "line4": "Tế bào lười biếng của bạn được kích hoạt bao nhiêu? Chúng tôi sẽ tấn công bạn bằng những sự thật về mức độ lười biếng thấm sâu vào xương.",
+      "line5": "Kiểm tra mức độ lười biếng của tôi 🛌 Bắt đầu chẩn đoán lười biếng 💤"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Chẩn đoán Lười biếng",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Làm Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Bài kiểm tra Mức độ Lười biếng)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài kiểm tra Tương tự Khác",
+      "lazinessLevel": "Mức độ Lười biếng",
+      "characteristics": "Đặc điểm",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Mức độ lười biếng của tôi là {type}! 🛌 Những người trì hoãn công việc hôm nay đến ngày mai, tập hợp!",
+      "kakao": "Mức độ lười biếng của tôi là {type}! 🛌 Những người trì hoãn công việc hôm nay đến ngày mai, tập hợp!",
+      "wechat": "Mức độ lười biếng của tôi là {type}! 🛌 Những người trì hoãn công việc hôm nay đến ngày mai, tập hợp!",
+      "whatsapp": "Mức độ lười biếng của tôi là {type}! 🛌 Những người trì hoãn công việc hôm nay đến ngày mai, tập hợp!",
+      "telegram": "Mức độ lười biếng của tôi là {type}! 🛌 Những người trì hoãn công việc hôm nay đến ngày mai, tập hợp!",
+      "line": "Mức độ lười biếng của tôi là {type}! 🛌 Những người trì hoãn công việc hôm nay đến ngày mai, tập hợp!",
+      "startDefault": "Giường và Một Thể? Bài kiểm tra Mức độ 'Lười biếng' của bạn 🛌 Bắt đầu Chẩn đoán Lười biếng 💤",
+      "startKakao": "Giường và Một Thể? Bài kiểm tra Mức độ 'Lười biếng' của bạn 🛌 Bắt đầu Chẩn đoán Lười biếng 💤",
+      "startWechat": "Giường và Một Thể? Bài kiểm tra Mức độ 'Lười biếng' của bạn 🛌 Bắt đầu Chẩn đoán Lười biếng 💤",
+      "startWhatsapp": "Giường và Một Thể? Bài kiểm tra Mức độ 'Lười biếng' của bạn 🛌 Bắt đầu Chẩn đoán Lười biếng 💤",
+      "startTelegram": "Giường và Một Thể? Bài kiểm tra Mức độ 'Lười biếng' của bạn 🛌 Bắt đầu Chẩn đoán Lười biếng 💤",
+      "startLine": "Giường và Một Thể? Bài kiểm tra Mức độ 'Lười biếng' của bạn 🛌 Bắt đầu Chẩn đoán Lười biếng 💤"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Bài kiểm tra Tương tự Đề xuất",
+      "popularTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến"
+    }
   }
 }

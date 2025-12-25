@@ -5246,5 +5246,61 @@
       "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
       "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
     }
+  },
+  "phase2LazinessLevelTest": {
+    "startMessage": {
+      "line1": "\"Berapa lama waktu yang Anda butuhkan untuk keluar dari tempat tidur di akhir pekan?\"",
+      "line2": "Setiap orang memiliki sedikit 'kemalasan' di hati mereka.",
+      "line3": "Tetapi tingkat perbedaannya sangat besar.",
+      "line4": "Seberapa aktif sel kemalasan Anda? Kami akan menyerang Anda dengan fakta tentang tingkat kemalasan yang meresap hingga ke tulang.",
+      "line5": "Periksa tingkat kemalasan saya 🛌 Mulai diagnosis kemalasan 💤"
+    },
+    "ui": {
+      "startTest": "Mulai Diagnosis Kemalasan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Tingkat Kemalasan)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "lazinessLevel": "Tingkat Kemalasan",
+      "characteristics": "Karakteristik",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Tingkat kemalasan saya adalah {type}! 🛌 Orang yang menunda pekerjaan hari ini hingga besok, berkumpul!",
+      "kakao": "Tingkat kemalasan saya adalah {type}! 🛌 Orang yang menunda pekerjaan hari ini hingga besok, berkumpul!",
+      "wechat": "Tingkat kemalasan saya adalah {type}! 🛌 Orang yang menunda pekerjaan hari ini hingga besok, berkumpul!",
+      "whatsapp": "Tingkat kemalasan saya adalah {type}! 🛌 Orang yang menunda pekerjaan hari ini hingga besok, berkumpul!",
+      "telegram": "Tingkat kemalasan saya adalah {type}! 🛌 Orang yang menunda pekerjaan hari ini hingga besok, berkumpul!",
+      "line": "Tingkat kemalasan saya adalah {type}! 🛌 Orang yang menunda pekerjaan hari ini hingga besok, berkumpul!",
+      "startDefault": "Tempat Tidur dan Satu Tubuh? Tes Tingkat 'Kemalasan' Anda 🛌 Mulai Diagnosis Kemalasan 💤",
+      "startKakao": "Tempat Tidur dan Satu Tubuh? Tes Tingkat 'Kemalasan' Anda 🛌 Mulai Diagnosis Kemalasan 💤",
+      "startWechat": "Tempat Tidur dan Satu Tubuh? Tes Tingkat 'Kemalasan' Anda 🛌 Mulai Diagnosis Kemalasan 💤",
+      "startWhatsapp": "Tempat Tidur dan Satu Tubuh? Tes Tingkat 'Kemalasan' Anda 🛌 Mulai Diagnosis Kemalasan 💤",
+      "startTelegram": "Tempat Tidur dan Satu Tubuh? Tes Tingkat 'Kemalasan' Anda 🛌 Mulai Diagnosis Kemalasan 💤",
+      "startLine": "Tempat Tidur dan Satu Tubuh? Tes Tingkat 'Kemalasan' Anda 🛌 Mulai Diagnosis Kemalasan 💤"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
   }
 }

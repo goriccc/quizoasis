@@ -5234,5 +5234,61 @@
       "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトークシェア中にエラーが発生しました。"
     }
+  },
+  "phase2LazinessLevelTest": {
+    "startMessage": {
+      "line1": "\"週末にベッドから出るのにどれくらい時間がかかりますか？\"",
+      "line2": "誰もが心の中に少しの「怠け」を持っています。",
+      "line3": "しかし、その程度の違いは非常に大きいです。",
+      "line4": "あなたの怠け細胞はどのくらい活性化されていますか？骨の奥まで染み込んだ怠けレベルを事実で叩き込みます。",
+      "line5": "私の怠けレベルを確認 🛌 怠け診断開始 💤"
+    },
+    "ui": {
+      "startTest": "怠け診断開始",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（怠けレベルテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "lazinessLevel": "怠けレベル",
+      "characteristics": "特徴",
+      "goodMatch": "幻の相棒",
+      "badMatch": "狂った相棒"
+    },
+    "shareMessages": {
+      "default": "私の怠けレベルは{type}！🛌 今日の仕事を明日に延ばす人、集まれ！",
+      "kakao": "私の怠けレベルは{type}！🛌 今日の仕事を明日に延ばす人、集まれ！",
+      "wechat": "私の怠けレベルは{type}！🛌 今日の仕事を明日に延ばす人、集まれ！",
+      "whatsapp": "私の怠けレベルは{type}！🛌 今日の仕事を明日に延ばす人、集まれ！",
+      "telegram": "私の怠けレベルは{type}！🛌 今日の仕事を明日に延ばす人、集まれ！",
+      "line": "私の怠けレベルは{type}！🛌 今日の仕事を明日に延ばす人、集まれ！",
+      "startDefault": "ベッドと一体？あなたの「怠け」レベルテスト 🛌 怠け診断開始 💤",
+      "startKakao": "ベッドと一体？あなたの「怠け」レベルテスト 🛌 怠け診断開始 💤",
+      "startWechat": "ベッドと一体？あなたの「怠け」レベルテスト 🛌 怠け診断開始 💤",
+      "startWhatsapp": "ベッドと一体？あなたの「怠け」レベルテスト 🛌 怠け診断開始 💤",
+      "startTelegram": "ベッドと一体？あなたの「怠け」レベルテスト 🛌 怠け診断開始 💤",
+      "startLine": "ベッドと一体？あなたの「怠け」レベルテスト 🛌 怠け診断開始 💤"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテスト推奨トップ5",
+      "popularTestsTop5": "🔥 最近人気のテスト推奨トップ5"
+    }
   }
 }

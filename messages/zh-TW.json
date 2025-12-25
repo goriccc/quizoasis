@@ -5253,5 +5253,61 @@
       "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
       "kakaoError": "KakaoTalk分享時發生錯誤。"
     }
+  },
+  "phase2LazinessLevelTest": {
+    "startMessage": {
+      "line1": "\"週末你從床上起來需要多長時間？\"",
+      "line2": "每個人心裡都有一點'懶惰'。",
+      "line3": "但程度的差異是巨大的。",
+      "line4": "你的懶惰細胞有多活躍？我們將用深入骨髓的懶惰級別事實來轟炸你。",
+      "line5": "檢查我的懶惰級別 🛌 開始懶惰診斷 💤"
+    },
+    "ui": {
+      "startTest": "開始懶惰診斷",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "和朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（懶惰級別測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似其他測試",
+      "lazinessLevel": "懶惰級別",
+      "characteristics": "特徵",
+      "goodMatch": "完美搭檔",
+      "badMatch": "最差搭檔"
+    },
+    "shareMessages": {
+      "default": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
+      "kakao": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
+      "wechat": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
+      "whatsapp": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
+      "telegram": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
+      "line": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
+      "startDefault": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
+      "startKakao": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
+      "startWechat": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
+      "startWhatsapp": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
+      "startTelegram": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
+      "startLine": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似其他測試推薦前5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
+    }
   }
 }
