@@ -5302,5 +5302,61 @@
       "similarTestsTop5": "🎯 Top 5 Bài kiểm tra Tương tự Đề xuất",
       "popularTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến"
     }
+  },
+  "phase2FactBomberTest": {
+    "startMessage": {
+      "line1": "\"Bạn có phải T không?\" Bạn nghe câu này như một lời khen hay một lời chửi?",
+      "line2": "Khi nghe bạn bè than phiền, bạn có nghĩ đến giải pháp trước khi an ủi không?",
+      "line3": "Đôi khi sự trung thực vô ác ý có thể đánh vào xương của người khác.",
+      "line4": "Lý trí của bạn kiểm soát cảm xúc ở mức độ nào? Hãy kiểm tra xem bạn có phải là 'robot AI' không có máu và nước mắt không.",
+      "line5": "Đo sức mạnh fact bombing của tôi 📉 Kiểm tra chỉ số lý trí (T) 🧠"
+    },
+    "ui": {
+      "startTest": "Kiểm tra chỉ số lý trí (T)",
+      "shareWithFriends": "Thử với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Các bài test khác",
+      "goToTest": "Đi đến test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Test Fact Bomber T)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các test tương tự",
+      "factBomberLevel": "Chỉ số Fact Bomber",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Cặp đôi hoàn hảo",
+      "badMatch": "Cặp đôi tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Chỉ số fact bomber của tôi là {type}! 🤖 Bạn là T? Hay F? Kiểm tra ngay tại đây!",
+      "kakao": "Chỉ số fact bomber của tôi là {type}! 🤖 Bạn là T? Hay F? Kiểm tra ngay tại đây!",
+      "wechat": "Chỉ số fact bomber của tôi là {type}! 🤖 Bạn là T? Hay F? Kiểm tra ngay tại đây!",
+      "whatsapp": "Chỉ số fact bomber của tôi là {type}! 🤖 Bạn là T? Hay F? Kiểm tra ngay tại đây!",
+      "telegram": "Chỉ số fact bomber của tôi là {type}! 🤖 Bạn là T? Hay F? Kiểm tra ngay tại đây!",
+      "line": "Chỉ số fact bomber của tôi là {type}! 🤖 Bạn là T? Hay F? Kiểm tra ngay tại đây!",
+      "startDefault": "Test Fact Bomber T (Đơn giản) 🤖 Bạn là T? Hay F?",
+      "startKakao": "Test Fact Bomber T (Đơn giản) 🤖 Bạn là T? Hay F?",
+      "startWechat": "Test Fact Bomber T (Đơn giản) 🤖 Bạn là T? Hay F?",
+      "startWhatsapp": "Test Fact Bomber T (Đơn giản) 🤖 Bạn là T? Hay F?",
+      "startTelegram": "Test Fact Bomber T (Đơn giản) 🤖 Bạn là T? Hay F?",
+      "startLine": "Test Fact Bomber T (Đơn giản) 🤖 Bạn là T? Hay F?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 test phổ biến"
+    }
   }
 }

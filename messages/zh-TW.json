@@ -5309,5 +5309,61 @@
       "similarTestsTop5": "🎯 類似其他測試推薦前5",
       "popularTestsTop5": "🔥 最近熱門測試推薦前5"
     }
+  },
+  "phase2FactBomberTest": {
+    "startMessage": {
+      "line1": "「你是T嗎？」你把這句話當作讚美還是辱罵？",
+      "line2": "聽到朋友的抱怨時，你是不是先想到解決方案而不是安慰？",
+      "line3": "有時無惡意的誠實可能會打擊到對方。",
+      "line4": "你的理性在多大幅度上控制著情感？讓我們檢查一下你是否是一個沒有血淚的'AI機器人'。",
+      "line5": "測量我的事實轟炸力 📉 檢查我的理性指數(T) 🧠"
+    },
+    "ui": {
+      "startTest": "檢查理性指數(T)",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "重做",
+      "otherTests": "其他測試",
+      "goToTest": "去測試",
+      "adsenseTitle": "AdSense廣告區域（事實轟炸T測試）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "factBomberLevel": "事實轟炸指數",
+      "characteristics": "主要特徵",
+      "goodMatch": "完美匹配",
+      "badMatch": "最差匹配"
+    },
+    "shareMessages": {
+      "default": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
+      "kakao": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
+      "wechat": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
+      "whatsapp": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
+      "telegram": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
+      "line": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
+      "startDefault": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
+      "startKakao": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
+      "startWechat": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
+      "startWhatsapp": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
+      "startTelegram": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
+      "startLine": "事實轟炸T測試（簡單）🤖 你是T？還是F？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 前5名類似測試推薦",
+      "popularTestsTop5": "🔥 前5名熱門測試"
+    }
   }
 }

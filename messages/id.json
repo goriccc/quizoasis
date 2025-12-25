@@ -5302,5 +5302,61 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
+  },
+  "phase2FactBomberTest": {
+    "startMessage": {
+      "line1": "\"Apakah kamu T?\" Apakah kamu mendengar ini sebagai pujian atau hinaan?",
+      "line2": "Ketika mendengar teman mengeluh, apakah solusi muncul di pikiran sebelum menghibur?",
+      "line3": "Terkadang kejujuran tanpa niat jahat bisa mengenai tulang lawan bicara.",
+      "line4": "Seberapa besar akal kamu mengendalikan emosi? Mari kita periksa apakah kamu adalah 'robot AI' tanpa darah dan air mata.",
+      "line5": "Ukur kekuatan fact bombing saya 📉 Periksa indeks rasionalitas (T) saya 🧠"
+    },
+    "ui": {
+      "startTest": "Periksa Indeks Rasionalitas (T)",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Fact Bomber T)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa",
+      "factBomberLevel": "Indeks Fact Bomber",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Indeks fact bomber saya adalah {type}! 🤖 Apakah kamu T? Atau F? Cek di sini!",
+      "kakao": "Indeks fact bomber saya adalah {type}! 🤖 Apakah kamu T? Atau F? Cek di sini!",
+      "wechat": "Indeks fact bomber saya adalah {type}! 🤖 Apakah kamu T? Atau F? Cek di sini!",
+      "whatsapp": "Indeks fact bomber saya adalah {type}! 🤖 Apakah kamu T? Atau F? Cek di sini!",
+      "telegram": "Indeks fact bomber saya adalah {type}! 🤖 Apakah kamu T? Atau F? Cek di sini!",
+      "line": "Indeks fact bomber saya adalah {type}! 🤖 Apakah kamu T? Atau F? Cek di sini!",
+      "startDefault": "Tes Fact Bomber T (Sederhana) 🤖 Apakah kamu T? Atau F?",
+      "startKakao": "Tes Fact Bomber T (Sederhana) 🤖 Apakah kamu T? Atau F?",
+      "startWechat": "Tes Fact Bomber T (Sederhana) 🤖 Apakah kamu T? Atau F?",
+      "startWhatsapp": "Tes Fact Bomber T (Sederhana) 🤖 Apakah kamu T? Atau F?",
+      "startTelegram": "Tes Fact Bomber T (Sederhana) 🤖 Apakah kamu T? Atau F?",
+      "startLine": "Tes Fact Bomber T (Sederhana) 🤖 Apakah kamu T? Atau F?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan telah disalin!",
+      "resultCopied": "Hasil telah disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan telah disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
   }
 }

@@ -5290,5 +5290,61 @@
       "similarTestsTop5": "🎯 類似の他のテスト推奨トップ5",
       "popularTestsTop5": "🔥 最近人気のテスト推奨トップ5"
     }
+  },
+  "phase2FactBomberTest": {
+    "startMessage": {
+      "line1": "「あなたはT？」この言葉を褒め言葉として聞きますか、それとも悪口として聞きますか？",
+      "line2": "友達のグチを聞くと、慰めよりも解決策が先に浮かびますか？",
+      "line3": "時には悪意のない正直さが相手の骨を打つこともあります。",
+      "line4": "あなたの理性は感情をどの程度支配しているでしょうか？血も涙もない「AIロボット」かどうか確認します。",
+      "line5": "私のファクト爆撃力を測定 📉 理性指数（T）確認 🧠"
+    },
+    "ui": {
+      "startTest": "理性指数（T）確認",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達と共有",
+      "shareResult": "結果を共有",
+      "retakeTest": "再挑戦",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（ファクト爆撃Tテスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "factBomberLevel": "ファクト爆撃指数",
+      "characteristics": "主な特徴",
+      "goodMatch": "理想の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私のファクト爆撃指数は{type}！🤖 あなたはT？それともF？ここで確認してみて！",
+      "kakao": "私のファクト爆撃指数は{type}！🤖 あなたはT？それともF？ここで確認してみて！",
+      "wechat": "私のファクト爆撃指数は{type}！🤖 あなたはT？それともF？ここで確認してみて！",
+      "whatsapp": "私のファクト爆撃指数は{type}！🤖 あなたはT？それともF？ここで確認してみて！",
+      "telegram": "私のファクト爆撃指数は{type}！🤖 あなたはT？それともF？ここで確認してみて！",
+      "line": "私のファクト爆撃指数は{type}！🤖 あなたはT？それともF？ここで確認してみて！",
+      "startDefault": "ファクト爆撃Tテスト（簡単）🤖 あなたはT？それともF？",
+      "startKakao": "ファクト爆撃Tテスト（簡単）🤖 あなたはT？それともF？",
+      "startWechat": "ファクト爆撃Tテスト（簡単）🤖 あなたはT？それともF？",
+      "startWhatsapp": "ファクト爆撃Tテスト（簡単）🤖 あなたはT？それともF？",
+      "startTelegram": "ファクト爆撃Tテスト（簡単）🤖 あなたはT？それともF？",
+      "startLine": "ファクト爆撃Tテスト（簡単）🤖 あなたはT？それともF？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

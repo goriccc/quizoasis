@@ -5311,5 +5311,61 @@
       "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2FactBomberTest": {
+    "startMessage": {
+      "line1": "\"Are you T?\" Do you hear this as a compliment or an insult?",
+      "line2": "When you hear a friend whining, does a solution come to mind before comfort?",
+      "line3": "Sometimes innocent honesty can hit the other person's bones.",
+      "line4": "How much does your reason control your emotions? Let's check if you're an 'AI robot' with no blood or tears.",
+      "line5": "Measure my fact bombing power 📉 Check my rationality index (T) 🧠"
+    },
+    "ui": {
+      "startTest": "Check Rationality Index (T)",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Fact Bomber T Test)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "factBomberLevel": "Fact Bomber Index",
+      "characteristics": "Main Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My fact bomber index is {type}! 🤖 Are you T? Or F? Check it out here!",
+      "kakao": "My fact bomber index is {type}! 🤖 Are you T? Or F? Check it out here!",
+      "wechat": "My fact bomber index is {type}! 🤖 Are you T? Or F? Check it out here!",
+      "whatsapp": "My fact bomber index is {type}! 🤖 Are you T? Or F? Check it out here!",
+      "telegram": "My fact bomber index is {type}! 🤖 Are you T? Or F? Check it out here!",
+      "line": "My fact bomber index is {type}! 🤖 Are you T? Or F? Check it out here!",
+      "startDefault": "Fact Bomber T Test (Simple) 🤖 Are you T? Or F?",
+      "startKakao": "Fact Bomber T Test (Simple) 🤖 Are you T? Or F?",
+      "startWechat": "Fact Bomber T Test (Simple) 🤖 Are you T? Or F?",
+      "startWhatsapp": "Fact Bomber T Test (Simple) 🤖 Are you T? Or F?",
+      "startTelegram": "Fact Bomber T Test (Simple) 🤖 Are you T? Or F?",
+      "startLine": "Fact Bomber T Test (Simple) 🤖 Are you T? Or F?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }

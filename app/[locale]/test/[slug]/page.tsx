@@ -26,6 +26,7 @@ import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
 import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
+import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
 import { superpowerQuestions, superpowerResults } from '@/lib/superpowerData';
 import { travelStyleQuestions, travelStyleResults } from '@/lib/travelStyleData';
@@ -155,6 +156,9 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
+  ssr: false
+});
+const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
   ssr: false
 });
 const Phase2PerfectionismTestClient = dynamic(() => import('@/components/Phase2PerfectionismTestClient'), {
@@ -1539,6 +1543,59 @@ export default async function TestPage({ params }: Props) {
           questions={optimismQuestions}
           results={optimismResults}
           questionCount={optimismQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_fact_bomber_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_fact_bomber_test',
+      title: {
+        ko: '팩폭 능력 T 테스트 (간편)',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '"너 T야?" 이 말을 칭찬으로 듣나요, 아니면 욕으로 듣나요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_065_fact_bomber.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    return (
+      <>
+        <Phase2FactBomberTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2FactBomberQuestions}
+          results={phase2FactBomberResults}
+          questionCount={phase2FactBomberQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -5800,6 +5857,11 @@ export default async function TestPage({ params }: Props) {
       questions: empathyFQuestions,
       results: empathyFResults
     };
+  } else if (slug === 'phase2_fact_bomber_test') {
+    testData = {
+      questions: phase2FactBomberQuestions,
+      results: phase2FactBomberResults
+    };
   } else if (slug === 'soul-drink-test') {
     testData = {
       questions: soulDrinkQuestions,
@@ -6078,6 +6140,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
+    else if (slug === 'phase2_fact_bomber_test') TestClient = Phase2FactBomberTestClient;
     else if (slug === 'phase2_perfectionism-test') TestClient = Phase2PerfectionismTestClient;
     else if (slug === 'phase2_friendship-style-test') TestClient = Phase2FriendshipStyleTestClient;
     else if (slug === 'phase2_relationship-cut-test') TestClient = Phase2RelationshipCutTestClient;
