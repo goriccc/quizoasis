@@ -166,6 +166,7 @@ export interface FaceFortuneTestClientProps {
   playCount?: number;
   similarTests?: any[];
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 export function calculateFaceFortuneResult(score: number): FaceFortuneResult {

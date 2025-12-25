@@ -31,6 +31,7 @@ interface IdealTypeTestClientProps {
     badgeType?: 'popular' | 'hot' | null;
     }>;
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 // 궁합 설명 함수
@@ -51,7 +52,8 @@ export default function IdealTypeTestClient({
   playCount = 0,
   similarTests = []
 ,
-  isLatestTest = false
+  isLatestTest = false,
+  badgeType = null
 }: IdealTypeTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
@@ -191,7 +193,8 @@ export default function IdealTypeTestClient({
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
               thumbnail: t.thumbnail,
-              playCount: t.play_count
+              playCount: t.play_count,
+              badgeType: t.badge_type || null
             }));
 
           const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
@@ -204,7 +207,8 @@ export default function IdealTypeTestClient({
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
               thumbnail: t.thumbnail,
-              playCount: t.play_count
+              playCount: t.play_count,
+              badgeType: t.badge_type || null
             }));
 
           setSimilarTestsState(similarTestsList);
@@ -477,7 +481,17 @@ export default function IdealTypeTestClient({
                         NEW
                       </div>
                     )}
-                  </div>
+                              {badgeType === 'popular' && (
+              <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                인기
+              </div>
+            )}
+            {badgeType === 'hot' && (
+              <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                HOT
+              </div>
+            )}
+</div>
 
           <div className="px-4">
             <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">

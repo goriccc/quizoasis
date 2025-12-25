@@ -31,6 +31,7 @@ interface MBTITestClientProps {
   badgeType?: 'popular' | 'hot' | null;
     }>;
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 export default function MBTITestClient({ 
@@ -44,7 +45,8 @@ export default function MBTITestClient({
   thumbnail,
   playCount = 0,
   similarTests = [],
-  isLatestTest = false
+  isLatestTest = false,
+  badgeType = null
 }: MBTITestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
@@ -168,7 +170,8 @@ export default function MBTITestClient({
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
               thumbnail: t.thumbnail,
-              playCount: t.play_count
+              playCount: t.play_count,
+              badgeType: t.badge_type || null
             }));
 
           // 인기 테스트 찾기 (유사한 테스트와 중복되지 않는 다른 테스트들)
@@ -182,7 +185,8 @@ export default function MBTITestClient({
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
               thumbnail: t.thumbnail,
-              playCount: t.play_count
+              playCount: t.play_count,
+              badgeType: t.badge_type || null
             }));
 
           setSimilarTestsState(similarTestsList);
@@ -534,7 +538,17 @@ export default function MBTITestClient({
                 NEW
               </div>
             )}
-          </div>
+            {badgeType === 'popular' && (
+              <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                인기
+              </div>
+            )}
+            {badgeType === 'hot' && (
+              <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                HOT
+              </div>
+            )}
+</div>
 
           <div className="px-4">
             {/* 테스트 제목 */}
@@ -649,16 +663,16 @@ export default function MBTITestClient({
                             NEW
                           </div>
                         )}
-                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
-                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
-                              인기
-                            </div>
-                          )}
-                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
-                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
-                              HOT
-                            </div>
-                          )}
+                        {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                            인기
+                          </div>
+                        )}
+                        {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                          <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                            HOT
+                          </div>
+                        )}
                         </div>
                       <div className="p-4">
                         <div className="flex items-center justify-end gap-3">

@@ -120,6 +120,7 @@ export interface FaceLoveFortuneTestClientProps {
   playCount?: number;
   similarTests?: any[];
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 // 얼굴로 보는 올해 나의 연애운 결과 데이터

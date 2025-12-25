@@ -25,6 +25,7 @@ export interface FaceOccupationsTestClientProps {
   playCount?: number;
   similarTests?: any[];
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 // 얼굴로 보는 추천 직업 결과 데이터

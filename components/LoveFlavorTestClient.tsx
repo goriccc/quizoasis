@@ -31,6 +31,7 @@ interface LoveFlavorTestClientProps {
     badgeType?: 'popular' | 'hot' | null;
     }>;
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 // 호환 텍스트(상세 설명은 다국어 단계에서 추가)
@@ -50,7 +51,8 @@ export default function LoveFlavorTestClient({
   playCount = 0,
   similarTests = []
 ,
-  isLatestTest = false
+  isLatestTest = false,
+  badgeType = null
 }: LoveFlavorTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
@@ -336,7 +338,17 @@ export default function LoveFlavorTestClient({
                         NEW
                       </div>
                     )}
-                  </div>
+                              {badgeType === 'popular' && (
+              <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                인기
+              </div>
+            )}
+            {badgeType === 'hot' && (
+              <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                HOT
+              </div>
+            )}
+</div>
 
           <div className="px-4">
             <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">{title}</h1>

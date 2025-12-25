@@ -738,6 +738,10 @@ export default async function TestPage({ params }: Props) {
       ],
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         {/* JSON-LD Schema - Quiz */}
@@ -763,6 +767,8 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           similarTests={[]} // 클라이언트 사이드에서 로드
+          badgeType={test.badge_type || null}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -1114,6 +1120,10 @@ export default async function TestPage({ params }: Props) {
       ],
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         {/* JSON-LD Schema - Quiz */}
@@ -1139,6 +1149,8 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           similarTests={[]} // 클라이언트 사이드에서 로드
+          badgeType={test.badge_type || null}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -1242,6 +1254,10 @@ export default async function TestPage({ params }: Props) {
       ],
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         {/* JSON-LD Schema - Quiz */}
@@ -1267,6 +1283,8 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           similarTests={[]} // 클라이언트 사이드에서 로드
+          badgeType={test.badge_type || null}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -1608,6 +1626,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -1666,6 +1685,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -1885,6 +1905,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -1943,6 +1964,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2002,6 +2024,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2048,6 +2071,17 @@ export default async function TestPage({ params }: Props) {
     const latestTestSlugs = await getLatestTestSlugs(15);
     const isLatestTest = latestTestSlugs.includes(slug);
 
+    // 디버깅: badge_type 값 확인
+    console.log('🔍 Phase2LazinessLevelTest PAGE:', {
+      slug,
+      badge_type: test.badge_type,
+      badge_type_type: typeof test.badge_type,
+      badgeType_prop: test.badge_type || null,
+      isLatestTest,
+      test_has_badge_type: 'badge_type' in test,
+      test_keys: Object.keys(test).filter(k => k.includes('badge') || k.includes('Badge'))
+    });
+
     return (
       <>
         <Phase2LazinessLevelTestClient
@@ -2061,6 +2095,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2120,6 +2155,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2179,6 +2215,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2238,6 +2275,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2297,6 +2335,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2356,6 +2395,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2415,6 +2455,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2581,6 +2622,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -2640,6 +2682,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -3230,6 +3273,7 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -5927,6 +5971,10 @@ export default async function TestPage({ params }: Props) {
       ],
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         {/* JSON-LD Schema - Quiz */}
@@ -5952,6 +6000,8 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           similarTests={[]} // 클라이언트 사이드에서 로드
+          badgeType={test.badge_type || null}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -6341,15 +6391,19 @@ export default async function TestPage({ params }: Props) {
   const isLatestTest = latestTestSlugs.includes(slug);
 
   // 디버깅을 위한 콘솔 로그
-  console.log('🔍 Test routing debug:', {
-    slug,
-    testType: test.type,
-    testClient: TestClient.name,
-    isLatestTest,
-    isInLatestList: latestTestSlugs.includes(slug),
-    latestTestSlugs: latestTestSlugs, // 전체 목록
-    currentSlugPosition: latestTestSlugs.indexOf(slug) + 1 || 'Not found'
-  });
+  if (process.env.NODE_ENV === 'development') {
+    console.log('🔍 Test routing debug:', {
+      slug,
+      testType: test.type,
+      testClient: TestClient.name,
+      isLatestTest,
+      isInLatestList: latestTestSlugs.includes(slug),
+      latestTestSlugs: latestTestSlugs, // 전체 목록
+      currentSlugPosition: latestTestSlugs.indexOf(slug) + 1 || 'Not found',
+      badge_type: test.badge_type,
+      badgeType_prop: test.badge_type || null
+    });
+  }
 
   return (
     <>
@@ -6376,6 +6430,7 @@ export default async function TestPage({ params }: Props) {
         thumbnail={test.thumbnail}
         playCount={test.play_count}
         similarTests={[]} // 클라이언트 사이드에서 로드
+        badgeType={test.badge_type || null}
         isLatestTest={isLatestTest}
       />
     </>

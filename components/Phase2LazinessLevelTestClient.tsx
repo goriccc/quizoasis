@@ -32,6 +32,7 @@ interface Phase2LazinessLevelTestClientProps {
     badgeType?: 'popular' | 'hot' | null;
     }>;
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 export default function Phase2LazinessLevelTestClient({ 
@@ -46,10 +47,32 @@ export default function Phase2LazinessLevelTestClient({
   playCount = 0,
   similarTests = []
 ,
-  isLatestTest = false
+  isLatestTest = false,
+  badgeType = null
 }: Phase2LazinessLevelTestClientProps) {
   const t = useTranslations('phase2LazinessLevelTest');
   const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
+  
+  // 디버깅: badgeType 값 확인 (클라이언트에서만)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      console.log('🔍 Phase2LazinessLevelTestClient START SCREEN:', {
+        slug,
+        badgeType,
+        badgeTypeType: typeof badgeType,
+        badgeTypeValue: badgeType,
+        isLatestTest,
+        shouldShowPopular: !isLatestTest && badgeType === 'popular',
+        shouldShowHot: !isLatestTest && badgeType === 'hot',
+        conditionCheck: {
+          notLatest: !isLatestTest,
+          isPopular: badgeType === 'popular',
+          isHot: badgeType === 'hot',
+          badgeTypeExists: !!badgeType
+        }
+      });
+    }
+  }, [slug, badgeType, isLatestTest]);
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({}); // 원래 질문 인덱스를 키로 사용
@@ -203,7 +226,7 @@ export default function Phase2LazinessLevelTestClient({
             title: t.title[locale] || t.title.ko,
             thumbnail: t.thumbnail,
             playCount: t.play_count,
-            badgeType: t.badge_type || null
+              badgeType: t.badge_type || null
           }));
 
         const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
@@ -217,7 +240,7 @@ export default function Phase2LazinessLevelTestClient({
             title: t.title[locale] || t.title.ko,
             thumbnail: t.thumbnail,
             playCount: t.play_count,
-            badgeType: t.badge_type || null
+              badgeType: t.badge_type || null
           }));
 
         setSimilarTestsState(similarTestsList);
@@ -501,7 +524,17 @@ export default function Phase2LazinessLevelTestClient({
                 NEW
               </div>
             )}
-          </div>
+            {badgeType === 'popular' && (
+              <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                인기
+              </div>
+            )}
+            {badgeType === 'hot' && (
+              <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                HOT
+              </div>
+            )}
+</div>
 
           <div className="px-4">
             <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">

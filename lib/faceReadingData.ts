@@ -25,6 +25,7 @@ export interface FaceReadingTestClientProps {
   playCount?: number;
   similarTests?: any[];
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 // 관상 보기 결과 데이터

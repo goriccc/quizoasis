@@ -32,6 +32,7 @@ interface EmpathyTestClientProps {
     badgeType?: 'popular' | 'hot' | null;
     }>;
   isLatestTest?: boolean;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 // 궁합 설명 함수
@@ -59,7 +60,8 @@ export default function EmpathyTestClient({
   playCount = 0,
   similarTests = []
 ,
-  isLatestTest = false
+  isLatestTest = false,
+  badgeType = null
 }: EmpathyTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
