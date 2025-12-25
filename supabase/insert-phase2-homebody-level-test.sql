@@ -48,4 +48,3 @@ ON CONFLICT (slug) DO UPDATE SET
   type = EXCLUDED.type,
   category = EXCLUDED.category,
   tags = EXCLUDED.tags;
-

@@ -197,9 +197,7 @@
       "shareFailed": "Sharing feature is not available.",
       "wechatCopy": "Link copied! Paste and share in WeChat.",
       "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
-      "kakaoError": "An error occurred while sharing on KakaoTalk."
-    }
-  },
+      "kakaoError": "An error occurred while sharing on KakaoTalk."    },    "recommendations": {      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"    }  },
   "trustTest": {
     "startMessage": {
       "line1": "How much do people trust you? We measure your trustworthiness!",
@@ -1737,9 +1735,7 @@
       "shareFailed": "Share feature is not available.",
       "wechatCopy": "Link copied! Paste it in WeChat to share.",
       "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
-      "kakaoError": "An error occurred while sharing on KakaoTalk."
-    }
-  },
+      "kakaoError": "An error occurred while sharing on KakaoTalk."    },    "recommendations": {      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"    }  },
   "phase2AreYouTTest": {
     "startMessage": {
       "line1": "\"Are you... a T?\" Have you heard this phrase lately?",
@@ -2491,9 +2487,7 @@
       "shareFailed": "Unable to use sharing feature.",
       "wechatCopy": "Link copied! Paste and share on WeChat.",
       "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
-      "kakaoError": "An error occurred while sharing on KakaoTalk."
-    }
-  },
+      "kakaoError": "An error occurred while sharing on KakaoTalk."    },    "recommendations": {      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"    }  },
   "friendTest": {
     "startMessage": {
       "line1": "\"Me as I think vs Me as friends see me\"",
@@ -5406,7 +5400,5 @@
       "shareFailed": "Share feature is not available.",
       "wechatCopy": "Link copied! Paste it in WeChat to share.",
       "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
-      "kakaoError": "An error occurred while sharing on KakaoTalk."
-    }
-  }
+      "kakaoError": "An error occurred while sharing on KakaoTalk."    },    "recommendations": {      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"    }  }
 }
