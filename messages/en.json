@@ -5367,5 +5367,61 @@
       "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2DatingMbtiTest": {
+    "startMessage": {
+      "line1": "\"How are your dating cells doing?\"",
+      "line2": "Some people only have flings that end, while others quickly fall in love and give everything.",
+      "line3": "From 'impregnable fortress defense' with rational judgment to 'fast-faller' who goes straight forward as emotions dictate.",
+      "line4": "We analyze your hidden dating personality using MBTI theory to reveal your chilling dating patterns and perfect match.",
+      "line5": "Diagnose my dating ability 💘 Check my Dating MBTI 💌"
+    },
+    "ui": {
+      "startTest": "Check Dating MBTI",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Results",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (My Dating MBTI)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "datingStyle": "Dating Style",
+      "characteristics": "Key Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My Dating MBTI is {type}! 💘 Am I forever solo, or a dating pushover?",
+      "kakao": "My Dating MBTI is {type}! 💘 Am I forever solo, or a dating pushover?",
+      "wechat": "My Dating MBTI is {type}! 💘 Am I forever solo, or a dating pushover?",
+      "whatsapp": "My Dating MBTI is {type}! 💘 Am I forever solo, or a dating pushover?",
+      "telegram": "My Dating MBTI is {type}! 💘 Am I forever solo, or a dating pushover?",
+      "line": "My Dating MBTI is {type}! 💘 Am I forever solo, or a dating pushover?",
+      "startDefault": "Forever Solo? Dating Pushover? My Dating MBTI 💘",
+      "startKakao": "Forever Solo? Dating Pushover? My Dating MBTI 💘",
+      "startWechat": "Forever Solo? Dating Pushover? My Dating MBTI 💘",
+      "startWhatsapp": "Forever Solo? Dating Pushover? My Dating MBTI 💘",
+      "startTelegram": "Forever Solo? Dating Pushover? My Dating MBTI 💘",
+      "startLine": "Forever Solo? Dating Pushover? My Dating MBTI 💘"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is unavailable.",
+      "wechatCopy": "Link copied! Please paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing feature. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing on KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Other Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests These Days"
+    }
   }
 }

@@ -8,6 +8,7 @@ import { Play } from 'lucide-react';
 import { QuizTest } from '@/lib/types';
 import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
 import { Locale } from '@/i18n';
+import { getLatestTestSlugs } from '@/lib/latestTests';
 
 interface LatestTestsSectionProps {
   tests: QuizTest[];
@@ -25,6 +26,20 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
   const [dragDistance, setDragDistance] = useState(0);
   const [lastMoveTime, setLastMoveTime] = useState(0);
   const [lastMoveX, setLastMoveX] = useState(0);
+  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const slugs = await getLatestTestSlugs(15);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
+  }, []);
 
   // 최신 테스트는 항상 최신순으로 정렬 (sessionStorage 사용 안 함)
   const orderedTests = useMemo(() => {
@@ -204,7 +219,23 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
                       loading={index < 2 ? undefined : 'lazy'}
                       quality={85}
                     />
-                  
+                    {/* NEW 뱃지 */}
+                    {latestTestSlugs.includes(test.slug) && (
+                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                        NEW
+                      </div>
+                    )}
+                    {/* 인기/HOT 뱃지 (NEW 뱃지가 없을 때만) */}
+                    {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                      <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                        인기
+                      </div>
+                    )}
+                    {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                      <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                        HOT
+                      </div>
+                    )}
                   </div>
                   
                   {/* 타이틀과 플레이 횟수 */}

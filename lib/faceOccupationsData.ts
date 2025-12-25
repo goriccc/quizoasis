@@ -24,6 +24,7 @@ export interface FaceOccupationsTestClientProps {
   thumbnail: string;
   playCount?: number;
   similarTests?: any[];
+  isLatestTest?: boolean;
 }
 
 // 얼굴로 보는 추천 직업 결과 데이터

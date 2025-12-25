@@ -29,7 +29,9 @@ interface LifePrioritiesTestClientProps {
     title: string;
     thumbnail: string;
     playCount: number;
-  }>;
+    badgeType?: 'popular' | 'hot' | null;
+    }>;
+  isLatestTest?: boolean;
 }
 
 export default function LifePrioritiesTestClient({ 
@@ -43,6 +45,8 @@ export default function LifePrioritiesTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
+,
+  isLatestTest = false
 }: LifePrioritiesTestClientProps) {
   const t = useTranslations();
   const tGlobal = useTranslations();
@@ -63,6 +67,7 @@ export default function LifePrioritiesTestClient({
     title: string;
     thumbnail: string;
     playCount: number;
+    badgeType?: 'popular' | 'hot' | null;
   }>>([]);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
@@ -74,6 +79,8 @@ export default function LifePrioritiesTestClient({
   };
 
   // 질문 셔플 초기화
+    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+
   useEffect(() => {
     if (questions.length > 0) {
       const shuffled = shuffleQuestions(questions);
@@ -435,7 +442,15 @@ export default function LifePrioritiesTestClient({
         const filteredTests = tests
           .filter((test: any) => test.slug !== slug)
           .sort((a: any, b: any) => b.playCount - a.playCount)
-          .slice(0, 10);
+          .slice(0, 10)
+          .map((t: any) => ({
+            id: t.id,
+            slug: t.slug,
+            title: typeof t.title === 'string' ? t.title : (t.title[locale] || t.title.ko),
+            thumbnail: t.thumbnail,
+            playCount: t.playCount || 0,
+            badgeType: t.badgeType || null
+          }));
         setSimilarTestsData(filteredTests);
       } catch (error) {
         console.error('Failed to load similar tests:', error);
@@ -443,7 +458,21 @@ export default function LifePrioritiesTestClient({
     };
 
     loadTests();
-  }, [slug]);
+  }, [slug, locale]);
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const tests = await getTests();
+        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
+  }, []);
+
 
   // 시작 화면
   if (!started) {
@@ -459,7 +488,12 @@ export default function LifePrioritiesTestClient({
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
               priority
             />
-          </div>
+            {isLatestTest && (
+                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                        NEW
+                      </div>
+                    )}
+                  </div>
 
           <div className="px-4">
             <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">
@@ -561,7 +595,22 @@ export default function LifePrioritiesTestClient({
                               className="object-cover"
                               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                             />
-                          </div>
+                                                    {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
+                        </div>
                           <div className="p-4">
                             <div className="flex items-center justify-end gap-3">
                               <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">
@@ -1052,6 +1101,21 @@ export default function LifePrioritiesTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                                                  {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
@@ -1095,6 +1159,21 @@ export default function LifePrioritiesTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                                                  {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">

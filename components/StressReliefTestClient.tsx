@@ -29,7 +29,9 @@ interface StressReliefTestClientProps {
     title: string;
     thumbnail: string;
     playCount: number;
-  }>;
+    badgeType?: 'popular' | 'hot' | null;
+    }>;
+  isLatestTest?: boolean;
 }
 
 export default function StressReliefTestClient({ 
@@ -43,6 +45,8 @@ export default function StressReliefTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
+,
+  isLatestTest = false
 }: StressReliefTestClientProps) {
   const t = useTranslations();
   const [started, setStarted] = useState(false);
@@ -61,6 +65,8 @@ export default function StressReliefTestClient({
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
+    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+
   useEffect(() => {
     if (!started) return;
     
@@ -217,6 +223,20 @@ export default function StressReliefTestClient({
       return () => clearTimeout(timer);
     }
   }, [showLoadingSpinner]);
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const tests = await getTests();
+        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
+  }, []);
+
 
   // 질문 섞기 함수
   const shuffleQuestions = (questionList: StressReliefQuestion[]) => {
@@ -455,7 +475,12 @@ export default function StressReliefTestClient({
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
               priority
             />
-          </div>
+            {isLatestTest && (
+                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                        NEW
+                      </div>
+                    )}
+                  </div>
 
           <div className="px-4">
             <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">
@@ -553,6 +578,21 @@ export default function StressReliefTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                                                  {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
@@ -824,6 +864,21 @@ export default function StressReliefTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                                                  {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
@@ -861,6 +916,21 @@ export default function StressReliefTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                                                  {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">

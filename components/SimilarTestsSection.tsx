@@ -4,11 +4,11 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { QuizTest } from '@/lib/types';
-import { Locale } from '@/i18n';
-import { getThumbnailUrl } from '@/lib/utils';
-import { formatPlayCount } from '@/lib/utils';
 import { Play } from 'lucide-react';
+import { QuizTest } from '@/lib/types';
+import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
+import { Locale } from '@/i18n';
+import { getLatestTestSlugs } from '@/lib/latestTests';
 
 interface SimilarTestsSectionProps {
   currentTestSlug: string;
@@ -39,6 +39,20 @@ export default function SimilarTestsSection({
   const [page, setPage] = useState(1);
   const observerRef = useRef<IntersectionObserver | null>(null);
   const loadMoreRef = useRef<HTMLDivElement | null>(null);
+  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const slugs = await getLatestTestSlugs(15);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
+  }, []);
 
   // 무한 스크롤을 위한 Intersection Observer (임시 비활성화)
   const lastTestElementRef = useCallback((node: HTMLDivElement) => {
@@ -150,6 +164,23 @@ export default function SimilarTestsSection({
                     loading="lazy"
                     quality={85}
                   />
+                  {/* NEW 뱃지 */}
+                  {latestTestSlugs.includes(test.slug) && (
+                    <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                      NEW
+                    </div>
+                  )}
+                  {/* 인기/HOT 뱃지 (NEW 뱃지가 없을 때만) */}
+                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                    <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                      인기
+                    </div>
+                  )}
+                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                    <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                      HOT
+                    </div>
+                  )}
                 </div>
                 
                 {/* 타이틀과 플레이 횟수 */}

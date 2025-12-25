@@ -24,6 +24,7 @@ export interface FaceReadingTestClientProps {
   thumbnail: string;
   playCount?: number;
   similarTests?: any[];
+  isLatestTest?: boolean;
 }
 
 // 관상 보기 결과 데이터

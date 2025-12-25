@@ -119,6 +119,7 @@ export interface FaceLoveFortuneTestClientProps {
   thumbnail: string;
   playCount?: number;
   similarTests?: any[];
+  isLatestTest?: boolean;
 }
 
 // 얼굴로 보는 올해 나의 연애운 결과 데이터

@@ -27,6 +27,7 @@ import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
+import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
 import { superpowerQuestions, superpowerResults } from '@/lib/superpowerData';
 import { travelStyleQuestions, travelStyleResults } from '@/lib/travelStyleData';
@@ -90,6 +91,7 @@ import { faceReadingResults } from '@/lib/faceReadingData';
 import { getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
+import { getLatestTestSlugs } from '@/lib/latestTests';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const MBTITestClient = dynamic(() => import('@/components/MBTITestClient'), {
@@ -159,6 +161,9 @@ const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient
   ssr: false
 });
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
+  ssr: false
+});
+const Phase2DatingMbtiTestClient = dynamic(() => import('@/components/Phase2DatingMbtiTestClient'), {
   ssr: false
 });
 const Phase2PerfectionismTestClient = dynamic(() => import('@/components/Phase2PerfectionismTestClient'), {
@@ -1586,6 +1591,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2FactBomberTestClient
@@ -1598,6 +1607,65 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2FactBomberQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase2_dating_mbti_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_dating_mbti_test',
+      title: {
+        ko: '평생 솔로? 연애 호구? 내 연애 MBTI',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      description: {
+        ko: '당신의 연애 세포는 안녕하신가요?',
+        en: '',
+        ja: '',
+        'zh-CN': '',
+        'zh-TW': '',
+        vi: '',
+        id: ''
+      },
+      thumbnail: 'phase2_test_140_dating_mbti.jpg',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: [],
+        ja: [],
+        'zh-CN': [],
+        'zh-TW': [],
+        vi: [],
+        id: []
+      }
+    };
+
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase2DatingMbtiTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description}
+          questions={phase2DatingMbtiQuestions}
+          results={phase2DatingMbtiResults}
+          questionCount={phase2DatingMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -1800,6 +1868,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2SocialLevelTestClient
@@ -1812,6 +1884,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2SocialLevelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -1853,6 +1926,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2LieDetectorTestClient
@@ -1865,6 +1942,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2LieDetectorQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -1907,6 +1985,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2HomebodyLevelTestClient
@@ -1919,6 +2001,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2HomebodyLevelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -1961,6 +2044,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2LazinessLevelTestClient
@@ -1973,6 +2060,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2LazinessLevelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2015,6 +2103,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2ReincarnationAnimalTestClient
@@ -2027,6 +2119,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2ReincarnationAnimalQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2069,6 +2162,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2DarkSideTestClient
@@ -2081,6 +2178,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2DarkSideQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2123,6 +2221,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2AreYouTTestClient
@@ -2135,6 +2237,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2AreYouTQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2177,6 +2280,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2CapitalQuizTestClient
@@ -2189,6 +2296,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2CapitalQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2231,6 +2339,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2ItTechQuizTestClient
@@ -2243,6 +2355,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2ItTechQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2285,6 +2398,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2LiteratureQuizTestClient
@@ -2297,6 +2414,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2LiteratureQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2446,6 +2564,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2WorldHistoryQuizTestClient
@@ -2458,6 +2580,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2WorldHistoryQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -2500,6 +2623,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2YoutubeChannelTestClient
@@ -2512,6 +2639,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2YoutubeChannelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -3085,6 +3213,10 @@ export default async function TestPage({ params }: Props) {
       }
     };
 
+    // 최신 테스트 여부 확인
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase2ReincarnationAnimalTestClient
@@ -3097,6 +3229,7 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase2ReincarnationAnimalQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
         />
       </>
     );
@@ -5862,6 +5995,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase2FactBomberQuestions,
       results: phase2FactBomberResults
     };
+  } else if (slug === 'phase2_dating_mbti_test') {
+    testData = {
+      questions: phase2DatingMbtiQuestions,
+      results: phase2DatingMbtiResults
+    };
   } else if (slug === 'soul-drink-test') {
     testData = {
       questions: soulDrinkQuestions,
@@ -6141,6 +6279,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'phase2_fact_bomber_test') TestClient = Phase2FactBomberTestClient;
+    else if (slug === 'phase2_dating_mbti_test') TestClient = Phase2DatingMbtiTestClient;
     else if (slug === 'phase2_perfectionism-test') TestClient = Phase2PerfectionismTestClient;
     else if (slug === 'phase2_friendship-style-test') TestClient = Phase2FriendshipStyleTestClient;
     else if (slug === 'phase2_relationship-cut-test') TestClient = Phase2RelationshipCutTestClient;
@@ -6197,12 +6336,19 @@ export default async function TestPage({ params }: Props) {
     TestClient = MBTITestClient;
   }
 
+  // 최신 테스트 여부 확인
+  const latestTestSlugs = await getLatestTestSlugs(15);
+  const isLatestTest = latestTestSlugs.includes(slug);
+
   // 디버깅을 위한 콘솔 로그
-  console.log('Test routing debug:', {
+  console.log('🔍 Test routing debug:', {
     slug,
     testType: test.type,
     testClient: TestClient.name,
-    isBrainTest: TestClient === BrainTestClient
+    isLatestTest,
+    isInLatestList: latestTestSlugs.includes(slug),
+    latestTestSlugs: latestTestSlugs, // 전체 목록
+    currentSlugPosition: latestTestSlugs.indexOf(slug) + 1 || 'Not found'
   });
 
   return (
@@ -6230,6 +6376,7 @@ export default async function TestPage({ params }: Props) {
         thumbnail={test.thumbnail}
         playCount={test.play_count}
         similarTests={[]} // 클라이언트 사이드에서 로드
+        isLatestTest={isLatestTest}
       />
     </>
   );

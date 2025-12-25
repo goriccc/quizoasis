@@ -29,7 +29,9 @@ interface Phase2LazinessLevelTestClientProps {
     title: string;
     thumbnail: string;
     playCount: number;
-  }>;
+    badgeType?: 'popular' | 'hot' | null;
+    }>;
+  isLatestTest?: boolean;
 }
 
 export default function Phase2LazinessLevelTestClient({ 
@@ -43,6 +45,8 @@ export default function Phase2LazinessLevelTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
+,
+  isLatestTest = false
 }: Phase2LazinessLevelTestClientProps) {
   const t = useTranslations('phase2LazinessLevelTest');
   const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
@@ -61,6 +65,22 @@ export default function Phase2LazinessLevelTestClient({
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
+
+  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const tests = await getTests();
+        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
+  }, []);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
   useEffect(() => {
@@ -182,7 +202,8 @@ export default function Phase2LazinessLevelTestClient({
             slug: t.slug,
             title: t.title[locale] || t.title.ko,
             thumbnail: t.thumbnail,
-            playCount: t.play_count
+            playCount: t.play_count,
+            badgeType: t.badge_type || null
           }));
 
         const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
@@ -195,7 +216,8 @@ export default function Phase2LazinessLevelTestClient({
             slug: t.slug,
             title: t.title[locale] || t.title.ko,
             thumbnail: t.thumbnail,
-            playCount: t.play_count
+            playCount: t.play_count,
+            badgeType: t.badge_type || null
           }));
 
         setSimilarTestsState(similarTestsList);
@@ -219,6 +241,20 @@ export default function Phase2LazinessLevelTestClient({
       return () => clearTimeout(timer);
     }
   }, [showLoadingSpinner]);
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const tests = await getTests();
+        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
+  }, []);
+
 
   // 질문 섞기 함수
   const shuffleQuestions = (questionList: Phase2LazinessLevelQuestion[]) => {
@@ -460,6 +496,11 @@ export default function Phase2LazinessLevelTestClient({
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
               priority
             />
+            {isLatestTest && (
+              <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                NEW
+              </div>
+            )}
           </div>
 
           <div className="px-4">
@@ -558,6 +599,21 @@ export default function Phase2LazinessLevelTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                          {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
@@ -865,6 +921,21 @@ export default function Phase2LazinessLevelTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                          {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
@@ -902,6 +973,21 @@ export default function Phase2LazinessLevelTestClient({
                             className="object-cover"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                           />
+                          {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">

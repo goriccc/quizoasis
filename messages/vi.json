@@ -5358,5 +5358,61 @@
       "similarTestsTop5": "🎯 Top 5 test tương tự được đề xuất",
       "popularTestsTop5": "🔥 Top 5 test phổ biến"
     }
+  },
+  "phase2DatingMbtiTest": {
+    "startMessage": {
+      "line1": "\"Các tế bào hẹn hò của bạn khỏe chứ?\"",
+      "line2": "Một số người chỉ có những mối quan hệ kết thúc, trong khi những người khác nhanh chóng yêu và cho đi tất cả.",
+      "line3": "Từ 'phòng thủ thành trì bất khả xâm phạm' với phán đoán hợp lý đến 'yêu nhanh' đi thẳng theo cảm xúc.",
+      "line4": "Chúng tôi phân tích tính cách hẹn hò ẩn giấu của bạn bằng lý thuyết MBTI để tiết lộ các mẫu hẹn hò đáng sợ và kết hợp hoàn hảo.",
+      "line5": "Chẩn đoán khả năng hẹn hò của tôi 💘 Kiểm tra MBTI Hẹn hò của tôi 💌"
+    },
+    "ui": {
+      "startTest": "Kiểm tra MBTI Hẹn hò",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (MBTI Hẹn hò của tôi)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "datingStyle": "Phong cách Hẹn hò",
+      "characteristics": "Đặc điểm Chính",
+      "goodMatch": "Kết hợp Hoàn hảo",
+      "badMatch": "Kết hợp Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "MBTI Hẹn hò của tôi là {type}! 💘 Tôi sẽ mãi mãi độc thân, hay là kẻ ngốc trong hẹn hò?",
+      "kakao": "MBTI Hẹn hò của tôi là {type}! 💘 Tôi sẽ mãi mãi độc thân, hay là kẻ ngốc trong hẹn hò?",
+      "wechat": "MBTI Hẹn hò của tôi là {type}! 💘 Tôi sẽ mãi mãi độc thân, hay là kẻ ngốc trong hẹn hò?",
+      "whatsapp": "MBTI Hẹn hò của tôi là {type}! 💘 Tôi sẽ mãi mãi độc thân, hay là kẻ ngốc trong hẹn hò?",
+      "telegram": "MBTI Hẹn hò của tôi là {type}! 💘 Tôi sẽ mãi mãi độc thân, hay là kẻ ngốc trong hẹn hò?",
+      "line": "MBTI Hẹn hò của tôi là {type}! 💘 Tôi sẽ mãi mãi độc thân, hay là kẻ ngốc trong hẹn hò?",
+      "startDefault": "Mãi mãi Độc thân? Kẻ Ngốc trong Hẹn hò? MBTI Hẹn hò của tôi 💘",
+      "startKakao": "Mãi mãi Độc thân? Kẻ Ngốc trong Hẹn hò? MBTI Hẹn hò của tôi 💘",
+      "startWechat": "Mãi mãi Độc thân? Kẻ Ngốc trong Hẹn hò? MBTI Hẹn hò của tôi 💘",
+      "startWhatsapp": "Mãi mãi Độc thân? Kẻ Ngốc trong Hẹn hò? MBTI Hẹn hò của tôi 💘",
+      "startTelegram": "Mãi mãi Độc thân? Kẻ Ngốc trong Hẹn hò? MBTI Hẹn hò của tôi 💘",
+      "startLine": "Mãi mãi Độc thân? Kẻ Ngốc trong Hẹn hò? MBTI Hẹn hò của tôi 💘"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Bài kiểm tra Tương tự Khác",
+      "popularTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến Gần đây"
+    }
   }
 }

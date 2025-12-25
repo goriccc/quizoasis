@@ -124,6 +124,7 @@ export function convertDBTestToQuizTest(dbTest: DBTest, locale: Locale): QuizTes
     playCount: playCount,
     tags,
     createdAt: dbTest.created_at,
+    badgeType: dbTest.badge_type || null,
   };
 }
 

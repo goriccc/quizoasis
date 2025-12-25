@@ -22,6 +22,8 @@ export default function FacePsychStateTestClient({
   thumbnail,
   playCount = 0,
   similarTests = []
+,
+  isLatestTest = false
 }: FaceLoveFortuneTestClientProps) {
   const t = useTranslations('facePsychStateTest');
   const tGlobal = useTranslations();
@@ -615,6 +617,8 @@ export default function FacePsychStateTestClient({
   };
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
+    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+
   useEffect(() => {
     if (!started && aliProducts.length === 0) {
       const loadProducts = async () => {
@@ -1218,6 +1222,20 @@ export default function FacePsychStateTestClient({
     const warningFortune = Array.isArray(warningFortunes) ? warningFortunes[Math.floor(Math.random() * warningFortunes.length)] : warningFortunes;
     return { resultTitle, resultDescription, resultStrengths, resultRecommendations, resultAdvice, whenFortune, styleFortune, warningFortune };
   }, [result, locale]);
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const tests = await getTests();
+        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
+  }, []);
+
 
   // 로딩 스피너, 결과 팝업, 결과 화면, 진행 화면, 시작 화면 — 연애운 테스트와 동일 UI
   if (showLoadingSpinner) {
@@ -1462,6 +1480,21 @@ export default function FacePsychStateTestClient({
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                         <div className="relative aspect-video">
                           <Image src={getThumbnailUrl(test.thumbnail)} alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw" />
+                                                  {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
@@ -1487,6 +1520,21 @@ export default function FacePsychStateTestClient({
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                         <div className="relative aspect-video">
                           <Image src={getThumbnailUrl(test.thumbnail)} alt={typeof test.title === 'string' ? test.title : (test.title as any)?.[locale] || (test.title as any)?.ko || 'Test'} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw" />
+                                                  {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
                         </div>
                         <div className="p-4">
                           <div className="flex items-center justify-end gap-3">
@@ -1662,7 +1710,12 @@ export default function FacePsychStateTestClient({
       <div className="max-w-4xl mx-auto">
         <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
           <Image src={getThumbnailUrl(thumbnail || 'Facial_Psychological_State.jpg')} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px" priority />
-        </div>
+            {isLatestTest && (
+                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                        NEW
+                      </div>
+                    )}
+                  </div>
         <div className="px-4">
           <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">{title}</h1>
           <div className="my-6">
@@ -1725,7 +1778,22 @@ export default function FacePsychStateTestClient({
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                         />
-                      </div>
+                                                {latestTestSlugs.includes(test.slug) && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              NEW
+                            </div>
+                          )}
+                                                  {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+                            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              인기
+                            </div>
+                          )}
+                          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+                            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+                              HOT
+                            </div>
+                          )}
+                        </div>
                       <div className="p-4">
                         <div className="flex items-center justify-end gap-3">
                           <h3 className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors line-clamp-2 flex-1">

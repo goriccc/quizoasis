@@ -165,6 +165,7 @@ export interface FaceFortuneTestClientProps {
   thumbnail: string;
   playCount?: number;
   similarTests?: any[];
+  isLatestTest?: boolean;
 }
 
 export function calculateFaceFortuneResult(score: number): FaceFortuneResult {

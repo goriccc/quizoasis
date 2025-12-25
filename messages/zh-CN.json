@@ -5358,5 +5358,61 @@
       "similarTestsTop5": "🎯 前5名类似测试推荐",
       "popularTestsTop5": "🔥 前5名热门测试"
     }
+  },
+  "phase2DatingMbtiTest": {
+    "startMessage": {
+      "line1": "\"你的恋爱细胞还好吗？\"",
+      "line2": "有些人只是暧昧就结束，而有些人很快坠入爱河并付出一切。",
+      "line3": "从理性判断为先的'铜墙铁壁防御型'到按感情直进的'快速坠入爱河型'。",
+      "line4": "我们用MBTI理论分析你隐藏的恋爱性格，揭示令人毛骨悚然的恋爱模式和完美配对。",
+      "line5": "诊断我的恋爱能力 💘 查看我的恋爱MBTI 💌"
+    },
+    "ui": {
+      "startTest": "查看恋爱MBTI",
+      "shareWithFriends": "与朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重做",
+      "otherTests": "查看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（我的恋爱MBTI）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "datingStyle": "恋爱风格",
+      "characteristics": "主要特征",
+      "goodMatch": "完美配对",
+      "badMatch": "最差配对"
+    },
+    "shareMessages": {
+      "default": "我的恋爱MBTI是{type}！💘 我会永远单身，还是恋爱冤大头？",
+      "kakao": "我的恋爱MBTI是{type}！💘 我会永远单身，还是恋爱冤大头？",
+      "wechat": "我的恋爱MBTI是{type}！💘 我会永远单身，还是恋爱冤大头？",
+      "whatsapp": "我的恋爱MBTI是{type}！💘 我会永远单身，还是恋爱冤大头？",
+      "telegram": "我的恋爱MBTI是{type}！💘 我会永远单身，还是恋爱冤大头？",
+      "line": "我的恋爱MBTI是{type}！💘 我会永远单身，还是恋爱冤大头？",
+      "startDefault": "永远单身？恋爱冤大头？我的恋爱MBTI 💘",
+      "startKakao": "永远单身？恋爱冤大头？我的恋爱MBTI 💘",
+      "startWechat": "永远单身？恋爱冤大头？我的恋爱MBTI 💘",
+      "startWhatsapp": "永远单身？恋爱冤大头？我的恋爱MBTI 💘",
+      "startTelegram": "永远单身？恋爱冤大头？我的恋爱MBTI 💘",
+      "startLine": "永远单身？恋爱冤大头？我的恋爱MBTI 💘"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴以分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "在KakaoTalk上分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似其他测试前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
   }
 }

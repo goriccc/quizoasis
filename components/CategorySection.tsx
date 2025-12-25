@@ -9,18 +9,21 @@ import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { usePrefetchOnVisible } from '@/hooks/usePrefetchOnVisible';
 import { useMemo, useState, useEffect, useCallback } from 'react';
+import { getLatestTestSlugs } from '@/lib/latestTests';
 
 // 개별 테스트 카드 컴포넌트
 function TestCard({ 
   test, 
   index, 
   locale, 
-  getSafeTitle 
+  getSafeTitle,
+  latestTestSlugs 
 }: { 
   test: QuizTest; 
   index: number; 
   locale: Locale;
   getSafeTitle: (test: QuizTest) => string;
+  latestTestSlugs: string[];
 }) {
   const href = `/${locale}/test/${test.slug}`;
   const prefetchRef = usePrefetchOnVisible(href, index >= 3); // 처음 3개는 기본 prefetch, 나머지는 뷰포트에 보일 때
@@ -54,6 +57,23 @@ function TestCard({
             suppressHydrationWarning
             loading={index < 2 ? undefined : 'lazy'}
           />
+          {/* NEW 뱃지 */}
+          {latestTestSlugs.includes(test.slug) && (
+            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+              NEW
+            </div>
+          )}
+          {/* 인기/HOT 뱃지 (NEW 뱃지가 없을 때만) */}
+          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'popular' && (
+            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+              인기
+            </div>
+          )}
+          {!latestTestSlugs.includes(test.slug) && test.badgeType === 'hot' && (
+            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">
+              HOT
+            </div>
+          )}
         </div>
         
         {/* 타이틀과 플레이 횟수 */}
@@ -87,9 +107,23 @@ export default function CategorySection({ tests, categoryName, locale, showHeade
   const t = useTranslations();
   const currentLocale = useLocale();
   const [mounted, setMounted] = useState(false);
+  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
 
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  // 최신 테스트 slug 목록 로드
+  useEffect(() => {
+    const loadLatestSlugs = async () => {
+      try {
+        const slugs = await getLatestTestSlugs(15);
+        setLatestTestSlugs(slugs);
+      } catch (error) {
+        console.error('Error loading latest test slugs:', error);
+      }
+    };
+    loadLatestSlugs();
   }, []);
 
   // 안전한 카테고리 이름 가져오기 함수
@@ -179,6 +213,7 @@ export default function CategorySection({ tests, categoryName, locale, showHeade
               index={index}
               locale={locale}
               getSafeTitle={getSafeTitle}
+              latestTestSlugs={latestTestSlugs}
             />
           ))}
         </div>

@@ -7,6 +7,7 @@ export interface QuizTest {
   playCount: number;
   tags: string[];
   createdAt: string;
+  badgeType?: 'popular' | 'hot' | null;
 }
 
 export interface QuizQuestion {
@@ -71,6 +72,7 @@ export interface DBTest {
     id: string[];
     vi: string[];
   };
+  badge_type?: 'popular' | 'hot' | null;
 }
 
 

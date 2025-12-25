@@ -124,6 +124,7 @@ export interface FaceReincarnationTestClientProps {
   thumbnail: string;
   playCount?: number;
   similarTests?: any[];
+  isLatestTest?: boolean;
 }
 
 // 얼굴로 보는 나의 전생 결과 데이터 (점진적으로 추가)

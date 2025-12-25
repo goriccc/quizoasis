@@ -5358,5 +5358,61 @@
       "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
+  },
+  "phase2DatingMbtiTest": {
+    "startMessage": {
+      "line1": "\"Bagaimana sel kencan Anda?\"",
+      "line2": "Beberapa orang hanya memiliki hubungan yang berakhir, sementara yang lain cepat jatuh cinta dan memberikan segalanya.",
+      "line3": "Dari 'pertahanan benteng tak tertembus' dengan penilaian rasional hingga 'jatuh cinta cepat' yang berjalan lurus sesuai emosi.",
+      "line4": "Kami menganalisis kepribadian kencan tersembunyi Anda menggunakan teori MBTI untuk mengungkapkan pola kencan yang mengerikan dan kecocokan sempurna.",
+      "line5": "Diagnosis kemampuan kencan saya 💘 Periksa MBTI Kencan saya 💌"
+    },
+    "ui": {
+      "startTest": "Periksa MBTI Kencan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (MBTI Kencan saya)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "datingStyle": "Gaya Kencan",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Kecocokan Sempurna",
+      "badMatch": "Kecocokan Terburuk"
+    },
+    "shareMessages": {
+      "default": "MBTI Kencan saya adalah {type}! 💘 Apakah saya selamanya sendiri, atau korban kencan?",
+      "kakao": "MBTI Kencan saya adalah {type}! 💘 Apakah saya selamanya sendiri, atau korban kencan?",
+      "wechat": "MBTI Kencan saya adalah {type}! 💘 Apakah saya selamanya sendiri, atau korban kencan?",
+      "whatsapp": "MBTI Kencan saya adalah {type}! 💘 Apakah saya selamanya sendiri, atau korban kencan?",
+      "telegram": "MBTI Kencan saya adalah {type}! 💘 Apakah saya selamanya sendiri, atau korban kencan?",
+      "line": "MBTI Kencan saya adalah {type}! 💘 Apakah saya selamanya sendiri, atau korban kencan?",
+      "startDefault": "Selamanya Sendiri? Korban Kencan? MBTI Kencan saya 💘",
+      "startKakao": "Selamanya Sendiri? Korban Kencan? MBTI Kencan saya 💘",
+      "startWechat": "Selamanya Sendiri? Korban Kencan? MBTI Kencan saya 💘",
+      "startWhatsapp": "Selamanya Sendiri? Korban Kencan? MBTI Kencan saya 💘",
+      "startTelegram": "Selamanya Sendiri? Korban Kencan? MBTI Kencan saya 💘",
+      "startLine": "Selamanya Sendiri? Korban Kencan? MBTI Kencan saya 💘"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Silakan tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa Lainnya",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
   }
 }

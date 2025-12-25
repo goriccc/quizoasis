@@ -5346,5 +5346,61 @@
       "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "phase2DatingMbtiTest": {
+    "startMessage": {
+      "line1": "\"あなたの恋愛細胞は元気ですか？\"",
+      "line2": "誰かはただの関係で終わり、誰かはすぐに恋に落ちてすべてを与えます。",
+      "line3": "理性的な判断が先立つ「難攻不落の要塞防御型」から、感情のままに一直線に進む「金サバ型」まで。",
+      "line4": "MBTI理論であなたの隠された恋愛性格を分析し、ゾクゾクする恋愛パターンと完璧な相性を教えます。",
+      "line5": "私の恋愛力診断 💘 恋愛MBTI確認 💌"
+    },
+    "ui": {
+      "startTest": "恋愛MBTI確認",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（私の恋愛MBTI）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "datingStyle": "恋愛スタイル",
+      "characteristics": "主な特徴",
+      "goodMatch": "完璧な相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の恋愛MBTIは{type}！💘 私は一生独身？それとも恋愛カモ？",
+      "kakao": "私の恋愛MBTIは{type}！💘 私は一生独身？それとも恋愛カモ？",
+      "wechat": "私の恋愛MBTIは{type}！💘 私は一生独身？それとも恋愛カモ？",
+      "whatsapp": "私の恋愛MBTIは{type}！💘 私は一生独身？それとも恋愛カモ？",
+      "telegram": "私の恋愛MBTIは{type}！💘 私は一生独身？それとも恋愛カモ？",
+      "line": "私の恋愛MBTIは{type}！💘 私は一生独身？それとも恋愛カモ？",
+      "startDefault": "一生独身？恋愛カモ？私の恋愛MBTI 💘",
+      "startKakao": "一生独身？恋愛カモ？私の恋愛MBTI 💘",
+      "startWechat": "一生独身？恋愛カモ？私の恋愛MBTI 💘",
+      "startWhatsapp": "一生独身？恋愛カモ？私の恋愛MBTI 💘",
+      "startTelegram": "一生独身？恋愛カモ？私の恋愛MBTI 💘",
+      "startLine": "一生独身？恋愛カモ？私の恋愛MBTI 💘"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
   }
 }
