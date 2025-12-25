@@ -5247,6 +5247,60 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase2LieDetectorTest": {
+    "startMessage": {
+      "line1": "Is what you're saying right now the truth?",
+      "line2": "We tell countless lies in our lives.",
+      "line3": "From white lies to lies to get out of crises.",
+      "line4": "Are you an actor with a perfect poker face?",
+      "line5": "Or are you a fragile mental state where everything shows the moment you open your mouth?",
+      "line6": "We measure your hidden 'lying ability' through psychological pattern analysis.",
+      "line7": "It's more fun with friends! Truth game! Lie detection starts 🚨"
+    },
+    "ui": {
+      "startTest": "Start Lie Detection",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Result with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "View Other Tests",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "AdSense Ad Area (Fun Lie Detector)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Other Tests",
+      "lieLevel": "Lie Level",
+      "characteristics": "Characteristics",
+      "goodMatch": "Perfect Match",
+      "badMatch": "Worst Match"
+    },
+    "shareMessages": {
+      "default": "My lie level is Lv.{level}! {type} 🤫 Who's been fooled by me?",
+      "kakao": "My lie level is Lv.{level}! {type} 🤫 Who's been fooled by me?",
+      "wechat": "My lie level is Lv.{level}! {type} 🤫 Who's been fooled by me?",
+      "whatsapp": "My lie level is Lv.{level}! {type} 🤫 Who's been fooled by me?",
+      "telegram": "My lie level is Lv.{level}! {type} 🤫 Who's been fooled by me?",
+      "line": "My lie level is Lv.{level}! {type} 🤫 Who's been fooled by me?",
+      "startDefault": "Fun Lie Detector 🤫 Who's been fooled by me?",
+      "startKakao": "Fun Lie Detector 🤫 Who's been fooled by me?",
+      "startWechat": "Fun Lie Detector 🤫 Who's been fooled by me?",
+      "startWhatsapp": "Fun Lie Detector 🤫 Who's been fooled by me?",
+      "startTelegram": "Fun Lie Detector 🤫 Who's been fooled by me?",
+      "startLine": "Fun Lie Detector 🤫 Who's been fooled by me?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "What if I started YouTube?",

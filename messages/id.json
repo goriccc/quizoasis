@@ -5085,6 +5085,60 @@
       "popularTestsTop5": "🔥 Top 5 Rekomendasi Tes Populer Terkini"
     }
   },
+  "phase2LieDetectorTest": {
+    "startMessage": {
+      "line1": "Apakah yang Anda katakan sekarang adalah kebenaran?",
+      "line2": "Kita mengatakan banyak kebohongan dalam hidup kita.",
+      "line3": "Dari kebohongan putih hingga kebohongan untuk keluar dari krisis.",
+      "line4": "Apakah Anda seorang aktor dengan poker face yang sempurna?",
+      "line5": "Atau apakah Anda adalah keadaan mental yang rapuh di mana segalanya terlihat saat Anda membuka mulut?",
+      "line6": "Kami mengukur 'kemampuan berbohong' tersembunyi Anda melalui analisis pola psikologis.",
+      "line7": "Lebih menyenangkan dengan teman! Game kebenaran! Deteksi kebohongan dimulai 🚨"
+    },
+    "ui": {
+      "startTest": "Mulai Deteksi Kebohongan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil dengan Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat Tes Lainnya",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Area Iklan AdSense (Detektor Kebohongan yang Menyenangkan)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "lieLevel": "Level Kebohongan",
+      "characteristics": "Karakteristik",
+      "goodMatch": "Pasangan Sempurna",
+      "badMatch": "Pasangan Terburuk"
+    },
+    "shareMessages": {
+      "default": "Level kebohongan saya adalah Lv.{level}! {type} 🤫 Siapa yang pernah ditipu oleh saya?",
+      "kakao": "Level kebohongan saya adalah Lv.{level}! {type} 🤫 Siapa yang pernah ditipu oleh saya?",
+      "wechat": "Level kebohongan saya adalah Lv.{level}! {type} 🤫 Siapa yang pernah ditipu oleh saya?",
+      "whatsapp": "Level kebohongan saya adalah Lv.{level}! {type} 🤫 Siapa yang pernah ditipu oleh saya?",
+      "telegram": "Level kebohongan saya adalah Lv.{level}! {type} 🤫 Siapa yang pernah ditipu oleh saya?",
+      "line": "Level kebohongan saya adalah Lv.{level}! {type} 🤫 Siapa yang pernah ditipu oleh saya?",
+      "startDefault": "Detektor Kebohongan yang Menyenangkan 🤫 Siapa yang pernah ditipu oleh saya?",
+      "startKakao": "Detektor Kebohongan yang Menyenangkan 🤫 Siapa yang pernah ditipu oleh saya?",
+      "startWechat": "Detektor Kebohongan yang Menyenangkan 🤫 Siapa yang pernah ditipu oleh saya?",
+      "startWhatsapp": "Detektor Kebohongan yang Menyenangkan 🤫 Siapa yang pernah ditipu oleh saya?",
+      "startTelegram": "Detektor Kebohongan yang Menyenangkan 🤫 Siapa yang pernah ditipu oleh saya?",
+      "startLine": "Detektor Kebohongan yang Menyenangkan 🤫 Siapa yang pernah ditipu oleh saya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi di KakaoTalk."
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "Bagaimana jika saya memulai YouTube?",

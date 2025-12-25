@@ -5073,6 +5073,60 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2LieDetectorTest": {
+    "startMessage": {
+      "line1": "今あなたの言葉、本当ですか？",
+      "line2": "私たちは人生で数多くの嘘をつきます。",
+      "line3": "善意の嘘から、危機を回避するための嘘まで。",
+      "line4": "あなたは完璧なポーカーフェイスを持った演技派ですか？",
+      "line5": "それとも口を開けばすべてがバレる壊れやすいメンタルですか？",
+      "line6": "心理学的パターン分析を通じて、あなたの隠れた「嘘つき能力値」を測定します。",
+      "line7": "友達と一緒にやるともっと楽しい真実ゲーム！嘘発見開始 🚨"
+    },
+    "ui": {
+      "startTest": "嘘発見開始",
+      "shareWithFriends": "友達と一緒に試す",
+      "shareResultWithFriends": "結果を友達に共有する",
+      "shareResult": "結果を共有する",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに移動する",
+      "adsenseTitle": "AdSense広告エリア（楽しい嘘発見機）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "lieLevel": "嘘レベル",
+      "characteristics": "特徴",
+      "goodMatch": "最高の相性",
+      "badMatch": "最悪の相性"
+    },
+    "shareMessages": {
+      "default": "私の嘘レベルはLv.{level}！{type} 🤫 私に騙された人は？",
+      "kakao": "私の嘘レベルはLv.{level}！{type} 🤫 私に騙された人は？",
+      "wechat": "私の嘘レベルはLv.{level}！{type} 🤫 私に騙された人は？",
+      "whatsapp": "私の嘘レベルはLv.{level}！{type} 🤫 私に騙された人は？",
+      "telegram": "私の嘘レベルはLv.{level}！{type} 🤫 私に騙された人は？",
+      "line": "私の嘘レベルはLv.{level}！{type} 🤫 私に騙された人は？",
+      "startDefault": "楽しい嘘発見機 🤫 私に騙された人は？",
+      "startKakao": "楽しい嘘発見機 🤫 私に騙された人は？",
+      "startWechat": "楽しい嘘発見機 🤫 私に騙された人は？",
+      "startWhatsapp": "楽しい嘘発見機 🤫 私に騙された人は？",
+      "startTelegram": "楽しい嘘発見機 🤫 私に騙された人は？",
+      "startLine": "楽しい嘘発見機 🤫 私に騙された人は？"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能を使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "もし私がYouTubeを始めたら？",

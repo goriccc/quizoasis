@@ -5085,6 +5085,60 @@
       "popularTestsTop5": "🔥 最近热门测试推荐前5"
     }
   },
+  "phase2LieDetectorTest": {
+    "startMessage": {
+      "line1": "你现在说的话，是真实的吗？",
+      "line2": "我们在生活中说无数的谎言。",
+      "line3": "从善意的谎言到为摆脱危机而说的谎言。",
+      "line4": "你是拥有完美扑克脸的演员吗？",
+      "line5": "还是你一开口就会暴露的脆弱心理？",
+      "line6": "我们通过心理学模式分析来测量你隐藏的'撒谎能力值'。",
+      "line7": "和朋友一起玩更有趣！真相游戏！测谎开始 🚨"
+    },
+    "ui": {
+      "startTest": "开始测谎",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "前往测试",
+      "adsenseTitle": "AdSense广告区域（趣味测谎仪）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似其他测试",
+      "lieLevel": "撒谎等级",
+      "characteristics": "特征",
+      "goodMatch": "最佳配对",
+      "badMatch": "最差配对"
+    },
+    "shareMessages": {
+      "default": "我的撒谎等级是Lv.{level}！{type} 🤫 被我骗过的人举手？",
+      "kakao": "我的撒谎等级是Lv.{level}！{type} 🤫 被我骗过的人举手？",
+      "wechat": "我的撒谎等级是Lv.{level}！{type} 🤫 被我骗过的人举手？",
+      "whatsapp": "我的撒谎等级是Lv.{level}！{type} 🤫 被我骗过的人举手？",
+      "telegram": "我的撒谎等级是Lv.{level}！{type} 🤫 被我骗过的人举手？",
+      "line": "我的撒谎等级是Lv.{level}！{type} 🤫 被我骗过的人举手？",
+      "startDefault": "趣味测谎仪 🤫 被我骗过的人举手？",
+      "startKakao": "趣味测谎仪 🤫 被我骗过的人举手？",
+      "startWechat": "趣味测谎仪 🤫 被我骗过的人举手？",
+      "startWhatsapp": "趣味测谎仪 🤫 被我骗过的人举手？",
+      "startTelegram": "趣味测谎仪 🤫 被我骗过的人举手？",
+      "startLine": "趣味测谎仪 🤫 被我骗过的人举手？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "如果我要开始YouTube呢？",

@@ -5085,6 +5085,60 @@
       "popularTestsTop5": "🔥 Top 5 Đề xuất Bài kiểm tra Phổ biến Gần đây"
     }
   },
+  "phase2LieDetectorTest": {
+    "startMessage": {
+      "line1": "Lời bạn đang nói bây giờ có phải sự thật không?",
+      "line2": "Chúng ta nói vô số lời nói dối trong cuộc sống.",
+      "line3": "Từ những lời nói dối vô hại đến những lời nói dối để thoát khỏi khủng hoảng.",
+      "line4": "Bạn có phải là diễn viên với khuôn mặt poker hoàn hảo không?",
+      "line5": "Hay bạn là trạng thái tinh thần yếu ớt nơi mọi thứ hiển thị ngay khi bạn mở miệng?",
+      "line6": "Chúng tôi đo lường 'khả năng nói dối' ẩn của bạn thông qua phân tích mẫu tâm lý.",
+      "line7": "Vui hơn khi chơi với bạn bè! Trò chơi sự thật! Bắt đầu phát hiện nói dối 🚨"
+    },
+    "ui": {
+      "startTest": "Bắt đầu Phát hiện Nói dối",
+      "shareWithFriends": "Thử với Bạn bè",
+      "shareResultWithFriends": "Chia sẻ Kết quả với Bạn bè",
+      "shareResult": "Chia sẻ Kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem Các Bài kiểm tra Khác",
+      "goToTest": "Đi đến Bài kiểm tra",
+      "adsenseTitle": "Khu vực Quảng cáo AdSense (Máy phát hiện nói dối vui vẻ)",
+      "linkCopy": "Sao chép Liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các Bài kiểm tra Tương tự Khác",
+      "lieLevel": "Cấp độ Nói dối",
+      "characteristics": "Đặc điểm",
+      "goodMatch": "Cặp đôi Hoàn hảo",
+      "badMatch": "Cặp đôi Tệ nhất"
+    },
+    "shareMessages": {
+      "default": "Cấp độ nói dối của tôi là Lv.{level}! {type} 🤫 Ai đã bị tôi lừa giơ tay?",
+      "kakao": "Cấp độ nói dối của tôi là Lv.{level}! {type} 🤫 Ai đã bị tôi lừa giơ tay?",
+      "wechat": "Cấp độ nói dối của tôi là Lv.{level}! {type} 🤫 Ai đã bị tôi lừa giơ tay?",
+      "whatsapp": "Cấp độ nói dối của tôi là Lv.{level}! {type} 🤫 Ai đã bị tôi lừa giơ tay?",
+      "telegram": "Cấp độ nói dối của tôi là Lv.{level}! {type} 🤫 Ai đã bị tôi lừa giơ tay?",
+      "line": "Cấp độ nói dối của tôi là Lv.{level}! {type} 🤫 Ai đã bị tôi lừa giơ tay?",
+      "startDefault": "Máy phát hiện nói dối vui vẻ 🤫 Ai đã bị tôi lừa giơ tay?",
+      "startKakao": "Máy phát hiện nói dối vui vẻ 🤫 Ai đã bị tôi lừa giơ tay?",
+      "startWechat": "Máy phát hiện nói dối vui vẻ 🤫 Ai đã bị tôi lừa giơ tay?",
+      "startWhatsapp": "Máy phát hiện nói dối vui vẻ 🤫 Ai đã bị tôi lừa giơ tay?",
+      "startTelegram": "Máy phát hiện nói dối vui vẻ 🤫 Ai đã bị tôi lừa giơ tay?",
+      "startLine": "Máy phát hiện nói dối vui vẻ 🤫 Ai đã bị tôi lừa giơ tay?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ trên KakaoTalk."
+    }
+  },
   "phase2YoutubeChannelTest": {
     "startMessage": {
       "line1": "Nếu tôi bắt đầu YouTube thì sao?",
