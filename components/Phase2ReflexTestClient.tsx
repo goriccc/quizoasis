@@ -4,15 +4,16 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Play, Share2 } from 'lucide-react';
+import { Share2, Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { getLatestTestSlugs } from '@/lib/latestTests';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
-import { Phase2ColorSurvivalResult, calculatePhase2ColorSurvivalResult, PHASE2_COLOR_SURVIVAL_RESULTS } from '@/lib/phase2ColorSurvivalData';
+import { Phase2ReflexResult, calculatePhase2ReflexResult } from '@/lib/phase2ReflexTestData';
 
-interface Phase2ColorSurvivalTestClientProps {
+interface Phase2ReflexTestClientProps {
   locale: string;
   slug: string;
   title: string;
@@ -32,12 +33,13 @@ interface Phase2ColorSurvivalTestClientProps {
 }
 
 // Game Constants
-const INITIAL_TIME = 10.0;
-const MAX_TIME_CAP = 30.0;
-const PENALTY_TIME = 3.0;
-const TIMER_INTERVAL = 50; // ms
+const TOTAL_ROUNDS = 5;
+const MIN_DELAY = 2000; // 2 seconds
+const MAX_DELAY = 5000; // 5 seconds
 
-export default function Phase2ColorSurvivalTestClient({
+type GameState = 'intro' | 'waiting' | 'ready' | 'now' | 'finished';
+
+export default function Phase2ReflexTestClient({
   locale,
   slug,
   title,
@@ -47,199 +49,40 @@ export default function Phase2ColorSurvivalTestClient({
   similarTests = [],
   isLatestTest = false,
   badgeType = null
-}: Phase2ColorSurvivalTestClientProps) {
-  const t = useTranslations('phase2ColorSurvivalTest');
+}: Phase2ReflexTestClientProps) {
+  const t = useTranslations('phase2ReflexTest');
   const tGlobal = useTranslations();
   
   // Game State
-  const [started, setStarted] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isGameOver, setIsGameOver] = useState(false);
-  const [level, setLevel] = useState(1);
-  const [score, setScore] = useState(0); 
-  const [timeLeft, setTimeLeft] = useState(INITIAL_TIME);
-  
-  // Grid State
-  const [gridSize, setGridSize] = useState(2);
-  const [targetIndex, setTargetIndex] = useState(0);
-  const [baseColor, setBaseColor] = useState({ h: 0, s: 0, l: 0 });
-  const [diffColor, setDiffColor] = useState({ h: 0, s: 0, l: 0 });
-  
-  // Result Flow State
+  const [gameState, setGameState] = useState<GameState>('intro');
+  const [round, setRound] = useState(1);
+  const [records, setRecords] = useState<number[]>([]);
+  const [currentResult, setCurrentResult] = useState<number | null>(null);
+  const [startTime, setStartTime] = useState<number>(0);
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
+  const [showTooSoon, setShowTooSoon] = useState(false);
+
+  // Result State
+  const [result, setResult] = useState<Phase2ReflexResult | null>(null);
+  const [showResult, setShowResult] = useState(false);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
-  const [showResult, setShowResult] = useState(false);
-  const [result, setResult] = useState<Phase2ColorSurvivalResult | null>(null);
   
-  // Others
+  // Data State
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
-  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
+  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
 
-  // Generate Colors and Grid based on Level
-  const generateLevelData = useCallback((currentLevel: number) => {
-    let newGridSize = 2;
-    if (currentLevel <= 2) newGridSize = 2;
-    else if (currentLevel <= 5) newGridSize = 3;
-    else if (currentLevel <= 10) newGridSize = 4;
-    else if (currentLevel <= 18) newGridSize = 5;
-    else if (currentLevel <= 28) newGridSize = 6;
-    else if (currentLevel <= 40) newGridSize = 7;
-    else newGridSize = 8; 
+  // Refs
+  const gameAreaRef = useRef<HTMLDivElement>(null);
 
-    const maxDiff = 15;
-    const minDiff = 1.5;
-    let diff = Math.max(minDiff, maxDiff - (currentLevel * 0.3));
-    
-    if (currentLevel > 40) diff = 1.0;
-
-    const h = Math.floor(Math.random() * 360);
-    const s = Math.floor(Math.random() * 40) + 60; 
-    const l = Math.floor(Math.random() * 40) + 30; 
-
-    const lighter = Math.random() > 0.5;
-    const lDiff = lighter ? l + diff : l - diff;
-    
-    setGridSize(newGridSize);
-    setBaseColor({ h, s, l });
-    setDiffColor({ h, s, l: lDiff });
-    setTargetIndex(Math.floor(Math.random() * (newGridSize * newGridSize)));
-  }, []);
-
-  // Timer Logic (setInterval based)
+  // Initialize
   useEffect(() => {
-    let interval: NodeJS.Timeout;
-    
-    if (isPlaying) {
-      interval = setInterval(() => {
-        setTimeLeft(prev => {
-          const newTime = prev - (TIMER_INTERVAL / 1000);
-          if (newTime <= 0) {
-            setIsPlaying(false);
-            setIsGameOver(true);
-            return 0;
-          }
-          return newTime;
-        });
-      }, TIMER_INTERVAL);
-    }
-    
-    return () => {
-      if (interval) clearInterval(interval);
-    };
-  }, [isPlaying]);
-
-  // Handle Game Over -> Loading -> Popup -> Result
-  useEffect(() => {
-    if (isGameOver && !result) {
-      // 1. Calculate Result
-      const finalResult = calculatePhase2ColorSurvivalResult(level);
-      setResult(finalResult);
-      
-      // 2. Start Loading Sequence
-      setShowLoadingSpinner(true);
-      
-      // Load products for result
-      if (locale !== 'ko') {
-          const keywords = ['gaming monitors', 'eye care supplements', 'color calibration tools'];
-          const keyword = keywords[Math.floor(Math.random() * keywords.length)];
-          searchAliExpressProducts(keyword, 4, locale).then(setAliProducts).catch(console.error);
-      } else {
-           searchAliExpressProducts('trending', 4, locale).then(setAliProducts).catch(console.error);
-      }
-    }
-  }, [isGameOver, level, result, locale]);
-
-  // Loading Timer -> Popup
-  useEffect(() => {
-    if (showLoadingSpinner) {
-      const timer = setTimeout(() => {
-        setShowLoadingSpinner(false);
-        setShowResultPopup(true);
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-  }, [showLoadingSpinner]);
-
-  // Start Game
-  const handleStartGame = () => {
-    setStarted(true);
-    setIsPlaying(true);
-    setIsGameOver(false);
-    setShowLoadingSpinner(false);
-    setShowResultPopup(false);
-    setShowResult(false);
-    setLevel(1);
-    setScore(0);
-    setTimeLeft(INITIAL_TIME);
-    setResult(null);
-    generateLevelData(1);
-    
-    // 즉시 맨 위로 스크롤
-    window.scrollTo(0, 0);
-    
-    if (!hasIncrementedPlayCount) {
-      incrementPlayCount(slug);
-      setDisplayPlayCount(prev => prev + 1);
-      setHasIncrementedPlayCount(true);
-    }
-    
-    if (typeof window !== 'undefined') {
-        setTimeout(safeLoadAdSense, 100);
-    }
-  };
-
-  // Cell Click Handler
-  const handleCellClick = (index: number) => {
-    if (!isPlaying) return;
-
-    if (index === targetIndex) {
-      // Correct!
-      const nextLevel = level + 1;
-      setLevel(nextLevel);
-      setScore(prev => prev + 100); 
-      
-      let bonus = 0;
-      if (level <= 10) bonus = 3.0;
-      else if (level <= 25) bonus = 2.0;
-      else if (level <= 40) bonus = 1.0;
-      else bonus = 1.0;
-
-      setTimeLeft(prev => Math.min(MAX_TIME_CAP, prev + bonus));
-      generateLevelData(nextLevel);
-    } else {
-      // Wrong!
-      setTimeLeft(prev => Math.max(0, prev - PENALTY_TIME));
-      
-      const container = document.getElementById('game-grid');
-      if (container) {
-          container.classList.add('animate-shake');
-          setTimeout(() => container.classList.remove('animate-shake'), 300);
-      }
-    }
-  };
-  
-  // Retake
-  const handleRetake = () => {
-      setStarted(false);
-      setIsPlaying(false);
-      setIsGameOver(false);
-      setShowResult(false);
-      setShowResultPopup(false);
-      setResult(null);
-      setLevel(1);
-      setTimeLeft(INITIAL_TIME);
-      window.scrollTo(0, 0);
-  };
-  
-  const handleShowResult = () => {
-    setShowResultPopup(false);
-    setShowResult(true);
-    window.scrollTo(0, 0);
-  };
+    incrementPlayCount(slug).catch(console.error);
+    setDisplayPlayCount(prev => prev + 1);
+  }, [slug]);
 
   // Load Latest/Popular Tests
   useEffect(() => {
@@ -253,17 +96,58 @@ export default function Phase2ColorSurvivalTestClient({
 
         // Similar Tests Logic
         const currentTest = allTests.find((t: any) => t.slug === slug);
-        const currentTestTags = currentTest && typeof currentTest.tags === 'object' 
-          ? (Array.isArray(currentTest.tags) ? currentTest.tags : (currentTest.tags[locale] || currentTest.tags.ko || []))
-          : [];
+        
+        // 태그 파싱 (더 강력한 로직)
+        let currentTestTags: string[] = [];
+        if (currentTest && currentTest.tags) {
+          if (Array.isArray(currentTest.tags)) {
+            currentTestTags = currentTest.tags;
+          } else if (typeof currentTest.tags === 'object') {
+            // JSONB 객체인 경우 (예: {ko: [...], en: [...]})
+            currentTestTags = currentTest.tags[locale] || currentTest.tags.ko || 
+                             (currentTest.tags['zh-CN'] && currentTest.tags.zh) || 
+                             Object.values(currentTest.tags)[0] || [];
+          }
+        }
+        
+        // Fallback: 현재 테스트를 찾지 못했거나 태그가 없으면 기본 태그 사용
+        if (currentTestTags.length === 0) {
+          // phase2_reflex_test의 기본 태그
+          currentTestTags = locale === 'ko' 
+            ? ['챌린지', '게임', '반응속도', '순발력']
+            : locale === 'en'
+            ? ['Challenge', 'Game', 'Reaction Speed', 'Reflexes']
+            : ['챌린지', '게임', '반응속도', '순발력']; // 기본값
+        }
+        
+        // 디버깅: 현재 테스트 및 태그 확인
+        if (process.env.NODE_ENV === 'development') {
+          console.log('🔍 Phase2ReflexTest - Current slug:', slug);
+          console.log('🔍 Phase2ReflexTest - Current test found?', !!currentTest);
+          if (currentTest) {
+            console.log('🔍 Phase2ReflexTest - Current test.tags (raw):', currentTest.tags);
+            console.log('🔍 Phase2ReflexTest - Current test.tags type:', typeof currentTest.tags);
+          }
+          console.log('🔍 Phase2ReflexTest - Current test tags (parsed):', currentTestTags);
+        }
+
 
         const similarTestsList = allTests
           .filter((t: any) => t.slug !== slug)
           .filter((t: any) => {
-             const otherTestTags = typeof t.tags === 'object' 
-              ? (Array.isArray(t.tags) ? t.tags : (t.tags[locale] || t.tags.ko || []))
-              : [];
+             // 태그 파싱 (동일한 로직)
+             let otherTestTags: string[] = [];
+             if (t.tags) {
+               if (Array.isArray(t.tags)) {
+                 otherTestTags = t.tags;
+               } else if (typeof t.tags === 'object') {
+                 otherTestTags = t.tags[locale] || t.tags.ko || 
+                                (t.tags['zh-CN'] && t.tags.zh) || 
+                                Object.values(t.tags)[0] || [];
+               }
+             }
              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
+                    currentTestTags.length > 0 && otherTestTags.length > 0 &&
                     currentTestTags.some((tag: string) => otherTestTags.includes(tag));
           })
           .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
@@ -276,6 +160,36 @@ export default function Phase2ColorSurvivalTestClient({
             playCount: t.play_count,
             badgeType: t.badge_type || null
           }));
+        
+        // 디버깅: Similar Tests 결과
+        if (process.env.NODE_ENV === 'development') {
+          console.log('🔍 Phase2ReflexTest - Similar tests list length:', similarTestsList.length);
+          console.log('🔍 Phase2ReflexTest - Similar tests slugs:', similarTestsList.map((t: any) => t.slug));
+          
+          const colorSurvivalTest = allTests.find((t: any) => t.slug === 'phase2_color_survival_test');
+          if (colorSurvivalTest) {
+            let colorSurvivalTags: string[] = [];
+            if (colorSurvivalTest.tags) {
+              if (Array.isArray(colorSurvivalTest.tags)) {
+                colorSurvivalTags = colorSurvivalTest.tags;
+              } else if (typeof colorSurvivalTest.tags === 'object') {
+                colorSurvivalTags = colorSurvivalTest.tags[locale] || colorSurvivalTest.tags.ko || 
+                                   (colorSurvivalTest.tags['zh-CN'] && colorSurvivalTest.tags.zh) || 
+                                   Object.values(colorSurvivalTest.tags)[0] || [];
+              }
+            }
+            console.log('🔍 Phase2ReflexTest - Color Survival test tags:', colorSurvivalTags);
+            const hasCommonTag = Array.isArray(currentTestTags) && Array.isArray(colorSurvivalTags) &&
+                                 currentTestTags.length > 0 && colorSurvivalTags.length > 0 &&
+                                 currentTestTags.some((tag: string) => colorSurvivalTags.includes(tag));
+            console.log('🔍 Phase2ReflexTest - Has common tag?', hasCommonTag);
+            if (hasCommonTag) {
+              console.log('🔍 Phase2ReflexTest - Common tags:', currentTestTags.filter(tag => colorSurvivalTags.includes(tag)));
+            }
+            const isInSimilarList = similarTestsList.some((t: any) => t.slug === 'phase2_color_survival_test');
+            console.log('🔍 Phase2ReflexTest - Is Color Survival in similar list?', isInSimilarList);
+          }
+        }
           
         const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
         
@@ -306,30 +220,147 @@ export default function Phase2ColorSurvivalTestClient({
     }
   }, [slug, locale]);
 
-  // Social Sharing
-  const getShareText = () => {
-      if (result) {
-          const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-          return t('shareMessages.default', { type: resultTitle });
-      }
-      return t('shareMessages.startDefault');
-  };
-  
-  const handleShareResult = async () => {
-    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const shareText = result ? t('shareMessages.default', { type: resultTitle }) : t('shareMessages.startDefault');
-    const url = `https://myquizoasis.com${window.location.pathname}`;
-    const fullText = `${shareText}\n\n${url}`;
+  // AdSense & AliExpress
+  useEffect(() => {
+    if (showResult || showLoadingSpinner || showResultPopup) {
+      setTimeout(() => {
+        try {
+          safeLoadAdSense();
+        } catch (err) { console.error(err); }
+      }, 100);
+    }
+  }, [showResult, showLoadingSpinner, showResultPopup]);
 
+  useEffect(() => {
+    if (result && locale !== 'ko') {
+      const loadProducts = async () => {
+        try {
+          const keywords = getProductKeywordsForDating('tech', locale);
+          const products = await searchAliExpressProducts(keywords[0], 4, locale);
+          setAliProducts(products);
+        } catch (error) { console.error(error); }
+      };
+      loadProducts();
+    }
+  }, [result, locale]);
+
+
+  // Game Logic Functions
+  const startRound = useCallback(() => {
+    setGameState('waiting');
+    setCurrentResult(null);
+    setShowTooSoon(false);
+    
+    // Set random delay before turning green
+    const delay = Math.floor(Math.random() * (MAX_DELAY - MIN_DELAY + 1)) + MIN_DELAY;
+    
+    const id = setTimeout(() => {
+      setGameState('now');
+      setStartTime(Date.now());
+    }, delay);
+    
+    setTimeoutId(id);
+  }, []);
+
+  const handleStartGame = () => {
+    setGameState('waiting');
+    setRound(1);
+    setRecords([]);
+    startRound();
+    
+    // 즉시 맨 위로 스크롤
+    window.scrollTo(0, 0);
+  };
+
+  const handleScreenClick = () => {
+    if (gameState === 'waiting') {
+      // Too soon!
+      if (timeoutId) clearTimeout(timeoutId);
+      setShowTooSoon(true);
+      setGameState('ready'); // Use 'ready' state to show "Too Soon" message and retry button/click
+      return;
+    }
+
+    if (gameState === 'now') {
+      // Success
+      const endTime = Date.now();
+      const diff = endTime - startTime;
+      const newRecords = [...records, diff];
+      setRecords(newRecords);
+      setCurrentResult(diff);
+      setGameState('ready'); // Show result of this round
+
+      if (newRecords.length >= TOTAL_ROUNDS) {
+        // Game Over logic
+        setTimeout(() => {
+            finishGame(newRecords);
+        }, 1000); // Slight delay to see the last result
+      } else {
+        // Next round logic handled by user clicking again or timeout? 
+        // Let's make user click to proceed or auto proceed. 
+        // User requested "Click screen -> Show ms". 
+        // To continue, user clicks again.
+      }
+    } else if (gameState === 'ready') {
+       // Proceed to next round or retry current round
+       if (showTooSoon) {
+           startRound();
+       } else if (records.length < TOTAL_ROUNDS) {
+           setRound(prev => prev + 1);
+           startRound();
+       }
+    }
+  };
+
+  const finishGame = (finalRecords: number[]) => {
+    setGameState('finished');
+    
+    const sum = finalRecords.reduce((a, b) => a + b, 0);
+    const avg = Math.round(sum / finalRecords.length);
+    const finalResult = calculatePhase2ReflexResult(avg);
+    setResult(finalResult);
+
+    // Flow: Loading -> Popup -> Result
+    setShowLoadingSpinner(true);
+    setTimeout(() => {
+        setShowLoadingSpinner(false);
+        setShowResultPopup(true);
+    }, 2500);
+  };
+
+  const handleShowResult = () => {
+    setShowResultPopup(false);
+    setShowResult(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleRetake = () => {
+    setShowResult(false);
+    setResult(null);
+    setGameState('intro');
+    setRound(1);
+    setRecords([]);
+  };
+
+  const handleShareResult = async () => {
+    if (!result) return;
+    
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const avg = Math.round(records.reduce((a, b) => a + b, 0) / records.length);
+
+    // Using t() for sharing messages as requested
+    // Format: "내 반응속도는 평균 [기록]ms! 등급은 [Type명] ⚡ 너 나 이길 수 있음?"
+    const shareText = t('shareMessages.default', { record: avg, type: resultTitle });
+    
     if (navigator.share) {
       try {
         await navigator.share({
           title: title,
           text: shareText,
-          url: url
+          url: window.location.href,
         });
       } catch (error) {
-        // User cancelled or share failed
+        copyLink();
       }
     } else {
       copyLink();
@@ -337,65 +368,92 @@ export default function Phase2ColorSurvivalTestClient({
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert(t('alerts.linkCopied'));
-  };
-
-  const shareToKakao = () => {
-    if (typeof window === 'undefined' || !window.Kakao || !window.Kakao.isInitialized()) {
-        alert(t('alerts.kakaoInit'));
-        return;
-    }
-    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const description = result ? t('shareMessages.kakao', { type: resultTitle }) : t('shareMessages.startKakao');
-    
-    window.Kakao.Share.sendDefault({
-        objectType: 'feed',
-        content: {
-            title: title,
-            description: description,
-            imageUrl: getThumbnailUrl(thumbnail || ''),
-            link: { mobileWebUrl: window.location.href, webUrl: window.location.href },
-        },
-        buttons: [{ title: t('ui.goToTest'), link: { mobileWebUrl: window.location.href, webUrl: window.location.href } }]
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+      alert(t('alerts.linkCopied'));
+    }).catch(() => {
+      alert(t('alerts.shareFailed'));
     });
   };
 
-  // Other share functions
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
-  const shareToTelegram = () => window.open(`https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(getShareText())}`, '_blank');
-  const shareToWeChat = () => { alert(t('alerts.wechatCopy')); copyLink(); };
-  const shareToLine = () => window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(getShareText())}`, '_blank');
-  const shareToWhatsApp = () => window.open(`https://wa.me/?text=${encodeURIComponent(getShareText())}%0A%0A${encodeURIComponent(shareUrl)}`, '_blank');
-
-  // Render Grid
-  const renderGrid = () => {
-    const cells = [];
-    const totalCells = gridSize * gridSize;
-    
-    for (let i = 0; i < totalCells; i++) {
-        const isTarget = i === targetIndex;
-        const color = isTarget ? diffColor : baseColor;
-        const style = {
-            backgroundColor: `hsl(${color.h}, ${color.s}%, ${color.l}%)`,
-        };
-        
-        cells.push(
-            <button
-                key={i}
-                onClick={() => handleCellClick(i)}
-                className="w-full h-full rounded-md shadow-sm transition-transform active:scale-95 duration-75 border border-white/20"
-                style={style}
-                aria-label={isTarget ? "Target Color" : "Base Color"}
-            />
-        );
+  const shareToKakao = () => {
+    if (!window.Kakao) return;
+    if (!window.Kakao.isInitialized()) {
+      const kakaoKey = process.env.NEXT_PUBLIC_KAKAO_JS_KEY || '';
+      if (kakaoKey) {
+        window.Kakao.init(kakaoKey);
+      }
     }
-    return cells;
+    
+    const resultTitle = result 
+        ? (result.title[locale as keyof typeof result.title] || result.title.ko)
+        : title;
+    
+    const avg = records.length > 0 ? Math.round(records.reduce((a, b) => a + b, 0) / records.length) : 0;
+    
+    // Result share or Start share
+    const description = result 
+      ? t('shareMessages.kakao', { record: avg, type: resultTitle })
+      : t('shareMessages.startKakao');
+
+    window.Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: title,
+        description: description,
+        imageUrl: thumbnail ? getThumbnailUrl(thumbnail) : 'https://quizoasis.com/default-thumbnail.jpg',
+        link: {
+          mobileWebUrl: window.location.href,
+          webUrl: window.location.href,
+        },
+      },
+      buttons: [{ title: t('ui.goToTest'), link: { mobileWebUrl: window.location.href, webUrl: window.location.href } }]
+    });
   };
 
-  // --- RENDERING ---
+  // Other social shares
+  const shareToTelegram = () => {
+    const resultTitle = result 
+      ? (result.title[locale as keyof typeof result.title] || result.title.ko)
+      : title;
+    const avg = records.length > 0 ? Math.round(records.reduce((a, b) => a + b, 0) / records.length) : 0;
+    const text = result 
+      ? t('shareMessages.telegram', { record: avg, type: resultTitle })
+      : t('shareMessages.startTelegram');
+    window.open(`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(text)}`, '_blank');
+  };
+  
+  const shareToWeChat = () => { 
+    alert(t('alerts.wechatCopy')); 
+    copyLink(); 
+  };
+  
+  const shareToLine = () => {
+    const resultTitle = result 
+      ? (result.title[locale as keyof typeof result.title] || result.title.ko)
+      : title;
+    const avg = records.length > 0 ? Math.round(records.reduce((a, b) => a + b, 0) / records.length) : 0;
+    const text = result 
+      ? t('shareMessages.line', { record: avg, type: resultTitle })
+      : t('shareMessages.startLine');
+    window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(text)}`, '_blank');
+  };
+  
+  const shareToWhatsApp = () => {
+    const resultTitle = result 
+      ? (result.title[locale as keyof typeof result.title] || result.title.ko)
+      : title;
+    const avg = records.length > 0 ? Math.round(records.reduce((a, b) => a + b, 0) / records.length) : 0;
+    const text = result 
+      ? t('shareMessages.whatsapp', { record: avg, type: resultTitle })
+      : t('shareMessages.startWhatsapp');
+    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + window.location.href)}`, '_blank');
+  };
 
-  // 1. Loading Spinner
+
+  // Render Logic
+  
+  // 1. Loading Screen
   if (showLoadingSpinner) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
@@ -430,36 +488,14 @@ export default function Phase2ColorSurvivalTestClient({
     return (
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            🎉 {tGlobal('mbti.testCompleted')}
-          </h2>
-          
-          <p className="text-xs text-gray-500 text-center mb-3">
-            {tGlobal('footer.disclaimer')}
-          </p>
-          <div className="mb-6">
-            <div className="flex justify-center">
-              <a 
-                href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image 
-                  width={300} 
-                  height={250} 
-                  src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                  alt="AliExpress"
-                  className="rounded-lg"
-                  style={{ maxWidth: '300px', height: 'auto' }}
-                />
-              </a>
-            </div>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">🎉 {tGlobal('mbti.testCompleted')}</h2>
+          <p className="text-xs text-gray-500 text-center mb-3">{tGlobal('footer.disclaimer')}</p>
+          <div className="mb-6 flex justify-center">
+            <a href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" target="_blank" rel="noopener noreferrer">
+              <Image width={300} height={250} src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" alt="AliExpress" className="rounded-lg" style={{ maxWidth: '300px', height: 'auto' }} />
+            </a>
           </div>
-
-          <button
-            onClick={handleShowResult}
-            className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
-          >
+          <button onClick={handleShowResult} className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-blue-600 hover:to-cyan-600 shadow-lg transition-all">
             {tGlobal('mbti.viewAnalysisResults')}
           </button>
         </div>
@@ -469,12 +505,13 @@ export default function Phase2ColorSurvivalTestClient({
 
   // 3. Result Screen
   if (showResult && result) {
-      // Locale mapping: zh-CN -> zh
-      const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
+      const dataLocale = locale === 'zh-CN' ? 'zh' : locale; // Fallback for zh-CN
       const resultTitle = result.title[dataLocale as keyof typeof result.title] || result.title.ko;
       const resultDescription = result.description[dataLocale as keyof typeof result.description] || result.description.ko;
       const resultAdvice = result.advice[dataLocale as keyof typeof result.advice] || result.advice.ko;
       const resultSurvivalInstinct = result.survivalInstinct[dataLocale as keyof typeof result.survivalInstinct] || result.survivalInstinct.ko;
+      
+      const averageMs = Math.round(records.reduce((a, b) => a + b, 0) / records.length);
 
       return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -484,8 +521,9 @@ export default function Phase2ColorSurvivalTestClient({
                 {tGlobal('mbti.yourResult')}
               </h2>
               <div className="text-6xl mb-3 animate-bounce">{result.emoji}</div>
+              <p className="text-4xl font-black text-purple-600 mb-2">{averageMs}ms</p>
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
-                Level {level} - {resultTitle}
+                {resultTitle}
               </h1>
               <p className="text-base text-gray-600 leading-relaxed mb-6 whitespace-pre-line">
                 {resultDescription}
@@ -620,7 +658,7 @@ export default function Phase2ColorSurvivalTestClient({
                   {t('recommendations.popularTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                  {popularTestsState.map((test) => (
+                  {popularTestsState.slice(0, 5).map((test) => (
                     <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                         <div className="relative aspect-video">
@@ -663,58 +701,75 @@ export default function Phase2ColorSurvivalTestClient({
   }
 
   // 4. Game Screen
-  if (started) {
+  if (gameState !== 'intro' && gameState !== 'finished') {
+      let bgColor = 'bg-blue-500';
+      let text = '';
+      let subText = '';
+
+      if (gameState === 'waiting') {
+          bgColor = 'bg-red-500';
+          text = t('game.wait');
+          subText = t('game.waitDesc');
+      } else if (gameState === 'ready' && showTooSoon) {
+          bgColor = 'bg-blue-500';
+          text = t('game.tooSoon');
+          subText = t('game.clickToRetry');
+      } else if (gameState === 'now') {
+          bgColor = 'bg-green-500';
+          text = t('game.click');
+          subText = '';
+      } else if (gameState === 'ready' && !showTooSoon) {
+          bgColor = 'bg-blue-500';
+          text = `${currentResult}ms`;
+          subText = t('game.clickToContinue');
+      }
+
       return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex flex-col items-start justify-start p-4">
-            <div id="game-grid" className="w-full max-w-lg bg-white rounded-2xl shadow-xl p-4 md:p-6 relative mb-8 mx-auto mt-4">
-                {/* Header Info */}
-                <div className="flex justify-between items-center mb-6">
-                    <div className="flex flex-col items-center bg-gray-100 rounded-lg px-4 py-2">
-                        <span className="text-gray-500 text-xs font-bold">LEVEL</span>
-                        <span className="text-2xl font-black text-gray-800">{level}</span>
-                    </div>
-                    
-                    {/* Timer Bar */}
-                    <div className="flex-1 mx-4">
-                        <div className="flex justify-between text-xs text-gray-500 mb-1 font-bold">
-                            <span>TIME</span>
-                            <span className={`${timeLeft < 3 ? 'text-red-500 animate-pulse' : 'text-gray-700'}`}>{timeLeft.toFixed(2)}s</span>
-                        </div>
-                        <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden shadow-inner">
-                            <div 
-                                className={`h-full rounded-full transition-all duration-100 ease-linear ${timeLeft < 3 ? 'bg-red-500' : 'bg-green-500'}`}
-                                style={{ width: `${Math.min(100, (timeLeft / MAX_TIME_CAP) * 100)}%` }}
-                            />
-                        </div>
-                    </div>
+            {/* Game Area - 소셜 공유 버튼까지 보이도록 높이 조정 */}
+            <div 
+              ref={gameAreaRef}
+              onClick={handleScreenClick}
+              className={`w-full max-w-lg ${bgColor} rounded-2xl shadow-xl p-4 md:p-6 relative mb-8 mx-auto mt-4 cursor-pointer select-none touch-manipulation transition-colors duration-200 flex flex-col items-center justify-center`}
+              style={{ height: 'calc((100vh - 650px) / 1.5)', maxHeight: 'calc((100vh - 650px) / 1.5)' }}
+            >
+                {/* Round Indicator */}
+                <div className="absolute top-4 left-0 right-0 flex justify-center gap-2 z-10">
+                     {Array.from({length: TOTAL_ROUNDS}).map((_, i) => (
+                         <div key={i} className={`w-3 h-3 rounded-full ${i < records.length ? 'bg-white' : 'bg-white/30'}`} />
+                     ))}
                 </div>
 
-                {/* Game Grid */}
-                <div className="w-full aspect-square bg-gray-100 rounded-xl p-2 gap-2 grid shadow-inner border border-gray-200"
-                    style={{ 
-                        gridTemplateColumns: `repeat(${gridSize}, minmax(0, 1fr))`,
-                        gridTemplateRows: `repeat(${gridSize}, minmax(0, 1fr))`
-                    }}
-                >
-                    {renderGrid()}
-                </div>
+                <div className="text-white text-center p-4">
+                    {gameState === 'ready' && !showTooSoon && (
+                         <div className="text-6xl mb-4">⏱️</div>
+                    )}
+                    {gameState === 'ready' && showTooSoon && (
+                         <div className="text-6xl mb-4">⚠️</div>
+                    )}
+                    {gameState === 'waiting' && (
+                         <div className="text-6xl mb-4">✋</div>
+                    )}
+                     {gameState === 'now' && (
+                         <div className="text-6xl mb-4">⚡</div>
+                    )}
 
-                <p className="text-gray-500 text-center mt-6 text-sm font-medium">
-                    {t('ui.gameInstruction')}
-                </p>
+                    <h1 className="text-5xl font-black mb-4 uppercase tracking-wider">{text}</h1>
+                    <p className="text-xl opacity-90">{subText}</p>
+                </div>
             </div>
             
             {/* AdSense below game */}
             <div className="w-full max-w-lg mb-8 mx-auto">
-                    <AdSensePlaceholder slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN} style={{ width: '100%', height: '100px' }} className="mx-auto" label={t('ui.adsenseTitle')} />
+                <AdSensePlaceholder slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN} style={{ width: '100%', height: '100px' }} className="mx-auto" label={t('ui.adsenseTitle')} />
             </div>
             
             {/* Share & Friends (Bottom) */}
-             <div className="w-full max-w-lg text-center mx-auto">
+            <div className="w-full max-w-lg text-center mx-auto">
                 <h2 className="text-lg font-bold text-gray-800 mb-4">
                   {tGlobal('mbti.shareWithFriends')}
                 </h2>
-                <div className="flex justify-center items-center gap-2">
+                <div className="flex justify-center gap-2">
                   <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" /></button>
                   <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" /></button>
                   <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" /></button>
@@ -722,16 +777,15 @@ export default function Phase2ColorSurvivalTestClient({
                   <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" /></button>
                   <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" /></button>
                 </div>
-             </div>
+            </div>
         </div>
       );
   }
 
-  // 5. Intro Screen (Default)
+  // 5. Intro Screen
   return (
     <div className="min-h-screen bg-white">
         <div className="max-w-4xl mx-auto">
-            {/* Thumbnail */}
             <div className="relative w-full aspect-[680/384] mb-3">
                 <Image src={getThumbnailUrl(thumbnail || '')} alt={title} fill className="object-cover" priority />
                 {isLatestTest && <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">NEW</div>}
@@ -742,12 +796,10 @@ export default function Phase2ColorSurvivalTestClient({
             <div className="px-4">
                 <h1 className="text-xl font-bold text-gray-800 mb-4 text-center">{title}</h1>
                 
-                {/* AdSense */}
                 <div className="my-6">
                     <AdSensePlaceholder slot={ADSENSE_CONFIG.SLOTS.START_SCREEN} style={{ width: '100%', height: '250px' }} className="mx-auto" label={t('ui.adsenseTitle')} />
                 </div>
 
-                {/* Intro Text */}
                 <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
                     <p className="font-bold text-gray-800 text-lg">{t('startMessage.line1')}</p>
                     <p>{t('startMessage.line2')}</p>
@@ -808,3 +860,4 @@ export default function Phase2ColorSurvivalTestClient({
     </div>
   );
 }
+

@@ -5465,5 +5465,118 @@
       "similarTestsTop5": "🎯 5 Rekomendasi Tes Serupa Teratas",
       "popularTestsTop5": "🔥 5 Rekomendasi Tes Populer Teratas"
     }
+  },
+  "phase2ReactionTimeTest": {
+    "startMessage": {
+      "line1": "Are your brain and fingers connected?",
+      "line2": "The average reaction time for humans is about 0.25s (250ms).",
+      "line3": "Pro gamers break the 0.15s barrier.",
+      "line4": "Do you feel slower with age? Or do you still have peak physical skills?",
+      "line5": "Measure your 'real' speed now. Start Reaction Test ⚡"
+    },
+    "shareMessages": {
+      "default": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "kakao": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "line": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "wechat": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "whatsapp": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "telegram": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "startDefault": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startKakao": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startLine": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWechat": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWhatsapp": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startTelegram": "0.1s Battle! Reaction Time Test ⚡ What's your rank?"
+    },
+    "ui": {
+      "title": "0.1s Battle! Reaction Time Test",
+      "wait": "Wait...",
+      "waitDesc": "Click when it turns green!",
+      "clickNow": "CLICK!!!",
+      "clickNowDesc": "As fast as you can!",
+      "tooSoon": "Too Soon!",
+      "tooSoonDesc": "Wait for the color to change. Click to try again.",
+      "clickToContinue": "Click to Continue",
+      "clickToRetry": "Click to Retry",
+      "roundInfo": "Round {current} / {total}",
+      "yourSpeed": "📊 Your Speed",
+      "recommendedJob": "⭐ Recommended Job",
+      "shareResult": "Share Result",
+      "shareWithFriends": "Share with Friends",
+      "retry": "Try Again",
+      "otherTests": "Other Tests",
+      "adsenseTitle": "Advertisement",
+      "linkCopy": "Copy Link",
+      "kakao": "Kakao Share",
+      "telegram": "Telegram Share",
+      "wechat": "WeChat Share",
+      "line": "Line Share",
+      "whatsapp": "WhatsApp Share",
+      "goToTest": "Go to Test"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Share unavailable.",
+      "kakaoInit": "Initializing KakaoTalk...",
+      "wechatCopy": "Link copied. Paste in WeChat to share."
+    }
+  },
+  "phase2ReflexTest": {
+    "startMessage": {
+      "line1": "Apakah otak dan jari Anda terhubung?",
+      "line2": "Waktu untuk melihat, memproses, dan bergerak. Kecepatan reaksi rata-rata adalah sekitar 0,25 detik (250 md).",
+      "line3": "Apakah Anda merasa lebih lambat seiring bertambahnya usia? Atau apakah Anda masih memiliki fisik yang prima?",
+      "line4": "Kami akan mengukur kecepatan 'nyata' Anda sekarang.",
+      "line5": "Mulai Tes Kecepatan Reaksi ⚡"
+    },
+    "shareMessages": {
+      "default": "Kecepatan reaksi rata-rata saya adalah {record}ms! Peringkat: {type} ⚡ Bisakah kamu mengalahkan saya?",
+      "kakao": "Kecepatan reaksi rata-rata saya adalah {record}ms! Peringkat: {type} ⚡ Bisakah kamu mengalahkan saya?",
+      "line": "Kecepatan reaksi rata-rata saya adalah {record}ms! Peringkat: {type} ⚡ Bisakah kamu mengalahkan saya?",
+      "wechat": "Kecepatan reaksi rata-rata saya adalah {record}ms! Peringkat: {type} ⚡ Bisakah kamu mengalahkan saya?",
+      "whatsapp": "Kecepatan reaksi rata-rata saya adalah {record}ms! Peringkat: {type} ⚡ Bisakah kamu mengalahkan saya?",
+      "telegram": "Kecepatan reaksi rata-rata saya adalah {record}ms! Peringkat: {type} ⚡ Bisakah kamu mengalahkan saya?",
+      "startDefault": "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi ⚡ Apa peringkat Anda?",
+      "startKakao": "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi ⚡ Apa peringkat Anda?",
+      "startLine": "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi ⚡ Apa peringkat Anda?",
+      "startWechat": "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi ⚡ Apa peringkat Anda?",
+      "startWhatsapp": "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi ⚡ Apa peringkat Anda?",
+      "startTelegram": "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi ⚡ Apa peringkat Anda?"
+    },
+    "ui": {
+      "title": "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi",
+      "startTest": "Mulai Tes",
+      "retry": "Coba Lagi",
+      "adsenseTitle": "Iklan",
+      "goToTest": "Pergi ke Tes",
+      "similarTests": "Tes Serupa",
+      "linkCopy": "Salin Tautan",
+      "kakao": "Bagikan Kakao",
+      "telegram": "Bagikan Telegram",
+      "wechat": "Bagikan WeChat",
+      "line": "Bagikan Line",
+      "whatsapp": "Bagikan WhatsApp",
+      "shareResult": "Bagikan Hasil",
+      "survivalInstinct": "📊 Kecepatan Anda",
+      "recommendation": "⭐ Pekerjaan yang Direkomendasikan",
+      "otherTests": "Lihat Tes Lainnya"
+    },
+    "game": {
+      "wait": "Tunggu...",
+      "waitDesc": "Klik saat hijau",
+      "click": "KLIK!!!",
+      "tooSoon": "Terlalu Cepat!",
+      "clickToRetry": "Klik untuk mencoba lagi",
+      "clickToContinue": "Klik untuk melanjutkan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 Rekomendasi Tes Serupa Teratas",
+      "popularTestsTop5": "🔥 5 Rekomendasi Tes Populer Teratas"
+    }
   }
 }

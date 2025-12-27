@@ -5453,5 +5453,118 @@
       "similarTestsTop5": "🎯 おすすめの類似テスト Top 5",
       "popularTestsTop5": "🔥 最近人気のテスト Top 5"
     }
+  },
+  "phase2ReactionTimeTest": {
+    "startMessage": {
+      "line1": "Are your brain and fingers connected?",
+      "line2": "The average reaction time for humans is about 0.25s (250ms).",
+      "line3": "Pro gamers break the 0.15s barrier.",
+      "line4": "Do you feel slower with age? Or do you still have peak physical skills?",
+      "line5": "Measure your 'real' speed now. Start Reaction Test ⚡"
+    },
+    "shareMessages": {
+      "default": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "kakao": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "line": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "wechat": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "whatsapp": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "telegram": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "startDefault": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startKakao": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startLine": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWechat": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWhatsapp": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startTelegram": "0.1s Battle! Reaction Time Test ⚡ What's your rank?"
+    },
+    "ui": {
+      "title": "0.1s Battle! Reaction Time Test",
+      "wait": "Wait...",
+      "waitDesc": "Click when it turns green!",
+      "clickNow": "CLICK!!!",
+      "clickNowDesc": "As fast as you can!",
+      "tooSoon": "Too Soon!",
+      "tooSoonDesc": "Wait for the color to change. Click to try again.",
+      "clickToContinue": "Click to Continue",
+      "clickToRetry": "Click to Retry",
+      "roundInfo": "Round {current} / {total}",
+      "yourSpeed": "📊 Your Speed",
+      "recommendedJob": "⭐ Recommended Job",
+      "shareResult": "Share Result",
+      "shareWithFriends": "Share with Friends",
+      "retry": "Try Again",
+      "otherTests": "Other Tests",
+      "adsenseTitle": "Advertisement",
+      "linkCopy": "Copy Link",
+      "kakao": "Kakao Share",
+      "telegram": "Telegram Share",
+      "wechat": "WeChat Share",
+      "line": "Line Share",
+      "whatsapp": "WhatsApp Share",
+      "goToTest": "Go to Test"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Share unavailable.",
+      "kakaoInit": "Initializing KakaoTalk...",
+      "wechatCopy": "Link copied. Paste in WeChat to share."
+    }
+  },
+  "phase2ReflexTest": {
+    "startMessage": {
+      "line1": "あなたの脳と指はつながっていますか？",
+      "line2": "目で見て、脳が認知し、指が動く時間。一般人の平均反応速度は約0.25秒（250ms）です。",
+      "line3": "年齢とともに反応が遅くなったと感じますか？それともまだ現役ですか？",
+      "line4": "今、あなたの「本当の」速度を測定します。",
+      "line5": "反応速度測定開始 ⚡"
+    },
+    "shareMessages": {
+      "default": "私の平均反応速度は{record}ms！ランクは{type} ⚡ 私に勝てますか？",
+      "kakao": "私の平均反応速度は{record}ms！ランクは{type} ⚡ 私に勝てますか？",
+      "line": "私の平均反応速度は{record}ms！ランクは{type} ⚡ 私に勝てますか？",
+      "wechat": "私の平均反応速度は{record}ms！ランクは{type} ⚡ 私に勝てますか？",
+      "whatsapp": "私の平均反応速度は{record}ms！ランクは{type} ⚡ 私に勝てますか？",
+      "telegram": "私の平均反応速度は{record}ms！ランクは{type} ⚡ 私に勝てますか？",
+      "startDefault": "0.1秒の勝負！反応速度テスト ⚡ あなたのランクは？",
+      "startKakao": "0.1秒の勝負！反応速度テスト ⚡ あなたのランクは？",
+      "startLine": "0.1秒の勝負！反応速度テスト ⚡ あなたのランクは？",
+      "startWechat": "0.1秒の勝負！反応速度テスト ⚡ あなたのランクは？",
+      "startWhatsapp": "0.1秒の勝負！反応速度テスト ⚡ あなたのランクは？",
+      "startTelegram": "0.1秒の勝負！反応速度テスト ⚡ あなたのランクは？"
+    },
+    "ui": {
+      "title": "0.1秒の勝負！反応速度テスト",
+      "startTest": "テスト開始",
+      "retry": "もう一度測定",
+      "adsenseTitle": "広告",
+      "goToTest": "テストに行く",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク共有",
+      "telegram": "Telegram共有",
+      "wechat": "WeChat共有",
+      "line": "Line共有",
+      "whatsapp": "WhatsApp共有",
+      "shareResult": "結果を共有",
+      "survivalInstinct": "📊 あなたの速度",
+      "recommendation": "⭐ おすすめの職業",
+      "otherTests": "他のテストを見る"
+    },
+    "game": {
+      "wait": "待機...",
+      "waitDesc": "緑になったらクリック",
+      "click": "クリック!!!",
+      "tooSoon": "早すぎます！",
+      "clickToRetry": "クリックしてリトライ",
+      "clickToContinue": "クリックして次へ"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクがコピーされました。WeChatに貼り付けて共有してください。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの類似テスト Top 5",
+      "popularTestsTop5": "🔥 人気のテスト Top 5"
+    }
   }
 }

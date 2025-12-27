@@ -5474,5 +5474,118 @@
       "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
     }
+  },
+  "phase2ReactionTimeTest": {
+    "startMessage": {
+      "line1": "Are your brain and fingers connected?",
+      "line2": "The average reaction time for humans is about 0.25s (250ms).",
+      "line3": "Pro gamers break the 0.15s barrier.",
+      "line4": "Do you feel slower with age? Or do you still have peak physical skills?",
+      "line5": "Measure your 'real' speed now. Start Reaction Test ⚡"
+    },
+    "shareMessages": {
+      "default": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "kakao": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "line": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "wechat": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "whatsapp": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "telegram": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "startDefault": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startKakao": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startLine": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWechat": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWhatsapp": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startTelegram": "0.1s Battle! Reaction Time Test ⚡ What's your rank?"
+    },
+    "ui": {
+      "title": "0.1s Battle! Reaction Time Test",
+      "wait": "Wait...",
+      "waitDesc": "Click when it turns green!",
+      "clickNow": "CLICK!!!",
+      "clickNowDesc": "As fast as you can!",
+      "tooSoon": "Too Soon!",
+      "tooSoonDesc": "Wait for the color to change. Click to try again.",
+      "clickToContinue": "Click to Continue",
+      "clickToRetry": "Click to Retry",
+      "roundInfo": "Round {current} / {total}",
+      "yourSpeed": "📊 Your Speed",
+      "recommendedJob": "⭐ Recommended Job",
+      "shareResult": "Share Result",
+      "shareWithFriends": "Share with Friends",
+      "retry": "Try Again",
+      "otherTests": "Other Tests",
+      "adsenseTitle": "Advertisement",
+      "linkCopy": "Copy Link",
+      "kakao": "Kakao Share",
+      "telegram": "Telegram Share",
+      "wechat": "WeChat Share",
+      "line": "Line Share",
+      "whatsapp": "WhatsApp Share",
+      "goToTest": "Go to Test"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Share unavailable.",
+      "kakaoInit": "Initializing KakaoTalk...",
+      "wechatCopy": "Link copied. Paste in WeChat to share."
+    }
+  },
+  "phase2ReflexTest": {
+    "startMessage": {
+      "line1": "Is your brain connected to your fingers?",
+      "line2": "The time it takes to see, process, and move. The average reaction time is about 0.25s (250ms).",
+      "line3": "Do you feel slower with age? or do you still have sharp reflexes?",
+      "line4": "We will measure your 'real' speed now.",
+      "line5": "Start Reaction Test ⚡"
+    },
+    "shareMessages": {
+      "default": "My average reaction speed is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "kakao": "My average reaction speed is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "line": "My average reaction speed is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "wechat": "My average reaction speed is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "whatsapp": "My average reaction speed is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "telegram": "My average reaction speed is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "startDefault": "0.1 Second Showdown! Reaction Speed Test ⚡ What is your rank?",
+      "startKakao": "0.1 Second Showdown! Reaction Speed Test ⚡ What is your rank?",
+      "startLine": "0.1 Second Showdown! Reaction Speed Test ⚡ What is your rank?",
+      "startWechat": "0.1 Second Showdown! Reaction Speed Test ⚡ What is your rank?",
+      "startWhatsapp": "0.1 Second Showdown! Reaction Speed Test ⚡ What is your rank?",
+      "startTelegram": "0.1 Second Showdown! Reaction Speed Test ⚡ What is your rank?"
+    },
+    "ui": {
+      "title": "0.1 Second Showdown! Reaction Speed Test",
+      "startTest": "Start Test",
+      "retry": "Try Again",
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Go to Test",
+      "similarTests": "Similar Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "Kakao Share",
+      "telegram": "Telegram Share",
+      "wechat": "WeChat Share",
+      "line": "Line Share",
+      "whatsapp": "WhatsApp Share",
+      "shareResult": "Share Result",
+      "survivalInstinct": "📊 Your Speed",
+      "recommendation": "⭐ Recommended Job",
+      "otherTests": "View Other Tests"
+    },
+    "game": {
+      "wait": "Wait...",
+      "waitDesc": "Click when green",
+      "click": "CLICK!!!",
+      "tooSoon": "Too Soon!",
+      "clickToRetry": "Click to retry",
+      "clickToContinue": "Click to continue"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Share unavailable.",
+      "wechatCopy": "Link copied. Paste in WeChat to share."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }

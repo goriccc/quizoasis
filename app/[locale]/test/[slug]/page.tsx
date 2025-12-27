@@ -94,6 +94,9 @@ import { Locale } from '@/i18n';
 import { getLatestTestSlugs } from '@/lib/latestTests';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
+const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 const MBTITestClient = dynamic(() => import('@/components/MBTITestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
@@ -2157,6 +2160,62 @@ export default async function TestPage({ params }: Props) {
 
     return (
       <Phase2ColorSurvivalTestClient
+        locale={locale}
+        slug={test.slug}
+        title={title}
+        description={description}
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+        isLatestTest={isLatestTest}
+        badgeType={test.badge_type || null}
+      />
+    );
+  }
+
+  if (slug === 'phase2_reflex_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_reflex_test',
+      title: {
+        ko: "0.1초의 승부! 반응속도 테스트",
+        en: "0.1 Second Showdown! Reaction Speed Test",
+        ja: "0.1秒の勝負！反応速度テスト",
+        "zh-CN": "0.1秒的胜负！反应速度测试",
+        "zh-TW": "0.1秒的勝負！反應速度測試",
+        vi: "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng",
+        id: "Pertarungan 0,1 Detik! Tes Kecepatan Reaksi"
+      },
+      description: {
+        ko: "당신의 뇌와 손가락은 연결되어 있나요? 반응속도 측정 시작 ⚡",
+        en: "Is your brain connected to your fingers? Start Reaction Test ⚡",
+        ja: "あなたの脳と指はつながっていますか？反応速度測定開始 ⚡",
+        "zh-CN": "你的大脑和手指连接好了吗？开始反应速度测量 ⚡",
+        "zh-TW": "你的大腦和手指連接好了嗎？開始反應速度測量 ⚡",
+        "vi": "Bộ não và ngón tay của bạn có được kết nối không? Bắt đầu đo tốc độ phản ứng ⚡",
+        "id": "Apakah otak dan jari Anda terhubung? Mulai Tes Kecepatan Reaksi ⚡"
+      },
+      thumbnail: 'phase2_test_159_reflex_test.jpg',
+      type: 'game',
+      category: 'capability',
+      play_count: 0,
+      tags: {
+        ko: ["챌린지", "게임", "반응속도", "순발력"],
+        en: ["Challenge", "Game", "Reaction Speed", "Reflexes"],
+        ja: ["チャレンジ", "ゲーム", "反応速度", "瞬発力"],
+        "zh-CN": ["挑战", "游戏", "反应速度", "爆发力"],
+        "zh-TW": ["挑戰", "遊戲", "反應速度", "爆發力"],
+        vi: ["Thử thách", "Trò chơi", "Tốc độ phản ứng", "Phản xạ"],
+        id: ["Tantangan", "Game", "Kecepatan Reaksi", "Refleks"]
+      }
+    };
+
+    const title = typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title;
+    const description = typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description;
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <Phase2ReflexTestClient
         locale={locale}
         slug={test.slug}
         title={title}

@@ -5465,5 +5465,118 @@
       "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
       "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất"
     }
+  },
+  "phase2ReactionTimeTest": {
+    "startMessage": {
+      "line1": "Are your brain and fingers connected?",
+      "line2": "The average reaction time for humans is about 0.25s (250ms).",
+      "line3": "Pro gamers break the 0.15s barrier.",
+      "line4": "Do you feel slower with age? Or do you still have peak physical skills?",
+      "line5": "Measure your 'real' speed now. Start Reaction Test ⚡"
+    },
+    "shareMessages": {
+      "default": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "kakao": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "line": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "wechat": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "whatsapp": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "telegram": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "startDefault": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startKakao": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startLine": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWechat": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWhatsapp": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startTelegram": "0.1s Battle! Reaction Time Test ⚡ What's your rank?"
+    },
+    "ui": {
+      "title": "0.1s Battle! Reaction Time Test",
+      "wait": "Wait...",
+      "waitDesc": "Click when it turns green!",
+      "clickNow": "CLICK!!!",
+      "clickNowDesc": "As fast as you can!",
+      "tooSoon": "Too Soon!",
+      "tooSoonDesc": "Wait for the color to change. Click to try again.",
+      "clickToContinue": "Click to Continue",
+      "clickToRetry": "Click to Retry",
+      "roundInfo": "Round {current} / {total}",
+      "yourSpeed": "📊 Your Speed",
+      "recommendedJob": "⭐ Recommended Job",
+      "shareResult": "Share Result",
+      "shareWithFriends": "Share with Friends",
+      "retry": "Try Again",
+      "otherTests": "Other Tests",
+      "adsenseTitle": "Advertisement",
+      "linkCopy": "Copy Link",
+      "kakao": "Kakao Share",
+      "telegram": "Telegram Share",
+      "wechat": "WeChat Share",
+      "line": "Line Share",
+      "whatsapp": "WhatsApp Share",
+      "goToTest": "Go to Test"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Share unavailable.",
+      "kakaoInit": "Initializing KakaoTalk...",
+      "wechatCopy": "Link copied. Paste in WeChat to share."
+    }
+  },
+  "phase2ReflexTest": {
+    "startMessage": {
+      "line1": "Bộ não và ngón tay của bạn có được kết nối không?",
+      "line2": "Thời gian để nhìn, nhận thức và di chuyển ngón tay. Tốc độ phản ứng trung bình là khoảng 0.25 giây (250ms).",
+      "line3": "Bạn có cảm thấy chậm hơn theo tuổi tác không? Hay bạn vẫn còn sung sức?",
+      "line4": "Chúng tôi sẽ đo tốc độ 'thực' của bạn ngay bây giờ.",
+      "line5": "Bắt đầu đo tốc độ phản ứng ⚡"
+    },
+    "shareMessages": {
+      "default": "Tốc độ phản ứng trung bình của tôi là {record}ms! Hạng: {type} ⚡ Bạn có thắng được tôi không?",
+      "kakao": "Tốc độ phản ứng trung bình của tôi là {record}ms! Hạng: {type} ⚡ Bạn có thắng được tôi không?",
+      "line": "Tốc độ phản ứng trung bình của tôi là {record}ms! Hạng: {type} ⚡ Bạn có thắng được tôi không?",
+      "wechat": "Tốc độ phản ứng trung bình của tôi là {record}ms! Hạng: {type} ⚡ Bạn có thắng được tôi không?",
+      "whatsapp": "Tốc độ phản ứng trung bình của tôi là {record}ms! Hạng: {type} ⚡ Bạn có thắng được tôi không?",
+      "telegram": "Tốc độ phản ứng trung bình của tôi là {record}ms! Hạng: {type} ⚡ Bạn có thắng được tôi không?",
+      "startDefault": "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng ⚡ Bạn hạng mấy?",
+      "startKakao": "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng ⚡ Bạn hạng mấy?",
+      "startLine": "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng ⚡ Bạn hạng mấy?",
+      "startWechat": "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng ⚡ Bạn hạng mấy?",
+      "startWhatsapp": "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng ⚡ Bạn hạng mấy?",
+      "startTelegram": "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng ⚡ Bạn hạng mấy?"
+    },
+    "ui": {
+      "title": "Quyết đấu 0.1 giây! Kiểm tra tốc độ phản ứng",
+      "startTest": "Bắt đầu kiểm tra",
+      "retry": "Đo lại",
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Đi tới bài kiểm tra",
+      "similarTests": "Bài kiểm tra tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "Chia sẻ Kakao",
+      "telegram": "Chia sẻ Telegram",
+      "wechat": "Chia sẻ WeChat",
+      "line": "Chia sẻ Line",
+      "whatsapp": "Chia sẻ WhatsApp",
+      "shareResult": "Chia sẻ kết quả",
+      "survivalInstinct": "📊 Tốc độ của bạn",
+      "recommendation": "⭐ Nghề nghiệp đề xuất",
+      "otherTests": "Xem bài kiểm tra khác"
+    },
+    "game": {
+      "wait": "Chờ đã...",
+      "waitDesc": "Nhấn khi chuyển sang màu xanh",
+      "click": "NHẤN!!!",
+      "tooSoon": "Quá sớm!",
+      "clickToRetry": "Nhấn để thử lại",
+      "clickToContinue": "Nhấn để tiếp tục"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Liên kết đã sao chép. Dán vào WeChat để chia sẻ."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến"
+    }
   }
 }

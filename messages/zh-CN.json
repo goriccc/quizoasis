@@ -5465,5 +5465,118 @@
       "similarTestsTop5": "🎯 推荐的前5个类似测试",
       "popularTestsTop5": "🔥 推荐的前5个热门测试"
     }
+  },
+  "phase2ReactionTimeTest": {
+    "startMessage": {
+      "line1": "Are your brain and fingers connected?",
+      "line2": "The average reaction time for humans is about 0.25s (250ms).",
+      "line3": "Pro gamers break the 0.15s barrier.",
+      "line4": "Do you feel slower with age? Or do you still have peak physical skills?",
+      "line5": "Measure your 'real' speed now. Start Reaction Test ⚡"
+    },
+    "shareMessages": {
+      "default": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "kakao": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "line": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "wechat": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "whatsapp": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "telegram": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
+      "startDefault": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startKakao": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startLine": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWechat": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startWhatsapp": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
+      "startTelegram": "0.1s Battle! Reaction Time Test ⚡ What's your rank?"
+    },
+    "ui": {
+      "title": "0.1s Battle! Reaction Time Test",
+      "wait": "Wait...",
+      "waitDesc": "Click when it turns green!",
+      "clickNow": "CLICK!!!",
+      "clickNowDesc": "As fast as you can!",
+      "tooSoon": "Too Soon!",
+      "tooSoonDesc": "Wait for the color to change. Click to try again.",
+      "clickToContinue": "Click to Continue",
+      "clickToRetry": "Click to Retry",
+      "roundInfo": "Round {current} / {total}",
+      "yourSpeed": "📊 Your Speed",
+      "recommendedJob": "⭐ Recommended Job",
+      "shareResult": "Share Result",
+      "shareWithFriends": "Share with Friends",
+      "retry": "Try Again",
+      "otherTests": "Other Tests",
+      "adsenseTitle": "Advertisement",
+      "linkCopy": "Copy Link",
+      "kakao": "Kakao Share",
+      "telegram": "Telegram Share",
+      "wechat": "WeChat Share",
+      "line": "Line Share",
+      "whatsapp": "WhatsApp Share",
+      "goToTest": "Go to Test"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Share unavailable.",
+      "kakaoInit": "Initializing KakaoTalk...",
+      "wechatCopy": "Link copied. Paste in WeChat to share."
+    }
+  },
+  "phase2ReflexTest": {
+    "startMessage": {
+      "line1": "你的大脑和手指连接好了吗？",
+      "line2": "从看到、大脑认知到手指移动的时间。普通人的平均反应速度约为0.25秒（250ms）。",
+      "line3": "觉得年纪大了反应变慢了吗？还是依然宝刀未老？",
+      "line4": "现在为你测量“真实”的速度。",
+      "line5": "开始反应速度测量 ⚡"
+    },
+    "shareMessages": {
+      "default": "我的平均反应速度是{record}ms！等级是{type} ⚡ 你能赢我吗？",
+      "kakao": "我的平均反应速度是{record}ms！等级是{type} ⚡ 你能赢我吗？",
+      "line": "我的平均反应速度是{record}ms！等级是{type} ⚡ 你能赢我吗？",
+      "wechat": "我的平均反应速度是{record}ms！等级是{type} ⚡ 你能赢我吗？",
+      "whatsapp": "我的平均反应速度是{record}ms！等级是{type} ⚡ 你能赢我吗？",
+      "telegram": "我的平均反应速度是{record}ms！等级是{type} ⚡ 你能赢我吗？",
+      "startDefault": "0.1秒的胜负！反应速度测试 ⚡ 你是哪个等级？",
+      "startKakao": "0.1秒的胜负！反应速度测试 ⚡ 你是哪个等级？",
+      "startLine": "0.1秒的胜负！反应速度测试 ⚡ 你是哪个等级？",
+      "startWechat": "0.1秒的胜负！反应速度测试 ⚡ 你是哪个等级？",
+      "startWhatsapp": "0.1秒的胜负！反应速度测试 ⚡ 你是哪个等级？",
+      "startTelegram": "0.1秒的胜负！反应速度测试 ⚡ 你是哪个等级？"
+    },
+    "ui": {
+      "title": "0.1秒的胜负！反应速度测试",
+      "startTest": "开始测试",
+      "retry": "再次测量",
+      "adsenseTitle": "广告",
+      "goToTest": "去测试",
+      "similarTests": "类似测试",
+      "linkCopy": "复制链接",
+      "kakao": "Kakao分享",
+      "telegram": "Telegram分享",
+      "wechat": "微信分享",
+      "line": "Line分享",
+      "whatsapp": "WhatsApp分享",
+      "shareResult": "分享结果",
+      "survivalInstinct": "📊 你的速度",
+      "recommendation": "⭐ 推荐职业",
+      "otherTests": "查看其他测试"
+    },
+    "game": {
+      "wait": "等待...",
+      "waitDesc": "变绿时点击",
+      "click": "点击!!!",
+      "tooSoon": "太快了！",
+      "clickToRetry": "点击重试",
+      "clickToContinue": "点击继续"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制。请粘贴到微信分享。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 推荐的前5个类似测试",
+      "popularTestsTop5": "🔥 推荐的前5个热门测试"
+    }
   }
 }
