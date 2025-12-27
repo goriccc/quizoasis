@@ -5423,5 +5423,56 @@
       "similarTestsTop5": "🎯 Top 5 Similar Other Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests These Days"
     }
+  },
+  "phase2ColorSurvivalTest": {
+    "startMessage": {
+      "line1": "How long can your eyes survive?",
+      "line2": "Only 10 seconds! Your initial time is very short.",
+      "line3": "But don't worry. Every correct answer extends your life (time).",
+      "line4": "Find the different color quickly and accurately to save the dying timer!",
+      "line5": "The one who lasts long wins. Survival Game Start ⏳"
+    },
+    "shareMessages": {
+      "default": "My survival level is {type}! ⏳ Correct answers add time! How far can you go?",
+      "kakao": "My survival level is {type}! ⏳ Correct answers add time! How far can you go?",
+      "line": "My survival level is {type}! ⏳ Correct answers add time! How far can you go?",
+      "wechat": "My survival level is {type}! ⏳ Correct answers add time! How far can you go?",
+      "whatsapp": "My survival level is {type}! ⏳ Correct answers add time! How far can you go?",
+      "telegram": "My survival level is {type}! ⏳ Correct answers add time! How far can you go?",
+      "startDefault": "God's Eye Absolute Color Challenge! How accurate are your eyes? Try it!",
+      "startKakao": "God's Eye Absolute Color Challenge! How accurate are your eyes? Try it!",
+      "startLine": "God's Eye Absolute Color Challenge! How accurate are your eyes? Try it!",
+      "startWechat": "God's Eye Absolute Color Challenge! How accurate are your eyes? Try it!",
+      "startWhatsapp": "God's Eye Absolute Color Challenge! How accurate are your eyes? Try it!",
+      "startTelegram": "God's Eye Absolute Color Challenge! How accurate are your eyes? Try it!"
+    },
+    "ui": {
+      "title": "'God's Eye' Color Challenge",
+      "startTest": "Start Game",
+      "retry": "Try Again",
+      "gameInstruction": "Find and touch the different colored square!",
+      "advice": "Survival Tip",
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Go to Test",
+      "similarTests": "Similar Tests",
+      "linkCopy": "Copy Link",
+      "kakao": "Kakao Share",
+      "telegram": "Telegram Share",
+      "wechat": "WeChat Share",
+      "line": "Line Share",
+      "whatsapp": "WhatsApp Share",
+      "shareResult": "Share Result",
+      "survivalInstinct": "📊 Survival Instinct",
+      "recommendation": "⭐ Recommendation"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoInit": "Initializing KakaoTalk...",
+      "wechatCopy": "Link copied. Paste in WeChat to share."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Test Recommendations"
+    }
   }
 }

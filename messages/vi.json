@@ -5414,5 +5414,56 @@
       "similarTestsTop5": "🎯 Top 5 Bài kiểm tra Tương tự Khác",
       "popularTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến Gần đây"
     }
+  },
+  "phase2ColorSurvivalTest": {
+    "startMessage": {
+      "line1": "Mắt bạn có thể chịu đựng được bao lâu?",
+      "line2": "Chỉ 10 giây! Thời gian ban đầu của bạn rất ngắn.",
+      "line3": "Nhưng đừng lo. Mỗi câu trả lời đúng sẽ kéo dài sự sống (thời gian).",
+      "line4": "Tìm màu khác biệt nhanh và chính xác để cứu đồng hồ đang chết dần!",
+      "line5": "Người trụ lại lâu nhất sẽ chiến thắng. Bắt đầu trò chơi sinh tồn ⏳"
+    },
+    "shareMessages": {
+      "default": "Cấp độ sinh tồn của tôi là {type}! ⏳ Trả lời đúng được thêm giờ! Bạn đi được bao xa?",
+      "kakao": "Cấp độ sinh tồn của tôi là {type}! ⏳ Trả lời đúng được thêm giờ! Bạn đi được bao xa?",
+      "line": "Cấp độ sinh tồn của tôi là {type}! ⏳ Trả lời đúng được thêm giờ! Bạn đi được bao xa?",
+      "wechat": "Cấp độ sinh tồn của tôi là {type}! ⏳ Trả lời đúng được thêm giờ! Bạn đi được bao xa?",
+      "whatsapp": "Cấp độ sinh tồn của tôi là {type}! ⏳ Trả lời đúng được thêm giờ! Bạn đi được bao xa?",
+      "telegram": "Cấp độ sinh tồn của tôi là {type}! ⏳ Trả lời đúng được thêm giờ! Bạn đi được bao xa?",
+      "startDefault": "Thử thách Màu sắc Tuyệt đối Mắt Thần! Mắt bạn chính xác đến đâu?",
+      "startKakao": "Thử thách Màu sắc Tuyệt đối Mắt Thần! Mắt bạn chính xác đến đâu?",
+      "startLine": "Thử thách Màu sắc Tuyệt đối Mắt Thần! Mắt bạn chính xác đến đâu?",
+      "startWechat": "Thử thách Màu sắc Tuyệt đối Mắt Thần! Mắt bạn chính xác đến đâu?",
+      "startWhatsapp": "Thử thách Màu sắc Tuyệt đối Mắt Thần! Mắt bạn chính xác đến đâu?",
+      "startTelegram": "Thử thách Màu sắc Tuyệt đối Mắt Thần! Mắt bạn chính xác đến đâu?"
+    },
+    "ui": {
+      "title": "Thử thách Màu sắc 'Mắt Thần'",
+      "startTest": "Bắt đầu trò chơi",
+      "retry": "Thử lại",
+      "gameInstruction": "Tìm và chạm vào ô vuông có màu khác!",
+      "advice": "Mẹo sinh tồn",
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Đi đến bài kiểm tra",
+      "similarTests": "Các bài kiểm tra tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "Chia sẻ Kakao",
+      "telegram": "Chia sẻ Telegram",
+      "wechat": "Chia sẻ WeChat",
+      "line": "Chia sẻ Line",
+      "whatsapp": "Chia sẻ WhatsApp",
+      "shareResult": "Chia sẻ kết quả",
+      "survivalInstinct": "📊 Bản năng sinh tồn",
+      "recommendation": "⭐ Đề xuất"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "kakaoInit": "Đang khởi tạo KakaoTalk...",
+      "wechatCopy": "Đã sao chép liên kết. Dán vào WeChat để chia sẻ."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất"
+    }
   }
 }

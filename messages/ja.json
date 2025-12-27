@@ -5402,5 +5402,56 @@
       "similarTestsTop5": "🎯 類似の他のテストトップ5",
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
+  },
+  "phase2ColorSurvivalTest": {
+    "startMessage": {
+      "line1": "あなたの目はどれくらい持ちこたえられますか？",
+      "line2": "たった10秒！与えられた初期時間は非常に短いです。",
+      "line3": "でも心配しないでください。正解するたびに命（時間）が延びます。",
+      "line4": "素早く正確に違う色を見つけて、消えゆくタイマーを救ってください！",
+      "line5": "長く生き残った者が勝者です。サバイバルゲーム開始 ⏳"
+    },
+    "shareMessages": {
+      "default": "私の生存レベルは{type}！⏳ 正解すると時間が増える！どこまで行ける？",
+      "kakao": "私の生存レベルは{type}！⏳ 正解すると時間が増える！どこまで行ける？",
+      "line": "私の生存レベルは{type}！⏳ 正解すると時間が増える！どこまで行ける？",
+      "wechat": "私の生存レベルは{type}！⏳ 正解すると時間が増える！どこまで行ける？",
+      "whatsapp": "私の生存レベルは{type}！⏳ 正解すると時間が増える！どこまで行ける？",
+      "telegram": "私の生存レベルは{type}！⏳ 正解すると時間が増える！どこまで行ける？",
+      "startDefault": "神の目・絶対色感チャレンジ！あなたの目はどれくらい正確？挑戦してみて！",
+      "startKakao": "神の目・絶対色感チャレンジ！あなたの目はどれくらい正確？挑戦してみて！",
+      "startLine": "神の目・絶対色感チャレンジ！あなたの目はどれくらい正確？挑戦してみて！",
+      "startWechat": "神の目・絶対色感チャレンジ！あなたの目はどれくらい正確？挑戦してみて！",
+      "startWhatsapp": "神の目・絶対色感チャレンジ！あなたの目はどれくらい正確？挑戦してみて！",
+      "startTelegram": "神の目・絶対色感チャレンジ！あなたの目はどれくらい正確？挑戦してみて！"
+    },
+    "ui": {
+      "title": "「神の目」絶対色感チャレンジ",
+      "startTest": "ゲーム開始",
+      "retry": "もう一度挑戦",
+      "gameInstruction": "違う色の四角を見つけてタッチしてください！",
+      "advice": "生存のヒント",
+      "adsenseTitle": "広告",
+      "goToTest": "テストに行く",
+      "similarTests": "似ているテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク共有",
+      "telegram": "Telegram共有",
+      "wechat": "WeChat共有",
+      "line": "LINE共有",
+      "whatsapp": "WhatsApp共有",
+      "shareResult": "結果を共有",
+      "survivalInstinct": "📊 生存本能",
+      "recommendation": "⭐ おすすめ"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoInit": "カカオトーク初期化中...",
+      "wechatCopy": "リンクがコピーされました。WeChatに貼り付けて共有してください。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの類似テスト Top 5",
+      "popularTestsTop5": "🔥 最近人気のテスト Top 5"
+    }
   }
 }

@@ -5552,5 +5552,56 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase2ColorSurvivalTest": {
+    "startMessage": {
+      "line1": "당신의 눈은 얼마나 오랫동안 버틸 수 있나요?",
+      "line2": "단 10초! 당신에게 주어진 초기 시간은 매우 짧습니다.",
+      "line3": "하지만 걱정 마세요. 정답을 찾을 때마다 생명(시간)이 연장됩니다.",
+      "line4": "빠르고 정확하게 다른 색깔을 찾아내어 죽어가는 타이머를 살려내세요!",
+      "line5": "오래 버티는 자가 승리합니다. 생존 게임 시작 ⏳"
+    },
+    "shareMessages": {
+      "default": "내 생존 레벨은 {type}! ⏳ 정답 맞히면 시간 늘어남! 너 몇 단계까지 감?",
+      "kakao": "내 생존 레벨은 {type}! ⏳ 정답 맞히면 시간 늘어남! 너 몇 단계까지 감?",
+      "line": "내 생존 레벨은 {type}! ⏳ 정답 맞히면 시간 늘어남! 너 몇 단계까지 감?",
+      "wechat": "내 생존 레벨은 {type}! ⏳ 정답 맞히면 시간 늘어남! 너 몇 단계까지 감?",
+      "whatsapp": "내 생존 레벨은 {type}! ⏳ 정답 맞히면 시간 늘어남! 너 몇 단계까지 감?",
+      "telegram": "내 생존 레벨은 {type}! ⏳ 정답 맞히면 시간 늘어남! 너 몇 단계까지 감?",
+      "startDefault": "신의 눈 절대색감 챌린지! 당신의 눈은 얼마나 정확한가요? 도전해보세요!",
+      "startKakao": "신의 눈 절대색감 챌린지! 당신의 눈은 얼마나 정확한가요? 도전해보세요!",
+      "startLine": "신의 눈 절대색감 챌린지! 당신의 눈은 얼마나 정확한가요? 도전해보세요!",
+      "startWechat": "신의 눈 절대색감 챌린지! 당신의 눈은 얼마나 정확한가요? 도전해보세요!",
+      "startWhatsapp": "신의 눈 절대색감 챌린지! 당신의 눈은 얼마나 정확한가요? 도전해보세요!",
+      "startTelegram": "신의 눈 절대색감 챌린지! 당신의 눈은 얼마나 정확한가요? 도전해보세요!"
+    },
+    "ui": {
+      "title": "'신의 눈' 절대색감 챌린지",
+      "startTest": "게임 시작",
+      "retry": "다시 도전하기",
+      "gameInstruction": "다른 색깔의 사각형을 찾아서 터치하세요!",
+      "advice": "생존 팁",
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "similarTests": "유사한 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡 공유",
+      "telegram": "텔레그램 공유",
+      "wechat": "위챗 공유",
+      "line": "라인 공유",
+      "whatsapp": "왓츠앱 공유",
+      "shareResult": "결과 공유하기",
+      "survivalInstinct": "📊 생존 본능",
+      "recommendation": "⭐ 추천"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "kakaoInit": "카카오톡 초기화 중입니다.",
+      "wechatCopy": "링크가 복사되었습니다. 위챗에 붙여넣어 공유하세요."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

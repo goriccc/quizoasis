@@ -259,6 +259,9 @@ const Phase2HomebodyLevelTestClient = dynamic(() => import('@/components/Phase2H
 const Phase2LazinessLevelTestClient = dynamic(() => import('@/components/Phase2LazinessLevelTestClient'), {
   ssr: false
 });
+const Phase2ColorSurvivalTestClient = dynamic(() => import('@/components/Phase2ColorSurvivalTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
@@ -2098,6 +2101,71 @@ export default async function TestPage({ params }: Props) {
           badgeType={test.badge_type || null}
         />
       </>
+    );
+  }
+
+  // '신의 눈' 절대색감 챌린지
+  if (slug === 'phase2_color_survival_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_color_survival_test',
+      title: {
+        ko: "'신의 눈' 절대색감 챌린지 (타임 어택)",
+        en: "'God's Eye' Absolute Color Challenge (Time Attack)",
+        ja: "「神の目」絶対色感チャレンジ（タイムアタック）",
+        "zh-CN": "“神之眼”绝对色感挑战（限时挑战）",
+        "zh-TW": "“神之眼”絕對色感挑戰（限時挑戰）",
+        vi: "Thử thách Màu sắc Tuyệt đối 'Mắt Thần' (Time Attack)",
+        id: "Tantangan Warna Mutlak 'Mata Dewa' (Time Attack)"
+      },
+      description: {
+        ko: "당신의 눈은 얼마나 오랫동안 버틸 수 있나요? 단 10초! 타임 어택 생존 게임.",
+        en: "How long can your eyes survive? Only 10 seconds! Time Attack Survival Game.",
+        ja: "あなたの目はどれくらい持ちこたえられますか？たった10秒！タイムアタックサバイバルゲーム。",
+        "zh-CN": "你的眼睛能坚持多久？只有10秒！限时生存游戏。",
+        "zh-TW": "你的眼睛能堅持多久？只有10秒！限時生存遊戲。",
+        vi: "Mắt bạn có thể chịu đựng được bao lâu? Chỉ 10 giây! Trò chơi sinh tồn Time Attack.",
+        id: "Seberapa lama mata Anda bisa bertahan? Hanya 10 detik! Game Survival Time Attack."
+      },
+      thumbnail: 'phase2_test_158_color_survival.jpg',
+      type: 'game',
+      category: 'capability',
+      play_count: 0,
+      tags: {
+        ko: ["챌린지", "게임", "색감", "순발력"],
+        en: ["Challenge", "Game", "Color", "Reflexes"],
+        ja: ["チャレンジ", "ゲーム", "色感", "瞬発力"],
+        "zh-CN": ["挑战", "游戏", "色感", "反应力"],
+        "zh-TW": ["挑戰", "遊戲", "色感", "反應力"],
+        vi: ["Thử thách", "Trò chơi", "Màu sắc", "Phản xạ"],
+        id: ["Tantangan", "Game", "Warna", "Refleks"]
+      }
+    };
+
+    const title = typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title;
+    const description = typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description;
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    // 디버깅: NEW 뱃지 표시 확인
+    console.log('🔍 Phase2ColorSurvivalTest PAGE:', {
+      slug,
+      isLatestTest,
+      latestTestSlugs: latestTestSlugs.slice(0, 5), // 상위 5개만
+      isInLatest15: latestTestSlugs.includes(slug)
+    });
+
+    return (
+      <Phase2ColorSurvivalTestClient
+        locale={locale}
+        slug={test.slug}
+        title={title}
+        description={description}
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+        isLatestTest={isLatestTest}
+        badgeType={test.badge_type || null}
+      />
     );
   }
 

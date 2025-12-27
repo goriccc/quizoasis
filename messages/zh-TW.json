@@ -5421,5 +5421,56 @@
       "similarTestsTop5": "🎯 類似其他測試前5名",
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
+  },
+  "phase2ColorSurvivalTest": {
+    "startMessage": {
+      "line1": "你的眼睛能堅持多久？",
+      "line2": "只有10秒！給你的初始時間非常短。",
+      "line3": "但別擔心。每找到一個正確答案，生命（時間）就會延長。",
+      "line4": "快速準確地找出不同的顏色，拯救即將耗盡的計時器！",
+      "line5": "堅持到最後的人就是贏家。生存遊戲開始 ⏳"
+    },
+    "shareMessages": {
+      "default": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
+      "kakao": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
+      "line": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
+      "wechat": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
+      "whatsapp": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
+      "telegram": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
+      "startDefault": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
+      "startKakao": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
+      "startLine": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
+      "startWechat": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
+      "startWhatsapp": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
+      "startTelegram": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！"
+    },
+    "ui": {
+      "title": "“神之眼”絕對色感挑戰",
+      "startTest": "開始遊戲",
+      "retry": "再次挑戰",
+      "gameInstruction": "找出並點擊顏色不同的方塊！",
+      "advice": "生存技巧",
+      "adsenseTitle": "廣告",
+      "goToTest": "去測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製鏈接",
+      "kakao": "Kakao分享",
+      "telegram": "Telegram分享",
+      "wechat": "微信分享",
+      "line": "Line分享",
+      "whatsapp": "WhatsApp分享",
+      "shareResult": "分享結果",
+      "survivalInstinct": "📊 生存本能",
+      "recommendation": "⭐ 推薦"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "kakaoInit": "KakaoTalk初始化中...",
+      "wechatCopy": "鏈接已複製。請粘貼到微信分享。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 推薦的前5個類似測試",
+      "popularTestsTop5": "🔥 推薦的前5個熱門測試"
+    }
   }
 }
