@@ -726,12 +726,11 @@ export default function Phase2ReflexTestClient({
 
       return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex flex-col items-start justify-start p-4">
-            {/* Game Area - 소셜 공유 버튼까지 보이도록 높이 조정 */}
+            {/* Game Area - 가로너비 기준 1:1 비율 */}
             <div 
               ref={gameAreaRef}
               onClick={handleScreenClick}
-              className={`w-full max-w-lg ${bgColor} rounded-2xl shadow-xl p-4 md:p-6 relative mb-8 mx-auto mt-4 cursor-pointer select-none touch-manipulation transition-colors duration-200 flex flex-col items-center justify-center`}
-              style={{ height: 'calc((100vh - 650px) / 1.5)', maxHeight: 'calc((100vh - 650px) / 1.5)' }}
+              className={`w-full max-w-lg aspect-square ${bgColor} rounded-2xl shadow-xl p-4 md:p-6 relative mb-8 mx-auto mt-4 cursor-pointer select-none touch-manipulation transition-colors duration-200 flex flex-col items-center justify-center`}
             >
                 {/* Round Indicator */}
                 <div className="absolute top-4 left-0 right-0 flex justify-center gap-2 z-10">
