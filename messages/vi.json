@@ -5632,5 +5632,54 @@
       "similarTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến",
       "popularTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến"
     }
+  },
+  "phase2EyesightTest": {
+    "startMessage": {
+      "line1": "Bây giờ văn bản này có mờ không?",
+      "line2": "Đôi mắt của bạn, kiệt sức vì điện thoại thông minh và màn hình cả ngày. Thị lực của bạn có đang giảm mạnh không?",
+      "line3": "Kiểm tra tình trạng mắt chỉ trong 1 phút mà không cần đến bệnh viện!",
+      "line4": "Tìm hình dạng 'C' đang thu nhỏ dần. Nếu bạn đạt đến cấp độ cuối cùng, bạn là người Mông Cổ!",
+      "line5": "Đo mức độ thị lực của tôi 👓",
+      "line6": "Start Eye Test ▶️",
+      "line7": "Đo mức độ thị lực của tôi 👓"
+    },
+    "ui": {
+      "estimatedVision": "Thị lực của bạn",
+      "recommendation": "Khuyến nghị",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Quảng cáo",
+      "similarTests": "Bài kiểm tra tương tự",
+      "goToTest": "Làm bài kiểm tra",
+      "gameInstruction": "Chọn hướng mở của chữ C"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat."
+    },
+    "shareMessages": {
+      "default": "Mức độ thị lực của tôi là {type}! 👓 Đo thị lực chỉ trong 1 phút trên điện thoại thông minh. Bạn cũng thử nhé!",
+      "kakao": "Mức độ thị lực của tôi là {type}! 👓 Đo thị lực chỉ trong 1 phút trên điện thoại thông minh. Bạn cũng thử nhé!",
+      "wechat": "Mức độ thị lực của tôi là {type}! 👓 Đo thị lực chỉ trong 1 phút trên điện thoại thông minh. Bạn cũng thử nhé!",
+      "whatsapp": "Mức độ thị lực của tôi là {type}! 👓 Đo thị lực chỉ trong 1 phút trên điện thoại thông minh. Bạn cũng thử nhé!",
+      "telegram": "Mức độ thị lực của tôi là {type}! 👓 Đo thị lực chỉ trong 1 phút trên điện thoại thông minh. Bạn cũng thử nhé!",
+      "line": "Mức độ thị lực của tôi là {type}! 👓 Đo thị lực chỉ trong 1 phút trên điện thoại thông minh. Bạn cũng thử nhé!",
+      "startDefault": "Thị lực của tôi có phải là người Mông Cổ? Kiểm tra thị lực nhanh 👓",
+      "startKakao": "Thị lực của tôi có phải là người Mông Cổ? Kiểm tra thị lực nhanh 👓",
+      "startWechat": "Thị lực của tôi có phải là người Mông Cổ? Kiểm tra thị lực nhanh 👓",
+      "startWhatsapp": "Thị lực của tôi có phải là người Mông Cổ? Kiểm tra thị lực nhanh 👓",
+      "startTelegram": "Thị lực của tôi có phải là người Mông Cổ? Kiểm tra thị lực nhanh 👓",
+      "startLine": "Thị lực của tôi có phải là người Mông Cổ? Kiểm tra thị lực nhanh 👓"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Top 5 Bài kiểm tra phổ biến gần đây",
+      "popularTestsTop5": "🔥 Top 5 Bài kiểm tra phổ biến gần đây"
+    }
   }
 }

@@ -5639,5 +5639,54 @@
       "similarTestsTop5": "🔥 熱門測試推薦 Top5",
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
+  },
+  "phase2EyesightTest": {
+    "startMessage": {
+      "line1": "現在這些字看起來模糊嗎？",
+      "line2": "你整日面對手機和顯示器，眼睛疲憊。視力是否在急劇下降？",
+      "line3": "無需去醫院，1分鐘即可檢查你的眼睛狀況！",
+      "line4": "找出逐漸縮小的「C」形狀。如果你達到最後階段，你就是蒙古人！",
+      "line5": "測量我的視力水平 👓",
+      "line6": "Start Eye Test ▶️",
+      "line7": "測量我的視力水平 👓"
+    },
+    "ui": {
+      "estimatedVision": "你的視力",
+      "recommendation": "推薦",
+      "shareResult": "分享結果",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "廣告",
+      "similarTests": "類似測試",
+      "goToTest": "進行測試",
+      "gameInstruction": "選擇C開口的方向"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。"
+    },
+    "shareMessages": {
+      "default": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
+      "kakao": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
+      "wechat": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
+      "whatsapp": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
+      "telegram": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
+      "line": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
+      "startDefault": "我的視力是蒙古人嗎？快速視力測試 👓",
+      "startKakao": "我的視力是蒙古人嗎？快速視力測試 👓",
+      "startWechat": "我的視力是蒙古人嗎？快速視力測試 👓",
+      "startWhatsapp": "我的視力是蒙古人嗎？快速視力測試 👓",
+      "startTelegram": "我的視力是蒙古人嗎？快速視力測試 👓",
+      "startLine": "我的視力是蒙古人嗎？快速視力測試 👓"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 最近熱門測試前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
   }
 }

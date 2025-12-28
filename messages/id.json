@@ -5632,5 +5632,54 @@
       "similarTestsTop5": "🔥 Top 5 Tes Populer",
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
+  },
+  "phase2EyesightTest": {
+    "startMessage": {
+      "line1": "Apakah teks ini terlihat buram sekarang?",
+      "line2": "Mata Anda, kelelahan karena smartphone dan monitor sepanjang hari. Apakah penglihatan Anda turun drastis?",
+      "line3": "Periksa kondisi mata Anda hanya dalam 1 menit tanpa mengunjungi rumah sakit!",
+      "line4": "Temukan bentuk 'C' yang menyusut. Jika Anda mencapai level akhir, Anda adalah orang Mongolia!",
+      "line5": "Ukur tingkat penglihatan saya 👓",
+      "line6": "Start Eye Test ▶️",
+      "line7": "Ukur tingkat penglihatan saya 👓"
+    },
+    "ui": {
+      "estimatedVision": "Penglihatan Anda",
+      "recommendation": "Rekomendasi",
+      "shareResult": "Bagikan Hasil",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Iklan",
+      "similarTests": "Tes Serupa",
+      "goToTest": "Lakukan Tes",
+      "gameInstruction": "Pilih arah pembukaan C"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat."
+    },
+    "shareMessages": {
+      "default": "Tingkat penglihatan saya adalah {type}! 👓 Mengukur penglihatan hanya dalam 1 menit di smartphone. Coba juga!",
+      "kakao": "Tingkat penglihatan saya adalah {type}! 👓 Mengukur penglihatan hanya dalam 1 menit di smartphone. Coba juga!",
+      "wechat": "Tingkat penglihatan saya adalah {type}! 👓 Mengukur penglihatan hanya dalam 1 menit di smartphone. Coba juga!",
+      "whatsapp": "Tingkat penglihatan saya adalah {type}! 👓 Mengukur penglihatan hanya dalam 1 menit di smartphone. Coba juga!",
+      "telegram": "Tingkat penglihatan saya adalah {type}! 👓 Mengukur penglihatan hanya dalam 1 menit di smartphone. Coba juga!",
+      "line": "Tingkat penglihatan saya adalah {type}! 👓 Mengukur penglihatan hanya dalam 1 menit di smartphone. Coba juga!",
+      "startDefault": "Apakah Penglihatan Saya Orang Mongolia? Tes Penglihatan Cepat 👓",
+      "startKakao": "Apakah Penglihatan Saya Orang Mongolia? Tes Penglihatan Cepat 👓",
+      "startWechat": "Apakah Penglihatan Saya Orang Mongolia? Tes Penglihatan Cepat 👓",
+      "startWhatsapp": "Apakah Penglihatan Saya Orang Mongolia? Tes Penglihatan Cepat 👓",
+      "startTelegram": "Apakah Penglihatan Saya Orang Mongolia? Tes Penglihatan Cepat 👓",
+      "startLine": "Apakah Penglihatan Saya Orang Mongolia? Tes Penglihatan Cepat 👓"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 5 Tes Populer Terbaru",
+      "popularTestsTop5": "🔥 5 Tes Populer Terbaru"
+    }
   }
 }

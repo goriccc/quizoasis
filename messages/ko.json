@@ -5770,5 +5770,54 @@
       "similarTestsTop5": "🔥 요즘 인기 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase2EyesightTest": {
+    "startMessage": {
+      "line1": "지금 이 글씨가 흐릿하게 보이나요?",
+      "line2": "하루 종일 스마트폰과 모니터에 시달리는 당신의 눈. 혹시 시력이 뚝뚝 떨어지고 있진 않을까요?",
+      "line3": "병원에 가지 않아도 1분 만에 확인하는 내 눈의 상태!",
+      "line4": "점점 작아지는 'C' 모양을 찾아보세요. 마지막 단계까지 간다면 당신은 몽골인!",
+      "line5": "내 시력 레벨 측정하기 👓",
+      "line6": "Start Eye Test ▶️",
+      "line7": "내 시력 레벨 측정하기 👓"
+    },
+    "ui": {
+      "estimatedVision": "당신의 시력",
+      "recommendation": "추천",
+      "shareResult": "결과 공유하기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "adsenseTitle": "광고",
+      "similarTests": "유사한 다른 테스트",
+      "goToTest": "테스트 하기",
+      "gameInstruction": "C 모양의 뚫린 방향을 선택하세요"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요."
+    },
+    "shareMessages": {
+      "default": "내 시력 레벨은 {type}! 👓 스마트폰으로 1분 만에 시력 측정함. 너도 해봐!",
+      "kakao": "내 시력 레벨은 {type}! 👓 스마트폰으로 1분 만에 시력 측정함. 너도 해봐!",
+      "wechat": "내 시력 레벨은 {type}! 👓 스마트폰으로 1분 만에 시력 측정함. 너도 해봐!",
+      "whatsapp": "내 시력 레벨은 {type}! 👓 스마트폰으로 1분 만에 시력 측정함. 너도 해봐!",
+      "telegram": "내 시력 레벨은 {type}! 👓 스마트폰으로 1분 만에 시력 측정함. 너도 해봐!",
+      "line": "내 시력 레벨은 {type}! 👓 스마트폰으로 1분 만에 시력 측정함. 너도 해봐!",
+      "startDefault": "내 시력은 몽골인? 초간편 시력 측정 👓",
+      "startKakao": "내 시력은 몽골인? 초간편 시력 측정 👓",
+      "startWechat": "내 시력은 몽골인? 초간편 시력 측정 👓",
+      "startWhatsapp": "내 시력은 몽골인? 초간편 시력 측정 👓",
+      "startTelegram": "내 시력은 몽골인? 초간편 시력 측정 👓",
+      "startLine": "내 시력은 몽골인? 초간편 시력 측정 👓"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 요즘 인기 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

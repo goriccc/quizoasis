@@ -5620,5 +5620,54 @@
       "similarTestsTop5": "🔥 最近人気のテスト トップ5",
       "popularTestsTop5": "🔥 最近人気のテスト トップ5"
     }
+  },
+  "phase2EyesightTest": {
+    "startMessage": {
+      "line1": "今、この文字がぼやけて見えますか？",
+      "line2": "一日中スマートフォンとモニターに苦しめられているあなたの目。視力が急激に低下していませんか？",
+      "line3": "病院に行かなくても1分で確認できる目の状態！",
+      "line4": "徐々に小さくなる「C」の形を見つけてください。最後のステップまで到達すれば、あなたはモンゴル人！",
+      "line5": "私の視力レベルを測定する 👓",
+      "line6": "Start Eye Test ▶️",
+      "line7": "私の視力レベルを測定する 👓"
+    },
+    "ui": {
+      "estimatedVision": "あなたの視力",
+      "recommendation": "おすすめ",
+      "shareResult": "結果を共有",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "広告",
+      "similarTests": "類似テスト",
+      "goToTest": "テストする",
+      "gameInstruction": "Cの開いた方向を選択してください"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoInit": "カカオトークシェア機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。"
+    },
+    "shareMessages": {
+      "default": "私の視力レベルは{type}！👓 スマートフォンで1分で視力測定。あなたもやってみて！",
+      "kakao": "私の視力レベルは{type}！👓 スマートフォンで1分で視力測定。あなたもやってみて！",
+      "wechat": "私の視力レベルは{type}！👓 スマートフォンで1分で視力測定。あなたもやってみて！",
+      "whatsapp": "私の視力レベルは{type}！👓 スマートフォンで1分で視力測定。あなたもやってみて！",
+      "telegram": "私の視力レベルは{type}！👓 スマートフォンで1分で視力測定。あなたもやってみて！",
+      "line": "私の視力レベルは{type}！👓 スマートフォンで1分で視力測定。あなたもやってみて！",
+      "startDefault": "私の視力はモンゴル人？簡単視力測定 👓",
+      "startKakao": "私の視力はモンゴル人？簡単視力測定 👓",
+      "startWechat": "私の視力はモンゴル人？簡単視力測定 👓",
+      "startWhatsapp": "私の視力はモンゴル人？簡単視力測定 👓",
+      "startTelegram": "私の視力はモンゴル人？簡単視력測定 👓",
+      "startLine": "私の視力はモンゴル人？簡単視力測定 👓"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 最近人気のテストトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
   }
 }

@@ -5641,5 +5641,54 @@
       "similarTestsTop5": "🔥 Top 5 Popular Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2EyesightTest": {
+    "startMessage": {
+      "line1": "Is this text blurry right now?",
+      "line2": "Your eyes, exhausted by smartphones and monitors all day. Is your vision dropping rapidly?",
+      "line3": "Check your eye condition in just 1 minute without visiting a hospital!",
+      "line4": "Find the shrinking 'C' shape. If you reach the final level, you're Mongolian!",
+      "line5": "Measure my vision level 👓",
+      "line6": "Start Eye Test ▶️",
+      "line7": "Measure my vision level 👓"
+    },
+    "ui": {
+      "estimatedVision": "Your Vision",
+      "recommendation": "Recommendation",
+      "shareResult": "Share Result",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Advertisement",
+      "similarTests": "Similar Tests",
+      "goToTest": "Take Test",
+      "gameInstruction": "Select the direction of the C opening"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "wechatCopy": "Link copied! Paste in WeChat to share."
+    },
+    "shareMessages": {
+      "default": "My vision level is {type}! 👓 Measured vision in just 1 minute on smartphone. Try it too!",
+      "kakao": "My vision level is {type}! 👓 Measured vision in just 1 minute on smartphone. Try it too!",
+      "wechat": "My vision level is {type}! 👓 Measured vision in just 1 minute on smartphone. Try it too!",
+      "whatsapp": "My vision level is {type}! 👓 Measured vision in just 1 minute on smartphone. Try it too!",
+      "telegram": "My vision level is {type}! 👓 Measured vision in just 1 minute on smartphone. Try it too!",
+      "line": "My vision level is {type}! 👓 Measured vision in just 1 minute on smartphone. Try it too!",
+      "startDefault": "Am I Mongolian? Quick Vision Test 👓",
+      "startKakao": "Am I Mongolian? Quick Vision Test 👓",
+      "startWechat": "Am I Mongolian? Quick Vision Test 👓",
+      "startWhatsapp": "Am I Mongolian? Quick Vision Test 👓",
+      "startTelegram": "Am I Mongolian? Quick Vision Test 👓",
+      "startLine": "Am I Mongolian? Quick Vision Test 👓"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Top 5 Popular Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }
