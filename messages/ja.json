@@ -5669,5 +5669,59 @@
       "similarTestsTop5": "🔥 最近人気のテストトップ5",
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
+  },
+  "phase2ColorBlindTest": {
+    "startMessage": {
+      "line1": "あなたが見る赤は、他の人にとっても赤ですか？",
+      "line2": "我が国の男性の約5.9％、女性の約0.4％が色覚異常（色盲・色弱）を持っていると言われています。",
+      "line3": "特に軽度の色弱の場合、成人になるまで気づかないことも多いです。",
+      "line4": "もしかして他の人とは違う色の世界を見ていませんか？今すぐ確認してください。",
+      "line5": "※ 正確な検査のため、画面の明るさを最大にしてください。",
+      "line6": "※ このテストは医学的診断の代わりにはなりません。",
+      "line7": "テスト開始 👁️ Start Color Test ▶️"
+    },
+    "ui": {
+      "question": "質問",
+      "selectAnswer": "見える数字を選択してください",
+      "nothing": "見えない",
+      "next": "次へ",
+      "finish": "完了",
+      "startTest": "テスト開始 👁️ Start Color Test ▶️",
+      "characteristics": "特徴",
+      "recommendation": "推奨",
+      "shareResult": "結果を共有",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "similarTests": "類似の他のテスト"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再度お試しください。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。"
+    },
+    "shareMessages": {
+      "default": "私の目に見える世界は{type}！🎨 あなたは12番の問題の数字が何に見えますか？",
+      "kakao": "私の目に見える世界は{type}！🎨 あなたは12番の問題の数字が何に見えますか？",
+      "wechat": "私の目に見える世界は{type}！🎨 あなたは12番の問題の数字が何に見えますか？",
+      "whatsapp": "私の目に見える世界は{type}！🎨 あなたは12番の問題の数字が何に見えますか？",
+      "telegram": "私の目に見える世界は{type}！🎨 あなたは12番の問題の数字が何に見えますか？",
+      "line": "私の目に見える世界は{type}！🎨 あなたは12番の問題の数字が何に見えますか？",
+      "startDefault": "私の世界の色は？色盲・色覚異常精密テスト 🎨",
+      "startKakao": "私の世界の色は？色盲・色覚異常精密テスト 🎨",
+      "startWechat": "私の世界の色は？色盲・色覚異常精密テスト 🎨",
+      "startWhatsapp": "私の世界の色は？色盲・色覚異常精密テスト 🎨",
+      "startTelegram": "私の世界の色は？色盲・色覚異常精密テスト 🎨",
+      "startLine": "私の世界の色は？色盲・色覚異常精密テスト 🎨"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 最近人気のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
   }
 }

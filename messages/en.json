@@ -5690,5 +5690,59 @@
       "similarTestsTop5": "🔥 Top 5 Popular Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2ColorBlindTest": {
+    "startMessage": {
+      "line1": "Is the red you see the same red others see?",
+      "line2": "About 5.9% of men and 0.4% of women in our country have color vision deficiency (color blindness/color weakness).",
+      "line3": "Especially for mild color weakness, many people live without knowing until adulthood.",
+      "line4": "Are you seeing a world of different colors than others? Check now.",
+      "line5": "※ Please maximize screen brightness for accurate testing.",
+      "line6": "※ This test cannot replace medical diagnosis.",
+      "line7": "Start Test 👁️ Start Color Test ▶️"
+    },
+    "ui": {
+      "question": "Question",
+      "selectAnswer": "Select the number you see",
+      "nothing": "Nothing",
+      "next": "Next",
+      "finish": "Finish",
+      "startTest": "Start Test 👁️ Start Color Test ▶️",
+      "characteristics": "Characteristics",
+      "recommendation": "Recommendation",
+      "shareResult": "Share Result",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take Test",
+      "similarTests": "Similar Tests"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "wechatCopy": "Link copied! Paste in WeChat to share."
+    },
+    "shareMessages": {
+      "default": "The world I see is {type}! 🎨 What number do you see in question 12?",
+      "kakao": "The world I see is {type}! 🎨 What number do you see in question 12?",
+      "wechat": "The world I see is {type}! 🎨 What number do you see in question 12?",
+      "whatsapp": "The world I see is {type}! 🎨 What number do you see in question 12?",
+      "telegram": "The world I see is {type}! 🎨 What number do you see in question 12?",
+      "line": "The world I see is {type}! 🎨 What number do you see in question 12?",
+      "startDefault": "What Color Is My World? Color Blindness Test 🎨",
+      "startKakao": "What Color Is My World? Color Blindness Test 🎨",
+      "startWechat": "What Color Is My World? Color Blindness Test 🎨",
+      "startWhatsapp": "What Color Is My World? Color Blindness Test 🎨",
+      "startTelegram": "What Color Is My World? Color Blindness Test 🎨",
+      "startLine": "What Color Is My World? Color Blindness Test 🎨"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Top 5 Popular Tests Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Recommendations"
+    }
   }
 }

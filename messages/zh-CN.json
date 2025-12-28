@@ -5681,5 +5681,59 @@
       "similarTestsTop5": "🔥 最近热门测试前5名",
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
+  },
+  "phase2ColorBlindTest": {
+    "startMessage": {
+      "line1": "你看到的红色，对别人来说也是红色吗？",
+      "line2": "我国约5.9%的男性和0.4%的女性有色觉异常（色盲/色弱）。",
+      "line3": "特别是轻度色弱，很多人直到成年都不知道。",
+      "line4": "你是否看到了与别人不同颜色的世界？现在就检查一下吧。",
+      "line5": "※ 为了准确检测，请将屏幕亮度调至最大。",
+      "line6": "※ 此测试不能代替医学诊断。",
+      "line7": "开始测试 👁️ Start Color Test ▶️"
+    },
+    "ui": {
+      "question": "问题",
+      "selectAnswer": "选择你看到的数字",
+      "nothing": "看不到",
+      "next": "下一个",
+      "finish": "完成",
+      "startTest": "开始测试 👁️ Start Color Test ▶️",
+      "characteristics": "特征",
+      "recommendation": "推荐",
+      "shareResult": "分享结果",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "广告",
+      "goToTest": "进行测试",
+      "similarTests": "类似其他测试"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。"
+    },
+    "shareMessages": {
+      "default": "我眼中看到的世界是{type}！🎨 你看到第12题的数字是什么？",
+      "kakao": "我眼中看到的世界是{type}！🎨 你看到第12题的数字是什么？",
+      "wechat": "我眼中看到的世界是{type}！🎨 你看到第12题的数字是什么？",
+      "whatsapp": "我眼中看到的世界是{type}！🎨 你看到第12题的数字是什么？",
+      "telegram": "我眼中看到的世界是{type}！🎨 你看到第12题的数字是什么？",
+      "line": "我眼中看到的世界是{type}！🎨 你看到第12题的数字是什么？",
+      "startDefault": "我的世界是什么颜色？色盲/色弱精密测试 🎨",
+      "startKakao": "我的世界是什么颜色？色盲/色弱精密测试 🎨",
+      "startWechat": "我的世界是什么颜色？色盲/色弱精密测试 🎨",
+      "startWhatsapp": "我的世界是什么颜色？色盲/色弱精密测试 🎨",
+      "startTelegram": "我的世界是什么颜色？色盲/色弱精密测试 🎨",
+      "startLine": "我的世界是什么颜色？色盲/色弱精密测试 🎨"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 热门测试推荐前5",
+      "popularTestsTop5": "🔥 热门测试推荐前5"
+    }
   }
 }

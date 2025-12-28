@@ -5681,5 +5681,59 @@
       "similarTestsTop5": "🔥 5 Tes Populer Terbaru",
       "popularTestsTop5": "🔥 5 Tes Populer Terbaru"
     }
+  },
+  "phase2ColorBlindTest": {
+    "startMessage": {
+      "line1": "Apakah merah yang Anda lihat sama dengan merah yang dilihat orang lain?",
+      "line2": "Sekitar 5.9% pria dan 0.4% wanita di negara kita memiliki defisiensi penglihatan warna (buta warna/kelemahan warna).",
+      "line3": "Terutama untuk kelemahan warna ringan, banyak orang hidup tanpa menyadarinya sampai dewasa.",
+      "line4": "Apakah Anda melihat dunia warna yang berbeda dari orang lain? Periksa sekarang.",
+      "line5": "※ Mohon tingkatkan kecerahan layar ke maksimum untuk pengujian yang akurat.",
+      "line6": "※ Tes ini tidak dapat menggantikan diagnosis medis.",
+      "line7": "Mulai Tes 👁️ Start Color Test ▶️"
+    },
+    "ui": {
+      "question": "Pertanyaan",
+      "selectAnswer": "Pilih angka yang Anda lihat",
+      "nothing": "Tidak terlihat",
+      "next": "Selanjutnya",
+      "finish": "Selesai",
+      "startTest": "Mulai Tes 👁️ Start Color Test ▶️",
+      "characteristics": "Karakteristik",
+      "recommendation": "Rekomendasi",
+      "shareResult": "Bagikan Hasil",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti Tes",
+      "similarTests": "Tes Serupa Lainnya"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi."
+    },
+    "shareMessages": {
+      "default": "Dunia yang saya lihat adalah {type}! 🎨 Angka berapa yang Anda lihat di pertanyaan 12?",
+      "kakao": "Dunia yang saya lihat adalah {type}! 🎨 Angka berapa yang Anda lihat di pertanyaan 12?",
+      "wechat": "Dunia yang saya lihat adalah {type}! 🎨 Angka berapa yang Anda lihat di pertanyaan 12?",
+      "whatsapp": "Dunia yang saya lihat adalah {type}! 🎨 Angka berapa yang Anda lihat di pertanyaan 12?",
+      "telegram": "Dunia yang saya lihat adalah {type}! 🎨 Angka berapa yang Anda lihat di pertanyaan 12?",
+      "line": "Dunia yang saya lihat adalah {type}! 🎨 Angka berapa yang Anda lihat di pertanyaan 12?",
+      "startDefault": "Warna Dunia Saya Apa? Tes Buta Warna/Defisiensi Warna 🎨",
+      "startKakao": "Warna Dunia Saya Apa? Tes Buta Warna/Defisiensi Warna 🎨",
+      "startWechat": "Warna Dunia Saya Apa? Tes Buta Warna/Defisiensi Warna 🎨",
+      "startWhatsapp": "Warna Dunia Saya Apa? Tes Buta Warna/Defisiensi Warna 🎨",
+      "startTelegram": "Warna Dunia Saya Apa? Tes Buta Warna/Defisiensi Warna 🎨",
+      "startLine": "Warna Dunia Saya Apa? Tes Buta Warna/Defisiensi Warna 🎨"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Rekomendasi Top 5 Tes Populer",
+      "popularTestsTop5": "🔥 Rekomendasi Top 5 Tes Populer"
+    }
   }
 }

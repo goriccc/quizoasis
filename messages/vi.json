@@ -5681,5 +5681,59 @@
       "similarTestsTop5": "🔥 Top 5 Bài kiểm tra phổ biến gần đây",
       "popularTestsTop5": "🔥 Top 5 Bài kiểm tra phổ biến gần đây"
     }
+  },
+  "phase2ColorBlindTest": {
+    "startMessage": {
+      "line1": "Màu đỏ bạn nhìn thấy có giống màu đỏ mà người khác nhìn thấy không?",
+      "line2": "Khoảng 5.9% nam giới và 0.4% phụ nữ ở nước ta có khiếm khuyết thị giác màu (mù màu/yếu màu).",
+      "line3": "Đặc biệt đối với trường hợp yếu màu nhẹ, nhiều người sống mà không biết cho đến khi trưởng thành.",
+      "line4": "Bạn có đang nhìn thấy một thế giới màu sắc khác với người khác không? Hãy kiểm tra ngay bây giờ.",
+      "line5": "※ Vui lòng tăng độ sáng màn hình lên tối đa để kiểm tra chính xác.",
+      "line6": "※ Bài kiểm tra này không thể thay thế chẩn đoán y tế.",
+      "line7": "Bắt đầu kiểm tra 👁️ Start Color Test ▶️"
+    },
+    "ui": {
+      "question": "Câu hỏi",
+      "selectAnswer": "Chọn số bạn nhìn thấy",
+      "nothing": "Không thấy gì",
+      "next": "Tiếp theo",
+      "finish": "Hoàn thành",
+      "startTest": "Bắt đầu kiểm tra 👁️ Start Color Test ▶️",
+      "characteristics": "Đặc điểm",
+      "recommendation": "Khuyến nghị",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài kiểm tra",
+      "similarTests": "Bài kiểm tra Tương tự Khác"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ."
+    },
+    "shareMessages": {
+      "default": "Thế giới tôi nhìn thấy là {type}! 🎨 Bạn nhìn thấy số nào ở câu hỏi 12?",
+      "kakao": "Thế giới tôi nhìn thấy là {type}! 🎨 Bạn nhìn thấy số nào ở câu hỏi 12?",
+      "wechat": "Thế giới tôi nhìn thấy là {type}! 🎨 Bạn nhìn thấy số nào ở câu hỏi 12?",
+      "whatsapp": "Thế giới tôi nhìn thấy là {type}! 🎨 Bạn nhìn thấy số nào ở câu hỏi 12?",
+      "telegram": "Thế giới tôi nhìn thấy là {type}! 🎨 Bạn nhìn thấy số nào ở câu hỏi 12?",
+      "line": "Thế giới tôi nhìn thấy là {type}! 🎨 Bạn nhìn thấy số nào ở câu hỏi 12?",
+      "startDefault": "Màu sắc thế giới của tôi là gì? Kiểm tra mù màu/chứng rối loạn sắc giác 🎨",
+      "startKakao": "Màu sắc thế giới của tôi là gì? Kiểm tra mù màu/chứng rối loạn sắc giác 🎨",
+      "startWechat": "Màu sắc thế giới của tôi là gì? Kiểm tra mù màu/chứng rối loạn sắc giác 🎨",
+      "startWhatsapp": "Màu sắc thế giới của tôi là gì? Kiểm tra mù màu/chứng rối loạn sắc giác 🎨",
+      "startTelegram": "Màu sắc thế giới của tôi là gì? Kiểm tra mù màu/chứng rối loạn sắc giác 🎨",
+      "startLine": "Màu sắc thế giới của tôi là gì? Kiểm tra mù màu/chứng rối loạn sắc giác 🎨"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất"
+    }
   }
 }

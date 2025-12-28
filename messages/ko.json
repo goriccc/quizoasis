@@ -5819,5 +5819,59 @@
       "similarTestsTop5": "🔥 요즘 인기 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase2ColorBlindTest": {
+    "startMessage": {
+      "line1": "당신이 보는 빨간색이, 남들에게도 빨간색일까요?",
+      "line2": "우리나라 남성의 약 5.9%, 여성의 약 0.4%가 색각 이상(색맹/색약)을 가지고 있다고 합니다.",
+      "line3": "특히 경미한 색약의 경우, 성인이 될 때까지 모르고 지내는 경우도 많습니다.",
+      "line4": "혹시 남들과 다른 색의 세상을 보고 있진 않나요? 지금 바로 확인해 보세요.",
+      "line5": "※ 정확한 검사를 위해 화면 밝기를 최대로 높여주세요.",
+      "line6": "※ 이 테스트는 의학적 진단을 대신할 수 없습니다.",
+      "line7": "테스트 시작하기 👁️ Start Color Test ▶️"
+    },
+    "ui": {
+      "question": "질문",
+      "selectAnswer": "보이는 숫자를 선택하세요",
+      "nothing": "보이지 않음",
+      "next": "다음",
+      "finish": "완료",
+      "startTest": "테스트 시작하기 👁️ Start Color Test ▶️",
+      "characteristics": "특징",
+      "recommendation": "추천",
+      "shareResult": "결과 공유하기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하기",
+      "similarTests": "유사한 다른 테스트"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요."
+    },
+    "shareMessages": {
+      "default": "내 눈에 보이는 세상은 {type}! 🎨 너는 12번 문제 숫자가 뭘로 보여?",
+      "kakao": "내 눈에 보이는 세상은 {type}! 🎨 너는 12번 문제 숫자가 뭘로 보여?",
+      "wechat": "내 눈에 보이는 세상은 {type}! 🎨 너는 12번 문제 숫자가 뭘로 보여?",
+      "whatsapp": "내 눈에 보이는 세상은 {type}! 🎨 너는 12번 문제 숫자가 뭘로 보여?",
+      "telegram": "내 눈에 보이는 세상은 {type}! 🎨 너는 12번 문제 숫자가 뭘로 보여?",
+      "line": "내 눈에 보이는 세상은 {type}! 🎨 너는 12번 문제 숫자가 뭘로 보여?",
+      "startDefault": "내 세상의 색깔은? 색맹/색약 정밀 테스트 🎨",
+      "startKakao": "내 세상의 색깔은? 색맹/색약 정밀 테스트 🎨",
+      "startWechat": "내 세상의 색깔은? 색맹/색약 정밀 테스트 🎨",
+      "startWhatsapp": "내 세상의 색깔은? 색맹/색약 정밀 테스트 🎨",
+      "startTelegram": "내 세상의 색깔은? 색맹/색약 정밀 테스트 🎨",
+      "startLine": "내 세상의 색깔은? 색맹/색약 정밀 테스트 🎨"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 요즘 인기 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }
