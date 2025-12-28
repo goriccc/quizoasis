@@ -70,6 +70,22 @@ export default function Phase2HearingAgeTestClient({
   const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
 
+  // Stop audio
+  const stopAudio = useCallback(() => {
+    if (oscillatorRef.current) {
+      try {
+        oscillatorRef.current.stop();
+      } catch (e) {
+        // Already stopped
+      }
+      oscillatorRef.current = null;
+    }
+    if (gainNodeRef.current) {
+      gainNodeRef.current = null;
+    }
+    setIsPlaying(false);
+  }, []);
+
   // Initialize Audio Context (lazy - will be created on first use)
   useEffect(() => {
     // Don't create AudioContext on mount - wait for user interaction
@@ -172,22 +188,6 @@ export default function Phase2HearingAgeTestClient({
       console.error('오디오 재생 실패. 브라우저의 오디오 설정을 확인하거나 페이지를 새로고침해주세요.');
     }
   }, [ensureAudioContextReady, stopAudio]);
-
-  // Stop audio
-  const stopAudio = useCallback(() => {
-    if (oscillatorRef.current) {
-      try {
-        oscillatorRef.current.stop();
-      } catch (e) {
-        // Already stopped
-      }
-      oscillatorRef.current = null;
-    }
-    if (gainNodeRef.current) {
-      gainNodeRef.current = null;
-    }
-    setIsPlaying(false);
-  }, []);
 
   // Start Game
   const handleStartGame = async () => {
