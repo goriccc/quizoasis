@@ -5716,5 +5716,59 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase2HearingAgeTest": {
+    "startMessage": {
+      "line1": "당신은 '모기 벨소리'를 들을 수 있나요?",
+      "line2": "사람의 청력은 20대 중반부터 노화가 시작되어 점점 고음(높은 주파수)을 듣지 못하게 됩니다.",
+      "line3": "10대에게는 소음처럼 들리는 소리가 40대에게는 아무 소리도 안 나는 침묵일 수 있죠.",
+      "line4": "지금 스피커 볼륨을 50% 이상으로 높이고 내 귀의 신체 나이를 측정해 보세요.",
+      "line5": "※ 이어폰/헤드폰 착용을 권장합니다.",
+      "line6": "측정 시작하기 🎧"
+    },
+    "game": {
+      "volumeCheck": "이 소리가 잘 들리나요?",
+      "volumeCheckDesc": "볼륨을 확인하고 [확인] 버튼을 눌러주세요",
+      "listen": "{frequency}Hz 소리를 들어보세요",
+      "listenDesc": "들리면 [들려요] 안들리면 [안들려요]를 선택하세요",
+      "confirm": "확인",
+      "canHear": "들려요",
+      "cannotHear": "안들려요",
+      "replay": "다시 듣기",
+      "step": "단계"
+    },
+    "ui": {
+      "hearingAge": "📊 당신의 청력",
+      "recommendation": "⭐ 추천",
+      "shareResult": "결과 공유하기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "adsenseTitle": "광고",
+      "similarTests": "유사한 다른 테스트",
+      "goToTest": "테스트 하기",
+      "step": "단계"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요."
+    },
+    "shareMessages": {
+      "default": "내 귀 나이는 {age}! 🎧 19,000Hz 들리는 사람 있음? 이거 들리면 10대 인정.",
+      "startDefault": "내 귀 나이는 몇 살? 가청 주파수 테스트 🎧",
+      "startKakao": "내 귀 나이는 몇 살? 가청 주파수 테스트 🎧",
+      "startWechat": "내 귀 나이는 몇 살? 가청 주파수 테스트 🎧",
+      "startWhatsapp": "내 귀 나이는 몇 살? 가청 주파수 테스트 🎧",
+      "startTelegram": "내 귀 나이는 몇 살? 가청 주파수 테스트 🎧",
+      "startLine": "내 귀 나이는 몇 살? 가청 주파수 테스트 🎧"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 요즘 인기 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

@@ -5566,5 +5566,59 @@
       "similarTestsTop5": "🎯 おすすめの類似テスト Top 5",
       "popularTestsTop5": "🔥 人気のテスト Top 5"
     }
+  },
+  "phase2HearingAgeTest": {
+    "startMessage": {
+      "line1": "「蚊のベルの音」が聞こえますか？",
+      "line2": "人間の聴力は20代半ばから老化が始まり、徐々に高音（高い周波数）が聞こえなくなります。",
+      "line3": "10代には騒音のように聞こえる音が、40代には何も聞こえない静寂になることがあります。",
+      "line4": "今すぐスピーカーの音量を50%以上に上げて、あなたの耳の年齢を測定してみてください。",
+      "line5": "※ イヤホン/ヘッドホンの着用を推奨します。",
+      "line6": "測定開始 🎧"
+    },
+    "game": {
+      "volumeCheck": "この音がよく聞こえますか？",
+      "volumeCheckDesc": "音量を確認して[確認]ボタンを押してください",
+      "listen": "{frequency}Hzの音を聞いてください",
+      "listenDesc": "聞こえる場合は[聞こえる]、聞こえない場合は[聞こえない]を選択してください",
+      "confirm": "確認",
+      "canHear": "聞こえる",
+      "cannotHear": "聞こえない",
+      "replay": "もう一度聞く",
+      "step": "ステップ"
+    },
+    "ui": {
+      "hearingAge": "📊 あなたの聴力",
+      "recommendation": "⭐ おすすめ",
+      "shareResult": "結果を共有",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "広告",
+      "similarTests": "類似のテスト",
+      "goToTest": "テストを受ける",
+      "step": "ステップ"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。"
+    },
+    "shareMessages": {
+      "default": "私の耳年齢は{age}！🎧 19,000Hzが聞こえる人はいますか？これが聞こえたら10代認定。",
+      "startDefault": "私の耳年齢は何歳？可聴周波数テスト 🎧",
+      "startKakao": "私の耳年齢は何歳？可聴周波数テスト 🎧",
+      "startWechat": "私の耳年齢は何歳？可聴周波数テスト 🎧",
+      "startWhatsapp": "私の耳年齢は何歳？可聴周波数テスト 🎧",
+      "startTelegram": "私の耳年齢は何歳？可聴周波数テスト 🎧",
+      "startLine": "私の耳年齢は何歳？可聴周波数テスト 🎧"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 最近人気のテスト トップ5",
+      "popularTestsTop5": "🔥 最近人気のテスト トップ5"
+    }
   }
 }

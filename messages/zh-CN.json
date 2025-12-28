@@ -5578,5 +5578,59 @@
       "similarTestsTop5": "🎯 推荐的前5个类似测试",
       "popularTestsTop5": "🔥 推荐的前5个热门测试"
     }
+  },
+  "phase2HearingAgeTest": {
+    "startMessage": {
+      "line1": "你能听到「蚊子铃声」吗？",
+      "line2": "人的听力从20多岁中期开始老化，逐渐听不到高音（高频率）。",
+      "line3": "对十几岁的人来说像噪音的声音，对40多岁的人来说可能完全是寂静。",
+      "line4": "现在将扬声器音量调至50%以上，测量你的耳朵年龄。",
+      "line5": "※ 建议使用耳机/头戴式耳机。",
+      "line6": "开始测量 🎧"
+    },
+    "game": {
+      "volumeCheck": "这个声音听清楚吗？",
+      "volumeCheckDesc": "检查音量并按[确认]",
+      "listen": "听{frequency}Hz的声音",
+      "listenDesc": "听到选择[听得到]，听不到选择[听不到]",
+      "confirm": "确认",
+      "canHear": "听得到",
+      "cannotHear": "听不到",
+      "replay": "重新播放",
+      "step": "步骤"
+    },
+    "ui": {
+      "hearingAge": "📊 你的听力",
+      "recommendation": "⭐ 推荐",
+      "shareResult": "分享结果",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "广告",
+      "similarTests": "类似测试",
+      "goToTest": "开始测试",
+      "step": "步骤"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。"
+    },
+    "shareMessages": {
+      "default": "我的耳朵年龄是{age}！🎧 有人能听到19,000Hz吗？如果听到这个，你就是十几岁。",
+      "startDefault": "我的耳朵几岁？可听频率测试 🎧",
+      "startKakao": "我的耳朵几岁？可听频率测试 🎧",
+      "startWechat": "我的耳朵几岁？可听频率测试 🎧",
+      "startWhatsapp": "我的耳朵几岁？可听频率测试 🎧",
+      "startTelegram": "我的耳朵几岁？可听频率测试 🎧",
+      "startLine": "我的耳朵几岁？可听频率测试 🎧"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 热门测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
   }
 }

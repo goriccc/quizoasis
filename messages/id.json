@@ -5578,5 +5578,59 @@
       "similarTestsTop5": "🎯 5 Rekomendasi Tes Serupa Teratas",
       "popularTestsTop5": "🔥 5 Rekomendasi Tes Populer Teratas"
     }
+  },
+  "phase2HearingAgeTest": {
+    "startMessage": {
+      "line1": "Bisakah Anda mendengar 'ringtone nyamuk'?",
+      "line2": "Pendengaran manusia mulai menua dari pertengahan usia 20-an, secara bertahap kehilangan kemampuan mendengar frekuensi tinggi.",
+      "line3": "Suara yang terdengar seperti kebisingan bagi remaja bisa menjadi keheningan total bagi orang yang berusia 40-an.",
+      "line4": "Sekarang naikkan volume speaker hingga minimal 50% dan ukur usia biologis telinga Anda.",
+      "line5": "※ Disarankan menggunakan earphone/headphone.",
+      "line6": "Mulai pengukuran 🎧"
+    },
+    "game": {
+      "volumeCheck": "Bisakah Anda mendengar suara ini dengan jelas?",
+      "volumeCheckDesc": "Periksa volume Anda dan tekan [Konfirmasi]",
+      "listen": "Dengarkan suara {frequency}Hz",
+      "listenDesc": "Pilih [Bisa mendengar] jika Anda mendengar, [Tidak bisa mendengar] jika tidak",
+      "confirm": "Konfirmasi",
+      "canHear": "Bisa mendengar",
+      "cannotHear": "Tidak bisa mendengar",
+      "replay": "Putar ulang",
+      "step": "Langkah"
+    },
+    "ui": {
+      "hearingAge": "📊 Pendengaran Anda",
+      "recommendation": "⭐ Rekomendasi",
+      "shareResult": "Bagikan Hasil",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Iklan",
+      "similarTests": "Tes Serupa",
+      "goToTest": "Ikuti Tes",
+      "step": "Langkah"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi."
+    },
+    "shareMessages": {
+      "default": "Usia pendengaran saya adalah {age}! 🎧 Ada yang bisa mendengar 19,000Hz? Jika Anda bisa mendengar ini, Anda adalah remaja.",
+      "startDefault": "Berapa umur telinga saya? Tes frekuensi audibel 🎧",
+      "startKakao": "Berapa umur telinga saya? Tes frekuensi audibel 🎧",
+      "startWechat": "Berapa umur telinga saya? Tes frekuensi audibel 🎧",
+      "startWhatsapp": "Berapa umur telinga saya? Tes frekuensi audibel 🎧",
+      "startTelegram": "Berapa umur telinga saya? Tes frekuensi audibel 🎧",
+      "startLine": "Berapa umur telinga saya? Tes frekuensi audibel 🎧"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Top 5 Tes Populer",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
   }
 }

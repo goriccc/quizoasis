@@ -5587,5 +5587,59 @@
       "similarTestsTop5": "🎯 Top 5 Similar Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
+  },
+  "phase2HearingAgeTest": {
+    "startMessage": {
+      "line1": "Can you hear the 'mosquito ringtone'?",
+      "line2": "Human hearing begins to age from the mid-20s, gradually losing the ability to hear high frequencies.",
+      "line3": "A sound that seems like noise to teenagers can be complete silence to people in their 40s.",
+      "line4": "Turn up your speaker volume to at least 50% and measure your ear's biological age.",
+      "line5": "※ Headphones/earphones are recommended.",
+      "line6": "Start measurement 🎧"
+    },
+    "game": {
+      "volumeCheck": "Can you hear this sound clearly?",
+      "volumeCheckDesc": "Check your volume and press [Confirm]",
+      "listen": "Listen to {frequency}Hz sound",
+      "listenDesc": "Select [Can hear] if you hear it, [Cannot hear] if you don't",
+      "confirm": "Confirm",
+      "canHear": "Can hear",
+      "cannotHear": "Cannot hear",
+      "replay": "Replay",
+      "step": "Step"
+    },
+    "ui": {
+      "hearingAge": "📊 Your Hearing",
+      "recommendation": "⭐ Recommendation",
+      "shareResult": "Share Result",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Advertisement",
+      "similarTests": "Similar Tests",
+      "goToTest": "Take Test",
+      "step": "Step"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "wechatCopy": "Link copied! Paste in WeChat to share."
+    },
+    "shareMessages": {
+      "default": "My hearing age is {age}! 🎧 Anyone can hear 19,000Hz? If you can hear this, you're a teenager.",
+      "startDefault": "How old are my ears? Audible frequency test 🎧",
+      "startKakao": "How old are my ears? Audible frequency test 🎧",
+      "startWechat": "How old are my ears? Audible frequency test 🎧",
+      "startWhatsapp": "How old are my ears? Audible frequency test 🎧",
+      "startTelegram": "How old are my ears? Audible frequency test 🎧",
+      "startLine": "How old are my ears? Audible frequency test 🎧"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Top 5 Popular Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
   }
 }

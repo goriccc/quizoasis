@@ -5578,5 +5578,59 @@
       "similarTestsTop5": "🎯 Top 5 bài kiểm tra tương tự",
       "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến"
     }
+  },
+  "phase2HearingAgeTest": {
+    "startMessage": {
+      "line1": "Bạn có nghe thấy 'chuông muỗi' không?",
+      "line2": "Thính giác của con người bắt đầu lão hóa từ giữa độ tuổi 20, dần dần mất khả năng nghe tần số cao.",
+      "line3": "Một âm thanh nghe như tiếng ồn đối với thanh thiếu niên có thể là sự im lặng hoàn toàn đối với những người ở độ tuổi 40.",
+      "line4": "Bây giờ hãy tăng âm lượng loa lên ít nhất 50% và đo tuổi sinh học của tai bạn.",
+      "line5": "※ Khuyến nghị sử dụng tai nghe/headphone.",
+      "line6": "Bắt đầu đo lường 🎧"
+    },
+    "game": {
+      "volumeCheck": "Bạn có nghe rõ âm thanh này không?",
+      "volumeCheckDesc": "Kiểm tra âm lượng và nhấn [Xác nhận]",
+      "listen": "Nghe âm thanh {frequency}Hz",
+      "listenDesc": "Chọn [Nghe được] nếu bạn nghe thấy, [Không nghe được] nếu bạn không nghe thấy",
+      "confirm": "Xác nhận",
+      "canHear": "Nghe được",
+      "cannotHear": "Không nghe được",
+      "replay": "Nghe lại",
+      "step": "Bước"
+    },
+    "ui": {
+      "hearingAge": "📊 Thính giác của bạn",
+      "recommendation": "⭐ Khuyến nghị",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Quảng cáo",
+      "similarTests": "Các bài kiểm tra tương tự",
+      "goToTest": "Làm bài kiểm tra",
+      "step": "Bước"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán trong WeChat để chia sẻ."
+    },
+    "shareMessages": {
+      "default": "Tuổi thính giác của tôi là {age}! 🎧 Ai có thể nghe 19,000Hz không? Nếu bạn nghe được điều này, bạn là thanh thiếu niên.",
+      "startDefault": "Tai tôi bao nhiêu tuổi? Kiểm tra tần số nghe được 🎧",
+      "startKakao": "Tai tôi bao nhiêu tuổi? Kiểm tra tần số nghe được 🎧",
+      "startWechat": "Tai tôi bao nhiêu tuổi? Kiểm tra tần số nghe được 🎧",
+      "startWhatsapp": "Tai tôi bao nhiêu tuổi? Kiểm tra tần số nghe được 🎧",
+      "startTelegram": "Tai tôi bao nhiêu tuổi? Kiểm tra tần số nghe được 🎧",
+      "startLine": "Tai tôi bao nhiêu tuổi? Kiểm tra tần số nghe được 🎧"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến",
+      "popularTestsTop5": "🔥 Top 5 Bài kiểm tra Phổ biến"
+    }
   }
 }

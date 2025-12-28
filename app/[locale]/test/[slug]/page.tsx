@@ -265,6 +265,9 @@ const Phase2LazinessLevelTestClient = dynamic(() => import('@/components/Phase2L
 const Phase2ColorSurvivalTestClient = dynamic(() => import('@/components/Phase2ColorSurvivalTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
+const Phase2HearingAgeTestClient = dynamic(() => import('@/components/Phase2HearingAgeTestClient'), {
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
+});
 const SoulDrinkTestClient = dynamic(() => import('@/components/SoulDrinkTestClient'), {
   loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div></div>
 });
@@ -2216,6 +2219,63 @@ export default async function TestPage({ params }: Props) {
 
     return (
       <Phase2ReflexTestClient
+        locale={locale}
+        slug={test.slug}
+        title={title}
+        description={description}
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+        isLatestTest={isLatestTest}
+        badgeType={test.badge_type || null}
+      />
+    );
+  }
+
+  // 내 귀 나이는 몇 살? (가청 주파수 테스트)
+  if (slug === 'phase2_hearing_age_test') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase2_hearing_age_test',
+      title: {
+        ko: "내 귀 나이는 몇 살? (가청 주파수 테스트)",
+        en: "How Old Are My Ears? (Audible Frequency Test)",
+        ja: "私の耳年齢は何歳？（可聴周波数テスト）",
+        "zh-CN": "我的耳朵几岁？（可听频率测试）",
+        "zh-TW": "我的耳朵幾歲？（可聽頻率測試）",
+        vi: "Tai tôi bao nhiêu tuổi? (Kiểm tra tần số nghe được)",
+        id: "Berapa Umur Telinga Saya? (Tes Frekuensi Audibel)"
+      },
+      description: {
+        ko: "당신은 '모기 벨소리'를 들을 수 있나요? 청력 나이를 측정해보세요.",
+        en: "Can you hear the 'mosquito ringtone'? Measure your hearing age.",
+        ja: "「蚊のベルの音」が聞こえますか？聴力年齢を測定してみてください。",
+        "zh-CN": "你能听到「蚊子铃声」吗？测量你的听力年龄。",
+        "zh-TW": "你能聽到「蚊子鈴聲」嗎？測量你的聽力年齡。",
+        vi: "Bạn có nghe thấy 'chuông muỗi' không? Đo tuổi thính giác của bạn.",
+        id: "Bisakah Anda mendengar 'ringtone nyamuk'? Ukur usia pendengaran Anda."
+      },
+      thumbnail: 'phase2_test_160_hearing_age.jpg',
+      type: 'game',
+      category: 'capability',
+      play_count: 0,
+      tags: {
+        ko: ["챌린지", "게임"],
+        en: ["Challenge", "Game"],
+        ja: ["チャレンジ", "ゲーム"],
+        "zh-CN": ["挑战", "游戏"],
+        "zh-TW": ["挑戰", "遊戲"],
+        vi: ["Thử thách", "Trò chơi"],
+        id: ["Tantangan", "Game"]
+      }
+    };
+
+    const title = typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title;
+    const description = typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description;
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <Phase2HearingAgeTestClient
         locale={locale}
         slug={test.slug}
         title={title}
