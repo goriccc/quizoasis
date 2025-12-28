@@ -5735,5 +5735,54 @@
       "similarTestsTop5": "🔥 Rekomendasi Top 5 Tes Populer",
       "popularTestsTop5": "🔥 Rekomendasi Top 5 Tes Populer"
     }
+  },
+  "phase2GlobalTypingTest": {
+    "startMessage": {
+      "line1": "Keterampilan mengetik Anda - nyata atau palsu?",
+      "line2": "Siapa pun bisa mengetik satu kalimat dengan cepat.",
+      "line3": "Tetapi mempertahankan kecepatan dalam paragraf panjang itu sulit.",
+      "line4": "Dari sapaan hingga peribahasa, kutipan, dan sastra. Anda harus melewati semua 5 putaran. Berapa 'kecepatan rata-rata' Anda yang benar-benar bahkan diakui oleh penduduk lokal?",
+      "startButton": "Mulai Tes 5 Ronde 🖐️"
+    },
+    "ui": {
+      "round": "Ronde",
+      "typeSentence": "Ketik kalimat di bawah ini dengan akurat",
+      "startTyping": "Mulai mengetik di sini...",
+      "progress": "Kemajuan",
+      "averageCPM": "Rata-rata CPM",
+      "cpm": "CPM",
+      "errorPenalty": "Penalti Kesalahan",
+      "characteristics": "Karakteristik",
+      "recommendation": "Rekomendasi",
+      "shareResult": "Bagikan Hasil",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Iklan",
+      "similarTests": "Tes Serupa Lainnya"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat."
+    },
+    "shareMessages": {
+      "default": "Kecepatan mengetik rata-rata {language} saya adalah {cpm} CPM! Grade: {type} ⌨️ Rata-rata 5 putaran. Coba juga?",
+      "kakao": "Kecepatan mengetik rata-rata {language} saya adalah {cpm} CPM! Grade: {type} ⌨️ Rata-rata 5 putaran. Coba juga?",
+      "startDefault": "Coba tes Raja Mengetik Global! Verifikasi keterampilan 5 ronde ⌨️",
+      "startKakao": "Coba tes Raja Mengetik Global! Verifikasi keterampilan 5 ronde ⌨️",
+      "startWechat": "Coba tes Raja Mengetik Global! Verifikasi keterampilan 5 ronde ⌨️",
+      "startWhatsapp": "Coba tes Raja Mengetik Global! Verifikasi keterampilan 5 ronde ⌨️",
+      "startTelegram": "Coba tes Raja Mengetik Global! Verifikasi keterampilan 5 ronde ⌨️",
+      "startLine": "Coba tes Raja Mengetik Global! Verifikasi keterampilan 5 ronde ⌨️"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
+      "popularTestsTop5": "🔥 Tes Populer Top 5"
+    }
   }
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,10 +10,14 @@ import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
-import { Phase2ColorBlindResult, calculatePhase2ColorBlindResult, COLOR_BLIND_QUESTIONS } from '@/lib/phase2ColorBlindTestData';
-import { generateIshiharaImage, getIshiharaConfig } from '@/lib/ishiharaImageGenerator';
+import { 
+  Phase2GlobalTypingResult, 
+  calculatePhase2GlobalTypingResult, 
+  PHASE2_GLOBAL_TYPING_ROUNDS,
+  countCharacters 
+} from '@/lib/phase2GlobalTypingData';
 
-interface Phase2ColorBlindTestClientProps {
+interface Phase2GlobalTypingTestClientProps {
   locale: string;
   slug: string;
   title: string;
@@ -32,7 +36,19 @@ interface Phase2ColorBlindTestClientProps {
   badgeType?: 'popular' | 'hot' | null;
 }
 
-export default function Phase2ColorBlindTestClient({
+interface RoundResult {
+  round: number;
+  sentence: string;
+  userInput: string;
+  startTime: number;
+  endTime: number;
+  timeSeconds: number;
+  characterCount: number;
+  cpm: number;
+  errorCount: number;
+}
+
+export default function Phase2GlobalTypingTestClient({
   locale,
   slug,
   title,
@@ -42,23 +58,25 @@ export default function Phase2ColorBlindTestClient({
   similarTests = [],
   isLatestTest = false,
   badgeType = null
-}: Phase2ColorBlindTestClientProps) {
-  const t = useTranslations('phase2ColorBlindTest');
+}: Phase2GlobalTypingTestClientProps) {
+  const t = useTranslations('phase2GlobalTypingTest');
   const tGlobal = useTranslations();
   
-  // Test State
+  // Game State
   const [started, setStarted] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [answers, setAnswers] = useState<{ [questionId: number]: string }>({});
-  const [selectedAnswer, setSelectedAnswer] = useState<string>('');
-  const [imageDataUrls, setImageDataUrls] = useState<{ [questionId: number]: string }>({});
-  const canvasRefs = useRef<{ [questionId: number]: HTMLCanvasElement | null }>({});
+  const [currentRound, setCurrentRound] = useState(0); // 0-4 (5 rounds)
+  const [userInput, setUserInput] = useState('');
+  const [roundResults, setRoundResults] = useState<RoundResult[]>([]);
+  const [roundStartTime, setRoundStartTime] = useState<number | null>(null);
+  const [isRoundComplete, setIsRoundComplete] = useState(false);
   
   // Result Flow State
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [showResult, setShowResult] = useState(false);
-  const [result, setResult] = useState<Phase2ColorBlindResult | null>(null);
+  const [result, setResult] = useState<Phase2GlobalTypingResult | null>(null);
+  const [averageCPM, setAverageCPM] = useState(0);
+  const [totalErrors, setTotalErrors] = useState(0);
   
   // Others
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
@@ -67,104 +85,166 @@ export default function Phase2ColorBlindTestClient({
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
   const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
+  
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  // Generate Ishihara images when component mounts or question changes
-  useEffect(() => {
-    const generateImages = () => {
-      const newDataUrls: { [questionId: number]: string } = {};
-      
-      COLOR_BLIND_QUESTIONS.forEach((question) => {
-        try {
-          const canvas = document.createElement('canvas');
-          const config = getIshiharaConfig(question.id);
-          
-          // 첫 번째 문제 디버깅
-          if (question.id === 1) {
-            console.log('Generating image for question 1:', config);
-          }
-          
-          generateIshiharaImage(canvas, config);
-          const dataUrl = canvas.toDataURL('image/png');
-          
-          if (dataUrl && dataUrl !== 'data:,') {
-            newDataUrls[question.id] = dataUrl;
-            canvasRefs.current[question.id] = canvas;
-            
-            // 첫 번째 문제 디버깅
-            if (question.id === 1) {
-              console.log('Successfully generated image for question 1, dataUrl length:', dataUrl.length);
-            }
-          } else {
-            console.error(`Failed to generate image for question ${question.id}: dataUrl is empty or invalid`);
-            // 재시도
-            setTimeout(() => {
-              const retryCanvas = document.createElement('canvas');
-              generateIshiharaImage(retryCanvas, config);
-              const retryDataUrl = retryCanvas.toDataURL('image/png');
-              if (retryDataUrl && retryDataUrl !== 'data:,') {
-                setImageDataUrls(prev => ({ ...prev, [question.id]: retryDataUrl }));
-                canvasRefs.current[question.id] = retryCanvas;
-              }
-            }, 100);
-          }
-        } catch (error) {
-          console.error(`Error generating image for question ${question.id}:`, error);
-        }
-      });
-      
-      if (Object.keys(newDataUrls).length > 0) {
-        setImageDataUrls(newDataUrls);
+  // Get current round sentence
+  const getCurrentSentence = (): string => {
+    if (currentRound < 0 || currentRound >= PHASE2_GLOBAL_TYPING_ROUNDS.length) return '';
+    const roundData = PHASE2_GLOBAL_TYPING_ROUNDS[currentRound];
+    // Data uses 'zh' for simplified Chinese, 'zh-TW' for traditional
+    const dataLocale = locale === 'zh-CN' ? 'zh' : locale === 'zh-TW' ? 'zh-TW' : locale;
+    return roundData.sentence[dataLocale as keyof typeof roundData.sentence] || roundData.sentence.ko;
+  };
+
+  // Start new round
+  const startRound = useCallback(() => {
+    setUserInput('');
+    setIsRoundComplete(false);
+    setRoundStartTime(Date.now());
+    // Focus input after a short delay
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 100);
+  }, []);
+
+  // Handle input change
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newInput = e.target.value;
+    setUserInput(newInput);
+    
+    const currentSentence = getCurrentSentence();
+    
+    // Check if round is complete
+    if (newInput === currentSentence) {
+      completeRound();
+    }
+  };
+
+  // Complete current round
+  const completeRound = () => {
+    if (!roundStartTime) return;
+    
+    const currentSentence = getCurrentSentence();
+    const endTime = Date.now();
+    const timeSeconds = (endTime - roundStartTime) / 1000;
+    // For character counting, zh-CN should be treated as zh (CJK)
+    const countLocale = locale === 'zh-CN' ? 'zh' : locale;
+    const characterCount = countCharacters(currentSentence, countLocale);
+    const cpm = timeSeconds > 0 ? Math.round((characterCount / timeSeconds) * 60) : 0;
+    
+    // Debug logging for character count
+    console.log(`📊 Round ${currentRound + 1} - Character count:`, {
+      sentence: currentSentence.substring(0, 20) + '...',
+      locale,
+      countLocale,
+      characterCount,
+      textLength: currentSentence.length,
+      timeSeconds: timeSeconds.toFixed(2),
+      cpm
+    });
+    
+    // Calculate error count (simple comparison)
+    let errorCount = 0;
+    const minLength = Math.min(userInput.length, currentSentence.length);
+    for (let i = 0; i < minLength; i++) {
+      if (userInput[i] !== currentSentence[i]) {
+        errorCount++;
       }
+    }
+    errorCount += Math.abs(userInput.length - currentSentence.length);
+    
+    const roundResult: RoundResult = {
+      round: currentRound + 1,
+      sentence: currentSentence,
+      userInput,
+      startTime: roundStartTime,
+      endTime,
+      timeSeconds,
+      characterCount,
+      cpm,
+      errorCount
     };
-
-    // 컴포넌트 마운트 시 또는 started가 true일 때 이미지 생성
-    if (typeof window !== 'undefined') {
-      generateImages();
-    }
-  }, [started]);
-
-  // Handle Test Completion -> Loading -> Popup -> Result
-  useEffect(() => {
-    if (currentQuestionIndex >= COLOR_BLIND_QUESTIONS.length && !result) {
-      // Calculate Result
-      const finalResult = calculatePhase2ColorBlindResult(answers);
-      setResult(finalResult);
-      
-      // Start Loading Sequence
-      setShowLoadingSpinner(true);
-      
-      // Load products for result
-      if (locale !== 'ko') {
-        const keywords = ['eye care', 'color vision test', 'health supplements'];
-        const keyword = keywords[Math.floor(Math.random() * keywords.length)];
-        searchAliExpressProducts(keyword, 4, locale).then(setAliProducts).catch(console.error);
+    
+    const newRoundResults = [...roundResults, roundResult];
+    setRoundResults(newRoundResults);
+    setIsRoundComplete(true);
+    
+    // Move to next round after short delay
+    setTimeout(() => {
+      if (currentRound < PHASE2_GLOBAL_TYPING_ROUNDS.length - 1) {
+        setCurrentRound(prev => prev + 1);
       } else {
-        searchAliExpressProducts('trending', 4, locale).then(setAliProducts).catch(console.error);
+        // All rounds complete - calculate with all results
+        finishTestWithResults(newRoundResults);
       }
+    }, 500);
+  };
+
+  // Finish test and calculate result
+  const finishTestWithResults = (allResults: RoundResult[]) => {
+    // Calculate average CPM
+    const totalCPM = allResults.reduce((sum, r) => sum + r.cpm, 0);
+    const avgCPM = allResults.length > 0 ? Math.round(totalCPM / allResults.length) : 0;
+    
+    // Apply error penalty (오타 개수 × 5타 차감)
+    const totalErrorPenalty = allResults.reduce((sum, r) => sum + r.errorCount, 0) * 5;
+    const finalCPM = Math.max(0, avgCPM - totalErrorPenalty);
+    
+    setAverageCPM(finalCPM);
+    setTotalErrors(allResults.reduce((sum, r) => sum + r.errorCount, 0));
+    
+    // Calculate result
+    const finalResult = calculatePhase2GlobalTypingResult(finalCPM, locale);
+    setResult(finalResult);
+    
+    // Start loading sequence
+    setShowLoadingSpinner(true);
+    
+    // Load products for result
+    if (locale !== 'ko') {
+      const keywords = ['keyboard', 'typing tools', 'gaming accessories'];
+      const keyword = keywords[Math.floor(Math.random() * keywords.length)];
+      searchAliExpressProducts(keyword, 4, locale).then(setAliProducts).catch(console.error);
+    } else {
+      searchAliExpressProducts('trending', 4, locale).then(setAliProducts).catch(console.error);
     }
-  }, [currentQuestionIndex, answers, result, locale]);
+  };
+
+  // Start new round when currentRound changes
+  useEffect(() => {
+    if (started && currentRound >= 0 && currentRound < PHASE2_GLOBAL_TYPING_ROUNDS.length) {
+      startRound();
+    }
+  }, [started, currentRound, startRound]);
+
+  // Note: Test completion is handled in completeRound() via finishTestWithResults()
 
   // Loading Timer -> Popup
   useEffect(() => {
-    if (showLoadingSpinner) {
+    if (showLoadingSpinner && result) {
       const timer = setTimeout(() => {
         setShowLoadingSpinner(false);
         setShowResultPopup(true);
       }, 3000);
       return () => clearTimeout(timer);
     }
-  }, [showLoadingSpinner]);
+  }, [showLoadingSpinner, result]);
 
-  // Start Test
-  const handleStartTest = () => {
+  // Start Game
+  const handleStartGame = () => {
     setStarted(true);
-    setCurrentQuestionIndex(0);
-    setAnswers({});
-    setSelectedAnswer('');
+    setCurrentRound(0);
+    setUserInput('');
+    setRoundResults([]);
+    setRoundStartTime(null);
+    setIsRoundComplete(false);
     setShowLoadingSpinner(false);
     setShowResultPopup(false);
     setShowResult(false);
     setResult(null);
+    setAverageCPM(0);
+    setTotalErrors(0);
     
     // 즉시 맨 위로 스크롤
     window.scrollTo(0, 0);
@@ -180,41 +260,19 @@ export default function Phase2ColorBlindTestClient({
     }
   };
 
-  // Handle Answer Selection - 자동으로 다음 질문으로 이동
-  const handleAnswerSelect = (answer: string) => {
-    setSelectedAnswer(answer);
-    
-    // 현재 질문에 답변 저장
-    const currentQuestion = COLOR_BLIND_QUESTIONS[currentQuestionIndex];
-    setAnswers(prev => ({
-      ...prev,
-      [currentQuestion.id]: answer
-    }));
-    
-    // 약간의 딜레이 후 자동으로 다음 질문으로 이동 (선택 효과 표시를 위해)
-    setTimeout(() => {
-      if (currentQuestionIndex < COLOR_BLIND_QUESTIONS.length - 1) {
-        setCurrentQuestionIndex(prev => prev + 1);
-        setSelectedAnswer('');
-        // 다음 질문으로 스크롤
-        window.scrollTo(0, 0);
-      } else {
-        // Last question, will trigger result calculation
-        setCurrentQuestionIndex(prev => prev + 1);
-        window.scrollTo(0, 0);
-      }
-    }, 300); // 300ms 딜레이로 선택 효과 표시
-  };
-
   // Retake
   const handleRetake = () => {
     setStarted(false);
-    setCurrentQuestionIndex(0);
-    setAnswers({});
-    setSelectedAnswer('');
+    setCurrentRound(0);
+    setUserInput('');
+    setRoundResults([]);
+    setRoundStartTime(null);
+    setIsRoundComplete(false);
     setShowResult(false);
     setShowResultPopup(false);
     setResult(null);
+    setAverageCPM(0);
+    setTotalErrors(0);
     window.scrollTo(0, 0);
   };
   
@@ -235,36 +293,57 @@ export default function Phase2ColorBlindTestClient({
         setLatestTestSlugs(slugs);
 
         // Similar Tests Logic
-        const currentTest = allTests.find((t: any) => t.slug === slug);
-        let currentTestTags: string[] = [];
+        let currentTest = allTests.find((t: any) => t.slug === slug);
         
-        if (currentTest && typeof currentTest.tags === 'object') {
-          if (Array.isArray(currentTest.tags)) {
-            currentTestTags = currentTest.tags;
-          } else {
-            // Handle locale-specific tags
-            currentTestTags = currentTest.tags[locale] || currentTest.tags['zh-CN'] || currentTest.tags.ko || [];
+        // If current test not found in DB, use fallback tags
+        let currentTestTags: string[] = [];
+        if (currentTest) {
+          currentTestTags = typeof currentTest.tags === 'object' 
+            ? (Array.isArray(currentTest.tags) ? currentTest.tags : (currentTest.tags[locale] || currentTest.tags.ko || []))
+            : [];
+        } else {
+          // Fallback: Use default tags for phase2_global_typing_test
+          // Tags: ['챌린지', '게임'] for ko, ['Challenge', 'Game'] for others
+          if (slug === 'phase2_global_typing_test') {
+            currentTestTags = locale === 'ko' 
+              ? ['챌린지', '게임']
+              : locale === 'en' 
+                ? ['Challenge', 'Game']
+                : locale === 'ja'
+                  ? ['チャレンジ', 'ゲーム']
+                  : locale === 'zh-CN'
+                    ? ['挑战', '游戏']
+                    : locale === 'zh-TW'
+                      ? ['挑戰', '遊戲']
+                      : locale === 'vi'
+                        ? ['Thử thách', 'Trò chơi']
+                        : ['Tantangan', 'Game'];
           }
         }
-        
-        // Fallback tags if empty
-        if (!currentTestTags || currentTestTags.length === 0) {
-          currentTestTags = ['챌린지', '게임'];
-        }
+
+        // Debug logging
+        console.log('🔍 Phase2GlobalTypingTest - Loading similar tests:', {
+          slug,
+          currentTestFound: !!currentTest,
+          currentTestTags,
+          allTestsCount: allTests.length,
+          allTestSlugs: allTests.slice(0, 10).map((t: any) => t.slug) // First 10 for debugging
+        });
 
         const similarTestsList = allTests
           .filter((t: any) => t.slug !== slug)
           .filter((t: any) => {
-            let otherTestTags: string[] = [];
-            if (typeof t.tags === 'object') {
-              if (Array.isArray(t.tags)) {
-                otherTestTags = t.tags;
-              } else {
-                otherTestTags = t.tags[locale] || t.tags['zh-CN'] || t.tags.ko || [];
-              }
-            }
-            return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                   currentTestTags.some((tag: string) => otherTestTags.includes(tag));
+             const otherTestTags = typeof t.tags === 'object' 
+              ? (Array.isArray(t.tags) ? t.tags : (t.tags[locale] || t.tags.ko || []))
+              : [];
+             const hasMatchingTag = Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
+                    currentTestTags.some((tag: string) => otherTestTags.includes(tag));
+             
+             if (hasMatchingTag) {
+               console.log('✅ Similar test found:', t.slug, 'tags:', otherTestTags);
+             }
+             
+             return hasMatchingTag;
           })
           .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
           .slice(0, 5)
@@ -276,6 +355,8 @@ export default function Phase2ColorBlindTestClient({
             playCount: t.play_count,
             badgeType: t.badge_type || null
           }));
+          
+        console.log('📊 Similar tests list:', similarTestsList.length, similarTestsList.map(t => t.slug));
           
         const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
         
@@ -309,17 +390,25 @@ export default function Phase2ColorBlindTestClient({
   // Social Sharing
   const getShareText = () => {
     if (result) {
-      const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
+      const dataLocale = locale === 'zh-CN' ? 'zh-CN' : locale === 'zh-TW' ? 'zh-TW' : locale;
       const resultTitle = result.title[dataLocale as keyof typeof result.title] || result.title.ko;
-      return t('shareMessages.default', { type: resultTitle });
+      return t('shareMessages.default', { 
+        language: locale.toUpperCase(), 
+        cpm: averageCPM.toString(), 
+        type: resultTitle 
+      });
     }
     return t('shareMessages.startDefault');
   };
   
   const handleShareResult = async () => {
-    const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
+    const dataLocale = locale === 'zh-CN' ? 'zh-CN' : locale === 'zh-TW' ? 'zh-TW' : locale;
     const resultTitle = result ? (result.title[dataLocale as keyof typeof result.title] || result.title.ko) : '';
-    const shareText = result ? t('shareMessages.default', { type: resultTitle }) : t('shareMessages.startDefault');
+    const shareText = result ? t('shareMessages.default', { 
+      language: locale.toUpperCase(), 
+      cpm: averageCPM.toString(), 
+      type: resultTitle 
+    }) : t('shareMessages.startDefault');
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const fullText = `${shareText}\n\n${url}`;
 
@@ -348,9 +437,13 @@ export default function Phase2ColorBlindTestClient({
       alert(t('alerts.kakaoInit'));
       return;
     }
-    const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
+    const dataLocale = locale === 'zh-CN' ? 'zh-CN' : locale === 'zh-TW' ? 'zh-TW' : locale;
     const resultTitle = result ? (result.title[dataLocale as keyof typeof result.title] || result.title.ko) : '';
-    const description = result ? t('shareMessages.kakao', { type: resultTitle }) : t('shareMessages.startKakao');
+    const description = result ? t('shareMessages.kakao', { 
+      language: locale.toUpperCase(), 
+      cpm: averageCPM.toString(), 
+      type: resultTitle 
+    }) : t('shareMessages.startKakao');
     
     window.Kakao.Share.sendDefault({
       objectType: 'feed',
@@ -447,7 +540,7 @@ export default function Phase2ColorBlindTestClient({
 
   // 3. Result Screen
   if (showResult && result) {
-    const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
+    const dataLocale = locale === 'zh-CN' ? 'zh-CN' : locale === 'zh-TW' ? 'zh-TW' : locale;
     const resultTitle = result.title[dataLocale as keyof typeof result.title] || result.title.ko;
     const resultDescription = result.description[dataLocale as keyof typeof result.description] || result.description.ko;
     const resultCharacteristics = result.characteristics[dataLocale as keyof typeof result.characteristics] || result.characteristics.ko;
@@ -471,16 +564,30 @@ export default function Phase2ColorBlindTestClient({
           
           <div className="space-y-3 mb-3">
             <div className="bg-white rounded-xl shadow-lg p-4">
-              <h3 className="text-base font-bold text-gray-800 mb-2 text-left">
+              <h3 className="text-base font-bold text-gray-800 mb-2">
+                ⌨️ {t('ui.averageCPM')}
+              </h3>
+              <p className="text-2xl font-bold text-purple-600 text-center" style={{ fontSize: '1.5em' }}>
+                {averageCPM} {t('ui.cpm')}
+              </p>
+              {totalErrors > 0 && (
+                <p className="text-sm text-gray-500 text-center mt-2">
+                  {t('ui.errorPenalty')}: -{totalErrors * 5} {t('ui.cpm')}
+                </p>
+              )}
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4">
+              <h3 className="text-base font-bold text-gray-800 mb-2">
                 📊 {t('ui.characteristics')}
               </h3>
-              <p className="text-lg text-gray-700 text-center">
+              <p className="text-base text-gray-700 text-center">
                 {resultCharacteristics}
               </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4">
-              <h3 className="text-base font-bold text-gray-800 mb-2 text-left">
+              <h3 className="text-base font-bold text-gray-800 mb-2">
                 ⭐ {t('ui.recommendation')}
               </h3>
               <div className="flex flex-wrap justify-center gap-2">
@@ -639,134 +746,111 @@ export default function Phase2ColorBlindTestClient({
     );
   }
 
-  // 4. Test Screen (Question Screen)
-  if (started && currentQuestionIndex < COLOR_BLIND_QUESTIONS.length) {
-    const currentQuestion = COLOR_BLIND_QUESTIONS[currentQuestionIndex];
-    
-    // Common answer options (based on typical Ishihara test)
-    // 모든 질문의 정답과 오답 후보들을 포함
-    const answerOptions = ['12', '21', '26', '29', '35', '42', '45', '57', '73', '74', '8', '2', '5', '6', '7', '16', '70', 'nothing'];
-    
+  // 4. Game Screen (Typing Screen)
+  if (started && currentRound >= 0 && currentRound < PHASE2_GLOBAL_TYPING_ROUNDS.length) {
+    const currentSentence = getCurrentSentence();
+    const progress = ((currentRound + 1) / PHASE2_GLOBAL_TYPING_ROUNDS.length) * 100;
+
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex flex-col items-start justify-start p-4">
         <div className="w-full max-w-2xl mx-auto mt-4">
           {/* Progress Bar */}
           <div className="mb-6">
             <div className="flex justify-between text-sm text-gray-600 mb-2">
-              <span>{t('ui.question')} {currentQuestionIndex + 1} / {COLOR_BLIND_QUESTIONS.length}</span>
-              <span>{Math.round(((currentQuestionIndex + 1) / COLOR_BLIND_QUESTIONS.length) * 100)}%</span>
+              <span>{t('ui.round')} {currentRound + 1} / {PHASE2_GLOBAL_TYPING_ROUNDS.length}</span>
+              <span>{Math.round(progress)}%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-3">
               <div 
                 className="bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full transition-all duration-300"
-                style={{ width: `${((currentQuestionIndex + 1) / COLOR_BLIND_QUESTIONS.length) * 100}%` }}
+                style={{ width: `${progress}%` }}
               />
             </div>
           </div>
 
-          {/* Question Image */}
+          {/* Target Sentence */}
           <div className="bg-white rounded-2xl shadow-xl p-6 mb-6">
-            <div className="relative w-full aspect-square max-w-lg mx-auto flex items-center justify-center bg-gray-50">
-              {imageDataUrls[currentQuestion.id] ? (
-                <Image
-                  src={imageDataUrls[currentQuestion.id]}
-                  alt={`Question ${currentQuestionIndex + 1}`}
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-contain rounded-lg"
-                  unoptimized
-                  onError={(e) => {
-                    console.error('Image load error for question', currentQuestion.id);
-                    // 이미지 생성 재시도
-                    const canvas = document.createElement('canvas');
-                    const config = getIshiharaConfig(currentQuestion.id);
-                    generateIshiharaImage(canvas, config);
-                    const dataUrl = canvas.toDataURL('image/png');
-                    if (dataUrl && dataUrl !== 'data:,') {
-                      setImageDataUrls(prev => ({ ...prev, [currentQuestion.id]: dataUrl }));
-                    }
-                  }}
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gray-100 rounded-lg">
-                  <div className="text-gray-400">이미지 생성 중...</div>
+            <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">
+              {t('ui.typeSentence')}
+            </h3>
+            <div className="bg-gray-50 rounded-xl p-6 mb-4 border-2 border-gray-200">
+              <p className="text-xl md:text-2xl text-gray-800 text-center leading-relaxed font-medium">
+                {currentSentence}
+              </p>
+            </div>
+
+            {/* Input Area */}
+            <div className="relative">
+              <input
+                ref={inputRef}
+                type="text"
+                value={userInput}
+                onChange={handleInputChange}
+                placeholder={t('ui.startTyping')}
+                className="w-full px-4 py-4 text-lg md:text-xl border-2 border-purple-300 rounded-xl focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all"
+                autoFocus
+                disabled={isRoundComplete}
+              />
+              {isRoundComplete && (
+                <div className="absolute inset-0 flex items-center justify-center bg-green-500 bg-opacity-20 rounded-xl">
+                  <span className="text-2xl font-bold text-green-600">✓</span>
                 </div>
               )}
             </div>
-          </div>
 
-          {/* Answer Selection */}
-          <div className="bg-white rounded-2xl shadow-xl p-6 mb-6">
-            <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">
-              {t('ui.selectAnswer')}
-            </h3>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
-              {answerOptions.map((option) => (
-                <button
-                  key={option}
-                  onClick={() => handleAnswerSelect(option)}
-                  className={`py-4 px-4 rounded-xl font-bold text-lg transition-all ${
-                    selectedAnswer === option
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg scale-105'
-                      : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-                  }`}
-                >
-                  {option === 'nothing' ? t('ui.nothing') : option}
-                </button>
-              ))}
+            {/* Progress Indicator */}
+            <div className="mt-4">
+              <div className="flex justify-between text-sm text-gray-500 mb-2">
+                <span>{t('ui.progress')}</span>
+                <span>{userInput.length} / {currentSentence.length}</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div 
+                  className="bg-green-500 h-2 rounded-full transition-all duration-150"
+                  style={{ width: `${Math.min(100, (userInput.length / currentSentence.length) * 100)}%` }}
+                />
+              </div>
             </div>
+
+            {/* Current Round Stats */}
+            {roundResults.length > 0 && (
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <div className="grid grid-cols-3 gap-2 text-center text-sm">
+                  {roundResults.map((r, idx) => (
+                    <div key={idx} className="bg-purple-50 rounded-lg p-2">
+                      <div className="font-bold text-purple-600">R{r.round}</div>
+                      <div className="text-gray-600">{r.cpm} CPM</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
-          {/* AdSense & Social Share */}
-          <div className="mt-8 w-full max-w-[680px] mx-auto">
+          {/* AdSense */}
+          <div className="w-full max-w-[680px] mx-auto mb-8">
             <AdSensePlaceholder 
-              slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
-              style={{ width: '100%', height: '250px' }}
-              className="mx-auto"
-              label={t('ui.adsenseTitle')}
+              slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN} 
+              style={{ width: '100%', height: '100px' }} 
+              className="mx-auto" 
+              label={t('ui.adsenseTitle')} 
             />
-          </div>
-
-          <div className="mt-8 mb-8 text-center w-full">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">
-              {tGlobal('mbti.shareResultWithFriends')}
-            </h2>
-            <div className="flex justify-center gap-2 items-center">
-              <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" /></button>
-              <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" /></button>
-              <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" /></button>
-              <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" /></button>
-              <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" /></button>
-              <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform"><Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" /></button>
-            </div>
           </div>
         </div>
       </div>
     );
   }
 
-  // 5. Start Screen (Intro)
+  // 5. Intro Screen (Default)
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto">
+        {/* Thumbnail */}
         <div className="relative w-full aspect-[680/384] mb-3">
-          <Image
-            src={getThumbnailUrl(thumbnail || '')}
-            alt={title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
-            priority
-          />
-          {isLatestTest && (
-            <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">NEW</div>
-          )}
-          {!isLatestTest && badgeType === 'popular' && (
-            <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">인기</div>
-          )}
-          {!isLatestTest && badgeType === 'hot' && (
-            <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">HOT</div>
-          )}
+          <Image src={getThumbnailUrl(thumbnail || '')} alt={title} fill className="object-cover" priority />
+          {isLatestTest && <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">NEW</div>}
+          {badgeType === 'popular' && <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">인기</div>}
+          {badgeType === 'hot' && <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg z-10">HOT</div>}
         </div>
 
         <div className="px-4">
@@ -774,12 +858,7 @@ export default function Phase2ColorBlindTestClient({
           
           {/* AdSense */}
           <div className="my-6">
-            <AdSensePlaceholder 
-              slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
-              style={{ width: '100%', height: '250px' }}
-              className="mx-auto"
-              label={t('ui.adsenseTitle')}
-            />
+            <AdSensePlaceholder slot={ADSENSE_CONFIG.SLOTS.START_SCREEN} style={{ width: '100%', height: '250px' }} className="mx-auto" label={t('ui.adsenseTitle')} />
           </div>
 
           {/* Intro Text */}
@@ -787,17 +866,15 @@ export default function Phase2ColorBlindTestClient({
             <p className="font-bold text-gray-800 text-lg">{t('startMessage.line1')}</p>
             <p>{t('startMessage.line2')}</p>
             <p>{t('startMessage.line3')}</p>
-            <p>{t('startMessage.line4')}</p>
-            <p className="text-gray-500 mt-4">{t('startMessage.line5')}</p>
-            <p className="text-gray-500">{t('startMessage.line6')}</p>
+            <p className="text-gray-500">{t('startMessage.line4')}</p>
           </div>
 
           <div className="flex justify-center mb-6">
-            <button
-              onClick={handleStartTest}
+            <button 
+              onClick={handleStartGame} 
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-12 rounded-full shadow-lg transform hover:scale-105 transition-all text-lg animate-pulse"
             >
-              {tGlobal('mbti.startTest')}
+              {t('startMessage.startButton')}
             </button>
           </div>
           
@@ -819,11 +896,11 @@ export default function Phase2ColorBlindTestClient({
           </div>
 
           {/* Similar Tests */}
-          {similarTestsState.length > 0 && (
+          {(similarTestsState.length > 0 || popularTestsState.length > 0) && (
             <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">{t('ui.similarTests')}</h2>
               <div className="grid grid-cols-2 gap-4">
-                {similarTestsState.map((test) => (
+                {(similarTestsState.length > 0 ? similarTestsState : popularTestsState.slice(0, 5)).map((test) => (
                   <Link key={test.id} href={`/${locale}/test/${test.slug}`} className="block group">
                     <div className="bg-white rounded-lg shadow overflow-hidden">
                       <div className="relative aspect-video">

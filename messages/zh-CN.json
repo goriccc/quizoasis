@@ -5735,5 +5735,54 @@
       "similarTestsTop5": "🔥 热门测试推荐前5",
       "popularTestsTop5": "🔥 热门测试推荐前5"
     }
+  },
+  "phase2GlobalTypingTest": {
+    "startMessage": {
+      "line1": "你的打字能力，是真材实料还是虚有其表？",
+      "line2": "快速打一句话谁都能做到。",
+      "line3": "但保持长段落的高速却很难。",
+      "line4": "从问候语到谚语、名言、文学作品。你必须通过全部5轮。连当地人都认可的你真正的「平均速度」是多少？",
+      "startButton": "开始5轮测试 🖐️"
+    },
+    "ui": {
+      "round": "轮",
+      "typeSentence": "请准确输入以下句子",
+      "startTyping": "在此输入...",
+      "progress": "进度",
+      "averageCPM": "平均打字数",
+      "cpm": "字/分",
+      "errorPenalty": "错误惩罚",
+      "characteristics": "特征",
+      "recommendation": "推荐",
+      "shareResult": "分享结果",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "参加测试",
+      "adsenseTitle": "广告",
+      "similarTests": "类似的其他测试"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "wechatCopy": "链接已复制！请在微信中粘贴并分享。"
+    },
+    "shareMessages": {
+      "default": "我的{language}平均打字速度是{cpm}字/分！等级是{type} ⌨️ 5轮平均值。你也来挑战？",
+      "kakao": "我的{language}平均打字速度是{cpm}字/分！等级是{type} ⌨️ 5轮平均值。你也来挑战？",
+      "startDefault": "试试全球打字王测试！5轮实力验证 ⌨️",
+      "startKakao": "试试全球打字王测试！5轮实力验证 ⌨️",
+      "startWechat": "试试全球打字王测试！5轮实力验证 ⌨️",
+      "startWhatsapp": "试试全球打字王测试！5轮实力验证 ⌨️",
+      "startTelegram": "试试全球打字王测试！5轮实力验证 ⌨️",
+      "startLine": "试试全球打字王测试！5轮实力验证 ⌨️"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试 Top 5",
+      "popularTestsTop5": "🔥 热门测试 Top 5"
+    }
   }
 }

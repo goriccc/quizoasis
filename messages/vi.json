@@ -5735,5 +5735,54 @@
       "similarTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất",
       "popularTestsTop5": "🔥 Top 5 bài kiểm tra phổ biến được đề xuất"
     }
+  },
+  "phase2GlobalTypingTest": {
+    "startMessage": {
+      "line1": "Kỹ năng đánh máy của bạn - thật hay giả?",
+      "line2": "Ai cũng có thể đánh nhanh một câu.",
+      "line3": "Nhưng duy trì tốc độ trong đoạn văn dài thì khó.",
+      "line4": "Từ lời chào đến tục ngữ, trích dẫn và văn học. Bạn phải vượt qua cả 5 vòng. 'Tốc độ trung bình' thực sự của bạn mà ngay cả người địa phương cũng công nhận là bao nhiêu?",
+      "startButton": "Bắt đầu 5 Vòng Kiểm tra 🖐️"
+    },
+    "ui": {
+      "round": "Vòng",
+      "typeSentence": "Nhập chính xác câu dưới đây",
+      "startTyping": "Bắt đầu nhập ở đây...",
+      "progress": "Tiến trình",
+      "averageCPM": "Tốc độ trung bình",
+      "cpm": "ký tự/phút",
+      "errorPenalty": "Phạt lỗi",
+      "characteristics": "Đặc điểm",
+      "recommendation": "Khuyến nghị",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Làm bài kiểm tra",
+      "adsenseTitle": "Quảng cáo",
+      "similarTests": "Các bài kiểm tra tương tự khác"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat."
+    },
+    "shareMessages": {
+      "default": "Tốc độ đánh máy trung bình {language} của tôi là {cpm} ký tự/phút! Cấp độ: {type} ⌨️ Trung bình 5 vòng. Bạn cũng thử?",
+      "kakao": "Tốc độ đánh máy trung bình {language} của tôi là {cpm} ký tự/phút! Cấp độ: {type} ⌨️ Trung bình 5 vòng. Bạn cũng thử?",
+      "startDefault": "Thử bài kiểm tra Vua Đánh Máy Toàn Cầu! Xác minh kỹ năng 5 vòng ⌨️",
+      "startKakao": "Thử bài kiểm tra Vua Đánh Máy Toàn Cầu! Xác minh kỹ năng 5 vòng ⌨️",
+      "startWechat": "Thử bài kiểm tra Vua Đánh Máy Toàn Cầu! Xác minh kỹ năng 5 vòng ⌨️",
+      "startWhatsapp": "Thử bài kiểm tra Vua Đánh Máy Toàn Cầu! Xác minh kỹ năng 5 vòng ⌨️",
+      "startTelegram": "Thử bài kiểm tra Vua Đánh Máy Toàn Cầu! Xác minh kỹ năng 5 vòng ⌨️",
+      "startLine": "Thử bài kiểm tra Vua Đánh Máy Toàn Cầu! Xác minh kỹ năng 5 vòng ⌨️"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Các bài kiểm tra tương tự khác Top 5",
+      "popularTestsTop5": "🔥 Bài kiểm tra phổ biến Top 5"
+    }
   }
 }

@@ -5723,5 +5723,54 @@
       "similarTestsTop5": "🔥 最近人気のテストおすすめトップ5",
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
+  },
+  "phase2GlobalTypingTest": {
+    "startMessage": {
+      "line1": "あなたのタイピング技術、本物ですか？",
+      "line2": "一つの文を素早く打つことは誰でもできます。",
+      "line3": "しかし、長い文章を一定の速度で打ち続けるのは難しいです。",
+      "line4": "挨拶からことわざ、名言、文学作品まで。全5段階の文をすべて通過する必要があります。現地人も認めるあなたの本当の「平均速度」は？",
+      "startButton": "5ラウンド検定開始 🖐️"
+    },
+    "ui": {
+      "round": "ラウンド",
+      "typeSentence": "以下の文を正確に入力してください",
+      "startTyping": "ここに入力してください...",
+      "progress": "進捗",
+      "averageCPM": "平均タイプ数",
+      "cpm": "タイプ/分",
+      "errorPenalty": "誤字ペナルティ",
+      "characteristics": "特徴",
+      "recommendation": "推奨",
+      "shareResult": "結果を共有",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "広告",
+      "similarTests": "類似の他のテスト"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。"
+    },
+    "shareMessages": {
+      "default": "私の{language}平均タイピング速度は{cpm}タイプ！等級は{type} ⌨️ 5ラウンド平均です。あなたも挑戦？",
+      "kakao": "私の{language}平均タイピング速度は{cpm}タイプ！等級は{type} ⌨️ 5ラウンド平均です。あなたも挑戦？",
+      "startDefault": "グローバルタイピング王テストを試してみてください！5ラウンド実力検証 ⌨️",
+      "startKakao": "グローバルタイピング王テストを試してみてください！5ラウンド実力検証 ⌨️",
+      "startWechat": "グローバルタイピング王テストを試してみてください！5ラウンド実力検証 ⌨️",
+      "startWhatsapp": "グローバルタイピング王テストを試してみてください！5ラウンド実力検証 ⌨️",
+      "startTelegram": "グローバルタイピング王テストを試してみてください！5ラウンド実力検証 ⌨️",
+      "startLine": "グローバルタイピング王テストを試してみてください！5ラウンド実力検証 ⌨️"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテスト Top 5",
+      "popularTestsTop5": "🔥 人気テスト Top 5"
+    }
   }
 }

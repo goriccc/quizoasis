@@ -5744,5 +5744,54 @@
       "similarTestsTop5": "🔥 Top 5 Popular Tests Recommendations",
       "popularTestsTop5": "🔥 Top 5 Popular Tests Recommendations"
     }
+  },
+  "phase2GlobalTypingTest": {
+    "startMessage": {
+      "line1": "Your typing skills - real or fake?",
+      "line2": "Anyone can type one sentence quickly.",
+      "line3": "But maintaining speed over long passages is hard.",
+      "line4": "From greetings to proverbs, quotes, and literature. You must pass all 5 rounds. What's your real 'average speed' that even locals recognize?",
+      "startButton": "Start 5-Round Test 🖐️"
+    },
+    "ui": {
+      "round": "Round",
+      "typeSentence": "Type the sentence below accurately",
+      "startTyping": "Start typing here...",
+      "progress": "Progress",
+      "averageCPM": "Average CPM",
+      "cpm": "CPM",
+      "errorPenalty": "Error Penalty",
+      "characteristics": "Characteristics",
+      "recommendation": "Recommendation",
+      "shareResult": "Share Result",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "Advertisement",
+      "similarTests": "Similar Other Tests"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "wechatCopy": "Link copied! Paste and share in WeChat."
+    },
+    "shareMessages": {
+      "default": "My {language} average typing speed is {cpm} CPM! Grade: {type} ⌨️ Average of 5 rounds. Try it too?",
+      "kakao": "My {language} average typing speed is {cpm} CPM! Grade: {type} ⌨️ Average of 5 rounds. Try it too?",
+      "startDefault": "Try the Global Typing Champion test! 5-round skill verification ⌨️",
+      "startKakao": "Try the Global Typing Champion test! 5-round skill verification ⌨️",
+      "startWechat": "Try the Global Typing Champion test! 5-round skill verification ⌨️",
+      "startWhatsapp": "Try the Global Typing Champion test! 5-round skill verification ⌨️",
+      "startTelegram": "Try the Global Typing Champion test! 5-round skill verification ⌨️",
+      "startLine": "Try the Global Typing Champion test! 5-round skill verification ⌨️"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar Other Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    }
   }
 }
