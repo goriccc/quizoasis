@@ -5844,6 +5844,62 @@
       "popularTestsTop5": "🔥 最近热门测试推荐 TOP 5"
     }
   },
+  "phase2SpeedClickTest": {
+    "startMessage": {
+      "line1": "你的眼睛和手有多快？",
+      "line2": "用眼睛找下一个数字，同时用手按当前数字的极限「多任务」！",
+      "line3": "从1到25，不要漏掉任何一个数字，按顺序快速清除。",
+      "line4": "前1%的人能突破10秒大关。",
+      "line5": "你的记录会是多少？",
+      "line6": "开始速度测量 ⏱️"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "clearTime": "完成时间",
+      "seconds": "秒",
+      "percentile": "上位比例",
+      "recommendation": "推荐",
+      "shareResult": "分享结果",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "goToTest": "去测试",
+      "adsenseTitle": "广告",
+      "similarTests": "类似的其他测试",
+      "submit": "确认",
+      "newRecord": "新纪录！",
+      "enterName": "输入您的名字以记录在排行榜上",
+      "namePlaceholder": "姓名或ID（最多20个字符）",
+      "worldBestTop10": "世界最佳记录 TOP 10",
+      "currentTime": "经过时间",
+      "findNumber": "查找数字",
+      "progress": "进度",
+      "noRecordsYet": "暂无记录"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "nameRequired": "请输入您的名字。"
+    },
+    "shareMessages": {
+      "default": "我的反应速度记录是{time}秒！等级：{type} ⚡ 你能突破10秒吗？",
+      "kakao": "我的反应速度记录是{time}秒！等级：{type} ⚡ 你能突破10秒吗？",
+      "startDefault": "试试挑战！1to25: 光速测试！⚡",
+      "startKakao": "试试挑战！1to25: 光速测试！⚡",
+      "startWechat": "试试挑战！1to25: 光速测试！⚡",
+      "startWhatsapp": "试试挑战！1to25: 光速测试！⚡",
+      "startTelegram": "试试挑战！1to25: 光速测试！⚡",
+      "startLine": "试试挑战！1to25: 光速测试！⚡"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试推荐 TOP 5",
+      "popularTestsTop5": "🔥 最近热门测试推荐 TOP 5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "热门",

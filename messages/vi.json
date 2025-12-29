@@ -5844,6 +5844,62 @@
       "popularTestsTop5": "🔥 Các bài kiểm tra phổ biến gần đây Top 5"
     }
   },
+  "phase2SpeedClickTest": {
+    "startMessage": {
+      "line1": "Mắt và tay của bạn nhanh đến mức nào?",
+      "line2": "Cực hạn của 'đa nhiệm' khi tìm số tiếp theo bằng mắt trong khi nhấn số hiện tại bằng tay!",
+      "line3": "Từ 1 đến 25, đừng bỏ sót bất kỳ số nào và nhanh chóng xóa chúng theo thứ tự.",
+      "line4": "Top 1% phá vỡ rào cản 10 giây.",
+      "line5": "Kỷ lục của bạn sẽ là bao nhiêu?",
+      "line6": "Bắt đầu đo tốc độ ⏱️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu bài kiểm tra",
+      "clearTime": "Thời gian hoàn thành",
+      "seconds": "giây",
+      "percentile": "Tỷ lệ trên",
+      "recommendation": "Đề xuất",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Đi đến bài kiểm tra",
+      "adsenseTitle": "Quảng cáo",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "submit": "Xác nhận",
+      "newRecord": "Kỷ lục mới!",
+      "enterName": "Nhập tên của bạn để ghi vào bảng xếp hạng",
+      "namePlaceholder": "Tên hoặc ID (tối đa 20 ký tự)",
+      "worldBestTop10": "Kỷ lục thế giới tốt nhất TOP 10",
+      "currentTime": "Thời gian đã trôi qua",
+      "findNumber": "Tìm số",
+      "progress": "Tiến độ",
+      "noRecordsYet": "Chưa có kỷ lục"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "nameRequired": "Vui lòng nhập tên của bạn."
+    },
+    "shareMessages": {
+      "default": "Kỷ lục phản xạ của tôi là {time} giây! Hạng: {type} ⚡ Bạn có thể phá vỡ 10 giây không?",
+      "kakao": "Kỷ lục phản xạ của tôi là {time} giây! Hạng: {type} ⚡ Bạn có thể phá vỡ 10 giây không?",
+      "startDefault": "Thử thách! Bài kiểm tra 1to25: Tốc độ ánh sáng! ⚡",
+      "startKakao": "Thử thách! Bài kiểm tra 1to25: Tốc độ ánh sáng! ⚡",
+      "startWechat": "Thử thách! Bài kiểm tra 1to25: Tốc độ ánh sáng! ⚡",
+      "startWhatsapp": "Thử thách! Bài kiểm tra 1to25: Tốc độ ánh sáng! ⚡",
+      "startTelegram": "Thử thách! Bài kiểm tra 1to25: Tốc độ ánh sáng! ⚡",
+      "startLine": "Thử thách! Bài kiểm tra 1to25: Tốc độ ánh sáng! ⚡"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Các bài kiểm tra tương tự khác Top 5",
+      "popularTestsTop5": "🔥 Các bài kiểm tra phổ biến gần đây Top 5"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

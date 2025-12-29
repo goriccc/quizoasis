@@ -5844,6 +5844,62 @@
       "popularTestsTop5": "🔥 Tes Populer Terkini Top 5"
     }
   },
+  "phase2SpeedClickTest": {
+    "startMessage": {
+      "line1": "Seberapa cepat mata dan tangan Anda?",
+      "line2": "Batas 'multitasking' menemukan angka berikutnya dengan mata sambil menekan angka saat ini dengan tangan!",
+      "line3": "Dari 1 hingga 25, jangan lewatkan satu angka pun dan cepat hapus secara berurutan.",
+      "line4": "Top 1% memecahkan penghalang 10 detik.",
+      "line5": "Berapa rekor Anda?",
+      "line6": "Mulai pengukuran kecepatan ⏱️"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "clearTime": "Waktu Selesai",
+      "seconds": "detik",
+      "percentile": "Rasio Atas",
+      "recommendation": "Rekomendasi",
+      "shareResult": "Bagikan Hasil",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Pergi ke Tes",
+      "adsenseTitle": "Iklan",
+      "similarTests": "Tes Serupa Lainnya",
+      "submit": "Konfirmasi",
+      "newRecord": "Rekor Baru!",
+      "enterName": "Masukkan nama Anda untuk dicatat di papan peringkat",
+      "namePlaceholder": "Nama atau ID (maks 20 karakter)",
+      "worldBestTop10": "Rekor Dunia Terbaik TOP 10",
+      "currentTime": "Waktu Berlalu",
+      "findNumber": "Temukan Angka",
+      "progress": "Kemajuan",
+      "noRecordsYet": "Belum ada rekor"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "nameRequired": "Silakan masukkan nama Anda."
+    },
+    "shareMessages": {
+      "default": "Rekor refleks saya adalah {time} detik! Kelas: {type} ⚡ Bisakah Anda memecahkan 10 detik?",
+      "kakao": "Rekor refleks saya adalah {time} detik! Kelas: {type} ⚡ Bisakah Anda memecahkan 10 detik?",
+      "startDefault": "Coba Tantangan! Tes 1to25: Kecepatan Cahaya! ⚡",
+      "startKakao": "Coba Tantangan! Tes 1to25: Kecepatan Cahaya! ⚡",
+      "startWechat": "Coba Tantangan! Tes 1to25: Kecepatan Cahaya! ⚡",
+      "startWhatsapp": "Coba Tantangan! Tes 1to25: Kecepatan Cahaya! ⚡",
+      "startTelegram": "Coba Tantangan! Tes 1to25: Kecepatan Cahaya! ⚡",
+      "startLine": "Coba Tantangan! Tes 1to25: Kecepatan Cahaya! ⚡"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
+      "popularTestsTop5": "🔥 Tes Populer Terkini Top 5"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

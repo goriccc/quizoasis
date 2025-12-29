@@ -5853,6 +5853,62 @@
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     }
   },
+  "phase2SpeedClickTest": {
+    "startMessage": {
+      "line1": "How fast are your eyes and hands?",
+      "line2": "The ultimate 'multitasking' of finding the next number with your eyes while pressing the current number with your hands!",
+      "line3": "From 1 to 25, don't miss a single number and quickly clear them in order.",
+      "line4": "The top 1% break the 10-second barrier.",
+      "line5": "What will your record be?",
+      "line6": "Start speed measurement ⏱️"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "clearTime": "Clear Time",
+      "seconds": "sec",
+      "percentile": "Percentile",
+      "recommendation": "Recommendation",
+      "shareResult": "Share Result",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Go to Test",
+      "adsenseTitle": "Ad",
+      "similarTests": "Similar Other Tests",
+      "submit": "Submit",
+      "newRecord": "New Record!",
+      "enterName": "Enter your name to record on the leaderboard",
+      "namePlaceholder": "Name or ID (max 20 characters)",
+      "worldBestTop10": "World Best TOP 10",
+      "currentTime": "Elapsed Time",
+      "findNumber": "Find Number",
+      "progress": "Progress",
+      "noRecordsYet": "No records yet"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "nameRequired": "Please enter your name."
+    },
+    "shareMessages": {
+      "default": "My reflex record is {time} seconds! Grade: {type} ⚡ Can you break 10 seconds?",
+      "kakao": "My reflex record is {time} seconds! Grade: {type} ⚡ Can you break 10 seconds?",
+      "startDefault": "Try the Challenge! 1to25: Speed of Light test! ⚡",
+      "startKakao": "Try the Challenge! 1to25: Speed of Light test! ⚡",
+      "startWechat": "Try the Challenge! 1to25: Speed of Light test! ⚡",
+      "startWhatsapp": "Try the Challenge! 1to25: Speed of Light test! ⚡",
+      "startTelegram": "Try the Challenge! 1to25: Speed of Light test! ⚡",
+      "startLine": "Try the Challenge! 1to25: Speed of Light test! ⚡"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar Other Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

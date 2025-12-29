@@ -5982,6 +5982,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase2SpeedClickTest": {
+    "startMessage": {
+      "line1": "당신의 눈과 손은 얼마나 빠른가요?",
+      "line2": "눈으로는 다음 숫자를 찾고, 손으로는 현재 숫자를 누르는 '멀티태스킹'의 극한!",
+      "line3": "1부터 25까지, 단 하나의 숫자도 놓치지 말고 순서대로 빠르게 지워나가세요.",
+      "line4": "상위 1%는 10초의 벽을 깬다고 합니다.",
+      "line5": "과연 당신의 기록은?",
+      "line6": "스피드 측정 시작 ⏱️"
+    },
+    "ui": {
+      "startTest": "테스트 시작",
+      "clearTime": "클리어 시간",
+      "seconds": "초",
+      "percentile": "상위 비율",
+      "recommendation": "추천",
+      "shareResult": "결과 공유하기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "광고",
+      "similarTests": "유사한 다른 테스트",
+      "submit": "확인",
+      "newRecord": "신기록 달성!",
+      "enterName": "이름을 입력하여 리더보드에 기록하세요",
+      "namePlaceholder": "이름 또는 ID (최대 20자)",
+      "worldBestTop10": "세계 최고 기록 TOP 10",
+      "currentTime": "경과 시간",
+      "findNumber": "찾을 숫자",
+      "progress": "진행도",
+      "noRecordsYet": "아직 기록이 없습니다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "nameRequired": "이름을 입력해주세요."
+    },
+    "shareMessages": {
+      "default": "내 순발력 기록은 {time}초! 등급은 {type} ⚡ 10초 깰 수 있는 사람?",
+      "kakao": "내 순발력 기록은 {time}초! 등급은 {type} ⚡ 10초 깰 수 있는 사람?",
+      "startDefault": "도전! 1to25: 빛의 속도 테스트를 해보세요! ⚡",
+      "startKakao": "도전! 1to25: 빛의 속도 테스트를 해보세요! ⚡",
+      "startWechat": "도전! 1to25: 빛의 속도 테스트를 해보세요! ⚡",
+      "startWhatsapp": "도전! 1to25: 빛의 속도 테스트를 해보세요! ⚡",
+      "startTelegram": "도전! 1to25: 빛의 속도 테스트를 해보세요! ⚡",
+      "startLine": "도전! 1to25: 빛의 속도 테스트를 해보세요! ⚡"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

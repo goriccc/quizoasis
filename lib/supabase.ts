@@ -328,14 +328,19 @@ export async function incrementPlayCount(slug: string) {
 
 /**
  * Leaderboard - World Best Top 10 조회
+ * 낮은 점수가 좋은 테스트 (예: 시간)는 ascending: true, 높은 점수가 좋은 테스트는 ascending: false
  */
 export async function getLeaderboardTop10(testSlug: string) {
   try {
+    // 낮은 점수가 좋은 테스트 목록 (시간 기반 등)
+    const lowerIsBetterTests = ['phase2_speed_click_test'];
+    const ascending = lowerIsBetterTests.includes(testSlug);
+    
     const { data, error } = await supabase
       .from('leaderboard')
       .select('*')
       .eq('test_slug', testSlug)
-      .order('score', { ascending: false })
+      .order('score', { ascending })
       .order('level', { ascending: false })
       .limit(10);
 
@@ -352,7 +357,8 @@ export async function getLeaderboardTop10(testSlug: string) {
 }
 
 /**
- * Leaderboard - 점수 기록 (기존보다 높으면만 기록)
+ * Leaderboard - 점수 기록 (기존보다 좋은 점수면만 기록)
+ * 낮은 점수가 좋은 테스트는 낮은 점수일수록, 높은 점수가 좋은 테스트는 높은 점수일수록 기록
  */
 export async function submitLeaderboardScore(
   testSlug: string,
@@ -361,18 +367,30 @@ export async function submitLeaderboardScore(
   score: number
 ) {
   try {
+    // 낮은 점수가 좋은 테스트 목록 (시간 기반 등)
+    const lowerIsBetterTests = ['phase2_speed_click_test'];
+    const isLowerBetter = lowerIsBetterTests.includes(testSlug);
+    
     // 먼저 Top 10을 확인하여 최소 점수 확인
     const top10 = await getLeaderboardTop10(testSlug);
     
-    // Top 10이 가득 차 있고, 현재 점수가 10위보다 낮으면 기록하지 않음
+    // Top 10이 가득 차 있고, 현재 점수가 10위보다 좋지 않으면 기록하지 않음
     if (top10.length >= 10) {
       const lastScore = top10[top10.length - 1];
-      if (score < lastScore.score || (score === lastScore.score && level < lastScore.level)) {
-        return { success: false, message: 'Not high enough score' };
+      if (isLowerBetter) {
+        // 낮은 점수가 좋은 경우: 현재 점수가 마지막 점수보다 높으면 기록하지 않음
+        if (score > lastScore.score || (score === lastScore.score && level < lastScore.level)) {
+          return { success: false, message: 'Not good enough score' };
+        }
+      } else {
+        // 높은 점수가 좋은 경우: 현재 점수가 마지막 점수보다 낮으면 기록하지 않음
+        if (score < lastScore.score || (score === lastScore.score && level < lastScore.level)) {
+          return { success: false, message: 'Not high enough score' };
+        }
       }
     }
 
-    // 기존보다 높은 점수면 기록
+    // 기존보다 좋은 점수면 기록
     const { data, error } = await supabase
       .from('leaderboard')
       .insert({

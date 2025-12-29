@@ -5832,6 +5832,62 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase2SpeedClickTest": {
+    "startMessage": {
+      "line1": "あなたの目と手はどれくらい速いですか？",
+      "line2": "目で次の数字を見つけながら、手で現在の数字を押す「マルチタスク」の極限！",
+      "line3": "1から25まで、1つの数字も見逃さず順番に素早く消していってください。",
+      "line4": "上位1%は10秒の壁を破ると言われています。",
+      "line5": "果たしてあなたの記録は？",
+      "line6": "スピード測定開始 ⏱️"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "clearTime": "クリア時間",
+      "seconds": "秒",
+      "percentile": "上位比率",
+      "recommendation": "おすすめ",
+      "shareResult": "結果を共有",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "goToTest": "テストへ",
+      "adsenseTitle": "広告",
+      "similarTests": "類似の他のテスト",
+      "submit": "確認",
+      "newRecord": "新記録達成！",
+      "enterName": "名前を入力してリーダーボードに記録してください",
+      "namePlaceholder": "名前またはID（最大20文字）",
+      "worldBestTop10": "世界最高記録 TOP 10",
+      "currentTime": "経過時間",
+      "findNumber": "探す数字",
+      "progress": "進捗",
+      "noRecordsYet": "まだ記録がありません"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再試行してください。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けて共有してください。",
+      "nameRequired": "名前を入力してください。"
+    },
+    "shareMessages": {
+      "default": "私の反射神経記録は{time}秒！等級は{type} ⚡ 10秒を破れる人？",
+      "kakao": "私の反射神経記録は{time}秒！等級は{type} ⚡ 10秒を破れる人？",
+      "startDefault": "挑戦！1to25: 光の速度テストを試してみてください！⚡",
+      "startKakao": "挑戦！1to25: 光の速度テストを試してみてください！⚡",
+      "startWechat": "挑戦！1to25: 光の速度テストを試してみてください！⚡",
+      "startWhatsapp": "挑戦！1to25: 光の速度テストを試してみてください！⚡",
+      "startTelegram": "挑戦！1to25: 光の速度テストを試してみてください！⚡",
+      "startLine": "挑戦！1to25: 光の速度テストを試してみてください！⚡"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",
