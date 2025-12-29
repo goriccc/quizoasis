@@ -5254,512 +5254,21 @@
       "kakaoError": "KakaoTalk分享時發生錯誤。"
     }
   },
-  "phase2LazinessLevelTest": {
+  "phase2MemoryLevelTest": {
     "startMessage": {
-      "line1": "\"週末你從床上起來需要多長時間？\"",
-      "line2": "每個人心裡都有一點'懶惰'。",
-      "line3": "但程度的差異是巨大的。",
-      "line4": "你的懶惰細胞有多活躍？我們將用深入骨髓的懶惰級別事實來轟炸你。",
-      "line5": "檢查我的懶惰級別 🛌 開始懶惰診斷 💤"
+      "line1": "還記得剛才看到的號碼嗎？",
+      "line2": "打開冰箱後\"我要拿什麼來著？\"",
+      "line3": "看到6位驗證碼，要輸入時卻忘了。",
+      "line4": "你的腦細胞是否在逐漸消失？",
+      "line5": "人類平均短期記憶容量據說是7位（±2）。",
+      "line6": "你的大腦是金魚還是超級計算機？",
+      "line7": "測量我的記憶力極限 🧠"
     },
     "ui": {
-      "startTest": "開始懶惰診斷",
-      "shareWithFriends": "和朋友一起試試",
-      "shareResultWithFriends": "和朋友分享結果",
-      "shareResult": "分享結果",
-      "retakeTest": "重做",
-      "otherTests": "其他測試",
-      "goToTest": "去測試",
-      "adsenseTitle": "AdSense廣告區域（懶惰級別測試）",
-      "linkCopy": "複製連結",
-      "kakao": "KakaoTalk",
-      "telegram": "Telegram",
-      "wechat": "微信",
-      "line": "Line",
-      "whatsapp": "WhatsApp",
-      "similarTests": "類似其他測試",
-      "lazinessLevel": "懶惰級別",
-      "characteristics": "特徵",
-      "goodMatch": "完美搭檔",
-      "badMatch": "最差搭檔"
-    },
-    "shareMessages": {
-      "default": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
-      "kakao": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
-      "wechat": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
-      "whatsapp": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
-      "telegram": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
-      "line": "我的懶惰級別是{type}！🛌 把今天的工作拖到明天的人，集合！",
-      "startDefault": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
-      "startKakao": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
-      "startWechat": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
-      "startWhatsapp": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
-      "startTelegram": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤",
-      "startLine": "床和一體？你的「懶惰」級別測試 🛌 開始懶惰診斷 💤"
-    },
-    "alerts": {
-      "linkCopied": "連結已複製！",
-      "resultCopied": "結果已複製到剪貼板！",
-      "shareFailed": "分享功能不可用。",
-      "wechatCopy": "連結已複製！在微信中貼上並分享。",
-      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
-      "kakaoError": "KakaoTalk分享時發生錯誤。"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🎯 類似其他測試推薦前5",
-      "popularTestsTop5": "🔥 最近熱門測試推薦前5"
-    }
-  },
-  "phase2FactBomberTest": {
-    "startMessage": {
-      "line1": "「你是T嗎？」你把這句話當作讚美還是辱罵？",
-      "line2": "聽到朋友的抱怨時，你是不是先想到解決方案而不是安慰？",
-      "line3": "有時無惡意的誠實可能會打擊到對方。",
-      "line4": "你的理性在多大幅度上控制著情感？讓我們檢查一下你是否是一個沒有血淚的'AI機器人'。",
-      "line5": "測量我的事實轟炸力 📉 檢查我的理性指數(T) 🧠"
-    },
-    "ui": {
-      "startTest": "檢查理性指數(T)",
-      "shareWithFriends": "和朋友一起試試",
-      "shareResultWithFriends": "與朋友分享結果",
-      "shareResult": "分享結果",
-      "retakeTest": "重做",
-      "otherTests": "其他測試",
-      "goToTest": "去測試",
-      "adsenseTitle": "AdSense廣告區域（事實轟炸T測試）",
-      "linkCopy": "複製連結",
-      "kakao": "KakaoTalk",
-      "telegram": "Telegram",
-      "wechat": "微信",
-      "line": "Line",
-      "whatsapp": "WhatsApp",
-      "similarTests": "類似測試",
-      "factBomberLevel": "事實轟炸指數",
-      "characteristics": "主要特徵",
-      "goodMatch": "完美匹配",
-      "badMatch": "最差匹配"
-    },
-    "shareMessages": {
-      "default": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
-      "kakao": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
-      "wechat": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
-      "whatsapp": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
-      "telegram": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
-      "line": "我的事實轟炸指數是{type}！🤖 你是T？還是F？在這裡查看！",
-      "startDefault": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
-      "startKakao": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
-      "startWechat": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
-      "startWhatsapp": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
-      "startTelegram": "事實轟炸T測試（簡單）🤖 你是T？還是F？",
-      "startLine": "事實轟炸T測試（簡單）🤖 你是T？還是F？"
-    },
-    "alerts": {
-      "linkCopied": "連結已複製！",
-      "resultCopied": "結果已複製到剪貼簿！",
-      "shareFailed": "分享功能不可用。",
-      "wechatCopy": "連結已複製！在微信中貼上並分享。",
-      "kakaoInit": "正在初始化KakaoTalk分享。請稍後再試。",
-      "kakaoError": "分享到KakaoTalk時發生錯誤。"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🎯 前5名類似測試推薦",
-      "popularTestsTop5": "🔥 前5名熱門測試"
-    }
-  },
-  "phase2DatingMbtiTest": {
-    "startMessage": {
-      "line1": "\"你的戀愛細胞還好嗎？\"",
-      "line2": "有些人只是曖昧就結束，而有些人很快墜入愛河並付出一切。",
-      "line3": "從理性判斷為先的「銅牆鐵壁防禦型」到按感情直進的「快速墜入愛河型」。",
-      "line4": "我們用MBTI理論分析你隱藏的戀愛性格，揭示令人毛骨悚然的戀愛模式和完美配對。",
-      "line5": "診斷我的戀愛能力 💘 查看我的戀愛MBTI 💌"
-    },
-    "ui": {
-      "startTest": "查看戀愛MBTI",
-      "shareWithFriends": "與朋友一起試試",
-      "shareResultWithFriends": "與朋友分享結果",
-      "shareResult": "分享結果",
-      "retakeTest": "重做",
-      "otherTests": "查看其他測試",
-      "goToTest": "去測試",
-      "adsenseTitle": "AdSense廣告區域（我的戀愛MBTI）",
-      "linkCopy": "複製連結",
-      "kakao": "KakaoTalk",
-      "telegram": "Telegram",
-      "wechat": "微信",
-      "line": "Line",
-      "whatsapp": "WhatsApp",
-      "similarTests": "類似的其他測試",
-      "datingStyle": "戀愛風格",
-      "characteristics": "主要特徵",
-      "goodMatch": "完美配對",
-      "badMatch": "最差配對"
-    },
-    "shareMessages": {
-      "default": "我的戀愛MBTI是{type}！💘 我會永遠單身，還是戀愛冤大頭？",
-      "kakao": "我的戀愛MBTI是{type}！💘 我會永遠單身，還是戀愛冤大頭？",
-      "wechat": "我的戀愛MBTI是{type}！💘 我會永遠單身，還是戀愛冤大頭？",
-      "whatsapp": "我的戀愛MBTI是{type}！💘 我會永遠單身，還是戀愛冤大頭？",
-      "telegram": "我的戀愛MBTI是{type}！💘 我會永遠單身，還是戀愛冤大頭？",
-      "line": "我的戀愛MBTI是{type}！💘 我會永遠單身，還是戀愛冤大頭？",
-      "startDefault": "永遠單身？戀愛冤大頭？我的戀愛MBTI 💘",
-      "startKakao": "永遠單身？戀愛冤大頭？我的戀愛MBTI 💘",
-      "startWechat": "永遠單身？戀愛冤大頭？我的戀愛MBTI 💘",
-      "startWhatsapp": "永遠單身？戀愛冤大頭？我的戀愛MBTI 💘",
-      "startTelegram": "永遠單身？戀愛冤大頭？我的戀愛MBTI 💘",
-      "startLine": "永遠單身？戀愛冤大頭？我的戀愛MBTI 💘"
-    },
-    "alerts": {
-      "linkCopied": "連結已複製！",
-      "resultCopied": "結果已複製到剪貼板！",
-      "shareFailed": "分享功能不可用。",
-      "wechatCopy": "連結已複製！請在微信中貼上以分享。",
-      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
-      "kakaoError": "在KakaoTalk上分享時發生錯誤。"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🎯 類似其他測試前5名",
-      "popularTestsTop5": "🔥 最近熱門測試前5名"
-    }
-  },
-  "phase2ColorSurvivalTest": {
-    "startMessage": {
-      "line1": "你的眼睛能堅持多久？",
-      "line2": "只有10秒！給你的初始時間非常短。",
-      "line3": "但別擔心。每找到一個正確答案，生命（時間）就會延長。",
-      "line4": "快速準確地找出不同的顏色，拯救即將耗盡的計時器！",
-      "line5": "堅持到最後的人就是贏家。生存遊戲開始 ⏳"
-    },
-    "shareMessages": {
-      "default": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
-      "kakao": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
-      "line": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
-      "wechat": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
-      "whatsapp": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
-      "telegram": "我的生存等級是{type}！⏳ 答對加時間！你能到第幾關？",
-      "startDefault": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
-      "startKakao": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
-      "startLine": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
-      "startWechat": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
-      "startWhatsapp": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！",
-      "startTelegram": "神之眼絕對色感挑戰！你的眼睛有多準？快來挑戰！"
-    },
-    "ui": {
-      "title": "“神之眼”絕對色感挑戰",
-      "startTest": "開始遊戲",
-      "retry": "再次挑戰",
-      "gameInstruction": "找出並點擊顏色不同的方塊！",
-      "advice": "生存技巧",
-      "adsenseTitle": "廣告",
-      "goToTest": "去測試",
-      "similarTests": "類似測試",
-      "linkCopy": "複製鏈接",
-      "kakao": "Kakao分享",
-      "telegram": "Telegram分享",
-      "wechat": "微信分享",
-      "line": "Line分享",
-      "whatsapp": "WhatsApp分享",
-      "shareResult": "分享結果",
-      "survivalInstinct": "📊 生存本能",
-      "recommendation": "⭐ 推薦"
-    },
-    "alerts": {
-      "linkCopied": "鏈接已複製！",
-      "kakaoInit": "KakaoTalk初始化中...",
-      "wechatCopy": "鏈接已複製。請粘貼到微信分享。"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🎯 推薦的前5個類似測試",
-      "popularTestsTop5": "🔥 推薦的前5個熱門測試"
-    }
-  },
-  "phase2ReactionTimeTest": {
-    "startMessage": {
-      "line1": "Are your brain and fingers connected?",
-      "line2": "The average reaction time for humans is about 0.25s (250ms).",
-      "line3": "Pro gamers break the 0.15s barrier.",
-      "line4": "Do you feel slower with age? Or do you still have peak physical skills?",
-      "line5": "Measure your 'real' speed now. Start Reaction Test ⚡"
-    },
-    "shareMessages": {
-      "default": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
-      "kakao": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
-      "line": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
-      "wechat": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
-      "whatsapp": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
-      "telegram": "My average reaction time is {record}ms! Rank: {type} ⚡ Can you beat me?",
-      "startDefault": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
-      "startKakao": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
-      "startLine": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
-      "startWechat": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
-      "startWhatsapp": "0.1s Battle! Reaction Time Test ⚡ What's your rank?",
-      "startTelegram": "0.1s Battle! Reaction Time Test ⚡ What's your rank?"
-    },
-    "ui": {
-      "title": "0.1s Battle! Reaction Time Test",
-      "wait": "Wait...",
-      "waitDesc": "Click when it turns green!",
-      "clickNow": "CLICK!!!",
-      "clickNowDesc": "As fast as you can!",
-      "tooSoon": "Too Soon!",
-      "tooSoonDesc": "Wait for the color to change. Click to try again.",
-      "clickToContinue": "Click to Continue",
-      "clickToRetry": "Click to Retry",
-      "roundInfo": "Round {current} / {total}",
-      "yourSpeed": "📊 Your Speed",
-      "recommendedJob": "⭐ Recommended Job",
-      "shareResult": "Share Result",
-      "shareWithFriends": "Share with Friends",
-      "retry": "Try Again",
-      "otherTests": "Other Tests",
-      "adsenseTitle": "Advertisement",
-      "linkCopy": "Copy Link",
-      "kakao": "Kakao Share",
-      "telegram": "Telegram Share",
-      "wechat": "WeChat Share",
-      "line": "Line Share",
-      "whatsapp": "WhatsApp Share",
-      "goToTest": "Go to Test"
-    },
-    "alerts": {
-      "linkCopied": "Link copied!",
-      "shareFailed": "Share unavailable.",
-      "kakaoInit": "Initializing KakaoTalk...",
-      "wechatCopy": "Link copied. Paste in WeChat to share."
-    }
-  },
-  "phase2ReflexTest": {
-    "startMessage": {
-      "line1": "你的大腦和手指連接好了嗎？",
-      "line2": "從看到、大腦認知到手指移動的時間。普通人的平均反應速度約為0.25秒（250ms）。",
-      "line3": "覺得年紀大了反應變慢了嗎？還是依然寶刀未老？",
-      "line4": "現在為你測量「真實」的速度。",
-      "line5": "開始反應速度測量 ⚡"
-    },
-    "shareMessages": {
-      "default": "我的平均反應速度是{record}ms！等級是{type} ⚡ 你能贏我嗎？",
-      "kakao": "我的平均反應速度是{record}ms！等級是{type} ⚡ 你能贏我嗎？",
-      "line": "我的平均反應速度是{record}ms！等級是{type} ⚡ 你能贏我嗎？",
-      "wechat": "我的平均反應速度是{record}ms！等級是{type} ⚡ 你能贏我嗎？",
-      "whatsapp": "我的平均反應速度是{record}ms！等級是{type} ⚡ 你能贏我嗎？",
-      "telegram": "我的平均反應速度是{record}ms！等級是{type} ⚡ 你能贏我嗎？",
-      "startDefault": "0.1秒的勝負！反應速度測試 ⚡ 你是哪個等級？",
-      "startKakao": "0.1秒的勝負！反應速度測試 ⚡ 你是哪個等級？",
-      "startLine": "0.1秒的勝負！反應速度測試 ⚡ 你是哪個等級？",
-      "startWechat": "0.1秒的勝負！反應速度測試 ⚡ 你是哪個等級？",
-      "startWhatsapp": "0.1秒的勝負！反應速度測試 ⚡ 你是哪個等級？",
-      "startTelegram": "0.1秒的勝負！反應速度測試 ⚡ 你是哪個等級？"
-    },
-    "ui": {
-      "title": "0.1秒的勝負！反應速度測試",
       "startTest": "開始測試",
-      "retry": "再次測量",
-      "adsenseTitle": "廣告",
-      "goToTest": "去測試",
-      "similarTests": "類似測試",
-      "linkCopy": "複製連結",
-      "kakao": "Kakao分享",
-      "telegram": "Telegram分享",
-      "wechat": "微信分享",
-      "line": "Line分享",
-      "whatsapp": "WhatsApp分享",
-      "shareResult": "分享結果",
-      "survivalInstinct": "📊 你的速度",
-      "recommendation": "⭐ 推薦職業",
-      "otherTests": "查看其他測試"
-    },
-    "game": {
-      "wait": "等待...",
-      "waitDesc": "變綠時點擊",
-      "click": "點擊!!!",
-      "tooSoon": "太快了！",
-      "clickToRetry": "點擊重試",
-      "clickToContinue": "點擊繼續"
-    },
-    "alerts": {
-      "linkCopied": "連結已複製！",
-      "shareFailed": "無法使用分享功能。",
-      "wechatCopy": "連結已複製。請貼上到微信分享。"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🎯 推薦的前5個類似測試",
-      "popularTestsTop5": "🔥 推薦的前5個熱門測試"
-    }
-  },
-  "phase2HearingAgeTest": {
-    "startMessage": {
-      "line1": "你能聽到「蚊子鈴聲」嗎？",
-      "line2": "人的聽力從20多歲中期開始老化，逐漸聽不到高音（高頻率）。",
-      "line3": "對十幾歲的人來說像噪音的聲音，對40多歲的人來說可能完全是寂靜。",
-      "line4": "現在將揚聲器音量調至50%以上，測量你的耳朵年齡。",
-      "line5": "※ 建議使用耳機/頭戴式耳機。",
-      "line6": "開始測量 🎧"
-    },
-    "game": {
-      "volumeCheck": "這個聲音聽清楚嗎？",
-      "volumeCheckDesc": "檢查音量並按[確認]",
-      "listen": "聽{frequency}Hz的聲音",
-      "listenDesc": "聽到選擇[聽得到]，聽不到選擇[聽不到]",
-      "confirm": "確認",
-      "canHear": "聽得到",
-      "cannotHear": "聽不到",
-      "replay": "重新播放",
-      "step": "步驟"
-    },
-    "ui": {
-      "hearingAge": "📊 你的聽力",
-      "recommendation": "⭐ 推薦",
-      "shareResult": "分享結果",
-      "linkCopy": "複製連結",
-      "kakao": "KakaoTalk",
-      "telegram": "Telegram",
-      "wechat": "微信",
-      "line": "Line",
-      "whatsapp": "WhatsApp",
-      "adsenseTitle": "廣告",
-      "similarTests": "類似測試",
-      "goToTest": "開始測試",
-      "step": "步驟"
-    },
-    "alerts": {
-      "linkCopied": "連結已複製！",
-      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
-      "wechatCopy": "連結已複製！請在微信中貼上分享。"
-    },
-    "shareMessages": {
-      "default": "我的耳朵年齡是{age}！🎧 有人能聽到19,000Hz嗎？如果聽到這個，你就是十幾歲。",
-      "startDefault": "我的耳朵幾歲？可聽頻率測試 🎧",
-      "startKakao": "我的耳朵幾歲？可聽頻率測試 🎧",
-      "startWechat": "我的耳朵幾歲？可聽頻率測試 🎧",
-      "startWhatsapp": "我的耳朵幾歲？可聽頻率測試 🎧",
-      "startTelegram": "我的耳朵幾歲？可聽頻率測試 🎧",
-      "startLine": "我的耳朵幾歲？可聽頻率測試 🎧"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🔥 熱門測試推薦 Top5",
-      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
-    }
-  },
-  "phase2EyesightTest": {
-    "startMessage": {
-      "line1": "現在這些字看起來模糊嗎？",
-      "line2": "你整日面對手機和顯示器，眼睛疲憊。視力是否在急劇下降？",
-      "line3": "無需去醫院，1分鐘即可檢查你的眼睛狀況！",
-      "line4": "找出逐漸縮小的「C」形狀。如果你達到最後階段，你就是蒙古人！",
-      "line5": "測量我的視力水平 👓",
-      "line6": "Start Eye Test ▶️",
-      "line7": "測量我的視力水平 👓"
-    },
-    "ui": {
-      "estimatedVision": "你的視力",
-      "recommendation": "推薦",
-      "shareResult": "分享結果",
-      "linkCopy": "複製連結",
-      "kakao": "KakaoTalk",
-      "telegram": "Telegram",
-      "wechat": "微信",
-      "line": "Line",
-      "whatsapp": "WhatsApp",
-      "adsenseTitle": "廣告",
-      "similarTests": "類似測試",
-      "goToTest": "進行測試",
-      "gameInstruction": "選擇C開口的方向"
-    },
-    "alerts": {
-      "linkCopied": "連結已複製！",
-      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
-      "wechatCopy": "連結已複製！在微信中貼上並分享。"
-    },
-    "shareMessages": {
-      "default": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
-      "kakao": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
-      "wechat": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
-      "whatsapp": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
-      "telegram": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
-      "line": "我的視力水平是{type}！👓 用智能手機1分鐘測量視力。你也試試！",
-      "startDefault": "我的視力是蒙古人嗎？快速視力測試 👓",
-      "startKakao": "我的視力是蒙古人嗎？快速視力測試 👓",
-      "startWechat": "我的視力是蒙古人嗎？快速視力測試 👓",
-      "startWhatsapp": "我的視力是蒙古人嗎？快速視力測試 👓",
-      "startTelegram": "我的視力是蒙古人嗎？快速視力測試 👓",
-      "startLine": "我的視力是蒙古人嗎？快速視力測試 👓"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🔥 最近熱門測試前5名",
-      "popularTestsTop5": "🔥 最近熱門測試前5名"
-    }
-  },
-  "phase2ColorBlindTest": {
-    "startMessage": {
-      "line1": "你看到的紅色，對別人來說也是紅色嗎？",
-      "line2": "我國約5.9%的男性和0.4%的女性有色覺異常（色盲/色弱）。",
-      "line3": "特別是輕度色弱，很多人直到成年都不知道。",
-      "line4": "你是否看到了與別人不同顏色的世界？現在就檢查一下吧。",
-      "line5": "※ 為了準確檢測，請將螢幕亮度調至最大。",
-      "line6": "※ 此測試不能代替醫學診斷。",
-      "line7": "開始測試 👁️ Start Color Test ▶️"
-    },
-    "ui": {
-      "question": "問題",
-      "selectAnswer": "選擇你看到的數字",
-      "nothing": "看不到",
-      "next": "下一個",
-      "finish": "完成",
-      "startTest": "開始測試 👁️ Start Color Test ▶️",
-      "characteristics": "特徵",
-      "recommendation": "推薦",
-      "shareResult": "分享結果",
-      "linkCopy": "複製連結",
-      "kakao": "KakaoTalk",
-      "telegram": "Telegram",
-      "wechat": "微信",
-      "line": "Line",
-      "whatsapp": "WhatsApp",
-      "adsenseTitle": "廣告",
-      "goToTest": "進行測試",
-      "similarTests": "類似其他測試"
-    },
-    "alerts": {
-      "linkCopied": "連結已複製！",
-      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
-      "wechatCopy": "連結已複製！請在微信中貼上分享。"
-    },
-    "shareMessages": {
-      "default": "我眼中看到的世界是{type}！🎨 你看到第12題的數字是什麼？",
-      "kakao": "我眼中看到的世界是{type}！🎨 你看到第12題的數字是什麼？",
-      "wechat": "我眼中看到的世界是{type}！🎨 你看到第12題的數字是什麼？",
-      "whatsapp": "我眼中看到的世界是{type}！🎨 你看到第12題的數字是什麼？",
-      "telegram": "我眼中看到的世界是{type}！🎨 你看到第12題的數字是什麼？",
-      "line": "我眼中看到的世界是{type}！🎨 你看到第12題的數字是什麼？",
-      "startDefault": "我的世界是什麼顏色？色盲/色弱精密測試 🎨",
-      "startKakao": "我的世界是什麼顏色？色盲/色弱精密測試 🎨",
-      "startWechat": "我的世界是什麼顏色？色盲/色弱精密測試 🎨",
-      "startWhatsapp": "我的世界是什麼顏色？色盲/色弱精密測試 🎨",
-      "startTelegram": "我的世界是什麼顏色？色盲/色弱精密測試 🎨",
-      "startLine": "我的世界是什麼顏色？色盲/色弱精密測試 🎨"
-    },
-    "recommendations": {
-      "similarTestsTop5": "🔥 熱門測試推薦前5",
-      "popularTestsTop5": "🔥 熱門測試推薦前5"
-    }
-  },
-  "phase2GlobalTypingTest": {
-    "startMessage": {
-      "line1": "你的打字能力，是真材實料還是虛有其表？",
-      "line2": "快速打一句話誰都能做到。",
-      "line3": "但保持長段落的高速卻很難。",
-      "line4": "從問候語到諺語、名言、文學作品。你必須通過全部5輪。連當地人都認可的你真正的「平均速度」是多少？",
-      "startButton": "開始5輪測試 🖐️"
-    },
-    "ui": {
-      "round": "輪",
-      "typeSentence": "請準確輸入以下句子",
-      "startTyping": "在此輸入...",
-      "progress": "進度",
-      "averageCPM": "平均打字數",
-      "cpm": "字/分",
-      "errorPenalty": "錯誤懲罰",
-      "characteristics": "特徵",
+      "maxDigits": "最大位數",
+      "digits": "位",
+      "memoryCapacity": "記憶容量",
       "recommendation": "推薦",
       "shareResult": "分享結果",
       "linkCopy": "複製連結",
@@ -5770,26 +5279,43 @@
       "whatsapp": "WhatsApp",
       "goToTest": "參加測試",
       "adsenseTitle": "廣告",
-      "similarTests": "類似的其他測試"
+      "similarTests": "類似的其他測試",
+      "rememberNumber": "輸入你記住的數字",
+      "inputPlaceholder": "輸入{digits}位數字",
+      "submit": "確認",
+      "newRecord": "新紀錄！",
+      "enterName": "輸入您的名字以記錄在排行榜上",
+      "namePlaceholder": "姓名或ID（最多20個字符）",
+      "worldBestTop10": "世界最佳 TOP 10",
+      "level": "等級",
+      "lives": "生命",
+      "max": "最大",
+      "levelShort": "Lv."
     },
     "alerts": {
       "linkCopied": "連結已複製！",
       "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
-      "wechatCopy": "連結已複製！請在微信中貼上並分享。"
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "nameRequired": "請輸入您的名字。"
     },
     "shareMessages": {
-      "default": "我的{language}平均打字速度是{cpm}字/分！等級是{type} ⌨️ 5輪平均值。你也來挑戰？",
-      "kakao": "我的{language}平均打字速度是{cpm}字/分！等級是{type} ⌨️ 5輪平均值。你也來挑戰？",
-      "startDefault": "試試全球打字王測試！5輪實力驗證 ⌨️",
-      "startKakao": "試試全球打字王測試！5輪實力驗證 ⌨️",
-      "startWechat": "試試全球打字王測試！5輪實力驗證 ⌨️",
-      "startWhatsapp": "試試全球打字王測試！5輪實力驗證 ⌨️",
-      "startTelegram": "試試全球打字王測試！5輪實力驗證 ⌨️",
-      "startLine": "試試全球打字王測試！5輪實力驗證 ⌨️"
+      "default": "我的瞬間記憶力水準是{type}！🧠 記住了{digits}位數字。檢查一下你是否是金魚。",
+      "kakao": "我的瞬間記憶力水準是{type}！🧠 記住了{digits}位數字。檢查一下你是否是金魚。",
+      "startDefault": "試試挑戰！我的記憶力水準測試！🧠",
+      "startKakao": "試試挑戰！我的記憶力水準測試！🧠",
+      "startWechat": "試試挑戰！我的記憶力水準測試！🧠",
+      "startWhatsapp": "試試挑戰！我的記憶力水準測試！🧠",
+      "startTelegram": "試試挑戰！我的記憶力水準測試！🧠",
+      "startLine": "試試挑戰！我的記憶力水準測試！🧠"
     },
     "recommendations": {
-      "similarTestsTop5": "🎯 類似的其他測試 Top 5",
-      "popularTestsTop5": "🔥 熱門測試 Top 5"
+      "similarTestsTop5": "🎯 類似的其他測試推薦 TOP 5",
+      "popularTestsTop5": "🔥 最近熱門測試推薦 TOP 5"
     }
+  },
+  "badges": {
+    "new": "新",
+    "popular": "熱門",
+    "hot": "熱門"
   }
 }

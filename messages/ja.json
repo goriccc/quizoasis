@@ -5772,5 +5772,69 @@
       "similarTestsTop5": "🎯 類似の他のテスト Top 5",
       "popularTestsTop5": "🔥 人気テスト Top 5"
     }
+  },
+  "phase2MemoryLevelTest": {
+    "startMessage": {
+      "line1": "今見た番号、覚えていますか？",
+      "line2": "冷蔵庫の扉を開けて「何を取り出そうとしたっけ？」",
+      "line3": "6桁の認証番号を見て入力画面に書こうとしたら忘れた。",
+      "line4": "もしかしてあなたの脳細胞は徐々に消えていませんか？",
+      "line5": "人間の平均短期記憶容量は7桁（±2）と言われています。",
+      "line6": "あなたの脳は金魚でしょうか、それともスーパーコンピューターでしょうか？",
+      "line7": "私の記憶力の限界を測定する 🧠"
+    },
+    "ui": {
+      "startTest": "テスト開始",
+      "maxDigits": "最大桁数",
+      "digits": "桁",
+      "memoryCapacity": "記憶容量",
+      "recommendation": "おすすめ",
+      "shareResult": "結果を共有",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "ウィーチャット",
+      "line": "ライン",
+      "whatsapp": "WhatsApp",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "広告",
+      "similarTests": "類似の他のテスト",
+      "rememberNumber": "覚えた数字を入力してください",
+      "inputPlaceholder": "{digits}桁の数字を入力",
+      "submit": "確認",
+      "newRecord": "新記録達成！",
+      "enterName": "名前を入力してリーダーボードに記録してください",
+      "namePlaceholder": "名前またはID（最大20文字）",
+      "worldBestTop10": "世界最高記録 TOP 10",
+      "level": "レベル",
+      "lives": "ライフ",
+      "max": "最大",
+      "levelShort": "Lv."
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再試行してください。",
+      "wechatCopy": "リンクがコピーされました！ウィーチャットで貼り付けて共有してください。",
+      "nameRequired": "名前を入力してください。"
+    },
+    "shareMessages": {
+      "default": "私の瞬間記憶力レベルは{type}！🧠 数字{digits}個まで覚えました。あなたは金魚かどうか確認してみて。",
+      "kakao": "私の瞬間記憶力レベルは{type}！🧠 数字{digits}個まで覚えました。あなたは金魚かどうか確認してみて。",
+      "startDefault": "挑戦！私の記憶力レベルテストを試してみてください！🧠",
+      "startKakao": "挑戦！私の記憶力レベルテストを試してみてください！🧠",
+      "startWechat": "挑戦！私の記憶力レベルテストを試してみてください！🧠",
+      "startWhatsapp": "挑戦！私の記憶力レベルテストを試してみてください！🧠",
+      "startTelegram": "挑戦！私の記憶力レベルテストを試してみてください！🧠",
+      "startLine": "挑戦！私の記憶力レベルテストを試してみてください！🧠"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
+  "badges": {
+    "new": "NEW",
+    "popular": "人気",
+    "hot": "HOT"
   }
 }

@@ -5784,5 +5784,69 @@
       "similarTestsTop5": "🎯 Các bài kiểm tra tương tự khác Top 5",
       "popularTestsTop5": "🔥 Bài kiểm tra phổ biến Top 5"
     }
+  },
+  "phase2MemoryLevelTest": {
+    "startMessage": {
+      "line1": "Bạn có nhớ số vừa thấy không?",
+      "line2": "Mở tủ lạnh và \"mình định lấy gì nhỉ?\"",
+      "line3": "Thấy mã xác nhận 6 chữ số nhưng quên khi gõ.",
+      "line4": "Phải chăng tế bào não của bạn đang dần biến mất?",
+      "line5": "Dung lượng trí nhớ ngắn hạn trung bình của con người được cho là 7 chữ số (±2).",
+      "line6": "Não của bạn là cá vàng hay siêu máy tính?",
+      "line7": "Đo giới hạn trí nhớ của tôi 🧠"
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra",
+      "maxDigits": "Số chữ số tối đa",
+      "digits": "chữ số",
+      "memoryCapacity": "Dung lượng trí nhớ",
+      "recommendation": "Khuyến nghị",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Làm bài kiểm tra",
+      "adsenseTitle": "Quảng cáo",
+      "similarTests": "Các bài kiểm tra tương tự khác",
+      "rememberNumber": "Nhập số bạn nhớ",
+      "inputPlaceholder": "Nhập {digits} chữ số",
+      "submit": "Xác nhận",
+      "newRecord": "Kỷ lục mới!",
+      "enterName": "Nhập tên của bạn để ghi vào bảng xếp hạng",
+      "namePlaceholder": "Tên hoặc ID (tối đa 20 ký tự)",
+      "worldBestTop10": "Top 10 Thế giới",
+      "level": "Cấp độ",
+      "lives": "Lượt",
+      "max": "Tối đa",
+      "levelShort": "Lv."
+    },
+    "alerts": {
+      "linkCopied": "Liên kết đã được sao chép!",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "wechatCopy": "Liên kết đã được sao chép! Dán và chia sẻ trong WeChat.",
+      "nameRequired": "Vui lòng nhập tên của bạn."
+    },
+    "shareMessages": {
+      "default": "Mức độ trí nhớ tức thì của tôi là {type}! 🧠 Nhớ được tới {digits} chữ số. Kiểm tra xem bạn có phải là cá vàng không.",
+      "kakao": "Mức độ trí nhớ tức thì của tôi là {type}! 🧠 Nhớ được tới {digits} chữ số. Kiểm tra xem bạn có phải là cá vàng không.",
+      "startDefault": "Thử thách! Bài kiểm tra Mức độ Trí nhớ của tôi! 🧠",
+      "startKakao": "Thử thách! Bài kiểm tra Mức độ Trí nhớ của tôi! 🧠",
+      "startWechat": "Thử thách! Bài kiểm tra Mức độ Trí nhớ của tôi! 🧠",
+      "startWhatsapp": "Thử thách! Bài kiểm tra Mức độ Trí nhớ của tôi! 🧠",
+      "startTelegram": "Thử thách! Bài kiểm tra Mức độ Trí nhớ của tôi! 🧠",
+      "startLine": "Thử thách! Bài kiểm tra Mức độ Trí nhớ của tôi! 🧠"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Các bài kiểm tra tương tự khác Top 5",
+      "popularTestsTop5": "🔥 Các bài kiểm tra phổ biến gần đây Top 5"
+    }
+  },
+  "badges": {
+    "new": "MỚI",
+    "popular": "Phổ biến",
+    "hot": "HOT"
   }
 }

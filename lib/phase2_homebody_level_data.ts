@@ -1190,4 +1190,3 @@ export function calculatePhase2HomebodyLevelResult(answers: number[]): string {
     return "Type1"; // Fallback
   }
 }
-

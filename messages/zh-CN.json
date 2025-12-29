@@ -5784,5 +5784,69 @@
       "similarTestsTop5": "🎯 类似的其他测试 Top 5",
       "popularTestsTop5": "🔥 热门测试 Top 5"
     }
+  },
+  "phase2MemoryLevelTest": {
+    "startMessage": {
+      "line1": "还记得刚才看到的号码吗？",
+      "line2": "打开冰箱后\"我要拿什么来着？\"",
+      "line3": "看到6位验证码，要输入时却忘了。",
+      "line4": "你的脑细胞是否在逐渐消失？",
+      "line5": "人类平均短期记忆容量据说是7位（±2）。",
+      "line6": "你的大脑是金鱼还是超级计算机？",
+      "line7": "测量我的记忆力极限 🧠"
+    },
+    "ui": {
+      "startTest": "开始测试",
+      "maxDigits": "最大位数",
+      "digits": "位",
+      "memoryCapacity": "记忆容量",
+      "recommendation": "推荐",
+      "shareResult": "分享结果",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "参加测试",
+      "adsenseTitle": "广告",
+      "similarTests": "类似的其他测试",
+      "rememberNumber": "输入你记住的数字",
+      "inputPlaceholder": "输入{digits}位数字",
+      "submit": "确认",
+      "newRecord": "新纪录！",
+      "enterName": "输入您的名字以记录在排行榜上",
+      "namePlaceholder": "姓名或ID（最多20个字符）",
+      "worldBestTop10": "世界最佳 TOP 10",
+      "level": "等级",
+      "lives": "生命",
+      "max": "最大",
+      "levelShort": "Lv."
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "nameRequired": "请输入您的名字。"
+    },
+    "shareMessages": {
+      "default": "我的瞬间记忆力水平是{type}！🧠 记住了{digits}位数字。检查一下你是否是金鱼。",
+      "kakao": "我的瞬间记忆力水平是{type}！🧠 记住了{digits}位数字。检查一下你是否是金鱼。",
+      "startDefault": "试试挑战！我的记忆力水平测试！🧠",
+      "startKakao": "试试挑战！我的记忆力水平测试！🧠",
+      "startWechat": "试试挑战！我的记忆力水平测试！🧠",
+      "startWhatsapp": "试试挑战！我的记忆力水平测试！🧠",
+      "startTelegram": "试试挑战！我的记忆力水平测试！🧠",
+      "startLine": "试试挑战！我的记忆力水平测试！🧠"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似的其他测试推荐 TOP 5",
+      "popularTestsTop5": "🔥 最近热门测试推荐 TOP 5"
+    }
+  },
+  "badges": {
+    "new": "新",
+    "popular": "热门",
+    "hot": "热门"
   }
 }

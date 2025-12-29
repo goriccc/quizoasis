@@ -325,3 +325,73 @@ export async function incrementPlayCount(slug: string) {
     // Supabase 연결 실패 시 조용히 무시
   }
 }
+
+/**
+ * Leaderboard - World Best Top 10 조회
+ */
+export async function getLeaderboardTop10(testSlug: string) {
+  try {
+    const { data, error } = await supabase
+      .from('leaderboard')
+      .select('*')
+      .eq('test_slug', testSlug)
+      .order('score', { ascending: false })
+      .order('level', { ascending: false })
+      .limit(10);
+
+    if (error) {
+      console.error('Error fetching leaderboard:', error);
+      return [];
+    }
+
+    return data || [];
+  } catch (error) {
+    console.error('Network error fetching leaderboard:', error);
+    return [];
+  }
+}
+
+/**
+ * Leaderboard - 점수 기록 (기존보다 높으면만 기록)
+ */
+export async function submitLeaderboardScore(
+  testSlug: string,
+  playerName: string,
+  level: number,
+  score: number
+) {
+  try {
+    // 먼저 Top 10을 확인하여 최소 점수 확인
+    const top10 = await getLeaderboardTop10(testSlug);
+    
+    // Top 10이 가득 차 있고, 현재 점수가 10위보다 낮으면 기록하지 않음
+    if (top10.length >= 10) {
+      const lastScore = top10[top10.length - 1];
+      if (score < lastScore.score || (score === lastScore.score && level < lastScore.level)) {
+        return { success: false, message: 'Not high enough score' };
+      }
+    }
+
+    // 기존보다 높은 점수면 기록
+    const { data, error } = await supabase
+      .from('leaderboard')
+      .insert({
+        test_slug: testSlug,
+        player_name: playerName.substring(0, 20), // 최대 20자리
+        level: level,
+        score: score
+      })
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error submitting leaderboard score:', error);
+      return { success: false, error };
+    }
+
+    return { success: true, data };
+  } catch (error) {
+    console.error('Network error submitting leaderboard score:', error);
+    return { success: false, error };
+  }
+}

@@ -5793,5 +5793,69 @@
       "similarTestsTop5": "🎯 Similar Other Tests Top 5",
       "popularTestsTop5": "🔥 Popular Tests Top 5"
     }
+  },
+  "phase2MemoryLevelTest": {
+    "startMessage": {
+      "line1": "Do you remember the number you just saw?",
+      "line2": "Opening the fridge and 'what was I trying to get?'",
+      "line3": "Seeing a 6-digit verification code but forgetting it when typing.",
+      "line4": "Are your brain cells gradually disappearing?",
+      "line5": "The average human short-term memory capacity is said to be 7 digits (±2).",
+      "line6": "Is your brain a goldfish or a supercomputer?",
+      "line7": "Measure the limits of my memory 🧠"
+    },
+    "ui": {
+      "startTest": "Start Test",
+      "maxDigits": "Max Digits",
+      "digits": "digits",
+      "memoryCapacity": "Memory Capacity",
+      "recommendation": "Recommendation",
+      "shareResult": "Share Result",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "Advertisement",
+      "similarTests": "Similar Other Tests",
+      "rememberNumber": "Enter the number you remember",
+      "inputPlaceholder": "Enter {digits} digits",
+      "submit": "Submit",
+      "newRecord": "New Record!",
+      "enterName": "Enter your name to record on the leaderboard",
+      "namePlaceholder": "Name or ID (max 20 characters)",
+      "worldBestTop10": "World Best Top 10",
+      "level": "Level",
+      "lives": "Lives",
+      "max": "Max",
+      "levelShort": "Lv."
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "kakaoInit": "Initializing KakaoTalk share feature. Please try again in a moment.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "nameRequired": "Please enter your name."
+    },
+    "shareMessages": {
+      "default": "My instant memory level is {type}! 🧠 Remembered up to {digits} digits. Check if you're a goldfish.",
+      "kakao": "My instant memory level is {type}! 🧠 Remembered up to {digits} digits. Check if you're a goldfish.",
+      "startDefault": "Try the Challenge! My Memory Level test! 🧠",
+      "startKakao": "Try the Challenge! My Memory Level test! 🧠",
+      "startWechat": "Try the Challenge! My Memory Level test! 🧠",
+      "startWhatsapp": "Try the Challenge! My Memory Level test! 🧠",
+      "startTelegram": "Try the Challenge! My Memory Level test! 🧠",
+      "startLine": "Try the Challenge! My Memory Level test! 🧠"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar Other Tests Top 5",
+      "popularTestsTop5": "🔥 Popular Tests Top 5"
+    }
+  },
+  "badges": {
+    "new": "NEW",
+    "popular": "Popular",
+    "hot": "HOT"
   }
 }

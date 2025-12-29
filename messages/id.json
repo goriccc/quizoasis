@@ -5784,5 +5784,69 @@
       "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
       "popularTestsTop5": "🔥 Tes Populer Top 5"
     }
+  },
+  "phase2MemoryLevelTest": {
+    "startMessage": {
+      "line1": "Apakah Anda ingat nomor yang baru saja dilihat?",
+      "line2": "Membuka kulkas dan \"apa yang saya coba ambil?\"",
+      "line3": "Melihat kode verifikasi 6 digit tetapi lupa saat mengetik.",
+      "line4": "Apakah sel-sel otak Anda secara bertahap menghilang?",
+      "line5": "Kapasitas memori jangka pendek rata-rata manusia dikatakan 7 digit (±2).",
+      "line6": "Apakah otak Anda seekor ikan mas atau superkomputer?",
+      "line7": "Ukur batas ingatan saya 🧠"
+    },
+    "ui": {
+      "startTest": "Mulai Tes",
+      "maxDigits": "Digit Maksimal",
+      "digits": "digit",
+      "memoryCapacity": "Kapasitas Memori",
+      "recommendation": "Rekomendasi",
+      "shareResult": "Bagikan Hasil",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Iklan",
+      "similarTests": "Tes Serupa Lainnya",
+      "rememberNumber": "Masukkan nomor yang Anda ingat",
+      "inputPlaceholder": "Masukkan {digits} digit",
+      "submit": "Kirim",
+      "newRecord": "Rekor Baru!",
+      "enterName": "Masukkan nama Anda untuk dicatat di papan peringkat",
+      "namePlaceholder": "Nama atau ID (maksimal 20 karakter)",
+      "worldBestTop10": "Top 10 Terbaik Dunia",
+      "level": "Level",
+      "lives": "Nyawa",
+      "max": "Maks",
+      "levelShort": "Lv."
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "nameRequired": "Silakan masukkan nama Anda."
+    },
+    "shareMessages": {
+      "default": "Tingkat ingatan instan saya adalah {type}! 🧠 Mengingat hingga {digits} digit. Cek apakah Anda ikan mas.",
+      "kakao": "Tingkat ingatan instan saya adalah {type}! 🧠 Mengingat hingga {digits} digit. Cek apakah Anda ikan mas.",
+      "startDefault": "Coba Tantangan! Tes Tingkat Ingatan Saya! 🧠",
+      "startKakao": "Coba Tantangan! Tes Tingkat Ingatan Saya! 🧠",
+      "startWechat": "Coba Tantangan! Tes Tingkat Ingatan Saya! 🧠",
+      "startWhatsapp": "Coba Tantangan! Tes Tingkat Ingatan Saya! 🧠",
+      "startTelegram": "Coba Tantangan! Tes Tingkat Ingatan Saya! 🧠",
+      "startLine": "Coba Tantangan! Tes Tingkat Ingatan Saya! 🧠"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Tes Serupa Lainnya Top 5",
+      "popularTestsTop5": "🔥 Tes Populer Terkini Top 5"
+    }
+  },
+  "badges": {
+    "new": "BARU",
+    "popular": "Populer",
+    "hot": "HOT"
   }
 }
