@@ -886,6 +886,24 @@ export default function Phase2MemoryLevelTestClient({
 
           {/* Sharing Buttons */}
           <div className="mb-8 text-center">
+            <div className="max-w-[680px] mx-auto mb-4">
+              <div className="flex justify-center">
+                <a
+                  href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250"
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                >
+                  <Image
+                    width={300}
+                    height={250}
+                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
+                    alt="AliExpress"
+                    className="rounded-lg"
+                    style={{ maxWidth: '300px', height: 'auto' }}
+                  />
+                </a>
+              </div>
+            </div>
             <h2 className="text-lg font-bold text-gray-800 mb-4">{tGlobal('mbti.shareWithFriends')}</h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="w-10 h-10"><Image src="/icons/link.jpeg" alt="link" width={40} height={40} className="rounded-lg" /></button>
