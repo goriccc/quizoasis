@@ -1399,6 +1399,58 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3SummerVacationTypeTest": {
+    "startMessage": {
+      "line1": "Masih bingung mau ke mana musim panas ini?",
+      "line2": "Pantai, gunung, atau luar negeri? Kalau hanya galau, musim panas bisa habis dulu.",
+      "line3": "Destinasi terbaik bukan yang paling terkenal, tapi yang paling cocok untukmu.",
+      "line4": "Dari gaya traveling, budget, hingga teman seperjalanan—kami sarankan tipe liburan musim panasmu.",
+      "line5": "Hanya 12 pilihan untuk menemukan destinasi yang pas ☀️ Mulai tes tipe liburan"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tipe liburan musim panas)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "vacationStyle": "Gaya liburan",
+      "recommendedPlaces": "Destinasi yang disarankan",
+      "budgetSense": "Pendekatan budget",
+      "goodMatch": "Teman seperjalanan yang cocok",
+      "badMatch": "Teman seperjalanan yang sulit",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe liburan musim panasku {type}! ☀️ Kamu mau ke mana musim panas ini? Ikut tes!",
+      "kakao": "Tipe liburan musim panasku {type}! ☀️ Kamu mau ke mana musim panas ini? Ikut tes!",
+      "wechat": "Tipe liburan musim panasku {type}! ☀️ Kamu mau ke mana musim panas ini? Ikut tes!",
+      "whatsapp": "Tipe liburan musim panasku {type}! ☀️ Kamu mau ke mana musim panas ini? Ikut tes!",
+      "telegram": "Tipe liburan musim panasku {type}! ☀️ Kamu mau ke mana musim panas ini? Ikut tes!",
+      "line": "Tipe liburan musim panasku {type}! ☀️ Kamu mau ke mana musim panas ini? Ikut tes!",
+      "startDefault": "Cocok musim panas! Tipe liburanku ☀️ 12 pertanyaan pilih destinasi",
+      "startKakao": "Cocok musim panas! Tipe liburanku ☀️ 12 pertanyaan pilih destinasi",
+      "startWechat": "Cocok musim panas! Tipe liburanku ☀️ 12 pertanyaan pilih destinasi",
+      "startWhatsapp": "Cocok musim panas! Tipe liburanku ☀️ 12 pertanyaan pilih destinasi",
+      "startTelegram": "Cocok musim panas! Tipe liburanku ☀️ 12 pertanyaan pilih destinasi",
+      "startLine": "Cocok musim panas! Tipe liburanku ☀️ 12 pertanyaan pilih destinasi"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

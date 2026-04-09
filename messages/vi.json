@@ -1399,6 +1399,58 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3SummerVacationTypeTest": {
+    "startMessage": {
+      "line1": "Hè này vẫn chưa chọn được đi đâu?",
+      "line2": "Biển, núi hay nước ngoài? Cứ phân vân là hết hè mất.",
+      "line3": "Điểm đến tuyệt nhất không phải chỗ nổi tiếng nhất mà là hợp với bạn.",
+      "line4": "Từ phong cách du lịch, ngân sách đến đồng hành—gợi ý kỳ nghỉ hè phù hợp.",
+      "line5": "Chỉ 12 lựa chọn để tìm điểm đến hợp gu ☀️ Bắt đầu test kiểu kỳ nghỉ"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kiểu kỳ nghỉ mùa hè)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "vacationStyle": "Kiểu kỳ nghỉ",
+      "recommendedPlaces": "Gợi ý điểm đến",
+      "budgetSense": "Cảm giác ngân sách",
+      "goodMatch": "Bạn đồng hành hợp gu",
+      "badMatch": "Bạn đồng hành khó hợp",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Kiểu kỳ nghỉ hè của mình là {type}! ☀️ Bạn đi đâu hè này? Làm test cùng nhé!",
+      "kakao": "Kiểu kỳ nghỉ hè của mình là {type}! ☀️ Bạn đi đâu hè này? Làm test cùng nhé!",
+      "wechat": "Kiểu kỳ nghỉ hè của mình là {type}! ☀️ Bạn đi đâu hè này? Làm test cùng nhé!",
+      "whatsapp": "Kiểu kỳ nghỉ hè của mình là {type}! ☀️ Bạn đi đâu hè này? Làm test cùng nhé!",
+      "telegram": "Kiểu kỳ nghỉ hè của mình là {type}! ☀️ Bạn đi đâu hè này? Làm test cùng nhé!",
+      "line": "Kiểu kỳ nghỉ hè của mình là {type}! ☀️ Bạn đi đâu hè này? Làm test cùng nhé!",
+      "startDefault": "Hè hợp gu! Kiểu kỳ nghỉ của tôi ☀️ 12 câu chọn điểm đến",
+      "startKakao": "Hè hợp gu! Kiểu kỳ nghỉ của tôi ☀️ 12 câu chọn điểm đến",
+      "startWechat": "Hè hợp gu! Kiểu kỳ nghỉ của tôi ☀️ 12 câu chọn điểm đến",
+      "startWhatsapp": "Hè hợp gu! Kiểu kỳ nghỉ của tôi ☀️ 12 câu chọn điểm đến",
+      "startTelegram": "Hè hợp gu! Kiểu kỳ nghỉ của tôi ☀️ 12 câu chọn điểm đến",
+      "startLine": "Hè hợp gu! Kiểu kỳ nghỉ của tôi ☀️ 12 câu chọn điểm đến"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Ồ? Đẹp quá. Cứ mua đã!\"",

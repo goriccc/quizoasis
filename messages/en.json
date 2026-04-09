@@ -1440,6 +1440,58 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3SummerVacationTypeTest": {
+    "startMessage": {
+      "line1": "Still deciding where to go this summer?",
+      "line2": "Beach, mountains, or abroad—if you only worry, summer may end before you book anything.",
+      "line3": "The best trip is not the most famous place, but the place that fits you.",
+      "line4": "From travel style, budget sense, and who you go with—we suggest a summer destination that suits you.",
+      "line5": "Just 12 choices to find your summer match ☀️ Start the vacation type test"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Summer vacation type)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "vacationStyle": "Vacation style",
+      "recommendedPlaces": "Suggested destinations",
+      "budgetSense": "Budget approach",
+      "goodMatch": "Best travel buddy",
+      "badMatch": "Tricky travel buddy",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My summer vacation type is {type}! ☀️ Where are you going this summer? Take the test!",
+      "kakao": "My summer vacation type is {type}! ☀️ Where are you going this summer? Take the test!",
+      "wechat": "My summer vacation type is {type}! ☀️ Where are you going this summer? Take the test!",
+      "whatsapp": "My summer vacation type is {type}! ☀️ Where are you going this summer? Take the test!",
+      "telegram": "My summer vacation type is {type}! ☀️ Where are you going this summer? Take the test!",
+      "line": "My summer vacation type is {type}! ☀️ Where are you going this summer? Take the test!",
+      "startDefault": "Summer match! My vacation type ☀️ 12 questions to pick a trip",
+      "startKakao": "Summer match! My vacation type ☀️ 12 questions to pick a trip",
+      "startWechat": "Summer match! My vacation type ☀️ 12 questions to pick a trip",
+      "startWhatsapp": "Summer match! My vacation type ☀️ 12 questions to pick a trip",
+      "startTelegram": "Summer match! My vacation type ☀️ 12 questions to pick a trip",
+      "startLine": "Summer match! My vacation type ☀️ 12 questions to pick a trip"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

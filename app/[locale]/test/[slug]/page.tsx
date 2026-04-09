@@ -28,6 +28,7 @@ import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { phase3AttachmentLoveQuestions, phase3AttachmentLoveResults } from '@/lib/phase3AttachmentLoveData';
 import { phase3BurnoutFatigueQuestions, phase3BurnoutFatigueResults } from '@/lib/phase3BurnoutFatigueData';
+import { phase3SummerVacationTypeQuestions, phase3SummerVacationTypeResults } from '@/lib/phase3SummerVacationTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -169,6 +170,9 @@ const Phase3AttachmentLoveTestClient = dynamic(() => import('@/components/Phase3
   ssr: false
 });
 const Phase3BurnoutFatigueTestClient = dynamic(() => import('@/components/Phase3BurnoutFatigueTestClient'), {
+  ssr: false
+});
+const Phase3SummerVacationTypeTestClient = dynamic(() => import('@/components/Phase3SummerVacationTypeTestClient'), {
   ssr: false
 });
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -461,6 +465,43 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = params;
   let test = await getTestBySlug(slug);
+
+  if (!test && slug === 'phase3-summer-vacation-type') {
+    test = {
+      slug: 'phase3-summer-vacation-type',
+      title: {
+        ko: '올여름 찰떡! 내 휴가지 유형',
+        en: 'Your Summer Vacation Match Type',
+        ja: '今年の夏ピッタリ！私の休暇タイプ',
+        'zh-CN': '今夏合拍！我的度假类型',
+        'zh-TW': '今夏合拍！我的度假類型',
+        vi: 'Hè này hợp gu! Kiểu kỳ nghỉ của tôi',
+        id: 'Cocok musim panas! Tipe liburanku',
+      },
+      description: {
+        ko: '여행 성향·예산·동행으로 보는 휴가지 추천. 12문항 2지선다.',
+        en: 'Summer trip style in 12 A/B questions — destination vibe match.',
+        ja: '旅スタイル・予算・同行者から見る夏の休暇タイプ。12問の2択。',
+        'zh-CN': '从旅行风格、预算、同行看今夏度假类型，12 道二选一。',
+        'zh-TW': '從旅行風格、預算、同行看今夏度假類型，12 題二選一。',
+        vi: 'Phong cách du lịch, ngân sách, đồng hành — 12 câu trắc nghiệm.',
+        id: 'Gaya traveling, budget, teman seperjalanan — 12 pertanyaan pilihan ganda.',
+      },
+      thumbnail: 'p3_test_summer_vacation_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['여행', '휴가', '심리'],
+        en: ['Travel', 'Vacation', 'Psychology'],
+        ja: ['旅行', '休暇', '心理'],
+        'zh-CN': ['旅行', '度假', '心理'],
+        'zh-TW': ['旅行', '度假', '心理'],
+        vi: ['Du lịch', 'Kỳ nghỉ', 'Tâm lý'],
+        id: ['Travel', 'Liburan', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
 
   if (!test && slug === 'phase3-burnout-fatigue-precision') {
     test = {
@@ -2060,6 +2101,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3BurnoutFatigueQuestions}
           results={phase3BurnoutFatigueResults}
           questionCount={phase3BurnoutFatigueQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-summer-vacation-type') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase3-summer-vacation-type',
+      title: {
+        ko: '올여름 찰떡! 내 휴가지 유형',
+        en: 'Your Summer Vacation Match Type',
+        ja: '今年の夏ピッタリ！私の休暇タイプ',
+        'zh-CN': '今夏合拍！我的度假类型',
+        'zh-TW': '今夏合拍！我的度假類型',
+        vi: 'Hè này hợp gu! Kiểu kỳ nghỉ của tôi',
+        id: 'Cocok musim panas! Tipe liburanku',
+      },
+      description: {
+        ko: '여행 성향·예산·동행으로 보는 휴가지 추천. 12문항 2지선다.',
+        en: 'Summer trip style in 12 A/B questions — destination vibe match.',
+        ja: '旅スタイル・予算・同行者から見る夏の休暇タイプ。12問の2択。',
+        'zh-CN': '从旅行风格、预算、同行看今夏度假类型，12 道二选一。',
+        'zh-TW': '從旅行風格、預算、同行看今夏度假類型，12 題二選一。',
+        vi: 'Phong cách du lịch, ngân sách, đồng hành — 12 câu trắc nghiệm.',
+        id: 'Gaya traveling, budget, teman seperjalanan — 12 pertanyaan pilihan ganda.',
+      },
+      thumbnail: 'p3_test_summer_vacation_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['여행', '휴가', '심리'],
+        en: ['Travel', 'Vacation', 'Psychology'],
+        ja: ['旅行', '休暇', '心理'],
+        'zh-CN': ['旅行', '度假', '心理'],
+        'zh-TW': ['旅行', '度假', '心理'],
+        vi: ['Du lịch', 'Kỳ nghỉ', 'Tâm lý'],
+        id: ['Travel', 'Liburan', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SummerVacationTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SummerVacationTypeQuestions}
+          results={phase3SummerVacationTypeResults}
+          questionCount={phase3SummerVacationTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

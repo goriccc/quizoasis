@@ -1400,6 +1400,58 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3SummerVacationTypeTest": {
+    "startMessage": {
+      "line1": "今年の夏、まだ行き先を決めていませんか？",
+      "line2": "海か山か海外か。悩んでいるうちに夏が終わることも。",
+      "line3": "最高の旅先は有名どころより、自分に合う場所です。",
+      "line4": "旅のスタイル・予算・同行者から、今年の夏に合う休暇先を提案します。",
+      "line5": "12の選択だけで夏の相性旅先を ☀️ バケーションタイプ診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（夏休み・バケーションタイプ）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "vacationStyle": "休暇スタイル",
+      "recommendedPlaces": "おすすめの行き先",
+      "budgetSense": "予算感",
+      "goodMatch": "相性抜群の同行者",
+      "badMatch": "相性が厳しい同行者",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の夏の休暇タイプは{type}！☀️ 今年の夏はどこへ？一緒に診断しよう！",
+      "kakao": "私の夏の休暇タイプは{type}！☀️ 今年の夏はどこへ？一緒に診断しよう！",
+      "wechat": "私の夏の休暇タイプは{type}！☀️ 今年の夏はどこへ？一緒に診断しよう！",
+      "whatsapp": "私の夏の休暇タイプは{type}！☀️ 今年の夏はどこへ？一緒に診断しよう！",
+      "telegram": "私の夏の休暇タイプは{type}！☀️ 今年の夏はどこへ？一緒に診断しよう！",
+      "line": "私の夏の休暇タイプは{type}！☀️ 今年の夏はどこへ？一緒に診断しよう！",
+      "startDefault": "夏の相性！私のバケーションタイプ ☀️ 12問で旅先を",
+      "startKakao": "夏の相性！私のバケーションタイプ ☀️ 12問で旅先を",
+      "startWechat": "夏の相性！私のバケーションタイプ ☀️ 12問で旅先を",
+      "startWhatsapp": "夏の相性！私のバケーションタイプ ☀️ 12問で旅先を",
+      "startTelegram": "夏の相性！私のバケーションタイプ ☀️ 12問で旅先を",
+      "startLine": "夏の相性！私のバケーションタイプ ☀️ 12問で旅先を"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

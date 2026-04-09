@@ -1406,6 +1406,58 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3SummerVacationTypeTest": {
+    "startMessage": {
+      "line1": "今年夏天還沒想好去哪？",
+      "line2": "海邊、山上還是國外？光煩惱夏天可能就過了。",
+      "line3": "最好的度假地不是最紅的地方，而是最適合你的地方。",
+      "line4": "從旅行風格、預算感到同行方式，為你推薦今夏合適的度假類型。",
+      "line5": "只要12個選擇，找到今夏合拍目的地 ☀️ 開始度假類型測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（夏日度假類型）",
+      "goToTest": "前往測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測驗",
+      "vacationStyle": "度假風格",
+      "recommendedPlaces": "推薦目的地",
+      "budgetSense": "預算感覺",
+      "goodMatch": "合拍旅伴",
+      "badMatch": "難合拍旅伴",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的今夏度假類型是{type}！☀️ 你夏天去哪？一起測！",
+      "kakao": "我的今夏度假類型是{type}！☀️ 你夏天去哪？一起測！",
+      "wechat": "我的今夏度假類型是{type}！☀️ 你夏天去哪？一起測！",
+      "whatsapp": "我的今夏度假類型是{type}！☀️ 你夏天去哪？一起測！",
+      "telegram": "我的今夏度假類型是{type}！☀️ 你夏天去哪？一起測！",
+      "line": "我的今夏度假類型是{type}！☀️ 你夏天去哪？一起測！",
+      "startDefault": "今夏合拍！我的度假類型 ☀️ 12題選旅行地",
+      "startKakao": "今夏合拍！我的度假類型 ☀️ 12題選旅行地",
+      "startWechat": "今夏合拍！我的度假類型 ☀️ 12題選旅行地",
+      "startWhatsapp": "今夏合拍！我的度假類型 ☀️ 12題選旅行地",
+      "startTelegram": "今夏合拍！我的度假類型 ☀️ 12題選旅行地",
+      "startLine": "今夏合拍！我的度假類型 ☀️ 12題選旅行地"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先買了再說！\"",
