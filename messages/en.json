@@ -1389,6 +1389,57 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3BurnoutFatigueTest": {
+    "startMessage": {
+      "line1": "Lately you do not want to do anything and feel tired every day—is that strange?",
+      "line2": "If rest does not help, you sigh on the way to work, and things you loved feel dull…",
+      "line3": "It may not be a willpower problem.",
+      "line4": "Burnout does not strike overnight. Body, emotions, and mind drain slowly—then you are fully depleted.",
+      "line5": "We diagnose your fatigue level in three axes.\nCheck my burnout level 🔋 Start the precision fatigue test"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Burnout — Precision Fatigue)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "burnoutLevel": "Burnout level",
+      "characteristics": "Main traits",
+      "goodMatch": "Dream match",
+      "badMatch": "Difficult match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My burnout level is {type}! 🔋 I need a vacation now… what is yours?",
+      "kakao": "My burnout level is {type}! 🔋 I need a vacation now… what is yours?",
+      "wechat": "My burnout level is {type}! 🔋 I need a vacation now… what is yours?",
+      "whatsapp": "My burnout level is {type}! 🔋 I need a vacation now… what is yours?",
+      "telegram": "My burnout level is {type}! 🔋 I need a vacation now… what is yours?",
+      "line": "My burnout level is {type}! 🔋 I need a vacation now… what is yours?",
+      "startDefault": "Burnout check: precision fatigue diagnosis 🔋 Check my burnout level",
+      "startKakao": "Burnout check: precision fatigue diagnosis 🔋 Check my burnout level",
+      "startWechat": "Burnout check: precision fatigue diagnosis 🔋 Check my burnout level",
+      "startWhatsapp": "Burnout check: precision fatigue diagnosis 🔋 Check my burnout level",
+      "startTelegram": "Burnout check: precision fatigue diagnosis 🔋 Check my burnout level",
+      "startLine": "Burnout check: precision fatigue diagnosis 🔋 Check my burnout level"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

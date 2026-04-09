@@ -1349,6 +1349,57 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3BurnoutFatigueTest": {
+    "startMessage": {
+      "line1": "なぜか何もしたくないし、毎日つらいのに、それっておかしい？",
+      "line2": "休んでも回復しない。通勤でため息ばかり。好きだったことも楽しくないなら。",
+      "line3": "それは根性の問題じゃないかもしれません。",
+      "line4": "バーンアウトは一夜にして起きません。身体・感情・認知が少しずつ削られ、ある日ゼロになります。",
+      "line5": "今の疲労度を3つの軸で精密に診断します。\nバーンアウトレベルをチェック 🔋 精密疲労診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（バーンアウト・精密疲労診断）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "burnoutLevel": "バーンアウトレベル",
+      "characteristics": "主な特徴",
+      "goodMatch": "相性抜群",
+      "badMatch": "相性が厳しい",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私のバーンアウトレベルは{type}！🔋 今すぐ休暇が欲しい…あなたは？",
+      "kakao": "私のバーンアウトレベルは{type}！🔋 今すぐ休暇が欲しい…あなたは？",
+      "wechat": "私のバーンアウトレベルは{type}！🔋 今すぐ休暇が欲しい…あなたは？",
+      "whatsapp": "私のバーンアウトレベルは{type}！🔋 今すぐ休暇が欲しい…あなたは？",
+      "telegram": "私のバーンアウトレベルは{type}！🔋 今すぐ休暇が欲しい…あなたは？",
+      "line": "私のバーンアウトレベルは{type}！🔋 今すぐ休暇が欲しい…あなたは？",
+      "startDefault": "私もバーンアウト？疲労度精密診断 🔋 レベルをチェック",
+      "startKakao": "私もバーンアウト？疲労度精密診断 🔋 レベルをチェック",
+      "startWechat": "私もバーンアウト？疲労度精密診断 🔋 レベルをチェック",
+      "startWhatsapp": "私もバーンアウト？疲労度精密診断 🔋 レベルをチェック",
+      "startTelegram": "私もバーンアウト？疲労度精密診断 🔋 レベルをチェック",
+      "startLine": "私もバーンアウト？疲労度精密診断 🔋 レベルをチェック"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

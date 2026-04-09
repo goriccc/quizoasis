@@ -1348,6 +1348,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3BurnoutFatigueTest": {
+    "startMessage": {
+      "line1": "Belakangan tidak ingin melakukan apa pun dan lelah setiap hari — apakah itu aneh?",
+      "line2": "Istirahat tidak membantu, menghela napas di perjalanan kerja, hal yang dulu disukai terasa hambar…",
+      "line3": "Ini mungkin bukan soal kemauan keras.",
+      "line4": "Burnout tidak datang semalam. Tubuh, emosi, dan pikiran terkuras perlahan hingga habis.",
+      "line5": "Kami menilai tingkat kelelahan Anda dalam tiga sumbu.\nCek tingkat burnout 🔋 Mulai tes kelelahan presisi"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Burnout — diagnosis kelelahan presisi)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "burnoutLevel": "Tingkat burnout",
+      "characteristics": "Ciri utama",
+      "goodMatch": "Pasangan ideal",
+      "badMatch": "Kurang cocok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tingkat burnout saya {type}! 🔋 Butuh liburan sekarang… bagaimana denganmu?",
+      "kakao": "Tingkat burnout saya {type}! 🔋 Butuh liburan sekarang… bagaimana denganmu?",
+      "wechat": "Tingkat burnout saya {type}! 🔋 Butuh liburan sekarang… bagaimana denganmu?",
+      "whatsapp": "Tingkat burnout saya {type}! 🔋 Butuh liburan sekarang… bagaimana denganmu?",
+      "telegram": "Tingkat burnout saya {type}! 🔋 Butuh liburan sekarang… bagaimana denganmu?",
+      "line": "Tingkat burnout saya {type}! 🔋 Butuh liburan sekarang… bagaimana denganmu?",
+      "startDefault": "Apakah saya juga burnout? Diagnosis kelelahan presisi 🔋 Cek tingkatnya",
+      "startKakao": "Apakah saya juga burnout? Diagnosis kelelahan presisi 🔋 Cek tingkatnya",
+      "startWechat": "Apakah saya juga burnout? Diagnosis kelelahan presisi 🔋 Cek tingkatnya",
+      "startWhatsapp": "Apakah saya juga burnout? Diagnosis kelelahan presisi 🔋 Cek tingkatnya",
+      "startTelegram": "Apakah saya juga burnout? Diagnosis kelelahan presisi 🔋 Cek tingkatnya",
+      "startLine": "Apakah saya juga burnout? Diagnosis kelelahan presisi 🔋 Cek tingkatnya"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

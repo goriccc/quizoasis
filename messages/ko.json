@@ -610,6 +610,57 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3BurnoutFatigueTest": {
+    "startMessage": {
+      "line1": "요즘 이상하게 아무것도 하기 싫고, 매일 피곤한데 이상한 건가요?",
+      "line2": "쉬어도 회복이 안 되고, 출근길마다 한숨이 나오고, 좋아하던 것들도 재미없어졌다면.",
+      "line3": "그건 의지력의 문제가 아닐 수 있습니다.",
+      "line4": "번아웃은 갑자기 오지 않습니다. 신체적, 감정적, 인지적으로 서서히 소진되다가 어느 순간 완전히 방전됩니다.",
+      "line5": "지금 내 피로도가 어느 단계인지, 3가지 축으로 정밀하게 진단해 드립니다.\n나의 번아웃 레벨 확인하기 🔋 피로도 정밀 진단 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (번아웃 피로도 정밀 진단)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "burnoutLevel": "번아웃 레벨",
+      "characteristics": "주요 특징",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 번아웃 레벨은 {type}! 🔋 나 당장 휴가 필요해... 너는 몇 레벨이야?",
+      "kakao": "내 번아웃 레벨은 {type}! 🔋 나 당장 휴가 필요해... 너는 몇 레벨이야?",
+      "wechat": "내 번아웃 레벨은 {type}! 🔋 나 당장 휴가 필요해... 너는 몇 레벨이야?",
+      "whatsapp": "내 번아웃 레벨은 {type}! 🔋 나 당장 휴가 필요해... 너는 몇 레벨이야?",
+      "telegram": "내 번아웃 레벨은 {type}! 🔋 나 당장 휴가 필요해... 너는 몇 레벨이야?",
+      "line": "내 번아웃 레벨은 {type}! 🔋 나 당장 휴가 필요해... 너는 몇 레벨이야?",
+      "startDefault": "혹시 나도 번아웃? 피로도 정밀 진단 🔋 나의 번아웃 레벨 확인하기",
+      "startKakao": "혹시 나도 번아웃? 피로도 정밀 진단 🔋 나의 번아웃 레벨 확인하기",
+      "startWechat": "혹시 나도 번아웃? 피로도 정밀 진단 🔋 나의 번아웃 레벨 확인하기",
+      "startWhatsapp": "혹시 나도 번아웃? 피로도 정밀 진단 🔋 나의 번아웃 레벨 확인하기",
+      "startTelegram": "혹시 나도 번아웃? 피로도 정밀 진단 🔋 나의 번아웃 레벨 확인하기",
+      "startLine": "혹시 나도 번아웃? 피로도 정밀 진단 🔋 나의 번아웃 레벨 확인하기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"어? 예쁘다. 일단 사!\"",

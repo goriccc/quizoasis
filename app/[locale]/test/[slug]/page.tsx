@@ -27,6 +27,7 @@ import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { phase3AttachmentLoveQuestions, phase3AttachmentLoveResults } from '@/lib/phase3AttachmentLoveData';
+import { phase3BurnoutFatigueQuestions, phase3BurnoutFatigueResults } from '@/lib/phase3BurnoutFatigueData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -165,6 +166,9 @@ const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient
   ssr: false
 });
 const Phase3AttachmentLoveTestClient = dynamic(() => import('@/components/Phase3AttachmentLoveTestClient'), {
+  ssr: false
+});
+const Phase3BurnoutFatigueTestClient = dynamic(() => import('@/components/Phase3BurnoutFatigueTestClient'), {
   ssr: false
 });
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -457,6 +461,43 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = params;
   let test = await getTestBySlug(slug);
+
+  if (!test && slug === 'phase3-burnout-fatigue-precision') {
+    test = {
+      slug: 'phase3-burnout-fatigue-precision',
+      title: {
+        ko: '혹시 나도 번아웃? 피로도 정밀 진단',
+        en: 'Burnout Check: Precision Fatigue Diagnosis',
+        ja: '私もバーンアウト？疲労度精密診断',
+        'zh-CN': '我也会职业倦怠吗？疲劳度精密诊断',
+        'zh-TW': '我也會職業倦怠嗎？疲勞度精密診斷',
+        vi: 'Bạn có đang kiệt sức? Chẩn đoán mức mệt mỏi',
+        id: 'Apakah aku burnout? Diagnosis kelelahan presisi',
+      },
+      description: {
+        ko: '신체·감정·인지 3축으로 보는 번아웃·피로도 레벨. 12문항.',
+        en: 'Burnout and fatigue levels across body, emotion, and cognition — 12 questions.',
+        ja: '身体・感情・認知の3軸で見るバーンアウト／疲労度。12問。',
+        'zh-CN': '从身体、情绪、认知三轴看你的倦怠与疲劳度，12 题。',
+        'zh-TW': '從身體、情緒、認知三軸看你的倦怠與疲勞度，12 題。',
+        vi: '3 trục: thể chất, cảm xúc, nhận thức — 12 câu.',
+        id: 'Tiga sumbu: fisik, emosi, kognisi — 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_burnout_fatigue_level.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '직장', '멘탈'],
+        en: ['Psychology', 'Work', 'Mental health'],
+        ja: ['心理', '職場', 'メンタル'],
+        'zh-CN': ['心理', '职场', '心理'],
+        'zh-TW': ['心理', '職場', '心理'],
+        vi: ['Tâm lý', 'Công sở', 'Sức khỏe tinh thần'],
+        id: ['Psikologi', 'Kerja', 'Kesehatan mental'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
 
   if (!test && slug === 'phase3-attachment-style-love') {
     test = {
@@ -1964,6 +2005,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3AttachmentLoveQuestions}
           results={phase3AttachmentLoveResults}
           questionCount={phase3AttachmentLoveQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-burnout-fatigue-precision') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase3-burnout-fatigue-precision',
+      title: {
+        ko: '혹시 나도 번아웃? 피로도 정밀 진단',
+        en: 'Burnout Check: Precision Fatigue Diagnosis',
+        ja: '私もバーンアウト？疲労度精密診断',
+        'zh-CN': '我也会职业倦怠吗？疲劳度精密诊断',
+        'zh-TW': '我也會職業倦怠嗎？疲勞度精密診斷',
+        vi: 'Bạn có đang kiệt sức? Chẩn đoán mức mệt mỏi',
+        id: 'Apakah aku burnout? Diagnosis kelelahan presisi',
+      },
+      description: {
+        ko: '신체·감정·인지 3축으로 보는 번아웃·피로도 레벨. 12문항.',
+        en: 'Burnout and fatigue levels across body, emotion, and cognition — 12 questions.',
+        ja: '身体・感情・認知の3軸で見るバーンアウト／疲労度。12問。',
+        'zh-CN': '从身体、情绪、认知三轴看你的倦怠与疲劳度，12 题。',
+        'zh-TW': '從身體、情緒、認知三軸看你的倦怠與疲勞度，12 題。',
+        vi: '3 trục: thể chất, cảm xúc, nhận thức — 12 câu.',
+        id: 'Tiga sumbu: fisik, emosi, kognisi — 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_burnout_fatigue_level.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '직장', '멘탈'],
+        en: ['Psychology', 'Work', 'Mental health'],
+        ja: ['心理', '職場', 'メンタル'],
+        'zh-CN': ['心理', '职场', '心理'],
+        'zh-TW': ['心理', '職場', '心理'],
+        vi: ['Tâm lý', 'Công sở', 'Sức khỏe tinh thần'],
+        id: ['Psikologi', 'Kerja', 'Kesehatan mental'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3BurnoutFatigueTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3BurnoutFatigueQuestions}
+          results={phase3BurnoutFatigueResults}
+          questionCount={phase3BurnoutFatigueQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

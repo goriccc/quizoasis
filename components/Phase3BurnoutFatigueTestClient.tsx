@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import {
-  Phase3AttachmentLoveQuestion,
-  Phase3AttachmentLoveResult,
-  calculatePhase3AttachmentLoveResult,
-} from '@/lib/phase3AttachmentLoveData';
+  Phase3BurnoutFatigueQuestion,
+  Phase3BurnoutFatigueResult,
+  calculatePhase3BurnoutFatigueResult,
+} from '@/lib/phase3BurnoutFatigueData';
 import Link from 'next/link';
 import Image from 'next/image';
 import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
@@ -17,13 +17,13 @@ import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
-interface Phase3AttachmentLoveTestClientProps {
+interface Phase3BurnoutFatigueTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: Phase3AttachmentLoveQuestion[];
-  results: Phase3AttachmentLoveResult[];
+  questions: Phase3BurnoutFatigueQuestion[];
+  results: Phase3BurnoutFatigueResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -39,7 +39,7 @@ interface Phase3AttachmentLoveTestClientProps {
   badgeType?: 'popular' | 'hot' | null;
 }
 
-export default function Phase3AttachmentLoveTestClient({ 
+export default function Phase3BurnoutFatigueTestClient({ 
   locale, 
   slug, 
   title, 
@@ -53,15 +53,15 @@ export default function Phase3AttachmentLoveTestClient({
 ,
   isLatestTest = false,
   badgeType = null
-}: Phase3AttachmentLoveTestClientProps) {
-  const t = useTranslations('phase3AttachmentLoveTest');
+}: Phase3BurnoutFatigueTestClientProps) {
+  const t = useTranslations('phase3BurnoutFatigueTest');
   const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({}); // 원래 질문 인덱스를 키로 사용
-  const [result, setResult] = useState<Phase3AttachmentLoveResult | null>(null);
+  const [result, setResult] = useState<Phase3BurnoutFatigueResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<Phase3AttachmentLoveQuestion[]>([]);
+  const [shuffledQuestions, setShuffledQuestions] = useState<Phase3BurnoutFatigueQuestion[]>([]);
   const [originalQuestionIndices, setOriginalQuestionIndices] = useState<number[]>([]); // 셔플링된 질문의 원래 인덱스 매핑
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
@@ -249,7 +249,7 @@ export default function Phase3AttachmentLoveTestClient({
 
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: Phase3AttachmentLoveQuestion[]) => {
+  const shuffleQuestions = (questionList: Phase3BurnoutFatigueQuestion[]) => {
     // 원래 인덱스와 함께 질문을 쌍으로 만들어서 셔플링
     const questionsWithIndices = questionList.map((q, idx) => ({ question: q, originalIndex: idx }));
     const shuffled = [...questionsWithIndices];
@@ -296,19 +296,19 @@ export default function Phase3AttachmentLoveTestClient({
       const answersArray = questions.map((_, idx) => newAnswers[idx] ?? 0);
       
       // 결과 계산
-      const resultType = calculatePhase3AttachmentLoveResult(answersArray);
-      const attachmentResult = results.find(r => r.type === resultType);
+      const resultType = calculatePhase3BurnoutFatigueResult(answersArray);
+      const burnoutResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (attachmentResult) {
-        setResult(attachmentResult);
+      if (burnoutResult) {
+        setResult(burnoutResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (attachmentResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(attachmentResult.type, locale);
+      if (burnoutResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(burnoutResult.type, locale);
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] 애착 유형 결과:', attachmentResult.type, '→ 검색 키워드:', keywords[0]);
+        console.log('🔮 [시작] 번아웃 피로도 결과:', burnoutResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -737,7 +737,7 @@ export default function Phase3AttachmentLoveTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-2 text-left">
-                📊 {t('ui.empathyLevel')}
+                📊 {t('ui.burnoutLevel')}
               </h3>
               <p className="text-2xl font-bold text-purple-600 text-center" style={{ fontSize: '1.5em' }}>
                 {resultEmpathyLevel}

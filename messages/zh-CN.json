@@ -1348,6 +1348,57 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase3BurnoutFatigueTest": {
+    "startMessage": {
+      "line1": "最近什么都不想做、每天都很累，这正常吗？",
+      "line2": "休息也不见好，上班路上总叹气，曾经喜欢的事也提不起劲。",
+      "line3": "这可能不是意志力的问题。",
+      "line4": "职业倦怠不会一夜发生：身体、情绪、认知一点点被掏空，直到彻底耗尽。",
+      "line5": "我们从三个维度精密评估你的疲劳程度。\n测一测倦怠等级 🔋 开始精密疲劳诊断"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（倦怠·精密疲劳诊断）",
+      "goToTest": "去测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "burnoutLevel": "倦怠等级",
+      "characteristics": "主要特点",
+      "goodMatch": "理想搭档",
+      "badMatch": "难搭搭档",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的倦怠等级是{type}！🔋 现在就想放假……你呢？",
+      "kakao": "我的倦怠等级是{type}！🔋 现在就想放假……你呢？",
+      "wechat": "我的倦怠等级是{type}！🔋 现在就想放假……你呢？",
+      "whatsapp": "我的倦怠等级是{type}！🔋 现在就想放假……你呢？",
+      "telegram": "我的倦怠等级是{type}！🔋 现在就想放假……你呢？",
+      "line": "我的倦怠等级是{type}！🔋 现在就想放假……你呢？",
+      "startDefault": "我也会倦怠吗？精密疲劳诊断 🔋 测一测等级",
+      "startKakao": "我也会倦怠吗？精密疲劳诊断 🔋 测一测等级",
+      "startWechat": "我也会倦怠吗？精密疲劳诊断 🔋 测一测等级",
+      "startWhatsapp": "我也会倦怠吗？精密疲劳诊断 🔋 测一测等级",
+      "startTelegram": "我也会倦怠吗？精密疲劳诊断 🔋 测一测等级",
+      "startLine": "我也会倦怠吗？精密疲劳诊断 🔋 测一测等级"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先买了再说！\"",

@@ -1348,6 +1348,57 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3BurnoutFatigueTest": {
+    "startMessage": {
+      "line1": "Dạo này chẳng muốn làm gì, mệt mỏi mỗi ngày — vậy có lạ không?",
+      "line2": "Nghỉ ngơi mà vẫn không khá hơn, đi làm chỉ biết thở dài, việc từng thích cũng chẳng còn hứng.",
+      "line3": "Có thể đây không phải là chuyện ý chí.",
+      "line4": "Kiệt sức không đến trong một đêm: cơ thể, cảm xúc và suy nghĩ bị rút dần rồi cạn kiệt.",
+      "line5": "Chúng tôi đánh giá mức độ mệt mỏi của bạn theo ba trục.\nKiểm tra mức burnout 🔋 Bắt đầu chẩn đoán mệt mỏi chi tiết"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Burnout — chẩn đoán mệt mỏi chi tiết)",
+      "goToTest": "Đi đến bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "burnoutLevel": "Mức burnout",
+      "characteristics": "Đặc điểm chính",
+      "goodMatch": "Hợp cạ",
+      "badMatch": "Khó hợp",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Mức burnout của tôi là {type}! 🔋 Giờ chỉ muốn nghỉ phép… còn bạn?",
+      "kakao": "Mức burnout của tôi là {type}! 🔋 Giờ chỉ muốn nghỉ phép… còn bạn?",
+      "wechat": "Mức burnout của tôi là {type}! 🔋 Giờ chỉ muốn nghỉ phép… còn bạn?",
+      "whatsapp": "Mức burnout của tôi là {type}! 🔋 Giờ chỉ muốn nghỉ phép… còn bạn?",
+      "telegram": "Mức burnout của tôi là {type}! 🔋 Giờ chỉ muốn nghỉ phép… còn bạn?",
+      "line": "Mức burnout của tôi là {type}! 🔋 Giờ chỉ muốn nghỉ phép… còn bạn?",
+      "startDefault": "Liệu tôi cũng burnout? Chẩn đoán mệt mỏi chi tiết 🔋 Kiểm tra mức độ",
+      "startKakao": "Liệu tôi cũng burnout? Chẩn đoán mệt mỏi chi tiết 🔋 Kiểm tra mức độ",
+      "startWechat": "Liệu tôi cũng burnout? Chẩn đoán mệt mỏi chi tiết 🔋 Kiểm tra mức độ",
+      "startWhatsapp": "Liệu tôi cũng burnout? Chẩn đoán mệt mỏi chi tiết 🔋 Kiểm tra mức độ",
+      "startTelegram": "Liệu tôi cũng burnout? Chẩn đoán mệt mỏi chi tiết 🔋 Kiểm tra mức độ",
+      "startLine": "Liệu tôi cũng burnout? Chẩn đoán mệt mỏi chi tiết 🔋 Kiểm tra mức độ"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Ồ? Đẹp quá. Cứ mua đã!\"",
