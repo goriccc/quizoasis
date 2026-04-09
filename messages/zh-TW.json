@@ -1304,6 +1304,57 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3AttachmentLoveTest": {
+    "startMessage": {
+      "line1": "為什麼一談戀愛就好累？",
+      "line2": "明明喜歡，卻常常不安；越靠近越想逃。",
+      "line3": "怕受傷，有時也會先築起心牆。",
+      "line4": "原因也許藏在從小形成的依戀類型裡。",
+      "line5": "安全型、焦慮型、迴避型、混亂型……你是哪一種？用心理學解析戀愛模式的真實原因。測測你的依戀類型 💔 開始戀愛心理測試"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（戀愛好累·依戀類型）",
+      "goToTest": "前往測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "empathyLevel": "依戀水平",
+      "characteristics": "主要特徵",
+      "goodMatch": "絕配",
+      "badMatch": "難配",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的依戀類型是{type}！💔 戀愛累是有原因的。你是哪種？",
+      "kakao": "我的依戀類型是{type}！💔 戀愛累是有原因的。你是哪種？",
+      "wechat": "我的依戀類型是{type}！💔 戀愛累是有原因的。你是哪種？",
+      "whatsapp": "我的依戀類型是{type}！💔 戀愛累是有原因的。你是哪種？",
+      "telegram": "我的依戀類型是{type}！💔 戀愛累是有原因的。你是哪種？",
+      "line": "我的依戀類型是{type}！💔 戀愛累是有原因的。你是哪種？",
+      "startDefault": "戀愛好累（依戀類型分析）💔 測測我的依戀類型！",
+      "startKakao": "戀愛好累（依戀類型分析）💔 測測我的依戀類型！",
+      "startWechat": "戀愛好累（依戀類型分析）💔 測測我的依戀類型！",
+      "startWhatsapp": "戀愛好累（依戀類型分析）💔 測測我的依戀類型！",
+      "startTelegram": "戀愛好累（依戀類型分析）💔 測測我的依戀類型！",
+      "startLine": "戀愛好累（依戀類型分析）💔 測測我的依戀類型！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！在微信中貼上並分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先買了再說！\"",

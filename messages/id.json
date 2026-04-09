@@ -1297,6 +1297,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3AttachmentLoveTest": {
+    "startMessage": {
+      "line1": "Kenapa pacaran rasanya berat sekali?",
+      "line2": "Jelas suka, tapi cemas; makin dekat malah makin ingin lari.",
+      "line3": "Takut disakiti, kadang kamu membangun dinding duluan.",
+      "line4": "Alasannya mungkin ada pada pola melekat sejak kecil.",
+      "line5": "Aman, cemas, menghindar, tidak teratur — kamu tipe mana? Mengurai akar pola asmara lewat psikologi. Cek tipe melekatmu 💔 Mulai tes psikologi cinta"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Cinta berat · tipe melekat)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "empathyLevel": "Level melekat",
+      "characteristics": "Karakteristik Utama",
+      "goodMatch": "Pasangan ideal",
+      "badMatch": "Pasangan sulit",
+      "shareResult": "Bagikan Hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe melekatku {type}! 💔 Cinta yang berat itu ada alasannya. Kamu?",
+      "kakao": "Tipe melekatku {type}! 💔 Cinta yang berat itu ada alasannya. Kamu?",
+      "wechat": "Tipe melekatku {type}! 💔 Cinta yang berat itu ada alasannya. Kamu?",
+      "whatsapp": "Tipe melekatku {type}! 💔 Cinta yang berat itu ada alasannya. Kamu?",
+      "telegram": "Tipe melekatku {type}! 💔 Cinta yang berat itu ada alasannya. Kamu?",
+      "line": "Tipe melekatku {type}! 💔 Cinta yang berat itu ada alasannya. Kamu?",
+      "startDefault": "Kenapa cinta berat (analisis melekat) 💔 Cek tipe melekatku!",
+      "startKakao": "Kenapa cinta berat (analisis melekat) 💔 Cek tipe melekatku!",
+      "startWechat": "Kenapa cinta berat (analisis melekat) 💔 Cek tipe melekatku!",
+      "startWhatsapp": "Kenapa cinta berat (analisis melekat) 💔 Cek tipe melekatku!",
+      "startTelegram": "Kenapa cinta berat (analisis melekat) 💔 Cek tipe melekatku!",
+      "startLine": "Kenapa cinta berat (analisis melekat) 💔 Cek tipe melekatku!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

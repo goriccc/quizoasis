@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { StressQuestion, StressResult, calculateStressResult } from '../lib/stressData';
 import Link from 'next/link';
 import Image from 'next/image';
+import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
@@ -551,20 +552,13 @@ export default function StressTestClient({
 
             {/* 광고 - 참여자 수와 공유 섹션 사이 */}
             <div className="max-w-[680px] mx-auto mb-6">
+
               <div className="flex justify-center">
-                <a 
-                  href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                  target="_parent"
-                >
-                  <Image 
-                    width={300} 
-                    height={250} 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                    alt="AliExpress"
-                    style={{ maxWidth: '300px', height: 'auto' }}
-                  />
-                </a>
+
+                <CoupangAffiliateIframe variant="start" />
+
               </div>
+
             </div>
 
             {/* 친구와 같이 해보기 */}
@@ -705,22 +699,13 @@ export default function StressTestClient({
             {tGlobal('footer.disclaimer')}
           </p>
           <div className="mb-6">
+
             <div className="flex justify-center">
-              <a 
-                href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image 
-                  width={300} 
-                  height={250} 
-                  src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                  alt="AliExpress"
-                  className="rounded-lg"
-                  style={{ maxWidth: '300px', height: 'auto' }}
-                />
-              </a>
+
+              <CoupangAffiliateIframe variant="popup" />
+
             </div>
+
           </div>
 
           {/* 분석 결과 보기 버튼 */}

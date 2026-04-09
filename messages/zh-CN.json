@@ -1297,6 +1297,57 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase3AttachmentLoveTest": {
+    "startMessage": {
+      "line1": "为什么一谈恋爱好累？",
+      "line2": "明明喜欢，却常常不安；越靠近越想逃。",
+      "line3": "怕受伤，有时也会先筑起心墙。",
+      "line4": "原因也许藏在从小形成的依恋类型里。",
+      "line5": "安全型、焦虑型、回避型、混乱型……你是哪一种？用心理学解析恋爱模式的真实原因。测测你的依恋类型 💔 开始恋爱心理测试"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（恋爱好累·依恋类型）",
+      "goToTest": "去测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "empathyLevel": "依恋水平",
+      "characteristics": "主要特征",
+      "goodMatch": "绝配",
+      "badMatch": "难配",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的依恋类型是{type}！💔 恋爱累是有原因的。你是哪种？",
+      "kakao": "我的依恋类型是{type}！💔 恋爱累是有原因的。你是哪种？",
+      "wechat": "我的依恋类型是{type}！💔 恋爱累是有原因的。你是哪种？",
+      "whatsapp": "我的依恋类型是{type}！💔 恋爱累是有原因的。你是哪种？",
+      "telegram": "我的依恋类型是{type}！💔 恋爱累是有原因的。你是哪种？",
+      "line": "我的依恋类型是{type}！💔 恋爱累是有原因的。你是哪种？",
+      "startDefault": "恋爱好累（依恋类型分析）💔 测测我的依恋类型！",
+      "startKakao": "恋爱好累（依恋类型分析）💔 测测我的依恋类型！",
+      "startWechat": "恋爱好累（依恋类型分析）💔 测测我的依恋类型！",
+      "startWhatsapp": "恋爱好累（依恋类型分析）💔 测测我的依恋类型！",
+      "startTelegram": "恋爱好累（依恋类型分析）💔 测测我的依恋类型！",
+      "startLine": "恋爱好累（依恋类型分析）💔 测测我的依恋类型！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先买了再说！\"",

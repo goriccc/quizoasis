@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Image from 'next/image';
+import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { useTranslations } from 'next-intl';
 import { Camera, Upload, RotateCcw, Play } from 'lucide-react';
 import Link from 'next/link';
@@ -1285,22 +1286,13 @@ export default function FacePsychStateTestClient({
             {tGlobal('footer.disclaimer')}
           </p>
           <div className="mb-6">
+
             <div className="flex justify-center">
-              <a 
-                href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image 
-                  width={300} 
-                  height={250} 
-                  src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                  alt="AliExpress"
-                  className="rounded-lg"
-                  style={{ maxWidth: '300px', height: 'auto' }}
-                />
-              </a>
+
+              <CoupangAffiliateIframe variant="popup" />
+
             </div>
+
           </div>
           <button onClick={handleShowResult} className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg">{t('ui.viewResults')}</button>
         </div>
@@ -1746,21 +1738,14 @@ export default function FacePsychStateTestClient({
           </div>
           <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>{t('ui.totalParticipants', { count: formatPlayCount(playCount, locale as Locale) })}</p>
           <div className="max-w-[680px] mx-auto mb-6">
-              <div className="flex justify-center">
-                <a 
-                  href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                  target="_parent"
-                >
-                  <Image 
-                    width={300} 
-                    height={250} 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                    alt="AliExpress"
-                    style={{ maxWidth: '300px', height: 'auto' }}
-                  />
-                </a>
-              </div>
+
+            <div className="flex justify-center">
+
+              <CoupangAffiliateIframe variant="start" />
+
             </div>
+
+          </div>
           <div className="mb-8 text-center">
             <h2 className="text-lg font-bold text-gray-800 mb-4">{t('ui.shareWithFriends')}</h2>
             <div className="flex justify-center gap-2">

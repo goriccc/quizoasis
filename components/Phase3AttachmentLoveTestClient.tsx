@@ -1,26 +1,29 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { KpopExamQuestion, KpopExamResult, calculateKpopExamResult } from '@/lib/kpopExamData';
+import {
+  Phase3AttachmentLoveQuestion,
+  Phase3AttachmentLoveResult,
+  calculatePhase3AttachmentLoveResult,
+} from '@/lib/phase3AttachmentLoveData';
 import Link from 'next/link';
 import Image from 'next/image';
 import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
-import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
-import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
-interface KpopExamTestClientProps {
+interface Phase3AttachmentLoveTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: KpopExamQuestion[];
-  results: KpopExamResult[];
+  questions: Phase3AttachmentLoveQuestion[];
+  results: Phase3AttachmentLoveResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -36,7 +39,7 @@ interface KpopExamTestClientProps {
   badgeType?: 'popular' | 'hot' | null;
 }
 
-export default function KpopExamTestClient({ 
+export default function Phase3AttachmentLoveTestClient({ 
   locale, 
   slug, 
   title, 
@@ -50,15 +53,16 @@ export default function KpopExamTestClient({
 ,
   isLatestTest = false,
   badgeType = null
-}: KpopExamTestClientProps) {
-  const t = useTranslations('kpopExamTest');
-  const tGlobal = useTranslations();
+}: Phase3AttachmentLoveTestClientProps) {
+  const t = useTranslations('phase3AttachmentLoveTest');
+  const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<boolean[]>([]);
-  const [result, setResult] = useState<KpopExamResult | null>(null);
+  const [answers, setAnswers] = useState<Record<number, number>>({}); // 원래 질문 인덱스를 키로 사용
+  const [result, setResult] = useState<Phase3AttachmentLoveResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<KpopExamQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<Phase3AttachmentLoveQuestion[]>([]);
+  const [originalQuestionIndices, setOriginalQuestionIndices] = useState<number[]>([]); // 셔플링된 질문의 원래 인덱스 매핑
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
@@ -72,10 +76,10 @@ export default function KpopExamTestClient({
     const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
 
   useEffect(() => {
-    if (!started) return;
+    if (!started || shuffledQuestions.length === 0) return;
     
     const questionKey = currentQuestion;
-    if (!shuffledOptionsMap[questionKey]) {
+    if (!shuffledOptionsMap[questionKey] && shuffledQuestions[currentQuestion]) {
       const optionsCopy = [...shuffledQuestions[currentQuestion].options];
       for (let i = optionsCopy.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -245,18 +249,25 @@ export default function KpopExamTestClient({
 
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: KpopExamQuestion[]) => {
-    const shuffled = [...questionList];
+  const shuffleQuestions = (questionList: Phase3AttachmentLoveQuestion[]) => {
+    // 원래 인덱스와 함께 질문을 쌍으로 만들어서 셔플링
+    const questionsWithIndices = questionList.map((q, idx) => ({ question: q, originalIndex: idx }));
+    const shuffled = [...questionsWithIndices];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return shuffled;
+    return {
+      questions: shuffled.map(item => item.question),
+      originalIndices: shuffled.map(item => item.originalIndex)
+    };
   };
 
   // 테스트 시작
   const handleStartTest = () => {
-    setShuffledQuestions(shuffleQuestions(questions));
+    const { questions: shuffled, originalIndices } = shuffleQuestions(questions);
+    setShuffledQuestions(shuffled);
+    setOriginalQuestionIndices(originalIndices);
     setDisplayPlayCount(prev => prev + 1);
     
     // 중복 호출 방지
@@ -270,8 +281,10 @@ export default function KpopExamTestClient({
   };
 
   // 답변 처리
-  const handleAnswer = (isCorrect: boolean) => {
-    const newAnswers = [...answers, isCorrect];
+  const handleAnswer = (score: number) => {
+    // 현재 질문의 원래 인덱스를 찾아서 답변 저장
+    const currentOriginalIndex = originalQuestionIndices[currentQuestion];
+    const newAnswers = { ...answers, [currentOriginalIndex]: score };
     setAnswers(newAnswers);
 
     if (currentQuestion < shuffledQuestions.length - 1) {
@@ -279,20 +292,23 @@ export default function KpopExamTestClient({
     } else {
       setShowLoadingSpinner(true);
       
+      // 원래 질문 순서대로 점수 배열 재구성 (newAnswers에는 모든 답변이 포함됨)
+      const answersArray = questions.map((_, idx) => newAnswers[idx] ?? 0);
+      
       // 결과 계산
-      const resultType = calculateKpopExamResult(newAnswers);
-      const examResult = results.find(r => r.type === resultType);
+      const resultType = calculatePhase3AttachmentLoveResult(answersArray);
+      const attachmentResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (examResult) {
-        setResult(examResult);
+      if (attachmentResult) {
+        setResult(attachmentResult);
       }
       
       // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (examResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(examResult.type, locale);
+      if (attachmentResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(attachmentResult.type, locale);
         const loadStartTime = Date.now();
-        console.log('🔮 [시작] K-POP 덕력 결과:', examResult.type, '→ 검색 키워드:', keywords[0]);
+        console.log('🔮 [시작] 애착 유형 결과:', attachmentResult.type, '→ 검색 키워드:', keywords[0]);
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
             const loadTime = Date.now() - loadStartTime;
@@ -307,10 +323,12 @@ export default function KpopExamTestClient({
 
   // 다시 하기
   const handleRetake = () => {
-    setShuffledQuestions(shuffleQuestions(questions));
+    const { questions: shuffled, originalIndices } = shuffleQuestions(questions);
+    setShuffledQuestions(shuffled);
+    setOriginalQuestionIndices(originalIndices);
     setStarted(false);
     setCurrentQuestion(0);
-    setAnswers([]);
+    setAnswers({});
     setResult(null);
     setShowResult(false);
     setShuffledOptionsMap({});
@@ -321,8 +339,7 @@ export default function KpopExamTestClient({
     if (!result) return;
     
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
-    const resultLevel = result.level[locale as keyof typeof result.level] || result.level.ko;
-    const shareText = `${t('shareMessages.default', { level: resultLevel, type: resultTitle })}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
+    const shareText = `${t('shareMessages.default', { type: resultTitle })}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -335,7 +352,7 @@ export default function KpopExamTestClient({
     } else {
       try {
         await navigator.clipboard.writeText(shareText);
-        alert('결과가 클립보드에 복사되었습니다!');
+        alert(t('alerts.resultCopied'));
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
         alert(t('alerts.shareFailed'));
@@ -346,16 +363,19 @@ export default function KpopExamTestClient({
   // 공유 함수들
   const shareToLine = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
+    const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
+    const shareText = result 
+      ? encodeURIComponent(t('shareMessages.line', { type: resultTitle }))
+      : encodeURIComponent(t('shareMessages.startLine'));
+    window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${shareText}`, '_blank');
   };
 
   const shareToWeChat = async () => {
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const resultLevel = result ? (result.level[locale as keyof typeof result.level] || result.level.ko) : '';
     const shareText = result 
-      ? `${t('shareMessages.default', { level: resultLevel, type: resultTitle })}\n\n${url}`
-      : `${title}\n\n${url}`;
+      ? `${t('shareMessages.wechat', { type: resultTitle })}\n\n${url}`
+      : `${t('shareMessages.startWechat')}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
     if (navigator.share) {
@@ -374,17 +394,16 @@ export default function KpopExamTestClient({
       await navigator.clipboard.writeText(url);
       alert(t('alerts.wechatCopy'));
     } catch (error) {
-      alert('공유 기능을 사용할 수 없습니다.');
+      alert(t('alerts.shareFailed'));
     }
   };
 
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const resultLevel = result ? (result.level[locale as keyof typeof result.level] || result.level.ko) : '';
     const shareText = result 
-      ? encodeURIComponent(t('shareMessages.default', { level: resultLevel, type: resultTitle }))
-      : encodeURIComponent(title);
+      ? encodeURIComponent(t('shareMessages.whatsapp', { type: resultTitle }))
+      : encodeURIComponent(t('shareMessages.startWhatsapp'));
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
 
@@ -401,10 +420,9 @@ export default function KpopExamTestClient({
     
     // 결과가 있으면 맞춤형 공유 문구 사용
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const resultLevel = result ? (result.level[locale as keyof typeof result.level] || result.level.ko) : '';
     const shareDescription = result 
-      ? t('shareMessages.default', { level: resultLevel, type: resultTitle })
-      : description;
+      ? t('shareMessages.kakao', { type: resultTitle })
+      : t('shareMessages.startKakao');
     
     try {
       window.Kakao.Share.sendDefault({
@@ -420,7 +438,7 @@ export default function KpopExamTestClient({
         },
         buttons: [
           {
-            title: '테스트 하러 가기',
+            title: t('ui.goToTest'),
             link: {
               mobileWebUrl: currentUrl,
               webUrl: currentUrl,
@@ -437,10 +455,9 @@ export default function KpopExamTestClient({
   const shareToTelegram = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
-    const resultLevel = result ? (result.level[locale as keyof typeof result.level] || result.level.ko) : '';
     const shareText = result 
-      ? t('shareMessages.default', { level: resultLevel, type: resultTitle })
-      : title;
+      ? t('shareMessages.telegram', { type: resultTitle })
+      : t('shareMessages.startTelegram');
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
@@ -464,7 +481,7 @@ export default function KpopExamTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'phase2_test_076_kpop_exam.jpg')}
+              src={getThumbnailUrl(thumbnail || '')}
               alt={title}
               fill
               className="object-cover"
@@ -509,7 +526,6 @@ export default function KpopExamTestClient({
               <p>{t('startMessage.line3')}</p>
               <p>{t('startMessage.line4')}</p>
               <p className="whitespace-pre-line">{t('startMessage.line5')}</p>
-              <p className="whitespace-pre-line">{t('startMessage.line6')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -694,9 +710,10 @@ export default function KpopExamTestClient({
     const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
     const resultShortDescription = result.shortDescription[locale as keyof typeof result.shortDescription] || result.shortDescription.ko;
     const resultLongDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
-    const resultScoreRange = result.scoreRange[locale as keyof typeof result.scoreRange] || result.scoreRange.ko;
-    const resultLevel = result.level[locale as keyof typeof result.level] || result.level.ko;
-    const resultRecommendation = result.recommendation[locale as keyof typeof result.recommendation] || result.recommendation.ko;
+    const resultEmpathyLevel = result.empathyLevel[locale as keyof typeof result.empathyLevel] || result.empathyLevel.ko;
+    const resultCharacteristics = result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
+    const resultGoodMatch = result.goodMatch[locale as keyof typeof result.goodMatch] || result.goodMatch.ko;
+    const resultBadMatch = result.badMatch[locale as keyof typeof result.badMatch] || result.badMatch.ko;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
@@ -718,32 +735,89 @@ export default function KpopExamTestClient({
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-2 text-left">
+                📊 {t('ui.empathyLevel')}
+              </h3>
+              <p className="text-2xl font-bold text-purple-600 text-center" style={{ fontSize: '1.5em' }}>
+                {resultEmpathyLevel}
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-2">
+                ⭐ {t('ui.characteristics')}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-center sm:text-left">
+                {resultCharacteristics}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  📊 {t('result.scoreRange')}
+                  💖 {t('ui.goodMatch')}
                 </h3>
-                <p className="text-2xl font-semibold text-purple-600 text-center">
-                  {resultScoreRange}
-                </p>
+                <div className="space-y-2">
+                  {(() => {
+                    // "Type 2 (서툰 뚝딱이)" 형식에서 Type 추출
+                    const matchType = resultGoodMatch.match(/Type\s*(\d+)/i);
+                    if (matchType) {
+                      const typeNumber = matchType[1];
+                      const matchTypeKey = `Type${typeNumber}`;
+                      const matchResult = results.find(r => r.type === matchTypeKey);
+                      if (matchResult) {
+                        const matchTitle = matchResult.title[locale as keyof typeof matchResult.title] || matchResult.title.ko;
+                        return (
+                          <div className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg px-3 py-2">
+                            <div className="flex items-center gap-2.5">
+                              <span className="text-xl">{matchResult.emoji}</span>
+                              <span className="text-sm font-medium text-gray-800">{matchTitle}</span>
+                            </div>
+                          </div>
+                        );
+                      }
+                    }
+                    return (
+                      <p className="text-sm text-gray-700">
+                        {resultGoodMatch}
+                      </p>
+                    );
+                  })()}
+                </div>
               </div>
 
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  ⭐ {t('result.level')}
+                  💔 {t('ui.badMatch')}
                 </h3>
-                <p className="text-2xl font-semibold text-blue-600 text-center">
-                  {resultLevel}
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-4">
-                <h3 className="text-base font-bold text-gray-800 mb-3">
-                  💡 {t('result.recommendation')}
-                </h3>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  {resultRecommendation}
-                </p>
+                <div className="space-y-2">
+                  {(() => {
+                    // "Type 6 (인간 수도꼭지)" 형식에서 Type 추출
+                    const matchType = resultBadMatch.match(/Type\s*(\d+)/i);
+                    if (matchType) {
+                      const typeNumber = matchType[1];
+                      const matchTypeKey = `Type${typeNumber}`;
+                      const matchResult = results.find(r => r.type === matchTypeKey);
+                      if (matchResult) {
+                        const matchTitle = matchResult.title[locale as keyof typeof matchResult.title] || matchResult.title.ko;
+                        return (
+                          <div className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg px-3 py-2">
+                            <div className="flex items-center gap-2.5">
+                              <span className="text-xl">{matchResult.emoji}</span>
+                              <span className="text-sm font-medium text-gray-800">{matchTitle}</span>
+                            </div>
+                          </div>
+                        );
+                      }
+                    }
+                    return (
+                      <p className="text-sm text-gray-700">
+                        {resultBadMatch}
+                      </p>
+                    );
+                  })()}
+                </div>
               </div>
             </div>
 
@@ -755,7 +829,7 @@ export default function KpopExamTestClient({
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                 </svg>
-{t('ui.shareResult')}
+                {t('ui.shareResult')}
               </button>
             </div>
 
@@ -814,7 +888,7 @@ export default function KpopExamTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {tGlobal('recommendations.similarTestsTop5')}
+                  {t('recommendations.similarTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -866,7 +940,7 @@ export default function KpopExamTestClient({
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {tGlobal('recommendations.popularTestsTop5')}
+                  {t('recommendations.popularTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (
@@ -920,6 +994,10 @@ export default function KpopExamTestClient({
   }
 
   // 질문 화면
+  if (shuffledQuestions.length === 0 || !shuffledQuestions[currentQuestion]) {
+    return null; // 질문이 준비되지 않았으면 렌더링하지 않음
+  }
+  
   const question = shuffledQuestions[currentQuestion];
   const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
@@ -966,7 +1044,7 @@ export default function KpopExamTestClient({
               return (
                 <button
                   key={index}
-                  onClick={() => handleAnswer(option.isCorrect)}
+                  onClick={() => handleAnswer(option.score)}
                   className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
                 >
                   <div className="flex items-center">

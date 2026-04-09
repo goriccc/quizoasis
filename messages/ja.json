@@ -1298,6 +1298,57 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3AttachmentLoveTest": {
+    "startMessage": {
+      "line1": "どうして恋愛だけこんなにしんどいの？",
+      "line2": "好きなのに不安になる。近づけば近づくほど、逃げたくなることも。",
+      "line3": "傷つくのが怖くて、先に壁を作ってしまうこともあります。",
+      "line4": "その理由は、幼い頃から形作られた愛着スタイルにあるかもしれません。",
+      "line5": "安全型・不安型・回避型・混乱型…あなたはどのタイプ？恋愛パターンの本当の原因を心理学で分析します。愛着タイプをチェック 💔 恋愛心理テストを始める"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（恋愛がしんどい理由・愛着タイプ）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "empathyLevel": "愛着レベル",
+      "characteristics": "主な特徴",
+      "goodMatch": "相性抜群",
+      "badMatch": "相性が厳しい",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の愛着タイプは{type}！💔 恋愛がしんどかったのには理由があった。あなたは？",
+      "kakao": "私の愛着タイプは{type}！💔 恋愛がしんどかったのには理由があった。あなたは？",
+      "wechat": "私の愛着タイプは{type}！💔 恋愛がしんどかったのには理由があった。あなたは？",
+      "whatsapp": "私の愛着タイプは{type}！💔 恋愛がしんどかったのには理由があった。あなたは？",
+      "telegram": "私の愛着タイプは{type}！💔 恋愛がしんどかったのには理由があった。あなたは？",
+      "line": "私の愛着タイプは{type}！💔 恋愛がしんどかったのには理由があった。あなたは？",
+      "startDefault": "恋愛がしんどい理由（愛着タイプ）💔 愛着タイプをチェック！",
+      "startKakao": "恋愛がしんどい理由（愛着タイプ）💔 愛着タイプをチェック！",
+      "startWechat": "恋愛がしんどい理由（愛着タイプ）💔 愛着タイプをチェック！",
+      "startWhatsapp": "恋愛がしんどい理由（愛着タイプ）💔 愛着タイプをチェック！",
+      "startTelegram": "恋愛がしんどい理由（愛着タイプ）💔 愛着タイプをチェック！",
+      "startLine": "恋愛がしんどい理由（愛着タイプ）💔 愛着タイプをチェック！"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

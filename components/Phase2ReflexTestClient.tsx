@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
+import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Share2, Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
@@ -491,9 +492,7 @@ export default function Phase2ReflexTestClient({
           <h2 className="text-2xl font-bold text-gray-800 mb-4">🎉 {tGlobal('mbti.testCompleted')}</h2>
           <p className="text-xs text-gray-500 text-center mb-3">{tGlobal('footer.disclaimer')}</p>
           <div className="mb-6 flex justify-center">
-            <a href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" target="_blank" rel="noopener noreferrer">
-              <Image width={300} height={250} src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg" alt="AliExpress" className="rounded-lg" style={{ maxWidth: '300px', height: 'auto' }} />
-            </a>
+            <CoupangAffiliateIframe variant="popup" />
           </div>
           <button onClick={handleShowResult} className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-blue-600 hover:to-cyan-600 shadow-lg transition-all">
             {tGlobal('mbti.viewAnalysisResults')}
@@ -820,22 +819,13 @@ export default function Phase2ReflexTestClient({
                 {/* Sharing Buttons */}
                 <div className="mb-8 text-center">
                     <div className="max-w-[680px] mx-auto mb-4">
+
                       <div className="flex justify-center">
-                        <a
-                          href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250"
-                          target="_blank"
-                          rel="sponsored noopener noreferrer"
-                        >
-                          <Image
-                            width={300}
-                            height={250}
-                            src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                            alt="AliExpress"
-                            className="rounded-lg"
-                            style={{ maxWidth: '300px', height: 'auto' }}
-                          />
-                        </a>
+
+                        <CoupangAffiliateIframe variant="start" />
+
                       </div>
+
                     </div>
                     <h2 className="text-lg font-bold text-gray-800 mb-4">{tGlobal('mbti.shareWithFriends')}</h2>
                     <div className="flex justify-center gap-2">

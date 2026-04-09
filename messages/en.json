@@ -1338,6 +1338,57 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3AttachmentLoveTest": {
+    "startMessage": {
+      "line1": "Why does dating feel so hard for me?",
+      "line2": "You really like them, yet you feel anxious. The closer you get, the more you want to run.",
+      "line3": "You may put up walls first, afraid of getting hurt.",
+      "line4": "The reason may be attachment styles shaped since childhood.",
+      "line5": "Secure, anxious, avoidant, disorganized—which style are you? We analyze the real roots of your dating patterns with psychology. Discover your attachment type 💔 Start the love psychology quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Why Love Feels Hard — Attachment)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "empathyLevel": "Attachment level",
+      "characteristics": "Main traits",
+      "goodMatch": "Dream match",
+      "badMatch": "Difficult match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My attachment type is {type}! 💔 There was a reason love felt hard. What is yours?",
+      "kakao": "My attachment type is {type}! 💔 There was a reason love felt hard. What is yours?",
+      "wechat": "My attachment type is {type}! 💔 There was a reason love felt hard. What is yours?",
+      "whatsapp": "My attachment type is {type}! 💔 There was a reason love felt hard. What is yours?",
+      "telegram": "My attachment type is {type}! 💔 There was a reason love felt hard. What is yours?",
+      "line": "My attachment type is {type}! 💔 There was a reason love felt hard. What is yours?",
+      "startDefault": "Why Love Feels Hard (Attachment) 💔 Check my attachment type!",
+      "startKakao": "Why Love Feels Hard (Attachment) 💔 Check my attachment type!",
+      "startWechat": "Why Love Feels Hard (Attachment) 💔 Check my attachment type!",
+      "startWhatsapp": "Why Love Feels Hard (Attachment) 💔 Check my attachment type!",
+      "startTelegram": "Why Love Feels Hard (Attachment) 💔 Check my attachment type!",
+      "startLine": "Why Love Feels Hard (Attachment) 💔 Check my attachment type!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

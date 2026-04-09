@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Phase2ConflictReasonQuestion, Phase2ConflictReasonResult, calculatePhase2ConflictReasonResult } from '@/lib/phase2_conflict_reason_data';
 import Link from 'next/link';
 import Image from 'next/image';
+import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
@@ -537,20 +538,13 @@ export default function Phase2ConflictReasonTestClient({
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
+
               <div className="flex justify-center">
-                <a 
-                  href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                  target="_parent"
-                >
-                  <Image 
-                    width={300} 
-                    height={250} 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                    alt="AliExpress"
-                    style={{ maxWidth: '300px', height: 'auto' }}
-                  />
-                </a>
+
+                <CoupangAffiliateIframe variant="start" />
+
               </div>
+
             </div>
 
             <div className="mb-8 text-center">
@@ -684,20 +678,7 @@ export default function Phase2ConflictReasonTestClient({
           </p>
           <div className="mb-6">
             <div className="flex justify-center">
-              <a 
-                href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image 
-                  width={300} 
-                  height={250} 
-                  src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                  alt="AliExpress"
-                  className="rounded-lg"
-                  style={{ maxWidth: '300px', height: 'auto' }}
-                />
-              </a>
+              <CoupangAffiliateIframe variant="popup" />
             </div>
           </div>
 

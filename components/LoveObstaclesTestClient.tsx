@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { LoveObstacleQuestion, LoveObstacleResult, calculateLoveObstacleResult } from '@/lib/loveObstaclesData';
 import Link from 'next/link';
 import Image from 'next/image';
+import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
@@ -700,21 +701,18 @@ export default function LoveObstaclesTestClient({
           </p>
 
           <div className="max-w-[680px] mx-auto mb-6">
-              <div className="flex justify-center">
-                <a 
-                  href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                  target="_parent"
-                >
-                  <Image 
-                    width={300} 
-                    height={250} 
-                    src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                    alt="AliExpress"
-                    style={{ maxWidth: '300px', height: 'auto' }}
-                  />
-                </a>
-              </div>
+
+
+            <div className="flex justify-center">
+
+
+              <CoupangAffiliateIframe variant="start" />
+
+
             </div>
+
+
+          </div>
 
           <div className="mb-8 text-center">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
@@ -846,22 +844,13 @@ export default function LoveObstaclesTestClient({
             {t('footer.disclaimer')}
           </p>
           <div className="mb-6">
+
             <div className="flex justify-center">
-              <a 
-                href="https://s.click.aliexpress.com/e/_c3G3nkEv?bz=300*250" 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image 
-                  width={300} 
-                  height={250} 
-                  src="https://ae01.alicdn.com/kf/S3619e57974f148d087c950fe497cdf55q/300x250.jpg"
-                  alt="AliExpress"
-                  className="rounded-lg"
-                  style={{ maxWidth: '300px', height: 'auto' }}
-                />
-              </a>
+
+              <CoupangAffiliateIframe variant="popup" />
+
             </div>
+
           </div>
 
           <button
