@@ -1507,6 +1507,74 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3ReincarnationJobTest": {
+    "startMessage": {
+      "line1": "Jika ada kehidupan berikutnya, seperti apa dirimu nanti?",
+      "line2": "Di kehidupan ini kita secara kebetulan hidup di zaman dan pekerjaan ini—tapi kehidupan berikutnya bisa berbeda. Jika pola kepribadian, minat, dan energimu lahir di zaman lain, pekerjaan apa yang paling cocok?",
+      "line3": "Kamu bisa jadi ksatria abad pertengahan, seniman Renaissance yang meninggalkan mahakarya, atau penjelajah di tanah yang belum dipetakan.",
+      "line4": "12 pertanyaan menganalisis dirimu di kehidupan ini untuk menemukan pekerjaan dan zaman yang paling cocok untuk kehidupan berikutnya.",
+      "line5": "Cari pekerjaan kehidupan berikutnya ✨ Mulai analisis reinkarnasi"
+    },
+    "ui": {
+      "startTest": "Mulai analisis",
+      "shareWithFriends": "Coba dengan teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lainnya",
+      "goToTest": "Ke tes",
+      "adsenseTitle": "AdSense (Jika terlahir kembali, pekerjaan apa?)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "empathyLevel": "Pekerjaan di kehidupan berikutnya",
+      "characteristics": "Kekuatan jalur ini",
+      "goodMatch": "Tokoh sejarah yang mirip kamu",
+      "badMatch": "Satu baris kehidupan berikutnya",
+      "eraPrefix": "Zaman kehidupan berikutnya:",
+      "resultLabels": {
+        "type": "Tipe",
+        "tagline": "Ringkasan",
+        "era": "Zaman kehidupan berikutnya",
+        "detail": "Cerita lengkap",
+        "dayInLife": "Hari dalam hidup yang terlahir kembali",
+        "quote": "Kutipan khas",
+        "struggles": "Sisi sulit jalur ini",
+        "lifeConnection": "Hubungan dengan kehidupan sekarang"
+      }
+    },
+    "shareMessages": {
+      "default": "Tipe pekerjaan reinkarnasiku {type}! Kehidupan berikutnya jadi apa? ✨ Coba juga",
+      "resultType1": "Pekerjaan reinkarnasi: prajurit abad pertengahan ⚔️ Katanya bersinar di medan perang… di hidup ini kuat saat krisis juga cocok → kamu?",
+      "resultType2": "Pekerjaan reinkarnasi: penjelajah Zaman Penjelajahan 🧭 Kehidupan berikutnya petakan luar peta… suka hal baru mungkin ingatan hidup lalu? → kamu?",
+      "resultType3": "Pekerjaan reinkarnasi: filsuf kuno 📜 Kalimatku dibaca ratusan tahun… mirip Sokrates lumayan → kamu?",
+      "resultType4": "Pekerjaan reinkarnasi: seniman Renaissance 🎨 Seperti Michelangelo… karya di museum → kamu?",
+      "resultType5": "Pekerjaan reinkarnasi: ilmuwan jenius 🔭 Hukumku masuk buku pelajaran… garis Newton-Tesla kenapa hidup ini… → kamu?",
+      "resultType6": "Pekerjaan reinkarnasi: penulis legendaris ✍️ Kalimat menggetik hati selamanya… diary hari ini ingatan dulu? → kamu?",
+      "startDefault": "Jika terlahir kembali, pekerjaan apa? ✨ Tes pekerjaan reinkarnasi",
+      "startKakao": "Jika terlahir kembali, pekerjaan apa? ✨ Tes pekerjaan reinkarnasi",
+      "startWechat": "Jika terlahir kembali, pekerjaan apa? ✨ Tes pekerjaan reinkarnasi",
+      "startWhatsapp": "Jika terlahir kembali, pekerjaan apa? ✨ Tes pekerjaan reinkarnasi",
+      "startTelegram": "Jika terlahir kembali, pekerjaan apa? ✨ Tes pekerjaan reinkarnasi",
+      "startLine": "Jika terlahir kembali, pekerjaan apa? ✨ Tes pekerjaan reinkarnasi"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

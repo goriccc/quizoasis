@@ -33,6 +33,10 @@ import {
   phase3PersonalityStrengthWeaknessQuestions,
   phase3PersonalityStrengthWeaknessResults,
 } from '@/lib/phase3PersonalityStrengthWeaknessData';
+import {
+  phase3ReincarnationJobQuestions,
+  phase3ReincarnationJobResults,
+} from '@/lib/phase3ReincarnationJobData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -181,6 +185,10 @@ const Phase3SummerVacationTypeTestClient = dynamic(() => import('@/components/Ph
 });
 const Phase3PersonalityStrengthWeaknessTestClient = dynamic(
   () => import('@/components/Phase3PersonalityStrengthWeaknessTestClient'),
+  { ssr: false }
+);
+const Phase3ReincarnationJobTestClient = dynamic(
+  () => import('@/components/Phase3ReincarnationJobTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -581,6 +589,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['心理', '戀愛', '性格'],
         vi: ['Tâm lý', 'Tình yêu', 'Tính cách'],
         id: ['Psikologi', 'Cinta', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-reincarnation-job') {
+    test = {
+      slug: 'phase3-reincarnation-job',
+      title: {
+        ko: '내가 환생한다면 어떤 직업?',
+        en: 'If I Were Reborn, What Job Would I Have?',
+        ja: '転生したら私はどんな職業？',
+        'zh-CN': '如果转世，我会是什么职业？',
+        'zh-TW': '如果轉世，我會是什麼職業？',
+        vi: 'Nếu đầu thai, tôi sẽ là nghề gì?',
+        id: 'Jika bereinkarnasi, pekerjaan apa aku?',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 환생 직업·시대 6유형. #환생 #직업 #성격',
+        en: 'Six reincarnation job types from 12 A/B questions. #Reincarnation #Job #Personality',
+        ja: '12問2択で見る転生ジョブ・時代6タイプ。#転生 #職業 #性格',
+        'zh-CN': '12 道二选一，六种转世职业与时代。#转世 #职业 #性格',
+        'zh-TW': '12 題二選一，六種轉世職業與時代。#轉世 #職業 #性格',
+        vi: '12 câu trắc nghiệm, 6 kiểu nghề & thời đại.#Đầu thai #Nghề #Tính cách',
+        id: '12 pertanyaan pilihan ganda, 6 tipe pekerjaan & era.#Reinkarnasi #Pekerjaan #Kepribadian',
+      },
+      thumbnail: 'p3_test_reincarnation_job_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['환생', '직업', '성격'],
+        en: ['Reincarnation', 'Job', 'Personality'],
+        ja: ['転生', '職業', '性格'],
+        'zh-CN': ['转世', '职业', '性格'],
+        'zh-TW': ['轉世', '職業', '性格'],
+        vi: ['Đầu thai', 'Nghề', 'Tính cách'],
+        id: ['Reinkarnasi', 'Pekerjaan', 'Kepribadian'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2201,6 +2246,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SummerVacationTypeQuestions}
           results={phase3SummerVacationTypeResults}
           questionCount={phase3SummerVacationTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-reincarnation-job') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-reincarnation-job',
+      title: {
+        ko: '내가 환생한다면 어떤 직업?',
+        en: 'If I Were Reborn, What Job Would I Have?',
+        ja: '転生したら私はどんな職業？',
+        'zh-CN': '如果转世，我会是什么职业？',
+        'zh-TW': '如果轉世，我會是什麼職業？',
+        vi: 'Nếu đầu thai, tôi sẽ là nghề gì?',
+        id: 'Jika bereinkarnasi, pekerjaan apa aku?',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 환생 직업·시대 6유형. #환생 #직업 #성격',
+        en: 'Six reincarnation job types from 12 A/B questions. #Reincarnation #Job #Personality',
+        ja: '12問2択で見る転生ジョブ・時代6タイプ。#転生 #職業 #性格',
+        'zh-CN': '12 道二选一，六种转世职业与时代。#转世 #职业 #性格',
+        'zh-TW': '12 題二選一，六種轉世職業與時代。#轉世 #職業 #性格',
+        vi: '12 câu trắc nghiệm, 6 kiểu nghề & thời đại.#Đầu thai #Nghề #Tính cách',
+        id: '12 pertanyaan pilihan ganda, 6 tipe pekerjaan & era.#Reinkarnasi #Pekerjaan #Kepribadian',
+      },
+      thumbnail: 'p3_test_reincarnation_job_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['환생', '직업', '성격'],
+        en: ['Reincarnation', 'Job', 'Personality'],
+        ja: ['転生', '職業', '性格'],
+        'zh-CN': ['转世', '职业', '性格'],
+        'zh-TW': ['轉世', '職業', '性格'],
+        vi: ['Đầu thai', 'Nghề', 'Tính cách'],
+        id: ['Reinkarnasi', 'Pekerjaan', 'Kepribadian'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3ReincarnationJobTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3ReincarnationJobQuestions}
+          results={phase3ReincarnationJobResults}
+          questionCount={phase3ReincarnationJobQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

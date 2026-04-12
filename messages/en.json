@@ -1548,6 +1548,74 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3ReincarnationJobTest": {
+    "startMessage": {
+      "line1": "If you were reborn, what kind of person would you be?",
+      "line2": "In this life you ended up in this era and job — but the next life could be different. Which job would fit you if your traits lived in another age?",
+      "line3": "You might have been a knight, a Renaissance artist, or an explorer in uncharted lands.",
+      "line4": "Twelve questions analyze your present self to find your next-life job and era.",
+      "line5": "Next-life job finder ✨ Start reincarnation analysis"
+    },
+    "ui": {
+      "startTest": "Start analysis",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share results with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "More tests",
+      "goToTest": "Go to test",
+      "adsenseTitle": "AdSense (If I were reborn, what job?)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "empathyLevel": "Reborn job",
+      "characteristics": "Strengths of this path",
+      "goodMatch": "Historical figures like you",
+      "badMatch": "One-line reborn takeaway",
+      "eraPrefix": "Era:",
+      "resultLabels": {
+        "type": "Type",
+        "tagline": "Summary",
+        "era": "Era",
+        "detail": "Full story",
+        "dayInLife": "A day in your reborn life",
+        "quote": "Signature line",
+        "struggles": "Hard parts of this path",
+        "lifeConnection": "Link to this life"
+      }
+    },
+    "shareMessages": {
+      "default": "My reborn-job type is {type}! Try the next-life job test ✨",
+      "resultType1": "Reborn job: warrior ⚔️ They say I shine on the battlefield next life... Sound like you?",
+      "resultType2": "Reborn job: Age of Exploration navigator 🧭 Mapping places off the map — try it too?",
+      "resultType3": "Reborn job: ancient philosopher 📜 My words echo for centuries — try it?",
+      "resultType4": "Reborn job: Renaissance artist 🎨 Masterpieces in museums — your turn?",
+      "resultType5": "Reborn job: scientist 🔭 Textbook laws with my name — try it?",
+      "resultType6": "Reborn job: writer ✍️ Lines that move hearts forever — try it?",
+      "startDefault": "If I were reborn, what job? ✨ Reincarnation job test",
+      "startKakao": "If I were reborn, what job? ✨ Reincarnation job test",
+      "startWechat": "If I were reborn, what job? ✨ Reincarnation job test",
+      "startWhatsapp": "If I were reborn, what job? ✨ Reincarnation job test",
+      "startTelegram": "If I were reborn, what job? ✨ Reincarnation job test",
+      "startLine": "If I were reborn, what job? ✨ Reincarnation job test"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

@@ -1508,6 +1508,74 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3ReincarnationJobTest": {
+    "startMessage": {
+      "line1": "もし来世があるなら、あなたはどんな人として生まれるでしょうか？",
+      "line2": "今世ではたまたまこの時代にこの職業を手に入れましたが、来世は違うかもしれません。あなたの気質・関心・エネルギーのパターンが別の時代に生まれていたら、どんな職業がいちばんフィットしていたでしょうか？",
+      "line3": "中世の騎士として戦場を駆けたかもしれないし、ルネサンスの芸術家として傑作を残したかもしれないし、誰も踏み入れない大地を探検する冒険家だったかもしれません。",
+      "line4": "12の質問で今世のあなたを分析し、来世にいちばん似合う職業と時代を見つけます。",
+      "line5": "来世の職業を探す ✨ 転生分析スタート"
+    },
+    "ui": {
+      "startTest": "転生分析を始める",
+      "shareWithFriends": "友だちと試す",
+      "shareResultWithFriends": "結果を友だちにシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストへ",
+      "adsenseTitle": "AdSense（転生したらどんな職業？）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "empathyLevel": "来世の職業",
+      "characteristics": "この道の強み",
+      "goodMatch": "歴史上の似た人",
+      "badMatch": "来世ひとこと",
+      "eraPrefix": "来世の時代:",
+      "resultLabels": {
+        "type": "タイプ",
+        "tagline": "ひとこと",
+        "era": "来世の時代",
+        "detail": "詳しい話",
+        "dayInLife": "転生した私の一日",
+        "quote": "名台詞",
+        "struggles": "この道のつらさ",
+        "lifeConnection": "今世とのつながり"
+      }
+    },
+    "shareMessages": {
+      "default": "来世ジョブタイプは {type}！来世は何になる？ ✨ あなたも試して",
+      "resultType1": "転生ジョブ：中世の戦士 ⚔️ 来世は戦場で輝くタイプって…今世もピンチに強い説ある → あなたは？",
+      "resultType2": "転生ジョブ：大航海時代の探検家 🧭 来世は地図にない場所へ…今世も新しいこと好きなら前世の名残？ → あなたは？",
+      "resultType3": "転生ジョブ：古代の哲学者 📜 来世は残した言葉が何百年も読まれる…ソクラテス系、悪くない → あなたは？",
+      "resultType4": "転生ジョブ：ルネサンスの芸術家 🎨 来世はミケランジェロ級…作品が美術館にって → あなたは？",
+      "resultType5": "転生ジョブ：天才科学者 🔭 来世は発見が教科書に…ニュートン・テスラ系、今世はなぜ… → あなたは？",
+      "resultType6": "転生ジョブ：伝説の作家 ✍️ 来世は書いた一文が何百年も…今世の日記は前世の記憶？ → あなたは？",
+      "startDefault": "転生したらどんな職業？ ✨ 来世ジョブ診断",
+      "startKakao": "転生したらどんな職業？ ✨ 来世ジョブ診断",
+      "startWechat": "転生したらどんな職業？ ✨ 来世ジョブ診断",
+      "startWhatsapp": "転生したらどんな職業？ ✨ 来世ジョブ診断",
+      "startTelegram": "転生したらどんな職業？ ✨ 来世ジョブ診断",
+      "startLine": "転生したらどんな職業？ ✨ 来世ジョブ診断"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

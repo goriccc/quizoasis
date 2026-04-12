@@ -1514,6 +1514,74 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3ReincarnationJobTest": {
+    "startMessage": {
+      "line1": "如果有來生，你會成為什麼樣的人？",
+      "line2": "今生我們偶然來到這個時代、從事這份職業，但來生也許會不同。如果你的氣質、興趣與能量模式誕生在另一個時代，哪種職業最適合你？",
+      "line3": "你可能是馳騁沙場的中世紀騎士、留下傳世之作的文藝復興藝術家，或是探索無人之境的冒險家。",
+      "line4": "透過12題分析今生的你，找出來世最匹配的職業與時代。",
+      "line5": "尋找來世職業 ✨ 開始轉世分析"
+    },
+    "ui": {
+      "startTest": "開始轉世分析",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "更多測試",
+      "goToTest": "進入測試",
+      "adsenseTitle": "AdSense 區域（我若轉世會是什麼職業？）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "empathyLevel": "轉世職業",
+      "characteristics": "這條路的強項",
+      "goodMatch": "歷史上與你相似的人",
+      "badMatch": "轉世一句話",
+      "eraPrefix": "轉世時代：",
+      "resultLabels": {
+        "type": "類型",
+        "tagline": "一句話",
+        "era": "轉世時代",
+        "detail": "詳細故事",
+        "dayInLife": "重生後我的一天",
+        "quote": "名台詞",
+        "struggles": "這份職業的難處",
+        "lifeConnection": "與今生的連結"
+      }
+    },
+    "shareMessages": {
+      "default": "我的轉世職業類型是 {type}！來世會做什麼？ ✨ 你也來測",
+      "resultType1": "轉世職業：中世紀戰士 ⚔️ 說來世在戰場最閃亮…今生危機時變強也對得上 → 你呢？",
+      "resultType2": "轉世職業：大航海探險家 🧭 來世探索地圖外…今生愛挑戰像前世記憶 → 你呢？",
+      "resultType3": "轉世職業：古代哲人 📜 來世一句話讀幾百年…沾點蘇格拉底不虧 → 你呢？",
+      "resultType4": "轉世職業：文藝復興藝術家 🎨 來世像米開朗基羅…作品進美術館 → 你呢？",
+      "resultType5": "轉世職業：天才科學家 🔭 來世定律進課本…牛頓特斯拉血脈今生怎回事 → 你呢？",
+      "resultType6": "轉世職業：傳奇作家 ✍️ 來世句子幾百年後仍被讀…今生寫日記是前世記憶？ → 你呢？",
+      "startDefault": "我若轉世會是什麼職業？ ✨ 轉世職業分析",
+      "startKakao": "我若轉世會是什麼職業？ ✨ 轉世職業分析",
+      "startWechat": "我若轉世會是什麼職業？ ✨ 轉世職業分析",
+      "startWhatsapp": "我若轉世會是什麼職業？ ✨ 轉世職業分析",
+      "startTelegram": "我若轉世會是什麼職業？ ✨ 轉世職業分析",
+      "startLine": "我若轉世會是什麼職業？ ✨ 轉世職業分析"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 熱門測試推薦前5名"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先買了再說！\"",
