@@ -1616,6 +1616,88 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3CoupleChemistryAnalysisTest": {
+    "startMessage": {
+      "line1": "Each of you takes the quiz, then you combine your results to unlock your couple chemistry analysis.",
+      "line2": "What clicks and what clashes is often not “bad personality”—it’s a mismatch between how you show love and how your partner receives it.",
+      "line3": "Twelve questions each reveal your dating style. Combine both types to see your match points and friction points.",
+      "line4Heading": "How to play",
+      "line4": "1️⃣ Take the test solo → see your type 2️⃣ Your partner takes the same test → their type 3️⃣ Pick both types → see your couple chemistry"
+    },
+    "ui": {
+      "startTest": "Start couple chemistry 💑 each take the test first",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share your result",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "More tests",
+      "goToTest": "Go to test",
+      "adsenseTitle": "AdSense area (Couple chemistry analysis)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "individualResultHeading": "My dating style",
+      "goCoupleChemistry": "Pick partner’s type & see couple chemistry",
+      "pickPartnerTitle": "Choose your partner’s dating style",
+      "pickPartnerHint": "After they finish the same test, pick the type they got.\nOn one device, check their result screen, then choose below.",
+      "backToMyResult": "← Back to my dating style",
+      "backToPartnerPick": "← Change partner’s type",
+      "chemistryGrade": "Chemistry tier: {grade}",
+      "couplePairLine": "Me: {mine} · Partner: {partner}",
+      "matchPoint": "What clicks",
+      "clashPoint": "Friction points",
+      "longTerm": "Long-term note",
+      "overcome": "How to work through it",
+      "keywords": "Dating keywords",
+      "loveLanguage": "My love language",
+      "give": "What I give my partner",
+      "want": "What I want from my partner",
+      "strength": "Strengths of this style",
+      "weakness": "Weak spots of this style",
+      "goodPartner": "Great match types",
+      "cautionPartner": "Types to watch with",
+      "resultLabels": {
+        "type": "Type",
+        "tagline": "One-liner",
+        "detail": "Details"
+      }
+    },
+    "shareMessages": {
+      "default": "Couple chemistry: my dating style is {type}! Try it with your partner 💑",
+      "resultType1": "Couple chemistry: Passion Express ❤️‍🔥 You wear your heart on your sleeve—calls, surprises, full energy. What’s your dating style?",
+      "resultType2": "Couple chemistry: All-in Devoted 💝 Their happiness is yours—you make up first. What’s your dating style?",
+      "resultType3": "Couple chemistry: Independent Free 🌿 Love needs space—quality over constant contact. What’s your dating style?",
+      "resultType4": "Couple chemistry: Steady Routine 🏡 Love is everyday life stacking up—reliable and calm. What’s your dating style?",
+      "resultType5": "Couple chemistry: Emotional Bond 💜 You want depth and being understood—empathy matters most. What’s your dating style?",
+      "resultType6": "Couple chemistry: Growth Partners 🚀 You grow together—direction and goals. What’s your dating style?",
+      "coupleGradeS": "Couple chemistry: S-tier match 🎯 {myType} + {partnerType} — this combo hits. Read the match points… Try it with your partner!",
+      "coupleGradeA": "Couple chemistry: A-tier fit ✨ {myType} + {partnerType} — great match, but the friction part stings. Try it together!",
+      "coupleGradeB": "Couple chemistry: B-tier—needs tuning 🔧 {myType} + {partnerType} — so that’s why you fought there. Relatable. Try it!",
+      "coupleGradeC": "Couple chemistry: C-tier—high friction ⚡ {myType} + {partnerType} — tough, but there’s a way through. Try it!",
+      "startDefault": "Couple chemistry analysis 💑 solo test, then combine",
+      "startKakao": "Couple chemistry analysis 💑 solo test, then combine",
+      "startWechat": "Couple chemistry analysis 💑 solo test, then combine",
+      "startWhatsapp": "Couple chemistry analysis 💑 solo test, then combine",
+      "startTelegram": "Couple chemistry analysis 💑 solo test, then combine",
+      "startLine": "Couple chemistry analysis 💑 solo test, then combine"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing unavailable.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Try again shortly.",
+      "kakaoError": "Error sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3PerfectionismIndexTest": {
     "startMessage": {
       "line1": "Is perfectionism a strength—or a trap?",

@@ -1575,6 +1575,88 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3CoupleChemistryAnalysisTest": {
+    "startMessage": {
+      "line1": "Hai người lần lượt làm bài và ghép kết quả để mở phân tích chemistry chỉ của đôi bạn.",
+      "line2": "Hợp và xung đột thường không phải vì “tính xấu”—mà vì cách bạn thể hiện tình yêu khác cách đối phương nhận tình yêu.",
+      "line3": "Mỗi người trả lời 12 câu sẽ ra kiểu phong cách yêu; ghép hai kiểu để thấy điểm hợp và điểm cọ xát.",
+      "line4Heading": "Cách làm",
+      "line4": "1️⃣ Làm một mình → xem kiểu của bạn 2️⃣ Đối phương làm cùng bài → xem kiểu của họ 3️⃣ Chọn cặp kiểu → xem kết quả chemistry"
+    },
+    "ui": {
+      "startTest": "Bắt đầu phân tích chemistry 💑 mỗi người làm bài trước",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Bài test khác",
+      "goToTest": "Đi tới bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (phân tích chemistry cặp đôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "individualResultHeading": "Phong cách yêu của tôi",
+      "goCoupleChemistry": "Chọn kiểu đối phương và xem chemistry",
+      "pickPartnerTitle": "Chọn phong cách yêu của đối phương",
+      "pickPartnerHint": "Sau khi họ làm xong cùng bài, chọn đúng kiểu họ được.\nNếu cùng một máy, xem màn hình kết quả của họ rồi chọn bên dưới.",
+      "backToMyResult": "← Quay lại kết quả phong cách của tôi",
+      "backToPartnerPick": "← Chọn lại kiểu đối phương",
+      "chemistryGrade": "Hạng chemistry: {grade}",
+      "couplePairLine": "Tôi: {mine} · Đối phương: {partner}",
+      "matchPoint": "Điểm hợp",
+      "clashPoint": "Điểm cọ xát",
+      "longTerm": "Lưu ý dài hạn",
+      "overcome": "Cách vượt qua",
+      "keywords": "Từ khóa yêu đương",
+      "loveLanguage": "Ngôn ngữ tình yêu của tôi",
+      "give": "Điều tôi cho đối phương",
+      "want": "Điều tôi muốn từ đối phương",
+      "strength": "Điểm mạnh của kiểu này",
+      "weakness": "Điểm yếu của kiểu này",
+      "goodPartner": "Kiểu hợp nhất",
+      "cautionPartner": "Kiểu cần cẩn thận",
+      "resultLabels": {
+        "type": "Kiểu",
+        "tagline": "Một câu",
+        "detail": "Chi tiết"
+      }
+    },
+    "shareMessages": {
+      "default": "Phân tích chemistry: phong cách yêu của tôi là {type}! Thử cùng đối phương nhé 💑",
+      "resultType1": "Phân tích chemistry: Nhiệt huyết thể hiện ❤️‍🔥 Yêu là lộ ra… nhắn tin, bất ngờ rất chủ động. Bạn thuộc kiểu nào?",
+      "resultType2": "Phân tích chemistry: Hy sinh trọn 💝 Hạnh phúc họ là hạnh phúc mình… hay làm lành trước? Bạn thuộc kiểu nào?",
+      "resultType3": "Phân tích chemistry: Độc lập 🌿 Yêu vẫn cần không gian… chất hơn số lần liên lạc. Bạn thuộc kiểu nào?",
+      "resultType4": "Phân tích chemistry: Ổn định thói quen 🏡 Yêu là những ngày chồng chất… đều đặn, yên bình. Bạn thuộc kiểu nào?",
+      "resultType5": "Phân tích chemistry: Kết nối cảm xúc 💜 Muốn hiểu sâu không cần nhiều lời… đồng cảm là nhất. Bạn thuộc kiểu nào?",
+      "resultType6": "Phân tích chemistry: Cùng tiến bộ 🚀 Cùng phát triển… coi trọng hướng đi. Bạn thuộc kiểu nào?",
+      "coupleGradeS": "Phân tích chemistry: Hạng S cực hợp 🎯 {myType} + {partnerType} — combo mạnh… đọc điểm hợp rồi thử với đôi bạn!",
+      "coupleGradeA": "Phân tích chemistry: Hạng A rất hợp ✨ {myType} + {partnerType} — hợp nhưng điểm cọ xát cũng đau… thử cùng nhau!",
+      "coupleGradeB": "Phân tích chemistry: Hạng B cần chỉnh 🔧 {myType} + {partnerType} — hóa ra hay cãi chỗ đó… quá đúng. Thử đi!",
+      "coupleGradeC": "Phân tích chemistry: Hạng C ma sát cao ⚡ {myType} + {partnerType} — khó nhưng vẫn có cách… thử đi!",
+      "startDefault": "Phân tích chemistry cặp đôi 💑 làm riêng rồi ghép",
+      "startKakao": "Phân tích chemistry cặp đôi 💑 làm riêng rồi ghép",
+      "startWechat": "Phân tích chemistry cặp đôi 💑 làm riêng rồi ghép",
+      "startWhatsapp": "Phân tích chemistry cặp đôi 💑 làm riêng rồi ghép",
+      "startTelegram": "Phân tích chemistry cặp đôi 💑 làm riêng rồi ghép",
+      "startLine": "Phân tích chemistry cặp đôi 💑 làm riêng rồi ghép"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3PerfectionismIndexTest": {
     "startMessage": {
       "line1": "Chủ nghĩa hoàn hảo là điểm mạnh hay gánh nặng?",

@@ -1575,6 +1575,88 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3CoupleChemistryAnalysisTest": {
+    "startMessage": {
+      "line1": "Kalian berdua mengerjakan tes lalu menggabungkan hasil untuk membuka analisis chemistry pasangan.",
+      "line2": "Yang cocok dan yang bentrok sering bukan karena “sifat buruk”—tetapi karena cara kamu menunjukkan cinta berbeda dengan cara pasangan menerimanya.",
+      "line3": "Masing-masing menjawab 12 pertanyaan untuk mendapatkan tipe gaya pacaran; gabungkan dua tipe untuk melihat titik cocok dan gesekan.",
+      "line4Heading": "Alur",
+      "line4": "1️⃣ Kerjakan sendiri → lihat tipemu 2️⃣ Pasangan kerja tes yang sama → lihat tipe mereka 3️⃣ Pilih kombinasi → lihat hasil chemistry"
+    },
+    "ui": {
+      "startTest": "Mulai analisis chemistry 💑 masing-masing kerjakan tes dulu",
+      "shareWithFriends": "Coba dengan teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lain",
+      "goToTest": "Ke tes",
+      "adsenseTitle": "Area iklan AdSense (analisis chemistry pasangan)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "individualResultHeading": "Gaya pacaranku",
+      "goCoupleChemistry": "Pilih tipe pasangan & lihat chemistry",
+      "pickPartnerTitle": "Pilih gaya pacaran pasangan",
+      "pickPartnerHint": "Setelah mereka selesai tes yang sama, pilih tipe yang mereka dapat.\nJika satu perangkat, cek layar hasil mereka lalu pilih di bawah.",
+      "backToMyResult": "← Kembali ke hasil gaya pacaranku",
+      "backToPartnerPick": "← Ubah pilihan tipe pasangan",
+      "chemistryGrade": "Peringkat chemistry: {grade}",
+      "couplePairLine": "Aku: {mine} · Pasangan: {partner}",
+      "matchPoint": "Yang cocok",
+      "clashPoint": "Titik gesekan",
+      "longTerm": "Catatan jangka panjang",
+      "overcome": "Cara menyelaraskan",
+      "keywords": "Kata kunci pacaran",
+      "loveLanguage": "Bahasa cintaku",
+      "give": "Yang kuberikan ke pasangan",
+      "want": "Yang kuinginkan dari pasangan",
+      "strength": "Kelebihan gaya ini",
+      "weakness": "Kelemahan gaya ini",
+      "goodPartner": "Tipe yang paling cocok",
+      "cautionPartner": "Tipe yang perlu hati-hati",
+      "resultLabels": {
+        "type": "Tipe",
+        "tagline": "Satu kalimat",
+        "detail": "Detail"
+      }
+    },
+    "shareMessages": {
+      "default": "Analisis chemistry: gaya pacaranku {type}! Coba dengan pasanganmu 💑",
+      "resultType1": "Analisis chemistry: Ekspresif penuh gairah ❤️‍🔥 Kalau cinta keliatan… chat & kejutan aktif. Gaya pacaranmu?",
+      "resultType2": "Analisis chemistry: Pengabdian total 💝 Bahagia mereka bahagiaku… suka damai duluan? Gaya pacaranmu?",
+      "resultType3": "Analisis chemistry: Independen 🌿 Cinta butuh ruang… kualitas > frekuensi. Gaya pacaranmu?",
+      "resultType4": "Analisis chemistry: Rutin stabil 🏡 Cinta adalah hari-hari menumpuk… tenang dan konsisten. Gaya pacaranmu?",
+      "resultType5": "Analisis chemistry: Ikatan emosional 💜 Mau kedalaman & dipahami… empati nomor satu. Gaya pacaranmu?",
+      "resultType6": "Analisis chemistry: Tumbuh bersama 🚀 Bareng maju… arah & perkembangan. Gaya pacaranmu?",
+      "coupleGradeS": "Analisis chemistry: Match tingkat S 🎯 {myType} + {partnerType} — combo kuat… baca poin cocok lalu coba!",
+      "coupleGradeA": "Analisis chemistry: Match tingkat A ✨ {myType} + {partnerType} — cocok tapi gesekannya juga nyelekit… coba bareng!",
+      "coupleGradeB": "Analisis chemistry: Tingkat B perlu penyesuaian 🔧 {myType} + {partnerType} — makanya sering bentrok di situ… relate. Coba!",
+      "coupleGradeC": "Analisis chemistry: Tingkat C gesekan tinggi ⚡ {myType} + {partnerType} — berat tapi ada jalannya… coba!",
+      "startDefault": "Analisis chemistry pasangan 💑 tes sendiri lalu gabung",
+      "startKakao": "Analisis chemistry pasangan 💑 tes sendiri lalu gabung",
+      "startWechat": "Analisis chemistry pasangan 💑 tes sendiri lalu gabung",
+      "startWhatsapp": "Analisis chemistry pasangan 💑 tes sendiri lalu gabung",
+      "startTelegram": "Analisis chemistry pasangan 💑 tes sendiri lalu gabung",
+      "startLine": "Analisis chemistry pasangan 💑 tes sendiri lalu gabung"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3PerfectionismIndexTest": {
     "startMessage": {
       "line1": "Perfeksionisme itu kelebihan atau beban?",

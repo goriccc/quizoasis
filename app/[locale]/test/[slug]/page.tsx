@@ -38,6 +38,10 @@ import {
   phase3ReincarnationJobResults,
 } from '@/lib/phase3ReincarnationJobData';
 import {
+  phase3CoupleChemistryQuestions,
+  phase3CoupleChemistryIndividualResults,
+} from '@/lib/phase3CoupleChemistryAnalysisData';
+import {
   phase3PerfectionismIndexQuestions,
   phase3PerfectionismIndexResults,
 } from '@/lib/phase3PerfectionismIndexData';
@@ -193,6 +197,10 @@ const Phase3PersonalityStrengthWeaknessTestClient = dynamic(
 );
 const Phase3ReincarnationJobTestClient = dynamic(
   () => import('@/components/Phase3ReincarnationJobTestClient'),
+  { ssr: false }
+);
+const Phase3CoupleChemistryAnalysisTestClient = dynamic(
+  () => import('@/components/Phase3CoupleChemistryAnalysisTestClient'),
   { ssr: false }
 );
 const Phase3PerfectionismIndexTestClient = dynamic(
@@ -671,6 +679,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['轉世', '職業', '性格'],
         vi: ['Đầu thai', 'Nghề', 'Tính cách'],
         id: ['Reinkarnasi', 'Pekerjaan', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-couple-chemistry-analysis') {
+    test = {
+      slug: 'phase3-couple-chemistry-analysis',
+      title: {
+        ko: '우리 커플 궁합 케미 분석',
+        en: 'Our Couple Chemistry Analysis',
+        ja: '私たちのカップル相性ケミ分析',
+        'zh-CN': '我们的情侣合拍化学反应分析',
+        'zh-TW': '我們的情侶合拍化學反應分析',
+        vi: 'Phân tích chemistry cặp đôi của chúng mình',
+        id: 'Analisis chemistry pasangan kita',
+      },
+      description: {
+        ko: '각자 12문항으로 연애 스타일 6유형, 두 유형 조합으로 커플 케미 21가지. #커플 #궁합 #케미 #연애 #찰떡',
+        en: '12 questions each — 6 dating styles, 21 couple chemistry combos. #Couple #Compatibility #Chemistry',
+        ja: 'それぞれ12問で恋愛スタイル6タイプ、組み合わせでカップルケミ21パターン。#カップル #相性',
+        'zh-CN': '各答 12 题得恋爱风格 6 型，组合看 21 种情侣化学反应。#情侣 #合拍',
+        'zh-TW': '各答 12 題得戀愛風格 6 型，組合看 21 種情侶化學反應。#情侶 #合拍',
+        vi: 'Mỗi người 12 câu — 6 kiểu yêu, 21 tổ hợp chemistry. #Cặp đôi #Hợp gu',
+        id: 'Masing-masing 12 pertanyaan — 6 gaya pacaran, 21 kombinasi chemistry. #Pasangan',
+      },
+      thumbnail: 'p3_test_couple_chemistry_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['커플', '궁합', '케미', '연애', '찰떡'],
+        en: ['Couple', 'Compatibility', 'Chemistry', 'Love', 'Match'],
+        ja: ['カップル', '相性', 'ケミ', '恋愛', '相性抜群'],
+        'zh-CN': ['情侣', '合拍', '化学反应', '恋爱', '绝配'],
+        'zh-TW': ['情侶', '合拍', '化學反應', '戀愛', '絕配'],
+        vi: ['Cặp đôi', 'Hợp gu', 'Chemistry', 'Tình yêu', 'Hợp cạ'],
+        id: ['Pasangan', 'Cocok', 'Chemistry', 'Cinta', 'Cocok banget'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2401,6 +2446,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3ReincarnationJobQuestions}
           results={phase3ReincarnationJobResults}
           questionCount={phase3ReincarnationJobQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-couple-chemistry-analysis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-couple-chemistry-analysis',
+      title: {
+        ko: '우리 커플 궁합 케미 분석',
+        en: 'Our Couple Chemistry Analysis',
+        ja: '私たちのカップル相性ケミ分析',
+        'zh-CN': '我们的情侣合拍化学反应分析',
+        'zh-TW': '我們的情侶合拍化學反應分析',
+        vi: 'Phân tích chemistry cặp đôi của chúng mình',
+        id: 'Analisis chemistry pasangan kita',
+      },
+      description: {
+        ko: '각자 12문항으로 연애 스타일 6유형, 두 유형 조합으로 커플 케미 21가지. #커플 #궁합 #케미 #연애 #찰떡',
+        en: '12 questions each — 6 dating styles, 21 couple chemistry combos. #Couple #Compatibility #Chemistry',
+        ja: 'それぞれ12問で恋愛スタイル6タイプ、組み合わせでカップルケミ21パターン。#カップル #相性',
+        'zh-CN': '各答 12 题得恋爱风格 6 型，组合看 21 种情侣化学反应。#情侣 #合拍',
+        'zh-TW': '各答 12 題得戀愛風格 6 型，組合看 21 種情侶化學反應。#情侶 #合拍',
+        vi: 'Mỗi người 12 câu — 6 kiểu yêu, 21 tổ hợp chemistry. #Cặp đôi #Hợp gu',
+        id: 'Masing-masing 12 pertanyaan — 6 gaya pacaran, 21 kombinasi chemistry. #Pasangan',
+      },
+      thumbnail: 'p3_test_couple_chemistry_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['커플', '궁합', '케미', '연애', '찰떡'],
+        en: ['Couple', 'Compatibility', 'Chemistry', 'Love', 'Match'],
+        ja: ['カップル', '相性', 'ケミ', '恋愛', '相性抜群'],
+        'zh-CN': ['情侣', '合拍', '化学反应', '恋爱', '绝配'],
+        'zh-TW': ['情侶', '合拍', '化學反應', '戀愛', '絕配'],
+        vi: ['Cặp đôi', 'Hợp gu', 'Chemistry', 'Tình yêu', 'Hợp cạ'],
+        id: ['Pasangan', 'Cocok', 'Chemistry', 'Cinta', 'Cocok banget'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3CoupleChemistryAnalysisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3CoupleChemistryQuestions}
+          results={phase3CoupleChemistryIndividualResults}
+          questionCount={phase3CoupleChemistryQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

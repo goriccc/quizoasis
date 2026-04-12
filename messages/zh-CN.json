@@ -1575,6 +1575,88 @@
       "popularTestsTop5": "🔥 热门测试推荐前5名"
     }
   },
+  "phase3CoupleChemistryAnalysisTest": {
+    "startMessage": {
+      "line1": "两个人各自完成测试并合并结果，就能解锁只属于你们的情侣默契分析。",
+      "line2": "合拍与摩擦往往并不是“性格不好”，而是你爱人的方式与对方接收爱的方式不一致。",
+      "line3": "各自回答 12 道题会得到各自的恋爱风格类型；把两种类型组合，就能看清合拍点与摩擦点。",
+      "line4Heading": "流程",
+      "line4": "1️⃣ 先独自测试 → 查看自己的类型 2️⃣ 对方也做同一套题 → 确认对方类型 3️⃣ 选择组合 → 查看情侣默契结果"
+    },
+    "ui": {
+      "startTest": "开始情侣默契分析 💑 请先各自完成测试",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "更多测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense 广告区域（情侣默契分析）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "individualResultHeading": "我的恋爱风格",
+      "goCoupleChemistry": "选择对方类型并查看情侣默契",
+      "pickPartnerTitle": "请选择对方的恋爱风格",
+      "pickPartnerHint": "等对方完成同一套测试后，根据对方告诉你的类型进行选择。\n若在同一台设备上，可先查看对方的结果页面，再在下方选择。",
+      "backToMyResult": "← 返回我的恋爱风格结果",
+      "backToPartnerPick": "← 重新选择对方类型",
+      "chemistryGrade": "默契等级：{grade} 级",
+      "couplePairLine": "我：{mine} · 对方：{partner}",
+      "matchPoint": "合拍点",
+      "clashPoint": "摩擦点",
+      "longTerm": "长期关系提示",
+      "overcome": "如何磨合",
+      "keywords": "恋爱关键词",
+      "loveLanguage": "我的爱之语",
+      "give": "我给对方的",
+      "want": "我想从对方得到的",
+      "strength": "这种风格的优点",
+      "weakness": "这种风格的弱点",
+      "goodPartner": "更合拍的对象类型",
+      "cautionPartner": "需要留意的对象类型",
+      "resultLabels": {
+        "type": "类型",
+        "tagline": "一句话",
+        "detail": "详细说明"
+      }
+    },
+    "shareMessages": {
+      "default": "情侣默契分析：我的恋爱风格是 {type}！你也来试试 💑",
+      "resultType1": "情侣默契分析：热情表达型 ❤️‍🔥 爱就会表现出来…主动联系、制造惊喜很积极。你是哪种恋爱风格？",
+      "resultType2": "情侣默契分析：全心付出型 💝 对方的幸福就是我的幸福…会先低头和好？你是哪种恋爱风格？",
+      "resultType3": "情侣默契分析：独立自由型 🌿 相爱也需要各自空间…重质不重量。你是哪种恋爱风格？",
+      "resultType4": "情侣默契分析：稳定日常型 🏡 爱是日复一日的积累…稳定可靠。你是哪种恋爱风格？",
+      "resultType5": "情侣默契分析：情感连结型 💜 想要不用说也能懂的深度连结…共情最重要。你是哪种恋爱风格？",
+      "resultType6": "情侣默契分析：并肩成长型 🚀 一起变得更好…重视方向与成长。你是哪种恋爱风格？",
+      "coupleGradeS": "情侣默契分析：S 级超合拍 🎯 {myType} + {partnerType} — 这组合很能打…看完合拍点你也来试试！",
+      "coupleGradeA": "情侣默契分析：A 级很合拍 ✨ {myType} + {partnerType} — 合拍但摩擦点也很扎心…你们也来测！",
+      "coupleGradeB": "情侣默契分析：B 级需要磨合 🔧 {myType} + {partnerType} — 难怪老在这件事上吵…摩擦点太真实。你们也来测！",
+      "coupleGradeC": "情侣默契分析：C 级高摩擦 ⚡ {myType} + {partnerType} — 难怪这么难…但也有办法。你们也来测！",
+      "startDefault": "情侣默契分析 💑 先各自测试再组合",
+      "startKakao": "情侣默契分析 💑 先各自测试再组合",
+      "startWechat": "情侣默契分析 💑 先各自测试再组合",
+      "startWhatsapp": "情侣默契分析 💑 先各自测试再组合",
+      "startTelegram": "情侣默契分析 💑 先各自测试再组合",
+      "startLine": "情侣默契分析 💑 先各自测试再组合"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "暂时无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前5名",
+      "popularTestsTop5": "🔥 热门测试推荐前5名"
+    }
+  },
   "phase3PerfectionismIndexTest": {
     "startMessage": {
       "line1": "完美主义是优点，还是负担？",

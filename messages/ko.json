@@ -837,6 +837,88 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3CoupleChemistryAnalysisTest": {
+    "startMessage": {
+      "line1": "두 사람이 각자 테스트를 하고 결과를 합치면 우리 커플만의 케미 분석이 나옵니다.",
+      "line2": "연애에서 찰떡인 부분과 자꾸 충돌하는 부분은 성격 문제가 아닌 경우가 많습니다. 내가 사랑을 표현하는 방식과 상대방이 사랑을 받아들이는 방식이 다를 때 생기는 미스매치입니다.",
+      "line3": "두 사람이 각자 12가지 질문에 답하면 각자의 연애 스타일 유형이 나옵니다. 두 유형을 합치면 우리 커플의 찰떡 포인트와 충돌 포인트가 정확하게 분석됩니다.",
+      "line4Heading": "진행 방법",
+      "line4": "1️⃣ 나 혼자 먼저 테스트 → 내 유형 확인 2️⃣ 상대방도 같은 테스트 → 상대 유형 확인 3️⃣ 두 유형 조합 선택 → 우리 커플 케미 결과 확인"
+    },
+    "ui": {
+      "startTest": "커플 케미 분석 시작 💑 각자 테스트 먼저",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (우리 커플 궁합 케미 분석)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "individualResultHeading": "나의 연애 스타일",
+      "goCoupleChemistry": "상대 유형 선택하고 커플 케미 보기",
+      "pickPartnerTitle": "상대방의 연애 스타일을 선택하세요",
+      "pickPartnerHint": "상대가 같은 테스트를 마친 뒤 알려준 유형을 골라 주세요.\n같은 기기에서 할 경우, 상대 결과 화면을 확인한 뒤 아래에서 선택하면 됩니다.",
+      "backToMyResult": "← 내 연애 스타일 결과로",
+      "backToPartnerPick": "← 상대 유형 다시 선택",
+      "chemistryGrade": "케미 등급: {grade}급",
+      "couplePairLine": "나: {mine} · 상대: {partner}",
+      "matchPoint": "찰떡 포인트",
+      "clashPoint": "충돌 포인트",
+      "longTerm": "장기 관계에서의 주의점",
+      "overcome": "극복 방법",
+      "keywords": "연애 키워드",
+      "loveLanguage": "나의 사랑 언어",
+      "give": "내가 상대방에게 주는 것",
+      "want": "내가 상대방에게 원하는 것",
+      "strength": "이 스타일의 강점",
+      "weakness": "이 스타일의 약점",
+      "goodPartner": "찰떡 파트너",
+      "cautionPartner": "주의할 파트너",
+      "resultLabels": {
+        "type": "유형",
+        "tagline": "한 줄 요약",
+        "detail": "상세 설명"
+      }
+    },
+    "shareMessages": {
+      "default": "우리 커플 케미 분석: 나의 연애 스타일은 {type}! 너도 같이 해봐 💑",
+      "resultType1": "우리 커플 케미 분석: 열정 표현형 ❤️‍🔥 사랑하면 티 나는 스타일... 연락·서프라이즈 적극 파 → 너는 어떤 연애 스타일?",
+      "resultType2": "우리 커플 케미 분석: 올인 헌신형 💝 상대 행복이 곧 내 행복... 먼저 풀어주는 타입 맞지? → 너는 어떤 연애 스타일?",
+      "resultType3": "우리 커플 케미 분석: 독립 자유형 🌿 사랑해도 각자 공간 필요... 연락 빈도보다 질 → 너는 어떤 연애 스타일?",
+      "resultType4": "우리 커플 케미 분석: 안정 루틴형 🏡 매일의 일상이 쌓이는 사랑... 꾸준함이 미덕 → 너는 어떤 연애 스타일?",
+      "resultType5": "우리 커플 케미 분석: 감성 연결형 💜 말 안 해도 통하는 깊은 연결 원함... 공감 최고 → 너는 어떤 연애 스타일?",
+      "resultType6": "우리 커플 케미 분석: 동반 성장형 🚀 같이 더 나아지는 연애... 방향성·성장 중시 → 너는 어떤 연애 스타일?",
+      "coupleGradeS": "우리 커플 케미 분석: S급 찰떡 조합 🎯 {myType} + {partnerType} = 이 조합 실화임... 찰떡 포인트 읽고 소름 → 너네 커플도 해봐",
+      "coupleGradeA": "우리 커플 케미 분석: A급 잘 맞는 조합 ✨ {myType} + {partnerType} = 찰떡이긴 한데 충돌 포인트 읽고 뜨끔함 ㅋㅋ → 너네 커플도 해봐",
+      "coupleGradeB": "우리 커플 케미 분석: B급 조율 필요 조합 🔧 {myType} + {partnerType} = 이래서 자꾸 이 부분에서 싸웠구나... 충돌 포인트 너무 공감 → 너네 커플도 해봐",
+      "coupleGradeC": "우리 커플 케미 분석: C급 충돌 주의 조합 ⚡ {myType} + {partnerType} = 이래서 이렇게 힘들었구나 ㅠ 그래도 극복 방법 있다니까 해봐야지... → 너네 커플도 해봐",
+      "startDefault": "우리 커플 궁합 케미 분석 💑 각자 테스트 후 조합까지",
+      "startKakao": "우리 커플 궁합 케미 분석 💑 각자 테스트 후 조합까지",
+      "startWechat": "우리 커플 궁합 케미 분석 💑 각자 테스트 후 조합까지",
+      "startWhatsapp": "우리 커플 궁합 케미 분석 💑 각자 테스트 후 조합까지",
+      "startTelegram": "우리 커플 궁합 케미 분석 💑 각자 테스트 후 조합까지",
+      "startLine": "우리 커플 궁합 케미 분석 💑 각자 테스트 후 조합까지"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3PerfectionismIndexTest": {
     "startMessage": {
       "line1": "완벽주의는 장점일까요, 단점일까요?",

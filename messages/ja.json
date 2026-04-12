@@ -1576,6 +1576,88 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3CoupleChemistryAnalysisTest": {
+    "startMessage": {
+      "line1": "二人がそれぞれ診断を受け、結果を合わせると、ふたりだけのカップル相性分析が出ます。",
+      "line2": "うまくいく部分とぶつかる部分は、性格が悪いからとは限りません。愛の伝え方と受け取り方のズレが起きていることが多いです。",
+      "line3": "それぞれ12問に答えると、それぞれの恋愛スタイルタイプが出ます。ふたつのタイプを組み合わせると、相性のいい点と衝突しやすい点がはっきり分かります。",
+      "line4Heading": "進め方",
+      "line4": "1️⃣ まず一人で診断 → 自分のタイプ 2️⃣ 相手も同じ診断 → 相手のタイプ 3️⃣ 組み合わせを選ぶ → カップル相性結果"
+    },
+    "ui": {
+      "startTest": "カップル相性を始める 💑 まずはそれぞれ診断から",
+      "shareWithFriends": "友だちと試す",
+      "shareResultWithFriends": "結果をシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテスト",
+      "goToTest": "テストへ",
+      "adsenseTitle": "AdSense 広告エリア（カップル相性分析）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "individualResultHeading": "私の恋愛スタイル",
+      "goCoupleChemistry": "相手のタイプを選んでカップル相性を見る",
+      "pickPartnerTitle": "相手の恋愛スタイルを選んでください",
+      "pickPartnerHint": "相手が同じ診断を終えたあと、教えてもらったタイプを選んでください。\n同じ端末の場合は、相手の結果画面を確認してから下で選べます。",
+      "backToMyResult": "← 私の恋愛スタイル結果へ",
+      "backToPartnerPick": "← 相手のタイプを選び直す",
+      "chemistryGrade": "相性ランク：{grade}",
+      "couplePairLine": "自分：{mine} · 相手：{partner}",
+      "matchPoint": "相性がいい点",
+      "clashPoint": "ぶつかりやすい点",
+      "longTerm": "長期的な注意点",
+      "overcome": "乗り越え方",
+      "keywords": "恋愛キーワード",
+      "loveLanguage": "私のラブランゲージ",
+      "give": "相手にあげているもの",
+      "want": "相手に求めているもの",
+      "strength": "このスタイルの強み",
+      "weakness": "このスタイルの弱み",
+      "goodPartner": "相性が良いタイプ",
+      "cautionPartner": "注意したいタイプ",
+      "resultLabels": {
+        "type": "タイプ",
+        "tagline": "ひとこと",
+        "detail": "詳しく"
+      }
+    },
+    "shareMessages": {
+      "default": "カップル相性：私の恋愛スタイルは {type}！ ふたりでも試してね 💑",
+      "resultType1": "カップル相性：情熱表現型 ❤️‍🔥 好きなら態度に出る…連絡もサプライズも積極派。あなたの恋愛スタイルは？",
+      "resultType2": "カップル相性：オールイン献身型 💝 相手の幸せが自分の幸せ…先に仲直りするタイプ？ あなたの恋愛スタイルは？",
+      "resultType3": "カップル相性：自立自由型 🌿 愛していても距離は必要…回数より質。あなたの恋愛スタイルは？",
+      "resultType4": "カップル相性：安定ルーティン型 🏡 毎日の積み重ねが愛…じっくり派。あなたの恋愛スタイルは？",
+      "resultType5": "カップル相性：感性コネクト型 💜 言葉なしでも通じ合いたい…共感が大事。あなたの恋愛スタイルは？",
+      "resultType6": "カップル相性：同伴成長型 🚀 一緒に前へ…方向性と成長重視。あなたの恋愛スタイルは？",
+      "coupleGradeS": "カップル相性：Sランク相性 🎯 {myType} + {partnerType} — この組み合わせ強い。相性ポイント読んで… ふたりでも試して！",
+      "coupleGradeA": "カップル相性：Aランク相性 ✨ {myType} + {partnerType} — 合うけど衝突ポイントも刺さる。ふたりでも試して！",
+      "coupleGradeB": "カップル相性：Bランク・調整がカギ 🔧 {myType} + {partnerType} — だからそこで揉めたのか…共感。ふたりでも試して！",
+      "coupleGradeC": "カップル相性：Cランク・衝突に注意 ⚡ {myType} + {partnerType} — きついけど乗り越え方もある。ふたりでも試して！",
+      "startDefault": "カップル相性分析 💑 それぞれ診断してから組み合わせ",
+      "startKakao": "カップル相性分析 💑 それぞれ診断してから組み合わせ",
+      "startWechat": "カップル相性分析 💑 それぞれ診断してから組み合わせ",
+      "startWhatsapp": "カップル相性分析 💑 それぞれ診断してから組み合わせ",
+      "startTelegram": "カップル相性分析 💑 それぞれ診断してから組み合わせ",
+      "startLine": "カップル相性分析 💑 それぞれ診断してから組み合わせ"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3PerfectionismIndexTest": {
     "startMessage": {
       "line1": "完璧主義は強み？それとも負担？",
