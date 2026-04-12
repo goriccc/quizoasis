@@ -713,6 +713,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3PersonalityStrengthWeaknessTest": {
+    "startMessage": {
+      "line1": "당신의 성격, 솔직하게 말해드릴게요.",
+      "line2": "장점만 늘어놓는 달달한 테스트는 잊어주세요.",
+      "line3": "칭찬도 팩트, 단점도 팩트. 기분 좋으라고 포장하지 않겠습니다.",
+      "line4": "당신 성격의 빛나는 면과, 솔직히 좀 고쳐야 할 그림자까지. 있는 그대로 분석해 드립니다.",
+      "line5": "맞아서 화가 날 수도 있습니다. 그게 바로 팩트의 힘입니다.",
+      "line6": "내 성격 팩폭 받으러 가기 💥 솔직한 성격 분석 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (내 성격의 장점과 단점 팩폭)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "personalityType": "성격 유형",
+      "strengthKeywords": "장점 키워드",
+      "weaknessKeywords": "단점 키워드",
+      "strengthRoast": "장점 팩폭",
+      "weaknessRoast": "단점 팩폭",
+      "totalScore": "총점 {score}점 / 36점",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 성격 유형은 {type}! 💥 장점도 단점도 다 팩트라 더 무서워... 너도 한번 맞아봐",
+      "kakao": "내 성격 유형은 {type}! 💥 장점도 단점도 다 팩트라 더 무서워... 너도 한번 맞아봐",
+      "wechat": "내 성격 유형은 {type}! 💥 장점도 단점도 다 팩트라 더 무서워... 너도 한번 맞아봐",
+      "whatsapp": "내 성격 유형은 {type}! 💥 장점도 단점도 다 팩트라 더 무서워... 너도 한번 맞아봐",
+      "telegram": "내 성격 유형은 {type}! 💥 장점도 단점도 다 팩트라 더 무서워... 너도 한번 맞아봐",
+      "line": "내 성격 유형은 {type}! 💥 장점도 단점도 다 팩트라 더 무서워... 너도 한번 맞아봐",
+      "startDefault": "내 성격의 장점과 단점 팩폭 💥 솔직한 성격 분석",
+      "startKakao": "내 성격의 장점과 단점 팩폭 💥 솔직한 성격 분석",
+      "startWechat": "내 성격의 장점과 단점 팩폭 💥 솔직한 성격 분석",
+      "startWhatsapp": "내 성격의 장점과 단점 팩폭 💥 솔직한 성격 분석",
+      "startTelegram": "내 성격의 장점과 단점 팩폭 💥 솔직한 성격 분석",
+      "startLine": "내 성격의 장점과 단점 팩폭 💥 솔직한 성격 분석"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"어? 예쁘다. 일단 사!\"",

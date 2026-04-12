@@ -1492,6 +1492,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3PersonalityStrengthWeaknessTest": {
+    "startMessage": {
+      "line1": "We will speak honestly about your personality.",
+      "line2": "Forget tests that only pile on sweet praise.",
+      "line3": "Praise is fact; weaknesses are fact too. We will not sugarcoat to make you feel good.",
+      "line4": "We analyze the bright side of your personality and the shadow you should honestly work on — as you are.",
+      "line5": "You might get mad because it hits home. That is the power of facts.",
+      "line6": "Take the blunt personality roast 💥 Start the honest analysis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Personality strengths & weaknesses roast)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "personalityType": "Personality type",
+      "strengthKeywords": "Strength keywords",
+      "weaknessKeywords": "Weakness keywords",
+      "strengthRoast": "Strength roast",
+      "weaknessRoast": "Weakness roast",
+      "totalScore": "Score {score} / 36",
+      "goodMatch": "Dream match",
+      "badMatch": "Chaotic match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My personality type is {type}! 💥 Strengths and weaknesses are all facts — try it.",
+      "kakao": "My personality type is {type}! 💥 Strengths and weaknesses are all facts — try it.",
+      "wechat": "My personality type is {type}! 💥 Strengths and weaknesses are all facts — try it.",
+      "whatsapp": "My personality type is {type}! 💥 Strengths and weaknesses are all facts — try it.",
+      "telegram": "My personality type is {type}! 💥 Strengths and weaknesses are all facts — try it.",
+      "line": "My personality type is {type}! 💥 Strengths and weaknesses are all facts — try it.",
+      "startDefault": "Blunt personality strengths & weaknesses 💥 Honest analysis",
+      "startKakao": "Blunt personality strengths & weaknesses 💥 Honest analysis",
+      "startWechat": "Blunt personality strengths & weaknesses 💥 Honest analysis",
+      "startWhatsapp": "Blunt personality strengths & weaknesses 💥 Honest analysis",
+      "startTelegram": "Blunt personality strengths & weaknesses 💥 Honest analysis",
+      "startLine": "Blunt personality strengths & weaknesses 💥 Honest analysis"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

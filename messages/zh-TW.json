@@ -1458,6 +1458,62 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3PersonalityStrengthWeaknessTest": {
+    "startMessage": {
+      "line1": "關於你的性格，我們會說實話。",
+      "line2": "只會堆優點的甜膩測驗，請忘了吧。",
+      "line3": "誇獎是事實，缺點也是事實。不會為了讓你開心而包裝。",
+      "line4": "性格裡閃光的一面，和該認真調整的陰影，都會如實分析。",
+      "line5": "被說中了可能會生氣——這就是事實的力量。",
+      "line6": "來接受性格直球點評 💥 開始誠實分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（性格優缺點直說）",
+      "goToTest": "前往測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測驗",
+      "personalityType": "性格類型",
+      "strengthKeywords": "優點關鍵詞",
+      "weaknessKeywords": "缺點關鍵詞",
+      "strengthRoast": "優點直說",
+      "weaknessRoast": "缺點直說",
+      "totalScore": "得分 {score} / 36",
+      "goodMatch": "合拍搭檔",
+      "badMatch": "難搭搭檔",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的性格類型是{type}！💥 優缺點全是真話，更扎心……你也來試試",
+      "kakao": "我的性格類型是{type}！💥 優缺點全是真話，更扎心……你也來試試",
+      "wechat": "我的性格類型是{type}！💥 優缺點全是真話，更扎心……你也來試試",
+      "whatsapp": "我的性格類型是{type}！💥 優缺點全是真話，更扎心……你也來試試",
+      "telegram": "我的性格類型是{type}！💥 優缺點全是真話，更扎心……你也來試試",
+      "line": "我的性格類型是{type}！💥 優缺點全是真話，更扎心……你也來試試",
+      "startDefault": "性格優缺點直球測評 💥 誠實分析",
+      "startKakao": "性格優缺點直球測評 💥 誠實分析",
+      "startWechat": "性格優缺點直球測評 💥 誠實分析",
+      "startWhatsapp": "性格優缺點直球測評 💥 誠實分析",
+      "startTelegram": "性格優缺點直球測評 💥 誠實分析",
+      "startLine": "性格優缺點直球測評 💥 誠實分析"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先買了再說！\"",

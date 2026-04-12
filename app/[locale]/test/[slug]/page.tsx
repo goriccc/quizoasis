@@ -29,6 +29,10 @@ import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
 import { phase3AttachmentLoveQuestions, phase3AttachmentLoveResults } from '@/lib/phase3AttachmentLoveData';
 import { phase3BurnoutFatigueQuestions, phase3BurnoutFatigueResults } from '@/lib/phase3BurnoutFatigueData';
 import { phase3SummerVacationTypeQuestions, phase3SummerVacationTypeResults } from '@/lib/phase3SummerVacationTypeData';
+import {
+  phase3PersonalityStrengthWeaknessQuestions,
+  phase3PersonalityStrengthWeaknessResults,
+} from '@/lib/phase3PersonalityStrengthWeaknessData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -175,6 +179,10 @@ const Phase3BurnoutFatigueTestClient = dynamic(() => import('@/components/Phase3
 const Phase3SummerVacationTypeTestClient = dynamic(() => import('@/components/Phase3SummerVacationTypeTestClient'), {
   ssr: false
 });
+const Phase3PersonalityStrengthWeaknessTestClient = dynamic(
+  () => import('@/components/Phase3PersonalityStrengthWeaknessTestClient'),
+  { ssr: false }
+);
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
   ssr: false
 });
@@ -573,6 +581,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['心理', '戀愛', '性格'],
         vi: ['Tâm lý', 'Tình yêu', 'Tính cách'],
         id: ['Psikologi', 'Cinta', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-personality-strength-weakness') {
+    test = {
+      slug: 'phase3-personality-strength-weakness',
+      title: {
+        ko: '내 성격의 장점과 단점 팩폭',
+        en: 'Brutally Honest: Your Personality Strengths & Weaknesses',
+        ja: '性格の長所と短所をド正論で',
+        'zh-CN': '性格优缺点直球测评',
+        'zh-TW': '性格優缺點直球測評',
+        vi: 'Thật thà: Điểm mạnh & yếu tính cách',
+        id: 'Jujur: Kelebihan & Kekurangan Kepribadianmu',
+      },
+      description: {
+        ko: '장점·단점을 팩트로 말하는 성격 스펙트럼 6유형. 12문항 4지선다.',
+        en: 'Six personality spectrum types with blunt pros and cons — 12 multiple-choice questions.',
+        ja: '長所・短所をファクトで言い切る性格スペクトラム6タイプ。12問4択。',
+        'zh-CN': '六种性格光谱，优缺点直说。12 道四选一。',
+        'zh-TW': '六種性格光譜，優缺點直說。12 題四選一。',
+        vi: '6 kiểu phổ tính cách nói thẳng ưu/nhược — 12 câu trắc nghiệm.',
+        id: '6 spektrum kepribadian dengan pro/kontra blak-blakan — 12 soal pilihan ganda.',
+      },
+      thumbnail: 'p3_test_personality_strength_weakness.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: ['Psychology', 'Personality'],
+        ja: ['心理', '性格'],
+        'zh-CN': ['心理', '性格'],
+        'zh-TW': ['心理', '性格'],
+        vi: ['Tâm lý', 'Tính cách'],
+        id: ['Psikologi', 'Kepribadian'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2156,6 +2201,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SummerVacationTypeQuestions}
           results={phase3SummerVacationTypeResults}
           questionCount={phase3SummerVacationTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-personality-strength-weakness') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-personality-strength-weakness',
+      title: {
+        ko: '내 성격의 장점과 단점 팩폭',
+        en: 'Brutally Honest: Your Personality Strengths & Weaknesses',
+        ja: '性格の長所と短所をド正論で',
+        'zh-CN': '性格优缺点直球测评',
+        'zh-TW': '性格優缺點直球測評',
+        vi: 'Thật thà: Điểm mạnh & yếu tính cách',
+        id: 'Jujur: Kelebihan & Kekurangan Kepribadianmu',
+      },
+      description: {
+        ko: '장점·단점을 팩트로 말하는 성격 스펙트럼 6유형. 12문항 4지선다.',
+        en: 'Six personality spectrum types with blunt pros and cons — 12 multiple-choice questions.',
+        ja: '長所・短所をファクトで言い切る性格スペクトラム6タイプ。12問4択。',
+        'zh-CN': '六种性格光谱，优缺点直说。12 道四选一。',
+        'zh-TW': '六種性格光譜，優缺點直說。12 題四選一。',
+        vi: '6 kiểu phổ tính cách nói thẳng ưu/nhược — 12 câu trắc nghiệm.',
+        id: '6 spektrum kepribadian dengan pro/kontra blak-blakan — 12 soal pilihan ganda.',
+      },
+      thumbnail: 'p3_test_personality_strength_weakness.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['심리', '성격'],
+        en: ['Psychology', 'Personality'],
+        ja: ['心理', '性格'],
+        'zh-CN': ['心理', '性格'],
+        'zh-TW': ['心理', '性格'],
+        vi: ['Tâm lý', 'Tính cách'],
+        id: ['Psikologi', 'Kepribadian'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3PersonalityStrengthWeaknessTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3PersonalityStrengthWeaknessQuestions}
+          results={phase3PersonalityStrengthWeaknessResults}
+          questionCount={phase3PersonalityStrengthWeaknessQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

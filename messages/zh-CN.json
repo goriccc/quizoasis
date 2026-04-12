@@ -1451,6 +1451,62 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase3PersonalityStrengthWeaknessTest": {
+    "startMessage": {
+      "line1": "关于你的性格，我们会说实话。",
+      "line2": "只会堆优点的甜腻测试，请忘了吧。",
+      "line3": "夸奖是事实，缺点也是事实。不会为了让你开心而包装。",
+      "line4": "性格里闪光的一面，和该认真调整的阴影，都会如实分析。",
+      "line5": "被说中了可能会生气——这就是事实的力量。",
+      "line6": "来接受性格直球点评 💥 开始诚实分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（性格优缺点直说）",
+      "goToTest": "前往测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "personalityType": "性格类型",
+      "strengthKeywords": "优点关键词",
+      "weaknessKeywords": "缺点关键词",
+      "strengthRoast": "优点直说",
+      "weaknessRoast": "缺点直说",
+      "totalScore": "得分 {score} / 36",
+      "goodMatch": "合拍搭档",
+      "badMatch": "难搭搭档",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的性格类型是{type}！💥 优缺点全是真话，更扎心……你也来试试",
+      "kakao": "我的性格类型是{type}！💥 优缺点全是真话，更扎心……你也来试试",
+      "wechat": "我的性格类型是{type}！💥 优缺点全是真话，更扎心……你也来试试",
+      "whatsapp": "我的性格类型是{type}！💥 优缺点全是真话，更扎心……你也来试试",
+      "telegram": "我的性格类型是{type}！💥 优缺点全是真话，更扎心……你也来试试",
+      "line": "我的性格类型是{type}！💥 优缺点全是真话，更扎心……你也来试试",
+      "startDefault": "性格优缺点直球测评 💥 诚实分析",
+      "startKakao": "性格优缺点直球测评 💥 诚实分析",
+      "startWechat": "性格优缺点直球测评 💥 诚实分析",
+      "startWhatsapp": "性格优缺点直球测评 💥 诚实分析",
+      "startTelegram": "性格优缺点直球测评 💥 诚实分析",
+      "startLine": "性格优缺点直球测评 💥 诚实分析"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先买了再说！\"",

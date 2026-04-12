@@ -1452,6 +1452,62 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3PersonalityStrengthWeaknessTest": {
+    "startMessage": {
+      "line1": "あなたの性格、はっきり言います。",
+      "line2": "長所だけ並べる甘々テストは忘れてください。",
+      "line3": "褒めも事実、短所も事実。気分よくするための包装はしません。",
+      "line4": "輝く面も、直した方がいい影も、あるがまま分析します。",
+      "line5": "当たってムカつくこともある。それがファクトの力です。",
+      "line6": "性格ド正論タイムへ 💥 正直分析スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（性格の長所・短所ド正論）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "personalityType": "性格タイプ",
+      "strengthKeywords": "長所キーワード",
+      "weaknessKeywords": "短所キーワード",
+      "strengthRoast": "長所ファクト",
+      "weaknessRoast": "短所ファクト",
+      "totalScore": "スコア {score} / 36",
+      "goodMatch": "相性抜群",
+      "badMatch": "相性注意",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の性格タイプは{type}！💥 長所も短所も全部ファクトで怖い…あなたもやってみて",
+      "kakao": "私の性格タイプは{type}！💥 長所も短所も全部ファクトで怖い…あなたもやってみて",
+      "wechat": "私の性格タイプは{type}！💥 長所も短所も全部ファクトで怖い…あなたもやってみて",
+      "whatsapp": "私の性格タイプは{type}！💥 長所も短所も全部ファクトで怖い…あなたもやってみて",
+      "telegram": "私の性格タイプは{type}！💥 長所も短所も全部ファクトで怖い…あなたもやってみて",
+      "line": "私の性格タイプは{type}！💥 長所も短所も全部ファクトで怖い…あなたもやってみて",
+      "startDefault": "性格の長所・短所ド正論 💥 正直な分析",
+      "startKakao": "性格の長所・短所ド正論 💥 正直な分析",
+      "startWechat": "性格の長所・短所ド正論 💥 正直な分析",
+      "startWhatsapp": "性格の長所・短所ド正論 💥 正直な分析",
+      "startTelegram": "性格の長所・短所ド正論 💥 正直な分析",
+      "startLine": "性格の長所・短所ド正論 💥 正直な分析"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

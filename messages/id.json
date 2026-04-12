@@ -1451,6 +1451,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3PersonalityStrengthWeaknessTest": {
+    "startMessage": {
+      "line1": "Kami akan berbicara jujur tentang kepribadianmu.",
+      "line2": "Lupakan tes yang hanya menumpuk pujian manis.",
+      "line3": "Pujian itu fakta, kelemahan juga fakta. Kami tidak membungkus agar kamu merasa senang.",
+      "line4": "Kami menganalisis sisi terang dan bayangan yang perlu kamu perbaiki—apa adanya.",
+      "line5": "Kamu bisa marah karena pas sasaran. Itulah kekuatan fakta.",
+      "line6": "Mari kena “roast” kepribadian 💥 Mulai analisis jujur"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (kelebihan & kekurangan kepribadian, blak-blakan)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "personalityType": "Tipe kepribadian",
+      "strengthKeywords": "Kata kunci kelebihan",
+      "weaknessKeywords": "Kata kunci kekurangan",
+      "strengthRoast": "Kelebihan (fakta)",
+      "weaknessRoast": "Kekurangan (fakta)",
+      "totalScore": "Skor {score} / 36",
+      "goodMatch": "Cocok",
+      "badMatch": "Kurang cocok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe kepribadianku {type}! 💥 Kelebihan dan kekurangan semuanya fakta—makanya lebih “ngeri”… coba kamu juga",
+      "kakao": "Tipe kepribadianku {type}! 💥 Kelebihan dan kekurangan semuanya fakta—makanya lebih “ngeri”… coba kamu juga",
+      "wechat": "Tipe kepribadianku {type}! 💥 Kelebihan dan kekurangan semuanya fakta—makanya lebih “ngeri”… coba kamu juga",
+      "whatsapp": "Tipe kepribadianku {type}! 💥 Kelebihan dan kekurangan semuanya fakta—makanya lebih “ngeri”… coba kamu juga",
+      "telegram": "Tipe kepribadianku {type}! 💥 Kelebihan dan kekurangan semuanya fakta—makanya lebih “ngeri”… coba kamu juga",
+      "line": "Tipe kepribadianku {type}! 💥 Kelebihan dan kekurangan semuanya fakta—makanya lebih “ngeri”… coba kamu juga",
+      "startDefault": "Kelebihan & kekurangan kepribadian, blak-blakan 💥 Analisis jujur",
+      "startKakao": "Kelebihan & kekurangan kepribadian, blak-blakan 💥 Analisis jujur",
+      "startWechat": "Kelebihan & kekurangan kepribadian, blak-blakan 💥 Analisis jujur",
+      "startWhatsapp": "Kelebihan & kekurangan kepribadian, blak-blakan 💥 Analisis jujur",
+      "startTelegram": "Kelebihan & kekurangan kepribadian, blak-blakan 💥 Analisis jujur",
+      "startLine": "Kelebihan & kekurangan kepribadian, blak-blakan 💥 Analisis jujur"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",
