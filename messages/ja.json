@@ -1576,6 +1576,68 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3PerfectionismIndexTest": {
+    "startMessage": {
+      "line1": "完璧主義は強み？それとも負担？",
+      "line2": "メールを送る前に何度も読み返す人、資料のフォント一つで夜を潰す人、部屋が少しでも散らかると集中できない人——そして、そうでもない人もいます。",
+      "line3": "レベルによって、完璧主義は強みにもなれば、人生を重くすることもあります。",
+      "line4": "日常の行動パターン12問で、あなたの完璧主義レベルと、生活への影響を分析します。",
+      "line5": "私の完璧主義指数 📐 今すぐチェック"
+    },
+    "ui": {
+      "startTest": "今すぐチェック",
+      "shareWithFriends": "友だちと試す",
+      "shareResultWithFriends": "結果をシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテスト",
+      "goToTest": "テストへ",
+      "adsenseTitle": "AdSense 広告エリア（完璧主義指数）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "empathyLevel": "完璧主義指数",
+      "characteristics": "強み",
+      "goodMatch": "注意点",
+      "badMatch": "今日の一歩",
+      "lifeImpactSection": "🌿 人生への影響",
+      "workStyleSection": "💼 このタイプの仕事スタイル",
+      "relationshipStyleSection": "🤝 このタイプの人間関係",
+      "messageToYouSection": "💬 このタイプへのメッセージ",
+      "recommendedDirectionSection": "📋 おすすめの次の一歩"
+    },
+    "shareMessages": {
+      "default": "私の完璧主義タイプは {type}！📐 あなたのスコアは？",
+      "resultType1": "完璧主義指数：十分でいいタイプ 🌊 完成が完璧より大事…一度読んで送る人は手を挙げて ✋ あなたのスコアは？",
+      "resultType2": "完璧主義指数：健全バランス型 ✅ いいとこ取りの理想タイプ…まさか自分？ あなたのタイプは？",
+      "resultType3": "完璧主義指数：選択的タイプ 🎯 大事なとこだけ譲らない…何度も読み返す人わかる。あなたのタイプは？",
+      "resultType4": "完璧主義指数：高基準タイプ ⚙️ 終わっても物足りない…80%で止める練習が必要ってわかってる。あなたのタイプは？",
+      "resultType5": "完璧主義指数：不安ベース型 🌀 完璧じゃないと落ち着かない…褒められても「え、これで？」あなたのタイプは？",
+      "resultType6": "完璧主義指数：極度タイプ 🔴 準備が整うまで始められない…刺さった人いる。あなたのタイプは？",
+      "startDefault": "私の完璧主義指数 📐 12問でレベルチェック",
+      "startKakao": "私の完璧主義指数 📐 12問でレベルチェック",
+      "startWechat": "私の完璧主義指数 📐 12問でレベルチェック",
+      "startWhatsapp": "私の完璧主義指数 📐 12問でレベルチェック",
+      "startTelegram": "私の完璧主義指数 📐 12問でレベルチェック",
+      "startLine": "私の完璧主義指数 📐 12問でレベルチェック"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

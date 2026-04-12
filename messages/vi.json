@@ -1575,6 +1575,68 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3PerfectionismIndexTest": {
+    "startMessage": {
+      "line1": "Chủ nghĩa hoàn hảo là điểm mạnh hay gánh nặng?",
+      "line2": "Có người đọc lại email cả chục lần trước khi gửi, có người sửa một font trong slide cả đêm, có người chỉ cần phòng hơi bừa là đã mất tập trung—và cũng có người hoàn toàn không như vậy.",
+      "line3": "Tùy mức độ, chủ nghĩa hoàn hảo có thể giúp bạn hoặc khiến cuộc sống nặng nề hơn.",
+      "line4": "12 mô hình hành vi hàng ngày đo mức chủ nghĩa hoàn hảo của bạn và phân tích ảnh hưởng tới cuộc sống.",
+      "line5": "Chỉ số chủ nghĩa hoàn hảo của tôi 📐 Kiểm tra ngay"
+    },
+    "ui": {
+      "startTest": "Kiểm tra ngay",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Bài test khác",
+      "goToTest": "Vào bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chỉ số chủ nghĩa hoàn hảo)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "empathyLevel": "Chỉ số chủ nghĩa hoàn hảo",
+      "characteristics": "Điểm mạnh",
+      "goodMatch": "Cần lưu ý",
+      "badMatch": "Việc hôm nay",
+      "lifeImpactSection": "🌿 Ảnh hưởng tới cuộc sống",
+      "workStyleSection": "💼 Phong cách công việc của kiểu này",
+      "relationshipStyleSection": "🤝 Phong cách quan hệ của kiểu này",
+      "messageToYouSection": "💬 Lời nhắn cho kiểu này",
+      "recommendedDirectionSection": "📋 Hướng đề xuất"
+    },
+    "shareMessages": {
+      "default": "Kiểu chủ nghĩa hoàn hảo của tôi là {type}! 📐 Bạn được mấy điểm?",
+      "resultType1": "Chỉ số: Kiểu đủ là đủ 🌊 Xong việc quan trọng hơn hoàn hảo… Giơ tay nếu gửi email sau một lần đọc ✋ Bạn mấy điểm?",
+      "resultType2": "Chỉ số: Kiểu cân bằng ✅ Lấy ưu bỏ nhược… Đúng là mình sao? Bạn là kiểu nào?",
+      "resultType3": "Chỉ số: Kiểu chọn lọc 🎯 Chỉ cứng nhắn với việc quan trọng… Đọc email mười lần mới gửi là hiểu. Bạn là kiểu nào?",
+      "resultType4": "Chỉ số: Kiểu chuẩn cao ⚙️ Xong vẫn thấy thiếu… Biết cần tập dừng ở 80%. Bạn là kiểu nào?",
+      "resultType5": "Chỉ số: Kiểu lo âu 🌀 Không hoàn hảo là bất an… Được khen vẫn nghĩ thế à? Bạn là kiểu nào?",
+      "resultType6": "Chỉ số: Kiểu cực đoan 🔴 Chờ sẵn sàng mãi không bắt đầu… Trúng tim đen chưa? Bạn là kiểu nào?",
+      "startDefault": "Chỉ số chủ nghĩa hoàn hảo 📐 12 câu xem mức độ",
+      "startKakao": "Chỉ số chủ nghĩa hoàn hảo 📐 12 câu xem mức độ",
+      "startWechat": "Chỉ số chủ nghĩa hoàn hảo 📐 12 câu xem mức độ",
+      "startWhatsapp": "Chỉ số chủ nghĩa hoàn hảo 📐 12 câu xem mức độ",
+      "startTelegram": "Chỉ số chủ nghĩa hoàn hảo 📐 12 câu xem mức độ",
+      "startLine": "Chỉ số chủ nghĩa hoàn hảo 📐 12 câu xem mức độ"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Ồ? Đẹp quá. Cứ mua đã!\"",

@@ -1616,6 +1616,68 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3PerfectionismIndexTest": {
+    "startMessage": {
+      "line1": "Is perfectionism a strength—or a trap?",
+      "line2": "Some people reread an email ten times before sending. Some tweak one font in a deck all night. Some cannot focus if the room is even a little messy—and some feel none of this at all.",
+      "line3": "Depending on the level, perfectionism can help you—or weigh heavily on your life.",
+      "line4": "Twelve everyday behavior patterns measure your perfectionism level and how it affects your life.",
+      "line5": "My Perfectionism Index 📐 Check now"
+    },
+    "ui": {
+      "startTest": "Check now",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share your result",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "More tests",
+      "goToTest": "Go to test",
+      "adsenseTitle": "AdSense area (My Perfectionism Index)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "empathyLevel": "Perfectionism index",
+      "characteristics": "Strengths",
+      "goodMatch": "Watch out for",
+      "badMatch": "Today’s action",
+      "lifeImpactSection": "🌿 Impact on your life",
+      "workStyleSection": "💼 Work style for this type",
+      "relationshipStyleSection": "🤝 Relationship style for this type",
+      "messageToYouSection": "💬 A note for this type",
+      "recommendedDirectionSection": "📋 Recommended next steps"
+    },
+    "shareMessages": {
+      "default": "My perfectionism type is {type}! 📐 What is your score?",
+      "resultType1": "Perfectionism index: Good-enough type 🌊 Done beats perfect… Raise a hand if you send emails after one read ✋ What is your score?",
+      "resultType2": "Perfectionism index: Healthy standards ✅ The “best of both worlds” type… Is this really me? What is your type?",
+      "resultType3": "Perfectionism index: Selective type 🎯 Strict only on what matters… Relatable if you reread emails ten times. What is your type?",
+      "resultType4": "Perfectionism index: High-bar type ⚙️ Never satisfied after finishing… You know you need the 80% stop practice. What is your type?",
+      "resultType5": "Perfectionism index: Anxious type 🌀 Uneasy unless it is perfect… Praise still feels like “really?” What is your type?",
+      "resultType6": "Perfectionism index: Extreme type 🔴 Waiting to be ready means never starting… That hit close to home. What is your type?",
+      "startDefault": "My Perfectionism Index 📐 12 questions to see your level",
+      "startKakao": "My Perfectionism Index 📐 12 questions to see your level",
+      "startWechat": "My Perfectionism Index 📐 12 questions to see your level",
+      "startWhatsapp": "My Perfectionism Index 📐 12 questions to see your level",
+      "startTelegram": "My Perfectionism Index 📐 12 questions to see your level",
+      "startLine": "My Perfectionism Index 📐 12 questions to see your level"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

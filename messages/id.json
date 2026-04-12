@@ -1575,6 +1575,68 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3PerfectionismIndexTest": {
+    "startMessage": {
+      "line1": "Perfeksionisme itu kelebihan atau beban?",
+      "line2": "Ada yang membaca email berkali-kali sebelum kirim, mengutak-atik satu font presentasi semalaman, atau tidak bisa fokus kalau kamar sedikit berantakan—dan ada pula yang tidak merasakan hal itu sama sekali.",
+      "line3": "Tergantung levelnya, perfeksionisme bisa membantu atau membebani hidup.",
+      "line4": "12 pola perilaku sehari-hari mengukur tingkat perfeksionisme Anda dan dampaknya pada hidup.",
+      "line5": "Indeks perfeksionismeku 📐 Cek sekarang"
+    },
+    "ui": {
+      "startTest": "Cek sekarang",
+      "shareWithFriends": "Coba dengan teman",
+      "shareResultWithFriends": "Bagikan hasil",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lain",
+      "goToTest": "Ke tes",
+      "adsenseTitle": "Area iklan AdSense (Indeks perfeksionisme)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "empathyLevel": "Indeks perfeksionisme",
+      "characteristics": "Kekuatan",
+      "goodMatch": "Yang perlu diperhatikan",
+      "badMatch": "Langkah hari ini",
+      "lifeImpactSection": "🌿 Dampak pada hidup",
+      "workStyleSection": "💼 Gaya kerja tipe ini",
+      "relationshipStyleSection": "🤝 Gaya relasi tipe ini",
+      "messageToYouSection": "💬 Pesan untuk tipe ini",
+      "recommendedDirectionSection": "📋 Arah yang disarankan"
+    },
+    "shareMessages": {
+      "default": "Tipe perfeksionismeku {type}! 📐 Skormu berapa?",
+      "resultType1": "Indeks: Tipe cukup baik 🌊 Selesai lebih penting dari sempurna… Angkat tangan kalau kirim email setelah sekali baca ✋ Skormu?",
+      "resultType2": "Indeks: Tipe seimbang ✅ Ambil yang baik, buang yang buruk… Ini benar-benar aku? Tipe kamu apa?",
+      "resultType3": "Indeks: Tipe selektif 🎯 Tegas hanya pada hal penting… Relate kalau baca email sepuluh kali. Tipe kamu apa?",
+      "resultType4": "Indeks: Tipe standar tinggi ⚙️ Selesai pun masih kurang… Tahu perlu latihan berhenti di 80%. Tipe kamu apa?",
+      "resultType5": "Indeks: Tipe cemas 🌀 Tidak sempurna tidak tenang… Dipuji juga mikir “cuma segini?” Tipe kamu apa?",
+      "resultType6": "Indeks: Tipe ekstrem 🔴 Tunggu siap sempurna malah tidak pernah mulai… Kena hatimu? Tipe kamu apa?",
+      "startDefault": "Indeks perfeksionismeku 📐 12 pertanyaan cek level",
+      "startKakao": "Indeks perfeksionismeku 📐 12 pertanyaan cek level",
+      "startWechat": "Indeks perfeksionismeku 📐 12 pertanyaan cek level",
+      "startWhatsapp": "Indeks perfeksionismeku 📐 12 pertanyaan cek level",
+      "startTelegram": "Indeks perfeksionismeku 📐 12 pertanyaan cek level",
+      "startLine": "Indeks perfeksionismeku 📐 12 pertanyaan cek level"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

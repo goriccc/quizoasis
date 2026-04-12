@@ -837,6 +837,68 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3PerfectionismIndexTest": {
+    "startMessage": {
+      "line1": "완벽주의는 장점일까요, 단점일까요?",
+      "line2": "이메일 한 통을 보내기 전에 열 번 이상 다시 읽는 사람이 있고, 발표 자료 글씨체 하나를 고치다 밤을 새우는 사람이 있고, 방이 조금만 어질러져도 집중이 안 되는 사람이 있습니다. 그리고 이 모든 게 완벽히 자연스러운 사람도 있습니다.",
+      "line3": "완벽주의는 수준에 따라 강점이 되기도 하고 삶을 힘들게 만들기도 합니다.",
+      "line4": "12가지 일상 속 행동 패턴으로 나의 완벽주의 레벨을 정확하게 측정하고 그것이 내 삶에 어떤 영향을 주고 있는지 분석해 드립니다.",
+      "line5": "내 완벽주의 지수 측정하기 📐 지금 바로 확인"
+    },
+    "ui": {
+      "startTest": "지금 바로 확인",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나의 완벽주의 지수)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "empathyLevel": "완벽주의 지수",
+      "characteristics": "강점",
+      "goodMatch": "주의할 점",
+      "badMatch": "오늘 할 일",
+      "lifeImpactSection": "🌿 삶에 미치는 영향",
+      "workStyleSection": "💼 이 유형의 직장 스타일",
+      "relationshipStyleSection": "🤝 이 유형의 관계 스타일",
+      "messageToYouSection": "💬 이 유형에게 전하는 말",
+      "recommendedDirectionSection": "📋 권장 방향"
+    },
+    "shareMessages": {
+      "default": "나의 완벽주의 유형은 {type}! 📐 너는 몇 점?",
+      "resultType1": "완벽주의 지수: 충분주의자 🌊 완벽보다 완성이 중요한 유형... 이메일 한 번 읽고 바로 보내는 사람 손 ✋ → 너는 몇 점 완벽주의야?",
+      "resultType2": "완벽주의 지수: 건강한 기준 보유형 ✅ 완벽주의 장점만 취한 이상적인 유형이래... 근데 이게 나라고? ㅋㅋ → 너는 어떤 완벽주의 유형이야?",
+      "resultType3": "완벽주의 지수: 선택적 완벽주의형 🎯 중요한 것에만 타협 안 하는 유형... 이메일 열 번 읽고 보내는 사람들 공감 → 너는 어떤 완벽주의 유형이야?",
+      "resultType4": "완벽주의 지수: 고기준 완벽주의형 ⚙️ 완성하고도 아쉬운 유형... 80%에서 손 놓는 연습 필요하다는 거 알고 있음 ㅠ → 너는 어떤 완벽주의 유형이야?",
+      "resultType5": "완벽주의 지수: 강박성 완벽주의형 🌀 완벽하지 않으면 불안한 유형... 칭찬 받아도 '이 정도로?' 싶은 경험자 공감 → 너는 어떤 완벽주의 유형이야?",
+      "resultType6": "완벽주의 지수: 극강 완벽주의형 🔴 완벽한 준비 기다리다 시작 못 하는 유형... 이게 나라는 거 알고 있었음 ㅠ 결과 읽고 뜨끔했음 → 너는 어떤 완벽주의 유형이야?",
+      "startDefault": "나의 완벽주의 지수 📐 12문항으로 내 완벽주의 레벨 확인",
+      "startKakao": "나의 완벽주의 지수 📐 12문항으로 내 완벽주의 레벨 확인",
+      "startWechat": "나의 완벽주의 지수 📐 12문항으로 내 완벽주의 레벨 확인",
+      "startWhatsapp": "나의 완벽주의 지수 📐 12문항으로 내 완벽주의 레벨 확인",
+      "startTelegram": "나의 완벽주의 지수 📐 12문항으로 내 완벽주의 레벨 확인",
+      "startLine": "나의 완벽주의 지수 📐 12문항으로 내 완벽주의 레벨 확인"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"어? 예쁘다. 일단 사!\"",

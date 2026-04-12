@@ -37,6 +37,10 @@ import {
   phase3ReincarnationJobQuestions,
   phase3ReincarnationJobResults,
 } from '@/lib/phase3ReincarnationJobData';
+import {
+  phase3PerfectionismIndexQuestions,
+  phase3PerfectionismIndexResults,
+} from '@/lib/phase3PerfectionismIndexData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -189,6 +193,10 @@ const Phase3PersonalityStrengthWeaknessTestClient = dynamic(
 );
 const Phase3ReincarnationJobTestClient = dynamic(
   () => import('@/components/Phase3ReincarnationJobTestClient'),
+  { ssr: false }
+);
+const Phase3PerfectionismIndexTestClient = dynamic(
+  () => import('@/components/Phase3PerfectionismIndexTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -515,6 +523,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['旅行', '度假', '心理'],
         vi: ['Du lịch', 'Kỳ nghỉ', 'Tâm lý'],
         id: ['Travel', 'Liburan', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-perfectionism-index') {
+    test = {
+      slug: 'phase3-perfectionism-index',
+      title: {
+        ko: '나의 완벽주의 지수',
+        en: 'My Perfectionism Index',
+        ja: '私の完璧主義指数',
+        'zh-CN': '我的完美主义指数',
+        'zh-TW': '我的完美主義指數',
+        vi: 'Chỉ số chủ nghĩa hoàn hảo của tôi',
+        id: 'Indeks perfeksionismeku',
+      },
+      description: {
+        ko: '12가지 일상 행동으로 완벽주의 레벨과 삶에 미치는 영향을 분석합니다. #성격 #공감 #자기이해',
+        en: '12 everyday behaviors — perfectionism level and life impact. #Personality #Empathy #SelfInsight',
+        ja: '日常12問で完璧主義レベルと生活への影響を分析。#性格 #共感 #自己理解',
+        'zh-CN': '12 道日常行为题，分析完美主义程度与生活影响。#性格 #共情 #自我理解',
+        'zh-TW': '12 道日常行為題，分析完美主義程度與生活影響。#性格 #共情 #自我理解',
+        vi: '12 hành vi hàng ngày — mức chủ nghĩa hoàn hảo và tác động.#Tính cách #Đồng cảm #Tự hiểu mình',
+        id: '12 perilaku sehari-hari — tingkat perfeksionisme & dampaknya.#Kepribadian #Empati #Memahami diri',
+      },
+      thumbnail: 'p3_test_perfectionism_index.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['성격', '공감', '자기이해'],
+        en: ['Personality', 'Empathy', 'Self-understanding'],
+        ja: ['性格', '共感', '自己理解'],
+        'zh-CN': ['性格', '共情', '自我理解'],
+        'zh-TW': ['性格', '共情', '自我理解'],
+        vi: ['Tính cách', 'Đồng cảm', 'Tự hiểu mình'],
+        id: ['Kepribadian', 'Empati', 'Memahami diri'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2246,6 +2291,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SummerVacationTypeQuestions}
           results={phase3SummerVacationTypeResults}
           questionCount={phase3SummerVacationTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-perfectionism-index') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-perfectionism-index',
+      title: {
+        ko: '나의 완벽주의 지수',
+        en: 'My Perfectionism Index',
+        ja: '私の完璧主義指数',
+        'zh-CN': '我的完美主义指数',
+        'zh-TW': '我的完美主義指數',
+        vi: 'Chỉ số chủ nghĩa hoàn hảo của tôi',
+        id: 'Indeks perfeksionismeku',
+      },
+      description: {
+        ko: '12가지 일상 행동으로 완벽주의 레벨과 삶에 미치는 영향을 분석합니다. #성격 #공감 #자기이해',
+        en: '12 everyday behaviors — perfectionism level and life impact. #Personality #Empathy #SelfInsight',
+        ja: '日常12問で完璧主義レベルと生活への影響を分析。#性格 #共感 #自己理解',
+        'zh-CN': '12 道日常行为题，分析完美主义程度与生活影响。#性格 #共情 #自我理解',
+        'zh-TW': '12 道日常行為題，分析完美主義程度與生活影響。#性格 #共情 #自我理解',
+        vi: '12 hành vi hàng ngày — mức chủ nghĩa hoàn hảo và tác động.#Tính cách #Đồng cảm #Tự hiểu mình',
+        id: '12 perilaku sehari-hari — tingkat perfeksionisme & dampaknya.#Kepribadian #Empati #Memahami diri',
+      },
+      thumbnail: 'p3_test_perfectionism_index.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['성격', '공감', '자기이해'],
+        en: ['Personality', 'Empathy', 'Self-understanding'],
+        ja: ['性格', '共感', '自己理解'],
+        'zh-CN': ['性格', '共情', '自我理解'],
+        'zh-TW': ['性格', '共情', '自我理解'],
+        vi: ['Tính cách', 'Đồng cảm', 'Tự hiểu mình'],
+        id: ['Kepribadian', 'Empati', 'Memahami diri'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3PerfectionismIndexTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3PerfectionismIndexQuestions}
+          results={phase3PerfectionismIndexResults}
+          questionCount={phase3PerfectionismIndexQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

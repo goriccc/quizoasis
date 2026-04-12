@@ -1575,6 +1575,68 @@
       "popularTestsTop5": "🔥 热门测试推荐前5名"
     }
   },
+  "phase3PerfectionismIndexTest": {
+    "startMessage": {
+      "line1": "完美主义是优点，还是负担？",
+      "line2": "有人发邮件前反复读很多遍，有人为演示稿的一个字体熬通宵，有人房间稍乱就无法专注——也有人完全不会这样。",
+      "line3": "不同程度下，完美主义可能是助力，也可能让生活更沉重。",
+      "line4": "用 12 个日常行为模式，测量你的完美主义水平，并分析它如何影响生活。",
+      "line5": "我的完美主义指数 📐 立即测试"
+    },
+    "ui": {
+      "startTest": "立即测试",
+      "shareWithFriends": "和朋友一起测",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "更多测试",
+      "goToTest": "进入测试",
+      "adsenseTitle": "AdSense 广告区（完美主义指数）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "empathyLevel": "完美主义指数",
+      "characteristics": "优势",
+      "goodMatch": "需注意",
+      "badMatch": "今日行动",
+      "lifeImpactSection": "🌿 对生活的影响",
+      "workStyleSection": "💼 该类型的工作风格",
+      "relationshipStyleSection": "🤝 该类型的人际关系",
+      "messageToYouSection": "💬 给该类型的话",
+      "recommendedDirectionSection": "📋 建议方向"
+    },
+    "shareMessages": {
+      "default": "我的完美主义类型是 {type}！📐 你几分？",
+      "resultType1": "完美主义指数：够用就好型 🌊 完成比完美重要…读一遍就发的人举手 ✋ 你几分？",
+      "resultType2": "完美主义指数：健康标准型 ✅ 只拿优点不背锅的理想型…这真是我？你是什么型？",
+      "resultType3": "完美主义指数：选择型 🎯 重要的事不妥协…邮件读十遍才发的人懂。你是什么型？",
+      "resultType4": "完美主义指数：高标准型 ⚙️ 做完仍不满意…知道要练“80%就停”。你是什么型？",
+      "resultType5": "完美主义指数：焦虑型 🌀 不完美就不安…被夸也会想“就这？”你是什么型？",
+      "resultType6": "完美主义指数：极端型 🔴 等准备好就永远开不了头…被说中的人举手。你是什么型？",
+      "startDefault": "我的完美主义指数 📐 12 题测水平",
+      "startKakao": "我的完美主义指数 📐 12 题测水平",
+      "startWechat": "我的完美主义指数 📐 12 题测水平",
+      "startWhatsapp": "我的完美主义指数 📐 12 题测水平",
+      "startTelegram": "我的完美主义指数 📐 12 题测水平",
+      "startLine": "我的完美主义指数 📐 12 题测水平"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！在微信中粘贴即可分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前 5",
+      "popularTestsTop5": "🔥 热门测试推荐前 5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先买了再说！\"",
