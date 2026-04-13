@@ -1781,6 +1781,86 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3BestFriendQuizTest": {
+    "defaultHostName": "Teman",
+    "creatorNameLabel": "Nama Anda (ditampilkan ke teman)",
+    "creatorNamePlaceholder": "Mis. Budi",
+    "creatorStart": {
+      "line1": "Cari tahu sekarang siapa sahabat sejati Anda.",
+      "line2": "Jawab 10 pertanyaan tentang diri Anda dulu, lalu bagikan tautan ke teman.",
+      "line3": "Saat teman mengerjakan kuis yang sama, Anda bisa melihat berapa yang benar.",
+      "line4": "Apakah ada sahabat sejati—atau mereka hanya berpura-pura mengenal Anda?",
+      "line5": "Buat kuis sahabat sejati saya 🏆 Mulai sebagai host",
+      "howToTitle": "Cara berjalan",
+      "howToStep1": "1️⃣ Anda menjawab pertanyaan tentang diri sendiri",
+      "howToStep2": "2️⃣ [Salin tautan undangan teman] atau kirim tautan tes lewat KakaoTalk, SNS, atau pesan",
+      "howToStep3": "3️⃣ Teman menjawab pertanyaan yang sama tentang Anda",
+      "howToStep4": "4️⃣ Gunakan [Salin ringkasan] untuk menerima jawaban benar dan hasil lewat SNS atau pesan"
+    },
+    "friendStart": {
+      "title": "Kuis sahabat sejati {name}",
+      "line1": "Seberapa baik Anda mengenal {name}?",
+      "line2": "10 soal. Jawaban salah ditampilkan di hasil.",
+      "line3": "Sahabat sejati harus benar semua—coba tantangan ini!"
+    },
+    "creatorDone": {
+      "title": "Tautan undangan teman sudah siap!",
+      "hint": "Salin tautan di bawah dan kirim lewat KakaoTalk, Instagram, dll.\nSetelah teman selesai, mereka melihat skor di layar mereka. Host tidak mendapat notifikasi langsung—minta teman membagikan hasilnya.",
+      "makeAnother": "Buat kuis baru"
+    },
+    "scoreLine": "{score} benar (dari 10 soal)",
+    "wrongListTitle": "❌ Nomor soal yang salah",
+    "allCorrect": "Semua benar!",
+    "hostNotifyTitle": "Ringkasan untuk host (salin)",
+    "hostNotifyBody": "[Hasil kuis sahabat {name}]\nBenar: {score}/10\nSalah: {wrong}\nTipe hasil: {type}",
+    "noneWrong": "Tidak ada",
+    "copyHostNotify": "Salin ringkasan",
+    "ui": {
+      "startTest": "Buat kuis sahabat sejati · Mulai sebagai host",
+      "friendStartCta": "Kerjakan kuis sahabat 🎯",
+      "shareWithFriends": "Coba bersama teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Coba lagi",
+      "otherTests": "Tes lainnya",
+      "goToTest": "Ke tes",
+      "adsenseTitle": "Area iklan AdSense (Siapa yang paling mengenal saya?)",
+      "linkCopy": "Salin tautan",
+      "copyChallengeLink": "Salin tautan undangan teman",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "levelLabel": "🏆 Level sahabat sejati",
+      "oneLiner": "💬 Komentar satu baris"
+    },
+    "shareMessages": {
+      "creatorKakao": "Aku buat kuis tentang diriku! Cek apakah kamu sahabat sejati 🏆 Kira-kira berapa yang benar?",
+      "friendResult": "Kuis sahabat {name}: {score} benar! Aku {type} 🎯",
+      "startDefault": "Siapa yang paling mengenal saya? 🏆 Kuis sahabat 10 soal",
+      "startKakao": "Siapa yang paling mengenal saya? 🏆 Kuis sahabat 10 soal",
+      "startWechat": "Siapa yang paling mengenal saya? 🏆 Kuis sahabat 10 soal",
+      "startWhatsapp": "Siapa yang paling mengenal saya? 🏆 Kuis sahabat 10 soal",
+      "startTelegram": "Siapa yang paling mengenal saya? 🏆 Kuis sahabat 10 soal",
+      "startLine": "Siapa yang paling mengenal saya? 🏆 Kuis sahabat 10 soal"
+    },
+    "alerts": {
+      "nameRequired": "Masukkan setidaknya satu karakter untuk nama.",
+      "invalidLink": "Tautan undangan tidak valid.",
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

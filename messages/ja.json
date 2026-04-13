@@ -1782,6 +1782,86 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3BestFriendQuizTest": {
+    "defaultHostName": "友だち",
+    "creatorNameLabel": "あなたの名前（友だちに表示されます）",
+    "creatorNamePlaceholder": "例：太郎",
+    "creatorStart": {
+      "line1": "本当の親友が誰か、いま確かめよう。",
+      "line2": "まず自分について10問に答え、リンクを友だちに共有しよう。",
+      "line3": "友だちが同じクイズをすると、何問合っているかすぐわかります。",
+      "line4": "本当の親友はいる？ それとも知ったふりばかり？",
+      "line5": "自分だけの親友クイズを作る 🏆 出題スタート",
+      "howToTitle": "進め方",
+      "howToStep1": "1️⃣ 自分についての質問に答える",
+      "howToStep2": "2️⃣ [友だち招待リンクをコピー]、またはカカオトーク・SNS・メッセージでテストリンクを送る",
+      "howToStep3": "3️⃣ 友だちがあなたについて同じ質問に答える",
+      "howToStep4": "4️⃣ [要約をコピー]で、正解と結果をSNS・メッセージで受け取る"
+    },
+    "friendStart": {
+      "title": "{name}さんの親友クイズ",
+      "line1": "{name}のことをどれだけ知ってる？",
+      "line2": "全10問。間違えた問題は結果で公開されます。",
+      "line3": "本当の親友なら全部正解でしょ？ 挑戦してみて！"
+    },
+    "creatorDone": {
+      "title": "友だち招待リンクの準備ができました！",
+      "hint": "下のリンクをコピーして、カカオトークやインスタなどで友だちに送ってください。\n友だちがクイズを終えると、自分の画面でスコアを確認できます。出題者にリアルタイム通知は届かないので、結果を共有してもらうよう伝えてください。",
+      "makeAnother": "もう一度出題する"
+    },
+    "scoreLine": "{score}問正解（全10問）",
+    "wrongListTitle": "❌ 間違えた問題番号",
+    "allCorrect": "全問正解！",
+    "hostNotifyTitle": "出題者に送る要約（コピー）",
+    "hostNotifyBody": "[{name} 親友クイズ結果]\n正解数: {score}/10\n間違えた問題: {wrong}\n結果タイプ: {type}",
+    "noneWrong": "なし",
+    "copyHostNotify": "要約をコピー",
+    "ui": {
+      "startTest": "親友クイズを作る · 出題スタート",
+      "friendStartCta": "親友クイズに挑戦 🎯",
+      "shareWithFriends": "友だちと一緒に",
+      "shareResultWithFriends": "結果を友だちにシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストへ",
+      "adsenseTitle": "AdSense広告エリア（私を一番よく知る友だちは？）",
+      "linkCopy": "リンクをコピー",
+      "copyChallengeLink": "友だち招待リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "levelLabel": "🏆 親友レベル",
+      "oneLiner": "💬 ひとこと評価"
+    },
+    "shareMessages": {
+      "creatorKakao": "自分についてクイズ作った！本当に親友か試してみて 🏆 何問合うと思う？",
+      "friendResult": "{name}の親友クイズ {score}問正解！私は{type} 🎯",
+      "startDefault": "私を一番よく知る友だちは？ 🏆 親友クイズ10問",
+      "startKakao": "私を一番よく知る友だちは？ 🏆 親友クイズ10問",
+      "startWechat": "私を一番よく知る友だちは？ 🏆 親友クイズ10問",
+      "startWhatsapp": "私を一番よく知る友だちは？ 🏆 親友クイズ10問",
+      "startTelegram": "私を一番よく知る友だちは？ 🏆 親友クイズ10問",
+      "startLine": "私を一番よく知る友だちは？ 🏆 親友クイズ10問"
+    },
+    "alerts": {
+      "nameRequired": "名前を1文字以上入力してください。",
+      "invalidLink": "招待リンクが無効です。",
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "クリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似の他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

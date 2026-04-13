@@ -1788,6 +1788,86 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3BestFriendQuizTest": {
+    "defaultHostName": "好友",
+    "creatorNameLabel": "你的名字（會顯示給好友）",
+    "creatorNamePlaceholder": "例：小明",
+    "creatorStart": {
+      "line1": "現在就來看看，誰才是你真正的摯友。",
+      "line2": "先回答 10 道關於你自己的題目，再把連結分享給好友。",
+      "line3": "好友做同一套題，你就能立刻看到 TA 答對了幾題。",
+      "line4": "你身邊有真摯友嗎？還是大家都在裝熟？",
+      "line5": "建立我的摯友測驗 🏆 開始出題",
+      "howToTitle": "進行步驟",
+      "howToStep1": "1️⃣ 先為自己回答關於我的題目",
+      "howToStep2": "2️⃣ [複製好友邀請連結] 或透過 KakaoTalk、SNS、私訊傳送測驗連結",
+      "howToStep3": "3️⃣ 好友就相同題目回答關於你的內容",
+      "howToStep4": "4️⃣ 用 [複製摘要] 透過 SNS/私訊收到對方答對的題目與結果"
+    },
+    "friendStart": {
+      "title": "{name} 的摯友測驗",
+      "line1": "你有多了解 {name}？",
+      "line2": "共 10 題。答錯的題號會在結果中公開。",
+      "line3": "真摯友就該全對，來挑戰吧！"
+    },
+    "creatorDone": {
+      "title": "好友邀請連結已準備好！",
+      "hint": "複製下方連結，透過 KakaoTalk、Instagram 等發給好友。\n好友做完測驗後，會在自己的頁面看到分數。出題人不會收到即時通知，請讓好友把結果分享給你。",
+      "makeAnother": "再出一套題"
+    },
+    "scoreLine": "答對 {score} 題（共 10 題）",
+    "wrongListTitle": "❌ 錯題題號",
+    "allCorrect": "全部答對！",
+    "hostNotifyTitle": "給出題人的摘要（複製）",
+    "hostNotifyBody": "[{name} 摯友測驗結果]\n答對：{score}/10\n錯題：{wrong}\n結果類型：{type}",
+    "noneWrong": "無",
+    "copyHostNotify": "複製摘要",
+    "ui": {
+      "startTest": "建立摯友測驗 · 開始出題",
+      "friendStartCta": "挑戰摯友測驗 🎯",
+      "shareWithFriends": "與好友一起玩",
+      "shareResultWithFriends": "把結果分享給好友",
+      "shareResult": "分享結果",
+      "retakeTest": "再來一次",
+      "otherTests": "更多測驗",
+      "goToTest": "去做測驗",
+      "adsenseTitle": "AdSense 廣告位（誰最了解我？）",
+      "linkCopy": "複製連結",
+      "copyChallengeLink": "複製好友邀請連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "levelLabel": "🏆 摯友等級",
+      "oneLiner": "💬 一句話點評"
+    },
+    "shareMessages": {
+      "creatorKakao": "我出了個關於自己的小測驗！看你算不算真摯友 🏆 你覺得能答對幾題？",
+      "friendResult": "{name} 的摯友測驗：答對 {score} 題！我是 {type} 🎯",
+      "startDefault": "誰最了解我？ 🏆 10 題摯友測驗",
+      "startKakao": "誰最了解我？ 🏆 10 題摯友測驗",
+      "startWechat": "誰最了解我？ 🏆 10 題摯友測驗",
+      "startWhatsapp": "誰最了解我？ 🏆 10 題摯友測驗",
+      "startTelegram": "誰最了解我？ 🏆 10 題摯友測驗",
+      "startLine": "誰最了解我？ 🏆 10 題摯友測驗"
+    },
+    "alerts": {
+      "nameRequired": "請至少輸入一個字元作為名字。",
+      "invalidLink": "邀請連結無效。",
+      "linkCopied": "連結已複製！",
+      "resultCopied": "已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先買了再說！\"",

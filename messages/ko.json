@@ -1043,6 +1043,86 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3BestFriendQuizTest": {
+    "defaultHostName": "친구",
+    "creatorNameLabel": "내 이름 (친구에게 표시됩니다)",
+    "creatorNamePlaceholder": "예: 민수",
+    "creatorStart": {
+      "line1": "진짜 찐친이 누구인지, 지금 확인해 보세요.",
+      "line2": "나에 대한 10가지 질문에 먼저 답하고, 링크를 친구들에게 공유하세요.",
+      "line3": "같은 문제를 친구들이 풀면, 몇 개나 맞히는지 바로 확인할 수 있습니다.",
+      "line4": "과연 당신 곁에 진짜 찐친이 있을까요? 아니면 전부 아는 척이었을까요?",
+      "line5": "나만의 찐친 퀴즈 만들기 🏆 출제 시작",
+      "howToTitle": "진행 방법",
+      "howToStep1": "1️⃣ 내가 나에 대한 질문 답변 선택",
+      "howToStep2": "2️⃣ [친구 초대 링크 복사] 또는 카카오톡·SNS/메시지로 테스트 링크 전달",
+      "howToStep3": "3️⃣ 친구가 나에 대해 동일한 질문 답변 선택",
+      "howToStep4": "4️⃣ [요약 복사하기]로 나에 대해 푼 정답과 결과 SNS/메시지로 받기"
+    },
+    "friendStart": {
+      "title": "{name}님의 찐친 퀴즈",
+      "line1": "{name}에 대해 얼마나 알고 있나요?",
+      "line2": "총 10문제. 틀린 문제는 결과와 함께 공개됩니다.",
+      "line3": "진짜 찐친이라면 다 맞혀야 하지 않겠어요? 도전해 보세요!"
+    },
+    "creatorDone": {
+      "title": "친구 초대 링크가 준비됐어요!",
+      "hint": "아래 링크를 복사해 카카오톡·인스타 등으로 친구에게 보내세요.\n친구가 퀴즈를 마치면 본인 화면에서 점수를 확인할 수 있어요. 출제자에게 실시간 자동 알림은 제공되지 않으니, 친구에게 결과를 공유해 달라고 말해 주세요.",
+      "makeAnother": "새로 출제하기"
+    },
+    "scoreLine": "{score}개 맞힘 (10문제 중)",
+    "wrongListTitle": "❌ 틀린 문항 번호",
+    "allCorrect": "전부 정답!",
+    "hostNotifyTitle": "출제자에게 보낼 요약 (복사)",
+    "hostNotifyBody": "[{name} 찐친 퀴즈 결과]\n맞힌 개수: {score}/10\n틀린 문항: {wrong}\n결과 유형: {type}",
+    "noneWrong": "없음",
+    "copyHostNotify": "요약 복사하기",
+    "ui": {
+      "startTest": "나만의 찐친 퀴즈 만들기 · 출제 시작",
+      "friendStartCta": "찐친 테스트 도전하기 🎯",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나를 제일 잘 아는 친구는?)",
+      "linkCopy": "링크 복사",
+      "copyChallengeLink": "친구 초대 링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "levelLabel": "🏆 찐친 레벨",
+      "oneLiner": "💬 한 줄 평"
+    },
+    "shareMessages": {
+      "creatorKakao": "나에 대한 퀴즈 만들었어! 니가 진짜 내 찐친인지 테스트해봐 🏆 몇 개 맞힐 것 같아?",
+      "friendResult": "{name} 찐친 퀴즈 {score}개 맞힘! 나 {type} 🎯",
+      "startDefault": "나를 제일 잘 아는 친구는? 🏆 10문항 찐친 퀴즈",
+      "startKakao": "나를 제일 잘 아는 친구는? 🏆 10문항 찐친 퀴즈",
+      "startWechat": "나를 제일 잘 아는 친구는? 🏆 10문항 찐친 퀴즈",
+      "startWhatsapp": "나를 제일 잘 아는 친구는? 🏆 10문항 찐친 퀴즈",
+      "startTelegram": "나를 제일 잘 아는 친구는? 🏆 10문항 찐친 퀴즈",
+      "startLine": "나를 제일 잘 아는 친구는? 🏆 10문항 찐친 퀴즈"
+    },
+    "alerts": {
+      "nameRequired": "이름을 한 글자 이상 입력해 주세요.",
+      "invalidLink": "유효하지 않은 초대 링크입니다.",
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"어? 예쁘다. 일단 사!\"",

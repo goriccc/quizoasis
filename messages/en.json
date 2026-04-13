@@ -1822,6 +1822,86 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3BestFriendQuizTest": {
+    "defaultHostName": "Friend",
+    "creatorNameLabel": "Your name (shown to friends)",
+    "creatorNamePlaceholder": "e.g. Alex",
+    "creatorStart": {
+      "line1": "Find out who your real best friend is—right now.",
+      "line2": "Answer 10 questions about yourself first, then share the link with friends.",
+      "line3": "When friends take the same quiz, you can see how many they get right.",
+      "line4": "Is there a true best friend—or were they all pretending to know you?",
+      "line5": "Create my BFF quiz 🏆 Start as host",
+      "howToTitle": "How it works",
+      "howToStep1": "1️⃣ Answer the questions about yourself",
+      "howToStep2": "2️⃣ [Copy friend invite link] or send the test link via KakaoTalk, SNS, or messaging",
+      "howToStep3": "3️⃣ Your friend answers the same questions about you",
+      "howToStep4": "4️⃣ Use [Copy summary] to get their correct answers and the result via SNS or messaging"
+    },
+    "friendStart": {
+      "title": "{name}'s BFF quiz",
+      "line1": "How well do you know {name}?",
+      "line2": "10 questions total. Wrong answers are shown in the results.",
+      "line3": "A real BFF should get them all—take the challenge!"
+    },
+    "creatorDone": {
+      "title": "Your friend invite link is ready!",
+      "hint": "Copy the link below and send it via KakaoTalk, Instagram, etc.\nWhen your friend finishes, they can check their score on their screen. The host does not get a live notification—ask your friend to share their result.",
+      "makeAnother": "Create another quiz"
+    },
+    "scoreLine": "{score} correct (out of 10)",
+    "wrongListTitle": "❌ Wrong question numbers",
+    "allCorrect": "All correct!",
+    "hostNotifyTitle": "Summary for the host (copy)",
+    "hostNotifyBody": "[{name} BFF quiz results]\nCorrect: {score}/10\nWrong questions: {wrong}\nResult: {type}",
+    "noneWrong": "None",
+    "copyHostNotify": "Copy summary",
+    "ui": {
+      "startTest": "Create my BFF quiz · Start as host",
+      "friendStartCta": "Take the BFF quiz 🎯",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Try again",
+      "otherTests": "More tests",
+      "goToTest": "Go to test",
+      "adsenseTitle": "AdSense slot (Who knows me best?)",
+      "linkCopy": "Copy link",
+      "copyChallengeLink": "Copy friend invite link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "levelLabel": "🏆 True friend level",
+      "oneLiner": "💬 One-liner verdict"
+    },
+    "shareMessages": {
+      "creatorKakao": "I made a quiz about me! See if you're really my BFF 🏆 How many do you think you'll get?",
+      "friendResult": "{name}'s BFF quiz: {score} correct! I'm {type} 🎯",
+      "startDefault": "Who knows me best? 🏆 10-question BFF quiz",
+      "startKakao": "Who knows me best? 🏆 10-question BFF quiz",
+      "startWechat": "Who knows me best? 🏆 10-question BFF quiz",
+      "startWhatsapp": "Who knows me best? 🏆 10-question BFF quiz",
+      "startTelegram": "Who knows me best? 🏆 10-question BFF quiz",
+      "startLine": "Who knows me best? 🏆 10-question BFF quiz"
+    },
+    "alerts": {
+      "nameRequired": "Please enter at least one character for your name.",
+      "invalidLink": "This invite link is not valid.",
+      "linkCopied": "Link copied!",
+      "resultCopied": "Copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

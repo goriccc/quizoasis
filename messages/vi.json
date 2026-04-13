@@ -1781,6 +1781,86 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3BestFriendQuizTest": {
+    "defaultHostName": "Bạn",
+    "creatorNameLabel": "Tên của bạn (hiển thị cho bạn bè)",
+    "creatorNamePlaceholder": "Ví dụ: Minh",
+    "creatorStart": {
+      "line1": "Xem ngay ai mới là bạn thân thật sự của bạn.",
+      "line2": "Trả lời 10 câu hỏi về bản thân trước, rồi chia sẻ liên kết cho bạn bè.",
+      "line3": "Khi bạn bè làm cùng bài test, bạn sẽ biết họ trả lời đúng mấy câu.",
+      "line4": "Bạn có một người bạn thân thật sự—hay mọi người chỉ giả vờ hiểu bạn?",
+      "line5": "Tạo bài quiz bạn thân của riêng bạn 🏆 Bắt đầu ra đề",
+      "howToTitle": "Cách thực hiện",
+      "howToStep1": "1️⃣ Bạn chọn đáp án cho các câu hỏi về bản thân",
+      "howToStep2": "2️⃣ [Sao chép liên kết mời bạn] hoặc gửi liên kết bài test qua KakaoTalk, SNS hoặc tin nhắn",
+      "howToStep3": "3️⃣ Bạn bè trả lời cùng các câu hỏi về bạn",
+      "howToStep4": "4️⃣ Dùng [Sao chép tóm tắt] để nhận đáp án đúng và kết quả qua SNS hoặc tin nhắn"
+    },
+    "friendStart": {
+      "title": "Quiz bạn thân của {name}",
+      "line1": "Bạn hiểu {name} đến mức nào?",
+      "line2": "Tổng 10 câu. Các câu sai sẽ được hiển thị trong kết quả.",
+      "line3": "Bạn thân thật phải trả lời đúng hết—thử thách nào!"
+    },
+    "creatorDone": {
+      "title": "Liên kết mời bạn bè đã sẵn sàng!",
+      "hint": "Sao chép liên kết bên dưới và gửi qua KakaoTalk, Instagram, v.v.\nKhi bạn bè hoàn thành, họ xem điểm trên màn hình của họ. Người ra đề không nhận thông báo trực tiếp—hãy nhờ bạn bè chia sẻ kết quả.",
+      "makeAnother": "Ra đề bài mới"
+    },
+    "scoreLine": "{score} câu đúng (trong 10 câu)",
+    "wrongListTitle": "❌ Số câu sai",
+    "allCorrect": "Tất cả đúng!",
+    "hostNotifyTitle": "Tóm tắt gửi người ra đề (sao chép)",
+    "hostNotifyBody": "[Kết quả quiz bạn thân {name}]\nĐúng: {score}/10\nCâu sai: {wrong}\nLoại kết quả: {type}",
+    "noneWrong": "Không có",
+    "copyHostNotify": "Sao chép tóm tắt",
+    "ui": {
+      "startTest": "Tạo quiz bạn thân · Bắt đầu ra đề",
+      "friendStartCta": "Làm quiz bạn thân 🎯",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem thêm bài test",
+      "goToTest": "Đến bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Ai hiểu bạn nhất?)",
+      "linkCopy": "Sao chép liên kết",
+      "copyChallengeLink": "Sao chép liên kết mời bạn",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "levelLabel": "🏆 Cấp độ bạn thân",
+      "oneLiner": "💬 Nhận xét một dòng"
+    },
+    "shareMessages": {
+      "creatorKakao": "Mình làm quiz về bản thân! Xem bạn có phải bạn thân thật không 🏆 Bạn đo đúng mấy câu?",
+      "friendResult": "Quiz bạn thân của {name}: {score} câu đúng! Mình là {type} 🎯",
+      "startDefault": "Ai hiểu bạn nhất? 🏆 Quiz bạn thân 10 câu",
+      "startKakao": "Ai hiểu bạn nhất? 🏆 Quiz bạn thân 10 câu",
+      "startWechat": "Ai hiểu bạn nhất? 🏆 Quiz bạn thân 10 câu",
+      "startWhatsapp": "Ai hiểu bạn nhất? 🏆 Quiz bạn thân 10 câu",
+      "startTelegram": "Ai hiểu bạn nhất? 🏆 Quiz bạn thân 10 câu",
+      "startLine": "Ai hiểu bạn nhất? 🏆 Quiz bạn thân 10 câu"
+    },
+    "alerts": {
+      "nameRequired": "Vui lòng nhập ít nhất một ký tự cho tên.",
+      "invalidLink": "Liên kết mời không hợp lệ.",
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Ồ? Đẹp quá. Cứ mua đã!\"",
