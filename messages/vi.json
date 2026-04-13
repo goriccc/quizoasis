@@ -1833,6 +1833,59 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3SnsAlgorithmTypeTest": {
+    "startMessage": {
+      "line1": "Feed mạng xã hội của bạn đang đầy những gì?",
+      "line2": "Thuật toán không nói dối. Những gì bạn dừng lại, thích, lưu và chia sẻ chồng chất lên—tạo nên feed chỉ của riêng bạn.",
+      "line3": "Xem clip ẩm thực rồi bỗng thấy toàn kênh nấu ăn; chạm một clip gym là fitness tràn ngập—đó là thuật toán.",
+      "line4": "Chúng tôi phân tích kiểu “thuật toán tính cách” của bạn dựa trên cách bạn tiêu thụ nội dung trên mạng xã hội.",
+      "line5": "Xem mình thuộc kiểu nào 📱 Bắt đầu test SNS"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tôi thuộc kiểu thuật toán SNS nào?)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "algorithmSubtype": "Kiểu thuật toán",
+      "feedComposition": "Cơ cấu feed",
+      "saveFolderName": "Phong cách thư mục đã lưu",
+      "snsMainActivity": "Nền tảng chính",
+      "goodMatch": "Hợp gu nhất",
+      "badMatch": "Kiểu trái ngược",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Kiểu thuật toán SNS của tôi là {name}! 📱 Đúng gu—còn bạn là kiểu nào?",
+      "kakao": "Kiểu thuật toán SNS của tôi là {name}! 📱 Đúng gu—còn bạn là kiểu nào?",
+      "wechat": "Kiểu thuật toán SNS của tôi là {name}! 📱 Đúng gu—còn bạn là kiểu nào?",
+      "whatsapp": "Kiểu thuật toán SNS của tôi là {name}! 📱 Đúng gu—còn bạn là kiểu nào?",
+      "telegram": "Kiểu thuật toán SNS của tôi là {name}! 📱 Đúng gu—còn bạn là kiểu nào?",
+      "line": "Kiểu thuật toán SNS của tôi là {name}! 📱 Đúng gu—còn bạn là kiểu nào?",
+      "startDefault": "Tôi thuộc kiểu thuật toán SNS nào? 📱 12 câu chọn ảnh",
+      "startKakao": "Tôi thuộc kiểu thuật toán SNS nào? 📱 12 câu chọn ảnh",
+      "startWechat": "Tôi thuộc kiểu thuật toán SNS nào? 📱 12 câu chọn ảnh",
+      "startWhatsapp": "Tôi thuộc kiểu thuật toán SNS nào? 📱 12 câu chọn ảnh",
+      "startTelegram": "Tôi thuộc kiểu thuật toán SNS nào? 📱 12 câu chọn ảnh",
+      "startLine": "Tôi thuộc kiểu thuật toán SNS nào? 📱 12 câu chọn ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Bạn",
     "creatorNameLabel": "Tên của bạn (hiển thị cho bạn bè)",

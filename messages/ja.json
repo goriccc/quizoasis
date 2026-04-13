@@ -1834,6 +1834,59 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3SnsAlgorithmTypeTest": {
+    "startMessage": {
+      "line1": "あなたのSNSフィード、今は何でいっぱい？",
+      "line2": "アルゴリズムは嘘をつきません。止まって、いいねして、保存して、共有したものが積み重なって、あなただけのフィードになります。",
+      "line3": "グルメ動画を見たらいつの間にか料理チャンネルだらけ。筋トレ動画を一つ見たらフィットネスが埋め尽くされる——そんなアルゴリズム。",
+      "line4": "SNSの消費パターンから、あなたのアルゴリズムタイプを分析します。",
+      "line5": "タイプをチェック 📱 SNSアルゴリズム診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（SNSアルゴリズムタイプ診断）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "algorithmSubtype": "アルゴリズムタイプ",
+      "feedComposition": "フィード構成",
+      "saveFolderName": "保存フォルダの雰囲気",
+      "snsMainActivity": "よく使うSNS",
+      "goodMatch": "相性バッチリ",
+      "badMatch": "対照的タイプ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私のSNSアルゴリズムタイプは{name}！📱 わかる〜あなたはどのタイプ？",
+      "kakao": "私のSNSアルゴリズムタイプは{name}！📱 わかる〜あなたはどのタイプ？",
+      "wechat": "私のSNSアルゴリズムタイプは{name}！📱 わかる〜あなたはどのタイプ？",
+      "whatsapp": "私のSNSアルゴリズムタイプは{name}！📱 わかる〜あなたはどのタイプ？",
+      "telegram": "私のSNSアルゴリズムタイプは{name}！📱 わかる〜あなたはどのタイプ？",
+      "line": "私のSNSアルゴリズムタイプは{name}！📱 わかる〜あなたはどのタイプ？",
+      "startDefault": "SNSアルゴリズムタイプ診断 📱 画像12問",
+      "startKakao": "SNSアルゴリズムタイプ診断 📱 画像12問",
+      "startWechat": "SNSアルゴリズムタイプ診断 📱 画像12問",
+      "startWhatsapp": "SNSアルゴリズムタイプ診断 📱 画像12問",
+      "startTelegram": "SNSアルゴリズムタイプ診断 📱 画像12問",
+      "startLine": "SNSアルゴリズムタイプ診断 📱 画像12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "友だち",
     "creatorNameLabel": "あなたの名前（友だちに表示されます）",

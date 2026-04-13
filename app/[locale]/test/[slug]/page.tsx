@@ -61,6 +61,10 @@ import {
   phase3WhichAiAreYouQuestions,
   phase3WhichAiAreYouResults,
 } from '@/lib/phase3WhichAiAreYouData';
+import {
+  phase3SnsAlgorithmTypeQuestions,
+  phase3SnsAlgorithmTypeResults,
+} from '@/lib/phase3SnsAlgorithmTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -237,6 +241,10 @@ const Phase3CoupleBreakupRiskTestClient = dynamic(
 );
 const Phase3WhichAiAreYouTestClient = dynamic(
   () => import('@/components/Phase3WhichAiAreYouTestClient'),
+  { ssr: false }
+);
+const Phase3SnsAlgorithmTypeTestClient = dynamic(
+  () => import('@/components/Phase3SnsAlgorithmTypeTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -711,6 +719,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['AI', '性格', '趨勢', '趣味'],
         vi: ['AI', 'Tính cách', 'Xu hướng', 'Giải trí'],
         id: ['AI', 'Kepribadian', 'Tren', 'Seru'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-sns-algorithm-type') {
+    test = {
+      slug: 'phase3-sns-algorithm-type',
+      title: {
+        ko: '나는 어떤 SNS 알고리즘 타입?',
+        en: 'What Is My SNS Algorithm Type?',
+        ja: '私のSNSアルゴリズムタイプは？',
+        'zh-CN': '我是什么 SNS 算法类型？',
+        'zh-TW': '我是哪種 SNS 演算法類型？',
+        vi: 'Tôi thuộc kiểu thuật toán SNS nào?',
+        id: 'Tipe algoritme SNS-ku?',
+      },
+      description: {
+        ko: '12문항 이미지 2지선다로 보는 SNS 알고리즘 소비 패턴 6유형. #SNS #트렌드 #디지털 #성격',
+        en: '12 image A/B questions — 6 feed algorithm personality types. #SNS #trend #digital #personality',
+        ja: '画像12問の2択で見るSNS消費タイプ6種。#SNS #トレンド #デジタル #性格',
+        'zh-CN': '12 道图片二选一，六种信息流算法人格。#社交媒体 #趋势 #数字生活 #性格',
+        'zh-TW': '12 題圖片二選一，六種資訊流演算法人格。#社群 #趨勢 #數位 #性格',
+        vi: '12 câu chọn ảnh A/B — 6 tính cách thuật toán feed. #SNS #xu hướng #số #tính cách',
+        id: '12 pertanyaan gambar A/B — 6 tipe algoritme feed. #SNS #tren #digital #kepribadian',
+      },
+      thumbnail: 'p3_test_sns_algorithm_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['SNS', '트렌드', '디지털', '성격'],
+        en: ['SNS', 'Trend', 'Digital', 'Personality'],
+        ja: ['SNS', 'トレンド', 'デジタル', '性格'],
+        'zh-CN': ['社交媒体', '趋势', '数字', '性格'],
+        'zh-TW': ['社群', '趨勢', '數位', '性格'],
+        vi: ['SNS', 'Xu hướng', 'Số', 'Tính cách'],
+        id: ['SNS', 'Tren', 'Digital', 'Kepribadian'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2736,6 +2781,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3WhichAiAreYouQuestions}
           results={phase3WhichAiAreYouResults}
           questionCount={phase3WhichAiAreYouQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-sns-algorithm-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-sns-algorithm-type',
+      title: {
+        ko: '나는 어떤 SNS 알고리즘 타입?',
+        en: 'What Is My SNS Algorithm Type?',
+        ja: '私のSNSアルゴリズムタイプは？',
+        'zh-CN': '我是什么 SNS 算法类型？',
+        'zh-TW': '我是哪種 SNS 演算法類型？',
+        vi: 'Tôi thuộc kiểu thuật toán SNS nào?',
+        id: 'Tipe algoritme SNS-ku?',
+      },
+      description: {
+        ko: '12문항 이미지 2지선다로 보는 SNS 알고리즘 소비 패턴 6유형. #SNS #트렌드 #디지털 #성격',
+        en: '12 image A/B questions — 6 feed algorithm personality types. #SNS #trend #digital #personality',
+        ja: '画像12問の2択で見るSNS消費タイプ6種。#SNS #トレンド #デジタル #性格',
+        'zh-CN': '12 道图片二选一，六种信息流算法人格。#社交媒体 #趋势 #数字生活 #性格',
+        'zh-TW': '12 題圖片二選一，六種資訊流演算法人格。#社群 #趨勢 #數位 #性格',
+        vi: '12 câu chọn ảnh A/B — 6 tính cách thuật toán feed. #SNS #xu hướng #số #tính cách',
+        id: '12 pertanyaan gambar A/B — 6 tipe algoritme feed. #SNS #tren #digital #kepribadian',
+      },
+      thumbnail: 'p3_test_sns_algorithm_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['SNS', '트렌드', '디지털', '성격'],
+        en: ['SNS', 'Trend', 'Digital', 'Personality'],
+        ja: ['SNS', 'トレンド', 'デジタル', '性格'],
+        'zh-CN': ['社交媒体', '趋势', '数字', '性格'],
+        'zh-TW': ['社群', '趨勢', '數位', '性格'],
+        vi: ['SNS', 'Xu hướng', 'Số', 'Tính cách'],
+        id: ['SNS', 'Tren', 'Digital', 'Kepribadian'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SnsAlgorithmTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SnsAlgorithmTypeQuestions}
+          results={phase3SnsAlgorithmTypeResults}
+          questionCount={phase3SnsAlgorithmTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

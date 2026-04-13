@@ -1833,6 +1833,59 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3SnsAlgorithmTypeTest": {
+    "startMessage": {
+      "line1": "Feed sosmedmu sekarang penuh dengan apa?",
+      "line2": "Algoritme tidak berbohong. Apa yang kamu berhentikan, suka, simpan, dan bagikan menumpuk—dan membentuk feed yang khas untukmu.",
+      "line3": "Nonton kuliner lalu tiba-tiba penuh channel masak; ketuk satu video olahraga lalu konten fitness memenuhi layar—itulah algoritme.",
+      "line4": "Kami menganalisis “tipe algoritme” kamu dari pola konsumsi di sosial media.",
+      "line5": "Cek tipenya 📱 Mulai tes tipe SNS"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tipe algoritme SNS-ku)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "algorithmSubtype": "Tipe algoritme",
+      "feedComposition": "Komposisi feed",
+      "saveFolderName": "Gaya folder simpanan",
+      "snsMainActivity": "Platform utama",
+      "goodMatch": "Cocok banget",
+      "badMatch": "Tipe lawan arah",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe algoritme SNS-ku adalah {name}! 📱 Pas banget—kamu tipe apa?",
+      "kakao": "Tipe algoritme SNS-ku adalah {name}! 📱 Pas banget—kamu tipe apa?",
+      "wechat": "Tipe algoritme SNS-ku adalah {name}! 📱 Pas banget—kamu tipe apa?",
+      "whatsapp": "Tipe algoritme SNS-ku adalah {name}! 📱 Pas banget—kamu tipe apa?",
+      "telegram": "Tipe algoritme SNS-ku adalah {name}! 📱 Pas banget—kamu tipe apa?",
+      "line": "Tipe algoritme SNS-ku adalah {name}! 📱 Pas banget—kamu tipe apa?",
+      "startDefault": "Tipe algoritme SNS-ku? 📱 12 pertanyaan pilih gambar",
+      "startKakao": "Tipe algoritme SNS-ku? 📱 12 pertanyaan pilih gambar",
+      "startWechat": "Tipe algoritme SNS-ku? 📱 12 pertanyaan pilih gambar",
+      "startWhatsapp": "Tipe algoritme SNS-ku? 📱 12 pertanyaan pilih gambar",
+      "startTelegram": "Tipe algoritme SNS-ku? 📱 12 pertanyaan pilih gambar",
+      "startLine": "Tipe algoritme SNS-ku? 📱 12 pertanyaan pilih gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Teman",
     "creatorNameLabel": "Nama Anda (ditampilkan ke teman)",
