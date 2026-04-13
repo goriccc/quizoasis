@@ -1719,6 +1719,68 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3AdhdTendencyChecklistTest": {
+    "startMessage": {
+      "line1": "ADHD (gangguan defisit perhatian dan hiperaktivitas) adalah kondisi neurodevelopmental yang harus didiagnosis oleh tenaga medis yang berwenang.",
+      "line2": "Daftar periksa ini membantu Anda mengamati pola fokus dan kecenderungan perilaku—alat memahami diri sendiri.",
+      "line3": "\"Kenapa susah fokus?\" \"Kenapa tugas penting terus ditunda?\" \"Kenapa satu hal tidak pernah selesai?\"",
+      "line4": "Jika Anda sering berpikir begitu, daftar ini dapat membantu memahami diri. Hasilnya menggambarkan kecenderungan—bukan diagnosis; skor tinggi tidak berarti ADHD.",
+      "line5": "Semakin jujur jawaban Anda, semakin bermakna hasilnya."
+    },
+    "ui": {
+      "startTest": "Mulai cek pola fokus",
+      "shareWithFriends": "Coba bersama teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lainnya",
+      "goToTest": "Ke tes",
+      "adsenseTitle": "Area iklan AdSense (daftar kecenderungan ADHD)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "empathyLevel": "Rentang skor",
+      "characteristics": "Ringkasan utama",
+      "goodMatch": "Catatan",
+      "badMatch": "Referensi",
+      "lifeImpactSection": "📋 Gambaran kecenderungan",
+      "workStyleSection": "💡 Memahami diri & panduan",
+      "relationshipStyleSection": "📌 Panduan & saran tambahan",
+      "messageToYouSection": "💬 Pesan untuk Anda",
+      "recommendedDirectionSection": "⚠️ Dukungan profesional & konseling"
+    },
+    "shareMessages": {
+      "default": "Hasil daftar kecenderungan ADHD: {type} — bagaimana hasilmu?",
+      "resultType1": "Daftar ADHD: Pola regulasi perhatian stabil 🟢 Fokus cukup mantap… wajib dicoba → kamu bagaimana?",
+      "resultType2": "Daftar ADHD: Fokus bergantung situasi 🟡 Baru fokus kalau tertarik—relate… bukan diagnosis → hasilmu?",
+      "resultType3": "Daftar ADHD: Cenderung mudah terpecah 🟠 Menunda, menumpuk, sulit menyelesaikan—ini aku → kamu?",
+      "resultType4": "Daftar ADHD: Pola fokus dua kutub 🔶 Suka hiperfokus, tidak suka tidak mulai—nyata → hasilmu?",
+      "resultType5": "Daftar ADHD: Kesulitan perhatian tinggi 🔴 Bukan soal lemah tekad… pertimbangkan profesional → kamu bagaimana?",
+      "resultType6": "Daftar ADHD: Disarankan konfirmasi profesional 🆘 Hampir semua item… sulitnya mungkin bukan salahmu → coba cek diri",
+      "startDefault": "Daftar kecenderungan ADHD 🧠 12 pertanyaan — pahami fokus & perilaku",
+      "startKakao": "Daftar kecenderungan ADHD 🧠 12 pertanyaan — pahami fokus & perilaku",
+      "startWechat": "Daftar kecenderungan ADHD 🧠 12 pertanyaan — pahami fokus & perilaku",
+      "startWhatsapp": "Daftar kecenderungan ADHD 🧠 12 pertanyaan — pahami fokus & perilaku",
+      "startTelegram": "Daftar kecenderungan ADHD 🧠 12 pertanyaan — pahami fokus & perilaku",
+      "startLine": "Daftar kecenderungan ADHD 🧠 12 pertanyaan — pahami fokus & perilaku"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

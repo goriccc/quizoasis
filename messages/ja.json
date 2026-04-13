@@ -1720,6 +1720,68 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3AdhdTendencyChecklistTest": {
+    "startMessage": {
+      "line1": "ADHD（注意欠如・多動症）は、必ず専門の医療チームによる診断が必要な神経発達上の状態です。",
+      "line2": "このチェックリストは、自分の集中のクセと行動の傾向を見つめ直すためのセルフチェックです。",
+      "line3": "「なぜこんなに集中できない？」「大事なことを先延ばしにしてしまうのはなぜ？」「一つのことを最後まで終えられないのはなぜ？」",
+      "line4": "こんなふうに感じることが多いなら、自分を理解するヒントになるかもしれません。結果は傾向の整理であり、点数が高いからといってADHDと診断されたわけではありません。",
+      "line5": "正直に答えるほど、読み取りは正確になります。"
+    },
+    "ui": {
+      "startTest": "集中パターンをチェックする",
+      "shareWithFriends": "友達と一緒に",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストに行く",
+      "adsenseTitle": "AdSense広告エリア（ADHD傾向チェックリスト）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "empathyLevel": "スコア帯",
+      "characteristics": "要点",
+      "goodMatch": "メモ",
+      "badMatch": "参考",
+      "lifeImpactSection": "📋 傾向の概要",
+      "workStyleSection": "💡 自己理解・ガイド",
+      "relationshipStyleSection": "📌 追加の案内・おすすめ",
+      "messageToYouSection": "💬 伝えたいこと",
+      "recommendedDirectionSection": "⚠️ 専門家・相談の案内"
+    },
+    "shareMessages": {
+      "default": "ADHD傾向チェックリストの結果：{type} — あなたはどうだった？",
+      "resultType1": "ADHDチェック：注意のコントロールが安定型 🟢 比較的まとまった集中…一度試す価値あり → 結果は？",
+      "resultType2": "ADHDチェック：状況依存の集中型 🟡 興味があるときだけ没頭、あるある…診断ではなく自己理解 → どうだった？",
+      "resultType3": "ADHDチェック：注意が散りやすい型 🟠 先延ばし・抱え込み・仕上げられない…まさに私 → あなたは？",
+      "resultType4": "ADHDチェック：二極の集中パターン型 🔶 好きは過集中、苦手は手がつかない…刺さる → 結果は？",
+      "resultType5": "ADHDチェック：注意の困難が強い型 🔴 意志の弱さじゃないかも…専門家相談も検討 → どうだった？",
+      "resultType6": "ADHDチェック：専門家の確認推奨型 🆘 ほぼ全部当てはまる…自分のせいじゃないかも → セルフチェックしてみて",
+      "startDefault": "ADHD傾向チェックリスト 🧠 12問・集中と行動のセルフチェック",
+      "startKakao": "ADHD傾向チェックリスト 🧠 12問・集中と行動のセルフチェック",
+      "startWechat": "ADHD傾向チェックリスト 🧠 12問・集中と行動のセルフチェック",
+      "startWhatsapp": "ADHD傾向チェックリスト 🧠 12問・集中と行動のセルフチェック",
+      "startTelegram": "ADHD傾向チェックリスト 🧠 12問・集中と行動のセルフチェック",
+      "startLine": "ADHD傾向チェックリスト 🧠 12問・集中と行動のセルフチェック"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"あれ？きれいだ。とりあえず買う！\"",

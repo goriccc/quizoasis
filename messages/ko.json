@@ -981,6 +981,68 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3AdhdTendencyChecklistTest": {
+    "startMessage": {
+      "line1": "ADHD(주의력결핍 과잉행동장애)는 반드시 전문 의료진의 진단이 필요한 신경발달 상태입니다.",
+      "line2": "이 체크리스트는 나의 집중력 패턴과 행동 성향을 스스로 들여다보는 자기 이해 도구입니다.",
+      "line3": "\"왜 나는 이렇게 집중이 안 되지?\" \"왜 중요한 일을 자꾸 미루게 되지?\" \"왜 한 가지를 끝까지 못 하지?\"",
+      "line4": "이런 생각을 자주 했다면 이 체크리스트가 나 자신을 이해하는 데 도움이 될 수 있습니다. 결과는 성향 분석이며 높은 점수가 나와도 ADHD 진단을 의미하지 않습니다.",
+      "line5": "솔직하게 답할수록 정확합니다."
+    },
+    "ui": {
+      "startTest": "내 집중력 패턴 테스트 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (ADHD 성향 체크리스트)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "empathyLevel": "점수 구간",
+      "characteristics": "주요 요약",
+      "goodMatch": "추가 메모",
+      "badMatch": "참고",
+      "lifeImpactSection": "📋 성향 지표 요약",
+      "workStyleSection": "💡 자기 이해·안내",
+      "relationshipStyleSection": "📌 추가 안내·권장",
+      "messageToYouSection": "💬 전하고 싶은 말",
+      "recommendedDirectionSection": "⚠️ 전문가·상담 안내"
+    },
+    "shareMessages": {
+      "default": "ADHD 성향 체크리스트 결과: {type} — 너는 어떻게 나왔어?",
+      "resultType1": "ADHD 성향 체크리스트: 주의 조절 안정형 🟢 집중력 패턴 비교적 안정적이래... 이거 MZ 필수 체크리스트 → 너는 어떻게 나왔어?",
+      "resultType2": "ADHD 성향 체크리스트: 상황 의존 집중형 🟡 흥미 있을 때만 집중된다는 거 너무 공감... 이거 진단 아닌 자기 이해 체크리스트 → 너는 어떻게 나왔어?",
+      "resultType3": "ADHD 성향 체크리스트: 주의 분산 경향형 🟠 미루고 벌여두고 마무리 못 하는 패턴 맞음... 이게 나인데 ㅠ → 너는 어떻게 나왔어?",
+      "resultType4": "ADHD 성향 체크리스트: 양극 집중 패턴형 🔶 좋아하는 건 과집중 싫어하는 건 시작도 못 하는 유형... 이거 진짜 나 맞음 → 너는 어떻게 나왔어?",
+      "resultType5": "ADHD 성향 체크리스트: 고성향 주의집중 어려움형 🔴 이 어려움이 의지력 문제가 아닐 수 있다는 거... 전문가 상담 고려해봐야겠다 → 너는 어떻게 나왔어?",
+      "resultType6": "ADHD 성향 체크리스트: 전문가 확인 권장형 🆘 거의 모든 항목 해당됨... 이 어려움 내 잘못이 아닐 수 있다는 거 → 자기 이해 체크리스트 해봐",
+      "startDefault": "ADHD 성향 체크리스트 🧠 12문항 집중력·행동 패턴 자기 이해",
+      "startKakao": "ADHD 성향 체크리스트 🧠 12문항 집중력·행동 패턴 자기 이해",
+      "startWechat": "ADHD 성향 체크리스트 🧠 12문항 집중력·행동 패턴 자기 이해",
+      "startWhatsapp": "ADHD 성향 체크리스트 🧠 12문항 집중력·행동 패턴 자기 이해",
+      "startTelegram": "ADHD 성향 체크리스트 🧠 12문항 집중력·행동 패턴 자기 이해",
+      "startLine": "ADHD 성향 체크리스트 🧠 12문항 집중력·행동 패턴 자기 이해"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"어? 예쁘다. 일단 사!\"",

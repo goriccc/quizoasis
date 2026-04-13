@@ -1719,6 +1719,68 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3AdhdTendencyChecklistTest": {
+    "startMessage": {
+      "line1": "ADHD (thiếu tập trung và tăng động) là tình trạng phát triển thần kinh cần được chẩn đoán bởi chuyên gia y tế đủ điều kiện.",
+      "line2": "Bảng kiểm này giúp bạn tự quan sát mô hình tập trung và xu hướng hành vi—là công cụ tự hiểu bản thân.",
+      "line3": "\"Sao mình khó tập trung thế?\" \"Sao việc quan trọng cứ bị trì hoãn?\" \"Sao một việc mãi không xong?\"",
+      "line4": "Nếu bạn thường nghĩ vậy, bảng kiểm có thể giúp hiểu mình hơn. Kết quả chỉ mô tả xu hướng—không phải chẩn đoán; điểm cao không có nghĩa là mắc ADHD.",
+      "line5": "Trả lời càng trung thực, kết quả càng có giá trị tham khảo."
+    },
+    "ui": {
+      "startTest": "Bắt đầu kiểm tra mô hình tập trung",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem thêm bài test",
+      "goToTest": "Đi tới bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (bảng kiểm xu hướng ADHD)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "empathyLevel": "Khoảng điểm",
+      "characteristics": "Tóm tắt chính",
+      "goodMatch": "Ghi chú",
+      "badMatch": "Tham khảo",
+      "lifeImpactSection": "📋 Tổng quan xu hướng",
+      "workStyleSection": "💡 Tự hiểu & hướng dẫn",
+      "relationshipStyleSection": "📌 Thêm hướng dẫn & gợi ý",
+      "messageToYouSection": "💬 Điều muốn gửi bạn",
+      "recommendedDirectionSection": "⚠️ Hỗ trợ chuyên môn & tư vấn"
+    },
+    "shareMessages": {
+      "default": "Kết quả bảng kiểm xu hướng ADHD: {type} — bạn ra sao?",
+      "resultType1": "Bảng ADHD: Kiểu điều chỉnh chú ý ổn định 🟢 Tập trung tương đối ổn… đáng thử → bạn thế nào?",
+      "resultType2": "Bảng ADHD: Kiểu phụ thuộc tình huống 🟡 Chỉ vào flow khi hứng thú—đúng quá… không phải chẩn đoán → bạn ra sao?",
+      "resultType3": "Bảng ADHD: Xu hướng dễ tản mạn 🟠 Trì hoãn, ôm việc, khó kết—đúng mình → bạn thế nào?",
+      "resultType4": "Bảng ADHD: Mô hình tập trung hai cực 🔶 Thích thì hyperfocus, không thích thì không bắt đầu… chuẩn → bạn ra sao?",
+      "resultType5": "Bảng ADHD: Khó khăn chú ý mức cao 🔴 Có thể không phải ý chí yếu… cân nhắc chuyên gia → bạn thế nào?",
+      "resultType6": "Bảng ADHD: Nên xác nhận với chuyên gia 🆘 Gần như mọi mục… khó khăn có thể không phải lỗi bạn → thử tự kiểm",
+      "startDefault": "Bảng xu hướng ADHD 🧠 12 câu — tự hiểu tập trung & hành vi",
+      "startKakao": "Bảng xu hướng ADHD 🧠 12 câu — tự hiểu tập trung & hành vi",
+      "startWechat": "Bảng xu hướng ADHD 🧠 12 câu — tự hiểu tập trung & hành vi",
+      "startWhatsapp": "Bảng xu hướng ADHD 🧠 12 câu — tự hiểu tập trung & hành vi",
+      "startTelegram": "Bảng xu hướng ADHD 🧠 12 câu — tự hiểu tập trung & hành vi",
+      "startLine": "Bảng xu hướng ADHD 🧠 12 câu — tự hiểu tập trung & hành vi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Ồ? Đẹp quá. Cứ mua đã!\"",

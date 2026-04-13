@@ -45,6 +45,10 @@ import {
   phase3PerfectionismIndexQuestions,
   phase3PerfectionismIndexResults,
 } from '@/lib/phase3PerfectionismIndexData';
+import {
+  phase3AdhdTendencyChecklistQuestions,
+  phase3AdhdTendencyChecklistResults,
+} from '@/lib/phase3AdhdTendencyChecklistData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -205,6 +209,10 @@ const Phase3CoupleChemistryAnalysisTestClient = dynamic(
 );
 const Phase3PerfectionismIndexTestClient = dynamic(
   () => import('@/components/Phase3PerfectionismIndexTestClient'),
+  { ssr: false }
+);
+const Phase3AdhdTendencyChecklistTestClient = dynamic(
+  () => import('@/components/Phase3AdhdTendencyChecklistTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -568,6 +576,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['性格', '共情', '自我理解'],
         vi: ['Tính cách', 'Đồng cảm', 'Tự hiểu mình'],
         id: ['Kepribadian', 'Empati', 'Memahami diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-adhd-tendency-checklist') {
+    test = {
+      slug: 'phase3-adhd-tendency-checklist',
+      title: {
+        ko: '나 혹시 ADHD 성향 있어?',
+        en: '나 혹시 ADHD 성향 있어?',
+        ja: '나 혹시 ADHD 성향 있어?',
+        'zh-CN': '나 혹시 ADHD 성향 있어?',
+        'zh-TW': '나 혹시 ADHD 성향 있어?',
+        vi: '나 혹시 ADHD 성향 있어?',
+        id: '나 혹시 ADHD 성향 있어?',
+      },
+      description: {
+        ko: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        en: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        ja: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        'zh-CN': '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        'zh-TW': '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        vi: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        id: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+      },
+      thumbnail: 'p3_test_adhd_tendency_checklist.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['ADHD', '성향', '자기이해'],
+        en: ['ADHD', '성향', '자기이해'],
+        ja: ['ADHD', '성향', '자기이해'],
+        'zh-CN': ['ADHD', '성향', '자기이해'],
+        'zh-TW': ['ADHD', '성향', '자기이해'],
+        vi: ['ADHD', '성향', '자기이해'],
+        id: ['ADHD', '성향', '자기이해'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2391,6 +2436,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3PerfectionismIndexQuestions}
           results={phase3PerfectionismIndexResults}
           questionCount={phase3PerfectionismIndexQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-adhd-tendency-checklist') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-adhd-tendency-checklist',
+      title: {
+        ko: '나 혹시 ADHD 성향 있어?',
+        en: '나 혹시 ADHD 성향 있어?',
+        ja: '나 혹시 ADHD 성향 있어?',
+        'zh-CN': '나 혹시 ADHD 성향 있어?',
+        'zh-TW': '나 혹시 ADHD 성향 있어?',
+        vi: '나 혹시 ADHD 성향 있어?',
+        id: '나 혹시 ADHD 성향 있어?',
+      },
+      description: {
+        ko: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        en: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        ja: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        'zh-CN': '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        'zh-TW': '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        vi: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+        id: '집중력·충동·과잉행동 패턴을 12문항으로 점검하는 자기 이해 체크리스트. #ADHD #성향 #자기이해',
+      },
+      thumbnail: 'p3_test_adhd_tendency_checklist.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['ADHD', '성향', '자기이해'],
+        en: ['ADHD', '성향', '자기이해'],
+        ja: ['ADHD', '성향', '자기이해'],
+        'zh-CN': ['ADHD', '성향', '자기이해'],
+        'zh-TW': ['ADHD', '성향', '자기이해'],
+        vi: ['ADHD', '성향', '자기이해'],
+        id: ['ADHD', '성향', '자기이해'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3AdhdTendencyChecklistTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3AdhdTendencyChecklistQuestions}
+          results={phase3AdhdTendencyChecklistResults}
+          questionCount={phase3AdhdTendencyChecklistQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

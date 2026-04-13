@@ -1760,6 +1760,68 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3AdhdTendencyChecklistTest": {
+    "startMessage": {
+      "line1": "ADHD (Attention-Deficit/Hyperactivity Disorder) is a neurodevelopmental condition that requires diagnosis by qualified medical professionals.",
+      "line2": "This checklist is a self-reflection tool to look at your focus patterns and behavioral tendencies.",
+      "line3": "\"Why can't I focus like this?\" \"Why do I keep putting off important tasks?\" \"Why can't I finish one thing through?\"",
+      "line4": "If you often have these thoughts, this checklist may help you understand yourself. The result describes tendencies—not a diagnosis; a high score does not mean you have ADHD.",
+      "line5": "The more honest your answers, the more accurate the reflection."
+    },
+    "ui": {
+      "startTest": "Start my focus pattern check",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "More tests",
+      "goToTest": "Go to test",
+      "adsenseTitle": "AdSense area (ADHD tendency checklist)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "empathyLevel": "Score band",
+      "characteristics": "Key summary",
+      "goodMatch": "Notes",
+      "badMatch": "Reference",
+      "lifeImpactSection": "📋 Tendency overview",
+      "workStyleSection": "💡 Self-understanding & guidance",
+      "relationshipStyleSection": "📌 More guidance & recommendations",
+      "messageToYouSection": "💬 A note for you",
+      "recommendedDirectionSection": "⚠️ Professional care & counseling"
+    },
+    "shareMessages": {
+      "default": "ADHD tendency checklist result: {type} — how did you score?",
+      "resultType1": "ADHD checklist: Stable attention-regulation type 🟢 Fairly steady focus… A self-check worth trying → how about you?",
+      "resultType2": "ADHD checklist: Situation-dependent focus type 🟡 So relatable—only locked in when it's interesting… Not a diagnosis, just self-insight → how did you score?",
+      "resultType3": "ADHD checklist: Scattered-attention tendency type 🟠 Procrastinate, juggle, can't finish… That's me → how about you?",
+      "resultType4": "ADHD checklist: Polarized focus pattern type 🔶 Hyperfocus on likes, can't start dislikes… Too real → how did you score?",
+      "resultType5": "ADHD checklist: High attention-difficulty type 🔴 This might not be a willpower issue… Worth considering professional support → how about you?",
+      "resultType6": "ADHD checklist: Seek professional confirmation type 🆘 Almost every item… This struggle might not be your fault → try the self-check",
+      "startDefault": "ADHD tendency checklist 🧠 12 items — focus & behavior self-insight",
+      "startKakao": "ADHD tendency checklist 🧠 12 items — focus & behavior self-insight",
+      "startWechat": "ADHD tendency checklist 🧠 12 items — focus & behavior self-insight",
+      "startWhatsapp": "ADHD tendency checklist 🧠 12 items — focus & behavior self-insight",
+      "startTelegram": "ADHD tendency checklist 🧠 12 items — focus & behavior self-insight",
+      "startLine": "ADHD tendency checklist 🧠 12 items — focus & behavior self-insight"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

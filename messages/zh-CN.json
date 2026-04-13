@@ -1719,6 +1719,68 @@
       "popularTestsTop5": "🔥 热门测试推荐前 5"
     }
   },
+  "phase3AdhdTendencyChecklistTest": {
+    "startMessage": {
+      "line1": "ADHD（注意缺陷多动障碍）是一种神经发育状况，必须由合格医疗人员诊断。",
+      "line2": "本清单用于自我观察专注力模式与行为倾向，是自我理解工具。",
+      "line3": "「为什么我总是难以专注？」「为什么重要的事一再拖延？」「为什么一件事总是做不完？」",
+      "line4": "如果你常常这样想，这份清单可能帮助你更了解自己。结果是倾向分析，分数高也不代表确诊 ADHD。",
+      "line5": "回答越诚实，结果越有参考价值。"
+    },
+    "ui": {
+      "startTest": "开始专注力模式测评",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "与朋友分享结果",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "更多测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense 广告区域（ADHD 倾向清单）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "empathyLevel": "分数区间",
+      "characteristics": "要点摘要",
+      "goodMatch": "备注",
+      "badMatch": "参考",
+      "lifeImpactSection": "📋 倾向概览",
+      "workStyleSection": "💡 自我理解与指引",
+      "relationshipStyleSection": "📌 补充说明与建议",
+      "messageToYouSection": "💬 想对你说的话",
+      "recommendedDirectionSection": "⚠️ 专业支持与咨询"
+    },
+    "shareMessages": {
+      "default": "ADHD 倾向清单结果：{type} — 你测出来怎样？",
+      "resultType1": "ADHD 清单：注意调节较稳定型 🟢 专注力相对平稳…值得一试的自测 → 你呢？",
+      "resultType2": "ADHD 清单：情境依赖专注型 🟡 只有感兴趣才投入，太有共鸣…不是诊断，是自我了解 → 你怎样？",
+      "resultType3": "ADHD 清单：易分心倾向型 🟠 拖延、堆事、收尾难…说的就是我 → 你呢？",
+      "resultType4": "ADHD 清单：两极专注型 🔶 喜欢的过度专注，不喜欢的动不了…太真实 → 你怎样？",
+      "resultType5": "ADHD 清单：高相关注意困难型 🔴 可能不是意志力问题…值得考虑专业支持 → 你呢？",
+      "resultType6": "ADHD 清单：建议专业评估型 🆘 几乎条条都中…这份难可能不是你的错 → 来自测看看",
+      "startDefault": "ADHD 倾向清单 🧠 12 题 · 专注力与行为自我了解",
+      "startKakao": "ADHD 倾向清单 🧠 12 题 · 专注力与行为自我了解",
+      "startWechat": "ADHD 倾向清单 🧠 12 题 · 专注力与行为自我了解",
+      "startWhatsapp": "ADHD 倾向清单 🧠 12 题 · 专注力与行为自我了解",
+      "startTelegram": "ADHD 倾向清单 🧠 12 题 · 专注力与行为自我了解",
+      "startLine": "ADHD 倾向清单 🧠 12 题 · 专注力与行为自我了解"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前 5",
+      "popularTestsTop5": "🔥 热门测试推荐前 5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先买了再说！\"",

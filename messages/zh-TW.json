@@ -1726,6 +1726,68 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3AdhdTendencyChecklistTest": {
+    "startMessage": {
+      "line1": "ADHD（注意力不足過動症）是一種神經發展狀況，必須由合格醫療人員診斷。",
+      "line2": "本清單用於自我觀察專注力模式與行為傾向，是自我理解工具。",
+      "line3": "「為什麼我總是難以專注？」「為什麼重要的事一再拖延？」「為什麼一件事總是做不完？」",
+      "line4": "如果你常常這樣想，這份清單可能幫助你更了解自己。結果是傾向分析，分數高也不代表確診 ADHD。",
+      "line5": "回答越誠實，結果越有參考價值。"
+    },
+    "ui": {
+      "startTest": "開始專注力模式測評",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "與朋友分享結果",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "更多測驗",
+      "goToTest": "前往測驗",
+      "adsenseTitle": "AdSense 廣告區域（ADHD 傾向清單）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "empathyLevel": "分數區間",
+      "characteristics": "要點摘要",
+      "goodMatch": "備註",
+      "badMatch": "參考",
+      "lifeImpactSection": "📋 傾向概覽",
+      "workStyleSection": "💡 自我理解與指引",
+      "relationshipStyleSection": "📌 補充說明與建議",
+      "messageToYouSection": "💬 想對你說的話",
+      "recommendedDirectionSection": "⚠️ 專業支援與諮詢"
+    },
+    "shareMessages": {
+      "default": "ADHD 傾向清單結果：{type} — 你測出來怎樣？",
+      "resultType1": "ADHD 清單：注意調節較穩定型 🟢 專注力相對平穩…值得一試的自測 → 你呢？",
+      "resultType2": "ADHD 清單：情境依賴專注型 🟡 只有感興趣才投入，太有共鳴…不是診斷，是自我了解 → 你怎樣？",
+      "resultType3": "ADHD 清單：易分心傾向型 🟠 拖延、堆事、收尾難…說的就是我 → 你呢？",
+      "resultType4": "ADHD 清單：兩極專注型 🔶 喜歡的過度專注，不喜歡的動不了…太真實 → 你怎樣？",
+      "resultType5": "ADHD 清單：高相關注意困難型 🔴 可能不是意志力問題…值得考慮專業支持 → 你呢？",
+      "resultType6": "ADHD 清單：建議專業評估型 🆘 幾乎條條都中…這份難可能不是你的錯 → 來自測看看",
+      "startDefault": "ADHD 傾向清單 🧠 12 題 · 專注力與行為自我了解",
+      "startKakao": "ADHD 傾向清單 🧠 12 題 · 專注力與行為自我了解",
+      "startWechat": "ADHD 傾向清單 🧠 12 題 · 專注力與行為自我了解",
+      "startWhatsapp": "ADHD 傾向清單 🧠 12 題 · 專注力與行為自我了解",
+      "startTelegram": "ADHD 傾向清單 🧠 12 題 · 專注力與行為自我了解",
+      "startLine": "ADHD 傾向清單 🧠 12 題 · 專注力與行為自我了解"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先買了再說！\"",
