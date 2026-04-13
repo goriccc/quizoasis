@@ -1822,6 +1822,58 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3WhichAiAreYouTest": {
+    "startMessage": {
+      "line1": "In a world full of AI, which AI do you resemble?",
+      "line2": "Are you a quick-all-rounder like ChatGPT? Thoughtful and deep like Claude? Versatile and fast like Gemini?",
+      "line3": "Each AI has its own thinking, communication, and problem-solving style—and so do people.",
+      "line4": "We analyze your habits and behavior to find the AI type you match.",
+      "line5": "Start the AI type quiz 🤖 Which AI am I?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Which AI Are You Most Like?)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "aiSubtype": "AI type",
+      "coreStrength": "Core strengths",
+      "caution": "Watch out",
+      "goodMatch": "Great match",
+      "badMatch": "Clash type",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "I'm the {name} type! 🤖 Which AI are you like? Take the test and compare results",
+      "kakao": "I'm the {name} type! 🤖 Which AI are you like? Take the test and compare results",
+      "wechat": "I'm the {name} type! 🤖 Which AI are you like? Take the test and compare results",
+      "whatsapp": "I'm the {name} type! 🤖 Which AI are you like? Take the test and compare results",
+      "telegram": "I'm the {name} type! 🤖 Which AI are you like? Take the test and compare results",
+      "line": "I'm the {name} type! 🤖 Which AI are you like? Take the test and compare results",
+      "startDefault": "Which AI are you most like? 🤖 12-question personality quiz",
+      "startKakao": "Which AI are you most like? 🤖 12-question personality quiz",
+      "startWechat": "Which AI are you most like? 🤖 12-question personality quiz",
+      "startWhatsapp": "Which AI are you most like? 🤖 12-question personality quiz",
+      "startTelegram": "Which AI are you most like? 🤖 12-question personality quiz",
+      "startLine": "Which AI are you most like? 🤖 12-question personality quiz"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Friend",
     "creatorNameLabel": "Your name (shown to friends)",

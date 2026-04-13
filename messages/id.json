@@ -1781,6 +1781,58 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3WhichAiAreYouTest": {
+    "startMessage": {
+      "line1": "Di dunia yang penuh AI, kamu paling mirip AI yang mana?",
+      "line2": "Tipe jawab semua cepat seperti ChatGPT? Berpikir hati-hati dan dalam seperti Claude? Serba bisa dan cepat seperti Gemini?",
+      "line3": "Setiap AI punya cara berpikir, berkomunikasi, dan menyelesaikan masalah—manusia pun begitu.",
+      "line4": "Kami menganalisis kebiasaan berpikir dan pola perilaku untuk menemukan tipe AI yang paling cocok denganmu.",
+      "line5": "Mulai kuis tipe AI 🤖 Aku AI tipe apa?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kamu mirip AI mana?)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "aiSubtype": "Tipe AI",
+      "coreStrength": "Kekuatan inti",
+      "caution": "Perhatian",
+      "goodMatch": "Cocok banget",
+      "badMatch": "Sering bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Aku tipe {name}! 🤖 Kamu mirip AI mana? Yuk tes bareng dan bandingkan hasilnya",
+      "kakao": "Aku tipe {name}! 🤖 Kamu mirip AI mana? Yuk tes bareng dan bandingkan hasilnya",
+      "wechat": "Aku tipe {name}! 🤖 Kamu mirip AI mana? Yuk tes bareng dan bandingkan hasilnya",
+      "whatsapp": "Aku tipe {name}! 🤖 Kamu mirip AI mana? Yuk tes bareng dan bandingkan hasilnya",
+      "telegram": "Aku tipe {name}! 🤖 Kamu mirip AI mana? Yuk tes bareng dan bandingkan hasilnya",
+      "line": "Aku tipe {name}! 🤖 Kamu mirip AI mana? Yuk tes bareng dan bandingkan hasilnya",
+      "startDefault": "Kamu mirip AI mana? 🤖 Kuis kepribadian 12 pertanyaan",
+      "startKakao": "Kamu mirip AI mana? 🤖 Kuis kepribadian 12 pertanyaan",
+      "startWechat": "Kamu mirip AI mana? 🤖 Kuis kepribadian 12 pertanyaan",
+      "startWhatsapp": "Kamu mirip AI mana? 🤖 Kuis kepribadian 12 pertanyaan",
+      "startTelegram": "Kamu mirip AI mana? 🤖 Kuis kepribadian 12 pertanyaan",
+      "startLine": "Kamu mirip AI mana? 🤖 Kuis kepribadian 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Teman",
     "creatorNameLabel": "Nama Anda (ditampilkan ke teman)",

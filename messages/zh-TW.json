@@ -1788,6 +1788,58 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3WhichAiAreYouTest": {
+    "startMessage": {
+      "line1": "AI 滿載的時代，你最像哪一種 AI？",
+      "line2": "像 ChatGPT 一樣什麼都能接？像 Claude 一樣謹慎有深度？還是像 Gemini 一樣多才又快速？",
+      "line3": "不同 AI 有不同的思維方式、溝通風格與解題方式——人也是如此。",
+      "line4": "我們會依你的思考習慣與行為模式，找出與你最像的 AI 類型。",
+      "line5": "開始 AI 類型測驗 🤖 我是哪種 AI？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（你最像哪種 AI？）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "aiSubtype": "AI 類型",
+      "coreStrength": "核心優勢",
+      "caution": "注意事項",
+      "goodMatch": "合拍類型",
+      "badMatch": "易衝突類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我是{name}型！🤖 你像哪種 AI？一起測，對比結果",
+      "kakao": "我是{name}型！🤖 你像哪種 AI？一起測，對比結果",
+      "wechat": "我是{name}型！🤖 你像哪種 AI？一起測，對比結果",
+      "whatsapp": "我是{name}型！🤖 你像哪種 AI？一起測，對比結果",
+      "telegram": "我是{name}型！🤖 你像哪種 AI？一起測，對比結果",
+      "line": "我是{name}型！🤖 你像哪種 AI？一起測，對比結果",
+      "startDefault": "你最像哪種 AI？🤖 12 題性格測驗",
+      "startKakao": "你最像哪種 AI？🤖 12 題性格測驗",
+      "startWechat": "你最像哪種 AI？🤖 12 題性格測驗",
+      "startWhatsapp": "你最像哪種 AI？🤖 12 題性格測驗",
+      "startTelegram": "你最像哪種 AI？🤖 12 題性格測驗",
+      "startLine": "你最像哪種 AI？🤖 12 題性格測驗"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "好友",
     "creatorNameLabel": "你的名字（會顯示給好友）",

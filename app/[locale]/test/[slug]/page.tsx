@@ -57,6 +57,10 @@ import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
+import {
+  phase3WhichAiAreYouQuestions,
+  phase3WhichAiAreYouResults,
+} from '@/lib/phase3WhichAiAreYouData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -229,6 +233,10 @@ const Phase3BestFriendQuizTestClient = dynamic(
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
   () => import('@/components/Phase3CoupleBreakupRiskTestClient'),
+  { ssr: false }
+);
+const Phase3WhichAiAreYouTestClient = dynamic(
+  () => import('@/components/Phase3WhichAiAreYouTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -666,6 +674,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛', '情侶', '關係'],
         vi: ['Yêu đương', 'Cặp đôi', 'Quan hệ'],
         id: ['Pacaran', 'Pasangan', 'Hubungan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-which-ai-are-you') {
+    test = {
+      slug: 'phase3-which-ai-are-you',
+      title: {
+        ko: '나는 어떤 AI를 닮았을까?',
+        en: 'Which AI Are You Most Like?',
+        ja: '私はどのAIに似ている？',
+        'zh-CN': '我最像哪种 AI？',
+        'zh-TW': '我最像哪種 AI？',
+        vi: 'Tôi giống AI nào nhất?',
+        id: 'Aku paling mirip AI yang mana?',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 AI 성향 매칭 6유형. ChatGPT·Claude·Gemini… 나는 어떤 AI일까? #AI #성격 #트렌드 #재미',
+        en: '12 multiple-choice questions — 6 AI personality matches. Which AI are you? #AI #personality #trend #fun',
+        ja: '12問4択で見るAIタイプ6種。あなたはどのAIタイプ？#AI #性格 #トレンド',
+        'zh-CN': '12 道四选一，六种 AI 人格匹配。你像哪种 AI？#AI #性格 #趋势',
+        'zh-TW': '12 題四選一，六種 AI 人格配對。你像哪種 AI？#AI #性格 #趨勢',
+        vi: '12 câu trắc nghiệm — 6 kiểu khớp tính cách AI. Bạn giống AI nào? #AI #tính cách #xu hướng',
+        id: '12 pertanyaan pilihan ganda — 6 tipe cocok AI. Kamu mirip AI mana? #AI #kepribadian #tren',
+      },
+      thumbnail: 'p3_test_which_ai_are_you.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['AI', '성격', '트렌드', '재미'],
+        en: ['AI', 'Personality', 'Trend', 'Fun'],
+        ja: ['AI', '性格', 'トレンド', 'エンタメ'],
+        'zh-CN': ['AI', '性格', '趋势', '趣味'],
+        'zh-TW': ['AI', '性格', '趨勢', '趣味'],
+        vi: ['AI', 'Tính cách', 'Xu hướng', 'Giải trí'],
+        id: ['AI', 'Kepribadian', 'Tren', 'Seru'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2636,6 +2681,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3CoupleBreakupRiskQuestions}
           results={phase3CoupleBreakupRiskResults}
           questionCount={phase3CoupleBreakupRiskQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-which-ai-are-you') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-which-ai-are-you',
+      title: {
+        ko: '나는 어떤 AI를 닮았을까?',
+        en: 'Which AI Are You Most Like?',
+        ja: '私はどのAIに似ている？',
+        'zh-CN': '我最像哪种 AI？',
+        'zh-TW': '我最像哪種 AI？',
+        vi: 'Tôi giống AI nào nhất?',
+        id: 'Aku paling mirip AI yang mana?',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 AI 성향 매칭 6유형. ChatGPT·Claude·Gemini… 나는 어떤 AI일까? #AI #성격 #트렌드 #재미',
+        en: '12 multiple-choice questions — 6 AI personality matches. Which AI are you? #AI #personality #trend #fun',
+        ja: '12問4択で見るAIタイプ6種。あなたはどのAIタイプ？#AI #性格 #トレンド',
+        'zh-CN': '12 道四选一，六种 AI 人格匹配。你像哪种 AI？#AI #性格 #趋势',
+        'zh-TW': '12 題四選一，六種 AI 人格配對。你像哪種 AI？#AI #性格 #趨勢',
+        vi: '12 câu trắc nghiệm — 6 kiểu khớp tính cách AI. Bạn giống AI nào? #AI #tính cách #xu hướng',
+        id: '12 pertanyaan pilihan ganda — 6 tipe cocok AI. Kamu mirip AI mana? #AI #kepribadian #tren',
+      },
+      thumbnail: 'p3_test_which_ai_are_you.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['AI', '성격', '트렌드', '재미'],
+        en: ['AI', 'Personality', 'Trend', 'Fun'],
+        ja: ['AI', '性格', 'トレンド', 'エンタメ'],
+        'zh-CN': ['AI', '性格', '趋势', '趣味'],
+        'zh-TW': ['AI', '性格', '趨勢', '趣味'],
+        vi: ['AI', 'Tính cách', 'Xu hướng', 'Giải trí'],
+        id: ['AI', 'Kepribadian', 'Tren', 'Seru'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3WhichAiAreYouTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3WhichAiAreYouQuestions}
+          results={phase3WhichAiAreYouResults}
+          questionCount={phase3WhichAiAreYouQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

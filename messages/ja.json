@@ -1782,6 +1782,58 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3WhichAiAreYouTest": {
+    "startMessage": {
+      "line1": "AIだらけの今、あなたはどのAIに似ている？",
+      "line2": "ChatGPTみたいに何でもサクッと？Claudeみたいに慎重で深い？Geminiみたいに多才で速い？",
+      "line3": "AIごとに考え方や話し方、問題の解き方が違うように、人にもタイプがあります。",
+      "line4": "思考のクセと行動パターンから、あなたに似たAIタイプを診断します。",
+      "line5": "AIタイプ診断スタート 🤖 私はどのAIタイプ？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（どのAIに似ている？）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "aiSubtype": "AIタイプ",
+      "coreStrength": "コア強み",
+      "caution": "注意点",
+      "goodMatch": "相性バッチリ",
+      "badMatch": "ぶつかりやすいタイプ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私は{name}タイプ！🤖 あなたはどのAI？一緒に診断して結果を比べよう",
+      "kakao": "私は{name}タイプ！🤖 あなたはどのAI？一緒に診断して結果を比べよう",
+      "wechat": "私は{name}タイプ！🤖 あなたはどのAI？一緒に診断して結果を比べよう",
+      "whatsapp": "私は{name}タイプ！🤖 あなたはどのAI？一緒に診断して結果を比べよう",
+      "telegram": "私は{name}タイプ！🤖 あなたはどのAI？一緒に診断して結果を比べよう",
+      "line": "私は{name}タイプ！🤖 あなたはどのAI？一緒に診断して結果を比べよう",
+      "startDefault": "どのAIに似ている？🤖 性格診断12問",
+      "startKakao": "どのAIに似ている？🤖 性格診断12問",
+      "startWechat": "どのAIに似ている？🤖 性格診断12問",
+      "startWhatsapp": "どのAIに似ている？🤖 性格診断12問",
+      "startTelegram": "どのAIに似ている？🤖 性格診断12問",
+      "startLine": "どのAIに似ている？🤖 性格診断12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "友だち",
     "creatorNameLabel": "あなたの名前（友だちに表示されます）",

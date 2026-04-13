@@ -1781,6 +1781,58 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3WhichAiAreYouTest": {
+    "startMessage": {
+      "line1": "Thời đại tràn ngập AI — bạn giống AI nào nhất?",
+      "line2": "Kiểu trả lời nhanh mọi thứ như ChatGPT? Cẩn trọng, sâu sắc như Claude? Đa tài, nhanh như Gemini?",
+      "line3": "Mỗi AI có cách nghĩ, cách nói và cách xử lý vấn đề riêng — con người cũng vậy.",
+      "line4": "Chúng tôi phân tích thói quen suy nghĩ và hành vi để tìm kiểu AI bạn giống nhất.",
+      "line5": "Bắt đầu quiz kiểu AI 🤖 Tôi là AI kiểu nào?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Bạn giống AI nào?)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "aiSubtype": "Kiểu AI",
+      "coreStrength": "Điểm mạnh cốt lõi",
+      "caution": "Lưu ý",
+      "goodMatch": "Hợp cạ",
+      "badMatch": "Dễ xung đột",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Tôi là kiểu {name}! 🤖 Bạn giống AI nào? Cùng làm test và so kết quả nhé",
+      "kakao": "Tôi là kiểu {name}! 🤖 Bạn giống AI nào? Cùng làm test và so kết quả nhé",
+      "wechat": "Tôi là kiểu {name}! 🤖 Bạn giống AI nào? Cùng làm test và so kết quả nhé",
+      "whatsapp": "Tôi là kiểu {name}! 🤖 Bạn giống AI nào? Cùng làm test và so kết quả nhé",
+      "telegram": "Tôi là kiểu {name}! 🤖 Bạn giống AI nào? Cùng làm test và so kết quả nhé",
+      "line": "Tôi là kiểu {name}! 🤖 Bạn giống AI nào? Cùng làm test và so kết quả nhé",
+      "startDefault": "Bạn giống AI nào nhất? 🤖 Quiz tính cách 12 câu",
+      "startKakao": "Bạn giống AI nào nhất? 🤖 Quiz tính cách 12 câu",
+      "startWechat": "Bạn giống AI nào nhất? 🤖 Quiz tính cách 12 câu",
+      "startWhatsapp": "Bạn giống AI nào nhất? 🤖 Quiz tính cách 12 câu",
+      "startTelegram": "Bạn giống AI nào nhất? 🤖 Quiz tính cách 12 câu",
+      "startLine": "Bạn giống AI nào nhất? 🤖 Quiz tính cách 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Bạn",
     "creatorNameLabel": "Tên của bạn (hiển thị cho bạn bè)",
