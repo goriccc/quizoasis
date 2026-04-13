@@ -1861,6 +1861,100 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3CoupleBreakupRiskTest": {
+    "defaultHostName": "Pasangan",
+    "creatorNameLabel": "Namamu (ditampilkan ke pacar)",
+    "creatorNamePlaceholder": "Mis. Budi",
+    "creatorStart": {
+      "line1": "Sejujurnya—apakah kita pasangan yang sehat?",
+      "line2": "Perasaan cinta saja tidak cukup. Pola pacaran, cara berkonflik, gaya komunikasi—ketiganya harus cocok; kalau tidak, meski saling mencinta bisa habis tenaga.",
+      "line3": "Kamu jawab dulu, lalu kirim link ke pacar. Saat jawaban berdua digabung, risiko pasangan yang sebenarnya baru terlihat.",
+      "line4": "Hasilnya bisa manis atau menyakitkan. Siap?",
+      "line5": "Mulai cek risiko pasangan 💔",
+      "howToTitle": "Alur",
+      "howToStep1": "1️⃣ Pasangan A (kamu) jawab jujur 12 pertanyaan",
+      "howToStep2": "2️⃣ Salin [link undangan pacar] atau kirim lewat sosmed",
+      "howToStep3": "3️⃣ Pasangan B menjawab pertanyaan yang sama dari sudut pandangnya",
+      "howToStep4": "4️⃣ Lihat total skor, GAP, dan beda per area · gunakan [Salin ringkasan] untuk berbagi"
+    },
+    "friendStart": {
+      "title": "{name} mengirimmu tes risiko pasangan",
+      "line1": "Jawab dengan jujur. Hasil sebenarnya hanya muncul jika kalian berdua selesai.",
+      "line2": "Total 12 pertanyaan. Jangan dibagus-baguskan—pilih sesuai kenyataan.",
+      "line3": "Itu hadiah paling jujur untuk hubungan kalian."
+    },
+    "creatorDone": {
+      "title": "Link undangan pacar sudah siap!",
+      "hint": "Salin link di bawah dan kirim ke pacar.\nSetelah mereka selesai, total skor dan level risiko akan tampil. Tidak ada notifikasi otomatis—cek hasil bersama.",
+      "makeAnother": "Ulang dari awal"
+    },
+    "scoreLineCombined": "Total skor pasangan {combined} (maks 72)",
+    "scoreLineIndividuals": "Pasangan A {scoreA} · Pasangan B {scoreB} (masing-masing maks 36)",
+    "scoreLineGap": "Selisih skor (GAP) {gap}",
+    "gapLabels": {
+      "gap0": "Kecenderungan kalian sangat mirip",
+      "gap1": "Ada perbedaan, tapi masih bisa diselaraskan",
+      "gap2": "Salah satu mungkin jauh lebih menderita",
+      "gap3": "Kalian melihat hubungan sangat berbeda—perlu bicara segera"
+    },
+    "areaDiffTitle": "📊 Skor per area (💕 pacaran · ⚡ konflik · 💬 komunikasi)",
+    "areaPairScores": "A {a} / B {b}",
+    "areaGap": "Selisih area {g}",
+    "areaLabels": {
+      "romance": "Pola pacaran",
+      "conflict": "Gaya konflik",
+      "communication": "Komunikasi"
+    },
+    "hostNotifyTitle": "Ringkasan untuk pasangan A (salin)",
+    "hostNotifyBody": "[Tes risiko pasangan — {name}]\nPasangan A {scoreA} / B {scoreB}\nTotal {combined} · GAP {gap}\nHasil: {type}",
+    "copyHostNotify": "Salin ringkasan",
+    "ui": {
+      "startTest": "Mulai cek risiko pasangan",
+      "friendStartCta": "Mulai tes 🎯",
+      "shareWithFriends": "Coba dengan teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulang",
+      "otherTests": "Tes lain",
+      "goToTest": "Ke tes",
+      "adsenseTitle": "AdSense (Apakah kita putus? Risiko pasangan)",
+      "linkCopy": "Salin tautan",
+      "copyChallengeLink": "Salin tautan undangan pacar",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "levelLabel": "🚦 Tingkat risiko",
+      "oneLiner": "💬 Satu kalimat",
+      "prescription": "💡 Saran untuk pasangan"
+    },
+    "shareMessages": {
+      "creatorKakao": "Kita coba tes risiko pasangan 💔 Hasilnya… harus coba sendiri—ajak pacarmu!",
+      "coupleResult": "Risiko pasangan kita: {grade}! 💔 Peluang putus {percent}%. Kita masih oke kan…? Kalian berapa %?",
+      "startDefault": "Peluang putus? Tes risiko pasangan 💔",
+      "startKakao": "Peluang putus? Tes risiko pasangan 💔",
+      "startWechat": "Peluang putus? Tes risiko pasangan 💔",
+      "startWhatsapp": "Peluang putus? Tes risiko pasangan 💔",
+      "startTelegram": "Peluang putus? Tes risiko pasangan 💔",
+      "startLine": "Peluang putus? Tes risiko pasangan 💔"
+    },
+    "alerts": {
+      "nameRequired": "Masukkan setidaknya satu huruf untuk nama.",
+      "invalidLink": "Tautan undangan tidak valid.",
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk, coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Hah? Cantik. Beli dulu!\"",

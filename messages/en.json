@@ -1902,6 +1902,100 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3CoupleBreakupRiskTest": {
+    "defaultHostName": "Partner",
+    "creatorNameLabel": "Your name (shown to your partner)",
+    "creatorNamePlaceholder": "e.g. Alex",
+    "creatorStart": {
+      "line1": "Honestly—are we a healthy couple?",
+      "line2": "Butterflies alone can’t tell you everything. Dating patterns, how you fight, and how you communicate—if these three don’t fit, even deep love can burn you out.",
+      "line3": "You answer first, then send the link to your partner. When both answers are combined, your real couple risk score is revealed.",
+      "line4": "The result might be sweet—or hard to hear. Ready?",
+      "line5": "Start the couple risk check 💔",
+      "howToTitle": "How it works",
+      "howToStep1": "1️⃣ Partner A (you) answers all 12 questions honestly",
+      "howToStep2": "2️⃣ Copy the partner invite link or send it via KakaoTalk / social apps",
+      "howToStep3": "3️⃣ Partner B answers the same questions from their own perspective",
+      "howToStep4": "4️⃣ See combined score, GAP, and area breakdown · use [Copy summary] to share the result"
+    },
+    "friendStart": {
+      "title": "{name} sent you the Couple Risk Test",
+      "line1": "Answer honestly. The real result only appears when both of you have answered.",
+      "line2": "12 questions total. Don’t sugarcoat—answer as things really are.",
+      "line3": "That honesty is the best gift for your relationship."
+    },
+    "creatorDone": {
+      "title": "Your partner invite link is ready!",
+      "hint": "Copy the link below and send it to your partner.\nWhen they finish, your combined score and risk level will show. There’s no live notification—check the result together.",
+      "makeAnother": "Start over"
+    },
+    "scoreLineCombined": "Combined couple score {combined} (max 72)",
+    "scoreLineIndividuals": "Partner A {scoreA} · Partner B {scoreB} (max 36 each)",
+    "scoreLineGap": "Score gap (GAP) {gap}",
+    "gapLabels": {
+      "gap0": "You’re very similar in tendency",
+      "gap1": "Some difference—but you can adjust",
+      "gap2": "One of you may be struggling much more",
+      "gap3": "You see the relationship very differently—talk soon"
+    },
+    "areaDiffTitle": "📊 Scores by area (💕 dating · ⚡ conflict · 💬 communication)",
+    "areaPairScores": "A {a} / B {b}",
+    "areaGap": "Area gap {g}",
+    "areaLabels": {
+      "romance": "Dating patterns",
+      "conflict": "Conflict style",
+      "communication": "Communication"
+    },
+    "hostNotifyTitle": "Summary for Partner A (copy)",
+    "hostNotifyBody": "[Couple Risk Test — {name}]\nPartner A {scoreA} / B {scoreB}\nCombined {combined} · GAP {gap}\nResult: {type}",
+    "copyHostNotify": "Copy summary",
+    "ui": {
+      "startTest": "Start couple risk check",
+      "friendStartCta": "Start the test 🎯",
+      "shareWithFriends": "Share with friends",
+      "shareResultWithFriends": "Share result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Try again",
+      "otherTests": "More tests",
+      "goToTest": "Go to test",
+      "adsenseTitle": "AdSense (Will we break up? Couple risk)",
+      "linkCopy": "Copy link",
+      "copyChallengeLink": "Copy partner invite link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "levelLabel": "🚦 Risk level",
+      "oneLiner": "💬 One-liner",
+      "prescription": "💡 Couple tips"
+    },
+    "shareMessages": {
+      "creatorKakao": "We tried the couple risk test 💔 You’ll have to take it to see the result—try it with your partner!",
+      "coupleResult": "Our couple risk: {grade}! 💔 Breakup chance {percent}%. We’re still okay… right? What’s your couple’s %?",
+      "startDefault": "Will we break up? Couple risk test 💔",
+      "startKakao": "Will we break up? Couple risk test 💔",
+      "startWechat": "Will we break up? Couple risk test 💔",
+      "startWhatsapp": "Will we break up? Couple risk test 💔",
+      "startTelegram": "Will we break up? Couple risk test 💔",
+      "startLine": "Will we break up? Couple risk test 💔"
+    },
+    "alerts": {
+      "nameRequired": "Please enter at least one character for your name.",
+      "invalidLink": "This invite link is not valid.",
+      "linkCopied": "Link copied!",
+      "resultCopied": "Copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Huh? It's pretty. Just buy it!\"",

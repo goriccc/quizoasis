@@ -1861,6 +1861,100 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3CoupleBreakupRiskTest": {
+    "defaultHostName": "Đối phương",
+    "creatorNameLabel": "Tên của bạn (hiển thị cho người yêu)",
+    "creatorNamePlaceholder": "VD: Minh",
+    "creatorStart": {
+      "line1": "Thật lòng—chúng ta có phải cặp đôi lành mạnh không?",
+      "line2": "Chỉ rung động thôi chưa đủ. Kiểu yêu, cách cãi nhau, phong cách giao tiếp—ba thứ này không khớp thì dù yêu sâu vẫn có thể kiệt sức.",
+      "line3": "Bạn trả lời trước, rồi gửi link cho người yêu. Khi cả hai hoàn thành, điểm rủi ro thật của cặp đôi mới hiện ra.",
+      "line4": "Kết quả có thể ngọt ngào hoặc khó nghe. Bạn sẵn sàng chưa?",
+      "line5": "Bắt đầu đo mức rủi ro cặp đôi 💔",
+      "howToTitle": "Cách làm",
+      "howToStep1": "1️⃣ Người A (bạn) trả lời trung thực 12 câu",
+      "howToStep2": "2️⃣ Sao chép [link mời người yêu] hoặc gửi qua mạng xã hội",
+      "howToStep3": "3️⃣ Người B trả lời cùng bộ câu hỏi theo góc nhìn của họ",
+      "howToStep4": "4️⃣ Xem tổng điểm, GAP và chênh lệch từng khu vực · dùng [Sao chép tóm tắt] để chia sẻ"
+    },
+    "friendStart": {
+      "title": "{name} đã gửi bạn bài test rủi ro cặp đôi",
+      "line1": "Hãy trả lời thật lòng. Chỉ khi cả hai xong mới có kết quả thật.",
+      "line2": "Tổng 12 câu. Đừng đẹp hóa—chọn đúng như thực tế.",
+      "line3": "Đó là món quà chân thành nhất cho mối quan hệ."
+    },
+    "creatorDone": {
+      "title": "Link mời người yêu đã sẵn sàng!",
+      "hint": "Sao chép link bên dưới và gửi cho người yêu.\nKhi họ xong, tổng điểm và mức rủi ro sẽ hiện. Không có thông báo tự động—hãy xem kết quả cùng nhau.",
+      "makeAnother": "Làm lại từ đầu"
+    },
+    "scoreLineCombined": "Tổng điểm cặp đôi {combined} (tối đa 72)",
+    "scoreLineIndividuals": "Người A {scoreA} · Người B {scoreB} (mỗi người tối đa 36)",
+    "scoreLineGap": "Chênh điểm (GAP) {gap}",
+    "gapLabels": {
+      "gap0": "Hai người khá giống nhau về xu hướng",
+      "gap1": "Có khác biệt nhưng vẫn có thể điều chỉnh",
+      "gap2": "Một người có thể đang chịu đựng nhiều hơn hẳn",
+      "gap3": "Hai người nhìn nhận mối quan hệ rất khác—cần nói chuyện gấp"
+    },
+    "areaDiffTitle": "📊 Điểm theo khu vực (💕 yêu đương · ⚡ xung đột · 💬 giao tiếp)",
+    "areaPairScores": "A {a} / B {b}",
+    "areaGap": "Chênh lệch khu vực {g}",
+    "areaLabels": {
+      "romance": "Kiểu yêu",
+      "conflict": "Cách xung đột",
+      "communication": "Giao tiếp"
+    },
+    "hostNotifyTitle": "Tóm tắt gửi người A (sao chép)",
+    "hostNotifyBody": "[Test rủi ro cặp đôi — {name}]\nNgười A {scoreA} / B {scoreB}\nTổng {combined} · GAP {gap}\nKết quả: {type}",
+    "copyHostNotify": "Sao chép tóm tắt",
+    "ui": {
+      "startTest": "Bắt đầu đo rủi ro cặp đôi",
+      "friendStartCta": "Bắt đầu test 🎯",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Bài test khác",
+      "goToTest": "Vào test",
+      "adsenseTitle": "AdSense (Chúng ta có chia tay? Rủi ro cặp đôi)",
+      "linkCopy": "Sao chép link",
+      "copyChallengeLink": "Sao chép link mời người yêu",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "levelLabel": "🚦 Mức rủi ro",
+      "oneLiner": "💬 Một câu tóm tắt",
+      "prescription": "💡 Gợi ý cho cặp đôi"
+    },
+    "shareMessages": {
+      "creatorKakao": "Tụi mình làm test rủi ro cặp đôi rồi 💔 Kết quả thì… phải tự làm mới biết—thử với người yêu đi!",
+      "coupleResult": "Mức rủi ro cặp đôi của tụi mình: {grade}! 💔 Xác suất chia tay {percent}%. Tụi mình vẫn ổn chứ…? Cặp bạn bao nhiêu %?",
+      "startDefault": "Chúng ta có chia tay? Test rủi ro cặp đôi 💔",
+      "startKakao": "Chúng ta có chia tay? Test rủi ro cặp đôi 💔",
+      "startWechat": "Chúng ta có chia tay? Test rủi ro cặp đôi 💔",
+      "startWhatsapp": "Chúng ta có chia tay? Test rủi ro cặp đôi 💔",
+      "startTelegram": "Chúng ta có chia tay? Test rủi ro cặp đôi 💔",
+      "startLine": "Chúng ta có chia tay? Test rủi ro cặp đôi 💔"
+    },
+    "alerts": {
+      "nameRequired": "Vui lòng nhập ít nhất một ký tự cho tên.",
+      "invalidLink": "Link mời không hợp lệ.",
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép vào clipboard!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk, thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"Ồ? Đẹp quá. Cứ mua đã!\"",

@@ -1123,6 +1123,100 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3CoupleBreakupRiskTest": {
+    "defaultHostName": "상대",
+    "creatorNameLabel": "내 이름 (연인에게 표시됩니다)",
+    "creatorNamePlaceholder": "예: 민수",
+    "creatorStart": {
+      "line1": "우리, 솔직히 괜찮은 커플인가요?",
+      "line2": "설레는 감정만으로는 알 수 없는 것들이 있습니다. 연애 패턴, 갈등을 다루는 방식, 의사소통 스타일. 이 세 가지가 맞지 않는 커플은 아무리 사랑해도 결국 지치게 됩니다.",
+      "line3": "먼저 당신이 답하고, 연인에게 링크를 보내세요. 두 사람의 답이 합쳐지면 우리 커플의 진짜 위험도가 공개됩니다.",
+      "line4": "달콤한 결과가 나올 수도, 뼈아픈 결과가 나올 수도 있습니다. 준비되셨나요?",
+      "line5": "커플 위험도 측정 시작 💔",
+      "howToTitle": "진행 방법",
+      "howToStep1": "1️⃣ 파트너 A(나)가 12문항에 솔직히 답하기",
+      "howToStep2": "2️⃣ [연인 초대 링크 복사] 또는 카카오톡·SNS로 연인에게 전달",
+      "howToStep3": "3️⃣ 파트너 B(연인)가 동일 문항에 본인 기준으로 답하기",
+      "howToStep4": "4️⃣ 합산 점수·GAP·영역별 차이로 커플 위험도 확인 · [요약 복사하기]로 결과 공유"
+    },
+    "friendStart": {
+      "title": "{name}님이 우리 커플 위험도 테스트를 보냈습니다.",
+      "line1": "솔직하게 답해주세요. 두 사람의 답이 합쳐져야 진짜 결과가 나옵니다.",
+      "line2": "총 12문항입니다. 포장하지 말고, 있는 그대로 답변해 주세요.",
+      "line3": "그게 우리 관계를 위한 가장 솔직한 선물입니다."
+    },
+    "creatorDone": {
+      "title": "연인 초대 링크가 준비됐어요!",
+      "hint": "아래 링크를 복사해 연인에게 보내세요.\n상대가 테스트를 마치면 커플 합산 점수와 위험도 등급이 공개됩니다. 실시간 자동 알림은 없으니, 결과를 함께 확인해 보세요.",
+      "makeAnother": "처음부터 다시 하기"
+    },
+    "scoreLineCombined": "커플 합산 점수 {combined}점 (최대 72점)",
+    "scoreLineIndividuals": "파트너 A {scoreA}점 · 파트너 B {scoreB}점 (각 최대 36점)",
+    "scoreLineGap": "점수 차이(GAP) {gap}점",
+    "gapLabels": {
+      "gap0": "두 사람 성향이 매우 유사해요",
+      "gap1": "어느 정도 차이는 있지만 조율 가능해요",
+      "gap2": "한쪽이 훨씬 더 힘들어할 수 있어요",
+      "gap3": "관계를 매우 다르게 느끼고 있어요 — 대화가 시급해요"
+    },
+    "areaDiffTitle": "📊 영역별 점수 (💕 연애 패턴 · ⚡ 갈등 · 💬 의사소통)",
+    "areaPairScores": "A {a}점 / B {b}점",
+    "areaGap": "영역 차이 {g}점",
+    "areaLabels": {
+      "romance": "연애 패턴",
+      "conflict": "갈등 방식",
+      "communication": "의사소통"
+    },
+    "hostNotifyTitle": "파트너 A에게 보낼 요약 (복사)",
+    "hostNotifyBody": "[{name} 커플 위험도 테스트]\n파트너 A {scoreA}점 / B {scoreB}점\n합산 {combined}점 · GAP {gap}점\n결과: {type}",
+    "copyHostNotify": "요약 복사하기",
+    "ui": {
+      "startTest": "커플 위험도 측정 시작",
+      "friendStartCta": "테스트 시작하기 🎯",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (우리 헤어질 확률? 커플 위험도)",
+      "linkCopy": "링크 복사",
+      "copyChallengeLink": "연인 초대 링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "levelLabel": "🚦 위험도 등급",
+      "oneLiner": "💬 한 줄 평",
+      "prescription": "💡 커플 처방"
+    },
+    "shareMessages": {
+      "creatorKakao": "우리 커플 위험도 테스트 해봤어 💔 결과는... 직접 해봐야 알아. 연인이랑 같이 해봐!",
+      "coupleResult": "우리 커플 위험도 {grade}! 💔 헤어질 확률 {percent}%. 우리 아직 괜찮은 거지...? 너희 커플은 몇 %야?",
+      "startDefault": "우리 헤어질 확률? 커플 위험도 테스트 💔",
+      "startKakao": "우리 헤어질 확률? 커플 위험도 테스트 💔",
+      "startWechat": "우리 헤어질 확률? 커플 위험도 테스트 💔",
+      "startWhatsapp": "우리 헤어질 확률? 커플 위험도 테스트 💔",
+      "startTelegram": "우리 헤어질 확률? 커플 위험도 테스트 💔",
+      "startLine": "우리 헤어질 확률? 커플 위험도 테스트 💔"
+    },
+    "alerts": {
+      "nameRequired": "이름을 한 글자 이상 입력해 주세요.",
+      "invalidLink": "유효하지 않은 초대 링크입니다.",
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"어? 예쁘다. 일단 사!\"",

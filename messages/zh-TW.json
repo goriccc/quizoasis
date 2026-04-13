@@ -1868,6 +1868,100 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3CoupleBreakupRiskTest": {
+    "defaultHostName": "對方",
+    "creatorNameLabel": "你的名字（會顯示給戀人）",
+    "creatorNamePlaceholder": "例如：小明",
+    "creatorStart": {
+      "line1": "說真的，我們是健康的伴侶嗎？",
+      "line2": "光靠心動看不透一切。戀愛模式、處理衝突的方式、溝通風格——這三樣不合，再愛也會累垮。",
+      "line3": "你先作答，再把連結傳給戀人。兩人的答案合併後，才會顯示真實的伴侶風險度。",
+      "line4": "結果可能很甜，也可能很刺耳。準備好了嗎？",
+      "line5": "開始伴侶風險測評 💔",
+      "howToTitle": "流程說明",
+      "howToStep1": "1️⃣ 伴侶A（你）誠實回答12題",
+      "howToStep2": "2️⃣ 複製【戀人邀請連結】或透過社群軟體傳給對方",
+      "howToStep3": "3️⃣ 伴侶B（戀人）用同一套題目、以自己的視角作答",
+      "howToStep4": "4️⃣ 查看總分、GAP與各領域差異 · 用【複製摘要】分享結果"
+    },
+    "friendStart": {
+      "title": "{name} 向你傳送了伴侶風險測驗",
+      "line1": "請誠實作答。只有兩人都完成，才會出現真實結果。",
+      "line2": "共12題。不要包裝，依真實情況選擇。",
+      "line3": "這是對關係最誠實的禮物。"
+    },
+    "creatorDone": {
+      "title": "戀人邀請連結已準備好！",
+      "hint": "複製下方連結傳給戀人。\n對方完成後會顯示兩人總分與風險等級。沒有即時推播，請一起查看結果。",
+      "makeAnother": "從頭再來"
+    },
+    "scoreLineCombined": "伴侶總分 {combined}（最高72）",
+    "scoreLineIndividuals": "伴侶A {scoreA} · 伴侶B {scoreB}（各最高36）",
+    "scoreLineGap": "分數差距（GAP）{gap}",
+    "gapLabels": {
+      "gap0": "兩人傾向非常相似",
+      "gap1": "有一定差異，但可以磨合",
+      "gap2": "其中一方可能辛苦得多",
+      "gap3": "對關係的感受差異很大——需要儘快溝通"
+    },
+    "areaDiffTitle": "📊 各領域分數（💕 戀愛 · ⚡ 衝突 · 💬 溝通）",
+    "areaPairScores": "A {a} / B {b}",
+    "areaGap": "領域差距 {g}",
+    "areaLabels": {
+      "romance": "戀愛模式",
+      "conflict": "衝突方式",
+      "communication": "溝通"
+    },
+    "hostNotifyTitle": "傳給伴侶A的摘要（複製）",
+    "hostNotifyBody": "[伴侶風險測驗 · {name}]\n伴侶A {scoreA} / B {scoreB}\n總分 {combined} · GAP {gap}\n結果：{type}",
+    "copyHostNotify": "複製摘要",
+    "ui": {
+      "startTest": "開始伴侶風險測評",
+      "friendStartCta": "開始測驗 🎯",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "更多測驗",
+      "goToTest": "進入測驗",
+      "adsenseTitle": "AdSense（我們會分手嗎？伴侶風險）",
+      "linkCopy": "複製連結",
+      "copyChallengeLink": "複製戀人邀請連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "levelLabel": "🚦 風險等級",
+      "oneLiner": "💬 一句話點評",
+      "prescription": "💡 伴侶建議"
+    },
+    "shareMessages": {
+      "creatorKakao": "我們做了伴侶風險測驗 💔 結果嘛…要自己測才知道，快和戀人一起試試！",
+      "coupleResult": "我們的伴侶風險是{grade}！💔 分手機率{percent}%。我們還行吧…？你們情侶是多少%？",
+      "startDefault": "我們會分手嗎？伴侶風險測驗 💔",
+      "startKakao": "我們會分手嗎？伴侶風險測驗 💔",
+      "startWechat": "我們會分手嗎？伴侶風險測驗 💔",
+      "startWhatsapp": "我們會分手嗎？伴侶風險測驗 💔",
+      "startTelegram": "我們會分手嗎？伴侶風險測驗 💔",
+      "startLine": "我們會分手嗎？伴侶風險測驗 💔"
+    },
+    "alerts": {
+      "nameRequired": "請至少輸入一個字元作為名字。",
+      "invalidLink": "此邀請連結無效。",
+      "linkCopied": "連結已複製！",
+      "resultCopied": "已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase2ImpulseBuyingTest": {
     "startMessage": {
       "line1": "\"咦？好漂亮。先買了再說！\"",
