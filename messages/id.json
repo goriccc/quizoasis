@@ -1886,6 +1886,59 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3YoutubeAlgorithmKnowsTest": {
+    "startMessage": {
+      "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",
+      "line2": "Pernah video yang ingin kamu tonton muncul di rekomendasi—padahal kamu tidak pernah mencarinya?",
+      "line3": "Nonton sendirian dini hari dan merasa algoritmanya paham kamu? YouTube mengingat pola menontonmu, saat jeda, dan adegan yang kamu ulang.",
+      "line4": "Jawab 12 pertanyaan tentang cara kamu memakai YouTube, dan kami akan membongkar tipe orang seperti apa algoritma mengelompokkanmu.",
+      "line5": "Ungkap identitas algoritmaku 📺 Mulai kuis tipe YouTube"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Algoritma YouTube-ku tahu sesuatu)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "algorithmClassification": "⚙️ Tipe algoritma",
+      "youtubeSeesMe": "🎯 Cara YouTube membacamu",
+      "exampleVideos": "🎬 Contoh video yang disarankan",
+      "hiddenInterest": "🔓 Minat tersembunyi terbongkar",
+      "goodMatch": "Tipe yang cocok",
+      "badMatch": "Tipe berlawanan",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Algoritma YouTube menempatkanku sebagai 「{name}」 📺 Merinding… Kamu tipe apa? Coba dibongkar algoritmanya juga.",
+      "kakao": "Algoritma YouTube menempatkanku sebagai 「{name}」 📺 Merinding… Kamu tipe apa? Coba dibongkar algoritmanya juga.",
+      "wechat": "Algoritma YouTube menempatkanku sebagai 「{name}」 📺 Merinding… Kamu tipe apa? Coba dibongkar algoritmanya juga.",
+      "whatsapp": "Algoritma YouTube menempatkanku sebagai 「{name}」 📺 Merinding… Kamu tipe apa? Coba dibongkar algoritmanya juga.",
+      "telegram": "Algoritma YouTube menempatkanku sebagai 「{name}」 📺 Merinding… Kamu tipe apa? Coba dibongkar algoritmanya juga.",
+      "line": "Algoritma YouTube menempatkanku sebagai 「{name}」 📺 Merinding… Kamu tipe apa? Coba dibongkar algoritmanya juga.",
+      "startDefault": "Algoritma YouTube-ku tahu sesuatu 📺 Kuis tipe 12 pertanyaan",
+      "startKakao": "Algoritma YouTube-ku tahu sesuatu 📺 Kuis tipe 12 pertanyaan",
+      "startWechat": "Algoritma YouTube-ku tahu sesuatu 📺 Kuis tipe 12 pertanyaan",
+      "startWhatsapp": "Algoritma YouTube-ku tahu sesuatu 📺 Kuis tipe 12 pertanyaan",
+      "startTelegram": "Algoritma YouTube-ku tahu sesuatu 📺 Kuis tipe 12 pertanyaan",
+      "startLine": "Algoritma YouTube-ku tahu sesuatu 📺 Kuis tipe 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat membagikan ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 rekomendasi tes serupa teratas",
+      "popularTestsTop5": "🔥 5 tes populer saat ini"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Teman",
     "creatorNameLabel": "Nama Anda (ditampilkan ke teman)",

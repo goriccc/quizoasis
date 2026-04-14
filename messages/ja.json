@@ -1887,6 +1887,59 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3YoutubeAlgorithmKnowsTest": {
+    "startMessage": {
+      "line1": "YouTubeは、あなたが口にしなかったことまで知っています。",
+      "line2": "検索したこともないのに、ぴったり見たかった動画がおすすめに出たこと、ありますよね？",
+      "line3": "早朝ひとりで見ていて「このアルゴリズム、わかってる…」と思ったことは？視聴の癖、一時停止の瞬間、繰り返し再生するシーンまで覚えています。",
+      "line4": "12の質問でYouTubeでの行動を分析し、アルゴリズムがあなたをどんな人と分類しているか暴きます。",
+      "line5": "アルゴリズムの正体を暴く 📺 YouTubeタイプ診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私のYouTubeアルゴリズムが何か知っている）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似た他のテスト",
+      "algorithmClassification": "⚙️ アルゴリズム分類",
+      "youtubeSeesMe": "🎯 YouTubeが把握した私",
+      "exampleVideos": "🎬 おすすめ動画の例",
+      "hiddenInterest": "🔓 隠れた関心の暴露",
+      "goodMatch": "相性のいいタイプ",
+      "badMatch": "真逆のタイプ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "YouTubeのアルゴリズム、私を「{name}」扱いしてた 📺 ゾッとする…あなたはどのタイプ？アルゴリズムに暴かれてみて",
+      "kakao": "YouTubeのアルゴリズム、私を「{name}」扱いしてた 📺 ゾッとする…あなたはどのタイプ？アルゴリズムに暴かれてみて",
+      "wechat": "YouTubeのアルゴリズム、私を「{name}」扱いしてた 📺 ゾッとする…あなたはどのタイプ？アルゴリズムに暴かれてみて",
+      "whatsapp": "YouTubeのアルゴリズム、私を「{name}」扱いしてた 📺 ゾッとする…あなたはどのタイプ？アルゴリズムに暴かれてみて",
+      "telegram": "YouTubeのアルゴリズム、私を「{name}」扱いしてた 📺 ゾッとする…あなたはどのタイプ？アルゴリズムに暴かれてみて",
+      "line": "YouTubeのアルゴリズム、私を「{name}」扱いしてた 📺 ゾッとする…あなたはどのタイプ？アルゴリズムに暴かれてみて",
+      "startDefault": "私のYouTubeアルゴリズムが何か知っている 📺 全12問タイプ診断",
+      "startKakao": "私のYouTubeアルゴリズムが何か知っている 📺 全12問タイプ診断",
+      "startWechat": "私のYouTubeアルゴリズムが何か知っている 📺 全12問タイプ診断",
+      "startWhatsapp": "私のYouTubeアルゴリズムが何か知っている 📺 全12問タイプ診断",
+      "startTelegram": "私のYouTubeアルゴリズムが何か知っている 📺 全12問タイプ診断",
+      "startLine": "私のYouTubeアルゴリズムが何か知っている 📺 全12問タイプ診断"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストトップ5"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "友だち",
     "creatorNameLabel": "あなたの名前（友だちに表示されます）",

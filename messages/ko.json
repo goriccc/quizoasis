@@ -1148,6 +1148,59 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3YoutubeAlgorithmKnowsTest": {
+    "startMessage": {
+      "line1": "유튜브는 당신이 말하지 않은 것까지 알고 있습니다.",
+      "line2": "검색한 적도 없는데 딱 보고 싶었던 영상이 추천에 뜨는 경험, 있으시죠?",
+      "line3": "새벽에 혼자 보다가 『이 알고리즘 내 친구 아니야?』라고 생각한 적 있으시죠? 유튜브 알고리즘은 당신의 시청 패턴, 멈추는 순간, 반복 재생하는 장면을 전부 기억하고 있습니다.",
+      "line4": "지금부터 당신이 유튜브에서 어떻게 행동하는지 12가지 질문으로 파악해서, 유튜브 알고리즘이 당신을 어떤 사람으로 분류하고 있는지 폭로해 드립니다.",
+      "line5": "내 알고리즘 정체 폭로당하기 📺 유튜브 유형 분석 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 유튜브 알고리즘이 뭔가 알고 있다)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "algorithmClassification": "⚙️ 알고리즘 분류",
+      "youtubeSeesMe": "🎯 유튜브가 파악한 나",
+      "exampleVideos": "🎬 추천 영상 예시",
+      "hiddenInterest": "🔓 숨겨진 관심사 폭로",
+      "goodMatch": "찰떡 알고리즘",
+      "badMatch": "반대 알고리즘",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "유튜브 알고리즘이 나를 「{name}」으로 분류하고 있었다 📺 소름... 너는 어떤 유형이야? 알고리즘한테 폭로당해봐",
+      "kakao": "유튜브 알고리즘이 나를 「{name}」으로 분류하고 있었다 📺 소름... 너는 어떤 유형이야? 알고리즘한테 폭로당해봐",
+      "wechat": "유튜브 알고리즘이 나를 「{name}」으로 분류하고 있었다 📺 소름... 너는 어떤 유형이야? 알고리즘한테 폭로당해봐",
+      "whatsapp": "유튜브 알고리즘이 나를 「{name}」으로 분류하고 있었다 📺 소름... 너는 어떤 유형이야? 알고리즘한테 폭로당해봐",
+      "telegram": "유튜브 알고리즘이 나를 「{name}」으로 분류하고 있었다 📺 소름... 너는 어떤 유형이야? 알고리즘한테 폭로당해봐",
+      "line": "유튜브 알고리즘이 나를 「{name}」으로 분류하고 있었다 📺 소름... 너는 어떤 유형이야? 알고리즘한테 폭로당해봐",
+      "startDefault": "나의 유튜브 알고리즘이 뭔가 알고 있다 📺 12문항 유형 분석",
+      "startKakao": "나의 유튜브 알고리즘이 뭔가 알고 있다 📺 12문항 유형 분석",
+      "startWechat": "나의 유튜브 알고리즘이 뭔가 알고 있다 📺 12문항 유형 분석",
+      "startWhatsapp": "나의 유튜브 알고리즘이 뭔가 알고 있다 📺 12문항 유형 분석",
+      "startTelegram": "나의 유튜브 알고리즘이 뭔가 알고 있다 📺 12문항 유형 분석",
+      "startLine": "나의 유튜브 알고리즘이 뭔가 알고 있다 📺 12문항 유형 분석"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "친구",
     "creatorNameLabel": "내 이름 (친구에게 표시됩니다)",

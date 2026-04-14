@@ -1893,6 +1893,59 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3YoutubeAlgorithmKnowsTest": {
+    "startMessage": {
+      "line1": "YouTube知道你連沒說出口的事。",
+      "line2": "從沒搜過，卻剛好在推薦裡刷到想看的影片——你也遇過吧？",
+      "line3": "凌晨一個人刷到覺得「這演算法懂我」？YouTube記得你的觀看習慣、暫停瞬間和反覆重播的片段。",
+      "line4": "用12題了解你在YouTube上的行為方式，並揭開演算法把你歸成哪種人。",
+      "line5": "揭開我的演算法真面目 📺 開始YouTube類型測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區（我的YouTube演算法好像知道點什麼）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "algorithmClassification": "⚙️ 演算法類型",
+      "youtubeSeesMe": "🎯 YouTube眼中的你",
+      "exampleVideos": "🎬 推薦影片示例",
+      "hiddenInterest": "🔓 隱藏興趣曝光",
+      "goodMatch": "最合拍類型",
+      "badMatch": "相反類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "YouTube演算法把我標成了「{name}」 📺 細思極恐…你是什麼類型？也讓演算法「曝光」你一下",
+      "kakao": "YouTube演算法把我標成了「{name}」 📺 細思極恐…你是什麼類型？也讓演算法「曝光」你一下",
+      "wechat": "YouTube演算法把我標成了「{name}」 📺 細思極恐…你是什麼類型？也讓演算法「曝光」你一下",
+      "whatsapp": "YouTube演算法把我標成了「{name}」 📺 細思極恐…你是什麼類型？也讓演算法「曝光」你一下",
+      "telegram": "YouTube演算法把我標成了「{name}」 📺 細思極恐…你是什麼類型？也讓演算法「曝光」你一下",
+      "line": "YouTube演算法把我標成了「{name}」 📺 細思極恐…你是什麼類型？也讓演算法「曝光」你一下",
+      "startDefault": "我的YouTube演算法好像知道點什麼 📺 12題類型測驗",
+      "startKakao": "我的YouTube演算法好像知道點什麼 📺 12題類型測驗",
+      "startWechat": "我的YouTube演算法好像知道點什麼 📺 12題類型測驗",
+      "startWhatsapp": "我的YouTube演算法好像知道點什麼 📺 12題類型測驗",
+      "startTelegram": "我的YouTube演算法好像知道點什麼 📺 12題類型測驗",
+      "startLine": "我的YouTube演算法好像知道點什麼 📺 12題類型測驗"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！在微信中貼上即可分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前5",
+      "popularTestsTop5": "🔥 近期熱門測驗前5"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "好友",
     "creatorNameLabel": "你的名字（會顯示給好友）",

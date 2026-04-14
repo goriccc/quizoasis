@@ -1886,6 +1886,59 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3YoutubeAlgorithmKnowsTest": {
+    "startMessage": {
+      "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",
+      "line2": "Đã bao giờ một video bạn thầm muốn xem lại xuất hiện trong gợi ý—dù bạn chưa hề tìm kiếm?",
+      "line3": "Xem một mình lúc sáng sớm và thấy thuật toán hiểu mình? YouTube ghi nhớ thói quen xem, lúc tạm dừng và những đoạn bạn tua lại.",
+      "line4": "Trả lời 12 câu hỏi về cách bạn dùng YouTube, chúng tôi sẽ bật mí thuật toán đang xếp bạn vào kiểu người nào.",
+      "line5": "Lộ diện bản chất thuật toán của tôi 📺 Bắt đầu quiz kiểu YouTube"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Thuật toán YouTube của tôi biết điều gì đó)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "algorithmClassification": "⚙️ Kiểu thuật toán",
+      "youtubeSeesMe": "🎯 YouTube “đọc” bạn thế nào",
+      "exampleVideos": "🎬 Ví dụ video gợi ý",
+      "hiddenInterest": "🔓 Lộ sở thích ẩn",
+      "goodMatch": "Kiểu hợp nhất",
+      "badMatch": "Kiểu trái ngược",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Thuật toán YouTube đã gắn nhãn tôi là 「{name}」 📺 Rợn người… Bạn thuộc kiểu nào? Để thuật toán “bóc” bạn thử xem.",
+      "kakao": "Thuật toán YouTube đã gắn nhãn tôi là 「{name}」 📺 Rợn người… Bạn thuộc kiểu nào? Để thuật toán “bóc” bạn thử xem.",
+      "wechat": "Thuật toán YouTube đã gắn nhãn tôi là 「{name}」 📺 Rợn người… Bạn thuộc kiểu nào? Để thuật toán “bóc” bạn thử xem.",
+      "whatsapp": "Thuật toán YouTube đã gắn nhãn tôi là 「{name}」 📺 Rợn người… Bạn thuộc kiểu nào? Để thuật toán “bóc” bạn thử xem.",
+      "telegram": "Thuật toán YouTube đã gắn nhãn tôi là 「{name}」 📺 Rợn người… Bạn thuộc kiểu nào? Để thuật toán “bóc” bạn thử xem.",
+      "line": "Thuật toán YouTube đã gắn nhãn tôi là 「{name}」 📺 Rợn người… Bạn thuộc kiểu nào? Để thuật toán “bóc” bạn thử xem.",
+      "startDefault": "Thuật toán YouTube của tôi biết điều gì đó 📺 Quiz 12 câu theo kiểu",
+      "startKakao": "Thuật toán YouTube của tôi biết điều gì đó 📺 Quiz 12 câu theo kiểu",
+      "startWechat": "Thuật toán YouTube của tôi biết điều gì đó 📺 Quiz 12 câu theo kiểu",
+      "startWhatsapp": "Thuật toán YouTube của tôi biết điều gì đó 📺 Quiz 12 câu theo kiểu",
+      "startTelegram": "Thuật toán YouTube của tôi biết điều gì đó 📺 Quiz 12 câu theo kiểu",
+      "startLine": "Thuật toán YouTube của tôi biết điều gì đó 📺 Quiz 12 câu theo kiểu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào bảng tạm!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự gợi ý",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Bạn",
     "creatorNameLabel": "Tên của bạn (hiển thị cho bạn bè)",

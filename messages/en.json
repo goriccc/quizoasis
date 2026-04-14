@@ -1927,6 +1927,59 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3YoutubeAlgorithmKnowsTest": {
+    "startMessage": {
+      "line1": "YouTube knows things you never even said out loud.",
+      "line2": "Ever had a video you were dying to watch show up in recommendations—even though you never searched for it?",
+      "line3": "Watching alone at dawn and thinking this algorithm really gets you? YouTube remembers your watch habits, every pause, and the moments you replay.",
+      "line4": "Answer 12 questions about how you use YouTube, and we will reveal what kind of person the algorithm thinks you are.",
+      "line5": "Expose my algorithm identity 📺 Start the YouTube type quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (What my YouTube algorithm knows)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "algorithmClassification": "⚙️ Algorithm type",
+      "youtubeSeesMe": "🎯 How YouTube reads you",
+      "exampleVideos": "🎬 Suggested video examples",
+      "hiddenInterest": "🔓 Hidden interest reveal",
+      "goodMatch": "Best-matching type",
+      "badMatch": "Opposite type",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "YouTube had me labeled as 「{name}」 📺 Creepy… What is your type? Let the algorithm expose you too.",
+      "kakao": "YouTube had me labeled as 「{name}」 📺 Creepy… What is your type? Let the algorithm expose you too.",
+      "wechat": "YouTube had me labeled as 「{name}」 📺 Creepy… What is your type? Let the algorithm expose you too.",
+      "whatsapp": "YouTube had me labeled as 「{name}」 📺 Creepy… What is your type? Let the algorithm expose you too.",
+      "telegram": "YouTube had me labeled as 「{name}」 📺 Creepy… What is your type? Let the algorithm expose you too.",
+      "line": "YouTube had me labeled as 「{name}」 📺 Creepy… What is your type? Let the algorithm expose you too.",
+      "startDefault": "My YouTube algorithm knows something 📺 12-question type quiz",
+      "startKakao": "My YouTube algorithm knows something 📺 12-question type quiz",
+      "startWechat": "My YouTube algorithm knows something 📺 12-question type quiz",
+      "startWhatsapp": "My YouTube algorithm knows something 📺 12-question type quiz",
+      "startTelegram": "My YouTube algorithm knows something 📺 12-question type quiz",
+      "startLine": "My YouTube algorithm knows something 📺 12-question type quiz"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "phase3BestFriendQuizTest": {
     "defaultHostName": "Friend",
     "creatorNameLabel": "Your name (shown to friends)",
