@@ -1413,6 +1413,60 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3LoveBehaviorTypeTest": {
+    "startMessage": {
+      "line1": "一談戀愛就覺得不像平常的自己，有過這種感覺嗎？",
+      "line2": "有人喜歡卻說不出口像傲嬌，也有人把情緒全都倒出來。",
+      "line3": "有人裝酷其實最在意，也有人知道黏人卻停不下來。",
+      "line4": "12 道選擇，把你的真實戀愛行為模式細分為 8 種類型。",
+      "line5": "測測我的戀愛類型 💘 開始戀愛行為模式分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 區域（戀愛時我是哪種類型？）",
+      "goToTest": "進入測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "loveTypeLabel": "戀愛類型",
+      "scoreBand": "分數區間",
+      "characteristics": "戀愛關鍵字",
+      "partnerView": "戀人眼中的你",
+      "prescription": "戀愛處方",
+      "goodMatch": "絕配組合",
+      "badMatch": "需要磨合",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的戀愛類型是 {type}！💘 戀愛時太真實了…你是哪種？情侶一起玩更有趣！",
+      "kakao": "我的戀愛類型是 {type}！💘 戀愛時太真實了…你是哪種？情侶一起玩更有趣！",
+      "wechat": "我的戀愛類型是 {type}！💘 戀愛時太真實了…你是哪種？情侶一起玩更有趣！",
+      "whatsapp": "我的戀愛類型是 {type}！💘 戀愛時太真實了…你是哪種？情侶一起玩更有趣！",
+      "telegram": "我的戀愛類型是 {type}！💘 戀愛時太真實了…你是哪種？情侶一起玩更有趣！",
+      "line": "我的戀愛類型是 {type}！💘 戀愛時太真實了…你是哪種？情侶一起玩更有趣！",
+      "startDefault": "戀愛時我是哪種類型？💘 12 題戀愛行為模式測驗",
+      "startKakao": "戀愛時我是哪種類型？💘 12 題戀愛行為模式測驗",
+      "startWechat": "戀愛時我是哪種類型？💘 12 題戀愛行為模式測驗",
+      "startWhatsapp": "戀愛時我是哪種類型？💘 12 題戀愛行為模式測驗",
+      "startTelegram": "戀愛時我是哪種類型？💘 12 題戀愛行為模式測驗",
+      "startLine": "戀愛時我是哪種類型？💘 12 題戀愛行為模式測驗"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",

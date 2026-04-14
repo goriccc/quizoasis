@@ -1406,6 +1406,60 @@
       "popularTestsTop5": "🔥 近期热门测验 Top5"
     }
   },
+  "phase3LoveBehaviorTypeTest": {
+    "startMessage": {
+      "line1": "一开始恋爱，就觉得不像平时的自己，有过这种感觉吗？",
+      "line2": "有人喜欢却说不出口像傲娇，也有人把情绪全都倒出来。",
+      "line3": "有人装酷其实最在意，也有人知道黏人却停不下来。",
+      "line4": "12 道选择，把你的真实恋爱行为模式细分为 8 种类型。",
+      "line5": "测测我的恋爱类型 💘 开始恋爱行为模式分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 区域（恋爱时我是哪种类型？）",
+      "goToTest": "进入测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "loveTypeLabel": "恋爱类型",
+      "scoreBand": "分数区间",
+      "characteristics": "恋爱关键词",
+      "partnerView": "恋人眼中的你",
+      "prescription": "恋爱处方",
+      "goodMatch": "绝配组合",
+      "badMatch": "需要磨合",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的恋爱类型是 {type}！💘 恋爱时太真实了…你是什么类型？情侣一起玩更有趣！",
+      "kakao": "我的恋爱类型是 {type}！💘 恋爱时太真实了…你是什么类型？情侣一起玩更有趣！",
+      "wechat": "我的恋爱类型是 {type}！💘 恋爱时太真实了…你是什么类型？情侣一起玩更有趣！",
+      "whatsapp": "我的恋爱类型是 {type}！💘 恋爱时太真实了…你是什么类型？情侣一起玩更有趣！",
+      "telegram": "我的恋爱类型是 {type}！💘 恋爱时太真实了…你是什么类型？情侣一起玩更有趣！",
+      "line": "我的恋爱类型是 {type}！💘 恋爱时太真实了…你是什么类型？情侣一起玩更有趣！",
+      "startDefault": "恋爱时我是哪种类型？💘 12 题恋爱行为模式测验",
+      "startKakao": "恋爱时我是哪种类型？💘 12 题恋爱行为模式测验",
+      "startWechat": "恋爱时我是哪种类型？💘 12 题恋爱行为模式测验",
+      "startWhatsapp": "恋爱时我是哪种类型？💘 12 题恋爱行为模式测验",
+      "startTelegram": "恋爱时我是哪种类型？💘 12 题恋爱行为模式测验",
+      "startLine": "恋爱时我是哪种类型？💘 12 题恋爱行为模式测验"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "此设备无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测验推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测验 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "说好只看一分钟，结果两小时没了——你也经历过吧？",

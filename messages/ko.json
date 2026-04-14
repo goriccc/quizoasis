@@ -668,6 +668,60 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3LoveBehaviorTypeTest": {
+    "startMessage": {
+      "line1": "연애만 시작하면 평소의 내가 아닌 것 같다는 느낌, 받아본 적 있나요?",
+      "line2": "츤데레처럼 좋아하면서 표현 못 하는 사람이 있는가 하면, 감정을 전부 쏟아내는 사람도 있습니다.",
+      "line3": "쿨한 척하지만 사실 제일 신경 쓰는 사람, 집착형인 줄 알면서도 멈추지 못하는 사람.",
+      "line4": "12가지 선택으로 연애할 때 나의 진짜 행동 패턴을 8가지 유형으로 정밀 분석해 드립니다.",
+      "line5": "내 연애 유형 확인하기 💘 연애 행동 패턴 분석 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나는 연애할 때 어떤 유형?)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "loveTypeLabel": "연애 유형",
+      "scoreBand": "점수 구간",
+      "characteristics": "연애 키워드",
+      "partnerView": "연인에게 보이는 모습",
+      "prescription": "연애 처방전",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 연애 유형은 {type}! 💘 나 이래서 연애할 때 이런다 ㅋㅋ 너는 어떤 유형이야? 커플이랑 같이 해보면 더 재밌음",
+      "kakao": "내 연애 유형은 {type}! 💘 나 이래서 연애할 때 이런다 ㅋㅋ 너는 어떤 유형이야? 커플이랑 같이 해보면 더 재밌음",
+      "wechat": "내 연애 유형은 {type}! 💘 나 이래서 연애할 때 이런다 ㅋㅋ 너는 어떤 유형이야? 커플이랑 같이 해보면 더 재밌음",
+      "whatsapp": "내 연애 유형은 {type}! 💘 나 이래서 연애할 때 이런다 ㅋㅋ 너는 어떤 유형이야? 커플이랑 같이 해보면 더 재밌음",
+      "telegram": "내 연애 유형은 {type}! 💘 나 이래서 연애할 때 이런다 ㅋㅋ 너는 어떤 유형이야? 커플이랑 같이 해보면 더 재밌음",
+      "line": "내 연애 유형은 {type}! 💘 나 이래서 연애할 때 이런다 ㅋㅋ 너는 어떤 유형이야? 커플이랑 같이 해보면 더 재밌음",
+      "startDefault": "나는 연애할 때 어떤 유형? 💘 12문항 연애 행동 패턴 분석",
+      "startKakao": "나는 연애할 때 어떤 유형? 💘 12문항 연애 행동 패턴 분석",
+      "startWechat": "나는 연애할 때 어떤 유형? 💘 12문항 연애 행동 패턴 분석",
+      "startWhatsapp": "나는 연애할 때 어떤 유형? 💘 12문항 연애 행동 패턴 분석",
+      "startTelegram": "나는 연애할 때 어떤 유형? 💘 12문항 연애 행동 패턴 분석",
+      "startLine": "나는 연애할 때 어떤 유형? 💘 12문항 연애 행동 패턴 분석"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "잠깐만 보려고 켰는데 2시간이 지나있던 경험, 있으시죠?",

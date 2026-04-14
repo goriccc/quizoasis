@@ -1407,6 +1407,60 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3LoveBehaviorTypeTest": {
+    "startMessage": {
+      "line1": "恋愛が始まると、いつもの自分じゃないような気がしたことはありますか？",
+      "line2": "好きなのに表現できないツンデレもいれば、感情をすべてぶつける人もいます。",
+      "line3": "クールに見せて一番気にしている人も、依存だと分かっていて止められない人も。",
+      "line4": "12の選択で、恋愛中のあなたの本当の行動パターンを8タイプに精密分析します。",
+      "line5": "私の恋愛タイプをチェック 💘 恋愛行動パターン分析スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSenseエリア（恋愛中の私はどんなタイプ？）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "loveTypeLabel": "恋愛タイプ",
+      "scoreBand": "スコア帯",
+      "characteristics": "恋愛キーワード",
+      "partnerView": "恋人から見えるあなた",
+      "prescription": "恋愛の処方箋",
+      "goodMatch": "相性バツグン",
+      "badMatch": "相性に注意",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の恋愛タイプは {type}！💘 恋愛あるあるすぎる…あなたは？カップルでやると盛り上がる！",
+      "kakao": "私の恋愛タイプは {type}！💘 恋愛あるあるすぎる…あなたは？カップルでやると盛り上がる！",
+      "wechat": "私の恋愛タイプは {type}！💘 恋愛あるあるすぎる…あなたは？カップルでやると盛り上がる！",
+      "whatsapp": "私の恋愛タイプは {type}！💘 恋愛あるあるすぎる…あなたは？カップルでやると盛り上がる！",
+      "telegram": "私の恋愛タイプは {type}！💘 恋愛あるあるすぎる…あなたは？カップルでやると盛り上がる！",
+      "line": "私の恋愛タイプは {type}！💘 恋愛あるあるすぎる…あなたは？カップルでやると盛り上がる！",
+      "startDefault": "恋愛中の私はどんなタイプ？💘 全12問・恋愛行動パターン診断",
+      "startKakao": "恋愛中の私はどんなタイプ？💘 全12問・恋愛行動パターン診断",
+      "startWechat": "恋愛中の私はどんなタイプ？💘 全12問・恋愛行動パターン診断",
+      "startWhatsapp": "恋愛中の私はどんなタイプ？💘 全12問・恋愛行動パターン診断",
+      "startTelegram": "恋愛中の私はどんなタイプ？💘 全12問・恋愛行動パターン診断",
+      "startLine": "恋愛中の私はどんなタイプ？💘 全12問・恋愛行動パターン診断"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkの共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",

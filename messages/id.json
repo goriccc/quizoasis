@@ -1406,6 +1406,60 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3LoveBehaviorTypeTest": {
+    "startMessage": {
+      "line1": "Begitu pacaran rasanya seperti bukan diri sendiri—pernah?",
+      "line2": "Ada yang suka tapi susah nunjukkin kayak tsundere, ada juga yang curahkan semua emosi.",
+      "line3": "Ada yang kelihatan cool tapi sebenarnya paling peduli; ada yang tahu clingy tapi nggak bisa berhenti.",
+      "line4": "12 pilihan mengurai pola perilaku asmaramu ke 8 tipe.",
+      "line5": "Cek tipe asmara aku 💘 Mulai analisis pola perilaku pacaran"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Tipe perilaku asmara seperti apa?)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "loveTypeLabel": "Tipe asmara",
+      "scoreBand": "Rentang skor",
+      "characteristics": "Kata kunci asmara",
+      "partnerView": "Caramu terlihat pasangan",
+      "prescription": "Resep untuk hubungan",
+      "goodMatch": "Kombinasi cocok",
+      "badMatch": "Perlu hati-hati",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe asmara aku {type}! 💘 Banget deh pas pacaran… kamu tipe apa? Cobain bareng pasangan lebih seru!",
+      "kakao": "Tipe asmara aku {type}! 💘 Banget deh pas pacaran… kamu tipe apa? Cobain bareng pasangan lebih seru!",
+      "wechat": "Tipe asmara aku {type}! 💘 Banget deh pas pacaran… kamu tipe apa? Cobain bareng pasangan lebih seru!",
+      "whatsapp": "Tipe asmara aku {type}! 💘 Banget deh pas pacaran… kamu tipe apa? Cobain bareng pasangan lebih seru!",
+      "telegram": "Tipe asmara aku {type}! 💘 Banget deh pas pacaran… kamu tipe apa? Cobain bareng pasangan lebih seru!",
+      "line": "Tipe asmara aku {type}! 💘 Banget deh pas pacaran… kamu tipe apa? Cobain bareng pasangan lebih seru!",
+      "startDefault": "Tipe perilaku asmara seperti apa? 💘 12 soal analisis pola pacaran",
+      "startKakao": "Tipe perilaku asmara seperti apa? 💘 12 soal analisis pola pacaran",
+      "startWechat": "Tipe perilaku asmara seperti apa? 💘 12 soal analisis pola pacaran",
+      "startWhatsapp": "Tipe perilaku asmara seperti apa? 💘 12 soal analisis pola pacaran",
+      "startTelegram": "Tipe perilaku asmara seperti apa? 💘 12 soal analisis pola pacaran",
+      "startLine": "Tipe perilaku asmara seperti apa? 💘 12 soal analisis pola pacaran"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Perangkat ini tidak mendukung berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Memuat berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

@@ -1406,6 +1406,60 @@
       "popularTestsTop5": "🔥 Top 5 quiz đang hot"
     }
   },
+  "phase3LoveBehaviorTypeTest": {
+    "startMessage": {
+      "line1": "Mới yêu đã thấy mình không còn là mình ngày thường—bạn từng vậy chưa?",
+      "line2": "Có người thích mà không nói được như tsundere, cũng có người trút hết cảm xúc.",
+      "line3": "Có người tỏ ra lạnh nhưng lại quan tâm nhất; có người biết mình dính mà vẫn không dừng được.",
+      "line4": "12 lựa chọn phân tích chi tiết kiểu hành vi yêu thật của bạn thành 8 loại.",
+      "line5": "Xem kiểu yêu của mình 💘 Bắt đầu phân tích hành vi yêu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Khi yêu mình thuộc kiểu nào?)",
+      "goToTest": "Vào quiz",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Quiz tương tự",
+      "loveTypeLabel": "Kiểu yêu",
+      "scoreBand": "Khoảng điểm",
+      "characteristics": "Từ khóa yêu",
+      "partnerView": "Đối phương nhìn bạn thế nào",
+      "prescription": "“Đơn thuốc” cho chuyện yêu",
+      "goodMatch": "Hợp cực",
+      "badMatch": "Dễ kỳ cục",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Kiểu yêu của mình là {type}! 💘 Đúng kiểu mình luôn… còn bạn? Thử với người yêu vui hơn!",
+      "kakao": "Kiểu yêu của mình là {type}! 💘 Đúng kiểu mình luôn… còn bạn? Thử với người yêu vui hơn!",
+      "wechat": "Kiểu yêu của mình là {type}! 💘 Đúng kiểu mình luôn… còn bạn? Thử với người yêu vui hơn!",
+      "whatsapp": "Kiểu yêu của mình là {type}! 💘 Đúng kiểu mình luôn… còn bạn? Thử với người yêu vui hơn!",
+      "telegram": "Kiểu yêu của mình là {type}! 💘 Đúng kiểu mình luôn… còn bạn? Thử với người yêu vui hơn!",
+      "line": "Kiểu yêu của mình là {type}! 💘 Đúng kiểu mình luôn… còn bạn? Thử với người yêu vui hơn!",
+      "startDefault": "Khi yêu mình thuộc kiểu nào? 💘 12 câu phân tích hành vi yêu",
+      "startKakao": "Khi yêu mình thuộc kiểu nào? 💘 12 câu phân tích hành vi yêu",
+      "startWechat": "Khi yêu mình thuộc kiểu nào? 💘 12 câu phân tích hành vi yêu",
+      "startWhatsapp": "Khi yêu mình thuộc kiểu nào? 💘 12 câu phân tích hành vi yêu",
+      "startTelegram": "Khi yêu mình thuộc kiểu nào? 💘 12 câu phân tích hành vi yêu",
+      "startLine": "Khi yêu mình thuộc kiểu nào? 💘 12 câu phân tích hành vi yêu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 quiz tương tự",
+      "popularTestsTop5": "🔥 Top 5 quiz đang hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

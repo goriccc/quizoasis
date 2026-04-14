@@ -93,6 +93,10 @@ import {
   phase3LoveGreenFlagFinderQuestions,
   phase3LoveGreenFlagFinderResults,
 } from '@/lib/phase3LoveGreenFlagFinderData';
+import {
+  phase3LoveBehaviorTypeQuestions,
+  phase3LoveBehaviorTypeResults,
+} from '@/lib/phase3LoveBehaviorTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -301,6 +305,10 @@ const Phase3LoveRedFlagFinderTestClient = dynamic(
 );
 const Phase3LoveGreenFlagFinderTestClient = dynamic(
   () => import('@/components/Phase3LoveGreenFlagFinderTestClient'),
+  { ssr: false }
+);
+const Phase3LoveBehaviorTypeTestClient = dynamic(
+  () => import('@/components/Phase3LoveBehaviorTypeTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1256,6 +1264,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛', '心理'],
         vi: ['Tình yêu', 'Tâm lý'],
         id: ['Asmara', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-behavior-type') {
+    test = {
+      slug: 'phase3-love-behavior-type',
+      title: {
+        ko: '나는 연애할 때 어떤 유형?',
+        en: 'What’s my dating behavior type?',
+        ja: '恋愛中の私はどんなタイプ？',
+        'zh-CN': '恋爱时我是哪种类型？',
+        'zh-TW': '戀愛時我是哪種類型？',
+        vi: 'Khi yêu mình thuộc kiểu nào?',
+        id: 'Tipe perilaku asmara seperti apa?',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 연애 행동 패턴 스펙트럼 8유형. #연애 #성격 #심리 #커플',
+        en: '12 A/B questions — 8 dating behavior spectrum types. #love #personality #psychology #couple',
+        ja: '12問2択で見る恋愛行動パターン8タイプ。#恋愛 #性格 #心理 #カップル',
+        'zh-CN': '12 道二选一，八种恋爱行为模式。#恋爱 #性格 #心理 #情侣',
+        'zh-TW': '12 題二選一，八種戀愛行為模式。#戀愛 #性格 #心理 #情侶',
+        vi: '12 câu A/B — 8 kiểu quang phổ hành vi yêu. #tìnhyêu #tínhcách #tâmlý #cặpđôi',
+        id: '12 pertanyaan A/B — 8 spektrum pola asmara. #asmara #kepribadian #psikologi #pasangan',
+      },
+      thumbnail: 'p3_test_love_behavior_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '성격', '심리', '커플'],
+        en: ['Love', 'Personality', 'Psychology', 'Couple'],
+        ja: ['恋愛', '性格', '心理', 'カップル'],
+        'zh-CN': ['恋爱', '性格', '心理', '情侣'],
+        'zh-TW': ['戀愛', '性格', '心理', '情侶'],
+        vi: ['Tình yêu', 'Tính cách', 'Tâm lý', 'Cặp đôi'],
+        id: ['Asmara', 'Kepribadian', 'Psikologi', 'Pasangan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3536,6 +3581,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LoveGreenFlagFinderQuestions}
           results={phase3LoveGreenFlagFinderResults}
           questionCount={phase3LoveGreenFlagFinderQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-love-behavior-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-love-behavior-type',
+      title: {
+        ko: '나는 연애할 때 어떤 유형?',
+        en: 'What’s my dating behavior type?',
+        ja: '恋愛中の私はどんなタイプ？',
+        'zh-CN': '恋爱时我是哪种类型？',
+        'zh-TW': '戀愛時我是哪種類型？',
+        vi: 'Khi yêu mình thuộc kiểu nào?',
+        id: 'Tipe perilaku asmara seperti apa?',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 연애 행동 패턴 스펙트럼 8유형. #연애 #성격 #심리 #커플',
+        en: '12 A/B questions — 8 dating behavior spectrum types. #love #personality #psychology #couple',
+        ja: '12問2択で見る恋愛行動パターン8タイプ。#恋愛 #性格 #心理 #カップル',
+        'zh-CN': '12 道二选一，八种恋爱行为模式。#恋爱 #性格 #心理 #情侣',
+        'zh-TW': '12 題二選一，八種戀愛行為模式。#戀愛 #性格 #心理 #情侶',
+        vi: '12 câu A/B — 8 kiểu quang phổ hành vi yêu. #tìnhyêu #tínhcách #tâmlý #cặpđôi',
+        id: '12 pertanyaan A/B — 8 spektrum pola asmara. #asmara #kepribadian #psikologi #pasangan',
+      },
+      thumbnail: 'p3_test_love_behavior_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '성격', '심리', '커플'],
+        en: ['Love', 'Personality', 'Psychology', 'Couple'],
+        ja: ['恋愛', '性格', '心理', 'カップル'],
+        'zh-CN': ['恋爱', '性格', '心理', '情侣'],
+        'zh-TW': ['戀愛', '性格', '心理', '情侶'],
+        vi: ['Tình yêu', 'Tính cách', 'Tâm lý', 'Cặp đôi'],
+        id: ['Asmara', 'Kepribadian', 'Psikologi', 'Pasangan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LoveBehaviorTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LoveBehaviorTypeQuestions}
+          results={phase3LoveBehaviorTypeResults}
+          questionCount={phase3LoveBehaviorTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
