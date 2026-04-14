@@ -672,6 +672,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3YoloFireGodlifeTypeTest": {
+    "startMessage": {
+      "line1": "지금 이 순간을 즐기는 삶 vs 미래를 위해 지금을 희생하는 삶. 당신은 어느 쪽인가요?",
+      "line2": "욜로(YOLO)족은 말합니다. \"인생은 한 번이야. 지금 행복해야지.\"",
+      "line3": "파이어(FIRE)족은 말합니다. \"지금 극단적으로 모아서 일찍 은퇴하고 진짜 삶을 살겠어.\"",
+      "line4": "갓생족은 말합니다. \"미래도 현재도 둘 다 잡겠어. 오늘도 새벽 5시 기상.\"",
+      "line5": "당신의 소비 철학과 미래 설계 방식으로 나의 진짜 인생 재무 유형을 진단합니다.",
+      "line6": "내 인생 재무 유형 확인하기 💰 유형 진단 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나는 욜로족? 파이어족? 갓생족?)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "lifeFinanceType": "💰 인생 재무 유형",
+      "keywords": "🏷️ 핵심 가치",
+      "strength": "재무 강점",
+      "weakness": "재무 약점",
+      "prescription": "처방전",
+      "goodMatch": "찰떡 짝꿍",
+      "badMatch": "환장의 짝꿍",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "나는 {name}! 💰 욜로? 파이어? 갓생? 너는 어떤 유형이야? → 재무 유형 비교해보자",
+      "kakao": "나는 {name}! 💰 욜로? 파이어? 갓생? 너는 어떤 유형이야? → 재무 유형 비교해보자",
+      "wechat": "나는 {name}! 💰 욜로? 파이어? 갓생? 너는 어떤 유형이야? → 재무 유형 비교해보자",
+      "whatsapp": "나는 {name}! 💰 욜로? 파이어? 갓생? 너는 어떤 유형이야? → 재무 유형 비교해보자",
+      "telegram": "나는 {name}! 💰 욜로? 파이어? 갓생? 너는 어떤 유형이야? → 재무 유형 비교해보자",
+      "line": "나는 {name}! 💰 욜로? 파이어? 갓생? 너는 어떤 유형이야? → 재무 유형 비교해보자",
+      "startDefault": "나는 욜로족? 파이어족? 갓생족? 💰 내 인생 재무 유형 확인하기",
+      "startKakao": "나는 욜로족? 파이어족? 갓생족? 💰 내 인생 재무 유형 확인하기",
+      "startWechat": "나는 욜로족? 파이어족? 갓생족? 💰 내 인생 재무 유형 확인하기",
+      "startWhatsapp": "나는 욜로족? 파이어족? 갓생족? 💰 내 인생 재무 유형 확인하기",
+      "startTelegram": "나는 욜로족? 파이어족? 갓생족? 💰 내 인생 재무 유형 확인하기",
+      "startLine": "나는 욜로족? 파이어족? 갓생족? 💰 내 인생 재무 유형 확인하기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "왜 나는 연애만 하면 이렇게 힘들까?",

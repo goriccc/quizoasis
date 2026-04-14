@@ -1451,6 +1451,61 @@
       "popularTestsTop5": "🔥 Trending tests"
     }
   },
+  "phase3YoloFireGodlifeTypeTest": {
+    "startMessage": {
+      "line1": "Living for today vs sacrificing now for the future—which side are you on?",
+      "line2": "The YOLO mindset says: \"You only live once—be happy now.\"",
+      "line3": "The FIRE mindset says: \"Stack hard, retire early, then live for real.\"",
+      "line4": "The god-life mindset says: \"I want both—I still wake up at 5 a.m.\"",
+      "line5": "We read your real life-and-money type from how you spend and plan ahead.",
+      "line6": "Discover my life-money type 💰 Start the quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (YOLO, FIRE, or God-Life?)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "lifeFinanceType": "💰 Life & money type",
+      "keywords": "🏷️ Core values",
+      "strength": "Money strengths",
+      "weakness": "Money risks",
+      "prescription": "Prescription",
+      "goodMatch": "Great match",
+      "badMatch": "Clash match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "I am {name}! 💰 YOLO, FIRE, or god-life—what is your type? Let us compare money styles.",
+      "kakao": "I am {name}! 💰 YOLO, FIRE, or god-life—what is your type? Let us compare money styles.",
+      "wechat": "I am {name}! 💰 YOLO, FIRE, or god-life—what is your type? Let us compare money styles.",
+      "whatsapp": "I am {name}! 💰 YOLO, FIRE, or god-life—what is your type? Let us compare money styles.",
+      "telegram": "I am {name}! 💰 YOLO, FIRE, or god-life—what is your type? Let us compare money styles.",
+      "line": "I am {name}! 💰 YOLO, FIRE, or god-life—what is your type? Let us compare money styles.",
+      "startDefault": "YOLO, FIRE, or god-life? 💰 Check my life-money type",
+      "startKakao": "YOLO, FIRE, or god-life? 💰 Check my life-money type",
+      "startWechat": "YOLO, FIRE, or god-life? 💰 Check my life-money type",
+      "startWhatsapp": "YOLO, FIRE, or god-life? 💰 Check my life-money type",
+      "startTelegram": "YOLO, FIRE, or god-life? 💰 Check my life-money type",
+      "startLine": "YOLO, FIRE, or god-life? 💰 Check my life-money type"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is unavailable.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Trending tests"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Why does dating feel so hard for me?",

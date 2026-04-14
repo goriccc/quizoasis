@@ -1410,6 +1410,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test hot"
     }
   },
+  "phase3YoloFireGodlifeTypeTest": {
+    "startMessage": {
+      "line1": "Sống trọn hôm nay vs hy sinh hiện tại vì tương lai—bạn thuộc phe nào?",
+      "line2": "Kiểu YOLO nói: \"Đời chỉ có một—phải vui ngay bây giờ.\"",
+      "line3": "Kiểu FIRE nói: \"Tích cực tối đa, nghỉ hưu sớm, rồi mới sống thật.\"",
+      "line4": "Kiểu god-life nói: \"Tương lai và hiện tại đều cần—sáng nay vẫn dậy lúc 5 giờ.\"",
+      "line5": "Từ cách bạn tiêu và lên kế hoạch, chúng tôi chẩn đoán kiểu đời sống × tiền của bạn.",
+      "line6": "Xem kiểu đời sống × tiền của tôi 💰 Bắt đầu test"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (YOLO, FIRE hay god-life?)",
+      "goToTest": "Vào bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "lifeFinanceType": "💰 Kiểu đời sống × tiền",
+      "keywords": "🏷️ Giá trị cốt lõi",
+      "strength": "Điểm mạnh tiền bạc",
+      "weakness": "Rủi ro tiền bạc",
+      "prescription": "Đơn “thuốc”",
+      "goodMatch": "Hợp cạ",
+      "badMatch": "Dễ clash",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Tôi là {name}! 💰 YOLO, FIRE hay god-life—bạn kiểu gì? So sánh cách tiêu tiền nhé.",
+      "kakao": "Tôi là {name}! 💰 YOLO, FIRE hay god-life—bạn kiểu gì? So sánh cách tiêu tiền nhé.",
+      "wechat": "Tôi là {name}! 💰 YOLO, FIRE hay god-life—bạn kiểu gì? So sánh cách tiêu tiền nhé.",
+      "whatsapp": "Tôi là {name}! 💰 YOLO, FIRE hay god-life—bạn kiểu gì? So sánh cách tiêu tiền nhé.",
+      "telegram": "Tôi là {name}! 💰 YOLO, FIRE hay god-life—bạn kiểu gì? So sánh cách tiêu tiền nhé.",
+      "line": "Tôi là {name}! 💰 YOLO, FIRE hay god-life—bạn kiểu gì? So sánh cách tiêu tiền nhé.",
+      "startDefault": "YOLO, FIRE hay god-life? 💰 Xem kiểu đời sống × tiền của tôi",
+      "startKakao": "YOLO, FIRE hay god-life? 💰 Xem kiểu đời sống × tiền của tôi",
+      "startWechat": "YOLO, FIRE hay god-life? 💰 Xem kiểu đời sống × tiền của tôi",
+      "startWhatsapp": "YOLO, FIRE hay god-life? 💰 Xem kiểu đời sống × tiền của tôi",
+      "startTelegram": "YOLO, FIRE hay god-life? 💰 Xem kiểu đời sống × tiền của tôi",
+      "startLine": "YOLO, FIRE hay god-life? 💰 Xem kiểu đời sống × tiền của tôi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ lúc này.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Sao yêu đương cứ thấy mệt mỏi thế?",

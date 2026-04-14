@@ -1417,6 +1417,61 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前5"
     }
   },
+  "phase3YoloFireGodlifeTypeTest": {
+    "startMessage": {
+      "line1": "享受當下 vs 為未來犧牲現在——你站哪一邊？",
+      "line2": "YOLO派說：「人生只有一次，現在就要開心。」",
+      "line3": "FIRE派說：「現在拼命存，早點退休，過真正的人生。」",
+      "line4": "自律人生派說：「未來和現在都要，今天一樣五點起。」",
+      "line5": "從你的消費觀與未來規劃方式，診斷你的人生×金錢類型。",
+      "line6": "查看我的人生×金錢類型 💰 開始測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（YOLO、FIRE 還是自律人生？）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "lifeFinanceType": "💰 人生×金錢類型",
+      "keywords": "🏷️ 核心價值",
+      "strength": "金錢優勢",
+      "weakness": "金錢風險",
+      "prescription": "建議處方",
+      "goodMatch": "合拍類型",
+      "badMatch": "反差類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我是{name}！💰 YOLO？FIRE？自律人生？你是哪一型？來比拜金錢觀",
+      "kakao": "我是{name}！💰 YOLO？FIRE？自律人生？你是哪一型？來比拜金錢觀",
+      "wechat": "我是{name}！💰 YOLO？FIRE？自律人生？你是哪一型？來比拜金錢觀",
+      "whatsapp": "我是{name}！💰 YOLO？FIRE？自律人生？你是哪一型？來比拜金錢觀",
+      "telegram": "我是{name}！💰 YOLO？FIRE？自律人生？你是哪一型？來比拜金錢觀",
+      "line": "我是{name}！💰 YOLO？FIRE？自律人生？你是哪一型？來比拜金錢觀",
+      "startDefault": "YOLO？FIRE？自律人生？💰 測測我的人生×金錢類型",
+      "startKakao": "YOLO？FIRE？自律人生？💰 測測我的人生×金錢類型",
+      "startWechat": "YOLO？FIRE？自律人生？💰 測測我的人生×金錢類型",
+      "startWhatsapp": "YOLO？FIRE？自律人生？💰 測測我的人生×金錢類型",
+      "startTelegram": "YOLO？FIRE？自律人生？💰 測測我的人生×金錢類型",
+      "startLine": "YOLO？FIRE？自律人生？💰 測測我的人生×金錢類型"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "暫時無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前5"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "為什麼一談戀愛就好累？",

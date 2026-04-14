@@ -1999,6 +1999,61 @@
       "popularTestsTop5": "🔥 热门测试推荐前5"
     }
   },
+  "phase3YoloFireGodlifeTypeTest": {
+    "startMessage": {
+      "line1": "享受当下 vs 为未来牺牲现在——你站哪一边？",
+      "line2": "YOLO派说：“人生只有一次，现在就要开心。”",
+      "line3": "FIRE派说：“现在拼命攒，早点退休，过真正的人生。”",
+      "line4": "自律人生派说：“未来和现在都要，今天照样五点起。”",
+      "line5": "从你的消费观与未来规划方式，诊断你的人生×金钱类型。",
+      "line6": "查看我的人生×金钱类型 💰 开始测试"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（YOLO、FIRE 还是自律人生？）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "lifeFinanceType": "💰 人生×金钱类型",
+      "keywords": "🏷️ 核心价值",
+      "strength": "金钱优势",
+      "weakness": "金钱风险",
+      "prescription": "建议处方",
+      "goodMatch": "合拍类型",
+      "badMatch": "反差类型",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我是{name}！💰 YOLO？FIRE？自律人生？你是什么类型？来比比金钱观",
+      "kakao": "我是{name}！💰 YOLO？FIRE？自律人生？你是什么类型？来比比金钱观",
+      "wechat": "我是{name}！💰 YOLO？FIRE？自律人生？你是什么类型？来比比金钱观",
+      "whatsapp": "我是{name}！💰 YOLO？FIRE？自律人生？你是什么类型？来比比金钱观",
+      "telegram": "我是{name}！💰 YOLO？FIRE？自律人生？你是什么类型？来比比金钱观",
+      "line": "我是{name}！💰 YOLO？FIRE？自律人生？你是什么类型？来比比金钱观",
+      "startDefault": "YOLO？FIRE？自律人生？💰 测测我的人生×金钱类型",
+      "startKakao": "YOLO？FIRE？自律人生？💰 测测我的人生×金钱类型",
+      "startWechat": "YOLO？FIRE？自律人生？💰 测测我的人生×金钱类型",
+      "startWhatsapp": "YOLO？FIRE？自律人生？💰 测测我的人生×金钱类型",
+      "startTelegram": "YOLO？FIRE？自律人生？💰 测测我的人生×金钱类型",
+      "startLine": "YOLO？FIRE？自律人生？💰 测测我的人生×金钱类型"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "暂时无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前5",
+      "popularTestsTop5": "🔥 热门测试推荐前5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你连没说出口的事。",

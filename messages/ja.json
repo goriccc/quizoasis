@@ -1411,6 +1411,61 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3YoloFireGodlifeTypeTest": {
+    "startMessage": {
+      "line1": "今を楽しむ人生 vs 未来のために今を削る人生。あなたはどちら？",
+      "line2": "YOLOの人は言う。「人生一度きり。今を幸せに。」",
+      "line3": "FIREの人は言う。「今ガッツリ貯めて早期リタイアして、本当の人生を生きる。」",
+      "line4": "ゴッドライフの人は言う。「未来も今も両方いく。今日も朝5時起き。」",
+      "line5": "消費観と未来設計のクセから、あなたの本当の人生×お金タイプを診断します。",
+      "line6": "私の人生×お金タイプを見る 💰 診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（YOLO・FIRE・ゴッドライフ？）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "lifeFinanceType": "💰 人生×お金タイプ",
+      "keywords": "🏷️ コアバリュー",
+      "strength": "お金の強み",
+      "weakness": "お金のリスク",
+      "prescription": "処方箋",
+      "goodMatch": "相性◎",
+      "badMatch": "相性△",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私は{name}！💰 YOLO？FIRE？ゴッドライフ？あなたはどのタイプ？お金タイプ、比べてみよう",
+      "kakao": "私は{name}！💰 YOLO？FIRE？ゴッドライフ？あなたはどのタイプ？お金タイプ、比べてみよう",
+      "wechat": "私は{name}！💰 YOLO？FIRE？ゴッドライフ？あなたはどのタイプ？お金タイプ、比べてみよう",
+      "whatsapp": "私は{name}！💰 YOLO？FIRE？ゴッドライフ？あなたはどのタイプ？お金タイプ、比べてみよう",
+      "telegram": "私は{name}！💰 YOLO？FIRE？ゴッドライフ？あなたはどのタイプ？お金タイプ、比べてみよう",
+      "line": "私は{name}！💰 YOLO？FIRE？ゴッドライフ？あなたはどのタイプ？お金タイプ、比べてみよう",
+      "startDefault": "YOLO？FIRE？ゴッドライフ？💰 私の人生×お金タイプをチェック",
+      "startKakao": "YOLO？FIRE？ゴッドライフ？💰 私の人生×お金タイプをチェック",
+      "startWechat": "YOLO？FIRE？ゴッドライフ？💰 私の人生×お金タイプをチェック",
+      "startWhatsapp": "YOLO？FIRE？ゴッドライフ？💰 私の人生×お金タイプをチェック",
+      "startTelegram": "YOLO？FIRE？ゴッドライフ？💰 私の人生×お金タイプをチェック",
+      "startLine": "YOLO？FIRE？ゴッドライフ？💰 私の人生×お金タイプをチェック"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalkへの共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "どうして恋愛だけこんなにしんどいの？",

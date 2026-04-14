@@ -77,6 +77,10 @@ import {
   phase3SpendingPersonalityTypeQuestions,
   phase3SpendingPersonalityTypeResults,
 } from '@/lib/phase3SpendingPersonalityTypeData';
+import {
+  phase3YoloFireGodlifeTypeQuestions,
+  phase3YoloFireGodlifeTypeResults,
+} from '@/lib/phase3YoloFireGodlifeTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -269,6 +273,10 @@ const Phase3ShortformAddictionTypeTestClient = dynamic(
 );
 const Phase3SpendingPersonalityTypeTestClient = dynamic(
   () => import('@/components/Phase3SpendingPersonalityTypeTestClient'),
+  { ssr: false }
+);
+const Phase3YoloFireGodlifeTypeTestClient = dynamic(
+  () => import('@/components/Phase3YoloFireGodlifeTypeTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1113,6 +1121,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['心理', '性格'],
         vi: ['Tâm lý', 'Tính cách'],
         id: ['Psikologi', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-yolo-fire-godlife-type') {
+    test = {
+      slug: 'phase3-yolo-fire-godlife-type',
+      title: {
+        ko: '나는 욜로족? 파이어족? 갓생족?',
+        en: 'YOLO, FIRE, or God-Life Type?',
+        ja: 'YOLO？FIRE？ゴッドライフ？',
+        'zh-CN': '你是 YOLO、FIRE 还是自律人生型？',
+        'zh-TW': '你是 YOLO、FIRE 還是自律人生型？',
+        vi: 'Bạn thuộc kiểu YOLO, FIRE hay God-life?',
+        id: 'Tipe YOLO, FIRE, atau God-life?',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 인생 재무 철학 스펙트럼 6유형. #재무 #라이프스타일 #욜로',
+        en: '12 A/B questions — 6 life-money philosophy types. #money #lifestyle #yolo',
+        ja: '12問2択で見る人生×お金の哲学6タイプ。#お金 #ライフスタイル',
+        'zh-CN': '12 道二选一，六种人生财务观。#理财 #生活方式',
+        'zh-TW': '12 題二選一，六種人生財務觀。#理財 #生活方式',
+        vi: '12 câu A/B — 6 kiểu triết lý tiền & cuộc sống. #tài chính #lifestyle',
+        id: '12 pertanyaan A/B — 6 filosofi uang & hidup. #keuangan #gaya hidup',
+      },
+      thumbnail: 'p3_test_yolo_fire_godlife_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['재무', '라이프스타일', '욜로'],
+        en: ['Money', 'Lifestyle', 'YOLO'],
+        ja: ['お金', 'ライフスタイル', 'YOLO'],
+        'zh-CN': ['理财', '生活方式', 'YOLO'],
+        'zh-TW': ['理財', '生活方式', 'YOLO'],
+        vi: ['Tài chính', 'Lifestyle', 'YOLO'],
+        id: ['Keuangan', 'Gaya hidup', 'YOLO'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3136,6 +3181,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SpendingPersonalityTypeQuestions}
           results={phase3SpendingPersonalityTypeResults}
           questionCount={phase3SpendingPersonalityTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-yolo-fire-godlife-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-yolo-fire-godlife-type',
+      title: {
+        ko: '나는 욜로족? 파이어족? 갓생족?',
+        en: 'YOLO, FIRE, or God-Life Type?',
+        ja: 'YOLO？FIRE？ゴッドライフ？',
+        'zh-CN': '你是 YOLO、FIRE 还是自律人生型？',
+        'zh-TW': '你是 YOLO、FIRE 還是自律人生型？',
+        vi: 'Bạn thuộc kiểu YOLO, FIRE hay God-life?',
+        id: 'Tipe YOLO, FIRE, atau God-life?',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 인생 재무 철학 스펙트럼 6유형. #재무 #라이프스타일 #욜로',
+        en: '12 A/B questions — 6 life-money philosophy types. #money #lifestyle #yolo',
+        ja: '12問2択で見る人生×お金の哲学6タイプ。#お金 #ライフスタイル',
+        'zh-CN': '12 道二选一，六种人生财务观。#理财 #生活方式',
+        'zh-TW': '12 題二選一，六種人生財務觀。#理財 #生活方式',
+        vi: '12 câu A/B — 6 kiểu triết lý tiền & cuộc sống. #tài chính #lifestyle',
+        id: '12 pertanyaan A/B — 6 filosofi uang & hidup. #keuangan #gaya hidup',
+      },
+      thumbnail: 'p3_test_yolo_fire_godlife_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['재무', '라이프스타일', '욜로'],
+        en: ['Money', 'Lifestyle', 'YOLO'],
+        ja: ['お金', 'ライフスタイル', 'YOLO'],
+        'zh-CN': ['理财', '生活方式', 'YOLO'],
+        'zh-TW': ['理財', '生活方式', 'YOLO'],
+        vi: ['Tài chính', 'Lifestyle', 'YOLO'],
+        id: ['Keuangan', 'Gaya hidup', 'YOLO'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3YoloFireGodlifeTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3YoloFireGodlifeTypeQuestions}
+          results={phase3YoloFireGodlifeTypeResults}
+          questionCount={phase3YoloFireGodlifeTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

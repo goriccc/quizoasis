@@ -1410,6 +1410,61 @@
       "popularTestsTop5": "🔥 5 tes populer"
     }
   },
+  "phase3YoloFireGodlifeTypeTest": {
+    "startMessage": {
+      "line1": "Menikmati hari ini vs mengorbankan sekarang demi masa depan—kamu tim mana?",
+      "line2": "Gaya YOLO bilang: \"Hidup cuma sekali—bahagia sekarang.\"",
+      "line3": "Gaya FIRE bilang: \"Tabung keras, pensiun dini, baru hidup sesungguhnya.\"",
+      "line4": "Gaya god-life bilang: \"Masa depan dan kini kudu dapat—bangun jam 5 tetap jalan.\"",
+      "line5": "Dari pola belanjamu dan cara merencanakan masa depan, kami baca tipe hidup × uangmu.",
+      "line6": "Cek tipe hidup × uangku 💰 Mulai tes"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (YOLO, FIRE, atau god-life?)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "lifeFinanceType": "💰 Tipe hidup × uang",
+      "keywords": "🏷️ Nilai inti",
+      "strength": "Kekuatan finansial",
+      "weakness": "Risiko finansial",
+      "prescription": "Resep",
+      "goodMatch": "Cocok banget",
+      "badMatch": "Sering bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Aku {name}! 💰 YOLO, FIRE, atau god-life—kamu tipe apa? Bandingin gaya uang kita.",
+      "kakao": "Aku {name}! 💰 YOLO, FIRE, atau god-life—kamu tipe apa? Bandingin gaya uang kita.",
+      "wechat": "Aku {name}! 💰 YOLO, FIRE, atau god-life—kamu tipe apa? Bandingin gaya uang kita.",
+      "whatsapp": "Aku {name}! 💰 YOLO, FIRE, atau god-life—kamu tipe apa? Bandingin gaya uang kita.",
+      "telegram": "Aku {name}! 💰 YOLO, FIRE, atau god-life—kamu tipe apa? Bandingin gaya uang kita.",
+      "line": "Aku {name}! 💰 YOLO, FIRE, atau god-life—kamu tipe apa? Bandingin gaya uang kita.",
+      "startDefault": "YOLO, FIRE, atau god-life? 💰 Cek tipe hidup × uangku",
+      "startKakao": "YOLO, FIRE, atau god-life? 💰 Cek tipe hidup × uangku",
+      "startWechat": "YOLO, FIRE, atau god-life? 💰 Cek tipe hidup × uangku",
+      "startWhatsapp": "YOLO, FIRE, atau god-life? 💰 Cek tipe hidup × uangku",
+      "startTelegram": "YOLO, FIRE, atau god-life? 💰 Cek tipe hidup × uangku",
+      "startLine": "YOLO, FIRE, atau god-life? 💰 Cek tipe hidup × uangku"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 5 tes populer"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Kenapa pacaran rasanya berat sekali?",
