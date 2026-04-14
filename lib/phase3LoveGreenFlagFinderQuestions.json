@@ -1,0 +1,746 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "ko": "연인이 힘든 일이 있어서 털어놓을 때 나는?",
+      "en": "When your partner opens up about something difficult, you usually:",
+      "ja": "恋人が辛いことを打ち明けてきたとき、あなたは？",
+      "zh-CN": "恋人在倾诉烦心事时，你通常会？",
+      "zh-TW": "戀人在訴苦時，你通常會？",
+      "vi": "Khi người yêu tâm sự chuyện khó khăn, bạn thường:",
+      "id": "Saat pasangan membuka diri soal kesulitan, kamu biasanya:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "끝까지 조용히 듣고 충분히 공감해준 다음 위로의 말을 건넨다",
+          "en": "Listen quietly to the end, empathize fully, then offer comforting words",
+          "ja": "最後まで静かに聞き、十分に共感してから慰めの言葉をかける",
+          "zh-CN": "安静听到最后，充分共情后再说安慰的话",
+          "zh-TW": "安靜聽到最後，充分共情後再說安慰的話",
+          "vi": "Nghe im lặng đến cùng, đồng cảm đủ rồi mới an ủi",
+          "id": "Dengarkan sampai habis, empati dulu, lalu beri kata penghibur"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "들어주면서 중간중간 맞장구를 치고 기분을 풀어주려 한다",
+          "en": "Chime in as you listen, trying to lighten their mood",
+          "ja": "聞きながら相づちを打ち、気分を軽くしようとする",
+          "zh-CN": "边听边附和，想帮对方心情好起来",
+          "zh-TW": "邊聽邊附和，想幫對方心情好起來",
+          "vi": "Vừa nghe vừa hưởng ứng, cố làm nhẹ lòng họ",
+          "id": "Sambil mendengarkan ikut merespons, ingin mencerahkan suasana"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "문제를 빨리 해결해주고 싶어서 현실적인 조언을 먼저 건넨다",
+          "en": "Offer practical advice first because you want to help solve it quickly",
+          "ja": "早く解決したくて、まず現実的なアドバイスをする",
+          "zh-CN": "想快点帮上忙，先给现实层面的建议",
+          "zh-TW": "想快點幫上忙，先給現實層面的建議",
+          "vi": "Muốn giải quyết nhanh nên đưa lời khuyên thực tế trước",
+          "id": "Ingin cepat menyelesaikan, jadi kasih saran praktis dulu"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "같이 있어주는 것만으로도 충분하다고 생각해서 조용히 곁에 있어준다",
+          "en": "Stay quietly beside them—just being together feels like enough",
+          "ja": "一緒にいるだけで十分だと思い、静かにそばにいる",
+          "zh-CN": "觉得只要陪着就好，安静地待在旁边",
+          "zh-TW": "覺得只要陪著就好，安靜地待在旁邊",
+          "vi": "Chỉ cần ở bên là đủ, im lặng đồng hành",
+          "id": "Merasa cukup dengan menemani, diam di sampingnya"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "ko": "연인과 오래 함께할수록 나에 대한 평가는?",
+      "en": "The longer you are together, people would say about you:",
+      "ja": "恋人と長く一緒にいるほど、あなたへの評価は？",
+      "zh-CN": "和恋人相处越久，对你的评价更像是？",
+      "zh-TW": "和戀人相處越久，對你的評價更像是？",
+      "vi": "Càng gắn bó lâu, người ta sẽ nói về bạn kiểu:",
+      "id": "Semakin lama bersama, orang akan bilang tentang kamu:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "\"얘랑 있으면 뭔가 마음이 편안해진다\"",
+          "en": "\"Being with them just feels calming.\"",
+          "ja": "「一緒にいると心が落ち着く」",
+          "zh-CN": "“在一起就觉得很安心。”",
+          "zh-TW": "「在一起就覺得很安心。」",
+          "vi": "“Ở cạnh họ thấy yên lòng.”",
+          "id": "“Bareng mereka rasanya tenang.”"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "\"얘는 같이 있으면 진짜 재밌어. 지루할 틈이 없어\"",
+          "en": "\"They’re so fun to be around—never boring.\"",
+          "ja": "「一緒にいると本当に楽しい。退屈しない」",
+          "zh-CN": "“在一起特别有趣，不会无聊。”",
+          "zh-TW": "「在一起特別有趣，不會無聊。」",
+          "vi": "“Ở cùng vui, chẳng bao giờ chán.”",
+          "id": "“Bareng mereka seru, nggak pernah bosan.”"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "\"얘는 내가 힘들 때 제일 먼저 생각나는 사람이야\"",
+          "en": "\"They’re the first person I think of when I’m struggling.\"",
+          "ja": "「辛いとき真っ先に思い浮かぶ人」",
+          "zh-CN": "“难过时最先想到的人。”",
+          "zh-TW": "「難過時最先想到的人。」",
+          "vi": "“Lúc khó là người mình nghĩ đến đầu tiên.”",
+          "id": "“Saat sulit, orang pertama yang kuingat.”"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "\"얘는 믿음직해. 한 번 한 말은 꼭 지켜\"",
+          "en": "\"They’re reliable—they keep their word.\"",
+          "ja": "「信頼できる。一度言ったことは守る」",
+          "zh-CN": "“很靠谱，说过的话会做到。”",
+          "zh-TW": "「很靠譜，說過的話會做到。」",
+          "vi": "“Đáng tin—nói là làm.”",
+          "id": "“Bisa dipercaya—janji ditepati.”"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "ko": "연인이 나에게 서운함을 표현할 때 나는?",
+      "en": "When your partner shows they feel hurt, you usually:",
+      "ja": "恋人があなたに寂しさや不満を示したとき、あなたは？",
+      "zh-CN": "恋人向你表达委屈时，你通常会？",
+      "zh-TW": "戀人向你表達委屈時，你通常會？",
+      "vi": "Khi người yêu bày tỏ tủi thân, bạn thường:",
+      "id": "Saat pasangan menunjukkan kekecewaan, kamu biasanya:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "방어하지 않고 먼저 상대 감정을 충분히 들으려 한다",
+          "en": "Don’t get defensive—try to hear their feelings first",
+          "ja": "まず防御せず、相手の気持ちを十分に聞こうとする",
+          "zh-CN": "不先辩解，尽量把对方的感受听完整",
+          "zh-TW": "不先辯解，盡量把對方的感受聽完整",
+          "vi": "Không phòng thủ, cố lắng nghe cảm xúc họ trước",
+          "id": "Tidak defensif, dulu dengarkan perasaan mereka"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "서운하게 한 것이 미안해서 빠르게 사과하고 분위기를 풀려 한다",
+          "en": "Apologize quickly because you feel bad, and try to reset the vibe",
+          "ja": "悪いと思って早めに謝り、空気を和らげようとする",
+          "zh-CN": "觉得让对方难过很抱歉，赶紧道歉缓和气氛",
+          "zh-TW": "覺得讓對方難過很抱歉，趕緊道歉緩和氣氛",
+          "vi": "Thấy có lỗi nên xin lỗi nhanh và làm dịu không khí",
+          "id": "Merasa bersalah, minta maaf cepat dan redakan suasana"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "내 입장도 솔직하게 말하되 감정보다 이해를 먼저 구한다",
+          "en": "Share your side honestly, but ask for understanding before debating feelings",
+          "ja": "自分の立場も正直に言うが、感情論より理解を先に求める",
+          "zh-CN": "也坦诚说自己的立场，但先求理解而非争情绪",
+          "zh-TW": "也坦誠說自己的立場，但先求理解而非爭情緒",
+          "vi": "Nói thật phía mình nhưng ưu tiên được hiểu hơn là tranh cảm xúc",
+          "id": "Jujur soal sudut pandangmu, tapi minta pengertian dulu"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "상대가 감정을 다 표현할 때까지 끝까지 기다려준다",
+          "en": "Wait until they’ve fully expressed what they feel",
+          "ja": "相手が気持ちを出し切るまで最後まで待つ",
+          "zh-CN": "等对方把情绪说完再回应",
+          "zh-TW": "等對方把情緒說完再回應",
+          "vi": "Chờ họ nói hết cảm xúc rồi mới phản hồi",
+          "id": "Tunggu sampai mereka mengekspresikan semua perasaan"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "ko": "연애 중 나만의 시간과 연인과의 시간을 어떻게 조율하나요?",
+      "en": "How do you balance solo time and time with your partner?",
+      "ja": "恋愛中、自分の時間と恋人との時間をどう調整しますか？",
+      "zh-CN": "恋爱中如何平衡独处和二人时间？",
+      "zh-TW": "戀愛中如何平衡獨處和二人時間？",
+      "vi": "Bạn cân bằng thời gian riêng và thời gian với người yêu thế nào?",
+      "id": "Bagaimana kamu menyeimbangkan waktu sendiri dan waktu dengan pasangan?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "함께하는 시간도 소중하지만 각자의 공간도 자연스럽게 존중한다",
+          "en": "You cherish time together but naturally respect each other’s space",
+          "ja": "一緒の時間も大切だが、それぞれの空間も自然に尊重する",
+          "zh-CN": "珍惜相处，也自然尊重彼此的空间",
+          "zh-TW": "珍惜相處，也自然尊重彼此的空間",
+          "vi": "Trân trọng thời gian bên nhau nhưng vẫn tôn trọng không gian riêng",
+          "id": "Menghargai waktu bersama tapi tetap hormati ruang masing-masing"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "연인과 함께하는 시간을 최대한 즐겁고 알차게 만들려고 노력한다",
+          "en": "You try to make shared time as fun and meaningful as possible",
+          "ja": "一緒の時間をできるだけ楽しく充実させようとする",
+          "zh-CN": "努力把相处时间变得有趣又充实",
+          "zh-TW": "努力把相處時間變得有趣又充實",
+          "vi": "Cố làm thời gian bên nhau vui và ý nghĩa nhất có thể",
+          "id": "Berusaha bikin waktu bersama seru dan bermakna"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "연인이 원할 때는 함께하고 필요할 때는 독립적인 시간을 권한다",
+          "en": "You’re together when they want it, and suggest solo time when it’s needed",
+          "ja": "相手が望めば一緒に、必要なら独立した時間を勧める",
+          "zh-CN": "对方想陪就陪，需要时也会建议各自独处",
+          "zh-TW": "對方想陪就陪，需要時也會建議各自獨處",
+          "vi": "Muốn gần thì gần, cần riêng thì gợi ý thời gian độc lập",
+          "id": "Bareng saat mereka mau, sarankan waktu sendiri saat perlu"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "서로의 생활이 유지되는 선에서 자연스럽게 맞춰진다",
+          "en": "You fit together naturally while keeping each other’s lives intact",
+          "ja": "お互いの生活を保ちながら自然に合わせていく",
+          "zh-CN": "在不影响彼此生活的前提下自然磨合",
+          "zh-TW": "在不影響彼此生活的前提下自然磨合",
+          "vi": "Hòa hợp tự nhiên mà vẫn giữ cuộc sống riêng của nhau",
+          "id": "Selaras secara alami tanpa mengorbankan kehidupan masing-masing"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "ko": "연인이 실수나 잘못을 했을 때 나는?",
+      "en": "When your partner makes a mistake, you usually:",
+      "ja": "恋人がミスや過ちをしたとき、あなたは？",
+      "zh-CN": "恋人犯错时，你通常会？",
+      "zh-TW": "戀人犯錯時，你通常會？",
+      "vi": "Khi người yêu mắc lỗi, bạn thường:",
+      "id": "Saat pasangan berbuat salah, kamu biasanya:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "화가 나도 감정이 가라앉은 후 차분하게 이야기한다",
+          "en": "Even if upset, you talk calmly after emotions settle",
+          "ja": "怒っても落ち着いてから冷静に話す",
+          "zh-CN": "再生气也会等冷静后再好好说",
+          "zh-TW": "再生氣也會等冷靜後再好好說",
+          "vi": "Dù giận cũng đợi bình tĩnh rồi mới nói",
+          "id": "Meski marah, bicara tenang setelah emosi reda"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "빨리 털고 가고 싶어서 너무 오래 끌지 않으려 한다",
+          "en": "You don’t drag it out—you want to move on quickly",
+          "ja": "早く水に流したくて長引かせない",
+          "zh-CN": "想快点翻篇，不想拖太久",
+          "zh-TW": "想快點翻篇，不想拖太久",
+          "vi": "Muốn qua nhanh, không kéo dài",
+          "id": "Ingin cepat selesai, tidak menahan lama"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "왜 그랬는지 이해하려고 먼저 물어보는 편이다",
+          "en": "You ask what happened first, trying to understand",
+          "ja": "まずなぜそうなったか理解しようと聞く",
+          "zh-CN": "先问清楚原因，想理解对方",
+          "zh-TW": "先問清楚原因，想理解對方",
+          "vi": "Hỏi trước để hiểu vì sao",
+          "id": "Tanya dulu untuk memahami alasannya"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "잘못을 인정하고 앞으로 어떻게 할지에 집중한다",
+          "en": "You focus on owning it and what to do next",
+          "ja": "認めて、これからどうするかに集中する",
+          "zh-CN": "承认问题并聚焦接下来怎么做",
+          "zh-TW": "承認問題並聚焦接下來怎麼做",
+          "vi": "Nhận lỗi và tập trung vào bước tiếp theo",
+          "id": "Akui dan fokus pada langkah selanjutnya"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "ko": "연인이 새로운 도전이나 꿈에 대해 이야기할 때 나는?",
+      "en": "When your partner talks about a new challenge or dream, you:",
+      "ja": "恋人が新しい挑戦や夢について話すとき、あなたは？",
+      "zh-CN": "恋人谈起新挑战或梦想时，你会？",
+      "zh-TW": "戀人談起新挑戰或夢想時，你會？",
+      "vi": "Khi người yêu nói về thử thách hay ước mơ mới, bạn:",
+      "id": "Saat pasangan bicara tantangan atau mimpi baru, kamu:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "\"잘 될 거야\"라고 진심으로 응원하고 믿어준다",
+          "en": "Cheer them on sincerely—“You’ve got this.”",
+          "ja": "「うまくいくよ」と心から応援し信じる",
+          "zh-CN": "真心说“会顺利的”，相信对方",
+          "zh-TW": "真心說「會順利的」，相信對方",
+          "vi": "Động viên chân thành: “Sẽ ổn thôi.”",
+          "id": "Mendukung tulus: “Pasti bisa.”"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "같이 신나서 아이디어도 보태고 함께 상상한다",
+          "en": "You get excited together, brainstorm, and imagine with them",
+          "ja": "一緒にワクワクしてアイデアを出し合い想像する",
+          "zh-CN": "一起兴奋，出点子、一起畅想",
+          "zh-TW": "一起興奮，出點子、一起暢想",
+          "vi": "Cùng hào hứng, góp ý và tưởng tượng",
+          "id": "Sama-sama antusias, beri ide dan bayangkan bersama"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "현실적인 방법도 같이 생각해주면서 실질적으로 돕는다",
+          "en": "You think through practical steps and help in concrete ways",
+          "ja": "現実的な方法も一緒に考え、具体的に手伝う",
+          "zh-CN": "一起想现实可行的办法，实际帮忙",
+          "zh-TW": "一起想現實可行的辦法，實際幫忙",
+          "vi": "Cùng nghĩ cách thực tế và giúp cụ thể",
+          "id": "Mikir langkah realistis dan bantu secara konkret"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "말 없이 묵묵하게 옆에서 지켜봐 주고 필요할 때 힘이 되어준다",
+          "en": "You stay quietly beside them and show up when they need strength",
+          "ja": "言葉少なくそばで見守り、必要なとき力になる",
+          "zh-CN": "话不多，安静陪着，需要时成为后盾",
+          "zh-TW": "話不多，安靜陪著，需要時成為後盾",
+          "vi": "Ít nói, lặng lẽ ở bên, khi cần là chỗ dựa",
+          "id": "Diam menemani, jadi sandaran saat dibutuhkan"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "ko": "연인과의 약속이나 한 말에 대해 나는?",
+      "en": "When it comes to promises or your word to your partner, you:",
+      "ja": "恋人との約束や言ったことについて、あなたは？",
+      "zh-CN": "对恋人的承诺或说过的话，你会？",
+      "zh-TW": "對戀人的承諾或說過的話，你會？",
+      "vi": "Với lời hứa hay lời nói với người yêu, bạn:",
+      "id": "Soal janji atau perkataan pada pasangan, kamu:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "한 번 한 약속은 최대한 지키려 노력하고 못 지킬 것 같으면 미리 솔직하게 말한다",
+          "en": "You try to keep promises; if you can’t, you say so honestly ahead of time",
+          "ja": "一度した約束は守ろうとし、難しそうなら事前に正直に伝える",
+          "zh-CN": "尽量守约，做不到会提前坦诚说明",
+          "zh-TW": "盡量守約，做不到會提前坦誠說明",
+          "vi": "Cố giữ lời hứa; không được thì nói thật trước",
+          "id": "Usaha tepati janji; jika tidak bisa, jujur lebih dulu"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "약속보다 마음이 중요하다고 생각하지만 중요한 것은 꼭 지킨다",
+          "en": "You value intention over rigid rules, but you keep what truly matters",
+          "ja": "約束より気持ちも大事だが、大事なことは守る",
+          "zh-CN": "觉得心意也重要，但关键的事一定会做到",
+          "zh-TW": "覺得心意也重要，但關鍵的事一定會做到",
+          "vi": "Tâm ý quan trọng, nhưng việc quan trọng vẫn giữ",
+          "id": "Hati penting, tapi hal penting tetap ditepati"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "말보다 행동으로 보여주는 편이라 말은 적게 하고 실천을 더 중요하게 여긴다",
+          "en": "You show more through actions—fewer words, more follow-through",
+          "ja": "言葉より行動で示す。話は少なめ、実践を重視",
+          "zh-CN": "少说多做，更看重实际行动",
+          "zh-TW": "少說多做，更看重實際行動",
+          "vi": "Ít lời, làm nhiều—ưu tiên hành động",
+          "id": "Lebih banyak tunjukkan lewat tindakan daripada kata"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "일관성이 신뢰라고 생각해서 말과 행동이 같으려고 의식적으로 노력한다",
+          "en": "You work to align words and actions—consistency is trust to you",
+          "ja": "一貫性が信頼だと思い、言動を揃えようとする",
+          "zh-CN": "认为一致才可信，刻意让言行一致",
+          "zh-TW": "認為一致才可信，刻意讓言行一致",
+          "vi": "Coi sự nhất quán là niềm tin, cố đồng bộ lời nói và việc làm",
+          "id": "Konsistensi itu kepercayaan—samakan kata dan tindakan"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "ko": "연인이 나와 다른 취향이나 관심사를 가질 때?",
+      "en": "When your partner has different tastes or interests from yours:",
+      "ja": "恋人の趣味や関心が自分と違うとき？",
+      "zh-CN": "恋人与你喜好或兴趣不同时？",
+      "zh-TW": "戀人與你喜好或興趣不同時？",
+      "vi": "Khi người yêu có sở thích hoặc sở trường khác bạn:",
+      "id": "Saat pasangan punya selera atau minat berbeda:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "서로 다른 게 당연하다. 나도 관심 가져보려고 노력한다",
+          "en": "Differences are normal—you try to engage with theirs too",
+          "ja": "違うのは当然。自分も興味を持とうとする",
+          "zh-CN": "不同很正常，也会试着去了解",
+          "zh-TW": "不同很正常，也會試著去了解",
+          "vi": "Khác nhau là bình thường—cố tìm hiểu phía họ",
+          "id": "Berbeda wajar—coba ambil minat juga"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "내 것도 소개해주고 상대 것도 같이 경험해보는 게 재밌다",
+          "en": "You enjoy swapping worlds—sharing yours and trying theirs",
+          "ja": "自分のも紹介し、相手のも一緒に体験するのが楽しい",
+          "zh-CN": "互相介绍、一起体验对方的喜好很有趣",
+          "zh-TW": "互相介紹、一起體驗對方的喜好很有趣",
+          "vi": "Thích giới thiệu và cùng trải nghiệm sở thích của nhau",
+          "id": "Senang saling kenalkan dan coba minat satu sama lain"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "달라도 괜찮다. 각자의 세계를 존중하면 된다고 생각한다",
+          "en": "Different is fine—you respect each other’s separate worlds",
+          "ja": "違っても大丈夫。それぞれの世界を尊重すればいい",
+          "zh-CN": "不同也没关系，尊重彼此的世界就好",
+          "zh-TW": "不同也沒關係，尊重彼此的世界就好",
+          "vi": "Khác cũng được—tôn trọng thế giới riêng của nhau",
+          "id": "Berbeda tak masalah—hormati dunia masing-masing"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "공통점을 찾으려는 노력보다는 있는 그대로를 받아들이는 편이다",
+          "en": "You accept them as they are more than you force common ground",
+          "ja": "共通点探しより、あるがままを受け入れる",
+          "zh-CN": "比起硬找共同点，更倾向接纳本来的样子",
+          "zh-TW": "比起硬找共同點，更傾向接納本來的樣子",
+          "vi": "Chấp nhận họ đúng như họ là hơn là ép tìm điểm chung",
+          "id": "Lebih menerima apa adanya daripada memaksakan kesamaan"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "ko": "연인이 지쳐있거나 힘들어 보일 때 나의 행동은?",
+      "en": "When your partner looks tired or drained, you usually:",
+      "ja": "恋人が疲れているように見えるとき、あなたは？",
+      "zh-CN": "恋人看起来疲惫或低落时，你通常会？",
+      "zh-TW": "戀人看起來疲憊或低落時，你通常會？",
+      "vi": "Khi người yêu trông mệt hoặc buồn, bạn thường:",
+      "id": "Saat pasangan terlihat lelah atau down, kamu biasanya:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "먼저 알아채고 \"무슨 일 있어? 괜찮아?\" 하고 물어본다",
+          "en": "You notice first and ask, “Hey—everything okay?”",
+          "ja": "先に気づき「どうしたの？大丈夫？」と聞く",
+          "zh-CN": "先察觉并问“怎么了？还好吗？”",
+          "zh-TW": "先察覺並問「怎麼了？還好嗎？」",
+          "vi": "Để ý trước và hỏi “Có chuyện gì không?”",
+          "id": "Sadar dulu dan tanya “Ada apa? Kamu oke?”"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "기분 전환이 되도록 웃기거나 맛있는 것을 사주거나 가벼운 것을 제안한다",
+          "en": "You try jokes, treats, or something light to shift the mood",
+          "ja": "冗談や美味しいもの、軽い提案で気分転換を図る",
+          "zh-CN": "开玩笑、买吃的或提议轻松的事来换心情",
+          "zh-TW": "開玩笑、買吃的或提議輕鬆的事來換心情",
+          "vi": "Đùa, mời ăn, hoặc gợi ý điều nhẹ nhàng để đổi mood",
+          "id": "Bercanda, traktir, atau ajak hal ringan untuk ubah suasana"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "직접적으로 도울 수 있는 것이 있으면 바로 돕는다",
+          "en": "If you can help directly, you jump in right away",
+          "ja": "直接手伝えることがあればすぐ動く",
+          "zh-CN": "能直接帮上忙就立刻帮",
+          "zh-TW": "能直接幫上忙就立刻幫",
+          "vi": "Giúp được việc cụ thể thì làm ngay",
+          "id": "Kalau bisa bantu langsung, langsung turun tangan"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "혼자 있고 싶을 수도 있으니 필요할 때 언제든지 연락하라고 하고 기다린다",
+          "en": "You say they can reach out anytime and wait if they need space",
+          "ja": "一人になりたいかもしれないから、必要ならいつでも連絡してと伝えて待つ",
+          "zh-CN": "说需要时随时联系，给对方空间等待",
+          "zh-TW": "說需要時隨時聯絡，給對方空間等待",
+          "vi": "Bảo họ cứ liên hệ khi cần và chờ nếu họ cần không gian",
+          "id": "Katakan bisa hubungi kapan saja dan tunggu jika perlu ruang"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "ko": "연인과 갈등이 해결된 후 나는?",
+      "en": "After a conflict with your partner is resolved, you usually:",
+      "ja": "恋人との対立が解決したあと、あなたは？",
+      "zh-CN": "和恋人的矛盾解决后，你通常会？",
+      "zh-TW": "和戀人的矛盾解決後，你通常會？",
+      "vi": "Sau khi hòa giải xong với người yêu, bạn thường:",
+      "id": "Setelah konflik dengan pasangan selesai, kamu biasanya:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "완전히 털고 다시 따뜻하게 대하고 이전과 같은 분위기로 돌아온다",
+          "en": "You truly let it go and return to warmth like before",
+          "ja": "すっきり忘れて、また温かく以前と同じ空気に戻る",
+          "zh-CN": "彻底翻篇，重新温暖相处，像以前一样",
+          "zh-TW": "徹底翻篇，重新溫暖相處，像以前一樣",
+          "vi": "Buông hẳn, lại ấm áp như trước",
+          "id": "Benar-benar lepas, hangat lagi seperti dulu"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "갈등이 끝나면 오히려 더 솔직하고 가까워진 느낌이 든다",
+          "en": "You feel even more honest and close afterward",
+          "ja": "終わったあと、むしろより正直で近くなった気がする",
+          "zh-CN": "结束后反而觉得更坦诚、更亲近",
+          "zh-TW": "結束後反而覺得更坦誠、更親近",
+          "vi": "Xong rồi lại thấy gần gũi và thật thà hơn",
+          "id": "Setelahnya malah lebih jujur dan dekat"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "같은 갈등이 반복되지 않도록 내가 개선할 부분을 생각해본다",
+          "en": "You reflect on what you can improve so it doesn’t repeat",
+          "ja": "同じ対立を繰り返さないよう自分の改善点を考える",
+          "zh-CN": "思考自己能改进什么，避免同样矛盾重演",
+          "zh-TW": "思考自己能改進什麼，避免同樣矛盾重演",
+          "vi": "Nghĩ phần mình cần sửa để không lặp lại",
+          "id": "Renungkan apa yang bisa kamu perbaiki agar tidak terulang"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "끝난 건 끝난 거다. 과거를 끌고 오지 않는다",
+          "en": "What’s done is done—you don’t drag the past forward",
+          "ja": "終わったことは終わり。過去を引きずらない",
+          "zh-CN": "过去了就过去，不翻旧账",
+          "zh-TW": "過去了就過去，不翻舊帳",
+          "vi": "Xong là xong—không mang quá khứ theo",
+          "id": "Sudah selesai—tidak mengungkit masa lalu"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "ko": "연인이 친구나 가족 이야기를 할 때 나는?",
+      "en": "When your partner talks about friends or family, you usually:",
+      "ja": "恋人が友人や家族の話をするとき、あなたは？",
+      "zh-CN": "恋人聊起朋友或家人时，你通常会？",
+      "zh-TW": "戀人聊起朋友或家人時，你通常會？",
+      "vi": "Khi người yêu kể về bạn bè hay gia đình, bạn thường:",
+      "id": "Saat pasangan cerita tentang teman atau keluarga, kamu biasanya:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "이름과 상황을 기억해두고 나중에 먼저 물어봐 주는 편이다",
+          "en": "You remember names and context and check in later on your own",
+          "ja": "名前や状況を覚えて、あとで自分から聞く",
+          "zh-CN": "记住名字和情况，之后会主动问起",
+          "zh-TW": "記住名字和情況，之後會主動問起",
+          "vi": "Nhớ tên và bối cảnh, sau chủ động hỏi thăm",
+          "id": "Ingat nama dan situasi, nanti tanya sendiri"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "재밌게 들어주고 같이 리액션하면서 대화를 즐긴다",
+          "en": "You listen with fun reactions and enjoy the chat together",
+          "ja": "楽しく聞き、一緒にリアクションして会話を楽しむ",
+          "zh-CN": "开心地听，一起反应，享受聊天",
+          "zh-TW": "開心地聽，一起反應，享受聊天",
+          "vi": "Nghe vui, phản ứng cùng, tận hưởng cuộc trò chuyện",
+          "id": "Dengar dengan seru, bereaksi bersama"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "조언이 필요해 보이면 실질적인 의견을 제시한다",
+          "en": "If advice seems needed, you offer practical input",
+          "ja": "アドバイスが必要そうなら具体的な意見を出す",
+          "zh-CN": "看起来需要建议时，会给出实在的意见",
+          "zh-TW": "看起來需要建議時，會給出實在的意見",
+          "vi": "Nếu cần lời khuyên, đưa ý kiến thực tế",
+          "id": "Kalau perlu saran, beri masukan yang konkret"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "판단 없이 들어주고 상대가 원하는 방향으로 이야기를 이어간다",
+          "en": "You listen without judging and follow where they want to go",
+          "ja": "判断せず聞き、相手の望む方向に話を進める",
+          "zh-CN": "不带评判地听，顺着对方想聊的方向",
+          "zh-TW": "不帶評判地聽，順著對方想聊的方向",
+          "vi": "Lắng nghe không phán xét, theo hướng họ muốn",
+          "id": "Dengar tanpa menghakimi, ikuti arah cerita mereka"
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "ko": "나를 연인으로 갖는 것의 가장 큰 장점을 스스로 꼽는다면?",
+      "en": "If you named your biggest upside as a partner, it would be:",
+      "ja": "恋人としての自分の一番の強みを挙げるなら？",
+      "zh-CN": "若要说作为恋人你最大的优点，会是？",
+      "zh-TW": "若要說作為戀人你最大的優點，會是？",
+      "vi": "Nếu chọn điểm mạnh nhất khi làm người yêu, đó là:",
+      "id": "Kalau memilih kelebihan terbesarmu sebagai pasangan:"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "감정적으로 안정적이고 같이 있으면 편안하다",
+          "en": "Emotionally steady—being with you feels calm",
+          "ja": "感情的に安定していて、一緒にいると安心",
+          "zh-CN": "情绪稳定，在一起很安心",
+          "zh-TW": "情緒穩定，在一起很安心",
+          "vi": "Ổn định cảm xúc—ở cạnh bạn thấy an tâm",
+          "id": "Emosi stabil—bersamamu terasa tenang"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "함께 있으면 즐겁고 지루하지 않다",
+          "en": "Fun to be around—you keep things from getting boring",
+          "ja": "一緒にいて楽しく、飽きない",
+          "zh-CN": "在一起开心，不会无聊",
+          "zh-TW": "在一起開心，不會無聊",
+          "vi": "Vui khi ở cạnh—không nhàm chán",
+          "id": "Seru bareng—tidak membosankan"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "힘들 때 가장 먼저 생각나는 사람이다",
+          "en": "The first person they’d think of on a hard day",
+          "ja": "辛いとき真っ先に思い浮かぶ存在",
+          "zh-CN": "难过时最先想到的人",
+          "zh-TW": "難過時最先想到的人",
+          "vi": "Người họ nghĩ đến đầu tiên khi khó khăn",
+          "id": "Orang pertama yang mereka ingat saat sulit"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "믿을 수 있고 한결같다",
+          "en": "Reliable and consistent",
+          "ja": "信頼できて、一貫している",
+          "zh-CN": "值得信赖，始终如一",
+          "zh-TW": "值得信賴，始終如一",
+          "vi": "Đáng tin và nhất quán",
+          "id": "Bisa dipercaya dan konsisten"
+        }
+      }
+    ]
+  }
+]

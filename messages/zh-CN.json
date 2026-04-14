@@ -1352,6 +1352,60 @@
       "popularTestsTop5": "🔥 近期热门测验 Top5"
     }
   },
+  "phase3LoveGreenFlagFinderTest": {
+    "startMessage": {
+      "line1": "危险信号听得多了，你知道自己的“绿旗”是什么吗？",
+      "line2": "绿旗指你在恋爱里带给对方的积极影响，也就是你的恋爱优势。",
+      "line3": "可能是温暖的共情，也可能是坚定的信任，或是相处时的安心感。",
+      "line4": "这里没有甜腻的假夸奖；我们会坦诚指出你真正能带给对方的最亮优点。",
+      "line5": "用12道题，看看你在恋爱中的积极光谱。",
+      "line6": "测测我的恋爱绿旗 💚 自我安利开始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告区（我的恋爱绿旗是什么？）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "greenFlagType": "绿旗类型",
+      "mainTraits": "核心优势",
+      "partnerReceives": "对方能获得的",
+      "brilliantTip": "更闪耀的小贴士",
+      "goodMatch": "合拍组合",
+      "badMatch": "需注意组合",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的恋爱绿旗是 {type}！💚 太像我了～你的是啥？一起来测",
+      "kakao": "我的恋爱绿旗是 {type}！💚 太像我了～你的是啥？一起来测",
+      "wechat": "我的恋爱绿旗是 {type}！💚 太像我了～你的是啥？一起来测",
+      "whatsapp": "我的恋爱绿旗是 {type}！💚 太像我了～你的是啥？一起来测",
+      "telegram": "我的恋爱绿旗是 {type}！💚 太像我了～你的是啥？一起来测",
+      "line": "我的恋爱绿旗是 {type}！💚 太像我了～你的是啥？一起来测",
+      "startDefault": "恋爱绿旗测验 💚 12题自我安利",
+      "startKakao": "恋爱绿旗测验 💚 12题自我安利",
+      "startWechat": "恋爱绿旗测验 💚 12题自我安利",
+      "startWhatsapp": "恋爱绿旗测验 💚 12题自我安利",
+      "startTelegram": "恋爱绿旗测验 💚 12题自我安利",
+      "startLine": "恋爱绿旗测验 💚 12题自我安利"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "此设备无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测验推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测验 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "说好只看一分钟，结果两小时没了——你也经历过吧？",

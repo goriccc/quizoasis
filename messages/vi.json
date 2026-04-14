@@ -1352,6 +1352,60 @@
       "popularTestsTop5": "🔥 Top 5 quiz đang hot"
     }
   },
+  "phase3LoveGreenFlagFinderTest": {
+    "startMessage": {
+      "line1": "Cờ đỏ thì nghe nhiều rồi—còn cờ xanh của bạn là gì?",
+      "line2": "Cờ xanh là điểm mạnh trong yêu: tác động tích cực bạn mang đến cho đối phương.",
+      "line3": "Có thể là sự đồng cảm ấm áp, niềm tin vững, hay cảm giác an tâm khi ở cạnh nhau.",
+      "line4": "Không có lời khen ngọt giả. Thay vào đó, chúng mình chỉ thẳng điểm sáng nhất bạn thật sự có thể cho người yêu.",
+      "line5": "12 câu hỏi để thấy quang phổ tích cực của bạn trong yêu.",
+      "line6": "Xem cờ xanh yêu đương của tôi 💚 Bắt đầu “tự PR”"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Cờ xanh yêu đương của tôi?)",
+      "goToTest": "Làm quiz",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Quiz tương tự",
+      "greenFlagType": "Kiểu cờ xanh",
+      "mainTraits": "Điểm mạnh cốt lõi",
+      "partnerReceives": "Đối phương nhận được gì",
+      "brilliantTip": "Tip để tỏa sáng hơn",
+      "goodMatch": "Hợp cạnh",
+      "badMatch": "Cần lưu ý",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Cờ xanh yêu đương của mình là {type}! 💚 Đúng gu tui—còn bạn? Làm quiz thử!",
+      "kakao": "Cờ xanh yêu đương của mình là {type}! 💚 Đúng gu tui—còn bạn? Làm quiz thử!",
+      "wechat": "Cờ xanh yêu đương của mình là {type}! 💚 Đúng gu tui—còn bạn? Làm quiz thử!",
+      "whatsapp": "Cờ xanh yêu đương của mình là {type}! 💚 Đúng gu tui—còn bạn? Làm quiz thử!",
+      "telegram": "Cờ xanh yêu đương của mình là {type}! 💚 Đúng gu tui—còn bạn? Làm quiz thử!",
+      "line": "Cờ xanh yêu đương của mình là {type}! 💚 Đúng gu tui—còn bạn? Làm quiz thử!",
+      "startDefault": "Quiz cờ xanh yêu đương 💚 12 câu tự PR",
+      "startKakao": "Quiz cờ xanh yêu đương 💚 12 câu tự PR",
+      "startWechat": "Quiz cờ xanh yêu đương 💚 12 câu tự PR",
+      "startWhatsapp": "Quiz cờ xanh yêu đương 💚 12 câu tự PR",
+      "startTelegram": "Quiz cờ xanh yêu đương 💚 12 câu tự PR",
+      "startLine": "Quiz cờ xanh yêu đương 💚 12 câu tự PR"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi tạo. Thử lại sau ít phút.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 quiz tương tự",
+      "popularTestsTop5": "🔥 Top 5 quiz đang hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

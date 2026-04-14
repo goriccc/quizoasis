@@ -89,6 +89,10 @@ import {
   phase3LoveRedFlagFinderQuestions,
   phase3LoveRedFlagFinderResults,
 } from '@/lib/phase3LoveRedFlagFinderData';
+import {
+  phase3LoveGreenFlagFinderQuestions,
+  phase3LoveGreenFlagFinderResults,
+} from '@/lib/phase3LoveGreenFlagFinderData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -293,6 +297,10 @@ const Phase3TanjinjamSpendingTypeTestClient = dynamic(
 );
 const Phase3LoveRedFlagFinderTestClient = dynamic(
   () => import('@/components/Phase3LoveRedFlagFinderTestClient'),
+  { ssr: false }
+);
+const Phase3LoveGreenFlagFinderTestClient = dynamic(
+  () => import('@/components/Phase3LoveGreenFlagFinderTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1200,6 +1208,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         id: '12 pertanyaan pilihan ganda, 6 pola reaksi asmara — cermin jujur. #asmara #psikologi',
       },
       thumbnail: 'p3_test_love_red_flag_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: ['Love', 'Psychology'],
+        ja: ['恋愛', '心理'],
+        'zh-CN': ['恋爱', '心理'],
+        'zh-TW': ['戀愛', '心理'],
+        vi: ['Tình yêu', 'Tâm lý'],
+        id: ['Asmara', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-green-flag-finder') {
+    test = {
+      slug: 'phase3-love-green-flag-finder',
+      title: {
+        ko: '나의 연애 그린플래그는?',
+        en: 'What’s my dating green flag?',
+        ja: '私の恋愛グリーンフラッグは？',
+        'zh-CN': '我的恋爱绿旗是什么？',
+        'zh-TW': '我的戀愛綠旗是什麼？',
+        vi: 'Cờ xanh yêu đương của tôi là gì?',
+        id: 'Bendera hijau asmara saya?',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 그린플래그 스펙트럼 6유형. #연애 #심리',
+        en: '12 questions, 6 dating green-flag spectrum types. #love #psychology',
+        ja: '全12問・恋愛グリーンフラッグ6タイプ。#恋愛 #心理',
+        'zh-CN': '12 题四选一，6 种恋爱绿旗光谱。#恋爱 #心理',
+        'zh-TW': '12 題四選一，6 種戀愛綠旗光譜。#戀愛 #心理',
+        vi: '12 câu trắc nghiệm, 6 kiểu quang phổ cờ xanh yêu đương. #tìnhyêu #tâmlý',
+        id: '12 pertanyaan pilihan ganda, 6 spektrum green flag asmara. #asmara #psikologi',
+      },
+      thumbnail: 'p3_test_love_green_flag_finder.jpg',
       type: 'psychology',
       category: 'personality',
       play_count: 0,
@@ -3436,6 +3481,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LoveRedFlagFinderQuestions}
           results={phase3LoveRedFlagFinderResults}
           questionCount={phase3LoveRedFlagFinderQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-love-green-flag-finder') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-love-green-flag-finder',
+      title: {
+        ko: '나의 연애 그린플래그는?',
+        en: 'What’s my dating green flag?',
+        ja: '私の恋愛グリーンフラッグは？',
+        'zh-CN': '我的恋爱绿旗是什么？',
+        'zh-TW': '我的戀愛綠旗是什麼？',
+        vi: 'Cờ xanh yêu đương của tôi là gì?',
+        id: 'Bendera hijau asmara saya?',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 그린플래그 스펙트럼 6유형. #연애 #심리',
+        en: '12 questions, 6 dating green-flag spectrum types. #love #psychology',
+        ja: '全12問・恋愛グリーンフラッグ6タイプ。#恋愛 #心理',
+        'zh-CN': '12 题四选一，6 种恋爱绿旗光谱。#恋爱 #心理',
+        'zh-TW': '12 題四選一，6 種戀愛綠旗光譜。#戀愛 #心理',
+        vi: '12 câu trắc nghiệm, 6 kiểu quang phổ cờ xanh yêu đương. #tìnhyêu #tâmlý',
+        id: '12 pertanyaan pilihan ganda, 6 spektrum green flag asmara. #asmara #psikologi',
+      },
+      thumbnail: 'p3_test_love_green_flag_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: ['Love', 'Psychology'],
+        ja: ['恋愛', '心理'],
+        'zh-CN': ['恋爱', '心理'],
+        'zh-TW': ['戀愛', '心理'],
+        vi: ['Tình yêu', 'Tâm lý'],
+        id: ['Asmara', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LoveGreenFlagFinderTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LoveGreenFlagFinderQuestions}
+          results={phase3LoveGreenFlagFinderResults}
+          questionCount={phase3LoveGreenFlagFinderQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

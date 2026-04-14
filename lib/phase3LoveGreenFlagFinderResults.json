@@ -1,0 +1,566 @@
+[
+  {
+    "type": "Type1",
+    "emoji": "🫂",
+    "title": {
+      "ko": "곁에 있으면 마음이 녹는, 공감 & 위로형 그린플래그",
+      "en": "Heart-melting empathy & comfort green flag",
+      "ja": "そばにいると心が溶ける・共感＆癒し型グリーンフラッグ",
+      "zh-CN": "在身边就安心的共情与安慰型绿旗",
+      "zh-TW": "在身邊就安心的共情與安慰型綠旗",
+      "vi": "Cờ xanh đồng cảm & an ủi — ở cạnh là thấy dịu lòng",
+      "id": "Bendera hijau empati & penenang — dekatmu rasanya hangat"
+    },
+    "shortDescription": {
+      "ko": "당신의 가장 큰 그린플래그는 깊은 공감 능력과 따뜻한 위로입니다.",
+      "en": "Your biggest green flag is deep empathy and warm comfort.",
+      "ja": "あなたの最大のグリーンフラッグは深い共感力と温かい寄り添いです。",
+      "zh-CN": "你最突出的绿旗是深度共情与温暖安慰。",
+      "zh-TW": "你最突出的綠旗是深度共情與溫暖安慰。",
+      "vi": "Điểm mạnh nhất của bạn là đồng cảm sâu và sự an ủi ấm áp.",
+      "id": "Kekuatan terbesarmu adalah empati mendalam dan penghiburan hangat."
+    },
+    "description": {
+      "ko": "당신 곁에 있으면 말하지 않아도 위로받는 느낌이 납니다. 상대의 감정을 있는 그대로 받아들이고, 끝까지 들어주는 능력이 탁월합니다. 힘든 날, 가장 먼저 연락하고 싶은 사람이 바로 당신입니다. 판단 없이 들어주고, 충분히 공감해주고, 조용히 곁에 있어주는 것. 이것이 당신이 연인에게 줄 수 있는 가장 소중한 선물입니다.",
+      "en": "Just being near you can feel comforting—even without words. You take in their feelings as they are and listen all the way through. On hard days, you’re the person they want to reach first. Nonjudgmental listening, real empathy, quiet presence: that’s one of the most precious gifts you give a partner.",
+      "ja": "あなたのそばにいると、言葉がなくても癒やされる。相手の感情をそのまま受け止め、最後まで聞ける力に長けています。辛い日、真っ先に連絡したくなるのがあなた。判断せずに聴き、十分に共感し、静かにそばにいる——それはパートナーにできるかけがえのない贈り物です。",
+      "zh-CN": "在你身边，即使不说也能感到被安慰。你能原样接纳对方的情绪，并倾听到底。难熬的日子里，你会是对方最想联系的人。不带评判地听、充分共情、安静陪伴——这是你给恋人最珍贵的礼物之一。",
+      "zh-TW": "在你身邊，即使不說也能感到被安慰。你能原樣接納對方的情緒，並傾聽到底。難熬的日子裡，你會是對方最想聯絡的人。不帶評判地聽、充分共情、安靜陪伴——這是你給戀人最珍貴的禮物之一。",
+      "vi": "Ở cạnh bạn, dù không nói vẫn thấy được an ủi. Bạn nhận cảm xúc của đối phương đúng như vậy và lắng nghe trọn vẹn. Ngày khó khăn, họ muốn nhắn cho bạn trước tiên. Nghe không phán xét, đồng cảm đủ sâu, lặng lẽ ở bên—đó là món quà quý nhất bạn có thể cho người yêu.",
+      "id": "Di dekatmu, tanpa banyak kata pun terasa menenangkan. Kamu menerima perasaan pasangan apa adanya dan mendengarkan sampai tapi. Di hari berat, kamu orang pertama yang ingin mereka hubungi. Mendengarkan tanpa menghakimi, empati sungguh-sungguh, hadir dengan tenang—itulah hadiah paling berharga yang bisa kamu berikan."
+    },
+    "greenFlagTypeLabel": {
+      "ko": "공감 & 위로형 (Empathy Master)",
+      "en": "Empathy & comfort (Empathy Master)",
+      "ja": "共感＆癒し型（Empathy Master）",
+      "zh-CN": "共情与安慰型（Empathy Master）",
+      "zh-TW": "共情與安慰型（Empathy Master）",
+      "vi": "Đồng cảm & an ủi (Empathy Master)",
+      "id": "Empati & penenang (Empathy Master)"
+    },
+    "mainTraits": {
+      "ko": "경청, 공감, 감정 수용, 안정감 제공",
+      "en": "Listening, empathy, emotional acceptance, steady calm",
+      "ja": "傾聴、共感、感情の受容、安心感の提供",
+      "zh-CN": "倾听、共情、接纳情绪、提供安定感",
+      "zh-TW": "傾聽、共情、接納情緒、提供安定感",
+      "vi": "Lắng nghe, đồng cảm, chấp nhận cảm xúc, mang lại sự an tâm",
+      "id": "Mendengarkan, empati, menerima emosi, memberi rasa tenang"
+    },
+    "partnerReceives": {
+      "ko": "\"이 사람이랑 있으면 아무 말 안 해도 마음이 편해\"",
+      "en": "\"With them, I feel at ease even when we’re quiet.\"",
+      "ja": "「この人といると、何も言わなくても心が楽」",
+      "zh-CN": "“和TA在一起，不说话也很安心。”",
+      "zh-TW": "「和TA在一起，不說話也很安心。」",
+      "vi": "“Ở cạnh người này, im lặng cũng thấy nhẹ lòng.”",
+      "id": "“Bareng mereka, diam pun rasanya tenang.”"
+    },
+    "brilliantTip": {
+      "ko": "위로만큼이나 당신 자신의 감정도 표현해보세요. 주기만 하다 소진될 수 있습니다.",
+      "en": "Share your own feelings too—comforting others without refueling yourself can drain you.",
+      "ja": "癒すだけでなく、自分の気持ちも表現して。与えるばかりだと枯れます。",
+      "zh-CN": "安慰别人的同时，也试着表达自己的感受；只付出不补充容易耗竭。",
+      "zh-TW": "安慰別人的同時，也試著表達自己的感受；只付出不補充容易耗竭。",
+      "vi": "An ủi người khác nhưng cũng nói cảm xúc của bạn—chỉ cho đi mãi dễ kiệt sức.",
+      "id": "Menenangkan orang lain tapi sampaikan juga perasaanmu—hanya memberi tanpa mengisi bisa menguras."
+    },
+    "goodMatch": {
+      "ko": "Type 2 (밝은 에너지가 당신의 따뜻함과 완벽하게 어울림)",
+      "en": "Type 2 (bright energy pairs beautifully with your warmth)",
+      "ja": "Type 2（明るいエネルギーがあなたの温かさと最高に合う）",
+      "zh-CN": "Type 2（阳光能量与你的温暖绝配）",
+      "zh-TW": "Type 2（陽光能量與你的溫暖絕配）",
+      "vi": "Type 2 (năng lượng tươi sáng hợp với sự ấm áp của bạn)",
+      "id": "Type 2 (energi ceria cocok dengan kehangatanmu)"
+    },
+    "badMatch": {
+      "ko": "Type 5 (한결같음만 원하는 상대에게 당신의 감성이 부담될 수 있음)",
+      "en": "Type 5 (your depth may feel heavy to someone who only wants steadiness)",
+      "ja": "Type 5（一貫性だけを求める相手には、あなたの感性が重く感じることがある）",
+      "zh-CN": "Type 5（若对方只想要稳定，你的感性可能显得有负担）",
+      "zh-TW": "Type 5（若對方只想要穩定，你的感性可能顯得有負擔）",
+      "vi": "Type 5 (với người chỉ cần sự ổn định, chiều sâu cảm xúc của bạn có thể nặng)",
+      "id": "Type 5 (bagi yang hanya ingin konsistensi, kedalamanmu bisa terasa berat)"
+    },
+    "shareTypeName": {
+      "ko": "공감 & 위로형",
+      "en": "Empathy & comfort",
+      "ja": "共感＆癒し型",
+      "zh-CN": "共情与安慰型",
+      "zh-TW": "共情與安慰型",
+      "vi": "Đồng cảm & an ủi",
+      "id": "Empati & penenang"
+    }
+  },
+  {
+    "type": "Type2",
+    "emoji": "☀️",
+    "title": {
+      "ko": "같이 있으면 절대 안 심심한, 유머 & 활력형 그린플래그",
+      "en": "Never boring—humor & energy green flag",
+      "ja": "一緒にいたら絶対に飽きない・ユーモア＆活力型",
+      "zh-CN": "在一起绝不无聊的幽默与活力型绿旗",
+      "zh-TW": "在一起絕不無聊的幽默與活力型綠旗",
+      "vi": "Cờ xanh hài hước & năng lượng — chẳng bao giờ nhàm",
+      "id": "Bendera hijau humor & energi — tidak pernah membosankan"
+    },
+    "shortDescription": {
+      "ko": "당신의 가장 큰 그린플래그는 함께 있을 때 넘치는 즐거움과 활력입니다.",
+      "en": "Your biggest green flag is the joy and energy you bring when you’re together.",
+      "ja": "あなたの最大のグリーンフラッグは、一緒にいるときの溢れる楽しさと活力です。",
+      "zh-CN": "你最突出的绿旗是相处时的快乐与活力。",
+      "zh-TW": "你最突出的綠旗是相處時的快樂與活力。",
+      "vi": "Điểm mạnh nhất là niềm vui và năng lượng khi ở bên nhau.",
+      "id": "Kekuatan terbesarmu adalah kesenangan dan energi saat bersama."
+    },
+    "description": {
+      "ko": "당신과 함께하면 시간이 빠르게 지나갑니다. 지루한 상황도 재미있게 바꾸고, 분위기를 밝게 만드는 능력이 있습니다. 힘든 날에도 웃음을 만들어주고, 일상을 특별하게 바꿔주는 사람입니다. 연인에게 \"이 사람이랑 있으면 진짜 재밌어\"라는 말을 자주 듣는 타입입니다. 관계의 활력소 역할을 자연스럽게 해냅니다.",
+      "en": "Time flies with you—you turn dull moments fun and lift the room. Even on rough days you bring laughter and make the ordinary feel special. Partners often say, “They’re just fun to be around.” You’re a natural spark plug for the relationship.",
+      "ja": "一緒にいると時間があっという間。退屈な場面も楽しくし、空気を明るくします。辛い日にも笑いを作り、日常を特別にしてくれる人。「この人といると本当に楽しい」とよく言われるタイプ。関係の活力源です。",
+      "zh-CN": "和你在一起时间过得很快。你能把无聊变有趣、点亮气氛，难过时也能带来笑声，让日常变得特别。恋人常觉得“和TA在一起真的很好玩”。你是关系里的天然活力源。",
+      "zh-TW": "和你在一起時間過得很快。你能把無聊變有趣、點亮氣氛，難過時也能帶來笑聲，讓日常變得特別。戀人常覺得「和TA在一起真的很好玩」。你是關係裡的天然活力源。",
+      "vi": "Ở cạnh bạn thời gian trôi nhanh. Bạn biến phút chán thành vui, sáng cả không khí. Ngày khó cũng có cười, đời thường cũng thấy đặc biệt. Người yêu hay nói “Ở cạnh họ vui thật.” Bạn là nguồn năng lượng của mối quan hệ.",
+      "id": "Waktu terasa cepat bersamamu. Kamu ubah situasi membosankan jadi seru dan ceriakan suasana. Hari berat pun ada tawanya. Pasangan sering bilang “Bareng mereka seru.” Kamu penyegar alami dalam hubungan."
+    },
+    "greenFlagTypeLabel": {
+      "ko": "유머 & 활력형 (Energy Booster)",
+      "en": "Humor & energy (Energy Booster)",
+      "ja": "ユーモア＆活力型（Energy Booster）",
+      "zh-CN": "幽默与活力型（Energy Booster）",
+      "zh-TW": "幽默與活力型（Energy Booster）",
+      "vi": "Hài hước & năng lượng (Energy Booster)",
+      "id": "Humor & energi (Energy Booster)"
+    },
+    "mainTraits": {
+      "ko": "유머 감각, 긍정 에너지, 분위기 전환, 일상의 즐거움",
+      "en": "Humor, positive energy, mood shifts, everyday joy",
+      "ja": "ユーモア、前向きなエネルギー、空気の切り替え、日常の楽しさ",
+      "zh-CN": "幽默感、正向能量、转换气氛、日常乐趣",
+      "zh-TW": "幽默感、正向能量、轉換氣氛、日常樂趣",
+      "vi": "Hài hước, năng lượng tích cực, đổi khí, niềm vui đời thường",
+      "id": "Humor, energi positif, ubah suasana, kesenangan sehari-hari"
+    },
+    "partnerReceives": {
+      "ko": "\"얘랑 있으면 지루한 날이 없어. 맨날 웃음\"",
+      "en": "\"No boring days with them—always laughing.\"",
+      "ja": "「一緒にいると退屈しない。いつも笑い」",
+      "zh-CN": "“和TA在一起不会无聊，总是笑。”",
+      "zh-TW": "「和TA在一起不會無聊，總是笑。」",
+      "vi": "“Ở cạnh họ chẳng ngày nào chán—cười suốt.”",
+      "id": "“Bareng mereka nggak pernah bosan—ketawa terus.”"
+    },
+    "brilliantTip": {
+      "ko": "재미있는 것만큼이나 진지한 대화도 즐겨보세요. 깊이가 더해지면 관계가 더 단단해집니다.",
+      "en": "Lean into serious talks too—depth makes the relationship sturdier.",
+      "ja": "楽しさだけでなく、真面目な会話も。深みが増すと関係が強くなります。",
+      "zh-CN": "除了好玩，也试试深入对话；有深度关系更稳。",
+      "zh-TW": "除了好玩，也試試深入對話；有深度關係更穩。",
+      "vi": "Ngoài vui ra, hãy thử trò chuyện sâu—chiều sâu giúp quan hệ vững hơn.",
+      "id": "Selain seru, coba obrol serius—kedalaman bikin hubungan kokoh."
+    },
+    "goodMatch": {
+      "ko": "Type 1 (따뜻함과 즐거움이 만나면 완벽한 조합)",
+      "en": "Type 1 (warmth + fun is a perfect combo)",
+      "ja": "Type 1（温かさと楽しさが合う最高の組み合わせ）",
+      "zh-CN": "Type 1（温暖与快乐是绝配）",
+      "zh-TW": "Type 1（溫暖與快樂是絕配）",
+      "vi": "Type 1 (ấm áp + vui — combo hoàn hảo)",
+      "id": "Type 1 (hangat + seru — kombinasi pas)"
+    },
+    "badMatch": {
+      "ko": "Type 3 (감정적으로 깊은 연결을 원하는 상대와는 방향이 다를 수 있음)",
+      "en": "Type 3 (may mismatch someone craving deep emotional bonding)",
+      "ja": "Type 3（深い感情的つながりを求める相手とは方向が違うことがある）",
+      "zh-CN": "Type 3（与非常追求深层情感连接的人方向可能不同）",
+      "zh-TW": "Type 3（與非常追求深層情感連結的人方向可能不同）",
+      "vi": "Type 3 (có thể lệch với người cần kết nối cảm xúc sâu)",
+      "id": "Type 3 (bisa berbeda arah dengan yang ingin ikatan emosional dalam)"
+    },
+    "shareTypeName": {
+      "ko": "유머 & 활력형",
+      "en": "Humor & energy",
+      "ja": "ユーモア＆活力型",
+      "zh-CN": "幽默与活力型",
+      "zh-TW": "幽默與活力型",
+      "vi": "Hài hước & năng lượng",
+      "id": "Humor & energi"
+    }
+  },
+  {
+    "type": "Type3",
+    "emoji": "💪",
+    "title": {
+      "ko": "힘들 때 제일 먼저 생각나는, 든든한 지지자형 그린플래그",
+      "en": "Rock-solid supporter—first call on a hard day",
+      "ja": "辛いとき真っ先に思い浮かぶ・頼れる支援者型",
+      "zh-CN": "难过时最先想到的可靠支持者型绿旗",
+      "zh-TW": "難過時最先想到的可靠支持者型綠旗",
+      "vi": "Người được nhớ đến đầu tiên ngày khó — kiểu đồng hành vững chãi",
+      "id": "Yang pertama diingat saat sulit — pendukung setia"
+    },
+    "shortDescription": {
+      "ko": "당신의 가장 큰 그린플래그는 어떤 상황에서도 흔들리지 않는 지지와 응원입니다.",
+      "en": "Your biggest green flag is steady support and real cheerleading—no matter what.",
+      "ja": "あなたの最大のグリーンフラッグは、どんな状況でも揺らがない支えと応援です。",
+      "zh-CN": "你最突出的绿旗是始终不动摇的支持与鼓励。",
+      "zh-TW": "你最突出的綠旗是始終不動搖的支持與鼓勵。",
+      "vi": "Điểm mạnh nhất là sự ủng hộ không lay chuyển dù thế nào.",
+      "id": "Kekuatan terbesarmu adalah dukungan yang teguh dalam situasi apa pun."
+    },
+    "description": {
+      "ko": "당신은 연인의 꿈과 도전을 진심으로 믿어주고 응원하는 사람입니다. 잘될 거라는 말이 공허하게 들리지 않고, 정말로 믿어주는 것이 느껴집니다. 연인이 힘든 순간, 가장 먼저 떠오르는 이름이 바로 당신입니다. 말로만 응원하는 것이 아니라 실질적으로 함께 고민하고 방법을 찾아주는 든든한 존재입니다.",
+      "en": "You truly believe in your partner’s dreams and challenges—your “you’ve got this” lands as real, not hollow. On tough days, you’re the name they think of first. You don’t just cheer; you problem-solve beside them.",
+      "ja": "恋人の夢や挑戦を本気で信じ、応援します。「大丈夫」の一言が空々しくなく、本当に信じているのが伝わります。辛い瞬間、真っ先に思い浮かぶのがあなた。口だけでなく、一緒に考えて道を探す頼れる存在です。",
+      "zh-CN": "你真心相信并支持恋人的梦想与挑战，“会好的”听起来并不空洞。艰难时刻，你会是对方最先想到的人。你不只口头加油，还会一起想办法、实打实地帮上忙。",
+      "zh-TW": "你真心相信並支持戀人的夢想與挑戰，「會好的」聽起來並不空洞。艱難時刻，你會是對方最先想到的人。你不只口頭加油，還會一起想辦法、實打實地幫上忙。",
+      "vi": "Bạn thật lòng tin và cổ vũ ước mơ, thử thách của đối phương—lời động viên không hời hợt. Lúc khó, họ nghĩ đến bạn trước. Bạn không chỉ nói mà còn cùng tìm cách, đứng bên thực sự.",
+      "id": "Kamu benar-benar percaya dan mendukung mimpi serta tantangan pasangan—kata penyemangatmu terasa tulus. Di saat sulit, kamu yang pertama terlintas. Bukan cuma bicara, kamu ikut mikirkan solusi."
+    },
+    "greenFlagTypeLabel": {
+      "ko": "든든한 지지자형 (Steadfast Supporter)",
+      "en": "Steadfast supporter",
+      "ja": "頼れる支援者型（Steadfast Supporter）",
+      "zh-CN": "可靠支持者型（Steadfast Supporter）",
+      "zh-TW": "可靠支持者型（Steadfast Supporter）",
+      "vi": "Người đồng hành vững (Steadfast Supporter)",
+      "id": "Pendukung teguh (Steadfast Supporter)"
+    },
+    "mainTraits": {
+      "ko": "진심 어린 응원, 실질적 지지, 함께 해결하는 능력",
+      "en": "Sincere cheer, practical support, solving together",
+      "ja": "本気の応援、実質的な支え、一緒に解決する力",
+      "zh-CN": "真诚鼓励、实质支持、一起解决",
+      "zh-TW": "真誠鼓勵、實質支持、一起解決",
+      "vi": "Cổ vũ chân thành, hỗ trợ thực tế, cùng giải quyết",
+      "id": "Semangat tulus, dukungan nyata, menyelesaikan bersama"
+    },
+    "partnerReceives": {
+      "ko": "\"힘들 때 제일 먼저 생각나는 사람. 내 편이 확실해\"",
+      "en": "\"They’re who I think of first on a bad day—I know they’re on my side.\"",
+      "ja": "「辛いとき真っ先に思い浮かぶ。味方だと分かる」",
+      "zh-CN": "“难过时最先想到的人，确定是我的队友。”",
+      "zh-TW": "「難過時最先想到的人，確定是我的隊友。」",
+      "vi": "“Ngày khó nhớ đến trước—chắc chắn là người bên mình.”",
+      "id": "“Saat sulit ingat dulu—jelas ada di pihakku.”"
+    },
+    "brilliantTip": {
+      "ko": "응원만큼이나 연인이 쉬고 싶을 때 쉬게도 해주세요. 지지가 압박이 되지 않도록요.",
+      "en": "Cheer—and also let them rest. Support shouldn’t feel like pressure.",
+      "ja": "応援だけでなく、休みたいときは休めるように。支えが圧にならないように。",
+      "zh-CN": "鼓励之外，也允许对方休息；支持别变成压力。",
+      "zh-TW": "鼓勵之外，也允許對方休息；支持別變成壓力。",
+      "vi": "Cổ vũ nhưng cũng để họ nghỉ—đừng để hỗ trợ thành áp lực.",
+      "id": "Dukung tapi biarkan mereka istirahat—jangan sampai dukungan jadi tekanan."
+    },
+    "goodMatch": {
+      "ko": "Type 4 (안정감과 지지가 만나면 서로 단단해짐)",
+      "en": "Type 4 (stability + support can make you both stronger)",
+      "ja": "Type 4（安心感と支援が合うとお互いに強くなる）",
+      "zh-CN": "Type 4（稳定感与支持叠加会更稳固）",
+      "zh-TW": "Type 4（穩定感與支持疊加會更穩固）",
+      "vi": "Type 4 (ổn định + hỗ trợ làm cả hai vững hơn)",
+      "id": "Type 4 (stabilitas + dukungan bikin kalian lebih kuat)"
+    },
+    "badMatch": {
+      "ko": "Type 2 (가볍고 즐거운 것을 원하는 상대와는 무게감이 다를 수 있음)",
+      "en": "Type 2 (your weight may feel heavy to someone who wants things light and fun)",
+      "ja": "Type 2（軽く楽しい関係を求める相手には重く感じることがある）",
+      "zh-CN": "Type 2（若对方只想轻松开心，你的分量可能显得重）",
+      "zh-TW": "Type 2（若對方只想輕鬆開心，你的分量可能顯得重）",
+      "vi": "Type 2 (với người chỉ muốn nhẹ và vui, độ “nặng” của bạn có thể khác)",
+      "id": "Type 2 (bagi yang mau ringan-seru, kedalamanmu bisa terasa beda)"
+    },
+    "shareTypeName": {
+      "ko": "든든한 지지자형",
+      "en": "Steadfast supporter",
+      "ja": "頼れる支援者型",
+      "zh-CN": "可靠支持者型",
+      "zh-TW": "可靠支持者型",
+      "vi": "Người đồng hành vững",
+      "id": "Pendukung setia"
+    }
+  },
+  {
+    "type": "Type4",
+    "emoji": "🏔️",
+    "title": {
+      "ko": "말보다 행동으로 증명하는, 신뢰 & 안정형 그린플래그",
+      "en": "Trust & stability—proof in actions, not noise",
+      "ja": "言葉より行動で示す・信頼＆安定型",
+      "zh-CN": "用行动证明的信任与稳定型绿旗",
+      "zh-TW": "用行動證明的信任與穩定型綠旗",
+      "vi": "Tin cậy & ổn định — chứng minh bằng hành động",
+      "id": "Kepercayaan & stabilitas — dibuktikan dengan tindakan"
+    },
+    "shortDescription": {
+      "ko": "당신의 가장 큰 그린플래그는 흔들리지 않는 한결같음과 신뢰감입니다.",
+      "en": "Your biggest green flag is unwavering consistency and trust.",
+      "ja": "あなたの最大のグリーンフラッグは、揺るがない一貫性と信頼感です。",
+      "zh-CN": "你最突出的绿旗是始终如一的可靠与信任。",
+      "zh-TW": "你最突出的綠旗是始終如一的可靠與信任。",
+      "vi": "Điểm mạnh nhất là sự nhất quán và độ tin cậy không lay chuyển.",
+      "id": "Kekuatan terbesarmu adalah konsistensi dan kepercayaan yang teguh."
+    },
+    "description": {
+      "ko": "당신은 말이 많지 않아도 행동으로 믿음을 줍니다. 한 번 한 말은 지키려 하고, 감정 기복 없이 일관되게 대하며, 오래될수록 더 안심이 되는 사람입니다. 연인이 당신 곁에서 긴장을 풀고 편안해질 수 있는 이유는 당신이 예측 가능하고 안정적이기 때문입니다. 관계에서 가장 오래가는 신뢰를 만드는 타입입니다.",
+      "en": "You don’t need many words—your actions build trust. You try to keep what you say, stay steady without wild swings, and feel safer the longer someone knows you. Partners relax around you because you’re predictable in the best way. You build the kind of trust that lasts.",
+      "ja": "言葉は少なくても行動で信頼を積み上げます。一度言ったことは守ろうとし、感情の波に振り回されず一貫しています。長くいるほど安心できる人。予測可能で安定しているから、そばで緊張がほどける。長く続く信頼をつくるタイプです。",
+      "zh-CN": "你话不多，但用行动建立信任。说过的话会尽力做到，情绪起伏不大、待人一致，越久越让人安心。恋人因你可预期且稳定而放松。你是能建立长久信任的类型。",
+      "zh-TW": "你話不多，但用行動建立信任。說過的話會盡力做到，情緒起伏不大、待人一致，越久越讓人安心。戀人因你可預期且穩定而放鬆。你是能建立長久信任的類型。",
+      "vi": "Ít lời nhưng hành động tạo tin cậy. Giữ lời, ổn định không thất thường, càng lâu càng an tâm. Người yêu thư giãn vì bạn đoán được và vững. Bạn xây niềm tin bền lâu.",
+      "id": "Sedikit bicara, banyak bukti. Menepati kata, stabil tanpa naik-turun ekstrem, makin lama makin menenangkan. Pasangan lega karena kamu konsisten. Kamu membangun kepercayaan yang tahan lama."
+    },
+    "greenFlagTypeLabel": {
+      "ko": "신뢰 & 안정형 (Reliable Rock)",
+      "en": "Trust & stability (Reliable Rock)",
+      "ja": "信頼＆安定型（Reliable Rock）",
+      "zh-CN": "信任与稳定型（Reliable Rock）",
+      "zh-TW": "信任與穩定型（Reliable Rock）",
+      "vi": "Tin cậy & ổn định (Reliable Rock)",
+      "id": "Kepercayaan & stabilitas (Reliable Rock)"
+    },
+    "mainTraits": {
+      "ko": "일관성, 약속 이행, 감정 안정성, 장기적 신뢰 형성",
+      "en": "Consistency, follow-through, emotional steadiness, long-term trust",
+      "ja": "一貫性、約束の履行、感情の安定、長期的な信頼形成",
+      "zh-CN": "一致性、守约、情绪稳定、长期信任",
+      "zh-TW": "一致性、守約、情緒穩定、長期信任",
+      "vi": "Nhất quán, giữ lời, ổn định cảm xúc, tin cậy dài hạn",
+      "id": "Konsistensi, menepati janji, emosi stabil, kepercayaan jangka panjang"
+    },
+    "partnerReceives": {
+      "ko": "\"이 사람은 믿어도 돼. 한결같아서 마음이 놓여\"",
+      "en": "\"I can rely on them—they’re steady, so I can breathe.\"",
+      "ja": "「この人は信じていい。一貫していて安心」",
+      "zh-CN": "“可以信任TA，始终如一，心里踏实。”",
+      "zh-TW": "「可以信任TA，始終如一，心裡踏實。」",
+      "vi": "“Tin được—nhất quán nên thấy nhẹ người.”",
+      "id": "“Bisa dipercaya—konsisten jadi tenang.”"
+    },
+    "brilliantTip": {
+      "ko": "한결같은 것만큼이나 가끔 깜짝 이벤트나 다정한 표현도 섞어보세요. 안정감에 설렘이 더해집니다.",
+      "en": "Add occasional surprises and affection—steady plus spark feels amazing.",
+      "ja": "一貫性だけでなく、たまのサプライズや愛情表現も。安定にドキドキが加わります。",
+      "zh-CN": "稳定之外，偶尔来点惊喜与温柔表达，安定里加点心动。",
+      "zh-TW": "穩定之外，偶爾來點驚喜與溫柔表達，安定裡加點心動。",
+      "vi": "Thỉnh thoảng bất ngờ và cử chỉ ấm—ổn định thêm chút rung động.",
+      "id": "Sesekali kejutan dan kasih sayang—stabil plus sedikit kilau."
+    },
+    "goodMatch": {
+      "ko": "Type 3 (지지와 신뢰가 합쳐지면 관계가 더 단단해짐)",
+      "en": "Type 3 (support + trust together can feel unshakable)",
+      "ja": "Type 3（支えと信頼が合わさると関係がより強くなる）",
+      "zh-CN": "Type 3（支持加信任，关系更牢固）",
+      "zh-TW": "Type 3（支持加信任，關係更牢固）",
+      "vi": "Type 3 (hỗ trợ + tin cậy làm quan hệ vững hơn)",
+      "id": "Type 3 (dukungan + kepercayaan bikin hubungan kokoh)"
+    },
+    "badMatch": {
+      "ko": "Type 2 (늘 새로운 자극을 원하는 상대에게 안정감이 심심하게 느껴질 수 있음)",
+      "en": "Type 2 (your calm may feel “too quiet” to someone who craves constant novelty)",
+      "ja": "Type 2（常に刺激を求める相手には、安定が物足りなく感じることがある）",
+      "zh-CN": "Type 2（若对方总想新鲜刺激，你的稳定可能显得平淡）",
+      "zh-TW": "Type 2（若對方總想新鮮刺激，你的穩定可能顯得平淡）",
+      "vi": "Type 2 (với người cần kích thích liên tục, sự ổn định có thể thấy nhàm)",
+      "id": "Type 2 (bagi yang haus rangsang baru, ketenanganmu bisa terasa datar)"
+    },
+    "shareTypeName": {
+      "ko": "신뢰 & 안정형",
+      "en": "Trust & stability",
+      "ja": "信頼＆安定型",
+      "zh-CN": "信任与稳定型",
+      "zh-TW": "信任與穩定型",
+      "vi": "Tin cậy & ổn định",
+      "id": "Kepercayaan & stabilitas"
+    }
+  },
+  {
+    "type": "Type5",
+    "emoji": "🌿",
+    "title": {
+      "ko": "각자의 삶을 존중하는, 독립 & 균형형 그린플래그",
+      "en": "Independence & balance—respect for each other’s lives",
+      "ja": "それぞれの人生を尊重する・独立＆バランス型",
+      "zh-CN": "尊重彼此生活的独立与平衡型绿旗",
+      "zh-TW": "尊重彼此生活的獨立與平衡型綠旗",
+      "vi": "Độc lập & cân bằng — tôn trọng cuộc sống riêng",
+      "id": "Independen & seimbang — hormati hidup masing-masing"
+    },
+    "shortDescription": {
+      "ko": "당신의 가장 큰 그린플래그는 서로의 공간과 삶을 자연스럽게 존중하는 것입니다.",
+      "en": "Your biggest green flag is naturally respecting space and separate lives.",
+      "ja": "あなたの最大のグリーンフラッグは、お互いの空間と人生を自然に尊重することです。",
+      "zh-CN": "你最突出的绿旗是自然尊重彼此的空间与生活。",
+      "zh-TW": "你最突出的綠旗是自然尊重彼此的空間與生活。",
+      "vi": "Điểm mạnh nhất là tôn trọng không gian và cuộc sống riêng một cách tự nhiên.",
+      "id": "Kekuatan terbesarmu adalah menghormati ruang dan hidup masing-masing secara alami."
+    },
+    "description": {
+      "ko": "당신은 연애를 하면서도 서로의 독립성을 잃지 않는 건강한 관계를 만드는 사람입니다. 붙어있지 않아도 불안하지 않고, 각자의 삶이 있어도 관계가 흔들리지 않습니다. 연인이 자신의 친구를 만나고 취미를 즐기는 것을 진심으로 응원합니다. 집착이나 통제 없이 서로가 성장하는 관계를 만드는 것이 당신의 가장 큰 그린플래그입니다.",
+      "en": "You can love without losing independence. You’re not anxious when you’re apart, and the relationship stays solid even with full lives on each side. You genuinely cheer for their friends and hobbies. Your green flag is growth without control or clinginess.",
+      "ja": "恋愛しながらも自立を失わない健全な関係をつくります。くっついていなくても不安にならず、それぞれの生活があっても揺れません。友人や趣味を心から応援できます。執着やコントロールなしに成長できる関係——それが最大のグリーンフラッグです。",
+      "zh-CN": "恋爱中仍保有独立，不黏在一起也不焦虑，各自有生活关系也稳。你真心支持对方见朋友、发展兴趣。最大的绿旗是：不控制、不黏人，让彼此成长。",
+      "zh-TW": "戀愛中仍保有獨立，不黏在一起也不焦慮，各自有生活關係也穩。你真心支持對方見朋友、發展興趣。最大的綠旗是：不控制、不黏人，讓彼此成長。",
+      "vi": "Yêu mà vẫn độc lập. Không dính nhau vẫn không loạn; mỗi người có đời riêng mà mối quan hệ vẫn vững. Bạn cổ vui khi họ gặp bạn bè và sở thích. Cờ xanh lớn nhất: không kiểm soát, không bám víu—để nhau trưởng thành.",
+      "id": "Bisa cinta tanpa kehilangan independensi. Terpisah tidak cemas; punya hidup masing-masing hubungan tetap kokoh. Kamu dukung teman dan hobinya dengan tulus. Bendera hijau terbesar: tanpa kontrol dan posesif—saling tumbuh."
+    },
+    "greenFlagTypeLabel": {
+      "ko": "독립 & 균형형 (Healthy Distance Keeper)",
+      "en": "Independence & balance (Healthy Distance Keeper)",
+      "ja": "独立＆バランス型（Healthy Distance Keeper）",
+      "zh-CN": "独立与平衡型（Healthy Distance Keeper）",
+      "zh-TW": "獨立與平衡型（Healthy Distance Keeper）",
+      "vi": "Độc lập & cân bằng (Healthy Distance Keeper)",
+      "id": "Independen & seimbang (Healthy Distance Keeper)"
+    },
+    "mainTraits": {
+      "ko": "독립성 존중, 과한 의존 없음, 상대의 삶 응원, 건강한 경계",
+      "en": "Respects independence, low clinginess, cheers their life, healthy boundaries",
+      "ja": "自立の尊重、過度な依存なし、相手の人生を応援、健全な境界線",
+      "zh-CN": "尊重独立、不过度依赖、支持对方生活、健康边界",
+      "zh-TW": "尊重獨立、不過度依賴、支持對方生活、健康邊界",
+      "vi": "Tôn trọng độc lập, ít phụ thuộc, cổ vũ cuộc sống họ, ranh giới lành mạnh",
+      "id": "Hormati independensi, tidak posesif, dukung hidup mereka, batas sehat"
+    },
+    "partnerReceives": {
+      "ko": "\"이 사람이랑 있으면 나답게 살 수 있어. 숨막히지 않아\"",
+      "en": "\"With them, I can still be me—nothing feels suffocating.\"",
+      "ja": "「この人といれば自分らしくいられる。息苦しくない」",
+      "zh-CN": "“和TA在一起还能做自己，不窒息。”",
+      "zh-TW": "「和TA在一起還能做自己，不窒息。」",
+      "vi": "“Ở cạnh họ vẫn là mình—không ngột ngạt.”",
+      "id": "“Bareng mereka tetap jadi diri sendiri—tidak sesak.”"
+    },
+    "brilliantTip": {
+      "ko": "독립성을 중시하는 만큼 적극적인 애정 표현도 함께해보세요. 자유로움에 따뜻함이 더해집니다.",
+      "en": "Pair independence with clear affection—freedom feels warmer with care.",
+      "ja": "自立を大事にするなら、愛情表現も積極的に。自由に温かさを足すと完璧です。",
+      "zh-CN": "重视独立的同时，也主动表达爱意；自由加上温度更完整。",
+      "zh-TW": "重視獨立的同時，也主動表達愛意；自由加上溫度更完整。",
+      "vi": "Độc lập đi cùng tình cảm rõ ràng—tự do thêm ấm áp.",
+      "id": "Independensi plus kasih sayang jelas—kebebasan terasa lebih hangat."
+    },
+    "goodMatch": {
+      "ko": "Type 4 (안정감과 독립성이 만나면 최고의 균형)",
+      "en": "Type 4 (stability + independence can be an ideal balance)",
+      "ja": "Type 4（安心感と独立が合うと最高のバランス）",
+      "zh-CN": "Type 4（稳定与独立相遇时最平衡）",
+      "zh-TW": "Type 4（穩定與獨立相遇時最平衡）",
+      "vi": "Type 4 (ổn định + độc lập là cân bằng tuyệt vời)",
+      "id": "Type 4 (stabilitas + independensi jadi keseimbangan ideal)"
+    },
+    "badMatch": {
+      "ko": "Type 1 (감정적 밀착을 원하는 상대에게 거리감으로 느껴질 수 있음)",
+      "en": "Type 1 (your healthy distance can feel “far” to someone who wants deep closeness)",
+      "ja": "Type 1（感情的な密着を求める相手には距離に感じることがある）",
+      "zh-CN": "Type 1（若对方渴望情感黏合，你的距离可能像疏远）",
+      "zh-TW": "Type 1（若對方渴望情感黏合，你的距離可能像疏遠）",
+      "vi": "Type 1 (với người cần gắn kết sâu, khoảng cách lành mạnh có thể thấy xa)",
+      "id": "Type 1 (bagi yang ingin kedekatan emosional, jarakmu bisa terasa jauh)"
+    },
+    "shareTypeName": {
+      "ko": "독립 & 균형형",
+      "en": "Independence & balance",
+      "ja": "独立＆バランス型",
+      "zh-CN": "独立与平衡型",
+      "zh-TW": "獨立與平衡型",
+      "vi": "Độc lập & cân bằng",
+      "id": "Independen & seimbang"
+    }
+  },
+  {
+    "type": "Type6",
+    "emoji": "🌱",
+    "title": {
+      "ko": "오래될수록 더 좋아지는, 성장 & 성숙형 그린플래그",
+      "en": "Gets better with time—growth & maturity green flag",
+      "ja": "長くなるほど良くなる・成長＆成熟型",
+      "zh-CN": "越久越好的成长与成熟型绿旗",
+      "zh-TW": "越久越好的成長與成熟型綠旗",
+      "vi": "Càng lâu càng tốt — cờ xanh trưởng thành & phát triển",
+      "id": "Makin lama makin baik — bendera hijau tumbuh & dewasa"
+    },
+    "shortDescription": {
+      "ko": "당신의 가장 큰 그린플래그는 관계를 통해 함께 성장하는 능력입니다.",
+      "en": "Your biggest green flag is growing together through the relationship.",
+      "ja": "あなたの最大のグリーンフラッグは、関係を通じて一緒に成長する力です。",
+      "zh-CN": "你最突出的绿旗是在关系中一起成长的能力。",
+      "zh-TW": "你最突出的綠旗是在關係中一起成長的能力。",
+      "vi": "Điểm mạnh nhất là khả năng cùng nhau trưởng thành qua mối quan hệ.",
+      "id": "Kekuatan terbesarmu adalah tumbuh bersama lewat hubungan."
+    },
+    "description": {
+      "ko": "당신은 갈등을 두려워하지 않고 그것을 성장의 기회로 바꾸는 사람입니다. 같은 실수를 반복하지 않으려 노력하고, 상대를 있는 그대로 받아들이며, 관계가 깊어질수록 더 성숙하게 대응합니다. 연인 입장에서 당신은 만날수록 더 깊어지는 사람, 오래될수록 더 편안하고 믿음직스러워지는 사람입니다. 가장 오래가는 그린플래그를 가진 타입입니다.",
+      "en": "You don’t fear conflict—you turn it into growth. You try not to repeat the same mistakes, accept your partner as they are, and respond more maturely as the bond deepens. To a partner, you feel deeper over time and more trustworthy with age. This is a green flag built to last.",
+      "ja": "対立を恐れず、成長の機会に変えます。同じ過ちを繰り返さないよう努力し、相手をありのまま受け入れ、関係が深まるほど成熟して向き合います。恋人から見ると、会うほど深く、長くいるほど安心できる人。長く続くグリーンフラッグのタイプです。",
+      "zh-CN": "你不怕冲突，能把矛盾变成成长。努力不重复同样的错，接纳对方本来的样子，关系越深越成熟应对。在恋人眼里，你越久越可信、越处越安心。这是最能长久的绿旗类型。",
+      "zh-TW": "你不怕衝突，能把矛盾變成成長。努力不重複同樣的錯，接納對方本來的樣子，關係越深越成熟應對。在戀人眼裡，你越久越可信、越處越安心。這是最能長久的綠旗類型。",
+      "vi": "Bạn không sợ mâu thuẫn—biến nó thành cơ hội trưởng thành. Cố không lặp lại sai lầm, chấp nhận đối phương, và càng gắn bó càng chín chắn. Với người yêu, bạn sâu hơn theo thời gian và đáng tin hơn. Đây là cờ xanh bền lâu.",
+      "id": "Kamu tidak takut konflik—mengubahnya jadi tumbuh. Berusaha tidak mengulangi kesalahan, menerima pasangan apa adanya, dan makin dewasa seiring ikatan dalam. Bagi pasangan, kamu makin dalam dan makin terpercaya. Ini bendera hijau yang tahan lama."
+    },
+    "greenFlagTypeLabel": {
+      "ko": "성장 & 성숙형 (Relationship Grower)",
+      "en": "Growth & maturity (Relationship Grower)",
+      "ja": "成長＆成熟型（Relationship Grower）",
+      "zh-CN": "成长与成熟型（Relationship Grower）",
+      "zh-TW": "成長與成熟型（Relationship Grower）",
+      "vi": "Trưởng thành & phát triển (Relationship Grower)",
+      "id": "Pertumbuhan & kedewasaan (Relationship Grower)"
+    },
+    "mainTraits": {
+      "ko": "자기반성, 성장 지향, 성숙한 갈등 해결, 깊어지는 관계",
+      "en": "Self-reflection, growth mindset, mature conflict repair, deepening bond",
+      "ja": "自己反省、成長志向、成熟した対立の解決、深まる関係",
+      "zh-CN": "自省、成长导向、成熟处理矛盾、关系加深",
+      "zh-TW": "自省、成長導向、成熟處理矛盾、關係加深",
+      "vi": "Tự phản tỉnh, hướng tới trưởng thành, xử lý mâu thuẫn chín chắn, gắn kết sâu",
+      "id": "Refleksi diri, orientasi tumbuh, menyelesaikan konflik dengan dewasa, ikatan mendalam"
+    },
+    "partnerReceives": {
+      "ko": "\"이 사람이랑은 오래될수록 더 좋아져. 갈수록 믿음직스러워\"",
+      "en": "\"The longer we’re together, the better it gets—more trustworthy every year.\"",
+      "ja": "「この人とは長くいるほど良くなる。ますます信頼できる」",
+      "zh-CN": "“越久越好，越来越靠得住。”",
+      "zh-TW": "「越久越好，越來越靠得住。」",
+      "vi": "“Càng lâu càng tốt—càng ngày càng đáng tin.”",
+      "id": "“Makin lama makin baik—makin bisa dipercaya.”"
+    },
+    "brilliantTip": {
+      "ko": "성숙함만큼이나 즉흥적이고 가벼운 순간도 즐겨보세요. 성장과 유쾌함이 함께하면 완벽합니다.",
+      "en": "Balance maturity with spontaneity—growth plus playfulness is unbeatable.",
+      "ja": "成熟さだけでなく、衝動的で軽い瞬間も。成長と遊び心が揃うと最高です。",
+      "zh-CN": "成熟之外也留点即兴与轻松；成长配上幽默更完整。",
+      "zh-TW": "成熟之外也留點即興與輕鬆；成長配上幽默更完整。",
+      "vi": "Cân bằng trưởng thành với phút tự phát—tăng trưởng kèm vui là tuyệt nhất.",
+      "id": "Seimbangkan kedewasaan dengan spontanitas—tumbuh plus seru itu terbaik."
+    },
+    "goodMatch": {
+      "ko": "Type 5 (독립성과 성장이 만나면 건강한 장기 관계 가능)",
+      "en": "Type 5 (independence + growth can build a healthy long-term bond)",
+      "ja": "Type 5（独立と成長が合えば健全な長期関係になりやすい）",
+      "zh-CN": "Type 5（独立与成长结合，利于健康长期关系）",
+      "zh-TW": "Type 5（獨立與成長結合，利於健康長期關係）",
+      "vi": "Type 5 (độc lập + trưởng thành có thể xây mối quan hệ dài lâu lành mạnh)",
+      "id": "Type 5 (independensi + tumbuh bisa bangun hubungan jangka panjang sehat)"
+    },
+    "badMatch": {
+      "ko": "Type 2 (가볍고 즉흥적인 것을 원하는 상대와 깊이의 차이가 생길 수 있음)",
+      "en": "Type 2 (your depth may clash with someone who wants things light and spontaneous)",
+      "ja": "Type 2（軽さと即興を求める相手とは深さの差が出やすい）",
+      "zh-CN": "Type 2（若对方只想轻松即兴，深度可能不对频）",
+      "zh-TW": "Type 2（若對方只想輕鬆即興，深度可能不對頻）",
+      "vi": "Type 2 (với người thích nhẹ và tự phát, độ sâu có thể lệch)",
+      "id": "Type 2 (bagi yang suka ringan-spontan, kedalamanmu bisa berbeda frekuensi)"
+    },
+    "shareTypeName": {
+      "ko": "성장 & 성숙형",
+      "en": "Growth & maturity",
+      "ja": "成長＆成熟型",
+      "zh-CN": "成长与成熟型",
+      "zh-TW": "成長與成熟型",
+      "vi": "Trưởng thành & phát triển",
+      "id": "Pertumbuhan & kedewasaan"
+    }
+  }
+]

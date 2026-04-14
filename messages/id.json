@@ -1352,6 +1352,60 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3LoveGreenFlagFinderTest": {
+    "startMessage": {
+      "line1": "Red flag sering dengar—tapi green flag kamu apa?",
+      "line2": "Green flag itu kekuatan asmaramu: dampak positif yang kamu bawa untuk pasangan.",
+      "line3": "Bisa empati hangat, kepercayaan yang stabil, atau rasa tenang saat bareng.",
+      "line4": "Tanpa pujian palsu manis. Sebaliknya, kami sorot jujur hal paling bersinar yang benar-benar bisa kamu berikan.",
+      "line5": "12 pertanyaan untuk melihat spektrum positifmu dalam asmara.",
+      "line6": "Cek green flag asmara 💚 Mulai pamer diri"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Bendera hijau asmara saya?)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "greenFlagType": "Tipe green flag",
+      "mainTraits": "Kekuatan inti",
+      "partnerReceives": "Yang pasangan dapatkan",
+      "brilliantTip": "Tips lebih bersinar",
+      "goodMatch": "Kombinasi cocok",
+      "badMatch": "Perlu hati-hati",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Green flag asmara aku {type}! 💚 Banget ini aku—kamu gimana? Coba tes!",
+      "kakao": "Green flag asmara aku {type}! 💚 Banget ini aku—kamu gimana? Coba tes!",
+      "wechat": "Green flag asmara aku {type}! 💚 Banget ini aku—kamu gimana? Coba tes!",
+      "whatsapp": "Green flag asmara aku {type}! 💚 Banget ini aku—kamu gimana? Coba tes!",
+      "telegram": "Green flag asmara aku {type}! 💚 Banget ini aku—kamu gimana? Coba tes!",
+      "line": "Green flag asmara aku {type}! 💚 Banget ini aku—kamu gimana? Coba tes!",
+      "startDefault": "Tes green flag asmara 💚 12 soal pamer diri",
+      "startKakao": "Tes green flag asmara 💚 12 soal pamer diri",
+      "startWechat": "Tes green flag asmara 💚 12 soal pamer diri",
+      "startWhatsapp": "Tes green flag asmara 💚 12 soal pamer diri",
+      "startTelegram": "Tes green flag asmara 💚 12 soal pamer diri",
+      "startLine": "Tes green flag asmara 💚 12 soal pamer diri"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia di perangkat ini.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "KakaoTalk sedang diinisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat membagikan ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

@@ -1393,6 +1393,60 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3LoveGreenFlagFinderTest": {
+    "startMessage": {
+      "line1": "You’ve heard of red flags—but do you know your green flags?",
+      "line2": "A green flag is your dating strength: the positive impact you bring to a partner.",
+      "line3": "It might be warm empathy, steady trust, or a calming presence when you’re together.",
+      "line4": "No sugar-coated flattery here. Instead, we’ll honestly spotlight the brightest thing you truly offer a partner.",
+      "line5": "Across 12 questions, discover your positive spectrum in love.",
+      "line6": "Find my dating green flags 💚 Start the self-hype quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (What’s my dating green flag?)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "greenFlagType": "Green-flag type",
+      "mainTraits": "Core strengths",
+      "partnerReceives": "What your partner gets",
+      "brilliantTip": "Shine brighter",
+      "goodMatch": "Great match energy",
+      "badMatch": "Watch-out match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My dating green flag is {type}! 💚 That’s so me—what’s yours? Take the quiz!",
+      "kakao": "My dating green flag is {type}! 💚 That’s so me—what’s yours? Take the quiz!",
+      "wechat": "My dating green flag is {type}! 💚 That’s so me—what’s yours? Take the quiz!",
+      "whatsapp": "My dating green flag is {type}! 💚 That’s so me—what’s yours? Take the quiz!",
+      "telegram": "My dating green flag is {type}! 💚 That’s so me—what’s yours? Take the quiz!",
+      "line": "My dating green flag is {type}! 💚 That’s so me—what’s yours? Take the quiz!",
+      "startDefault": "What’s my dating green flag? 💚 12-question self-hype quiz",
+      "startKakao": "What’s my dating green flag? 💚 12-question self-hype quiz",
+      "startWechat": "What’s my dating green flag? 💚 12-question self-hype quiz",
+      "startWhatsapp": "What’s my dating green flag? 💚 12-question self-hype quiz",
+      "startTelegram": "What’s my dating green flag? 💚 12-question self-hype quiz",
+      "startLine": "What’s my dating green flag? 💚 12-question self-hype quiz"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",
