@@ -85,6 +85,10 @@ import {
   phase3TanjinjamSpendingTypeQuestions,
   phase3TanjinjamSpendingTypeResults,
 } from '@/lib/phase3TanjinjamSpendingTypeData';
+import {
+  phase3LoveRedFlagFinderQuestions,
+  phase3LoveRedFlagFinderResults,
+} from '@/lib/phase3LoveRedFlagFinderData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -285,6 +289,10 @@ const Phase3YoloFireGodlifeTypeTestClient = dynamic(
 );
 const Phase3TanjinjamSpendingTypeTestClient = dynamic(
   () => import('@/components/Phase3TanjinjamSpendingTypeTestClient'),
+  { ssr: false }
+);
+const Phase3LoveRedFlagFinderTestClient = dynamic(
+  () => import('@/components/Phase3LoveRedFlagFinderTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1166,6 +1174,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['理財', '生活方式', 'YOLO'],
         vi: ['Tài chính', 'Lifestyle', 'YOLO'],
         id: ['Keuangan', 'Gaya hidup', 'YOLO'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-red-flag-finder') {
+    test = {
+      slug: 'phase3-love-red-flag-finder',
+      title: {
+        ko: '내 연애 레드플래그 찾기',
+        en: 'Find my dating red flags',
+        ja: '恋愛レッドフラッグ診断',
+        'zh-CN': '恋爱危险信号测验',
+        'zh-TW': '戀愛危險信號測驗',
+        vi: 'Tìm cờ đỏ yêu đương của tôi',
+        id: 'Temukan red flag asmara',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 레드플래그 스펙트럼 6유형. #연애 #심리',
+        en: '12 questions, 6 dating reaction patterns — honest mirror, not comfort. #love #psychology',
+        ja: '全12問・恋愛の反応パターン6タイプ。甘い慰めはなし。#恋愛 #心理',
+        'zh-CN': '12 题四选一，6 种恋爱反应模式；直白镜子，不灌鸡汤。#恋爱 #心理',
+        'zh-TW': '12 題四選一，6 種戀愛反應模式；直白鏡子，不灌雞湯。#戀愛 #心理',
+        vi: '12 câu trắc nghiệm, 6 kiểu phản ứng trong yêu — gương thật lòng. #tìnhyêu #tâmlý',
+        id: '12 pertanyaan pilihan ganda, 6 pola reaksi asmara — cermin jujur. #asmara #psikologi',
+      },
+      thumbnail: 'p3_test_love_red_flag_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: ['Love', 'Psychology'],
+        ja: ['恋愛', '心理'],
+        'zh-CN': ['恋爱', '心理'],
+        'zh-TW': ['戀愛', '心理'],
+        vi: ['Tình yêu', 'Tâm lý'],
+        id: ['Asmara', 'Psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3336,6 +3381,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3YoloFireGodlifeTypeQuestions}
           results={phase3YoloFireGodlifeTypeResults}
           questionCount={phase3YoloFireGodlifeTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-love-red-flag-finder') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-love-red-flag-finder',
+      title: {
+        ko: '내 연애 레드플래그 찾기',
+        en: 'Find my dating red flags',
+        ja: '恋愛レッドフラッグ診断',
+        'zh-CN': '恋爱危险信号测验',
+        'zh-TW': '戀愛危險信號測驗',
+        vi: 'Tìm cờ đỏ yêu đương của tôi',
+        id: 'Temukan red flag asmara',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 레드플래그 스펙트럼 6유형. #연애 #심리',
+        en: '12 questions, 6 dating reaction patterns — honest mirror, not comfort. #love #psychology',
+        ja: '全12問・恋愛の反応パターン6タイプ。甘い慰めはなし。#恋愛 #心理',
+        'zh-CN': '12 题四选一，6 种恋爱反应模式；直白镜子，不灌鸡汤。#恋爱 #心理',
+        'zh-TW': '12 題四選一，6 種戀愛反應模式；直白鏡子，不灌雞湯。#戀愛 #心理',
+        vi: '12 câu trắc nghiệm, 6 kiểu phản ứng trong yêu — gương thật lòng. #tìnhyêu #tâmlý',
+        id: '12 pertanyaan pilihan ganda, 6 pola reaksi asmara — cermin jujur. #asmara #psikologi',
+      },
+      thumbnail: 'p3_test_love_red_flag_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리'],
+        en: ['Love', 'Psychology'],
+        ja: ['恋愛', '心理'],
+        'zh-CN': ['恋爱', '心理'],
+        'zh-TW': ['戀愛', '心理'],
+        vi: ['Tình yêu', 'Tâm lý'],
+        id: ['Asmara', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LoveRedFlagFinderTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LoveRedFlagFinderQuestions}
+          results={phase3LoveRedFlagFinderResults}
+          questionCount={phase3LoveRedFlagFinderQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

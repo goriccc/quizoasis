@@ -1297,6 +1297,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3LoveRedFlagFinderTest": {
+    "startMessage": {
+      "line1": "Pernah merasa setiap hubungan berakhir dengan pola sulit yang mirip?",
+      "line2": "Kamu mengira mereka yang melelahkanmu — padahal kamu juga bisa tanpa sadar melelahkan mereka.",
+      "line3": "Red flag bukan cuma milik orang jahat. Orang baik — bahkan yang mencintai dengan tulus — bisa membawanya tanpa sadar.",
+      "line4": "Tanpa pelukan manis: kami akan bilang jujur red flag asmaramu bisa seperti apa. Mungkin perih — itulah kekuatan fakta.",
+      "line5": "Menamai polanya adalah langkah pertama untuk mengubahnya. 12 pertanyaan untuk menatap spektrum reaksimu dalam cinta.",
+      "line6": "Cek red flag asmaraku 🚩 Mulai refleksi"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Temukan red flag asmara)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "redFlagLevel": "Level red flag",
+      "mainTraits": "Ciri utama",
+      "spotlightHidden": "Peringatan tersembunyi",
+      "spotlightCore": "Red flag inti",
+      "prescription": "Saran perbaikan",
+      "goodMatch": "Tipe lebih cocok",
+      "badMatch": "Tipe lebih friksi",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Red flag asmaraku: {type} 🚩 Nyelekit… kamu juga coba tesnya",
+      "kakao": "Red flag asmaraku: {type} 🚩 Nyelekit… kamu juga coba tesnya",
+      "wechat": "Red flag asmaraku: {type} 🚩 Nyelekit… kamu juga coba tesnya",
+      "whatsapp": "Red flag asmaraku: {type} 🚩 Nyelekit… kamu juga coba tesnya",
+      "telegram": "Red flag asmaraku: {type} 🚩 Nyelekit… kamu juga coba tesnya",
+      "line": "Red flag asmaraku: {type} 🚩 Nyelekit… kamu juga coba tesnya",
+      "startDefault": "Temukan red flag asmara 🚩 Tes refleksi 12 pertanyaan",
+      "startKakao": "Temukan red flag asmara 🚩 Tes refleksi 12 pertanyaan",
+      "startWechat": "Temukan red flag asmara 🚩 Tes refleksi 12 pertanyaan",
+      "startWhatsapp": "Temukan red flag asmara 🚩 Tes refleksi 12 pertanyaan",
+      "startTelegram": "Temukan red flag asmara 🚩 Tes refleksi 12 pertanyaan",
+      "startLine": "Temukan red flag asmara 🚩 Tes refleksi 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia di perangkat ini.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "KakaoTalk sedang diinisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat membagikan ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

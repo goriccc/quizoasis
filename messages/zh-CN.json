@@ -1297,6 +1297,61 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase3LoveRedFlagFinderTest": {
+    "startMessage": {
+      "line1": "你是否曾在每段恋爱里，陷入相似的痛苦模式？",
+      "line2": "你以为对方让你疲惫，但也可能是你在无形中消耗对方。",
+      "line3": "危险信号不只属于“坏人”。好人、认真相爱的人，也可能不知不觉带着它。",
+      "line4": "没有糖衣安慰：我们会直接告诉你，你的恋爱危险信号可能是什么。被戳中可能会不爽——这就是事实的力量。",
+      "line5": "看清模式才能改变。用12道题直面你在恋爱中的反应光谱。",
+      "line6": "查看我的恋爱危险信号 🚩 开始自省测验"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 区域（恋爱危险信号测验）",
+      "goToTest": "去做测验",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测验",
+      "redFlagLevel": "危险信号等级",
+      "mainTraits": "主要特征",
+      "spotlightHidden": "隐藏注意点",
+      "spotlightCore": "核心危险信号",
+      "prescription": "处方建议",
+      "goodMatch": "相处更顺的类型",
+      "badMatch": "更容易摩擦的类型",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的恋爱危险信号：{type} 🚩 被说中了…你也来测测",
+      "kakao": "我的恋爱危险信号：{type} 🚩 被说中了…你也来测测",
+      "wechat": "我的恋爱危险信号：{type} 🚩 被说中了…你也来测测",
+      "whatsapp": "我的恋爱危险信号：{type} 🚩 被说中了…你也来测测",
+      "telegram": "我的恋爱危险信号：{type} 🚩 被说中了…你也来测测",
+      "line": "我的恋爱危险信号：{type} 🚩 被说中了…你也来测测",
+      "startDefault": "找出我的恋爱危险信号 🚩 12题自省测验",
+      "startKakao": "找出我的恋爱危险信号 🚩 12题自省测验",
+      "startWechat": "找出我的恋爱危险信号 🚩 12题自省测验",
+      "startWhatsapp": "找出我的恋爱危险信号 🚩 12题自省测验",
+      "startTelegram": "找出我的恋爱危险信号 🚩 12题自省测验",
+      "startLine": "找出我的恋爱危险信号 🚩 12题自省测验"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "此设备无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测验推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测验 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "说好只看一分钟，结果两小时没了——你也经历过吧？",

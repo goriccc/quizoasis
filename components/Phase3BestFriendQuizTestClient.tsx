@@ -17,7 +17,6 @@ import {
 } from '@/lib/phase3BestFriendQuizData';
 import Link from 'next/link';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
@@ -651,7 +650,11 @@ function Phase3BestFriendQuizTestClientInner({
             {tGlobal('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
           </p>
           <div className="max-w-[680px] mx-auto mb-6 flex justify-center">
-            <CoupangAffiliateIframe variant="start" />
+            <AdSensePlaceholder
+              slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+              style={{ width: '100%', height: '250px' }}
+              className="mx-auto w-full"
+            />
           </div>
           {similarTestsState.length > 0 && (
             <div className="mb-8">
@@ -846,9 +849,12 @@ function Phase3BestFriendQuizTestClientInner({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">🎉 {tGlobal('mbti.testCompleted')}</h2>
-          <p className="text-xs text-gray-500 text-center mb-3">{tGlobal('footer.disclaimer')}</p>
           <div className="mb-6 flex justify-center">
-            <CoupangAffiliateIframe variant="popup" />
+            <AdSensePlaceholder
+              slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+              style={{ width: '100%', height: '250px' }}
+              className="mx-auto w-full"
+            />
           </div>
           <button
             type="button"
@@ -1027,6 +1033,14 @@ function Phase3BestFriendQuizTestClientInner({
 
           {popularTestsState.length > 0 && (
             <div className="mb-8 pb-4">
+              <div className="mb-6 px-4 w-full">
+                <AdSensePlaceholder
+                  slot={ADSENSE_CONFIG.SLOTS.RESULT_ABOVE_POPULAR_TOP5}
+                  style={{ width: '100%', height: '250px' }}
+                  className="mx-auto w-full"
+                />
+              </div>
+
               <h2 className="text-xl font-bold text-gray-800 mb-6">{t('recommendations.popularTestsTop5')}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                 {popularTestsState.map((testItem) => (

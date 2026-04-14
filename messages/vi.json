@@ -1297,6 +1297,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3LoveRedFlagFinderTest": {
+    "startMessage": {
+      "line1": "Bạn từng nhiều lần mệt mỏi vì cùng một kiểu vấn đề trong tình yêu?",
+      "line2": "Bạn nghĩ đối phương làm bạn kiệt sức — nhưng có thể bạn cũng vô tình khiến họ mệt.",
+      "line3": "Cờ đỏ không chỉ dành cho người xấu. Người tốt, người yêu thật lòng, cũng có thể mang theo mà không biết.",
+      "line4": "Không nói ngọt: chúng tôi nói thẳng “cờ đỏ” trong yêu của bạn có thể là gì. Có thể khó nghe — đó là sức mạnh của sự thật.",
+      "line5": "Biết mô hình mới đổi được. 12 câu hỏi để nhìn thẳng cách bạn phản ứng trong yêu.",
+      "line6": "Xem cờ đỏ yêu đương của tôi 🚩 Bắt đầu tự phản tỉnh"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Cờ đỏ yêu đương)",
+      "goToTest": "Làm quiz",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Quiz tương tự",
+      "redFlagLevel": "Mức cờ đỏ",
+      "mainTraits": "Đặc điểm chính",
+      "spotlightHidden": "Điểm cần lưu ý (ẩn)",
+      "spotlightCore": "Cờ đỏ cốt lõi",
+      "prescription": "Gợi ý cải thiện",
+      "goodMatch": "Kiểu hợp hơn",
+      "badMatch": "Kiểu dễ cọ xát",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Cờ đỏ yêu đương của mình: {type} 🚩 Đúng quá… bạn cũng thử quiz đi",
+      "kakao": "Cờ đỏ yêu đương của mình: {type} 🚩 Đúng quá… bạn cũng thử quiz đi",
+      "wechat": "Cờ đỏ yêu đương của mình: {type} 🚩 Đúng quá… bạn cũng thử quiz đi",
+      "whatsapp": "Cờ đỏ yêu đương của mình: {type} 🚩 Đúng quá… bạn cũng thử quiz đi",
+      "telegram": "Cờ đỏ yêu đương của mình: {type} 🚩 Đúng quá… bạn cũng thử quiz đi",
+      "line": "Cờ đỏ yêu đương của mình: {type} 🚩 Đúng quá… bạn cũng thử quiz đi",
+      "startDefault": "Tìm cờ đỏ yêu đương 🚩 Quiz 12 câu tự phản tỉnh",
+      "startKakao": "Tìm cờ đỏ yêu đương 🚩 Quiz 12 câu tự phản tỉnh",
+      "startWechat": "Tìm cờ đỏ yêu đương 🚩 Quiz 12 câu tự phản tỉnh",
+      "startWhatsapp": "Tìm cờ đỏ yêu đương 🚩 Quiz 12 câu tự phản tỉnh",
+      "startTelegram": "Tìm cờ đỏ yêu đương 🚩 Quiz 12 câu tự phản tỉnh",
+      "startLine": "Tìm cờ đỏ yêu đương 🚩 Quiz 12 câu tự phản tỉnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi tạo. Thử lại sau ít phút.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 quiz tương tự",
+      "popularTestsTop5": "🔥 Top 5 quiz đang hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import { LoveFlavorQuestion, LoveFlavorResult, calculateLoveFlavorResult } from '@/lib/loveFlavorData';
 import Link from 'next/link';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
@@ -452,9 +451,11 @@ export default function LoveFlavorTestClient({
               <div className="flex justify-center">
 
 
-                <CoupangAffiliateIframe variant="start" />
-
-
+                <AdSensePlaceholder
+                  slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+                  style={{ width: '100%', height: '250px' }}
+                  className="mx-auto w-full"
+                />
               </div>
 
 
@@ -544,15 +545,15 @@ export default function LoveFlavorTestClient({
           <h2 className="text-2xl font-bold text-gray-800 mb-4">🎉 {t('mbti.testCompleted')}</h2>
           
           
-          <p className="text-xs text-gray-500 text-center mb-3">
-            {t('footer.disclaimer')}
-          </p>
           <div className="mb-6">
 
             <div className="flex justify-center">
 
-              <CoupangAffiliateIframe variant="popup" />
-
+              <AdSensePlaceholder
+                slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto w-full"
+              />
             </div>
 
           </div>

@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { useTranslations } from 'next-intl';
 import { Camera, Upload, RotateCcw, AlertCircle, CheckCircle, Play } from 'lucide-react';
 import Link from 'next/link';
@@ -580,15 +579,15 @@ export default function FaceLoveFortuneTestClient({
           
           
           
-          <p className="text-xs text-gray-500 text-center mb-3">
-            {tGlobal('footer.disclaimer')}
-          </p>
           <div className="mb-6">
 
             <div className="flex justify-center">
 
-              <CoupangAffiliateIframe variant="popup" />
-
+              <AdSensePlaceholder
+                slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto w-full"
+              />
             </div>
 
           </div>
@@ -835,6 +834,13 @@ export default function FaceLoveFortuneTestClient({
             {/* 🔥 요즘 인기 테스트 추천 톱5 */}
             {popularTestsState && popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
+                <div className="mb-6 px-4 w-full">
+                  <AdSensePlaceholder
+                    slot={ADSENSE_CONFIG.SLOTS.RESULT_ABOVE_POPULAR_TOP5}
+                    style={{ width: '100%', height: '250px' }}
+                    className="mx-auto w-full"
+                  />
+                </div>
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
                   {tGlobal('recommendations.popularTestsTop5')}
                 </h2>
@@ -1216,8 +1222,11 @@ export default function FaceLoveFortuneTestClient({
 
               <div className="flex justify-center">
 
-                <CoupangAffiliateIframe variant="start" />
-
+                <AdSensePlaceholder
+                  slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+                  style={{ width: '100%', height: '250px' }}
+                  className="mx-auto w-full"
+                />
               </div>
 
             </div>

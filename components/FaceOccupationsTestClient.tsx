@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { useTranslations } from 'next-intl';
 import { Camera, Upload, RotateCcw, AlertCircle, CheckCircle, Play } from 'lucide-react';
 import Link from 'next/link';
@@ -577,15 +576,15 @@ export default function FaceOccupationsTestClient({
           
           
           
-          <p className="text-xs text-gray-500 text-center mb-3">
-            {tGlobal('footer.disclaimer')}
-          </p>
           <div className="mb-6">
 
             <div className="flex justify-center">
 
-              <CoupangAffiliateIframe variant="popup" />
-
+              <AdSensePlaceholder
+                slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto w-full"
+              />
             </div>
 
           </div>
@@ -1203,8 +1202,11 @@ export default function FaceOccupationsTestClient({
 
               <div className="flex justify-center">
 
-                <CoupangAffiliateIframe variant="start" />
-
+                <AdSensePlaceholder
+                  slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+                  style={{ width: '100%', height: '250px' }}
+                  className="mx-auto w-full"
+                />
               </div>
 
             </div>

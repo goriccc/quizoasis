@@ -4,7 +4,6 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Share2, Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
@@ -490,9 +489,12 @@ export default function Phase2ReflexTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">🎉 {tGlobal('mbti.testCompleted')}</h2>
-          <p className="text-xs text-gray-500 text-center mb-3">{tGlobal('footer.disclaimer')}</p>
           <div className="mb-6 flex justify-center">
-            <CoupangAffiliateIframe variant="popup" />
+            <AdSensePlaceholder
+              slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+              style={{ width: '100%', height: '250px' }}
+              className="mx-auto w-full"
+            />
           </div>
           <button onClick={handleShowResult} className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-blue-600 hover:to-cyan-600 shadow-lg transition-all">
             {tGlobal('mbti.viewAnalysisResults')}
@@ -653,6 +655,14 @@ export default function Phase2ReflexTestClient({
             {/* Popular Tests */}
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
+                <div className="mb-6 px-4 w-full">
+                  <AdSensePlaceholder
+                    slot={ADSENSE_CONFIG.SLOTS.RESULT_ABOVE_POPULAR_TOP5}
+                    style={{ width: '100%', height: '250px' }}
+                    className="mx-auto w-full"
+                  />
+                </div>
+
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
                   {t('recommendations.popularTestsTop5')}
                 </h2>
@@ -822,8 +832,11 @@ export default function Phase2ReflexTestClient({
 
                       <div className="flex justify-center">
 
-                        <CoupangAffiliateIframe variant="start" />
-
+                        <AdSensePlaceholder
+                          slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+                          style={{ width: '100%', height: '250px' }}
+                          className="mx-auto w-full"
+                        />
                       </div>
 
                     </div>

@@ -1304,6 +1304,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3LoveRedFlagFinderTest": {
+    "startMessage": {
+      "line1": "你是否曾在每段感情裡，陷入相似的痛苦模式？",
+      "line2": "你以為對方讓你疲憊，但也可能是你在無形中消耗對方。",
+      "line3": "危險信號不只屬於「壞人」。好人、認真相愛的人，也可能不知不覺帶著它。",
+      "line4": "沒有糖衣安慰：我們會直接告訴你，你的戀愛危險信號可能是什麼。被戳中可能會不爽——這就是事實的力量。",
+      "line5": "看清模式才能改變。用 12 題直面你在戀愛中的反應光譜。",
+      "line6": "查看我的戀愛危險信號 🚩 開始自省測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 區域（戀愛危險信號測驗）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "redFlagLevel": "危險信號等級",
+      "mainTraits": "主要特徵",
+      "spotlightHidden": "隱藏注意點",
+      "spotlightCore": "核心危險信號",
+      "prescription": "處方建議",
+      "goodMatch": "相處更順的類型",
+      "badMatch": "更容易摩擦的類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的戀愛危險信號：{type} 🚩 被說中了…你也來測測",
+      "kakao": "我的戀愛危險信號：{type} 🚩 被說中了…你也來測測",
+      "wechat": "我的戀愛危險信號：{type} 🚩 被說中了…你也來測測",
+      "whatsapp": "我的戀愛危險信號：{type} 🚩 被說中了…你也來測測",
+      "telegram": "我的戀愛危險信號：{type} 🚩 被說中了…你也來測測",
+      "line": "我的戀愛危險信號：{type} 🚩 被說中了…你也來測測",
+      "startDefault": "找出我的戀愛危險信號 🚩 12 題自省測驗",
+      "startKakao": "找出我的戀愛危險信號 🚩 12 題自省測驗",
+      "startWechat": "找出我的戀愛危險信號 🚩 12 題自省測驗",
+      "startWhatsapp": "找出我的戀愛危險信號 🚩 12 題自省測驗",
+      "startTelegram": "找出我的戀愛危險信號 🚩 12 題自省測驗",
+      "startLine": "找出我的戀愛危險信號 🚩 12 題自省測驗"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",

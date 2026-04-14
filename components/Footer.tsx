@@ -90,7 +90,9 @@ export default function Footer() {
 
         {/* 회사 정보 */}
         <div className="text-center text-sm space-y-1 mb-6">
-          <p className="text-gray-400">{t('disclaimer')}</p>
+          {t('disclaimer')?.trim() ? (
+            <p className="text-gray-400">{t('disclaimer')}</p>
+          ) : null}
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-4">
             <p>{t('company')}</p>
             <p>{t('ceo')}</p>

@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import { HonestyQuestion, HonestyResult, calculateHonestyResult } from '@/lib/honestyData';
 import Link from 'next/link';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
@@ -478,9 +477,11 @@ export default function HonestyTestClient({
               <div className="flex justify-center">
 
 
-                <CoupangAffiliateIframe variant="start" />
-
-
+                <AdSensePlaceholder
+                  slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+                  style={{ width: '100%', height: '250px' }}
+                  className="mx-auto w-full"
+                />
               </div>
 
 
@@ -711,11 +712,6 @@ export default function HonestyTestClient({
             {t('honestyTest.ui.testCompleted')}
           </h2>
           
-          <p className="text-xs text-gray-500 text-center mb-3">
-            {tGlobal('footer.disclaimer')}
-          </p>
-          
-          
           <div className="mb-6">
 
           
@@ -724,10 +720,11 @@ export default function HonestyTestClient({
 
           
           
-              <CoupangAffiliateIframe variant="popup" />
-
-          
-          
+              <AdSensePlaceholder
+                slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto w-full"
+              />
             </div>
 
           
@@ -986,6 +983,14 @@ export default function HonestyTestClient({
             {/* 요즘 인기 테스트 추천 톱5 */}
             {popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
+                <div className="mb-6 px-4 w-full">
+                  <AdSensePlaceholder
+                    slot={ADSENSE_CONFIG.SLOTS.RESULT_ABOVE_POPULAR_TOP5}
+                    style={{ width: '100%', height: '250px' }}
+                    className="mx-auto w-full"
+                  />
+                </div>
+
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
                   {t('honestyTest.ui.popularTestsTop5')}
                 </h2>

@@ -1298,6 +1298,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3LoveRedFlagFinderTest": {
+    "startMessage": {
+      "line1": "恋愛のたびに、同じパターンで苦しくなったことはありますか？",
+      "line2": "相手が自分を疲れさせたと思っていたのに、実は自分が相手を疲れさせていたかもしれません。",
+      "line3": "レッドフラッグは「悪い人」だけのものではありません。いい人も、本気で愛している人も、気づかないうちに持っています。",
+      "line4": "甘い慰めはありません。あなたの恋愛レッドフラッグをストレートに伝えます。刺さるかもしれません。それが本音の力です。",
+      "line5": "パターンが分かれば変えられます。12問で、あなたの恋愛の反応スペクトルを直視しましょう。",
+      "line6": "私の恋愛レッドフラッグをチェック 🚩 反省スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（恋愛レッドフラッグ診断）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "redFlagLevel": "レッドフラッグレベル",
+      "mainTraits": "主な特徴",
+      "spotlightHidden": "隠れた注意点",
+      "spotlightCore": "コアのレッドフラッグ",
+      "prescription": "処方箋",
+      "goodMatch": "相性が合いやすい",
+      "badMatch": "相性が荒れやすい",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の恋愛レッドフラッグは {type} 🚩 ドキッとした…あなたも診断してみて",
+      "kakao": "私の恋愛レッドフラッグは {type} 🚩 ドキッとした…あなたも診断してみて",
+      "wechat": "私の恋愛レッドフラッグは {type} 🚩 ドキッとした…あなたも診断してみて",
+      "whatsapp": "私の恋愛レッドフラッグは {type} 🚩 ドキッとした…あなたも診断してみて",
+      "telegram": "私の恋愛レッドフラッグは {type} 🚩 ドキッとした…あなたも診断してみて",
+      "line": "私の恋愛レッドフラッグは {type} 🚩 ドキッとした…あなたも診断してみて",
+      "startDefault": "恋愛レッドフラッグ診断 🚩 12問の反省クイズ",
+      "startKakao": "恋愛レッドフラッグ診断 🚩 12問の反省クイズ",
+      "startWechat": "恋愛レッドフラッグ診断 🚩 12問の反省クイズ",
+      "startWhatsapp": "恋愛レッドフラッグ診断 🚩 12問の反省クイズ",
+      "startTelegram": "恋愛レッドフラッグ診断 🚩 12問の反省クイズ",
+      "startLine": "恋愛レッドフラッグ診断 🚩 12問の反省クイズ"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。少し待ってから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",

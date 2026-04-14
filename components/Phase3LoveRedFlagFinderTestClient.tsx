@@ -2,23 +2,26 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { CrushQuestion, CrushResult, calculateCrushResult } from '@/lib/crushData';
+import {
+  Phase3LoveRedFlagFinderQuestion,
+  Phase3LoveRedFlagFinderResult,
+  calculatePhase3LoveRedFlagFinderResult,
+} from '@/lib/phase3LoveRedFlagFinderData';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { Locale } from '@/i18n';
 import { incrementPlayCount, getTests } from '@/lib/supabase';
-import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
-import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
-interface CrushTestClientProps {
+interface Phase3LoveRedFlagFinderTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: CrushQuestion[];
-  results: CrushResult[];
+  questions: Phase3LoveRedFlagFinderQuestion[];
+  results: Phase3LoveRedFlagFinderResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -34,7 +37,7 @@ interface CrushTestClientProps {
   badgeType?: 'popular' | 'hot' | null;
 }
 
-export default function CrushTestClient({ 
+export default function Phase3LoveRedFlagFinderTestClient({ 
   locale, 
   slug, 
   title, 
@@ -48,20 +51,21 @@ export default function CrushTestClient({
 ,
   isLatestTest = false,
   badgeType = null
-}: CrushTestClientProps) {
-  const t = useTranslations();
+}: Phase3LoveRedFlagFinderTestClientProps) {
+  const t = useTranslations('phase3LoveRedFlagFinderTest');
+  const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<any[]>([]);
-  const [result, setResult] = useState<CrushResult | null>(null);
+  const [answers, setAnswers] = useState<Record<number, number>>({}); // 원래 질문 인덱스를 키로 사용
+  const [result, setResult] = useState<Phase3LoveRedFlagFinderResult | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<CrushQuestion[]>(questions);
+  const [shuffledQuestions, setShuffledQuestions] = useState<Phase3LoveRedFlagFinderQuestion[]>([]);
+  const [originalQuestionIndices, setOriginalQuestionIndices] = useState<number[]>([]); // 셔플링된 질문의 원래 인덱스 매핑
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
-  const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [shuffledOptionsMap, setShuffledOptionsMap] = useState<Record<number, any[]>>({});
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
@@ -69,10 +73,10 @@ export default function CrushTestClient({
     const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
 
   useEffect(() => {
-    if (!started) return;
+    if (!started || shuffledQuestions.length === 0) return;
     
     const questionKey = currentQuestion;
-    if (!shuffledOptionsMap[questionKey]) {
+    if (!shuffledOptionsMap[questionKey] && shuffledQuestions[currentQuestion]) {
       const optionsCopy = [...shuffledQuestions[currentQuestion].options];
       for (let i = optionsCopy.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -84,22 +88,6 @@ export default function CrushTestClient({
       }));
     }
   }, [currentQuestion, started, shuffledOptionsMap, shuffledQuestions]);
-
-  // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
-  useEffect(() => {
-    if (!started && aliProducts.length === 0) {
-      const loadProducts = async () => {
-        try {
-          const keyword = locale === 'ko' ? 'trending products' : 'couple gifts';
-          const products = await searchAliExpressProducts(keyword, 4, locale);
-          setAliProducts(products);
-        } catch (error) {
-          console.error('상품 로드 실패:', error);
-        }
-      };
-      loadProducts();
-    }
-  }, [locale, started, aliProducts.length]);
 
   // AdSense 광고 로드
   useEffect(() => {
@@ -125,94 +113,78 @@ export default function CrushTestClient({
     return () => clearTimeout(timer);
   }, [started, showResult, showLoadingSpinner, showResultPopup]);
 
-  // 알리익스프레스 상품 로드 (결과에 맞춰)
-  useEffect(() => {
-    if (result && locale !== 'ko') {
-      const loadProducts = async () => {
-        try {
-          const keywords = getProductKeywordsForDating(result.type, locale);
-          const products = await searchAliExpressProducts(keywords[0], 4, locale);
-          setAliProducts(products);
-        } catch (error) {
-          console.error('상품 로드 실패:', error);
-        }
-      };
-      loadProducts();
-    }
-  }, [result, locale]);
-
   // 유사한 테스트와 인기 테스트 로드
   useEffect(() => {
     if (similarTests.length === 0) {
       const loadTests = async () => {
         try {
           const allTests = await getTests();
-          const currentTest = allTests.find((t: any) => t.slug === slug);
-          
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter((t: any) => t.slug !== slug)
-              .slice(0, 10)
-              .map((t: any) => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
+        const currentTest = allTests.find((t: any) => t.slug === slug);
+        
+        if (!currentTest) {
+          const latestTests = allTests
             .filter((t: any) => t.slug !== slug)
-            .filter((t: any) => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-            })
-            .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-            .slice(0, 5)
+            .slice(0, 10)
             .map((t: any) => ({
               id: t.id,
               slug: t.slug,
               title: t.title[locale] || t.title.ko,
               thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
+              playCount: t.play_count
             }));
-
-          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
-          const popularTestsList = allTests
-            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
+          
+          setSimilarTestsState(latestTests.slice(0, 5));
+          setPopularTestsState(latestTests.slice(5, 10));
+          return;
         }
-      };
 
-      loadTests();
+        const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
+          ? currentTest.tags[locale] || currentTest.tags.ko || []
+          : currentTest.tags || [];
+
+        const similarTestsList = allTests
+          .filter((t: any) => t.slug !== slug)
+          .filter((t: any) => {
+            const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
+              ? t.tags[locale] || t.tags.ko || []
+              : t.tags || [];
+            
+            return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
+              currentTestTags.some((tag: string) => otherTestTags.includes(tag));
+          })
+          .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+          .slice(0, 5)
+          .map((t: any) => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count,
+          badgeType: t.badge_type || null
+            }));
+
+        const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
+        const popularTestsList = allTests
+          .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
+          .sort((a: any, b: any) => b.play_count - a.play_count)
+          .slice(0, 5)
+          .map((t: any) => ({
+            id: t.id,
+            slug: t.slug,
+            title: t.title[locale] || t.title.ko,
+            thumbnail: t.thumbnail,
+            playCount: t.play_count,
+          badgeType: t.badge_type || null
+            }));
+
+        setSimilarTestsState(similarTestsList);
+        setPopularTestsState(popularTestsList);
+      } catch (error) {
+        console.error('테스트 로드 실패:', error);
+      }
+    };
+
+    loadTests();
     }
   }, [slug, locale, similarTests]);
 
@@ -242,18 +214,25 @@ export default function CrushTestClient({
 
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: CrushQuestion[]) => {
-    const shuffled = [...questionList];
+  const shuffleQuestions = (questionList: Phase3LoveRedFlagFinderQuestion[]) => {
+    // 원래 인덱스와 함께 질문을 쌍으로 만들어서 셔플링
+    const questionsWithIndices = questionList.map((q, idx) => ({ question: q, originalIndex: idx }));
+    const shuffled = [...questionsWithIndices];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return shuffled;
+    return {
+      questions: shuffled.map(item => item.question),
+      originalIndices: shuffled.map(item => item.originalIndex)
+    };
   };
 
   // 테스트 시작
   const handleStartTest = () => {
-    setShuffledQuestions(shuffleQuestions(questions));
+    const { questions: shuffled, originalIndices } = shuffleQuestions(questions);
+    setShuffledQuestions(shuffled);
+    setOriginalQuestionIndices(originalIndices);
     setDisplayPlayCount(prev => prev + 1);
     
     // 중복 호출 방지
@@ -267,8 +246,10 @@ export default function CrushTestClient({
   };
 
   // 답변 처리
-  const handleAnswer = (scores: any) => {
-    const newAnswers = [...answers, scores];
+  const handleAnswer = (score: number) => {
+    // 현재 질문의 원래 인덱스를 찾아서 답변 저장
+    const currentOriginalIndex = originalQuestionIndices[currentQuestion];
+    const newAnswers = { ...answers, [currentOriginalIndex]: score };
     setAnswers(newAnswers);
 
     if (currentQuestion < shuffledQuestions.length - 1) {
@@ -276,38 +257,28 @@ export default function CrushTestClient({
     } else {
       setShowLoadingSpinner(true);
       
+      // 원래 질문 순서대로 점수 배열 재구성 (newAnswers에는 모든 답변이 포함됨)
+      const answersArray = questions.map((_, idx) => newAnswers[idx] ?? 0);
+      
       // 결과 계산
-      const resultType = calculateCrushResult(newAnswers);
-      const crushResult = results.find((r: any) => r.type === resultType);
+      const resultType = calculatePhase3LoveRedFlagFinderResult(answersArray);
+      const loveRedFlagResult = results.find(r => r.type === resultType);
       
       // 결과 설정
-      if (crushResult) {
-        setResult(crushResult);
-      }
-      
-      // 결과에 맞는 상품 백그라운드 로드 (로딩 시간 동안)
-      if (crushResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(crushResult.type, locale);
-        const loadStartTime = Date.now();
-        console.log('🔮 [시작] 짝사랑 결과:', crushResult.type, '→ 검색 키워드:', keywords[0]);
-        searchAliExpressProducts(keywords[0], 4, locale)
-          .then(products => {
-            const loadTime = Date.now() - loadStartTime;
-            console.log(`✅ [완료] 상품 로드 완료 (${loadTime}ms):`, products.slice(0, 2).map((p: any) => p.product_title));
-            setAliProducts(products);
-          }).catch(error => {
-            console.error('❌ 결과 상품 로드 실패:', error);
-          });
+      if (loveRedFlagResult) {
+        setResult(loveRedFlagResult);
       }
     }
   };
 
   // 다시 하기
   const handleRetake = () => {
-    setShuffledQuestions(shuffleQuestions(questions));
+    const { questions: shuffled, originalIndices } = shuffleQuestions(questions);
+    setShuffledQuestions(shuffled);
+    setOriginalQuestionIndices(originalIndices);
     setStarted(false);
     setCurrentQuestion(0);
-    setAnswers([]);
+    setAnswers({});
     setResult(null);
     setShowResult(false);
     setShuffledOptionsMap({});
@@ -317,22 +288,8 @@ export default function CrushTestClient({
   const handleShareResult = async () => {
     if (!result) return;
     
-    const resultTitle = typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko;
-    const shareText = locale === 'ko' ? 
-      `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
-      locale === 'en' ?
-      `My crush success rate is ${resultTitle}! What's yours? Let's try together 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
-      locale === 'ja' ?
-      `私の片思い成功率は${resultTitle}！あなたは何％？一緒にやってみよう 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
-      locale === 'zh-CN' ?
-      `我的暗恋成功率是${resultTitle}！你的呢？一起来试试吧 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
-      locale === 'zh-TW' ?
-      `我的暗戀成功率是${resultTitle}！你的呢？一起來試試吧 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
-      locale === 'id' ?
-      `Tingkat keberhasilan cinta sepihak saya adalah ${resultTitle}! Bagaimana dengan Anda? Mari coba bersama 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
-      locale === 'vi' ?
-      `Tỷ lệ thành công tình yêu đơn phương của tôi là ${resultTitle}! Bạn thì sao? Hãy thử cùng nhau 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}` :
-      `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
+    const shareName = result.shareTypeName[locale as keyof typeof result.shareTypeName] || result.shareTypeName.ko;
+    const shareText = `${t('shareMessages.default', { type: shareName })}\n\n${`https://myquizoasis.com${window.location.pathname}`}`;
     
     if (navigator.share) {
       try {
@@ -345,10 +302,10 @@ export default function CrushTestClient({
     } else {
       try {
         await navigator.clipboard.writeText(shareText);
-        alert('결과가 클립보드에 복사되었습니다!');
+        alert(t('alerts.resultCopied'));
       } catch (error) {
         console.error('클립보드 복사 실패:', error);
-        alert('공유 기능을 사용할 수 없습니다.');
+        alert(t('alerts.shareFailed'));
       }
     }
   };
@@ -356,29 +313,19 @@ export default function CrushTestClient({
   // 공유 함수들
   const shareToLine = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
+    const shareName = result ? (result.shareTypeName[locale as keyof typeof result.shareTypeName] || result.shareTypeName.ko) : '';
+    const shareText = result 
+      ? encodeURIComponent(t('shareMessages.line', { type: shareName }))
+      : encodeURIComponent(t('shareMessages.startLine'));
+    window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${shareText}`, '_blank');
   };
 
   const shareToWeChat = async () => {
     const url = `https://myquizoasis.com${window.location.pathname}`;
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
-    const shareText = result ? (
-      locale === 'ko' ? 
-        `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${url}` :
-        locale === 'en' ?
-        `My crush success rate is ${resultTitle}! What's yours? Let's try together 💘😂\n\n${url}` :
-        locale === 'ja' ?
-        `私の片思い成功率は${resultTitle}！あなたは何％？一緒にやってみよう 💘😂\n\n${url}` :
-        locale === 'zh-CN' ?
-        `我的暗恋成功率是${resultTitle}！你的呢？一起来试试吧 💘😂\n\n${url}` :
-        locale === 'zh-TW' ?
-        `我的暗戀成功率是${resultTitle}！你的呢？一起來試試吧 💘😂\n\n${url}` :
-        locale === 'id' ?
-        `Tingkat keberhasilan cinta sepihak saya adalah ${resultTitle}! Bagaimana dengan Anda? Mari coba bersama 💘😂\n\n${url}` :
-        locale === 'vi' ?
-        `Tỷ lệ thành công tình yêu đơn phương của tôi là ${resultTitle}! Bạn thì sao? Hãy thử cùng nhau 💘😂\n\n${url}` :
-        `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂\n\n${url}`
-    ) : `${title}\n\n${url}`;
+    const shareName = result ? (result.shareTypeName[locale as keyof typeof result.shareTypeName] || result.shareTypeName.ko) : '';
+    const shareText = result 
+      ? `${t('shareMessages.wechat', { type: shareName })}\n\n${url}`
+      : `${t('shareMessages.startWechat')}\n\n${url}`;
     
     // Web Share API 사용 (모바일에서 WeChat 포함한 설치된 앱 목록 표시)
     if (navigator.share) {
@@ -395,32 +342,18 @@ export default function CrushTestClient({
     // Fallback: 링크 복사
     try {
       await navigator.clipboard.writeText(url);
-      alert('링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.');
+      alert(t('alerts.wechatCopy'));
     } catch (error) {
-      alert('공유 기능을 사용할 수 없습니다.');
+      alert(t('alerts.shareFailed'));
     }
   };
 
   const shareToWhatsApp = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
-    const shareText = result ? (
-      locale === 'ko' ? 
-        encodeURIComponent(`나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂`) :
-        locale === 'en' ?
-        encodeURIComponent(`My crush success rate is ${resultTitle}! What's yours? Let's try together 💘😂`) :
-        locale === 'ja' ?
-        encodeURIComponent(`私の片思い成功率は${resultTitle}！あなたは何％？一緒にやってみよう 💘😂`) :
-        locale === 'zh-CN' ?
-        encodeURIComponent(`我的暗恋成功率是${resultTitle}！你的呢？一起来试试吧 💘😂`) :
-        locale === 'zh-TW' ?
-        encodeURIComponent(`我的暗戀成功率是${resultTitle}！你的呢？一起來試試吧 💘😂`) :
-        locale === 'id' ?
-        encodeURIComponent(`Tingkat keberhasilan cinta sepihak saya adalah ${resultTitle}! Bagaimana dengan Anda? Mari coba bersama 💘😂`) :
-        locale === 'vi' ?
-        encodeURIComponent(`Tỷ lệ thành công tình yêu đơn phương của tôi là ${resultTitle}! Bạn thì sao? Hãy thử cùng nhau 💘😂`) :
-        encodeURIComponent(`나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂`)
-    ) : encodeURIComponent(title);
+    const shareName = result ? (result.shareTypeName[locale as keyof typeof result.shareTypeName] || result.shareTypeName.ko) : '';
+    const shareText = result 
+      ? encodeURIComponent(t('shareMessages.whatsapp', { type: shareName }))
+      : encodeURIComponent(t('shareMessages.startWhatsapp'));
     window.open(`https://wa.me/?text=${shareText}%0A%0A${url}`, '_blank');
   };
 
@@ -428,7 +361,7 @@ export default function CrushTestClient({
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
-      alert('카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.');
+      alert(t('alerts.kakaoInit'));
       return;
     }
 
@@ -436,24 +369,10 @@ export default function CrushTestClient({
     const thumbnailUrl = getThumbnailUrl(thumbnail || '');
     
     // 결과가 있으면 맞춤형 공유 문구 사용
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
-    const shareDescription = result ? (
-      locale === 'ko' ? 
-        `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂` :
-        locale === 'en' ?
-        `My crush success rate is ${resultTitle}! What's yours? Let's try together 💘😂` :
-        locale === 'ja' ?
-        `私の片思い成功率は${resultTitle}！あなたは何％？一緒にやってみよう 💘😂` :
-        locale === 'zh-CN' ?
-        `我的暗恋成功率是${resultTitle}！你的呢？一起来试试吧 💘😂` :
-        locale === 'zh-TW' ?
-        `我的暗戀成功率是${resultTitle}！你的呢？一起來試試吧 💘😂` :
-        locale === 'id' ?
-        `Tingkat keberhasilan cinta sepihak saya adalah ${resultTitle}! Bagaimana dengan Anda? Mari coba bersama 💘😂` :
-        locale === 'vi' ?
-        `Tỷ lệ thành công tình yêu đơn phương của tôi là ${resultTitle}! Bạn thì sao? Hãy thử cùng nhau 💘😂` :
-        `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂`
-    ) : description;
+    const shareName = result ? (result.shareTypeName[locale as keyof typeof result.shareTypeName] || result.shareTypeName.ko) : '';
+    const shareDescription = result 
+      ? t('shareMessages.kakao', { type: shareName })
+      : t('shareMessages.startKakao');
     
     try {
       window.Kakao.Share.sendDefault({
@@ -469,7 +388,7 @@ export default function CrushTestClient({
         },
         buttons: [
           {
-            title: '테스트 하러 가기',
+            title: t('ui.goToTest'),
             link: {
               mobileWebUrl: currentUrl,
               webUrl: currentUrl,
@@ -479,37 +398,23 @@ export default function CrushTestClient({
       });
     } catch (error) {
       console.error('카카오톡 공유 오류:', error);
-      alert('카카오톡 공유 중 오류가 발생했습니다.');
+      alert(t('alerts.kakaoError'));
     }
   };
 
   const shareToTelegram = () => {
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
-    const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
-    const shareText = result ? (
-      locale === 'ko' ? 
-        `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂` :
-        locale === 'en' ?
-        `My crush success rate is ${resultTitle}! What's yours? Let's try together 💘😂` :
-        locale === 'ja' ?
-        `私の片思い成功率は${resultTitle}！あなたは何％？一緒にやってみよう 💘😂` :
-        locale === 'zh-CN' ?
-        `我的暗恋成功率是${resultTitle}！你的呢？一起来试试吧 💘😂` :
-        locale === 'zh-TW' ?
-        `我的暗戀成功率是${resultTitle}！你的呢？一起來試試吧 💘😂` :
-        locale === 'id' ?
-        `Tingkat keberhasilan cinta sepihak saya adalah ${resultTitle}! Bagaimana dengan Anda? Mari coba bersama 💘😂` :
-        locale === 'vi' ?
-        `Tỷ lệ thành công tình yêu đơn phương của tôi là ${resultTitle}! Bạn thì sao? Hãy thử cùng nhau 💘😂` :
-        `나의 짝사랑 성공률은 ${resultTitle}! 너는 몇 프로야? 같이 해보자 💘😂`
-    ) : title;
+    const shareName = result ? (result.shareTypeName[locale as keyof typeof result.shareTypeName] || result.shareTypeName.ko) : '';
+    const shareText = result 
+      ? t('shareMessages.telegram', { type: shareName })
+      : t('shareMessages.startTelegram');
     const text = encodeURIComponent(shareText);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
   const copyLink = () => {
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
-    alert('링크가 복사되었습니다!');
+    alert(t('alerts.linkCopied'));
   };
 
   // 팝업에서 결과 보기
@@ -526,7 +431,7 @@ export default function CrushTestClient({
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full overflow-hidden mb-3" style={{ aspectRatio: '680/384' }}>
             <Image
-              src={getThumbnailUrl(thumbnail || 'test_033_crush_success_rate.jpg')}
+              src={getThumbnailUrl(thumbnail || '')}
               alt={title}
               fill
               className="object-cover"
@@ -561,108 +466,17 @@ export default function CrushTestClient({
                 slot={ADSENSE_CONFIG.SLOTS.START_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역 (타이틀-설명 사이)"
+                label={t('ui.adsenseTitle')}
               />
             </div>
 
             <div className="text-gray-600 mb-6 leading-relaxed text-center space-y-4">
-              {locale === 'ko' ? (
-                <>
-                  <p className="font-bold text-gray-700">「10%? 50%? 아니면 90%?」</p>
-                  <p>마음속에 숨겨둔 그 사람…</p>
-                  <p>과연 성공 가능성은 얼마나 될까요?</p>
-                  <p>상대방의 반응, 나의 매력, 타이밍, 노력도...</p>
-                  <p>모든 것을 종합해서 성공률을 계산해드립니다!</p>
-                  <p className="whitespace-pre-line">「나 가능성 있나?」 궁금했다면? 「고백해도 될까?」 망설였다면?</p>
-                  <p>12개 질문으로 당신의 짝사랑 성공률을 정확하게 분석해드려요!</p>
-                  <p>친구들과 비교하면 더 재미있습니다 💘</p>
-                  <p>소요 시간 단 3분! 용기내서 시작해보세요! 💪</p>
-                </>
-              ) : locale === 'en' ? (
-                <>
-                  <p className="font-bold text-gray-700">&quot;10%? 50%? Or 90%?&quot;</p>
-                  <p>That person hidden in your heart...</p>
-                  <p>How much is the possibility of success?</p>
-                  <p>The other person&apos;s reaction, my charm, timing, effort...</p>
-                  <p>We calculate the success rate by combining everything!</p>
-                  <p className="whitespace-pre-line">If you were curious &quot;Do I have a chance?&quot; If you hesitated &quot;Should I confess?&quot;</p>
-                  <p>We accurately analyze your crush success rate with 12 questions!</p>
-                  <p>It&apos;s more fun to compare with friends 💘</p>
-                  <p>Takes only 3 minutes! Take courage and start! 💪</p>
-                </>
-              ) : locale === 'ja' ? (
-                <>
-                  <p className="font-bold text-gray-700">「10%？50%？それとも90%？」</p>
-                  <p>心の中に隠したその人…</p>
-                  <p>果たして成功の可能性はどのくらいでしょうか？</p>
-                  <p>相手の反応、私の魅力、タイミング、努力も...</p>
-                  <p>すべてを総合して成功率を計算してくれます！</p>
-                  <p className="whitespace-pre-line">「私に可能性ある？」気になったなら？「告白してもいい？」迷ったなら？</p>
-                  <p>12個の質問であなたの片思い成功率を正確に分析してくれます！</p>
-                  <p>友達と比較するともっと楽しいです💘</p>
-                  <p>所要時間わずか3分！勇気を出して始めてみてください！💪</p>
-                </>
-              ) : locale === 'zh-CN' ? (
-                <>
-                  <p className="font-bold text-gray-700">「10%？50%？还是90%？」</p>
-                  <p>藏在心里的那个人…</p>
-                  <p>到底成功的可能性有多大呢？</p>
-                  <p>对方的反应、我的魅力、时机、努力...</p>
-                  <p>综合一切来计算成功率！</p>
-                  <p className="whitespace-pre-line">如果好奇「我有机会吗？」如果犹豫「可以告白吗？」</p>
-                  <p>用12个问题准确分析你的暗恋成功率！</p>
-                  <p>和朋友比较更有趣💘</p>
-                  <p>只需3分钟！鼓起勇气开始吧！💪</p>
-                </>
-              ) : locale === 'zh-TW' ? (
-                <>
-                  <p className="font-bold text-gray-700">「10%？50%？還是90%？」</p>
-                  <p>藏在心裡的那個人…</p>
-                  <p>到底成功的可能性有多大呢？</p>
-                  <p>對方的反應、我的魅力、時機、努力...</p>
-                  <p>綜合一切來計算成功率！</p>
-                  <p className="whitespace-pre-line">如果好奇「我有機會嗎？」如果猶豫「可以告白嗎？」</p>
-                  <p>用12個問題準確分析你的暗戀成功率！</p>
-                  <p>和朋友比較更有趣💘</p>
-                  <p>只需3分鐘！鼓起勇氣開始吧！💪</p>
-                </>
-              ) : locale === 'id' ? (
-                <>
-                  <p className="font-bold text-gray-700">「10%? 50%? Atau 90%?」</p>
-                  <p>Orang yang tersembunyi di hati…</p>
-                  <p>Berapa besar kemungkinan suksesnya?</p>
-                  <p>Reaksi lawan, daya tarikku, timing, usaha...</p>
-                  <p>Semua digabungkan untuk menghitung tingkat keberhasilan!</p>
-                  <p className="whitespace-pre-line">Jika Anda penasaran 「Apakah saya punya kesempatan?」 Jika Anda ragu 「Haruskah saya mengaku?」</p>
-                  <p>Kami menganalisis tingkat keberhasilan cinta sepihak Anda dengan 12 pertanyaan!</p>
-                  <p>Lebih menyenangkan dibandingkan dengan teman-teman 💘</p>
-                  <p>Hanya butuh 3 menit! Beranilah dan mulai! 💪</p>
-                </>
-              ) : locale === 'vi' ? (
-                <>
-                  <p className="font-bold text-gray-700">「10%? 50%? Hay 90%?」</p>
-                  <p>Người đó ẩn giấu trong lòng…</p>
-                  <p>Khả năng thành công thực sự là bao nhiêu?</p>
-                  <p>Phản ứng của đối phương, sức hấp dẫn của tôi, thời điểm, nỗ lực...</p>
-                  <p>Tất cả được tổng hợp để tính tỷ lệ thành công!</p>
-                  <p className="whitespace-pre-line">Nếu bạn tò mò 「Tôi có cơ hội không?」 Nếu bạn do dự 「Có nên tỏ tình không?」</p>
-                  <p>Chúng tôi phân tích chính xác tỷ lệ thành công tình yêu đơn phương của bạn với 12 câu hỏi!</p>
-                  <p>So sánh với bạn bè sẽ thú vị hơn 💘</p>
-                  <p>Chỉ mất 3 phút! Hãy dũng cảm bắt đầu! 💪</p>
-                </>
-              ) : (
-                <>
-                  <p className="font-bold text-gray-700">「10%? 50%? 아니면 90%?」</p>
-                  <p>마음속에 숨겨둔 그 사람…</p>
-                  <p>과연 성공 가능성은 얼마나 될까요?</p>
-                  <p>상대방의 반응, 나의 매력, 타이밍, 노력도...</p>
-                  <p>모든 것을 종합해서 성공률을 계산해드립니다!</p>
-                  <p className="whitespace-pre-line">「나 가능성 있나?」 궁금했다면? 「고백해도 될까?」 망설였다면?</p>
-                  <p>12개 질문으로 당신의 짝사랑 성공률을 정확하게 분석해드려요!</p>
-                  <p>친구들과 비교하면 더 재미있습니다 💘</p>
-                  <p>소요 시간 단 3분! 용기내서 시작해보세요! 💪</p>
-                </>
-              )}
+              <p className="font-bold text-gray-700">{t('startMessage.line1')}</p>
+              <p>{t('startMessage.line2')}</p>
+              <p>{t('startMessage.line3')}</p>
+              <p>{t('startMessage.line4')}</p>
+              <p>{t('startMessage.line5')}</p>
+              <p className="font-semibold text-gray-800 whitespace-pre-line">{t('startMessage.line6')}</p>
             </div>
 
             <div className="flex justify-center mb-4">
@@ -670,12 +484,12 @@ export default function CrushTestClient({
                 onClick={handleStartTest}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-                {t('mbti.startTest')}
+                {tGlobal('mbti.startTest')}
               </button>
             </div>
 
             <p className="text-sm font-bold text-center mb-6" style={{ color: '#669df6' }}>
-              {t('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as any) })}
+              {tGlobal('mbti.totalParticipants', { count: formatPlayCount(displayPlayCount, locale as Locale) })}
             </p>
 
             <div className="max-w-[680px] mx-auto mb-6">
@@ -696,26 +510,26 @@ export default function CrushTestClient({
 
             <div className="mb-8 text-center">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {t('mbti.shareWithFriends')}
+                {tGlobal('mbti.shareWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
@@ -723,7 +537,7 @@ export default function CrushTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
               <h2 className="text-xl font-bold text-gray-800 mb-6">
-                {t('recommendations.similarTests') || '유사한 다른 테스트'}
+                {t('ui.similarTests')}
               </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                   {similarTestsState.map((test) => (
@@ -760,7 +574,7 @@ export default function CrushTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount, locale as Locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -786,13 +600,13 @@ export default function CrushTestClient({
             slot={ADSENSE_CONFIG.SLOTS.LOADING_TOP}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역 (로딩 스피너 상단)"
+            label={t('ui.adsenseTitle')}
           />
         </div>
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-lg text-gray-700">{t('mbti.loadingResults')}</p>
+          <p className="mt-4 text-lg text-gray-700">{tGlobal('mbti.loadingResults')}</p>
         </div>
 
         {/* AdSense 광고 - 로딩 스피너 하단 */}
@@ -801,7 +615,7 @@ export default function CrushTestClient({
             slot={ADSENSE_CONFIG.SLOTS.LOADING_BOTTOM}
             style={{ width: '100%', height: '250px' }}
             className="mx-auto"
-            label="AdSense 광고 영역 (로딩 스피너 하단)"
+            label={t('ui.adsenseTitle')}
           />
         </div>
       </div>
@@ -814,7 +628,7 @@ export default function CrushTestClient({
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
         <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            🎉 {t('mbti.testCompleted')}
+            🎉 {tGlobal('mbti.testCompleted')}
           </h2>
           
           
@@ -837,7 +651,7 @@ export default function CrushTestClient({
             onClick={handleShowResult}
             className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-xl text-xl font-bold hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg"
           >
-            {t('mbti.viewAnalysisResults')}
+            {tGlobal('mbti.viewAnalysisResults')}
           </button>
         </div>
       </div>
@@ -846,104 +660,143 @@ export default function CrushTestClient({
 
   // 결과 화면
   if (showResult && result) {
-    // 다국어 쉼표 처리: 영어 쉼표+공백, 일본어 쉼표, 중국어 쉼표 모두 지원
-    const splitByCommas = (text: string) => {
-      // 쉼표 뒤 공백을 포함한 패턴으로 분할
-      return text.split(/,\s+|，\s*|、\s*/).map((item: string) => item.trim()).filter((item: string) => item.length > 0);
-    };
-    
-    const resultCurrentState = splitByCommas(typeof result.currentState === 'string' ? result.currentState : result.currentState[locale] || result.currentState.ko);
-    const resultRecommendation = splitByCommas(typeof result.recommendation === 'string' ? result.recommendation : result.recommendation[locale] || result.recommendation.ko);
-    
+    const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;
+    const resultShortDescription = result.shortDescription[locale as keyof typeof result.shortDescription] || result.shortDescription.ko;
+    const resultLongDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
+    const resultRedFlagLevel = result.redFlagLevel[locale as keyof typeof result.redFlagLevel] || result.redFlagLevel.ko;
+    const resultMainTraits = result.mainTraits[locale as keyof typeof result.mainTraits] || result.mainTraits.ko;
+    const resultSpotlightDetail = result.spotlightDetail[locale as keyof typeof result.spotlightDetail] || result.spotlightDetail.ko;
+    const resultPrescription = result.prescription[locale as keyof typeof result.prescription] || result.prescription.ko;
+    const spotlightLabel =
+      result.spotlightKind === 'hidden' ? t('ui.spotlightHidden') : t('ui.spotlightCore');
+    const resultGoodMatch = result.goodMatch[locale as keyof typeof result.goodMatch] || result.goodMatch.ko;
+    const resultBadMatch = result.badMatch[locale as keyof typeof result.badMatch] || result.badMatch.ko;
+
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-3xl mx-auto px-4 py-8">
           <div>
             <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
               <h2 className="text-xl font-bold text-gray-800 mb-3">
-                {t('mbti.yourResult')}
+                {tGlobal('mbti.yourResult')}
               </h2>
               <div className="text-6xl mb-3">{result.emoji}</div>
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
-                {typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko}
+                {resultTitle}
               </h1>
+              <p className="text-lg font-semibold text-gray-700 mb-3">
+                {resultShortDescription}
+              </p>
               <p className="text-base text-gray-600 leading-relaxed">
-                {typeof result.description === 'string' ? result.description : result.description[locale] || result.description.ko}
+                {resultLongDescription}
               </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                📊 {locale === 'ko' ? '현재 상황' : 
-                     locale === 'en' ? 'Current Situation' :
-                     locale === 'ja' ? '現在の状況' :
-                     locale === 'zh-CN' ? '当前情况' :
-                     locale === 'zh-TW' ? '當前情況' :
-                     locale === 'id' ? 'Situasi Saat Ini' :
-                     locale === 'vi' ? 'Tình Huống Hiện Tại' : '현재 상황'}
+              <h3 className="text-base font-bold text-gray-800 mb-2">
+                📊 {t('ui.redFlagLevel')}
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {resultCurrentState.map((item, index) => (
+              <p className="text-2xl font-bold text-purple-600 text-center" style={{ fontSize: '1.5em' }}>
+                {resultRedFlagLevel}
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4 md:p-5 mb-3 border border-purple-100/80">
+              <h3 className="text-base font-bold text-gray-800 mb-3 text-left">
+                ⭐ {t('ui.mainTraits')}
+              </h3>
+              <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                {resultMainTraits.split(/[,、，]/).map((char, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full"
+                    className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-3 py-1.5 rounded-full text-sm font-medium"
                   >
-                    {item}
+                    {char.trim()}
                   </span>
                 ))}
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                💡 {locale === 'ko' ? '추천 행동' : 
-                     locale === 'en' ? 'Recommended Actions' :
-                     locale === 'ja' ? '推奨行動' :
-                     locale === 'zh-CN' ? '推荐行动' :
-                     locale === 'zh-TW' ? '推薦行動' :
-                     locale === 'id' ? 'Tindakan yang Direkomendasikan' :
-                     locale === 'vi' ? 'Hành Động Được Khuyến Nghị' : '추천 행동'}
+              <h3 className="text-base font-bold text-gray-800 mb-2">
+                🚩 {spotlightLabel}
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {resultRecommendation.map((item, index) => (
-                  <span
-                    key={index}
-                    className="inline-block bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full"
-                  >
-                    {item}
-                  </span>
-                ))}
+              <p className="text-sm text-gray-700 leading-relaxed">{resultSpotlightDetail}</p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
+              <h3 className="text-base font-bold text-gray-800 mb-2">
+                📋 {t('ui.prescription')}
+              </h3>
+              <p className="text-sm text-gray-700 leading-relaxed">{resultPrescription}</p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
+                  💖 {t('ui.goodMatch')}
+                </h3>
+                <div className="space-y-2">
+                  {(() => {
+                    // "Type 2 (서툰 뚝딱이)" 형식에서 Type 추출
+                    const matchType = resultGoodMatch.match(/Type\s*(\d+)/i);
+                    if (matchType) {
+                      const typeNumber = matchType[1];
+                      const matchTypeKey = `Type${typeNumber}`;
+                      const matchResult = results.find(r => r.type === matchTypeKey);
+                      if (matchResult) {
+                        const matchTitle = matchResult.title[locale as keyof typeof matchResult.title] || matchResult.title.ko;
+                        return (
+                          <div className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg px-3 py-2">
+                            <div className="flex items-center gap-2.5">
+                              <span className="text-xl">{matchResult.emoji}</span>
+                              <span className="text-sm font-medium text-gray-800">{matchTitle}</span>
+                            </div>
+                          </div>
+                        );
+                      }
+                    }
+                    return (
+                      <p className="text-sm text-gray-700">
+                        {resultGoodMatch}
+                      </p>
+                    );
+                  })()}
+                </div>
               </div>
-            </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                ⚠️ {locale === 'ko' ? '주의 사항' : 
-                     locale === 'en' ? 'Precautions' :
-                     locale === 'ja' ? '注意事項' :
-                     locale === 'zh-CN' ? '注意事项' :
-                     locale === 'zh-TW' ? '注意事項' :
-                     locale === 'id' ? 'Hal yang Perlu Diperhatikan' :
-                     locale === 'vi' ? 'Lưu Ý' : '주의 사항'}
-              </h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                {typeof result.warning === 'string' ? result.warning : result.warning[locale] || result.warning.ko}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-3">
-                💝 {locale === 'ko' ? '조언' : 
-                     locale === 'en' ? 'Advice' :
-                     locale === 'ja' ? 'アドバイス' :
-                     locale === 'zh-CN' ? '建议' :
-                     locale === 'zh-TW' ? '建議' :
-                     locale === 'id' ? 'Saran' :
-                     locale === 'vi' ? 'Lời Khuyên' : '조언'}
-              </h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                {typeof result.advice === 'string' ? result.advice : result.advice[locale] || result.advice.ko}
-              </p>
+              <div className="bg-white rounded-xl shadow-lg p-4">
+                <h3 className="text-base font-bold text-gray-800 mb-3">
+                  💔 {t('ui.badMatch')}
+                </h3>
+                <div className="space-y-2">
+                  {(() => {
+                    // "Type 6 (인간 수도꼭지)" 형식에서 Type 추출
+                    const matchType = resultBadMatch.match(/Type\s*(\d+)/i);
+                    if (matchType) {
+                      const typeNumber = matchType[1];
+                      const matchTypeKey = `Type${typeNumber}`;
+                      const matchResult = results.find(r => r.type === matchTypeKey);
+                      if (matchResult) {
+                        const matchTitle = matchResult.title[locale as keyof typeof matchResult.title] || matchResult.title.ko;
+                        return (
+                          <div className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg px-3 py-2">
+                            <div className="flex items-center gap-2.5">
+                              <span className="text-xl">{matchResult.emoji}</span>
+                              <span className="text-sm font-medium text-gray-800">{matchTitle}</span>
+                            </div>
+                          </div>
+                        );
+                      }
+                    }
+                    return (
+                      <p className="text-sm text-gray-700">
+                        {resultBadMatch}
+                      </p>
+                    );
+                  })()}
+                </div>
+              </div>
             </div>
 
             <div className="mt-8 mb-6 px-4">
@@ -954,7 +807,7 @@ export default function CrushTestClient({
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                 </svg>
-                {t('mbti.shareResult')}
+                {t('ui.shareResult')}
               </button>
             </div>
 
@@ -964,7 +817,7 @@ export default function CrushTestClient({
                 slot={ADSENSE_CONFIG.SLOTS.RESULT_SCREEN}
                 style={{ width: '100%', height: '250px' }}
                 className="mx-auto"
-                label="AdSense 광고 영역 (결과-다시하기 사이)"
+                label={t('ui.adsenseTitle')}
               />
             </div>
 
@@ -973,38 +826,38 @@ export default function CrushTestClient({
                 onClick={handleRetake}
                 className="flex-1 bg-gray-300 text-gray-800 font-bold py-4 px-6 rounded-xl hover:bg-gray-400 transition-all shadow-md"
               >
-                {t('mbti.retakeTest')}
+                {tGlobal('mbti.retakeTest')}
               </button>
               <Link
                 href={`/${locale}`}
                 className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all text-center shadow-md"
               >
-                {t('mbti.otherTests')}
+                {tGlobal('mbti.otherTests')}
               </Link>
             </div>
 
             <div className="mt-8 mb-8 text-center px-4">
               <h2 className="text-lg font-bold text-gray-800 mb-4">
-                {t('mbti.shareResultWithFriends')}
+                {tGlobal('mbti.shareResultWithFriends')}
               </h2>
               <div className="flex justify-center gap-2">
                 <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
                 </button>
                 <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                  <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                  <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
                 </button>
               </div>
             </div>
@@ -1013,7 +866,7 @@ export default function CrushTestClient({
             {similarTestsState.length > 0 && (
               <div className="mb-8 pb-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {t('recommendations.similarTestsTop5') || '🎯 유사한 다른 테스트 추천 톱5'}
+                  {t('recommendations.similarTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {similarTestsState.slice(0, 5).map((test) => (
@@ -1050,7 +903,7 @@ export default function CrushTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount, locale as Locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -1073,7 +926,7 @@ export default function CrushTestClient({
                 </div>
 
                 <h2 className="text-xl font-bold text-gray-800 mb-6">
-                  {t('recommendations.popularTestsTop5') || '🔥 요즘 인기 테스트 추천 톱5'}
+                  {t('recommendations.popularTestsTop5')}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {popularTestsState.map((test) => (
@@ -1110,7 +963,7 @@ export default function CrushTestClient({
                             </h3>
                             <div className="font-semibold text-gray-800 group-hover:text-primary-600 transition-colors flex items-center gap-1.5 text-sm flex-shrink-0">
                               <Play size={14} />
-                              <span>{formatPlayCount(test.playCount, locale as any)}</span>
+                              <span>{formatPlayCount(test.playCount, locale as Locale)}</span>
                             </div>
                           </div>
                         </div>
@@ -1127,7 +980,12 @@ export default function CrushTestClient({
   }
 
   // 질문 화면
+  if (shuffledQuestions.length === 0 || !shuffledQuestions[currentQuestion]) {
+    return null; // 질문이 준비되지 않았으면 렌더링하지 않음
+  }
+  
   const question = shuffledQuestions[currentQuestion];
+  const questionText = question.question[locale as keyof typeof question.question] || question.question.ko;
   const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
   
   const optionsArray = shuffledOptionsMap[currentQuestion] || question.options;
@@ -1138,7 +996,7 @@ export default function CrushTestClient({
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-600">
-              {t('mbti.progress')}
+              {tGlobal('mbti.progress')}
             </span>
             <span className="text-sm font-bold text-purple-600">
               {currentQuestion + 1} / {shuffledQuestions.length}
@@ -1154,11 +1012,12 @@ export default function CrushTestClient({
 
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center leading-relaxed px-4">
-            {typeof question.question === 'string' ? question.question : question.question[locale] || question.question.ko}
+            {questionText}
           </h2>
 
           <div className="space-y-4 px-4">
             {optionsArray.map((option, index) => {
+              const optionText = option.text[locale as keyof typeof option.text] || option.text.ko;
               const label = String.fromCharCode(65 + index);
               const colors = [
                 'from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border-purple-200 hover:border-purple-400',
@@ -1171,14 +1030,14 @@ export default function CrushTestClient({
               return (
                 <button
                   key={index}
-                  onClick={() => handleAnswer(option.scores)}
+                  onClick={() => handleAnswer(option.score)}
                   className={`w-full bg-gradient-to-r ${colors[index]} border-2 text-gray-800 font-medium py-3 px-4 rounded-xl transition-all transform hover:scale-102 text-left`}
                 >
                   <div className="flex items-center">
                     <div className={`w-7 h-7 ${bgColors[index]} text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm`}>
                       {label}
                     </div>
-                    <span className="text-base">{typeof option.text === 'string' ? option.text : option.text[locale] || option.text.ko}</span>
+                    <span className="text-base">{optionText}</span>
                   </div>
                 </button>
               );
@@ -1191,32 +1050,32 @@ export default function CrushTestClient({
               slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
               style={{ width: '100%', height: '250px' }}
               className="mx-auto"
-              label="AdSense 광고 영역 (테스트 진행 마지막 답변 밑)"
+              label={t('ui.adsenseTitle')}
             />
           </div>
 
           <div className="mt-8 mb-8 text-center px-4">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-              {t('mbti.shareWithFriends')}
+              {tGlobal('mbti.shareWithFriends')}
             </h2>
             <div className="flex justify-center gap-2">
               <button onClick={copyLink} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/link.jpeg" alt="링크 복사" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/link.jpeg" alt={t('ui.linkCopy')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToKakao} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/kakao.jpeg" alt="카카오톡" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/kakao.jpeg" alt={t('ui.kakao')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToTelegram} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/telegram.jpeg" alt="텔레그램" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/telegram.jpeg" alt={t('ui.telegram')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWeChat} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/wechat.jpeg" alt="위챗" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/wechat.jpeg" alt={t('ui.wechat')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToLine} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/line.jpeg" alt="라인" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/line.jpeg" alt={t('ui.line')} width={46} height={46} className="rounded-lg" />
               </button>
               <button onClick={shareToWhatsApp} className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform">
-                <Image src="/icons/whatsapp.jpeg" alt="왓츠앱" width={46} height={46} className="rounded-lg" />
+                <Image src="/icons/whatsapp.jpeg" alt={t('ui.whatsapp')} width={46} height={46} className="rounded-lg" />
               </button>
             </div>
           </div>

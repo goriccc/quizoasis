@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import { LifePrioritiesQuestion, LifePrioritiesResult, calculateLifePrioritiesResult } from '@/lib/lifePrioritiesData';
 import Link from 'next/link';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
@@ -553,9 +552,11 @@ export default function LifePrioritiesTestClient({
               <div className="flex justify-center">
 
 
-                <CoupangAffiliateIframe variant="start" />
-
-
+                <AdSensePlaceholder
+                  slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+                  style={{ width: '100%', height: '250px' }}
+                  className="mx-auto w-full"
+                />
               </div>
 
 
@@ -687,15 +688,15 @@ export default function LifePrioritiesTestClient({
           
           
           
-          <p className="text-xs text-gray-500 text-center mb-3">
-            {tGlobal('footer.disclaimer')}
-          </p>
           <div className="mb-6">
 
             <div className="flex justify-center">
 
-              <CoupangAffiliateIframe variant="popup" />
-
+              <AdSensePlaceholder
+                slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto w-full"
+              />
             </div>
 
           </div>

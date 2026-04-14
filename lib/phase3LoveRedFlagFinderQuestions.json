@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "ko": "연인이 답장을 1시간 넘게 안 할 때 나는?",
+      "en": "If your partner has not replied for over an hour, you usually:",
+      "ja": "恋人が1時間以上返信しないとき、あなたは？",
+      "zh-CN": "恋人超过一小时没回消息时，你通常会？",
+      "zh-TW": "戀人超過一小時沒回訊息時，你通常會？",
+      "vi": "Khi người yêu không trả lời quá một giờ, bạn thường:",
+      "id": "Jika pasangan tidak membalas lebih dari satu jam, kamu biasanya:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "바쁜가 보다 하고 기다린다. 크게 신경 쓰지 않는다", "en": "Assume they are busy and wait; it does not bother you much", "ja": "忙しいのだろうと思って待つ。あまり気にしない", "zh-CN": "觉得对方在忙就等，不太在意", "zh-TW": "覺得對方在忙就等，不太在意", "vi": "Nghĩ họ bận và đợi; không bận tâm nhiều", "id": "Anggap mereka sibuk dan menunggu; tidak terlalu mengganggu"}},
+      {"score": 1, "text": {"ko": "좀 신경 쓰이지만 참고 기다린다", "en": "It nags at you a bit, but you wait it out", "ja": "少し気になるが我慢して待つ", "zh-CN": "有点在意但还是忍着等", "zh-TW": "有點在意但還是忍著等", "vi": "Hơi khó chịu nhưng vẫn chờ", "id": "Agak risau tapi tetap menunggu"}},
+      {"score": 2, "text": {"ko": "읽었는지 확인하거나 다른 수단으로 연락을 시도한다", "en": "You check read receipts or try another way to reach them", "ja": "既読を確認したり別の手段で連絡を試みる", "zh-CN": "看是否已读或换渠道联系", "zh-TW": "看是否已讀或換管道聯絡", "vi": "Kiểm tra đã đọc hoặc nhắn kênh khác", "id": "Cek sudah dibaca atau hubungi lewat jalur lain"}},
+      {"score": 3, "text": {"ko": "감정이 올라오고 답장이 올 때쯤엔 이미 삐쳐있다", "en": "You get upset; by the time they reply you are already moody", "ja": "感情が高ぶり返信が来る頃にはもう不機嫌", "zh-CN": "情绪上来，等对方回时已经不高兴了", "zh-TW": "情緒上來，等對方回時已經不高興了", "vi": "Bực bội; đến khi họ trả lời thì tâm trạng đã tệ", "id": "Emosi naik; saat mereka balas kamu sudah kesal"}}
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "ko": "연인이 친구들과 약속이 있어서 오늘 못 만난다고 할 때?",
+      "en": "Your partner says they cannot meet today because of plans with friends:",
+      "ja": "恋人が友人との予定で今日会えないと言ったら？",
+      "zh-CN": "恋人说今天和朋友有约见不了，你会？",
+      "zh-TW": "戀人說今天和朋友有約見不了，你會？",
+      "vi": "Người yêu nói hôm nay bận đi chơi với bạn, không gặp được:",
+      "id": "Pasangan bilang hari ini ada janji teman jadi tidak bisa ketemu:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "\"그래, 재밌게 놀아!\" 진심으로 응원한다", "en": "\"Have fun!\" You genuinely mean it", "ja": "「楽しんで！」と心から応援する", "zh-CN": "真心说“去玩吧，开心点”", "zh-TW": "真心說「去玩吧，開心點」", "vi": "“Vui vẻ nhé!” — bạn thật lòng", "id": "“Seru-seruan ya!” — kamu sungguh-sungguh"}},
+      {"score": 1, "text": {"ko": "약간 아쉽지만 \"알겠어\"라고 하고 내 시간을 즐긴다", "en": "A little disappointed, but you say okay and enjoy your own time", "ja": "少し残念だが「わかった」と言い自分の時間を楽しむ", "zh-CN": "有点遗憾但说好吧，享受自己的时间", "zh-TW": "有點遺憾但說好吧，享受自己的時間", "vi": "Hơi tiếc nhưng đồng ý và tận hưởng thời gian riêng", "id": "Sedikit kecewa tapi bilang oke dan nikmati waktu sendiri"}},
+      {"score": 2, "text": {"ko": "겉으로는 괜찮다고 하지만 속으론 서운해서 티가 난다", "en": "You say it is fine, but you are hurt and it shows", "ja": "平気と言うが内心は寂しく態度に出る", "zh-CN": "嘴上说没事，心里委屈会表现出来", "zh-TW": "嘴上說沒事，心裡委屈會表現出來", "vi": "Nói không sao nhưng buồn vẫn lộ ra", "id": "Katakan tidak apa-apa tapi kecewa terlihat"}},
+      {"score": 3, "text": {"ko": "\"나보다 친구가 더 중요해?\"라는 말이 나오거나 그런 분위기를 만든다", "en": "You imply friends matter more, or create that vibe", "ja": "「友達の方が大事？」と言ったり雰囲気を作る", "zh-CN": "说“朋友比我重要？”或营造那种气氛", "zh-TW": "說「朋友比我重要？」或營造那種氣氛", "vi": "Gợi ý bạn quan trọng hơn mình hoặc tạo áp lực", "id": "Menyiratkan teman lebih penting atau menekan secara halus"}}
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "ko": "싸우고 나서 내가 주로 하는 행동은?",
+      "en": "After a fight, what you usually do is:",
+      "ja": "喧嘩のあと、あなたがよく取る行動は？",
+      "zh-CN": "吵架之后你通常会：",
+      "zh-TW": "吵架之後你通常會：",
+      "vi": "Sau khi cãi nhau, bạn thường:",
+      "id": "Setelah bertengkar, kamu biasanya:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "감정이 가라앉으면 솔직하게 내 마음을 이야기하고 화해한다", "en": "When you calm down, you share honestly and make up", "ja": "落ち着いたら正直に話して仲直りする", "zh-CN": "冷静后坦诚沟通并和好", "zh-TW": "冷靜後坦誠溝通並和好", "vi": "Bình tĩnh lại thì nói thật và làm lành", "id": "Setelah tenang, bicara jujur dan berbaikan"}},
+      {"score": 1, "text": {"ko": "시간이 좀 걸리지만 결국 먼저 다가가서 해결한다", "en": "It takes time, but you eventually reach out first", "ja": "時間はかかるが最終的には自分から歩み寄る", "zh-CN": "需要一点时间但最终会先迈出一步", "zh-TW": "需要一點時間但最終會先邁出一步", "vi": "Mất thời gian nhưng cuối cùng chủ động làm lành", "id": "Butuh waktu tapi akhirnya kamu duluan mendekat"}},
+      {"score": 2, "text": {"ko": "상대가 먼저 사과할 때까지 기다리거나 연락을 끊는다", "en": "You wait for them to apologize first, or go silent", "ja": "相手の謝罪を待つか連絡を絶つ", "zh-CN": "等对方先道歉或断联", "zh-TW": "等對方先道歉或斷聯", "vi": "Chờ đối phương xin lỗi trước hoặc im lặng", "id": "Menunggu mereka minta maaf dulu atau memutus kontak"}},
+      {"score": 3, "text": {"ko": "감정이 폭발해서 상처가 될 말을 하거나 며칠씩 냉전 상태가 된다", "en": "You say hurtful things in the heat of the moment, or go cold for days", "ja": "感情が爆発して傷つく言葉を言うか数日冷戦", "zh-CN": "情绪爆发说伤人的话，或冷战好几天", "zh-TW": "情緒爆發說傷人的話，或冷戰好幾天", "vi": "Nói lời làm tổn thương hoặc lạnh nhạt nhiều ngày", "id": "Berkata menyakitkan saat emosi atau dingin berhari-hari"}}
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "ko": "연인이 내 기대와 다른 행동을 했을 때?",
+      "en": "When your partner does something different from what you expected:",
+      "ja": "恋人があなたの期待と違う行動をしたら？",
+      "zh-CN": "恋人的行为和你期待的不一样时？",
+      "zh-TW": "戀人的行為和你期待的不一樣時？",
+      "vi": "Khi người yêu làm khác với kỳ vọng của bạn:",
+      "id": "Saat pasangan bertindak berbeda dari ekspektasimu:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "\"이렇게 해줬으면 좋겠어\"라고 솔직하게 말한다", "en": "You say clearly, \"I would love it if you could…\"", "ja": "「こうしてほしい」と正直に言う", "zh-CN": "直接说“我希望你能……”", "zh-TW": "直接說「我希望你能……」", "vi": "Nói thẳng \"Mình muốn bạn…\"", "id": "Bilang jujur, \"Aku harap kamu bisa…\""}},
+      {"score": 1, "text": {"ko": "서운하지만 혼자 삭히고 넘어간다", "en": "You feel hurt but swallow it and move on", "ja": "寂しいが一人で飲み込む", "zh-CN": "委屈但自己消化过去", "zh-TW": "委屈但自己消化過去", "vi": "Buồn nhưng tự nuốt trôi", "id": "Kecewa tapi menelannya sendiri"}},
+      {"score": 2, "text": {"ko": "직접 말하지 않고 태도로 표현하거나 눈치 주기를 한다", "en": "You do not say it directly; you show it with attitude or hints", "ja": "直接言わず態度や暗示で示す", "zh-CN": "不明说，用态度或暗示表达", "zh-TW": "不明說，用態度或暗示表達", "vi": "Không nói thẳng; thể hiện qua thái độ", "id": "Tidak langsung; tunjukkan lewat sikap"}},
+      {"score": 3, "text": {"ko": "\"왜 그것도 모르냐\"는 식으로 표현하거나 과거 일까지 끌어온다", "en": "You talk down to them or drag up the past", "ja": "「なぜ分からない」と言ったり過去を蒸し返す", "zh-CN": "用“这都不懂？”的语气或翻旧账", "zh-TW": "用「這都不懂？」的語氣或翻舊帳", "vi": "Trách móc kiểu \"sao cũng không hiểu\" hoặc nhắc chuyện cũ", "id": "Menyindir atau mengungkit masa lalu"}}
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "ko": "연인이 나와 다른 의견을 제시할 때?",
+      "en": "When your partner disagrees with you:",
+      "ja": "恋人があなたと違う意見を言ったら？",
+      "zh-CN": "恋人和你意见不同时？",
+      "zh-TW": "戀人和你意見不同時？",
+      "vi": "Khi người yêu có ý kiến khác bạn:",
+      "id": "Saat pasangan punya pendapat berbeda:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "다른 관점이 생기는 게 흥미롭다. 서로 이야기하면 된다", "en": "You find another perspective interesting; you can talk it through", "ja": "違う視点は面白い。話せばいい", "zh-CN": "觉得不同观点有趣，可以聊开", "zh-TW": "覺得不同觀點有趣，可以聊開", "vi": "Thấy góc nhìn khác thú vị; có thể trao đổi", "id": "Sudut pandang beda menarik; bisa dibicarakan"}},
+      {"score": 1, "text": {"ko": "처음엔 당황하지만 상대 의견을 들어보려 노력한다", "en": "Thrown at first, but you try to hear them out", "ja": "最初は戸惑うが相手の意見を聞こうとする", "zh-CN": "一开始愣住，但会试着听对方", "zh-TW": "一開始愣住，但會試著聽對方", "vi": "Lúc đầu bối rối nhưng cố lắng nghe", "id": "Awalnya kaget tapi berusaha mendengarkan"}},
+      {"score": 2, "text": {"ko": "내 의견이 더 맞는 것 같아서 설득하려고 한다", "en": "You feel you are more right and try to convince them", "ja": "自分の方が正しいと思い説得しようとする", "zh-CN": "觉得自己更对，想说服对方", "zh-TW": "覺得自己更對，想說服對方", "vi": "Nghĩ mình đúng hơn và cố thuyết phục", "id": "Merasa lebih benar dan mencoba meyakinkan"}},
+      {"score": 3, "text": {"ko": "내 의견이 무시당한 것 같아서 기분이 상하거나 고집을 부린다", "en": "You feel dismissed, get offended, or dig in your heels", "ja": "無視された気分で傷つくか頑固になる", "zh-CN": "觉得被忽视而生气或固执", "zh-TW": "覺得被忽視而生氣或固執", "vi": "Cảm thấy bị phớt lờ, khó chịu hoặc cứng đầu", "id": "Merasa diabaikan, tersinggung, atau ngotot"}}
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "ko": "연인의 과거 연애에 대해 나는?",
+      "en": "When it comes to your partner's past relationships, you:",
+      "ja": "恋人の過去の恋愛について、あなたは？",
+      "zh-CN": "关于恋人的过去恋情，你会：",
+      "zh-TW": "關於戀人的過去戀情，你會：",
+      "vi": "Về các mối tình trước của người yêu, bạn:",
+      "id": "Soal hubungan masa lalu pasangan, kamu:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "과거는 과거다. 크게 신경 쓰지 않는다", "en": "The past is the past; you do not dwell on it", "ja": "過去は過去。あまり気にしない", "zh-CN": "过去就过去了，不太纠结", "zh-TW": "過去就過去了，不太糾結", "vi": "Quá khứ là quá khứ; không bám víu", "id": "Masa lalu tetap masa lalu; tidak terlalu dipikirkan"}},
+      {"score": 1, "text": {"ko": "궁금하긴 하지만 굳이 먼저 물어보진 않는다", "en": "Curious, but you do not pry first", "ja": "気になるがわざわざ聞かない", "zh-CN": "好奇但不会主动追问", "zh-TW": "好奇但不會主動追問", "vi": "Tò mò nhưng không hỏi trước", "id": "Penasaran tapi tidak mendesak bertanya"}},
+      {"score": 2, "text": {"ko": "은근히 자꾸 물어보게 되고 신경이 쓰인다", "en": "You keep asking indirectly; it stays on your mind", "ja": "つい聞いてしまい気になる", "zh-CN": "忍不住旁敲侧击，一直放不下", "zh-TW": "忍不住旁敲側擊，一直放不下", "vi": "Cứ hỏi vòng vo; không nguôi", "id": "Terus bertanya halus; sulit melupakan"}},
+      {"score": 3, "text": {"ko": "전 연인 이야기가 나오면 비교 당하는 것 같아서 예민하게 반응한다", "en": "Ex talk makes you feel compared; you react sharply", "ja": "元恋人の話で比較された気分になり敏感に反応", "zh-CN": "一提前任就觉得在比较，反应很敏感", "zh-TW": "一提前任就覺得在比較，反應很敏感", "vi": "Nhắc người cũ là cảm thấy bị so sánh; phản ứng gay gắt", "id": "Cerita mantan terasa seperti perbandingan; bereaksi keras"}}
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "ko": "연인이 내가 모르는 지인과 연락하는 것을 알았을 때?",
+      "en": "You learn your partner is messaging someone you do not know:",
+      "ja": "恋人が知らない知人と連絡していると分かったら？",
+      "zh-CN": "发现恋人在和你不认识的人联系时？",
+      "zh-TW": "發現戀人在和你不認識的人聯絡時？",
+      "vi": "Bạn biết người yêu đang nhắn với người bạn không quen:",
+      "id": "Kamu tahu pasangan chat dengan orang yang tidak kamu kenal:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "신뢰하니까 특별히 신경 쓰지 않는다", "en": "You trust them; it does not bother you", "ja": "信頼しているので特に気にしない", "zh-CN": "信任对方，不太在意", "zh-TW": "信任對方，不太在意", "vi": "Tin tưởng; không lo lắng", "id": "Percaya; tidak terlalu memikirkan"}},
+      {"score": 1, "text": {"ko": "조금 신경 쓰이지만 믿어보기로 한다", "en": "A bit uneasy, but you choose to trust", "ja": "少し気になるが信じてみる", "zh-CN": "有点在意但还是选择相信", "zh-TW": "有點在意但還是選擇相信", "vi": "Hơi lo nhưng vẫn chọn tin", "id": "Agak risau tapi tetap memilih percaya"}},
+      {"score": 2, "text": {"ko": "누구인지 슬쩍 물어보거나 SNS를 확인하게 된다", "en": "You casually ask who it is, or check socials", "ja": "誰か聞いたりSNSを確認したくなる", "zh-CN": "旁敲侧击问是谁，或忍不住看社交账号", "zh-TW": "旁敲側擊問是誰，或忍不住看社交帳號", "vi": "Hỏi khéo là ai hoặc lên mạng xem", "id": "Tanya siapa itu atau cek media sosial"}},
+      {"score": 3, "text": {"ko": "솔직하게 불편하다고 말하거나 연락하지 말라고 요구한다", "en": "You say you are uncomfortable or ask them to stop", "ja": "正直に不快だと言うか連絡をやめてと求める", "zh-CN": "直接说不舒服或要求别联系", "zh-TW": "直接說不舒服或要求別聯絡", "vi": "Nói thẳng khó chịu hoặc yêu cầu ngừng liên lạc", "id": "Bilang tidak nyaman atau minta berhenti menghubungi"}}
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "ko": "연인이 나에게 개인 시간이 필요하다고 할 때?",
+      "en": "When your partner says they need personal time:",
+      "ja": "恋人が一人の時間が必要だと言ったら？",
+      "zh-CN": "恋人说需要独处时间时？",
+      "zh-TW": "戀人說需要獨處時間時？",
+      "vi": "Khi người yêu nói cần thời gian riêng:",
+      "id": "Saat pasangan bilang butuh waktu sendiri:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "\"그래, 각자 시간도 필요하지\" 하고 자연스럽게 받아들인다", "en": "\"Sure, we both need solo time\" — you take it naturally", "ja": "「それぞれ時間も必要だね」と自然に受け入れる", "zh-CN": "自然接受“各自也需要空间”", "zh-TW": "自然接受「各自也需要空間」", "vi": "Chấp nhận tự nhiên rằng mỗi người cần không gian riêng", "id": "Menerima dengan wajar bahwa masing-masing butuh ruang"}},
+      {"score": 1, "text": {"ko": "약간 서운하지만 이해하고 내 시간을 보낸다", "en": "A little lonely, but you understand and do your own thing", "ja": "少し寂しいが理解して自分の時間を過ごす", "zh-CN": "有点失落但理解，做自己的事", "zh-TW": "有點失落但理解，做自己的事", "vi": "Hơi cô đơn nhưng hiểu và làm việc riêng", "id": "Sedikit sepi tapi mengerti dan sibuk sendiri"}},
+      {"score": 2, "text": {"ko": "\"나한테 싫증 난 건 아니지?\" 하는 생각이 들면서 불안해진다", "en": "You worry they are bored of you", "ja": "「飽きられた？」と不安になる", "zh-CN": "会想“是不是对我腻了”而焦虑", "zh-TW": "會想「是不是對我膩了」而焦慮", "vi": "Lo họ đã chán mình", "id": "Khawatir mereka sudah bosan padamu"}},
+      {"score": 3, "text": {"ko": "거리를 두려는 신호로 받아들이고 감정적으로 반응하거나 확인을 요구한다", "en": "You read it as pulling away and react emotionally or demand reassurance", "ja": "距離を置くサインと受け取り感情的になるか確認を求める", "zh-CN": "当成疏远信号，情绪化或反复要确认", "zh-TW": "當成疏遠信號，情緒化或反覆要確認", "vi": "Coi là dấu hiệu rút lui; phản ứng cảm xúc hoặc đòi cam kết", "id": "Menganggap sebagai menjauh; bereaksi emosional atau minta kepastian"}}
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "ko": "연인과 갈등이 생겼을 때 나의 패턴은?",
+      "en": "When conflict happens with your partner, your pattern is:",
+      "ja": "恋人と対立したときのあなたのパターンは？",
+      "zh-CN": "和恋人起冲突时，你的模式是：",
+      "zh-TW": "和戀人起衝突時，你的模式是：",
+      "vi": "Khi mâu thuẫn với người yêu, kiểu của bạn là:",
+      "id": "Saat konflik dengan pasangan, polamu:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "감정이 격해지더라도 대화로 해결하려고 노력한다", "en": "Even if emotions run high, you try to talk it through", "ja": "感情が高ぶっても対話で解決しようとする", "zh-CN": "即使激动也努力用沟通解决", "zh-TW": "即使激動也努力用溝通解決", "vi": "Dù căng thẳng vẫn cố trò chuyện để giải quyết", "id": "Meski emosi tinggi tetap berusaha bicara"}},
+      {"score": 1, "text": {"ko": "잠깐 혼자 감정을 정리한 후 차분하게 이야기한다", "en": "You cool off alone, then speak calmly", "ja": "一度一人で感情を整理してから落ち着いて話す", "zh-CN": "先独自冷静再平静沟通", "zh-TW": "先獨自冷靜再平靜溝通", "vi": "Tự ổn định cảm xúc rồi nói chuyện bình tĩnh", "id": "Menenangkan diri dulu lalu bicara tenang"}},
+      {"score": 2, "text": {"ko": "불편한 감정을 직접 말하지 못하고 혼자 삭이다가 나중에 터진다", "en": "You bottle discomfort until it bursts later", "ja": "不快を言えず溜めて後で爆発する", "zh-CN": "难受不说憋在心里，后来爆发", "zh-TW": "難受不說憋在心裡，後來爆發", "vi": "Không nói khó chịu, đến lúc sau mới bùng", "id": "Menahan perasaan sampai akhirnya meledak"}},
+      {"score": 3, "text": {"ko": "그 자리에서 감정이 폭발하거나 완전히 말문을 닫아버린다", "en": "You explode on the spot, or shut down completely", "ja": "その場で感情が爆発するか完全に口を閉ざす", "zh-CN": "当场爆发或完全沉默封闭", "zh-TW": "當場爆發或完全沉默封閉", "vi": "Nổi nóng ngay hoặc im lặng hoàn toàn", "id": "Meledak di tempat atau menutup diri total"}}
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "ko": "연인이 칭찬이나 애정 표현을 잘 안 할 때?",
+      "en": "When your partner rarely gives praise or affection:",
+      "ja": "恋人が褒めたり愛情表現をあまりしないとき？",
+      "zh-CN": "恋人很少夸奖或表达爱意时？",
+      "zh-TW": "戀人很少誇獎或表達愛意時？",
+      "vi": "Khi người yêu ít khen hoặc thể hiện tình cảm:",
+      "id": "Saat pasangan jarang memuji atau menunjukkan kasih sayang:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "사람마다 표현 방식이 다른 것 같아서 크게 신경 쓰지 않는다", "en": "Everyone shows love differently; you are not too bothered", "ja": "人によって表現が違うのであまり気にしない", "zh-CN": "觉得每个人表达方式不同，不太纠结", "zh-TW": "覺得每個人表達方式不同，不太糾結", "vi": "Mỗi người thể hiện khác nhau; không quá bận tâm", "id": "Tiap orang beda cara; tidak terlalu dipikirkan"}},
+      {"score": 1, "text": {"ko": "아쉽긴 하지만 \"표현 좀 더 해줘\"라고 솔직하게 이야기한다", "en": "You miss it, but you ask honestly for more warmth", "ja": "寂しいが「もっと表現して」と正直に言う", "zh-CN": "有点遗憾但会直接说“多表达一点”", "zh-TW": "有點遺憾但會直接說「多表達一點」", "vi": "Thiếu nhưng nói thẳng \"anh/chị thể hiện thêm nhé\"", "id": "Kurang tapi minta jujur lebih banyak perhatian"}},
+      {"score": 2, "text": {"ko": "자꾸 확인하고 싶어져서 \"나 좋아해?\"를 반복해서 묻는다", "en": "You keep checking: \"Do you still like me?\"", "ja": "「好き？」を何度も聞いてしまう", "zh-CN": "反复问“你还喜欢我吗？”", "zh-TW": "反覆問「你還喜歡我嗎？」", "vi": "Cứ hỏi đi hỏi lại \"còn thích mình không?\"", "id": "Berulang kali tanya \"masih suka aku kan?\""}},
+      {"score": 3, "text": {"ko": "내가 충분히 사랑받지 못한다고 느끼고 삐치거나 감정적이 된다", "en": "You feel unloved and get sulky or emotional", "ja": "愛されていない気分で拗ねたり感情的になる", "zh-CN": "觉得不够被爱而赌气或情绪化", "zh-TW": "覺得不夠被愛而賭氣或情緒化", "vi": "Cảm thấy không được yêu đủ; giận dỗi hoặc cảm tính", "id": "Merasa kurang dicintai; ngambek atau emosional"}}
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "ko": "연인이 나 말고 다른 것(취미, 친구, 일)에 시간을 쓸 때?",
+      "en": "When your partner spends time on hobbies, friends, or work instead of you:",
+      "ja": "恋人が趣味・友人・仕事に時間を使うとき？",
+      "zh-CN": "恋人把大量时间花在爱好、朋友或工作上时？",
+      "zh-TW": "戀人把大量時間花在嗜好、朋友或工作上時？",
+      "vi": "Khi người yêu dành nhiều thời gian cho sở thích, bạn bè, công việc:",
+      "id": "Saat pasangan habiskan waktu untuk hobi, teman, atau kerja:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "서로 독립적인 시간이 있어야 건강한 관계라고 생각한다", "en": "You believe solo time keeps the relationship healthy", "ja": "お互いに独立した時間があってこそ健全だと思う", "zh-CN": "认为各自独立时间对健康关系很重要", "zh-TW": "認為各自獨立時間對健康關係很重要", "vi": "Nghĩ mỗi người cần không gian riêng mới lành mạnh", "id": "Percaya waktu mandiri membuat hubungan sehat"}},
+      {"score": 1, "text": {"ko": "가끔 아쉽지만 상대의 삶을 존중하려 한다", "en": "Sometimes you miss them, but you respect their life", "ja": "時々寂しいが相手の人生を尊重する", "zh-CN": "偶尔想念但尊重对方的生活", "zh-TW": "偶爾想念但尊重對方的生活", "vi": "Đôi khi nhớ nhưng tôn trọng cuộc sống họ", "id": "Kadang rindu tapi menghormati hidup mereka"}},
+      {"score": 2, "text": {"ko": "내 시간도 있어야 하는데 왜 이렇게 서운하지, 하며 갈등이 생긴다", "en": "You feel it is unfair and conflict builds", "ja": "自分にも時間が必要なのにとモヤモヤして対立する", "zh-CN": "觉得自己也该有时间却莫名委屈，产生矛盾", "zh-TW": "覺得自己也該有時間卻莫名委屈，產生矛盾", "vi": "Cảm thấy bất công; mâu thuẫn nảy sinh", "id": "Merasa tidak adil; konflik muncul"}},
+      {"score": 3, "text": {"ko": "나한테 충분한 시간을 안 쏟는 게 불만이고, 그것 때문에 자주 다툰다", "en": "You resent that they do not invest enough time in you; you fight often", "ja": "自分に時間を割いてくれない不満でよく喧嘩になる", "zh-CN": "不满对方陪自己不够，经常为此吵", "zh-TW": "不滿對方陪自己不夠，經常為此吵", "vi": "Bực vì họ không dành đủ thời gian; hay cãi vì vậy", "id": "Kesal karena kurang waktu bersama; sering bertengkar"}}
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "ko": "지금까지 연애를 돌아봤을 때, 솔직한 나의 생각은?",
+      "en": "Looking back at your relationships, your honest thought is:",
+      "ja": "これまでの恋愛を振り返って正直な自分の感想は？",
+      "zh-CN": "回顾过去的恋爱，你真实的想法是：",
+      "zh-TW": "回顧過去的戀愛，你真實的想法是：",
+      "vi": "Nhìn lại các mối quan hệ, thật lòng bạn nghĩ:",
+      "id": "Melihat kembali hubunganmu, jujur kamu merasa:"
+    },
+    "options": [
+      {"score": 0, "text": {"ko": "서로 노력하면서 건강하게 만들어가는 관계였던 것 같다", "en": "They felt like partnerships where you both grew in a healthy way", "ja": "お互いに努力して健全に築いていた関係だった", "zh-CN": "像是双方一起努力经营的健康关系", "zh-TW": "像是雙方一起努力經營的健康關係", "vi": "Như hai người cùng cố gắng xây dựng lành mạnh", "id": "Seperti hubungan yang dibangun bersama dengan sehat"}},
+      {"score": 1, "text": {"ko": "내가 좀 더 잘할 수 있었던 부분이 분명히 있었다", "en": "You clearly could have done some things better", "ja": "もっとうまくできた部分があった", "zh-CN": "确实有本可以做得更好的地方", "zh-TW": "確實有本可以做得更好的地方", "vi": "Chắc chắn có điều mình có thể làm tốt hơn", "id": "Jelas ada bagian yang bisa kamu lakukan lebih baik"}},
+      {"score": 2, "text": {"ko": "감정 조절이 잘 안 돼서 상대가 힘들었을 것 같은 장면이 떠오른다", "en": "You remember moments your emotions probably wore them out", "ja": "感情コントロールができず相手を疲らせた場面が思い浮かぶ", "zh-CN": "会想起情绪失控可能让对方很累的场面", "zh-TW": "會想起情緒失控可能讓對方很累的場面", "vi": "Nhớ lại lúc cảm xúc khiến đối phương mệt mỏi", "id": "Mengingat saat emosimu mungkin melelahkan mereka"}},
+      {"score": 3, "text": {"ko": "매번 비슷한 이유로 힘들어지는 패턴이 반복된 것 같다", "en": "The same painful pattern seems to repeat every time", "ja": "いつも似た理由で苦しくなるパターンが繰り返された", "zh-CN": "好像每次都会因类似原因陷入痛苦模式", "zh-TW": "好像每次都會因類似原因陷入痛苦模式", "vi": "Cùng một kiểu đau khổ cứ lặp lại", "id": "Pola sulit yang serupa terus berulang"}}
+    ]
+  }
+]

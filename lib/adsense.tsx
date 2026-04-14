@@ -6,10 +6,13 @@ export const ADSENSE_CONFIG = {
   PUBLISHER_ID: 'ca-pub-3192752766652582',
   SLOTS: {
     START_SCREEN: '5341240098',        // 타이틀-설명 사이
+    START_BELOW_TEST_BUTTON: '2271767706', // N_테스트시작 버튼 밑 (구 쿠팡 자리)
     PROGRESS_SCREEN: '1799975556',     // 테스트 진행 마지막 답변 밑
     LOADING_TOP: '2156990784',         // 로딩 스피너 상단
     LOADING_BOTTOM: '2127278616',      // 로딩 스피너 하단
-    RESULT_SCREEN: '7700644275'        // 결과-다시하기 사이
+    RESULT_SCREEN: '7700644275',       // 결과-다시하기 사이
+    TEST_COMPLETE_POPUP: '6019441026', // N_테스트완료 팝업 (구 쿠팡 자리)
+    RESULT_ABOVE_POPULAR_TOP5: '8394322924', // N_테스트결과 요즘인기 섹션타이틀 위
   }
 } as const;
 

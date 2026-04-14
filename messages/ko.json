@@ -559,6 +559,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3LoveRedFlagFinderTest": {
+    "startMessage": {
+      "line1": "혹시 연애할 때마다 비슷한 패턴으로 힘들어진 적 있나요?",
+      "line2": "상대가 나를 힘들게 한다고 생각했는데, 사실은 내가 상대를 지치게 하고 있었을 수도 있습니다.",
+      "line3": "레드플래그는 나쁜 사람만 갖고 있는 게 아닙니다. 좋은 사람도, 진심으로 사랑하는 사람도 자기도 모르게 레드플래그를 가지고 있습니다.",
+      "line4": "달달한 위로는 없습니다. 솔직하게 내 연애 레드플래그가 뭔지, 직접적으로 알려드립니다. 맞아서 화가 날 수 있습니다. 그게 바로 팩트의 힘입니다.",
+      "line5": "패턴을 알면 바꿀 수 있습니다. 지금부터 12문항으로 나의 연애 반응 스펙트럼을 직시해보세요.",
+      "line6": "내 연애 레드플래그 확인하기 🚩 자기반성 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (내 연애 레드플래그 찾기)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "redFlagLevel": "레드플래그 레벨",
+      "mainTraits": "주요 특징",
+      "spotlightHidden": "숨겨진 주의 포인트",
+      "spotlightCore": "핵심 레드플래그",
+      "prescription": "처방전",
+      "goodMatch": "환상의 짝꿍",
+      "badMatch": "환장의 짝꿍",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 연애 레드플래그는 {type} 🚩 나 왜 이래... 맞아서 반성하게 됨 → 너도 한번 확인해봐",
+      "kakao": "내 연애 레드플래그는 {type} 🚩 나 왜 이래... 맞아서 반성하게 됨 → 너도 한번 확인해봐",
+      "wechat": "내 연애 레드플래그는 {type} 🚩 나 왜 이래... 맞아서 반성하게 됨 → 너도 한번 확인해봐",
+      "whatsapp": "내 연애 레드플래그는 {type} 🚩 나 왜 이래... 맞아서 반성하게 됨 → 너도 한번 확인해봐",
+      "telegram": "내 연애 레드플래그는 {type} 🚩 나 왜 이래... 맞아서 반성하게 됨 → 너도 한번 확인해봐",
+      "line": "내 연애 레드플래그는 {type} 🚩 나 왜 이래... 맞아서 반성하게 됨 → 너도 한번 확인해봐",
+      "startDefault": "내 연애 레드플래그 찾기 🚩 12문항 자기반성 테스트",
+      "startKakao": "내 연애 레드플래그 찾기 🚩 12문항 자기반성 테스트",
+      "startWechat": "내 연애 레드플래그 찾기 🚩 12문항 자기반성 테스트",
+      "startWhatsapp": "내 연애 레드플래그 찾기 🚩 12문항 자기반성 테스트",
+      "startTelegram": "내 연애 레드플래그 찾기 🚩 12문항 자기반성 테스트",
+      "startLine": "내 연애 레드플래그 찾기 🚩 12문항 자기반성 테스트"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "잠깐만 보려고 켰는데 2시간이 지나있던 경험, 있으시죠?",
@@ -4008,7 +4063,7 @@
   },
   "footer": {
     "slogan": "당신의 마음을 탐험하는 심리테스트의 오아시스",
-    "disclaimer": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다",
+    "disclaimer": "",
     "company": "상호: 멀티파이프",
     "ceo": "대표: 송준호",
     "address": "주소: 경기도 김포시 태장로 765, 607호",

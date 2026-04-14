@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Image from 'next/image';
-import CoupangAffiliateIframe from '@/components/CoupangAffiliateIframe';
 import { useTranslations } from 'next-intl';
 import { Camera, Upload, RotateCcw, Play } from 'lucide-react';
 import Link from 'next/link';
@@ -1282,15 +1281,15 @@ export default function FacePsychStateTestClient({
           <h2 className="text-2xl font-bold text-gray-800 mb-4">🎉 {t('ui.testCompleted')}</h2>
           
           
-          <p className="text-xs text-gray-500 text-center mb-3">
-            {tGlobal('footer.disclaimer')}
-          </p>
           <div className="mb-6">
 
             <div className="flex justify-center">
 
-              <CoupangAffiliateIframe variant="popup" />
-
+              <AdSensePlaceholder
+                slot={ADSENSE_CONFIG.SLOTS.TEST_COMPLETE_POPUP}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto w-full"
+              />
             </div>
 
           </div>
@@ -1507,6 +1506,13 @@ export default function FacePsychStateTestClient({
             )}
             {popularTestsState && popularTestsState.length > 0 && (
               <div className="mb-8 pb-4">
+                <div className="mb-6 px-4 w-full">
+                  <AdSensePlaceholder
+                    slot={ADSENSE_CONFIG.SLOTS.RESULT_ABOVE_POPULAR_TOP5}
+                    style={{ width: '100%', height: '250px' }}
+                    className="mx-auto w-full"
+                  />
+                </div>
                 <h2 className="text-xl font-bold text-gray-800 mb-6">{tGlobal('recommendations.popularTestsTop5')}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl-grid-cols-5 gap-4">
                   {popularTestsState.slice(0, 5).map((test) => (
@@ -1741,8 +1747,11 @@ export default function FacePsychStateTestClient({
 
             <div className="flex justify-center">
 
-              <CoupangAffiliateIframe variant="start" />
-
+              <AdSensePlaceholder
+                slot={ADSENSE_CONFIG.SLOTS.START_BELOW_TEST_BUTTON}
+                style={{ width: '100%', height: '250px' }}
+                className="mx-auto w-full"
+              />
             </div>
 
           </div>

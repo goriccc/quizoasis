@@ -1,0 +1,572 @@
+[
+  {
+    "type": "Type1",
+    "emoji": "🌿",
+    "title": {
+      "ko": "레드플래그 거의 없는, 연애 우등생",
+      "en": "Almost no red flags — relationship honor student",
+      "ja": "レッドフラッグほぼなし・恋愛優等生",
+      "zh-CN": "几乎没有危险信号——恋爱中的优等生",
+      "zh-TW": "幾乎沒有危險信號——戀愛中的優等生",
+      "vi": "Gần như không có cờ đỏ — “học sinh giỏi” trong yêu",
+      "id": "Hampir tanpa red flag — siswa teladan asmara"
+    },
+    "shortDescription": {
+      "ko": "솔직히 말하면, 당신은 꽤 건강한 연애를 하는 편입니다.",
+      "en": "Honestly, you tend to date in a fairly healthy way.",
+      "ja": "正直に言うと、かなり健全な恋愛ができているタイプです。",
+      "zh-CN": "说实话，你的恋爱方式相当健康。",
+      "zh-TW": "說實話，你的戀愛方式相當健康。",
+      "vi": "Thật lòng mà nói, bạn yêu theo cách khá lành mạnh.",
+      "id": "Jujur, kamu berpacaran dengan cara yang cukup sehat."
+    },
+    "description": {
+      "ko": "감정 조절도 되고, 신뢰도 있고, 상대의 공간도 존중합니다. 갈등이 생겨도 대화로 풀려고 노력하는 성숙한 연애 스타일을 가지고 있습니다. 레드플래그가 없다고 해서 완벽한 것은 아닙니다. 다만 당신 때문에 연인이 지치는 일은 거의 없을 것입니다.",
+      "en": "You regulate emotions, trust, and respect your partner’s space. When conflict appears, you try to talk it through — a mature style. “No red flags” is not perfection, but your partner rarely burns out because of you.",
+      "ja": "感情のコントロール、信頼、相手の距離感を尊重できます。対立も対話で解こうとする成熟したスタイルです。レッドフラッグがない＝完璧ではありませんが、相手があなたに疲れ尽きることは少ないでしょう。",
+      "zh-CN": "你能调节情绪、给予信任并尊重对方的空间。有矛盾时愿意沟通，风格成熟。没有危险信号不等于完美，但伴侣很少因你而精疲力竭。",
+      "zh-TW": "你能調節情緒、給予信任並尊重對方的空間。有矛盾時願意溝通，風格成熟。沒有危險信號不等於完美，但伴侶很少因你而精疲力竭。",
+      "vi": "Bạn kiểm soát cảm xúc, tin tưởng và tôn trọng không gian của đối phương. Khi mâu thuẫn, bạn cố trò chuyện — phong cách trưởng thành. Không cờ đỏ không phải hoàn hảo, nhưng người yêu hiếm khi kiệt sức vì bạn.",
+      "id": "Kamu mengatur emosi, mempercayai, dan menghormati ruang pasangan. Saat konflik, kamu berusaha bicara — gaya dewasa. Tanpa red flag bukan berarti sempurna, tapi pasangan jarang kelelahan karena kamu."
+    },
+    "redFlagLevel": {
+      "ko": "Lv. 1 (청정 구역)",
+      "en": "Lv. 1 (clear zone)",
+      "ja": "Lv.1（クリーンゾーン）",
+      "zh-CN": "Lv.1（安全区）",
+      "zh-TW": "Lv.1（安全區）",
+      "vi": "Lv. 1 (vùng an toàn)",
+      "id": "Lv. 1 (zona aman)"
+    },
+    "mainTraits": {
+      "ko": "감정 안정적, 신뢰 기반, 상대 배려 있음",
+      "en": "Emotionally steady, trust-based, considerate",
+      "ja": "感情が安定、信頼ベース、相手への配慮",
+      "zh-CN": "情绪稳定、以信任为基础、体贴对方",
+      "zh-TW": "情緒穩定、以信任為基礎、體貼對方",
+      "vi": "Ổn định cảm xúc, dựa trên tin cậy, quan tâm",
+      "id": "Emosi stabil, berbasis kepercayaan, perhatian"
+    },
+    "spotlightKind": "hidden",
+    "spotlightDetail": {
+      "ko": "너무 완벽하게 맞춰주다가 정작 내 감정을 억누르고 있지는 않은지 점검해보세요",
+      "en": "Check whether people-pleasing hides your own feelings.",
+      "ja": "完璧に合わせすぎて、自分の感情を抑えていないか確認してください。",
+      "zh-CN": "检查是否在过度配合时压抑了自己的感受。",
+      "zh-TW": "檢查是否在過度配合時壓抑了自己的感受。",
+      "vi": "Xem bạn có đang nén cảm xúc vì quá chiều người khác không.",
+      "id": "Cek apakah kamu menahan perasaan demi terlalu memenuhi harapan."
+    },
+    "prescription": {
+      "ko": "지금처럼 하되, 내 감정도 솔직하게 표현하는 연습을 해보세요. 배려는 억압이 아닙니다.",
+      "en": "Keep it up, but practice naming your feelings honestly. Care is not self-erasure.",
+      "ja": "今のままでも、自分の感情を正直に言う練習を。配慮は自己抑圧ではありません。",
+      "zh-CN": "保持现状的同时，练习坦诚表达感受。体贴不是自我压抑。",
+      "zh-TW": "保持現狀的同時，練習坦誠表達感受。體貼不是自我壓抑。",
+      "vi": "Giữ phong cách tốt, nhưng hãy luyện nói thật cảm xúc. Quan tâm không phải tự xóa mình.",
+      "id": "Tetap seperti ini, tapi latih mengungkapkan perasaan jujur. Perhatian bukan penindasan diri."
+    },
+    "goodMatch": {
+      "ko": "Type 2 (서로 성장하며 발전할 수 있는 관계)",
+      "en": "Type 2 (a relationship where you can grow together)",
+      "ja": "Type 2（一緒に成長できる関係）",
+      "zh-CN": "Type 2（能一起成长的关系）",
+      "zh-TW": "Type 2（能一起成長的關係）",
+      "vi": "Type 2 (mối quan hệ có thể cùng trưởng thành)",
+      "id": "Type 2 (hubungan di mana kalian bisa tumbuh bersama)"
+    },
+    "badMatch": {
+      "ko": "Type 6 (패턴이 너무 달라서 지치게 될 수 있음)",
+      "en": "Type 6 (very different patterns — easy to exhaust each other)",
+      "ja": "Type 6（パターンが違いすぎて疲れやすい）",
+      "zh-CN": "Type 6（模式差异大，容易彼此消耗）",
+      "zh-TW": "Type 6（模式差異大，容易彼此消耗）",
+      "vi": "Type 6 (khác biệt mô hình — dễ kiệt sức)",
+      "id": "Type 6 (pola sangat beda — mudah saling lelah)"
+    },
+    "shareTypeName": {
+      "ko": "연애 우등생",
+      "en": "Relationship honor student",
+      "ja": "恋愛優等生",
+      "zh-CN": "恋爱优等生",
+      "zh-TW": "戀愛優等生",
+      "vi": "Học sinh giỏi tình yêu",
+      "id": "Siswa teladan asmara"
+    }
+  },
+  {
+    "type": "Type2",
+    "emoji": "🫥",
+    "title": {
+      "ko": "알면서도 참는, 감정 억압형 레드플래그",
+      "en": "You hold it in on purpose — emotional-suppression red flag",
+      "ja": "わかっていて我慢する・感情抑圧型レッドフラッグ",
+      "zh-CN": "明知却忍着——情绪压抑型危险信号",
+      "zh-TW": "明知卻忍著——情緒壓抑型危險信號",
+      "vi": "Biết mà vẫn nhịn — cờ đỏ kiểu nén cảm xúc",
+      "id": "Tahu tapi menahan — red flag penekanan emosi"
+    },
+    "shortDescription": {
+      "ko": "문제는 말하지 않는 것입니다. 참다가 한 번에 터지는 패턴, 알고 있죠?",
+      "en": "The issue is silence. You know the “bottle it up, then explode” pattern.",
+      "ja": "問題は言わないこと。溜めて一気に爆発するパターン、分かりますよね？",
+      "zh-CN": "问题是不说出来。你懂那种“憋着然后一次爆发”的模式。",
+      "zh-TW": "問題是不說出來。你懂那種「憋著然後一次爆發」的模式。",
+      "vi": "Vấn đề là không nói. Bạn biết kiểu “nhịn rồi một lần nổ tung”.",
+      "id": "Masalahnya diam. Kamu tahu pola “tahan lalu meledak sekaligus”."
+    },
+    "description": {
+      "ko": "당신은 직접적인 갈등을 피하기 위해 감정을 자주 억누릅니다. 말하지 않으니 상대는 모르고, 모르니 반복되고, 반복되다 보면 어느 날 갑자기 폭발합니다. 상대 입장에서는 갑자기 왜 이러나 싶어서 당황스럽습니다. 참는 것이 배려처럼 보이지만 사실은 관계를 서서히 망가뜨리는 방식입니다.",
+      "en": "You often suppress feelings to avoid direct conflict. Your partner does not know what is wrong, so the cycle repeats — then one day you blow up. To them it feels sudden and confusing. Holding in looks like kindness, but it slowly erodes the relationship.",
+      "ja": "対立を避けるために感情を抑えがち。相手は分からず繰り返し、ある日突然爆発します。相手には突然で戸惑います。我慢は優しさに見えますが、関係を少しずつ壊します。",
+      "zh-CN": "你常压抑感受来避免正面冲突。对方不知道问题在哪，循环重复，某天突然爆发。对方觉得突兀又困惑。忍耐看起来像体贴，其实在慢慢消耗关系。",
+      "zh-TW": "你常壓抑感受來避免正面衝突。對方不知道問題在哪，循環重複，某天突然爆發。對方覺得突兀又困惑。忍耐看起來像體貼，其實在慢慢消耗關係。",
+      "vi": "Bạn thường nén cảm xúc để tránh đối đầu. Đối phương không biết chuyện gì, chu kỳ lặp lại — rồi một ngày bạn bùng nổ. Với họ thật đột ngột và hoang mang. Nhịn trông như tử tế nhưng dần bào mòn quan hệ.",
+      "id": "Kamu sering menahan perasaan untuk hindari konflik. Pasangan tidak tahu masalahnya, siklus berulang — lalu suatu hari kamu meledak. Bagi mereka tiba-tiba dan membingungkan. Menahan terlihat baik, tapi perlahan merusak hubungan."
+    },
+    "redFlagLevel": {
+      "ko": "Lv. 25 (잠재적 위험 신호)",
+      "en": "Lv. 25 (latent risk)",
+      "ja": "Lv.25（潜在リスク）",
+      "zh-CN": "Lv.25（潜在风险）",
+      "zh-TW": "Lv.25（潛在風險）",
+      "vi": "Lv. 25 (rủi ro tiềm ẩn)",
+      "id": "Lv. 25 (risiko laten)"
+    },
+    "mainTraits": {
+      "ko": "감정 억압, 눈치 주기, 갑작스러운 폭발",
+      "en": "Emotional suppression, passive signals, sudden blow-ups",
+      "ja": "感情抑圧、態度での示唆、突然の爆発",
+      "zh-CN": "压抑情绪、用态度暗示、突然爆发",
+      "zh-TW": "壓抑情緒、用態度暗示、突然爆發",
+      "vi": "Nén cảm xúc, gợi ý gián tiếp, nổ đột ngột",
+      "id": "Penekanan emosi, isyarat pasif, ledakan mendadak"
+    },
+    "spotlightKind": "core",
+    "spotlightDetail": {
+      "ko": "말하지 않고 태도로 표현하기, 쌓아두었다가 한꺼번에 터뜨리기",
+      "en": "Showing hurt through attitude instead of words; dumping it all at once.",
+      "ja": "言わず態度で示す、溜めて一気にぶつける。",
+      "zh-CN": "不说出口而用态度表达；攒够了一次倒出。",
+      "zh-TW": "不說出口而用態度表達；攢夠了一次倒出。",
+      "vi": "Thể hiện qua thái độ thay vì lời nói; tích tụ rồi trút một lần.",
+      "id": "Tunjukkan lewat sikap, bukan kata; menumpuk lalu meluap sekaligus."
+    },
+    "prescription": {
+      "ko": "서운한 감정이 생겼을 때 바로 말하는 연습을 해보세요. \"나 이게 좀 서운했어\"라는 한마디가 관계를 바꿉니다.",
+      "en": "Practice saying small hurts early. One sentence like “This bothered me a little” changes everything.",
+      "ja": "モヤモヤを早めに言う練習を。「これちょっと寂しかった」一言が変えます。",
+      "zh-CN": "练习早点说出小的委屈。一句“这点让我有点不舒服”就能改变关系。",
+      "zh-TW": "練習早點說出小的委屈。一句「這點讓我有點不舒服」就能改變關係。",
+      "vi": "Luyện nói sớm những khó chịu nhỏ. Một câu “điều này làm mình hơi khó chịu” đã đủ thay đổi.",
+      "id": "Latih mengatakan hal kecil yang mengganggu lebih awal. Satu kalimat bisa mengubah segalanya."
+    },
+    "goodMatch": {
+      "ko": "Type 1 (차분하게 대화를 이끌어줄 수 있는 상대)",
+      "en": "Type 1 (a partner who can calmly guide conversation)",
+      "ja": "Type 1（落ち着いて対話を導いてくれる相手）",
+      "zh-CN": "Type 1（能冷静引导沟通的伴侣）",
+      "zh-TW": "Type 1（能冷靜引導溝通的伴侶）",
+      "vi": "Type 1 (người có thể dẫn dắt hội thoại điềm tĩnh)",
+      "id": "Type 1 (pasangan yang bisa menuntun percakapan dengan tenang)"
+    },
+    "badMatch": {
+      "ko": "Type 5 (둘 다 말 안 하면 관계가 무너짐)",
+      "en": "Type 5 (if neither speaks, the relationship collapses)",
+      "ja": "Type 5（二人とも話さないと関係が崩れる）",
+      "zh-CN": "Type 5（双方都不说，关系会崩）",
+      "zh-TW": "Type 5（雙方都不說，關係會崩）",
+      "vi": "Type 5 (cả hai đều không nói thì quan hệ sụp)",
+      "id": "Type 5 (jika keduanya diam, hubungan runtuh)"
+    },
+    "shareTypeName": {
+      "ko": "감정 억압형",
+      "en": "Emotional suppression type",
+      "ja": "感情抑圧型",
+      "zh-CN": "情绪压抑型",
+      "zh-TW": "情緒壓抑型",
+      "vi": "Kiểu nén cảm xúc",
+      "id": "Tipe penekanan emosi"
+    }
+  },
+  {
+    "type": "Type3",
+    "emoji": "📱",
+    "title": {
+      "ko": "확인이 안 되면 불안한, 불안 집착형 레드플래그",
+      "en": "Anxious when uncertain — clingy-anxiety red flag",
+      "ja": "確認できないと不安・不安依存型レッドフラッグ",
+      "zh-CN": "得不到确认就焦虑——不安依恋型危险信号",
+      "zh-TW": "得不到確認就焦慮——不安依戀型危險信號",
+      "vi": "Lo khi không được xác nhận — cờ đỏ bám níu lo âu",
+      "id": "Cemas tanpa kepastian — red flag kecemasan melekat"
+    },
+    "shortDescription": {
+      "ko": "상대를 믿고 싶은데 불안함이 먼저 옵니다. 그 불안이 상대를 지치게 하고 있습니다.",
+      "en": "You want to trust, but anxiety arrives first — and it exhausts your partner.",
+      "ja": "信じたいのに先に不安が来る。その不安が相手を疲れさせます。",
+      "zh-CN": "你想信任，但焦虑先来——它正在消耗对方。",
+      "zh-TW": "你想信任，但焦慮先來——它正在消耗對方。",
+      "vi": "Bạn muốn tin, nhưng lo âu đến trước — và nó làm đối phương kiệt sức.",
+      "id": "Kamu ingin percaya, tapi kecemasan datang dulu — dan itu melelahkan pasangan."
+    },
+    "description": {
+      "ko": "당신의 레드플래그는 집착이나 의심보다는 불안에서 옵니다. 확인하고 싶고, 안심받고 싶고, 내 자리가 확실한지 계속 체크하고 싶어집니다. 연락이 늦으면 최악의 상황을 상상하고, 개인 시간을 달라고 하면 멀어지는 신호로 읽습니다. 상대는 사랑하지만 그 불안이 상대에게 무거운 부담이 됩니다.",
+      "en": "Your red flag comes less from jealousy than from anxiety. You need reassurance, certainty, and constant checking. A late reply spirals into worst-case thinking; “I need space” sounds like rejection. You may love deeply — but the weight of that anxiety lands on your partner.",
+      "ja": "嫉妬より不安が源。安心したくて確認したくなる。返信が遅いと最悪を想像し、「一人の時間」は距離のサインに聞こえる。愛は本物でも、その不安の重さは相手にのしかかります。",
+      "zh-CN": "你的危险信号更多来自焦虑而非嫉妒。你需要确定感与反复确认。回复慢了会往最坏想；对方要空间像疏远信号。你爱得很真，但焦虑的重量压在对方身上。",
+      "zh-TW": "你的危險信號更多來自焦慮而非嫉妒。你需要確定感與反覆確認。回覆慢了會往最壞想；對方要空間像疏遠信號。你愛得很真，但焦慮的重量壓在對方身上。",
+      "vi": "Cờ đỏ của bạn đến từ lo âu hơn là ghen. Bạn cần được trấn an, chắc chắn, kiểm tra liên tục. Trả lễ muộn là tưởng tượng tệ nhất; “cần không gian” nghe như bị từ chối. Bạn yêu thật — nhưng sức nặng lo âu đè lên đối phương.",
+      "id": "Red flag-mu lebih dari kecemasan daripada cemburu. Kamu butuh kepastian dan cek berulang. Balasan lambat jadi skenario terburuk; “butuh ruang” terdengar seperti penolakan. Cintamu nyata — tapi beban kecemasan menimpa pasangan."
+    },
+    "redFlagLevel": {
+      "ko": "Lv. 45 (주의 필요 신호)",
+      "en": "Lv. 45 (needs attention)",
+      "ja": "Lv.45（注意が必要）",
+      "zh-CN": "Lv.45（需要注意）",
+      "zh-TW": "Lv.45（需要注意）",
+      "vi": "Lv. 45 (cần chú ý)",
+      "id": "Lv. 45 (perlu perhatian)"
+    },
+    "mainTraits": {
+      "ko": "연락 확인, 질투, 개인 공간 침범, 반복적인 애정 확인 요구",
+      "en": "Checking messages, jealousy, crowding personal space, repeated reassurance asks",
+      "ja": "連絡確認、嫉妬、プライバシー侵害、繰り返す安心確認",
+      "zh-CN": "查消息、嫉妒、挤压私人空间、反复求确认",
+      "zh-TW": "查訊息、嫉妒、擠壓私人空間、反覆求確認",
+      "vi": "Soi tin nhắn, ghen, xâm phạm không gian riêng, hỏi xin an tâm liên tục",
+      "id": "Cek pesan, cemburu, ganggu ruang pribadi, minta kepastian berulang"
+    },
+    "spotlightKind": "core",
+    "spotlightDetail": {
+      "ko": "\"나 좋아해?\" 반복 질문, 연락 늦으면 감정 변화, SNS 과잉 체크",
+      "en": "Repeating “do you love me?”; mood swings when replies are late; over-checking social media.",
+      "ja": "「好き？」の繰り返し、返信遅れで機嫌が変わる、SNSの過チェック。",
+      "zh-CN": "反复问“你还爱我吗”；回复慢就情绪起伏；过度刷社交账号。",
+      "zh-TW": "反覆問「你還愛我嗎」；回覆慢就情緒起伏；過度刷社交帳號。",
+      "vi": "Hỏi lặp “còn yêu không?”; tâm trạng đổi khi trả lễ chậm; lướt mạng quá mức.",
+      "id": "Ulang tanya “masih cinta?”; suasana berubah jika balas lambat; cek medsos berlebihan."
+    },
+    "prescription": {
+      "ko": "상대가 사라지지 않는다는 것을 연습으로 익혀야 합니다. 연락이 없는 2시간 동안 다른 것에 집중하는 훈련부터 시작해보세요.",
+      "en": "Practice tolerating absence: start with two hours of no contact while you focus elsewhere.",
+      "ja": "相手が消えないことを練習で学ぶ。連絡のない2時間、別のことに集中する訓練から。",
+      "zh-CN": "练习相信对方不会消失：先从“两小时不联系时专注别的事”开始。",
+      "zh-TW": "練習相信對方不會消失：先從「兩小時不聯絡時專注別的事」開始。",
+      "vi": "Luyện chịu “khoảng trống”: bắt đầu với 2 giờ không liên lạc và tập trung việc khác.",
+      "id": "Latih mentoleransi jarak: mulai dari 2 jam tanpa kontak sambil fokus hal lain."
+    },
+    "goodMatch": {
+      "ko": "Type 1 (일관되고 안정적인 사람이 불안을 줄여줄 수 있음)",
+      "en": "Type 1 (steady, consistent people can lower your anxiety)",
+      "ja": "Type 1（一貫して安定している人が不安を和らげる）",
+      "zh-CN": "Type 1（稳定一致的人能缓解你的焦虑）",
+      "zh-TW": "Type 1（穩定一致的人能緩解你的焦慮）",
+      "vi": "Type 1 (người ổn định, nhất quán có thể giảm lo âu)",
+      "id": "Type 1 (orang stabil dan konsisten bisa menenangkan kecemasanmu)"
+    },
+    "badMatch": {
+      "ko": "Type 4 (회피형 상대는 불안을 더 키움)",
+      "en": "Type 4 (avoidant partners amplify anxiety)",
+      "ja": "Type 4（回避型は不安を増幅する）",
+      "zh-CN": "Type 4（回避型会放大你的焦虑）",
+      "zh-TW": "Type 4（迴避型會放大你的焦慮）",
+      "vi": "Type 4 (người tránh né làm lo âu tăng)",
+      "id": "Type 4 (pasangan menghindar memperbesar kecemasan)"
+    },
+    "shareTypeName": {
+      "ko": "불안 집착형",
+      "en": "Anxious-clingy type",
+      "ja": "不安依存型",
+      "zh-CN": "不安依恋型",
+      "zh-TW": "不安依戀型",
+      "vi": "Kiểu bám níu lo âu",
+      "id": "Tipe melekat cemas"
+    }
+  },
+  {
+    "type": "Type4",
+    "emoji": "🧱",
+    "title": {
+      "ko": "내 방식이 기준인, 자기중심 통제형 레드플래그",
+      "en": "Your way is the rule — self-centered control red flag",
+      "ja": "自分のやり方が基準・自己中心コントロール型",
+      "zh-CN": "以我的方式为准——自我中心控制型危险信号",
+      "zh-TW": "以我的方式為準——自我中心控制型危險信號",
+      "vi": "Cách của mình là chuẩn — cờ đỏ kiểm soát ego",
+      "id": "Caramu yang benar — red flag kontrol egosentris"
+    },
+    "shortDescription": {
+      "ko": "나쁜 의도는 없습니다. 다만 당신의 기준이 관계의 규칙이 되고 있습니다.",
+      "en": "You are not “evil” — but your standards quietly become the relationship’s law.",
+      "ja": "悪意はない。でもあなたの基準が関係のルールになっている。",
+      "zh-CN": "你没有恶意，但你的标准正在变成关系的规则。",
+      "zh-TW": "你沒有惡意，但你的標準正在變成關係的規則。",
+      "vi": "Bạn không xấu — nhưng tiêu chuẩn của bạn đang thành luật của mối quan hệ.",
+      "id": "Bukan niat jahat — tapi standarmu perlahan jadi aturan hubungan."
+    },
+    "description": {
+      "ko": "당신은 연애에서 자신의 방식과 기준이 강한 편입니다. 상대가 다른 의견을 내면 설득하려 하고, 기대에 어긋나면 직접적으로 표현합니다. 상대의 인간관계나 시간 사용에 영향력을 행사하려는 경향이 있습니다. 사랑하기 때문에 그러는 거라는 것은 알지만, 상대 입장에서는 점점 숨막히는 느낌이 들 수 있습니다.",
+      "en": "In love, your habits and standards run strong. Different opinions become debates; unmet expectations are stated bluntly. You may steer their friendships and schedules. You may mean it as care — but it can feel suffocating over time.",
+      "ja": "恋愛で自分のやり方・基準が強い。違う意見は説得、期待外れはストレートに。人間関係や時間にも影響しようとする。愛からでも、相手には息苦しく感じることがあります。",
+      "zh-CN": "恋爱里你的习惯和标准很强。不同意见会变成说服；失望会直接表达。你可能影响对方的社交与时间。出自关心，但久了对方会感到窒息。",
+      "zh-TW": "戀愛裡你的習慣和標準很強。不同意見會變成說服；失望會直接表達。你可能影響對方的社交與時間。出自關心，但久了對方會感到窒息。",
+      "vi": "Trong yêu, thói quen và tiêu chuẩn của bạn rất mạnh. ý kiến khác thành tranh luận; kỳ vọng trượt được nói thẳng. Bạn có thể chi phối bạn bè và lịch của họ. Xuất phát từ quan tâm — nhưng lâu dài có thể ngột ngạt.",
+      "id": "Dalam asmara, kebiasaan dan standarmu kuat. Beda pendapat jadi debat; ekspektasi gagal diucapkan blak-blakan. Kamu bisa mempengaruhi pertemanan dan jadwal mereka. Dari kasih sayang — tapi lama-lama bisa sesak."
+    },
+    "redFlagLevel": {
+      "ko": "Lv. 60 (경고 신호)",
+      "en": "Lv. 60 (warning)",
+      "ja": "Lv.60（警告）",
+      "zh-CN": "Lv.60（警告）",
+      "zh-TW": "Lv.60（警告）",
+      "vi": "Lv. 60 (cảnh báo)",
+      "id": "Lv. 60 (peringatan)"
+    },
+    "mainTraits": {
+      "ko": "강한 자기 기준, 상대 생활 통제 시도, 의견 충돌 시 고집",
+      "en": "Rigid standards, attempts to control partner’s life, stubborn in conflict",
+      "ja": "強い自己基準、相手の生活への介入、対立で頑固",
+      "zh-CN": "标准强硬、试图控制对方生活、冲突时固执",
+      "zh-TW": "標準強硬、試圖控制對方生活、衝突時固執",
+      "vi": "Tiêu chuẩn cứng, kiểm soát cuộc sống đối phương, bướng khi mâu thuẫn",
+      "id": "Standar kaku, kontrol hidup pasangan, keras kepala saat konflik"
+    },
+    "spotlightKind": "core",
+    "spotlightDetail": {
+      "ko": "상대 친구 관계 제한 시도, 내 의견 관철, 기대 충족 요구",
+      "en": "Limiting their friendships, pushing your agenda, demanding they meet your expectations.",
+      "ja": "友人関係を制限しようとする、自分の意見を通す、期待の充足を求める。",
+      "zh-CN": "限制对方交友、坚持己见、要求对方满足期待。",
+      "zh-TW": "限制對方交友、堅持己見、要求對方滿足期待。",
+      "vi": "Hạn chế bạn bè của họ, áp đặt ý mình, đòi họ đáp ứng kỳ vọng.",
+      "id": "Membatasi pertemanan mereka, memaksakan agenda, menuntut penuhi ekspektasi."
+    },
+    "prescription": {
+      "ko": "상대가 내가 원하는 대로 움직이지 않아도 괜찮습니다. 통제는 사랑이 아닙니다. \"달라도 괜찮아\"를 연습해보세요.",
+      "en": "It is okay if they do not move exactly how you want. Control is not love — practice “different is still okay.”",
+      "ja": "思い通りに動かなくても大丈夫。コントロールは愛ではない。「違ってもいい」を練習。",
+      "zh-CN": "对方不必完全按你的方式行动。控制不是爱——练习接受“不同也可以”。",
+      "zh-TW": "對方不必完全按你的方式行動。控制不是愛——練習接受「不同也可以」。",
+      "vi": "Họ không cần làm đúng ý bạn. Kiểm soát không phải yêu — luyện “khác vẫn ổn”.",
+      "id": "Tidak apa-apa jika mereka tidak mengikuti keinginanmu. Kontrol bukan cinta — latih “beda itu oke.”"
+    },
+    "goodMatch": {
+      "ko": "Type 2 (부드럽게 맞춰주면서도 자기 공간을 지키는 사람)",
+      "en": "Type 2 (someone gentle who still keeps healthy boundaries)",
+      "ja": "Type 2（柔らかく合わせつつ境界を守る人）",
+      "zh-CN": "Type 2（温柔配合但仍守住边界的人）",
+      "zh-TW": "Type 2（溫柔配合但仍守住邊界的人）",
+      "vi": "Type 2 (người dịu dàng nhưng vẫn giữ ranh giới)",
+      "id": "Type 2 (orang lembut yang tetap menjaga batas sehat)"
+    },
+    "badMatch": {
+      "ko": "Type 6 (둘 다 강해서 서로 부딪힘)",
+      "en": "Type 6 (two strong patterns collide)",
+      "ja": "Type 6（二人とも強くぶつかる）",
+      "zh-CN": "Type 6（双方都强，容易硬碰硬）",
+      "zh-TW": "Type 6（雙方都強，容易硬碰硬）",
+      "vi": "Type 6 (hai kiểu mạnh đụng nhau)",
+      "id": "Type 6 (dua pola kuat saling bentrok)"
+    },
+    "shareTypeName": {
+      "ko": "자기중심 통제형",
+      "en": "Self-centered control type",
+      "ja": "自己中心コントロール型",
+      "zh-CN": "自我中心控制型",
+      "zh-TW": "自我中心控制型",
+      "vi": "Kiểm soát tự trọng",
+      "id": "Tipe kontrol egosentris"
+    }
+  },
+  {
+    "type": "Type5",
+    "emoji": "💥",
+    "title": {
+      "ko": "감정이 먼저 터지는, 감정 폭발 회피형 레드플래그",
+      "en": "Feelings explode first — blow-up / shutdown red flag",
+      "ja": "感情が先に爆発・爆発／シャットダウン型レッドフラッグ",
+      "zh-CN": "情绪先爆——爆发或封闭型危险信号",
+      "zh-TW": "情緒先爆——爆發或封閉型危險信號",
+      "vi": "Cảm xúc nổ trước — cờ đỏ nổ tung / đóng cửa",
+      "id": "Emosi meledak dulu — red flag ledak / menutup diri"
+    },
+    "shortDescription": {
+      "ko": "감정이 오르면 멈추기가 어렵습니다. 그리고 지나고 나면 후회합니다. 이 패턴이 반복되고 있습니다.",
+      "en": "When emotions rise, it is hard to stop — then you regret it. The loop repeats.",
+      "ja": "感情が上がると止めにくい。後で後悔する。その繰り返し。",
+      "zh-CN": "情绪上来很难刹住，过后又后悔。这个循环在重复。",
+      "zh-TW": "情緒上來很難煞住，過後又後悔。這個循環在重複。",
+      "vi": "Cảm xúc dâng lên khó dừng — rồi hối hận. Vòng lặp lặp lại.",
+      "id": "Emosi naik sulit dihentikan — lalu menyesal. Polanya berulang."
+    },
+    "description": {
+      "ko": "당신은 감정이 격해지면 말을 멈추기 어렵거나, 반대로 완전히 입을 닫아버립니다. 상처가 될 말을 하고 나서 후회하거나, 냉전 상태가 길어지는 패턴이 반복됩니다. 상대는 갈등 상황에서 당신의 감정 폭발이나 완전한 철수를 두려워하게 되고, 자신도 모르게 눈치를 보기 시작합니다. 이 단계에서는 갈등 중 잠깐 멈추는 능력이 관계를 바꿀 수 있습니다.",
+      "en": "When intensity hits, you either cannot stop talking hurtfully, or you shut down completely. Regret and long cold wars repeat. Partners start walking on eggshells. At this stage, pausing mid-conflict can change everything.",
+      "ja": "激化すると止まらないか、完全に口を閉ざす。傷つく言葉と後悔、長い冷戦の繰り返し。相手は怯え始める。この段階では、対立の途中で一度止まる力が変えます。",
+      "zh-CN": "激烈时要么停不下伤人的话，要么彻底沉默。后悔与漫长冷战循环。对方开始小心翼翼。此阶段，冲突中学会暂停能改变关系。",
+      "zh-TW": "激烈時要么停不下傷人的話，要么徹底沉默。後悔與漫長冷戰循環。對方開始小心翼翼。此階段，衝突中學會暫停能改變關係。",
+      "vi": "Khi căng, bạn hoặc không ngừng nói lời làm tổn thương, hoặc im hẳn. Hối hận và chiến tranh lạnh kéo dài lặp lại. Đối phương bắt đầu dè chừng. Giai đoạn này, tạm dừng giữa xung đột có thể thay đổi tất cả.",
+      "id": "Saat panas, kamu tak bisa berhenti menyakiti atau menutup total. Penyesalan dan dingin panjang berulang. Pasangan mulai hati-hati. Di titik ini, jeda di tengah konflik bisa mengubah segalanya."
+    },
+    "redFlagLevel": {
+      "ko": "Lv. 78 (심각한 경고 신호)",
+      "en": "Lv. 78 (serious warning)",
+      "ja": "Lv.78（深刻な警告）",
+      "zh-CN": "Lv.78（严重警告）",
+      "zh-TW": "Lv.78（嚴重警告）",
+      "vi": "Lv. 78 (cảnh báo nghiêm trọng)",
+      "id": "Lv. 78 (peringatan serius)"
+    },
+    "mainTraits": {
+      "ko": "감정 폭발, 장기 냉전, 상처 주는 말, 감정 조절 어려움",
+      "en": "Emotional explosions, long cold wars, hurtful words, poor regulation",
+      "ja": "感情爆発、長期冷戦、傷つく言葉、コントロール困難",
+      "zh-CN": "情绪爆发、长期冷战、伤人话语、调节困难",
+      "zh-TW": "情緒爆發、長期冷戰、傷人話語、調節困難",
+      "vi": "Bùng nổ cảm xúc, chiến tranh lạnh dài, lời làm tổn thương, khó điều tiết",
+      "id": "Ledakan emosi, dingin panjang, kata menyakitkan, sulit mengatur emosi"
+    },
+    "spotlightKind": "core",
+    "spotlightDetail": {
+      "ko": "싸울 때 과거 이야기까지 끌어오기, 며칠씩 연락 두절, 감정적 폭언",
+      "en": "Dragging up the past in fights, days of silence, verbal intensity.",
+      "ja": "喧嘩で過去を蒸し返す、数日連絡断絶、言葉が激しくなる。",
+      "zh-CN": "吵架翻旧账、断联数日、言语激烈。",
+      "zh-TW": "吵架翻舊帳、斷聯數日、言語激烈。",
+      "vi": "Cãi nhau nhắc quá khứ, im lặng nhiều ngày, lời nói gay gắt.",
+      "id": "Berdebat mengungkit masa lalu, putus kontak berhari-hari, kata keras."
+    },
+    "prescription": {
+      "ko": "감정이 올라오는 것을 느낄 때 \"나 지금 잠깐 진정이 필요해\"라고 말하고 자리를 피해보세요. 그 한마디가 폭발을 막습니다.",
+      "en": "When heat rises, say, “I need a short break to calm down,” and step away — that sentence stops explosions.",
+      "ja": "熱が上がったら「少し落ち着く時間が必要」と言って離れる。その一言が爆発を止めます。",
+      "zh-CN": "感到上头时说“我需要几分钟冷静一下”并离开——这句话能拦住爆发。",
+      "zh-TW": "感到上頭時說「我需要幾分鐘冷靜一下」並離開——這句話能攔住爆發。",
+      "vi": "Khi nóng, nói “mình cần vài phút bình tĩnh” và rời đi — một câu đó chặn vụ nổ.",
+      "id": "Saat panas, katakan “aku butuh sebentar menenangkan diri” dan menjauh — satu kalimat itu menghentikan ledakan."
+    },
+    "goodMatch": {
+      "ko": "Type 1 (차분하고 일관된 사람이 감정 조절을 도와줄 수 있음)",
+      "en": "Type 1 (calm, consistent partners can co-regulate with you)",
+      "ja": "Type 1（落ち着いて一貫している人が感情調整を助ける）",
+      "zh-CN": "Type 1（冷静稳定的人能帮你调节情绪）",
+      "zh-TW": "Type 1（冷靜穩定的人能幫你調節情緒）",
+      "vi": "Type 1 (người điềm tĩnh, nhất quán có thể đồng điều tiết)",
+      "id": "Type 1 (pasangan tenang dan konsisten bisa membantu regulasi emosi)"
+    },
+    "badMatch": {
+      "ko": "Type 3 (불안형 상대는 감정 폭발에 더 크게 흔들림)",
+      "en": "Type 3 (anxious partners shake harder around explosions)",
+      "ja": "Type 3（不安型は爆発に揺れやすい）",
+      "zh-CN": "Type 3（焦虑型在爆发旁更易崩溃）",
+      "zh-TW": "Type 3（焦慮型在爆發旁更易崩潰）",
+      "vi": "Type 3 (người lo âu dễ lung lay hơn bên cạnh cơn nổ)",
+      "id": "Type 3 (pasangan cemas lebih goyah di dekat ledakan)"
+    },
+    "shareTypeName": {
+      "ko": "감정 폭발 회피형",
+      "en": "Blow-up / shutdown type",
+      "ja": "爆発／シャットダウン型",
+      "zh-CN": "爆发或封闭型",
+      "zh-TW": "爆發或封閉型",
+      "vi": "Kiểu nổ / đóng cửa",
+      "id": "Tipe ledak / menutup"
+    }
+  },
+  {
+    "type": "Type6",
+    "emoji": "🔄",
+    "title": {
+      "ko": "매번 같은 패턴으로 힘들어지는, 고착형 레드플래그",
+      "en": "Same pain, same pattern — stuck-loop red flag",
+      "ja": "いつも同じパターンで苦しい・固定ループ型レッドフラッグ",
+      "zh-CN": "每次都在相似模式里受伤——固化循环型危险信号",
+      "zh-TW": "每次都在相似模式裡受傷——固化循環型危險信號",
+      "vi": "Cùng đau, cùng mẫu — cờ đỏ vòng lặp kẹt",
+      "id": "Sakit sama, pola sama — red flag lingkaran macet"
+    },
+    "shortDescription": {
+      "ko": "이 결과가 나왔다는 것 자체가 이미 절반은 알고 있다는 뜻입니다.",
+      "en": "If you got this result, you probably already knew half of it.",
+      "ja": "この結果は、もう半分は知っていたということ。",
+      "zh-CN": "看到这个结果，说明你心里多半已经有数了。",
+      "zh-TW": "看到這個結果，說明你心裡多半已經有數了。",
+      "vi": "Ra kết quả này nghĩa là bạn đã biết một nửa từ trước.",
+      "id": "Hasil ini berarti kamu sudah setengah sadar sebelumnya."
+    },
+    "description": {
+      "ko": "연애마다 비슷한 이유로 힘들어지고, 비슷한 방식으로 갈등이 생기고, 비슷한 결말을 맞이한 경험이 있을 것입니다. 이것은 의지의 문제가 아니라 패턴의 문제입니다. 나쁜 사람이어서가 아니라, 아직 자신의 연애 패턴을 바꾸지 못한 것입니다. 이 결과를 보고 있다는 것 자체가 변하고 싶다는 의지가 있다는 뜻입니다. 그게 시작입니다.",
+      "en": "Across relationships, similar pain, similar fights, similar endings. This is less about “bad character” than about a pattern you have not rewired yet. Reading this already means part of you wants change — that is the start.",
+      "ja": "恋愛ごとに似た理由で苦しく、似た喧嘩、似た終わり。これは意志よりパターンの問題。悪い人だからではなく、まだ恋愛パターンを書き換えていないだけ。この結果を見ている時点で、変わりたい意志がある。それが始まり。",
+      "zh-CN": "每段关系都因相似原因痛苦、相似方式争吵、相似结局收场。这更像模式问题而非人品问题。你还没改写自己的恋爱脚本。能读到这里，说明你想改变——这就是开始。",
+      "zh-TW": "每段關係都因相似原因痛苦、相似方式爭吵、相似結局收場。這更像模式問題而非人品問題。你還沒改寫自己的戀愛腳本。能讀到這裡，說明你想改變——這就是開始。",
+      "vi": "Mối nào cũng đau vì lý do giống nhau, cãi kiểu giống nhau, kết thúc giống nhau. Đây là vấn đề mô hình hơn là “xấu”. Bạn chưa đổi kịch bản yêu. Đang đọc nghĩa là một phần bạn muốn thay đổi — đó là khởi đầu.",
+      "id": "Setiap hubungan sakit dengan alasan serupa, berdebat serupa, berakhir serupa. Ini soal pola, bukan karakter buruk. Kamu belum menulis ulang skrip asmara. Membaca ini artinya sebagian dirimu ingin berubah — itu awalnya."
+    },
+    "redFlagLevel": {
+      "ko": "Lv. 95 (패턴 전환 필요)",
+      "en": "Lv. 95 (pattern reset needed)",
+      "ja": "Lv.95（パターン転換が必要）",
+      "zh-CN": "Lv.95（需要重置模式）",
+      "zh-TW": "Lv.95（需要重置模式）",
+      "vi": "Lv. 95 (cần reset mô hình)",
+      "id": "Lv. 95 (perlu reset pola)"
+    },
+    "mainTraits": {
+      "ko": "반복되는 갈등 패턴, 감정 조절과 신뢰 모두 취약, 관계 소진 반복",
+      "en": "Repeating conflict loops; weak emotion regulation and trust; burnout cycles",
+      "ja": "繰り返す対立、感情調整と信頼の脆弱、燃え尽きの反復",
+      "zh-CN": "重复冲突循环；情绪调节与信任脆弱；反复耗竭",
+      "zh-TW": "重複衝突循環；情緒調節與信任脆弱；反覆耗竭",
+      "vi": "Lặp mâu thuẫn; điều tiết cảm xúc và tin yếu yếu; kiệt sức lặp lại",
+      "id": "Konflik berulang; regulasi emosi dan kepercayaan lemah; kelelahan berulang"
+    },
+    "spotlightKind": "core",
+    "spotlightDetail": {
+      "ko": "매 연애마다 비슷한 문제 반복, 내 패턴인지 상대 패턴인지 구분 안 됨",
+      "en": "Same issues every relationship; hard to tell what is “you” vs “them.”",
+      "ja": "毎回似た問題。自分のパターンか相手か区別しにくい。",
+      "zh-CN": "每段恋爱好像都是老问题；分不清是自己还是对方的模式。",
+      "zh-TW": "每段戀愛好像都是老問題；分不清是自己還是對方的模式。",
+      "vi": "Cùng vấn đề mỗi mối; khó phân biệt mình hay họ.",
+      "id": "Masalah serupa tiap hubungan; sulit bedakan pola kamu atau mereka."
+    },
+    "prescription": {
+      "ko": "혼자 해결하려 하지 말고 심리 상담을 받아보는 것을 진지하게 고려해보세요. 패턴은 혼자 깨기 어렵습니다. 도움을 받는 것이 용기입니다.",
+      "en": "Do not force a solo fix — seriously consider therapy. Patterns are hard to break alone; asking for help is courage.",
+      "ja": "一人で解決しようとせず、カウンセリングを真剣に。パターンは一人では壊しにくい。助けを求めるのは勇気。",
+      "zh-CN": "别硬扛一个人解决，认真考虑心理咨询。模式很难独自打破，求助是勇敢。",
+      "zh-TW": "別硬扛一個人解決，認真考慮心理諮商。模式很難獨自打破，求助是勇敢。",
+      "vi": "Đừng cố tự gánh — cân nhắc trị liệu thật sự. Khó phá vỡ một mình; nhờ giúp là dũng cảm.",
+      "id": "Jangan memaksakan sendiri — pertimbangkan terapi serius. Pola sulit dipecahkan sendirian; minta bantu adalah keberanian."
+    },
+    "goodMatch": {
+      "ko": "지금 당장은 나 자신 (먼저 내 패턴을 이해하는 것이 우선)",
+      "en": "Right now: yourself — understanding your pattern comes first",
+      "ja": "今は自分自身。まず自分の恋愛パターンを理解することが先",
+      "zh-CN": "此刻先面对自己：理解自己的恋爱模式优先",
+      "zh-TW": "此刻先面對自己：理解自己的戀愛模式優先",
+      "vi": "Bây giờ: chính bạn — hiểu mô hình yêu của mình là ưu tiên",
+      "id": "Sekarang: dirimu sendiri — pahami pola asmaramu dulu"
+    },
+    "badMatch": {
+      "ko": "모든 연애 (패턴이 바뀌기 전까지는 누구를 만나도 비슷해짐)",
+      "en": "Any relationship — until the pattern changes, outcomes stay similar",
+      "ja": "どんな恋でも（パターンが変わるまで展開は似たようになる）",
+      "zh-CN": "任何一段恋爱——在模式改变前，和谁相处都可能相似",
+      "zh-TW": "任何一段戀愛——在模式改變前，和誰相處都可能相似",
+      "vi": "Mọi mối tình — đến khi đổi mô hình, kết cụ vẫn giống nhau",
+      "id": "Hubungan apa pun — sampai pola berubah, dinamika tetap mirip"
+    },
+    "shareTypeName": {
+      "ko": "고착형 레드플래그",
+      "en": "Stuck-loop red flag",
+      "ja": "固定ループ型レッドフラッグ",
+      "zh-CN": "固化循环型危险信号",
+      "zh-TW": "固化循環型危險信號",
+      "vi": "Cờ đỏ vòng lặp kẹt",
+      "id": "Red flag lingkaran macet"
+    }
+  }
+]

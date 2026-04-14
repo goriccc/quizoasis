@@ -1338,6 +1338,61 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3LoveRedFlagFinderTest": {
+    "startMessage": {
+      "line1": "Have you ever felt stuck in the same painful pattern in every relationship?",
+      "line2": "You thought they drained you — but you may have been draining them, too.",
+      "line3": "Red flags are not only for “bad people.” Good people — even people in love — can carry them without noticing.",
+      "line4": "No sugar-coating: we tell you plainly what your dating red flag looks like. It might sting. That is the point.",
+      "line5": "Naming the pattern is the first step to changing it. Face your reaction style across 12 questions.",
+      "line6": "Check my dating red flags 🚩 Start the reflection quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (Find my dating red flags)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "redFlagLevel": "Red-flag level",
+      "mainTraits": "Main traits",
+      "spotlightHidden": "Hidden watch-out",
+      "spotlightCore": "Core red flag",
+      "prescription": "Prescription",
+      "goodMatch": "Best match energy",
+      "badMatch": "High-friction match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My dating red flag: {type} 🚩 Ouch but true — take the quiz too",
+      "kakao": "My dating red flag: {type} 🚩 Ouch but true — take the quiz too",
+      "wechat": "My dating red flag: {type} 🚩 Ouch but true — take the quiz too",
+      "whatsapp": "My dating red flag: {type} 🚩 Ouch but true — take the quiz too",
+      "telegram": "My dating red flag: {type} 🚩 Ouch but true — take the quiz too",
+      "line": "My dating red flag: {type} 🚩 Ouch but true — take the quiz too",
+      "startDefault": "Find my dating red flags 🚩 12-question reflection quiz",
+      "startKakao": "Find my dating red flags 🚩 12-question reflection quiz",
+      "startWechat": "Find my dating red flags 🚩 12-question reflection quiz",
+      "startWhatsapp": "Find my dating red flags 🚩 12-question reflection quiz",
+      "startTelegram": "Find my dating red flags 🚩 12-question reflection quiz",
+      "startLine": "Find my dating red flags 🚩 12-question reflection quiz"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",
