@@ -2055,6 +2055,60 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3TanjinjamSpendingTypeTest": {
+    "startMessage": {
+      "line1": "お金を使うとき、一番幸せを感じる瞬間はいつだと思いますか？",
+      "line2": "美味しいもの、新しい服、航空券、推しのグッズ、お部屋の模様替え。散財する場所が違えば、ハッピーポイントも変わります。",
+      "line3": "どこにお金を使うかで、あなたの「幸せの焦点」がわかります。",
+      "line4": "直感で惹かれる画像を選べば、あなたの散財ジョイタイプが判明します。",
+      "line5": "散財ジョイタイプをチェック 💸 消費ハッピーポイント診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私の散財ジョイタイプは？）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "tanjinJamCategory": "散財ジョイタイプ",
+      "tanjinPoint": "ハッピーポイント",
+      "tanjinLevel": "散財レベル",
+      "tanjinSignature": "お約束のパターン",
+      "monthlyPick": "今月の散財おすすめ",
+      "goodMatch": "相性バッチリ",
+      "badMatch": "相性ギャップ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の散財ジョイタイプは{name}！💸 このとき一番幸せってわかる〜あなたはどのタイプ？",
+      "kakao": "私の散財ジョイタイプは{name}！💸 このとき一番幸せってわかる〜あなたはどのタイプ？",
+      "wechat": "私の散財ジョイタイプは{name}！💸 このとき一番幸せってわかる〜あなたはどのタイプ？",
+      "whatsapp": "私の散財ジョイタイプは{name}！💸 このとき一番幸せってわかる〜あなたはどのタイプ？",
+      "telegram": "私の散財ジョイタイプは{name}！💸 このとき一番幸せってわかる〜あなたはどのタイプ？",
+      "line": "私の散財ジョイタイプは{name}！💸 このとき一番幸せってわかる〜あなたはどのタイプ？",
+      "startDefault": "私の散財ジョイタイプは？ 💸 画像12問4択",
+      "startKakao": "私の散財ジョイタイプは？ 💸 画像12問4択",
+      "startWechat": "私の散財ジョイタイプは？ 💸 画像12問4択",
+      "startWhatsapp": "私の散財ジョイタイプは？ 💸 画像12問4択",
+      "startTelegram": "私の散財ジョイタイプは？ 💸 画像12問4択",
+      "startLine": "私の散財ジョイタイプは？ 💸 画像12問4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTubeは、あなたが口にしなかったことまで知っています。",

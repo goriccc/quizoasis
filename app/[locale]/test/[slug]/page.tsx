@@ -81,6 +81,10 @@ import {
   phase3YoloFireGodlifeTypeQuestions,
   phase3YoloFireGodlifeTypeResults,
 } from '@/lib/phase3YoloFireGodlifeTypeData';
+import {
+  phase3TanjinjamSpendingTypeQuestions,
+  phase3TanjinjamSpendingTypeResults,
+} from '@/lib/phase3TanjinjamSpendingTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -277,6 +281,10 @@ const Phase3SpendingPersonalityTypeTestClient = dynamic(
 );
 const Phase3YoloFireGodlifeTypeTestClient = dynamic(
   () => import('@/components/Phase3YoloFireGodlifeTypeTestClient'),
+  { ssr: false }
+);
+const Phase3TanjinjamSpendingTypeTestClient = dynamic(
+  () => import('@/components/Phase3TanjinjamSpendingTypeTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1158,6 +1166,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['理財', '生活方式', 'YOLO'],
         vi: ['Tài chính', 'Lifestyle', 'YOLO'],
         id: ['Keuangan', 'Gaya hidup', 'YOLO'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-tanjinjam-spending-type') {
+    test = {
+      slug: 'phase3-tanjinjam-spending-type',
+      title: {
+        ko: '나의 탕진잼 유형은?',
+        en: 'What’s My Splurge-Joy Type?',
+        ja: '私の散財ジョイタイプは？',
+        'zh-CN': '我的剁手快乐型是？',
+        'zh-TW': '我的剁手快樂型是？',
+        vi: 'Kiểu vui khi shopping của tôi?',
+        id: 'Tipe bahagia belanjaku?',
+      },
+      description: {
+        ko: '12문항 이미지 4지선다로 보는 탕진잼 소비 행복 포인트 5유형. #소비 #쇼핑 #공감',
+        en: '12 image multiple-choice questions — 5 spending happiness types. #shopping #lifestyle #relatable',
+        ja: '画像12問4択で見る散財ジョイ・幸福ポイント5タイプ。#買い物 #ライフスタイル #共感',
+        'zh-CN': '12 道图片四选一，五种消费快乐型。#购物 #生活方式 #共鸣',
+        'zh-TW': '12 題圖片四選一，五種消費快樂型。#購物 #生活方式 #共鳴',
+        vi: '12 câu chọn ảnh 4 đáp án — 5 kiểu điểm hạnh phúc khi chi tiêu. #mua sắm #lối sống #đồng cảm',
+        id: '12 soal pilih gambar 4 opsi — 5 tipe titik bahagia saat belanja. #belanja #gaya hidup #relate',
+      },
+      thumbnail: 'p3_test_tanjinjam_spending_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소비', '쇼핑', '공감'],
+        en: ['Shopping', 'Lifestyle', 'Relatable'],
+        ja: ['買い物', 'ライフスタイル', '共感'],
+        'zh-CN': ['购物', '生活方式', '共鸣'],
+        'zh-TW': ['購物', '生活方式', '共鳴'],
+        vi: ['Mua sắm', 'Lối sống', 'Đồng cảm'],
+        id: ['Belanja', 'Gaya hidup', 'Relate'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3016,6 +3061,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SnsAlgorithmTypeQuestions}
           results={phase3SnsAlgorithmTypeResults}
           questionCount={phase3SnsAlgorithmTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-tanjinjam-spending-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-tanjinjam-spending-type',
+      title: {
+        ko: '나의 탕진잼 유형은?',
+        en: 'What’s My Splurge-Joy Type?',
+        ja: '私の散財ジョイタイプは？',
+        'zh-CN': '我的剁手快乐型是？',
+        'zh-TW': '我的剁手快樂型是？',
+        vi: 'Kiểu vui khi shopping của tôi?',
+        id: 'Tipe bahagia belanjaku?',
+      },
+      description: {
+        ko: '12문항 이미지 4지선다로 보는 탕진잼 소비 행복 포인트 5유형. #소비 #쇼핑 #공감',
+        en: '12 image multiple-choice questions — 5 spending happiness types. #shopping #lifestyle #relatable',
+        ja: '画像12問4択で見る散財ジョイ・幸福ポイント5タイプ。#買い物 #ライフスタイル #共感',
+        'zh-CN': '12 道图片四选一，五种消费快乐型。#购物 #生活方式 #共鸣',
+        'zh-TW': '12 題圖片四選一，五種消費快樂型。#購物 #生活方式 #共鳴',
+        vi: '12 câu chọn ảnh 4 đáp án — 5 kiểu điểm hạnh phúc khi chi tiêu. #mua sắm #lối sống #đồng cảm',
+        id: '12 soal pilih gambar 4 opsi — 5 tipe titik bahagia saat belanja. #belanja #gaya hidup #relate',
+      },
+      thumbnail: 'p3_test_tanjinjam_spending_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소비', '쇼핑', '공감'],
+        en: ['Shopping', 'Lifestyle', 'Relatable'],
+        ja: ['買い物', 'ライフスタイル', '共感'],
+        'zh-CN': ['购物', '生活方式', '共鸣'],
+        'zh-TW': ['購物', '生活方式', '共鳴'],
+        vi: ['Mua sắm', 'Lối sống', 'Đồng cảm'],
+        id: ['Belanja', 'Gaya hidup', 'Relate'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3TanjinjamSpendingTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3TanjinjamSpendingTypeQuestions}
+          results={phase3TanjinjamSpendingTypeResults}
+          questionCount={phase3TanjinjamSpendingTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

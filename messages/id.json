@@ -2054,6 +2054,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3TanjinjamSpendingTypeTest": {
+    "startMessage": {
+      "line1": "Tahu nggak momen paling bahagia saat belanja?",
+      "line2": "Makan enak, beli baju, tiket pesawat, merch bias, dekor rumah — tiap area belanja punya “titik bahagia” beda.",
+      "line3": "Kamu belanjakan uang ke mana, itu yang nunjukin titik bahagiamu.",
+      "line4": "Pilih gambar yang paling menarik buatmu dan lihat tipe “bahagia belanja”-mu.",
+      "line5": "Cek tipe bahagia belanjaku 💸 Mulai analisis titik bahagia saat belanja"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Tipe bahagia belanjaku?)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "tanjinJamCategory": "Tipe bahagia belanja",
+      "tanjinPoint": "Titik bahagia",
+      "tanjinLevel": "Level belanja",
+      "tanjinSignature": "Ciri khasmu",
+      "monthlyPick": "Rekomendasi belanja bulan ini",
+      "goodMatch": "Partner paling cocok",
+      "badMatch": "Partner yang sering bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe bahagia belanjaku {name}! 💸 Aku paling senang di momen ini — kamu tipe yang mana?",
+      "kakao": "Tipe bahagia belanjaku {name}! 💸 Aku paling senang di momen ini — kamu tipe yang mana?",
+      "wechat": "Tipe bahagia belanjaku {name}! 💸 Aku paling senang di momen ini — kamu tipe yang mana?",
+      "whatsapp": "Tipe bahagia belanjaku {name}! 💸 Aku paling senang di momen ini — kamu tipe yang mana?",
+      "telegram": "Tipe bahagia belanjaku {name}! 💸 Aku paling senang di momen ini — kamu tipe yang mana?",
+      "line": "Tipe bahagia belanjaku {name}! 💸 Aku paling senang di momen ini — kamu tipe yang mana?",
+      "startDefault": "Tipe bahagia belanjaku? 💸 12 soal pilih gambar (4 pilihan)",
+      "startKakao": "Tipe bahagia belanjaku? 💸 12 soal pilih gambar (4 pilihan)",
+      "startWechat": "Tipe bahagia belanjaku? 💸 12 soal pilih gambar (4 pilihan)",
+      "startWhatsapp": "Tipe bahagia belanjaku? 💸 12 soal pilih gambar (4 pilihan)",
+      "startTelegram": "Tipe bahagia belanjaku? 💸 12 soal pilih gambar (4 pilihan)",
+      "startLine": "Tipe bahagia belanjaku? 💸 12 soal pilih gambar (4 pilihan)"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",

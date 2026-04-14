@@ -1316,6 +1316,60 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3TanjinjamSpendingTypeTest": {
+    "startMessage": {
+      "line1": "돈을 쓸 때 가장 행복한 순간이 언제인지 알고 있나요?",
+      "line2": "맛있는 걸 먹을 때, 예쁜 옷을 살 때, 비행기 티켓을 끊을 때, 최애 굿즈를 손에 넣을 때, 집을 예쁘게 꾸밀 때.",
+      "line3": "탕진하는 분야가 다르면 행복한 포인트도 다릅니다.",
+      "line4": "직관적으로 끌리는 이미지를 선택하면 나의 탕진잼 유형이 나옵니다.",
+      "line5": "내 탕진잼 유형 확인하기 💸 소비 행복 포인트 분석 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 탕진잼 유형은?)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "tanjinJamCategory": "탕진잼 유형",
+      "tanjinPoint": "탕진 포인트",
+      "tanjinLevel": "탕진 레벨",
+      "tanjinSignature": "탕진 시그니처",
+      "monthlyPick": "이달의 탕진잼 추천",
+      "goodMatch": "찰떡 짝꿍",
+      "badMatch": "환장의 짝꿍",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 탕진잼 유형은 {name}! 💸 나 이때 제일 행복함 ㅋㅋ 맞아서 웃기다 → 너는 어떤 탕진 유형이야?",
+      "kakao": "내 탕진잼 유형은 {name}! 💸 나 이때 제일 행복함 ㅋㅋ 맞아서 웃기다 → 너는 어떤 탕진 유형이야?",
+      "wechat": "내 탕진잼 유형은 {name}! 💸 나 이때 제일 행복함 ㅋㅋ 맞아서 웃기다 → 너는 어떤 탕진 유형이야?",
+      "whatsapp": "내 탕진잼 유형은 {name}! 💸 나 이때 제일 행복함 ㅋㅋ 맞아서 웃기다 → 너는 어떤 탕진 유형이야?",
+      "telegram": "내 탕진잼 유형은 {name}! 💸 나 이때 제일 행복함 ㅋㅋ 맞아서 웃기다 → 너는 어떤 탕진 유형이야?",
+      "line": "내 탕진잼 유형은 {name}! 💸 나 이때 제일 행복함 ㅋㅋ 맞아서 웃기다 → 너는 어떤 탕진 유형이야?",
+      "startDefault": "나의 탕진잼 유형은? 💸 12문항 이미지 선택",
+      "startKakao": "나의 탕진잼 유형은? 💸 12문항 이미지 선택",
+      "startWechat": "나의 탕진잼 유형은? 💸 12문항 이미지 선택",
+      "startWhatsapp": "나의 탕진잼 유형은? 💸 12문항 이미지 선택",
+      "startTelegram": "나의 탕진잼 유형은? 💸 12문항 이미지 선택",
+      "startLine": "나의 탕진잼 유형은? 💸 12문항 이미지 선택"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "유튜브는 당신이 말하지 않은 것까지 알고 있습니다.",

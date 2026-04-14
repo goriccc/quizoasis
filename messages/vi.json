@@ -2054,6 +2054,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3TanjinjamSpendingTypeTest": {
+    "startMessage": {
+      "line1": "Bạn có biết khoảnh khắc nào khi tiêu tiền khiến bạn hạnh phúc nhất không?",
+      "line2": "Ăn ngon, mua quần áo, vé máy bay, merch bias, decor nhà — mỗi “vùng tiêu” cho một niềm vui khác nhau.",
+      "line3": "Bạn chi vào đâu sẽ cho thấy “điểm hạnh phúc” của bạn.",
+      "line4": "Chọn hình thu hút bạn nhất để xem kiểu “vui khi shopping” của bạn.",
+      "line5": "Xem kiểu tiêu tiền vui nhất của tôi 💸 Bắt đầu phân tích điểm hạnh phúc khi chi tiêu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Kiểu vui khi shopping của tôi?)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "tanjinJamCategory": "Kiểu vui khi shopping",
+      "tanjinPoint": "Điểm hạnh phúc",
+      "tanjinLevel": "Mức độ shopping",
+      "tanjinSignature": "Signature của bạn",
+      "monthlyPick": "Gợi ý shopping tháng này",
+      "goodMatch": "Hợp gu nhất",
+      "badMatch": "Dễ clash",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Kiểu vui khi shopping của mình là {name}! 💸 Đúng lúc mình hạnh phúc nhất — bạn thuộc kiểu nào?",
+      "kakao": "Kiểu vui khi shopping của mình là {name}! 💸 Đúng lúc mình hạnh phúc nhất — bạn thuộc kiểu nào?",
+      "wechat": "Kiểu vui khi shopping của mình là {name}! 💸 Đúng lúc mình hạnh phúc nhất — bạn thuộc kiểu nào?",
+      "whatsapp": "Kiểu vui khi shopping của mình là {name}! 💸 Đúng lúc mình hạnh phúc nhất — bạn thuộc kiểu nào?",
+      "telegram": "Kiểu vui khi shopping của mình là {name}! 💸 Đúng lúc mình hạnh phúc nhất — bạn thuộc kiểu nào?",
+      "line": "Kiểu vui khi shopping của mình là {name}! 💸 Đúng lúc mình hạnh phúc nhất — bạn thuộc kiểu nào?",
+      "startDefault": "Kiểu vui khi shopping của tôi? 💸 12 câu chọn ảnh 4 lựa chọn",
+      "startKakao": "Kiểu vui khi shopping của tôi? 💸 12 câu chọn ảnh 4 lựa chọn",
+      "startWechat": "Kiểu vui khi shopping của tôi? 💸 12 câu chọn ảnh 4 lựa chọn",
+      "startWhatsapp": "Kiểu vui khi shopping của tôi? 💸 12 câu chọn ảnh 4 lựa chọn",
+      "startTelegram": "Kiểu vui khi shopping của tôi? 💸 12 câu chọn ảnh 4 lựa chọn",
+      "startLine": "Kiểu vui khi shopping của tôi? 💸 12 câu chọn ảnh 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",

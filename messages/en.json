@@ -2095,6 +2095,60 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3TanjinjamSpendingTypeTest": {
+    "startMessage": {
+      "line1": "Do you know when you feel happiest spending money?",
+      "line2": "Great food, new clothes, flight tickets, favorite merch, a prettier home—different splurge zones light you up in different ways.",
+      "line3": "Where you spend reveals what your happiness point is.",
+      "line4": "Pick the images that pull you in to discover your splurge-joy type.",
+      "line5": "Discover my splurge-joy type 💸 Start the spending-happiness test"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (What’s My Splurge-Joy Type?)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "tanjinJamCategory": "Splurge-joy type",
+      "tanjinPoint": "Happiness points",
+      "tanjinLevel": "Splurge level",
+      "tanjinSignature": "Signature move",
+      "monthlyPick": "This month’s splurge pick",
+      "goodMatch": "Perfect match",
+      "badMatch": "Clash buddy",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My splurge-joy type is {name}! 💸 I’m happiest then—too real. What’s your spending type?",
+      "kakao": "My splurge-joy type is {name}! 💸 I’m happiest then—too real. What’s your spending type?",
+      "wechat": "My splurge-joy type is {name}! 💸 I’m happiest then—too real. What’s your spending type?",
+      "whatsapp": "My splurge-joy type is {name}! 💸 I’m happiest then—too real. What’s your spending type?",
+      "telegram": "My splurge-joy type is {name}! 💸 I’m happiest then—too real. What’s your spending type?",
+      "line": "My splurge-joy type is {name}! 💸 I’m happiest then—too real. What’s your spending type?",
+      "startDefault": "What’s my splurge-joy type? 💸 12 image-choice questions",
+      "startKakao": "What’s my splurge-joy type? 💸 12 image-choice questions",
+      "startWechat": "What’s my splurge-joy type? 💸 12 image-choice questions",
+      "startWhatsapp": "What’s my splurge-joy type? 💸 12 image-choice questions",
+      "startTelegram": "What’s my splurge-joy type? 💸 12 image-choice questions",
+      "startLine": "What’s my splurge-joy type? 💸 12 image-choice questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube knows things you never even said out loud.",

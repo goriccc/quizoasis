@@ -2061,6 +2061,60 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3TanjinjamSpendingTypeTest": {
+    "startMessage": {
+      "line1": "你知道花錢時最幸福的瞬間是什麼時候嗎？",
+      "line2": "美食、新衣、機票、本命周邊、把家佈置得更好——花錢的方向不同，快樂焦點也不同。",
+      "line3": "把錢花在哪裡，就能看出你的幸福點在哪裡。",
+      "line4": "憑直覺選擇最吸引你的圖片，解鎖你的剁手快樂型。",
+      "line5": "查看我的剁手快樂型 💸 消費幸福點分析開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的剁手快樂型是？）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "tanjinJamCategory": "剁手快樂型",
+      "tanjinPoint": "幸福點",
+      "tanjinLevel": "剁手等級",
+      "tanjinSignature": "經典操作",
+      "monthlyPick": "本月剁手推薦",
+      "goodMatch": "絕配搭子",
+      "badMatch": "反差搭子",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的剁手快樂型是{name}！💸 這時候我最快樂，太準了——你是哪種花錢型？",
+      "kakao": "我的剁手快樂型是{name}！💸 這時候我最快樂，太準了——你是哪種花錢型？",
+      "wechat": "我的剁手快樂型是{name}！💸 這時候我最快樂，太準了——你是哪種花錢型？",
+      "whatsapp": "我的剁手快樂型是{name}！💸 這時候我最快樂，太準了——你是哪種花錢型？",
+      "telegram": "我的剁手快樂型是{name}！💸 這時候我最快樂，太準了——你是哪種花錢型？",
+      "line": "我的剁手快樂型是{name}！💸 這時候我最快樂，太準了——你是哪種花錢型？",
+      "startDefault": "我的剁手快樂型是？ 💸 12 題圖片四選一",
+      "startKakao": "我的剁手快樂型是？ 💸 12 題圖片四選一",
+      "startWechat": "我的剁手快樂型是？ 💸 12 題圖片四選一",
+      "startWhatsapp": "我的剁手快樂型是？ 💸 12 題圖片四選一",
+      "startTelegram": "我的剁手快樂型是？ 💸 12 題圖片四選一",
+      "startLine": "我的剁手快樂型是？ 💸 12 題圖片四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你連沒說出口的事。",
