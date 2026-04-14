@@ -73,6 +73,10 @@ import {
   phase3ShortformAddictionTypeQuestions,
   phase3ShortformAddictionTypeResults,
 } from '@/lib/phase3ShortformAddictionTypeData';
+import {
+  phase3SpendingPersonalityTypeQuestions,
+  phase3SpendingPersonalityTypeResults,
+} from '@/lib/phase3SpendingPersonalityTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -261,6 +265,10 @@ const Phase3YoutubeAlgorithmKnowsTestClient = dynamic(
 );
 const Phase3ShortformAddictionTypeTestClient = dynamic(
   () => import('@/components/Phase3ShortformAddictionTypeTestClient'),
+  { ssr: false }
+);
+const Phase3SpendingPersonalityTypeTestClient = dynamic(
+  () => import('@/components/Phase3SpendingPersonalityTypeTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -846,6 +854,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['短影音', 'Reels', 'Shorts', '習慣'],
         vi: ['Short-form', 'Reels', 'Shorts', 'Thói quen'],
         id: ['Short-form', 'Reels', 'Shorts', 'Kebiasaan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-spending-personality-type') {
+    test = {
+      slug: 'phase3-spending-personality-type',
+      title: {
+        ko: '나의 소비 성향 유형 분석',
+        en: 'My Spending Personality Type',
+        ja: '私の消費傾向タイプ分析',
+        'zh-CN': '我的消费性格类型分析',
+        'zh-TW': '我的消費性格類型分析',
+        vi: 'Phân tích kiểu chi tiêu của tôi',
+        id: 'Analisis Tipe Kepribadian Belanjaku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 소비 DNA 스펙트럼 8유형. #소비 #재테크 #심리 #공감',
+        en: '12 questions, 4 choices — 8 spending DNA types. #spending #money #psychology',
+        ja: '12問4択で見る消費DNAスペクトラム8タイプ。#消費 #お金 #心理',
+        'zh-CN': '12 题四选一，八种消费 DNA 光谱。#消费 #理财 #心理',
+        'zh-TW': '12 題四選一，八種消費 DNA 光譜。#消費 #理財 #心理',
+        vi: '12 câu 4 lựa chọn — 8 kiểu DNA chi tiêu. #tiêu dùng #tài chính #tâm lý',
+        id: '12 pertanyaan 4 pilihan — 8 tipe DNA belanja. #belanja #uang #psikologi',
+      },
+      thumbnail: 'p3_test_spending_personality_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소비', '재테크', '심리', '공감'],
+        en: ['Spending', 'Money', 'Psychology', 'Relatable'],
+        ja: ['消費', 'お金', '心理', '共感'],
+        'zh-CN': ['消费', '理财', '心理', '共鸣'],
+        'zh-TW': ['消費', '理財', '心理', '共鳴'],
+        vi: ['Chi tiêu', 'Tiền', 'Tâm lý', 'Đồng cảm'],
+        id: ['Belanja', 'Uang', 'Psikologi', 'Relatable'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3036,6 +3081,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3ShortformAddictionTypeQuestions}
           results={phase3ShortformAddictionTypeResults}
           questionCount={phase3ShortformAddictionTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-spending-personality-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-spending-personality-type',
+      title: {
+        ko: '나의 소비 성향 유형 분석',
+        en: 'My Spending Personality Type',
+        ja: '私の消費傾向タイプ分析',
+        'zh-CN': '我的消费性格类型分析',
+        'zh-TW': '我的消費性格類型分析',
+        vi: 'Phân tích kiểu chi tiêu của tôi',
+        id: 'Analisis Tipe Kepribadian Belanjaku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 소비 DNA 스펙트럼 8유형. #소비 #재테크 #심리 #공감',
+        en: '12 questions, 4 choices — 8 spending DNA types. #spending #money #psychology',
+        ja: '12問4択で見る消費DNAスペクトラム8タイプ。#消費 #お金 #心理',
+        'zh-CN': '12 题四选一，八种消费 DNA 光谱。#消费 #理财 #心理',
+        'zh-TW': '12 題四選一，八種消費 DNA 光譜。#消費 #理財 #心理',
+        vi: '12 câu 4 lựa chọn — 8 kiểu DNA chi tiêu. #tiêu dùng #tài chính #tâm lý',
+        id: '12 pertanyaan 4 pilihan — 8 tipe DNA belanja. #belanja #uang #psikologi',
+      },
+      thumbnail: 'p3_test_spending_personality_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소비', '재테크', '심리', '공감'],
+        en: ['Spending', 'Money', 'Psychology', 'Relatable'],
+        ja: ['消費', 'お金', '心理', '共感'],
+        'zh-CN': ['消费', '理财', '心理', '共鸣'],
+        'zh-TW': ['消費', '理財', '心理', '共鳴'],
+        vi: ['Chi tiêu', 'Tiền', 'Tâm lý', 'Đồng cảm'],
+        id: ['Belanja', 'Uang', 'Psikologi', 'Relatable'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SpendingPersonalityTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SpendingPersonalityTypeQuestions}
+          results={phase3SpendingPersonalityTypeResults}
+          questionCount={phase3SpendingPersonalityTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

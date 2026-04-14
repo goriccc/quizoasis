@@ -1356,6 +1356,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3SpendingPersonalityTypeTest": {
+    "startMessage": {
+      "line1": "給料は入るのに、なぜか残高はいつもこのザマ…？",
+      "line2": "欲しいものは山ほどあるのに、口座はいつもカラ。でもその使い方には、あなただけのはっきりしたDNAがあります。",
+      "line3": "衝動買い？極限の節約？それとも体験にお金を使うタイプ？",
+      "line4": "12問で、あなたの本当の「消費DNA」を8タイプに分類します。",
+      "line5": "ドンピシャすぎて笑えるか、ドンピシャすぎて反省するか。",
+      "line6": "消費DNAをチェック 💸 消費タイプ診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私の消費タイプ診断）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "spendingDna": "🧬 消費DNA",
+      "keywords": "🏷️ キーワード",
+      "strength": "消費の強み",
+      "weakness": "消費の弱点",
+      "prescription": "処方箋",
+      "goodMatch": "相性バッチリなタイプ",
+      "badMatch": "相性最悪なタイプ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の消費DNAは{name}！💸 なんでこうなるの笑　あなたはどのタイプ？",
+      "kakao": "私の消費DNAは{name}！💸 なんでこうなるの笑　あなたはどのタイプ？",
+      "wechat": "私の消費DNAは{name}！💸 なんでこうなるの笑　あなたはどのタイプ？",
+      "whatsapp": "私の消費DNAは{name}！💸 なんでこうなるの笑　あなたはどのタイプ？",
+      "telegram": "私の消費DNAは{name}！💸 なんでこうなるの笑　あなたはどのタイプ？",
+      "line": "私の消費DNAは{name}！💸 なんでこうなるの笑　あなたはどのタイプ？",
+      "startDefault": "私の消費タイプ診断 💸 消費DNAをチェック",
+      "startKakao": "私の消費タイプ診断 💸 消費DNAをチェック",
+      "startWechat": "私の消費タイプ診断 💸 消費DNAをチェック",
+      "startWhatsapp": "私の消費タイプ診断 💸 消費DNAをチェック",
+      "startTelegram": "私の消費タイプ診断 💸 消費DNAをチェック",
+      "startLine": "私の消費タイプ診断 💸 消費DNAをチェック"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalkへの共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "どうして恋愛だけこんなにしんどいの？",

@@ -1362,6 +1362,61 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3SpendingPersonalityTypeTest": {
+    "startMessage": {
+      "line1": "薪水入帳了，餘額怎麼老是這副模樣？",
+      "line2": "想買的很多，帳戶卻總是不夠花。但你的消費習慣，其實有一套清楚的DNA。",
+      "line3": "衝動剁手？極限省錢？還是為體驗大方花錢？",
+      "line4": "12題，把你的真實「消費DNA」分成8種類型。",
+      "line5": "準到好笑，也可能準到想反省。",
+      "line6": "查看我的消費DNA 💸 開始消費類型測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的消費性格類型）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "spendingDna": "🧬 消費DNA",
+      "keywords": "🏷️ 關鍵字",
+      "strength": "消費優勢",
+      "weakness": "消費短板",
+      "prescription": "建議處方",
+      "goodMatch": "合拍類型",
+      "badMatch": "反差類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的消費DNA是{name}！💸 我怎麼這樣哈哈哈——你是哪一型？",
+      "kakao": "我的消費DNA是{name}！💸 我怎麼這樣哈哈哈——你是哪一型？",
+      "wechat": "我的消費DNA是{name}！💸 我怎麼這樣哈哈哈——你是哪一型？",
+      "whatsapp": "我的消費DNA是{name}！💸 我怎麼這樣哈哈哈——你是哪一型？",
+      "telegram": "我的消費DNA是{name}！💸 我怎麼這樣哈哈哈——你是哪一型？",
+      "line": "我的消費DNA是{name}！💸 我怎麼這樣哈哈哈——你是哪一型？",
+      "startDefault": "我的消費性格類型分析 💸 查看消費DNA",
+      "startKakao": "我的消費性格類型分析 💸 查看消費DNA",
+      "startWechat": "我的消費性格類型分析 💸 查看消費DNA",
+      "startWhatsapp": "我的消費性格類型分析 💸 查看消費DNA",
+      "startTelegram": "我的消費性格類型分析 💸 查看消費DNA",
+      "startLine": "我的消費性格類型分析 💸 查看消費DNA"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "暫時無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前5"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "為什麼一談戀愛就好累？",

@@ -1355,6 +1355,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3SpendingPersonalityTypeTest": {
+    "startMessage": {
+      "line1": "Lương đã về—sao số dư cứ như thế này?",
+      "line2": "Muốn mua nhiều mà tài khoản lúc nào cũng thiếu. Nhưng cách bạn tiêu có một DNA rất rõ.",
+      "line3": "Mua ngẫu hứng? Tiết kiệm cực đoan? Hay xài hết mình cho trải nghiệm?",
+      "line4": "12 câu hỏi, “DNA chi tiêu” thật của bạn thành 8 kiểu.",
+      "line5": "Đúng đến mức cười ra nước mắt—hoặc tự soi lại bản thân.",
+      "line6": "Xem DNA chi tiêu của tôi 💸 Bắt đầu trắc nghiệm kiểu chi tiêu"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kiểu tính cách chi tiêu)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "spendingDna": "🧬 DNA chi tiêu",
+      "keywords": "🏷️ Từ khóa",
+      "strength": "Điểm mạnh khi chi tiêu",
+      "weakness": "Điểm yếu khi chi tiêu",
+      "prescription": "Gợi ý",
+      "goodMatch": "Kiểu hợp gu",
+      "badMatch": "Kiểu “chọi” nhau",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "DNA chi tiêu của tôi là {name}! 💸 Sao mình lại thế nhỉ—bạn kiểu gì?",
+      "kakao": "DNA chi tiêu của tôi là {name}! 💸 Sao mình lại thế nhỉ—bạn kiểu gì?",
+      "wechat": "DNA chi tiêu của tôi là {name}! 💸 Sao mình lại thế nhỉ—bạn kiểu gì?",
+      "whatsapp": "DNA chi tiêu của tôi là {name}! 💸 Sao mình lại thế nhỉ—bạn kiểu gì?",
+      "telegram": "DNA chi tiêu của tôi là {name}! 💸 Sao mình lại thế nhỉ—bạn kiểu gì?",
+      "line": "DNA chi tiêu của tôi là {name}! 💸 Sao mình lại thế nhỉ—bạn kiểu gì?",
+      "startDefault": "Phân tích kiểu chi tiêu 💸 Xem DNA chi tiêu",
+      "startKakao": "Phân tích kiểu chi tiêu 💸 Xem DNA chi tiêu",
+      "startWechat": "Phân tích kiểu chi tiêu 💸 Xem DNA chi tiêu",
+      "startWhatsapp": "Phân tích kiểu chi tiêu 💸 Xem DNA chi tiêu",
+      "startTelegram": "Phân tích kiểu chi tiêu 💸 Xem DNA chi tiêu",
+      "startLine": "Phân tích kiểu chi tiêu 💸 Xem DNA chi tiêu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ lúc này.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Sao yêu đương cứ thấy mệt mỏi thế?",

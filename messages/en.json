@@ -1396,6 +1396,61 @@
       "popularTestsTop5": "🔥 Trending tests"
     }
   },
+  "phase3SpendingPersonalityTypeTest": {
+    "startMessage": {
+      "line1": "My paycheck lands—so why does my balance always look like this?",
+      "line2": "So much you want to buy; never enough in the account. Yet that spending pattern has its own clear DNA.",
+      "line3": "Impulse buyer? Extreme saver? Or the “live in the moment” spender?",
+      "line4": "Twelve questions map your real spending DNA into eight types.",
+      "line5": "You might laugh because it is spot-on—or wince because it hits home.",
+      "line6": "Check my spending DNA 💸 Start the spending type quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (My Spending Personality Type)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "spendingDna": "🧬 Spending DNA",
+      "keywords": "🏷️ Keywords",
+      "strength": "Spending strengths",
+      "weakness": "Spending pitfalls",
+      "prescription": "Prescription",
+      "goodMatch": "Best match type",
+      "badMatch": "Clash type",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My spending DNA is {name}! 💸 Why am I like this lol—what type are you?",
+      "kakao": "My spending DNA is {name}! 💸 Why am I like this lol—what type are you?",
+      "wechat": "My spending DNA is {name}! 💸 Why am I like this lol—what type are you?",
+      "whatsapp": "My spending DNA is {name}! 💸 Why am I like this lol—what type are you?",
+      "telegram": "My spending DNA is {name}! 💸 Why am I like this lol—what type are you?",
+      "line": "My spending DNA is {name}! 💸 Why am I like this lol—what type are you?",
+      "startDefault": "My spending personality type 💸 Check my spending DNA",
+      "startKakao": "My spending personality type 💸 Check my spending DNA",
+      "startWechat": "My spending personality type 💸 Check my spending DNA",
+      "startWhatsapp": "My spending personality type 💸 Check my spending DNA",
+      "startTelegram": "My spending personality type 💸 Check my spending DNA",
+      "startLine": "My spending personality type 💸 Check my spending DNA"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is unavailable.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Trending tests"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Why does dating feel so hard for me?",

@@ -1355,6 +1355,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3SpendingPersonalityTypeTest": {
+    "startMessage": {
+      "line1": "Gajian sudah masuk—kenapa saldo selalu seperti ini?",
+      "line2": "Banyak yang pengin dibeli, rekeningnya sering kurang. Pola belanjamu punya DNA yang jelas.",
+      "line3": "Impulsif? Hemat ekstrem? Atau tipe gas untuk pengalaman?",
+      "line4": "12 pertanyaan memetakan DNA belanjamu ke 8 tipe.",
+      "line5": "Bisa karena pas banget kamu ketawa—atau merenung.",
+      "line6": "Cek DNA belanjaku 💸 Mulai tes tipe belanja"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tipe Kepribadian Belanja)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "spendingDna": "🧬 DNA belanja",
+      "keywords": "🏷️ Kata kunci",
+      "strength": "Kelebihan belanja",
+      "weakness": "Kelemahan belanja",
+      "prescription": "Saran",
+      "goodMatch": "Tipe paling cocok",
+      "badMatch": "Tipe bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "DNA belanjaku {name}! 💸 Kok bisa ya—kamu tipe apa?",
+      "kakao": "DNA belanjaku {name}! 💸 Kok bisa ya—kamu tipe apa?",
+      "wechat": "DNA belanjaku {name}! 💸 Kok bisa ya—kamu tipe apa?",
+      "whatsapp": "DNA belanjaku {name}! 💸 Kok bisa ya—kamu tipe apa?",
+      "telegram": "DNA belanjaku {name}! 💸 Kok bisa ya—kamu tipe apa?",
+      "line": "DNA belanjaku {name}! 💸 Kok bisa ya—kamu tipe apa?",
+      "startDefault": "Analisis tipe belanja 💸 Cek DNA belanja",
+      "startKakao": "Analisis tipe belanja 💸 Cek DNA belanja",
+      "startWechat": "Analisis tipe belanja 💸 Cek DNA belanja",
+      "startWhatsapp": "Analisis tipe belanja 💸 Cek DNA belanja",
+      "startTelegram": "Analisis tipe belanja 💸 Cek DNA belanja",
+      "startLine": "Analisis tipe belanja 💸 Cek DNA belanja"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 5 tes populer"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Kenapa pacaran rasanya berat sekali?",

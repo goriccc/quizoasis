@@ -1944,6 +1944,61 @@
       "popularTestsTop5": "🔥 热门测试推荐前 5"
     }
   },
+  "phase3SpendingPersonalityTypeTest": {
+    "startMessage": {
+      "line1": "工资到账了，可余额为什么总是这副样子？",
+      "line2": "想买的一堆，账户却总不够花。但你的消费习惯，其实有一套清晰的DNA。",
+      "line3": "冲动剁手？极限省钱？还是为体验大方花钱？",
+      "line4": "12道题，把你的真实「消费DNA」分成8种类型。",
+      "line5": "准到好笑，也可能准到想反省。",
+      "line6": "查看我的消费DNA 💸 开始消费类型测试"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的消费性格类型）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "spendingDna": "🧬 消费DNA",
+      "keywords": "🏷️ 关键词",
+      "strength": "消费优势",
+      "weakness": "消费短板",
+      "prescription": "建议处方",
+      "goodMatch": "合拍类型",
+      "badMatch": "反差类型",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的消费DNA是{name}！💸 我怎么这样哈哈哈——你是什么类型？",
+      "kakao": "我的消费DNA是{name}！💸 我怎么这样哈哈哈——你是什么类型？",
+      "wechat": "我的消费DNA是{name}！💸 我怎么这样哈哈哈——你是什么类型？",
+      "whatsapp": "我的消费DNA是{name}！💸 我怎么这样哈哈哈——你是什么类型？",
+      "telegram": "我的消费DNA是{name}！💸 我怎么这样哈哈哈——你是什么类型？",
+      "line": "我的消费DNA是{name}！💸 我怎么这样哈哈哈——你是什么类型？",
+      "startDefault": "我的消费性格类型分析 💸 查看消费DNA",
+      "startKakao": "我的消费性格类型分析 💸 查看消费DNA",
+      "startWechat": "我的消费性格类型分析 💸 查看消费DNA",
+      "startWhatsapp": "我的消费性格类型分析 💸 查看消费DNA",
+      "startTelegram": "我的消费性格类型分析 💸 查看消费DNA",
+      "startLine": "我的消费性格类型分析 💸 查看消费DNA"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "暂时无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前5",
+      "popularTestsTop5": "🔥 热门测试推荐前5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你连没说出口的事。",
