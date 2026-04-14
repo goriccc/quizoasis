@@ -1304,6 +1304,64 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3ShortformAddictionTypeTest": {
+    "startMessage": {
+      "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",
+      "line2": "「就看一則 Reels、一則 Shorts、一則 TikTok。」",
+      "line3": "這些「一則」堆起來，不知不覺就凌晨三點。",
+      "line4": "依你的短影音使用習慣，我們會坦白說出成癮等級，還有一份處方。",
+      "line5": "可能好笑到離譜，也可能準到發毛。開始吧。",
+      "line6": "測測我的短影音成癮等級 📱 開始測驗"
+    },
+    "ui": {
+      "startTest": "開始測驗",
+      "shareWithFriends": "和朋友一起玩",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "更多測驗",
+      "goToTest": "進入測驗",
+      "adsenseTitle": "AdSense 區域（短影音成癮類型）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "addictionLevel": "成癮等級",
+      "symptoms": "主要症狀",
+      "prescription": "處方",
+      "goodMatch": "合拍搭檔",
+      "badMatch": "容易互相拖累"
+    },
+    "shareMessages": {
+      "default": "我的短影音等級是 Lv.{level} {typeName} 📱 我廢了——你呢？一起躺平滑吧",
+      "kakao": "我的短影音等級是 Lv.{level} {typeName} 📱 我廢了——你呢？一起躺平滑吧",
+      "wechat": "我的短影音等級是 Lv.{level} {typeName} 📱 我廢了——你呢？一起躺平滑吧",
+      "whatsapp": "我的短影音等級是 Lv.{level} {typeName} 📱 我廢了——你呢？一起躺平滑吧",
+      "telegram": "我的短影音等級是 Lv.{level} {typeName} 📱 我廢了——你呢？一起躺平滑吧",
+      "line": "我的短影音等級是 Lv.{level} {typeName} 📱 我廢了——你呢？一起躺平滑吧",
+      "startDefault": "短影音成癮類型測驗 📱 查看我的等級",
+      "startKakao": "短影音成癮類型測驗 📱 查看我的等級",
+      "startWechat": "短影音成癮類型測驗 📱 查看我的等級",
+      "startWhatsapp": "短影音成癮類型測驗 📱 查看我的等級",
+      "startTelegram": "短影音成癮類型測驗 📱 查看我的等級",
+      "startLine": "短影音成癮類型測驗 📱 查看我的等級"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "暫時無法使用分享功能。",
+      "wechatCopy": "連結已複製！在 WeChat 貼上即可分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 最近熱門測試前5名"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "為什麼一談戀愛就好累？",

@@ -1338,6 +1338,64 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3ShortformAddictionTypeTest": {
+    "startMessage": {
+      "line1": "Ever opened your phone for “just a minute” and lost two hours?",
+      "line2": "“Just one Reel. One Short. One TikTok.”",
+      "line3": "Those “one more”s stack up—and suddenly it’s 3 a.m.",
+      "line4": "We’ll tell you honestly where you land on the short-form spectrum—and give you a prescription.",
+      "line5": "You might laugh because it’s true—or get a little scared. Let’s go.",
+      "line6": "Check my short-form level 📱 Start the quiz"
+    },
+    "ui": {
+      "startTest": "Start quiz",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share your result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "More tests",
+      "goToTest": "Go to test",
+      "adsenseTitle": "AdSense area (Short-form addiction type)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "addictionLevel": "Addiction level",
+      "symptoms": "Main symptoms",
+      "prescription": "Prescription",
+      "goodMatch": "Best partner type",
+      "badMatch": "Clash partner type"
+    },
+    "shareMessages": {
+      "default": "My short-form level is Lv.{level} {typeName} 📱 I’m cooked—what’s yours? Let’s doomscroll together.",
+      "kakao": "My short-form level is Lv.{level} {typeName} 📱 I’m cooked—what’s yours? Let’s doomscroll together.",
+      "wechat": "My short-form level is Lv.{level} {typeName} 📱 I’m cooked—what’s yours? Let’s doomscroll together.",
+      "whatsapp": "My short-form level is Lv.{level} {typeName} 📱 I’m cooked—what’s yours? Let’s doomscroll together.",
+      "telegram": "My short-form level is Lv.{level} {typeName} 📱 I’m cooked—what’s yours? Let’s doomscroll together.",
+      "line": "My short-form level is Lv.{level} {typeName} 📱 I’m cooked—what’s yours? Let’s doomscroll together.",
+      "startDefault": "Short-form addiction type quiz 📱 Check my level",
+      "startKakao": "Short-form addiction type quiz 📱 Check my level",
+      "startWechat": "Short-form addiction type quiz 📱 Check my level",
+      "startWhatsapp": "Short-form addiction type quiz 📱 Check my level",
+      "startTelegram": "Short-form addiction type quiz 📱 Check my level",
+      "startLine": "Short-form addiction type quiz 📱 Check my level"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is unavailable.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Trending tests"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Why does dating feel so hard for me?",

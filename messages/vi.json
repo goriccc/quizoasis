@@ -1297,6 +1297,64 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3ShortformAddictionTypeTest": {
+    "startMessage": {
+      "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",
+      "line2": "“Chỉ một Reels. Một Shorts. Một TikTok thôi.”",
+      "line3": "Mấy cái “một” đó chồng lên nhau — chớp mắt đã 3 giờ sáng.",
+      "line4": "Dựa trên cách bạn xem video ngắn, chúng mình nói thẳng mức “nghiện” của bạn và gợi ý “đơn thuốc”.",
+      "line5": "Có thể cười vì đúng quá, hoặc hơi rợn vì trúng tim đen. Bắt đầu thôi.",
+      "line6": "Xem mức nghiện video ngắn của tôi 📱 Bắt đầu"
+    },
+    "ui": {
+      "startTest": "Bắt đầu",
+      "shareWithFriends": "Chơi cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Bài test khác",
+      "goToTest": "Vào bài test",
+      "adsenseTitle": "Khu vực AdSense (kiểu nghiện video ngắn)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "addictionLevel": "Mức nghiện",
+      "symptoms": "Triệu chứng chính",
+      "prescription": "Gợi ý hành động",
+      "goodMatch": "Hợp cạ nhau",
+      "badMatch": "Dễ kéo nhau “chìm” hơn"
+    },
+    "shareMessages": {
+      "default": "Mức video ngắn của tôi là Lv.{level} {typeName} 📱 Toi rồi — còn bạn? Cùng lướt cho đến khi…",
+      "kakao": "Mức video ngắn của tôi là Lv.{level} {typeName} 📱 Toi rồi — còn bạn? Cùng lướt cho đến khi…",
+      "wechat": "Mức video ngắn của tôi là Lv.{level} {typeName} 📱 Toi rồi — còn bạn? Cùng lướt cho đến khi…",
+      "whatsapp": "Mức video ngắn của tôi là Lv.{level} {typeName} 📱 Toi rồi — còn bạn? Cùng lướt cho đến khi…",
+      "telegram": "Mức video ngắn của tôi là Lv.{level} {typeName} 📱 Toi rồi — còn bạn? Cùng lướt cho đến khi…",
+      "line": "Mức video ngắn của tôi là Lv.{level} {typeName} 📱 Toi rồi — còn bạn? Cùng lướt cho đến khi…",
+      "startDefault": "Trắc nghiệm kiểu nghiện video ngắn 📱 Xem mức của tôi",
+      "startKakao": "Trắc nghiệm kiểu nghiện video ngắn 📱 Xem mức của tôi",
+      "startWechat": "Trắc nghiệm kiểu nghiện video ngắn 📱 Xem mức của tôi",
+      "startWhatsapp": "Trắc nghiệm kiểu nghiện video ngắn 📱 Xem mức của tôi",
+      "startTelegram": "Trắc nghiệm kiểu nghiện video ngắn 📱 Xem mức của tôi",
+      "startLine": "Trắc nghiệm kiểu nghiện video ngắn 📱 Xem mức của tôi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ lúc này.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo KakaoTalk. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Sao yêu đương cứ thấy mệt mỏi thế?",

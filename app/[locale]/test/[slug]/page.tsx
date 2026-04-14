@@ -69,6 +69,10 @@ import {
   phase3YoutubeAlgorithmKnowsQuestions,
   phase3YoutubeAlgorithmKnowsResults,
 } from '@/lib/phase3YoutubeAlgorithmKnowsData';
+import {
+  phase3ShortformAddictionTypeQuestions,
+  phase3ShortformAddictionTypeResults,
+} from '@/lib/phase3ShortformAddictionTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -253,6 +257,10 @@ const Phase3SnsAlgorithmTypeTestClient = dynamic(
 );
 const Phase3YoutubeAlgorithmKnowsTestClient = dynamic(
   () => import('@/components/Phase3YoutubeAlgorithmKnowsTestClient'),
+  { ssr: false }
+);
+const Phase3ShortformAddictionTypeTestClient = dynamic(
+  () => import('@/components/Phase3ShortformAddictionTypeTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -801,6 +809,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['YouTube', '演算法', '趨勢', '自我爆料'],
         vi: ['YouTube', 'Thuật toán', 'Xu hướng', 'Tự vạch trần'],
         id: ['YouTube', 'Algoritme', 'Tren', 'Ungkap diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-shortform-addiction-type') {
+    test = {
+      slug: 'phase3-shortform-addiction-type',
+      title: {
+        ko: '숏폼 중독 유형 진단',
+        en: 'Short-Form Addiction Type Quiz',
+        ja: 'ショート動画中毒タイプ診断',
+        'zh-CN': '短视频成瘾类型诊断',
+        'zh-TW': '短影音成癮類型診斷',
+        vi: 'Trắc nghiệm kiểu nghiện video ngắn',
+        id: 'Tes Tipe Kecanduan Konten Pendek',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 숏폼 중독 스펙트럼 6유형과 처방전. #숏폼 #릴스 #쇼츠 #중독',
+        en: '12 A/B questions — 6 short-form addiction types and a prescription. #shorts #reels #tiktok #habits',
+        ja: '12問の2択で見るショート動画中毒スペクトラム6タイプと処方箋。#ショート #リール #中毒',
+        'zh-CN': '12 道二选一，六种短视频成瘾光谱与处方。#短视频 #Reels #成瘾',
+        'zh-TW': '12 題二選一，六種短影音成癮光譜與處方。#短影音 #Reels #成癮',
+        vi: '12 câu A/B — 6 mức nghiện short-form và “đơn thuốc”. #shorts #reels #thói quen',
+        id: '12 pertanyaan A/B — 6 spektrum kecanduan konten pendek & resep. #shorts #reels #kebiasaan',
+      },
+      thumbnail: 'p3_test_shortform_addiction_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['숏폼', '릴스', '쇼츠', '중독'],
+        en: ['Short-form', 'Reels', 'Shorts', 'Habits'],
+        ja: ['ショート', 'リール', 'ショート動画', '習慣'],
+        'zh-CN': ['短视频', 'Reels', 'Shorts', '习惯'],
+        'zh-TW': ['短影音', 'Reels', 'Shorts', '習慣'],
+        vi: ['Short-form', 'Reels', 'Shorts', 'Thói quen'],
+        id: ['Short-form', 'Reels', 'Shorts', 'Kebiasaan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2936,6 +2981,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3YoutubeAlgorithmKnowsQuestions}
           results={phase3YoutubeAlgorithmKnowsResults}
           questionCount={phase3YoutubeAlgorithmKnowsQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-shortform-addiction-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-shortform-addiction-type',
+      title: {
+        ko: '숏폼 중독 유형 진단',
+        en: 'Short-Form Addiction Type Quiz',
+        ja: 'ショート動画中毒タイプ診断',
+        'zh-CN': '短视频成瘾类型诊断',
+        'zh-TW': '短影音成癮類型診斷',
+        vi: 'Trắc nghiệm kiểu nghiện video ngắn',
+        id: 'Tes Tipe Kecanduan Konten Pendek',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 숏폼 중독 스펙트럼 6유형과 처방전. #숏폼 #릴스 #쇼츠 #중독',
+        en: '12 A/B questions — 6 short-form addiction types and a prescription. #shorts #reels #tiktok #habits',
+        ja: '12問の2択で見るショート動画中毒スペクトラム6タイプと処方箋。#ショート #リール #中毒',
+        'zh-CN': '12 道二选一，六种短视频成瘾光谱与处方。#短视频 #Reels #成瘾',
+        'zh-TW': '12 題二選一，六種短影音成癮光譜與處方。#短影音 #Reels #成癮',
+        vi: '12 câu A/B — 6 mức nghiện short-form và “đơn thuốc”. #shorts #reels #thói quen',
+        id: '12 pertanyaan A/B — 6 spektrum kecanduan konten pendek & resep. #shorts #reels #kebiasaan',
+      },
+      thumbnail: 'p3_test_shortform_addiction_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['숏폼', '릴스', '쇼츠', '중독'],
+        en: ['Short-form', 'Reels', 'Shorts', 'Habits'],
+        ja: ['ショート', 'リール', 'ショート動画', '習慣'],
+        'zh-CN': ['短视频', 'Reels', 'Shorts', '习惯'],
+        'zh-TW': ['短影音', 'Reels', 'Shorts', '習慣'],
+        vi: ['Short-form', 'Reels', 'Shorts', 'Thói quen'],
+        id: ['Short-form', 'Reels', 'Shorts', 'Kebiasaan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3ShortformAddictionTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3ShortformAddictionTypeQuestions}
+          results={phase3ShortformAddictionTypeResults}
+          questionCount={phase3ShortformAddictionTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

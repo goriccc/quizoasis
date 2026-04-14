@@ -559,6 +559,64 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ShortformAddictionTypeTest": {
+    "startMessage": {
+      "line1": "잠깐만 보려고 켰는데 2시간이 지나있던 경험, 있으시죠?",
+      "line2": "릴스 하나만 보고 자야지. 쇼츠 딱 하나만. 틱톡 이거 하나만.",
+      "line3": "그 '하나만'이 쌓여서 어느새 새벽 3시가 됩니다.",
+      "line4": "당신의 숏폼 소비 패턴으로 나의 중독 유형이 어느 레벨인지, 그리고 처방전까지 솔직하게 알려드립니다.",
+      "line5": "맞아서 웃기거나, 맞아서 무서울 수도 있습니다. 시작해볼게요.",
+      "line6": "내 숏폼 중독 레벨 확인하기 📱 진단 시작"
+    },
+    "ui": {
+      "startTest": "진단 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (숏폼 중독 유형 진단)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "addictionLevel": "중독 레벨",
+      "symptoms": "주요 증상",
+      "prescription": "처방전",
+      "goodMatch": "찰떡 짝꿍",
+      "badMatch": "환장의 짝꿍"
+    },
+    "shareMessages": {
+      "default": "내 숏폼 중독 레벨은 Lv.{level} {typeName} 📱 나 중독됐다 ㅋㅋ 너는 몇 레벨이야? 같이 망해보자",
+      "kakao": "내 숏폼 중독 레벨은 Lv.{level} {typeName} 📱 나 중독됐다 ㅋㅋ 너는 몇 레벨이야? 같이 망해보자",
+      "wechat": "내 숏폼 중독 레벨은 Lv.{level} {typeName} 📱 나 중독됐다 ㅋㅋ 너는 몇 레벨이야? 같이 망해보자",
+      "whatsapp": "내 숏폼 중독 레벨은 Lv.{level} {typeName} 📱 나 중독됐다 ㅋㅋ 너는 몇 레벨이야? 같이 망해보자",
+      "telegram": "내 숏폼 중독 레벨은 Lv.{level} {typeName} 📱 나 중독됐다 ㅋㅋ 너는 몇 레벨이야? 같이 망해보자",
+      "line": "내 숏폼 중독 레벨은 Lv.{level} {typeName} 📱 나 중독됐다 ㅋㅋ 너는 몇 레벨이야? 같이 망해보자",
+      "startDefault": "숏폼 중독 유형 진단 📱 내 중독 레벨 확인하기",
+      "startKakao": "숏폼 중독 유형 진단 📱 내 중독 레벨 확인하기",
+      "startWechat": "숏폼 중독 유형 진단 📱 내 중독 레벨 확인하기",
+      "startWhatsapp": "숏폼 중독 유형 진단 📱 내 중독 레벨 확인하기",
+      "startTelegram": "숏폼 중독 유형 진단 📱 내 중독 레벨 확인하기",
+      "startLine": "숏폼 중독 유형 진단 📱 내 중독 레벨 확인하기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "왜 나는 연애만 하면 이렇게 힘들까?",

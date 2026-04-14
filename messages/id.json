@@ -1297,6 +1297,64 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3ShortformAddictionTypeTest": {
+    "startMessage": {
+      "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",
+      "line2": "“Cuma satu Reels. Satu Shorts. Satu TikTok.”",
+      "line3": "Satu-satunya itu numpuk — tiba-tiba jam 3 pagi.",
+      "line4": "Dari pola konsumsi konten pendekmu, kami jelaskan level kecanduanmu dan saran jujur ala resep.",
+      "line5": "Bisa bikin ketawa karena kebangetan benarnya, atau sedikit merinding. Ayo mulai.",
+      "line6": "Cek level kecanduan konten pendekku 📱 Mulai tes"
+    },
+    "ui": {
+      "startTest": "Mulai tes",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lain",
+      "goToTest": "Ke tes",
+      "adsenseTitle": "Area AdSense (tes tipe kecanduan konten pendek)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "addictionLevel": "Level kecanduan",
+      "symptoms": "Gejala utama",
+      "prescription": "Saran singkat",
+      "goodMatch": "Pasangan cocok",
+      "badMatch": "Mudah saling menarik ke bawah"
+    },
+    "shareMessages": {
+      "default": "Level konten pendekku Lv.{level} {typeName} 📱 Udah babak belur — kamu level berapa? Scroll bareng yuk",
+      "kakao": "Level konten pendekku Lv.{level} {typeName} 📱 Udah babak belur — kamu level berapa? Scroll bareng yuk",
+      "wechat": "Level konten pendekku Lv.{level} {typeName} 📱 Udah babak belur — kamu level berapa? Scroll bareng yuk",
+      "whatsapp": "Level konten pendekku Lv.{level} {typeName} 📱 Udah babak belur — kamu level berapa? Scroll bareng yuk",
+      "telegram": "Level konten pendekku Lv.{level} {typeName} 📱 Udah babak belur — kamu level berapa? Scroll bareng yuk",
+      "line": "Level konten pendekku Lv.{level} {typeName} 📱 Udah babak belur — kamu level berapa? Scroll bareng yuk",
+      "startDefault": "Tes tipe kecanduan konten pendek 📱 Cek levelku",
+      "startKakao": "Tes tipe kecanduan konten pendek 📱 Cek levelku",
+      "startWechat": "Tes tipe kecanduan konten pendek 📱 Cek levelku",
+      "startWhatsapp": "Tes tipe kecanduan konten pendek 📱 Cek levelku",
+      "startTelegram": "Tes tipe kecanduan konten pendek 📱 Cek levelku",
+      "startLine": "Tes tipe kecanduan konten pendek 📱 Cek levelku"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia saat ini.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3AttachmentLoveTest": {
     "startMessage": {
       "line1": "Kenapa pacaran rasanya berat sekali?",
