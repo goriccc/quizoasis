@@ -66,6 +66,10 @@ import {
   phase3SnsAlgorithmTypeResults,
 } from '@/lib/phase3SnsAlgorithmTypeData';
 import {
+  phase3OotdStyleDiagnosisQuestions,
+  phase3OotdStyleDiagnosisResults,
+} from '@/lib/phase3OotdStyleDiagnosisData';
+import {
   phase3YoutubeAlgorithmKnowsQuestions,
   phase3YoutubeAlgorithmKnowsResults,
 } from '@/lib/phase3YoutubeAlgorithmKnowsData';
@@ -293,6 +297,10 @@ const Phase3WhichAiAreYouTestClient = dynamic(
 );
 const Phase3SnsAlgorithmTypeTestClient = dynamic(
   () => import('@/components/Phase3SnsAlgorithmTypeTestClient'),
+  { ssr: false }
+);
+const Phase3OotdStyleDiagnosisTestClient = dynamic(
+  () => import('@/components/Phase3OotdStyleDiagnosisTestClient'),
   { ssr: false }
 );
 const Phase3YoutubeAlgorithmKnowsTestClient = dynamic(
@@ -852,6 +860,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['社群', '趨勢', '數位', '性格'],
         vi: ['SNS', 'Xu hướng', 'Số', 'Tính cách'],
         id: ['SNS', 'Tren', 'Digital', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-ootd-style-diagnosis') {
+    test = {
+      slug: 'phase3-ootd-style-diagnosis',
+      title: {
+        ko: '오늘 뭐 입지? OOTD 스타일 진단',
+        en: 'What Should I Wear Today? OOTD Style Quiz',
+        ja: '今日なに着る？OOTDスタイル診断',
+        'zh-CN': '今天穿什么？OOTD 风格诊断',
+        'zh-TW': '今天穿什麼？OOTD 風格診斷',
+        vi: 'Hôm nay mặc gì? Trắc nghiệm phong cách OOTD',
+        id: 'Mau pakai apa hari ini? Tes gaya OOTD',
+      },
+      description: {
+        ko: '12문항 이미지 2지선다로 보는 패션 정체성 스펙트럼 6유형. #패션 #OOTD #스타일',
+        en: '12 image A/B questions — 6 fashion identity types. #Fashion #OOTD #Style',
+        ja: '画像12問の2択で見るファッションアイデンティティ6タイプ。#ファッション #OOTD #スタイル',
+        'zh-CN': '12 道图片二选一，六种时尚身份光谱。#时尚 #OOTD #穿搭',
+        'zh-TW': '12 題圖片二選一，六種時尚身份光譜。#時尚 #OOTD #穿搭',
+        vi: '12 câu chọn ảnh A/B — 6 kiểu bản sắc thời trang. #Thời trang #OOTD #Phong cách',
+        id: '12 pertanyaan gambar A/B — 6 spektrum identitas fashion. #Fashion #OOTD #Gaya',
+      },
+      thumbnail: 'p3_test_ootd_style_diagnosis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['패션', 'OOTD', '스타일'],
+        en: ['Fashion', 'OOTD', 'Style'],
+        ja: ['ファッション', 'OOTD', 'スタイル'],
+        'zh-CN': ['时尚', 'OOTD', '风格'],
+        'zh-TW': ['時尚', 'OOTD', '風格'],
+        vi: ['Thời trang', 'OOTD', 'Phong cách'],
+        id: ['Fashion', 'OOTD', 'Gaya'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3376,6 +3421,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SnsAlgorithmTypeQuestions}
           results={phase3SnsAlgorithmTypeResults}
           questionCount={phase3SnsAlgorithmTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-ootd-style-diagnosis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-ootd-style-diagnosis',
+      title: {
+        ko: '오늘 뭐 입지? OOTD 스타일 진단',
+        en: 'What Should I Wear Today? OOTD Style Quiz',
+        ja: '今日なに着る？OOTDスタイル診断',
+        'zh-CN': '今天穿什么？OOTD 风格诊断',
+        'zh-TW': '今天穿什麼？OOTD 風格診斷',
+        vi: 'Hôm nay mặc gì? Trắc nghiệm phong cách OOTD',
+        id: 'Mau pakai apa hari ini? Tes gaya OOTD',
+      },
+      description: {
+        ko: '12문항 이미지 2지선다로 보는 패션 정체성 스펙트럼 6유형. #패션 #OOTD #스타일',
+        en: '12 image A/B questions — 6 fashion identity types. #Fashion #OOTD #Style',
+        ja: '画像12問の2択で見るファッションアイデンティティ6タイプ。#ファッション #OOTD #スタイル',
+        'zh-CN': '12 道图片二选一，六种时尚身份光谱。#时尚 #OOTD #穿搭',
+        'zh-TW': '12 題圖片二選一，六種時尚身份光譜。#時尚 #OOTD #穿搭',
+        vi: '12 câu chọn ảnh A/B — 6 kiểu bản sắc thời trang. #Thời trang #OOTD #Phong cách',
+        id: '12 pertanyaan gambar A/B — 6 spektrum identitas fashion. #Fashion #OOTD #Gaya',
+      },
+      thumbnail: 'p3_test_ootd_style_diagnosis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['패션', 'OOTD', '스타일'],
+        en: ['Fashion', 'OOTD', 'Style'],
+        ja: ['ファッション', 'OOTD', 'スタイル'],
+        'zh-CN': ['时尚', 'OOTD', '风格'],
+        'zh-TW': ['時尚', 'OOTD', '風格'],
+        vi: ['Thời trang', 'OOTD', 'Phong cách'],
+        id: ['Fashion', 'OOTD', 'Gaya'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3OotdStyleDiagnosisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3OotdStyleDiagnosisQuestions}
+          results={phase3OotdStyleDiagnosisResults}
+          questionCount={phase3OotdStyleDiagnosisQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

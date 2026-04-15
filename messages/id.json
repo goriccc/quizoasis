@@ -1684,6 +1684,59 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3OotdStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "Untukmu yang di depan lemari 30 menit lalu tetap pakai outfit yang sama.",
+      "line2": "Memilih baju setiap hari bukan sekadar pakaian—ini tentang bagaimana kamu ingin mengekspresikan diri hari ini dan penampilan apa yang ingin kamu tunjukkan.",
+      "line3": "Pilih gambar yang paling menarik untuk melihat identitas fashionmu—minimalis, street, romantis, dan lainnya.",
+      "line4": "Selain tipe, kamu juga dapat arahan outfit yang bisa langsung dicoba hari ini.",
+      "line5": "Cek identitas fashionmu 👗 Mulai kuis gaya OOTD"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Mau pakai apa hari ini? Kuis gaya OOTD)",
+      "goToTest": "Ke kuis",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Kuis serupa",
+      "fashionIdentity": "Identitas fashion",
+      "signatureItems": "Item signature",
+      "colorPalette": "Palet warna",
+      "ootdDirection": "Arah OOTD hari ini",
+      "goodMatch": "Cocok bergaya",
+      "badMatch": "Bentrok gaya",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Identitas fashionku {name}! 👗 Ini banget haha—kamu tipe apa? Yuk ikut kuis!",
+      "kakao": "Identitas fashionku {name}! 👗 Ini banget haha—kamu tipe apa? Yuk ikut kuis!",
+      "wechat": "Identitas fashionku {name}! 👗 Ini banget haha—kamu tipe apa? Yuk ikut kuis!",
+      "whatsapp": "Identitas fashionku {name}! 👗 Ini banget haha—kamu tipe apa? Yuk ikut kuis!",
+      "telegram": "Identitas fashionku {name}! 👗 Ini banget haha—kamu tipe apa? Yuk ikut kuis!",
+      "line": "Identitas fashionku {name}! 👗 Ini banget haha—kamu tipe apa? Yuk ikut kuis!",
+      "startDefault": "Mau pakai apa hari ini? Kuis gaya OOTD 👗 12 pilihan gambar",
+      "startKakao": "Mau pakai apa hari ini? Kuis gaya OOTD 👗 12 pilihan gambar",
+      "startWechat": "Mau pakai apa hari ini? Kuis gaya OOTD 👗 12 pilihan gambar",
+      "startWhatsapp": "Mau pakai apa hari ini? Kuis gaya OOTD 👗 12 pilihan gambar",
+      "startTelegram": "Mau pakai apa hari ini? Kuis gaya OOTD 👗 12 pilihan gambar",
+      "startLine": "Mau pakai apa hari ini? Kuis gaya OOTD 👗 12 pilihan gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Perangkat ini tidak mendukung berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "KakaoTalk sedang menginisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

@@ -1685,6 +1685,59 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3OotdStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "クローゼットの前で30分悩んで、結局いつもの服を着てしまうあなたへ。",
+      "line2": "毎日何を着るか悩むのは、単なる服選びではありません。今日の自分をどう見せたいか、世界にどんな顔を見せたいかの話です。",
+      "line3": "直感で惹かれる画像を選ぶと、あなたのファッションアイデンティティが分かります。ミニマル、ストリート、ロマンティック…どれ？",
+      "line4": "タイプとともに、今日から試せるコーディネートの方向性もお届けします。",
+      "line5": "ファッションアイデンティティをチェック 👗 OOTDスタイル診断を始める"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（今日なに着る？OOTDスタイル診断）",
+      "goToTest": "診断へ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他の診断",
+      "fashionIdentity": "ファッションアイデンティティ",
+      "signatureItems": "シグネチャーアイテム",
+      "colorPalette": "カラーパレット",
+      "ootdDirection": "今日のOOTDの方向性",
+      "goodMatch": "相性の良いスタイル",
+      "badMatch": "ぶつかりやすいスタイル",
+      "shareResult": "結果を共有"
+    },
+    "shareMessages": {
+      "default": "私のファッションタイプは {name}！👗 わたしこれだったｗ あなたは？一緒にやろ！",
+      "kakao": "私のファッションタイプは {name}！👗 わたしこれだったｗ あなたは？一緒にやろ！",
+      "wechat": "私のファッションタイプは {name}！👗 わたしこれだったｗ あなたは？一緒にやろ！",
+      "whatsapp": "私のファッションタイプは {name}！👗 わたしこれだったｗ あなたは？一緒にやろ！",
+      "telegram": "私のファッションタイプは {name}！👗 わたしこれだったｗ あなたは？一緒にやろ！",
+      "line": "私のファッションタイプは {name}！👗 わたしこれだったｗ あなたは？一緒にやろ！",
+      "startDefault": "今日なに着る？OOTDスタイル診断 👗 画像12問",
+      "startKakao": "今日なに着る？OOTDスタイル診断 👗 画像12問",
+      "startWechat": "今日なに着る？OOTDスタイル診断 👗 画像12問",
+      "startWhatsapp": "今日なに着る？OOTDスタイル診断 👗 画像12問",
+      "startTelegram": "今日なに着る？OOTDスタイル診断 👗 画像12問",
+      "startLine": "今日なに着る？OOTDスタイル診断 👗 画像12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkの共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似診断おすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気の診断トップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",

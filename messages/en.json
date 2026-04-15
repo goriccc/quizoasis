@@ -1725,6 +1725,59 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3OotdStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "For anyone who stares at the closet for 30 minutes… then wears the same old thing.",
+      "line2": "Choosing what to wear every day is not just about clothes—it is how you want to express yourself today and what face you want to show the world.",
+      "line3": "Pick the images you are drawn to and discover your fashion identity—minimalist, street, romantic, and more.",
+      "line4": "You will get your style type plus an outfit direction you can wear today.",
+      "line5": "Discover your fashion identity 👗 Start the OOTD style quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (What Should I Wear Today? OOTD Style Quiz)",
+      "goToTest": "Go to quiz",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar quizzes",
+      "fashionIdentity": "Fashion identity",
+      "signatureItems": "Signature items",
+      "colorPalette": "Color palette",
+      "ootdDirection": "Today’s OOTD direction",
+      "goodMatch": "Style bestie match",
+      "badMatch": "Style clash",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My fashion identity is {name}! 👗 That is so me lol—what is your style? Take the quiz!",
+      "kakao": "My fashion identity is {name}! 👗 That is so me lol—what is your style? Take the quiz!",
+      "wechat": "My fashion identity is {name}! 👗 That is so me lol—what is your style? Take the quiz!",
+      "whatsapp": "My fashion identity is {name}! 👗 That is so me lol—what is your style? Take the quiz!",
+      "telegram": "My fashion identity is {name}! 👗 That is so me lol—what is your style? Take the quiz!",
+      "line": "My fashion identity is {name}! 👗 That is so me lol—what is your style? Take the quiz!",
+      "startDefault": "What should I wear today? OOTD style quiz 👗 12 image choices",
+      "startKakao": "What should I wear today? OOTD style quiz 👗 12 image choices",
+      "startWechat": "What should I wear today? OOTD style quiz 👗 12 image choices",
+      "startWhatsapp": "What should I wear today? OOTD style quiz 👗 12 image choices",
+      "startTelegram": "What should I wear today? OOTD style quiz 👗 12 image choices",
+      "startLine": "What should I wear today? OOTD style quiz 👗 12 image choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar quizzes",
+      "popularTestsTop5": "🔥 Top 5 popular quizzes"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",

@@ -1684,6 +1684,59 @@
       "popularTestsTop5": "🔥 Top 5 bài test hot"
     }
   },
+  "phase3OotdStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "Dành cho bạn: đứng trước tủ 30 phút rồi vẫn mặc đồ cũ.",
+      "line2": "Mỗi ngày chọn đồ không chỉ là chọn quần áo—đó là cách bạn muốn thể hiện mình hôm nay và muốn thế giới thấy bạn ra sao.",
+      "line3": "Chọn hình bạn thấy hút nhất để xem bản sắc thời trang: tối giản, street, lãng mạn…",
+      "line4": "Bạn sẽ nhận được kiểu của mình và hướng outfit có thể thử ngay hôm nay.",
+      "line5": "Khám phá bản sắc thời trang 👗 Bắt đầu quiz OOTD"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Hôm nay mặc gì? Quiz phong cách OOTD)",
+      "goToTest": "Vào quiz",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Quiz tương tự",
+      "fashionIdentity": "Bản sắc thời trang",
+      "signatureItems": "Món signature",
+      "colorPalette": "Bảng màu",
+      "ootdDirection": "Hướng OOTD hôm nay",
+      "goodMatch": "Hợp gu phong cách",
+      "badMatch": "Dễ clash phong cách",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Bản sắc thời trang của mình là {name}! 👗 Đúng gu luôn haha—bạn thuộc kiểu nào? Làm quiz đi!",
+      "kakao": "Bản sắc thời trang của mình là {name}! 👗 Đúng gu luôn haha—bạn thuộc kiểu nào? Làm quiz đi!",
+      "wechat": "Bản sắc thời trang của mình là {name}! 👗 Đúng gu luôn haha—bạn thuộc kiểu nào? Làm quiz đi!",
+      "whatsapp": "Bản sắc thời trang của mình là {name}! 👗 Đúng gu luôn haha—bạn thuộc kiểu nào? Làm quiz đi!",
+      "telegram": "Bản sắc thời trang của mình là {name}! 👗 Đúng gu luôn haha—bạn thuộc kiểu nào? Làm quiz đi!",
+      "line": "Bản sắc thời trang của mình là {name}! 👗 Đúng gu luôn haha—bạn thuộc kiểu nào? Làm quiz đi!",
+      "startDefault": "Hôm nay mặc gì? Quiz OOTD 👗 12 câu chọn ảnh",
+      "startKakao": "Hôm nay mặc gì? Quiz OOTD 👗 12 câu chọn ảnh",
+      "startWechat": "Hôm nay mặc gì? Quiz OOTD 👗 12 câu chọn ảnh",
+      "startWhatsapp": "Hôm nay mặc gì? Quiz OOTD 👗 12 câu chọn ảnh",
+      "startTelegram": "Hôm nay mặc gì? Quiz OOTD 👗 12 câu chọn ảnh",
+      "startLine": "Hôm nay mặc gì? Quiz OOTD 👗 12 câu chọn ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi tạo. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

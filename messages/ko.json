@@ -946,6 +946,59 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3OotdStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "옷장 앞에서 30분 고민했는데 결국 늘 입던 거 입는 당신에게.",
+      "line2": "사실 매일 뭘 입을지 고민하는 것은 단순히 옷 선택이 아닙니다. 오늘의 나를 어떻게 표현하고 싶은지, 세상에 어떤 모습으로 나가고 싶은지의 문제입니다.",
+      "line3": "직관적으로 끌리는 이미지를 선택하면 나의 패션 정체성이 나옵니다. 미니멀리스트인지, 스트릿 감성인지, 로맨틱한 스타일인지.",
+      "line4": "스타일 유형과 함께 오늘 당장 입을 수 있는 코디 방향도 알려드립니다.",
+      "line5": "내 패션 정체성 확인하기 👗 OOTD 스타일 진단 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (오늘 뭐 입지? OOTD 스타일 진단)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "fashionIdentity": "패션 정체성",
+      "signatureItems": "시그니처 아이템",
+      "colorPalette": "컬러 팔레트",
+      "ootdDirection": "오늘의 OOTD 방향",
+      "goodMatch": "패션 찰떡 궁합",
+      "badMatch": "스타일 충돌",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 패션 정체성은 {name}! 👗 나는 이 스타일이었구나 ㅋㅋ 너는 어떤 스타일이야? 같이 해봐",
+      "kakao": "내 패션 정체성은 {name}! 👗 나는 이 스타일이었구나 ㅋㅋ 너는 어떤 스타일이야? 같이 해봐",
+      "wechat": "내 패션 정체성은 {name}! 👗 나는 이 스타일이었구나 ㅋㅋ 너는 어떤 스타일이야? 같이 해봐",
+      "whatsapp": "내 패션 정체성은 {name}! 👗 나는 이 스타일이었구나 ㅋㅋ 너는 어떤 스타일이야? 같이 해봐",
+      "telegram": "내 패션 정체성은 {name}! 👗 나는 이 스타일이었구나 ㅋㅋ 너는 어떤 스타일이야? 같이 해봐",
+      "line": "내 패션 정체성은 {name}! 👗 나는 이 스타일이었구나 ㅋㅋ 너는 어떤 스타일이야? 같이 해봐",
+      "startDefault": "오늘 뭐 입지? OOTD 스타일 진단 👗 12문항 이미지 선택",
+      "startKakao": "오늘 뭐 입지? OOTD 스타일 진단 👗 12문항 이미지 선택",
+      "startWechat": "오늘 뭐 입지? OOTD 스타일 진단 👗 12문항 이미지 선택",
+      "startWhatsapp": "오늘 뭐 입지? OOTD 스타일 진단 👗 12문항 이미지 선택",
+      "startTelegram": "오늘 뭐 입지? OOTD 스타일 진단 👗 12문항 이미지 선택",
+      "startLine": "오늘 뭐 입지? OOTD 스타일 진단 👗 12문항 이미지 선택"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "잠깐만 보려고 켰는데 2시간이 지나있던 경험, 있으시죠?",

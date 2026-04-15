@@ -1684,6 +1684,59 @@
       "popularTestsTop5": "🔥 近期热门测验 Top5"
     }
   },
+  "phase3OotdStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "在衣柜前纠结半小时，最后还是穿回老样子的你。",
+      "line2": "每天纠结穿什么，不只是选衣服，更是今天想如何表达自己、想以什么面貌出门。",
+      "line3": "凭直觉选择更吸引你的图片，就能看见你的时尚身份：极简、街头、浪漫……",
+      "line4": "除了类型，还会给你今天就能尝试的穿搭方向。",
+      "line5": "确认我的时尚身份 👗 开始 OOTD 风格测验"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告位（今天穿什么？OOTD 风格测验）",
+      "goToTest": "开始测验",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测验",
+      "fashionIdentity": "时尚身份",
+      "signatureItems": "标志性单品",
+      "colorPalette": "配色盘",
+      "ootdDirection": "今日穿搭方向",
+      "goodMatch": "风格合拍",
+      "badMatch": "风格冲突",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的时尚身份是 {name}！👗 太准了哈哈，你是什么风格？一起来测！",
+      "kakao": "我的时尚身份是 {name}！👗 太准了哈哈，你是什么风格？一起来测！",
+      "wechat": "我的时尚身份是 {name}！👗 太准了哈哈，你是什么风格？一起来测！",
+      "whatsapp": "我的时尚身份是 {name}！👗 太准了哈哈，你是什么风格？一起来测！",
+      "telegram": "我的时尚身份是 {name}！👗 太准了哈哈，你是什么风格？一起来测！",
+      "line": "我的时尚身份是 {name}！👗 太准了哈哈，你是什么风格？一起来测！",
+      "startDefault": "今天穿什么？OOTD 风格测验 👗 12 道图片题",
+      "startKakao": "今天穿什么？OOTD 风格测验 👗 12 道图片题",
+      "startWechat": "今天穿什么？OOTD 风格测验 👗 12 道图片题",
+      "startWhatsapp": "今天穿什么？OOTD 风格测验 👗 12 道图片题",
+      "startTelegram": "今天穿什么？OOTD 风格测验 👗 12 道图片题",
+      "startLine": "今天穿什么？OOTD 风格测验 👗 12 道图片题"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "当前设备无法使用分享功能。",
+      "wechatCopy": "链接已复制！在微信中粘贴即可分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测验推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测验 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "说好只看一分钟，结果两小时没了——你也经历过吧？",
