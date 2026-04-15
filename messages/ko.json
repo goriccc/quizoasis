@@ -946,6 +946,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3SkincareRoutineRecommendationTest": {
+    "startMessage": {
+      "line1": "비싼 제품이 내 피부에 안 맞는 이유, 혹시 피부타입을 모르고 쓰고 있는 건 아닐까요?",
+      "line2": "같은 제품도 피부타입에 따라 효과가 천지차이입니다. 나에게 딱 맞는 성분과 루틴을 찾으면 비싼 제품 없이도 피부가 달라집니다.",
+      "line3": "피부 고민과 생활 습관으로 나의 피부타입을 정밀 분석하고, 오늘부터 바로 시작할 수 있는 맞춤 스킨케어 루틴과 핵심 성분을 추천해 드립니다.",
+      "line4": "정직하게 답할수록 내 피부에 맞는 루틴이 더 정확해집니다.",
+      "line5": "준비되셨다면 아래에서 시작해 주세요.",
+      "line6": "내 피부타입 분석하기 🧴 맞춤 루틴 찾기 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (내 피부타입 맞춤 스킨케어 루틴)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "diagnosisLabel": "피부타입 진단",
+      "morningRoutine": "☀️ 아침 루틴",
+      "eveningRoutine": "🌙 저녁 루틴",
+      "keyIngredients": "✨ 핵심 성분 키워드",
+      "avoidIngredients": "🚫 피해야 할 성분",
+      "weeklySpecial": "📅 주간 스페셜 케어",
+      "routineEssence": "📋 루틴 핵심",
+      "addTodayIngredient": "💊 오늘부터 추가할 성분",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 피부타입은 {type}! 🧴 맞춤 루틴이랑 핵심 성분까지 다 알려줌 → 저장해뒀다가 오늘부터 시작해야겠다 너는 어떤 피부타입이야?",
+      "kakao": "내 피부타입은 {type}! 🧴 맞춤 루틴이랑 핵심 성분까지 다 알려줌 → 저장해뒀다가 오늘부터 시작해야겠다 너는 어떤 피부타입이야?",
+      "wechat": "내 피부타입은 {type}! 🧴 맞춤 루틴이랑 핵심 성분까지 다 알려줌 → 저장해뒀다가 오늘부터 시작해야겠다 너는 어떤 피부타입이야?",
+      "whatsapp": "내 피부타입은 {type}! 🧴 맞춤 루틴이랑 핵심 성분까지 다 알려줌 → 저장해뒀다가 오늘부터 시작해야겠다 너는 어떤 피부타입이야?",
+      "telegram": "내 피부타입은 {type}! 🧴 맞춤 루틴이랑 핵심 성분까지 다 알려줌 → 저장해뒀다가 오늘부터 시작해야겠다 너는 어떤 피부타입이야?",
+      "line": "내 피부타입은 {type}! 🧴 맞춤 루틴이랑 핵심 성분까지 다 알려줌 → 저장해뒀다가 오늘부터 시작해야겠다 너는 어떤 피부타입이야?",
+      "startDefault": "내 피부타입 맞춤 스킨케어 루틴 🧴 12문항",
+      "startKakao": "내 피부타입 맞춤 스킨케어 루틴 🧴 12문항",
+      "startWechat": "내 피부타입 맞춤 스킨케어 루틴 🧴 12문항",
+      "startWhatsapp": "내 피부타입 맞춤 스킨케어 루틴 🧴 12문항",
+      "startTelegram": "내 피부타입 맞춤 스킨케어 루틴 🧴 12문항",
+      "startLine": "내 피부타입 맞춤 스킨케어 루틴 🧴 12문항"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3OotdStyleDiagnosisTest": {
     "startMessage": {
       "line1": "옷장 앞에서 30분 고민했는데 결국 늘 입던 거 입는 당신에게.",

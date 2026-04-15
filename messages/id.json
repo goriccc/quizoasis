@@ -1684,6 +1684,62 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3SkincareRoutineRecommendationTest": {
+    "startMessage": {
+      "line1": "Produk mahal tetap tidak cocok—mungkin kamu memakainya tanpa benar-benar tahu tipe kulitmu?",
+      "line2": "Produk yang sama bisa berkhasiat sangat berbeda tiap tipe kulit. Temukan bahan dan rutinitas yang pas—kulit bisa berubah tanpa harus mahal.",
+      "line3": "Kami menganalisis tipe kulit dari keluhan dan kebiasaanmu, lalu merekomendasikan rutinitas skincare dan bahan inti yang bisa kamu mulai hari ini.",
+      "line4": "Semakin jujur jawabanmu, semakin akurat rekomendasi rutinitasnya.",
+      "line5": "Jika sudah siap, mulai di bawah.",
+      "line6": "Analisis tipe kulitku 🧴 Temukan rutinitas yang cocok"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Rutinitas skincare sesuai tipe kulit)",
+      "goToTest": "Ke kuis",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Kuis serupa",
+      "diagnosisLabel": "Diagnosis tipe kulit",
+      "morningRoutine": "☀️ Rutinitas pagi",
+      "eveningRoutine": "🌙 Rutinitas malam",
+      "keyIngredients": "✨ Kata kunci bahan inti",
+      "avoidIngredients": "🚫 Bahan yang sebaiknya dihindari",
+      "weeklySpecial": "📅 Perawatan mingguan khusus",
+      "routineEssence": "📋 Inti rutinitas",
+      "addTodayIngredient": "💊 Bahan yang bisa ditambah mulai hari ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe kulitku {type}! 🧴 Ada rutinitas dan bahan intinya—simpan dan mulai hari ini. Kamu tipe kulit apa?",
+      "kakao": "Tipe kulitku {type}! 🧴 Ada rutinitas dan bahan intinya—simpan dan mulai hari ini. Kamu tipe kulit apa?",
+      "wechat": "Tipe kulitku {type}! 🧴 Ada rutinitas dan bahan intinya—simpan dan mulai hari ini. Kamu tipe kulit apa?",
+      "whatsapp": "Tipe kulitku {type}! 🧴 Ada rutinitas dan bahan intinya—simpan dan mulai hari ini. Kamu tipe kulit apa?",
+      "telegram": "Tipe kulitku {type}! 🧴 Ada rutinitas dan bahan intinya—simpan dan mulai hari ini. Kamu tipe kulit apa?",
+      "line": "Tipe kulitku {type}! 🧴 Ada rutinitas dan bahan intinya—simpan dan mulai hari ini. Kamu tipe kulit apa?",
+      "startDefault": "Rutinitas skincare sesuai tipe kulit 🧴 12 pertanyaan",
+      "startKakao": "Rutinitas skincare sesuai tipe kulit 🧴 12 pertanyaan",
+      "startWechat": "Rutinitas skincare sesuai tipe kulit 🧴 12 pertanyaan",
+      "startWhatsapp": "Rutinitas skincare sesuai tipe kulit 🧴 12 pertanyaan",
+      "startTelegram": "Rutinitas skincare sesuai tipe kulit 🧴 12 pertanyaan",
+      "startLine": "Rutinitas skincare sesuai tipe kulit 🧴 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "KakaoTalk sedang menginisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3OotdStyleDiagnosisTest": {
     "startMessage": {
       "line1": "Untukmu yang di depan lemari 30 menit lalu tetap pakai outfit yang sama.",

@@ -1691,6 +1691,62 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3SkincareRoutineRecommendationTest": {
+    "startMessage": {
+      "line1": "貴價產品也不見效，是不是還不清楚自己的膚質就在用？",
+      "line2": "同一款產品在不同膚質上效果天差地遠。找到適合自己的成分與流程，不必砸錢也能讓肌膚變好。",
+      "line3": "結合你的困擾與生活習慣，精準分析膚質，並推薦今天就能開始的客製保養流程與核心成分。",
+      "line4": "回答越誠實，推薦的流程就越貼合你。",
+      "line5": "準備好了就從下方開始。",
+      "line6": "分析我的膚質 🧴 找到專屬保養流程"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（依膚質客製的保養流程）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "diagnosisLabel": "膚質診斷",
+      "morningRoutine": "☀️ 晨間流程",
+      "eveningRoutine": "🌙 晚間流程",
+      "keyIngredients": "✨ 核心成分關鍵字",
+      "avoidIngredients": "🚫 需要避開的成分",
+      "weeklySpecial": "📅 每週特別保養",
+      "routineEssence": "📋 流程重點",
+      "addTodayIngredient": "💊 今天可以加入的成分",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的膚質是 {type}！🧴 連流程和核心成分都列好了→先存起來今天就開始。你是什麼膚質？",
+      "kakao": "我的膚質是 {type}！🧴 連流程和核心成分都列好了→先存起來今天就開始。你是什麼膚質？",
+      "wechat": "我的膚質是 {type}！🧴 連流程和核心成分都列好了→先存起來今天就開始。你是什麼膚質？",
+      "whatsapp": "我的膚質是 {type}！🧴 連流程和核心成分都列好了→先存起來今天就開始。你是什麼膚質？",
+      "telegram": "我的膚質是 {type}！🧴 連流程和核心成分都列好了→先存起來今天就開始。你是什麼膚質？",
+      "line": "我的膚質是 {type}！🧴 連流程和核心成分都列好了→先存起來今天就開始。你是什麼膚質？",
+      "startDefault": "依膚質客製的保養流程 🧴 12 題",
+      "startKakao": "依膚質客製的保養流程 🧴 12 題",
+      "startWechat": "依膚質客製的保養流程 🧴 12 題",
+      "startWhatsapp": "依膚質客製的保養流程 🧴 12 題",
+      "startTelegram": "依膚質客製的保養流程 🧴 12 題",
+      "startLine": "依膚質客製的保養流程 🧴 12 題"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3OotdStyleDiagnosisTest": {
     "startMessage": {
       "line1": "在衣櫃前糾結三十分鐘，最後還是穿回老樣子的你。",

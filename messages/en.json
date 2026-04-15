@@ -1725,6 +1725,62 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3SkincareRoutineRecommendationTest": {
+    "startMessage": {
+      "line1": "Still not seeing results from pricey products—or using them without really knowing your skin type?",
+      "line2": "The same product can work completely differently by skin type. Find the right ingredients and routine for you, and your skin can change even without splurging.",
+      "line3": "We analyze your skin type from your concerns and daily habits, then recommend a tailored skincare routine and key ingredients you can start today.",
+      "line4": "The more honest your answers, the more accurate your routine will be.",
+      "line5": "When you are ready, start below.",
+      "line6": "Analyze my skin type 🧴 Find my tailored routine"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (Tailored skincare routine for your skin type)",
+      "goToTest": "Go to quiz",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar quizzes",
+      "diagnosisLabel": "Skin type diagnosis",
+      "morningRoutine": "☀️ Morning routine",
+      "eveningRoutine": "🌙 Evening routine",
+      "keyIngredients": "✨ Key ingredient keywords",
+      "avoidIngredients": "🚫 Ingredients to avoid",
+      "weeklySpecial": "📅 Weekly special care",
+      "routineEssence": "📋 Routine takeaway",
+      "addTodayIngredient": "💊 Add this ingredient today",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My skin type is {type}! 🧴 It lists my routine and key ingredients—saving this to start today. What is your skin type?",
+      "kakao": "My skin type is {type}! 🧴 It lists my routine and key ingredients—saving this to start today. What is your skin type?",
+      "wechat": "My skin type is {type}! 🧴 It lists my routine and key ingredients—saving this to start today. What is your skin type?",
+      "whatsapp": "My skin type is {type}! 🧴 It lists my routine and key ingredients—saving this to start today. What is your skin type?",
+      "telegram": "My skin type is {type}! 🧴 It lists my routine and key ingredients—saving this to start today. What is your skin type?",
+      "line": "My skin type is {type}! 🧴 It lists my routine and key ingredients—saving this to start today. What is your skin type?",
+      "startDefault": "Tailored skincare routine for your skin type 🧴 12 questions",
+      "startKakao": "Tailored skincare routine for your skin type 🧴 12 questions",
+      "startWechat": "Tailored skincare routine for your skin type 🧴 12 questions",
+      "startWhatsapp": "Tailored skincare routine for your skin type 🧴 12 questions",
+      "startTelegram": "Tailored skincare routine for your skin type 🧴 12 questions",
+      "startLine": "Tailored skincare routine for your skin type 🧴 12 questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar quizzes",
+      "popularTestsTop5": "🔥 Top 5 popular quizzes"
+    }
+  },
   "phase3OotdStyleDiagnosisTest": {
     "startMessage": {
       "line1": "For anyone who stares at the closet for 30 minutes… then wears the same old thing.",

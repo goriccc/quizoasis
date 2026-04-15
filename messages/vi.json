@@ -1684,6 +1684,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test hot"
     }
   },
+  "phase3SkincareRoutineRecommendationTest": {
+    "startMessage": {
+      "line1": "Mỹ phẩm đắt mà vẫn không hợp—liệu bạn đang dùng mà chưa hiểu rõ loại da của mình?",
+      "line2": "Cùng một sản phẩm có thể cho hiệu quả khác hẳn tùy loại da. Khi tìm đúng thành phần và routine phù hợp, làn da vẫn thay đổi dù không tốn kém.",
+      "line3": "Chúng tôi phân tích loại da dựa trên nỗi lo và thói quen sinh hoạt, rồi gợi ý routine chăm da và các thành phần trọng điểm bạn có thể bắt đầu ngay hôm nay.",
+      "line4": "Trả lời càng trung thực, routine gợi ý càng sát với bạn.",
+      "line5": "Khi đã sẵn sàng, hãy bắt đầu bên dưới.",
+      "line6": "Phân tích loại da của tôi 🧴 Tìm routine chăm da phù hợp"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Routine chăm da theo loại da của bạn)",
+      "goToTest": "Vào quiz",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Quiz tương tự",
+      "diagnosisLabel": "Chẩn đoán loại da",
+      "morningRoutine": "☀️ Routine buổi sáng",
+      "eveningRoutine": "🌙 Routine buổi tối",
+      "keyIngredients": "✨ Từ khóa thành phần trọng điểm",
+      "avoidIngredients": "🚫 Thành phần nên tránh",
+      "weeklySpecial": "📅 Chăm sóc đặc biệt theo tuần",
+      "routineEssence": "📋 Ý chính của routine",
+      "addTodayIngredient": "💊 Thành phần nên thêm từ hôm nay",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Loại da của mình là {type}! 🧴 Có cả routine và thành phần chính—lưu lại để bắt đầu hôm nay. Bạn thuộc loại da nào?",
+      "kakao": "Loại da của mình là {type}! 🧴 Có cả routine và thành phần chính—lưu lại để bắt đầu hôm nay. Bạn thuộc loại da nào?",
+      "wechat": "Loại da của mình là {type}! 🧴 Có cả routine và thành phần chính—lưu lại để bắt đầu hôm nay. Bạn thuộc loại da nào?",
+      "whatsapp": "Loại da của mình là {type}! 🧴 Có cả routine và thành phần chính—lưu lại để bắt đầu hôm nay. Bạn thuộc loại da nào?",
+      "telegram": "Loại da của mình là {type}! 🧴 Có cả routine và thành phần chính—lưu lại để bắt đầu hôm nay. Bạn thuộc loại da nào?",
+      "line": "Loại da của mình là {type}! 🧴 Có cả routine và thành phần chính—lưu lại để bắt đầu hôm nay. Bạn thuộc loại da nào?",
+      "startDefault": "Routine chăm da theo loại da của bạn 🧴 12 câu",
+      "startKakao": "Routine chăm da theo loại da của bạn 🧴 12 câu",
+      "startWechat": "Routine chăm da theo loại da của bạn 🧴 12 câu",
+      "startWhatsapp": "Routine chăm da theo loại da của bạn 🧴 12 câu",
+      "startTelegram": "Routine chăm da theo loại da của bạn 🧴 12 câu",
+      "startLine": "Routine chăm da theo loại da của bạn 🧴 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot"
+    }
+  },
   "phase3OotdStyleDiagnosisTest": {
     "startMessage": {
       "line1": "Dành cho bạn: đứng trước tủ 30 phút rồi vẫn mặc đồ cũ.",

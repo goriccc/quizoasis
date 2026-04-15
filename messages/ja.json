@@ -1685,6 +1685,62 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3SkincareRoutineRecommendationTest": {
+    "startMessage": {
+      "line1": "高いのに合わないのは、肌タイプを知らずに使っているからかも？",
+      "line2": "同じ製品でも肌タイプで効き方は大違い。自分に合う成分とルーティンが分かれば、高価なものがなくても肌は変わります。",
+      "line3": "悩みと生活習慣から肌タイプを分析し、今日から始められるスキンケアルーティンと注目成分をおすすめします。",
+      "line4": "正直に答えるほど、あなたに合うルーティンは正確になります。",
+      "line5": "準備ができたら下から始めてください。",
+      "line6": "肌タイプを分析する 🧴 自分に合うルーティンを見つける"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（肌タイプ別・おすすめスキンケアルーティン）",
+      "goToTest": "診断へ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他の診断",
+      "diagnosisLabel": "肌タイプ診断",
+      "morningRoutine": "☀️ 朝のルーティン",
+      "eveningRoutine": "🌙 夜のルーティン",
+      "keyIngredients": "✨ 注目の成分キーワード",
+      "avoidIngredients": "🚫 避けたい成分",
+      "weeklySpecial": "📅 週間スペシャルケア",
+      "routineEssence": "📋 ルーティンの要点",
+      "addTodayIngredient": "💊 今日から足す成分",
+      "shareResult": "結果を共有"
+    },
+    "shareMessages": {
+      "default": "私の肌タイプは {type}！🧴 ルーティンと成分まで出た→保存して今日から始める。あなたは何タイプ？",
+      "kakao": "私の肌タイプは {type}！🧴 ルーティンと成分まで出た→保存して今日から始める。あなたは何タイプ？",
+      "wechat": "私の肌タイプは {type}！🧴 ルーティンと成分まで出た→保存して今日から始める。あなたは何タイプ？",
+      "whatsapp": "私の肌タイプは {type}！🧴 ルーティンと成分まで出た→保存して今日から始める。あなたは何タイプ？",
+      "telegram": "私の肌タイプは {type}！🧴 ルーティンと成分まで出た→保存して今日から始める。あなたは何タイプ？",
+      "line": "私の肌タイプは {type}！🧴 ルーティンと成分まで出た→保存して今日から始める。あなたは何タイプ？",
+      "startDefault": "肌タイプ別スキンケアルーティン 🧴 全12問",
+      "startKakao": "肌タイプ別スキンケアルーティン 🧴 全12問",
+      "startWechat": "肌タイプ別スキンケアルーティン 🧴 全12問",
+      "startWhatsapp": "肌タイプ別スキンケアルーティン 🧴 全12問",
+      "startTelegram": "肌タイプ別スキンケアルーティン 🧴 全12問",
+      "startLine": "肌タイプ別スキンケアルーティン 🧴 全12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkの共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase3OotdStyleDiagnosisTest": {
     "startMessage": {
       "line1": "クローゼットの前で30分悩んで、結局いつもの服を着てしまうあなたへ。",

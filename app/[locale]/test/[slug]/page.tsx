@@ -121,6 +121,10 @@ import {
   phase3LovePrescriptionQuestions,
   phase3LovePrescriptionResults,
 } from '@/lib/phase3LovePrescriptionData';
+import {
+  phase3SkincareRoutineRecommendationQuestions,
+  phase3SkincareRoutineRecommendationResults,
+} from '@/lib/phase3SkincareRoutineRecommendationData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -357,6 +361,10 @@ const Phase3SoloEscapePossibilityTestClient = dynamic(
 );
 const Phase3LovePrescriptionTestClient = dynamic(
   () => import('@/components/Phase3LovePrescriptionTestClient'),
+  { ssr: false }
+);
+const Phase3SkincareRoutineRecommendationTestClient = dynamic(
+  () => import('@/components/Phase3SkincareRoutineRecommendationTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1571,6 +1579,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛', '心理', '自我成長'],
         vi: ['Tình yêu', 'Tâm lý', 'Phát triển bản thân'],
         id: ['Cinta', 'Psikologi', 'Pengembangan diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-skincare-routine-recommendation') {
+    test = {
+      slug: 'phase3-skincare-routine-recommendation',
+      title: {
+        ko: '내 피부타입 맞춤 스킨케어 루틴',
+        en: 'Custom Skincare Routine for Your Skin Type',
+        ja: '肌タイプ別スキンケアルーティン',
+        'zh-CN': '根据肤质的定制护肤流程',
+        'zh-TW': '依膚質訂製的保養流程',
+        vi: 'Lịch skincare theo loại da của bạn',
+        id: 'Rutinitas skincare sesuai tipe kulit',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 피부타입별 맞춤 스킨케어 루틴과 핵심 성분 6유형. #피부 #뷰티',
+        en: '12 multiple-choice questions — 6 skin-type routines with key ingredients. #skin #beauty',
+        ja: '全12問4択で見る肌タイプ別スキンケアとキー成分6タイプ。#スキンケア #美容',
+        'zh-CN': '12 道四选一，六种肤质护肤流程与核心成分。#护肤 #美妆',
+        'zh-TW': '12 題四選一，六種膚質保養流程與核心成分。#保養 #美妝',
+        vi: '12 câu — 6 lịch skincare và thành phần chính theo loại da. #da #làm đẹp',
+        id: '12 pertanyaan — 6 rutinitas dan bahan kunci sesuai tipe kulit. #kulit #kecantikan',
+      },
+      thumbnail: 'p3_test_skincare_routine_recommendation.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['피부', '뷰티'],
+        en: ['Skin', 'Beauty'],
+        ja: ['肌', 'ビューティ'],
+        'zh-CN': ['护肤', '美妆'],
+        'zh-TW': ['保養', '美妝'],
+        vi: ['Da', 'Làm đẹp'],
+        id: ['Kulit', 'Kecantikan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4236,6 +4281,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LovePrescriptionQuestions}
           results={phase3LovePrescriptionResults}
           questionCount={phase3LovePrescriptionQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-skincare-routine-recommendation') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-skincare-routine-recommendation',
+      title: {
+        ko: '내 피부타입 맞춤 스킨케어 루틴',
+        en: 'Custom Skincare Routine for Your Skin Type',
+        ja: '肌タイプ別スキンケアルーティン',
+        'zh-CN': '根据肤质的定制护肤流程',
+        'zh-TW': '依膚質訂製的保養流程',
+        vi: 'Lịch skincare theo loại da của bạn',
+        id: 'Rutinitas skincare sesuai tipe kulit',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 피부타입별 맞춤 스킨케어 루틴과 핵심 성분 6유형. #피부 #뷰티',
+        en: '12 multiple-choice questions — 6 skin-type routines with key ingredients. #skin #beauty',
+        ja: '全12問4択で見る肌タイプ別スキンケアとキー成分6タイプ。#スキンケア #美容',
+        'zh-CN': '12 道四选一，六种肤质护肤流程与核心成分。#护肤 #美妆',
+        'zh-TW': '12 題四選一，六種膚質保養流程與核心成分。#保養 #美妝',
+        vi: '12 câu — 6 lịch skincare và thành phần chính theo loại da. #da #làm đẹp',
+        id: '12 pertanyaan — 6 rutinitas dan bahan kunci sesuai tipe kulit. #kulit #kecantikan',
+      },
+      thumbnail: 'p3_test_skincare_routine_recommendation.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['피부', '뷰티'],
+        en: ['Skin', 'Beauty'],
+        ja: ['肌', 'ビューティ'],
+        'zh-CN': ['护肤', '美妆'],
+        'zh-TW': ['保養', '美妝'],
+        vi: ['Da', 'Làm đẹp'],
+        id: ['Kulit', 'Kecantikan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SkincareRoutineRecommendationTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SkincareRoutineRecommendationQuestions}
+          results={phase3SkincareRoutineRecommendationResults}
+          questionCount={phase3SkincareRoutineRecommendationQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
