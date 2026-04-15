@@ -1738,6 +1738,60 @@
       "popularTestsTop5": "🔥 最近人気の診断トップ5"
     }
   },
+  "phase3PersonalityShoeRecommendationTest": {
+    "startMessage": {
+      "line1": "靴は嘘をつきません。",
+      "line2": "足元に何を履くかは単なる好みではありません。今日の気分、性格、世界との向き合い方がそこに表れます。",
+      "line3": "スニーカー派とヒール派では歩くスピードが違い、ローファー派とワークブーツ派では見る景色も違います。",
+      "line4": "ライフスタイルと性格から、あなたに似合う靴を見つけます。結果を見たら友だちに「あなたはこの靴！」と送ってみてください。",
+      "line5": "性格に合う靴を探す 👟 靴タイプ診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（性格に合う靴おすすめ）",
+      "goToTest": "診断へ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似た診断",
+      "recommendedShoeType": "おすすめの靴タイプ",
+      "modelKeywords": "代表モデルキーワード",
+      "personalityLink": "性格とのつながり",
+      "colorRec": "カラーおすすめ",
+      "outfitDirection": "コーデの方向性",
+      "goodMatch": "相性ぴったりのタイプ",
+      "badMatch": "ぶつかりやすいタイプ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の性格シューズは {name}！👟 本当に合ってる気がする。友だちに「あなたはこの靴！」って送ってみて",
+      "kakao": "私の性格シューズは {name}！👟 本当に合ってる気がする。友だちに「あなたはこの靴！」って送ってみて",
+      "wechat": "私の性格シューズは {name}！👟 本当に合ってる気がする。友だちに「あなたはこの靴！」って送ってみて",
+      "whatsapp": "私の性格シューズは {name}！👟 本当に合ってる気がする。友だちに「あなたはこの靴！」って送ってみて",
+      "telegram": "私の性格シューズは {name}！👟 本当に合ってる気がする。友だちに「あなたはこの靴！」って送ってみて",
+      "line": "私の性格シューズは {name}！👟 本当に合ってる気がする。友だちに「あなたはこの靴！」って送ってみて",
+      "startDefault": "性格に合う靴おすすめ 👟 画像12問・4択",
+      "startKakao": "性格に合う靴おすすめ 👟 画像12問・4択",
+      "startWechat": "性格に合う靴おすすめ 👟 画像12問・4択",
+      "startWhatsapp": "性格に合う靴おすすめ 👟 画像12問・4択",
+      "startTelegram": "性格に合う靴おすすめ 👟 画像12問・4択",
+      "startLine": "性格に合う靴おすすめ 👟 画像12問・4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkを初期化しています。少し待ってから再度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似診断おすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気の診断トップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",

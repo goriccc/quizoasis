@@ -1778,6 +1778,60 @@
       "popularTestsTop5": "🔥 Top 5 popular quizzes"
     }
   },
+  "phase3PersonalityShoeRecommendationTest": {
+    "startMessage": {
+      "line1": "Shoes do not lie.",
+      "line2": "What you wear on your feet is more than taste—it shows your mood, your personality, and how you move through the world.",
+      "line3": "Sneakers and heels move at different speeds; loafers and work boots see the world through different eyes.",
+      "line4": "We will match shoes to your lifestyle and personality. When you see your result, send a friend: “These are your shoes!”",
+      "line5": "Find your personality shoes 👟 Start the shoe type quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Shoes That Match Your Personality)",
+      "goToTest": "Go to quiz",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar quizzes",
+      "recommendedShoeType": "Recommended shoe type",
+      "modelKeywords": "Model keywords",
+      "personalityLink": "Personality link",
+      "colorRec": "Color picks",
+      "outfitDirection": "Outfit direction",
+      "goodMatch": "Shoe bestie match",
+      "badMatch": "Style clash",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My personality shoe is {name}! 👟 So accurate—text a friend: “These are your shoes!”",
+      "kakao": "My personality shoe is {name}! 👟 So accurate—text a friend: “These are your shoes!”",
+      "wechat": "My personality shoe is {name}! 👟 So accurate—text a friend: “These are your shoes!”",
+      "whatsapp": "My personality shoe is {name}! 👟 So accurate—text a friend: “These are your shoes!”",
+      "telegram": "My personality shoe is {name}! 👟 So accurate—text a friend: “These are your shoes!”",
+      "line": "My personality shoe is {name}! 👟 So accurate—text a friend: “These are your shoes!”",
+      "startDefault": "Shoes That Match Your Personality 👟 12 image questions, 4 choices each",
+      "startKakao": "Shoes That Match Your Personality 👟 12 image questions, 4 choices each",
+      "startWechat": "Shoes That Match Your Personality 👟 12 image questions, 4 choices each",
+      "startWhatsapp": "Shoes That Match Your Personality 👟 12 image questions, 4 choices each",
+      "startTelegram": "Shoes That Match Your Personality 👟 12 image questions, 4 choices each",
+      "startLine": "Shoes That Match Your Personality 👟 12 image questions, 4 choices each"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar quizzes",
+      "popularTestsTop5": "🔥 Top 5 popular quizzes"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",

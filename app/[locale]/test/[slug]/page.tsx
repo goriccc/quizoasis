@@ -70,6 +70,10 @@ import {
   phase3OotdStyleDiagnosisResults,
 } from '@/lib/phase3OotdStyleDiagnosisData';
 import {
+  phase3PersonalityShoeRecommendationQuestions,
+  phase3PersonalityShoeRecommendationResults,
+} from '@/lib/phase3PersonalityShoeRecommendationData';
+import {
   phase3YoutubeAlgorithmKnowsQuestions,
   phase3YoutubeAlgorithmKnowsResults,
 } from '@/lib/phase3YoutubeAlgorithmKnowsData';
@@ -301,6 +305,10 @@ const Phase3SnsAlgorithmTypeTestClient = dynamic(
 );
 const Phase3OotdStyleDiagnosisTestClient = dynamic(
   () => import('@/components/Phase3OotdStyleDiagnosisTestClient'),
+  { ssr: false }
+);
+const Phase3PersonalityShoeRecommendationTestClient = dynamic(
+  () => import('@/components/Phase3PersonalityShoeRecommendationTestClient'),
   { ssr: false }
 );
 const Phase3YoutubeAlgorithmKnowsTestClient = dynamic(
@@ -897,6 +905,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['時尚', 'OOTD', '風格'],
         vi: ['Thời trang', 'OOTD', 'Phong cách'],
         id: ['Fashion', 'OOTD', 'Gaya'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-personality-shoe-recommendation') {
+    test = {
+      slug: 'phase3-personality-shoe-recommendation',
+      title: {
+        ko: '내 성격과 어울리는 신발 추천',
+        en: 'Shoes That Match Your Personality',
+        ja: '性格に合う靴おすすめ',
+        'zh-CN': '与你性格相配的鞋款推荐',
+        'zh-TW': '與你性格相配的鞋款推薦',
+        vi: 'Gợi ý giày hợp tính cách của bạn',
+        id: 'Rekomendasi sepatu yang cocok dengan kepribadianmu',
+      },
+      description: {
+        ko: '12문항 이미지 4지선다로 보는 성격별 신발 추천 6유형. #패션 #신발 #성격 #OOTD #쇼핑',
+        en: '12 image questions — 6 shoe types for your personality. #fashion #shoes #personality #OOTD',
+        ja: '画像12問4択で見る性格別おすすめ靴6タイプ。#ファッション #靴 #性格',
+        'zh-CN': '12 道图片四选一，六种性格鞋款推荐。#时尚 #鞋 #性格',
+        'zh-TW': '12 題圖片四選一，六種性格鞋款推薦。#時尚 #鞋 #性格',
+        vi: '12 câu chọn ảnh — 6 kiểu giày theo tính cách. #thời trang #giày',
+        id: '12 pertanyaan gambar — 6 tipe sepatu sesuai kepribadian. #fashion #sepatu',
+      },
+      thumbnail: 'p3_test_personality_shoe_recommendation.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['패션', '신발', '성격', 'OOTD', '쇼핑'],
+        en: ['Fashion', 'Shoes', 'Personality', 'OOTD', 'Shopping'],
+        ja: ['ファッション', '靴', '性格', 'OOTD', 'ショッピング'],
+        'zh-CN': ['时尚', '鞋', '性格', 'OOTD', '购物'],
+        'zh-TW': ['時尚', '鞋', '性格', 'OOTD', '購物'],
+        vi: ['Thời trang', 'Giày', 'Tính cách', 'OOTD', 'Mua sắm'],
+        id: ['Fashion', 'Sepatu', 'Kepribadian', 'OOTD', 'Belanja'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3476,6 +3521,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3OotdStyleDiagnosisQuestions}
           results={phase3OotdStyleDiagnosisResults}
           questionCount={phase3OotdStyleDiagnosisQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-personality-shoe-recommendation') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-personality-shoe-recommendation',
+      title: {
+        ko: '내 성격과 어울리는 신발 추천',
+        en: 'Shoes That Match Your Personality',
+        ja: '性格に合う靴おすすめ',
+        'zh-CN': '与你性格相配的鞋款推荐',
+        'zh-TW': '與你性格相配的鞋款推薦',
+        vi: 'Gợi ý giày hợp tính cách của bạn',
+        id: 'Rekomendasi sepatu yang cocok dengan kepribadianmu',
+      },
+      description: {
+        ko: '12문항 이미지 4지선다로 보는 성격별 신발 추천 6유형. #패션 #신발 #성격 #OOTD #쇼핑',
+        en: '12 image questions — 6 shoe types for your personality. #fashion #shoes #personality #OOTD',
+        ja: '画像12問4択で見る性格別おすすめ靴6タイプ。#ファッション #靴 #性格',
+        'zh-CN': '12 道图片四选一，六种性格鞋款推荐。#时尚 #鞋 #性格',
+        'zh-TW': '12 題圖片四選一，六種性格鞋款推薦。#時尚 #鞋 #性格',
+        vi: '12 câu chọn ảnh — 6 kiểu giày theo tính cách. #thời trang #giày',
+        id: '12 pertanyaan gambar — 6 tipe sepatu sesuai kepribadian. #fashion #sepatu',
+      },
+      thumbnail: 'p3_test_personality_shoe_recommendation.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['패션', '신발', '성격', 'OOTD', '쇼핑'],
+        en: ['Fashion', 'Shoes', 'Personality', 'OOTD', 'Shopping'],
+        ja: ['ファッション', '靴', '性格', 'OOTD', 'ショッピング'],
+        'zh-CN': ['时尚', '鞋', '性格', 'OOTD', '购物'],
+        'zh-TW': ['時尚', '鞋', '性格', 'OOTD', '購物'],
+        vi: ['Thời trang', 'Giày', 'Tính cách', 'OOTD', 'Mua sắm'],
+        id: ['Fashion', 'Sepatu', 'Kepribadian', 'OOTD', 'Belanja'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3PersonalityShoeRecommendationTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3PersonalityShoeRecommendationQuestions}
+          results={phase3PersonalityShoeRecommendationResults}
+          questionCount={phase3PersonalityShoeRecommendationQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

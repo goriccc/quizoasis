@@ -1737,6 +1737,60 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3PersonalityShoeRecommendationTest": {
+    "startMessage": {
+      "line1": "Sepatu tidak berbohong.",
+      "line2": "Sepatu yang kamu pakai bukan sekadar selera—itu memperlihatkan mood, kepribadian, dan cara kamu melangkah di dunia.",
+      "line3": "Orang yang pakai sneaker dan heels hidup dengan tempo berbeda; yang pakai loafer dan work boot melihat dunia dengan cara berbeda.",
+      "line4": "Kami cocokkan sepatu dengan gaya hidup dan kepribadianmu. Setelah lihat hasilnya, kirim ke teman: Inilah sepatumu!",
+      "line5": "Cari sepatu sesuai kepribadian 👟 Mulai tes tipe sepatu"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Rekomendasi sepatu sesuai kepribadian)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "recommendedShoeType": "Jenis sepatu yang direkomendasikan",
+      "modelKeywords": "Kata kunci model",
+      "personalityLink": "Hubungan dengan kepribadian",
+      "colorRec": "Saran warna",
+      "outfitDirection": "Arah outfit",
+      "goodMatch": "Tipe yang cocok",
+      "badMatch": "Tipe yang bentrok gaya",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Sepatu kepribadianku {name}! 👟 Pas banget—kirim ke teman: Inilah sepatumu!",
+      "kakao": "Sepatu kepribadianku {name}! 👟 Pas banget—kirim ke teman: Inilah sepatumu!",
+      "wechat": "Sepatu kepribadianku {name}! 👟 Pas banget—kirim ke teman: Inilah sepatumu!",
+      "whatsapp": "Sepatu kepribadianku {name}! 👟 Pas banget—kirim ke teman: Inilah sepatumu!",
+      "telegram": "Sepatu kepribadianku {name}! 👟 Pas banget—kirim ke teman: Inilah sepatumu!",
+      "line": "Sepatu kepribadianku {name}! 👟 Pas banget—kirim ke teman: Inilah sepatumu!",
+      "startDefault": "Rekomendasi sepatu sesuai kepribadian 👟 12 pertanyaan gambar, 4 pilihan",
+      "startKakao": "Rekomendasi sepatu sesuai kepribadian 👟 12 pertanyaan gambar, 4 pilihan",
+      "startWechat": "Rekomendasi sepatu sesuai kepribadian 👟 12 pertanyaan gambar, 4 pilihan",
+      "startWhatsapp": "Rekomendasi sepatu sesuai kepribadian 👟 12 pertanyaan gambar, 4 pilihan",
+      "startTelegram": "Rekomendasi sepatu sesuai kepribadian 👟 12 pertanyaan gambar, 4 pilihan",
+      "startLine": "Rekomendasi sepatu sesuai kepribadian 👟 12 pertanyaan gambar, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Perangkat ini tidak mendukung berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "KakaoTalk sedang menginisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

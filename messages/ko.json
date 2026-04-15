@@ -999,6 +999,60 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3PersonalityShoeRecommendationTest": {
+    "startMessage": {
+      "line1": "신발은 거짓말을 하지 않습니다.",
+      "line2": "어떤 신발을 신느냐는 단순한 취향이 아닙니다. 오늘의 기분, 나의 성격, 세상을 대하는 방식이 발끝에서 드러납니다.",
+      "line3": "스니커즈를 신는 사람과 힐을 신는 사람은 삶의 속도가 다르고, 로퍼를 신는 사람과 워커를 신는 사람은 세상을 바라보는 시각이 다릅니다.",
+      "line4": "라이프스타일과 성격으로 당신에게 가장 어울리는 신발을 찾아드립니다. 결과를 보고 친구에게 \"너는 이 신발이야!\"라고 보내보세요.",
+      "line5": "내 성격 신발 찾기 👟 신발 유형 진단 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (내 성격과 어울리는 신발 추천)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "recommendedShoeType": "추천 신발 유형",
+      "modelKeywords": "대표 모델 키워드",
+      "personalityLink": "성격 연결고리",
+      "colorRec": "컬러 추천",
+      "outfitDirection": "오늘의 코디 방향",
+      "goodMatch": "신발 찰떡 궁합 유형",
+      "badMatch": "스타일 충돌 유형",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "내 성격 신발은 {name}! 👟 진짜 딱 맞는 것 같음 ㅋㅋ 친구한테 '너는 이 신발이야!' 하고 보내봐",
+      "kakao": "내 성격 신발은 {name}! 👟 진짜 딱 맞는 것 같음 ㅋㅋ 친구한테 '너는 이 신발이야!' 하고 보내봐",
+      "wechat": "내 성격 신발은 {name}! 👟 진짜 딱 맞는 것 같음 ㅋㅋ 친구한테 '너는 이 신발이야!' 하고 보내봐",
+      "whatsapp": "내 성격 신발은 {name}! 👟 진짜 딱 맞는 것 같음 ㅋㅋ 친구한테 '너는 이 신발이야!' 하고 보내봐",
+      "telegram": "내 성격 신발은 {name}! 👟 진짜 딱 맞는 것 같음 ㅋㅋ 친구한테 '너는 이 신발이야!' 하고 보내봐",
+      "line": "내 성격 신발은 {name}! 👟 진짜 딱 맞는 것 같음 ㅋㅋ 친구한테 '너는 이 신발이야!' 하고 보내봐",
+      "startDefault": "내 성격과 어울리는 신발 추천 👟 12문항 이미지 4지선다",
+      "startKakao": "내 성격과 어울리는 신발 추천 👟 12문항 이미지 4지선다",
+      "startWechat": "내 성격과 어울리는 신발 추천 👟 12문항 이미지 4지선다",
+      "startWhatsapp": "내 성격과 어울리는 신발 추천 👟 12문항 이미지 4지선다",
+      "startTelegram": "내 성격과 어울리는 신발 추천 👟 12문항 이미지 4지선다",
+      "startLine": "내 성격과 어울리는 신발 추천 👟 12문항 이미지 4지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "잠깐만 보려고 켰는데 2시간이 지나있던 경험, 있으시죠?",

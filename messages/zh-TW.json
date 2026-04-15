@@ -1744,6 +1744,60 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3PersonalityShoeRecommendationTest": {
+    "startMessage": {
+      "line1": "鞋子從不說謊。",
+      "line2": "穿什麼鞋不只是品味，更是心情、性格與處世方式在腳尖上的展現。",
+      "line3": "穿運動鞋與穿高跟鞋的人生節奏不同；穿樂福與穿工裝靴的人看世界的方式也不同。",
+      "line4": "我們會依生活型態與性格，為你找到最合腳的鞋。看到結果後，傳給朋友一句：你就是這雙鞋！",
+      "line5": "尋找你的性格之鞋 👟 開始鞋型診斷"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（與你性格相配的鞋款推薦）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "recommendedShoeType": "推薦鞋款類型",
+      "modelKeywords": "代表款式關鍵字",
+      "personalityLink": "性格關聯",
+      "colorRec": "配色建議",
+      "outfitDirection": "穿搭方向",
+      "goodMatch": "鞋款默契類型",
+      "badMatch": "風格衝突類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的性格之鞋是 {name}！👟 太準了哈哈，快傳給朋友：你就是這雙鞋！",
+      "kakao": "我的性格之鞋是 {name}！👟 太準了哈哈，快傳給朋友：你就是這雙鞋！",
+      "wechat": "我的性格之鞋是 {name}！👟 太準了哈哈，快傳給朋友：你就是這雙鞋！",
+      "whatsapp": "我的性格之鞋是 {name}！👟 太準了哈哈，快傳給朋友：你就是這雙鞋！",
+      "telegram": "我的性格之鞋是 {name}！👟 太準了哈哈，快傳給朋友：你就是這雙鞋！",
+      "line": "我的性格之鞋是 {name}！👟 太準了哈哈，快傳給朋友：你就是這雙鞋！",
+      "startDefault": "與你性格相配的鞋款推薦 👟 12 題圖片四選一",
+      "startKakao": "與你性格相配的鞋款推薦 👟 12 題圖片四選一",
+      "startWechat": "與你性格相配的鞋款推薦 👟 12 題圖片四選一",
+      "startWhatsapp": "與你性格相配的鞋款推薦 👟 12 題圖片四選一",
+      "startTelegram": "與你性格相配的鞋款推薦 👟 12 題圖片四選一",
+      "startLine": "與你性格相配的鞋款推薦 👟 12 題圖片四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "KakaoTalk 正在初始化，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",

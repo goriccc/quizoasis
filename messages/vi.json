@@ -1737,6 +1737,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test hot"
     }
   },
+  "phase3PersonalityShoeRecommendationTest": {
+    "startMessage": {
+      "line1": "Giày không biết nói dối.",
+      "line2": "Đi giày gì không chỉ là gu—đó là tâm trạng, tính cách và cách bạn bước ra thế giới.",
+      "line3": "Người đi sneaker và người đi gót cao sống nhịp khác nhau; người đi loafer và người đi boot công nhìn đời cũng khác.",
+      "line4": "Chúng mình gợi ý đôi giày hợp lối sống và tính cách của bạn. Xem xong kết quả, gửi bạn: Đây là đôi giày của cậu!",
+      "line5": "Tìm giày đúng tính cách 👟 Bắt đầu trắc nghiệm"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Gợi ý giày hợp tính cách)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "recommendedShoeType": "Loại giày gợi ý",
+      "modelKeywords": "Từ khóa mẫu giày",
+      "personalityLink": "Liên hệ với tính cách",
+      "colorRec": "Gợi ý màu",
+      "outfitDirection": "Hướng phối đồ",
+      "goodMatch": "Kiểu hợp gu giày",
+      "badMatch": "Kiểu dễ clash phong cách",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Giày đúng tính cách của mình là {name}! 👟 Chuẩn quá—nhắn bạn: Đây là đôi giày của cậu!",
+      "kakao": "Giày đúng tính cách của mình là {name}! 👟 Chuẩn quá—nhắn bạn: Đây là đôi giày của cậu!",
+      "wechat": "Giày đúng tính cách của mình là {name}! 👟 Chuẩn quá—nhắn bạn: Đây là đôi giày của cậu!",
+      "whatsapp": "Giày đúng tính cách của mình là {name}! 👟 Chuẩn quá—nhắn bạn: Đây là đôi giày của cậu!",
+      "telegram": "Giày đúng tính cách của mình là {name}! 👟 Chuẩn quá—nhắn bạn: Đây là đôi giày của cậu!",
+      "line": "Giày đúng tính cách của mình là {name}! 👟 Chuẩn quá—nhắn bạn: Đây là đôi giày của cậu!",
+      "startDefault": "Gợi ý giày hợp tính cách 👟 12 câu, mỗi câu 4 ảnh chọn",
+      "startKakao": "Gợi ý giày hợp tính cách 👟 12 câu, mỗi câu 4 ảnh chọn",
+      "startWechat": "Gợi ý giày hợp tính cách 👟 12 câu, mỗi câu 4 ảnh chọn",
+      "startWhatsapp": "Gợi ý giày hợp tính cách 👟 12 câu, mỗi câu 4 ảnh chọn",
+      "startTelegram": "Gợi ý giày hợp tính cách 👟 12 câu, mỗi câu 4 ảnh chọn",
+      "startLine": "Gợi ý giày hợp tính cách 👟 12 câu, mỗi câu 4 ảnh chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi tạo. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",
