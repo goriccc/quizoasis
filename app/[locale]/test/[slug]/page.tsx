@@ -105,6 +105,10 @@ import {
   phase3LoveWeaknessMomentQuestions,
   phase3LoveWeaknessMomentResults,
 } from '@/lib/phase3LoveWeaknessMomentData';
+import {
+  phase3SoloEscapePossibilityQuestions,
+  phase3SoloEscapePossibilityResults,
+} from '@/lib/phase3SoloEscapePossibilityData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -325,6 +329,10 @@ const Phase3IdealTypeDnaAnalysisTestClient = dynamic(
 );
 const Phase3LoveWeaknessMomentTestClient = dynamic(
   () => import('@/components/Phase3LoveWeaknessMomentTestClient'),
+  { ssr: false }
+);
+const Phase3SoloEscapePossibilityTestClient = dynamic(
+  () => import('@/components/Phase3SoloEscapePossibilityTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1391,6 +1399,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛', '心理', '共鳴'],
         vi: ['Tình yêu', 'Tâm lý', 'Đồng cảm'],
         id: ['Cinta', 'Psikologi', 'Empati'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-solo-escape-possibility') {
+    test = {
+      slug: 'phase3-solo-escape-possibility',
+      title: {
+        ko: '나의 솔로 탈출 가능성 분석기',
+        en: 'My Solo Escape Possibility Analyzer',
+        ja: '私のソロ脱出可能性分析',
+        'zh-CN': '我的脱单可能性分析',
+        'zh-TW': '我的脫單可能性分析',
+        vi: 'Phân tích khả năng thoát ế của tôi',
+        id: 'Analisis peluang lolos dari jomblo',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 솔로 탈출 가능성 퍼센트 6유형. #솔로 #연애 #공감',
+        en: '12 multiple-choice questions — 6 solo escape possibility types. #single #dating #relatable',
+        ja: '全12問4択で見るソロ脱出可能性6タイプ。#ソロ #恋愛 #共感',
+        'zh-CN': '12 道四选一，六种脱单可能性。#单身 #恋爱 #共鸣',
+        'zh-TW': '12 題四選一，六種脫單可能性。#單身 #戀愛 #共鳴',
+        vi: '12 câu — 6 mức khả năng thoát ế. #độc thân #tình yêu #đồng cảm',
+        id: '12 pertanyaan — 6 tipe peluang lolos jomblo. #jomblo #asmara #relate',
+      },
+      thumbnail: 'p3_test_solo_escape_possibility.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['솔로', '연애', '공감'],
+        en: ['Single', 'Dating', 'Relatable'],
+        ja: ['ソロ', '恋愛', '共感'],
+        'zh-CN': ['单身', '恋爱', '共鸣'],
+        'zh-TW': ['單身', '戀愛', '共鳴'],
+        vi: ['Độc thân', 'Tình yêu', 'Đồng cảm'],
+        id: ['Jomblo', 'Asmara', 'Relate'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3836,6 +3881,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LoveWeaknessMomentQuestions}
           results={phase3LoveWeaknessMomentResults}
           questionCount={phase3LoveWeaknessMomentQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-solo-escape-possibility') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-solo-escape-possibility',
+      title: {
+        ko: '나의 솔로 탈출 가능성 분석기',
+        en: 'My Solo Escape Possibility Analyzer',
+        ja: '私のソロ脱出可能性分析',
+        'zh-CN': '我的脱单可能性分析',
+        'zh-TW': '我的脫單可能性分析',
+        vi: 'Phân tích khả năng thoát ế của tôi',
+        id: 'Analisis peluang lolos dari jomblo',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 솔로 탈출 가능성 퍼센트 6유형. #솔로 #연애 #공감',
+        en: '12 multiple-choice questions — 6 solo escape possibility types. #single #dating #relatable',
+        ja: '全12問4択で見るソロ脱出可能性6タイプ。#ソロ #恋愛 #共感',
+        'zh-CN': '12 道四选一，六种脱单可能性。#单身 #恋爱 #共鸣',
+        'zh-TW': '12 題四選一，六種脫單可能性。#單身 #戀愛 #共鳴',
+        vi: '12 câu — 6 mức khả năng thoát ế. #độc thân #tình yêu #đồng cảm',
+        id: '12 pertanyaan — 6 tipe peluang lolos jomblo. #jomblo #asmara #relate',
+      },
+      thumbnail: 'p3_test_solo_escape_possibility.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['솔로', '연애', '공감'],
+        en: ['Single', 'Dating', 'Relatable'],
+        ja: ['ソロ', '恋愛', '共感'],
+        'zh-CN': ['单身', '恋爱', '共鸣'],
+        'zh-TW': ['單身', '戀愛', '共鳴'],
+        vi: ['Độc thân', 'Tình yêu', 'Đồng cảm'],
+        id: ['Jomblo', 'Asmara', 'Relate'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SoloEscapePossibilityTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SoloEscapePossibilityQuestions}
+          results={phase3SoloEscapePossibilityResults}
+          questionCount={phase3SoloEscapePossibilityQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

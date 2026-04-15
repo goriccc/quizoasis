@@ -1572,6 +1572,61 @@
       "popularTestsTop5": "🔥 Top 5 quiz đang hot"
     }
   },
+  "phase3SoloEscapePossibilityTest": {
+    "startMessage": {
+      "line1": "Ở độc thân đều có lý do—chúng mình phân tích theo kiểu “khoa học”.",
+      "line2": "Vì sao mình vẫn độc thân? Xui? Sai thời điểm? Hay thói quen sống có vấn đề?",
+      "line3": "Kết hợp vòng xã hội, cách giao tiếp, chăm sóc ngoại hình và cơ hội gặp người—tính % khả năng thoát ế ngay lúc này.",
+      "line4": "Điểm thấp cũng không sao. Biết là bước đầu để thay đổi.",
+      "line5": "Trả lời càng trung thực thì % càng sát. Cứ thoải mái làm bài.",
+      "line6": "Tính khả năng thoát ế của tôi 💘 Bắt đầu phân tích"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Phân tích khả năng thoát ế)",
+      "goToTest": "Vào làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Quiz tương tự",
+      "escapePossibilityLabel": "Khả năng thoát ế",
+      "currentStatus": "Tình trạng hiện tại",
+      "realReason": "Lý do thật sự khiến bạn độc thân",
+      "prescription": "“Đơn thuốc” thoát ế",
+      "escapeTiming": "Thời điểm dự kiến thoát ế",
+      "goodMatch": "Kiểu đối tác hợp để thoát ế",
+      "trapToAvoid": "Cạm bẫy cần tránh",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Khả năng thoát ế của mình là {percent}%… 💘 {type} — đúng quá buồn cười. Bạn được bao nhiêu %? Cùng “toang” nhé",
+      "kakao": "Khả năng thoát ế của mình là {percent}%… 💘 {type} — đúng quá buồn cười. Bạn được bao nhiêu %? Cùng “toang” nhé",
+      "wechat": "Khả năng thoát ế của mình là {percent}%… 💘 {type} — đúng quá buồn cười. Bạn được bao nhiêu %? Cùng “toang” nhé",
+      "whatsapp": "Khả năng thoát ế của mình là {percent}%… 💘 {type} — đúng quá buồn cười. Bạn được bao nhiêu %? Cùng “toang” nhé",
+      "telegram": "Khả năng thoát ế của mình là {percent}%… 💘 {type} — đúng quá buồn cười. Bạn được bao nhiêu %? Cùng “toang” nhé",
+      "line": "Khả năng thoát ế của mình là {percent}%… 💘 {type} — đúng quá buồn cười. Bạn được bao nhiêu %? Cùng “toang” nhé",
+      "startDefault": "Phân tích khả năng thoát ế 💘 12 câu",
+      "startKakao": "Phân tích khả năng thoát ế 💘 12 câu",
+      "startWechat": "Phân tích khả năng thoát ế 💘 12 câu",
+      "startWhatsapp": "Phân tích khả năng thoát ế 💘 12 câu",
+      "startTelegram": "Phân tích khả năng thoát ế 💘 12 câu",
+      "startLine": "Phân tích khả năng thoát ế 💘 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi tạo. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 quiz tương tự",
+      "popularTestsTop5": "🔥 Top 5 quiz đang hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

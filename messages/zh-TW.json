@@ -1579,6 +1579,61 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3SoloEscapePossibilityTest": {
+    "startMessage": {
+      "line1": "單身都有原因，我們用科學方式幫你分析。",
+      "line2": "為什麼我還單身？運氣不好？時機不對？還是生活習慣出了問題？",
+      "line3": "綜合社交圈、溝通方式、外在管理與認識異性的機會，計算你此刻的脫單可能性百分比。",
+      "line4": "分數低也沒關係，覺察才是改變的開始。",
+      "line5": "回答越誠實，百分比越準確。放輕鬆作答就好。",
+      "line6": "計算我的脫單可能性 💘 開始分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告位（脫單可能性分析）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "escapePossibilityLabel": "脫單可能性",
+      "currentStatus": "目前狀態",
+      "realReason": "單身的真正原因",
+      "prescription": "脫單處方",
+      "escapeTiming": "預計脫單時間",
+      "goodMatch": "合拍脫單搭檔型",
+      "trapToAvoid": "需要避開的坑",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的脫單可能性是{percent}%… 💘 {type} 準到想哭 你多少？一起躺槍",
+      "kakao": "我的脫單可能性是{percent}%… 💘 {type} 準到想哭 你多少？一起躺槍",
+      "wechat": "我的脫單可能性是{percent}%… 💘 {type} 準到想哭 你多少？一起躺槍",
+      "whatsapp": "我的脫單可能性是{percent}%… 💘 {type} 準到想哭 你多少？一起躺槍",
+      "telegram": "我的脫單可能性是{percent}%… 💘 {type} 準到想哭 你多少？一起躺槍",
+      "line": "我的脫單可能性是{percent}%… 💘 {type} 準到想哭 你多少？一起躺槍",
+      "startDefault": "脫單可能性分析 💘 12 題",
+      "startKakao": "脫單可能性分析 💘 12 題",
+      "startWechat": "脫單可能性分析 💘 12 題",
+      "startWhatsapp": "脫單可能性分析 💘 12 題",
+      "startTelegram": "脫單可能性分析 💘 12 題",
+      "startLine": "脫單可能性分析 💘 12 題"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",

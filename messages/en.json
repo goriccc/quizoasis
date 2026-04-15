@@ -1613,6 +1613,61 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3SoloEscapePossibilityTest": {
+    "startMessage": {
+      "line1": "There is a reason everyone is single—and we will analyze it like science.",
+      "line2": "Why am I still single? Bad luck? Bad timing? Or something in my daily habits?",
+      "line3": "We combine social radius, communication style, grooming, and chances to meet people—then calculate your solo escape percentage right now.",
+      "line4": "A low score is okay. Knowing is the first step to change.",
+      "line5": "The more honest your answers, the more accurate your percentage. Answer without pressure.",
+      "line6": "Calculate my solo escape odds 💘 Start analysis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (Solo escape possibility analyzer)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "escapePossibilityLabel": "Solo escape possibility",
+      "currentStatus": "Current status",
+      "realReason": "The real reason you are single",
+      "prescription": "Escape prescription",
+      "escapeTiming": "Estimated timing to escape single life",
+      "goodMatch": "Best partner type to escape single life",
+      "trapToAvoid": "Trap to avoid",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My solo escape possibility is {percent}%... 💘 {type} — hurts because it is true lol. What is your %? Let us fail together.",
+      "kakao": "My solo escape possibility is {percent}%... 💘 {type} — hurts because it is true lol. What is your %? Let us fail together.",
+      "wechat": "My solo escape possibility is {percent}%... 💘 {type} — hurts because it is true lol. What is your %? Let us fail together.",
+      "whatsapp": "My solo escape possibility is {percent}%... 💘 {type} — hurts because it is true lol. What is your %? Let us fail together.",
+      "telegram": "My solo escape possibility is {percent}%... 💘 {type} — hurts because it is true lol. What is your %? Let us fail together.",
+      "line": "My solo escape possibility is {percent}%... 💘 {type} — hurts because it is true lol. What is your %? Let us fail together.",
+      "startDefault": "Solo escape possibility analyzer 💘 12 questions",
+      "startKakao": "Solo escape possibility analyzer 💘 12 questions",
+      "startWechat": "Solo escape possibility analyzer 💘 12 questions",
+      "startWhatsapp": "Solo escape possibility analyzer 💘 12 questions",
+      "startTelegram": "Solo escape possibility analyzer 💘 12 questions",
+      "startLine": "Solo escape possibility analyzer 💘 12 questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",

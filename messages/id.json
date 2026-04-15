@@ -1572,6 +1572,61 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3SoloEscapePossibilityTest": {
+    "startMessage": {
+      "line1": "Jomblo itu selalu ada alasannya—kita analisis secara “ilmiah”.",
+      "line2": "Kenapa aku masih jomblo? Kurang beruntung? Timing salah? Atau pola hidupku yang bermasalah?",
+      "line3": "Kami gabungkan lingkaran sosial, gaya komunikasi, perawatan diri, dan peluang bertemu orang—lalu hitung persentase peluang lolos dari jomblo saat ini.",
+      "line4": "Skor rendah tidak apa-apa. Sadar adalah langkah pertama berubah.",
+      "line5": "Semakin jujur jawabanmu, semakin akurat persentasenya. Santai saja.",
+      "line6": "Hitung peluangku lolos dari jomblo 💘 Mulai analisis"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Analisis peluang lolos jomblo)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "escapePossibilityLabel": "Peluang lolos jomblo",
+      "currentStatus": "Status saat ini",
+      "realReason": "Alasan sebenarnya kamu jomblo",
+      "prescription": "Resep “lolos jomblo”",
+      "escapeTiming": "Perkiraan waktu lolos jomblo",
+      "goodMatch": "Tipe pasangan yang cocok untuk lolos jomblo",
+      "trapToAvoid": "Jebakan yang perlu dihindari",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Peluangku lolos jomblo {percent}%… 💘 {type} — pas banget sampai sedih wkwk. Kamu berapa %? Yuk bareng kena",
+      "kakao": "Peluangku lolos jomblo {percent}%… 💘 {type} — pas banget sampai sedih wkwk. Kamu berapa %? Yuk bareng kena",
+      "wechat": "Peluangku lolos jomblo {percent}%… 💘 {type} — pas banget sampai sedih wkwk. Kamu berapa %? Yuk bareng kena",
+      "whatsapp": "Peluangku lolos jomblo {percent}%… 💘 {type} — pas banget sampai sedih wkwk. Kamu berapa %? Yuk bareng kena",
+      "telegram": "Peluangku lolos jomblo {percent}%… 💘 {type} — pas banget sampai sedih wkwk. Kamu berapa %? Yuk bareng kena",
+      "line": "Peluangku lolos jomblo {percent}%… 💘 {type} — pas banget sampai sedih wkwk. Kamu berapa %? Yuk bareng kena",
+      "startDefault": "Analisis peluang lolos jomblo 💘 12 pertanyaan",
+      "startKakao": "Analisis peluang lolos jomblo 💘 12 pertanyaan",
+      "startWechat": "Analisis peluang lolos jomblo 💘 12 pertanyaan",
+      "startWhatsapp": "Analisis peluang lolos jomblo 💘 12 pertanyaan",
+      "startTelegram": "Analisis peluang lolos jomblo 💘 12 pertanyaan",
+      "startLine": "Analisis peluang lolos jomblo 💘 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Perangkat ini tidak mendukung berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "KakaoTalk sedang menginisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

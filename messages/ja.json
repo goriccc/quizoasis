@@ -1573,6 +1573,61 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3SoloEscapePossibilityTest": {
+    "startMessage": {
+      "line1": "ソロであるには理由があります。科学的に分析します。",
+      "line2": "なぜまだソロ？運がない？タイミング？それとも生活パターンに原因がある？",
+      "line3": "生活圏・コミュニケーション・身だしなみ・出会いの機会を総合して、今この瞬間のソロ脱出可能性％を算出します。",
+      "line4": "結果が低くても大丈夫。知ることが変化の第一歩です。",
+      "line5": "正直に答えるほど％は正確になります。気軽にチェックしてください。",
+      "line6": "ソロ脱出可能性を計算する 💘 分析スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（ソロ脱出可能性分析）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "escapePossibilityLabel": "ソロ脱出可能性",
+      "currentStatus": "現在の状態",
+      "realReason": "ソロの本当の理由",
+      "prescription": "脱出の処方箋",
+      "escapeTiming": "ソロ脱出の目安タイミング",
+      "goodMatch": "相性のいい脱出パートナー型",
+      "trapToAvoid": "避けるべき落とし穴",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私のソロ脱出可能性は{percent}%らしい… 💘 {type} 当たりすぎてつらいｗ あなたは何%？一緒にやらかそ",
+      "kakao": "私のソロ脱出可能性は{percent}%らしい… 💘 {type} 当たりすぎてつらいｗ あなたは何%？一緒にやらかそ",
+      "wechat": "私のソロ脱出可能性は{percent}%らしい… 💘 {type} 当たりすぎてつらいｗ あなたは何%？一緒にやらかそ",
+      "whatsapp": "私のソロ脱出可能性は{percent}%らしい… 💘 {type} 当たりすぎてつらいｗ あなたは何%？一緒にやらかそ",
+      "telegram": "私のソロ脱出可能性は{percent}%らしい… 💘 {type} 当たりすぎてつらいｗ あなたは何%？一緒にやらかそ",
+      "line": "私のソロ脱出可能性は{percent}%らしい… 💘 {type} 当たりすぎてつらいｗ あなたは何%？一緒にやらかそ",
+      "startDefault": "ソロ脱出可能性分析 💘 全12問",
+      "startKakao": "ソロ脱出可能性分析 💘 全12問",
+      "startWechat": "ソロ脱出可能性分析 💘 全12問",
+      "startWhatsapp": "ソロ脱出可能性分析 💘 全12問",
+      "startTelegram": "ソロ脱出可能性分析 💘 全12問",
+      "startLine": "ソロ脱出可能性分析 💘 全12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkの共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",

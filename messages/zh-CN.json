@@ -1572,6 +1572,61 @@
       "popularTestsTop5": "🔥 近期热门测验 Top5"
     }
   },
+  "phase3SoloEscapePossibilityTest": {
+    "startMessage": {
+      "line1": "单身都有原因，我们用科学方式帮你分析。",
+      "line2": "为什么我还单身？运气不好？时机不对？还是生活习惯出了问题？",
+      "line3": "综合社交圈、沟通方式、外在管理与认识异性的机会，计算你此刻的脱单可能性百分比。",
+      "line4": "分数低也没关系，觉察才是改变的开始。",
+      "line5": "回答越诚实，百分比越准确。放轻松作答就好。",
+      "line6": "计算我的脱单可能性 💘 开始分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告位（脱单可能性分析）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "escapePossibilityLabel": "脱单可能性",
+      "currentStatus": "当前状态",
+      "realReason": "单身的真正原因",
+      "prescription": "脱单处方",
+      "escapeTiming": "预计脱单时间",
+      "goodMatch": "合拍脱单搭档型",
+      "trapToAvoid": "需要避开的坑",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的脱单可能性是{percent}%… 💘 {type} 准到想哭 你多少？一起躺枪",
+      "kakao": "我的脱单可能性是{percent}%… 💘 {type} 准到想哭 你多少？一起躺枪",
+      "wechat": "我的脱单可能性是{percent}%… 💘 {type} 准到想哭 你多少？一起躺枪",
+      "whatsapp": "我的脱单可能性是{percent}%… 💘 {type} 准到想哭 你多少？一起躺枪",
+      "telegram": "我的脱单可能性是{percent}%… 💘 {type} 准到想哭 你多少？一起躺枪",
+      "line": "我的脱单可能性是{percent}%… 💘 {type} 准到想哭 你多少？一起躺枪",
+      "startDefault": "脱单可能性分析 💘 12 题",
+      "startKakao": "脱单可能性分析 💘 12 题",
+      "startWechat": "脱单可能性分析 💘 12 题",
+      "startWhatsapp": "脱单可能性分析 💘 12 题",
+      "startTelegram": "脱单可能性分析 💘 12 题",
+      "startLine": "脱单可能性分析 💘 12 题"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "此设备无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测验推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测验 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "说好只看一分钟，结果两小时没了——你也经历过吧？",
