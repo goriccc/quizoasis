@@ -1516,6 +1516,62 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3LoveWeaknessMomentTest": {
+    "startMessage": {
+      "line1": "Kamu rasional dan tenang—tapi begitu pacaran, kamu seperti orang lain.",
+      "line2": "Kenapa “kamu yang sempurna” saat sendiri bisa berubah saat cinta dimulai?",
+      "line3": "Biasanya kamu tidak begini—tapi di momen tertentu emosi memimpin, penilaian kabur, dan kamu ragu apakah ini wajar.",
+      "line4": "Itulah titik lemah fatal dalam cinta—momen kamu “runtuh”.",
+      "line5": "Semua orang punya—hanya belum sadar apa itu. Sekarang kami tunjukkan dengan jelas.",
+      "line6": "Cari tahu titik lemah cintaku 💔 Mulai analisis “momen runtuh”"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Momen aku runtuh saat pacaran)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "weaknessType": "Tipe titik lemah asmara",
+      "collapseMoment": "Momen runtuh",
+      "fatalWeakness": "Titik lemah fatal",
+      "dangerSignal": "Sinyal risiko",
+      "effectiveLine": "Kalimat paling ampuh untuk tipe ini",
+      "prescription": "Saran “resep”",
+      "goodMatch": "Pasangan paling cocok",
+      "vulnerableTo": "Tipe orang yang berisiko",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Momen aku runtuh saat pacaran adalah {type}! 💔 Akurat banget… selalu gitu. Coba kamu juga",
+      "kakao": "Momen aku runtuh saat pacaran adalah {type}! 💔 Akurat banget… selalu gitu. Coba kamu juga",
+      "wechat": "Momen aku runtuh saat pacaran adalah {type}! 💔 Akurat banget… selalu gitu. Coba kamu juga",
+      "whatsapp": "Momen aku runtuh saat pacaran adalah {type}! 💔 Akurat banget… selalu gitu. Coba kamu juga",
+      "telegram": "Momen aku runtuh saat pacaran adalah {type}! 💔 Akurat banget… selalu gitu. Coba kamu juga",
+      "line": "Momen aku runtuh saat pacaran adalah {type}! 💔 Akurat banget… selalu gitu. Coba kamu juga",
+      "startDefault": "Saat aku runtuh dalam cinta 💔 12 pertanyaan",
+      "startKakao": "Saat aku runtuh dalam cinta 💔 12 pertanyaan",
+      "startWechat": "Saat aku runtuh dalam cinta 💔 12 pertanyaan",
+      "startWhatsapp": "Saat aku runtuh dalam cinta 💔 12 pertanyaan",
+      "startTelegram": "Saat aku runtuh dalam cinta 💔 12 pertanyaan",
+      "startLine": "Saat aku runtuh dalam cinta 💔 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Perangkat ini tidak mendukung berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "KakaoTalk sedang menginisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

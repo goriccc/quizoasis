@@ -1523,6 +1523,62 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3LoveWeaknessMomentTest": {
+    "startMessage": {
+      "line1": "平時理性又冷靜，一談戀愛就像換了個人。",
+      "line2": "獨處時很完美，為什麼戀愛一開始就變得不一樣？",
+      "line3": "平時絕不會這樣，但某些瞬間情緒搶先、判斷變模糊，你會懷疑這樣對不對。",
+      "line4": "那就是你在戀愛中的致命弱點——崩潰的瞬間。",
+      "line5": "人人都有，只是還沒看清。現在就幫你精準定位。",
+      "line6": "看清我的戀愛致命弱點 💔 開始「崩潰瞬間」分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（戀愛裡我崩潰的瞬間）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "weaknessType": "戀愛弱點類型",
+      "collapseMoment": "崩潰瞬間",
+      "fatalWeakness": "致命弱點",
+      "dangerSignal": "風險信號",
+      "effectiveLine": "對該類型最有效的一句話",
+      "prescription": "處方建議",
+      "goodMatch": "理想搭檔",
+      "vulnerableTo": "需警惕的對象",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我在戀愛裡崩潰的瞬間是{type}！💔 太準了…我每次都這樣。你也來測測",
+      "kakao": "我在戀愛裡崩潰的瞬間是{type}！💔 太準了…我每次都這樣。你也來測測",
+      "wechat": "我在戀愛裡崩潰的瞬間是{type}！💔 太準了…我每次都這樣。你也來測測",
+      "whatsapp": "我在戀愛裡崩潰的瞬間是{type}！💔 太準了…我每次都這樣。你也來測測",
+      "telegram": "我在戀愛裡崩潰的瞬間是{type}！💔 太準了…我每次都這樣。你也來測測",
+      "line": "我在戀愛裡崩潰的瞬間是{type}！💔 太準了…我每次都這樣。你也來測測",
+      "startDefault": "戀愛裡我崩潰的瞬間 💔 12 題",
+      "startKakao": "戀愛裡我崩潰的瞬間 💔 12 題",
+      "startWechat": "戀愛裡我崩潰的瞬間 💔 12 題",
+      "startWhatsapp": "戀愛裡我崩潰的瞬間 💔 12 題",
+      "startTelegram": "戀愛裡我崩潰的瞬間 💔 12 題",
+      "startLine": "戀愛裡我崩潰的瞬間 💔 12 題"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",

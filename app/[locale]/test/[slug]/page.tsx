@@ -101,6 +101,10 @@ import {
   phase3IdealTypeDnaAnalysisQuestions,
   phase3IdealTypeDnaAnalysisResults,
 } from '@/lib/phase3IdealTypeDnaAnalysisData';
+import {
+  phase3LoveWeaknessMomentQuestions,
+  phase3LoveWeaknessMomentResults,
+} from '@/lib/phase3LoveWeaknessMomentData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -317,6 +321,10 @@ const Phase3LoveBehaviorTypeTestClient = dynamic(
 );
 const Phase3IdealTypeDnaAnalysisTestClient = dynamic(
   () => import('@/components/Phase3IdealTypeDnaAnalysisTestClient'),
+  { ssr: false }
+);
+const Phase3LoveWeaknessMomentTestClient = dynamic(
+  () => import('@/components/Phase3LoveWeaknessMomentTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1346,6 +1354,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛', '理想型', '心理'],
         vi: ['Tình yêu', 'Gu', 'Tâm lý'],
         id: ['Asmara', 'Ideal', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-weakness-moment') {
+    test = {
+      slug: 'phase3-love-weakness-moment',
+      title: {
+        ko: '연애할 때 내가 무너지는 순간',
+        en: 'The Moment I Break in Dating',
+        ja: '恋で私が崩れる瞬間',
+        'zh-CN': '恋爱里我崩溃的瞬间',
+        'zh-TW': '戀愛裡我崩潰的瞬間',
+        vi: 'Khoảnh khắc tôi gục khi yêu',
+        id: 'Saat aku runtuh dalam cinta',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 약점 스펙트럼 6유형. #연애 #심리 #공감',
+        en: '12 multiple-choice questions — 6 dating weakness spectrum types. #love #psychology #empathy',
+        ja: '全12問4択で見る恋愛の弱点スペクトラム6タイプ。#恋愛 #心理 #共感',
+        'zh-CN': '12 道四选一，六种恋爱弱点光谱。#恋爱 #心理 #共鸣',
+        'zh-TW': '12 題四選一，六種戀愛弱點光譜。#戀愛 #心理 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu quang phổ điểm yếu khi yêu. #tìnhyêu #tâmlý #đồngcảm',
+        id: '12 pertanyaan pilihan ganda — 6 spektrum titik lemah asmara. #cinta #psikologi #empati',
+      },
+      thumbnail: 'p3_test_love_weakness_moment.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리', '공감'],
+        en: ['Love', 'Psychology', 'Empathy'],
+        ja: ['恋愛', '心理', '共感'],
+        'zh-CN': ['恋爱', '心理', '共鸣'],
+        'zh-TW': ['戀愛', '心理', '共鳴'],
+        vi: ['Tình yêu', 'Tâm lý', 'Đồng cảm'],
+        id: ['Cinta', 'Psikologi', 'Empati'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3736,6 +3781,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3IdealTypeDnaAnalysisQuestions}
           results={phase3IdealTypeDnaAnalysisResults}
           questionCount={phase3IdealTypeDnaAnalysisQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-love-weakness-moment') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-love-weakness-moment',
+      title: {
+        ko: '연애할 때 내가 무너지는 순간',
+        en: 'The Moment I Break in Dating',
+        ja: '恋で私が崩れる瞬間',
+        'zh-CN': '恋爱里我崩溃的瞬间',
+        'zh-TW': '戀愛裡我崩潰的瞬間',
+        vi: 'Khoảnh khắc tôi gục khi yêu',
+        id: 'Saat aku runtuh dalam cinta',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 약점 스펙트럼 6유형. #연애 #심리 #공감',
+        en: '12 multiple-choice questions — 6 dating weakness spectrum types. #love #psychology #empathy',
+        ja: '全12問4択で見る恋愛の弱点スペクトラム6タイプ。#恋愛 #心理 #共感',
+        'zh-CN': '12 道四选一，六种恋爱弱点光谱。#恋爱 #心理 #共鸣',
+        'zh-TW': '12 題四選一，六種戀愛弱點光譜。#戀愛 #心理 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu quang phổ điểm yếu khi yêu. #tìnhyêu #tâmlý #đồngcảm',
+        id: '12 pertanyaan pilihan ganda — 6 spektrum titik lemah asmara. #cinta #psikologi #empati',
+      },
+      thumbnail: 'p3_test_love_weakness_moment.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리', '공감'],
+        en: ['Love', 'Psychology', 'Empathy'],
+        ja: ['恋愛', '心理', '共感'],
+        'zh-CN': ['恋爱', '心理', '共鸣'],
+        'zh-TW': ['戀愛', '心理', '共鳴'],
+        vi: ['Tình yêu', 'Tâm lý', 'Đồng cảm'],
+        id: ['Cinta', 'Psikologi', 'Empati'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LoveWeaknessMomentTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LoveWeaknessMomentQuestions}
+          results={phase3LoveWeaknessMomentResults}
+          questionCount={phase3LoveWeaknessMomentQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

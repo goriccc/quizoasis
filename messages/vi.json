@@ -1516,6 +1516,62 @@
       "popularTestsTop5": "🔥 Top 5 quiz đang hot"
     }
   },
+  "phase3LoveWeaknessMomentTest": {
+    "startMessage": {
+      "line1": "Bạn vốn lý trí và điềm tĩnh—nhưng cứ yêu là như đổi người.",
+      "line2": "Tại sao “phiên bản hoàn hảo” khi ở một mình lại khác hẳn khi bắt đầu yêu?",
+      "line3": "Bình thường bạn không thế—nhưng ở vài khoảnh khắc, cảm xúc lấn lý trí, phán đoán mờ đi và bạn tự hỏi mình có ổn không.",
+      "line4": "Đó chính là điểm yếu chí mạng trong yêu—khoảnh khắc bạn “gục”.",
+      "line5": "Ai cũng có—chỉ là chưa nhận ra. Giờ chúng mình chỉ ra thật rõ.",
+      "line6": "Xem điểm yếu khi yêu của tôi 💔 Bắt đầu phân tích “khoảnh khắc gục”"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Khoảnh khắc tôi gục trong yêu)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "weaknessType": "Kiểu điểm yếu khi yêu",
+      "collapseMoment": "Khoảnh khắc gục",
+      "fatalWeakness": "Điểm yếu chí mạng",
+      "dangerSignal": "Tín hiệu rủi ro",
+      "effectiveLine": "Câu hiệu quả nhất với kiểu này",
+      "prescription": "Gợi ý “đơn thuốc”",
+      "goodMatch": "Hợp nhất",
+      "vulnerableTo": "Dễ dính với kiểu người",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Khoảnh khắc tôi gục trong yêu là {type}! 💔 Chuẩn quá… toàn bị vậy. Bạn thử xem",
+      "kakao": "Khoảnh khắc tôi gục trong yêu là {type}! 💔 Chuẩn quá… toàn bị vậy. Bạn thử xem",
+      "wechat": "Khoảnh khắc tôi gục trong yêu là {type}! 💔 Chuẩn quá… toàn bị vậy. Bạn thử xem",
+      "whatsapp": "Khoảnh khắc tôi gục trong yêu là {type}! 💔 Chuẩn quá… toàn bị vậy. Bạn thử xem",
+      "telegram": "Khoảnh khắc tôi gục trong yêu là {type}! 💔 Chuẩn quá… toàn bị vậy. Bạn thử xem",
+      "line": "Khoảnh khắc tôi gục trong yêu là {type}! 💔 Chuẩn quá… toàn bị vậy. Bạn thử xem",
+      "startDefault": "Khoảnh khắc tôi gục khi yêu 💔 12 câu",
+      "startKakao": "Khoảnh khắc tôi gục khi yêu 💔 12 câu",
+      "startWechat": "Khoảnh khắc tôi gục khi yêu 💔 12 câu",
+      "startWhatsapp": "Khoảnh khắc tôi gục khi yêu 💔 12 câu",
+      "startTelegram": "Khoảnh khắc tôi gục khi yêu 💔 12 câu",
+      "startLine": "Khoảnh khắc tôi gục khi yêu 💔 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi tạo. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 quiz tương tự",
+      "popularTestsTop5": "🔥 Top 5 quiz đang hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

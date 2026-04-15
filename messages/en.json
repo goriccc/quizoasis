@@ -1557,6 +1557,62 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3LoveWeaknessMomentTest": {
+    "startMessage": {
+      "line1": "You're rational and calm—until dating starts, and you feel like a different person.",
+      "line2": "Why does the “perfect you” when you're alone change the moment love begins?",
+      "line3": "You usually never do this—but in certain moments emotions take the wheel, judgment gets blurry, and you wonder if it's even okay.",
+      "line4": "That's your dating fatal weak spot—your breaking moment.",
+      "line5": "Everyone has one. Most just don't know what it is yet. We'll pinpoint it now.",
+      "line6": "Find my dating weak spot 💔 Start the breaking-moment analysis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (The moment I break in dating)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "weaknessType": "Dating weak-spot type",
+      "collapseMoment": "Breaking moment",
+      "fatalWeakness": "Fatal weak spot",
+      "dangerSignal": "Risk signal",
+      "effectiveLine": "Most effective line for this type",
+      "prescription": "Prescription",
+      "goodMatch": "Best match",
+      "vulnerableTo": "Risky match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My dating breaking moment is {type}! 💔 Way too accurate... this is me every time. You should try it too.",
+      "kakao": "My dating breaking moment is {type}! 💔 Way too accurate... this is me every time. You should try it too.",
+      "wechat": "My dating breaking moment is {type}! 💔 Way too accurate... this is me every time. You should try it too.",
+      "whatsapp": "My dating breaking moment is {type}! 💔 Way too accurate... this is me every time. You should try it too.",
+      "telegram": "My dating breaking moment is {type}! 💔 Way too accurate... this is me every time. You should try it too.",
+      "line": "My dating breaking moment is {type}! 💔 Way too accurate... this is me every time. You should try it too.",
+      "startDefault": "The moment I break in dating 💔 12 questions",
+      "startKakao": "The moment I break in dating 💔 12 questions",
+      "startWechat": "The moment I break in dating 💔 12 questions",
+      "startWhatsapp": "The moment I break in dating 💔 12 questions",
+      "startTelegram": "The moment I break in dating 💔 12 questions",
+      "startLine": "The moment I break in dating 💔 12 questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",

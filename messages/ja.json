@@ -1517,6 +1517,62 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3LoveWeaknessMomentTest": {
+    "startMessage": {
+      "line1": "普段は理性的で落ち着いているのに、恋愛が始まると別人みたいになる。",
+      "line2": "一人のときは完璧なのに、恋が始まった瞬間、なぜこんなに変わるの？",
+      "line3": "普段は絶対しないのに、ある瞬間だけ感情が先走り、判断力がにじみ、「これでいいのかな」と思う。",
+      "line4": "それがあなたの恋愛の致命的な弱点、崩れる瞬間です。",
+      "line5": "誰にでもあります。ただ、まだ何かわからないだけ。今、はっきり見つけます。",
+      "line6": "恋の弱点を知る 💔 崩れる瞬間の分析を始める"
+    },
+    "ui": {
+      "adsenseTitle": "AdSenseエリア（恋で崩れる瞬間）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "weaknessType": "恋の弱点タイプ",
+      "collapseMoment": "崩れる瞬間",
+      "fatalWeakness": "致命的な弱点",
+      "dangerSignal": "リスクサイン",
+      "effectiveLine": "このタイプに効く一言",
+      "prescription": "処方箋",
+      "goodMatch": "相性抜群",
+      "vulnerableTo": "注意すべき相手",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "恋で私が崩れる瞬間は{type}！💔 精度やばい…いつもこれ。あなたも試して",
+      "kakao": "恋で私が崩れる瞬間は{type}！💔 精度やばい…いつもこれ。あなたも試して",
+      "wechat": "恋で私が崩れる瞬間は{type}！💔 精度やばい…いつもこれ。あなたも試して",
+      "whatsapp": "恋で私が崩れる瞬間は{type}！💔 精度やばい…いつもこれ。あなたも試して",
+      "telegram": "恋で私が崩れる瞬間は{type}！💔 精度やばい…いつもこれ。あなたも試して",
+      "line": "恋で私が崩れる瞬間は{type}！💔 精度やばい…いつもこれ。あなたも試して",
+      "startDefault": "恋で崩れる瞬間 💔 全12問",
+      "startKakao": "恋で崩れる瞬間 💔 全12問",
+      "startWechat": "恋で崩れる瞬間 💔 全12問",
+      "startWhatsapp": "恋で崩れる瞬間 💔 全12問",
+      "startTelegram": "恋で崩れる瞬間 💔 全12問",
+      "startLine": "恋で崩れる瞬間 💔 全12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkの共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",
