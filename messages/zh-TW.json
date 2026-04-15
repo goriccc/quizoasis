@@ -1634,6 +1634,63 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3LovePrescriptionTest": {
+    "startMessage": {
+      "line1": "戀愛也需要一張處方。",
+      "line2": "若每次痛苦原因都差不多、重複同樣的錯誤、迎來相似的結局，那不是運氣差，而是還沒找到適合你的處方。",
+      "line3": "我們不只給甜膩的安慰，而是告訴你真正需要的。依戀愛煩惱類型，為你精準開出態度與改進點。",
+      "line4": "請儲存結果，時常翻出來看，總有一天會幫到你。",
+      "line5": "回答越誠實，處方越貼合你。",
+      "line6": "領取我的戀愛處方 💊 開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（屬於我的戀愛處方）",
+      "goToTest": "前往測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "diagnosisLabel": "診斷名稱",
+      "prescription1": "[處方一]",
+      "prescription2": "[處方二]",
+      "prescription3": "[處方三]",
+      "dosage": "服用方式",
+      "precautions": "注意事項",
+      "sideEffects": "副作用",
+      "extraRx": "建議搭配",
+      "prescriptionPeriod": "服用週期",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的戀愛處方是 {type}！💊 先存下來慢慢看…你的是哪種？",
+      "kakao": "我的戀愛處方是 {type}！💊 先存下來慢慢看…你的是哪種？",
+      "wechat": "我的戀愛處方是 {type}！💊 先存下來慢慢看…你的是哪種？",
+      "whatsapp": "我的戀愛處方是 {type}！💊 先存下來慢慢看…你的是哪種？",
+      "telegram": "我的戀愛處方是 {type}！💊 先存下來慢慢看…你的是哪種？",
+      "line": "我的戀愛處方是 {type}！💊 先存下來慢慢看…你的是哪種？",
+      "startDefault": "屬於我的戀愛處方 💊 12 題",
+      "startKakao": "屬於我的戀愛處方 💊 12 題",
+      "startWechat": "屬於我的戀愛處方 💊 12 題",
+      "startWhatsapp": "屬於我的戀愛處方 💊 12 題",
+      "startTelegram": "屬於我的戀愛處方 💊 12 題",
+      "startLine": "屬於我的戀愛處方 💊 12 題"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",

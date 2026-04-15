@@ -1627,6 +1627,63 @@
       "popularTestsTop5": "🔥 近期热门测验 Top5"
     }
   },
+  "phase3LovePrescriptionTest": {
+    "startMessage": {
+      "line1": "恋爱也需要一张处方。",
+      "line2": "如果每次痛苦的原因都差不多、重复同样的错误、迎来相似的结局，那不是运气差，而是还没找到适合你的处方。",
+      "line3": "我们不只给甜腻的安慰，而是告诉你真正需要的。按恋爱烦恼类型，为你精准开出态度与改进点。",
+      "line4": "请保存结果，时常翻出来看，总有一天会帮到你。",
+      "line5": "回答越诚实，处方越贴合你。",
+      "line6": "领取我的恋爱处方 💊 开始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告区（属于我的恋爱处方）",
+      "goToTest": "去测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "diagnosisLabel": "诊断名",
+      "prescription1": "[处方一]",
+      "prescription2": "[处方二]",
+      "prescription3": "[处方三]",
+      "dosage": "服用方式",
+      "precautions": "注意事项",
+      "sideEffects": "副作用",
+      "extraRx": "建议搭配",
+      "prescriptionPeriod": "服用周期",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的恋爱处方是 {type}！💊 先存下来慢慢看…你的是哪种？",
+      "kakao": "我的恋爱处方是 {type}！💊 先存下来慢慢看…你的是哪种？",
+      "wechat": "我的恋爱处方是 {type}！💊 先存下来慢慢看…你的是哪种？",
+      "whatsapp": "我的恋爱处方是 {type}！💊 先存下来慢慢看…你的是哪种？",
+      "telegram": "我的恋爱处方是 {type}！💊 先存下来慢慢看…你的是哪种？",
+      "line": "我的恋爱处方是 {type}！💊 先存下来慢慢看…你的是哪种？",
+      "startDefault": "属于我的恋爱处方 💊 12 题",
+      "startKakao": "属于我的恋爱处方 💊 12 题",
+      "startWechat": "属于我的恋爱处方 💊 12 题",
+      "startWhatsapp": "属于我的恋爱处方 💊 12 题",
+      "startTelegram": "属于我的恋爱处方 💊 12 题",
+      "startLine": "属于我的恋爱处方 💊 12 题"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "此设备无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测验推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测验 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "说好只看一分钟，结果两小时没了——你也经历过吧？",

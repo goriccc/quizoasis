@@ -1627,6 +1627,63 @@
       "popularTestsTop5": "🔥 Top 5 quiz đang hot"
     }
   },
+  "phase3LovePrescriptionTest": {
+    "startMessage": {
+      "line1": "Chuyện yêu cũng cần một đơn thuốc.",
+      "line2": "Nếu mỗi lần đều đau vì lý do giống nhau, lặp lại sai lầm và kết thúc giống nhau—đó không phải xui xẻo, mà là bạn chưa tìm đúng đơn.",
+      "line3": "Chúng tôi không chỉ an ủi ngọt ngào—we cho bạn biết điều bạn thực sự cần. Theo từng kiểu lo lắng khi yêu, kê đúng thái độ và điểm cần sửa.",
+      "line4": "Hãy lưu kết quả và đọc lại thường xuyên—một ngày nào đó sẽ giúp bạn.",
+      "line5": "Càng trả lời thật, đơn càng sát với bạn.",
+      "line6": "Nhận đơn tình yêu của tôi 💊 Bắt đầu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Đơn tình yêu dành cho tôi)",
+      "goToTest": "Đi làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "diagnosisLabel": "Chẩn đoán",
+      "prescription1": "[Đơn 1]",
+      "prescription2": "[Đơn 2]",
+      "prescription3": "[Đơn 3]",
+      "dosage": "Cách dùng",
+      "precautions": "Lưu ý",
+      "sideEffects": "Tác dụng phụ",
+      "extraRx": "Gợi ý kèm theo",
+      "prescriptionPeriod": "Thời gian",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Đơn tình yêu của mình là {type}! 💊 Lưu lại đọc dần… của bạn là gì?",
+      "kakao": "Đơn tình yêu của mình là {type}! 💊 Lưu lại đọc dần… của bạn là gì?",
+      "wechat": "Đơn tình yêu của mình là {type}! 💊 Lưu lại đọc dần… của bạn là gì?",
+      "whatsapp": "Đơn tình yêu của mình là {type}! 💊 Lưu lại đọc dần… của bạn là gì?",
+      "telegram": "Đơn tình yêu của mình là {type}! 💊 Lưu lại đọc dần… của bạn là gì?",
+      "line": "Đơn tình yêu của mình là {type}! 💊 Lưu lại đọc dần… của bạn là gì?",
+      "startDefault": "Đơn tình yêu dành cho tôi 💊 12 câu",
+      "startKakao": "Đơn tình yêu dành cho tôi 💊 12 câu",
+      "startWechat": "Đơn tình yêu dành cho tôi 💊 12 câu",
+      "startWhatsapp": "Đơn tình yêu dành cho tôi 💊 12 câu",
+      "startTelegram": "Đơn tình yêu dành cho tôi 💊 12 câu",
+      "startLine": "Đơn tình yêu dành cho tôi 💊 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi tạo. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

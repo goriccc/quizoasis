@@ -109,6 +109,10 @@ import {
   phase3SoloEscapePossibilityQuestions,
   phase3SoloEscapePossibilityResults,
 } from '@/lib/phase3SoloEscapePossibilityData';
+import {
+  phase3LovePrescriptionQuestions,
+  phase3LovePrescriptionResults,
+} from '@/lib/phase3LovePrescriptionData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -333,6 +337,10 @@ const Phase3LoveWeaknessMomentTestClient = dynamic(
 );
 const Phase3SoloEscapePossibilityTestClient = dynamic(
   () => import('@/components/Phase3SoloEscapePossibilityTestClient'),
+  { ssr: false }
+);
+const Phase3LovePrescriptionTestClient = dynamic(
+  () => import('@/components/Phase3LovePrescriptionTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1436,6 +1444,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['單身', '戀愛', '共鳴'],
         vi: ['Độc thân', 'Tình yêu', 'Đồng cảm'],
         id: ['Jomblo', 'Asmara', 'Relate'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-prescription') {
+    test = {
+      slug: 'phase3-love-prescription',
+      title: {
+        ko: '나를 위한 연애 처방전',
+        en: 'My Love Prescription',
+        ja: '私のための恋愛処方箋',
+        'zh-CN': '属于我的恋爱处方',
+        'zh-TW': '屬於我的戀愛處方',
+        vi: 'Đơn thuốc tình yêu dành cho tôi',
+        id: 'Resep cinta untukku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 고민 유형별 맞춤 처방전 6가지. #연애 #심리 #자기계발',
+        en: '12 questions, 4 choices — 6 tailored love prescriptions by worry type. #love #psychology #growth',
+        ja: '12問4択で見る恋愛悩みタイプ別処方箋6種。#恋愛 #心理 #自己成長',
+        'zh-CN': '12 道四选一，六种恋爱烦恼对症处方。#恋爱 #心理 #自我成长',
+        'zh-TW': '12 題四選一，六種戀愛煩惱對症處方。#戀愛 #心理 #自我成長',
+        vi: '12 câu — 6 đơn thuốc theo kiểu lo lắng khi yêu. #tìnhyêu #tâmlý #pháttriển',
+        id: '12 pertanyaan — 6 resep cinta sesuai pola. #cinta #psikologi #perkembangan',
+      },
+      thumbnail: 'p3_test_love_prescription.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리', '자기계발'],
+        en: ['Love', 'Psychology', 'Growth'],
+        ja: ['恋愛', '心理', '自己成長'],
+        'zh-CN': ['恋爱', '心理', '自我成长'],
+        'zh-TW': ['戀愛', '心理', '自我成長'],
+        vi: ['Tình yêu', 'Tâm lý', 'Phát triển bản thân'],
+        id: ['Cinta', 'Psikologi', 'Pengembangan diri'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3936,6 +3981,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SoloEscapePossibilityQuestions}
           results={phase3SoloEscapePossibilityResults}
           questionCount={phase3SoloEscapePossibilityQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-love-prescription') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-love-prescription',
+      title: {
+        ko: '나를 위한 연애 처방전',
+        en: 'My Love Prescription',
+        ja: '私のための恋愛処方箋',
+        'zh-CN': '属于我的恋爱处方',
+        'zh-TW': '屬於我的戀愛處方',
+        vi: 'Đơn thuốc tình yêu dành cho tôi',
+        id: 'Resep cinta untukku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 연애 고민 유형별 맞춤 처방전 6가지. #연애 #심리 #자기계발',
+        en: '12 questions, 4 choices — 6 tailored love prescriptions by worry type. #love #psychology #growth',
+        ja: '12問4択で見る恋愛悩みタイプ別処方箋6種。#恋愛 #心理 #自己成長',
+        'zh-CN': '12 道四选一，六种恋爱烦恼对症处方。#恋爱 #心理 #自我成长',
+        'zh-TW': '12 題四選一，六種戀愛煩惱對症處方。#戀愛 #心理 #自我成長',
+        vi: '12 câu — 6 đơn thuốc theo kiểu lo lắng khi yêu. #tìnhyêu #tâmlý #pháttriển',
+        id: '12 pertanyaan — 6 resep cinta sesuai pola. #cinta #psikologi #perkembangan',
+      },
+      thumbnail: 'p3_test_love_prescription.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리', '자기계발'],
+        en: ['Love', 'Psychology', 'Growth'],
+        ja: ['恋愛', '心理', '自己成長'],
+        'zh-CN': ['恋爱', '心理', '自我成长'],
+        'zh-TW': ['戀愛', '心理', '自我成長'],
+        vi: ['Tình yêu', 'Tâm lý', 'Phát triển bản thân'],
+        id: ['Cinta', 'Psikologi', 'Pengembangan diri'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LovePrescriptionTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LovePrescriptionQuestions}
+          results={phase3LovePrescriptionResults}
+          questionCount={phase3LovePrescriptionQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

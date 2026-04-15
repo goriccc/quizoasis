@@ -1627,6 +1627,63 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3LovePrescriptionTest": {
+    "startMessage": {
+      "line1": "Asmara juga butuh resep.",
+      "line2": "Kalau setiap kali sakit karena alasan serupa, mengulang kesalahan yang sama, dan berakhir serupa—itu bukan sial, tapi resep yang tepat belum ketemu.",
+      "line3": "Kami tidak hanya menenangkan—kami beri tahu yang benar-benar kamu butuhkan. Sesuai pola kekhawatiran, kami tuliskan sikap dan perbaikan yang pas.",
+      "line4": "Simpan hasilnya dan baca lagi sesekali—suatu saat pasti membantu.",
+      "line5": "Semakin jujur jawabanmu, semakin tepat resepnya.",
+      "line6": "Ambil resep cintaku 💊 Mulai"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Resep cinta untukku)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "diagnosisLabel": "Diagnosis",
+      "prescription1": "[Resep 1]",
+      "prescription2": "[Resep 2]",
+      "prescription3": "[Resep 3]",
+      "dosage": "Cara minum",
+      "precautions": "Peringatan",
+      "sideEffects": "Efek samping",
+      "extraRx": "Rekomendasi tambahan",
+      "prescriptionPeriod": "Durasi",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Resep cintaku adalah {type}! 💊 Disimpan dulu untuk dibaca lagi… punyamu apa?",
+      "kakao": "Resep cintaku adalah {type}! 💊 Disimpan dulu untuk dibaca lagi… punyamu apa?",
+      "wechat": "Resep cintaku adalah {type}! 💊 Disimpan dulu untuk dibaca lagi… punyamu apa?",
+      "whatsapp": "Resep cintaku adalah {type}! 💊 Disimpan dulu untuk dibaca lagi… punyamu apa?",
+      "telegram": "Resep cintaku adalah {type}! 💊 Disimpan dulu untuk dibaca lagi… punyamu apa?",
+      "line": "Resep cintaku adalah {type}! 💊 Disimpan dulu untuk dibaca lagi… punyamu apa?",
+      "startDefault": "Resep cinta untukku 💊 12 pertanyaan",
+      "startKakao": "Resep cinta untukku 💊 12 pertanyaan",
+      "startWechat": "Resep cinta untukku 💊 12 pertanyaan",
+      "startWhatsapp": "Resep cinta untukku 💊 12 pertanyaan",
+      "startTelegram": "Resep cinta untukku 💊 12 pertanyaan",
+      "startLine": "Resep cinta untukku 💊 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Perangkat ini tidak mendukung berbagi.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "KakaoTalk sedang menginisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

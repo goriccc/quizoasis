@@ -1628,6 +1628,63 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3LovePrescriptionTest": {
+    "startMessage": {
+      "line1": "恋愛にも処方箋が必要です。",
+      "line2": "いつも同じ理由で苦しく、同じ失敗を繰り返し、同じ結末になるなら、それは運が悪いのではなく、まだ合う処方が見つかっていないだけです。",
+      "line3": "甘い慰めだけでなく、本当に必要なことをお伝えします。恋の悩みタイプ別に、あなたに必要なスタンスと改善点を処方します。",
+      "line4": "結果を保存して、ときどき読み返してください。いつか必ず役立ちます。",
+      "line5": "正直に選ぶほど、あなたに合う処方が正確になります。",
+      "line6": "私の恋愛処方箋を受け取る 💊 スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私のための恋愛処方箋）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "diagnosisLabel": "診断名",
+      "prescription1": "[処方箋1]",
+      "prescription2": "[処方箋2]",
+      "prescription3": "[処方箋3]",
+      "dosage": "服用方法",
+      "precautions": "注意事項",
+      "sideEffects": "副作用",
+      "extraRx": "併用推奨",
+      "prescriptionPeriod": "服用期間",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の恋愛処方箋は {type}！💊 保存して何度も読み返す…あなたはどれだった？",
+      "kakao": "私の恋愛処方箋は {type}！💊 保存して何度も読み返す…あなたはどれだった？",
+      "wechat": "私の恋愛処方箋は {type}！💊 保存して何度も読み返す…あなたはどれだった？",
+      "whatsapp": "私の恋愛処方箋は {type}！💊 保存して何度も読み返す…あなたはどれだった？",
+      "telegram": "私の恋愛処方箋は {type}！💊 保存して何度も読み返す…あなたはどれだった？",
+      "line": "私の恋愛処方箋は {type}！💊 保存して何度も読み返す…あなたはどれだった？",
+      "startDefault": "私のための恋愛処方箋 💊 全12問",
+      "startKakao": "私のための恋愛処方箋 💊 全12問",
+      "startWechat": "私のための恋愛処方箋 💊 全12問",
+      "startWhatsapp": "私のための恋愛処方箋 💊 全12問",
+      "startTelegram": "私のための恋愛処方箋 💊 全12問",
+      "startLine": "私のための恋愛処方箋 💊 全12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkの共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",

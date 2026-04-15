@@ -889,6 +889,63 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3LovePrescriptionTest": {
+    "startMessage": {
+      "line1": "연애에도 처방전이 필요합니다.",
+      "line2": "매번 비슷한 이유로 힘들고, 매번 비슷한 실수를 반복하고, 매번 비슷한 결말을 맞이한다면. 그건 운이 나쁜 게 아니라 내게 맞는 처방이 아직 없는 것입니다.",
+      "line3": "달콤한 위로가 아닌, 진짜 필요한 것을 알려드립니다. 연애 고민 유형별로 나에게 꼭 필요한 연애 자세와 개선점을 정확하게 처방해 드립니다.",
+      "line4": "저장해두고 틈틈이 꺼내 보세요. 언젠가 반드시 도움이 됩니다.",
+      "line5": "솔직하게 고르면 나에게 맞는 처방이 더 정확해집니다.",
+      "line6": "나의 연애 처방전 받아보기 💊 처방 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나를 위한 연애 처방전)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "diagnosisLabel": "진단명",
+      "prescription1": "[처방전 1]",
+      "prescription2": "[처방전 2]",
+      "prescription3": "[처방전 3]",
+      "dosage": "복용법",
+      "precautions": "주의사항",
+      "sideEffects": "부작용",
+      "extraRx": "추천 병행 처방",
+      "prescriptionPeriod": "처방 기간",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "나의 연애 처방전은 {type}! 💊 저장해두고 두고두고 봐야겠다... 너는 어떤 처방전 나왔어?",
+      "kakao": "나의 연애 처방전은 {type}! 💊 저장해두고 두고두고 봐야겠다... 너는 어떤 처방전 나왔어?",
+      "wechat": "나의 연애 처방전은 {type}! 💊 저장해두고 두고두고 봐야겠다... 너는 어떤 처방전 나왔어?",
+      "whatsapp": "나의 연애 처방전은 {type}! 💊 저장해두고 두고두고 봐야겠다... 너는 어떤 처방전 나왔어?",
+      "telegram": "나의 연애 처방전은 {type}! 💊 저장해두고 두고두고 봐야겠다... 너는 어떤 처방전 나왔어?",
+      "line": "나의 연애 처방전은 {type}! 💊 저장해두고 두고두고 봐야겠다... 너는 어떤 처방전 나왔어?",
+      "startDefault": "나를 위한 연애 처방전 💊 12문항",
+      "startKakao": "나를 위한 연애 처방전 💊 12문항",
+      "startWechat": "나를 위한 연애 처방전 💊 12문항",
+      "startWhatsapp": "나를 위한 연애 처방전 💊 12문항",
+      "startTelegram": "나를 위한 연애 처방전 💊 12문항",
+      "startLine": "나를 위한 연애 처방전 💊 12문항"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "잠깐만 보려고 켰는데 2시간이 지나있던 경험, 있으시죠?",

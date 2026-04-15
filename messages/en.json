@@ -1668,6 +1668,63 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3LovePrescriptionTest": {
+    "startMessage": {
+      "line1": "Love needs a prescription too.",
+      "line2": "If you struggle for the same reasons, repeat the same mistakes, and land the same endings—it is not bad luck. You have not found the right prescription yet.",
+      "line3": "We will not offer sweet comfort only—we will tell you what you really need. By worry type, we prescribe the mindset shifts and fixes that fit you.",
+      "line4": "Save your result and revisit it often. Someday it will help.",
+      "line5": "The more honest your answers, the more accurate your prescription.",
+      "line6": "Get my love prescription 💊 Start"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (My love prescription)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "diagnosisLabel": "Diagnosis",
+      "prescription1": "[Prescription 1]",
+      "prescription2": "[Prescription 2]",
+      "prescription3": "[Prescription 3]",
+      "dosage": "How to take",
+      "precautions": "Precautions",
+      "sideEffects": "Side effects",
+      "extraRx": "Recommended add-ons",
+      "prescriptionPeriod": "Duration",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My love prescription is {type}! 💊 Saving this to reread later… What did you get?",
+      "kakao": "My love prescription is {type}! 💊 Saving this to reread later… What did you get?",
+      "wechat": "My love prescription is {type}! 💊 Saving this to reread later… What did you get?",
+      "whatsapp": "My love prescription is {type}! 💊 Saving this to reread later… What did you get?",
+      "telegram": "My love prescription is {type}! 💊 Saving this to reread later… What did you get?",
+      "line": "My love prescription is {type}! 💊 Saving this to reread later… What did you get?",
+      "startDefault": "My love prescription 💊 12 questions",
+      "startKakao": "My love prescription 💊 12 questions",
+      "startWechat": "My love prescription 💊 12 questions",
+      "startWhatsapp": "My love prescription 💊 12 questions",
+      "startTelegram": "My love prescription 💊 12 questions",
+      "startLine": "My love prescription 💊 12 questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",
