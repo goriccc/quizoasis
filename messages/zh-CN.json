@@ -1460,6 +1460,62 @@
       "popularTestsTop5": "🔥 近期热门测验 Top5"
     }
   },
+  "phase3IdealTypeDnaAnalysisTest": {
+    "startMessage": {
+      "line1": "你喜欢过的人，有没有发现共同点？",
+      "line2": "仔细想想，总被相似氛围的人吸引，在相似瞬间心动，因为相似的理由喜欢上——这是一种模式。",
+      "line3": "那就是你的理想型 DNA。",
+      "line4": "说是“口味”又太一致，说是“巧合”又重复太多次。",
+      "line5": "用 12 道题分析过去心动对象的共同点，解读你的理想型 DNA。",
+      "line6": "分析我的理想型 DNA 💘 开始探索类型"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告区（理想型 / 喜欢的人类型）",
+      "goToTest": "进入测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "dnaType": "理想型 DNA 类型",
+      "excitingPoint": "心动点",
+      "commonGround": "过去心动对象的共同点",
+      "idealKeywords": "理想型关键词",
+      "flirtLine": "会让你心动的一句话",
+      "detectionTip": "如何识别你的类型",
+      "goodMatch": "绝配类型",
+      "badMatch": "容易不合的类型",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的理想型 DNA 是{type}！💘 和以前喜欢的人对上了…你是哪种？",
+      "kakao": "我的理想型 DNA 是{type}！💘 和以前喜欢的人对上了…你是哪种？",
+      "wechat": "我的理想型 DNA 是{type}！💘 和以前喜欢的人对上了…你是哪种？",
+      "whatsapp": "我的理想型 DNA 是{type}！💘 和以前喜欢的人对上了…你是哪种？",
+      "telegram": "我的理想型 DNA 是{type}！💘 和以前喜欢的人对上了…你是哪种？",
+      "line": "我的理想型 DNA 是{type}！💘 和以前喜欢的人对上了…你是哪种？",
+      "startDefault": "我喜欢的人类型分析 💘 理想型 DNA 12 题",
+      "startKakao": "我喜欢的人类型分析 💘 理想型 DNA 12 题",
+      "startWechat": "我喜欢的人类型分析 💘 理想型 DNA 12 题",
+      "startWhatsapp": "我喜欢的人类型分析 💘 理想型 DNA 12 题",
+      "startTelegram": "我喜欢的人类型分析 💘 理想型 DNA 12 题",
+      "startLine": "我喜欢的人类型分析 💘 理想型 DNA 12 题"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "当前设备无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测验推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测验 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "说好只看一分钟，结果两小时没了——你也经历过吧？",

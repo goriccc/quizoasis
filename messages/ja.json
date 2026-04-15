@@ -1461,6 +1461,62 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3IdealTypeDnaAnalysisTest": {
+    "startMessage": {
+      "line1": "これまで惹かれた人、なにか共通点がありませんでしたか？",
+      "line2": "似た雰囲気の人に惹かれ、似た瞬間にときめき、似た理由で好きになる——そんなパターンがあります。",
+      "line3": "それがあなたの理想型DNAです。",
+      "line4": "「好み」だけでは説明しきれない一貫性、「偶然」には繰り返しが多すぎます。",
+      "line5": "12の質問で、これまで惹かれた人の共通点を分析し、理想型DNAを読み解きます。",
+      "line6": "理想型DNAを分析する 💘 タイプ探しスタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSenseエリア（理想型・好きになる人タイプ）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "dnaType": "理想型DNAタイプ",
+      "excitingPoint": "ときめくポイント",
+      "commonGround": "これまで惹かれた人の共通点",
+      "idealKeywords": "理想型キーワード",
+      "flirtLine": "ときめく一言",
+      "detectionTip": "理想型の見分け方",
+      "goodMatch": "相性抜群タイプ",
+      "badMatch": "ぶつかりやすいタイプ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の理想型DNAは{type}！💘 これまで好きだった人の共通点、当たってる…あなたは？",
+      "kakao": "私の理想型DNAは{type}！💘 これまで好きだった人の共通点、当たってる…あなたは？",
+      "wechat": "私の理想型DNAは{type}！💘 これまで好きだった人の共通点、当たってる…あなたは？",
+      "whatsapp": "私の理想型DNAは{type}！💘 これまで好きだった人の共通点、当たってる…あなたは？",
+      "telegram": "私の理想型DNAは{type}！💘 これまで好きだった人の共通点、当たってる…あなたは？",
+      "line": "私の理想型DNAは{type}！💘 これまで好きだった人の共通点、当たってる…あなたは？",
+      "startDefault": "好きになる人のタイプ分析 💘 理想型DNA・全12問",
+      "startKakao": "好きになる人のタイプ分析 💘 理想型DNA・全12問",
+      "startWechat": "好きになる人のタイプ分析 💘 理想型DNA・全12問",
+      "startWhatsapp": "好きになる人のタイプ分析 💘 理想型DNA・全12問",
+      "startTelegram": "好きになる人のタイプ分析 💘 理想型DNA・全12問",
+      "startLine": "好きになる人のタイプ分析 💘 理想型DNA・全12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalkの共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 最近人気のテストトップ5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "「ちょっとだけ」って開いたのに、気づいたら2時間…ありますよね？",

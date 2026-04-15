@@ -97,6 +97,10 @@ import {
   phase3LoveBehaviorTypeQuestions,
   phase3LoveBehaviorTypeResults,
 } from '@/lib/phase3LoveBehaviorTypeData';
+import {
+  phase3IdealTypeDnaAnalysisQuestions,
+  phase3IdealTypeDnaAnalysisResults,
+} from '@/lib/phase3IdealTypeDnaAnalysisData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -309,6 +313,10 @@ const Phase3LoveGreenFlagFinderTestClient = dynamic(
 );
 const Phase3LoveBehaviorTypeTestClient = dynamic(
   () => import('@/components/Phase3LoveBehaviorTypeTestClient'),
+  { ssr: false }
+);
+const Phase3IdealTypeDnaAnalysisTestClient = dynamic(
+  () => import('@/components/Phase3IdealTypeDnaAnalysisTestClient'),
   { ssr: false }
 );
 const Phase2FactBomberTestClient = dynamic(() => import('@/components/Phase2FactBomberTestClient'), {
@@ -1301,6 +1309,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛', '性格', '心理', '情侶'],
         vi: ['Tình yêu', 'Tính cách', 'Tâm lý', 'Cặp đôi'],
         id: ['Asmara', 'Kepribadian', 'Psikologi', 'Pasangan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-ideal-type-dna-analysis') {
+    test = {
+      slug: 'phase3-ideal-type-dna-analysis',
+      title: {
+        ko: '내가 좋아하는 사람의 유형 분석',
+        en: 'Who Is My Ideal Type? Crush Pattern Analysis',
+        ja: '好きになる人のタイプ分析',
+        'zh-CN': '我喜欢的人类型分析',
+        'zh-TW': '我喜歡的人類型分析',
+        vi: 'Phân tích gu người mình thích',
+        id: 'Analisis tipe orang yang kusuka',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 이상형 DNA 스펙트럼 6유형. #연애 #이상형 #심리',
+        en: '12 multiple-choice questions — 6 ideal-type DNA spectrum types. #love #crush #psychology',
+        ja: '全12問4択で見る理想型DNAスペクトラム6タイプ。#恋愛 #理想型 #心理',
+        'zh-CN': '12 道四选一，六种理想型 DNA 光谱。#恋爱 #理想型 #心理',
+        'zh-TW': '12 題四選一，六種理想型 DNA 光譜。#戀愛 #理想型 #心理',
+        vi: '12 câu trắc nghiệm — 6 kiểu quang phổ DNA người trong mơ. #tìnhyêu #gu #tâmlý',
+        id: '12 pertanyaan pilihan ganda — 6 spektrum DNA tipe ideal. #asmara #ideal #psikologi',
+      },
+      thumbnail: 'p3_test_ideal_type_dna_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '이상형', '심리'],
+        en: ['Love', 'Crush', 'Psychology'],
+        ja: ['恋愛', '理想型', '心理'],
+        'zh-CN': ['恋爱', '理想型', '心理'],
+        'zh-TW': ['戀愛', '理想型', '心理'],
+        vi: ['Tình yêu', 'Gu', 'Tâm lý'],
+        id: ['Asmara', 'Ideal', 'Psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3636,6 +3681,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LoveBehaviorTypeQuestions}
           results={phase3LoveBehaviorTypeResults}
           questionCount={phase3LoveBehaviorTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-ideal-type-dna-analysis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-ideal-type-dna-analysis',
+      title: {
+        ko: '내가 좋아하는 사람의 유형 분석',
+        en: 'Who Is My Ideal Type? Crush Pattern Analysis',
+        ja: '好きになる人のタイプ分析',
+        'zh-CN': '我喜欢的人类型分析',
+        'zh-TW': '我喜歡的人類型分析',
+        vi: 'Phân tích gu người mình thích',
+        id: 'Analisis tipe orang yang kusuka',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 이상형 DNA 스펙트럼 6유형. #연애 #이상형 #심리',
+        en: '12 multiple-choice questions — 6 ideal-type DNA spectrum types. #love #crush #psychology',
+        ja: '全12問4択で見る理想型DNAスペクトラム6タイプ。#恋愛 #理想型 #心理',
+        'zh-CN': '12 道四选一，六种理想型 DNA 光谱。#恋爱 #理想型 #心理',
+        'zh-TW': '12 題四選一，六種理想型 DNA 光譜。#戀愛 #理想型 #心理',
+        vi: '12 câu trắc nghiệm — 6 kiểu quang phổ DNA người trong mơ. #tìnhyêu #gu #tâmlý',
+        id: '12 pertanyaan pilihan ganda — 6 spektrum DNA tipe ideal. #asmara #ideal #psikologi',
+      },
+      thumbnail: 'p3_test_ideal_type_dna_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '이상형', '심리'],
+        en: ['Love', 'Crush', 'Psychology'],
+        ja: ['恋愛', '理想型', '心理'],
+        'zh-CN': ['恋爱', '理想型', '心理'],
+        'zh-TW': ['戀愛', '理想型', '心理'],
+        vi: ['Tình yêu', 'Gu', 'Tâm lý'],
+        id: ['Asmara', 'Ideal', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3IdealTypeDnaAnalysisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3IdealTypeDnaAnalysisQuestions}
+          results={phase3IdealTypeDnaAnalysisResults}
+          questionCount={phase3IdealTypeDnaAnalysisQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

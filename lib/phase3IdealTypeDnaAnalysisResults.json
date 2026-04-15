@@ -1,0 +1,674 @@
+[
+  {
+    "type": "Type1",
+    "emoji": "🫂",
+    "title": {
+      "ko": "나를 가장 잘 아는 사람에게 끌리는, 공감·배려형 이상형 DNA (0~5점)",
+      "en": "Empathy & Care Ideal-Type DNA — drawn to those who truly know you (0–5 pts)",
+      "ja": "よくわかってくれる人に惹かれる、共感・思いやり型 理想型DNA（0〜5点）",
+      "zh-CN": "容易被最懂你的人吸引：共情·体贴型理想型 DNA（0~5 分）",
+      "zh-TW": "容易被最懂你的人吸引：共情·體貼型理想型 DNA（0~5 分）",
+      "vi": "ADN người trong mơ kiểu đồng cảm & quan tâm — hút vào người hiểu bạn (0–5 đ)",
+      "id": "DNA tipe ideal empati & perhatian — tertarik pada yang paling memahamimu (0–5)"
+    },
+    "shortDescription": {
+      "ko": "당신의 이상형 DNA는 '나를 말하지 않아도 알아주는 사람'입니다.",
+      "en": "Your ideal-type DNA is someone who gets you—even when you don’t say it.",
+      "ja": "あなたの理想型DNAは「言わなくてもわかってくれる人」です。",
+      "zh-CN": "你的理想型 DNA 是「不用说也能懂你的人」。",
+      "zh-TW": "你的理想型 DNA 是「不用說也能懂你的人」。",
+      "vi": "DNA người trong mơ của bạn là người hiểu bạn dù bạn không nói ra.",
+      "id": "DNA idealmu adalah orang yang mengerti tanpa kamu jelaskan."
+    },
+    "description": {
+      "ko": "역대 설렜던 사람들의 공통점을 분석하면 하나가 보입니다. 섬세하고, 다정하고, 내 감정을 먼저 알아채는 사람. 화려한 외모나 카리스마보다 나를 진심으로 이해하고 챙겨주는 사람에게 훨씬 강하게 끌립니다. 말하지 않아도 알아주는 그 순간, 당신은 완전히 무너집니다. 공감 능력이 뛰어나고 배려가 몸에 밴 사람이 당신의 이상형 DNA입니다.",
+      "en": "Looking back at people you’ve crushed on, one pattern shows up: they’re thoughtful, kind, and quick to sense how you feel. You’re pulled far more toward someone who truly understands and cares for you than toward flashy looks or charisma. The moment they get you without you having to explain—you’re undone. Your ideal-type DNA is someone with strong empathy and care baked in.",
+      "ja": "これまで惹かれた人を振り返ると、共通点がひとつ見えます。繊細で優しく、自分の気持ちを先に察してくれる人。派手な見た目やカリスマより、本気で理解して気遣ってくれる人に強く惹かれます。言わなくてもわかってくれる瞬間、あなたはとろけます。共感力が高く、思いやりが身についている人があなたの理想型DNAです。",
+      "zh-CN": "回顾让你心动的人，会发现一个共同点：细腻、温柔、先察觉你的情绪。比起外表或魅力，你更被真心理解你、照顾你的人强烈吸引。不用说出口就被懂的那一刻，你会彻底沦陷。共情力强、体贴入骨的人，就是你的理想型 DNA。",
+      "zh-TW": "回顧讓你心動的人，會發現一個共同點：細膩、溫柔、先察覺你的情緒。比起外表或魅力，你更被真心理解你、照顧你的人強烈吸引。不用說出口就被懂的那一刻，你會徹底淪陷。共情力強、體貼入骨的人，就是你的理想型 DNA。",
+      "vi": "Nhìn lại những người từng khiến bạn rung động, có một điểm chung: tinh tế, ấm áp, hay bắt trước cảm xúc của bạn. Bạn bị cuốn mạnh bởi người thật lòng hiểu và chăm sóc bạn hơn là ngoại hình hay charisma. Khoảnh khắc họ hiểu bạn mà bạn chưa cần nói—bạn tan chảy. DNA người trong mơ của bạn là người giàu đồng cảm và chu đáo.",
+      "id": "Melihat lagi orang yang pernah bikin jatuh hati, ada pola: halus, penyayang, cepat sadar perasaanmu. Kamu lebih tertarik pada yang benar-benar memahami dan peduli daripada penampilan atau karisma. Saat mereka mengerti tanpa kamu jelaskan—kamu luluh. DNA idealmu adalah orang dengan empati kuat dan perhatian mendalam."
+    },
+    "dnaTypeLabel": {
+      "ko": "이상형 DNA: 공감·배려형 (Empathy Type)",
+      "en": "Ideal-type DNA: Empathy & Care (Empathy Type)",
+      "ja": "理想型DNA：共感・思いやり型（Empathy Type）",
+      "zh-CN": "理想型 DNA：共情·体贴型（Empathy Type）",
+      "zh-TW": "理想型 DNA：共情·體貼型（Empathy Type）",
+      "vi": "DNA người trong mơ: Đồng cảm & quan tâm (Empathy Type)",
+      "id": "DNA tipe ideal: Empati & perhatian (Empathy Type)"
+    },
+    "excitingPoint": {
+      "ko": "\"오늘 힘들어 보이는데 괜찮아?\" 먼저 챙겨주는 말 한마디",
+      "en": "That first caring line: “You look tired—are you okay?”",
+      "ja": "「今日つらそうだけど大丈夫？」と先に気遣ってくれる一言",
+      "zh-CN": "先开口关心：“你看起来很累，还好吗？”",
+      "zh-TW": "先開口關心：「你看起來很累，還好嗎？」",
+      "vi": "Một câu quan tâm trước: “Trông bạn mệt—ổn không?”",
+      "id": "Satu kalimat peduli dulu: “Kamu kelihatan lelah—kamu oke?”"
+    },
+    "commonGround": {
+      "ko": "섬세함, 다정함, 감정 캐치 능력, 조용한 배려",
+      "en": "Thoughtfulness, kindness, reading emotions, quiet consideration",
+      "ja": "繊細さ、優しさ、感情を察する力、静かな気遣い",
+      "zh-CN": "细腻，温柔，读懂情绪，安静的体贴",
+      "zh-TW": "細膩，溫柔，讀懂情緒，安靜的體貼",
+      "vi": "Tinh tế, ấm áp, bắt cảm xúc, quan tâm lặng lẽ",
+      "id": "Halus, penyayang, peka emosi, perhatian tanpa bicara"
+    },
+    "idealKeywords": {
+      "ko": "따뜻함, 공감, 섬세함, 안정감",
+      "en": "Warmth, empathy, sensitivity, steadiness",
+      "ja": "あたたかさ、共感、繊細さ、安心感",
+      "zh-CN": "温暖，共情，细腻，安定感",
+      "zh-TW": "溫暖，共情，細膩，安定感",
+      "vi": "Ấm áp, đồng cảm, tinh tế, vững vàng",
+      "id": "Hangat, empati, halus, tenang"
+    },
+    "flirtLine": {
+      "ko": "오늘 좀 힘들어 보여. 뭐 먹고 싶어?",
+      "en": "You look like you’ve had a rough day. What do you want to eat?",
+      "ja": "今日はちょっとしんどそう。何食べたい？",
+      "zh-CN": "你今天看起来有点累。想吃点什么？",
+      "zh-TW": "你今天看起來有點累。想吃點什麼？",
+      "vi": "Hôm nay trông bạn hơi mệt. Muốn ăn gì?",
+      "id": "Kamu kelihatan capek hari ini. Mau makan apa?"
+    },
+    "detectionTip": {
+      "ko": "처음 만났을 때 내 말을 어떻게 듣는지를 보세요. 끝까지 듣고 반응하면 당신의 이상형일 가능성 높음",
+      "en": "Watch how they listen the first time you meet. If they stay with you to the end and respond—you may have found your type.",
+      "ja": "初対面であなたの話をどう聞くかを見て。最後まで聞いて反応してくれるなら理想型の可能性大。",
+      "zh-CN": "初次见面时观察对方怎么听你说话。能听完并回应的人，很可能就是你的理想型。",
+      "zh-TW": "初次見面時觀察對方怎麼聽你說話。能聽完並回應的人，很可能就是你的理想型。",
+      "vi": "Xem họ lắng nghe bạn thế nào lần đầu gặp. Nghe hết và phản hồi—rất có thể là gu của bạn.",
+      "id": "Perhatikan cara mereka mendengarkan saat pertama bertemu. Kalau sampai habis dan merespons—besar kemungkinan cocok denganmu."
+    },
+    "goodMatch": {
+      "ko": "Type 2 (따뜻함과 즐거움이 함께하면 완벽)",
+      "en": "Type 2 (Warmth + fun together is a perfect match)",
+      "ja": "Type 2（あたたかさと楽しさが揃うと最高）",
+      "zh-CN": "Type 2（温暖 + 快乐并存就很完美）",
+      "zh-TW": "Type 2（溫暖＋快樂並存就很完美）",
+      "vi": "Type 2 (Ấm áp + vui vẻ cùng lúc là đỉnh)",
+      "id": "Type 2 (Hangat + seru bareng = pas banget)"
+    },
+    "badMatch": {
+      "ko": "Type 6 (카리스마형은 섬세함이 부족할 수 있음)",
+      "en": "Type 6 (Charisma types may lack subtle care)",
+      "ja": "Type 6（カリスマ型は繊細さが足りないことがある）",
+      "zh-CN": "Type 6（魅力型可能缺少细腻）",
+      "zh-TW": "Type 6（魅力型可能缺少細膩）",
+      "vi": "Type 6 (Kiểu charisma đôi khi thiếu tinh tế)",
+      "id": "Type 6 (Tipe karisma bisa kurang halus)"
+    },
+    "shareTypeName": {
+      "ko": "공감·배려형",
+      "en": "Empathy & care type",
+      "ja": "共感・思いやり型",
+      "zh-CN": "共情·体贴型",
+      "zh-TW": "共情·體貼型",
+      "vi": "Kiểu đồng cảm & quan tâm",
+      "id": "Tipe empati & perhatian"
+    }
+  },
+  {
+    "type": "Type2",
+    "emoji": "☀️",
+    "title": {
+      "ko": "같이 있으면 웃음이 끊이지 않는, 유머·활력형 이상형 DNA (6~11점)",
+      "en": "Humor & Energy Ideal-Type DNA — nonstop laughs together (6–11 pts)",
+      "ja": "一緒にいると笑いが止まらない、ユーモア・活力型 理想型DNA（6〜11点）",
+      "zh-CN": "在一起笑声不断：幽默·活力型理想型 DNA（6~11 分）",
+      "zh-TW": "在一起笑聲不斷：幽默·活力型理想型 DNA（6~11 分）",
+      "vi": "ADN kiểu hài hước & năng lượng—cười không ngớt khi ở cùng (6–11 đ)",
+      "id": "DNA humor & energi—tawa terus bareng mereka (6–11)"
+    },
+    "shortDescription": {
+      "ko": "당신의 이상형 DNA는 '어디서든 나를 웃게 만드는 사람'입니다.",
+      "en": "Your ideal-type DNA is someone who makes you laugh—anywhere.",
+      "ja": "あなたの理想型DNAは「どこでも自分を笑わせてくれる人」です。",
+      "zh-CN": "你的理想型 DNA 是「在哪儿都能逗你笑的人」。",
+      "zh-TW": "你的理想型 DNA 是「在哪兒都能逗你笑的人」。",
+      "vi": "DNA người trong mơ của bạn là người khiến bạn cười—ở đâu cũng vậy.",
+      "id": "DNA idealmu adalah orang yang bikin kamu tertawa—di mana saja."
+    },
+    "description": {
+      "ko": "역대 설렜던 사람들을 떠올리면 공통적으로 같이 있을 때 유독 많이 웃었던 기억이 납니다. 재치 있는 말 한마디, 어색한 상황을 자연스럽게 바꾸는 능력, 진지한 순간에도 웃음을 만들어내는 사람. 당신은 함께 있을 때 즐겁고 지루하지 않은 사람에게 강하게 끌립니다. 유머는 단순히 웃기는 것이 아니라 삶을 가볍게 만드는 능력이라고 느끼는 타입입니다.",
+      "en": "When you think of past crushes, you remember laughing a lot together. A witty line, the skill to flip awkward moments, someone who can bring humor even when things get serious. You’re strongly drawn to people who are fun and never boring to be around. For you, humor isn’t just “funny”—it’s the ability to make life feel lighter.",
+      "ja": "これまで惹かれた人を思い出すと、一緒にいたとき特にたくさん笑った記憶があります。気の利いた一言、気まずい空気を自然に変える力、真剣な場面でも笑いを作れる人。あなたは一緒にいて楽しくて飽きない人に強く惹かれます。ユーモアは単に面白いだけでなく、人生を軽くする力だと感じるタイプです。",
+      "zh-CN": "想起过去心动的人，共同点是一起时笑很多。机智的一句话、化解尴尬的能力、严肃时也能逗笑的人。你强烈被「在一起有趣、不无聊」的人吸引。对你来说，幽默不只是好笑，更是让生活变轻的能力。",
+      "zh-TW": "想起過去心動的人，共同點是一起時笑很多。機智的一句話、化解尷尬的能力、嚴肅時也能逗笑的人。你強烈被「在一起有趣、不無聊」的人吸引。對你來說，幽默不只是好笑，更是讓生活變輕的能力。",
+      "vi": "Nhớ lại crush cũ, bạn nhớ cười rất nhiều khi ở cùng. Một câu dí dỏm, xoay không khí gượng, mang tiếng cười cả lúc nghiêm túc. Bạn bị cuốn bởi người vui và không bao giờ nhàm chán. Với bạn, hài hước không chỉ là cười—mà là làm cuộc sống nhẹ hơn.",
+      "id": "Mengingat gebetan dulu, kamu ingat banyak tertawa bersama. Satu kalimat cerdas, bisa ubah situasi canggung, tetap lucu saat serius. Kamu tertarik kuat pada yang seru dan tak pernah membosankan. Bagimu humor bukan sekadar lucu—tapi kemampuan meringankan hidup."
+    },
+    "dnaTypeLabel": {
+      "ko": "이상형 DNA: 유머·활력형 (Humor Type)",
+      "en": "Ideal-type DNA: Humor & Energy (Humor Type)",
+      "ja": "理想型DNA：ユーモア・活力型（Humor Type）",
+      "zh-CN": "理想型 DNA：幽默·活力型（Humor Type）",
+      "zh-TW": "理想型 DNA：幽默·活力型（Humor Type）",
+      "vi": "DNA người trong mơ: Hài hước & năng lượng (Humor Type)",
+      "id": "DNA tipe ideal: Humor & energi (Humor Type)"
+    },
+    "excitingPoint": {
+      "ko": "분위기 싸해질 때 딱 맞는 드립 한 방",
+      "en": "The perfect quip when the mood gets tense",
+      "ja": "空気が重いときにぴったりの一発ギャグ",
+      "zh-CN": "气氛僵住时，恰到好处的一句梗",
+      "zh-TW": "氣氛僵住時，恰到好處的一句梗",
+      "vi": "Một câu đúng lúc khi không khí căng",
+      "id": "Satu lelucon pas saat suasana tegang"
+    },
+    "commonGround": {
+      "ko": "유머 감각, 밝은 에너지, 지루하지 않은 대화",
+      "en": "Sense of humor, bright energy, conversations that never drag",
+      "ja": "ユーモアセンス、明るいエネルギー、飽きない会話",
+      "zh-CN": "幽默感，明亮能量，聊不完的对话",
+      "zh-TW": "幽默感，明亮能量，聊不完的對話",
+      "vi": "Khiếu hài, năng lượng tươi, trò chuyện không nhàm",
+      "id": "Selera humor, energi cerah, obrolan tak membosankan"
+    },
+    "idealKeywords": {
+      "ko": "유쾌함, 재치, 활력, 자연스러움",
+      "en": "Cheer, wit, energy, ease",
+      "ja": "陽気さ、機転、活力、自然さ",
+      "zh-CN": "开朗，机智，活力，自然",
+      "zh-TW": "開朗，機智，活力，自然",
+      "vi": "Vui vẻ, dí dỏm, năng lượng, tự nhiên",
+      "id": "Ceria, cerdik, energi, natural"
+    },
+    "flirtLine": {
+      "ko": "상황에 딱 맞는 예상치 못한 위트 있는 한마디",
+      "en": "An unexpected witty line—perfectly timed",
+      "ja": "場にぴったりの、予想外のウィットの一言",
+      "zh-CN": "应景又出乎意料的一句机智话",
+      "zh-TW": "應景又出乎意料的一句機智話",
+      "vi": "Một câu dí dỏm bất ngờ—đúng lúc",
+      "id": "Satu kalimat jenaka tak terduga—pas banget"
+    },
+    "detectionTip": {
+      "ko": "첫 만남에서 어색함 없이 자연스럽게 웃게 만드는지 확인해보세요",
+      "en": "On a first meeting, see if they make you laugh naturally—no forced vibe.",
+      "ja": "初対面で、無理なく自然に笑わせてくれるか見てみて。",
+      "zh-CN": "初次见面时观察：能不能自然逗你笑、不尴尬。",
+      "zh-TW": "初次見面時觀察：能不能自然逗你笑、不尷尬。",
+      "vi": "Lần đầu gặp, xem họ có khiến bạn cười tự nhiên không.",
+      "id": "Saat pertama ketemu, coba lihat apakah mereka bikin kamu tertawa natural."
+    },
+    "goodMatch": {
+      "ko": "Type 1 (따뜻함이 더해지면 완벽한 조합)",
+      "en": "Type 1 (Add warmth and it’s a perfect combo)",
+      "ja": "Type 1（あたたかさが加わると最高の組み合わせ）",
+      "zh-CN": "Type 1（加上温暖就是绝配）",
+      "zh-TW": "Type 1（加上溫暖就是絕配）",
+      "vi": "Type 1 (Thêm ấm áp là hợp hoàn hảo)",
+      "id": "Type 1 (Tambah kehangatan = kombinasi sempurna)"
+    },
+    "badMatch": {
+      "ko": "Type 4 (너무 진지한 스타일과는 에너지가 다름)",
+      "en": "Type 4 (Very serious styles can feel like a different energy)",
+      "ja": "Type 4（真面目すぎるタイプとはエネルギーが合わないことがある）",
+      "zh-CN": "Type 4（与太严肃型气场可能不合）",
+      "zh-TW": "Type 4（與太嚴肅型氣場可能不合）",
+      "vi": "Type 4 (Kiểu quá nghiêm có thể lệch năng lượng)",
+      "id": "Type 4 (Tipe terlalu serius bisa beda energi)"
+    },
+    "shareTypeName": {
+      "ko": "유머·활력형",
+      "en": "Humor & energy type",
+      "ja": "ユーモア・活力型",
+      "zh-CN": "幽默·活力型",
+      "zh-TW": "幽默·活力型",
+      "vi": "Kiểu hài hước & năng lượng",
+      "id": "Tipe humor & energi"
+    }
+  },
+  {
+    "type": "Type3",
+    "emoji": "📚",
+    "title": {
+      "ko": "대화할수록 더 빠져드는, 지성·대화형 이상형 DNA (12~19점)",
+      "en": "Intellect & Conversation Ideal-Type DNA — deeper the talk, deeper the pull (12–19 pts)",
+      "ja": "話すほど惹かれる、知性・会話型 理想型DNA（12〜19点）",
+      "zh-CN": "越聊越上头：知性·对话型理想型 DNA（12~19 分）",
+      "zh-TW": "越聊越上頭：知性·對話型理想型 DNA（12~19 分）",
+      "vi": "ADN trí tuệ & hội thoại—càng nói càng mê (12–19 đ)",
+      "id": "DNA intelek & percakapan—makin ngobrol makin nyaman (12–19)"
+    },
+    "shortDescription": {
+      "ko": "당신의 이상형 DNA는 '이야기하면 할수록 더 알고 싶어지는 사람'입니다.",
+      "en": "Your ideal-type DNA is someone you want to know more—the more you talk.",
+      "ja": "あなたの理想型DNAは「話すほどもっと知りたくなる人」です。",
+      "zh-CN": "你的理想型 DNA 是「越聊越想了解的人」。",
+      "zh-TW": "你的理想型 DNA 是「越聊越想了解的人」。",
+      "vi": "DNA người trong mơ của bạn là người càng nói càng muốn hiểu thêm.",
+      "id": "DNA idealmu adalah orang yang makin diajak ngobrol makin ingin dikenal."
+    },
+    "description": {
+      "ko": "역대 설렜던 사람들 중에 대화하다가 시간 가는 줄 몰랐던 기억이 선명하게 남아있을 것입니다. 자신만의 관점이 뚜렷하고, 내가 미처 생각 못 했던 시각을 열어주고, 이야기할 때 뭔가 배우는 느낌이 드는 사람. 당신은 외모나 분위기보다 대화에서 끌림이 결정되는 타입입니다. 깊이 있는 대화가 최고의 설렘입니다.",
+      "en": "Among people you’ve liked, you clearly remember losing track of time in conversation. Someone with a sharp perspective who opens angles you hadn’t thought of—when you talk, you feel like you’re learning. Attraction, for you, is decided in dialogue more than looks or vibe. Deep talk is your biggest spark.",
+      "ja": "惹かれた人の中に、話していて時間を忘れた記憶がはっきり残っているはずです。自分なりの視点がはっきりしていて、自分がまだ考えたことのない角度を開いてくれ、話していて何か学べる感じがする人。あなたは外見や雰囲気より会話で惹かれるタイプです。深い会話が最高のときめきです。",
+      "zh-CN": "心动过的人里，你清楚记得聊得忘了时间。有鲜明观点、打开你没想过的视角、聊天时让你有收获感的人。比起外表或氛围，你更被对话本身吸引。深度聊天是你最大的心动。",
+      "zh-TW": "心動過的人裡，你清楚記得聊得忘了時間。有鮮明觀點、打開你沒想過的視角、聊天時讓你有收穫感的人。比起外表或氛圍，你更被對話本身吸引。深度聊天是你最大的心動。",
+      "vi": "Trong những người bạn thích, bạn nhớ mất thời gian vì trò chuyện. Người có góc nhìn rõ, mở ra điều bạn chưa nghĩ—nói chuyện mà cảm giác học được điều gì. Với bạn, sức hút đến từ lời nói hơn ngoại hình. Trò chuyện sâu là tia lửa lớn nhất.",
+      "id": "Di antara yang pernah kamu suka, kamu ingat lupa waktu karena ngobrol. Pandangan jelas, membuka sudut baru, ngobrol dengannya seperti belajar. Tarikanmu lebih ditentukan percakapan daripada penampilan. Obrolan dalam adalah percikan terbesar."
+    },
+    "dnaTypeLabel": {
+      "ko": "이상형 DNA: 지성·대화형 (Intellectual Type)",
+      "en": "Ideal-type DNA: Intellect & Conversation (Intellectual Type)",
+      "ja": "理想型DNA：知性・会話型（Intellectual Type）",
+      "zh-CN": "理想型 DNA：知性·对话型（Intellectual Type）",
+      "zh-TW": "理想型 DNA：知性·對話型（Intellectual Type）",
+      "vi": "DNA người trong mơ: Trí tuệ & hội thoại (Intellectual Type)",
+      "id": "DNA tipe ideal: Intelek & percakapan (Intellectual Type)"
+    },
+    "excitingPoint": {
+      "ko": "\"나는 이렇게 생각하는데, 너는 어떻게 생각해?\" 진지하게 묻는 순간",
+      "en": "The moment they earnestly ask, “Here’s what I think—what about you?”",
+      "ja": "「私はこう思うけど、あなたはどう思う？」と真剣に聞いてくれる瞬間",
+      "zh-CN": "认真问你：“我是这么想的，你呢？”",
+      "zh-TW": "認真問你：「我是這麼想的，你呢？」",
+      "vi": "Khoảnh khắc họ hỏi thật lòng: “Mình nghĩ vậy—còn bạn?”",
+      "id": "Saat mereka tanya sungguh-sungguh: “Menurutku begini—menurutmu?”"
+    },
+    "commonGround": {
+      "ko": "지적 자극, 대화의 깊이, 자신만의 관점, 배움을 주는 느낌",
+      "en": "Intellectual spark, depth in dialogue, a clear point of view, feeling like you learn",
+      "ja": "知的刺激、会話の深さ、自分なりの視点、学びをもらう感じ",
+      "zh-CN": "智力刺激，对话深度，鲜明观点，聊完有收获",
+      "zh-TW": "智力刺激，對話深度，鮮明觀點，聊完有收穫",
+      "vi": "Kích thích trí tuệ, chiều sâu, góc nhìn riêng, cảm giác học được",
+      "id": "Rangsangan intelektual, kedalaman, sudut pandang, rasa belajar"
+    },
+    "idealKeywords": {
+      "ko": "지성, 통찰력, 대화력, 자기만의 세계관",
+      "en": "Intellect, insight, conversational skill, a worldview of their own",
+      "ja": "知性、洞察力、会話力、自分だけの世界観",
+      "zh-CN": "知性，洞察力，表达力，自己的世界观",
+      "zh-TW": "知性，洞察力，表達力，自己的世界觀",
+      "vi": "Trí tuệ, sự sâu sắc, kỹ năng trò chuyện, thế giới quan riêng",
+      "id": "Kecerdasan, wawasan, percakapan, pandangan dunianya sendiri"
+    },
+    "flirtLine": {
+      "ko": "그 주제 나도 생각해봤는데, 이런 관점은 어때?",
+      "en": "I’ve been thinking about that too—how about this angle?",
+      "ja": "そのテーマ、私も考えてたんだけど、こういう視点はどう？",
+      "zh-CN": "这个话题我也想过，这个角度你觉得呢？",
+      "zh-TW": "這個話題我也想過，這個角度你覺得呢？",
+      "vi": "Mình cũng nghĩ về chủ đề đó—góc này thì sao?",
+      "id": "Aku juga mikirin topik itu—gimana sudut pandang ini?"
+    },
+    "detectionTip": {
+      "ko": "대화 후 내가 뭔가를 얻은 느낌이 드는지 확인해보세요. 그 사람이 당신의 이상형일 가능성이 높습니다",
+      "en": "After talking, check if you feel you gained something—that’s a strong sign.",
+      "ja": "話したあと、何か得た感じがするか確かめて。それが理想型の可能性大。",
+      "zh-CN": "聊完后问问自己：有没有收获感。有的话很可能就是你的理想型。",
+      "zh-TW": "聊完後問問自己：有沒有收穫感。有的話很可能就是你的理想型。",
+      "vi": "Sau khi nói chuyện, xem bạn có cảm giác học được điều gì—đó là dấu hiệu mạnh.",
+      "id": "Setelah ngobrol, cek apakah kamu merasa dapat sesuatu—itulah petunjuk kuat."
+    },
+    "goodMatch": {
+      "ko": "Type 4 (지성에 든든함이 더해지면 최강 조합)",
+      "en": "Type 4 (Intellect + steadiness is a power combo)",
+      "ja": "Type 4（知性に頼もしさが加わると最強の組み合わせ）",
+      "zh-CN": "Type 4（知性 + 踏实 = 强强组合）",
+      "zh-TW": "Type 4（知性＋踏實＝強強組合）",
+      "vi": "Type 4 (Trí tuệ + sự vững vàng = combo mạnh)",
+      "id": "Type 4 (Intelek + kokoh = kombinasi terkuat)"
+    },
+    "badMatch": {
+      "ko": "Type 2 (가볍고 즐거운 것만 원하는 스타일과는 깊이가 달라질 수 있음)",
+      "en": "Type 2 (Light-and-fun-only styles may clash on depth)",
+      "ja": "Type 2（軽く楽しいだけを求めるタイプとは深さでズレることがある）",
+      "zh-CN": "Type 2（只想轻松开心型可能在深度上不合）",
+      "zh-TW": "Type 2（只想輕鬆開心型可能在深度上不合）",
+      "vi": "Type 2 (Kiểu chỉ thích nhẹ nhàng vui vẻ có thể lệch về độ sâu)",
+      "id": "Type 2 (Tipe yang cuma mau seru ringan bisa beda soal kedalaman)"
+    },
+    "shareTypeName": {
+      "ko": "지성·대화형",
+      "en": "Intellect & conversation type",
+      "ja": "知性・会話型",
+      "zh-CN": "知性·对话型",
+      "zh-TW": "知性·對話型",
+      "vi": "Kiểu trí tuệ & hội thoại",
+      "id": "Tipe intelek & percakapan"
+    }
+  },
+  {
+    "type": "Type4",
+    "emoji": "🏔️",
+    "title": {
+      "ko": "곁에 있으면 든든해지는, 믿음·안정형 이상형 DNA (20~27점)",
+      "en": "Trust & Stability Ideal-Type DNA — solid beside you (20–27 pts)",
+      "ja": "そばにいると安心できる、信頼・安定型 理想型DNA（20〜27点）",
+      "zh-CN": "在身边就踏实：信任·稳定型理想型 DNA（20~27 分）",
+      "zh-TW": "在身邊就踏實：信任·穩定型理想型 DNA（20~27 分）",
+      "vi": "ADN tin cậy & ổn định—ở cạnh là thấy chắc (20–27 đ)",
+      "id": "DNA kepercayaan & stabilitas—di samping mereka terasa aman (20–27)"
+    },
+    "shortDescription": {
+      "ko": "당신의 이상형 DNA는 '기댈 수 있는 단단한 사람'입니다.",
+      "en": "Your ideal-type DNA is someone solid you can lean on.",
+      "ja": "あなたの理想型DNAは「寄りかかれる、しっかりした人」です。",
+      "zh-CN": "你的理想型 DNA 是「可以依靠的、踏实的人」。",
+      "zh-TW": "你的理想型 DNA 是「可以依靠的、踏實的人」。",
+      "vi": "DNA người trong mơ của bạn là người vững vàng để tựa vào.",
+      "id": "DNA idealmu adalah orang kokoh yang bisa jadi sandaran."
+    },
+    "description": {
+      "ko": "역대 설렜던 사람들을 떠올리면 화려하진 않아도 믿음직스러운 느낌이 공통적으로 있었을 것입니다. 말보다 행동으로 보여주고, 어떤 상황에서도 흔들리지 않으며, 함께 있으면 무언가 기댈 수 있다는 안도감이 드는 사람. 당신은 안정감이 설렘이 되는 타입입니다. 결정적인 순간에 든든하게 옆에 있는 사람에게 마음이 무너집니다.",
+      "en": "Thinking back, your crushes may not have been flashy—but they felt dependable. They show up in actions more than words, don’t waver in tough moments, and being with them brings relief, like you can lean. For you, steadiness is romantic. In decisive moments, someone solid beside you breaks down your walls.",
+      "ja": "これまで惹かれた人を思い出すと、派手ではなくても信頼できる感じが共通していたはずです。言葉より行動で示し、どんな状況でも揺れず、一緒にいると何かにもたれられる安心感がある人。あなたにとって安定感はときめきになります。決定的な瞬間に、しっかりそばにいてくれる人に心が崩れます。",
+      "zh-CN": "回想心动对象，未必张扬，但都有靠谱感。少说多做、难关不摇、在一起就有能依靠的安心。对你来说，稳定感就是心动。关键时刻陪在身边的人，最容易打动你。",
+      "zh-TW": "回想心動對象，未必張揚，但都有靠譜感。少說多做、難關不搖、在一起就有能依靠的安心。對你來說，穩定感就是心動。關鍵時刻陪在身邊的人，最容易打動你。",
+      "vi": "Nhớ lại crush, có thể không nổi bật nhưng đều đáng tin. Hành động hơn lời, không lung lay lúc khó, ở cùng là thấy an tâm tựa vào. Với bạn, sự vững vàng cũng là rung động. Người đứng vững bên cạnh lúc quyết định dễ làm bạn xiêu lòng nhất.",
+      "id": "Mengingat gebetan, mungkin tidak mencolok tapi terasa bisa dipercaya. Lebih banyak bukti daripada kata, tak goyah saat sulit, bersama mereka terasa bisa bersandar. Bagimu stabilitas juga romantis. Di momen penting, yang setia di sampingmu paling mudah meluluhkanmu."
+    },
+    "dnaTypeLabel": {
+      "ko": "이상형 DNA: 믿음·안정형 (Stability Type)",
+      "en": "Ideal-type DNA: Trust & Stability (Stability Type)",
+      "ja": "理想型DNA：信頼・安定型（Stability Type）",
+      "zh-CN": "理想型 DNA：信任·稳定型（Stability Type）",
+      "zh-TW": "理想型 DNA：信任·穩定型（Stability Type）",
+      "vi": "DNA người trong mơ: Tin cậy & ổn định (Stability Type)",
+      "id": "DNA tipe ideal: Kepercayaan & stabilitas (Stability Type)"
+    },
+    "excitingPoint": {
+      "ko": "위기 상황에서 흔들리지 않고 \"내가 있잖아\"라고 할 때",
+      "en": "In a crisis, when they don’t waver and say, “I’ve got you.”",
+      "ja": "ピンチのとき揺るがず「私がいるよ」と言ってくれるとき",
+      "zh-CN": "危机时不慌，说“有我在”的时候",
+      "zh-TW": "危機時不慌，說「有我在」的時候",
+      "vi": "Lúc khủng hoảng, không dao động và nói “Có mình đây.”",
+      "id": "Saat krisis, tidak goyah dan bilang “Aku ada di sini.”"
+    },
+    "commonGround": {
+      "ko": "믿음직스러움, 일관성, 행동력, 안도감",
+      "en": "Dependability, consistency, follow-through, relief",
+      "ja": "信頼感、一貫性、行動力、安心感",
+      "zh-CN": "靠谱，一致，行动力，安心感",
+      "zh-TW": "靠譜，一致，行動力，安心感",
+      "vi": "Đáng tin, nhất quán, hành động, an tâm",
+      "id": "Bisa diandalkan, konsisten, bertindak, lega"
+    },
+    "idealKeywords": {
+      "ko": "신뢰, 안정감, 결단력, 묵직함",
+      "en": "Trust, steadiness, decisiveness, weight",
+      "ja": "信頼、安定感、決断力、重み",
+      "zh-CN": "信任，安定感，决断，沉稳",
+      "zh-TW": "信任，安定感，決斷，沉穩",
+      "vi": "Tin cậy, vững, dứt khoát, chắc chắn",
+      "id": "Percaya, stabil, tegas, mantap"
+    },
+    "flirtLine": {
+      "ko": "걱정 마. 내가 있을게",
+      "en": "Don’t worry. I’m here.",
+      "ja": "大丈夫。私がいるから。",
+      "zh-CN": "别担心。有我在。",
+      "zh-TW": "別擔心。有我在。",
+      "vi": "Đừng lo. Có mình đây.",
+      "id": "Jangan khawatir. Aku di sini."
+    },
+    "detectionTip": {
+      "ko": "어려운 상황에서 그 사람이 어떻게 행동하는지 보세요. 안정적으로 대처하면 당신의 이상형",
+      "en": "Watch how they act under pressure. Calm, steady handling is your green flag.",
+      "ja": "困ったときにどう動くかを見て。落ち着いて対処できるなら理想型の可能性大。",
+      "zh-CN": "看困难时刻对方怎么做。稳定应对就很可能是你的理想型。",
+      "zh-TW": "看困難時刻對方怎麼做。穩定應對就很可能是你的理想型。",
+      "vi": "Xem họ ứng xử lúc khó khăn. Bình tĩnh, vững—rất có thể là gu bạn.",
+      "id": "Lihat mereka saat sulit. Tenang dan stabil—besar kemungkinan cocok."
+    },
+    "goodMatch": {
+      "ko": "Type 3 (지성과 안정감이 만나면 최고의 파트너)",
+      "en": "Type 3 (Intellect + steadiness = best partner energy)",
+      "ja": "Type 3（知性と安定感が揃うと最高のパートナー）",
+      "zh-CN": "Type 3（知性 + 稳定 = 最佳伴侣感）",
+      "zh-TW": "Type 3（知性＋穩定＝最佳伴侶感）",
+      "vi": "Type 3 (Trí tuệ + vững = đôi bạn đời tuyệt vời)",
+      "id": "Type 3 (Intelek + stabil = partner terbaik)"
+    },
+    "badMatch": {
+      "ko": "Type 2 (유머형은 진중함이 부족하게 느껴질 수 있음)",
+      "en": "Type 2 (Humor-first types can feel too light for you)",
+      "ja": "Type 2（ユーモア型は真剣さが足りないと感じることがある）",
+      "zh-CN": "Type 2（幽默型可能让你觉得不够稳重）",
+      "zh-TW": "Type 2（幽默型可能讓你覺得不夠穩重）",
+      "vi": "Type 2 (Kiểu hài có thể thiếu chiều sâu với bạn)",
+      "id": "Type 2 (Tipe humor bisa terasa kurang serius)"
+    },
+    "shareTypeName": {
+      "ko": "믿음·안정형",
+      "en": "Trust & stability type",
+      "ja": "信頼・安定型",
+      "zh-CN": "信任·稳定型",
+      "zh-TW": "信任·穩定型",
+      "vi": "Kiểu tin cậy & ổn định",
+      "id": "Tipe kepercayaan & stabilitas"
+    }
+  },
+  {
+    "type": "Type5",
+    "emoji": "🌈",
+    "title": {
+      "ko": "한 가지로 정의 안 되는, 복합 매력형 이상형 DNA (28~33점)",
+      "en": "Multi-Charm Ideal-Type DNA — can’t be boxed in one label (28–33 pts)",
+      "ja": "ひとことで言い切れない、複合魅力型 理想型DNA（28〜33点）",
+      "zh-CN": "无法用一句话定义：复合魅力型理想型 DNA（28~33 分）",
+      "zh-TW": "無法用一句話定義：複合魅力型理想型 DNA（28~33 分）",
+      "vi": "ADN đa lớp sức hút—không gói gọn một từ (28–33 đ)",
+      "id": "DNA multi-charm—tak bisa satu label (28–33)"
+    },
+    "shortDescription": {
+      "ko": "당신의 이상형 DNA는 '여러 가지 매력이 층층이 쌓인 사람'입니다.",
+      "en": "Your ideal-type DNA is someone layered with many kinds of charm.",
+      "ja": "あなたの理想型DNAは「いろいろな魅力が重なった人」です。",
+      "zh-CN": "你的理想型 DNA 是「层层堆叠多种魅力的人」。",
+      "zh-TW": "你的理想型 DNA 是「層層堆疊多種魅力的人」。",
+      "vi": "DNA người trong mơ của bạn là người có nhiều lớp sức hút.",
+      "id": "DNA idealmu adalah orang dengan banyak lapisan daya tarik."
+    },
+    "description": {
+      "ko": "당신은 하나의 매력으로 정의되는 사람보다 다양한 면이 공존하는 복합적인 사람에게 끌립니다. 평소엔 카리스마 있다가도 나한테만 다정하고, 재치 있다가도 진지한 이야기를 깊이 나눌 줄 알고, 든든하면서도 섬세한 사람. 처음엔 한 면이 끌리다가 알면 알수록 새로운 면이 나오는 사람이 당신의 이상형 DNA입니다. 단순한 사람에겐 쉽게 질리는 타입이기도 합니다.",
+      "en": "You’re pulled to people who aren’t one-note—many sides coexist. Charismatic in public yet tender with you; funny yet able to go deep; steady yet sensitive. Your ideal type keeps revealing new sides the more you know them. You may get bored fast with people who feel too simple.",
+      "ja": "ひとつの魅力だけで片づけられる人より、いろいろな面が共存する複合的な人に惹かれます。普段はカリスマでも自分にはだけ優しく、ユーモアがあっても深い話ができ、頼もしくても繊細。最初は一面に惹かれて、知れば知るほど新しい面が出る人が理想型DNAです。単純な人にはすぐ飽きるタイプでもあります。",
+      "zh-CN": "比起只有一种魅力的人，你更被多面共存的人吸引。对外有气场却对你温柔；有梗也能深聊；踏实又细腻。越了解越发现新面貌的人，就是你的理想型。太简单的人你可能很快腻。",
+      "zh-TW": "比起只有一種魅力的人，你更被多面共存的人吸引。對外有氣場卻對你溫柔；有梗也能深聊；踏實又細膩。越了解越發現新面貌的人，就是你的理想型。太簡單的人你可能很快膩。",
+      "vi": "Bạn bị cuốn bởi người không một màu—nhiều mặt cùng tồn tại. Charisma nhưng dịu với bạn; vui nhưng trò chuyện sâu; vững nhưng tinh tế. Càng hiểu càng lộ thêm mặt mới—đó là gu bạn. Người quá đơn giản dễ khiến bạn chán.",
+      "id": "Kamu tertarik pada yang tak satu dimensi—banyak sisi sekaligus. Karisma tapi lembut padamu; lucu tapi bisa dalam; kokoh tapi halus. Makin kenal makin ada sisi baru—itulah idealmu. Orang terlalu polos bisa cepat membosankan."
+    },
+    "dnaTypeLabel": {
+      "ko": "이상형 DNA: 복합 매력형 (Multi-Charm Type)",
+      "en": "Ideal-type DNA: Multi-Charm (Multi-Charm Type)",
+      "ja": "理想型DNA：複合魅力型（Multi-Charm Type）",
+      "zh-CN": "理想型 DNA：复合魅力型（Multi-Charm Type）",
+      "zh-TW": "理想型 DNA：複合魅力型（Multi-Charm Type）",
+      "vi": "DNA người trong mơ: Đa lớp sức hút (Multi-Charm Type)",
+      "id": "DNA tipe ideal: Multi-charm (Multi-Charm Type)"
+    },
+    "excitingPoint": {
+      "ko": "예상 밖의 다른 면이 보이는 순간. \"이런 사람이었어?\" 하는 순간",
+      "en": "The moment another side appears—“Wait, they’re like this too?”",
+      "ja": "予想外の別の面が見える瞬間。「こんな人だったの？」という瞬間",
+      "zh-CN": "突然发现另一面——“原来TA还有这样？”",
+      "zh-TW": "突然發現另一面——「原來TA還有這樣？」",
+      "vi": "Khoảnh khắc lộ thêm một mặt—“Ồ, họ còn thế này nữa?”",
+      "id": "Saat sisi lain muncul—“Oh, mereka begini juga?”"
+    },
+    "commonGround": {
+      "ko": "다면적 매력, 알면 알수록 새로운 느낌, 쉽게 파악 안 되는 사람",
+      "en": "Layered charm, something new the more you know, hard to pin down",
+      "ja": "多面的な魅力、知れば知るほど新しい感じ、簡単に型にはまらない人",
+      "zh-CN": "多面魅力，越了解越新鲜，不容易被看透",
+      "zh-TW": "多面魅力，越了解越新鮮，不容易被看透",
+      "vi": "Nhiều lớp sức hút, càng hiểu càng mới, khó đoán",
+      "id": "Banyak lapisan daya tarik, makin kenal makin baru, sulit ditebak"
+    },
+    "idealKeywords": {
+      "ko": "다면적, 깊이, 반전 매력, 예측 불가",
+      "en": "Multi-faceted, depth, plot-twist charm, unpredictability",
+      "ja": "多面性、深さ、ギャップ魅力、予測不能",
+      "zh-CN": "多面，深度，反差魅力，难以预测",
+      "zh-TW": "多面，深度，反差魅力，難以預測",
+      "vi": "Đa diện, chiều sâu, sức hút bất ngờ, khó đoán",
+      "id": "Multifaset, kedalaman, daya tarik kejutan, tak terduga"
+    },
+    "flirtLine": {
+      "ko": "평소와 전혀 다른 면을 보여주는 예상 밖의 한마디",
+      "en": "A surprise line that shows a side you’ve never seen",
+      "ja": "いつもと違う面を見せる、予想外の一言",
+      "zh-CN": "一句出乎意料的话，露出你从没见过的一面",
+      "zh-TW": "一句出乎意料的話，露出你從沒見過的一面",
+      "vi": "Một câu bất ngờ—lộ mặt bạn chưa từng thấy",
+      "id": "Satu kalimat tak terduga—sisi yang belum pernah kamu lihat"
+    },
+    "detectionTip": {
+      "ko": "만날수록 새로운 면이 나오는지 확인해보세요. 그 사람이 당신의 이상형",
+      "en": "Notice if new sides keep appearing—the more you meet, the more they reveal.",
+      "ja": "会うたびに新しい面が出てくるか見て。それが理想型。",
+      "zh-CN": "看是不是越见越有新鲜感。这样的人很可能就是你的理想型。",
+      "zh-TW": "看是不是越見越有新鮮感。這樣的人很可能就是你的理想型。",
+      "vi": "Xem có lộ thêm mặt mới mỗi lần gặp—đó là dấu hiệu gu bạn.",
+      "id": "Cek apakah setiap ketemu ada sisi baru—itulah petunjuk cocok."
+    },
+    "goodMatch": {
+      "ko": "Type 6 (카리스마에 복합 매력이 더해지면 못 빠져나옴)",
+      "en": "Type 6 (Charisma + layers—you’re hooked)",
+      "ja": "Type 6（カリスマに複合魅力が重なると抜け出せない）",
+      "zh-CN": "Type 6（魅力 + 多层 = 很难抽身）",
+      "zh-TW": "Type 6（魅力＋多層＝很難抽身）",
+      "vi": "Type 6 (Charisma + nhiều lớp—dính luôn)",
+      "id": "Type 6 (Karisma + banyak lapisan—sulit lepas)"
+    },
+    "badMatch": {
+      "ko": "Type 1 (너무 예측 가능한 배려형은 빠르게 익숙해질 수 있음)",
+      "en": "Type 1 (Over-predictable care types may feel too familiar fast)",
+      "ja": "Type 1（予測しすぎる思いやり型はすぐ慣れてしまうことがある）",
+      "zh-CN": "Type 1（太可预测的体贴型可能很快变腻）",
+      "zh-TW": "Type 1（太可預測的體貼型可能很快變膩）",
+      "vi": "Type 1 (Kiểu quan tâm quá dễ đoán có thể nhanh nhàm)",
+      "id": "Type 1 (Tipe perhatian terlalu mudah ditebak bisa cepat biasa)"
+    },
+    "shareTypeName": {
+      "ko": "복합 매력형",
+      "en": "Multi-charm type",
+      "ja": "複合魅力型",
+      "zh-CN": "复合魅力型",
+      "zh-TW": "複合魅力型",
+      "vi": "Kiểu đa lớp sức hút",
+      "id": "Tipe multi-charm"
+    }
+  },
+  {
+    "type": "Type6",
+    "emoji": "⚡",
+    "title": {
+      "ko": "존재 자체로 끌리는, 카리스마·자기확신형 이상형 DNA (34~36점)",
+      "en": "Charisma & Self-Assurance Ideal-Type DNA—presence alone pulls you in (34–36 pts)",
+      "ja": "存在そのものに惹かれる、カリスマ・自己確信型 理想型DNA（34〜36点）",
+      "zh-CN": "凭存在感就吸引你：魅力·自信型理想型 DNA（34~36 分）",
+      "zh-TW": "憑存在感就吸引你：魅力·自信型理想型 DNA（34~36 分）",
+      "vi": "ADN charisma & tự tin—chỉ cần hiện diện đã cuốn (34–36 đ)",
+      "id": "DNA karisma & percaya diri—cukup hadir sudah menarik (34–36)"
+    },
+    "shortDescription": {
+      "ko": "당신의 이상형 DNA는 '말하지 않아도 눈에 띄는 사람'입니다.",
+      "en": "Your ideal-type DNA is someone who stands out—even in silence.",
+      "ja": "あなたの理想型DNAは「何も言わなくても目立つ人」です。",
+      "zh-CN": "你的理想型 DNA 是「不说话也很显眼的人」。",
+      "zh-TW": "你的理想型 DNA 是「不說話也很顯眼的人」。",
+      "vi": "DNA người trong mơ của bạn là người nổi bật dù không nói gì.",
+      "id": "DNA idealmu adalah orang yang menonjol tanpa banyak bicara."
+    },
+    "description": {
+      "ko": "역대 설렜던 사람들의 가장 강렬한 공통점은 어딜 가든 눈에 띄는 존재감이었을 것입니다. 화려하게 나서는 것이 아니라 자연스럽게 중심이 되는 사람. 자기 확신이 있고, 흔들리지 않으며, 무언가에 몰두하는 모습이 가장 매력적으로 느껴집니다. 당신은 무대 위보다 무대 뒤에서 진짜 실력을 보여주는 사람에게 가장 강하게 끌리는 타입입니다.",
+      "en": "The strongest thread in your crushes: presence that turns heads wherever they go—not loud, but naturally central. Self-assured, unshakable, and magnetic when fully focused on something. You’re most drawn to people who show real skill offstage more than on it.",
+      "ja": "これまで惹かれた人に最も強い共通点は、どこでも目立つ存在感だったはずです。派手に出るのではなく、自然と中心になる人。自信があり揺れず、何かに没頭している姿がいちばん魅力的。あなたはステージの上より、裏で本気を見せる人にいちばん強く惹かれるタイプです。",
+      "zh-CN": "过去心动的人里，最强的共同点可能是走到哪都显眼的存在感。不是张扬抢镜，而是自然成为中心。自信、不动摇、全心投入时最有魅力。你最容易被「台下真本事」的人强烈吸引。",
+      "zh-TW": "過去心動的人裡，最強的共同點可能是走到哪都顯眼的存在感。不是張揚搶鏡，而是自然成為中心。自信、不動搖、全心投入時最有魅力。你最容易被「台下真本事」的人強烈吸引。",
+      "vi": "Điểm chung mạnh nhất: sự hiện diện nổi bật mọi nơi—không ồn ào mà tự nhiên là trung tâm. Tự tin, không dao động, khi tập trung là rất cuốn. Bạn bị cuốn nhất bởi người thể hiện thật lực hậu trường hơn trên sân khấu.",
+      "id": "Benang merah terkuat: kehadiran yang menonjol di mana pun—bukan mencolok tapi natural jadi pusat. Percaya diri, tak goyah, saat fokus sangat menarik. Kamu paling tertarik pada yang menunjukkan skill nyata di balik layar."
+    },
+    "dnaTypeLabel": {
+      "ko": "이상형 DNA: 카리스마·자기확신형 (Charisma Type)",
+      "en": "Ideal-type DNA: Charisma & Self-Assurance (Charisma Type)",
+      "ja": "理想型DNA：カリスマ・自己確信型（Charisma Type）",
+      "zh-CN": "理想型 DNA：魅力·自信型（Charisma Type）",
+      "zh-TW": "理想型 DNA：魅力·自信型（Charisma Type）",
+      "vi": "DNA người trong mơ: Charisma & tự tin (Charisma Type)",
+      "id": "DNA tipe ideal: Karisma & percaya diri (Charisma Type)"
+    },
+    "excitingPoint": {
+      "ko": "무언가에 완전히 집중하는 그 뒷모습",
+      "en": "Their back turned to the world—fully locked in on something",
+      "ja": "何かに完全に没頭している後ろ姿",
+      "zh-CN": "全心投入某件事时的背影",
+      "zh-TW": "全心投入某件事時的背影",
+      "vi": "Tư thế lưng quay đi—chìm hẳn vào điều gì đó",
+      "id": "Punggung mereka yang fokus total pada sesuatu"
+    },
+    "commonGround": {
+      "ko": "자기 확신, 자연스러운 존재감, 무언가에 진심인 모습",
+      "en": "Self-belief, natural presence, devotion to what they care about",
+      "ja": "自己確信、自然な存在感、何かに本気な姿",
+      "zh-CN": "自信，自然存在感，对某件事全心投入",
+      "zh-TW": "自信，自然存在感，對某件事全心投入",
+      "vi": "Tự tin, hiện diện tự nhiên, chân thành với điều họ làm",
+      "id": "Keyakinan diri, kehadiran natural, tulus pada yang mereka lakukan"
+    },
+    "idealKeywords": {
+      "ko": "카리스마, 자기확신, 집중력, 흔들리지 않는 중심",
+      "en": "Charisma, self-assurance, focus, an unshakable center",
+      "ja": "カリスマ、自己確信、集中力、揺れない中心",
+      "zh-CN": "魅力，自信，专注，不动摇的核心",
+      "zh-TW": "魅力，自信，專注，不動搖的核心",
+      "vi": "Charisma, tự tin, tập trung, trụ cột vững",
+      "id": "Karisma, percaya diri, fokus, pusat yang tak goyah"
+    },
+    "flirtLine": {
+      "ko": "자신 있고 확신에 찬 한마디. 흔들림 없는 결정",
+      "en": "A confident line. A decision with no waver.",
+      "ja": "自信に満ちた一言。揺れない決断。",
+      "zh-CN": "笃定的一句话。毫不犹豫的决定。",
+      "zh-TW": "篤定的一句話。毫不猶豫的決定。",
+      "vi": "Một câu đầy tự tin. Quyết định không dao động.",
+      "id": "Satu kalimat penuh keyakinan. Keputusan tanpa ragu."
+    },
+    "detectionTip": {
+      "ko": "무언가를 할 때 얼마나 진심으로 몰두하는지 보세요. 그 집중하는 모습이 당신의 심장을 건드립니다",
+      "en": "Watch how deeply they focus when they do something—that focus is what hits you.",
+      "ja": "何かをするときどれだけ本気で没頭するかを見て。その集中が心を打つ。",
+      "zh-CN": "观察做事时有多投入——那种专注最戳你。",
+      "zh-TW": "觀察做事時有多投入——那種專注最戳你。",
+      "vi": "Xem họ chìm đến đâu khi làm việc—sự tập trung đó chạm tim bạn.",
+      "id": "Lihat seberapa dalam mereka fokus saat melakukan sesuatu—itulah yang menyentuhmu."
+    },
+    "goodMatch": {
+      "ko": "Type 5 (복합 매력이 더해지면 못 빠져나옴)",
+      "en": "Type 5 (Add layered charm—you’re not getting out)",
+      "ja": "Type 5（複合魅力が重なると抜け出せない）",
+      "zh-CN": "Type 5（加上复合魅力更难抽身）",
+      "zh-TW": "Type 5（加上複合魅力更難抽身）",
+      "vi": "Type 5 (Thêm nhiều lớp sức hút—khó thoát)",
+      "id": "Type 5 (Tambah lapisan daya tarik—sulit lepas)"
+    },
+    "badMatch": {
+      "ko": "Type 1 (섬세한 배려형은 카리스마가 부족하게 느껴질 수 있음)",
+      "en": "Type 1 (Ultra-gentle care types may feel low on charisma to you)",
+      "ja": "Type 1（繊細な思いやり型はカリスマ不足に感じることがある）",
+      "zh-CN": "Type 1（细腻体贴型可能让你觉得缺少气场）",
+      "zh-TW": "Type 1（細膩體貼型可能讓你覺得缺少氣場）",
+      "vi": "Type 1 (Kiểu quan tâm quá nhẹ có thể thiếu charisma với bạn)",
+      "id": "Type 1 (Tipe perhatian halus bisa terasa kurang karisma)"
+    },
+    "shareTypeName": {
+      "ko": "카리스마·자기확신형",
+      "en": "Charisma & self-assurance type",
+      "ja": "カリスマ・自己確信型",
+      "zh-CN": "魅力·自信型",
+      "zh-TW": "魅力·自信型",
+      "vi": "Kiểu charisma & tự tin",
+      "id": "Tipe karisma & percaya diri"
+    }
+  }
+]

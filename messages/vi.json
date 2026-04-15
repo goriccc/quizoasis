@@ -1460,6 +1460,62 @@
       "popularTestsTop5": "🔥 Top 5 quiz đang hot"
     }
   },
+  "phase3IdealTypeDnaAnalysisTest": {
+    "startMessage": {
+      "line1": "Những người từng khiến bạn rung động—có điểm chung không?",
+      "line2": "Thường thì bạn bị cuốn bởi vibe giống nhau, rung động ở khoảnh khắc giống nhau, thích vì lý do giống nhau—đó là một mô hình.",
+      "line3": "Đó chính là DNA người trong mơ của bạn.",
+      "line4": "Gọi là “gu” thì quá nhất quán, gọi là “tình cờ” thì lặp lại quá nhiều.",
+      "line5": "12 câu hỏi phân tích điểm chung của những crush trước—và lập bản đồ DNA người trong mơ.",
+      "line6": "Khám phá DNA người trong mơ 💘 Bắt đầu quiz gu crush"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Gu / người thích)",
+      "goToTest": "Vào quiz",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Quiz tương tự",
+      "dnaType": "DNA người trong mơ",
+      "excitingPoint": "Điểm rung động",
+      "commonGround": "Điểm chung của các crush",
+      "idealKeywords": "Từ khóa gu",
+      "flirtLine": "Một câu khiến bạn rung động",
+      "detectionTip": "Cách nhận ra gu của bạn",
+      "goodMatch": "Gu hợp nhất",
+      "badMatch": "Gu dễ xung đột",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "DNA người trong mơ của mình là {type}! 💘 Khớp với crush cũ luôn—còn bạn?",
+      "kakao": "DNA người trong mơ của mình là {type}! 💘 Khớp với crush cũ luôn—còn bạn?",
+      "wechat": "DNA người trong mơ của mình là {type}! 💘 Khớp với crush cũ luôn—còn bạn?",
+      "whatsapp": "DNA người trong mơ của mình là {type}! 💘 Khớp với crush cũ luôn—còn bạn?",
+      "telegram": "DNA người trong mơ của mình là {type}! 💘 Khớp với crush cũ luôn—còn bạn?",
+      "line": "DNA người trong mơ của mình là {type}! 💘 Khớp với crush cũ luôn—còn bạn?",
+      "startDefault": "Phân tích gu người thích 💘 DNA người trong mơ 12 câu",
+      "startKakao": "Phân tích gu người thích 💘 DNA người trong mơ 12 câu",
+      "startWechat": "Phân tích gu người thích 💘 DNA người trong mơ 12 câu",
+      "startWhatsapp": "Phân tích gu người thích 💘 DNA người trong mơ 12 câu",
+      "startTelegram": "Phân tích gu người thích 💘 DNA người trong mơ 12 câu",
+      "startLine": "Phân tích gu người thích 💘 DNA người trong mơ 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 quiz tương tự",
+      "popularTestsTop5": "🔥 Top 5 quiz đang hot"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Mở lên “chỉ xem một chút” rồi tỉnh ra đã mất 2 tiếng — bạn cũng vậy chứ?",

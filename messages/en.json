@@ -1501,6 +1501,62 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3IdealTypeDnaAnalysisTest": {
+    "startMessage": {
+      "line1": "Ever notice a pattern in people you’ve crushed on?",
+      "line2": "You’re often drawn to a similar vibe, similar sparks, similar reasons—it’s not random.",
+      "line3": "That’s your ideal-type DNA.",
+      "line4": "Too consistent to be “just taste,” too repeated to be pure coincidence.",
+      "line5": "Twelve questions analyze what your past crushes had in common—and map your ideal-type DNA.",
+      "line6": "Discover my ideal-type DNA 💘 Start the crush-pattern quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (Ideal type / crush pattern)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "dnaType": "Ideal-type DNA",
+      "excitingPoint": "What sparks you",
+      "commonGround": "What your crushes had in common",
+      "idealKeywords": "Ideal-type keywords",
+      "flirtLine": "A line that would spark you",
+      "detectionTip": "How to spot your type",
+      "goodMatch": "Best match type",
+      "badMatch": "Clash type",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My ideal-type DNA is {type}! 💘 This tracks with everyone I’ve liked—what’s yours?",
+      "kakao": "My ideal-type DNA is {type}! 💘 This tracks with everyone I’ve liked—what’s yours?",
+      "wechat": "My ideal-type DNA is {type}! 💘 This tracks with everyone I’ve liked—what’s yours?",
+      "whatsapp": "My ideal-type DNA is {type}! 💘 This tracks with everyone I’ve liked—what’s yours?",
+      "telegram": "My ideal-type DNA is {type}! 💘 This tracks with everyone I’ve liked—what’s yours?",
+      "line": "My ideal-type DNA is {type}! 💘 This tracks with everyone I’ve liked—what’s yours?",
+      "startDefault": "Who Is My Ideal Type? 💘 12-question DNA quiz",
+      "startKakao": "Who Is My Ideal Type? 💘 12-question DNA quiz",
+      "startWechat": "Who Is My Ideal Type? 💘 12-question DNA quiz",
+      "startWhatsapp": "Who Is My Ideal Type? 💘 12-question DNA quiz",
+      "startTelegram": "Who Is My Ideal Type? 💘 12-question DNA quiz",
+      "startLine": "Who Is My Ideal Type? 💘 12-question DNA quiz"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Ever opened your phone for “just a minute” and lost two hours?",

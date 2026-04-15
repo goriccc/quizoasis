@@ -1460,6 +1460,62 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3IdealTypeDnaAnalysisTest": {
+    "startMessage": {
+      "line1": "Orang yang pernah bikin kamu jatuh hati—ada polanya nggak?",
+      "line2": "Seringnya kamu tertarik pada vibe mirip, deg-degan di momen mirip, suka karena alasan mirip—itu pola.",
+      "line3": "Itulah DNA tipe idealmu.",
+      "line4": "Terlalu konsisten untuk sekadar “selera,” terlalu sering untuk murni kebetulan.",
+      "line5": "12 pertanyaan menganalisis apa yang sama dari gebetanmu dulu—dan memetakan DNA tipe ideal.",
+      "line6": "Ungkap DNA tipe idealku 💘 Mulai kuis pola gebetan"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Tipe ideal / orang yang disukai)",
+      "goToTest": "Ke tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "dnaType": "DNA tipe ideal",
+      "excitingPoint": "Momen yang bikin deg-degan",
+      "commonGround": "Kemiripan gebetanmu dulu",
+      "idealKeywords": "Kata kunci tipe ideal",
+      "flirtLine": "Satu kalimat yang bikin kamu klepek-klepek",
+      "detectionTip": "Cara mengenali tipemu",
+      "goodMatch": "Tipe paling cocok",
+      "badMatch": "Tipe yang sering bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "DNA tipe idealku {type}! 💘 Cocok sama pola gebetan lama—kamu gimana?",
+      "kakao": "DNA tipe idealku {type}! 💘 Cocok sama pola gebetan lama—kamu gimana?",
+      "wechat": "DNA tipe idealku {type}! 💘 Cocok sama pola gebetan lama—kamu gimana?",
+      "whatsapp": "DNA tipe idealku {type}! 💘 Cocok sama pola gebetan lama—kamu gimana?",
+      "telegram": "DNA tipe idealku {type}! 💘 Cocok sama pola gebetan lama—kamu gimana?",
+      "line": "DNA tipe idealku {type}! 💘 Cocok sama pola gebetan lama—kamu gimana?",
+      "startDefault": "Analisis tipe orang yang kusuka 💘 DNA tipe ideal 12 soal",
+      "startKakao": "Analisis tipe orang yang kusuka 💘 DNA tipe ideal 12 soal",
+      "startWechat": "Analisis tipe orang yang kusuka 💘 DNA tipe ideal 12 soal",
+      "startWhatsapp": "Analisis tipe orang yang kusuka 💘 DNA tipe ideal 12 soal",
+      "startTelegram": "Analisis tipe orang yang kusuka 💘 DNA tipe ideal 12 soal",
+      "startLine": "Analisis tipe orang yang kusuka 💘 DNA tipe ideal 12 soal"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia di perangkat ini.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Memuat berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "Bilangnya cuma sebentar, eh pas sadar sudah 2 jam — pernah kan?",

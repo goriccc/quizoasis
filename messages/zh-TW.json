@@ -1467,6 +1467,62 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3IdealTypeDnaAnalysisTest": {
+    "startMessage": {
+      "line1": "你喜歡過的人，有沒有發現共同點？",
+      "line2": "仔細想想，總被相似氛圍的人吸引，在相似瞬間心動，因為相似的理由喜歡上——這是一種模式。",
+      "line3": "那就是你的理想型 DNA。",
+      "line4": "說是「口味」又太一致，說是「巧合」又重複太多次。",
+      "line5": "用 12 題分析過去心動對象的共同點，解讀你的理想型 DNA。",
+      "line6": "分析我的理想型 DNA 💘 開始探索類型"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（理想型／喜歡的人類型）",
+      "goToTest": "進入測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "dnaType": "理想型 DNA 類型",
+      "excitingPoint": "心動點",
+      "commonGround": "過去心動對象的共同點",
+      "idealKeywords": "理想型關鍵字",
+      "flirtLine": "會讓你心動的一句話",
+      "detectionTip": "如何辨識你的類型",
+      "goodMatch": "絕配類型",
+      "badMatch": "容易不合的類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的理想型 DNA 是{type}！💘 和以前喜歡的人對上了…你是哪種？",
+      "kakao": "我的理想型 DNA 是{type}！💘 和以前喜歡的人對上了…你是哪種？",
+      "wechat": "我的理想型 DNA 是{type}！💘 和以前喜歡的人對上了…你是哪種？",
+      "whatsapp": "我的理想型 DNA 是{type}！💘 和以前喜歡的人對上了…你是哪種？",
+      "telegram": "我的理想型 DNA 是{type}！💘 和以前喜歡的人對上了…你是哪種？",
+      "line": "我的理想型 DNA 是{type}！💘 和以前喜歡的人對上了…你是哪種？",
+      "startDefault": "我喜歡的人類型分析 💘 理想型 DNA 12 題",
+      "startKakao": "我喜歡的人類型分析 💘 理想型 DNA 12 題",
+      "startWechat": "我喜歡的人類型分析 💘 理想型 DNA 12 題",
+      "startWhatsapp": "我喜歡的人類型分析 💘 理想型 DNA 12 題",
+      "startTelegram": "我喜歡的人類型分析 💘 理想型 DNA 12 題",
+      "startLine": "我喜歡的人類型分析 💘 理想型 DNA 12 題"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "KakaoTalk 分享正在初始化，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3ShortformAddictionTypeTest": {
     "startMessage": {
       "line1": "說好只看一下，結果兩小時不見——你也遇過吧？",

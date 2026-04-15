@@ -1,0 +1,746 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "ko": "처음 만났을 때 가장 먼저 끌리는 요소는?",
+      "en": "What draws you in first when you first meet someone?",
+      "ja": "初対面でいちばん惹かれる要素は？",
+      "zh-CN": "初次见面时，最先吸引你的是什么？",
+      "zh-TW": "初次見面時，最先吸引你的是什麼？",
+      "vi": "Lần đầu gặp, điều gì thu hút bạn nhất?",
+      "id": "Saat pertama bertemu, hal apa yang paling menarik perhatianmu?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "말투와 목소리. 대화하는 방식에서 느껴지는 분위기",
+          "en": "Tone and voice—the vibe in how they talk",
+          "ja": "話し方と声。会話の進め方に漂う雰囲気",
+          "zh-CN": "语气和声音——从说话方式里感受到的氛围",
+          "zh-TW": "語氣和聲音——從說話方式感受到的氛圍",
+          "vi": "Giọng nói và cách nói chuyện—không khí toát ra từ cách trò chuyện",
+          "id": "Nada bicara dan suara—suasana dari cara mereka berbicara"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "표정과 웃음. 웃을 때 눈이 작아지거나 특유의 미소",
+          "en": "Expression and smile—eyes crinkling, their signature smile",
+          "ja": "表情と笑顔。笑うときの目の細め方や独特の微笑み",
+          "zh-CN": "表情和笑容——笑时眯起的眼或特有的微笑",
+          "zh-TW": "表情和笑容——笑時瞇起的眼或特有的微笑",
+          "vi": "Biểu cảm và nụ cười—mắt nhắm lại khi cười, nụ cười riêng",
+          "id": "Ekspresi dan senyum—mata menyipit saat tertawa, senyum khas mereka"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "태도와 행동. 상황을 대처하는 방식이나 매너",
+          "en": "Attitude and behavior—how they handle situations, their manners",
+          "ja": "態度と行動。場への対処の仕方やマナー",
+          "zh-CN": "态度和行为——应对场合的方式与举止",
+          "zh-TW": "態度和行為——應對場合的方式與舉止",
+          "vi": "Thái độ và hành vi—cách xử lý tình huống, phong thái",
+          "id": "Sikap dan perilaku—cara menangani situasi, sopan santun"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "분위기와 존재감. 말 안 해도 눈에 띄는 카리스마",
+          "en": "Aura and presence—charisma that stands out even without words",
+          "ja": "雰囲気と存在感。何も言わなくても目立つカリスマ",
+          "zh-CN": "气场与存在感——不说话也醒目的魅力",
+          "zh-TW": "氣場與存在感——不說話也醒目的魅力",
+          "vi": "Khí chất và sự hiện diện—charisma nổi bật dù không nói gì",
+          "id": "Aura dan kehadiran—karisma yang menonjol tanpa banyak bicara"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "ko": "같이 있을 때 가장 설레는 순간은?",
+      "en": "When you’re together, what moment makes your heart flutter most?",
+      "ja": "一緒にいるとき、いちばんときめく瞬間は？",
+      "zh-CN": "在一起时，最让你心动的瞬间是？",
+      "zh-TW": "在一起時，最讓你心動的瞬間是？",
+      "vi": "Khi ở bên nhau, khoảnh khắc nào khiến tim bạn rung động nhất?",
+      "id": "Saat bersama, momen apa yang paling membuat hatimu berdebar?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "나만 아는 것 같은 세심한 배려를 해줄 때",
+          "en": "When they show thoughtful care that feels “just for me”",
+          "ja": "自分だけにしてくれてるみたいな、細やかな気遣いのとき",
+          "zh-CN": "体贴入微、好像只为你一个人着想的时候",
+          "zh-TW": "體貼入微、好像只為你一個人著想的時候",
+          "vi": "Khi họ chăm sóc tinh tế như chỉ dành cho mình",
+          "id": "Saat mereka peduli halus seolah khusus untukmu"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "같이 있으면 시간 가는 줄 모르고 웃게 될 때",
+          "en": "When you laugh together and lose track of time",
+          "ja": "一緒にいると時間を忘れて笑い合えるとき",
+          "zh-CN": "在一起时笑得忘了时间",
+          "zh-TW": "在一起時笑得忘了時間",
+          "vi": "Khi cười đùa quên cả thời gian",
+          "id": "Saat tertawa bersama sampai lupa waktu"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "진지하게 깊은 이야기를 나눌 때",
+          "en": "When you share deep, serious conversation",
+          "ja": "本気で深い話を交わすとき",
+          "zh-CN": "认真聊很深的话题时",
+          "zh-TW": "認真聊很深的話題時",
+          "vi": "Khi trò chuyện sâu và thật lòng",
+          "id": "Saat ngobrol serius dan mendalam"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "든든하고 믿음직스럽게 느껴지는 순간",
+          "en": "When they feel solid and dependable",
+          "ja": "頼もしくて信頼できると感じる瞬間",
+          "zh-CN": "感到踏实、值得信赖的瞬间",
+          "zh-TW": "感到踏實、值得信賴的瞬間",
+          "vi": "Khi cảm thấy họ vững vàng, đáng tin",
+          "id": "Saat terasa kokoh dan bisa diandalkan"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "ko": "역대 설렜던 사람들의 가장 두드러진 공통점은?",
+      "en": "What stood out most in common among people you’ve had crushes on?",
+      "ja": "これまで惹かれた人たちに最も共通していたのは？",
+      "zh-CN": "过去心动过的人，最明显的共同点是什么？",
+      "zh-TW": "過去心動過的人，最明顯的共同點是什麼？",
+      "vi": "Điểm chung nổi bật nhất ở những người từng khiến bạn rung động?",
+      "id": "Kemiripan paling mencolok dari orang-orang yang pernah bikin kamu jatuh hati?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "섬세하고 다정하다. 내 감정을 잘 알아챈다",
+          "en": "Sensitive and sweet—they notice your feelings",
+          "ja": "繊細で優しい。自分の気持ちをよく察してくれる",
+          "zh-CN": "细腻温柔，很会察觉你的情绪",
+          "zh-TW": "細膩溫柔，很會察覺你的情緒",
+          "vi": "Tinh tế, ấm áp—hay bắt được cảm xúc của bạn",
+          "id": "Halus dan penyayang—peka terhadap perasaanmu"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "재밌고 유머가 있다. 같이 있으면 웃음이 끊이지 않는다",
+          "en": "Funny and witty—you never stop laughing together",
+          "ja": "面白くてユーモアがある。一緒にいると笑いが止まらない",
+          "zh-CN": "有趣有梗，在一起笑声不断",
+          "zh-TW": "有趣有梗，在一起笑聲不斷",
+          "vi": "Vui và hài hước—ở cùng không ngừng cười",
+          "id": "Lucu dan jenaka—bareng mereka tertawa terus"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "지적이고 대화가 통한다. 이야기하다 보면 시간이 훌쩍 간다",
+          "en": "Smart and great to talk to—hours fly by in conversation",
+          "ja": "知的で話が合う。話していると時間があっという間",
+          "zh-CN": "有头脑、聊得来，一聊时间就过了",
+          "zh-TW": "有頭腦、聊得來，一聊時間就過了",
+          "vi": "Thông minh, nói chuyện hợp—trò chuyện mãi không chán",
+          "id": "Cerdas dan asyik diajak ngobrol—waktu cepat berlalu"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "카리스마가 있다. 어딜 가든 눈에 띄고 믿음직스럽다",
+          "en": "Charismatic—they stand out and feel reliable",
+          "ja": "カリスマがある。どこでも目立ち、頼りになる",
+          "zh-CN": "有魅力，走到哪都显眼又靠谱",
+          "zh-TW": "有魅力，走到哪都顯眼又靠譜",
+          "vi": "Có charisma—nổi bật và đáng tin",
+          "id": "Berkarisma—menonjol dan terasa bisa dipercaya"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "ko": "상대가 어떤 모습을 보여줄 때 마음이 무너지나요?",
+      "en": "What do they do that makes your heart melt?",
+      "ja": "相手のどんな姿に心が溶けますか？",
+      "zh-CN": "对方什么样的表现会让你心动到招架不住？",
+      "zh-TW": "對方什麼樣的表現會讓你心動到招架不住？",
+      "vi": "Họ làm gì khiến trái tim bạn tan chảy?",
+      "id": "Perilaku apa dari mereka yang bikin hatimu luluh?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "내가 힘들 때 아무 말 없이 곁에 있어줄 때",
+          "en": "When they stay beside you without a word on a hard day",
+          "ja": "辛いとき、何も言わずそばにいてくれるとき",
+          "zh-CN": "你难过时，他们默默陪在身边",
+          "zh-TW": "你難過時，他們默默陪在身邊",
+          "vi": "Khi bạn khó khăn, họ lặng lẽ ở bên không cần nói gì",
+          "id": "Saat kamu sulit, mereka diam-diam menemani"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "진지한 상황에서 갑자기 웃겨서 긴장을 풀어줄 때",
+          "en": "When they crack a joke in a tense moment and ease the mood",
+          "ja": "真剣な場面で急に笑わせて緊張をほぐしてくれるとき",
+          "zh-CN": "严肃场合突然逗你笑、缓解紧张时",
+          "zh-TW": "嚴肅場合突然逗你笑、緩解緊張時",
+          "vi": "Khi tình huống căng họ bất ngờ làm bạn cười",
+          "id": "Saat situasi serius mereka tiba-tiba bikin kamu ketawa"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "내가 모르던 새로운 관점으로 이야기해줄 때",
+          "en": "When they open a perspective you’d never thought of",
+          "ja": "自分が思いもしなかった新しい視点を話してくれるとき",
+          "zh-CN": "用你从没想过的角度和你聊时",
+          "zh-TW": "用你從沒想過的角度和你聊時",
+          "vi": "Khi họ mang đến góc nhìn mới bạn chưa từng nghĩ tới",
+          "id": "Saat mereka membuka sudut pandang baru bagimu"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "무언가에 진심으로 몰두하고 집중하는 모습을 볼 때",
+          "en": "When you see them fully focused and devoted to something",
+          "ja": "何かに本気で没頭している姿を見たとき",
+          "zh-CN": "看到他们对某件事全心投入时",
+          "zh-TW": "看到他們對某件事全心投入時",
+          "vi": "Khi thấy họ chìm đắm, tập trung vào điều gì đó",
+          "id": "Saat melihat mereka fokus sungguh-sungguh pada sesuatu"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "ko": "상대의 어떤 말 한마디에 가장 설레나요?",
+      "en": "Which kind of line from them excites you most?",
+      "ja": "相手のどんな一言にいちばんときめきますか？",
+      "zh-CN": "对方的哪一句话最让你心动？",
+      "zh-TW": "對方的哪一句話最讓你心動？",
+      "vi": "Câu nói kiểu gì của họ khiến bạn rung động nhất?",
+      "id": "Kalimat seperti apa dari mereka yang paling bikin deg-degan?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "\"오늘 피곤해 보이는데, 괜찮아?\" 먼저 챙겨주는 말",
+          "en": "“You look tired today—are you okay?”—caring words first",
+          "ja": "「今日つかれてるみたいだけど、大丈夫？」と先に気遣ってくれる言葉",
+          "zh-CN": "“你今天看起来很累，还好吗？”先关心你",
+          "zh-TW": "「你今天看起來很累，還好嗎？」先關心你",
+          "vi": "“Hôm nay trông bạn mệt—ổn không?”—quan tâm trước",
+          "id": "“Kamu kelihatan lelah hari ini—kamu oke?”—peduli dulu"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "상황에 딱 맞는 재치 있는 농담이나 위트 있는 한마디",
+          "en": "A perfectly timed joke or witty one-liner",
+          "ja": "場にぴったりの気の利いた冗談やウィットの一言",
+          "zh-CN": "应景的玩笑或机智的一句话",
+          "zh-TW": "應景的玩笑或機智的一句話",
+          "vi": "Một câu đùa đúng lúc hoặc dí dỏm",
+          "id": "Lelucon pas situasi atau satu kalimat jenaka"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "\"나는 이렇게 생각하는데, 너는 어때?\" 내 의견을 진지하게 묻는 말",
+          "en": "“Here’s what I think—what about you?”—they really ask your view",
+          "ja": "「私はこう思うけど、あなたは？」と本気で意見を聞いてくれる言葉",
+          "zh-CN": "“我是这么想的，你呢？”认真问你的意见",
+          "zh-TW": "「我是這麼想的，你呢？」認真問你的意見",
+          "vi": "“Mình nghĩ vậy—còn bạn?”—hỏi ý kiến bạn thật lòng",
+          "id": "“Menurutku begini—menurutmu?”—serius minta pendapatmu"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "확신에 차고 결단력 있는 한마디. 흔들림 없는 태도",
+          "en": "A firm, decisive line—no wavering",
+          "ja": "自信に満ちた決断力のある一言。揺れない態度",
+          "zh-CN": "笃定果断的一句话，态度不摇摆",
+          "zh-TW": "篤定果斷的一句話，態度不搖擺",
+          "vi": "Một câu dứt khoát, tự tin—không dao động",
+          "id": "Satu kalimat tegas dan penuh keyakinan"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "ko": "연락할 때 내가 가장 좋아하는 상대방의 스타일은?",
+      "en": "When you text or call, what style do you like most in them?",
+      "ja": "連絡するとき、いちばん好きな相手のスタイルは？",
+      "zh-CN": "联系时，你最喜欢对方哪种风格？",
+      "zh-TW": "聯絡時，你最喜歡對方哪種風格？",
+      "vi": "Khi nhắn tin/gọi, bạn thích phong cách nào nhất ở họ?",
+      "id": "Saat chat/telepon, gaya mereka yang mana paling kamu suka?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "내가 보낸 말에 감정을 섬세하게 읽고 공감해서 답장해준다",
+          "en": "They read the emotion in your messages and reply with empathy",
+          "ja": "送った言葉の感情を細かく読み取り、共感して返してくれる",
+          "zh-CN": "能读懂你文字里的情绪，用共情回复",
+          "zh-TW": "能讀懂你文字裡的情緒，用共感回覆",
+          "vi": "Đọc được cảm xúc trong tin nhắn và trả lời đồng cảm",
+          "id": "Membaca emosi di pesanmu dan membalas dengan empati"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "재치 있고 유쾌하게 대화를 이어가며 분위기를 밝게 만든다",
+          "en": "They keep it fun and light and brighten the mood",
+          "ja": "機転が利いて明るく会話を続け、雰囲気を明るくする",
+          "zh-CN": "风趣接话，把气氛聊得很亮",
+          "zh-TW": "風趣接話，把氣氛聊得很亮",
+          "vi": "Duy trì trò chuyện vui vẻ, không khí tươi",
+          "id": "Lanjut obrolan dengan ceria dan suasana terang"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "깊이 있는 주제로 이야기가 이어지고 대화가 끊이지 않는다",
+          "en": "Conversation goes deep and never runs dry",
+          "ja": "深いテーマで話が続き、会話が途切れない",
+          "zh-CN": "能聊有深度的话题，话匣子关不上",
+          "zh-TW": "能聊有深度的話題，話匣子關不上",
+          "vi": "Chủ đề sâu, trò chuyện không cạn",
+          "id": "Topik mendalam, obrolan mengalir terus"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "답장이 빠르진 않아도 올 때는 명확하고 단단한 느낌이 난다",
+          "en": "Replies aren’t always fast, but when they come they feel clear and solid",
+          "ja": "返信は速くなくても、来たときははっきりしていて頼もしい",
+          "zh-CN": "不一定秒回，但一来就清楚、有分量",
+          "zh-TW": "不一定秒回，但一來就清楚、有分量",
+          "vi": "Không lúc nào cũng trả nhanh, nhưng khi trả thì rõ và chắc",
+          "id": "Tak selalu cepat, tapi kalau balas terasa jelas dan mantap"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "ko": "함께 있을 때 나를 가장 편안하게 만드는 것은?",
+      "en": "When you’re together, what makes you feel most at ease?",
+      "ja": "一緒にいるとき、いちばん安心させてくれるのは？",
+      "zh-CN": "在一起时，什么让你最放松？",
+      "zh-TW": "在一起時，什麼讓你最放鬆？",
+      "vi": "Khi ở bên nhau, điều gì khiến bạn thoải mái nhất?",
+      "id": "Saat bersama, apa yang paling membuatmu nyaman?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "내 말을 끝까지 들어주고 공감해주는 태도",
+          "en": "They listen to the end and respond with empathy",
+          "ja": "話を最後まで聞いてくれて、共感してくれる態度",
+          "zh-CN": "把话听完并认真共情",
+          "zh-TW": "把話聽完並認真共情",
+          "vi": "Nghe hết và đồng cảm thật sự",
+          "id": "Mendengarkan sampai habis dan berempati"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "어색한 순간에도 웃기거나 자연스럽게 분위기를 만드는 능력",
+          "en": "Even in awkward moments they make it funny or natural",
+          "ja": "気まずい瞬間でも笑わせたり、自然に空気を作れる力",
+          "zh-CN": "尴尬时也能逗笑或自然化解",
+          "zh-TW": "尷尬時也能逗笑或自然化解",
+          "vi": "Khoảnh khắc gượng họ vẫn làm vui hoặc tự nhiên",
+          "id": "Saat canggung tetap bisa lucu atau natural"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "이야기 나눌 주제가 항상 있고 대화가 풍성한 느낌",
+          "en": "There’s always something to talk about—conversation feels rich",
+          "ja": "話題が尽きず、会話が豊かな感じ",
+          "zh-CN": "总有话题可聊，对话很充实",
+          "zh-TW": "總有話題可聊，對話很充實",
+          "vi": "Luôn có chủ đề—trò chuyện phong phú",
+          "id": "Selalu ada topik—obrolan terasa kaya"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "무언가를 결정할 때 흔들림 없이 이끌어주는 느낌",
+          "en": "When decisions need to be made, they lead without wavering",
+          "ja": "何かを決めるとき、揺るがずに導いてくれる感じ",
+          "zh-CN": "做决定时稳稳地带你往前走",
+          "zh-TW": "做決定時穩穩地帶你往前走",
+          "vi": "Khi cần quyết định, họ dẫn dắt không dao động",
+          "id": "Saat putuskan sesuatu, mereka memimpin tanpa ragu"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "ko": "상대가 나에게 어떻게 대해줄 때 가장 기분이 좋나요?",
+      "en": "How do they treat you that makes you happiest?",
+      "ja": "相手がどう接してくれるときいちばん嬉しいですか？",
+      "zh-CN": "对方怎样对你时你最开心？",
+      "zh-TW": "對方怎樣對你時你最開心？",
+      "vi": "Họ đối xử với bạn thế nào khiến bạn vui nhất?",
+      "id": "Mereka memperlakukanmu bagaimana yang paling bikin kamu senang?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "내가 말하지 않아도 기분을 먼저 알아채고 챙겨준다",
+          "en": "They sense your mood before you say anything and care for you",
+          "ja": "何も言わなくても気分を先に察して気遣ってくれる",
+          "zh-CN": "不用说就先察觉你的情绪并照顾你",
+          "zh-TW": "不用說就先察覺你的情緒並照顧你",
+          "vi": "Chưa nói đã đoán được tâm trạng và quan tâm",
+          "id": "Tanpa kamu bilang sudah peka dan peduli"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "내가 웃을 수 있도록 늘 가볍고 즐거운 분위기를 만들어준다",
+          "en": "They keep things light and fun so you can laugh",
+          "ja": "いつも軽く楽しい雰囲気を作って笑わせてくれる",
+          "zh-CN": "总把气氛弄得轻松愉快让你想笑",
+          "zh-TW": "總把氣氛弄得輕鬆愉快讓你想笑",
+          "vi": "Luôn tạo không khí nhẹ nhàng vui để bạn cười",
+          "id": "Selalu suasana ringan dan seru agar kamu bisa tertawa"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "내 의견을 진지하게 들어주고 생각을 나눠준다",
+          "en": "They take your opinions seriously and share thoughts with you",
+          "ja": "自分の意見を真剣に聞いて、考えを分かち合ってくれる",
+          "zh-CN": "认真听你的看法并一起交流想法",
+          "zh-TW": "認真聽你的看法並一起交流想法",
+          "vi": "Lắng nghe ý kiến bạn và trao đổi thật lòng",
+          "id": "Mendengarkan pendapatmu serius dan berbagi pikiran"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "나를 믿어주고 흔들리지 않게 곁에서 버텨준다",
+          "en": "They believe in you and stay steady by your side",
+          "ja": "自分を信じてくれて、揺るがずそばで支えてくれる",
+          "zh-CN": "信任你，稳稳地在身边撑住你",
+          "zh-TW": "信任你，穩穩地在身邊撐住你",
+          "vi": "Tin bạn và đứng vững bên cạnh",
+          "id": "Percaya padamu dan setia di sampingmu tanpa goyah"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "ko": "상대의 어떤 모습에서 성격이 좋다고 느끼나요?",
+      "en": "In what kind of behavior do you see “good character” in them?",
+      "ja": "相手のどんな姿に「いい人だな」と感じますか？",
+      "zh-CN": "对方的什么表现让你觉得人品很好？",
+      "zh-TW": "對方的什麼表現讓你覺得人品很好？",
+      "vi": "Hành vi nào của họ khiến bạn thấy họ là người tốt?",
+      "id": "Perilaku seperti apa yang bikin kamu merasa mereka baik?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "주변 사람들을 세심하게 챙기고 먼저 배려하는 모습",
+          "en": "They notice and care for others first, thoughtfully",
+          "ja": "周りを細やかに気遣い、先に配慮する姿",
+          "zh-CN": "细心照顾身边人、先为别人着想",
+          "zh-TW": "細心照顧身邊人、先為別人著想",
+          "vi": "Chu đáo với mọi người, ưu tiên người khác",
+          "id": "Peduli halus ke orang lain, mengutamakan mereka"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "어디서든 사람들을 웃게 만들고 분위기를 좋게 하는 모습",
+          "en": "They make people laugh and lift the mood anywhere",
+          "ja": "どこでも人を笑わせ、雰囲気を良くする姿",
+          "zh-CN": "在哪都能逗人开心、把气氛带好",
+          "zh-TW": "在哪都能逗人開心、把氣氛帶好",
+          "vi": "Ở đâu cũng làm người khác vui, không khí tốt",
+          "id": "Di mana pun bisa bikin orang tertawa dan suasana hangat"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "자신만의 관점이 뚜렷하고 이야기할 때 배우는 게 있는 모습",
+          "en": "They have a clear point of view—you learn when they talk",
+          "ja": "自分なりの視点がはっきりしていて、話していて学びがある姿",
+          "zh-CN": "观点鲜明，聊天能学到东西",
+          "zh-TW": "觀點鮮明，聊天能學到東西",
+          "vi": "Có quan điểm riêng—nghe họ nói là học được",
+          "id": "Pandangan jelas—ngobrol dengannya ada ilmunya"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "해야 할 것을 묵묵히 해내고 말보다 행동으로 보여주는 모습",
+          "en": "They quietly do what needs doing—actions over words",
+          "ja": "やるべきことを黙々と成し遂げ、言葉より行動で見せる姿",
+          "zh-CN": "默默把该做的做了，用行动说话",
+          "zh-TW": "默默把該做的做了，用行動說話",
+          "vi": "Lặng lẽ làm việc cần làm—hành động hơn lời",
+          "id": "Diam-diam mengerjakan yang perlu—aksi lebih dari kata"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "ko": "이상형을 한 가지 감각으로 표현한다면?",
+      "en": "If you described your ideal type as one sense, what would it be?",
+      "ja": "理想型を一つの感覚で表すと？",
+      "zh-CN": "用一种感官形容理想型，会是？",
+      "zh-TW": "用一種感官形容理想型，會是？",
+      "vi": "Nếu chỉ dùng một giác quan để tả người trong mơ?",
+      "id": "Kalau idealmu digambarkan dengan satu indera?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "따뜻한 온기. 손을 잡으면 차가운 게 녹는 느낌",
+          "en": "Warmth—like cold melts when you hold hands",
+          "ja": "あたたかい体温。手をつなぐと冷たさが溶ける感じ",
+          "zh-CN": "温暖——牵手像融化了冷意",
+          "zh-TW": "溫暖——牽手像融化了冷意",
+          "vi": "Hơi ấm—nắm tay là tan hết lạnh",
+          "id": "Kehangatan—pegang tangan seperti mencairkan dingin"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "환한 빛. 있으면 주변이 밝아지는 느낌",
+          "en": "Bright light—everything feels lighter with them around",
+          "ja": "まぶしい光。一緒にいると周りが明るくなる感じ",
+          "zh-CN": "明亮的光——有TA在周围都亮了",
+          "zh-TW": "明亮的光——有TA在周圍都亮了",
+          "vi": "Ánh sáng—có họ là mọi thứ tươi hơn",
+          "id": "Cahaya—bersama mereka sekitar terasa terang"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "깊은 울림. 이야기를 들으면 뭔가 남는 느낌",
+          "en": "Deep resonance—after talking, something stays with you",
+          "ja": "深い響き。話を聴くと何か心に残る感じ",
+          "zh-CN": "深沉的回响——聊完心里还留着什么",
+          "zh-TW": "深沉的回響——聊完心裡還留著什麼",
+          "vi": "Sâu lắng—nói chuyện xong vẫn còn điều gì đó",
+          "id": "Getaran dalam—setelah ngobrol ada yang tertinggal"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "단단한 바위. 흔들릴 때 기댈 수 있는 느낌",
+          "en": "Solid rock—somewhere to lean when you wobble",
+          "ja": "堅い岩。揺れるときにもたれられる感じ",
+          "zh-CN": "坚实的岩石——动摇时可以依靠",
+          "zh-TW": "堅實的岩石——動搖時可以依靠",
+          "vi": "Tảng đá vững—chỗ dựa khi bạn lung lay",
+          "id": "Batu kokoh—sandaran saat goyah"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "ko": "상대의 어떤 점이 계속 생각나게 만드나요?",
+      "en": "What about them keeps coming back to your mind?",
+      "ja": "相手のどんなところがずっと頭に残りますか？",
+      "zh-CN": "对方的哪一点让你一直想起？",
+      "zh-TW": "對方的哪一點讓你一直想起？",
+      "vi": "Điều gì ở họ khiến bạn cứ nhớ mãi?",
+      "id": "Hal apa dari mereka yang terus terlintas di pikiranmu?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "나를 유독 잘 챙겨주는 것 같다는 느낌",
+          "en": "The feeling they take extra care of you",
+          "ja": "自分だけ特別に気にかけてくれてるような感じ",
+          "zh-CN": "好像特别照顾你的那种感觉",
+          "zh-TW": "好像特別照顧你的那種感覺",
+          "vi": "Cảm giác họ chăm sóc bạn hơn người khác",
+          "id": "Rasa mereka mengurusmu lebih dari yang lain"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "같이 있을 때의 그 웃음과 분위기",
+          "en": "Their laugh and the vibe when you’re together",
+          "ja": "一緒にいるときの笑いと雰囲気",
+          "zh-CN": "在一起时的笑声和氛围",
+          "zh-TW": "在一起時的笑聲和氛圍",
+          "vi": "Tiếng cười và không khí khi ở bên nhau",
+          "id": "Tawa dan suasana saat bersama"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "대화하면서 자극받고 영감받는 느낌",
+          "en": "Feeling stimulated and inspired when you talk",
+          "ja": "話していて刺激を受け、インスピレーションをもらう感じ",
+          "zh-CN": "聊天时受到启发、有灵感",
+          "zh-TW": "聊天時受到啟發、有靈感",
+          "vi": "Trò chuyện mà cảm thấy được kích thích và cảm hứng",
+          "id": "Ngobrol dengannya terasa terstimulasi dan berinspirasi"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "믿어도 될 것 같다는 안도감과 든든함",
+          "en": "Relief and steadiness—you feel you can trust them",
+          "ja": "信じて大丈夫そうな安心感と頼もしさ",
+          "zh-CN": "觉得可以相信的安心和踏实",
+          "zh-TW": "覺得可以相信的安心和踏實",
+          "vi": "An tâm và vững vàng—cảm giác có thể tin",
+          "id": "Legah dan kokoh—rasanya bisa percaya"
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "ko": "오래 함께하고 싶은 사람의 조건 중 가장 중요한 것은?",
+      "en": "What matters most to you in someone you’d want long-term?",
+      "ja": "長く一緒にいたい人にいちばん大事な条件は？",
+      "zh-CN": "想长久在一起的人，你最看重什么？",
+      "zh-TW": "想長久在一起的人，你最看重什麼？",
+      "vi": "Điều quan trọng nhất ở người bạn muốn gắn bó lâu dài?",
+      "id": "Yang paling penting dari orang yang ingin kamu barengi lama?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "내 감정을 이해하고 표현하지 않아도 알아주는 사람",
+          "en": "Someone who gets your feelings—even when you don’t spell them out",
+          "ja": "気持ちを理解してくれて、言わなくてもわかってくれる人",
+          "zh-CN": "理解你的情绪，不用说也能懂你的人",
+          "zh-TW": "理解你的情緒，不用說也能懂你的人",
+          "vi": "Hiểu cảm xúc bạn—chưa nói đã hiểu",
+          "id": "Memahami perasaanmu—tanpa harus dijelaskan panjang lebar"
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "오래되어도 지루하지 않고 함께 있으면 늘 즐거운 사람",
+          "en": "Someone who never gets boring—always fun to be around",
+          "ja": "長くいても飽きず、一緒にいるといつも楽しい人",
+          "zh-CN": "再久也不腻，在一起总是开心的人",
+          "zh-TW": "再久也不膩，在一起總是開心的人",
+          "vi": "Dù lâu vẫn không chán—ở cùng lúc nào cũng vui",
+          "id": "Lama pun tidak bosan—bareng mereka selalu seru"
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "서로 성장하고 자극을 주고받을 수 있는 사람",
+          "en": "Someone you can grow with and spark each other",
+          "ja": "お互いに成長し合い、刺激を分かち合える人",
+          "zh-CN": "能一起成长、互相激发的人",
+          "zh-TW": "能一起成長、互相激發的人",
+          "vi": "Cùng nhau trưởng thành và tiếp thêm động lực",
+          "id": "Saling tumbuh dan memicu satu sama lain"
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "어떤 상황에서도 흔들리지 않고 내 편이 되어주는 사람",
+          "en": "Someone who stays on your side, steady in any situation",
+          "ja": "どんな状況でも揺るがず、自分の味方でいてくれる人",
+          "zh-CN": "任何情况都站你这边、不动摇的人",
+          "zh-TW": "任何情況都站你這邊、不動搖的人",
+          "vi": "Trong mọi tình huống vẫn về phía bạn, không dao động",
+          "id": "Di situasi apa pun tetap di pihakmu, tidak goyah"
+        }
+      }
+    ]
+  }
+]
