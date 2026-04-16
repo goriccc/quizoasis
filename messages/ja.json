@@ -1352,6 +1352,61 @@
       "popularTestsTop5": "🔥 人気テストおすすめトップ5"
     }
   },
+  "phase3HiddenSubCharacterTest": {
+    "startMessage": {
+      "line1": "普段の自分とまったく違う「私」が出る瞬間、ありませんか？",
+      "line2": "一杯飲むと急に人生哲学者になったり、好きな曲が流れるとステージの主役になったり、誰もいないときにひとりでYouTuberみたいにつぶやいたり。",
+      "line3": "それがあなたの「裏キャラ」です。",
+      "line4": "12の質問で、隠れていた裏キャラを引き出します。得意スキルも公開。笑ったら、友だちにもシェアしてみて。",
+      "line5": "裏キャラを公開する 🎭 診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（本キャラじゃない！私の裏キャラ診断）",
+      "goToTest": "診断を始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "subName": "裏キャラ名",
+      "subSkill": "得意スキル",
+      "triggerCondition": "発動条件",
+      "triggerRate": "発動確率",
+      "mainSkills": "主なスキル",
+      "disappearCondition": "消える条件",
+      "gapLevel": "本キャラとのギャップ",
+      "oneLiner": "一言紹介",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の裏キャラは［名前］！🎭 発動条件見て笑ったｗ あなたの裏キャラは？一緒に公開しよ",
+      "kakao": "私の裏キャラは［名前］！🎭 発動条件見て笑ったｗ あなたの裏キャラは？一緒に公開しよ",
+      "wechat": "私の裏キャラは［名前］！🎭 発動条件見て笑ったｗ あなたの裏キャラは？一緒に公開しよ",
+      "whatsapp": "私の裏キャラは［名前］！🎭 発動条件見て笑ったｗ あなたの裏キャラは？一緒に公開しよ",
+      "telegram": "私の裏キャラは［名前］！🎭 発動条件見て笑ったｗ あなたの裏キャラは？一緒に公開しよ",
+      "line": "私の裏キャラは［名前］！🎭 発動条件見て笑ったｗ あなたの裏キャラは？一緒に公開しよ",
+      "startDefault": "本キャラじゃない！私の裏キャラ診断 🎭 スタート",
+      "startKakao": "本キャラじゃない！私の裏キャラ診断 🎭 スタート",
+      "startWechat": "本キャラじゃない！私の裏キャラ診断 🎭 スタート",
+      "startWhatsapp": "本キャラじゃない！私の裏キャラ診断 🎭 スタート",
+      "startTelegram": "本キャラじゃない！私の裏キャラ診断 🎭 スタート",
+      "startLine": "本キャラじゃない！私の裏キャラ診断 🎭 スタート"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを初期化しています。少し待ってから再度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 人気テストおすすめトップ5"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "恋愛のたびに、同じパターンで苦しくなったことはありますか？",

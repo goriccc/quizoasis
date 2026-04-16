@@ -1358,6 +1358,61 @@
       "popularTestsTop5": "🔥 熱門測試推薦前5名"
     }
   },
+  "phase3HiddenSubCharacterTest": {
+    "startMessage": {
+      "line1": "有沒有一刻，突然冒出和平常的你完全不一樣的「你」？",
+      "line2": "喝一口就變人生哲學家，喜歡的歌一響就像站在舞台上，家裡沒人時又像獨自開直播碎碎唸。",
+      "line3": "那就是你的「副本人格」。",
+      "line4": "12 道題把藏起來的副本人格挖出來，還會公開招牌技能。覺得好笑就分享給朋友吧。",
+      "line5": "公開我的副本人格 🎭 開始測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（不是本我！找出我的隱藏人設）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "subName": "人設名",
+      "subSkill": "招牌技能",
+      "triggerCondition": "觸發條件",
+      "triggerRate": "觸發機率",
+      "mainSkills": "主要技能",
+      "disappearCondition": "退場條件",
+      "gapLevel": "與本我的差距",
+      "oneLiner": "一句話介紹",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的副本人格是［名字］！🎭 看到觸發條件笑噴了——你的呢？一起公開吧",
+      "kakao": "我的副本人格是［名字］！🎭 看到觸發條件笑噴了——你的呢？一起公開吧",
+      "wechat": "我的副本人格是［名字］！🎭 看到觸發條件笑噴了——你的呢？一起公開吧",
+      "whatsapp": "我的副本人格是［名字］！🎭 看到觸發條件笑噴了——你的呢？一起公開吧",
+      "telegram": "我的副本人格是［名字］！🎭 看到觸發條件笑噴了——你的呢？一起公開吧",
+      "line": "我的副本人格是［名字］！🎭 看到觸發條件笑噴了——你的呢？一起公開吧",
+      "startDefault": "不是本我！找出我的隱藏人設 🎭 開始",
+      "startKakao": "不是本我！找出我的隱藏人設 🎭 開始",
+      "startWechat": "不是本我！找出我的隱藏人設 🎭 開始",
+      "startWhatsapp": "不是本我！找出我的隱藏人設 🎭 開始",
+      "startTelegram": "不是本我！找出我的隱藏人設 🎭 開始",
+      "startLine": "不是本我！找出我的隱藏人設 🎭 開始"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 熱門測試推薦前5名"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "你是否曾在每段感情裡，陷入相似的痛苦模式？",

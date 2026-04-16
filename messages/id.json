@@ -1351,6 +1351,61 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3HiddenSubCharacterTest": {
+    "startMessage": {
+      "line1": "Pernah nggak sih, tiba-tiba muncul “kamu” yang beda banget dari biasanya?",
+      "line2": "Satu teguk jadi filosof hidup; lagu favorit muter langsung kayak di panggung; rumah sepi malah jadi YouTuber sendirian yang ngomong sendiri.",
+      "line3": "Itu persona tersembunyi kamu.",
+      "line4": "12 pertanyaan untuk menggali persona yang ngumpet. Kami ungkap skill andalan—kalau lucu, share ke teman ya.",
+      "line5": "Ungkap persona tersembunyi 🎭 Mulai tes"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Bukan diri utama — Temukan persona tersembunyi)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "subName": "Nama persona",
+      "subSkill": "Skill andalan",
+      "triggerCondition": "Pemicu aktif",
+      "triggerRate": "Peluang aktif",
+      "mainSkills": "Skill utama",
+      "disappearCondition": "Kapan menghilang",
+      "gapLevel": "Jarak dengan diri utama",
+      "oneLiner": "Satu kalimat",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Persona tersembunyi-ku: [nama]! 🎭 Bacanya pemicu—ngakak. Punyamu apa? Ayo pamer bareng.",
+      "kakao": "Persona tersembunyi-ku: [nama]! 🎭 Bacanya pemicu—ngakak. Punyamu apa? Ayo pamer bareng.",
+      "wechat": "Persona tersembunyi-ku: [nama]! 🎭 Bacanya pemicu—ngakak. Punyamu apa? Ayo pamer bareng.",
+      "whatsapp": "Persona tersembunyi-ku: [nama]! 🎭 Bacanya pemicu—ngakak. Punyamu apa? Ayo pamer bareng.",
+      "telegram": "Persona tersembunyi-ku: [nama]! 🎭 Bacanya pemicu—ngakak. Punyamu apa? Ayo pamer bareng.",
+      "line": "Persona tersembunyi-ku: [nama]! 🎭 Bacanya pemicu—ngakak. Punyamu apa? Ayo pamer bareng.",
+      "startDefault": "Bukan diri utama — Temukan persona tersembunyi 🎭 Mulai",
+      "startKakao": "Bukan diri utama — Temukan persona tersembunyi 🎭 Mulai",
+      "startWechat": "Bukan diri utama — Temukan persona tersembunyi 🎭 Mulai",
+      "startWhatsapp": "Bukan diri utama — Temukan persona tersembunyi 🎭 Mulai",
+      "startTelegram": "Bukan diri utama — Temukan persona tersembunyi 🎭 Mulai",
+      "startLine": "Bukan diri utama — Temukan persona tersembunyi 🎭 Mulai"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "Pernah merasa setiap hubungan berakhir dengan pola sulit yang mirip?",

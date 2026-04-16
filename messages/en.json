@@ -1392,6 +1392,61 @@
       "popularTestsTop5": "🔥 Top 5 trending tests"
     }
   },
+  "phase3HiddenSubCharacterTest": {
+    "startMessage": {
+      "line1": "Ever have a moment when a totally different “you” shows up?",
+      "line2": "One drink and you’re a philosopher; your song comes on and you’re on stage; nobody’s home so you’re muttering like a solo YouTuber.",
+      "line3": "That’s your hidden persona.",
+      "line4": "Twelve questions to surface the you that was hiding. We reveal your persona’s signature skill—if it makes you laugh, share it with a friend.",
+      "line5": "Reveal my hidden persona 🎭 Start the quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Not Your Main Self — Hidden Persona)",
+      "goToTest": "Take the quiz",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "subName": "Persona name",
+      "subSkill": "Signature skill",
+      "triggerCondition": "Activation trigger",
+      "triggerRate": "Activation odds",
+      "mainSkills": "Key skills",
+      "disappearCondition": "When it fades",
+      "gapLevel": "Gap: main vs hidden",
+      "oneLiner": "One-liner",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My hidden persona: [name]! 🎭 The trigger had me laughing—what’s yours? Share yours too.",
+      "kakao": "My hidden persona: [name]! 🎭 The trigger had me laughing—what’s yours? Share yours too.",
+      "wechat": "My hidden persona: [name]! 🎭 The trigger had me laughing—what’s yours? Share yours too.",
+      "whatsapp": "My hidden persona: [name]! 🎭 The trigger had me laughing—what’s yours? Share yours too.",
+      "telegram": "My hidden persona: [name]! 🎭 The trigger had me laughing—what’s yours? Share yours too.",
+      "line": "My hidden persona: [name]! 🎭 The trigger had me laughing—what’s yours? Share yours too.",
+      "startDefault": "Not your main self—find my hidden persona 🎭 Start",
+      "startKakao": "Not your main self—find my hidden persona 🎭 Start",
+      "startWechat": "Not your main self—find my hidden persona 🎭 Start",
+      "startWhatsapp": "Not your main self—find my hidden persona 🎭 Start",
+      "startTelegram": "Not your main self—find my hidden persona 🎭 Start",
+      "startLine": "Not your main self—find my hidden persona 🎭 Start"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "Have you ever felt stuck in the same painful pattern in every relationship?",

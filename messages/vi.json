@@ -1351,6 +1351,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3HiddenSubCharacterTest": {
+    "startMessage": {
+      "line1": "Bạn có khoảnh khắc nào “một bạn hoàn toàn khác” xuất hiện không?",
+      "line2": "Một ngụm là thành triết gia đời; bài hát yêu thích vừa lên là như đứng trên sân khấu; nhà không ai thì lẩm bẩm như đang live một mình.",
+      "line3": "Đó chính là persona ẩn của bạn.",
+      "line4": "12 câu hỏi để đào persona đang trốn. Công bố luôn kỹ năng đặc trưng—nếu thấy buồn cười, chia sẻ cho bạn bè nhé.",
+      "line5": "Công khai persona ẩn 🎭 Bắt đầu"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Không phải bản chính — Tìm persona ẩn)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "subName": "Tên persona",
+      "subSkill": "Kỹ năng đặc trưng",
+      "triggerCondition": "Điều kiện kích hoạt",
+      "triggerRate": "Xác suất kích hoạt",
+      "mainSkills": "Kỹ năng chính",
+      "disappearCondition": "Khi nào tắt",
+      "gapLevel": "Khoảng cách với bản chính",
+      "oneLiner": "Một câu giới thiệu",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Persona ẩn của tôi: [tên]! 🎭 Đọc điều kiện kích hoạt là cười—của bạn là gì? Cùng khoe nhé.",
+      "kakao": "Persona ẩn của tôi: [tên]! 🎭 Đọc điều kiện kích hoạt là cười—của bạn là gì? Cùng khoe nhé.",
+      "wechat": "Persona ẩn của tôi: [tên]! 🎭 Đọc điều kiện kích hoạt là cười—của bạn là gì? Cùng khoe nhé.",
+      "whatsapp": "Persona ẩn của tôi: [tên]! 🎭 Đọc điều kiện kích hoạt là cười—của bạn là gì? Cùng khoe nhé.",
+      "telegram": "Persona ẩn của tôi: [tên]! 🎭 Đọc điều kiện kích hoạt là cười—của bạn là gì? Cùng khoe nhé.",
+      "line": "Persona ẩn của tôi: [tên]! 🎭 Đọc điều kiện kích hoạt là cười—của bạn là gì? Cùng khoe nhé.",
+      "startDefault": "Không phải bản chính — Tìm persona ẩn 🎭 Bắt đầu",
+      "startKakao": "Không phải bản chính — Tìm persona ẩn 🎭 Bắt đầu",
+      "startWechat": "Không phải bản chính — Tìm persona ẩn 🎭 Bắt đầu",
+      "startWhatsapp": "Không phải bản chính — Tìm persona ẩn 🎭 Bắt đầu",
+      "startTelegram": "Không phải bản chính — Tìm persona ẩn 🎭 Bắt đầu",
+      "startLine": "Không phải bản chính — Tìm persona ẩn 🎭 Bắt đầu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "Bạn từng nhiều lần mệt mỏi vì cùng một kiểu vấn đề trong tình yêu?",
