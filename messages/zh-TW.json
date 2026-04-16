@@ -1304,6 +1304,60 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3DramaLifeCharacterTest": {
+    "startMessage": {
+      "line1": "看劇時有沒有覺得「這個角色和我好像」？",
+      "line2": "我們會沉浸於某個角色，往往是因為TA的故事與我們的生活相呼應。",
+      "line3": "你會和主角一起憤怒，為默默付出的支援者動容，也會莫名共情反轉角色的複雜內心。",
+      "line4": "12 道題，找出與你當下人生故事最像的劇裡角色。",
+      "line5": "尋找你的人生劇角色 🎬 開始測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（人生劇角色）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "characterType": "角色類型",
+      "narrativeKeywords": "故事關鍵詞",
+      "dramaQuote": "代表台詞",
+      "narrativePosition": "故事進度位置",
+      "realLifeStory": "現實對照",
+      "genreMatch": "相近題材",
+      "characterMessage": "角色寄語",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的人生劇角色是 {type}！🎬 難怪總被這類角色戳中——你是什麼角色？",
+      "kakao": "我的人生劇角色是 {type}！🎬 難怪總被這類角色戳中——你是什麼角色？",
+      "wechat": "我的人生劇角色是 {type}！🎬 難怪總被這類角色戳中——你是什麼角色？",
+      "whatsapp": "我的人生劇角色是 {type}！🎬 難怪總被這類角色戳中——你是什麼角色？",
+      "telegram": "我的人生劇角色是 {type}！🎬 難怪總被這類角色戳中——你是什麼角色？",
+      "line": "我的人生劇角色是 {type}！🎬 難怪總被這類角色戳中——你是什麼角色？",
+      "startDefault": "我的人生劇角色 🎬 開始測驗",
+      "startKakao": "我的人生劇角色 🎬 開始測驗",
+      "startWechat": "我的人生劇角色 🎬 開始測驗",
+      "startWhatsapp": "我的人生劇角色 🎬 開始測驗",
+      "startTelegram": "我的人生劇角色 🎬 開始測驗",
+      "startLine": "我的人生劇角色 🎬 開始測驗"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦前5名",
+      "popularTestsTop5": "🔥 熱門測試推薦前5名"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "你是否曾在每段感情裡，陷入相似的痛苦模式？",

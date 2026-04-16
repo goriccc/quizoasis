@@ -1298,6 +1298,60 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3DramaLifeCharacterTest": {
+    "startMessage": {
+      "line1": "ドラマを見ていて「このキャラ、私にそっくり」と思ったことはありますか？",
+      "line2": "特定のキャラに引き込まれるのは、その物語が自分の人生と重なるからです。",
+      "line3": "主人公の苦しみに一緒に怒り、支える人の静かな献身に胸を打たれ、どんでん返しのキャラの複雑な内面に妙に共感するあなた。",
+      "line4": "12の選択で、いまのあなたの人生物語にいちばん近いドラマキャラを見つけます。",
+      "line5": "人生ドラマの自分キャラを探す 🎬 診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（人生ドラマの自分キャラ）",
+      "goToTest": "診断を始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "characterType": "キャラタイプ",
+      "narrativeKeywords": "物語のキーワード",
+      "dramaQuote": "名台詞",
+      "narrativePosition": "いまの物語の位置",
+      "realLifeStory": "現実にいそうな物語",
+      "genreMatch": "合いそうなジャンル",
+      "characterMessage": "キャラからのメッセージ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の人生ドラマキャラは {type}！🎬 あのキャラに惹かれる理由、やっぱりあった。あなたは？",
+      "kakao": "私の人生ドラマキャラは {type}！🎬 あのキャラに惹かれる理由、やっぱりあった。あなたは？",
+      "wechat": "私の人生ドラマキャラは {type}！🎬 あのキャラに惹かれる理由、やっぱりあった。あなたは？",
+      "whatsapp": "私の人生ドラマキャラは {type}！🎬 あのキャラに惹かれる理由、やっぱりあった。あなたは？",
+      "telegram": "私の人生ドラマキャラは {type}！🎬 あのキャラに惹かれる理由、やっぱりあった。あなたは？",
+      "line": "私の人生ドラマキャラは {type}！🎬 あのキャラに惹かれる理由、やっぱりあった。あなたは？",
+      "startDefault": "人生ドラマの自分キャラ 🎬 診断スタート",
+      "startKakao": "人生ドラマの自分キャラ 🎬 診断スタート",
+      "startWechat": "人生ドラマの自分キャラ 🎬 診断スタート",
+      "startWhatsapp": "人生ドラマの自分キャラ 🎬 診断スタート",
+      "startTelegram": "人生ドラマの自分キャラ 🎬 診断スタート",
+      "startLine": "人生ドラマの自分キャラ 🎬 診断スタート"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを初期化しています。しばらくしてからお試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 人気テストおすすめトップ5"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "恋愛のたびに、同じパターンで苦しくなったことはありますか？",

@@ -38,6 +38,10 @@ import {
   phase3ReincarnationJobResults,
 } from '@/lib/phase3ReincarnationJobData';
 import {
+  phase3DramaLifeCharacterQuestions,
+  phase3DramaLifeCharacterResults,
+} from '@/lib/phase3DramaLifeCharacterData';
+import {
   phase3CoupleChemistryQuestions,
   phase3CoupleChemistryIndividualResults,
 } from '@/lib/phase3CoupleChemistryAnalysisData';
@@ -277,6 +281,10 @@ const Phase3PersonalityStrengthWeaknessTestClient = dynamic(
 );
 const Phase3ReincarnationJobTestClient = dynamic(
   () => import('@/components/Phase3ReincarnationJobTestClient'),
+  { ssr: false }
+);
+const Phase3DramaLifeCharacterTestClient = dynamic(
+  () => import('@/components/Phase3DramaLifeCharacterTestClient'),
   { ssr: false }
 );
 const Phase3CoupleChemistryAnalysisTestClient = dynamic(
@@ -1616,6 +1624,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['保養', '美妝'],
         vi: ['Da', 'Làm đẹp'],
         id: ['Kulit', 'Kecantikan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-drama-life-character') {
+    test = {
+      slug: 'phase3-drama-life-character',
+      title: {
+        ko: '드라마 속 내 인생 캐릭터',
+        en: 'My Life as a Drama Character',
+        ja: 'ドラマの中の私というキャラクター',
+        'zh-CN': '我人生电视剧里的角色',
+        'zh-TW': '我人生戲劇裡的角色',
+        vi: 'Nhân vật phim trong đời tôi',
+        id: 'Karakter drama dalam hidupku',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 드라마 캐릭터 유형 6가지. #드라마 #캐릭터 #성격 #공감',
+        en: '12 A/B questions — which drama character matches your life story? Six types. #drama #character #personality',
+        ja: '12問2択で見る人生ドラマのキャラクター6タイプ。#ドラマ #キャラクター #性格 #共感',
+        'zh-CN': '12 道二选一，六种人生剧角色类型。#电视剧 #角色 #性格 #共鸣',
+        'zh-TW': '12 題二選一，六種人生劇角色類型。#戲劇 #角色 #性格 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu nhân vật phim giống câu chuyện đời bạn. #phim #nhân vật',
+        id: '12 pertanyaan — 6 tipe karakter drama seperti kisah hidupmu. #drama #karakter',
+      },
+      thumbnail: 'p3_test_drama_character_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['드라마', '캐릭터', '성격', '공감'],
+        en: ['Drama', 'Character', 'Personality', 'Empathy'],
+        ja: ['ドラマ', 'キャラクター', '性格', '共感'],
+        'zh-CN': ['电视剧', '角色', '性格', '共鸣'],
+        'zh-TW': ['戲劇', '角色', '性格', '共鳴'],
+        vi: ['Phim', 'Nhân vật', 'Tính cách', 'Đồng cảm'],
+        id: ['Drama', 'Karakter', 'Kepribadian', 'Empati'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4446,6 +4491,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3ReincarnationJobQuestions}
           results={phase3ReincarnationJobResults}
           questionCount={phase3ReincarnationJobQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-drama-life-character') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-drama-life-character',
+      title: {
+        ko: '드라마 속 내 인생 캐릭터',
+        en: 'My Life as a Drama Character',
+        ja: 'ドラマの中の私というキャラクター',
+        'zh-CN': '我人生电视剧里的角色',
+        'zh-TW': '我人生戲劇裡的角色',
+        vi: 'Nhân vật phim trong đời tôi',
+        id: 'Karakter drama dalam hidupku',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 드라마 캐릭터 유형 6가지. #드라마 #캐릭터 #성격 #공감',
+        en: '12 A/B questions — which drama character matches your life story? Six types. #drama #character #personality',
+        ja: '12問2択で見る人生ドラマのキャラクター6タイプ。#ドラマ #キャラクター #性格 #共感',
+        'zh-CN': '12 道二选一，六种人生剧角色类型。#电视剧 #角色 #性格 #共鸣',
+        'zh-TW': '12 題二選一，六種人生劇角色類型。#戲劇 #角色 #性格 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu nhân vật phim giống câu chuyện đời bạn. #phim #nhân vật',
+        id: '12 pertanyaan — 6 tipe karakter drama seperti kisah hidupmu. #drama #karakter',
+      },
+      thumbnail: 'p3_test_drama_character_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['드라마', '캐릭터', '성격', '공감'],
+        en: ['Drama', 'Character', 'Personality', 'Empathy'],
+        ja: ['ドラマ', 'キャラクター', '性格', '共感'],
+        'zh-CN': ['电视剧', '角色', '性格', '共鸣'],
+        'zh-TW': ['戲劇', '角色', '性格', '共鳴'],
+        vi: ['Phim', 'Nhân vật', 'Tính cách', 'Đồng cảm'],
+        id: ['Drama', 'Karakter', 'Kepribadian', 'Empati'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3DramaLifeCharacterTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3DramaLifeCharacterQuestions}
+          results={phase3DramaLifeCharacterResults}
+          questionCount={phase3DramaLifeCharacterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

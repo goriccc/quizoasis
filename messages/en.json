@@ -1338,6 +1338,60 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3DramaLifeCharacterTest": {
+    "startMessage": {
+      "line1": "Have you ever watched a drama and thought, \"That character is just like me\"?",
+      "line2": "We get pulled into certain characters because their story mirrors our own.",
+      "line3": "You rage with the lead, tear up at the quiet supporter, and oddly relate to the twist antagonist.",
+      "line4": "Twelve choices to find which drama character best matches your life story right now.",
+      "line5": "Find your life-as-drama character 🎬 Start the quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (My Life as a Drama Character)",
+      "goToTest": "Take the quiz",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "characterType": "Character type",
+      "narrativeKeywords": "Story keywords",
+      "dramaQuote": "Signature line",
+      "narrativePosition": "Where your story is now",
+      "realLifeStory": "Real-life parallel",
+      "genreMatch": "Matching drama genres",
+      "characterMessage": "Character message",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My life-as-drama character is {type}! 🎬 No wonder I always rooted for that type—what about you?",
+      "kakao": "My life-as-drama character is {type}! 🎬 No wonder I always rooted for that type—what about you?",
+      "wechat": "My life-as-drama character is {type}! 🎬 No wonder I always rooted for that type—what about you?",
+      "whatsapp": "My life-as-drama character is {type}! 🎬 No wonder I always rooted for that type—what about you?",
+      "telegram": "My life-as-drama character is {type}! 🎬 No wonder I always rooted for that type—what about you?",
+      "line": "My life-as-drama character is {type}! 🎬 No wonder I always rooted for that type—what about you?",
+      "startDefault": "My life as a drama character 🎬 Start the quiz",
+      "startKakao": "My life as a drama character 🎬 Start the quiz",
+      "startWechat": "My life as a drama character 🎬 Start the quiz",
+      "startWhatsapp": "My life as a drama character 🎬 Start the quiz",
+      "startTelegram": "My life as a drama character 🎬 Start the quiz",
+      "startLine": "My life as a drama character 🎬 Start the quiz"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "Have you ever felt stuck in the same painful pattern in every relationship?",

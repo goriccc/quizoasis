@@ -1297,6 +1297,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3DramaLifeCharacterTest": {
+    "startMessage": {
+      "line1": "Pernah nonton drama dan berpikir, \"Karakter ini banget kayak aku\"?",
+      "line2": "Kita larut karena cerita mereka beresonansi dengan hidup kita.",
+      "line3": "Kamu marah bareng protagonis, haru pada pendukung yang diam-diam mengabdi, dan anehnya relate ke antagonis yang kompleks.",
+      "line4": "12 pilihan untuk menemukan karakter drama yang paling mirip kisah hidupmu sekarang.",
+      "line5": "Cari karakter drama dalam hidupmu 🎬 Mulai tes"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Karakter drama dalam hidupmu)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "characterType": "Tipe karakter",
+      "narrativeKeywords": "Kata kunci cerita",
+      "dramaQuote": "Dialog khas",
+      "narrativePosition": "Posisi ceritamu sekarang",
+      "realLifeStory": "Paralel dunia nyata",
+      "genreMatch": "Genre yang cocok",
+      "characterMessage": "Pesan dari karakter",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Karakter drama hidupku adalah {type}! 🎬 Pantas saja aku suka tipe itu—kamu?",
+      "kakao": "Karakter drama hidupku adalah {type}! 🎬 Pantas saja aku suka tipe itu—kamu?",
+      "wechat": "Karakter drama hidupku adalah {type}! 🎬 Pantas saja aku suka tipe itu—kamu?",
+      "whatsapp": "Karakter drama hidupku adalah {type}! 🎬 Pantas saja aku suka tipe itu—kamu?",
+      "telegram": "Karakter drama hidupku adalah {type}! 🎬 Pantas saja aku suka tipe itu—kamu?",
+      "line": "Karakter drama hidupku adalah {type}! 🎬 Pantas saja aku suka tipe itu—kamu?",
+      "startDefault": "Karakter drama dalam hidupmu 🎬 Mulai tes",
+      "startKakao": "Karakter drama dalam hidupmu 🎬 Mulai tes",
+      "startWechat": "Karakter drama dalam hidupmu 🎬 Mulai tes",
+      "startWhatsapp": "Karakter drama dalam hidupmu 🎬 Mulai tes",
+      "startTelegram": "Karakter drama dalam hidupmu 🎬 Mulai tes",
+      "startLine": "Karakter drama dalam hidupmu 🎬 Mulai tes"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "Pernah merasa setiap hubungan berakhir dengan pola sulit yang mirip?",

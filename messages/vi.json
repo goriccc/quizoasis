@@ -1297,6 +1297,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3DramaLifeCharacterTest": {
+    "startMessage": {
+      "line1": "Bạn đã từng xem phim và nghĩ \"nhân vật này giống mình\" chưa?",
+      "line2": "Ta mê một nhân vật vì câu chuyện của họ đang vang với đời mình.",
+      "line3": "Bạn giận cùng nhân vật chính, xúc động vì người âm thầm giúp đỡ, và lạ thay lại đồng cảm với kẻ phản diện đầy mâu thuẫn.",
+      "line4": "12 lựa chọn để tìm nhân vật phim hợp nhất với câu chuyện đời bạn lúc này.",
+      "line5": "Tìm nhân vật phim trong đời bạn 🎬 Bắt đầu"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Nhân vật phim trong đời bạn)",
+      "goToTest": "Bắt đầu làm bài",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "characterType": "Kiểu nhân vật",
+      "narrativeKeywords": "Từ khóa câu chuyện",
+      "dramaQuote": "Câu thoại tiêu biểu",
+      "narrativePosition": "Giai đoạn câu chuyện",
+      "realLifeStory": "Song song đời thực",
+      "genreMatch": "Thể loại phù hợp",
+      "characterMessage": "Lời nhắn từ nhân vật",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Nhân vật phim đời tôi là {type}! 🎬 Đúng là có lý khi mình cứ mê kiểu đó—còn bạn?",
+      "kakao": "Nhân vật phim đời tôi là {type}! 🎬 Đúng là có lý khi mình cứ mê kiểu đó—còn bạn?",
+      "wechat": "Nhân vật phim đời tôi là {type}! 🎬 Đúng là có lý khi mình cứ mê kiểu đó—còn bạn?",
+      "whatsapp": "Nhân vật phim đời tôi là {type}! 🎬 Đúng là có lý khi mình cứ mê kiểu đó—còn bạn?",
+      "telegram": "Nhân vật phim đời tôi là {type}! 🎬 Đúng là có lý khi mình cứ mê kiểu đó—còn bạn?",
+      "line": "Nhân vật phim đời tôi là {type}! 🎬 Đúng là có lý khi mình cứ mê kiểu đó—còn bạn?",
+      "startDefault": "Nhân vật phim trong đời bạn 🎬 Bắt đầu",
+      "startKakao": "Nhân vật phim trong đời bạn 🎬 Bắt đầu",
+      "startWechat": "Nhân vật phim trong đời bạn 🎬 Bắt đầu",
+      "startWhatsapp": "Nhân vật phim trong đời bạn 🎬 Bắt đầu",
+      "startTelegram": "Nhân vật phim trong đời bạn 🎬 Bắt đầu",
+      "startLine": "Nhân vật phim trong đời bạn 🎬 Bắt đầu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3LoveRedFlagFinderTest": {
     "startMessage": {
       "line1": "Bạn từng nhiều lần mệt mỏi vì cùng một kiểu vấn đề trong tình yêu?",
