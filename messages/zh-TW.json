@@ -1351,6 +1351,53 @@
       "popularTestsTop5": "🔥 近期熱門測驗前 5"
     }
   },
+  "phase3VillainDnaTest": {
+    "startMessage": {
+      "line1": "平常人很好，但有沒有覺得內心偶爾有什麼在蠢蠢欲動？",
+      "line2": "看到插隊的人、老闆毫無準備衝進會議，或只有自己特別累的時候。",
+      "line3": "那一刻，你內心的黑炎龍會微微抬頭。",
+      "line4": "12 道題挖出你體內沉睡的反派 DNA，還有反派稱號與特技——看完結果就去劇迷／網漫群分享吧。",
+      "line5": "測測我的反派體質 🔥 黑炎覺醒開始"
+    },
+    "ui": {
+      "shareResult": "分享結果",
+      "goToTest": "開始測驗",
+      "adsenseTitle": "AdSense（反派 DNA）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "villainSpecialty": "反派特技",
+      "villainLevel": "反派等級",
+      "awakeningCondition": "覺醒條件",
+      "blackFlameProbability": "黑炎觸發率",
+      "ultimateMove": "必殺技",
+      "dangerIndex": "真實危險指數",
+      "oneLineEval": "一句話吐槽"
+    },
+    "shareMessages": {
+      "startKakao": "內心的黑炎！反派 DNA 測驗 🔥 你的黑炎龍幾級？",
+      "startWechat": "內心的黑炎！反派 DNA 測驗 🔥 你的黑炎龍幾級？",
+      "startWhatsapp": "內心的黑炎！反派 DNA 測驗 🔥 你的黑炎龍幾級？",
+      "startTelegram": "內心的黑炎！反派 DNA 測驗 🔥 你的黑炎龍幾級？",
+      "startLine": "內心的黑炎！反派 DNA 測驗 🔥 你的黑炎龍幾級？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 近期熱門測驗前 5"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "看劇時有沒有覺得「這個角色和我好像」？",

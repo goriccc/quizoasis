@@ -137,6 +137,10 @@ import {
   phase3DopamineTypeQuestions,
   phase3DopamineTypeResults,
 } from '@/lib/phase3DopamineTypeData';
+import {
+  phase3VillainDnaQuestions,
+  phase3VillainDnaResults,
+} from '@/lib/phase3VillainDnaData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -275,6 +279,9 @@ const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient
   ssr: false
 });
 const Phase3DopamineTypeTestClient = dynamic(() => import('@/components/Phase3DopamineTypeTestClient'), {
+  ssr: false,
+});
+const Phase3VillainDnaTestClient = dynamic(() => import('@/components/Phase3VillainDnaTestClient'), {
   ssr: false,
 });
 const Phase3AttachmentLoveTestClient = dynamic(() => import('@/components/Phase3AttachmentLoveTestClient'), {
@@ -1713,6 +1720,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['多巴胺', '性格', '共鳴'],
         vi: ['Dopamine', 'Tính cách', 'Đồng cảm'],
         id: ['Dopamin', 'Kepribadian', 'Relate'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-villain-dna-test') {
+    test = {
+      slug: 'phase3-villain-dna-test',
+      title: {
+        ko: '내 안의 흑염룡! 빌런 재질 테스트',
+        en: 'Black Flame Within! Villain DNA Test',
+        ja: '内なる黒炎！悪役DNAテスト',
+        'zh-CN': '内心的黑炎！反派DNA测试',
+        'zh-TW': '內心的黑炎！反派DNA測驗',
+        vi: 'Ngọn lửa đen trong tôi! Test DNA phản diện',
+        id: 'Api Hitam di Dalam! Tes DNA Villain',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 빌런 DNA 유형 6가지. #빌런 #성격 #웹툰 #드라마 #공감',
+        en: '12 A/B questions — six villain DNA types. #villain #personality #webtoon #drama #relatable',
+        ja: '12問2択で見る悪役DNAタイプ6種。#悪役 #性格 #ウェブトゥーン #ドラマ #共感',
+        'zh-CN': '12 道二选一，六种反派 DNA 类型。#反派 #性格 #网漫 #电视剧 #共鸣',
+        'zh-TW': '12 題二選一，六種反派 DNA 類型。#反派 #性格 #網漫 #戲劇 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu DNA phản diện. #phản diện #tính cách #webtoon #drama #đồng cảm',
+        id: '12 pertanyaan pilihan ganda — 6 tipe DNA villain. #villain #kepribadian #webtoon #drama #relate',
+      },
+      thumbnail: 'p3_test_villain_dna_test.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['빌런', '성격', '웹툰', '드라마', '공감'],
+        en: ['Villain', 'Personality', 'Webtoon', 'Drama', 'Relatable'],
+        ja: ['悪役', '性格', 'ウェブトゥーン', 'ドラマ', '共感'],
+        'zh-CN': ['反派', '性格', '网漫', '电视剧', '共鸣'],
+        'zh-TW': ['反派', '性格', '網漫', '戲劇', '共鳴'],
+        vi: ['Phản diện', 'Tính cách', 'Webtoon', 'Drama', 'Đồng cảm'],
+        id: ['Villain', 'Kepribadian', 'Webtoon', 'Drama', 'Relate'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4690,6 +4734,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3DopamineTypeQuestions}
           results={phase3DopamineTypeResults}
           questionCount={phase3DopamineTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-villain-dna-test') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-villain-dna-test',
+      title: {
+        ko: '내 안의 흑염룡! 빌런 재질 테스트',
+        en: 'Black Flame Within! Villain DNA Test',
+        ja: '内なる黒炎！悪役DNAテスト',
+        'zh-CN': '内心的黑炎！反派DNA测试',
+        'zh-TW': '內心的黑炎！反派DNA測驗',
+        vi: 'Ngọn lửa đen trong tôi! Test DNA phản diện',
+        id: 'Api Hitam di Dalam! Tes DNA Villain',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 빌런 DNA 유형 6가지. #빌런 #성격 #웹툰 #드라마 #공감',
+        en: '12 A/B questions — six villain DNA types. #villain #personality #webtoon #drama #relatable',
+        ja: '12問2択で見る悪役DNAタイプ6種。#悪役 #性格 #ウェブトゥーン #ドラマ #共感',
+        'zh-CN': '12 道二选一，六种反派 DNA 类型。#反派 #性格 #网漫 #电视剧 #共鸣',
+        'zh-TW': '12 題二選一，六種反派 DNA 類型。#反派 #性格 #網漫 #戲劇 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu DNA phản diện. #phản diện #tính cách #webtoon #drama #đồng cảm',
+        id: '12 pertanyaan pilihan ganda — 6 tipe DNA villain. #villain #kepribadian #webtoon #drama #relate',
+      },
+      thumbnail: 'p3_test_villain_dna_test.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['빌런', '성격', '웹툰', '드라마', '공감'],
+        en: ['Villain', 'Personality', 'Webtoon', 'Drama', 'Relatable'],
+        ja: ['悪役', '性格', 'ウェブトゥーン', 'ドラマ', '共感'],
+        'zh-CN': ['反派', '性格', '网漫', '电视剧', '共鸣'],
+        'zh-TW': ['反派', '性格', '網漫', '戲劇', '共鳴'],
+        vi: ['Phản diện', 'Tính cách', 'Webtoon', 'Drama', 'Đồng cảm'],
+        id: ['Villain', 'Kepribadian', 'Webtoon', 'Drama', 'Relate'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3VillainDnaTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3VillainDnaQuestions}
+          results={phase3VillainDnaResults}
+          questionCount={phase3VillainDnaQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

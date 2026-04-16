@@ -1344,6 +1344,53 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3VillainDnaTest": {
+    "startMessage": {
+      "line1": "Kamu biasanya baik—pernah merasa ada sesuatu yang gelisah di dalam diri?",
+      "line2": "Saat ada yang nyelonong antrean, bos masuk rapat tanpa persiapan, atau rasanya cuma kamu yang paling capek.",
+      "line3": "Di detik itu, naga api hitam di dalammu sedikit mengangkat kepala.",
+      "line4": "12 pertanyaan untuk menggali DNA villain yang tertidur—ada nama kode dan jurus andalan. Bagikan hasilnya ke grup chat penggemar drama atau webtoon.",
+      "line5": "Cek DNA villain-ku 🔥 Bangunkan api hitam"
+    },
+    "ui": {
+      "shareResult": "Bagikan hasil",
+      "goToTest": "Mulai tes",
+      "adsenseTitle": "AdSense (DNA villain)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "villainSpecialty": "Jurus andalan villain",
+      "villainLevel": "Level villain",
+      "awakeningCondition": "Pemicu kebangkitan",
+      "blackFlameProbability": "Peluang api hitam",
+      "ultimateMove": "Jurus pamungkas",
+      "dangerIndex": "Indeks bahaya nyata",
+      "oneLineEval": "Satu kalimat roasting"
+    },
+    "shareMessages": {
+      "startKakao": "Api hitam di dalam! Tes DNA villain 🔥 Naga apimu level berapa?",
+      "startWechat": "Api hitam di dalam! Tes DNA villain 🔥 Naga apimu level berapa?",
+      "startWhatsapp": "Api hitam di dalam! Tes DNA villain 🔥 Naga apimu level berapa?",
+      "startTelegram": "Api hitam di dalam! Tes DNA villain 🔥 Naga apimu level berapa?",
+      "startLine": "Api hitam di dalam! Tes DNA villain 🔥 Naga apimu level berapa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "Pernah nonton drama dan berpikir, \"Karakter ini banget kayak aku\"?",

@@ -606,6 +606,53 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3VillainDnaTest": {
+    "startMessage": {
+      "line1": "평소엔 착하게 살고 있는데, 가끔 내 안에 뭔가 다른 게 꿈틀거리는 느낌 받아본 적 있나요?",
+      "line2": "새치기하는 사람을 볼 때, 아무 준비 없이 회의에 들어오는 팀장을 볼 때, 나만 힘든 것 같을 때.",
+      "line3": "그 순간 내 안의 흑염룡이 잠깐 고개를 듭니다.",
+      "line4": "12가지 질문으로 당신 안에 잠든 빌런 DNA를 파헤쳐 드립니다. 빌런 캐릭터 이름과 특기까지 나오니, 결과 보고 드라마/웹툰 팬덤 채팅방에 바로 공유해보세요.",
+      "line5": "내 빌런 재질 확인하기 🔥 흑염룡 각성 시작"
+    },
+    "ui": {
+      "shareResult": "결과 공유하기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (빌런 재질)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "villainSpecialty": "빌런 특기",
+      "villainLevel": "빌런 레벨",
+      "awakeningCondition": "빌런 각성 조건",
+      "blackFlameProbability": "흑염룡 발동 확률",
+      "ultimateMove": "빌런 필살기",
+      "dangerIndex": "진짜 위험 지수",
+      "oneLineEval": "빌런 한 줄 평가"
+    },
+    "shareMessages": {
+      "startKakao": "내 안의 흑염룡! 빌런 재질 테스트 🔥 너의 흑염룡은 몇 레벨?",
+      "startWechat": "내 안의 흑염룡! 빌런 재질 테스트 🔥 너의 흑염룡은 몇 레벨?",
+      "startWhatsapp": "내 안의 흑염룡! 빌런 재질 테스트 🔥 너의 흑염룡은 몇 레벨?",
+      "startTelegram": "내 안의 흑염룡! 빌런 재질 테스트 🔥 너의 흑염룡은 몇 레벨?",
+      "startLine": "내 안의 흑염룡! 빌런 재질 테스트 🔥 너의 흑염룡은 몇 레벨?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "드라마를 보다가 '이 캐릭터가 나랑 너무 닮았다'는 생각, 해본 적 있나요?",

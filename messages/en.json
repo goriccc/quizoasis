@@ -1385,6 +1385,53 @@
       "popularTestsTop5": "🔥 Top 5 trending tests"
     }
   },
+  "phase3VillainDnaTest": {
+    "startMessage": {
+      "line1": "You’re usually nice—but have you ever felt something else stirring inside?",
+      "line2": "When someone cuts the line, when your boss walks into a meeting unprepared, when it feels like you’re the only one struggling.",
+      "line3": "In that moment, your inner black-flame dragon lifts its head—just a little.",
+      "line4": "Twelve questions to dig up the villain DNA sleeping inside you. You’ll get a villain codename and specialty—share the results with your drama or webtoon group chat.",
+      "line5": "Check my villain DNA 🔥 Awaken the black flame"
+    },
+    "ui": {
+      "shareResult": "Share result",
+      "goToTest": "Take the quiz",
+      "adsenseTitle": "AdSense (Villain DNA)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "villainSpecialty": "Villain specialty",
+      "villainLevel": "Villain level",
+      "awakeningCondition": "Awakening trigger",
+      "blackFlameProbability": "Black-flame chance",
+      "ultimateMove": "Ultimate move",
+      "dangerIndex": "Real danger index",
+      "oneLineEval": "One-line roast"
+    },
+    "shareMessages": {
+      "startKakao": "Black Flame Within! Villain DNA Test 🔥 What level is your inner dragon?",
+      "startWechat": "Black Flame Within! Villain DNA Test 🔥 What level is your inner dragon?",
+      "startWhatsapp": "Black Flame Within! Villain DNA Test 🔥 What level is your inner dragon?",
+      "startTelegram": "Black Flame Within! Villain DNA Test 🔥 What level is your inner dragon?",
+      "startLine": "Black Flame Within! Villain DNA Test 🔥 What level is your inner dragon?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "Have you ever watched a drama and thought, \"That character is just like me\"?",

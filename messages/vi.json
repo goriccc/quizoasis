@@ -1344,6 +1344,53 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3VillainDnaTest": {
+    "startMessage": {
+      "line1": "Bạn vẫn hiền lành, nhưng đã bao giờ cảm thấy bên trong có thứ gì đó đang cựa mình chưa?",
+      "line2": "Khi thấy ai đó chen hàng, sếp lao vào họp không chuẩn bị, hay chỉ mình bạn thấy cực khổ nhất.",
+      "line3": "Khoảnh khắc đó, “rồng lửa đen” trong bạn hơi ngẩng đầu.",
+      "line4": "12 câu hỏi để đào DNA phản diện đang ngủ trong bạn—có cả biệt danh và tuyệt kỹ. Chia sẻ kết quả với nhóm fan drama/webtoon nhé.",
+      "line5": "Xem DNA phản diện của tôi 🔥 Đánh thức ngọn lửa đen"
+    },
+    "ui": {
+      "shareResult": "Chia sẻ kết quả",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "AdSense (DNA phản diện)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "villainSpecialty": "Tuyệt kỹ phản diện",
+      "villainLevel": "Cấp phản diện",
+      "awakeningCondition": "Điều kiện thức tỉnh",
+      "blackFlameProbability": "Tỉ lệ bùng lửa đen",
+      "ultimateMove": "Chiêu cuối",
+      "dangerIndex": "Chỉ số nguy hiểm thật",
+      "oneLineEval": "Một câu “xỉa”"
+    },
+    "shareMessages": {
+      "startKakao": "Ngọn lửa đen trong tôi! Test DNA phản diện 🔥 Rồng lửa của bạn level mấy?",
+      "startWechat": "Ngọn lửa đen trong tôi! Test DNA phản diện 🔥 Rồng lửa của bạn level mấy?",
+      "startWhatsapp": "Ngọn lửa đen trong tôi! Test DNA phản diện 🔥 Rồng lửa của bạn level mấy?",
+      "startTelegram": "Ngọn lửa đen trong tôi! Test DNA phản diện 🔥 Rồng lửa của bạn level mấy?",
+      "startLine": "Ngọn lửa đen trong tôi! Test DNA phản diện 🔥 Rồng lửa của bạn level mấy?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "Bạn đã từng xem phim và nghĩ \"nhân vật này giống mình\" chưa?",

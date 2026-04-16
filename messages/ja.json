@@ -1345,6 +1345,53 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3VillainDnaTest": {
+    "startMessage": {
+      "line1": "普段はいい人なのに、ときどき内側で何かが蠢く感じ、ありますか？",
+      "line2": "割り込みする人を見たとき、準備ゼロで会議に入ってくる上司を見たとき、自分だけ大変な気がするとき。",
+      "line3": "その瞬間、内なる黒炎竜がちらりと顔を上げます。",
+      "line4": "12の質問で、あなたの中に眠る悪役DNAを掘り起こします。悪役名と特技も出るので、ドラマやウェブトゥーンのファン集団チャットにすぐ共有してみてください。",
+      "line5": "私の悪役DNAをチェック 🔥 黒炎覚醒スタート"
+    },
+    "ui": {
+      "shareResult": "結果をシェア",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense（悪役DNA）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "villainSpecialty": "悪役の特技",
+      "villainLevel": "悪役レベル",
+      "awakeningCondition": "覚醒条件",
+      "blackFlameProbability": "黒炎発動率",
+      "ultimateMove": "必殺技",
+      "dangerIndex": "本当の危険度",
+      "oneLineEval": "一言ツッコミ"
+    },
+    "shareMessages": {
+      "startKakao": "内なる黒炎！悪役DNAテスト 🔥 あなたの黒炎竜はレベルいくつ？",
+      "startWechat": "内なる黒炎！悪役DNAテスト 🔥 あなたの黒炎竜はレベルいくつ？",
+      "startWhatsapp": "内なる黒炎！悪役DNAテスト 🔥 あなたの黒炎竜はレベルいくつ？",
+      "startTelegram": "内なる黒炎！悪役DNAテスト 🔥 あなたの黒炎竜はレベルいくつ？",
+      "startLine": "内なる黒炎！悪役DNAテスト 🔥 あなたの黒炎竜はレベルいくつ？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "ドラマを見ていて「このキャラ、私にそっくり」と思ったことはありますか？",
