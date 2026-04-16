@@ -1338,6 +1338,53 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3DopamineTypeTest": {
+    "startMessage": {
+      "line1": "Ever have a moment when you think, \"That’s why I live\"?",
+      "line2": "When you eat something great, a long-awaited package arrives, you see yourself in the mirror after a workout, you learn something new, or you laugh with people you love.",
+      "line3": "That’s dopamine lighting up your brain.",
+      "line4": "Everyone recharges differently. Twelve questions to pinpoint where your dopamine spikes most.",
+      "line5": "Find my dopamine type ⚡ Start the analysis"
+    },
+    "ui": {
+      "shareResult": "Share result",
+      "goToTest": "Take the quiz",
+      "adsenseTitle": "AdSense (Dopamine Type)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "dopamineCategory": "Dopamine type",
+      "chargePoints": "Dopamine charge points",
+      "dischargePoints": "Dopamine drain points",
+      "memeVersion": "“That’s why I live” meme line",
+      "strength": "Hidden strength of this type",
+      "caution": "Watch out for",
+      "upgrade": "Level up your dopamine"
+    },
+    "shareMessages": {
+      "startKakao": "What Drives Your Dopamine? ⚡ Where does yours spike?",
+      "startWechat": "What Drives Your Dopamine? ⚡ Where does yours spike?",
+      "startWhatsapp": "What Drives Your Dopamine? ⚡ Where does yours spike?",
+      "startTelegram": "What Drives Your Dopamine? ⚡ Where does yours spike?",
+      "startLine": "What Drives Your Dopamine? ⚡ Where does yours spike?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "Have you ever watched a drama and thought, \"That character is just like me\"?",

@@ -1297,6 +1297,53 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3DopamineTypeTest": {
+    "startMessage": {
+      "line1": "Pernah ada momen kamu berpikir, “inilah alasanku hidup”?",
+      "line2": "Saat makan enak, paket ditunggu datang, lihat cermin setelah olahraga, belajar hal baru, atau tertawa dengan orang tersayang.",
+      "line3": "Di saat itu dopamin di otak meledak.",
+      "line4": "Tiap orang mengisi dopamin dengan cara berbeda. 12 pertanyaan untuk melihat di mana dopaminmu paling kuat.",
+      "line5": "Cek tipe dopaminku ⚡ Mulai analisis"
+    },
+    "ui": {
+      "shareResult": "Bagikan hasil",
+      "goToTest": "Mulai tes",
+      "adsenseTitle": "AdSense (tipe dopamin)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "dopamineCategory": "Tipe dopamin",
+      "chargePoints": "Titik isi dopamin",
+      "dischargePoints": "Titik habis dopamin",
+      "memeVersion": "Kalimat meme “alasanku hidup”",
+      "strength": "Kekuatan tersembunyi tipe ini",
+      "caution": "Perhatian",
+      "upgrade": "Cara upgrade dopamin"
+    },
+    "shareMessages": {
+      "startKakao": "Tipe dopamin yang bikin ketagihan ⚡ Kamu isi dopamin di mana?",
+      "startWechat": "Tipe dopamin yang bikin ketagihan ⚡ Kamu isi dopamin di mana?",
+      "startWhatsapp": "Tipe dopamin yang bikin ketagihan ⚡ Kamu isi dopamin di mana?",
+      "startTelegram": "Tipe dopamin yang bikin ketagihan ⚡ Kamu isi dopamin di mana?",
+      "startLine": "Tipe dopamin yang bikin ketagihan ⚡ Kamu isi dopamin di mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "Pernah nonton drama dan berpikir, \"Karakter ini banget kayak aku\"?",

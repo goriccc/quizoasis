@@ -1297,6 +1297,53 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3DopamineTypeTest": {
+    "startMessage": {
+      "line1": "Bạn có khoảnh khắc nào thấy “đây mới là lý do mình sống”?",
+      "line2": "Khi ăn ngon, gói hàng chờ lâu đến, soi gương sau tập, học điều mới, hay cười với người thương.",
+      "line3": "Lúc đó dopamine trong não bùng lên.",
+      "line4": "Mỗi người nạp dopamine khác nhau. 12 câu để xem dopamine của bạn bật mạnh nhất ở đâu.",
+      "line5": "Xem kiểu dopamine của tôi ⚡ Bắt đầu phân tích"
+    },
+    "ui": {
+      "shareResult": "Chia sẻ kết quả",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "AdSense (kiểu dopamine)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "dopamineCategory": "Kiểu dopamine",
+      "chargePoints": "Điểm nạp dopamine",
+      "dischargePoints": "Điểm tụt dopamine",
+      "memeVersion": "Câu meme “lý do mình sống”",
+      "strength": "Điểm mạnh ẩn của kiểu này",
+      "caution": "Cần lưu ý",
+      "upgrade": "Cách nâng dopamine"
+    },
+    "shareMessages": {
+      "startKakao": "Kiểu dopamine khiến bạn “nghiện” ⚡ Bạn nạp ở đâu?",
+      "startWechat": "Kiểu dopamine khiến bạn “nghiện” ⚡ Bạn nạp ở đâu?",
+      "startWhatsapp": "Kiểu dopamine khiến bạn “nghiện” ⚡ Bạn nạp ở đâu?",
+      "startTelegram": "Kiểu dopamine khiến bạn “nghiện” ⚡ Bạn nạp ở đâu?",
+      "startLine": "Kiểu dopamine khiến bạn “nghiện” ⚡ Bạn nạp ở đâu?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "Bạn đã từng xem phim và nghĩ \"nhân vật này giống mình\" chưa?",

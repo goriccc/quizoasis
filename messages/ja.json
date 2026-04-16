@@ -1298,6 +1298,53 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3DopamineTypeTest": {
+    "startMessage": {
+      "line1": "「これが生きがい」と思う瞬間、ありますか？",
+      "line2": "美味しいものを食べるとき、待っていた荷物が届くとき、運動後に鏡を見るとき、新しいことを知るとき、好きな人たちと笑うとき。",
+      "line3": "その瞬間、脳でドーパミンが弾けます。",
+      "line4": "人によってドーパミンの充電の仕方は違います。12問で、あなたのドーパミンがいちばん出る場所を分析します。",
+      "line5": "私のドーパミンタイプを知る ⚡ 診断スタート"
+    },
+    "ui": {
+      "shareResult": "結果をシェア",
+      "goToTest": "テストを始める",
+      "adsenseTitle": "AdSense（ドーパミンタイプ）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "dopamineCategory": "ドーパミンタイプ",
+      "chargePoints": "チャージポイント",
+      "dischargePoints": "ドレイン（放電）ポイント",
+      "memeVersion": "「これが生きがい」ミーム一言",
+      "strength": "このタイプの隠れた強み",
+      "caution": "注意点",
+      "upgrade": "ドーパミンをレベルアップするには"
+    },
+    "shareMessages": {
+      "startKakao": "夢中になる！ドーパミンタイプ ⚡ あなたのチャージポイントは？",
+      "startWechat": "夢中になる！ドーパミンタイプ ⚡ あなたのチャージポイントは？",
+      "startWhatsapp": "夢中になる！ドーパミンタイプ ⚡ あなたのチャージポイントは？",
+      "startTelegram": "夢中になる！ドーパミンタイプ ⚡ あなたのチャージポイントは？",
+      "startLine": "夢中になる！ドーパミンタイプ ⚡ あなたのチャージポイントは？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "ドラマを見ていて「このキャラ、私にそっくり」と思ったことはありますか？",

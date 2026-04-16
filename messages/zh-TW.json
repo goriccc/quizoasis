@@ -1304,6 +1304,53 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3DopamineTypeTest": {
+    "startMessage": {
+      "line1": "有沒有一瞬間讓你覺得「這就是我活著的理由」？",
+      "line2": "吃到好吃的、等很久的包裹到了、運動後照鏡子、學到新東西、和喜歡的人一起笑。",
+      "line3": "那一刻大腦裡的多巴胺在炸。",
+      "line4": "每個人的多巴胺充電方式不同。12 題，幫你找準多巴胺最容易爆的點。",
+      "line5": "查看我的多巴胺類型 ⚡ 開始分析"
+    },
+    "ui": {
+      "shareResult": "分享結果",
+      "goToTest": "開始測驗",
+      "adsenseTitle": "AdSense（多巴胺類型）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "dopamineCategory": "多巴胺類型",
+      "chargePoints": "多巴胺充電點",
+      "dischargePoints": "多巴胺消耗點",
+      "memeVersion": "「這就是我活著的理由」梗句",
+      "strength": "這一型的隱藏優勢",
+      "caution": "需要注意",
+      "upgrade": "多巴胺升級方式"
+    },
+    "shareMessages": {
+      "startKakao": "讓人上癮的多巴胺類型 ⚡ 你的充電點在哪？",
+      "startWechat": "讓人上癮的多巴胺類型 ⚡ 你的充電點在哪？",
+      "startWhatsapp": "讓人上癮的多巴胺類型 ⚡ 你的充電點在哪？",
+      "startTelegram": "讓人上癮的多巴胺類型 ⚡ 你的充電點在哪？",
+      "startLine": "讓人上癮的多巴胺類型 ⚡ 你的充電點在哪？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 近期熱門測驗前 5"
+    }
+  },
   "phase3DramaLifeCharacterTest": {
     "startMessage": {
       "line1": "看劇時有沒有覺得「這個角色和我好像」？",

@@ -133,6 +133,10 @@ import {
   phase3SkincareRoutineRecommendationQuestions,
   phase3SkincareRoutineRecommendationResults,
 } from '@/lib/phase3SkincareRoutineRecommendationData';
+import {
+  phase3DopamineTypeQuestions,
+  phase3DopamineTypeResults,
+} from '@/lib/phase3DopamineTypeData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -269,6 +273,9 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
 });
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
   ssr: false
+});
+const Phase3DopamineTypeTestClient = dynamic(() => import('@/components/Phase3DopamineTypeTestClient'), {
+  ssr: false,
 });
 const Phase3AttachmentLoveTestClient = dynamic(() => import('@/components/Phase3AttachmentLoveTestClient'), {
   ssr: false
@@ -1669,6 +1676,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戲劇', '角色', '性格', '共鳴'],
         vi: ['Phim', 'Nhân vật', 'Tính cách', 'Đồng cảm'],
         id: ['Drama', 'Karakter', 'Kepribadian', 'Empati'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-dopamine-type-analysis') {
+    test = {
+      slug: 'phase3-dopamine-type-analysis',
+      title: {
+        ko: '날 미치게 하는! 도파민 유형',
+        en: 'What Drives Your Dopamine?',
+        ja: '私を夢中にさせる！ドーパミンタイプ',
+        'zh-CN': '让我上瘾的！多巴胺类型',
+        'zh-TW': '讓我上癮的！多巴胺類型',
+        vi: 'Thứ khiến tôi phấn khích! Kiểu dopamine',
+        id: 'Yang bikin aku ketagihan! Tipe dopamin',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 도파민 충전 유형 6가지. #도파민 #성격 #공감',
+        en: '12 multiple-choice questions — six dopamine recharge types. #dopamine #personality #relatable',
+        ja: '12問4択で見るドーパミン充電タイプ6種。#ドーパミン #性格 #共感',
+        'zh-CN': '12 道四选一，六种多巴胺充电类型。#多巴胺 #性格 #共鸣',
+        'zh-TW': '12 題四選一，六種多巴胺充電類型。#多巴胺 #性格 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu nạp dopamine. #dopamine #tính cách #đồng cảm',
+        id: '12 pertanyaan pilihan ganda — 6 tipe dopamin. #dopamin #kepribadian #relate',
+      },
+      thumbnail: 'p3_test_dopamine_type_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['도파민', '성격', '공감'],
+        en: ['Dopamine', 'Personality', 'Relatable'],
+        ja: ['ドーパミン', '性格', '共感'],
+        'zh-CN': ['多巴胺', '性格', '共鸣'],
+        'zh-TW': ['多巴胺', '性格', '共鳴'],
+        vi: ['Dopamine', 'Tính cách', 'Đồng cảm'],
+        id: ['Dopamin', 'Kepribadian', 'Relate'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4591,6 +4635,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3DramaLifeCharacterQuestions}
           results={phase3DramaLifeCharacterResults}
           questionCount={phase3DramaLifeCharacterQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-dopamine-type-analysis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-dopamine-type-analysis',
+      title: {
+        ko: '날 미치게 하는! 도파민 유형',
+        en: 'What Drives Your Dopamine?',
+        ja: '私を夢中にさせる！ドーパミンタイプ',
+        'zh-CN': '让我上瘾的！多巴胺类型',
+        'zh-TW': '讓我上癮的！多巴胺類型',
+        vi: 'Thứ khiến tôi phấn khích! Kiểu dopamine',
+        id: 'Yang bikin aku ketagihan! Tipe dopamin',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 도파민 충전 유형 6가지. #도파민 #성격 #공감',
+        en: '12 multiple-choice questions — six dopamine recharge types. #dopamine #personality #relatable',
+        ja: '12問4択で見るドーパミン充電タイプ6種。#ドーパミン #性格 #共感',
+        'zh-CN': '12 道四选一，六种多巴胺充电类型。#多巴胺 #性格 #共鸣',
+        'zh-TW': '12 題四選一，六種多巴胺充電類型。#多巴胺 #性格 #共鳴',
+        vi: '12 câu trắc nghiệm — 6 kiểu nạp dopamine. #dopamine #tính cách #đồng cảm',
+        id: '12 pertanyaan pilihan ganda — 6 tipe dopamin. #dopamin #kepribadian #relate',
+      },
+      thumbnail: 'p3_test_dopamine_type_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['도파민', '성격', '공감'],
+        en: ['Dopamine', 'Personality', 'Relatable'],
+        ja: ['ドーパミン', '性格', '共感'],
+        'zh-CN': ['多巴胺', '性格', '共鸣'],
+        'zh-TW': ['多巴胺', '性格', '共鳴'],
+        vi: ['Dopamine', 'Tính cách', 'Đồng cảm'],
+        id: ['Dopamin', 'Kepribadian', 'Relate'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3DopamineTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3DopamineTypeQuestions}
+          results={phase3DopamineTypeResults}
+          questionCount={phase3DopamineTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
