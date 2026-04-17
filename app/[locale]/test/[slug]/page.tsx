@@ -74,6 +74,10 @@ import {
   phase3SnsAlgorithmTypeResults,
 } from '@/lib/phase3SnsAlgorithmTypeData';
 import {
+  phase3RoomPersonalityAnalysisQuestions,
+  phase3RoomPersonalityAnalysisResults,
+} from '@/lib/phase3RoomPersonalityAnalysisData';
+import {
   phase3OotdStyleDiagnosisQuestions,
   phase3OotdStyleDiagnosisResults,
 } from '@/lib/phase3OotdStyleDiagnosisData';
@@ -335,6 +339,10 @@ const Phase3WhichAiAreYouTestClient = dynamic(
 );
 const Phase3SnsAlgorithmTypeTestClient = dynamic(
   () => import('@/components/Phase3SnsAlgorithmTypeTestClient'),
+  { ssr: false }
+);
+const Phase3RoomPersonalityAnalysisTestClient = dynamic(
+  () => import('@/components/Phase3RoomPersonalityAnalysisTestClient'),
   { ssr: false }
 );
 const Phase3OotdStyleDiagnosisTestClient = dynamic(
@@ -906,6 +914,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['社群', '趨勢', '數位', '性格'],
         vi: ['SNS', 'Xu hướng', 'Số', 'Tính cách'],
         id: ['SNS', 'Tren', 'Digital', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-room-personality-analysis') {
+    test = {
+      slug: 'phase3-room-personality-analysis',
+      title: {
+        ko: '내 방이 말해주는 나의 성격',
+        en: 'What Your Room Says About Your Personality',
+        ja: 'あなたの部屋が語る性格',
+        'zh-CN': '房间透露的你是什么性格',
+        'zh-TW': '房間透露的你是什麼性格',
+        vi: 'Căn phòng của bạn nói gì về tính cách?',
+        id: 'Apa Kata Kamarmu tentang Kepribadianmu?',
+      },
+      description: {
+        ko: '12문항 이미지 4지선다로 보는 성격·이상적인 방 스타일 6유형. #성격 #라이프스타일',
+        en: '12 image questions — 6 personality & dream room types. #personality #lifestyle',
+        ja: '画像12問4択で見る性格＆理想の部屋タイプ6種。#性格 #ライフスタイル',
+        'zh-CN': '12 道图片四选一，六种性格与理想房间风格。#性格 #生活方式',
+        'zh-TW': '12 題圖片四選一，六種性格與理想房間風格。#性格 #生活方式',
+        vi: '12 câu chọn ảnh 4 đáp án — 6 kiểu tính cách & phòng mơ ước. #tính cách #lifestyle',
+        id: '12 pertanyaan gambar 4 pilihan — 6 tipe kepribadian & gaya kamar impian. #kepribadian #gaya hidup',
+      },
+      thumbnail: 'p3_test_room_personality_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['성격', '라이프스타일'],
+        en: ['Personality', 'Lifestyle'],
+        ja: ['性格', 'ライフスタイル'],
+        'zh-CN': ['性格', '生活方式'],
+        'zh-TW': ['性格', '生活方式'],
+        vi: ['Tính cách', 'Lifestyle'],
+        id: ['Kepribadian', 'Gaya hidup'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3689,6 +3734,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SnsAlgorithmTypeQuestions}
           results={phase3SnsAlgorithmTypeResults}
           questionCount={phase3SnsAlgorithmTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-room-personality-analysis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-room-personality-analysis',
+      title: {
+        ko: '내 방이 말해주는 나의 성격',
+        en: 'What Your Room Says About Your Personality',
+        ja: 'あなたの部屋が語る性格',
+        'zh-CN': '房间透露的你是什么性格',
+        'zh-TW': '房間透露的你是什麼性格',
+        vi: 'Căn phòng của bạn nói gì về tính cách?',
+        id: 'Apa Kata Kamarmu tentang Kepribadianmu?',
+      },
+      description: {
+        ko: '12문항 이미지 4지선다로 보는 성격·이상적인 방 스타일 6유형. #성격 #라이프스타일',
+        en: '12 image questions — 6 personality & dream room types. #personality #lifestyle',
+        ja: '画像12問4択で見る性格＆理想の部屋タイプ6種。#性格 #ライフスタイル',
+        'zh-CN': '12 道图片四选一，六种性格与理想房间风格。#性格 #生活方式',
+        'zh-TW': '12 題圖片四選一，六種性格與理想房間風格。#性格 #生活方式',
+        vi: '12 câu chọn ảnh 4 đáp án — 6 kiểu tính cách & phòng mơ ước. #tính cách #lifestyle',
+        id: '12 pertanyaan gambar 4 pilihan — 6 tipe kepribadian & gaya kamar impian. #kepribadian #gaya hidup',
+      },
+      thumbnail: 'p3_test_room_personality_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['성격', '라이프스타일'],
+        en: ['Personality', 'Lifestyle'],
+        ja: ['性格', 'ライフスタイル'],
+        'zh-CN': ['性格', '生活方式'],
+        'zh-TW': ['性格', '生活方式'],
+        vi: ['Tính cách', 'Lifestyle'],
+        id: ['Kepribadian', 'Gaya hidup'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3RoomPersonalityAnalysisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3RoomPersonalityAnalysisQuestions}
+          results={phase3RoomPersonalityAnalysisResults}
+          questionCount={phase3RoomPersonalityAnalysisQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

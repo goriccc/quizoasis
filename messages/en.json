@@ -2795,6 +2795,62 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3RoomPersonalityAnalysisTest": {
+    "startMessage": {
+      "line1": "A room is the most honest mirror of who you are inside.",
+      "line2": "What you keep, which colors you choose, and the light you rest in—every choice says something about you.",
+      "line3": "Pick the interior images you’re drawn to, and we’ll analyze your personality type and your ideal room style.",
+      "line4": "Screenshot the result and save it—find the dream room you’d love to keep on Instagram.",
+      "line5": "Analyze my room personality 🏠 Start the interior style quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (What Your Room Says About Your Personality)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "personalityKeywords": "Personality keywords",
+      "idealRoomStyle": "Ideal room style",
+      "dreamRoomColors": "Dream room colors",
+      "keyFurniture": "Key furniture",
+      "mustHaveItems": "Must-have accents",
+      "neverPut": "Never put these",
+      "dreamRoomQuote": "Dream room line",
+      "goodMatch": "Best roommate match",
+      "badMatch": "Clash roommate",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My room personality is {name}! 🏠 Saved my dream-room result—someday I’ll build it. What’s your room style?",
+      "kakao": "My room personality is {name}! 🏠 Saved my dream-room result—someday I’ll build it. What’s your room style?",
+      "wechat": "My room personality is {name}! 🏠 Saved my dream-room result—someday I’ll build it. What’s your room style?",
+      "whatsapp": "My room personality is {name}! 🏠 Saved my dream-room result—someday I’ll build it. What’s your room style?",
+      "telegram": "My room personality is {name}! 🏠 Saved my dream-room result—someday I’ll build it. What’s your room style?",
+      "line": "My room personality is {name}! 🏠 Saved my dream-room result—someday I’ll build it. What’s your room style?",
+      "startDefault": "What your room says about you 🏠 12 image questions",
+      "startKakao": "What your room says about you 🏠 12 image questions",
+      "startWechat": "What your room says about you 🏠 12 image questions",
+      "startWhatsapp": "What your room says about you 🏠 12 image questions",
+      "startTelegram": "What your room says about you 🏠 12 image questions",
+      "startLine": "What your room says about you 🏠 12 image questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing Kakao share. Please try again in a moment.",
+      "kakaoError": "Something went wrong with Kakao share."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "What is filling your social feed right now?",

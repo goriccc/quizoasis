@@ -2755,6 +2755,62 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3RoomPersonalityAnalysisTest": {
+    "startMessage": {
+      "line1": "部屋は、その人の内面をいちばん正直に映す空間です。",
+      "line2": "何を置き、どんな色を選び、どんな光の下で休むか。その選択ひとつひとつが、あなたという人を語ります。",
+      "line3": "直感で惹かれるインテリア画像を選ぶと、性格タイプとぴったりの理想の部屋スタイルを分析します。",
+      "line4": "結果画面をスクショして保存しておきたくなる、あなたのドリームルームを見つけましょう。",
+      "line5": "部屋の性格を分析する 🏠 インテリアタイプ診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（あなたの部屋が語る性格）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "personalityKeywords": "性格キーワード",
+      "idealRoomStyle": "理想の部屋スタイル",
+      "dreamRoomColors": "ドリームルームの色",
+      "keyFurniture": "主役の家具",
+      "mustHaveItems": "必須の小物",
+      "neverPut": "置かないほうがいいもの",
+      "dreamRoomQuote": "ドリームルームの一言",
+      "goodMatch": "相性のいいルームメイト",
+      "badMatch": "ぶつかりやすいルームメイト",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の部屋の性格タイプは {name}！🏠 ドリームルーム結果は保存した。いつか絶対作る。あなたの部屋スタイルは？",
+      "kakao": "私の部屋の性格タイプは {name}！🏠 ドリームルーム結果は保存した。いつか絶対作る。あなたの部屋スタイルは？",
+      "wechat": "私の部屋の性格タイプは {name}！🏠 ドリームルーム結果は保存した。いつか絶対作る。あなたの部屋スタイルは？",
+      "whatsapp": "私の部屋の性格タイプは {name}！🏠 ドリームルーム結果は保存した。いつか絶対作る。あなたの部屋スタイルは？",
+      "telegram": "私の部屋の性格タイプは {name}！🏠 ドリームルーム結果は保存した。いつか絶対作る。あなたの部屋スタイルは？",
+      "line": "私の部屋の性格タイプは {name}！🏠 ドリームルーム結果は保存した。いつか絶対作る。あなたの部屋スタイルは？",
+      "startDefault": "部屋が語るあなたの性格 🏠 画像12問",
+      "startKakao": "部屋が語るあなたの性格 🏠 画像12問",
+      "startWechat": "部屋が語るあなたの性格 🏠 画像12問",
+      "startWhatsapp": "部屋が語るあなたの性格 🏠 画像12問",
+      "startTelegram": "部屋が語るあなたの性格 🏠 画像12問",
+      "startLine": "部屋が語るあなたの性格 🏠 画像12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオ共有を初期化しています。少し待って再度お試しください。",
+      "kakaoError": "カカオ共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "あなたのSNSフィード、今は何でいっぱい？",

@@ -2761,6 +2761,62 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3RoomPersonalityAnalysisTest": {
+    "startMessage": {
+      "line1": "房間是一個人內心最誠實的鏡子。",
+      "line2": "你留下什麼、選什麼顏色、在什麼光線下休息——這些選擇都在說明你是怎樣的人。",
+      "line3": "憑直覺選擇最吸引你的家居圖片，我們會分析你的性格類型與最契合的理想房間風格。",
+      "line4": "截圖儲存結果頁，找到你想發到限動上的夢想房間。",
+      "line5": "分析我的房間性格 🏠 開始家居類型測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（房間透露的你是什麼性格）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "personalityKeywords": "性格關鍵字",
+      "idealRoomStyle": "理想房間風格",
+      "dreamRoomColors": "夢想房間配色",
+      "keyFurniture": "核心家具",
+      "mustHaveItems": "必備小物",
+      "neverPut": "千萬別放",
+      "dreamRoomQuote": "夢想房間一句話",
+      "goodMatch": "合拍室友型",
+      "badMatch": "容易衝突的室友型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的房間性格類型是 {name}！🏠 夢想房間結果已存好，總有一天要裝出來——你是什麼家居風格？",
+      "kakao": "我的房間性格類型是 {name}！🏠 夢想房間結果已存好，總有一天要裝出來——你是什麼家居風格？",
+      "wechat": "我的房間性格類型是 {name}！🏠 夢想房間結果已存好，總有一天要裝出來——你是什麼家居風格？",
+      "whatsapp": "我的房間性格類型是 {name}！🏠 夢想房間結果已存好，總有一天要裝出來——你是什麼家居風格？",
+      "telegram": "我的房間性格類型是 {name}！🏠 夢想房間結果已存好，總有一天要裝出來——你是什麼家居風格？",
+      "line": "我的房間性格類型是 {name}！🏠 夢想房間結果已存好，總有一天要裝出來——你是什麼家居風格？",
+      "startDefault": "房間透露的你是什麼性格 🏠 12 題圖片選擇",
+      "startKakao": "房間透露的你是什麼性格 🏠 12 題圖片選擇",
+      "startWechat": "房間透露的你是什麼性格 🏠 12 題圖片選擇",
+      "startWhatsapp": "房間透露的你是什麼性格 🏠 12 題圖片選擇",
+      "startTelegram": "房間透露的你是什麼性格 🏠 12 題圖片選擇",
+      "startLine": "房間透露的你是什麼性格 🏠 12 題圖片選擇"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 Kakao 分享，請稍後再試。",
+      "kakaoError": "Kakao 分享發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測驗 Top5"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "你的社群動態，現在被什麼填滿了？",

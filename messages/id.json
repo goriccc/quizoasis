@@ -2754,6 +2754,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3RoomPersonalityAnalysisTest": {
+    "startMessage": {
+      "line1": "Kamar adalah cermin paling jujur dari batin seseorang.",
+      "line2": "Barang apa yang kamu simpan, warna apa yang kamu pilih, dan di bawah cahaya apa kamu beristirahat—semua itu menceritakan siapa kamu.",
+      "line3": "Pilih gambar interior yang paling menarik; kami menganalisis tipe kepribadian dan gaya kamar idealmu.",
+      "line4": "Screenshot hasil dan simpan—temukan kamar impian yang ingin kamu pajang di Instagram.",
+      "line5": "Analisis kepribadian lewat kamarku 🏠 Mulai kuis gaya interior"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Apa Kata Kamarmu tentang Kepribadianmu)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "personalityKeywords": "Kata kunci kepribadian",
+      "idealRoomStyle": "Gaya kamar ideal",
+      "dreamRoomColors": "Palet warna kamar impian",
+      "keyFurniture": "Furniture utama",
+      "mustHaveItems": "Aksen wajib",
+      "neverPut": "Jangan taruh ini",
+      "dreamRoomQuote": "Satu kalimat kamar impian",
+      "goodMatch": "Teman sekamar yang cocok",
+      "badMatch": "Teman sekamar yang bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe kepribadian kamarku {name}! 🏠 Hasil kamar impian sudah kusimpan—suatu hari pasti kubuat. Kamu suka gaya kamar apa?",
+      "kakao": "Tipe kepribadian kamarku {name}! 🏠 Hasil kamar impian sudah kusimpan—suatu hari pasti kubuat. Kamu suka gaya kamar apa?",
+      "wechat": "Tipe kepribadian kamarku {name}! 🏠 Hasil kamar impian sudah kusimpan—suatu hari pasti kubuat. Kamu suka gaya kamar apa?",
+      "whatsapp": "Tipe kepribadian kamarku {name}! 🏠 Hasil kamar impian sudah kusimpan—suatu hari pasti kubuat. Kamu suka gaya kamar apa?",
+      "telegram": "Tipe kepribadian kamarku {name}! 🏠 Hasil kamar impian sudah kusimpan—suatu hari pasti kubuat. Kamu suka gaya kamar apa?",
+      "line": "Tipe kepribadian kamarku {name}! 🏠 Hasil kamar impian sudah kusimpan—suatu hari pasti kubuat. Kamu suka gaya kamar apa?",
+      "startDefault": "Apa kata kamarmu tentang dirimu 🏠 12 pertanyaan gambar",
+      "startKakao": "Apa kata kamarmu tentang dirimu 🏠 12 pertanyaan gambar",
+      "startWechat": "Apa kata kamarmu tentang dirimu 🏠 12 pertanyaan gambar",
+      "startWhatsapp": "Apa kata kamarmu tentang dirimu 🏠 12 pertanyaan gambar",
+      "startTelegram": "Apa kata kamarmu tentang dirimu 🏠 12 pertanyaan gambar",
+      "startLine": "Apa kata kamarmu tentang dirimu 🏠 12 pertanyaan gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi Kakao. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi Kakao."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 tes serupa teratas",
+      "popularTestsTop5": "🔥 5 tes populer teratas"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "Feed sosmedmu sekarang penuh dengan apa?",

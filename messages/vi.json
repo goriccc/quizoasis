@@ -2754,6 +2754,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3RoomPersonalityAnalysisTest": {
+    "startMessage": {
+      "line1": "Căn phòng phản chiếu trung thực nhất con người bên trong bạn.",
+      "line2": "Bạn để đồ gì, chọn màu gì, nghỉ dưới ánh sáng nào—mỗi lựa chọn đều nói lên bạn là ai.",
+      "line3": "Chọn hình nội thất bạn thấy hút nhất; chúng tôi phân tích kiểu tính cách và phong cách phòng lý tưởng của bạn.",
+      "line4": "Chụp màn hình kết quả và lưu lại—tìm căn phòng mơ ước bạn muốn đăng Instagram.",
+      "line5": "Phân tích tính cách qua phòng 🏠 Bắt đầu quiz phong cách nội thất"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Căn phòng nói gì về tính cách của bạn)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "personalityKeywords": "Từ khóa tính cách",
+      "idealRoomStyle": "Phong cách phòng lý tưởng",
+      "dreamRoomColors": "Bảng màu phòng mơ ước",
+      "keyFurniture": "Nội thất chính",
+      "mustHaveItems": "Món phụ nhất định phải có",
+      "neverPut": "Tuyệt đối đừng để",
+      "dreamRoomQuote": "Một câu về phòng mơ ước",
+      "goodMatch": "Bạn cùng phòng hợp nhất",
+      "badMatch": "Bạn cùng phòng dễ xung đột",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Kiểu tính cách phòng của tôi là {name}! 🏠 Đã lưu kết quả phòng mơ—sẽ làm thật một ngày nào đó. Còn bạn thích phong cách phòng nào?",
+      "kakao": "Kiểu tính cách phòng của tôi là {name}! 🏠 Đã lưu kết quả phòng mơ—sẽ làm thật một ngày nào đó. Còn bạn thích phong cách phòng nào?",
+      "wechat": "Kiểu tính cách phòng của tôi là {name}! 🏠 Đã lưu kết quả phòng mơ—sẽ làm thật một ngày nào đó. Còn bạn thích phong cách phòng nào?",
+      "whatsapp": "Kiểu tính cách phòng của tôi là {name}! 🏠 Đã lưu kết quả phòng mơ—sẽ làm thật một ngày nào đó. Còn bạn thích phong cách phòng nào?",
+      "telegram": "Kiểu tính cách phòng của tôi là {name}! 🏠 Đã lưu kết quả phòng mơ—sẽ làm thật một ngày nào đó. Còn bạn thích phong cách phòng nào?",
+      "line": "Kiểu tính cách phòng của tôi là {name}! 🏠 Đã lưu kết quả phòng mơ—sẽ làm thật một ngày nào đó. Còn bạn thích phong cách phòng nào?",
+      "startDefault": "Căn phòng nói gì về bạn 🏠 12 câu chọn ảnh",
+      "startKakao": "Căn phòng nói gì về bạn 🏠 12 câu chọn ảnh",
+      "startWechat": "Căn phòng nói gì về bạn 🏠 12 câu chọn ảnh",
+      "startWhatsapp": "Căn phòng nói gì về bạn 🏠 12 câu chọn ảnh",
+      "startTelegram": "Căn phòng nói gì về bạn 🏠 12 câu chọn ảnh",
+      "startLine": "Căn phòng nói gì về bạn 🏠 12 câu chọn ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ Kakao. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ Kakao."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "Feed mạng xã hội của bạn đang đầy những gì?",
