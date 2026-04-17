@@ -2973,6 +2973,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3DumbSpendingDiagnosisTest": {
+    "startMessage": {
+      "line1": "Gaji sudah masuk, kenapa saldo tetap seperti ini?",
+      "line2": "Kamu kerja keras tapi uang hilang entah ke mana. Tanpa sadar ada pola belanja irasional yang merembes—kita sebut “biaya bodoh”.",
+      "line3": "Langganan tidak dipakai, belanja lebih karena kupon, pilih premium karena malas, atau tertipu kata “diskon”.",
+      "line4": "12 pertanyaan membantu menemukan di mana “biaya bodoh” paling besar bocornya.",
+      "line5": "Diagnosis biaya bodoh 💸 Mulai analisis pola belanja"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Uang merembes! Diagnosis boros bodoh)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "prescription": "Resep hemat",
+      "monthlyWaste": "Perkiraan boros bodoh per bulan",
+      "yearlySave": "Potensi hemat per tahun (perkiraan)",
+      "todayTask": "Yang harus dilakukan hari ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Tipe boros bodohku {name}! 💸 Lihat total pemborosan tahunan langsung sadar… kamu tipe apa?",
+      "kakao": "Tipe boros bodohku {name}! 💸 Lihat total pemborosan tahunan langsung sadar… kamu tipe apa?",
+      "wechat": "Tipe boros bodohku {name}! 💸 Lihat total pemborosan tahunan langsung sadar… kamu tipe apa?",
+      "whatsapp": "Tipe boros bodohku {name}! 💸 Lihat total pemborosan tahunan langsung sadar… kamu tipe apa?",
+      "telegram": "Tipe boros bodohku {name}! 💸 Lihat total pemborosan tahunan langsung sadar… kamu tipe apa?",
+      "line": "Tipe boros bodohku {name}! 💸 Lihat total pemborosan tahunan langsung sadar… kamu tipe apa?",
+      "startDefault": "Uang merembes! Diagnosis boros bodoh 💸 12 soal teks, 4 pilihan",
+      "startKakao": "Uang merembes! Diagnosis boros bodoh 💸 12 soal teks, 4 pilihan",
+      "startWechat": "Uang merembes! Diagnosis boros bodoh 💸 12 soal teks, 4 pilihan",
+      "startWhatsapp": "Uang merembes! Diagnosis boros bodoh 💸 12 soal teks, 4 pilihan",
+      "startTelegram": "Uang merembes! Diagnosis boros bodoh 💸 12 soal teks, 4 pilihan",
+      "startLine": "Uang merembes! Diagnosis boros bodoh 💸 12 soal teks, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",

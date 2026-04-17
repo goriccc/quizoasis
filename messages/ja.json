@@ -2974,6 +2974,57 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3DumbSpendingDiagnosisTest": {
+    "startMessage": {
+      "line1": "給料は入るのに、なぜいつも残高はこんな感じ？",
+      "line2": "頑張って働いているのに、どこへ消えたか分からないお金。知らないうちにムダに漏れている消費パターンがあります。それを「ムダ遣いコスト」と呼びます。",
+      "line3": "使っていないサブスク、クーポンで余計に買ったもの、面倒で選んだプレミアム、「セール」という言葉に釣られて買ったもの。",
+      "line4": "12の質問で、あなたのムダ遣いがどこから一番漏れているかを診断します。",
+      "line5": "ムダ遣い診断 💸 消費パターン分析スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（どんどん漏れるお金！ムダ遣い診断）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似た他のテスト",
+      "prescription": "節約の処方箋",
+      "monthlyWaste": "予想される月間ムダ額",
+      "yearlySave": "年間で節約できる目安",
+      "todayTask": "今日やること",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私のムダ遣いタイプは {name}！💸 年間のムダ額を見て現実を見た…あなたはどのタイプ？",
+      "kakao": "私のムダ遣いタイプは {name}！💸 年間のムダ額を見て現実を見た…あなたはどのタイプ？",
+      "wechat": "私のムダ遣いタイプは {name}！💸 年間のムダ額を見て現実を見た…あなたはどのタイプ？",
+      "whatsapp": "私のムダ遣いタイプは {name}！💸 年間のムダ額を見て現実を見た…あなたはどのタイプ？",
+      "telegram": "私のムダ遣いタイプは {name}！💸 年間のムダ額を見て現実を見た…あなたはどのタイプ？",
+      "line": "私のムダ遣いタイプは {name}！💸 年間のムダ額を見て現実を見た…あなたはどのタイプ？",
+      "startDefault": "どんどん漏れるお金！ムダ遣い診断 💸 テキスト12問・4択",
+      "startKakao": "どんどん漏れるお金！ムダ遣い診断 💸 テキスト12問・4択",
+      "startWechat": "どんどん漏れるお金！ムダ遣い診断 💸 テキスト12問・4択",
+      "startWhatsapp": "どんどん漏れるお金！ムダ遣い診断 💸 テキスト12問・4択",
+      "startTelegram": "どんどん漏れるお金！ムダ遣い診断 💸 テキスト12問・4択",
+      "startLine": "どんどん漏れるお金！ムダ遣い診断 💸 テキスト12問・4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTubeは、あなたが口にしなかったことまで知っています。",

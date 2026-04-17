@@ -2980,6 +2980,57 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3DumbSpendingDiagnosisTest": {
+    "startMessage": {
+      "line1": "薪水明明入帳，為什麼餘額總是這樣？",
+      "line2": "辛苦賺的錢不知去向。其實在不知不覺中，你的消費習慣正在非理性地漏錢——我們稱之為「冤枉錢」。",
+      "line3": "閒置訂閱、為券多買、嫌麻煩選進階版、被「打折」話術帶走的消費。",
+      "line4": "12 題，精準找出你的冤枉錢主要從哪裡漏。",
+      "line5": "冤枉錢診斷 💸 開始消費習慣分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（錢不知不覺溜走！冤枉錢診斷）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "prescription": "省錢處方",
+      "monthlyWaste": "預計每月冤枉錢",
+      "yearlySave": "每年可節省（估算）",
+      "todayTask": "今天立刻要做的事",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的冤枉錢類型是 {name}！💸 看到年浪費金額破防了…你是什麼類型？",
+      "kakao": "我的冤枉錢類型是 {name}！💸 看到年浪費金額破防了…你是什麼類型？",
+      "wechat": "我的冤枉錢類型是 {name}！💸 看到年浪費金額破防了…你是什麼類型？",
+      "whatsapp": "我的冤枉錢類型是 {name}！💸 看到年浪費金額破防了…你是什麼類型？",
+      "telegram": "我的冤枉錢類型是 {name}！💸 看到年浪費金額破防了…你是什麼類型？",
+      "line": "我的冤枉錢類型是 {name}！💸 看到年浪費金額破防了…你是什麼類型？",
+      "startDefault": "錢不知不覺溜走！冤枉錢診斷 💸 12 題文字四選一",
+      "startKakao": "錢不知不覺溜走！冤枉錢診斷 💸 12 題文字四選一",
+      "startWechat": "錢不知不覺溜走！冤枉錢診斷 💸 12 題文字四選一",
+      "startWhatsapp": "錢不知不覺溜走！冤枉錢診斷 💸 12 題文字四選一",
+      "startTelegram": "錢不知不覺溜走！冤枉錢診斷 💸 12 題文字四選一",
+      "startLine": "錢不知不覺溜走！冤枉錢診斷 💸 12 題文字四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你連沒說出口的事。",

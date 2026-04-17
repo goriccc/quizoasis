@@ -2973,6 +2973,57 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3DumbSpendingDiagnosisTest": {
+    "startMessage": {
+      "line1": "Lương đã về sao số dư vẫn cứ… thế này?",
+      "line2": "Bạn làm việc chăm chỉ nhưng tiền “bốc hơi” không rõ lối. Thực ra có những thói chi tiêu vô lý đang rò rỉ mà bạn không hay biết—ta gọi đó là “tiền ngu”.",
+      "line3": "Gói đăng ký không dùng, mua thêm vì coupon, chọn bản premium vì lười, hay mua vì câu “giảm giá”.",
+      "line4": "12 câu hỏi giúp bạn xác định “tiền ngu” đang rò mạnh nhất từ đâu.",
+      "line5": "Chẩn đoán tiền ngu 💸 Bắt đầu phân tích thói chi tiêu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tiền cứ trôi! Chẩn đoán tiền ngu)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "prescription": "Đơn tiết kiệm",
+      "monthlyWaste": "Ước tính tiền ngu mỗi tháng",
+      "yearlySave": "Có thể tiết kiệm mỗi năm (ước tính)",
+      "todayTask": "Việc cần làm ngay hôm nay",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Kiểu tiền ngu của mình là {name}! 💸 Nhìn số lãng phí cả năm mà “tỉnh” luôn… bạn là kiểu nào?",
+      "kakao": "Kiểu tiền ngu của mình là {name}! 💸 Nhìn số lãng phí cả năm mà “tỉnh” luôn… bạn là kiểu nào?",
+      "wechat": "Kiểu tiền ngu của mình là {name}! 💸 Nhìn số lãng phí cả năm mà “tỉnh” luôn… bạn là kiểu nào?",
+      "whatsapp": "Kiểu tiền ngu của mình là {name}! 💸 Nhìn số lãng phí cả năm mà “tỉnh” luôn… bạn là kiểu nào?",
+      "telegram": "Kiểu tiền ngu của mình là {name}! 💸 Nhìn số lãng phí cả năm mà “tỉnh” luôn… bạn là kiểu nào?",
+      "line": "Kiểu tiền ngu của mình là {name}! 💸 Nhìn số lãng phí cả năm mà “tỉnh” luôn… bạn là kiểu nào?",
+      "startDefault": "Tiền cứ trôi! Chẩn đoán tiền ngu 💸 12 câu chữ, 4 lựa chọn",
+      "startKakao": "Tiền cứ trôi! Chẩn đoán tiền ngu 💸 12 câu chữ, 4 lựa chọn",
+      "startWechat": "Tiền cứ trôi! Chẩn đoán tiền ngu 💸 12 câu chữ, 4 lựa chọn",
+      "startWhatsapp": "Tiền cứ trôi! Chẩn đoán tiền ngu 💸 12 câu chữ, 4 lựa chọn",
+      "startTelegram": "Tiền cứ trôi! Chẩn đoán tiền ngu 💸 12 câu chữ, 4 lựa chọn",
+      "startLine": "Tiền cứ trôi! Chẩn đoán tiền ngu 💸 12 câu chữ, 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",
