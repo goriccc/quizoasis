@@ -2810,6 +2810,62 @@
       "popularTestsTop5": "🔥 5 tes populer teratas"
     }
   },
+  "phase3GuardianSpiritAnimalTest": {
+    "startMessage": {
+      "line1": "Selalu ada yang menjagamu di sisimu.",
+      "line2": "Dalam mitologi Asia Timur, setiap orang konon punya roh penjaga yang misterius—seperti naga yang membubung, phoenix yang bangkit dari api, atau qilin yang tenang dan suci.",
+      "line3": "Tanpa kata—lewat pilihan gambar secara naluri—kita menemukan roh yang melindungimu.",
+      "line4": "Gambar hasilnya begitu indah, kamu mungkin ingin menyimpan tangkapan layar.",
+      "line5": "Temukan roh penjagaku 🐉 Mulai diagnosis mistis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Roh penjaga mistis)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "questionHint": "Pilih gambar yang lebih menarik hatimu. Jangan terlalu dipikir—ikuti insting.",
+      "guardianOfficial": "Roh penjaga",
+      "symbolism": "Simbolisme",
+      "guardianEnergy": "Energi penjaga",
+      "spiritMessage": "Pesan dari roh",
+      "spiritColors": "Warna",
+      "luckyDirection": "Arah keberuntungan",
+      "resemblance": "Kemiripan denganmu",
+      "guardianBlessing": "Berkat penjaga",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Roh penjagaku adalah {name}! ✨ Gambarnya cakep banget jadi kusimpan—kamu dapat apa?",
+      "kakao": "Roh penjagaku adalah {name}! ✨ Gambarnya cakep banget jadi kusimpan—kamu dapat apa?",
+      "wechat": "Roh penjagaku adalah {name}! ✨ Gambarnya cakep banget jadi kusimpan—kamu dapat apa?",
+      "whatsapp": "Roh penjagaku adalah {name}! ✨ Gambarnya cakep banget jadi kusimpan—kamu dapat apa?",
+      "telegram": "Roh penjagaku adalah {name}! ✨ Gambarnya cakep banget jadi kusimpan—kamu dapat apa?",
+      "line": "Roh penjagaku adalah {name}! ✨ Gambarnya cakep banget jadi kusimpan—kamu dapat apa?",
+      "startDefault": "Roh penjaga mistisku 🐉 12 pertanyaan pilih gambar A/B",
+      "startKakao": "Roh penjaga mistisku 🐉 12 pertanyaan pilih gambar A/B",
+      "startWechat": "Roh penjaga mistisku 🐉 12 pertanyaan pilih gambar A/B",
+      "startWhatsapp": "Roh penjaga mistisku 🐉 12 pertanyaan pilih gambar A/B",
+      "startTelegram": "Roh penjaga mistisku 🐉 12 pertanyaan pilih gambar A/B",
+      "startLine": "Roh penjaga mistisku 🐉 12 pertanyaan pilih gambar A/B"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi Kakao. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi Kakao."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 tes serupa teratas",
+      "popularTestsTop5": "🔥 5 tes populer teratas"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "Feed sosmedmu sekarang penuh dengan apa?",

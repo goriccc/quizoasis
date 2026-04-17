@@ -78,6 +78,10 @@ import {
   phase3RoomPersonalityAnalysisResults,
 } from '@/lib/phase3RoomPersonalityAnalysisData';
 import {
+  phase3GuardianSpiritAnimalQuestions,
+  phase3GuardianSpiritAnimalResults,
+} from '@/lib/phase3GuardianSpiritAnimalData';
+import {
   phase3OotdStyleDiagnosisQuestions,
   phase3OotdStyleDiagnosisResults,
 } from '@/lib/phase3OotdStyleDiagnosisData';
@@ -343,6 +347,10 @@ const Phase3SnsAlgorithmTypeTestClient = dynamic(
 );
 const Phase3RoomPersonalityAnalysisTestClient = dynamic(
   () => import('@/components/Phase3RoomPersonalityAnalysisTestClient'),
+  { ssr: false }
+);
+const Phase3GuardianSpiritAnimalTestClient = dynamic(
+  () => import('@/components/Phase3GuardianSpiritAnimalTestClient'),
   { ssr: false }
 );
 const Phase3OotdStyleDiagnosisTestClient = dynamic(
@@ -951,6 +959,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['性格', '生活方式'],
         vi: ['Tính cách', 'Lifestyle'],
         id: ['Kepribadian', 'Gaya hidup'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-guardian-spirit-animal') {
+    test = {
+      slug: 'phase3-guardian-spirit-animal',
+      title: {
+        ko: '나를 수호하는 신비한 영물',
+        en: 'My Mystic Guardian Spirit',
+        ja: '私を守る神秘の霊獣',
+        'zh-CN': '守护我的神秘灵兽',
+        'zh-TW': '守護我的神秘靈獸',
+        vi: 'Linh thú thần bí hộ mệnh của tôi',
+        id: 'Roh penjaga mistis yang melindungiku',
+      },
+      description: {
+        ko: '12문항 이미지 2지선다로 보는 수호 영물 6유형. #영물 #운세 #신비 #수호',
+        en: '12 image A/B questions — 6 guardian spirit types. #spirit #fortune #mystic',
+        ja: '画像12問の2択で見る守護霊獣6タイプ。#霊獣 #運勢',
+        'zh-CN': '12 道图片二选一，六种守护灵兽。#灵兽 #运势',
+        'zh-TW': '12 題圖片二選一，六種守護靈獸。#靈獸 #運勢',
+        vi: '12 câu chọn ảnh A/B — 6 linh thú hộ mệnh.',
+        id: '12 pertanyaan gambar A/B — 6 tipe penjaga roh.',
+      },
+      thumbnail: 'p3_test_guardian_spirit_animal.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['영물', '운세', '신비', '수호'],
+        en: ['Spirit', 'Fortune', 'Mystic', 'Guardian'],
+        ja: ['霊獣', '運勢', '神秘', '守護'],
+        'zh-CN': ['灵兽', '运势', '神秘', '守护'],
+        'zh-TW': ['靈獸', '運勢', '神秘', '守護'],
+        vi: ['Linh thú', 'Vận số', 'Huyền bí', 'Hộ mệnh'],
+        id: ['Roh', 'Ramalan', 'Mistik', 'Penjaga'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -3789,6 +3834,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3RoomPersonalityAnalysisQuestions}
           results={phase3RoomPersonalityAnalysisResults}
           questionCount={phase3RoomPersonalityAnalysisQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-guardian-spirit-animal') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-guardian-spirit-animal',
+      title: {
+        ko: '나를 수호하는 신비한 영물',
+        en: 'My Mystic Guardian Spirit',
+        ja: '私を守る神秘の霊獣',
+        'zh-CN': '守护我的神秘灵兽',
+        'zh-TW': '守護我的神秘靈獸',
+        vi: 'Linh thú thần bí hộ mệnh của tôi',
+        id: 'Roh penjaga mistis yang melindungiku',
+      },
+      description: {
+        ko: '12문항 이미지 2지선다로 보는 수호 영물 6유형. #영물 #운세 #신비 #수호',
+        en: '12 image A/B questions — 6 guardian spirit types. #spirit #fortune #mystic',
+        ja: '画像12問の2択で見る守護霊獣6タイプ。#霊獣 #運勢',
+        'zh-CN': '12 道图片二选一，六种守护灵兽。#灵兽 #运势',
+        'zh-TW': '12 題圖片二選一，六種守護靈獸。#靈獸 #運勢',
+        vi: '12 câu chọn ảnh A/B — 6 linh thú hộ mệnh.',
+        id: '12 pertanyaan gambar A/B — 6 tipe penjaga roh.',
+      },
+      thumbnail: 'p3_test_guardian_spirit_animal.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['영물', '운세', '신비', '수호'],
+        en: ['Spirit', 'Fortune', 'Mystic', 'Guardian'],
+        ja: ['霊獣', '運勢', '神秘', '守護'],
+        'zh-CN': ['灵兽', '运势', '神秘', '守护'],
+        'zh-TW': ['靈獸', '運勢', '神秘', '守護'],
+        vi: ['Linh thú', 'Vận số', 'Huyền bí', 'Hộ mệnh'],
+        id: ['Roh', 'Ramalan', 'Mistik', 'Penjaga'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3GuardianSpiritAnimalTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3GuardianSpiritAnimalQuestions}
+          results={phase3GuardianSpiritAnimalResults}
+          questionCount={phase3GuardianSpiritAnimalQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

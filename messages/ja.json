@@ -2811,6 +2811,62 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3GuardianSpiritAnimalTest": {
+    "startMessage": {
+      "line1": "あなたのそばには、いつもあなたを守る存在がいます。",
+      "line2": "東洋の神話や伝説には、人それぞれを守る神秘の霊獣がいると伝えられています。空を駆ける龍のような気を持つ人、炎から蘇る鳳凰のような人、静かに聖なる気を宿す麒麟のような人。",
+      "line3": "言葉ではなく、無意識のイメージ選択で、あなたを守る霊獣を見つけます。",
+      "line4": "結果画像があまりに美しく、思わず保存したくなるかもしれません。",
+      "line5": "私の守護霊獣を探す 🐉 神秘の診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私を守る神秘の霊獣）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "questionHint": "より惹かれる画像を選んでください。深く考えず、直感で。",
+      "guardianOfficial": "守護霊獣",
+      "symbolism": "象徴",
+      "guardianEnergy": "守護の気",
+      "spiritMessage": "霊獣からのメッセージ",
+      "spiritColors": "色",
+      "luckyDirection": "幸運の方角",
+      "resemblance": "あなたに似たところ",
+      "guardianBlessing": "守護のメッセージ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の守護霊獣は {name}！ ✨ 結果画像が綺麗すぎて保存した → あなたは？",
+      "kakao": "私の守護霊獣は {name}！ ✨ 結果画像が綺麗すぎて保存した → あなたは？",
+      "wechat": "私の守護霊獣は {name}！ ✨ 結果画像が綺麗すぎて保存した → あなたは？",
+      "whatsapp": "私の守護霊獣は {name}！ ✨ 結果画像が綺麗すぎて保存した → あなたは？",
+      "telegram": "私の守護霊獣は {name}！ ✨ 結果画像が綺麗すぎて保存した → あなたは？",
+      "line": "私の守護霊獣は {name}！ ✨ 結果画像が綺麗すぎて保存した → あなたは？",
+      "startDefault": "私を守る神秘の霊獣 🐉 画像12問の2択",
+      "startKakao": "私を守る神秘の霊獣 🐉 画像12問の2択",
+      "startWechat": "私を守る神秘の霊獣 🐉 画像12問の2択",
+      "startWhatsapp": "私を守る神秘の霊獣 🐉 画像12問の2択",
+      "startTelegram": "私を守る神秘の霊獣 🐉 画像12問の2択",
+      "startLine": "私を守る神秘の霊獣 🐉 画像12問の2択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオ共有を初期化しています。少し待って再度お試しください。",
+      "kakaoError": "カカオ共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "あなたのSNSフィード、今は何でいっぱい？",

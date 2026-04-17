@@ -2072,6 +2072,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3GuardianSpiritAnimalTest": {
+    "startMessage": {
+      "line1": "당신 곁에는 언제나 당신을 지켜주는 존재가 있습니다.",
+      "line2": "동양의 신화와 전설 속에는 사람마다 자신을 수호하는 신비한 영물이 있다고 전해집니다. 용이 되어 하늘을 나는 기운을 가진 사람, 봉황처럼 불 속에서도 다시 일어서는 사람, 기린처럼 조용하지만 성스러운 기운을 품은 사람.",
+      "line3": "말이 아닌 무의식적 이미지 선택으로 당신을 지켜주는 수호 영물을 찾아드립니다.",
+      "line4": "결과 이미지가 너무 아름다워서 캡처해두고 싶을 거예요.",
+      "line5": "나의 수호 영물 찾기 🐉 신비한 진단 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나를 수호하는 신비한 영물)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "questionHint": "더 끌리거나 마음이 가는 이미지를 선택하세요. 깊이 생각하지 말고 직관적으로 선택해 주세요.",
+      "guardianOfficial": "수호 영물",
+      "symbolism": "상징",
+      "guardianEnergy": "수호 기운",
+      "spiritMessage": "영물이 전하는 말",
+      "spiritColors": "빛깔",
+      "luckyDirection": "행운의 방향",
+      "resemblance": "당신과 닮은 점",
+      "guardianBlessing": "수호 메시지",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "나를 수호하는 영물은 {name}! ✨ 결과 이미지가 너무 예뻐서 저장해뒀다 → 너의 수호 영물은 뭐야?",
+      "kakao": "나를 수호하는 영물은 {name}! ✨ 결과 이미지가 너무 예뻐서 저장해뒀다 → 너의 수호 영물은 뭐야?",
+      "wechat": "나를 수호하는 영물은 {name}! ✨ 결과 이미지가 너무 예뻐서 저장해뒀다 → 너의 수호 영물은 뭐야?",
+      "whatsapp": "나를 수호하는 영물은 {name}! ✨ 결과 이미지가 너무 예뻐서 저장해뒀다 → 너의 수호 영물은 뭐야?",
+      "telegram": "나를 수호하는 영물은 {name}! ✨ 결과 이미지가 너무 예뻐서 저장해뒀다 → 너의 수호 영물은 뭐야?",
+      "line": "나를 수호하는 영물은 {name}! ✨ 결과 이미지가 너무 예뻐서 저장해뒀다 → 너의 수호 영물은 뭐야?",
+      "startDefault": "나를 수호하는 신비한 영물 🐉 12문항 이미지 선택",
+      "startKakao": "나를 수호하는 신비한 영물 🐉 12문항 이미지 선택",
+      "startWechat": "나를 수호하는 신비한 영물 🐉 12문항 이미지 선택",
+      "startWhatsapp": "나를 수호하는 신비한 영물 🐉 12문항 이미지 선택",
+      "startTelegram": "나를 수호하는 신비한 영물 🐉 12문항 이미지 선택",
+      "startLine": "나를 수호하는 신비한 영물 🐉 12문항 이미지 선택"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3SnsAlgorithmTypeTest": {
     "startMessage": {
       "line1": "당신의 SNS 피드, 지금 어떤 것들로 가득 차 있나요?",
