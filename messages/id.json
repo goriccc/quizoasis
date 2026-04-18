@@ -3024,6 +3024,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3TfIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "T atau F? Perdebatan itu belum selesai.",
+      "line2": "Orang yang 95% T dan yang 52% T tidak bisa disebut T yang sama; F pun begitu.",
+      "line3": "Intinya beda cara memutuskan: logika dan prinsip dulu, atau orang dan perasaan dulu. Kamu ada di antara keduanya.",
+      "line4": "12 pilihan situasi mengukur indeks berpik–merasamu secara presisi antara 0–100%. Coba bareng pasangan, bedanya akan jelas.",
+      "line5": "Mulai ukur indeks T/F ⚖️ Seberapa “perasaan” aku (%)?"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Indeks T/F-ku — pengukuran presisi)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "tfIndex": "Indeks T/F",
+      "characteristics": "Spektrum utama",
+      "relationshipTip": "Tips hubungan T/F",
+      "careerMatch": "Profesi yang cocok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Indeks F-ku {fPercent}%! Indeks T/F-ku — pengukuran presisi",
+      "kakao": "Indeks F-ku {fPercent}%! Indeks T/F-ku — pengukuran presisi",
+      "wechat": "Indeks F-ku {fPercent}%! Indeks T/F-ku — pengukuran presisi",
+      "whatsapp": "Indeks F-ku {fPercent}%! Indeks T/F-ku — pengukuran presisi",
+      "telegram": "Indeks F-ku {fPercent}%! Indeks T/F-ku — pengukuran presisi",
+      "line": "Indeks F-ku {fPercent}%! Indeks T/F-ku — pengukuran presisi",
+      "startDefault": "Indeks T/F-ku — pengukuran presisi ⚖️ 12 pertanyaan 2 pilihan",
+      "startKakao": "Indeks T/F-ku — pengukuran presisi ⚖️ 12 pertanyaan 2 pilihan",
+      "startWechat": "Indeks T/F-ku — pengukuran presisi ⚖️ 12 pertanyaan 2 pilihan",
+      "startWhatsapp": "Indeks T/F-ku — pengukuran presisi ⚖️ 12 pertanyaan 2 pilihan",
+      "startTelegram": "Indeks T/F-ku — pengukuran presisi ⚖️ 12 pertanyaan 2 pilihan",
+      "startLine": "Indeks T/F-ku — pengukuran presisi ⚖️ 12 pertanyaan 2 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",

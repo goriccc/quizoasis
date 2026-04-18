@@ -3065,6 +3065,57 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3TfIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "T or F? That debate is not over yet.",
+      "line2": "Someone who is 95% T and someone who is 52% T are not the same kind of T—and the same goes for F.",
+      "line3": "The core difference is how you decide: logic and principles first, or people and feelings first. You sit somewhere between.",
+      "line4": "Twelve situational choices pin your thinking–feeling index between 0 and 100%. Try it with a partner and see the gap clearly.",
+      "line5": "Start the T/F index test ⚖️ How feeling-oriented am I (%)?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (My T/F index — precision test)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "tfIndex": "T/F index",
+      "characteristics": "Main spectrum",
+      "relationshipTip": "T/F relationship tips",
+      "careerMatch": "Great-fit careers",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My F index is {fPercent}%! My T/F index — precision test",
+      "kakao": "My F index is {fPercent}%! My T/F index — precision test",
+      "wechat": "My F index is {fPercent}%! My T/F index — precision test",
+      "whatsapp": "My F index is {fPercent}%! My T/F index — precision test",
+      "telegram": "My F index is {fPercent}%! My T/F index — precision test",
+      "line": "My F index is {fPercent}%! My T/F index — precision test",
+      "startDefault": "My T/F index — precision test ⚖️ 12 A/B questions",
+      "startKakao": "My T/F index — precision test ⚖️ 12 A/B questions",
+      "startWechat": "My T/F index — precision test ⚖️ 12 A/B questions",
+      "startWhatsapp": "My T/F index — precision test ⚖️ 12 A/B questions",
+      "startTelegram": "My T/F index — precision test ⚖️ 12 A/B questions",
+      "startLine": "My T/F index — precision test ⚖️ 12 A/B questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube knows things you never even said out loud.",

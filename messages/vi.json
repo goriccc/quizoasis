@@ -3024,6 +3024,57 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3TfIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",
+      "line2": "Người T 95% và người T 52% không thể gọi chung là cùng một kiểu T; F cũng vậy.",
+      "line3": "Khác biệt cốt lõi là cách quyết định: ưu tiên logic và nguyên tắc, hay người và cảm xúc trước. Bạn nằm đâu đó giữa hai cực.",
+      "line4": "12 lựa chọn tình huống đo chỉ số suy nghĩ–cảm xúc của bạn trong khoảng 0–100%. Làm cùng đôi bạn sẽ thấy khoảng cách rõ ràng.",
+      "line5": "Bắt đầu đo chỉ số T/F ⚖️ Tôi “cảm tính” bao nhiêu %?"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chỉ số T/F của tôi — đo chính xác)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "tfIndex": "Chỉ số T/F",
+      "characteristics": "Phổ chính",
+      "relationshipTip": "Gợi ý quan hệ T/F",
+      "careerMatch": "Nghề hợp",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Chỉ số F của tôi là {fPercent}%! Chỉ số T/F của tôi — đo chính xác",
+      "kakao": "Chỉ số F của tôi là {fPercent}%! Chỉ số T/F của tôi — đo chính xác",
+      "wechat": "Chỉ số F của tôi là {fPercent}%! Chỉ số T/F của tôi — đo chính xác",
+      "whatsapp": "Chỉ số F của tôi là {fPercent}%! Chỉ số T/F của tôi — đo chính xác",
+      "telegram": "Chỉ số F của tôi là {fPercent}%! Chỉ số T/F của tôi — đo chính xác",
+      "line": "Chỉ số F của tôi là {fPercent}%! Chỉ số T/F của tôi — đo chính xác",
+      "startDefault": "Chỉ số T/F của tôi — đo chính xác ⚖️ 12 câu 2 lựa chọn",
+      "startKakao": "Chỉ số T/F của tôi — đo chính xác ⚖️ 12 câu 2 lựa chọn",
+      "startWechat": "Chỉ số T/F của tôi — đo chính xác ⚖️ 12 câu 2 lựa chọn",
+      "startWhatsapp": "Chỉ số T/F của tôi — đo chính xác ⚖️ 12 câu 2 lựa chọn",
+      "startTelegram": "Chỉ số T/F của tôi — đo chính xác ⚖️ 12 câu 2 lựa chọn",
+      "startLine": "Chỉ số T/F của tôi — đo chính xác ⚖️ 12 câu 2 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào bảng tạm!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",

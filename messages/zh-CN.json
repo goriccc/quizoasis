@@ -3024,6 +3024,57 @@
       "popularTestsTop5": "🔥 热门测试推荐前 5"
     }
   },
+  "phase3TfIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "T还是F？这场争论还没结束。",
+      "line2": "把95%的T和52%的T说成同一种T，说不过去；F也一样。",
+      "line3": "核心差异在决策方式：先讲逻辑与原则，还是先看人与感受。你就在两者之间某处。",
+      "line4": "12个情境选择，把你的思维–情感指数精确到0~100%。和伴侣一起做，差异会一目了然。",
+      "line5": "开始测T/F指数 ⚖️ 我有多“感情型”（%）？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告位（我的 T/F 指数精密测量）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "tfIndex": "T/F 指数",
+      "characteristics": "主要光谱",
+      "relationshipTip": "T/F 关系提示",
+      "careerMatch": "契合职业方向",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的F指数是{fPercent}%！我的 T/F 指数精密测量",
+      "kakao": "我的F指数是{fPercent}%！我的 T/F 指数精密测量",
+      "wechat": "我的F指数是{fPercent}%！我的 T/F 指数精密测量",
+      "whatsapp": "我的F指数是{fPercent}%！我的 T/F 指数精密测量",
+      "telegram": "我的F指数是{fPercent}%！我的 T/F 指数精密测量",
+      "line": "我的F指数是{fPercent}%！我的 T/F 指数精密测量",
+      "startDefault": "我的 T/F 指数精密测量 ⚖️ 12题二选一",
+      "startKakao": "我的 T/F 指数精密测量 ⚖️ 12题二选一",
+      "startWechat": "我的 T/F 指数精密测量 ⚖️ 12题二选一",
+      "startWhatsapp": "我的 T/F 指数精密测量 ⚖️ 12题二选一",
+      "startTelegram": "我的 T/F 指数精密测量 ⚖️ 12题二选一",
+      "startLine": "我的 T/F 指数精密测量 ⚖️ 12题二选一"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！在微信中粘贴即可分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前 5",
+      "popularTestsTop5": "🔥 热门测试推荐前 5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你连没说出口的事。",
