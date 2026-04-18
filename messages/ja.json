@@ -3076,6 +3076,57 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3SnIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "SかNか？その質問だけでは足りません。",
+      "line2": "Sが95%の人と52%の人では世界の見え方がまったく違います。Nが90%と55%では想像の深さも違います。",
+      "line3": "最大の違いは情報の取り込み方。目の前に集中する人と、その奥のパターンや可能性を先に見る人。",
+      "line4": "日常の12の選択で、感覚・直観の指数を0〜100%の数字で精密に測定します。",
+      "line5": "S/N指数を測る 🔭 私は感覚型？直観型？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私のS/N指数 精密測定）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似た他のテスト",
+      "snIndex": "S/N指数",
+      "characteristics": "主なスペクトラム",
+      "relationshipTip": "S/Nの関係ヒント",
+      "careerMatch": "相性のいい職種",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私のN指数は{nPercent}%！私のS/N指数 精密測定",
+      "kakao": "私のN指数は{nPercent}%！私のS/N指数 精密測定",
+      "wechat": "私のN指数は{nPercent}%！私のS/N指数 精密測定",
+      "whatsapp": "私のN指数は{nPercent}%！私のS/N指数 精密測定",
+      "telegram": "私のN指数は{nPercent}%！私のS/N指数 精密測定",
+      "line": "私のN指数は{nPercent}%！私のS/N指数 精密測定",
+      "startDefault": "私のS/N指数 精密測定 🔭 全12問2択",
+      "startKakao": "私のS/N指数 精密測定 🔭 全12問2択",
+      "startWechat": "私のS/N指数 精密測定 🔭 全12問2択",
+      "startWhatsapp": "私のS/N指数 精密測定 🔭 全12問2択",
+      "startTelegram": "私のS/N指数 精密測定 🔭 全12問2択",
+      "startLine": "私のS/N指数 精密測定 🔭 全12問2択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。少し待ってから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTubeは、あなたが口にしなかったことまで知っています。",

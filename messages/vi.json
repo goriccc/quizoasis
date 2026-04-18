@@ -3075,6 +3075,57 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3SnIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "S hay N? Chỉ câu đó thì chưa đủ.",
+      "line2": "Người 95% S và 52% S nhìn thế giới rất khác nhau. Độ sâu tưởng tượng ở 90% N và 55% N cũng khác.",
+      "line3": "Khác biệt cốt lõi là cách tiếp nhận thông tin: tập trung điều ngay trước mắt, hay thấy mẫu và khả năng phía sau trước.",
+      "line4": "12 lựa chọn đời thường đo chỉ số cảm giác–trực giác của bạn trong khoảng 0–100%.",
+      "line5": "Bắt đầu đo chỉ số S/N 🔭 Tôi thiên cảm giác hay trực giác?"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chỉ số S/N của tôi — đo chính xác)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "snIndex": "Chỉ số S/N",
+      "characteristics": "Phổ chính",
+      "relationshipTip": "Gợi ý quan hệ S/N",
+      "careerMatch": "Nghề hợp",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Chỉ số N của tôi là {nPercent}%! Chỉ số S/N của tôi — đo chính xác",
+      "kakao": "Chỉ số N của tôi là {nPercent}%! Chỉ số S/N của tôi — đo chính xác",
+      "wechat": "Chỉ số N của tôi là {nPercent}%! Chỉ số S/N của tôi — đo chính xác",
+      "whatsapp": "Chỉ số N của tôi là {nPercent}%! Chỉ số S/N của tôi — đo chính xác",
+      "telegram": "Chỉ số N của tôi là {nPercent}%! Chỉ số S/N của tôi — đo chính xác",
+      "line": "Chỉ số N của tôi là {nPercent}%! Chỉ số S/N của tôi — đo chính xác",
+      "startDefault": "Chỉ số S/N của tôi — đo chính xác 🔭 12 câu 2 lựa chọn",
+      "startKakao": "Chỉ số S/N của tôi — đo chính xác 🔭 12 câu 2 lựa chọn",
+      "startWechat": "Chỉ số S/N của tôi — đo chính xác 🔭 12 câu 2 lựa chọn",
+      "startWhatsapp": "Chỉ số S/N của tôi — đo chính xác 🔭 12 câu 2 lựa chọn",
+      "startTelegram": "Chỉ số S/N của tôi — đo chính xác 🔭 12 câu 2 lựa chọn",
+      "startLine": "Chỉ số S/N của tôi — đo chính xác 🔭 12 câu 2 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào bảng tạm!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",

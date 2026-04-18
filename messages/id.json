@@ -3075,6 +3075,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3SnIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "S atau N? Satu pertanyaan itu saja tidak cukup.",
+      "line2": "Orang 95% S dan 52% S melihat dunia sangat berbeda. Kedalaman imajinasi di 90% N vs 55% N juga beda.",
+      "line3": "Perbedaan intinya cara menerima informasi: fokus pada yang di depan mata, atau melihat pola dan kemungkinan di baliknya dulu.",
+      "line4": "12 pilihan situasi sehari-hari mengukur indeks sensing–intuisimu secara presisi antara 0–100%.",
+      "line5": "Mulai ukur indeks S/N 🔭 Aku lebih sensing atau intuitif?"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Indeks S/N-ku — pengukuran presisi)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "snIndex": "Indeks S/N",
+      "characteristics": "Spektrum utama",
+      "relationshipTip": "Tips hubungan S/N",
+      "careerMatch": "Profesi yang cocok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Indeks N-ku {nPercent}%! Indeks S/N-ku — pengukuran presisi",
+      "kakao": "Indeks N-ku {nPercent}%! Indeks S/N-ku — pengukuran presisi",
+      "wechat": "Indeks N-ku {nPercent}%! Indeks S/N-ku — pengukuran presisi",
+      "whatsapp": "Indeks N-ku {nPercent}%! Indeks S/N-ku — pengukuran presisi",
+      "telegram": "Indeks N-ku {nPercent}%! Indeks S/N-ku — pengukuran presisi",
+      "line": "Indeks N-ku {nPercent}%! Indeks S/N-ku — pengukuran presisi",
+      "startDefault": "Indeks S/N-ku — pengukuran presisi 🔭 12 pertanyaan 2 pilihan",
+      "startKakao": "Indeks S/N-ku — pengukuran presisi 🔭 12 pertanyaan 2 pilihan",
+      "startWechat": "Indeks S/N-ku — pengukuran presisi 🔭 12 pertanyaan 2 pilihan",
+      "startWhatsapp": "Indeks S/N-ku — pengukuran presisi 🔭 12 pertanyaan 2 pilihan",
+      "startTelegram": "Indeks S/N-ku — pengukuran presisi 🔭 12 pertanyaan 2 pilihan",
+      "startLine": "Indeks S/N-ku — pengukuran presisi 🔭 12 pertanyaan 2 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",

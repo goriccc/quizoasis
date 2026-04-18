@@ -118,6 +118,10 @@ import {
   phase3TfIndexPreciseMeasurementResults,
 } from '@/lib/phase3TfIndexPreciseMeasurementData';
 import {
+  phase3SnIndexPreciseMeasurementQuestions,
+  phase3SnIndexPreciseMeasurementResults,
+} from '@/lib/phase3SnIndexPreciseMeasurementData';
+import {
   phase3LoveRedFlagFinderQuestions,
   phase3LoveRedFlagFinderResults,
 } from '@/lib/phase3LoveRedFlagFinderData';
@@ -395,6 +399,10 @@ const Phase3DumbSpendingDiagnosisTestClient = dynamic(
 );
 const Phase3TfIndexPreciseMeasurementTestClient = dynamic(
   () => import('@/components/Phase3TfIndexPreciseMeasurementTestClient'),
+  { ssr: false }
+);
+const Phase3SnIndexPreciseMeasurementTestClient = dynamic(
+  () => import('@/components/Phase3SnIndexPreciseMeasurementTestClient'),
   { ssr: false }
 );
 const Phase3LoveRedFlagFinderTestClient = dynamic(
@@ -1963,6 +1971,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         id: '12 pertanyaan 2 pilihan — 6 tipe indeks T/F (F% · T%). #MBTI #psikologi',
       },
       thumbnail: 'p3_test_tf_index_precise_measurement.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['MBTI', '심리'],
+        en: ['MBTI', 'Psychology'],
+        ja: ['MBTI', '心理'],
+        'zh-CN': ['MBTI', '心理'],
+        'zh-TW': ['MBTI', '心理'],
+        vi: ['MBTI', 'Tâm lý'],
+        id: ['MBTI', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-sn-index-precise-measurement') {
+    test = {
+      slug: 'phase3-sn-index-precise-measurement',
+      title: {
+        ko: '나의 S/N 지수 정밀 측정',
+        en: 'My S/N Index — Precision Test',
+        ja: '私のS/N指数 精密測定',
+        'zh-CN': '我的 S/N 指数精密测量',
+        'zh-TW': '我的 S/N 指數精密測量',
+        vi: 'Chỉ số S/N của tôi — đo chính xác',
+        id: 'Indeks S/N-ku — pengukuran presisi',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 S/N 지수(N%·S%) 6유형. #MBTI #심리',
+        en: '12 A/B questions — 6 S/N index types (N% · S%). #MBTI #psychology',
+        ja: '12問2択で見るS/N指数（N%・S%）6タイプ。#MBTI #心理',
+        'zh-CN': '12 道二选一，六种 S/N 指数（N%·S%）。#MBTI #心理',
+        'zh-TW': '12 題二選一，六種 S/N 指數（N%·S%）。#MBTI #心理',
+        vi: '12 câu trắc nghiệm 2 lựa chọn — 6 kiểu chỉ số S/N (N% · S%). #MBTI #tâm lý',
+        id: '12 pertanyaan 2 pilihan — 6 tipe indeks S/N (N% · S%). #MBTI #psikologi',
+      },
+      thumbnail: 'p3_test_sn_index_precise_measurement.jpg',
       type: 'psychology',
       category: 'personality',
       play_count: 0,
@@ -4199,6 +4244,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3TfIndexPreciseMeasurementQuestions}
           results={phase3TfIndexPreciseMeasurementResults}
           questionCount={phase3TfIndexPreciseMeasurementQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-sn-index-precise-measurement') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-sn-index-precise-measurement',
+      title: {
+        ko: '나의 S/N 지수 정밀 측정',
+        en: 'My S/N Index — Precision Test',
+        ja: '私のS/N指数 精密測定',
+        'zh-CN': '我的 S/N 指数精密测量',
+        'zh-TW': '我的 S/N 指數精密測量',
+        vi: 'Chỉ số S/N của tôi — đo chính xác',
+        id: 'Indeks S/N-ku — pengukuran presisi',
+      },
+      description: {
+        ko: '12문항 2지선다로 보는 S/N 지수(N%·S%) 6유형. #MBTI #심리',
+        en: '12 A/B questions — 6 S/N index types (N% · S%). #MBTI #psychology',
+        ja: '12問2択で見るS/N指数（N%・S%）6タイプ。#MBTI #心理',
+        'zh-CN': '12 道二选一，六种 S/N 指数（N%·S%）。#MBTI #心理',
+        'zh-TW': '12 題二選一，六種 S/N 指數（N%·S%）。#MBTI #心理',
+        vi: '12 câu trắc nghiệm 2 lựa chọn — 6 kiểu chỉ số S/N (N% · S%). #MBTI #tâm lý',
+        id: '12 pertanyaan 2 pilihan — 6 tipe indeks S/N (N% · S%). #MBTI #psikologi',
+      },
+      thumbnail: 'p3_test_sn_index_precise_measurement.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['MBTI', '심리'],
+        en: ['MBTI', 'Psychology'],
+        ja: ['MBTI', '心理'],
+        'zh-CN': ['MBTI', '心理'],
+        'zh-TW': ['MBTI', '心理'],
+        vi: ['MBTI', 'Tâm lý'],
+        id: ['MBTI', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SnIndexPreciseMeasurementTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SnIndexPreciseMeasurementQuestions}
+          results={phase3SnIndexPreciseMeasurementResults}
+          questionCount={phase3SnIndexPreciseMeasurementQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

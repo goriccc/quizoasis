@@ -3116,6 +3116,57 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3SnIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "S or N? That question alone is not enough.",
+      "line2": "Someone who is 95% S and someone who is 52% S see the world very differently. The depth of imagination at 90% N vs 55% N is not the same either.",
+      "line3": "The core difference is how you take in information: focusing on what is right in front of you, or seeing patterns and possibilities behind it first.",
+      "line4": "Twelve everyday choices pin your sensing–intuition index between 0 and 100%.",
+      "line5": "Start the S/N index test 🔭 Am I sensing or intuitive?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (My S/N index — precision test)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "snIndex": "S/N index",
+      "characteristics": "Main spectrum",
+      "relationshipTip": "S/N relationship tips",
+      "careerMatch": "Great-fit careers",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My N index is {nPercent}%! My S/N index — precision test",
+      "kakao": "My N index is {nPercent}%! My S/N index — precision test",
+      "wechat": "My N index is {nPercent}%! My S/N index — precision test",
+      "whatsapp": "My N index is {nPercent}%! My S/N index — precision test",
+      "telegram": "My N index is {nPercent}%! My S/N index — precision test",
+      "line": "My N index is {nPercent}%! My S/N index — precision test",
+      "startDefault": "My S/N index — precision test 🔭 12 A/B questions",
+      "startKakao": "My S/N index — precision test 🔭 12 A/B questions",
+      "startWechat": "My S/N index — precision test 🔭 12 A/B questions",
+      "startWhatsapp": "My S/N index — precision test 🔭 12 A/B questions",
+      "startTelegram": "My S/N index — precision test 🔭 12 A/B questions",
+      "startLine": "My S/N index — precision test 🔭 12 A/B questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube knows things you never even said out loud.",

@@ -3082,6 +3082,57 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3SnIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "S 還是 N？光問這一句不夠。",
+      "line2": "S 95% 和 S 52% 的人看世界很不一樣；N 90% 與 N 55% 的想像深度也不同。",
+      "line3": "核心差異在資訊接收方式：專注眼前所見，或先看背後的模式與可能。",
+      "line4": "12 個日常情境選擇，把你的感覺–直覺指數精確到 0~100%。",
+      "line5": "開始測 S/N 指數 🔭 我更偏感覺型還是直覺型？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區（我的 S/N 指數精密測量）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "snIndex": "S/N 指數",
+      "characteristics": "主要光譜",
+      "relationshipTip": "S/N 關係提示",
+      "careerMatch": "契合職業方向",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的N指數是{nPercent}%！我的 S/N 指數精密測量",
+      "kakao": "我的N指數是{nPercent}%！我的 S/N 指數精密測量",
+      "wechat": "我的N指數是{nPercent}%！我的 S/N 指數精密測量",
+      "whatsapp": "我的N指數是{nPercent}%！我的 S/N 指數精密測量",
+      "telegram": "我的N指數是{nPercent}%！我的 S/N 指數精密測量",
+      "line": "我的N指數是{nPercent}%！我的 S/N 指數精密測量",
+      "startDefault": "我的 S/N 指數精密測量 🔭 12題二選一",
+      "startKakao": "我的 S/N 指數精密測量 🔭 12題二選一",
+      "startWechat": "我的 S/N 指數精密測量 🔭 12題二選一",
+      "startWhatsapp": "我的 S/N 指數精密測量 🔭 12題二選一",
+      "startTelegram": "我的 S/N 指數精密測量 🔭 12題二選一",
+      "startLine": "我的 S/N 指數精密測量 🔭 12題二選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！在微信中貼上即可分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你連沒說出口的事。",
