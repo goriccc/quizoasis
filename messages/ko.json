@@ -2388,6 +2388,57 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3EiIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "E인가요, I인가요? 그 질문은 너무 단순합니다.",
+      "line2": "진짜 중요한 건 몇 %냐는 겁니다. E 95%인 사람과 E 52%인 사람은 완전히 다른 사람입니다. I 90%와 I 55%도 마찬가지입니다.",
+      "line3": "12가지 일상 상황 선택으로 당신의 외향성 지수를 0~100% 사이 숫자로 정밀하게 측정해 드립니다.",
+      "line4": "\"나 E야\"가 아니라 \"나 E 78%야\"로 말하세요. 훨씬 정확합니다.",
+      "line5": "E/I 지수 측정 시작 📊 나는 몇 % 외향인일까?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 E/I 지수 정밀 측정)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "eiIndex": "E/I 지수",
+      "characteristics": "주요 스펙트럼",
+      "relationshipTip": "에너지 충전 처방",
+      "careerMatch": "찰떡 직업군",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "나의 E지수는 {ePercent}%! 나의 E/I 지수 정밀 측정",
+      "kakao": "나의 E지수는 {ePercent}%! 나의 E/I 지수 정밀 측정",
+      "wechat": "나의 E지수는 {ePercent}%! 나의 E/I 지수 정밀 측정",
+      "whatsapp": "나의 E지수는 {ePercent}%! 나의 E/I 지수 정밀 측정",
+      "telegram": "나의 E지수는 {ePercent}%! 나의 E/I 지수 정밀 측정",
+      "line": "나의 E지수는 {ePercent}%! 나의 E/I 지수 정밀 측정",
+      "startDefault": "나의 E/I 지수 정밀 측정 📊 12문항 2지선다",
+      "startKakao": "나의 E/I 지수 정밀 측정 📊 12문항 2지선다",
+      "startWechat": "나의 E/I 지수 정밀 측정 📊 12문항 2지선다",
+      "startWhatsapp": "나의 E/I 지수 정밀 측정 📊 12문항 2지선다",
+      "startTelegram": "나의 E/I 지수 정밀 측정 📊 12문항 2지선다",
+      "startLine": "나의 E/I 지수 정밀 측정 📊 12문항 2지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "유튜브는 당신이 말하지 않은 것까지 알고 있습니다.",

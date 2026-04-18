@@ -3126,6 +3126,57 @@
       "popularTestsTop5": "🔥 热门测试推荐前 5"
     }
   },
+  "phase3EiIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "E 还是 I？这个问题太简单了。",
+      "line2": "真正重要的是百分之几。E 95% 和 E 52% 完全是两种人，I 90% 和 I 55% 也一样。",
+      "line3": "通过 12 个日常情境选择，把你的外向指数精确测到 0~100%。",
+      "line4": "别说「我是 E」，要说「我是 78% E」，准确得多。",
+      "line5": "开始 E/I 指数测试 📊 我有多外向？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告区（我的 E/I 指数精密测量）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "eiIndex": "E/I 指数",
+      "characteristics": "主要光谱",
+      "relationshipTip": "能量补充处方",
+      "careerMatch": "适合的职业方向",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "我的 E 指数是 {ePercent}%！我的 E/I 指数精密测量",
+      "kakao": "我的 E 指数是 {ePercent}%！我的 E/I 指数精密测量",
+      "wechat": "我的 E 指数是 {ePercent}%！我的 E/I 指数精密测量",
+      "whatsapp": "我的 E 指数是 {ePercent}%！我的 E/I 指数精密测量",
+      "telegram": "我的 E 指数是 {ePercent}%！我的 E/I 指数精密测量",
+      "line": "我的 E 指数是 {ePercent}%！我的 E/I 指数精密测量",
+      "startDefault": "我的 E/I 指数精密测量 📊 12 题二选一",
+      "startKakao": "我的 E/I 指数精密测量 📊 12 题二选一",
+      "startWechat": "我的 E/I 指数精密测量 📊 12 题二选一",
+      "startWhatsapp": "我的 E/I 指数精密测量 📊 12 题二选一",
+      "startTelegram": "我的 E/I 指数精密测量 📊 12 题二选一",
+      "startLine": "我的 E/I 指数精密测量 📊 12 题二选一"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前 5",
+      "popularTestsTop5": "🔥 热门测试推荐前 5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你连没说出口的事。",

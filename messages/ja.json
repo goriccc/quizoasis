@@ -3127,6 +3127,57 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3EiIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "EかIか？その質問だけでは足りません。",
+      "line2": "本当に大事なのは何％かということ。Eが95％の人と52％の人はまったく違います。Iも90％と55％では別物です。",
+      "line3": "12の日常シーンの選択で、外向性指数を0〜100％の数字で精密測定します。",
+      "line4": "「私E」と言うより「私E78％」と言いましょう。ずっと正確です。",
+      "line5": "E/I指数測定を開始 📊 私は何％外向的？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSenseエリア（私のE/I指数 精密測定）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている別のテスト",
+      "eiIndex": "E/I指数",
+      "characteristics": "主なスペクトラム",
+      "relationshipTip": "エネルギー補充の処方",
+      "careerMatch": "相性の良い職種",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私のE指数は{ePercent}%！私のE/I指数 精密測定",
+      "kakao": "私のE指数は{ePercent}%！私のE/I指数 精密測定",
+      "wechat": "私のE指数は{ePercent}%！私のE/I指数 精密測定",
+      "whatsapp": "私のE指数は{ePercent}%！私のE/I指数 精密測定",
+      "telegram": "私のE指数は{ePercent}%！私のE/I指数 精密測定",
+      "line": "私のE指数は{ePercent}%！私のE/I指数 精密測定",
+      "startDefault": "私のE/I指数 精密測定 📊 12問2択",
+      "startKakao": "私のE/I指数 精密測定 📊 12問2択",
+      "startWechat": "私のE/I指数 精密測定 📊 12問2択",
+      "startWhatsapp": "私のE/I指数 精密測定 📊 12問2択",
+      "startTelegram": "私のE/I指数 精密測定 📊 12問2択",
+      "startLine": "私のE/I指数 精密測定 📊 12問2択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。少し待ってから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTubeは、あなたが口にしなかったことまで知っています。",

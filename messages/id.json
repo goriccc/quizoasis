@@ -3126,6 +3126,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3EiIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "E atau I? Pertanyaan itu terlalu sederhana.",
+      "line2": "Yang penting berapa persennya. Orang E 95% dan E 52% itu beda dunia; I 90% dan I 55% juga begitu.",
+      "line3": "12 situasi sehari-hari mengukur seberapa ekstrover kamu secara presisi dari 0 hingga 100%.",
+      "line4": "Jangan hanya bilang \"aku E\"—bilang \"aku E 78%\". Jauh lebih akurat.",
+      "line5": "Mulai tes indeks E/I 📊 Seberapa ekstrover aku?"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Indeks E/I-ku — pengukuran presisi)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "eiIndex": "Indeks E/I",
+      "characteristics": "Spektrum utama",
+      "relationshipTip": "Resep isi ulang energi",
+      "careerMatch": "Profesi yang cocok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Indeks E-ku {ePercent}%! Indeks E/I-ku — pengukuran presisi",
+      "kakao": "Indeks E-ku {ePercent}%! Indeks E/I-ku — pengukuran presisi",
+      "wechat": "Indeks E-ku {ePercent}%! Indeks E/I-ku — pengukuran presisi",
+      "whatsapp": "Indeks E-ku {ePercent}%! Indeks E/I-ku — pengukuran presisi",
+      "telegram": "Indeks E-ku {ePercent}%! Indeks E/I-ku — pengukuran presisi",
+      "line": "Indeks E-ku {ePercent}%! Indeks E/I-ku — pengukuran presisi",
+      "startDefault": "Indeks E/I-ku — pengukuran presisi 📊 12 pertanyaan 2 pilihan",
+      "startKakao": "Indeks E/I-ku — pengukuran presisi 📊 12 pertanyaan 2 pilihan",
+      "startWechat": "Indeks E/I-ku — pengukuran presisi 📊 12 pertanyaan 2 pilihan",
+      "startWhatsapp": "Indeks E/I-ku — pengukuran presisi 📊 12 pertanyaan 2 pilihan",
+      "startTelegram": "Indeks E/I-ku — pengukuran presisi 📊 12 pertanyaan 2 pilihan",
+      "startLine": "Indeks E/I-ku — pengukuran presisi 📊 12 pertanyaan 2 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",
