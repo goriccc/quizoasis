@@ -3184,6 +3184,57 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3JpIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "J 還是 P？一個字說不清。",
+      "line2": "J 95% 和 J 52% 的手帳完全不一樣，P 90% 和 P 55% 的即興力也不是一回事。",
+      "line3": "J 與 P 的核心，是想掌控生活與想保持開放之間的比例——有人沒計畫就不安，有人沒計畫才自由。",
+      "line4": "12 個日常情境選擇，把你的計畫·即興指數精確測到 0~100%。",
+      "line5": "開始 J/P 指數測試 📅 我有多「即興」？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（我的 J/P 指數精密測量）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測驗",
+      "jpIndex": "J/P 指數",
+      "characteristics": "主要光譜",
+      "relationshipTip": "J/P 相處建議",
+      "careerMatch": "適合的職業方向",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的 P 指數是 {pPercent}%！我的 J/P 指數精密測量",
+      "kakao": "我的 P 指數是 {pPercent}%！我的 J/P 指數精密測量",
+      "wechat": "我的 P 指數是 {pPercent}%！我的 J/P 指數精密測量",
+      "whatsapp": "我的 P 指數是 {pPercent}%！我的 J/P 指數精密測量",
+      "telegram": "我的 P 指數是 {pPercent}%！我的 J/P 指數精密測量",
+      "line": "我的 P 指數是 {pPercent}%！我的 J/P 指數精密測量",
+      "startDefault": "我的 J/P 指數精密測量 📅 12 題二選一",
+      "startKakao": "我的 J/P 指數精密測量 📅 12 題二選一",
+      "startWechat": "我的 J/P 指數精密測量 📅 12 題二選一",
+      "startWhatsapp": "我的 J/P 指數精密測量 📅 12 題二選一",
+      "startTelegram": "我的 J/P 指數精密測量 📅 12 題二選一",
+      "startLine": "我的 J/P 指數精密測量 📅 12 題二選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你連沒說出口的事。",

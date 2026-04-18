@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import {
-  Phase3SnIndexPreciseMeasurementQuestion,
-  Phase3SnIndexPreciseMeasurementResult,
-  calculatePhase3SnIndexPreciseMeasurementResult,
-  getNsPercentFromRawScore,
-} from '@/lib/phase3SnIndexPreciseMeasurementData';
+  Phase3JpIndexPreciseMeasurementQuestion,
+  Phase3JpIndexPreciseMeasurementResult,
+  calculatePhase3JpIndexPreciseMeasurementResult,
+  getJpPercentFromRawScore,
+} from '@/lib/phase3JpIndexPreciseMeasurementData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
@@ -17,13 +17,13 @@ import { incrementPlayCount, getTests } from '@/lib/supabase';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
-interface Phase3SnIndexPreciseMeasurementTestClientProps {
+interface Phase3JpIndexPreciseMeasurementTestClientProps {
   locale: string;
   slug: string;
   title: string;
   description: string;
-  questions: Phase3SnIndexPreciseMeasurementQuestion[];
-  results: Phase3SnIndexPreciseMeasurementResult[];
+  questions: Phase3JpIndexPreciseMeasurementQuestion[];
+  results: Phase3JpIndexPreciseMeasurementResult[];
   questionCount: number;
   thumbnail?: string;
   playCount?: number;
@@ -39,7 +39,7 @@ interface Phase3SnIndexPreciseMeasurementTestClientProps {
   badgeType?: 'popular' | 'hot' | null;
 }
 
-export default function Phase3SnIndexPreciseMeasurementTestClient({
+export default function Phase3JpIndexPreciseMeasurementTestClient({
   locale,
   slug,
   title,
@@ -52,16 +52,16 @@ export default function Phase3SnIndexPreciseMeasurementTestClient({
   similarTests = [],
   isLatestTest = false,
   badgeType = null,
-}: Phase3SnIndexPreciseMeasurementTestClientProps) {
-  const t = useTranslations('phase3SnIndexPreciseMeasurementTest');
+}: Phase3JpIndexPreciseMeasurementTestClientProps) {
+  const t = useTranslations('phase3JpIndexPreciseMeasurementTest');
   const tGlobal = useTranslations(); // 글로벌 번역 (mbti 등)
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({}); // 원래 질문 인덱스를 키로 사용
-  const [result, setResult] = useState<Phase3SnIndexPreciseMeasurementResult | null>(null);
+  const [result, setResult] = useState<Phase3JpIndexPreciseMeasurementResult | null>(null);
   const [totalRawScore, setTotalRawScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
-  const [shuffledQuestions, setShuffledQuestions] = useState<Phase3SnIndexPreciseMeasurementQuestion[]>([]);
+  const [shuffledQuestions, setShuffledQuestions] = useState<Phase3JpIndexPreciseMeasurementQuestion[]>([]);
   const [originalQuestionIndices, setOriginalQuestionIndices] = useState<number[]>([]); // 셔플링된 질문의 원래 인덱스 매핑
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [similarTestsState, setSimilarTestsState] = useState(similarTests);
@@ -249,7 +249,7 @@ export default function Phase3SnIndexPreciseMeasurementTestClient({
 
 
   // 질문 섞기 함수
-  const shuffleQuestions = (questionList: Phase3SnIndexPreciseMeasurementQuestion[]) => {
+  const shuffleQuestions = (questionList: Phase3JpIndexPreciseMeasurementQuestion[]) => {
     // 원래 인덱스와 함께 질문을 쌍으로 만들어서 셔플링
     const questionsWithIndices = questionList.map((q, idx) => ({ question: q, originalIndex: idx }));
     const shuffled = [...questionsWithIndices];
@@ -297,15 +297,15 @@ export default function Phase3SnIndexPreciseMeasurementTestClient({
       const rawSum = answersArray.reduce((s, v) => s + v, 0);
       setTotalRawScore(rawSum);
 
-      const resultType = calculatePhase3SnIndexPreciseMeasurementResult(answersArray);
-      const snResult = results.find(r => r.type === resultType);
+      const resultType = calculatePhase3JpIndexPreciseMeasurementResult(answersArray);
+      const jpResult = results.find(r => r.type === resultType);
 
-      if (snResult) {
-        setResult(snResult);
+      if (jpResult) {
+        setResult(jpResult);
       }
 
-      if (snResult && locale !== 'ko') {
-        const keywords = getProductKeywordsForDating(snResult.type, locale);
+      if (jpResult && locale !== 'ko') {
+        const keywords = getProductKeywordsForDating(jpResult.type, locale);
         const loadStartTime = Date.now();
         searchAliExpressProducts(keywords[0], 4, locale)
           .then(products => {
@@ -333,10 +333,10 @@ export default function Phase3SnIndexPreciseMeasurementTestClient({
     setShuffledOptionsMap({});
   };
 
-  const formatShareLine = (r: Phase3SnIndexPreciseMeasurementResult) => {
-    const ns = getNsPercentFromRawScore(totalRawScore);
+  const formatShareLine = (r: Phase3JpIndexPreciseMeasurementResult) => {
+    const jp = getJpPercentFromRawScore(totalRawScore);
     const line = r.shareLine[locale as keyof typeof r.shareLine] || r.shareLine.ko;
-    return line.replace(/\{nPercent\}/g, String(ns.n));
+    return line.replace(/\{pPercent\}/g, String(jp.p));
   };
 
   // 결과 공유하기
@@ -708,7 +708,7 @@ export default function Phase3SnIndexPreciseMeasurementTestClient({
     const resultShortDescription = result.shortDescription[locale as keyof typeof result.shortDescription] || result.shortDescription.ko;
     const resultLongDescription = result.description[locale as keyof typeof result.description] || result.description.ko;
     const resultIndexBand = result.indexBand[locale as keyof typeof result.indexBand] || result.indexBand.ko;
-    const ns = getNsPercentFromRawScore(totalRawScore);
+    const jp = getJpPercentFromRawScore(totalRawScore);
     const resultCharacteristics = result.characteristics[locale as keyof typeof result.characteristics] || result.characteristics.ko;
     const resultGoodMatch = result.goodMatch[locale as keyof typeof result.goodMatch] || result.goodMatch.ko;
     const resultBadMatch = result.badMatch[locale as keyof typeof result.badMatch] || result.badMatch.ko;
@@ -735,10 +735,10 @@ export default function Phase3SnIndexPreciseMeasurementTestClient({
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
               <h3 className="text-base font-bold text-gray-800 mb-2">
-                📊 {t('ui.snIndex')}
+                📊 {t('ui.jpIndex')}
               </h3>
               <p className="text-2xl font-bold text-purple-600 text-center">
-                N {ns.n}% · S {ns.s}%
+                P {jp.p}% · J {jp.j}%
               </p>
               <p className="text-sm text-center text-gray-500 mt-2 leading-snug">{resultIndexBand}</p>
             </div>
@@ -763,7 +763,7 @@ export default function Phase3SnIndexPreciseMeasurementTestClient({
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div className="bg-white rounded-xl shadow-lg p-4">
                 <h3 className="text-base font-bold text-gray-800 mb-3">
-                  🔭 {t('ui.relationshipTip')}
+                  ⚖️ {t('ui.relationshipTip')}
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">{resultGoodMatch}</p>
               </div>

@@ -3177,6 +3177,57 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3JpIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "J hay P? Một chữ không đủ để giải thích.",
+      "line2": "Sổ tay của người J 95% và J 52% trông hoàn toàn khác nhau. Mức tự phát P 90% và P 55% cũng khác hẳn.",
+      "line3": "Điểm cốt lõi của J và P là tỷ lệ giữa muốn kiểm soát và muốn để mở—người cần kế hoạch mới yên tâm, và người cần không kế hoạch mới thấy tự do.",
+      "line4": "12 tình huống đời thường đo chỉ số kế hoạch · tự phát của bạn chính xác từ 0 đến 100%.",
+      "line5": "Bắt đầu đo chỉ số J/P 📅 Tôi tự phát bao nhiêu %?"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Chỉ số J/P của tôi — đo chính xác)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "jpIndex": "Chỉ số J/P",
+      "characteristics": "Phổ chính",
+      "relationshipTip": "Mẹo quan hệ J/P",
+      "careerMatch": "Nghề hợp nhất",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Chỉ số P của tôi là {pPercent}%! Chỉ số J/P của tôi — đo chính xác",
+      "kakao": "Chỉ số P của tôi là {pPercent}%! Chỉ số J/P của tôi — đo chính xác",
+      "wechat": "Chỉ số P của tôi là {pPercent}%! Chỉ số J/P của tôi — đo chính xác",
+      "whatsapp": "Chỉ số P của tôi là {pPercent}%! Chỉ số J/P của tôi — đo chính xác",
+      "telegram": "Chỉ số P của tôi là {pPercent}%! Chỉ số J/P của tôi — đo chính xác",
+      "line": "Chỉ số P của tôi là {pPercent}%! Chỉ số J/P của tôi — đo chính xác",
+      "startDefault": "Chỉ số J/P của tôi — đo chính xác 📅 12 câu trắc nghiệm 2 lựa chọn",
+      "startKakao": "Chỉ số J/P của tôi — đo chính xác 📅 12 câu trắc nghiệm 2 lựa chọn",
+      "startWechat": "Chỉ số J/P của tôi — đo chính xác 📅 12 câu trắc nghiệm 2 lựa chọn",
+      "startWhatsapp": "Chỉ số J/P của tôi — đo chính xác 📅 12 câu trắc nghiệm 2 lựa chọn",
+      "startTelegram": "Chỉ số J/P của tôi — đo chính xác 📅 12 câu trắc nghiệm 2 lựa chọn",
+      "startLine": "Chỉ số J/P của tôi — đo chính xác 📅 12 câu trắc nghiệm 2 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",

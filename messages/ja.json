@@ -3178,6 +3178,57 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3JpIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "JかPか？一文字では語り尽くせません。",
+      "line2": "J 95％の人と52％の人では手帳の中身がまったく違います。P 90％と55％の即興力も別物です。",
+      "line3": "JとPの核心は、コントロールしたい欲求と、開いておきたい欲求のバランス。計画がないと不安な人と、計画がないほうが自由な人。",
+      "line4": "日常の12の選択で、あなたの計画・即興指数を0〜100％の数字で精密測定します。",
+      "line5": "J/P指数測定スタート 📅 私は何％即興型？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSenseエリア（私のJ/P指数 精密測定）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている別のテスト",
+      "jpIndex": "J/P指数",
+      "characteristics": "主なスペクトラム",
+      "relationshipTip": "J/P関係のコツ",
+      "careerMatch": "相性の良い職種",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私のP指数は{pPercent}%！私のJ/P指数 精密測定",
+      "kakao": "私のP指数は{pPercent}%！私のJ/P指数 精密測定",
+      "wechat": "私のP指数は{pPercent}%！私のJ/P指数 精密測定",
+      "whatsapp": "私のP指数は{pPercent}%！私のJ/P指数 精密測定",
+      "telegram": "私のP指数は{pPercent}%！私のJ/P指数 精密測定",
+      "line": "私のP指数は{pPercent}%！私のJ/P指数 精密測定",
+      "startDefault": "私のJ/P指数 精密測定 📅 全12問2択",
+      "startKakao": "私のJ/P指数 精密測定 📅 全12問2択",
+      "startWechat": "私のJ/P指数 精密測定 📅 全12問2択",
+      "startWhatsapp": "私のJ/P指数 精密測定 📅 全12問2択",
+      "startTelegram": "私のJ/P指数 精密測定 📅 全12問2択",
+      "startLine": "私のJ/P指数 精密測定 📅 全12問2択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。少し待ってから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTubeは、あなたが口にしなかったことまで知っています。",

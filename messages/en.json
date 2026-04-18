@@ -3218,6 +3218,57 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3JpIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "J or P? One letter leaves too much out.",
+      "line2": "A 95% J planner looks nothing like a 52% J planner. 90% P spontaneity is worlds apart from 55% P.",
+      "line3": "J vs P is the balance between wanting control and wanting to stay open—people who need plans to feel safe, and people who need freedom from fixed plans.",
+      "line4": "Twelve everyday choices measure your planning vs spontaneity index from 0–100%.",
+      "line5": "Start the J/P index test 📅 How spontaneous am I?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (My J/P index — precision test)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "jpIndex": "J/P index",
+      "characteristics": "Main spectrum",
+      "relationshipTip": "J/P relationship tip",
+      "careerMatch": "Great-fit careers",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "My P index is {pPercent}%! My J/P index — precision test",
+      "kakao": "My P index is {pPercent}%! My J/P index — precision test",
+      "wechat": "My P index is {pPercent}%! My J/P index — precision test",
+      "whatsapp": "My P index is {pPercent}%! My J/P index — precision test",
+      "telegram": "My P index is {pPercent}%! My J/P index — precision test",
+      "line": "My P index is {pPercent}%! My J/P index — precision test",
+      "startDefault": "My J/P index — precision test 📅 12 A/B questions",
+      "startKakao": "My J/P index — precision test 📅 12 A/B questions",
+      "startWechat": "My J/P index — precision test 📅 12 A/B questions",
+      "startWhatsapp": "My J/P index — precision test 📅 12 A/B questions",
+      "startTelegram": "My J/P index — precision test 📅 12 A/B questions",
+      "startLine": "My J/P index — precision test 📅 12 A/B questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube knows things you never even said out loud.",

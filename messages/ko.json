@@ -2439,6 +2439,57 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3JpIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "J인가요, P인가요? 그 한 글자로 설명하기엔 너무 많은 게 빠집니다.",
+      "line2": "J 95%인 사람과 J 52%인 사람의 플래너는 완전히 다르게 생겼습니다. P 90%와 P 55%의 즉흥력 수준도 전혀 다릅니다.",
+      "line3": "J와 P의 핵심은 삶을 통제하려는 욕구와 열어두려는 욕구의 비율입니다. 계획을 세워야 안심이 되는 사람과, 계획이 없어야 자유로운 사람.",
+      "line4": "12가지 일상 상황 선택으로 당신의 계획·즉흥 지수를 0~100% 사이 숫자로 정밀하게 측정해 드립니다.",
+      "line5": "J/P 지수 측정 시작 📅 나는 몇 % 즉흥형인가?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 J/P 지수 정밀 측정)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "jpIndex": "J/P 지수",
+      "characteristics": "주요 스펙트럼",
+      "relationshipTip": "J/P 관계 팁",
+      "careerMatch": "찰떡 직업군",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "나의 P지수는 {pPercent}%! 나의 J/P 지수 정밀 측정",
+      "kakao": "나의 P지수는 {pPercent}%! 나의 J/P 지수 정밀 측정",
+      "wechat": "나의 P지수는 {pPercent}%! 나의 J/P 지수 정밀 측정",
+      "whatsapp": "나의 P지수는 {pPercent}%! 나의 J/P 지수 정밀 측정",
+      "telegram": "나의 P지수는 {pPercent}%! 나의 J/P 지수 정밀 측정",
+      "line": "나의 P지수는 {pPercent}%! 나의 J/P 지수 정밀 측정",
+      "startDefault": "나의 J/P 지수 정밀 측정 📅 12문항 2지선다",
+      "startKakao": "나의 J/P 지수 정밀 측정 📅 12문항 2지선다",
+      "startWechat": "나의 J/P 지수 정밀 측정 📅 12문항 2지선다",
+      "startWhatsapp": "나의 J/P 지수 정밀 측정 📅 12문항 2지선다",
+      "startTelegram": "나의 J/P 지수 정밀 측정 📅 12문항 2지선다",
+      "startLine": "나의 J/P 지수 정밀 측정 📅 12문항 2지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "유튜브는 당신이 말하지 않은 것까지 알고 있습니다.",

@@ -3177,6 +3177,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3JpIndexPreciseMeasurementTest": {
+    "startMessage": {
+      "line1": "J atau P? Satu huruf tidak cukup menjelaskan.",
+      "line2": "Planner orang J 95% dan J 52% sangat berbeda. Tingkat spontan P 90% dan 55% juga beda dunia.",
+      "line3": "Inti J vs P adalah rasio antara ingin mengontrol dan ingin tetap terbuka—ada yang butuh rencana untuk tenang, ada yang butuh bebas dari rencana tetap.",
+      "line4": "12 pilihan situasi sehari-hari mengukur indeks rencana vs spontanmu secara presisi dari 0 hingga 100%.",
+      "line5": "Mulai tes indeks J/P 📅 Seberapa spontan aku?"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Indeks J/P-ku — pengukuran presisi)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "jpIndex": "Indeks J/P",
+      "characteristics": "Spektrum utama",
+      "relationshipTip": "Tips hubungan J/P",
+      "careerMatch": "Profesi yang cocok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Indeks P-ku {pPercent}%! Indeks J/P-ku — pengukuran presisi",
+      "kakao": "Indeks P-ku {pPercent}%! Indeks J/P-ku — pengukuran presisi",
+      "wechat": "Indeks P-ku {pPercent}%! Indeks J/P-ku — pengukuran presisi",
+      "whatsapp": "Indeks P-ku {pPercent}%! Indeks J/P-ku — pengukuran presisi",
+      "telegram": "Indeks P-ku {pPercent}%! Indeks J/P-ku — pengukuran presisi",
+      "line": "Indeks P-ku {pPercent}%! Indeks J/P-ku — pengukuran presisi",
+      "startDefault": "Indeks J/P-ku — pengukuran presisi 📅 12 pertanyaan 2 pilihan",
+      "startKakao": "Indeks J/P-ku — pengukuran presisi 📅 12 pertanyaan 2 pilihan",
+      "startWechat": "Indeks J/P-ku — pengukuran presisi 📅 12 pertanyaan 2 pilihan",
+      "startWhatsapp": "Indeks J/P-ku — pengukuran presisi 📅 12 pertanyaan 2 pilihan",
+      "startTelegram": "Indeks J/P-ku — pengukuran presisi 📅 12 pertanyaan 2 pilihan",
+      "startLine": "Indeks J/P-ku — pengukuran presisi 📅 12 pertanyaan 2 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",

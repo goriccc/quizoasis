@@ -744,23 +744,20 @@ export default function Phase3TfIndexPreciseMeasurementTestClient({
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-4 mb-3">
-              <h3 className="text-base font-bold text-gray-800 mb-2">
+              <h3 className="text-base font-bold text-gray-800 mb-2 text-left">
                 ⭐ {t('ui.characteristics')}
               </h3>
-              <div className="flex flex-wrap justify-center gap-2">
+              <ul className="list-disc list-outside pl-5 space-y-2 text-sm text-gray-700 text-left">
                 {resultCharacteristics
                   .split(/[.。]+/)
                   .map((s) => s.trim())
                   .filter(Boolean)
                   .map((segment, index) => (
-                    <span
-                      key={index}
-                      className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-3 py-1.5 rounded-full text-sm font-medium"
-                    >
+                    <li key={index} className="leading-relaxed">
                       {segment}
-                    </span>
+                    </li>
                   ))}
-              </div>
+              </ul>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
