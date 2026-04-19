@@ -71,6 +71,7 @@ const testSlugs = [
   // 퀴즈 테스트
   'extreme-quiz',
   'mensa-extreme',
+  'phase3-elementary-math-adults-quiz',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

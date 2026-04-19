@@ -3228,6 +3228,58 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3ElementaryMathAdultsQuizTest": {
+    "startMessage": {
+      "line1": "Hồi tiểu học đều học rồi—nhưng nhiều người lớn làm lại vẫn sai.",
+      "line2": "Thứ tự phép tính, ước số, BCNN, phân số. Ngày xưa dễ—sao giờ lại mơ hồ thế?",
+      "line3": "Đúng từ 8/10 trở lên là nền toán tiểu học vẫn ổn. Từ 5 trở xuống—nên ôn ngay hôm nay.",
+      "line4": "Thử với lòng tự trọng nhé. Sai là muốn làm lại thôi.",
+      "line5": "Quiz toán tiểu học 🔢 10 câu, cái tôi lên sàn!"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo (Người lớn vỡ trận! Quiz toán tiểu học)",
+      "goToTest": "Làm quiz",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} · tổng 10 câu",
+      "levelLabel": "Cấp độ",
+      "honorTitle": "Danh hiệu",
+      "oneLiner": "Một câu",
+      "todayTodo": "Việc hôm nay",
+      "openHint": "Xem lời giải đúng & bẫy sai",
+      "closeHint": "Đóng giải thích",
+      "closeModal": "Đóng",
+      "correctExplanationTitle": "Lời giải đúng",
+      "wrongTrapsTitle": "Lựa chọn sai hay gặp",
+      "belowQuestionHint": "(Lời giải đáp án ở bên dưới)"
+    },
+    "shareMessages": {
+      "startDefault": "Người lớn vỡ trận! Quiz toán tiểu học 🔢 10 câu trắc nghiệm",
+      "startKakao": "Người lớn vỡ trận! Quiz toán tiểu học 🔢 10 câu trắc nghiệm",
+      "startWechat": "Người lớn vỡ trận! Quiz toán tiểu học 🔢 10 câu trắc nghiệm",
+      "startWhatsapp": "Người lớn vỡ trận! Quiz toán tiểu học 🔢 10 câu trắc nghiệm",
+      "startTelegram": "Người lớn vỡ trận! Quiz toán tiểu học 🔢 10 câu trắc nghiệm",
+      "startLine": "Người lớn vỡ trận! Quiz toán tiểu học 🔢 10 câu trắc nghiệm"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo KakaoTalk. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",

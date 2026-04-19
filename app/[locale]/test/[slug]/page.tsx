@@ -130,6 +130,10 @@ import {
   phase3JpIndexPreciseMeasurementResults,
 } from '@/lib/phase3JpIndexPreciseMeasurementData';
 import {
+  phase3ElementaryMathAdultsQuizQuestions,
+  phase3ElementaryMathAdultsQuizResults,
+} from '@/lib/phase3ElementaryMathAdultsQuizData';
+import {
   phase3LoveRedFlagFinderQuestions,
   phase3LoveRedFlagFinderResults,
 } from '@/lib/phase3LoveRedFlagFinderData';
@@ -419,6 +423,10 @@ const Phase3EiIndexPreciseMeasurementTestClient = dynamic(
 );
 const Phase3JpIndexPreciseMeasurementTestClient = dynamic(
   () => import('@/components/Phase3JpIndexPreciseMeasurementTestClient'),
+  { ssr: false }
+);
+const Phase3ElementaryMathAdultsQuizTestClient = dynamic(
+  () => import('@/components/Phase3ElementaryMathAdultsQuizTestClient'),
   { ssr: false }
 );
 const Phase3LoveRedFlagFinderTestClient = dynamic(
@@ -2109,6 +2117,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '心理'],
         vi: ['MBTI', 'Tâm lý'],
         id: ['MBTI', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-elementary-math-adults-quiz') {
+    test = {
+      slug: 'phase3-elementary-math-adults-quiz',
+      title: {
+        ko: '어른들 멘붕! 초등 수학 퀴즈',
+        en: 'Adults Meltdown! Elementary Math Quiz',
+        ja: '大人むずっ！小学生算数クイズ',
+        'zh-CN': '大人崩溃！小学数学测验',
+        'zh-TW': '大人崩潰！小學數學測驗',
+        vi: 'Người lớn cũng trượt! Quiz toán tiểu học',
+        id: 'Orang dewasa kewalahan! Kuis matematika SD',
+      },
+      description: {
+        ko: '10문항 4지선다 초등 수학 함정 퀴즈. 연산 순서·분수·최소공배수까지. #수학 #퀴즈 #초등 #두뇌게임 #자존심',
+        en: '10 multiple-choice elementary math trick questions. Order of operations, fractions, LCM, and more. #math #quiz #brain',
+        ja: '算数の落とし穴10問4択。演算順序・分数・最小公倍数など。#算数 #クイズ #脳トレ',
+        'zh-CN': '10 道四选一小学数学陷阱题。运算顺序、分数、最小公倍数等。#数学 #测验',
+        'zh-TW': '10 題四選一小學數學陷阱題。運算順序、分數、最小公倍數等。#數學 #測驗',
+        vi: '10 câu trắc nghiệm 4 đáp án — bẫy toán tiểu học. Thứ tự phép tính, phân số, BCNN… #toán #quiz',
+        id: '10 soal pilihan ganda matematika SD — jebakan urutan operasi, pecahan, KPK… #matematika #quiz',
+      },
+      thumbnail: 'p3_quiz_elementary_math_adults.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['수학', '퀴즈', '초등', '두뇌게임', '자존심'],
+        en: ['Math', 'Quiz', 'Elementary', 'Brain game', 'Pride'],
+        ja: ['算数', 'クイズ', '小学生', '脳トレ', 'プライド'],
+        'zh-CN': ['数学', '测验', '小学', '脑力', '自尊'],
+        'zh-TW': ['數學', '測驗', '小學', '腦力', '自尊'],
+        vi: ['Toán', 'Quiz', 'Tiểu học', 'Trí não', 'Tự tôn'],
+        id: ['Matematika', 'Quiz', 'SD', 'Otak', 'Ego'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4499,6 +4544,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3JpIndexPreciseMeasurementQuestions}
           results={phase3JpIndexPreciseMeasurementResults}
           questionCount={phase3JpIndexPreciseMeasurementQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-elementary-math-adults-quiz') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-elementary-math-adults-quiz',
+      title: {
+        ko: '어른들 멘붕! 초등 수학 퀴즈',
+        en: 'Adults Meltdown! Elementary Math Quiz',
+        ja: '大人むずっ！小学生算数クイズ',
+        'zh-CN': '大人崩溃！小学数学测验',
+        'zh-TW': '大人崩潰！小學數學測驗',
+        vi: 'Người lớn cũng trượt! Quiz toán tiểu học',
+        id: 'Orang dewasa kewalahan! Kuis matematika SD',
+      },
+      description: {
+        ko: '10문항 4지선다 초등 수학 함정 퀴즈. 연산 순서·분수·최소공배수까지. #수학 #퀴즈 #초등 #두뇌게임 #자존심',
+        en: '10 multiple-choice elementary math trick questions. Order of operations, fractions, LCM, and more. #math #quiz #brain',
+        ja: '算数の落とし穴10問4択。演算順序・分数・最小公倍数など。#算数 #クイズ #脳トレ',
+        'zh-CN': '10 道四选一小学数学陷阱题。运算顺序、分数、最小公倍数等。#数学 #测验',
+        'zh-TW': '10 題四選一小學數學陷阱題。運算順序、分數、最小公倍數等。#數學 #測驗',
+        vi: '10 câu trắc nghiệm 4 đáp án — bẫy toán tiểu học. Thứ tự phép tính, phân số, BCNN… #toán #quiz',
+        id: '10 soal pilihan ganda matematika SD — jebakan urutan operasi, pecahan, KPK… #matematika #quiz',
+      },
+      thumbnail: 'p3_quiz_elementary_math_adults.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['수학', '퀴즈', '초등', '두뇌게임', '자존심'],
+        en: ['Math', 'Quiz', 'Elementary', 'Brain game', 'Pride'],
+        ja: ['算数', 'クイズ', '小学生', '脳トレ', 'プライド'],
+        'zh-CN': ['数学', '测验', '小学', '脑力', '自尊'],
+        'zh-TW': ['數學', '測驗', '小學', '腦力', '自尊'],
+        vi: ['Toán', 'Quiz', 'Tiểu học', 'Trí não', 'Tự tôn'],
+        id: ['Matematika', 'Quiz', 'SD', 'Otak', 'Ego'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3ElementaryMathAdultsQuizTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3ElementaryMathAdultsQuizQuestions}
+          results={phase3ElementaryMathAdultsQuizResults}
+          questionCount={phase3ElementaryMathAdultsQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

@@ -3228,6 +3228,58 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3ElementaryMathAdultsQuizTest": {
+    "startMessage": {
+      "line1": "Semuanya sudah dipelajari di SD—tapi banyak orang dewasa yang salah kalau dikerjakan lagi sekarang.",
+      "line2": "Urutan operasi, faktor, KPK, pecahan. Dulu mudah—kenapa sekarang jadi kabur?",
+      "line3": "Benar 8 dari 10 atau lebih berarti matematika SD masih oke. 5 atau kurang—saatnya mengulang hari ini.",
+      "line4": "Coba dengan gengsi. Kalau salah, kamu pasti ingin balas dendam.",
+      "line5": "Kuis matematika SD 🔢 10 soal, gengsi dipertaruhkan!"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan (Orang Dewasa Kacau! Kuis Matematika SD)",
+      "goToTest": "Mulai kuis",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "Benar {count} · dari 10 soal",
+      "levelLabel": "Level",
+      "honorTitle": "Gelar",
+      "oneLiner": "Satu kalimat",
+      "todayTodo": "To-do hari ini",
+      "openHint": "Lihat pembahasan benar & jebakan salah",
+      "closeHint": "Tutup pembahasan",
+      "closeModal": "Tutup",
+      "correctExplanationTitle": "Pembahasan benar",
+      "wrongTrapsTitle": "Pilihan salah umum",
+      "belowQuestionHint": "(Pembahasan jawaban ada di bawah)"
+    },
+    "shareMessages": {
+      "startDefault": "Orang dewasa kacau! Kuis matematika SD 🔢 10 soal pilihan ganda",
+      "startKakao": "Orang dewasa kacau! Kuis matematika SD 🔢 10 soal pilihan ganda",
+      "startWechat": "Orang dewasa kacau! Kuis matematika SD 🔢 10 soal pilihan ganda",
+      "startWhatsapp": "Orang dewasa kacau! Kuis matematika SD 🔢 10 soal pilihan ganda",
+      "startTelegram": "Orang dewasa kacau! Kuis matematika SD 🔢 10 soal pilihan ganda",
+      "startLine": "Orang dewasa kacau! Kuis matematika SD 🔢 10 soal pilihan ganda"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",

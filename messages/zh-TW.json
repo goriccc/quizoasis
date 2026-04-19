@@ -3235,6 +3235,58 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3ElementaryMathAdultsQuizTest": {
+    "startMessage": {
+      "line1": "小學都學過，但很多大人現在再做卻會錯。",
+      "line2": "運算順序、因數、最小公倍數、分數。當年覺得簡單，為什麼現在這麼模糊？",
+      "line3": "10題對8題以上，小學數學底子還在；只對5題或更少，建議今天就複習。",
+      "line4": "帶著自尊來挑戰吧。錯了你會想再來一局。",
+      "line5": "小學數學測驗 🔢 10題，自尊上線！"
+    },
+    "ui": {
+      "adsenseTitle": "廣告區域（大人崩潰！小學數學測驗）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "shareResult": "分享結果",
+      "scoreSummary": "答對 {count} 題 · 共10題",
+      "levelLabel": "等級",
+      "honorTitle": "稱號",
+      "oneLiner": "一句話",
+      "todayTodo": "今日待辦",
+      "openHint": "查看正解說明與常見錯選",
+      "closeHint": "關閉說明",
+      "closeModal": "關閉",
+      "correctExplanationTitle": "正解說明",
+      "wrongTrapsTitle": "常見錯選",
+      "belowQuestionHint": "(正解說明在下方)"
+    },
+    "shareMessages": {
+      "startDefault": "大人崩潰！小學數學測驗 🔢 10題四選一",
+      "startKakao": "大人崩潰！小學數學測驗 🔢 10題四選一",
+      "startWechat": "大人崩潰！小學數學測驗 🔢 10題四選一",
+      "startWhatsapp": "大人崩潰！小學數學測驗 🔢 10題四選一",
+      "startTelegram": "大人崩潰！小學數學測驗 🔢 10題四選一",
+      "startLine": "大人崩潰！小學數學測驗 🔢 10題四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測驗 Top5"
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你連沒說出口的事。",
