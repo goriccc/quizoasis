@@ -3174,6 +3174,53 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3MyHashtagGeneratorTest": {
+    "startMessage": {
+      "line1": "Di bio Instagram, kamu menulis hashtag apa untuk mendeskripsikan dirimu?",
+      "line2": "Hal yang kamu suka, gaya hidup, kepribadian, pola hari-harimu—semua itu bisa jadi hashtag yang mewakili kamu.",
+      "line3": "12 pertanyaan menganalisis kepribadian dan pola hidupmu, lalu menghasilkan 5 hashtag yang pas untukmu.",
+      "line4": "Hasilnya bisa kamu tempel di postingan atau taruh di bio.",
+      "line5": "Buat hashtag-ku — mulai analisis sekarang"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Pembuat hashtag-ku)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "myHashtags": "5 hashtag-mu",
+      "hashtagTendency": "Gaya hashtag",
+      "bioSuggestion": "Saran kalimat bio Instagram",
+      "goodPosts": "Posting yang cocok dengan hashtag ini",
+      "feedVibe": "Vibe Instagram untuk tipe ini",
+      "extraHashtags": "Hashtag tambahan yang cocok dipasangkan",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "startDefault": "Pembuat hashtag-ku · 12 soal teks, 4 pilihan",
+      "startKakao": "Pembuat hashtag-ku · 12 soal teks, 4 pilihan",
+      "startWechat": "Pembuat hashtag-ku · 12 soal teks, 4 pilihan",
+      "startWhatsapp": "Pembuat hashtag-ku · 12 soal teks, 4 pilihan",
+      "startTelegram": "Pembuat hashtag-ku · 12 soal teks, 4 pilihan",
+      "startLine": "Pembuat hashtag-ku · 12 soal teks, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",

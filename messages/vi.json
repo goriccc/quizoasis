@@ -3174,6 +3174,53 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3MyHashtagGeneratorTest": {
+    "startMessage": {
+      "line1": "Trên bio Instagram, bạn đang dùng hashtag thế nào để giới thiệu bản thân?",
+      "line2": "Sở thích, lối sống, tính cách, thói quen hằng ngày—tất cả đều có thể thành hashtag thể hiện bạn.",
+      "line3": "12 câu hỏi phân tích tính cách và mô hình sống, tạo 5 hashtag dành riêng cho bạn.",
+      "line4": "Bạn có thể dán kết quả vào bài đăng hoặc đặt trong bio.",
+      "line5": "Tạo hashtag của tôi — bắt đầu phân tích ngay"
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Trình tạo hashtag của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "myHashtags": "5 hashtag của bạn",
+      "hashtagTendency": "Phong cách hashtag",
+      "bioSuggestion": "Gợi ý dòng bio Instagram",
+      "goodPosts": "Bài đăng hợp các hashtag này",
+      "feedVibe": "Vibe Instagram của kiểu này",
+      "extraHashtags": "Hashtag kèm thêm hay dùng",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "startDefault": "Trình tạo hashtag của tôi · 12 câu chữ, 4 lựa chọn",
+      "startKakao": "Trình tạo hashtag của tôi · 12 câu chữ, 4 lựa chọn",
+      "startWechat": "Trình tạo hashtag của tôi · 12 câu chữ, 4 lựa chọn",
+      "startWhatsapp": "Trình tạo hashtag của tôi · 12 câu chữ, 4 lựa chọn",
+      "startTelegram": "Trình tạo hashtag của tôi · 12 câu chữ, 4 lựa chọn",
+      "startLine": "Trình tạo hashtag của tôi · 12 câu chữ, 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",

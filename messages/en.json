@@ -3215,6 +3215,53 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3MyHashtagGeneratorTest": {
+    "startMessage": {
+      "line1": "How are you describing yourself with hashtags on your Instagram bio?",
+      "line2": "What you love, how you live, your personality, and your daily patterns—all of that can become hashtags that express you.",
+      "line3": "Twelve questions analyze your personality and lifestyle patterns and generate five hashtags tailored to you.",
+      "line4": "You can paste the results into posts or add them to your bio.",
+      "line5": "Create my hashtags — start the analysis now"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (My Hashtag Generator)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "myHashtags": "My 5 hashtags",
+      "hashtagTendency": "Hashtag style",
+      "bioSuggestion": "Suggested Instagram bio line",
+      "goodPosts": "Posts that fit these hashtags",
+      "feedVibe": "This type's Instagram vibe",
+      "extraHashtags": "Bonus hashtags to pair",
+      "shareResult": "Share results"
+    },
+    "shareMessages": {
+      "startDefault": "My Hashtag Generator · 12 text questions, 4 choices",
+      "startKakao": "My Hashtag Generator · 12 text questions, 4 choices",
+      "startWechat": "My Hashtag Generator · 12 text questions, 4 choices",
+      "startWhatsapp": "My Hashtag Generator · 12 text questions, 4 choices",
+      "startTelegram": "My Hashtag Generator · 12 text questions, 4 choices",
+      "startLine": "My Hashtag Generator · 12 text questions, 4 choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T or F? That debate is not over yet.",

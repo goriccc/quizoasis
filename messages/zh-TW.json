@@ -3181,6 +3181,53 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3MyHashtagGeneratorTest": {
+    "startMessage": {
+      "line1": "你在 Instagram 自介裡，怎麼用話題標籤描述自己？",
+      "line2": "喜歡的事物、生活方式、性格、日常習慣——這些都能變成表達你的話題標籤。",
+      "line3": "12 題分析你的性格與生活模式，為你生成 5 個專屬話題標籤。",
+      "line4": "結果可以直接貼進貼文，也可以放進自介。",
+      "line5": "生成我的話題標籤 — 馬上開始分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（我的話題標籤產生器）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "myHashtags": "我的 5 個話題標籤",
+      "hashtagTendency": "話題標籤風格",
+      "bioSuggestion": "自介文案推薦",
+      "goodPosts": "適合這些標籤的貼文",
+      "feedVibe": "這種類型的 IG 氛圍",
+      "extraHashtags": "可以一起用的標籤",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "startDefault": "我的話題標籤產生器 · 12 題文字四選一",
+      "startKakao": "我的話題標籤產生器 · 12 題文字四選一",
+      "startWechat": "我的話題標籤產生器 · 12 題文字四選一",
+      "startWhatsapp": "我的話題標籤產生器 · 12 題文字四選一",
+      "startTelegram": "我的話題標籤產生器 · 12 題文字四選一",
+      "startLine": "我的話題標籤產生器 · 12 題文字四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T還是F？這場爭論還沒結束。",

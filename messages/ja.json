@@ -3175,6 +3175,53 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3MyHashtagGeneratorTest": {
+    "startMessage": {
+      "line1": "インスタのプロフィール文で、自分を表すハッシュタグはどう書いていますか？",
+      "line2": "好きなもの、生き方、性格、日常のパターン。そのすべてが、あなたを表すハッシュタグになります。",
+      "line3": "12の質問で性格と生活パターンを分析し、あなたにぴったりのハッシュタグを5つ生成します。",
+      "line4": "結果は投稿にそのまま貼っても、プロフィールに載せてもOKです。",
+      "line5": "マイハッシュタグをつくる — 今すぐ分析スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（マイハッシュタグ生成）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "myHashtags": "あなたのハッシュタグ5つ",
+      "hashtagTendency": "ハッシュタグの傾向",
+      "bioSuggestion": "おすすめプロフィール文",
+      "goodPosts": "このハッシュタグに合う投稿",
+      "feedVibe": "このタイプのインスタの雰囲気",
+      "extraHashtags": "一緒に使うと映えるハッシュタグ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "startDefault": "マイハッシュタグ生成 · テキスト12問4択",
+      "startKakao": "マイハッシュタグ生成 · テキスト12問4択",
+      "startWechat": "マイハッシュタグ生成 · テキスト12問4択",
+      "startWhatsapp": "マイハッシュタグ生成 · テキスト12問4択",
+      "startTelegram": "マイハッシュタグ生成 · テキスト12問4択",
+      "startLine": "マイハッシュタグ生成 · テキスト12問4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "TかFか？その議論はまだ終わっていません。",
