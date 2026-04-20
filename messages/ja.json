@@ -3222,6 +3222,51 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3GodsaengIndexMeasurementTest": {
+    "startMessage": {
+      "line1": "「ガッセン」——神のように律儀に、充実した毎日を生きること。",
+      "line2": "早起き、運動、きちんとした食事、目標に向かって進む。みんなが憧れるが、誰にでもできるわけではない生き方です。",
+      "line3": "今あなたはどれくらいガッセン？起床時間、運動、食事、ルーティン、目標の実行まで12の基準でガッセン指数をスコア化します。",
+      "line4": "結果では指数、レベル、パーソナライズされたミッション、今日やることまで確認できます。",
+      "line5": "ガッセン指数テストを開始 💪 私のスコアは？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（マイ・ガッセン指数）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "strength": "ガッセンの強み",
+      "caution": "注意点",
+      "mission": "アップグレード・ミッション",
+      "todayTask": "今日のタスク",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "startDefault": "マイ・ガッセン指数 💪 テキスト12問・4択",
+      "startKakao": "マイ・ガッセン指数 💪 テキスト12問・4択",
+      "startWechat": "マイ・ガッセン指数 💪 テキスト12問・4択",
+      "startWhatsapp": "マイ・ガッセン指数 💪 テキスト12問・4択",
+      "startTelegram": "マイ・ガッセン指数 💪 テキスト12問・4択",
+      "startLine": "マイ・ガッセン指数 💪 テキスト12問・4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "TかFか？その議論はまだ終わっていません。",

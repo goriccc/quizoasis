@@ -130,6 +130,10 @@ import {
   phase3MyHashtagGeneratorResults,
 } from '@/lib/phase3MyHashtagGeneratorData';
 import {
+  phase3GodsaengIndexMeasurementQuestions,
+  phase3GodsaengIndexMeasurementResults,
+} from '@/lib/phase3GodsaengIndexMeasurementData';
+import {
   phase3TfIndexPreciseMeasurementQuestions,
   phase3TfIndexPreciseMeasurementResults,
 } from '@/lib/phase3TfIndexPreciseMeasurementData';
@@ -447,6 +451,10 @@ const Phase3SleepTypePrescriptionTestClient = dynamic(
 );
 const Phase3MyHashtagGeneratorTestClient = dynamic(
   () => import('@/components/Phase3MyHashtagGeneratorTestClient'),
+  { ssr: false }
+);
+const Phase3GodsaengIndexMeasurementTestClient = dynamic(
+  () => import('@/components/Phase3GodsaengIndexMeasurementTestClient'),
   { ssr: false }
 );
 const Phase3TfIndexPreciseMeasurementTestClient = dynamic(
@@ -2202,6 +2210,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['話題標籤', 'Instagram', '社群', '性格', '自我表達'],
         vi: ['hashtag', 'Instagram', 'SNS', 'tính cách', 'thể hiện bản thân'],
         id: ['hashtag', 'Instagram', 'SNS', 'kepribadian', 'ekspresi diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-godsaeng-index-measurement') {
+    test = {
+      slug: 'phase3-godsaeng-index-measurement',
+      title: {
+        ko: '내 갓생 지수 측정',
+        en: 'My Godsaeng Index',
+        ja: '私の「갓생」指数測定',
+        'zh-CN': '我的自律人生指数测量',
+        'zh-TW': '我的自律人生指數測量',
+        vi: 'Chỉ số Godsaeng của tôi',
+        id: 'Indeks Godsaeng-ku',
+      },
+      description: {
+        ko: '12문항 텍스트 4지선다로 보는 갓생 지수·레벨·맞춤 처방 6유형. #자기계발 #루틴 #챌린지 #동기부여',
+        en: '12 text questions (4 choices) — 6 Godsaeng score bands with missions. #selfimprovement #routine #challenge #motivation',
+        ja: 'テキスト12問4択で見る갓생指数・レベル・処方6タイプ。#自己啓発 #ルーティン',
+        'zh-CN': '12 道文字四选一，六种自律指数·等级·行动处方。#自我提升 #习惯',
+        'zh-TW': '12 題文字四選一，六種自律指數·等級·行動處方。#自我提升 #習慣',
+        vi: '12 câu chữ 4 đáp án — 6 mức chỉ số Godsaeng và nhiệm vụ. #pháttriển #routine',
+        id: '12 soal teks 4 opsi — 6 level indeks Godsaeng & misi. #pengembangan #rutinitas',
+      },
+      thumbnail: 'p3_test_godsaeng_index_measurement.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['자기계발', '루틴', '챌린지', '동기부여'],
+        en: ['Self-improvement', 'Routine', 'Challenge', 'Motivation'],
+        ja: ['自己啓発', 'ルーティン', 'チャレンジ', 'モチベーション'],
+        'zh-CN': ['自我提升', '习惯', '挑战', '动力'],
+        'zh-TW': ['自我提升', '習慣', '挑戰', '動力'],
+        vi: ['Tự phát triển', 'Thói quen', 'Thử thách', 'Động lực'],
+        id: ['Pengembangan diri', 'Rutinitas', 'Tantangan', 'Motivasi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4851,6 +4896,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3MyHashtagGeneratorQuestions}
           results={phase3MyHashtagGeneratorResults}
           questionCount={phase3MyHashtagGeneratorQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-godsaeng-index-measurement') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-godsaeng-index-measurement',
+      title: {
+        ko: '내 갓생 지수 측정',
+        en: 'My Godsaeng Index',
+        ja: '私の「갓생」指数測定',
+        'zh-CN': '我的自律人生指数测量',
+        'zh-TW': '我的自律人生指數測量',
+        vi: 'Chỉ số Godsaeng của tôi',
+        id: 'Indeks Godsaeng-ku',
+      },
+      description: {
+        ko: '12문항 텍스트 4지선다로 보는 갓생 지수·레벨·맞춤 처방 6유형. #자기계발 #루틴 #챌린지 #동기부여',
+        en: '12 text questions (4 choices) — 6 Godsaeng score bands with missions. #selfimprovement #routine #challenge #motivation',
+        ja: 'テキスト12問4択で見る갓생指数・レベル・処方6タイプ。#自己啓発 #ルーティン',
+        'zh-CN': '12 道文字四选一，六种自律指数·等级·行动处方。#自我提升 #习惯',
+        'zh-TW': '12 題文字四選一，六種自律指數·等級·行動處方。#自我提升 #習慣',
+        vi: '12 câu chữ 4 đáp án — 6 mức chỉ số Godsaeng và nhiệm vụ. #pháttriển #routine',
+        id: '12 soal teks 4 opsi — 6 level indeks Godsaeng & misi. #pengembangan #rutinitas',
+      },
+      thumbnail: 'p3_test_godsaeng_index_measurement.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['자기계발', '루틴', '챌린지', '동기부여'],
+        en: ['Self-improvement', 'Routine', 'Challenge', 'Motivation'],
+        ja: ['自己啓発', 'ルーティン', 'チャレンジ', 'モチベーション'],
+        'zh-CN': ['自我提升', '习惯', '挑战', '动力'],
+        'zh-TW': ['自我提升', '習慣', '挑戰', '動力'],
+        vi: ['Tự phát triển', 'Thói quen', 'Thử thách', 'Động lực'],
+        id: ['Pengembangan diri', 'Rutinitas', 'Tantangan', 'Motivasi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3GodsaengIndexMeasurementTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3GodsaengIndexMeasurementQuestions}
+          results={phase3GodsaengIndexMeasurementResults}
+          questionCount={phase3GodsaengIndexMeasurementQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

@@ -3221,6 +3221,51 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3GodsaengIndexMeasurementTest": {
+    "startMessage": {
+      "line1": "\"Godsaeng\" — sống chăm chỉ và trọn vẹn như một vị thần.",
+      "line2": "Dậy sớm, tập luyện, ăn uống lành mạnh, tiến tới mục tiêu. Ai cũng muốn nhưng không phải ai cũng làm được.",
+      "line3": "Bạn đang \"Godsaeng\" đến mức nào? Qua 12 tiêu chí — từ giờ dậy, tập, ăn uống, thói quen đến mục tiêu — chúng tôi chấm chỉ số Godsaeng của bạn.",
+      "line4": "Kết quả gồm chỉ số, cấp độ, nhiệm vụ cá nhân và một việc nên làm hôm nay.",
+      "line5": "Bắt đầu bài test chỉ số Godsaeng 💪 Điểm của tôi là bao nhiêu?"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chỉ số Godsaeng của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "strength": "Điểm mạnh Godsaeng",
+      "caution": "Cần lưu ý",
+      "mission": "Nhiệm vụ nâng cấp",
+      "todayTask": "Việc hôm nay",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "startDefault": "Chỉ số Godsaeng của tôi 💪 12 câu chữ, 4 lựa chọn",
+      "startKakao": "Chỉ số Godsaeng của tôi 💪 12 câu chữ, 4 lựa chọn",
+      "startWechat": "Chỉ số Godsaeng của tôi 💪 12 câu chữ, 4 lựa chọn",
+      "startWhatsapp": "Chỉ số Godsaeng của tôi 💪 12 câu chữ, 4 lựa chọn",
+      "startTelegram": "Chỉ số Godsaeng của tôi 💪 12 câu chữ, 4 lựa chọn",
+      "startLine": "Chỉ số Godsaeng của tôi 💪 12 câu chữ, 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",

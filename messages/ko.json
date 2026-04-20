@@ -2483,6 +2483,51 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3GodsaengIndexMeasurementTest": {
+    "startMessage": {
+      "line1": "\"갓생. 신(God)처럼 부지런하고 알차게 사는 삶.\"",
+      "line2": "새벽에 일어나고, 운동하고, 건강하게 먹고, 목표를 향해 나아가는 삶. 모두가 원하지만 아무나 살지는 못하는 그 삶입니다.",
+      "line3": "나는 지금 얼마나 갓생을 살고 있을까요? 기상 시간, 운동, 식단, 루틴 관리, 목표 실천까지 12가지 기준으로 나의 갓생 지수를 점수로 정확하게 측정해 드립니다.",
+      "line4": "결과에서 갓생 지수, 레벨, 맞춤 미션과 오늘 할 일까지 확인해 보세요.",
+      "line5": "갓생 지수 측정 시작 💪 나는 몇 점 갓생일까?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (내 갓생 지수 측정)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "strength": "갓생 강점",
+      "caution": "갓생 주의점",
+      "mission": "업그레이드 미션",
+      "todayTask": "오늘 할 일",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "startDefault": "내 갓생 지수 측정 💪 12문항 텍스트 4지선다",
+      "startKakao": "내 갓생 지수 측정 💪 12문항 텍스트 4지선다",
+      "startWechat": "내 갓생 지수 측정 💪 12문항 텍스트 4지선다",
+      "startWhatsapp": "내 갓생 지수 측정 💪 12문항 텍스트 4지선다",
+      "startTelegram": "내 갓생 지수 측정 💪 12문항 텍스트 4지선다",
+      "startLine": "내 갓생 지수 측정 💪 12문항 텍스트 4지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T인가요, F인가요? 그 논쟁은 아직 끝나지 않았습니다.",

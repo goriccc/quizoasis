@@ -3221,6 +3221,51 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3GodsaengIndexMeasurementTest": {
+    "startMessage": {
+      "line1": "\"Godsaeng\" — hidup setekun dan sepenuh hati seperti dewa.",
+      "line2": "Bangun pagi, olahraga, makan sehat, melangkah menuju tujuan. Semua ingin, tapi tidak semua bisa.",
+      "line3": "Seberapa \"Godsaeng\"-kah kamu sekarang? Lewat 12 kriteria—dari jam bangun, olahraga, pola makan, rutinitas, sampai tujuan—kami hitung indeks Godsaeng-mu.",
+      "line4": "Hasilmu mencakup indeks, level, misi khusus, dan satu hal yang bisa kamu lakukan hari ini.",
+      "line5": "Mulai tes indeks Godsaeng 💪 Skorku berapa?"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Indeks Godsaeng-ku)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "strength": "Kekuatan Godsaeng",
+      "caution": "Yang perlu diwaspadai",
+      "mission": "Misi upgrade",
+      "todayTask": "Tugas hari ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "startDefault": "Indeks Godsaeng-ku 💪 12 soal teks, 4 pilihan",
+      "startKakao": "Indeks Godsaeng-ku 💪 12 soal teks, 4 pilihan",
+      "startWechat": "Indeks Godsaeng-ku 💪 12 soal teks, 4 pilihan",
+      "startWhatsapp": "Indeks Godsaeng-ku 💪 12 soal teks, 4 pilihan",
+      "startTelegram": "Indeks Godsaeng-ku 💪 12 soal teks, 4 pilihan",
+      "startLine": "Indeks Godsaeng-ku 💪 12 soal teks, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",
