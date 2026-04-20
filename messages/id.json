@@ -3128,6 +3128,52 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3SleepTypePrescriptionTest": {
+    "startMessage": {
+      "line1": "Sudah tidur tapi masih lelah, susah tidur, atau tidur lama tetap kurang—pernah?",
+      "line2": "Tidur bukan sekadar memejamkan mata. Itu saat otak merapikan hari, tubuh pulih, dan emosi menyeimbangkan ulang.",
+      "line3": "Kalau kamu tahu tipe tidurmu, kamu bisa bangun lebih segar meski jam tidurnya sama.",
+      "line4": "12 pertanyaan untuk menganalisis pola tidurmu dan mendapat “resep tidur nyenyak” yang bisa langsung dicoba.",
+      "line5": "Temukan tipe tidurku 🌙 Mulai analisis"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Tipe tidurku & resep tidur nyenyak)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "strength": "Kelebihan tidur",
+      "problem": "Masalah tidur",
+      "prescription": "Resep tidur nyenyak",
+      "professionalGuide": "Dukungan profesional",
+      "todayTask": "Tugas hari ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "startDefault": "Tipe tidurku & resep tidur nyenyak 🌙 12 soal teks, 4 pilihan",
+      "startKakao": "Tipe tidurku & resep tidur nyenyak 🌙 12 soal teks, 4 pilihan",
+      "startWechat": "Tipe tidurku & resep tidur nyenyak 🌙 12 soal teks, 4 pilihan",
+      "startWhatsapp": "Tipe tidurku & resep tidur nyenyak 🌙 12 soal teks, 4 pilihan",
+      "startTelegram": "Tipe tidurku & resep tidur nyenyak 🌙 12 soal teks, 4 pilihan",
+      "startLine": "Tipe tidurku & resep tidur nyenyak 🌙 12 soal teks, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",

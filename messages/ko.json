@@ -2390,6 +2390,52 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3SleepTypePrescriptionTest": {
+    "startMessage": {
+      "line1": "잠을 자도 피곤하거나, 잠이 오지 않거나, 자도 자도 모자란 적 있나요?",
+      "line2": "수면은 단순히 눈을 감는 시간이 아닙니다. 뇌가 하루를 정리하고, 몸이 회복하고, 감정이 재정비되는 가장 중요한 시간입니다.",
+      "line3": "내가 어떤 수면 유형인지 정확하게 알면 같은 시간을 자도 훨씬 개운하게 일어날 수 있습니다.",
+      "line4": "12가지 질문으로 나의 수면 패턴을 분석하고 지금 당장 적용할 수 있는 숙면 처방전을 드립니다.",
+      "line5": "내 수면 유형 찾기 🌙 분석 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 수면 유형과 숙면 처방전)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "strength": "수면 강점",
+      "problem": "수면 문제",
+      "prescription": "숙면 처방전",
+      "professionalGuide": "전문 상담 안내",
+      "todayTask": "오늘 할 일",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "startDefault": "나의 수면 유형과 숙면 처방전 🌙 12문항 텍스트 4지선다",
+      "startKakao": "나의 수면 유형과 숙면 처방전 🌙 12문항 텍스트 4지선다",
+      "startWechat": "나의 수면 유형과 숙면 처방전 🌙 12문항 텍스트 4지선다",
+      "startWhatsapp": "나의 수면 유형과 숙면 처방전 🌙 12문항 텍스트 4지선다",
+      "startTelegram": "나의 수면 유형과 숙면 처방전 🌙 12문항 텍스트 4지선다",
+      "startLine": "나의 수면 유형과 숙면 처방전 🌙 12문항 텍스트 4지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T인가요, F인가요? 그 논쟁은 아직 끝나지 않았습니다.",

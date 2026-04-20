@@ -3129,6 +3129,52 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3SleepTypePrescriptionTest": {
+    "startMessage": {
+      "line1": "寝ても疲れが取れない、眠れない、寝ても足りない…そんなことありませんか？",
+      "line2": "睡眠は目を閉じる時間ではありません。脳が一日を整理し、体が回復し、感情が整え直される、いちばん大切な時間です。",
+      "line3": "自分の睡眠タイプがはっきりすると、同じ睡眠時間でも、朝スッキリ起きやすくなります。",
+      "line4": "12の質問で睡眠パターンを分析し、今日から試せる「熟睡の処方箋」をお届けします。",
+      "line5": "睡眠タイプを知る 🌙 分析を始める"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（私の睡眠タイプと熟睡の処方箋）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "strength": "睡眠の強み",
+      "problem": "睡眠の課題",
+      "prescription": "熟睡の処方箋",
+      "professionalGuide": "専門家への相談",
+      "todayTask": "今日やること",
+      "shareResult": "結果を共有"
+    },
+    "shareMessages": {
+      "startDefault": "私の睡眠タイプと熟睡の処方箋 🌙 テキスト12問・4択",
+      "startKakao": "私の睡眠タイプと熟睡の処方箋 🌙 テキスト12問・4択",
+      "startWechat": "私の睡眠タイプと熟睡の処方箋 🌙 テキスト12問・4択",
+      "startWhatsapp": "私の睡眠タイプと熟睡の処方箋 🌙 テキスト12問・4択",
+      "startTelegram": "私の睡眠タイプと熟睡の処方箋 🌙 テキスト12問・4択",
+      "startLine": "私の睡眠タイプと熟睡の処方箋 🌙 テキスト12問・4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "TかFか？その議論はまだ終わっていません。",

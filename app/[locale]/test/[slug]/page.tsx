@@ -122,6 +122,10 @@ import {
   phase3StressReliefTypeResults,
 } from '@/lib/phase3StressReliefTypeData';
 import {
+  phase3SleepTypePrescriptionQuestions,
+  phase3SleepTypePrescriptionResults,
+} from '@/lib/phase3SleepTypePrescriptionData';
+import {
   phase3TfIndexPreciseMeasurementQuestions,
   phase3TfIndexPreciseMeasurementResults,
 } from '@/lib/phase3TfIndexPreciseMeasurementData';
@@ -431,6 +435,10 @@ const Phase3ZeroSpendingChallengeTestClient = dynamic(
 );
 const Phase3StressReliefTypeTestClient = dynamic(
   () => import('@/components/Phase3StressReliefTypeTestClient'),
+  { ssr: false }
+);
+const Phase3SleepTypePrescriptionTestClient = dynamic(
+  () => import('@/components/Phase3SleepTypePrescriptionTestClient'),
   { ssr: false }
 );
 const Phase3TfIndexPreciseMeasurementTestClient = dynamic(
@@ -2112,6 +2120,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['壓力', '療癒', '恢復', '習慣', '自我照顧'],
         vi: ['Stress', 'Chữa lành', 'Phục hồi', 'Thói quen', 'Chăm sóc bản thân'],
         id: ['Stres', 'Penyembuhan', 'Pemulihan', 'Rutinitas', 'Perawatan diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-sleep-type-prescription') {
+    test = {
+      slug: 'phase3-sleep-type-prescription',
+      title: {
+        ko: '나의 수면 유형과 숙면 처방전',
+        en: 'My Sleep Type & Good-Sleep Prescription',
+        ja: '私の睡眠タイプと熟睡の処方箋',
+        'zh-CN': '我的睡眠类型与好睡处方',
+        'zh-TW': '我的睡眠類型與好睡處方',
+        vi: 'Kiểu ngủ của tôi & đơn ngủ ngon',
+        id: 'Tipe tidurku & resep tidur nyenyak',
+      },
+      description: {
+        ko: '12문항 텍스트 4지선다로 보는 수면 유형 6가지와 숙면 처방전. #수면 #숙면 #불면 #건강 #루틴',
+        en: '12 text questions (4 choices) — 6 sleep types and a good-sleep prescription. #sleep #deepsleep #insomnia #health #routine',
+        ja: 'テキスト12問4択で見る睡眠タイプ6種と熟睡の処方箋。#睡眠 #熟睡 #不眠 #健康 #ルーティン',
+        'zh-CN': '12 道文字四选一，六种睡眠类型与好睡处方。#睡眠 #熟睡 #失眠 #健康 #习惯',
+        'zh-TW': '12 題文字四選一，六種睡眠類型與好睡處方。#睡眠 #熟睡 #失眠 #健康 #習慣',
+        vi: '12 câu chữ 4 đáp án — 6 kiểu ngủ và đơn ngủ ngon. #ngủ #ngủngon #mấtngủ #suckhoe #thoiquen',
+        id: '12 soal teks 4 opsi — 6 tipe tidur & resep tidur nyenyak. #tidur #tidurnyenyak #insomnia #kesehatan #rutinitas',
+      },
+      thumbnail: 'p3_test_sleep_type_prescription.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['수면', '숙면', '불면', '건강', '루틴'],
+        en: ['Sleep', 'Good sleep', 'Insomnia', 'Health', 'Routine'],
+        ja: ['睡眠', '熟睡', '不眠', '健康', 'ルーティン'],
+        'zh-CN': ['睡眠', '熟睡', '失眠', '健康', '习惯'],
+        'zh-TW': ['睡眠', '熟睡', '失眠', '健康', '習慣'],
+        vi: ['Giấc ngủ', 'Ngủ ngon', 'Mất ngủ', 'Sức khỏe', 'Routine'],
+        id: ['Tidur', 'Tidur nyenyak', 'Insomnia', 'Kesehatan', 'Rutinitas'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4651,6 +4696,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3StressReliefTypeQuestions}
           results={phase3StressReliefTypeResults}
           questionCount={phase3StressReliefTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-sleep-type-prescription') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-sleep-type-prescription',
+      title: {
+        ko: '나의 수면 유형과 숙면 처방전',
+        en: 'My Sleep Type & Good-Sleep Prescription',
+        ja: '私の睡眠タイプと熟睡の処方箋',
+        'zh-CN': '我的睡眠类型与好睡处方',
+        'zh-TW': '我的睡眠類型與好睡處方',
+        vi: 'Kiểu ngủ của tôi & đơn ngủ ngon',
+        id: 'Tipe tidurku & resep tidur nyenyak',
+      },
+      description: {
+        ko: '12문항 텍스트 4지선다로 보는 수면 유형 6가지와 숙면 처방전. #수면 #숙면 #불면 #건강 #루틴',
+        en: '12 text questions (4 choices) — 6 sleep types and a good-sleep prescription. #sleep #deepsleep #insomnia #health #routine',
+        ja: 'テキスト12問4択で見る睡眠タイプ6種と熟睡の処方箋。#睡眠 #熟睡 #不眠 #健康 #ルーティン',
+        'zh-CN': '12 道文字四选一，六种睡眠类型与好睡处方。#睡眠 #熟睡 #失眠 #健康 #习惯',
+        'zh-TW': '12 題文字四選一，六種睡眠類型與好睡處方。#睡眠 #熟睡 #失眠 #健康 #習慣',
+        vi: '12 câu chữ 4 đáp án — 6 kiểu ngủ và đơn ngủ ngon. #ngủ #ngủngon #mấtngủ #suckhoe #thoiquen',
+        id: '12 soal teks 4 opsi — 6 tipe tidur & resep tidur nyenyak. #tidur #tidurnyenyak #insomnia #kesehatan #rutinitas',
+      },
+      thumbnail: 'p3_test_sleep_type_prescription.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['수면', '숙면', '불면', '건강', '루틴'],
+        en: ['Sleep', 'Good sleep', 'Insomnia', 'Health', 'Routine'],
+        ja: ['睡眠', '熟睡', '不眠', '健康', 'ルーティン'],
+        'zh-CN': ['睡眠', '熟睡', '失眠', '健康', '习惯'],
+        'zh-TW': ['睡眠', '熟睡', '失眠', '健康', '習慣'],
+        vi: ['Giấc ngủ', 'Ngủ ngon', 'Mất ngủ', 'Sức khỏe', 'Routine'],
+        id: ['Tidur', 'Tidur nyenyak', 'Insomnia', 'Kesehatan', 'Rutinitas'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SleepTypePrescriptionTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SleepTypePrescriptionQuestions}
+          results={phase3SleepTypePrescriptionResults}
+          questionCount={phase3SleepTypePrescriptionQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

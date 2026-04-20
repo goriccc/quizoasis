@@ -75,6 +75,7 @@ const testSlugs = [
   'phase3-world-landmark-city-quiz',
   'phase3-zero-spending-challenge',
   'phase3-stress-relief-type',
+  'phase3-sleep-type-prescription',
   'phase3-team-work-chemistry-test',
 ];
 
