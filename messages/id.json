@@ -3280,6 +3280,57 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3WorldLandmarkCityQuizTest": {
+    "startMessage": {
+      "line1": "Menara Eiffel? Semua tahu. Tapi yang ini bisa tebak?",
+      "line2": "Paris, Roma, New York—gampang. Tapi traveler sejati juga harus tahu landmark yang nggak ada di buku pelajaran, kan?",
+      "line3": "Mulai mudah lalu makin susah. Tiga soal terakhir bisa bikin traveler senior kebingungan.",
+      "line4": "Coba lihat berapa yang benar. Kalau salah, bagikan ke teman dan tantang bareng.",
+      "line5": "Kuis landmark dunia 🌍 Berapa skormu?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tebak kota dari landmark dunia)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "{count} benar dari 12 soal",
+      "levelLabel": "Level landmark",
+      "nextGoalLabel": "Target berikutnya",
+      "oneLiner": "Satu kalimat",
+      "todayTodo": "Saran",
+      "correctExplanationTitle": "Pembahasan jawaban",
+      "feedbackCorrect": "Benar!",
+      "feedbackWrong": "Belum tepat.",
+      "nextQuestion": "Soal berikutnya",
+      "viewResult": "Lihat hasil"
+    },
+    "shareMessages": {
+      "startDefault": "Tebak kota dari landmark dunia 🌍 12 soal pilihan ganda",
+      "startKakao": "Tebak kota dari landmark dunia 🌍 12 soal pilihan ganda",
+      "startWechat": "Tebak kota dari landmark dunia 🌍 12 soal pilihan ganda",
+      "startWhatsapp": "Tebak kota dari landmark dunia 🌍 12 soal pilihan ganda",
+      "startTelegram": "Tebak kota dari landmark dunia 🌍 12 soal pilihan ganda",
+      "startLine": "Tebak kota dari landmark dunia 🌍 12 soal pilihan ganda"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3TeamWorkChemistryTest": {
     "leaderShare": {
       "title": "Membagikan tautan tes di grup (estafet · langkah)",

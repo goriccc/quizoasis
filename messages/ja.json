@@ -3281,6 +3281,57 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3WorldLandmarkCityQuizTest": {
+    "startMessage": {
+      "line1": "エッフェル塔？それくらい知ってる。でもこれも当てられる？",
+      "line2": "パリ・ローマ・ニューヨークは誰でも知ってる。でも本当の旅人なら教科書にないランドマークも知っておきたいよね？",
+      "line3": "易しいところから始まってだんだん難しくなる。最後の3問はガチの旅行者でも迷うレベル。",
+      "line4": "何問正解できるか、今すぐ挑戦。外れた問題は友だちにシェアして一緒にやってみて。",
+      "line5": "世界ランドマーククイズ 🌍 何問取れる？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（世界のランドマークから都市を当てる）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "shareResult": "結果をシェア",
+      "scoreSummary": "{count}問正解 · 全12問",
+      "levelLabel": "ランドマークレベル",
+      "nextGoalLabel": "次の目標",
+      "oneLiner": "ひとこと",
+      "todayTodo": "おすすめ",
+      "correctExplanationTitle": "正解解説",
+      "feedbackCorrect": "正解！",
+      "feedbackWrong": "不正解です。",
+      "nextQuestion": "次の問題",
+      "viewResult": "結果を見る"
+    },
+    "shareMessages": {
+      "startDefault": "世界のランドマークから都市を当てる 🌍 12問4択",
+      "startKakao": "世界のランドマークから都市を当てる 🌍 12問4択",
+      "startWechat": "世界のランドマークから都市を当てる 🌍 12問4択",
+      "startWhatsapp": "世界のランドマークから都市を当てる 🌍 12問4択",
+      "startTelegram": "世界のランドマークから都市を当てる 🌍 12問4択",
+      "startLine": "世界のランドマークから都市を当てる 🌍 12問4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3TeamWorkChemistryTest": {
     "leaderShare": {
       "title": "グループチャットでテストリンクを共有するとき（リレー · 手順）",

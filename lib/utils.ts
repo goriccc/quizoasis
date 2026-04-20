@@ -96,6 +96,30 @@ export function getThumbnailUrl(thumbnail: string): string {
 }
 
 /**
+ * 랜드마크 퀴즈 진행 화면 전용 — 표시 너비에 맞춘 바이트 절감(선택).
+ * NEXT_PUBLIC_SUPABASE_QUIZ_IMAGE_RESIZE=1 이고 프로젝트에서 Supabase Image Transformation을 쓰는 경우에만 활성화하세요.
+ */
+export function getQuizLandmarkImageUrl(filename: string): string {
+  if (filename.startsWith('http://') || filename.startsWith('https://')) {
+    return filename;
+  }
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!supabaseUrl) {
+    return getThumbnailUrl(filename);
+  }
+  const today = new Date();
+  const version = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
+
+  if (process.env.NEXT_PUBLIC_SUPABASE_QUIZ_IMAGE_RESIZE === '1') {
+    return `${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
+      filename
+    )}?width=960&height=600&resize=cover&quality=82&v=${version}`;
+  }
+
+  return `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}?v=${version}`;
+}
+
+/**
  * DB 테스트를 QuizTest 형식으로 변환
  */
 export function convertDBTestToQuizTest(dbTest: DBTest, locale: Locale): QuizTest {

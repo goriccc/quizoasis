@@ -3287,6 +3287,57 @@
       "popularTestsTop5": "🔥 熱門測驗 Top5"
     }
   },
+  "phase3WorldLandmarkCityQuizTest": {
+    "startMessage": {
+      "line1": "艾菲爾鐵塔？誰不知道。但這些你也猜得出來嗎？",
+      "line2": "巴黎、羅馬、紐約人人都熟。真正的旅行者，不也該認識課本外的地標嗎？",
+      "line3": "從簡單到越來越難，最後三題連老驢友也可能栽跟頭。",
+      "line4": "看看你對幾題。錯了不妨分享給朋友一起挑戰。",
+      "line5": "世界地標猜城市測驗 🌍 你能對幾題？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（看世界地標猜城市）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "shareResult": "分享結果",
+      "scoreSummary": "答對 {count} 題 · 共12題",
+      "levelLabel": "地標等級",
+      "nextGoalLabel": "下一目標",
+      "oneLiner": "一句話",
+      "todayTodo": "推薦行動",
+      "correctExplanationTitle": "答案解析",
+      "feedbackCorrect": "答對了！",
+      "feedbackWrong": "答錯了。",
+      "nextQuestion": "下一題",
+      "viewResult": "查看結果"
+    },
+    "shareMessages": {
+      "startDefault": "看世界地標猜城市 🌍 12題四選一",
+      "startKakao": "看世界地標猜城市 🌍 12題四選一",
+      "startWechat": "看世界地標猜城市 🌍 12題四選一",
+      "startWhatsapp": "看世界地標猜城市 🌍 12題四選一",
+      "startTelegram": "看世界地標猜城市 🌍 12題四選一",
+      "startLine": "看世界地標猜城市 🌍 12題四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測驗 Top5"
+    }
+  },
   "phase3TeamWorkChemistryTest": {
     "leaderShare": {
       "title": "在群組中分享測試連結時（接力 · 步驟）",

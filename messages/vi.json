@@ -3280,6 +3280,57 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3WorldLandmarkCityQuizTest": {
+    "startMessage": {
+      "line1": "Tháp Eiffel? Ai cũng biết. Nhưng mấy cái này bạn đoán được không?",
+      "line2": "Paris, Rome, New York—dễ. Nhưng dân du lịch thứ thiệt cũng nên biết địa danh ngoài sách chứ?",
+      "line3": "Dễ dần đến khó. Ba câu cuối có thể làm khó cả dân tầu bà.",
+      "line4": "Xem bạn được mấy câu đúng. Sai thì chia sẻ bạn bè cùng chơi.",
+      "line5": "Quiz địa danh thế giới 🌍 Bạn được mấy điểm?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Đoán thành phố qua địa danh thế giới)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "{count}/12 câu đúng",
+      "levelLabel": "Cấp địa danh",
+      "nextGoalLabel": "Mục tiêu tiếp",
+      "oneLiner": "Một câu",
+      "todayTodo": "Gợi ý",
+      "correctExplanationTitle": "Giải thích đáp án",
+      "feedbackCorrect": "Đúng rồi!",
+      "feedbackWrong": "Chưa đúng.",
+      "nextQuestion": "Câu tiếp",
+      "viewResult": "Xem kết quả"
+    },
+    "shareMessages": {
+      "startDefault": "Đoán thành phố qua địa danh thế giới 🌍 12 câu, 4 lựa chọn",
+      "startKakao": "Đoán thành phố qua địa danh thế giới 🌍 12 câu, 4 lựa chọn",
+      "startWechat": "Đoán thành phố qua địa danh thế giới 🌍 12 câu, 4 lựa chọn",
+      "startWhatsapp": "Đoán thành phố qua địa danh thế giới 🌍 12 câu, 4 lựa chọn",
+      "startTelegram": "Đoán thành phố qua địa danh thế giới 🌍 12 câu, 4 lựa chọn",
+      "startLine": "Đoán thành phố qua địa danh thế giới 🌍 12 câu, 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo KakaoTalk. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3TeamWorkChemistryTest": {
     "leaderShare": {
       "title": "Chia sẻ liên kết bài test trong nhóm (tiếp sức · các bước)",

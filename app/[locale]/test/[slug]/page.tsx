@@ -134,6 +134,10 @@ import {
   phase3ElementaryMathAdultsQuizResults,
 } from '@/lib/phase3ElementaryMathAdultsQuizData';
 import {
+  phase3WorldLandmarkCityQuizQuestions,
+  phase3WorldLandmarkCityQuizResults,
+} from '@/lib/phase3WorldLandmarkCityQuizData';
+import {
   phase3TeamWorkChemistryQuestions,
   phase3TeamWorkChemistryResults,
 } from '@/lib/phase3TeamWorkChemistryData';
@@ -431,6 +435,10 @@ const Phase3JpIndexPreciseMeasurementTestClient = dynamic(
 );
 const Phase3ElementaryMathAdultsQuizTestClient = dynamic(
   () => import('@/components/Phase3ElementaryMathAdultsQuizTestClient'),
+  { ssr: false }
+);
+const Phase3WorldLandmarkCityQuizTestClient = dynamic(
+  () => import('@/components/Phase3WorldLandmarkCityQuizTestClient'),
   { ssr: false }
 );
 const Phase3TeamWorkChemistryTestClient = dynamic(
@@ -2199,6 +2207,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['數學', '測驗', '小學', '腦力', '自尊'],
         vi: ['Toán', 'Quiz', 'Tiểu học', 'Trí não', 'Tự tôn'],
         id: ['Matematika', 'Quiz', 'SD', 'Otak', 'Ego'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-world-landmark-city-quiz') {
+    test = {
+      slug: 'phase3-world-landmark-city-quiz',
+      title: {
+        ko: '세계 랜드마크 보고 도시 맞추기',
+        en: 'Guess the City from World Landmarks',
+        ja: '世界のランドマークから都市を当てる',
+        'zh-CN': '看世界地标猜城市',
+        'zh-TW': '看世界地標猜城市',
+        vi: 'Đoán thành phố qua biểu tượng thế giới',
+        id: 'Tebak kota dari landmark dunia',
+      },
+      description: {
+        ko: '12문항 이미지형 4지선다. 랜드마크 사진을 보고 도시를 고르세요. #퀴즈 #여행 #랜드마크 #세계지리',
+        en: '12 image questions, 4 choices—pick the city for each landmark. #quiz #travel #landmark #geography',
+        ja: '全12問・画像4択。ランドマークの写真から都市を選びます。#クイズ #旅行 #ランドマーク #地理',
+        'zh-CN': '12 道看图选城市四选一。#测验 #旅行 #地标 #地理',
+        'zh-TW': '12 題看圖選城市四選一。#測驗 #旅行 #地標 #地理',
+        vi: '12 cây hình, 4 đáp án—chọn thành phố theo ảnh địa danh. #quiz #du lịch #địa lý',
+        id: '12 soal gambar, 4 pilihan—tebak kota dari foto landmark. #kuis #travel #geografi',
+      },
+      thumbnail: 'p3_quiz_world_landmark_city_match.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['퀴즈', '여행', '랜드마크', '세계지리'],
+        en: ['Quiz', 'Travel', 'Landmark', 'Geography'],
+        ja: ['クイズ', '旅行', 'ランドマーク', '地理'],
+        'zh-CN': ['测验', '旅行', '地标', '地理'],
+        'zh-TW': ['測驗', '旅行', '地標', '地理'],
+        vi: ['Quiz', 'Du lịch', 'Địa danh', 'Địa lý'],
+        id: ['Kuis', 'Travel', 'Landmark', 'Geografi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4681,6 +4726,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3ElementaryMathAdultsQuizQuestions}
           results={phase3ElementaryMathAdultsQuizResults}
           questionCount={phase3ElementaryMathAdultsQuizQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-world-landmark-city-quiz') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-world-landmark-city-quiz',
+      title: {
+        ko: '세계 랜드마크 보고 도시 맞추기',
+        en: 'Guess the City from World Landmarks',
+        ja: '世界のランドマークから都市を当てる',
+        'zh-CN': '看世界地标猜城市',
+        'zh-TW': '看世界地標猜城市',
+        vi: 'Đoán thành phố qua biểu tượng thế giới',
+        id: 'Tebak kota dari landmark dunia',
+      },
+      description: {
+        ko: '12문항 이미지형 4지선다. 랜드마크 사진을 보고 도시를 고르세요. #퀴즈 #여행 #랜드마크 #세계지리',
+        en: '12 image questions, 4 choices—pick the city for each landmark. #quiz #travel #landmark #geography',
+        ja: '全12問・画像4択。ランドマークの写真から都市を選びます。#クイズ #旅行 #ランドマーク #地理',
+        'zh-CN': '12 道看图选城市四选一。#测验 #旅行 #地标 #地理',
+        'zh-TW': '12 題看圖選城市四選一。#測驗 #旅行 #地標 #地理',
+        vi: '12 cây hình, 4 đáp án—chọn thành phố theo ảnh địa danh. #quiz #du lịch #địa lý',
+        id: '12 soal gambar, 4 pilihan—tebak kota dari foto landmark. #kuis #travel #geografi',
+      },
+      thumbnail: 'p3_quiz_world_landmark_city_match.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['퀴즈', '여행', '랜드마크', '세계지리'],
+        en: ['Quiz', 'Travel', 'Landmark', 'Geography'],
+        ja: ['クイズ', '旅行', 'ランドマーク', '地理'],
+        'zh-CN': ['测验', '旅行', '地标', '地理'],
+        'zh-TW': ['測驗', '旅行', '地標', '地理'],
+        vi: ['Quiz', 'Du lịch', 'Địa danh', 'Địa lý'],
+        id: ['Kuis', 'Travel', 'Landmark', 'Geografi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3WorldLandmarkCityQuizTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3WorldLandmarkCityQuizQuestions}
+          results={phase3WorldLandmarkCityQuizResults}
+          questionCount={phase3WorldLandmarkCityQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

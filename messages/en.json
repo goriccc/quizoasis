@@ -3321,6 +3321,57 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3WorldLandmarkCityQuizTest": {
+    "startMessage": {
+      "line1": "The Eiffel Tower? Everyone knows it—but can you get these too?",
+      "line2": "Paris, Rome, New York—easy. But a real traveler should know landmarks that aren’t in textbooks, right?",
+      "line3": "It starts easy and gets harder. The last three will stump even seasoned globetrotters.",
+      "line4": "See how many you can nail. Missed a few? Share with a friend and compare.",
+      "line5": "World landmark quiz 🌍 How many can you get?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Guess the city from world landmarks)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "scoreSummary": "{count} correct · out of 12",
+      "levelLabel": "Landmark level",
+      "nextGoalLabel": "Next goal",
+      "oneLiner": "One-liner",
+      "todayTodo": "Try this",
+      "correctExplanationTitle": "Answer explained",
+      "feedbackCorrect": "Correct!",
+      "feedbackWrong": "Not quite.",
+      "nextQuestion": "Next question",
+      "viewResult": "See results"
+    },
+    "shareMessages": {
+      "startDefault": "Guess the city from world landmarks 🌍 12 questions, 4 choices",
+      "startKakao": "Guess the city from world landmarks 🌍 12 questions, 4 choices",
+      "startWechat": "Guess the city from world landmarks 🌍 12 questions, 4 choices",
+      "startWhatsapp": "Guess the city from world landmarks 🌍 12 questions, 4 choices",
+      "startTelegram": "Guess the city from world landmarks 🌍 12 questions, 4 choices",
+      "startLine": "Guess the city from world landmarks 🌍 12 questions, 4 choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn’t available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3TeamWorkChemistryTest": {
     "leaderShare": {
       "title": "Sharing the test link in the group chat (relay · steps)",

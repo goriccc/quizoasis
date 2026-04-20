@@ -2542,6 +2542,57 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3WorldLandmarkCityQuizTest": {
+    "startMessage": {
+      "line1": "에펠탑? 다 알죠. 근데 이것도 맞출 수 있어요?",
+      "line2": "파리·로마·뉴욕은 누구나 압니다. 그런데 진짜 세계 여행자라면 교과서에 없는 랜드마크도 알아야 하지 않을까요?",
+      "line3": "쉬운 것부터 시작해서 점점 어려워집니다. 마지막 3문제는 웬만한 세계여행자도 헷갈립니다.",
+      "line4": "몇 개나 맞힐 수 있는지, 지금 바로 도전해보세요. 틀린 문제는 친구한테 공유해서 같이 도전해보는 거 추천합니다.",
+      "line5": "세계 랜드마크 퀴즈 시작 🌍 몇 개나 맞힐 수 있을까?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (세계 랜드마크 보고 도시 맞추기)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "scoreSummary": "{count}개 맞힘 · 12문항 만점",
+      "levelLabel": "랜드마크 레벨",
+      "nextGoalLabel": "다음 목표",
+      "oneLiner": "한마디",
+      "todayTodo": "추천 행동",
+      "correctExplanationTitle": "정답 해설",
+      "feedbackCorrect": "정답입니다!",
+      "feedbackWrong": "오답이에요.",
+      "nextQuestion": "다음 문제",
+      "viewResult": "결과 보기"
+    },
+    "shareMessages": {
+      "startDefault": "세계 랜드마크 보고 도시 맞추기 🌍 12문항 4지선다",
+      "startKakao": "세계 랜드마크 보고 도시 맞추기 🌍 12문항 4지선다",
+      "startWechat": "세계 랜드마크 보고 도시 맞추기 🌍 12문항 4지선다",
+      "startWhatsapp": "세계 랜드마크 보고 도시 맞추기 🌍 12문항 4지선다",
+      "startTelegram": "세계 랜드마크 보고 도시 맞추기 🌍 12문항 4지선다",
+      "startLine": "세계 랜드마크 보고 도시 맞추기 🌍 12문항 4지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3TeamWorkChemistryTest": {
     "leaderShare": {
       "title": "단톡에 테스트 링크 올릴 때 (릴레이 · 공유 순서)",
