@@ -3083,6 +3083,58 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3StressReliefTypeTest": {
+    "startMessage": {
+      "line1": "紓壓方式因人而異。",
+      "line2": "有人靠流汗釋放，有人需要獨處安靜，有人要靠和朋友大笑。",
+      "line3": "若方法不合你的類型，可能更累，或今天看似恢復、明天又疲憊循環。",
+      "line4": "12 題找出你的壓力舒緩類型，並給你今天就能開始的最佳恢復流程。",
+      "line5": "找到我的壓力舒緩類型 🌿 開始恢復"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（我的壓力舒緩類型）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "mechanism": "舒緩機制",
+      "strength": "此類型的優勢",
+      "caution": "注意事項",
+      "routine": "最佳恢復流程",
+      "actionNow": "現在就能做的事",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "我的壓力舒緩類型 🌿 12 題文字四選一",
+      "startKakao": "我的壓力舒緩類型 🌿 12 題文字四選一",
+      "startWechat": "我的壓力舒緩類型 🌿 12 題文字四選一",
+      "startWhatsapp": "我的壓力舒緩類型 🌿 12 題文字四選一",
+      "startTelegram": "我的壓力舒緩類型 🌿 12 題文字四選一",
+      "startLine": "我的壓力舒緩類型 🌿 12 題文字四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T還是F？這場爭論還沒結束。",

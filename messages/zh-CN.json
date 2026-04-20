@@ -3076,6 +3076,58 @@
       "popularTestsTop5": "🔥 热门测试推荐前 5"
     }
   },
+  "phase3StressReliefTypeTest": {
+    "startMessage": {
+      "line1": "解压方式因人而异。",
+      "line2": "有人靠流汗释放，有人需要独处安静，有人要靠和朋友大笑。",
+      "line3": "若方法不合你的类型，可能更累，或今天看似恢复、明天又疲惫循环。",
+      "line4": "12道题找出你的压力舒缓类型，并给你今天就能开始的最佳恢复流程。",
+      "line5": "找到我的压力舒缓类型 🌿 开始恢复"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告位（我的压力舒缓类型）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "mechanism": "舒缓机制",
+      "strength": "该类型的优势",
+      "caution": "注意事项",
+      "routine": "最佳恢复流程",
+      "actionNow": "现在就能做的事",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "我的压力舒缓类型 🌿 12 道文字四选一",
+      "startKakao": "我的压力舒缓类型 🌿 12 道文字四选一",
+      "startWechat": "我的压力舒缓类型 🌿 12 道文字四选一",
+      "startWhatsapp": "我的压力舒缓类型 🌿 12 道文字四选一",
+      "startTelegram": "我的压力舒缓类型 🌿 12 道文字四选一",
+      "startLine": "我的压力舒缓类型 🌿 12 道文字四选一"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前 5",
+      "popularTestsTop5": "🔥 热门测试推荐前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T还是F？这场争论还没结束。",

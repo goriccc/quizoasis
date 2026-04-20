@@ -3076,6 +3076,58 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3StressReliefTypeTest": {
+    "startMessage": {
+      "line1": "Mỗi người xả stress theo một cách khác nhau.",
+      "line2": "Có người cần vận động ra mồ hôi, có người cần yên tĩnh một mình, có người cần cười thả ga với bạn bè.",
+      "line3": "Nếu cách không hợp kiểu của bạn, bạn có thể mệt hơn — hoặc hôm nay thấy khỏe nhưng mai lại kiệt sức.",
+      "line4": "12 câu hỏi giúp bạn tìm kiểu xả stress và một routine phục hồi tối ưu có thể bắt đầu ngay hôm nay.",
+      "line5": "Tìm kiểu xả stress của tôi 🌿 Bắt đầu phục hồi"
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Kiểu xả stress của tôi)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "mechanism": "Cơ chế xả stress",
+      "strength": "Điểm mạnh của kiểu này",
+      "caution": "Điểm cần lưu ý",
+      "routine": "Routine phục hồi tối ưu",
+      "actionNow": "Làm ngay bây giờ",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "Kiểu xả stress của tôi 🌿 12 câu chữ, 4 lựa chọn",
+      "startKakao": "Kiểu xả stress của tôi 🌿 12 câu chữ, 4 lựa chọn",
+      "startWechat": "Kiểu xả stress của tôi 🌿 12 câu chữ, 4 lựa chọn",
+      "startWhatsapp": "Kiểu xả stress của tôi 🌿 12 câu chữ, 4 lựa chọn",
+      "startTelegram": "Kiểu xả stress của tôi 🌿 12 câu chữ, 4 lựa chọn",
+      "startLine": "Kiểu xả stress của tôi 🌿 12 câu chữ, 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",

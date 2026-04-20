@@ -3076,6 +3076,58 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3StressReliefTypeTest": {
+    "startMessage": {
+      "line1": "Setiap orang melegakan stres dengan cara berbeda.",
+      "line2": "Ada yang perlu berkeringat, ada yang butuh waktu tenang sendiri, ada yang perlu tertawa bersama teman.",
+      "line3": "Kalau metodenya tidak cocok dengan tipe Anda, Anda bisa lebih lelah — atau hari ini terasa pulih, besok lelah lagi.",
+      "line4": "12 pertanyaan mengungkap tipe pelegaan stres Anda dan rutinitas pemulihan optimal yang bisa dimulai hari ini.",
+      "line5": "Temukan tipe pelegaan stresku 🌿 Mulai pemulihan"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Tipe pelegaan stresku)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "mechanism": "Mekanisme pelegaan",
+      "strength": "Kelebihan tipe ini",
+      "caution": "Hal yang perlu diwaspadai",
+      "routine": "Rutinitas pemulihan optimal",
+      "actionNow": "Lakukan sekarang juga",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "Tipe pelegaan stresku 🌿 12 soal teks, 4 pilihan",
+      "startKakao": "Tipe pelegaan stresku 🌿 12 soal teks, 4 pilihan",
+      "startWechat": "Tipe pelegaan stresku 🌿 12 soal teks, 4 pilihan",
+      "startWhatsapp": "Tipe pelegaan stresku 🌿 12 soal teks, 4 pilihan",
+      "startTelegram": "Tipe pelegaan stresku 🌿 12 soal teks, 4 pilihan",
+      "startLine": "Tipe pelegaan stresku 🌿 12 soal teks, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",

@@ -3117,6 +3117,58 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3StressReliefTypeTest": {
+    "startMessage": {
+      "line1": "Everyone relieves stress differently.",
+      "line2": "Some sweat it out, some need quiet alone time, and some need to laugh hard with friends.",
+      "line3": "If you use methods that don’t fit your type, you can feel worse—or “recovered” today but drained again tomorrow.",
+      "line4": "Twelve questions reveal your stress-relief type and a recovery routine you can start today.",
+      "line5": "Find my stress-relief type 🌿 Start recovery"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (My stress relief type)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "mechanism": "Relief mechanism",
+      "strength": "Strengths of this type",
+      "caution": "Watch-outs",
+      "routine": "Optimal recovery routine",
+      "actionNow": "Do this right now",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "My stress relief type 🌿 12 text questions, 4 choices",
+      "startKakao": "My stress relief type 🌿 12 text questions, 4 choices",
+      "startWechat": "My stress relief type 🌿 12 text questions, 4 choices",
+      "startWhatsapp": "My stress relief type 🌿 12 text questions, 4 choices",
+      "startTelegram": "My stress relief type 🌿 12 text questions, 4 choices",
+      "startLine": "My stress relief type 🌿 12 text questions, 4 choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T or F? That debate is not over yet.",
