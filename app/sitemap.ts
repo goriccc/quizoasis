@@ -78,6 +78,7 @@ const testSlugs = [
   'phase3-sleep-type-prescription',
   'phase3-my-hashtag-generator',
   'phase3-godsaeng-index-measurement',
+  'phase3-office-balance-game',
   'phase3-team-work-chemistry-test',
 ];
 

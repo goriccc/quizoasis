@@ -2528,6 +2528,57 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3OfficeBalanceGameTest": {
+    "startMessage": {
+      "line1": "직장인의 현실을 담은 극한 밸런스 게임입니다.",
+      "line2": "둘 다 싫은데 하나를 골라야 합니다. 고를 때마다 당신의 직장 생활관과 일에 대한 가치관이 드러납니다.",
+      "line3": "혼자 해도 좋지만 직장 동료나 팀원이랑 같이 하면 더 재밌습니다. 서로 다른 선택을 했을 때 \"어떻게 그걸 골라?!\"가 터지는 순간이 하이라이트입니다.",
+      "line4": "10라운드. 도망칠 수 없습니다.",
+      "line5": "극한 직장 밸런스 게임 시작 💼 라운드 1 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (밸런스 게임 - 직장생활편)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "empathyLevel": "총점 구간",
+      "characteristics": "직장 생활관 키워드",
+      "goodMatch": "이 유형과 최고의 조합",
+      "badMatch": "이 유형과 최악의 조합",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "직장 밸런스 게임 결과: {type} 직장 동료랑 같이 해봐 → 선택 다르면 '어떻게 그걸 골라?!' 보장",
+      "kakao": "직장 밸런스 게임 결과: {type} 직장 동료랑 같이 해봐 → 선택 다르면 '어떻게 그걸 골라?!' 보장",
+      "wechat": "직장 밸런스 게임 결과: {type} 직장 동료랑 같이 해봐 → 선택 다르면 '어떻게 그걸 골라?!' 보장",
+      "whatsapp": "직장 밸런스 게임 결과: {type} 직장 동료랑 같이 해봐 → 선택 다르면 '어떻게 그걸 골라?!' 보장",
+      "telegram": "직장 밸런스 게임 결과: {type} 직장 동료랑 같이 해봐 → 선택 다르면 '어떻게 그걸 골라?!' 보장",
+      "line": "직장 밸런스 게임 결과: {type} 직장 동료랑 같이 해봐 → 선택 다르면 '어떻게 그걸 골라?!' 보장",
+      "startDefault": "밸런스 게임 - 직장생활편 💼 10문항 텍스트 2지선다",
+      "startKakao": "밸런스 게임 - 직장생활편 💼 10문항 텍스트 2지선다",
+      "startWechat": "밸런스 게임 - 직장생활편 💼 10문항 텍스트 2지선다",
+      "startWhatsapp": "밸런스 게임 - 직장생활편 💼 10문항 텍스트 2지선다",
+      "startTelegram": "밸런스 게임 - 직장생활편 💼 10문항 텍스트 2지선다",
+      "startLine": "밸런스 게임 - 직장생활편 💼 10문항 텍스트 2지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T인가요, F인가요? 그 논쟁은 아직 끝나지 않았습니다.",

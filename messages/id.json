@@ -3266,6 +3266,57 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3OfficeBalanceGameTest": {
+    "startMessage": {
+      "line1": "Permainan seimbang ekstrem yang mengangkat kehidupan kantor nyata.",
+      "line2": "Keduanya buruk, tapi kamu harus memilih satu. Setiap pilihan menunjukkan sikap kerja dan nilaimu.",
+      "line3": "Main sendiri boleh, tapi bareng rekan kerja lebih seru—saat pilihan beda, momen “kok bisa pilih itu?!” adalah klimaksnya.",
+      "line4": "10 ronde. Tidak bisa kabur.",
+      "line5": "Mulai permainan seimbang kantor ekstrem 💼 Ronde 1"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (permainan seimbang kehidupan kantor)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "empathyLevel": "Rentang skor total",
+      "characteristics": "Kata kunci sikap kerja",
+      "goodMatch": "Paling cocok dengan tipe ini",
+      "badMatch": "Paling tidak cocok dengan tipe ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Hasil permainan seimbang kantor: {type} Coba bareng rekan—pilihan beda pasti debat",
+      "kakao": "Hasil permainan seimbang kantor: {type} Coba bareng rekan—pilihan beda pasti debat",
+      "wechat": "Hasil permainan seimbang kantor: {type} Coba bareng rekan—pilihan beda pasti debat",
+      "whatsapp": "Hasil permainan seimbang kantor: {type} Coba bareng rekan—pilihan beda pasti debat",
+      "telegram": "Hasil permainan seimbang kantor: {type} Coba bareng rekan—pilihan beda pasti debat",
+      "line": "Hasil permainan seimbang kantor: {type} Coba bareng rekan—pilihan beda pasti debat",
+      "startDefault": "Permainan seimbang kantor 💼 10 soal teks 2 pilihan",
+      "startKakao": "Permainan seimbang kantor 💼 10 soal teks 2 pilihan",
+      "startWechat": "Permainan seimbang kantor 💼 10 soal teks 2 pilihan",
+      "startWhatsapp": "Permainan seimbang kantor 💼 10 soal teks 2 pilihan",
+      "startTelegram": "Permainan seimbang kantor 💼 10 soal teks 2 pilihan",
+      "startLine": "Permainan seimbang kantor 💼 10 soal teks 2 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",

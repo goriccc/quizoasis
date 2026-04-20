@@ -3266,6 +3266,57 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3OfficeBalanceGameTest": {
+    "startMessage": {
+      "line1": "Trò cân bằng cực hạn lấy cảm hứng từ đời công sở thật.",
+      "line2": "Cả hai đều dở nhưng bạn phải chọn một. Mỗi lượt lộ ra thái độ làm việc và giá trị của bạn.",
+      "line3": "Chơi một mình cũng được, nhưng cùng đồng nghiệp sẽ vui hơn—chọn khác nhau là lúc “sao lại chọn vậy?!” nổ tung.",
+      "line4": "10 vòng. Không thoát được.",
+      "line5": "Bắt đầu trò cân bằng công sở cực hạn 💼 Vòng 1"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (trò cân bằng công sở)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "empathyLevel": "Khoảng tổng điểm",
+      "characteristics": "Từ khóa thái độ công sở",
+      "goodMatch": "Hợp nhất với kiểu này",
+      "badMatch": "Kém hợp nhất với kiểu này",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Kết quả trò cân bằng công sở: {type} Chơi cùng đồng nghiệp—khác lựa chọn là tranh luận chắc chắn",
+      "kakao": "Kết quả trò cân bằng công sở: {type} Chơi cùng đồng nghiệp—khác lựa chọn là tranh luận chắc chắn",
+      "wechat": "Kết quả trò cân bằng công sở: {type} Chơi cùng đồng nghiệp—khác lựa chọn là tranh luận chắc chắn",
+      "whatsapp": "Kết quả trò cân bằng công sở: {type} Chơi cùng đồng nghiệp—khác lựa chọn là tranh luận chắc chắn",
+      "telegram": "Kết quả trò cân bằng công sở: {type} Chơi cùng đồng nghiệp—khác lựa chọn là tranh luận chắc chắn",
+      "line": "Kết quả trò cân bằng công sở: {type} Chơi cùng đồng nghiệp—khác lựa chọn là tranh luận chắc chắn",
+      "startDefault": "Trò cân bằng công sở 💼 10 câu chữ 2 lựa chọn",
+      "startKakao": "Trò cân bằng công sở 💼 10 câu chữ 2 lựa chọn",
+      "startWechat": "Trò cân bằng công sở 💼 10 câu chữ 2 lựa chọn",
+      "startWhatsapp": "Trò cân bằng công sở 💼 10 câu chữ 2 lựa chọn",
+      "startTelegram": "Trò cân bằng công sở 💼 10 câu chữ 2 lựa chọn",
+      "startLine": "Trò cân bằng công sở 💼 10 câu chữ 2 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",

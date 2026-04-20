@@ -3273,6 +3273,57 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3OfficeBalanceGameTest": {
+    "startMessage": {
+      "line1": "以真實職場為背景的極限二選一平衡遊戲。",
+      "line2": "兩個都很討厭，但必須選一個。每一題都會露出你的工作觀與價值觀。",
+      "line3": "一個人也能玩，但和同事或隊友一起玩更有趣——選項不同時「你怎麼會選那個？！」就是名場面。",
+      "line4": "10 輪，無處可逃。",
+      "line5": "極限職場平衡遊戲開始 💼 第 1 輪"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區（職場平衡遊戲）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "empathyLevel": "總分區間",
+      "characteristics": "職場觀關鍵字",
+      "goodMatch": "與該類型最合拍",
+      "badMatch": "與該類型最不合拍",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "職場平衡遊戲結果：{type} 和同事一起玩——選項不同必有爭論",
+      "kakao": "職場平衡遊戲結果：{type} 和同事一起玩——選項不同必有爭論",
+      "wechat": "職場平衡遊戲結果：{type} 和同事一起玩——選項不同必有爭論",
+      "whatsapp": "職場平衡遊戲結果：{type} 和同事一起玩——選項不同必有爭論",
+      "telegram": "職場平衡遊戲結果：{type} 和同事一起玩——選項不同必有爭論",
+      "line": "職場平衡遊戲結果：{type} 和同事一起玩——選項不同必有爭論",
+      "startDefault": "職場平衡遊戲 💼 10 題文字二選一",
+      "startKakao": "職場平衡遊戲 💼 10 題文字二選一",
+      "startWechat": "職場平衡遊戲 💼 10 題文字二選一",
+      "startWhatsapp": "職場平衡遊戲 💼 10 題文字二選一",
+      "startTelegram": "職場平衡遊戲 💼 10 題文字二選一",
+      "startLine": "職場平衡遊戲 💼 10 題文字二選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T還是F？這場爭論還沒結束。",

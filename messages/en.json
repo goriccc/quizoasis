@@ -3307,6 +3307,57 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3OfficeBalanceGameTest": {
+    "startMessage": {
+      "line1": "An extreme workplace balance game rooted in real office life.",
+      "line2": "Both options are awful—but you must pick one. Each choice reveals your work attitude and values.",
+      "line3": "Solo is fine, but try it with coworkers: when picks differ, the “How could you choose that?!” moments are the highlight.",
+      "line4": "10 rounds. No escape.",
+      "line5": "Start the extreme office balance game 💼 Round 1"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Office life balance game)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "empathyLevel": "Score band",
+      "characteristics": "Work attitude keywords",
+      "goodMatch": "Best match for this type",
+      "badMatch": "Worst match for this type",
+      "shareResult": "Share results"
+    },
+    "shareMessages": {
+      "default": "Office balance game result: {type} Try with coworkers—different picks guaranteed to spark debate",
+      "kakao": "Office balance game result: {type} Try with coworkers—different picks guaranteed to spark debate",
+      "wechat": "Office balance game result: {type} Try with coworkers—different picks guaranteed to spark debate",
+      "whatsapp": "Office balance game result: {type} Try with coworkers—different picks guaranteed to spark debate",
+      "telegram": "Office balance game result: {type} Try with coworkers—different picks guaranteed to spark debate",
+      "line": "Office balance game result: {type} Try with coworkers—different picks guaranteed to spark debate",
+      "startDefault": "Office balance game 💼 10 text questions, pick A or B",
+      "startKakao": "Office balance game 💼 10 text questions, pick A or B",
+      "startWechat": "Office balance game 💼 10 text questions, pick A or B",
+      "startWhatsapp": "Office balance game 💼 10 text questions, pick A or B",
+      "startTelegram": "Office balance game 💼 10 text questions, pick A or B",
+      "startLine": "Office balance game 💼 10 text questions, pick A or B"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T or F? That debate is not over yet.",
