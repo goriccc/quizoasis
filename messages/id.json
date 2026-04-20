@@ -3280,6 +3280,172 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3TeamWorkChemistryTest": {
+    "leaderShare": {
+      "title": "Membagikan tautan tes di grup (estafet · langkah)",
+      "body": "Agar analisis tim penuh (nilai, komposisi peran, sinergi) jelas, cara paling tegas adalah estafet: setiap kali seseorang selesai, posting tautan baru dari layar hasil ke grup dan teruskan ke orang berikutnya.\n\n① Di layar mulai, di bagian “Bagikan ke teman”, salin URL halaman tes ini dan posting di grup.\n\n② Setiap anggota membuka tautan itu, menyelesaikan 12 pertanyaan, lalu melihat hasil tipe peran timnya.\n\n③ Di layar hasil, ketuk “Salin tautan tim”. Itu menyalin URL baru dengan peran semua peserta sejauh ini. Posting lagi di grup atau kirim ke anggota yang belum. (Ulangi langkah ③ setiap orang selesai agar rantai tautan berlanjut.)\n\n④ Setelah semua ikut, buka tautan terakhir yang dibagikan dan baca “Analisis chemistry kerja tim kami” (komposisi peran, sinergi, peringatan peran yang kurang, dll.).\n\n※ Untuk analisis tim penuh, tautan harus diteruskan secara estafet lewat langkah ③. Jika hanya ingin hasil pribadi, cukup sampai langkah ②.\n\nMengerjakan bersama sebelum rapat mempermudah pembagian peran.",
+      "shareHint": "Tautan pertama belum berisi data tim. Seperti estafet—setiap orang selesai, posting URL terbaru dari “Salin tautan tim” di layar hasil agar seluruh tim tercermin dalam analisis."
+    },
+    "teamLinkBanner": "Tautan ini sudah berisi hasil {count} orang. Setelah kamu selesai, hasilmu akan digabung ke analisis tim di bawah.",
+    "teamPreview": {
+      "title": "Pratinjau chemistry tim (dari tautan ini)",
+      "description": "Di bawah ini analisis hanya untuk anggota yang sudah ada di URL ini. Setelah cek, isi nama tampilan lalu mulai tes—setelah selesai, peran Anda ditambahkan ke rantai."
+    },
+    "nicknameLabel": "Nama tampilan untuk analisis tim (opsional)",
+    "nicknamePlaceholder": "mis. Budi",
+    "defaultNickname": "Anggota tim",
+    "startMessage": {
+      "line1": "Tim juga punya chemistry — dan bisa diukur.",
+      "line2": "Tim yang sama, kenapa dengan sebagian orang kerjaannya lancar, dengan yang lain sering salah sasaran?",
+      "line3": "Bukan hanya soal kepribadian, tapi kombinasi tipe peran di tim. Mengetahui peran yang kamu naturally ambil akan mengubah teamwork.",
+      "line4": "12 pertanyaan untuk menemukan tipe peranmu, lalu gabungkan hasil semua orang untuk menganalisis chemistry tim.",
+      "line5": "Mulai tes chemistry tim 🤝 Temukan tipe peran timku"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Tes chemistry kerja tim)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "scoreLine": "Skor total: {score} · dari 12 pertanyaan",
+      "keywords": "Kata kunci",
+      "naturalRoles": "Peran yang natural kamu ambil",
+      "strength": "Kekuatan",
+      "watchOut": "Perhatian",
+      "bestMatch": "Tipe paling cocok",
+      "conflictMatch": "Tipe yang bisa bentrok",
+      "shareOneLiner": "Satu baris kontribusi ke tim"
+    },
+    "teamAnalysis": {
+      "title": "🤝 Analisis chemistry kerja tim kami",
+      "gradeLabel": "Nilai chemistry tim: {grade}",
+      "barsTitle": "Komposisi peran (6 kotak)",
+      "synergyTitle": "Sinergi menurut campuran peran",
+      "missingTitle": "Peringatan & saran jika ada peran yang kurang",
+      "prescription": "Saran:",
+      "caution": "Catatan:",
+      "none": "(tidak ada)"
+    },
+    "teamLink": {
+      "title": "Tautan untuk dibagikan ke anggota",
+      "hint": "Salin tautan di bawah dan kirim ke grup chat. Anggota mengerjakan bergiliran, hasil menumpuk di tautan yang sama.",
+      "copy": "Salin tautan tim · perbarui URL"
+    },
+    "shareMessages": {
+      "startDefault": "Tes chemistry kerja tim 🤝 12 pertanyaan · tipe peran tim",
+      "startKakao": "Tes chemistry kerja tim 🤝 12 pertanyaan · tipe peran tim",
+      "startWechat": "Tes chemistry kerja tim 🤝 12 pertanyaan · tipe peran tim",
+      "startWhatsapp": "Tes chemistry kerja tim 🤝 12 pertanyaan · tipe peran tim",
+      "startTelegram": "Tes chemistry kerja tim 🤝 12 pertanyaan · tipe peran tim",
+      "startLine": "Tes chemistry kerja tim 🤝 12 pertanyaan · tipe peran tim",
+      "resultLine": "Aku tipe 「{type}」 🤝 Buka tautannya dan ikut tes untuk analisis chemistry tim"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 5 tes yang lagi ramai"
+    },
+    "roleLabels": {
+      "visionary": "Perumus visi",
+      "executor": "Pelaksana",
+      "coordinator": "Koordinator",
+      "analyst": "Analis",
+      "creator": "Kreator",
+      "supporter": "Supporter"
+    },
+    "report": {
+      "synergy": {
+        "visionary_executor": {
+          "title": "✨ Kombo mimpi aktif",
+          "body": "Ada yang menentukan arah dan ada yang mengeksekusi.\n\nStruktur ini mirip “tetapkan tujuan lalu benar-benar mengirim hasil.”\n\nCatatan: saat kecepatan naik, verifikasi detail bisa terlewat—peran Analyst membuat kombo ini lebih kuat."
+        },
+        "coordinator_analyst": {
+          "title": "✨ Kombo keseimbangan aktif",
+          "body": "Kepala dan hati seimbang. Keputusan kurang condong ke satu ekstrem, kesimpulan lebih mudah diterima semua.\n\nTim dengan pasangan ini sering pulih lebih cepat setelah konflik."
+        },
+        "creator_executor": {
+          "title": "✨ Kombo ide ke pengiriman aktif",
+          "body": "Pembuat ide dan pelaksana ada di tim yang sama.\n\nSementara tim lain masih berdebat, Anda mungkin sudah membuat prototipe."
+        }
+      },
+      "missing": {
+        "visionary": {
+          "title": "⚠️ Arah tidak jelas",
+          "body": "Tidak ada yang secara alami menetapkan arah. Tim bisa sibuk tanpa “kemana kita pergi.”",
+          "prescription": "Sebelum rapat, selaraskan satu kalimat: apa yang harus dicapai proyek ini."
+        },
+        "executor": {
+          "title": "⚠️ Mesin eksekusi lemah",
+          "body": "Ada ide dan arah, tapi kurang dorongan untuk menghasilkan output nyata.",
+          "prescription": "Akhiri setiap rapat dengan “siapa melakukan apa sebelum kapan”—jadikan kebiasaan."
+        },
+        "analyst": {
+          "title": "⚠️ Deteksi risiko lebih lemah",
+          "body": "Tim bergerak cepat, tapi lebih sedikit yang melihat celah dan risiko.",
+          "prescription": "Gilir peran “advocatus diaboli” sebelum keputusan besar—mencari sanggahan sudah mengurangi risiko."
+        },
+        "coordinator": {
+          "title": "⚠️ Pemulihan konflik lebih sulit",
+          "body": "Saat gesekan muncul, mungkin tidak ada mediator alami.",
+          "prescription": "Perhatikan hening canggung di rapat—tambahkan “ada yang melihat berbeda?”"
+        },
+        "creator": {
+          "title": "⚠️ Sedikit terobosan kreatif",
+          "body": "Saat macet, sudut baru mungkin sulit muncul.",
+          "prescription": "Coba bulanan “ide paling liar”—brainstorming tanpa penilaian melatih otot kreatif."
+        },
+        "supporter": {
+          "title": "⚠️ Risiko kelelahan tim",
+          "body": "Tim mengejar hasil sambil kurang mendukung energi emosional anggota.",
+          "prescription": "Tambah check-in mingguan: “tingkat energi 1–10 minggu ini?”"
+        }
+      },
+      "grade": {
+        "six_roles": {
+          "title": "Kimia A+ — tim seimbang 🏆",
+          "body": "Enam tipe peran muncul. Kekuatan bisa menutup titik buta—potensi sinergi besar.",
+          "caution": "Sesekali tukar peran agar tidak terjebak satu jalur—fleksibilitas membantu seluruh tim."
+        },
+        "five_roles": {
+          "title": "Kimia A — satu celah peran",
+          "body": "Peran cukup beragam. Mengisi tipe yang kurang bisa menaikkan chemistry satu tingkat.",
+          "caution": ""
+        },
+        "four_roles": {
+          "title": "Kimia B+ — dua celah peran",
+          "body": "Peran cukup beragam. Mengisi tipe yang kurang bisa menaikkan chemistry satu tingkat.",
+          "caution": ""
+        },
+        "three_balance": {
+          "title": "Kimia B — perlu keseimbangan ⚖️",
+          "body": "Peran miring. Sekarang mungkin lancar, tapi situasi tertentu akan memperlihatkan titik lemah.",
+          "caution": "Sebutkan peran yang hilang di rapat: “Kita tidak punya Analyst—siapa bisa memerankan kali ini?”"
+        },
+        "two_roles": {
+          "title": "Kimia C — tinjau ulang struktur",
+          "body": "Keragaman peran rendah. Selang-seling item rapat seperti “cek celah” dan “cek emosi.”",
+          "caution": ""
+        },
+        "one_cluster": {
+          "title": "Kimia D — perlu reset 🚨",
+          "body": "Semua berkumpul di peran serupa. Cara berpikir sama menciptakan titik buta.",
+          "caution": "Bawa perspektif luar secara rutin untuk mengecilkan titik buta."
+        }
+      }
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube tahu hal yang bahkan tidak kamu ucapkan.",

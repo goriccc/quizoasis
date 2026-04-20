@@ -3287,6 +3287,172 @@
       "popularTestsTop5": "🔥 熱門測驗 Top5"
     }
   },
+  "phase3TeamWorkChemistryTest": {
+    "leaderShare": {
+      "title": "在群組中分享測試連結時（接力 · 步驟）",
+      "body": "要準確查看全隊分析（等級、角色構成、默契），最清楚的做法是接力：每有一人完成，就在結果頁產生新連結，再發到群組交給下一位。\n\n① 在開始頁下方「與好友一起做」，複製本測試頁網址發到群組。\n\n② 成員各自從該連結進入並答完12題，即可看到本人的團隊角色類型結果。\n\n③ 在結果頁下方按「複製團隊連結」，會複製一個把截至目前參與者角色寫入網址的新連結。請將該連結再次發到群組，或給尚未完成的成員。（每完成一人就重複③，把連結接力傳下去。）\n\n④ 全員參與後，用最後分享的連結進入結果頁，查看「我們團隊工作默契分析」（角色構成、默契、缺失角色與注意點）。\n\n※ 要看全隊分析，必須透過③接力延續連結；若只看個人結果，做到②即可。\n\n會前一起做，更容易分工。",
+      "shareHint": "最初分享的網址不含團隊資訊。須像接力一樣，每有一人完成測試，就用結果頁的「複製團隊連結」更新網址並發出，全隊傾向才會納入分析。"
+    },
+    "teamLinkBanner": "此連結已包含 {count} 人的結果。你完成測驗後，結果會自動併入下方的團隊分析。",
+    "teamPreview": {
+      "title": "連結中的團隊默契預覽",
+      "description": "以下為目前連結中已包含成員的分析。確認後可填寫暱稱並開始測驗，完成後你的角色會併入其中。"
+    },
+    "nicknameLabel": "在團隊分析中顯示的名稱（選填）",
+    "nicknamePlaceholder": "例：小明",
+    "defaultNickname": "成員",
+    "startMessage": {
+      "line1": "團隊也有默契，而且可以測量。",
+      "line2": "同一團隊，為什麼和有些人合作順暢，和另一些人卻總是對不上？",
+      "line3": "這不只是性格問題，而是團隊角色類型的組合不同。知道自己自然承擔哪種角色，團隊合作會不一樣。",
+      "line4": "用12題找到你的團隊角色類型，再把大家的結果彙總，分析你們團隊的默契。",
+      "line5": "開始團隊默契測驗 🤝 找到我的團隊角色類型"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（團隊工作默契測驗）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "shareResult": "分享結果",
+      "scoreLine": "總分 {score} 分 · 共12題",
+      "keywords": "關鍵字",
+      "naturalRoles": "自然承擔的角色",
+      "strength": "優勢",
+      "watchOut": "注意點",
+      "bestMatch": "最合拍的類型",
+      "conflictMatch": "容易衝突的類型",
+      "shareOneLiner": "一句話團隊貢獻"
+    },
+    "teamAnalysis": {
+      "title": "🤝 我們團隊工作默契分析",
+      "gradeLabel": "團隊默契等級：{grade}",
+      "barsTitle": "角色構成比例（6格）",
+      "synergyTitle": "構成類型的默契與協同",
+      "missingTitle": "缺失類型的提醒與建議",
+      "prescription": "建議：",
+      "caution": "注意：",
+      "none": "（無）"
+    },
+    "teamLink": {
+      "title": "分享給成員的連結",
+      "hint": "複製下方連結貼到群組。成員依序完成測驗，結果會疊在同一連結上。",
+      "copy": "複製團隊連結 · 更新網址"
+    },
+    "shareMessages": {
+      "startDefault": "團隊工作默契測驗 🤝 12題 · 團隊角色類型",
+      "startKakao": "團隊工作默契測驗 🤝 12題 · 團隊角色類型",
+      "startWechat": "團隊工作默契測驗 🤝 12題 · 團隊角色類型",
+      "startWhatsapp": "團隊工作默契測驗 🤝 12題 · 團隊角色類型",
+      "startTelegram": "團隊工作默契測驗 🤝 12題 · 團隊角色類型",
+      "startLine": "團隊工作默契測驗 🤝 12題 · 團隊角色類型",
+      "resultLine": "我是「{type}」類型 🤝 想分析團隊默契就打開連結一起做吧"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！在 WeChat 貼上即可分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測驗推薦 Top5"
+    },
+    "roleLabels": {
+      "visionary": "願景提出者",
+      "executor": "執行者",
+      "coordinator": "協調者",
+      "analyst": "分析者",
+      "creator": "創造者",
+      "supporter": "支持者"
+    },
+    "report": {
+      "synergy": {
+        "visionary_executor": {
+          "title": "✨ 夢想組合發動",
+          "body": "團隊中既有掌握方向的人，也有負責落地的人。\n\n這種結構接近「先定目標，再真正交付」。\n\n注意：執行一快，細節驗證容易漏掉——若有分析型角色，組合會更穩。"
+        },
+        "coordinator_analyst": {
+          "title": "✨ 平衡組合發動",
+          "body": "感性與理性較均衡，決策不易走極端，也更容易形成大家能接受的結論。\n\n有這一組合的團隊，衝突後往往恢復更快。"
+        },
+        "creator_executor": {
+          "title": "✨ 創意落地組合發動",
+          "body": "出點子的人和把事情做出來的人在同一團隊。\n\n別人還在討論時，你們可能已經在做原型了。"
+        }
+      },
+      "missing": {
+        "visionary": {
+          "title": "⚠️ 缺少方向感",
+          "body": "缺少自然承擔「定方向」的人，團隊可能很努力卻不清楚共同要往哪走。",
+          "prescription": "開會前先對齊一句話：本專案要達成什麼。"
+        },
+        "executor": {
+          "title": "⚠️ 執行力不足",
+          "body": "可能有想法和方向，但把結果做出來的推動力不足。",
+          "prescription": "每次會議結束前明確「誰、在何時前、做什麼」，養成習慣。"
+        },
+        "analyst": {
+          "title": "⚠️ 風險察覺偏弱",
+          "body": "團隊節奏快，但缺少自然發現漏洞與風險的角色。",
+          "prescription": "重大決策前輪流擔任「魔鬼代言人」，主動找反方意見。"
+        },
+        "coordinator": {
+          "title": "⚠️ 衝突後難收尾",
+          "body": "出現摩擦時，可能缺少自然出面協調的人。",
+          "prescription": "注意會上的尷尬沉默，可加一句「有沒有不同看法？」"
+        },
+        "creator": {
+          "title": "⚠️ 創意突破口不足",
+          "body": "卡住時，全新角度可能不容易出現。",
+          "prescription": "每月一次「最離譜點子大會」，無評判頭腦風暴鍛鍊創意。"
+        },
+        "supporter": {
+          "title": "⚠️ 團隊耗竭風險",
+          "body": "偏重結果衝刺時，照顧成員心理能量的角色可能不足。",
+          "prescription": "週會加一項：本週能量 1–10 分？"
+        }
+      },
+      "grade": {
+        "six_roles": {
+          "title": "默契 A+ 全面型團隊 🏆",
+          "body": "六種角色類型齊全，優勢互補空間大，易形成協同。",
+          "caution": "偶爾互換角色，避免固化，有助於整體彈性。"
+        },
+        "five_roles": {
+          "title": "默契 A（尚缺一類角色）",
+          "body": "角色較多元，有意識地補上缺失類型，默契可再升一級。",
+          "caution": ""
+        },
+        "four_roles": {
+          "title": "默契 B+（尚缺兩類角色）",
+          "body": "角色較多元，有意識地補上缺失類型，默契可再升一級。",
+          "caution": ""
+        },
+        "three_balance": {
+          "title": "默契 B 需調平衡 ⚖️",
+          "body": "角色有偏重，現在順利也可能在特定情境暴露弱點。",
+          "caution": "在會上點名缺失角色：「我們缺分析型，這次誰先來頂一下？」"
+        },
+        "two_roles": {
+          "title": "默契 C 建議重構",
+          "body": "角色多樣性偏低。可在議程中輪流加入「漏洞檢查」和「情緒檢查」。",
+          "caution": ""
+        },
+        "one_cluster": {
+          "title": "默契 D 需重整 🚨",
+          "body": "大家角色過於相似，思維方式接近容易產生盲區。",
+          "caution": "定期引入外部視角，縮小盲區。"
+        }
+      }
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube知道你連沒說出口的事。",

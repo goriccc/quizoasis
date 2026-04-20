@@ -72,6 +72,7 @@ const testSlugs = [
   'extreme-quiz',
   'mensa-extreme',
   'phase3-elementary-math-adults-quiz',
+  'phase3-team-work-chemistry-test',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

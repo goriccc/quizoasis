@@ -3280,6 +3280,172 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3TeamWorkChemistryTest": {
+    "leaderShare": {
+      "title": "Chia sẻ liên kết bài test trong nhóm (tiếp sức · các bước)",
+      "body": "Để xem phân tích cả đội (điểm, cơ cấu vai trò, hiệp lực) rõ ràng nhất, hãy làm kiểu tiếp sức: mỗi khi một người xong, đăng liên kết mới từ màn hình kết quả lên nhóm và chuyển cho người tiếp theo.\n\n① Ở màn hình bắt đầu, mục “Làm cùng bạn bè”, sao chép URL trang bài test và gửi vào nhóm.\n\n② Mỗi thành viên mở liên kết, làm hết 12 câu, rồi xem kết quả kiểu vai trò của mình.\n\n③ Ở cuối màn hình kết quả, bấm “Sao chép liên kết nhóm”. Đó là URL mới ghi nhận vai trò mọi người đã làm. Đăng lại trong nhóm hoặc gửi cho người chưa làm. (Lặp lại bước ③ sau mỗi người để nối chuỗi liên kết.)\n\n④ Khi mọi người đã tham gia, mở liên kết được chia sẻ cuối cùng và đọc “Phân tích chemistry làm việc nhóm của chúng ta” (cơ cấu vai trò, hiệp lực, cảnh báo thiếu vai, v.v.).\n\n※ Muốn phân tích cả đội thì phải nối liên kết theo kiểu tiếp sức ở bước ③. Chỉ cần kết quả cá nhân thì dừng ở bước ② là đủ.\n\nLàm cùng trước cuộc họp sẽ dễ phân vai hơn.",
+      "shareHint": "Liên kết đầu tiên chưa có dữ liệu nhóm. Giống tiếp sức—mỗi người xong phải đăng URL mới từ “Sao chép liên kết nhóm” ở màn hình kết quả thì xu hướng cả đội mới được phản ánh đầy đủ."
+    },
+    "teamLinkBanner": "Liên kết này đã gồm kết quả của {count} người. Khi bạn hoàn thành, kết quả sẽ được gộp vào phân tích nhóm bên dưới.",
+    "teamPreview": {
+      "title": "Xem trước team chemistry (từ liên kết)",
+      "description": "Bên dưới là phân tích chỉ với các thành viên đã có trong URL. Xem xong, nhập tên hiển thị rồi bắt đầu bài test—khi hoàn thành, vai trò của bạn được nối vào chuỗi."
+    },
+    "nicknameLabel": "Tên hiển thị trong phân tích nhóm (tuỳ chọn)",
+    "nicknamePlaceholder": "vd: Minh",
+    "defaultNickname": "Thành viên",
+    "startMessage": {
+      "line1": "Đội nhóm cũng có chemistry — và có thể đo được.",
+      "line2": "Cùng một nhóm, vì sao làm việc trôi chảy với người này mà cứ lệch với người kia?",
+      "line3": "Đó không chỉ là tính cách mà là cách các kiểu vai trò trong nhóm kết hợp. Biết mình tự nhiên đảm nhận vai nào sẽ thay đổi teamwork.",
+      "line4": "12 câu hỏi để tìm kiểu vai trò của bạn, rồi gom kết quả mọi người để phân tích chemistry nhóm.",
+      "line5": "Bắt đầu test chemistry nhóm 🤝 Tìm kiểu vai trò của tôi"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Test chemistry làm việc nhóm)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreLine": "Tổng điểm: {score} · 12 câu",
+      "keywords": "Từ khoá",
+      "naturalRoles": "Vai trò bạn tự nhiên đảm nhận",
+      "strength": "Điểm mạnh",
+      "watchOut": "Cần lưu ý",
+      "bestMatch": "Kiểu hợp nhất",
+      "conflictMatch": "Kiểu dễ xung đột",
+      "shareOneLiner": "Một dòng về đóng góp cho nhóm"
+    },
+    "teamAnalysis": {
+      "title": "🤝 Phân tích chemistry làm việc nhóm của chúng ta",
+      "gradeLabel": "Điểm chemistry nhóm: {grade}",
+      "barsTitle": "Tỷ lệ phối vai (6 ô)",
+      "synergyTitle": "Hiệp lực theo cách phối vai",
+      "missingTitle": "Cảnh báo & gợi ý khi thiếu vai",
+      "prescription": "Gợi ý:",
+      "caution": "Lưu ý:",
+      "none": "(không có)"
+    },
+    "teamLink": {
+      "title": "Liên kết chia sẻ với thành viên",
+      "hint": "Sao chép liên kết bên dưới và gửi vào nhóm chat. Mọi người làm lần lượt, kết quả chồng trên cùng một liên kết.",
+      "copy": "Sao chép liên kết nhóm · cập nhật URL"
+    },
+    "shareMessages": {
+      "startDefault": "Test chemistry làm việc nhóm 🤝 12 câu · kiểu vai trò",
+      "startKakao": "Test chemistry làm việc nhóm 🤝 12 câu · kiểu vai trò",
+      "startWechat": "Test chemistry làm việc nhóm 🤝 12 câu · kiểu vai trò",
+      "startWhatsapp": "Test chemistry làm việc nhóm 🤝 12 câu · kiểu vai trò",
+      "startTelegram": "Test chemistry làm việc nhóm 🤝 12 câu · kiểu vai trò",
+      "startLine": "Test chemistry làm việc nhóm 🤝 12 câu · kiểu vai trò",
+      "resultLine": "Mình là kiểu 「{type}」 🤝 Mở link cùng làm để phân tích chemistry nhóm nhé"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự",
+      "popularTestsTop5": "🔥 Top 5 test đang hot"
+    },
+    "roleLabels": {
+      "visionary": "Người định hướng",
+      "executor": "Người thực thi",
+      "coordinator": "Người điều phối",
+      "analyst": "Nhà phân tích",
+      "creator": "Người sáng tạo",
+      "supporter": "Người hỗ trợ"
+    },
+    "report": {
+      "synergy": {
+        "visionary_executor": {
+          "title": "✨ Kích hoạt combo ước mơ",
+          "body": "Có người định hướng và có người thực thi.\n\nCấu trúc gần với “đặt mục tiêu rồi thực sự bàn giao.”\n\nLưu ý: khi tăng tốc, kiểm tra chi tiết dễ sơ suất—vai Analyst làm combo mạnh hơn."
+        },
+        "coordinator_analyst": {
+          "title": "✨ Kích hoạt combo cân bằng",
+          "body": "Lý trí và cảm xúc cân bằng. Quyết định ít chệch cực, kết luận dễ được mọi người chấp nhận.\n\nCặp này thường phục hồi nhanh sau xung đột."
+        },
+        "creator_executor": {
+          "title": "✨ Kích hoạt combo ý tưởng đến sản phẩm",
+          "body": "Người nảy ý và người làm nên cùng một đội.\n\nKhi đội khác còn tranh luận, bạn có thể đã làm prototype."
+        }
+      },
+      "missing": {
+        "visionary": {
+          "title": "⚠️ Thiếu phương hướng",
+          "body": "Không ai tự nhiên chỉ đường. Đội có thể chạy nhanh mà không rõ “đi đâu.”",
+          "prescription": "Trước họp, thống nhất một câu: dự án này cần đạt gì."
+        },
+        "executor": {
+          "title": "⚠️ Động cơ thực thi yếu",
+          "body": "Có ý tưởng và hướng nhưng thiếu lực đẩy để ra kết quả cụ thể.",
+          "prescription": "Kết thúc mỗi cuộc họp bằng “ai làm gì trước khi nào”—thành thói quen."
+        },
+        "analyst": {
+          "title": "⚠️ Phát hiện rủi ro kém",
+          "body": "Đội nhanh nhưng ít người tự nhiên thấy lỗ hổng và rủi ro.",
+          "prescription": "Luân phiên “quỷ biện” trước quyết định lớn—chỉ tìm phản biện cũng giảm rủi ro nhiều."
+        },
+        "coordinator": {
+          "title": "⚠️ Khó hàn gắn sau mâu thuẫn",
+          "body": "Khi cọ xát, có thể không có người trung gian tự nhiên.",
+          "prescription": "Để ý im lặng khó xử trong họp—thêm “ai thấy khác không?”"
+        },
+        "creator": {
+          "title": "⚠️ Ít đột phá sáng tạo",
+          "body": "Khi kẹt, góc hoàn toàn mới khó nổi lên.",
+          "prescription": "Thử hàng tháng “vòng ý tưởng điên nhất”—brainstorm không phán xét."
+        },
+        "supporter": {
+          "title": "⚠️ Nguy cơ kiệt sức",
+          "body": "Đội theo đuổi kết quả nhưng thiếu người giữ năng lượng cảm xúc.",
+          "prescription": "Thêm check-in hàng tuần: “mức năng lượng 1–10 tuần này?”"
+        }
+      },
+      "grade": {
+        "six_roles": {
+          "title": "Chemistry A+ — đội cân bằng 🏆",
+          "body": "Đủ sáu kiểu vai. Điểm mạnh che điểm mù—tiềm năng hiệp lực lớn.",
+          "caution": "Đổi vai thỉnh thoảng để không bị kẹt một kiểu—linh hoạt giúp cả đội."
+        },
+        "five_roles": {
+          "title": "Chemistry A — thiếu một vai",
+          "body": "Vai trò khá đa dạng. Chủ động lấp chỗ trống sẽ nâng chemistry một bậc.",
+          "caution": ""
+        },
+        "four_roles": {
+          "title": "Chemistry B+ — thiếu hai vai",
+          "body": "Vai trò khá đa dạng. Chủ động lấp chỗ trống sẽ nâng chemistry một bậc.",
+          "caution": ""
+        },
+        "three_balance": {
+          "title": "Chemistry B — cần cân bằng ⚖️",
+          "body": "Vai trò lệch. Hiện tại ổn nhưng một số tình huống sẽ lộ điểm yếu.",
+          "caution": "Nêu rõ vai thiếu trong họp: “Không có Analyst—ai đảm nhận lần này?”"
+        },
+        "two_roles": {
+          "title": "Chemistry C — xem lại cấu trúc",
+          "body": "Đa dạng vai thấp. Luân phiên mục như “kiểm tra lỗ hổng” và “kiểm tra cảm xúc.”",
+          "caution": ""
+        },
+        "one_cluster": {
+          "title": "Chemistry D — cần làm lại 🚨",
+          "body": "Mọi người tụ vào vai tương tự. Cùng cách nghĩ tạo điểm mù.",
+          "caution": "Đưa góc nhìn bên ngoài định kỳ để thu hẹp điểm mù."
+        }
+      }
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube biết cả những điều bạn chưa từng nói ra.",

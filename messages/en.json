@@ -3321,6 +3321,172 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3TeamWorkChemistryTest": {
+    "leaderShare": {
+      "title": "Sharing the test link in the group chat (relay · steps)",
+      "body": "To see the full team analysis (grade, role mix, synergy) clearly, use a relay: after each person finishes, post the fresh link from the result screen in the chat and pass it to the next person. That one-by-one handoff is the clearest way.\n\n① On the start screen, under “Share with friends,” copy this test page URL and post it in the group chat.\n\n② Each teammate opens the link, finishes all 12 questions, and sees their own team-role type result.\n\n③ On the result screen, tap “Copy team link” at the bottom. That copies a new URL with everyone who has taken the test so far baked into the address. Post that link again in the chat or send it to teammates who have not done it yet. (Repeat step ③ after each person finishes to keep the chain going.)\n\n④ After everyone has joined, open the last shared link and on the result screen read “Our team work chemistry analysis” (role mix, synergy, missing-role warnings, etc.).\n\n※ For the full team analysis you must relay the link through step ③. If you only want your personal result, stopping after step ② is enough.\n\nDoing this before a meeting makes it easier to align on roles.",
+      "shareHint": "The first link has no team data yet. Like a relay—after each person finishes, post the updated URL from “Copy team link” on the result screen so everyone’s roles are reflected in the analysis."
+    },
+    "teamLinkBanner": "This link already includes results from {count} teammate(s). When you finish, your result is merged into the team analysis below.",
+    "teamPreview": {
+      "title": "Team chemistry preview (from this link)",
+      "description": "Below is the analysis for teammates already in this URL. Add a display name if you like, then start the test—when you finish, your role is added to the chain."
+    },
+    "nicknameLabel": "Display name for team analysis (optional)",
+    "nicknamePlaceholder": "e.g. Alex",
+    "defaultNickname": "Teammate",
+    "startMessage": {
+      "line1": "Teams have chemistry too—and you can measure it.",
+      "line2": "Why does work flow with some teammates and keep missing with others, even on the same team?",
+      "line3": "It is not just personality—it is how team role types combine. Knowing the role you naturally take changes teamwork.",
+      "line4": "Answer 12 questions to find your team role type, then combine everyone’s results to analyze your team’s chemistry.",
+      "line5": "Start the team chemistry test 🤝 Find my team role type"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense ad area (Team work chemistry test)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "scoreLine": "Total score: {score} · out of 12 questions",
+      "keywords": "Keywords",
+      "naturalRoles": "Roles you naturally take",
+      "strength": "Strengths",
+      "watchOut": "Watch out",
+      "bestMatch": "Best-matching type",
+      "conflictMatch": "Types that can clash",
+      "shareOneLiner": "One-line contribution to the team"
+    },
+    "teamAnalysis": {
+      "title": "🤝 Our team work chemistry analysis",
+      "gradeLabel": "Team chemistry grade: {grade}",
+      "barsTitle": "Role mix (6 bars)",
+      "synergyTitle": "Synergy by role mix",
+      "missingTitle": "Warnings & tips for missing roles",
+      "prescription": "Tip:",
+      "caution": "Note:",
+      "none": "(none)"
+    },
+    "teamLink": {
+      "title": "Link to share with teammates",
+      "hint": "Copy the link below and post it in your group chat. Teammates take the test in order, and results stack on the same link.",
+      "copy": "Copy team link · update URL"
+    },
+    "shareMessages": {
+      "startDefault": "Team work chemistry test 🤝 12 questions · team role types",
+      "startKakao": "Team work chemistry test 🤝 12 questions · team role types",
+      "startWechat": "Team work chemistry test 🤝 12 questions · team role types",
+      "startWhatsapp": "Team work chemistry test 🤝 12 questions · team role types",
+      "startTelegram": "Team work chemistry test 🤝 12 questions · team role types",
+      "startLine": "Team work chemistry test 🤝 12 questions · team role types",
+      "resultLine": "I got the 「{type}」 type 🤝 Open the link and take the test together to analyze our team chemistry"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar test picks",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    },
+    "roleLabels": {
+      "visionary": "Visionary",
+      "executor": "Executor",
+      "coordinator": "Coordinator",
+      "analyst": "Analyst",
+      "creator": "Creator",
+      "supporter": "Supporter"
+    },
+    "report": {
+      "synergy": {
+        "visionary_executor": {
+          "title": "✨ Dream combo unlocked",
+          "body": "You have both someone who sets direction and someone who executes.\n\nThis team structure is close to “set a goal and actually ship it.”\n\nNote: as execution speeds up, detailed verification can slip—an Analyst role makes this combo even stronger."
+        },
+        "coordinator_analyst": {
+          "title": "✨ Balance combo unlocked",
+          "body": "Head and heart are balanced. Decisions are less likely to swing to one extreme, and conclusions are easier for everyone to accept.\n\nTeams with this pairing often bounce back faster after conflict."
+        },
+        "creator_executor": {
+          "title": "✨ Idea-to-ship combo unlocked",
+          "body": "Idea people and builders are on the same team.\n\nWhile others are still debating, you may already be prototyping."
+        }
+      },
+      "missing": {
+        "visionary": {
+          "title": "⚠️ No clear direction",
+          "body": "No one is naturally setting direction. The team may be running hard without a shared “where we’re going.”",
+          "prescription": "Before meetings, align on “what this project must achieve” in one short sentence everyone agrees on."
+        },
+        "executor": {
+          "title": "⚠️ Weak execution engine",
+          "body": "There may be ideas and direction, but not enough drive to turn them into concrete output.",
+          "prescription": "End every meeting with explicit “who does what by when”—make it a team habit."
+        },
+        "analyst": {
+          "title": "⚠️ Weaker risk detection",
+          "body": "The team moves fast, but fewer people naturally spot gaps and risks.",
+          "prescription": "Rotate a “devil’s advocate” before big decisions—finding counterarguments alone cuts a lot of risk."
+        },
+        "coordinator": {
+          "title": "⚠️ Harder conflict recovery",
+          "body": "When friction appears, there may be no natural mediator.",
+          "prescription": "Watch for awkward silence in meetings. A quick “anyone see this differently?” routine helps."
+        },
+        "creator": {
+          "title": "⚠️ Few creative breakthroughs",
+          "body": "When stuck, radically new angles may not surface easily.",
+          "prescription": "Try a monthly “wildest idea” round—judgment-free brainstorming trains creative muscle."
+        },
+        "supporter": {
+          "title": "⚠️ Burnout risk",
+          "body": "The team may chase results while under-supporting emotional energy.",
+          "prescription": "Add a weekly check-in: “energy level 1–10 this week?”"
+        }
+      },
+      "grade": {
+        "six_roles": {
+          "title": "Chemistry A+ — well-rounded team 🏆",
+          "body": "All six role types show up. Strengths can cover blind spots—great synergy potential.",
+          "caution": "Swap roles occasionally so no one gets stuck in one lane—flexibility helps the whole team."
+        },
+        "five_roles": {
+          "title": "Chemistry A — one role gap",
+          "body": "Roles are fairly mixed. Consciously filling the missing type can lift team chemistry a notch.",
+          "caution": ""
+        },
+        "four_roles": {
+          "title": "Chemistry B+ — two role gaps",
+          "body": "Roles are fairly mixed. Consciously filling missing types can lift team chemistry a notch.",
+          "caution": ""
+        },
+        "three_balance": {
+          "title": "Chemistry B — balance needed ⚖️",
+          "body": "Roles are skewed. Things may work now, but certain situations will expose weak spots.",
+          "caution": "Name missing roles in meetings: “We don’t have an Analyst—who can play that part this time?”"
+        },
+        "two_roles": {
+          "title": "Chemistry C — revisit structure",
+          "body": "Low role diversity. Alternate meeting items like “gap check” and “emotion check.”",
+          "caution": ""
+        },
+        "one_cluster": {
+          "title": "Chemistry D — needs a reset 🚨",
+          "body": "Everyone clusters in similar roles. Thinking the same way creates blind spots.",
+          "caution": "Bring outside perspectives regularly to shrink blind spots."
+        }
+      }
+    }
+  },
   "phase3YoutubeAlgorithmKnowsTest": {
     "startMessage": {
       "line1": "YouTube knows things you never even said out loud.",

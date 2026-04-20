@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "ko": "팀 프로젝트 초반, 내가 자연스럽게 하는 것은?",
+      "en": "Early in a team project, what do you naturally do first?",
+      "ja": "チームプロジェクトの初期、あなたが自然にやることは？",
+      "zh-CN": "团队项目初期，你最先自然会做的是？",
+      "zh-TW": "團隊專案初期，你最先自然會做的是？",
+      "vi": "Đầu dự án nhóm, bạn tự nhiên làm gì trước?",
+      "id": "Di awal proyek tim, apa yang paling alami kamu lakukan dulu?"
+    },
+    "options": [
+      {
+        "ko": "방향성을 먼저 제시한다. \"이 프로젝트 궁극적 목표는 이거야\"",
+        "en": "I set direction first: “The ultimate goal of this project is…”",
+        "ja": "先に方向性を示す。「このプロジェクトの最終ゴールはこれ」",
+        "zh-CN": "先明确方向：“这个项目的最终目标是……”",
+        "zh-TW": "先講清楚方向：「這個專案的最終目標是……」",
+        "vi": "Tôi nêu hướng trước: “Mục tiêu cuối của dự án này là…”",
+        "id": "Aku yang menetapkan arah dulu: “Tujuan akhir proyek ini adalah…”"
+      },
+      {
+        "ko": "할 일 목록과 일정을 정리한다. 누가 뭘 언제까지 할지를 먼저 잡는다",
+        "en": "I organize the task list and schedule—who does what by when.",
+        "ja": "やることリストとスケジュールを整理する。誰が何をいつまでに、を先に決める。",
+        "zh-CN": "整理任务清单和时间表，先定谁做什么、何时完成。",
+        "zh-TW": "整理任務清單與時程，先釐清誰做什麼、何時完成。",
+        "vi": "Tôi sắp xếp danh việc và lịch—ai làm gì đến khi nào.",
+        "id": "Aku merapikan daftar tugas dan jadwal—siapa mengerjakan apa sampai kapan."
+      },
+      {
+        "ko": "팀 분위기를 살피고 의견을 조율한다. 모두가 납득할 수 있는 방향을 찾는다",
+        "en": "I read the room and mediate—finding a direction everyone can accept.",
+        "ja": "空気を読み意見を調整する。みんなが納得できる方向を探す。",
+        "zh-CN": "观察团队气氛并协调意见，找出大家都能接受的方向。",
+        "zh-TW": "觀察團隊氣氛並協調意見，找出大家都能接受的方向。",
+        "vi": "Tôi đọc không khí và điều phối—tìm hướng mọi người chấp nhận được.",
+        "id": "Aku membaca situasi dan menengahi—mencari arah yang bisa diterima semua orang."
+      },
+      {
+        "ko": "데이터와 자료를 먼저 수집한다. 근거 없이 방향을 정하는 게 불편하다",
+        "en": "I gather data and sources first—deciding without evidence feels wrong.",
+        "ja": "先にデータと資料を集める。根拠なしに決めるのは苦手。",
+        "zh-CN": "先收集数据和资料，没有依据就做决定会让我不舒服。",
+        "zh-TW": "先蒐集資料與數據，沒有依據就做決定會讓我不安。",
+        "vi": "Tôi thu thập dữ liệu trước—quyết định không có căn cứ rất khó chịu.",
+        "id": "Aku kumpulkan data dulu—memutuskan tanpa bukti terasa salah."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "ko": "회의 중 의견 충돌이 생겼을 때 나는?",
+      "en": "When opinions clash in a meeting, I…",
+      "ja": "会議で意見が対立したとき、私は？",
+      "zh-CN": "会议中意见冲突时，我会？",
+      "zh-TW": "會議中意見衝突時，我會？",
+      "vi": "Khi ý kiến xung đột trong họp, tôi…",
+      "id": "Saat pendapat bentrok dalam rapat, aku…"
+    },
+    "options": [
+      {
+        "ko": "내가 생각하는 더 나은 방향을 설득력 있게 제시한다",
+        "en": "I present the better direction I see, with conviction.",
+        "ja": "自分が考えるより良い方向を、説得力を持って示す。",
+        "zh-CN": "有力地说出我认为更好的方向。",
+        "zh-TW": "有說服力地提出我認為更好的方向。",
+        "vi": "Tôi trình bày hướng tốt hơn mình thấy, có thuyết phục.",
+        "id": "Aku menyampaikan arah yang menurutku lebih baik dengan meyakinkan."
+      },
+      {
+        "ko": "충돌보다 빠른 결론이 중요하다. 실행 가능한 방향으로 정리를 돕는다",
+        "en": "Speed over endless debate—I help land something we can execute.",
+        "ja": "対立より結論の速さ。実行できる形にまとめるのを手伝う。",
+        "zh-CN": "比起僵持，更快有结论更重要，我帮忙整理成可执行方向。",
+        "zh-TW": "比起僵持，更快有結論更重要，我幫忙整理成可執行方向。",
+        "vi": "Quan trọng là kết luận nhanh hơn là cãi lâu—giúp chốt hướng làm được.",
+        "id": "Yang penting cepat berkesimpulan, bukan berdebat—bantu arah yang bisa dieksekusi."
+      },
+      {
+        "ko": "양쪽 의견을 모두 들어보고 공통점을 찾아 중재한다",
+        "en": "I hear both sides and mediate by finding common ground.",
+        "ja": "双方の意見を聞き、共通点を見つけて調整する。",
+        "zh-CN": "听完两边意见，找共同点来协调。",
+        "zh-TW": "聽完兩邊意見，找共同點來協調。",
+        "vi": "Tôi nghe cả hai bên và hòa giải bằng điểm chung.",
+        "id": "Aku dengar kedua pihak dan menengahi lewat titik temu."
+      },
+      {
+        "ko": "어느 쪽이 더 논리적으로 타당한지를 데이터로 검증하자고 제안한다",
+        "en": "I suggest checking which side is more logical—with data.",
+        "ja": "どちらが論理的に妥当か、データで検証しようと提案する。",
+        "zh-CN": "提议用数据验证哪一边更站得住脚。",
+        "zh-TW": "提議用資料驗證哪一邊更站得住腳。",
+        "vi": "Tôi đề xuất kiểm chứng bằng dữ liệu xem phía nào hợp lý hơn.",
+        "id": "Aku usulkan verifikasi dengan data sisi mana yang lebih masuk akal."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "ko": "새로운 아이디어를 낼 때 나는?",
+      "en": "When I come up with new ideas, I…",
+      "ja": "新しいアイデアを出すとき、私は？",
+      "zh-CN": "提出新想法时，我会？",
+      "zh-TW": "提出新想法時，我會？",
+      "vi": "Khi nảy ra ý tưởng mới, tôi…",
+      "id": "Saat memunculkan ide baru, aku…"
+    },
+    "options": [
+      {
+        "ko": "큰 그림과 가능성 중심으로 생각한다. 실현 가능성은 나중에",
+        "en": "I think big picture and possibilities—feasibility comes later.",
+        "ja": "大きな絵と可能性から考える。実現性はあとで。",
+        "zh-CN": "从大格局和可能性出发，可行性以后再说。",
+        "zh-TW": "從大格局與可能性出發，可行性以後再說。",
+        "vi": "Tôi nghĩ theo bức tranh lớn và khả năng—khả thi để sau.",
+        "id": "Aku pikirkan gambar besar dan kemungkinan—kelayakan nanti."
+      },
+      {
+        "ko": "실제로 구현할 수 있는 아이디어를 선호한다. 현실적인 게 좋다",
+        "en": "I prefer ideas we can actually ship—realistic beats abstract.",
+        "ja": "実際に実装できるアイデアを好む。現実的なほうがいい。",
+        "zh-CN": "更偏好能落地的想法，现实一点更好。",
+        "zh-TW": "更偏好能落地的想法，現實一點更好。",
+        "vi": "Tôi thích ý tưởng làm được thực tế—thực tế hơn là mơ hồ.",
+        "id": "Aku pilih ide yang bisa dieksekusi—realistis lebih baik."
+      },
+      {
+        "ko": "팀원들의 아이디어를 이어받아 발전시키는 것이 더 자연스럽다",
+        "en": "Building on teammates’ ideas feels more natural to me.",
+        "ja": "メンバーのアイデアを受けて発展させるほうが自然。",
+        "zh-CN": "顺着队友的想法往下发展，对我来说更自然。",
+        "zh-TW": "順著隊友的想法往下發展，對我來說更自然。",
+        "vi": "Phát triển trên ý tưởng của đồng đội tự nhiên hơn với tôi.",
+        "id": "Mengembangkan ide rekan tim terasa lebih alami bagiku."
+      },
+      {
+        "ko": "비슷한 사례나 검증된 방식을 먼저 찾아본 뒤 아이디어를 낸다",
+        "en": "I look for similar cases or proven patterns first, then ideate.",
+        "ja": "類似事例や検証されたやり方を先に探してからアイデアを出す。",
+        "zh-CN": "先找相似案例或已验证的做法，再提出想法。",
+        "zh-TW": "先找相似案例或已驗證的做法，再提出想法。",
+        "vi": "Tôi tìm case tương tự hoặc cách đã kiểm chứng trước, rồi mới nảy ý.",
+        "id": "Aku cari contoh serupa atau pola yang terbukti dulu, baru beride."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "ko": "팀에서 내가 가장 잘한다는 평가를 받는 것은?",
+      "en": "What do people say I’m best at on the team?",
+      "ja": "チームで「一番得意」と言われるのは？",
+      "zh-CN": "在团队里，别人最常说擅长我的是？",
+      "zh-TW": "在團隊裡，別人最常說擅長我的是？",
+      "vi": "Người khác nói tôi giỏi nhất ở điểm nào trong nhóm?",
+      "id": "Orang bilang aku paling jago di hal apa di tim?"
+    },
+    "options": [
+      {
+        "ko": "방향을 잡아주는 것. 갈 길을 모를 때 큰 그림을 보여준다",
+        "en": "Setting direction—when we’re lost, I show the big picture.",
+        "ja": "方向を示すこと。道に迷ったとき大きな絵を見せる。",
+        "zh-CN": "把握方向，迷路时带大家看大图景。",
+        "zh-TW": "把握方向，迷路時帶大家看大圖景。",
+        "vi": "Chỉ hướng—khi lạc, tôi cho thấy bức tranh lớn.",
+        "id": "Menentukan arah—kalau bingung, aku tunjukkan gambar besar."
+      },
+      {
+        "ko": "실행력. 말로만 끝나지 않고 실제로 결과물을 만들어낸다",
+        "en": "Execution—I don’t stop at talk; I ship real outcomes.",
+        "ja": "実行力。口だけで終わらず、実際に成果を出す。",
+        "zh-CN": "执行力，不只停留在嘴上，能做出结果。",
+        "zh-TW": "執行力，不只停留在嘴上，能做出結果。",
+        "vi": "Thực thi—không chỉ nói, mà tạo ra kết quả thật.",
+        "id": "Eksekusi—tidak cuma bicara, menghasilkan output nyata."
+      },
+      {
+        "ko": "분위기 관리. 팀이 흔들릴 때 중심을 잡아준다",
+        "en": "Managing the vibe—I steady the team when it wobbles.",
+        "ja": "雰囲気管理。チームが揺れたとき中心を保つ。",
+        "zh-CN": "稳住气氛，团队动摇时把大家拉回来。",
+        "zh-TW": "穩住氣氛，團隊動搖時把大家拉回來。",
+        "vi": "Giữ nhịp cảm xúc—khi nhóm lung lay, tôi giữ trục.",
+        "id": "Mengatur suasana—saat tim goyah, aku menahan pusat."
+      },
+      {
+        "ko": "꼼꼼함. 놓친 부분이나 논리적 오류를 잡아낸다",
+        "en": "Thoroughness—I catch gaps and logical slips.",
+        "ja": "細かさ。抜けや論理のミスを拾う。",
+        "zh-CN": "细致，能抓住遗漏和逻辑漏洞。",
+        "zh-TW": "細緻，能抓住遺漏與邏輯漏洞。",
+        "vi": "Tỉ mỉ—bắt chỗ sót và lỗi logic.",
+        "id": "Teliti—menangkap celah dan kesalahan logika."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "ko": "마감이 촉박할 때 나는?",
+      "en": "When the deadline is tight, I…",
+      "ja": "締切が迫っているとき、私は？",
+      "zh-CN": "截止在即时，我会？",
+      "zh-TW": "截止在即時，我會？",
+      "vi": "Khi sát deadline, tôi…",
+      "id": "Saat deadline mepet, aku…"
+    },
+    "options": [
+      {
+        "ko": "우선순위를 재설정한다. 핵심만 남기고 나머지를 버린다",
+        "en": "I reset priorities—keep the core, drop the rest.",
+        "ja": "優先順位を組み直す。核心だけ残し、あとは捨てる。",
+        "zh-CN": "重排优先级，只留核心，其余砍掉。",
+        "zh-TW": "重排優先級，只留核心，其餘砍掉。",
+        "vi": "Tôi sắp xếp lại ưu tiên—giữ lõi, bỏ phần còn lại.",
+        "id": "Aku reset prioritas—inti tetap, sisanya buang."
+      },
+      {
+        "ko": "가장 먼저 TO-DO를 쪼개고 각자 역할을 재분배한다",
+        "en": "I break work into TODOs first and reassign roles.",
+        "ja": "まずTODOに分解し、役割を振り直す。",
+        "zh-CN": "先把任务拆成待办并重新分工。",
+        "zh-TW": "先把任務拆成待辦並重新分工。",
+        "vi": "Tôi chia TODO trước và phân lại vai trò.",
+        "id": "Aku pecah jadi TODO dulu dan bagi ulang peran."
+      },
+      {
+        "ko": "팀원들의 상태를 살피고 지친 사람을 먼저 챙긴다",
+        "en": "I check how people are doing and support whoever is drained.",
+        "ja": "メンバーの状態を見て、疲れている人を先にケアする。",
+        "zh-CN": "关注大家状态，先照顾最累的人。",
+        "zh-TW": "關注大家狀態，先照顧最累的人。",
+        "vi": "Tôi xem sức mọi người, ưu tiên người kiệt sức.",
+        "id": "Aku cek kondisi tim, urus dulu yang paling lelah."
+      },
+      {
+        "ko": "현재 진행 상황을 점검하고 리스크를 계산한다",
+        "en": "I review progress and calculate risks.",
+        "ja": "進捗を点検し、リスクを計算する。",
+        "zh-CN": "检查进度并评估风险。",
+        "zh-TW": "檢查進度並評估風險。",
+        "vi": "Tôi rà tiến độ và tính rủi ro.",
+        "id": "Aku tinjau progres dan hitung risiko."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "ko": "팀에서 내가 가장 불편한 순간은?",
+      "en": "The team moment I find most uncomfortable is…",
+      "ja": "チームで一番居心地が悪いのは？",
+      "zh-CN": "在团队里最让我不舒服的时刻是？",
+      "zh-TW": "在團隊裡最讓我不舒服的時刻是？",
+      "vi": "Khoảnh khắc khiến tôi khó chịu nhất trong nhóm là…",
+      "id": "Momen paling tidak nyaman bagiku di tim adalah…"
+    },
+    "options": [
+      {
+        "ko": "팀이 비전 없이 그냥 실행만 하고 있을 때",
+        "en": "We’re executing hard with no shared vision.",
+        "ja": "ビジョンなしに走り続けているとき。",
+        "zh-CN": "没有共同愿景却一直在执行。",
+        "zh-TW": "沒有共同願景卻一直在執行。",
+        "vi": "Cả nhóm chạy mà không có tầm nhìn chung.",
+        "id": "Tim jalan tanpa visi bersama."
+      },
+      {
+        "ko": "계획이 없거나 누가 뭘 해야 하는지 불명확할 때",
+        "en": "There’s no plan—or it’s unclear who owns what.",
+        "ja": "計画がない、誰が何をするか不明なとき。",
+        "zh-CN": "没有计划，或不清楚谁负责什么。",
+        "zh-TW": "沒有計畫，或不清楚誰負責什麼。",
+        "vi": "Không có kế hoạch hoặc không rõ ai làm gì.",
+        "id": "Tanpa rencana atau tidak jelas siapa kerjakan apa."
+      },
+      {
+        "ko": "팀 내 갈등이 방치되거나 분위기가 싸늘할 때",
+        "en": "Conflict is ignored or the mood turns icy.",
+        "ja": "対立が放置される、空気が冷たいとき。",
+        "zh-CN": "冲突被晾着，或气氛变冷。",
+        "zh-TW": "衝突被晾著，或氣氛變冷。",
+        "vi": "Mâu thuẫn bị bỏ mặc hoặc không khí lạnh ngắt.",
+        "id": "Konflik dibiarkan atau suasana dingin."
+      },
+      {
+        "ko": "충분한 검토 없이 감으로 결정이 내려질 때",
+        "en": "Decisions are made on gut feel without enough review.",
+        "ja": "十分な検討なしに勘で決まるとき。",
+        "zh-CN": "没充分讨论就凭感觉拍板。",
+        "zh-TW": "沒充分討論就憑感覺拍板。",
+        "vi": "Quyết định theo cảm tính mà không rà soát đủ.",
+        "id": "Keputusan pakai feeling tanpa review cukup."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "ko": "팀 발표를 앞두고 나는?",
+      "en": "Before a team presentation, I…",
+      "ja": "チーム発表の前、私は？",
+      "zh-CN": "团队展示前，我会？",
+      "zh-TW": "團隊展示前，我會？",
+      "vi": "Trước buổi thuyết trình nhóm, tôi…",
+      "id": "Sebelum presentasi tim, aku…"
+    },
+    "options": [
+      {
+        "ko": "발표의 스토리라인과 메시지를 구성한다",
+        "en": "I shape the storyline and core message.",
+        "ja": "発表のストーリーラインとメッセージを組み立てる。",
+        "zh-CN": "搭建叙述主线和核心信息。",
+        "zh-TW": "搭建敘述主線與核心訊息。",
+        "vi": "Tôi dựng cốt truyện và thông điệp chính.",
+        "id": "Aku susun alur cerita dan pesan inti."
+      },
+      {
+        "ko": "발표 자료와 리허설 일정을 챙긴다",
+        "en": "I handle decks and rehearsal timing.",
+        "ja": "資料とリハのスケジュールを整える。",
+        "zh-CN": "负责材料和彩排时间安排。",
+        "zh-TW": "負責材料與彩排時間安排。",
+        "vi": "Tôi lo slide và lịch tập dượt.",
+        "id": "Aku urus materi dan jadwal latihan."
+      },
+      {
+        "ko": "발표자가 긴장하지 않도록 분위기를 만든다",
+        "en": "I set a tone so the presenter feels less nervous.",
+        "ja": "発表者が緊張しすぎないよう雰囲気を作る。",
+        "zh-CN": "营造气氛，让主讲人不那么紧张。",
+        "zh-TW": "營造氣氛，讓主講人不那麼緊張。",
+        "vi": "Tôi tạo không khí để người trình bày đỡ căng.",
+        "id": "Aku ciptakan suasana agar presenter tidak terlalu tegang."
+      },
+      {
+        "ko": "예상 질문을 뽑고 논리적 빈틈을 보완한다",
+        "en": "I list likely questions and patch logical gaps.",
+        "ja": "想定質問を出し、論理の穴を埋める。",
+        "zh-CN": "列出可能被问的问题，补上逻辑漏洞。",
+        "zh-TW": "列出可能被問的問題，補上邏輯漏洞。",
+        "vi": "Tôi liệt kê câu hỏi dự kiến và lấp lỗ hổng logic.",
+        "id": "Aku daftar pertanyaan yang mungkin dan tutup celah logika."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "ko": "팀원 중 한 명이 힘들어 보일 때 나는?",
+      "en": "When a teammate looks burned out, I…",
+      "ja": "メンバーの一人がしんどそうなとき、私は？",
+      "zh-CN": "有队友看起来很累时，我会？",
+      "zh-TW": "有隊友看起來很累時，我會？",
+      "vi": "Khi một đồng đội trông kiệt sức, tôi…",
+      "id": "Saat rekan tim terlihat kelelahan, aku…"
+    },
+    "options": [
+      {
+        "ko": "업무 조율이 필요한지 확인하고 구조적으로 해결하려 한다",
+        "en": "I check if workload needs restructuring and fix it systematically.",
+        "ja": "業務の組み替えが必要か確認し、構造的に直す。",
+        "zh-CN": "看是否需要调整分工，并系统性地解决。",
+        "zh-TW": "看是否需要調整分工，並系統性地解決。",
+        "vi": "Tôi xem có cần sắp xếp lại việc và xử lý có hệ thống.",
+        "id": "Aku cek apakah perlu restruktur kerja dan perbaiki sistematis."
+      },
+      {
+        "ko": "그 사람 몫의 일을 대신 처리할 수 있는지 확인한다",
+        "en": "I see if I can take on part of their work.",
+        "ja": "その人の分を肩代わりできるか確認する。",
+        "zh-CN": "看能不能分担一部分活。",
+        "zh-TW": "看能不能分擔一部分活。",
+        "vi": "Tôi xem có thể gánh bớt phần việc của họ không.",
+        "id": "Aku cek bisa ambil alih sebagian tugas mereka tidak."
+      },
+      {
+        "ko": "먼저 말을 걸어 어떤 도움이 필요한지 들어준다",
+        "en": "I reach out first and listen to what help they need.",
+        "ja": "先に声をかけ、どんな助けが必要か聞く。",
+        "zh-CN": "先开口问，听对方需要什么帮助。",
+        "zh-TW": "先開口問，聽對方需要什麼幫助。",
+        "vi": "Tôi chủ động hỏi và lắng nghe họ cần gì.",
+        "id": "Aku ajak bicara dulu dan dengar bantuan apa yang dibutuhkan."
+      },
+      {
+        "ko": "힘들어진 원인이 무엇인지 파악하고 재발 방지를 생각한다",
+        "en": "I dig into causes and think how to prevent a repeat.",
+        "ja": "原因を突き止め、再発防止を考える。",
+        "zh-CN": "弄清原因，并想怎么避免再发生。",
+        "zh-TW": "弄清原因，並想怎麼避免再發生。",
+        "vi": "Tôi tìm nguyên nhân và nghĩ cách không để lặp lại.",
+        "id": "Aku cari penyebab dan cara mencegah terulang."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "ko": "나는 팀에서 주로 어떤 역할을 맡게 되나요?",
+      "en": "What role do I usually take on the team?",
+      "ja": "チームで主にどんな役割を担う？",
+      "zh-CN": "我在团队里通常承担什么角色？",
+      "zh-TW": "我在團隊裡通常承擔什麼角色？",
+      "vi": "Tôi thường đảm nhận vai gì trong nhóm?",
+      "id": "Biasanya aku ambil peran apa di tim?"
+    },
+    "options": [
+      {
+        "ko": "방향 제시, 기획 총괄, 비전 공유",
+        "en": "Direction, planning lead, sharing vision.",
+        "ja": "方向提示、企画統括、ビジョン共有。",
+        "zh-CN": "定方向、统筹策划、分享愿景。",
+        "zh-TW": "定方向、統籌策劃、分享願景。",
+        "vi": "Chỉ hướng, dẫn kế hoạch, chia sẻ tầm nhìn.",
+        "id": "Arah, memimpin perencanaan, berbagi visi."
+      },
+      {
+        "ko": "일정 관리, 업무 분배, 실행 점검",
+        "en": "Schedules, assignments, execution checks.",
+        "ja": "スケジュール、タスク配分、実行確認。",
+        "zh-CN": "排期、分活、检查执行。",
+        "zh-TW": "排期、分活、檢查執行。",
+        "vi": "Lịch trình, chia việc, kiểm tra thực thi.",
+        "id": "Jadwal, bagi tugas, cek eksekusi."
+      },
+      {
+        "ko": "의견 조율, 분위기 관리, 소통 연결",
+        "en": "Mediation, vibe, connecting communication.",
+        "ja": "意見調整、雰囲気管理、コミュニケーションの橋渡し。",
+        "zh-CN": "协调意见、管气氛、串沟通。",
+        "zh-TW": "協調意見、管氣氛、串溝通。",
+        "vi": "Điều phối ý kiến, giữ nhịp, kết nối giao tiếp.",
+        "id": "Menengahi, jaga suasana, sambungkan komunikasi."
+      },
+      {
+        "ko": "자료 조사, 논리 검증, 리스크 분석",
+        "en": "Research, logic checks, risk analysis.",
+        "ja": "リサーチ、論理検証、リスク分析。",
+        "zh-CN": "查资料、验逻辑、做风险分析。",
+        "zh-TW": "查資料、驗邏輯、做風險分析。",
+        "vi": "Nghiên cứu, kiểm logic, phân tích rủi ro.",
+        "id": "Riset, cek logika, analisis risiko."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "ko": "회의가 끝난 후 나는?",
+      "en": "After a meeting, I…",
+      "ja": "会議のあと、私は？",
+      "zh-CN": "会议结束后，我会？",
+      "zh-TW": "會議結束後，我會？",
+      "vi": "Sau cuộc họp, tôi…",
+      "id": "Setelah rapat, aku…"
+    },
+    "options": [
+      {
+        "ko": "이번 논의가 전체 방향성에 맞는지 다시 생각해본다",
+        "en": "I reflect on whether the discussion fits our overall direction.",
+        "ja": "今回の議論が全体の方向に合っているか考え直す。",
+        "zh-CN": "回想这次讨论是否符合整体方向。",
+        "zh-TW": "回想這次討論是否符合整體方向。",
+        "vi": "Tôi xem lại thảo luận có khớp hướng tổng thể không.",
+        "id": "Aku renungkan apakah diskusi selaras arah besar."
+      },
+      {
+        "ko": "결정된 내용을 정리하고 다음 할 일 목록을 만든다",
+        "en": "I summarize decisions and build the next task list.",
+        "ja": "決定事項を整理し、次のToDoを作る。",
+        "zh-CN": "整理决议并列出下一步待办。",
+        "zh-TW": "整理決議並列出下一步待辦。",
+        "vi": "Tôi tóm tắt quyết định và lập danh việc tiếp theo.",
+        "id": "Aku rangkum keputusan dan buat daftar tugas berikutnya."
+      },
+      {
+        "ko": "회의 분위기가 어땠는지, 불편한 사람은 없었는지 돌아본다",
+        "en": "I think back on the tone and whether anyone seemed uneasy.",
+        "ja": "会議の空気は？誰かが居心地悪くなかったか振り返る。",
+        "zh-CN": "回想会议气氛，有没有人显得不自在。",
+        "zh-TW": "回想會議氣氛，有沒有人顯得不自在。",
+        "vi": "Tôi nhớ lại không khí và xem ai có khó chịu không.",
+        "id": "Aku ingat suasana dan apakah ada yang tidak nyaman."
+      },
+      {
+        "ko": "결론이 논리적으로 타당한지, 빠진 변수는 없는지 검토한다",
+        "en": "I check if conclusions are sound and what variables we missed.",
+        "ja": "結論は論理的か、抜けた変数はないか確認する。",
+        "zh-CN": "检查结论是否站得住脚，有没有漏变量。",
+        "zh-TW": "檢查結論是否站得住腳，有沒有漏變數。",
+        "vi": "Tôi xem kết luận có logic và còn thiếu biến nào không.",
+        "id": "Aku cek apakah kesimpulan masuk akal dan variabel yang terlewat."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "ko": "나와 가장 잘 맞는 팀원 유형은?",
+      "en": "Which teammate type fits me best?",
+      "ja": "自分と一番相性がいいメンバータイプは？",
+      "zh-CN": "和哪种类型的队友最合拍？",
+      "zh-TW": "和哪種類型的隊友最合拍？",
+      "vi": "Kiểu đồng đội nào hợp với tôi nhất?",
+      "id": "Tipe rekan tim mana yang paling cocok denganku?"
+    },
+    "options": [
+      {
+        "ko": "내 아이디어를 실제로 구현해주는 실행력 있는 사람",
+        "en": "Someone with execution power who ships my ideas.",
+        "ja": "自分のアイデアを現実にしてくれる実行力の人。",
+        "zh-CN": "能把我的想法落地、执行力强的人。",
+        "zh-TW": "能把我的想法落地、執行力強的人。",
+        "vi": "Người có khả năng thực thi, biến ý tôi thành hiện thực.",
+        "id": "Orang berdaya eksekusi yang mewujudkan idemu."
+      },
+      {
+        "ko": "큰 방향을 제시해주는 사람. 나는 그 방향대로 빈틈없이 실행한다",
+        "en": "Someone who sets direction—I execute their plan thoroughly.",
+        "ja": "大きな方向を示す人。私はその方向に隙なく実行する。",
+        "zh-CN": "给大方向的人，我按那个方向稳稳执行。",
+        "zh-TW": "給大方向的人，我依那個方向穩穩執行。",
+        "vi": "Người chỉ hướng lớn—tôi thực thi kỹ theo hướng đó.",
+        "id": "Yang menentukan arah besar—aku eksekusi tanpa celah."
+      },
+      {
+        "ko": "논리와 감성 어느 쪽으로도 치우치지 않는 균형 잡힌 사람",
+        "en": "Someone balanced—not only logic, not only emotion.",
+        "ja": "論理にも感情にも偏らないバランスの人。",
+        "zh-CN": "理性和感性都平衡的人。",
+        "zh-TW": "理性和感性都平衡的人。",
+        "vi": "Người cân bằng, không lệch hẳn về lý hay cảm.",
+        "id": "Orang seimbang, tidak miring ke logika atau emosi saja."
+      },
+      {
+        "ko": "아이디어는 많지만 검증이 약한 사람. 내가 논리로 보완해준다",
+        "en": "Lots of ideas but weak validation—I shore it up with logic.",
+        "ja": "アイデアは多いが検証が弱い人。私が論理で補う。",
+        "zh-CN": "想法多但验证弱的人，我用逻辑补上。",
+        "zh-TW": "想法多但驗證弱的人，我用邏輯補上。",
+        "vi": "Nhiều ý nhưng kiểm chứng yếu—tôi bổ sung bằng lý.",
+        "id": "Banyak ide tapi validasi lemah—aku tambal dengan logika."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "ko": "내가 팀에 기여할 수 있는 가장 큰 가치는?",
+      "en": "The biggest value I bring to the team is…",
+      "ja": "チームに貢献できる最大の価値は？",
+      "zh-CN": "我能给团队带来的最大价值是？",
+      "zh-TW": "我能給團隊帶來的最大價值是？",
+      "vi": "Giá trị lớn nhất tôi mang lại cho nhóm là…",
+      "id": "Nilai terbesar yang bisa kuberikan ke tim adalah…"
+    },
+    "options": [
+      {
+        "ko": "팀이 나아갈 방향을 밝혀주는 것",
+        "en": "Lighting the direction we should go.",
+        "ja": "進むべき方向を照らすこと。",
+        "zh-CN": "照亮团队要去的方向。",
+        "zh-TW": "照亮團隊要去的方向。",
+        "vi": "Soi sáng hướng đi của nhóm.",
+        "id": "Menyoroti arah yang harus dituju tim."
+      },
+      {
+        "ko": "아이디어를 실제 결과물로 만들어내는 것",
+        "en": "Turning ideas into real deliverables.",
+        "ja": "アイデアを実際の成果にすること。",
+        "zh-CN": "把想法变成实实在在的成果。",
+        "zh-TW": "把想法變成實實在在的成果。",
+        "vi": "Biến ý tưởng thành sản phẩm thật.",
+        "id": "Mengubah ide menjadi hasil nyata."
+      },
+      {
+        "ko": "팀원들이 하나로 움직이도록 연결해주는 것",
+        "en": "Connecting people so we move as one.",
+        "ja": "メンバーをつなぎ、一つに動かすこと。",
+        "zh-CN": "把大家连在一起，一起行动。",
+        "zh-TW": "把大家連在一起，一起行動。",
+        "vi": "Kết nối mọi người để cùng một nhịp.",
+        "id": "Menyambungkan orang agar bergerak satu arah."
+      },
+      {
+        "ko": "빈틈없는 분석으로 팀의 판단을 정확하게 만드는 것",
+        "en": "Making team decisions sharper with solid analysis.",
+        "ja": "抜けのない分析でチームの判断を正確にすること。",
+        "zh-CN": "用扎实的分析让团队判断更准。",
+        "zh-TW": "用紮實的分析讓團隊判斷更準。",
+        "vi": "Phân tích chặt để quyết định nhóm chính xác hơn.",
+        "id": "Analisis teliti agar keputusan tim lebih tepat."
+      }
+    ]
+  }
+]

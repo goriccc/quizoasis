@@ -134,6 +134,10 @@ import {
   phase3ElementaryMathAdultsQuizResults,
 } from '@/lib/phase3ElementaryMathAdultsQuizData';
 import {
+  phase3TeamWorkChemistryQuestions,
+  phase3TeamWorkChemistryResults,
+} from '@/lib/phase3TeamWorkChemistryData';
+import {
   phase3LoveRedFlagFinderQuestions,
   phase3LoveRedFlagFinderResults,
 } from '@/lib/phase3LoveRedFlagFinderData';
@@ -427,6 +431,10 @@ const Phase3JpIndexPreciseMeasurementTestClient = dynamic(
 );
 const Phase3ElementaryMathAdultsQuizTestClient = dynamic(
   () => import('@/components/Phase3ElementaryMathAdultsQuizTestClient'),
+  { ssr: false }
+);
+const Phase3TeamWorkChemistryTestClient = dynamic(
+  () => import('@/components/Phase3TeamWorkChemistryTestClient'),
   { ssr: false }
 );
 const Phase3LoveRedFlagFinderTestClient = dynamic(
@@ -859,6 +867,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['關係', '友情', '摯友'],
         vi: ['quan hệ', 'tình bạn', 'bạn thân'],
         id: ['hubungan', 'persahabatan', 'sahabat'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-team-work-chemistry-test') {
+    test = {
+      slug: 'phase3-team-work-chemistry-test',
+      title: {
+        ko: '우리 팀 워크 케미 테스트',
+        en: 'Our Team Work Chemistry Test',
+        ja: '私たちのチームワーク相性テスト',
+        'zh-CN': '我们团队默契测试',
+        'zh-TW': '我們團隊默契測試',
+        vi: 'Bài test team chemistry của chúng ta',
+        id: 'Tes chemistry kerja tim kita',
+      },
+      description: {
+        ko: '12문항으로 나의 팀 역할 유형을 찾고, 팀원 결과를 모으면 팀 케미·시너지·주의점이 분석됩니다. #팀워크 #직장 #협업',
+        en: '12 questions to find your team role type; combine teammates’ results for chemistry, synergy, and watch-outs. #teamwork #workplace #collab',
+        ja: '12問でチーム役割タイプを診断。メンバー結果を集めるとケミ・シナジーが分析。#チームワーク #職場',
+        'zh-CN': '12 题找到你的团队角色类型；汇总成员结果可看默契与协同。#团队 #职场 #协作',
+        'zh-TW': '12 題找到你的團隊角色類型；彙整成員結果可看默契與協同。#團隊 #職場 #協作',
+        vi: '12 câu tìm vai trò nhóm; gom kết quả để xem chemistry & synergy. #teamwork #công sở',
+        id: '12 soal cari peran tim; kumpulkan hasil untuk chemistry & sinergi. #teamwork #kantor',
+      },
+      thumbnail: 'p3_test_team_work_chemistry.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['팀워크', '직장', '협업'],
+        en: ['Teamwork', 'Workplace', 'Collaboration'],
+        ja: ['チームワーク', '職場', '協業'],
+        'zh-CN': ['团队', '职场', '协作'],
+        'zh-TW': ['團隊', '職場', '協作'],
+        vi: ['Teamwork', 'Công sở', 'Hợp tác'],
+        id: ['Teamwork', 'Kantor', 'Kolaborasi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -2154,6 +2199,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['數學', '測驗', '小學', '腦力', '自尊'],
         vi: ['Toán', 'Quiz', 'Tiểu học', 'Trí não', 'Tự tôn'],
         id: ['Matematika', 'Quiz', 'SD', 'Otak', 'Ego'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-team-work-chemistry-test') {
+    test = {
+      slug: 'phase3-team-work-chemistry-test',
+      title: {
+        ko: '우리 팀 워크 케미 테스트',
+        en: 'Our Team Work Chemistry Test',
+        ja: '私たちのチームワーク相性テスト',
+        'zh-CN': '我们团队默契测试',
+        'zh-TW': '我們團隊默契測試',
+        vi: 'Bài test team chemistry của chúng ta',
+        id: 'Tes chemistry kerja tim kita',
+      },
+      description: {
+        ko: '12문항으로 나의 팀 역할 유형을 찾고, 팀원 결과를 모으면 팀 케미·시너지·주의점이 분석됩니다. #팀워크 #직장 #협업',
+        en: '12 questions to find your team role type; combine teammates’ results for chemistry, synergy, and watch-outs. #teamwork #workplace #collab',
+        ja: '12問でチーム役割タイプを診断。メンバー結果を集めるとケミ・シナジーが分析。#チームワーク #職場',
+        'zh-CN': '12 题找到你的团队角色类型；汇总成员结果可看默契与协同。#团队 #职场 #协作',
+        'zh-TW': '12 題找到你的團隊角色類型；彙整成員結果可看默契與協同。#團隊 #職場 #協作',
+        vi: '12 câu tìm vai trò nhóm; gom kết quả để xem chemistry & synergy. #teamwork #công sở',
+        id: '12 soal cari peran tim; kumpulkan hasil untuk chemistry & sinergi. #teamwork #kantor',
+      },
+      thumbnail: 'p3_test_team_work_chemistry.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['팀워크', '직장', '협업'],
+        en: ['Teamwork', 'Workplace', 'Collaboration'],
+        ja: ['チームワーク', '職場', '協業'],
+        'zh-CN': ['团队', '职场', '协作'],
+        'zh-TW': ['團隊', '職場', '協作'],
+        vi: ['Teamwork', 'Công sở', 'Hợp tác'],
+        id: ['Teamwork', 'Kantor', 'Kolaborasi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4599,6 +4681,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3ElementaryMathAdultsQuizQuestions}
           results={phase3ElementaryMathAdultsQuizResults}
           questionCount={phase3ElementaryMathAdultsQuizQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-team-work-chemistry-test') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-team-work-chemistry-test',
+      title: {
+        ko: '우리 팀 워크 케미 테스트',
+        en: 'Our Team Work Chemistry Test',
+        ja: '私たちのチームワーク相性テスト',
+        'zh-CN': '我们团队默契测试',
+        'zh-TW': '我們團隊默契測試',
+        vi: 'Bài test team chemistry của chúng ta',
+        id: 'Tes chemistry kerja tim kita',
+      },
+      description: {
+        ko: '12문항으로 나의 팀 역할 유형을 찾고, 팀원 결과를 모으면 팀 케미·시너지·주의점이 분석됩니다. #팀워크 #직장 #협업',
+        en: '12 questions to find your team role type; combine teammates’ results for chemistry, synergy, and watch-outs. #teamwork #workplace #collab',
+        ja: '12問でチーム役割タイプを診断。メンバー結果を集めるとケミ・シナジーが分析。#チームワーク #職場',
+        'zh-CN': '12 题找到你的团队角色类型；汇总成员结果可看默契与协同。#团队 #职场 #协作',
+        'zh-TW': '12 題找到你的團隊角色類型；彙整成員結果可看默契與協同。#團隊 #職場 #協作',
+        vi: '12 câu tìm vai trò nhóm; gom kết quả để xem chemistry & synergy. #teamwork #công sở',
+        id: '12 soal cari peran tim; kumpulkan hasil untuk chemistry & sinergi. #teamwork #kantor',
+      },
+      thumbnail: 'p3_test_team_work_chemistry.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['팀워크', '직장', '협업'],
+        en: ['Teamwork', 'Workplace', 'Collaboration'],
+        ja: ['チームワーク', '職場', '協業'],
+        'zh-CN': ['团队', '职场', '协作'],
+        'zh-TW': ['團隊', '職場', '協作'],
+        vi: ['Teamwork', 'Công sở', 'Hợp tác'],
+        id: ['Teamwork', 'Kantor', 'Kolaborasi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3TeamWorkChemistryTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3TeamWorkChemistryQuestions}
+          results={phase3TeamWorkChemistryResults}
+          questionCount={phase3TeamWorkChemistryQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

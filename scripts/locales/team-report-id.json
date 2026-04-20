@@ -1,0 +1,80 @@
+{
+  "synergy": {
+    "visionary_executor": {
+      "title": "✨ Kombo mimpi aktif",
+      "body": "Ada yang menentukan arah dan ada yang mengeksekusi.\n\nStruktur ini mirip “tetapkan tujuan lalu benar-benar mengirim hasil.”\n\nCatatan: saat kecepatan naik, verifikasi detail bisa terlewat—peran Analyst membuat kombo ini lebih kuat."
+    },
+    "coordinator_analyst": {
+      "title": "✨ Kombo keseimbangan aktif",
+      "body": "Kepala dan hati seimbang. Keputusan kurang condong ke satu ekstrem, kesimpulan lebih mudah diterima semua.\n\nTim dengan pasangan ini sering pulih lebih cepat setelah konflik."
+    },
+    "creator_executor": {
+      "title": "✨ Kombo ide ke pengiriman aktif",
+      "body": "Pembuat ide dan pelaksana ada di tim yang sama.\n\nSementara tim lain masih berdebat, Anda mungkin sudah membuat prototipe."
+    }
+  },
+  "missing": {
+    "visionary": {
+      "title": "⚠️ Arah tidak jelas",
+      "body": "Tidak ada yang secara alami menetapkan arah. Tim bisa sibuk tanpa “kemana kita pergi.”",
+      "prescription": "Sebelum rapat, selaraskan satu kalimat: apa yang harus dicapai proyek ini."
+    },
+    "executor": {
+      "title": "⚠️ Mesin eksekusi lemah",
+      "body": "Ada ide dan arah, tapi kurang dorongan untuk menghasilkan output nyata.",
+      "prescription": "Akhiri setiap rapat dengan “siapa melakukan apa sebelum kapan”—jadikan kebiasaan."
+    },
+    "analyst": {
+      "title": "⚠️ Deteksi risiko lebih lemah",
+      "body": "Tim bergerak cepat, tapi lebih sedikit yang melihat celah dan risiko.",
+      "prescription": "Gilir peran “advocatus diaboli” sebelum keputusan besar—mencari sanggahan sudah mengurangi risiko."
+    },
+    "coordinator": {
+      "title": "⚠️ Pemulihan konflik lebih sulit",
+      "body": "Saat gesekan muncul, mungkin tidak ada mediator alami.",
+      "prescription": "Perhatikan hening canggung di rapat—tambahkan “ada yang melihat berbeda?”"
+    },
+    "creator": {
+      "title": "⚠️ Sedikit terobosan kreatif",
+      "body": "Saat macet, sudut baru mungkin sulit muncul.",
+      "prescription": "Coba bulanan “ide paling liar”—brainstorming tanpa penilaian melatih otot kreatif."
+    },
+    "supporter": {
+      "title": "⚠️ Risiko kelelahan tim",
+      "body": "Tim mengejar hasil sambil kurang mendukung energi emosional anggota.",
+      "prescription": "Tambah check-in mingguan: “tingkat energi 1–10 minggu ini?”"
+    }
+  },
+  "grade": {
+    "six_roles": {
+      "title": "Kimia A+ — tim seimbang 🏆",
+      "body": "Enam tipe peran muncul. Kekuatan bisa menutup titik buta—potensi sinergi besar.",
+      "caution": "Sesekali tukar peran agar tidak terjebak satu jalur—fleksibilitas membantu seluruh tim."
+    },
+    "five_roles": {
+      "title": "Kimia A — satu celah peran",
+      "body": "Peran cukup beragam. Mengisi tipe yang kurang bisa menaikkan chemistry satu tingkat.",
+      "caution": ""
+    },
+    "four_roles": {
+      "title": "Kimia B+ — dua celah peran",
+      "body": "Peran cukup beragam. Mengisi tipe yang kurang bisa menaikkan chemistry satu tingkat.",
+      "caution": ""
+    },
+    "three_balance": {
+      "title": "Kimia B — perlu keseimbangan ⚖️",
+      "body": "Peran miring. Sekarang mungkin lancar, tapi situasi tertentu akan memperlihatkan titik lemah.",
+      "caution": "Sebutkan peran yang hilang di rapat: “Kita tidak punya Analyst—siapa bisa memerankan kali ini?”"
+    },
+    "two_roles": {
+      "title": "Kimia C — tinjau ulang struktur",
+      "body": "Keragaman peran rendah. Selang-seling item rapat seperti “cek celah” dan “cek emosi.”",
+      "caution": ""
+    },
+    "one_cluster": {
+      "title": "Kimia D — perlu reset 🚨",
+      "body": "Semua berkumpul di peran serupa. Cara berpikir sama menciptakan titik buta.",
+      "caution": "Bawa perspektif luar secara rutin untuk mengecilkan titik buta."
+    }
+  }
+}

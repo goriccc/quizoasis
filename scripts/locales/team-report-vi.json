@@ -1,0 +1,80 @@
+{
+  "synergy": {
+    "visionary_executor": {
+      "title": "✨ Kích hoạt combo ước mơ",
+      "body": "Có người định hướng và có người thực thi.\n\nCấu trúc gần với “đặt mục tiêu rồi thực sự bàn giao.”\n\nLưu ý: khi tăng tốc, kiểm tra chi tiết dễ sơ suất—vai Analyst làm combo mạnh hơn."
+    },
+    "coordinator_analyst": {
+      "title": "✨ Kích hoạt combo cân bằng",
+      "body": "Lý trí và cảm xúc cân bằng. Quyết định ít chệch cực, kết luận dễ được mọi người chấp nhận.\n\nCặp này thường phục hồi nhanh sau xung đột."
+    },
+    "creator_executor": {
+      "title": "✨ Kích hoạt combo ý tưởng đến sản phẩm",
+      "body": "Người nảy ý và người làm nên cùng một đội.\n\nKhi đội khác còn tranh luận, bạn có thể đã làm prototype."
+    }
+  },
+  "missing": {
+    "visionary": {
+      "title": "⚠️ Thiếu phương hướng",
+      "body": "Không ai tự nhiên chỉ đường. Đội có thể chạy nhanh mà không rõ “đi đâu.”",
+      "prescription": "Trước họp, thống nhất một câu: dự án này cần đạt gì."
+    },
+    "executor": {
+      "title": "⚠️ Động cơ thực thi yếu",
+      "body": "Có ý tưởng và hướng nhưng thiếu lực đẩy để ra kết quả cụ thể.",
+      "prescription": "Kết thúc mỗi cuộc họp bằng “ai làm gì trước khi nào”—thành thói quen."
+    },
+    "analyst": {
+      "title": "⚠️ Phát hiện rủi ro kém",
+      "body": "Đội nhanh nhưng ít người tự nhiên thấy lỗ hổng và rủi ro.",
+      "prescription": "Luân phiên “quỷ biện” trước quyết định lớn—chỉ tìm phản biện cũng giảm rủi ro nhiều."
+    },
+    "coordinator": {
+      "title": "⚠️ Khó hàn gắn sau mâu thuẫn",
+      "body": "Khi cọ xát, có thể không có người trung gian tự nhiên.",
+      "prescription": "Để ý im lặng khó xử trong họp—thêm “ai thấy khác không?”"
+    },
+    "creator": {
+      "title": "⚠️ Ít đột phá sáng tạo",
+      "body": "Khi kẹt, góc hoàn toàn mới khó nổi lên.",
+      "prescription": "Thử hàng tháng “vòng ý tưởng điên nhất”—brainstorm không phán xét."
+    },
+    "supporter": {
+      "title": "⚠️ Nguy cơ kiệt sức",
+      "body": "Đội theo đuổi kết quả nhưng thiếu người giữ năng lượng cảm xúc.",
+      "prescription": "Thêm check-in hàng tuần: “mức năng lượng 1–10 tuần này?”"
+    }
+  },
+  "grade": {
+    "six_roles": {
+      "title": "Chemistry A+ — đội cân bằng 🏆",
+      "body": "Đủ sáu kiểu vai. Điểm mạnh che điểm mù—tiềm năng hiệp lực lớn.",
+      "caution": "Đổi vai thỉnh thoảng để không bị kẹt một kiểu—linh hoạt giúp cả đội."
+    },
+    "five_roles": {
+      "title": "Chemistry A — thiếu một vai",
+      "body": "Vai trò khá đa dạng. Chủ động lấp chỗ trống sẽ nâng chemistry một bậc.",
+      "caution": ""
+    },
+    "four_roles": {
+      "title": "Chemistry B+ — thiếu hai vai",
+      "body": "Vai trò khá đa dạng. Chủ động lấp chỗ trống sẽ nâng chemistry một bậc.",
+      "caution": ""
+    },
+    "three_balance": {
+      "title": "Chemistry B — cần cân bằng ⚖️",
+      "body": "Vai trò lệch. Hiện tại ổn nhưng một số tình huống sẽ lộ điểm yếu.",
+      "caution": "Nêu rõ vai thiếu trong họp: “Không có Analyst—ai đảm nhận lần này?”"
+    },
+    "two_roles": {
+      "title": "Chemistry C — xem lại cấu trúc",
+      "body": "Đa dạng vai thấp. Luân phiên mục như “kiểm tra lỗ hổng” và “kiểm tra cảm xúc.”",
+      "caution": ""
+    },
+    "one_cluster": {
+      "title": "Chemistry D — cần làm lại 🚨",
+      "body": "Mọi người tụ vào vai tương tự. Cùng cách nghĩ tạo điểm mù.",
+      "caution": "Đưa góc nhìn bên ngoài định kỳ để thu hẹp điểm mù."
+    }
+  }
+}
