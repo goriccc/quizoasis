@@ -3024,6 +3024,58 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3ZeroSpendingChallengeTest": {
+    "startMessage": {
+      "line1": "Thử thách chi 0 đồng — nghe tên đã thấy ngột ngạt hay bạn tự tin?",
+      "line2": "Cả ngày không tiêu một xu. Lý thuyết thì dễ, nhưng khi bắt đầu cửa hàng tiện lợi, app giao đồ, quán cà phê và thông báo mua sắm ập đến cùng lúc.",
+      "line3": "Thói chi tiêu và ý chí của bạn có đủ để thành công không?",
+      "line4": "12 câu hỏi tính xác suất thành công theo phần trăm. Chia sẻ kết quả “tôi ~X% là được”.",
+      "line5": "Tính xác suất chi 0 đồng 💸 Kiểm tra ngay"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (xác suất thành công thử thách chi 0 đồng)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "prescription": "Đơn phù hợp",
+      "savingsEstimate": "Tiết kiệm dự kiến",
+      "yearlyScenario": "Nếu duy trì cả năm",
+      "todayTask": "Việc làm hôm nay",
+      "motivationLine": "Một câu động viên",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "Xác suất thành công thử thách chi 0 đồng 💸 12 câu chữ, 4 lựa chọn",
+      "startKakao": "Xác suất thành công thử thách chi 0 đồng 💸 12 câu chữ, 4 lựa chọn",
+      "startWechat": "Xác suất thành công thử thách chi 0 đồng 💸 12 câu chữ, 4 lựa chọn",
+      "startWhatsapp": "Xác suất thành công thử thách chi 0 đồng 💸 12 câu chữ, 4 lựa chọn",
+      "startTelegram": "Xác suất thành công thử thách chi 0 đồng 💸 12 câu chữ, 4 lựa chọn",
+      "startLine": "Xác suất thành công thử thách chi 0 đồng 💸 12 câu chữ, 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",

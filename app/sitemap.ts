@@ -73,6 +73,7 @@ const testSlugs = [
   'mensa-extreme',
   'phase3-elementary-math-adults-quiz',
   'phase3-world-landmark-city-quiz',
+  'phase3-zero-spending-challenge',
   'phase3-team-work-chemistry-test',
 ];
 

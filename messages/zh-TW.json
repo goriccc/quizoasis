@@ -3031,6 +3031,58 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3ZeroSpendingChallengeTest": {
+    "startMessage": {
+      "line1": "零消費挑戰——光聽名字就喘不過氣，還是你很有把握？",
+      "line2": "一整天一分錢都不花。理論上很簡單，真開始以後便利商店、外送、咖啡、購物通知會一起湧來。",
+      "line3": "憑你的消費習慣與意志力，真的能成功嗎？",
+      "line4": "12 題用百分比算出你的零消費成功機率。測完可以分享「我大概 X% 能成」。",
+      "line5": "算算零消費成功率 💸 馬上開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 區域（零消費挑戰成功機率）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "prescription": "對症處方",
+      "savingsEstimate": "預計能省",
+      "yearlyScenario": "堅持一年大致",
+      "todayTask": "今天可做",
+      "motivationLine": "一句打氣",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "零消費挑戰成功機率 💸 12 題文字四選一",
+      "startKakao": "零消費挑戰成功機率 💸 12 題文字四選一",
+      "startWechat": "零消費挑戰成功機率 💸 12 題文字四選一",
+      "startWhatsapp": "零消費挑戰成功機率 💸 12 題文字四選一",
+      "startTelegram": "零消費挑戰成功機率 💸 12 題文字四選一",
+      "startLine": "零消費挑戰成功機率 💸 12 題文字四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T還是F？這場爭論還沒結束。",

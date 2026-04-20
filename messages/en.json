@@ -3065,6 +3065,58 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3ZeroSpendingChallengeTest": {
+    "startMessage": {
+      "line1": "Zero-spend challenge—does the name make you panic, or do you feel confident?",
+      "line2": "A whole day without spending a single won. It sounds simple in theory, but once you start, convenience stores, delivery apps, cafés, and shopping alerts all hit at once.",
+      "line3": "Can your spending habits and willpower really carry you through?",
+      "line4": "Twelve questions calculate your zero-spend success odds in percent. Share your “I’m ~X% likely” result.",
+      "line5": "Calculate my zero-spend odds 💸 Check now"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (Zero-spend challenge success odds)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "prescription": "Tailored prescription",
+      "savingsEstimate": "Estimated savings",
+      "yearlyScenario": "If applied for a year",
+      "todayTask": "Do this today",
+      "motivationLine": "One-line motivation",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "Zero-spend challenge: your success odds 💸 12 text questions, 4 choices",
+      "startKakao": "Zero-spend challenge: your success odds 💸 12 text questions, 4 choices",
+      "startWechat": "Zero-spend challenge: your success odds 💸 12 text questions, 4 choices",
+      "startWhatsapp": "Zero-spend challenge: your success odds 💸 12 text questions, 4 choices",
+      "startTelegram": "Zero-spend challenge: your success odds 💸 12 text questions, 4 choices",
+      "startLine": "Zero-spend challenge: your success odds 💸 12 text questions, 4 choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T or F? That debate is not over yet.",

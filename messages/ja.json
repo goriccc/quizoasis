@@ -3025,6 +3025,58 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3ZeroSpendingChallengeTest": {
+    "startMessage": {
+      "line1": "無支出チャレンジ——名前だけで息が詰まりますか、それとも自信がありますか？",
+      "line2": "一日中まったく使わないチャレンジ。理屈では簡単そうでも、始めるとコンビニ・デリバリー・カフェ・買い物通知が一気に襲います。",
+      "line3": "あなたの消費習慣と意志力で本当に成功できるでしょうか？",
+      "line4": "12問で無支出チャレンジの成功確率を％で算出します。「私は〜％いける」とシェアしてみましょう。",
+      "line5": "無支出チャレンジ成功確率を計算 💸 今すぐチェック"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（無支出チャレンジ成功確率）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "prescription": "処方箋",
+      "savingsEstimate": "節約の見込み",
+      "yearlyScenario": "年間で換算すると",
+      "todayTask": "今日やること",
+      "motivationLine": "一言モチベ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "無支出チャレンジ成功確率 💸 テキスト12問・4択",
+      "startKakao": "無支出チャレンジ成功確率 💸 テキスト12問・4択",
+      "startWechat": "無支出チャレンジ成功確率 💸 テキスト12問・4択",
+      "startWhatsapp": "無支出チャレンジ成功確率 💸 テキスト12問・4択",
+      "startTelegram": "無支出チャレンジ成功確率 💸 テキスト12問・4択",
+      "startLine": "無支出チャレンジ成功確率 💸 テキスト12問・4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "TかFか？その議論はまだ終わっていません。",

@@ -3024,6 +3024,58 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3ZeroSpendingChallengeTest": {
+    "startMessage": {
+      "line1": "Tantangan belanja nol—namanya saja sudah bikin sesak atau kamu pede?",
+      "line2": "Seharian tanpa mengeluarkan uang sepeser pun. Di teori terdengar mudah, begitu mulai minimarket, app pesan-antar, kafe, dan notifikasi belanja datang sekaligus.",
+      "line3": "Apa kebiasaan belanja dan tekadmu cukup untuk sukses?",
+      "line4": "12 pertanyaan menghitung peluang sukses dalam persen. Bagikan hasil “aku ~X% bisa”.",
+      "line5": "Hitung peluang sukses belanja nol 💸 Cek sekarang"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (peluang sukses tantangan belanja nol)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "prescription": "Resep cocok",
+      "savingsEstimate": "Perkiraan hemat",
+      "yearlyScenario": "Jika satu tahun",
+      "todayTask": "Lakukan hari ini",
+      "motivationLine": "Satu kalimat motivasi",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{line}",
+      "kakao": "{line}",
+      "wechat": "{line}",
+      "whatsapp": "{line}",
+      "telegram": "{line}",
+      "line": "{line}",
+      "startDefault": "Peluang sukses tantangan belanja nol 💸 12 soal teks, 4 pilihan",
+      "startKakao": "Peluang sukses tantangan belanja nol 💸 12 soal teks, 4 pilihan",
+      "startWechat": "Peluang sukses tantangan belanja nol 💸 12 soal teks, 4 pilihan",
+      "startWhatsapp": "Peluang sukses tantangan belanja nol 💸 12 soal teks, 4 pilihan",
+      "startTelegram": "Peluang sukses tantangan belanja nol 💸 12 soal teks, 4 pilihan",
+      "startLine": "Peluang sukses tantangan belanja nol 💸 12 soal teks, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",
