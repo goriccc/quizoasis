@@ -3317,6 +3317,62 @@
       "popularTestsTop5": "🔥 热门测试推荐前 5"
     }
   },
+  "phase3OfficeSurvivalTypeTest": {
+    "startMessage": {
+      "line1": "你现在在公司是靠什么站位活下来的？",
+      "line2": "有人拼野心，有人躲存在感，有人靠实力硬扛，有人靠关系。同公司同职级，生存方式也完全不同。",
+      "line3": "12 道题分析你真实的职场站位与生存策略。",
+      "line4": "测完把结果丢到团队群，看看大家都测出什么。",
+      "line5": "找到我的职场生存类型 💼 开始分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的职场生存类型）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "scoreRange": "总分区间",
+      "strengths": "优势",
+      "nickname": "职场外号",
+      "weaknesses": "短板",
+      "bossView": "上司眼中的你",
+      "peerView": "同事眼中的你",
+      "survivalStrategy": "生存策略",
+      "caution": "注意点",
+      "quote": "本类型职场金句",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "type1": "职场生存：野心型 🔥 看见机会就冲的人举手 ✋ → 丢到团队群比比谁测出什么",
+      "type2": "职场生存：透明人型 🫥 目标是「像不在一样」开会安静坐也是一种策略 → 团队群见",
+      "type3": "职场生存：隐藏珍珠 💎 少说话靠实力扛，越了解越发光 → 团队群见",
+      "type4": "职场生存：团队型 🤝 团队好我才好，粘合剂们来共鸣 → 团队群见",
+      "type5": "职场生存：人脉高手 🌐 靠关系网走动，懂公司暗流的人 → 团队群见",
+      "type6": "职场生存：工作生活平衡守护 🌅 下班是目标，今天也准点走的人举手 ✋ → 团队群见",
+      "startDefault": "我的职场生存类型 💼 12 题四选一",
+      "startKakao": "我的职场生存类型 💼 12 题四选一",
+      "startWechat": "我的职场生存类型 💼 12 题四选一",
+      "startWhatsapp": "我的职场生存类型 💼 12 题四选一",
+      "startTelegram": "我的职场生存类型 💼 12 题四选一",
+      "startLine": "我的职场生存类型 💼 12 题四选一"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前 5",
+      "popularTestsTop5": "🔥 热门测试推荐前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T还是F？这场争论还没结束。",

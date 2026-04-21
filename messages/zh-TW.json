@@ -3324,6 +3324,62 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3OfficeSurvivalTypeTest": {
+    "startMessage": {
+      "line1": "你現在在公司是靠什麼站位活下來的？",
+      "line2": "有人拼野心，有人躲存在感，有人靠實力硬扛，有人靠關係。同公司同職級，生存方式也完全不同。",
+      "line3": "12 道題分析你真實的職場站位與生存策略。",
+      "line4": "測完把結果丟到團隊群，看看大家都測出什麼。",
+      "line5": "找到我的職場生存類型 💼 開始分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的職場生存類型）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "scoreRange": "總分區間",
+      "strengths": "優勢",
+      "nickname": "職場外號",
+      "weaknesses": "短板",
+      "bossView": "上司眼中的你",
+      "peerView": "同事眼中的你",
+      "survivalStrategy": "生存策略",
+      "caution": "注意點",
+      "quote": "本類型職場金句",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "type1": "職場生存：野心型 🔥 看見機會就衝的人舉手 ✋ → 丟到團隊群比比誰測出什麼",
+      "type2": "職場生存：透明人型 🫥 目標是「像不在一樣」開會安靜坐也是一種策略 → 團隊群見",
+      "type3": "職場生存：隱藏珍珠 💎 少說話靠實力扛，越了解越發光 → 團隊群見",
+      "type4": "職場生存：團隊型 🤝 團隊好我才好，黏合劑們來共鳴 → 團隊群見",
+      "type5": "職場生存：人脈高手 🌐 靠關係網走動，懂公司暗流的人 → 團隊群見",
+      "type6": "職場生存：工作生活平衡守護 🌅 下班是目標，今天也準時走的人舉手 ✋ → 團隊群見",
+      "startDefault": "我的職場生存類型 💼 12 題四選一",
+      "startKakao": "我的職場生存類型 💼 12 題四選一",
+      "startWechat": "我的職場生存類型 💼 12 題四選一",
+      "startWhatsapp": "我的職場生存類型 💼 12 題四選一",
+      "startTelegram": "我的職場生存類型 💼 12 題四選一",
+      "startLine": "我的職場生存類型 💼 12 題四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T還是F？這場爭論還沒結束。",

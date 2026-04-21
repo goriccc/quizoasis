@@ -138,6 +138,10 @@ import {
   phase3OfficeBalanceGameResults,
 } from '@/lib/phase3OfficeBalanceGameData';
 import {
+  phase3OfficeSurvivalTypeQuestions,
+  phase3OfficeSurvivalTypeResults,
+} from '@/lib/phase3OfficeSurvivalTypeData';
+import {
   phase3TfIndexPreciseMeasurementQuestions,
   phase3TfIndexPreciseMeasurementResults,
 } from '@/lib/phase3TfIndexPreciseMeasurementData';
@@ -463,6 +467,10 @@ const Phase3GodsaengIndexMeasurementTestClient = dynamic(
 );
 const Phase3OfficeBalanceGameTestClient = dynamic(
   () => import('@/components/Phase3OfficeBalanceGameTestClient'),
+  { ssr: false }
+);
+const Phase3OfficeSurvivalTypeTestClient = dynamic(
+  () => import('@/components/Phase3OfficeSurvivalTypeTestClient'),
   { ssr: false }
 );
 const Phase3TfIndexPreciseMeasurementTestClient = dynamic(
@@ -2292,6 +2300,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['職場', '平衡遊戲', '幽默'],
         vi: ['Công sở', 'Trò cân bằng', 'Hài hước'],
         id: ['Kantor', 'Permainan seimbang', 'Humor'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-office-survival-type') {
+    test = {
+      slug: 'phase3-office-survival-type',
+      title: {
+        ko: '나의 직장 생활 생존 유형',
+        en: 'My Office Survival Type',
+        ja: '私の職場サバイバルタイプ',
+        'zh-CN': '我的职场生存类型',
+        'zh-TW': '我的職場生存類型',
+        vi: 'Kiểu sống sót nơi công sở của tôi',
+        id: 'Tipe bertahan hidup di kantorku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 직장 내 포지션·생존 전략 6유형. #직장 #회사 #공감 #생존',
+        en: '12 questions, 4 choices — 6 workplace survival types. #office #work #empathy',
+        ja: '12問4択で見る職場ポジション・生存戦略6タイプ。#職場 #会社',
+        'zh-CN': '12 道四选一，六种职场站位与生存策略。#职场 #公司',
+        'zh-TW': '12 題四選一，六種職場站位與生存策略。#職場 #公司',
+        vi: '12 câu 4 lựa chọn — 6 kiểu vị trí & chiến lược sống sót.#côngsở',
+        id: '12 soal 4 pilihan — 6 tipe posisi & strategi bertahan di kantor.#kantor',
+      },
+      thumbnail: 'p3_test_office_survival_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['직장', '회사', '공감', '생존'],
+        en: ['Office', 'Work', 'Empathy', 'Survival'],
+        ja: ['職場', '会社', '共感', '生存'],
+        'zh-CN': ['职场', '公司', '共情', '生存'],
+        'zh-TW': ['職場', '公司', '共感', '生存'],
+        vi: ['Công sở', 'Công ty', 'Đồng cảm', 'Sinh tồn'],
+        id: ['Kantor', 'Kerja', 'Empati', 'Bertahan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5051,6 +5096,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3OfficeBalanceGameQuestions}
           results={phase3OfficeBalanceGameResults}
           questionCount={phase3OfficeBalanceGameQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-office-survival-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-office-survival-type',
+      title: {
+        ko: '나의 직장 생활 생존 유형',
+        en: 'My Office Survival Type',
+        ja: '私の職場サバイバルタイプ',
+        'zh-CN': '我的职场生存类型',
+        'zh-TW': '我的職場生存類型',
+        vi: 'Kiểu sống sót nơi công sở của tôi',
+        id: 'Tipe bertahan hidup di kantorku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 직장 내 포지션·생존 전략 6유형. #직장 #회사 #공감 #생존',
+        en: '12 questions, 4 choices — 6 workplace survival types. #office #work #empathy',
+        ja: '12問4択で見る職場ポジション・生存戦略6タイプ。#職場 #会社',
+        'zh-CN': '12 道四选一，六种职场站位与生存策略。#职场 #公司',
+        'zh-TW': '12 題四選一，六種職場站位與生存策略。#職場 #公司',
+        vi: '12 câu 4 lựa chọn — 6 kiểu vị trí & chiến lược sống sót.#côngsở',
+        id: '12 soal 4 pilihan — 6 tipe posisi & strategi bertahan di kantor.#kantor',
+      },
+      thumbnail: 'p3_test_office_survival_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['직장', '회사', '공감', '생존'],
+        en: ['Office', 'Work', 'Empathy', 'Survival'],
+        ja: ['職場', '会社', '共感', '生存'],
+        'zh-CN': ['职场', '公司', '共情', '生存'],
+        'zh-TW': ['職場', '公司', '共感', '生存'],
+        vi: ['Công sở', 'Công ty', 'Đồng cảm', 'Sinh tồn'],
+        id: ['Kantor', 'Kerja', 'Empati', 'Bertahan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3OfficeSurvivalTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3OfficeSurvivalTypeQuestions}
+          results={phase3OfficeSurvivalTypeResults}
+          questionCount={phase3OfficeSurvivalTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

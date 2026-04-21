@@ -3317,6 +3317,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3OfficeSurvivalTypeTest": {
+    "startMessage": {
+      "line1": "Posisi apa yang kamu mainkan untuk bertahan di kantor sekarang?",
+      "line2": "Ada yang ambisius, yang menghilang dari radar, yang mengandalkan skill, yang mengandalkan relasi—satu perusahaan satu jabatan pun, cara bertahan beda-beda.",
+      "line3": "12 pertanyaan menganalisis posisimu dan strategi bertahan di tempat kerja.",
+      "line4": "Bagikan hasil ke grup chat tim.",
+      "line5": "Cari tipe bertahan hidup di kantorku 💼 Mulai analisis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tipe bertahan hidup di kantor)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "scoreRange": "Rentang skor",
+      "strengths": "Kekuatan",
+      "nickname": "Julukan di kantor",
+      "weaknesses": "Kelemahan",
+      "bossView": "Cara atasan melihatmu",
+      "peerView": "Cara rekan melihatmu",
+      "survivalStrategy": "Strategi bertahan",
+      "caution": "Yang perlu diwaspadai",
+      "quote": "Kutipan khas tipe ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "type1": "Bertahan di kantor: Tipe ambisi 🔥 Yang lihat peluang langsung gas ✋ → Share ke grup tim",
+      "type2": "Bertahan di kantor: Tipe transparan 🫥 Targetnya seperti tidak ada—diam di rapat juga strategi → Grup tim",
+      "type3": "Bertahan di kantor: Mutiara tersembunyi 💎 Pendiam tapi jago—mak dikenal mak oke → Grup tim",
+      "type4": "Bertahan di kantor: Pemain tim 🤝 Tim hidup baru kamu hidup—yang jadi lem tim → Grup tim",
+      "type5": "Bertahan di kantor: Ahli jaringan 🌐 Jalan lewat relasi, paham arus organisasi → Grup tim",
+      "type6": "Bertahan di kantor: Penjaga work-life 🌅 Targetnya pulang tepat waktu, hari ini juga ✋ → Grup tim",
+      "startDefault": "Tipe bertahan hidup di kantorku 💼 12 soal, 4 pilihan tiap soal",
+      "startKakao": "Tipe bertahan hidup di kantorku 💼 12 soal, 4 pilihan tiap soal",
+      "startWechat": "Tipe bertahan hidup di kantorku 💼 12 soal, 4 pilihan tiap soal",
+      "startWhatsapp": "Tipe bertahan hidup di kantorku 💼 12 soal, 4 pilihan tiap soal",
+      "startTelegram": "Tipe bertahan hidup di kantorku 💼 12 soal, 4 pilihan tiap soal",
+      "startLine": "Tipe bertahan hidup di kantorku 💼 12 soal, 4 pilihan tiap soal"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",

@@ -3317,6 +3317,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3OfficeSurvivalTypeTest": {
+    "startMessage": {
+      "line1": "Bạn đang đứng ở vị trí nào để tồn tại nơi công sở?",
+      "line2": "Người tham vọng, người ẩn mình, người dựa năng lực, người dựa quan hệ—cùng công ty cùng chức danh nhưng cách sống sót rất khác nhau.",
+      "line3": "12 câu hỏi phân tích vị trí thật và chiến lược sinh tồn của bạn.",
+      "line4": "Chia sẻ kết quả vào nhóm chat team ngay nhé.",
+      "line5": "Tìm kiểu sống sót nơi công sở của tôi 💼 Bắt đầu phân tích"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kiểu sống sót nơi công sở)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "scoreRange": "Khoảng điểm",
+      "strengths": "Điểm mạnh",
+      "nickname": "Biệt danh công sở",
+      "weaknesses": "Điểm yếu",
+      "bossView": "Sếp có thể nhìn bạn thế nào",
+      "peerView": "Đồng nghiệp có thể nhìn bạn thế nào",
+      "survivalStrategy": "Chiến lược sinh tồn",
+      "caution": "Cần lưu ý",
+      "quote": "Câu nói đặc trưng của kiểu này",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "type1": "Sinh tồn công sở: Kiểu tham vọng 🔥 Ai thấy cơ hội là giữ tay ✋ → Ném vào nhóm team xem ai ra gì",
+      "type2": "Sinh tồn công sở: Kiểu vô hình 🫥 Mục tiêu là “như không có mặt”, im lặng trong họp cũng là chiến lược → Nhóm team",
+      "type3": "Sinh tồn công sở: Viên ngọc ẩn 💎 Ít nói, dựa năng lực—càng hiểu càng thấy giá → Nhóm team",
+      "type4": "Sinh tồn công sở: Người chơi team 🤝 Team khỏe thì mình khỏe—đồng cảm với “keo dính” → Nhóm team",
+      "type5": "Sinh tồn công sở: Bậc insider mạng lưới 🌐 Đi bằng quan hệ, đọc được dòng chảy ngầm → Nhóm team",
+      "type6": "Sinh tồn công sở: Người giữ cân bằng 🌅 Mục tiêu là tan ca, hôm nay cũng đúng giờ ✋ → Nhóm team",
+      "startDefault": "Kiểu sống sót nơi công sở 💼 12 câu, mỗi câu 4 lựa chọn",
+      "startKakao": "Kiểu sống sót nơi công sở 💼 12 câu, mỗi câu 4 lựa chọn",
+      "startWechat": "Kiểu sống sót nơi công sở 💼 12 câu, mỗi câu 4 lựa chọn",
+      "startWhatsapp": "Kiểu sống sót nơi công sở 💼 12 câu, mỗi câu 4 lựa chọn",
+      "startTelegram": "Kiểu sống sót nơi công sở 💼 12 câu, mỗi câu 4 lựa chọn",
+      "startLine": "Kiểu sống sót nơi công sở 💼 12 câu, mỗi câu 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",

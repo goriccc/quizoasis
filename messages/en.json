@@ -3358,6 +3358,62 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3OfficeSurvivalTypeTest": {
+    "startMessage": {
+      "line1": "What position are you playing to survive at work right now?",
+      "line2": "Ambition, hiding in plain sight, quiet competence, or relationships—even same title, survival styles differ completely.",
+      "line3": "12 questions analyze your real workplace position and survival strategy.",
+      "line4": "Share the result with your team chat.",
+      "line5": "Find my office survival type 💼 Start"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Office survival type)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "scoreRange": "Score band",
+      "strengths": "Strengths",
+      "nickname": "Office nickname",
+      "weaknesses": "Weak spots",
+      "bossView": "How your boss may see you",
+      "peerView": "How peers may see you",
+      "survivalStrategy": "Survival strategy",
+      "caution": "Watch out",
+      "quote": "Quote for this type",
+      "shareResult": "Share results"
+    },
+    "shareMessages": {
+      "type1": "Office survival: Ambition type 🔥 Always grabs opportunities—share in the team chat",
+      "type2": "Office survival: Low-profile type 🫥 Strategy is staying quiet in meetings—share in the team chat",
+      "type3": "Office survival: Hidden gem 💎 Quiet competence—share in the team chat",
+      "type4": "Office survival: Team player 🤝 Team first—share in the team chat",
+      "type5": "Office survival: Network navigator 🌐 Reads the org—share in the team chat",
+      "type6": "Office survival: Work-life guardian 🌅 Clock-out goals—share in the team chat",
+      "startDefault": "Office survival type 💼 12 questions, 4 choices each",
+      "startKakao": "Office survival type 💼 12 questions, 4 choices each",
+      "startWechat": "Office survival type 💼 12 questions, 4 choices each",
+      "startWhatsapp": "Office survival type 💼 12 questions, 4 choices each",
+      "startTelegram": "Office survival type 💼 12 questions, 4 choices each",
+      "startLine": "Office survival type 💼 12 questions, 4 choices each"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T or F? That debate is not over yet.",

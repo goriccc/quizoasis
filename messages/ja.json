@@ -3318,6 +3318,62 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3OfficeSurvivalTypeTest": {
+    "startMessage": {
+      "line1": "今のあなたは会社でどんなポジションで生き残っていますか？",
+      "line2": "野心を燃やす人、静かに存在感を消す人、黙って実力で耐える人、人間関係で生きる人。同じ会社・同じ役職でも、職場での生き方は人それぞれです。",
+      "line3": "12の質問で、あなたの本当の職場ポジションと生存戦略を分析します。",
+      "line4": "結果をチームのグループチャットですぐ共有してみてください。",
+      "line5": "私の職場サバイバルタイプを見つける 💼 分析スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私の職場サバイバルタイプ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "scoreRange": "合計点の帯",
+      "strengths": "強み",
+      "nickname": "職場あだ名",
+      "weaknesses": "弱み",
+      "bossView": "上司から見たあなた",
+      "peerView": "同僚から見たあなた",
+      "survivalStrategy": "生存戦略",
+      "caution": "注意点",
+      "quote": "このタイプの職場名言",
+      "shareResult": "結果を共有"
+    },
+    "shareMessages": {
+      "type1": "職場サバイバル：野心家タイプ 🔥 チャンスは逃さない人たち、手あげて ✋ → チームチャットでみんなの結果をシェア",
+      "type2": "職場サバイバル：透明人間タイプ 🫥 「いないふう」が戦略、会議で静かに座ってるやつ → チームチャットでシェア",
+      "type3": "職場サバイバル：隠れた真珠 💎 黙って実力で耐えるタイプ、知れば知るほど光る → チームチャットでシェア",
+      "type4": "職場サバイバル：チームプレーヤー 🤝 チームが生きてこそ自分も生きる、グルーの人たち共感 → シェア",
+      "type5": "職場サバイバル：社内政治の達人 🌐 人脈で動く、組織の裏がわかる人たち → シェア",
+      "type6": "職場サバイバル：ワークライフ守護者 🌅 退勤がゴール、今日も定時で帰れた人たち ✋ → シェア",
+      "startDefault": "私の職場サバイバルタイプ 💼 12問4択",
+      "startKakao": "私の職場サバイバルタイプ 💼 12問4択",
+      "startWechat": "私の職場サバイバルタイプ 💼 12問4択",
+      "startWhatsapp": "私の職場サバイバルタイプ 💼 12問4択",
+      "startTelegram": "私の職場サバイバルタイプ 💼 12問4択",
+      "startLine": "私の職場サバイバルタイプ 💼 12問4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "TかFか？その議論はまだ終わっていません。",
