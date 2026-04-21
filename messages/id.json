@@ -2919,6 +2919,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3GameLoveBalanceExtremeTest": {
+    "startMessage": {
+      "line1": "Game keseimbangan cinta ekstrem—dua pilihan, dua-duanya menyebalkan.",
+      "line2": "Meski benci keduanya, kamu harus memilih satu. Setiap pilihan memperlihatkan gaya cinta dan nilaimu.",
+      "line3": "Seru sendiri, lebih seru bareng pasangan atau gebetan. Beda jawaban = “Kok pilih itu?!”—itu intinya.",
+      "line4": "10 ronde. Tanpa jalan keluar.",
+      "line5": "Keseimbangan ekstrem dimulai ⚡\nRonde 1—mulai"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Game keseimbangan cinta ekstrem)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "roundLead": "Ronde {current}. ",
+      "roundCount": "Ronde {current} / {total}",
+      "oneLiner": "Satu kalimat tentang gaya cinta",
+      "loveKeywords": "Kata kunci gaya cinta",
+      "happyLove": "Kapan tipe ini paling bahagia dalam cinta",
+      "hardMoment": "Momen tersulit untuk tipe ini",
+      "goodMatch": "Pasangan paling cocok",
+      "badMatch": "Pasangan paling rawan bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "resultType1": "Hasil seimbang ekstrem: Independen & bebas 🦅 Main berdua beda jawaban langsung debat—coba",
+      "resultType2": "Hasil seimbang ekstrem: Stabilitas dulu 🏠 Ronde 6 putus vs di ghosting—susah… main sama pasangan",
+      "resultType3": "Hasil seimbang ekstrem: Seimbang logis ⚖️ Pilih sesuai konteks dapat tipe ini—bandingin sama pasangan pasti rame (lol)",
+      "resultType4": "Hasil seimbang ekstrem: Ikut perasaan 💓 Ronde 10 paling nyiksa… cinta dalam tanpa kata vs manis tapi dangkal—coba berdua",
+      "resultType5": "Hasil seimbang ekstrem: All-in rela berkorban 🔥 Emang aku nerima susah demi cinta… pasangan main pasti beda jawaban",
+      "resultType6": "Hasil seimbang ekstrem: Harga diri dulu 👑 Di situasi apa pun jaga diri—coba sama pasangan (lol)",
+      "startDefault": "Keseimbangan cinta ekstrem 💔 10 ronde pilih gambar",
+      "startKakao": "Keseimbangan cinta ekstrem 💔 10 ronde pilih gambar",
+      "startWechat": "Keseimbangan cinta ekstrem 💔 10 ronde pilih gambar",
+      "startWhatsapp": "Keseimbangan cinta ekstrem 💔 10 ronde pilih gambar",
+      "startTelegram": "Keseimbangan cinta ekstrem 💔 10 ronde pilih gambar",
+      "startLine": "Keseimbangan cinta ekstrem 💔 10 ronde pilih gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TanjinjamSpendingTypeTest": {
     "startMessage": {
       "line1": "Tahu nggak momen paling bahagia saat belanja?",

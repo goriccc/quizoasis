@@ -2920,6 +2920,61 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3GameLoveBalanceExtremeTest": {
+    "startMessage": {
+      "line1": "究極のどっちも嫌な恋愛バランスゲーム。",
+      "line2": "どちらもイヤでも一つは選ぶ。選ぶたびに恋愛観と価値観が見える。",
+      "line3": "一人でも楽しいけど恋人や気になる相手とやると最高。答えが違うと「それ選ぶ！？」が炸裂するのが見どころ。",
+      "line4": "10ラウンド。逃げ道なし。",
+      "line5": "極限バランス開始 ⚡\nラウンド1スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（恋愛・極限バランスゲーム）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "roundLead": "ラウンド {current}. ",
+      "roundCount": "ラウンド {current} / {total}",
+      "oneLiner": "恋愛観ワンフレーズ",
+      "loveKeywords": "恋愛スタイルのキーワード",
+      "happyLove": "このタイプが幸せを感じる恋",
+      "hardMoment": "このタイプがつらい瞬間",
+      "goodMatch": "相性最高の相手像",
+      "badMatch": "相性最悪になりやすい相手像",
+      "shareResult": "結果を共有"
+    },
+    "shareMessages": {
+      "resultType1": "恋愛極限バランス結果：独立自由型🦅 カップルでやったら答え違いで大爆笑→やってみて",
+      "resultType2": "恋愛極限バランス結果：現実安定型🏠 R6「別れよう」vs沈黙地獄がキツい…カップルでどうぞ",
+      "resultType3": "恋愛極限バランス結果：論理バランス型⚖️ 状況で変えて選んだらこの型→恋人と比べると喧嘩の種（笑）",
+      "resultType4": "恋愛極限バランス結果：感性直観型💓 R10が一番しんどい…言葉なし本気 vs 甘いけど薄い愛→二人でやって",
+      "resultType5": "恋愛極限バランス結果：献身没入型🔥 愛の前では我慢する側、合ってる…カップルで答え違い確定",
+      "resultType6": "恋愛極限バランス結果：自尊心優先型👑 どんな場面でも自分を守る、まさに。恋人と比較したら現実（笑）",
+      "startDefault": "恋愛・極限バランス 💔 画像10ラウンド",
+      "startKakao": "恋愛・極限バランス 💔 画像10ラウンド",
+      "startWechat": "恋愛・極限バランス 💔 画像10ラウンド",
+      "startWhatsapp": "恋愛・極限バランス 💔 画像10ラウンド",
+      "startTelegram": "恋愛・極限バランス 💔 画像10ラウンド",
+      "startLine": "恋愛・極限バランス 💔 画像10ラウンド"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3TanjinjamSpendingTypeTest": {
     "startMessage": {
       "line1": "お金を使うとき、一番幸せを感じる瞬間はいつだと思いますか？",

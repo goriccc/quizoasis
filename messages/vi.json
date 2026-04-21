@@ -2919,6 +2919,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3GameLoveBalanceExtremeTest": {
+    "startMessage": {
+      "line1": "Trò cân bằng tình yêu cực hạn—hai lựa chọn đều khó chịu.",
+      "line2": "Dù ghét cả hai vẫn phải chọn một. Mỗi lần chọn lộ gu yêu và giá trị của bạn.",
+      "line3": "Chơi một mình cũng vui, chơi với người yêu/crush càng nổ. Khác đáp án là kiểu “Sao lại chọn cái đó?!”—đó là highlight.",
+      "line4": "10 vòng. Không lối thoát.",
+      "line5": "Bắt đầu cực hạn ⚡\nVòng 1—go"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Cân bằng tình yêu cực hạn)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "roundLead": "Vòng {current}. ",
+      "roundCount": "Vòng {current} / {total}",
+      "oneLiner": "Một câu về gu yêu",
+      "loveKeywords": "Từ khóa phong cách yêu",
+      "happyLove": "Khi kiểu này hạnh phúc trong yêu",
+      "hardMoment": "Khoảnh khắc khó với kiểu này",
+      "goodMatch": "Đối tác hợp nhất",
+      "badMatch": "Đối tác dễ xung đột nhất",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "resultType1": "Cân bằng cực hạn: Độc lập tự do 🦅 Chơi đôi khác đáp án là cãi ngay—thử đi",
+      "resultType2": "Cân bằng cực hạn: Ưu tiên ổn định 🏠 Vòng 6 chia tay vs cắt liên lạc—khó quá… chơi cùng người yêu",
+      "resultType3": "Cân bằng cực hạn: Cân bằng lý ⚖️ Chọn theo tình huống ra type này—so với người yêu chắc chém (lol)",
+      "resultType4": "Cân bằng cực hạn: Theo cảm xúc 💓 Vòng 10 là ác nhất… yêu sâu không lời vs ngọt nhưng hời hợt—chơi đôi đi",
+      "resultType5": "Cân bằng cực hạn: Hy sinh hết mình 🔥 Đúng là chịu khổ vì yêu… đôi chơi chắc khác đáp án",
+      "resultType6": "Cân bằng cực hạn: Tự trọng trước 👑 Mọi tình huống vẫn giữ mình—thử với người yêu xem (lol)",
+      "startDefault": "Cân bằng tình yêu cực hạn 💔 10 vòng chọn ảnh",
+      "startKakao": "Cân bằng tình yêu cực hạn 💔 10 vòng chọn ảnh",
+      "startWechat": "Cân bằng tình yêu cực hạn 💔 10 vòng chọn ảnh",
+      "startWhatsapp": "Cân bằng tình yêu cực hạn 💔 10 vòng chọn ảnh",
+      "startTelegram": "Cân bằng tình yêu cực hạn 💔 10 vòng chọn ảnh",
+      "startLine": "Cân bằng tình yêu cực hạn 💔 10 vòng chọn ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TanjinjamSpendingTypeTest": {
     "startMessage": {
       "line1": "Bạn có biết khoảnh khắc nào khi tiêu tiền khiến bạn hạnh phúc nhất không?",

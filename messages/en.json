@@ -2960,6 +2960,61 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3GameLoveBalanceExtremeTest": {
+    "startMessage": {
+      "line1": "A brutal either/or dating balance game.",
+      "line2": "Both choices hurt—you still have to pick one. Each answer shows your love style and values.",
+      "line3": "Fun alone, wilder with your partner or crush. When you disagree, “How could you choose that?!” is the best part.",
+      "line4": "10 rounds. No backing out.",
+      "line5": "Extreme balance starts ⚡\nRound 1—go"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Extreme Dating Balance Game)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "roundLead": "Round {current}. ",
+      "roundCount": "Round {current} / {total}",
+      "oneLiner": "One-liner on your love style",
+      "loveKeywords": "Love-style keywords",
+      "happyLove": "When this type thrives in love",
+      "hardMoment": "Tough moments for this type",
+      "goodMatch": "Best partner match",
+      "badMatch": "Toughest partner match",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "resultType1": "Extreme dating balance: Independent freedom 🦅 We picked different answers and lost it lol—try with your partner",
+      "resultType2": "Extreme dating balance: Stability-first 🏠 Round 6 “break up” vs silent treatment was brutal—play as a couple",
+      "resultType3": "Extreme dating balance: Balanced logic ⚖️ My picks shifted by situation—compare with your partner, sparks fly",
+      "resultType4": "Extreme dating balance: Heart-led 💓 Round 10 destroyed me—deep love no words vs sweet but shallow—try together",
+      "resultType5": "Extreme dating balance: All-in devotion 🔥 I really do absorb the pain for love—couples will fight over picks",
+      "resultType6": "Extreme dating balance: Self-respect first 👑 I protect me in every scenario—try with your partner, compare answers",
+      "startDefault": "Extreme dating balance 💔 10 image rounds",
+      "startKakao": "Extreme dating balance 💔 10 image rounds",
+      "startWechat": "Extreme dating balance 💔 10 image rounds",
+      "startWhatsapp": "Extreme dating balance 💔 10 image rounds",
+      "startTelegram": "Extreme dating balance 💔 10 image rounds",
+      "startLine": "Extreme dating balance 💔 10 image rounds"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3TanjinjamSpendingTypeTest": {
     "startMessage": {
       "line1": "Do you know when you feel happiest spending money?",

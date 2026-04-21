@@ -74,6 +74,10 @@ import {
   phase3SnsAlgorithmTypeResults,
 } from '@/lib/phase3SnsAlgorithmTypeData';
 import {
+  phase3GameLoveBalanceExtremeQuestions,
+  phase3GameLoveBalanceExtremeResults,
+} from '@/lib/phase3GameLoveBalanceExtremeData';
+import {
   phase3RoomPersonalityAnalysisQuestions,
   phase3RoomPersonalityAnalysisResults,
 } from '@/lib/phase3RoomPersonalityAnalysisData';
@@ -407,6 +411,10 @@ const Phase3WhichAiAreYouTestClient = dynamic(
 );
 const Phase3SnsAlgorithmTypeTestClient = dynamic(
   () => import('@/components/Phase3SnsAlgorithmTypeTestClient'),
+  { ssr: false }
+);
+const Phase3GameLoveBalanceExtremeTestClient = dynamic(
+  () => import('@/components/Phase3GameLoveBalanceExtremeTestClient'),
   { ssr: false }
 );
 const Phase3RoomPersonalityAnalysisTestClient = dynamic(
@@ -1087,6 +1095,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['社群', '趨勢', '數位', '性格'],
         vi: ['SNS', 'Xu hướng', 'Số', 'Tính cách'],
         id: ['SNS', 'Tren', 'Digital', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-game-love-balance-extreme') {
+    test = {
+      slug: 'phase3-game-love-balance-extreme',
+      title: {
+        ko: '밸런스 게임 - 연애편 극한버전',
+        en: 'Extreme Dating Balance Game',
+        ja: '恋愛・極限バランスゲーム',
+        'zh-CN': '恋爱极限平衡游戏',
+        'zh-TW': '戀愛極限平衡遊戲',
+        vi: 'Trò cân bằng tình yêu cực hạn',
+        id: 'Game keseimbangan cinta ekstrem',
+      },
+      description: {
+        ko: '10문항 이미지 2지선다 극한 연애 밸런스 — 연애관·가치관 6유형 분석. #밸런스게임 #연애 #커플 #심리',
+        en: '10 brutal image A/B rounds—6 love-value types. #balance #dating #couples #psychology',
+        ja: '画像10問の究極2択恋愛バランス—恋愛観6タイプ。#バランス #恋愛 #カップル #心理',
+        'zh-CN': '10 道图片极限恋爱二选一—6 种恋爱价值观。#平衡 #恋爱 #情侣 #心理',
+        'zh-TW': '10 題圖片極限戀愛二選一—6 種戀愛價值觀。#平衡 #戀愛 #情侶 #心理',
+        vi: '10 vòng ảnh 2 lựa chọn cực hạn—6 kiểu giá trị trong yêu. #cân_bằng #yêu #cặp_đôi #tâm_lý',
+        id: '10 ronde gambar A/B ekstrem—6 tipe nilai cinta. #keseimbangan #pacaran #pasangan #psikologi',
+      },
+      thumbnail: 'p3_game_love_balance_extreme.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밸런스게임', '연애', '커플', '심리'],
+        en: ['Balance game', 'Dating', 'Couples', 'Psychology'],
+        ja: ['バランスゲーム', '恋愛', 'カップル', '心理'],
+        'zh-CN': ['平衡游戏', '恋爱', '情侣', '心理'],
+        'zh-TW': ['平衡遊戲', '戀愛', '情侶', '心理'],
+        vi: ['Trò cân bằng', 'Hẹn hò', 'Cặp đôi', 'Tâm lý'],
+        id: ['Game seimbang', 'Pacaran', 'Pasangan', 'Psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4536,6 +4581,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SnsAlgorithmTypeQuestions}
           results={phase3SnsAlgorithmTypeResults}
           questionCount={phase3SnsAlgorithmTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-game-love-balance-extreme') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-game-love-balance-extreme',
+      title: {
+        ko: '밸런스 게임 - 연애편 극한버전',
+        en: 'Extreme Dating Balance Game',
+        ja: '恋愛・極限バランスゲーム',
+        'zh-CN': '恋爱极限平衡游戏',
+        'zh-TW': '戀愛極限平衡遊戲',
+        vi: 'Trò cân bằng tình yêu cực hạn',
+        id: 'Game keseimbangan cinta ekstrem',
+      },
+      description: {
+        ko: '10문항 이미지 2지선다 극한 연애 밸런스 — 연애관·가치관 6유형 분석. #밸런스게임 #연애 #커플 #심리',
+        en: '10 brutal image A/B rounds—6 love-value types. #balance #dating #couples #psychology',
+        ja: '画像10問の究極2択恋愛バランス—恋愛観6タイプ。#バランス #恋愛 #カップル #心理',
+        'zh-CN': '10 道图片极限恋爱二选一—6 种恋爱价值观。#平衡 #恋爱 #情侣 #心理',
+        'zh-TW': '10 題圖片極限戀愛二選一—6 種戀愛價值觀。#平衡 #戀愛 #情侶 #心理',
+        vi: '10 vòng ảnh 2 lựa chọn cực hạn—6 kiểu giá trị trong yêu. #cân_bằng #yêu #cặp_đôi #tâm_lý',
+        id: '10 ronde gambar A/B ekstrem—6 tipe nilai cinta. #keseimbangan #pacaran #pasangan #psikologi',
+      },
+      thumbnail: 'p3_game_love_balance_extreme.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밸런스게임', '연애', '커플', '심리'],
+        en: ['Balance game', 'Dating', 'Couples', 'Psychology'],
+        ja: ['バランスゲーム', '恋愛', 'カップル', '心理'],
+        'zh-CN': ['平衡游戏', '恋爱', '情侣', '心理'],
+        'zh-TW': ['平衡遊戲', '戀愛', '情侶', '心理'],
+        vi: ['Trò cân bằng', 'Hẹn hò', 'Cặp đôi', 'Tâm lý'],
+        id: ['Game seimbang', 'Pacaran', 'Pasangan', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3GameLoveBalanceExtremeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3GameLoveBalanceExtremeQuestions}
+          results={phase3GameLoveBalanceExtremeResults}
+          questionCount={phase3GameLoveBalanceExtremeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

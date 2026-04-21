@@ -2926,6 +2926,61 @@
       "popularTestsTop5": "🔥 熱門測驗推薦前 5"
     }
   },
+  "phase3GameLoveBalanceExtremeTest": {
+    "startMessage": {
+      "line1": "戀愛極限二選一平衡遊戲。",
+      "line2": "兩個都討厭也得選一個。每次選擇都會露出你的戀愛觀與價值觀。",
+      "line3": "一個人也好玩，和對象或曖昧對象一起玩更炸。答案不一樣時那句「你怎麼選這個？！」就是高潮。",
+      "line4": "10 輪，沒有退路。",
+      "line5": "極限平衡開始 ⚡\n第 1 輪，開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（戀愛極限平衡遊戲）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "roundLead": "第 {current} 輪. ",
+      "roundCount": "第 {current} / {total} 輪",
+      "oneLiner": "戀愛觀一句話",
+      "loveKeywords": "戀愛風格關鍵字",
+      "happyLove": "這種類型在戀愛裡最舒服的狀態",
+      "hardMoment": "這種類型最難熬的時刻",
+      "goodMatch": "最合拍的對象類型",
+      "badMatch": "最容易踩雷的對象類型",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "resultType1": "戀愛極限平衡結果：獨立自由型🦅 情侶一起玩答案不一樣當場吵翻（笑）你也試試",
+      "resultType2": "戀愛極限平衡結果：現實求穩型🏠 第6輪分手威脅 vs 冷暴力太難選…建議和對象一起測",
+      "resultType3": "戀愛極限平衡結果：邏輯平衡型⚖️ 我按情境換答案就測出這個→和對象對比肯定吵（笑）",
+      "resultType4": "戀愛極限平衡結果：感性直覺型💓 第10輪最虐…不說出口的深愛 vs 甜但淺的愛→兩人一起測",
+      "resultType5": "戀愛極限平衡結果：全心投入型🔥 為愛吃苦就是我…情侶玩保證答案打架",
+      "resultType6": "戀愛極限平衡結果：自尊優先型👑 任何情況都先護住自己，準。和對象比比看（笑）",
+      "startDefault": "戀愛極限平衡 💔 10 輪圖片二選一",
+      "startKakao": "戀愛極限平衡 💔 10 輪圖片二選一",
+      "startWechat": "戀愛極限平衡 💔 10 輪圖片二選一",
+      "startWhatsapp": "戀愛極限平衡 💔 10 輪圖片二選一",
+      "startTelegram": "戀愛極限平衡 💔 10 輪圖片二選一",
+      "startLine": "戀愛極限平衡 💔 10 輪圖片二選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦前 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦前 5"
+    }
+  },
   "phase3TanjinjamSpendingTypeTest": {
     "startMessage": {
       "line1": "你知道花錢時最幸福的瞬間是什麼時候嗎？",

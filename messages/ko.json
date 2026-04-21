@@ -2181,6 +2181,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3GameLoveBalanceExtremeTest": {
+    "startMessage": {
+      "line1": "절대 고를 수 없는 연애 밸런스 게임입니다.",
+      "line2": "둘 다 싫은데 하나를 골라야 합니다. 고를 때마다 당신의 연애관과 가치관이 드러납니다.",
+      "line3": "혼자 해도 좋지만 연인이나 썸남·썸녀랑 같이 하면 더 재밌습니다. 서로 다른 선택을 했을 때 \"어떻게 그걸 골라?!\"가 터지는 순간이 이 게임의 하이라이트입니다.",
+      "line4": "10라운드. 도망칠 수 없습니다.",
+      "line5": "극한 밸런스 게임 시작 ⚡\n라운드 1 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (밸런스 게임 - 연애편 극한버전)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "roundLead": "라운드 {current}. ",
+      "roundCount": "라운드 {current} / {total}",
+      "oneLiner": "연애관 한 줄",
+      "loveKeywords": "연애관 키워드",
+      "happyLove": "이 유형이 행복한 연애",
+      "hardMoment": "이 유형이 힘든 순간",
+      "goodMatch": "이 유형과 최고의 조합",
+      "badMatch": "이 유형과 최악의 조합",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "resultType1": "밸런스 게임 연애 극한 결과: 독립 자유형 🦅 커플이랑 같이 해봤는데 선택이 달라서 '어떻게 그걸 골라?!' 가 터짐 ㅋㅋ → 너도 해봐",
+      "resultType2": "밸런스 게임 연애 극한 결과: 현실 안정 추구형 🏠 Q6 헤어지자 vs 잠수 고르는 거 너무 힘들었음 ㅠ → 커플이랑 같이 해봐",
+      "resultType3": "밸런스 게임 연애 극한 결과: 논리 균형형 ⚖️ 상황 따라 다르게 골랐더니 이 유형 나옴 → 연인이랑 비교해봐 분명 달라서 싸움 남 ㅋㅋ",
+      "resultType4": "밸런스 게임 연애 극한 결과: 감성 직관형 💓 Q10이 가장 힘들었음... 표현 없는 진심 vs 표현 풍부 얕은 사랑 → 연인이랑 같이 해봐",
+      "resultType5": "밸런스 게임 연애 극한 결과: 헌신 몰입형 🔥 사랑 앞에 다 감수하는 거 맞음... 커플이랑 같이 해봐 → 선택 달라서 '어떻게 그걸 골라?!' 보장",
+      "resultType6": "밸런스 게임 연애 극한 결과: 자존감 우선형 👑 어떤 상황에서도 나를 지킨다는 거 맞음. 이거 연인이랑 해봐 → 선택 차이 실화일 거야 ㅋㅋ",
+      "startDefault": "밸런스 게임 연애편 극한버전 💔 10문항 이미지 밸런스",
+      "startKakao": "밸런스 게임 연애편 극한버전 💔 10문항 이미지 밸런스",
+      "startWechat": "밸런스 게임 연애편 극한버전 💔 10문항 이미지 밸런스",
+      "startWhatsapp": "밸런스 게임 연애편 극한버전 💔 10문항 이미지 밸런스",
+      "startTelegram": "밸런스 게임 연애편 극한버전 💔 10문항 이미지 밸런스",
+      "startLine": "밸런스 게임 연애편 극한버전 💔 10문항 이미지 밸런스"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3TanjinjamSpendingTypeTest": {
     "startMessage": {
       "line1": "돈을 쓸 때 가장 행복한 순간이 언제인지 알고 있나요?",
