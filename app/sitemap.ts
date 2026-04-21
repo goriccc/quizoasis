@@ -80,6 +80,7 @@ const testSlugs = [
   'phase3-godsaeng-index-measurement',
   'phase3-office-balance-game',
   'phase3-office-survival-type',
+  'phase3-real-friend-condition-analysis',
   'phase3-team-work-chemistry-test',
 ];
 

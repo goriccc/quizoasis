@@ -142,6 +142,10 @@ import {
   phase3OfficeSurvivalTypeResults,
 } from '@/lib/phase3OfficeSurvivalTypeData';
 import {
+  phase3RealFriendConditionAnalysisQuestions,
+  phase3RealFriendConditionAnalysisResults,
+} from '@/lib/phase3RealFriendConditionAnalysisData';
+import {
   phase3TfIndexPreciseMeasurementQuestions,
   phase3TfIndexPreciseMeasurementResults,
 } from '@/lib/phase3TfIndexPreciseMeasurementData';
@@ -471,6 +475,10 @@ const Phase3OfficeBalanceGameTestClient = dynamic(
 );
 const Phase3OfficeSurvivalTypeTestClient = dynamic(
   () => import('@/components/Phase3OfficeSurvivalTypeTestClient'),
+  { ssr: false }
+);
+const Phase3RealFriendConditionAnalysisTestClient = dynamic(
+  () => import('@/components/Phase3RealFriendConditionAnalysisTestClient'),
   { ssr: false }
 );
 const Phase3TfIndexPreciseMeasurementTestClient = dynamic(
@@ -2337,6 +2345,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['職場', '公司', '共感', '生存'],
         vi: ['Công sở', 'Công ty', 'Đồng cảm', 'Sinh tồn'],
         id: ['Kantor', 'Kerja', 'Empati', 'Bertahan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-real-friend-condition-analysis') {
+    test = {
+      slug: 'phase3-real-friend-condition-analysis',
+      title: {
+        ko: '나의 찐친 조건 분석',
+        en: 'My Real Best Friend Criteria — Analysis',
+        ja: '本当の親友条件 分析',
+        'zh-CN': '我的真朋友条件分析',
+        'zh-TW': '我的真朋友條件分析',
+        vi: 'Phân tích tiêu chí bạn thân của tôi',
+        id: 'Analisis kriteria sahabat sejatiku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 나의 찐친 조건·유형 6가지. #우정 #친구 #관계 #공감',
+        en: '12 multiple-choice questions — 6 types for your real best friend criteria. #friendship #friends #relationships #empathy',
+        ja: '12問4択で見る本当の親友条件・6タイプ。#友情 #友だち #関係 #共感',
+        'zh-CN': '12 道四选一，六种真朋友条件类型。#友情 #朋友 #关系 #共情',
+        'zh-TW': '12 題四選一，六種真朋友條件類型。#友情 #朋友 #關係 #共情',
+        vi: '12 câu trắc nghiệm — 6 kiểu tiêu chí bạn thân đích thực. #tình bạn #bạn #quan hệ #đồng cảm',
+        id: '12 pertanyaan pilihan ganda — 6 tipe kriteria sahabat sejati. #persahabatan #teman #hubungan #empati',
+      },
+      thumbnail: 'p3_test_real_friend_condition_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['우정', '친구', '관계', '공감'],
+        en: ['Friendship', 'Friends', 'Relationships', 'Empathy'],
+        ja: ['友情', '友だち', '人間関係', '共感'],
+        'zh-CN': ['友情', '朋友', '关系', '共情'],
+        'zh-TW': ['友情', '朋友', '關係', '共感'],
+        vi: ['Tình bạn', 'Bạn bè', 'Quan hệ', 'Đồng cảm'],
+        id: ['Persahabatan', 'Teman', 'Hubungan', 'Empati'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5151,6 +5196,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3OfficeSurvivalTypeQuestions}
           results={phase3OfficeSurvivalTypeResults}
           questionCount={phase3OfficeSurvivalTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-real-friend-condition-analysis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-real-friend-condition-analysis',
+      title: {
+        ko: '나의 찐친 조건 분석',
+        en: 'My Real Best Friend Criteria — Analysis',
+        ja: '本当の親友条件 分析',
+        'zh-CN': '我的真朋友条件分析',
+        'zh-TW': '我的真朋友條件分析',
+        vi: 'Phân tích tiêu chí bạn thân của tôi',
+        id: 'Analisis kriteria sahabat sejatiku',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 나의 찐친 조건·유형 6가지. #우정 #친구 #관계 #공감',
+        en: '12 multiple-choice questions — 6 types for your real best friend criteria. #friendship #friends #relationships #empathy',
+        ja: '12問4択で見る本当の親友条件・6タイプ。#友情 #友だち #関係 #共感',
+        'zh-CN': '12 道四选一，六种真朋友条件类型。#友情 #朋友 #关系 #共情',
+        'zh-TW': '12 題四選一，六種真朋友條件類型。#友情 #朋友 #關係 #共情',
+        vi: '12 câu trắc nghiệm — 6 kiểu tiêu chí bạn thân đích thực. #tình bạn #bạn #quan hệ #đồng cảm',
+        id: '12 pertanyaan pilihan ganda — 6 tipe kriteria sahabat sejati. #persahabatan #teman #hubungan #empati',
+      },
+      thumbnail: 'p3_test_real_friend_condition_analysis.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['우정', '친구', '관계', '공감'],
+        en: ['Friendship', 'Friends', 'Relationships', 'Empathy'],
+        ja: ['友情', '友だち', '人間関係', '共感'],
+        'zh-CN': ['友情', '朋友', '关系', '共情'],
+        'zh-TW': ['友情', '朋友', '關係', '共感'],
+        vi: ['Tình bạn', 'Bạn bè', 'Quan hệ', 'Đồng cảm'],
+        id: ['Persahabatan', 'Teman', 'Hubungan', 'Empati'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3RealFriendConditionAnalysisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3RealFriendConditionAnalysisQuestions}
+          results={phase3RealFriendConditionAnalysisResults}
+          questionCount={phase3RealFriendConditionAnalysisQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

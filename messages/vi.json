@@ -3373,6 +3373,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3RealFriendConditionAnalysisTest": {
+    "startMessage": {
+      "line1": "Bạn bè nhiều—sao bạn thân đích thực lại ít thế?",
+      "line2": "Có người liên lạc hơn 10 năm vẫn thân, có người gặp thường xuyên mà vẫn xa dần. Nhiều khi không phải lỗi đối phương—bạn vô thức có “tiêu chí tình bạn” riêng.",
+      "line3": "12 câu phân tích bạn duy trì thân lâu với kiểu người nào, điều gì làm tình bạn sâu hơn, và điều quan trọng nhất với bạn thân đích thực.",
+      "line4": "Xem xong hãy chia sẻ kết quả với người bạn đó.",
+      "line5": "Phân tích tiêu chí bạn thân của tôi 👫 Bắt đầu ngay"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (tiêu chí bạn thân)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "scoreRange": "Khoảng điểm",
+      "keywords": "Từ khóa tiêu chí bạn thân",
+      "whyStays": "Vì sao kiểu gắn kết này bền",
+      "whyDrifts": "Vì sao kiểu gắn kết này phai",
+      "oftenHeard": "Câu bạn thân hay nói với bạn",
+      "happyMoment": "Khoảnh khắc hạnh phúc nhất của kiểu này",
+      "contactPattern": "Kiểu liên lạc với bạn thân",
+      "bestMatch": "Kiểu bạn thân hợp nhất",
+      "clashStyle": "Kiểu dễ xung đột với bạn",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "type1": "Kiểu bạn thân: Đồng hành thầm lặng 🌿 Thoải mái dù không làm gì—gửi cho người mỗi lần gặp như hôm qua",
+      "type2": "Kiểu bạn thân: Lưới an toàn tin cậy 🤝 Nhớ đầu tiên khi khó—gửi cho người thực sự ở bên",
+      "type3": "Kiểu bạn thân: Chia năng lượng vui 🎉 Quên cả thời gian khi ở cùng—gửi cho người khiến bạn cười không ngớt",
+      "type4": "Kiểu bạn thân: Cùng tiến bộ 🚀 Gặp là muốn cố gắng hơn—gửi cho nhóm tiếp thêm động lực",
+      "type5": "Kiểu bạn thân: Thần giao cảm ứng 🌙 Không nói cũng hiểu—gửi cho người “chỉ cần nhìn là biết”",
+      "type6": "Kiểu bạn thân: Thời gian lắng đọng ⏳ Càng lâu càng sâu—gửi cho người hay nói “ta đã bên nhau lâu rồi”",
+      "startDefault": "Phân tích tiêu chí bạn thân 👫 12 câu, 4 lựa chọn",
+      "startKakao": "Phân tích tiêu chí bạn thân 👫 12 câu, 4 lựa chọn",
+      "startWechat": "Phân tích tiêu chí bạn thân 👫 12 câu, 4 lựa chọn",
+      "startWhatsapp": "Phân tích tiêu chí bạn thân 👫 12 câu, 4 lựa chọn",
+      "startTelegram": "Phân tích tiêu chí bạn thân 👫 12 câu, 4 lựa chọn",
+      "startLine": "Phân tích tiêu chí bạn thân 👫 12 câu, 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T hay F? Cuộc tranh luận đó vẫn chưa kết thúc.",

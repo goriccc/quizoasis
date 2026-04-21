@@ -3373,6 +3373,62 @@
       "popularTestsTop5": "🔥 热门测试推荐前 5"
     }
   },
+  "phase3RealFriendConditionAnalysisTest": {
+    "startMessage": {
+      "line1": "朋友很多，为什么真朋友却这么少？",
+      "line2": "有人联系十几年还在，也有人常常见面却慢慢走远。很多时候不是对方的问题，而是你潜意识里对友情有自己的条件。",
+      "line3": "12 道题分析你和谁友谊更长久、什么让友情更深、真朋友对你最重要的是什么。",
+      "line4": "测完把结果发给那位真朋友试试。",
+      "line5": "分析我的真朋友条件 👫 立即开始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告位（真朋友条件分析）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "scoreRange": "总分区间",
+      "keywords": "真朋友条件关键词",
+      "whyStays": "这类友谊为何能维持",
+      "whyDrifts": "这类友谊为何会变淡",
+      "happyMoment": "这一型最幸福的时刻",
+      "oftenHeard": "真朋友常对你说的话",
+      "contactPattern": "与真朋友的联系模式",
+      "bestMatch": "最合拍的真朋友风格",
+      "clashStyle": "与这一型容易冲突的风格",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "type1": "我的真朋友类型：无声陪伴 🌿 什么都不做也舒服——发给每次见面都像昨天的那位",
+      "type2": "我的真朋友类型：信任安全网 🤝 难过时最先想到的人——发给真正在场的那位",
+      "type3": "我的真朋友类型：活力共享 🎉 在一起就忘了时间——发给让你笑不停的那位",
+      "type4": "我的真朋友类型：成长伙伴 🚀 见了面就想变得更好——发给互相打气的那位",
+      "type5": "我的真朋友类型：默契感应 🌙 不用说也懂你——发给心有灵犀的那位",
+      "type6": "我的真朋友类型：时光沉淀 ⏳ 越久越深——发给会说“我们认识好久了”的那位",
+      "startDefault": "真朋友条件分析 👫 12 题四选一",
+      "startKakao": "真朋友条件分析 👫 12 题四选一",
+      "startWechat": "真朋友条件分析 👫 12 题四选一",
+      "startWhatsapp": "真朋友条件分析 👫 12 题四选一",
+      "startTelegram": "真朋友条件分析 👫 12 题四选一",
+      "startLine": "真朋友条件分析 👫 12 题四选一"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐前 5",
+      "popularTestsTop5": "🔥 热门测试推荐前 5"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T还是F？这场争论还没结束。",

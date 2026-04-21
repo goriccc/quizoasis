@@ -3373,6 +3373,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3RealFriendConditionAnalysisTest": {
+    "startMessage": {
+      "line1": "Teman banyak—kok sahabat sejati sedikit?",
+      "line2": "Ada yang tetap kontak 10+ tahun, ada yang sering ketemu malah menjauh. Seringnya bukan salah mereka—kamu punya “aturan persahabatan” tanpa sadar.",
+      "line3": "12 pertanyaan menganalisis dengan siapa persahabatanmu paling awet, apa yang memperdalam ikatan, dan apa yang paling penting dalam sahabat sejati bagimu.",
+      "line4": "Setelah dapat hasil, bagikan ke teman itu.",
+      "line5": "Analisis kriteria sahabat sejatiku 👫 Mulai sekarang"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (kriteria sahabat sejati)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "scoreRange": "Rentang skor",
+      "keywords": "Kata kunci kriteria sahabat",
+      "whyStays": "Mengapa ikatan ini bertahan",
+      "whyDrifts": "Mengapa ikatan ini memudar",
+      "oftenHeard": "Kalimat yang sering teman ucapkan kepadamu",
+      "happyMoment": "Momen paling bahagia untuk tipe ini",
+      "contactPattern": "Pola kontak dengan sahabat",
+      "bestMatch": "Gaya sahabat yang paling cocok",
+      "clashStyle": "Gaya yang sering bentrok denganmu",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "type1": "Tipe sahabat: Pendamping tenang 🌿 Nyaman tanpa melakukan apa pun—kirim ke teman yang setiap ketemu seperti kemarin",
+      "type2": "Tipe sahabat: Jaring pengaman 🤝 Yang pertama teringat saat susah—kirim ke yang benar-benar ada di sampingmu",
+      "type3": "Tipe sahabat: Bagi energi seru 🎉 Waktu cepat berlalu bareng mereka—kirim ke yang bikin kamu ketawa terus",
+      "type4": "Tipe sahabat: Mitra tumbuh 🚀 Ketemu jadi ingin lebih baik—kirim ke yang saling dorong maju",
+      "type5": "Tipe sahabat: Telepati perasaan 🌙 Tanpa bicara sudah paham—kirim ke yang “cukup tatap sudah tahu”",
+      "type6": "Tipe sahabat: Mengendap waktu ⏳ Makin lama makin dalam—kirim ke yang sering bilang “kita sudah lama banget”",
+      "startDefault": "Analisis kriteria sahabat sejati 👫 12 soal, 4 pilihan",
+      "startKakao": "Analisis kriteria sahabat sejati 👫 12 soal, 4 pilihan",
+      "startWechat": "Analisis kriteria sahabat sejati 👫 12 soal, 4 pilihan",
+      "startWhatsapp": "Analisis kriteria sahabat sejati 👫 12 soal, 4 pilihan",
+      "startTelegram": "Analisis kriteria sahabat sejati 👫 12 soal, 4 pilihan",
+      "startLine": "Analisis kriteria sahabat sejati 👫 12 soal, 4 pilihan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3TfIndexPreciseMeasurementTest": {
     "startMessage": {
       "line1": "T atau F? Perdebatan itu belum selesai.",
