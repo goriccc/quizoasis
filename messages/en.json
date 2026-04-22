@@ -1338,6 +1338,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3SpendingDarkHistoryTypeTest": {
+    "startMessage": {
+      "line1": "We’ve all had that spending dark history at least once.",
+      "line2": "Three months at the gym and zero visits. Food you ordered for a coupon and hated. Clothes you bought on sale and never wore once. A free trial you forgot to cancel—still charging.",
+      "line3": "It’s embarrassing to say out loud, but almost everyone has been there.",
+      "line4": "Twelve questions to find your spending slip-up type—and tips to stop it from happening again. This time, really try to fix it.",
+      "line5": "Find my spending dark-history type 💸 Start the roast quiz"
+    },
+    "ui": {
+      "shareResult": "Share result",
+      "goToTest": "Take the quiz",
+      "adsenseTitle": "AdSense (Spending dark-history type)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "dangerLevel": "Dark-history risk",
+      "representativeHistory": "Signature slip-up",
+      "futureRisk": "Future risk to watch",
+      "prevention": "Prevention & playbook",
+      "todayTodo": "Today’s task"
+    },
+    "result": {
+      "empathyIndexTitle": "📊 Spending slip-up empathy index (Korea-style poll)",
+      "empathyIndexBody": "━━━━━━━━━━━━━━━━━━━━━━━━\n\nSigned up for the gym but barely went\n██████████ est. 73%\n\nForgot to cancel a free trial\n█████████░ est. 68%\n\nMissed the return window\n████████░░ est. 61%\n\nQuit a pretty planner before March\n███████░░░ est. 55%\n\nBlack Friday overspend\n██████░░░░ est. 49%\n\nPaid for a course, watched only lesson 1\n█████░░░░░ est. 42%\n\n━━━━━━━━━━━━━━━━━━━━━━━━\nYou’re not the only one.\nMost people share similar patterns.\n━━━━━━━━━━━━━━━━━━━━━━━━"
+    },
+    "shareMessages": {
+      "default": "Spending dark-history result: {type} — what’s your type?",
+      "kakao": "Spending dark-history result: {type} — what’s your type?",
+      "wechat": "Spending dark-history result: {type} — what’s your type?",
+      "whatsapp": "Spending dark-history result: {type} — what’s your type?",
+      "telegram": "Spending dark-history result: {type} — what’s your type?",
+      "line": "Spending dark-history result: {type} — what’s your type?",
+      "startDefault": "The spending dark history that threatens your wallet 💸 12-question roast quiz",
+      "startKakao": "The spending dark history that threatens your wallet 💸 12-question roast quiz",
+      "startWechat": "The spending dark history that threatens your wallet 💸 12-question roast quiz",
+      "startWhatsapp": "The spending dark history that threatens your wallet 💸 12-question roast quiz",
+      "startTelegram": "The spending dark history that threatens your wallet 💸 12-question roast quiz",
+      "startLine": "The spending dark history that threatens your wallet 💸 12-question roast quiz"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3DopamineTypeTest": {
     "startMessage": {
       "line1": "Ever have a moment when you think, \"That’s why I live\"?",

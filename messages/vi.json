@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3SpendingDarkHistoryTypeTest": {
+    "startMessage": {
+      "line1": "Chuyện “hố đen” chi tiêu — ai cũng có vài lần.",
+      "line2": "Đăng ký gym ba tháng mà không đi. Đồ ăn gọi vì coupon mà dở tệ. Đồ sale mua xong không mặc lần nào. Quên hủy dùng thử miễn phí nên vẫn bị trừ tiền.",
+      "line3": "Nói ra hơi ngại, nhưng hầu như ai cũng từng vậy.",
+      "line4": "12 câu hỏi để tìm kiểu “hố đen” chi tiêu của bạn — kèm cách tránh lặp lại. Lần này hãy thật sự thử sửa nhé.",
+      "line5": "Tìm kiểu hố đen chi tiêu của tôi 💸 Bắt đầu quiz tự vạch mặt"
+    },
+    "ui": {
+      "shareResult": "Chia sẻ kết quả",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "AdSense (kiểu hố đen chi tiêu)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "dangerLevel": "Mức rủi ro hố đen",
+      "representativeHistory": "Sai lầm điển hình",
+      "futureRisk": "Rủi ro tương lai",
+      "prevention": "Phòng ngừa & cách làm",
+      "todayTodo": "Việc hôm nay"
+    },
+    "result": {
+      "empathyIndexTitle": "📊 Chỉ số đồng cảm “hố đen” chi tiêu (tham khảo)",
+      "empathyIndexBody": "━━━━━━━━━━━━━━━━━━━━━━━━\n\nĐăng ký gym mà hầu như không đi\n██████████ ước tính 73%\n\nQuên hủy dùng thử miễn phí\n█████████░ ước tính 68%\n\nLỡ hạn đổi trả\n████████░░ ước tính 61%\n\nMua sổ planner xinh rồi bỏ trước tháng 3\n███████░░░ ước tính 55%\n\nBlack Friday mua quá tay\n██████░░░░ ước tính 49%\n\nMua khóa học mà chỉ xem bài 1\n█████░░░░░ ước tính 42%\n\n━━━━━━━━━━━━━━━━━━━━━━━━\nKhông chỉ mình bạn.\nNhiều người có mô hình tương tự.\n━━━━━━━━━━━━━━━━━━━━━━━━"
+    },
+    "shareMessages": {
+      "default": "Kết quả test hố đen chi tiêu: {type} — bạn thuộc kiểu nào?",
+      "kakao": "Kết quả test hố đen chi tiêu: {type} — bạn thuộc kiểu nào?",
+      "wechat": "Kết quả test hố đen chi tiêu: {type} — bạn thuộc kiểu nào?",
+      "whatsapp": "Kết quả test hố đen chi tiêu: {type} — bạn thuộc kiểu nào?",
+      "telegram": "Kết quả test hố đen chi tiêu: {type} — bạn thuộc kiểu nào?",
+      "line": "Kết quả test hố đen chi tiêu: {type} — bạn thuộc kiểu nào?",
+      "startDefault": "Kiểu hố đen chi tiêu đe dọa ví tiền 💸 Quiz 12 câu tự vạch mặt",
+      "startKakao": "Kiểu hố đen chi tiêu đe dọa ví tiền 💸 Quiz 12 câu tự vạch mặt",
+      "startWechat": "Kiểu hố đen chi tiêu đe dọa ví tiền 💸 Quiz 12 câu tự vạch mặt",
+      "startWhatsapp": "Kiểu hố đen chi tiêu đe dọa ví tiền 💸 Quiz 12 câu tự vạch mặt",
+      "startTelegram": "Kiểu hố đen chi tiêu đe dọa ví tiền 💸 Quiz 12 câu tự vạch mặt",
+      "startLine": "Kiểu hố đen chi tiêu đe dọa ví tiền 💸 Quiz 12 câu tự vạch mặt"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ đến KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự được đề xuất",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
+    }
+  },
   "phase3DopamineTypeTest": {
     "startMessage": {
       "line1": "Bạn có khoảnh khắc nào thấy “đây mới là lý do mình sống”?",

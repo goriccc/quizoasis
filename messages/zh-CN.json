@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase3SpendingDarkHistoryTypeTest": {
+    "startMessage": {
+      "line1": "那种消费黑历史，谁都有过几次。",
+      "line2": "办了三个月健身一次没去。为了优惠券点的餐难吃得要命。打折买的衣服一次没穿。忘了取消试用一直被扣款。",
+      "line3": "说出来有点丢人，但其实大家都经历过。",
+      "line4": "12 道题帮你找出你的消费黑历史类型，还有防再犯小贴士。这次真的试着改一改吧。",
+      "line5": "找出我的消费黑历史类型 💸 开测自黑"
+    },
+    "ui": {
+      "shareResult": "分享结果",
+      "goToTest": "开始测试",
+      "adsenseTitle": "AdSense（消费黑历史类型）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "dangerLevel": "黑历史风险",
+      "representativeHistory": "典型踩坑",
+      "futureRisk": "未来需注意",
+      "prevention": "预防与对策",
+      "todayTodo": "今日任务"
+    },
+    "result": {
+      "empathyIndexTitle": "📊 消费黑历史共鸣指数（参考）",
+      "empathyIndexBody": "━━━━━━━━━━━━━━━━━━━━━━━━\n\n办了健身卡却几乎不去\n██████████ 约 73%\n\n忘了取消免费试用\n█████████░ 约 68%\n\n错过退货期限\n████████░░ 约 61%\n\n买了漂亮手帐三月前就弃用\n███████░░░ 约 55%\n\n黑五买太多后悔\n██████░░░░ 约 49%\n\n买了课只看了第一节\n█████░░░░░ 约 42%\n\n━━━━━━━━━━━━━━━━━━━━━━━━\n不是你一个人。\n很多人都有相似模式。\n━━━━━━━━━━━━━━━━━━━━━━━━"
+    },
+    "shareMessages": {
+      "default": "消费黑历史测试结果：{type} — 你是哪种类型？",
+      "kakao": "消费黑历史测试结果：{type} — 你是哪种类型？",
+      "wechat": "消费黑历史测试结果：{type} — 你是哪种类型？",
+      "whatsapp": "消费黑历史测试结果：{type} — 你是哪种类型？",
+      "telegram": "消费黑历史测试结果：{type} — 你是哪种类型？",
+      "line": "消费黑历史测试结果：{type} — 你是哪种类型？",
+      "startDefault": "威胁钱包的消费黑历史类型 💸 12 题自黑测试",
+      "startKakao": "威胁钱包的消费黑历史类型 💸 12 题自黑测试",
+      "startWechat": "威胁钱包的消费黑历史类型 💸 12 题自黑测试",
+      "startWhatsapp": "威胁钱包的消费黑历史类型 💸 12 题自黑测试",
+      "startTelegram": "威胁钱包的消费黑历史类型 💸 12 题自黑测试",
+      "startLine": "威胁钱包的消费黑历史类型 💸 12 题自黑测试"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！在微信中粘贴并分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐前5名",
+      "popularTestsTop5": "🔥 最近热门测试前5名"
+    }
+  },
   "phase3DopamineTypeTest": {
     "startMessage": {
       "line1": "有没有一瞬间让你觉得「这就是我活着的理由」？",

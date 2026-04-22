@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3SpendingDarkHistoryTypeTest": {
+    "startMessage": {
+      "line1": "Riwayat belanja gelap yang bikin malu — semua orang pernah.",
+      "line2": "Daftar gym tiga bulan tapi tidak pernah datang. Makanan karena kupon tapi tidak enak. Baju diskon dibeli tapi tidak pernah dipakai. Lupa batalkan uji coba gratis jadi tetap kena tagihan.",
+      "line3": "Memang malu kalau diceritakan, tapi hampir semua orang pernah mengalaminya.",
+      "line4": "12 pertanyaan untuk menemukan tipe riwayat belanja gelapmu — plus tips agar tidak terulang. Kali ini benar-benar coba perbaiki ya.",
+      "line5": "Cari tipe riwayat belanja gelapku 💸 Mulai kuis jujur"
+    },
+    "ui": {
+      "shareResult": "Bagikan hasil",
+      "goToTest": "Mulai tes",
+      "adsenseTitle": "AdSense (tipe riwayat belanja gelap)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "dangerLevel": "Risiko riwayat gelap",
+      "representativeHistory": "Kesalahan khas",
+      "futureRisk": "Risiko ke depan",
+      "prevention": "Pencegahan & langkah",
+      "todayTodo": "Tugas hari ini"
+    },
+    "result": {
+      "empathyIndexTitle": "📊 Indeks empati riwayat belanja gelap (perkiraan)",
+      "empathyIndexBody": "━━━━━━━━━━━━━━━━━━━━━━━━\n\nDaftar gym tapi jarang datang\n██████████ perkiraan 73%\n\nLupa batalkan uji coba gratis\n█████████░ perkiraan 68%\n\nTerlewat jendela retur\n████████░░ perkiraan 61%\n\nBeli planner lucu lalu berhenti sebelum Maret\n███████░░░ perkiraan 55%\n\nBlack Friday belanja berlebihan\n██████░░░░ perkiraan 49%\n\nBeli kursus tapi hanya tonton pelajaran 1\n█████░░░░░ perkiraan 42%\n\n━━━━━━━━━━━━━━━━━━━━━━━━\nBukan hanya kamu.\nBanyak orang punya pola serupa.\n━━━━━━━━━━━━━━━━━━━━━━━━"
+    },
+    "shareMessages": {
+      "default": "Hasil tes riwayat belanja gelap: {type} — kamu tipe apa?",
+      "kakao": "Hasil tes riwayat belanja gelap: {type} — kamu tipe apa?",
+      "wechat": "Hasil tes riwayat belanja gelap: {type} — kamu tipe apa?",
+      "whatsapp": "Hasil tes riwayat belanja gelap: {type} — kamu tipe apa?",
+      "telegram": "Hasil tes riwayat belanja gelap: {type} — kamu tipe apa?",
+      "line": "Hasil tes riwayat belanja gelap: {type} — kamu tipe apa?",
+      "startDefault": "Tipe riwayat belanja gelap yang mengancam dompet 💸 Tes 12 soal jujur",
+      "startKakao": "Tipe riwayat belanja gelap yang mengancam dompet 💸 Tes 12 soal jujur",
+      "startWechat": "Tipe riwayat belanja gelap yang mengancam dompet 💸 Tes 12 soal jujur",
+      "startWhatsapp": "Tipe riwayat belanja gelap yang mengancam dompet 💸 Tes 12 soal jujur",
+      "startTelegram": "Tipe riwayat belanja gelap yang mengancam dompet 💸 Tes 12 soal jujur",
+      "startLine": "Tipe riwayat belanja gelap yang mengancam dompet 💸 Tes 12 soal jujur"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
+    }
+  },
   "phase3DopamineTypeTest": {
     "startMessage": {
       "line1": "Pernah ada momen kamu berpikir, “inilah alasanku hidup”?",

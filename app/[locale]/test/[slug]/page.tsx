@@ -78,6 +78,10 @@ import {
   phase3GameLoveBalanceExtremeResults,
 } from '@/lib/phase3GameLoveBalanceExtremeData';
 import {
+  phase3SpendingDarkHistoryTypeQuestions,
+  phase3SpendingDarkHistoryTypeResults,
+} from '@/lib/phase3SpendingDarkHistoryTypeData';
+import {
   phase3RoomPersonalityAnalysisQuestions,
   phase3RoomPersonalityAnalysisResults,
 } from '@/lib/phase3RoomPersonalityAnalysisData';
@@ -415,6 +419,10 @@ const Phase3SnsAlgorithmTypeTestClient = dynamic(
 );
 const Phase3GameLoveBalanceExtremeTestClient = dynamic(
   () => import('@/components/Phase3GameLoveBalanceExtremeTestClient'),
+  { ssr: false }
+);
+const Phase3SpendingDarkHistoryTypeTestClient = dynamic(
+  () => import('@/components/Phase3SpendingDarkHistoryTypeTestClient'),
   { ssr: false }
 );
 const Phase3RoomPersonalityAnalysisTestClient = dynamic(
@@ -1095,6 +1103,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['社群', '趨勢', '數位', '性格'],
         vi: ['SNS', 'Xu hướng', 'Số', 'Tính cách'],
         id: ['SNS', 'Tren', 'Digital', 'Kepribadian'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-spending-dark-history-type') {
+    test = {
+      slug: 'phase3-spending-dark-history-type',
+      title: {
+        ko: '내 지갑을 위협하는 소비 흑역사 유형',
+        en: 'Spending Dark-History Type (Wallet Threat)',
+        ja: '財布を脅かす消費ブラック履歴タイプ',
+        'zh-CN': '威胁钱包的消费黑历史类型',
+        'zh-TW': '威脅錢包的消費黑歷史類型',
+        vi: 'Kiểu “hố đen” tiêu xài đe dọa ví',
+        id: 'Tipe riwayat belanja gelap yang mengancam dompet',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 소비 흑역사 6유형 진단과 재발 방지책. #소비 #공감 #재테크',
+        en: '12 questions, 4 choices — 6 spending slip-up types + prevention tips. #spending #empathy #money',
+        ja: '12問4択で見る消費ブラック履歴6タイプと再発防止。#消費 #共感 #家計',
+        'zh-CN': '12 道四选一，六种消费黑历史与防再犯。#消费 #共情 #理财',
+        'zh-TW': '12 題四選一，六種消費黑歷史與防再犯。#消費 #共情 #理財',
+        vi: '12 câu 4 lựa chọn — 6 kiểu “hố đen” chi tiêu và cách tránh lặp lại.',
+        id: '12 soal 4 pilihan — 6 tipe kesalahan belanja dan pencegahan.',
+      },
+      thumbnail: 'p3_test_spending_dark_history_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소비', '공감', '재테크'],
+        en: ['Spending', 'Empathy', 'Money tips'],
+        ja: ['消費', '共感', '家計'],
+        'zh-CN': ['消费', '共情', '理财'],
+        'zh-TW': ['消費', '共情', '理財'],
+        vi: ['Chi tiêu', 'Đồng cảm', 'Tài chính'],
+        id: ['Belanja', 'Empati', 'Keuangan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4636,6 +4681,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3GameLoveBalanceExtremeQuestions}
           results={phase3GameLoveBalanceExtremeResults}
           questionCount={phase3GameLoveBalanceExtremeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-spending-dark-history-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-spending-dark-history-type',
+      title: {
+        ko: '내 지갑을 위협하는 소비 흑역사 유형',
+        en: 'Spending Dark-History Type (Wallet Threat)',
+        ja: '財布を脅かす消費ブラック履歴タイプ',
+        'zh-CN': '威胁钱包的消费黑历史类型',
+        'zh-TW': '威脅錢包的消費黑歷史類型',
+        vi: 'Kiểu “hố đen” tiêu xài đe dọa ví',
+        id: 'Tipe riwayat belanja gelap yang mengancam dompet',
+      },
+      description: {
+        ko: '12문항 4지선다로 보는 소비 흑역사 6유형 진단과 재발 방지책. #소비 #공감 #재테크',
+        en: '12 questions, 4 choices — 6 spending slip-up types + prevention tips. #spending #empathy #money',
+        ja: '12問4択で見る消費ブラック履歴6タイプと再発防止。#消費 #共感 #家計',
+        'zh-CN': '12 道四选一，六种消费黑历史与防再犯。#消费 #共情 #理财',
+        'zh-TW': '12 題四選一，六種消費黑歷史與防再犯。#消費 #共情 #理財',
+        vi: '12 câu 4 lựa chọn — 6 kiểu “hố đen” chi tiêu và cách tránh lặp lại.',
+        id: '12 soal 4 pilihan — 6 tipe kesalahan belanja dan pencegahan.',
+      },
+      thumbnail: 'p3_test_spending_dark_history_type.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소비', '공감', '재테크'],
+        en: ['Spending', 'Empathy', 'Money tips'],
+        ja: ['消費', '共感', '家計'],
+        'zh-CN': ['消费', '共情', '理财'],
+        'zh-TW': ['消費', '共情', '理財'],
+        vi: ['Chi tiêu', 'Đồng cảm', 'Tài chính'],
+        id: ['Belanja', 'Empati', 'Keuangan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SpendingDarkHistoryTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SpendingDarkHistoryTypeQuestions}
+          results={phase3SpendingDarkHistoryTypeResults}
+          questionCount={phase3SpendingDarkHistoryTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
