@@ -3888,10 +3888,7 @@
       "closeModal": "關閉",
       "correctExplanationTitle": "正解說明",
       "wrongTrapsTitle": "易錯提示",
-      "belowQuestionHint": "（可先點下方按鈕看解析）",
-      "nudgeQ5": "🐰🕳️ 這組合你聯想到駭客任務了嗎？找朋友一起解",
-      "nudgeQ9": "❄️⬆️🌨️⬆️ 認出「雪上加霜」了嗎？真的難",
-      "nudgeQ10": "🦊🍇😤 酸葡萄用表情畫出來——活下來就分享"
+      "belowQuestionHint": "（可先點下方按鈕看解析）"
     },
     "shareMessages": {
       "default": "表情測驗（電影與成語）—分享我的結果",

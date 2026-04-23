@@ -3881,10 +3881,7 @@
       "closeModal": "关闭",
       "correctExplanationTitle": "正解说明",
       "wrongTrapsTitle": "易错提示",
-      "belowQuestionHint": "（可先点下方按钮看解析）",
-      "nudgeQ5": "🐰🕳️ 这组合你联想到黑客帝国了吗？拉朋友一起解",
-      "nudgeQ9": "❄️⬆️🌨️⬆️ 认出「雪上加霜」了吗？真的难",
-      "nudgeQ10": "🦊🍇😤 酸葡萄用表情画出来——活下来就分享"
+      "belowQuestionHint": "（可先点下方按钮看解析）"
     },
     "shareMessages": {
       "default": "表情测验（电影与成语）—分享我的结果",

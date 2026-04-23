@@ -665,6 +665,7 @@ export default function Phase3EmojiMovieIdiomQuizTestClient({
     const resultNext = result.nextStep[locale as keyof typeof result.nextStep] || result.nextStep.ko;
     const resultScoreBand =
       result.scoreBand[locale as keyof typeof result.scoreBand] || result.scoreBand.ko;
+    const showScoreBand = result.type !== 'Type1';
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-emerald-50">
@@ -677,7 +678,9 @@ export default function Phase3EmojiMovieIdiomQuizTestClient({
               <p className="text-sm font-semibold text-orange-600 mb-1">
                 {t('ui.scoreSummary', { count: lastCorrectCount })}
               </p>
-              <p className="text-xs font-medium text-emerald-700 mb-2">{resultScoreBand}</p>
+              {showScoreBand && (
+                <p className="text-xs font-medium text-emerald-700 mb-2">{resultScoreBand}</p>
+              )}
               <div className="text-6xl mb-3">{result.emoji}</div>
               <h1 className="text-2xl md:text-3xl font-bold mb-3 text-gray-800">
                 {resultTitle}
@@ -919,9 +922,6 @@ export default function Phase3EmojiMovieIdiomQuizTestClient({
   const hintTraps =
     hintSource.wrongTraps[locale as keyof typeof hintSource.wrongTraps] || hintSource.wrongTraps.ko;
 
-  const nudgeKey =
-    hintOriginalIndex === 4 ? 'nudgeQ5' : hintOriginalIndex === 8 ? 'nudgeQ9' : hintOriginalIndex === 9 ? 'nudgeQ10' : null;
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-emerald-50">
       <div className="max-w-2xl mx-auto px-4 py-8">
@@ -958,15 +958,6 @@ export default function Phase3EmojiMovieIdiomQuizTestClient({
             <h2 className="mt-4 text-lg sm:text-xl font-bold text-gray-800 text-center leading-snug">
               {promptText}
             </h2>
-            {nudgeKey && (
-              <p className="mt-3 text-center text-xs sm:text-sm font-medium text-emerald-800 bg-emerald-50 border border-emerald-200 rounded-xl px-3 py-2">
-                {nudgeKey === 'nudgeQ5'
-                  ? t('ui.nudgeQ5')
-                  : nudgeKey === 'nudgeQ9'
-                    ? t('ui.nudgeQ9')
-                    : t('ui.nudgeQ10')}
-              </p>
-            )}
             <p className="text-center text-xs text-gray-500 mt-2">{t('ui.belowQuestionHint')}</p>
           </div>
 

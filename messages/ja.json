@@ -3882,10 +3882,7 @@
       "closeModal": "閉じる",
       "correctExplanationTitle": "正解の解説",
       "wrongTrapsTitle": "誤答のヒント",
-      "belowQuestionHint": "(下のボタンから解説を先に見られます)",
-      "nudgeQ5": "🐰🕳️ これでマトリックスとわかった？友だちともども挑戦",
-      "nudgeQ9": "❄️⬆️🌨️⬆️ 雪上加霜（ソルサンガサン）読めた？激ムズ",
-      "nudgeQ10": "🦊🍇😤 酸っぱいブドウを絵文字で。生き残ったらシェア"
+      "belowQuestionHint": "(下のボタンから解説を先に見られます)"
     },
     "shareMessages": {
       "default": "絵文字クイズ（映画＆慣用句）結果をシェア",

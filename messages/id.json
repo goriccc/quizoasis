@@ -3881,10 +3881,7 @@
       "closeModal": "Tutup",
       "correctExplanationTitle": "Penjelasan benar",
       "wrongTrapsTitle": "Petunjuk salah",
-      "belowQuestionHint": "(Penjelasan bisa dibuka di bawah)",
-      "nudgeQ5": "🐰🕳️ Kamu sadar ini Matrix? Ajak teman mengerjakan",
-      "nudgeQ9": "❄️⬆️🌨️⬆️ Kamu tahu 설상가상? Ini susah",
-      "nudgeQ10": "🦊🍇😤 Anggur masam dalam emoji—lolos? Bagikan"
+      "belowQuestionHint": "(Penjelasan bisa dibuka di bawah)"
     },
     "shareMessages": {
       "default": "Kuis emoji (film & peribahasa) — bagikan hasil",

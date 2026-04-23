@@ -3881,10 +3881,7 @@
       "closeModal": "Đóng",
       "correctExplanationTitle": "Giải thích đáp án",
       "wrongTrapsTitle": "Gợi ý nhầm",
-      "belowQuestionHint": "(Có thể xem giải thích ở nút bên dưới)",
-      "nudgeQ5": "🐰🕳️ Bạn nghĩ Matrix chỉ với emoji này? Rủ bạn làm chung",
-      "nudgeQ9": "❄️⬆️🌨️⬆️ Bạn đọ được 설상가상? Khó thật",
-      "nudgeQ10": "🦊🍇😤 Nho chua bằng emoji—sống sót thì chia sẻ"
+      "belowQuestionHint": "(Có thể xem giải thích ở nút bên dưới)"
     },
     "shareMessages": {
       "default": "Quiz emoji (phim & thành ngữ) — chia sẻ kết quả",

@@ -3,13 +3,13 @@
     "type": "Type1",
     "emoji": "🤯",
     "title": {
-      "ko": "이모티콘 해독 불가 🤯",
-      "en": "Emoji Decoder: Not Yet 🤯",
-      "ja": "絵文字読解：まだ難しい 🤯",
-      "zh-CN": "表情解读：还在入门 🤯",
-      "zh-TW": "表情解讀：還在入門 🤯",
-      "vi": "Giải emoji: chưa quen 🤯",
-      "id": "Pembaca emoji: masih awal 🤯"
+      "ko": "이모티콘 해독 불가",
+      "en": "Emoji Decoder: Not Yet",
+      "ja": "絵文字読解：まだ難しい",
+      "zh-CN": "表情解读：还在入门",
+      "zh-TW": "表情解讀：還在入門",
+      "vi": "Giải emoji: chưa quen",
+      "id": "Pembaca emoji: masih awal"
     },
     "shortDescription": {
       "ko": "이모티콘은 대화할 때만 쓰는 거라고 생각했죠?",
@@ -40,13 +40,13 @@
     "type": "Type2",
     "emoji": "🧩",
     "title": {
-      "ko": "이모티콘 해독 중급자 🧩",
-      "en": "Emoji Decoder: Intermediate 🧩",
-      "ja": "絵文字読解：中級 🧩",
-      "zh-CN": "表情解读：中级 🧩",
-      "zh-TW": "表情解讀：中級 🧩",
-      "vi": "Giải emoji: trung cấp 🧩",
-      "id": "Pembaca emoji: menengah 🧩"
+      "ko": "이모티콘 해독 중급자",
+      "en": "Emoji Decoder: Intermediate",
+      "ja": "絵文字読解：中級",
+      "zh-CN": "表情解读：中级",
+      "zh-TW": "表情解讀：中級",
+      "vi": "Giải emoji: trung cấp",
+      "id": "Pembaca emoji: menengah"
     },
     "shortDescription": {
       "ko": "영화는 좀 맞혔는데 관용구에서 막혔죠?",
@@ -78,13 +78,13 @@
     "type": "Type3",
     "emoji": "🎯",
     "title": {
-      "ko": "이모티콘 고수 🎯",
-      "en": "Emoji Decoder: Advanced 🎯",
-      "ja": "絵文字読解：上級 🎯",
-      "zh-CN": "表情解读：高手 🎯",
-      "zh-TW": "表情解讀：高手 🎯",
-      "vi": "Giải emoji: cao thủ 🎯",
-      "id": "Pembaca emoji: jago 🎯"
+      "ko": "이모티콘 고수",
+      "en": "Emoji Decoder: Advanced",
+      "ja": "絵文字読解：上級",
+      "zh-CN": "表情解读：高手",
+      "zh-TW": "表情解讀：高手",
+      "vi": "Giải emoji: cao thủ",
+      "id": "Pembaca emoji: jago"
     },
     "shortDescription": {
       "ko": "이모티콘으로 관용구까지 읽다니. 어휘력이 남다른 사람입니다.",
@@ -115,13 +115,13 @@
     "type": "Type4",
     "emoji": "🏆",
     "title": {
-      "ko": "이모티콘 마스터 🏆",
-      "en": "Emoji Master 🏆",
-      "ja": "絵文字マスター 🏆",
-      "zh-CN": "表情大师 🏆",
-      "zh-TW": "表情大師 🏆",
-      "vi": "Bậc thầy emoji 🏆",
-      "id": "Master emoji 🏆"
+      "ko": "이모티콘 마스터",
+      "en": "Emoji Master",
+      "ja": "絵文字マスター",
+      "zh-CN": "表情大师",
+      "zh-TW": "表情大師",
+      "vi": "Bậc thầy emoji",
+      "id": "Master emoji"
     },
     "shortDescription": {
       "ko": "10개 전부 맞혔습니다. 혹시 이미 답을 알고 계셨던 건 아니죠?",

@@ -12,13 +12,13 @@
     },
     "emojiLine": "🦁  👑",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
-      "en": "Which movie do these emojis represent?",
-      "ja": "この絵文字が表す映画のタイトルは？",
-      "zh-CN": "这些表情代表哪部电影？",
-      "zh-TW": "這些表情符號代表哪部電影？",
-      "vi": "Các emoji này gợi ý bộ phim nào?",
-      "id": "Emoji ini mewakili judul film apa?"
+      "ko": "위 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie title do the emojis above represent?",
+      "ja": "上の絵文字が表す映画のタイトルは？",
+      "zh-CN": "上面的表情代表哪部电影？",
+      "zh-TW": "上面的表情符號代表哪部電影？",
+      "vi": "Các emoji phía trên gợi ý bộ phim nào?",
+      "id": "Emoji di atas ini mewakili judul film apa?"
     },
     "options": [
       { "text": { "ko": "정글북", "en": "The Jungle Book", "ja": "ジャングル・ブック", "zh-CN": "森林王子", "zh-TW": "森林王子", "vi": "Cậu bé rừng xanh", "id": "The Jungle Book" }, "isCorrect": false },
@@ -50,13 +50,13 @@
     "badgeLine": { "ko": "⭐ [영화]", "en": "⭐ [Movie]", "ja": "⭐ [映画]", "zh-CN": "⭐ [电影]", "zh-TW": "⭐ [電影]", "vi": "⭐ [Phim]", "id": "⭐ [Film]" },
     "emojiLine": "❄️  👸  ⛄  💙",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
-      "en": "Which movie do these emojis represent?",
-      "ja": "この絵文字が表す映画は？",
-      "zh-CN": "这些表情代表哪部电影？",
-      "zh-TW": "這些表情代表哪部電影？",
-      "vi": "Emoji này là phim nào?",
-      "id": "Film apa yang diwakili emoji ini?"
+      "ko": "위 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie title do the emojis above represent?",
+      "ja": "上の絵文字が表す映画は？",
+      "zh-CN": "上面的表情代表哪部电影？",
+      "zh-TW": "上面的表情代表哪部電影？",
+      "vi": "Emoji phía trên là phim nào?",
+      "id": "Film apa yang diwakili emoji di atas?"
     },
     "options": [
       { "text": { "ko": "신데렐라", "en": "Cinderella", "ja": "シンデレラ", "zh-CN": "灰姑娘", "zh-TW": "灰姑娘", "vi": "Lọ lem", "id": "Cinderella" }, "isCorrect": false },
@@ -88,13 +88,13 @@
     "badgeLine": { "ko": "⭐⭐ [영화]", "en": "⭐⭐ [Movie]", "ja": "⭐⭐ [映画]", "zh-CN": "⭐⭐ [电影]", "zh-TW": "⭐⭐ [電影]", "vi": "⭐⭐ [Phim]", "id": "⭐⭐ [Film]" },
     "emojiLine": "🧊  🚢  💑  🌊  💔",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
-      "en": "Which movie do these emojis represent?",
-      "ja": "この絵文字が表す映画は？",
-      "zh-CN": "这些表情代表哪部电影？",
-      "zh-TW": "這些表情代表哪部電影？",
-      "vi": "Emoji này là phim nào?",
-      "id": "Film apa ini?"
+      "ko": "위 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie title do the emojis above represent?",
+      "ja": "上の絵文字が表す映画は？",
+      "zh-CN": "上面的表情代表哪部电影？",
+      "zh-TW": "上面的表情代表哪部電影？",
+      "vi": "Emoji phía trên là phim nào?",
+      "id": "Film apa yang diwakili emoji di atas?"
     },
     "options": [
       { "text": { "ko": "캐리비안의 해적", "en": "Pirates of the Caribbean", "ja": "パイレーツ・オブ・カリビアン", "zh-CN": "加勒比海盗", "zh-TW": "神鬼奇航", "vi": "Cướp biển Caribbean", "id": "Pirates of the Caribbean" }, "isCorrect": false },
@@ -126,13 +126,13 @@
     "badgeLine": { "ko": "⭐⭐ [영화]", "en": "⭐⭐ [Movie]", "ja": "⭐⭐ [映画]", "zh-CN": "⭐⭐ [电影]", "zh-TW": "⭐⭐ [電影]", "vi": "⭐⭐ [Phim]", "id": "⭐⭐ [Film]" },
     "emojiLine": "🕷️  🦸‍♂️  🏙️  🕸️",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
-      "en": "Which movie do these emojis represent?",
-      "ja": "この絵文字が表す映画は？",
-      "zh-CN": "这些表情代表哪部电影？",
-      "zh-TW": "這些表情代表哪部電影？",
-      "vi": "Emoji này là phim nào?",
-      "id": "Film apa?"
+      "ko": "위 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie title do the emojis above represent?",
+      "ja": "上の絵文字が表す映画は？",
+      "zh-CN": "上面的表情代表哪部电影？",
+      "zh-TW": "上面的表情代表哪部電影？",
+      "vi": "Emoji phía trên là phim nào?",
+      "id": "Film apa yang diwakili emoji di atas?"
     },
     "options": [
       { "text": { "ko": "배트맨", "en": "Batman", "ja": "バットマン", "zh-CN": "蝙蝠侠", "zh-TW": "蝙蝠俠", "vi": "Batman", "id": "Batman" }, "isCorrect": false },
@@ -164,13 +164,13 @@
     "badgeLine": { "ko": "⭐⭐⭐ [영화]", "en": "⭐⭐⭐ [Movie]", "ja": "⭐⭐⭐ [映画]", "zh-CN": "⭐⭐⭐ [电影]", "zh-TW": "⭐⭐⭐ [電影]", "vi": "⭐⭐⭐ [Phim]", "id": "⭐⭐⭐ [Film]" },
     "emojiLine": "💊  🔴  🔵  🕶️  👨‍💻  🐰  🕳️",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
-      "en": "Which movie do these emojis represent?",
-      "ja": "この絵文字が表す映画は？",
-      "zh-CN": "这些表情代表哪部电影？",
-      "zh-TW": "這些表情代表哪部電影？",
-      "vi": "Phim nào?",
-      "id": "Film apa?"
+      "ko": "위 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie title do the emojis above represent?",
+      "ja": "上の絵文字が表す映画は？",
+      "zh-CN": "上面的表情代表哪部电影？",
+      "zh-TW": "上面的表情代表哪部電影？",
+      "vi": "Emoji phía trên gợi ý phim nào?",
+      "id": "Film apa yang diwakili emoji di atas?"
     },
     "options": [
       { "text": { "ko": "인셉션", "en": "Inception", "ja": "インセプション", "zh-CN": "盗梦空间", "zh-TW": "全面啟動", "vi": "Inception", "id": "Inception" }, "isCorrect": false },
@@ -202,13 +202,13 @@
     "badgeLine": { "ko": "⭐ [관용구]", "en": "⭐ [Idiom]", "ja": "⭐ [慣用句]", "zh-CN": "⭐ [成语]", "zh-TW": "⭐ [成語]", "vi": "⭐ [Thành ngữ]", "id": "⭐ [Peribahasa]" },
     "emojiLine": "🐯  📰  🗣️",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 관용구는?",
-      "en": "Which Korean proverb fits these emojis?",
-      "ja": "この絵文字に合う韓国のことわざは？",
-      "zh-CN": "这些表情对应哪句韩国俗语？",
-      "zh-TW": "這些表情對應哪句韓國俗語？",
-      "vi": "Thành ngữ Hàn nào khớp emoji?",
-      "id": "Peribahasa Korea mana yang cocok?"
+      "ko": "위 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean proverb fits the emojis above?",
+      "ja": "上の絵文字に合う韓国のことわざは？",
+      "zh-CN": "上面的表情对应哪句韩国俗语？",
+      "zh-TW": "上面的表情對應哪句韓國俗語？",
+      "vi": "Thành ngữ Hàn nào khớp emoji phía trên?",
+      "id": "Peribahasa Korea mana yang cocok dengan emoji di atas?"
     },
     "options": [
       { "text": { "ko": "범 없는 골에 토끼가 왕 노릇 한다", "en": "In a den without tigers, the rabbit is king", "ja": "虎のいない谷で兎が王様", "zh-CN": "山中无老虎猴子称大王", "zh-TW": "山中無老虎猴子稱大王", "vi": "Vua ở nơi không hổ", "id": "Kelinci jadi raja di lembah tanpa harimau" }, "isCorrect": false },
@@ -240,13 +240,13 @@
     "badgeLine": { "ko": "⭐⭐ [관용구]", "en": "⭐⭐ [Idiom]", "ja": "⭐⭐ [慣用句]", "zh-CN": "⭐⭐ [成语]", "zh-TW": "⭐⭐ [成語]", "vi": "⭐⭐ [Thành ngữ]", "id": "⭐⭐ [Peribahasa]" },
     "emojiLine": "🌞  🐦  👂  🌙  🐭  👂",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 관용구는?",
-      "en": "Which Korean proverb fits these emojis?",
-      "ja": "この絵文字の韓国ことわざは？",
-      "zh-CN": "这些表情对应哪句韩国俗语？",
-      "zh-TW": "這些表情對應哪句韓國俗語？",
-      "vi": "Thành ngữ Hàn nào?",
-      "id": "Peribahasa Korea mana?"
+      "ko": "위 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean proverb fits the emojis above?",
+      "ja": "上の絵文字の韓国ことわざは？",
+      "zh-CN": "上面的表情对应哪句韩国俗语？",
+      "zh-TW": "上面的表情對應哪句韓國俗語？",
+      "vi": "Thành ngữ Hàn nào khớp emoji phía trên?",
+      "id": "Peribahasa Korea mana untuk emoji di atas?"
     },
     "options": [
       { "text": { "ko": "새는 날아가고 쥐는 숨는다", "en": "Birds fly away, mice hide", "ja": "鳥は飛び鼠は隠れる", "zh-CN": "鸟飞鼠藏（另一韩谚）", "zh-TW": "鳥飛鼠藏", "vi": "Chim bay chuột lủi", "id": "Burung terbang tikus bersembunyi" }, "isCorrect": false },
@@ -278,13 +278,13 @@
     "badgeLine": { "ko": "⭐⭐ [관용구]", "en": "⭐⭐ [Idiom]", "ja": "⭐⭐ [慣用句]", "zh-CN": "⭐⭐ [成语]", "zh-TW": "⭐⭐ [成語]", "vi": "⭐⭐ [Thành ngữ]", "id": "⭐⭐ [Peribahasa]" },
     "emojiLine": "🐴  👣  🏃  🌍🌍🌍",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 관용구는?",
-      "en": "Which Korean proverb fits these emojis?",
-      "ja": "この絵文字の韓国ことわざは？",
-      "zh-CN": "这些表情对应哪句韩国俗语？",
-      "zh-TW": "這些表情對應哪句韓國俗語？",
-      "vi": "Thành ngữ nào?",
-      "id": "Peribahasa mana?"
+      "ko": "위 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean proverb fits the emojis above?",
+      "ja": "上の絵文字の韓国ことわざは？",
+      "zh-CN": "上面的表情对应哪句韩国俗语？",
+      "zh-TW": "上面的表情對應哪句韓國俗語？",
+      "vi": "Thành ngữ nào khớp emoji phía trên?",
+      "id": "Peribahasa mana untuk emoji di atas?"
     },
     "options": [
       { "text": { "ko": "천리길도 한 걸음부터", "en": "A thousand-mile journey begins with one step", "ja": "千里の道も一歩から", "zh-CN": "千里之行始于足下", "zh-TW": "千里之行始於足下", "vi": "Ngàn dặm bắt đầu từ một bước", "id": "Perjalanan seribu mil dimulai satu langkah" }, "isCorrect": false },
@@ -316,13 +316,13 @@
     "badgeLine": { "ko": "⭐⭐⭐ [관용구]", "en": "⭐⭐⭐ [Idiom]", "ja": "⭐⭐⭐ [慣用句]", "zh-CN": "⭐⭐⭐ [成语]", "zh-TW": "⭐⭐⭐ [成語]", "vi": "⭐⭐⭐ [Thành ngữ]", "id": "⭐⭐⭐ [Peribahasa]" },
     "emojiLine": "❄️  ⬆️  🌨️  ⬆️",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 관용구는?",
-      "en": "Which Korean four-character idiom (Sino-Korean) fits?",
-      "ja": "この絵文字の四字熟語風の韓国語は？",
-      "zh-CN": "这些表情对应哪个汉字成语（韩）？",
-      "zh-TW": "這些表情對應哪個漢字成語（韓）？",
-      "vi": "Thành ngữ Hán Việt (Hàn) nào?",
-      "id": "Idiom empat huruf (Sino-Korea) mana?"
+      "ko": "위 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean four-character idiom (Sino-Korean) do the emojis above represent?",
+      "ja": "上の絵文字の四字熟語風の韓国語は？",
+      "zh-CN": "上面的表情对应哪个汉字成语（韩）？",
+      "zh-TW": "上面的表情對應哪個漢字成語（韓）？",
+      "vi": "Thành ngữ Hán Việt (Hàn) nào khớp emoji phía trên?",
+      "id": "Idiom empat huruf (Sino-Korea) mana yang diwakili emoji di atas?"
     },
     "options": [
       { "text": { "ko": "엎친 데 덮친 격", "en": "From bad to worse (similar vibe)", "ja": "悪い上にさらに悪い", "zh-CN": "雪上加霜（易混）", "zh-TW": "雪上加霜（易混）", "vi": "Họa vô đơn chí (tương tự)", "id": "Sial bertambah sial (mirip)" }, "isCorrect": false },
@@ -354,13 +354,13 @@
     "badgeLine": { "ko": "⭐⭐⭐⭐ [관용구]", "en": "⭐⭐⭐⭐ [Idiom]", "ja": "⭐⭐⭐⭐ [慣用句]", "zh-CN": "⭐⭐⭐⭐ [成语]", "zh-TW": "⭐⭐⭐⭐ [成語]", "vi": "⭐⭐⭐⭐ [Thành ngữ]", "id": "⭐⭐⭐⭐ [Peribahasa]" },
     "emojiLine": "🦊  🍇🍇🍇  😤  💬  “🍇 🙅  신맛”",
     "prompt": {
-      "ko": "아래 이모티콘이 나타내는 관용구는?",
-      "en": "Which phrase (from Aesop) do these emojis represent?",
-      "ja": "イソップ寓話に由来する表現は？",
-      "zh-CN": "这些表情对应伊索寓言中的哪种心理说法？",
-      "zh-TW": "這些表情對應伊索寓言中的哪種說法？",
-      "vi": "Cụm từ từ ngụ ngôn Aesop nào?",
-      "id": "Frasa dari fabel Aesop apa?"
+      "ko": "위 이모티콘이 나타내는 관용구는?",
+      "en": "Which phrase (from Aesop) do the emojis above represent?",
+      "ja": "上の絵文字が表すイソップ寓話に由来する表現は？",
+      "zh-CN": "上面的表情对应伊索寓言中的哪种心理说法？",
+      "zh-TW": "上面的表情對應伊索寓言中的哪種說法？",
+      "vi": "Cụm từ từ ngụ ngôn Aesop nào khớp emoji phía trên?",
+      "id": "Frasa dari fabel Aesop apa yang diwakili emoji di atas?"
     },
     "options": [
       { "text": { "ko": "꿩 먹고 알 먹기", "en": "Kill two birds with one stone", "ja": "一挙両得", "zh-CN": "一举两得", "zh-TW": "一舉兩得", "vi": "Một mũi tên trúng hai chim", "id": "Satu panah dua burung" }, "isCorrect": false },

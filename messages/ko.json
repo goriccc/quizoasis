@@ -3143,10 +3143,7 @@
       "closeModal": "닫기",
       "correctExplanationTitle": "정답 해설",
       "wrongTrapsTitle": "오답 힌트",
-      "belowQuestionHint": "(해설은 아래 버튼에서 미리 볼 수 있어요)",
-      "nudgeQ5": "🐰🕳️ 이게 매트릭스라는 거 맞혔어?? 같이 풀어봐",
-      "nudgeQ9": "❄️⬆️🌨️⬆️ 이게 설상가상인 거 알았어?? 진짜 어렵지 않냐",
-      "nudgeQ10": "🦊🍇😤 이모티콘으로 신포도를 표현한 사람 나와 → 자연스럽게 공유 각"
+      "belowQuestionHint": "(해설은 아래 버튼에서 미리 볼 수 있어요)"
     },
     "shareMessages": {
       "default": "이모티콘 퀴즈 (영화 & 관용구) 결과 공유",

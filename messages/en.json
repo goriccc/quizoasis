@@ -3922,10 +3922,7 @@
       "closeModal": "Close",
       "correctExplanationTitle": "Correct answer",
       "wrongTrapsTitle": "Wrong-answer hints",
-      "belowQuestionHint": "(You can peek explanations below)",
-      "nudgeQ5": "🐰🕳️ Got Matrix from these? Try with a friend.",
-      "nudgeQ9": "❄️⬆️🌨️⬆️ Did you read 설상가상? Brutal, right?",
-      "nudgeQ10": "🦊🍇😤 Sour grapes in emoji form—share if you survived."
+      "belowQuestionHint": "(You can peek explanations below)"
     },
     "shareMessages": {
       "default": "Emoji quiz (movies & idioms) — sharing my result",
