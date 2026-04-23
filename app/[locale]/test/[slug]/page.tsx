@@ -2787,9 +2787,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? test.tags[locale] || test.tags.ko || []
     : test.tags;
 
-  // 썸네일을 절대 URL로 변환 (공유 앱용 원본 URL 사용)
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}?v=${Date.now()}`;
+  // 썸네일을 절대 URL로 변환 (캐시 가능한 안정 URL 사용)
+  const thumbnailUrl = getThumbnailUrl(test.thumbnail);
 
 
   const baseUrl = 'https://myquizoasis.com';
