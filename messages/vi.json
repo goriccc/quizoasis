@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3SomeVsRelationshipTimingTest": {
+    "startMessage": {
+      "line1": "Mối quan hệ này nên tiến thêm một bước, hay đợi thêm một chút?",
+      "line2": "Nhắn tin thường xuyên nhưng chưa tỏ tình; hẹn hò vui nhưng chưa có danh nghĩa; thích mà thiếu chút chắc chắn — khoảng lấn cấn ấy.",
+      "line3": "Crush khiến tim đập nhanh, nhưng không thể mãi mơ hồ. Đọc đúng tín hiệu lúc này sẽ thấy thời điểm phù hợp.",
+      "line4": "12 câu hỏi chẩn đoán mối quan hệ đang ở đâu và lựa chọn nào hợp với bạn nhất.",
+      "line5": "Chẩn đoán thời điểm crush 💌 Làm ngay"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Crush vs thời điểm yêu)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "goToTest": "Làm bài test",
+      "signalStrength": "Cường độ tín hiệu",
+      "relationshipTemperature": "Nhiệt độ mối quan hệ",
+      "oneLineDiagnosis": "💌 Một dòng về mối quan hệ"
+    },
+    "shareMessages": {
+      "resultType1": "Crush vs thời điểm yêu: đèn xanh tỏ tình 💚 — kết quả bảo giờ thổ lộ cũng được… gửi cho họ không nhỉ → bạn cũng thử",
+      "resultType2": "Crush vs thời điểm yêu: gần đủ rồi 🌱 — cần thêm chút thời gian là ổn, ước họ cũng làm → bạn thử đi",
+      "resultType3": "Crush vs thời điểm yêu: tín hiệu lệch pha 🌀 — ngày tốt ngày xấu, quá đồng cảm → bạn cũng làm",
+      "resultType4": "Crush vs thời điểm yêu: cảm xúc lệch nhịp ⚖️ — biết mình thích hơn, giờ được xác nhận → bạn thử quiz",
+      "resultType5": "Crush vs thời điểm yêu: cần bước ngoặt 🚦 — kéo lâu không tiến triển, phải quyết thật rồi → bạn làm thử",
+      "resultType6": "Crush vs thời điểm yêu: lùi lại nhìn lại ❄️ — sự thật lạnh mà mình vốn biết… muốn gửi cho họ → bạn thử",
+      "default": "Crush vs thời điểm yêu: {type} — Mình vừa làm xong. Bạn thử nhé!",
+      "kakao": "Crush vs thời điểm yêu: {type} — Mình vừa làm xong. Bạn thử nhé!",
+      "wechat": "Crush vs thời điểm yêu: {type} — Mình vừa làm xong. Bạn thử nhé!",
+      "whatsapp": "Crush vs thời điểm yêu: {type} — Mình vừa làm xong. Bạn thử nhé!",
+      "telegram": "Crush vs thời điểm yêu: {type} — Mình vừa làm xong. Bạn thử nhé!",
+      "line": "Crush vs thời điểm yêu: {type} — Mình vừa làm xong. Bạn thử nhé!",
+      "startDefault": "Crush hay yêu thật? 12 câu xem đã đến lúc tỏ tình chưa.",
+      "startKakao": "Crush hay yêu thật? 12 câu xem đã đến lúc tỏ tình chưa.",
+      "startWechat": "Crush hay yêu thật? 12 câu xem đã đến lúc tỏ tình chưa.",
+      "startWhatsapp": "Crush hay yêu thật? 12 câu xem đã đến lúc tỏ tình chưa.",
+      "startTelegram": "Crush hay yêu thật? 12 câu xem đã đến lúc tỏ tình chưa.",
+      "startLine": "Crush hay yêu thật? 12 câu xem đã đến lúc tỏ tình chưa."
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3SpendingDarkHistoryTypeTest": {
     "startMessage": {
       "line1": "Chuyện “hố đen” chi tiêu — ai cũng có vài lần.",

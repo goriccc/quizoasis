@@ -1,0 +1,734 @@
+[
+  {
+    "question": {
+      "ko": "상대방이 먼저 연락하는 빈도는?",
+      "en": "How often do they reach out to you first?",
+      "ja": "相手から先に連絡が来る頻度は？",
+      "zh-CN": "对方主动联系你的频率如何？",
+      "zh-TW": "對方主動聯絡你的頻率如何？",
+      "vi": "Người ấy chủ động liên lạc trước với tần suất nào?",
+      "id": "Seberapa sering mereka menghubungi kamu lebih dulu?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "거의 매일 먼저 연락이 온다. 내가 안 해도 먼저 오는 편이다",
+          "en": "They text or call first almost daily. Even if I do not reach out, they usually do first.",
+          "ja": "ほぼ毎日先に連絡が来る。こちらからしなくても向こうから来ることが多い。",
+          "zh-CN": "几乎每天对方都会先联系。我不找对方，对方也常会先找我。",
+          "zh-TW": "幾乎每天都會對方先聯絡。我不找對方，對方也常會先找我。",
+          "vi": "Gần như mỗi ngày họ nhắn trước. Dù mình không nhắn, họ vẫn thường chủ động.",
+          "id": "Hampir setiap hari mereka duluan. Kalau aku tidak chat, mereka tetap sering memulai."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "자주 오는 편이지만 내가 먼저 할 때도 있다. 균형이 맞다",
+          "en": "They reach out often, but I initiate too. It feels fairly balanced.",
+          "ja": "よく来るが、こちらから先にすることもある。バランスは取れている。",
+          "zh-CN": "对方主动联系不少，但我也会先找对方，还算平衡。",
+          "zh-TW": "對方主動聯絡不少，但我也會先找對方，還算平衡。",
+          "vi": "Họ cũng chủ động khá đều, nhưng mình cũng nhắn trước—khá cân bằng.",
+          "id": "Sering mereka duluan, tapi aku juga sering memulai—cukup seimbang."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "내가 먼저 할 때가 더 많다. 상대가 먼저 오는 날은 특별하게 느껴진다",
+          "en": "I reach out more often. When they go first, it feels special.",
+          "ja": "こちらから先の方が多い。向こうから来た日は特別に感じる。",
+          "zh-CN": "多数是我先联系。对方主动的日子我会觉得特别。",
+          "zh-TW": "多數是我先聯絡。對方主動的日子我會覺得特別。",
+          "vi": "Mình nhắn trước nhiều hơn. Hôm họ chủ động thấy rất đặc biệt.",
+          "id": "Aku yang memulai lebih sering. Kalau mereka duluan rasanya istimewa."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "연락이 들쑥날쑥하다. 자주 올 때도 있고 뜸할 때도 있다",
+          "en": "Contact is inconsistent—sometimes a lot, sometimes quiet.",
+          "ja": "連絡がムラがある。多い日もあれば間が空く日もある。",
+          "zh-CN": "联系忽冷忽热，有时很勤有时很久没消息。",
+          "zh-TW": "聯絡忽冷忽熱，有時很勤有時很久沒消息。",
+          "vi": "Liên lạc thất thường—lúc nhiều lúc im lặng lâu.",
+          "id": "Kontak naik-turun—kadang sering, kadang lama diam."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "단둘이 만나는 자리를 상대가 만드는 편인가요?",
+      "en": "Do they tend to plan one-on-one time with you?",
+      "ja": "二人きりの予定は相手が作る方？",
+      "zh-CN": "单独约会多半是对方提议的吗？",
+      "zh-TW": "單獨約會多半是對方提議的嗎？",
+      "vi": "Họ có hay chủ động hẹn riêng hai người không?",
+      "id": "Apakah mereka yang sering mengajak ketemu berdua?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "상대가 자연스럽게 단둘이 만나자고 자주 제안한다",
+          "en": "They naturally suggest one-on-one meetups often.",
+          "ja": "自然に二人で会おうとよく提案してくれる。",
+          "zh-CN": "对方常会自然地提议单独见面。",
+          "zh-TW": "對方常會自然地提議單獨見面。",
+          "vi": "Họ thường tự nhiên đề xuất hẹn riêng.",
+          "id": "Mereka sering mengajak ketemu berdua dengan natural."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "서로 비슷하게 제안하는 편이다",
+          "en": "We suggest it about equally.",
+          "ja": "お互いにだいたい同じくらい提案している。",
+          "zh-CN": "谁提议单独见面差不多一半一半。",
+          "zh-TW": "誰提議單獨見面差不多一半一半。",
+          "vi": "Hai bên đề xuất hẹn riêng tương đương nhau.",
+          "id": "Kita berdua sama-sama sering mengajak ketemu berdua."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "내가 먼저 제안하는 경우가 더 많다",
+          "en": "I suggest one-on-one meetups more often.",
+          "ja": "こちらから二人で会おうと提案することが多い。",
+          "zh-CN": "更多是我先提议单独见面。",
+          "zh-TW": "更多是我先提議單獨見面。",
+          "vi": "Mình đề xuất hẹn riêng nhiều hơn.",
+          "id": "Aku yang lebih sering mengajak ketemu berdua."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "단둘이 만나는 자리는 있지만 그룹 약속이 더 많은 편이다",
+          "en": "We do meet alone sometimes, but group hangs happen more.",
+          "ja": "二人きりもあるが、グループの予定の方が多い。",
+          "zh-CN": "偶尔单独见面，但更多是一群人一起。",
+          "zh-TW": "偶爾單獨見面，但更多是一群人一起。",
+          "vi": "Có hẹn riêng nhưng đi chơi nhóm còn nhiều hơn.",
+          "id": "Ada ketemu berdua, tapi kumpul ramean lebih sering."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "만남 중 상대방의 스킨십 또는 물리적 거리는?",
+      "en": "During dates, how is their physical closeness or touch?",
+      "ja": "会っているときのスキンシップや距離感は？",
+      "zh-CN": "见面时对方的肢体距离或亲密接触如何？",
+      "zh-TW": "見面時對方的肢體距離或親密接觸如何？",
+      "vi": "Khi gặp, khoảng cách cơ thể hoặc chạm của họ thế nào?",
+      "id": "Saat ketemu, jarak fisik atau sentuhan mereka seperti apa?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "자연스럽게 가까이 있거나 먼저 스킨십을 시도하는 편이다",
+          "en": "They get close naturally or initiate light touch first.",
+          "ja": "自然に近づくか、先にスキンシップを試みる。",
+          "zh-CN": "会自然靠近或主动有肢体接触。",
+          "zh-TW": "會自然靠近或主動有肢體接觸。",
+          "vi": "Họ tự nhiên lại gần hoặc chủ động chạm nhẹ.",
+          "id": "Mereka dekat dengan natural atau memulai sentuhan ringan."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "가까이 있는 편이지만 스킨십보다는 눈 맞춤이나 말로 표현한다",
+          "en": "They stay fairly close but show interest more through eye contact and words than touch.",
+          "ja": "距離は近めだが、触れより視線や言葉で伝える。",
+          "zh-CN": "距离不远，但更多用眼神和说话表达，少肢体接触。",
+          "zh-TW": "距離不遠，但更多用眼神和說話表達，少肢體接觸。",
+          "vi": "Gần nhưng thể hiện bằng ánh mắt và lời nói hơn là chạm.",
+          "id": "Dekat tapi lebih banyak lewat tatapan mata dan bicara, bukan sentuhan."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "거리가 좁혀지지 않는다. 물리적으로 항상 일정 거리를 유지한다",
+          "en": "Distance does not really close; they keep a steady physical gap.",
+          "ja": "距離が縮まらない。常に一定の距離を保つ。",
+          "zh-CN": "身体距离很难拉近，一直保持固定间距。",
+          "zh-TW": "身體距離很難拉近，一直保持固定間距。",
+          "vi": "Khoảng cách khó rút ngắn; họ giữ khoảng cách vật lý ổn định.",
+          "id": "Jarak susut; mereka menjaga jarak fisik tetap."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "그날 분위기에 따라 많이 달라진다. 일관성이 없다",
+          "en": "It changes a lot by the day or mood—not consistent.",
+          "ja": "その日の空気でかなり変わる。一貫性がない。",
+          "zh-CN": "随当天气氛差很多，不太一致。",
+          "zh-TW": "隨當天氣氛差很多，不太一致。",
+          "vi": "Tùy ngày và không khí mà khác hẳn—không ổn định.",
+          "id": "Bergantung suasana hari—tidak konsisten."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "상대방이 나의 개인적인 이야기에 얼마나 관심을 갖나요?",
+      "en": "How much do they care about your personal life and feelings?",
+      "ja": "相手はあなたの個人的な話にどれだけ関心がある？",
+      "zh-CN": "对方对你的私事和感受有多上心？",
+      "zh-TW": "對方對你的私事和感受有多上心？",
+      "vi": "Họ quan tâm đến đời sống riêng và cảm xúc của bạn đến mức nào?",
+      "id": "Seberapa mereka peduli pada kehidupan pribadi dan perasaanmu?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "내 일상, 취향, 고민 등을 기억하고 먼저 물어본다",
+          "en": "They remember your routines, tastes, and worries and ask about them first.",
+          "ja": "日常・好み・悩みを覚えていて、先に聞いてくれる。",
+          "zh-CN": "会记住你的日常、喜好、烦恼并主动问起。",
+          "zh-TW": "會記住你的日常、喜好、煩惱並主動問起。",
+          "vi": "Họ nhớ thói quen, sở thích, lo lắng của bạn và chủ động hỏi.",
+          "id": "Mereka ingat rutinitas, selera, dan khawatiranmu lalu menanyakannya duluan."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "물어보면 잘 들어주는 편이지만 먼저 챙기는 편은 아니다",
+          "en": "If you bring it up, they listen—but they rarely check in first.",
+          "ja": "聞けばよく聞いてくれるが、先に気にかけてくれることは少ない。",
+          "zh-CN": "你说了会认真听，但很少主动问起。",
+          "zh-TW": "你說了會認真聽，但很少主動問起。",
+          "vi": "Khi bạn nói thì họ nghe tốt, nhưng hiếm khi chủ động hỏi trước.",
+          "id": "Kalau kamu cerita mereka dengar baik, tapi jarang menanyakannya duluan."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "대화는 하지만 깊은 이야기까지 연결되지는 않는 편이다",
+          "en": "You chat, but it rarely goes deep or personal.",
+          "ja": "会話はあるが、深い話までつながりにくい。",
+          "zh-CN": "有聊天，但很少聊到很深的私事。",
+          "zh-TW": "有聊天，但很少聊到很深的私事。",
+          "vi": "Có nói chuyện nhưng hiếm khi đi sâu chuyện riêng tư.",
+          "id": "Ngobrol ada, tapi jarang sampai ke hal pribadi yang dalam."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "관심을 보이는 날이 있고 무심한 날이 있다. 들쑥날쑥하다",
+          "en": "Some days they seem very interested; other days distant—up and down.",
+          "ja": "関心がある日とない日がある。ムラがある。",
+          "zh-CN": "有时很关心，有时很冷淡，起伏大。",
+          "zh-TW": "有時很關心，有時很冷淡，起伏大。",
+          "vi": "Ngày thì rất quan tâm, ngày thì thờ ơ—lên xuống.",
+          "id": "Kadang sangat peduli, kadang dingin—naik turun."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "상대방이 자신의 이야기를 나에게 얼마나 꺼내나요?",
+      "en": "How openly do they share about themselves with you?",
+      "ja": "相手は自分の話をどれだけ打ち明けてくれる？",
+      "zh-CN": "对方对你敞开心扉、聊自己的程度如何？",
+      "zh-TW": "對方對你敞開心扉、聊自己的程度如何？",
+      "vi": "Họ chia sẻ về bản thân với bạn đến mức nào?",
+      "id": "Seberapa terbuka mereka berbagi tentang diri sendiri padamu?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "가족 이야기, 고민, 과거 이야기까지 깊은 것들을 나에게 털어놓는다",
+          "en": "They open up about family, worries, and past—deep topics with you.",
+          "ja": "家族・悩み・過去など深い話を打ち明けてくれる。",
+          "zh-CN": "会聊家庭、烦恼、过去等比较深的内容。",
+          "zh-TW": "會聊家庭、煩惱、過去等比較深的內容。",
+          "vi": "Họ kể về gia đình, lo âu, quá khứ—chủ đề sâu.",
+          "id": "Mereka terbuka soal keluarga, kekhawatiran, masa lalu—topik dalam."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "일상 이야기는 잘 하지만 깊은 이야기는 가끔이다",
+          "en": "Daily small talk is easy; deeper sharing happens only sometimes.",
+          "ja": "日常の話はよくするが、深い話はたまに。",
+          "zh-CN": "日常聊得多，深聊偶尔才有。",
+          "zh-TW": "日常聊得多，深聊偶爾才有。",
+          "vi": "Chuyện vặt nhiều; chuyện sâu thi thoảng.",
+          "id": "Obrolan ringan sering; yang dalam kadang saja."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "표면적인 이야기 위주다. 깊은 속 이야기는 잘 하지 않는다",
+          "en": "Mostly surface-level; they rarely go to vulnerable depth.",
+          "ja": "表面的な話が中心。深い本音はあまり話さない。",
+          "zh-CN": "多半停留在表面，很少聊到内心深处。",
+          "zh-TW": "多半停留在表面，很少聊到內心深處。",
+          "vi": "Chủ yếu nông; hiếm khi nói thật sâu.",
+          "id": "Kebanyakan permukaan; jarang sampai ke inti perasaan."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "어떤 날은 많이 털어놓고 어떤 날은 별로 안 한다",
+          "en": "Some days they share a lot; other days they stay closed off.",
+          "ja": "日によって打ち明ける量が違う。開いた日と閉じた日がある。",
+          "zh-CN": "有时说很多，有时又什么都不讲。",
+          "zh-TW": "有時說很多，有時又什麼都不講。",
+          "vi": "Ngày kể nhiều, ngày lại kín—không đều.",
+          "id": "Kadang cerita banyak, kadang menutup diri."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "상대방이 나의 감정에 반응하는 방식은?",
+      "en": "How do they respond when you are emotional or struggling?",
+      "ja": "あなたの感情に対して相手はどう反応する？",
+      "zh-CN": "当你情绪低落或难过时，对方怎么反应？",
+      "zh-TW": "當你情緒低落或難過時，對方怎麼反應？",
+      "vi": "Khi bạn buồn hoặc khó khăn, họ phản ứng ra sao?",
+      "id": "Saat kamu sedih atau kesulitan, bagaimana mereka merespons?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "내가 힘들어 보이면 먼저 알아채고 챙겨준다",
+          "en": "They notice when you seem down and comfort you without you having to spell it out.",
+          "ja": "辛そうなら先に気づいて声をかけてくれる。",
+          "zh-CN": "你看起来难过时，对方会先察觉并关心你。",
+          "zh-TW": "你看起來難過時，對方會先察覺並關心你。",
+          "vi": "Họ nhận ra khi bạn khó và chủ động an ủi.",
+          "id": "Mereka sadar saat kamu terlihat berat dan peduli duluan."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "내가 말하면 잘 들어주고 공감해주는 편이다",
+          "en": "If you speak up, they listen well and try to empathize.",
+          "ja": "話せばよく聞いて共感してくれる。",
+          "zh-CN": "你说了会认真听并试着理解。",
+          "zh-TW": "你說了會認真聽並試著理解。",
+          "vi": "Khi bạn nói, họ lắng nghe và cố đồng cảm.",
+          "id": "Kalau kamu bicara, mereka dengar dan berusaha mengerti."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "감정적인 부분에서는 다소 무뎌 보인다. 잘 모르는 것 같다",
+          "en": "They seem a bit blunt or slow to read emotional cues.",
+          "ja": "感情面では少し鈍い。分かっていないように見える。",
+          "zh-CN": "在情绪上有点迟钝，好像不太会察言观色。",
+          "zh-TW": "在情緒上有點遲鈍，好像不太會察言觀色。",
+          "vi": "Hơi vụng về với cảm xúc, khó đọc tâm trạng bạn.",
+          "id": "Agak tumpul soal emosi, sepertinya sulit memahami isyaratmu."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "상황에 따라 다르다. 잘 챙겨줄 때도 있고 그냥 지나칠 때도 있다",
+          "en": "It depends—sometimes very caring, sometimes they brush past it.",
+          "ja": "状況による。よく気遣う時もあれば流す時もある。",
+          "zh-CN": "看情况，有时很体贴，有时又好像没注意到。",
+          "zh-TW": "看情況，有時很體貼，有時又好像沒注意到。",
+          "vi": "Tùy lúc—đôi khi rất quan tâm, đôi khi bỏ qua.",
+          "id": "Bergantung—kadang sangat perhatian, kadang melewatkan."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "상대방이 나에게 미래 이야기를 꺼내는 편인가요?",
+      "en": "Do they talk about future plans that include you?",
+      "ja": "二人の未来の話は出てくる？",
+      "zh-CN": "对方会聊到包含你的未来计划吗？",
+      "zh-TW": "對方會聊到包含你的未來計畫嗎？",
+      "vi": "Họ có nhắc đến tương lai có bạn trong đó không?",
+      "id": "Apakah mereka membicarakan rencana masa depan yang melibatkanmu?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "\"같이 여기 가보자\", \"이번 시즌에 이거 같이 해보자\" 같은 미래 약속을 자주 한다",
+          "en": "They often suggest concrete future plans together—trips, seasons, things to try.",
+          "ja": "「一緒にここ行こう」「今季これやろう」など具体的な未来の約束が多い。",
+          "zh-CN": "常说「一起去这里」「这季一起做某事」等具体未来约定。",
+          "zh-TW": "常說「一起去這裡」「這季一起做某事」等具體未來約定。",
+          "vi": "Hay gợi ý kế hoạch cụ thể: đi đâu, mùa này làm gì cùng nhau.",
+          "id": "Sering menyarankan rencana konkret: ke mana, musim ini ngapain bareng."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "가끔 미래 이야기가 나오긴 하지만 자주는 아니다",
+          "en": "Future talk comes up sometimes, but not often.",
+          "ja": "未来の話はたまに出るが、頻繁ではない。",
+          "zh-CN": "偶尔会提未来，但不常。",
+          "zh-TW": "偶爾會提未來，但不常。",
+          "vi": "Thi thoảng có nói tương lai, không thường xuyên.",
+          "id": "Kadang bahas masa depan, tidak sering."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "미래 이야기가 거의 없다. 지금 이 순간 위주다",
+          "en": "Almost no future talk—it stays in the present moment.",
+          "ja": "未来の話はほぼない。今この瞬間の話が中心。",
+          "zh-CN": "几乎不谈未来，话题都在当下。",
+          "zh-TW": "幾乎不談未來，話題都在當下。",
+          "vi": "Gần như không nói tương lai—chỉ hiện tại.",
+          "id": "Hampir tidak bahas masa depan—fokus ke sekarang."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "미래 이야기를 할 때도 있지만 구체적으로 이어지지는 않는다",
+          "en": "They mention the future sometimes, but it never gets concrete or followed through.",
+          "ja": "未来の話は出るが、具体に続かない。",
+          "zh-CN": "有时会提未来，但很笼统、没有下文。",
+          "zh-TW": "有時會提未來，但很籠統、沒有下文。",
+          "vi": "Có nhắc tương lai nhưng mơ hồ, không đi đến đâu.",
+          "id": "Sempat bahas masa depan tapi samar, tidak konkret."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "상대방이 다른 이성과의 관계에 대해 어떻게 행동하나요?",
+      "en": "How do they act when other potential romantic interests come up?",
+      "ja": "他の異性の話題のとき、相手はどう振る舞う？",
+      "zh-CN": "提到其他异性时，对方怎么表现？",
+      "zh-TW": "提到其他異性時，對方怎麼表現？",
+      "vi": "Khi nhắc người khác giới, họ cư xử thế nào?",
+      "id": "Saat membicarakan lawan jenis lain, bagaimana perilaku mereka?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "나와 있을 때 다른 이성 이야기를 잘 꺼내지 않는다. 은연중 나를 의식하는 것 같다",
+          "en": "When you are together they rarely bring up others; you sense they are mindful of you.",
+          "ja": "二人のとき他の異性の話はあまりしない。あなたを意識しているように見える。",
+          "zh-CN": "单独相处时很少提别的异性，感觉有在意你的感受。",
+          "zh-TW": "單獨相處時很少提別的異性，感覺有在意你的感受。",
+          "vi": "Khi riêng họ ít nhắc người khác; có vẻ để ý đến bạn.",
+          "id": "Saat berdua jarang bahas orang lain; sepertinya memperhatikanmu."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "자연스럽게 이야기하지만 나의 반응을 살피는 것 같다",
+          "en": "They mention others naturally but seem to watch your reaction.",
+          "ja": "自然に話すが、あなたの反応をうかがっているように見える。",
+          "zh-CN": "会自然聊到，但好像在观察你的反应。",
+          "zh-TW": "會自然聊到，但好像在觀察你的反應。",
+          "vi": "Nói tự nhiên nhưng dường như theo dõi phản ứng của bạn.",
+          "id": "Cerita dengan natural tapi sepertinya mengamati reaksimu."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "아무 거리낌 없이 다른 이성 이야기를 한다. 의식하는 것 같지 않다",
+          "en": "They talk about other people freely without seeming to worry how you feel.",
+          "ja": "遠慮なく他の異性の話をする。気にしていないように見える。",
+          "zh-CN": "很自然地聊其他异性，好像没特别顾虑你。",
+          "zh-TW": "很自然地聊其他異性，好像沒特別顧慮你。",
+          "vi": "Nói thoải mái về người khác, không có vẻ để ý cảm xúc bạn.",
+          "id": "Bebas bicara orang lain, tidak tampak memikirkan perasaanmu."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "어떤 날은 의식하는 것 같고 어떤 날은 전혀 그렇지 않다",
+          "en": "Some days they seem careful; other days totally casual—mixed.",
+          "ja": "日によって気を遣うように見えたり、全く平気に見えたりする。",
+          "zh-CN": "有时像有顾忌，有时又完全无所谓。",
+          "zh-TW": "有時像有顧忌，有時又完全無所謂。",
+          "vi": "Ngày thì cẩn thận, ngày thì thoải mái—lẫn lộn.",
+          "id": "Kadang hati-hati, kadang santai sekali—campur aduk."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "지금 이 관계에서 나의 감정 상태는?",
+      "en": "Which line best matches how you feel in this connection right now?",
+      "ja": "今のこの関係でのあなたの気持ちは？",
+      "zh-CN": "在这段关系里，你现在的情绪状态更接近哪一种？",
+      "zh-TW": "在這段關係裡，你現在的情緒狀態更接近哪一種？",
+      "vi": "Trạng thái cảm xúc của bạn trong mối quan hệ này hiện tại?",
+      "id": "Perasaanmu dalam hubungan ini sekarang lebih mirip yang mana?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "설레고 확신이 있다. 상대도 나를 좋아하는 것 같다는 느낌이 강하다",
+          "en": "Excited and fairly sure—they seem into you too.",
+          "ja": "ワクワクしていて確信がある。相手も好きそうに感じる。",
+          "zh-CN": "心动且较有把握，强烈感觉对方也喜欢你。",
+          "zh-TW": "心動且較有把握，強烈感覺對方也喜歡你。",
+          "vi": "Hồi hộp và khá chắc—cảm giác họ cũng thích mình.",
+          "id": "Deg-degan dan cukup yakin—mereka sepertinya juga suka."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "좋아하는데 확신이 60~70% 정도다. 좋은 신호가 보이지만 아직 모르겠다",
+          "en": "You like them but confidence is only about 60–70%; signs look good but you are unsure.",
+          "ja": "好きだが確信は6〜7割。いいサインもあるがまだ分からない。",
+          "zh-CN": "喜欢对方，把握大概六七成，有好信号但仍不确定。",
+          "zh-TW": "喜歡對方，把握大概六七成，有好信號但仍不確定。",
+          "vi": "Thích nhưng chỉ chắc khoảng 60–70%; có tín hiệu tốt nhưng vẫn lờ mờ.",
+          "id": "Suka tapi yakin sekitar 60–70%; ada sinyal baik tapi masih ragu."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "좋아하는데 확신이 없다. 상대의 마음을 읽기가 어렵다",
+          "en": "You like them but have little certainty; their feelings are hard to read.",
+          "ja": "好きだが確信がない。相手の気持ちが読みにくい。",
+          "zh-CN": "喜欢但很不确定，读不懂对方的心。",
+          "zh-TW": "喜歡但很不確定，讀不懂對方的心。",
+          "vi": "Thích nhưng không chắc; khó đọc họ nghĩ gì.",
+          "id": "Suka tapi tidak yakin; sulit membaca perasaan mereka."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "좋아하는데 불안하다. 잘 되고 있는지 모르겠어서 계속 신경 쓰인다",
+          "en": "You like them but feel anxious—you cannot tell if things are actually okay.",
+          "ja": "好きだが不安。うまくいっているか分からず気がかり。",
+          "zh-CN": "喜欢但很焦虑，不知道算不算顺利，一直放不下心。",
+          "zh-TW": "喜歡但很焦慮，不知道算不算順利，一直放不下心。",
+          "vi": "Thích nhưng lo lắng—không biết có ổn không, cứ bận tâm.",
+          "id": "Suka tapi cemas—tidak tahu apakah ini baik-baik saja, terus gelisah."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "상대방이 나한테만 특별하게 대한다는 느낌이 드나요?",
+      "en": "Do you feel they treat you differently from everyone else?",
+      "ja": "あなただけ特別に扱っていると感じる？",
+      "zh-CN": "你觉得对方只对你特别吗？",
+      "zh-TW": "你覺得對方只對你特別嗎？",
+      "vi": "Bạn có cảm giác họ đối xử đặc biệt với mình không?",
+      "id": "Apakah kamu merasa mereka memperlakukanmu secara khusus?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "분명히 느껴진다. 다른 사람과 나를 대하는 방식이 다르다",
+          "en": "Yes, clearly—they act differently with you than with others.",
+          "ja": "はっきり感じる。他の人とは接し方が違う。",
+          "zh-CN": "很明显，对你和对别人不一样。",
+          "zh-TW": "很明顯，對你和對別人不一樣。",
+          "vi": "Rõ ràng—cách họ với bạn khác với người khác.",
+          "id": "Jelas—perlakuannya ke kamu beda dengan orang lain."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "어느 정도는 느껴지지만 확신하기에는 아직 애매하다",
+          "en": "You sense it somewhat, but it is not enough to be sure.",
+          "ja": "ある程度は感じるが、確信にはまだ至らない。",
+          "zh-CN": "有一点感觉，但还不足以确定。",
+          "zh-TW": "有一點感覺，但還不足以確定。",
+          "vi": "Có chút cảm giác nhưng chưa đủ để chắc chắn.",
+          "id": "Sedikit terasa tapi belum cukup untuk yakin."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "잘 모르겠다. 나한테만 그런 건지 원래 그런 사람인지 구별이 안 된다",
+          "en": "Hard to tell if it is special for you or just their personality with everyone.",
+          "ja": "特別なのか、元々そういう人なのか分からない。",
+          "zh-CN": "分不清是只对我这样，还是他们本来就这样对人。",
+          "zh-TW": "分不清是只對我這樣，還是他們本來就這樣對人。",
+          "vi": "Không biết là đặc biệt với mình hay họ vốn thế với mọi người.",
+          "id": "Sulit bedakan khusus untukmu atau memang karakter mereka ke semua orang."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "특별하게 대하는 것 같을 때도 있고 아닌 것 같을 때도 있다",
+          "en": "Sometimes it feels special; other times it does not—back and forth.",
+          "ja": "特別に感じる日と、そうでもない日がある。",
+          "zh-CN": "有时觉得特别，有时又觉得普通。",
+          "zh-TW": "有時覺得特別，有時又覺得普通。",
+          "vi": "Lúc thấy đặc biệt, lúc thì không—dao động.",
+          "id": "Kadang terasa istimewa, kadang tidak—naik turun."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "관계가 시작된 지 얼마나 됐나요?",
+      "en": "How long has this situationship or crush phase been going on?",
+      "ja": "この関係（ややこしい段階）はどのくらい続いている？",
+      "zh-CN": "这段暧昧或心动状态大概持续多久了？",
+      "zh-TW": "這段曖昧或心動狀態大概持續多久了？",
+      "vi": "Giai đoạn mập mờ/cảm mến này đã khoảng bao lâu?",
+      "id": "Fase dekat tapi belum jadian ini sudah berapa lama?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "3개월 이상. 충분히 알아온 시간이 있다",
+          "en": "Three months or more—you have had real time to know each other.",
+          "ja": "3ヶ月以上。十分に知り合う時間がある。",
+          "zh-CN": "三个月以上，彼此了解的时间够长了。",
+          "zh-TW": "三個月以上，彼此了解的時間夠長了。",
+          "vi": "Ba tháng trở lên—đủ thời gian để hiểu nhau.",
+          "id": "Tiga bulan atau lebih—cukup waktu untuk saling kenal."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "1~3개월. 어느 정도 알게 됐지만 아직 더 필요한 것 같다",
+          "en": "One to three months—you know them a bit but still want more time.",
+          "ja": "1〜3ヶ月。ある程度は分かったが、まだ時間が欲しい。",
+          "zh-CN": "一到三个月，有点了解但还想再观察。",
+          "zh-TW": "一到三個月，有點了解但還想再觀察。",
+          "vi": "Một đến ba tháng—đã hiểu phần nào nhưng cần thêm thời gian.",
+          "id": "Satu sampai tiga bulan—sudah agak kenal tapi ingin lebih lama."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "한 달 이내. 아직 초기 단계다",
+          "en": "Within a month—it is still very early.",
+          "ja": "1ヶ月以内。まだ初期段階。",
+          "zh-CN": "一个月内，还在很初期。",
+          "zh-TW": "一個月內，還在很初期。",
+          "vi": "Trong một tháng—vẫn rất sớm.",
+          "id": "Dalam sebulan—masih sangat awal."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "오래됐지만 관계가 진전되지 않고 있다. 정체된 느낌이다",
+          "en": "It has been a while, but nothing moves forward—it feels stuck.",
+          "ja": "時間は経っているが進展がない。停滞している感じ。",
+          "zh-CN": "已经很久，但关系没进展，感觉卡住了。",
+          "zh-TW": "已經很久，但關係沒進展，感覺卡住了。",
+          "vi": "Đã lâu nhưng không tiến triển—cảm giác đứng yên.",
+          "id": "Sudah lama tapi tidak maju—terasa macet."
+        }
+      }
+    ]
+  },
+  {
+    "question": {
+      "ko": "지금 이 관계에서 가장 솔직한 내 상황은?",
+      "en": "Which sentence is most honest about where you are with this person?",
+      "ja": "今のこの関係で、一番正直なのはどれ？",
+      "zh-CN": "关于这段关系，哪一句最符合你真实的心境？",
+      "zh-TW": "關於這段關係，哪一句最符合你真實的心境？",
+      "vi": "Câu nào thật nhất về tình trạng của bạn với người này?",
+      "id": "Kalimat mana yang paling jujur tentang posisimu dengan orang ini?"
+    },
+    "options": [
+      {
+        "score": 0,
+        "text": {
+          "ko": "상대가 좋다. 고백하고 싶은 마음이 있고 될 것 같은 느낌도 있다",
+          "en": "You really like them, want to confess, and feel it could work out.",
+          "ja": "好き。告白したい気持ちがあり、うまくいきそうな感じもある。",
+          "zh-CN": "很喜欢对方，想告白，也觉得有戏。",
+          "zh-TW": "很喜歡對方，想告白，也覺得有戲。",
+          "vi": "Rất thích, muốn tỏ tình và cảm giác có thể thành.",
+          "id": "Suka banget, ingin menyatakan cinta, dan merasa bisa jadian."
+        }
+      },
+      {
+        "score": 1,
+        "text": {
+          "ko": "상대가 좋은데 아직 타이밍인지 모르겠다. 조금 더 알아가고 싶다",
+          "en": "You like them but are not sure about timing—you want to know them more first.",
+          "ja": "好きだがタイミングは分からない。もう少し知りたい。",
+          "zh-CN": "喜欢但不确定时机，想再多了解一点。",
+          "zh-TW": "喜歡但不確定時機，想再多了解一點。",
+          "vi": "Thích nhưng chưa chắc thời điểm—muốn hiểu thêm.",
+          "id": "Suka tapi belum yakin waktunya—ingin lebih mengenal dulu."
+        }
+      },
+      {
+        "score": 2,
+        "text": {
+          "ko": "상대가 좋은데 내가 더 좋아하는 것 같아서 불안하다",
+          "en": "You like them but worry you like them more—it feels uneven.",
+          "ja": "好きだが、自分の方が好きそうで不安。",
+          "zh-CN": "喜欢但觉得自己更喜欢对方，感到不安。",
+          "zh-TW": "喜歡但覺得自己更喜歡對方，感到不安。",
+          "vi": "Thích nhưng lo mình thích nhiều hơn—lệch cảm xúc.",
+          "id": "Suka tapi khawatir kamu yang lebih suka—tidak seimbang."
+        }
+      },
+      {
+        "score": 3,
+        "text": {
+          "ko": "관계가 애매해서 지쳐간다. 명확해졌으면 하는 마음이 크다",
+          "en": "The ambiguity is draining; you strongly want clarity either way.",
+          "ja": "曖昧さに疲れた。はっきりしてほしい気持ちが強い。",
+          "zh-CN": "暧昧让人很累，非常希望关系能明朗化。",
+          "zh-TW": "曖昧讓人很累，非常希望關係能明朗化。",
+          "vi": "Mập mờ làm mệt; rất muốn rõ ràng dù kết quả thế nào.",
+          "id": "Ketidakjelasan melelahkan; sangat ingin kejelasan."
+        }
+      }
+    ]
+  }
+]

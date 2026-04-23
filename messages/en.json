@@ -1338,6 +1338,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3SomeVsRelationshipTimingTest": {
+    "startMessage": {
+      "line1": "Should you move this relationship forward—or wait a bit longer?",
+      "line2": "They text often but never define it; dates feel great but there is no label; you like them but certainty is missing—that in-between space.",
+      "line3": "Crushes are exciting, but they cannot stay undefined forever. Reading the signals can reveal the right timing.",
+      "line4": "Twelve questions diagnose where this bond is now—and what choice fits you best.",
+      "line5": "Diagnose your crush timing 💌 Check now"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Some vs dating timing)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "goToTest": "Take the quiz",
+      "signalStrength": "Signal strength",
+      "relationshipTemperature": "Relationship temperature",
+      "oneLineDiagnosis": "💌 One-line relationship read"
+    },
+    "shareMessages": {
+      "resultType1": "Some vs dating timing: green light 💚 — results say confessing now is OK… should I send this to them lol → try it too",
+      "resultType2": "Some vs dating timing: almost ready 🌱 — a little more buildup sounds right; wish they would try this → you try it too",
+      "resultType3": "Some vs dating timing: mixed signals 🌀 — good days and off days, so relatable → try it too",
+      "resultType4": "Some vs dating timing: uneven feelings ⚖️ — knew I liked them more; confirmed ㅠ → try the quiz",
+      "resultType5": "Some vs dating timing: need a turning point 🚦 — stuck too long; time to decide for real ㅠ → try it",
+      "resultType6": "Some vs dating timing: step back and reassess ❄️ — cold truth I kind of knew ㅠ want to send this to them → try it",
+      "default": "Some vs dating timing: {type} — I just took it. Your turn!",
+      "kakao": "Some vs dating timing: {type} — I just took it. Your turn!",
+      "wechat": "Some vs dating timing: {type} — I just took it. Your turn!",
+      "whatsapp": "Some vs dating timing: {type} — I just took it. Your turn!",
+      "telegram": "Some vs dating timing: {type} — I just took it. Your turn!",
+      "line": "Some vs dating timing: {type} — I just took it. Your turn!",
+      "startDefault": "Some vs dating: 12 questions to see if it is confession time.",
+      "startKakao": "Some vs dating: 12 questions to see if it is confession time.",
+      "startWechat": "Some vs dating: 12 questions to see if it is confession time.",
+      "startWhatsapp": "Some vs dating: 12 questions to see if it is confession time.",
+      "startTelegram": "Some vs dating: 12 questions to see if it is confession time.",
+      "startLine": "Some vs dating: 12 questions to see if it is confession time."
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3SpendingDarkHistoryTypeTest": {
     "startMessage": {
       "line1": "We’ve all had that spending dark history at least once.",

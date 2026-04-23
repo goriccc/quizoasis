@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 最近热门测试前5名"
     }
   },
+  "phase3SomeVsRelationshipTimingTest": {
+    "startMessage": {
+      "line1": "这段关系，该往前推进，还是再等等？",
+      "line2": "联系很勤却没有表白；约会很开心却没有名分；好像喜欢却又缺一点确定——就在那种暧昧之间。",
+      "line3": "暧昧让人心动，但不能永远停在暧昧里。读懂当下的信号，才能看见合适的时机。",
+      "line4": "12 道题诊断这段关系处在什么阶段，以及哪种选择更适合你。",
+      "line5": "测测暧昧时机 💌 马上开始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（暧昧 vs 恋爱时机）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "shareResult": "分享结果",
+      "goToTest": "开始测试",
+      "signalStrength": "关系信号强度",
+      "relationshipTemperature": "当前关系温度",
+      "oneLineDiagnosis": "💌 一句话关系解读"
+    },
+    "shareMessages": {
+      "resultType1": "暧昧 vs 恋爱时机：绿灯告白 💚 结果说现在表白也可以…要不要发给他哈哈 → 你也来测",
+      "resultType2": "暧昧 vs 恋爱时机：再铺垫一下 🌱 再多积累一点就对味了，希望他也能测 → 你也试试",
+      "resultType3": "暧昧 vs 恋爱时机：信号忽冷忽热 🌀 好一天坏一天，太有同感了 → 你也来测",
+      "resultType4": "暧昧 vs 恋爱时机：感情不平衡 ⚖️ 早就知道自己更喜欢，结果被印证了 → 你也测测",
+      "resultType5": "暧昧 vs 恋爱时机：需要转折点 🚦 拖太久没进展，该认真做决定了 → 你也来",
+      "resultType6": "暧昧 vs 恋爱时机：该冷静复盘 ❄️ 其实心里知道的冷现实…想发给他看 → 你也测",
+      "default": "暧昧 vs 恋爱时机：{type} — 我刚测完，你也试试！",
+      "kakao": "暧昧 vs 恋爱时机：{type} — 我刚测完，你也试试！",
+      "wechat": "暧昧 vs 恋爱时机：{type} — 我刚测完，你也试试！",
+      "whatsapp": "暧昧 vs 恋爱时机：{type} — 我刚测完，你也试试！",
+      "telegram": "暧昧 vs 恋爱时机：{type} — 我刚测完，你也试试！",
+      "line": "暧昧 vs 恋爱时机：{type} — 我刚测完，你也试试！",
+      "startDefault": "暧昧还是恋爱？12 题看看现在是不是表白的好时机。",
+      "startKakao": "暧昧还是恋爱？12 题看看现在是不是表白的好时机。",
+      "startWechat": "暧昧还是恋爱？12 题看看现在是不是表白的好时机。",
+      "startWhatsapp": "暧昧还是恋爱？12 题看看现在是不是表白的好时机。",
+      "startTelegram": "暧昧还是恋爱？12 题看看现在是不是表白的好时机。",
+      "startLine": "暧昧还是恋爱？12 题看看现在是不是表白的好时机。"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
   "phase3SpendingDarkHistoryTypeTest": {
     "startMessage": {
       "line1": "那种消费黑历史，谁都有过几次。",

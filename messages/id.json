@@ -1297,6 +1297,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3SomeVsRelationshipTimingTest": {
+    "startMessage": {
+      "line1": "Hubungan ini, maju sekarang atau tunggu dulu?",
+      "line2": "Chat sering tapi belum jadian; kencan enak tapi tanpa status; suka tapi belum yakin — di antara situ.",
+      "line3": "Gebetan bikin deg-degan, tapi tidak bisa selamanya abu-abu. Baca sinyalnya, waktu yang tepat akan kelihatan.",
+      "line4": "12 pertanyaan mendiagnosis hubungan ini di tahap mana dan pilihan mana yang paling cocok untukmu.",
+      "line5": "Cek timing gebetan 💌 Mulai sekarang"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Gebetan vs timing pacaran)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "goToTest": "Mulai tes",
+      "signalStrength": "Kekuatan sinyal hubungan",
+      "relationshipTemperature": "Suhu hubungan saat ini",
+      "oneLineDiagnosis": "💌 Satu kalimat tentang hubungan"
+    },
+    "shareMessages": {
+      "resultType1": "Gebetan vs timing: lampu hijau 💚 — hasilnya bilang boleh ungkap sekarang… kirim ke dia nggak ya → kamu juga coba",
+      "resultType2": "Gebetan vs timing: hampir siap 🌱 — perlu sedikit lagi buildup, pengin dia juga ikut tes → kamu coba",
+      "resultType3": "Gebetan vs timing: sinyal campur aduk 🌀 — hari bagus jelek bergantian, relate banget → kamu juga",
+      "resultType4": "Gebetan vs timing: perasaan tidak seimbang ⚖️ — sudah tahu aku yang lebih suka, sekarang terkonfirmasi → coba tesnya",
+      "resultType5": "Gebetan vs timing: butuh titik balik 🚦 — lama tanpa maju, saatnya putuskan serius → coba",
+      "resultType6": "Gebetan vs timing: mundur sejenak ❄️ — kebenaran dingin yang sebenarnya sudah kuketahui… pengin kirim ke dia → coba",
+      "default": "Gebetan vs timing pacaran: {type} — Baru selesai. Giliranmu!",
+      "kakao": "Gebetan vs timing pacaran: {type} — Baru selesai. Giliranmu!",
+      "wechat": "Gebetan vs timing pacaran: {type} — Baru selesai. Giliranmu!",
+      "whatsapp": "Gebetan vs timing pacaran: {type} — Baru selesai. Giliranmu!",
+      "telegram": "Gebetan vs timing pacaran: {type} — Baru selesai. Giliranmu!",
+      "line": "Gebetan vs timing pacaran: {type} — Baru selesai. Giliranmu!",
+      "startDefault": "Gebetan atau serius? 12 pertanyaan cek apakah ini waktu ungkap perasaan.",
+      "startKakao": "Gebetan atau serius? 12 pertanyaan cek apakah ini waktu ungkap perasaan.",
+      "startWechat": "Gebetan atau serius? 12 pertanyaan cek apakah ini waktu ungkap perasaan.",
+      "startWhatsapp": "Gebetan atau serius? 12 pertanyaan cek apakah ini waktu ungkap perasaan.",
+      "startTelegram": "Gebetan atau serius? 12 pertanyaan cek apakah ini waktu ungkap perasaan.",
+      "startLine": "Gebetan atau serius? 12 pertanyaan cek apakah ini waktu ungkap perasaan."
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 rekomendasi tes serupa teratas",
+      "popularTestsTop5": "🔥 5 tes populer teratas"
+    }
+  },
   "phase3SpendingDarkHistoryTypeTest": {
     "startMessage": {
       "line1": "Riwayat belanja gelap yang bikin malu — semua orang pernah.",

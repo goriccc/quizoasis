@@ -1304,6 +1304,62 @@
       "popularTestsTop5": "🔥 最近熱門測試前5名"
     }
   },
+  "phase3SomeVsRelationshipTimingTest": {
+    "startMessage": {
+      "line1": "這段關係，該往前推進，還是再等等？",
+      "line2": "聯絡很勤卻沒有表白；約會很開心卻沒有名分；好像喜歡卻又缺一點確定——就在那種曖昧之間。",
+      "line3": "曖昧讓人心動，但不能永遠停在曖昧裡。讀懂當下的訊號，才能看見合適的時機。",
+      "line4": "12 題診斷這段關係現在在哪個階段，以及哪種選擇比較適合你。",
+      "line5": "測測曖昧時機 💌 馬上開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（曖昧 vs 戀愛時機）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "shareResult": "分享結果",
+      "goToTest": "開始測驗",
+      "signalStrength": "關係訊號強度",
+      "relationshipTemperature": "目前關係溫度",
+      "oneLineDiagnosis": "💌 一句話關係解讀"
+    },
+    "shareMessages": {
+      "resultType1": "曖昧 vs 戀愛時機：綠燈告白 💚 結果說現在表白也可以…要不要傳給他哈哈 → 你也來測",
+      "resultType2": "曖昧 vs 戀愛時機：再醞釀一下 🌱 再多累積一點就對味了，希望他也來測 → 你也試試",
+      "resultType3": "曖昧 vs 戀愛時機：訊號忽冷忽熱 🌀 好一天壞一天，太有同感了 → 你也來測",
+      "resultType4": "曖昧 vs 戀愛時機：感情不平衡 ⚖️ 早就知道自己比較喜歡，結果被印證了 → 你也測測",
+      "resultType5": "曖昧 vs 戀愛時機：需要轉折點 🚦 拖太久沒進展，該認真做決定了 → 你也來",
+      "resultType6": "曖昧 vs 戀愛時機：該冷靜複盤 ❄️ 其實心裡知道的冷現實…想傳給他看 → 你也測",
+      "default": "曖昧 vs 戀愛時機：{type} — 我剛測完，你也試試！",
+      "kakao": "曖昧 vs 戀愛時機：{type} — 我剛測完，你也試試！",
+      "wechat": "曖昧 vs 戀愛時機：{type} — 我剛測完，你也試試！",
+      "whatsapp": "曖昧 vs 戀愛時機：{type} — 我剛測完，你也試試！",
+      "telegram": "曖昧 vs 戀愛時機：{type} — 我剛測完，你也試試！",
+      "line": "曖昧 vs 戀愛時機：{type} — 我剛測完，你也試試！",
+      "startDefault": "曖昧還是戀愛？12 題看看現在是不是告白的好時機。",
+      "startKakao": "曖昧還是戀愛？12 題看看現在是不是告白的好時機。",
+      "startWechat": "曖昧還是戀愛？12 題看看現在是不是告白的好時機。",
+      "startWhatsapp": "曖昧還是戀愛？12 題看看現在是不是告白的好時機。",
+      "startTelegram": "曖昧還是戀愛？12 題看看現在是不是告白的好時機。",
+      "startLine": "曖昧還是戀愛？12 題看看現在是不是告白的好時機。"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3SpendingDarkHistoryTypeTest": {
     "startMessage": {
       "line1": "那種消費黑歷史，誰都有過幾次。",

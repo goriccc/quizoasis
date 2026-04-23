@@ -221,6 +221,10 @@ import {
   phase3VillainDnaQuestions,
   phase3VillainDnaResults,
 } from '@/lib/phase3VillainDnaData';
+import {
+  phase3SomeVsRelationshipTimingQuestions,
+  phase3SomeVsRelationshipTimingResults,
+} from '@/lib/phase3SomeVsRelationshipTimingData';
 import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
 import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
 import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
@@ -283,7 +287,7 @@ import { realIQQuestions, realIQResults } from '@/lib/realIQData';
 import { mensaExtremeQuestions, mensaExtremeResults } from '@/lib/mensaExtremeData';
 import { extremeQuizQuestions, extremeQuizResults } from '@/lib/extremeQuizData';
 import { faceReadingResults } from '@/lib/faceReadingData';
-import { getThumbnailUrl } from '@/lib/utils';
+import { getOgImageUrl, getThumbnailUrl } from '@/lib/utils';
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
 import { getLatestTestSlugs } from '@/lib/latestTests';
@@ -364,6 +368,10 @@ const Phase3DopamineTypeTestClient = dynamic(() => import('@/components/Phase3Do
 const Phase3VillainDnaTestClient = dynamic(() => import('@/components/Phase3VillainDnaTestClient'), {
   ssr: false,
 });
+const Phase3SomeVsRelationshipTimingTestClient = dynamic(
+  () => import('@/components/Phase3SomeVsRelationshipTimingTestClient'),
+  { ssr: false }
+);
 const Phase3AttachmentLoveTestClient = dynamic(() => import('@/components/Phase3AttachmentLoveTestClient'), {
   ssr: false
 });
@@ -2106,6 +2114,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
+  if (!test && slug === 'phase3-some-vs-relationship-timing') {
+    test = {
+      slug: 'phase3-some-vs-relationship-timing',
+      title: {
+        ko: '썸 vs 연애 결정 타이밍 진단',
+        en: 'Some vs Dating: When to Make It Official',
+        ja: 'サマ恋・告白タイミング診断',
+        'zh-CN': '暧昧 vs 恋爱：告白时机诊断',
+        'zh-TW': '曖昧 vs 戀愛：告白時機診斷',
+        vi: 'Mập mờ vs yêu: thời điểm tỏ tình',
+        id: 'Some vs pacaran: waktu tepat menyatakan cinta',
+      },
+      description: {
+        ko: '12문항 4지선다로 관계 신호와 고백·정리 타이밍 처방까지. #연애 #심리 #관계',
+        en: '12 multiple-choice questions — relationship signals plus timing advice. #love #psychology #relationships',
+        ja: '12問4択で関係のサインと告白・整理のタイミング。#恋愛 #心理 #関係',
+        'zh-CN': '12 道四选一：关系信号与告白/整理时机建议。#恋爱 #心理 #关系',
+        'zh-TW': '12 題四選一：關係訊號與告白／整理時機建議。#戀愛 #心理 #關係',
+        vi: '12 câu 4 lựa chọn — tín hiệu và lời khuyên thời điểm. #yêu #tâm_lý #quan_hệ',
+        id: '12 soal 4 pilihan — sinyal hubungan & saran waktu. #cinta #psikologi #hubungan',
+      },
+      thumbnail: 'p3_test_some_vs_relationship_timing.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리', '관계'],
+        en: ['Love', 'Psychology', 'Relationships'],
+        ja: ['恋愛', '心理', '関係'],
+        'zh-CN': ['恋爱', '心理', '关系'],
+        'zh-TW': ['戀愛', '心理', '關係'],
+        vi: ['Tình yêu', 'Tâm lý', 'Quan hệ'],
+        id: ['Cinta', 'Psikologi', 'Hubungan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
   if (!test && slug === 'phase3-hidden-sub-character') {
     test = {
       slug: 'phase3-hidden-sub-character',
@@ -2787,7 +2832,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? test.tags[locale] || test.tags.ko || []
     : test.tags;
 
-  // 썸네일을 절대 URL로 변환 (캐시 가능한 안정 URL 사용)
+  // 공유용 OG 이미지(고해상도 리사이즈 옵션) + 일반 썸네일(캐시 가능한 안정 URL)
+  const ogImageUrl = getOgImageUrl(test.thumbnail);
   const thumbnailUrl = getThumbnailUrl(test.thumbnail);
 
 
@@ -2815,7 +2861,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: description,
       images: [
         {
-          url: thumbnailUrl,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: title,
@@ -2842,19 +2888,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: title,
       description: description,
-      images: [thumbnailUrl],
+      images: [ogImageUrl],
       site: '@QuizOasis',
       creator: '@QuizOasis',
     },
     other: {
-      'og:image': thumbnailUrl,
-      'og:image:url': thumbnailUrl,
-      'og:image:secure_url': thumbnailUrl,
+      'og:image': ogImageUrl,
+      'og:image:url': ogImageUrl,
+      'og:image:secure_url': ogImageUrl,
       'og:image:width': '1200',
       'og:image:height': '630',
       'og:image:type': 'image/jpeg',
       'og:image:alt': title,
-      'twitter:image:src': thumbnailUrl,
+      'twitter:image:src': ogImageUrl,
       'twitter:image:alt': title,
       'og:site_name': 'QuizOasis',
       'og:url': canonicalUrl,
@@ -3015,8 +3061,7 @@ export default async function TestPage({ params }: Props) {
 
     const title = test.title[locale] || test.title.ko;
     const description = test.description?.[locale] || test.description?.ko || '';
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}`;
+    const thumbnailUrl = getThumbnailUrl(test.thumbnail);
     const canonicalUrl = `https://quizoasis-coral.vercel.app/${locale}/test/${slug}`;
 
     // JSON-LD Schema 생성
@@ -6825,6 +6870,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3VillainDnaQuestions}
           results={phase3VillainDnaResults}
           questionCount={phase3VillainDnaQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-some-vs-relationship-timing') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-some-vs-relationship-timing',
+      title: {
+        ko: '썸 vs 연애 결정 타이밍 진단',
+        en: 'Some vs Dating: When to Make It Official',
+        ja: 'サマ恋・告白タイミング診断',
+        'zh-CN': '暧昧 vs 恋爱：告白时机诊断',
+        'zh-TW': '曖昧 vs 戀愛：告白時機診斷',
+        vi: 'Mập mờ vs yêu: thời điểm tỏ tình',
+        id: 'Some vs pacaran: waktu tepat menyatakan cinta',
+      },
+      description: {
+        ko: '12문항 4지선다로 관계 신호와 고백·정리 타이밍 처방까지. #연애 #심리 #관계',
+        en: '12 multiple-choice questions — relationship signals plus timing advice. #love #psychology #relationships',
+        ja: '12問4択で関係のサインと告白・整理のタイミング。#恋愛 #心理 #関係',
+        'zh-CN': '12 道四选一：关系信号与告白/整理时机建议。#恋爱 #心理 #关系',
+        'zh-TW': '12 題四選一：關係訊號與告白／整理時機建議。#戀愛 #心理 #關係',
+        vi: '12 câu 4 lựa chọn — tín hiệu và lời khuyên thời điểm. #yêu #tâm_lý #quan_hệ',
+        id: '12 soal 4 pilihan — sinyal hubungan & saran waktu. #cinta #psikologi #hubungan',
+      },
+      thumbnail: 'p3_test_some_vs_relationship_timing.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애', '심리', '관계'],
+        en: ['Love', 'Psychology', 'Relationships'],
+        ja: ['恋愛', '心理', '関係'],
+        'zh-CN': ['恋爱', '心理', '关系'],
+        'zh-TW': ['戀愛', '心理', '關係'],
+        vi: ['Tình yêu', 'Tâm lý', 'Quan hệ'],
+        id: ['Cinta', 'Psikologi', 'Hubungan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SomeVsRelationshipTimingTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SomeVsRelationshipTimingQuestions}
+          results={phase3SomeVsRelationshipTimingResults}
+          questionCount={phase3SomeVsRelationshipTimingQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -11844,8 +11944,7 @@ export default async function TestPage({ params }: Props) {
 
   const title = test.title[locale] || test.title.ko || '';
   const description = test.description?.[locale] || test.description?.ko || '';
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const thumbnailUrl = `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${test.thumbnail}`;
+  const thumbnailUrl = getThumbnailUrl(test.thumbnail);
 
   // JSON-LD Schema for SEO - Quiz
   const jsonLdQuiz = {

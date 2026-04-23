@@ -75,14 +75,22 @@ export function getThumbnailUrl(thumbnail: string): string {
   if (thumbnail.startsWith('http://') || thumbnail.startsWith('https://')) {
     return thumbnail;
   }
+
+  const cdnBase = String(process.env.NEXT_PUBLIC_CDN_BASE_URL || '').trim().replace(/\/+$/, '');
   
   // Supabase Storage가 설정되어 있는 경우 사용
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   
+  // 캐시 버스팅: 현재 날짜를 버전으로 사용 (YYYYMMDD 형식)
+  const today = new Date();
+  const version = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
+
+  // Cloudflare CDN 프록시가 설정된 경우 우선 사용
+  if (cdnBase) {
+    return `${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(thumbnail)}?v=${version}`;
+  }
+
   if (supabaseUrl) {
-    // 캐시 버스팅: 현재 날짜를 버전으로 사용 (YYYYMMDD 형식)
-    const today = new Date();
-    const version = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
     return `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${thumbnail}?v=${version}`;
   }
   
@@ -93,6 +101,41 @@ export function getThumbnailUrl(thumbnail: string): string {
   
   // 기본 이미지 사용
   return 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=680&h=384&fit=crop&crop=center';
+}
+
+/**
+ * OG/Twitter 공유 이미지 전용 — 고해상도(1200x630)로 리사이즈(선택).
+ * NEXT_PUBLIC_SUPABASE_OG_IMAGE_RESIZE=1 이고 Supabase Image Transformation을 쓰는 경우에만 활성화하세요.
+ */
+export function getOgImageUrl(filename: string): string {
+  if (filename.startsWith('http://') || filename.startsWith('https://')) {
+    return filename;
+  }
+
+  const cdnBase = String(process.env.NEXT_PUBLIC_CDN_BASE_URL || '').trim().replace(/\/+$/, '');
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!supabaseUrl) {
+    return getThumbnailUrl(filename);
+  }
+
+  const today = new Date();
+  const version = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
+
+  if (process.env.NEXT_PUBLIC_SUPABASE_OG_IMAGE_RESIZE === '1') {
+    if (cdnBase) {
+      return `${cdnBase}/cdn/render/tests-thumbnails/${encodeURIComponent(
+        filename
+      )}?width=1200&height=630&resize=cover&quality=86&v=${version}`;
+    }
+    return `${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
+      filename
+    )}?width=1200&height=630&resize=cover&quality=86&v=${version}`;
+  }
+
+  if (cdnBase) {
+    return `${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(filename)}?v=${version}`;
+  }
+  return `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}?v=${version}`;
 }
 
 /**

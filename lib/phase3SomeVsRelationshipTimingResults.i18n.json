@@ -1,0 +1,756 @@
+[
+  {
+    "type": "Type1",
+    "emoji": "💚",
+    "title": {
+      "ko": "지금 바로 고백해도 됩니다, 고백 적기 신호 완료",
+      "en": "Green light to confess—signals look ready",
+      "ja": "今すぐ告白してOK、サイン十分",
+      "zh-CN": "可以告白了，信号已就绪",
+      "zh-TW": "可以告白了，訊號已就緒",
+      "vi": "Có thể tỏ tình—tín hiệu đã đủ",
+      "id": "Boleh menyatakan cinta—sinyal sudah cukup"
+    },
+    "shortDescription": {
+      "ko": "진단 결과: 고백 타이밍 완료. 지금이 적기입니다.",
+      "en": "Diagnosis: timing is right. This is a good window to confess.",
+      "ja": "診断：告白のタイミングは今。好機です。",
+      "zh-CN": "诊断：告白时机成熟，现在正合适。",
+      "zh-TW": "診斷：告白時機成熟，現在正合適。",
+      "vi": "Kết luận: đúng thời điểm tỏ tình.",
+      "id": "Hasil: timing menyatakan cinta sudah pas."
+    },
+    "quote": {
+      "ko": "신호가 충분히 쌓였습니다. 더 기다리면 오히려 타이밍을 놓칩니다.",
+      "en": "The signals are stacked. Waiting longer may mean missing the moment.",
+      "ja": "サインは十分。待ちすぎるとチャンスを逃すかも。",
+      "zh-CN": "信号已经够多了，再拖可能错过时机。",
+      "zh-TW": "訊號已經夠多了，再拖可能錯過時機。",
+      "vi": "Tín hiệu đã đủ—chờ thêm có thể lỡ thời điểm.",
+      "id": "Sinyal sudah cukup—menunggu terlalu lama bisa melewatkan momen."
+    },
+    "description": {
+      "ko": "상대방이 먼저 연락하고, 단둘이 만나는 자리를 만들고, 개인적인 이야기를 털어놓고, 미래 약속을 이야기하는 등 긍정적인 신호가 충분히 쌓인 상태입니다. 지금 이 관계는 이미 연애에 가깝게 움직이고 있습니다. 더 기다리면 관계가 자연 소멸되거나 다른 변수가 생길 수 있습니다. 망설임이 있다면 그것은 타이밍의 문제가 아니라 용기의 문제입니다.",
+      "en": "They initiate contact, plan one-on-one time, share personal stories, and talk about future plans—positive signals are strong. This bond already moves like dating without the label. Waiting risks drift or new variables. If you hesitate now, it is less about timing and more about courage.",
+      "ja": "連絡も二人の時間も深い話も未来の話も—前向きなサインが揃っています。もう恋人同士に近い動きです。待ちすぎると流れや変数でチャンスが消えることも。迷うならタイミングより勇気の問題です。",
+      "zh-CN": "对方主动联系、约单独见面、聊私事、谈未来——积极信号已足够。这段关系几乎已是恋爱只差名分。再拖可能自然淡掉或出现变数。若还在犹豫，比起时机更需要的是勇气。",
+      "zh-TW": "對方主動聯絡、約單獨見面、聊私事、談未來——積極訊號已足夠。這段關係幾乎已是戀愛只差名分。再拖可能自然淡掉或出現變數。若還在猶豫，比起時機更需要的是勇氣。",
+      "vi": "Họ chủ động liên lạc, hẹn riêng, chia sẻ cá nhân và nói về tương lai—tín hiệu tích cực đã đủ. Mối quan hệ gần như yêu chỉ thiếu cái tên. Chờ thêm dễ nhạt đi hoặc có biến số. Nếu còn ngần ngại, đó là can đảm hơn là thời điểm.",
+      "id": "Mereka memulai kontak, janji berdua, cerita pribadi, dan rencana masa depan—sinyal positif sudah kuat. Ini hampir pacaran tanpa label. Menunggu bisa membuat hubungan memudar atau ada variabel baru. Jika ragu, itu lebih soal keberanian daripada timing."
+    },
+    "signalStrength": {
+      "ko": "🟢🟢🟢🟢🟢 (강한 긍정 신호)",
+      "en": "🟢🟢🟢🟢🟢 (Strong positive signals)",
+      "ja": "🟢🟢🟢🟢🟢（強い前向きサイン）",
+      "zh-CN": "🟢🟢🟢🟢🟢（强正面信号）",
+      "zh-TW": "🟢🟢🟢🟢🟢（強正面訊號）",
+      "vi": "🟢🟢🟢🟢🟢 (Tín hiệu tích cực mạnh)",
+      "id": "🟢🟢🟢🟢🟢 (Sinyal positif kuat)"
+    },
+    "relationshipTemperature": {
+      "ko": "연애 직전. 형식만 없는 상태",
+      "en": "Pre-dating—everything but the official label",
+      "ja": "恋人直前。名乗るだけの状態",
+      "zh-CN": "恋爱前夕，只差确定关系",
+      "zh-TW": "戀愛前夕，只差確定關係",
+      "vi": "Sát ngưỡng yêu—chỉ thiếc công nhận",
+      "id": "Tepat sebelum pacaran—hanya kurang status resmi"
+    },
+    "primaryLabel": {
+      "ko": "고백 타이밍",
+      "en": "When to confess",
+      "ja": "告白のタイミング",
+      "zh-CN": "告白时机",
+      "zh-TW": "告白時機",
+      "vi": "Thời điểm tỏ tình",
+      "id": "Waktu menyatakan cinta"
+    },
+    "primaryValue": {
+      "ko": "지금 당장. 이번 주 안에",
+      "en": "Now—ideally within this week",
+      "ja": "今すぐ。今週中に",
+      "zh-CN": "就现在，本周内为佳",
+      "zh-TW": "就現在，本週內為佳",
+      "vi": "Ngay bây giờ—trong tuần này",
+      "id": "Sekarang—idealnya minggu ini"
+    },
+    "secondaryLabel": {
+      "ko": "고백 방식 추천",
+      "en": "How to say it",
+      "ja": "告白の仕方のおすすめ",
+      "zh-CN": "告白方式建议",
+      "zh-TW": "告白方式建議",
+      "vi": "Cách nói",
+      "id": "Cara mengatakannya"
+    },
+    "secondaryValue": {
+      "ko": "무겁지 않게, 자연스러운 자리에서 직접 말로",
+      "en": "Keep it light; say it in person in a natural moment—not a heavy speech.",
+      "ja": "重くせず、自然な二人の場で直接言葉で。",
+      "zh-CN": "别太沉重，在轻松自然的见面场合当面说。",
+      "zh-TW": "別太沉重，在輕鬆自然的見面場合當面說。",
+      "vi": "Nhẹ nhàng, nói trực tiếp khi gặp trong không khí tự nhiên.",
+      "id": "Tidak berat, katakan langsung saat ketemu dengan suasana natural."
+    },
+    "listLabel": {
+      "ko": "고백 전 체크리스트",
+      "en": "Quick checklist before you confess",
+      "ja": "告白前チェックリスト",
+      "zh-CN": "告白前小清单",
+      "zh-TW": "告白前小清單",
+      "vi": "Checklist trước khi tỏ tình",
+      "id": "Checklist sebelum menyatakan cinta"
+    },
+    "listLines": {
+      "ko": "단둘이 만날 자리 먼저 잡기\n분위기 좋을 때 자연스럽게 꺼내기\n\"좋아한다\"는 말보다 \"사귀고 싶다\"는 말이 더 명확함",
+      "en": "Lock in a one-on-one meetup first\nBring it up when the vibe is good\nSaying you want to date is clearer than only saying you like them",
+      "ja": "まず二人で会う約束を取る\n雰囲気が良いときに自然に切り出す\n「好き」より「付き合いたい」の方が明確",
+      "zh-CN": "先约好单独见面\n气氛好时自然开口\n比起只说喜欢，表达想交往更清楚",
+      "zh-TW": "先約好單獨見面\n氣氛好時自然開口\n比起只說喜歡，表達想交往更清楚",
+      "vi": "Hẹn gặp riêng trước\nNói khi không khí vui vẻ\nNói muốn hẹn hò rõ hơn chỉ nói thích",
+      "id": "Janji ketemu berdua dulu\nSampaikan saat suasana pas\nMengatakan ingin pacaran lebih jelas daripada hanya suka"
+    },
+    "cautionLabel": {
+      "ko": "만약 고백하지 않으면",
+      "en": "If you do not confess",
+      "ja": "告白しないとしたら",
+      "zh-CN": "若一直不告白",
+      "zh-TW": "若一直不告白",
+      "vi": "Nếu không tỏ tình",
+      "id": "Jika tidak menyatakan cinta"
+    },
+    "cautionValue": {
+      "ko": "상대방이 먼저 포기하거나 기회가 사라질 수 있음",
+      "en": "They may pull back first, or the window may close.",
+      "ja": "相手が先に諦めたり、チャンスが消えることがある。",
+      "zh-CN": "对方可能先退缩，或机会就这样过去。",
+      "zh-TW": "對方可能先退縮，或機會就這樣過去。",
+      "vi": "Họ có thể lùi trước, hoặc cơ hội qua mất.",
+      "id": "Mereka bisa mundur dulu, atau peluang hilang."
+    },
+    "oneLineDiagnosis": {
+      "ko": "이미 연애 중인 것과 다름없습니다. 이름표만 없는 상태입니다",
+      "en": "You are basically dating—just without the label yet.",
+      "ja": "もう恋人同士と変わらない。ラベルがないだけ。",
+      "zh-CN": "几乎已是恋爱，只差一个名分。",
+      "zh-TW": "幾乎已是戀愛，只差一個名分。",
+      "vi": "Gần như đang yêu—chỉ thiếc cái tên gọi.",
+      "id": "Sudah seperti pacaran—hanya belum ada label."
+    }
+  },
+  {
+    "type": "Type2",
+    "emoji": "🌱",
+    "title": {
+      "ko": "조금만 더 쌓으면 됩니다, 고백 준비 단계",
+      "en": "Almost ready—stack one more signal first",
+      "ja": "あと少し。告白準備段階",
+      "zh-CN": "再积累一点，告白准备阶段",
+      "zh-TW": "再累積一點，告白準備階段",
+      "vi": "Gần đủ—cần thêm một tín hiệu",
+      "id": "Hampir siap—kumpulkan satu sinyal lagi"
+    },
+    "shortDescription": {
+      "ko": "진단 결과: 긍정 신호는 있지만 아직 조금 더 쌓을 시간이 필요합니다.",
+      "en": "Positive signs exist, but you still need a little more time to strengthen them.",
+      "ja": "前向きなサインはあるが、もう少し積む時間が必要。",
+      "zh-CN": "有好信号，但还需要一点时间再巩固。",
+      "zh-TW": "有好訊號，但還需要一點時間再鞏固。",
+      "vi": "Có dấu hiệu tốt nhưng cần thêm thời gian để chắc hơn.",
+      "id": "Ada sinyal positif tapi perlu sedikit waktu lagi."
+    },
+    "quote": {
+      "ko": "방향은 맞습니다. 1~2주 안에 결정적 신호가 올 가능성이 높습니다.",
+      "en": "The direction looks right. A decisive signal may arrive in one to two weeks.",
+      "ja": "方向は合っている。1〜2週間で決定的なサインが来る可能性が高い。",
+      "zh-CN": "方向是对的，一两周内很可能出现更明确的信号。",
+      "zh-TW": "方向是對的，一兩週內很可能出現更明確的訊號。",
+      "vi": "Hướng đúng—1–2 tuần tới có thể có tín hiệu rõ ràng hơn.",
+      "id": "Arahnya benar—dalam 1–2 minggu bisa ada sinyal lebih jelas."
+    },
+    "description": {
+      "ko": "좋은 신호들이 보이고 있습니다. 상대가 나에게 관심을 보이고, 단둘이 만나는 자리도 있고, 어느 정도 마음이 느껴집니다. 다만 아직 확신을 줄 만한 결정적 신호가 한두 가지 부족한 상태입니다. 지금 당장 고백보다 앞으로 1~2주 동안 신호를 더 쌓는 것이 성공률을 높입니다.",
+      "en": "You see interest, one-on-one time, and some emotional momentum—but one or two decisive signals are still missing. Confessing in one to two weeks after stacking another signal often works better than rushing today.",
+      "ja": "関心や二人の時間、気持ちの動きは感じられる。ただ決定的なサインがあと一つ二つ足りない。今すぐより1〜2週間でサインを積む方が成功率が上がりやすい。",
+      "zh-CN": "有互动、有约会、也有点心意，但还缺一两个能让你笃定的信号。比起马上告白，再用一两周把信号堆稳成功率更高。",
+      "zh-TW": "有互動、有約會、也有點心意，但還缺一兩個能讓你篤定的訊號。比起馬上告白，再用一兩週把訊號堆穩成功率更高。",
+      "vi": "Có quan tâm, hẹn riêng và chút rung động—nhưng còn thiếu một hai tín hiệu quyết định. Chờ thêm 1–2 tuần để củng cố thường tốt hơn là vội tỏ tình ngay.",
+      "id": "Ada perhatian, janji berdua, dan sedikit momentum—tapi masih kurang satu dua sinyal kunci. Menunggu 1–2 minggu untuk memperkuat biasanya lebih aman daripada buru-buru sekarang."
+    },
+    "signalStrength": {
+      "ko": "🟢🟢🟢🟡☆ (긍정 신호 우세)",
+      "en": "🟢🟢🟢🟡☆ (Positive signals lead)",
+      "ja": "🟢🟢🟢🟡☆（前向きサイン優勢）",
+      "zh-CN": "🟢🟢🟢🟡☆（正面信号略占上风）",
+      "zh-TW": "🟢🟢🟢🟡☆（正面訊號略占上風）",
+      "vi": "🟢🟢🟢🟡☆ (Tín hiệu tích cực nhỉnh hơn)",
+      "id": "🟢🟢🟢🟡☆ (Sinyal positif lebih dominan)"
+    },
+    "relationshipTemperature": {
+      "ko": "썸 중반. 방향은 연애 쪽으로 기울어짐",
+      "en": "Mid-crush—tilting toward dating",
+      "ja": "サマ中盤。恋愛方向に傾きつつある",
+      "zh-CN": "暧昧中期，朝恋爱方向倾斜",
+      "zh-TW": "曖昧中期，朝戀愛方向傾斜",
+      "vi": "Giữa giai đoạn mập mờ—nghiêng về yêu",
+      "id": "Fase pertengahan dekat—condong ke pacaran"
+    },
+    "primaryLabel": {
+      "ko": "고백 타이밍",
+      "en": "When to confess",
+      "ja": "告白のタイミング",
+      "zh-CN": "告白时机",
+      "zh-TW": "告白時機",
+      "vi": "Thời điểm tỏ tình",
+      "id": "Waktu menyatakan cinta"
+    },
+    "primaryValue": {
+      "ko": "1~2주 후. 지금보다 신호가 하나 더 쌓이면",
+      "en": "In one to two weeks—after one more clear signal than today",
+      "ja": "1〜2週間後。今よりサインがもう一つ増えたら",
+      "zh-CN": "一到两周后，再多一个明确信号时",
+      "zh-TW": "一到兩週後，再多一個明確訊號時",
+      "vi": "Sau 1–2 tuần—khi có thêm một tín hiệu rõ ràng",
+      "id": "Dalam 1–2 minggu—setelah ada satu sinyal jelas lagi"
+    },
+    "secondaryLabel": {
+      "ko": "고백을 서두르면 안 되는 이유",
+      "en": "Why not rush the confession",
+      "ja": "急いで告白しない方がいい理由",
+      "zh-CN": "不宜急着告白的原因",
+      "zh-TW": "不宜急著告白的原因",
+      "vi": "Vì sao không nên vội tỏ tình",
+      "id": "Mengapa jangan buru-buru menyatakan cinta"
+    },
+    "secondaryValue": {
+      "ko": "신호가 충분하지 않은 상태에서 고백하면 상대가 당황하거나 관계가 어색해질 수 있음",
+      "en": "If signals are still thin, a confession can surprise them or make things awkward.",
+      "ja": "サインが薄いままだと相手が戸惑い、関係がぎこちなくなることがある。",
+      "zh-CN": "信号还不够时告白，对方可能措手不及，气氛变尴尬。",
+      "zh-TW": "訊號還不夠時告白，對方可能措手不及，氣氛變尷尬。",
+      "vi": "Tín hiệu còn mỏng mà tỏ tình dễ làm họ bối rối hoặc ngượng.",
+      "id": "Kalau sinyal masih tipis, pengakuan bisa membuat mereka kaget atau canggung."
+    },
+    "listLabel": {
+      "ko": "지금 해야 할 것",
+      "en": "What to do now",
+      "ja": "今やること",
+      "zh-CN": "现在可以做的事",
+      "zh-TW": "現在可以做的事",
+      "vi": "Việc nên làm bây giờ",
+      "id": "Yang dilakukan sekarang"
+    },
+    "listLines": {
+      "ko": "단둘이 만날 기회를 한 번 더 만들기\n깊은 대화를 한 번 더 나눠보기\n상대가 나를 특별하게 대하는 순간을 관찰하기",
+      "en": "Create one more one-on-one opportunity\nGo one level deeper in conversation once\nWatch for moments they treat you as special",
+      "ja": "二人で会う機会をもう一度作る\nもう一段深い話をしてみる\n特別扱いの瞬間を観察する",
+      "zh-CN": "再创造一次单独见面的机会\n再聊一层更深的话题\n留意对方把你当特别的时刻",
+      "zh-TW": "再創造一次單獨見面的機會\n再聊一層更深的話題\n留意對方把你當特別的時刻",
+      "vi": "Tạo thêm một dịp gặp riêng\nNói chuyện sâu hơn một lần\nQuan sát khi họ đối xử đặc biệt với bạn",
+      "id": "Buat satu lagi kesempatan ketemu berdua\nNgobrol lebih dalam sekali\nPerhatikan saat mereka memperlakukanmu istimewa"
+    },
+    "cautionLabel": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "cautionValue": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "oneLineDiagnosis": {
+      "ko": "방향은 맞습니다. 조금만 더 나아가면 됩니다",
+      "en": "You are on the right track—just take one more step.",
+      "ja": "方向は合っている。あと一歩。",
+      "zh-CN": "方向对了，再往前走一小步就好。",
+      "zh-TW": "方向對了，再往前走一小步就好。",
+      "vi": "Đúng hướng—chỉ cần thêm một bước.",
+      "id": "Arahnya benar—tinggal satu langkah lagi."
+    }
+  },
+  {
+    "type": "Type3",
+    "emoji": "🌀",
+    "title": {
+      "ko": "신호가 엇갈립니다, 관계 재정비 필요",
+      "en": "Mixed signals—time to recalibrate",
+      "ja": "サインが交錯。関係の再整理が必要",
+      "zh-CN": "信号混乱，需要厘清关系",
+      "zh-TW": "訊號混亂，需要釐清關係",
+      "vi": "Tín hiệu lẫn lộn—cần chỉnh lại",
+      "id": "Sinyal bercampur—perlu menata ulang"
+    },
+    "shortDescription": {
+      "ko": "진단 결과: 긍정 신호와 부정 신호가 섞여 있습니다. 명확하게 할 필요가 있습니다.",
+      "en": "Positive and negative signals are mixed. You need clarity—not a blind confession.",
+      "ja": "前向きと不安要素が混在。はっきりさせる必要がある。",
+      "zh-CN": "好坏信号夹杂，需要先厘清而不是贸然告白。",
+      "zh-TW": "好壞訊號夾雜，需要先釐清而不是貿然告白。",
+      "vi": "Tín hiệu tốt và xấu lẫn lộn—cần rõ ràng hơn là tỏ tình mù quáng.",
+      "id": "Sinyal positif dan negatif bercampur—perlu kejelasan, bukan pengakuan membabi buta."
+    },
+    "quote": {
+      "ko": "좋은 날도 있고 아닌 날도 있는 이 상태가 가장 지칩니다.",
+      "en": "Hot-and-cold patterns are exhausting—that is the real drain.",
+      "ja": "良い日と悪い日が交互。この状態が一番しんどい。",
+      "zh-CN": "忽冷忽热最让人疲惫。",
+      "zh-TW": "忽冷忽熱最讓人疲憊。",
+      "vi": "Nóng lạnh thất thường khiến người ta kiệt sức nhất.",
+      "id": "Pola panas-dingin paling melelahkan."
+    },
+    "description": {
+      "ko": "상대방의 행동이 일관되지 않습니다. 어떤 날은 확실히 관심 있어 보이고 어떤 날은 무관심합니다. 연락이 들쑥날쑥하고, 스킨십도 그날 분위기에 따라 다르고, 특별하게 대하는지도 모르겠는 상태입니다. 이 패턴이 계속되면 기다리는 쪽이 지치게 됩니다. 지금 필요한 것은 고백이 아니라 상대방의 일관성을 확인하는 것입니다.",
+      "en": "Their behavior is inconsistent—some days very interested, other days distant. Contact and touch swing with the vibe. You cannot tell if you are special. If this continues, the waiting side burns out. What you need now is consistency-checking, not a confession.",
+      "ja": "行動に一貫性がない。連絡もスキンシップもムラで、特別感も読めない。このままだと待つ側が疲れる。今は告白より相手の一貫性を確かめる段階。",
+      "zh-CN": "对方行为不一致，联系和身体距离随心情波动，看不出是否把你当特别的人。若持续下去，等待的一方会先累。现在更需要确认对方的一致性，而不是急着告白。",
+      "zh-TW": "對方行為不一致，聯絡和身體距離隨心情波動，看不出是否把你當特別的人。若持續下去，等待的一方會先累。現在更需要確認對方的一致性，而不是急著告白。",
+      "vi": "Họ không đều—lúc quan tâm lúc xa cách. Liên lạc và chạm thay đổi theo mood. Không biết bạn có đặc biệt không. Tiếp tục thì người chờ sẽ kiệt. Giờ cần kiểm tra sự nhất quán hơn là tỏ tình.",
+      "id": "Perilaku tidak konsisten—kadang dekat kadang jauh. Kontak dan sentuhan ikut suasana. Bingung apakah kamu istimewa. Kalau terus, yang menunggu capek. Sekarang perlu cek konsistensi, bukan pengakuan."
+    },
+    "signalStrength": {
+      "ko": "🟢🟡🟡🔴☆ (혼재 신호)",
+      "en": "🟢🟡🟡🔴☆ (Mixed signals)",
+      "ja": "🟢🟡🟡🔴☆（交錯サイン）",
+      "zh-CN": "🟢🟡🟡🔴☆（信号混杂）",
+      "zh-TW": "🟢🟡🟡🔴☆（訊號混雜）",
+      "vi": "🟢🟡🟡🔴☆ (Tín hiệu trộn)",
+      "id": "🟢🟡🟡🔴☆ (Sinyal campuran)"
+    },
+    "relationshipTemperature": {
+      "ko": "썸 초중반. 방향이 불명확한 상태",
+      "en": "Early-to-mid crush—direction unclear",
+      "ja": "サマ序盤〜中盤。方向が不透明",
+      "zh-CN": "暧昧初中期，方向不明",
+      "zh-TW": "曖昧初中期，方向不明",
+      "vi": "Đầu–giữa mập mờ—hướng chưa rõ",
+      "id": "Awal–pertengahan dekat—arah belum jelas"
+    },
+    "primaryLabel": {
+      "ko": "고백 타이밍",
+      "en": "When to confess",
+      "ja": "告白のタイミング",
+      "zh-CN": "告白时机",
+      "zh-TW": "告白時機",
+      "vi": "Thời điểm tỏ tình",
+      "id": "Waktu menyatakan cinta"
+    },
+    "primaryValue": {
+      "ko": "아직 아님. 먼저 확인이 필요함",
+      "en": "Not yet—verify consistency first",
+      "ja": "まだ早い。先に確認が必要",
+      "zh-CN": "还不是时候，先确认对方态度",
+      "zh-TW": "還不是時候，先確認對方態度",
+      "vi": "Chưa—cần xác minh trước",
+      "id": "Belum—perlu verifikasi dulu"
+    },
+    "secondaryLabel": {
+      "ko": "이 상태를 계속 유지하면",
+      "en": "If you stay in this pattern",
+      "ja": "このまま続けると",
+      "zh-CN": "若继续维持这种状态",
+      "zh-TW": "若繼續維持這種狀態",
+      "vi": "Nếu giữ nguyên kiểu này",
+      "id": "Jika pola ini berlanjut"
+    },
+    "secondaryValue": {
+      "ko": "내 감정만 소모되는 구조가 될 수 있음",
+      "en": "You risk emotional burnout while waiting.",
+      "ja": "待つ側の感情だけが削られる構造になりやすい。",
+      "zh-CN": "容易变成只有你的情绪在被消耗。",
+      "zh-TW": "容易變成只有你的情緒在被消耗。",
+      "vi": "Dễ thành kiểu chỉ cảm xúc bạn bị hao mòn.",
+      "id": "Risiko hanya perasaanmu yang terkuras."
+    },
+    "listLabel": {
+      "ko": "지금 해야 할 것",
+      "en": "What to do now",
+      "ja": "今やること",
+      "zh-CN": "现在可以做的事",
+      "zh-TW": "現在可以做的事",
+      "vi": "Việc nên làm",
+      "id": "Yang perlu dilakukan"
+    },
+    "listLines": {
+      "ko": "고백 전에 \"나는 이 사람한테 관심이 있는데 상대는 어떤지\" 가볍게 확인해보기\n상대의 행동이 일관되는지 2주간 관찰하기\n일관되지 않으면 관계를 정리하거나 직접 물어보는 것도 방법",
+      "en": "Lightly check how they see you before any confession\nWatch their consistency for about two weeks\nIf it stays messy, clarify or step back",
+      "ja": "告白前に軽く「自分は気があるが相手は？」を確認\n2週間ほど行動の一貫性を観察\n揃わなければ整理や直球も選択肢",
+      "zh-CN": "告白前先轻松确认彼此心意\n用约两周观察对方是否稳定\n若仍混乱，整理关系或直接问清楚也是办法",
+      "zh-TW": "告白前先輕鬆確認彼此心意\n用約兩週觀察對方是否穩定\n若仍混亂，整理關係或直接問清楚也是辦法",
+      "vi": "Hỏi nhẹ họ nghĩ sao trước khi tỏ tình\nQuan sát tính nhất quán ~2 tuần\nNếu vẫn lộn xộn, làm rõ hoặc lùi lại",
+      "id": "Cek ringan perasaan mereka sebelum mengaku\nAmati konsistensi ~2 minggu\nJika tetap berantakan, klarifikasi atau mundur"
+    },
+    "cautionLabel": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "cautionValue": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "oneLineDiagnosis": {
+      "ko": "좋은 신호와 나쁜 신호가 섞인 관계는 대부분 상대가 결정을 못 한 상태입니다",
+      "en": "Mixed signals often mean they have not decided yet—not that you are wrong to care.",
+      "ja": "良い悪いが混ざるのは、相手が決めきれていないことが多い。",
+      "zh-CN": "好坏夹杂时，多半是对方还没下定决心。",
+      "zh-TW": "好壞夾雜時，多半是對方還沒下定決心。",
+      "vi": "Tín hiệu lẫn lộn thường là họ chưa quyết—không phải lỗi của bạn.",
+      "id": "Sinyal campuran sering berarti mereka belum memutuskan."
+    }
+  },
+  {
+    "type": "Type4",
+    "emoji": "⚖️",
+    "title": {
+      "ko": "내가 더 좋아하고 있습니다, 감정 불균형 주의",
+      "en": "You may like them more—watch the imbalance",
+      "ja": "こちらの好意が大きい可能性。不均衡注意",
+      "zh-CN": "你可能更喜欢对方，注意情感失衡",
+      "zh-TW": "你可能更喜歡對方，注意情感失衡",
+      "vi": "Bạn có thể thích nhiều hơn—cảnh báo lệch",
+      "id": "Kamu mungkin lebih suka—waspada ketidakseimbangan"
+    },
+    "shortDescription": {
+      "ko": "진단 결과: 지금 이 관계에서 감정의 크기가 맞지 않을 수 있습니다.",
+      "en": "The emotional investment may not be even right now.",
+      "ja": "感情の量が釣り合っていない可能性があります。",
+      "zh-CN": "双方投入的感情量可能不对等。",
+      "zh-TW": "雙方投入的感情量可能不對等。",
+      "vi": "Mức đầu tư cảm xúc có thể không cân bằng.",
+      "id": "Kedalaman perasaan mungkin tidak seimbang."
+    },
+    "quote": {
+      "ko": "내가 상대보다 더 많이 좋아하고 있는 상태입니다. 고백보다 먼저 확인이 필요합니다.",
+      "en": "You seem to like them more than they show back. Check signals before confessing.",
+      "ja": "好意の量がこちら寄り。告白より先にサイン確認が必要。",
+      "zh-CN": "你投入的心意可能更大，告白前要先确认信号。",
+      "zh-TW": "你投入的心意可能更大，告白前要先確認訊號。",
+      "vi": "Bạn có vẻ thích nhiều hơn—cần kiểm tra tín hiệu trước khi tỏ tình.",
+      "id": "Sepertinya kamu lebih jatuh cinta—cek sinyal sebelum mengaku."
+    },
+    "description": {
+      "ko": "연락을 내가 더 먼저 하고, 만남 자리도 내가 더 만들고, 상대의 작은 행동에 큰 의미를 부여하는 패턴이 있습니다. 상대방이 나에게만 특별하게 대하는지 확신이 없고, 원래 다정한 사람인지 나한테만 그런 건지 구별이 안 됩니다. 이 상태에서 고백하면 성공률보다 후회 확률이 높습니다. 지금은 감정을 정리하고 상대의 진짜 마음을 확인하는 단계가 먼저입니다.",
+      "en": "You initiate more and read a lot into small gestures. You cannot tell if you are special or if they are just warm to everyone. Confessing from this posture often leads to regret more than success. First rebalance and test their real interest.",
+      "ja": "連絡も約束もこちら寄り。小さな行動に意味を乗せがち。特別か人柄か判別しづらい。この状態の告白は後悔が増えやすい。まず感情の整理と本気度の確認。",
+      "zh-CN": "你更常主动联系、更常安排见面，也容易过度解读小动作。分不清是只对你特别还是他们本来对人就好。这种状态下告白更容易后悔。先整理情绪、验证对方真心。",
+      "zh-TW": "你更常主動聯絡、更常安排見面，也容易過度解讀小動作。分不清是只對你特別還是他們本來對人就好。這種狀態下告白更容易後悔。先整理情緒、驗證對方真心。",
+      "vi": "Bạn chủ động nhiều hơn và dễ suy diễn. Không biết là đặc biệt hay họ vốn thân thiện. Tỏ tình lúc này dễ hối hơn thành công. Hãy cân bằng lại và kiểm tra mức quan tâm thật.",
+      "id": "Kamu lebih sering memulai dan menafsirkan gestur kecil. Bingung istimewa atau memang ramah. Mengaku sekarang risiko penyesalan lebih besar. Seimbangkan dulu dan uji minat sungguhan mereka."
+    },
+    "signalStrength": {
+      "ko": "🟡🟡🔴🔴☆ (약한 신호 또는 일방적 신호)",
+      "en": "🟡🟡🔴🔴☆ (Weak or one-sided signals)",
+      "ja": "🟡🟡🔴🔴☆（弱い／一方的サイン）",
+      "zh-CN": "🟡🟡🔴🔴☆（信号偏弱或单向）",
+      "zh-TW": "🟡🟡🔴🔴☆（訊號偏弱或單向）",
+      "vi": "🟡🟡🔴🔴☆ (Tín hiệu yếu hoặc một chiều)",
+      "id": "🟡🟡🔴🔴☆ (Sinyal lemah atau sepihak)"
+    },
+    "relationshipTemperature": {
+      "ko": "썸 초반 또는 짝사랑에 가까운 상태",
+      "en": "Early crush or near one-sided interest",
+      "ja": "サマ序盤、または片思い寄り",
+      "zh-CN": "暧昧早期或接近单方面喜欢",
+      "zh-TW": "曖昧早期或接近單方面喜歡",
+      "vi": "Đầu mập mờ hoặc gần thích một phía",
+      "id": "Awal dekat atau hampir suka sepihak"
+    },
+    "primaryLabel": {
+      "ko": "고백 타이밍",
+      "en": "When to confess",
+      "ja": "告白のタイミング",
+      "zh-CN": "告白时机",
+      "zh-TW": "告白時機",
+      "vi": "Thời điểm tỏ tình",
+      "id": "Waktu menyatakan cinta"
+    },
+    "primaryValue": {
+      "ko": "지금은 아님. 감정 균형 확인 먼저",
+      "en": "Not now—restore balance and verify interest first",
+      "ja": "今は早い。まず感情のバランスと本気度確認",
+      "zh-CN": "先别告白，先确认情感是否对等",
+      "zh-TW": "先別告白，先確認情感是否對等",
+      "vi": "Chưa—cân bằng cảm xúc và xác minh trước",
+      "id": "Belum—seimbangkan perasaan dan verifikasi dulu"
+    },
+    "secondaryLabel": {
+      "ko": "이 상태에서 고백하면",
+      "en": "If you confess from here",
+      "ja": "この状態で告白すると",
+      "zh-CN": "若在这种状态下告白",
+      "zh-TW": "若在這種狀態下告白",
+      "vi": "Nếu tỏ tình lúc này",
+      "id": "Jika mengaku dari posisi ini"
+    },
+    "secondaryValue": {
+      "ko": "거절 가능성이 높거나 애매한 답변을 받을 수 있음",
+      "en": "Higher chance of rejection or a vague non-answer.",
+      "ja": "断られやすい、または曖昧な返事になりやすい。",
+      "zh-CN": "较容易被拒或得到含糊回应。",
+      "zh-TW": "較容易被拒或得到含糊回應。",
+      "vi": "Dễ bị từ chối hoặc nhận câu trả lời mơ hồ.",
+      "id": "Risiko ditolak atau jawaban samar lebih tinggi."
+    },
+    "listLabel": {
+      "ko": "지금 해야 할 것",
+      "en": "What to do now",
+      "ja": "今やること",
+      "zh-CN": "现在可以做的事",
+      "zh-TW": "現在可以做的事",
+      "vi": "Việc nên làm",
+      "id": "Yang perlu dilakukan"
+    },
+    "listLines": {
+      "ko": "일주일간 내가 먼저 연락하지 않아보기. 상대가 먼저 연락하는지 확인\n상대가 나와의 만남을 얼마나 적극적으로 만드는지 관찰하기\n나를 특별하게 대하는 것인지 원래 성격인지 구분하기",
+      "en": "Try not initiating for a week—see if they reach out\nNotice how actively they plan time with you\nSeparate special treatment from their baseline personality",
+      "ja": "1週間こちらから連絡しないで様子を見る\n会う約束をどれだけ向こうが作るか観察\n特別扱いか人柄かを切り分ける",
+      "zh-CN": "试着一周不主动联系，看对方会不会找你\n观察对方多主动约你\n分辨是特别对你还是他们本来就这样",
+      "zh-TW": "試著一週不主動聯絡，看對方會不會找你\n觀察對方多主動約你\n分辨是特別對你還是他們本來就這樣",
+      "vi": "Một tuần không chủ động nhắn—xem họ có tìm không\nXem họ chủ động hẹn cỡ nào\nTách biệt đặc biệt với tính cách thường",
+      "id": "Satu minggu jangan memulai kontak—lihat apakah mereka mencari\nPerhatikan seberapa aktif mereka mengajak\nBeda perlakuan khusus vs kepribadian dasar"
+    },
+    "cautionLabel": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "cautionValue": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "oneLineDiagnosis": {
+      "ko": "지금 내 감정의 크기가 상대보다 크다면 고백보다 먼저 신호를 확인하세요",
+      "en": "If your feelings are bigger right now, read signals before you confess.",
+      "ja": "好意が大きいなら、告白より先にサインを確かめて。",
+      "zh-CN": "若你投入更深，先读信号再谈告白。",
+      "zh-TW": "若你投入更深，先讀訊號再談告白。",
+      "vi": "Nếu cảm xúc bạn lớn hơn, đọc tín hiệu trước khi tỏ tình.",
+      "id": "Jika perasaanmu lebih besar, baca sinyal sebelum mengaku."
+    }
+  },
+  {
+    "type": "Type5",
+    "emoji": "🚦",
+    "title": {
+      "ko": "관계가 정체됐습니다, 전환점 필요",
+      "en": "Stuck in place—you need a turning point",
+      "ja": "停滞。転換点が必要",
+      "zh-CN": "关系停滞，需要转折点",
+      "zh-TW": "關係停滯，需要轉折點",
+      "vi": "Bế tắc—cần điểm rẽ",
+      "id": "Mandek—perlu titik balik"
+    },
+    "shortDescription": {
+      "ko": "진단 결과: 이 관계는 지금 움직이지 않고 있습니다. 변화가 필요한 시점입니다.",
+      "en": "This connection is not moving. A deliberate change is overdue.",
+      "ja": "進んでいない。変化が必要な局面。",
+      "zh-CN": "这段关系没有推进，需要主动制造变化。",
+      "zh-TW": "這段關係沒有推進，需要主動製造變化。",
+      "vi": "Mối quan hệ không tiến—cần thay đổi chủ đích.",
+      "id": "Hubungan tidak bergerak—perlu perubahan disengaja."
+    },
+    "quote": {
+      "ko": "오래됐는데 진전이 없는 관계는 자연 소멸로 가거나 누군가 결단을 내려야 합니다.",
+      "en": "Long stagnation drifts toward fade-out unless someone decides.",
+      "ja": "長く停滞すると自然消滅か、誰かが決断が必要。",
+      "zh-CN": "拖太久不进展，要么慢慢淡掉，要么需要有人做决定。",
+      "zh-TW": "拖太久不進展，要麼慢慢淡掉，要麼需要有人做決定。",
+      "vi": "Kẹt lâu sẽ nhạt dần trừ khi ai đó quyết định.",
+      "id": "Macet lama akan memudar kecuali ada yang memutuskan."
+    },
+    "description": {
+      "ko": "관계가 시작된 지는 꽤 됐는데 아무것도 바뀌지 않았습니다. 만나긴 만나고 연락은 하는데 연애로 발전하지도 않고 정리되지도 않는 상태입니다. 이 관계는 지금 당신이 무언가를 해야 움직이는 시점에 있습니다. 계속 기다리는 것은 선택이 아닙니다. 더 기다리는 것은 소모입니다.",
+      "en": "Time has passed but nothing shifts. You meet and text yet it neither becomes dating nor ends cleanly. Movement now depends on you doing something concrete. Passive waiting is not a strategy—it is slow depletion.",
+      "ja": "時間は経つが進展しない。会うし連絡もするが恋人にもならず整理もできない。動かすにはこちらからの行動が要る。待つだけは戦略ではなく消耗。",
+      "zh-CN": "时间过去了却没有变化。有见面有联系，但既不确认恋爱也不结束。现在需要你做点什么推动。被动等待不是策略，而是消耗。",
+      "zh-TW": "時間過去了卻沒有變化。有見面有聯絡，但既不確認戀愛也不結束。現在需要你做點什麼推動。被動等待不是策略，而是消耗。",
+      "vi": "Thời gian trôi nhưng không đổi. Vẫn gặp và nhắn nhưng không thành yêu cũng không kết thúc gọn. Cần hành động cụ thể từ bạn. Chờ đợi thụ động là hao mòn.",
+      "id": "Waktu berlalu tanpa perubahan. Masih ketemu dan chat tapi tidak jadian juga tidak selesai. Perlu tindakan konkret darimu. Menunggu pasif adalah pengurasan."
+    },
+    "signalStrength": {
+      "ko": "🟡🔴🔴🔴☆ (약한 신호·정체 상태)",
+      "en": "🟡🔴🔴🔴☆ (Weak signals, stuck state)",
+      "ja": "🟡🔴🔴🔴☆（弱いサイン・停滞）",
+      "zh-CN": "🟡🔴🔴🔴☆（信号弱·停滞）",
+      "zh-TW": "🟡🔴🔴🔴☆（訊號弱·停滯）",
+      "vi": "🟡🔴🔴🔴☆ (Tín hiệu yếu, kẹt)",
+      "id": "🟡🔴🔴🔴☆ (Sinyal lemah, macet)"
+    },
+    "relationshipTemperature": {
+      "ko": "정체된 썸. 연애도 이별도 아닌 중간 상태",
+      "en": "Frozen situationship—neither dating nor a clean end",
+      "ja": "停滞サマ。恋人でも別れでもない中間",
+      "zh-CN": "卡住的暧昧，既不像恋爱也不像分手",
+      "zh-TW": "卡住的曖昧，既不像戀愛也不像分手",
+      "vi": "Mập mờ kẹt—không phải yêu cũng không kết thúc",
+      "id": "Dekat macet—bukan pacaran juga bukan selesai"
+    },
+    "primaryLabel": {
+      "ko": "고백 타이밍",
+      "en": "When to confess / clarify",
+      "ja": "告白／整理のタイミング",
+      "zh-CN": "告白或厘清时机",
+      "zh-TW": "告白或釐清時機",
+      "vi": "Tỏ tình / làm rõ",
+      "id": "Mengaku / klarifikasi"
+    },
+    "primaryValue": {
+      "ko": "기다림 종료. 이번 달 안에 결론 내기",
+      "en": "Stop endless waiting—aim for clarity within this month",
+      "ja": "待ちの終了。今月中に結論を",
+      "zh-CN": "停止无限等待，本月内争取一个结论",
+      "zh-TW": "停止無限等待，本月內爭取一個結論",
+      "vi": "Dừng chờ vô hạn—hướng tới rõ ràng trong tháng này",
+      "id": "Hentikan menunggu tanpa akhir—kejelasan bulan ini"
+    },
+    "secondaryLabel": {
+      "ko": "이 상태를 계속 유지하면",
+      "en": "If you keep waiting passively",
+      "ja": "このまま待ち続けると",
+      "zh-CN": "若继续被动等待",
+      "zh-TW": "若繼續被動等待",
+      "vi": "Nếu tiếp tục chờ thụ động",
+      "id": "Jika terus menunggu pasif"
+    },
+    "secondaryValue": {
+      "ko": "당신의 감정만 소모되고 결국 지쳐서 후회하는 이별이 됨",
+      "en": "Your emotional budget drains until you exit tired and regretful.",
+      "ja": "こちらの感情だけが削れ、疲れて後悔する別れになりやすい。",
+      "zh-CN": "只剩你在消耗情绪，最后疲惫收场容易后悔。",
+      "zh-TW": "只剩你在消耗情緒，最後疲憊收場容易後悔。",
+      "vi": "Chỉ bạn hao cảm xúc rời đi mệt mỏi và hối tiếc.",
+      "id": "Hanya kamu yang habis—pergi lelah dan menyesal."
+    },
+    "listLabel": {
+      "ko": "지금 해야 할 것",
+      "en": "What to do now",
+      "ja": "今やること",
+      "zh-CN": "现在可以做的事",
+      "zh-TW": "現在可以做的事",
+      "vi": "Việc nên làm",
+      "id": "Yang perlu dilakukan"
+    },
+    "listLines": {
+      "ko": "더 기다리지 않기. 기다림은 답이 아님\n고백하거나 관계를 명확하게 물어보거나 둘 중 하나 선택\n\"나 이 관계가 어떻게 되는 건지 알고 싶어\"라고 직접 물어보는 것도 용기 있는 선택",
+      "en": "Stop treating waiting as an answer\nChoose: confess or ask directly where this is going\nSaying you need clarity is a brave and valid move",
+      "ja": "待ちを答えにしない\n告白か、関係の明確化かを選ぶ\n「この関係をどうしたいか知りたい」と聞くのも勇気ある選択",
+      "zh-CN": "别把等待当答案\n选择：告白或直接问清楚关系走向\n直接说想知道这段关系会怎样，也是勇敢的选择",
+      "zh-TW": "別把等待當答案\n選擇：告白或直接問清楚關係走向\n直接說想知道這段關係會怎樣，也是勇敢的選擇",
+      "vi": "Đừng coi chờ đợi là câu trả lời\nChọn: tỏ tình hoặc hỏi thẳng hướng đi\nNói cần rõ ràng cũng là hành động dũng cảm",
+      "id": "Jangan anggap menunggu sebagai jawaban\nPilih: mengaku atau tanya arah hubungan\nMengatakan butuh kejelasan itu valid dan berani"
+    },
+    "cautionLabel": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "cautionValue": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "oneLineDiagnosis": {
+      "ko": "좋은 썸은 시간이 해결해주지만 정체된 썸은 결단이 해결해줍니다",
+      "en": "Healthy crushes can ripen with time—but stuck ones need a decision.",
+      "ja": "良いサマは時間が育てるが、停滞したサマは決断が動かす。",
+      "zh-CN": "好的暧昧可以交给时间，卡住的暧昧要靠决断。",
+      "zh-TW": "好的曖昧可以交給時間，卡住的曖昧要靠決斷。",
+      "vi": "Mập mờ lành có thể cần thời gian—còn kẹt thì cần quyết định.",
+      "id": "Dekat sehat bisa matang dengan waktu—yang macet butuh keputusan."
+    }
+  },
+  {
+    "type": "Type6",
+    "emoji": "❄️",
+    "title": {
+      "ko": "지금 관계를 냉정하게 봐야 합니다, 관계 재고 필요",
+      "en": "Step back and reassess—dating signals are weak",
+      "ja": "冷静に見直しが必要。恋愛サインは弱い",
+      "zh-CN": "需要冷静复盘，恋爱信号很弱",
+      "zh-TW": "需要冷靜覆盤，戀愛訊號很弱",
+      "vi": "Cần nhìn lạnh—tín hiệu yêu yếu",
+      "id": "Perlu menilai dingin—sinyal pacaran lemah"
+    },
+    "shortDescription": {
+      "ko": "진단 결과: 이 관계에서 연애 신호가 거의 보이지 않습니다. 냉정하게 판단할 시점입니다.",
+      "en": "Few credible dating signals appear. A cooler-headed read is needed.",
+      "ja": "恋愛としてのサインはほぼ見えない。冷静な判断の局面。",
+      "zh-CN": "几乎看不到走向恋爱的信号，需要冷静判断。",
+      "zh-TW": "幾乎看不到走向戀愛的訊號，需要冷靜判斷。",
+      "vi": "Gần như không có tín hiệu hướng tới yêu—cần suy xét lạnh.",
+      "id": "Hampir tidak ada sinyal menuju pacaran—perlu penilaian dingin."
+    },
+    "quote": {
+      "ko": "좋아하는 마음은 진짜입니다. 하지만 상대에게 같은 마음이 있는지는 다른 문제입니다.",
+      "en": "Your feelings can be real and still not matched—that is a separate issue.",
+      "ja": "好きな気持ちは本物でも、相手に同じ気持ちがあるかは別問題。",
+      "zh-CN": "你的心意可以是真的，但对方是否同频是另一回事。",
+      "zh-TW": "你的心意可以是真的，但對方是否同頻是另一回事。",
+      "vi": "Cảm xúc bạn có thể thật nhưng họ có cùng tần số là chuyện khác.",
+      "id": "Perasaanmu bisa nyata tapi apakah mereka sama—itu hal lain."
+    },
+    "description": {
+      "ko": "지금 이 관계에서 상대방이 연애 의향을 가지고 있다는 신호가 거의 감지되지 않습니다. 연락이 내가 먼저이고, 단둘이 만나는 자리가 드물고, 상대가 나한테만 특별하다는 느낌이 없고, 미래 이야기도 없습니다. 좋아하는 마음이 있어도 관계를 억지로 만들 수는 없습니다. 지금 필요한 것은 기다림이 아니라 냉정한 판단입니다.",
+      "en": "Signals of romantic intent are scarce—you initiate most, one-on-one time is rare, you do not feel specially treated, and future talk is absent. Feelings cannot force reciprocity. What you need is honest assessment, not more waiting.",
+      "ja": "恋愛意思のサインがほぼない。連絡はこちら寄り、二人きりも少ない、特別感も未来の話もない。好意があっても相手の気持ちは強制できない。待つより冷静な判断が必要。",
+      "zh-CN": "恋爱意愿的信号很弱：多半你先联系、很少单独约会、感受不到特别对待、也不谈未来。喜欢不能强迫对方同频。现在更需要冷静评估，而不是继续等。",
+      "zh-TW": "戀愛意願的訊號很弱：多半你先聯絡、很少單獨約會、感受不到特別對待、也不談未來。喜歡不能強迫對方同頻。現在更需要冷靜評估，而不是繼續等。",
+      "vi": "Dấu hiệu ý định yêu gần như không có—bạn chủ động nhiều, ít hẹn riêng, không thấy đặc biệt, không tương lai. Thích không ép được đáp lại. Cần đánh giá thật hơn là chờ.",
+      "id": "Sinyal niat pacaran tipis—kamu memulai lebih banyak, jarang berdua, tidak merasa istimewa, tanpa masa depan. Suka tidak bisa memaksa balasan. Perlu penilaian jujur, bukan menunggu."
+    },
+    "signalStrength": {
+      "ko": "🔴🔴🔴🔴☆ (매우 약한 신호)",
+      "en": "🔴🔴🔴🔴☆ (Very weak signals)",
+      "ja": "🔴🔴🔴🔴☆（非常に弱いサイン）",
+      "zh-CN": "🔴🔴🔴🔴☆（信号很弱）",
+      "zh-TW": "🔴🔴🔴🔴☆（訊號很弱）",
+      "vi": "🔴🔴🔴🔴☆ (Tín hiệu rất yếu)",
+      "id": "🔴🔴🔴🔴☆ (Sinyal sangat lemah)"
+    },
+    "relationshipTemperature": {
+      "ko": "썸 이전 또는 일방적 관심 상태",
+      "en": "Pre-crush or mostly one-sided interest",
+      "ja": "サマ以前、または片思い寄り",
+      "zh-CN": "暧昧之前或接近单方面关注",
+      "zh-TW": "曖昧之前或接近單方面關注",
+      "vi": "Trước mập mờ hoặc quan tâm một phía",
+      "id": "Sebelum dekat atau minat sepihak"
+    },
+    "primaryLabel": {
+      "ko": "고백 타이밍",
+      "en": "When to confess",
+      "ja": "告白のタイミング",
+      "zh-CN": "告白时机",
+      "zh-TW": "告白時機",
+      "vi": "Thời điểm tỏ tình",
+      "id": "Waktu menyatakan cinta"
+    },
+    "primaryValue": {
+      "ko": "지금은 아님. 고백 전에 먼저 신호 만들기 필요",
+      "en": "Not now—you need signals before a confession makes sense.",
+      "ja": "今は早い。告白前にサインを作る段階。",
+      "zh-CN": "还不是时候，需要先培养/确认信号。",
+      "zh-TW": "還不是時候，需要先培養／確認訊號。",
+      "vi": "Chưa—cần có tín hiệu trước khi tỏ tình hợp lý.",
+      "id": "Belum—perlu sinyal dulu sebelum mengaku masuk akal."
+    },
+    "secondaryLabel": {
+      "ko": "이 상태에서 고백하면",
+      "en": "If you confess from here",
+      "ja": "この状態で告白すると",
+      "zh-CN": "若在这种状态下告白",
+      "zh-TW": "若在這種狀態下告白",
+      "vi": "Nếu tỏ tình lúc này",
+      "id": "Jika mengaku dari sini"
+    },
+    "secondaryValue": {
+      "ko": "거절 가능성 높음. 관계 자체가 어색해질 수 있음",
+      "en": "High rejection risk—and the friendship or vibe may turn awkward.",
+      "ja": "断られやすく、関係自体がぎこちなくなる可能性が高い。",
+      "zh-CN": "被拒概率高，整体气氛也可能变尴尬。",
+      "zh-TW": "被拒機率高，整體氣氛也可能變尷尬。",
+      "vi": "Dễ bị từ chối và không khí có thể vụng về.",
+      "id": "Risiko tolak tinggi dan suasana bisa canggung."
+    },
+    "listLabel": {
+      "ko": "지금 해야 할 것",
+      "en": "What to do now",
+      "ja": "今やること",
+      "zh-CN": "现在可以做的事",
+      "zh-TW": "現在可以做的事",
+      "vi": "Việc nên làm",
+      "id": "Yang perlu dilakukan"
+    },
+    "listLines": {
+      "ko": "일주일 연락 끊어보기. 상대가 찾는지 확인\n상대가 찾지 않는다면 이 감정이 어디서 왔는지 돌아보기\n좋아하는 감정이 실체가 있는지 아니면 기대를 투영한 것인지 구별하기\n내 감정을 소모하지 않는 방향으로 관계를 재정립하기",
+      "en": "Try a week of no initiation—see if they reach out\nIf they do not, revisit where this crush came from\nSeparate real chemistry from projected hope\nRebuild boundaries that protect your emotional budget",
+      "ja": "1週間連絡を控えて様子を見る\n来ないなら感情の出所を振り返る\n本物の引力か期待の投影かを分ける\n自分を削らない距離感を再設計",
+      "zh-CN": "试着一周不主动联系，看对方会不会找你\n若不来，反思这份好感从何而来\n分辨是真实吸引还是自我投射\n用不伤自己的方式重建边界",
+      "zh-TW": "試著一週不主動聯絡，看對方會不會找你\n若不來，反思這份好感從何而來\n分辨是真實吸引還是自我投射\n用不傷自己的方式重建邊界",
+      "vi": "Một tuần không chủ động—xem họ có tìm không\nNếu không, xem lại cảm xúc đến từ đâu\nTách hấp dẫn thật với kỳ vọng\nĐặt ranh giới bảo vệ cảm xúc",
+      "id": "Satu minggu tidak memulai—apakah mereka mencari\nJika tidak, tinjau dari mana perasaan ini\nPisahkan kimia nyata dan proyeksi harapan\nBangun batas yang melindungi emosimu"
+    },
+    "cautionLabel": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "cautionValue": { "ko": "", "en": "", "ja": "", "zh-CN": "", "zh-TW": "", "vi": "", "id": "" },
+    "oneLineDiagnosis": {
+      "ko": "상대가 원한다면 이미 움직였을 겁니다. 움직이지 않은 것도 답입니다",
+      "en": "If they wanted this, they would already be moving. Not moving is information too.",
+      "ja": "相手が望むならもう動いている。動かないことも答え。",
+      "zh-CN": "若对方也想推进，多半已经动了；不动也是一种答案。",
+      "zh-TW": "若對方也想推進，多半已經動了；不動也是一種答案。",
+      "vi": "Nếu họ muốn, họ đã hành động. Không hành động cũng là một câu trả lời.",
+      "id": "Jika mereka mau, mereka sudah bergerak. Tidak bergerak juga sebuah jawaban."
+    }
+  }
+]
