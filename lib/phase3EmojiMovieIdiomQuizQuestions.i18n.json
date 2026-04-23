@@ -1,0 +1,390 @@
+[
+  {
+    "id": 1,
+    "badgeLine": {
+      "ko": "⭐ [영화]",
+      "en": "⭐ [Movie]",
+      "ja": "⭐ [映画]",
+      "zh-CN": "⭐ [电影]",
+      "zh-TW": "⭐ [電影]",
+      "vi": "⭐ [Phim]",
+      "id": "⭐ [Film]"
+    },
+    "emojiLine": "🦁  👑",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie do these emojis represent?",
+      "ja": "この絵文字が表す映画のタイトルは？",
+      "zh-CN": "这些表情代表哪部电影？",
+      "zh-TW": "這些表情符號代表哪部電影？",
+      "vi": "Các emoji này gợi ý bộ phim nào?",
+      "id": "Emoji ini mewakili judul film apa?"
+    },
+    "options": [
+      { "text": { "ko": "정글북", "en": "The Jungle Book", "ja": "ジャングル・ブック", "zh-CN": "森林王子", "zh-TW": "森林王子", "vi": "Cậu bé rừng xanh", "id": "The Jungle Book" }, "isCorrect": false },
+      { "text": { "ko": "알라딘", "en": "Aladdin", "ja": "アラジン", "zh-CN": "阿拉丁", "zh-TW": "阿拉丁", "vi": "Aladdin", "id": "Aladdin" }, "isCorrect": false },
+      { "text": { "ko": "라이온 킹", "en": "The Lion King", "ja": "ライオン・キング", "zh-CN": "狮子王", "zh-TW": "獅子王", "vi": "Vua sư tử", "id": "The Lion King" }, "isCorrect": true },
+      { "text": { "ko": "쿵푸팬더", "en": "Kung Fu Panda", "ja": "カンフー・パンダ", "zh-CN": "功夫熊猫", "zh-TW": "功夫熊貓", "vi": "Kung Fu Panda", "id": "Kung Fu Panda" }, "isCorrect": false }
+    ],
+    "correctExplanation": {
+      "ko": "🦁(사자) + 👑(왕관) = 라이온 킹. 1994년 디즈니 애니, 심바의 성장 이야기입니다.",
+      "en": "🦁 lion + 👑 crown = The Lion King (1994 Disney)—Simba’s coming-of-age on the savanna.",
+      "ja": "🦁ライオン＋👑王冠＝『ライオン・キング』（1994年ディズニー）シンバの成長物語。",
+      "zh-CN": "狮子 + 王冠 =《狮子王》（1994 迪士尼）辛巴的成长故事。",
+      "zh-TW": "獅子 + 王冠 =《獅子王》（1994 迪士尼）辛巴的成長故事。",
+      "vi": "Sư tử + vương miện = The Lion King (Disney 1994)—câu chuyện Simba.",
+      "id": "Singa + mahkota = The Lion King (Disney 1994)—kisah Simba."
+    },
+    "wrongTraps": {
+      "ko": "정글북 🐍🌴, 알라딘 🪔🧞, 쿵푸팬더 🐼🥋",
+      "en": "Jungle Book 🐍🌴, Aladdin 🪔🧞, Kung Fu Panda 🐼🥋",
+      "ja": "ジャングル・ブック🐍🌴、アラジン🪔🧞、カンフー・パンダ🐼🥋",
+      "zh-CN": "森林王子 🐍🌴、阿拉丁 🪔🧞、功夫熊猫 🐼🥋",
+      "zh-TW": "森林王子 🐍🌴、阿拉丁 🪔🧞、功夫熊貓 🐼🥋",
+      "vi": "Jungle Book 🐍🌴, Aladdin 🪔🧞, Kung Fu Panda 🐼🥋",
+      "id": "Jungle Book 🐍🌴, Aladdin 🪔🧞, Kung Fu Panda 🐼🥋"
+    }
+  },
+  {
+    "id": 2,
+    "badgeLine": { "ko": "⭐ [영화]", "en": "⭐ [Movie]", "ja": "⭐ [映画]", "zh-CN": "⭐ [电影]", "zh-TW": "⭐ [電影]", "vi": "⭐ [Phim]", "id": "⭐ [Film]" },
+    "emojiLine": "❄️  👸  ⛄  💙",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie do these emojis represent?",
+      "ja": "この絵文字が表す映画は？",
+      "zh-CN": "这些表情代表哪部电影？",
+      "zh-TW": "這些表情代表哪部電影？",
+      "vi": "Emoji này là phim nào?",
+      "id": "Film apa yang diwakili emoji ini?"
+    },
+    "options": [
+      { "text": { "ko": "신데렐라", "en": "Cinderella", "ja": "シンデレラ", "zh-CN": "灰姑娘", "zh-TW": "灰姑娘", "vi": "Lọ lem", "id": "Cinderella" }, "isCorrect": false },
+      { "text": { "ko": "백설공주", "en": "Snow White", "ja": "白雪姫", "zh-CN": "白雪公主", "zh-TW": "白雪公主", "vi": "Bạch Tuyết", "id": "Putri Salju" }, "isCorrect": false },
+      { "text": { "ko": "라푼젤", "en": "Tangled", "ja": "塔の上のラプンツェル", "zh-CN": "魔发奇缘", "zh-TW": "魔髮奇緣", "vi": "Tangled", "id": "Tangled" }, "isCorrect": false },
+      { "text": { "ko": "겨울왕국", "en": "Frozen", "ja": "アナと雪の女王", "zh-CN": "冰雪奇缘", "zh-TW": "冰雪奇緣", "vi": "Frozen", "id": "Frozen" }, "isCorrect": true }
+    ],
+    "correctExplanation": {
+      "ko": "❄️겨울 + 👸공주 + ⛄올라프 + 💙엘사 = 겨울왕국 (2013).",
+      "en": "Winter + princess + snowman + blue = Frozen (2013)—Elsa & Anna.",
+      "ja": "雪・王女・雪だるま・青＝『アナと雪の女王』（2013）。",
+      "zh-CN": "雪、公主、雪人、蓝色 =《冰雪奇缘》（2013）。",
+      "zh-TW": "雪、公主、雪人、藍色 =《冰雪奇緣》（2013）。",
+      "vi": "Tuyết + công chúa + người tuyết + xanh dương = Frozen (2013).",
+      "id": "Salju + putri + boneka salju + biru = Frozen (2013)."
+    },
+    "wrongTraps": {
+      "ko": "신데렐라 👠🕛, 백설공주 🍎👸, 라푼젤 💇‍♀️🏰",
+      "en": "Cinderella 👠🕛, Snow White 🍎👸, Tangled 💇‍♀️🏰",
+      "ja": "シンデレラ👠🕛、白雪姫🍎👸、ラプンツェル💇‍♀️🏰",
+      "zh-CN": "灰姑娘 👠、白雪公主 🍎、魔发奇缘 💇",
+      "zh-TW": "灰姑娘 👠、白雪公主 🍎、魔髮奇緣 💇",
+      "vi": "Cinderella 👠, Snow White 🍎, Tangled 💇",
+      "id": "Cinderella 👠, Snow White 🍎, Tangled 💇"
+    }
+  },
+  {
+    "id": 3,
+    "badgeLine": { "ko": "⭐⭐ [영화]", "en": "⭐⭐ [Movie]", "ja": "⭐⭐ [映画]", "zh-CN": "⭐⭐ [电影]", "zh-TW": "⭐⭐ [電影]", "vi": "⭐⭐ [Phim]", "id": "⭐⭐ [Film]" },
+    "emojiLine": "🧊  🚢  💑  🌊  💔",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie do these emojis represent?",
+      "ja": "この絵文字が表す映画は？",
+      "zh-CN": "这些表情代表哪部电影？",
+      "zh-TW": "這些表情代表哪部電影？",
+      "vi": "Emoji này là phim nào?",
+      "id": "Film apa ini?"
+    },
+    "options": [
+      { "text": { "ko": "캐리비안의 해적", "en": "Pirates of the Caribbean", "ja": "パイレーツ・オブ・カリビアン", "zh-CN": "加勒比海盗", "zh-TW": "神鬼奇航", "vi": "Cướp biển Caribbean", "id": "Pirates of the Caribbean" }, "isCorrect": false },
+      { "text": { "ko": "노트북", "en": "The Notebook", "ja": "ノートブック", "zh-CN": "恋恋笔记本", "zh-TW": "手札情緣", "vi": "The Notebook", "id": "The Notebook" }, "isCorrect": false },
+      { "text": { "ko": "타이타닉", "en": "Titanic", "ja": "タイタニック", "zh-CN": "泰坦尼克号", "zh-TW": "鐵達尼號", "vi": "Titanic", "id": "Titanic" }, "isCorrect": true },
+      { "text": { "ko": "퍼펙트 스톰", "en": "The Perfect Storm", "ja": "パーフェクト ストーム", "zh-CN": "完美风暴", "zh-TW": "天搖地動", "vi": "The Perfect Storm", "id": "The Perfect Storm" }, "isCorrect": false }
+    ],
+    "correctExplanation": {
+      "ko": "빙산+배+연인+바다+비극 = 타이타닉 (1997).",
+      "en": "Iceberg + ship + couple + sea + broken heart = Titanic (1997).",
+      "ja": "氷山＋船＋カップル＋海＋悲恋＝『タイタニック』（1997）。",
+      "zh-CN": "冰山、轮船、情侣、大海、心碎 =《泰坦尼克号》（1997）。",
+      "zh-TW": "冰山、輪船、情侶、大海、心碎 =《鐵達尼號》（1997）。",
+      "vi": "Tảng băng + tàu + đôi + biển + tan vỡ = Titanic (1997).",
+      "id": "Gunung es + kapal + pasangan + laut + hati patah = Titanic (1997)."
+    },
+    "wrongTraps": {
+      "ko": "핵심은 빙산 충돌과 비극적 로맨스입니다.",
+      "en": "The core clue is iceberg collision + tragic romance.",
+      "ja": "氷山衝突と悲劇的ロマンスが鍵。",
+      "zh-CN": "关键是冰山与悲剧爱情。",
+      "zh-TW": "關鍵是冰山與悲劇愛情。",
+      "vi": "Gợi ý: va tảng băng + bi kịch tình yêu.",
+      "id": "Petunjuk: tabrakan esberg + romansa tragis."
+    }
+  },
+  {
+    "id": 4,
+    "badgeLine": { "ko": "⭐⭐ [영화]", "en": "⭐⭐ [Movie]", "ja": "⭐⭐ [映画]", "zh-CN": "⭐⭐ [电影]", "zh-TW": "⭐⭐ [電影]", "vi": "⭐⭐ [Phim]", "id": "⭐⭐ [Film]" },
+    "emojiLine": "🕷️  🦸‍♂️  🏙️  🕸️",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie do these emojis represent?",
+      "ja": "この絵文字が表す映画は？",
+      "zh-CN": "这些表情代表哪部电影？",
+      "zh-TW": "這些表情代表哪部電影？",
+      "vi": "Emoji này là phim nào?",
+      "id": "Film apa?"
+    },
+    "options": [
+      { "text": { "ko": "배트맨", "en": "Batman", "ja": "バットマン", "zh-CN": "蝙蝠侠", "zh-TW": "蝙蝠俠", "vi": "Batman", "id": "Batman" }, "isCorrect": false },
+      { "text": { "ko": "앤트맨", "en": "Ant-Man", "ja": "アントマン", "zh-CN": "蚁人", "zh-TW": "蟻人", "vi": "Ant-Man", "id": "Ant-Man" }, "isCorrect": false },
+      { "text": { "ko": "스파이더맨", "en": "Spider-Man", "ja": "スパイダーマン", "zh-CN": "蜘蛛侠", "zh-TW": "蜘蛛人", "vi": "Spider-Man", "id": "Spider-Man" }, "isCorrect": true },
+      { "text": { "ko": "블랙팬서", "en": "Black Panther", "ja": "ブラックパンサー", "zh-CN": "黑豹", "zh-TW": "黑豹", "vi": "Black Panther", "id": "Black Panther" }, "isCorrect": false }
+    ],
+    "correctExplanation": {
+      "ko": "거미+히어로+도시+거미줄 = 스파이더맨.",
+      "en": "Spider + hero + city + web = Spider-Man (Peter Parker).",
+      "ja": "蜘蛛＋ヒーロー＋都市＋蜘蛛の糸＝スパイダーマン。",
+      "zh-CN": "蜘蛛、英雄、城市、蛛网 = 蜘蛛侠。",
+      "zh-TW": "蜘蛛、英雄、城市、蛛網 = 蜘蛛人。",
+      "vi": "Nhện + anh hùng + thành phố + mạng nhện = Spider-Man.",
+      "id": "Laba-laba + pahlawan + kota + jaring = Spider-Man."
+    },
+    "wrongTraps": {
+      "ko": "배트맨 🦇👨, 앤트맨 🐜🦸, 블랙팬서 🐆🤴",
+      "en": "Batman 🦇, Ant-Man 🐜, Black Panther 🐆",
+      "ja": "バットマン🦇、アントマン🐜、ブラックパンサー🐆",
+      "zh-CN": "蝙蝠侠 🦇、蚁人 🐜、黑豹 🐆",
+      "zh-TW": "蝙蝠俠 🦇、蟻人 🐜、黑豹 🐆",
+      "vi": "Batman 🦇, Ant-Man 🐜, Black Panther 🐆",
+      "id": "Batman 🦇, Ant-Man 🐜, Black Panther 🐆"
+    }
+  },
+  {
+    "id": 5,
+    "badgeLine": { "ko": "⭐⭐⭐ [영화]", "en": "⭐⭐⭐ [Movie]", "ja": "⭐⭐⭐ [映画]", "zh-CN": "⭐⭐⭐ [电影]", "zh-TW": "⭐⭐⭐ [電影]", "vi": "⭐⭐⭐ [Phim]", "id": "⭐⭐⭐ [Film]" },
+    "emojiLine": "💊  🔴  🔵  🕶️  👨‍💻  🐰  🕳️",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 영화 제목은?",
+      "en": "Which movie do these emojis represent?",
+      "ja": "この絵文字が表す映画は？",
+      "zh-CN": "这些表情代表哪部电影？",
+      "zh-TW": "這些表情代表哪部電影？",
+      "vi": "Phim nào?",
+      "id": "Film apa?"
+    },
+    "options": [
+      { "text": { "ko": "인셉션", "en": "Inception", "ja": "インセプション", "zh-CN": "盗梦空间", "zh-TW": "全面啟動", "vi": "Inception", "id": "Inception" }, "isCorrect": false },
+      { "text": { "ko": "터미네이터", "en": "The Terminator", "ja": "ターミネーター", "zh-CN": "终结者", "zh-TW": "魔鬼終結者", "vi": "Kẻ hủy diệt", "id": "Terminator" }, "isCorrect": false },
+      { "text": { "ko": "아이언맨", "en": "Iron Man", "ja": "アイアンマン", "zh-CN": "钢铁侠", "zh-TW": "鋼鐵人", "vi": "Iron Man", "id": "Iron Man" }, "isCorrect": false },
+      { "text": { "ko": "매트릭스", "en": "The Matrix", "ja": "マトリックス", "zh-CN": "黑客帝国", "zh-TW": "駭客任務", "vi": "The Matrix", "id": "The Matrix" }, "isCorrect": true }
+    ],
+    "correctExplanation": {
+      "ko": "빨간약·파란약, 토끼 굴, 해커, 선글라스 = 매트릭스 (1999).",
+      "en": "Red/blue pill, white rabbit, hacker, shades = The Matrix (1999).",
+      "ja": "赤青の薬、白ウサギ、ハッカー、サングラス＝『マトリックス』（1999）。",
+      "zh-CN": "红蓝药丸、白兔、黑客、墨镜 =《黑客帝国》（1999）。",
+      "zh-TW": "紅藍藥丸、白兔、駭客、墨鏡 =《駭客任務》（1999）。",
+      "vi": "Thuốc đỏ/xanh, thỏ trắng, hacker, kính = The Matrix (1999).",
+      "id": "Pil merah/biru, kelinci putih, hacker, kacamata = The Matrix (1999)."
+    },
+    "wrongTraps": {
+      "ko": "빨간/파란 약과 흰 토끼는 매트릭스의 상징입니다.",
+      "en": "The red/blue pill choice and white rabbit are iconic Matrix clues.",
+      "ja": "赤青の薬と白ウサギは象徴的なヒント。",
+      "zh-CN": "红蓝药丸与白兔是经典提示。",
+      "zh-TW": "紅藍藥丸與白兔是經典提示。",
+      "vi": "Thuốc đỏ/xanh và thỏ trắng là biểu tượng Matrix.",
+      "id": "Pil merah/biru dan kelinci putih adalah simbol Matrix."
+    }
+  },
+  {
+    "id": 6,
+    "badgeLine": { "ko": "⭐ [관용구]", "en": "⭐ [Idiom]", "ja": "⭐ [慣用句]", "zh-CN": "⭐ [成语]", "zh-TW": "⭐ [成語]", "vi": "⭐ [Thành ngữ]", "id": "⭐ [Peribahasa]" },
+    "emojiLine": "🐯  📰  🗣️",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean proverb fits these emojis?",
+      "ja": "この絵文字に合う韓国のことわざは？",
+      "zh-CN": "这些表情对应哪句韩国俗语？",
+      "zh-TW": "這些表情對應哪句韓國俗語？",
+      "vi": "Thành ngữ Hàn nào khớp emoji?",
+      "id": "Peribahasa Korea mana yang cocok?"
+    },
+    "options": [
+      { "text": { "ko": "범 없는 골에 토끼가 왕 노릇 한다", "en": "In a den without tigers, the rabbit is king", "ja": "虎のいない谷で兎が王様", "zh-CN": "山中无老虎猴子称大王", "zh-TW": "山中無老虎猴子稱大王", "vi": "Vua ở nơi không hổ", "id": "Kelinci jadi raja di lembah tanpa harimau" }, "isCorrect": false },
+      { "text": { "ko": "호랑이도 제 말 하면 온다", "en": "Speak of the tiger and it appears (same as speak of the devil)", "ja": "虎の話をすると虎が来る（噂をすれば影が差すに近い）", "zh-CN": "说曹操曹操到（韩国：说虎虎到）", "zh-TW": "說曹操曹操到（韓國俗諺類似）", "vi": "Vừa nhắc hổ, hổ đã đến (giống speak of the devil)", "id": "Baru bicara harimau, harimau muncul (seperti speak of the devil)" }, "isCorrect": true },
+      { "text": { "ko": "고양이 앞에 쥐", "en": "A mouse before a cat", "ja": "猫の前のネズミ", "zh-CN": "猫鼠同处", "zh-TW": "貓前的老鼠", "vi": "Chuột trước mèo", "id": "Tikus di depan kucing" }, "isCorrect": false },
+      { "text": { "ko": "뱁새가 황새 따라가다 가랑이 찢어진다", "en": "The sparrow tries to walk like the stork and splits its legs", "ja": "無理な真似は身を滅ぼす", "zh-CN": "蚍蜉撼树/东施效颦", "zh-TW": "小鳥學大鳥走路撕破腿（韓諺）", "vi": "Chim sẻ bắt chước chim cố", "id": "Burung kecil meniru langkah besar—celaka" }, "isCorrect": false }
+    ],
+    "correctExplanation": {
+      "ko": "호랑이+말(이야기)+말하다 = 호랑이도 제 말 하면 온다.",
+      "en": "Tiger + talking about someone + speech = Korean proverb: when you speak of someone, they appear.",
+      "ja": "虎＋話題＋話す＝「虎の話をすると虎が来る」。",
+      "zh-CN": "虎 + 谈论 + 说话 = 韩国谚语「说虎虎到」（类似说曹操到）。",
+      "zh-TW": "虎 + 談論 + 說話 = 韓諺「說虎虎到」。",
+      "vi": "Hổ + nói về ai đó = tục ngữ: vừa nhắc đã xuất hiện.",
+      "id": "Harimau + membicarakan seseorang = peribahasa: baru dibicarakan sudah datang."
+    },
+    "wrongTraps": {
+      "ko": "📰는 여기서 ‘말/이야기’를 뜻합니다.",
+      "en": "Here 📰 suggests “talk/story,” not a newspaper.",
+      "ja": "この📰は「話題」の比喩。",
+      "zh-CN": "此处 📰 比喻「话题」而非报纸。",
+      "zh-TW": "此處 📰 比喻「話題」而非報紙。",
+      "vi": "📰 ở đây gợi ý “chuyện nói”, không phải báo.",
+      "id": "📰 di sini = “omongan”, bukan koran."
+    }
+  },
+  {
+    "id": 7,
+    "badgeLine": { "ko": "⭐⭐ [관용구]", "en": "⭐⭐ [Idiom]", "ja": "⭐⭐ [慣用句]", "zh-CN": "⭐⭐ [成语]", "zh-TW": "⭐⭐ [成語]", "vi": "⭐⭐ [Thành ngữ]", "id": "⭐⭐ [Peribahasa]" },
+    "emojiLine": "🌞  🐦  👂  🌙  🐭  👂",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean proverb fits these emojis?",
+      "ja": "この絵文字の韓国ことわざは？",
+      "zh-CN": "这些表情对应哪句韩国俗语？",
+      "zh-TW": "這些表情對應哪句韓國俗語？",
+      "vi": "Thành ngữ Hàn nào?",
+      "id": "Peribahasa Korea mana?"
+    },
+    "options": [
+      { "text": { "ko": "새는 날아가고 쥐는 숨는다", "en": "Birds fly away, mice hide", "ja": "鳥は飛び鼠は隠れる", "zh-CN": "鸟飞鼠藏（另一韩谚）", "zh-TW": "鳥飛鼠藏", "vi": "Chim bay chuột lủi", "id": "Burung terbang tikus bersembunyi" }, "isCorrect": false },
+      { "text": { "ko": "새벽닭이 울어야 해가 뜬다", "en": "The sun rises when the rooster crows", "ja": "鶏が鳴いて初めて朝が来る", "zh-CN": "鸡鸣日出", "zh-TW": "雞鳴日出", "vi": "Gà gáy thì trời sáng", "id": "Ayam berkokok matahari terbit" }, "isCorrect": false },
+      { "text": { "ko": "까마귀 날자 배 떨어진다", "en": "When the crow flies, the pear drops (unrelated bad luck)", "ja": "烏が飛べば梨が落ちる", "zh-CN": "乌鸦飞梨落（另一谚）", "zh-TW": "烏鴉飛梨落", "vi": "Quạ bay lê rụng (điển khác)", "id": "Gagak terbang pir jatuh (peribahasa lain)" }, "isCorrect": false },
+      { "text": { "ko": "낮말은 새가 듣고 밤말은 쥐가 듣는다", "en": "Birds hear daytime talk, mice hear night talk (secrets spread)", "ja": "昼の話は鳥が聞き、夜の話は鼠が聞く", "zh-CN": "昼言鸟听，夜言鼠听（隔墙有耳）", "zh-TW": "晝有鳥聽夜有鼠聽（隔牆有耳）", "vi": "Chim nghe lời ban ngày, chuột nghe lời ban đêm (lời lọt tai)", "id": "Burung dengar siang, tikus dengar malam (rahasia tersebar)" }, "isCorrect": true }
+    ],
+    "correctExplanation": {
+      "ko": "낮·새·듣기 + 밤·쥐·듣기 = 비밀도 새어 나간다는 뜻.",
+      "en": "Day + bird + hear + night + mouse + hear = “Even walls have ears”—secrets leak.",
+      "ja": "昼・鳥・聞く＋夜・ネズミ・聞く＝秘密も漏れる。",
+      "zh-CN": "白天鸟听、夜晚鼠听 = 谨言慎行、隔墙有耳。",
+      "zh-TW": "白天鳥聽、夜晚鼠聽 = 謹言、隔牆有耳。",
+      "vi": "Cấu trúc ngày-chim-nghe + đêm-chuột-nghe = lời lọt tai.",
+      "id": "Pola siang-burung-dengar + malam-tikus-dengar = rahasia bisa bocor."
+    },
+    "wrongTraps": {
+      "ko": "낮-새-밤-쥐 순서가 핵심입니다.",
+      "en": "The day-bird / night-mouse pairing is the key structure.",
+      "ja": "昼と鳥、夜とネズミの対応が鍵。",
+      "zh-CN": "昼夜与鸟鼠的对应是关键。",
+      "zh-TW": "晝夜與鳥鼠的對應是關鍵。",
+      "vi": "Cặp ngày-chim / đêm-chuột là chìa khóa.",
+      "id": "Pasangan siang-burung / malam-tikus adalah kunci."
+    }
+  },
+  {
+    "id": 8,
+    "badgeLine": { "ko": "⭐⭐ [관용구]", "en": "⭐⭐ [Idiom]", "ja": "⭐⭐ [慣用句]", "zh-CN": "⭐⭐ [成语]", "zh-TW": "⭐⭐ [成語]", "vi": "⭐⭐ [Thành ngữ]", "id": "⭐⭐ [Peribahasa]" },
+    "emojiLine": "🐴  👣  🏃  🌍🌍🌍",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean proverb fits these emojis?",
+      "ja": "この絵文字の韓国ことわざは？",
+      "zh-CN": "这些表情对应哪句韩国俗语？",
+      "zh-TW": "這些表情對應哪句韓國俗語？",
+      "vi": "Thành ngữ nào?",
+      "id": "Peribahasa mana?"
+    },
+    "options": [
+      { "text": { "ko": "천리길도 한 걸음부터", "en": "A thousand-mile journey begins with one step", "ja": "千里の道も一歩から", "zh-CN": "千里之行始于足下", "zh-TW": "千里之行始於足下", "vi": "Ngàn dặm bắt đầu từ một bước", "id": "Perjalanan seribu mil dimulai satu langkah" }, "isCorrect": false },
+      { "text": { "ko": "말 타면 종 부리고 싶다", "en": "Mount a horse and you want to ring the bell (get cocky)", "ja": "乗ると調子に乗る", "zh-CN": "得寸进尺", "zh-TW": "得寸進尺", "vi": "Được đà lên hương", "id": "Naik pelana jadi sombong" }, "isCorrect": false },
+      { "text": { "ko": "발 없는 말이 천리 간다", "en": "Words without feet travel a thousand li (news spreads fast)", "ja": "足のない言葉が千里を行く", "zh-CN": "无脚之言行千里（口舌快）", "zh-TW": "無腳之言行千里", "vi": "Lời không chân đi ngàn dặm", "id": "Kata tanpa kaki sampai sejauh ribuan li" }, "isCorrect": true },
+      { "text": { "ko": "달리는 말에 채찍질한다", "en": "Whip a running horse (push harder when already fast)", "ja": "走る馬に鞭", "zh-CN": "快马加鞭", "zh-TW": "快馬加鞭", "vi": "Roi ngựa đang chạy", "id": "Mencambuk kuda yang sudah lari kencang" }, "isCorrect": false }
+    ],
+    "correctExplanation": {
+      "ko": "말(언어)+멀리 퍼짐+천리 = 발 없는 말이 천리 간다.",
+      "en": "Horse (wordplay: speech) + spreads far + distance = “Rumor travels fast.”",
+      "ja": "馬（言葉のダブル）＋遠く＝「噂はすぐ広がる」。",
+      "zh-CN": "马（谐音“话”）+ 远传 = 话传千里。",
+      "zh-TW": "馬（雙關「話」）+ 遠傳 = 話傳千里。",
+      "vi": "Chữ “ngựa” gợi lời nói lan xa.",
+      "id": "Permainan kata: kuda = perkataan yang menyebar jauh."
+    },
+    "wrongTraps": {
+      "ko": "🐴는 동물 ‘말’이자 ‘말(언어)’ 이중 의미입니다.",
+      "en": "🐴 hints at both “horse” and “speech” in Korean.",
+      "ja": "韓国語で「馬」と「言葉」が同音類義のダブル。",
+      "zh-CN": "韩语中“马”与“话”可作双关联想。",
+      "zh-TW": "韓語中可聯想馬與話的雙關。",
+      "vi": "Tiếng Hàn chơi chữ ngựa / lời nói.",
+      "id": "Permainan kata kuda-perkataan dalam konteks Korea."
+    }
+  },
+  {
+    "id": 9,
+    "badgeLine": { "ko": "⭐⭐⭐ [관용구]", "en": "⭐⭐⭐ [Idiom]", "ja": "⭐⭐⭐ [慣用句]", "zh-CN": "⭐⭐⭐ [成语]", "zh-TW": "⭐⭐⭐ [成語]", "vi": "⭐⭐⭐ [Thành ngữ]", "id": "⭐⭐⭐ [Peribahasa]" },
+    "emojiLine": "❄️  ⬆️  🌨️  ⬆️",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 관용구는?",
+      "en": "Which Korean four-character idiom (Sino-Korean) fits?",
+      "ja": "この絵文字の四字熟語風の韓国語は？",
+      "zh-CN": "这些表情对应哪个汉字成语（韩）？",
+      "zh-TW": "這些表情對應哪個漢字成語（韓）？",
+      "vi": "Thành ngữ Hán Việt (Hàn) nào?",
+      "id": "Idiom empat huruf (Sino-Korea) mana?"
+    },
+    "options": [
+      { "text": { "ko": "엎친 데 덮친 격", "en": "From bad to worse (similar vibe)", "ja": "悪い上にさらに悪い", "zh-CN": "雪上加霜（易混）", "zh-TW": "雪上加霜（易混）", "vi": "Họa vô đơn chí (tương tự)", "id": "Sial bertambah sial (mirip)" }, "isCorrect": false },
+      { "text": { "ko": "오르지 못할 나무는 쳐다보지도 마라", "en": "Do not stare at a tree you cannot climb", "ja": "登れない木を見上げるな", "zh-CN": "不可攀之木勿仰望", "zh-TW": "勿仰望不可攀之樹", "vi": "Đừng nhìn cây không leo được", "id": "Jangan tatap pohon yang tak bisa dipanjat" }, "isCorrect": false },
+      { "text": { "ko": "눈 위에 서리가 내린다", "en": "Frost falls on snow (literal phrase, not the idiom title)", "ja": "雪の上に霜が降る（文字面）", "zh-CN": "雪上加霜（字面描述）", "zh-TW": "雪上加霜（字面）", "vi": "Sương trên tuyết (nghĩa đen)", "id": "Embun beku di atas salju (harfiah)" }, "isCorrect": false },
+      { "text": { "ko": "설상가상", "en": "설상가상 (雪上加霜: snow + on + add + frost)", "ja": "雪上加霜（ソルサンガサン）", "zh-CN": "雪上加霜", "zh-TW": "雪上加霜", "vi": "Tuyết thượng gia sương (설상가상)", "id": "설상가상 (salju bertambah embun beku)" }, "isCorrect": true }
+    ],
+    "correctExplanation": {
+      "ko": "雪上加霜 한자 구조를 이모티콘으로 직역한 문제입니다.",
+      "en": "The emojis trace the hanja 雪上+加霜 (snow on top + add frost) = worse piled on worse.",
+      "ja": "雪・上・霜・加えを絵で表した難問。",
+      "zh-CN": "对应成语「雪上加霜」：困境上加困境。",
+      "zh-TW": "對應成語「雪上加霜」。",
+      "vi": "Ám chỉ thành ngữ Hán: tuyết càng thêm sương = càng thêm khốn.",
+      "id": "Idiom: kesulitan bertambah kesulitan (seperti salju + embun beku)."
+    },
+    "wrongTraps": {
+      "ko": "「엎친 데 덮친 격」과 비슷하지만 이모티콘은 雪上霜 구조에 더 가깝습니다.",
+      "en": "Similar to “out of the frying pan,” but the emoji riddle targets the four-character idiom above.",
+      "ja": "意味は近いが、この並びは「雪上加霜」寄り。",
+      "zh-CN": "与「祸不单行」相近，但图示更贴近「雪上加霜」。",
+      "zh-TW": "與禍不單行相近，但圖示較貼「雪上加霜」。",
+      "vi": "Gần nghĩa “họa chồng họa” nhưng emoji trỏ đúng 설상가상 hơn.",
+      "id": "Mirip sial bertambah, tapi emoji mengarah ke 설상가상."
+    }
+  },
+  {
+    "id": 10,
+    "badgeLine": { "ko": "⭐⭐⭐⭐ [관용구]", "en": "⭐⭐⭐⭐ [Idiom]", "ja": "⭐⭐⭐⭐ [慣用句]", "zh-CN": "⭐⭐⭐⭐ [成语]", "zh-TW": "⭐⭐⭐⭐ [成語]", "vi": "⭐⭐⭐⭐ [Thành ngữ]", "id": "⭐⭐⭐⭐ [Peribahasa]" },
+    "emojiLine": "🦊  🍇🍇🍇  😤  💬  “🍇 🙅  신맛”",
+    "prompt": {
+      "ko": "아래 이모티콘이 나타내는 관용구는?",
+      "en": "Which phrase (from Aesop) do these emojis represent?",
+      "ja": "イソップ寓話に由来する表現は？",
+      "zh-CN": "这些表情对应伊索寓言中的哪种心理说法？",
+      "zh-TW": "這些表情對應伊索寓言中的哪種說法？",
+      "vi": "Cụm từ từ ngụ ngôn Aesop nào?",
+      "id": "Frasa dari fabel Aesop apa?"
+    },
+    "options": [
+      { "text": { "ko": "꿩 먹고 알 먹기", "en": "Kill two birds with one stone", "ja": "一挙両得", "zh-CN": "一举两得", "zh-TW": "一舉兩得", "vi": "Một mũi tên trúng hai chim", "id": "Satu panah dua burung" }, "isCorrect": false },
+      { "text": { "ko": "누워서 떡 먹기", "en": "A piece of cake", "ja": "楽勝", "zh-CN": "易如反掌", "zh-TW": "易如反掌", "vi": "Dễ như ăn kẹo", "id": "Mudah seperti rebahan makan kue" }, "isCorrect": false },
+      { "text": { "ko": "그림의 떡", "en": "Pie in the sky", "ja": "画餅充飢", "zh-CN": "画饼充饥", "zh-TW": "畫餅充飢", "vi": "Bánh vẽ trên giấy", "id": "Kue di gambar (tak bisa dimakan)" }, "isCorrect": false },
+      { "text": { "ko": "신포도", "en": "Sour grapes (신포도 / 酸葡萄)", "ja": "酸っぱいブドウ（すっぱいブドウ）", "zh-CN": "酸葡萄心理", "zh-TW": "酸葡萄心理", "vi": "Nho chua (tâm lý chê thứ không đạt được)", "id": "Anggur masam (sour grapes)" }, "isCorrect": true }
+    ],
+    "correctExplanation": {
+      "ko": "여우가 못 딴 포도를 “신 맛”이라 합리화 = 신포도(酸葡萄).",
+      "en": "Fox + grapes + frustration + “too sour” rationalization = sour grapes (Aesop).",
+      "ja": "狐が届かないブドウを「酸い」と言い訳＝酸っぱいブドウ心理。",
+      "zh-CN": "狐狸吃不到葡萄说葡萄酸 = 酸葡萄心理。",
+      "zh-TW": "狐狸吃不到葡萄說葡萄酸 = 酸葡萄心理。",
+      "vi": "Cáo không được nho bảo “chua”—tâm lý nho chua.",
+      "id": "Rubah tak dapat anggur lalu bilang “asam”—sour grapes."
+    },
+    "wrongTraps": {
+      "ko": "이솝 우화의 여우와 포도 장면을 이모티콘으로 압축한 최난이도 문항입니다.",
+      "en": "Hardest item: the fox-and-grapes rationalization in emoji form.",
+      "ja": "最高難度：狐とブドウの寓話を絵文字で圧縮。",
+      "zh-CN": "最难：把狐狸与葡萄寓言压缩成表情。",
+      "zh-TW": "最難：狐狸與葡萄寓言濃縮成表情。",
+      "vi": "Khó nhất: cáo và nho của Aesop.",
+      "id": "Tersulit: rubah dan anggur Aesop."
+    }
+  }
+]

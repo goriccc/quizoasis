@@ -3852,6 +3852,67 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3EmojiMovieIdiomQuizTest": {
+    "startMessage": {
+      "line1": "Hanya dari emoji bisa tebak judul film dan peribahasa Korea?",
+      "line2": "🦁👑 mudah—lama-lama makin susah.",
+      "line3": "5 soal film + 5 peribahasa Korea. Total 10.",
+      "line4": "Benar semua sendirian = jenius. Macet? Kirim ke teman—mereka juga belum tentu tahu.",
+      "line5": "Tantangan kuis emoji 🎯 Bisa selesaikan 10 soal?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kuis emoji: film & peribahasa)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "Benar {count} / 10 soal",
+      "levelLabel": "Level",
+      "honorTitle": "Gelar",
+      "oneLiner": "Satu kalimat",
+      "nextStep": "Langkah berikutnya",
+      "openHint": "Lihat penjelasan & petunjuk",
+      "closeHint": "Tutup penjelasan",
+      "closeModal": "Tutup",
+      "correctExplanationTitle": "Penjelasan benar",
+      "wrongTrapsTitle": "Petunjuk salah",
+      "belowQuestionHint": "(Penjelasan bisa dibuka di bawah)",
+      "nudgeQ5": "🐰🕳️ Kamu sadar ini Matrix? Ajak teman mengerjakan",
+      "nudgeQ9": "❄️⬆️🌨️⬆️ Kamu tahu 설상가상? Ini susah",
+      "nudgeQ10": "🦊🍇😤 Anggur masam dalam emoji—lolos? Bagikan"
+    },
+    "shareMessages": {
+      "default": "Kuis emoji (film & peribahasa) — bagikan hasil",
+      "kakao": "Kuis emoji (film & peribahasa) — bagikan hasil",
+      "wechat": "Kuis emoji (film & peribahasa) — bagikan hasil",
+      "whatsapp": "Kuis emoji (film & peribahasa) — bagikan hasil",
+      "telegram": "Kuis emoji (film & peribahasa) — bagikan hasil",
+      "line": "Kuis emoji (film & peribahasa) — bagikan hasil",
+      "startDefault": "Kuis emoji: film & peribahasa Korea 🎯 10 soal pilihan ganda",
+      "startKakao": "Kuis emoji: film & peribahasa Korea 🎯 10 soal pilihan ganda",
+      "startWechat": "Kuis emoji: film & peribahasa Korea 🎯 10 soal pilihan ganda",
+      "startWhatsapp": "Kuis emoji: film & peribahasa Korea 🎯 10 soal pilihan ganda",
+      "startTelegram": "Kuis emoji: film & peribahasa Korea 🎯 10 soal pilihan ganda",
+      "startLine": "Kuis emoji: film & peribahasa Korea 🎯 10 soal pilihan ganda"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3WorldLandmarkCityQuizTest": {
     "startMessage": {
       "line1": "Menara Eiffel? Semua tahu. Tapi yang ini bisa tebak?",

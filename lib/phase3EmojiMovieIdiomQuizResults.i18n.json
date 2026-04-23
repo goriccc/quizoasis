@@ -1,0 +1,151 @@
+[
+  {
+    "type": "Type1",
+    "emoji": "🤯",
+    "title": {
+      "ko": "이모티콘 해독 불가 🤯",
+      "en": "Emoji Decoder: Not Yet 🤯",
+      "ja": "絵文字読解：まだ難しい 🤯",
+      "zh-CN": "表情解读：还在入门 🤯",
+      "zh-TW": "表情解讀：還在入門 🤯",
+      "vi": "Giải emoji: chưa quen 🤯",
+      "id": "Pembaca emoji: masih awal 🤯"
+    },
+    "shortDescription": {
+      "ko": "이모티콘은 대화할 때만 쓰는 거라고 생각했죠?",
+      "en": "You thought emojis were only for casual chat?",
+      "ja": "絵文字は雑談だけ、と思っていた？",
+      "zh-CN": "你以为表情只能用来闲聊？",
+      "zh-TW": "你以為表情只能用來閒聊？",
+      "vi": "Bạn tưởng emoji chỉ để chat cho vui?",
+      "id": "Kamu kira emoji cuma untuk chat biasa?"
+    },
+    "description": {
+      "ko": "0~3개를 맞힌 당신. 이모티콘으로 숨겨진 의미를 읽는 것이 아직 낯선 단계입니다. 틀린 문제를 친구에게내보세요. 친구도 못 맞힌다면 같이 머리를 싸매는 즐거움은 있습니다.",
+      "en": "You got 0–3 correct—reading hidden meanings in emojis still feels new. Send the tricky ones to a friend; if they miss too, at least you can puzzle together.",
+      "ja": "0〜3正解。絵文字の隠れた意味を読むのはまだ慣れない段階。外した問題を友だちに送って一緒に悩もう。",
+      "zh-CN": "对 0～3 题：从表情里读隐藏含义还不熟练。把错题发给朋友，一起挠头也很有趣。",
+      "zh-TW": "對 0～3 題：從表情讀隱藏意義還不熟。把錯題傳給朋友一起想也很有趣。",
+      "vi": "0–3 đúng: đọc ý ẩn trong emoji còn lạ. Gửi câu sai cho bạn cùng giải.",
+      "id": "0–3 benar: membaca makna tersembunyi di emoji masih asing. Kirim soal sulit ke teman."
+    },
+    "scoreBand": { "ko": "0~3점", "en": "0–3 points", "ja": "0〜3点", "zh-CN": "0～3 分", "zh-TW": "0～3 分", "vi": "0–3 điểm", "id": "0–3 poin" },
+    "levelLabel": { "ko": "Lv.1 이모티콘 입문자", "en": "Lv.1 Emoji Beginner", "ja": "Lv.1 絵文字入門", "zh-CN": "Lv.1 表情入门", "zh-TW": "Lv.1 表情入門", "vi": "Lv.1 Mới học emoji", "id": "Lv.1 Pemula emoji" },
+    "honorTitle": { "ko": "이모티콘은 😂 이거 하나면 충분한 사람", "en": "“😂 is enough for me” person", "ja": "「😂だけで十分」タイプ", "zh-CN": "“有😂就够了”型", "zh-TW": "「有😂就夠了」型", "vi": "Kiểu “chỉ cần 😂 là đủ”", "id": "Tipe “cukup 😂 saja”" },
+    "oneLiner": { "ko": "관용구 문제는 진짜 어려웠습니다. 억울하면 다시 도전!", "en": "The idiom rounds were brutal—retry anytime!", "ja": "慣用句は鬼難易度。悔しかったらリベンジ！", "zh-CN": "成语关真的难，不服再来！", "zh-TW": "成語關真的難，不服再來！", "vi": "Vòng thành ngữ khó thật—thử lại nhé!", "id": "Bagian peribahasa memang berat—coba lagi!" },
+    "nextStep": { "ko": "틀린 문항의 해설을 캡처해 친구에게 보내 보세요.", "en": "Screenshot wrong-question hints and send to a friend.", "ja": "外した問題の解説をスクショして共有。", "zh-CN": "截取错题解析发给朋友。", "zh-TW": "截取錯題解析傳給朋友。", "vi": "Chụp màn hình gợi ý câu sai gửi bạn.", "id": "Screenshot petunjuk soal salah, kirim ke teman." },
+    "shareLine": { "ko": "이모티콘 퀴즈 {count}개 맞힘 🤯 신포도 문제 본 사람? 이게 말이 되냐 → 너도 한번 해봐", "en": "Emoji quiz: {count}/10 🤯 That sour-grapes question—try it yourself →", "ja": "絵文字クイズ {count}/10 🤯 酸っぱいブドウ問題ヤバい → やってみて", "zh-CN": "表情测验对了 {count}/10 🤯 酸葡萄那题离谱 → 你也来", "zh-TW": "表情測驗對了 {count}/10 🤯 酸葡萄那題離譜 → 你也來", "vi": "Quiz emoji {count}/10 🤯 Câu nho chua khó tin → thử đi", "id": "Kuis emoji {count}/10 🤯 Soal anggur masam gila → coba" }
+  },
+  {
+    "type": "Type2",
+    "emoji": "🧩",
+    "title": {
+      "ko": "이모티콘 해독 중급자 🧩",
+      "en": "Emoji Decoder: Intermediate 🧩",
+      "ja": "絵文字読解：中級 🧩",
+      "zh-CN": "表情解读：中级 🧩",
+      "zh-TW": "表情解讀：中級 🧩",
+      "vi": "Giải emoji: trung cấp 🧩",
+      "id": "Pembaca emoji: menengah 🧩"
+    },
+    "shortDescription": {
+      "ko": "영화는 좀 맞혔는데 관용구에서 막혔죠?",
+      "en": "Movies clicked—then idioms blocked you?",
+      "ja": "映画は当たったのに慣用句で詰まった？",
+      "zh-CN": "电影猜对了，成语卡住了？",
+      "zh-TW": "電影猜對了，成語卡住了？",
+      "vi": "Phim ổn rồi tới thành ngữ là kẹt?",
+      "id": "Film oke, peribahasa macet?"
+    },
+    "description": {
+      "ko": "4~6개를 맞힌 당신. 유명 영화 이모티콘은 잘 읽었지만 관용구에서 갈렸을 것입니다. 조금만 더 공부하면 고수가 됩니다.",
+      "en": "4–6 correct—you read famous movie emojis well, but Korean idiom emojis split the score. A bit more practice and you level up.",
+      "ja": "4〜6正解。有名映画は得意でも慣用句で差がついたはず。あと少しで上級へ。",
+      "zh-CN": "对 4～6 题：电影表情读得好，成语部分拉开差距。再练就能升级。",
+      "zh-TW": "對 4～6 題：電影表情讀得好，成語拉開差距。再練就能升級。",
+      "vi": "4–6 đúng: phim ổn, thành ngữ là chỗ tách điểm. Luyện thêm là lên.",
+      "id": "4–6 benar: film bagus, peribahasa yang memisahkan. Latihan lagi naik level."
+    },
+    "scoreBand": { "ko": "4~6점", "en": "4–6 points", "ja": "4〜6点", "zh-CN": "4～6 分", "zh-TW": "4～6 分", "vi": "4–6 điểm", "id": "4–6 poin" },
+    "levelLabel": { "ko": "Lv.40 이모티콘 해독 중급자", "en": "Lv.40 Emoji Intermediate", "ja": "Lv.40 絵文字中級", "zh-CN": "Lv.40 表情中级", "zh-TW": "Lv.40 表情中級", "vi": "Lv.40 Trung cấp emoji", "id": "Lv.40 Menengah emoji" },
+    "honorTitle": { "ko": "영화는 알겠는데 관용구는 모르겠는 사람", "en": "Movies yes, idioms… not yet", "ja": "映画はわかるけど慣用句は…", "zh-CN": "电影懂，成语还在摸索", "zh-TW": "電影懂，成語還在摸索", "vi": "Phim ok, thành ngữ chưa", "id": "Film paham, peribahasa belum" },
+    "oneLiner": { "ko": "설상가상이랑 신포도는 어른들도 잘 모릅니다. 억울한 거 맞아요", "en": "설상가상 & sour grapes stump adults too—you are not alone.", "ja": "雪上加霜も酸っぱいブドウも大人でも難しい。",
+      "zh-CN": "雪上加霜和酸葡萄大人也常栽，别气。", "zh-TW": "雪上加霜和酸葡萄大人也常栽，別氣。", "vi": "설상가상 và nho chua cũng làm khó người lớn.", "id": "설상가상 & anggur masam juga susah untuk dewasa." },
+    "nextStep": { "ko": "관용구 3문항만 검색해 보면 다음엔 바로 티가 납니다.", "en": "Look up the three idiom questions once—next run feels easier.", "ja": "慣用句3問だけ調べると次は楽になる。", "zh-CN": "把三道成语题查一遍，下次会顺很多。", "zh-TW": "把三道成語題查一遍，下次會順很多。", "vi": "Tra 3 câu thành ngữ, lần sau dễ hơn.", "id": "Cari 3 soal peribahasa, lari berikutnya lebih mudah." },
+    "shareLine": { "ko": "이모티콘 퀴즈 {count}개 맞힘 🧩 설상가상이랑 신포도에서 박살남 ㅋㅋ → 너는 몇 개야?", "en": "Emoji quiz {count}/10 🧩 Wrecked on 설상가상 & sour grapes lol—your score?", "ja": "絵文字クイズ {count}/10 🧩 雪上加霜＆酸ブドウで沈没w", "zh-CN": "表情测验 {count}/10 🧩 雪上加霜+酸葡萄翻车哈哈", "zh-TW": "表情測驗 {count}/10 🧩 雪上加霜+酸葡萄翻車哈哈", "vi": "Quiz emoji {count}/10 🧩 Gục ở 설상가상 & nho chua haha", "id": "Kuis emoji {count}/10 🧩 Kalah di 설상가상 & anggur masam haha" }
+  },
+  {
+    "type": "Type3",
+    "emoji": "🎯",
+    "title": {
+      "ko": "이모티콘 고수 🎯",
+      "en": "Emoji Decoder: Advanced 🎯",
+      "ja": "絵文字読解：上級 🎯",
+      "zh-CN": "表情解读：高手 🎯",
+      "zh-TW": "表情解讀：高手 🎯",
+      "vi": "Giải emoji: cao thủ 🎯",
+      "id": "Pembaca emoji: jago 🎯"
+    },
+    "shortDescription": {
+      "ko": "이모티콘으로 관용구까지 읽다니. 어휘력이 남다른 사람입니다.",
+      "en": "You read idioms from emojis—serious vocabulary game.",
+      "ja": "慣用句まで絵文字で読める—語彙力が違う。",
+      "zh-CN": "能从表情读到成语，词汇力很强。",
+      "zh-TW": "能從表情讀到成語，詞彙力很強。",
+      "vi": "Đọc được thành ngữ từ emoji—từ vốn đỉnh.",
+      "id": "Baca peribahasa dari emoji—kosakata kuat."
+    },
+    "description": {
+      "ko": "7~9개를 맞힌 당신. 영화와 어려운 관용구 이모티콘까지 대부분 해독했습니다. 10점 퍼펙트가 코앞입니다.",
+      "en": "7–9 correct—you decoded tough movie and idiom emojis. Perfect 10 is one lucky question away.",
+      "ja": "7〜9正解。難しい映画も慣用句もほぼ攻略。満点まであと一歩。",
+      "zh-CN": "对 7～9 题：难片与成语表情大多破解，满分只差一步。",
+      "zh-TW": "對 7～9 題：難片與成語表情大多破解，滿分只差一步。",
+      "vi": "7–9 đúng: phim khó + thành ngữ gần hết. Còn một bước tới 10.",
+      "id": "7–9 benar: film sulit + peribahasa hampir semua. Hampir sempurna."
+    },
+    "scoreBand": { "ko": "7~9점", "en": "7–9 points", "ja": "7〜9点", "zh-CN": "7～9 分", "zh-TW": "7～9 分", "vi": "7–9 điểm", "id": "7–9 poin" },
+    "levelLabel": { "ko": "Lv.80 이모티콘 고수", "en": "Lv.80 Emoji Expert", "ja": "Lv.80 絵文字上級者", "zh-CN": "Lv.80 表情高手", "zh-TW": "Lv.80 表情高手", "vi": "Lv.80 Cao thủ emoji", "id": "Lv.80 Ahli emoji" },
+    "honorTitle": { "ko": "이모티콘이 다른 언어로 보이는 사람", "en": "Emojis feel like a second language", "ja": "絵文字が第二言語に見える人", "zh-CN": "把表情当第二语言的人", "zh-TW": "把表情當第二語言的人", "vi": "Emoji như ngôn ngữ thứ hai", "id": "Emoji seperti bahasa kedua" },
+    "oneLiner": { "ko": "설상가상이나 신포도까지 맞혔다면 진짜 대단한 겁니다", "en": "If you nailed 설상가상 or sour grapes, that is elite.", "ja": "雪上加霜か酸ブドウまで取れたら本物。", "zh-CN": "连雪上加霜或酸葡萄都对，是真强。", "zh-TW": "連雪上加霜或酸葡萄都對，是真強。", "vi": "Trúng 설상가상 hoặc nho chua là hạng cứng.", "id": "Benar 설상가상 atau anggur masam = level pro." },
+    "nextStep": { "ko": "마지막 한 문제만 복기하면 만점 패턴이 보일 거예요.", "en": "Review the one miss—perfect pattern unlocks.", "ja": "外した1問だけ復習すれば満点の型が見える。", "zh-CN": "复盘错的那一题，满分模式就出现了。", "zh-TW": "複盤錯的那一題，滿分模式就出現了。", "vi": "Xem lại 1 câu sai là thấy lối 10 điểm.", "id": "Tinjau 1 salah, pola sempurna terlihat." },
+    "shareLine": { "ko": "이모티콘 퀴즈 {count}개 맞힘 🎯 한 문제 틀려서 너무 억울하다 → 친구야 이거 10개 맞혀봐", "en": "Emoji quiz {count}/10 🎯 One wrong and it stings—friend, try for 10.", "ja": "絵文字クイズ {count}/10 🎯 1問外して悔しい → 友よ10取れ", "zh-CN": "表情测验 {count}/10 🎯 差一题好冤→朋友来冲满分", "zh-TW": "表情測驗 {count}/10 🎯 差一題好冤→朋友來衝滿分", "vi": "{count}/10 🎯 Thiếu 1 câu ức chế—bạn thử 10 đi", "id": "{count}/10 🎯 Salah satu bikin kesal—teman coba 10" }
+  },
+  {
+    "type": "Type4",
+    "emoji": "🏆",
+    "title": {
+      "ko": "이모티콘 마스터 🏆",
+      "en": "Emoji Master 🏆",
+      "ja": "絵文字マスター 🏆",
+      "zh-CN": "表情大师 🏆",
+      "zh-TW": "表情大師 🏆",
+      "vi": "Bậc thầy emoji 🏆",
+      "id": "Master emoji 🏆"
+    },
+    "shortDescription": {
+      "ko": "10개 전부 맞혔습니다. 혹시 이미 답을 알고 계셨던 건 아니죠?",
+      "en": "10/10—sure you did not peek the answers?",
+      "ja": "全問正解。答えを知ってたわけじゃないよね？",
+      "zh-CN": "10 题全对——没偷看答案吧？",
+      "zh-TW": "10 題全對——沒偷看答案吧？",
+      "vi": "10/10—chắc không xem đáp án trước nhỉ?",
+      "id": "10/10—yakin tidak intip kunci?"
+    },
+    "description": {
+      "ko": "완벽한 10점. 영화 5·관용구 5를 이모티콘만으로 전부 맞혔습니다. 설상가상과 신포도까지 맞혔다면 진짜입니다. 친구에게 공유해 자랑하세요.",
+      "en": "Perfect 10: five movie + five idiom emoji riddles cleared. If you got 설상가상 and sour grapes, that is legit brag material—share it.",
+      "ja": "満点。映画5・慣用句5を絵文字だけで制覇。雪上加霜と酸ブドウまで取れたなら自慢していい。",
+      "zh-CN": "满分：5 电影 +5 成语全用表情猜中。连雪上加霜与酸葡萄都对，值得炫耀分享。",
+      "zh-TW": "滿分：5 電影 +5 成語全用表情猜中。連雪上加霜與酸葡萄都對，值得炫耀分享。",
+      "vi": "10 điểm: 5 phim + 5 thành ngữ. Trúng 설상가상 và nho chua thì khoe được—chia sẻ đi.",
+      "id": "Sempurna: 5 film + 5 peribahasa. Benar 설상가상 & anggur masam? Pamer ke teman."
+    },
+    "scoreBand": { "ko": "10점 (퍼펙트)", "en": "10 (Perfect)", "ja": "10点（満点）", "zh-CN": "10 分（满分）", "zh-TW": "10 分（滿分）", "vi": "10 điểm (hoàn hảo)", "id": "10 poin (sempurna)" },
+    "levelLabel": { "ko": "Lv.99 이모티콘 마스터", "en": "Lv.99 Emoji Master", "ja": "Lv.99 絵文字マスター", "zh-CN": "Lv.99 表情大师", "zh-TW": "Lv.99 表情大師", "vi": "Lv.99 Bậc thầy", "id": "Lv.99 Master" },
+    "honorTitle": { "ko": "이모티콘이 모국어인 사람", "en": "Emojis are your mother tongue", "ja": "絵文字が母語の人", "zh-CN": "表情是母语的人", "zh-TW": "表情是母語的人", "vi": "Emoji như tiếng mẹ đẻ", "id": "Emoji seperti bahasa ibu" },
+    "oneLiner": { "ko": "🦊🍇😤💬🙅 이게 신포도인 걸 어떻게 알았어요?", "en": "🦊🍇😤—how did you know that was sour grapes?", "ja": "🦊🍇😤—酸ブドウとわかったの？", "zh-CN": "🦊🍇😤 你怎么看出是酸葡萄？", "zh-TW": "🦊🍇😤 你怎麼看出是酸葡萄？", "vi": "🦊🍇😤 Sao biết là nho chua?", "id": "🦊🍇😤 Kok bisa tahu anggur masam?" },
+    "nextStep": { "ko": "친구에게 링크를 보내 신포도 문항만 맞히게 도전시켜 보세요.", "en": "Send the link and dare a friend to ace only the sour-grapes item.", "ja": "友だちにリンクを送り「酸ブドウの1問だけ」挑戦させよう。", "zh-CN": "把链接发给朋友，只挑战酸葡萄那一题。", "zh-TW": "把連結傳給朋友，只挑戰酸葡萄那一題。", "vi": "Thách bạn chỉ làm đúng câu nho chua.", "id": "Tantang teman hanya soal anggur masam." },
+    "shareLine": { "ko": "이모티콘 퀴즈 10개 전부 맞힘 🏆 신포도까지 맞혔다... 친구야 너도 도전해봐 ㅋㅋ 장담하건대 신포도는 못 맞힘", "en": "Emoji quiz 10/10 🏆 Including sour grapes—bet your friend misses that one 😄", "ja": "絵文字クイズ満点 🏆 酸ブドウまで—友は絶対ミスるw", "zh-CN": "表情测验满分 🏆 含酸葡萄—赌朋友那题会错哈哈", "zh-TW": "表情測驗滿分 🏆 含酸葡萄—賭朋友那題會錯哈哈", "vi": "Quiz emoji 10/10 🏆 Cả nho chua—cá đối thủ trượt câu đó", "id": "Kuis emoji 10/10 🏆 Termasuk anggur masam—teman pasti salah itu" }
+  }
+]

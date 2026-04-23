@@ -3893,6 +3893,67 @@
       "popularTestsTop5": "🔥 Top 5 popular tests"
     }
   },
+  "phase3EmojiMovieIdiomQuizTest": {
+    "startMessage": {
+      "line1": "Guess movie titles and Korean idioms from emojis only?",
+      "line2": "🦁👑 feels easy—then it gets brutal.",
+      "line3": "5 movie questions + 5 Korean idiom questions. 10 total.",
+      "line4": "Ace them solo and you are a legend. Stuck? Send it to a friend—they probably do not know either.",
+      "line5": "Emoji quiz challenge 🎯 Can you clear all 10?"
+    },
+    "ui": {
+      "adsenseTitle": "Ad area (Emoji quiz: movies & idioms)",
+      "goToTest": "Take the quiz",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "scoreSummary": "{count} correct · out of 10",
+      "levelLabel": "Level",
+      "honorTitle": "Title",
+      "oneLiner": "One-liner",
+      "nextStep": "Try this next",
+      "openHint": "Show answer explanation & hints",
+      "closeHint": "Hide explanation",
+      "closeModal": "Close",
+      "correctExplanationTitle": "Correct answer",
+      "wrongTrapsTitle": "Wrong-answer hints",
+      "belowQuestionHint": "(You can peek explanations below)",
+      "nudgeQ5": "🐰🕳️ Got Matrix from these? Try with a friend.",
+      "nudgeQ9": "❄️⬆️🌨️⬆️ Did you read 설상가상? Brutal, right?",
+      "nudgeQ10": "🦊🍇😤 Sour grapes in emoji form—share if you survived."
+    },
+    "shareMessages": {
+      "default": "Emoji quiz (movies & idioms) — sharing my result",
+      "kakao": "Emoji quiz (movies & idioms) — sharing my result",
+      "wechat": "Emoji quiz (movies & idioms) — sharing my result",
+      "whatsapp": "Emoji quiz (movies & idioms) — sharing my result",
+      "telegram": "Emoji quiz (movies & idioms) — sharing my result",
+      "line": "Emoji quiz (movies & idioms) — sharing my result",
+      "startDefault": "Emoji quiz: movies & Korean idioms 🎯 10 multiple-choice questions",
+      "startKakao": "Emoji quiz: movies & Korean idioms 🎯 10 multiple-choice questions",
+      "startWechat": "Emoji quiz: movies & Korean idioms 🎯 10 multiple-choice questions",
+      "startWhatsapp": "Emoji quiz: movies & Korean idioms 🎯 10 multiple-choice questions",
+      "startTelegram": "Emoji quiz: movies & Korean idioms 🎯 10 multiple-choice questions",
+      "startLine": "Emoji quiz: movies & Korean idioms 🎯 10 multiple-choice questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests"
+    }
+  },
   "phase3WorldLandmarkCityQuizTest": {
     "startMessage": {
       "line1": "The Eiffel Tower? Everyone knows it—but can you get these too?",

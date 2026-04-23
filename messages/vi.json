@@ -3852,6 +3852,67 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3EmojiMovieIdiomQuizTest": {
+    "startMessage": {
+      "line1": "Chỉ nhìn emoji mà đoán tên phim và thành ngữ Hàn?",
+      "line2": "🦁👑 thì dễ—càng về sau càng khó.",
+      "line3": "5 câu phim + 5 câu thành ngữ Hàn. Tổng 10 câu.",
+      "line4": "Làm hết một mình là đỉnh. Kẹt thì gửi bạn—chắc bạn cũng chưa chắc biết.",
+      "line5": "Thử thách quiz emoji 🎯 Qua được 10 câu không?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Quiz emoji: phim & thành ngữ)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} / 10 câu",
+      "levelLabel": "Cấp",
+      "honorTitle": "Danh hiệu",
+      "oneLiner": "Một câu",
+      "nextStep": "Gợi ý tiếp theo",
+      "openHint": "Xem giải thích & gợi ý",
+      "closeHint": "Đóng giải thích",
+      "closeModal": "Đóng",
+      "correctExplanationTitle": "Giải thích đáp án",
+      "wrongTrapsTitle": "Gợi ý nhầm",
+      "belowQuestionHint": "(Có thể xem giải thích ở nút bên dưới)",
+      "nudgeQ5": "🐰🕳️ Bạn nghĩ Matrix chỉ với emoji này? Rủ bạn làm chung",
+      "nudgeQ9": "❄️⬆️🌨️⬆️ Bạn đọ được 설상가상? Khó thật",
+      "nudgeQ10": "🦊🍇😤 Nho chua bằng emoji—sống sót thì chia sẻ"
+    },
+    "shareMessages": {
+      "default": "Quiz emoji (phim & thành ngữ) — chia sẻ kết quả",
+      "kakao": "Quiz emoji (phim & thành ngữ) — chia sẻ kết quả",
+      "wechat": "Quiz emoji (phim & thành ngữ) — chia sẻ kết quả",
+      "whatsapp": "Quiz emoji (phim & thành ngữ) — chia sẻ kết quả",
+      "telegram": "Quiz emoji (phim & thành ngữ) — chia sẻ kết quả",
+      "line": "Quiz emoji (phim & thành ngữ) — chia sẻ kết quả",
+      "startDefault": "Quiz emoji: phim & thành ngữ Hàn 🎯 10 câu 4 lựa chọn",
+      "startKakao": "Quiz emoji: phim & thành ngữ Hàn 🎯 10 câu 4 lựa chọn",
+      "startWechat": "Quiz emoji: phim & thành ngữ Hàn 🎯 10 câu 4 lựa chọn",
+      "startWhatsapp": "Quiz emoji: phim & thành ngữ Hàn 🎯 10 câu 4 lựa chọn",
+      "startTelegram": "Quiz emoji: phim & thành ngữ Hàn 🎯 10 câu 4 lựa chọn",
+      "startLine": "Quiz emoji: phim & thành ngữ Hàn 🎯 10 câu 4 lựa chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo KakaoTalk. Thử lại sau giây lát.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3WorldLandmarkCityQuizTest": {
     "startMessage": {
       "line1": "Tháp Eiffel? Ai cũng biết. Nhưng mấy cái này bạn đoán được không?",

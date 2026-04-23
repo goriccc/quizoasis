@@ -3853,6 +3853,67 @@
       "popularTestsTop5": "🔥 人気テスト トップ5"
     }
   },
+  "phase3EmojiMovieIdiomQuizTest": {
+    "startMessage": {
+      "line1": "絵文字だけで映画タイトルと韓国の慣用句が当てられる？",
+      "line2": "🦁👑は簡単。でも後半は本気で難しいです。",
+      "line3": "映画5問＋韓国慣用句5問。合計10問。",
+      "line4": "全部正解なら天才。詰まったら友だちに送ってみて。たぶん友だちもわからない。",
+      "line5": "絵文字クイズに挑戦 🎯 10問クリアできる？"
+    },
+    "ui": {
+      "adsenseTitle": "広告エリア（絵文字クイズ：映画＆慣用句）",
+      "goToTest": "クイズを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "shareResult": "結果をシェア",
+      "scoreSummary": "{count}問正解 · 全10問",
+      "levelLabel": "レベル",
+      "honorTitle": "称号",
+      "oneLiner": "ひとこと",
+      "nextStep": "次にやること",
+      "openHint": "正解の解説・ヒントを見る",
+      "closeHint": "解説を閉じる",
+      "closeModal": "閉じる",
+      "correctExplanationTitle": "正解の解説",
+      "wrongTrapsTitle": "誤答のヒント",
+      "belowQuestionHint": "(下のボタンから解説を先に見られます)",
+      "nudgeQ5": "🐰🕳️ これでマトリックスとわかった？友だちともども挑戦",
+      "nudgeQ9": "❄️⬆️🌨️⬆️ 雪上加霜（ソルサンガサン）読めた？激ムズ",
+      "nudgeQ10": "🦊🍇😤 酸っぱいブドウを絵文字で。生き残ったらシェア"
+    },
+    "shareMessages": {
+      "default": "絵文字クイズ（映画＆慣用句）結果をシェア",
+      "kakao": "絵文字クイズ（映画＆慣用句）結果をシェア",
+      "wechat": "絵文字クイズ（映画＆慣用句）結果をシェア",
+      "whatsapp": "絵文字クイズ（映画＆慣用句）結果をシェア",
+      "telegram": "絵文字クイズ（映画＆慣用句）結果をシェア",
+      "line": "絵文字クイズ（映画＆慣用句）結果をシェア",
+      "startDefault": "絵文字クイズ：映画＆韓国慣用句 🎯 10問4択",
+      "startKakao": "絵文字クイズ：映画＆韓国慣用句 🎯 10問4択",
+      "startWechat": "絵文字クイズ：映画＆韓国慣用句 🎯 10問4択",
+      "startWhatsapp": "絵文字クイズ：映画＆韓国慣用句 🎯 10問4択",
+      "startTelegram": "絵文字クイズ：映画＆韓国慣用句 🎯 10問4択",
+      "startLine": "絵文字クイズ：映画＆韓国慣用句 🎯 10問4択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの似たテスト トップ5",
+      "popularTestsTop5": "🔥 人気テスト トップ5"
+    }
+  },
   "phase3WorldLandmarkCityQuizTest": {
     "startMessage": {
       "line1": "エッフェル塔？それくらい知ってる。でもこれも当てられる？",

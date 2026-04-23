@@ -3859,6 +3859,67 @@
       "popularTestsTop5": "🔥 熱門測驗 Top5"
     }
   },
+  "phase3EmojiMovieIdiomQuizTest": {
+    "startMessage": {
+      "line1": "只看表情符號就能猜電影名和韓國成語？",
+      "line2": "🦁👑 很簡單——越往後越難。",
+      "line3": "電影 5 題 + 韓國成語 5 題，共 10 題。",
+      "line4": "全對是天才；卡住了就傳給朋友，反正朋友也未必會。",
+      "line5": "表情符號測驗挑戰 🎯 能通關 10 題嗎？"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（表情測驗：電影與成語）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "shareResult": "分享結果",
+      "scoreSummary": "答對 {count} 題 · 共10題",
+      "levelLabel": "等級",
+      "honorTitle": "稱號",
+      "oneLiner": "一句話",
+      "nextStep": "接下來試試",
+      "openHint": "查看正解與提示",
+      "closeHint": "收起解析",
+      "closeModal": "關閉",
+      "correctExplanationTitle": "正解說明",
+      "wrongTrapsTitle": "易錯提示",
+      "belowQuestionHint": "（可先點下方按鈕看解析）",
+      "nudgeQ5": "🐰🕳️ 這組合你聯想到駭客任務了嗎？找朋友一起解",
+      "nudgeQ9": "❄️⬆️🌨️⬆️ 認出「雪上加霜」了嗎？真的難",
+      "nudgeQ10": "🦊🍇😤 酸葡萄用表情畫出來——活下來就分享"
+    },
+    "shareMessages": {
+      "default": "表情測驗（電影與成語）—分享我的結果",
+      "kakao": "表情測驗（電影與成語）—分享我的結果",
+      "wechat": "表情測驗（電影與成語）—分享我的結果",
+      "whatsapp": "表情測驗（電影與成語）—分享我的結果",
+      "telegram": "表情測驗（電影與成語）—分享我的結果",
+      "line": "表情測驗（電影與成語）—分享我的結果",
+      "startDefault": "表情測驗：電影與韓國成語 🎯 10 題四選一",
+      "startKakao": "表情測驗：電影與韓國成語 🎯 10 題四選一",
+      "startWechat": "表情測驗：電影與韓國成語 🎯 10 題四選一",
+      "startWhatsapp": "表情測驗：電影與韓國成語 🎯 10 題四選一",
+      "startTelegram": "表情測驗：電影與韓國成語 🎯 10 題四選一",
+      "startLine": "表情測驗：電影與韓國成語 🎯 10 題四選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測驗 Top5"
+    }
+  },
   "phase3WorldLandmarkCityQuizTest": {
     "startMessage": {
       "line1": "艾菲爾鐵塔？誰不知道。但這些你也猜得出來嗎？",

@@ -174,6 +174,10 @@ import {
   phase3ElementaryMathAdultsQuizResults,
 } from '@/lib/phase3ElementaryMathAdultsQuizData';
 import {
+  phase3EmojiMovieIdiomQuizQuestions,
+  phase3EmojiMovieIdiomQuizResults,
+} from '@/lib/phase3EmojiMovieIdiomQuizData';
+import {
   phase3WorldLandmarkCityQuizQuestions,
   phase3WorldLandmarkCityQuizResults,
 } from '@/lib/phase3WorldLandmarkCityQuizData';
@@ -523,6 +527,10 @@ const Phase3JpIndexPreciseMeasurementTestClient = dynamic(
 );
 const Phase3ElementaryMathAdultsQuizTestClient = dynamic(
   () => import('@/components/Phase3ElementaryMathAdultsQuizTestClient'),
+  { ssr: false }
+);
+const Phase3EmojiMovieIdiomQuizTestClient = dynamic(
+  () => import('@/components/Phase3EmojiMovieIdiomQuizTestClient'),
   { ssr: false }
 );
 const Phase3WorldLandmarkCityQuizTestClient = dynamic(
@@ -2702,6 +2710,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['數學', '測驗', '小學', '腦力', '自尊'],
         vi: ['Toán', 'Quiz', 'Tiểu học', 'Trí não', 'Tự tôn'],
         id: ['Matematika', 'Quiz', 'SD', 'Otak', 'Ego'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-emoji-movie-idiom-quiz') {
+    test = {
+      slug: 'phase3-emoji-movie-idiom-quiz',
+      title: {
+        ko: '이모티콘 퀴즈 (영화 & 관용구)',
+        en: 'Emoji Quiz: Movies & Korean Idioms',
+        ja: '絵文字クイズ（映画＆慣用句）',
+        'zh-CN': '表情符号测验（电影与成语）',
+        'zh-TW': '表情符號測驗（電影與成語）',
+        vi: 'Quiz emoji: phim & thành ngữ Hàn',
+        id: 'Kuis emoji: film & peribahasa Korea',
+      },
+      description: {
+        ko: '이모티콘만 보고 영화 제목·한국 관용구 맞히기 10문항 4지선다. #퀴즈 #이모티콘 #영화 #관용구 #두뇌게임',
+        en: '10 emoji multiple-choice questions—movies & Korean idioms. #quiz #emoji #movies #idioms #brain',
+        ja: '絵文字だけで映画タイトル・韓国慣用句10問4択。#クイズ #絵文字 #映画 #慣用句',
+        'zh-CN': '10 道表情猜电影与韩国成语四选一。#测验 #表情 #电影 #成语',
+        'zh-TW': '10 題表情猜電影與韓國成語四選一。#測驗 #表情 #電影 #成語',
+        vi: '10 câu emoji đoán phim & thành ngữ Hàn.#quiz #emoji #phim',
+        id: '10 soal emoji tebak film & peribahasa Korea.#kuis #emoji #film',
+      },
+      thumbnail: 'p3_quiz_emoji_movie_idiom.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['퀴즈', '이모티콘', '영화', '관용구', '두뇌게임'],
+        en: ['Quiz', 'Emoji', 'Movies', 'Idioms', 'Brain game'],
+        ja: ['クイズ', '絵文字', '映画', '慣用句', '脳トレ'],
+        'zh-CN': ['测验', '表情', '电影', '成语', '脑力'],
+        'zh-TW': ['測驗', '表情', '電影', '成語', '腦力'],
+        vi: ['Quiz', 'Emoji', 'Phim', 'Thành ngữ', 'Trí não'],
+        id: ['Kuis', 'Emoji', 'Film', 'Peribahasa', 'Otak'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5770,6 +5815,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3ElementaryMathAdultsQuizQuestions}
           results={phase3ElementaryMathAdultsQuizResults}
           questionCount={phase3ElementaryMathAdultsQuizQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-emoji-movie-idiom-quiz') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-emoji-movie-idiom-quiz',
+      title: {
+        ko: '이모티콘 퀴즈 (영화 & 관용구)',
+        en: 'Emoji Quiz: Movies & Korean Idioms',
+        ja: '絵文字クイズ（映画＆慣用句）',
+        'zh-CN': '表情符号测验（电影与成语）',
+        'zh-TW': '表情符號測驗（電影與成語）',
+        vi: 'Quiz emoji: phim & thành ngữ Hàn',
+        id: 'Kuis emoji: film & peribahasa Korea',
+      },
+      description: {
+        ko: '이모티콘만 보고 영화 제목·한국 관용구 맞히기 10문항 4지선다. #퀴즈 #이모티콘 #영화 #관용구 #두뇌게임',
+        en: '10 emoji multiple-choice questions—movies & Korean idioms. #quiz #emoji #movies #idioms #brain',
+        ja: '絵文字だけで映画タイトル・韓国慣用句10問4択。#クイズ #絵文字 #映画 #慣用句',
+        'zh-CN': '10 道表情猜电影与韩国成语四选一。#测验 #表情 #电影 #成语',
+        'zh-TW': '10 題表情猜電影與韓國成語四選一。#測驗 #表情 #電影 #成語',
+        vi: '10 câu emoji đoán phim & thành ngữ Hàn.#quiz #emoji #phim',
+        id: '10 soal emoji tebak film & peribahasa Korea.#kuis #emoji #film',
+      },
+      thumbnail: 'p3_quiz_emoji_movie_idiom.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['퀴즈', '이모티콘', '영화', '관용구', '두뇌게임'],
+        en: ['Quiz', 'Emoji', 'Movies', 'Idioms', 'Brain game'],
+        ja: ['クイズ', '絵文字', '映画', '慣用句', '脳トレ'],
+        'zh-CN': ['测验', '表情', '电影', '成语', '脑力'],
+        'zh-TW': ['測驗', '表情', '電影', '成語', '腦力'],
+        vi: ['Quiz', 'Emoji', 'Phim', 'Thành ngữ', 'Trí não'],
+        id: ['Kuis', 'Emoji', 'Film', 'Peribahasa', 'Otak'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3EmojiMovieIdiomQuizTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3EmojiMovieIdiomQuizQuestions}
+          results={phase3EmojiMovieIdiomQuizResults}
+          questionCount={phase3EmojiMovieIdiomQuizQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

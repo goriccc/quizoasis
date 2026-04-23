@@ -3114,6 +3114,67 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3EmojiMovieIdiomQuizTest": {
+    "startMessage": {
+      "line1": "이모티콘만 보고 영화 제목이랑 관용구를 맞힐 수 있다고요?",
+      "line2": "🦁👑 → 이건 쉽죠. 근데 뒤로 갈수록 진짜 어려워집니다.",
+      "line3": "영화 5문제 + 한국 관용구 5문제. 총 10문제.",
+      "line4": "혼자 다 맞히면 천재, 막히는 문제가 생기면 친구한테 보내세요. 어차피 친구도 모릅니다.",
+      "line5": "이모티콘 퀴즈 도전하기 🎯 10문제 클리어 가능?"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (이모티콘 퀴즈 영화 & 관용구)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "scoreSummary": "{count}개 맞힘 · 10문항 만점",
+      "levelLabel": "레벨",
+      "honorTitle": "명예 칭호",
+      "oneLiner": "한마디",
+      "nextStep": "이번 결과 후 추천",
+      "openHint": "정답 해설 · 오답 힌트 보기",
+      "closeHint": "해설 닫기",
+      "closeModal": "닫기",
+      "correctExplanationTitle": "정답 해설",
+      "wrongTrapsTitle": "오답 힌트",
+      "belowQuestionHint": "(해설은 아래 버튼에서 미리 볼 수 있어요)",
+      "nudgeQ5": "🐰🕳️ 이게 매트릭스라는 거 맞혔어?? 같이 풀어봐",
+      "nudgeQ9": "❄️⬆️🌨️⬆️ 이게 설상가상인 거 알았어?? 진짜 어렵지 않냐",
+      "nudgeQ10": "🦊🍇😤 이모티콘으로 신포도를 표현한 사람 나와 → 자연스럽게 공유 각"
+    },
+    "shareMessages": {
+      "default": "이모티콘 퀴즈 (영화 & 관용구) 결과 공유",
+      "kakao": "이모티콘 퀴즈 (영화 & 관용구) 결과 공유",
+      "wechat": "이모티콘 퀴즈 (영화 & 관용구) 결과 공유",
+      "whatsapp": "이모티콘 퀴즈 (영화 & 관용구) 결과 공유",
+      "telegram": "이모티콘 퀴즈 (영화 & 관용구) 결과 공유",
+      "line": "이모티콘 퀴즈 (영화 & 관용구) 결과 공유",
+      "startDefault": "이모티콘 퀴즈 (영화 & 관용구) 🎯 10문항 4지선다",
+      "startKakao": "이모티콘 퀴즈 (영화 & 관용구) 🎯 10문항 4지선다",
+      "startWechat": "이모티콘 퀴즈 (영화 & 관용구) 🎯 10문항 4지선다",
+      "startWhatsapp": "이모티콘 퀴즈 (영화 & 관용구) 🎯 10문항 4지선다",
+      "startTelegram": "이모티콘 퀴즈 (영화 & 관용구) 🎯 10문항 4지선다",
+      "startLine": "이모티콘 퀴즈 (영화 & 관용구) 🎯 10문항 4지선다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3WorldLandmarkCityQuizTest": {
     "startMessage": {
       "line1": "에펠탑? 다 알죠. 근데 이것도 맞출 수 있어요?",
