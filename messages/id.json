@@ -8957,6 +8957,59 @@
       "popularTestsTop5": "🔥 Tes Populer Terkini Top 5"
     }
   },
+  "phase3PersonalityColorFinderTest": {
+    "startMessage": {
+      "line1": "Warna yang kamu suka bukan kebetulan.",
+      "line2": "Warna yang kamu pilih berulang kali—yang terasa menenangkan saat dilihat—sering mencerminkan isi dirimu.",
+      "line3": "Psikologi warna mengatakan pilihan warna bisa menunjukkan kepribadian dan kondisi emosi.",
+      "line4": "Pilih gambar yang paling kamu tertarik secara insting, dan kami akan menemukan warna kepribadian + palet warna personalmu. Kamu bakal ingin menyimpannya.",
+      "line5": "Cari warna kepribadianku 🎨 Mulai"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Personality Color Finder)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "algorithmSubtype": "Warna kepribadian",
+      "feedComposition": "Kata kunci warna",
+      "saveFolderName": "Palet warna personal",
+      "snsMainActivity": "Pesan warna hari ini",
+      "goodMatch": "Warna yang cocok",
+      "badMatch": "Warna yang sebaiknya dihindari",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "Warna kepribadianku {name}! 🎨 Paletnya pas banget sampai kusimpan. Kamu warna apa? Ayo bandingkan.",
+      "kakao": "Warna kepribadianku {name}! 🎨 Paletnya pas banget sampai kusimpan. Kamu warna apa? Ayo bandingkan.",
+      "wechat": "Warna kepribadianku {name}! 🎨 Paletnya pas banget sampai kusimpan. Kamu warna apa? Ayo bandingkan.",
+      "whatsapp": "Warna kepribadianku {name}! 🎨 Paletnya pas banget sampai kusimpan. Kamu warna apa? Ayo bandingkan.",
+      "telegram": "Warna kepribadianku {name}! 🎨 Paletnya pas banget sampai kusimpan. Kamu warna apa? Ayo bandingkan.",
+      "line": "Warna kepribadianku {name}! 🎨 Paletnya pas banget sampai kusimpan. Kamu warna apa? Ayo bandingkan.",
+      "startDefault": "Kepribadianmu warna apa? 🎨 12 pertanyaan pilih gambar",
+      "startKakao": "Kepribadianmu warna apa? 🎨 12 pertanyaan pilih gambar",
+      "startWechat": "Kepribadianmu warna apa? 🎨 12 pertanyaan pilih gambar",
+      "startWhatsapp": "Kepribadianmu warna apa? 🎨 12 pertanyaan pilih gambar",
+      "startTelegram": "Kepribadianmu warna apa? 🎨 12 pertanyaan pilih gambar",
+      "startLine": "Kepribadianmu warna apa? 🎨 12 pertanyaan pilih gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

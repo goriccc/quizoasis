@@ -74,6 +74,11 @@ import {
   phase3SnsAlgorithmTypeResults,
 } from '@/lib/phase3SnsAlgorithmTypeData';
 import {
+  phase3PersonalityColorFinderQuestions,
+  phase3PersonalityColorFinderResults,
+  phase3PersonalityColorFinderTestFallback,
+} from '@/lib/phase3PersonalityColorFinderData';
+import {
   phase3GameLoveBalanceExtremeQuestions,
   phase3GameLoveBalanceExtremeResults,
 } from '@/lib/phase3GameLoveBalanceExtremeData';
@@ -427,6 +432,10 @@ const Phase3WhichAiAreYouTestClient = dynamic(
 );
 const Phase3SnsAlgorithmTypeTestClient = dynamic(
   () => import('@/components/Phase3SnsAlgorithmTypeTestClient'),
+  { ssr: false }
+);
+const Phase3PersonalityColorFinderTestClient = dynamic(
+  () => import('@/components/Phase3PersonalityColorFinderTestClient'),
   { ssr: false }
 );
 const Phase3GameLoveBalanceExtremeTestClient = dynamic(
@@ -1120,6 +1129,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         vi: ['SNS', 'Xu hướng', 'Số', 'Tính cách'],
         id: ['SNS', 'Tren', 'Digital', 'Kepribadian'],
       },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-personality-color-finder') {
+    test = {
+      slug: 'phase3-personality-color-finder',
+      ...phase3PersonalityColorFinderTestFallback,
+      thumbnail: 'p3_test_personality_color_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -4715,6 +4735,35 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SnsAlgorithmTypeQuestions}
           results={phase3SnsAlgorithmTypeResults}
           questionCount={phase3SnsAlgorithmTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-personality-color-finder') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-personality-color-finder',
+      ...phase3PersonalityColorFinderTestFallback,
+      thumbnail: 'p3_test_personality_color_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+    };
+
+    return (
+      <>
+        <Phase3PersonalityColorFinderTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3PersonalityColorFinderQuestions}
+          results={phase3PersonalityColorFinderResults}
+          questionCount={phase3PersonalityColorFinderQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

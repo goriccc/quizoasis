@@ -8957,6 +8957,59 @@
       "popularTestsTop5": "🔥 Các bài kiểm tra phổ biến gần đây Top 5"
     }
   },
+  "phase3PersonalityColorFinderTest": {
+    "startMessage": {
+      "line1": "Màu bạn bị thu hút không hề là ngẫu nhiên.",
+      "line2": "Màu bạn thích, hay chọn, hay thấy là an tâm—tất cả phản chiếu thế giới bên trong bạn.",
+      "line3": "Tâm lý học màu sắc cho rằng lựa chọn màu có thể nói lên tính cách và trạng thái cảm xúc.",
+      "line4": "Chọn hình bạn thấy “hợp” theo trực giác, chúng tôi sẽ tìm ra màu tính cách và bảng phối màu cá nhân của bạn. Bạn sẽ muốn lưu kết quả.",
+      "line5": "Tìm màu tính cách của tôi 🎨 Bắt đầu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Màu tính cách)",
+      "goToTest": "Bắt đầu làm test",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "algorithmSubtype": "Màu tính cách",
+      "feedComposition": "Từ khóa màu",
+      "saveFolderName": "Bảng phối màu cá nhân",
+      "snsMainActivity": "Thông điệp màu hôm nay",
+      "goodMatch": "Màu hợp với bạn",
+      "badMatch": "Màu nên tránh",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "Màu tính cách của mình là {name}! 🎨 Bảng phối màu ra đúng ý nên lưu luôn. Bạn là màu gì? So kết quả nhé.",
+      "kakao": "Màu tính cách của mình là {name}! 🎨 Bảng phối màu ra đúng ý nên lưu luôn. Bạn là màu gì? So kết quả nhé.",
+      "wechat": "Màu tính cách của mình là {name}! 🎨 Bảng phối màu ra đúng ý nên lưu luôn. Bạn là màu gì? So kết quả nhé.",
+      "whatsapp": "Màu tính cách của mình là {name}! 🎨 Bảng phối màu ra đúng ý nên lưu luôn. Bạn là màu gì? So kết quả nhé.",
+      "telegram": "Màu tính cách của mình là {name}! 🎨 Bảng phối màu ra đúng ý nên lưu luôn. Bạn là màu gì? So kết quả nhé.",
+      "line": "Màu tính cách của mình là {name}! 🎨 Bảng phối màu ra đúng ý nên lưu luôn. Bạn là màu gì? So kết quả nhé.",
+      "startDefault": "Tính cách của bạn là màu gì? 🎨 12 câu chọn ảnh",
+      "startKakao": "Tính cách của bạn là màu gì? 🎨 12 câu chọn ảnh",
+      "startWechat": "Tính cách của bạn là màu gì? 🎨 12 câu chọn ảnh",
+      "startWhatsapp": "Tính cách của bạn là màu gì? 🎨 12 câu chọn ảnh",
+      "startTelegram": "Tính cách của bạn là màu gì? 🎨 12 câu chọn ảnh",
+      "startLine": "Tính cách của bạn là màu gì? 🎨 12 câu chọn ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Có lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự",
+      "popularTestsTop5": "🔥 Top 5 test thịnh hành"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

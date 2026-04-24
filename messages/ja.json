@@ -8945,6 +8945,59 @@
       "popularTestsTop5": "🔥 最近人気のテストおすすめトップ5"
     }
   },
+  "phase3PersonalityColorFinderTest": {
+    "startMessage": {
+      "line1": "惹かれる色は、偶然ではありません。",
+      "line2": "好きな色、つい選んでしまう色、見ているだけで落ち着く色——それらはあなたの内面を映しています。",
+      "line3": "色彩心理学では、色の好みが性格や感情状態を表すと言われます。",
+      "line4": "直感で惹かれる画像を選ぶだけで、あなたを代表する“性格カラー”とパーソナルパレットを見つけます。保存したくなるはず。",
+      "line5": "私の性格カラーを探す 🎨 診断スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（性格カラー診断）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "algorithmSubtype": "性格カラー",
+      "feedComposition": "カラーキーワード",
+      "saveFolderName": "パーソナルパレット",
+      "snsMainActivity": "今日のカラーメッセージ",
+      "goodMatch": "似合う色",
+      "badMatch": "避けたい色",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "私の性格カラーは{name}！🎨 パレットまでぴったりで保存した。あなたは何色？結果を比べよう。",
+      "kakao": "私の性格カラーは{name}！🎨 パレットまでぴったりで保存した。あなたは何色？結果を比べよう。",
+      "wechat": "私の性格カラーは{name}！🎨 パレットまでぴったりで保存した。あなたは何色？結果を比べよう。",
+      "whatsapp": "私の性格カラーは{name}！🎨 パレットまでぴったりで保存した。あなたは何色？結果を比べよう。",
+      "telegram": "私の性格カラーは{name}！🎨 パレットまでぴったりで保存した。あなたは何色？結果を比べよう。",
+      "line": "私の性格カラーは{name}！🎨 パレットまでぴったりで保存した。あなたは何色？結果を比べよう。",
+      "startDefault": "性格カラー診断 🎨 画像で選ぶ12問",
+      "startKakao": "性格カラー診断 🎨 画像で選ぶ12問",
+      "startWechat": "性格カラー診断 🎨 画像で選ぶ12問",
+      "startWhatsapp": "性格カラー診断 🎨 画像で選ぶ12問",
+      "startTelegram": "性格カラー診断 🎨 画像で選ぶ12問",
+      "startLine": "性格カラー診断 🎨 画像で選ぶ12問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化しています。少し待って再試行してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめTOP5",
+      "popularTestsTop5": "🔥 人気のテストTOP5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

@@ -9095,6 +9095,59 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3PersonalityColorFinderTest": {
+    "startMessage": {
+      "line1": "당신이 끌리는 색깔은 우연이 아닙니다.",
+      "line2": "좋아하는 색, 자꾸 선택하게 되는 색, 보면 왠지 마음이 편안해지는 색. 그 모든 것이 당신의 내면을 반영하고 있습니다.",
+      "line3": "색채 심리학에서는 색깔 선택이 성격과 감정 상태를 드러낸다고 말합니다.",
+      "line4": "직관적으로 끌리는 이미지를 선택하면 당신의 성격을 대표하는 색깔과 퍼스널 컬러 팔레트를 찾아드립니다. 결과 캡처해서 저장해두고 싶을 거예요.",
+      "line5": "내 성격 컬러 찾기 🎨 컬러 진단 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (내 성격은 어떤 색깔일까?)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "algorithmSubtype": "성격 컬러",
+      "feedComposition": "컬러 키워드",
+      "saveFolderName": "퍼스널 컬러 팔레트",
+      "snsMainActivity": "오늘의 컬러 메시지",
+      "goodMatch": "잘 어울리는 컬러",
+      "badMatch": "주의할 컬러"
+    },
+    "shareMessages": {
+      "default": "내 성격 컬러는 {name}! 🎨 팔레트까지 딱 나와서 저장함 → 너는 어떤 색이야? 결과 비교해보자",
+      "kakao": "내 성격 컬러는 {name}! 🎨 팔레트까지 딱 나와서 저장함 → 너는 어떤 색이야? 결과 비교해보자",
+      "wechat": "내 성격 컬러는 {name}! 🎨 팔레트까지 딱 나와서 저장함 → 너는 어떤 색이야? 결과 비교해보자",
+      "whatsapp": "내 성격 컬러는 {name}! 🎨 팔레트까지 딱 나와서 저장함 → 너는 어떤 색이야? 결과 비교해보자",
+      "telegram": "내 성격 컬러는 {name}! 🎨 팔레트까지 딱 나와서 저장함 → 너는 어떤 색이야? 결과 비교해보자",
+      "line": "내 성격 컬러는 {name}! 🎨 팔레트까지 딱 나와서 저장함 → 너는 어떤 색이야? 결과 비교해보자",
+      "startDefault": "내 성격은 어떤 색깔일까? 🎨 12문항 이미지 선택",
+      "startKakao": "내 성격은 어떤 색깔일까? 🎨 12문항 이미지 선택",
+      "startWechat": "내 성격은 어떤 색깔일까? 🎨 12문항 이미지 선택",
+      "startWhatsapp": "내 성격은 어떤 색깔일까? 🎨 12문항 이미지 선택",
+      "startTelegram": "내 성격은 어떤 색깔일까? 🎨 12문항 이미지 선택",
+      "startLine": "내 성격은 어떤 색깔일까? 🎨 12문항 이미지 선택"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

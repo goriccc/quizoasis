@@ -8426,6 +8426,59 @@
       "popularTestsTop5": "🔥 最近熱門測試推薦 TOP 5"
     }
   },
+  "phase3PersonalityColorFinderTest": {
+    "startMessage": {
+      "line1": "你被某種顏色吸引，並不是巧合。",
+      "line2": "你喜歡的顏色、總會選到的顏色、看著就讓人安心的顏色——都在映照你的內心。",
+      "line3": "色彩心理學認為，顏色偏好會透露性格與情緒狀態。",
+      "line4": "憑直覺選出更心動的圖片，我們會找出你的「性格顏色」與專屬配色盤。你一定會想把結果存下來。",
+      "line5": "尋找我的性格顏色 🎨 開始測驗"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（性格顏色測驗）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "algorithmSubtype": "性格顏色",
+      "feedComposition": "顏色關鍵詞",
+      "saveFolderName": "專屬配色盤",
+      "snsMainActivity": "今日顏色寄語",
+      "goodMatch": "適合你的顏色",
+      "badMatch": "需要避開的顏色",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "我的性格顏色是{name}！🎨 連配色盤都剛剛好，已存下來。你是什麼顏色？來比一比。",
+      "kakao": "我的性格顏色是{name}！🎨 連配色盤都剛剛好，已存下來。你是什麼顏色？來比一比。",
+      "wechat": "我的性格顏色是{name}！🎨 連配色盤都剛剛好，已存下來。你是什麼顏色？來比一比。",
+      "whatsapp": "我的性格顏色是{name}！🎨 連配色盤都剛剛好，已存下來。你是什麼顏色？來比一比。",
+      "telegram": "我的性格顏色是{name}！🎨 連配色盤都剛剛好，已存下來。你是什麼顏色？來比一比。",
+      "line": "我的性格顏色是{name}！🎨 連配色盤都剛剛好，已存下來。你是什麼顏色？來比一比。",
+      "startDefault": "性格顏色測驗 🎨 12題圖片二選一",
+      "startKakao": "性格顏色測驗 🎨 12題圖片二選一",
+      "startWechat": "性格顏色測驗 🎨 12題圖片二選一",
+      "startWhatsapp": "性格顏色測驗 🎨 12題圖片二選一",
+      "startTelegram": "性格顏色測驗 🎨 12題圖片二選一",
+      "startLine": "性格顏色測驗 🎨 12題圖片二選一"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "目前無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試 Top 5",
+      "popularTestsTop5": "🔥 熱門測試 Top 5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",
