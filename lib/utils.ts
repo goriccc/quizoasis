@@ -68,7 +68,24 @@ export function cn(...classes: (string | undefined | null | false)[]): string {
 }
 
 /**
- * Supabase Storage URL 생성 (캐시 버스팅 포함)
+ * 정적 이미지 버전 쿼리 생성.
+ * 기본값은 빈 문자열이며, 이미지 파일을 교체할 때만 NEXT_PUBLIC_ASSET_VERSION을 올립니다.
+ */
+function getAssetVersionQuery(): string {
+  const version = String(process.env.NEXT_PUBLIC_ASSET_VERSION || '').trim();
+  return version ? `?v=${encodeURIComponent(version)}` : '';
+}
+
+function appendAssetVersion(url: string): string {
+  const versionQuery = getAssetVersionQuery();
+  if (!versionQuery) {
+    return url;
+  }
+  return `${url}${url.includes('?') ? versionQuery.replace('?', '&') : versionQuery}`;
+}
+
+/**
+ * Supabase Storage URL 생성
  */
 export function getThumbnailUrl(thumbnail: string): string {
   // 이미 전체 URL인 경우 그대로 반환
@@ -81,17 +98,13 @@ export function getThumbnailUrl(thumbnail: string): string {
   // Supabase Storage가 설정되어 있는 경우 사용
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   
-  // 캐시 버스팅: 현재 날짜를 버전으로 사용 (YYYYMMDD 형식)
-  const today = new Date();
-  const version = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
-
   // Cloudflare CDN 프록시가 설정된 경우 우선 사용
   if (cdnBase) {
-    return `${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(thumbnail)}?v=${version}`;
+    return appendAssetVersion(`${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(thumbnail)}`);
   }
 
   if (supabaseUrl) {
-    return `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${thumbnail}?v=${version}`;
+    return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${thumbnail}`);
   }
   
   // Supabase가 없으면 기본 이미지 사용 (Unsplash에서 신뢰 관련 이미지)
@@ -118,24 +131,21 @@ export function getOgImageUrl(filename: string): string {
     return getThumbnailUrl(filename);
   }
 
-  const today = new Date();
-  const version = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
-
   if (process.env.NEXT_PUBLIC_SUPABASE_OG_IMAGE_RESIZE === '1') {
     if (cdnBase) {
-      return `${cdnBase}/cdn/render/tests-thumbnails/${encodeURIComponent(
+      return appendAssetVersion(`${cdnBase}/cdn/render/tests-thumbnails/${encodeURIComponent(
         filename
-      )}?width=1200&height=630&resize=cover&quality=86&v=${version}`;
+      )}?width=1200&height=630&resize=cover&quality=86`);
     }
-    return `${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
+    return appendAssetVersion(`${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
       filename
-    )}?width=1200&height=630&resize=cover&quality=86&v=${version}`;
+    )}?width=1200&height=630&resize=cover&quality=86`);
   }
 
   if (cdnBase) {
-    return `${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(filename)}?v=${version}`;
+    return appendAssetVersion(`${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(filename)}`);
   }
-  return `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}?v=${version}`;
+  return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}`);
 }
 
 /**
@@ -150,16 +160,13 @@ export function getQuizLandmarkImageUrl(filename: string): string {
   if (!supabaseUrl) {
     return getThumbnailUrl(filename);
   }
-  const today = new Date();
-  const version = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
-
   if (process.env.NEXT_PUBLIC_SUPABASE_QUIZ_IMAGE_RESIZE === '1') {
-    return `${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
+    return appendAssetVersion(`${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
       filename
-    )}?width=960&height=600&resize=cover&quality=82&v=${version}`;
+    )}?width=960&height=600&resize=cover&quality=82`);
   }
 
-  return `${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}?v=${version}`;
+  return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}`);
 }
 
 /**

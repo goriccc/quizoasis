@@ -39,7 +39,7 @@ export async function GET(
     headers: {
       'content-type': contentType,
       // 변환 결과는 쿼리에 의해 달라지므로, CDN/브라우저가 쿼리 키로 캐시하도록 설정.
-      'cache-control': 'public, max-age=31536000, immutable',
+      'cache-control': 'public, max-age=31536000, s-maxage=31536000, immutable',
     },
   });
 

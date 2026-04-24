@@ -18,6 +18,42 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   },
 });
 
+const TEST_LIST_COLUMNS = 'id, slug, title, thumbnail, tags, play_count, created_at, badge_type, category';
+
+/**
+ * 목록/검색/추천용 테스트 조회
+ * 상세 설명 JSON은 제외해서 Supabase Egress를 줄입니다.
+ */
+export async function getTestsForList() {
+  try {
+    const { data, error } = await supabase
+      .from('tests')
+      .select(TEST_LIST_COLUMNS)
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Error fetching tests for list:', error);
+      }
+      return getFallbackTests();
+    }
+
+    if (!data || !Array.isArray(data)) {
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Invalid list data format from Supabase');
+      }
+      return getFallbackTests();
+    }
+
+    return data;
+  } catch (error) {
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Network error fetching tests for list:', error);
+    }
+    return getFallbackTests();
+  }
+}
+
 /**
  * 테스트 목록 조회
  */

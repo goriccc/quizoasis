@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getTests } from '@/lib/supabase';
+import { getTestsForList } from '@/lib/supabase';
 import { convertDBTestToQuizTest } from '@/lib/utils';
 import { Locale } from '@/i18n';
 
@@ -31,8 +31,8 @@ export async function GET(request: NextRequest) {
         setTimeout(() => reject(new Error('API Timeout')), 8000)
       );
 
-      // Supabase에서 모든 테스트 가져오기
-      const fetchTestsPromise = getTests();
+      // 목록 카드에 필요한 필드만 가져오기
+      const fetchTestsPromise = getTestsForList();
       dbTests = await Promise.race([fetchTestsPromise, timeoutPromise]) as any;
       
       // 캐시 업데이트

@@ -23,6 +23,27 @@ function getBuildTime() {
   return `${year}.${month}.${day}.${hours}${minutes}`;
 }
 
+function getHostname(value) {
+  try {
+    return value ? new URL(value).hostname : null;
+  } catch (error) {
+    return null;
+  }
+}
+
+function getImageRemotePatterns() {
+  const hostnames = new Set([
+    getHostname(process.env.NEXT_PUBLIC_SUPABASE_URL),
+    getHostname(process.env.NEXT_PUBLIC_CDN_BASE_URL),
+    'images.unsplash.com',
+  ].filter(Boolean));
+
+  return Array.from(hostnames).map((hostname) => ({
+    protocol: 'https',
+    hostname,
+  }));
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -36,13 +57,8 @@ const nextConfig = {
   },
   images: {
     formats: ['image/avif', 'image/webp'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
-    minimumCacheTTL: 60, // 이미지 캐시 TTL 설정
+    remotePatterns: getImageRemotePatterns(),
+    minimumCacheTTL: 60 * 60 * 24 * 30,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },

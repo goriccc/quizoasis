@@ -49,7 +49,7 @@ export default function Header() {
     setSearchLoading(true);
     const h = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/tests/search?locale=${locale}&q=${encodeURIComponent(q)}&limit=10&noCache=true`, { cache: 'no-store', signal: controller.signal });
+        const res = await fetch(`/api/tests/search?locale=${locale}&q=${encodeURIComponent(q)}&limit=10`, { signal: controller.signal });
         const data = await res.json();
         if (active) {
           setSearchResults(Array.isArray(data.tests) ? data.tests : []);
@@ -71,7 +71,7 @@ export default function Header() {
     if (searchQuery.trim().length > 0) return;
     (async () => {
       try {
-        const res = await fetch(`/api/tests/search?locale=${locale}&limit=10`, { cache: 'no-store' });
+        const res = await fetch(`/api/tests/search?locale=${locale}&limit=10`);
         const data = await res.json();
         setSearchResults(Array.isArray(data.tests) ? data.tests : []);
       } catch {}

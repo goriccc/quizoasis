@@ -43,8 +43,8 @@ export async function GET(
     status: 200,
     headers: {
       'content-type': contentType,
-      // URL에 v=YYYYMMDD 캐시버스팅이 붙으므로 길게 캐시해도 안전합니다.
-      'cache-control': 'public, max-age=31536000, immutable',
+      // Static thumbnails are versioned only when NEXT_PUBLIC_ASSET_VERSION changes.
+      'cache-control': 'public, max-age=31536000, s-maxage=31536000, immutable',
     },
   });
 
