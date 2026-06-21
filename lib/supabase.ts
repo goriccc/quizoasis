@@ -19,6 +19,40 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
 });
 
 const TEST_LIST_COLUMNS = 'id, slug, title, thumbnail, tags, play_count, created_at, badge_type, category';
+const HUMA_QUIZ_COLUMNS = 'id, slug, title, description';
+
+export type HumaQuizRow = {
+  id: number;
+  slug: string;
+  title: Record<string, string> | string;
+  description?: Record<string, string> | string | null;
+};
+
+/**
+ * HUMA 영상 콘텐츠 sync용 퀴즈 목록 (title·description 포함)
+ */
+export async function getTestsForHumaContent(): Promise<HumaQuizRow[]> {
+  try {
+    const { data, error } = await supabase
+      .from('tests')
+      .select(HUMA_QUIZ_COLUMNS)
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      console.error('[huma-quizzes] Error fetching tests:', error);
+      return [];
+    }
+
+    if (!data || !Array.isArray(data)) {
+      return [];
+    }
+
+    return data as HumaQuizRow[];
+  } catch (error) {
+    console.error('[huma-quizzes] Network error fetching tests:', error);
+    return [];
+  }
+}
 
 /**
  * 목록/검색/추천용 테스트 조회
