@@ -376,23 +376,23 @@ function getFallbackTestBySlug(slug: string) {
  */
 export async function incrementPlayCount(slug: string) {
   try {
-    // Promise.race를 사용하여 3초 내에 응답이 없으면 조용히 무시
-    const timeoutPromise = new Promise((_, reject) => 
+    const timeoutPromise = new Promise((_, reject) =>
       setTimeout(() => reject(new Error('Timeout')), 3000)
     );
-    
-    const incrementPromise = supabase.rpc('increment_play_count', {
-      test_slug: slug,
+
+    const incrementPromise = fetch('/api/tests/play-count', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug }),
     });
 
-    const { error } = await Promise.race([incrementPromise, timeoutPromise]) as any;
+    const response = (await Promise.race([incrementPromise, timeoutPromise])) as Response;
 
-    if (error) {
-      console.error('Error incrementing play count:', error);
+    if (!response.ok) {
+      console.error('Error incrementing play count:', response.status);
     }
   } catch (error) {
     console.error('Network error incrementing play count:', error);
-    // Supabase 연결 실패 시 조용히 무시
   }
 }
 
