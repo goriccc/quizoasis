@@ -857,6 +857,13 @@
     "installButton": "Tambahkan QuizOasis",
     "manualInstructions": "Silakan ikuti langkah-langkah di atas untuk menambahkan secara manual."
   },
+  "adTrafficGuard": {
+    "title": "Pembatasan Iklan",
+    "description": "Terlalu banyak iklan dipilih dalam {minutes} menit terakhir.\nIklan tidak akan ditampilkan selama {days} hari ke depan.",
+    "ipLabel": "IP Anda",
+    "ipUnknown": "Tidak diketahui",
+    "confirm": "OK"
+  },
   "footer": {
     "slogan": "Oasis tes psikologi untuk menjelajahi pikiran Anda",
     "disclaimer": "Penerbit dapat menerima komisi melalui iklan",

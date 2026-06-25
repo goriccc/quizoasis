@@ -858,6 +858,13 @@
     "installButton": "QuizOasisを追加",
     "manualInstructions": "上記の手順に従って手動で追加してください。"
   },
+  "adTrafficGuard": {
+    "title": "広告表示の制限",
+    "description": "直近{minutes}分以内に広告が過剰に選択されました。\n今後{days}日間、広告は表示されません。",
+    "ipLabel": "接続IP",
+    "ipUnknown": "不明",
+    "confirm": "確認"
+  },
   "footer": {
     "slogan": "あなたの心を探る心理テストのオアシス",
     "disclaimer": "運営者は広告を通じて一定の手数料を受け取る場合があります",

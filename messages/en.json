@@ -859,6 +859,13 @@
     "installButton": "Add QuizOasis",
     "manualInstructions": "Please follow the steps above to add manually."
   },
+  "adTrafficGuard": {
+    "title": "Ad Access Restricted",
+    "description": "Too many ads were selected within {minutes} minutes.\nAds will not be shown for the next {days} days.",
+    "ipLabel": "Your IP",
+    "ipUnknown": "Unknown",
+    "confirm": "OK"
+  },
   "footer": {
     "slogan": "An oasis of psychological tests to explore your mind",
     "disclaimer": "The publisher may receive a commission through advertising",

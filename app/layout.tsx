@@ -3,6 +3,7 @@ import Script from 'next/script';
 import Head from 'next/head';
 import './globals.css';
 import Analytics from '@/components/Analytics';
+import ServiceWorkerRegistration from '@/components/ServiceWorkerRegistration';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
@@ -53,9 +54,14 @@ export default function RootLayout({
       <Head>
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        {/* iOS Safari 홈 화면 추가 */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         {/* iOS Safari 홈 화면 추가 이름 */}
         <meta name="apple-mobile-web-app-title" content="QuizOasis" />
         {/* Android Chrome 홈 화면 추가 이름 */}
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="QuizOasis" />
         {/* Google Fonts - Noto Sans 다국어 지원 (안드로이드 갤럭시 최적화) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -134,6 +140,7 @@ export default function RootLayout({
       <Suspense fallback={null}>
         <Analytics />
       </Suspense>
+      <ServiceWorkerRegistration />
       {children}
       </body>
     </html>

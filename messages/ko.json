@@ -6025,6 +6025,13 @@
     "installButton": "QuizOasis 추가",
     "manualInstructions": "위의 방법대로 수동으로 추가해주세요."
   },
+  "adTrafficGuard": {
+    "title": "광고 이용 제한 안내",
+    "description": "최근 {minutes}분 이내에 광고를 과도하게 선택하여, 앞으로 {days}일간 광고가 표시되지 않습니다.",
+    "ipLabel": "접속 IP",
+    "ipUnknown": "확인 불가",
+    "confirm": "확인"
+  },
   "footer": {
     "slogan": "당신의 마음을 탐험하는 심리테스트의 오아시스",
     "disclaimer": "",

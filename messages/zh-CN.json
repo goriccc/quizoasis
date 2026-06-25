@@ -857,6 +857,13 @@
     "installButton": "添加QuizOasis",
     "manualInstructions": "请按照上述步骤手动添加。"
   },
+  "adTrafficGuard": {
+    "title": "广告展示限制",
+    "description": "您在最近{minutes}分钟内过度点击广告。\n接下来{days}天内将不再显示广告。",
+    "ipLabel": "访问IP",
+    "ipUnknown": "无法确认",
+    "confirm": "确定"
+  },
   "footer": {
     "slogan": "探索您内心的心理测试绿洲",
     "disclaimer": "发布者可能通过广告获得一定佣金",

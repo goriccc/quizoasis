@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { isAdPaused, shouldShowAds } from '@/lib/adTrafficGuard';
 
 // AdSense Configuration
 export const ADSENSE_CONFIG = {
@@ -26,7 +27,7 @@ export interface AdSensePlaceholderProps {
 
 // 공통 AdSense 로드 함수 (중복 로드 방지)
 export const loadAdSense = () => {
-  if (typeof window === 'undefined' || !ADSENSE_CONFIG.ENABLED) return;
+  if (typeof window === 'undefined' || !ADSENSE_CONFIG.ENABLED || !shouldShowAds()) return;
   
   try {
     // 이미 로드된 AdSense 요소가 있는지 확인
@@ -51,7 +52,7 @@ export const loadAdSense = () => {
 
 // 전역 AdSense 로드 함수 (모든 컴포넌트에서 사용)
 export const safeLoadAdSense = () => {
-  if (typeof window === 'undefined' || !ADSENSE_CONFIG.ENABLED) return;
+  if (typeof window === 'undefined' || !ADSENSE_CONFIG.ENABLED || !shouldShowAds()) return;
   
   try {
     // 이미 로드된 AdSense 요소가 있는지 확인
@@ -98,15 +99,21 @@ export default function AdSensePlaceholder({
   const [shouldHide, setShouldHide] = useState(false); // 항상 false로 유지하여 항상 보이도록
   const [isInitialized, setIsInitialized] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [adsAllowed, setAdsAllowed] = useState(true);
 
   // 클라이언트 마운트 확인
   useEffect(() => {
     setIsMounted(true);
+    setAdsAllowed(!isAdPaused());
+
+    const onPause = () => setAdsAllowed(false);
+    window.addEventListener('quizoasis:ad-pause', onPause);
+    return () => window.removeEventListener('quizoasis:ad-pause', onPause);
   }, []);
 
   // 광고 요소가 렌더링된 후 개별적으로 초기화
   useEffect(() => {
-    if (!ADSENSE_CONFIG.ENABLED || isInitialized || !isMounted) return;
+    if (!ADSENSE_CONFIG.ENABLED || isInitialized || !isMounted || !adsAllowed) return;
     
     const initializeAd = () => {
       // 광고 요소가 DOM에 있는지 확인
@@ -161,11 +168,11 @@ export default function AdSensePlaceholder({
     
     // 초기화 시작
     initializeAd();
-  }, [isInitialized, isMounted]);
+  }, [isInitialized, isMounted, adsAllowed]);
 
   // 광고 로드 상태 확인 (게재 제한 중일 때 영역 숨기기)
   useEffect(() => {
-    if (!ADSENSE_CONFIG.ENABLED || !isMounted) return;
+    if (!ADSENSE_CONFIG.ENABLED || !isMounted || !adsAllowed) return;
     
     let observer: MutationObserver | null = null;
     let interval: NodeJS.Timeout | null = null;
@@ -242,7 +249,7 @@ export default function AdSensePlaceholder({
         clearInterval(interval);
       }
     };
-  }, [isMounted]);
+  }, [isMounted, adsAllowed]);
 
   // 클라이언트에서만 렌더링 (hydration 오류 방지)
   if (!isMounted) {
@@ -255,6 +262,10 @@ export default function AdSensePlaceholder({
         className={className}
       />
     );
+  }
+
+  if (!adsAllowed) {
+    return null;
   }
 
   if (ADSENSE_CONFIG.ENABLED) {

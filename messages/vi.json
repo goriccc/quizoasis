@@ -857,6 +857,13 @@
     "installButton": "Thêm QuizOasis",
     "manualInstructions": "Vui lòng làm theo các bước trên để thêm thủ công."
   },
+  "adTrafficGuard": {
+    "title": "Hạn chế hiển thị quảng cáo",
+    "description": "Quá nhiều quảng cáo được chọn trong {minutes} phút gần đây.\nQuảng cáo sẽ không hiển thị trong {days} ngày tới.",
+    "ipLabel": "IP của bạn",
+    "ipUnknown": "Không xác định",
+    "confirm": "OK"
+  },
   "footer": {
     "slogan": "Ốc đảo của các bài kiểm tra tâm lý để khám phá tâm trí bạn",
     "disclaimer": "Nhà xuất bản có thể nhận hoa hồng thông qua quảng cáo",
