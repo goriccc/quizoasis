@@ -1304,6 +1304,64 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3KdramaLeadCharacterTypeTest": {
+    "startMessage": {
+      "line1": "Cuộc sống hàng ngày của bạn giống K-Drama nào?",
+      "line2": "Có người bị đối xử bất công vẫn vượt qua, có người từ bỏ tất cả để chuẩn bị trả thù, có người lặng lẽ trưởng thành rồi một ngày tỏa sáng.",
+      "line3": "Nhân vật chính K-Drama giả vờ bình thường nhưng không bao giờ thực sự bình thường. Bạn cũng vậy.",
+      "line4": "12 câu hỏi phân tích tính cách, cuộc sống hàng ngày và mối quan hệ để tìm thể loại K-Drama và vai trò của bạn.",
+      "line5": "Tìm kiểu nhân vật chính K-Drama của tôi 🎬 Bắt đầu"
+    },
+    "ui": {
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem test khác",
+      "goToTest": "Bắt đầu test",
+      "adsenseTitle": "AdSense (Bài test kiểu nhân vật chính K-Drama)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "empathyLevel": "Thể loại K-Drama",
+      "characteristics": "Hồ sơ nhân vật",
+      "goodMatch": "Câu thoại đình đám của tôi",
+      "badMatch": "Giới thiệu một dòng",
+      "dramaClimax": "Cao trào phim của tôi",
+      "dramaSupportingRole": "Vai phụ trong phim của tôi",
+      "dramaOst": "OST phim của tôi"
+    },
+    "shareMessages": {
+      "default": "Kiểu nhân vật chính K-Drama của tôi là {type}! 🎬 Bạn là nhân vật chính phim nào?",
+      "kakao": "Kiểu nhân vật chính K-Drama của tôi là {type}! 🎬 Bạn là nhân vật chính phim nào?",
+      "wechat": "Kiểu nhân vật chính K-Drama của tôi là {type}! 🎬 Bạn là nhân vật chính phim nào?",
+      "whatsapp": "Kiểu nhân vật chính K-Drama của tôi là {type}! 🎬 Bạn là nhân vật chính phim nào?",
+      "telegram": "Kiểu nhân vật chính K-Drama của tôi là {type}! 🎬 Bạn là nhân vật chính phim nào?",
+      "line": "Kiểu nhân vật chính K-Drama của tôi là {type}! 🎬 Bạn là nhân vật chính phim nào?",
+      "startDefault": "Bài test kiểu nhân vật chính K-Drama 🎬 Tìm kiểu nhân vật chính của tôi!",
+      "startKakao": "Bài test kiểu nhân vật chính K-Drama 🎬 Tìm kiểu nhân vật chính của tôi!",
+      "startWechat": "Bài test kiểu nhân vật chính K-Drama 🎬 Tìm kiểu nhân vật chính của tôi!",
+      "startWhatsapp": "Bài test kiểu nhân vật chính K-Drama 🎬 Tìm kiểu nhân vật chính của tôi!",
+      "startTelegram": "Bài test kiểu nhân vật chính K-Drama 🎬 Tìm kiểu nhân vật chính của tôi!",
+      "startLine": "Bài test kiểu nhân vật chính K-Drama 🎬 Tìm kiểu nhân vật chính của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trên WeChat.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự",
+      "popularTestsTop5": "🔥 Top 5 test phổ biến"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "Mối quan hệ này nên tiến thêm một bước, hay đợi thêm một chút?",

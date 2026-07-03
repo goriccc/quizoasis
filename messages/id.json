@@ -1304,6 +1304,64 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3KdramaLeadCharacterTypeTest": {
+    "startMessage": {
+      "line1": "Kehidupan sehari-harimu mirip K-Drama yang mana?",
+      "line2": "Ada yang diperlakukan tidak adil tapi tetap bangkit, ada yang melepaskan segalanya untuk balas dendam, ada yang diam-diam berkembang lalu suatu hari bersinar.",
+      "line3": "Tokoh utama K-Drama pura-pura biasa, tapi tidak pernah benar-benar biasa. Kamu juga.",
+      "line4": "12 pertanyaan menganalisis kepribadian, kehidupan sehari-hari, dan pola hubunganmu untuk menemukan genre K-Drama dan peranmu.",
+      "line5": "Temukan tipe tokoh utama K-Drama-ku 🎬 Mulai tes"
+    },
+    "ui": {
+      "shareWithFriends": "Coba bersama teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lainnya",
+      "goToTest": "Mulai tes",
+      "adsenseTitle": "AdSense (Tes Tipe Karakter Utama K-Drama)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "empathyLevel": "Genre K-Drama",
+      "characteristics": "Profil drama",
+      "goodMatch": "Kalimat ikonikku",
+      "badMatch": "Sinopsis satu baris",
+      "dramaClimax": "Klimaks dramaku",
+      "dramaSupportingRole": "Peran pendukung dramaku",
+      "dramaOst": "OST dramaku"
+    },
+    "shareMessages": {
+      "default": "Tipe tokoh utama K-Drama-ku adalah {type}! 🎬 Kamu tokoh utama drama apa?",
+      "kakao": "Tipe tokoh utama K-Drama-ku adalah {type}! 🎬 Kamu tokoh utama drama apa?",
+      "wechat": "Tipe tokoh utama K-Drama-ku adalah {type}! 🎬 Kamu tokoh utama drama apa?",
+      "whatsapp": "Tipe tokoh utama K-Drama-ku adalah {type}! 🎬 Kamu tokoh utama drama apa?",
+      "telegram": "Tipe tokoh utama K-Drama-ku adalah {type}! 🎬 Kamu tokoh utama drama apa?",
+      "line": "Tipe tokoh utama K-Drama-ku adalah {type}! 🎬 Kamu tokoh utama drama apa?",
+      "startDefault": "Tes Tipe Karakter Utama K-Drama 🎬 Temukan tipe tokoh utama K-Drama-ku!",
+      "startKakao": "Tes Tipe Karakter Utama K-Drama 🎬 Temukan tipe tokoh utama K-Drama-ku!",
+      "startWechat": "Tes Tipe Karakter Utama K-Drama 🎬 Temukan tipe tokoh utama K-Drama-ku!",
+      "startWhatsapp": "Tes Tipe Karakter Utama K-Drama 🎬 Temukan tipe tokoh utama K-Drama-ku!",
+      "startTelegram": "Tes Tipe Karakter Utama K-Drama 🎬 Temukan tipe tokoh utama K-Drama-ku!",
+      "startLine": "Tes Tipe Karakter Utama K-Drama 🎬 Temukan tipe tokoh utama K-Drama-ku!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "Hubungan ini, maju sekarang atau tunggu dulu?",

@@ -1345,6 +1345,64 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3KdramaLeadCharacterTypeTest": {
+    "startMessage": {
+      "line1": "Which K-drama does your daily life resemble?",
+      "line2": "Some people bounce back from unfair treatment, some prepare revenge after giving up everything, and some grow quietly until they shine one day.",
+      "line3": "K-drama leads pretend to be ordinary—but they never truly are. Neither are you.",
+      "line4": "Twelve questions analyze your personality, daily life, and relationship patterns to find your K-drama genre and role.",
+      "line5": "Find my K-drama lead type 🎬 Start the quiz"
+    },
+    "ui": {
+      "shareWithFriends": "Share with friends",
+      "shareResultWithFriends": "Share result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "goToTest": "Take the quiz",
+      "adsenseTitle": "AdSense (K-Drama Lead Character Type Test)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "empathyLevel": "K-Drama genre",
+      "characteristics": "Drama profile",
+      "goodMatch": "My iconic line",
+      "badMatch": "One-line pitch",
+      "dramaClimax": "My drama climax",
+      "dramaSupportingRole": "My drama supporting role",
+      "dramaOst": "My drama OST"
+    },
+    "shareMessages": {
+      "default": "My K-drama lead type is {type}! 🎬 What kind of drama lead are you?",
+      "kakao": "My K-drama lead type is {type}! 🎬 What kind of drama lead are you?",
+      "wechat": "My K-drama lead type is {type}! 🎬 What kind of drama lead are you?",
+      "whatsapp": "My K-drama lead type is {type}! 🎬 What kind of drama lead are you?",
+      "telegram": "My K-drama lead type is {type}! 🎬 What kind of drama lead are you?",
+      "line": "My K-drama lead type is {type}! 🎬 What kind of drama lead are you?",
+      "startDefault": "K-Drama Lead Character Type Test 🎬 Find my K-drama lead type!",
+      "startKakao": "K-Drama Lead Character Type Test 🎬 Find my K-drama lead type!",
+      "startWechat": "K-Drama Lead Character Type Test 🎬 Find my K-drama lead type!",
+      "startWhatsapp": "K-Drama Lead Character Type Test 🎬 Find my K-drama lead type!",
+      "startTelegram": "K-Drama Lead Character Type Test 🎬 Find my K-drama lead type!",
+      "startLine": "K-Drama Lead Character Type Test 🎬 Find my K-drama lead type!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "Should you move this relationship forward—or wait a bit longer?",

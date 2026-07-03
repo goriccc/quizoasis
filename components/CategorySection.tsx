@@ -1,11 +1,11 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Play } from 'lucide-react';
 import { QuizTest } from '@/lib/types';
-import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
+import { formatPlayCount } from '@/lib/utils';
+import TestThumbnail from './TestThumbnail';
 import { Locale } from '@/i18n';
 import { usePrefetchOnVisible } from '@/hooks/usePrefetchOnVisible';
 import { useMemo, useState, useEffect, useCallback } from 'react';
@@ -46,8 +46,8 @@ function TestCard({
       <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
         {/* 썸네일 */}
         <div className="relative w-full aspect-video">
-          <Image
-            src={getThumbnailUrl(test.thumbnail)}
+          <TestThumbnail
+            thumbnail={test.thumbnail}
             alt={safeTitle}
             fill
             className="object-cover"

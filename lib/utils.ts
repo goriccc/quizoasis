@@ -84,6 +84,34 @@ function appendAssetVersion(url: string): string {
   return `${url}${url.includes('?') ? versionQuery.replace('?', '&') : versionQuery}`;
 }
 
+/** jpg/jpeg/png ↔ webp 등 대체 썸네일 파일명 */
+export function getThumbnailFallbackFilename(thumbnail: string): string | null {
+  if (!thumbnail || thumbnail.startsWith('http://') || thumbnail.startsWith('https://')) {
+    return null;
+  }
+  if (/\.jpe?g$/i.test(thumbnail)) {
+    return thumbnail.replace(/\.jpe?g$/i, '.webp');
+  }
+  if (/\.png$/i.test(thumbnail)) {
+    return thumbnail.replace(/\.png$/i, '.webp');
+  }
+  if (/\.webp$/i.test(thumbnail)) {
+    return thumbnail.replace(/\.webp$/i, '.jpg');
+  }
+  return null;
+}
+
+/** 로드 실패 시 시도할 썸네일 파일명 목록 (원본 → 대체 확장자) */
+export function getThumbnailFilenameCandidates(thumbnail: string): string[] {
+  if (!thumbnail) return [];
+  const candidates = [thumbnail];
+  const fallback = getThumbnailFallbackFilename(thumbnail);
+  if (fallback && !candidates.includes(fallback)) {
+    candidates.push(fallback);
+  }
+  return candidates;
+}
+
 /**
  * Supabase Storage URL 생성
  */

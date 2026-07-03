@@ -1305,6 +1305,64 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3KdramaLeadCharacterTypeTest": {
+    "startMessage": {
+      "line1": "あなたの日常はどんなK-ドラマに似ている？",
+      "line2": "理不尽を受けても最後には勝つ人、すべてを捨てて復讐を準備する人、黙々と成長してある日輝く人がいます。",
+      "line3": "K-ドラマの主人公は平凡を装うけれど、決して平凡ではありません。あなたもそうです。",
+      "line4": "12の質問で性格・日常・人間関係のパターンを分析し、あなたのK-ドラマジャンルと役割を見つけます。",
+      "line5": "私のK-ドラマ主人公タイプを探す 🎬 診断スタート"
+    },
+    "ui": {
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense（K-ドラマ主人公タイプ診断）",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "empathyLevel": "K-ドラマジャンル",
+      "characteristics": "ドラマプロフィール",
+      "goodMatch": "私のドラマ名台詞",
+      "badMatch": "ドラマ一言紹介",
+      "dramaClimax": "私のドラマクライマックス",
+      "dramaSupportingRole": "私のドラマ脇役",
+      "dramaOst": "私のドラマOST"
+    },
+    "shareMessages": {
+      "default": "私のK-ドラマ主人公タイプは{type}！🎬 あなたはどんなドラマの主人公？",
+      "kakao": "私のK-ドラマ主人公タイプは{type}！🎬 あなたはどんなドラマの主人公？",
+      "wechat": "私のK-ドラマ主人公タイプは{type}！🎬 あなたはどんなドラマの主人公？",
+      "whatsapp": "私のK-ドラマ主人公タイプは{type}！🎬 あなたはどんなドラマの主人公？",
+      "telegram": "私のK-ドラマ主人公タイプは{type}！🎬 あなたはどんなドラマの主人公？",
+      "line": "私のK-ドラマ主人公タイプは{type}！🎬 あなたはどんなドラマの主人公？",
+      "startDefault": "K-ドラマ主人公タイプ診断 🎬 私のK-ドラマ主人公タイプを探す！",
+      "startKakao": "K-ドラマ主人公タイプ診断 🎬 私のK-ドラマ主人公タイプを探す！",
+      "startWechat": "K-ドラマ主人公タイプ診断 🎬 私のK-ドラマ主人公タイプを探す！",
+      "startWhatsapp": "K-ドラマ主人公タイプ診断 🎬 私のK-ドラマ主人公タイプを探す！",
+      "startTelegram": "K-ドラマ主人公タイプ診断 🎬 私のK-ドラマ主人公タイプを探す！",
+      "startLine": "K-ドラマ主人公タイプ診断 🎬 私のK-ドラマ主人公タイプを探す！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストトップ5"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "この関係、もう一歩進めるべき？それとももう少し様子を見るべき？",

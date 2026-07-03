@@ -42,6 +42,10 @@ import {
   phase3DramaLifeCharacterResults,
 } from '@/lib/phase3DramaLifeCharacterData';
 import {
+  phase3KdramaLeadCharacterTypeQuestions,
+  phase3KdramaLeadCharacterTypeResults,
+} from '@/lib/phase3KdramaLeadCharacterTypeData';
+import {
   phase3HiddenSubCharacterQuestions,
   phase3HiddenSubCharacterResults,
 } from '@/lib/phase3HiddenSubCharacterData';
@@ -371,6 +375,10 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
   ssr: false
 });
+const Phase3KdramaLeadCharacterTypeTestClient = dynamic(
+  () => import('@/components/Phase3KdramaLeadCharacterTypeTestClient'),
+  { ssr: false }
+);
 const Phase3DopamineTypeTestClient = dynamic(() => import('@/components/Phase3DopamineTypeTestClient'), {
   ssr: false,
 });
@@ -2064,6 +2072,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戲劇', '角色', '性格', '共鳴'],
         vi: ['Phim', 'Nhân vật', 'Tính cách', 'Đồng cảm'],
         id: ['Drama', 'Karakter', 'Kepribadian', 'Empati'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-kdrama-lead-character-type') {
+    test = {
+      slug: 'phase3-kdrama-lead-character-type',
+      title: {
+        ko: 'K-드라마 주인공 재질 테스트',
+        en: 'K-Drama Lead Character Type Test',
+        ja: 'K-ドラマ主人公タイプ診断',
+        'zh-CN': 'K剧主角类型测试',
+        'zh-TW': 'K劇主角類型測試',
+        vi: 'Bài test kiểu nhân vật chính K-Drama',
+        id: 'Tes Tipe Karakter Utama K-Drama',
+      },
+      description: {
+        ko: '당신의 일상은 어떤 K-드라마와 닮아 있나요?',
+        en: 'Which K-drama does your daily life resemble?',
+        ja: 'あなたの日常はどんなK-ドラマに似ている？',
+        'zh-CN': '你的日常像哪部K剧？',
+        'zh-TW': '你的日常像哪部K劇？',
+        vi: 'Cuộc sống hàng ngày của bạn giống K-Drama nào?',
+        id: 'Kehidupan sehari-harimu mirip K-Drama yang mana?',
+      },
+      thumbnail: 'p3_test_kdrama_lead_character_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['K드라마', '주인공', '성격', '드라마', '한류'],
+        en: ['K-Drama', 'Protagonist', 'Personality', 'Drama', 'Hallyu'],
+        ja: ['K-ドラマ', '主人公', '性格', 'ドラマ', '韓流'],
+        'zh-CN': ['K剧', '主角', '性格', '电视剧', '韩流'],
+        'zh-TW': ['K劇', '主角', '性格', '戲劇', '韓流'],
+        vi: ['K-Drama', 'Nhân vật chính', 'Tính cách', 'Phim', 'Hallyu'],
+        id: ['K-Drama', 'Protagonis', 'Kepribadian', 'Drama', 'Hallyu'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4405,6 +4450,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3BurnoutFatigueQuestions}
           results={phase3BurnoutFatigueResults}
           questionCount={phase3BurnoutFatigueQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-kdrama-lead-character-type') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase3-kdrama-lead-character-type',
+      title: {
+        ko: 'K-드라마 주인공 재질 테스트',
+        en: 'K-Drama Lead Character Type Test',
+        ja: 'K-ドラマ主人公タイプ診断',
+        'zh-CN': 'K剧主角类型测试',
+        'zh-TW': 'K劇主角類型測試',
+        vi: 'Bài test kiểu nhân vật chính K-Drama',
+        id: 'Tes Tipe Karakter Utama K-Drama',
+      },
+      description: {
+        ko: '당신의 일상은 어떤 K-드라마와 닮아 있나요?',
+        en: 'Which K-drama does your daily life resemble?',
+        ja: 'あなたの日常はどんなK-ドラマに似ている？',
+        'zh-CN': '你的日常像哪部K剧？',
+        'zh-TW': '你的日常像哪部K劇？',
+        vi: 'Cuộc sống hàng ngày của bạn giống K-Drama nào?',
+        id: 'Kehidupan sehari-harimu mirip K-Drama yang mana?',
+      },
+      thumbnail: 'p3_test_kdrama_lead_character_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['K드라마', '주인공', '성격', '드라마', '한류'],
+        en: ['K-Drama', 'Protagonist', 'Personality', 'Drama', 'Hallyu'],
+        ja: ['K-ドラマ', '主人公', '性格', 'ドラマ', '韓流'],
+        'zh-CN': ['K剧', '主角', '性格', '电视剧', '韩流'],
+        'zh-TW': ['K劇', '主角', '性格', '戲劇', '韓流'],
+        vi: ['K-Drama', 'Nhân vật chính', 'Tính cách', 'Phim', 'Hallyu'],
+        id: ['K-Drama', 'Protagonis', 'Kepribadian', 'Drama', 'Hallyu'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3KdramaLeadCharacterTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3KdramaLeadCharacterTypeQuestions}
+          results={phase3KdramaLeadCharacterTypeResults}
+          questionCount={phase3KdramaLeadCharacterTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
