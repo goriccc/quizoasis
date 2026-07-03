@@ -1304,6 +1304,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Terkini"
     }
   },
+  "phase3MemeCharacterTypeTest": {
+    "startMessage": {
+      "line1": "Kamu tipe meme apa?",
+      "line2": "Setiap reaksi punya memenya sendiri. Ada yang meledak positif seperti Wahoo, ada yang mendinginkan suasana dengan fakta, ada yang menangis karena apa saja, ada yang pura-pura tidak peduli tapi tahu duluan.",
+      "line3": "Pilih gambar yang paling menarik perhatianmu untuk menemukan karakter meme yang paling mirip dengan pola reaksi dan perilakumu.",
+      "line4": "Gambar hasil langsung jadi konten share. Siapa pun yang menerimanya akan bilang &quot;Itu kamu banget wkwk&quot;.",
+      "line5": "Cari tipe meme-ku 🎭 Mulai tes"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kamu tipe karakter meme apa?)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "memeCharacterName": "Karakter meme",
+      "memeLevel": "Level meme",
+      "memeTrigger": "Kondisi pemicu",
+      "memeActivationRate": "Tingkat aktivasi",
+      "memeUltimate": "Jurus pamungkas",
+      "memeCaution": "Perhatian",
+      "memeOneLiner": "Ulasan satu kalimat",
+      "goodMatch": "Meme cocok",
+      "badMatch": "Meme bentrok",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kamu tipe karakter meme apa? 🎭 Tes pilih gambar 12 pertanyaan",
+      "startKakao": "Kamu tipe karakter meme apa? 🎭 Tes pilih gambar 12 pertanyaan",
+      "startWechat": "Kamu tipe karakter meme apa? 🎭 Tes pilih gambar 12 pertanyaan",
+      "startWhatsapp": "Kamu tipe karakter meme apa? 🎭 Tes pilih gambar 12 pertanyaan",
+      "startTelegram": "Kamu tipe karakter meme apa? 🎭 Tes pilih gambar 12 pertanyaan",
+      "startLine": "Kamu tipe karakter meme apa? 🎭 Tes pilih gambar 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3KdramaLeadCharacterTypeTest": {
     "startMessage": {
       "line1": "Kehidupan sehari-harimu mirip K-Drama yang mana?",

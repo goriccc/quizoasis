@@ -1345,6 +1345,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3MemeCharacterTypeTest": {
+    "startMessage": {
+      "line1": "What meme character type are you?",
+      "line2": "Every reaction has a meme. Some explode with positivity like Woohoo, some cool the room with facts, some cry at nothing, and some pretend not to care but know everything first.",
+      "line3": "Pick the image that pulls you in—and we'll find the meme character that matches your reaction and behavior patterns.",
+      "line4": "The result image is shareable content on its own. Everyone who gets it will say \"that's so you lol.\"",
+      "line5": "Find my meme type 🎭 Start the quiz"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (What Meme Character Type Are You?)",
+      "goToTest": "Take the quiz",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "memeCharacterName": "Meme character",
+      "memeLevel": "Meme level",
+      "memeTrigger": "Trigger condition",
+      "memeActivationRate": "Activation rate",
+      "memeUltimate": "Ultimate move",
+      "memeCaution": "Caution",
+      "memeOneLiner": "One-liner review",
+      "goodMatch": "Good meme match",
+      "badMatch": "Clashing meme",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "What meme character type are you? 🎭 12 image-choice questions",
+      "startKakao": "What meme character type are you? 🎭 12 image-choice questions",
+      "startWechat": "What meme character type are you? 🎭 12 image-choice questions",
+      "startWhatsapp": "What meme character type are you? 🎭 12 image-choice questions",
+      "startTelegram": "What meme character type are you? 🎭 12 image-choice questions",
+      "startLine": "What meme character type are you? 🎭 12 image-choice questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing feature unavailable.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3KdramaLeadCharacterTypeTest": {
     "startMessage": {
       "line1": "Which K-drama does your daily life resemble?",

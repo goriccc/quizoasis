@@ -42,6 +42,10 @@ import {
   phase3DramaLifeCharacterResults,
 } from '@/lib/phase3DramaLifeCharacterData';
 import {
+  phase3MemeCharacterTypeQuestions,
+  phase3MemeCharacterTypeResults,
+} from '@/lib/phase3MemeCharacterTypeData';
+import {
   phase3KdramaLeadCharacterTypeQuestions,
   phase3KdramaLeadCharacterTypeResults,
 } from '@/lib/phase3KdramaLeadCharacterTypeData';
@@ -375,6 +379,10 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
   ssr: false
 });
+const Phase3MemeCharacterTypeTestClient = dynamic(
+  () => import('@/components/Phase3MemeCharacterTypeTestClient'),
+  { ssr: false }
+);
 const Phase3KdramaLeadCharacterTypeTestClient = dynamic(
   () => import('@/components/Phase3KdramaLeadCharacterTypeTestClient'),
   { ssr: false }
@@ -2072,6 +2080,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戲劇', '角色', '性格', '共鳴'],
         vi: ['Phim', 'Nhân vật', 'Tính cách', 'Đồng cảm'],
         id: ['Drama', 'Karakter', 'Kepribadian', 'Empati'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-meme-character-type') {
+    test = {
+      slug: 'phase3-meme-character-type',
+      title: {
+        ko: '나는 어떤 밈 캐릭터 재질?',
+        en: 'What Meme Character Type Are You?',
+        ja: 'あなたはどんなミームキャラタイプ？',
+        'zh-CN': '你是什么表情包角色类型？',
+        'zh-TW': '你是什麼迷因角色類型？',
+        vi: 'Bạn là kiểu meme character nào?',
+        id: 'Kamu tipe karakter meme apa?',
+      },
+      description: {
+        ko: '당신은 어떤 밈 재질인가요?',
+        en: 'What meme character type are you?',
+        ja: 'あなたはどんなミームの素質？',
+        'zh-CN': '你是什么表情包体质？',
+        'zh-TW': '你是什麼迷因體質？',
+        vi: 'Bạn thuộc kiểu meme nào?',
+        id: 'Kamu tipe meme yang mana?',
+      },
+      thumbnail: 'p3_test_meme_character_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밈', '성격', '공감', 'MZ', '바이럴'],
+        en: ['Meme', 'Personality', 'Empathy', 'Gen Z', 'Viral'],
+        ja: ['ミーム', '性格', '共感', 'MZ', 'バイラル'],
+        'zh-CN': ['表情包', '性格', '共鸣', 'Z世代', '病毒式传播'],
+        'zh-TW': ['迷因', '性格', '共鳴', 'Z世代', '病毒式傳播'],
+        vi: ['Meme', 'Tính cách', 'Đồng cảm', 'Gen Z', 'Viral'],
+        id: ['Meme', 'Kepribadian', 'Empati', 'Gen Z', 'Viral'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4450,6 +4495,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3BurnoutFatigueQuestions}
           results={phase3BurnoutFatigueResults}
           questionCount={phase3BurnoutFatigueQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-meme-character-type') {
+    const test = await getTestBySlug(slug) || {
+      slug: 'phase3-meme-character-type',
+      title: {
+        ko: '나는 어떤 밈 캐릭터 재질?',
+        en: 'What Meme Character Type Are You?',
+        ja: 'あなたはどんなミームキャラタイプ？',
+        'zh-CN': '你是什么表情包角色类型？',
+        'zh-TW': '你是什麼迷因角色類型？',
+        vi: 'Bạn là kiểu meme character nào?',
+        id: 'Kamu tipe karakter meme apa?',
+      },
+      description: {
+        ko: '당신은 어떤 밈 재질인가요?',
+        en: 'What meme character type are you?',
+        ja: 'あなたはどんなミームの素質？',
+        'zh-CN': '你是什么表情包体质？',
+        'zh-TW': '你是什麼迷因體質？',
+        vi: 'Bạn thuộc kiểu meme nào?',
+        id: 'Kamu tipe meme yang mana?',
+      },
+      thumbnail: 'p3_test_meme_character_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밈', '성격', '공감', 'MZ', '바이럴'],
+        en: ['Meme', 'Personality', 'Empathy', 'Gen Z', 'Viral'],
+        ja: ['ミーム', '性格', '共感', 'MZ', 'バイラル'],
+        'zh-CN': ['表情包', '性格', '共鸣', 'Z世代', '病毒式传播'],
+        'zh-TW': ['迷因', '性格', '共鳴', 'Z世代', '病毒式傳播'],
+        vi: ['Meme', 'Tính cách', 'Đồng cảm', 'Gen Z', 'Viral'],
+        id: ['Meme', 'Kepribadian', 'Empati', 'Gen Z', 'Viral'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3MemeCharacterTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3MemeCharacterTypeQuestions}
+          results={phase3MemeCharacterTypeResults}
+          questionCount={phase3MemeCharacterTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

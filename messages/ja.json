@@ -1305,6 +1305,62 @@
       "popularTestsTop5": "🔥 最近人気のテストトップ5"
     }
   },
+  "phase3MemeCharacterTypeTest": {
+    "startMessage": {
+      "line1": "あなたはどんなミームの素質？",
+      "line2": "すべての反応にはミームがあります。ウヤホーのようにポジティブ爆発する人、ファクトで空気を冷やす人、何でもないことで泣く人、興味ないフリをして一番早く知る人。",
+      "line3": "直感で惹かれる画像を選べば、あなたの反応と行動パターンに最も近いミームキャラが見つかります。",
+      "line4": "結果画像そのものがシェアコンテンツ。受け取った人みんな「それお前だw」となる。",
+      "line5": "私のミームタイプを探す 🎭 テスト開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（あなたはどんなミームキャラタイプ？）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "memeCharacterName": "ミームキャラ",
+      "memeLevel": "ミームレベル",
+      "memeTrigger": "発動条件",
+      "memeActivationRate": "発動確率",
+      "memeUltimate": "必殺技",
+      "memeCaution": "注意事項",
+      "memeOneLiner": "一言レビュー",
+      "goodMatch": "相性◎ミーム",
+      "badMatch": "衝突ミーム",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "あなたはどんなミームキャラタイプ？ 🎭 12問画像選択テスト",
+      "startKakao": "あなたはどんなミームキャラタイプ？ 🎭 12問画像選択テスト",
+      "startWechat": "あなたはどんなミームキャラタイプ？ 🎭 12問画像選択テスト",
+      "startWhatsapp": "あなたはどんなミームキャラタイプ？ 🎭 12問画像選択テスト",
+      "startTelegram": "あなたはどんなミームキャラタイプ？ 🎭 12問画像選択テスト",
+      "startLine": "あなたはどんなミームキャラタイプ？ 🎭 12問画像選択テスト"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストトップ5"
+    }
+  },
   "phase3KdramaLeadCharacterTypeTest": {
     "startMessage": {
       "line1": "あなたの日常はどんなK-ドラマに似ている？",

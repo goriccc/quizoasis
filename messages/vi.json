@@ -1304,6 +1304,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến gần đây"
     }
   },
+  "phase3MemeCharacterTypeTest": {
+    "startMessage": {
+      "line1": "Bạn thuộc kiểu meme nào?",
+      "line2": "Mỗi phản ứng đều có một meme. Có người bùng nổ năng lượng tích cực như Wahoo, có người làm lạnh không khí bằng sự thật, có người khóc vì mọi thứ, có người giả vờ không quan tâm nhưng biết tin đầu tiên.",
+      "line3": "Chọn hình ảnh thu hút bạn nhất để tìm nhân vật meme gần với cách phản ứng và hành vi của bạn nhất.",
+      "line4": "Ảnh kết quả chính là nội dung chia sẻ. Ai nhận được cũng sẽ nói &quot;Đúng là bạn rồi haha&quot;.",
+      "line5": "Tìm kiểu meme của tôi 🎭 Bắt đầu test"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Bạn thuộc kiểu nhân vật meme nào?)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "memeCharacterName": "Nhân vật meme",
+      "memeLevel": "Cấp độ meme",
+      "memeTrigger": "Điều kiện kích hoạt",
+      "memeActivationRate": "Tỷ lệ kích hoạt",
+      "memeUltimate": "Chiêu tuyệt kỹ",
+      "memeCaution": "Lưu ý",
+      "memeOneLiner": "Nhận xét một câu",
+      "goodMatch": "Meme hợp",
+      "badMatch": "Meme xung đột",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Bạn thuộc kiểu nhân vật meme nào? 🎭 Test chọn hình 12 câu",
+      "startKakao": "Bạn thuộc kiểu nhân vật meme nào? 🎭 Test chọn hình 12 câu",
+      "startWechat": "Bạn thuộc kiểu nhân vật meme nào? 🎭 Test chọn hình 12 câu",
+      "startWhatsapp": "Bạn thuộc kiểu nhân vật meme nào? 🎭 Test chọn hình 12 câu",
+      "startTelegram": "Bạn thuộc kiểu nhân vật meme nào? 🎭 Test chọn hình 12 câu",
+      "startLine": "Bạn thuộc kiểu nhân vật meme nào? 🎭 Test chọn hình 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trên WeChat.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
+    }
+  },
   "phase3KdramaLeadCharacterTypeTest": {
     "startMessage": {
       "line1": "Cuộc sống hàng ngày của bạn giống K-Drama nào?",
