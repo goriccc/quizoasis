@@ -1,6 +1,6 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { headers } from 'next/headers';
-import { getTests } from '@/lib/supabase';
+import { getTestsForList } from '@/lib/supabase';
 import { convertDBTestToQuizTest } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { QuizTest } from '@/lib/types';
@@ -22,7 +22,7 @@ export default async function SearchPage({ params, searchParams }: Props) {
 
   let tests: QuizTest[] = [];
   try {
-    const dbTests = await getTests();
+    const dbTests = await getTestsForList();
     tests = dbTests.map((db: any) => convertDBTestToQuizTest(db, locale as Locale));
   } catch (e) {
     tests = [];

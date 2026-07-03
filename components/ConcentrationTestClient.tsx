@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, loadAdSense } from '@/lib/adsense';
@@ -65,8 +66,7 @@ export default function ConcentrationTestClient({
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
-  const [similarTestsState, setSimilarTestsState] = useState<any[]>([]);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
 
   // 질문 섞기 함수
   const shuffleQuestions = (questionList: ConcentrationQuestion[]) => {
@@ -89,8 +89,6 @@ export default function ConcentrationTestClient({
   };
 
   // 초기화
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     const shuffled = shuffleQuestions(questions);
     setShuffledQuestions(shuffled);
@@ -140,35 +138,6 @@ export default function ConcentrationTestClient({
     loadAdSense();
   }, []);
 
-  // 유사한 테스트 로드
-  useEffect(() => {
-    const loadTests = async () => {
-      try {
-        const [similarResponse, popularResponse] = await Promise.all([
-          fetch('/api/tests/similar?category=brain&limit=4'),
-          fetch('/api/tests/popular?limit=5')
-        ]);
-
-        if (similarResponse.ok) {
-          const similarData = await similarResponse.json();
-          // API에서 자동으로 현재 테스트를 제외하므로 추가 필터링 불필요
-          setSimilarTestsState(similarData.tests || []);
-        }
-
-        if (popularResponse.ok) {
-          const popularData = await popularResponse.json();
-          // 현재 테스트를 제외하고 필터링
-          const filteredPopularTests = (popularData.tests || []).filter((test: any) => test.slug !== slug);
-          setPopularTestsState(filteredPopularTests);
-        }
-      } catch (error) {
-        console.error('테스트 로드 실패:', error);
-      }
-    };
-
-    loadTests();
-  }, [slug]);
-
   // 3초 지연 로딩 스피너
   useEffect(() => {
     if (showLoadingSpinner) {
@@ -179,22 +148,7 @@ export default function ConcentrationTestClient({
       return () => clearTimeout(timer);
     }
   }, [showLoadingSpinner]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  // 테스트 시작
+// 테스트 시작
   const handleStartTest = () => {
     setShuffledQuestions(shuffleQuestions(questions));
     setDisplayPlayCount(prev => prev + 1);

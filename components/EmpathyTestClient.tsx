@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
@@ -71,8 +72,7 @@ export default function EmpathyTestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<EmpathyQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
@@ -80,8 +80,6 @@ export default function EmpathyTestClient({
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (!started) return;
     
@@ -122,87 +120,14 @@ export default function EmpathyTestClient({
       setShuffledQuestions(shuffled);
     }
   }, [started, questions]);
-
-  // 유사한 테스트 로드
-  useEffect(() => {
-    const loadSimilarTests = async () => {
-      try {
-        const tests = await getTests();
-        const similarTests = tests.filter((test: any) => 
-          test.slug !== slug && 
-          test.tags && Array.isArray(test.tags) &&
-          test.tags.some((tag: any) => 
-            typeof tag === 'string' ? tag.includes('감정') || tag.includes('EQ') || tag.includes('심리') : 
-            Object.values(tag).some((value: any) => 
-              typeof value === 'string' && (value.includes('감정') || value.includes('EQ') || value.includes('심리'))
-            )
-          )
-        ).slice(0, 5).map((test: any) => ({
-          id: test.id,
-          slug: test.slug,
-          title: test.title[locale] || test.title.ko,
-          thumbnail: test.thumbnail,
-          playCount: test.play_count
-        }));
-        setSimilarTestsState(similarTests);
-        } catch (error) {
-        console.error('유사한 테스트 로드 실패:', error);
-        }
-      };
-
-    loadSimilarTests();
-  }, [started, showResult, slug, locale]);
-
-  // 인기 테스트 로드
-  useEffect(() => {
-    const loadPopularTests = async () => {
-      try {
-        const tests = await getTests();
-        const popularTests = tests
-          .filter((test: any) => test.slug !== slug)
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-          .map((test: any) => ({
-            id: test.id,
-            slug: test.slug,
-            title: test.title[locale] || test.title.ko,
-            thumbnail: test.thumbnail,
-            playCount: test.play_count
-          }));
-        setPopularTestsState(popularTests);
-        } catch (error) {
-        console.error('인기 테스트 로드 실패:', error);
-        }
-      };
-
-    if (started || showResult) {
-      loadPopularTests();
-    }
-  }, [started, showResult, slug, locale]);
-
-  // 플레이 카운트 증가
+// 플레이 카운트 증가
   useEffect(() => {
     if (started && !hasIncrementedPlayCount) {
       incrementPlayCount(slug);
       setHasIncrementedPlayCount(true);
     }
   }, [started, hasIncrementedPlayCount, slug]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-    
-  const handleStart = () => {
+const handleStart = () => {
     setStarted(true);
     setCurrentQuestion(0);
     setAnswers([]);

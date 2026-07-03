@@ -7,7 +7,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
@@ -68,8 +69,7 @@ export default function FriendTestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<FriendQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
@@ -77,8 +77,6 @@ export default function FriendTestClient({
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (!started) return;
     
@@ -137,84 +135,7 @@ export default function FriendTestClient({
     
     return () => clearTimeout(timer);
   }, [currentQuestion, showResult]);
-
-  // 유사한 테스트 로드
-  useEffect(() => {
-    const loadSimilarTests = async () => {
-      try {
-        const allTests = await getTests();
-        const filteredTests = allTests.filter((test: any) => {
-          if (test.slug === slug) return false;
-          
-          // tags가 배열인지 확인하고, 아니면 파싱 시도
-          let tagsArray = test.tags;
-          if (typeof tagsArray === 'string') {
-            try {
-              tagsArray = JSON.parse(tagsArray);
-            } catch (e) {
-              console.warn('Tags 파싱 실패:', test.slug, test.tags);
-              return false;
-            }
-          }
-          
-          // 배열이 아니면 스킵
-          if (!Array.isArray(tagsArray)) {
-            return false;
-          }
-          
-          return tagsArray.includes('심리') || tagsArray.includes('관계');
-        });
-        
-        // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
-        const sortedTests = filteredTests
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5);
-        
-        setSimilarTestsState(sortedTests);
-        } catch (error) {
-        console.error('유사한 테스트 로드 실패:', error);
-        }
-      };
-
-    loadSimilarTests();
-  }, [slug]);
-
-  // 인기 테스트 로드
-  useEffect(() => {
-    const loadPopularTests = async () => {
-      try {
-        const allTests = await getTests();
-        const filteredTests = allTests.filter((test: any) => test.slug !== slug);
-        
-        // 플레이 카운트 기준으로 정렬하고 상위 5개 선택
-        const sortedTests = filteredTests
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5);
-        
-        setPopularTestsState(sortedTests);
-      } catch (error) {
-        console.error('인기 테스트 로드 실패:', error);
-      }
-    };
-
-    loadPopularTests();
-  }, [slug]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  const handleStartTest = async () => {
+const handleStartTest = async () => {
     if (!hasIncrementedPlayCount) {
       try {
         await incrementPlayCount(slug);

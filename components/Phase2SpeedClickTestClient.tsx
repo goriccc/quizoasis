@@ -7,7 +7,8 @@ import Image from 'next/image';
 import { Play, Share2 } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests, getLeaderboardTop10, submitLeaderboardScore } from '@/lib/supabase';
+import { incrementPlayCount, getLeaderboardTop10, submitLeaderboardScore } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 import { 
@@ -82,9 +83,7 @@ export default function Phase2SpeedClickTestClient({
   // Others
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
-  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   
   const timerIntervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -293,85 +292,7 @@ export default function Phase2SpeedClickTestClient({
       loadLeaderboard();
     }
   }, [showResult, loadLeaderboard]);
-
-  // Load Latest/Popular Tests
-  useEffect(() => {
-    const loadTests = async () => {
-      try {
-        const allTests = await getTests();
-        
-        // Latest Slugs for Badges
-        const slugs = allTests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-
-        // Similar Tests Logic
-        const currentTest = allTests.find((t: any) => t.slug === slug);
-        const currentTestTags = currentTest && typeof currentTest.tags === 'object' 
-          ? (Array.isArray(currentTest.tags) ? currentTest.tags : (currentTest.tags[locale] || currentTest.tags.ko || []))
-          : [];
-
-        // Fallback tags if test not found
-        const fallbackTags: Record<string, string[]> = {
-          ko: ['챌린지', '게임', '순발력', '동체시력'],
-          en: ['Challenge', 'Game', 'Reflex', 'Dynamic Vision'],
-          ja: ['チャレンジ', 'ゲーム', '反射神経', '動体視力'],
-          'zh-CN': ['挑战', '游戏', '反应速度', '动态视力'],
-          'zh-TW': ['挑戰', '遊戲', '反應速度', '動態視力'],
-          vi: ['Thử thách', 'Trò chơi', 'Phản xạ', 'Thị lực động'],
-          id: ['Tantangan', 'Game', 'Refleks', 'Penglihatan Dinamis']
-        };
-        const tagsToUse = currentTestTags.length > 0 ? currentTestTags : (fallbackTags[locale] || fallbackTags.ko);
-
-        const similarTestsList = allTests
-          .filter((t: any) => t.slug !== slug)
-          .filter((t: any) => {
-             const otherTestTags = typeof t.tags === 'object' 
-              ? (Array.isArray(t.tags) ? t.tags : (t.tags[locale] || t.tags.ko || []))
-              : [];
-             return Array.isArray(tagsToUse) && Array.isArray(otherTestTags) &&
-                    tagsToUse.some((tag: string) => otherTestTags.includes(tag));
-          })
-          .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-          .slice(0, 5)
-          .map((t: any) => ({
-            id: t.id,
-            slug: t.slug,
-            title: t.title[locale] || t.title.ko,
-            thumbnail: t.thumbnail,
-            playCount: t.play_count,
-            badgeType: t.badge_type || null
-          }));
-          
-        const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
-        
-        const popularTestsList = allTests
-          .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5)
-          .map((t: any) => ({
-            id: t.id,
-            slug: t.slug,
-            title: t.title[locale] || t.title.ko,
-            thumbnail: t.thumbnail,
-            playCount: t.play_count,
-            badgeType: t.badge_type || null
-          }));
-
-        setSimilarTestsState(similarTestsList);
-        setPopularTestsState(popularTestsList);
-      } catch (error) {
-        console.error('Error loading tests:', error);
-      }
-    };
-    loadTests();
-    
-    // Initial Ali Products
-    if (locale !== 'ko') {
-      searchAliExpressProducts('trending gadgets', 4, locale).then(setAliProducts).catch(console.error);
-    }
-  }, [slug, locale]);
-
-  // Social Sharing
+// Social Sharing
   const getShareText = () => {
     if (result) {
       const resultTitle = result.title[locale as keyof typeof result.title] || result.title.ko;

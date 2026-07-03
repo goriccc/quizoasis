@@ -184,14 +184,26 @@ export function getQuizLandmarkImageUrl(filename: string): string {
   if (filename.startsWith('http://') || filename.startsWith('https://')) {
     return filename;
   }
+
+  const cdnBase = String(process.env.NEXT_PUBLIC_CDN_BASE_URL || '').trim().replace(/\/+$/, '');
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   if (!supabaseUrl) {
     return getThumbnailUrl(filename);
   }
+
   if (process.env.NEXT_PUBLIC_SUPABASE_QUIZ_IMAGE_RESIZE === '1') {
+    if (cdnBase) {
+      return appendAssetVersion(`${cdnBase}/cdn/render/tests-thumbnails/${encodeURIComponent(
+        filename
+      )}?width=960&height=600&resize=cover&quality=82`);
+    }
     return appendAssetVersion(`${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
       filename
     )}?width=960&height=600&resize=cover&quality=82`);
+  }
+
+  if (cdnBase) {
+    return appendAssetVersion(`${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(filename)}`);
   }
 
   return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}`);

@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon, Lightbulb, X } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
@@ -58,8 +59,7 @@ export default function RealIQTestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<RealIQQuestion[]>([]);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
@@ -100,8 +100,6 @@ export default function RealIQTestClient({
   };
 
   // 문제 섞기
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     const shuffled = [...questions].sort(() => Math.random() - 0.5);
     setShuffledQuestions(shuffled);
@@ -140,90 +138,11 @@ export default function RealIQTestClient({
       loadProducts();
     }
   }, [locale, started, aliProducts.length]);
-
-  // 유사한 테스트와 인기 테스트 로드
-  useEffect(() => {
-    const loadTests = async () => {
-      try {
-        const latestTests = await getTests();
-        
-        if (!latestTests || latestTests.length === 0) {
-          return;
-        }
-
-        // 현재 테스트와 유사한 테스트 찾기
-        const currentTest = latestTests.find((t: any) => t.slug === slug);
-        if (currentTest) {
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = latestTests
-            .filter((t: any) => {
-              if (t.slug === slug) return false;
-              const testTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              // 정확한 태그 매칭 (대소문자 무시)
-              return testTags.some((tag: string) => 
-                currentTestTags.some((currentTag: string) => 
-                  tag.toLowerCase() === currentTag.toLowerCase()
-                )
-              );
-            })
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }))
-            .sort((a: any, b: any) => (b.playCount || 0) - (a.playCount || 0))
-            .slice(0, 5);
-
-          const popularTestsList = latestTests
-            .filter((t: any) => t.slug !== slug)
-            .sort((a: any, b: any) => (b.play_count || 0) - (a.play_count || 0))
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count
-            }));
-
-          setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
-        }
-      } catch (error) {
-        console.error('테스트 로드 실패:', error);
-      }
-    };
-    loadTests();
-  }, [slug, locale]);
-
-  // AdSense 로드
+// AdSense 로드
   useEffect(() => {
     safeLoadAdSense();
   }, []);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  // 힌트 팝업 닫기
+// 힌트 팝업 닫기
   const closeHint = () => {
     setShowHint(false);
   };

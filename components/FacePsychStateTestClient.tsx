@@ -6,13 +6,14 @@ import { useTranslations } from 'next-intl';
 import { Camera, Upload, RotateCcw, Play } from 'lucide-react';
 import Link from 'next/link';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
 import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
 import ProductRecommendations from '@/components/ProductRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import { FaceLoveFortuneResult, calculateFaceLoveFortuneResult, FaceLoveFortuneTestClientProps } from '@/lib/faceLoveFortuneData';
 import { Affect, computeAffectFromLandmarks } from '@/lib/mediapipeAffect';
+import { useLatestTestSlugs } from '@/lib/hooks/useLatestTestSlugs';
 
 export default function FacePsychStateTestClient({ 
   locale, 
@@ -46,6 +47,7 @@ export default function FacePsychStateTestClient({
   const [similarTestsState, setSimilarTestsState] = useState<any[]>([]);
   const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
   const [showImagePreview, setShowImagePreview] = useState(false);
+  const latestTestSlugs = useLatestTestSlugs();
   const [psychologyMessage, setPsychologyMessage] = useState<string>('');
   
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -618,8 +620,6 @@ export default function FacePsychStateTestClient({
   };
 
   // 알리익스프레스 상품 미리 로드 (시작 화면용 - 일반 추천)
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (!started && aliProducts.length === 0) {
       const loadProducts = async () => {
@@ -634,67 +634,7 @@ export default function FacePsychStateTestClient({
       loadProducts();
     }
   }, [locale, started, aliProducts.length]);
-
-  // 유사한 테스트와 인기 테스트 로드 (시작 화면용)
-  useEffect(() => {
-    if (!started && similarTests.length === 0) {
-      const loadTests = async () => {
-        try {
-          const allTests = await getTests();
-          const currentTest = allTests.find((t: any) => t.slug === slug);
-          
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter((t: any) => t.slug !== slug)
-              .slice(0, 5)
-              .map((t: any) => ({
-                id: t.id,
-                slug: t.slug,
-                title: typeof t.title === 'string' ? t.title : (t.title[locale] || t.title.ko),
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests);
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
-            .filter((t: any) => t.slug !== slug)
-            .filter((t: any) => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-            })
-            .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: typeof t.title === 'string' ? t.title : (t.title[locale] || t.title.ko),
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          setSimilarTestsState(similarTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
-        }
-      };
-
-      loadTests();
-    }
-  }, [slug, locale, similarTests, started]);
-
-  // 유사한 테스트와 인기 테스트 로드 (결과 화면용)
+// 유사한 테스트와 인기 테스트 로드 (결과 화면용)
   useEffect(() => {
     if (showResult) {
       const loadTests = async () => {
@@ -1224,22 +1164,7 @@ export default function FacePsychStateTestClient({
     const warningFortune = Array.isArray(warningFortunes) ? warningFortunes[Math.floor(Math.random() * warningFortunes.length)] : warningFortunes;
     return { resultTitle, resultDescription, resultStrengths, resultRecommendations, resultAdvice, whenFortune, styleFortune, warningFortune };
   }, [result, locale]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  // 로딩 스피너, 결과 팝업, 결과 화면, 진행 화면, 시작 화면 — 연애운 테스트와 동일 UI
+// 로딩 스피너, 결과 팝업, 결과 화면, 진행 화면, 시작 화면 — 연애운 테스트와 동일 UI
   if (showLoadingSpinner) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">

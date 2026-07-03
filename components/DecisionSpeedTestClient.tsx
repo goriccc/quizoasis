@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
@@ -67,16 +68,13 @@ export default function DecisionSpeedTestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<DecisionSpeedQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 알리익스프레스 상품 미리 로드
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (!started && aliProducts.length === 0) {
       const loadProducts = async () => {
@@ -101,83 +99,7 @@ export default function DecisionSpeedTestClient({
       loadProducts();
     }
   }, [locale, started, aliProducts.length]);
-
-  // 유사한 테스트와 인기 테스트 로드
-  useEffect(() => {
-    if (similarTests.length === 0) {
-      const loadTests = async () => {
-        try {
-          const allTests = await getTests();
-          const currentTest = allTests.find((t: any) => t.slug === slug);
-          
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter((t: any) => t.slug !== slug)
-              .slice(0, 10)
-              .map((t: any) => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
-            .filter((t: any) => t.slug !== slug)
-            .filter((t: any) => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-            })
-            .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
-          const popularTestsList = allTests
-            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
-        }
-      };
-
-      loadTests();
-    }
-  }, [slug, locale, similarTests]);
-
-  // 로딩 스피너 처리
+// 로딩 스피너 처리
   useEffect(() => {
     if (showLoadingSpinner) {
       const timer = setTimeout(() => {
@@ -187,22 +109,7 @@ export default function DecisionSpeedTestClient({
       return () => clearTimeout(timer);
     }
   }, [showLoadingSpinner]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  // 질문 섞기
+// 질문 섞기
   const shuffleQuestions = (questionList: DecisionSpeedQuestion[]) => {
     const shuffled = [...questionList];
     for (let i = shuffled.length - 1; i > 0; i--) {

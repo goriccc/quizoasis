@@ -26,7 +26,11 @@ export async function GET(
   const url = new URL(request.url);
   const target = getSupabaseRenderImageUrl(supabaseUrl, joined, url.search);
 
-  const upstream = await fetch(target, { method: 'GET', redirect: 'follow' });
+  const upstream = await fetch(target, {
+    method: 'GET',
+    redirect: 'follow',
+    next: { revalidate: 60 * 60 * 24 * 365 },
+  });
   if (!upstream.ok) {
     return new NextResponse(await upstream.text(), { status: upstream.status });
   }

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { headers } from 'next/headers';
-import { getTests } from '@/lib/supabase';
+import { getTestsForList } from '@/lib/supabase';
 import { dummyTests } from '@/lib/dummyData';
 import HomePageClient from '@/components/HomePageClient';
 import { convertDBTestToQuizTest } from '@/lib/utils';
@@ -31,7 +31,7 @@ export default async function HomePage({ params }: Props) {
   
   try {
     // Supabase에서 테스트 데이터 가져오기
-    const dbTests = await getTests();
+    const dbTests = await getTestsForList();
     console.log('📊 Supabase 테스트 개수:', dbTests.length);
     
     if (dbTests.length > 0) {

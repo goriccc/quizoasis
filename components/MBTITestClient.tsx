@@ -7,7 +7,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForMBTI } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
@@ -56,8 +57,7 @@ export default function MBTITestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<MBTIQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
@@ -65,8 +65,6 @@ export default function MBTITestClient({
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (!started) return;
     
@@ -119,88 +117,7 @@ export default function MBTITestClient({
       loadProducts();
     }
   }, [result, locale]);
-
-  // 유사한 테스트와 인기 테스트 로드 (클라이언트 사이드에서 비동기로)
-  useEffect(() => {
-    if (similarTests.length === 0) {
-      const loadTests = async () => {
-        try {
-          const allTests = await getTests();
-          const currentTest = allTests.find((t: any) => t.slug === slug);
-          
-          if (!currentTest) {
-            // 현재 테스트를 찾을 수 없으면 최신 테스트로 대체
-            const latestTests = allTests
-              .filter((t: any) => t.slug !== slug)
-              .slice(0, 10)
-              .map((t: any) => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          // 현재 테스트의 태그 추출
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          // 유사한 테스트 찾기 (같은 태그를 가진 테스트들)
-          const similarTestsList = allTests
-            .filter((t: any) => t.slug !== slug) // 현재 테스트 제외
-            .filter((t: any) => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              // 공통 태그가 있는지 확인
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-            })
-            .sort((a: any, b: any) => Math.random() - 0.5) // 랜덤 정렬
-            .slice(0, 5) // 최대 5개
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          // 인기 테스트 찾기 (유사한 테스트와 중복되지 않는 다른 테스트들)
-          const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
-          const popularTestsList = allTests
-            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug)) // 현재 테스트와 유사한 테스트 제외
-            .sort((a: any, b: any) => b.play_count - a.play_count) // 플레이 수 기준 정렬
-            .slice(0, 5) // 최대 5개
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
-        }
-      };
-
-      loadTests();
-    }
-  }, [slug, locale, similarTests]);
-
-  // 3초 지연 로딩 스피너 효과
+// 3초 지연 로딩 스피너 효과
   useEffect(() => {
     if (showLoadingSpinner) {
       const timer = setTimeout(() => {
@@ -237,25 +154,7 @@ export default function MBTITestClient({
     
     return () => clearTimeout(timer);
   }, [started, showResult, showLoadingSpinner, showResultPopup]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-
-
-
-  // 질문 섞기 함수 (전체 10개 완전 랜덤)
+// 질문 섞기 함수 (전체 10개 완전 랜덤)
   const shuffleQuestions = (questionList: MBTIQuestion[]) => {
     const shuffled = [...questionList];
     

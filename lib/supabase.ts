@@ -89,15 +89,14 @@ export async function getTestsForList() {
 }
 
 /**
- * 테스트 목록 조회
+ * 테스트 목록 조회 (전체 row — 서버 전용 권장, 클라이언트는 API/훅 사용)
  */
-export async function getTests() {
+let clientTestsCache: { data: unknown[]; time: number } | null = null;
+let clientTestsInflight: Promise<unknown[]> | null = null;
+const CLIENT_TESTS_CACHE_MS = 60_000;
+
+async function fetchTestsFromSupabase() {
   try {
-    // Supabase 클라이언트는 이미 8초 타임아웃이 설정되어 있음
-    // AbortSignal.timeout으로 자동 처리되므로 Promise.race 불필요
-    
-    // 전체 테스트 조회 (먼저 실행)
-    // updated_at을 우선으로 정렬하고, 없으면 created_at 사용
     const { data, error } = await supabase
       .from('tests')
       .select('*');
@@ -109,7 +108,6 @@ export async function getTests() {
       return getFallbackTests();
     }
 
-    // 데이터가 없거나 빈 배열인 경우 확인
     if (!data || !Array.isArray(data)) {
       if (process.env.NODE_ENV === 'development') {
         console.error('Invalid data format from Supabase');
@@ -117,27 +115,23 @@ export async function getTests() {
       return getFallbackTests();
     }
 
-    // 특정 테스트들이 누락되었는지 확인 (조건부 개별 조회)
     const specificSlugs = ['honest-facial-evaluation', 'face-psych-state', 'face-occupations'];
-    const existingSlugs = new Set(data.map((t: any) => t?.slug).filter(Boolean));
-    const missingSlugs = specificSlugs.filter(slug => !existingSlugs.has(slug));
+    const existingSlugs = new Set(data.map((t: { slug?: string }) => t?.slug).filter(Boolean));
+    const missingSlugs = specificSlugs.filter((slug) => !existingSlugs.has(slug));
 
-    // 누락된 slug가 있을 때만 개별 조회 (병렬 실행으로 최적화)
     if (missingSlugs.length > 0) {
-      const specificQueries = missingSlugs.map(slug =>
-        supabase
-          .from('tests')
-          .select('*')
-          .eq('slug', slug)
-          .single()
+      const specificQueries = missingSlugs.map((slug) =>
+        supabase.from('tests').select('*').eq('slug', slug).single()
       );
 
-      // 병렬 실행으로 성능 최적화 (순차 실행 대비 약 3배 빠름)
       const specificResults = await Promise.allSettled(specificQueries);
-      
-      specificResults.forEach((result, index) => {
+
+      specificResults.forEach((result) => {
         if (result.status === 'fulfilled') {
-          const { data: specificData, error: specificError } = result.value as any;
+          const { data: specificData, error: specificError } = result.value as {
+            data?: unknown;
+            error?: unknown;
+          };
           if (!specificError && specificData) {
             data.push(specificData);
           }
@@ -145,31 +139,11 @@ export async function getTests() {
       });
     }
 
-    // 클라이언트에서 정렬: created_at 우선 (DB에 추가된 순서)
-    // updated_at은 play_count 증가 시 변경되므로 정렬에 사용하지 않음
-    if (data && Array.isArray(data)) {
-      data.sort((a: any, b: any) => {
-        // created_at을 타임스탬프로 변환
-        const getTime = (test: any) => {
-          if (test.created_at) {
-            return new Date(test.created_at).getTime();
-          }
-          return 0;
-        };
-        
-        const aTime = getTime(a);
-        const bTime = getTime(b);
-        return bTime - aTime; // 내림차순 (최신이 먼저)
-      });
-      
-      // 디버깅 로그 제거 (필요시 주석 해제)
-      // if (process.env.NODE_ENV === 'development' && data.length > 0) {
-      //   console.log('📊 테스트 정렬 결과 (상위 5개):');
-      //   data.slice(0, 5).forEach((test: any, index: number) => {
-      //     console.log(`${index + 1}. ${test.slug} - updated_at: ${test.updated_at || 'NULL'}, created_at: ${test.created_at || 'NULL'}`);
-      //   });
-      // }
-    }
+    data.sort((a: { created_at?: string }, b: { created_at?: string }) => {
+      const getTime = (test: { created_at?: string }) =>
+        test.created_at ? new Date(test.created_at).getTime() : 0;
+      return getTime(b) - getTime(a);
+    });
 
     return data;
   } catch (error) {
@@ -178,6 +152,25 @@ export async function getTests() {
     }
     return getFallbackTests();
   }
+}
+
+export async function getTests() {
+  if (typeof window !== 'undefined') {
+    const now = Date.now();
+    if (clientTestsCache && now - clientTestsCache.time < CLIENT_TESTS_CACHE_MS) {
+      return clientTestsCache.data;
+    }
+    if (!clientTestsInflight) {
+      clientTestsInflight = fetchTestsFromSupabase().finally(() => {
+        clientTestsInflight = null;
+      });
+    }
+    const data = (await clientTestsInflight) as unknown[];
+    clientTestsCache = { data, time: Date.now() };
+    return data;
+  }
+
+  return fetchTestsFromSupabase();
 }
 
 function getFallbackTests() {

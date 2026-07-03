@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
@@ -59,8 +60,7 @@ export default function CommunicationStyleTestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<CommunicationStyleQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
@@ -68,8 +68,6 @@ export default function CommunicationStyleTestClient({
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 답변 순서 섞기 (질문이 바뀔 때마다)
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (!started) return;
     
@@ -143,98 +141,7 @@ export default function CommunicationStyleTestClient({
       loadProducts();
     }
   }, [result, locale]);
-
-  // 유사한 테스트와 인기 테스트 로드
-  useEffect(() => {
-    if (similarTests.length === 0 && similarTestsState.length === 0) {
-      const loadTests = async () => {
-        try {
-          const allTests = await getTests();
-          const currentTest = allTests.find((t: any) => t.slug === slug);
-          
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter((t: any) => t.slug !== slug)
-              .slice(0, 10)
-              .map((t: any) => ({
-                id: t.id,
-                slug: t.slug,
-                title: t.title[locale] || t.title.ko,
-                thumbnail: t.thumbnail,
-                playCount: t.play_count
-              }));
-            
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-
-          const currentTestTags = typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-            ? currentTest.tags[locale] || currentTest.tags.ko || []
-            : currentTest.tags || [];
-
-          const similarTestsList = allTests
-            .filter((t: any) => t.slug !== slug)
-            .filter((t: any) => {
-              const otherTestTags = typeof t.tags === 'object' && !Array.isArray(t.tags)
-                ? t.tags[locale] || t.tags.ko || []
-                : t.tags || [];
-              
-              return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-            })
-            .slice(0, 10)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          // 고정된 셔플 순서 (slug 기반)
-          const shuffled = [...similarTestsList].sort((a, b) => {
-            const seedA = slug + a.slug;
-            const seedB = slug + b.slug;
-            let hashA = 0, hashB = 0;
-            for (let i = 0; i < seedA.length; i++) {
-              hashA = ((hashA << 5) - hashA) + seedA.charCodeAt(i);
-              hashA = hashA & hashA;
-            }
-            for (let i = 0; i < seedB.length; i++) {
-              hashB = ((hashB << 5) - hashB) + seedB.charCodeAt(i);
-              hashB = hashB & hashB;
-            }
-            return hashA - hashB;
-          });
-
-          const similarTestSlugs = new Set(shuffled.slice(0, 5).map((t: any) => t.slug));
-          const popularTestsList = allTests
-            .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map((t: any) => ({
-              id: t.id,
-              slug: t.slug,
-              title: t.title[locale] || t.title.ko,
-              thumbnail: t.thumbnail,
-              playCount: t.play_count,
-              badgeType: t.badge_type || null
-            }));
-
-          setSimilarTestsState(shuffled.slice(0, 5));
-          setPopularTestsState(popularTestsList);
-        } catch (error) {
-          console.error('테스트 로드 실패:', error);
-        }
-      };
-
-      loadTests();
-    }
-  }, [slug, locale, similarTests.length, similarTestsState.length]);
-
-  // 3초 지연 로딩 스피너
+// 3초 지연 로딩 스피너
   useEffect(() => {
     if (showLoadingSpinner) {
       const timer = setTimeout(() => {
@@ -244,22 +151,7 @@ export default function CommunicationStyleTestClient({
       return () => clearTimeout(timer);
     }
   }, [showLoadingSpinner]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  // 질문 섞기 함수
+// 질문 섞기 함수
   const shuffleQuestions = (questionList: CommunicationStyleQuestion[]) => {
     const shuffled = [...questionList];
     for (let i = shuffled.length - 1; i > 0; i--) {

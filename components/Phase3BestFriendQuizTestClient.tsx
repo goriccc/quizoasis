@@ -20,7 +20,8 @@ import Image from 'next/image';
 import { Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 
 type Phase = 'creatorIntro' | 'creatorRun' | 'creatorDone' | 'friendIntro' | 'friendRun' | 'friendResult';
@@ -91,14 +92,11 @@ function Phase3BestFriendQuizTestClientInner({
   const [optionIndexMapping, setOptionIndexMapping] = useState<Record<number, Record<number, number>>>({});
 
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [friendReveal, setFriendReveal] = useState(false);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
-  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   const isFriend =
     phase === 'friendIntro' || phase === 'friendRun' || friendReveal || showLoadingSpinner || showResultPopup;
   const hostName = isFriend && friendPayload ? friendPayload.n : creatorName.trim() || t('defaultHostName');
@@ -141,89 +139,6 @@ function Phase3BestFriendQuizTestClientInner({
     }, 100);
     return () => clearTimeout(timer);
   }, [started, showResultPopup, phase]);
-
-  useEffect(() => {
-    if (similarTests.length === 0) {
-      const loadTests = async () => {
-        try {
-          const allTests = await getTests();
-          const currentTest = allTests.find((x: any) => x.slug === slug);
-          if (!currentTest) {
-            const latestTests = allTests
-              .filter((x: any) => x.slug !== slug)
-              .slice(0, 10)
-              .map((x: any) => ({
-                id: x.id,
-                slug: x.slug,
-                title: x.title[locale] || x.title.ko,
-                thumbnail: x.thumbnail,
-                playCount: x.play_count,
-              }));
-            setSimilarTestsState(latestTests.slice(0, 5));
-            setPopularTestsState(latestTests.slice(5, 10));
-            return;
-          }
-          const currentTestTags =
-            typeof currentTest.tags === 'object' && !Array.isArray(currentTest.tags)
-              ? currentTest.tags[locale] || currentTest.tags.ko || []
-              : currentTest.tags || [];
-          const similarTestsList = allTests
-            .filter((x: any) => x.slug !== slug)
-            .filter((x: any) => {
-              const otherTags =
-                typeof x.tags === 'object' && !Array.isArray(x.tags)
-                  ? x.tags[locale] || x.tags.ko || []
-                  : x.tags || [];
-              return (
-                Array.isArray(currentTestTags) &&
-                Array.isArray(otherTags) &&
-                currentTestTags.some((tag: string) => otherTags.includes(tag))
-              );
-            })
-            .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-            .slice(0, 5)
-            .map((x: any) => ({
-              id: x.id,
-              slug: x.slug,
-              title: x.title[locale] || x.title.ko,
-              thumbnail: x.thumbnail,
-              playCount: x.play_count,
-              badgeType: x.badge_type || null,
-            }));
-          const similarSlugs = new Set(similarTestsList.map((x: any) => x.slug));
-          const popularTestsList = allTests
-            .filter((x: any) => x.slug !== slug && !similarSlugs.has(x.slug))
-            .sort((a: any, b: any) => b.play_count - a.play_count)
-            .slice(0, 5)
-            .map((x: any) => ({
-              id: x.id,
-              slug: x.slug,
-              title: x.title[locale] || x.title.ko,
-              thumbnail: x.thumbnail,
-              playCount: x.play_count,
-              badgeType: x.badge_type || null,
-            }));
-          setSimilarTestsState(similarTestsList);
-          setPopularTestsState(popularTestsList);
-        } catch (e) {
-          console.error(e);
-        }
-      };
-      loadTests();
-    }
-  }, [slug, locale, similarTests]);
-
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        setLatestTestSlugs(tests.slice(0, 15).map((x: any) => x.slug).filter(Boolean));
-      } catch {
-        /* noop */
-      }
-    };
-    loadLatestSlugs();
-  }, []);
 
   useEffect(() => {
     if (!showLoadingSpinner || friendReveal) return;

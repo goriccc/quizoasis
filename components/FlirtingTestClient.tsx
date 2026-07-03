@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
@@ -64,8 +65,7 @@ export default function FlirtingTestClient({
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [products, setProducts] = useState<any[]>([]);
   const [loadingProducts, setLoadingProducts] = useState(false);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
@@ -77,8 +77,6 @@ export default function FlirtingTestClient({
 
 
   // 질문 셔플 초기화
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (questions.length > 0) {
       const shuffled = shuffleQuestions(questions);
@@ -113,49 +111,7 @@ export default function FlirtingTestClient({
       return () => clearTimeout(timer);
     }
   }, [showLoadingSpinner]);
-
-  // 유사한 테스트와 인기 테스트 로드
-  useEffect(() => {
-    const loadTests = async () => {
-      try {
-        const allTests = await getTests();
-        const otherTests = allTests.filter((test: any) => test.slug !== slug);
-        
-        // 유사한 테스트 (같은 카테고리)
-        const similar = otherTests
-          .filter((test: any) => test.category === 'love')
-          .sort((a: any, b: any) => b.playCount - a.playCount)
-          .slice(0, 5);
-        setSimilarTestsState(similar);
-        
-        // 인기 테스트
-        const popular = otherTests
-          .sort((a: any, b: any) => b.playCount - a.playCount)
-          .slice(0, 5);
-        setPopularTestsState(popular);
-      } catch (error) {
-        console.error('테스트 로드 실패:', error);
-      }
-    };
-    
-    loadTests();
-  }, [slug]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  // 테스트 시작
+// 테스트 시작
   const handleStartTest = async () => {
     setStarted(true);
     setCurrentQuestion(0);

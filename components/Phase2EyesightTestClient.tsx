@@ -7,7 +7,8 @@ import Image from 'next/image';
 import { Play, Share2, ArrowUp, ArrowDown, ArrowLeft, ArrowRight } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
 import { Phase2EyesightResult, calculatePhase2EyesightResult } from '@/lib/phase2EyesightTestData';
@@ -77,9 +78,7 @@ export default function Phase2EyesightTestClient({
   // Others
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
-  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [aliProducts, setAliProducts] = useState<any[]>([]);
 
   // Generate Landolt C based on Level
@@ -308,92 +307,7 @@ export default function Phase2EyesightTestClient({
     setShowResult(true);
     window.scrollTo(0, 0);
   };
-
-  // Load Latest/Popular Tests
-  useEffect(() => {
-    const loadTests = async () => {
-      try {
-        const allTests = await getTests();
-        
-        // Latest Slugs for Badges
-        const slugs = allTests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-
-        // Similar Tests Logic
-        const currentTest = allTests.find((t: any) => t.slug === slug);
-        let currentTestTags: string[] = [];
-        
-        if (currentTest && typeof currentTest.tags === 'object') {
-          if (Array.isArray(currentTest.tags)) {
-            currentTestTags = currentTest.tags;
-          } else {
-            // Handle JSONB structure
-            const localeKey = locale === 'zh-CN' ? 'zh' : locale;
-            currentTestTags = currentTest.tags[localeKey] || currentTest.tags.ko || currentTest.tags[Object.keys(currentTest.tags)[0]] || [];
-          }
-        }
-        
-        // Fallback tags if empty
-        if (!currentTestTags || currentTestTags.length === 0) {
-          currentTestTags = ['챌린지', '게임'];
-        }
-
-        const similarTestsList = allTests
-          .filter((t: any) => t.slug !== slug)
-          .filter((t: any) => {
-            let otherTestTags: string[] = [];
-            if (typeof t.tags === 'object') {
-              if (Array.isArray(t.tags)) {
-                otherTestTags = t.tags;
-              } else {
-                const localeKey = locale === 'zh-CN' ? 'zh' : locale;
-                otherTestTags = t.tags[localeKey] || t.tags.ko || t.tags[Object.keys(t.tags)[0]] || [];
-              }
-            }
-            return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                   currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-          })
-          .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-          .slice(0, 5)
-          .map((t: any) => ({
-            id: t.id,
-            slug: t.slug,
-            title: typeof t.title === 'object' ? (t.title[locale] || t.title.ko) : t.title,
-            thumbnail: t.thumbnail,
-            playCount: t.play_count,
-            badgeType: t.badge_type || null
-          }));
-          
-        const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
-        
-        const popularTestsList = allTests
-          .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5)
-          .map((t: any) => ({
-            id: t.id,
-            slug: t.slug,
-            title: typeof t.title === 'object' ? (t.title[locale] || t.title.ko) : t.title,
-            thumbnail: t.thumbnail,
-            playCount: t.play_count,
-            badgeType: t.badge_type || null
-          }));
-
-        setSimilarTestsState(similarTestsList);
-        setPopularTestsState(popularTestsList);
-      } catch (error) {
-        console.error('Error loading tests:', error);
-      }
-    };
-    loadTests();
-    
-    // Initial Ali Products
-    if (locale !== 'ko') {
-      searchAliExpressProducts('trending gadgets', 4, locale).then(setAliProducts).catch(console.error);
-    }
-  }, [slug, locale]);
-
-  // Social Sharing
+// Social Sharing
   const getShareText = () => {
     if (result) {
       const dataLocale = locale === 'zh-CN' ? 'zh' : locale;

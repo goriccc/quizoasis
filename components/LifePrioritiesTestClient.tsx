@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
@@ -63,14 +64,11 @@ export default function LifePrioritiesTestClient({
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<LifePrioritiesQuestion[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [similarTestsData, setSimilarTestsData] = useState<Array<{
-    id: number;
-    slug: string;
-    title: string;
-    thumbnail: string;
-    playCount: number;
-    badgeType?: 'popular' | 'hot' | null;
-  }>>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
+  const similarTestsData = useMemo(
+    () => [...similarTestsState, ...popularTestsState],
+    [similarTestsState, popularTestsState]
+  );
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
@@ -81,8 +79,6 @@ export default function LifePrioritiesTestClient({
   };
 
   // 질문 셔플 초기화
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (questions.length > 0) {
       const shuffled = shuffleQuestions(questions);
@@ -435,48 +431,7 @@ export default function LifePrioritiesTestClient({
       }
     }
   }, [answers, questions.length, result, results, slug]);
-  
-  // 유사한 테스트 로드
-  useEffect(() => {
-    const loadTests = async () => {
-      try {
-        const tests = await getTests();
-        const filteredTests = tests
-          .filter((test: any) => test.slug !== slug)
-          .sort((a: any, b: any) => b.playCount - a.playCount)
-          .slice(0, 10)
-          .map((t: any) => ({
-            id: t.id,
-            slug: t.slug,
-            title: typeof t.title === 'string' ? t.title : (t.title[locale] || t.title.ko),
-            thumbnail: t.thumbnail,
-            playCount: t.playCount || 0,
-            badgeType: t.badgeType || null
-          }));
-        setSimilarTestsData(filteredTests);
-      } catch (error) {
-        console.error('Failed to load similar tests:', error);
-      }
-    };
-
-    loadTests();
-  }, [slug, locale]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  // 시작 화면
+// 시작 화면
   if (!started) {
     return (
       <div className="min-h-screen bg-white">

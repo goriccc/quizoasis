@@ -7,7 +7,8 @@ import Image from 'next/image';
 import { Share2, Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { getLatestTestSlugs } from '@/lib/latestTests';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
@@ -70,11 +71,8 @@ export default function Phase2ReflexTestClient({
   
   // Data State
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [aliProducts, setAliProducts] = useState<any[]>([]);
-  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   // Refs
   const gameAreaRef = useRef<HTMLDivElement>(null);
 
@@ -83,144 +81,7 @@ export default function Phase2ReflexTestClient({
     incrementPlayCount(slug).catch(console.error);
     setDisplayPlayCount(prev => prev + 1);
   }, [slug]);
-
-  // Load Latest/Popular Tests
-  useEffect(() => {
-    const loadTests = async () => {
-      try {
-        const allTests = await getTests();
-        
-        // Latest Slugs for Badges
-        const slugs = allTests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-
-        // Similar Tests Logic
-        const currentTest = allTests.find((t: any) => t.slug === slug);
-        
-        // 태그 파싱 (더 강력한 로직)
-        let currentTestTags: string[] = [];
-        if (currentTest && currentTest.tags) {
-          if (Array.isArray(currentTest.tags)) {
-            currentTestTags = currentTest.tags;
-          } else if (typeof currentTest.tags === 'object') {
-            // JSONB 객체인 경우 (예: {ko: [...], en: [...]})
-            currentTestTags = currentTest.tags[locale] || currentTest.tags.ko || 
-                             (currentTest.tags['zh-CN'] && currentTest.tags.zh) || 
-                             Object.values(currentTest.tags)[0] || [];
-          }
-        }
-        
-        // Fallback: 현재 테스트를 찾지 못했거나 태그가 없으면 기본 태그 사용
-        if (currentTestTags.length === 0) {
-          // phase2_reflex_test의 기본 태그
-          currentTestTags = locale === 'ko' 
-            ? ['챌린지', '게임', '반응속도', '순발력']
-            : locale === 'en'
-            ? ['Challenge', 'Game', 'Reaction Speed', 'Reflexes']
-            : ['챌린지', '게임', '반응속도', '순발력']; // 기본값
-        }
-        
-        // 디버깅: 현재 테스트 및 태그 확인
-        if (process.env.NODE_ENV === 'development') {
-          console.log('🔍 Phase2ReflexTest - Current slug:', slug);
-          console.log('🔍 Phase2ReflexTest - Current test found?', !!currentTest);
-          if (currentTest) {
-            console.log('🔍 Phase2ReflexTest - Current test.tags (raw):', currentTest.tags);
-            console.log('🔍 Phase2ReflexTest - Current test.tags type:', typeof currentTest.tags);
-          }
-          console.log('🔍 Phase2ReflexTest - Current test tags (parsed):', currentTestTags);
-        }
-
-
-        const similarTestsList = allTests
-          .filter((t: any) => t.slug !== slug)
-          .filter((t: any) => {
-             // 태그 파싱 (동일한 로직)
-             let otherTestTags: string[] = [];
-             if (t.tags) {
-               if (Array.isArray(t.tags)) {
-                 otherTestTags = t.tags;
-               } else if (typeof t.tags === 'object') {
-                 otherTestTags = t.tags[locale] || t.tags.ko || 
-                                (t.tags['zh-CN'] && t.tags.zh) || 
-                                Object.values(t.tags)[0] || [];
-               }
-             }
-             return Array.isArray(currentTestTags) && Array.isArray(otherTestTags) &&
-                    currentTestTags.length > 0 && otherTestTags.length > 0 &&
-                    currentTestTags.some((tag: string) => otherTestTags.includes(tag));
-          })
-          .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-          .slice(0, 5)
-          .map((t: any) => ({
-            id: t.id,
-            slug: t.slug,
-            title: t.title[locale] || t.title.ko,
-            thumbnail: t.thumbnail,
-            playCount: t.play_count,
-            badgeType: t.badge_type || null
-          }));
-        
-        // 디버깅: Similar Tests 결과
-        if (process.env.NODE_ENV === 'development') {
-          console.log('🔍 Phase2ReflexTest - Similar tests list length:', similarTestsList.length);
-          console.log('🔍 Phase2ReflexTest - Similar tests slugs:', similarTestsList.map((t: any) => t.slug));
-          
-          const colorSurvivalTest = allTests.find((t: any) => t.slug === 'phase2_color_survival_test');
-          if (colorSurvivalTest) {
-            let colorSurvivalTags: string[] = [];
-            if (colorSurvivalTest.tags) {
-              if (Array.isArray(colorSurvivalTest.tags)) {
-                colorSurvivalTags = colorSurvivalTest.tags;
-              } else if (typeof colorSurvivalTest.tags === 'object') {
-                colorSurvivalTags = colorSurvivalTest.tags[locale] || colorSurvivalTest.tags.ko || 
-                                   (colorSurvivalTest.tags['zh-CN'] && colorSurvivalTest.tags.zh) || 
-                                   Object.values(colorSurvivalTest.tags)[0] || [];
-              }
-            }
-            console.log('🔍 Phase2ReflexTest - Color Survival test tags:', colorSurvivalTags);
-            const hasCommonTag = Array.isArray(currentTestTags) && Array.isArray(colorSurvivalTags) &&
-                                 currentTestTags.length > 0 && colorSurvivalTags.length > 0 &&
-                                 currentTestTags.some((tag: string) => colorSurvivalTags.includes(tag));
-            console.log('🔍 Phase2ReflexTest - Has common tag?', hasCommonTag);
-            if (hasCommonTag) {
-              console.log('🔍 Phase2ReflexTest - Common tags:', currentTestTags.filter(tag => colorSurvivalTags.includes(tag)));
-            }
-            const isInSimilarList = similarTestsList.some((t: any) => t.slug === 'phase2_color_survival_test');
-            console.log('🔍 Phase2ReflexTest - Is Color Survival in similar list?', isInSimilarList);
-          }
-        }
-          
-        const similarTestSlugs = new Set(similarTestsList.map((t: any) => t.slug));
-        
-        const popularTestsList = allTests
-          .filter((t: any) => t.slug !== slug && !similarTestSlugs.has(t.slug))
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5)
-          .map((t: any) => ({
-            id: t.id,
-            slug: t.slug,
-            title: t.title[locale] || t.title.ko,
-            thumbnail: t.thumbnail,
-            playCount: t.play_count,
-            badgeType: t.badge_type || null
-          }));
-
-        setSimilarTestsState(similarTestsList);
-        setPopularTestsState(popularTestsList);
-      } catch (error) {
-        console.error('Error loading tests:', error);
-      }
-    };
-    loadTests();
-    
-    // Initial Ali Products
-    if (locale !== 'ko') {
-        searchAliExpressProducts('trending gadgets', 4, locale).then(setAliProducts).catch(console.error);
-    }
-  }, [slug, locale]);
-
-  // AdSense & AliExpress
+// AdSense & AliExpress
   useEffect(() => {
     if (showResult || showLoadingSpinner || showResultPopup) {
       setTimeout(() => {

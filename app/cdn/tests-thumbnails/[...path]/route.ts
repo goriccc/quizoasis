@@ -27,9 +27,9 @@ export async function GET(
   const target = getSupabasePublicObjectUrl(supabaseUrl, joined, url.search);
 
   const upstream = await fetch(target, {
-    // Supabase public bucket should not require cookies/creds.
     method: 'GET',
     redirect: 'follow',
+    next: { revalidate: 60 * 60 * 24 * 365 },
   });
 
   if (!upstream.ok) {

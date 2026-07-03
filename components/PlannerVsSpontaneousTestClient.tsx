@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Play } from 'lucide-react';
 import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
-import { incrementPlayCount, getTests } from '@/lib/supabase';
+import { incrementPlayCount } from '@/lib/supabase';
+import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
@@ -62,16 +63,13 @@ export default function PlannerVsSpontaneousTestClient({
   const [showResult, setShowResult] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<PlannerVsSpontaneousQuestion[]>(questions);
   const [displayPlayCount, setDisplayPlayCount] = useState(playCount);
-  const [similarTestsState, setSimilarTestsState] = useState(similarTests);
-  const [popularTestsState, setPopularTestsState] = useState<any[]>([]);
+  const { similarTestsState, popularTestsState, latestTestSlugs } = useTestRecommendations({ slug, locale });
   const [showLoadingSpinner, setShowLoadingSpinner] = useState(false);
   const [showResultPopup, setShowResultPopup] = useState(false);
   const [aliProducts, setAliProducts] = useState<any[]>([]);
   const [hasIncrementedPlayCount, setHasIncrementedPlayCount] = useState(false);
 
   // 알리익스프레스 상품 미리 로드
-    const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
-
   useEffect(() => {
     if (!started && aliProducts.length === 0) {
       const loadProducts = async () => {
@@ -96,79 +94,7 @@ export default function PlannerVsSpontaneousTestClient({
       loadProducts();
     }
   }, [locale, started, aliProducts.length]);
-
-  // 유사한 테스트 로드
-  useEffect(() => {
-    const loadSimilarTests = async () => {
-      try {
-        const allTests = await getTests();
-        const filteredTests = allTests.filter((test: any) => {
-          if (test.slug === slug) return false;
-          
-          let tagsArray = test.tags;
-          if (typeof tagsArray === 'string') {
-            try {
-              tagsArray = JSON.parse(tagsArray);
-            } catch (e) {
-              return false;
-            }
-          }
-          
-          if (!Array.isArray(tagsArray)) {
-            return false;
-          }
-          
-          return tagsArray.includes('성격') || tagsArray.includes('성향');
-        });
-        
-        const sortedTests = filteredTests
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5);
-        
-        setSimilarTestsState(sortedTests);
-      } catch (error) {
-        console.error('유사한 테스트 로드 실패:', error);
-      }
-    };
-
-    loadSimilarTests();
-  }, [slug]);
-
-  // 인기 테스트 로드
-  useEffect(() => {
-    const loadPopularTests = async () => {
-      try {
-        const allTests = await getTests();
-        const filteredTests = allTests.filter((test: any) => test.slug !== slug);
-        
-        const sortedTests = filteredTests
-          .sort((a: any, b: any) => b.play_count - a.play_count)
-          .slice(0, 5);
-        
-        setPopularTestsState(sortedTests);
-      } catch (error) {
-        console.error('인기 테스트 로드 실패:', error);
-      }
-    };
-
-    loadPopularTests();
-  }, [slug]);
-  // 최신 테스트 slug 목록 로드
-  useEffect(() => {
-    const loadLatestSlugs = async () => {
-      try {
-        const tests = await getTests();
-        const slugs = tests.slice(0, 15).map((t: any) => t.slug).filter(Boolean);
-        setLatestTestSlugs(slugs);
-      } catch (error) {
-        console.error('Error loading latest test slugs:', error);
-      }
-    };
-    loadLatestSlugs();
-  }, []);
-
-
-  const handleStartTest = async () => {
+const handleStartTest = async () => {
     if (!hasIncrementedPlayCount) {
       try {
         await incrementPlayCount(slug);
