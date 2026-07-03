@@ -56,6 +56,8 @@ const nextConfig = {
     NEXT_PUBLIC_BUILD_TIME: getBuildTime(),
   },
   images: {
+    loader: 'custom',
+    loaderFile: './lib/imageLoader.ts',
     formats: ['image/avif', 'image/webp'],
     remotePatterns: getImageRemotePatterns(),
     minimumCacheTTL: 60 * 60 * 24 * 30,

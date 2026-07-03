@@ -11,7 +11,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play } from 'lucide-react';
-import { getThumbnailUrl, getQuizLandmarkImageUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, getQuizLandmarkImageUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
@@ -240,6 +240,8 @@ export default function Phase3WorldLandmarkCityQuizTestClient({
     }
     
     setAnswerFeedback(null);
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     setStarted(true);
     window.scrollTo(0, 0);
   };

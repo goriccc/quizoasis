@@ -166,6 +166,50 @@ export function getThumbnailUrl(thumbnail: string): string {
   return getSupabaseThumbnailUrl(thumbnail);
 }
 
+/** 질문 데이터에서 Storage 이미지 파일명 추출 */
+export function extractImageFilenamesFromQuestions(questions: unknown[]): string[] {
+  const filenames: string[] = [];
+
+  for (const item of questions) {
+    if (!item || typeof item !== 'object') continue;
+    const question = item as Record<string, unknown>;
+
+    if (typeof question.image === 'string' && question.image) {
+      filenames.push(question.image);
+    }
+
+    const options = question.options;
+    if (!Array.isArray(options)) continue;
+
+    for (const option of options) {
+      if (!option || typeof option !== 'object') continue;
+      const image = (option as Record<string, unknown>).image;
+      if (typeof image === 'string' && image) {
+        filenames.push(image);
+      }
+    }
+  }
+
+  return filenames;
+}
+
+/** 진행 화면 이미지를 미리 로드해 CDN/브라우저 캐시를 워밍 */
+export function prefetchStorageImages(filenames: Iterable<string>) {
+  if (typeof window === 'undefined') return;
+
+  const seen = new Set<string>();
+  for (const filename of filenames) {
+    if (!filename || filename.startsWith('http://') || filename.startsWith('https://') || seen.has(filename)) {
+      continue;
+    }
+    seen.add(filename);
+
+    const img = new window.Image();
+    img.decoding = 'async';
+    img.src = getThumbnailUrl(filename);
+  }
+}
+
 /**
  * OG/Twitter 공유 이미지 전용 — 고해상도(1200x630)로 리사이즈(선택).
  * NEXT_PUBLIC_SUPABASE_OG_IMAGE_RESIZE=1 이고 Supabase Image Transformation을 쓰는 경우에만 활성화하세요.

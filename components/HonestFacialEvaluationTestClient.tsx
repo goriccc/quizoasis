@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Camera, Upload, RotateCcw, Play } from 'lucide-react';
 import Link from 'next/link';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
@@ -668,6 +668,8 @@ export default function HonestFacialEvaluationTestClient({
     }
   }, [showLoadingSpinner]);
 const handleStartTest = async () => {
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     setStarted(true);
     await incrementPlayCount(slug);
     window.scrollTo({ top: 0, behavior: 'smooth' });

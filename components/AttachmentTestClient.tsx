@@ -6,7 +6,7 @@ import { AttachmentQuestion, AttachmentResult, calculateAttachmentResult } from 
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
@@ -145,6 +145,9 @@ const handleStartTest = async () => {
         console.error('플레이 카운트 증가 실패:', error);
       }
     }
+    
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     
     setStarted(true);
     window.scrollTo(0, 0);

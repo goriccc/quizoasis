@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Camera, Upload, RotateCcw, AlertCircle, CheckCircle, Play } from 'lucide-react';
 import Link from 'next/link';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
@@ -116,6 +116,8 @@ export default function FaceFortuneTestClient({
 
   // 테스트 시작
   const handleStartTest = async () => {
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     setStarted(true);
     await incrementPlayCount(slug);
     // 진행 화면 맨 처음으로 스크롤

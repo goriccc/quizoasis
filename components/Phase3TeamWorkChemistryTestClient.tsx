@@ -21,7 +21,7 @@ import {
   type TeamRoleKey,
   ROLE_ORDER,
 } from '@/lib/phase3TeamWorkChemistryData';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
@@ -167,6 +167,8 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
     setCurrentQuestion(0);
     setShuffledOptionsMap({});
     setOptionIndexMapping({});
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     setStarted(true);
     setDisplayPlayCount((p) => p + 1);
     if (!hasIncrementedPlayCount) {

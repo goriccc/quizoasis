@@ -6,7 +6,7 @@ import { MensaExtremeQuestion, MensaExtremeResult, calculateMensaExtremeResult }
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon, Lightbulb, X } from 'lucide-react';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
@@ -146,6 +146,9 @@ export default function MensaExtremeTestClient({
       incrementPlayCount(slug);
       setHasIncrementedPlayCount(true);
     }
+    
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     
     setStarted(true);
     window.scrollTo(0, 0);

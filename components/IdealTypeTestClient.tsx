@@ -6,7 +6,7 @@ import { IdealTypeQuestion, IdealTypeResult, calculateIdealTypeResult } from '@/
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
@@ -174,6 +174,9 @@ export default function IdealTypeTestClient({
       incrementPlayCount(slug);
       setHasIncrementedPlayCount(true);
     }
+    
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     
     setStarted(true);
     window.scrollTo(0, 0);

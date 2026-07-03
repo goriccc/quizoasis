@@ -6,7 +6,7 @@ import { LoveFlavorQuestion, LoveFlavorResult, calculateLoveFlavorResult } from 
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play } from 'lucide-react';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
@@ -141,6 +141,8 @@ const shuffleQuestions = (questionList: LoveFlavorQuestion[]) => {
       incrementPlayCount(slug);
       setHasIncrementedPlayCount(true);
     }
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     setStarted(true);
     window.scrollTo(0, 0);
   };

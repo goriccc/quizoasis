@@ -18,7 +18,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play } from 'lucide-react';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
@@ -176,6 +176,8 @@ function Phase3BestFriendQuizTestClientInner({
     setShuffledOptionsMap({});
     setOptionIndexMapping({});
     setPhase('creatorRun');
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     setStarted(true);
     setDisplayPlayCount((p) => p + 1);
     if (!hasIncrementedPlayCount) {

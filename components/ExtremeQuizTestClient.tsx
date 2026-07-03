@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Play, Lightbulb } from 'lucide-react';
 import { extremeQuizQuestions, extremeQuizResults, calculateExtremeQuizResult, ExtremeQuizQuestion, ExtremeQuizResult } from '@/lib/extremeQuizData';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { Locale } from '@/i18n';
@@ -104,6 +104,9 @@ export default function ExtremeQuizTestClient({
       incrementPlayCount(slug);
       setHasIncrementedPlayCount(true);
     }
+    
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     
     setStarted(true);
     window.scrollTo(0, 0);

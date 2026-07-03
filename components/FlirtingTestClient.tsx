@@ -6,7 +6,7 @@ import { FlirtingQuestion, FlirtingResult, calculateFlirtingResult } from '@/lib
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2, MessageCircle, Send, Link as LinkIcon } from 'lucide-react';
-import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
@@ -113,6 +113,8 @@ export default function FlirtingTestClient({
   }, [showLoadingSpinner]);
 // 테스트 시작
   const handleStartTest = async () => {
+    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
+
     setStarted(true);
     setCurrentQuestion(0);
     setAnswers([]);
