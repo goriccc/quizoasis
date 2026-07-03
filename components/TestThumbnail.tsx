@@ -12,7 +12,7 @@ type TestThumbnailProps = Omit<ImageProps, 'src' | 'onError'> & {
   thumbnail: string;
 };
 
-export default function TestThumbnail({ thumbnail, unoptimized, ...imageProps }: TestThumbnailProps) {
+export default function TestThumbnail({ thumbnail, unoptimized, alt, ...imageProps }: TestThumbnailProps) {
   const candidates = useMemo(() => getThumbnailFilenameCandidates(thumbnail), [thumbnail]);
   const [candidateIndex, setCandidateIndex] = useState(0);
   const [useDirectStorage, setUseDirectStorage] = useState(false);
@@ -39,6 +39,7 @@ export default function TestThumbnail({ thumbnail, unoptimized, ...imageProps }:
   return (
     <Image
       {...imageProps}
+      alt={alt}
       src={src}
       onError={handleError}
       unoptimized={unoptimized ?? true}

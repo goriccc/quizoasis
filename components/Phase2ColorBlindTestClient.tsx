@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Play, Share2 } from 'lucide-react';
-import { getThumbnailUrl, formatPlayCount , prefetchStorageImages, extractImageFilenamesFromQuestions} from '@/lib/utils';
+import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
@@ -156,7 +156,6 @@ export default function Phase2ColorBlindTestClient({
 
   // Start Test
   const handleStartTest = () => {
-    prefetchStorageImages(extractImageFilenamesFromQuestions(questions));
 
     setStarted(true);
     setCurrentQuestionIndex(0);

@@ -194,7 +194,7 @@ export function extractImageFilenamesFromQuestions(questions: unknown[]): string
 }
 
 /** 진행 화면 이미지를 미리 로드해 CDN/브라우저 캐시를 워밍 */
-export function prefetchStorageImages(filenames: Iterable<string>) {
+export function prefetchStorageImages(filenames: string[]) {
   if (typeof window === 'undefined') return;
 
   const seen = new Set<string>();
