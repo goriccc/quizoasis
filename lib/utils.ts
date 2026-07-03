@@ -84,6 +84,44 @@ function appendAssetVersion(url: string): string {
   return `${url}${url.includes('?') ? versionQuery.replace('?', '&') : versionQuery}`;
 }
 
+/** Cloudflare에서 /cdn/tests-thumbnails/ 경로가 차단되어 짧은 경로 사용 */
+const CDN_THUMBNAIL_PROXY_PATH = '/cdn/t/';
+const CDN_RENDER_THUMBNAIL_PROXY_PATH = '/cdn/render/t/';
+
+function getCdnBase(): string {
+  let cdnBase = String(process.env.NEXT_PUBLIC_CDN_BASE_URL || '').trim().replace(/\/+$/, '');
+  if (cdnBase === 'https://myquizoasis.com') {
+    cdnBase = 'https://www.myquizoasis.com';
+  }
+  return cdnBase;
+}
+
+function buildCdnThumbnailProxyUrl(filename: string): string {
+  return `${getCdnBase()}${CDN_THUMBNAIL_PROXY_PATH}${encodeURIComponent(filename)}`;
+}
+
+function buildCdnRenderThumbnailProxyUrl(filename: string, query: string): string {
+  return `${getCdnBase()}${CDN_RENDER_THUMBNAIL_PROXY_PATH}${encodeURIComponent(filename)}${query}`;
+}
+
+/** Supabase Storage 직링크 (CDN 프록시 실패 시 폴백) */
+export function getSupabaseThumbnailUrl(thumbnail: string): string {
+  if (thumbnail.startsWith('http://') || thumbnail.startsWith('https://')) {
+    return thumbnail;
+  }
+
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (supabaseUrl) {
+    return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${thumbnail}`);
+  }
+
+  if (thumbnail === 'test_043_trustworthiness.jpg') {
+    return 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=680&h=384&fit=crop&crop=center';
+  }
+
+  return 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=680&h=384&fit=crop&crop=center';
+}
+
 /** jpg/jpeg/png ↔ webp 등 대체 썸네일 파일명 */
 export function getThumbnailFallbackFilename(thumbnail: string): string | null {
   if (!thumbnail || thumbnail.startsWith('http://') || thumbnail.startsWith('https://')) {
@@ -116,32 +154,16 @@ export function getThumbnailFilenameCandidates(thumbnail: string): string[] {
  * Supabase Storage URL 생성
  */
 export function getThumbnailUrl(thumbnail: string): string {
-  // 이미 전체 URL인 경우 그대로 반환
   if (thumbnail.startsWith('http://') || thumbnail.startsWith('https://')) {
     return thumbnail;
   }
 
-  const cdnBase = String(process.env.NEXT_PUBLIC_CDN_BASE_URL || '').trim().replace(/\/+$/, '');
-  
-  // Supabase Storage가 설정되어 있는 경우 사용
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  
-  // Cloudflare CDN 프록시가 설정된 경우 우선 사용
+  const cdnBase = getCdnBase();
   if (cdnBase) {
-    return appendAssetVersion(`${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(thumbnail)}`);
+    return appendAssetVersion(buildCdnThumbnailProxyUrl(thumbnail));
   }
 
-  if (supabaseUrl) {
-    return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${thumbnail}`);
-  }
-  
-  // Supabase가 없으면 기본 이미지 사용 (Unsplash에서 신뢰 관련 이미지)
-  if (thumbnail === 'test_043_trustworthiness.jpg') {
-    return 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=680&h=384&fit=crop&crop=center';
-  }
-  
-  // 기본 이미지 사용
-  return 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=680&h=384&fit=crop&crop=center';
+  return getSupabaseThumbnailUrl(thumbnail);
 }
 
 /**
@@ -153,7 +175,7 @@ export function getOgImageUrl(filename: string): string {
     return filename;
   }
 
-  const cdnBase = String(process.env.NEXT_PUBLIC_CDN_BASE_URL || '').trim().replace(/\/+$/, '');
+  const cdnBase = getCdnBase();
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   if (!supabaseUrl) {
     return getThumbnailUrl(filename);
@@ -161,9 +183,9 @@ export function getOgImageUrl(filename: string): string {
 
   if (process.env.NEXT_PUBLIC_SUPABASE_OG_IMAGE_RESIZE === '1') {
     if (cdnBase) {
-      return appendAssetVersion(`${cdnBase}/cdn/render/tests-thumbnails/${encodeURIComponent(
-        filename
-      )}?width=1200&height=630&resize=cover&quality=86`);
+      return appendAssetVersion(
+        buildCdnRenderThumbnailProxyUrl(filename, '?width=1200&height=630&resize=cover&quality=86')
+      );
     }
     return appendAssetVersion(`${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
       filename
@@ -171,7 +193,7 @@ export function getOgImageUrl(filename: string): string {
   }
 
   if (cdnBase) {
-    return appendAssetVersion(`${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(filename)}`);
+    return appendAssetVersion(buildCdnThumbnailProxyUrl(filename));
   }
   return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}`);
 }
@@ -185,7 +207,7 @@ export function getQuizLandmarkImageUrl(filename: string): string {
     return filename;
   }
 
-  const cdnBase = String(process.env.NEXT_PUBLIC_CDN_BASE_URL || '').trim().replace(/\/+$/, '');
+  const cdnBase = getCdnBase();
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   if (!supabaseUrl) {
     return getThumbnailUrl(filename);
@@ -193,9 +215,9 @@ export function getQuizLandmarkImageUrl(filename: string): string {
 
   if (process.env.NEXT_PUBLIC_SUPABASE_QUIZ_IMAGE_RESIZE === '1') {
     if (cdnBase) {
-      return appendAssetVersion(`${cdnBase}/cdn/render/tests-thumbnails/${encodeURIComponent(
-        filename
-      )}?width=960&height=600&resize=cover&quality=82`);
+      return appendAssetVersion(
+        buildCdnRenderThumbnailProxyUrl(filename, '?width=960&height=600&resize=cover&quality=82')
+      );
     }
     return appendAssetVersion(`${supabaseUrl}/storage/v1/render/image/public/tests-thumbnails/${encodeURIComponent(
       filename
@@ -203,7 +225,7 @@ export function getQuizLandmarkImageUrl(filename: string): string {
   }
 
   if (cdnBase) {
-    return appendAssetVersion(`${cdnBase}/cdn/tests-thumbnails/${encodeURIComponent(filename)}`);
+    return appendAssetVersion(buildCdnThumbnailProxyUrl(filename));
   }
 
   return appendAssetVersion(`${supabaseUrl}/storage/v1/object/public/tests-thumbnails/${filename}`);

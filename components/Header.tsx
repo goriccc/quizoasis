@@ -6,8 +6,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { Menu, Search, Globe, X } from 'lucide-react';
 import { locales, localeNames, Locale } from '@/i18n';
 import Link from 'next/link';
-import Image from 'next/image';
-import { getThumbnailUrl } from '@/lib/utils';
+import TestThumbnail from './TestThumbnail';
 
 export default function Header() {
   const t = useTranslations('header');
@@ -258,8 +257,8 @@ export default function Header() {
                               onClick={() => setIsSearchOpen(false)}
                             >
                               <div className="relative flex-shrink-0 rounded overflow-hidden bg-gray-100" style={{ width: '96px', height: '60px' }}>
-                                <Image
-                                  src={getThumbnailUrl(item.thumbnail)}
+                                <TestThumbnail
+                                  thumbnail={item.thumbnail}
                                   alt={typeof item.title === 'string' ? item.title : 'thumbnail'}
                                   fill
                                   sizes="96px"

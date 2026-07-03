@@ -2,11 +2,11 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Play } from 'lucide-react';
 import { QuizTest } from '@/lib/types';
-import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
+import { formatPlayCount } from '@/lib/utils';
+import TestThumbnail from './TestThumbnail';
 import { Locale } from '@/i18n';
 import { getLatestTestSlugs } from '@/lib/latestTests';
 
@@ -155,14 +155,13 @@ export default function SimilarTestsSection({
               <div className="bg-white rounded-lg shadow card-hover overflow-hidden">
                 {/* 썸네일 */}
                 <div className="relative w-full aspect-video">
-                  <Image
-                    src={getThumbnailUrl(test.thumbnail)}
+                  <TestThumbnail
+                    thumbnail={test.thumbnail}
                     alt={test.title}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     loading="lazy"
-                    quality={85}
                   />
                   {/* NEW 뱃지 */}
                   {latestTestSlugs.includes(test.slug) && (

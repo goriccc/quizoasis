@@ -2,11 +2,11 @@
 
 import { useRef, useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Play } from 'lucide-react';
 import { QuizTest } from '@/lib/types';
-import { formatPlayCount, getThumbnailUrl } from '@/lib/utils';
+import { formatPlayCount } from '@/lib/utils';
+import TestThumbnail from './TestThumbnail';
 import { Locale } from '@/i18n';
 import { getLatestTestSlugs } from '@/lib/latestTests';
 
@@ -208,8 +208,8 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
                 <div className="bg-white rounded-lg shadow card-hover w-[80vw] sm:w-[60vw] md:w-[50vw] lg:w-[435px] overflow-hidden">
                   {/* 썸네일 */}
                   <div className="relative w-full aspect-[435/245]">
-                    <Image
-                      src={getThumbnailUrl(test.thumbnail)}
+                    <TestThumbnail
+                      thumbnail={test.thumbnail}
                       alt={test.title}
                       fill
                       className="object-cover select-none"
@@ -217,7 +217,6 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
                       draggable={false}
                       priority={index < 2}
                       loading={index < 2 ? undefined : 'lazy'}
-                      quality={85}
                     />
                     {/* NEW 뱃지 */}
                     {latestTestSlugs.includes(test.slug) && (

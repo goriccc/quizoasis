@@ -2,7 +2,11 @@
 
 import Image, { ImageProps } from 'next/image';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { getThumbnailFilenameCandidates, getThumbnailUrl } from '@/lib/utils';
+import {
+  getSupabaseThumbnailUrl,
+  getThumbnailFilenameCandidates,
+  getThumbnailUrl,
+} from '@/lib/utils';
 
 type TestThumbnailProps = Omit<ImageProps, 'src' | 'onError'> & {
   thumbnail: string;
@@ -11,25 +15,33 @@ type TestThumbnailProps = Omit<ImageProps, 'src' | 'onError'> & {
 export default function TestThumbnail({ thumbnail, unoptimized, ...imageProps }: TestThumbnailProps) {
   const candidates = useMemo(() => getThumbnailFilenameCandidates(thumbnail), [thumbnail]);
   const [candidateIndex, setCandidateIndex] = useState(0);
+  const [useDirectStorage, setUseDirectStorage] = useState(false);
 
   useEffect(() => {
     setCandidateIndex(0);
+    setUseDirectStorage(false);
   }, [thumbnail]);
 
   const currentFilename = candidates[candidateIndex] ?? thumbnail;
-  const src = getThumbnailUrl(currentFilename);
-  const preferUnoptimized = /\.webp$/i.test(currentFilename) || /\.avif$/i.test(currentFilename);
+  const src = useDirectStorage
+    ? getSupabaseThumbnailUrl(currentFilename)
+    : getThumbnailUrl(currentFilename);
 
   const handleError = useCallback(() => {
+    if (!useDirectStorage && process.env.NEXT_PUBLIC_CDN_BASE_URL) {
+      setUseDirectStorage(true);
+      return;
+    }
+
     setCandidateIndex((prev) => (prev + 1 < candidates.length ? prev + 1 : prev));
-  }, [candidates.length]);
+  }, [candidates.length, useDirectStorage]);
 
   return (
     <Image
       {...imageProps}
       src={src}
       onError={handleError}
-      unoptimized={unoptimized ?? preferUnoptimized}
+      unoptimized={unoptimized ?? true}
     />
   );
 }
