@@ -14,6 +14,11 @@ function shouldBypassOptimizer(src: string): boolean {
 }
 
 export default function imageLoader({ src, width, quality }: ImageLoaderProps): string {
+  // public/ 정적 파일은 직접 서빙 (소셜 공유 아이콘 등)
+  if (src.startsWith('/') && !src.startsWith('//')) {
+    return src;
+  }
+
   if (shouldBypassOptimizer(src)) {
     return src;
   }
