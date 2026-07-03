@@ -4538,6 +4538,9 @@ export default async function TestPage({ params }: Props) {
       },
     };
 
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase3MemeCharacterTypeTestClient
@@ -4552,6 +4555,8 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3MemeCharacterTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
@@ -4593,6 +4598,9 @@ export default async function TestPage({ params }: Props) {
       },
     };
 
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
     return (
       <>
         <Phase3KdramaLeadCharacterTypeTestClient
@@ -4607,6 +4615,8 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3KdramaLeadCharacterTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );

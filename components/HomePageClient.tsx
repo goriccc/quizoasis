@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { QuizTest } from '@/lib/types';
 import { Locale } from '@/i18n';
+import { applyHomeBuildSync } from '@/lib/homeBuildSync';
 import CategorySection from './CategorySection';
 import TagsSection from './TagsSection';
 import LatestTestsSection from './LatestTestsSection';
@@ -22,7 +23,29 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
   const tagKey = searchParams.get('tagKey');
   const initialTag = searchParams.get('tag') || 'all';
   const [selectedTag, setSelectedTag] = useState(initialTag);
-  
+  const shouldRefreshFromBuild = useRef(false);
+  const [shuffleKey, setShuffleKey] = useState(() => {
+    if (typeof window === 'undefined') return 0;
+    const buildChanged = applyHomeBuildSync();
+    if (buildChanged) {
+      shouldRefreshFromBuild.current = true;
+    }
+    return buildChanged ? 1 : 0;
+  });
+
+  // 배포 후 홈 재진입 시 서버 데이터 갱신 (진행 중 테스트는 영향 없음)
+  useEffect(() => {
+    if (!shouldRefreshFromBuild.current) return;
+    shouldRefreshFromBuild.current = false;
+    router.refresh();
+  }, [router]);
+
+  // 서버에서 받은 최신 15개 slug — API 재요청 없이 NEW 뱃지에 즉시 사용
+  const latestTestSlugs = useMemo(
+    () => tests.slice(0, 15).map((test) => test.slug),
+    [tests]
+  );
+
   // 디버깅: 테스트 개수 확인
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {
@@ -85,9 +108,6 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     }
     router.push(`${pathname}${params.toString() ? `?${params.toString()}` : ''}`);
   };
-
-  // 카테고리 셔플링을 위한 state
-  const [shuffleKey, setShuffleKey] = useState(0);
 
   // 선택된 태그에 따라 필터링된 테스트 (최초 접속시에만 섞기)
   const filteredTests = useMemo(() => {
@@ -250,6 +270,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
           tests={tests.slice(0, 15)}
           locale={locale}
           shuffleKey={shuffleKey}
+          latestTestSlugs={latestTestSlugs}
         />
       </div>
 
@@ -259,6 +280,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
           tests={filteredTests} 
           categoryName={tagKey === 'face' ? displayTag : selectedTag}
           locale={locale}
+          latestTestSlugs={latestTestSlugs}
         />
       </div>
       </div>

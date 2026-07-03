@@ -14,9 +14,15 @@ interface LatestTestsSectionProps {
   tests: QuizTest[];
   locale: Locale;
   shuffleKey: number;
+  latestTestSlugs?: string[];
 }
 
-export default function LatestTestsSection({ tests, locale, shuffleKey }: LatestTestsSectionProps) {
+export default function LatestTestsSection({
+  tests,
+  locale,
+  shuffleKey,
+  latestTestSlugs: latestTestSlugsProp,
+}: LatestTestsSectionProps) {
   const t = useTranslations('sections');
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -26,20 +32,24 @@ export default function LatestTestsSection({ tests, locale, shuffleKey }: Latest
   const [dragDistance, setDragDistance] = useState(0);
   const [lastMoveTime, setLastMoveTime] = useState(0);
   const [lastMoveX, setLastMoveX] = useState(0);
-  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+  const [latestTestSlugsFetched, setLatestTestSlugsFetched] = useState<string[]>([]);
 
-  // 최신 테스트 slug 목록 로드
+  // 최신 테스트 slug 목록 로드 (prop 미전달 시에만 API 호출)
   useEffect(() => {
+    if (latestTestSlugsProp) return;
+
     const loadLatestSlugs = async () => {
       try {
         const slugs = await getLatestTestSlugs(15);
-        setLatestTestSlugs(slugs);
+        setLatestTestSlugsFetched(slugs);
       } catch (error) {
         console.error('Error loading latest test slugs:', error);
       }
     };
     loadLatestSlugs();
-  }, []);
+  }, [latestTestSlugsProp]);
+
+  const latestTestSlugs = latestTestSlugsProp ?? latestTestSlugsFetched;
 
   // 최신 테스트는 항상 최신순으로 정렬 (sessionStorage 사용 안 함)
   const orderedTests = useMemo(() => {

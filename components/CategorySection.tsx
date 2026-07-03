@@ -101,30 +101,41 @@ interface CategorySectionProps {
   categoryName: string;
   locale: Locale;
   showHeader?: boolean;
+  latestTestSlugs?: string[];
 }
 
-export default function CategorySection({ tests, categoryName, locale, showHeader = true }: CategorySectionProps) {
+export default function CategorySection({
+  tests,
+  categoryName,
+  locale,
+  showHeader = true,
+  latestTestSlugs: latestTestSlugsProp,
+}: CategorySectionProps) {
   const t = useTranslations();
   const currentLocale = useLocale();
   const [mounted, setMounted] = useState(false);
-  const [latestTestSlugs, setLatestTestSlugs] = useState<string[]>([]);
+  const [latestTestSlugsFetched, setLatestTestSlugsFetched] = useState<string[]>([]);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // 최신 테스트 slug 목록 로드
+  // 최신 테스트 slug 목록 로드 (prop 미전달 시에만 API 호출)
   useEffect(() => {
+    if (latestTestSlugsProp) return;
+
     const loadLatestSlugs = async () => {
       try {
         const slugs = await getLatestTestSlugs(15);
-        setLatestTestSlugs(slugs);
+        setLatestTestSlugsFetched(slugs);
       } catch (error) {
         console.error('Error loading latest test slugs:', error);
       }
     };
     loadLatestSlugs();
-  }, []);
+  }, [latestTestSlugsProp]);
+
+  const latestTestSlugs = latestTestSlugsProp ?? latestTestSlugsFetched;
 
   // 안전한 카테고리 이름 가져오기 함수
   const getSafeCategoryName = (category: string, fallbackLocale: string = 'ko') => {
