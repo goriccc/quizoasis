@@ -74,6 +74,26 @@ export default function RootLayout({
         />
       </Head>
       <body>
+        {/* PWA 설치 프롬프트 — React 하이드레이션 전에 beforeinstallprompt 캡처 */}
+        <Script id="pwa-install-prompt-capture" strategy="beforeInteractive">
+          {`(function(){
+            if (window.__pwaInstallPromptCaptureInit) return;
+            window.__pwaInstallPromptCaptureInit = true;
+            window.__pwaDeferredPrompt = null;
+            window.__pwaInstallPromptListeners = window.__pwaInstallPromptListeners || new Set();
+            function notify(p) {
+              window.__pwaDeferredPrompt = p;
+              window.__pwaInstallPromptListeners.forEach(function(fn) { fn(p); });
+            }
+            window.addEventListener('beforeinstallprompt', function(e) {
+              e.preventDefault();
+              notify(e);
+            });
+            window.addEventListener('appinstalled', function() {
+              notify(null);
+            });
+          })();`}
+        </Script>
         {/* Google AdSense */}
       <script
         async

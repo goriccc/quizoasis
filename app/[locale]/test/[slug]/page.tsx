@@ -58,6 +58,10 @@ import {
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
 import {
+  phase3SoloDiningTypeQuestions,
+  phase3SoloDiningTypeResults,
+} from '@/lib/phase3SoloDiningTypeData';
+import {
   phase3ChronotypeMorningEveningQuestions,
   phase3ChronotypeMorningEveningResults,
 } from '@/lib/phase3ChronotypeMorningEveningData';
@@ -405,6 +409,10 @@ const Phase3DittoConsumptionTypeTestClient = dynamic(
 );
 const Phase3ExercisePersistenceTypeTestClient = dynamic(
   () => import('@/components/Phase3ExercisePersistenceTypeTestClient'),
+  { ssr: false }
+);
+const Phase3SoloDiningTypeTestClient = dynamic(
+  () => import('@/components/Phase3SoloDiningTypeTestClient'),
   { ssr: false }
 );
 const Phase3ChronotypeMorningEveningTestClient = dynamic(
@@ -2215,6 +2223,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['跟風消費', '消費模式', '趨勢', '網紅', '品牌'],
         vi: ['Tiêu dùng Ditto', 'Mẫu chi tiêu', 'Xu hướng', 'Influencer', 'Thương hiệu'],
         id: ['Konsumsi Ditto', 'Pola belanja', 'Tren', 'Influencer', 'Brand'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-solo-dining-type') {
+    test = {
+      slug: 'phase3-solo-dining-type',
+      title: {
+        ko: '나의 혼밥 유형',
+        en: 'My Solo Dining Type',
+        ja: '私のひとりご飯タイプ',
+        'zh-CN': '我的独自用餐类型',
+        'zh-TW': '我的獨自用餐類型',
+        vi: 'Kiểu ăn một mình của tôi',
+        id: 'Tipe Makan Sendiri Saya',
+      },
+      description: {
+        ko: '직관적으로 끌리는 이미지를 선택하면 나의 혼밥 유형과 숨겨진 성향을 분석해 드립니다.',
+        en: 'Choose images that intuitively draw you in — we analyze your solo dining type and hidden personality traits.',
+        ja: '直感で惹かれる画像を選ぶと、あなたのひとりご飯タイプと隠れた性格傾向を分析します。',
+        'zh-CN': '选择直觉吸引你的图片，分析你的独自用餐类型和隐藏性格倾向。',
+        'zh-TW': '選擇直覺吸引你的圖片，分析你的獨自用餐類型和隱藏性格傾向。',
+        vi: 'Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích kiểu ăn một mình và tính cách ẩn của bạn.',
+        id: 'Pilih gambar yang menarik secara intuitif — kami analisis tipe makan sendiri dan sifat tersembunyi Anda.',
+      },
+      thumbnail: 'p3_test_solo_dining_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['혼밥', '혼자', '식사', '성격', '공감'],
+        en: ['Solo dining', 'Alone', 'Eating', 'Personality', 'Empathy'],
+        ja: ['ひとりご飯', '一人', '食事', '性格', '共感'],
+        'zh-CN': ['独自用餐', '一个人', '吃饭', '性格', '共鸣'],
+        'zh-TW': ['獨自用餐', '一個人', '吃飯', '性格', '共鳴'],
+        vi: ['Ăn một mình', 'Một mình', 'Ăn uống', 'Tính cách', 'Đồng cảm'],
+        id: ['Makan sendiri', 'Sendirian', 'Makan', 'Kepribadian', 'Empati'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7316,6 +7361,66 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3DramaLifeCharacterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-solo-dining-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-solo-dining-type',
+      title: {
+        ko: '나의 혼밥 유형',
+        en: 'My Solo Dining Type',
+        ja: '私のひとりご飯タイプ',
+        'zh-CN': '我的独自用餐类型',
+        'zh-TW': '我的獨自用餐類型',
+        vi: 'Kiểu ăn một mình của tôi',
+        id: 'Tipe Makan Sendiri Saya',
+      },
+      description: {
+        ko: '직관적으로 끌리는 이미지를 선택하면 나의 혼밥 유형과 숨겨진 성향을 분석해 드립니다.',
+        en: 'Choose images that intuitively draw you in — we analyze your solo dining type and hidden personality traits.',
+        ja: '直感で惹かれる画像を選ぶと、あなたのひとりご飯タイプと隠れた性格傾向を分析します。',
+        'zh-CN': '选择直觉吸引你的图片，分析你的独自用餐类型和隐藏性格倾向。',
+        'zh-TW': '選擇直覺吸引你的圖片，分析你的獨自用餐類型和隱藏性格傾向。',
+        vi: 'Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích kiểu ăn một mình và tính cách ẩn của bạn.',
+        id: 'Pilih gambar yang menarik secara intuitif — kami analisis tipe makan sendiri dan sifat tersembunyi Anda.',
+      },
+      thumbnail: 'p3_test_solo_dining_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['혼밥', '혼자', '식사', '성격', '공감'],
+        en: ['Solo dining', 'Alone', 'Eating', 'Personality', 'Empathy'],
+        ja: ['ひとりご飯', '一人', '食事', '性格', '共感'],
+        'zh-CN': ['独自用餐', '一个人', '吃饭', '性格', '共鸣'],
+        'zh-TW': ['獨自用餐', '一個人', '吃飯', '性格', '共鳴'],
+        vi: ['Ăn một mình', 'Một mình', 'Ăn uống', 'Tính cách', 'Đồng cảm'],
+        id: ['Makan sendiri', 'Sendirian', 'Makan', 'Kepribadian', 'Empati'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3SoloDiningTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SoloDiningTypeQuestions}
+          results={phase3SoloDiningTypeResults}
+          questionCount={phase3SoloDiningTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );

@@ -4,14 +4,16 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { X } from 'lucide-react';
 import Image from 'next/image';
+import {
+  BeforeInstallPromptEvent,
+  getPwaDeferredPrompt,
+  initPwaInstallPromptCapture,
+  subscribePwaDeferredPrompt,
+  triggerPwaInstall,
+} from '@/lib/pwaInstallPrompt';
 
 const SNOOZE_KEY = 'install-prompt-dont-show-24h';
 const SNOOZE_MS = 24 * 60 * 60 * 1000;
-
-type BeforeInstallPromptEvent = Event & {
-  prompt: () => Promise<void>;
-  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
-};
 
 function isStandaloneMode(): boolean {
   return (
@@ -53,6 +55,7 @@ export default function InstallPrompt() {
   const [dontShowFor24h, setDontShowFor24h] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [isIos, setIsIos] = useState(false);
+  const [isInstalling, setIsInstalling] = useState(false);
 
   useEffect(() => {
     if (!isMobileDevice() || isStandaloneMode() || isSnoozed()) {
@@ -60,19 +63,14 @@ export default function InstallPrompt() {
     }
 
     setIsIos(isIosDevice());
+    initPwaInstallPromptCapture();
 
-    const handleBeforeInstallPrompt = (e: Event) => {
-      e.preventDefault();
-      setDeferredPrompt(e as BeforeInstallPromptEvent);
-    };
+    const existingPrompt = getPwaDeferredPrompt();
+    if (existingPrompt) {
+      setDeferredPrompt(existingPrompt);
+    }
 
-    const handleAppInstalled = () => {
-      setShowPrompt(false);
-      setDeferredPrompt(null);
-    };
-
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    window.addEventListener('appinstalled', handleAppInstalled);
+    const unsubscribe = subscribePwaDeferredPrompt(setDeferredPrompt);
 
     const timer = window.setTimeout(() => {
       setShowPrompt(true);
@@ -80,29 +78,29 @@ export default function InstallPrompt() {
 
     return () => {
       window.clearTimeout(timer);
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-      window.removeEventListener('appinstalled', handleAppInstalled);
+      unsubscribe();
     };
   }, []);
 
   const handleInstall = async () => {
-    if (deferredPrompt) {
-      await deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-
-      setDeferredPrompt(null);
-      setShowPrompt(false);
-
-      if (outcome === 'accepted') {
-        return;
-      }
-    }
-
-    if (isIos) {
+    const prompt = getPwaDeferredPrompt() ?? deferredPrompt;
+    if (!prompt || isInstalling) {
       return;
     }
 
-    alert(t('manualInstructions'));
+    setIsInstalling(true);
+
+    try {
+      const outcome = await triggerPwaInstall(prompt);
+      setDeferredPrompt(null);
+      setShowPrompt(false);
+
+      if (outcome === 'dismissed' || outcome === 'unavailable') {
+        return;
+      }
+    } finally {
+      setIsInstalling(false);
+    }
   };
 
   const handleClose = () => {
@@ -188,7 +186,8 @@ export default function InstallPrompt() {
           {!isIos && (
             <button
               onClick={handleInstall}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg"
+              disabled={isInstalling}
+              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {t('installButton')}
             </button>

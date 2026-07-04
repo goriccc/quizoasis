@@ -1421,6 +1421,62 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3SoloDiningTypeTest": {
+    "startMessage": {
+      "line1": "Cara makan sendiri menunjukkan kepribadianmu.",
+      "line2": "Ada yang makan sambil lihat HP, baca buku, diam saja, atau foto dulu. Makan sendiri yang sama — gaya sangat berbeda.",
+      "line3": "Makan sendiri adalah momen diri aslimu paling terlihat. Dirimu saat tidak ada yang melihat — itulah dirimu yang sebenarnya.",
+      "line4": "Pilih gambar yang menarik secara intuitif — kami analisis tipe makan sendiri dan sifat tersembunyi kamu.",
+      "line5": "Temukan tipe makan sendiriku 🍜 Mulai analisis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tipe Makan Sendiri Saya)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "questionHint": "Pilih secara intuitif gambar yang paling mirip gaya makan sendirimu.",
+      "soloDiningType": "🍜 Tipe makan sendiri",
+      "soloDiningKeywords": "🔑 Kata kunci makan sendiri",
+      "favoritePlaces": "📍 Tempat makan sendiri favorit",
+      "favoriteMenus": "🍽️ Menu favorit",
+      "personalityTrait": "💡 Kepribadian yang terlihat",
+      "hiddenSide": "🫣 Sisi tersembunyi",
+      "upgradeTip": "✨ Tips upgrade makan sendiri",
+      "oneLineReview": "💬 Ulasan satu baris",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tipe Makan Sendiri Saya 🍜 Analisis gaya lewat 12 gambar",
+      "startKakao": "Tipe Makan Sendiri Saya 🍜 Analisis gaya lewat 12 gambar",
+      "startWechat": "Tipe Makan Sendiri Saya 🍜 Analisis gaya lewat 12 gambar",
+      "startWhatsapp": "Tipe Makan Sendiri Saya 🍜 Analisis gaya lewat 12 gambar",
+      "startTelegram": "Tipe Makan Sendiri Saya 🍜 Analisis gaya lewat 12 gambar",
+      "startLine": "Tipe Makan Sendiri Saya 🍜 Analisis gaya lewat 12 gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "Kamu beli membership gym tahunan — berapa kali kamu benar-benar pergi?",

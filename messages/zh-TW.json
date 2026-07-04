@@ -1428,6 +1428,62 @@
       "popularTestsTop5": "🔥 近期熱門測試 Top5"
     }
   },
+  "phase3SoloDiningTypeTest": {
+    "startMessage": {
+      "line1": "獨自用餐的方式會暴露你的性格。",
+      "line2": "有人邊看手機邊吃，有人邊看書邊吃，有人什麼都不做只管吃，有人先拍照再吃。同樣是獨自用餐，風格卻大不相同。",
+      "line3": "獨自用餐是最不偽裝、最真實的自己出現的時刻。沒人看見時的你，才是真正的你。",
+      "line4": "選擇直覺吸引你的圖片，分析你的獨自用餐類型和隱藏性格傾向。",
+      "line5": "找出我的獨自用餐類型 🍜 開始分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的獨自用餐類型）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "questionHint": "請直覺選擇最符合你獨自用餐風格的圖片。",
+      "soloDiningType": "🍜 獨自用餐類型",
+      "soloDiningKeywords": "🔑 獨自用餐關鍵詞",
+      "favoritePlaces": "📍 常去的獨自用餐地點",
+      "favoriteMenus": "🍽️ 常點的菜單",
+      "personalityTrait": "💡 顯露的性格",
+      "hiddenSide": "🫣 隱藏的一面",
+      "upgradeTip": "✨ 獨自用餐升級小撇步",
+      "oneLineReview": "💬 獨自用餐一句話評價",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的獨自用餐類型 🍜 12道圖片題分析獨自用餐風格",
+      "startKakao": "我的獨自用餐類型 🍜 12道圖片題分析獨自用餐風格",
+      "startWechat": "我的獨自用餐類型 🍜 12道圖片題分析獨自用餐風格",
+      "startWhatsapp": "我的獨自用餐類型 🍜 12道圖片題分析獨自用餐風格",
+      "startTelegram": "我的獨自用餐類型 🍜 12道圖片題分析獨自用餐風格",
+      "startLine": "我的獨自用餐類型 🍜 12道圖片題分析獨自用餐風格"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 TOP5",
+      "popularTestsTop5": "🔥 熱門測試 TOP5"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "辦了健身房年卡，你實際去了幾次？",

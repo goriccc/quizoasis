@@ -1462,6 +1462,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3SoloDiningTypeTest": {
+    "startMessage": {
+      "line1": "Your solo dining style reveals your personality.",
+      "line2": "Some eat while watching their phone, some read a book, some eat in silence, some take photos first. Same solo meal — very different styles.",
+      "line3": "Solo dining is when your most unfiltered self shows up. The you when nobody is watching — that is the real you.",
+      "line4": "Choose images that intuitively draw you in — we analyze your solo dining type and hidden traits.",
+      "line5": "Find my solo dining type 🍜 Start analysis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (My Solo Dining Type)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "questionHint": "Intuitively choose the image that best matches your solo dining style.",
+      "soloDiningType": "🍜 Solo dining type",
+      "soloDiningKeywords": "🔑 Solo dining keywords",
+      "favoritePlaces": "📍 Favorite solo spots",
+      "favoriteMenus": "🍽️ Favorite menus",
+      "personalityTrait": "💡 Personality revealed",
+      "hiddenSide": "🫣 Hidden side",
+      "upgradeTip": "✨ Solo dining upgrade tip",
+      "oneLineReview": "💬 One-line solo dining review",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Solo Dining Type 🍜 12-image solo dining style analysis",
+      "startKakao": "My Solo Dining Type 🍜 12-image solo dining style analysis",
+      "startWechat": "My Solo Dining Type 🍜 12-image solo dining style analysis",
+      "startWhatsapp": "My Solo Dining Type 🍜 12-image solo dining style analysis",
+      "startTelegram": "My Solo Dining Type 🍜 12-image solo dining style analysis",
+      "startLine": "My Solo Dining Type 🍜 12-image solo dining style analysis"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "How many times did you actually go after buying that annual gym membership?",

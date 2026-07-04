@@ -1421,6 +1421,62 @@
       "popularTestsTop5": "🔥 Top 5 test phổ biến"
     }
   },
+  "phase3SoloDiningTypeTest": {
+    "startMessage": {
+      "line1": "Cách ăn một mình phản ánh tính cách của bạn.",
+      "line2": "Có người vừa ăn vừa xem điện thoại, có người đọc sách, có người im lặng ăn, có người chụp ảnh trước. Cùng ăn một mình nhưng phong cách rất khác nhau.",
+      "line3": "Ăn một mình là khoảnh khắc bản thân thật nhất lộ ra. Bạn khi không ai nhìn — đó mới là bạn thật.",
+      "line4": "Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích kiểu ăn một mình và tính cách ẩn của bạn.",
+      "line5": "Tìm kiểu ăn một mình của tôi 🍜 Bắt đầu phân tích"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kiểu ăn một mình của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "questionHint": "Hãy chọn trực giác hình ảnh giống phong cách ăn một mình của bạn nhất.",
+      "soloDiningType": "🍜 Kiểu ăn một mình",
+      "soloDiningKeywords": "🔑 Từ khóa ăn một mình",
+      "favoritePlaces": "📍 Địa điểm ăn một mình yêu thích",
+      "favoriteMenus": "🍽️ Món ăn yêu thích",
+      "personalityTrait": "💡 Tính cách lộ ra",
+      "hiddenSide": "🫣 Mặt ẩn",
+      "upgradeTip": "✨ Mẹo nâng cấp ăn một mình",
+      "oneLineReview": "💬 Đánh giá một dòng",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kiểu ăn một mình của tôi 🍜 Phân tích phong cách qua 12 hình ảnh",
+      "startKakao": "Kiểu ăn một mình của tôi 🍜 Phân tích phong cách qua 12 hình ảnh",
+      "startWechat": "Kiểu ăn một mình của tôi 🍜 Phân tích phong cách qua 12 hình ảnh",
+      "startWhatsapp": "Kiểu ăn một mình của tôi 🍜 Phân tích phong cách qua 12 hình ảnh",
+      "startTelegram": "Kiểu ăn một mình của tôi 🍜 Phân tích phong cách qua 12 hình ảnh",
+      "startLine": "Kiểu ăn một mình của tôi 🍜 Phân tích phong cách qua 12 hình ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "Bạn đã mua thẻ gym năm và thực sự đi bao nhiêu lần?",

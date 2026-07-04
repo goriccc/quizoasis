@@ -1422,6 +1422,62 @@
       "popularTestsTop5": "🔥 今人気のテストトップ5"
     }
   },
+  "phase3SoloDiningTypeTest": {
+    "startMessage": {
+      "line1": "ひとりご飯のスタイルに性格が表れます。",
+      "line2": "スマホを見ながら食べる人、本を読みながら食べる人、何もせずただ食べる人、写真を撮ってから食べる人。同じひとりご飯でもスタイルはこんなに違います。",
+      "line3": "ひとりご飯は、飾らない本当の自分が現れる瞬間です。誰も見ていないときの自分、それが本当のあなたです。",
+      "line4": "直感で惹かれる画像を選ぶと、あなたのひとりご飯タイプと隠れた性格傾向を分析します。",
+      "line5": "私のひとりご飯タイプを見つける 🍜 分析開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私のひとりご飯タイプ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "questionHint": "自分のひとりご飯スタイルに最も近い画像を直感で選んでください。",
+      "soloDiningType": "🍜 ひとりご飯タイプ",
+      "soloDiningKeywords": "🔑 ひとりご飯キーワード",
+      "favoritePlaces": "📍 よく行くひとりご飯スポット",
+      "favoriteMenus": "🍽️ よく食べるメニュー",
+      "personalityTrait": "💡 表れる性格",
+      "hiddenSide": "🫣 隠れた一面",
+      "upgradeTip": "✨ ひとりご飯アップグレードのヒント",
+      "oneLineReview": "💬 ひとりご飯一言レビュー",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私のひとりご飯タイプ 🍜 12問画像でひとりご飯スタイル分析",
+      "startKakao": "私のひとりご飯タイプ 🍜 12問画像でひとりご飯スタイル分析",
+      "startWechat": "私のひとりご飯タイプ 🍜 12問画像でひとりご飯スタイル分析",
+      "startWhatsapp": "私のひとりご飯タイプ 🍜 12問画像でひとりご飯スタイル分析",
+      "startTelegram": "私のひとりご飯タイプ 🍜 12問画像でひとりご飯スタイル分析",
+      "startLine": "私のひとりご飯タイプ 🍜 12問画像でひとりご飯スタイル分析"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 人気テスト TOP5"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "年間ジム会員を契約して、実際に何回行きましたか？",
