@@ -54,6 +54,10 @@ import {
   phase3DittoConsumptionTypeResults,
 } from '@/lib/phase3DittoConsumptionTypeData';
 import {
+  phase3ExercisePersistenceTypeQuestions,
+  phase3ExercisePersistenceTypeResults,
+} from '@/lib/phase3ExercisePersistenceTypeData';
+import {
   phase3ChronotypeMorningEveningQuestions,
   phase3ChronotypeMorningEveningResults,
 } from '@/lib/phase3ChronotypeMorningEveningData';
@@ -397,6 +401,10 @@ const Phase3KdramaLeadCharacterTypeTestClient = dynamic(
 );
 const Phase3DittoConsumptionTypeTestClient = dynamic(
   () => import('@/components/Phase3DittoConsumptionTypeTestClient'),
+  { ssr: false }
+);
+const Phase3ExercisePersistenceTypeTestClient = dynamic(
+  () => import('@/components/Phase3ExercisePersistenceTypeTestClient'),
   { ssr: false }
 );
 const Phase3ChronotypeMorningEveningTestClient = dynamic(
@@ -2207,6 +2215,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['跟風消費', '消費模式', '趨勢', '網紅', '品牌'],
         vi: ['Tiêu dùng Ditto', 'Mẫu chi tiêu', 'Xu hướng', 'Influencer', 'Thương hiệu'],
         id: ['Konsumsi Ditto', 'Pola belanja', 'Tren', 'Influencer', 'Brand'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-exercise-persistence-type') {
+    test = {
+      slug: 'phase3-exercise-persistence-type',
+      title: {
+        ko: '나의 운동 지속력 유형',
+        en: 'My Exercise Persistence Type',
+        ja: '私の運動継続力タイプ',
+        'zh-CN': '我的运动持续力类型',
+        'zh-TW': '我的運動持續力類型',
+        vi: 'Kiểu duy trì tập luyện của tôi',
+        id: 'Tipe Konsistensi Olahraga Saya',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 운동 지속을 방해하는 진짜 장애물 유형을 찾고 맞춤 극복 전략을 드립니다.',
+        en: 'Find what really blocks your exercise consistency in 12 questions and get personalized strategies to overcome it.',
+        ja: '12問で運動継続を妨げる本当の障害タイプを見つけ、今すぐ使える克服戦略をお届けします。',
+        'zh-CN': '用12道题找出真正阻碍你坚持运动的障碍类型，并提供量身定制的克服策略。',
+        'zh-TW': '用12道題找出真正阻礙你堅持運動的障礙類型，並提供量身定制的克服策略。',
+        vi: 'Tìm loại trở ngại thật sự cản trở việc duy trì tập luyện qua 12 câu hỏi và nhận chiến lược vượt qua phù hợp.',
+        id: 'Temukan hambatan sebenarnya yang menghalangi konsistensi olahraga lewat 12 pertanyaan dan dapatkan strategi mengatasinya.',
+      },
+      thumbnail: 'p3_test_exercise_persistence_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['운동', '헬스', '작심삼일', '지속력', '갓생'],
+        en: ['Exercise', 'Gym', 'Quit after 3 days', 'Persistence', 'Self-improvement'],
+        ja: ['運動', 'ジム', '三日坊主', '継続力', '自己改善'],
+        'zh-CN': ['运动', '健身', '三天打鱼', '持续力', '自律生活'],
+        'zh-TW': ['運動', '健身', '三天打魚', '持續力', '自律生活'],
+        vi: ['Tập luyện', 'Gym', 'Bỏ cuộc sớm', 'Kiên trì', 'Cải thiện bản thân'],
+        id: ['Olahraga', 'Gym', 'Males 3 hari', 'Konsistensi', 'Self-improvement'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7271,6 +7316,66 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3DramaLifeCharacterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-exercise-persistence-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-exercise-persistence-type',
+      title: {
+        ko: '나의 운동 지속력 유형',
+        en: 'My Exercise Persistence Type',
+        ja: '私の運動継続力タイプ',
+        'zh-CN': '我的运动持续力类型',
+        'zh-TW': '我的運動持續力類型',
+        vi: 'Kiểu duy trì tập luyện của tôi',
+        id: 'Tipe Konsistensi Olahraga Saya',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 운동 지속을 방해하는 진짜 장애물 유형을 찾고 맞춤 극복 전략을 드립니다.',
+        en: 'Find what really blocks your exercise consistency in 12 questions and get personalized strategies to overcome it.',
+        ja: '12問で運動継続を妨げる本当の障害タイプを見つけ、今すぐ使える克服戦略をお届けします。',
+        'zh-CN': '用12道题找出真正阻碍你坚持运动的障碍类型，并提供量身定制的克服策略。',
+        'zh-TW': '用12道題找出真正阻礙你堅持運動的障礙類型，並提供量身定制的克服策略。',
+        vi: 'Tìm loại trở ngại thật sự cản trở việc duy trì tập luyện qua 12 câu hỏi và nhận chiến lược vượt qua phù hợp.',
+        id: 'Temukan hambatan sebenarnya yang menghalangi konsistensi olahraga lewat 12 pertanyaan dan dapatkan strategi mengatasinya.',
+      },
+      thumbnail: 'p3_test_exercise_persistence_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['운동', '헬스', '작심삼일', '지속력', '갓생'],
+        en: ['Exercise', 'Gym', 'Quit after 3 days', 'Persistence', 'Self-improvement'],
+        ja: ['運動', 'ジム', '三日坊主', '継続力', '自己改善'],
+        'zh-CN': ['运动', '健身', '三天打鱼', '持续力', '自律生活'],
+        'zh-TW': ['運動', '健身', '三天打魚', '持續力', '自律生活'],
+        vi: ['Tập luyện', 'Gym', 'Bỏ cuộc sớm', 'Kiên trì', 'Cải thiện bản thân'],
+        id: ['Olahraga', 'Gym', 'Males 3 hari', 'Konsistensi', 'Self-improvement'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3ExercisePersistenceTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3ExercisePersistenceTypeQuestions}
+          results={phase3ExercisePersistenceTypeResults}
+          questionCount={phase3ExercisePersistenceTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );

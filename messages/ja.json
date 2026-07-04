@@ -1422,6 +1422,59 @@
       "popularTestsTop5": "🔥 今人気のテストトップ5"
     }
   },
+  "phase3ExercisePersistenceTypeTest": {
+    "startMessage": {
+      "line1": "年間ジム会員を契約して、実際に何回行きましたか？",
+      "line2": "運動できない理由が意志力不足だと思っているなら、それは間違いです。運動継続を妨げる障害は人それぞれ違います。",
+      "line3": "面倒で行けない人、完璧なルーティンを組んで疲れる人、天気や気分の影響を受けすぎる人、一人ではどうしても無理な人。",
+      "line4": "12の質問で運動継続を妨げる本当の障害タイプを見つけ、今すぐ使える克服戦略をお届けします。",
+      "line5": "私の運動継続力タイプを見つける 🏋️ 分析開始"
+    },
+    "ui": {
+      "startTest": "分析開始",
+      "adsenseTitle": "AdSense（私の運動継続力タイプ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "obstacleType": "🏋️ 障害タイプ",
+      "obstacleKeywords": "🔑 障害キーワード",
+      "quitMoment": "😅 運動をやめる瞬間",
+      "overcomeStrategy": "💪 克服戦略",
+      "todayTask": "📋 今日のタスク",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の運動継続力タイプ 🏋️ 12問で三日坊主パターン分析",
+      "startKakao": "私の運動継続力タイプ 🏋️ 12問で三日坊主パターン分析",
+      "startWechat": "私の運動継続力タイプ 🏋️ 12問で三日坊主パターン分析",
+      "startWhatsapp": "私の運動継続力タイプ 🏋️ 12問で三日坊主パターン分析",
+      "startTelegram": "私の運動継続力タイプ 🏋️ 12問で三日坊主パターン分析",
+      "startLine": "私の運動継続力タイプ 🏋️ 12問で三日坊主パターン分析"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト Top5",
+      "popularTestsTop5": "🔥 人気テスト Top5"
+    }
+  },
   "phase3ChronotypeMorningEveningTest": {
     "startMessage": {
       "line1": "朝型か夜型かは意志の問題ではありません。遺伝子と生体リズムの問題です。",

@@ -1428,6 +1428,59 @@
       "popularTestsTop5": "🔥 近期熱門測試 Top5"
     }
   },
+  "phase3ExercisePersistenceTypeTest": {
+    "startMessage": {
+      "line1": "辦了健身房年卡，你實際去了幾次？",
+      "line2": "如果你認為不能運動是因為意志力不足，那就錯了。阻礙運動堅持的真正障礙因人而異。",
+      "line3": "有人因為麻煩不去，有人因為制定完美計畫而疲憊，有人太受天氣和心情影響，有人一個人就是做不到。",
+      "line4": "12道題找出真正阻礙你堅持運動的障礙類型，並提供現在就能用的量身克服策略。",
+      "line5": "找出我的運動持續力類型 🏋️ 開始分析"
+    },
+    "ui": {
+      "startTest": "開始分析",
+      "adsenseTitle": "AdSense廣告區域（我的運動持續力類型）",
+      "goToTest": "去做測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "obstacleType": "🏋️ 障礙類型",
+      "obstacleKeywords": "🔑 障礙關鍵詞",
+      "quitMoment": "😅 放棄運動的瞬間",
+      "overcomeStrategy": "💪 量身克服策略",
+      "todayTask": "📋 今日任務",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的運動持續力類型 🏋️ 12題分析運動三天打魚模式",
+      "startKakao": "我的運動持續力類型 🏋️ 12題分析運動三天打魚模式",
+      "startWechat": "我的運動持續力類型 🏋️ 12題分析運動三天打魚模式",
+      "startWhatsapp": "我的運動持續力類型 🏋️ 12題分析運動三天打魚模式",
+      "startTelegram": "我的運動持續力類型 🏋️ 12題分析運動三天打魚模式",
+      "startLine": "我的運動持續力類型 🏋️ 12題分析運動三天打魚模式"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能無法使用。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測試 Top5"
+    }
+  },
   "phase3ChronotypeMorningEveningTest": {
     "startMessage": {
       "line1": "晨型還是夜型，不是意志力的問題，而是基因和生物鐘的問題。",

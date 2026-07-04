@@ -1462,6 +1462,59 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3ExercisePersistenceTypeTest": {
+    "startMessage": {
+      "line1": "How many times did you actually go after buying that annual gym membership?",
+      "line2": "If you think you can't exercise because of weak willpower, you're wrong. What blocks exercise persistence differs from person to person.",
+      "line3": "Some skip because it's a hassle, some burn out planning the perfect routine, some are too affected by weather or mood, and some simply can't do it alone.",
+      "line4": "12 questions reveal the real obstacle blocking your exercise consistency — plus personalized strategies you can apply right now.",
+      "line5": "Find my exercise persistence type 🏋️ Start analysis"
+    },
+    "ui": {
+      "startTest": "Start analysis",
+      "adsenseTitle": "AdSense (My Exercise Persistence Type)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "obstacleType": "🏋️ Obstacle type",
+      "obstacleKeywords": "🔑 Obstacle keywords",
+      "quitMoment": "😅 When you quit exercising",
+      "overcomeStrategy": "💪 Personalized strategies",
+      "todayTask": "📋 Today's task",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Exercise Persistence Type 🏋️ 12-question workout quit pattern analysis",
+      "startKakao": "My Exercise Persistence Type 🏋️ 12-question workout quit pattern analysis",
+      "startWechat": "My Exercise Persistence Type 🏋️ 12-question workout quit pattern analysis",
+      "startWhatsapp": "My Exercise Persistence Type 🏋️ 12-question workout quit pattern analysis",
+      "startTelegram": "My Exercise Persistence Type 🏋️ 12-question workout quit pattern analysis",
+      "startLine": "My Exercise Persistence Type 🏋️ 12-question workout quit pattern analysis"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3ChronotypeMorningEveningTest": {
     "startMessage": {
       "line1": "Being a morning or evening person isn't about willpower — it's genes and your body clock.",

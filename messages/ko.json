@@ -673,6 +673,59 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ExercisePersistenceTypeTest": {
+    "startMessage": {
+      "line1": "헬스장 연간 회원권을 끊고 몇 번이나 갔나요?",
+      "line2": "운동을 못 하는 이유가 의지력 부족이라고 생각하신다면 틀렸습니다. 운동 지속을 방해하는 장애물은 사람마다 다릅니다.",
+      "line3": "귀찮음 때문에 못 가는 사람, 완벽한 루틴을 짜다가 지치는 사람, 날씨나 기분에 너무 많이 영향받는 사람, 혼자서는 도저히 안 되는 사람.",
+      "line4": "12가지 질문으로 나의 운동 지속을 방해하는 진짜 장애물 유형을 찾고, 지금 당장 적용할 수 있는 맞춤 극복 전략을 드립니다.",
+      "line5": "내 운동 지속력 유형 찾기 🏋️ 분석 시작"
+    },
+    "ui": {
+      "startTest": "분석 시작",
+      "adsenseTitle": "AdSense 광고 영역 (나의 운동 지속력 유형)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "obstacleType": "🏋️ 장애물 유형",
+      "obstacleKeywords": "🔑 장애물 키워드",
+      "quitMoment": "😅 운동을 포기하는 순간",
+      "overcomeStrategy": "💪 맞춤 극복 전략",
+      "todayTask": "📋 오늘 할 일",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 운동 지속력 유형 🏋️ 12문항으로 내 운동 작심삼일 유형 분석하기",
+      "startKakao": "나의 운동 지속력 유형 🏋️ 12문항으로 내 운동 작심삼일 유형 분석하기",
+      "startWechat": "나의 운동 지속력 유형 🏋️ 12문항으로 내 운동 작심삼일 유형 분석하기",
+      "startWhatsapp": "나의 운동 지속력 유형 🏋️ 12문항으로 내 운동 작심삼일 유형 분석하기",
+      "startTelegram": "나의 운동 지속력 유형 🏋️ 12문항으로 내 운동 작심삼일 유형 분석하기",
+      "startLine": "나의 운동 지속력 유형 🏋️ 12문항으로 내 운동 작심삼일 유형 분석하기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3ChronotypeMorningEveningTest": {
     "startMessage": {
       "line1": "아침형이나 저녁형은 의지의 문제가 아닙니다. 유전자와 생체 리듬의 문제입니다.",

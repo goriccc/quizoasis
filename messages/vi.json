@@ -1421,6 +1421,59 @@
       "popularTestsTop5": "🔥 Top 5 test phổ biến"
     }
   },
+  "phase3ExercisePersistenceTypeTest": {
+    "startMessage": {
+      "line1": "Bạn đã mua thẻ gym năm và thực sự đi bao nhiêu lần?",
+      "line2": "Nếu bạn nghĩ không tập được vì thiếu ý chí, bạn đã nhầm. Trở ngại cản trở việc duy trì tập luyện khác nhau ở mỗi người.",
+      "line3": "Có người lười đi, có người mệt vì lập kế hoạch hoàn hảo, có người bị ảnh hưởng quá nhiều bởi thời tiết và tâm trạng, có người một mình thì không thể.",
+      "line4": "12 câu hỏi tìm loại trở ngại thật sự cản trở việc duy trì tập luyện của bạn, cùng chiến lược vượt qua phù hợp có thể áp dụng ngay.",
+      "line5": "Tìm kiểu duy trì tập luyện của tôi 🏋️ Bắt đầu phân tích"
+    },
+    "ui": {
+      "startTest": "Bắt đầu phân tích",
+      "adsenseTitle": "AdSense (Kiểu duy trì tập luyện của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "obstacleType": "🏋️ Loại trở ngại",
+      "obstacleKeywords": "🔑 Từ khóa trở ngại",
+      "quitMoment": "😅 Khoảnh khắc bỏ tập",
+      "overcomeStrategy": "💪 Chiến lược vượt qua",
+      "todayTask": "📋 Việc hôm nay",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kiểu duy trì tập luyện của tôi 🏋️ 12 câu phân tích kiểu bỏ cuộc sớm",
+      "startKakao": "Kiểu duy trì tập luyện của tôi 🏋️ 12 câu phân tích kiểu bỏ cuộc sớm",
+      "startWechat": "Kiểu duy trì tập luyện của tôi 🏋️ 12 câu phân tích kiểu bỏ cuộc sớm",
+      "startWhatsapp": "Kiểu duy trì tập luyện của tôi 🏋️ 12 câu phân tích kiểu bỏ cuộc sớm",
+      "startTelegram": "Kiểu duy trì tập luyện của tôi 🏋️ 12 câu phân tích kiểu bỏ cuộc sớm",
+      "startLine": "Kiểu duy trì tập luyện của tôi 🏋️ 12 câu phân tích kiểu bỏ cuộc sớm"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự",
+      "popularTestsTop5": "🔥 Top 5 test phổ biến"
+    }
+  },
   "phase3ChronotypeMorningEveningTest": {
     "startMessage": {
       "line1": "Kiểu sáng hay tối không phải vấn đề ý chí — mà là gen và nhịp sinh học.",

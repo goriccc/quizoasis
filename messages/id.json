@@ -1421,6 +1421,59 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3ExercisePersistenceTypeTest": {
+    "startMessage": {
+      "line1": "Kamu beli membership gym tahunan — berapa kali kamu benar-benar pergi?",
+      "line2": "Kalau kamu pikir tidak bisa olahraga karena kurang tekad, itu salah. Hambatan yang menghalangi konsistensi olahraga berbeda di setiap orang.",
+      "line3": "Ada yang malas pergi, ada yang lelah merencanakan rutinitas sempurna, ada yang terlalu dipengaruhi cuaca dan mood, ada yang sendirian memang tidak bisa.",
+      "line4": "12 pertanyaan menemukan jenis hambatan sebenarnya yang menghalangi konsistensi olahragamu, plus strategi mengatasi yang bisa langsung dipakai.",
+      "line5": "Temukan tipe konsistensi olahragaku 🏋️ Mulai analisis"
+    },
+    "ui": {
+      "startTest": "Mulai analisis",
+      "adsenseTitle": "AdSense (Tipe Konsistensi Olahraga Saya)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "obstacleType": "🏋️ Tipe hambatan",
+      "obstacleKeywords": "🔑 Kata kunci hambatan",
+      "quitMoment": "😅 Saat berhenti olahraga",
+      "overcomeStrategy": "💪 Strategi mengatasi",
+      "todayTask": "📋 Tugas hari ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tipe Konsistensi Olahraga Saya 🏋️ 12 pertanyaan analisis pola males 3 hari",
+      "startKakao": "Tipe Konsistensi Olahraga Saya 🏋️ 12 pertanyaan analisis pola males 3 hari",
+      "startWechat": "Tipe Konsistensi Olahraga Saya 🏋️ 12 pertanyaan analisis pola males 3 hari",
+      "startWhatsapp": "Tipe Konsistensi Olahraga Saya 🏋️ 12 pertanyaan analisis pola males 3 hari",
+      "startTelegram": "Tipe Konsistensi Olahraga Saya 🏋️ 12 pertanyaan analisis pola males 3 hari",
+      "startLine": "Tipe Konsistensi Olahraga Saya 🏋️ 12 pertanyaan analisis pola males 3 hari"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3ChronotypeMorningEveningTest": {
     "startMessage": {
       "line1": "Tipe pagi atau malam bukan soal kemauan — ini soal gen dan ritme tubuh.",
