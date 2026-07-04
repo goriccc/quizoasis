@@ -1418,6 +1418,63 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3DittoConsumptionTypeTest": {
+    "startMessage": {
+      "line1": "Konsumsi Ditto — beli karena berpikir, \"Aku juga mau itu.\"",
+      "line2": "Produk yang dipakai influencer, rekomendasi teman, yang terus muncul di algoritma, atau barang yang disponsori selebriti favorit.",
+      "line3": "Setiap hari kita membuka dompet mengikuti pilihan orang lain. Masalahnya, kita tidak tahu mengikuti siapa — dan apakah pilihan itu benar-benar cocok untuk kita.",
+      "line4": "12 pertanyaan menganalisis pola konsumsi Ditto-mu dengan tepat. Setelah lihat hasilnya, kamu mungkin bilang: \"Iya, makanya aku beli dulu.\"",
+      "line5": "Temukan tipe konsumsi Ditto-ku 🛍️"
+    },
+    "ui": {
+      "startTest": "Mulai analisis",
+      "adsenseTitle": "AdSense (Tipe Konsumsi Ditto-ku)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "dittoType": "🛍️ Tipe konsumsi Ditto",
+      "mainChannel": "📱 Saluran konsumsi utama",
+      "triggerCondition": "⚡ Pemicu pembelian",
+      "strength": "💪 Kelebihan tipe ini",
+      "trap": "⚠️ Jebakan tipe ini",
+      "blackHistory": "😅 Pola penyesalan",
+      "smartStrategy": "🧠 Strategi belanja cerdas",
+      "brandApproach": "🏷️ Cara brand mendekati tipe ini",
+      "todayTask": "📋 Tugas hari ini",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tipe Konsumsi Ditto-ku 🛍️ Analisis pola belanjamu lewat 12 pertanyaan",
+      "startKakao": "Tipe Konsumsi Ditto-ku 🛍️ Analisis pola belanjamu lewat 12 pertanyaan",
+      "startWechat": "Tipe Konsumsi Ditto-ku 🛍️ Analisis pola belanjamu lewat 12 pertanyaan",
+      "startWhatsapp": "Tipe Konsumsi Ditto-ku 🛍️ Analisis pola belanjamu lewat 12 pertanyaan",
+      "startTelegram": "Tipe Konsumsi Ditto-ku 🛍️ Analisis pola belanjamu lewat 12 pertanyaan",
+      "startLine": "Tipe Konsumsi Ditto-ku 🛍️ Analisis pola belanjamu lewat 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "Hubungan ini, maju sekarang atau tunggu dulu?",

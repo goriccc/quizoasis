@@ -50,6 +50,10 @@ import {
   phase3KdramaLeadCharacterTypeResults,
 } from '@/lib/phase3KdramaLeadCharacterTypeData';
 import {
+  phase3DittoConsumptionTypeQuestions,
+  phase3DittoConsumptionTypeResults,
+} from '@/lib/phase3DittoConsumptionTypeData';
+import {
   phase3HiddenSubCharacterQuestions,
   phase3HiddenSubCharacterResults,
 } from '@/lib/phase3HiddenSubCharacterData';
@@ -385,6 +389,10 @@ const Phase3MemeCharacterTypeTestClient = dynamic(
 );
 const Phase3KdramaLeadCharacterTypeTestClient = dynamic(
   () => import('@/components/Phase3KdramaLeadCharacterTypeTestClient'),
+  { ssr: false }
+);
+const Phase3DittoConsumptionTypeTestClient = dynamic(
+  () => import('@/components/Phase3DittoConsumptionTypeTestClient'),
   { ssr: false }
 );
 const Phase3DopamineTypeTestClient = dynamic(() => import('@/components/Phase3DopamineTypeTestClient'), {
@@ -2154,6 +2162,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['K劇', '主角', '性格', '戲劇', '韓流'],
         vi: ['K-Drama', 'Nhân vật chính', 'Tính cách', 'Phim', 'Hallyu'],
         id: ['K-Drama', 'Protagonis', 'Kepribadian', 'Drama', 'Hallyu'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-ditto-consumption-type') {
+    test = {
+      slug: 'phase3-ditto-consumption-type',
+      title: {
+        ko: '나의 디토소비 유형',
+        en: 'My Ditto Consumption Type',
+        ja: '私のディトゥー消費タイプ',
+        'zh-CN': '我的跟风消费类型',
+        'zh-TW': '我的跟風消費類型',
+        vi: 'Kiểu tiêu dùng Ditto của tôi',
+        id: 'Tipe Konsumsi Ditto Saya',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 디토소비 패턴을 분석합니다.',
+        en: 'Analyze your ditto consumption pattern in 12 questions.',
+        ja: '12問であなたのディトゥー消費パターンを分析します。',
+        'zh-CN': '用12道题分析你的跟风消费模式。',
+        'zh-TW': '用12道題分析你的跟風消費模式。',
+        vi: 'Phân tích kiểu tiêu dùng Ditto của bạn qua 12 câu hỏi.',
+        id: 'Analisis pola konsumsi Ditto-mu lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_ditto_consumption_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['디토소비', '소비패턴', '트렌드', '인플루언서', '브랜드'],
+        en: ['Ditto consumption', 'Spending pattern', 'Trend', 'Influencer', 'Brand'],
+        ja: ['ディトゥー消費', '消費パターン', 'トレンド', 'インフルエンサー', 'ブランド'],
+        'zh-CN': ['跟风消费', '消费模式', '趋势', '网红', '品牌'],
+        'zh-TW': ['跟風消費', '消費模式', '趨勢', '網紅', '品牌'],
+        vi: ['Tiêu dùng Ditto', 'Mẫu chi tiêu', 'Xu hướng', 'Influencer', 'Thương hiệu'],
+        id: ['Konsumsi Ditto', 'Pola belanja', 'Tren', 'Influencer', 'Brand'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -4613,6 +4658,66 @@ export default async function TestPage({ params }: Props) {
           questions={phase3KdramaLeadCharacterTypeQuestions}
           results={phase3KdramaLeadCharacterTypeResults}
           questionCount={phase3KdramaLeadCharacterTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-ditto-consumption-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-ditto-consumption-type',
+      title: {
+        ko: '나의 디토소비 유형',
+        en: 'My Ditto Consumption Type',
+        ja: '私のディトゥー消費タイプ',
+        'zh-CN': '我的跟风消费类型',
+        'zh-TW': '我的跟風消費類型',
+        vi: 'Kiểu tiêu dùng Ditto của tôi',
+        id: 'Tipe Konsumsi Ditto Saya',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 디토소비 패턴을 분석합니다.',
+        en: 'Analyze your ditto consumption pattern in 12 questions.',
+        ja: '12問であなたのディトゥー消費パターンを分析します。',
+        'zh-CN': '用12道题分析你的跟风消费模式。',
+        'zh-TW': '用12道題分析你的跟風消費模式。',
+        vi: 'Phân tích kiểu tiêu dùng Ditto của bạn qua 12 câu hỏi.',
+        id: 'Analisis pola konsumsi Ditto-mu lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_ditto_consumption_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['디토소비', '소비패턴', '트렌드', '인플루언서', '브랜드'],
+        en: ['Ditto consumption', 'Spending pattern', 'Trend', 'Influencer', 'Brand'],
+        ja: ['ディトゥー消費', '消費パターン', 'トレンド', 'インフルエンサー', 'ブランド'],
+        'zh-CN': ['跟风消费', '消费模式', '趋势', '网红', '品牌'],
+        'zh-TW': ['跟風消費', '消費模式', '趨勢', '網紅', '品牌'],
+        vi: ['Tiêu dùng Ditto', 'Mẫu chi tiêu', 'Xu hướng', 'Influencer', 'Thương hiệu'],
+        id: ['Konsumsi Ditto', 'Pola belanja', 'Tren', 'Influencer', 'Brand'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3DittoConsumptionTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3DittoConsumptionTypeQuestions}
+          results={phase3DittoConsumptionTypeResults}
+          questionCount={phase3DittoConsumptionTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}

@@ -1419,6 +1419,63 @@
       "popularTestsTop5": "🔥 今人気のテストトップ5"
     }
   },
+  "phase3DittoConsumptionTypeTest": {
+    "startMessage": {
+      "line1": "ディトゥー（Ditto）消費。「あれも欲しい」と真似して買う消費のことです。",
+      "line2": "インフルエンサーの愛用品、友達のおすすめ、アルゴリズムが何度も見せる商品、好きな芸能人のコラボ品。",
+      "line3": "私たちは毎日、誰かの選択に合わせて財布を開きます。問題は、誰に合わせて買っているのか、それが本当に自分に合うのか分からないことです。",
+      "line4": "12の質問であなたのディトゥー消費パターンを正確に分析します。結果を見れば「あ、だから買ってた」と思うはずです。",
+      "line5": "私のディトゥー消費タイプを探す 🛍️"
+    },
+    "ui": {
+      "startTest": "分析開始",
+      "adsenseTitle": "AdSense広告エリア（私のディトゥー消費タイプ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "dittoType": "🛍️ ディトゥー消費タイプ",
+      "mainChannel": "📱 主な消費チャネル",
+      "triggerCondition": "⚡ 発動条件",
+      "strength": "💪 このタイプの強み",
+      "trap": "⚠️ このタイプの落とし穴",
+      "blackHistory": "😅 黒歴史パターン",
+      "smartStrategy": "🧠 賢い消費戦略",
+      "brandApproach": "🏷️ ブランドのアプローチ",
+      "todayTask": "📋 今日の課題",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私のディトゥー消費タイプ 🛍️ 12問で消費パターンを分析",
+      "startKakao": "私のディトゥー消費タイプ 🛍️ 12問で消費パターンを分析",
+      "startWechat": "私のディトゥー消費タイプ 🛍️ 12問で消費パターンを分析",
+      "startWhatsapp": "私のディトゥー消費タイプ 🛍️ 12問で消費パターンを分析",
+      "startTelegram": "私のディトゥー消費タイプ 🛍️ 12問で消費パターンを分析",
+      "startLine": "私のディトゥー消費タイプ 🛍️ 12問で消費パターンを分析"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストトップ5"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "この関係、もう一歩進めるべき？それとももう少し様子を見るべき？",

@@ -1418,6 +1418,63 @@
       "popularTestsTop5": "🔥 Top 5 test phổ biến"
     }
   },
+  "phase3DittoConsumptionTypeTest": {
+    "startMessage": {
+      "line1": "Tiêu dùng Ditto — mua vì nghĩ \"Mình cũng muốn cái đó.\"",
+      "line2": "Sản phẩm influencer dùng, bạn bè giới thiệu, thuật toán cứ hiện, hay đồ celeb quảng bá.",
+      "line3": "Mỗi ngày ta mở ví theo lựa chọn của người khác. Vấn đề là không biết mình đang bắt chước ai — và liệu lựa chọn đó có thật sự hợp với mình.",
+      "line4": "12 câu hỏi phân tích chính xác kiểu tiêu dùng Ditto của bạn. Xem kết quả chắc sẽ nghĩ: \"Đúng rồi, mình mua vì thế.\"",
+      "line5": "Tìm kiểu tiêu dùng Ditto của tôi 🛍️"
+    },
+    "ui": {
+      "startTest": "Bắt đầu phân tích",
+      "adsenseTitle": "AdSense (Kiểu tiêu dùng Ditto của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "dittoType": "🛍️ Kiểu tiêu dùng Ditto",
+      "mainChannel": "📱 Kênh tiêu dùng chính",
+      "triggerCondition": "⚡ Điều kiện kích hoạt",
+      "strength": "💪 Điểm mạnh của kiểu này",
+      "trap": "⚠️ Cạm bẫy của kiểu này",
+      "blackHistory": "😅 Mẫu hối hận",
+      "smartStrategy": "🧠 Chiến lược tiêu dùng thông minh",
+      "brandApproach": "🏷️ Cách thương hiệu tiếp cận kiểu này",
+      "todayTask": "📋 Nhiệm vụ hôm nay",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kiểu tiêu dùng Ditto của tôi 🛍️ Phân tích thói quen chi tiêu qua 12 câu",
+      "startKakao": "Kiểu tiêu dùng Ditto của tôi 🛍️ Phân tích thói quen chi tiêu qua 12 câu",
+      "startWechat": "Kiểu tiêu dùng Ditto của tôi 🛍️ Phân tích thói quen chi tiêu qua 12 câu",
+      "startWhatsapp": "Kiểu tiêu dùng Ditto của tôi 🛍️ Phân tích thói quen chi tiêu qua 12 câu",
+      "startTelegram": "Kiểu tiêu dùng Ditto của tôi 🛍️ Phân tích thói quen chi tiêu qua 12 câu",
+      "startLine": "Kiểu tiêu dùng Ditto của tôi 🛍️ Phân tích thói quen chi tiêu qua 12 câu"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự",
+      "popularTestsTop5": "🔥 Top 5 test phổ biến"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "Mối quan hệ này nên tiến thêm một bước, hay đợi thêm một chút?",

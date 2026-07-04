@@ -1418,6 +1418,63 @@
       "popularTestsTop5": "🔥 近期热门测试 Top5"
     }
   },
+  "phase3DittoConsumptionTypeTest": {
+    "startMessage": {
+      "line1": "Ditto消费——因为觉得「我也想要」而跟着买。",
+      "line2": "网红在用的产品、朋友推荐的、算法反复推送的、喜欢的明星代言的。",
+      "line3": "我们每天都在跟着别人的选择打开钱包。问题是，不知道自己跟着谁买，也不知道那选择是否真的适合自己。",
+      "line4": "12道题精准分析你的Ditto消费模式。看完结果你可能会说：「对，我就是因为这样才买的。」",
+      "line5": "找出我的Ditto消费类型 🛍️"
+    },
+    "ui": {
+      "startTest": "开始分析",
+      "adsenseTitle": "AdSense广告区域（我的Ditto消费类型）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "dittoType": "🛍️ Ditto消费类型",
+      "mainChannel": "📱 主要消费渠道",
+      "triggerCondition": "⚡ 触发条件",
+      "strength": "💪 这一类型的优势",
+      "trap": "⚠️ 这一类型的陷阱",
+      "blackHistory": "😅 黑历史模式",
+      "smartStrategy": "🧠 聪明消费策略",
+      "brandApproach": "🏷️ 品牌如何触达这一类型",
+      "todayTask": "📋 今日任务",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的Ditto消费类型 🛍️ 12题分析我的消费模式",
+      "startKakao": "我的Ditto消费类型 🛍️ 12题分析我的消费模式",
+      "startWechat": "我的Ditto消费类型 🛍️ 12题分析我的消费模式",
+      "startWhatsapp": "我的Ditto消费类型 🛍️ 12题分析我的消费模式",
+      "startTelegram": "我的Ditto消费类型 🛍️ 12题分析我的消费模式",
+      "startLine": "我的Ditto消费类型 🛍️ 12题分析我的消费模式"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
   "phase3SomeVsRelationshipTimingTest": {
     "startMessage": {
       "line1": "这段关系，该往前推进，还是再等等？",
