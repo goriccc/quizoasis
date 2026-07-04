@@ -857,6 +857,9 @@
     "installButton": "Tambahkan QuizOasis",
     "manualInstructions": "Silakan ikuti langkah-langkah di atas untuk menambahkan secara manual."
   },
+  "scrollToTop": {
+    "label": "Ke atas"
+  },
   "adTrafficGuard": {
     "title": "Pembatasan Iklan",
     "description": "Terlalu banyak iklan dipilih dalam {minutes} menit terakhir.\nIklan tidak akan ditampilkan selama {days} hari ke depan.",
@@ -1411,6 +1414,66 @@
       "shareFailed": "Fitur berbagi tidak tersedia.",
       "wechatCopy": "Tautan disalin! Tempel dan bagikan di WeChat.",
       "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi nanti.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
+  "phase3ChronotypeMorningEveningTest": {
+    "startMessage": {
+      "line1": "Tipe pagi atau malam bukan soal kemauan — ini soal gen dan ritme tubuh.",
+      "line2": "Kronotipe (Chronotype) adalah pola ritme biologis unikmu: kapan energi puncak, kapan fokus maksimal, dan kapan kamu alami tertidur dan bangun berbeda secara genetik.",
+      "line3": "Kami mengukur kronotipe aslimu lewat pola energi dan kurva fokus — bukan hanya jam bangun tidur.",
+      "line4": "Mengetahui hasilnya membantumu capai lebih banyak dengan usaha jauh lebih sedikit.",
+      "line5": "Ukur kronotipe-ku ⏰ Mulai analisis presisi"
+    },
+    "ui": {
+      "startTest": "Mulai analisis presisi",
+      "adsenseTitle": "AdSense (Analisis Pagi vs Malam)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "chronotype": "⏰ Kronotipe",
+      "energyPeak": "⚡ Puncak energi",
+      "focusPeak": "🎯 Puncak fokus",
+      "naturalSleep": "🌙 Waktu tidur alami",
+      "naturalWake": "🌅 Waktu bangun alami",
+      "optimalSchedule": "📋 Jadwal kerja optimal",
+      "strength": "💪 Kelebihan tipe ini",
+      "weakness": "⚠️ Kelemahan tipe ini",
+      "famousPeople": "🌟 Tokoh terkenal tipe ini",
+      "socialJetLag": "✈️ Peringatan jet lag sosial",
+      "scientificFact": "🔬 Fakta ilmiah penting",
+      "chronotypeTip": "💡 Tips kronotipe",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Analisis Presisi Tipe Pagi vs Malam ⏰ 12 pertanyaan kronotipe",
+      "startKakao": "Analisis Presisi Tipe Pagi vs Malam ⏰ 12 pertanyaan kronotipe",
+      "startWechat": "Analisis Presisi Tipe Pagi vs Malam ⏰ 12 pertanyaan kronotipe",
+      "startWhatsapp": "Analisis Presisi Tipe Pagi vs Malam ⏰ 12 pertanyaan kronotipe",
+      "startTelegram": "Analisis Presisi Tipe Pagi vs Malam ⏰ 12 pertanyaan kronotipe",
+      "startLine": "Analisis Presisi Tipe Pagi vs Malam ⏰ 12 pertanyaan kronotipe"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi.",
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     },
     "recommendations": {

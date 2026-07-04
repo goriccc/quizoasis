@@ -857,6 +857,9 @@
     "installButton": "添加QuizOasis",
     "manualInstructions": "请按照上述步骤手动添加。"
   },
+  "scrollToTop": {
+    "label": "返回顶部"
+  },
   "adTrafficGuard": {
     "title": "广告展示限制",
     "description": "您在最近{minutes}分钟内过度点击广告。\n接下来{days}天内将不再显示广告。",
@@ -1412,6 +1415,66 @@
       "wechatCopy": "链接已复制！请在微信中粘贴分享。",
       "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
       "kakaoError": "分享到 KakaoTalk 时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
+  "phase3ChronotypeMorningEveningTest": {
+    "startMessage": {
+      "line1": "晨型还是夜型，不是意志力的问题，而是基因和生物钟的问题。",
+      "line2": "昼夜节律类型（Chronotype）指个人独特的生物节律模式——何时精力最高、何时专注力达峰、何时自然入睡和醒来，因人而异。",
+      "line3": "我们不只看几点起床，而是通过精力模式和专注力曲线，测量你真正的昼夜节律类型。",
+      "line4": "了解结果后，可以用更少的努力获得更高的成果。",
+      "line5": "测量我的昼夜节律类型 ⏰ 开始精密分析"
+    },
+    "ui": {
+      "startTest": "开始精密分析",
+      "adsenseTitle": "AdSense广告区域（晨型 vs 夜型精密分析）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "chronotype": "⏰ 昼夜节律类型",
+      "energyPeak": "⚡ 精力峰值",
+      "focusPeak": "🎯 专注力峰值",
+      "naturalSleep": "🌙 自然入睡时间",
+      "naturalWake": "🌅 自然起床时间",
+      "optimalSchedule": "📋 最佳工作安排",
+      "strength": "💪 这一类型的优势",
+      "weakness": "⚠️ 这一类型的弱点",
+      "famousPeople": "🌟 同类型的知名人物",
+      "socialJetLag": "✈️ 社会性时差注意",
+      "scientificFact": "🔬 重要科学事实",
+      "chronotypeTip": "💡 昼夜节律小贴士",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的晨型 vs 夜型人类精密分析 ⏰ 12题昼夜节律测试",
+      "startKakao": "我的晨型 vs 夜型人类精密分析 ⏰ 12题昼夜节律测试",
+      "startWechat": "我的晨型 vs 夜型人类精密分析 ⏰ 12题昼夜节律测试",
+      "startWhatsapp": "我的晨型 vs 夜型人类精密分析 ⏰ 12题昼夜节律测试",
+      "startTelegram": "我的晨型 vs 夜型人类精密分析 ⏰ 12题昼夜节律测试",
+      "startLine": "我的晨型 vs 夜型人类精密分析 ⏰ 12题昼夜节律测试"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能。请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
     },
     "recommendations": {
       "similarTestsTop5": "🎯 相似测试推荐 Top5",

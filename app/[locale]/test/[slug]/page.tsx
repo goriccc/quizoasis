@@ -54,6 +54,10 @@ import {
   phase3DittoConsumptionTypeResults,
 } from '@/lib/phase3DittoConsumptionTypeData';
 import {
+  phase3ChronotypeMorningEveningQuestions,
+  phase3ChronotypeMorningEveningResults,
+} from '@/lib/phase3ChronotypeMorningEveningData';
+import {
   phase3HiddenSubCharacterQuestions,
   phase3HiddenSubCharacterResults,
 } from '@/lib/phase3HiddenSubCharacterData';
@@ -393,6 +397,10 @@ const Phase3KdramaLeadCharacterTypeTestClient = dynamic(
 );
 const Phase3DittoConsumptionTypeTestClient = dynamic(
   () => import('@/components/Phase3DittoConsumptionTypeTestClient'),
+  { ssr: false }
+);
+const Phase3ChronotypeMorningEveningTestClient = dynamic(
+  () => import('@/components/Phase3ChronotypeMorningEveningTestClient'),
   { ssr: false }
 );
 const Phase3DopamineTypeTestClient = dynamic(() => import('@/components/Phase3DopamineTypeTestClient'), {
@@ -2199,6 +2207,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['跟風消費', '消費模式', '趨勢', '網紅', '品牌'],
         vi: ['Tiêu dùng Ditto', 'Mẫu chi tiêu', 'Xu hướng', 'Influencer', 'Thương hiệu'],
         id: ['Konsumsi Ditto', 'Pola belanja', 'Tren', 'Influencer', 'Brand'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-chronotype-morning-evening') {
+    test = {
+      slug: 'phase3-chronotype-morning-evening',
+      title: {
+        ko: '나의 아침형 vs 저녁형 인간 정밀 분석',
+        en: 'My Morning vs Evening Person — Precision Chronotype Analysis',
+        ja: '私の朝型 vs 夜型人間 精密分析',
+        'zh-CN': '我的晨型 vs 夜型人类精密分析',
+        'zh-TW': '我的晨型 vs 夜型人類精密分析',
+        vi: 'Phân tích chính xác kiểu người Sáng vs Tối của tôi',
+        id: 'Analisis Presisi Tipe Pagi vs Malam Saya',
+      },
+      description: {
+        ko: '12문항으로 나의 크로노타입(생체 리듬)을 정밀 분석합니다.',
+        en: 'Analyze your chronotype (body clock) precisely in 12 questions.',
+        ja: '12問であなたのクロノタイプ（生体リズム）を精密分析します。',
+        'zh-CN': '用12道题精密分析你的昼夜节律（生物钟）。',
+        'zh-TW': '用12道題精密分析你的晝夜節律（生物鐘）。',
+        vi: 'Phân tích chính xác chronotype (nhịp sinh học) qua 12 câu hỏi.',
+        id: 'Analisis presisi kronotipe (ritme tubuh) lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_chronotype_morning_evening.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['크로노타입', '아침형', '저녁형', '생체리듬', '수면'],
+        en: ['Chronotype', 'Morning type', 'Evening type', 'Body rhythm', 'Sleep'],
+        ja: ['クロノタイプ', '朝型', '夜型', '生体リズム', '睡眠'],
+        'zh-CN': ['昼夜节律', '晨型', '夜型', '生物节律', '睡眠'],
+        'zh-TW': ['晝夜節律', '晨型', '夜型', '生物節律', '睡眠'],
+        vi: ['Chronotype', 'Kiểu sáng', 'Kiểu tối', 'Nhịp sinh học', 'Giấc ngủ'],
+        id: ['Kronotipe', 'Tipe pagi', 'Tipe malam', 'Ritme tubuh', 'Tidur'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7226,6 +7271,66 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3DramaLifeCharacterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-chronotype-morning-evening') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-chronotype-morning-evening',
+      title: {
+        ko: '나의 아침형 vs 저녁형 인간 정밀 분석',
+        en: 'My Morning vs Evening Person — Precision Chronotype Analysis',
+        ja: '私の朝型 vs 夜型人間 精密分析',
+        'zh-CN': '我的晨型 vs 夜型人类精密分析',
+        'zh-TW': '我的晨型 vs 夜型人類精密分析',
+        vi: 'Phân tích chính xác kiểu người Sáng vs Tối của tôi',
+        id: 'Analisis Presisi Tipe Pagi vs Malam Saya',
+      },
+      description: {
+        ko: '12문항으로 나의 크로노타입(생체 리듬)을 정밀 분석합니다.',
+        en: 'Analyze your chronotype (body clock) precisely in 12 questions.',
+        ja: '12問であなたのクロノタイプ（生体リズム）を精密分析します。',
+        'zh-CN': '用12道题精密分析你的昼夜节律（生物钟）。',
+        'zh-TW': '用12道題精密分析你的晝夜節律（生物鐘）。',
+        vi: 'Phân tích chính xác chronotype (nhịp sinh học) qua 12 câu hỏi.',
+        id: 'Analisis presisi kronotipe (ritme tubuh) lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_chronotype_morning_evening.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['크로노타입', '아침형', '저녁형', '생체리듬', '수면'],
+        en: ['Chronotype', 'Morning type', 'Evening type', 'Body rhythm', 'Sleep'],
+        ja: ['クロノタイプ', '朝型', '夜型', '生体リズム', '睡眠'],
+        'zh-CN': ['昼夜节律', '晨型', '夜型', '生物节律', '睡眠'],
+        'zh-TW': ['晝夜節律', '晨型', '夜型', '生物節律', '睡眠'],
+        vi: ['Chronotype', 'Kiểu sáng', 'Kiểu tối', 'Nhịp sinh học', 'Giấc ngủ'],
+        id: ['Kronotipe', 'Tipe pagi', 'Tipe malam', 'Ritme tubuh', 'Tidur'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3ChronotypeMorningEveningTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3ChronotypeMorningEveningQuestions}
+          results={phase3ChronotypeMorningEveningResults}
+          questionCount={phase3ChronotypeMorningEveningQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );

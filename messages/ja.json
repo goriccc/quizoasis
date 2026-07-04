@@ -858,6 +858,9 @@
     "installButton": "QuizOasisを追加",
     "manualInstructions": "上記の手順に従って手動で追加してください。"
   },
+  "scrollToTop": {
+    "label": "ページ上部へ"
+  },
   "adTrafficGuard": {
     "title": "広告表示の制限",
     "description": "直近{minutes}分以内に広告が過剰に選択されました。\n今後{days}日間、広告は表示されません。",
@@ -1413,6 +1416,66 @@
       "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
       "kakaoInit": "カカオトーク共有を初期化しています。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストトップ5"
+    }
+  },
+  "phase3ChronotypeMorningEveningTest": {
+    "startMessage": {
+      "line1": "朝型か夜型かは意志の問題ではありません。遺伝子と生体リズムの問題です。",
+      "line2": "クロノタイプ（Chronotype）とは、個人固有の生体リズムパターンのこと。いつエネルギーが最も高いか、集中力がピークに達するか、自然に眠り・目覚めるかは人によって遺伝的に異なります。",
+      "line3": "単に何時に起きるかではなく、エネルギーパターンと集中力の曲線で本当のクロノタイプを測定します。",
+      "line4": "結果を知れば、今よりはるかに少ない努力でより高い成果を出せます。",
+      "line5": "私のクロノタイプを測定 ⏰ 精密分析開始"
+    },
+    "ui": {
+      "startTest": "精密分析開始",
+      "adsenseTitle": "AdSense広告エリア（朝型 vs 夜型 精密分析）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "chronotype": "⏰ クロノタイプ",
+      "energyPeak": "⚡ エネルギー峰值",
+      "focusPeak": "🎯 集中力峰值",
+      "naturalSleep": "🌙 自然な就寝時間",
+      "naturalWake": "🌅 自然な起床時間",
+      "optimalSchedule": "📋 最適な業務配置",
+      "strength": "💪 このタイプの強み",
+      "weakness": "⚠️ このタイプの弱点",
+      "famousPeople": "🌟 同じタイプの有名人",
+      "socialJetLag": "✈️ 社会的時差ボケ注意",
+      "scientificFact": "🔬 重要な科学的事実",
+      "chronotypeTip": "💡 クロノタイプのヒント",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の朝型 vs 夜型人間 精密分析 ⏰ 12問クロノタイプ測定",
+      "startKakao": "私の朝型 vs 夜型人間 精密分析 ⏰ 12問クロノタイプ測定",
+      "startWechat": "私の朝型 vs 夜型人間 精密分析 ⏰ 12問クロノタイプ測定",
+      "startWhatsapp": "私の朝型 vs 夜型人間 精密分析 ⏰ 12問クロノタイプ測定",
+      "startTelegram": "私の朝型 vs 夜型人間 精密分析 ⏰ 12問クロノタイプ測定",
+      "startLine": "私の朝型 vs 夜型人間 精密分析 ⏰ 12問クロノタイプ測定"
+    },
+    "alerts": {
+      "linkCopied": "リンクがコピーされました！",
+      "resultCopied": "結果がクリップボードにコピーされました！",
+      "shareFailed": "シェア機能が使用できません。",
+      "wechatCopy": "リンクがコピーされました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトークシェア中にエラーが発生しました。"
     },
     "recommendations": {
       "similarTestsTop5": "🎯 似たテストおすすめトップ5",

@@ -6,6 +6,7 @@ import { locales } from '@/i18n';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InstallPrompt from '@/components/InstallPrompt';
+import ScrollToTop from '@/components/ScrollToTop';
 import AdTrafficGuard from '@/components/AdTrafficGuard';
 
 export function generateStaticParams() {
@@ -127,6 +128,7 @@ export default async function LocaleLayout({
       <Footer />
       <AdTrafficGuard />
       <InstallPrompt />
+      <ScrollToTop />
     </NextIntlClientProvider>
   );
 }

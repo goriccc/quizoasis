@@ -857,6 +857,9 @@
     "installButton": "Thêm QuizOasis",
     "manualInstructions": "Vui lòng làm theo các bước trên để thêm thủ công."
   },
+  "scrollToTop": {
+    "label": "Lên đầu trang"
+  },
   "adTrafficGuard": {
     "title": "Hạn chế hiển thị quảng cáo",
     "description": "Quá nhiều quảng cáo được chọn trong {minutes} phút gần đây.\nQuảng cáo sẽ không hiển thị trong {days} ngày tới.",
@@ -1410,6 +1413,66 @@
       "resultCopied": "Đã sao chép kết quả vào clipboard!",
       "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
       "wechatCopy": "Đã sao chép liên kết! Dán và chia sẻ trên WeChat.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự",
+      "popularTestsTop5": "🔥 Top 5 test phổ biến"
+    }
+  },
+  "phase3ChronotypeMorningEveningTest": {
+    "startMessage": {
+      "line1": "Kiểu sáng hay tối không phải vấn đề ý chí — mà là gen và nhịp sinh học.",
+      "line2": "Chronotype (kiểu nhịp sinh học) là mẫu nhịp sinh học riêng của mỗi người: lúc nào năng lượng cao nhất, tập trung đỉnh điểm, và tự nhiên ngủ–thức khác nhau theo di truyền.",
+      "line3": "Chúng tôi đo chronotype thật của bạn qua mẫu năng lượng và đường cong tập trung — không chỉ dựa vào giờ thức dậy.",
+      "line4": "Biết kết quả giúp bạn đạt nhiều hơn với ít nỗ lực hơn.",
+      "line5": "Đo chronotype của tôi ⏰ Bắt đầu phân tích chính xác"
+    },
+    "ui": {
+      "startTest": "Bắt đầu phân tích",
+      "adsenseTitle": "AdSense (Phân tích Sáng vs Tối)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "chronotype": "⏰ Chronotype",
+      "energyPeak": "⚡ Đỉnh năng lượng",
+      "focusPeak": "🎯 Đỉnh tập trung",
+      "naturalSleep": "🌙 Giờ ngủ tự nhiên",
+      "naturalWake": "🌅 Giờ thức tự nhiên",
+      "optimalSchedule": "📋 Lịch làm việc tối ưu",
+      "strength": "💪 Điểm mạnh của kiểu này",
+      "weakness": "⚠️ Điểm yếu của kiểu này",
+      "famousPeople": "🌟 Người nổi tiếng cùng kiểu",
+      "socialJetLag": "✈️ Cảnh báo jet lag xã hội",
+      "scientificFact": "🔬 Sự thật khoa học quan trọng",
+      "chronotypeTip": "💡 Mẹo chronotype",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Phân tích Sáng vs Tối của tôi ⏰ 12 câu đo chronotype",
+      "startKakao": "Phân tích Sáng vs Tối của tôi ⏰ 12 câu đo chronotype",
+      "startWechat": "Phân tích Sáng vs Tối của tôi ⏰ 12 câu đo chronotype",
+      "startWhatsapp": "Phân tích Sáng vs Tối của tôi ⏰ 12 câu đo chronotype",
+      "startTelegram": "Phân tích Sáng vs Tối của tôi ⏰ 12 câu đo chronotype",
+      "startLine": "Phân tích Sáng vs Tối của tôi ⏰ 12 câu đo chronotype"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
     },

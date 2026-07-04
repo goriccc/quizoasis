@@ -859,6 +859,9 @@
     "installButton": "Add QuizOasis",
     "manualInstructions": "Please follow the steps above to add manually."
   },
+  "scrollToTop": {
+    "label": "Top"
+  },
   "adTrafficGuard": {
     "title": "Ad Access Restricted",
     "description": "Too many ads were selected within {minutes} minutes.\nAds will not be shown for the next {days} days.",
@@ -1452,6 +1455,66 @@
       "shareFailed": "Sharing feature unavailable.",
       "wechatCopy": "Link copied! Paste and share in WeChat.",
       "kakaoInit": "Initializing KakaoTalk sharing. Please try again later.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
+  "phase3ChronotypeMorningEveningTest": {
+    "startMessage": {
+      "line1": "Being a morning or evening person isn't about willpower — it's genes and your body clock.",
+      "line2": "Chronotype is your unique biological rhythm: when energy peaks, when focus peaks, and when you naturally sleep and wake differ genetically from person to person.",
+      "line3": "We measure your true chronotype through energy patterns and focus curves — not just what time you get up.",
+      "line4": "Knowing your result helps you achieve more with far less effort.",
+      "line5": "Measure my chronotype ⏰ Start precision analysis"
+    },
+    "ui": {
+      "startTest": "Start precision analysis",
+      "adsenseTitle": "AdSense (Morning vs Evening Chronotype)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "chronotype": "⏰ Chronotype",
+      "energyPeak": "⚡ Energy peak",
+      "focusPeak": "🎯 Focus peak",
+      "naturalSleep": "🌙 Natural bedtime",
+      "naturalWake": "🌅 Natural wake time",
+      "optimalSchedule": "📋 Optimal work schedule",
+      "strength": "💪 Strengths of this type",
+      "weakness": "⚠️ Weaknesses of this type",
+      "famousPeople": "🌟 Famous people of this type",
+      "socialJetLag": "✈️ Social jet lag warning",
+      "scientificFact": "🔬 Important scientific fact",
+      "chronotypeTip": "💡 Chronotype tip",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Morning vs Evening Person — Precision Analysis ⏰ 12-question chronotype test",
+      "startKakao": "My Morning vs Evening Person — Precision Analysis ⏰ 12-question chronotype test",
+      "startWechat": "My Morning vs Evening Person — Precision Analysis ⏰ 12-question chronotype test",
+      "startWhatsapp": "My Morning vs Evening Person — Precision Analysis ⏰ 12-question chronotype test",
+      "startTelegram": "My Morning vs Evening Person — Precision Analysis ⏰ 12-question chronotype test",
+      "startLine": "My Morning vs Evening Person — Precision Analysis ⏰ 12-question chronotype test"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again.",
       "kakaoError": "An error occurred while sharing to KakaoTalk."
     },
     "recommendations": {

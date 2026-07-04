@@ -673,6 +673,66 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ChronotypeMorningEveningTest": {
+    "startMessage": {
+      "line1": "아침형이나 저녁형은 의지의 문제가 아닙니다. 유전자와 생체 리듬의 문제입니다.",
+      "line2": "크로노타입(Chronotype)이란 개인의 고유한 생체 리듬 패턴을 말합니다. 언제 가장 에너지가 높은지, 언제 집중력이 정점에 달하는지, 언제 자연스럽게 잠들고 깨는지가 사람마다 유전적으로 다릅니다.",
+      "line3": "단순히 몇 시에 일어나는지가 아니라 에너지 패턴과 집중력 곡선으로 나의 진짜 크로노타입을 측정합니다.",
+      "line4": "결과를 알면 지금보다 훨씬 적은 노력으로 더 높은 성과를 낼 수 있습니다.",
+      "line5": "내 크로노타입 측정하기 ⏰ 정밀 분석 시작"
+    },
+    "ui": {
+      "startTest": "정밀 분석 시작",
+      "adsenseTitle": "AdSense 광고 영역 (아침형 vs 저녁형 정밀 분석)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "chronotype": "⏰ 크로노타입",
+      "energyPeak": "⚡ 에너지 정점",
+      "focusPeak": "🎯 집중력 정점",
+      "naturalSleep": "🌙 자연 취침 시간",
+      "naturalWake": "🌅 자연 기상 시간",
+      "optimalSchedule": "📋 최적 업무 배치",
+      "strength": "💪 이 타입의 강점",
+      "weakness": "⚠️ 이 타입의 약점",
+      "famousPeople": "🌟 유명한 같은 타입 인물",
+      "socialJetLag": "✈️ 사회적 시차증 주의",
+      "scientificFact": "🔬 중요한 과학적 사실",
+      "chronotypeTip": "💡 크로노타입 팁",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 아침형 vs 저녁형 인간 정밀 분석 ⏰ 12문항 크로노타입 측정",
+      "startKakao": "나의 아침형 vs 저녁형 인간 정밀 분석 ⏰ 12문항 크로노타입 측정",
+      "startWechat": "나의 아침형 vs 저녁형 인간 정밀 분석 ⏰ 12문항 크로노타입 측정",
+      "startWhatsapp": "나의 아침형 vs 저녁형 인간 정밀 분석 ⏰ 12문항 크로노타입 측정",
+      "startTelegram": "나의 아침형 vs 저녁형 인간 정밀 분석 ⏰ 12문항 크로노타입 측정",
+      "startLine": "나의 아침형 vs 저녁형 인간 정밀 분석 ⏰ 12문항 크로노타입 측정"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3DittoConsumptionTypeTest": {
     "startMessage": {
       "line1": "디토(Ditto)소비. '나도 저거'라고 따라 사는 소비 방식입니다.",
@@ -6195,6 +6255,9 @@
     "dontShow24h": "24시간 동안 안 보기",
     "installButton": "QuizOasis 추가",
     "manualInstructions": "위의 방법대로 수동으로 추가해주세요."
+  },
+  "scrollToTop": {
+    "label": "맨 위로"
   },
   "adTrafficGuard": {
     "title": "광고 이용 제한 안내",
