@@ -58,6 +58,10 @@ import {
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
 import {
+  phase3SoloDrinkingTypeQuestions,
+  phase3SoloDrinkingTypeResults,
+} from '@/lib/phase3SoloDrinkingTypeData';
+import {
   phase3SoloDiningTypeQuestions,
   phase3SoloDiningTypeResults,
 } from '@/lib/phase3SoloDiningTypeData';
@@ -413,6 +417,10 @@ const Phase3DittoConsumptionTypeTestClient = dynamic(
 );
 const Phase3ExercisePersistenceTypeTestClient = dynamic(
   () => import('@/components/Phase3ExercisePersistenceTypeTestClient'),
+  { ssr: false }
+);
+const Phase3SoloDrinkingTypeTestClient = dynamic(
+  () => import('@/components/Phase3SoloDrinkingTypeTestClient'),
   { ssr: false }
 );
 const Phase3SoloDiningTypeTestClient = dynamic(
@@ -2231,6 +2239,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['跟風消費', '消費模式', '趨勢', '網紅', '品牌'],
         vi: ['Tiêu dùng Ditto', 'Mẫu chi tiêu', 'Xu hướng', 'Influencer', 'Thương hiệu'],
         id: ['Konsumsi Ditto', 'Pola belanja', 'Tren', 'Influencer', 'Brand'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-solo-drinking-type') {
+    test = {
+      slug: 'phase3-solo-drinking-type',
+      title: {
+        ko: '나의 혼술 유형과 술버릇',
+        en: 'My Solo Drinking Type & Habits',
+        ja: '私のひとり飲みタイプと飲酒習慣',
+        'zh-CN': '我的独自饮酒类型与饮酒习惯',
+        'zh-TW': '我的獨自飲酒類型與飲酒習慣',
+        vi: 'Kiểu uống một mình & thói quen uống của tôi',
+        id: 'Tipe Minum Sendiri & Kebiasaan Minum Saya',
+      },
+      description: {
+        ko: '직관적으로 끌리는 이미지를 선택하면 나의 혼술 DNA와 술버릇을 정확하게 분석해 드립니다.',
+        en: 'Choose images that intuitively draw you in — we accurately analyze your solo drinking DNA and drinking habits.',
+        ja: '直感で惹かれる画像を選ぶと、あなたのひとり飲みDNAと飲酒習慣を正確に分析します。',
+        'zh-CN': '选择直觉吸引你的图片，我们将准确分析你的独自饮酒DNA和饮酒习惯。',
+        'zh-TW': '選擇直覺吸引你的圖片，我們將準確分析你的獨自飲酒DNA和飲酒習慣。',
+        vi: 'Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích chính xác DNA uống một mình và thói quen uống của bạn.',
+        id: 'Pilih gambar yang menarik secara intuitif — kami analisis DNA minum sendiri dan kebiasaan minummu dengan akurat.',
+      },
+      thumbnail: 'p3_test_solo_drinking_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['혼술', '술버릇', '음주', '안주', '공감'],
+        en: ['Solo drinking', 'Drinking habits', 'Alcohol', 'Snacks', 'Empathy'],
+        ja: ['ひとり飲み', '飲酒習慣', 'お酒', 'おつまみ', '共感'],
+        'zh-CN': ['独自饮酒', '饮酒习惯', '喝酒', '下酒菜', '共鸣'],
+        'zh-TW': ['獨自飲酒', '飲酒習慣', '喝酒', '下酒菜', '共鳴'],
+        vi: ['Uống một mình', 'Thói quen uống', 'Rượu bia', 'Mồi nhậu', 'Đồng cảm'],
+        id: ['Minum sendiri', 'Kebiasaan minum', 'Alkohol', 'Camilan', 'Empati'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7406,6 +7451,66 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3DramaLifeCharacterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-solo-drinking-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-solo-drinking-type',
+      title: {
+        ko: '나의 혼술 유형과 술버릇',
+        en: 'My Solo Drinking Type & Habits',
+        ja: '私のひとり飲みタイプと飲酒習慣',
+        'zh-CN': '我的独自饮酒类型与饮酒习惯',
+        'zh-TW': '我的獨自飲酒類型與飲酒習慣',
+        vi: 'Kiểu uống một mình & thói quen uống của tôi',
+        id: 'Tipe Minum Sendiri & Kebiasaan Minum Saya',
+      },
+      description: {
+        ko: '직관적으로 끌리는 이미지를 선택하면 나의 혼술 DNA와 술버릇을 정확하게 분석해 드립니다.',
+        en: 'Choose images that intuitively draw you in — we accurately analyze your solo drinking DNA and drinking habits.',
+        ja: '直感で惹かれる画像を選ぶと、あなたのひとり飲みDNAと飲酒習慣を正確に分析します。',
+        'zh-CN': '选择直觉吸引你的图片，我们将准确分析你的独自饮酒DNA和饮酒习惯。',
+        'zh-TW': '選擇直覺吸引你的圖片，我們將準確分析你的獨自飲酒DNA和飲酒習慣。',
+        vi: 'Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích chính xác DNA uống một mình và thói quen uống của bạn.',
+        id: 'Pilih gambar yang menarik secara intuitif — kami analisis DNA minum sendiri dan kebiasaan minummu dengan akurat.',
+      },
+      thumbnail: 'p3_test_solo_drinking_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['혼술', '술버릇', '음주', '안주', '공감'],
+        en: ['Solo drinking', 'Drinking habits', 'Alcohol', 'Snacks', 'Empathy'],
+        ja: ['ひとり飲み', '飲酒習慣', 'お酒', 'おつまみ', '共感'],
+        'zh-CN': ['独自饮酒', '饮酒习惯', '喝酒', '下酒菜', '共鸣'],
+        'zh-TW': ['獨自飲酒', '飲酒習慣', '喝酒', '下酒菜', '共鳴'],
+        vi: ['Uống một mình', 'Thói quen uống', 'Rượu bia', 'Mồi nhậu', 'Đồng cảm'],
+        id: ['Minum sendiri', 'Kebiasaan minum', 'Alkohol', 'Camilan', 'Empati'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3SoloDrinkingTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SoloDrinkingTypeQuestions}
+          results={phase3SoloDrinkingTypeResults}
+          questionCount={phase3SoloDrinkingTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );

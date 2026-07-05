@@ -1422,6 +1422,62 @@
       "popularTestsTop5": "🔥 今人気のテストトップ5"
     }
   },
+  "phase3SoloDrinkingTypeTest": {
+    "startMessage": {
+      "line1": "ひとり飲みのスタイルに性格が表れます。",
+      "line2": "ムードライトをつけてワインを嗜む人、布団の中でビールを開ける人、おつまみを丁寧に用意する人、冷蔵庫から缶ビールを取り出してすぐ飲む人。",
+      "line3": "同じひとり飲みなのに、なぜこんなに違うのでしょう？ひとり飲みは誰にも見られないときの、最も正直な自分です。",
+      "line4": "直感で惹かれる画像を選ぶと、あなたのひとり飲みDNAと飲酒習慣を正確に分析します。",
+      "line5": "私のひとり飲みタイプを見つける 🍺 分析開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私のひとり飲みタイプと飲酒習慣）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "questionHint": "自分のひとり飲みスタイルに最も近い画像を直感で選んでください。",
+      "soloDrinkingType": "🍺 ひとり飲みタイプ",
+      "soloDrinkingKeywords": "🔑 ひとり飲みキーワード",
+      "favoriteDrinks": "🍷 よく飲むお酒",
+      "favoriteSnacks": "🍖 定番おつまみ",
+      "personalityTrait": "💡 表れる性格",
+      "drinkingHabit": "🍻 私の飲酒習慣",
+      "drinkingTip": "✨ ひとり飲みのコツ",
+      "oneLineReview": "💬 ひとり飲み一言レビュー",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私のひとり飲みタイプと飲酒習慣 🍺 12問画像でひとり飲みDNA分析",
+      "startKakao": "私のひとり飲みタイプと飲酒習慣 🍺 12問画像でひとり飲みDNA分析",
+      "startWechat": "私のひとり飲みタイプと飲酒習慣 🍺 12問画像でひとり飲みDNA分析",
+      "startWhatsapp": "私のひとり飲みタイプと飲酒習慣 🍺 12問画像でひとり飲みDNA分析",
+      "startTelegram": "私のひとり飲みタイプと飲酒習慣 🍺 12問画像でひとり飲みDNA分析",
+      "startLine": "私のひとり飲みタイプと飲酒習慣 🍺 12問画像でひとり飲みDNA分析"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 人気テスト TOP5"
+    }
+  },
   "phase3SoloDiningTypeTest": {
     "startMessage": {
       "line1": "ひとりご飯のスタイルに性格が表れます。",

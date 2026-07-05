@@ -1462,6 +1462,62 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3SoloDrinkingTypeTest": {
+    "startMessage": {
+      "line1": "How you drink alone reveals your entire personality.",
+      "line2": "Some dim the lights and sip wine, some crack a beer in bed, some carefully prepare snacks, some grab a can from the fridge and drink right away.",
+      "line3": "Same solo drinking — why is it so different? Solo drinking is the most honest version of you when nobody is watching.",
+      "line4": "Choose images that intuitively draw you in — we accurately analyze your solo drinking DNA and drinking habits.",
+      "line5": "Find my solo drinking type 🍺 Start analysis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (My Solo Drinking Type & Habits)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "questionHint": "Intuitively choose the image that best matches your solo drinking style.",
+      "soloDrinkingType": "🍺 Solo drinking type",
+      "soloDrinkingKeywords": "🔑 Solo drinking keywords",
+      "favoriteDrinks": "🍷 Favorite drinks",
+      "favoriteSnacks": "🍖 Go-to snacks",
+      "personalityTrait": "💡 Personality revealed",
+      "drinkingHabit": "🍻 My drinking habit",
+      "drinkingTip": "✨ Solo drinking tip",
+      "oneLineReview": "💬 One-line solo drinking review",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Solo Drinking Type & Habits 🍺 Analyze my solo drinking DNA in 12 image questions",
+      "startKakao": "My Solo Drinking Type & Habits 🍺 Analyze my solo drinking DNA in 12 image questions",
+      "startWechat": "My Solo Drinking Type & Habits 🍺 Analyze my solo drinking DNA in 12 image questions",
+      "startWhatsapp": "My Solo Drinking Type & Habits 🍺 Analyze my solo drinking DNA in 12 image questions",
+      "startTelegram": "My Solo Drinking Type & Habits 🍺 Analyze my solo drinking DNA in 12 image questions",
+      "startLine": "My Solo Drinking Type & Habits 🍺 Analyze my solo drinking DNA in 12 image questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3SoloDiningTypeTest": {
     "startMessage": {
       "line1": "Your solo dining style reveals your personality.",

@@ -1421,6 +1421,62 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3SoloDrinkingTypeTest": {
+    "startMessage": {
+      "line1": "Cara minum sendiri menunjukkan seluruh kepribadianmu.",
+      "line2": "Ada yang menyalakan lampu mood dan menyeruput wine, ada yang buka bir di kasur, ada yang menyiapkan camilan dengan teliti, ada yang ambil bir kaleng dari kulkas langsung minum.",
+      "line3": "Sama-sama minum sendiri — kenapa bisa beda jauh? Minum sendiri adalah dirimu yang paling jujur saat tidak ada yang melihat.",
+      "line4": "Pilih gambar yang menarik secara intuitif — kami analisis DNA minum sendiri dan kebiasaan minummu dengan akurat.",
+      "line5": "Temukan tipe minum sendiriku 🍺 Mulai analisis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tipe Minum Sendiri & Kebiasaan Minum Saya)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "questionHint": "Pilih secara intuitif gambar yang paling mirip gaya minum sendirimu.",
+      "soloDrinkingType": "🍺 Tipe minum sendiri",
+      "soloDrinkingKeywords": "🔑 Kata kunci minum sendiri",
+      "favoriteDrinks": "🍷 Minuman favorit",
+      "favoriteSnacks": "🍖 Camilan andalan",
+      "personalityTrait": "💡 Kepribadian yang terlihat",
+      "drinkingHabit": "🍻 Kebiasaan minum saya",
+      "drinkingTip": "✨ Tips minum sendiri",
+      "oneLineReview": "💬 Ulasan minum sendiri satu baris",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tipe Minum Sendiri & Kebiasaan Minum 🍺 Analisis DNA minum sendiri lewat 12 gambar",
+      "startKakao": "Tipe Minum Sendiri & Kebiasaan Minum 🍺 Analisis DNA minum sendiri lewat 12 gambar",
+      "startWechat": "Tipe Minum Sendiri & Kebiasaan Minum 🍺 Analisis DNA minum sendiri lewat 12 gambar",
+      "startWhatsapp": "Tipe Minum Sendiri & Kebiasaan Minum 🍺 Analisis DNA minum sendiri lewat 12 gambar",
+      "startTelegram": "Tipe Minum Sendiri & Kebiasaan Minum 🍺 Analisis DNA minum sendiri lewat 12 gambar",
+      "startLine": "Tipe Minum Sendiri & Kebiasaan Minum 🍺 Analisis DNA minum sendiri lewat 12 gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3SoloDiningTypeTest": {
     "startMessage": {
       "line1": "Cara makan sendiri menunjukkan kepribadianmu.",

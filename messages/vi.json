@@ -1421,6 +1421,62 @@
       "popularTestsTop5": "🔥 Top 5 test phổ biến"
     }
   },
+  "phase3SoloDrinkingTypeTest": {
+    "startMessage": {
+      "line1": "Cách uống một mình phản ánh toàn bộ tính cách của bạn.",
+      "line2": "Có người bật đèn mood và nhấp rượu vang, có người mở bia trên giường, có người chuẩn bị mồi cẩn thận, có người lấy bia lon từ tủ lạnh uống ngay.",
+      "line3": "Cùng uống một mình mà sao khác nhau thế? Uống một mình là bản thân chân thật nhất khi không ai nhìn.",
+      "line4": "Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích chính xác DNA uống một mình và thói quen uống của bạn.",
+      "line5": "Tìm kiểu uống một mình của tôi 🍺 Bắt đầu phân tích"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kiểu uống một mình & thói quen uống của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "questionHint": "Hãy chọn trực giác hình ảnh giống phong cách uống một mình của bạn nhất.",
+      "soloDrinkingType": "🍺 Kiểu uống một mình",
+      "soloDrinkingKeywords": "🔑 Từ khóa uống một mình",
+      "favoriteDrinks": "🍷 Rượu thường uống",
+      "favoriteSnacks": "🍖 Mồi quen thuộc",
+      "personalityTrait": "💡 Tính cách lộ ra",
+      "drinkingHabit": "🍻 Thói quen uống của tôi",
+      "drinkingTip": "✨ Mẹo uống một mình",
+      "oneLineReview": "💬 Đánh giá uống một mình một dòng",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kiểu uống một mình & thói quen uống 🍺 Phân tích DNA uống một mình qua 12 hình ảnh",
+      "startKakao": "Kiểu uống một mình & thói quen uống 🍺 Phân tích DNA uống một mình qua 12 hình ảnh",
+      "startWechat": "Kiểu uống một mình & thói quen uống 🍺 Phân tích DNA uống một mình qua 12 hình ảnh",
+      "startWhatsapp": "Kiểu uống một mình & thói quen uống 🍺 Phân tích DNA uống một mình qua 12 hình ảnh",
+      "startTelegram": "Kiểu uống một mình & thói quen uống 🍺 Phân tích DNA uống một mình qua 12 hình ảnh",
+      "startLine": "Kiểu uống một mình & thói quen uống 🍺 Phân tích DNA uống một mình qua 12 hình ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
+    }
+  },
   "phase3SoloDiningTypeTest": {
     "startMessage": {
       "line1": "Cách ăn một mình phản ánh tính cách của bạn.",
