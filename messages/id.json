@@ -1477,6 +1477,64 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3InstaFeedPersonaAnalysisTest": {
+    "startMessage": {
+      "line1": "Feed Instagram adalah kartu nama kedua kamu.",
+      "line2": "Foto apa yang kamu unggah, filter apa yang kamu pakai, siapa yang kamu ikuti, kapan kamu berhenti scroll — setiap pilihan mencerminkan diri yang ingin kamu tunjukkan ke dunia.",
+      "line3": "Pilih gambar yang menarik secara intuitif — kami analisis gaya kurasi Instagram, kebiasaan unggah, dan pola konsumsi untuk menemukan persona Instagram kamu.",
+      "line4": "Jika kamu bermimpi jadi influencer, kamu bisa melihat arah yang sedang kamu tempuh sekarang.",
+      "line5": "Temukan persona Instagram-ku 📸 Mulai analisis feed"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Analisis Kecenderungan Feed Instagram Saya)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "questionHint": "Pilih secara intuitif gambar yang paling mirip feed Instagram-mu.",
+      "instaPersona": "📸 Persona Instagram",
+      "uploadPattern": "📤 Pola unggahan",
+      "mainContent": "🎬 Konten utama",
+      "mostUsedFeature": "⚙️ Fitur paling sering dipakai",
+      "instaGoal": "🎯 Tujuan Instagram",
+      "strength": "💪 Kelebihan",
+      "caution": "⚠️ Perhatian",
+      "influencerGrowthTip": "🚀 Tips pertumbuhan influencer",
+      "personaCombo": "🤝 Kombinasi persona sempurna",
+      "oneLineReview": "💬 Ulasan Instagram satu baris",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Analisis Kecenderungan Feed Instagram 📸 Temukan persona lewat 12 gambar",
+      "startKakao": "Analisis Kecenderungan Feed Instagram 📸 Temukan persona lewat 12 gambar",
+      "startWechat": "Analisis Kecenderungan Feed Instagram 📸 Temukan persona lewat 12 gambar",
+      "startWhatsapp": "Analisis Kecenderungan Feed Instagram 📸 Temukan persona lewat 12 gambar",
+      "startTelegram": "Analisis Kecenderungan Feed Instagram 📸 Temukan persona lewat 12 gambar",
+      "startLine": "Analisis Kecenderungan Feed Instagram 📸 Temukan persona lewat 12 gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "Kamu beli membership gym tahunan — berapa kali kamu benar-benar pergi?",

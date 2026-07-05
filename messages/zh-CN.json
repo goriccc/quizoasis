@@ -1477,6 +1477,64 @@
       "popularTestsTop5": "🔥 热门测试 TOP5"
     }
   },
+  "phase3InstaFeedPersonaAnalysisTest": {
+    "startMessage": {
+      "line1": "Instagram 动态是你的第二张名片。",
+      "line2": "发什么照片、用什么滤镜、关注哪些账号、何时停止滑动——每一个选择都反映着你想向世界展示的自己。",
+      "line3": "选择直觉吸引你的图片，我们将分析你的 Instagram 策展方式、发布习惯和消费模式，找出你的 Instagram 人设。",
+      "line4": "如果你梦想成为网红，可以了解你现在的方向指向哪里。",
+      "line5": "找出我的 Instagram 人设 📸 开始动态分析"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的 Instagram 动态倾向分析）",
+      "goToTest": "开始测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "questionHint": "请直觉选择最符合你 Instagram 动态的图片。",
+      "instaPersona": "📸 Instagram 人设",
+      "uploadPattern": "📤 发布模式",
+      "mainContent": "🎬 主要内容",
+      "mostUsedFeature": "⚙️ 最常用功能",
+      "instaGoal": "🎯 Instagram 目标",
+      "strength": "💪 优势",
+      "caution": "⚠️ 注意点",
+      "influencerGrowthTip": "🚀 网红成长建议",
+      "personaCombo": "🤝 绝配人设组合",
+      "oneLineReview": "💬 Instagram 一句话评价",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的 Instagram 动态倾向分析 📸 12道图片题找出 Instagram 人设",
+      "startKakao": "我的 Instagram 动态倾向分析 📸 12道图片题找出 Instagram 人设",
+      "startWechat": "我的 Instagram 动态倾向分析 📸 12道图片题找出 Instagram 人设",
+      "startWhatsapp": "我的 Instagram 动态倾向分析 📸 12道图片题找出 Instagram 人设",
+      "startTelegram": "我的 Instagram 动态倾向分析 📸 12道图片题找出 Instagram 人设",
+      "startLine": "我的 Instagram 动态倾向分析 📸 12道图片题找出 Instagram 人设"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 TOP5",
+      "popularTestsTop5": "🔥 热门测试 TOP5"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "办了健身房年卡，你实际去了几次？",

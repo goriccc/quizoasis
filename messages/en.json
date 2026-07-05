@@ -1518,6 +1518,64 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests"
     }
   },
+  "phase3InstaFeedPersonaAnalysisTest": {
+    "startMessage": {
+      "line1": "Your Instagram feed is your second business card.",
+      "line2": "What photos you post, what filters you use, who you follow, when you stop scrolling — every choice reflects the self you want to show the world.",
+      "line3": "Choose images that intuitively draw you in — we analyze your Instagram curation style, upload habits, and consumption patterns to find your feed persona.",
+      "line4": "If you dream of becoming an influencer, you can see where your direction is heading right now.",
+      "line5": "Find my Instagram persona 📸 Start feed analysis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (My Instagram Feed Persona Analysis)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "questionHint": "Intuitively choose the image that best matches your Instagram feed.",
+      "instaPersona": "📸 Instagram persona",
+      "uploadPattern": "📤 Upload pattern",
+      "mainContent": "🎬 Main content",
+      "mostUsedFeature": "⚙️ Most-used feature",
+      "instaGoal": "🎯 Instagram goal",
+      "strength": "💪 Strength",
+      "caution": "⚠️ Caution",
+      "influencerGrowthTip": "🚀 Influencer growth tip",
+      "personaCombo": "🤝 Perfect persona match",
+      "oneLineReview": "💬 One-line Instagram review",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Instagram Feed Persona Analysis 📸 Find my Instagram persona in 12 image questions",
+      "startKakao": "My Instagram Feed Persona Analysis 📸 Find my Instagram persona in 12 image questions",
+      "startWechat": "My Instagram Feed Persona Analysis 📸 Find my Instagram persona in 12 image questions",
+      "startWhatsapp": "My Instagram Feed Persona Analysis 📸 Find my Instagram persona in 12 image questions",
+      "startTelegram": "My Instagram Feed Persona Analysis 📸 Find my Instagram persona in 12 image questions",
+      "startLine": "My Instagram Feed Persona Analysis 📸 Find my Instagram persona in 12 image questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Test Recommendations",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "How many times did you actually go after buying that annual gym membership?",

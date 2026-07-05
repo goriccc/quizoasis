@@ -1478,6 +1478,64 @@
       "popularTestsTop5": "🔥 人気テスト TOP5"
     }
   },
+  "phase3InstaFeedPersonaAnalysisTest": {
+    "startMessage": {
+      "line1": "Instagramのフィードは、あなたの第二の名刺です。",
+      "line2": "どんな写真を投稿し、どんなフィルターを使い、どんなアカウントをフォローし、いつスクロールを止めるか。すべての選択が、世界に見せたい自分の姿です。",
+      "line3": "直感で惹かれる画像を選ぶと、Instagramのキュレーション方法、投稿習慣、消費パターンを分析し、あなたのインスタペルソナを見つけます。",
+      "line4": "インフルエンサーを目指す方なら、今の方向性がどこを向いているか分かります。",
+      "line5": "私のインスタペルソナを見つける 📸 フィード分析開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私のインスタフィード傾向分析）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "questionHint": "自分のインスタフィードに最も近い画像を直感で選んでください。",
+      "instaPersona": "📸 インスタペルソナ",
+      "uploadPattern": "📤 投稿パターン",
+      "mainContent": "🎬 メインコンテンツ",
+      "mostUsedFeature": "⚙️ よく使う機能",
+      "instaGoal": "🎯 インスタ目標",
+      "strength": "💪 強み",
+      "caution": "⚠️ 注意点",
+      "influencerGrowthTip": "🚀 インフルエンサー成長のヒント",
+      "personaCombo": "🤝 相性抜群ペルソナ",
+      "oneLineReview": "💬 インスタ一言レビュー",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私のインスタフィード傾向分析 📸 12問画像でインスタペルソナを見つける",
+      "startKakao": "私のインスタフィード傾向分析 📸 12問画像でインスタペルソナを見つける",
+      "startWechat": "私のインスタフィード傾向分析 📸 12問画像でインスタペルソナを見つける",
+      "startWhatsapp": "私のインスタフィード傾向分析 📸 12問画像でインスタペルソナを見つける",
+      "startTelegram": "私のインスタフィード傾向分析 📸 12問画像でインスタペルソナを見つける",
+      "startLine": "私のインスタフィード傾向分析 📸 12問画像でインスタペルソナを見つける"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 人気テスト TOP5"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "年間ジム会員を契約して、実際に何回行きましたか？",

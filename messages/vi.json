@@ -1477,6 +1477,64 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
     }
   },
+  "phase3InstaFeedPersonaAnalysisTest": {
+    "startMessage": {
+      "line1": "Feed Instagram là danh thiếp thứ hai của bạn.",
+      "line2": "Bạn đăng ảnh gì, dùng filter nào, theo dõi ai, khi nào dừng cuộn — mọi lựa chọn phản ánh bản thân bạn muốn thể hiện với thế giới.",
+      "line3": "Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — chúng tôi phân tích cách bạn sắp xếp feed, thói quen đăng bài và mô hình tiêu thụ để tìm persona Instagram của bạn.",
+      "line4": "Nếu bạn mơ ước trở thành influencer, bạn có thể thấy hướng đi hiện tại đang hướng về đâu.",
+      "line5": "Tìm persona Instagram của tôi 📸 Bắt đầu phân tích feed"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Phân tích xu hướng feed Instagram của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "questionHint": "Hãy chọn trực giác hình ảnh giống feed Instagram của bạn nhất.",
+      "instaPersona": "📸 Persona Instagram",
+      "uploadPattern": "📤 Mẫu đăng bài",
+      "mainContent": "🎬 Nội dung chính",
+      "mostUsedFeature": "⚙️ Tính năng dùng nhiều nhất",
+      "instaGoal": "🎯 Mục tiêu Instagram",
+      "strength": "💪 Điểm mạnh",
+      "caution": "⚠️ Lưu ý",
+      "influencerGrowthTip": "🚀 Mẹo phát triển influencer",
+      "personaCombo": "🤝 Persona kết hợp hoàn hảo",
+      "oneLineReview": "💬 Đánh giá Instagram một dòng",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Phân tích xu hướng feed Instagram 📸 Tìm persona qua 12 hình ảnh",
+      "startKakao": "Phân tích xu hướng feed Instagram 📸 Tìm persona qua 12 hình ảnh",
+      "startWechat": "Phân tích xu hướng feed Instagram 📸 Tìm persona qua 12 hình ảnh",
+      "startWhatsapp": "Phân tích xu hướng feed Instagram 📸 Tìm persona qua 12 hình ảnh",
+      "startTelegram": "Phân tích xu hướng feed Instagram 📸 Tìm persona qua 12 hình ảnh",
+      "startLine": "Phân tích xu hướng feed Instagram 📸 Tìm persona qua 12 hình ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
+    }
+  },
   "phase3ExercisePersistenceTypeTest": {
     "startMessage": {
       "line1": "Bạn đã mua thẻ gym năm và thực sự đi bao nhiêu lần?",

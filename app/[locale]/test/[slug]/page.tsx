@@ -62,6 +62,10 @@ import {
   phase3SoloDiningTypeResults,
 } from '@/lib/phase3SoloDiningTypeData';
 import {
+  phase3InstaFeedPersonaAnalysisQuestions,
+  phase3InstaFeedPersonaAnalysisResults,
+} from '@/lib/phase3InstaFeedPersonaAnalysisData';
+import {
   phase3ChronotypeMorningEveningQuestions,
   phase3ChronotypeMorningEveningResults,
 } from '@/lib/phase3ChronotypeMorningEveningData';
@@ -413,6 +417,10 @@ const Phase3ExercisePersistenceTypeTestClient = dynamic(
 );
 const Phase3SoloDiningTypeTestClient = dynamic(
   () => import('@/components/Phase3SoloDiningTypeTestClient'),
+  { ssr: false }
+);
+const Phase3InstaFeedPersonaAnalysisTestClient = dynamic(
+  () => import('@/components/Phase3InstaFeedPersonaAnalysisTestClient'),
   { ssr: false }
 );
 const Phase3ChronotypeMorningEveningTestClient = dynamic(
@@ -2223,6 +2231,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['跟風消費', '消費模式', '趨勢', '網紅', '品牌'],
         vi: ['Tiêu dùng Ditto', 'Mẫu chi tiêu', 'Xu hướng', 'Influencer', 'Thương hiệu'],
         id: ['Konsumsi Ditto', 'Pola belanja', 'Tren', 'Influencer', 'Brand'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-insta-feed-persona-analysis') {
+    test = {
+      slug: 'phase3-insta-feed-persona-analysis',
+      title: {
+        ko: '나의 인스타 피드 성향 분석',
+        en: 'My Instagram Feed Persona Analysis',
+        ja: '私のインスタフィード傾向分析',
+        'zh-CN': '我的Instagram feed倾向分析',
+        'zh-TW': '我的Instagram feed傾向分析',
+        vi: 'Phân tích xu hướng feed Instagram của tôi',
+        id: 'Analisis Persona Feed Instagram Saya',
+      },
+      description: {
+        ko: '직관적으로 끌리는 이미지를 선택하면 나의 인스타그램 큐레이션 방식과 업로드 습관, 소비 패턴을 분석해 나의 인스타 페르소나를 찾아드립니다.',
+        en: 'Choose images that intuitively draw you in — we analyze your Instagram curation style, upload habits, and consumption patterns to find your feed persona.',
+        ja: '直感で惹かれる画像を選ぶと、Instagramのキュレーション方式・投稿習慣・消費パターンを分析し、あなたのインスタペルソナを見つけます。',
+        'zh-CN': '选择直觉吸引你的图片，分析你的Instagram策展方式、发布习惯和消费模式，找出你的Instagram persona。',
+        'zh-TW': '選擇直覺吸引你的圖片，分析你的Instagram策展方式、發布習慣和消費模式，找出你的Instagram persona。',
+        vi: 'Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích cách curate, thói quen đăng bài và mô hình tiêu thụ Instagram để tìm persona feed của bạn.',
+        id: 'Pilih gambar yang menarik secara intuitif — kami analisis gaya kurasi, kebiasaan upload, dan pola konsumsi Instagram untuk menemukan persona feed Anda.',
+      },
+      thumbnail: 'p3_test_insta_feed_persona_analysis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['인스타그램', '소셜미디어', '인플루언서'],
+        en: ['Instagram', 'Social media', 'Influencer'],
+        ja: ['Instagram', 'ソーシャルメディア', 'インフルエンサー'],
+        'zh-CN': ['Instagram', '社交媒体', '网红'],
+        'zh-TW': ['Instagram', '社交媒體', '網紅'],
+        vi: ['Instagram', 'Mạng xã hội', 'Influencer'],
+        id: ['Instagram', 'Media sosial', 'Influencer'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7361,6 +7406,66 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3DramaLifeCharacterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-insta-feed-persona-analysis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-insta-feed-persona-analysis',
+      title: {
+        ko: '나의 인스타 피드 성향 분석',
+        en: 'My Instagram Feed Persona Analysis',
+        ja: '私のインスタフィード傾向分析',
+        'zh-CN': '我的Instagram feed倾向分析',
+        'zh-TW': '我的Instagram feed傾向分析',
+        vi: 'Phân tích xu hướng feed Instagram của tôi',
+        id: 'Analisis Persona Feed Instagram Saya',
+      },
+      description: {
+        ko: '직관적으로 끌리는 이미지를 선택하면 나의 인스타그램 큐레이션 방식과 업로드 습관, 소비 패턴을 분석해 나의 인스타 페르소나를 찾아드립니다.',
+        en: 'Choose images that intuitively draw you in — we analyze your Instagram curation style, upload habits, and consumption patterns to find your feed persona.',
+        ja: '直感で惹かれる画像を選ぶと、Instagramのキュレーション方式・投稿習慣・消費パターンを分析し、あなたのインスタペルソナを見つけます。',
+        'zh-CN': '选择直觉吸引你的图片，分析你的Instagram策展方式、发布习惯和消费模式，找出你的Instagram persona。',
+        'zh-TW': '選擇直覺吸引你的圖片，分析你的Instagram策展方式、發布習慣和消費模式，找出你的Instagram persona。',
+        vi: 'Chọn hình ảnh bạn thấy hấp dẫn theo trực giác — phân tích cách curate, thói quen đăng bài và mô hình tiêu thụ Instagram để tìm persona feed của bạn.',
+        id: 'Pilih gambar yang menarik secara intuitif — kami analisis gaya kurasi, kebiasaan upload, dan pola konsumsi Instagram untuk menemukan persona feed Anda.',
+      },
+      thumbnail: 'p3_test_insta_feed_persona_analysis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['인스타그램', '소셜미디어', '인플루언서'],
+        en: ['Instagram', 'Social media', 'Influencer'],
+        ja: ['Instagram', 'ソーシャルメディア', 'インフルエンサー'],
+        'zh-CN': ['Instagram', '社交媒体', '网红'],
+        'zh-TW': ['Instagram', '社交媒體', '網紅'],
+        vi: ['Instagram', 'Mạng xã hội', 'Influencer'],
+        id: ['Instagram', 'Media sosial', 'Influencer'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3InstaFeedPersonaAnalysisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3InstaFeedPersonaAnalysisQuestions}
+          results={phase3InstaFeedPersonaAnalysisResults}
+          questionCount={phase3InstaFeedPersonaAnalysisQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
         />
       </>
     );
