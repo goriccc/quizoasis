@@ -9474,6 +9474,61 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3PersonalityWeatherTypeTest": {
+    "startMessage": {
+      "line1": "Cuaca berbicara tanpa kata, tapi mengekspresikan segalanya.",
+      "line2": "Ada hari cerah menyilaukan, hari hujan lembut, dan hari salju turun tanpa ada yang sadari.",
+      "line3": "Manusia pun sama. Ada yang seperti hari cerah — kehadirannya saja sudah energi. Ada yang seperti kabut — misterius. Ada yang seperti hujan deras — emosinya jujur.",
+      "line4": "Pilih gambar yang menarik secara intuitif — kami temukan cuaca yang paling mirip kepribadianmu. Gambar hasilnya begitu estetik, kamu pasti ingin unggah ke Instagram story.",
+      "line5": "Temukan cuaca kepribadianku ⛅ Mulai diagnosis cuaca"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Kepribadianku Cuaca Apa?)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "personalityWeather": "Cuaca kepribadian",
+      "weatherKeywords": "Kata kunci cuaca",
+      "weatherPersonTrait": "Orang dengan cuaca ini",
+      "weatherWeakness": "Kelemahan cuaca ini",
+      "goodMatchWeather": "Cuaca pasangan yang cocok",
+      "clashWeather": "Cuaca yang bentrok",
+      "weatherMessage": "Pesan cuaca",
+      "weatherOneLiner": "Nuansa cuaca satu baris"
+    },
+    "shareMessages": {
+      "default": "Cuaca kepribadianku {name}! ⛅ Gambar hasilnya terlalu estetik jadi kuunggah ke story → Kamu cuaca apa?",
+      "kakao": "Cuaca kepribadianku {name}! ⛅ Gambar hasilnya terlalu estetik jadi kuunggah ke story → Kamu cuaca apa?",
+      "wechat": "Cuaca kepribadianku {name}! ⛅ Gambar hasilnya terlalu estetik jadi kuunggah ke story → Kamu cuaca apa?",
+      "whatsapp": "Cuaca kepribadianku {name}! ⛅ Gambar hasilnya terlalu estetik jadi kuunggah ke story → Kamu cuaca apa?",
+      "telegram": "Cuaca kepribadianku {name}! ⛅ Gambar hasilnya terlalu estetik jadi kuunggah ke story → Kamu cuaca apa?",
+      "line": "Cuaca kepribadianku {name}! ⛅ Gambar hasilnya terlalu estetik jadi kuunggah ke story → Kamu cuaca apa?",
+      "startDefault": "Kepribadianku cuaca apa? ⛅ 12 pertanyaan gambar",
+      "startKakao": "Kepribadianku cuaca apa? ⛅ 12 pertanyaan gambar",
+      "startWechat": "Kepribadianku cuaca apa? ⛅ 12 pertanyaan gambar",
+      "startWhatsapp": "Kepribadianku cuaca apa? ⛅ 12 pertanyaan gambar",
+      "startTelegram": "Kepribadianku cuaca apa? ⛅ 12 pertanyaan gambar",
+      "startLine": "Kepribadianku cuaca apa? ⛅ 12 pertanyaan gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

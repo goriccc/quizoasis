@@ -9474,6 +9474,61 @@
       "popularTestsTop5": "🔥 Top 5 test thịnh hành"
     }
   },
+  "phase3PersonalityWeatherTypeTest": {
+    "startMessage": {
+      "line1": "Thời tiết không cần nói gì vẫn thể hiện được mọi thứ.",
+      "line2": "Có những ngày nắng rực rỡ, những ngày mưa ẩm ướt, và những ngày tuyết rơi mà không ai hay biết.",
+      "line3": "Con người cũng vậy. Có người như ngày nắng — sự hiện diện đã là năng lượng. Có người như sương mù — bí ẩn. Có người như mưa rào — cảm xúc thẳng thắn.",
+      "line4": "Chọn hình ảnh thu hút bạn theo trực giác — chúng tôi tìm thời tiết giống tính cách bạn nhất. Hình kết quả quá đẹp bạn sẽ muốn đăng story Instagram.",
+      "line5": "Tìm thời tiết tính cách của tôi ⛅ Bắt đầu chẩn đoán"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Tính cách tôi là thời tiết gì?)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "personalityWeather": "Thời tiết tính cách",
+      "weatherKeywords": "Từ khóa thời tiết",
+      "weatherPersonTrait": "Người mang thời tiết này",
+      "weatherWeakness": "Điểm yếu của thời tiết này",
+      "goodMatchWeather": "Thời tiết hợp nhau",
+      "clashWeather": "Thời tiết xung đột",
+      "weatherMessage": "Lời nhắn thời tiết",
+      "weatherOneLiner": "Cảm xúc thời tiết một dòng"
+    },
+    "shareMessages": {
+      "default": "Thời tiết tính cách của tôi là {name}! ⛅ Hình kết quả quá đẹp tôi đã đăng story → Bạn là thời tiết gì?",
+      "kakao": "Thời tiết tính cách của tôi là {name}! ⛅ Hình kết quả quá đẹp tôi đã đăng story → Bạn là thời tiết gì?",
+      "wechat": "Thời tiết tính cách của tôi là {name}! ⛅ Hình kết quả quá đẹp tôi đã đăng story → Bạn là thời tiết gì?",
+      "whatsapp": "Thời tiết tính cách của tôi là {name}! ⛅ Hình kết quả quá đẹp tôi đã đăng story → Bạn là thời tiết gì?",
+      "telegram": "Thời tiết tính cách của tôi là {name}! ⛅ Hình kết quả quá đẹp tôi đã đăng story → Bạn là thời tiết gì?",
+      "line": "Thời tiết tính cách của tôi là {name}! ⛅ Hình kết quả quá đẹp tôi đã đăng story → Bạn là thời tiết gì?",
+      "startDefault": "Tính cách tôi là thời tiết gì? ⛅ 12 câu hỏi hình ảnh",
+      "startKakao": "Tính cách tôi là thời tiết gì? ⛅ 12 câu hỏi hình ảnh",
+      "startWechat": "Tính cách tôi là thời tiết gì? ⛅ 12 câu hỏi hình ảnh",
+      "startWhatsapp": "Tính cách tôi là thời tiết gì? ⛅ 12 câu hỏi hình ảnh",
+      "startTelegram": "Tính cách tôi là thời tiết gì? ⛅ 12 câu hỏi hình ảnh",
+      "startLine": "Tính cách tôi là thời tiết gì? ⛅ 12 câu hỏi hình ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

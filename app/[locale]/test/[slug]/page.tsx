@@ -111,6 +111,11 @@ import {
   phase3PersonalityColorFinderTestFallback,
 } from '@/lib/phase3PersonalityColorFinderData';
 import {
+  phase3PersonalityWeatherTypeQuestions,
+  phase3PersonalityWeatherTypeResults,
+  phase3PersonalityWeatherTypeTestFallback,
+} from '@/lib/phase3PersonalityWeatherTypeData';
+import {
   phase3GameLoveBalanceExtremeQuestions,
   phase3GameLoveBalanceExtremeResults,
 } from '@/lib/phase3GameLoveBalanceExtremeData';
@@ -500,6 +505,10 @@ const Phase3SnsAlgorithmTypeTestClient = dynamic(
 );
 const Phase3PersonalityColorFinderTestClient = dynamic(
   () => import('@/components/Phase3PersonalityColorFinderTestClient'),
+  { ssr: false }
+);
+const Phase3PersonalityWeatherTypeTestClient = dynamic(
+  () => import('@/components/Phase3PersonalityWeatherTypeTestClient'),
   { ssr: false }
 );
 const Phase3GameLoveBalanceExtremeTestClient = dynamic(
@@ -1201,6 +1210,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       slug: 'phase3-personality-color-finder',
       ...phase3PersonalityColorFinderTestFallback,
       thumbnail: 'p3_test_personality_color_finder.jpg',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-personality-weather-type') {
+    test = {
+      slug: 'phase3-personality-weather-type',
+      ...phase3PersonalityWeatherTypeTestFallback,
+      thumbnail: 'p3_test_personality_weather_type.webp',
       type: 'psychology',
       category: 'personality',
       play_count: 0,
@@ -5304,6 +5324,35 @@ export default async function TestPage({ params }: Props) {
           questions={phase3PersonalityColorFinderQuestions}
           results={phase3PersonalityColorFinderResults}
           questionCount={phase3PersonalityColorFinderQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-personality-weather-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-personality-weather-type',
+      ...phase3PersonalityWeatherTypeTestFallback,
+      thumbnail: 'p3_test_personality_weather_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+    };
+
+    return (
+      <>
+        <Phase3PersonalityWeatherTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3PersonalityWeatherTypeQuestions}
+          results={phase3PersonalityWeatherTypeResults}
+          questionCount={phase3PersonalityWeatherTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

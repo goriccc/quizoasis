@@ -9483,6 +9483,61 @@
       "popularTestsTop5": "🔥 Top 5 trending tests"
     }
   },
+  "phase3PersonalityWeatherTypeTest": {
+    "startMessage": {
+      "line1": "Weather speaks without saying a word.",
+      "line2": "Some days are dazzlingly clear, some bring gentle rain, and some snow falls without anyone noticing.",
+      "line3": "People are the same. Some are like sunny days — their very presence is energy. Some are like fog — mysterious. Some are like showers — emotions worn openly.",
+      "line4": "Choose the image that intuitively draws you in, and we'll find the weather that best matches your personality. The result image is so aesthetic you'll want to post it to your Instagram story.",
+      "line5": "Find my personality weather ⛅ Start weather diagnosis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (What Weather Is My Personality?)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "personalityWeather": "Personality weather",
+      "weatherKeywords": "Weather keywords",
+      "weatherPersonTrait": "People with this weather",
+      "weatherWeakness": "Weakness of this weather",
+      "goodMatchWeather": "Compatible weather match",
+      "clashWeather": "Clashing weather",
+      "weatherMessage": "Weather message",
+      "weatherOneLiner": "Weather mood in one line"
+    },
+    "shareMessages": {
+      "default": "My personality weather is {name}! ⛅ The result image was so aesthetic I had to post it to my story → What weather are you?",
+      "kakao": "My personality weather is {name}! ⛅ The result image was so aesthetic I had to post it to my story → What weather are you?",
+      "wechat": "My personality weather is {name}! ⛅ The result image was so aesthetic I had to post it to my story → What weather are you?",
+      "whatsapp": "My personality weather is {name}! ⛅ The result image was so aesthetic I had to post it to my story → What weather are you?",
+      "telegram": "My personality weather is {name}! ⛅ The result image was so aesthetic I had to post it to my story → What weather are you?",
+      "line": "My personality weather is {name}! ⛅ The result image was so aesthetic I had to post it to my story → What weather are you?",
+      "startDefault": "What weather is my personality? ⛅ 12 image questions",
+      "startKakao": "What weather is my personality? ⛅ 12 image questions",
+      "startWechat": "What weather is my personality? ⛅ 12 image questions",
+      "startWhatsapp": "What weather is my personality? ⛅ 12 image questions",
+      "startTelegram": "What weather is my personality? ⛅ 12 image questions",
+      "startLine": "What weather is my personality? ⛅ 12 image questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

@@ -9462,6 +9462,61 @@
       "popularTestsTop5": "🔥 人気のテストTOP5"
     }
   },
+  "phase3PersonalityWeatherTypeTest": {
+    "startMessage": {
+      "line1": "天気は何も言わなくても、すべてを物語ります。",
+      "line2": "眩しく晴れる日も、しっとり雨が降る日も、誰にも気づかれず雪が降る日もあります。",
+      "line3": "人も同じです。晴れた日のように存在そのものがエネルギーの人、霧のように神秘的な人、にわか雨のように感情が素直な人がいます。",
+      "line4": "直感で惹かれる画像を選ぶと、あなたの性格に最も似た天気を見つけます。結果画像があまりに感性的で、ストーリーに載せたくなるはずです。",
+      "line5": "私の性格天気を見つける ⛅ 天気診断開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（私の性格はどんな天気？）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "shareResult": "結果をシェア",
+      "personalityWeather": "性格天気",
+      "weatherKeywords": "天気キーワード",
+      "weatherPersonTrait": "この天気を持つ人",
+      "weatherWeakness": "この天気の弱点",
+      "goodMatchWeather": "相性の良い天気の相棒",
+      "clashWeather": "衝突する天気",
+      "weatherMessage": "天気メッセージ",
+      "weatherOneLiner": "天気の感性一言"
+    },
+    "shareMessages": {
+      "default": "私の性格天気は{name}! ⛅ 結果画像があまりに感性的でストーリーに載せた → あなたはどんな天気？",
+      "kakao": "私の性格天気は{name}! ⛅ 結果画像があまりに感性的でストーリーに載せた → あなたはどんな天気？",
+      "wechat": "私の性格天気は{name}! ⛅ 結果画像があまりに感性的でストーリーに載せた → あなたはどんな天気？",
+      "whatsapp": "私の性格天気は{name}! ⛅ 結果画像があまりに感性的でストーリーに載せた → あなたはどんな天気？",
+      "telegram": "私の性格天気は{name}! ⛅ 結果画像があまりに感性的でストーリーに載せた → あなたはどんな天気？",
+      "line": "私の性格天気は{name}! ⛅ 結果画像があまりに感性的でストーリーに載せた → あなたはどんな天気？",
+      "startDefault": "私の性格はどんな天気？ ⛅ 12問画像選択",
+      "startKakao": "私の性格はどんな天気？ ⛅ 12問画像選択",
+      "startWechat": "私の性格はどんな天気？ ⛅ 12問画像選択",
+      "startWhatsapp": "私の性格はどんな天気？ ⛅ 12問画像選択",
+      "startTelegram": "私の性格はどんな天気？ ⛅ 12問画像選択",
+      "startLine": "私の性格はどんな天気？ ⛅ 12問画像選択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 人気テスト TOP5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

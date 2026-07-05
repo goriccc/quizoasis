@@ -8943,6 +8943,61 @@
       "popularTestsTop5": "🔥 熱門測試 Top 5"
     }
   },
+  "phase3PersonalityWeatherTypeTest": {
+    "startMessage": {
+      "line1": "天氣無需言語，卻能表達一切。",
+      "line2": "有陽光燦爛的晴天，有細雨綿綿的雨天，也有悄悄飄雪、無人察覺的日子。",
+      "line3": "人也是如此。有人像晴天，存在本身就是能量；有人像霧，神秘莫測；有人像陣雨，情感坦率直白。",
+      "line4": "選擇直覺吸引你的圖片，我們將為你找出與性格最相似的天氣。結果圖片太有氛圍感，你會想發到 Instagram 限時動態。",
+      "line5": "找出我的性格天氣 ⛅ 開始天氣診斷"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（我的性格是什麼天氣？）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "shareResult": "分享結果",
+      "personalityWeather": "性格天氣",
+      "weatherKeywords": "天氣關鍵詞",
+      "weatherPersonTrait": "擁有這種天氣的人",
+      "weatherWeakness": "這種天氣的弱點",
+      "goodMatchWeather": "絕配天氣搭檔",
+      "clashWeather": "衝突天氣",
+      "weatherMessage": "天氣寄語",
+      "weatherOneLiner": "天氣感性一句話"
+    },
+    "shareMessages": {
+      "default": "我的性格天氣是{name}! ⛅ 結果圖片太有氛圍感已經發到限時動態了 → 你是什麼天氣？",
+      "kakao": "我的性格天氣是{name}! ⛅ 結果圖片太有氛圍感已經發到限時動態了 → 你是什麼天氣？",
+      "wechat": "我的性格天氣是{name}! ⛅ 結果圖片太有氛圍感已經發到限時動態了 → 你是什麼天氣？",
+      "whatsapp": "我的性格天氣是{name}! ⛅ 結果圖片太有氛圍感已經發到限時動態了 → 你是什麼天氣？",
+      "telegram": "我的性格天氣是{name}! ⛅ 結果圖片太有氛圍感已經發到限時動態了 → 你是什麼天氣？",
+      "line": "我的性格天氣是{name}! ⛅ 結果圖片太有氛圍感已經發到限時動態了 → 你是什麼天氣？",
+      "startDefault": "我的性格是什麼天氣？ ⛅ 12道圖片題",
+      "startKakao": "我的性格是什麼天氣？ ⛅ 12道圖片題",
+      "startWechat": "我的性格是什麼天氣？ ⛅ 12道圖片題",
+      "startWhatsapp": "我的性格是什麼天氣？ ⛅ 12道圖片題",
+      "startTelegram": "我的性格是什麼天氣？ ⛅ 12道圖片題",
+      "startLine": "我的性格是什麼天氣？ ⛅ 12道圖片題"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 TOP5",
+      "popularTestsTop5": "🔥 熱門測試 TOP5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",
