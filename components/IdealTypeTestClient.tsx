@@ -12,6 +12,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface IdealTypeTestClientProps {
   locale: string;
@@ -268,11 +269,13 @@ export default function IdealTypeTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result ? t('idealTypeTest.shareMessage', { type: resultTitle }) : title;
@@ -300,6 +303,7 @@ export default function IdealTypeTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result ? t('idealTypeTest.shareMessage', { type: resultTitle }) : title;
@@ -308,6 +312,7 @@ export default function IdealTypeTestClient({
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
@@ -352,6 +357,7 @@ export default function IdealTypeTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result ? t('idealTypeTest.shareMessage', { type: resultTitle }) : title;
@@ -361,6 +367,7 @@ export default function IdealTypeTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };

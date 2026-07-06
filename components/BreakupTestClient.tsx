@@ -13,6 +13,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface BreakupTestClientProps {
   locale: string;
@@ -341,11 +342,13 @@ export default function BreakupTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
@@ -416,6 +419,7 @@ export default function BreakupTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
@@ -436,6 +440,7 @@ export default function BreakupTestClient({
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     const alertMessages = {
@@ -530,6 +535,7 @@ export default function BreakupTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     
@@ -551,6 +557,7 @@ export default function BreakupTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     const alertMessages = {
       ko: '링크가 복사되었습니다!',
       en: 'Link copied!',

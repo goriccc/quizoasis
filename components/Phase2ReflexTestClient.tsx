@@ -12,6 +12,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { getLatestTestSlugs } from '@/lib/latestTests';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 import { Phase2ReflexResult, calculatePhase2ReflexResult } from '@/lib/phase2ReflexTestData';
 
 interface Phase2ReflexTestClientProps {
@@ -229,6 +230,7 @@ export default function Phase2ReflexTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     const url = window.location.href;
     navigator.clipboard.writeText(url).then(() => {
       alert(t('alerts.linkCopied'));
@@ -238,6 +240,7 @@ export default function Phase2ReflexTestClient({
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (!window.Kakao) return;
     if (!window.Kakao.isInitialized()) {
       const kakaoKey = process.env.NEXT_PUBLIC_KAKAO_JS_KEY || '';
@@ -274,6 +277,7 @@ export default function Phase2ReflexTestClient({
 
   // Other social shares
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const resultTitle = result 
       ? (result.title[locale as keyof typeof result.title] || result.title.ko)
       : title;
@@ -290,6 +294,7 @@ export default function Phase2ReflexTestClient({
   };
   
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const resultTitle = result 
       ? (result.title[locale as keyof typeof result.title] || result.title.ko)
       : title;
@@ -301,6 +306,7 @@ export default function Phase2ReflexTestClient({
   };
   
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const resultTitle = result 
       ? (result.title[locale as keyof typeof result.title] || result.title.ko)
       : title;

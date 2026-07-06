@@ -11,6 +11,7 @@ import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 import ProductRecommendations from '@/components/ProductRecommendations';
 
 interface ExtremeQuizTestClientProps {
@@ -149,12 +150,14 @@ export default function ExtremeQuizTestClient({
 
   // 소셜 공유 함수들
   const copyLink = async () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     const url = `${window.location.origin}/${locale}/test/${slug}`;
     await navigator.clipboard.writeText(url);
     alert(t('extremeQuizTest.alerts.linkCopied'));
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
@@ -202,6 +205,7 @@ export default function ExtremeQuizTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com/${locale}/test/${slug}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
@@ -214,6 +218,7 @@ export default function ExtremeQuizTestClient({
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com/${locale}/test/${slug}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
@@ -245,11 +250,13 @@ export default function ExtremeQuizTestClient({
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com/${locale}/test/${slug}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com/${locale}/test/${slug}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 

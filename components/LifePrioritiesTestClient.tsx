@@ -13,6 +13,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface LifePrioritiesTestClientProps {
   locale: Locale;
@@ -152,6 +153,7 @@ export default function LifePrioritiesTestClient({
   };
   
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
@@ -209,6 +211,7 @@ export default function LifePrioritiesTestClient({
   };
   
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : (result.title && result.title[locale as keyof typeof result.title]) || (result.title && result.title.ko)) : '';
     const shareText = result 
@@ -249,6 +252,7 @@ export default function LifePrioritiesTestClient({
   };
   
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
@@ -286,6 +290,7 @@ export default function LifePrioritiesTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
@@ -323,6 +328,7 @@ export default function LifePrioritiesTestClient({
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
@@ -398,6 +404,7 @@ export default function LifePrioritiesTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     const currentUrl = `https://myquizoasis.com${window.location.pathname}`;

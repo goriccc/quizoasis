@@ -12,6 +12,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForStress } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface StressTestClientProps {
   locale: string;
@@ -274,11 +275,13 @@ export default function StressTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const shareText = result 
       ? `내 스트레스 지수는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 얼마나? 함께 확인해보자 💕\n\n${url}`
@@ -306,6 +309,7 @@ export default function StressTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? encodeURIComponent(`내 스트레스 지수는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 얼마나? 함께 확인해보자 💕`)
@@ -314,6 +318,7 @@ export default function StressTestClient({
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     // Kakao SDK가 로드되지 않은 경우
@@ -359,6 +364,7 @@ export default function StressTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? `내 스트레스 지수는 ${result.title[locale as keyof typeof result.title] || result.title.ko}! 너는 얼마나? 함께 확인해보자 💕`
@@ -368,6 +374,7 @@ export default function StressTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };

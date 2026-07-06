@@ -11,6 +11,7 @@ import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 import { Phase2ColorBlindResult, calculatePhase2ColorBlindResult, COLOR_BLIND_QUESTIONS } from '@/lib/phase2ColorBlindTestData';
 import { generateIshiharaImage, getIshiharaConfig } from '@/lib/ishiharaImageGenerator';
 
@@ -256,11 +257,13 @@ export default function Phase2ColorBlindTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(t('alerts.linkCopied'));
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined' || !window.Kakao || !window.Kakao.isInitialized()) {
       alert(t('alerts.kakaoInit'));
       return;
@@ -284,7 +287,8 @@ export default function Phase2ColorBlindTestClient({
   // Other share functions
   const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
   const shareToTelegram = () => window.open(`https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(getShareText())}`, '_blank');
-  const shareToWeChat = () => { alert(t('alerts.wechatCopy')); copyLink(); };
+  const shareToWeChat = () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug); alert(t('alerts.wechatCopy')); copyLink(); };
   const shareToLine = () => window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(getShareText())}`, '_blank');
   const shareToWhatsApp = () => window.open(`https://wa.me/?text=${encodeURIComponent(getShareText())}%0A%0A${encodeURIComponent(shareUrl)}`, '_blank');
 

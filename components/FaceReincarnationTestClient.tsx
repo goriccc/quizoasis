@@ -9,6 +9,7 @@ import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 import ProductRecommendations from '@/components/ProductRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import { FaceReincarnationResult, calculateFaceReincarnationResult, FaceReincarnationTestClientProps } from '@/lib/faceReincarnationData';
@@ -375,11 +376,13 @@ export default function FaceReincarnationTestClient({
 
   // 소셜 공유 함수들
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(t('alerts.linkCopied'));
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
@@ -425,6 +428,7 @@ export default function FaceReincarnationTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
@@ -435,6 +439,7 @@ export default function FaceReincarnationTestClient({
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
@@ -452,6 +457,7 @@ export default function FaceReincarnationTestClient({
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
@@ -462,6 +468,7 @@ export default function FaceReincarnationTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 

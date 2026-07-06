@@ -13,6 +13,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface Phase2CreativityLevelTestClientProps {
   locale: string;
@@ -269,6 +270,7 @@ export default function Phase2CreativityLevelTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const resultCreativityLevel = result ? (result.creativityLevel[locale as keyof typeof result.creativityLevel] || result.creativityLevel.ko) : '';
@@ -279,6 +281,7 @@ export default function Phase2CreativityLevelTestClient({
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const shareText = result 
@@ -307,6 +310,7 @@ export default function Phase2CreativityLevelTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const resultCreativityLevel = result ? (result.creativityLevel[locale as keyof typeof result.creativityLevel] || result.creativityLevel.ko) : '';
@@ -317,6 +321,7 @@ export default function Phase2CreativityLevelTestClient({
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
@@ -363,6 +368,7 @@ export default function Phase2CreativityLevelTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[locale as keyof typeof result.title] || result.title.ko) : '';
     const resultCreativityLevel = result ? (result.creativityLevel[locale as keyof typeof result.creativityLevel] || result.creativityLevel.ko) : '';
@@ -374,6 +380,7 @@ export default function Phase2CreativityLevelTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(t('alerts.linkCopied'));
   };

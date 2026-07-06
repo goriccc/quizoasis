@@ -13,6 +13,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface PlannerVsSpontaneousTestClientProps {
   locale: string;
@@ -180,6 +181,7 @@ const handleStartTest = async () => {
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     const currentUrl = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
     const shareDescription = result 
@@ -216,6 +218,7 @@ const handleStartTest = async () => {
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result 
@@ -226,6 +229,7 @@ const handleStartTest = async () => {
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result 
@@ -250,6 +254,7 @@ const handleStartTest = async () => {
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (result.title[localeKey as keyof typeof result.title] || result.title.ko) : '';
     const shareMessage = result 
@@ -260,11 +265,13 @@ const handleStartTest = async () => {
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}`, '_blank');
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(t('alerts.linkCopied'));
   };

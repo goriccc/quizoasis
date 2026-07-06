@@ -9,6 +9,7 @@ import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { incrementPlayCount } from '@/lib/supabase';
 import { Locale } from '@/i18n';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 import ProductRecommendations from '@/components/ProductRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import { HonestFacialEvaluationResult, calculateHonestFacialEvaluationResult } from '@/lib/honestFacialEvaluationData';
@@ -1134,11 +1135,13 @@ const handleStartTest = async () => {
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(t('alerts.linkCopied'));
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     if (!window.Kakao || !window.Kakao.isInitialized()) {
       alert(t('alerts.kakaoInit'));
@@ -1166,6 +1169,7 @@ const handleStartTest = async () => {
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result ? t('shareMessages.telegram', { score: result.firstImpressionScore }) : title;
     const text = encodeURIComponent(shareText);
@@ -1173,6 +1177,7 @@ const handleStartTest = async () => {
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const shareText = result ? t('shareMessages.wechat', { score: result.firstImpressionScore }) : title;
     const shareMessage = `${shareText}\n\n${url}`;
@@ -1185,6 +1190,7 @@ const handleStartTest = async () => {
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result ? t('shareMessages.line', { score: result.firstImpressionScore }) : title;
     const text = encodeURIComponent(shareText);
@@ -1192,6 +1198,7 @@ const handleStartTest = async () => {
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result ? t('shareMessages.whatsapp', { score: result.firstImpressionScore }) : title;
     const text = encodeURIComponent(shareText);

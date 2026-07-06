@@ -12,6 +12,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface LoveFlavorTestClientProps {
   locale: string;
@@ -183,6 +184,7 @@ const shuffleQuestions = (questionList: LoveFlavorQuestion[]) => {
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     const shareText = showResult ? getViralShareMessage() : title;
     const shareUrl = `${window.location.origin}/${locale}/test/${slug}`;
     const fullText = showResult ? `${shareText}\n\n${shareUrl}` : shareUrl;
@@ -192,24 +194,28 @@ const shuffleQuestions = (questionList: LoveFlavorQuestion[]) => {
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
     const text = encodeURIComponent(title);
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
   };
   
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
     const text = encodeURIComponent(title);
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
   
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`${window.location.origin}/${locale}/test/${slug}`);
     const text = encodeURIComponent(title);
     window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
   };
   
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `${window.location.origin}/${locale}/test/${slug}`;
     const shareText = title;
     
@@ -230,6 +236,7 @@ const shuffleQuestions = (questionList: LoveFlavorQuestion[]) => {
   };
   
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     if (!window.Kakao || !window.Kakao.isInitialized()) {
       alert('카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.');

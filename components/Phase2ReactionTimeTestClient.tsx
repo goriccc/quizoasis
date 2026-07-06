@@ -8,6 +8,7 @@ import { getThumbnailUrl, formatPlayCount } from '@/lib/utils';
 import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 import { Phase2ReactionTimeResult, calculatePhase2ReactionTimeResult } from '@/lib/phase2ReactionTimeData';
 
 interface Phase2ReactionTimeTestClientProps {
@@ -183,6 +184,7 @@ export default function Phase2ReactionTimeTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     const url = getShareUrl();
     navigator.clipboard.writeText(url).then(() => {
       alert(t('alerts.linkCopied'));
@@ -192,6 +194,7 @@ export default function Phase2ReactionTimeTestClient({
   };
   
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     const url = getShareUrl();
     const average = result ? Math.round(reactionTimes.reduce((a, b) => a + b, 0) / reactionTimes.length) : 0;
     const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
@@ -223,6 +226,7 @@ export default function Phase2ReactionTimeTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = getShareUrl();
     const average = result ? Math.round(reactionTimes.reduce((a, b) => a + b, 0) / reactionTimes.length) : 0;
     const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
@@ -234,6 +238,7 @@ export default function Phase2ReactionTimeTestClient({
   };
 
   const shareToWeChat = () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = getShareUrl();
     const average = result ? Math.round(reactionTimes.reduce((a, b) => a + b, 0) / reactionTimes.length) : 0;
     const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
@@ -246,6 +251,7 @@ export default function Phase2ReactionTimeTestClient({
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = getShareUrl();
     const average = result ? Math.round(reactionTimes.reduce((a, b) => a + b, 0) / reactionTimes.length) : 0;
     const dataLocale = locale === 'zh-CN' ? 'zh' : locale;
@@ -257,6 +263,7 @@ export default function Phase2ReactionTimeTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = getShareUrl();
     const average = result ? Math.round(reactionTimes.reduce((a, b) => a + b, 0) / reactionTimes.length) : 0;
     const dataLocale = locale === 'zh-CN' ? 'zh' : locale;

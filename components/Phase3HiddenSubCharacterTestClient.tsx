@@ -16,6 +16,7 @@ import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts } from '@/lib/aliexpress';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface Phase3HiddenSubCharacterTestClientProps {
   locale: string;
@@ -269,6 +270,7 @@ export default function Phase3HiddenSubCharacterTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? encodeURIComponent((result.shareSnippet[locale as keyof typeof result.shareSnippet] || result.shareSnippet.ko))
@@ -277,6 +279,7 @@ export default function Phase3HiddenSubCharacterTestClient({
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const shareText = result 
       ? `${result.shareSnippet[locale as keyof typeof result.shareSnippet] || result.shareSnippet.ko}\n\n${url}`
@@ -304,6 +307,7 @@ export default function Phase3HiddenSubCharacterTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? encodeURIComponent(result.shareSnippet[locale as keyof typeof result.shareSnippet] || result.shareSnippet.ko)
@@ -312,6 +316,7 @@ export default function Phase3HiddenSubCharacterTestClient({
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
     
     if (!window.Kakao || !window.Kakao.isInitialized()) {
@@ -356,6 +361,7 @@ export default function Phase3HiddenSubCharacterTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result 
       ? (result.shareSnippet[locale as keyof typeof result.shareSnippet] || result.shareSnippet.ko)
@@ -365,6 +371,7 @@ export default function Phase3HiddenSubCharacterTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(t('alerts.linkCopied'));
   };

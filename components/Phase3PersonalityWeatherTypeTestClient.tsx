@@ -15,6 +15,7 @@ import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface Phase3PersonalityWeatherTypeTestClientProps {
   locale: string;
@@ -217,6 +218,7 @@ export default function Phase3PersonalityWeatherTypeTestClient({
 
   // 공유 함수들
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result
       ? encodeURIComponent(getResultShareText())
@@ -225,6 +227,7 @@ export default function Phase3PersonalityWeatherTypeTestClient({
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const shareText = result
       ? `${getResultShareText()}\n\n${url}`
@@ -250,6 +253,7 @@ export default function Phase3PersonalityWeatherTypeTestClient({
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result
       ? encodeURIComponent(getResultShareText())
@@ -258,6 +262,7 @@ export default function Phase3PersonalityWeatherTypeTestClient({
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     if (typeof window === 'undefined') return;
 
     const w = window as any;
@@ -300,6 +305,7 @@ export default function Phase3PersonalityWeatherTypeTestClient({
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const shareText = result ? getResultShareText() : t('shareMessages.startTelegram');
     const text = encodeURIComponent(shareText);
@@ -307,6 +313,7 @@ export default function Phase3PersonalityWeatherTypeTestClient({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert(t('alerts.linkCopied'));
   };

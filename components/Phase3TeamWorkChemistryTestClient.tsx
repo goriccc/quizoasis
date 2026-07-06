@@ -26,6 +26,7 @@ import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface Props {
   locale: string;
@@ -290,6 +291,7 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
   };
 
   const copyResultLink = () => {
+    trackShareEvent('link copy', 'quiz_result', slug);
     const u = getResultShareUrl();
     if (!u) return;
     navigator.clipboard.writeText(u).then(
@@ -298,15 +300,20 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
     );
   };
 
-  const shareResultToKakao = () => shareToKakaoGeneric(buildResultShareLine(), getResultShareUrl());
+  const shareResultToKakao = () => {
+    trackShareEvent('kakao', 'quiz_result', slug);
+    shareToKakaoGeneric(buildResultShareLine(), getResultShareUrl());
+  };
 
   const shareResultToTelegram = () => {
+    trackShareEvent('telegram', 'quiz_result', slug);
     const url = encodeURIComponent(getResultShareUrl());
     const text = encodeURIComponent(buildResultShareLine());
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
   const shareResultToWeChat = async () => {
+    trackShareEvent('wechat', 'quiz_result', slug);
     const u = getResultShareUrl();
     const shareText = `${buildResultShareLine()}\n\n${u}`;
     if (navigator.share) {
@@ -326,12 +333,14 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
   };
 
   const shareResultToWhatsApp = () => {
+    trackShareEvent('whatsapp', 'quiz_result', slug);
     const url = encodeURIComponent(getResultShareUrl());
     const body = encodeURIComponent(buildResultShareLine());
     window.open(`https://wa.me/?text=${body}%0A%0A${url}`, '_blank');
   };
 
   const shareResultToLine = () => {
+    trackShareEvent('line', 'quiz_result', slug);
     const url = encodeURIComponent(getResultShareUrl());
     const text = encodeURIComponent(buildResultShareLine());
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
@@ -341,6 +350,7 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
   const getStartPageUrl = () => (typeof window !== 'undefined' ? window.location.href : '');
 
   const copyStartPageLink = () => {
+    trackShareEvent('link copy', 'quiz_intro', slug);
     const u = getStartPageUrl();
     if (!u) return;
     navigator.clipboard.writeText(u).then(
@@ -349,15 +359,20 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
     );
   };
 
-  const shareStartToKakao = () => shareToKakaoGeneric(t('shareMessages.startKakao'), getStartPageUrl());
+  const shareStartToKakao = () => {
+    trackShareEvent('kakao', 'quiz_intro', slug);
+    shareToKakaoGeneric(t('shareMessages.startKakao'), getStartPageUrl());
+  };
 
   const shareStartToTelegram = () => {
+    trackShareEvent('telegram', 'quiz_intro', slug);
     const url = encodeURIComponent(getStartPageUrl());
     const text = encodeURIComponent(t('shareMessages.startTelegram'));
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
   const shareStartToWeChat = async () => {
+    trackShareEvent('wechat', 'quiz_intro', slug);
     const u = getStartPageUrl();
     const shareText = `${t('shareMessages.startWechat')}\n\n${u}`;
     if (navigator.share) {
@@ -377,12 +392,14 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
   };
 
   const shareStartToWhatsApp = () => {
+    trackShareEvent('whatsapp', 'quiz_intro', slug);
     const url = encodeURIComponent(getStartPageUrl());
     const text = encodeURIComponent(t('shareMessages.startWhatsapp'));
     window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
   };
 
   const shareStartToLine = () => {
+    trackShareEvent('line', 'quiz_intro', slug);
     const url = encodeURIComponent(getStartPageUrl());
     const text = encodeURIComponent(t('shareMessages.startLine'));
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');

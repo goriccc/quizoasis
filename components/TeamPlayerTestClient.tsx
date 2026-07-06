@@ -13,6 +13,7 @@ import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import { searchAliExpressProducts, getProductKeywordsForDating } from '@/lib/aliexpress';
 import ProductRecommendations from './ProductRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { getShareContentType, trackShareEvent } from '@/lib/analytics/trackShare';
 
 interface TeamPlayerTestClientProps {
   locale: string;
@@ -272,6 +273,7 @@ const handleStartTest = () => {
   };
 
   const shareToKakao = () => {
+    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
     const shareUrl = `https://myquizoasis.com${window.location.pathname}`;
     const shareText = result 
       ? (locale === 'ko' ? `나는 ${typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko}! 팀에서 내 역할을 알게 됐어! 너는 어떤 팀플레이어? 🤝` :
@@ -318,6 +320,7 @@ const handleStartTest = () => {
   };
 
   const shareToTelegram = () => {
+    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
     const url = encodeURIComponent(`https://myquizoasis.com${window.location.pathname}`);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     const shareText = result 
@@ -340,6 +343,7 @@ const handleStartTest = () => {
   };
 
   const shareToWeChat = async () => {
+    trackShareEvent('wechat', getShareContentType(started, showResult), slug);
     const url = `https://myquizoasis.com${window.location.pathname}`;
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     const shareText = result 
@@ -380,6 +384,7 @@ const handleStartTest = () => {
   };
 
   const shareToLine = () => {
+    trackShareEvent('line', getShareContentType(started, showResult), slug);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     const shareText = result 
       ? (locale === 'ko' ? `나는 ${resultTitle}! 팀에서 내 역할을 알게 됐어! 너는 어떤 팀플레이어? 🤝` :
@@ -402,6 +407,7 @@ const handleStartTest = () => {
   };
 
   const shareToWhatsApp = () => {
+    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
     const resultTitle = result ? (typeof result.title === 'string' ? result.title : result.title[locale] || result.title.ko) : '';
     const shareText = result 
       ? (locale === 'ko' ? `나는 ${resultTitle}! 팀에서 내 역할을 알게 됐어! 너는 어떤 팀플레이어? 🤝` :
@@ -424,6 +430,7 @@ const handleStartTest = () => {
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
     navigator.clipboard.writeText(`https://myquizoasis.com${window.location.pathname}`);
     alert('링크가 복사되었습니다!');
   };

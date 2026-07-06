@@ -23,6 +23,7 @@ import { Locale } from '@/i18n';
 import { incrementPlayCount } from '@/lib/supabase';
 import { useTestRecommendations } from '@/lib/hooks/useTestRecommendations';
 import AdSensePlaceholder, { ADSENSE_CONFIG, safeLoadAdSense } from '@/lib/adsense';
+import { trackShareEvent } from '@/lib/analytics/trackShare';
 
 type Phase = 'creatorIntro' | 'creatorRun' | 'creatorDone' | 'friendIntro' | 'friendRun' | 'friendResult';
 
@@ -332,6 +333,7 @@ function Phase3BestFriendQuizTestClientInner({
   };
 
   const copyLink = () => {
+    trackShareEvent('link copy', 'quiz_result', slug);
     if (typeof window === 'undefined') return;
     navigator.clipboard.writeText(getFriendSharePath()).then(
       () => alert(t('alerts.linkCopied')),
@@ -340,6 +342,7 @@ function Phase3BestFriendQuizTestClientInner({
   };
 
   const shareToKakaoResult = () => {
+    trackShareEvent('kakao', 'quiz_result', slug);
     if (typeof window === 'undefined' || !(window as any).Kakao?.isInitialized?.()) {
       alert(t('alerts.kakaoInit'));
       return;
@@ -364,12 +367,14 @@ function Phase3BestFriendQuizTestClientInner({
   };
 
   const shareToTelegramResult = () => {
+    trackShareEvent('telegram', 'quiz_result', slug);
     const url = encodeURIComponent(getFriendSharePath());
     const text = encodeURIComponent(friendResultShareLine());
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
   const shareToWeChatResult = async () => {
+    trackShareEvent('wechat', 'quiz_result', slug);
     const url = getFriendSharePath();
     const shareText = `${friendResultShareLine()}\n\n${url}`;
     if (navigator.share) {
@@ -389,12 +394,14 @@ function Phase3BestFriendQuizTestClientInner({
   };
 
   const shareToWhatsAppResult = () => {
+    trackShareEvent('whatsapp', 'quiz_result', slug);
     const url = encodeURIComponent(getFriendSharePath());
     const text = encodeURIComponent(friendResultShareLine());
     window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
   };
 
   const shareToLineResult = () => {
+    trackShareEvent('line', 'quiz_result', slug);
     const url = encodeURIComponent(getFriendSharePath());
     const text = encodeURIComponent(friendResultShareLine());
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
@@ -406,6 +413,7 @@ function Phase3BestFriendQuizTestClientInner({
       : '';
 
   const shareProgressToKakao = () => {
+    trackShareEvent('kakao', 'quiz_ing', slug);
     if (typeof window === 'undefined' || !(window as any).Kakao?.isInitialized?.()) {
       alert(t('alerts.kakaoInit'));
       return;
@@ -428,12 +436,14 @@ function Phase3BestFriendQuizTestClientInner({
   };
 
   const shareProgressToTelegram = () => {
+    trackShareEvent('telegram', 'quiz_ing', slug);
     const url = encodeURIComponent(progressShareUrl());
     const text = encodeURIComponent(t('shareMessages.startTelegram'));
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   };
 
   const shareProgressToWeChat = async () => {
+    trackShareEvent('wechat', 'quiz_ing', slug);
     const u = progressShareUrl();
     const shareText = `${t('shareMessages.startWechat')}\n\n${u}`;
     if (navigator.share) {
@@ -453,18 +463,21 @@ function Phase3BestFriendQuizTestClientInner({
   };
 
   const shareProgressToWhatsApp = () => {
+    trackShareEvent('whatsapp', 'quiz_ing', slug);
     const url = encodeURIComponent(progressShareUrl());
     const text = encodeURIComponent(t('shareMessages.startWhatsapp'));
     window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
   };
 
   const shareProgressToLine = () => {
+    trackShareEvent('line', 'quiz_ing', slug);
     const url = encodeURIComponent(progressShareUrl());
     const text = encodeURIComponent(t('shareMessages.startLine'));
     window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
   };
 
   const copyProgressLink = () => {
+    trackShareEvent('link copy', 'quiz_ing', slug);
     if (typeof window === 'undefined') return;
     navigator.clipboard.writeText(progressShareUrl()).then(
       () => alert(t('alerts.linkCopied')),
