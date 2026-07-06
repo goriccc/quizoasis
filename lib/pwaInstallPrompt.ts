@@ -1,3 +1,5 @@
+import { clearInstalledInStorage } from '@/lib/pwa/pwa-detect';
+
 export type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
@@ -44,6 +46,7 @@ export function initPwaInstallPromptCapture(): void {
 
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
+    clearInstalledInStorage();
     notifyPwaDeferredPrompt(event as BeforeInstallPromptEvent);
   });
 

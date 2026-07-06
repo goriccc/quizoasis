@@ -1,7 +1,37 @@
 const createNextIntlPlugin = require('next-intl/plugin');
 const { execSync } = require('child_process');
+const withPWAInit = require('@ducanh2912/next-pwa').default;
 
 const withNextIntl = createNextIntlPlugin('./i18n.ts');
+
+const withPWA = withPWAInit({
+  dest: 'public',
+  disable: process.env.NODE_ENV === 'development',
+  workboxOptions: {
+    skipWaiting: true,
+    clientsClaim: true,
+    runtimeCaching: [
+      {
+        urlPattern: /^https:\/\/.*\.supabase\.co\/.*/i,
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: 'supabase-assets',
+          expiration: { maxEntries: 64, maxAgeSeconds: 60 * 60 * 24 * 7 },
+          networkTimeoutSeconds: 10,
+        },
+      },
+      {
+        urlPattern: /\/_next\/static\/.*/i,
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: 'next-static-assets',
+          expiration: { maxEntries: 128, maxAgeSeconds: 60 * 60 * 24 },
+          networkTimeoutSeconds: 8,
+        },
+      },
+    ],
+  },
+});
 
 // Git commit hash 가져오기
 function getGitHash() {
@@ -76,5 +106,5 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl(nextConfig);
+module.exports = withPWA(withNextIntl(nextConfig));
 

@@ -860,8 +860,15 @@
     "step1": "安卓（頂部或底部三點），iPhone [ICON] 點擊",
     "step2": "選擇&quot;加入主畫面&quot;",
     "step3": "完成！現在可以隨時輕鬆訪問",
-    "dontShow24h": "24小時內不顯示",
+    "dontShow7d": "7天內不顯示",
     "installButton": "加入QuizOasis",
+    "installButtonManual": "查看安裝方法",
+    "installing": "安裝中...",
+    "installManualHint": "請查看網址列右側的「安裝應用程式」，或開啟選單(⋮)→「安裝應用程式」/「加入主畫面」。",
+    "alreadyInstalled": "QuizOasis已安裝。請從主畫面開啟，或點擊網址列的「在應用程式中開啟」。",
+    "androidStep1": "請先點擊下方「加入QuizOasis」按鈕",
+    "androidStep2": "若無效：選單(⋮)→「安裝應用程式」或「加入主畫面」",
+    "androidStep3": "完成！現在可以隨時輕鬆訪問",
     "manualInstructions": "請按照上述步驟手動加入。"
   },
   "scrollToTop": {

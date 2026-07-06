@@ -6475,8 +6475,15 @@
     "step1": "안드로이드폰은 상단 or 하단 3개 점, 아이폰은 [ICON] 클릭",
     "step2": "&quot;홈 화면에 추가&quot; 선택",
     "step3": "완료! 이제 언제든지 쉽게 접속하세요",
-    "dontShow24h": "24시간 동안 안 보기",
+    "dontShow7d": "7일간 안 보기",
     "installButton": "QuizOasis 추가",
+    "installButtonManual": "설치 방법 보기",
+    "installing": "설치 중...",
+    "installManualHint": "주소창 오른쪽 「앱 설치」 또는 메뉴(⋮) → 「앱 설치」/「홈 화면에 추가」를 확인해주세요.",
+    "alreadyInstalled": "QuizOasis가 이미 설치되어 있어요. 홈 화면에서 실행하거나 주소창의 「앱에서 열기」를 확인해주세요.",
+    "androidStep1": "먼저 아래 「QuizOasis 추가」 버튼을 눌러보세요",
+    "androidStep2": "안 되면 브라우저 메뉴(⋮) → &quot;앱 설치&quot; 또는 &quot;홈 화면에 추가&quot;",
+    "androidStep3": "완료! 이제 언제든지 쉽게 접속하세요",
     "manualInstructions": "위의 방법대로 수동으로 추가해주세요."
   },
   "scrollToTop": {

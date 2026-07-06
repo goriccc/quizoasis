@@ -853,8 +853,15 @@
     "step1": "安卓（顶部或底部三点），iPhone [ICON] 点击",
     "step2": "选择&quot;添加到主屏幕&quot;",
     "step3": "完成！现在可以随时轻松访问",
-    "dontShow24h": "24小时内不显示",
+    "dontShow7d": "7天内不显示",
     "installButton": "添加QuizOasis",
+    "installButtonManual": "查看安装方法",
+    "installing": "安装中...",
+    "installManualHint": "请查看地址栏右侧的「安装应用」，或打开菜单(⋮)→「安装应用」/「添加到主屏幕」。",
+    "alreadyInstalled": "QuizOasis已安装。请从主屏幕打开，或点击地址栏的「在应用中打开」。",
+    "androidStep1": "请先点击下方「添加QuizOasis」按钮",
+    "androidStep2": "如无效：菜单(⋮)→「安装应用」或「添加到主屏幕」",
+    "androidStep3": "完成！现在可以随时轻松访问",
     "manualInstructions": "请按照上述步骤手动添加。"
   },
   "scrollToTop": {

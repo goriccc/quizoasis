@@ -853,8 +853,15 @@
     "step1": "Android (3 chấm trên hoặc dưới), iPhone [ICON] nhấn",
     "step2": "Chọn &quot;Thêm vào Màn hình chính&quot;",
     "step3": "Hoàn tất! Bây giờ bạn có thể dễ dàng truy cập bất cứ lúc nào",
-    "dontShow24h": "Không hiển thị trong 24 giờ",
+    "dontShow7d": "Không hiển thị trong 7 ngày",
     "installButton": "Thêm QuizOasis",
+    "installButtonManual": "Xem hướng dẫn cài đặt",
+    "installing": "Đang cài đặt...",
+    "installManualHint": "Kiểm tra thanh địa chỉ bên phải 「Cài đặt ứng dụng」 hoặc menu (⋮) → 「Cài đặt ứng dụng」/「Thêm vào Màn hình chính」.",
+    "alreadyInstalled": "QuizOasis đã được cài đặt. Mở từ màn hình chính hoặc nhấn 「Mở trong ứng dụng」 trên thanh địa chỉ.",
+    "androidStep1": "Nhấn nút 「Thêm QuizOasis」 bên dưới trước",
+    "androidStep2": "Nếu không được: menu (⋮) → 「Cài đặt ứng dụng」 hoặc 「Thêm vào Màn hình chính」",
+    "androidStep3": "Hoàn tất! Bây giờ bạn có thể dễ dàng truy cập bất cứ lúc nào",
     "manualInstructions": "Vui lòng làm theo các bước trên để thêm thủ công."
   },
   "scrollToTop": {

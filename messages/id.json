@@ -853,8 +853,15 @@
     "step1": "Android (3 titik atas atau bawah), iPhone [ICON] ketuk",
     "step2": "Pilih &quot;Tambahkan ke Layar Utama&quot;",
     "step3": "Selesai! Sekarang Anda dapat dengan mudah mengakses kapan saja",
-    "dontShow24h": "Jangan tampilkan selama 24 jam",
+    "dontShow7d": "Jangan tampilkan selama 7 hari",
     "installButton": "Tambahkan QuizOasis",
+    "installButtonManual": "Lihat panduan instalasi",
+    "installing": "Menginstal...",
+    "installManualHint": "Periksa bilah alamat kanan 「Instal aplikasi」 atau menu (⋮) → 「Instal aplikasi」/「Tambahkan ke Layar Utama」.",
+    "alreadyInstalled": "QuizOasis sudah terinstal. Buka dari layar utama atau ketuk 「Buka di aplikasi」 di bilah alamat.",
+    "androidStep1": "Ketuk tombol 「Tambahkan QuizOasis」 di bawah terlebih dahulu",
+    "androidStep2": "Jika tidak berhasil: menu (⋮) → 「Instal aplikasi」 atau 「Tambahkan ke Layar Utama」",
+    "androidStep3": "Selesai! Sekarang Anda dapat dengan mudah mengakses kapan saja",
     "manualInstructions": "Silakan ikuti langkah-langkah di atas untuk menambahkan secara manual."
   },
   "scrollToTop": {

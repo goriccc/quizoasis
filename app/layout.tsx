@@ -3,7 +3,6 @@ import Script from 'next/script';
 import Head from 'next/head';
 import './globals.css';
 import Analytics from '@/components/Analytics';
-import ServiceWorkerRegistration from '@/components/ServiceWorkerRegistration';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
@@ -13,7 +12,11 @@ export const metadata: Metadata = {
   applicationName: 'QuizOasis',
   appleWebApp: {
     title: 'QuizOasis',
+    capable: true,
+    statusBarStyle: 'default',
   },
+  manifest: '/manifest.json',
+  themeColor: '#667eea',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
@@ -54,7 +57,8 @@ export default function RootLayout({
       <Head>
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/icon.png" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <meta name="theme-color" content="#667eea" />
         {/* iOS Safari 홈 화면 추가 */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -160,7 +164,6 @@ export default function RootLayout({
       <Suspense fallback={null}>
         <Analytics />
       </Suspense>
-      <ServiceWorkerRegistration />
       {children}
       </body>
     </html>

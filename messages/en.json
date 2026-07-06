@@ -855,8 +855,15 @@
     "step1": "Android (top or bottom 3 dots), iPhone [ICON] tap",
     "step2": "Select &quot;Add to Home Screen&quot;",
     "step3": "Done! Now you can easily access anytime",
-    "dontShow24h": "Don&apos;t show for 24 hours",
+    "dontShow7d": "Don&apos;t show for 7 days",
     "installButton": "Add QuizOasis",
+    "installButtonManual": "View install guide",
+    "installing": "Installing...",
+    "installManualHint": "Check the address bar for &quot;Install app&quot; or open the menu (⋮) → &quot;Install app&quot; / &quot;Add to Home screen&quot;.",
+    "alreadyInstalled": "QuizOasis is already installed. Open it from your home screen or tap &quot;Open in app&quot; in the address bar.",
+    "androidStep1": "Tap &quot;Add QuizOasis&quot; below first",
+    "androidStep2": "If that doesn&apos;t work: menu (⋮) → &quot;Install app&quot; or &quot;Add to Home screen&quot;",
+    "androidStep3": "Done! You can access QuizOasis anytime",
     "manualInstructions": "Please follow the steps above to add manually."
   },
   "scrollToTop": {
