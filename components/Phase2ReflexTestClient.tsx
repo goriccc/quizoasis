@@ -230,7 +230,7 @@ export default function Phase2ReflexTestClient({
   };
 
   const copyLink = () => {
-    trackShareEvent('link copy', getShareContentType(started, showResult), slug);
+    trackShareEvent('link copy', getShareContentType(gameState !== 'intro', showResult), slug);
     const url = window.location.href;
     navigator.clipboard.writeText(url).then(() => {
       alert(t('alerts.linkCopied'));
@@ -240,7 +240,7 @@ export default function Phase2ReflexTestClient({
   };
 
   const shareToKakao = () => {
-    trackShareEvent('kakao', getShareContentType(started, showResult), slug);
+    trackShareEvent('kakao', getShareContentType(gameState !== 'intro', showResult), slug);
     if (!window.Kakao) return;
     if (!window.Kakao.isInitialized()) {
       const kakaoKey = process.env.NEXT_PUBLIC_KAKAO_JS_KEY || '';
@@ -277,7 +277,7 @@ export default function Phase2ReflexTestClient({
 
   // Other social shares
   const shareToTelegram = () => {
-    trackShareEvent('telegram', getShareContentType(started, showResult), slug);
+    trackShareEvent('telegram', getShareContentType(gameState !== 'intro', showResult), slug);
     const resultTitle = result 
       ? (result.title[locale as keyof typeof result.title] || result.title.ko)
       : title;
@@ -294,7 +294,7 @@ export default function Phase2ReflexTestClient({
   };
   
   const shareToLine = () => {
-    trackShareEvent('line', getShareContentType(started, showResult), slug);
+    trackShareEvent('line', getShareContentType(gameState !== 'intro', showResult), slug);
     const resultTitle = result 
       ? (result.title[locale as keyof typeof result.title] || result.title.ko)
       : title;
@@ -306,7 +306,7 @@ export default function Phase2ReflexTestClient({
   };
   
   const shareToWhatsApp = () => {
-    trackShareEvent('whatsapp', getShareContentType(started, showResult), slug);
+    trackShareEvent('whatsapp', getShareContentType(gameState !== 'intro', showResult), slug);
     const resultTitle = result 
       ? (result.title[locale as keyof typeof result.title] || result.title.ko)
       : title;
