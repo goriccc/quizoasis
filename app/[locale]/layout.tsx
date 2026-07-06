@@ -99,7 +99,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     verification: {
       other: {
-        'naver-site-verification': '27343d8b05fa5eb547f7657cae7d5c43efd6ebd9',
+        'naver-site-verification': '6f92e697962fe9849ad6513a355cd010cdaaaa78',
       },
     },
   };
