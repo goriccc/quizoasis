@@ -76,6 +76,21 @@ function getImageRemotePatterns() {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'myquizoasis.com' }],
+        destination: 'https://www.myquizoasis.com/:path*',
+        permanent: true,
+      },
+      {
+        source: '/sitemap_index.xml',
+        destination: '/sitemap.xml',
+        permanent: true,
+      },
+    ];
+  },
   experimental: {
     serverActions: {
       allowedOrigins: ['*'],

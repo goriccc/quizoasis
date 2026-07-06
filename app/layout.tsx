@@ -4,6 +4,7 @@ import Head from 'next/head';
 import './globals.css';
 import Analytics from '@/components/Analytics';
 import { Suspense } from 'react';
+import { SITE_URL } from '@/lib/siteUrl';
 
 export const metadata: Metadata = {
   title: 'QuizOasis',
@@ -32,12 +33,12 @@ export const metadata: Metadata = {
     title: 'QuizOasis',
     description: '당신의 마음을 탐험하는 심리테스트의 오아시스',
     type: 'website',
-    url: 'https://myquizoasis.com',
+    url: SITE_URL,
     siteName: 'QuizOasis',
     locale: 'ko_KR',
     images: [
       {
-        url: 'https://myquizoasis.com/og-home.png',
+        url: `${SITE_URL}/og-home.png`,
         width: 1200,
         height: 630,
         alt: 'QuizOasis',

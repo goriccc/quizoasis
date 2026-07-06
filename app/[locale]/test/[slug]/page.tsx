@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { headers } from 'next/headers';
 import { getTestBySlug } from '@/lib/supabase';
+import { SITE_URL } from '@/lib/siteUrl';
 import { getTestData } from '@/lib/mbtiData';
 import { humorCodeQuestions, humorCodeResults } from '@/lib/humorCodeData';
 import { trustQuestions, trustResults } from '@/lib/trustData';
@@ -3282,7 +3283,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const thumbnailUrl = getThumbnailUrl(test.thumbnail);
 
 
-  const baseUrl = 'https://myquizoasis.com';
+  const baseUrl = SITE_URL;
   const canonicalUrl = `${baseUrl}/${locale}/test/${slug}`;
 
   return {

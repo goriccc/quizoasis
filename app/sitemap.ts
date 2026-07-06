@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { locales } from '@/i18n';
+import { SITE_URL } from '@/lib/siteUrl';
 
 // 테스트 슬러그 목록 (모든 테스트 포함)
 const testSlugs = [
@@ -85,7 +86,7 @@ const testSlugs = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://myquizoasis.com';
+  const baseUrl = SITE_URL;
   
   const routes: MetadataRoute.Sitemap = [];
 

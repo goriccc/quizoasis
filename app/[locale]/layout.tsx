@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
+import { SITE_URL } from '@/lib/siteUrl';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InstallPrompt from '@/components/InstallPrompt';
@@ -55,7 +56,7 @@ const getLocalizedMetadata = (locale: string) => {
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = params;
   const meta = getLocalizedMetadata(locale);
-  const baseUrl = 'https://myquizoasis.com';
+  const baseUrl = SITE_URL;
 
   return {
     title: meta.title,

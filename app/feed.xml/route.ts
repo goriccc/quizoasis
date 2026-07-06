@@ -1,8 +1,9 @@
 import { NextResponse } from 'next/server';
 import { getTests } from '@/lib/supabase';
+import { SITE_URL } from '@/lib/siteUrl';
 
 export async function GET() {
-  const baseUrl = 'https://myquizoasis.com';
+  const baseUrl = SITE_URL;
   const tests = await getTests();
 
   // RSS 피드 생성
