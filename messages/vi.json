@@ -9536,6 +9536,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
     }
   },
+  "phase3RealReasonForBreakupTest": {
+    "startMessage": {
+      "line1": "\"Bạn có đang đổ hết lỗi chia tay cho người yêu cũ không?\"",
+      "line2": "Mọi cuộc chia tay đều có lý do từ cả hai phía. Họ có thể đã sai. Nhưng nếu cùng một kiểu lặp lại, hãy nhìn lạnh lùng vào cách yêu của bạn.",
+      "line3": "Bài test này không phân tích họ. Nó tìm nguyên nhân chia tay thật sự trong KIỂU YÊU của bạn.",
+      "line4": "Có thể sẽ khó chịu. Nhưng phải biết mới thay đổi được.",
+      "line5": "Phân tích nguyên nhân chia tay của tôi 💔 Bắt đầu lạnh lùng"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Lý do thật sự khiến người yêu cũ rời đi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "empathyLevel": "Loại nguyên nhân chia tay",
+      "characteristics": "Mẫu chia tay chính",
+      "goodMatch": "Điểm mạnh trong tình yêu",
+      "badMatch": "Đối tượng cần cảnh giác",
+      "improvePoint": "Điểm cần cải thiện",
+      "prescription": "Đơn thuốc cho lần yêu tiếp theo",
+      "oneLiner": "Một câu sau chia tay"
+    },
+    "shareMessages": {
+      "default": "Lý do thật sự khiến người yêu cũ rời đi: {type} → Nguyên nhân chia tay của bạn là gì?",
+      "kakao": "Lý do thật sự khiến người yêu cũ rời đi: {type} → Nguyên nhân chia tay của bạn là gì?",
+      "wechat": "Lý do thật sự khiến người yêu cũ rời đi: {type} → Nguyên nhân chia tay của bạn là gì?",
+      "whatsapp": "Lý do thật sự khiến người yêu cũ rời đi: {type} → Nguyên nhân chia tay của bạn là gì?",
+      "telegram": "Lý do thật sự khiến người yêu cũ rời đi: {type} → Nguyên nhân chia tay của bạn là gì?",
+      "line": "Lý do thật sự khiến người yêu cũ rời đi: {type} → Nguyên nhân chia tay của bạn là gì?",
+      "startDefault": "Lý do thật sự khiến người yêu cũ rời đi 💔 Phân tích nguyên nhân chia tay của tôi!",
+      "startKakao": "Lý do thật sự khiến người yêu cũ rời đi 💔 Phân tích nguyên nhân chia tay của tôi!",
+      "startWechat": "Lý do thật sự khiến người yêu cũ rời đi 💔 Phân tích nguyên nhân chia tay của tôi!",
+      "startWhatsapp": "Lý do thật sự khiến người yêu cũ rời đi 💔 Phân tích nguyên nhân chia tay của tôi!",
+      "startTelegram": "Lý do thật sự khiến người yêu cũ rời đi 💔 Phân tích nguyên nhân chia tay của tôi!",
+      "startLine": "Lý do thật sự khiến người yêu cũ rời đi 💔 Phân tích nguyên nhân chia tay của tôi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

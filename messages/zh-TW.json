@@ -9005,6 +9005,60 @@
       "popularTestsTop5": "🔥 熱門測試 TOP5"
     }
   },
+  "phase3RealReasonForBreakupTest": {
+    "startMessage": {
+      "line1": "「是不是總把分手的理由全怪在對方頭上？」",
+      "line2": "每一次分手，雙方都有原因。對方或許確實有錯。但如果同樣的模式反覆出現，就該冷靜審視自己的戀愛方式。",
+      "line3": "這個測試不分析對方。它會從你的戀愛模式中，找出分手的真正原因。",
+      "line4": "可能會讓人不舒服。但只有知道了，才能改變。",
+      "line5": "分析我的分手原因 💔 冷靜開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（前男/女友離開的真正原因）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "shareResult": "分享結果",
+      "empathyLevel": "分手原因類型",
+      "characteristics": "主要分手模式",
+      "goodMatch": "戀愛優勢",
+      "badMatch": "需警惕的對象",
+      "improvePoint": "需要改善的地方",
+      "prescription": "下一段戀情的處方",
+      "oneLiner": "分手後的一句話點評"
+    },
+    "shareMessages": {
+      "default": "前男/女友離開的真正原因: {type} → 你的分手原因是什麼？",
+      "kakao": "前男/女友離開的真正原因: {type} → 你的分手原因是什麼？",
+      "wechat": "前男/女友離開的真正原因: {type} → 你的分手原因是什麼？",
+      "whatsapp": "前男/女友離開的真正原因: {type} → 你的分手原因是什麼？",
+      "telegram": "前男/女友離開的真正原因: {type} → 你的分手原因是什麼？",
+      "line": "前男/女友離開的真正原因: {type} → 你的分手原因是什麼？",
+      "startDefault": "前男/女友離開的真正原因 💔 分析我的分手原因！",
+      "startKakao": "前男/女友離開的真正原因 💔 分析我的分手原因！",
+      "startWechat": "前男/女友離開的真正原因 💔 分析我的分手原因！",
+      "startWhatsapp": "前男/女友離開的真正原因 💔 分析我的分手原因！",
+      "startTelegram": "前男/女友離開的真正原因 💔 分析我的分手原因！",
+      "startLine": "前男/女友離開的真正原因 💔 分析我的分手原因！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 TOP5",
+      "popularTestsTop5": "🔥 熱門測試 TOP5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

@@ -9524,6 +9524,60 @@
       "popularTestsTop5": "🔥 人気テスト TOP5"
     }
   },
+  "phase3RealReasonForBreakupTest": {
+    "startMessage": {
+      "line1": "「別れの理由を相手のせいにばかりしていませんか？」",
+      "line2": "どの別れにも双方の理由があります。相手が悪かったのかもしれません。でも同じパターンが続くなら、自分の恋愛スタイルを冷徹に見つめ直す必要があります。",
+      "line3": "このテストは相手を分析しません。あなたの恋愛パターンから、別れの本当の原因を見つけます。",
+      "line4": "不快かもしれません。でも知らなければ変われません。",
+      "line5": "私の別れの原因を分析する 💔 冷徹にスタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense（元カノ/元カレが去った本当の理由）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似テスト",
+      "shareResult": "結果をシェア",
+      "empathyLevel": "別れの原因タイプ",
+      "characteristics": "主な別れパターン",
+      "goodMatch": "恋愛の強み",
+      "badMatch": "注意すべき相手",
+      "improvePoint": "改善ポイント",
+      "prescription": "次の恋のための処方箋",
+      "oneLiner": "別れ後の一言評"
+    },
+    "shareMessages": {
+      "default": "元カノ/元カレが去った本当の理由: {type} → あなたの別れの原因は？",
+      "kakao": "元カノ/元カレが去った本当の理由: {type} → あなたの別れの原因は？",
+      "wechat": "元カノ/元カレが去った本当の理由: {type} → あなたの別れの原因は？",
+      "whatsapp": "元カノ/元カレが去った本当の理由: {type} → あなたの別れの原因は？",
+      "telegram": "元カノ/元カレが去った本当の理由: {type} → あなたの別れの原因は？",
+      "line": "元カノ/元カレが去った本当の理由: {type} → あなたの別れの原因は？",
+      "startDefault": "元カノ/元カレが去った本当の理由 💔 私の別れの原因を分析する！",
+      "startKakao": "元カノ/元カレが去った本当の理由 💔 私の別れの原因を分析する！",
+      "startWechat": "元カノ/元カレが去った本当の理由 💔 私の別れの原因を分析する！",
+      "startWhatsapp": "元カノ/元カレが去った本当の理由 💔 私の別れの原因を分析する！",
+      "startTelegram": "元カノ/元カレが去った本当の理由 💔 私の別れの原因を分析する！",
+      "startLine": "元カノ/元カレが去った本当の理由 💔 私の別れの原因を分析する！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 人気テスト TOP5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

@@ -83,6 +83,7 @@ const testSlugs = [
   'phase3-office-survival-type',
   'phase3-real-friend-condition-analysis',
   'phase3-team-work-chemistry-test',
+  'phase3-real-reason-for-breakup',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

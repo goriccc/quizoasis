@@ -9545,6 +9545,60 @@
       "popularTestsTop5": "🔥 Top 5 trending tests"
     }
   },
+  "phase3RealReasonForBreakupTest": {
+    "startMessage": {
+      "line1": "\"Are you blaming the breakup only on your ex?\"",
+      "line2": "Every breakup has reasons on both sides. They might have been wrong. But if the pattern repeats, look coldly at your dating style.",
+      "line3": "This test doesn't analyze them. It finds the real breakup cause in YOUR dating patterns.",
+      "line4": "It may feel uncomfortable. But you need to know to change.",
+      "line5": "Analyze my breakup cause 💔 Start coldly"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (The Real Reason Your Ex Left)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "empathyLevel": "Breakup cause type",
+      "characteristics": "Main breakup patterns",
+      "goodMatch": "Dating strengths",
+      "badMatch": "Partners to watch",
+      "improvePoint": "Areas to improve",
+      "prescription": "Prescription for next love",
+      "oneLiner": "One-liner after the breakup"
+    },
+    "shareMessages": {
+      "default": "The real reason your ex left: {type} → What's your breakup cause?",
+      "kakao": "The real reason your ex left: {type} → What's your breakup cause?",
+      "wechat": "The real reason your ex left: {type} → What's your breakup cause?",
+      "whatsapp": "The real reason your ex left: {type} → What's your breakup cause?",
+      "telegram": "The real reason your ex left: {type} → What's your breakup cause?",
+      "line": "The real reason your ex left: {type} → What's your breakup cause?",
+      "startDefault": "Real reason your ex left 💔 Analyze my breakup cause!",
+      "startKakao": "Real reason your ex left 💔 Analyze my breakup cause!",
+      "startWechat": "Real reason your ex left 💔 Analyze my breakup cause!",
+      "startWhatsapp": "Real reason your ex left 💔 Analyze my breakup cause!",
+      "startTelegram": "Real reason your ex left 💔 Analyze my breakup cause!",
+      "startLine": "Real reason your ex left 💔 Analyze my breakup cause!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

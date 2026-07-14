@@ -27,6 +27,10 @@ import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
 import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
 import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
 import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
+import {
+  phase3RealReasonForBreakupQuestions,
+  phase3RealReasonForBreakupResults,
+} from '@/lib/phase3RealReasonForBreakupData';
 import { phase3AttachmentLoveQuestions, phase3AttachmentLoveResults } from '@/lib/phase3AttachmentLoveData';
 import { phase3BurnoutFatigueQuestions, phase3BurnoutFatigueResults } from '@/lib/phase3BurnoutFatigueData';
 import { phase3SummerVacationTypeQuestions, phase3SummerVacationTypeResults } from '@/lib/phase3SummerVacationTypeData';
@@ -409,6 +413,10 @@ const KpopExamTestClient = dynamic(() => import('@/components/KpopExamTestClient
 const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient'), {
   ssr: false
 });
+const Phase3RealReasonForBreakupTestClient = dynamic(
+  () => import('@/components/Phase3RealReasonForBreakupTestClient'),
+  { ssr: false }
+);
 const Phase3MemeCharacterTypeTestClient = dynamic(
   () => import('@/components/Phase3MemeCharacterTypeTestClient'),
   { ssr: false }
@@ -1225,6 +1233,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'psychology',
       category: 'personality',
       play_count: 0,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-real-reason-for-breakup') {
+    test = {
+      slug: 'phase3-real-reason-for-breakup',
+      title: {
+        ko: '전 남친/여친 떠나간 진짜 이유',
+        en: 'The Real Reason Your Ex Left',
+        ja: '元カノ/元カレが去った本当の理由',
+        'zh-CN': '前男/女友离开的真正原因',
+        'zh-TW': '前男/女友離開的真正原因',
+        vi: 'Lý do thật sự khiến người yêu cũ rời đi',
+        id: 'Alasan sebenarnya mantanmu pergi',
+      },
+      description: {
+        ko: '헤어진 이유를 상대방 탓으로만 돌리고 있진 않나요? 나의 연애 패턴에서 이별의 진짜 원인을 찾아드립니다.',
+        en: 'Are you blaming the breakup only on your ex? We find the real breakup cause in YOUR dating patterns.',
+        ja: '別れの理由を相手のせいにばかりしていませんか？あなたの恋愛パターンから、別れの本当の原因を見つけます。',
+        'zh-CN': '是不是总把分手的理由全怪在对方头上？我们从你的恋爱模式中，找出分手的真正原因。',
+        'zh-TW': '是不是總把分手的理由全怪在對方頭上？我們從你的戀愛模式中，找出分手的真正原因。',
+        vi: 'Bạn có đang đổ hết lỗi chia tay cho người yêu cũ không? Chúng tôi tìm nguyên nhân chia tay thật sự trong kiểu yêu của bạn.',
+        id: 'Apakah kamu menyalahkan putus hanya pada mantan? Kami menemukan penyebab putus yang sebenarnya di pola pacaranmu.',
+      },
+      thumbnail: 'p3_test_real_reason_for_breakup.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['이별', '연애', '자기반성', '심리', '공감'],
+        en: ['Breakup', 'Dating', 'Self-reflection', 'Psychology', 'Empathy'],
+        ja: ['別れ', '恋愛', '自己反省', '心理', '共感'],
+        'zh-CN': ['分手', '恋爱', '自我反省', '心理', '共情'],
+        'zh-TW': ['分手', '戀愛', '自我反省', '心理', '同理心'],
+        vi: ['Chia tay', 'Hẹn hò', 'Tự phản tỉnh', 'Tâm lý', 'Đồng cảm'],
+        id: ['Putus', 'Pacaran', 'Refleksi diri', 'Psikologi', 'Empati'],
+      },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -5354,6 +5399,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3PersonalityWeatherTypeQuestions}
           results={phase3PersonalityWeatherTypeResults}
           questionCount={phase3PersonalityWeatherTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-real-reason-for-breakup') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-real-reason-for-breakup',
+      title: {
+        ko: '전 남친/여친 떠나간 진짜 이유',
+        en: 'The Real Reason Your Ex Left',
+        ja: '元カノ/元カレが去った本当の理由',
+        'zh-CN': '前男/女友离开的真正原因',
+        'zh-TW': '前男/女友離開的真正原因',
+        vi: 'Lý do thật sự khiến người yêu cũ rời đi',
+        id: 'Alasan sebenarnya mantanmu pergi',
+      },
+      description: {
+        ko: '헤어진 이유를 상대방 탓으로만 돌리고 있진 않나요? 나의 연애 패턴에서 이별의 진짜 원인을 찾아드립니다.',
+        en: 'Are you blaming the breakup only on your ex? We find the real breakup cause in YOUR dating patterns.',
+        ja: '別れの理由を相手のせいにばかりしていませんか？あなたの恋愛パターンから、別れの本当の原因を見つけます。',
+        'zh-CN': '是不是总把分手的理由全怪在对方头上？我们从你的恋爱模式中，找出分手的真正原因。',
+        'zh-TW': '是不是總把分手的理由全怪在對方頭上？我們從你的戀愛模式中，找出分手的真正原因。',
+        vi: 'Bạn có đang đổ hết lỗi chia tay cho người yêu cũ không? Chúng tôi tìm nguyên nhân chia tay thật sự trong kiểu yêu của bạn.',
+        id: 'Apakah kamu menyalahkan putus hanya pada mantan? Kami menemukan penyebab putus yang sebenarnya di pola pacaranmu.',
+      },
+      thumbnail: 'p3_test_real_reason_for_breakup.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['이별', '연애', '자기반성', '심리', '공감'],
+        en: ['Breakup', 'Dating', 'Self-reflection', 'Psychology', 'Empathy'],
+        ja: ['別れ', '恋愛', '自己反省', '心理', '共感'],
+        'zh-CN': ['分手', '恋爱', '自我反省', '心理', '共情'],
+        'zh-TW': ['分手', '戀愛', '自我反省', '心理', '同理心'],
+        vi: ['Chia tay', 'Hẹn hò', 'Tự phản tỉnh', 'Tâm lý', 'Đồng cảm'],
+        id: ['Putus', 'Pacaran', 'Refleksi diri', 'Psikologi', 'Empati'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3RealReasonForBreakupTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3RealReasonForBreakupQuestions}
+          results={phase3RealReasonForBreakupResults}
+          questionCount={phase3RealReasonForBreakupQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -12788,6 +12888,11 @@ export default async function TestPage({ params }: Props) {
       questions: empathyFQuestions,
       results: empathyFResults
     };
+  } else if (slug === 'phase3-real-reason-for-breakup') {
+    testData = {
+      questions: phase3RealReasonForBreakupQuestions,
+      results: phase3RealReasonForBreakupResults,
+    };
   } else if (slug === 'phase2_fact_bomber_test') {
     testData = {
       questions: phase2FactBomberQuestions,
@@ -13075,6 +13180,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-debut-test') TestClient = KpopDebutTestClient;
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
+    else if (slug === 'phase3-real-reason-for-breakup') TestClient = Phase3RealReasonForBreakupTestClient;
     else if (slug === 'phase2_fact_bomber_test') TestClient = Phase2FactBomberTestClient;
     else if (slug === 'phase2_dating_mbti_test') TestClient = Phase2DatingMbtiTestClient;
     else if (slug === 'phase2_perfectionism-test') TestClient = Phase2PerfectionismTestClient;

@@ -9536,6 +9536,60 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3RealReasonForBreakupTest": {
+    "startMessage": {
+      "line1": "\"Apakah kamu menyalahkan putus hanya pada mantan?\"",
+      "line2": "Setiap putus ada alasan dari kedua belah pihak. Mereka mungkin memang salah. Tapi kalau polanya berulang, lihat gaya pacaranmu secara dingin.",
+      "line3": "Tes ini tidak menganalisis mereka. Tes ini menemukan penyebab putus yang sebenarnya di pola pacaranmu.",
+      "line4": "Mungkin tidak nyaman. Tapi kamu perlu tahu agar bisa berubah.",
+      "line5": "Analisis penyebab putusku 💔 Mulai dengan dingin"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense (Alasan sebenarnya mantanmu pergi)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "empathyLevel": "Tipe penyebab putus",
+      "characteristics": "Pola putus utama",
+      "goodMatch": "Kekuatan dalam pacaran",
+      "badMatch": "Pasangan yang perlu diwaspadai",
+      "improvePoint": "Yang perlu diperbaiki",
+      "prescription": "Resep untuk cinta berikutnya",
+      "oneLiner": "Satu kalimat setelah putus"
+    },
+    "shareMessages": {
+      "default": "Alasan sebenarnya mantanmu pergi: {type} → Apa penyebab putusmu?",
+      "kakao": "Alasan sebenarnya mantanmu pergi: {type} → Apa penyebab putusmu?",
+      "wechat": "Alasan sebenarnya mantanmu pergi: {type} → Apa penyebab putusmu?",
+      "whatsapp": "Alasan sebenarnya mantanmu pergi: {type} → Apa penyebab putusmu?",
+      "telegram": "Alasan sebenarnya mantanmu pergi: {type} → Apa penyebab putusmu?",
+      "line": "Alasan sebenarnya mantanmu pergi: {type} → Apa penyebab putusmu?",
+      "startDefault": "Alasan sebenarnya mantanmu pergi 💔 Analisis penyebab putusku!",
+      "startKakao": "Alasan sebenarnya mantanmu pergi 💔 Analisis penyebab putusku!",
+      "startWechat": "Alasan sebenarnya mantanmu pergi 💔 Analisis penyebab putusku!",
+      "startWhatsapp": "Alasan sebenarnya mantanmu pergi 💔 Analisis penyebab putusku!",
+      "startTelegram": "Alasan sebenarnya mantanmu pergi 💔 Analisis penyebab putusku!",
+      "startLine": "Alasan sebenarnya mantanmu pergi 💔 Analisis penyebab putusku!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",
