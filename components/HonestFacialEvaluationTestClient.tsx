@@ -1279,7 +1279,7 @@ const handleStartTest = async () => {
           <div>
             {/* 당신의 결과는 섹션 */}
             <div className="text-center mb-3 bg-white rounded-2xl shadow-lg p-4 md:p-5">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">{t('ui.yourResult')}</h2>
+              <h1 className="text-xl font-bold text-gray-800 mb-3">{t('ui.yourResult')}</h1>
               <p className="text-base text-gray-600 mb-1">{summary}</p>
             </div>
             
@@ -1463,7 +1463,7 @@ const handleStartTest = async () => {
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
         <div className="max-w-2xl mx-auto px-4 py-8">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">{t('ui.faceReadingTitle')}</h2>
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">{t('ui.faceReadingTitle')}</h1>
             <p className="text-gray-600 leading-relaxed whitespace-pre-line">{t('ui.faceReadingDescription')}</p>
           </div>
           <div className="mb-8">

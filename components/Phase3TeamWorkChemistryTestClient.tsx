@@ -741,7 +741,7 @@ function Phase3TeamWorkChemistryTestClientInner(props: Props) {
                 {t('ui.scoreLine', { score: totalScore })}
               </p>
               <div className="text-5xl mb-2">{result.emoji}</div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{rt}</h3>
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{rt}</h1>
               <p className="text-base font-semibold text-gray-700 mb-3">{tag}</p>
               <p className="text-sm text-gray-600 leading-relaxed text-left whitespace-pre-line">{desc}</p>
             </div>

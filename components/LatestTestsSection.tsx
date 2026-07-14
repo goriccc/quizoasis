@@ -187,7 +187,7 @@ export default function LatestTestsSection({
   return (
     <section className="py-6">
       <div className="max-w-7xl mx-auto px-1 sm:px-4">
-        <h2 className="text-xl font-bold mb-4 text-gray-800">{t('latest')}</h2>
+        <h1 className="text-xl font-bold mb-4 text-gray-800">{t('latest')}</h1>
         
         <div
           ref={scrollRef}

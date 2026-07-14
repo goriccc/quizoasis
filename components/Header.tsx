@@ -113,7 +113,7 @@ export default function Header() {
 
         {/* 중앙: 타이틀 */}
         <Link href={`/${locale}`} className="absolute left-1/2 transform -translate-x-1/2 cursor-pointer">
-          <h1 
+          <span
             className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent"
             style={{ 
               fontFamily: "'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -123,7 +123,7 @@ export default function Header() {
             }}
           >
             {t('title')}
-          </h1>
+          </span>
         </Link>
 
         {/* 우측: 얼굴 텍스트 + 언어 선택 */}
