@@ -9590,6 +9590,59 @@
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
     }
   },
+  "phase3CareerAptitudeAi16typesTest": {
+    "startMessage": {
+      "line1": "\"Công việc nào mình có thể làm lâu dài và làm thật tốt?\"",
+      "line2": "Sai lầm khi chọn nghề thường đến từ việc chỉ nhìn vào điều mình giỏi mà quên mất môi trường nơi mình phát huy tốt nhất. Kỹ năng tốt vẫn có thể khiến bạn kiệt sức nếu môi trường không hợp; yêu thích thôi cũng chưa đủ nếu không đúng năng lực.",
+      "line3": "Phân tích này đo đồng thời hai điều: sở thích và thế mạnh của bạn thiên về con người, sáng tạo, công nghệ hay phân tích; và môi trường nào giúp bạn làm việc tốt nhất.",
+      "line4": "Từ hai yếu tố đó, chúng tôi sẽ tìm ra nhóm nghề phù hợp nhất với bạn trong 16 nhóm.",
+      "line5": "Bạn trả lời càng thành thật, kết quả càng chính xác."
+    },
+    "ui": {
+      "startTest": "Tìm Nhóm Nghề Của Tôi",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Phân tích năng lực nghề nghiệp AI)",
+      "goToTest": "Làm Bài Test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài Test Tương Tự",
+      "shareResult": "Chia sẻ kết quả",
+      "coreCompetencies": "Năng lực cốt lõi",
+      "matchingJobs": "Nghề nghiệp phù hợp",
+      "growthPath": "Hướng phát triển",
+      "caution": "Điều cần lưu ý",
+      "firstCareer": "Bước khởi đầu gợi ý"
+    },
+      "shareMessages": {
+      "default": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
+      "kakao": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
+      "wechat": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
+      "whatsapp": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
+      "telegram": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
+      "line": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
+      "startDefault": "AI năng lực nghề (16 nhóm) 💼 Tìm nhóm nghề hợp bạn!",
+      "startKakao": "AI năng lực nghề (16 nhóm) 💼 Tìm nhóm nghề hợp bạn!",
+      "startWechat": "AI năng lực nghề (16 nhóm) 💼 Tìm nhóm nghề hợp bạn!",
+      "startWhatsapp": "AI năng lực nghề (16 nhóm) 💼 Tìm nhóm nghề hợp bạn!",
+      "startTelegram": "AI năng lực nghề (16 nhóm) 💼 Tìm nhóm nghề hợp bạn!",
+      "startLine": "AI năng lực nghề (16 nhóm) 💼 Tìm nhóm nghề hợp bạn!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào khay nhớ tạm!",
+      "shareFailed": "Thiết bị này không hỗ trợ chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

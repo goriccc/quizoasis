@@ -9590,6 +9590,59 @@
       "popularTestsTop5": "🔥 Top 5 tes populer"
     }
   },
+  "phase3CareerAptitudeAi16typesTest": {
+    "startMessage": {
+      "line1": "\"Pekerjaan seperti apa yang bisa kulakukan lama dan dengan baik?\"",
+      "line2": "Kesalahan memilih karier sering terjadi karena kita hanya melihat apa yang kita kuasai, bukan lingkungan tempat kita bekerja paling optimal. Keahlian pun bisa menguras tenaga di lingkungan yang tidak cocok, dan kesukaan saja tidak selalu bertahan tanpa kecocokan kemampuan.",
+      "line3": "Analisis ini mengukur dua hal sekaligus: apakah minat dan kekuatanmu condong ke manusia, kreativitas, teknologi, atau analisis; serta lingkungan tempat kamu bekerja paling baik.",
+      "line4": "Dari kombinasi keduanya, kami menemukan kelompok karier yang paling cocok untukmu di antara 16 tipe.",
+      "line5": "Semakin jujur jawabanmu, semakin akurat hasilnya."
+    },
+    "ui": {
+      "startTest": "Temukan Kelompok Karierku",
+      "adsenseTitle": "Area iklan AdSense (Analisis Bakat Karier AI)",
+      "goToTest": "Mulai Tes",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa",
+      "shareResult": "Bagikan Hasil",
+      "coreCompetencies": "Kompetensi Inti",
+      "matchingJobs": "Karier yang Cocok",
+      "growthPath": "Arah Pengembangan",
+      "caution": "Hal yang Perlu Diwaspadai",
+      "firstCareer": "Langkah Awal yang Disarankan"
+    },
+      "shareMessages": {
+      "default": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
+      "kakao": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
+      "wechat": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
+      "whatsapp": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
+      "telegram": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
+      "line": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
+      "startDefault": "AI Bakat Karier (16 tipe) 💼 Cek tipe karier yang paling cocok!",
+      "startKakao": "AI Bakat Karier (16 tipe) 💼 Cek tipe karier yang paling cocok!",
+      "startWechat": "AI Bakat Karier (16 tipe) 💼 Cek tipe karier yang paling cocok!",
+      "startWhatsapp": "AI Bakat Karier (16 tipe) 💼 Cek tipe karier yang paling cocok!",
+      "startTelegram": "AI Bakat Karier (16 tipe) 💼 Cek tipe karier yang paling cocok!",
+      "startLine": "AI Bakat Karier (16 tipe) 💼 Cek tipe karier yang paling cocok!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Berbagi tidak tersedia di perangkat ini.",
+      "wechatCopy": "Tautan disalin! Tempelkan di WeChat untuk membagikannya.",
+      "kakaoInit": "Fitur berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi masalah saat membagikan ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 Tes Serupa Teratas",
+      "popularTestsTop5": "🔥 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

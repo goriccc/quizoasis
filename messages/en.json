@@ -9599,6 +9599,59 @@
       "popularTestsTop5": "🔥 Top 5 trending tests"
     }
   },
+  "phase3CareerAptitudeAi16typesTest": {
+    "startMessage": {
+      "line1": "\"What kind of work can I keep doing—and do well—for years?\"",
+      "line2": "Career choices often go wrong when we focus only on what we are good at, not the environment where we thrive. Even a strong skill can drain you in the wrong setting, and passion alone may not last without the right fit.",
+      "line3": "This analysis measures two things at once: whether your interests and strengths lean toward people, creativity, technology, or analysis—and the environment where you work at your best.",
+      "line4": "Together, these two dimensions identify the best match for you among 16 career types.",
+      "line5": "The more honestly you answer, the more accurate your result will be."
+    },
+    "ui": {
+      "startTest": "Find My Career Type",
+      "adsenseTitle": "AdSense ad area (Career Aptitude AI Analysis)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "shareResult": "Share Result",
+      "coreCompetencies": "Core Strengths",
+      "matchingJobs": "Best-Fit Careers",
+      "growthPath": "Growth Path",
+      "caution": "Watch Out For",
+      "firstCareer": "Recommended First Step"
+    },
+    "shareMessages": {
+      "default": "Career Aptitude AI: {type}! → What type did you get?",
+      "kakao": "Career Aptitude AI: {type}! → What type did you get?",
+      "wechat": "Career Aptitude AI: {type}! → What type did you get?",
+      "whatsapp": "Career Aptitude AI: {type}! → What type did you get?",
+      "telegram": "Career Aptitude AI: {type}! → What type did you get?",
+      "line": "Career Aptitude AI: {type}! → What type did you get?",
+      "startDefault": "Career Aptitude AI (16 types) 💼 Find your best-fit career type!",
+      "startKakao": "Career Aptitude AI (16 types) 💼 Find your best-fit career type!",
+      "startWechat": "Career Aptitude AI (16 types) 💼 Find your best-fit career type!",
+      "startWhatsapp": "Career Aptitude AI (16 types) 💼 Find your best-fit career type!",
+      "startTelegram": "Career Aptitude AI (16 types) 💼 Find your best-fit career type!",
+      "startLine": "Career Aptitude AI (16 types) 💼 Find your best-fit career type!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to your clipboard!",
+      "shareFailed": "Sharing is not available on this device.",
+      "wechatCopy": "Link copied! Paste it into WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is being initialized. Please try again shortly.",
+      "kakaoError": "There was a problem sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

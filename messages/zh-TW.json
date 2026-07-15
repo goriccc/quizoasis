@@ -9059,6 +9059,59 @@
       "popularTestsTop5": "🔥 熱門測試 TOP5"
     }
   },
+  "phase3CareerAptitudeAi16typesTest": {
+    "startMessage": {
+      "line1": "「什麼工作能讓我做得久，也做得好？」",
+      "line2": "職涯選擇常見的誤區，是只看「我擅長什麼」，卻忽略「我在哪種環境中表現最好」。能力再強，環境不合也會疲憊；再喜歡，和自身能力不匹配也難以長久。",
+      "line3": "這項分析會同時衡量兩件事：你的興趣與優勢更偏向人際、創意、技術還是分析，以及你在哪種環境中最能發揮。",
+      "line4": "透過這兩個維度的組合，為你從16種職群中找出最適合的一種。",
+      "line5": "回答得越真實，結果越準確。"
+    },
+    "ui": {
+      "startTest": "尋找適合我的職群",
+      "adsenseTitle": "AdSense 廣告區域（職業適性 AI 分析）",
+      "goToTest": "開始測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "shareResult": "分享結果",
+      "coreCompetencies": "核心能力",
+      "matchingJobs": "適合的職業",
+      "growthPath": "成長方向",
+      "caution": "注意事項",
+      "firstCareer": "推薦起點"
+    },
+    "shareMessages": {
+      "default": "職業適性AI：{type}！→ 你測到哪類職群？",
+      "kakao": "職業適性AI：{type}！→ 你測到哪類職群？",
+      "wechat": "職業適性AI：{type}！→ 你測到哪類職群？",
+      "whatsapp": "職業適性AI：{type}！→ 你測到哪類職群？",
+      "telegram": "職業適性AI：{type}！→ 你測到哪類職群？",
+      "line": "職業適性AI：{type}！→ 你測到哪類職群？",
+      "startDefault": "職業適性AI（16種職群）💼 來測測適合你的職群！",
+      "startKakao": "職業適性AI（16種職群）💼 來測測適合你的職群！",
+      "startWechat": "職業適性AI（16種職群）💼 來測測適合你的職群！",
+      "startWhatsapp": "職業適性AI（16種職群）💼 來測測適合你的職群！",
+      "startTelegram": "職業適性AI（16種職群）💼 來測測適合你的職群！",
+      "startLine": "職業適性AI（16種職群）💼 來測測適合你的職群！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "此裝置暫不支援分享功能。",
+      "wechatCopy": "連結已複製！請貼到 WeChat 中分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top 5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top 5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

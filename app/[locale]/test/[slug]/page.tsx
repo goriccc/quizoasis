@@ -31,6 +31,10 @@ import {
   phase3RealReasonForBreakupQuestions,
   phase3RealReasonForBreakupResults,
 } from '@/lib/phase3RealReasonForBreakupData';
+import {
+  phase3CareerAptitudeAi16typesQuestions,
+  phase3CareerAptitudeAi16typesResults,
+} from '@/lib/phase3CareerAptitudeAi16typesData';
 import { phase3AttachmentLoveQuestions, phase3AttachmentLoveResults } from '@/lib/phase3AttachmentLoveData';
 import { phase3BurnoutFatigueQuestions, phase3BurnoutFatigueResults } from '@/lib/phase3BurnoutFatigueData';
 import { phase3SummerVacationTypeQuestions, phase3SummerVacationTypeResults } from '@/lib/phase3SummerVacationTypeData';
@@ -415,6 +419,10 @@ const EmpathyFTestClient = dynamic(() => import('@/components/EmpathyFTestClient
 });
 const Phase3RealReasonForBreakupTestClient = dynamic(
   () => import('@/components/Phase3RealReasonForBreakupTestClient'),
+  { ssr: false }
+);
+const Phase3CareerAptitudeAi16typesTestClient = dynamic(
+  () => import('@/components/Phase3CareerAptitudeAi16typesTestClient'),
   { ssr: false }
 );
 const Phase3MemeCharacterTypeTestClient = dynamic(
@@ -1270,6 +1278,85 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         vi: ['Chia tay', 'Hẹn hò', 'Tự phản tỉnh', 'Tâm lý', 'Đồng cảm'],
         id: ['Putus', 'Pacaran', 'Refleksi diri', 'Psikologi', 'Empati'],
       },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-career-aptitude-ai-16types') {
+    test = {
+      slug: 'phase3-career-aptitude-ai-16types',
+            title: {
+              "ko": "직업 적성 AI 분석 (16가지 직군)",
+              "en": "Career Aptitude AI Analysis (16 Career Types)",
+              "ja": "職業適性AI分析（16職群）",
+              "zh-CN": "职业适性 AI 分析（16种职群）",
+              "zh-TW": "職業適性 AI 分析（16種職群）",
+              "vi": "Phân tích năng lực nghề nghiệp AI (16 nhóm nghề)",
+              "id": "Analisis Bakat Karier AI (16 Kelompok Karier)"
+            },
+            description: {
+              "ko": "내가 어떤 일을 해야 오래, 잘 할 수 있을까요?",
+              "en": "What work can you do well and enjoy for the long run?",
+              "ja": "自分はどんな仕事なら、長く、うまく続けられる？",
+              "zh-CN": "什么工作能让你做得久，也做得好？",
+              "zh-TW": "什麼工作能讓你做得久，也做得好？",
+              "vi": "Công việc nào bạn có thể làm lâu dài và làm thật tốt?",
+              "id": "Pekerjaan seperti apa yang bisa kamu lakukan lama dan dengan baik?"
+            },
+            thumbnail: 'p3_test_career_aptitude_ai_16types.webp',
+            type: 'psychology',
+            category: 'personality',
+            play_count: 0,
+            tags: {
+              "ko": [
+                "직업",
+                "적성",
+                "커리어",
+                "취업",
+                "이직"
+              ],
+              "en": [
+                "Career",
+                "Aptitude",
+                "Career quiz",
+                "Job search",
+                "Career change"
+              ],
+              "ja": [
+                "職業",
+                "適性",
+                "キャリア",
+                "就職",
+                "転職"
+              ],
+              "zh-CN": [
+                "职业",
+                "适性",
+                "职涯",
+                "求职",
+                "跳槽"
+              ],
+              "zh-TW": [
+                "職業",
+                "適性",
+                "職涯",
+                "求職",
+                "轉職"
+              ],
+              "vi": [
+                "Nghề nghiệp",
+                "Năng lực",
+                "Sự nghiệp",
+                "Việc làm",
+                "Chuyển việc"
+              ],
+              "id": [
+                "Karier",
+                "Bakat",
+                "Pengembangan karier",
+                "Pencarian kerja",
+                "Ganti pekerjaan"
+              ]
+            },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -5454,6 +5541,103 @@ export default async function TestPage({ params }: Props) {
           questions={phase3RealReasonForBreakupQuestions}
           results={phase3RealReasonForBreakupResults}
           questionCount={phase3RealReasonForBreakupQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-career-aptitude-ai-16types') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-career-aptitude-ai-16types',
+            title: {
+              "ko": "직업 적성 AI 분석 (16가지 직군)",
+              "en": "Career Aptitude AI Analysis (16 Career Types)",
+              "ja": "職業適性AI分析（16職群）",
+              "zh-CN": "职业适性 AI 分析（16种职群）",
+              "zh-TW": "職業適性 AI 分析（16種職群）",
+              "vi": "Phân tích năng lực nghề nghiệp AI (16 nhóm nghề)",
+              "id": "Analisis Bakat Karier AI (16 Kelompok Karier)"
+            },
+            description: {
+              "ko": "내가 어떤 일을 해야 오래, 잘 할 수 있을까요?",
+              "en": "What work can you do well and enjoy for the long run?",
+              "ja": "自分はどんな仕事なら、長く、うまく続けられる？",
+              "zh-CN": "什么工作能让你做得久，也做得好？",
+              "zh-TW": "什麼工作能讓你做得久，也做得好？",
+              "vi": "Công việc nào bạn có thể làm lâu dài và làm thật tốt?",
+              "id": "Pekerjaan seperti apa yang bisa kamu lakukan lama dan dengan baik?"
+            },
+            thumbnail: 'p3_test_career_aptitude_ai_16types.webp',
+            type: 'psychology',
+            category: 'personality',
+            play_count: 0,
+            tags: {
+              "ko": [
+                "직업",
+                "적성",
+                "커리어",
+                "취업",
+                "이직"
+              ],
+              "en": [
+                "Career",
+                "Aptitude",
+                "Career quiz",
+                "Job search",
+                "Career change"
+              ],
+              "ja": [
+                "職業",
+                "適性",
+                "キャリア",
+                "就職",
+                "転職"
+              ],
+              "zh-CN": [
+                "职业",
+                "适性",
+                "职涯",
+                "求职",
+                "跳槽"
+              ],
+              "zh-TW": [
+                "職業",
+                "適性",
+                "職涯",
+                "求職",
+                "轉職"
+              ],
+              "vi": [
+                "Nghề nghiệp",
+                "Năng lực",
+                "Sự nghiệp",
+                "Việc làm",
+                "Chuyển việc"
+              ],
+              "id": [
+                "Karier",
+                "Bakat",
+                "Pengembangan karier",
+                "Pencarian kerja",
+                "Ganti pekerjaan"
+              ]
+            },
+    };
+
+    return (
+      <>
+        <Phase3CareerAptitudeAi16typesTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3CareerAptitudeAi16typesQuestions}
+          results={phase3CareerAptitudeAi16typesResults}
+          questionCount={phase3CareerAptitudeAi16typesQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
@@ -12893,6 +13077,11 @@ export default async function TestPage({ params }: Props) {
       questions: phase3RealReasonForBreakupQuestions,
       results: phase3RealReasonForBreakupResults,
     };
+  } else if (slug === 'phase3-career-aptitude-ai-16types') {
+    testData = {
+      questions: phase3CareerAptitudeAi16typesQuestions,
+      results: phase3CareerAptitudeAi16typesResults,
+    };
   } else if (slug === 'phase2_fact_bomber_test') {
     testData = {
       questions: phase2FactBomberQuestions,
@@ -13181,6 +13370,7 @@ export default async function TestPage({ params }: Props) {
     else if (slug === 'kpop-exam-test') TestClient = KpopExamTestClient;
     else if (slug === 'empathy-f-test') TestClient = EmpathyFTestClient;
     else if (slug === 'phase3-real-reason-for-breakup') TestClient = Phase3RealReasonForBreakupTestClient;
+    else if (slug === 'phase3-career-aptitude-ai-16types') TestClient = Phase3CareerAptitudeAi16typesTestClient;
     else if (slug === 'phase2_fact_bomber_test') TestClient = Phase2FactBomberTestClient;
     else if (slug === 'phase2_dating_mbti_test') TestClient = Phase2DatingMbtiTestClient;
     else if (slug === 'phase2_perfectionism-test') TestClient = Phase2PerfectionismTestClient;

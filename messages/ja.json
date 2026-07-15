@@ -9578,6 +9578,59 @@
       "popularTestsTop5": "🔥 人気テスト TOP5"
     }
   },
+  "phase3CareerAptitudeAi16typesTest": {
+    "startMessage": {
+      "line1": "「自分はどんな仕事なら、長く、うまく続けられる？」",
+      "line2": "仕事選びで失敗しやすいのは、「何が得意か」だけを見て、「どんな環境で力を発揮できるか」を見落とすからです。能力があっても環境が合わなければ疲れ、好きでも適性に合わなければ続きません。",
+      "line3": "この分析では、興味・適性が人・創造性・技術・分析のどこに向くかと、どんな環境で最も力を発揮できるかを同時に測ります。",
+      "line4": "この2つの組み合わせから、あなたに最も合う16種類の職群を見つけます。",
+      "line5": "正直に答えるほど、結果は正確になります。"
+    },
+    "ui": {
+      "startTest": "自分に合う職群を探す",
+      "adsenseTitle": "AdSense 広告エリア（職業適性AI分析）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "shareResult": "結果をシェア",
+      "coreCompetencies": "コアスキル",
+      "matchingJobs": "向いている職群",
+      "growthPath": "成長の方向性",
+      "caution": "注意点",
+      "firstCareer": "おすすめの最初の一歩"
+    },
+    "shareMessages": {
+      "default": "職業適性AI：{type}！→ あなたはどの職群？",
+      "kakao": "職業適性AI：{type}！→ あなたはどの職群？",
+      "wechat": "職業適性AI：{type}！→ あなたはどの職群？",
+      "whatsapp": "職業適性AI：{type}！→ あなたはどの職群？",
+      "telegram": "職業適性AI：{type}！→ あなたはどの職群？",
+      "line": "職業適性AI：{type}！→ あなたはどの職群？",
+      "startDefault": "職業適性AI（16職群）💼 自分に合う職群、見てみない？",
+      "startKakao": "職業適性AI（16職群）💼 自分に合う職群、見てみない？",
+      "startWechat": "職業適性AI（16職群）💼 自分に合う職群、見てみない？",
+      "startWhatsapp": "職業適性AI（16職群）💼 自分に合う職群、見てみない？",
+      "startTelegram": "職業適性AI（16職群）💼 自分に合う職群、見てみない？",
+      "startLine": "職業適性AI（16職群）💼 自分に合う職群、見てみない？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "この端末では共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼り付けて共有してください。",
+      "kakaoInit": "KakaoTalk共有を準備しています。少ししてからもう一度お試しください。",
+      "kakaoError": "KakaoTalkへの共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテスト おすすめTOP5",
+      "popularTestsTop5": "🔥 今人気のテスト おすすめTOP5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",
