@@ -9873,6 +9873,63 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ToxicRelationshipDiagnosisTest": {
+    "startMessage": {
+      "line1": "만나고 나면 기운이 빠지는 사람이 주변에 있나요?",
+      "line2": "모든 인간관계가 나를 채워주진 않습니다. 어떤 관계는 시간이 지날수록 나를 소모시키고 어떤 사람은 만날 때마다 무언가를 가져갑니다. 그런데 정작 당사자인 나는 \"내가 예민한 건가?\" \"내가 너무 기대하는 건가?\"하며 스스로를 탓하곤 합니다.",
+      "line3": "이 테스트는 실제 상황을 통해 내 주변에 거리두기가 필요한 인맥이 있는지, 있다면 어떤 유형인지 진단합니다.",
+      "line4": "12가지 상황극에서 가장 익숙한 장면을 골라주세요.",
+      "line5": "내 인맥 거리두기 진단 🔍 지금 바로 시작"
+    },
+    "ui": {
+      "startTest": "인맥 거리두기 진단 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (거리를 둬야 할 인맥 진단)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "diagnosisType": "진단 유형",
+      "keyTraits": "핵심 특징",
+      "strategy": "거리두기 전략",
+      "declaration": "관계 리모델링 선언",
+      "encouragement": "이 결과를 보는 당신에게"
+    },
+    "shareMessages": {
+      "default": "거리둬야 할 인맥 진단: {type} → 너는 어떤 결과 나왔어? 친구 태그해봐",
+      "kakao": "거리둬야 할 인맥 진단: {type} → 너는 어떤 결과 나왔어? 친구 태그해봐",
+      "wechat": "거리둬야 할 인맥 진단: {type} → 너는 어떤 결과 나왔어? 친구 태그해봐",
+      "whatsapp": "거리둬야 할 인맥 진단: {type} → 너는 어떤 결과 나왔어? 친구 태그해봐",
+      "telegram": "거리둬야 할 인맥 진단: {type} → 너는 어떤 결과 나왔어? 친구 태그해봐",
+      "line": "거리둬야 할 인맥 진단: {type} → 너는 어떤 결과 나왔어? 친구 태그해봐",
+      "startDefault": "거리를 둬야 할 인맥 진단 🔍 만나고 나면 기운이 빠지는 사람, 혹시 주변에 있나요?",
+      "startKakao": "거리를 둬야 할 인맥 진단 🔍 만나고 나면 기운이 빠지는 사람, 혹시 주변에 있나요?",
+      "startWechat": "거리를 둬야 할 인맥 진단 🔍 만나고 나면 기운이 빠지는 사람, 혹시 주변에 있나요?",
+      "startWhatsapp": "거리를 둬야 할 인맥 진단 🔍 만나고 나면 기운이 빠지는 사람, 혹시 주변에 있나요?",
+      "startTelegram": "거리를 둬야 할 인맥 진단 🔍 만나고 나면 기운이 빠지는 사람, 혹시 주변에 있나요?",
+      "startLine": "거리를 둬야 할 인맥 진단 🔍 만나고 나면 기운이 빠지는 사람, 혹시 주변에 있나요?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

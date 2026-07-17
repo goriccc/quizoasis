@@ -9735,6 +9735,63 @@
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
   },
+  "phase3ToxicRelationshipDiagnosisTest": {
+    "startMessage": {
+      "line1": "Ada orang di sekitar yang membuatmu lelah setiap kali bertemu?",
+      "line2": "Tidak semua hubungan mengisi energimu. Ada yang semakin lama semakin menguras, dan ada orang yang setiap kali bertemu mengambil sesuatu darimu. Padahal kamu malah menyalahkan diri: \"Apa aku terlalu sensitif?\" \"Apa aku terlalu banyak berharap?\"",
+      "line3": "Tes ini mendiagnosis apakah di sekitarmu ada relasi yang perlu dijauhi — dan tipenya apa — melalui situasi nyata.",
+      "line4": "Pilih adegan yang paling familiar di 12 situasi.",
+      "line5": "Diagnosis jarak lingkaran pertemanan 🔍 Mulai sekarang"
+    },
+    "ui": {
+      "startTest": "Mulai diagnosis jarak lingkaran pertemanan",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Area iklan AdSense (Diagnosis Relasi yang Perlu Dijauhi)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "diagnosisType": "Tipe diagnosis",
+      "keyTraits": "Ciri utama",
+      "strategy": "Strategi menjaga jarak",
+      "declaration": "Deklarasi remodel hubungan",
+      "encouragement": "Untukmu yang membaca hasil ini"
+    },
+    "shareMessages": {
+      "default": "Diagnosis relasi yang perlu dijauhi: {type} → Hasilmu apa? Tag temanmu",
+      "kakao": "Diagnosis relasi yang perlu dijauhi: {type} → Hasilmu apa? Tag temanmu",
+      "wechat": "Diagnosis relasi yang perlu dijauhi: {type} → Hasilmu apa? Tag temanmu",
+      "whatsapp": "Diagnosis relasi yang perlu dijauhi: {type} → Hasilmu apa? Tag temanmu",
+      "telegram": "Diagnosis relasi yang perlu dijauhi: {type} → Hasilmu apa? Tag temanmu",
+      "line": "Diagnosis relasi yang perlu dijauhi: {type} → Hasilmu apa? Tag temanmu",
+      "startDefault": "Diagnosis relasi yang perlu dijauhi 🔍 Ada yang membuatmu lelah setiap kali bertemu?",
+      "startKakao": "Diagnosis relasi yang perlu dijauhi 🔍 Ada yang membuatmu lelah setiap kali bertemu?",
+      "startWechat": "Diagnosis relasi yang perlu dijauhi 🔍 Ada yang membuatmu lelah setiap kali bertemu?",
+      "startWhatsapp": "Diagnosis relasi yang perlu dijauhi 🔍 Ada yang membuatmu lelah setiap kali bertemu?",
+      "startTelegram": "Diagnosis relasi yang perlu dijauhi 🔍 Ada yang membuatmu lelah setiap kali bertemu?",
+      "startLine": "Diagnosis relasi yang perlu dijauhi 🔍 Ada yang membuatmu lelah setiap kali bertemu?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Silakan tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

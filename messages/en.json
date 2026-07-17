@@ -9744,6 +9744,63 @@
       "popularTestsTop5": "🔥 Top 5 popular tests right now"
     }
   },
+  "phase3ToxicRelationshipDiagnosisTest": {
+    "startMessage": {
+      "line1": "Is there someone who drains you every time you meet?",
+      "line2": "Not every relationship fills you up. Some slowly drain you over time, and some people take something from you every time you meet. Yet you might blame yourself: \"Am I too sensitive?\" \"Am I expecting too much?\"",
+      "line3": "This test diagnoses whether anyone in your circle needs distance — and what type they are — through real-life scenarios.",
+      "line4": "Pick the scene that feels most familiar in each of the 12 situations.",
+      "line5": "Diagnose your network distance needs 🔍 Start now"
+    },
+    "ui": {
+      "startTest": "Start network distance diagnosis",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "Browse other tests",
+      "goToTest": "Take the test",
+      "adsenseTitle": "AdSense ad area (Toxic Connections Diagnosis)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "diagnosisType": "Diagnosis type",
+      "keyTraits": "Key traits",
+      "strategy": "Distance strategy",
+      "declaration": "Relationship remodel declaration",
+      "encouragement": "To you reading this result"
+    },
+    "shareMessages": {
+      "default": "Toxic connections diagnosis: {type} → What did you get? Tag a friend",
+      "kakao": "Toxic connections diagnosis: {type} → What did you get? Tag a friend",
+      "wechat": "Toxic connections diagnosis: {type} → What did you get? Tag a friend",
+      "whatsapp": "Toxic connections diagnosis: {type} → What did you get? Tag a friend",
+      "telegram": "Toxic connections diagnosis: {type} → What did you get? Tag a friend",
+      "line": "Toxic connections diagnosis: {type} → What did you get? Tag a friend",
+      "startDefault": "Toxic connections diagnosis 🔍 Anyone who drains you after every meetup?",
+      "startKakao": "Toxic connections diagnosis 🔍 Anyone who drains you after every meetup?",
+      "startWechat": "Toxic connections diagnosis 🔍 Anyone who drains you after every meetup?",
+      "startWhatsapp": "Toxic connections diagnosis 🔍 Anyone who drains you after every meetup?",
+      "startTelegram": "Toxic connections diagnosis 🔍 Anyone who drains you after every meetup?",
+      "startLine": "Toxic connections diagnosis 🔍 Anyone who drains you after every meetup?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

@@ -9204,6 +9204,63 @@
       "popularTestsTop5": "🔥 最近熱門測驗 Top5"
     }
   },
+  "phase3ToxicRelationshipDiagnosisTest": {
+    "startMessage": {
+      "line1": "身邊有沒有一見面就讓你沒勁的人？",
+      "line2": "不是每段人際關係都會滋養你。有的關係會隨著時間慢慢消耗你，有的人每次見面都會帶走些什麼。可你卻常責怪自己：「是我太敏感了嗎？」「是我期望太高了嗎？」",
+      "line3": "這個測驗透過真實情境，診斷你身邊是否有需要保持距離的人脈，以及屬於哪種類型。",
+      "line4": "請在12個情境中選出最熟悉的那一幕。",
+      "line5": "人脈距離診斷 🔍 馬上開始"
+    },
+    "ui": {
+      "startTest": "開始人脈距離診斷",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測驗",
+      "goToTest": "去測驗",
+      "adsenseTitle": "AdSense廣告區域（該保持距離的人脈診斷）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測驗",
+      "diagnosisType": "診斷類型",
+      "keyTraits": "核心特徵",
+      "strategy": "保持距離策略",
+      "declaration": "關係重塑宣言",
+      "encouragement": "寫給看到這個結果的你"
+    },
+    "shareMessages": {
+      "default": "該保持距離的人脈診斷：{type} → 你測出什麼結果？標記朋友試試",
+      "kakao": "該保持距離的人脈診斷：{type} → 你測出什麼結果？標記朋友試試",
+      "wechat": "該保持距離的人脈診斷：{type} → 你測出什麼結果？標記朋友試試",
+      "whatsapp": "該保持距離的人脈診斷：{type} → 你測出什麼結果？標記朋友試試",
+      "telegram": "該保持距離的人脈診斷：{type} → 你測出什麼結果？標記朋友試試",
+      "line": "該保持距離的人脈診斷：{type} → 你測出什麼結果？標記朋友試試",
+      "startDefault": "該保持距離的人脈診斷 🔍 身邊有沒有一見面就讓你沒勁的人？",
+      "startKakao": "該保持距離的人脈診斷 🔍 身邊有沒有一見面就讓你沒勁的人？",
+      "startWechat": "該保持距離的人脈診斷 🔍 身邊有沒有一見面就讓你沒勁的人？",
+      "startWhatsapp": "該保持距離的人脈診斷 🔍 身邊有沒有一見面就讓你沒勁的人？",
+      "startTelegram": "該保持距離的人脈診斷 🔍 身邊有沒有一見面就讓你沒勁的人？",
+      "startLine": "該保持距離的人脈診斷 🔍 身邊有沒有一見面就讓你沒勁的人？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後重試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測驗推薦 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

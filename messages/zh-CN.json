@@ -9735,6 +9735,63 @@
       "popularTestsTop5": "🔥 最近热门测试 Top5"
     }
   },
+  "phase3ToxicRelationshipDiagnosisTest": {
+    "startMessage": {
+      "line1": "身边有没有一见面就让你没劲的人？",
+      "line2": "不是每段人际关系都会滋养你。有的关系会随着时间慢慢消耗你，有的人每次见面都会带走些什么。可你却常责怪自己：「是我太敏感了吗？」「是我期望太高了吗？」",
+      "line3": "这个测试通过真实情境，诊断你身边是否有需要保持距离的人脉，以及属于哪种类型。",
+      "line4": "请在12个情境中选出最熟悉的那一幕。",
+      "line5": "人脉距离诊断 🔍 马上开始"
+    },
+    "ui": {
+      "startTest": "开始人脉距离诊断",
+      "shareWithFriends": "和朋友一起测",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "看看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（该保持距离的人脉诊断）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "diagnosisType": "诊断类型",
+      "keyTraits": "核心特征",
+      "strategy": "保持距离策略",
+      "declaration": "关系重塑宣言",
+      "encouragement": "写给看到这个结果的你"
+    },
+    "shareMessages": {
+      "default": "该保持距离的人脉诊断：{type} → 你测出什么结果？标记朋友试试",
+      "kakao": "该保持距离的人脉诊断：{type} → 你测出什么结果？标记朋友试试",
+      "wechat": "该保持距离的人脉诊断：{type} → 你测出什么结果？标记朋友试试",
+      "whatsapp": "该保持距离的人脉诊断：{type} → 你测出什么结果？标记朋友试试",
+      "telegram": "该保持距离的人脉诊断：{type} → 你测出什么结果？标记朋友试试",
+      "line": "该保持距离的人脉诊断：{type} → 你测出什么结果？标记朋友试试",
+      "startDefault": "该保持距离的人脉诊断 🔍 身边有没有一见面就让你没劲的人？",
+      "startKakao": "该保持距离的人脉诊断 🔍 身边有没有一见面就让你没劲的人？",
+      "startWechat": "该保持距离的人脉诊断 🔍 身边有没有一见面就让你没劲的人？",
+      "startWhatsapp": "该保持距离的人脉诊断 🔍 身边有没有一见面就让你没劲的人？",
+      "startTelegram": "该保持距离的人脉诊断 🔍 身边有没有一见面就让你没劲的人？",
+      "startLine": "该保持距离的人脉诊断 🔍 身边有没有一见面就让你没劲的人？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后重试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "热门",

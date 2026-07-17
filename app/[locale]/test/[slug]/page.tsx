@@ -104,6 +104,10 @@ import {
 } from '@/lib/phase3BestFriendQuizData';
 import { phase3FriendSeesMyMbtiQuestions } from '@/lib/phase3FriendSeesMyMbtiData';
 import {
+  phase3ToxicRelationshipDiagnosisQuestions,
+  phase3ToxicRelationshipDiagnosisResults,
+} from '@/lib/phase3ToxicRelationshipDiagnosisData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -511,6 +515,10 @@ const Phase3BestFriendQuizTestClient = dynamic(
 );
 const Phase3FriendSeesMyMbtiTestClient = dynamic(
   () => import('@/components/Phase3FriendSeesMyMbtiTestClient'),
+  { ssr: false }
+);
+const Phase3ToxicRelationshipDiagnosisTestClient = dynamic(
+  () => import('@/components/Phase3ToxicRelationshipDiagnosisTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1112,6 +1120,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-toxic-relationship-diagnosis') {
+    test = {
+      slug: 'phase3-toxic-relationship-diagnosis',
+      title: {
+        ko: '거리를 둬야 할 인맥 진단',
+        en: 'Toxic Connections Diagnosis',
+        ja: '距離を置くべき人脈診断',
+        'zh-CN': '该保持距离的人脉诊断',
+        'zh-TW': '該保持距離的人脈診斷',
+        vi: 'Chẩn đoán mối quan hệ cần giữ khoảng cách',
+        id: 'Diagnosis Relasi yang Perlu Dijauhi',
+      },
+      description: {
+        ko: '만나고 나면 기운이 빠지는 사람이 주변에 있나요?',
+        en: 'Is there someone who drains you every time you meet?',
+        ja: '会うたびに元気がなくなる人が周りにいますか？',
+        'zh-CN': '身边有没有一见面就让你没劲的人？',
+        'zh-TW': '身邊有沒有一見面就讓你沒勁的人？',
+        vi: 'Có ai quanh bạn khiến bạn kiệt sức mỗi lần gặp không?',
+        id: 'Ada orang di sekitar yang membuatmu lelah setiap kali bertemu?',
+      },
+      thumbnail: 'p3_test_toxic_relationship_diagnosis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['인맥', '관계', '심리'],
+        en: ['Network', 'Relationships', 'Psychology'],
+        ja: ['人脈', '関係', '心理'],
+        'zh-CN': ['人脉', '关系', '心理'],
+        'zh-TW': ['人脈', '關係', '心理'],
+        vi: ['Quan hệ', 'Mối quan hệ', 'Tâm lý'],
+        id: ['Lingkaran', 'Hubungan', 'Psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5359,6 +5404,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-toxic-relationship-diagnosis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-toxic-relationship-diagnosis',
+      title: {
+        ko: '거리를 둬야 할 인맥 진단',
+        en: 'Toxic Connections Diagnosis',
+        ja: '距離を置くべき人脈診断',
+        'zh-CN': '该保持距离的人脉诊断',
+        'zh-TW': '該保持距離的人脈診斷',
+        vi: 'Chẩn đoán mối quan hệ cần giữ khoảng cách',
+        id: 'Diagnosis Relasi yang Perlu Dijauhi',
+      },
+      description: {
+        ko: '만나고 나면 기운이 빠지는 사람이 주변에 있나요?',
+        en: 'Is there someone who drains you every time you meet?',
+        ja: '会うたびに元気がなくなる人が周りにいますか？',
+        'zh-CN': '身边有没有一见面就让你没劲的人？',
+        'zh-TW': '身邊有沒有一見面就讓你沒勁的人？',
+        vi: 'Có ai quanh bạn khiến bạn kiệt sức mỗi lần gặp không?',
+        id: 'Ada orang di sekitar yang membuatmu lelah setiap kali bertemu?',
+      },
+      thumbnail: 'p3_test_toxic_relationship_diagnosis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['인맥', '관계', '심리'],
+        en: ['Network', 'Relationships', 'Psychology'],
+        ja: ['人脈', '関係', '心理'],
+        'zh-CN': ['人脉', '关系', '心理'],
+        'zh-TW': ['人脈', '關係', '心理'],
+        vi: ['Quan hệ', 'Mối quan hệ', 'Tâm lý'],
+        id: ['Lingkaran', 'Hubungan', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3ToxicRelationshipDiagnosisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3ToxicRelationshipDiagnosisQuestions}
+          results={phase3ToxicRelationshipDiagnosisResults}
+          questionCount={phase3ToxicRelationshipDiagnosisQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

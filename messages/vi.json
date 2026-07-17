@@ -9735,6 +9735,63 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3ToxicRelationshipDiagnosisTest": {
+    "startMessage": {
+      "line1": "Có ai quanh bạn khiến bạn kiệt sức mỗi lần gặp không?",
+      "line2": "Không phải mọi mối quan hệ đều nuôi dưỡng bạn. Có mối quan hệ càng lâu càng hao mòn bạn, có người mỗi lần gặp lại lấy đi thứ gì đó. Thế mà chính bạn lại tự trách: \"Mình nhạy cảm quá à?\" \"Mình kỳ vọng quá nhiều à?\"",
+      "line3": "Bài test này chẩn đoán xem quanh bạn có mối quan hệ cần giữ khoảng cách không — và thuộc kiểu nào — qua các tình huống thực tế.",
+      "line4": "Hãy chọn cảnh quen thuộc nhất trong 12 tình huống.",
+      "line5": "Chẩn đoán khoảng cách quan hệ 🔍 Bắt đầu ngay"
+    },
+    "ui": {
+      "startTest": "Bắt đầu chẩn đoán khoảng cách quan hệ",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Đi làm test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Chẩn đoán mối quan hệ cần giữ khoảng cách)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "diagnosisType": "Loại chẩn đoán",
+      "keyTraits": "Đặc điểm chính",
+      "strategy": "Chiến lược giữ khoảng cách",
+      "declaration": "Tuyên bố tái thiết mối quan hệ",
+      "encouragement": "Gửi bạn đang đọc kết quả này"
+    },
+    "shareMessages": {
+      "default": "Chẩn đoán quan hệ cần giữ khoảng cách: {type} → Bạn ra kết quả gì? Tag bạn bè đi",
+      "kakao": "Chẩn đoán quan hệ cần giữ khoảng cách: {type} → Bạn ra kết quả gì? Tag bạn bè đi",
+      "wechat": "Chẩn đoán quan hệ cần giữ khoảng cách: {type} → Bạn ra kết quả gì? Tag bạn bè đi",
+      "whatsapp": "Chẩn đoán quan hệ cần giữ khoảng cách: {type} → Bạn ra kết quả gì? Tag bạn bè đi",
+      "telegram": "Chẩn đoán quan hệ cần giữ khoảng cách: {type} → Bạn ra kết quả gì? Tag bạn bè đi",
+      "line": "Chẩn đoán quan hệ cần giữ khoảng cách: {type} → Bạn ra kết quả gì? Tag bạn bè đi",
+      "startDefault": "Chẩn đoán mối quan hệ cần giữ khoảng cách 🔍 Có ai khiến bạn kiệt sức mỗi lần gặp không?",
+      "startKakao": "Chẩn đoán mối quan hệ cần giữ khoảng cách 🔍 Có ai khiến bạn kiệt sức mỗi lần gặp không?",
+      "startWechat": "Chẩn đoán mối quan hệ cần giữ khoảng cách 🔍 Có ai khiến bạn kiệt sức mỗi lần gặp không?",
+      "startWhatsapp": "Chẩn đoán mối quan hệ cần giữ khoảng cách 🔍 Có ai khiến bạn kiệt sức mỗi lần gặp không?",
+      "startTelegram": "Chẩn đoán mối quan hệ cần giữ khoảng cách 🔍 Có ai khiến bạn kiệt sức mỗi lần gặp không?",
+      "startLine": "Chẩn đoán mối quan hệ cần giữ khoảng cách 🔍 Có ai khiến bạn kiệt sức mỗi lần gặp không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",
