@@ -501,8 +501,31 @@ function Phase3FriendSeesMyMbtiTestClientInner({
     });
   }, [friendPayload, friendResult, compareResult, t]);
 
-  const selectClass =
-    'border border-gray-300 rounded-lg px-3 py-2 text-center font-bold text-lg bg-white min-w-[4.5rem]';
+  const mbtiBtnBase =
+    'min-w-[3.25rem] px-3 py-2.5 rounded-lg text-lg font-bold border-2 transition-colors touch-manipulation';
+  const mbtiBtnOn = 'bg-violet-600 border-violet-600 text-white';
+  const mbtiBtnOff = 'bg-white border-gray-300 text-gray-700';
+
+  const renderMbtiPair = <T extends string>(
+    opts: readonly T[],
+    value: T,
+    onChange: (v: T) => void,
+    ariaLabel: string
+  ) => (
+    <div className="inline-flex rounded-xl overflow-hidden shadow-sm" role="group" aria-label={ariaLabel}>
+      {opts.map((o) => (
+        <button
+          key={o}
+          type="button"
+          onClick={() => onChange(o)}
+          className={`${mbtiBtnBase} ${value === o ? mbtiBtnOn : mbtiBtnOff} first:rounded-l-xl last:rounded-r-xl`}
+          aria-pressed={value === o}
+        >
+          {o}
+        </button>
+      ))}
+    </div>
+  );
 
   if (phase === 'creatorIntro' && !kRaw) {
     return (
@@ -559,27 +582,12 @@ function Phase3FriendSeesMyMbtiTestClientInner({
             maxLength={20}
           />
           <label className="block text-center mb-2 font-medium text-gray-700">{t('ui.selfMbtiLabel')}</label>
-          <div className="flex justify-center gap-2 mb-6 flex-wrap">
-            <select className={selectClass} value={mbtiE} onChange={(e) => setMbtiE(e.target.value as 'E' | 'I')} aria-label="E/I">
-              {EI_OPTS.map((o) => (
-                <option key={o} value={o}>{o}</option>
-              ))}
-            </select>
-            <select className={selectClass} value={mbtiS} onChange={(e) => setMbtiS(e.target.value as 'S' | 'N')} aria-label="S/N">
-              {SN_OPTS.map((o) => (
-                <option key={o} value={o}>{o}</option>
-              ))}
-            </select>
-            <select className={selectClass} value={mbtiT} onChange={(e) => setMbtiT(e.target.value as 'T' | 'F')} aria-label="T/F">
-              {TF_OPTS.map((o) => (
-                <option key={o} value={o}>{o}</option>
-              ))}
-            </select>
-            <select className={selectClass} value={mbtiJ} onChange={(e) => setMbtiJ(e.target.value as 'J' | 'P')} aria-label="J/P">
-              {JP_OPTS.map((o) => (
-                <option key={o} value={o}>{o}</option>
-              ))}
-            </select>
+          {/* 네이티브 select 대신 버튼 토글: 모바일에서 AdSense/시스템 피커 간섭으로 팝업이 닫히는 문제 방지 */}
+          <div className="flex justify-center gap-2 sm:gap-3 mb-6 flex-wrap relative z-20">
+            {renderMbtiPair(EI_OPTS, mbtiE, setMbtiE, 'E/I')}
+            {renderMbtiPair(SN_OPTS, mbtiS, setMbtiS, 'S/N')}
+            {renderMbtiPair(TF_OPTS, mbtiT, setMbtiT, 'T/F')}
+            {renderMbtiPair(JP_OPTS, mbtiJ, setMbtiJ, 'J/P')}
           </div>
           <p className="text-center text-sm text-gray-500 mb-4">{t('ui.selfMbtiPreview', { mbti: selfMbti })}</p>
           <div className="flex justify-center mb-4">
