@@ -9631,6 +9631,98 @@
       "popularTestsTop5": "🔥 今人気のテスト おすすめTOP5"
     }
   },
+  "phase3FriendSeesMyMbtiTest": {
+    "defaultHostName": "友だち",
+    "creatorNamePlaceholder": "例: たろう",
+    "creatorStart": {
+      "line1": "このリンクを友だちへ送ってください。友だちがあなたについてテストします。",
+      "line2": "自分が思う自分のMBTIと、友だちが見る自分のMBTIは、思ったより違うことがあります。",
+      "line3": "リンクを受け取った友だちが16問に答えると、友だちが見たあなたのMBTIが出ます。自分のMBTIと比べると、どれだけ「自分のイメージどおり」かが分かります。",
+      "line4": "リンクを送って結果を待とう 📤 比較する準備はいい？",
+      "howToTitle": "進め方",
+      "howToStep1": "1️⃣ 名前と、自分が思うMBTIを入力",
+      "howToStep2": "2️⃣ [友だち招待リンクをコピー] またはカカオトーク・SNSで送る",
+      "howToStep3": "3️⃣ 友だちが「この友だちは…」16問に正直に回答",
+      "howToStep4": "4️⃣ 友だち視点のMBTIと比較結果を確認 · [要約をコピー]で共有"
+    },
+    "friendStart": {
+      "title": "{name}さんが友だちMBTI分析をお願いしています",
+      "line1": "友だちがこのリンクを送りました。あなたにテストをお願いしています。",
+      "line2": "これから、このリンクを送った友だちについての質問が始まります。",
+      "line3": "普段その友だちがどう行動するか、よく言うこと、エネルギーを得る場面を思い浮かべて、正直に答えてください。結果はその友だちと比較できるように設計されています。",
+      "line4": "友だちMBTI分析スタート 🔍 正直な回答をお願いします！"
+    },
+    "creatorDone": {
+      "title": "友だち招待リンクの準備ができました！",
+      "hint": "下のリンクをコピーして、カカオトーク・インスタなどで友だちへ送ってください。\n友だちが16問に答えると、友だち視点のMBTIと比較結果が出ます。リアルタイム自動通知はないので、結果の共有をお願いしてください。",
+      "selfPreview": "{name} · 自分が思うMBTI: {mbti}",
+      "makeAnother": "最初からやり直す"
+    },
+    "hostNotifyTitle": "自分に送る要約（コピー）",
+    "hostNotifyBody": "[{name} · 友だちが見る私のMBTI]\n自分が思う私: {self}\n友だちが見た私: {friend}\n一致: {match}/4",
+    "copyHostNotify": "要約をコピー",
+    "result": {
+      "friendSeesTitle": "🔍 友だちが見た{name}のMBTI"
+    },
+    "ui": {
+      "startTest": "リンクを作って友だちに送る 📤",
+      "friendStartCta": "友だちMBTI分析スタート 🔍",
+      "shareWithFriends": "友だちと一緒にやる",
+      "shareResultWithFriends": "結果を友だちに共有",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "ほかのテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（友だちが見る私のMBTI）",
+      "linkCopy": "リンクをコピー",
+      "copyChallengeLink": "友だち招待リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているほかのテスト",
+      "nameLabel": "あなたの名前（友だちに表示されます）",
+      "selfMbtiLabel": "自分が思う自分のMBTI",
+      "selfMbtiPreview": "選択: {mbti}",
+      "compareTitle": "自分 vs 友だちが見た自分",
+      "selfMbtiResultLabel": "自分が思うMBTI",
+      "friendMbtiResultLabel": "友だちが見たMBTI",
+      "matchRate": "一致する文字: {count} / 4",
+      "matchLetters": "✅ 一致: {letters}",
+      "differenceTitle": "違いの分析",
+      "letterExplainTitle": "文字ごとの説明",
+      "dimMismatchLabel": "{dim}軸: 自分は{self}なのに、友だちは{friend}と見ている"
+    },
+    "shareMessages": {
+      "creatorDefault": "リンク押して、私のことテストして！正直に選んでね 😂",
+      "creatorKakao": "リンク押して、私のことテストして！正直に選んでね 😂",
+      "resultMatch": "友だちが見た私のMBTIと自分のMBTIが完全一致 🎯 この友だちが一番私を知ってる証拠",
+      "resultMismatch": "自分は{self}だと思ってたのに、友だちから見ると{friend}らしい 😲 自分 vs 友だち視点のギャップやばい…なんでそう見えたの？？",
+      "inviteOthers": "あなたも友だちへ送ってみて。自分が思う自分と友だちが見る自分が同じか違うか → 結果シェアして 😂",
+      "startDefault": "友だちが見る私のMBTI 🔍 自分が思う自分 vs 友だちが見た自分",
+      "startKakao": "友だちが見る私のMBTI 🔍 自分が思う自分 vs 友だちが見た自分",
+      "startWechat": "友だちが見る私のMBTI 🔍 自分が思う自分 vs 友だちが見た自分",
+      "startWhatsapp": "友だちが見る私のMBTI 🔍 自分が思う自分 vs 友だちが見た自分",
+      "startTelegram": "友だちが見る私のMBTI 🔍 自分が思う自分 vs 友だちが見た自分",
+      "startLine": "友だちが見る私のMBTI 🔍 自分が思う自分 vs 友だちが見た自分"
+    },
+    "alerts": {
+      "nameRequired": "名前を1文字以上入力してください。",
+      "mbtiRequired": "MBTIの4文字を選んでください。",
+      "invalidLink": "無効な招待リンクです。",
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "クリップボードにコピーしました！",
+      "shareFailed": "共有機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

@@ -9643,6 +9643,98 @@
       "popularTestsTop5": "🔥 近期热门测试 Top 5"
     }
   },
+  "phase3FriendSeesMyMbtiTest": {
+    "defaultHostName": "朋友",
+    "creatorNamePlaceholder": "例：小明",
+    "creatorStart": {
+      "line1": "把这个链接发给朋友。朋友会针对你来做测试。",
+      "line2": "你以为的自己的 MBTI，和朋友眼里的你，可能比想象中差很多。",
+      "line3": "朋友答完 16 道题后，会得到「朋友眼中的你的 MBTI」。和自己的类型一比，就能知道你有多「按自己想象在生活」。",
+      "line4": "把链接发给朋友，等结果吧 📤 准备好对比了吗？",
+      "howToTitle": "怎么玩",
+      "howToStep1": "1️⃣ 输入名字和你认为的自己的 MBTI",
+      "howToStep2": "2️⃣ 复制邀请链接，或用 KakaoTalk / 社交软件发给朋友",
+      "howToStep3": "3️⃣ 朋友诚实回答 16 道「这个朋友…」的题",
+      "howToStep4": "4️⃣ 查看朋友视角的 MBTI 与对比结果 · 用【复制摘要】分享"
+    },
+    "friendStart": {
+      "title": "{name} 请你帮忙分析朋友眼中的 MBTI",
+      "line1": "朋友发来了这个链接——是想请你帮他/她做测试。",
+      "line2": "从现在起，问题都是关于发来这个链接的朋友。",
+      "line3": "回想他/她平时怎么做事、常说什么、什么时候更有精神，然后诚实作答。结果是为了让对方能和自己的类型对比而设计的。",
+      "line4": "开始朋友 MBTI 分析 🔍 请诚实作答！"
+    },
+    "creatorDone": {
+      "title": "朋友邀请链接已准备好！",
+      "hint": "复制下方链接，通过 KakaoTalk、Instagram 等发给朋友。\n朋友答完 16 题后，会得到朋友眼中的你的 MBTI 和对比结果。没有实时自动通知，请让朋友把结果分享给你。",
+      "selfPreview": "{name} · 我认为的 MBTI：{mbti}",
+      "makeAnother": "重新开始"
+    },
+    "hostNotifyTitle": "发给自己的摘要（复制）",
+    "hostNotifyBody": "[{name} · 朋友眼中的我的 MBTI]\n我认为的自己：{self}\n朋友眼中的我：{friend}\n一致：{match}/4",
+    "copyHostNotify": "复制摘要",
+    "result": {
+      "friendSeesTitle": "🔍 朋友眼中的 {name} 的 MBTI"
+    },
+    "ui": {
+      "startTest": "创建链接并发给朋友 📤",
+      "friendStartCta": "开始朋友 MBTI 分析 🔍",
+      "shareWithFriends": "和朋友一起测",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "看看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense 广告区（朋友眼中的我的 MBTI）",
+      "linkCopy": "复制链接",
+      "copyChallengeLink": "复制朋友邀请链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "nameLabel": "你的名字（会显示给朋友）",
+      "selfMbtiLabel": "我认为的自己的 MBTI",
+      "selfMbtiPreview": "已选：{mbti}",
+      "compareTitle": "我 vs 朋友眼中的我",
+      "selfMbtiResultLabel": "我认为的 MBTI",
+      "friendMbtiResultLabel": "朋友眼中的 MBTI",
+      "matchRate": "一致字母：{count} / 4",
+      "matchLetters": "✅ 一致：{letters}",
+      "differenceTitle": "差异分析",
+      "letterExplainTitle": "各字母说明",
+      "dimMismatchLabel": "{dim} 维度：我是 {self}，朋友却看成 {friend}"
+    },
+    "shareMessages": {
+      "creatorDefault": "点开链接帮我测一下！要超诚实哦 😂",
+      "creatorKakao": "点开链接帮我测一下！要超诚实哦 😂",
+      "resultMatch": "朋友眼中的我的 MBTI 和我完全一致 🎯 说明这个朋友最懂我",
+      "resultMismatch": "我以为自己是 {self}，朋友却说我是 {friend} 😲 自我认知和朋友视角差这么多…你为啥这么看我？？",
+      "inviteOthers": "你也发给朋友试试。你以为的自己 vs 朋友眼里的你，一样吗？分享结果吧 😂",
+      "startDefault": "朋友眼中的我的 MBTI 🔍 自我认知 vs 朋友视角",
+      "startKakao": "朋友眼中的我的 MBTI 🔍 自我认知 vs 朋友视角",
+      "startWechat": "朋友眼中的我的 MBTI 🔍 自我认知 vs 朋友视角",
+      "startWhatsapp": "朋友眼中的我的 MBTI 🔍 自我认知 vs 朋友视角",
+      "startTelegram": "朋友眼中的我的 MBTI 🔍 自我认知 vs 朋友视角",
+      "startLine": "朋友眼中的我的 MBTI 🔍 自我认知 vs 朋友视角"
+    },
+    "alerts": {
+      "nameRequired": "请至少输入一个字的名字。",
+      "mbtiRequired": "请选择完整的 4 个 MBTI 字母。",
+      "invalidLink": "邀请链接无效。",
+      "linkCopied": "链接已复制！",
+      "resultCopied": "已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 最近热门测试 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "热门",

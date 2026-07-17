@@ -102,6 +102,7 @@ import {
   phase3BestFriendQuizQuestions,
   phase3BestFriendQuizResults,
 } from '@/lib/phase3BestFriendQuizData';
+import { phase3FriendSeesMyMbtiQuestions } from '@/lib/phase3FriendSeesMyMbtiData';
 import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
@@ -506,6 +507,10 @@ const Phase3AdhdTendencyChecklistTestClient = dynamic(
 );
 const Phase3BestFriendQuizTestClient = dynamic(
   () => import('@/components/Phase3BestFriendQuizTestClient'),
+  { ssr: false }
+);
+const Phase3FriendSeesMyMbtiTestClient = dynamic(
+  () => import('@/components/Phase3FriendSeesMyMbtiTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1070,6 +1075,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['關係', '友情', '摯友'],
         vi: ['quan hệ', 'tình bạn', 'bạn thân'],
         id: ['hubungan', 'persahabatan', 'sahabat'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-friend-sees-my-mbti') {
+    test = {
+      slug: 'phase3-friend-sees-my-mbti',
+      title: {
+        ko: '친구가 보는 내 MBTI',
+        en: 'My MBTI Through a Friend\'s Eyes',
+        ja: '友だちが見る私のMBTI',
+        'zh-CN': '朋友眼中的我的MBTI',
+        'zh-TW': '朋友眼中的我的MBTI',
+        vi: 'MBTI của tôi qua mắt bạn bè',
+        id: 'MBTIku lewat mata teman',
+      },
+      description: {
+        ko: '내가 생각한 나 vs 친구가 보는 나, MBTI로 비교해보세요',
+        en: 'Compare how you see yourself vs how a friend sees you — through MBTI',
+        ja: '自分が思う自分 vs 友だちが見る自分を、MBTIで比較してみよう',
+        'zh-CN': '用 MBTI 对比：你以为的自己 vs 朋友眼里的你',
+        'zh-TW': '用 MBTI 對比：你以為的自己 vs 朋友眼裡的你',
+        vi: 'So sánh bạn nghĩ về mình vs bạn bè nhìn bạn — qua MBTI',
+        id: 'Bandingkan dirimu menurutmu vs menurut teman — lewat MBTI',
+      },
+      thumbnail: 'p3_test_friend_sees_my_mbti.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['MBTI', '친구', '심리'],
+        en: ['MBTI', 'Friends', 'Psychology'],
+        ja: ['MBTI', '友だち', '心理'],
+        'zh-CN': ['MBTI', '朋友', '心理'],
+        'zh-TW': ['MBTI', '朋友', '心理'],
+        vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
+        id: ['MBTI', 'Teman', 'Psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5263,6 +5305,60 @@ export default async function TestPage({ params }: Props) {
           questions={phase3BestFriendQuizQuestions}
           results={phase3BestFriendQuizResults}
           questionCount={phase3BestFriendQuizQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-friend-sees-my-mbti') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-friend-sees-my-mbti',
+      title: {
+        ko: '친구가 보는 내 MBTI',
+        en: 'My MBTI Through a Friend\'s Eyes',
+        ja: '友だちが見る私のMBTI',
+        'zh-CN': '朋友眼中的我的MBTI',
+        'zh-TW': '朋友眼中的我的MBTI',
+        vi: 'MBTI của tôi qua mắt bạn bè',
+        id: 'MBTIku lewat mata teman',
+      },
+      description: {
+        ko: '내가 생각한 나 vs 친구가 보는 나, MBTI로 비교해보세요',
+        en: 'Compare how you see yourself vs how a friend sees you — through MBTI',
+        ja: '自分が思う自分 vs 友だちが見る自分を、MBTIで比較してみよう',
+        'zh-CN': '用 MBTI 对比：你以为的自己 vs 朋友眼里的你',
+        'zh-TW': '用 MBTI 對比：你以為的自己 vs 朋友眼裡的你',
+        vi: 'So sánh bạn nghĩ về mình vs bạn bè nhìn bạn — qua MBTI',
+        id: 'Bandingkan dirimu menurutmu vs menurut teman — lewat MBTI',
+      },
+      thumbnail: 'p3_test_friend_sees_my_mbti.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['MBTI', '친구', '심리'],
+        en: ['MBTI', 'Friends', 'Psychology'],
+        ja: ['MBTI', '友だち', '心理'],
+        'zh-CN': ['MBTI', '朋友', '心理'],
+        'zh-TW': ['MBTI', '朋友', '心理'],
+        vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
+        id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3FriendSeesMyMbtiTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3FriendSeesMyMbtiQuestions}
+          questionCount={phase3FriendSeesMyMbtiQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

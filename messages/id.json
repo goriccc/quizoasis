@@ -9616,7 +9616,7 @@
       "caution": "Hal yang Perlu Diwaspadai",
       "firstCareer": "Langkah Awal yang Disarankan"
     },
-      "shareMessages": {
+    "shareMessages": {
       "default": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
       "kakao": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
       "wechat": "AI Bakat Karier: {type}! → Kamu dapat tipe apa?",
@@ -9641,6 +9641,98 @@
     "recommendations": {
       "similarTestsTop5": "🎯 5 Tes Serupa Teratas",
       "popularTestsTop5": "🔥 5 Tes Populer Saat Ini"
+    }
+  },
+  "phase3FriendSeesMyMbtiTest": {
+    "defaultHostName": "Teman",
+    "creatorNamePlaceholder": "cth: Budi",
+    "creatorStart": {
+      "line1": "Kirim tautan ini ke teman. Mereka akan menguji tentang kamu.",
+      "line2": "MBTI yang kamu pikirkan tentang diri sendiri dan yang dilihat teman bisa jauh berbeda dari dugaan.",
+      "line3": "Setelah teman menjawab 16 pertanyaan, muncul MBTI versi pandangan mereka. Bandingkan dengan milikmu untuk melihat seberapa \"sesuai bayangan diri\" kamu hidup.",
+      "line4": "Kirim tautan dan tunggu hasilnya 📤 Siap membandingkan?",
+      "howToTitle": "Cara bermain",
+      "howToStep1": "1️⃣ Masukkan nama dan MBTI yang kamu pikirkan",
+      "howToStep2": "2️⃣ Salin tautan undangan atau kirim lewat KakaoTalk / media sosial",
+      "howToStep3": "3️⃣ Teman menjawab jujur 16 pertanyaan \"Teman ini…\"",
+      "howToStep4": "4️⃣ Lihat MBTI sudut pandang teman & perbandingan · bagikan dengan [Salin ringkasan]"
+    },
+    "friendStart": {
+      "title": "{name} meminta analisis MBTI dari sudut pandang teman",
+      "line1": "Seorang teman mengirim tautan ini — mereka ingin kamu menguji tentang mereka.",
+      "line2": "Mulai sekarang, pertanyaan tentang teman yang mengirim tautan ini.",
+      "line3": "Ingat bagaimana mereka biasanya bertindak, apa yang sering dikatakan, dan kapan mereka mendapat energi — lalu jawab jujur. Hasilnya dirancang agar mereka bisa membandingkan dengan tipe sendiri.",
+      "line4": "Mulai analisis MBTI teman 🔍 Mohon jawab jujur!"
+    },
+    "creatorDone": {
+      "title": "Tautan undangan teman siap!",
+      "hint": "Salin tautan di bawah dan kirim lewat KakaoTalk, Instagram, dll.\nSetelah teman menjawab 16 soal, muncul MBTI menurut mereka dan hasil perbandingan. Tidak ada notifikasi otomatis — minta mereka membagikan hasilnya padamu.",
+      "selfPreview": "{name} · MBTI yang kupikir: {mbti}",
+      "makeAnother": "Mulai dari awal"
+    },
+    "hostNotifyTitle": "Ringkasan untuk diri sendiri (salin)",
+    "hostNotifyBody": "[{name} · MBTIku lewat mata teman]\nDiriku menurutku: {self}\nDiriku menurut teman: {friend}\nCocok: {match}/4",
+    "copyHostNotify": "Salin ringkasan",
+    "result": {
+      "friendSeesTitle": "🔍 MBTI {name} lewat mata teman"
+    },
+    "ui": {
+      "startTest": "Buat tautan & kirim ke teman 📤",
+      "friendStartCta": "Mulai analisis MBTI teman 🔍",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Area iklan AdSense (MBTIku lewat mata teman)",
+      "linkCopy": "Salin tautan",
+      "copyChallengeLink": "Salin tautan undangan teman",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "nameLabel": "Namamu (ditampilkan ke teman)",
+      "selfMbtiLabel": "MBTI yang kupikir tentang diriku",
+      "selfMbtiPreview": "Dipilih: {mbti}",
+      "compareTitle": "Aku vs yang dilihat teman",
+      "selfMbtiResultLabel": "MBTI menurutku",
+      "friendMbtiResultLabel": "MBTI menurut teman",
+      "matchRate": "Huruf cocok: {count} / 4",
+      "matchLetters": "✅ Cocok: {letters}",
+      "differenceTitle": "Analisis perbedaan",
+      "letterExplainTitle": "Penjelasan per huruf",
+      "dimMismatchLabel": "Sumbu {dim}: aku {self}, tapi teman melihat {friend}"
+    },
+    "shareMessages": {
+      "creatorDefault": "Klik tautannya dan tes aku ya. Pilih yang jujur banget 😂",
+      "creatorKakao": "Klik tautannya dan tes aku ya. Pilih yang jujur banget 😂",
+      "resultMatch": "MBTI versi teman cocok total sama milikku 🎯 Bukti teman ini paling ngerti aku",
+      "resultMismatch": "Kupikir aku {self}, tapi teman bilang aku {friend} 😲 Gap diri vs pandangan teman… Kenapa kamu lihat aku begitu??",
+      "inviteOthers": "Kamu juga kirim ke teman. Sama atau beda — aku menurutku vs menurut mereka? Share hasilnya 😂",
+      "startDefault": "MBTIku lewat mata teman 🔍 Pandangan diri vs pandangan teman",
+      "startKakao": "MBTIku lewat mata teman 🔍 Pandangan diri vs pandangan teman",
+      "startWechat": "MBTIku lewat mata teman 🔍 Pandangan diri vs pandangan teman",
+      "startWhatsapp": "MBTIku lewat mata teman 🔍 Pandangan diri vs pandangan teman",
+      "startTelegram": "MBTIku lewat mata teman 🔍 Pandangan diri vs pandangan teman",
+      "startLine": "MBTIku lewat mata teman 🔍 Pandangan diri vs pandangan teman"
+    },
+    "alerts": {
+      "nameRequired": "Masukkan setidaknya satu karakter untuk nama.",
+      "mbtiRequired": "Pilih keempat huruf MBTI.",
+      "invalidLink": "Tautan undangan tidak valid.",
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
   },
   "badges": {

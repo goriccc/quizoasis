@@ -9781,6 +9781,98 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3FriendSeesMyMbtiTest": {
+    "defaultHostName": "친구",
+    "creatorNamePlaceholder": "예: 민수",
+    "creatorStart": {
+      "line1": "친구에게 이 링크를 보내세요. 친구가 당신을 테스트합니다.",
+      "line2": "내가 생각하는 나의 MBTI와 친구가 보는 나의 MBTI는 생각보다 많이 다를 수 있습니다.",
+      "line3": "링크를 받은 친구가 16가지 질문에 답하면 친구가 본 나의 MBTI가 나옵니다. 내 MBTI와 비교해보면 내가 얼마나 '내 생각대로' 살고 있는지 알 수 있습니다.",
+      "line4": "링크를 친구한테 보내고 결과 기다리기 📤 비교할 준비 됐나요?",
+      "howToTitle": "진행 방법",
+      "howToStep1": "1️⃣ 내 이름과 내가 생각하는 MBTI 입력",
+      "howToStep2": "2️⃣ [친구 초대 링크 복사] 또는 카카오톡·SNS로 친구에게 전달",
+      "howToStep3": "3️⃣ 친구가 '이 친구는…' 16문항에 솔직히 답변",
+      "howToStep4": "4️⃣ 친구가 본 MBTI와 비교 결과 확인 · [요약 복사하기]로 공유"
+    },
+    "friendStart": {
+      "title": "{name}님이 친구 MBTI 분석을 부탁했습니다",
+      "line1": "친구가 이 링크를 보냈습니다. 당신에게 테스트를 부탁한 겁니다.",
+      "line2": "지금부터 이 링크를 보낸 친구에 대한 질문이 시작됩니다.",
+      "line3": "평소 그 친구가 어떻게 행동하는지, 어떤 말을 자주 하는지, 어떤 상황에서 에너지를 얻는지를 떠올리면서 솔직하게 답해주세요. 결과는 그 친구와 비교할 수 있도록 설계되어 있습니다.",
+      "line4": "친구 MBTI 분석 시작 🔍 솔직한 답변 부탁드립니다!"
+    },
+    "creatorDone": {
+      "title": "친구 초대 링크가 준비됐어요!",
+      "hint": "아래 링크를 복사해 카카오톡·인스타 등으로 친구에게 보내세요.\n친구가 16문항에 답하면 친구가 본 당신의 MBTI와 비교 결과가 나옵니다. 실시간 자동 알림은 없으니, 친구에게 결과 공유를 부탁하세요.",
+      "selfPreview": "{name} · 내가 생각한 MBTI: {mbti}",
+      "makeAnother": "처음부터 다시 하기"
+    },
+    "hostNotifyTitle": "본인에게 보낼 요약 (복사)",
+    "hostNotifyBody": "[{name} · 친구가 보는 내 MBTI]\n내가 생각한 나: {self}\n친구가 본 나: {friend}\n일치: {match}/4",
+    "copyHostNotify": "요약 복사하기",
+    "result": {
+      "friendSeesTitle": "🔍 친구가 본 {name}의 MBTI"
+    },
+    "ui": {
+      "startTest": "링크 만들고 친구에게 보내기 📤",
+      "friendStartCta": "친구 MBTI 분석 시작 🔍",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (친구가 보는 내 MBTI)",
+      "linkCopy": "링크 복사",
+      "copyChallengeLink": "친구 초대 링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "nameLabel": "내 이름 (친구에게 표시됩니다)",
+      "selfMbtiLabel": "내가 생각하는 내 MBTI",
+      "selfMbtiPreview": "선택: {mbti}",
+      "compareTitle": "나 vs 친구가 본 나",
+      "selfMbtiResultLabel": "내가 생각한 MBTI",
+      "friendMbtiResultLabel": "친구가 본 MBTI",
+      "matchRate": "일치하는 글자: {count}개 / 4개",
+      "matchLetters": "✅ 일치: {letters}",
+      "differenceTitle": "차이 분석",
+      "letterExplainTitle": "글자별 설명",
+      "dimMismatchLabel": "{dim} 차원: 나는 {self}인데 친구는 {friend}로 본다"
+    },
+    "shareMessages": {
+      "creatorDefault": "친구야 링크 눌러봐. 나 테스트해줘. 진짜 솔직하게 골라줘 ㅋㅋ",
+      "creatorKakao": "친구야 링크 눌러봐. 나 테스트해줘. 진짜 솔직하게 골라줘 ㅋㅋ",
+      "resultMatch": "친구가 본 내 MBTI랑 내 MBTI 완전 일치 🎯 이 친구가 나를 제일 잘 안다는 증거",
+      "resultMismatch": "나는 {self}인 줄 알았는데 친구가 보는 나는 {friend}래 😲 나 vs 친구가 본 나 격차 실화냐... 친구야 왜 그렇게 봤어??",
+      "inviteOthers": "너도 친구한테 보내봐. 내가 생각한 나랑 친구가 보는 나가 같은지 다른지 → 결과 공유해줘 ㅋㅋ",
+      "startDefault": "친구가 보는 내 MBTI 🔍 내가 생각한 나 vs 친구가 본 나",
+      "startKakao": "친구가 보는 내 MBTI 🔍 내가 생각한 나 vs 친구가 본 나",
+      "startWechat": "친구가 보는 내 MBTI 🔍 내가 생각한 나 vs 친구가 본 나",
+      "startWhatsapp": "친구가 보는 내 MBTI 🔍 내가 생각한 나 vs 친구가 본 나",
+      "startTelegram": "친구가 보는 내 MBTI 🔍 내가 생각한 나 vs 친구가 본 나",
+      "startLine": "친구가 보는 내 MBTI 🔍 내가 생각한 나 vs 친구가 본 나"
+    },
+    "alerts": {
+      "nameRequired": "이름을 한 글자 이상 입력해 주세요.",
+      "mbtiRequired": "MBTI 4글자를 선택해 주세요.",
+      "invalidLink": "유효하지 않은 초대 링크입니다.",
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

@@ -9652,6 +9652,98 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
   },
+  "phase3FriendSeesMyMbtiTest": {
+    "defaultHostName": "Friend",
+    "creatorNamePlaceholder": "e.g. Alex",
+    "creatorStart": {
+      "line1": "Send this link to a friend. They'll take the test about you.",
+      "line2": "The MBTI you think you are and the MBTI your friend sees can be more different than you'd expect.",
+      "line3": "When your friend answers 16 questions, you'll get the MBTI they see in you. Compare it with yours to see how much you're living \"as you think you are.\"",
+      "line4": "Send the link and wait for results 📤 Ready to compare?",
+      "howToTitle": "How it works",
+      "howToStep1": "1️⃣ Enter your name and the MBTI you think you are",
+      "howToStep2": "2️⃣ Copy the invite link or share via KakaoTalk / social media",
+      "howToStep3": "3️⃣ Your friend honestly answers 16 \"This friend…\" questions",
+      "howToStep4": "4️⃣ See the friend-view MBTI vs yours · share with [Copy summary]"
+    },
+    "friendStart": {
+      "title": "{name} asked you to analyze their friend MBTI",
+      "line1": "A friend sent you this link — they want you to take the test about them.",
+      "line2": "From here on, the questions are about the friend who sent this link.",
+      "line3": "Think about how they usually act, what they often say, and when they get energy — then answer honestly. Results are designed so they can compare with their own type.",
+      "line4": "Start friend MBTI analysis 🔍 Please be honest!"
+    },
+    "creatorDone": {
+      "title": "Your friend invite link is ready!",
+      "hint": "Copy the link below and send it via KakaoTalk, Instagram, etc.\nWhen your friend finishes 16 questions, you'll get their view of your MBTI and a comparison. There's no automatic notification — ask them to share the result with you.",
+      "selfPreview": "{name} · My self MBTI: {mbti}",
+      "makeAnother": "Start over"
+    },
+    "hostNotifyTitle": "Summary to send yourself (copy)",
+    "hostNotifyBody": "[{name} · My MBTI Through a Friend's Eyes]\nHow I see myself: {self}\nHow my friend sees me: {friend}\nMatch: {match}/4",
+    "copyHostNotify": "Copy summary",
+    "result": {
+      "friendSeesTitle": "🔍 {name}'s MBTI through a friend's eyes"
+    },
+    "ui": {
+      "startTest": "Create link & send to a friend 📤",
+      "friendStartCta": "Start friend MBTI analysis 🔍",
+      "shareWithFriends": "Try it with friends",
+      "shareResultWithFriends": "Share result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "Browse other tests",
+      "goToTest": "Take the test",
+      "adsenseTitle": "AdSense ad area (My MBTI Through a Friend's Eyes)",
+      "linkCopy": "Copy link",
+      "copyChallengeLink": "Copy friend invite link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "nameLabel": "Your name (shown to your friend)",
+      "selfMbtiLabel": "The MBTI I think I am",
+      "selfMbtiPreview": "Selected: {mbti}",
+      "compareTitle": "Me vs how my friend sees me",
+      "selfMbtiResultLabel": "My self MBTI",
+      "friendMbtiResultLabel": "Friend-view MBTI",
+      "matchRate": "Matching letters: {count} / 4",
+      "matchLetters": "✅ Match: {letters}",
+      "differenceTitle": "Difference analysis",
+      "letterExplainTitle": "Letter-by-letter explanation",
+      "dimMismatchLabel": "{dim} axis: I am {self}, but my friend sees {friend}"
+    },
+    "shareMessages": {
+      "creatorDefault": "Hey, tap this link and test me. Be totally honest 😂",
+      "creatorKakao": "Hey, tap this link and test me. Be totally honest 😂",
+      "resultMatch": "My friend's view of my MBTI matches mine perfectly 🎯 Proof they know me best",
+      "resultMismatch": "I thought I was {self}, but my friend sees me as {friend} 😲 Self vs friend gap is real… Why did you see me that way??",
+      "inviteOthers": "Send this to a friend too. Same or different — me vs how they see me? Share your result 😂",
+      "startDefault": "My MBTI Through a Friend's Eyes 🔍 Self-view vs friend-view",
+      "startKakao": "My MBTI Through a Friend's Eyes 🔍 Self-view vs friend-view",
+      "startWechat": "My MBTI Through a Friend's Eyes 🔍 Self-view vs friend-view",
+      "startWhatsapp": "My MBTI Through a Friend's Eyes 🔍 Self-view vs friend-view",
+      "startTelegram": "My MBTI Through a Friend's Eyes 🔍 Self-view vs friend-view",
+      "startLine": "My MBTI Through a Friend's Eyes 🔍 Self-view vs friend-view"
+    },
+    "alerts": {
+      "nameRequired": "Please enter at least one character for your name.",
+      "mbtiRequired": "Please select all 4 MBTI letters.",
+      "invalidLink": "This invite link is invalid.",
+      "linkCopied": "Link copied!",
+      "resultCopied": "Copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests right now"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

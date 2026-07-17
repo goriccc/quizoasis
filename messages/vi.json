@@ -9616,7 +9616,7 @@
       "caution": "Điều cần lưu ý",
       "firstCareer": "Bước khởi đầu gợi ý"
     },
-      "shareMessages": {
+    "shareMessages": {
       "default": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
       "kakao": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
       "wechat": "AI năng lực nghề: {type}! → Bạn ra nhóm nào?",
@@ -9641,6 +9641,98 @@
     "recommendations": {
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
+    }
+  },
+  "phase3FriendSeesMyMbtiTest": {
+    "defaultHostName": "Bạn",
+    "creatorNamePlaceholder": "VD: Minh",
+    "creatorStart": {
+      "line1": "Gửi link này cho bạn. Họ sẽ làm bài test về bạn.",
+      "line2": "MBTI bạn nghĩ về mình và MBTI mà bạn bè nhìn thấy có thể khác nhiều hơn bạn nghĩ.",
+      "line3": "Khi bạn trả lời 16 câu, bạn sẽ thấy MBTI mà họ nhìn ở bạn. So với MBTI của mình để biết bạn sống \"đúng như mình nghĩ\" đến mức nào.",
+      "line4": "Gửi link rồi chờ kết quả 📤 Sẵn sàng so sánh chưa?",
+      "howToTitle": "Cách làm",
+      "howToStep1": "1️⃣ Nhập tên và MBTI bạn nghĩ về mình",
+      "howToStep2": "2️⃣ Sao chép link mời hoặc gửi qua KakaoTalk / mạng xã hội",
+      "howToStep3": "3️⃣ Bạn trả lời thật lòng 16 câu \"Người bạn này…\"",
+      "howToStep4": "4️⃣ Xem MBTI theo góc nhìn bạn bè & so sánh · chia sẻ bằng [Sao chép tóm tắt]"
+    },
+    "friendStart": {
+      "title": "{name} nhờ bạn phân tích MBTI theo góc nhìn bạn bè",
+      "line1": "Một người bạn đã gửi link này — họ muốn bạn làm bài test về họ.",
+      "line2": "Từ đây, các câu hỏi đều về người bạn đã gửi link.",
+      "line3": "Hãy nghĩ họ thường hành xử thế nào, hay nói gì, khi nào có năng lượng — rồi trả lời thật lòng. Kết quả được thiết kế để họ so với type của mình.",
+      "line4": "Bắt đầu phân tích MBTI bạn bè 🔍 Xin trả lời thật lòng!"
+    },
+    "creatorDone": {
+      "title": "Link mời bạn đã sẵn sàng!",
+      "hint": "Sao chép link bên dưới và gửi qua KakaoTalk, Instagram…\nKhi bạn trả lời xong 16 câu, sẽ có MBTI theo góc nhìn họ và kết quả so sánh. Không có thông báo tự động — hãy nhờ họ chia sẻ kết quả cho bạn.",
+      "selfPreview": "{name} · MBTI tôi nghĩ: {mbti}",
+      "makeAnother": "Làm lại từ đầu"
+    },
+    "hostNotifyTitle": "Tóm tắt gửi cho chính bạn (sao chép)",
+    "hostNotifyBody": "[{name} · MBTI của tôi qua mắt bạn bè]\nTôi nghĩ về mình: {self}\nBạn nhìn tôi: {friend}\nKhớp: {match}/4",
+    "copyHostNotify": "Sao chép tóm tắt",
+    "result": {
+      "friendSeesTitle": "🔍 MBTI của {name} qua mắt bạn bè"
+    },
+    "ui": {
+      "startTest": "Tạo link & gửi cho bạn 📤",
+      "friendStartCta": "Bắt đầu phân tích MBTI bạn bè 🔍",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (MBTI qua mắt bạn bè)",
+      "linkCopy": "Sao chép link",
+      "copyChallengeLink": "Sao chép link mời bạn",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "nameLabel": "Tên của bạn (hiển thị cho bạn bè)",
+      "selfMbtiLabel": "MBTI tôi nghĩ về mình",
+      "selfMbtiPreview": "Đã chọn: {mbti}",
+      "compareTitle": "Tôi vs cách bạn nhìn tôi",
+      "selfMbtiResultLabel": "MBTI tôi nghĩ",
+      "friendMbtiResultLabel": "MBTI theo góc nhìn bạn",
+      "matchRate": "Chữ khớp: {count} / 4",
+      "matchLetters": "✅ Khớp: {letters}",
+      "differenceTitle": "Phân tích khác biệt",
+      "letterExplainTitle": "Giải thích từng chữ",
+      "dimMismatchLabel": "Trục {dim}: tôi là {self}, nhưng bạn nhìn thấy {friend}"
+    },
+    "shareMessages": {
+      "creatorDefault": "Bấm link và test giúp mình nhé. Chọn thật lòng luôn 😂",
+      "creatorKakao": "Bấm link và test giúp mình nhé. Chọn thật lòng luôn 😂",
+      "resultMatch": "MBTI bạn nhìn mình khớp hoàn toàn với mình 🎯 Bằng chứng bạn này hiểu mình nhất",
+      "resultMismatch": "Mình nghĩ mình là {self} nhưng bạn nhìn mình là {friend} 😲 Gap tự nhận vs góc nhìn bạn… Sao bạn nhìn mình vậy??",
+      "inviteOthers": "Bạn cũng gửi cho bạn bè đi. Mình nghĩ về mình vs họ nhìn mình — giống hay khác? Share kết quả 😂",
+      "startDefault": "MBTI của tôi qua mắt bạn bè 🔍 Tự nhận vs góc nhìn bạn",
+      "startKakao": "MBTI của tôi qua mắt bạn bè 🔍 Tự nhận vs góc nhìn bạn",
+      "startWechat": "MBTI của tôi qua mắt bạn bè 🔍 Tự nhận vs góc nhìn bạn",
+      "startWhatsapp": "MBTI của tôi qua mắt bạn bè 🔍 Tự nhận vs góc nhìn bạn",
+      "startTelegram": "MBTI của tôi qua mắt bạn bè 🔍 Tự nhận vs góc nhìn bạn",
+      "startLine": "MBTI của tôi qua mắt bạn bè 🔍 Tự nhận vs góc nhìn bạn"
+    },
+    "alerts": {
+      "nameRequired": "Vui lòng nhập ít nhất một ký tự cho tên.",
+      "mbtiRequired": "Vui lòng chọn đủ 4 chữ cái MBTI.",
+      "invalidLink": "Link mời không hợp lệ.",
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
   "badges": {
