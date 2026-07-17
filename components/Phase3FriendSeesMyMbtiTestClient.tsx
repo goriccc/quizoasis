@@ -728,7 +728,7 @@ function Phase3FriendSeesMyMbtiTestClientInner({
               type="button"
               className="bg-gray-800 text-white py-3 rounded-xl font-bold"
               onClick={() => {
-                trackShareEvent('link copy', 'quiz_start', slug);
+                trackShareEvent('link copy', 'quiz_intro', slug);
                 copyText(shareUrl, 'linkCopied');
               }}
             >
@@ -738,7 +738,7 @@ function Phase3FriendSeesMyMbtiTestClientInner({
               type="button"
               className="bg-yellow-400 text-gray-900 py-3 rounded-xl font-bold"
               onClick={() => {
-                trackShareEvent('kakao', 'quiz_start', slug);
+                trackShareEvent('kakao', 'quiz_intro', slug);
                 shareToKakao(shareUrl, t('shareMessages.creatorKakao'));
               }}
             >
@@ -748,7 +748,7 @@ function Phase3FriendSeesMyMbtiTestClientInner({
               <button
                 type="button"
                 onClick={() => {
-                  trackShareEvent('telegram', 'quiz_start', slug);
+                  trackShareEvent('telegram', 'quiz_intro', slug);
                   const url = encodeURIComponent(shareUrl);
                   const text = encodeURIComponent(t('shareMessages.creatorDefault'));
                   window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
@@ -760,7 +760,7 @@ function Phase3FriendSeesMyMbtiTestClientInner({
               <button
                 type="button"
                 onClick={() => {
-                  trackShareEvent('whatsapp', 'quiz_start', slug);
+                  trackShareEvent('whatsapp', 'quiz_intro', slug);
                   const url = encodeURIComponent(shareUrl);
                   const text = encodeURIComponent(t('shareMessages.creatorDefault'));
                   window.open(`https://wa.me/?text=${text}%0A%0A${url}`, '_blank');
@@ -772,7 +772,7 @@ function Phase3FriendSeesMyMbtiTestClientInner({
               <button
                 type="button"
                 onClick={() => {
-                  trackShareEvent('line', 'quiz_start', slug);
+                  trackShareEvent('line', 'quiz_intro', slug);
                   const url = encodeURIComponent(shareUrl);
                   const text = encodeURIComponent(t('shareMessages.creatorDefault'));
                   window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
