@@ -502,7 +502,7 @@ function Phase3FriendSeesMyMbtiTestClientInner({
   }, [friendPayload, friendResult, compareResult, t]);
 
   const mbtiBtnBase =
-    'min-w-[3.25rem] px-3 py-2.5 rounded-lg text-lg font-bold border-2 transition-colors touch-manipulation';
+    'min-w-[2.5rem] px-2.5 py-2 rounded-lg text-base font-bold border-2 transition-colors touch-manipulation';
   const mbtiBtnOn = 'bg-violet-600 border-violet-600 text-white';
   const mbtiBtnOff = 'bg-white border-gray-300 text-gray-700';
 
@@ -512,13 +512,13 @@ function Phase3FriendSeesMyMbtiTestClientInner({
     onChange: (v: T) => void,
     ariaLabel: string
   ) => (
-    <div className="inline-flex rounded-xl overflow-hidden shadow-sm" role="group" aria-label={ariaLabel}>
+    <div className="inline-flex rounded-lg overflow-hidden shadow-sm" role="group" aria-label={ariaLabel}>
       {opts.map((o) => (
         <button
           key={o}
           type="button"
           onClick={() => onChange(o)}
-          className={`${mbtiBtnBase} ${value === o ? mbtiBtnOn : mbtiBtnOff} first:rounded-l-xl last:rounded-r-xl`}
+          className={`${mbtiBtnBase} ${value === o ? mbtiBtnOn : mbtiBtnOff} first:rounded-l-lg last:rounded-r-lg`}
           aria-pressed={value === o}
         >
           {o}
@@ -583,7 +583,7 @@ function Phase3FriendSeesMyMbtiTestClientInner({
           />
           <label className="block text-center mb-2 font-medium text-gray-700">{t('ui.selfMbtiLabel')}</label>
           {/* 네이티브 select 대신 버튼 토글: 모바일에서 AdSense/시스템 피커 간섭으로 팝업이 닫히는 문제 방지 */}
-          <div className="flex justify-center gap-2 sm:gap-3 mb-6 flex-wrap relative z-20">
+          <div className="flex justify-center gap-1.5 sm:gap-3 mb-6 flex-nowrap relative z-20 px-1">
             {renderMbtiPair(EI_OPTS, mbtiE, setMbtiE, 'E/I')}
             {renderMbtiPair(SN_OPTS, mbtiS, setMbtiS, 'S/N')}
             {renderMbtiPair(TF_OPTS, mbtiT, setMbtiT, 'T/F')}
