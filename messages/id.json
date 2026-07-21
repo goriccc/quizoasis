@@ -9961,6 +9961,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3GhostingReboundPotentialTest": {
+    "startMessage": {
+      "line1": "Seberapa berani kamu menghadapi putus cinta?",
+      "line2": "Ada yang bilang putus langsung. Ada yang kirim satu chat lalu di-read aja. Ada yang menghilang tanpa kata. Dan ada yang sudah mencari orang baru sebelum benar-benar putus.",
+      "line3": "Tes ini mengukur skor keberanianmu (atau kebalikannya) di situasi putus lewat 12 skenario nyata.",
+      "line4": "Semakin jujur, semakin akurat. Tidak ada yang melihat. Mungkin.",
+      "line5": "Ukur Potensi Ghosting/Rebound-ku 😎 Mulai dengan jujur",
+      "note": "※ Di setiap skenario, pilih yang lebih dekat denganmu. Jujur ya."
+    },
+    "ui": {
+      "startTest": "Mulai Ukur Potensi Ghosting/Rebound",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Potensi 'Ghosting/Rebound'-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "potentialLevel": "Level Potensi Ghosting/Rebound"
+    },
+    "shareMessages": {
+      "default": "Tes Potensi Ghosting/Rebound: {type} → Skormu berapa? Share ke grup chat",
+      "kakao": "Tes Potensi Ghosting/Rebound: {type} → Skormu berapa? Share ke grup chat",
+      "wechat": "Tes Potensi Ghosting/Rebound: {type} → Skormu berapa? Share ke grup chat",
+      "whatsapp": "Tes Potensi Ghosting/Rebound: {type} → Skormu berapa? Share ke grup chat",
+      "telegram": "Tes Potensi Ghosting/Rebound: {type} → Skormu berapa? Share ke grup chat",
+      "line": "Tes Potensi Ghosting/Rebound: {type} → Skormu berapa? Share ke grup chat",
+      "startDefault": "Ukur Potensi 'Ghosting/Rebound'-ku 😎 Seberapa pengecut aku saat putus? Yuk jujur coba",
+      "startKakao": "Ukur Potensi 'Ghosting/Rebound'-ku 😎 Seberapa pengecut aku saat putus? Yuk jujur coba",
+      "startWechat": "Ukur Potensi 'Ghosting/Rebound'-ku 😎 Seberapa pengecut aku saat putus? Yuk jujur coba",
+      "startWhatsapp": "Ukur Potensi 'Ghosting/Rebound'-ku 😎 Seberapa pengecut aku saat putus? Yuk jujur coba",
+      "startTelegram": "Ukur Potensi 'Ghosting/Rebound'-ku 😎 Seberapa pengecut aku saat putus? Yuk jujur coba",
+      "startLine": "Ukur Potensi 'Ghosting/Rebound'-ku 😎 Seberapa pengecut aku saat putus? Yuk jujur coba"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

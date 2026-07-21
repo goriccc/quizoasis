@@ -9961,6 +9961,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test hot gần đây"
     }
   },
+  "phase3GhostingReboundPotentialTest": {
+    "startMessage": {
+      "line1": "Trước chia tay, bạn dũng cảm đến mức nào?",
+      "line2": "Có người nói thẳng mặt. Có người nhắn một dòng rồi đọc không trả lời. Có người biến mất không một lời. Và có người chưa chia tay đã để ý người tiếp theo.",
+      "line3": "Bài test này đo mức độ hèn nhát của bạn trong tình huống chia tay qua 12 kịch bản thực tế.",
+      "line4": "Càng thành thật càng chính xác. Không ai đang nhìn đâu. Có lẽ vậy.",
+      "line5": "Đo tiềm năng Ghosting/Rebound của tôi 😎 Bắt đầu thành thật",
+      "note": "※ Mỗi tình huống hãy chọn đáp án gần với bạn hơn. Thành thật nhé."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo tiềm năng Ghosting/Rebound",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Tiềm năng 'Ghosting/Rebound' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "potentialLevel": "Cấp độ tiềm năng Ghosting/Rebound"
+    },
+    "shareMessages": {
+      "default": "Test tiềm năng Ghosting/Rebound: {type} → Bạn bao nhiêu điểm? Share vào nhóm đi",
+      "kakao": "Test tiềm năng Ghosting/Rebound: {type} → Bạn bao nhiêu điểm? Share vào nhóm đi",
+      "wechat": "Test tiềm năng Ghosting/Rebound: {type} → Bạn bao nhiêu điểm? Share vào nhóm đi",
+      "whatsapp": "Test tiềm năng Ghosting/Rebound: {type} → Bạn bao nhiêu điểm? Share vào nhóm đi",
+      "telegram": "Test tiềm năng Ghosting/Rebound: {type} → Bạn bao nhiêu điểm? Share vào nhóm đi",
+      "line": "Test tiềm năng Ghosting/Rebound: {type} → Bạn bao nhiêu điểm? Share vào nhóm đi",
+      "startDefault": "Đo tiềm năng 'Ghosting/Rebound' của tôi 😎 Trước chia tay mình hèn đến mức nào? Thành thật thử xem",
+      "startKakao": "Đo tiềm năng 'Ghosting/Rebound' của tôi 😎 Trước chia tay mình hèn đến mức nào? Thành thật thử xem",
+      "startWechat": "Đo tiềm năng 'Ghosting/Rebound' của tôi 😎 Trước chia tay mình hèn đến mức nào? Thành thật thử xem",
+      "startWhatsapp": "Đo tiềm năng 'Ghosting/Rebound' của tôi 😎 Trước chia tay mình hèn đến mức nào? Thành thật thử xem",
+      "startTelegram": "Đo tiềm năng 'Ghosting/Rebound' của tôi 😎 Trước chia tay mình hèn đến mức nào? Thành thật thử xem",
+      "startLine": "Đo tiềm năng 'Ghosting/Rebound' của tôi 😎 Trước chia tay mình hèn đến mức nào? Thành thật thử xem"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

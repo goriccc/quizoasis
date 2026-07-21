@@ -9970,6 +9970,60 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3GhostingReboundPotentialTest": {
+    "startMessage": {
+      "line1": "How brave are you when facing a breakup?",
+      "line2": "Some people break up face-to-face. Some leave one message and go silent. Some vanish without a word. And some are already checking out the next person before it's even over.",
+      "line3": "This test measures your cowardice score in breakup situations through 12 real-life scenarios.",
+      "line4": "The more honest you are, the more accurate it is. No one is watching. Probably.",
+      "line5": "Measure my Ghosting/Rebound Potential 😎 Start honestly",
+      "note": "※ For each scenario, pick the option closer to you. Be honest."
+    },
+    "ui": {
+      "startTest": "Start Measuring Ghosting/Rebound Potential",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My 'Ghosting/Rebound' Potential)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "potentialLevel": "Ghosting/Rebound Potential Level"
+    },
+    "shareMessages": {
+      "default": "Ghosting/Rebound Potential Test: {type} → What's your score? Share it in the group chat",
+      "kakao": "Ghosting/Rebound Potential Test: {type} → What's your score? Share it in the group chat",
+      "wechat": "Ghosting/Rebound Potential Test: {type} → What's your score? Share it in the group chat",
+      "whatsapp": "Ghosting/Rebound Potential Test: {type} → What's your score? Share it in the group chat",
+      "telegram": "Ghosting/Rebound Potential Test: {type} → What's your score? Share it in the group chat",
+      "line": "Ghosting/Rebound Potential Test: {type} → What's your score? Share it in the group chat",
+      "startDefault": "Measuring my 'Ghosting/Rebound' Potential 😎 How cowardly am I in a breakup? Let's find out honestly",
+      "startKakao": "Measuring my 'Ghosting/Rebound' Potential 😎 How cowardly am I in a breakup? Let's find out honestly",
+      "startWechat": "Measuring my 'Ghosting/Rebound' Potential 😎 How cowardly am I in a breakup? Let's find out honestly",
+      "startWhatsapp": "Measuring my 'Ghosting/Rebound' Potential 😎 How cowardly am I in a breakup? Let's find out honestly",
+      "startTelegram": "Measuring my 'Ghosting/Rebound' Potential 😎 How cowardly am I in a breakup? Let's find out honestly",
+      "startLine": "Measuring my 'Ghosting/Rebound' Potential 😎 How cowardly am I in a breakup? Let's find out honestly"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

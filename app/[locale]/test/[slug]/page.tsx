@@ -120,6 +120,10 @@ import {
   phase3LoveVillainIndexResults,
 } from '@/lib/phase3LoveVillainIndexData';
 import {
+  phase3GhostingReboundPotentialQuestions,
+  phase3GhostingReboundPotentialResults,
+} from '@/lib/phase3GhostingReboundPotentialData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -543,6 +547,10 @@ const Phase3DopamineSelfControlIndexTestClient = dynamic(
 );
 const Phase3LoveVillainIndexTestClient = dynamic(
   () => import('@/components/Phase3LoveVillainIndexTestClient'),
+  { ssr: false }
+);
+const Phase3GhostingReboundPotentialTestClient = dynamic(
+  () => import('@/components/Phase3GhostingReboundPotentialTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1144,6 +1152,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-ghosting-rebound-potential') {
+    test = {
+      slug: 'phase3-ghosting-rebound-potential',
+      title: {
+        ko: "나의 '잠수/환승' 잠재력",
+        en: "My 'Ghosting/Rebound' Potential",
+        ja: '私の『音信不通／乗り換え』ポテンシャル',
+        'zh-CN': '我的「失联/闪现」潜力',
+        'zh-TW': '我的「失聯／閃現」潛力',
+        vi: "Tiềm năng 'Ghosting/Rebound' của tôi",
+        id: "Potensi 'Ghosting/Rebound'-ku",
+      },
+      description: {
+        ko: '12가지 실제 상황극으로 측정하는 이별 앞 나의 비겁함 수치. 당신은 잠수형인가요, 환승형인가요?',
+        en: 'Measure your breakup cowardice score with 12 real-life scenarios. Are you a ghoster or a rebounder?',
+        ja: '12のリアルなシチュエーションで測る、別れの前の臆病さ。あなたは音信不通タイプ？乗り換えタイプ？',
+        'zh-CN': '用12个真实情境测量分手时的懦弱指数。你是失联型还是闪现型？',
+        'zh-TW': '用12個真實情境測量分手時的懦弱指數。你是失聯型還是閃現型？',
+        vi: 'Đo mức độ hèn nhát trước chia tay qua 12 kịch bản thực tế. Bạn thuộc kiểu ghosting hay rebound?',
+        id: 'Ukur skor keberanianmu saat putus lewat 12 skenario nyata. Kamu tipe ghosting atau rebound?',
+      },
+      thumbnail: 'p3_test_ghosting_rebound_potential.webp',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['잠수', '환승', '이별'],
+        en: ['ghosting', 'rebound', 'breakup'],
+        ja: ['音信不通', '乗り換え', '別れ'],
+        'zh-CN': ['失联', '闪现', '分手'],
+        'zh-TW': ['失聯', '閃現', '分手'],
+        vi: ['ghosting', 'rebound', 'chia tay'],
+        id: ['ghosting', 'rebound', 'putus'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5539,6 +5584,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-ghosting-rebound-potential') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-ghosting-rebound-potential',
+      title: {
+        ko: "나의 '잠수/환승' 잠재력",
+        en: "My 'Ghosting/Rebound' Potential",
+        ja: '私の『音信不通／乗り換え』ポテンシャル',
+        'zh-CN': '我的「失联/闪现」潜力',
+        'zh-TW': '我的「失聯／閃現」潛力',
+        vi: "Tiềm năng 'Ghosting/Rebound' của tôi",
+        id: "Potensi 'Ghosting/Rebound'-ku",
+      },
+      description: {
+        ko: '12가지 실제 상황극으로 측정하는 이별 앞 나의 비겁함 수치. 당신은 잠수형인가요, 환승형인가요?',
+        en: 'Measure your breakup cowardice score with 12 real-life scenarios. Are you a ghoster or a rebounder?',
+        ja: '12のリアルなシチュエーションで測る、別れの前の臆病さ。あなたは音信不通タイプ？乗り換えタイプ？',
+        'zh-CN': '用12个真实情境测量分手时的懦弱指数。你是失联型还是闪现型？',
+        'zh-TW': '用12個真實情境測量分手時的懦弱指數。你是失聯型還是閃現型？',
+        vi: 'Đo mức độ hèn nhát trước chia tay qua 12 kịch bản thực tế. Bạn thuộc kiểu ghosting hay rebound?',
+        id: 'Ukur skor keberanianmu saat putus lewat 12 skenario nyata. Kamu tipe ghosting atau rebound?',
+      },
+      thumbnail: 'p3_test_ghosting_rebound_potential.webp',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['잠수', '환승', '이별'],
+        en: ['ghosting', 'rebound', 'breakup'],
+        ja: ['音信不通', '乗り換え', '別れ'],
+        'zh-CN': ['失联', '闪现', '分手'],
+        'zh-TW': ['失聯', '閃現', '分手'],
+        vi: ['ghosting', 'rebound', 'chia tay'],
+        id: ['ghosting', 'rebound', 'putus'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3GhostingReboundPotentialTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3GhostingReboundPotentialQuestions}
+          results={phase3GhostingReboundPotentialResults}
+          questionCount={phase3GhostingReboundPotentialQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

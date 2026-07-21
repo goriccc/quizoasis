@@ -9430,6 +9430,60 @@
       "popularTestsTop5": "🔥 近期熱門測試推薦TOP5"
     }
   },
+  "phase3GhostingReboundPotentialTest": {
+    "startMessage": {
+      "line1": "面對分手，你有多勇敢？",
+      "line2": "有人當面提出分手，有人傳一句訊息就已讀不回，有人一聲不吭人間蒸發。還有人還沒分手就已經在物色下一位。",
+      "line3": "這個測試用12個真實情境，測量你在分手時的懦弱指數。",
+      "line4": "答得越誠實越準。沒人在看。大概吧。",
+      "line5": "測測我的「失聯／閃現」潛力 😎 誠實開始",
+      "note": "※ 每個情境選更接近你的選項。請誠實作答。"
+    },
+    "ui": {
+      "startTest": "開始測量失聯／閃現潛力",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區（我的「失聯／閃現」潛力）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "potentialLevel": "失聯／閃現潛力等級"
+    },
+    "shareMessages": {
+      "default": "失聯／閃現潛力測試：{type} → 你幾分？丟群裡測測",
+      "kakao": "失聯／閃現潛力測試：{type} → 你幾分？丟群裡測測",
+      "wechat": "失聯／閃現潛力測試：{type} → 你幾分？丟群裡測測",
+      "whatsapp": "失聯／閃現潛力測試：{type} → 你幾分？丟群裡測測",
+      "telegram": "失聯／閃現潛力測試：{type} → 你幾分？丟群裡測測",
+      "line": "失聯／閃現潛力測試：{type} → 你幾分？丟群裡測測",
+      "startDefault": "測測我的「失聯／閃現」潛力 😎 分手時我有多窩囊？誠實來一發",
+      "startKakao": "測測我的「失聯／閃現」潛力 😎 分手時我有多窩囊？誠實來一發",
+      "startWechat": "測測我的「失聯／閃現」潛力 😎 分手時我有多窩囊？誠實來一發",
+      "startWhatsapp": "測測我的「失聯／閃現」潛力 😎 分手時我有多窩囊？誠實來一發",
+      "startTelegram": "測測我的「失聯／閃現」潛力 😎 分手時我有多窩囊？誠實來一發",
+      "startLine": "測測我的「失聯／閃現」潛力 😎 分手時我有多窩囊？誠實來一發"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",
