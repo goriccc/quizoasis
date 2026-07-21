@@ -112,6 +112,10 @@ import {
   phase3GaslightingDefensePowerResults,
 } from '@/lib/phase3GaslightingDefensePowerData';
 import {
+  phase3DopamineSelfControlIndexQuestions,
+  phase3DopamineSelfControlIndexResults,
+} from '@/lib/phase3DopamineSelfControlIndexData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -527,6 +531,10 @@ const Phase3ToxicRelationshipDiagnosisTestClient = dynamic(
 );
 const Phase3GaslightingDefensePowerTestClient = dynamic(
   () => import('@/components/Phase3GaslightingDefensePowerTestClient'),
+  { ssr: false }
+);
+const Phase3DopamineSelfControlIndexTestClient = dynamic(
+  () => import('@/components/Phase3DopamineSelfControlIndexTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1128,6 +1136,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-dopamine-self-control-index') {
+    test = {
+      slug: 'phase3-dopamine-self-control-index',
+      title: {
+        ko: "나의 '도파민 절제력' 지수",
+        en: "My 'Dopamine Self-Control' Index",
+        ja: '私の『ドーパミン自制力』指数',
+        'zh-CN': '我的「多巴胺自控力」指数',
+        'zh-TW': '我的「多巴胺自控力」指數',
+        vi: "Chỉ số 'kiềm chế dopamine' của tôi",
+        id: "Indeks 'Pengendalian Dopamin'-ku",
+      },
+      description: {
+        ko: '12가지 질문으로 측정하는 내 도파민 절제력 지수. 알고리즘에 얼마나 장악돼 있는지 솔직하게 진단해 드립니다.',
+        en: 'Measure your dopamine self-control index with 12 questions. An honest diagnosis of how much the algorithm has taken over you.',
+        ja: '12の質問で測る私のドーパミン自制力指数。アルゴリズムにどれだけ支配されているか正直に診断します。',
+        'zh-CN': '通过12个问题测量你的多巴胺自控力指数。诚实诊断你被算法掌控的程度。',
+        'zh-TW': '透過12個問題測量你的多巴胺自控力指數。誠實診斷你被演算法掌控的程度。',
+        vi: 'Đo chỉ số kiềm chế dopamine của bạn qua 12 câu hỏi. Chẩn đoán thẳng thắn mức độ bạn bị thuật toán chi phối.',
+        id: 'Ukur indeks pengendalian dopaminmu lewat 12 pertanyaan. Diagnosis jujur seberapa jauh kamu dikuasai algoritma.',
+      },
+      thumbnail: 'p3_test_dopamine_self_control_index.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['도파민', '디지털중독', '절제력'],
+        en: ['Dopamine', 'Digital Addiction', 'Self-Control'],
+        ja: ['ドーパミン', 'デジタル依存', '自制力'],
+        'zh-CN': ['多巴胺', '数字成瘾', '自控力'],
+        'zh-TW': ['多巴胺', '數位成癮', '自控力'],
+        vi: ['Dopamine', 'Nghiện kỹ thuật số', 'Kiềm chế'],
+        id: ['Dopamin', 'Kecanduan Digital', 'Pengendalian Diri'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5449,6 +5494,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-dopamine-self-control-index') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-dopamine-self-control-index',
+      title: {
+        ko: "나의 '도파민 절제력' 지수",
+        en: "My 'Dopamine Self-Control' Index",
+        ja: '私の『ドーパミン自制力』指数',
+        'zh-CN': '我的「多巴胺自控力」指数',
+        'zh-TW': '我的「多巴胺自控力」指數',
+        vi: "Chỉ số 'kiềm chế dopamine' của tôi",
+        id: "Indeks 'Pengendalian Dopamin'-ku",
+      },
+      description: {
+        ko: '12가지 질문으로 측정하는 내 도파민 절제력 지수. 알고리즘에 얼마나 장악돼 있는지 솔직하게 진단해 드립니다.',
+        en: 'Measure your dopamine self-control index with 12 questions. An honest diagnosis of how much the algorithm has taken over you.',
+        ja: '12の質問で測る私のドーパミン自制力指数。アルゴリズムにどれだけ支配されているか正直に診断します。',
+        'zh-CN': '通过12个问题测量你的多巴胺自控力指数。诚实诊断你被算法掌控的程度。',
+        'zh-TW': '透過12個問題測量你的多巴胺自控力指數。誠實診斷你被演算法掌控的程度。',
+        vi: 'Đo chỉ số kiềm chế dopamine của bạn qua 12 câu hỏi. Chẩn đoán thẳng thắn mức độ bạn bị thuật toán chi phối.',
+        id: 'Ukur indeks pengendalian dopaminmu lewat 12 pertanyaan. Diagnosis jujur seberapa jauh kamu dikuasai algoritma.',
+      },
+      thumbnail: 'p3_test_dopamine_self_control_index.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['도파민', '디지털중독', '절제력'],
+        en: ['Dopamine', 'Digital Addiction', 'Self-Control'],
+        ja: ['ドーパミン', 'デジタル依存', '自制力'],
+        'zh-CN': ['多巴胺', '数字成瘾', '自控力'],
+        'zh-TW': ['多巴胺', '數位成癮', '自控力'],
+        vi: ['Dopamine', 'Nghiện kỹ thuật số', 'Kiềm chế'],
+        id: ['Dopamin', 'Kecanduan Digital', 'Pengendalian Diri'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3DopamineSelfControlIndexTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3DopamineSelfControlIndexQuestions}
+          results={phase3DopamineSelfControlIndexResults}
+          questionCount={phase3DopamineSelfControlIndexQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

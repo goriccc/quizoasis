@@ -9850,6 +9850,63 @@
       "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
     }
   },
+  "phase3DopamineSelfControlIndexTest": {
+    "startMessage": {
+      "line1": "Pernahkah kamu mengambil ponsel berniat langsung menaruhnya lagi, tapi tahu-tahu sudah 45 menit berlalu?",
+      "line2": "Dopamin adalah zat sinyal kesenangan yang dilepaskan otak. Notifikasi ponsel, video pendek, dan like di media sosial semuanya dirancang dengan cermat untuk memicu dopamin.",
+      "line3": "Ini bukan masalah kemauan. Ini pertarungan antara algoritma buatan insinyur terbaik dunia melawan otakmu.",
+      "line4": "Ukur indeks pengendalian dopaminmu lewat 12 pertanyaan dan dapatkan diagnosis jujur seberapa jauh kamu dikuasai algoritma.",
+      "line5": "Ukur pengendalian dopaminku 📱 Cek sekarang"
+    },
+    "ui": {
+      "startTest": "Mulai Ukur Pengendalian Diri",
+      "shareWithFriends": "Coba Bersama Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Indeks 'Pengendalian Dopamin'-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "controlLevel": "Level Pengendalian Dopamin",
+      "strength": "Kekuatan",
+      "caution": "Perhatian",
+      "encouragement": "Jika hasil ini membuatmu marah atau merasa tidak adil",
+      "todayTask": "Tugas Hari Ini"
+    },
+    "shareMessages": {
+      "default": "Tes Indeks Pengendalian Dopamin: {type} → Kamu dapat berapa poin? Tag temanmu",
+      "kakao": "Tes Indeks Pengendalian Dopamin: {type} → Kamu dapat berapa poin? Tag temanmu",
+      "wechat": "Tes Indeks Pengendalian Dopamin: {type} → Kamu dapat berapa poin? Tag temanmu",
+      "whatsapp": "Tes Indeks Pengendalian Dopamin: {type} → Kamu dapat berapa poin? Tag temanmu",
+      "telegram": "Tes Indeks Pengendalian Dopamin: {type} → Kamu dapat berapa poin? Tag temanmu",
+      "line": "Tes Indeks Pengendalian Dopamin: {type} → Kamu dapat berapa poin? Tag temanmu",
+      "startDefault": "Ukur Indeks 'Pengendalian Dopamin'-ku 📱 Tipe yang niat nonton 5 menit malah jadi 1 jam? Aku dapat berapa poin ya?",
+      "startKakao": "Ukur Indeks 'Pengendalian Dopamin'-ku 📱 Tipe yang niat nonton 5 menit malah jadi 1 jam? Aku dapat berapa poin ya?",
+      "startWechat": "Ukur Indeks 'Pengendalian Dopamin'-ku 📱 Tipe yang niat nonton 5 menit malah jadi 1 jam? Aku dapat berapa poin ya?",
+      "startWhatsapp": "Ukur Indeks 'Pengendalian Dopamin'-ku 📱 Tipe yang niat nonton 5 menit malah jadi 1 jam? Aku dapat berapa poin ya?",
+      "startTelegram": "Ukur Indeks 'Pengendalian Dopamin'-ku 📱 Tipe yang niat nonton 5 menit malah jadi 1 jam? Aku dapat berapa poin ya?",
+      "startLine": "Ukur Indeks 'Pengendalian Dopamin'-ku 📱 Tipe yang niat nonton 5 menit malah jadi 1 jam? Aku dapat berapa poin ya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

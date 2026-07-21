@@ -9319,6 +9319,63 @@
       "popularTestsTop5": "🔥 熱門測驗推薦 Top5"
     }
   },
+  "phase3DopamineSelfControlIndexTest": {
+    "startMessage": {
+      "line1": "拿起手機本想馬上放下，回過神來已經過了45分鐘——你有過這種經歷嗎？",
+      "line2": "多巴胺是大腦分泌的快樂訊號物質。智慧型手機通知、短影音、社群按讚，全都被精心設計來刺激多巴胺。",
+      "line3": "這不是意志力的問題。這是世界頂尖工程師打造的演算法 vs 你的大腦之間的較量。",
+      "line4": "透過12個問題測量你的多巴胺自控力指數，誠實診斷你被演算法掌控的程度。",
+      "line5": "測測我的多巴胺自控力 📱 立即確認"
+    },
+    "ui": {
+      "startTest": "開始測量自控力",
+      "shareWithFriends": "和朋友一起做",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區域（我的「多巴胺自控力」指數）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "controlLevel": "多巴胺自控力等級",
+      "strength": "優勢",
+      "caution": "注意事項",
+      "encouragement": "如果看到這個結果感到生氣或委屈",
+      "todayTask": "今日待辦"
+    },
+    "shareMessages": {
+      "default": "多巴胺自控力指數測試: {type} → 你能得幾分？快標記你的朋友",
+      "kakao": "多巴胺自控力指數測試: {type} → 你能得幾分？快標記你的朋友",
+      "wechat": "多巴胺自控力指數測試: {type} → 你能得幾分？快標記你的朋友",
+      "whatsapp": "多巴胺自控力指數測試: {type} → 你能得幾分？快標記你的朋友",
+      "telegram": "多巴胺自控力指數測試: {type} → 你能得幾分？快標記你的朋友",
+      "line": "多巴胺自控力指數測試: {type} → 你能得幾分？快標記你的朋友",
+      "startDefault": "測量我的「多巴胺自控力」指數 📱 說好只看5分鐘結果看了1小時的類型？我能得幾分？",
+      "startKakao": "測量我的「多巴胺自控力」指數 📱 說好只看5分鐘結果看了1小時的類型？我能得幾分？",
+      "startWechat": "測量我的「多巴胺自控力」指數 📱 說好只看5分鐘結果看了1小時的類型？我能得幾分？",
+      "startWhatsapp": "測量我的「多巴胺自控力」指數 📱 說好只看5分鐘結果看了1小時的類型？我能得幾分？",
+      "startTelegram": "測量我的「多巴胺自控力」指數 📱 說好只看5分鐘結果看了1小時的類型？我能得幾分？",
+      "startLine": "測量我的「多巴胺自控力」指數 📱 說好只看5分鐘結果看了1小時的類型？我能得幾分？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦TOP5",
+      "popularTestsTop5": "🔥 近期熱門測試推薦TOP5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

@@ -9859,6 +9859,63 @@
       "popularTestsTop5": "🔥 Top 5 trending tests"
     }
   },
+  "phase3DopamineSelfControlIndexTest": {
+    "startMessage": {
+      "line1": "Have you ever picked up your phone meaning to put it right back down, only to realize 45 minutes had passed?",
+      "line2": "Dopamine is a pleasure-signaling chemical released in your brain. Smartphone notifications, short-form videos, and SNS likes are all precisely engineered to stimulate dopamine.",
+      "line3": "This is not a matter of willpower. It's a battle between algorithms built by the world's best engineers and your brain.",
+      "line4": "Measure your dopamine self-control index with 12 questions and get an honest diagnosis of how much the algorithm has taken over you.",
+      "line5": "Measure my dopamine self-control 📱 Check right now"
+    },
+    "ui": {
+      "startTest": "Start Measuring Self-Control",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My 'Dopamine Self-Control' Index)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "controlLevel": "Dopamine Self-Control Level",
+      "strength": "Strengths",
+      "caution": "Caution",
+      "encouragement": "If this result makes you angry or feels unfair",
+      "todayTask": "Today's To-Do"
+    },
+    "shareMessages": {
+      "default": "Dopamine Self-Control Index Test: {type} → What's your score? Tag a friend",
+      "kakao": "Dopamine Self-Control Index Test: {type} → What's your score? Tag a friend",
+      "wechat": "Dopamine Self-Control Index Test: {type} → What's your score? Tag a friend",
+      "whatsapp": "Dopamine Self-Control Index Test: {type} → What's your score? Tag a friend",
+      "telegram": "Dopamine Self-Control Index Test: {type} → What's your score? Tag a friend",
+      "line": "Dopamine Self-Control Index Test: {type} → What's your score? Tag a friend",
+      "startDefault": "Measuring my 'Dopamine Self-Control' Index 📱 The type whose 'just 5 minutes' turns into an hour? What's my score?",
+      "startKakao": "Measuring my 'Dopamine Self-Control' Index 📱 The type whose 'just 5 minutes' turns into an hour? What's my score?",
+      "startWechat": "Measuring my 'Dopamine Self-Control' Index 📱 The type whose 'just 5 minutes' turns into an hour? What's my score?",
+      "startWhatsapp": "Measuring my 'Dopamine Self-Control' Index 📱 The type whose 'just 5 minutes' turns into an hour? What's my score?",
+      "startTelegram": "Measuring my 'Dopamine Self-Control' Index 📱 The type whose 'just 5 minutes' turns into an hour? What's my score?",
+      "startLine": "Measuring my 'Dopamine Self-Control' Index 📱 The type whose 'just 5 minutes' turns into an hour? What's my score?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

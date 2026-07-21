@@ -9850,6 +9850,63 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3DopamineSelfControlIndexTest": {
+    "startMessage": {
+      "line1": "Bạn đã bao giờ cầm điện thoại định đặt xuống ngay, nhưng nhận ra đã 45 phút trôi qua chưa?",
+      "line2": "Dopamine là chất truyền tín hiệu khoái cảm do não tiết ra. Thông báo điện thoại, video ngắn, lượt thích trên mạng xã hội đều được thiết kế tinh vi để kích thích dopamine.",
+      "line3": "Đây không phải vấn đề ý chí. Đây là cuộc chiến giữa thuật toán do những kỹ sư giỏi nhất thế giới tạo ra và bộ não của bạn.",
+      "line4": "Đo chỉ số kiềm chế dopamine của bạn qua 12 câu hỏi và nhận chẩn đoán thẳng thắn về mức độ bạn bị thuật toán chi phối.",
+      "line5": "Đo sức kiềm chế dopamine của tôi 📱 Kiểm tra ngay"
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo sức kiềm chế",
+      "shareWithFriends": "Cùng làm với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chỉ số 'kiềm chế dopamine' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "controlLevel": "Cấp độ kiềm chế dopamine",
+      "strength": "Điểm mạnh",
+      "caution": "Lưu ý",
+      "encouragement": "Nếu kết quả này khiến bạn tức giận hoặc thấy oan ức",
+      "todayTask": "Việc cần làm hôm nay"
+    },
+    "shareMessages": {
+      "default": "Test chỉ số kiềm chế dopamine: {type} → Bạn được mấy điểm? Tag bạn bè thử xem",
+      "kakao": "Test chỉ số kiềm chế dopamine: {type} → Bạn được mấy điểm? Tag bạn bè thử xem",
+      "wechat": "Test chỉ số kiềm chế dopamine: {type} → Bạn được mấy điểm? Tag bạn bè thử xem",
+      "whatsapp": "Test chỉ số kiềm chế dopamine: {type} → Bạn được mấy điểm? Tag bạn bè thử xem",
+      "telegram": "Test chỉ số kiềm chế dopamine: {type} → Bạn được mấy điểm? Tag bạn bè thử xem",
+      "line": "Test chỉ số kiềm chế dopamine: {type} → Bạn được mấy điểm? Tag bạn bè thử xem",
+      "startDefault": "Đo chỉ số 'kiềm chế dopamine' của tôi 📱 Kiểu định xem 5 phút mà thành 1 tiếng? Tôi được mấy điểm nhỉ?",
+      "startKakao": "Đo chỉ số 'kiềm chế dopamine' của tôi 📱 Kiểu định xem 5 phút mà thành 1 tiếng? Tôi được mấy điểm nhỉ?",
+      "startWechat": "Đo chỉ số 'kiềm chế dopamine' của tôi 📱 Kiểu định xem 5 phút mà thành 1 tiếng? Tôi được mấy điểm nhỉ?",
+      "startWhatsapp": "Đo chỉ số 'kiềm chế dopamine' của tôi 📱 Kiểu định xem 5 phút mà thành 1 tiếng? Tôi được mấy điểm nhỉ?",
+      "startTelegram": "Đo chỉ số 'kiềm chế dopamine' của tôi 📱 Kiểu định xem 5 phút mà thành 1 tiếng? Tôi được mấy điểm nhỉ?",
+      "startLine": "Đo chỉ số 'kiềm chế dopamine' của tôi 📱 Kiểu định xem 5 phút mà thành 1 tiếng? Tôi được mấy điểm nhỉ?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot gần đây"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",
