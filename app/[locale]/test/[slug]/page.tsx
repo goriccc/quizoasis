@@ -108,6 +108,10 @@ import {
   phase3ToxicRelationshipDiagnosisResults,
 } from '@/lib/phase3ToxicRelationshipDiagnosisData';
 import {
+  phase3GaslightingDefensePowerQuestions,
+  phase3GaslightingDefensePowerResults,
+} from '@/lib/phase3GaslightingDefensePowerData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -519,6 +523,10 @@ const Phase3FriendSeesMyMbtiTestClient = dynamic(
 );
 const Phase3ToxicRelationshipDiagnosisTestClient = dynamic(
   () => import('@/components/Phase3ToxicRelationshipDiagnosisTestClient'),
+  { ssr: false }
+);
+const Phase3GaslightingDefensePowerTestClient = dynamic(
+  () => import('@/components/Phase3GaslightingDefensePowerTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1120,6 +1128,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-gaslighting-defense-power') {
+    test = {
+      slug: 'phase3-gaslighting-defense-power',
+      title: {
+        ko: "나의 '가스라이팅' 방어력",
+        en: 'My Gaslighting Defense Power',
+        ja: '私の『ガスライティング』防御力',
+        'zh-CN': '我的「煤气灯」防御力',
+        'zh-TW': '我的「煤氣燈」防禦力',
+        vi: "Sức phòng thủ 'Gaslighting' của tôi",
+        id: "Daya Tahan 'Gaslighting'-ku",
+      },
+      description: {
+        ko: '12가지 상황으로 알아보는 나의 심리적 방어력 레벨. 당신은 흔들리지 않는 멘탈 금강불괴인가요?',
+        en: 'Discover your psychological defense level through 12 situations. Are you an unshakeable, unbreakable mind?',
+        ja: '12の状況でわかる心理的防御力レベル。あなたは揺るがないメンタル金剛不壊？',
+        'zh-CN': '通过12个情境了解你的心理防御力等级。你是不动摇的金刚不坏心态吗？',
+        'zh-TW': '透過12個情境了解你的心理防禦力等級。你是不動搖的金剛不壞心態嗎？',
+        vi: 'Khám phá cấp độ phòng thủ tâm lý qua 12 tình huống. Bạn có phải tinh thần kim cương bất hoại không lay chuyển?',
+        id: 'Ketahui level pertahanan psikologismu lewat 12 situasi. Apakah mentalmu baja tak terpatahkan?',
+      },
+      thumbnail: 'p3_test_gaslighting_defense_power.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['가스라이팅', '멘탈', '심리'],
+        en: ['Gaslighting', 'Mental', 'Psychology'],
+        ja: ['ガスライティング', 'メンタル', '心理'],
+        'zh-CN': ['煤气灯', '心态', '心理'],
+        'zh-TW': ['煤氣燈', '心態', '心理'],
+        vi: ['Gaslighting', 'Tinh thần', 'Tâm lý'],
+        id: ['Gaslighting', 'Mental', 'Psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5404,6 +5449,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-gaslighting-defense-power') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-gaslighting-defense-power',
+      title: {
+        ko: "나의 '가스라이팅' 방어력",
+        en: 'My Gaslighting Defense Power',
+        ja: '私の『ガスライティング』防御力',
+        'zh-CN': '我的「煤气灯」防御力',
+        'zh-TW': '我的「煤氣燈」防禦力',
+        vi: "Sức phòng thủ 'Gaslighting' của tôi",
+        id: "Daya Tahan 'Gaslighting'-ku",
+      },
+      description: {
+        ko: '12가지 상황으로 알아보는 나의 심리적 방어력 레벨. 당신은 흔들리지 않는 멘탈 금강불괴인가요?',
+        en: 'Discover your psychological defense level through 12 situations. Are you an unshakeable, unbreakable mind?',
+        ja: '12の状況でわかる心理的防御力レベル。あなたは揺るがないメンタル金剛不壊？',
+        'zh-CN': '通过12个情境了解你的心理防御力等级。你是不动摇的金刚不坏心态吗？',
+        'zh-TW': '透過12個情境了解你的心理防禦力等級。你是不動搖的金剛不壞心態嗎？',
+        vi: 'Khám phá cấp độ phòng thủ tâm lý qua 12 tình huống. Bạn có phải tinh thần kim cương bất hoại không lay chuyển?',
+        id: 'Ketahui level pertahanan psikologismu lewat 12 situasi. Apakah mentalmu baja tak terpatahkan?',
+      },
+      thumbnail: 'p3_test_gaslighting_defense_power.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['가스라이팅', '멘탈', '심리'],
+        en: ['Gaslighting', 'Mental', 'Psychology'],
+        ja: ['ガスライティング', 'メンタル', '心理'],
+        'zh-CN': ['煤气灯', '心态', '心理'],
+        'zh-TW': ['煤氣燈', '心態', '心理'],
+        vi: ['Gaslighting', 'Tinh thần', 'Tâm lý'],
+        id: ['Gaslighting', 'Mental', 'Psikologi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3GaslightingDefensePowerTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3GaslightingDefensePowerQuestions}
+          results={phase3GaslightingDefensePowerResults}
+          questionCount={phase3GaslightingDefensePowerQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

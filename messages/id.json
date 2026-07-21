@@ -9792,6 +9792,64 @@
       "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
     }
   },
+  "phase3GaslightingDefensePowerTest": {
+    "startMessage": {
+      "line1": "Gaslighting adalah manipulasi psikologis: seseorang berulang kali mengguncang persepsi realitasmu sampai kamu meragukan dirimu sendiri.",
+      "line2": "Bentuknya berupa penyangkalan ingatan dan perasaanmu: \"Kamu salah dengar\", \"Kamu terlalu sensitif\", \"Kapan aku bilang begitu?\"",
+      "line3": "Rentan terhadap gaslighting bukan berarti lemah. Pola psikologis yang terbentuk sejak kecil dan pengalaman hubungan ikut berpengaruh.",
+      "line4": "Cek bagaimana kamu bereaksi di 12 situasi untuk mengetahui level pertahanan psikologismu.",
+      "line5": "Ukur daya tahan gaslighting-ku 🛡️ Mulai sekarang"
+    },
+    "ui": {
+      "startTest": "Mulai tes daya tahan",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Area iklan AdSense (Daya Tahan 'Gaslighting'-ku)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "defenseLevel": "Level pertahanan",
+      "patterns": "Pola yang muncul sekarang",
+      "strength": "Kekuatan",
+      "needs": "Yang paling dibutuhkan sekarang",
+      "caution": "Hal yang perlu diwaspadai",
+      "expertNote": "Panduan konsultasi profesional"
+    },
+    "shareMessages": {
+      "default": "Tes daya tahan gaslighting: {type} → Kamu level berapa? Tag temanmu",
+      "kakao": "Tes daya tahan gaslighting: {type} → Kamu level berapa? Tag temanmu",
+      "wechat": "Tes daya tahan gaslighting: {type} → Kamu level berapa? Tag temanmu",
+      "whatsapp": "Tes daya tahan gaslighting: {type} → Kamu level berapa? Tag temanmu",
+      "telegram": "Tes daya tahan gaslighting: {type} → Kamu level berapa? Tag temanmu",
+      "line": "Tes daya tahan gaslighting: {type} → Kamu level berapa? Tag temanmu",
+      "startDefault": "Ukur daya tahan 'gaslighting'-ku 🛡️ Goyah saat dibilang \"Kamu salah dengar\"? Aku level berapa ya?",
+      "startKakao": "Ukur daya tahan 'gaslighting'-ku 🛡️ Goyah saat dibilang \"Kamu salah dengar\"? Aku level berapa ya?",
+      "startWechat": "Ukur daya tahan 'gaslighting'-ku 🛡️ Goyah saat dibilang \"Kamu salah dengar\"? Aku level berapa ya?",
+      "startWhatsapp": "Ukur daya tahan 'gaslighting'-ku 🛡️ Goyah saat dibilang \"Kamu salah dengar\"? Aku level berapa ya?",
+      "startTelegram": "Ukur daya tahan 'gaslighting'-ku 🛡️ Goyah saat dibilang \"Kamu salah dengar\"? Aku level berapa ya?",
+      "startLine": "Ukur daya tahan 'gaslighting'-ku 🛡️ Goyah saat dibilang \"Kamu salah dengar\"? Aku level berapa ya?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Silakan tempel dan bagikan di WeChat.",
+      "kakaoInit": "Menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

@@ -9261,6 +9261,64 @@
       "popularTestsTop5": "🔥 熱門測驗推薦 Top5"
     }
   },
+  "phase3GaslightingDefensePowerTest": {
+    "startMessage": {
+      "line1": "煤氣燈效應（Gaslighting）是一種心理操控：對方反覆動搖你對現實的認知，讓你開始懷疑自己。",
+      "line2": "它常以否定你的記憶和感受的方式出現，例如「你聽錯了」「你太敏感了」「我什麼時候說過？」",
+      "line3": "容易被煤氣燈操控並不是軟弱。從小形成的心理模式和關係經歷都會產生影響。",
+      "line4": "檢查你在12個情境中的反應，就能了解你的心理防禦力水準。",
+      "line5": "測測我的煤氣燈防禦力 🛡️ 馬上開始"
+    },
+    "ui": {
+      "startTest": "開始防禦力測驗",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測驗",
+      "goToTest": "去測驗",
+      "adsenseTitle": "AdSense廣告區域（我的「煤氣燈」防禦力）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測驗",
+      "defenseLevel": "防禦力等級",
+      "patterns": "目前出現的模式",
+      "strength": "優勢",
+      "needs": "現在最需要的",
+      "caution": "注意事項",
+      "expertNote": "專業諮詢指引"
+    },
+    "shareMessages": {
+      "default": "煤氣燈防禦力測驗：{type} → 你是什麼等級？標記朋友試試",
+      "kakao": "煤氣燈防禦力測驗：{type} → 你是什麼等級？標記朋友試試",
+      "wechat": "煤氣燈防禦力測驗：{type} → 你是什麼等級？標記朋友試試",
+      "whatsapp": "煤氣燈防禦力測驗：{type} → 你是什麼等級？標記朋友試試",
+      "telegram": "煤氣燈防禦力測驗：{type} → 你是什麼等級？標記朋友試試",
+      "line": "煤氣燈防禦力測驗：{type} → 你是什麼等級？標記朋友試試",
+      "startDefault": "我的「煤氣燈」防禦力測驗 🛡️ 聽到「你聽錯了」會動搖嗎？我是幾級？",
+      "startKakao": "我的「煤氣燈」防禦力測驗 🛡️ 聽到「你聽錯了」會動搖嗎？我是幾級？",
+      "startWechat": "我的「煤氣燈」防禦力測驗 🛡️ 聽到「你聽錯了」會動搖嗎？我是幾級？",
+      "startWhatsapp": "我的「煤氣燈」防禦力測驗 🛡️ 聽到「你聽錯了」會動搖嗎？我是幾級？",
+      "startTelegram": "我的「煤氣燈」防禦力測驗 🛡️ 聽到「你聽錯了」會動搖嗎？我是幾級？",
+      "startLine": "我的「煤氣燈」防禦力測驗 🛡️ 聽到「你聽錯了」會動搖嗎？我是幾級？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後重試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測驗推薦 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

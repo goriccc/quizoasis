@@ -9792,6 +9792,64 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3GaslightingDefensePowerTest": {
+    "startMessage": {
+      "line1": "煤气灯效应（Gaslighting）是一种心理操控：对方反复动摇你对现实的认知，让你开始怀疑自己。",
+      "line2": "它常以否定你的记忆和感受的方式出现，比如「你听错了」「你太敏感了」「我什么时候说过？」",
+      "line3": "容易被煤气灯操控并不是软弱。从小形成的心理模式和关系经历都会产生影响。",
+      "line4": "检查你在12个情境中的反应，就能了解你的心理防御力水平。",
+      "line5": "测测我的煤气灯防御力 🛡️ 马上开始"
+    },
+    "ui": {
+      "startTest": "开始防御力测试",
+      "shareWithFriends": "和朋友一起测",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "看看其他测试",
+      "goToTest": "去测试",
+      "adsenseTitle": "AdSense广告区域（我的「煤气灯」防御力）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "defenseLevel": "防御力等级",
+      "patterns": "当前出现的模式",
+      "strength": "优势",
+      "needs": "现在最需要的",
+      "caution": "注意事项",
+      "expertNote": "专业咨询指引"
+    },
+    "shareMessages": {
+      "default": "煤气灯防御力测试：{type} → 你是什么等级？标记朋友试试",
+      "kakao": "煤气灯防御力测试：{type} → 你是什么等级？标记朋友试试",
+      "wechat": "煤气灯防御力测试：{type} → 你是什么等级？标记朋友试试",
+      "whatsapp": "煤气灯防御力测试：{type} → 你是什么等级？标记朋友试试",
+      "telegram": "煤气灯防御力测试：{type} → 你是什么等级？标记朋友试试",
+      "line": "煤气灯防御力测试：{type} → 你是什么等级？标记朋友试试",
+      "startDefault": "我的「煤气灯」防御力测试 🛡️ 听到「你听错了」会动摇吗？我是几级？",
+      "startKakao": "我的「煤气灯」防御力测试 🛡️ 听到「你听错了」会动摇吗？我是几级？",
+      "startWechat": "我的「煤气灯」防御力测试 🛡️ 听到「你听错了」会动摇吗？我是几级？",
+      "startWhatsapp": "我的「煤气灯」防御力测试 🛡️ 听到「你听错了」会动摇吗？我是几级？",
+      "startTelegram": "我的「煤气灯」防御力测试 🛡️ 听到「你听错了」会动摇吗？我是几级？",
+      "startLine": "我的「煤气灯」防御力测试 🛡️ 听到「你听错了」会动摇吗？我是几级？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "分享功能不可用。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后重试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "热门",

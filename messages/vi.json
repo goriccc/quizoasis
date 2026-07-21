@@ -9792,6 +9792,64 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3GaslightingDefensePowerTest": {
+    "startMessage": {
+      "line1": "Gaslighting là kiểu thao túng tâm lý: đối phương liên tục lung lay nhận thức thực tế của bạn khiến bạn tự nghi ngờ chính mình.",
+      "line2": "Nó xuất hiện dưới dạng phủ nhận ký ức và cảm nhận của bạn: \"Cậu nghe nhầm rồi\", \"Cậu nhạy cảm quá\", \"Tớ nói vậy hồi nào?\"",
+      "line3": "Dễ bị gaslighting không phải là yếu đuối. Các khuôn mẫu tâm lý hình thành từ nhỏ và trải nghiệm quan hệ đều có ảnh hưởng.",
+      "line4": "Kiểm tra cách bạn phản ứng trong 12 tình huống để biết mức độ phòng thủ tâm lý của mình.",
+      "line5": "Đo sức phòng thủ gaslighting của tôi 🛡️ Bắt đầu ngay"
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo sức phòng thủ",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Đi làm test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Sức phòng thủ 'Gaslighting' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "defenseLevel": "Cấp độ phòng thủ",
+      "patterns": "Khuôn mẫu hiện tại",
+      "strength": "Điểm mạnh",
+      "needs": "Điều cần nhất lúc này",
+      "caution": "Điểm cần lưu ý",
+      "expertNote": "Hướng dẫn tư vấn chuyên gia"
+    },
+    "shareMessages": {
+      "default": "Test sức phòng thủ gaslighting: {type} → Bạn cấp mấy? Tag bạn bè đi",
+      "kakao": "Test sức phòng thủ gaslighting: {type} → Bạn cấp mấy? Tag bạn bè đi",
+      "wechat": "Test sức phòng thủ gaslighting: {type} → Bạn cấp mấy? Tag bạn bè đi",
+      "whatsapp": "Test sức phòng thủ gaslighting: {type} → Bạn cấp mấy? Tag bạn bè đi",
+      "telegram": "Test sức phòng thủ gaslighting: {type} → Bạn cấp mấy? Tag bạn bè đi",
+      "line": "Test sức phòng thủ gaslighting: {type} → Bạn cấp mấy? Tag bạn bè đi",
+      "startDefault": "Đo sức phòng thủ 'gaslighting' của tôi 🛡️ Bạn có dao động khi nghe \"Cậu nghe nhầm rồi\"? Tôi cấp mấy nhỉ?",
+      "startKakao": "Đo sức phòng thủ 'gaslighting' của tôi 🛡️ Bạn có dao động khi nghe \"Cậu nghe nhầm rồi\"? Tôi cấp mấy nhỉ?",
+      "startWechat": "Đo sức phòng thủ 'gaslighting' của tôi 🛡️ Bạn có dao động khi nghe \"Cậu nghe nhầm rồi\"? Tôi cấp mấy nhỉ?",
+      "startWhatsapp": "Đo sức phòng thủ 'gaslighting' của tôi 🛡️ Bạn có dao động khi nghe \"Cậu nghe nhầm rồi\"? Tôi cấp mấy nhỉ?",
+      "startTelegram": "Đo sức phòng thủ 'gaslighting' của tôi 🛡️ Bạn có dao động khi nghe \"Cậu nghe nhầm rồi\"? Tôi cấp mấy nhỉ?",
+      "startLine": "Đo sức phòng thủ 'gaslighting' của tôi 🛡️ Bạn có dao động khi nghe \"Cậu nghe nhầm rồi\"? Tôi cấp mấy nhỉ?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Kết quả đã được sao chép vào clipboard!",
+      "shareFailed": "Tính năng chia sẻ không khả dụng.",
+      "wechatCopy": "Đã sao chép liên kết! Vui lòng dán và chia sẻ trong WeChat.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

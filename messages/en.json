@@ -9801,6 +9801,64 @@
       "popularTestsTop5": "🔥 Top 5 trending tests"
     }
   },
+  "phase3GaslightingDefensePowerTest": {
+    "startMessage": {
+      "line1": "Gaslighting is psychological manipulation where someone repeatedly shakes your sense of reality until you start doubting yourself.",
+      "line2": "It shows up as denials of your memory and senses: \"You heard it wrong\", \"You're too sensitive\", \"When did I ever say that?\"",
+      "line3": "Being vulnerable to gaslighting is not weakness. Psychological patterns formed since childhood and relationship experiences play a role.",
+      "line4": "Check how you react in 12 situations and you'll see your level of psychological defense.",
+      "line5": "Measure my gaslighting defense power 🛡️ Start now"
+    },
+    "ui": {
+      "startTest": "Start defense power test",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "Browse other tests",
+      "goToTest": "Take the test",
+      "adsenseTitle": "AdSense ad area (My Gaslighting Defense Power)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "defenseLevel": "Defense level",
+      "patterns": "Current patterns",
+      "strength": "Strengths",
+      "needs": "What you need most right now",
+      "caution": "Watch out for",
+      "expertNote": "Professional support"
+    },
+    "shareMessages": {
+      "default": "Gaslighting defense power test: {type} → What's your level? Tag a friend",
+      "kakao": "Gaslighting defense power test: {type} → What's your level? Tag a friend",
+      "wechat": "Gaslighting defense power test: {type} → What's your level? Tag a friend",
+      "whatsapp": "Gaslighting defense power test: {type} → What's your level? Tag a friend",
+      "telegram": "Gaslighting defense power test: {type} → What's your level? Tag a friend",
+      "line": "Gaslighting defense power test: {type} → What's your level? Tag a friend",
+      "startDefault": "My gaslighting defense power 🛡️ Do you waver at \"You heard it wrong\"? What level am I?",
+      "startKakao": "My gaslighting defense power 🛡️ Do you waver at \"You heard it wrong\"? What level am I?",
+      "startWechat": "My gaslighting defense power 🛡️ Do you waver at \"You heard it wrong\"? What level am I?",
+      "startWhatsapp": "My gaslighting defense power 🛡️ Do you waver at \"You heard it wrong\"? What level am I?",
+      "startTelegram": "My gaslighting defense power 🛡️ Do you waver at \"You heard it wrong\"? What level am I?",
+      "startLine": "My gaslighting defense power 🛡️ Do you waver at \"You heard it wrong\"? What level am I?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Share feature is not available.",
+      "wechatCopy": "Link copied! Paste and share in WeChat.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",
