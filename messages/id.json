@@ -9907,6 +9907,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3LoveVillainIndexTest": {
+    "startMessage": {
+      "line1": "Apakah aku orang baik saat pacaran?",
+      "line2": "Mungkin kebanyakan orang berpikir \"iya\". Tapi kalau jujur menengok ke belakang, bukankah ada perilaku yang tanpa sadar menyusahkan pasangan?",
+      "line3": "Read doang tanpa balas, bersikap dingin tanpa menjelaskan alasan saat suasana hati buruk, bilang \"nggak apa-apa\" padahal sebenarnya apa-apa. Tanpa niat jahat, tapi hasilnya merepotkan.",
+      "line4": "Tes ini mendiagnosis dengan jujur perilaku penjahat cinta bawah sadarmu. Boleh dikerjakan sendiri, atau bagikan ke grup chat untuk saling membongkar.",
+      "line5": "Ukur indeks penjahat cintaku 😈 Mulai dengan jujur",
+      "note": "※ Semakin jujur menjawab, semakin akurat. Tidak ada yang melihat."
+    },
+    "ui": {
+      "startTest": "Mulai Ukur Indeks Penjahat",
+      "shareWithFriends": "Coba Bersama Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Indeks 'Penjahat Cinta'-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "villainLevel": "Level Penjahat Cinta"
+    },
+    "shareMessages": {
+      "default": "Tes Indeks Penjahat Cinta: {type} → Kamu dapat berapa poin? Ayo perang pengakuan di grup chat",
+      "kakao": "Tes Indeks Penjahat Cinta: {type} → Kamu dapat berapa poin? Ayo perang pengakuan di grup chat",
+      "wechat": "Tes Indeks Penjahat Cinta: {type} → Kamu dapat berapa poin? Ayo perang pengakuan di grup chat",
+      "whatsapp": "Tes Indeks Penjahat Cinta: {type} → Kamu dapat berapa poin? Ayo perang pengakuan di grup chat",
+      "telegram": "Tes Indeks Penjahat Cinta: {type} → Kamu dapat berapa poin? Ayo perang pengakuan di grup chat",
+      "line": "Tes Indeks Penjahat Cinta: {type} → Kamu dapat berapa poin? Ayo perang pengakuan di grup chat",
+      "startDefault": "Ukur Indeks 'Penjahat Cinta'-ku 😈 Beneran aku orang baik saat pacaran? Gas perang pengakuan di grup chat",
+      "startKakao": "Ukur Indeks 'Penjahat Cinta'-ku 😈 Beneran aku orang baik saat pacaran? Gas perang pengakuan di grup chat",
+      "startWechat": "Ukur Indeks 'Penjahat Cinta'-ku 😈 Beneran aku orang baik saat pacaran? Gas perang pengakuan di grup chat",
+      "startWhatsapp": "Ukur Indeks 'Penjahat Cinta'-ku 😈 Beneran aku orang baik saat pacaran? Gas perang pengakuan di grup chat",
+      "startTelegram": "Ukur Indeks 'Penjahat Cinta'-ku 😈 Beneran aku orang baik saat pacaran? Gas perang pengakuan di grup chat",
+      "startLine": "Ukur Indeks 'Penjahat Cinta'-ku 😈 Beneran aku orang baik saat pacaran? Gas perang pengakuan di grup chat"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

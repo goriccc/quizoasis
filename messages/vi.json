@@ -9907,6 +9907,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test hot gần đây"
     }
   },
+  "phase3LoveVillainIndexTest": {
+    "startMessage": {
+      "line1": "Khi yêu, tôi có phải người tốt không?",
+      "line2": "Có lẽ hầu hết mọi người đều nghĩ là \"có\". Nhưng thành thật nhìn lại, chẳng phải đã có những hành động vô thức khiến đối phương mệt mỏi sao?",
+      "line3": "Đã đọc mà không rep, lúc tâm trạng xấu thì lạnh lùng không nói lý do, miệng nói ổn mà thực ra không ổn. Không có ý xấu nhưng kết quả lại là những hành động gây mệt mỏi.",
+      "line4": "Bài test này chẩn đoán thẳng thắn những hành vi phản diện tình yêu vô thức của bạn. Có thể làm một mình, hoặc chia sẻ vào nhóm chat để bóc phốt lẫn nhau.",
+      "line5": "Đo chỉ số phản diện tình yêu của tôi 😈 Bắt đầu thành thật",
+      "note": "※ Trả lời càng thành thật càng chính xác. Không ai nhìn thấy đâu."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo chỉ số phản diện",
+      "shareWithFriends": "Cùng làm với bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chỉ số 'phản diện tình yêu' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "villainLevel": "Cấp độ phản diện tình yêu"
+    },
+    "shareMessages": {
+      "default": "Test chỉ số phản diện tình yêu: {type} → Bạn được mấy điểm? Cùng bóc phốt trong nhóm chat nào",
+      "kakao": "Test chỉ số phản diện tình yêu: {type} → Bạn được mấy điểm? Cùng bóc phốt trong nhóm chat nào",
+      "wechat": "Test chỉ số phản diện tình yêu: {type} → Bạn được mấy điểm? Cùng bóc phốt trong nhóm chat nào",
+      "whatsapp": "Test chỉ số phản diện tình yêu: {type} → Bạn được mấy điểm? Cùng bóc phốt trong nhóm chat nào",
+      "telegram": "Test chỉ số phản diện tình yêu: {type} → Bạn được mấy điểm? Cùng bóc phốt trong nhóm chat nào",
+      "line": "Test chỉ số phản diện tình yêu: {type} → Bạn được mấy điểm? Cùng bóc phốt trong nhóm chat nào",
+      "startDefault": "Đo chỉ số 'phản diện tình yêu' của tôi 😈 Khi yêu tôi có phải người tốt không? Vào nhóm chat bóc phốt thôi",
+      "startKakao": "Đo chỉ số 'phản diện tình yêu' của tôi 😈 Khi yêu tôi có phải người tốt không? Vào nhóm chat bóc phốt thôi",
+      "startWechat": "Đo chỉ số 'phản diện tình yêu' của tôi 😈 Khi yêu tôi có phải người tốt không? Vào nhóm chat bóc phốt thôi",
+      "startWhatsapp": "Đo chỉ số 'phản diện tình yêu' của tôi 😈 Khi yêu tôi có phải người tốt không? Vào nhóm chat bóc phốt thôi",
+      "startTelegram": "Đo chỉ số 'phản diện tình yêu' của tôi 😈 Khi yêu tôi có phải người tốt không? Vào nhóm chat bóc phốt thôi",
+      "startLine": "Đo chỉ số 'phản diện tình yêu' của tôi 😈 Khi yêu tôi có phải người tốt không? Vào nhóm chat bóc phốt thôi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot gần đây"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

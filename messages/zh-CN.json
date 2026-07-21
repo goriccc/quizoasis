@@ -9907,6 +9907,60 @@
       "popularTestsTop5": "🔥 近期热门测试推荐TOP5"
     }
   },
+  "phase3LoveVillainIndexTest": {
+    "startMessage": {
+      "line1": "我在恋爱时是个好人吗？",
+      "line2": "大概大多数人都会觉得\"是\"。但诚实回顾一下，是不是有过无意识中让对方难受的行为呢？",
+      "line3": "已读不回、心情不好时不说原因就变冷淡、嘴上说没事其实有事。没有恶意，但结果上给对方添堵的行为。",
+      "line4": "这个测试会诚实诊断你无意识中的恋爱反派行为。可以自己做，也可以分享到群聊来一场互相爆料大战。",
+      "line5": "测测我的恋爱反派指数 😈 诚实开始",
+      "note": "※ 回答越诚实越准确。没有人在看。"
+    },
+    "ui": {
+      "startTest": "开始测量反派指数",
+      "shareWithFriends": "和朋友一起做",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区域（我的「恋爱反派」指数）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "villainLevel": "恋爱反派等级"
+    },
+    "shareMessages": {
+      "default": "恋爱反派指数测试: {type} → 你能得几分？来群聊爆料大战吧",
+      "kakao": "恋爱反派指数测试: {type} → 你能得几分？来群聊爆料大战吧",
+      "wechat": "恋爱反派指数测试: {type} → 你能得几分？来群聊爆料大战吧",
+      "whatsapp": "恋爱反派指数测试: {type} → 你能得几分？来群聊爆料大战吧",
+      "telegram": "恋爱反派指数测试: {type} → 你能得几分？来群聊爆料大战吧",
+      "line": "恋爱反派指数测试: {type} → 你能得几分？来群聊爆料大战吧",
+      "startDefault": "测量我的「恋爱反派」指数 😈 我恋爱时真的是好人吗？去群聊开爆料大战吧",
+      "startKakao": "测量我的「恋爱反派」指数 😈 我恋爱时真的是好人吗？去群聊开爆料大战吧",
+      "startWechat": "测量我的「恋爱反派」指数 😈 我恋爱时真的是好人吗？去群聊开爆料大战吧",
+      "startWhatsapp": "测量我的「恋爱反派」指数 😈 我恋爱时真的是好人吗？去群聊开爆料大战吧",
+      "startTelegram": "测量我的「恋爱反派」指数 😈 我恋爱时真的是好人吗？去群聊开爆料大战吧",
+      "startLine": "测量我的「恋爱反派」指数 😈 我恋爱时真的是好人吗？去群聊开爆料大战吧"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐TOP5",
+      "popularTestsTop5": "🔥 近期热门测试推荐TOP5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "热门",

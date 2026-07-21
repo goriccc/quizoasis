@@ -9916,6 +9916,60 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3LoveVillainIndexTest": {
+    "startMessage": {
+      "line1": "Am I a good person when I'm in a relationship?",
+      "line2": "Most people would say \"yes.\" But looking back honestly, haven't there been behaviors that unconsciously made things hard for your partner?",
+      "line3": "Leaving messages on read, going cold without explaining why when you're upset, saying \"I'm fine\" when you're actually not. No bad intentions, but behaviors that end up being a burden.",
+      "line4": "This test honestly diagnoses your unconscious love-villain behaviors. Do it alone, or share it in your group chat and expose each other.",
+      "line5": "Measure my Love Villain Index 😈 Start honestly",
+      "note": "※ The more honest you are, the more accurate it is. No one is watching."
+    },
+    "ui": {
+      "startTest": "Start Measuring Villain Index",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My 'Love Villain' Index)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "villainLevel": "Love Villain Level"
+    },
+    "shareMessages": {
+      "default": "Love Villain Index Test: {type} → What's your score? Let's have a group chat exposure battle",
+      "kakao": "Love Villain Index Test: {type} → What's your score? Let's have a group chat exposure battle",
+      "wechat": "Love Villain Index Test: {type} → What's your score? Let's have a group chat exposure battle",
+      "whatsapp": "Love Villain Index Test: {type} → What's your score? Let's have a group chat exposure battle",
+      "telegram": "Love Villain Index Test: {type} → What's your score? Let's have a group chat exposure battle",
+      "line": "Love Villain Index Test: {type} → What's your score? Let's have a group chat exposure battle",
+      "startDefault": "Measuring my 'Love Villain' Index 😈 Am I really a good partner? Let's take this to the group chat",
+      "startKakao": "Measuring my 'Love Villain' Index 😈 Am I really a good partner? Let's take this to the group chat",
+      "startWechat": "Measuring my 'Love Villain' Index 😈 Am I really a good partner? Let's take this to the group chat",
+      "startWhatsapp": "Measuring my 'Love Villain' Index 😈 Am I really a good partner? Let's take this to the group chat",
+      "startTelegram": "Measuring my 'Love Villain' Index 😈 Am I really a good partner? Let's take this to the group chat",
+      "startLine": "Measuring my 'Love Villain' Index 😈 Am I really a good partner? Let's take this to the group chat"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

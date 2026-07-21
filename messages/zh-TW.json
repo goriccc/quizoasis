@@ -9376,6 +9376,60 @@
       "popularTestsTop5": "🔥 近期熱門測試推薦TOP5"
     }
   },
+  "phase3LoveVillainIndexTest": {
+    "startMessage": {
+      "line1": "我在戀愛時是個好人嗎？",
+      "line2": "大概大多數人都會覺得「是」。但誠實回顧一下，是不是有過無意識中讓對方難受的行為呢？",
+      "line3": "已讀不回、心情不好時不說原因就變冷淡、嘴上說沒事其實有事。沒有惡意，但結果上給對方添堵的行為。",
+      "line4": "這個測試會誠實診斷你無意識中的戀愛反派行為。可以自己做，也可以分享到群組來一場互相爆料大戰。",
+      "line5": "測測我的戀愛反派指數 😈 誠實開始",
+      "note": "※ 回答越誠實越準確。沒有人在看。"
+    },
+    "ui": {
+      "startTest": "開始測量反派指數",
+      "shareWithFriends": "和朋友一起做",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再做一次",
+      "otherTests": "查看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區域（我的「戀愛反派」指數）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "villainLevel": "戀愛反派等級"
+    },
+    "shareMessages": {
+      "default": "戀愛反派指數測試: {type} → 你能得幾分？來群組爆料大戰吧",
+      "kakao": "戀愛反派指數測試: {type} → 你能得幾分？來群組爆料大戰吧",
+      "wechat": "戀愛反派指數測試: {type} → 你能得幾分？來群組爆料大戰吧",
+      "whatsapp": "戀愛反派指數測試: {type} → 你能得幾分？來群組爆料大戰吧",
+      "telegram": "戀愛反派指數測試: {type} → 你能得幾分？來群組爆料大戰吧",
+      "line": "戀愛反派指數測試: {type} → 你能得幾分？來群組爆料大戰吧",
+      "startDefault": "測量我的「戀愛反派」指數 😈 我戀愛時真的是好人嗎？去群組開爆料大戰吧",
+      "startKakao": "測量我的「戀愛反派」指數 😈 我戀愛時真的是好人嗎？去群組開爆料大戰吧",
+      "startWechat": "測量我的「戀愛反派」指數 😈 我戀愛時真的是好人嗎？去群組開爆料大戰吧",
+      "startWhatsapp": "測量我的「戀愛反派」指數 😈 我戀愛時真的是好人嗎？去群組開爆料大戰吧",
+      "startTelegram": "測量我的「戀愛反派」指數 😈 我戀愛時真的是好人嗎？去群組開爆料大戰吧",
+      "startLine": "測量我的「戀愛反派」指數 😈 我戀愛時真的是好人嗎？去群組開爆料大戰吧"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦TOP5",
+      "popularTestsTop5": "🔥 近期熱門測試推薦TOP5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",
