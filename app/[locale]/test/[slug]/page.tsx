@@ -140,6 +140,10 @@ import {
   phase3LazinessMaxLevelResults,
 } from '@/lib/phase3LazinessMaxLevelData';
 import {
+  phase3MukbangStyleDiagnosisQuestions,
+  phase3MukbangStyleDiagnosisResults,
+} from '@/lib/phase3MukbangStyleDiagnosisData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -583,6 +587,10 @@ const Phase3AiEraJobSurvivalScoreTestClient = dynamic(
 );
 const Phase3LazinessMaxLevelTestClient = dynamic(
   () => import('@/components/Phase3LazinessMaxLevelTestClient'),
+  { ssr: false }
+);
+const Phase3MukbangStyleDiagnosisTestClient = dynamic(
+  () => import('@/components/Phase3MukbangStyleDiagnosisTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1184,6 +1192,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-mukbang-style-diagnosis') {
+    test = {
+      slug: 'phase3-mukbang-style-diagnosis',
+      title: {
+        ko: "나의 '먹방' 스타일 진단",
+        en: "Diagnosing My 'Mukbang' Style",
+        ja: '私の『食べっぷり』スタイル診断',
+        'zh-CN': '诊断我的「干饭」风格',
+        'zh-TW': '診斷我的「吃播」風格',
+        vi: 'Chẩn đoán phong cách ăn uống của tôi',
+        id: "Diagnosis Gaya 'Makan' Milikku",
+      },
+      description: {
+        ko: '12가지 이미지 선택으로 나의 진짜 먹방 스타일을 진단합니다.',
+        en: '12 image choices diagnose your true mukbang style.',
+        ja: '12枚の画像選択で、あなたの本当の『食べっぷり』スタイルを診断します。',
+        'zh-CN': '通过12张图片选择，诊断出你真正的干饭风格。',
+        'zh-TW': '透過12張圖片選擇，診斷出你真正的吃播風格。',
+        vi: 'Chọn 12 hình ảnh để chẩn đoán phong cách ăn uống thật của bạn.',
+        id: 'Pilih 12 gambar untuk mendiagnosis gaya makanmu yang sesungguhnya.',
+      },
+      thumbnail: 'p3_test_mukbang_style_diagnosis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['먹방', '찍먹부먹', '음식취향'],
+        en: ['mukbang', 'food', 'taste'],
+        ja: ['食べっぷり', 'つけダレかけダレ', '食の好み'],
+        'zh-CN': ['干饭', '蘸浇之争', '饮食口味'],
+        'zh-TW': ['吃播', '沾淋之爭', '飲食口味'],
+        vi: ['ăn uống', 'chấm hay rưới', 'gu ẩm thực'],
+        id: ['makan', 'cocol vs siram', 'selera makanan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5764,6 +5809,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-mukbang-style-diagnosis') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-mukbang-style-diagnosis',
+      title: {
+        ko: "나의 '먹방' 스타일 진단",
+        en: "Diagnosing My 'Mukbang' Style",
+        ja: '私の『食べっぷり』スタイル診断',
+        'zh-CN': '诊断我的「干饭」风格',
+        'zh-TW': '診斷我的「吃播」風格',
+        vi: 'Chẩn đoán phong cách ăn uống của tôi',
+        id: "Diagnosis Gaya 'Makan' Milikku",
+      },
+      description: {
+        ko: '12가지 이미지 선택으로 나의 진짜 먹방 스타일을 진단합니다.',
+        en: '12 image choices diagnose your true mukbang style.',
+        ja: '12枚の画像選択で、あなたの本当の『食べっぷり』スタイルを診断します。',
+        'zh-CN': '通过12张图片选择，诊断出你真正的干饭风格。',
+        'zh-TW': '透過12張圖片選擇，診斷出你真正的吃播風格。',
+        vi: 'Chọn 12 hình ảnh để chẩn đoán phong cách ăn uống thật của bạn.',
+        id: 'Pilih 12 gambar untuk mendiagnosis gaya makanmu yang sesungguhnya.',
+      },
+      thumbnail: 'p3_test_mukbang_style_diagnosis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['먹방', '찍먹부먹', '음식취향'],
+        en: ['mukbang', 'food', 'taste'],
+        ja: ['食べっぷり', 'つけダレかけダレ', '食の好み'],
+        'zh-CN': ['干饭', '蘸浇之争', '饮食口味'],
+        'zh-TW': ['吃播', '沾淋之爭', '飲食口味'],
+        vi: ['ăn uống', 'chấm hay rưới', 'gu ẩm thực'],
+        id: ['makan', 'cocol vs siram', 'selera makanan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3MukbangStyleDiagnosisTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3MukbangStyleDiagnosisQuestions}
+          results={phase3MukbangStyleDiagnosisResults}
+          questionCount={phase3MukbangStyleDiagnosisQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

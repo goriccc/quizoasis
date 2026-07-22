@@ -10375,6 +10375,66 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3MukbangStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "찍먹입니까, 부먹입니까?",
+      "line2": "이 질문 하나로 논쟁이 시작됩니다. 찍먹·부먹부터 순한맛·불닭, 혼밥·같이 먹기, 소식·대식까지. 음식 앞에서 드러나는 성향 차이는 생각보다 깊습니다.",
+      "line3": "음식을 먹는 방식에는 그 사람의 모든 것이 담겨있습니다. 섬세함, 대담함, 취향, 고집, 사교성까지.",
+      "line4": "12가지 이미지 선택으로 나의 진짜 먹방 스타일을 진단합니다. 결과를 공유하면 커뮤니티 논쟁이 시작될 수 있습니다.",
+      "line5": "내 먹방 스타일 진단하기 🍽️ 직관으로 시작"
+    },
+    "ui": {
+      "startTest": "먹방 스타일 진단 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나의 '먹방' 스타일 진단)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "questionHint": "더 끌리거나 나와 더 가까운 이미지를 직관적으로 선택하세요.",
+      "mukbangStyle": "🍽️ 먹방 스타일",
+      "mukbangKeywords": "🔑 먹방 키워드",
+      "eatingTogether": "👥 같이 먹을 때 특징",
+      "foodStrength": "✨ 음식 취향 강점",
+      "avoidEatingWith": "🚫 같이 먹으면 안 되는 유형",
+      "communityStance": "💬 커뮤니티 논쟁 포지션",
+      "oneLiner": "💬 한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 '먹방' 스타일 진단 🍽️ 찍먹 vs 부먹, 너는 어떤 스타일?",
+      "startKakao": "나의 '먹방' 스타일 진단 🍽️ 찍먹 vs 부먹, 너는 어떤 스타일?",
+      "startWechat": "나의 '먹방' 스타일 진단 🍽️ 찍먹 vs 부먹, 너는 어떤 스타일?",
+      "startWhatsapp": "나의 '먹방' 스타일 진단 🍽️ 찍먹 vs 부먹, 너는 어떤 스타일?",
+      "startTelegram": "나의 '먹방' 스타일 진단 🍽️ 찍먹 vs 부먹, 너는 어떤 스타일?",
+      "startLine": "나의 '먹방' 스타일 진단 🍽️ 찍먹 vs 부먹, 너는 어떤 스타일?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

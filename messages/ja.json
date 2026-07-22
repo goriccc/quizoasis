@@ -10225,6 +10225,66 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3MukbangStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "つけダレ派？かけダレ派？",
+      "line2": "この質問一つで論争が始まります。つけダレ派・かけダレ派から、マイルド派・激辛派、一人飯・みんなで食べる派、少食・大食まで。食べ物を前にして現れる性格の違いは、思っているより深いものです。",
+      "line3": "食べ方には、その人のすべてが表れます。繊細さ、大胆さ、好み、こだわり、社交性まで。",
+      "line4": "12枚の画像選択で、あなたの本当の『食べっぷり』スタイルを診断します。結果をシェアすると、コミュニティで論争が起きるかもしれません。",
+      "line5": "私の食べっぷりスタイルを診断する 🍽️ 直感でスタート"
+    },
+    "ui": {
+      "startTest": "食べっぷりスタイル診断スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私の『食べっぷり』スタイル診断）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "questionHint": "より惹かれる、または自分に近いと感じる画像を直感的に選んでください。",
+      "mukbangStyle": "🍽️ 食べっぷりスタイル",
+      "mukbangKeywords": "🔑 食べっぷりキーワード",
+      "eatingTogether": "👥 一緒に食べる時の特徴",
+      "foodStrength": "✨ 食の好みの強み",
+      "avoidEatingWith": "🚫 一緒に食事すると相性が悪いタイプ",
+      "communityStance": "💬 コミュニティ論争ポジション",
+      "oneLiner": "💬 一言コメント"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の『食べっぷり』スタイル診断 🍽️ つけダレ派 vs かけダレ派、あなたはどっち？",
+      "startKakao": "私の『食べっぷり』スタイル診断 🍽️ つけダレ派 vs かけダレ派、あなたはどっち？",
+      "startWechat": "私の『食べっぷり』スタイル診断 🍽️ つけダレ派 vs かけダレ派、あなたはどっち？",
+      "startWhatsapp": "私の『食べっぷり』スタイル診断 🍽️ つけダレ派 vs かけダレ派、あなたはどっち？",
+      "startTelegram": "私の『食べっぷり』スタイル診断 🍽️ つけダレ派 vs かけダレ派、あなたはどっち？",
+      "startLine": "私の『食べっぷり』スタイル診断 🍽️ つけダレ派 vs かけダレ派、あなたはどっち？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

@@ -10246,6 +10246,66 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3MukbangStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "Sauce on the side, or poured all over?",
+      "line2": "This one question is enough to start a debate. From dipping vs. drenching, mild vs. fire-spicy, eating alone vs. eating together, to small portions vs. big portions — the personality differences that show up at the table go deeper than you'd think.",
+      "line3": "The way someone eats reveals everything about them: their delicacy, boldness, taste, stubbornness, even their sociability.",
+      "line4": "12 image choices diagnose your true mukbang style. Sharing your result might just start a debate in your group chat.",
+      "line5": "Diagnose My Mukbang Style 🍽️ Start with Your Gut"
+    },
+    "ui": {
+      "startTest": "Start Mukbang Style Diagnosis",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My 'Mukbang' Style Diagnosis)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "questionHint": "Go with your gut — pick whichever image appeals to you more or feels closer to you.",
+      "mukbangStyle": "🍽️ Mukbang Style",
+      "mukbangKeywords": "🔑 Mukbang Keywords",
+      "eatingTogether": "👥 Traits When Eating Together",
+      "foodStrength": "✨ Food Taste Strengths",
+      "avoidEatingWith": "🚫 Types You Shouldn't Eat With",
+      "communityStance": "💬 Community Debate Stance",
+      "oneLiner": "💬 One-Line Verdict"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My 'Mukbang' Style Diagnosis 🍽️ Sauce on the side or poured over — what's your style?",
+      "startKakao": "My 'Mukbang' Style Diagnosis 🍽️ Sauce on the side or poured over — what's your style?",
+      "startWechat": "My 'Mukbang' Style Diagnosis 🍽️ Sauce on the side or poured over — what's your style?",
+      "startWhatsapp": "My 'Mukbang' Style Diagnosis 🍽️ Sauce on the side or poured over — what's your style?",
+      "startTelegram": "My 'Mukbang' Style Diagnosis 🍽️ Sauce on the side or poured over — what's your style?",
+      "startLine": "My 'Mukbang' Style Diagnosis 🍽️ Sauce on the side or poured over — what's your style?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

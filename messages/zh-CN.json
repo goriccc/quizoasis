@@ -10237,6 +10237,66 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3MukbangStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "蘸着吃，还是浇着吃？",
+      "line2": "光是这一个问题就能引发争论。从蘸着吃・浇着吃，到清淡口味・超辣火鸡面，一个人吃・和大家一起吃，小鸟胃・大胃王，面对食物时展现出的性格差异，比想象中更深。",
+      "line3": "吃东西的方式里，藏着一个人的全部：细腻、大胆、口味、固执，甚至社交能力。",
+      "line4": "通过12张图片选择，诊断出你真正的干饭风格。分享结果可能会在社群里引发一场争论。",
+      "line5": "诊断我的干饭风格 🍽️ 靠直觉开始"
+    },
+    "ui": {
+      "startTest": "开始诊断干饭风格",
+      "shareWithFriends": "和朋友一起测",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "看看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区（测测我的「干饭」风格诊断）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "questionHint": "凭直觉选择更吸引你、或者更接近你的图片。",
+      "mukbangStyle": "🍽️ 干饭风格",
+      "mukbangKeywords": "🔑 干饭关键词",
+      "eatingTogether": "👥 和别人一起吃饭时的特点",
+      "foodStrength": "✨ 饮食口味优势",
+      "avoidEatingWith": "🚫 不适合一起吃饭的类型",
+      "communityStance": "💬 社群论战立场",
+      "oneLiner": "💬 一句话点评"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "测测我的「干饭」风格 🍽️ 蘸着吃 vs 浇着吃，你是哪一种？",
+      "startKakao": "测测我的「干饭」风格 🍽️ 蘸着吃 vs 浇着吃，你是哪一种？",
+      "startWechat": "测测我的「干饭」风格 🍽️ 蘸着吃 vs 浇着吃，你是哪一种？",
+      "startWhatsapp": "测测我的「干饭」风格 🍽️ 蘸着吃 vs 浇着吃，你是哪一种？",
+      "startTelegram": "测测我的「干饭」风格 🍽️ 蘸着吃 vs 浇着吃，你是哪一种？",
+      "startLine": "测测我的「干饭」风格 🍽️ 蘸着吃 vs 浇着吃，你是哪一种？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "热门",

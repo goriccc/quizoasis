@@ -10237,6 +10237,66 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3MukbangStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "Bạn là kiểu chấm nước sốt, hay rưới nước sốt?",
+      "line2": "Chỉ một câu hỏi này cũng đủ để bắt đầu tranh luận. Từ chấm sốt hay rưới sốt, vị nhẹ hay siêu cay, ăn một mình hay ăn cùng người khác, ăn ít hay ăn nhiều — sự khác biệt tính cách thể hiện qua cách ăn sâu sắc hơn bạn nghĩ.",
+      "line3": "Cách một người ăn uống chứa đựng tất cả về họ: sự tinh tế, táo bạo, gu ẩm thực, sự cứng đầu, và cả khả năng giao tiếp xã hội.",
+      "line4": "Chọn 12 hình ảnh để chẩn đoán phong cách ăn uống thật của bạn. Chia sẻ kết quả có thể sẽ khơi mào một cuộc tranh luận trong cộng đồng.",
+      "line5": "Chẩn đoán phong cách ăn uống của tôi 🍽️ Bắt đầu bằng trực giác"
+    },
+    "ui": {
+      "startTest": "Bắt đầu chẩn đoán phong cách ăn uống",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Chẩn đoán phong cách 'ăn uống' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "questionHint": "Hãy chọn theo trực giác hình ảnh nào cuốn hút bạn hơn hoặc gần với bạn hơn.",
+      "mukbangStyle": "🍽️ Phong cách ăn uống",
+      "mukbangKeywords": "🔑 Từ khóa phong cách ăn uống",
+      "eatingTogether": "👥 Đặc điểm khi ăn cùng người khác",
+      "foodStrength": "✨ Điểm mạnh về gu ẩm thực",
+      "avoidEatingWith": "🚫 Kiểu người không nên ăn cùng",
+      "communityStance": "💬 Vị trí trong tranh luận cộng đồng",
+      "oneLiner": "💬 Nhận xét một câu"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Chẩn đoán phong cách ăn uống của tôi 🍽️ Chấm sốt hay rưới sốt, bạn là kiểu nào?",
+      "startKakao": "Chẩn đoán phong cách ăn uống của tôi 🍽️ Chấm sốt hay rưới sốt, bạn là kiểu nào?",
+      "startWechat": "Chẩn đoán phong cách ăn uống của tôi 🍽️ Chấm sốt hay rưới sốt, bạn là kiểu nào?",
+      "startWhatsapp": "Chẩn đoán phong cách ăn uống của tôi 🍽️ Chấm sốt hay rưới sốt, bạn là kiểu nào?",
+      "startTelegram": "Chẩn đoán phong cách ăn uống của tôi 🍽️ Chấm sốt hay rưới sốt, bạn là kiểu nào?",
+      "startLine": "Chẩn đoán phong cách ăn uống của tôi 🍽️ Chấm sốt hay rưới sốt, bạn là kiểu nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

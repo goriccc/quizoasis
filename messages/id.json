@@ -10237,6 +10237,66 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3MukbangStyleDiagnosisTest": {
+    "startMessage": {
+      "line1": "Kamu tipe cocol saus, atau siram saus?",
+      "line2": "Satu pertanyaan ini saja bisa memulai perdebatan. Dari cocol vs siram saus, rasa ringan vs superpedas, makan sendiri vs makan bareng, porsi kecil vs porsi besar. Perbedaan karakter yang muncul di depan makanan lebih dalam dari yang kamu kira.",
+      "line3": "Cara seseorang makan menyimpan semuanya tentang dirinya: kehalusan, keberanian, selera, keteguhan, hingga jiwa sosialnya.",
+      "line4": "Pilih 12 gambar untuk mendiagnosis gaya makanmu yang sesungguhnya. Membagikan hasilnya bisa memicu perdebatan di komunitas.",
+      "line5": "Diagnosis Gaya Makanku 🍽️ Mulai dengan Intuisi"
+    },
+    "ui": {
+      "startTest": "Mulai Diagnosis Gaya Makan",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Diagnosis Gaya 'Makan' Milikku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "questionHint": "Pilih secara intuitif gambar mana yang lebih menarik atau lebih terasa seperti dirimu.",
+      "mukbangStyle": "🍽️ Gaya Makan",
+      "mukbangKeywords": "🔑 Kata Kunci Gaya Makan",
+      "eatingTogether": "👥 Ciri Saat Makan Bersama",
+      "foodStrength": "✨ Kekuatan Selera Makanan",
+      "avoidEatingWith": "🚫 Tipe yang Sebaiknya Dihindari Saat Makan Bareng",
+      "communityStance": "💬 Posisi dalam Perdebatan Komunitas",
+      "oneLiner": "💬 Komentar Singkat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Diagnosis Gaya Makanku 🍽️ Cocol saus atau siram saus, gaya kamu yang mana?",
+      "startKakao": "Diagnosis Gaya Makanku 🍽️ Cocol saus atau siram saus, gaya kamu yang mana?",
+      "startWechat": "Diagnosis Gaya Makanku 🍽️ Cocol saus atau siram saus, gaya kamu yang mana?",
+      "startWhatsapp": "Diagnosis Gaya Makanku 🍽️ Cocol saus atau siram saus, gaya kamu yang mana?",
+      "startTelegram": "Diagnosis Gaya Makanku 🍽️ Cocol saus atau siram saus, gaya kamu yang mana?",
+      "startLine": "Diagnosis Gaya Makanku 🍽️ Cocol saus atau siram saus, gaya kamu yang mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",
