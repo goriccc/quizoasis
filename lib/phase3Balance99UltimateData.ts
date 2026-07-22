@@ -521,8 +521,6 @@ export const phase3Balance99UltimateQuestions: Phase3Balance99UltimateQuestion[]
       opt({"ko": "상대방이 더 좋아하는 연애", "en": "A relationship where they like you more", "ja": "相手の方が好きな恋愛", "zh-CN": "对方更喜欢你的恋爱", "zh-TW": "對方更喜歡你的戀愛", "vi": "Yêu mà đối phương thích mình nhiều hơn", "id": "Hubungan di mana pasangan lebih suka"}, 1),
     ],
   },
-,
-
   {
     id: 51,
     question: STEM.extreme,
