@@ -10411,6 +10411,73 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3Balance99UltimateTest": {
+    "startMessage": {
+      "line1": "Trong 99 câu, không có câu nào dễ.",
+      "line2": "Ghét cả hai nhưng phải chọn một. Thích cả hai nhưng chỉ được giữ một. Càng nghĩ càng rối, càng chọn càng khó chịu.",
+      "line3": "Đó chính là game này. Sau 99 câu bạn sẽ thấy xu hướng lựa chọn của mình. Làm cùng bạn thì khi chọn khác nhau chắc chắn sẽ hét \"Sao lại chọn cái đó?!\"",
+      "line4": "Chơi một mình cũng được, đấu 1:1 với bạn cũng được.",
+      "line5": "Bắt đầu Balance 99 ⚡ Những câu hỏi không thể chọn được",
+      "note": "※ Dù ghét cả hai vẫn phải chọn một. Hãy chọn cái đỡ tệ hơn."
+    },
+    "ui": {
+      "startTest": "Bắt đầu Balance 99",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Balance 99 khó nhằn nhất)",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "selectionTendency": "🎯 Xu hướng lựa chọn",
+      "choiceCountInfo": "📊 Số lần chọn",
+      "choiceCountLive": "Chọn A: {aCount} · Chọn B: {bCount}",
+      "optionALabel": "Chọn A",
+      "optionBLabel": "Chọn B",
+      "friendCompare": "👥 So sánh với bạn",
+      "friendChallengeBanner": "Bạn vừa nhận lời mời đấu Balance! Làm hết 99 câu và xem hạng khớp nhé.",
+      "duelResultTitle": "Kết quả đấu với bạn",
+      "sameCountLabel": "Cùng lựa chọn {sameCount}/99",
+      "personalResultTitle": "👤 Kết quả loại cá nhân của tôi",
+      "duelSectionTitle": "🎯 Đấu 1:1 với bạn",
+      "duelButton": "Đấu 1:1 với bạn",
+      "duelButtonHint": "Sao chép link chứa câu trả lời của bạn và gửi đi. Khi bạn ấy làm xong qua link đó, sẽ so sánh ngay bao nhiêu lựa chọn trùng!"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance 99 khó nhằn nhất ⚡ 99 câu hỏi không thể chọn",
+      "startKakao": "Balance 99 khó nhằn nhất ⚡ 99 câu hỏi không thể chọn",
+      "startWechat": "Balance 99 khó nhằn nhất ⚡ 99 câu hỏi không thể chọn",
+      "startWhatsapp": "Balance 99 khó nhằn nhất ⚡ 99 câu hỏi không thể chọn",
+      "startTelegram": "Balance 99 khó nhằn nhất ⚡ 99 câu hỏi không thể chọn",
+      "startLine": "Balance 99 khó nhằn nhất ⚡ 99 câu hỏi không thể chọn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau nhé.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk.",
+      "challengeLinkCopied": "Đã sao chép link đấu với bạn! Gửi cho bạn nhé."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3CafeWorkGradeTest": {
     "startMessage": {
       "line1": "Học hoặc làm việc ở quán cà phê, có gây khó chịu hay không?",

@@ -168,6 +168,10 @@ import {
   phase3OfficeVillainProbabilityResults,
 } from '@/lib/phase3OfficeVillainProbabilityData';
 import {
+  phase3Balance99UltimateQuestions,
+  phase3Balance99UltimateResults,
+} from '@/lib/phase3Balance99UltimateData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -639,6 +643,10 @@ const Phase3HundredBillionProbabilityTestClient = dynamic(
 );
 const Phase3OfficeVillainProbabilityTestClient = dynamic(
   () => import('@/components/Phase3OfficeVillainProbabilityTestClient'),
+  { ssr: false }
+);
+const Phase3Balance99UltimateTestClient = dynamic(
+  () => import('@/components/Phase3Balance99UltimateTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1425,6 +1433,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['職場反派', '上班族', '辦公室', '共鳴', 'Blind'],
         vi: ['phản diện công sở', 'nhân viên văn phòng', 'văn phòng', 'đồng cảm', 'Blind'],
         id: ['penjahat kantor', 'pekerja kantor', 'kantor', 'relatable', 'Blind'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-balance-99-ultimate') {
+    test = {
+      slug: 'phase3-balance-99-ultimate',
+      title: {
+        ko: "세상 까다로운 '밸런스' 99",
+        en: "The World's Pickiest Balance 99",
+        ja: "世界一むずかしい『バランス』99",
+        'zh-CN': "世上最挑剔的『平衡』99",
+        'zh-TW': "世上最挑剔的『平衡』99",
+        vi: "Balance 99 khó nhằn nhất",
+        id: "Balance 99 paling cerewet di dunia",
+      },
+      description: {
+        ko: '99개 극한 밸런스 질문으로 선택 성향을 분석하고 친구와 1:1 대결할 수 있습니다.',
+        en: 'Analyze your choice style with 99 extreme would-you-rather questions—and duel a friend 1:1.',
+        ja: '99個の極限バランス質問で選択傾向を分析し、友達と1:1対決できます。',
+        'zh-CN': '用99道极限二选一分析你的选择倾向，还能和朋友1:1对决。',
+        'zh-TW': '用99道極限二選一分析你的選擇傾向，還能和朋友1:1對決。',
+        vi: 'Phân tích xu hướng lựa chọn với 99 câu hỏi cân bằng cực đoan—và đấu 1:1 với bạn.',
+        id: 'Analisis gaya pilihanmu dengan 99 pertanyaan would-you-rather ekstrem—dan duel 1:1 dengan teman.',
+      },
+      thumbnail: 'p3_game_balance_99_ultimate.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밸런스게임', '99', '극한선택', '친구대결', '공감'],
+        en: ['would you rather', '99', 'hard choices', 'friend duel', 'compatibility'],
+        ja: ['バランスゲーム', '99', '極限選択', '友達対決', '相性'],
+        'zh-CN': ['二选一', '99', '极限选择', '朋友对决', '默契'],
+        'zh-TW': ['二選一', '99', '極限選擇', '朋友對決', '默契'],
+        vi: ['would you rather', '99', 'lựa chọn khó', 'đấu bạn', 'tương hợp'],
+        id: ['would you rather', '99', 'pilihan sulit', 'duel teman', 'kecocokan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -6354,6 +6399,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3OfficeVillainProbabilityQuestions}
           results={phase3OfficeVillainProbabilityResults}
           questionCount={phase3OfficeVillainProbabilityQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-balance-99-ultimate') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-balance-99-ultimate',
+      title: {
+        ko: "세상 까다로운 '밸런스' 99",
+        en: "The World's Pickiest Balance 99",
+        ja: "世界一むずかしい『バランス』99",
+        'zh-CN': "世上最挑剔的『平衡』99",
+        'zh-TW': "世上最挑剔的『平衡』99",
+        vi: "Balance 99 khó nhằn nhất",
+        id: "Balance 99 paling cerewet di dunia",
+      },
+      description: {
+        ko: '99개 극한 밸런스 질문으로 선택 성향을 분석하고 친구와 1:1 대결할 수 있습니다.',
+        en: 'Analyze your choice style with 99 extreme would-you-rather questions—and duel a friend 1:1.',
+        ja: '99個の極限バランス質問で選択傾向を分析し、友達と1:1対決できます。',
+        'zh-CN': '用99道极限二选一分析你的选择倾向，还能和朋友1:1对决。',
+        'zh-TW': '用99道極限二選一分析你的選擇傾向，還能和朋友1:1對決。',
+        vi: 'Phân tích xu hướng lựa chọn với 99 câu hỏi cân bằng cực đoan—và đấu 1:1 với bạn.',
+        id: 'Analisis gaya pilihanmu dengan 99 pertanyaan would-you-rather ekstrem—dan duel 1:1 dengan teman.',
+      },
+      thumbnail: 'p3_game_balance_99_ultimate.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밸런스게임', '99', '극한선택', '친구대결', '공감'],
+        en: ['would you rather', '99', 'hard choices', 'friend duel', 'compatibility'],
+        ja: ['バランスゲーム', '99', '極限選択', '友達対決', '相性'],
+        'zh-CN': ['二选一', '99', '极限选择', '朋友对决', '默契'],
+        'zh-TW': ['二選一', '99', '極限選擇', '朋友對決', '默契'],
+        vi: ['would you rather', '99', 'lựa chọn khó', 'đấu bạn', 'tương hợp'],
+        id: ['would you rather', '99', 'pilihan sulit', 'duel teman', 'kecocokan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3Balance99UltimateTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3Balance99UltimateQuestions}
+          results={phase3Balance99UltimateResults}
+          questionCount={phase3Balance99UltimateQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

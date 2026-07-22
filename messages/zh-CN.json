@@ -10411,6 +10411,73 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3Balance99UltimateTest": {
+    "startMessage": {
+      "line1": "99道题里，没有一道是简单的。",
+      "line2": "两个都讨厌，却必须选一个。两个都喜欢，却只能留一个。越想越懵，越选越别扭。",
+      "line3": "这就是这个游戏。做完99题，你会看出自己的选择倾向。和朋友一起做，选择不同时一定会喊出「你怎么选那个?!」",
+      "line4": "一个人玩也好，和朋友1:1对决也好。",
+      "line5": "平衡99对决开始 ⚡ 绝对选不出的问题来了",
+      "note": "※ 就算两个都讨厌，也必须选一个。选相对不那么讨厌的那个。"
+    },
+    "ui": {
+      "startTest": "开始平衡99",
+      "shareWithFriends": "和朋友一起玩",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "看看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区域（世上最挑剔的『平衡』99）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "selectionTendency": "🎯 选择倾向",
+      "choiceCountInfo": "📊 选择次数",
+      "choiceCountLive": "选A: {aCount}次 · 选B: {bCount}次",
+      "optionALabel": "选A",
+      "optionBLabel": "选B",
+      "friendCompare": "👥 和朋友比较",
+      "friendChallengeBanner": "朋友的平衡对决邀请到了！做完99题查看匹配等级吧。",
+      "duelResultTitle": "朋友对决结果",
+      "sameCountLabel": "相同选择 {sameCount}/99",
+      "personalResultTitle": "👤 我的个人类型结果",
+      "duelSectionTitle": "🎯 和朋友1:1对决",
+      "duelButton": "和朋友1:1对决",
+      "duelButtonHint": "复制带有你答案的链接发给朋友。朋友用链接做完后，就能立刻比较有多少选择相同！"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "世上最挑剔的『平衡』99 ⚡ 绝对选不出的99题",
+      "startKakao": "世上最挑剔的『平衡』99 ⚡ 绝对选不出的99题",
+      "startWechat": "世上最挑剔的『平衡』99 ⚡ 绝对选不出的99题",
+      "startWhatsapp": "世上最挑剔的『平衡』99 ⚡ 绝对选不出的99题",
+      "startTelegram": "世上最挑剔的『平衡』99 ⚡ 绝对选不出的99题",
+      "startLine": "世上最挑剔的『平衡』99 ⚡ 绝对选不出的99题"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时出错。",
+      "challengeLinkCopied": "朋友对决链接已复制！发给朋友吧。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐Top5",
+      "popularTestsTop5": "🔥 近期热门测试推荐Top5"
+    }
+  },
   "phase3CafeWorkGradeTest": {
     "startMessage": {
       "line1": "在咖啡馆学习或工作，到底算不算添麻烦？",

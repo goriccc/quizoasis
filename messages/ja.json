@@ -10399,6 +10399,73 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3Balance99UltimateTest": {
+    "startMessage": {
+      "line1": "99問のうち、簡単なものはひとつもありません。",
+      "line2": "どっちも嫌なのに一つを選ばなきゃいけない。どっちもいいのに一つしか持てない。考えれば考えるほどわからなくなり、選ぶほどモヤモヤします。",
+      "line3": "それがこのゲーム。99問終わると自分の選択傾向が見えます。友達とやると選び方が違って「なんでそれを選ぶの?!」が必ず出ます。",
+      "line4": "一人でもOK、友達と1:1対決でもOK。",
+      "line5": "バランス99対決スタート ⚡ 絶対選べない質問が始まります",
+      "note": "※ どっちも嫌でも必ず一つ選んでください。よりマシな方を選んで。"
+    },
+    "ui": {
+      "startTest": "バランス99を始める",
+      "shareWithFriends": "友達と一緒にやる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（世界一むずかしい『バランス』99）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "selectionTendency": "🎯 選択傾向",
+      "choiceCountInfo": "📊 選択回数",
+      "choiceCountLive": "A選択: {aCount}回 · B選択: {bCount}回",
+      "optionALabel": "Aを選ぶ",
+      "optionBLabel": "Bを選ぶ",
+      "friendCompare": "👥 友達と比較",
+      "friendChallengeBanner": "友達からバランス対決の招待が届きました！99問解いてマッチ等級を確認しよう。",
+      "duelResultTitle": "友達対決結果",
+      "sameCountLabel": "同じ選択 {sameCount}/99",
+      "personalResultTitle": "👤 私の個人タイプ結果",
+      "duelSectionTitle": "🎯 友達と1:1対決する",
+      "duelButton": "友達と1:1対決する",
+      "duelButtonHint": "自分の回答入りリンクをコピーして友達に送ろう。友達がそのリンクで全部解くと、同じ選択がいくつだったかすぐ比較できます！"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "世界一むずかしい『バランス』99 ⚡ 絶対選べない質問99個",
+      "startKakao": "世界一むずかしい『バランス』99 ⚡ 絶対選べない質問99個",
+      "startWechat": "世界一むずかしい『バランス』99 ⚡ 絶対選べない質問99個",
+      "startWhatsapp": "世界一むずかしい『バランス』99 ⚡ 絶対選べない質問99個",
+      "startTelegram": "世界一むずかしい『バランス』99 ⚡ 絶対選べない質問99個",
+      "startLine": "世界一むずかしい『バランス』99 ⚡ 絶対選べない質問99個"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。",
+      "challengeLinkCopied": "友達対決リンクをコピーしました！友達に送ってください。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "phase3CafeWorkGradeTest": {
     "startMessage": {
       "line1": "カフェで勉強や仕事をするのは迷惑？それとも問題ない？",

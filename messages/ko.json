@@ -10549,6 +10549,73 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3Balance99UltimateTest": {
+    "startMessage": {
+      "line1": "99개 중 단 하나도 쉬운 게 없습니다.",
+      "line2": "둘 다 싫은데 하나를 골라야 합니다. 둘 다 좋은데 하나만 가질 수 있습니다. 생각하면 할수록 더 모르겠고, 고를수록 더 찜찜합니다.",
+      "line3": "그게 이 게임입니다. 99개를 풀고 나면 내 선택 성향이 뭔지 보입니다. 친구와 같이 하면 서로의 선택이 달라서 \"어떻게 그걸 골라?!\"가 반드시 터집니다.",
+      "line4": "혼자 해도 좋고, 친구와 1:1 대결을 해도 좋습니다.",
+      "line5": "99개 밸런스 대결 시작 ⚡ 절대 못 고를 질문들이 시작됩니다",
+      "note": "※ 둘 다 싫어도 하나를 반드시 골라야 합니다. 덜 싫은 것을 고르세요."
+    },
+    "ui": {
+      "startTest": "밸런스 99 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (세상 까다로운 '밸런스' 99)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "selectionTendency": "🎯 선택 성향",
+      "choiceCountInfo": "📊 선택 횟수",
+      "choiceCountLive": "A 선택: {aCount}번 · B 선택: {bCount}번",
+      "optionALabel": "A 선택",
+      "optionBLabel": "B 선택",
+      "friendCompare": "👥 친구와 비교",
+      "friendChallengeBanner": "친구의 밸런스 대결 초대가 도착했습니다! 99개를 풀고 매칭 등급을 확인하세요.",
+      "duelResultTitle": "친구 대결 결과",
+      "sameCountLabel": "같은 선택 {sameCount}/99",
+      "personalResultTitle": "👤 나의 개인 유형 결과",
+      "duelSectionTitle": "🎯 친구와 1:1 대결하기",
+      "duelButton": "친구와 1:1 대결하기",
+      "duelButtonHint": "내 답변이 담긴 링크를 복사해서 친구에게 보내보세요. 친구가 링크로 들어와서 다 풀면 얼마나 같은 선택을 했는지 바로 비교할 수 있어요!"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "세상 까다로운 '밸런스' 99 ⚡ 절대 못 고를 질문 99개",
+      "startKakao": "세상 까다로운 '밸런스' 99 ⚡ 절대 못 고를 질문 99개",
+      "startWechat": "세상 까다로운 '밸런스' 99 ⚡ 절대 못 고를 질문 99개",
+      "startWhatsapp": "세상 까다로운 '밸런스' 99 ⚡ 절대 못 고를 질문 99개",
+      "startTelegram": "세상 까다로운 '밸런스' 99 ⚡ 절대 못 고를 질문 99개",
+      "startLine": "세상 까다로운 '밸런스' 99 ⚡ 절대 못 고를 질문 99개"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다.",
+      "challengeLinkCopied": "친구 대결 링크가 복사되었습니다! 친구에게 보내세요."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3CafeWorkGradeTest": {
     "startMessage": {
       "line1": "카페에서 공부하거나 일하는 것, 민폐인가요 아닌가요?",

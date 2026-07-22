@@ -10411,6 +10411,73 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3Balance99UltimateTest": {
+    "startMessage": {
+      "line1": "Dari 99 soal, tidak ada yang mudah.",
+      "line2": "Sama-sama benci tapi harus pilih satu. Sama-sama suka tapi hanya boleh punya satu. Makin dipikir makin bingung, makin dipilih makin ganjil rasanya.",
+      "line3": "Itulah game ini. Setelah 99 soal, kamu akan melihat gaya pilihanmu. Main bareng teman, beda pilihan pasti bikin bilang \"Kok bisa pilih itu?!\"",
+      "line4": "Main sendiri juga boleh, duel 1:1 dengan teman juga boleh.",
+      "line5": "Mulai duel Balance 99 ⚡ Soal yang mustahil dipilih dimulai",
+      "note": "※ Meski benci keduanya, tetap harus pilih satu. Pilih yang lebih tidak buruk."
+    },
+    "ui": {
+      "startTest": "Mulai Balance 99",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Area iklan AdSense (Balance 99 paling cerewet di dunia)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "selectionTendency": "🎯 Kecenderungan pilihan",
+      "choiceCountInfo": "📊 Jumlah pilihan",
+      "choiceCountLive": "Pilih A: {aCount} · Pilih B: {bCount}",
+      "optionALabel": "Pilih A",
+      "optionBLabel": "Pilih B",
+      "friendCompare": "👥 Bandingkan dengan teman",
+      "friendChallengeBanner": "Undangan duel Balance dari teman datang! Selesaikan 99 soal dan cek grade kecocokan.",
+      "duelResultTitle": "Hasil duel teman",
+      "sameCountLabel": "Pilihan sama {sameCount}/99",
+      "personalResultTitle": "👤 Hasil tipe pribadi saya",
+      "duelSectionTitle": "🎯 Duel 1:1 dengan teman",
+      "duelButton": "Duel 1:1 dengan teman",
+      "duelButtonHint": "Salin tautan berisi jawabanmu dan kirim ke teman. Saat teman selesai lewat tautan itu, langsung bisa bandingkan berapa pilihan yang sama!"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance 99 paling cerewet di dunia ⚡ 99 pilihan mustahil",
+      "startKakao": "Balance 99 paling cerewet di dunia ⚡ 99 pilihan mustahil",
+      "startWechat": "Balance 99 paling cerewet di dunia ⚡ 99 pilihan mustahil",
+      "startWhatsapp": "Balance 99 paling cerewet di dunia ⚡ 99 pilihan mustahil",
+      "startTelegram": "Balance 99 paling cerewet di dunia ⚡ 99 pilihan mustahil",
+      "startLine": "Balance 99 paling cerewet di dunia ⚡ 99 pilihan mustahil"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk.",
+      "challengeLinkCopied": "Tautan duel teman disalin! Kirim ke teman."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
+  },
   "phase3CafeWorkGradeTest": {
     "startMessage": {
       "line1": "Belajar atau bekerja di kafe, apakah itu mengganggu atau tidak?",

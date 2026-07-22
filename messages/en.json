@@ -10420,6 +10420,73 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3Balance99UltimateTest": {
+    "startMessage": {
+      "line1": "Not a single one of the 99 is easy.",
+      "line2": "You hate both but must pick one. You love both but can keep only one. The more you think, the less you know—and the more you choose, the worse it feels.",
+      "line3": "That's this game. After 99 questions, you'll see your choice style. With a friend, different picks will make you yell \"How could you choose that?!\"",
+      "line4": "Play alone, or duel a friend 1:1.",
+      "line5": "Start the Balance 99 duel ⚡ Impossible questions ahead",
+      "note": "※ Even if you hate both, you must pick one. Choose the lesser evil."
+    },
+    "ui": {
+      "startTest": "Start Balance 99",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (The World's Pickiest Balance 99)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "selectionTendency": "🎯 Choice Style",
+      "choiceCountInfo": "📊 Choice Count",
+      "choiceCountLive": "A picks: {aCount} · B picks: {bCount}",
+      "optionALabel": "Choose A",
+      "optionBLabel": "Choose B",
+      "friendCompare": "👥 Compare with Friends",
+      "friendChallengeBanner": "A friend challenged you to a Balance duel! Finish all 99 and see your match grade.",
+      "duelResultTitle": "Friend Duel Result",
+      "sameCountLabel": "Same choices {sameCount}/99",
+      "personalResultTitle": "👤 My Personal Type",
+      "duelSectionTitle": "🎯 1:1 Duel with a Friend",
+      "duelButton": "Duel a Friend 1:1",
+      "duelButtonHint": "Copy a link with your answers and send it. When your friend finishes via that link, you'll see how many choices match right away!"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "The World's Pickiest Balance 99 ⚡ 99 impossible choices",
+      "startKakao": "The World's Pickiest Balance 99 ⚡ 99 impossible choices",
+      "startWechat": "The World's Pickiest Balance 99 ⚡ 99 impossible choices",
+      "startWhatsapp": "The World's Pickiest Balance 99 ⚡ 99 impossible choices",
+      "startTelegram": "The World's Pickiest Balance 99 ⚡ 99 impossible choices",
+      "startLine": "The World's Pickiest Balance 99 ⚡ 99 impossible choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk.",
+      "challengeLinkCopied": "Friend duel link copied! Send it to a friend."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
+  },
   "phase3CafeWorkGradeTest": {
     "startMessage": {
       "line1": "Is studying or working at a cafe considerate, or a nuisance?",
