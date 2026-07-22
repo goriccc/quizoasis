@@ -144,6 +144,10 @@ import {
   phase3MukbangStyleDiagnosisResults,
 } from '@/lib/phase3MukbangStyleDiagnosisData';
 import {
+  phase3SuddenPoorDefenseIndexQuestions,
+  phase3SuddenPoorDefenseIndexResults,
+} from '@/lib/phase3SuddenPoorDefenseIndexData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -591,6 +595,10 @@ const Phase3LazinessMaxLevelTestClient = dynamic(
 );
 const Phase3MukbangStyleDiagnosisTestClient = dynamic(
   () => import('@/components/Phase3MukbangStyleDiagnosisTestClient'),
+  { ssr: false }
+);
+const Phase3SuddenPoorDefenseIndexTestClient = dynamic(
+  () => import('@/components/Phase3SuddenPoorDefenseIndexTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1192,6 +1200,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-sudden-poor-defense-index') {
+    test = {
+      slug: 'phase3-sudden-poor-defense-index',
+      title: {
+        ko: "나의 '벼락거지' 방어 지수",
+        en: "My 'Sudden Poverty' Defense Index",
+        ja: '私の「いきなり貧乏」防御指数',
+        'zh-CN': '我的「霹雳穷人」防御指数',
+        'zh-TW': '我的「霹靂窮人」防禦指數',
+        vi: "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi",
+        id: "Indeks Pertahanan 'Miskin Mendadak'-ku",
+      },
+      description: {
+        ko: '12가지 질문으로 나의 경제 문해력과 자산 안정성을 진단하고 벼락거지 방어 지수를 측정합니다.',
+        en: 'Diagnose your financial literacy and asset stability with 12 questions and measure your Sudden Poverty Defense Index.',
+        ja: '12個の質問で自分の経済リテラシーと資産の安定性を診断し、いきなり貧乏防御指数を測定します。',
+        'zh-CN': '通过12个问题诊断你的金融素养和资产稳定性，测测你的霹雳穷人防御指数。',
+        'zh-TW': '透過12個問題診斷你的金融素養和資產穩定性，測測你的霹靂窮人防禦指數。',
+        vi: 'Chẩn đoán khả năng hiểu biết tài chính và độ ổn định tài sản của bạn qua 12 câu hỏi, đo chỉ số phòng vệ trước tình trạng nghèo bất ngờ.',
+        id: 'Diagnosis literasi finansial dan stabilitas asetmu lewat 12 pertanyaan, dan ukur indeks pertahanan miskin mendadak-mu.',
+      },
+      thumbnail: 'p3_test_sudden_poor_defense_index.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['벼락거지', '재테크', '인플레이션'],
+        en: ['sudden poverty', 'investing', 'inflation'],
+        ja: ['いきなり貧乏', '資産形成', 'インフレ'],
+        'zh-CN': ['霹雳穷人', '理财', '通货膨胀'],
+        'zh-TW': ['霹靂窮人', '理財', '通貨膨脹'],
+        vi: ['nghèo bất ngờ', 'đầu tư tài chính', 'lạm phát'],
+        id: ['miskin mendadak', 'investasi', 'inflasi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5809,6 +5854,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-sudden-poor-defense-index') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-sudden-poor-defense-index',
+      title: {
+        ko: "나의 '벼락거지' 방어 지수",
+        en: "My 'Sudden Poverty' Defense Index",
+        ja: '私の「いきなり貧乏」防御指数',
+        'zh-CN': '我的「霹雳穷人」防御指数',
+        'zh-TW': '我的「霹靂窮人」防禦指數',
+        vi: "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi",
+        id: "Indeks Pertahanan 'Miskin Mendadak'-ku",
+      },
+      description: {
+        ko: '12가지 질문으로 나의 경제 문해력과 자산 안정성을 진단하고 벼락거지 방어 지수를 측정합니다.',
+        en: 'Diagnose your financial literacy and asset stability with 12 questions and measure your Sudden Poverty Defense Index.',
+        ja: '12個の質問で自分の経済リテラシーと資産の安定性を診断し、いきなり貧乏防御指数を測定します。',
+        'zh-CN': '通过12个问题诊断你的金融素养和资产稳定性，测测你的霹雳穷人防御指数。',
+        'zh-TW': '透過12個問題診斷你的金融素養和資產穩定性，測測你的霹靂窮人防禦指數。',
+        vi: 'Chẩn đoán khả năng hiểu biết tài chính và độ ổn định tài sản của bạn qua 12 câu hỏi, đo chỉ số phòng vệ trước tình trạng nghèo bất ngờ.',
+        id: 'Diagnosis literasi finansial dan stabilitas asetmu lewat 12 pertanyaan, dan ukur indeks pertahanan miskin mendadak-mu.',
+      },
+      thumbnail: 'p3_test_sudden_poor_defense_index.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['벼락거지', '재테크', '인플레이션'],
+        en: ['sudden poverty', 'investing', 'inflation'],
+        ja: ['いきなり貧乏', '資産形成', 'インフレ'],
+        'zh-CN': ['霹雳穷人', '理财', '通货膨胀'],
+        'zh-TW': ['霹靂窮人', '理財', '通貨膨脹'],
+        vi: ['nghèo bất ngờ', 'đầu tư tài chính', 'lạm phát'],
+        id: ['miskin mendadak', 'investasi', 'inflasi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SuddenPoorDefenseIndexTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SuddenPoorDefenseIndexQuestions}
+          results={phase3SuddenPoorDefenseIndexResults}
+          questionCount={phase3SuddenPoorDefenseIndexQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

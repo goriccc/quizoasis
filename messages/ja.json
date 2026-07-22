@@ -10285,6 +10285,61 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3SuddenPoorDefenseIndexTest": {
+    "startMessage": {
+      "line1": "頑張って貯金してきたのに、なぜか相対的に貧乏になった気がするのはなぜでしょう？",
+      "line2": "「いきなり貧乏」とは、何も失っていないのに相対的に貧しくなった人のことです。2年で家の価格が2倍になる間、真面目に銀行にお金を貯めていた人。インフレ率が5%なのに預金金利が2%という環境で現金だけを持っていた人。何も間違ったことをしていなくても、システムによって取り残されてしまうのです。",
+      "line3": "私はどれくらい防御できているでしょうか？",
+      "line4": "12個の質問で自分の経済リテラシーと資産の安定性を診断し、いきなり貧乏防御指数を測定します。",
+      "line5": "私のいきなり貧乏防御指数を測定する 🛡️ 今すぐチェック",
+      "note": "※ 各質問で自分に一番近い選択肢を選んでください。"
+    },
+    "ui": {
+      "startTest": "いきなり貧乏防御指数測定スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私の『いきなり貧乏』防御指数）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "defenseScore": "🛡️ 防御指数",
+      "riskLevel": "⚠️ いきなり貧乏リスク度"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の『いきなり貧乏』防御指数 🛡️ 頑張って貯めたお金が減っていないか確認してみて",
+      "startKakao": "私の『いきなり貧乏』防御指数 🛡️ 頑張って貯めたお金が減っていないか確認してみて",
+      "startWechat": "私の『いきなり貧乏』防御指数 🛡️ 頑張って貯めたお金が減っていないか確認してみて",
+      "startWhatsapp": "私の『いきなり貧乏』防御指数 🛡️ 頑張って貯めたお金が減っていないか確認してみて",
+      "startTelegram": "私の『いきなり貧乏』防御指数 🛡️ 頑張って貯めたお金が減っていないか確認してみて",
+      "startLine": "私の『いきなり貧乏』防御指数 🛡️ 頑張って貯めたお金が減っていないか確認してみて"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

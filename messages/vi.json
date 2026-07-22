@@ -10297,6 +10297,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3SuddenPoorDefenseIndexTest": {
+    "startMessage": {
+      "line1": "Tôi đã chăm chỉ tiết kiệm, vậy sao lại cảm thấy mình nghèo đi một cách tương đối?",
+      "line2": "\"Nghèo bất ngờ\" là khi bạn không mất gì cả nhưng lại trở nên nghèo hơn một cách tương đối. Đó là người chăm chỉ gửi tiền vào ngân hàng trong khi giá nhà tăng gấp đôi chỉ trong 2 năm. Đó là người chỉ giữ tiền mặt trong khi lạm phát ở mức 5% nhưng lãi suất tiền gửi chỉ có 2%. Bạn không làm gì sai, chỉ là bị hệ thống bỏ lại phía sau.",
+      "line3": "Tôi đang phòng vệ tốt đến mức nào?",
+      "line4": "Chẩn đoán khả năng hiểu biết tài chính và độ ổn định tài sản của bạn qua 12 câu hỏi, đo chỉ số phòng vệ trước tình trạng \"nghèo bất ngờ\".",
+      "line5": "Đo chỉ số phòng vệ Nghèo Bất Ngờ của tôi 🛡️ Kiểm tra ngay",
+      "note": "※ Ở mỗi câu hỏi, hãy chọn đáp án gần với bạn nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo chỉ số phòng vệ Nghèo Bất Ngờ",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "defenseScore": "🛡️ Chỉ số phòng vệ",
+      "riskLevel": "⚠️ Mức độ rủi ro Nghèo Bất Ngờ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi 🛡️ Kiểm tra xem số tiền bạn chăm chỉ tiết kiệm có đang âm thầm mất giá không",
+      "startKakao": "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi 🛡️ Kiểm tra xem số tiền bạn chăm chỉ tiết kiệm có đang âm thầm mất giá không",
+      "startWechat": "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi 🛡️ Kiểm tra xem số tiền bạn chăm chỉ tiết kiệm có đang âm thầm mất giá không",
+      "startWhatsapp": "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi 🛡️ Kiểm tra xem số tiền bạn chăm chỉ tiết kiệm có đang âm thầm mất giá không",
+      "startTelegram": "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi 🛡️ Kiểm tra xem số tiền bạn chăm chỉ tiết kiệm có đang âm thầm mất giá không",
+      "startLine": "Chỉ số phòng vệ 'Nghèo Bất Ngờ' của tôi 🛡️ Kiểm tra xem số tiền bạn chăm chỉ tiết kiệm có đang âm thầm mất giá không"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

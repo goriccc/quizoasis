@@ -10435,6 +10435,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3SuddenPoorDefenseIndexTest": {
+    "startMessage": {
+      "line1": "열심히 저축했는데 왜 상대적으로 가난해진 느낌이 들까요?",
+      "line2": "벼락거지란 아무것도 안 잃었는데 상대적으로 가난해진 사람을 말합니다. 집값이 2년 만에 두 배가 되는 동안 열심히 통장에 돈을 모은 사람. 인플레이션이 5%인데 예금 금리가 2%인 환경에서 현금만 보유한 사람. 잘못한 것 없이 시스템에 의해 뒤처지는 것입니다.",
+      "line3": "나는 얼마나 방어하고 있을까요?",
+      "line4": "12가지 질문으로 나의 경제 문해력과 자산 안정성을 진단하고 벼락거지 방어 지수를 측정합니다.",
+      "line5": "내 벼락거지 방어 지수 측정하기 🛡️ 지금 바로 확인",
+      "note": "※ 각 문항에서 나와 가장 가까운 선택지를 고르세요."
+    },
+    "ui": {
+      "startTest": "벼락거지 방어 지수 측정 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나의 '벼락거지' 방어 지수)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "defenseScore": "🛡️ 방어 지수",
+      "riskLevel": "⚠️ 벼락거지 위험도"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 '벼락거지' 방어 지수 🛡️ 열심히 모은 돈이 줄어들고 있진 않은지 확인해봐",
+      "startKakao": "나의 '벼락거지' 방어 지수 🛡️ 열심히 모은 돈이 줄어들고 있진 않은지 확인해봐",
+      "startWechat": "나의 '벼락거지' 방어 지수 🛡️ 열심히 모은 돈이 줄어들고 있진 않은지 확인해봐",
+      "startWhatsapp": "나의 '벼락거지' 방어 지수 🛡️ 열심히 모은 돈이 줄어들고 있진 않은지 확인해봐",
+      "startTelegram": "나의 '벼락거지' 방어 지수 🛡️ 열심히 모은 돈이 줄어들고 있진 않은지 확인해봐",
+      "startLine": "나의 '벼락거지' 방어 지수 🛡️ 열심히 모은 돈이 줄어들고 있진 않은지 확인해봐"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

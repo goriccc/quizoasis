@@ -10297,6 +10297,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3SuddenPoorDefenseIndexTest": {
+    "startMessage": {
+      "line1": "Sudah menabung dengan giat, tapi kenapa malah merasa jadi lebih miskin secara relatif?",
+      "line2": "\"Miskin mendadak\" adalah kondisi ketika kamu tidak kehilangan apa pun, tapi menjadi relatif lebih miskin. Yaitu orang yang rajin menabung di bank sementara harga rumah naik dua kali lipat dalam 2 tahun. Orang yang hanya menyimpan uang tunai saat inflasi 5% tapi bunga tabungan hanya 2%. Kamu tidak melakukan kesalahan apa pun, hanya tertinggal karena sistemnya.",
+      "line3": "Seberapa baik aku bertahan dari ini?",
+      "line4": "Diagnosis literasi finansial dan stabilitas asetmu lewat 12 pertanyaan, dan ukur indeks pertahanan 'miskin mendadak'-mu.",
+      "line5": "Ukur Indeks Pertahanan Miskin Mendadak-ku 🛡️ Cek Sekarang",
+      "note": "※ Di setiap pertanyaan, pilih opsi yang paling dekat denganmu."
+    },
+    "ui": {
+      "startTest": "Mulai Tes Indeks Pertahanan Miskin Mendadak",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Indeks Pertahanan 'Miskin Mendadak'-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "defenseScore": "🛡️ Indeks Pertahanan",
+      "riskLevel": "⚠️ Tingkat Risiko Miskin Mendadak"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Indeks Pertahanan 'Miskin Mendadak'-ku 🛡️ Cek apakah uang yang kamu tabung susah-susah sedang diam-diam kehilangan nilainya",
+      "startKakao": "Indeks Pertahanan 'Miskin Mendadak'-ku 🛡️ Cek apakah uang yang kamu tabung susah-susah sedang diam-diam kehilangan nilainya",
+      "startWechat": "Indeks Pertahanan 'Miskin Mendadak'-ku 🛡️ Cek apakah uang yang kamu tabung susah-susah sedang diam-diam kehilangan nilainya",
+      "startWhatsapp": "Indeks Pertahanan 'Miskin Mendadak'-ku 🛡️ Cek apakah uang yang kamu tabung susah-susah sedang diam-diam kehilangan nilainya",
+      "startTelegram": "Indeks Pertahanan 'Miskin Mendadak'-ku 🛡️ Cek apakah uang yang kamu tabung susah-susah sedang diam-diam kehilangan nilainya",
+      "startLine": "Indeks Pertahanan 'Miskin Mendadak'-ku 🛡️ Cek apakah uang yang kamu tabung susah-susah sedang diam-diam kehilangan nilainya"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

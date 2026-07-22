@@ -10306,6 +10306,61 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3SuddenPoorDefenseIndexTest": {
+    "startMessage": {
+      "line1": "You worked hard to save money, so why do you feel relatively poorer?",
+      "line2": "Being \"suddenly poor\" means feeling relatively poorer without actually losing anything. It's the person who diligently saved money in the bank while home prices doubled in just two years. It's the person holding only cash in an environment where inflation runs at 5% but deposit rates sit at 2%. You did nothing wrong — the system simply left you behind.",
+      "line3": "How well am I really defending myself?",
+      "line4": "Diagnose your financial literacy and asset stability with 12 questions and measure your Sudden Poverty Defense Index.",
+      "line5": "Measure My Sudden Poverty Defense Index 🛡️ Check It Now",
+      "note": "※ For each question, choose the option closest to you."
+    },
+    "ui": {
+      "startTest": "Start the Sudden Poverty Defense Index Test",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My 'Sudden Poverty' Defense Index)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "defenseScore": "🛡️ Defense Score",
+      "riskLevel": "⚠️ Sudden Poverty Risk Level"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My 'Sudden Poverty' Defense Index 🛡️ Check if the money you worked hard to save is quietly losing value",
+      "startKakao": "My 'Sudden Poverty' Defense Index 🛡️ Check if the money you worked hard to save is quietly losing value",
+      "startWechat": "My 'Sudden Poverty' Defense Index 🛡️ Check if the money you worked hard to save is quietly losing value",
+      "startWhatsapp": "My 'Sudden Poverty' Defense Index 🛡️ Check if the money you worked hard to save is quietly losing value",
+      "startTelegram": "My 'Sudden Poverty' Defense Index 🛡️ Check if the money you worked hard to save is quietly losing value",
+      "startLine": "My 'Sudden Poverty' Defense Index 🛡️ Check if the money you worked hard to save is quietly losing value"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",
