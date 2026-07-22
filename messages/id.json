@@ -10070,6 +10070,63 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3SoulmateFinderTest": {
+    "startMessage": {
+      "line1": "Apakah soulmate-mu adalah orang yang benar-benar sama denganmu, atau orang yang benar-benar berlawanan denganmu?",
+      "line2": "Di dunia ini ada dua jenis soulmate. Orang yang merasa dan berpikir sama sepertimu, sehingga tanpa banyak kata pun kalian saling mengerti. Dan orang yang benar-benar berlawanan denganmu, yang menunjukkan hal-hal yang tak bisa kamu lihat dan membawamu ke tempat yang tak bisa kamu tuju sendiri.",
+      "line3": "Temukan tipe jiwamu lewat 12 pertanyaan, lalu cari tahu tipe twin soul dan destiny soul-mu. Kirim hasilnya ke teman dan lihat hubungan soulmate apa yang kalian miliki.",
+      "line4": "Semakin jujur kamu menjawab, semakin akurat tipe jiwamu.",
+      "line5": "Temukan Tipe Jiwaku ✨ Mulai Analisis",
+      "note": "※ Di setiap pertanyaan, pilih opsi yang paling dekat denganmu."
+    },
+    "ui": {
+      "startTest": "Mulai Menemukan Tipe Jiwa",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Menemukan 'Soulmate' Jiwaku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "soulType": "Tipe Jiwaku",
+      "soulKeywords": "Kata Kunci Jiwa",
+      "twinSoul": "Twin Soul (Tipe Sama)",
+      "destinySoul": "Destiny Soul (Tipe Berlawanan)"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Menemukan 'Soulmate' Jiwaku ✨ Aku tipe jiwa apa? Bandingkan dengan teman",
+      "startKakao": "Menemukan 'Soulmate' Jiwaku ✨ Aku tipe jiwa apa? Bandingkan dengan teman",
+      "startWechat": "Menemukan 'Soulmate' Jiwaku ✨ Aku tipe jiwa apa? Bandingkan dengan teman",
+      "startWhatsapp": "Menemukan 'Soulmate' Jiwaku ✨ Aku tipe jiwa apa? Bandingkan dengan teman",
+      "startTelegram": "Menemukan 'Soulmate' Jiwaku ✨ Aku tipe jiwa apa? Bandingkan dengan teman",
+      "startLine": "Menemukan 'Soulmate' Jiwaku ✨ Aku tipe jiwa apa? Bandingkan dengan teman"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

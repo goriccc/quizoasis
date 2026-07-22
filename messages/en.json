@@ -10079,6 +10079,63 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3SoulmateFinderTest": {
+    "startMessage": {
+      "line1": "Is your soulmate someone exactly like you, or someone completely different?",
+      "line2": "There are two kinds of soulmates in this world. One feels and thinks so much like you that you don't even need words to connect. The other is your total opposite — showing you what you can't see and taking you where you can't go alone.",
+      "line3": "Find your soul type with 12 questions, then discover what type your twin soul and destiny soul are. Send your results to a friend and see what kind of soulmate connection you share.",
+      "line4": "The more honest you are, the more accurate your soul type will be.",
+      "line5": "Find My Soul Type ✨ Start Analysis",
+      "note": "※ For each question, choose the option closest to you."
+    },
+    "ui": {
+      "startTest": "Start Finding My Soul Type",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (Find My Soul's 'Soulmate')",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "soulType": "My Soul Type",
+      "soulKeywords": "Soul Keywords",
+      "twinSoul": "Twin Soul (Same Type)",
+      "destinySoul": "Destiny Soul (Opposite Type)"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Find My Soul's 'Soulmate' ✨ What's my soul type? Compare with your friends",
+      "startKakao": "Find My Soul's 'Soulmate' ✨ What's my soul type? Compare with your friends",
+      "startWechat": "Find My Soul's 'Soulmate' ✨ What's my soul type? Compare with your friends",
+      "startWhatsapp": "Find My Soul's 'Soulmate' ✨ What's my soul type? Compare with your friends",
+      "startTelegram": "Find My Soul's 'Soulmate' ✨ What's my soul type? Compare with your friends",
+      "startLine": "Find My Soul's 'Soulmate' ✨ What's my soul type? Compare with your friends"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

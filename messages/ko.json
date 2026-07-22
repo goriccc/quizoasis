@@ -10208,6 +10208,63 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3SoulmateFinderTest": {
+    "startMessage": {
+      "line1": "소울메이트는 나와 완전히 같은 사람일까요, 아니면 완전히 반대인 사람일까요?",
+      "line2": "세상엔 두 종류의 소울메이트가 있습니다. 나와 똑같이 느끼고 생각해서 말하지 않아도 통하는 사람. 그리고 나와 정반대여서 내가 못 보는 것을 보여주고 내가 못 가는 곳으로 데려다주는 사람.",
+      "line3": "12가지 질문으로 나의 소울 타입을 찾고 나의 쌍둥이 소울과 운명적 소울이 어떤 타입인지 알아봅니다. 결과를 친구에게 보내서 서로 어떤 소울메이트 관계인지 확인해보세요.",
+      "line4": "솔직하게 답할수록 정확한 소울 타입이 나옵니다.",
+      "line5": "내 소울 타입 찾기 ✨ 분석 시작",
+      "note": "※ 각 문항에서 나와 가장 가까운 선택지를 고르세요."
+    },
+    "ui": {
+      "startTest": "소울 타입 찾기 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (내 영혼의 '소울메이트' 찾기)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "soulType": "나의 소울 타입",
+      "soulKeywords": "소울 키워드",
+      "twinSoul": "쌍둥이 소울 (같은 타입)",
+      "destinySoul": "운명적 소울 (반대 타입)"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내 영혼의 '소울메이트' 찾기 ✨ 나는 어떤 소울 타입일까? 친구랑 비교해봐",
+      "startKakao": "내 영혼의 '소울메이트' 찾기 ✨ 나는 어떤 소울 타입일까? 친구랑 비교해봐",
+      "startWechat": "내 영혼의 '소울메이트' 찾기 ✨ 나는 어떤 소울 타입일까? 친구랑 비교해봐",
+      "startWhatsapp": "내 영혼의 '소울메이트' 찾기 ✨ 나는 어떤 소울 타입일까? 친구랑 비교해봐",
+      "startTelegram": "내 영혼의 '소울메이트' 찾기 ✨ 나는 어떤 소울 타입일까? 친구랑 비교해봐",
+      "startLine": "내 영혼의 '소울메이트' 찾기 ✨ 나는 어떤 소울 타입일까? 친구랑 비교해봐"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

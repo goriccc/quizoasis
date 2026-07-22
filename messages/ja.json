@@ -10058,6 +10058,63 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3SoulmateFinderTest": {
+    "startMessage": {
+      "line1": "ソウルメイトは、自分とまったく同じ人でしょうか？それともまったく正反対の人でしょうか？",
+      "line2": "世界には2種類のソウルメイトがいます。自分と同じように感じて考えるから、言葉にしなくても分かり合える人。そして自分とは正反対だから、自分が見えないものを見せてくれて、自分が行けない場所へ連れて行ってくれる人。",
+      "line3": "12個の質問で自分のソウルタイプを見つけて、ツインソウルとディスティニーソウルがどんなタイプか調べてみましょう。結果を友達に送って、お互いどんなソウルメイトの関係か確認してみて。",
+      "line4": "正直に答えるほど正確なソウルタイプが出ます。",
+      "line5": "私のソウルタイプを見つける ✨ 分析スタート",
+      "note": "※ 各質問で自分に一番近い選択肢を選んでください。"
+    },
+    "ui": {
+      "startTest": "ソウルタイプ診断スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私の魂の『ソウルメイト』探し）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "soulType": "私のソウルタイプ",
+      "soulKeywords": "ソウルキーワード",
+      "twinSoul": "ツインソウル（同じタイプ）",
+      "destinySoul": "ディスティニーソウル（正反対のタイプ）"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の魂の『ソウルメイト』探し ✨ 私はどんなソウルタイプ？友達と比べてみて",
+      "startKakao": "私の魂の『ソウルメイト』探し ✨ 私はどんなソウルタイプ？友達と比べてみて",
+      "startWechat": "私の魂の『ソウルメイト』探し ✨ 私はどんなソウルタイプ？友達と比べてみて",
+      "startWhatsapp": "私の魂の『ソウルメイト』探し ✨ 私はどんなソウルタイプ？友達と比べてみて",
+      "startTelegram": "私の魂の『ソウルメイト』探し ✨ 私はどんなソウルタイプ？友達と比べてみて",
+      "startLine": "私の魂の『ソウルメイト』探し ✨ 私はどんなソウルタイプ？友達と比べてみて"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

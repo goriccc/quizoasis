@@ -128,6 +128,10 @@ import {
   phase3FirstImpressionColorScannerResults,
 } from '@/lib/phase3FirstImpressionColorScannerData';
 import {
+  phase3SoulmateFinderQuestions,
+  phase3SoulmateFinderResults,
+} from '@/lib/phase3SoulmateFinderData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -559,6 +563,10 @@ const Phase3GhostingReboundPotentialTestClient = dynamic(
 );
 const Phase3FirstImpressionColorScannerTestClient = dynamic(
   () => import('@/components/Phase3FirstImpressionColorScannerTestClient'),
+  { ssr: false }
+);
+const Phase3SoulmateFinderTestClient = dynamic(
+  () => import('@/components/Phase3SoulmateFinderTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1160,6 +1168,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-soulmate-finder') {
+    test = {
+      slug: 'phase3-soulmate-finder',
+      title: {
+        ko: "내 영혼의 '소울메이트' 찾기",
+        en: "Find My Soul's Soulmate",
+        ja: '私の魂の『ソウルメイト』探し',
+        'zh-CN': '寻找我灵魂的「灵魂伴侣」',
+        'zh-TW': '尋找我靈魂的「靈魂伴侶」',
+        vi: "Tìm 'Tri kỷ' của tâm hồn tôi",
+        id: "Menemukan 'Soulmate' Jiwaku",
+      },
+      description: {
+        ko: '12가지 질문으로 나의 소울 타입을 찾고 쌍둥이 소울·운명적 소울이 어떤 타입인지 알아봅니다.',
+        en: 'Find your soul type with 12 questions and discover your twin soul and destiny soul.',
+        ja: '12個の質問で自分のソウルタイプを見つけ、ツインソウルとディスティニーソウルがどんなタイプか調べます。',
+        'zh-CN': '通过12个问题找到你的灵魂类型，看看你的双生灵魂和命定灵魂是什么类型。',
+        'zh-TW': '透過12個問題找到你的靈魂類型，看看你的雙生靈魂和命定靈魂是什麼類型。',
+        vi: 'Tìm kiểu tâm hồn của bạn qua 12 câu hỏi và khám phá tâm hồn song sinh, tâm hồn định mệnh của bạn.',
+        id: 'Temukan tipe jiwamu lewat 12 pertanyaan dan cari tahu twin soul serta destiny soul-mu.',
+      },
+      thumbnail: 'p3_test_soulmate_finder.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소울메이트', '영혼', '궁합'],
+        en: ['soulmate', 'soul', 'compatibility'],
+        ja: ['ソウルメイト', '魂', '相性'],
+        'zh-CN': ['灵魂伴侣', '灵魂', '缘分'],
+        'zh-TW': ['靈魂伴侶', '靈魂', '緣分'],
+        vi: ['tri kỷ', 'tâm hồn', 'hợp nhau'],
+        id: ['soulmate', 'jiwa', 'kecocokan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5629,6 +5674,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-soulmate-finder') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-soulmate-finder',
+      title: {
+        ko: "내 영혼의 '소울메이트' 찾기",
+        en: "Find My Soul's Soulmate",
+        ja: '私の魂の『ソウルメイト』探し',
+        'zh-CN': '寻找我灵魂的「灵魂伴侣」',
+        'zh-TW': '尋找我靈魂的「靈魂伴侶」',
+        vi: "Tìm 'Tri kỷ' của tâm hồn tôi",
+        id: "Menemukan 'Soulmate' Jiwaku",
+      },
+      description: {
+        ko: '12가지 질문으로 나의 소울 타입을 찾고 쌍둥이 소울·운명적 소울이 어떤 타입인지 알아봅니다.',
+        en: 'Find your soul type with 12 questions and discover your twin soul and destiny soul.',
+        ja: '12個の質問で自分のソウルタイプを見つけ、ツインソウルとディスティニーソウルがどんなタイプか調べます。',
+        'zh-CN': '通过12个问题找到你的灵魂类型，看看你的双生灵魂和命定灵魂是什么类型。',
+        'zh-TW': '透過12個問題找到你的靈魂類型，看看你的雙生靈魂和命定靈魂是什麼類型。',
+        vi: 'Tìm kiểu tâm hồn của bạn qua 12 câu hỏi và khám phá tâm hồn song sinh, tâm hồn định mệnh của bạn.',
+        id: 'Temukan tipe jiwamu lewat 12 pertanyaan dan cari tahu twin soul serta destiny soul-mu.',
+      },
+      thumbnail: 'p3_test_soulmate_finder.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['소울메이트', '영혼', '궁합'],
+        en: ['soulmate', 'soul', 'compatibility'],
+        ja: ['ソウルメイト', '魂', '相性'],
+        'zh-CN': ['灵魂伴侣', '灵魂', '缘分'],
+        'zh-TW': ['靈魂伴侶', '靈魂', '緣分'],
+        vi: ['tri kỷ', 'tâm hồn', 'hợp nhau'],
+        id: ['soulmate', 'jiwa', 'kecocokan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3SoulmateFinderTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SoulmateFinderQuestions}
+          results={phase3SoulmateFinderResults}
+          questionCount={phase3SoulmateFinderQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

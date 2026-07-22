@@ -10070,6 +10070,63 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3SoulmateFinderTest": {
+    "startMessage": {
+      "line1": "Tri kỷ của bạn là người hoàn toàn giống bạn, hay hoàn toàn đối lập với bạn?",
+      "line2": "Trên thế gian có hai kiểu tri kỷ. Một là người cảm nhận và suy nghĩ giống bạn đến mức không cần nói cũng hiểu nhau. Hai là người hoàn toàn đối lập với bạn, cho bạn thấy những điều bạn không thể thấy và đưa bạn đến những nơi bạn không thể tự mình đến.",
+      "line3": "Tìm kiểu tâm hồn của bạn qua 12 câu hỏi, rồi xem tâm hồn song sinh và tâm hồn định mệnh của bạn thuộc kiểu nào. Gửi kết quả cho bạn bè để xem hai bạn có mối quan hệ tri kỷ kiểu gì.",
+      "line4": "Càng trả lời thành thật, kiểu tâm hồn của bạn sẽ càng chính xác.",
+      "line5": "Tìm kiểu tâm hồn của tôi ✨ Bắt đầu phân tích",
+      "note": "※ Ở mỗi câu hỏi, hãy chọn đáp án gần với bạn nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu tìm kiểu tâm hồn",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Tìm 'Tri kỷ' của tâm hồn tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "soulType": "Kiểu tâm hồn của tôi",
+      "soulKeywords": "Từ khóa tâm hồn",
+      "twinSoul": "Tâm hồn song sinh (cùng kiểu)",
+      "destinySoul": "Tâm hồn định mệnh (kiểu đối lập)"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tìm 'Tri kỷ' của tâm hồn tôi ✨ Tôi thuộc kiểu tâm hồn nào? So sánh với bạn bè xem",
+      "startKakao": "Tìm 'Tri kỷ' của tâm hồn tôi ✨ Tôi thuộc kiểu tâm hồn nào? So sánh với bạn bè xem",
+      "startWechat": "Tìm 'Tri kỷ' của tâm hồn tôi ✨ Tôi thuộc kiểu tâm hồn nào? So sánh với bạn bè xem",
+      "startWhatsapp": "Tìm 'Tri kỷ' của tâm hồn tôi ✨ Tôi thuộc kiểu tâm hồn nào? So sánh với bạn bè xem",
+      "startTelegram": "Tìm 'Tri kỷ' của tâm hồn tôi ✨ Tôi thuộc kiểu tâm hồn nào? So sánh với bạn bè xem",
+      "startLine": "Tìm 'Tri kỷ' của tâm hồn tôi ✨ Tôi thuộc kiểu tâm hồn nào? So sánh với bạn bè xem"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",
