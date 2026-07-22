@@ -10115,6 +10115,61 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3AiEraJobSurvivalScoreTest": {
+    "startMessage": {
+      "line1": "ChatGPTが登場してから、自分の仕事が不安になったことはありますか？",
+      "line2": "翻訳家・記者・デザイナー・会計士・コールセンター相談員・映像編集者。わずか2〜3年前まで専門職だった仕事が、AIに取って代わられています。でもAIがどんなに賢くなっても、簡単には代替できない能力があります。",
+      "line3": "問題は、自分がそれを持っているかどうかです。",
+      "line4": "12個の質問で、自分の職業スキルがAI時代にどれくらい競争力があるか正直に採点します。",
+      "line5": "私の職業生存スコアを測定 🤖 今すぐチェック",
+      "note": "※ 各質問で、自分に一番近い選択肢を選んでください。"
+    },
+    "ui": {
+      "startTest": "職業生存スコア測定スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（AI時代、私の職業生存スコア）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "survivalScore": "生存スコア",
+      "aiRiskLevel": "AI代替リスクレベル"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "AI時代、私の職業生存スコア 🤖 自分の仕事はAIに奪われる？今すぐチェック",
+      "startKakao": "AI時代、私の職業生存スコア 🤖 自分の仕事はAIに奪われる？今すぐチェック",
+      "startWechat": "AI時代、私の職業生存スコア 🤖 自分の仕事はAIに奪われる？今すぐチェック",
+      "startWhatsapp": "AI時代、私の職業生存スコア 🤖 自分の仕事はAIに奪われる？今すぐチェック",
+      "startTelegram": "AI時代、私の職業生存スコア 🤖 自分の仕事はAIに奪われる？今すぐチェック",
+      "startLine": "AI時代、私の職業生存スコア 🤖 自分の仕事はAIに奪われる？今すぐチェック"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

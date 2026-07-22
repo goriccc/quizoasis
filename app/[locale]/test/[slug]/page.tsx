@@ -132,6 +132,10 @@ import {
   phase3SoulmateFinderResults,
 } from '@/lib/phase3SoulmateFinderData';
 import {
+  phase3AiEraJobSurvivalScoreQuestions,
+  phase3AiEraJobSurvivalScoreResults,
+} from '@/lib/phase3AiEraJobSurvivalScoreData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -567,6 +571,10 @@ const Phase3FirstImpressionColorScannerTestClient = dynamic(
 );
 const Phase3SoulmateFinderTestClient = dynamic(
   () => import('@/components/Phase3SoulmateFinderTestClient'),
+  { ssr: false }
+);
+const Phase3AiEraJobSurvivalScoreTestClient = dynamic(
+  () => import('@/components/Phase3AiEraJobSurvivalScoreTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1168,6 +1176,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-ai-era-job-survival-score') {
+    test = {
+      slug: 'phase3-ai-era-job-survival-score',
+      title: {
+        ko: 'AI 시대, 내 직업 생존 점수',
+        en: 'My Job Survival Score in the AI Era',
+        ja: 'AI時代、私の職業生存スコア',
+        'zh-CN': 'AI时代，我的职业生存分数',
+        'zh-TW': 'AI時代，我的職業生存分數',
+        vi: 'Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI',
+        id: 'Skor Kelangsungan Karierku di Era AI',
+      },
+      description: {
+        ko: '12가지 질문으로 내 직업 역량이 AI 시대에 얼마나 경쟁력이 있는지 점수를 매겨드립니다.',
+        en: '12 questions to score how competitive your job skills are in the AI era.',
+        ja: '12個の質問で、自分の職業スキルがAI時代にどれくらい競争力があるか採点します。',
+        'zh-CN': '通过12个问题，为你的职业能力在AI时代的竞争力打分。',
+        'zh-TW': '透過12個問題，為你的職業能力在AI時代的競爭力打分。',
+        vi: '12 câu hỏi để chấm điểm năng lực nghề nghiệp của bạn có cạnh tranh được trong thời đại AI hay không.',
+        id: '12 pertanyaan untuk menilai seberapa kompetitif kemampuan kerjamu di era AI.',
+      },
+      thumbnail: 'p3_test_ai_era_job_survival_score.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['AI', '직업', '생존'],
+        en: ['AI', 'career', 'survival'],
+        ja: ['AI', '職業', '生存'],
+        'zh-CN': ['AI', '职业', '生存'],
+        'zh-TW': ['AI', '職業', '生存'],
+        vi: ['AI', 'nghề nghiệp', 'sinh tồn'],
+        id: ['AI', 'karier', 'kelangsungan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5674,6 +5719,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-ai-era-job-survival-score') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-ai-era-job-survival-score',
+      title: {
+        ko: 'AI 시대, 내 직업 생존 점수',
+        en: 'My Job Survival Score in the AI Era',
+        ja: 'AI時代、私の職業生存スコア',
+        'zh-CN': 'AI时代，我的职业生存分数',
+        'zh-TW': 'AI時代，我的職業生存分數',
+        vi: 'Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI',
+        id: 'Skor Kelangsungan Karierku di Era AI',
+      },
+      description: {
+        ko: '12가지 질문으로 내 직업 역량이 AI 시대에 얼마나 경쟁력이 있는지 점수를 매겨드립니다.',
+        en: '12 questions to score how competitive your job skills are in the AI era.',
+        ja: '12個の質問で、自分の職業スキルがAI時代にどれくらい競争力があるか採点します。',
+        'zh-CN': '通过12个问题，为你的职业能力在AI时代的竞争力打分。',
+        'zh-TW': '透過12個問題，為你的職業能力在AI時代的競爭力打分。',
+        vi: '12 câu hỏi để chấm điểm năng lực nghề nghiệp của bạn có cạnh tranh được trong thời đại AI hay không.',
+        id: '12 pertanyaan untuk menilai seberapa kompetitif kemampuan kerjamu di era AI.',
+      },
+      thumbnail: 'p3_test_ai_era_job_survival_score.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['AI', '직업', '생존'],
+        en: ['AI', 'career', 'survival'],
+        ja: ['AI', '職業', '生存'],
+        'zh-CN': ['AI', '职业', '生存'],
+        'zh-TW': ['AI', '職業', '生存'],
+        vi: ['AI', 'nghề nghiệp', 'sinh tồn'],
+        id: ['AI', 'karier', 'kelangsungan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3AiEraJobSurvivalScoreTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3AiEraJobSurvivalScoreQuestions}
+          results={phase3AiEraJobSurvivalScoreResults}
+          questionCount={phase3AiEraJobSurvivalScoreQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

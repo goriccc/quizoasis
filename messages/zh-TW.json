@@ -9596,6 +9596,61 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3AiEraJobSurvivalScoreTest": {
+    "startMessage": {
+      "line1": "ChatGPT出現之後，你有沒有覺得自己的工作變得不安？",
+      "line2": "翻譯、記者、設計師、會計、客服、影片剪輯師。僅僅2~3年前還是專業職業的工作，正在被AI取代。但無論AI多麼聰明，總有一些能力是很難被輕易取代的。",
+      "line3": "問題是，你是否擁有這些能力。",
+      "line4": "透過12個問題，誠實地為你的職業能力在AI時代的競爭力打分。",
+      "line5": "測測我的職業生存分數 🤖 現在就來看看",
+      "note": "※ 每個問題請選擇最接近你的選項。"
+    },
+    "ui": {
+      "startTest": "開始測量職業生存分數",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區（AI時代，我的職業生存分數）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "survivalScore": "生存分數",
+      "aiRiskLevel": "AI替代風險等級"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "AI時代，我的職業生存分數 🤖 我的工作會被AI搶走嗎？現在就來測測",
+      "startKakao": "AI時代，我的職業生存分數 🤖 我的工作會被AI搶走嗎？現在就來測測",
+      "startWechat": "AI時代，我的職業生存分數 🤖 我的工作會被AI搶走嗎？現在就來測測",
+      "startWhatsapp": "AI時代，我的職業生存分數 🤖 我的工作會被AI搶走嗎？現在就來測測",
+      "startTelegram": "AI時代，我的職業生存分數 🤖 我的工作會被AI搶走嗎？現在就來測測",
+      "startLine": "AI時代，我的職業生存分數 🤖 我的工作會被AI搶走嗎？現在就來測測"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

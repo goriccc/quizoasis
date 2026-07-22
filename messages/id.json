@@ -10127,6 +10127,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3AiEraJobSurvivalScoreTest": {
+    "startMessage": {
+      "line1": "Sejak ChatGPT muncul, apakah kamu pernah merasa pekerjaanmu jadi tidak aman?",
+      "line2": "Penerjemah, jurnalis, desainer, akuntan, staf call center, editor video. Pekerjaan yang 2-3 tahun lalu masih dianggap profesi mapan kini mulai digantikan AI. Tapi meski AI makin pintar, ada kemampuan-kemampuan yang tetap sulit digantikan.",
+      "line3": "Masalahnya adalah apakah kamu memiliki kemampuan itu.",
+      "line4": "12 pertanyaan untuk menilai secara jujur seberapa kompetitif kemampuan kerjamu di era AI.",
+      "line5": "Ukur Skor Kelangsungan Karierku 🤖 Cek sekarang",
+      "note": "※ Di setiap pertanyaan, pilih opsi yang paling dekat denganmu."
+    },
+    "ui": {
+      "startTest": "Mulai Ukur Skor Kelangsungan Karier",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Skor Kelangsungan Karierku di Era AI)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "survivalScore": "Skor Kelangsungan",
+      "aiRiskLevel": "Level Risiko Digantikan AI"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Skor Kelangsungan Karierku di Era AI 🤖 Apakah pekerjaanku akan direbut AI? Cek sekarang",
+      "startKakao": "Skor Kelangsungan Karierku di Era AI 🤖 Apakah pekerjaanku akan direbut AI? Cek sekarang",
+      "startWechat": "Skor Kelangsungan Karierku di Era AI 🤖 Apakah pekerjaanku akan direbut AI? Cek sekarang",
+      "startWhatsapp": "Skor Kelangsungan Karierku di Era AI 🤖 Apakah pekerjaanku akan direbut AI? Cek sekarang",
+      "startTelegram": "Skor Kelangsungan Karierku di Era AI 🤖 Apakah pekerjaanku akan direbut AI? Cek sekarang",
+      "startLine": "Skor Kelangsungan Karierku di Era AI 🤖 Apakah pekerjaanku akan direbut AI? Cek sekarang"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

@@ -10127,6 +10127,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3AiEraJobSurvivalScoreTest": {
+    "startMessage": {
+      "line1": "Từ khi ChatGPT xuất hiện, bạn có từng cảm thấy công việc của mình bất an chưa?",
+      "line2": "Biên dịch viên, nhà báo, nhà thiết kế, kế toán, nhân viên tổng đài, biên tập video. Những công việc chỉ 2-3 năm trước còn là nghề chuyên môn giờ đang bị AI thay thế. Nhưng dù AI có thông minh đến đâu, vẫn có những năng lực khó bị thay thế dễ dàng.",
+      "line3": "Vấn đề là bạn có sở hữu những năng lực đó hay không.",
+      "line4": "12 câu hỏi để chấm điểm thành thật năng lực nghề nghiệp của bạn có cạnh tranh được trong thời đại AI hay không.",
+      "line5": "Đo điểm sinh tồn nghề nghiệp của tôi 🤖 Kiểm tra ngay",
+      "note": "※ Ở mỗi câu hỏi, hãy chọn đáp án gần với bạn nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo điểm sinh tồn nghề nghiệp",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "survivalScore": "Điểm sinh tồn",
+      "aiRiskLevel": "Mức độ rủi ro bị AI thay thế"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI 🤖 Công việc của tôi có bị AI cướp mất không? Kiểm tra ngay",
+      "startKakao": "Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI 🤖 Công việc của tôi có bị AI cướp mất không? Kiểm tra ngay",
+      "startWechat": "Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI 🤖 Công việc của tôi có bị AI cướp mất không? Kiểm tra ngay",
+      "startWhatsapp": "Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI 🤖 Công việc của tôi có bị AI cướp mất không? Kiểm tra ngay",
+      "startTelegram": "Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI 🤖 Công việc của tôi có bị AI cướp mất không? Kiểm tra ngay",
+      "startLine": "Điểm sinh tồn nghề nghiệp của tôi trong thời đại AI 🤖 Công việc của tôi có bị AI cướp mất không? Kiểm tra ngay"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",
