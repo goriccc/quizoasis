@@ -10453,6 +10453,61 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3PersonalBrandingKeywordsTest": {
+    "startMessage": {
+      "line1": "履歴書の自己紹介欄に何を書けばいいのか、困った経験はありませんか？",
+      "line2": "パーソナルブランディングとは、自分をどんな人物として位置づけるかという問題です。漠然と「誠実で責任感があります」ではなく、自分の強みを最も正確に表すキーワードが必要です。",
+      "line3": "12の質問であなたの仕事の仕方・強み・価値観・関係性スタイルを分析し、あなたをアピールする最適なキーワード3つを見つけます。LinkedInのヘッドライン、履歴書の冒頭、自己紹介の最初の一文にすぐ使えます。",
+      "line4": "自分を最もよく表す言葉3つを見つけましょう。",
+      "line5": "私のパーソナルブランディングキーワードを探す 🏷️ 分析スタート",
+      "note": "※ 各質問で自分に最も近い選択肢を選んでください。"
+    },
+    "ui": {
+      "startTest": "パーソナルブランディングキーワード分析スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私の『パーソナルブランディング』キーワード）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "keywords": "🏷️ パーソナルブランディングキーワード",
+      "englishKeywords": "🔤 英語キーワード"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の『パーソナルブランディング』キーワード 🏷️ 私を最もよく表す言葉3つは？",
+      "startKakao": "私の『パーソナルブランディング』キーワード 🏷️ 私を最もよく表す言葉3つは？",
+      "startWechat": "私の『パーソナルブランディング』キーワード 🏷️ 私を最もよく表す言葉3つは？",
+      "startWhatsapp": "私の『パーソナルブランディング』キーワード 🏷️ 私を最もよく表す言葉3つは？",
+      "startTelegram": "私の『パーソナルブランディング』キーワード 🏷️ 私を最もよく表す言葉3つは？",
+      "startLine": "私の『パーソナルブランディング』キーワード 🏷️ 私を最もよく表す言葉3つは？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

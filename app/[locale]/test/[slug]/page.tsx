@@ -156,6 +156,10 @@ import {
   phase3CafeWorkGradeResults,
 } from '@/lib/phase3CafeWorkGradeData';
 import {
+  phase3PersonalBrandingKeywordsQuestions,
+  phase3PersonalBrandingKeywordsResults,
+} from '@/lib/phase3PersonalBrandingKeywordsData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -615,6 +619,10 @@ const Phase3EgoWallThicknessTestClient = dynamic(
 );
 const Phase3CafeWorkGradeTestClient = dynamic(
   () => import('@/components/Phase3CafeWorkGradeTestClient'),
+  { ssr: false }
+);
+const Phase3PersonalBrandingKeywordsTestClient = dynamic(
+  () => import('@/components/Phase3PersonalBrandingKeywordsTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1290,6 +1298,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['咖啡廳學習黨', '咖啡廳', '禮儀', '學習', '居家辦公'],
         vi: ['học ở quán cà phê', 'quán cà phê', 'etiquette', 'học tập', 'làm việc từ xa'],
         id: ['pekerja kafe', 'kafe', 'etiket', 'belajar', 'kerja remote'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-personal-branding-keywords') {
+    test = {
+      slug: 'phase3-personal-branding-keywords',
+      title: {
+        ko: "나의 '퍼스널 브랜딩' 키워드",
+        en: "My 'Personal Branding' Keywords",
+        ja: '私の「パーソナルブランディング」キーワード',
+        'zh-CN': '我的「个人品牌」关键词',
+        'zh-TW': '我的「個人品牌」關鍵字',
+        vi: "Từ khóa 'Personal Branding' của tôi",
+        id: "Kata Kunci 'Personal Branding'-ku",
+      },
+      description: {
+        ko: '12문항으로 나를 홍보할 최적의 키워드 3개를 찾아드립니다.',
+        en: '12 questions find the 3 best keywords to promote yourself.',
+        ja: '12問であなたをアピールする最適なキーワード3つを見つけます。',
+        'zh-CN': '通过12道题找出最适合宣传自己的3个关键词。',
+        'zh-TW': '透過12題找出最適合宣傳自己的3個關鍵字。',
+        vi: '12 câu hỏi giúp tìm 3 từ khóa tối ưu để quảng bá bản thân.',
+        id: '12 pertanyaan menemukan 3 kata kunci terbaik untuk mempromosikan dirimu.',
+      },
+      thumbnail: 'p3_test_personal_branding_keywords.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['퍼스널브랜딩', '이력서', '링크드인', '자기소개', '커리어'],
+        en: ['personal branding', 'resume', 'linkedin', 'self-introduction', 'career'],
+        ja: ['パーソナルブランディング', '履歴書', 'LinkedIn', '自己紹介', 'キャリア'],
+        'zh-CN': ['个人品牌', '简历', '领英', '自我介绍', '职业'],
+        'zh-TW': ['個人品牌', '履歷', 'LinkedIn', '自我介紹', '職涯'],
+        vi: ['personal branding', 'CV', 'LinkedIn', 'giới thiệu bản thân', 'sự nghiệp'],
+        id: ['personal branding', 'CV', 'LinkedIn', 'perkenalan diri', 'karier'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -6054,6 +6099,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3CafeWorkGradeQuestions}
           results={phase3CafeWorkGradeResults}
           questionCount={phase3CafeWorkGradeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-personal-branding-keywords') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-personal-branding-keywords',
+      title: {
+        ko: "나의 '퍼스널 브랜딩' 키워드",
+        en: "My 'Personal Branding' Keywords",
+        ja: '私の「パーソナルブランディング」キーワード',
+        'zh-CN': '我的「个人品牌」关键词',
+        'zh-TW': '我的「個人品牌」關鍵字',
+        vi: "Từ khóa 'Personal Branding' của tôi",
+        id: "Kata Kunci 'Personal Branding'-ku",
+      },
+      description: {
+        ko: '12문항으로 나를 홍보할 최적의 키워드 3개를 찾아드립니다.',
+        en: '12 questions find the 3 best keywords to promote yourself.',
+        ja: '12問であなたをアピールする最適なキーワード3つを見つけます。',
+        'zh-CN': '通过12道题找出最适合宣传自己的3个关键词。',
+        'zh-TW': '透過12題找出最適合宣傳自己的3個關鍵字。',
+        vi: '12 câu hỏi giúp tìm 3 từ khóa tối ưu để quảng bá bản thân.',
+        id: '12 pertanyaan menemukan 3 kata kunci terbaik untuk mempromosikan dirimu.',
+      },
+      thumbnail: 'p3_test_personal_branding_keywords.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['퍼스널브랜딩', '이력서', '링크드인', '자기소개', '커리어'],
+        en: ['personal branding', 'resume', 'linkedin', 'self-introduction', 'career'],
+        ja: ['パーソナルブランディング', '履歴書', 'LinkedIn', '自己紹介', 'キャリア'],
+        'zh-CN': ['个人品牌', '简历', '领英', '自我介绍', '职业'],
+        'zh-TW': ['個人品牌', '履歷', 'LinkedIn', '自我介紹', '職涯'],
+        vi: ['personal branding', 'CV', 'LinkedIn', 'giới thiệu bản thân', 'sự nghiệp'],
+        id: ['personal branding', 'CV', 'LinkedIn', 'perkenalan diri', 'karier'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3PersonalBrandingKeywordsTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3PersonalBrandingKeywordsQuestions}
+          results={phase3PersonalBrandingKeywordsResults}
+          questionCount={phase3PersonalBrandingKeywordsQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

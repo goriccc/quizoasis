@@ -10465,6 +10465,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3PersonalBrandingKeywordsTest": {
+    "startMessage": {
+      "line1": "Pernah bingung mau menulis apa di bagian perkenalan diri di CV?",
+      "line2": "Personal branding adalah soal bagaimana kamu memposisikan dirimu. Daripada bilang samar-samar \"saya rajin dan bertanggung jawab\", kamu butuh kata kunci yang paling tepat menggambarkan kelebihan unikmu.",
+      "line3": "12 pertanyaan menganalisis gaya kerja, kelebihan, nilai hidup, dan gaya hubunganmu untuk menemukan 3 kata kunci terbaik untuk mempromosikan dirimu. Bisa langsung dipakai di headline LinkedIn, pembuka CV, atau kalimat pertama perkenalan diri.",
+      "line4": "Temukan 3 kata yang paling menggambarkan dirimu.",
+      "line5": "Temukan Kata Kunci Personal Branding-ku 🏷️ Mulai Analisis",
+      "note": "※ Pilih opsi yang paling mendekati dirimu di setiap pertanyaan."
+    },
+    "ui": {
+      "startTest": "Mulai Analisis Kata Kunci Personal Branding",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Kata Kunci 'Personal Branding' Milikku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "keywords": "🏷️ Kata Kunci Personal Branding",
+      "englishKeywords": "🔤 Kata Kunci Bahasa Inggris"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kata Kunci 'Personal Branding' Milikku 🏷️ Apa 3 kata yang paling menggambarkan diriku?",
+      "startKakao": "Kata Kunci 'Personal Branding' Milikku 🏷️ Apa 3 kata yang paling menggambarkan diriku?",
+      "startWechat": "Kata Kunci 'Personal Branding' Milikku 🏷️ Apa 3 kata yang paling menggambarkan diriku?",
+      "startWhatsapp": "Kata Kunci 'Personal Branding' Milikku 🏷️ Apa 3 kata yang paling menggambarkan diriku?",
+      "startTelegram": "Kata Kunci 'Personal Branding' Milikku 🏷️ Apa 3 kata yang paling menggambarkan diriku?",
+      "startLine": "Kata Kunci 'Personal Branding' Milikku 🏷️ Apa 3 kata yang paling menggambarkan diriku?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

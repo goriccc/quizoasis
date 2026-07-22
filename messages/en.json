@@ -10474,6 +10474,61 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3PersonalBrandingKeywordsTest": {
+    "startMessage": {
+      "line1": "Ever felt stuck on what to write in your resume's self-introduction?",
+      "line2": "Personal branding is about how you position yourself. Instead of a vague \"I'm hardworking and responsible,\" you need keywords that precisely capture your unique strengths.",
+      "line3": "12 questions analyze your work style, strengths, values, and relationship style to find the 3 best keywords to promote yourself. Use them right away in your LinkedIn headline, resume opener, or the first line of your self-introduction.",
+      "line4": "Find the 3 words that best describe you.",
+      "line5": "Find My Personal Branding Keywords 🏷️ Start Analysis",
+      "note": "※ Choose the option closest to you for each question."
+    },
+    "ui": {
+      "startTest": "Start Personal Branding Keyword Analysis",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My 'Personal Branding' Keywords)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "keywords": "🏷️ Personal Branding Keywords",
+      "englishKeywords": "🔤 English Keywords"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My 'Personal Branding' Keywords 🏷️ What are the 3 words that best describe me?",
+      "startKakao": "My 'Personal Branding' Keywords 🏷️ What are the 3 words that best describe me?",
+      "startWechat": "My 'Personal Branding' Keywords 🏷️ What are the 3 words that best describe me?",
+      "startWhatsapp": "My 'Personal Branding' Keywords 🏷️ What are the 3 words that best describe me?",
+      "startTelegram": "My 'Personal Branding' Keywords 🏷️ What are the 3 words that best describe me?",
+      "startLine": "My 'Personal Branding' Keywords 🏷️ What are the 3 words that best describe me?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",
