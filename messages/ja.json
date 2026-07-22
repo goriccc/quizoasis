@@ -10508,6 +10508,60 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3HundredBillionProbabilityTest": {
+    "startMessage": {
+      "line1": "100億ウォンの金持ちになりたいですか？望む人は多いですが、なれる人は少ないです。",
+      "line2": "100億ウォンは漠然とした夢ではありません。マインドセット・消費習慣・投資性向・リスク耐性・実行力の組み合わせが生み出す結果です。宝くじ一枚でなれることもありますが、それを除くと確率は少し変わります。",
+      "line3": "12の質問で、あなたの富のマインドセットと資産運用スタイルを分析し、100億ウォンの金持ちになる確率を正直にお伝えします。",
+      "line4": "結果が低くても大丈夫です。宝くじはいつでも開いています。",
+      "line5": "私の100億ウォン確率を測定する 💰 今すぐチェック",
+      "note": "※ 各質問で自分に最も近い選択肢を選んでください。"
+    },
+    "ui": {
+      "startTest": "100億ウォン確率測定スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私が100億ウォンの金持ちになる確率）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "probability": "💰 100億ウォン金持ち確率"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私が100億ウォンの金持ちになる確率 💰 私は何％？",
+      "startKakao": "私が100億ウォンの金持ちになる確率 💰 私は何％？",
+      "startWechat": "私が100億ウォンの金持ちになる確率 💰 私は何％？",
+      "startWhatsapp": "私が100億ウォンの金持ちになる確率 💰 私は何％？",
+      "startTelegram": "私が100億ウォンの金持ちになる確率 💰 私は何％？",
+      "startLine": "私が100億ウォンの金持ちになる確率 💰 私は何％？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

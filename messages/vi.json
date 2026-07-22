@@ -10520,6 +10520,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3HundredBillionProbabilityTest": {
+    "startMessage": {
+      "line1": "Bạn muốn trở thành tỷ phú 100 tỷ won? Nhiều người muốn nhưng ít người đạt được.",
+      "line2": "100 tỷ won không phải là ước mơ mơ hồ. Đó là kết quả của sự kết hợp giữa tư duy, thói quen tiêu dùng, khuynh hướng đầu tư, khả năng chịu rủi ro và năng lực thực hiện. Bạn có thể đạt được chỉ với một tấm vé số, nhưng nếu bỏ yếu tố đó ra, xác suất sẽ khác đi một chút.",
+      "line3": "12 câu hỏi phân tích tư duy làm giàu và khuynh hướng tài chính của bạn để cho bạn biết một cách trung thực xác suất bạn trở thành tỷ phú 100 tỷ won.",
+      "line4": "Kết quả thấp cũng không sao. Vé số luôn rộng mở.",
+      "line5": "Đo xác suất 100 tỷ của tôi 💰 Kiểm tra ngay",
+      "note": "※ Ở mỗi câu hỏi, hãy chọn phương án gần nhất với bạn."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo xác suất 100 tỷ",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Xác suất tôi trở thành tỷ phú 100 tỷ won)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "probability": "💰 Xác suất tỷ phú 100 tỷ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Xác suất tôi trở thành tỷ phú 100 tỷ won 💰 Tôi có bao nhiêu %?",
+      "startKakao": "Xác suất tôi trở thành tỷ phú 100 tỷ won 💰 Tôi có bao nhiêu %?",
+      "startWechat": "Xác suất tôi trở thành tỷ phú 100 tỷ won 💰 Tôi có bao nhiêu %?",
+      "startWhatsapp": "Xác suất tôi trở thành tỷ phú 100 tỷ won 💰 Tôi có bao nhiêu %?",
+      "startTelegram": "Xác suất tôi trở thành tỷ phú 100 tỷ won 💰 Tôi có bao nhiêu %?",
+      "startLine": "Xác suất tôi trở thành tỷ phú 100 tỷ won 💰 Tôi có bao nhiêu %?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

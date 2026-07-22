@@ -10520,6 +10520,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3HundredBillionProbabilityTest": {
+    "startMessage": {
+      "line1": "Ingin jadi orang kaya 100 miliar won? Banyak yang ingin, tapi sedikit yang berhasil.",
+      "line2": "100 miliar won bukan mimpi yang samar. Ini adalah hasil dari kombinasi mindset, kebiasaan belanja, gaya investasi, toleransi risiko, dan kemampuan eksekusi. Bisa saja tercapai dengan satu lembar undian, tapi kalau itu dikecualikan, probabilitasnya sedikit berubah.",
+      "line3": "12 pertanyaan menganalisis mindset kekayaan dan gaya keuanganmu untuk memberi tahu secara jujur probabilitas kamu menjadi orang kaya 100 miliar won.",
+      "line4": "Tidak masalah jika hasilnya rendah. Undian selalu terbuka.",
+      "line5": "Ukur Probabilitas 100 Miliar-ku 💰 Cek Sekarang",
+      "note": "※ Pilih opsi yang paling mendekati dirimu di setiap pertanyaan."
+    },
+    "ui": {
+      "startTest": "Mulai Mengukur Probabilitas 100 Miliar",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Probabilitas Aku Jadi Kaya 100 Miliar Won)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "probability": "💰 Probabilitas Kaya 100 Miliar"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Probabilitas Aku Jadi Kaya 100 Miliar Won 💰 Aku berapa persen?",
+      "startKakao": "Probabilitas Aku Jadi Kaya 100 Miliar Won 💰 Aku berapa persen?",
+      "startWechat": "Probabilitas Aku Jadi Kaya 100 Miliar Won 💰 Aku berapa persen?",
+      "startWhatsapp": "Probabilitas Aku Jadi Kaya 100 Miliar Won 💰 Aku berapa persen?",
+      "startTelegram": "Probabilitas Aku Jadi Kaya 100 Miliar Won 💰 Aku berapa persen?",
+      "startLine": "Probabilitas Aku Jadi Kaya 100 Miliar Won 💰 Aku berapa persen?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",
