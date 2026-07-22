@@ -9821,6 +9821,65 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3EgoWallThicknessTest": {
+    "startMessage": {
+      "line1": "我們每個人都有一座用來保護自己的城牆。",
+      "line2": "城牆太薄容易受傷，太厚又難以建立真正的關係。問題是，自己往往最不清楚這座城牆到底有多厚。",
+      "line3": "憑直覺選擇更吸引你的圖片，我們將為你分析自我城牆的厚度、防禦機制模式，以及現在的自尊狀態。",
+      "line4": "請快速、不假思索地選擇讓你心動的選項。直覺比大腦更早知道答案。",
+      "line5": "測測我的自我城牆 🏰 憑直覺開始"
+    },
+    "ui": {
+      "startTest": "開始測試自我城牆",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區（測測我的「自我城牆」厚度）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "questionHint": "請憑直覺選擇更吸引你，或感覺更接近你的圖片。",
+      "wallThickness": "🏰 城牆厚度",
+      "strength": "💪 優點",
+      "shadow": "🌑 陰影面",
+      "needNow": "✅ 現在需要的",
+      "shiningMoment": "✨ 這種厚度閃光的瞬間",
+      "oneLiner": "💬 一句話"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "測測我的「自我城牆」厚度 🏰 我的心是玻璃還是銅牆鐵壁？",
+      "startKakao": "測測我的「自我城牆」厚度 🏰 我的心是玻璃還是銅牆鐵壁？",
+      "startWechat": "測測我的「自我城牆」厚度 🏰 我的心是玻璃還是銅牆鐵壁？",
+      "startWhatsapp": "測測我的「自我城牆」厚度 🏰 我的心是玻璃還是銅牆鐵壁？",
+      "startTelegram": "測測我的「自我城牆」厚度 🏰 我的心是玻璃還是銅牆鐵壁？",
+      "startLine": "測測我的「自我城牆」厚度 🏰 我的心是玻璃還是銅牆鐵壁？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

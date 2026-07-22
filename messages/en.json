@@ -10361,6 +10361,65 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3EgoWallThicknessTest": {
+    "startMessage": {
+      "line1": "We all have walls to protect ourselves.",
+      "line2": "If the wall is too thin, you get hurt easily. If it's too thick, it's hard to build real relationships. The problem is that you're the one who knows least about how thick your own wall really is.",
+      "line3": "Choose the image that intuitively draws you in more, and we'll analyze your ego wall thickness, defense mechanism pattern, and current self-esteem state.",
+      "line4": "Choose quickly, without thinking, whatever draws you in. Intuition knows before the brain does.",
+      "line5": "Measure My Ego Wall 🏰 Start with Intuition"
+    },
+    "ui": {
+      "startTest": "Start Ego Wall Measurement",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My 'Ego Wall' Thickness)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "questionHint": "Intuitively choose the image that draws you in more or feels closer to you.",
+      "wallThickness": "🏰 Wall Thickness",
+      "strength": "💪 Strength",
+      "shadow": "🌑 Shadow",
+      "needNow": "✅ What You Need Now",
+      "shiningMoment": "✨ When This Thickness Shines",
+      "oneLiner": "💬 One-Liner"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My 'Ego Wall' Thickness 🏰 Is my heart glass or a fortress?",
+      "startKakao": "My 'Ego Wall' Thickness 🏰 Is my heart glass or a fortress?",
+      "startWechat": "My 'Ego Wall' Thickness 🏰 Is my heart glass or a fortress?",
+      "startWhatsapp": "My 'Ego Wall' Thickness 🏰 Is my heart glass or a fortress?",
+      "startTelegram": "My 'Ego Wall' Thickness 🏰 Is my heart glass or a fortress?",
+      "startLine": "My 'Ego Wall' Thickness 🏰 Is my heart glass or a fortress?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

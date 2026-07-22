@@ -10340,6 +10340,65 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3EgoWallThicknessTest": {
+    "startMessage": {
+      "line1": "私たちは誰でも、自分を守るための壁を持っています。",
+      "line2": "壁が薄すぎると傷つきやすく、厚すぎると本当の関係を築くのが難しくなります。問題は、自分の壁がどれくらい厚いのか、本人が一番分かっていないということです。",
+      "line3": "直感的に惹かれる画像を選ぶと、あなたの自我の壁の厚さと防衛機制のパターン、そして今の自己肯定感の状態を分析します。",
+      "line4": "素早く、考えずに、惹かれるものを選んでください。直感は脳より先に知っています。",
+      "line5": "自我の壁を測定する 🏰 直感でスタート"
+    },
+    "ui": {
+      "startTest": "自我の壁測定スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私の『自我の壁』の厚さ）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "questionHint": "より惹かれる、または自分に近いと感じる画像を直感的に選んでください。",
+      "wallThickness": "🏰 壁の厚さ",
+      "strength": "💪 強み",
+      "shadow": "🌑 影",
+      "needNow": "✅ 今必要なもの",
+      "shiningMoment": "✨ この厚さが輝く瞬間",
+      "oneLiner": "💬 ひと言"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の『自我の壁』の厚さ 🏰 私の心はガラスか、それとも鉄壁か？",
+      "startKakao": "私の『自我の壁』の厚さ 🏰 私の心はガラスか、それとも鉄壁か？",
+      "startWechat": "私の『自我の壁』の厚さ 🏰 私の心はガラスか、それとも鉄壁か？",
+      "startWhatsapp": "私の『自我の壁』の厚さ 🏰 私の心はガラスか、それとも鉄壁か？",
+      "startTelegram": "私の『自我の壁』の厚さ 🏰 私の心はガラスか、それとも鉄壁か？",
+      "startLine": "私の『自我の壁』の厚さ 🏰 私の心はガラスか、それとも鉄壁か？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

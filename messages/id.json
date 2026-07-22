@@ -10352,6 +10352,65 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3EgoWallThicknessTest": {
+    "startMessage": {
+      "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",
+      "line2": "Jika tembok terlalu tipis, kamu mudah terluka; jika terlalu tebal, sulit membangun hubungan yang sesungguhnya. Masalahnya, kamu sendiri yang paling tidak tahu seberapa tebal tembokmu.",
+      "line3": "Pilih gambar yang secara intuitif lebih menarik bagimu, dan kami akan menganalisis ketebalan tembok egomu, pola mekanisme pertahanan, dan kondisi rasa percaya dirimu saat ini.",
+      "line4": "Pilih dengan cepat, tanpa berpikir, ikuti yang menarik bagimu. Intuisi tahu lebih dulu daripada otak.",
+      "line5": "Ukur Tembok Ego-ku 🏰 Mulai dengan Intuisi"
+    },
+    "ui": {
+      "startTest": "Mulai Mengukur Tembok Ego",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Ketebalan 'Tembok Ego'-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "questionHint": "Pilih secara intuitif gambar yang lebih menarik bagimu atau terasa lebih dekat denganmu.",
+      "wallThickness": "🏰 Ketebalan Tembok",
+      "strength": "💪 Kekuatan",
+      "shadow": "🌑 Sisi Gelap",
+      "needNow": "✅ Yang Kamu Butuhkan Sekarang",
+      "shiningMoment": "✨ Momen Ketebalan Ini Bersinar",
+      "oneLiner": "💬 Satu Kalimat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Ketebalan 'Tembok Ego'-ku 🏰 Hatiku kaca atau benteng kokoh?",
+      "startKakao": "Ketebalan 'Tembok Ego'-ku 🏰 Hatiku kaca atau benteng kokoh?",
+      "startWechat": "Ketebalan 'Tembok Ego'-ku 🏰 Hatiku kaca atau benteng kokoh?",
+      "startWhatsapp": "Ketebalan 'Tembok Ego'-ku 🏰 Hatiku kaca atau benteng kokoh?",
+      "startTelegram": "Ketebalan 'Tembok Ego'-ku 🏰 Hatiku kaca atau benteng kokoh?",
+      "startLine": "Ketebalan 'Tembok Ego'-ku 🏰 Hatiku kaca atau benteng kokoh?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

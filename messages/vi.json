@@ -10352,6 +10352,65 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3EgoWallThicknessTest": {
+    "startMessage": {
+      "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",
+      "line2": "Nếu tường quá mỏng, bạn dễ bị tổn thương; nếu quá dày, bạn khó xây dựng mối quan hệ thật sự. Vấn đề là chính bạn lại là người ít biết nhất về việc tường của mình dày đến mức nào.",
+      "line3": "Hãy chọn hình ảnh mà bạn bị cuốn hút theo trực giác, chúng tôi sẽ phân tích độ dày bức tường bản ngã, kiểu cơ chế phòng vệ và trạng thái tự tôn hiện tại của bạn.",
+      "line4": "Chọn nhanh, không suy nghĩ, chọn theo cảm giác cuốn hút. Trực giác biết trước cả bộ não.",
+      "line5": "Đo độ dày bức tường bản ngã của tôi 🏰 Bắt đầu bằng trực giác"
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo bức tường bản ngã",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Độ dày 'Bức tường bản ngã' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "questionHint": "Hãy chọn theo trực giác hình ảnh cuốn hút bạn hơn hoặc gần với bạn hơn.",
+      "wallThickness": "🏰 Độ dày bức tường",
+      "strength": "💪 Điểm mạnh",
+      "shadow": "🌑 Vùng tối",
+      "needNow": "✅ Điều bạn cần lúc này",
+      "shiningMoment": "✨ Khoảnh khắc độ dày này tỏa sáng",
+      "oneLiner": "💬 Một câu ngắn"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Độ dày 'Bức tường bản ngã' của tôi 🏰 Trái tim tôi là kính hay là thành trì?",
+      "startKakao": "Độ dày 'Bức tường bản ngã' của tôi 🏰 Trái tim tôi là kính hay là thành trì?",
+      "startWechat": "Độ dày 'Bức tường bản ngã' của tôi 🏰 Trái tim tôi là kính hay là thành trì?",
+      "startWhatsapp": "Độ dày 'Bức tường bản ngã' của tôi 🏰 Trái tim tôi là kính hay là thành trì?",
+      "startTelegram": "Độ dày 'Bức tường bản ngã' của tôi 🏰 Trái tim tôi là kính hay là thành trì?",
+      "startLine": "Độ dày 'Bức tường bản ngã' của tôi 🏰 Trái tim tôi là kính hay là thành trì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",
