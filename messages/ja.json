@@ -10399,6 +10399,60 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3CafeWorkGradeTest": {
+    "startMessage": {
+      "line1": "カフェで勉強や仕事をするのは迷惑？それとも問題ない？",
+      "line2": "この論争は終わりません。カフェは元々ドリンクを飲む場所だという人、ドリンク代を払えば十分だという人、長時間いても回転率に貢献しなければ問題だという人、単にカフェが自習室より安くて快適だという人。",
+      "line3": "このテストはあなたのカフェ勉族習慣を正直に診断します。あなたが何段階の「カフェ勉族」なのか、周りからどう見られているか、カフェの店主があなたをどう思っているかをお伝えします。",
+      "line4": "12問であなたのカフェ勉マナーを診断します。",
+      "line5": "カフェ勉族段位測定スタート ☕ 正直にチャレンジ",
+      "note": "※ 正直に答えるほど正確です。"
+    },
+    "ui": {
+      "startTest": "カフェ勉族段位測定スタート",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度やる",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私の『カフェ勉族』段位テスト）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "cafeGrade": "☕ カフェ勉段位"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の『カフェ勉族』段位テスト ☕ 私は何段のカフェ勉族？",
+      "startKakao": "私の『カフェ勉族』段位テスト ☕ 私は何段のカフェ勉族？",
+      "startWechat": "私の『カフェ勉族』段位テスト ☕ 私は何段のカフェ勉族？",
+      "startWhatsapp": "私の『カフェ勉族』段位テスト ☕ 私は何段のカフェ勉族？",
+      "startTelegram": "私の『カフェ勉族』段位テスト ☕ 私は何段のカフェ勉族？",
+      "startLine": "私の『カフェ勉族』段位テスト ☕ 私は何段のカフェ勉族？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

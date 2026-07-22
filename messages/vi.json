@@ -10411,6 +10411,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3CafeWorkGradeTest": {
+    "startMessage": {
+      "line1": "Học hoặc làm việc ở quán cà phê, có gây khó chịu hay không?",
+      "line2": "Cuộc tranh luận này không bao giờ kết thúc. Có người nói quán cà phê vốn là nơi để uống đồ uống, có người nói trả tiền đồ uống là đủ rồi, có người nói ở lâu mà không góp phần vào doanh thu là có vấn đề, cũng có người nói quán cà phê rẻ và thoải mái hơn phòng tự học.",
+      "line3": "Bài test này chẩn đoán trung thực thói quen học/làm việc ở quán cà phê của bạn. Cho bạn biết bạn thuộc cấp độ \"dân học ở quán cà phê\" nào, mọi người xung quanh nhìn bạn thế nào, và chủ quán cà phê nghĩ gì về bạn.",
+      "line4": "12 câu hỏi chẩn đoán phép cư xử khi học ở quán cà phê của bạn.",
+      "line5": "Đo cấp độ 'dân học ở quán cà phê' của tôi ☕ Bắt đầu trung thực",
+      "note": "※ Càng trung thực, kết quả càng chính xác."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo cấp độ dân học ở quán cà phê",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Đo cấp độ 'Dân học ở quán cà phê' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "cafeGrade": "☕ Cấp độ dân học ở quán cà phê"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Đo cấp độ 'Dân học ở quán cà phê' của tôi ☕ Tôi thuộc cấp độ nào?",
+      "startKakao": "Đo cấp độ 'Dân học ở quán cà phê' của tôi ☕ Tôi thuộc cấp độ nào?",
+      "startWechat": "Đo cấp độ 'Dân học ở quán cà phê' của tôi ☕ Tôi thuộc cấp độ nào?",
+      "startWhatsapp": "Đo cấp độ 'Dân học ở quán cà phê' của tôi ☕ Tôi thuộc cấp độ nào?",
+      "startTelegram": "Đo cấp độ 'Dân học ở quán cà phê' của tôi ☕ Tôi thuộc cấp độ nào?",
+      "startLine": "Đo cấp độ 'Dân học ở quán cà phê' của tôi ☕ Tôi thuộc cấp độ nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

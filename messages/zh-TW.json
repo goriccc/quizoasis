@@ -9880,6 +9880,60 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3CafeWorkGradeTest": {
+    "startMessage": {
+      "line1": "在咖啡廳學習或工作，到底算不算造成困擾？",
+      "line2": "這場爭論永遠沒有結果。有人說咖啡廳本來就是喝飲料的地方，有人說付了飲料錢就夠了，有人說待太久卻不帶來翻桌率就是問題，也有人說咖啡廳本來就比自習室便宜又舒服。",
+      "line3": "這個測試將真實診斷你的咖啡廳學習習慣。告訴你你是哪個等級的「咖啡廳學習黨」，周圍人會怎麼看你，咖啡廳老闆又會怎麼想你。",
+      "line4": "透過12個問題診斷你的咖啡廳學習禮儀。",
+      "line5": "測測我的咖啡廳學習黨等級 ☕ 誠實開始",
+      "note": "※ 越誠實，結果越準確。"
+    },
+    "ui": {
+      "startTest": "開始測試咖啡廳學習黨等級",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區（測測我的「咖啡廳學習黨」等級）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "cafeGrade": "☕ 咖啡廳學習等級"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "測測我的「咖啡廳學習黨」等級 ☕ 我是幾級咖啡廳學習黨？",
+      "startKakao": "測測我的「咖啡廳學習黨」等級 ☕ 我是幾級咖啡廳學習黨？",
+      "startWechat": "測測我的「咖啡廳學習黨」等級 ☕ 我是幾級咖啡廳學習黨？",
+      "startWhatsapp": "測測我的「咖啡廳學習黨」等級 ☕ 我是幾級咖啡廳學習黨？",
+      "startTelegram": "測測我的「咖啡廳學習黨」等級 ☕ 我是幾級咖啡廳學習黨？",
+      "startLine": "測測我的「咖啡廳學習黨」等級 ☕ 我是幾級咖啡廳學習黨？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

@@ -10411,6 +10411,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3CafeWorkGradeTest": {
+    "startMessage": {
+      "line1": "Belajar atau bekerja di kafe, apakah itu mengganggu atau tidak?",
+      "line2": "Perdebatan ini tidak pernah selesai. Ada yang bilang kafe pada dasarnya tempat minum, ada yang bilang cukup asal sudah bayar minuman, ada yang bilang kalau berlama-lama tanpa berkontribusi pada perputaran meja itu masalah, dan ada juga yang bilang kafe memang lebih murah dan nyaman dibanding tempat belajar.",
+      "line3": "Tes ini mendiagnosis kebiasaan belajar/bekerja di kafemu secara jujur. Tes ini memberi tahu level 'pekerja kafe' seperti apa dirimu, bagaimana orang sekitar memandangmu, dan apa yang pemilik kafe pikirkan tentangmu.",
+      "line4": "12 pertanyaan mendiagnosis etiket belajar di kafemu.",
+      "line5": "Ukur Level Pekerja Kafeku ☕ Mulai dengan Jujur",
+      "note": "※ Semakin jujur, semakin akurat hasilnya."
+    },
+    "ui": {
+      "startTest": "Mulai Mengukur Level Pekerja Kafe",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tes Level 'Pekerja Kafe' Milikku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "cafeGrade": "☕ Level Pekerja Kafe"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tes Level 'Pekerja Kafe' Milikku ☕ Aku level pekerja kafe yang mana?",
+      "startKakao": "Tes Level 'Pekerja Kafe' Milikku ☕ Aku level pekerja kafe yang mana?",
+      "startWechat": "Tes Level 'Pekerja Kafe' Milikku ☕ Aku level pekerja kafe yang mana?",
+      "startWhatsapp": "Tes Level 'Pekerja Kafe' Milikku ☕ Aku level pekerja kafe yang mana?",
+      "startTelegram": "Tes Level 'Pekerja Kafe' Milikku ☕ Aku level pekerja kafe yang mana?",
+      "startLine": "Tes Level 'Pekerja Kafe' Milikku ☕ Aku level pekerja kafe yang mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",
