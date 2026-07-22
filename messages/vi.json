@@ -10015,6 +10015,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3FirstImpressionColorScannerTest": {
+    "startMessage": {
+      "line1": "Nếu người mới gặp diễn tả bạn bằng một màu, đó sẽ là màu gì?",
+      "line2": "Đỏ mạnh mẽ? Coral ấm áp? Mint tươi mới? Lavender huyền bí?",
+      "line3": "Màu ấn tượng đầu tiên phụ thuộc năng lượng, cách nói, vibe và gu không gian hơn là ngoại hình. Hình ảnh bạn chọn thường biết bạn trước cả lời nói.",
+      "line4": "Chọn hình ảnh bạn bị thu hút theo trực giác — chúng tôi phân tích màu sắc người khác cảm nhận từ bạn, và kết nối với bản sắc màu cá nhân.",
+      "line5": "Quét màu ấn tượng đầu tiên của tôi 🎨 Bắt đầu phân tích"
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Máy quét màu 'ấn tượng đầu' của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "questionHint": "Chọn trực giác hình ảnh gần với vibe và gu của bạn nhất.",
+      "firstImpressionColor": "🎨 Màu ấn tượng đầu",
+      "colorKeywords": "🔑 Từ khóa màu",
+      "firstFeeling": "👀 Điều người khác cảm nhận đầu tiên",
+      "shiningMoment": "✨ Khoảnh khắc màu này tỏa sáng nhất",
+      "reverseCharm": "🔄 Nét duyên bất ngờ của màu này",
+      "matchingColors": "🤝 Màu hợp với bạn",
+      "personalColorLink": "💎 Liên kết personal color",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Máy quét màu 'ấn tượng đầu' của tôi 🎨 Màu người khác cảm nhận từ mình là gì? So với personal color nhé",
+      "startKakao": "Máy quét màu 'ấn tượng đầu' của tôi 🎨 Màu người khác cảm nhận từ mình là gì? So với personal color nhé",
+      "startWechat": "Máy quét màu 'ấn tượng đầu' của tôi 🎨 Màu người khác cảm nhận từ mình là gì? So với personal color nhé",
+      "startWhatsapp": "Máy quét màu 'ấn tượng đầu' của tôi 🎨 Màu người khác cảm nhận từ mình là gì? So với personal color nhé",
+      "startTelegram": "Máy quét màu 'ấn tượng đầu' của tôi 🎨 Màu người khác cảm nhận từ mình là gì? So với personal color nhé",
+      "startLine": "Máy quét màu 'ấn tượng đầu' của tôi 🎨 Màu người khác cảm nhận từ mình là gì? So với personal color nhé"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

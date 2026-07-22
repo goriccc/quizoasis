@@ -10003,6 +10003,61 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3FirstImpressionColorScannerTest": {
+    "startMessage": {
+      "line1": "初めて会った人が、あなたを色で表すとしたら何色でしょう？",
+      "line2": "鮮やかなレッド？温かいコーラル？爽やかなミント？神秘的なラベンダー？",
+      "line3": "第一印象カラーは見た目より、エネルギー・話し方・雰囲気・空間の好みで決まります。どんな人かは、言葉よりあなたが選ぶイメージが先に知っています。",
+      "line4": "直感で惹かれる画像を選ぶと、周りがあなたから感じる色を分析します。パーソナルカラーとつながる、あなただけのカラーアイデンティティまで見つけます。",
+      "line5": "私の第一印象カラースキャン 🎨 分析スタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の『第一印象』カラースキャナー）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "questionHint": "自分の雰囲気・好みに一番近い画像を直感で選んでください。",
+      "firstImpressionColor": "🎨 第一印象カラー",
+      "colorKeywords": "🔑 カラーキーワード",
+      "firstFeeling": "👀 周りが最初に感じること",
+      "shiningMoment": "✨ このカラーが一番輝く瞬間",
+      "reverseCharm": "🔄 このカラーの意外な魅力",
+      "matchingColors": "🤝 相性の良いカラー",
+      "personalColorLink": "💎 パーソナルカラーとのつながり",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の『第一印象』カラースキャナー 🎨 周りが感じる私の色は？パーソナルカラーと比べてみて",
+      "startKakao": "私の『第一印象』カラースキャナー 🎨 周りが感じる私の色は？パーソナルカラーと比べてみて",
+      "startWechat": "私の『第一印象』カラースキャナー 🎨 周りが感じる私の色は？パーソナルカラーと比べてみて",
+      "startWhatsapp": "私の『第一印象』カラースキャナー 🎨 周りが感じる私の色は？パーソナルカラーと比べてみて",
+      "startTelegram": "私の『第一印象』カラースキャナー 🎨 周りが感じる私の色は？パーソナルカラーと比べてみて",
+      "startLine": "私の『第一印象』カラースキャナー 🎨 周りが感じる私の色は？パーソナルカラーと比べてみて"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "人気",

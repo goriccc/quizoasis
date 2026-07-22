@@ -10015,6 +10015,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3FirstImpressionColorScannerTest": {
+    "startMessage": {
+      "line1": "Kalau orang yang baru kenal menggambarkanmu sebagai warna, warna apa itu?",
+      "line2": "Merah yang kuat? Coral yang hangat? Mint yang segar? Lavender yang misterius?",
+      "line3": "Warna kesan pertama lebih ditentukan energi, nada bicara, vibe, dan selera ruang daripada penampilan. Gambar yang kamu pilih sering tahu tentangmu lebih dulu dari kata-katamu.",
+      "line4": "Pilih gambar yang menarik secara intuitif — kami analisis warna yang orang rasakan darimu, lalu hubungkan dengan identitas warna personalmu.",
+      "line5": "Scan warna kesan pertamaku 🎨 Mulai analisis"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Pemindai Warna 'Kesan Pertama'-ku)",
+      "goToTest": "Kerjakan Tes",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "questionHint": "Pilih secara intuitif gambar yang paling dekat dengan vibe dan selera kamu.",
+      "firstImpressionColor": "🎨 Warna Kesan Pertama",
+      "colorKeywords": "🔑 Kata Kunci Warna",
+      "firstFeeling": "👀 Yang Pertama Orang Rasakan",
+      "shiningMoment": "✨ Saat Warna Ini Paling Bersinar",
+      "reverseCharm": "🔄 Daya Tarik Tak Terduga Warna Ini",
+      "matchingColors": "🤝 Warna yang Cocok",
+      "personalColorLink": "💎 Koneksi Personal Color",
+      "shareResult": "Bagikan Hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Pemindai Warna 'Kesan Pertama'-ku 🎨 Warna apa yang orang rasakan dariku? Bandingkan dengan personal color",
+      "startKakao": "Pemindai Warna 'Kesan Pertama'-ku 🎨 Warna apa yang orang rasakan dariku? Bandingkan dengan personal color",
+      "startWechat": "Pemindai Warna 'Kesan Pertama'-ku 🎨 Warna apa yang orang rasakan dariku? Bandingkan dengan personal color",
+      "startWhatsapp": "Pemindai Warna 'Kesan Pertama'-ku 🎨 Warna apa yang orang rasakan dariku? Bandingkan dengan personal color",
+      "startTelegram": "Pemindai Warna 'Kesan Pertama'-ku 🎨 Warna apa yang orang rasakan dariku? Bandingkan dengan personal color",
+      "startLine": "Pemindai Warna 'Kesan Pertama'-ku 🎨 Warna apa yang orang rasakan dariku? Bandingkan dengan personal color"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

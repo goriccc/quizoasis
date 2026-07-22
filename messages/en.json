@@ -10024,6 +10024,61 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3FirstImpressionColorScannerTest": {
+    "startMessage": {
+      "line1": "If someone described you as a color on first meeting, what color would you be?",
+      "line2": "Bold red? Warm coral? Fresh mint? Mysterious lavender?",
+      "line3": "Your first-impression color is shaped less by looks and more by energy, tone of voice, vibe, and space preferences. The images you choose know you before your words do.",
+      "line4": "Pick the images you're drawn to intuitively — we'll analyze the color others sense from you, and connect it to your personal color identity.",
+      "line5": "Scan my first-impression color 🎨 Start analysis"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My 'First Impression' Color Scanner)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "questionHint": "Intuitively pick the image closest to your vibe and taste.",
+      "firstImpressionColor": "🎨 First Impression Color",
+      "colorKeywords": "🔑 Color Keywords",
+      "firstFeeling": "👀 What Others Feel First",
+      "shiningMoment": "✨ When This Color Shines Most",
+      "reverseCharm": "🔄 The Hidden Charm of This Color",
+      "matchingColors": "🤝 Colors That Pair Well",
+      "personalColorLink": "💎 Personal Color Connection",
+      "shareResult": "Share Result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My 'First Impression' Color Scanner 🎨 What color do others sense from me? Compare with personal color",
+      "startKakao": "My 'First Impression' Color Scanner 🎨 What color do others sense from me? Compare with personal color",
+      "startWechat": "My 'First Impression' Color Scanner 🎨 What color do others sense from me? Compare with personal color",
+      "startWhatsapp": "My 'First Impression' Color Scanner 🎨 What color do others sense from me? Compare with personal color",
+      "startTelegram": "My 'First Impression' Color Scanner 🎨 What color do others sense from me? Compare with personal color",
+      "startLine": "My 'First Impression' Color Scanner 🎨 What color do others sense from me? Compare with personal color"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

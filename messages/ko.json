@@ -10153,6 +10153,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3FirstImpressionColorScannerTest": {
+    "startMessage": {
+      "line1": "처음 만난 사람이 나를 색깔로 표현한다면 무슨 색일까요?",
+      "line2": "강렬한 레드? 따뜻한 코랄? 신선한 민트? 신비로운 라벤더?",
+      "line3": "첫인상 컬러는 외모보다 에너지·말투·분위기·공간 취향에서 결정됩니다. 내가 어떤 사람인지는 내 말보다 내가 선택하는 이미지들이 먼저 알고 있습니다.",
+      "line4": "직관적으로 끌리는 이미지를 선택하면 남들이 나에게서 느끼는 색깔을 분석해 드립니다. 퍼스널 컬러와 연결한 나만의 컬러 정체성까지 찾아드립니다.",
+      "line5": "내 첫인상 컬러 스캔하기 🎨 분석 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 '첫인상' 컬러 스캐너)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "questionHint": "나의 분위기·취향과 가장 가까운 이미지를 직관적으로 선택하세요.",
+      "firstImpressionColor": "🎨 첫인상 컬러",
+      "colorKeywords": "🔑 컬러 키워드",
+      "firstFeeling": "👀 남들이 처음 느끼는 것",
+      "shiningMoment": "✨ 이 컬러가 가장 빛나는 순간",
+      "reverseCharm": "🔄 이 컬러의 반전 매력",
+      "matchingColors": "🤝 잘 어울리는 컬러",
+      "personalColorLink": "💎 퍼스널 컬러 연결",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 '첫인상' 컬러 스캐너 🎨 남들이 느끼는 내 색깔은? 퍼스널 컬러랑 비교해봐",
+      "startKakao": "나의 '첫인상' 컬러 스캐너 🎨 남들이 느끼는 내 색깔은? 퍼스널 컬러랑 비교해봐",
+      "startWechat": "나의 '첫인상' 컬러 스캐너 🎨 남들이 느끼는 내 색깔은? 퍼스널 컬러랑 비교해봐",
+      "startWhatsapp": "나의 '첫인상' 컬러 스캐너 🎨 남들이 느끼는 내 색깔은? 퍼스널 컬러랑 비교해봐",
+      "startTelegram": "나의 '첫인상' 컬러 스캐너 🎨 남들이 느끼는 내 색깔은? 퍼스널 컬러랑 비교해봐",
+      "startLine": "나의 '첫인상' 컬러 스캐너 🎨 남들이 느끼는 내 색깔은? 퍼스널 컬러랑 비교해봐"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

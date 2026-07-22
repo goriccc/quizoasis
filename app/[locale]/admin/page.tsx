@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
+import QuizImageGenPanel from '@/components/admin/QuizImageGenPanel';
 
 interface FeedbackItem {
   id: string;
@@ -27,7 +28,7 @@ export default function AdminPage() {
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
   const [reports, setReports] = useState<ReportItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<'feedback' | 'reports'>('feedback');
+  const [activeTab, setActiveTab] = useState<'feedback' | 'reports' | 'quiz-images'>('feedback');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
@@ -63,10 +64,12 @@ export default function AdminPage() {
   }, []);
 
   useEffect(() => {
-    if (isAuthenticated) {
+    if (isAuthenticated && activeTab !== 'quiz-images') {
       loadData();
+    } else if (isAuthenticated && activeTab === 'quiz-images') {
+      setLoading(false);
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, activeTab]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -247,9 +250,21 @@ export default function AdminPage() {
               >
                 오류 수정 요청 ({reports.length})
               </button>
+              <button
+                onClick={() => setActiveTab('quiz-images')}
+                className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                  activeTab === 'quiz-images'
+                    ? 'border-blue-500 text-blue-600'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                }`}
+              >
+                퀴즈 이미지
+              </button>
             </nav>
           </div>
         </div>
+
+        {activeTab === 'quiz-images' && <QuizImageGenPanel />}
 
         {/* 피드백 탭 */}
         {activeTab === 'feedback' && (
