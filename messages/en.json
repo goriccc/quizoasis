@@ -10191,6 +10191,61 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3LazinessMaxLevelTest": {
+    "startMessage": {
+      "line1": "Even laziness has its levels.",
+      "line2": "The person who leaves a package at the door for 3 days. The person who twists their body into an awkward pose just to keep holding their phone because the charger cord won't reach. The person who keeps thinking \"I should reply\" until a week has passed. There are many kinds of laziness in this world.",
+      "line3": "Which level am I?",
+      "line4": "12 real-life scenarios measure your laziness max level. After seeing your result, you'll either shout \"Anyone lazier than me? Bring it on\" or quietly hide it.",
+      "line5": "Measure My Laziness Max Level 🛋️ Take the Honest Challenge",
+      "note": "※ In each scenario, choose the option closest to you. The more honest you are, the more accurate the result."
+    },
+    "ui": {
+      "startTest": "Start Measuring Laziness Max Level",
+      "shareWithFriends": "Try It with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (Measuring My 'Laziness' Max Level)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "lazinessGrade": "🏅 Laziness Grade",
+      "lazinessIndex": "📊 Laziness Index"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Measuring My 'Laziness' Max Level 🛋️ The \"anyone lazier than me?\" challenge",
+      "startKakao": "Measuring My 'Laziness' Max Level 🛋️ The \"anyone lazier than me?\" challenge",
+      "startWechat": "Measuring My 'Laziness' Max Level 🛋️ The \"anyone lazier than me?\" challenge",
+      "startWhatsapp": "Measuring My 'Laziness' Max Level 🛋️ The \"anyone lazier than me?\" challenge",
+      "startTelegram": "Measuring My 'Laziness' Max Level 🛋️ The \"anyone lazier than me?\" challenge",
+      "startLine": "Measuring My 'Laziness' Max Level 🛋️ The \"anyone lazier than me?\" challenge"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "Popular",

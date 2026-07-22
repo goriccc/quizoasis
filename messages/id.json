@@ -10182,6 +10182,61 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3LazinessMaxLevelTest": {
+    "startMessage": {
+      "line1": "Kemalasan juga punya levelnya.",
+      "line2": "Orang yang membiarkan paket di depan pintu selama 3 hari, orang yang tetap memegang HP dengan posisi tubuh yang aneh karena kabel charger tidak sampai, orang yang berpikir \"harus balas chat\" tapi seminggu berlalu. Ada banyak jenis kemalasan di dunia ini.",
+      "line3": "Aku ada di level berapa ya?",
+      "line4": "Ukur level kemalasan maksimalmu lewat 12 skenario nyata. Setelah melihat hasilnya, kamu akan berteriak \"Ada yang lebih malas dari aku? Coba maju\" atau diam-diam menyembunyikan hasilnya.",
+      "line5": "Mulai Mengukur Level Kemalasan Maksimal 🛋️ Coba dengan Jujur",
+      "note": "※ Di setiap skenario, pilih opsi yang paling dekat denganmu. Semakin jujur, semakin akurat hasilnya."
+    },
+    "ui": {
+      "startTest": "Mulai Mengukur Level Kemalasan Maksimal",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Mengukur Level 'Kemalasan' Maksimalku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "lazinessGrade": "🏅 Level Kemalasan",
+      "lazinessIndex": "📊 Indeks Kemalasan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Mengukur Level 'Kemalasan' Maksimalku 🛋️ Tantangan \"ada yang lebih malas dari aku?\"",
+      "startKakao": "Mengukur Level 'Kemalasan' Maksimalku 🛋️ Tantangan \"ada yang lebih malas dari aku?\"",
+      "startWechat": "Mengukur Level 'Kemalasan' Maksimalku 🛋️ Tantangan \"ada yang lebih malas dari aku?\"",
+      "startWhatsapp": "Mengukur Level 'Kemalasan' Maksimalku 🛋️ Tantangan \"ada yang lebih malas dari aku?\"",
+      "startTelegram": "Mengukur Level 'Kemalasan' Maksimalku 🛋️ Tantangan \"ada yang lebih malas dari aku?\"",
+      "startLine": "Mengukur Level 'Kemalasan' Maksimalku 🛋️ Tantangan \"ada yang lebih malas dari aku?\""
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

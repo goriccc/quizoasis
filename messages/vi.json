@@ -10182,6 +10182,61 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3LazinessMaxLevelTest": {
+    "startMessage": {
+      "line1": "Sự lười biếng cũng có cấp độ.",
+      "line2": "Người để bưu phẩm trước cửa 3 ngày không lấy, người phải vặn mình theo tư thế kỳ lạ để cầm điện thoại vì dây sạc không đủ dài, người nghĩ \"phải trả lời tin nhắn\" rồi một tuần trôi qua. Trên thế gian có rất nhiều kiểu lười biếng khác nhau.",
+      "line3": "Tôi thuộc cấp độ nào đây?",
+      "line4": "Đo mức độ lười biếng tối đa của bạn qua 12 tình huống thực tế. Xem kết quả xong, bạn sẽ hoặc hét lên \"Ai lười hơn tôi thì ra đây\", hoặc lặng lẽ giấu kết quả đi.",
+      "line5": "Bắt đầu đo mức lười biếng tối đa 🛋️ Thử thách trung thực",
+      "note": "※ Ở mỗi tình huống, hãy chọn đáp án gần với bạn nhất. Càng trung thực, kết quả càng chính xác."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo mức lười biếng tối đa",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Đo mức 'Lười biếng' tối đa của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "lazinessGrade": "🏅 Cấp độ lười biếng",
+      "lazinessIndex": "📊 Chỉ số lười biếng"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Đo mức 'Lười biếng' tối đa của tôi 🛋️ Thử thách \"ai lười hơn tôi thì ra đây\"",
+      "startKakao": "Đo mức 'Lười biếng' tối đa của tôi 🛋️ Thử thách \"ai lười hơn tôi thì ra đây\"",
+      "startWechat": "Đo mức 'Lười biếng' tối đa của tôi 🛋️ Thử thách \"ai lười hơn tôi thì ra đây\"",
+      "startWhatsapp": "Đo mức 'Lười biếng' tối đa của tôi 🛋️ Thử thách \"ai lười hơn tôi thì ra đây\"",
+      "startTelegram": "Đo mức 'Lười biếng' tối đa của tôi 🛋️ Thử thách \"ai lười hơn tôi thì ra đây\"",
+      "startLine": "Đo mức 'Lười biếng' tối đa của tôi 🛋️ Thử thách \"ai lười hơn tôi thì ra đây\""
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

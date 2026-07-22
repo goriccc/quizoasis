@@ -10320,6 +10320,61 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3LazinessMaxLevelTest": {
+    "startMessage": {
+      "line1": "귀차니즘에도 급수가 있습니다.",
+      "line2": "택배를 문 앞에 3일 두는 사람, 충전기가 닿지 않아 폰 든 채 뒤틀린 자세로 버티는 사람, 답장 보내야지 생각하다 일주일 지난 사람. 세상에는 다양한 귀차니즘이 있습니다.",
+      "line3": "나는 어느 급수일까요?",
+      "line4": "12가지 실제 상황극으로 나의 귀차니즘 만렙을 측정합니다. 결과를 보고 \"나보다 게으른 사람 있으면 나와봐\"를 외치거나, 조용히 결과를 숨기거나 둘 중 하나가 됩니다.",
+      "line5": "귀차니즘 만렙 측정 시작 🛋️ 솔직하게 도전",
+      "note": "※ 각 상황극에서 나에게 가장 가까운 선택지를 고르세요. 솔직할수록 정확합니다."
+    },
+    "ui": {
+      "startTest": "귀차니즘 만렙 측정 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나의 '귀차니즘' 만렙 측정)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "lazinessGrade": "🏅 귀차니즘 급수",
+      "lazinessIndex": "📊 게으름 지수"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 '귀차니즘' 만렙 측정 🛋️ 나보다 게으른 사람 있으면 나와봐 챌린지",
+      "startKakao": "나의 '귀차니즘' 만렙 측정 🛋️ 나보다 게으른 사람 있으면 나와봐 챌린지",
+      "startWechat": "나의 '귀차니즘' 만렙 측정 🛋️ 나보다 게으른 사람 있으면 나와봐 챌린지",
+      "startWhatsapp": "나의 '귀차니즘' 만렙 측정 🛋️ 나보다 게으른 사람 있으면 나와봐 챌린지",
+      "startTelegram": "나의 '귀차니즘' 만렙 측정 🛋️ 나보다 게으른 사람 있으면 나와봐 챌린지",
+      "startLine": "나의 '귀차니즘' 만렙 측정 🛋️ 나보다 게으른 사람 있으면 나와봐 챌린지"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

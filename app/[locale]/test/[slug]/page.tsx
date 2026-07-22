@@ -136,6 +136,10 @@ import {
   phase3AiEraJobSurvivalScoreResults,
 } from '@/lib/phase3AiEraJobSurvivalScoreData';
 import {
+  phase3LazinessMaxLevelQuestions,
+  phase3LazinessMaxLevelResults,
+} from '@/lib/phase3LazinessMaxLevelData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -575,6 +579,10 @@ const Phase3SoulmateFinderTestClient = dynamic(
 );
 const Phase3AiEraJobSurvivalScoreTestClient = dynamic(
   () => import('@/components/Phase3AiEraJobSurvivalScoreTestClient'),
+  { ssr: false }
+);
+const Phase3LazinessMaxLevelTestClient = dynamic(
+  () => import('@/components/Phase3LazinessMaxLevelTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1176,6 +1184,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['MBTI', '朋友', '心理'],
         vi: ['MBTI', 'Bạn bè', 'Tâm lý'],
         id: ['MBTI', 'Teman', 'Psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-laziness-max-level') {
+    test = {
+      slug: 'phase3-laziness-max-level',
+      title: {
+        ko: "나의 '귀차니즘' 만렙 측정",
+        en: "Measuring My 'Laziness' Max Level",
+        ja: '私の「めんどくさがり」満レベル測定',
+        'zh-CN': '测测我的「懒惰」满级值',
+        'zh-TW': '測測我的「懶惰」滿級值',
+        vi: "Đo mức 'Lười biếng' tối đa của tôi",
+        id: "Mengukur Level 'Kemalasan' Maksimalku",
+      },
+      description: {
+        ko: '12가지 실제 상황극으로 나의 귀차니즘 만렙을 측정합니다.',
+        en: '12 real-life scenarios measure your laziness max level.',
+        ja: '12個のリアルなシチュエーション劇で、あなたの「めんどくさがり」満レベルを測定します。',
+        'zh-CN': '通过12个真实场景测测你的懒惰满级值。',
+        'zh-TW': '透過12個真實場景測測你的懶惰滿級值。',
+        vi: 'Đo mức độ lười biếng tối đa của bạn qua 12 tình huống thực tế.',
+        id: 'Ukur level kemalasan maksimalmu lewat 12 skenario nyata.',
+      },
+      thumbnail: 'p3_test_laziness_max_level.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['귀차니즘', '게으름', '공감'],
+        en: ['laziness', 'procrastination', 'relatable'],
+        ja: ['めんどくさがり', 'だらだら', '共感'],
+        'zh-CN': ['懒惰', '拖延', '共鸣'],
+        'zh-TW': ['懶惰', '拖延', '共鳴'],
+        vi: ['lười biếng', 'trì hoãn', 'đồng cảm'],
+        id: ['kemalasan', 'menunda', 'relatable'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -5719,6 +5764,61 @@ export default async function TestPage({ params }: Props) {
           }
           questions={phase3FriendSeesMyMbtiQuestions}
           questionCount={phase3FriendSeesMyMbtiQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-laziness-max-level') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-laziness-max-level',
+      title: {
+        ko: "나의 '귀차니즘' 만렙 측정",
+        en: "Measuring My 'Laziness' Max Level",
+        ja: '私の「めんどくさがり」満レベル測定',
+        'zh-CN': '测测我的「懒惰」满级值',
+        'zh-TW': '測測我的「懶惰」滿級值',
+        vi: "Đo mức 'Lười biếng' tối đa của tôi",
+        id: "Mengukur Level 'Kemalasan' Maksimalku",
+      },
+      description: {
+        ko: '12가지 실제 상황극으로 나의 귀차니즘 만렙을 측정합니다.',
+        en: '12 real-life scenarios measure your laziness max level.',
+        ja: '12個のリアルなシチュエーション劇で、あなたの「めんどくさがり」満レベルを測定します。',
+        'zh-CN': '通过12个真实场景测测你的懒惰满级值。',
+        'zh-TW': '透過12個真實場景測測你的懶惰滿級值。',
+        vi: 'Đo mức độ lười biếng tối đa của bạn qua 12 tình huống thực tế.',
+        id: 'Ukur level kemalasan maksimalmu lewat 12 skenario nyata.',
+      },
+      thumbnail: 'p3_test_laziness_max_level.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['귀차니즘', '게으름', '공감'],
+        en: ['laziness', 'procrastination', 'relatable'],
+        ja: ['めんどくさがり', 'だらだら', '共感'],
+        'zh-CN': ['懒惰', '拖延', '共鸣'],
+        'zh-TW': ['懶惰', '拖延', '共鳴'],
+        vi: ['lười biếng', 'trì hoãn', 'đồng cảm'],
+        id: ['kemalasan', 'menunda', 'relatable'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LazinessMaxLevelTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LazinessMaxLevelQuestions}
+          results={phase3LazinessMaxLevelResults}
+          questionCount={phase3LazinessMaxLevelQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

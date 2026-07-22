@@ -10182,6 +10182,61 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3LazinessMaxLevelTest": {
+    "startMessage": {
+      "line1": "懒惰也是有等级的。",
+      "line2": "快递放门口三天不拿的人、充电线不够长只能保持扭曲姿势玩手机的人、想着要回消息结果一周过去了的人。这个世界上存在各种各样的懒惰。",
+      "line3": "我到底是哪个等级呢？",
+      "line4": "通过12个真实场景测测你的懒惰满级值。看完结果，你要么会喊出「有比我更懒的人就站出来」，要么会默默把结果藏起来。",
+      "line5": "开始测试懒惰满级值 🛋️ 诚实挑战",
+      "note": "※ 请在每个场景中选择最接近自己的选项。越诚实，结果越准确。"
+    },
+    "ui": {
+      "startTest": "开始测试懒惰满级值",
+      "shareWithFriends": "和朋友一起测",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "再测一次",
+      "otherTests": "看看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区（测测我的「懒惰」满级值）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "lazinessGrade": "🏅 懒惰等级",
+      "lazinessIndex": "📊 懒惰指数"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "测测我的「懒惰」满级值 🛋️ 有比我更懒的人就站出来挑战",
+      "startKakao": "测测我的「懒惰」满级值 🛋️ 有比我更懒的人就站出来挑战",
+      "startWechat": "测测我的「懒惰」满级值 🛋️ 有比我更懒的人就站出来挑战",
+      "startWhatsapp": "测测我的「懒惰」满级值 🛋️ 有比我更懒的人就站出来挑战",
+      "startTelegram": "测测我的「懒惰」满级值 🛋️ 有比我更懒的人就站出来挑战",
+      "startLine": "测测我的「懒惰」满级值 🛋️ 有比我更懒的人就站出来挑战"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "热门",
