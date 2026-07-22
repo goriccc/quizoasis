@@ -10574,6 +10574,60 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3OfficeVillainProbabilityTest": {
+    "startMessage": {
+      "line1": "Tôi có phải là người tốt ở công ty không?",
+      "line2": "Chắc hầu hết mọi người sẽ nghĩ \"có\". Nhưng nếu thành thật nhìn lại, bạn đã bao giờ lướt điện thoại trong lúc họp, lén ăn đồ trong tủ lạnh chung, đẩy việc cho người khác trước giờ về 5 phút, hay biến đồng nghiệp thành thùng rác cảm xúc chưa?",
+      "line3": "Không có ý xấu nhưng kết quả lại khiến người xung quanh mệt mỏi. Đó chính là bản chất của \"phản diện công sở\".",
+      "line4": "12 tình huống văn phòng thực tế sẽ đo lường trung thực xác suất bạn là phản diện công sở. Xem thử bạn có phải là nhân vật chính trong những câu chuyện bắt gặp phản diện công sở được đăng trên Blind hay không.",
+      "line5": "Đo xác suất phản diện công sở của tôi 😈 Bắt đầu trung thực",
+      "note": "※ Ở mỗi tình huống, hãy chọn phương án gần nhất với bạn. Càng trung thực, kết quả càng chính xác."
+    },
+    "ui": {
+      "startTest": "Bắt đầu đo xác suất phản diện công sở",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Xác suất tôi trở thành 'Phản diện công sở'?)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "probability": "😈 Xác suất phản diện công sở"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Xác suất tôi trở thành 'Phản diện công sở'? 😈 Tôi có bao nhiêu %?",
+      "startKakao": "Xác suất tôi trở thành 'Phản diện công sở'? 😈 Tôi có bao nhiêu %?",
+      "startWechat": "Xác suất tôi trở thành 'Phản diện công sở'? 😈 Tôi có bao nhiêu %?",
+      "startWhatsapp": "Xác suất tôi trở thành 'Phản diện công sở'? 😈 Tôi có bao nhiêu %?",
+      "startTelegram": "Xác suất tôi trở thành 'Phản diện công sở'? 😈 Tôi có bao nhiêu %?",
+      "startLine": "Xác suất tôi trở thành 'Phản diện công sở'? 😈 Tôi có bao nhiêu %?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "badges": {
     "new": "MỚI",
     "popular": "Phổ biến",

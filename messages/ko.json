@@ -10712,6 +10712,60 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3OfficeVillainProbabilityTest": {
+    "startMessage": {
+      "line1": "나는 회사에서 좋은 사람인가요?",
+      "line2": "아마 대부분은 \"그렇다\"고 생각합니다. 그런데 솔직히 돌아보면, 회의 중에 폰 보거나, 공용 냉장고 음식을 몰래 먹거나, 퇴근 5분 전에 업무를 던지거나, 동료한테 감정쓰레기통을 연 적이 있지 않나요?",
+      "line3": "나쁜 의도는 없는데 결과적으로 주변을 힘들게 하는 것. 그게 직장 빌런의 본질입니다.",
+      "line4": "12가지 실제 오피스 상황극으로 나의 직장 빌런 확률을 솔직하게 측정합니다. 블라인드에 올라오는 직장 빌런 목격담의 주인공이 나인지 아닌지 확인해보세요.",
+      "line5": "내 회사 빌런 확률 측정하기 😈 솔직하게 시작",
+      "note": "※ 각 상황극에서 나에게 가장 가까운 선택지를 고르세요. 솔직할수록 정확합니다."
+    },
+    "ui": {
+      "startTest": "회사 빌런 확률 측정 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (내가 '회사 빌런'이 될 확률?)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "probability": "😈 회사 빌런 확률"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내가 '회사 빌런'이 될 확률? 😈 나는 몇 %일까?",
+      "startKakao": "내가 '회사 빌런'이 될 확률? 😈 나는 몇 %일까?",
+      "startWechat": "내가 '회사 빌런'이 될 확률? 😈 나는 몇 %일까?",
+      "startWhatsapp": "내가 '회사 빌런'이 될 확률? 😈 나는 몇 %일까?",
+      "startTelegram": "내가 '회사 빌런'이 될 확률? 😈 나는 몇 %일까?",
+      "startLine": "내가 '회사 빌런'이 될 확률? 😈 나는 몇 %일까?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "badges": {
     "new": "NEW",
     "popular": "인기",

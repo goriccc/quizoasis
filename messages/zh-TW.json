@@ -10043,6 +10043,60 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3OfficeVillainProbabilityTest": {
+    "startMessage": {
+      "line1": "我在公司是個好人嗎？",
+      "line2": "大概大部分人都會想「是的」。但仔細回想一下，開會時看手機、偷吃公用冰箱裡的食物、下班前5分鐘把工作甩給別人、把同事當成情緒垃圾桶，你有過這些嗎？",
+      "line3": "沒有惡意，但結果卻讓身邊的人很難受，這就是職場反派的本質。",
+      "line4": "透過12個真實辦公室情境劇，真實測出你的職場反派機率。看看Blind上那些職場反派的目擊故事裡，主角是不是你。",
+      "line5": "測測我的職場反派機率 😈 誠實開始",
+      "note": "※ 請在每個情境中選擇最接近自己的選項。越誠實越準確。"
+    },
+    "ui": {
+      "startTest": "開始測試職場反派機率",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區（測測我成為「職場反派」的機率？）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "probability": "😈 職場反派機率"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "測測我成為「職場反派」的機率？ 😈 我是百分之多少？",
+      "startKakao": "測測我成為「職場反派」的機率？ 😈 我是百分之多少？",
+      "startWechat": "測測我成為「職場反派」的機率？ 😈 我是百分之多少？",
+      "startWhatsapp": "測測我成為「職場反派」的機率？ 😈 我是百分之多少？",
+      "startTelegram": "測測我成為「職場反派」的機率？ 😈 我是百分之多少？",
+      "startLine": "測測我成為「職場反派」的機率？ 😈 我是百分之多少？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在 WeChat 中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "badges": {
     "new": "新",
     "popular": "熱門",

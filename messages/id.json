@@ -10574,6 +10574,60 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3OfficeVillainProbabilityTest": {
+    "startMessage": {
+      "line1": "Apakah aku orang baik di kantor?",
+      "line2": "Mungkin sebagian besar orang berpikir \"iya\". Tapi kalau jujur direfleksikan, pernahkah kamu main HP saat rapat, diam-diam makan makanan di kulkas bersama, melempar tugas ke orang lain 5 menit sebelum jam pulang, atau menjadikan rekan kerja sebagai tempat sampah emosimu?",
+      "line3": "Tidak ada niat buruk, tapi hasilnya membuat orang sekitar lelah. Itulah esensi dari penjahat kantor.",
+      "line4": "12 skenario situasi kantor yang nyata mengukur secara jujur probabilitas kamu menjadi penjahat kantor. Cek apakah kamu tokoh utama di balik cerita-cerita penampakan penjahat kantor yang diposting di Blind.",
+      "line5": "Ukur Probabilitas Penjahat Kantorku 😈 Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang paling mendekati dirimu di setiap skenario. Semakin jujur, semakin akurat hasilnya."
+    },
+    "ui": {
+      "startTest": "Mulai Mengukur Probabilitas Penjahat Kantor",
+      "shareWithFriends": "Coba Bareng Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Kerjakan Tes",
+      "adsenseTitle": "Area Iklan AdSense (Probabilitas Aku Menjadi 'Penjahat Kantor')",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "probability": "😈 Probabilitas Penjahat Kantor"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Probabilitas Aku Menjadi 'Penjahat Kantor'? 😈 Aku berapa persen?",
+      "startKakao": "Probabilitas Aku Menjadi 'Penjahat Kantor'? 😈 Aku berapa persen?",
+      "startWechat": "Probabilitas Aku Menjadi 'Penjahat Kantor'? 😈 Aku berapa persen?",
+      "startWhatsapp": "Probabilitas Aku Menjadi 'Penjahat Kantor'? 😈 Aku berapa persen?",
+      "startTelegram": "Probabilitas Aku Menjadi 'Penjahat Kantor'? 😈 Aku berapa persen?",
+      "startLine": "Probabilitas Aku Menjadi 'Penjahat Kantor'? 😈 Aku berapa persen?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "badges": {
     "new": "BARU",
     "popular": "Populer",

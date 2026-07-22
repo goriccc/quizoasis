@@ -164,6 +164,10 @@ import {
   phase3HundredBillionProbabilityResults,
 } from '@/lib/phase3HundredBillionProbabilityData';
 import {
+  phase3OfficeVillainProbabilityQuestions,
+  phase3OfficeVillainProbabilityResults,
+} from '@/lib/phase3OfficeVillainProbabilityData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -631,6 +635,10 @@ const Phase3PersonalBrandingKeywordsTestClient = dynamic(
 );
 const Phase3HundredBillionProbabilityTestClient = dynamic(
   () => import('@/components/Phase3HundredBillionProbabilityTestClient'),
+  { ssr: false }
+);
+const Phase3OfficeVillainProbabilityTestClient = dynamic(
+  () => import('@/components/Phase3OfficeVillainProbabilityTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1380,6 +1388,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['100億', '富翁', '理財', '心態', '金錢'],
         vi: ['100 tỷ', 'giàu', 'đầu tư', 'mindset', 'tiền'],
         id: ['100 miliar', 'kaya', 'investasi', 'mindset', 'uang'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-office-villain-probability') {
+    test = {
+      slug: 'phase3-office-villain-probability',
+      title: {
+        ko: "내가 '회사 빌런'이 될 확률?",
+        en: "What's My Odds of Becoming an 'Office Villain'?",
+        ja: '私が「オフィス悪役」になる確率は？',
+        'zh-CN': '我成为「职场反派」的概率？',
+        'zh-TW': '我成為「職場反派」的機率？',
+        vi: "Xác suất tôi trở thành 'phản diện công sở'?",
+        id: "Berapa Peluangku Jadi 'Penjahat Kantor'?",
+      },
+      description: {
+        ko: '12가지 오피스 상황극으로 나의 직장 빌런 확률을 솔직하게 측정합니다.',
+        en: '12 real office scenarios honestly measure your odds of being a workplace villain.',
+        ja: '12のオフィス状況劇で、あなたの職場悪役確率を正直に測定します。',
+        'zh-CN': '通过12个办公室情景剧，诚实测量你成为职场反派的概率。',
+        'zh-TW': '透過12個辦公室情境劇，誠實測量你成為職場反派的機率。',
+        vi: '12 tình huống văn phòng đo xác suất bạn trở thành phản diện công sở một cách thẳng thắn.',
+        id: '12 skenario kantor mengukur peluangmu jadi penjahat kantor secara jujur.',
+      },
+      thumbnail: 'p3_test_office_villain_probability.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['회사빌런', '직장인', '오피스', '공감', '블라인드'],
+        en: ['office villain', 'office worker', 'office', 'relatable', 'Blind'],
+        ja: ['オフィス悪役', '会社員', 'オフィス', '共感', 'Blind'],
+        'zh-CN': ['职场反派', '上班族', '办公室', '共鸣', 'Blind'],
+        'zh-TW': ['職場反派', '上班族', '辦公室', '共鳴', 'Blind'],
+        vi: ['phản diện công sở', 'nhân viên văn phòng', 'văn phòng', 'đồng cảm', 'Blind'],
+        id: ['penjahat kantor', 'pekerja kantor', 'kantor', 'relatable', 'Blind'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -6254,6 +6299,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3HundredBillionProbabilityQuestions}
           results={phase3HundredBillionProbabilityResults}
           questionCount={phase3HundredBillionProbabilityQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-office-villain-probability') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-office-villain-probability',
+      title: {
+        ko: "내가 '회사 빌런'이 될 확률?",
+        en: "What's My Odds of Becoming an 'Office Villain'?",
+        ja: '私が「オフィス悪役」になる確率は？',
+        'zh-CN': '我成为「职场反派」的概率？',
+        'zh-TW': '我成為「職場反派」的機率？',
+        vi: "Xác suất tôi trở thành 'phản diện công sở'?",
+        id: "Berapa Peluangku Jadi 'Penjahat Kantor'?",
+      },
+      description: {
+        ko: '12가지 오피스 상황극으로 나의 직장 빌런 확률을 솔직하게 측정합니다.',
+        en: '12 real office scenarios honestly measure your odds of being a workplace villain.',
+        ja: '12のオフィス状況劇で、あなたの職場悪役確率を正直に測定します。',
+        'zh-CN': '通过12个办公室情景剧，诚实测量你成为职场反派的概率。',
+        'zh-TW': '透過12個辦公室情境劇，誠實測量你成為職場反派的機率。',
+        vi: '12 tình huống văn phòng đo xác suất bạn trở thành phản diện công sở một cách thẳng thắn.',
+        id: '12 skenario kantor mengukur peluangmu jadi penjahat kantor secara jujur.',
+      },
+      thumbnail: 'p3_test_office_villain_probability.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['회사빌런', '직장인', '오피스', '공감', '블라인드'],
+        en: ['office villain', 'office worker', 'office', 'relatable', 'Blind'],
+        ja: ['オフィス悪役', '会社員', 'オフィス', '共感', 'Blind'],
+        'zh-CN': ['职场反派', '上班族', '办公室', '共鸣', 'Blind'],
+        'zh-TW': ['職場反派', '上班族', '辦公室', '共鳴', 'Blind'],
+        vi: ['phản diện công sở', 'nhân viên văn phòng', 'văn phòng', 'đồng cảm', 'Blind'],
+        id: ['penjahat kantor', 'pekerja kantor', 'kantor', 'relatable', 'Blind'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3OfficeVillainProbabilityTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3OfficeVillainProbabilityQuestions}
+          results={phase3OfficeVillainProbabilityResults}
+          questionCount={phase3OfficeVillainProbabilityQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
