@@ -10168,5 +10168,71 @@
     "new": "新",
     "popular": "熱門",
     "hot": "熱門"
+  },
+  "phase3DailyMindWeatherReportTest": {
+    "startMessage": {
+      "line1": "今天你的心是什麼天氣？",
+      "line2": "像天空一樣，心裡的天氣每天都在變。昨天可能晴，今天可能陰；早上下雨，傍晚也可能出現彩虹。",
+      "line3": "憑直覺選6張圖，就能完成今天的心天氣報告。沒有標準答案，只是看看此刻的自己。",
+      "line4": "別想太多，選最有感覺的那張。",
+      "line5": "開始今天的心天氣打卡 ☁️ 馬上開始",
+      "note": "※ 憑直覺選擇最接近今天狀態的圖片。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（今天的『心天氣』報告）",
+      "goToTest": "去做測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "questionHint": "憑直覺選擇最接近今天狀態的圖片。",
+      "weatherLabel": "☁️ 今天的心天氣",
+      "temperature": "🌡️ 今天的氣溫",
+      "todayAdvice": "💬 給今天的一句話",
+      "suitableThings": "✨ 今天適合你的事",
+      "emotionLine": "📝 今天的情感一句",
+      "tomorrowCheck": "🔁 明天也來打卡",
+      "crisisNote": "💙 今天的關照提示",
+      "yesterdayCompare": "📅 昨天和今天對比",
+      "monthCalendar": "📆 {year}年{month}月 心天氣日曆",
+      "streakCount": "連續打卡 {count} 天",
+      "shareResult": "分享結果",
+      "weekdaySun": "日",
+      "weekdayMon": "一",
+      "weekdayTue": "二",
+      "weekdayWed": "三",
+      "weekdayThu": "四",
+      "weekdayFri": "五",
+      "weekdaySat": "六"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "今天的『心天氣』報告 ☁️ 此刻你的心是什麼天氣？",
+      "startKakao": "今天的『心天氣』報告 ☁️ 此刻你的心是什麼天氣？",
+      "startWechat": "今天的『心天氣』報告 ☁️ 此刻你的心是什麼天氣？",
+      "startWhatsapp": "今天的『心天氣』報告 ☁️ 此刻你的心是什麼天氣？",
+      "startTelegram": "今天的『心天氣』報告 ☁️ 此刻你的心是什麼天氣？",
+      "startLine": "今天的『心天氣』報告 ☁️ 此刻你的心是什麼天氣？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時出錯。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦Top5",
+      "popularTestsTop5": "🔥 近期熱門測試推薦Top5"
+    }
   }
 }

@@ -10708,5 +10708,71 @@
     "new": "NEW",
     "popular": "Popular",
     "hot": "HOT"
+  },
+  "phase3DailyMindWeatherReportTest": {
+    "startMessage": {
+      "line1": "What's the weather like in your heart today?",
+      "line2": "Just like the sky, your inner weather changes every day. Yesterday could be sunny and today cloudy; morning rain can turn into an evening rainbow.",
+      "line3": "Pick 6 images by gut feeling and your mind-weather report is done. No analysis score to chase—just a moment to see yourself now.",
+      "line4": "Don't overthink. Choose the image that pulls you.",
+      "line5": "Check today's mind weather ☁️ Start now",
+      "note": "※ Intuitively pick the image closest to how you feel today."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (Today's Mind Weather Report)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "questionHint": "Intuitively pick the image closest to how you feel today.",
+      "weatherLabel": "☁️ Today's Mind Weather",
+      "temperature": "🌡️ Today's Temperature",
+      "todayAdvice": "💬 A line for today",
+      "suitableThings": "✨ What fits you today",
+      "emotionLine": "📝 Today's emotion in one line",
+      "tomorrowCheck": "🔁 Check again tomorrow",
+      "crisisNote": "💙 Care note for today",
+      "yesterdayCompare": "📅 Yesterday vs today",
+      "monthCalendar": "📆 {year}/{month} Mind Weather Calendar",
+      "streakCount": "{count}-day streak",
+      "shareResult": "Share Result",
+      "weekdaySun": "Sun",
+      "weekdayMon": "Mon",
+      "weekdayTue": "Tue",
+      "weekdayWed": "Wed",
+      "weekdayThu": "Thu",
+      "weekdayFri": "Fri",
+      "weekdaySat": "Sat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Today's Mind Weather Report ☁️ What's your inner weather right now?",
+      "startKakao": "Today's Mind Weather Report ☁️ What's your inner weather right now?",
+      "startWechat": "Today's Mind Weather Report ☁️ What's your inner weather right now?",
+      "startWhatsapp": "Today's Mind Weather Report ☁️ What's your inner weather right now?",
+      "startTelegram": "Today's Mind Weather Report ☁️ What's your inner weather right now?",
+      "startLine": "Today's Mind Weather Report ☁️ What's your inner weather right now?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
   }
 }

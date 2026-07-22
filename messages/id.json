@@ -10699,5 +10699,71 @@
     "new": "BARU",
     "popular": "Populer",
     "hot": "HOT"
+  },
+  "phase3DailyMindWeatherReportTest": {
+    "startMessage": {
+      "line1": "Cuaca hatimu hari ini seperti apa?",
+      "line2": "Seperti langit, cuaca batin juga berubah setiap hari. Kemarin cerah, hari ini bisa mendung; hujan pagi bisa jadi pelangi sore.",
+      "line3": "Pilih 6 gambar secara intuisi, laporan cuaca hati hari ini selesai. Tidak ada jawaban benar—hanya melihat dirimu sekarang.",
+      "line4": "Jangan terlalu dipikir. Pilih yang paling menarik.",
+      "line5": "Cek cuaca hati hari ini ☁️ Mulai sekarang",
+      "note": "※ Pilih gambar yang paling dekat dengan kondisimu hari ini secara intuisi."
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Laporan Cuaca Hati Hari Ini)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "questionHint": "Pilih gambar yang paling dekat dengan kondisimu hari ini secara intuisi.",
+      "weatherLabel": "☁️ Cuaca hati hari ini",
+      "temperature": "🌡️ Suhu hari ini",
+      "todayAdvice": "💬 Satu kalimat untuk hari ini",
+      "suitableThings": "✨ Yang cocok untukmu hari ini",
+      "emotionLine": "📝 Emosi hari ini dalam satu baris",
+      "tomorrowCheck": "🔁 Cek lagi besok",
+      "crisisNote": "💙 Catatan perawatan hari ini",
+      "yesterdayCompare": "📅 Bandingkan kemarin & hari ini",
+      "monthCalendar": "📆 Kalender cuaca hati {month}/{year}",
+      "streakCount": "Streak {count} hari",
+      "shareResult": "Bagikan hasil",
+      "weekdaySun": "Min",
+      "weekdayMon": "Sen",
+      "weekdayTue": "Sel",
+      "weekdayWed": "Rab",
+      "weekdayThu": "Kam",
+      "weekdayFri": "Jum",
+      "weekdaySat": "Sab"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Laporan Cuaca Hati Hari Ini ☁️ Cuaca hatimu sekarang seperti apa?",
+      "startKakao": "Laporan Cuaca Hati Hari Ini ☁️ Cuaca hatimu sekarang seperti apa?",
+      "startWechat": "Laporan Cuaca Hati Hari Ini ☁️ Cuaca hatimu sekarang seperti apa?",
+      "startWhatsapp": "Laporan Cuaca Hati Hari Ini ☁️ Cuaca hatimu sekarang seperti apa?",
+      "startTelegram": "Laporan Cuaca Hati Hari Ini ☁️ Cuaca hatimu sekarang seperti apa?",
+      "startLine": "Laporan Cuaca Hati Hari Ini ☁️ Cuaca hatimu sekarang seperti apa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }

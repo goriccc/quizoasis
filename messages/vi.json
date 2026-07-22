@@ -10699,5 +10699,71 @@
     "new": "MỚI",
     "popular": "Phổ biến",
     "hot": "HOT"
+  },
+  "phase3DailyMindWeatherReportTest": {
+    "startMessage": {
+      "line1": "Hôm nay thời tiết trong lòng bạn thế nào?",
+      "line2": "Giống như bầu trời, thời tiết trong lòng cũng đổi mỗi ngày. Hôm qua nắng, hôm nay có thể u ám; mưa sáng có thể thành cầu vồng buổi tối.",
+      "line3": "Chọn 6 hình theo trực giác là xong báo cáo thời tiết tâm trạng. Không có đáp án đúng—chỉ là nhìn bản thân lúc này.",
+      "line4": "Đừng nghĩ nhiều. Chọn hình khiến bạn bị hút.",
+      "line5": "Check thời tiết lòng hôm nay ☁️ Bắt đầu ngay",
+      "note": "※ Hãy chọn hình gần nhất với trạng thái hôm nay theo trực giác."
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Báo cáo thời tiết lòng hôm nay)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "questionHint": "Hãy chọn hình gần nhất với trạng thái hôm nay theo trực giác.",
+      "weatherLabel": "☁️ Thời tiết lòng hôm nay",
+      "temperature": "🌡️ Nhiệt độ hôm nay",
+      "todayAdvice": "💬 Một câu cho hôm nay",
+      "suitableThings": "✨ Điều hợp với bạn hôm nay",
+      "emotionLine": "📝 Cảm xúc hôm nay một dòng",
+      "tomorrowCheck": "🔁 Mai cũng check nhé",
+      "crisisNote": "💙 Lời nhắc chăm sóc hôm nay",
+      "yesterdayCompare": "📅 So sánh hôm qua và hôm nay",
+      "monthCalendar": "📆 Lịch thời tiết lòng {month}/{year}",
+      "streakCount": "Chuỗi {count} ngày liên tiếp",
+      "shareResult": "Chia sẻ kết quả",
+      "weekdaySun": "CN",
+      "weekdayMon": "T2",
+      "weekdayTue": "T3",
+      "weekdayWed": "T4",
+      "weekdayThu": "T5",
+      "weekdayFri": "T6",
+      "weekdaySat": "T7"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Báo cáo thời tiết lòng hôm nay ☁️ Lòng bạn đang thế nào?",
+      "startKakao": "Báo cáo thời tiết lòng hôm nay ☁️ Lòng bạn đang thế nào?",
+      "startWechat": "Báo cáo thời tiết lòng hôm nay ☁️ Lòng bạn đang thế nào?",
+      "startWhatsapp": "Báo cáo thời tiết lòng hôm nay ☁️ Lòng bạn đang thế nào?",
+      "startTelegram": "Báo cáo thời tiết lòng hôm nay ☁️ Lòng bạn đang thế nào?",
+      "startLine": "Báo cáo thời tiết lòng hôm nay ☁️ Lòng bạn đang thế nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau nhé.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

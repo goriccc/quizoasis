@@ -172,6 +172,10 @@ import {
   phase3Balance99UltimateResults,
 } from '@/lib/phase3Balance99UltimateData';
 import {
+  phase3DailyMindWeatherReportQuestions,
+  phase3DailyMindWeatherReportResults,
+} from '@/lib/phase3DailyMindWeatherReportData';
+import {
   phase3CoupleBreakupRiskQuestions,
   phase3CoupleBreakupRiskResults,
 } from '@/lib/phase3CoupleBreakupRiskData';
@@ -647,6 +651,10 @@ const Phase3OfficeVillainProbabilityTestClient = dynamic(
 );
 const Phase3Balance99UltimateTestClient = dynamic(
   () => import('@/components/Phase3Balance99UltimateTestClient'),
+  { ssr: false }
+);
+const Phase3DailyMindWeatherReportTestClient = dynamic(
+  () => import('@/components/Phase3DailyMindWeatherReportTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1470,6 +1478,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['二選一', '99', '極限選擇', '朋友對決', '默契'],
         vi: ['would you rather', '99', 'lựa chọn khó', 'đấu bạn', 'tương hợp'],
         id: ['would you rather', '99', 'pilihan sulit', 'duel teman', 'kecocokan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-daily-mind-weather-report') {
+    test = {
+      slug: 'phase3-daily-mind-weather-report',
+      title: {
+        ko: "오늘 나의 '마음 날씨' 리포트",
+        en: "Today's Mind Weather Report",
+        ja: "今日の『心天気』レポート",
+        'zh-CN': "今天的『心天气』报告",
+        'zh-TW': "今天的『心天氣』報告",
+        vi: "Báo cáo thời tiết lòng hôm nay",
+        id: "Laporan Cuaca Hati Hari Ini",
+      },
+      description: {
+        ko: '6가지 이미지를 직관적으로 선택하면 오늘 나의 마음 날씨 리포트가 완성됩니다.',
+        en: 'Pick 6 images by gut feeling and get your mind-weather report for today.',
+        ja: '6枚の画像を直感で選ぶと、今日の心天気レポートが完成します。',
+        'zh-CN': '凭直觉选择6张图，即可完成今天的心天气报告。',
+        'zh-TW': '憑直覺選擇6張圖，即可完成今天的心天氣報告。',
+        vi: 'Chọn 6 hình theo trực giác để hoàn thành báo cáo thời tiết lòng hôm nay.',
+        id: 'Pilih 6 gambar secara intuisi untuk menyelesaikan laporan cuaca hati hari ini.',
+      },
+      thumbnail: 'p3_daily_mind_weather_report.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['마음날씨', '감정체크', '오늘기분', '데일리', '멘탈케어'],
+        en: ['mind weather', 'mood check', 'daily mood', 'daily', 'mental care'],
+        ja: ['心天気', '感情チェック', '今日の気分', 'デイリー', 'メンタルケア'],
+        'zh-CN': ['心天气', '情绪打卡', '今日心情', '每日', '心理关怀'],
+        'zh-TW': ['心天氣', '情緒打卡', '今日心情', '每日', '心理關懷'],
+        vi: ['thời tiết lòng', 'check cảm xúc', 'tâm trạng hôm nay', 'hàng ngày', 'chăm sóc tinh thần'],
+        id: ['cuaca hati', 'cek emosi', 'mood hari ini', 'harian', 'perawatan mental'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -6454,6 +6499,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3Balance99UltimateQuestions}
           results={phase3Balance99UltimateResults}
           questionCount={phase3Balance99UltimateQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-daily-mind-weather-report') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-daily-mind-weather-report',
+      title: {
+        ko: "오늘 나의 '마음 날씨' 리포트",
+        en: "Today's Mind Weather Report",
+        ja: "今日の『心天気』レポート",
+        'zh-CN': "今天的『心天气』报告",
+        'zh-TW': "今天的『心天氣』報告",
+        vi: "Báo cáo thời tiết lòng hôm nay",
+        id: "Laporan Cuaca Hati Hari Ini",
+      },
+      description: {
+        ko: '6가지 이미지를 직관적으로 선택하면 오늘 나의 마음 날씨 리포트가 완성됩니다.',
+        en: 'Pick 6 images by gut feeling and get your mind-weather report for today.',
+        ja: '6枚の画像を直感で選ぶと、今日の心天気レポートが完成します。',
+        'zh-CN': '凭直觉选择6张图，即可完成今天的心天气报告。',
+        'zh-TW': '憑直覺選擇6張圖，即可完成今天的心天氣報告。',
+        vi: 'Chọn 6 hình theo trực giác để hoàn thành báo cáo thời tiết lòng hôm nay.',
+        id: 'Pilih 6 gambar secara intuisi untuk menyelesaikan laporan cuaca hati hari ini.',
+      },
+      thumbnail: 'p3_daily_mind_weather_report.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['마음날씨', '감정체크', '오늘기분', '데일리', '멘탈케어'],
+        en: ['mind weather', 'mood check', 'daily mood', 'daily', 'mental care'],
+        ja: ['心天気', '感情チェック', '今日の気分', 'デイリー', 'メンタルケア'],
+        'zh-CN': ['心天气', '情绪打卡', '今日心情', '每日', '心理关怀'],
+        'zh-TW': ['心天氣', '情緒打卡', '今日心情', '每日', '心理關懷'],
+        vi: ['thời tiết lòng', 'check cảm xúc', 'tâm trạng hôm nay', 'hàng ngày', 'chăm sóc tinh thần'],
+        id: ['cuaca hati', 'cek emosi', 'mood hari ini', 'harian', 'perawatan mental'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3DailyMindWeatherReportTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3DailyMindWeatherReportQuestions}
+          results={phase3DailyMindWeatherReportResults}
+          questionCount={phase3DailyMindWeatherReportQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

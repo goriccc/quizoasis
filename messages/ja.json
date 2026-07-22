@@ -10687,5 +10687,71 @@
     "new": "NEW",
     "popular": "人気",
     "hot": "HOT"
+  },
+  "phase3DailyMindWeatherReportTest": {
+    "startMessage": {
+      "line1": "今日、あなたの心の天気はどんな感じ？",
+      "line2": "空の天気と同じく、心の天気も毎日変わります。昨日は晴れていても今日は曇り、朝の雨が夕方には虹になることもあります。",
+      "line3": "6枚の画像を直感で選ぶと、今日の心天気レポートが完成します。分析も正解もありません。今の自分を見る時間です。",
+      "line4": "考えすぎず、惹かれる画像を選んでください。",
+      "line5": "今日の心天気チェック ☁️ 今すぐスタート",
+      "note": "※ 今日の自分の状態にいちばん近い画像を直感で選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（今日の『心天気』レポート）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "questionHint": "今日の自分の状態にいちばん近い画像を直感で選んでください。",
+      "weatherLabel": "☁️ 今日の心天気",
+      "temperature": "🌡️ 今日の気温",
+      "todayAdvice": "💬 今日のための一言",
+      "suitableThings": "✨ 今日のあなたに合うもの",
+      "emotionLine": "📝 今日の感情ひとこと",
+      "tomorrowCheck": "🔁 明日もチェック",
+      "crisisNote": "💙 今日のケア案内",
+      "yesterdayCompare": "📅 昨日と今日の比較",
+      "monthCalendar": "📆 {year}年{month}月 心天気カレンダー",
+      "streakCount": "{count}日連続チェック中",
+      "shareResult": "結果をシェア",
+      "weekdaySun": "日",
+      "weekdayMon": "月",
+      "weekdayTue": "火",
+      "weekdayWed": "水",
+      "weekdayThu": "木",
+      "weekdayFri": "金",
+      "weekdaySat": "土"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "今日の『心天気』レポート ☁️ 今の心の天気は？",
+      "startKakao": "今日の『心天気』レポート ☁️ 今の心の天気は？",
+      "startWechat": "今日の『心天気』レポート ☁️ 今の心の天気は？",
+      "startWhatsapp": "今日の『心天気』レポート ☁️ 今の心の天気は？",
+      "startTelegram": "今日の『心天気』レポート ☁️ 今の心の天気は？",
+      "startLine": "今日の『心天気』レポート ☁️ 今の心の天気は？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
   }
 }

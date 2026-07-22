@@ -10837,5 +10837,71 @@
     "new": "NEW",
     "popular": "인기",
     "hot": "HOT"
+  },
+  "phase3DailyMindWeatherReportTest": {
+    "startMessage": {
+      "line1": "오늘 내 마음은 어떤 날씨인가요?",
+      "line2": "매일 날씨를 확인하듯, 내 마음의 날씨도 매일 달라집니다. 어제는 맑았어도 오늘은 흐릴 수 있고, 아침엔 비가 내려도 저녁엔 무지개가 뜰 수 있습니다.",
+      "line3": "6가지 이미지를 직관적으로 선택하면 오늘 나의 마음 날씨 리포트가 완성됩니다. 분석도, 정답도 없습니다. 그냥 지금 이 순간의 나를 보는 시간입니다.",
+      "line4": "생각하지 말고, 끌리는 이미지를 고르세요.",
+      "line5": "오늘 마음 날씨 체크하기 ☁️ 지금 바로 시작",
+      "note": "※ 오늘의 내 상태와 가장 가까운 이미지를 직관적으로 선택하세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (오늘 나의 '마음 날씨' 리포트)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "questionHint": "오늘의 내 상태와 가장 가까운 이미지를 직관적으로 선택하세요.",
+      "weatherLabel": "☁️ 오늘의 마음 날씨",
+      "temperature": "🌡️ 오늘의 기온",
+      "todayAdvice": "💬 오늘 하루를 위한 한마디",
+      "suitableThings": "✨ 오늘 나에게 어울리는 것",
+      "emotionLine": "📝 오늘의 감정 한 줄",
+      "tomorrowCheck": "🔁 내일도 체크",
+      "crisisNote": "💙 오늘의 돌봄 안내",
+      "yesterdayCompare": "📅 어제와 오늘 비교",
+      "monthCalendar": "📆 {year}년 {month}월 마음 날씨 캘린더",
+      "streakCount": "{count}일 연속 체크 중",
+      "shareResult": "결과 공유하기",
+      "weekdaySun": "일",
+      "weekdayMon": "월",
+      "weekdayTue": "화",
+      "weekdayWed": "수",
+      "weekdayThu": "목",
+      "weekdayFri": "금",
+      "weekdaySat": "토"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "오늘 나의 '마음 날씨' 리포트 ☁️ 지금 내 마음은 어떤 날씨일까?",
+      "startKakao": "오늘 나의 '마음 날씨' 리포트 ☁️ 지금 내 마음은 어떤 날씨일까?",
+      "startWechat": "오늘 나의 '마음 날씨' 리포트 ☁️ 지금 내 마음은 어떤 날씨일까?",
+      "startWhatsapp": "오늘 나의 '마음 날씨' 리포트 ☁️ 지금 내 마음은 어떤 날씨일까?",
+      "startTelegram": "오늘 나의 '마음 날씨' 리포트 ☁️ 지금 내 마음은 어떤 날씨일까?",
+      "startLine": "오늘 나의 '마음 날씨' 리포트 ☁️ 지금 내 마음은 어떤 날씨일까?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }
