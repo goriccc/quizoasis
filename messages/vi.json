@@ -11140,5 +11140,63 @@
       "similarTestsTop5": "🎯 Gợi ý bài test tương tự Top 5",
       "popularTestsTop5": "🔥 Bài test đang hot Top 5"
     }
+  },
+  "phase3LonelinessConcentrationTest": {
+    "startMessage": {
+      "line1": "Cô đơn không phải cảm xúc xấu. Đó là tín hiệu rằng bạn cần kết nối.",
+      "line2": "Bạn có thể cô đơn giữa đám đông, và chẳng cô đơn chút nào khi ở một mình. Cô đơn không đến từ thời gian ở một mình, mà từ cảm giác thiếu kết nối thật sự.",
+      "line3": "Đo nồng độ cô đơn hiện tại qua 12 câu hỏi. Đây là sự hiểu biết, không phải chẩn đoán. Biết mình đang ở đâu — đó là khởi đầu.",
+      "line4": "Trả lời càng thành thật, nồng độ càng chính xác.",
+      "line5": "Đo nồng độ cô đơn của tôi 💙 Kiểm tra ngay"
+    },
+    "ui": {
+      "startTest": "Bắt đầu",
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Đi làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "concentration": "💙 Nồng độ cô đơn",
+      "currentState": "📍 Trạng thái hiện tại",
+      "strength": "⭐ Điểm mạnh",
+      "actions": "🌱 Việc có thể làm ngay",
+      "community": "🤝 Gợi ý cộng đồng",
+      "crisisNote": "💙 Nếu hôm nay thật sự khó khăn",
+      "oneLiner": "💬 Một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Hot",
+      "points": "điểm",
+      "plays": "lượt chơi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Đang đo nồng độ cô đơn của tôi 💙 Kiểm tra kết nối thật qua 12 câu. Bạn bao nhiêu %?",
+      "startKakao": "Đang đo nồng độ cô đơn của tôi 💙 Kiểm tra kết nối thật qua 12 câu. Bạn bao nhiêu %?",
+      "startWechat": "Đang đo nồng độ cô đơn của tôi 💙 Kiểm tra kết nối thật qua 12 câu. Bạn bao nhiêu %?",
+      "startWhatsapp": "Đang đo nồng độ cô đơn của tôi 💙 Kiểm tra kết nối thật qua 12 câu. Bạn bao nhiêu %?",
+      "startTelegram": "Đang đo nồng độ cô đơn của tôi 💙 Kiểm tra kết nối thật qua 12 câu. Bạn bao nhiêu %?",
+      "startLine": "Đang đo nồng độ cô đơn của tôi 💙 Kiểm tra kết nối thật qua 12 câu. Bạn bao nhiêu %?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

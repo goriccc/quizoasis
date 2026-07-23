@@ -11149,5 +11149,63 @@
       "similarTestsTop5": "🎯 Similar tests Top 5",
       "popularTestsTop5": "🔥 Popular tests Top 5"
     }
+  },
+  "phase3LonelinessConcentrationTest": {
+    "startMessage": {
+      "line1": "Loneliness isn't a bad emotion. It's a signal that you need connection.",
+      "line2": "You can feel lonely in a crowd, and not lonely at all when alone. Loneliness comes not from time spent alone, but from the feeling that real connection is missing.",
+      "line3": "Measure your loneliness concentration with 12 questions. This is understanding, not a diagnosis. Knowing where you are right now—that's where it starts.",
+      "line4": "The more honestly you answer, the more accurate your concentration will be.",
+      "line5": "Measure my loneliness concentration 💙 Check now"
+    },
+    "ui": {
+      "startTest": "Start",
+      "adsenseTitle": "Ad",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "concentration": "💙 Loneliness concentration",
+      "currentState": "📍 Current state",
+      "strength": "⭐ Strengths",
+      "actions": "🌱 What you can do now",
+      "community": "🤝 Community suggestions",
+      "crisisNote": "💙 If today feels really hard",
+      "oneLiner": "💬 One line",
+      "shareResult": "Share result",
+      "popularBadge": "HOT",
+      "points": "pts",
+      "plays": "plays"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Measuring my loneliness concentration 💙 Check real connection with 12 questions. What's your %?",
+      "startKakao": "Measuring my loneliness concentration 💙 Check real connection with 12 questions. What's your %?",
+      "startWechat": "Measuring my loneliness concentration 💙 Check real connection with 12 questions. What's your %?",
+      "startWhatsapp": "Measuring my loneliness concentration 💙 Check real connection with 12 questions. What's your %?",
+      "startTelegram": "Measuring my loneliness concentration 💙 Check real connection with 12 questions. What's your %?",
+      "startLine": "Measuring my loneliness concentration 💙 Check real connection with 12 questions. What's your %?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests right now"
+    }
   }
 }

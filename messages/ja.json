@@ -11128,5 +11128,63 @@
       "similarTestsTop5": "🎯 似ているテストおすすめ Top 5",
       "popularTestsTop5": "🔥 いま人気のテスト Top 5"
     }
+  },
+  "phase3LonelinessConcentrationTest": {
+    "startMessage": {
+      "line1": "孤独は悪い感情ではありません。つながりが必要だというサインです。",
+      "line2": "人混みの中でも孤独を感じることがあり、一人でも全く孤独でないこともあります。孤独は一人でいる時間からではなく、本当のつながりがないという感覚から来ます。",
+      "line3": "12の質問で今の孤独濃度を測定します。診断ではなく理解です。今の自分がどんな状態かを知ること、それが始まりです。",
+      "line4": "正直に答えるほど、より正確な濃度が出ます。",
+      "line5": "私の孤独濃度を測る 💙 今すぐチェック"
+    },
+    "ui": {
+      "startTest": "はじめる",
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "concentration": "💙 孤独濃度",
+      "currentState": "📍 現在の状態",
+      "strength": "⭐ 強み",
+      "actions": "🌱 今できること",
+      "community": "🤝 コミュニティの提案",
+      "crisisNote": "💙 今日とてもつらいなら",
+      "oneLiner": "💬 一言",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "points": "点",
+      "plays": "回プレイ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "孤独濃度を測定中 💙 12問で本当のつながりをチェック。あなたは何%？",
+      "startKakao": "孤独濃度を測定中 💙 12問で本当のつながりをチェック。あなたは何%？",
+      "startWechat": "孤独濃度を測定中 💙 12問で本当のつながりをチェック。あなたは何%？",
+      "startWhatsapp": "孤独濃度を測定中 💙 12問で本当のつながりをチェック。あなたは何%？",
+      "startTelegram": "孤独濃度を測定中 💙 12問で本当のつながりをチェック。あなたは何%？",
+      "startLine": "孤独濃度を測定中 💙 12問で本当のつながりをチェック。あなたは何%？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
   }
 }

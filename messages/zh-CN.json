@@ -11140,5 +11140,63 @@
       "similarTestsTop5": "🎯 类似测试推荐 Top 5",
       "popularTestsTop5": "🔥 热门测试推荐 Top 5"
     }
+  },
+  "phase3LonelinessConcentrationTest": {
+    "startMessage": {
+      "line1": "孤独不是坏情绪。它是需要连接的信号。",
+      "line2": "身处人群也可能感到孤独，独处时也可能一点都不孤独。孤独不是来自独处的时间，而是来自缺少真实连接的感觉。",
+      "line3": "用12个问题测量你现在的孤独浓度。这是理解，不是诊断。知道自己现在的状态——那就是开始。",
+      "line4": "回答越诚实，浓度越准确。",
+      "line5": "测测我的孤独浓度 💙 立即查看"
+    },
+    "ui": {
+      "startTest": "开始",
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "concentration": "💙 孤独浓度",
+      "currentState": "📍 当前状态",
+      "strength": "⭐ 优势",
+      "actions": "🌱 现在可以做的事",
+      "community": "🤝 社区建议",
+      "crisisNote": "💙 如果今天真的很难熬",
+      "oneLiner": "💬 一句话",
+      "shareResult": "分享结果",
+      "popularBadge": "热门",
+      "points": "分",
+      "plays": "次游玩"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "正在测量我的孤独浓度 💙 用12题检查真实连接。你是几%？",
+      "startKakao": "正在测量我的孤独浓度 💙 用12题检查真实连接。你是几%？",
+      "startWechat": "正在测量我的孤独浓度 💙 用12题检查真实连接。你是几%？",
+      "startWhatsapp": "正在测量我的孤独浓度 💙 用12题检查真实连接。你是几%？",
+      "startTelegram": "正在测量我的孤独浓度 💙 用12题检查真实连接。你是几%？",
+      "startLine": "正在测量我的孤独浓度 💙 用12题检查真实连接。你是几%？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐Top5",
+      "popularTestsTop5": "🔥 热门测试推荐Top5"
+    }
   }
 }

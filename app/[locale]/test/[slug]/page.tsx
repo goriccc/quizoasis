@@ -63,6 +63,10 @@ import {
   phase3DittoConsumptionTypeResults,
 } from '@/lib/phase3DittoConsumptionTypeData';
 import {
+  phase3LonelinessConcentrationQuestions,
+  phase3LonelinessConcentrationResults,
+} from '@/lib/phase3LonelinessConcentrationData';
+import {
   phase3ExercisePersistenceTypeQuestions,
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
@@ -687,6 +691,10 @@ const Phase3LoveObsessionThermometerTestClient = dynamic(
 );
 const Phase3MultitaskingAbilityTestClient = dynamic(
   () => import('@/components/Phase3MultitaskingAbilityTestClient'),
+  { ssr: false }
+);
+const Phase3LonelinessConcentrationTestClient = dynamic(
+  () => import('@/components/Phase3LonelinessConcentrationTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1695,6 +1703,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['多任務', '腦效率', '專注力', '生產力', '能力值'],
         vi: ['đa nhiệm', 'hiệu suất não', 'tập trung', 'năng suất', 'khả năng'],
         id: ['multitasking', 'efisiensi otak', 'fokus', 'produktivitas', 'kemampuan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-loneliness-concentration') {
+    test = {
+      slug: 'phase3-loneliness-concentration',
+      title: {
+        ko: "나의 '외로움' 농도 테스트",
+        en: 'My Loneliness Concentration Test',
+        ja: "私の『孤独』濃度テスト",
+        'zh-CN': "我的『孤独』浓度测试",
+        'zh-TW': "我的『孤獨』濃度測試",
+        vi: "Bài test nồng độ 'cô đơn' của tôi",
+        id: "Tes Konsentrasi 'Kesepian' Saya",
+      },
+      description: {
+        ko: '12가지 질문으로 지금 나의 외로움 농도와 연결 상태를 측정합니다.',
+        en: 'Measure your loneliness concentration and connection state with 12 questions.',
+        ja: '12の質問で今の孤独の濃度とつながりの状態を測ります。',
+        'zh-CN': '通过12个问题测量你现在的孤独浓度与连接状态。',
+        'zh-TW': '透過12個問題測量你現在的孤獨濃度與連結狀態。',
+        vi: 'Đo nồng độ cô đơn và trạng thái kết nối hiện tại qua 12 câu hỏi.',
+        id: 'Ukur konsentrasi kesepian dan status koneksi saat ini lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_loneliness_concentration.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['외로움', '고립감', '소통', '감정', '커뮤니티'],
+        en: ['loneliness', 'isolation', 'connection', 'emotion', 'community'],
+        ja: ['孤独', '孤立感', 'つながり', '感情', 'コミュニティ'],
+        'zh-CN': ['孤独', '孤立感', '沟通', '情感', '社区'],
+        'zh-TW': ['孤獨', '孤立感', '溝通', '情感', '社群'],
+        vi: ['cô đơn', 'cô lập', 'kết nối', 'cảm xúc', 'cộng đồng'],
+        id: ['kesepian', 'isolasi', 'koneksi', 'emosi', 'komunitas'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7048,6 +7093,66 @@ export default async function TestPage({ params }: Props) {
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={(await getLatestTestSlugs(15)).includes(slug)}
+          badgeType={test.badge_type || null}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-loneliness-concentration') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-loneliness-concentration',
+      title: {
+        ko: "나의 '외로움' 농도 테스트",
+        en: 'My Loneliness Concentration Test',
+        ja: "私の『孤独』濃度テスト",
+        'zh-CN': "我的『孤独』浓度测试",
+        'zh-TW': "我的『孤獨』濃度測試",
+        vi: "Bài test nồng độ 'cô đơn' của tôi",
+        id: "Tes Konsentrasi 'Kesepian' Saya",
+      },
+      description: {
+        ko: '12가지 질문으로 지금 나의 외로움 농도와 연결 상태를 측정합니다.',
+        en: 'Measure your loneliness concentration and connection state with 12 questions.',
+        ja: '12の質問で今の孤独の濃度とつながりの状態を測ります。',
+        'zh-CN': '通过12个问题测量你现在的孤独浓度与连接状态。',
+        'zh-TW': '透過12個問題測量你現在的孤獨濃度與連結狀態。',
+        vi: 'Đo nồng độ cô đơn và trạng thái kết nối hiện tại qua 12 câu hỏi.',
+        id: 'Ukur konsentrasi kesepian dan status koneksi saat ini lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_loneliness_concentration.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['외로움', '고립감', '소통', '감정', '커뮤니티'],
+        en: ['loneliness', 'isolation', 'connection', 'emotion', 'community'],
+        ja: ['孤独', '孤立感', 'つながり', '感情', 'コミュニティ'],
+        'zh-CN': ['孤独', '孤立感', '沟通', '情感', '社区'],
+        'zh-TW': ['孤獨', '孤立感', '溝通', '情感', '社群'],
+        vi: ['cô đơn', 'cô lập', 'kết nối', 'cảm xúc', 'cộng đồng'],
+        id: ['kesepian', 'isolasi', 'koneksi', 'emosi', 'komunitas'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3LonelinessConcentrationTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LonelinessConcentrationQuestions}
+          results={phase3LonelinessConcentrationResults}
+          questionCount={phase3LonelinessConcentrationQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
           badgeType={test.badge_type || null}
         />
       </>

@@ -11278,5 +11278,63 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase3LonelinessConcentrationTest": {
+    "startMessage": {
+      "line1": "외로움은 나쁜 감정이 아닙니다. 연결이 필요하다는 신호입니다.",
+      "line2": "사람들 속에 있어도 외로울 수 있고, 혼자 있어도 전혀 외롭지 않을 수 있습니다. 외로움은 혼자 있는 시간이 아니라 진짜 연결이 없다는 느낌에서 옵니다.",
+      "line3": "12가지 질문으로 지금 나의 외로움 농도를 측정합니다. 진단이 아닌 이해입니다. 지금 내가 어떤 상태인지 아는 것, 그것이 시작입니다.",
+      "line4": "솔직하게 답할수록 더 정확한 농도가 나옵니다.",
+      "line5": "내 외로움 농도 측정하기 💙 지금 바로 확인"
+    },
+    "ui": {
+      "startTest": "시작하기",
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "concentration": "💙 외로움 농도",
+      "currentState": "📍 현재 상태",
+      "strength": "⭐ 강점",
+      "actions": "🌱 지금 할 수 있는 것",
+      "community": "🤝 커뮤니티 제안",
+      "crisisNote": "💙 오늘 많이 힘들다면",
+      "oneLiner": "💬 한 줄",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "points": "점",
+      "plays": "회 플레이"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내 외로움 농도 측정 중 💙 12문항으로 진짜 연결을 점검해봐. 너는 몇 %야?",
+      "startKakao": "내 외로움 농도 측정 중 💙 12문항으로 진짜 연결을 점검해봐. 너는 몇 %야?",
+      "startWechat": "내 외로움 농도 측정 중 💙 12문항으로 진짜 연결을 점검해봐. 너는 몇 %야?",
+      "startWhatsapp": "내 외로움 농도 측정 중 💙 12문항으로 진짜 연결을 점검해봐. 너는 몇 %야?",
+      "startTelegram": "내 외로움 농도 측정 중 💙 12문항으로 진짜 연결을 점검해봐. 너는 몇 %야?",
+      "startLine": "내 외로움 농도 측정 중 💙 12문항으로 진짜 연결을 점검해봐. 너는 몇 %야?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

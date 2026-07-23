@@ -11140,5 +11140,63 @@
       "similarTestsTop5": "🎯 Rekomendasi tes serupa Top 5",
       "popularTestsTop5": "🔥 Tes populer saat ini Top 5"
     }
+  },
+  "phase3LonelinessConcentrationTest": {
+    "startMessage": {
+      "line1": "Kesepian bukan emosi yang buruk. Itu sinyal bahwa kamu butuh koneksi.",
+      "line2": "Kamu bisa merasa sepi di tengah keramaian, dan sama sekali tidak sepi saat sendirian. Kesepian datang bukan dari waktu sendirian, melainkan dari perasaan bahwa koneksi yang nyata tidak ada.",
+      "line3": "Ukur konsentrasi kesepianmu sekarang dengan 12 pertanyaan. Ini pemahaman, bukan diagnosis. Tahu di mana kamu berada sekarang—itulah awalnya.",
+      "line4": "Semakin jujur jawabanmu, semakin akurat konsentrasinya.",
+      "line5": "Ukur konsentrasi kesepianku 💙 Cek sekarang"
+    },
+    "ui": {
+      "startTest": "Mulai",
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "concentration": "💙 Konsentrasi kesepian",
+      "currentState": "📍 Kondisi saat ini",
+      "strength": "⭐ Kekuatan",
+      "actions": "🌱 Yang bisa dilakukan sekarang",
+      "community": "🤝 Saran komunitas",
+      "crisisNote": "💙 Kalau hari ini terasa sangat berat",
+      "oneLiner": "💬 Satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "points": "poin",
+      "plays": "kali dimainkan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Sedang mengukur konsentrasi kesepianku 💙 Cek koneksi nyata dengan 12 soal. Kamu berapa %?",
+      "startKakao": "Sedang mengukur konsentrasi kesepianku 💙 Cek koneksi nyata dengan 12 soal. Kamu berapa %?",
+      "startWechat": "Sedang mengukur konsentrasi kesepianku 💙 Cek koneksi nyata dengan 12 soal. Kamu berapa %?",
+      "startWhatsapp": "Sedang mengukur konsentrasi kesepianku 💙 Cek koneksi nyata dengan 12 soal. Kamu berapa %?",
+      "startTelegram": "Sedang mengukur konsentrasi kesepianku 💙 Cek koneksi nyata dengan 12 soal. Kamu berapa %?",
+      "startLine": "Sedang mengukur konsentrasi kesepianku 💙 Cek koneksi nyata dengan 12 soal. Kamu berapa %?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }
