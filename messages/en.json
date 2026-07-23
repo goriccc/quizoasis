@@ -11064,5 +11064,90 @@
       "similarTestsTop5": "🎯 Top 5 similar tests",
       "popularTestsTop5": "🔥 Top 5 popular tests right now"
     }
+  },
+  "phase3MultitaskingAbilityTest": {
+    "startMessage": {
+      "line1": "How many windows can your brain open at once?",
+      "line2": "People often think they multitask well—until they measure it. Neuroscience suggests only about 2% of people can truly multitask; the rest confuse fast task-switching with multitasking.",
+      "line3": "This test measures your real multitasking ability with 5 live performance challenges. Not theory—you do it now.",
+      "line4": "5 rounds, about 3–5 minutes. Ready? Let’s go.",
+      "line5": "Measure my multitasking ability 🧠 Start now"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Measuring my brain’s multitasking score 🧠 It’s a real click-to-play test. What’s your score?",
+      "startKakao": "Measuring my brain’s multitasking score 🧠 It’s a real click-to-play test. What’s your score?",
+      "startWechat": "Measuring my brain’s multitasking score 🧠 It’s a real click-to-play test. What’s your score?",
+      "startWhatsapp": "Measuring my brain’s multitasking score 🧠 It’s a real click-to-play test. What’s your score?",
+      "startTelegram": "Measuring my brain’s multitasking score 🧠 It’s a real click-to-play test. What’s your score?",
+      "startLine": "Measuring my brain’s multitasking score 🧠 It’s a real click-to-play test. What’s your score?"
+    },
+    "ui": {
+      "adsenseTitle": "Ad",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "gradeLabel": "Multitasking grade: {grade}",
+      "points": "pts",
+      "plays": "plays",
+      "roundScores": "📊 Score by round",
+      "toolCta": "Boost productivity 3× with tools that fit your multitasking score →",
+      "popularBadge": "HOT"
+    },
+    "game": {
+      "roundOf": "Round {current} / {total}",
+      "round1Title": "Round 1 · Baseline reaction speed",
+      "round2Title": "Round 2 · Dual simultaneous processing",
+      "round3Title": "Round 3 · Memory + concurrent action",
+      "round4Title": "Round 4 · Triple-split processing",
+      "round5Title": "Round 5 · Extreme pressure",
+      "roundScore": "This round: {score} pts",
+      "r1Feedback": "Reaction speed: {ms}ms",
+      "r1Hint": "Tap the coral circle as soon as it appears",
+      "r2Hint": "Left = color, Right = odd/even",
+      "r3ShapeHint": "Tap shapes quickly (then enter the color sequence)",
+      "r4Hint": "Handle color · math · pattern zones at the same time",
+      "r5Hint": "Different tasks per slot! Match color · odd/even · tap circle (timeout/wrong = penalty)",
+      "round1HowTo": "Tap the coral circles on screen as fast as you can. Reaction speed is your score.",
+      "round2HowTo": "The screen splits in two. Match colors on the left and odd/even on the right at the same time.",
+      "round3HowTo": "① Memorize 5 colors in order → ② Tap shapes that appear → ③ Enter the color sequence you remembered.",
+      "round4HowTo": "Color, math, and pattern zones light up together. Don’t miss problems in any zone.",
+      "round5HowTo": "Tasks appear in 3 slots: match color / odd-even / tap circle—handle them in that slot. Timeouts and wrong answers cost points.",
+      "remember": "Remember this color sequence",
+      "rememberSub": "After tapping shapes, you’ll enter this sequence again",
+      "ready": "Ready",
+      "recall": "Enter the color sequence you remembered",
+      "recallSub": "Tap the 5 colors you saw, left to right in order",
+      "hits": "Hits",
+      "odd": "Odd",
+      "even": "Even",
+      "zoneColor": "Color",
+      "zoneMath": "Math",
+      "zonePattern": "Pattern",
+      "paused": "Paused",
+      "pausedHint": "Tap the screen to restart this round"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar tests Top 5",
+      "popularTestsTop5": "🔥 Popular tests Top 5"
+    }
   }
 }

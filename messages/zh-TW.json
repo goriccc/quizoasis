@@ -10524,5 +10524,90 @@
       "similarTestsTop5": "🎯 類似測試推薦Top5",
       "popularTestsTop5": "🔥 熱門測試推薦Top5"
     }
+  },
+  "phase3MultitaskingAbilityTest": {
+    "startMessage": {
+      "line1": "你的大腦能同時打開幾個視窗？",
+      "line2": "人們常覺得自己很會多任務，真測起來差別很大。腦科學研究稱，真正能多任務的人大約只有2%，其餘多數把快速切換任務誤當成多任務。",
+      "line3": "這個測試用5項即時任務測量你的真實多任務能力。不是理論——現在就做。",
+      "line4": "5輪，約3–5分鐘。準備好就開始。",
+      "line5": "測量我的多任務能力值 🧠 馬上開始"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "正在測大腦多任務能力值 🧠 真的要點著玩的測試。你能得幾分？",
+      "startKakao": "正在測大腦多任務能力值 🧠 真的要點著玩的測試。你能得幾分？",
+      "startWechat": "正在測大腦多任務能力值 🧠 真的要點著玩的測試。你能得幾分？",
+      "startWhatsapp": "正在測大腦多任務能力值 🧠 真的要點著玩的測試。你能得幾分？",
+      "startTelegram": "正在測大腦多任務能力值 🧠 真的要點著玩的測試。你能得幾分？",
+      "startLine": "正在測大腦多任務能力值 🧠 真的要點著玩的測試。你能得幾分？"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "shareResult": "分享結果",
+      "gradeLabel": "多任務等級：{grade}",
+      "points": "分",
+      "plays": "次遊玩",
+      "roundScores": "📊 各輪得分",
+      "toolCta": "用適合你能力值的工具，把生產力提升3倍 →",
+      "popularBadge": "熱門"
+    },
+    "game": {
+      "roundOf": "第 {current} / {total} 輪",
+      "round1Title": "Round 1 · 基準反應速度",
+      "round2Title": "Round 2 · 雙重同時處理",
+      "round3Title": "Round 3 · 記憶 + 同時執行",
+      "round4Title": "Round 4 · 三區同時處理",
+      "round5Title": "Round 5 · 極限壓力",
+      "roundScore": "本輪：{score}分",
+      "r1Feedback": "反應速度：{ms}ms",
+      "r1Hint": "珊瑚色圓出現後盡快點擊",
+      "r2Hint": "左邊是顏色，右邊是奇/偶",
+      "r3ShapeHint": "快速點擊圖形（結束後輸入顏色順序）",
+      "r4Hint": "同時處理顏色·計算·圖案三個區域",
+      "r5Hint": "每個槽位不同任務！對顏色·奇偶·點圓（逾時/答錯扣分）",
+      "round1HowTo": "盡快點擊畫面上出現的珊瑚色圓。反應速度就是得分。",
+      "round2HowTo": "畫面一分為二。左邊選顏色，右邊判斷奇數/偶數，同時進行。",
+      "round3HowTo": "①記住5種顏色順序 → ②點擊中間出現的圖形 → ③最後輸入記住的顏色順序。",
+      "round4HowTo": "顏色、計算、圖案三個區域會同時亮起。別漏掉任一區域的題。",
+      "round5HowTo": "三個槽位會出現任務：對顏色 / 奇偶 / 點圓——在對應槽位立刻處理。逾時和答錯會扣分。",
+      "remember": "請記住這個顏色順序",
+      "rememberSub": "點擊圖形之後，最後要再輸入這個順序",
+      "ready": "準備",
+      "recall": "請輸入你記住的顏色順序",
+      "recallSub": "把剛才看到的5種顏色從左到右按順序點",
+      "hits": "命中",
+      "odd": "奇數",
+      "even": "偶數",
+      "zoneColor": "顏色",
+      "zoneMath": "計算",
+      "zonePattern": "圖案",
+      "paused": "暫停",
+      "pausedHint": "點擊螢幕可重新開始本輪"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦 Top 5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top 5"
+    }
   }
 }

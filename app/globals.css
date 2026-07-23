@@ -172,13 +172,13 @@ body {
   border-radius: 9999px;
   border: 3px solid #22c55e;
   pointer-events: none;
-  z-index: 60;
+  z-index: 250;
   animation: p3-hit-ring 0.45s ease-out forwards;
 }
 .p3-impact-hit {
   position: fixed;
   pointer-events: none;
-  z-index: 61;
+  z-index: 251;
   font-size: 2rem;
   font-weight: 900;
   color: #16a34a;
@@ -188,7 +188,7 @@ body {
 .p3-impact-miss {
   position: fixed;
   pointer-events: none;
-  z-index: 61;
+  z-index: 251;
   font-size: 2.25rem;
   font-weight: 900;
   color: #dc2626;
@@ -198,7 +198,7 @@ body {
 .p3-impact-score {
   position: fixed;
   pointer-events: none;
-  z-index: 62;
+  z-index: 252;
   font-size: 1.35rem;
   font-weight: 900;
   animation: p3-float-up 0.55s ease-out forwards;
@@ -209,7 +209,7 @@ body {
   height: 8px;
   border-radius: 9999px;
   pointer-events: none;
-  z-index: 60;
+  z-index: 250;
   animation: p3-particle 0.45s ease-out forwards;
 }
 .p3-play-shake {

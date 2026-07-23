@@ -11043,5 +11043,90 @@
       "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
+  },
+  "phase3MultitaskingAbilityTest": {
+    "startMessage": {
+      "line1": "あなたの脳は、いくつのウィンドウを同時に開けますか？",
+      "line2": "マルチタスクが得意だと思っていても、測ってみると意外と差が出ます。脳科学では、本当のマルチタスクができる人は全体の約2%とも言われ、多くは素早いタスク切替をマルチタスクだと勘違いしています。",
+      "line3": "このテストは5つのリアルタイム課題であなたの本物のマルチタスク能力を測ります。理論ではありません。今すぐやってみます。",
+      "line4": "5ラウンド、約3〜5分。準備ができたら始めましょう。",
+      "line5": "私のマルチタスク能力値を測る 🧠 今すぐスタート"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "脳のマルチタスク能力値を測定中 🧠 本当にクリックして遊ぶテストだよ。あなたは何点？",
+      "startKakao": "脳のマルチタスク能力値を測定中 🧠 本当にクリックして遊ぶテストだよ。あなたは何点？",
+      "startWechat": "脳のマルチタスク能力値を測定中 🧠 本当にクリックして遊ぶテストだよ。あなたは何点？",
+      "startWhatsapp": "脳のマルチタスク能力値を測定中 🧠 本当にクリックして遊ぶテストだよ。あなたは何点？",
+      "startTelegram": "脳のマルチタスク能力値を測定中 🧠 本当にクリックして遊ぶテストだよ。あなたは何点？",
+      "startLine": "脳のマルチタスク能力値を測定中 🧠 本当にクリックして遊ぶテストだよ。あなたは何点？"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "shareResult": "結果をシェア",
+      "gradeLabel": "マルチタスク等級: {grade}",
+      "points": "点",
+      "plays": "回プレイ",
+      "roundScores": "📊 ラウンド別スコア",
+      "toolCta": "能力値に合うツールで生産性を3倍に →",
+      "popularBadge": "人気"
+    },
+    "game": {
+      "roundOf": "ラウンド {current} / {total}",
+      "round1Title": "Round 1 · 基準反応速度",
+      "round2Title": "Round 2 · 二重同時処理",
+      "round3Title": "Round 3 · 記憶＋同時遂行",
+      "round4Title": "Round 4 · 3分割同時処理",
+      "round5Title": "Round 5 · 極限プレッシャー",
+      "roundScore": "今回のラウンド: {score}点",
+      "r1Feedback": "反応速度: {ms}ms",
+      "r1Hint": "コーラルの円が出たら素早くタップ",
+      "r2Hint": "左は色、右は奇数/偶数",
+      "r3ShapeHint": "図形を素早くタップ（終わったら色の順序入力）",
+      "r4Hint": "色・計算・パターンの3ゾーンを同時に処理",
+      "r5Hint": "スロットごとに違う課題！色合わせ・奇偶・円タップ（タイムオーバー・不正解は減点）",
+      "round1HowTo": "画面に出るコーラルの円をできるだけ速くタップ。反応速度がスコアです。",
+      "round2HowTo": "画面が二つに分かれます。左は色、右は奇数/偶数を同時に合わせてください。",
+      "round3HowTo": "①色5つの順番を覚える → ②途中の図形をタップ → ③最後に覚えた色の順番を入力します。",
+      "round4HowTo": "色・計算・パターンの3ゾーンが同時に点灯します。各ゾーンの問題を逃さず処理しましょう。",
+      "round5HowTo": "3つのスロットに課題が出ます。色合わせ / 奇偶判定 / 円タップ—そのスロットですぐ処理。タイムオーバー・不正解は減点です。",
+      "remember": "この色の順番を覚えてください",
+      "rememberSub": "図形タップのあと、最後にこの順番を入力します",
+      "ready": "準備",
+      "recall": "覚えた色の順番を入力してください",
+      "recallSub": "先ほどの5色を左から順に押してください",
+      "hits": "ヒット",
+      "odd": "奇数",
+      "even": "偶数",
+      "zoneColor": "色",
+      "zoneMath": "計算",
+      "zonePattern": "パターン",
+      "paused": "一時停止",
+      "pausedHint": "画面をタップするとこのラウンドを再開します"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "shareFailed": "共有機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめ Top 5",
+      "popularTestsTop5": "🔥 いま人気のテスト Top 5"
+    }
   }
 }

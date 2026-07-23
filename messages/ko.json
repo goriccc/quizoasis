@@ -11193,5 +11193,90 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase3MultitaskingAbilityTest": {
+    "startMessage": {
+      "line1": "당신의 뇌는 몇 개의 창을 동시에 열 수 있나요?",
+      "line2": "사람들은 흔히 멀티태스킹을 잘한다고 생각하지만 실제 측정해보면 생각보다 많이 다릅니다. 뇌 과학 연구에 따르면 진짜 멀티태스킹이 가능한 사람은 전체의 약 2%에 불과합니다. 나머지는 빠른 태스크 전환을 멀티태스킹이라고 착각합니다.",
+      "line3": "이 테스트는 당신의 진짜 멀티태스킹 능력을 5가지 실제 수행 과제로 측정합니다. 이론이 아닙니다. 지금 당장 해보는 겁니다.",
+      "line4": "5라운드, 약 3~5분. 준비됐으면 시작하세요.",
+      "line5": "내 멀티태스킹 능력치 측정하기 🧠 지금 바로 시작"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내 뇌 멀티태스킹 능력치 측정 중 🧠 진짜로 클릭해서 하는 테스트야. 너는 몇 점?",
+      "startKakao": "내 뇌 멀티태스킹 능력치 측정 중 🧠 진짜로 클릭해서 하는 테스트야. 너는 몇 점?",
+      "startWechat": "내 뇌 멀티태스킹 능력치 측정 중 🧠 진짜로 클릭해서 하는 테스트야. 너는 몇 점?",
+      "startWhatsapp": "내 뇌 멀티태스킹 능력치 측정 중 🧠 진짜로 클릭해서 하는 테스트야. 너는 몇 점?",
+      "startTelegram": "내 뇌 멀티태스킹 능력치 측정 중 🧠 진짜로 클릭해서 하는 테스트야. 너는 몇 점?",
+      "startLine": "내 뇌 멀티태스킹 능력치 측정 중 🧠 진짜로 클릭해서 하는 테스트야. 너는 몇 점?"
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "gradeLabel": "멀티태스킹 등급: {grade}",
+      "points": "점",
+      "plays": "회 플레이",
+      "roundScores": "📊 라운드별 점수",
+      "toolCta": "내 멀티태스킹 능력치에 맞는 툴로 생산성 3배 올리기 →",
+      "popularBadge": "인기"
+    },
+    "game": {
+      "roundOf": "라운드 {current} / {total}",
+      "round1Title": "Round 1 · 기준 반응 속도",
+      "round2Title": "Round 2 · 이중 동시 처리",
+      "round3Title": "Round 3 · 기억 + 동시 수행",
+      "round4Title": "Round 4 · 3분할 동시 처리",
+      "round5Title": "Round 5 · 극한 압박",
+      "roundScore": "이번 라운드: {score}점",
+      "r1Feedback": "반응 속도: {ms}ms",
+      "r1Hint": "코랄 원이 나타나면 빠르게 터치하세요",
+      "r2Hint": "왼쪽은 색상, 오른쪽은 홀/짝",
+      "r3ShapeHint": "도형을 빠르게 터치하세요 (끝나면 색상 순서 입력)",
+      "r4Hint": "색상·계산·패턴 3구역을 동시에 처리하세요",
+      "r5Hint": "슬롯마다 다른 과제! 색상 맞추기 · 홀짝 · 원 터치를 빠르게 처리 (시간초과·오답 감점)",
+      "round1HowTo": "화면에 나타나는 코랄색 원을 최대한 빠르게 터치하세요. 반응 속도가 점수입니다.",
+      "round2HowTo": "화면이 둘로 나뉩니다. 왼쪽은 색상, 오른쪽은 홀수/짝수를 동시에 맞춰 주세요.",
+      "round3HowTo": "① 색상 5개 순서를 기억 → ② 중간에 뜨는 도형을 터치 → ③ 마지막에 기억한 색상 순서를 입력합니다.",
+      "round4HowTo": "색상·계산·패턴 3개 구역이 동시에 켜집니다. 각 구역의 문제를 놓치지 말고 처리하세요.",
+      "round5HowTo": "3개 슬롯에 과제가 나타납니다. 색상 맞추기 / 홀짝 판별 / 원 터치 — 해당 슬롯에서 바로 처리하세요. 시간 초과·오답은 감점입니다.",
+      "remember": "이 색상 순서를 기억하세요",
+      "rememberSub": "곧 도형 터치 후, 마지막에 이 순서를 다시 입력합니다",
+      "ready": "준비",
+      "recall": "기억한 색상 순서를 입력하세요",
+      "recallSub": "앞에서 본 5개 색을 왼쪽부터 순서대로 눌러 주세요",
+      "hits": "적중",
+      "odd": "홀수",
+      "even": "짝수",
+      "zoneColor": "색상",
+      "zoneMath": "계산",
+      "zonePattern": "패턴",
+      "paused": "일시정지",
+      "pausedHint": "화면을 탭하면 이 라운드를 다시 시작합니다"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

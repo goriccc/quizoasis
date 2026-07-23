@@ -11055,5 +11055,90 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3MultitaskingAbilityTest": {
+    "startMessage": {
+      "line1": "Berapa jendela yang bisa dibuka otakmu sekaligus?",
+      "line2": "Orang sering merasa jago multitasking—sampai diukur. Riset neurosains menyebut hanya sekitar 2% yang benar-benar bisa multitasking; sisanya mengira pergantian tugas cepat adalah multitasking.",
+      "line3": "Tes ini mengukur kemampuan multitaskingmu yang nyata lewat 5 tantangan performa langsung. Bukan teori—langsung lakukan.",
+      "line4": "5 ronde, sekitar 3–5 menit. Siap? Mulai.",
+      "line5": "Ukur skor multitaskingku 🧠 Mulai sekarang"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Sedang ukur skor multitasking otak 🧠 Ini tes klik-benar untuk main. Skormu berapa?",
+      "startKakao": "Sedang ukur skor multitasking otak 🧠 Ini tes klik-benar untuk main. Skormu berapa?",
+      "startWechat": "Sedang ukur skor multitasking otak 🧠 Ini tes klik-benar untuk main. Skormu berapa?",
+      "startWhatsapp": "Sedang ukur skor multitasking otak 🧠 Ini tes klik-benar untuk main. Skormu berapa?",
+      "startTelegram": "Sedang ukur skor multitasking otak 🧠 Ini tes klik-benar untuk main. Skormu berapa?",
+      "startLine": "Sedang ukur skor multitasking otak 🧠 Ini tes klik-benar untuk main. Skormu berapa?"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "shareResult": "Bagikan hasil",
+      "gradeLabel": "Nilai multitasking: {grade}",
+      "points": "poin",
+      "plays": "kali dimainkan",
+      "roundScores": "📊 Skor per ronde",
+      "toolCta": "Naikkan produktivitas 3× dengan tools yang cocok skor multitaskingmu →",
+      "popularBadge": "Populer"
+    },
+    "game": {
+      "roundOf": "Ronde {current} / {total}",
+      "round1Title": "Round 1 · Kecepatan reaksi dasar",
+      "round2Title": "Round 2 · Pemrosesan ganda simultan",
+      "round3Title": "Round 3 · Ingatan + aksi bersamaan",
+      "round4Title": "Round 4 · Pemrosesan 3 zona",
+      "round5Title": "Round 5 · Tekanan ekstrem",
+      "roundScore": "Ronde ini: {score} poin",
+      "r1Feedback": "Kecepatan reaksi: {ms}ms",
+      "r1Hint": "Ketuk lingkaran coral segera muncul",
+      "r2Hint": "Kiri = warna, Kanan = ganjil/genap",
+      "r3ShapeHint": "Ketuk bentuk cepat (lalu masukkan urutan warna)",
+      "r4Hint": "Tangani zona warna · hitung · pola sekaligus",
+      "r5Hint": "Tugas beda per slot! Cocokkan warna · ganjil/genap · ketuk lingkaran (timeout/salah = penalti)",
+      "round1HowTo": "Ketuk lingkaran coral di layar secepat mungkin. Kecepatan reaksi adalah skormu.",
+      "round2HowTo": "Layar terbagi dua. Kiri cocokkan warna, kanan ganjil/genap—sekaligus.",
+      "round3HowTo": "① Hafalkan urutan 5 warna → ② Ketuk bentuk yang muncul → ③ Masukkan urutan warna yang diingat.",
+      "round4HowTo": "Zona warna, hitung, dan pola menyala bersama. Jangan lewatkan soal di zona mana pun.",
+      "round5HowTo": "Tugas muncul di 3 slot: cocokkan warna / ganjil-genap / ketuk lingkaran—tangani di slot itu. Timeout dan jawaban salah mengurangi poin.",
+      "remember": "Ingat urutan warna ini",
+      "rememberSub": "Setelah mengetuk bentuk, kamu akan memasukkan urutan ini lagi",
+      "ready": "Siap",
+      "recall": "Masukkan urutan warna yang kamu ingat",
+      "recallSub": "Ketuk 5 warna yang tadi terlihat, dari kiri ke kanan berurutan",
+      "hits": "Hit",
+      "odd": "Ganjil",
+      "even": "Genap",
+      "zoneColor": "Warna",
+      "zoneMath": "Hitung",
+      "zonePattern": "Pola",
+      "paused": "Jeda",
+      "pausedHint": "Ketuk layar untuk mengulang ronde ini"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Rekomendasi tes serupa Top 5",
+      "popularTestsTop5": "🔥 Tes populer saat ini Top 5"
+    }
   }
 }

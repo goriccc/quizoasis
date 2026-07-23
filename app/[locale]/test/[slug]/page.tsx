@@ -685,6 +685,10 @@ const Phase3LoveObsessionThermometerTestClient = dynamic(
   () => import('@/components/Phase3LoveObsessionThermometerTestClient'),
   { ssr: false }
 );
+const Phase3MultitaskingAbilityTestClient = dynamic(
+  () => import('@/components/Phase3MultitaskingAbilityTestClient'),
+  { ssr: false }
+);
 const Phase3CoupleBreakupRiskTestClient = dynamic(
   () => import('@/components/Phase3CoupleBreakupRiskTestClient'),
   { ssr: false }
@@ -1654,6 +1658,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛執著', '束縛', '聯繫', '溫度計', '自我檢視'],
         vi: ['ám ảnh tình cảm', 'ràng buộc', 'liên lạc', 'nhiệt kế', 'tự kiểm'],
         id: ['obsesi cinta', 'kontrol', 'chat', 'termometer', 'cek diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-multitasking-ability') {
+    test = {
+      slug: 'phase3-multitasking-ability',
+      title: {
+        ko: "나의 '멀티태스킹' 능력치",
+        en: 'My Multitasking Ability Score',
+        ja: '私の『マルチタスク』能力値',
+        'zh-CN': '我的『多任务』能力值',
+        'zh-TW': '我的『多任務』能力值',
+        vi: 'Chỉ số khả năng đa nhiệm của tôi',
+        id: 'Skor Kemampuan Multitasking Saya',
+      },
+      description: {
+        ko: '5라운드 실시간 수행으로 진짜 멀티태스킹 능력치를 측정합니다.',
+        en: 'Measure your real multitasking ability across 5 live performance rounds.',
+        ja: '5ラウンドのリアルタイム課題で本物のマルチタスク能力を測定します。',
+        'zh-CN': '通过5轮实时任务测量你的真实多任务能力。',
+        'zh-TW': '透過5輪即時任務測量你的真實多任務能力。',
+        vi: 'Đo khả năng đa nhiệm thật qua 5 vòng thực hiện thời gian thực.',
+        id: 'Ukur kemampuan multitasking nyata lewat 5 ronde performa langsung.',
+      },
+      thumbnail: 'p3_test_multitasking_ability.webp',
+      type: 'game',
+      category: 'capability',
+      play_count: 0,
+      tags: {
+        ko: ['멀티태스킹', '뇌효율', '집중력', '생산성', '능력치'],
+        en: ['multitasking', 'brain efficiency', 'focus', 'productivity', 'ability'],
+        ja: ['マルチタスク', '脳効率', '集中力', '生産性', '能力値'],
+        'zh-CN': ['多任务', '脑效率', '专注力', '生产力', '能力值'],
+        'zh-TW': ['多任務', '腦效率', '專注力', '生產力', '能力值'],
+        vi: ['đa nhiệm', 'hiệu suất não', 'tập trung', 'năng suất', 'khả năng'],
+        id: ['multitasking', 'efisiensi otak', 'fokus', 'produktivitas', 'kemampuan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -6954,6 +6995,60 @@ export default async function TestPage({ params }: Props) {
           questionCount={phase3LoveObsessionThermometerQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-multitasking-ability') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-multitasking-ability',
+      title: {
+        ko: "나의 '멀티태스킹' 능력치",
+        en: 'My Multitasking Ability Score',
+        ja: '私の『マルチタスク』能力値',
+        'zh-CN': '我的『多任务』能力值',
+        'zh-TW': '我的『多任務』能力值',
+        vi: 'Chỉ số khả năng đa nhiệm của tôi',
+        id: 'Skor Kemampuan Multitasking Saya',
+      },
+      description: {
+        ko: '5라운드 실시간 수행으로 진짜 멀티태스킹 능력치를 측정합니다.',
+        en: 'Measure your real multitasking ability across 5 live performance rounds.',
+        ja: '5ラウンドのリアルタイム課題で本物のマルチタスク能力を測定します。',
+        'zh-CN': '通过5轮实时任务测量你的真实多任务能力。',
+        'zh-TW': '透過5輪即時任務測量你的真實多任務能力。',
+        vi: 'Đo khả năng đa nhiệm thật qua 5 vòng thực hiện thời gian thực.',
+        id: 'Ukur kemampuan multitasking nyata lewat 5 ronde performa langsung.',
+      },
+      thumbnail: 'p3_test_multitasking_ability.webp',
+      type: 'game',
+      category: 'capability',
+      play_count: 0,
+      tags: {
+        ko: ['멀티태스킹', '뇌효율', '집중력', '생산성', '능력치'],
+        en: ['multitasking', 'brain efficiency', 'focus', 'productivity', 'ability'],
+        ja: ['マルチタスク', '脳効率', '集中力', '生産性', '能力値'],
+        'zh-CN': ['多任务', '脑效率', '专注力', '生产力', '能力值'],
+        'zh-TW': ['多任務', '腦效率', '專注力', '生產力', '能力值'],
+        vi: ['đa nhiệm', 'hiệu suất não', 'tập trung', 'năng suất', 'khả năng'],
+        id: ['multitasking', 'efisiensi otak', 'fokus', 'produktivitas', 'kemampuan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3MultitaskingAbilityTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={(await getLatestTestSlugs(15)).includes(slug)}
+          badgeType={test.badge_type || null}
         />
       </>
     );

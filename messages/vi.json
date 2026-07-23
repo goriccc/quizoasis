@@ -11055,5 +11055,90 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3MultitaskingAbilityTest": {
+    "startMessage": {
+      "line1": "Bộ não của bạn có thể mở bao nhiêu cửa sổ cùng lúc?",
+      "line2": "Nhiều người nghĩ mình giỏi đa nhiệm—cho đến khi đo thật. Khoa học thần kinh cho rằng chỉ khoảng 2% người thật sự đa nhiệm; phần còn lại nhầm chuyển đổi nhiệm vụ nhanh với đa nhiệm.",
+      "line3": "Bài test này đo khả năng đa nhiệm thật của bạn bằng 5 thử thách thực hiện trực tiếp. Không phải lý thuyết—làm ngay.",
+      "line4": "5 vòng, khoảng 3–5 phút. Sẵn sàng thì bắt đầu.",
+      "line5": "Đo chỉ số đa nhiệm của tôi 🧠 Bắt đầu ngay"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Đang đo chỉ số đa nhiệm não bộ 🧠 Đây là test bấm thật để chơi. Bạn được bao nhiêu điểm?",
+      "startKakao": "Đang đo chỉ số đa nhiệm não bộ 🧠 Đây là test bấm thật để chơi. Bạn được bao nhiêu điểm?",
+      "startWechat": "Đang đo chỉ số đa nhiệm não bộ 🧠 Đây là test bấm thật để chơi. Bạn được bao nhiêu điểm?",
+      "startWhatsapp": "Đang đo chỉ số đa nhiệm não bộ 🧠 Đây là test bấm thật để chơi. Bạn được bao nhiêu điểm?",
+      "startTelegram": "Đang đo chỉ số đa nhiệm não bộ 🧠 Đây là test bấm thật để chơi. Bạn được bao nhiêu điểm?",
+      "startLine": "Đang đo chỉ số đa nhiệm não bộ 🧠 Đây là test bấm thật để chơi. Bạn được bao nhiêu điểm?"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "gradeLabel": "Hạng đa nhiệm: {grade}",
+      "points": "điểm",
+      "plays": "lượt chơi",
+      "roundScores": "📊 Điểm theo vòng",
+      "toolCta": "Tăng năng suất gấp 3 với công cụ phù hợp chỉ số của bạn →",
+      "popularBadge": "Hot"
+    },
+    "game": {
+      "roundOf": "Vòng {current} / {total}",
+      "round1Title": "Round 1 · Tốc độ phản xạ cơ sở",
+      "round2Title": "Round 2 · Xử lý kép đồng thời",
+      "round3Title": "Round 3 · Ghi nhớ + thực hiện đồng thời",
+      "round4Title": "Round 4 · Xử lý 3 vùng",
+      "round5Title": "Round 5 · Áp lực cực hạn",
+      "roundScore": "Vòng này: {score} điểm",
+      "r1Feedback": "Tốc độ phản xạ: {ms}ms",
+      "r1Hint": "Chạm nhanh vào vòng tròn san hô khi xuất hiện",
+      "r2Hint": "Trái = màu, Phải = chẵn/lẻ",
+      "r3ShapeHint": "Chạm hình nhanh (sau đó nhập thứ tự màu)",
+      "r4Hint": "Xử lý đồng thời 3 vùng màu · toán · mẫu",
+      "r5Hint": "Mỗi ô một nhiệm vụ! Khớp màu · chẵn/lẻ · chạm vòng (hết giờ/sai = trừ điểm)",
+      "round1HowTo": "Chạm các vòng tròn san hô trên màn hình càng nhanh càng tốt. Tốc độ phản xạ là điểm số.",
+      "round2HowTo": "Màn hình chia đôi. Bên trái chọn màu, bên phải chẵn/lẻ—làm cùng lúc.",
+      "round3HowTo": "① Nhớ thứ tự 5 màu → ② Chạm hình xuất hiện → ③ Nhập lại thứ tự màu đã nhớ.",
+      "round4HowTo": "Ba vùng màu, toán, mẫu sáng cùng lúc. Đừng bỏ sót bài ở bất kỳ vùng nào.",
+      "round5HowTo": "Nhiệm vụ xuất hiện ở 3 ô: khớp màu / chẵn-lẻ / chạm vòng—xử lý ngay tại ô đó. Hết giờ và sai sẽ trừ điểm.",
+      "remember": "Hãy nhớ thứ tự màu này",
+      "rememberSub": "Sau khi chạm hình, bạn sẽ nhập lại thứ tự này",
+      "ready": "Sẵn sàng",
+      "recall": "Nhập thứ tự màu bạn đã nhớ",
+      "recallSub": "Chạm 5 màu vừa thấy từ trái sang phải theo thứ tự",
+      "hits": "Trúng",
+      "odd": "Lẻ",
+      "even": "Chẵn",
+      "zoneColor": "Màu",
+      "zoneMath": "Toán",
+      "zonePattern": "Mẫu",
+      "paused": "Tạm dừng",
+      "pausedHint": "Chạm màn hình để bắt đầu lại vòng này"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Gợi ý bài test tương tự Top 5",
+      "popularTestsTop5": "🔥 Bài test đang hot Top 5"
+    }
   }
 }
