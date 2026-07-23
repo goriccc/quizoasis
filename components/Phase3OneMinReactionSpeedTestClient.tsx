@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -274,14 +275,51 @@ export default function Phase3OneMinReactionSpeedTestClient({
     setBestScores(loadPhase3ReactionSpeedBestScores());
   }, []);
 
-  // 플레이/브리핑 중 배경 스크롤·헤더 간섭 방지
+  // 플레이/브리핑 중 배경 스크롤·헤더·푸터 간섭 방지
   useEffect(() => {
     const lock = screen === 'playing' || screen === 'briefing' || screen === 'paused';
     if (!lock) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+
+    const html = document.documentElement;
+    const body = document.body;
+    const scrollY = window.scrollY;
+    const prev = {
+      htmlOverflow: html.style.overflow,
+      bodyOverflow: body.style.overflow,
+      bodyPosition: body.style.position,
+      bodyTop: body.style.top,
+      bodyLeft: body.style.left,
+      bodyRight: body.style.right,
+      bodyWidth: body.style.width,
+    };
+
+    html.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}px`;
+    body.style.left = '0';
+    body.style.right = '0';
+    body.style.width = '100%';
+    body.classList.add('p3-reaction-game-active');
+
+    const preventTouchMove = (e: TouchEvent) => {
+      const el = e.target as Element | null;
+      if (el?.closest?.('[data-p3-reaction-overlay]')) return;
+      e.preventDefault();
+    };
+    document.addEventListener('touchmove', preventTouchMove, { passive: false });
+
     return () => {
-      document.body.style.overflow = prev;
+      html.style.overflow = prev.htmlOverflow;
+      body.style.overflow = prev.bodyOverflow;
+      body.style.position = prev.bodyPosition;
+      body.style.top = prev.bodyTop;
+      body.style.left = prev.bodyLeft;
+      body.style.right = prev.bodyRight;
+      body.style.width = prev.bodyWidth;
+      body.classList.remove('p3-reaction-game-active');
+      document.removeEventListener('touchmove', preventTouchMove);
+      window.scrollTo(0, scrollY);
     };
   }, [screen]);
 
@@ -967,8 +1005,11 @@ export default function Phase3OneMinReactionSpeedTestClient({
           : 'briefing.extremeTip';
     const accent = 'from-purple-600 to-pink-600';
 
-    return (
-      <div className="fixed inset-0 z-[60] h-[100dvh] max-h-[100dvh] overflow-y-auto overscroll-none bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex flex-col items-center justify-center p-3 sm:p-4">
+    return createPortal(
+      <div
+        data-p3-reaction-overlay
+        className="fixed inset-0 z-[200] h-[100dvh] max-h-[100dvh] overflow-y-auto overscroll-none bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex flex-col items-center justify-center p-3 sm:p-4"
+      >
         <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center my-auto">
           <p className="text-xs sm:text-sm font-bold text-gray-500 mb-1 sm:mb-2">
             {t('briefing.step', { current: step, total: 3 })}
@@ -997,35 +1038,45 @@ export default function Phase3OneMinReactionSpeedTestClient({
             {t('briefing.go')}
           </button>
         </div>
-      </div>
+      </div>,
+      document.body
     );
   }
 
   // —— Paused ——
   if (screen === 'paused') {
-    return (
-      <div className="fixed inset-0 z-[60] h-[100dvh] flex flex-col items-center justify-center bg-slate-900 text-white p-6">
+    return createPortal(
+      <div
+        data-p3-reaction-overlay
+        className="fixed inset-0 z-[200] h-[100dvh] flex flex-col items-center justify-center bg-slate-900 text-white p-6"
+      >
         <p className="text-2xl font-bold mb-2">{t('game.paused')}</p>
         <p className="text-sm opacity-80">{t('game.pausedHint')}</p>
-      </div>
+      </div>,
+      document.body
     );
   }
 
   // —— Playing ——
   if (screen === 'playing') {
+    // 2·3구간은 방향패드를 항상 렌더해 플레이 영역 높이가 요동치지 않게 함
+    const reserveDirPad = phase === 'accel' || phase === 'extreme';
     const needsDirPad =
-      target &&
+      !!target &&
       (target.type === 'arrow' || target.type === 'oddEven' || target.type === 'colorDir');
+    const dirPadLabels = target?.type === 'oddEven';
 
-    return (
+    return createPortal(
       <div
-        className={`fixed inset-0 z-[60] flex flex-col select-none touch-manipulation overflow-hidden h-[100dvh] max-h-[100dvh] pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] ${
+        data-p3-reaction-overlay
+        className={`fixed inset-0 z-[200] select-none touch-none overflow-hidden overscroll-none ${
           reverseActive ? 'bg-slate-900' : 'bg-slate-100'
-        } ${flashPerfect ? 'bg-yellow-200' : ''} ${lowTime ? 'animate-pulse' : ''} ${
-          screenShake ? 'p3-play-shake' : ''
-        } ${flashHit ? 'p3-play-hit-flash' : ''} ${flashRed ? 'p3-play-miss-flash' : ''}`}
+        } ${flashPerfect ? 'bg-yellow-200' : ''} ${flashHit ? 'p3-play-hit-flash' : ''} ${
+          flashRed ? 'p3-play-miss-flash' : ''
+        }`}
+        style={{ width: '100%', height: '100dvh', maxHeight: '100dvh', top: 0, left: 0, right: 0, bottom: 0 }}
       >
-        {/* 타격감 이펙트 레이어 */}
+        {/* 타격감 이펙트 레이어 — 바깥 셸에 두어 shake transform에 영향받지 않음 */}
         {impacts.map((fx) => (
           <div key={fx.id}>
             {fx.kind === 'hit' ? (
@@ -1084,6 +1135,27 @@ export default function Phase3OneMinReactionSpeedTestClient({
           </div>
         ))}
 
+        {(banner || levelUpFlash) && (
+          <div className="absolute top-10 left-0 right-0 z-40 flex justify-center pointer-events-none">
+            <div className="bg-black/80 text-white font-black px-4 py-1.5 rounded-full text-base sm:text-lg shadow-lg">
+              {banner}
+            </div>
+          </div>
+        )}
+
+        <div className="absolute top-14 right-3 z-40 space-y-1 pointer-events-none">
+          {floats.map((f) => (
+            <div key={f.id} className="font-black text-lg sm:text-xl animate-bounce" style={{ color: f.color }}>
+              {f.text}
+            </div>
+          ))}
+        </div>
+
+        <div
+          className={`absolute inset-0 flex flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] touch-manipulation ${
+            lowTime ? 'animate-pulse' : ''
+          } ${screenShake ? 'p3-play-shake' : ''}`}
+        >
         <div className="w-full h-2 shrink-0 bg-gray-300 relative">
           <div className={`h-full ${barColor} transition-all`} style={{ width: `${progressPct}%` }} />
         </div>
@@ -1128,22 +1200,6 @@ export default function Phase3OneMinReactionSpeedTestClient({
                 ? t('game.hudHintAccel')
                 : t('game.hudHintExtreme')}
           </span>
-        </div>
-
-        {(banner || levelUpFlash) && (
-          <div className="absolute top-10 left-0 right-0 z-40 flex justify-center pointer-events-none">
-            <div className="bg-black/80 text-white font-black px-4 py-1.5 rounded-full text-base sm:text-lg shadow-lg">
-              {banner}
-            </div>
-          </div>
-        )}
-
-        <div className="absolute top-14 right-3 z-40 space-y-1 pointer-events-none">
-          {floats.map((f) => (
-            <div key={f.id} className="font-black text-lg sm:text-xl animate-bounce" style={{ color: f.color }}>
-              {f.text}
-            </div>
-          ))}
         </div>
 
         <div
@@ -1220,7 +1276,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
           )}
         </div>
 
-        {needsDirPad && (
+        {reserveDirPad && (
           <div className="shrink-0 grid grid-cols-3 gap-1.5 sm:gap-2 px-4 sm:px-6 pt-1 pb-2 max-w-sm mx-auto w-full">
             <div />
             <button
@@ -1254,7 +1310,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
                 handleAction('left', e.clientX, e.clientY);
               }}
             >
-              {target?.type === 'oddEven' ? t('ui.left') : '←'}
+              {dirPadLabels ? t('ui.left') : '←'}
             </button>
             <button
               type="button"
@@ -1286,11 +1342,13 @@ export default function Phase3OneMinReactionSpeedTestClient({
                 handleAction('right', e.clientX, e.clientY);
               }}
             >
-              {target?.type === 'oddEven' ? t('ui.right') : '→'}
+              {dirPadLabels ? t('ui.right') : '→'}
             </button>
           </div>
         )}
-      </div>
+        </div>
+      </div>,
+      document.body
     );
   }
 

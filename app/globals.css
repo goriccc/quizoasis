@@ -228,4 +228,11 @@ body {
   animation: p3-btn-miss 0.32s ease-out;
 }
 
+/* 순발력 게임 전체화면 중 헤더/푸터가 겹치거나 터치되는 것 방지 */
+body.p3-reaction-game-active header,
+body.p3-reaction-game-active footer {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
 
