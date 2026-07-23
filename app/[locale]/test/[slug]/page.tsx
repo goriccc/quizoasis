@@ -67,6 +67,10 @@ import {
   phase3LonelinessConcentrationResults,
 } from '@/lib/phase3LonelinessConcentrationData';
 import {
+  phase3SelfEsteemShieldStrengthQuestions,
+  phase3SelfEsteemShieldStrengthResults,
+} from '@/lib/phase3SelfEsteemShieldStrengthData';
+import {
   phase3ExercisePersistenceTypeQuestions,
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
@@ -695,6 +699,10 @@ const Phase3MultitaskingAbilityTestClient = dynamic(
 );
 const Phase3LonelinessConcentrationTestClient = dynamic(
   () => import('@/components/Phase3LonelinessConcentrationTestClient'),
+  { ssr: false }
+);
+const Phase3SelfEsteemShieldStrengthTestClient = dynamic(
+  () => import('@/components/Phase3SelfEsteemShieldStrengthTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1740,6 +1748,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['孤獨', '孤立感', '溝通', '情感', '社群'],
         vi: ['cô đơn', 'cô lập', 'kết nối', 'cảm xúc', 'cộng đồng'],
         id: ['kesepian', 'isolasi', 'koneksi', 'emosi', 'komunitas'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-self-esteem-shield-strength') {
+    test = {
+      slug: 'phase3-self-esteem-shield-strength',
+      title: {
+        ko: "나의 '자존감 방패' 강도",
+        en: 'My Self-Esteem Shield Strength',
+        ja: "私の『自尊心シールド』強度",
+        'zh-CN': "我的『自尊盾牌』强度",
+        'zh-TW': "我的『自尊盾牌』強度",
+        vi: "Cường độ 'lá chắn tự trọng' của tôi",
+        id: "Kekuatan 'Perisai Harga Diri' Saya",
+      },
+      description: {
+        ko: '12가지 질문으로 외부 비난으로부터 나를 지키는 자존감 방패 강도를 측정합니다.',
+        en: 'Measure your self-esteem shield strength against external criticism with 12 questions.',
+        ja: '12の質問で外部の非難から自分を守る自尊心シールドの強度を測ります。',
+        'zh-CN': '通过12个问题测量你抵御外部批评的自尊盾牌强度。',
+        'zh-TW': '透過12個問題測量你抵禦外部批評的自尊盾牌強度。',
+        vi: 'Đo cường độ lá chắn tự trọng trước lời chỉ trích bên ngoài qua 12 câu hỏi.',
+        id: 'Ukur kekuatan perisai harga diri terhadap kritik eksternal lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_self_esteem_shield_strength.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['자존감', '자기긍정', '방패', '멘탈', '심리'],
+        en: ['self-esteem', 'self-affirmation', 'shield', 'mental', 'psychology'],
+        ja: ['自尊心', '自己肯定', 'シールド', 'メンタル', '心理'],
+        'zh-CN': ['自尊', '自我肯定', '盾牌', '心态', '心理'],
+        'zh-TW': ['自尊', '自我肯定', '盾牌', '心態', '心理'],
+        vi: ['tự trọng', 'tự khẳng định', 'lá chắn', 'tinh thần', 'tâm lý'],
+        id: ['harga diri', 'afirmasi diri', 'perisai', 'mental', 'psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7150,6 +7195,66 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LonelinessConcentrationQuestions}
           results={phase3LonelinessConcentrationResults}
           questionCount={phase3LonelinessConcentrationQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-self-esteem-shield-strength') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-self-esteem-shield-strength',
+      title: {
+        ko: "나의 '자존감 방패' 강도",
+        en: 'My Self-Esteem Shield Strength',
+        ja: "私の『自尊心シールド』強度",
+        'zh-CN': "我的『自尊盾牌』强度",
+        'zh-TW': "我的『自尊盾牌』強度",
+        vi: "Cường độ 'lá chắn tự trọng' của tôi",
+        id: "Kekuatan 'Perisai Harga Diri' Saya",
+      },
+      description: {
+        ko: '12가지 질문으로 외부 비난으로부터 나를 지키는 자존감 방패 강도를 측정합니다.',
+        en: 'Measure your self-esteem shield strength against external criticism with 12 questions.',
+        ja: '12の質問で外部の非難から自分を守る自尊心シールドの強度を測ります。',
+        'zh-CN': '通过12个问题测量你抵御外部批评的自尊盾牌强度。',
+        'zh-TW': '透過12個問題測量你抵禦外部批評的自尊盾牌強度。',
+        vi: 'Đo cường độ lá chắn tự trọng trước lời chỉ trích bên ngoài qua 12 câu hỏi.',
+        id: 'Ukur kekuatan perisai harga diri terhadap kritik eksternal lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_self_esteem_shield_strength.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['자존감', '자기긍정', '방패', '멘탈', '심리'],
+        en: ['self-esteem', 'self-affirmation', 'shield', 'mental', 'psychology'],
+        ja: ['自尊心', '自己肯定', 'シールド', 'メンタル', '心理'],
+        'zh-CN': ['自尊', '自我肯定', '盾牌', '心态', '心理'],
+        'zh-TW': ['自尊', '自我肯定', '盾牌', '心態', '心理'],
+        vi: ['tự trọng', 'tự khẳng định', 'lá chắn', 'tinh thần', 'tâm lý'],
+        id: ['harga diri', 'afirmasi diri', 'perisai', 'mental', 'psikologi'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3SelfEsteemShieldStrengthTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3SelfEsteemShieldStrengthQuestions}
+          results={phase3SelfEsteemShieldStrengthResults}
+          questionCount={phase3SelfEsteemShieldStrengthQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}

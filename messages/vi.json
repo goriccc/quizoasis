@@ -11198,5 +11198,66 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3SelfEsteemShieldStrengthTest": {
+    "startMessage": {
+      "line1": "Bạn từng có ngày sụp đổ chỉ vì một câu nói? Khi bị chỉ trích, bạn từng cảm thấy đó là toàn bộ con người mình?",
+      "line2": "Lá chắn tự trọng là sức mạnh tâm lý bảo vệ bạn khỏi lời chỉ trích, so sánh và đánh giá tiêu cực từ bên ngoài. Lá chắn càng dày, bạn càng ít bị lay chuyển; càng mỏng, một câu nhỏ cũng có thể tác động lớn.",
+      "line3": "Đây không phải vấn đề ý chí. Đó là mô hình hình thành qua thời gian từ trải nghiệm và các mối quan hệ—và có thể thay đổi ngay khi bạn nhận ra.",
+      "line4": "Đo cường độ lá chắn tự trọng với 12 câu hỏi. Trả lời càng thật, kết quả càng chính xác.",
+      "line5": "Đo cường độ lá chắn tự trọng 🛡️ Xem ngay"
+    },
+    "ui": {
+      "startTest": "Bắt đầu",
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shieldStrength": "🛡️ Cường độ lá chắn",
+      "pattern": "📍 Mô hình",
+      "strength": "⭐ Điểm mạnh",
+      "needNow": "💙 Điều cần nhất lúc này",
+      "actions": "🌱 Việc có thể làm ngay",
+      "remainingTask": "🎯 Nhiệm vụ còn lại",
+      "canDo": "🤝 Loại này có thể làm gì",
+      "caution": "⚠️ Lưu ý",
+      "toOthers": "💬 Lời nhắn với người xung quanh",
+      "affirmation": "✨ Khẳng định",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "HOT",
+      "points": "điểm",
+      "plays": "lượt chơi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Đang đo cường độ lá chắn tự trọng 🛡️ Kiểm tra bạn bị lời người khác lay chuyển thế nào qua 12 câu. Bạn có lá chắn gì?",
+      "startKakao": "Đang đo cường độ lá chắn tự trọng 🛡️ Kiểm tra bạn bị lời người khác lay chuyển thế nào qua 12 câu. Bạn có lá chắn gì?",
+      "startWechat": "Đang đo cường độ lá chắn tự trọng 🛡️ Kiểm tra bạn bị lời người khác lay chuyển thế nào qua 12 câu. Bạn có lá chắn gì?",
+      "startWhatsapp": "Đang đo cường độ lá chắn tự trọng 🛡️ Kiểm tra bạn bị lời người khác lay chuyển thế nào qua 12 câu. Bạn có lá chắn gì?",
+      "startTelegram": "Đang đo cường độ lá chắn tự trọng 🛡️ Kiểm tra bạn bị lời người khác lay chuyển thế nào qua 12 câu. Bạn có lá chắn gì?",
+      "startLine": "Đang đo cường độ lá chắn tự trọng 🛡️ Kiểm tra bạn bị lời người khác lay chuyển thế nào qua 12 câu. Bạn có lá chắn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
+    }
   }
 }

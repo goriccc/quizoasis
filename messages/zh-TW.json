@@ -10667,5 +10667,66 @@
       "similarTestsTop5": "🎯 類似測試推薦Top5",
       "popularTestsTop5": "🔥 熱門測試推薦Top5"
     }
+  },
+  "phase3SelfEsteemShieldStrengthTest": {
+    "startMessage": {
+      "line1": "有沒有因為別人的一句話，整天都毀了？被批評時，有沒有覺得那就是全部的你？",
+      "line2": "自尊盾牌，是從外部批評、比較和負面評價中保護你的心理力量。盾牌越厚，越不容易被別人的話動搖；越薄，一句小話也可能影響很大。",
+      "line3": "這不是意志力的問題，而是長期經歷和關係形成的模式。一旦意識到，就可以開始改變。",
+      "line4": "用12個問題測量你現在的自尊盾牌強度。越誠實回答，結果越準確。",
+      "line5": "測量我的自尊盾牌強度 🛡️ 立即查看"
+    },
+    "ui": {
+      "startTest": "開始",
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "shieldStrength": "🛡️ 盾牌強度",
+      "pattern": "📍 模式",
+      "strength": "⭐ 優勢",
+      "needNow": "💙 現在最需要",
+      "actions": "🌱 現在可以做的",
+      "remainingTask": "🎯 剩餘任務",
+      "canDo": "🤝 這一類型可以做的",
+      "caution": "⚠️ 注意點",
+      "toOthers": "💬 給周圍人的話",
+      "affirmation": "✨ 肯定語",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門",
+      "points": "分",
+      "plays": "次遊玩"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "正在測我的自尊盾牌強度 🛡️ 用12題看看別人的話有多影響你。你是什麼盾牌？",
+      "startKakao": "正在測我的自尊盾牌強度 🛡️ 用12題看看別人的話有多影響你。你是什麼盾牌？",
+      "startWechat": "正在測我的自尊盾牌強度 🛡️ 用12題看看別人的話有多影響你。你是什麼盾牌？",
+      "startWhatsapp": "正在測我的自尊盾牌強度 🛡️ 用12題看看別人的話有多影響你。你是什麼盾牌？",
+      "startTelegram": "正在測我的自尊盾牌強度 🛡️ 用12題看看別人的話有多影響你。你是什麼盾牌？",
+      "startLine": "正在測我的自尊盾牌強度 🛡️ 用12題看看別人的話有多影響你。你是什麼盾牌？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top 5",
+      "popularTestsTop5": "🔥 當下熱門測試 Top 5"
+    }
   }
 }

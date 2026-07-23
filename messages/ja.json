@@ -11186,5 +11186,66 @@
       "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
+  },
+  "phase3SelfEsteemShieldStrengthTest": {
+    "startMessage": {
+      "line1": "誰かの一言で一日が台無しになったことはありますか？非難を受けたとき、それが自分のすべてのように感じたことは？",
+      "line2": "自尊心シールドとは、外部の非難・比較・否定的な評価から自分を守る心理的な力です。シールドが厚いほど他人の言葉に揺れず、薄いほど小さな一言にも大きく影響されます。",
+      "line3": "これは意志の問題ではありません。長い時間の経験と関係が作り上げたパターンです。そして気づいた瞬間から変わり始めることができます。",
+      "line4": "12の質問で今の自尊心シールドの強度を測ります。正直に答えるほど、より正確な強度が出ます。",
+      "line5": "自尊心シールドの強度を測る 🛡️ 今すぐ確認"
+    },
+    "ui": {
+      "startTest": "開始",
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "shieldStrength": "🛡️ シールド強度",
+      "pattern": "📍 パターン",
+      "strength": "⭐ 強み",
+      "needNow": "💙 今いちばん必要なこと",
+      "actions": "🌱 今できること",
+      "remainingTask": "🎯 残りの課題",
+      "canDo": "🤝 このタイプができること",
+      "caution": "⚠️ 注意点",
+      "toOthers": "💬 周りへのメッセージ",
+      "affirmation": "✨ 宣言",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "points": "点",
+      "plays": "回プレイ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "自尊心シールドの強度を測定中 🛡️ 他人の言葉にどれだけ揺れるか12問でチェック。あなたはどんなシールド？",
+      "startKakao": "自尊心シールドの強度を測定中 🛡️ 他人の言葉にどれだけ揺れるか12問でチェック。あなたはどんなシールド？",
+      "startWechat": "自尊心シールドの強度を測定中 🛡️ 他人の言葉にどれだけ揺れるか12問でチェック。あなたはどんなシールド？",
+      "startWhatsapp": "自尊心シールドの強度を測定中 🛡️ 他人の言葉にどれだけ揺れるか12問でチェック。あなたはどんなシールド？",
+      "startTelegram": "自尊心シールドの強度を測定中 🛡️ 他人の言葉にどれだけ揺れるか12問でチェック。あなたはどんなシールド？",
+      "startLine": "自尊心シールドの強度を測定中 🛡️ 他人の言葉にどれだけ揺れるか12問でチェック。あなたはどんなシールド？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめ Top 5",
+      "popularTestsTop5": "🔥 今人気のテスト Top 5"
+    }
   }
 }

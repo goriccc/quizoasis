@@ -11336,5 +11336,66 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase3SelfEsteemShieldStrengthTest": {
+    "startMessage": {
+      "line1": "누군가의 말 한마디에 하루가 무너진 적 있나요? 비난을 들었을 때 그것이 내 전부인 것처럼 느껴진 적이 있나요?",
+      "line2": "자존감 방패란 외부의 비난·비교·부정적 평가로부터 나 자신을 지키는 심리적 힘입니다. 방패가 두꺼울수록 남의 말에 흔들리지 않고 방패가 얇을수록 작은 말 한마디에도 크게 영향을 받습니다.",
+      "line3": "이것은 의지력의 문제가 아닙니다. 오랜 시간 쌓아온 경험과 관계가 만들어낸 패턴입니다. 그리고 인식하는 순간부터 달라질 수 있습니다.",
+      "line4": "12가지 질문으로 지금 나의 자존감 방패 강도를 측정합니다. 솔직하게 답할수록 더 정확한 강도가 나옵니다.",
+      "line5": "내 자존감 방패 강도 측정하기 🛡️ 지금 바로 확인"
+    },
+    "ui": {
+      "startTest": "시작하기",
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shieldStrength": "🛡️ 방패 강도",
+      "pattern": "📍 패턴",
+      "strength": "⭐ 강점",
+      "needNow": "💙 지금 가장 필요한 것",
+      "actions": "🌱 지금 할 수 있는 것",
+      "remainingTask": "🎯 남은 과제",
+      "canDo": "🤝 이 유형이 할 수 있는 것",
+      "caution": "⚠️ 주의점",
+      "toOthers": "💬 주변에 전하는 말",
+      "affirmation": "✨ 확언",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "points": "점",
+      "plays": "회 플레이"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내 자존감 방패 강도 측정 중 🛡️ 남의 말에 얼마나 흔들리는지 12문항으로 점검해봐. 너는 어떤 방패야?",
+      "startKakao": "내 자존감 방패 강도 측정 중 🛡️ 남의 말에 얼마나 흔들리는지 12문항으로 점검해봐. 너는 어떤 방패야?",
+      "startWechat": "내 자존감 방패 강도 측정 중 🛡️ 남의 말에 얼마나 흔들리는지 12문항으로 점검해봐. 너는 어떤 방패야?",
+      "startWhatsapp": "내 자존감 방패 강도 측정 중 🛡️ 남의 말에 얼마나 흔들리는지 12문항으로 점검해봐. 너는 어떤 방패야?",
+      "startTelegram": "내 자존감 방패 강도 측정 중 🛡️ 남의 말에 얼마나 흔들리는지 12문항으로 점검해봐. 너는 어떤 방패야?",
+      "startLine": "내 자존감 방패 강도 측정 중 🛡️ 남의 말에 얼마나 흔들리는지 12문항으로 점검해봐. 너는 어떤 방패야?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

@@ -11198,5 +11198,66 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3SelfEsteemShieldStrengthTest": {
+    "startMessage": {
+      "line1": "Pernahkah satu komentar merusak seharianmu? Saat dikritik, pernahkah terasa itu adalah seluruh dirimu?",
+      "line2": "Perisai harga diri adalah kekuatan psikologis yang melindungimu dari kritik, perbandingan, dan penilaian negatif dari luar. Semakin tebal perisainya, semakin sedikit kata orang menggoyahkanmu.",
+      "line3": "Ini bukan soal kemauan. Ini pola yang terbentuk dari pengalaman dan relasi lama—dan bisa mulai berubah saat kamu menyadarinya.",
+      "line4": "Ukur kekuatan perisai harga dirimu dengan 12 pertanyaan. Semakin jujur jawabanmu, semakin akurat hasilnya.",
+      "line5": "Ukur kekuatan perisai harga diriku 🛡️ Cek sekarang"
+    },
+    "ui": {
+      "startTest": "Mulai",
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shieldStrength": "🛡️ Kekuatan perisai",
+      "pattern": "📍 Pola",
+      "strength": "⭐ Kekuatan",
+      "needNow": "💙 Yang paling dibutuhkan sekarang",
+      "actions": "🌱 Yang bisa dilakukan sekarang",
+      "remainingTask": "🎯 Tugas tersisa",
+      "canDo": "🤝 Yang bisa dilakukan tipe ini",
+      "caution": "⚠️ Catatan",
+      "toOthers": "💬 Pesan untuk orang sekitar",
+      "affirmation": "✨ Afirmasi",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "POPULER",
+      "points": "poin",
+      "plays": "kali dimainkan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Mengukur kekuatan perisai harga diri 🛡️ Cek seberapa goyah kamu oleh kata orang lewat 12 pertanyaan. Perisaimu yang mana?",
+      "startKakao": "Mengukur kekuatan perisai harga diri 🛡️ Cek seberapa goyah kamu oleh kata orang lewat 12 pertanyaan. Perisaimu yang mana?",
+      "startWechat": "Mengukur kekuatan perisai harga diri 🛡️ Cek seberapa goyah kamu oleh kata orang lewat 12 pertanyaan. Perisaimu yang mana?",
+      "startWhatsapp": "Mengukur kekuatan perisai harga diri 🛡️ Cek seberapa goyah kamu oleh kata orang lewat 12 pertanyaan. Perisaimu yang mana?",
+      "startTelegram": "Mengukur kekuatan perisai harga diri 🛡️ Cek seberapa goyah kamu oleh kata orang lewat 12 pertanyaan. Perisaimu yang mana?",
+      "startLine": "Mengukur kekuatan perisai harga diri 🛡️ Cek seberapa goyah kamu oleh kata orang lewat 12 pertanyaan. Perisaimu yang mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }
