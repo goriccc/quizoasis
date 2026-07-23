@@ -10902,5 +10902,59 @@
       "extremeRule4": "Reverse switches suddenly — watch the banner!",
       "extremeTip": "Tip: Read position/rules before color. 0 misses = +20 bonus"
     }
+  },
+  "phase3AiFuture10YearsTest": {
+    "startMessage": {
+      "line1": "What will your day look like in 10 years?",
+      "line2": "A decade changes more than you think — where you live, who you're with, what you do, even what you drink in the morning.",
+      "line3": "AI analyzes who you are now and paints the life that fits you best in 10 years. Traits, values, energy, preferred spaces and relationships — woven into a short story of your future day.",
+      "line4": "Answer 12 questions honestly. See the future self AI draws for you.",
+      "line5": "Analyze my life in 10 years 🔮 Start now",
+      "note": "※ Choose the option closest to you for each question."
+    },
+    "ui": {
+      "startTest": "Start my 10-year analysis",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share your result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "goToTest": "Take the test",
+      "adsenseTitle": "AdSense area (AI paints my life in 10 years)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "keywords": "🔮 AI analysis keywords"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "AI paints my life in 10 years 🔮 What will your day look like then?",
+      "startKakao": "AI paints my life in 10 years 🔮 What will your day look like then?",
+      "startWechat": "AI paints my life in 10 years 🔮 What will your day look like then?",
+      "startWhatsapp": "AI paints my life in 10 years 🔮 What will your day look like then?",
+      "startTelegram": "AI paints my life in 10 years 🔮 What will your day look like then?",
+      "startLine": "AI paints my life in 10 years 🔮 What will your day look like then?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests right now"
+    }
   }
 }

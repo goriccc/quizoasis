@@ -10893,5 +10893,59 @@
       "extremeRule4": "Đảo luật đổi đột ngột — xem banner!",
       "extremeTip": "Mẹo: Xem vị trí/luật trước. 0 miss = +20"
     }
+  },
+  "phase3AiFuture10YearsTest": {
+    "startMessage": {
+      "line1": "Ngày của bạn sau 10 năm sẽ như thế nào?",
+      "line2": "Một thập kỷ thay đổi nhiều hơn bạn nghĩ — nơi ở, người bên cạnh, công việc, thậm chí buổi sáng bạn uống gì.",
+      "line3": "AI phân tích bạn hiện tại và vẽ nên lối sống hợp nhất sau 10 năm. Tính cách, giá trị, năng lượng, không gian và cách kết nối — viết thành một câu chuyện ngắn về một ngày trong tương lai.",
+      "line4": "Hãy trả lời trung thực 12 câu hỏi. Xem bản thân 10 năm sau mà AI vẽ cho bạn.",
+      "line5": "Phân tích cuộc sống 10 năm sau của tôi 🔮 Bắt đầu ngay",
+      "note": "※ Mỗi câu hãy chọn phương án gần với bạn nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu phân tích 10 năm sau",
+      "shareWithFriends": "Làm cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (AI vẽ '10 năm sau' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "keywords": "🔮 Từ khóa phân tích AI"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "AI vẽ '10 năm sau' của tôi 🔮 Ngày của bạn lúc đó sẽ thế nào?",
+      "startKakao": "AI vẽ '10 năm sau' của tôi 🔮 Ngày của bạn lúc đó sẽ thế nào?",
+      "startWechat": "AI vẽ '10 năm sau' của tôi 🔮 Ngày của bạn lúc đó sẽ thế nào?",
+      "startWhatsapp": "AI vẽ '10 năm sau' của tôi 🔮 Ngày của bạn lúc đó sẽ thế nào?",
+      "startTelegram": "AI vẽ '10 năm sau' của tôi 🔮 Ngày của bạn lúc đó sẽ thế nào?",
+      "startLine": "AI vẽ '10 năm sau' của tôi 🔮 Ngày của bạn lúc đó sẽ thế nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

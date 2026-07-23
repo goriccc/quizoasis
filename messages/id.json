@@ -10893,5 +10893,59 @@
       "extremeRule4": "Mode balik berubah tiba-tiba — lihat banner!",
       "extremeTip": "Tips: Lihat posisi/aturan dulu. 0 miss = +20"
     }
+  },
+  "phase3AiFuture10YearsTest": {
+    "startMessage": {
+      "line1": "Seperti apa harimu 10 tahun lagi?",
+      "line2": "Satu dekade mengubah lebih banyak dari yang kamu kira — tempat tinggal, siapa di sampingmu, pekerjaan, bahkan apa yang kamu minum di pagi hari.",
+      "line3": "AI menganalisis dirimu sekarang dan menggambar kehidupan yang paling cocok 10 tahun lagi. Sifat, nilai, pola energi, ruang dan cara berhubungan — disusun menjadi cerita singkat tentang harimu di masa depan.",
+      "line4": "Jawab 12 pertanyaan dengan jujur. Lihat diri 10 tahun lagi yang digambar AI untukmu.",
+      "line5": "Analisis hidupku 10 tahun lagi 🔮 Mulai sekarang",
+      "note": "※ Pilih opsi yang paling dekat denganmu di setiap soal."
+    },
+    "ui": {
+      "startTest": "Mulai analisis 10 tahun lagi",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Area iklan AdSense (AI menggambar '10 tahun lagi'-ku)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "keywords": "🔮 Kata kunci analisis AI"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "AI menggambar '10 tahun lagi'-ku 🔮 Seperti apa harimu nanti?",
+      "startKakao": "AI menggambar '10 tahun lagi'-ku 🔮 Seperti apa harimu nanti?",
+      "startWechat": "AI menggambar '10 tahun lagi'-ku 🔮 Seperti apa harimu nanti?",
+      "startWhatsapp": "AI menggambar '10 tahun lagi'-ku 🔮 Seperti apa harimu nanti?",
+      "startTelegram": "AI menggambar '10 tahun lagi'-ku 🔮 Seperti apa harimu nanti?",
+      "startLine": "AI menggambar '10 tahun lagi'-ku 🔮 Seperti apa harimu nanti?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }

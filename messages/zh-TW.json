@@ -10362,5 +10362,59 @@
       "extremeRule4": "反轉會突然切換——看橫幅！",
       "extremeTip": "提示：先看位置／規則。零失誤+20分"
     }
+  },
+  "phase3AiFuture10YearsTest": {
+    "startMessage": {
+      "line1": "十年後，你的一天會是什麼樣子？",
+      "line2": "十年比你想像的更能改變一切——住在哪裡、和誰在一起、做什麼工作，甚至早上喝什麼。",
+      "line3": "AI會分析現在的你，勾勒出十年後最適合你的生活。綜合性格、價值觀、能量模式、偏好的空間與關係方式，把十年後的一天寫成一篇短故事。",
+      "line4": "請誠實回答12個問題，看看AI為你描繪的十年後的自己。",
+      "line5": "開始分析我的十年後 🔮 馬上查看",
+      "note": "※ 每題請選擇最接近你的選項。"
+    },
+    "ui": {
+      "startTest": "開始十年後分析",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "看看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區域（AI描繪我的『十年後』）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "keywords": "🔮 AI分析關鍵字"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "AI描繪我的『十年後』🔮 十年後你的一天會是什麼樣子？",
+      "startKakao": "AI描繪我的『十年後』🔮 十年後你的一天會是什麼樣子？",
+      "startWechat": "AI描繪我的『十年後』🔮 十年後你的一天會是什麼樣子？",
+      "startWhatsapp": "AI描繪我的『十年後』🔮 十年後你的一天會是什麼樣子？",
+      "startTelegram": "AI描繪我的『十年後』🔮 十年後你的一天會是什麼樣子？",
+      "startLine": "AI描繪我的『十年後』🔮 十年後你的一天會是什麼樣子？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時出錯。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦TOP5",
+      "popularTestsTop5": "🔥 近期熱門測試推薦TOP5"
+    }
   }
 }

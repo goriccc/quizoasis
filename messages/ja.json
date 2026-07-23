@@ -10881,5 +10881,59 @@
       "extremeRule4": "反転は突然切り替わる — バナーを見て！",
       "extremeTip": "ヒント: 色より位置／ルール優先。ミス0で+20"
     }
+  },
+  "phase3AiFuture10YearsTest": {
+    "startMessage": {
+      "line1": "10年後、あなたの一日はどんな姿でしょう？",
+      "line2": "10年という時間は、思ったより多くのものを変えます。今どこに住み、誰といて、どんな仕事をし、朝に何を飲むかまで。",
+      "line3": "AIが今のあなたを分析し、10年後にいちばん似合う暮らしを描きます。性格・価値観・エネルギーのパターン・好む空間と関係のあり方を総合し、10年後の一日を短い物語のように綴ります。",
+      "line4": "12の質問に正直に答えてください。AIが描く10年後の自分を確認しましょう。",
+      "line5": "私の10年後を分析する 🔮 今すぐ確認",
+      "note": "※ 各問で、いちばん自分に近い選択肢を選んでください。"
+    },
+    "ui": {
+      "startTest": "10年後の分析を始める",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（AIが描く私の『10年後』）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "keywords": "🔮 AI分析キーワード"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "AIが描く私の『10年後』🔮 10年後のあなたの一日はどんな姿？",
+      "startKakao": "AIが描く私の『10年後』🔮 10年後のあなたの一日はどんな姿？",
+      "startWechat": "AIが描く私の『10年後』🔮 10年後のあなたの一日はどんな姿？",
+      "startWhatsapp": "AIが描く私の『10年後』🔮 10年後のあなたの一日はどんな姿？",
+      "startTelegram": "AIが描く私の『10年後』🔮 10年後のあなたの一日はどんな姿？",
+      "startLine": "AIが描く私の『10年後』🔮 10年後のあなたの一日はどんな姿？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似テストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }
