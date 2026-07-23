@@ -476,3 +476,183 @@ export async function submitLeaderboardScore(
     return { success: false, error };
   }
 }
+
+// —— Phase3 1분 순발력 테스트 전용 랭킹/챌린지 (기존 leaderboard와 분리) ——
+
+const P3_REACTION_SPEED_SLUG = 'phase3-1min-reaction-speed';
+
+export async function submitPhase3ReactionSpeedScore(params: {
+  playerName?: string;
+  rawScore: number;
+  normalizedScore: number;
+  avgMs: number;
+  maxCombo: number;
+  missCount: number;
+  weekKey: string;
+  suspect?: boolean;
+}) {
+  try {
+    const { data, error } = await supabase
+      .from('phase3_reaction_speed_scores')
+      .insert({
+        test_slug: P3_REACTION_SPEED_SLUG,
+        player_name: (params.playerName || '익명').substring(0, 20),
+        raw_score: params.rawScore,
+        normalized_score: params.normalizedScore,
+        avg_ms: params.avgMs,
+        max_combo: params.maxCombo,
+        miss_count: params.missCount,
+        week_key: params.weekKey,
+        suspect: params.suspect || false,
+      })
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error submitting phase3 reaction speed score:', error);
+      return { success: false, error };
+    }
+    return { success: true, data };
+  } catch (error) {
+    console.error('Network error submitting phase3 reaction speed score:', error);
+    return { success: false, error };
+  }
+}
+
+export async function getPhase3ReactionSpeedRank(
+  normalizedScore: number,
+  weekKey: string
+): Promise<{ rank: number; total: number; percentile: number }> {
+  try {
+    const [{ count: total }, { count: better }] = await Promise.all([
+      supabase
+        .from('phase3_reaction_speed_scores')
+        .select('*', { count: 'exact', head: true })
+        .eq('test_slug', P3_REACTION_SPEED_SLUG)
+        .eq('week_key', weekKey),
+      supabase
+        .from('phase3_reaction_speed_scores')
+        .select('*', { count: 'exact', head: true })
+        .eq('test_slug', P3_REACTION_SPEED_SLUG)
+        .eq('week_key', weekKey)
+        .gt('normalized_score', normalizedScore),
+    ]);
+
+    const totalCount = total || 0;
+    const betterCount = better || 0;
+    const rank = totalCount === 0 ? 1 : betterCount + 1;
+    // topPercent: 상위 X% (1 = 최상위)
+    const topPercent =
+      totalCount <= 1 ? 1 : Math.max(1, Math.min(100, Math.ceil((rank / totalCount) * 100)));
+
+    return { rank, total: Math.max(totalCount, 1), percentile: topPercent };
+  } catch (error) {
+    console.error('Error fetching phase3 reaction speed rank:', error);
+    return { rank: 1, total: 1, percentile: 100 };
+  }
+}
+
+export async function getPhase3ReactionSpeedHallOfFame(weekKey: string, limit = 20) {
+  try {
+    const { count } = await supabase
+      .from('phase3_reaction_speed_scores')
+      .select('*', { count: 'exact', head: true })
+      .eq('test_slug', P3_REACTION_SPEED_SLUG)
+      .eq('week_key', weekKey);
+
+    const total = count || 0;
+    const topCount = Math.max(1, Math.ceil(total * 0.01));
+    const fetchLimit = Math.min(limit, Math.max(topCount, 1));
+
+    const { data, error } = await supabase
+      .from('phase3_reaction_speed_scores')
+      .select('id, player_name, normalized_score, raw_score, avg_ms, max_combo, created_at')
+      .eq('test_slug', P3_REACTION_SPEED_SLUG)
+      .eq('week_key', weekKey)
+      .order('normalized_score', { ascending: false })
+      .limit(fetchLimit);
+
+    if (error) {
+      console.error('Error fetching hall of fame:', error);
+      return [];
+    }
+    return data || [];
+  } catch (error) {
+    console.error('Network error fetching hall of fame:', error);
+    return [];
+  }
+}
+
+export async function getPhase3ReactionSpeedTodayPlayCount(weekKey: string) {
+  try {
+    const start = new Date();
+    start.setHours(0, 0, 0, 0);
+    const { count, error } = await supabase
+      .from('phase3_reaction_speed_scores')
+      .select('*', { count: 'exact', head: true })
+      .eq('test_slug', P3_REACTION_SPEED_SLUG)
+      .eq('week_key', weekKey)
+      .gte('created_at', start.toISOString());
+
+    if (error) {
+      console.error('Error fetching today play count:', error);
+      return 0;
+    }
+    return count || 0;
+  } catch (error) {
+    console.error('Network error fetching today play count:', error);
+    return 0;
+  }
+}
+
+export async function createPhase3ReactionSpeedChallenge(params: {
+  code: string;
+  hostName?: string;
+  hostScore: number;
+  hostNormalized: number;
+  hostAvgMs: number;
+  weekKey: string;
+}) {
+  try {
+    const { data, error } = await supabase
+      .from('phase3_reaction_speed_challenges')
+      .insert({
+        code: params.code.toUpperCase(),
+        host_name: (params.hostName || '익명').substring(0, 20),
+        host_score: params.hostScore,
+        host_normalized: params.hostNormalized,
+        host_avg_ms: params.hostAvgMs,
+        week_key: params.weekKey,
+      })
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error creating challenge:', error);
+      return { success: false, error };
+    }
+    return { success: true, data };
+  } catch (error) {
+    console.error('Network error creating challenge:', error);
+    return { success: false, error };
+  }
+}
+
+export async function getPhase3ReactionSpeedChallenge(code: string) {
+  try {
+    const { data, error } = await supabase
+      .from('phase3_reaction_speed_challenges')
+      .select('*')
+      .eq('code', code.toUpperCase())
+      .maybeSingle();
+
+    if (error) {
+      console.error('Error fetching challenge:', error);
+      return null;
+    }
+    return data;
+  } catch (error) {
+    console.error('Network error fetching challenge:', error);
+    return null;
+  }
+}
