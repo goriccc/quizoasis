@@ -274,6 +274,17 @@ export default function Phase3OneMinReactionSpeedTestClient({
     setBestScores(loadPhase3ReactionSpeedBestScores());
   }, []);
 
+  // 플레이/브리핑 중 배경 스크롤·헤더 간섭 방지
+  useEffect(() => {
+    const lock = screen === 'playing' || screen === 'briefing' || screen === 'paused';
+    if (!lock) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [screen]);
+
   useEffect(() => {
     if (screen === 'intro' || screen === 'briefing' || screen === 'result' || screen === 'popup' || screen === 'loading') {
       setTimeout(() => {
@@ -421,7 +432,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
       next.color = Math.random() < 0.6 ? 'red' : 'blue';
       next.position = randomDir();
       next.x = next.position === 'left' ? 18 : next.position === 'right' ? 82 : 50;
-      next.y = next.position === 'up' ? 18 : next.position === 'down' ? 78 : 45;
+      next.y = next.position === 'up' ? 20 : next.position === 'down' ? 72 : 45;
     }
 
     setTarget(next);
@@ -957,14 +968,14 @@ export default function Phase3OneMinReactionSpeedTestClient({
     const accent = 'from-purple-600 to-pink-600';
 
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex flex-col items-center justify-center p-4">
-        <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-6 text-center">
-          <p className="text-sm font-bold text-gray-500 mb-2">
+      <div className="fixed inset-0 z-[60] h-[100dvh] max-h-[100dvh] overflow-y-auto overscroll-none bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex flex-col items-center justify-center p-3 sm:p-4">
+        <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center my-auto">
+          <p className="text-xs sm:text-sm font-bold text-gray-500 mb-1 sm:mb-2">
             {t('briefing.step', { current: step, total: 3 })}
           </p>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">{t(titleKey)}</h2>
-          <p className="text-sm text-gray-500 mb-4">{t('briefing.duration')}</p>
-          <ul className="text-left space-y-2 mb-4 text-sm text-gray-700">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1 sm:mb-2">{t(titleKey)}</h2>
+          <p className="text-xs sm:text-sm text-gray-500 mb-2 sm:mb-4">{t('briefing.duration')}</p>
+          <ul className="text-left space-y-1.5 sm:space-y-2 mb-2 sm:mb-4 text-sm text-gray-700">
             {ruleKeys.map((key) => (
               <li key={key} className="flex gap-2">
                 <span className="shrink-0">•</span>
@@ -972,16 +983,16 @@ export default function Phase3OneMinReactionSpeedTestClient({
               </li>
             ))}
           </ul>
-          <p className="text-xs text-purple-700 bg-purple-50 rounded-lg p-3 mb-6 text-left">
+          <p className="text-xs text-purple-700 bg-purple-50 rounded-lg p-2.5 sm:p-3 mb-3 sm:mb-6 text-left">
             {t(tipKey)}
           </p>
-          <p className="text-sm font-semibold text-gray-600 mb-4">
+          <p className="text-sm font-semibold text-gray-600 mb-3 sm:mb-4">
             {t('briefing.currentScore', { score: scoreLive })}
           </p>
           <button
             type="button"
             onClick={startPhasePlay}
-            className={`w-full bg-gradient-to-r ${accent} hover:from-purple-700 hover:to-pink-700 text-white font-bold text-2xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all`}
+            className={`w-full bg-gradient-to-r ${accent} hover:from-purple-700 hover:to-pink-700 text-white font-bold text-xl sm:text-2xl py-3 sm:py-4 rounded-full shadow-lg transform hover:scale-105 transition-all`}
           >
             {t('briefing.go')}
           </button>
@@ -993,7 +1004,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
   // —— Paused ——
   if (screen === 'paused') {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-slate-900 text-white p-6">
+      <div className="fixed inset-0 z-[60] h-[100dvh] flex flex-col items-center justify-center bg-slate-900 text-white p-6">
         <p className="text-2xl font-bold mb-2">{t('game.paused')}</p>
         <p className="text-sm opacity-80">{t('game.pausedHint')}</p>
       </div>
@@ -1008,7 +1019,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
 
     return (
       <div
-        className={`min-h-screen flex flex-col select-none touch-manipulation ${
+        className={`fixed inset-0 z-[60] flex flex-col select-none touch-manipulation overflow-hidden h-[100dvh] max-h-[100dvh] pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] ${
           reverseActive ? 'bg-slate-900' : 'bg-slate-100'
         } ${flashPerfect ? 'bg-yellow-200' : ''} ${lowTime ? 'animate-pulse' : ''} ${
           screenShake ? 'p3-play-shake' : ''
@@ -1073,10 +1084,10 @@ export default function Phase3OneMinReactionSpeedTestClient({
           </div>
         ))}
 
-        <div className="w-full h-3 bg-gray-300 relative">
+        <div className="w-full h-2 shrink-0 bg-gray-300 relative">
           <div className={`h-full ${barColor} transition-all`} style={{ width: `${progressPct}%` }} />
         </div>
-        <div className="flex justify-between items-center px-4 py-2 text-sm font-bold">
+        <div className="shrink-0 flex justify-between items-center px-3 py-1 text-xs sm:text-sm font-bold">
           <span className={lowTime ? 'text-red-600' : reverseActive ? 'text-white' : 'text-gray-800'}>
             {Math.floor(remainingSec / 60)}:{String(remainingSec % 60).padStart(2, '0')}
           </span>
@@ -1087,7 +1098,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
             COMBO ×{comboLive}
           </span>
         </div>
-        <div className="text-center text-xs font-semibold mb-1">
+        <div className="shrink-0 text-center text-[11px] sm:text-xs font-semibold px-2 leading-tight">
           <span
             className={
               phase === 'warmup'
@@ -1106,40 +1117,39 @@ export default function Phase3OneMinReactionSpeedTestClient({
           {reverseActive && (
             <span className="ml-2 text-yellow-300">{t('game.reverseOn')}</span>
           )}
+          <span
+            className={`block mt-0.5 truncate ${
+              reverseActive ? 'text-yellow-200' : 'text-gray-600'
+            }`}
+          >
+            {phase === 'warmup'
+              ? t('game.hudHintWarmup')
+              : phase === 'accel'
+                ? t('game.hudHintAccel')
+                : t('game.hudHintExtreme')}
+          </span>
         </div>
-        <p
-          className={`text-center text-xs px-4 mb-1 ${
-            reverseActive ? 'text-yellow-200' : 'text-gray-600'
-          }`}
-        >
-          {phase === 'warmup'
-            ? t('game.hudHintWarmup')
-            : phase === 'accel'
-              ? t('game.hudHintAccel')
-              : t('game.hudHintExtreme')}
-        </p>
 
         {(banner || levelUpFlash) && (
-          <div className="fixed top-16 left-0 right-0 z-40 flex justify-center pointer-events-none">
-            <div className="bg-black/80 text-white font-black px-4 py-2 rounded-full text-lg shadow-lg">
+          <div className="absolute top-10 left-0 right-0 z-40 flex justify-center pointer-events-none">
+            <div className="bg-black/80 text-white font-black px-4 py-1.5 rounded-full text-base sm:text-lg shadow-lg">
               {banner}
             </div>
           </div>
         )}
 
-        <div className="fixed top-24 right-4 z-40 space-y-1 pointer-events-none">
+        <div className="absolute top-14 right-3 z-40 space-y-1 pointer-events-none">
           {floats.map((f) => (
-            <div key={f.id} className="font-black text-xl animate-bounce" style={{ color: f.color }}>
+            <div key={f.id} className="font-black text-lg sm:text-xl animate-bounce" style={{ color: f.color }}>
               {f.text}
             </div>
           ))}
         </div>
 
         <div
-          className={`relative flex-1 mx-3 mb-2 rounded-2xl overflow-hidden border-2 ${
+          className={`relative flex-1 min-h-0 mx-2 my-1 rounded-2xl overflow-hidden border-2 ${
             reverseActive ? 'border-blue-400 bg-slate-800' : 'border-gray-300 bg-white'
           } ${lowTime ? 'border-red-500' : ''}`}
-          style={{ minHeight: '55vh' }}
           onPointerDown={(e) => {
             if (needsDirPad) {
               // 색+방향: 빨간 원일 때 빈 화면 클릭 = 오클릭 / 파란 원은 무시가 정답
@@ -1158,7 +1168,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
             (target.type === 'circle' || target.type === 'color' || target.type === 'reverse') && (
               <button
                 type="button"
-                className={`absolute w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg transform -translate-x-1/2 -translate-y-1/2 ${
+                className={`absolute w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full shadow-lg transform -translate-x-1/2 -translate-y-1/2 ${
                   target.color === 'blue' ? 'bg-blue-500' : 'bg-red-500'
                 } ${reverseActive && target.type === 'reverse' ? 'ring-4 ring-yellow-300' : ''}`}
                 style={{ left: `${target.x}%`, top: `${target.y}%` }}
@@ -1178,20 +1188,20 @@ export default function Phase3OneMinReactionSpeedTestClient({
           {/* 태스크5: 색+방향 — 원은 시각만, 방향 버튼으로만 입력 */}
           {target?.type === 'colorDir' && (
             <div
-              className={`absolute w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg transform -translate-x-1/2 -translate-y-1/2 pointer-events-none flex items-center justify-center ${
+              className={`absolute w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full shadow-lg transform -translate-x-1/2 -translate-y-1/2 pointer-events-none flex items-center justify-center ${
                 target.color === 'blue' ? 'bg-blue-500' : 'bg-red-500'
               }`}
               style={{ left: `${target.x}%`, top: `${target.y}%` }}
             >
               {target.color === 'blue' && (
-                <span className="text-white text-xs font-bold">{t('ui.ignore')}</span>
+                <span className="text-white text-[10px] sm:text-xs font-bold">{t('ui.ignore')}</span>
               )}
             </div>
           )}
 
           {target?.type === 'arrow' && target.direction && (
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <span className="text-7xl font-black text-indigo-600">
+              <span className="text-5xl sm:text-7xl font-black text-indigo-600">
                 {DIR_ARROWS[target.direction]}
               </span>
             </div>
@@ -1199,7 +1209,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
 
           {target?.type === 'oddEven' && target.number != null && (
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <span className="text-7xl font-black text-violet-700">{target.number}</span>
+              <span className="text-5xl sm:text-7xl font-black text-violet-700">{target.number}</span>
             </div>
           )}
 
@@ -1211,11 +1221,11 @@ export default function Phase3OneMinReactionSpeedTestClient({
         </div>
 
         {needsDirPad && (
-          <div className="grid grid-cols-3 gap-2 px-6 pb-6 max-w-sm mx-auto w-full">
+          <div className="shrink-0 grid grid-cols-3 gap-1.5 sm:gap-2 px-4 sm:px-6 pt-1 pb-2 max-w-sm mx-auto w-full">
             <div />
             <button
               type="button"
-              className={`bg-indigo-600 text-white font-bold py-4 rounded-xl text-2xl ${
+              className={`bg-indigo-600 text-white font-bold py-2.5 sm:py-3.5 rounded-xl text-xl sm:text-2xl active:scale-95 ${
                 dirBtnFx?.dir === 'up'
                   ? dirBtnFx.kind === 'hit'
                     ? 'p3-dir-btn-hit'
@@ -1232,7 +1242,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
             <div />
             <button
               type="button"
-              className={`bg-indigo-600 text-white font-bold py-4 rounded-xl text-2xl ${
+              className={`bg-indigo-600 text-white font-bold py-2.5 sm:py-3.5 rounded-xl text-sm sm:text-2xl active:scale-95 ${
                 dirBtnFx?.dir === 'left'
                   ? dirBtnFx.kind === 'hit'
                     ? 'p3-dir-btn-hit'
@@ -1248,7 +1258,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
             </button>
             <button
               type="button"
-              className={`bg-indigo-600 text-white font-bold py-4 rounded-xl text-2xl ${
+              className={`bg-indigo-600 text-white font-bold py-2.5 sm:py-3.5 rounded-xl text-xl sm:text-2xl active:scale-95 ${
                 dirBtnFx?.dir === 'down'
                   ? dirBtnFx.kind === 'hit'
                     ? 'p3-dir-btn-hit'
@@ -1264,7 +1274,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
             </button>
             <button
               type="button"
-              className={`bg-indigo-600 text-white font-bold py-4 rounded-xl text-2xl ${
+              className={`bg-indigo-600 text-white font-bold py-2.5 sm:py-3.5 rounded-xl text-sm sm:text-2xl active:scale-95 ${
                 dirBtnFx?.dir === 'right'
                   ? dirBtnFx.kind === 'hit'
                     ? 'p3-dir-btn-hit'
@@ -1280,15 +1290,6 @@ export default function Phase3OneMinReactionSpeedTestClient({
             </button>
           </div>
         )}
-
-        <div className="w-full max-w-lg mb-6 mx-auto px-3">
-          <AdSensePlaceholder
-            slot={ADSENSE_CONFIG.SLOTS.PROGRESS_SCREEN}
-            style={{ width: '100%', height: '100px' }}
-            className="mx-auto"
-            label={t('ui.adsenseTitle')}
-          />
-        </div>
       </div>
     );
   }
