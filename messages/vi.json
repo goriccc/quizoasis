@@ -11001,5 +11001,59 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3LoveObsessionThermometerTest": {
+    "startMessage": {
+      "line1": "Mình có đang hơi quá không?",
+      "line2": "Đã từng check story SNS khi quá 30 phút chưa được trả lời? Hỏi trước người yêu đang ở đâu? Tự dưng giận vì đã xem mà chậm trả lời?",
+      "line3": "Ám ảnh không đến từ ác ý — mà từ lo âu. Nhưng khi nhiệt độ quá cao, họ mệt và cuối cùng bạn cũng mệt.",
+      "line4": "Đo nhiệt độ ám ảnh tình cảm thật lòng qua 12 câu. Nếu từng nghĩ \"Mình hơi quá?\" — bạn đã biết một nửa rồi.",
+      "line5": "Đo nhiệt độ ám ảnh tình cảm của tôi 🌡️ Bắt đầu thành thật",
+      "note": "※ Hãy trả lời thành thật khi nghĩ về mối quan hệ hiện tại hoặc gần nhất."
+    },
+    "ui": {
+      "startTest": "Đo nhiệt độ ám ảnh tình cảm của tôi",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "goToTest": "Đi làm bài test",
+      "adsenseTitle": "Vùng quảng cáo AdSense (Nhiệt kế 'ám ảnh tình cảm' của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "keywords": "🌡️ Từ khóa nhiệt độ ám ảnh"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Nhiệt kế 'ám ảnh tình cảm' của tôi 🌡️ Mình có đang hơi quá không?",
+      "startKakao": "Nhiệt kế 'ám ảnh tình cảm' của tôi 🌡️ Mình có đang hơi quá không?",
+      "startWechat": "Nhiệt kế 'ám ảnh tình cảm' của tôi 🌡️ Mình có đang hơi quá không?",
+      "startWhatsapp": "Nhiệt kế 'ám ảnh tình cảm' của tôi 🌡️ Mình có đang hơi quá không?",
+      "startTelegram": "Nhiệt kế 'ám ảnh tình cảm' của tôi 🌡️ Mình có đang hơi quá không?",
+      "startLine": "Nhiệt kế 'ám ảnh tình cảm' của tôi 🌡️ Mình có đang hơi quá không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

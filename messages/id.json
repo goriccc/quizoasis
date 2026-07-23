@@ -11001,5 +11001,59 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3LoveObsessionThermometerTest": {
+    "startMessage": {
+      "line1": "Apa aku agak berlebihan?",
+      "line2": "Pernah cek story SNS kalau balasan lebih dari 30 menit? Tanya dulu di mana pasangan? Kesal sendiri saat dibaca tapi lambat dibalas?",
+      "line3": "Obsesi bukan dari niat buruk — dari kecemasan. Tapi kalau suhunya terlalu tinggi, mereka lelah dan akhirnya kamu juga.",
+      "line4": "Ukur suhu obsesi cinta secara jujur dengan 12 pertanyaan. Kalau pernah berpikir \"Aku terlalu berlebihan?\" — kamu sudah setengah tahu.",
+      "line5": "Ukur suhu obsesi cintaku 🌡️ Mulai dengan jujur",
+      "note": "※ Jawab jujur sambil memikirkan hubungan saat ini atau yang paling baru."
+    },
+    "ui": {
+      "startTest": "Ukur suhu obsesi cintaku",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lainnya",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Area iklan AdSense (Termometer 'obsesi cinta'-ku)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "keywords": "🌡️ Kata kunci suhu obsesi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Termometer 'obsesi cinta'-ku 🌡️ Apa aku agak berlebihan?",
+      "startKakao": "Termometer 'obsesi cinta'-ku 🌡️ Apa aku agak berlebihan?",
+      "startWechat": "Termometer 'obsesi cinta'-ku 🌡️ Apa aku agak berlebihan?",
+      "startWhatsapp": "Termometer 'obsesi cinta'-ku 🌡️ Apa aku agak berlebihan?",
+      "startTelegram": "Termometer 'obsesi cinta'-ku 🌡️ Apa aku agak berlebihan?",
+      "startLine": "Termometer 'obsesi cinta'-ku 🌡️ Apa aku agak berlebihan?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }

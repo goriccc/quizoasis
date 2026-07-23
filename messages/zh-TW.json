@@ -10470,5 +10470,59 @@
       "similarTestsTop5": "🎯 類似測試推薦Top5",
       "popularTestsTop5": "🔥 熱門測試推薦Top5"
     }
+  },
+  "phase3LoveObsessionThermometerTest": {
+    "startMessage": {
+      "line1": "我是不是有點過分？",
+      "line2": "對方超過30分鐘不回，你查過SNS動態嗎？好奇對方在哪先問位置？已讀不回就莫名生氣？",
+      "line3": "執著不是出於惡意，而是出於不安。但溫度太高時，對方會累，最終你也會累。",
+      "line4": "用12個問題誠實測量你的戀愛執著溫度。如果想過「我是不是太過了」——你已經知道一半了。",
+      "line5": "測測我的戀愛執著溫度 🌡️ 誠實開始",
+      "note": "※ 請想著目前或最近的戀愛，誠實作答。"
+    },
+    "ui": {
+      "startTest": "測測我的戀愛執著溫度",
+      "shareWithFriends": "和朋友一起測",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "再測一次",
+      "otherTests": "其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區域（我的『戀愛執著』溫度計）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "keywords": "🌡️ 執著溫度關鍵字"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的『戀愛執著』溫度計 🌡️ 我是不是有點過分？",
+      "startKakao": "我的『戀愛執著』溫度計 🌡️ 我是不是有點過分？",
+      "startWechat": "我的『戀愛執著』溫度計 🌡️ 我是不是有點過分？",
+      "startWhatsapp": "我的『戀愛執著』溫度計 🌡️ 我是不是有點過分？",
+      "startTelegram": "我的『戀愛執著』溫度計 🌡️ 我是不是有點過分？",
+      "startLine": "我的『戀愛執著』溫度計 🌡️ 我是不是有點過分？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時出錯。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦Top5"
+    }
   }
 }
