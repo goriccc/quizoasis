@@ -10935,5 +10935,59 @@
       "similarTestsTop5": "🎯 類似テストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3FallInLoveSpeedTest": {
+    "startMessage": {
+      "line1": "あなたは恋に落ちるまでどれくらいかかりますか？",
+      "line2": "0.1秒。一目で惚れる人もいます。笑顔ひとつで心臓が止まる人もいます。一方で1年付き合ってある日突然「この人だ」と思う人もいます。",
+      "line3": "速いから軽い、遅いから深いわけではありません。それぞれのペースがあるだけです。",
+      "line4": "12のリアルなシチュエーションで、あなたの一目惚れスピードを正確に測定します。",
+      "line5": "私の一目惚れスピード測定 💘 正直にスタート",
+      "note": "※ 各シチュエーションで自分に一番近い反応を選んでください。正直なほど正確です。"
+    },
+    "ui": {
+      "startTest": "一目惚れスピードを測定する",
+      "shareWithFriends": "友達と一緒にやってみる",
+      "shareResultWithFriends": "結果を友達にシェア",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "goToTest": "テストを受ける",
+      "adsenseTitle": "AdSense広告エリア（私の『一目惚れ』スピード測定）",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "keywords": "💘 一目惚れキーワード"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の『一目惚れ』スピード測定 💘 恋に落ちるまでどれくらいかかる？",
+      "startKakao": "私の『一目惚れ』スピード測定 💘 恋に落ちるまでどれくらいかかる？",
+      "startWechat": "私の『一目惚れ』スピード測定 💘 恋に落ちるまでどれくらいかかる？",
+      "startWhatsapp": "私の『一目惚れ』スピード測定 💘 恋に落ちるまでどれくらいかかる？",
+      "startTelegram": "私の『一目惚れ』スピード測定 💘 恋に落ちるまでどれくらいかかる？",
+      "startLine": "私の『一目惚れ』スピード測定 💘 恋に落ちるまでどれくらいかかる？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
   }
 }

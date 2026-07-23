@@ -10947,5 +10947,59 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "phase3FallInLoveSpeedTest": {
+    "startMessage": {
+      "line1": "Berapa lama kamu butuh untuk jatuh cinta?",
+      "line2": "0,1 detik. Ada yang jatuh cinta pada pandangan pertama. Satu senyum saja bisa membuat jantungnya jatuh. Ada juga yang kenal setahun lalu suatu hari tiba-tiba berpikir, \"Ini orangnya.\"",
+      "line3": "Cepat bukan berarti dangkal, lambat bukan berarti dalam. Setiap orang punya caranya sendiri.",
+      "line4": "Ukur kecepatan jatuh cintamu secara akurat dengan 12 skenario nyata.",
+      "line5": "Ukur kecepatan jatuh cintaku 💘 Mulai dengan jujur",
+      "note": "※ Pilih reaksi yang paling dekat denganmu di setiap skenario. Semakin jujur, semakin akurat."
+    },
+    "ui": {
+      "startTest": "Ukur kecepatan jatuh cintaku",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil ke teman",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lainnya",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Area iklan AdSense (Ukur kecepatan 'jatuh cinta'-ku)",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "keywords": "💘 Kata kunci jatuh cinta"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Ukur kecepatan 'jatuh cinta'-ku 💘 Berapa lama kamu butuh untuk jatuh cinta?",
+      "startKakao": "Ukur kecepatan 'jatuh cinta'-ku 💘 Berapa lama kamu butuh untuk jatuh cinta?",
+      "startWechat": "Ukur kecepatan 'jatuh cinta'-ku 💘 Berapa lama kamu butuh untuk jatuh cinta?",
+      "startWhatsapp": "Ukur kecepatan 'jatuh cinta'-ku 💘 Berapa lama kamu butuh untuk jatuh cinta?",
+      "startTelegram": "Ukur kecepatan 'jatuh cinta'-ku 💘 Berapa lama kamu butuh untuk jatuh cinta?",
+      "startLine": "Ukur kecepatan 'jatuh cinta'-ku 💘 Berapa lama kamu butuh untuk jatuh cinta?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }

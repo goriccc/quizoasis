@@ -152,6 +152,10 @@ import {
   phase3AiFuture10YearsResults,
 } from '@/lib/phase3AiFuture10YearsData';
 import {
+  phase3FallInLoveSpeedQuestions,
+  phase3FallInLoveSpeedResults,
+} from '@/lib/phase3FallInLoveSpeedData';
+import {
   phase3EgoWallThicknessQuestions,
   phase3EgoWallThicknessResults,
 } from '@/lib/phase3EgoWallThicknessData';
@@ -667,6 +671,10 @@ const Phase3OneMinReactionSpeedTestClient = dynamic(
 );
 const Phase3AiFuture10YearsTestClient = dynamic(
   () => import('@/components/Phase3AiFuture10YearsTestClient'),
+  { ssr: false }
+);
+const Phase3FallInLoveSpeedTestClient = dynamic(
+  () => import('@/components/Phase3FallInLoveSpeedTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1564,6 +1572,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['十年後', '未來', '生活方式', 'AI分析', '個人化'],
         vi: ['10 năm sau', 'tương lai', 'lối sống', 'phân tích AI', 'cá nhân hóa'],
         id: ['10 tahun lagi', 'masa depan', 'gaya hidup', 'analisis AI', 'personal'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-fall-in-love-speed') {
+    test = {
+      slug: 'phase3-fall-in-love-speed',
+      title: {
+        ko: "나의 '금사빠' 속도 측정",
+        en: 'Measure My Fall-in-Love Speed',
+        ja: '私の『一目惚れ』スピード測定',
+        'zh-CN': '测测我的『秒速心动』',
+        'zh-TW': '測測我的『秒速心動』',
+        vi: "Đo tốc độ 'yêu nhanh' của tôi",
+        id: "Ukur Kecepatan 'Jatuh Cinta'-ku",
+      },
+      description: {
+        ko: '12가지 상황극으로 사랑에 빠지는 속도를 측정합니다.',
+        en: 'Measure how fast you fall in love with 12 real-life scenarios.',
+        ja: '12のシチュエーションで恋に落ちるスピードを測定します。',
+        'zh-CN': '通过12个情景测量你坠入爱河的速度。',
+        'zh-TW': '透過12個情景測量你墜入愛河的速度。',
+        vi: 'Đo tốc độ yêu qua 12 tình huống thực tế.',
+        id: 'Ukur seberapa cepat kamu jatuh cinta lewat 12 skenario nyata.',
+      },
+      thumbnail: 'p3_test_fall_in_love_speed.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['금사빠', '설렘', '연애', '첫눈에반함', '폴인러브'],
+        en: ['fall in love', 'crush', 'dating', 'love at first sight', 'romance'],
+        ja: ['一目惚れ', 'ときめき', '恋愛', '一目ぼれ', 'フォーリンラブ'],
+        'zh-CN': ['秒速心动', '心动', '恋爱', '一见钟情', '坠入爱河'],
+        'zh-TW': ['秒速心動', '心動', '戀愛', '一見鍾情', '墜入愛河'],
+        vi: ['yêu nhanh', 'rung động', 'hẹn hò', 'yêu từ cái nhìn đầu', 'tình yêu'],
+        id: ['jatuh cinta', 'deg-degan', 'pacaran', 'cinta pandang pertama', 'romance'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -6759,7 +6804,62 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
-  if (slug === 'phase3-sudden-poor-defense-index') {
+  if (slug === 'phase3-fall-in-love-speed') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-fall-in-love-speed',
+      title: {
+        ko: "나의 '금사빠' 속도 측정",
+        en: 'Measure My Fall-in-Love Speed',
+        ja: '私の『一目惚れ』スピード測定',
+        'zh-CN': '测测我的『秒速心动』',
+        'zh-TW': '測測我的『秒速心動』',
+        vi: "Đo tốc độ 'yêu nhanh' của tôi",
+        id: "Ukur Kecepatan 'Jatuh Cinta'-ku",
+      },
+      description: {
+        ko: '12가지 상황극으로 사랑에 빠지는 속도를 측정합니다.',
+        en: 'Measure how fast you fall in love with 12 real-life scenarios.',
+        ja: '12のシチュエーションで恋に落ちるスピードを測定します。',
+        'zh-CN': '通过12个情景测量你坠入爱河的速度。',
+        'zh-TW': '透過12個情景測量你墜入愛河的速度。',
+        vi: 'Đo tốc độ yêu qua 12 tình huống thực tế.',
+        id: 'Ukur seberapa cepat kamu jatuh cinta lewat 12 skenario nyata.',
+      },
+      thumbnail: 'p3_test_fall_in_love_speed.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['금사빠', '설렘', '연애', '첫눈에반함', '폴인러브'],
+        en: ['fall in love', 'crush', 'dating', 'love at first sight', 'romance'],
+        ja: ['一目惚れ', 'ときめき', '恋愛', '一目ぼれ', 'フォーリンラブ'],
+        'zh-CN': ['秒速心动', '心动', '恋爱', '一见钟情', '坠入爱河'],
+        'zh-TW': ['秒速心動', '心動', '戀愛', '一見鍾情', '墜入愛河'],
+        vi: ['yêu nhanh', 'rung động', 'hẹn hò', 'yêu từ cái nhìn đầu', 'tình yêu'],
+        id: ['jatuh cinta', 'deg-degan', 'pacaran', 'cinta pandang pertama', 'romance'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3FallInLoveSpeedTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3FallInLoveSpeedQuestions}
+          results={phase3FallInLoveSpeedResults}
+          questionCount={phase3FallInLoveSpeedQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-sudden-poor-defense-index') {
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-sudden-poor-defense-index',
       title: {

@@ -10956,5 +10956,59 @@
       "similarTestsTop5": "🎯 Top 5 similar tests",
       "popularTestsTop5": "🔥 Top 5 popular tests right now"
     }
+  },
+  "phase3FallInLoveSpeedTest": {
+    "startMessage": {
+      "line1": "How long does it take you to fall in love?",
+      "line2": "0.1 seconds. Some people fall at first sight. A smile alone can make their heart drop. Others know someone for a year and one day suddenly think, \"This is the one.\"",
+      "line3": "Fast doesn't mean shallow, and slow doesn't mean deep. Everyone has their own pace.",
+      "line4": "Measure your fall-in-love speed accurately with 12 real-life scenarios.",
+      "line5": "Measure my fall-in-love speed 💘 Start honestly",
+      "note": "※ Choose the reaction closest to yours in each scenario. Honesty makes it more accurate."
+    },
+    "ui": {
+      "startTest": "Measure my fall-in-love speed",
+      "shareWithFriends": "Try with friends",
+      "shareResultWithFriends": "Share your result with friends",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "goToTest": "Take the test",
+      "adsenseTitle": "AdSense area (Measure my fall-in-love speed)",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "keywords": "💘 Fall-in-love keywords"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Measure my fall-in-love speed 💘 How long does it take you to fall in love?",
+      "startKakao": "Measure my fall-in-love speed 💘 How long does it take you to fall in love?",
+      "startWechat": "Measure my fall-in-love speed 💘 How long does it take you to fall in love?",
+      "startWhatsapp": "Measure my fall-in-love speed 💘 How long does it take you to fall in love?",
+      "startTelegram": "Measure my fall-in-love speed 💘 How long does it take you to fall in love?",
+      "startLine": "Measure my fall-in-love speed 💘 How long does it take you to fall in love?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests right now"
+    }
   }
 }
