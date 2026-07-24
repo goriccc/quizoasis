@@ -11367,5 +11367,67 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめ Top 5",
       "popularTestsTop5": "🔥 今人気のテストおすすめ Top 5"
     }
+  },
+  "phase3EagleEyeUltimateTest": {
+    "startMessage": {
+      "line1": "この絵が本当に動いているように見えるなら、あなたの脳が騙されています。",
+      "line2": "錯視は目が騙されるのではなく、脳が騙されます。Aの方が長く見えるのに定規では同じ、色が違って見えるのに同じ、静止画なのにくるくる回って見える——そんなものです。",
+      "line3": "12種類の錯視・隠し絵・間違い探しで目利き等級を測定します。正解が多いほど究極に近づきます。",
+      "line4": "「これ見て？」と友達にシェアして比べてみましょう。",
+      "line5": "目利きテスト開始 👁️ 今すぐ挑戦"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（目利き究極チャレンジ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "shareResult": "結果をシェア",
+      "scoreSummary": "{count}問正解 · 全12問",
+      "levelLabel": "目利き等級",
+      "scoreBandLabel": "正解数",
+      "correctCountValue": "{count}問",
+      "characteristicsLabel": "このレベルの特徴",
+      "strengthLabel": "強み",
+      "weaknessLabel": "弱み",
+      "oneLiner": "一言認証",
+      "nextChallengeLabel": "次の挑戦",
+      "questionHint": "※ 各問題の画像をよく見てから答えを選んでください。急ぐと間違います。",
+      "correctExplanationTitle": "正解解説",
+      "feedbackCorrect": "正解です！",
+      "feedbackWrong": "不正解です。",
+      "nextQuestion": "次の問題",
+      "viewResult": "結果を見る"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "目利き究極チャレンジ 👁️ 12種類の錯視・隠し絵クイズ — 君は何問正解？",
+      "startKakao": "目利き究極チャレンジ 👁️ 12種類の錯視・隠し絵クイズ — 君は何問正解？",
+      "startWechat": "目利き究極チャレンジ 👁️ 12種類の錯視・隠し絵クイズ — 君は何問正解？",
+      "startWhatsapp": "目利き究極チャレンジ 👁️ 12種類の錯視・隠し絵クイズ — 君は何問正解？",
+      "startTelegram": "目利き究極チャレンジ 👁️ 12種類の錯視・隠し絵クイズ — 君は何問正解？",
+      "startLine": "目利き究極チャレンジ 👁️ 12種類の錯視・隠し絵クイズ — 君は何問正解？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
   }
 }

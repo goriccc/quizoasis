@@ -11388,5 +11388,67 @@
       "similarTestsTop5": "🎯 Top 5 similar tests",
       "popularTestsTop5": "🔥 Top 5 popular tests right now"
     }
+  },
+  "phase3EagleEyeUltimateTest": {
+    "startMessage": {
+      "line1": "If this image looks like it is really moving, your brain is being fooled.",
+      "line2": "Illusions do not fool the eyes — they fool the brain. A looks longer but measures the same, colors look different but are identical, and still images seem to spin.",
+      "line3": "12 illusions, hidden pictures, and spot-the-difference puzzles measure your eagle-eye grade. The more you get right, the closer you are to ultimate.",
+      "line4": "Share with a friend and compare: \"Can you beat this?\"",
+      "line5": "Start the eagle-eye test 👁️ Challenge now"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense ad area (Ultimate Eagle Eye Challenge)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "scoreSummary": "{count} correct · 12 questions total",
+      "levelLabel": "Eagle Eye Grade",
+      "scoreBandLabel": "Correct answers",
+      "correctCountValue": "{count}",
+      "characteristicsLabel": "Traits of this level",
+      "strengthLabel": "Strength",
+      "weaknessLabel": "Weakness",
+      "oneLiner": "One-line proof",
+      "nextChallengeLabel": "Next challenge",
+      "questionHint": "※ Study each image carefully before choosing. Rushing leads to mistakes.",
+      "correctExplanationTitle": "Answer explanation",
+      "feedbackCorrect": "Correct!",
+      "feedbackWrong": "Incorrect.",
+      "nextQuestion": "Next question",
+      "viewResult": "View result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Ultimate Eagle Eye Challenge 👁️ 12 illusions & hidden picture quiz — how many can you get?",
+      "startKakao": "Ultimate Eagle Eye Challenge 👁️ 12 illusions & hidden picture quiz — how many can you get?",
+      "startWechat": "Ultimate Eagle Eye Challenge 👁️ 12 illusions & hidden picture quiz — how many can you get?",
+      "startWhatsapp": "Ultimate Eagle Eye Challenge 👁️ 12 illusions & hidden picture quiz — how many can you get?",
+      "startTelegram": "Ultimate Eagle Eye Challenge 👁️ 12 illusions & hidden picture quiz — how many can you get?",
+      "startLine": "Ultimate Eagle Eye Challenge 👁️ 12 illusions & hidden picture quiz — how many can you get?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests right now"
+    }
   }
 }

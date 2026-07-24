@@ -11517,5 +11517,67 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase3EagleEyeUltimateTest": {
+    "startMessage": {
+      "line1": "이 그림이 진짜로 움직이는 것 같다면 당신의 뇌가 속고 있는 겁니다.",
+      "line2": "착시란 눈이 속는 게 아닙니다. 뇌가 속는 겁니다. 아무리 봐도 A가 더 길어 보이는데 자를 대보면 같고, 분명 다른 색인데 알고 보면 같은 색이고, 아무리 봐도 고정된 그림인데 빙글빙글 도는 것처럼 보이는 것들.",
+      "line3": "12가지 착시·숨은그림·차이 찾기로 나의 눈썰미 등급을 측정합니다. 맞힐수록 끝판왕에 가까워집니다.",
+      "line4": "\"이거 보여?\" 친구에게 공유하고 비교해보세요.",
+      "line5": "눈썰미 테스트 시작 👁️ 지금 바로 도전"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (눈썰미 끝판왕 찾기)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "scoreSummary": "{count}개 맞힘 · 12문항 만점",
+      "levelLabel": "눈썰미 등급",
+      "scoreBandLabel": "정답 수",
+      "correctCountValue": "{count}개",
+      "characteristicsLabel": "이 레벨의 특징",
+      "strengthLabel": "강점",
+      "weaknessLabel": "약점",
+      "oneLiner": "한 줄 인증",
+      "nextChallengeLabel": "다음 도전",
+      "questionHint": "※ 각 문항의 이미지를 잘 살펴보고 정답을 선택하세요. 서두르면 틀립니다.",
+      "correctExplanationTitle": "정답 해설",
+      "feedbackCorrect": "정답입니다!",
+      "feedbackWrong": "오답이에요.",
+      "nextQuestion": "다음 문제",
+      "viewResult": "결과 보기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "눈썰미 끝판왕 찾기 👁️ 12가지 착시·숨은그림 퀴즈 — 너는 몇 개 맞혀?",
+      "startKakao": "눈썰미 끝판왕 찾기 👁️ 12가지 착시·숨은그림 퀴즈 — 너는 몇 개 맞혀?",
+      "startWechat": "눈썰미 끝판왕 찾기 👁️ 12가지 착시·숨은그림 퀴즈 — 너는 몇 개 맞혀?",
+      "startWhatsapp": "눈썰미 끝판왕 찾기 👁️ 12가지 착시·숨은그림 퀴즈 — 너는 몇 개 맞혀?",
+      "startTelegram": "눈썰미 끝판왕 찾기 👁️ 12가지 착시·숨은그림 퀴즈 — 너는 몇 개 맞혀?",
+      "startLine": "눈썰미 끝판왕 찾기 👁️ 12가지 착시·숨은그림 퀴즈 — 너는 몇 개 맞혀?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

@@ -11379,5 +11379,67 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "phase3EagleEyeUltimateTest": {
+    "startMessage": {
+      "line1": "Kalau gambar ini terlihat benar-benar bergerak, otakmu sedang ditipu.",
+      "line2": "Ilusi tidak menipu mata — menipu otak. A terlihat lebih panjang tapi ukurannya sama, warna terlihat beda padahal identik, gambar diam terlihat berputar.",
+      "line3": "12 ilusi, gambar tersembunyi, dan cari beda mengukur level mata elangmu. Semakin banyak benar, semakin dekat ke ultimate.",
+      "line4": "Bagikan ke teman dan bandingkan: \"Coba lihat ini?\"",
+      "line5": "Mulai tes mata elang 👁️ Tantang sekarang"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Tantangan Mata Elang Ultimate)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "Benar {count} · Total 12 soal",
+      "levelLabel": "Level Mata Elang",
+      "scoreBandLabel": "Jawaban benar",
+      "correctCountValue": "{count} soal",
+      "characteristicsLabel": "Ciri level ini",
+      "strengthLabel": "Kelebihan",
+      "weaknessLabel": "Kelemahan",
+      "oneLiner": "Bukti satu baris",
+      "nextChallengeLabel": "Tantangan berikutnya",
+      "questionHint": "※ Periksa gambar setiap soal dengan teliti sebelum memilih. Terburu-buru bikin salah.",
+      "correctExplanationTitle": "Penjelasan jawaban",
+      "feedbackCorrect": "Benar!",
+      "feedbackWrong": "Salah.",
+      "nextQuestion": "Soal berikutnya",
+      "viewResult": "Lihat hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tantangan Mata Elang Ultimate 👁️ Kuis 12 ilusi & gambar tersembunyi — kamu benar berapa?",
+      "startKakao": "Tantangan Mata Elang Ultimate 👁️ Kuis 12 ilusi & gambar tersembunyi — kamu benar berapa?",
+      "startWechat": "Tantangan Mata Elang Ultimate 👁️ Kuis 12 ilusi & gambar tersembunyi — kamu benar berapa?",
+      "startWhatsapp": "Tantangan Mata Elang Ultimate 👁️ Kuis 12 ilusi & gambar tersembunyi — kamu benar berapa?",
+      "startTelegram": "Tantangan Mata Elang Ultimate 👁️ Kuis 12 ilusi & gambar tersembunyi — kamu benar berapa?",
+      "startLine": "Tantangan Mata Elang Ultimate 👁️ Kuis 12 ilusi & gambar tersembunyi — kamu benar berapa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }

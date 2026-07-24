@@ -79,6 +79,10 @@ import {
   phase3FlirtingStyleResults,
 } from '@/lib/phase3FlirtingStyleData';
 import {
+  phase3EagleEyeUltimateQuestions,
+  phase3EagleEyeUltimateResults,
+} from '@/lib/phase3EagleEyeUltimateData';
+import {
   phase3ExercisePersistenceTypeQuestions,
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
@@ -719,6 +723,10 @@ const Phase3ExLingeringFeelingsTestClient = dynamic(
 );
 const Phase3FlirtingStyleTestClient = dynamic(
   () => import('@/components/Phase3FlirtingStyleTestClient'),
+  { ssr: false }
+);
+const Phase3EagleEyeUltimateTestClient = dynamic(
+  () => import('@/components/Phase3EagleEyeUltimateTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1875,6 +1883,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['撩人', '誘惑', '戀愛', '曖昧', '必殺技'],
         vi: ['flirting', 'quyến rũ', 'hẹn hò', 'crush', 'chiêu thức'],
         id: ['flirting', 'godaan', 'pacaran', 'crush', 'jurus'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-eagle-eye-ultimate') {
+    test = {
+      slug: 'phase3-eagle-eye-ultimate',
+      title:       {
+        ko: '눈썰미 끝판왕 찾기',
+        en: 'Ultimate Eagle Eye Challenge',
+        ja: '目利き究極チャレンジ',
+        'zh-CN': '火眼金睛终极挑战',
+        'zh-TW': '火眼金睛終極挑戰',
+        vi: 'Thử thách Mắt Đại Bàng Tối Thượng',
+        id: 'Tantangan Mata Elang Ultimate',
+      },
+      description:       {
+        ko: '12가지 착시·숨은그림·차이 찾기로 나의 눈썰미 등급을 측정합니다. #눈썰미 #착시 #숨은그림 #퀴즈 #챌린지',
+        en: 'Measure your eagle-eye grade with 12 illusions, hidden pictures, and spot-the-difference puzzles. #eagleeye #illusion #hiddenpicture #quiz #challenge',
+        ja: '12種類の錯視・隠し絵・間違い探しで目利き等級を測定。#目利き #錯視 #隠し絵 #クイズ #チャレンジ',
+        'zh-CN': '用12种错觉·找隐藏图·找不同测试你的眼力等级。#眼力 #错觉 #隐藏图 #测验 #挑战',
+        'zh-TW': '用12種錯覺·找隱藏圖·找不同測試你的眼力等級。#眼力 #錯覺 #隱藏圖 #測驗 #挑戰',
+        vi: 'Đo cấp mắt tinh với 12 ảo giác·tranh ẩn·tìm khác biệt. #mắttinh #ảoảnh #tranhẩn #quiz #thửthách',
+        id: 'Ukur level mata elang lewat 12 ilusi·gambar tersembunyi·cari beda. #mataelang #ilusi #gambartersembunyi #kuis #tantangan',
+      },
+      thumbnail: 'p3_quiz_eagle_eye_ultimate.webp',
+      type: 'psychology',
+      category: 'brain',
+      play_count: 0,
+      tags: {
+        ko: ['눈썰미', '착시', '숨은그림', '퀴즈', '챌린지'],
+        en: ['eagle eye', 'illusion', 'hidden picture', 'quiz', 'challenge'],
+        ja: ['目利き', '錯視', '隠し絵', 'クイズ', 'チャレンジ'],
+        'zh-CN': ['眼力', '错觉', '隐藏图', '测验', '挑战'],
+        'zh-TW': ['眼力', '錯覺', '隱藏圖', '測驗', '挑戰'],
+        vi: ['mắt tinh', 'ảo giác', 'tranh ẩn', 'quiz', 'thử thách'],
+        id: ['mata elang', 'ilusi', 'gambar tersembunyi', 'kuis', 'tantangan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7469,6 +7514,61 @@ export default async function TestPage({ params }: Props) {
           playCount={test.play_count}
           isLatestTest={isLatestTest}
           badgeType={test.badge_type || null}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-eagle-eye-ultimate') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-eagle-eye-ultimate',
+      title:       {
+        ko: '눈썰미 끝판왕 찾기',
+        en: 'Ultimate Eagle Eye Challenge',
+        ja: '目利き究極チャレンジ',
+        'zh-CN': '火眼金睛终极挑战',
+        'zh-TW': '火眼金睛終極挑戰',
+        vi: 'Thử thách Mắt Đại Bàng Tối Thượng',
+        id: 'Tantangan Mata Elang Ultimate',
+      },
+      description:       {
+        ko: '12가지 착시·숨은그림·차이 찾기로 나의 눈썰미 등급을 측정합니다. #눈썰미 #착시 #숨은그림 #퀴즈 #챌린지',
+        en: 'Measure your eagle-eye grade with 12 illusions, hidden pictures, and spot-the-difference puzzles. #eagleeye #illusion #hiddenpicture #quiz #challenge',
+        ja: '12種類の錯視・隠し絵・間違い探しで目利き等級を測定。#目利き #錯視 #隠し絵 #クイズ #チャレンジ',
+        'zh-CN': '用12种错觉·找隐藏图·找不同测试你的眼力等级。#眼力 #错觉 #隐藏图 #测验 #挑战',
+        'zh-TW': '用12種錯覺·找隱藏圖·找不同測試你的眼力等級。#眼力 #錯覺 #隱藏圖 #測驗 #挑戰',
+        vi: 'Đo cấp mắt tinh với 12 ảo giác·tranh ẩn·tìm khác biệt. #mắttinh #ảoảnh #tranhẩn #quiz #thửthách',
+        id: 'Ukur level mata elang lewat 12 ilusi·gambar tersembunyi·cari beda. #mataelang #ilusi #gambartersembunyi #kuis #tantangan',
+      },
+      thumbnail: 'p3_quiz_eagle_eye_ultimate.webp',
+      type: 'psychology',
+      category: 'brain',
+      play_count: 0,
+      tags: {
+        ko: ['눈썰미', '착시', '숨은그림', '퀴즈', '챌린지'],
+        en: ['eagle eye', 'illusion', 'hidden picture', 'quiz', 'challenge'],
+        ja: ['目利き', '錯視', '隠し絵', 'クイズ', 'チャレンジ'],
+        'zh-CN': ['眼力', '错觉', '隐藏图', '测验', '挑战'],
+        'zh-TW': ['眼力', '錯覺', '隱藏圖', '測驗', '挑戰'],
+        vi: ['mắt tinh', 'ảo giác', 'tranh ẩn', 'quiz', 'thử thách'],
+        id: ['mata elang', 'ilusi', 'gambar tersembunyi', 'kuis', 'tantangan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3EagleEyeUltimateTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3EagleEyeUltimateQuestions}
+          results={phase3EagleEyeUltimateResults}
+          questionCount={phase3EagleEyeUltimateQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
         />
       </>
     );

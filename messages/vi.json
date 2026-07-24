@@ -11379,5 +11379,67 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
     }
+  },
+  "phase3EagleEyeUltimateTest": {
+    "startMessage": {
+      "line1": "Nếu hình này trông như thật sự đang chuyển động, não bạn đang bị lừa.",
+      "line2": "Ảo giác không lừa mắt mà lừa não. A trông dài hơn nhưng đo thì bằng nhau, màu trông khác nhưng thực ra giống nhau, hình tĩnh lại trông như đang quay.",
+      "line3": "12 ảo giác, tranh ẩn và tìm khác biệt sẽ đo cấp mắt tinh của bạn. Đúng càng nhiều, càng gần tối thượng.",
+      "line4": "Chia sẻ với bạn và so sánh: \"Mày thử cái này xem?\"",
+      "line5": "Bắt đầu test mắt tinh 👁️ Thử ngay"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Thử thách Mắt Đại Bàng Tối Thượng)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} câu · Tổng 12 câu",
+      "levelLabel": "Cấp Mắt Tinh",
+      "scoreBandLabel": "Số câu đúng",
+      "correctCountValue": "{count} câu",
+      "characteristicsLabel": "Đặc điểm cấp này",
+      "strengthLabel": "Điểm mạnh",
+      "weaknessLabel": "Điểm yếu",
+      "oneLiner": "Chứng nhận một dòng",
+      "nextChallengeLabel": "Thử thách tiếp theo",
+      "questionHint": "※ Hãy xem kỹ hình từng câu rồi mới chọn đáp án. Vội sẽ sai.",
+      "correctExplanationTitle": "Giải thích đáp án",
+      "feedbackCorrect": "Chính xác!",
+      "feedbackWrong": "Sai rồi.",
+      "nextQuestion": "Câu tiếp theo",
+      "viewResult": "Xem kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Thử thách Mắt Đại Bàng Tối Thượng 👁️ Quiz 12 ảo giác & tranh ẩn — bạn đúng mấy câu?",
+      "startKakao": "Thử thách Mắt Đại Bàng Tối Thượng 👁️ Quiz 12 ảo giác & tranh ẩn — bạn đúng mấy câu?",
+      "startWechat": "Thử thách Mắt Đại Bàng Tối Thượng 👁️ Quiz 12 ảo giác & tranh ẩn — bạn đúng mấy câu?",
+      "startWhatsapp": "Thử thách Mắt Đại Bàng Tối Thượng 👁️ Quiz 12 ảo giác & tranh ẩn — bạn đúng mấy câu?",
+      "startTelegram": "Thử thách Mắt Đại Bàng Tối Thượng 👁️ Quiz 12 ảo giác & tranh ẩn — bạn đúng mấy câu?",
+      "startLine": "Thử thách Mắt Đại Bàng Tối Thượng 👁️ Quiz 12 ảo giác & tranh ẩn — bạn đúng mấy câu?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không thể chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
+    }
   }
 }

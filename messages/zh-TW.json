@@ -10848,5 +10848,67 @@
       "similarTestsTop5": "🎯 相似測試推薦 Top 5",
       "popularTestsTop5": "🔥 當下熱門測試 Top 5"
     }
+  },
+  "phase3EagleEyeUltimateTest": {
+    "startMessage": {
+      "line1": "如果這張圖看起來真的在動，那是你的大腦被騙了。",
+      "line2": "錯覺騙的不是眼睛，是大腦。A看起來更長，一量卻一樣；顏色看起來不同，其實相同；靜止的圖卻像在打轉。",
+      "line3": "用12種錯覺·隱藏圖·找不同測試你的眼力等級。答對越多，越接近終極王者。",
+      "line4": "分享給朋友比較一下：「你看看這個？」",
+      "line5": "眼力測試開始 👁️ 立即挑戰"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（火眼金睛終極挑戰）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測驗",
+      "shareResult": "分享結果",
+      "scoreSummary": "答對{count}題 · 共12題",
+      "levelLabel": "眼力等級",
+      "scoreBandLabel": "答對數",
+      "correctCountValue": "{count}題",
+      "characteristicsLabel": "該等級特點",
+      "strengthLabel": "優勢",
+      "weaknessLabel": "弱點",
+      "oneLiner": "一句話認證",
+      "nextChallengeLabel": "下次挑戰",
+      "questionHint": "※ 請仔細查看每題圖片後再選擇答案。太急容易錯。",
+      "correctExplanationTitle": "答案解析",
+      "feedbackCorrect": "答對了！",
+      "feedbackWrong": "答錯了。",
+      "nextQuestion": "下一題",
+      "viewResult": "查看結果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "火眼金睛終極挑戰 👁️ 12種錯覺·隱藏圖測驗 — 你能答對幾題？",
+      "startKakao": "火眼金睛終極挑戰 👁️ 12種錯覺·隱藏圖測驗 — 你能答對幾題？",
+      "startWechat": "火眼金睛終極挑戰 👁️ 12種錯覺·隱藏圖測驗 — 你能答對幾題？",
+      "startWhatsapp": "火眼金睛終極挑戰 👁️ 12種錯覺·隱藏圖測驗 — 你能答對幾題？",
+      "startTelegram": "火眼金睛終極挑戰 👁️ 12種錯覺·隱藏圖測驗 — 你能答對幾題？",
+      "startLine": "火眼金睛終極挑戰 👁️ 12種錯覺·隱藏圖測驗 — 你能答對幾題？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗推薦Top5"
+    }
   }
 }
