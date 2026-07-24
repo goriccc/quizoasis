@@ -9,6 +9,7 @@ INSERT INTO tests (
   thumbnail,
   type,
   category,
+  format,
   tags,
   play_count
 ) VALUES (
@@ -18,6 +19,7 @@ INSERT INTO tests (
   'p3_test_memory_limit_challenge.webp',
   'game',
   'brain',
+  'game',
   '{"ko": ["기억력", "챌린지", "뇌세포", "단기기억", "퀴즈"], "en": ["memory", "challenge", "brain cells", "short-term memory", "quiz"], "ja": ["記憶力", "チャレンジ", "脳細胞", "短期記憶", "クイズ"], "zh-CN": ["记忆力", "挑战", "脑细胞", "短期记忆", "测验"], "zh-TW": ["記憶力", "挑戰", "腦細胞", "短期記憶", "測驗"], "vi": ["trí nhớ", "thử thách", "tế bào não", "trí nhớ ngắn hạn", "quiz"], "id": ["memori", "tantangan", "sel otak", "memori jangka pendek", "kuis"]}',
   0
 )
@@ -27,4 +29,5 @@ ON CONFLICT (slug) DO UPDATE SET
   thumbnail = EXCLUDED.thumbnail,
   type = EXCLUDED.type,
   category = EXCLUDED.category,
+  format = EXCLUDED.format,
   tags = EXCLUDED.tags;

@@ -6,8 +6,13 @@ import { useTranslations } from 'next-intl';
 import { QuizTest } from '@/lib/types';
 import { Locale } from '@/i18n';
 import { applyHomeBuildSync } from '@/lib/homeBuildSync';
+import {
+  formatMatchesGroup,
+  isTestFormatGroup,
+  TestFormatGroup,
+} from '@/lib/testFormats';
 import CategorySection from './CategorySection';
-import TagsSection from './TagsSection';
+import HomeFilterBar from './HomeFilterBar';
 import LatestTestsSection from './LatestTestsSection';
 
 interface HomePageClientProps {
@@ -15,14 +20,26 @@ interface HomePageClientProps {
   locale: Locale;
 }
 
+function parseFormatParam(
+  formatParam: string | null,
+  tagKey: string | null
+): TestFormatGroup {
+  if (tagKey === 'face') return 'face';
+  if (formatParam && isTestFormatGroup(formatParam)) return formatParam;
+  return 'all';
+}
+
 export default function HomePageClient({ tests, locale }: HomePageClientProps) {
-  const t = useTranslations();
+  const tFormats = useTranslations('formats');
+  const tTags = useTranslations('tags');
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
   const tagKey = searchParams.get('tagKey');
   const initialTag = searchParams.get('tag') || 'all';
+  const initialFormat = parseFormatParam(searchParams.get('format'), tagKey);
   const [selectedTag, setSelectedTag] = useState(initialTag);
+  const [selectedFormat, setSelectedFormat] = useState<TestFormatGroup>(initialFormat);
   const shouldRefreshFromBuild = useRef(false);
   const [shuffleKey, setShuffleKey] = useState(() => {
     if (typeof window === 'undefined') return 0;
@@ -33,168 +50,172 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     return buildChanged ? 1 : 0;
   });
 
-  // 배포 후 홈 재진입 시 서버 데이터 갱신 (진행 중 테스트는 영향 없음)
   useEffect(() => {
     if (!shouldRefreshFromBuild.current) return;
     shouldRefreshFromBuild.current = false;
     router.refresh();
   }, [router]);
 
-  // 서버에서 받은 최신 15개 slug — API 재요청 없이 NEW 뱃지에 즉시 사용
   const latestTestSlugs = useMemo(
     () => tests.slice(0, 15).map((test) => test.slug),
     [tests]
   );
 
-  // 디버깅: 테스트 개수 확인
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {
       console.log('📊 HomePageClient - 전체 테스트 개수:', tests.length);
-      console.log('📊 HomePageClient - 최신 15개 테스트:', tests.slice(0, 15).map(t => t.slug));
     }
   }, [tests]);
-  const displayTag = useMemo(() => {
-    if (tagKey === 'face') {
-      // 로케일별 "얼굴" 라벨
-      const map: Record<string, string> = {
-        ko: '얼굴', en: 'Face', ja: '顔', 'zh-CN': '面相', 'zh-TW': '臉', id: 'Wajah', vi: 'Khuôn mặt'
-      } as any;
-      return map[locale] || '얼굴';
-    }
-    return selectedTag;
-  }, [tagKey, selectedTag, locale]);
 
   useEffect(() => {
     const tag = searchParams.get('tag') || 'all';
     setSelectedTag(tag);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setSelectedFormat(parseFormatParam(searchParams.get('format'), searchParams.get('tagKey')));
   }, [searchParams]);
 
-  // 테스트 데이터에서 태그 추출
+  const formatCounts = useMemo(() => {
+    const counts: Record<TestFormatGroup, number> = {
+      all: tests.length,
+      personality: 0,
+      game: 0,
+      quiz: 0,
+      face: 0,
+      checklist: 0,
+    };
+    tests.forEach((test) => {
+      if (formatMatchesGroup(test.format, 'personality')) counts.personality += 1;
+      if (formatMatchesGroup(test.format, 'game')) counts.game += 1;
+      if (formatMatchesGroup(test.format, 'quiz')) counts.quiz += 1;
+      if (formatMatchesGroup(test.format, 'face')) counts.face += 1;
+      if (formatMatchesGroup(test.format, 'checklist')) counts.checklist += 1;
+    });
+    return counts;
+  }, [tests]);
+
+  const formatScopedTests = useMemo(() => {
+    if (selectedFormat === 'all') return tests;
+    return tests.filter((test) => formatMatchesGroup(test.format, selectedFormat));
+  }, [tests, selectedFormat]);
+
   const tags = useMemo(() => {
     const allTagsSet = new Set<string>();
-    tests.forEach((test) => {
-      // 현재 언어의 태그 사용
+    formatScopedTests.forEach((test) => {
       test.tags.forEach((tag) => allTagsSet.add(tag));
     });
-    
-    // 각 태그별 테스트 개수 계산
+
     const tagCount = new Map<string, number>();
-    tests.forEach((test) => {
+    formatScopedTests.forEach((test) => {
       test.tags.forEach((tag) => {
         tagCount.set(tag, (tagCount.get(tag) || 0) + 1);
       });
     });
-    
-    // 1개만 검색되는 태그는 제외
+
     const tagList = Array.from(allTagsSet)
       .filter((tag) => (tagCount.get(tag) || 0) > 1)
-      .map((tag) => ({
-        id: tag,
-        name: tag,
-      }));
-    
-    return [{ id: 'all', name: 'all' }, ...tagList];
-  }, [tests]);
+      .map((tag) => ({ id: tag, name: tag }));
 
-  const handleTagSelect = (tagId: string) => {
+    return [{ id: 'all', name: 'all' }, ...tagList];
+  }, [formatScopedTests]);
+
+  const pushFilterParams = (format: TestFormatGroup, tagId: string) => {
     const params = new URLSearchParams(Array.from(searchParams.entries()));
-    if (tagId === 'all') {
-      params.delete('tag');
+    if (format === 'all') {
+      params.delete('format');
       params.delete('tagKey');
     } else {
-      params.set('tag', tagId);
+      params.set('format', format);
       params.delete('tagKey');
+    }
+    if (tagId === 'all') {
+      params.delete('tag');
+    } else {
+      params.set('tag', tagId);
     }
     router.push(`${pathname}${params.toString() ? `?${params.toString()}` : ''}`);
   };
 
-  // 선택된 태그에 따라 필터링된 테스트 (최초 접속시에만 섞기)
+  const handleFormatSelect = (formatId: TestFormatGroup) => {
+    pushFilterParams(formatId, 'all');
+  };
+
+  const handleTagSelect = (tagId: string) => {
+    pushFilterParams(selectedFormat, tagId);
+  };
+
+  const displayTag = selectedTag;
+
   const filteredTests = useMemo(() => {
-    let filtered;
-    if ((tagKey && tagKey === 'face') || (displayTag && displayTag.length > 0 && selectedTag !== 'all')) {
-      if (tagKey === 'face') {
-        const aliasSet = new Set(
-          ['얼굴','face','顔','面相','臉','脸','wajah','khuôn mặt','khuon mat']
-            .map((s) => s.toLowerCase())
-        );
-        filtered = tests.filter((test) => {
-          const tagsLower = (test.tags || []).map((t) => (t || '').toLowerCase());
-          const tagMatch = tagsLower.some((t) => aliasSet.has(t));
-          const slugLower = (test.slug || '').toLowerCase();
-          const slugMatch = slugLower.includes('face');
-          return tagMatch || slugMatch;
-        });
-      } else {
-        filtered = tests.filter(test => test.tags.includes(displayTag));
-      }
-    } else {
-      filtered = tests;
+    let filtered = formatScopedTests;
+    if (displayTag && displayTag !== 'all') {
+      filtered = formatScopedTests.filter((test) => test.tags.includes(displayTag));
     }
-    
-    // sessionStorage에서 저장된 순서 확인 (풀 투 리프레시가 아닐 때만)
-    const storageKey = `home_tests_order_${selectedTag}_${tagKey || 'all'}`;
+
+    const storageKey = `home_tests_order_${selectedFormat}_${selectedTag}_${tagKey || 'all'}`;
     const savedOrder = typeof window !== 'undefined' ? sessionStorage.getItem(storageKey) : null;
-    
+
     if (savedOrder && shuffleKey === 0) {
-      // 저장된 순서가 있고 풀 투 리프레시가 아니면 그대로 사용
       try {
         const order = JSON.parse(savedOrder);
-        const testMap = new Map(filtered.map(test => [test.id, test]));
-        const orderedTests = order.map((id: number) => testMap.get(id)).filter(Boolean) as QuizTest[];
-        
-        // 현재 테스트 목록에 있지만 sessionStorage 순서에 없는 테스트들 추가 (새로 추가된 테스트)
+        const testMap = new Map(filtered.map((test) => [test.id, test]));
+        const orderedTests = order
+          .map((id: number) => testMap.get(id))
+          .filter(Boolean) as QuizTest[];
         const orderedIds = new Set(order);
-        const missingTests = filtered.filter(test => !orderedIds.has(test.id));
-        
-        // 기존 순서 + 새로 추가된 테스트들
+        const missingTests = filtered.filter((test) => !orderedIds.has(test.id));
         return [...orderedTests, ...missingTests];
-      } catch (e) {
-        // 파싱 실패 시 새로 섞기
+      } catch {
+        // fall through to shuffle
       }
     }
-    
-    // 최초 접속이거나 저장된 순서가 없거나 풀 투 리프레시면 Fisher-Yates 셔플 알고리즘으로 랜덤 순서 생성
+
     const shuffled = [...filtered];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    
-    // 섞인 순서를 sessionStorage에 저장
-    if (typeof window !== 'undefined') {
-      const order = shuffled.map(test => test.id);
-      sessionStorage.setItem(storageKey, JSON.stringify(order));
-    }
-    
-    return shuffled;
-  }, [tests, selectedTag, tagKey, displayTag, shuffleKey]);
 
-  // 스크롤 위치 저장 및 복원
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem(storageKey, JSON.stringify(shuffled.map((test) => test.id)));
+    }
+
+    return shuffled;
+  }, [formatScopedTests, selectedTag, selectedFormat, tagKey, displayTag, shuffleKey]);
+
+  const sectionLabel = useMemo(() => {
+    const formatLabel =
+      selectedFormat === 'all' ? tFormats('all') : tFormats(selectedFormat);
+    if (selectedTag !== 'all') {
+      const tagTranslations: Record<string, Record<string, string>> = {
+        소통: { ko: '소통', en: 'Communication', ja: 'コミュニケーション', 'zh-CN': '沟通', 'zh-TW': '溝通', id: 'Komunikasi', vi: 'Giao tiếp' },
+        심리: { ko: '심리', en: 'Psychology', ja: '心理学', 'zh-CN': '心理', 'zh-TW': '心理', id: 'Psikologi', vi: 'Tâm lý' },
+        관계: { ko: '관계', en: 'Relationship', ja: '関係', 'zh-CN': '关系', 'zh-TW': '關係', id: 'Hubungan', vi: 'Mối quan hệ' },
+        우정: { ko: '우정', en: 'Friendship', ja: '友情', 'zh-CN': '友谊', 'zh-TW': '友誼', id: 'Persahabatan', vi: 'Tình bạn' },
+        성격: { ko: '성격', en: 'Personality', ja: '性格', 'zh-CN': '性格', 'zh-TW': '性格', id: 'Kepribadian', vi: 'Tính cách' },
+      };
+      const tagLabel = tagTranslations[selectedTag]?.[locale] || selectedTag;
+      return `${formatLabel} · #${tagLabel}`;
+    }
+    return formatLabel;
+  }, [selectedFormat, selectedTag, locale, tFormats]);
+
   useEffect(() => {
-    // 스크롤 위치 복원
-    const savedScrollPosition = typeof window !== 'undefined' 
-      ? sessionStorage.getItem('home_scroll_position') 
-      : null;
-    
+    const savedScrollPosition =
+      typeof window !== 'undefined' ? sessionStorage.getItem('home_scroll_position') : null;
+
     if (savedScrollPosition) {
       const position = parseInt(savedScrollPosition, 10);
-      // 약간의 지연을 두고 스크롤 (렌더링 완료 후)
       setTimeout(() => {
         window.scrollTo(0, position);
-        // 복원 후 저장된 위치 삭제 (한 번만 복원)
         sessionStorage.removeItem('home_scroll_position');
       }, 100);
     }
 
-    // 스크롤 이벤트로 위치 저장
     const handleScroll = () => {
       if (typeof window !== 'undefined') {
         sessionStorage.setItem('home_scroll_position', window.scrollY.toString());
       }
     };
 
-    // 디바운스 적용 (성능 최적화)
     let scrollTimeout: NodeJS.Timeout;
     const debouncedHandleScroll = () => {
       clearTimeout(scrollTimeout);
@@ -209,10 +230,8 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
     };
   }, []);
 
-  // 풀 투 리프레시 감지 (모바일)
   useEffect(() => {
     let touchStartY = 0;
-    let touchEndY = 0;
     let isPulling = false;
     let hasTriggered = false;
 
@@ -224,10 +243,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
 
     const handleTouchMove = (e: TouchEvent) => {
       if (!isPulling) return;
-      touchEndY = e.touches[0].clientY;
-      const pullDistance = touchEndY - touchStartY;
-      
-      // 아래로 80px 이상 당기면 풀 투 리프레시 준비
+      const pullDistance = e.touches[0].clientY - touchStartY;
       if (pullDistance > 80 && window.scrollY === 0 && !hasTriggered) {
         hasTriggered = true;
       }
@@ -235,8 +251,7 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
 
     const handleTouchEnd = () => {
       if (isPulling && hasTriggered && window.scrollY === 0) {
-        // 풀 투 리프레시 완료 - 셔플링 실행
-        setShuffleKey(prev => prev + 1);
+        setShuffleKey((prev) => prev + 1);
       }
       isPulling = false;
       hasTriggered = false;
@@ -255,34 +270,50 @@ export default function HomePageClient({ tests, locale }: HomePageClientProps) {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* 태그 섹션 - 컨테이너 밖으로 */}
-      <TagsSection 
-        tags={tags} 
-        selectedTag={selectedTag} 
-        onTagSelect={handleTagSelect}
+      <HomeFilterBar
+        formats={{
+          selectedFormat,
+          onFormatSelect: handleFormatSelect,
+          counts: formatCounts,
+        }}
+        tags={{
+          tags,
+          selectedTag,
+          onTagSelect: handleTagSelect,
+        }}
       />
-      
+
       <div className="max-w-7xl mx-auto px-1 sm:px-4">
+        <div className="pt-2 bg-white">
+          <LatestTestsSection
+            tests={tests.slice(0, 15)}
+            locale={locale}
+            shuffleKey={shuffleKey}
+            latestTestSlugs={latestTestSlugs}
+          />
+        </div>
 
-      {/* 최신 테스트 섹션 */}
-      <div className="pt-2 bg-white">
-        <LatestTestsSection 
-          tests={tests.slice(0, 15)}
-          locale={locale}
-          shuffleKey={shuffleKey}
-          latestTestSlugs={latestTestSlugs}
-        />
-      </div>
-
-      {/* 카테고리 섹션 */}
-      <div className="pt-8.5 bg-white">
-        <CategorySection 
-          tests={filteredTests} 
-          categoryName={tagKey === 'face' ? displayTag : selectedTag}
-          locale={locale}
-          latestTestSlugs={latestTestSlugs}
-        />
-      </div>
+        <div className="pt-8.5 bg-white">
+          {filteredTests.length > 0 ? (
+            <CategorySection
+              tests={filteredTests}
+              categoryName={sectionLabel}
+              locale={locale}
+              latestTestSlugs={latestTestSlugs}
+            />
+          ) : (
+            <div className="py-16 text-center text-gray-500">
+              <p className="text-lg mb-4">{tTags('emptyFilter')}</p>
+              <button
+                type="button"
+                onClick={() => pushFilterParams('all', 'all')}
+                className="px-4 py-2 rounded-full bg-primary-500 text-white text-sm font-medium"
+              >
+                {tFormats('showAll')}
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

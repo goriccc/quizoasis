@@ -1,5 +1,6 @@
 import { Locale } from '@/i18n';
 import { DBTest, QuizTest } from './types';
+import { resolveTestFormat } from './resolveTestFormat';
 
 /**
  * 플레이 횟수를 언어별로 포맷팅
@@ -305,6 +306,7 @@ export function convertDBTestToQuizTest(dbTest: DBTest, locale: Locale): QuizTes
     tags,
     createdAt: dbTest.created_at,
     badgeType: dbTest.badge_type || null,
+    format: resolveTestFormat(dbTest.format, dbTest.slug),
   };
 }
 

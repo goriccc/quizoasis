@@ -36,7 +36,8 @@
     "심리": "심리",
     "관계": "관계",
     "우정": "우정",
-    "연애": "연애"
+    "연애": "연애",
+    "emptyFilter": "해당 조건의 테스트가 없습니다."
   },
   "sections": {
     "latest": "최신 테스트",
@@ -11856,5 +11857,14 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "formats": {
+    "all": "전체",
+    "personality": "성격·심리",
+    "game": "게임·챌린지",
+    "quiz": "퀴즈·상식",
+    "face": "얼굴·AI",
+    "checklist": "MBTI·지수",
+    "showAll": "전체 테스트 보기"
   }
 }

@@ -7,7 +7,9 @@
     "build": "node --max-old-space-size=8192 ./node_modules/next/dist/bin/next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy:new": "node scripts/deploy-new-test.js"
+    "deploy:new": "node scripts/deploy-new-test.js",
+    "validate:formats": "node scripts/validate-test-formats.mjs",
+    "generate:formats": "node scripts/generate-test-format-registry.mjs"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",

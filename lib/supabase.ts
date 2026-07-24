@@ -18,7 +18,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   },
 });
 
-const TEST_LIST_COLUMNS = 'id, slug, title, thumbnail, tags, play_count, created_at, badge_type, category';
+const TEST_LIST_COLUMNS = 'id, slug, title, thumbnail, tags, play_count, created_at, badge_type, category, format';
 const HUMA_QUIZ_COLUMNS = 'id, slug, title, description';
 
 export type HumaQuizRow = {

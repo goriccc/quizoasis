@@ -7,9 +7,11 @@ interface TagsSectionProps {
   tags: { id: string; name: string }[];
   selectedTag: string;
   onTagSelect: (tagId: string) => void;
+  /** When true, omit outer sticky wrapper (used inside HomeFilterBar) */
+  embedded?: boolean;
 }
 
-export default function TagsSection({ tags, selectedTag, onTagSelect }: TagsSectionProps) {
+export default function TagsSection({ tags, selectedTag, onTagSelect, embedded = false }: TagsSectionProps) {
   const t = useTranslations('tags');
   const locale = useLocale();
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -64,9 +66,8 @@ export default function TagsSection({ tags, selectedTag, onTagSelect }: TagsSect
     setIsDragging(false);
   };
 
-  return (
-    <div className="w-full bg-white border-b border-gray-200 sticky z-40 mt-2" style={{ height: '48px', top: '64px' }}>
-      <div className="max-w-7xl mx-auto h-full flex items-center px-1 sm:px-4">
+  const inner = (
+    <div className={`max-w-7xl mx-auto h-full flex items-center px-1 sm:px-4 ${embedded ? 'py-1' : ''}`}>
         <div
           ref={scrollRef}
           className="flex gap-1.5 overflow-x-auto hide-scrollbar cursor-grab select-none touch-scroll items-center w-full"
@@ -166,6 +167,15 @@ export default function TagsSection({ tags, selectedTag, onTagSelect }: TagsSect
           })}
         </div>
       </div>
+  );
+
+  if (embedded) {
+    return inner;
+  }
+
+  return (
+    <div className="w-full bg-white border-b border-gray-200 sticky z-40 mt-2" style={{ height: '48px', top: '64px' }}>
+      {inner}
     </div>
   );
 }

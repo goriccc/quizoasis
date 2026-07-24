@@ -1,3 +1,5 @@
+import type { TestFormat } from './testFormats';
+
 export interface QuizTest {
   id: number;
   slug: string;
@@ -8,6 +10,8 @@ export interface QuizTest {
   tags: string[];
   createdAt: string;
   badgeType?: 'popular' | 'hot' | null;
+  /** Interaction format for home filtering */
+  format: TestFormat;
 }
 
 export interface QuizQuestion {
@@ -73,6 +77,7 @@ export interface DBTest {
     vi: string[];
   };
   badge_type?: 'popular' | 'hot' | null;
+  format?: string | null;
 }
 
 

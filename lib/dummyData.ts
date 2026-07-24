@@ -1,4 +1,5 @@
 import { QuizTest } from './types';
+import { resolveTestFormat } from './resolveTestFormat';
 
 // 더미 태그
 export const dummyTags = [
@@ -129,6 +130,7 @@ export function generateDummyTests(count: number): QuizTest[] {
       playCount: fixedPlayCounts[(i - 1) % fixedPlayCounts.length],
       tags: fixedTagCombinations[(i - 1) % fixedTagCombinations.length],
       createdAt: new Date(Date.now() - i * 86400000).toISOString(),
+      format: resolveTestFormat(null, `test-${i.toString().padStart(3, '0')}`),
     });
   }
 
@@ -147,6 +149,7 @@ export const dummyTests = [
     playCount: 1250,
     tags: ['심리', '관계'],
     createdAt: new Date().toISOString(),
+    format: resolveTestFormat(null, 'attachment-style-test'),
   },
   ...generateDummyTests(19)
 ];

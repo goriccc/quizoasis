@@ -75,7 +75,8 @@
     "심리": "Psikologi",
     "관계": "Hubungan",
     "우정": "Persahabatan",
-    "연애": "Romansa"
+    "연애": "Romansa",
+    "emptyFilter": "Tidak ada tes yang cocok."
   },
   "sections": {
     "latest": "Tes Terbaru",
@@ -11718,5 +11719,14 @@
       "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "formats": {
+    "all": "Semua",
+    "personality": "Kepribadian",
+    "game": "Game",
+    "quiz": "Kuis",
+    "face": "Wajah·AI",
+    "checklist": "Indeks MBTI",
+    "showAll": "Lihat semua"
   }
 }

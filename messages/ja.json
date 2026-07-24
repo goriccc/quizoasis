@@ -75,7 +75,8 @@
     "심리": "心理学",
     "관계": "関係",
     "우정": "友情",
-    "연애": "恋愛"
+    "연애": "恋愛",
+    "emptyFilter": "条件に一致するテストがありません。"
   },
   "sections": {
     "latest": "最新テスト",
@@ -11706,5 +11707,14 @@
       "similarTestsTop5": "🎯 おすすめの類似テスト Top 5",
       "popularTestsTop5": "🔥 今人気のテスト Top 5"
     }
+  },
+  "formats": {
+    "all": "すべて",
+    "personality": "性格·心理",
+    "game": "ゲーム",
+    "quiz": "クイズ",
+    "face": "顔·AI",
+    "checklist": "MBTI指数",
+    "showAll": "すべて表示"
   }
 }

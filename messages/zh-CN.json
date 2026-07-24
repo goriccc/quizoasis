@@ -75,7 +75,8 @@
     "심리": "心理",
     "관계": "关系",
     "우정": "友谊",
-    "연애": "恋爱"
+    "연애": "恋爱",
+    "emptyFilter": "没有符合条件的测试。"
   },
   "sections": {
     "latest": "最新测试",
@@ -11718,5 +11719,14 @@
       "similarTestsTop5": "🎯 相似测试推荐 Top 5",
       "popularTestsTop5": "🔥 热门测试推荐 Top 5"
     }
+  },
+  "formats": {
+    "all": "全部",
+    "personality": "性格·心理",
+    "game": "游戏",
+    "quiz": "Quiz",
+    "face": "面相·AI",
+    "checklist": "MBTI指数",
+    "showAll": "查看全部"
   }
 }

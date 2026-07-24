@@ -20,6 +20,8 @@ INSERT INTO tests (
 
   category,
 
+  format,
+
   tags,
 
   play_count
@@ -38,6 +40,8 @@ INSERT INTO tests (
 
   'brain',
 
+  'game',
+
   '{"ko": ["틀린그림", "찾기", "관찰력", "눈썰미", "챌린지"], "en": ["spot the difference", "observation", "eagle eye", "puzzle", "challenge"], "ja": ["間違い探し", "観察力", "目利き", "パズル", "チャレンジ"], "zh-CN": ["找不同", "观察力", "眼力", "益智", "挑战"], "zh-TW": ["找不同", "觀察力", "眼力", "益智", "挑戰"], "vi": ["tìm khác biệt", "quan sát", "mắt tinh", "giải đố", "thử thách"], "id": ["cari beda", "observasi", "mata elang", "teka-teki", "tantangan"]}',
 
   0
@@ -55,6 +59,8 @@ ON CONFLICT (slug) DO UPDATE SET
   type = EXCLUDED.type,
 
   category = EXCLUDED.category,
+
+  format = EXCLUDED.format,
 
   tags = EXCLUDED.tags;
 

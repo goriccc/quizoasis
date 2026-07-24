@@ -9,6 +9,7 @@ INSERT INTO tests (
   thumbnail,
   type,
   category,
+  format,
   tags,
   play_count
 ) VALUES (
@@ -18,6 +19,7 @@ INSERT INTO tests (
   'p3_game_luck_test.webp',
   'game',
   'capability',
+  'game',
   '{"ko": ["운빨", "확률", "게임", "운", "챌린지"], "en": ["luck", "probability", "game", "fortune", "challenge"], "ja": ["運ゲー", "確率", "ゲーム", "運", "チャレンジ"], "zh-CN": ["运气", "概率", "游戏", "运势", "挑战"], "zh-TW": ["運氣", "機率", "遊戲", "運勢", "挑戰"], "vi": ["vận may", "xác suất", "game", "may mắn", "thử thách"], "id": ["keberuntungan", "probabilitas", "game", "hoki", "tantangan"]}',
   0
 )
@@ -27,4 +29,5 @@ ON CONFLICT (slug) DO UPDATE SET
   thumbnail = EXCLUDED.thumbnail,
   type = EXCLUDED.type,
   category = EXCLUDED.category,
+  format = EXCLUDED.format,
   tags = EXCLUDED.tags;

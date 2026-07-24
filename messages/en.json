@@ -75,7 +75,8 @@
     "심리": "Psychology",
     "관계": "Relationship",
     "우정": "Friendship",
-    "연애": "Romance"
+    "연애": "Romance",
+    "emptyFilter": "No tests match these filters."
   },
   "sections": {
     "latest": "Latest Tests",
@@ -11727,5 +11728,14 @@
       "similarTestsTop5": "🎯 Top 5 similar test recommendations",
       "popularTestsTop5": "🔥 Top 5 popular tests right now"
     }
+  },
+  "formats": {
+    "all": "All",
+    "personality": "Personality",
+    "game": "Games",
+    "quiz": "Quiz",
+    "face": "Face AI",
+    "checklist": "MBTI Index",
+    "showAll": "Show all tests"
   }
 }

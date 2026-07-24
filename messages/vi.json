@@ -75,7 +75,8 @@
     "심리": "Tâm lý",
     "관계": "Mối quan hệ",
     "우정": "Tình bạn",
-    "연애": "Tình yêu"
+    "연애": "Tình yêu",
+    "emptyFilter": "Không có bài test phù hợp."
   },
   "sections": {
     "latest": "Bài kiểm tra mới nhất",
@@ -11718,5 +11719,14 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
     }
+  },
+  "formats": {
+    "all": "Tất cả",
+    "personality": "Tính cách",
+    "game": "Game",
+    "quiz": "Quiz",
+    "face": "Khuôn mặt·AI",
+    "checklist": "Chỉ số MBTI",
+    "showAll": "Xem tất cả"
   }
 }
