@@ -11441,5 +11441,144 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
     }
+  },
+  "phase3LuckGameTest": {
+    "startMessage": {
+      "line1": "Hôm nay vận may của bạn được mấy điểm?",
+      "line2": "Chơi liên tiếp 10 trò xác suất: chọn cửa, tung đồng xu, rút bài, roulette, đoán số, gacha, slot, cỏ bốn lá, và 100 lần tung xu. Mỗi vòng thắng +10 điểm, tối đa 100.",
+      "line3": "Tự do chọn — nhưng kết quả đã được định sẵn. Trò thuần xác suất — đo vận may hôm nay.",
+      "line4": "Xong rồi gửi bạn bè và hỏi: \"Thắng điểm tôi được không?\"",
+      "line5": "Bắt đầu test vận may 🍀 thử thách 10 vòng"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Test vận may)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "startChallenge": "Bắt đầu test vận may",
+      "shareResult": "Chia sẻ kết quả",
+      "gradeLabel": "Hạng vận may: {grade}",
+      "totalScore": "Tổng điểm",
+      "successCount": "Vòng thành công",
+      "luckGrade": "Hạng may mắn",
+      "resultProbability": "Xác suất kết quả",
+      "percentileEstimate": "Phần trăm ước tính",
+      "topPercent": "Top {pct}%",
+      "points": " điểm",
+      "rounds": "vòng",
+      "roundGridTitle": "Kết quả từng vòng",
+      "todayBest": "Cao nhất hôm nay",
+      "allTimeBest": "Cao nhất mọi thời",
+      "attemptsToday": "Hôm nay thử {count} lần",
+      "avoidToday": "Nên tránh hôm nay",
+      "canDoToday": "Nên thử hôm nay",
+      "retryTip": "Mẹo thử lại",
+      "retryBest": "Thử lại",
+      "doorA": "Cửa A",
+      "doorB": "Cửa B",
+      "doorC": "Cửa C",
+      "heads": "Ngửa",
+      "tails": "Sấp",
+      "tie": "Hòa",
+      "pullLever": "Kéo cần",
+      "spin": "Quay",
+      "color_red": "Đỏ",
+      "color_blue": "Xanh dương",
+      "color_green": "Xanh lá",
+      "color_yellow": "Vàng",
+      "color_purple": "Tím"
+    },
+    "game": {
+      "roundProgress": "Vòng {current} / {total}",
+      "score": "Điểm",
+      "openingDoor": "Đang mở cửa {door}...",
+      "gachaGold": "✨ Hạng vàng!",
+      "gachaNormal": "Hạng thường...",
+      "coin100Progress": "Ngửa {heads} : Sấp {tails}",
+      "coin100Choice": "Chọn: {choice}"
+    },
+    "rounds": {
+      "r1": {
+        "prompt": "Chọn cửa may mắn trong 3 cửa! (1/3)",
+        "success": "Đúng rồi! Tìm thấy cửa may mắn!",
+        "fail": "Tiếc quá... là cửa khác."
+      },
+      "r2": {
+        "prompt": "Tung đồng xu! Ngửa hay sấp? (1/2)",
+        "success": "Trúng! Đồng xu đứng về bạn!",
+        "fail": "Sai. Đồng xu ra mặt kia."
+      },
+      "r3": {
+        "prompt": "Chọn lá bài may mắn trong 5 lá! (2/5)",
+        "success": "Lá may mắn! Jackpot!",
+        "fail": "Lá trắng..."
+      },
+      "r4": {
+        "prompt": "Chọn 1 trong 4 hộp! (1/4)",
+        "success": "Đúng hộp! Tìm thấy kho báu!",
+        "fail": "Hộp trống..."
+      },
+      "r5": {
+        "prompt": "Đoán màu roulette! (1/5)",
+        "success": "Trúng màu! Lựa chọn roulette!",
+        "fail": "Ra màu khác."
+      },
+      "r6": {
+        "prompt": "Chọn số may mắn từ 1–10! (1/10)",
+        "success": "Trúng số! Vượt xác suất 10%!",
+        "fail": "Suýt trúng."
+      },
+      "r7": {
+        "prompt": "Kéo cần gacha! (1/5)",
+        "success": "Hạng vàng! Gacha cực phẩm!",
+        "fail": "Hạng thường... lần sau."
+      },
+      "r8": {
+        "prompt": "Quay máy slot! (1/5)",
+        "success": "Jackpot! Ba giống nhau!",
+        "fail": "Không khớp..."
+      },
+      "r9": {
+        "prompt": "Tìm cỏ bốn lá trong 6 ô! (1/6)",
+        "success": "Tìm thấy cỏ bốn lá!",
+        "fail": "Không có cỏ bốn lá..."
+      },
+      "r10": {
+        "prompt": "100 lần tung xu! Bên nào nhiều hơn? (1/3)",
+        "success": "Đúng! Đọc được xác suất 100 lần!",
+        "fail": "Sai. Xác suất tàn nhẫn..."
+      }
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Test vận may 🍀 10 vòng xác suất — hôm nay bạn được mấy điểm?",
+      "startKakao": "Test vận may 🍀 10 vòng xác suất — hôm nay bạn được mấy điểm?",
+      "startWechat": "Test vận may 🍀 10 vòng xác suất — hôm nay bạn được mấy điểm?",
+      "startWhatsapp": "Test vận may 🍀 10 vòng xác suất — hôm nay bạn được mấy điểm?",
+      "startTelegram": "Test vận may 🍀 10 vòng xác suất — hôm nay bạn được mấy điểm?",
+      "startLine": "Test vận may 🍀 10 vòng xác suất — hôm nay bạn được mấy điểm?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 test tương tự",
+      "popularTestsTop5": "🔥 Top 5 test hot hiện nay"
+    }
   }
 }

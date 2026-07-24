@@ -11441,5 +11441,144 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "phase3LuckGameTest": {
+    "startMessage": {
+      "line1": "Berapa skor keberuntunganmu hari ini?",
+      "line2": "Main 10 game probabilitas berturut-turut: pilih pintu, lempar koin, kartu, roulette, tebak angka, gacha, slot, semanggi, dan 100 lemparan koin. +10 poin tiap sukses, maks 100.",
+      "line3": "Bebas memilih — tapi hasilnya sudah ditentukan. Game probabilitas murni — ukur keberuntungan hari ini.",
+      "line4": "Selesai? Kirim ke teman dan tanya: \"Bisa kalahkan skorku?\"",
+      "line5": "Mulai tes keberuntungan 🍀 tantangan 10 ronde"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Tes Keberuntungan)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "startChallenge": "Mulai tes keberuntungan",
+      "shareResult": "Bagikan hasil",
+      "gradeLabel": "Grade keberuntungan: {grade}",
+      "totalScore": "Skor total",
+      "successCount": "Ronde sukses",
+      "luckGrade": "Grade keberuntungan",
+      "resultProbability": "Probabilitas hasil",
+      "percentileEstimate": "Persentil estimasi",
+      "topPercent": "Top {pct}%",
+      "points": " poin",
+      "rounds": "ronde",
+      "roundGridTitle": "Hasil per ronde",
+      "todayBest": "Terbaik hari ini",
+      "allTimeBest": "Terbaik sepanjang masa",
+      "attemptsToday": "{count} kali hari ini",
+      "avoidToday": "Hindari hari ini",
+      "canDoToday": "Coba hari ini",
+      "retryTip": "Tips coba lagi",
+      "retryBest": "Coba lagi",
+      "doorA": "Pintu A",
+      "doorB": "Pintu B",
+      "doorC": "Pintu C",
+      "heads": "Angka",
+      "tails": "Gambar",
+      "tie": "Seri",
+      "pullLever": "Tarik tuas",
+      "spin": "Putar",
+      "color_red": "Merah",
+      "color_blue": "Biru",
+      "color_green": "Hijau",
+      "color_yellow": "Kuning",
+      "color_purple": "Ungu"
+    },
+    "game": {
+      "roundProgress": "Ronde {current} / {total}",
+      "score": "Skor",
+      "openingDoor": "Membuka pintu {door}...",
+      "gachaGold": "✨ Tier emas!",
+      "gachaNormal": "Tier biasa...",
+      "coin100Progress": "Angka {heads} : Gambar {tails}",
+      "coin100Choice": "Pilihan: {choice}"
+    },
+    "rounds": {
+      "r1": {
+        "prompt": "Pilih pintu keberuntungan dari 3! (1/3)",
+        "success": "Benar! Pintu keberuntungan ditemukan!",
+        "fail": "Sayang... pintu lain."
+      },
+      "r2": {
+        "prompt": "Lempar koin! Angka atau gambar? (1/2)",
+        "success": "Tepat! Koin memihakmu!",
+        "fail": "Salah. Koin di sisi lain."
+      },
+      "r3": {
+        "prompt": "Pilih kartu keberuntungan dari 5! (2/5)",
+        "success": "Kartu keberuntungan! Jackpot!",
+        "fail": "Kartu kosong..."
+      },
+      "r4": {
+        "prompt": "Pilih 1 dari 4 kotak! (1/4)",
+        "success": "Kotak benar! Harta ditemukan!",
+        "fail": "Kotak kosong..."
+      },
+      "r5": {
+        "prompt": "Tebak warna roulette! (1/5)",
+        "success": "Warna tepat! Pilihan roulette!",
+        "fail": "Warna lain keluar."
+      },
+      "r6": {
+        "prompt": "Pilih angka keberuntungan 1–10! (1/10)",
+        "success": "Angka tepat! Tembus probabilitas 10%!",
+        "fail": "Hampir kena."
+      },
+      "r7": {
+        "prompt": "Tarik tuas gacha! (1/5)",
+        "success": "Tier emas! Gacha super!",
+        "fail": "Tier biasa... lain kali."
+      },
+      "r8": {
+        "prompt": "Putar slot machine! (1/5)",
+        "success": "Jackpot! Tiga sama!",
+        "fail": "Tidak cocok..."
+      },
+      "r9": {
+        "prompt": "Cari semanggi keberuntungan di 6 kotak! (1/6)",
+        "success": "Semanggi keberuntungan ditemukan!",
+        "fail": "Tidak ada semanggi..."
+      },
+      "r10": {
+        "prompt": "100 lemparan koin! Sisi mana lebih banyak? (1/3)",
+        "success": "Benar! Membaca probabilitas 100 kali!",
+        "fail": "Salah. Probabilitas kejam..."
+      }
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tes Keberuntungan 🍀 10 ronde probabilitas — skor keberuntunganmu berapa?",
+      "startKakao": "Tes Keberuntungan 🍀 10 ronde probabilitas — skor keberuntunganmu berapa?",
+      "startWechat": "Tes Keberuntungan 🍀 10 ronde probabilitas — skor keberuntunganmu berapa?",
+      "startWhatsapp": "Tes Keberuntungan 🍀 10 ronde probabilitas — skor keberuntunganmu berapa?",
+      "startTelegram": "Tes Keberuntungan 🍀 10 ronde probabilitas — skor keberuntunganmu berapa?",
+      "startLine": "Tes Keberuntungan 🍀 10 ronde probabilitas — skor keberuntunganmu berapa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }

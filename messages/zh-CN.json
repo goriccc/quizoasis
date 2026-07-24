@@ -11441,5 +11441,144 @@
       "similarTestsTop5": "🎯 相似测试推荐Top5",
       "popularTestsTop5": "🔥 近期热门测试推荐Top5"
     }
+  },
+  "phase3LuckGameTest": {
+    "startMessage": {
+      "line1": "今天你的运气几分？",
+      "line2": "连续进行10种概率游戏：选门、抛硬币、抽卡、轮盘、猜数字、扭蛋、老虎机、四叶草、100次抛硬币。每轮成功+10分，满分100。",
+      "line3": "选择自由，但结果早已注定。纯概率游戏——测测今天的运气。",
+      "line4": "完成后发给朋友，大喊「能赢我的分数吗？」",
+      "line5": "运气测试开始 🍀 10轮挑战"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告区域（运气测试）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "startChallenge": "开始运气测试",
+      "shareResult": "分享结果",
+      "gradeLabel": "运气等级：{grade}",
+      "totalScore": "总分",
+      "successCount": "成功轮数",
+      "luckGrade": "运气等级",
+      "resultProbability": "结果概率",
+      "percentileEstimate": "估计百分位",
+      "topPercent": "前 {pct}%",
+      "points": "分",
+      "rounds": "轮",
+      "roundGridTitle": "各轮结果",
+      "todayBest": "今日最高",
+      "allTimeBest": "历史最高",
+      "attemptsToday": "今日挑战 {count} 次",
+      "avoidToday": "今日避免",
+      "canDoToday": "今日可试",
+      "retryTip": "重试提示",
+      "retryBest": "再挑战",
+      "doorA": "门 A",
+      "doorB": "门 B",
+      "doorC": "门 C",
+      "heads": "正面",
+      "tails": "反面",
+      "tie": "平局",
+      "pullLever": "拉杆",
+      "spin": "转动",
+      "color_red": "红",
+      "color_blue": "蓝",
+      "color_green": "绿",
+      "color_yellow": "黄",
+      "color_purple": "紫"
+    },
+    "game": {
+      "roundProgress": "第 {current} / {total} 轮",
+      "score": "分数",
+      "openingDoor": "正在打开门 {door}...",
+      "gachaGold": "✨ 黄金等级！",
+      "gachaNormal": "普通等级...",
+      "coin100Progress": "正面 {heads} : 反面 {tails}",
+      "coin100Choice": "选择：{choice}"
+    },
+    "rounds": {
+      "r1": {
+        "prompt": "3扇门中选幸运之门！(1/3)",
+        "success": "答对了！找到幸运之门！",
+        "fail": "可惜…是别的门。"
+      },
+      "r2": {
+        "prompt": "抛硬币！正面还是反面？(1/2)",
+        "success": "猜对了！硬币站在你这边！",
+        "fail": "错了，硬币是另一面。"
+      },
+      "r3": {
+        "prompt": "5张牌中选幸运牌！(2/5)",
+        "success": "幸运牌！大奖！",
+        "fail": "空牌…"
+      },
+      "r4": {
+        "prompt": "4个箱子选一个！(1/4)",
+        "success": "正确箱子！发现宝藏！",
+        "fail": "空箱子…"
+      },
+      "r5": {
+        "prompt": "猜轮盘颜色！(1/5)",
+        "success": "颜色命中！轮盘之选！",
+        "fail": "出了别的颜色。"
+      },
+      "r6": {
+        "prompt": "1~10中选幸运数字！(1/10)",
+        "success": "数字命中！突破10%概率！",
+        "fail": "差一点没中。"
+      },
+      "r7": {
+        "prompt": "拉扭蛋杠杆！(1/5)",
+        "success": "黄金等级！超级扭蛋！",
+        "fail": "普通等级…下次吧。"
+      },
+      "r8": {
+        "prompt": "转老虎机！(1/5)",
+        "success": "大奖！三个一样！",
+        "fail": "可惜没对齐…"
+      },
+      "r9": {
+        "prompt": "6格中找幸运四叶草！(1/6)",
+        "success": "发现幸运四叶草！",
+        "fail": "没有四叶草…"
+      },
+      "r10": {
+        "prompt": "100次抛硬币！哪边更多？(1/3)",
+        "success": "答对了！读懂100次概率！",
+        "fail": "错了，概率无情…"
+      }
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "运气测试 🍀 10轮概率游戏——今天你的运气几分？",
+      "startKakao": "运气测试 🍀 10轮概率游戏——今天你的运气几分？",
+      "startWechat": "运气测试 🍀 10轮概率游戏——今天你的运气几分？",
+      "startWhatsapp": "运气测试 🍀 10轮概率游戏——今天你的运气几分？",
+      "startTelegram": "运气测试 🍀 10轮概率游戏——今天你的运气几分？",
+      "startLine": "运气测试 🍀 10轮概率游戏——今天你的运气几分？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top 5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top 5"
+    }
   }
 }
