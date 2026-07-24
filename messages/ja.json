@@ -11568,5 +11568,75 @@
       "similarTestsTop5": "🎯 似たテストおすすめ Top 5",
       "popularTestsTop5": "🔥 今人気テスト Top 5"
     }
+  },
+  "phase3MemoryLimitChallengeTest": {
+    "startMessage": {
+      "line1": "このテストをクリアすれば、あなたの脳細胞はまだ生きています。",
+      "line2": "一瞬見せて隠します。覚えていれば正解、間違えれば不正解。シンプルですが、思ったより難しい。",
+      "line3": "ラウンドが進むほど表示時間が短くなります。ウォームアップ2秒、中級1秒、極限0.5秒。0.5秒は瞬き一つで終わります。",
+      "line4": "全12ラウンド。集中して見てください。",
+      "line5": "記憶力限界チャレンジ開始 🧠 目を見開いてスタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（記憶力限界チャレンジ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "shareResult": "結果をシェア",
+      "scoreSummary": "{count}問正解 · 12ラウンド満点",
+      "levelLabel": "記憶力等級",
+      "scoreBandLabel": "正解数",
+      "correctCountValue": "{count}問",
+      "characteristicsLabel": "このレベルの特徴",
+      "strengthLabel": "得意ゾーン",
+      "weaknessLabel": "苦手ゾーン",
+      "improvementTip": "記憶力改善のヒント",
+      "oneLiner": "一言評",
+      "certifyLabel": "認証フレーズ",
+      "scoreDisplay": "スコア {count}",
+      "feedbackCorrect": "正解！+1点",
+      "feedbackWrong": "不正解",
+      "nextQuestion": "次のラウンド",
+      "viewResult": "結果を見る"
+    },
+    "game": {
+      "getReady": "準備してください！",
+      "memorizeHint": "よく覚えて...",
+      "zoneMid": "ここから1秒です ⚡",
+      "zoneExtreme": "ここから0.5秒です ⚡",
+      "readyConfirm": "準備OK！",
+      "correctAnswer": "正解: {answer}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "記憶力限界チャレンジ 🧠 12ラウンド — あなたの脳細胞はまだ生きている？",
+      "startKakao": "記憶力限界チャレンジ 🧠 12ラウンド — あなたの脳細胞はまだ生きている？",
+      "startWechat": "記憶力限界チャレンジ 🧠 12ラウンド — あなたの脳細胞はまだ生きている？",
+      "startWhatsapp": "記憶力限界チャレンジ 🧠 12ラウンド — あなたの脳細胞はまだ生きている？",
+      "startTelegram": "記憶力限界チャレンジ 🧠 12ラウンド — あなたの脳細胞はまだ生きている？",
+      "startLine": "記憶力限界チャレンジ 🧠 12ラウンド — あなたの脳細胞はまだ生きている？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似たテストおすすめ Top 5",
+      "popularTestsTop5": "🔥 今人気テスト Top 5"
+    }
   }
 }

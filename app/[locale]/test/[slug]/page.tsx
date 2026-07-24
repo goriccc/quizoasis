@@ -83,6 +83,10 @@ import {
   phase3EagleEyeUltimateResults,
 } from '@/lib/phase3EagleEyeUltimateData';
 import {
+  phase3MemoryLimitChallengeQuestions,
+  phase3MemoryLimitChallengeResults,
+} from '@/lib/phase3MemoryLimitChallengeData';
+import {
   phase3ExercisePersistenceTypeQuestions,
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
@@ -695,6 +699,10 @@ const Phase3OneMinReactionSpeedTestClient = dynamic(
 );
 const Phase3LuckGameTestClient = dynamic(
   () => import('@/components/Phase3LuckGameTestClient'),
+  { ssr: false }
+);
+const Phase3MemoryLimitChallengeTestClient = dynamic(
+  () => import('@/components/Phase3MemoryLimitChallengeTestClient'),
   { ssr: false }
 );
 const Phase3AiFuture10YearsTestClient = dynamic(
@@ -1998,6 +2006,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['運氣', '機率', '遊戲', '運勢', '挑戰'],
         vi: ['vận may', 'xác suất', 'game', 'may mắn', 'thử thách'],
         id: ['keberuntungan', 'probabilitas', 'game', 'hoki', 'tantangan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-memory-limit-challenge') {
+    test = {
+      slug: 'phase3-memory-limit-challenge',
+      title: {
+        ko: "'기억력' 한계 챌린지",
+        en: 'Memory Limit Challenge',
+        ja: '「記憶力」限界チャレンジ',
+        'zh-CN': '「记忆力」极限挑战',
+        'zh-TW': '「記憶力」極限挑戰',
+        vi: 'Thử thách Giới hạn Trí nhớ',
+        id: 'Tantangan Batas Memori',
+      },
+      description: {
+        ko: '12라운드 이미지 기억 챌린지로 단기 기억력을 0~12점으로 측정합니다. 내 뇌세포 아직 살아있음?',
+        en: 'Measure your short-term memory from 0–12 with a 12-round image memory challenge. Are your brain cells still alive?',
+        ja: '12ラウンドの画像記憶チャレンジで短期記憶力を0〜12点で測定。あなたの脳細胞はまだ生きている？',
+        'zh-CN': '通过12轮图像记忆挑战，将短期记忆力测量为0~12分。你的脑细胞还活着吗？',
+        'zh-TW': '透過12輪圖像記憶挑戰，將短期記憶力測量為0~12分。你的腦細胞還活著嗎？',
+        vi: 'Đo trí nhớ ngắn hạn 0–12 qua 12 vòng thử thách ghi nhớ hình ảnh. Não bạn còn sống không?',
+        id: 'Ukur memori jangka pendek 0–12 lewat 12 ronde tantangan ingat gambar. Sel otakmu masih hidup?',
+      },
+      thumbnail: 'p3_test_memory_limit_challenge.webp',
+      type: 'game',
+      category: 'brain',
+      play_count: 0,
+      tags: {
+        ko: ['기억력', '챌린지', '뇌세포', '단기기억', '퀴즈'],
+        en: ['memory', 'challenge', 'brain cells', 'short-term memory', 'quiz'],
+        ja: ['記憶力', 'チャレンジ', '脳細胞', '短期記憶', 'クイズ'],
+        'zh-CN': ['记忆力', '挑战', '脑细胞', '短期记忆', '测验'],
+        'zh-TW': ['記憶力', '挑戰', '腦細胞', '短期記憶', '測驗'],
+        vi: ['trí nhớ', 'thử thách', 'tế bào não', 'trí nhớ ngắn hạn', 'quiz'],
+        id: ['memori', 'tantangan', 'sel otak', 'memori jangka pendek', 'kuis'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7150,6 +7195,66 @@ export default async function TestPage({ params }: Props) {
             ? test.description[locale] || test.description.ko
             : test.description
         }
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+        isLatestTest={isLatestTest}
+        badgeType={test.badge_type || null}
+      />
+    );
+  }
+
+  if (slug === 'phase3-memory-limit-challenge') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-memory-limit-challenge',
+      title: {
+        ko: "'기억력' 한계 챌린지",
+        en: 'Memory Limit Challenge',
+        ja: '「記憶力」限界チャレンジ',
+        'zh-CN': '「记忆力」极限挑战',
+        'zh-TW': '「記憶力」極限挑戰',
+        vi: 'Thử thách Giới hạn Trí nhớ',
+        id: 'Tantangan Batas Memori',
+      },
+      description: {
+        ko: '12라운드 이미지 기억 챌린지로 단기 기억력을 0~12점으로 측정합니다. 내 뇌세포 아직 살아있음?',
+        en: 'Measure your short-term memory from 0–12 with a 12-round image memory challenge. Are your brain cells still alive?',
+        ja: '12ラウンドの画像記憶チャレンジで短期記憶力を0〜12点で測定。あなたの脳細胞はまだ生きている？',
+        'zh-CN': '通过12轮图像记忆挑战，将短期记忆力测量为0~12分。你的脑细胞还活着吗？',
+        'zh-TW': '透過12輪圖像記憶挑戰，將短期記憶力測量為0~12分。你的腦細胞還活著嗎？',
+        vi: 'Đo trí nhớ ngắn hạn 0–12 qua 12 vòng thử thách ghi nhớ hình ảnh. Não bạn còn sống không?',
+        id: 'Ukur memori jangka pendek 0–12 lewat 12 ronde tantangan ingat gambar. Sel otakmu masih hidup?',
+      },
+      thumbnail: 'p3_test_memory_limit_challenge.webp',
+      type: 'game',
+      category: 'brain',
+      play_count: 0,
+      tags: {
+        ko: ['기억력', '챌린지', '뇌세포', '단기기억', '퀴즈'],
+        en: ['memory', 'challenge', 'brain cells', 'short-term memory', 'quiz'],
+        ja: ['記憶力', 'チャレンジ', '脳細胞', '短期記憶', 'クイズ'],
+        'zh-CN': ['记忆力', '挑战', '脑细胞', '短期记忆', '测验'],
+        'zh-TW': ['記憶力', '挑戰', '腦細胞', '短期記憶', '測驗'],
+        vi: ['trí nhớ', 'thử thách', 'tế bào não', 'trí nhớ ngắn hạn', 'quiz'],
+        id: ['memori', 'tantangan', 'sel otak', 'memori jangka pendek', 'kuis'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <Phase3MemoryLimitChallengeTestClient
+        locale={locale}
+        slug={test.slug}
+        title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+        description={
+          typeof test.description === 'object'
+            ? test.description[locale] || test.description.ko
+            : test.description
+        }
+        questions={phase3MemoryLimitChallengeQuestions}
+        results={phase3MemoryLimitChallengeResults}
+        questionCount={phase3MemoryLimitChallengeQuestions.length}
         thumbnail={test.thumbnail}
         playCount={test.play_count}
         isLatestTest={isLatestTest}

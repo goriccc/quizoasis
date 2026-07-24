@@ -11589,5 +11589,75 @@
       "similarTestsTop5": "🎯 Top 5 similar tests",
       "popularTestsTop5": "🔥 Top 5 popular tests right now"
     }
+  },
+  "phase3MemoryLimitChallengeTest": {
+    "startMessage": {
+      "line1": "Pass this test and your brain cells are still alive.",
+      "line2": "We show it briefly, then hide it. Remember correctly — right answer. Wrong — wrong answer. Simple. Harder than you think.",
+      "line3": "Exposure time gets shorter each round. Warm-up: 2 sec, mid: 1 sec, extreme: 0.5 sec. 0.5 sec is over in a blink.",
+      "line4": "12 rounds. Focus and watch carefully.",
+      "line5": "Memory Limit Challenge 🧠 Eyes wide open — start!"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense ad area (Memory Limit Challenge)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share result",
+      "scoreSummary": "{count} correct · 12 rounds max",
+      "levelLabel": "Memory grade",
+      "scoreBandLabel": "Correct count",
+      "correctCountValue": "{count}",
+      "characteristicsLabel": "Traits of this level",
+      "strengthLabel": "Strong zone",
+      "weaknessLabel": "Weak zone",
+      "improvementTip": "Memory improvement tips",
+      "oneLiner": "One-liner",
+      "certifyLabel": "Certification phrase",
+      "scoreDisplay": "Score {count}",
+      "feedbackCorrect": "Correct! +1 point",
+      "feedbackWrong": "Incorrect",
+      "nextQuestion": "Next round",
+      "viewResult": "View result"
+    },
+    "game": {
+      "getReady": "Get ready!",
+      "memorizeHint": "Memorize carefully...",
+      "zoneMid": "From now on: 1 second ⚡",
+      "zoneExtreme": "From now on: 0.5 seconds ⚡",
+      "readyConfirm": "I'm ready!",
+      "correctAnswer": "Answer: {answer}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Memory Limit Challenge 🧠 12 rounds — are your brain cells still alive?",
+      "startKakao": "Memory Limit Challenge 🧠 12 rounds — are your brain cells still alive?",
+      "startWechat": "Memory Limit Challenge 🧠 12 rounds — are your brain cells still alive?",
+      "startWhatsapp": "Memory Limit Challenge 🧠 12 rounds — are your brain cells still alive?",
+      "startTelegram": "Memory Limit Challenge 🧠 12 rounds — are your brain cells still alive?",
+      "startLine": "Memory Limit Challenge 🧠 12 rounds — are your brain cells still alive?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk share. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 popular tests right now"
+    }
   }
 }

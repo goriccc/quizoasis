@@ -11049,5 +11049,75 @@
       "similarTestsTop5": "🎯 相似測試推薦 Top 5",
       "popularTestsTop5": "🔥 熱門測試推薦 Top 5"
     }
+  },
+  "phase3MemoryLimitChallengeTest": {
+    "startMessage": {
+      "line1": "通過這個測試，代表你的腦細胞還活著。",
+      "line2": "短暫展示後隱藏。記對了就答對，記錯了就答錯。很簡單，但比想像中難。",
+      "line3": "輪次越高，展示時間越短。熱身2秒，中級1秒，極限0.5秒。0.5秒一眨眼就結束。",
+      "line4": "共12輪。請集中精神觀看。",
+      "line5": "記憶力極限挑戰開始 🧠 睜大眼睛，開始！"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（記憶力極限挑戰）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "shareResult": "分享結果",
+      "scoreSummary": "答對{count}題 · 12輪滿分",
+      "levelLabel": "記憶力等級",
+      "scoreBandLabel": "答對數量",
+      "correctCountValue": "{count}題",
+      "characteristicsLabel": "此等級特點",
+      "strengthLabel": "優勢區間",
+      "weaknessLabel": "薄弱區間",
+      "improvementTip": "記憶力提升建議",
+      "oneLiner": "一句話評價",
+      "certifyLabel": "認證語",
+      "scoreDisplay": "得分 {count}",
+      "feedbackCorrect": "答對了！+1分",
+      "feedbackWrong": "答錯了",
+      "nextQuestion": "下一輪",
+      "viewResult": "查看結果"
+    },
+    "game": {
+      "getReady": "請準備！",
+      "memorizeHint": "請仔細記住...",
+      "zoneMid": "從現在開始1秒 ⚡",
+      "zoneExtreme": "從現在開始0.5秒 ⚡",
+      "readyConfirm": "準備好了！",
+      "correctAnswer": "正確答案：{answer}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "記憶力極限挑戰 🧠 12輪 — 你的腦細胞還活著嗎？",
+      "startKakao": "記憶力極限挑戰 🧠 12輪 — 你的腦細胞還活著嗎？",
+      "startWechat": "記憶力極限挑戰 🧠 12輪 — 你的腦細胞還活著嗎？",
+      "startWhatsapp": "記憶力極限挑戰 🧠 12輪 — 你的腦細胞還活著嗎？",
+      "startTelegram": "記憶力極限挑戰 🧠 12輪 — 你的腦細胞還活著嗎？",
+      "startLine": "記憶力極限挑戰 🧠 12輪 — 你的腦細胞還活著嗎？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top 5",
+      "popularTestsTop5": "🔥 熱門測驗推薦 Top 5"
+    }
   }
 }

@@ -11580,5 +11580,75 @@
       "similarTestsTop5": "🎯 Top 5 test tương tự",
       "popularTestsTop5": "🔥 Top 5 test hot hiện nay"
     }
+  },
+  "phase3MemoryLimitChallengeTest": {
+    "startMessage": {
+      "line1": "Vượt qua bài test này nghĩa là tế bào não bạn vẫn còn sống.",
+      "line2": "Hiện một lát rồi che đi. Nhớ đúng — trả lời đúng. Nhớ sai — trả lời sai. Đơn giản. Nhưng khó hơn bạn nghĩ.",
+      "line3": "Thời gian hiển thị ngắn dần theo vòng. Khởi động 2 giây, trung cấp 1 giây, cực hạn 0.5 giây. 0.5 giây chớp mắt là hết.",
+      "line4": "12 vòng. Hãy tập trung quan sát.",
+      "line5": "Bắt đầu Thử thách Giới hạn Trí nhớ 🧠 Mở to mắt — bắt đầu!"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Thử thách Giới hạn Trí nhớ)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} · Tối đa 12 vòng",
+      "levelLabel": "Cấp trí nhớ",
+      "scoreBandLabel": "Số câu đúng",
+      "correctCountValue": "{count}",
+      "characteristicsLabel": "Đặc điểm cấp này",
+      "strengthLabel": "Vùng mạnh",
+      "weaknessLabel": "Vùng yếu",
+      "improvementTip": "Mẹo cải thiện trí nhớ",
+      "oneLiner": "Nhận xét một dòng",
+      "certifyLabel": "Câu chứng nhận",
+      "scoreDisplay": "Điểm {count}",
+      "feedbackCorrect": "Đúng! +1 điểm",
+      "feedbackWrong": "Sai",
+      "nextQuestion": "Vòng tiếp theo",
+      "viewResult": "Xem kết quả"
+    },
+    "game": {
+      "getReady": "Chuẩn bị!",
+      "memorizeHint": "Hãy ghi nhớ kỹ...",
+      "zoneMid": "Từ giờ chỉ 1 giây ⚡",
+      "zoneExtreme": "Từ giờ chỉ 0.5 giây ⚡",
+      "readyConfirm": "Sẵn sàng!",
+      "correctAnswer": "Đáp án: {answer}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Thử thách Giới hạn Trí nhớ 🧠 12 vòng — não bạn còn sống không?",
+      "startKakao": "Thử thách Giới hạn Trí nhớ 🧠 12 vòng — não bạn còn sống không?",
+      "startWechat": "Thử thách Giới hạn Trí nhớ 🧠 12 vòng — não bạn còn sống không?",
+      "startWhatsapp": "Thử thách Giới hạn Trí nhớ 🧠 12 vòng — não bạn còn sống không?",
+      "startTelegram": "Thử thách Giới hạn Trí nhớ 🧠 12 vòng — não bạn còn sống không?",
+      "startLine": "Thử thách Giới hạn Trí nhớ 🧠 12 vòng — não bạn còn sống không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
+    }
   }
 }

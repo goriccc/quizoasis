@@ -11718,5 +11718,75 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase3MemoryLimitChallengeTest": {
+    "startMessage": {
+      "line1": "이 테스트를 통과하면 당신의 뇌세포는 아직 살아있습니다.",
+      "line2": "잠깐 보여주고 덮습니다. 기억이 맞으면 정답, 틀리면 오답. 단순합니다. 근데 생각보다 어렵습니다.",
+      "line3": "라운드가 올라갈수록 노출 시간이 짧아집니다. 워밍업 구간은 2초, 중급은 1초, 극한 구간은 0.5초. 0.5초는 눈 깜짝하면 끝납니다.",
+      "line4": "12라운드. 집중해서 보세요.",
+      "line5": "기억력 한계 챌린지 시작 🧠 눈 부릅뜨고 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (기억력 한계 챌린지)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "scoreSummary": "{count}개 맞힘 · 12라운드 만점",
+      "levelLabel": "기억력 등급",
+      "scoreBandLabel": "정답 수",
+      "correctCountValue": "{count}개",
+      "characteristicsLabel": "이 레벨의 특징",
+      "strengthLabel": "강점 구간",
+      "weaknessLabel": "취약 구간",
+      "improvementTip": "기억력 개선 팁",
+      "oneLiner": "한 줄 평",
+      "certifyLabel": "인증 문구",
+      "scoreDisplay": "점수 {count}",
+      "feedbackCorrect": "정답입니다! +1점",
+      "feedbackWrong": "오답입니다",
+      "nextQuestion": "다음 라운드",
+      "viewResult": "결과 보기"
+    },
+    "game": {
+      "getReady": "준비하세요!",
+      "memorizeHint": "잘 기억하세요...",
+      "zoneMid": "이제부터 1초입니다 ⚡",
+      "zoneExtreme": "이제부터 0.5초입니다 ⚡",
+      "readyConfirm": "준비됐어요!",
+      "correctAnswer": "정답: {answer}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "기억력 한계 챌린지 🧠 12라운드 — 내 뇌세포 아직 살아있음?",
+      "startKakao": "기억력 한계 챌린지 🧠 12라운드 — 내 뇌세포 아직 살아있음?",
+      "startWechat": "기억력 한계 챌린지 🧠 12라운드 — 내 뇌세포 아직 살아있음?",
+      "startWhatsapp": "기억력 한계 챌린지 🧠 12라운드 — 내 뇌세포 아직 살아있음?",
+      "startTelegram": "기억력 한계 챌린지 🧠 12라운드 — 내 뇌세포 아직 살아있음?",
+      "startLine": "기억력 한계 챌린지 🧠 12라운드 — 내 뇌세포 아직 살아있음?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

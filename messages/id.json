@@ -11580,5 +11580,75 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "phase3MemoryLimitChallengeTest": {
+    "startMessage": {
+      "line1": "Lulus tes ini berarti sel otakmu masih hidup.",
+      "line2": "Ditampilkan sebentar lalu disembunyikan. Ingat benar — jawaban benar. Salah — jawaban salah. Sederhana. Tapi lebih sulit dari yang kamu kira.",
+      "line3": "Waktu tampil makin pendek tiap ronde. Pemanasan 2 dtk, menengah 1 dtk, ekstrem 0,5 dtk. 0,5 dtk selesai dalam sekejap.",
+      "line4": "12 ronde. Fokus dan perhatikan baik-baik.",
+      "line5": "Mulai Tantangan Batas Memori 🧠 Buka mata lebar-lebar — mulai!"
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Tantangan Batas Memori)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "{count} benar · Maks 12 ronde",
+      "levelLabel": "Grade memori",
+      "scoreBandLabel": "Jumlah benar",
+      "correctCountValue": "{count}",
+      "characteristicsLabel": "Ciri level ini",
+      "strengthLabel": "Zona kuat",
+      "weaknessLabel": "Zona lemah",
+      "improvementTip": "Tips meningkatkan memori",
+      "oneLiner": "Komentar singkat",
+      "certifyLabel": "Frasa sertifikasi",
+      "scoreDisplay": "Skor {count}",
+      "feedbackCorrect": "Benar! +1 poin",
+      "feedbackWrong": "Salah",
+      "nextQuestion": "Ronde berikutnya",
+      "viewResult": "Lihat hasil"
+    },
+    "game": {
+      "getReady": "Bersiap!",
+      "memorizeHint": "Hafalkan baik-baik...",
+      "zoneMid": "Mulai sekarang 1 detik ⚡",
+      "zoneExtreme": "Mulai sekarang 0,5 detik ⚡",
+      "readyConfirm": "Siap!",
+      "correctAnswer": "Jawaban: {answer}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tantangan Batas Memori 🧠 12 ronde — sel otakmu masih hidup?",
+      "startKakao": "Tantangan Batas Memori 🧠 12 ronde — sel otakmu masih hidup?",
+      "startWechat": "Tantangan Batas Memori 🧠 12 ronde — sel otakmu masih hidup?",
+      "startWhatsapp": "Tantangan Batas Memori 🧠 12 ronde — sel otakmu masih hidup?",
+      "startTelegram": "Tantangan Batas Memori 🧠 12 ronde — sel otakmu masih hidup?",
+      "startLine": "Tantangan Batas Memori 🧠 12 ronde — sel otakmu masih hidup?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }
