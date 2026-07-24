@@ -75,6 +75,10 @@ import {
   phase3ExLingeringFeelingsResults,
 } from '@/lib/phase3ExLingeringFeelingsData';
 import {
+  phase3FlirtingStyleQuestions,
+  phase3FlirtingStyleResults,
+} from '@/lib/phase3FlirtingStyleData';
+import {
   phase3ExercisePersistenceTypeQuestions,
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
@@ -711,6 +715,10 @@ const Phase3SelfEsteemShieldStrengthTestClient = dynamic(
 );
 const Phase3ExLingeringFeelingsTestClient = dynamic(
   () => import('@/components/Phase3ExLingeringFeelingsTestClient'),
+  { ssr: false }
+);
+const Phase3FlirtingStyleTestClient = dynamic(
+  () => import('@/components/Phase3FlirtingStyleTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1830,6 +1838,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['留戀', '前任', '分手', '殘留情感', '匿名傾訴'],
         vi: ['vương vấn', 'người yêu cũ', 'chia tay', 'cảm xúc còn sót', 'ẩn danh'],
         id: ['kangen', 'mantan', 'putus', 'sisa emosi', 'anonim'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-flirting-style') {
+    test = {
+      slug: 'phase3-flirting-style',
+      title: {
+        ko: "나의 '플러팅' 스타일",
+        en: 'My Flirting Style',
+        ja: "私の『フリート』スタイル",
+        'zh-CN': "我的『撩人』风格",
+        'zh-TW': "我的『撩人』風格",
+        vi: "Phong cách 'flirting' của tôi",
+        id: "Gaya 'Flirting'-ku",
+      },
+      description: {
+        ko: '12가지 상황극으로 나의 진짜 플러팅 스타일과 유혹 필살기를 찾아드립니다.',
+        en: 'Discover your true flirting style and seduction move with 12 situational questions.',
+        ja: '12のシチュエーションで本当のフリートスタイルと必殺技を見つけます。',
+        'zh-CN': '通过12个情境题找到你真正的撩人风格与必杀技。',
+        'zh-TW': '透過12個情境題找到你真正的撩人風格與必殺技。',
+        vi: 'Tìm phong cách flirting và chiêu thức quyến rũ thật sự qua 12 tình huống.',
+        id: 'Temukan gaya flirting dan jurus memikatmu lewat 12 situasi.',
+      },
+      thumbnail: 'p3_test_flirting_style.webp',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['플러팅', '유혹', '연애', '썸', '필살기'],
+        en: ['flirting', 'seduction', 'dating', 'crush', 'move'],
+        ja: ['フリート', '誘惑', '恋愛', '曖昧', '必殺技'],
+        'zh-CN': ['撩人', '诱惑', '恋爱', '暧昧', '必杀技'],
+        'zh-TW': ['撩人', '誘惑', '戀愛', '曖昧', '必殺技'],
+        vi: ['flirting', 'quyến rũ', 'hẹn hò', 'crush', 'chiêu thức'],
+        id: ['flirting', 'godaan', 'pacaran', 'crush', 'jurus'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7360,6 +7405,66 @@ export default async function TestPage({ params }: Props) {
           questions={phase3ExLingeringFeelingsQuestions}
           results={phase3ExLingeringFeelingsResults}
           questionCount={phase3ExLingeringFeelingsQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-flirting-style') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-flirting-style',
+      title: {
+        ko: "나의 '플러팅' 스타일",
+        en: 'My Flirting Style',
+        ja: "私の『フリート』スタイル",
+        'zh-CN': "我的『撩人』风格",
+        'zh-TW': "我的『撩人』風格",
+        vi: "Phong cách 'flirting' của tôi",
+        id: "Gaya 'Flirting'-ku",
+      },
+      description: {
+        ko: '12가지 상황극으로 나의 진짜 플러팅 스타일과 유혹 필살기를 찾아드립니다.',
+        en: 'Discover your true flirting style and seduction move with 12 situational questions.',
+        ja: '12のシチュエーションで本当のフリートスタイルと必殺技を見つけます。',
+        'zh-CN': '通过12个情境题找到你真正的撩人风格与必杀技。',
+        'zh-TW': '透過12個情境題找到你真正的撩人風格與必殺技。',
+        vi: 'Tìm phong cách flirting và chiêu thức quyến rũ thật sự qua 12 tình huống.',
+        id: 'Temukan gaya flirting dan jurus memikatmu lewat 12 situasi.',
+      },
+      thumbnail: 'p3_test_flirting_style.webp',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['플러팅', '유혹', '연애', '썸', '필살기'],
+        en: ['flirting', 'seduction', 'dating', 'crush', 'move'],
+        ja: ['フリート', '誘惑', '恋愛', '曖昧', '必殺技'],
+        'zh-CN': ['撩人', '诱惑', '恋爱', '暧昧', '必杀技'],
+        'zh-TW': ['撩人', '誘惑', '戀愛', '曖昧', '必殺技'],
+        vi: ['flirting', 'quyến rũ', 'hẹn hò', 'crush', 'chiêu thức'],
+        id: ['flirting', 'godaan', 'pacaran', 'crush', 'jurus'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3FlirtingStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3FlirtingStyleQuestions}
+          results={phase3FlirtingStyleResults}
+          questionCount={phase3FlirtingStyleQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}

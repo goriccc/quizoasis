@@ -11322,5 +11322,62 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "phase3FlirtingStyleTest": {
+    "startMessage": {
+      "line1": "Apa jurus flirting-mu?",
+      "line2": "Ada yang meruntuhkan lawan hanya dengan tatapan dan senyum. Ada yang menguasai suasana dengan satu kalimat lucu. Ada juga yang menggoda hanya dengan vibes.",
+      "line3": "Flirting bukan rencana. Cara alamimu muncul tanpa sadar — itulah jurus andalanmu.",
+      "line4": "Temukan gaya flirting aslimu lewat 12 situasi. Kirim hasilnya ke teman — mereka pasti bilang \"ini bener banget.\"",
+      "line5": "Cari gaya flirting-ku 💘 Mulai jujur"
+    },
+    "ui": {
+      "startTest": "Mulai",
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "flirtingSkill": "💘 Jurus flirting",
+      "flirtingKeywords": "✨ Kata kunci flirting",
+      "strength": "⭐ Kelebihan tipe ini",
+      "weakness": "⚠️ Kelemahan tipe ini",
+      "goodMatch": "💕 Pasangan paling cocok",
+      "friendTestimony": "👥 Prediksi testimoni teman",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "HOT",
+      "points": "poin",
+      "plays": "kali dimainkan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Mencari gaya flirting-ku 💘 Cek jurus godaanmu dengan 12 situasi. Kamu tipe apa?",
+      "startKakao": "Mencari gaya flirting-ku 💘 Cek jurus godaanmu dengan 12 situasi. Kamu tipe apa?",
+      "startWechat": "Mencari gaya flirting-ku 💘 Cek jurus godaanmu dengan 12 situasi. Kamu tipe apa?",
+      "startWhatsapp": "Mencari gaya flirting-ku 💘 Cek jurus godaanmu dengan 12 situasi. Kamu tipe apa?",
+      "startTelegram": "Mencari gaya flirting-ku 💘 Cek jurus godaanmu dengan 12 situasi. Kamu tipe apa?",
+      "startLine": "Mencari gaya flirting-ku 💘 Cek jurus godaanmu dengan 12 situasi. Kamu tipe apa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }

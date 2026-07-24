@@ -11460,5 +11460,62 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase3FlirtingStyleTest": {
+    "startMessage": {
+      "line1": "당신의 플러팅 필살기는 무엇인가요?",
+      "line2": "눈을 마주치고 살짝 웃는 것으로 상대방을 무너뜨리는 사람이 있고, 재밌는 말 한마디로 분위기를 사로잡는 사람이 있으며, 그냥 가만히 있는데 분위기로 유혹하는 사람이 있습니다.",
+      "line3": "플러팅은 계획이 아닙니다. 자신도 모르는 사이 자연스럽게 드러나는 방식이 있습니다. 그것이 당신의 필살기입니다.",
+      "line4": "12가지 상황극으로 나의 진짜 플러팅 스타일을 찾아드립니다. 결과를 친구에게 보내면 \"이거 완전 맞다\"는 증언이 나올 것입니다.",
+      "line5": "내 플러팅 스타일 찾기 💘 솔직하게 시작"
+    },
+    "ui": {
+      "startTest": "시작하기",
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "flirtingSkill": "💘 플러팅 필살기",
+      "flirtingKeywords": "✨ 플러팅 키워드",
+      "strength": "⭐ 이 스타일의 강점",
+      "weakness": "⚠️ 이 스타일의 약점",
+      "goodMatch": "💕 가장 잘 통하는 상대",
+      "friendTestimony": "👥 친구 증언 예측",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "points": "점",
+      "plays": "회 플레이"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내 플러팅 스타일 찾는 중 💘 12가지 상황극으로 내 유혹 필살기 확인해봐. 너는 어떤 타입?",
+      "startKakao": "내 플러팅 스타일 찾는 중 💘 12가지 상황극으로 내 유혹 필살기 확인해봐. 너는 어떤 타입?",
+      "startWechat": "내 플러팅 스타일 찾는 중 💘 12가지 상황극으로 내 유혹 필살기 확인해봐. 너는 어떤 타입?",
+      "startWhatsapp": "내 플러팅 스타일 찾는 중 💘 12가지 상황극으로 내 유혹 필살기 확인해봐. 너는 어떤 타입?",
+      "startTelegram": "내 플러팅 스타일 찾는 중 💘 12가지 상황극으로 내 유혹 필살기 확인해봐. 너는 어떤 타입?",
+      "startLine": "내 플러팅 스타일 찾는 중 💘 12가지 상황극으로 내 유혹 필살기 확인해봐. 너는 어떤 타입?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

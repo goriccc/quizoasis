@@ -11310,5 +11310,62 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめ Top 5",
       "popularTestsTop5": "🔥 今人気のテストおすすめ Top 5"
     }
+  },
+  "phase3FlirtingStyleTest": {
+    "startMessage": {
+      "line1": "あなたのフリート必殺技は何ですか？",
+      "line2": "目が合ってほほえむだけで相手を崩す人、一言で雰囲気を支配する人、何もしなくても雰囲気で誘惑する人がいます。",
+      "line3": "フリートは計画ではありません。自分も気づかないうちに自然と現れる方式。それがあなたの必殺技です。",
+      "line4": "12のシチュエーションで本当のフリートスタイルを見つけます。結果を友達に送ると「これ完全に合ってる」という証言が出るはず。",
+      "line5": "私のフリートスタイルを探す 💘 正直にスタート"
+    },
+    "ui": {
+      "startTest": "始める",
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "flirtingSkill": "💘 フリート必殺技",
+      "flirtingKeywords": "✨ フリートキーワード",
+      "strength": "⭐ このスタイルの強み",
+      "weakness": "⚠️ このスタイルの弱み",
+      "goodMatch": "💕 一番相性の良い相手",
+      "friendTestimony": "👥 友達の証言予測",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "points": "点",
+      "plays": "回プレイ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "フリートスタイル調べ中 💘 12シチュエーションで誘惑必殺技チェック。あなたはどのタイプ？",
+      "startKakao": "フリートスタイル調べ中 💘 12シチュエーションで誘惑必殺技チェック。あなたはどのタイプ？",
+      "startWechat": "フリートスタイル調べ中 💘 12シチュエーションで誘惑必殺技チェック。あなたはどのタイプ？",
+      "startWhatsapp": "フリートスタイル調べ中 💘 12シチュエーションで誘惑必殺技チェック。あなたはどのタイプ？",
+      "startTelegram": "フリートスタイル調べ中 💘 12シチュエーションで誘惑必殺技チェック。あなたはどのタイプ？",
+      "startLine": "フリートスタイル調べ中 💘 12シチュエーションで誘惑必殺技チェック。あなたはどのタイプ？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめ Top 5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめ Top 5"
+    }
   }
 }

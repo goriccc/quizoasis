@@ -11322,5 +11322,62 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
     }
+  },
+  "phase3FlirtingStyleTest": {
+    "startMessage": {
+      "line1": "Chiêu thức flirting của bạn là gì?",
+      "line2": "Có người chỉ cần nhìn và cười là làm đối phương rung động, có người một câu hài hước là chiếm trọn không khí, có người không làm gì mà vẫn quyến rũ bằng vibe.",
+      "line3": "Flirting không phải kế hoạch. Nó tự nhiên lộ ra khi bạn không hay biết — đó là chiêu thức của bạn.",
+      "line4": "Tìm phong cách flirting thật qua 12 tình huống. Gửi kết quả cho bạn bè — họ sẽ nói \"đúng quá\".",
+      "line5": "Tìm phong cách flirting của tôi 💘 Bắt đầu thật lòng"
+    },
+    "ui": {
+      "startTest": "Bắt đầu",
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "flirtingSkill": "💘 Chiêu thức flirting",
+      "flirtingKeywords": "✨ Từ khóa flirting",
+      "strength": "⭐ Điểm mạnh của kiểu này",
+      "weakness": "⚠️ Điểm yếu của kiểu này",
+      "goodMatch": "💕 Đối tượng hợp nhất",
+      "friendTestimony": "👥 Lời chứng của bạn bè (dự đoán)",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "HOT",
+      "points": "điểm",
+      "plays": "lượt chơi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Đang tìm phong cách flirting 💘 Kiểm tra chiêu thức quyến rũ với 12 tình huống. Bạn thuộc kiểu nào?",
+      "startKakao": "Đang tìm phong cách flirting 💘 Kiểm tra chiêu thức quyến rũ với 12 tình huống. Bạn thuộc kiểu nào?",
+      "startWechat": "Đang tìm phong cách flirting 💘 Kiểm tra chiêu thức quyến rũ với 12 tình huống. Bạn thuộc kiểu nào?",
+      "startWhatsapp": "Đang tìm phong cách flirting 💘 Kiểm tra chiêu thức quyến rũ với 12 tình huống. Bạn thuộc kiểu nào?",
+      "startTelegram": "Đang tìm phong cách flirting 💘 Kiểm tra chiêu thức quyến rũ với 12 tình huống. Bạn thuộc kiểu nào?",
+      "startLine": "Đang tìm phong cách flirting 💘 Kiểm tra chiêu thức quyến rũ với 12 tình huống. Bạn thuộc kiểu nào?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
+    }
   }
 }
