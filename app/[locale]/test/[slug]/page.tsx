@@ -71,6 +71,10 @@ import {
   phase3SelfEsteemShieldStrengthResults,
 } from '@/lib/phase3SelfEsteemShieldStrengthData';
 import {
+  phase3ExLingeringFeelingsQuestions,
+  phase3ExLingeringFeelingsResults,
+} from '@/lib/phase3ExLingeringFeelingsData';
+import {
   phase3ExercisePersistenceTypeQuestions,
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
@@ -703,6 +707,10 @@ const Phase3LonelinessConcentrationTestClient = dynamic(
 );
 const Phase3SelfEsteemShieldStrengthTestClient = dynamic(
   () => import('@/components/Phase3SelfEsteemShieldStrengthTestClient'),
+  { ssr: false }
+);
+const Phase3ExLingeringFeelingsTestClient = dynamic(
+  () => import('@/components/Phase3ExLingeringFeelingsTestClient'),
   { ssr: false }
 );
 const Phase3CoupleBreakupRiskTestClient = dynamic(
@@ -1785,6 +1793,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['自尊', '自我肯定', '盾牌', '心態', '心理'],
         vi: ['tự trọng', 'tự khẳng định', 'lá chắn', 'tinh thần', 'tâm lý'],
         id: ['harga diri', 'afirmasi diri', 'perisai', 'mental', 'psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-ex-lingering-feelings') {
+    test = {
+      slug: 'phase3-ex-lingering-feelings',
+      title: {
+        ko: "나의 '전여친/남친' 미련 지수",
+        en: 'My Ex Lingering Feelings Index',
+        ja: "私の『元恋人』未練指数",
+        'zh-CN': "我的『前任』留恋指数",
+        'zh-TW': "我的『前任』留戀指數",
+        vi: "Chỉ số 'vương vấn' người yêu cũ của tôi",
+        id: "Indeks 'Rasa Kangen' Mantan Pacarku",
+      },
+      description: {
+        ko: '12가지 질문으로 전 연인에 대한 잔류 감정과 미련 지수를 솔직하게 측정합니다.',
+        en: 'Measure lingering feelings for your ex honestly with 12 questions.',
+        ja: '12の質問で元恋人への残る感情と未練指数を正直に測ります。',
+        'zh-CN': '通过12个问题诚实测量对前任的残留情感与留恋指数。',
+        'zh-TW': '透過12個問題誠實測量對前任的殘留情感與留戀指數。',
+        vi: 'Đo cảm xúc còn sót và mức vương vấn với người yêu cũ qua 12 câu hỏi.',
+        id: 'Ukur sisa perasaan dan indeks rasa kangen pada mantan lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_ex_lingering_feelings.webp',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['미련', '전연인', '이별', '잔류감정', '익명고민'],
+        en: ['lingering feelings', 'ex', 'breakup', 'residual emotion', 'anonymous'],
+        ja: ['未練', '元恋人', '別れ', '残る感情', '匿名相談'],
+        'zh-CN': ['留恋', '前任', '分手', '残留情感', '匿名倾诉'],
+        'zh-TW': ['留戀', '前任', '分手', '殘留情感', '匿名傾訴'],
+        vi: ['vương vấn', 'người yêu cũ', 'chia tay', 'cảm xúc còn sót', 'ẩn danh'],
+        id: ['kangen', 'mantan', 'putus', 'sisa emosi', 'anonim'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7255,6 +7300,66 @@ export default async function TestPage({ params }: Props) {
           questions={phase3SelfEsteemShieldStrengthQuestions}
           results={phase3SelfEsteemShieldStrengthResults}
           questionCount={phase3SelfEsteemShieldStrengthQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+          isLatestTest={isLatestTest}
+          badgeType={test.badge_type || null}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-ex-lingering-feelings') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-ex-lingering-feelings',
+      title: {
+        ko: "나의 '전여친/남친' 미련 지수",
+        en: 'My Ex Lingering Feelings Index',
+        ja: "私の『元恋人』未練指数",
+        'zh-CN': "我的『前任』留恋指数",
+        'zh-TW': "我的『前任』留戀指數",
+        vi: "Chỉ số 'vương vấn' người yêu cũ của tôi",
+        id: "Indeks 'Rasa Kangen' Mantan Pacarku",
+      },
+      description: {
+        ko: '12가지 질문으로 전 연인에 대한 잔류 감정과 미련 지수를 솔직하게 측정합니다.',
+        en: 'Measure lingering feelings for your ex honestly with 12 questions.',
+        ja: '12の質問で元恋人への残る感情と未練指数を正直に測ります。',
+        'zh-CN': '通过12个问题诚实测量对前任的残留情感与留恋指数。',
+        'zh-TW': '透過12個問題誠實測量對前任的殘留情感與留戀指數。',
+        vi: 'Đo cảm xúc còn sót và mức vương vấn với người yêu cũ qua 12 câu hỏi.',
+        id: 'Ukur sisa perasaan dan indeks rasa kangen pada mantan lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_ex_lingering_feelings.webp',
+      type: 'psychology',
+      category: 'love',
+      play_count: 0,
+      tags: {
+        ko: ['미련', '전연인', '이별', '잔류감정', '익명고민'],
+        en: ['lingering feelings', 'ex', 'breakup', 'residual emotion', 'anonymous'],
+        ja: ['未練', '元恋人', '別れ', '残る感情', '匿名相談'],
+        'zh-CN': ['留恋', '前任', '分手', '残留情感', '匿名倾诉'],
+        'zh-TW': ['留戀', '前任', '分手', '殘留情感', '匿名傾訴'],
+        vi: ['vương vấn', 'người yêu cũ', 'chia tay', 'cảm xúc còn sót', 'ẩn danh'],
+        id: ['kangen', 'mantan', 'putus', 'sisa emosi', 'anonim'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <>
+        <Phase3ExLingeringFeelingsTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3ExLingeringFeelingsQuestions}
+          results={phase3ExLingeringFeelingsResults}
+          questionCount={phase3ExLingeringFeelingsQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
           isLatestTest={isLatestTest}

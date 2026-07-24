@@ -11259,5 +11259,68 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "phase3ExLingeringFeelingsTest": {
+    "startMessage": {
+      "line1": "Sudah putus—kok masih kepikiran?",
+      "line2": "Kamu kira sudah move on, tapi lagu favoritnya diputar dan kamu langsung membeku. Di media sosial, lihat orang mirip langsung iseng stalking. Mimpiin bukan berarti masih cinta—tapi tetap saja ganggu pikiran.",
+      "line3": "Rasa kangen bukan aib. Itu bukti hubungan itu tulus.",
+      "line4": "Bayangkan mantan terakhirmu dan jawab 12 pertanyaan dengan jujur. Semakin jujur, semakin akurat indeksnya.",
+      "line5": "Ukur indeks rasa kangenku 💙 Mulai jujur"
+    },
+    "ui": {
+      "startTest": "Mulai",
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "lingeringIndex": "💙 Indeks rasa kangen",
+      "currentState": "📍 Kondisi saat ini",
+      "twoPossibilities": "🤔 Dua kemungkinan",
+      "meaning": "💬 Arti hasil ini",
+      "whatEmotionSays": "💬 Apa yang emosi ini katakan",
+      "needNow": "💙 Yang paling kamu butuhkan sekarang",
+      "toYou": "💙 Untukmu yang mengakuinya jujur",
+      "actions": "🌱 Yang bisa kamu lakukan sekarang",
+      "mustDo": "🌱 Yang harus dilakukan sekarang",
+      "doOneNow": "🎯 Lakukan satu hal saja",
+      "optionalMore": "➕ Kalau mau lebih",
+      "oneLiner": "💬 Satu kalimat",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "HOT",
+      "points": "poin",
+      "plays": "kali dimainkan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Mengukur indeks rasa kangen mantanku 💙 Putus tapi masih kepikiran? Cek jujur dengan 12 pertanyaan. Kamu berapa %?",
+      "startKakao": "Mengukur indeks rasa kangen mantanku 💙 Putus tapi masih kepikiran? Cek jujur dengan 12 pertanyaan. Kamu berapa %?",
+      "startWechat": "Mengukur indeks rasa kangen mantanku 💙 Putus tapi masih kepikiran? Cek jujur dengan 12 pertanyaan. Kamu berapa %?",
+      "startWhatsapp": "Mengukur indeks rasa kangen mantanku 💙 Putus tapi masih kepikiran? Cek jujur dengan 12 pertanyaan. Kamu berapa %?",
+      "startTelegram": "Mengukur indeks rasa kangen mantanku 💙 Putus tapi masih kepikiran? Cek jujur dengan 12 pertanyaan. Kamu berapa %?",
+      "startLine": "Mengukur indeks rasa kangen mantanku 💙 Putus tapi masih kepikiran? Cek jujur dengan 12 pertanyaan. Kamu berapa %?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }

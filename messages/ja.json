@@ -11247,5 +11247,68 @@
       "similarTestsTop5": "🎯 似たテストおすすめ Top 5",
       "popularTestsTop5": "🔥 今人気のテスト Top 5"
     }
+  },
+  "phase3ExLingeringFeelingsTest": {
+    "startMessage": {
+      "line1": "別れたのに、なぜまだあの人のことが思い出されるの？",
+      "line2": "完全に整理したつもりでも、あの人が好きだった曲が流れると足が止まる。SNSで似た人を見ると、つい探してしまう。夢に出てきたからといってまだ好きなわけじゃない。でも、なんとなく気になってしまう。",
+      "line3": "未練は恥ずかしいことじゃありません。その関係が本気だった証拠です。",
+      "line4": "最後に別れた元恋人を思い浮かべながら、12の質問に正直に答えてください。正直なほど、より正確な指数が出ます。",
+      "line5": "私の未練指数を測定 💙 正直にスタート"
+    },
+    "ui": {
+      "startTest": "始める",
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "lingeringIndex": "💙 未練指数",
+      "currentState": "📍 現在の状態",
+      "twoPossibilities": "🤔 2つの可能性",
+      "meaning": "💬 この結果が意味すること",
+      "whatEmotionSays": "💬 この感情が伝えること",
+      "needNow": "💙 今いちばん必要なこと",
+      "toYou": "💙 正直に認めたあなたへ",
+      "actions": "🌱 今できること",
+      "mustDo": "🌱 今すぐやるべきこと",
+      "doOneNow": "🎯 今、ひとつだけやる",
+      "optionalMore": "➕ もっとやりたいなら",
+      "oneLiner": "💬 ひと言",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "points": "点",
+      "plays": "回プレイ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "元恋人の未練指数を測定中 💙 別れたのにまだ思い出す？12問で正直にチェック。あなたは何%？",
+      "startKakao": "元恋人の未練指数を測定中 💙 別れたのにまだ思い出す？12問で正直にチェック。あなたは何%？",
+      "startWechat": "元恋人の未練指数を測定中 💙 別れたのにまだ思い出す？12問で正直にチェック。あなたは何%？",
+      "startWhatsapp": "元恋人の未練指数を測定中 💙 別れたのにまだ思い出す？12問で正直にチェック。あなたは何%？",
+      "startTelegram": "元恋人の未練指数を測定中 💙 別れたのにまだ思い出す？12問で正直にチェック。あなたは何%？",
+      "startLine": "元恋人の未練指数を測定中 💙 別れたのにまだ思い出す？12問で正直にチェック。あなたは何%？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめ Top 5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめ Top 5"
+    }
   }
 }

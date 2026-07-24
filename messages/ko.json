@@ -11397,5 +11397,68 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase3ExLingeringFeelingsTest": {
+    "startMessage": {
+      "line1": "헤어졌는데 왜 아직도 생각나는 걸까요?",
+      "line2": "완전히 정리됐다고 생각했는데 그 사람이 좋아하던 노래가 흘러나오면 멈칫하게 됩니다. SNS에서 비슷한 사람을 보면 괜히 찾아보게 됩니다. 꿈에 나왔다고 해서 아직도 좋아하는 건 아닌데, 그냥 묘하게 신경이 쓰입니다.",
+      "line3": "미련은 부끄러운 게 아닙니다. 그 관계가 그만큼 진심이었다는 증거입니다.",
+      "line4": "가장 최근에 헤어진 전 연인을 떠올리며 12가지 질문에 솔직하게 답해주세요. 솔직할수록 더 정확한 지수가 나옵니다.",
+      "line5": "내 미련 지수 측정하기 💙 솔직하게 시작"
+    },
+    "ui": {
+      "startTest": "시작하기",
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "lingeringIndex": "💙 미련 지수",
+      "currentState": "📍 현재 상태",
+      "twoPossibilities": "🤔 두 가지 가능성",
+      "meaning": "💬 이 결과가 의미하는 것",
+      "whatEmotionSays": "💬 이 감정이 말해주는 것",
+      "needNow": "💙 지금 가장 필요한 것",
+      "toYou": "💙 솔직하게 인정한 당신에게",
+      "actions": "🌱 지금 할 수 있는 것",
+      "mustDo": "🌱 지금 당장 해야 할 것",
+      "doOneNow": "🎯 지금 딱 하나만 하기",
+      "optionalMore": "➕ 더 하고 싶다면",
+      "oneLiner": "💬 한 줄",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "points": "점",
+      "plays": "회 플레이"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내 전 연인 미련 지수 측정 중 💙 헤어졌는데 아직 생각나? 12문항으로 솔직하게 확인해봐. 너는 몇 %야?",
+      "startKakao": "내 전 연인 미련 지수 측정 중 💙 헤어졌는데 아직 생각나? 12문항으로 솔직하게 확인해봐. 너는 몇 %야?",
+      "startWechat": "내 전 연인 미련 지수 측정 중 💙 헤어졌는데 아직 생각나? 12문항으로 솔직하게 확인해봐. 너는 몇 %야?",
+      "startWhatsapp": "내 전 연인 미련 지수 측정 중 💙 헤어졌는데 아직 생각나? 12문항으로 솔직하게 확인해봐. 너는 몇 %야?",
+      "startTelegram": "내 전 연인 미련 지수 측정 중 💙 헤어졌는데 아직 생각나? 12문항으로 솔직하게 확인해봐. 너는 몇 %야?",
+      "startLine": "내 전 연인 미련 지수 측정 중 💙 헤어졌는데 아직 생각나? 12문항으로 솔직하게 확인해봐. 너는 몇 %야?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

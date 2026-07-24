@@ -10728,5 +10728,68 @@
       "similarTestsTop5": "🎯 相似測試推薦 Top 5",
       "popularTestsTop5": "🔥 當下熱門測試 Top 5"
     }
+  },
+  "phase3ExLingeringFeelingsTest": {
+    "startMessage": {
+      "line1": "已經分手了，為什麼還會想起TA？",
+      "line2": "你以為已經完全放下了，但TA喜歡的歌一響起就會愣住。在社群上看到相似的人，會忍不住去搜。夢到TA並不代表還愛著，但就是會莫名在意。",
+      "line3": "留戀並不可恥。這證明那段關係是認真的。",
+      "line4": "請回想最近分手的前任，誠實回答12個問題。越誠實，指數越準確。",
+      "line5": "測量我的留戀指數 💙 誠實開始"
+    },
+    "ui": {
+      "startTest": "開始",
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "lingeringIndex": "💙 留戀指數",
+      "currentState": "📍 目前狀態",
+      "twoPossibilities": "🤔 兩種可能",
+      "meaning": "💬 這個結果意味著什麼",
+      "whatEmotionSays": "💬 這種情緒在告訴你什麼",
+      "needNow": "💙 現在最需要的事",
+      "toYou": "💙 給誠實承認的你",
+      "actions": "🌱 現在可以做的事",
+      "mustDo": "🌱 現在必須做的事",
+      "doOneNow": "🎯 現在只做一件事",
+      "optionalMore": "➕ 如果還想多做",
+      "oneLiner": "💬 一句話",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門",
+      "points": "分",
+      "plays": "次遊玩"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "正在測前任留戀指數 💙 分手了還會想起TA嗎？用12題誠實確認。你是百分之幾？",
+      "startKakao": "正在測前任留戀指數 💙 分手了還會想起TA嗎？用12題誠實確認。你是百分之幾？",
+      "startWechat": "正在測前任留戀指數 💙 分手了還會想起TA嗎？用12題誠實確認。你是百分之幾？",
+      "startWhatsapp": "正在測前任留戀指數 💙 分手了還會想起TA嗎？用12題誠實確認。你是百分之幾？",
+      "startTelegram": "正在測前任留戀指數 💙 分手了還會想起TA嗎？用12題誠實確認。你是百分之幾？",
+      "startLine": "正在測前任留戀指數 💙 分手了還會想起TA嗎？用12題誠實確認。你是百分之幾？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top 5",
+      "popularTestsTop5": "🔥 當下熱門測試 Top 5"
+    }
   }
 }
