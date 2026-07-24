@@ -969,15 +969,16 @@ export default function Phase3EagleEyeUltimateTestClient({
 
         <div>
           <div className="mb-4 px-4">
-            <div className="relative w-full overflow-hidden rounded-2xl border border-sky-200 shadow-md bg-slate-100" style={{ aspectRatio: '16/10' }}>
+            <div className="w-full border border-sky-200 shadow-md bg-slate-100">
               <Image
                 key={imageUrl}
                 src={imageUrl}
                 alt=""
-                fill
+                width={680}
+                height={680}
                 priority={currentQuestion === 0}
                 fetchPriority="high"
-                className="object-cover"
+                className="w-full h-auto object-contain"
                 sizes="(max-width: 768px) 100vw, 672px"
                 decoding="async"
               />
@@ -985,9 +986,6 @@ export default function Phase3EagleEyeUltimateTestClient({
           </div>
 
           <div className="mb-6 px-4 text-center">
-            <span className="inline-block mb-3 bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">
-              {question.category[locale as keyof typeof question.category] || question.category.ko}
-            </span>
             <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 leading-relaxed whitespace-pre-line">
               {questionText}
             </h2>
