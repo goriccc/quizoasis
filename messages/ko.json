@@ -11788,5 +11788,73 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
     }
+  },
+  "phase3SpotTheDifferenceChallengeTest": {
+    "startMessage": {
+      "line1": "좌·우 그림을 비교해 크게 다른 곳 3곳을 찾으세요.",
+      "line2": "한 장의 그림이 가운데 선을 기준으로 좌·우로 나뉘어 있습니다. 눈에 띄게 다른 부분을 터치하면 정답입니다.",
+      "line3": "총 6라운드, 라운드당 큰 차이 3~4곳. 전체 20개를 찾으면 만점입니다. 1라운드 60초, 매 라운드 10초씩 줄어듭니다.",
+      "line4": "시간이 0이 되면 다음 라운드로 넘어갑니다. 색·모양·유무가 확 바뀐 곳 위주로 비교하세요.",
+      "line5": "틀린그림 찾기 챌린지 시작 🔍 눈 부릅뜨고 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (틀린그림 찾기 챌린지)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "scoreSummary": "{count}개 발견 · 20개 만점",
+      "levelLabel": "관찰력 등급",
+      "scoreBandLabel": "발견 수",
+      "foundCountValue": "{count}개",
+      "characteristicsLabel": "이 레벨의 특징",
+      "strengthLabel": "강점 구간",
+      "weaknessLabel": "취약 구간",
+      "improvementTip": "관찰력 개선 팁",
+      "oneLiner": "한 줄 평",
+      "certifyLabel": "인증 문구",
+      "scoreDisplay": "총 {count}개 발견",
+      "nextQuestion": "다음 라운드",
+      "viewResult": "결과 보기"
+    },
+    "game": {
+      "foundProgress": "이번 라운드 {found}/{total} 발견",
+      "wrongSpot": "여기는 아닙니다",
+      "hitCorrect": "+1",
+      "timerLabel": "TIME",
+      "timerDisplay": "⏱ {seconds}초",
+      "roundComplete": "라운드 클리어! {total}곳 모두 찾았습니다"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "틀린그림 찾기 챌린지 🔍 6라운드 큰 차이 20곳 — 내 눈썰미 테스트",
+      "startKakao": "틀린그림 찾기 챌린지 🔍 6라운드 큰 차이 20곳 — 내 눈썰미 테스트",
+      "startWechat": "틀린그림 찾기 챌린지 🔍 6라운드 큰 차이 20곳 — 내 눈썰미 테스트",
+      "startWhatsapp": "틀린그림 찾기 챌린지 🔍 6라운드 큰 차이 20곳 — 내 눈썰미 테스트",
+      "startTelegram": "틀린그림 찾기 챌린지 🔍 6라운드 큰 차이 20곳 — 내 눈썰미 테스트",
+      "startLine": "틀린그림 찾기 챌린지 🔍 6라운드 큰 차이 20곳 — 내 눈썰미 테스트"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
   }
 }

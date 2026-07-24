@@ -11119,5 +11119,73 @@
       "similarTestsTop5": "🎯 相似測驗推薦 Top 5",
       "popularTestsTop5": "🔥 熱門測驗推薦 Top 5"
     }
+  },
+  "phase3SpotTheDifferenceChallengeTest": {
+    "startMessage": {
+      "line1": "對比左右兩幅圖，找出明顯不同的地方。",
+      "line2": "一幅圖從中間分為左右兩半。點擊明顯不同的部分即為正確。",
+      "line3": "共6輪，每輪3~4處大差異，找全20處滿分。第1輪60秒，每輪減少10秒。",
+      "line4": "時間歸零進入下一輪。重點對比顏色、形狀和有無變化。",
+      "line5": "找不同挑戰開始 🔍 睜大眼睛，出發！"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（找不同挑戰）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "shareResult": "分享結果",
+      "scoreSummary": "發現{count}處 · 滿分20處",
+      "levelLabel": "觀察力等級",
+      "scoreBandLabel": "發現數量",
+      "foundCountValue": "{count}處",
+      "characteristicsLabel": "該等級特徵",
+      "strengthLabel": "優勢區間",
+      "weaknessLabel": "薄弱區間",
+      "improvementTip": "觀察力提升建議",
+      "oneLiner": "一句話評價",
+      "certifyLabel": "認證文案",
+      "scoreDisplay": "共發現{count}處",
+      "nextQuestion": "下一輪",
+      "viewResult": "查看結果"
+    },
+    "game": {
+      "foundProgress": "本輪 {found}/{total} 已發現",
+      "wrongSpot": "不是這裡",
+      "hitCorrect": "+1",
+      "timerLabel": "TIME",
+      "timerDisplay": "剩餘{seconds}秒",
+      "roundComplete": "本輪通關！{total}處全部找到"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "找不同挑戰 🔍 6輪20處差異 — 測測你的眼力！",
+      "startKakao": "找不同挑戰 🔍 6輪20處差異 — 測測你的眼力！",
+      "startWechat": "找不同挑戰 🔍 6輪20處差異 — 測測你的眼力！",
+      "startWhatsapp": "找不同挑戰 🔍 6輪20處差異 — 測測你的眼力！",
+      "startTelegram": "找不同挑戰 🔍 6輪20處差異 — 測測你的眼力！",
+      "startLine": "找不同挑戰 🔍 6輪20處差異 — 測測你的眼力！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top 5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top 5"
+    }
   }
 }

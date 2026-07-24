@@ -87,6 +87,10 @@ import {
   phase3MemoryLimitChallengeResults,
 } from '@/lib/phase3MemoryLimitChallengeData';
 import {
+  phase3SpotTheDifferenceRounds,
+  phase3SpotTheDifferenceResults,
+} from '@/lib/phase3SpotTheDifferenceChallengeData';
+import {
   phase3ExercisePersistenceTypeQuestions,
   phase3ExercisePersistenceTypeResults,
 } from '@/lib/phase3ExercisePersistenceTypeData';
@@ -703,6 +707,10 @@ const Phase3LuckGameTestClient = dynamic(
 );
 const Phase3MemoryLimitChallengeTestClient = dynamic(
   () => import('@/components/Phase3MemoryLimitChallengeTestClient'),
+  { ssr: false }
+);
+const Phase3SpotTheDifferenceChallengeTestClient = dynamic(
+  () => import('@/components/Phase3SpotTheDifferenceChallengeTestClient'),
   { ssr: false }
 );
 const Phase3AiFuture10YearsTestClient = dynamic(
@@ -2043,6 +2051,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['記憶力', '挑戰', '腦細胞', '短期記憶', '測驗'],
         vi: ['trí nhớ', 'thử thách', 'tế bào não', 'trí nhớ ngắn hạn', 'quiz'],
         id: ['memori', 'tantangan', 'sel otak', 'memori jangka pendek', 'kuis'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-spot-the-difference-challenge') {
+    test = {
+      slug: 'phase3-spot-the-difference-challenge',
+      title: {
+        ko: "'틀린 그림' 찾기 챌린지",
+        en: 'Spot the Difference Challenge',
+        ja: '間違い探しチャレンジ',
+        'zh-CN': '找不同挑战',
+        'zh-TW': '找不同挑戰',
+        vi: 'Thử thách tìm điểm khác biệt',
+        id: 'Tantangan Spot the Difference',
+      },
+      description: {
+        ko: '6라운드 틀린그림 찾기로 관찰력을 0~20점으로 측정합니다. 좌·우 그림의 큰 차이를 터치하세요. 라운드1 60초, 매 라운드 10초씩 감소.',
+        en: 'Measure observation skills across 6 spot-the-difference rounds (0–20 points). Tap major differences in left/right images. Round 1: 60s, minus 10s each round.',
+        ja: '6ラウンドの間違い探しで観察力を0〜20点で測定。左右の絵の大きな違いをタップ。1ラウンド目60秒、以降10秒短縮。',
+        'zh-CN': '6轮找不同测试，观察力0~20分。点击左右图中明显差异。第1轮60秒，每轮减10秒。',
+        'zh-TW': '6輪找不同測試，觀察力0~20分。點擊左右圖中明顯差異。第1輪60秒，每輪減10秒。',
+        vi: 'Đo khả năng quan sát qua 6 vòng tìm khác biệt (0–20 điểm). Chạm các điểm khác biệt lớn giữa ảnh trái/phải. Vòng 1: 60s, giảm 10s mỗi vòng.',
+        id: 'Ukur observasi lewat 6 ronde cari beda (0–20 poin). Ketuk perbedaan besar gambar kiri/kanan. Ronde 1: 60 dtk, -10 dtk tiap ronde.',
+      },
+      thumbnail: 'p3_game_spot_the_difference.webp',
+      type: 'game',
+      category: 'brain',
+      play_count: 0,
+      tags: {
+        ko: ['틀린그림', '찾기', '관찰력', '눈썰미', '챌린지'],
+        en: ['spot the difference', 'observation', 'eagle eye', 'puzzle', 'challenge'],
+        ja: ['間違い探し', '観察力', '目利き', 'パズル', 'チャレンジ'],
+        'zh-CN': ['找不同', '观察力', '眼力', '益智', '挑战'],
+        'zh-TW': ['找不同', '觀察力', '眼力', '益智', '挑戰'],
+        vi: ['tìm khác biệt', 'quan sát', 'mắt tinh', 'giải đố', 'thử thách'],
+        id: ['cari beda', 'observasi', 'mata elang', 'teka-teki', 'tantangan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7255,6 +7300,65 @@ export default async function TestPage({ params }: Props) {
         questions={phase3MemoryLimitChallengeQuestions}
         results={phase3MemoryLimitChallengeResults}
         questionCount={phase3MemoryLimitChallengeQuestions.length}
+        thumbnail={test.thumbnail}
+        playCount={test.play_count}
+        isLatestTest={isLatestTest}
+        badgeType={test.badge_type || null}
+      />
+    );
+  }
+
+  if (slug === 'phase3-spot-the-difference-challenge') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-spot-the-difference-challenge',
+      title: {
+        ko: "'틀린 그림' 찾기 챌린지",
+        en: 'Spot the Difference Challenge',
+        ja: '間違い探しチャレンジ',
+        'zh-CN': '找不同挑战',
+        'zh-TW': '找不同挑戰',
+        vi: 'Thử thách tìm điểm khác biệt',
+        id: 'Tantangan Spot the Difference',
+      },
+      description: {
+        ko: '6라운드 틀린그림 찾기로 관찰력을 0~20점으로 측정합니다. 좌·우 그림의 큰 차이를 터치하세요. 라운드1 60초, 매 라운드 10초씩 감소.',
+        en: 'Measure observation skills across 6 spot-the-difference rounds (0–20 points). Tap major differences in left/right images. Round 1: 60s, minus 10s each round.',
+        ja: '6ラウンドの間違い探しで観察力を0〜20点で測定。左右の絵の大きな違いをタップ。1ラウンド目60秒、以降10秒短縮。',
+        'zh-CN': '6轮找不同测试，观察力0~20分。点击左右图中明显差异。第1轮60秒，每轮减10秒。',
+        'zh-TW': '6輪找不同測試，觀察力0~20分。點擊左右圖中明顯差異。第1輪60秒，每輪減10秒。',
+        vi: 'Đo khả năng quan sát qua 6 vòng tìm khác biệt (0–20 điểm). Chạm các điểm khác biệt lớn giữa ảnh trái/phải. Vòng 1: 60s, giảm 10s mỗi vòng.',
+        id: 'Ukur observasi lewat 6 ronde cari beda (0–20 poin). Ketuk perbedaan besar gambar kiri/kanan. Ronde 1: 60 dtk, -10 dtk tiap ronde.',
+      },
+      thumbnail: 'p3_game_spot_the_difference.webp',
+      type: 'game',
+      category: 'brain',
+      play_count: 0,
+      tags: {
+        ko: ['틀린그림', '찾기', '관찰력', '눈썰미', '챌린지'],
+        en: ['spot the difference', 'observation', 'eagle eye', 'puzzle', 'challenge'],
+        ja: ['間違い探し', '観察力', '目利き', 'パズル', 'チャレンジ'],
+        'zh-CN': ['找不同', '观察力', '眼力', '益智', '挑战'],
+        'zh-TW': ['找不同', '觀察力', '眼力', '益智', '挑戰'],
+        vi: ['tìm khác biệt', 'quan sát', 'mắt tinh', 'giải đố', 'thử thách'],
+        id: ['cari beda', 'observasi', 'mata elang', 'teka-teki', 'tantangan'],
+      },
+    };
+
+    const latestTestSlugs = await getLatestTestSlugs(15);
+    const isLatestTest = latestTestSlugs.includes(slug);
+
+    return (
+      <Phase3SpotTheDifferenceChallengeTestClient
+        locale={locale}
+        slug={test.slug}
+        title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+        description={
+          typeof test.description === 'object'
+            ? test.description[locale] || test.description.ko
+            : test.description
+        }
+        rounds={phase3SpotTheDifferenceRounds}
+        results={phase3SpotTheDifferenceResults}
         thumbnail={test.thumbnail}
         playCount={test.play_count}
         isLatestTest={isLatestTest}

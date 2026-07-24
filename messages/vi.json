@@ -11650,5 +11650,73 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test hot hiện nay"
     }
+  },
+  "phase3SpotTheDifferenceChallengeTest": {
+    "startMessage": {
+      "line1": "So sánh ảnh trái và phải để tìm các điểm khác biệt lớn.",
+      "line2": "Một ảnh được chia đôi theo đường giữa. Chạm vào phần khác biệt rõ ràng để trả lời đúng.",
+      "line3": "6 vòng, mỗi vòng 3–4 điểm khác biệt lớn. Tìm đủ 20 điểm để đạt tối đa. Vòng 1: 60 giây, giảm 10 giây mỗi vòng.",
+      "line4": "Hết giờ sẽ chuyển vòng tiếp theo. Tập trung vào màu sắc, hình dạng và vật thể thiếu/có.",
+      "line5": "Thử thách tìm khác biệt 🔍 Mở to mắt — bắt đầu!"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực AdSense (Thử thách tìm khác biệt)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Tìm được {count} · Tối đa 20",
+      "levelLabel": "Cấp quan sát",
+      "scoreBandLabel": "Số lượng tìm được",
+      "foundCountValue": "{count}",
+      "characteristicsLabel": "Đặc điểm cấp này",
+      "strengthLabel": "Điểm mạnh",
+      "weaknessLabel": "Điểm yếu",
+      "improvementTip": "Mẹo cải thiện",
+      "oneLiner": "Nhận xét một dòng",
+      "certifyLabel": "Chứng nhận",
+      "scoreDisplay": "Tổng {count} điểm tìm được",
+      "nextQuestion": "Vòng tiếp theo",
+      "viewResult": "Xem kết quả"
+    },
+    "game": {
+      "foundProgress": "Vòng này {found}/{total} đã tìm",
+      "wrongSpot": "Không phải chỗ này",
+      "hitCorrect": "+1",
+      "timerLabel": "TIME",
+      "timerDisplay": "Còn {seconds} giây",
+      "roundComplete": "Hoàn thành vòng! Tìm đủ {total} chỗ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Thử thách tìm khác biệt 🔍 20 điểm trong 6 vòng — thử mắt tinh của bạn!",
+      "startKakao": "Thử thách tìm khác biệt 🔍 20 điểm trong 6 vòng — thử mắt tinh của bạn!",
+      "startWechat": "Thử thách tìm khác biệt 🔍 20 điểm trong 6 vòng — thử mắt tinh của bạn!",
+      "startWhatsapp": "Thử thách tìm khác biệt 🔍 20 điểm trong 6 vòng — thử mắt tinh của bạn!",
+      "startTelegram": "Thử thách tìm khác biệt 🔍 20 điểm trong 6 vòng — thử mắt tinh của bạn!",
+      "startLine": "Thử thách tìm khác biệt 🔍 20 điểm trong 6 vòng — thử mắt tinh của bạn!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test phổ biến"
+    }
   }
 }

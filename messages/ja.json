@@ -11638,5 +11638,73 @@
       "similarTestsTop5": "🎯 似たテストおすすめ Top 5",
       "popularTestsTop5": "🔥 今人気テスト Top 5"
     }
+  },
+  "phase3SpotTheDifferenceChallengeTest": {
+    "startMessage": {
+      "line1": "左右の絵を比べて、大きく違う場所を見つけてください。",
+      "line2": "1枚の絵が中央の線で左右に分かれています。はっきり違う部分をタップすると正解です。",
+      "line3": "全6ラウンド、各ラウンド3〜4か所。合計20か所で満点。1ラウンド目60秒、ラウンドごとに10秒短縮。",
+      "line4": "時間が0になると次のラウンドへ。色・形・有無が変わった場所を中心に比べてください。",
+      "line5": "間違い探しチャレンジ開始 🔍 目を見開いてスタート！"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（間違い探しチャレンジ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "shareResult": "結果をシェア",
+      "scoreSummary": "{count}個発見 · 満点20個",
+      "levelLabel": "観察力グレード",
+      "scoreBandLabel": "発見数",
+      "foundCountValue": "{count}個",
+      "characteristicsLabel": "このレベルの特徴",
+      "strengthLabel": "強み",
+      "weaknessLabel": "弱点",
+      "improvementTip": "観察力アップのヒント",
+      "oneLiner": "一言評",
+      "certifyLabel": "認証メッセージ",
+      "scoreDisplay": "合計 {count}個発見",
+      "nextQuestion": "次のラウンド",
+      "viewResult": "結果を見る"
+    },
+    "game": {
+      "foundProgress": "このラウンド {found}/{total} 発見",
+      "wrongSpot": "ここではありません",
+      "hitCorrect": "+1",
+      "timerLabel": "TIME",
+      "timerDisplay": "残り{seconds}秒",
+      "roundComplete": "ラウンドクリア！{total}か所すべて発見"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "間違い探しチャレンジ 🔍 6ラウンド20か所 — あなたの目利きをテスト！",
+      "startKakao": "間違い探しチャレンジ 🔍 6ラウンド20か所 — あなたの目利きをテスト！",
+      "startWechat": "間違い探しチャレンジ 🔍 6ラウンド20か所 — あなたの目利きをテスト！",
+      "startWhatsapp": "間違い探しチャレンジ 🔍 6ラウンド20か所 — あなたの目利きをテスト！",
+      "startTelegram": "間違い探しチャレンジ 🔍 6ラウンド20か所 — あなたの目利きをテスト！",
+      "startLine": "間違い探しチャレンジ 🔍 6ラウンド20か所 — あなたの目利きをテスト！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。しばらくしてから再試行してください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめの類似テスト Top 5",
+      "popularTestsTop5": "🔥 今人気のテスト Top 5"
+    }
   }
 }

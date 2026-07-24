@@ -11650,5 +11650,73 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
     }
+  },
+  "phase3SpotTheDifferenceChallengeTest": {
+    "startMessage": {
+      "line1": "Bandingkan gambar kiri dan kanan, temukan perbedaan besar.",
+      "line2": "Satu gambar terbagi di tengah. Ketuk bagian yang jelas berbeda untuk benar.",
+      "line3": "6 ronde, 3–4 perbedaan besar tiap ronde. Temukan semua 20 untuk skor maks. Ronde 1: 60 detik, -10 detik tiap ronde.",
+      "line4": "Waktu habis lanjut ronde berikutnya. Fokus pada warna, bentuk, dan objek hilang/ada.",
+      "line5": "Tantangan Spot the Difference 🔍 Buka mata lebar-lebar — mulai!"
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (Tantangan Spot the Difference)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "{count} ditemukan · Maks 20",
+      "levelLabel": "Grade observasi",
+      "scoreBandLabel": "Jumlah temuan",
+      "foundCountValue": "{count}",
+      "characteristicsLabel": "Ciri level ini",
+      "strengthLabel": "Kekuatan",
+      "weaknessLabel": "Kelemahan",
+      "improvementTip": "Tips peningkatan",
+      "oneLiner": "Satu kalimat",
+      "certifyLabel": "Sertifikasi",
+      "scoreDisplay": "Total {count} ditemukan",
+      "nextQuestion": "Ronde berikutnya",
+      "viewResult": "Lihat hasil"
+    },
+    "game": {
+      "foundProgress": "Ronde ini {found}/{total} ditemukan",
+      "wrongSpot": "Bukan di sini",
+      "hitCorrect": "+1",
+      "timerLabel": "TIME",
+      "timerDisplay": "Sisa {seconds} detik",
+      "roundComplete": "Ronde selesai! Semua {total} spot ditemukan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tantangan Spot the Difference 🔍 20 perbedaan di 6 ronde — uji mata elangmu!",
+      "startKakao": "Tantangan Spot the Difference 🔍 20 perbedaan di 6 ronde — uji mata elangmu!",
+      "startWechat": "Tantangan Spot the Difference 🔍 20 perbedaan di 6 ronde — uji mata elangmu!",
+      "startWhatsapp": "Tantangan Spot the Difference 🔍 20 perbedaan di 6 ronde — uji mata elangmu!",
+      "startTelegram": "Tantangan Spot the Difference 🔍 20 perbedaan di 6 ronde — uji mata elangmu!",
+      "startLine": "Tantangan Spot the Difference 🔍 20 perbedaan di 6 ronde — uji mata elangmu!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 rekomendasi tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer saat ini"
+    }
   }
 }
