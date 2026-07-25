@@ -10421,6 +10421,72 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3CreativityPotentialTest": {
+    "startMessage": {
+      "line1": "Kreativitas bukan bawaan lahir. Ini tentang cara kamu berpikir.",
+      "line2": "Ada yang menemukan ide dari koneksi tak terduga, ada yang membangun struktur baru, ada yang menemukan solusi terbaik dalam batasan nyata. Kreativitas tidak punya satu jawaban benar.",
+      "line3": "Analisis pola berpikir kreatifmu lewat 12 pertanyaan dan temukan tipe kreativitas mana yang paling kuat. Bagi planner, designer, dan creator, mengetahui dan memanfaatkan kekuatan kreatif jauh lebih efisien.",
+      "line4": "Ukur potensi kreativitasku 💡 Cek sekarang",
+      "note": "※ Di setiap pertanyaan, pilih opsi yang paling dekat dengan dirimu."
+    },
+    "ui": {
+      "startTest": "Mulai Tes Potensi Kreativitas",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Potensi Kreativitasku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "creativityType": "Tipe Kreativitas",
+      "creativityKeywords": "Kata Kunci Kreativitas",
+      "strongField": "Bidang Terkuat untuk Tipe Ini",
+      "strength": "Kekuatan Tipe Ini",
+      "weakness": "Kelemahan Tipe Ini",
+      "maximizeMethod": "Cara Memaksimalkan Kreativitas Ini",
+      "designerTip": "Tips untuk Planner & Designer",
+      "goodMatch": "Tipe yang Cocok Dipasangkan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Tipe kreativitasku: Praktis 🔧 Katanya kreativitasku shine saat ada batasan… akui deh, eksekusi lebih kuat dari ide → Planner/designer, cek tipe kreativitasmu",
+      "type2": "Tipe kreativitasku: Absorpsi asosiatif 🌐 Katanya makin banyak lihat makin kaya ide… suka kumpulin referensi kan wkwk → Kamu tipe apa?",
+      "type3": "Tipe kreativitasku: Crossover 🔀 Katanya ide muncul dari hubungin hal yang beda banget… combo beda domain memang natural kan → Planner/designer share yuk",
+      "type4": "Tipe kreativitasku: Pergeseran perspektif 🔄 Katanya aku redefine masalahnya… sering nanya \"Ini beneran masalahnya?\" kan → Kamu tipe apa?",
+      "type5": "Tipe kreativitasku: Divergen 💥 Katanya aku keluarin ide meledak-ledak… paling excited pas brainstorming kan wkwk → Bikin peta kreativitas tim yuk",
+      "type6": "Tipe kreativitasku: Perintis visi 🚀 Katanya aku lihat dunia yang belum ada… planning 0→1 paling seru kan → Planner/designer, cek tipe kreativitasmu",
+      "startDefault": "Potensi \"Kreativitas\"ku 💡 Cek pola berpikir kreatifmu",
+      "startKakao": "Potensi \"Kreativitas\"ku 💡 Cek pola berpikir kreatifmu",
+      "startWechat": "Potensi \"Kreativitas\"ku 💡 Cek pola berpikir kreatifmu",
+      "startWhatsapp": "Potensi \"Kreativitas\"ku 💡 Cek pola berpikir kreatifmu",
+      "startTelegram": "Potensi \"Kreativitas\"ku 💡 Cek pola berpikir kreatifmu",
+      "startLine": "Potensi \"Kreativitas\"ku 💡 Cek pola berpikir kreatifmu"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",

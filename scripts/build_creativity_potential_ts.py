@@ -1,0 +1,477 @@
+"""Generate lib/phase3CreativityPotentialData.ts with full 7-language localeMap() content."""
+from __future__ import annotations
+
+from pathlib import Path
+
+LOCALES = ("ko", "en", "ja", "zh-CN", "zh-TW", "vi", "id")
+
+HEADER = """/** 나의 '창의성' 잠재력 — 12문항 4지선다, A=0 B=1 C=2 D=3, 총점 0~36 → Type1~6 · 7개 로케일 */
+
+export type Phase3CreativityPotentialLocaleKey = 'ko' | 'en' | 'ja' | 'zh-CN' | 'zh-TW' | 'vi' | 'id';
+
+function localeMap(t: Record<Phase3CreativityPotentialLocaleKey, string>): Record<Phase3CreativityPotentialLocaleKey, string> {
+  return t;
+}
+
+function opt(m: Record<Phase3CreativityPotentialLocaleKey, string>, score: number): { text: Record<Phase3CreativityPotentialLocaleKey, string>; score: number } {
+  return { text: localeMap(m), score };
+}
+
+export interface Phase3CreativityPotentialQuestion {
+  id: number;
+  question: Record<Phase3CreativityPotentialLocaleKey, string>;
+  options: { text: Record<Phase3CreativityPotentialLocaleKey, string>; score: number }[];
+}
+
+export interface Phase3CreativityPotentialResult {
+  type: string;
+  emoji: string;
+  title: Record<Phase3CreativityPotentialLocaleKey, string>;
+  shortDescription: Record<Phase3CreativityPotentialLocaleKey, string>;
+  description: Record<Phase3CreativityPotentialLocaleKey, string>;
+  creativityType: Record<Phase3CreativityPotentialLocaleKey, string>;
+  creativityKeywords: Record<Phase3CreativityPotentialLocaleKey, string>;
+  strongField: Record<Phase3CreativityPotentialLocaleKey, string>;
+  strength: Record<Phase3CreativityPotentialLocaleKey, string>;
+  weakness: Record<Phase3CreativityPotentialLocaleKey, string>;
+  maximizeMethod: Record<Phase3CreativityPotentialLocaleKey, string>;
+  designerTip: Record<Phase3CreativityPotentialLocaleKey, string>;
+  goodMatch: Record<Phase3CreativityPotentialLocaleKey, string>;
+  shareLine: Record<Phase3CreativityPotentialLocaleKey, string>;
+}
+
+export function calculatePhase3CreativityPotentialResult(answers: number[]): string {
+  const total = answers.reduce((sum, s) => sum + (s ?? 0), 0);
+  if (total <= 5) return 'Type1';
+  if (total <= 11) return 'Type2';
+  if (total <= 19) return 'Type3';
+  if (total <= 27) return 'Type4';
+  if (total <= 33) return 'Type5';
+  return 'Type6';
+}
+
+export const phase3CreativityPotentialQuestions: Phase3CreativityPotentialQuestion[] = [
+"""
+
+
+def esc(s: str) -> str:
+    return s.replace("\\", "\\\\").replace("'", "\\'")
+
+
+def loc_key(loc: str) -> str:
+    return f"'{loc}'" if loc in ("zh-CN", "zh-TW") else loc
+
+
+def fmt_ml(d: dict[str, str], indent: str = "      ") -> str:
+    lines = [f"{indent}ko: '{esc(d['ko'])}',"]
+    for loc in LOCALES[1:]:
+        lines.append(f"{indent}{loc_key(loc)}: '{esc(d[loc])}',")
+    return "localeMap({\n" + "\n".join(lines) + "\n    })"
+
+
+def fmt_question(qid: int, q: dict[str, str], opts: list[tuple[dict[str, str], int]]) -> str:
+    parts = [
+        "  {",
+        f"    id: {qid},",
+        f"    question: {fmt_ml(q)},",
+        "    options: [",
+    ]
+    for o, score in opts:
+        parts.append(f"      opt({fmt_ml(o, '        ')}, {score}),")
+    parts.append("    ],")
+    parts.append("  },")
+    return "\n".join(parts)
+
+
+def fmt_result(r: dict) -> str:
+    ml_fields = [
+        "title",
+        "shortDescription",
+        "description",
+        "creativityType",
+        "creativityKeywords",
+        "strongField",
+        "strength",
+        "weakness",
+        "maximizeMethod",
+        "designerTip",
+        "goodMatch",
+        "shareLine",
+    ]
+    parts = ["  {"]
+    parts.append(f'    type: "{r["type"]}",')
+    parts.append(f'    emoji: "{r["emoji"]}",')
+    for field in ml_fields:
+        parts.append(f"    {field}: {fmt_ml(r[field])},")
+    parts.append("  },")
+    return "\n".join(parts)
+
+
+def M(**kwargs: str) -> dict[str, str]:
+    return {loc: kwargs[loc] for loc in LOCALES}
+
+
+def q(question: dict[str, str], options: list[tuple[dict[str, str], int]]) -> dict:
+    return {
+        "question": question,
+        "options": [{"text": o, "score": s} for o, s in options],
+    }
+
+
+def r(type_: str, emoji: str, **fields: dict[str, str]) -> dict:
+    return {"type": type_, "emoji": emoji, **fields}
+
+
+# Korean source strings from gen_creativity_potential_data.py (data section only)
+_gen_path = Path(__file__).resolve().parent / "gen_creativity_potential_data.py"
+_gen_ns: dict = {}
+exec(_gen_path.read_text(encoding="utf-8").split("\ndef esc")[0], _gen_ns)
+KO_QUESTIONS = _gen_ns["QUESTIONS"]
+KO_RESULTS = _gen_ns["RESULTS"]
+
+
+def _ko_q(idx: int) -> str:
+    return KO_QUESTIONS[idx]["q"]
+
+
+def _ko_o(idx: int, opt_idx: int) -> str:
+    return KO_QUESTIONS[idx]["opts"][opt_idx]
+
+
+def _ko_r(type_idx: int, field: str) -> str:
+    key_map = {
+        "shortDescription": "short",
+        "description": "desc",
+        "creativityKeywords": "keywords",
+        "maximizeMethod": "maximize",
+        "shareLine": "share",
+    }
+    k = key_map.get(field, field)
+    return KO_RESULTS[type_idx][k]
+
+
+QUESTIONS = [
+    q(
+        M(
+            ko=_ko_q(0),
+            en="You need to come up with a completely new idea. I would…",
+            ja="完全に新しいアイデアを思い浮かべなければならない状況だ。私は？",
+            **{"zh-CN": "需要想出一个全新的点子。我会？", "zh-TW": "需要想出一個全新的點子。我會？"},
+            vi="Cần nghĩ ra một ý tưởng hoàn toàn mới. Tôi sẽ…",
+            id="Harus memikirkan ide yang benar-benar baru. Saya…",
+        ),
+        [
+            (M(ko=_ko_o(0, 0), en="First look for cases that are already working well and get hints from them", ja="すでにうまくいっている事例を先に探し、そこからヒントを得る", **{"zh-CN": "先找已经做得好的案例，从中获取灵感", "zh-TW": "先找已經做得好的案例，從中獲取靈感"}, vi="Trước tiên tìm các trường hợp đã thành công và lấy manh mối từ đó", id="Mencari kasus yang sudah berhasil dan mengambil petunjuk darinya"), 0),
+            (M(ko=_ko_o(0, 1), en="Gather ideas from similar fields and find common patterns", ja="似た分野のアイデアを複数集め、共通点を見つける", **{"zh-CN": "收集相似领域的多个点子，找出共同点", "zh-TW": "收集相似領域的多個點子，找出共同點"}, vi="Thu thập nhiều ý tưởng từ lĩnh vực tương tự và tìm điểm chung", id="Mengumpulkan ide dari bidang serupa dan mencari pola umum"), 1),
+            (M(ko=_ko_o(0, 2), en="Force connections between seemingly unrelated things to create ideas", ja="全く関係なさそうなものを無理やり結びつけてアイデアを作る", **{"zh-CN": "把看似无关的东西强行连接起来产生创意", "zh-TW": "把看似無關的東西強行連接起來產生創意"}, vi="Ép buộc kết nối những thứ tưởng không liên quan để tạo ý tưởng", id="Memaksa menghubungkan hal-hal yang tampak tidak terkait untuk menciptakan ide"), 2),
+            (M(ko=_ko_o(0, 3), en="Assume no constraints and first imagine the most ideal state", ja="制約がないと仮定し、最も理想的な状態を先に想像する", **{"zh-CN": "假设没有任何限制，先想象最理想的状态", "zh-TW": "假設沒有任何限制，先想象最理想的狀態"}, vi="Giả sử không có ràng buộc và trước tiên hình dung trạng thái lý tưởng nhất", id="Mengasumsikan tanpa batasan dan membayangkan kondisi paling ideal terlebih dahulu"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(1),
+            en="When a problem arises, how do I approach it?",
+            ja="問題が起きたとき、私はどうアプローチする？",
+            **{"zh-CN": "出现问题时，我会如何着手？", "zh-TW": "出現問題時，我會如何著手？"},
+            vi="Khi có vấn đề phát sinh, tôi tiếp cận như thế nào?",
+            id="Ketika masalah muncul, bagaimana saya mendekatinya?",
+        ),
+        [
+            (M(ko=_ko_o(1, 0), en="First accurately identify the cause and systematically find solutions", ja="問題の原因を先に正確に把握し、体系的に解決策を探す", **{"zh-CN": "先准确找出问题原因，系统地寻找解决方案", "zh-TW": "先準確找出問題原因，系統地尋找解決方案"}, vi="Trước tiên xác định chính xác nguyên nhân và tìm giải pháp một cách có hệ thống", id="Mengidentifikasi penyebab dengan tepat terlebih dahulu dan mencari solusi secara sistematis"), 0),
+            (M(ko=_ko_o(1, 1), en="Reference how similar problems were solved elsewhere", ja="似た問題を他の場所でどう解決したか参考にする", **{"zh-CN": "参考其他地方如何解决类似问题", "zh-TW": "參考其他地方如何解決類似問題"}, vi="Tham khảo cách những nơi khác đã giải quyết vấn đề tương tự", id="Mereferensi bagaimana masalah serupa diselesaikan di tempat lain"), 1),
+            (M(ko=_ko_o(1, 2), en="Look at the problem from a different angle and redefine it", ja="問題を別の角度から見て、問題自体を再定義する", **{"zh-CN": "从不同角度看待问题，重新定义问题本身", "zh-TW": "從不同角度看待問題，重新定義問題本身"}, vi="Nhìn vấn đề từ góc độ khác và định nghĩa lại bản thân vấn đề", id="Melihat masalah dari sudut berbeda dan mendefinisikan ulang masalah itu sendiri"), 2),
+            (M(ko=_ko_o(1, 3), en="Start from a completely different direction and find methods no one thought of", ja="全く異なる方向から始め、誰も思いつかなかった方法を探す", **{"zh-CN": "从完全不同的方向出发，寻找没人想到的方法", "zh-TW": "從完全不同的方向出發，尋找沒人想到的方法"}, vi="Bắt đầu từ hướng hoàn toàn khác và tìm cách mà chưa ai nghĩ tới", id="Memulai dari arah yang sama sekali berbeda dan menemukan metode yang belum pernah terpikir"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(2),
+            en="In a meeting, I realize the existing approach is not working. I would…",
+            ja="会議中、既存のやり方がうまくいっていないと気づいた。私は？",
+            **{"zh-CN": "会议中，我发现现有方式行不通。我会？", "zh-TW": "會議中，我發現現有方式行不通。我會？"},
+            vi="Trong cuộc họp, tôi nhận ra cách làm hiện tại không hiệu quả. Tôi sẽ…",
+            id="Dalam rapat, saya sadar pendekatan yang ada tidak berhasil. Saya…",
+        ),
+        [
+            (M(ko=_ko_o(2, 0), en="Analyze what is wrong with the existing approach and find improvements", ja="既存のやり方の何が問題か分析し、改善点を見つける", **{"zh-CN": "分析现有方式的问题所在，找出改进点", "zh-TW": "分析現有方式的問題所在，找出改進點"}, vi="Phân tích điều gì sai với cách làm hiện tại và tìm điểm cải thiện", id="Menganalisis apa yang salah dengan pendekatan yang ada dan menemukan perbaikan"), 0),
+            (M(ko=_ko_o(2, 1), en="Research how other teams or industries solved similar situations", ja="他のチームや業界が似た状況をどう解決したか調べる", **{"zh-CN": "调研其他团队或行业如何解决类似情况", "zh-TW": "調研其他團隊或行業如何解決類似情況"}, vi="Tìm hiểu các nhóm hoặc ngành khác đã giải quyết tình huống tương tự như thế nào", id="Meneliti bagaimana tim atau industri lain menyelesaikan situasi serupa"), 1),
+            (M(ko=_ko_o(2, 2), en='Try a reverse approach: "What if we did the opposite of the existing way?"', ja="「既存のやり方の逆をしたらどうなる？」と逆発想でアプローチする", **{"zh-CN": "逆向思考：「如果做与现有方式相反的事会怎样？」", "zh-TW": "逆向思考：「如果做與現有方式相反的事會怎樣？」"}, vi='Thử cách ngược: "Nếu làm ngược lại với cách hiện tại thì sao?"', id='Mencoba pendekatan terbalik: "Bagaimana kalau kita lakukan kebalikan dari cara yang ada?"'), 2),
+            (M(ko=_ko_o(2, 3), en="Completely discard the approach and redesign from scratch, keeping only the purpose", ja="方式自体を完全に捨て、目的だけ残して最初から再設計する", **{"zh-CN": "彻底放弃方式本身，只保留目的，从头重新设计", "zh-TW": "徹底放棄方式本身，只保留目的，從頭重新設計"}, vi="Bỏ hoàn toàn cách làm và thiết kế lại từ đầu, chỉ giữ lại mục đích", id="Membuang pendekatan sepenuhnya dan merancang ulang dari awal, hanya menyisakan tujuannya"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(3),
+            en="When creating creative output, I…",
+            ja="創造的な成果物を作るとき、私は？",
+            **{"zh-CN": "创作创意成果时，我会？", "zh-TW": "創作創意成果時，我會？"},
+            vi="Khi tạo ra sản phẩm sáng tạo, tôi…",
+            id="Saat membuat hasil kreatif, saya…",
+        ),
+        [
+            (M(ko=_ko_o(3, 0), en="First set clear structure and criteria, then create the best within them", ja="明確な構造と基準を先に設定し、その中で最善を作り出す", **{"zh-CN": "先设定清晰的结构和标准，在其中做出最好的成果", "zh-TW": "先設定清晰的結構和標準，在其中做出最好的成果"}, vi="Trước tiên thiết lập cấu trúc và tiêu chí rõ ràng, rồi tạo ra điều tốt nhất trong đó", id="Menetapkan struktur dan kriteria yang jelas terlebih dahulu, lalu menciptakan yang terbaik di dalamnya"), 0),
+            (M(ko=_ko_o(3, 1), en="Ideas naturally connect as I look at various references", ja="多様なレファレンスを見ているうちに、自然とアイデアがつながる", **{"zh-CN": "看各种参考时，点子会自然连接起来", "zh-TW": "看各種參考時，點子會自然連接起來"}, vi="Ý tưởng tự nhiên kết nối khi tôi xem nhiều tài liệu tham khảo", id="Ide terhubung secara alami saat saya melihat berbagai referensi"), 1),
+            (M(ko=_ko_o(3, 2), en='New things emerge from combinations like "What if we combine these two?"', ja="「この2つを合わせたらどうなる？」という組み合わせから新しいものが生まれる", **{"zh-CN": "从「如果把这两个合在一起会怎样？」这类组合中产生新东西", "zh-TW": "從「如果把這兩個合在一起會怎樣？」這類組合中產生新東西"}, vi='Điều mới xuất hiện từ các kết hợp kiểu "Nếu ghép hai thứ này lại thì sao?"', id='Hal baru muncul dari kombinasi seperti "Bagaimana kalau kita gabungkan keduanya?"'), 2),
+            (M(ko=_ko_o(3, 3), en="An ideal finished picture forms in my mind first, then I work backward", ja="頭の中に完成した理想的な絵が先に浮かび、そこから逆算して作っていく", **{"zh-CN": "脑中先浮现完成后的理想画面，再倒推制作", "zh-TW": "腦中先浮現完成後的理想畫面，再倒推製作"}, vi="Bức tranh hoàn chỉnh lý tưởng hình thành trong đầu trước, rồi tôi làm ngược lại", id="Gambaran ideal yang sudah selesai terbentuk di pikiran dulu, lalu saya bekerja mundur"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(4),
+            en="When I am stuck on ideas, I…",
+            ja="アイデアが行き詰まったとき、私は？",
+            **{"zh-CN": "点子卡住时，我会？", "zh-TW": "點子卡住時，我會？"},
+            vi="Khi bí ý tưởng, tôi…",
+            id="Ketika ide macet, saya…",
+        ),
+        [
+            (M(ko=_ko_o(4, 0), en="Go back to the beginning and clearly organize goals and conditions", ja="最初に戻って目標と条件を明確に整理する", **{"zh-CN": "回到起点，明确整理目标和条件", "zh-TW": "回到起點，明確整理目標和條件"}, vi="Quay lại từ đầu và sắp xếp rõ ràng mục tiêu và điều kiện", id="Kembali ke awal dan merapikan tujuan serta kondisi dengan jelas"), 0),
+            (M(ko=_ko_o(4, 1), en="Find inspiration from completely different fields (music, nature, architecture, etc.)", ja="全く異なる分野（音楽・自然・建築など）からインスピレーションを見つける", **{"zh-CN": "从完全不同的领域（音乐、自然、建筑等）寻找灵感", "zh-TW": "從完全不同的領域（音樂、自然、建築等）尋找靈感"}, vi="Tìm cảm hứng từ các lĩnh vực hoàn toàn khác (âm nhạc, thiên nhiên, kiến trúc…)", id="Mencari inspirasi dari bidang yang sama sekali berbeda (musik, alam, arsitektur, dll.)"), 1),
+            (M(ko=_ko_o(4, 2), en="Use methods that forcibly connect random words or images to the topic", ja="無作為な単語や画像をテーマと無理やり結びつける方法を使う", **{"zh-CN": "用随机词语或图像与主题强行连接的方法", "zh-TW": "用隨機詞語或圖像與主題強行連接的方法"}, vi="Dùng cách ép buộc kết nối từ hoặc hình ảnh ngẫu nhiên với chủ đề", id="Menggunakan metode yang memaksa menghubungkan kata atau gambar acak ke topik"), 2),
+            (M(ko=_ko_o(4, 3), en="Rapidly pour out 30+ ideas with no constraints, then pick one", ja="制約なしで30個以上のアイデアを素早く出し、そこから選ぶ", **{"zh-CN": "不受限制地快速列出30个以上点子，再从中挑选", "zh-TW": "不受限制地快速列出30個以上點子，再從中挑選"}, vi="Đổ ra hơn 30 ý tưởng nhanh chóng không ràng buộc, rồi chọn một cái", id="Mengeluarkan 30+ ide dengan cepat tanpa batasan, lalu memilih satu"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(5),
+            en="When does my creativity shine most?",
+            ja="私の創造性が最もよく発揮される瞬間は？",
+            **{"zh-CN": "我的创造力何时最能发挥？", "zh-TW": "我的創造力何時最能發揮？"},
+            vi="Khi nào sự sáng tạo của tôi tỏa sáng nhất?",
+            id="Kapan kreativitas saya paling bersinar?",
+        ),
+        [
+            (M(ko=_ko_o(5, 0), en="When there are clear constraints and conditions — I work better with a framework", ja="明確な制約と条件があるとき。枠組みがあるほどうまくいく", **{"zh-CN": "有明确的限制和条件时——有框架反而做得更好", "zh-TW": "有明確的限制和條件時——有框架反而做得更好"}, vi="Khi có ràng buộc và điều kiện rõ ràng — có khung thì tôi làm tốt hơn", id="Saat ada batasan dan kondisi yang jelas — saya lebih baik dengan kerangka"), 0),
+            (M(ko=_ko_o(5, 1), en="When I have received diverse stimuli and lots of input", ja="多様な刺激を受け、インプットが多くなったとき", **{"zh-CN": "接收到多样刺激、输入丰富时", "zh-TW": "接收到多樣刺激、輸入豐富時"}, vi="Khi nhận được nhiều kích thích đa dạng và input phong phú", id="Saat menerima beragam rangsangan dan input yang banyak"), 1),
+            (M(ko=_ko_o(5, 2), en="The moment two completely different things connect", ja="全く異なる2つのものがつながる瞬間", **{"zh-CN": "两件完全不同的事物连接起来的瞬间", "zh-TW": "兩件完全不同的事物連接起來的瞬間"}, vi="Khoảnh khắc hai thứ hoàn toàn khác nhau kết nối", id="Saat dua hal yang sama sekali berbeda terhubung"), 2),
+            (M(ko=_ko_o(5, 3), en="When I discover an area no one has touched", ja="誰も手をつけていない領域を発見したとき", **{"zh-CN": "发现没人涉足的领域时", "zh-TW": "發現沒人涉足的領域時"}, vi="Khi phát hiện lĩnh vực chưa ai chạm tới", id="Saat menemukan area yang belum disentuh siapa pun"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(6),
+            en="In design and planning processes, I…",
+            ja="デザイン・企画プロセスで、私は？",
+            **{"zh-CN": "在设计·策划流程中，我会？", "zh-TW": "在設計·策劃流程中，我會？"},
+            vi="Trong quy trình thiết kế và lập kế hoạch, tôi…",
+            id="Dalam proses desain dan perencanaan, saya…",
+        ),
+        [
+            (M(ko=_ko_o(6, 0), en="Systematically follow research → analysis → planning → execution", ja="調査→分析→企画→実行の段階を体系的に踏む", **{"zh-CN": "系统地遵循调研→分析→策划→执行", "zh-TW": "系統地遵循調研→分析→策劃→執行"}, vi="Tuân theo có hệ thống: nghiên cứu → phân tích → lập kế hoạch → thực thi", id="Mengikuti secara sistematis: riset → analisis → perencanaan → eksekusi"), 0),
+            (M(ko=_ko_o(6, 1), en="Direction emerges while exploring various references and trends", ja="多様なレファレンスとトレンドを探索する過程で方向が定まる", **{"zh-CN": "在探索各种参考和趋势的过程中确定方向", "zh-TW": "在探索各種參考和趨勢的過程中確定方向"}, vi="Hướng đi hình thành khi khám phá nhiều tài liệu tham khảo và xu hướng", id="Arah muncul saat mengeksplorasi berbagai referensi dan tren"), 1),
+            (M(ko=_ko_o(6, 2), en="Quickly sketch diverse ideas and develop them through combination", ja="多様なアイデアを素早くスケッチし、組み合わせながら発展させる", **{"zh-CN": "快速草拟多种点子，通过组合不断迭代", "zh-TW": "快速草擬多種點子，透過組合不斷迭代"}, vi="Phác thảo nhanh nhiều ý tưởng và phát triển chúng qua kết hợp", id="Mengsketsa beragam ide dengan cepat dan mengembangkannya lewat kombinasi"), 2),
+            (M(ko=_ko_o(6, 3), en="I have the final result picture first and design the process backward", ja="最終成果物の絵が先にあり、そこから逆算してプロセスを設計する", **{"zh-CN": "先有最终成果的画面，再倒推设计流程", "zh-TW": "先有最終成果的畫面，再倒推設計流程"}, vi="Có hình ảnh kết quả cuối trước và thiết kế quy trình theo hướng ngược lại", id="Gambaran hasil akhir ada dulu dan saya merancang proses secara mundur"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(7),
+            en='When someone says "That is impossible," I…',
+            ja="誰かが「それは不可能だ」と言ったとき、私は？",
+            **{"zh-CN": "当有人说「那不可能」时，我会？", "zh-TW": "當有人說「那不可能」時，我會？"},
+            vi='Khi ai đó nói "Điều đó không thể", tôi…',
+            id='Ketika seseorang berkata "Itu mustahil," saya…',
+        ),
+        [
+            (M(ko=_ko_o(7, 0), en="Understand why it is impossible and see if those constraints can be resolved", ja="なぜ不可能なのか理由を把握し、その制約を解決できるか見る", **{"zh-CN": "弄清为何不可能，看能否解决那些限制", "zh-TW": "弄清為何不可能，看能否解決那些限制"}, vi="Hiểu vì sao không thể và xem có thể giải quyết các ràng buộc đó không", id="Memahami mengapa mustahil dan melihat apakah batasan itu bisa diatasi"), 0),
+            (M(ko=_ko_o(7, 1), en="Look for cases that seemed impossible but were achieved", ja="不可能に見えたが実現した事例を探す", **{"zh-CN": "寻找看似不可能却做到了的案例", "zh-TW": "尋找看似不可能卻做到了的案例"}, vi="Tìm các trường hợp tưởng không thể nhưng đã làm được", id="Mencari kasus yang tampak mustahil tapi berhasil dicapai"), 1),
+            (M(ko=_ko_o(7, 2), en='Try reverse thinking: "What would the opposite of impossible be?"', ja="「不可能の反対なら？」という逆の発想でアプローチする", **{"zh-CN": "逆向思考：「不可能的反面是什么？」", "zh-TW": "逆向思考：「不可能的反面是什麼？」"}, vi='Thử suy nghĩ ngược: "Phản diện của không thể là gì?"', id='Mencoba berpikir terbalik: "Kebalikan dari mustahil itu apa?"'), 2),
+            (M(ko=_ko_o(7, 3), en="Erase the premise of impossibility and first imagine a possible world", ja="不可能という前提自体を消し、可能な世界を先に想像する", **{"zh-CN": "抹掉「不可能」这个前提，先想象一个可能的世界", "zh-TW": "抹掉「不可能」這個前提，先想象一個可能的世界"}, vi="Xóa bỏ tiền đề bất khả thi và trước tiên hình dung một thế giới có thể", id="Menghapus premis mustahil dan membayangkan dunia yang mungkin terlebih dahulu"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(8),
+            en="When do my ideas get good reactions from others?",
+            ja="私のアイデアが周囲の反応を得る瞬間は？",
+            **{"zh-CN": "我的点子何时获得周围人的好评？", "zh-TW": "我的點子何時獲得周圍人的好評？"},
+            vi="Khi nào ý tưởng của tôi nhận được phản ứng tốt từ mọi người?",
+            id="Kapan ide saya mendapat respons positif dari orang lain?",
+        ),
+        [
+            (M(ko=_ko_o(8, 0), en="When evaluated as realistically feasible and practical", ja="現実的に実現可能で実用的だと評価されるとき", **{"zh-CN": "被评价为现实可行且实用时", "zh-TW": "被評價為現實可行且實用時"}, vi="Khi được đánh giá là khả thi và thực tế", id="Ketika dinilai realistis, layak dan praktis"), 0),
+            (M(ko=_ko_o(8, 1), en='When people ask "Where did you get inspiration for this?"', ja="「これ、どこからインスピレーションを得たの？」という反応が出るとき", **{"zh-CN": "有人问「这个灵感从哪里来的？」时", "zh-TW": "有人問「這個靈感從哪裡來的？」時"}, vi='Khi mọi người hỏi "Bạn lấy cảm hứng từ đâu vậy?"', id='Ketika orang bertanya "Dari mana inspirasinya?"'), 1),
+            (M(ko=_ko_o(8, 2), en='When people ask "How did you think to connect these two things?"', ja="「この2つをどうやって結びつける発想をしたの？」という反応が出るとき", **{"zh-CN": "有人问「你怎么想到把这两个连接起来的？」时", "zh-TW": "有人問「你怎麼想到把這兩個連接起來的？」時"}, vi='Khi mọi người hỏi "Sao bạn nghĩ ra cách kết nối hai thứ này?"', id='Ketika orang bertanya "Bagaimana kamu bisa menghubungkan kedua hal ini?"'), 2),
+            (M(ko=_ko_o(8, 3), en='When people say "No one had thought about it from this perspective"', ja="「こんな視点で考えた人がいなかった」と言われるとき", **{"zh-CN": "有人说「还没人从这个角度想过」时", "zh-TW": "有人說「還沒人從這個角度想過」時"}, vi='Khi mọi người nói "Chưa ai nghĩ theo góc nhìn này"', id='Ketika orang berkata "Belum ada yang memikirkannya dari sudut pandang ini"'), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(9),
+            en="When brainstorming, I…",
+            ja="ブレインストーミングをするとき、私は？",
+            **{"zh-CN": "头脑风暴时，我会？", "zh-TW": "腦力激盪時，我會？"},
+            vi="Khi brainstorm, tôi…",
+            id="Saat brainstorming, saya…",
+        ),
+        [
+            (M(ko=_ko_o(9, 0), en="Narrow down by concretely reviewing feasible ideas", ja="実現可能なアイデアを具体的に検討しながら絞り込む", **{"zh-CN": "具体审视可行的点子，逐步收窄", "zh-TW": "具體審視可行的點子，逐步收窄"}, vi="Thu hẹp bằng cách xem xét cụ thể các ý tưởng khả thi", id="Menyempitkan dengan meninjau ide yang layak secara konkret"), 0),
+            (M(ko=_ko_o(9, 1), en="Expand freely by connecting things from various fields", ja="多様な分野で見たものを自由につなげながら広げる", **{"zh-CN": "自由连接各领域的所见，不断扩展", "zh-TW": "自由連接各領域的所見，不斷擴展"}, vi="Mở rộng tự do bằng cách kết nối những gì thấy ở nhiều lĩnh vực", id="Memperluas dengan bebas menghubungkan hal-hal dari berbagai bidang"), 1),
+            (M(ko=_ko_o(9, 2), en="Keep combining and transforming ideas to create new ones", ja="アイデアを組み合わせ変形しながら新しいものを作っていく", **{"zh-CN": "不断组合、变形点子，创造新东西", "zh-TW": "不斷組合、變形點子，創造新東西"}, vi="Liên tục kết hợp và biến đổi ý tưởng để tạo ra điều mới", id="Terus menggabungkan dan mengubah ide untuk menciptakan yang baru"), 2),
+            (M(ko=_ko_o(9, 3), en="Pour out as many ideas as possible explosively without judgment", ja="判断なしに最大限多くのアイデアを爆発的に出す", **{"zh-CN": "不做评判，尽可能多地爆发式输出点子", "zh-TW": "不做評判，盡可能多地爆發式輸出點子"}, vi="Đổ ra càng nhiều ý tưởng càng tốt mà không phán xét", id="Mengeluarkan sebanyak mungkin ide secara eksplosif tanpa penilaian"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(10),
+            en="I am moved by creative work when…",
+            ja="創造的な成果物を見て感動する瞬間は？",
+            **{"zh-CN": "看到创意作品时，何时会打动我？", "zh-TW": "看到創意作品時，何時會打動我？"},
+            vi="Tôi cảm động trước tác phẩm sáng tạo khi…",
+            id="Saya terkesan oleh karya kreatif ketika…",
+        ),
+        [
+            (M(ko=_ko_o(10, 0), en="I see an elegant, concise solution to a complex problem", ja="複雑な問題を優雅で簡潔に解決した方式を見たとき", **{"zh-CN": "看到复杂问题被优雅简洁地解决时", "zh-TW": "看到複雜問題被優雅簡潔地解決時"}, vi="Tôi thấy cách giải quyết phức tạp một cách tinh tế và gọn gàng", id="Saya melihat solusi elegan dan ringkas untuk masalah kompleks"), 0),
+            (M(ko=_ko_o(10, 1), en="I see concepts from completely different fields applied here", ja="全く異なる分野の概念がこの分野に適用されたものを見たとき", **{"zh-CN": "看到完全不同领域的概念被应用到这里时", "zh-TW": "看到完全不同領域的概念被應用到這裡時"}, vi="Tôi thấy khái niệm từ lĩnh vực hoàn toàn khác được áp dụng ở đây", id="Saya melihat konsep dari bidang yang sama sekali berbeda diterapkan di sini"), 1),
+            (M(ko=_ko_o(10, 2), en="I see two opposing elements perfectly combined into one", ja="2つの相反する要素が1つに完璧に結合されたものを見たとき", **{"zh-CN": "看到两种对立的元素被完美融合为一体时", "zh-TW": "看到兩種對立的元素被完美融合為一體時"}, vi="Tôi thấy hai yếu tố đố lập được kết hợp hoàn hảo thành một", id="Saya melihat dua elemen yang bertentangan digabungkan sempurna menjadi satu"), 2),
+            (M(ko=_ko_o(10, 3), en="I see someone create a completely new category no one thought of", ja="誰も思いつかなかった全く新しいカテゴリーを作ったものを見たとき", **{"zh-CN": "看到有人创造出没人想到的全新品类时", "zh-TW": "看到有人創造出沒人想到的全新品類時"}, vi="Tôi thấy ai đó tạo ra một danh mục hoàn toàn mới mà chưa ai nghĩ tới", id="Saya melihat seseorang menciptakan kategori baru yang belum pernah terpikir"), 3),
+        ],
+    ),
+    q(
+        M(
+            ko=_ko_q(11),
+            en="My honest thoughts about my creativity…",
+            ja="私の創造性についての正直な考えは？",
+            **{"zh-CN": "关于我的创造力，我的真实想法是？", "zh-TW": "關於我的創造力，我的真實想法是？"},
+            vi="Suy nghĩ thật lòng của tôi về sự sáng tạo…",
+            id="Pikiran jujur saya tentang kreativitas…",
+        ),
+        [
+            (M(ko=_ko_o(11, 0), en="My strength shows in making ideas feasible, not just having ideas", ja="アイデアより、それを実現可能にする過程で強みが現れる", **{"zh-CN": "比起点子本身，让点子可落地的过程更能展现我的优势", "zh-TW": "比起點子本身，讓點子可落地的過程更能展現我的優勢"}, vi="Điểm mạnh của tôi nằm ở việc biến ý tưởng thành khả thi, không chỉ nghĩ ra ý tưởng", id="Kekuatan saya terlihat dalam membuat ide layak, bukan sekadar punya ide"), 0),
+            (M(ko=_ko_o(11, 1), en="I know my ideas get richer the more I see and experience", ja="多く見て多く経験するほどアイデアが豊かになると分かっている", **{"zh-CN": "我知道看得越多、经历越多，点子就越丰富", "zh-TW": "我知道看得越多、經歷越多，點子就越豐富"}, vi="Tôi biết càng xem nhiều và trải nghiệm nhiều thì ý tưởng càng phong phú", id="Saya tahu semakin banyak melihat dan berpengalaman, ide semakin kaya"), 1),
+            (M(ko=_ko_o(11, 2), en="Connecting seemingly unrelated things comes naturally to me", ja="全く関係なさそうなものをつなげるのが自然にうまくいく", **{"zh-CN": "把看似无关的东西连接起来，对我来说很自然", "zh-TW": "把看似無關的東西連接起來，對我來說很自然"}, vi="Kết nối những thứ tưởng không liên quan đến với tôi rất tự nhiên", id="Menghubungkan hal-hal yang tampak tidak terkait terasa natural bagi saya"), 2),
+            (M(ko=_ko_o(11, 3), en="I get the most energy from imagining things that do not exist yet", ja="まだ存在しないものを想像することから最も大きなエネルギーが出る", **{"zh-CN": "想象尚不存在的事物，最能给我能量", "zh-TW": "想象尚不存在的事物，最能給我能量"}, vi="Tôi có nhiều năng lượng nhất khi tưởng tượng những thứ chưa tồn tại", id="Energi terbesar saya datang dari membayangkan hal-hal yang belum ada"), 3),
+        ],
+    ),
+]
+
+RESULTS = [
+    r(
+        "Type1", "🔧",
+        title=M(ko=_ko_r(0, "title"), en="Making the Best Within Reality, Practical Creative Type", ja="現実の中で最善を作る、実用創造型", **{"zh-CN": "在现实中做出最优解，实用创意型", "zh-TW": "在現實中做出最優解，實用創意型"}, vi="Tạo ra điều tốt nhất trong thực tế, kiểu sáng tạo thực dụng", id="Menciptakan yang terbaik dalam kenyataan, tipe kreatif praktis"),
+        shortDescription=M(ko=_ko_r(0, "shortDescription"), en="Your creativity shines brightest when there are constraints.", ja="あなたの創造性は制約があるときこそ輝きます。", **{"zh-CN": "你的创造力在有约束时反而最闪耀。", "zh-TW": "你的創造力在有約束時反而最閃耀。"}, vi="Sự sáng tạo của bạn tỏa sáng nhất khi có ràng buộc.", id="Kreativitasmu paling bersinar saat ada batasan."),
+        description=M(ko=_ko_r(0, "description"), en="Rather than ideas for their own sake, you excel at creating solutions that actually work. It is the ability to find the most precise answer within clear goals and constraints. You produce results that are both realistic and effective.", ja="アイデアのためのアイデアより、実際に機能するソリューションを作ることに強みがあります。明確な目標と制約の中で最も精密な解決策を見つける能力です。現実的でありながら効果的な成果物を生み出します。", **{"zh-CN": "比起为创意而创意，你更擅长打造真正可行的解决方案。这是在明确目标与限制中找到最精准答案的能力，能产出既现实又有效的成果。", "zh-TW": "比起為創意而創意，你更擅長打造真正可行的解決方案。這是在明確目標與限制中找到最精準答案的能力，能產出既現實又有效的成果。"}, vi="Thay vì ý tưởng vì ý tưởng, bạn giỏi tạo giải pháp thực sự hoạt động. Đó là khả năng tìm câu trả lời chính xác nhất trong mục tiêu và ràng buộc rõ ràng, tạo ra kết quả vừa thực tế vừa hiệu quả.", id="Alih-alih ide demi ide, kamu unggul menciptakan solusi yang benar-benar berfungsi. Ini kemampuan menemukan jawaban paling presisi dalam tujuan dan batasan yang jelas, menghasilkan output realistis sekaligus efektif."),
+        creativityType=M(ko=_ko_r(0, "creativityType"), en="Practical Creative Type 🔧", ja="実用創造型 🔧", **{"zh-CN": "实用创意型 🔧", "zh-TW": "實用創意型 🔧"}, vi="Kiểu sáng tạo thực dụng 🔧", id="Tipe kreatif praktis 🔧"),
+        creativityKeywords=M(ko=_ko_r(0, "creativityKeywords"), en="Problem solving · Feasibility · Precision · Optimization", ja="問題解決・実現可能性・精密性・最適化", **{"zh-CN": "问题解决·可行性·精准性·优化", "zh-TW": "問題解決·可行性·精準性·優化"}, vi="Giải quyết vấn đề · Khả thi · Độ chính xác · Tối ưu hóa", id="Penyelesaian masalah · Kelayakan · Presisi · Optimasi"),
+        strongField=M(ko=_ko_r(0, "strongField"), en="UX design · Service planning · Process improvement · Product development", ja="UX設計・サービス企画・プロセス改善・製品開発", **{"zh-CN": "UX设计·服务策划·流程改进·产品开发", "zh-TW": "UX設計·服務策劃·流程改進·產品開發"}, vi="Thiết kế UX · Lập kế hoạch dịch vụ · Cải thiện quy trình · Phát triển sản phẩm", id="Desain UX · Perencanaan layanan · Perbaikan proses · Pengembangan produk"),
+        strength=M(ko=_ko_r(0, "strength"), en="The ability to turn ideas into reality. Someone who makes creative ideas actually work", ja="アイデアを現実に変える能力。創造的なアイデアを実際に機能させる人", **{"zh-CN": "把点子变成现实的能力——让创意真正落地的人", "zh-TW": "把點子變成現實的能力——讓創意真正落地的人"}, vi="Khả năng biến ý tưởng thành hiện thực — người khiến ý tưởng sáng tạo thực sự hoạt động", id="Kemampuan mengubah ide menjadi kenyataan — orang yang membuat ide kreatif benar-benar berjalan"),
+        weakness=M(ko=_ko_r(0, "weakness"), en="Ideas may not flow as well in completely unconstrained, free situations", ja="制約のない完全自由な状況では、逆にアイデアが出にくいことがある", **{"zh-CN": "在完全没有限制的自由环境中，反而可能想不出点子", "zh-TW": "在完全沒有限制的自由環境中，反而可能想不出點子"}, vi="Trong môi trường tự do hoàn toàn không ràng buộc, ý tưởng có thể khó nảy ra", id="Dalam situasi bebas tanpa batasan, ide justru bisa sulit muncul"),
+        maximizeMethod=M(ko=_ko_r(0, "maximizeMethod"), en='The more specifically you define the problem, the more creative the solution. Reframe questions like "How can we do Z as well as possible within constraint Y for goal X?"', ja="問題をより具体的に定義するほど、より創造的な解決策が出る。「XをYという制約の中でZだけうまくするにはどうすれば？」の形で質問を変える", **{"zh-CN": "问题定义越具体，解法越有创意。把问题改成「如何在Y限制下，把X做到Z程度？」", "zh-TW": "問題定義越具體，解法越有創意。把問題改成「如何在Y限制下，把X做到Z程度？」"}, vi='Càng định nghĩa vấn đề cụ thể, giải pháp càng sáng tạo. Đổi câu hỏi thành "Làm sao đạt Z tốt nhất cho X trong ràng buộc Y?"', id='Semakin spesifik masalah didefinisikan, solusi semakin kreatif. Ubah pertanyaan menjadi "Bagaimana melakukan Z sebaik mungkin untuk X dalam batasan Y?"'),
+        designerTip=M(ko=_ko_r(0, "designerTip"), en="Best suited for precisely analyzing briefs and turning constraints into opportunities", ja="ブリーフを精密に分析し、制約を機会に変える役割が最も合う", **{"zh-CN": "最擅长精准分析brief，把限制转化为机会", "zh-TW": "最擅長精準分析brief，把限制轉化為機會"}, vi="Phù hợp nhất với vai trò phân tích brief chính xác và biến ràng buộc thành cơ hội", id="Paling cocok menganalisis brief secara presisi dan mengubah batasan menjadi peluang"),
+        goodMatch=M(ko=_ko_r(0, "goodMatch"), en="Strongest planning team when paired with divergent types who pour out ideas explosively", ja="アイデアを爆発的に出す発散型と組み合わせると最強の企画チーム", **{"zh-CN": "与爆发式发散型组合，是最强策划团队", "zh-TW": "與爆發式發散型組合，是最強策劃團隊"}, vi="Kết hợp với kiểu phân tán bùng nổ ý tưởng tạo thành đội lập kế hoạch mạnh nhất", id="Tim perencanaan terkuat jika dipadukan dengan tipe divergen yang mengeluarkan ide secara eksplosif"),
+        shareLine=M(ko=_ko_r(0, "shareLine"), en="My creativity type: Practical Creative 🔧 They say my creativity shines with constraints... admit it, execution beats ideas → Planners and designers, find your creativity type", ja="私の創造性タイプ：実用創造型 🔧 制約があるほど創造性が輝くタイプらしい…アイデアより実現が強みって認めて → 企画者・デザイナーは自分の創造性タイプをチェック", **{"zh-CN": "我的创意类型：实用创意型 🔧 说是有约束时创意反而闪耀…承认吧，实现力比点子更强 → 策划·设计师来测测你的创意类型", "zh-TW": "我的創意類型：實用創意型 🔧 說是有約束時創意反而閃耀…承認吧，實現力比點子更強 → 策劃·設計師來測測你的創意類型"}, vi="Kiểu sáng tạo của tôi: Thực dụng 🔧 Bảo là có ràng buộc thì sáng tạo càng sáng… thừa nhận đi, thực thi mạnh hơn ý tưởng → Planner/designer thử xem kiểu của bạn", id="Tipe kreativitasku: Praktis 🔧 Katanya kreativitasku shine saat ada batasan… akui deh, eksekusi lebih kuat dari ide → Planner/designer, cek tipe kreativitasmu"),
+    ),
+    r(
+        "Type2", "🌐",
+        title=M(ko=_ko_r(1, "title"), en="Absorbing the World Widely, Associative Absorption Type", ja="世界を広く吸収する、連想吸収型", **{"zh-CN": "广泛吸收世界，联想吸收型", "zh-TW": "廣泛吸收世界，聯想吸收型"}, vi="Hấp thụ thế giới rộng rãi, kiểu hấp thụ liên tưởng", id="Menyerap dunia secara luas, tipe absorpsi asosiatif"),
+        shortDescription=M(ko=_ko_r(1, "shortDescription"), en="Your creativity comes from how much you see and experience.", ja="あなたの創造性は、どれだけ見て経験したかから生まれます。", **{"zh-CN": "你的创造力来自你看过、经历过多少。", "zh-TW": "你的創造力來自你看過、經歷過多少。"}, vi="Sự sáng tạo của bạn đến từ bạn đã xem và trải nghiệm bao nhiêu.", id="Kreativitasmu berasal dari seberapa banyak kamu melihat dan berpengalaman."),
+        description=M(ko=_ko_r(1, "description"), en="Knowledge, experience, and references from diverse fields naturally connect in your mind to spark ideas. Sensitive to trends, the more input you have, the higher the quality of your ideas. Broad interests are your most powerful creative resource.", ja="多様な分野の知識・経験・レファレンスが頭の中で自然につながり、アイデアが浮かぶタイプです。トレンドに敏感で、インプットが多いほどアイデアの質が高まります。広い関心が最も強力な創造的資源です。", **{"zh-CN": "各领域知识、经验与参考在脑中自然连接，激发点子。对趋势敏感，输入越多，点子质量越高。广泛的兴趣是最强大的创意资源。", "zh-TW": "各領域知識、經驗與參考在腦中自然連接，激發點子。對趨勢敏感，輸入越多，點子品質越高。廣泛的興趣是最強大的創意資源。"}, vi="Kiến thức, trải nghiệm và tham chiếu từ nhiều lĩnh vực tự nhiên kết nối trong đầu để nảy ra ý tưởng. Nhạy với xu hướng, càng nhiều input thì chất lượng ý tưởng càng cao. Sở thích rộng là nguồn sáng tạo mạnh nhất.", id="Pengetahuan, pengalaman, dan referensi dari berbagai bidang terhubung natural di pikiran untuk memicu ide. Sensitif terhadap tren, semakin banyak input, kualitas ide semakin tinggi. Minat luas adalah sumber kreatif paling kuat."),
+        creativityType=M(ko=_ko_r(1, "creativityType"), en="Associative Absorption Type 🌐", ja="連想吸収型 🌐", **{"zh-CN": "联想吸收型 🌐", "zh-TW": "聯想吸收型 🌐"}, vi="Kiểu hấp thụ liên tưởng 🌐", id="Tipe absorpsi asosiatif 🌐"),
+        creativityKeywords=M(ko=_ko_r(1, "creativityKeywords"), en="Connection · Trends · References · Broad input", ja="連結・トレンド・レファレンス・広いインプット", **{"zh-CN": "连接·趋势·参考·广泛输入", "zh-TW": "連接·趨勢·參考·廣泛輸入"}, vi="Kết nối · Xu hướng · Tham chiếu · Input rộng", id="Koneksi · Tren · Referensi · Input luas"),
+        strongField=M(ko=_ko_r(1, "strongField"), en="Content planning · Marketing · Branding · Trend analysis", ja="コンテンツ企画・マーケティング・ブランディング・トレンド分析", **{"zh-CN": "内容策划·营销·品牌·趋势分析", "zh-TW": "內容策劃·行銷·品牌·趨勢分析"}, vi="Lập kế hoạch nội dung · Marketing · Branding · Phân tích xu hướng", id="Perencanaan konten · Marketing · Branding · Analisis tren"),
+        strength=M(ko=_ko_r(1, "strength"), en="Pulling the most fitting references from broad input. Excellent sense of the times", ja="幅広いインプットから最も適切なレファレンスを引き出す能力。時代感覚に優れる", **{"zh-CN": "从广泛输入中抓取最合适的参考，时代感出色", "zh-TW": "從廣泛輸入中抓取最合適的參考，時代感出色"}, vi="Kéo được tài liệu tham khảo phù hợp nhất từ input rộng. Cảm nhận thời đại xuất sắc", id="Mengambil referensi paling tepat dari input luas. Sense zaman sangat baik"),
+        weakness=M(ko=_ko_r(1, "weakness"), en="Ideas may not flow well when input is lacking or in unfamiliar areas", ja="インプットが不足したり、馴染みのない領域ではアイデアが出にくいことがある", **{"zh-CN": "输入不足或陌生领域时，可能想不出点子", "zh-TW": "輸入不足或陌生領域時，可能想不出點子"}, vi="Khi thiếu input hoặc ở lĩnh vực xa lạ, ý tưởng có thể khó nảy ra", id="Saat input kurang atau di area asing, ide bisa sulit muncul"),
+        maximizeMethod=M(ko=_ko_r(1, "maximizeMethod"), en="Intentionally explore diverse fields in daily life. Actively collect things outside your own domain", ja="日常で意図的に多様な分野を探索する。特に自分の分野の外側のものを積極的に集める", **{"zh-CN": "日常有意识地探索不同领域，尤其积极收集本领域之外的内容", "zh-TW": "日常有意識地探索不同領域，尤其積極收集本領域之外的內容"}, vi="Chủ động khám phá nhiều lĩnh vực trong cuộc sống hàng ngày, đặc biệt thu thập thứ ngoài chuyên môn của bạn", id="Sengaja eksplorasi beragam bidang sehari-hari, terutama mengumpulkan hal di luar domainmu"),
+        designerTip=M(ko=_ko_r(1, "designerTip"), en="Strongest in reference curation, trend reports, and moodboard design", ja="レファレンスキュレーション・トレンドレポート・ムードボード設計で最も強みを発揮", **{"zh-CN": "在参考策展·趋势报告·情绪板设计中最能发挥优势", "zh-TW": "在參考策展·趨勢報告·情緒板設計中最能發揮優勢"}, vi="Mạnh nhất ở tuyển chọn tham chiếu, báo cáo xu hướng và thiết kế moodboard", id="Paling kuat dalam kurasi referensi, laporan tren, dan desain moodboard"),
+        goodMatch=M(ko=_ko_r(1, "goodMatch"), en="Strongest when paired with practical types who make ideas real", ja="アイデアを現実化する実用型と組み合わせると最強", **{"zh-CN": "与把点子落地的实用型组合最强", "zh-TW": "與把點子落地的實用型組合最強"}, vi="Mạnh nhất khi kết hợp với kiểu thực dụng biến ý tưởng thành hiện thực", id="Paling kuat jika dipadukan dengan tipe praktis yang mewujudkan ide"),
+        shareLine=M(ko=_ko_r(1, "shareLine"), en="My creativity type: Associative Absorption 🌐 They say the more I see, the richer my ideas... collecting references is my hobby, right? lol → What's your creativity type?", ja="私の創造性タイプ：連想吸収型 🌐 見れば見るほどアイデアが豊かになるタイプらしい…レファレンスをよく見るのが趣味って本当 w → あなたはどんな創造性タイプ？", **{"zh-CN": "我的创意类型：联想吸收型 🌐 说是看得越多点子越丰富…爱收集参考没错吧 哈哈 → 你是什么创意类型？", "zh-TW": "我的創意類型：聯想吸收型 🌐 說是看得越多點子越豐富…愛收集參考沒錯吧 哈哈 → 你是什麼創意類型？"}, vi="Kiểu sáng tạo của tôi: Hấp thụ liên tưởng 🌐 Bảo càng xem nhiều càng nhiều ý tưởng… sưu tầm reference là sở thích đúng không haha → Bạn thuộc kiểu nào?", id="Tipe kreativitasku: Absorpsi asosiatif 🌐 Katanya makin banyak lihat makin kaya ide… suka kumpulin referensi kan wkwk → Kamu tipe apa?"),
+    ),
+    r(
+        "Type3", "🔀",
+        title=M(ko=_ko_r(2, "title"), en="Connecting the Unrelated, Crossover Connection Type", ja="全く異なるものをつなぐ、クロスオーバー連結型", **{"zh-CN": "连接完全不同的事物，跨界连接型", "zh-TW": "連接完全不同的事物，跨界連接型"}, vi="Kết nối những thứ hoàn toàn khác nhau, kiểu kết nối crossover", id="Menghubungkan hal yang sama sekali berbeda, tipe koneksi crossover"),
+        shortDescription=M(ko=_ko_r(2, "shortDescription"), en="Your strongest creativity starts with the question 'What if we combine these two?'", ja="あなたの最も強い創造性は「この2つを合わせたら？」という問いから始まります。", **{"zh-CN": "你最强的创造力从「如果把这两个合在一起会怎样？」这个问题开始。", "zh-TW": "你最強的創造力從「如果把這兩個合在一起會怎樣？」這個問題開始。"}, vi="Sự sáng tạo mạnh nhất của bạn bắt đầu từ câu hỏi \"Nếu ghép hai thứ này lại thì sao?\"", id="Kreativitas terkuatmu dimulai dari pertanyaan \"Bagaimana kalau kita gabungkan keduanya?\""),
+        description=M(ko=_ko_r(2, "description"), en="You connect concepts, methods, and aesthetics from completely different domains to create something new. You find fresh perspectives even in red oceans and produce ideas that blur category boundaries.", ja="全く異なる領域の概念・方式・美学をつなげ、これまでなかった新しいものを生み出すタイプです。レッドオーシャンでも新しい視点を見つけ、既存カテゴリーの境界を曖昧にするアイデアを出します。", **{"zh-CN": "连接完全不同领域的概念、方式与美学，创造前所未有的新东西。在红海中也能找到新视角，产出模糊品类边界的创意。", "zh-TW": "連接完全不同領域的概念、方式與美學，創造前所未有的新東西。在紅海中也能找到新視角，產出模糊品類邊界的創意。"}, vi="Kết nối khái niệm, phương pháp và thẩm mỹ từ các lĩnh vực hoàn toàn khác để tạo điều mới. Tìm góc nhìn mới ngay cả trong red ocean và tạo ý tưởng làm mờ ranh giới danh mục.", id="Menghubungkan konsep, metode, dan estetika dari domain berbeda untuk menciptakan sesuatu yang baru. Menemukan perspektif segar bahkan di red ocean dan menghasilkan ide yang memblur batas kategori."),
+        creativityType=M(ko=_ko_r(2, "creativityType"), en="Crossover Connection Type 🔀", ja="クロスオーバー連結型 🔀", **{"zh-CN": "跨界连接型 🔀", "zh-TW": "跨界連接型 🔀"}, vi="Kiểu kết nối crossover 🔀", id="Tipe koneksi crossover 🔀"),
+        creativityKeywords=M(ko=_ko_r(2, "creativityKeywords"), en="Combination · Connection · Boundary crossing · Fusion", ja="組み合わせ・連結・境界越え・融合", **{"zh-CN": "组合·连接·跨界·融合", "zh-TW": "組合·連接·跨界·融合"}, vi="Kết hợp · Kết nối · Vượt ranh giới · Dung hợp", id="Kombinasi · Koneksi · Melintasi batas · Fusi"),
+        strongField=M(ko=_ko_r(2, "strongField"), en="Service planning · Brand design · Creative direction · New business development", ja="サービス企画・ブランドデザイン・クリエイティブディレクション・新規事業開発", **{"zh-CN": "服务策划·品牌设计·创意指导·新业务开发", "zh-TW": "服務策劃·品牌設計·創意指導·新業務開發"}, vi="Lập kế hoạch dịch vụ · Thiết kế thương hiệu · Đạo diễn sáng tạo · Phát triển kinh doanh mới", id="Perencanaan layanan · Desain brand · Creative direction · Pengembangan bisnis baru"),
+        strength=M(ko=_ko_r(2, "strength"), en="Solutions competitors never thought of emerge from connecting two things. Ability to find blue oceans in red oceans", ja="2つをつなげることから競合が思いつかなかったソリューションが生まれる。レッドオーシャンでブルーオーシャンを見つける能力", **{"zh-CN": "从连接两件事中产生对手想不到的解法，在红海中找蓝海的能力", "zh-TW": "從連接兩件事中產生對手想不到的解法，在紅海中找藍海的能力"}, vi="Giải pháp đối thủ không nghĩ ra xuất hiện từ việc kết nối hai thứ. Khả năng tìm blue ocean trong red ocean", id="Solusi yang tidak terpikir kompetitor muncul dari menghubungkan dua hal. Kemampuan menemukan blue ocean di red ocean"),
+        weakness=M(ko=_ko_r(2, "weakness"), en="Forced connections may lack persuasiveness. Needs refinement for natural flow", ja="つなぎが無理すぎると説得力が落ちることがある。自然さを整える過程が必要", **{"zh-CN": "连接太勉强会降低说服力，需要打磨自然度", "zh-TW": "連接太勉強會降低說服力，需要打磨自然度"}, vi="Kết nối quá gượng ép có thể giảm sức thuyết phục, cần chỉnh cho tự nhiên", id="Koneksi yang terlalu dipaksakan bisa kurang meyakinkan, perlu proses penyempurnaan"),
+        maximizeMethod=M(ko=_ko_r(2, "maximizeMethod"), en="Intentionally place two completely different fields together and practice finding common ground", ja="意図的に全く異なる2分野を並べ、共通点を見つける練習をする", **{"zh-CN": "有意把两个完全不同的领域放在一起，练习找共同点", "zh-TW": "有意把兩個完全不同的領域放在一起，練習找共同點"}, vi="Cố ý đặt hai lĩnh vực hoàn toàn khác cạnh nhau và luyện tìm điểm chung", id="Sengaja menempatkan dua bidang berbeda bersama dan berlatih menemukan titik temu"),
+        designerTip=M(ko=_ko_r(2, "designerTip"), en="Shines brightest in new category combinations, genre mixes, and cross-industry benchmarking", ja="これまでなかったカテゴリー組み合わせ・ジャンルミックス・異業種ベンチマークで最も輝く", **{"zh-CN": "在全新品类组合·流派混搭·跨行业对标中最闪耀", "zh-TW": "在全新品類組合·流派混搭·跨行業對標中最閃耀"}, vi="Tỏa sáng nhất ở kết hợp danh mục mới, pha trộn thể loại và benchmark liên ngành", id="Paling bersinar dalam kombinasi kategori baru, mix genre, dan benchmarking lintas industri"),
+        goodMatch=M(ko=_ko_r(2, "goodMatch"), en="Powerful team when paired with practical types who make ideas real", ja="アイデアを現実化する実用型と組み合わせると強力なチーム", **{"zh-CN": "与把点子落地的实用型组合，形成强力团队", "zh-TW": "與把點子落地的實用型組合，形成強力團隊"}, vi="Đội mạnh khi kết hợp với kiểu thực dụng biến ý tưởng thành hiện thực", id="Tim kuat jika dipadukan dengan tipe praktis yang mewujudkan ide"),
+        shareLine=M(ko=_ko_r(2, "shareLine"), en="My creativity type: Crossover Connection 🔀 Ideas come from connecting totally different things... cross-domain combos feel natural, right? → Planners and designers, share yours", ja="私の創造性タイプ：クロスオーバー連結型 🔀 全く違うものをつなげるとアイデアが出るタイプ…異種組み合わせが自然って本当 → 企画・デザイナーはシェアして", **{"zh-CN": "我的创意类型：跨界连接型 🔀 说是连接完全不同的事物才有灵感…异类组合很自然对吧 → 策划·设计师来分享", "zh-TW": "我的創意類型：跨界連接型 🔀 說是連接完全不同的事物才有靈感…異類組合很自然對吧 → 策劃·設計師來分享"}, vi="Kiểu sáng tạo của tôi: Crossover 🔀 Bảo ý tưởng đến từ kết nối thứ hoàn toàn khác… combo khác lĩnh vực tự nhiên đúng không → Planner/designer chia sẻ đi", id="Tipe kreativitasku: Crossover 🔀 Katanya ide muncul dari hubungin hal yang beda banget… combo beda domain memang natural kan → Planner/designer share yuk"),
+    ),
+    r(
+        "Type4", "🔄",
+        title=M(ko=_ko_r(3, "title"), en="Redefining the Problem Itself, Perspective Shift Type", ja="問題自体を再定義する、視点転換型", **{"zh-CN": "重新定义问题本身，视角转换型", "zh-TW": "重新定義問題本身，視角轉換型"}, vi="Định nghĩa lại bản thân vấn đề, kiểu chuyển góc nhìn", id="Mendefinisikan ulang masalah itu sendiri, tipe pergeseran perspektif"),
+        shortDescription=M(ko=_ko_r(3, "shortDescription"), en="Your strongest creativity starts with the question 'Is this really the problem?'", ja="あなたの最も強い創造性は「この問題が本当に問題なのか？」という問いから始まります。", **{"zh-CN": "你最强的创造力从「这真的是问题吗？」这个问题开始。", "zh-TW": "你最強的創造力從「這真的是問題嗎？」這個問題開始。"}, vi="Sự sáng tạo mạnh nhất của bạn bắt đầu từ câu hỏi \"Đây có thực sự là vấn đề không?\"", id="Kreativitas terkuatmu dimulai dari pertanyaan \"Apakah ini benar-benar masalahnya?\""),
+        description=M(ko=_ko_r(3, "description"), en="You question assumptions others take for granted, redefine problems differently, and find solutions in entirely new directions. Reverse thinking and perspective shifts happen naturally, and you quickly spot blind spots in existing approaches.", ja="他人が当たり前と思う前提を疑い、問題自体を別の形で定義し直して、全く異なる方向の解決策を見つけるタイプです。逆発想と視点転換が自然に起こり、既存方式の盲点を素早く見つけます。", **{"zh-CN": "质疑他人视为理所当然的前提，用不同方式重新定义问题，在完全不同的方向找到解法。逆向思考与视角转换自然发生，快速发现现有方式的盲点。", "zh-TW": "質疑他人視為理所當然的前提，用不同方式重新定義問題，在完全不同的方向找到解法。逆向思考與視角轉換自然發生，快速發現現有方式的盲點。"}, vi="Bạn nghi ngờ các tiền đề mọi người coi là đương nhiên, định nghĩa lại vấn đề theo cách khác và tìm giải pháp theo hướng hoàn toàn mới. Tư duy ngược và chuyển góc nhìn diễn ra tự nhiên, nhanh chóng phát hiện điểm mù của cách làm hiện tại.", id="Kamu mempertanyakan premis yang dianggap wajar orang lain, mendefinisikan ulang masalah secara berbeda, dan menemukan solusi ke arah yang sama sekali baru. Berpikir terbalik dan pergeseran perspektif terjadi natural, cepat menemukan blind spot pendekatan yang ada."),
+        creativityType=M(ko=_ko_r(3, "creativityType"), en="Perspective Shift Type 🔄", ja="視点転換型 🔄", **{"zh-CN": "视角转换型 🔄", "zh-TW": "視角轉換型 🔄"}, vi="Kiểu chuyển góc nhìn 🔄", id="Tipe pergeseran perspektif 🔄"),
+        creativityKeywords=M(ko=_ko_r(3, "creativityKeywords"), en="Reverse thinking · Redefinition · Perspective · Questioning assumptions", ja="逆発想・再定義・視点・前提の疑い", **{"zh-CN": "逆向思考·重新定义·视角·质疑前提", "zh-TW": "逆向思考·重新定義·視角·質疑前提"}, vi="Tư duy ngược · Định nghĩa lại · Góc nhìn · Nghi ngờ tiền đề", id="Berpikir terbalik · Redefinisi · Perspektif · Mempertanyakan premis"),
+        strongField=M(ko=_ko_r(3, "strongField"), en="Strategy planning · UX research · Advertising creative · Business model innovation", ja="戦略企画・UXリサーチ・広告クリエイティブ・事業モデル革新", **{"zh-CN": "战略策划·UX研究·广告创意·商业模式创新", "zh-TW": "戰略策劃·UX研究·廣告創意·商業模式創新"}, vi="Lập kế hoạch chiến lược · Nghiên cứu UX · Sáng tạo quảng cáo · Đổi mới mô hình kinh doanh", id="Perencanaan strategi · Riset UX · Kreatif iklan · Inovasi model bisnis"),
+        strength=M(ko=_ko_r(3, "strength"), en="Seeing problems from angles no one else sees. Drawing different insights from the same problem", ja="誰も見ていない角度から問題を見る能力。同じ問題から異なるインサイトを引き出す", **{"zh-CN": "从没人看过的角度看问题，从同一问题中得出不同洞察", "zh-TW": "從沒人看過的角度看問題，從同一問題中得出不同洞察"}, vi="Nhìn vấn đề từ góc chưa ai thấy, rút ra insight khác từ cùng một vấn đề", id="Melihat masalah dari sudut yang belum dilihat siapa pun, menarik insight berbeda dari masalah yang sama"),
+        weakness=M(ko=_ko_r(3, "weakness"), en="Abrupt perspective shifts may be hard to get buy-in for. Persuasion process is needed", ja="視点転換が急すぎると共感を得にくいことがある。説得の過程が必要", **{"zh-CN": "视角转换太突然可能难以获得认同，需要说服过程", "zh-TW": "視角轉換太突然可能難以獲得認同，需要說服過程"}, vi="Chuyển góc nhìn quá đột ngột có thể khó được đồng thuận, cần quá trình thuyết phục", id="Pergeseran perspektif yang terlalu tiba-tiba bisa sulit dapat buy-in, perlu proses persuasi"),
+        maximizeMethod=M(ko=_ko_r(3, "maximizeMethod"), en='Always ask these three first: "What if the opposite?" "What does the customer truly want?" "What if this premise did not exist?"', ja="「反対なら？」「顧客が本当に望むのは？」「この前提がなければ？」の3つの質問を常に先に試す", **{"zh-CN": "总是先问三个问题：「反过来呢？」「客户真正想要的是什么？」「如果没有这个前提呢？」", "zh-TW": "總是先問三個問題：「反過來呢？」「客戶真正想要的是什麼？」「如果沒有這個前提呢？」"}, vi='Luôn hỏi ba câu trước: "Ngược lại thì sao?" "Khách hàng thực sự muốn gì?" "Nếu không có tiền đề này thì sao?"', id='Selalu tanyakan tiga ini dulu: "Kebalikannya?" "Apa yang benar-benar diinginkan pelanggan?" "Bagaimana jika premis ini tidak ada?"'),
+        designerTip=M(ko=_ko_r(3, "designerTip"), en="Strongest in problem definition, insight extraction, and strategic direction setting", ja="問題定義・インサイト導出・戦略方向設定で最も強みを発揮", **{"zh-CN": "在问题定义·洞察提炼·战略方向设定中最强", "zh-TW": "在問題定義·洞察提煉·戰略方向設定中最強"}, vi="Mạnh nhất ở định nghĩa vấn đề, rút insight và thiết lập hướng chiến lược", id="Paling kuat dalam definisi masalah, ekstraksi insight, dan penetapan arah strategis"),
+        goodMatch=M(ko=_ko_r(3, "goodMatch"), en="Powerful when paired with practical types who connect ideas to execution and charismatic types with drive", ja="アイデアを実行に結ぶ実用型・実行力のカリスマ型と組み合わせると強力", **{"zh-CN": "与把创意连接执行的实用型、有推动力的魅力型组合很强", "zh-TW": "與把創意連接執行的實用型、有推動力的魅力型組合很強"}, vi="Mạnh khi kết hợp với kiểu thực dụng nối ý tưởng với thực thi và kiểu quyến rũ có động lực", id="Kuat jika dipadukan dengan tipe praktis penghubung ide-eksekusi dan tipe karismatik penggerak"),
+        shareLine=M(ko=_ko_r(3, "shareLine"), en="My creativity type: Perspective Shift 🔄 They say I redefine problems themselves... I ask \"Is this really the problem?\" a lot, right? → What's your creativity type?", ja="私の創造性タイプ：視点転換型 🔄 問題自体を再定義するタイプらしい…「これが本当の問題？」ってよく聞くよね → あなたはどんな創造性タイプ？", **{"zh-CN": "我的创意类型：视角转换型 🔄 说是重新定义问题本身…「这真的是问题吗？」常挂嘴边对吧 → 你是什么创意类型？", "zh-TW": "我的創意類型：視角轉換型 🔄 說是重新定義問題本身…「這真的是問題嗎？」常掛嘴邊對吧 → 你是什麼創意類型？"}, vi="Kiểu sáng tạo của tôi: Chuyển góc nhìn 🔄 Bảo là định nghĩa lại bản thân vấn đề… hay hỏi \"Đây có phải vấn đề thật không?\" đúng không → Bạn thuộc kiểu nào?", id="Tipe kreativitasku: Pergeseran perspektif 🔄 Katanya aku redefine masalahnya… sering nanya \"Ini beneran masalahnya?\" kan → Kamu tipe apa?"),
+    ),
+    r(
+        "Type5", "💥",
+        title=M(ko=_ko_r(4, "title"), en="Pouring Out Ideas Explosively, Divergent Expansion Type", ja="アイデアを爆発的に出す、発散拡散型", **{"zh-CN": "爆发式输出点子，发散扩展型", "zh-TW": "爆發式輸出點子，發散擴展型"}, vi="Đổ ý tưởng bùng nổ, kiểu mở rộng phân tán", id="Mengeluarkan ide secara eksplosif, tipe ekspansi divergen"),
+        shortDescription=M(ko=_ko_r(4, "shortDescription"), en="Your creativity comes from quantity — the more you pour out, the better what emerges.", ja="あなたの創造性は量から質が生まれます。多く出すほど、より良いものが現れます。", **{"zh-CN": "你的创造力以量取胜——输出越多，越能出现更好的东西。", "zh-TW": "你的創造力以量取勝——輸出越多，越能出現更好的東西。"}, vi="Sự sáng tạo của bạn đến từ số lượng — càng đổ nhiều, càng có điều hay hơn.", id="Kreativitasmu datang dari kuantitas — semakin banyak dioutput, semakin baik yang muncul."),
+        description=M(ko=_ko_r(4, "description"), en="You postpone judgment and generate as many ideas as possible quickly. You naturally keep dozens of possibilities open without clinging to one idea. You play the core role in brainstorming.", ja="判断を後回しにし、可能な限り多くのアイデアを素早く生成するタイプです。一つのアイデアに固執せず、数十の可能性を開いたままにする思考が自然です。ブレインストーミングの核心役割を担うタイプです。", **{"zh-CN": "延后判断，尽可能快速生成大量点子。不执着于单一想法，自然保持多种可能性开放，是头脑风暴的核心角色。", "zh-TW": "延後判斷，盡可能快速生成大量點子。不執著於單一想法，自然保持多種可能性開放，是腦力激盪的核心角色。"}, vi="Hoãn phán xét và tạo càng nhiều ý tưởng càng nhanh. Tự nhiên giữ hàng chục khả năng mở mà không bám vào một ý tưởng. Bạn đóng vai trò cốt lõi trong brainstorm.", id="Menunda penilaian dan menghasilkan sebanyak mungkin ide dengan cepat. Natural menjaga puluhan kemungkinan terbuka tanpa melekat pada satu ide. Kamu memainkan peran inti dalam brainstorming."),
+        creativityType=M(ko=_ko_r(4, "creativityType"), en="Divergent Expansion Type 💥", ja="発散拡散型 💥", **{"zh-CN": "发散扩展型 💥", "zh-TW": "發散擴展型 💥"}, vi="Kiểu mở rộng phân tán 💥", id="Tipe ekspansi divergen 💥"),
+        creativityKeywords=M(ko=_ko_r(4, "creativityKeywords"), en="Divergence · Diversity · Speed · Non-judgment", ja="発散・多様性・速度・無判断", **{"zh-CN": "发散·多样性·速度·无评判", "zh-TW": "發散·多樣性·速度·無評判"}, vi="Phân tán · Đa dạng · Tốc độ · Không phán xét", id="Divergensi · Keragaman · Kecepatan · Tanpa penilaian"),
+        strongField=M(ko=_ko_r(4, "strongField"), en="Advertising creative · Ideation · Content planning · Campaign planning", ja="広告クリエイティブ・アイデア創出・コンテンツ企画・キャンペーン企画", **{"zh-CN": "广告创意·创意发想·内容策划· campaign 策划", "zh-TW": "廣告創意·創意發想·內容策劃· campaign 策劃"}, vi="Sáng tạo quảng cáo · Ideation · Lập kế hoạch nội dung · Lập kế hoạch chiến dịch", id="Kreatif iklan · Ideation · Perencanaan konten · Perencanaan kampanye"),
+        strength=M(ko=_ko_r(4, "strength"), en="Quickly opening diverse possibilities. Lifting team brainstorming energy", ja="素早く多様な可能性を広げる能力。チームのブレインストーミングで雰囲気を盛り上げる役割", **{"zh-CN": "快速展开多种可能性，在团队头脑风暴中带动气氛", "zh-TW": "快速展開多種可能性，在團隊腦力激盪中帶動氣氛"}, vi="Nhanh chóng mở ra nhiều khả năng đa dạng, thắp không khí brainstorm nhóm", id="Cepat membuka beragam kemungkinan, mengangkat energi brainstorming tim"),
+        weakness=M(ko=_ko_r(4, "weakness"), en="Converging ideas and connecting them to execution may be relatively weaker", ja="アイデアを収束し、実行に結ぶ過程が相対的に弱いことがある", **{"zh-CN": "收束点子并连接执行的过程可能相对偏弱", "zh-TW": "收斂點子並連接執行的過程可能相對偏弱"}, vi="Quá trình thu hẹp ý tưởng và nối với thực thi có thể tương đối yếu hơn", id="Proses konvergensi ide dan menghubungkannya ke eksekusi bisa relatif lebih lemah"),
+        maximizeMethod=M(ko=_ko_r(4, "maximizeMethod"), en="Set a 5-minute timer and write as many ideas as possible without judgment. Then pick just one and develop it", ja="タイマーを5分にセットし、判断なしで最大限多くのアイデアを書く。そこから1つだけ選んで発展させる", **{"zh-CN": "设5分钟计时器，不做评判尽可能多写点子，再选1个深入发展", "zh-TW": "設5分鐘計時器，不做評判盡可能多寫點子，再選1個深入發展"}, vi="Đặt hẹn giờ 5 phút, viết càng nhiều ý tưởng càng tốt không phán xét, rồi chọn 1 cái phát triển", id="Atur timer 5 menit, tulis sebanyak mungkin ide tanpa penilaian, lalu pilih satu dan kembangkan"),
+        designerTip=M(ko=_ko_r(4, "designerTip"), en="Strongest in leading ideation sessions, concept divergence, and workshop facilitation", ja="アイデア創出セッションのリード・コンセプト発散・ワークショップファシリテーションで最も強みを発揮", **{"zh-CN": "在创意发想环节主导·概念发散·工作坊引导中最强", "zh-TW": "在創意發想環節主導·概念發散·工作坊引導中最強"}, vi="Mạnh nhất khi dẫn dắt session ideation, phân tán concept và điều phối workshop", id="Paling kuat memimpin sesi ideation, divergensi konsep, dan fasilitasi workshop"),
+        goodMatch=M(ko=_ko_r(4, "goodMatch"), en="Complete team when paired with practical types who refine ideas and analytical types who build structure", ja="アイデアを精密に実現する実用型・構造を作る分析型と組み合わせると完成形", **{"zh-CN": "与精准落地型实用型、搭建结构的分析型组合成完整团队", "zh-TW": "與精準落地型實用型、搭建結構的分析型組合成完整團隊"}, vi="Hoàn thiện khi kết hợp với kiểu thực dụng tinh chỉnh ý tưởng và kiểu phân tích dựng cấu trúc", id="Tim lengkap jika dipadukan dengan tipe praktis penyempurna ide dan tipe analitis penyusun struktur"),
+        shareLine=M(ko=_ko_r(4, "shareLine"), en="My creativity type: Divergent Expansion 💥 They say I pour out ideas explosively... brainstorming is when I'm most excited, right? lol → Make a team creativity map", ja="私の創造性タイプ：発散拡散型 💥 アイデアを爆発的に出すタイプらしい…ブレストのときが一番ワクワクするよね w → チームの創造性マップを作ってみて", **{"zh-CN": "我的创意类型：发散扩展型 💥 说是爆发式输出点子…头脑风暴时最兴奋对吧 哈哈 → 来做团队创意地图", "zh-TW": "我的創意類型：發散擴展型 💥 說是爆發式輸出點子…腦力激盪時最興奮對吧 哈哈 → 來做團隊創意地圖"}, vi="Kiểu sáng tạo của tôi: Phân tán 💥 Bảo là đổ ý tưởng bùng nổ… brainstorm là lúc hứng khởi nhất đúng không haha → Làm bản đồ sáng tạo team đi", id="Tipe kreativitasku: Divergen 💥 Katanya aku keluarin ide meledak-ledak… paling excited pas brainstorming kan wkwk → Bikin peta kreativitas tim yuk"),
+    ),
+    r(
+        "Type6", "🚀",
+        title=M(ko=_ko_r(5, "title"), en="Seeing the World That Does Not Exist Yet, Vision Pioneer Type", ja="まだない世界を先に見る、ビジョン先導型", **{"zh-CN": "先看到尚不存在的世界，愿景先导型", "zh-TW": "先看到尚不存在的世界，願景先導型"}, vi="Nhìn thấy thế giới chưa tồn tại, kiểu tiên phong tầm nhìn", id="Melihat dunia yang belum ada, tipe perintis visi"),
+        shortDescription=M(ko=_ko_r(5, "shortDescription"), en="Your creativity starts from the future. Your eye for what does not yet exist is strongest.", ja="あなたの創造性は未来から始まります。まだないものを見る目が最も強いです。", **{"zh-CN": "你的创造力从未来开始，看尚未存在之物的眼光最强。", "zh-TW": "你的創造力從未來開始，看尚未存在之物的眼光最強。"}, vi="Sự sáng tạo của bạn bắt đầu từ tương lai. Con mắt nhìn thấy điều chưa tồn tại là mạnh nhất.", id="Kreativitasmu dimulai dari masa depan. Mata melihat hal yang belum ada adalah yang terkuat."),
+        description=M(ko=_ko_r(5, "description"), en="Rather than constraints or reality, you first imagine the ideal state and work backward to the present. It is pioneering creativity that creates new categories or sees directions no one else goes first.", ja="制約や現実より、理想的な状態を先に想像し、そこから現在へ逆算する創造性です。新しいカテゴリーを作ったり、誰も行かない方向を先に見る先導型の創造性です。", **{"zh-CN": "比起限制与现实，先想象理想状态，再倒推回当下。是创造新品类、率先看到无人涉足方向的先导型创意。", "zh-TW": "比起限制與現實，先想象理想狀態，再倒推回當下。是創造新品類、率先看到無人涉足方向的先導型創意。"}, vi="Thay vì ràng buộc hay thực tế, bạn trước tiên hình dung trạng thái lý tưởng rồi làm ngược về hiện tại. Là sáng tạo tiên phong tạo danh mục mới hoặc thấy hướng chưa ai đi trước.", id="Alih-alih batasan atau kenyataan, kamu membayangkan kondisi ideal dulu lalu bekerja mundur ke saat ini. Kreativitas perintis yang menciptakan kategori baru atau melihat arah yang belum ditempuh siapa pun."),
+        creativityType=M(ko=_ko_r(5, "creativityType"), en="Vision Pioneer Type 🚀", ja="ビジョン先導型 🚀", **{"zh-CN": "愿景先导型 🚀", "zh-TW": "願景先導型 🚀"}, vi="Kiểu tiên phong tầm nhìn 🚀", id="Tipe perintis visi 🚀"),
+        creativityKeywords=M(ko=_ko_r(5, "creativityKeywords"), en="Pioneering · Vision · Future · Category creation", ja="先導・ビジョン・未来・カテゴリー創造", **{"zh-CN": "先导·愿景·未来·品类创造", "zh-TW": "先導·願景·未來·品類創造"}, vi="Tiên phong · Tầm nhìn · Tương lai · Tạo danh mục", id="Perintis · Visi · Masa depan · Penciptaan kategori"),
+        strongField=M(ko=_ko_r(5, "strongField"), en="New business planning · Brand strategy · Product vision · Creative direction", ja="新規事業企画・ブランド戦略・プロダクトビジョン・クリエイティブディレクション", **{"zh-CN": "新业务策划·品牌战略·产品愿景·创意指导", "zh-TW": "新業務策劃·品牌戰略·產品願景·創意指導"}, vi="Lập kế hoạch kinh doanh mới · Chiến lược thương hiệu · Tầm nhìn sản phẩm · Đạo diễn sáng tạo", id="Perencanaan bisnis baru · Strategi brand · Visi produk · Creative direction"),
+        strength=M(ko=_ko_r(5, "strength"), en="Ability to see directions no one thought of first. Creativity that creates categories themselves", ja="誰も思いつかなかった方向を先に見る能力。カテゴリー自体を作る創造性", **{"zh-CN": "率先看到没人想到的方向，创造品类本身的创意力", "zh-TW": "率先看到沒人想到的方向，創造品類本身的創意力"}, vi="Khả năng thấy hướng chưa ai nghĩ tới trước. Sáng tạo tạo ra bản thân danh mục", id="Kemampuan melihat arah yang belum terpikir siapa pun. Kreativitas yang menciptakan kategori itu sendiri"),
+        weakness=M(ko=_ko_r(5, "weakness"), en="If the vision runs too far ahead, real execution may be hard or gaining empathy may take time", ja="ビジョンが先走りすぎると、現実実行が難しかったり、共感を得るまで時間がかかることがある", **{"zh-CN": "愿景跑太前，现实执行可能困难，或需要更长时间获得认同", "zh-TW": "願景跑太前，現實執行可能困難，或需要更長時間獲得認同"}, vi="Nếu tầm nhìn đi quá xa, thực thi thực tế khó hoặc cần thời gian để được đồng cảm", id="Jika visi terlalu jauh, eksekusi nyata bisa sulit atau butuh waktu untuk dapat empati"),
+        maximizeMethod=M(ko=_ko_r(5, "maximizeMethod"), en='First imagine "What will this field look like in 10 years?" then reverse-engineer what to do now from that picture', ja="「10年後この分野はどんな姿か？」を先に想像し、その絵から今何をすべきか逆算する練習", **{"zh-CN": "先想象「10年后这个领域会怎样？」再从画面倒推现在该做什么", "zh-TW": "先想象「10年後這個領域會怎樣？」再從畫面倒推現在該做什麼"}, vi='Trước tiên hình dung "10 năm nữa lĩnh vực này sẽ ra sao?" rồi suy ngược việc cần làm ngay bây giờ', id='Bayangkan dulu "Bagaimana bidang ini 10 tahun lagi?" lalu reverse-engineer apa yang harus dilakukan sekarang'),
+        designerTip=M(ko=_ko_r(5, "designerTip"), en="Shines brightest in future scenario design, brand vision, and 0→1 new planning", ja="未来シナリオ設計・ブランドビジョン・0→1段階の新規企画で最も輝く", **{"zh-CN": "在未来场景设计·品牌愿景·0→1新策划中最闪耀", "zh-TW": "在未來場景設計·品牌願景·0→1新策劃中最閃耀"}, vi="Tỏa sáng nhất ở thiết kế kịch bản tương lai, tầm nhìn thương hiệu và lập kế hoạch mới 0→1", id="Paling bersinar dalam desain skenario masa depan, visi brand, dan perencanaan baru 0→1"),
+        goodMatch=M(ko=_ko_r(5, "goodMatch"), en="Strongest when paired with practical types who make vision real and charismatic types who drive execution", ja="ビジョンを現実化する実用型・実行を導くカリスマ型と組み合わせると最強", **{"zh-CN": "与把愿景落地的实用型、推动执行的魅力型组合最强", "zh-TW": "與把願景落地的實用型、推動執行的魅力型組合最強"}, vi="Mạnh nhất khi kết hợp với kiểu thực dụng biến tầm nhìn thành hiện thực và kiểu quyến rũ dẫn dắt thực thi", id="Paling kuat jika dipadukan dengan tipe praktis pewujud visi dan tipe karismatik penggerak eksekusi"),
+        shareLine=M(ko=_ko_r(5, "shareLine"), en="My creativity type: Vision Pioneer 🚀 They say I see worlds that do not exist yet... admit it, 0→1 planning is the most fun → Planners and designers, find your creativity type", ja="私の創造性タイプ：ビジョン先導型 🚀 まだない世界を先に見るタイプらしい…0→1企画が一番楽しいって認めて → 企画者・デザイナーは自分の創造性タイプをチェック", **{"zh-CN": "我的创意类型：愿景先导型 🚀 说是先看到尚不存在的世界…0→1策划最有趣，承认吧 → 策划·设计师来测测你的创意类型", "zh-TW": "我的創意類型：願景先導型 🚀 說是先看到尚不存在的世界…0→1策劃最有趣，承認吧 → 策劃·設計師來測測你的創意類型"}, vi="Kiểu sáng tạo của tôi: Tiên phong tầm nhìn 🚀 Bảo là thấy thế giới chưa tồn tại… lập kế hoạch 0→1 vui nhất đúng không → Planner/designer thử xem kiểu của bạn", id="Tipe kreativitasku: Perintis visi 🚀 Katanya aku lihat dunia yang belum ada… planning 0→1 paling seru kan → Planner/designer, cek tipe kreativitasmu"),
+    ),
+]
+
+
+def load_data() -> dict:
+    return {"questions": QUESTIONS, "results": RESULTS}
+
+
+def build_ts(data: dict) -> str:
+    questions_ts = "\n".join(
+        fmt_question(
+            i + 1,
+            q["question"],
+            [(o["text"], o["score"]) for o in q["options"]],
+        )
+        for i, q in enumerate(data["questions"])
+    )
+    results_ts = "\n".join(fmt_result(r) for r in data["results"])
+    return (
+        HEADER
+        + questions_ts
+        + "\n];\n\nexport const phase3CreativityPotentialResults: Phase3CreativityPotentialResult[] = [\n"
+        + results_ts
+        + "\n];\n"
+    )
+
+
+def main() -> None:
+    data = load_data()
+    out = Path(__file__).resolve().parents[1] / "lib" / "phase3CreativityPotentialData.ts"
+    body = build_ts(data)
+    out.write_text(body, encoding="utf-8")
+    line_count = body.count("\n") + (0 if body.endswith("\n") else 1)
+    print(f"Wrote {out}")
+    print(f"Bytes: {len(body.encode('utf-8'))}")
+    print(f"Lines: {line_count}")
+
+
+if __name__ == "__main__":
+    main()

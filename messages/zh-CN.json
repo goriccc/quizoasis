@@ -10421,6 +10421,72 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3CreativityPotentialTest": {
+    "startMessage": {
+      "line1": "创造力不是天生的，而是取决于你如何思考。",
+      "line2": "有人从意想不到的连接中找到灵感，有人构建全新结构，有人在现实限制中找到最优解。创造力没有唯一正确答案。",
+      "line3": "通过12个问题分析你的创意思维模式，找出哪种创造力在你身上最强。对策划、设计师和创作者来说，了解并运用自己的创意优势会更高效。",
+      "line4": "测量我的创意潜力 💡 立即查看",
+      "note": "※ 请在每道题中选择最接近你的选项。"
+    },
+    "ui": {
+      "startTest": "开始创意潜力测试",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区域（我的创意潜力）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "creativityType": "创意类型",
+      "creativityKeywords": "创意关键词",
+      "strongField": "该类型创意最强的领域",
+      "strength": "该类型的优势",
+      "weakness": "该类型的弱点",
+      "maximizeMethod": "如何最大化这种创造力",
+      "designerTip": "策划·设计师活用技巧",
+      "goodMatch": "搭配更强的类型"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "我的创意类型：实用创意型 🔧 说是有约束时创意反而闪耀…承认吧，实现力比点子更强 → 策划·设计师来测测你的创意类型",
+      "type2": "我的创意类型：联想吸收型 🌐 说是看得越多点子越丰富…爱收集参考没错吧 哈哈 → 你是什么创意类型？",
+      "type3": "我的创意类型：跨界连接型 🔀 说是连接完全不同的事物才有灵感…异类组合很自然对吧 → 策划·设计师来分享",
+      "type4": "我的创意类型：视角转换型 🔄 说是重新定义问题本身…「这真的是问题吗？」常挂嘴边对吧 → 你是什么创意类型？",
+      "type5": "我的创意类型：发散扩展型 💥 说是爆发式输出点子…头脑风暴时最兴奋对吧 哈哈 → 来做团队创意地图",
+      "type6": "我的创意类型：愿景先导型 🚀 说是先看到尚不存在的世界…0→1策划最有趣，承认吧 → 策划·设计师来测测你的创意类型",
+      "startDefault": "我的「创意」潜力 💡 看看你的创意思维模式",
+      "startKakao": "我的「创意」潜力 💡 看看你的创意思维模式",
+      "startWechat": "我的「创意」潜力 💡 看看你的创意思维模式",
+      "startWhatsapp": "我的「创意」潜力 💡 看看你的创意思维模式",
+      "startTelegram": "我的「创意」潜力 💡 看看你的创意思维模式",
+      "startLine": "我的「创意」潜力 💡 看看你的创意思维模式"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "我们每个人都有一座用来保护自己的城墙。",

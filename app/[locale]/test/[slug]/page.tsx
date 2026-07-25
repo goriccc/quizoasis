@@ -180,6 +180,10 @@ import {
   phase3LeadershipStyleResults,
 } from '@/lib/phase3LeadershipStyleData';
 import {
+  phase3CreativityPotentialQuestions,
+  phase3CreativityPotentialResults,
+} from '@/lib/phase3CreativityPotentialData';
+import {
   phase3AiFuture10YearsQuestions,
   phase3AiFuture10YearsResults,
 } from '@/lib/phase3AiFuture10YearsData';
@@ -675,6 +679,10 @@ const Phase3SuddenPoorDefenseIndexTestClient = dynamic(
 );
 const Phase3LeadershipStyleTestClient = dynamic(
   () => import('@/components/Phase3LeadershipStyleTestClient'),
+  { ssr: false }
+);
+const Phase3CreativityPotentialTestClient = dynamic(
+  () => import('@/components/Phase3CreativityPotentialTestClient'),
   { ssr: false }
 );
 const Phase3EgoWallThicknessTestClient = dynamic(
@@ -2133,6 +2141,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['領導力', '團隊專案', '自我介紹', '職場', '自我了解'],
         vi: ['lãnh đạo', 'dự án nhóm', 'thư xin việc', 'nơi làm việc', 'hiểu bản thân'],
         id: ['kepemimpinan', 'proyek tim', 'surat lamaran', 'tempat kerja', 'mengenal diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-creativity-potential') {
+    test = {
+      slug: 'phase3-creativity-potential',
+      title: {
+        ko: "나의 '창의성' 잠재력",
+        en: 'My Creativity Potential',
+        ja: '私の「創造性」潜在力',
+        'zh-CN': '我的「创造力」潜能',
+        'zh-TW': '我的「創造力」潛能',
+        vi: 'Tiềm năng sáng tạo của tôi',
+        id: 'Potensi Kreativitasku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 창의적 사고 패턴을 분석하고 어떤 유형의 창의성이 가장 강하게 발현되는지 찾아드립니다.',
+        en: 'Analyze your creative thinking patterns through 12 questions and discover which type of creativity shines strongest in you.',
+        ja: '12の質問で創造的思考パターンを分析し、どのタイプの創造性が最も強く発現するか見つけます。',
+        'zh-CN': '通过12个问题分析你的创意思维模式，找出哪种创造力在你身上最强。',
+        'zh-TW': '透過12個問題分析你的創意思維模式，找出哪種創造力在你身上最強。',
+        vi: 'Phân tích mô hình tư duy sáng tạo qua 12 câu hỏi và tìm loại sáng tạo nào phát huy mạnh nhất ở bạn.',
+        id: 'Analisis pola berpikir kreatifmu lewat 12 pertanyaan dan temukan jenis kreativitas mana yang paling kuat pada dirimu.',
+      },
+      thumbnail: 'p3_test_creativity_potential.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['창의성', '아이디어', '기획', '디자인', '문제해결'],
+        en: ['creativity', 'ideas', 'planning', 'design', 'problem solving'],
+        ja: ['創造性', 'アイデア', '企画', 'デザイン', '問題解決'],
+        'zh-CN': ['创造力', '创意', '策划', '设计', '问题解决'],
+        'zh-TW': ['創造力', '創意', '企劃', '設計', '問題解決'],
+        vi: ['sáng tạo', 'ý tưởng', 'lập kế hoạch', 'thiết kế', 'giải quyết vấn đề'],
+        id: ['kreativitas', 'ide', 'perencanaan', 'desain', 'pemecahan masalah'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7974,6 +8019,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LeadershipStyleQuestions}
           results={phase3LeadershipStyleResults}
           questionCount={phase3LeadershipStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-creativity-potential') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-creativity-potential',
+      title: {
+        ko: "나의 '창의성' 잠재력",
+        en: 'My Creativity Potential',
+        ja: '私の「創造性」潜在力',
+        'zh-CN': '我的「创造力」潜能',
+        'zh-TW': '我的「創造力」潛能',
+        vi: 'Tiềm năng sáng tạo của tôi',
+        id: 'Potensi Kreativitasku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 창의적 사고 패턴을 분석하고 어떤 유형의 창의성이 가장 강하게 발현되는지 찾아드립니다.',
+        en: 'Analyze your creative thinking patterns through 12 questions and discover which type of creativity shines strongest in you.',
+        ja: '12の質問で創造的思考パターンを分析し、どのタイプの創造性が最も強く発現するか見つけます。',
+        'zh-CN': '通过12个问题分析你的创意思维模式，找出哪种创造力在你身上最强。',
+        'zh-TW': '透過12個問題分析你的創意思維模式，找出哪種創造力在你身上最強。',
+        vi: 'Phân tích mô hình tư duy sáng tạo qua 12 câu hỏi và tìm loại sáng tạo nào phát huy mạnh nhất ở bạn.',
+        id: 'Analisis pola berpikir kreatifmu lewat 12 pertanyaan dan temukan jenis kreativitas mana yang paling kuat pada dirimu.',
+      },
+      thumbnail: 'p3_test_creativity_potential.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['창의성', '아이디어', '기획', '디자인', '문제해결'],
+        en: ['creativity', 'ideas', 'planning', 'design', 'problem solving'],
+        ja: ['創造性', 'アイデア', '企画', 'デザイン', '問題解決'],
+        'zh-CN': ['创造力', '创意', '策划', '设计', '问题解决'],
+        'zh-TW': ['創造力', '創意', '企劃', '設計', '問題解決'],
+        vi: ['sáng tạo', 'ý tưởng', 'lập kế hoạch', 'thiết kế', 'giải quyết vấn đề'],
+        id: ['kreativitas', 'ide', 'perencanaan', 'desain', 'pemecahan masalah'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3CreativityPotentialTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3CreativityPotentialQuestions}
+          results={phase3CreativityPotentialResults}
+          questionCount={phase3CreativityPotentialQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

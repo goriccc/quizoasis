@@ -10421,6 +10421,72 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3CreativityPotentialTest": {
+    "startMessage": {
+      "line1": "Sự sáng tạo không phải bẩm sinh. Đó là cách bạn suy nghĩ.",
+      "line2": "Có người tìm ý tưởng từ những kết nối bất ngờ, có người tạo cấu trúc hoàn toàn mới, có người tìm giải pháp tốt nhất trong ràng buộc thực tế. Sáng tạo không có một đáp án duy nhất.",
+      "line3": "Phân tích mô hình tư duy sáng tạo qua 12 câu hỏi và khám phá kiểu sáng tạo nào mạnh nhất ở bạn. Với planner, designer và creator, biết và tận dụng điểm mạnh sáng tạo hiệu quả hơn nhiều.",
+      "line4": "Đo tiềm năng sáng tạo của tôi 💡 Kiểm tra ngay",
+      "note": "※ Ở mỗi câu hỏi, hãy chọn phương án gần với bạn nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu test tiềm năng sáng tạo",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem test khác",
+      "goToTest": "Làm test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tiềm năng sáng tạo của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các test tương tự",
+      "creativityType": "Kiểu sáng tạo",
+      "creativityKeywords": "Từ khóa sáng tạo",
+      "strongField": "Lĩnh vực kiểu này mạnh nhất",
+      "strength": "Điểm mạnh của kiểu này",
+      "weakness": "Điểm yếu của kiểu này",
+      "maximizeMethod": "Cách tối đa hóa sự sáng tạo này",
+      "designerTip": "Mẹo cho planner & designer",
+      "goodMatch": "Kiểu phối hợp tốt"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Kiểu sáng tạo của tôi: Thực dụng 🔧 Bảo là có ràng buộc thì sáng tạo càng sáng… thừa nhận đi, thực thi mạnh hơn ý tưởng → Planner/designer thử xem kiểu của bạn",
+      "type2": "Kiểu sáng tạo của tôi: Hấp thụ liên tưởng 🌐 Bảo càng xem nhiều càng nhiều ý tưởng… sưu tầm reference là sở thích đúng không haha → Bạn thuộc kiểu nào?",
+      "type3": "Kiểu sáng tạo của tôi: Crossover 🔀 Bảo ý tưởng đến từ kết nối thứ hoàn toàn khác… combo khác lĩnh vực tự nhiên đúng không → Planner/designer chia sẻ đi",
+      "type4": "Kiểu sáng tạo của tôi: Chuyển góc nhìn 🔄 Bảo là định nghĩa lại bản thân vấn đề… hay hỏi \"Đây có phải vấn đề thật không?\" đúng không → Bạn thuộc kiểu nào?",
+      "type5": "Kiểu sáng tạo của tôi: Phân tán 💥 Bảo là đổ ý tưởng bùng nổ… brainstorm là lúc hứng khởi nhất đúng không haha → Làm bản đồ sáng tạo team đi",
+      "type6": "Kiểu sáng tạo của tôi: Tiên phong tầm nhìn 🚀 Bảo là thấy thế giới chưa tồn tại… lập kế hoạch 0→1 vui nhất đúng không → Planner/designer thử xem kiểu của bạn",
+      "startDefault": "Tiềm năng \"Sáng tạo\" của tôi 💡 Khám phá mô hình tư duy sáng tạo",
+      "startKakao": "Tiềm năng \"Sáng tạo\" của tôi 💡 Khám phá mô hình tư duy sáng tạo",
+      "startWechat": "Tiềm năng \"Sáng tạo\" của tôi 💡 Khám phá mô hình tư duy sáng tạo",
+      "startWhatsapp": "Tiềm năng \"Sáng tạo\" của tôi 💡 Khám phá mô hình tư duy sáng tạo",
+      "startTelegram": "Tiềm năng \"Sáng tạo\" của tôi 💡 Khám phá mô hình tư duy sáng tạo",
+      "startLine": "Tiềm năng \"Sáng tạo\" của tôi 💡 Khám phá mô hình tư duy sáng tạo"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",

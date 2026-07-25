@@ -2,12 +2,12 @@
 
 export type Phase3LeadershipStyleLocaleKey = 'ko' | 'en' | 'ja' | 'zh-CN' | 'zh-TW' | 'vi' | 'id';
 
-function ML(t: Record<Phase3LeadershipStyleLocaleKey, string>): Record<Phase3LeadershipStyleLocaleKey, string> {
+function localeMap(t: Record<Phase3LeadershipStyleLocaleKey, string>): Record<Phase3LeadershipStyleLocaleKey, string> {
   return t;
 }
 
 function opt(m: Record<Phase3LeadershipStyleLocaleKey, string>, score: number): { text: Record<Phase3LeadershipStyleLocaleKey, string>; score: number } {
-  return { text: ML(m), score };
+  return { text: localeMap(m), score };
 }
 
 export interface Phase3LeadershipStyleQuestion {
@@ -47,7 +47,7 @@ export function calculatePhase3LeadershipStyleResult(answers: number[]): string 
 export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   {
     id: 1,
-    question: ML({
+    question: localeMap({
       ko: '상황: 팀 프로젝트 첫 회의가 시작됐다. 아직 아무도 말을 꺼내지 않은 상황이다. 나는?',
       en: 'Situation: The first team project meeting has started. No one has spoken yet. I would…',
       ja: '状況：チームプロジェクトの初回会議が始まった。まだ誰も発言していない。私は？',
@@ -57,7 +57,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Rapat pertama proyek tim dimulai. Belum ada yang bicara. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '팀원들 표정을 살피며 편하게 이야기할 수 있는 분위기를 먼저 만든다',
         en: 'Read team members\' expressions and create a comfortable atmosphere for conversation first',
         ja: 'チームメンバーの表情を見て、話しやすい雰囲気を先に作る',
@@ -66,7 +66,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Quan sát biểu cảm đồng đội và tạo không khí thoải mái để nói chuyện trước',
         id: 'Mengamati ekspresi anggota tim dan menciptakan suasana nyaman untuk bicara terlebih dahulu',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '"각자 생각해온 것을 돌아가면서 이야기해보면 어떨까요?"라고 제안한다',
         en: 'Suggest, "How about we take turns sharing what each of us has been thinking?"',
         ja: '「それぞれ考えてきたことを順番に話してみませんか？」と提案する',
@@ -75,7 +75,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Đề xuất: "Mọi người lần lượt chia sẻ suy nghĩ của mình nhé?"',
         id: 'Mengusulkan, "Bagaimana kalau kita bergiliran berbagi apa yang sudah kita pikirkan?"',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '"우선 오늘 회의에서 결정해야 할 것들을 정리해볼게요"라며 구조를 잡는다',
         en: 'Set structure by saying, "Let me first organize what we need to decide in today\'s meeting"',
         ja: '「まず今日の会議で決めるべきことを整理しましょう」と構造を作る',
@@ -84,7 +84,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Dựng cấu trúc: "Trước tiên tôi sẽ tổng hợp những gì cần quyết định trong cuộc họp hôm nay"',
         id: 'Menyusun struktur: "Mari kita rapikan dulu hal-hal yang perlu diputuskan di rapat hari ini"',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"이 프로젝트로 우리가 만들어야 할 방향이 뭔지 먼저 얘기해봐요"라며 주도한다',
         en: 'Take the lead: "Let\'s first talk about what direction we need to create with this project"',
         ja: '「このプロジェクトで作るべき方向性を先に話しましょう」と主導する',
@@ -97,7 +97,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 2,
-    question: ML({
+    question: localeMap({
       ko: '상황: 팀원 중 한 명이 맡은 역할을 잘 못하고 있는 것 같다. 나는?',
       en: 'Situation: A team member seems to be struggling with their assigned role. I would…',
       ja: '状況：チームメンバーの一人が担当役割をうまくこなせていないようだ。私は？',
@@ -107,7 +107,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Salah satu anggota tim sepertinya kesulitan dengan peran yang diberikan. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '그 팀원이 어려워하는 부분을 먼저 물어보고 내가 도울 수 있는 것을 찾는다',
         en: 'Ask what they are struggling with first and find what I can help with',
         ja: 'そのメンバーが苦手な部分を先に聞き、自分が助けられることを探す',
@@ -116,7 +116,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Hỏi trước phần nào họ gặp khó và tìm cách mình có thể giúp',
         id: 'Menanyakan dulu bagian mana yang sulit dan mencari apa yang bisa saya bantu',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '팀 전체에 "혹시 도움이 필요한 사람 있어요?"라고 열어놓는다',
         en: 'Open it to the whole team: "Does anyone need help?"',
         ja: 'チーム全体に「助けが必要な人はいますか？」と問いかける',
@@ -125,7 +125,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Mở cho cả nhóm: "Có ai cần giúp đỡ không?"',
         id: 'Membuka ke seluruh tim: "Ada yang butuh bantuan?"',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '그 팀원에게 직접 피드백을 주고 어떻게 개선할 수 있는지 같이 생각해본다',
         en: 'Give direct feedback and think together about how to improve',
         ja: 'そのメンバーに直接フィードバックを与え、改善方法を一緒に考える',
@@ -134,7 +134,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Đưa phản hồi trực tiếp và cùng suy nghĩ cách cải thiện',
         id: 'Memberi feedback langsung dan bersama-sama memikirkan cara memperbaikinya',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '역할 재배분이 필요하다면 과감하게 조정하고 진행한다',
         en: 'Boldly adjust roles if redistribution is needed and move forward',
         ja: '役割の再配分が必要なら大胆に調整して進める',
@@ -147,7 +147,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 3,
-    question: ML({
+    question: localeMap({
       ko: '상황: 프로젝트 방향에 대해 팀원들 의견이 갈려서 결론이 안 나고 있다. 나는?',
       en: 'Situation: Team opinions on the project direction are divided and no conclusion is reached. I would…',
       ja: '状況：プロジェクトの方向性について意見が分かれ、結論が出ない。私は？',
@@ -157,7 +157,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Pendapat tentang arah proyek terpecah dan belum ada kesimpulan. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '각 의견의 좋은 점을 찾아 조합할 방법을 생각해본다',
         en: 'Find the strengths in each opinion and think about how to combine them',
         ja: '各意見の良い点を見つけ、組み合わせる方法を考える',
@@ -166,7 +166,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Tìm điểm hay trong từng ý kiến và nghĩ cách kết hợp',
         id: 'Mencari kelebihan tiap pendapat dan memikirkan cara menggabungkannya',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '충분히 들은 뒤 팀이 동의할 수 있는 공통점을 찾아 정리한다',
         en: 'After listening enough, find common ground the team can agree on and summarize',
         ja: '十分に聞いた後、チームが合意できる共通点を見つけて整理する',
@@ -175,7 +175,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Sau khi lắng nghe đủ, tìm điểm chung mà nhóm có thể đồng ý và tổng hợp',
         id: 'Setelah cukup mendengarkan, mencari titik temu yang bisa disepakati tim dan merangkumnya',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '각 의견의 장단점을 데이터나 근거로 분석해서 정리해준다',
         en: 'Analyze the pros and cons of each opinion with data or evidence and summarize',
         ja: '各意見の長所と短所をデータや根拠で分析して整理する',
@@ -184,7 +184,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Phân tích ưu nhược điểm từng ý kiến bằng dữ liệu hoặc căn cứ và tổng hợp',
         id: 'Menganalisis kelebihan dan kekurangan tiap pendapat dengan data atau bukti lalu merangkum',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '내가 판단한 최선의 방향을 제시하고 그 이유를 설득한다',
         en: 'Present what I judge as the best direction and persuade with my reasons',
         ja: '自分が判断した最善の方向性を提示し、その理由で説得する',
@@ -197,7 +197,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 4,
-    question: ML({
+    question: localeMap({
       ko: '상황: 마감이 3일 남았는데 진행 속도가 너무 느리다. 나는?',
       en: 'Situation: The deadline is 3 days away but progress is too slow. I would…',
       ja: '状況：締切まで3日なのに進行速度が遅すぎる。私は？',
@@ -207,7 +207,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Tenggat 3 hari lagi tapi progres terlalu lambat. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '팀원들이 지쳐있는 건 아닌지 먼저 확인하고 필요하면 도움을 자처한다',
         en: 'Check first if team members are exhausted and volunteer help if needed',
         ja: 'チームメンバーが疲れていないか先に確認し、必要なら手伝いを申し出る',
@@ -216,7 +216,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Kiểm tra trước xem đồng đội có mệt không và tình nguyện giúp nếu cần',
         id: 'Memastikan dulu apakah anggota tim kelelahan dan menawarkan bantuan jika perlu',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '팀 전체 상황을 공유하고 각자 어느 부분에서 막혀있는지 파악한다',
         en: 'Share the overall team situation and identify where each person is stuck',
         ja: 'チーム全体の状況を共有し、各自がどこで詰まっているか把握する',
@@ -225,7 +225,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Chia sẻ tình hình chung của nhóm và xác định ai đang bị kẹt ở đâu',
         id: 'Berbagi situasi tim secara keseluruhan dan memetakan di mana masing-masing terhambat',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '현재 진행 상황을 수치로 파악하고 우선순위를 재조정한다',
         en: 'Quantify current progress and readjust priorities',
         ja: '現在の進捗を数値で把握し、優先順位を再調整する',
@@ -234,7 +234,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Nắm tiến độ hiện tại bằng số liệu và điều chỉnh lại ưu tiên',
         id: 'Mengukur progres saat ini secara numerik dan menyesuaikan ulang prioritas',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"이 기간 안에 반드시 끝낸다"는 방향을 명확히 하고 속도를 높인다',
         en: 'Clarify the direction "We must finish within this period" and increase speed',
         ja: '「この期間内に必ず終わらせる」という方向性を明確にし、速度を上げる',
@@ -247,7 +247,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 5,
-    question: ML({
+    question: localeMap({
       ko: '상황: 팀원이 아이디어를 냈는데 실현 가능성이 낮아 보인다. 나는?',
       en: 'Situation: A team member shared an idea that seems low in feasibility. I would…',
       ja: '状況：チームメンバーがアイデアを出したが、実現可能性が低そうだ。私は？',
@@ -257,7 +257,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Seorang anggota tim mengajukan ide yang tampaknya sulit direalisasikan. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '일단 아이디어를 충분히 들어주고 좋은 점을 먼저 인정한다',
         en: 'Listen to the idea fully first and acknowledge its good points',
         ja: 'まずアイデアを十分に聞き、良い点を先に認める',
@@ -266,7 +266,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Lắng nghe đầy đủ ý tưởng trước và công nhận điểm hay',
         id: 'Mendengarkan ide sepenuhnya dulu dan mengakui kelebihannya terlebih dahulu',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '"이 아이디어 어떻게 생각해요?"라며 팀 전체 의견을 물어본다',
         en: 'Ask the whole team, "What do you think of this idea?"',
         ja: '「このアイデア、どう思いますか？」とチーム全体の意見を聞く',
@@ -275,7 +275,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Hỏi cả nhóm: "Mọi người nghĩ gì về ý tưởng này?"',
         id: 'Menanyakan ke seluruh tim, "Bagaimana menurut kalian ide ini?"',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '실현 가능성을 구체적으로 분석해주며 어떤 조건이 갖춰지면 가능한지 함께 생각한다',
         en: 'Analyze feasibility specifically and think together about what conditions would make it possible',
         ja: '実現可能性を具体的に分析し、どんな条件が整えば可能か一緒に考える',
@@ -284,7 +284,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Phân tích cụ thể tính khả thi và cùng nghĩ điều kiện nào sẽ làm nó khả thi',
         id: 'Menganalisis kelayakan secara spesifik dan bersama-sama memikirkan kondisi apa yang diperlukan',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"이 방향보다 더 효과적인 방법이 있어요"라며 대안을 제시한다',
         en: 'Suggest an alternative: "There is a more effective approach than this direction"',
         ja: '「この方向より効果的な方法があります」と代替案を提示する',
@@ -297,7 +297,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 6,
-    question: ML({
+    question: localeMap({
       ko: '상황: 팀 내에 갈등이 생겼다. 두 팀원이 의견 충돌로 분위기가 냉랭해졌다. 나는?',
       en: 'Situation: Conflict arose in the team. Two members clashed and the atmosphere turned cold. I would…',
       ja: '状況：チーム内で対立が起きた。二人の意見がぶつかり、雰囲気が冷えた。私は？',
@@ -307,7 +307,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Konflik muncul di tim. Dua anggota bentrok dan suasana menjadi dingin. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '각자를 따로 만나 속마음을 들어주고 감정을 먼저 풀어준다',
         en: 'Meet each person separately, listen to their feelings, and release emotions first',
         ja: 'それぞれと個別に会い、本音を聞いて感情を先に解く',
@@ -316,7 +316,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Gặp riêng từng người, lắng nghe tâm sự và giải tỏa cảm xúc trước',
         id: 'Bertemu masing-masing secara terpisah, mendengarkan isi hati, dan melepaskan emosi terlebih dahulu',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '전체 자리를 마련해서 두 사람이 서로 이야기할 수 있게 중재한다',
         en: 'Set up a meeting for both to talk to each other and mediate',
         ja: '全体の場を設け、二人が話し合えるよう仲介する',
@@ -325,7 +325,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Tổ chức buổi gặp để hai người nói chuyện với nhau và làm trung gian',
         id: 'Menyediakan forum agar keduanya bisa saling bicara dan menjadi mediator',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '갈등의 원인을 파악하고 구체적인 해결 방안을 제시한다',
         en: 'Identify the cause of the conflict and propose specific solutions',
         ja: '対立の原因を把握し、具体的な解決策を提示する',
@@ -334,7 +334,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Xác định nguyên nhân xung đột và đề xuất giải pháp cụ thể',
         id: 'Mengidentifikasi penyebab konflik dan mengusulkan solusi konkret',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"지금 감정보다 결과가 중요하다"며 팀이 집중해야 할 것을 상기시킨다',
         en: 'Remind the team what to focus on: "Results matter more than emotions right now"',
         ja: '「今は感情より結果が重要だ」と、チームが集中すべきことを思い出させる',
@@ -347,7 +347,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 7,
-    question: ML({
+    question: localeMap({
       ko: '상황: 팀 프로젝트가 잘 마무리됐다. 공이 누구에게 있냐는 이야기가 나왔다. 나는?',
       en: 'Situation: The team project finished well. A discussion arose about who deserves credit. I would…',
       ja: '状況：チームプロジェクトがうまく終わった。誰の手柄かという話が出た。私は？',
@@ -357,7 +357,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Proyek tim selesai dengan baik. Muncul pembicaraan soal siapa yang pantas mendapat pujian. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '"팀원들이 각자 잘해줘서 된 거예요"라며 공을 돌린다',
         en: 'Deflect credit: "It worked because each team member did well"',
         ja: '「チームメンバーそれぞれが頑張ったからです」と手柄を回す',
@@ -366,7 +366,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Chuyển công: "Là nhờ mỗi thành viên đều làm tốt"',
         id: 'Mengalihkan pujian: "Ini berhasil karena setiap anggota tim bekerja dengan baik"',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '각자가 어떤 기여를 했는지 구체적으로 짚어주며 다 같이 인정한다',
         en: 'Specifically point out each person\'s contribution and acknowledge everyone together',
         ja: '各自の貢献を具体的に指摘し、みんなで認める',
@@ -375,7 +375,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Chỉ rõ đóng góp của từng người và cùng nhau ghi nhận',
         id: 'Menunjuk secara spesifik kontribusi masing-masing dan mengakui semuanya bersama',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '성공 요인을 분석하며 다음에 더 잘할 수 있는 점도 함께 정리한다',
         en: 'Analyze success factors and also organize what can be done better next time',
         ja: '成功要因を分析し、次により良くできる点も一緒に整理する',
@@ -384,7 +384,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Phân tích yếu tố thành công và tổng hợp điểm có thể làm tốt hơn lần sau',
         id: 'Menganalisis faktor keberhasilan dan merangkum hal yang bisa lebih baik lain kali',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"우리가 방향을 잘 잡고 밀어붙인 덕분"이라며 전략적 결정을 강조한다',
         en: 'Emphasize strategic decisions: "Because we set the direction well and pushed through"',
         ja: '「方向性をうまく定めて押し切ったから」と戦略的決定を強調する',
@@ -397,7 +397,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 8,
-    question: ML({
+    question: localeMap({
       ko: '상황: 새 팀원이 합류했는데 적응을 못 하고 있는 것 같다. 나는?',
       en: 'Situation: A new team member joined but seems unable to adapt. I would…',
       ja: '状況：新しいチームメンバーが加わったが、適応できていないようだ。私は？',
@@ -407,7 +407,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Anggota tim baru bergabung tapi sepertinya belum bisa beradaptasi. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '먼저 다가가서 불편한 점이 없는지 물어보고 옆에서 챙겨준다',
         en: 'Approach first, ask if anything is uncomfortable, and look after them',
         ja: '先に声をかけ、不便がないか聞き、そばでフォローする',
@@ -416,7 +416,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Chủ động tiếp cận trước, hỏi có điều gì bất tiện không và quan tâm bên cạnh',
         id: 'Mendekati dulu, menanyakan apakah ada ketidaknyamanan, dan mendampingi',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '팀 전체가 새 팀원을 환영하는 분위기를 자연스럽게 만든다',
         en: 'Naturally create an atmosphere where the whole team welcomes the new member',
         ja: 'チーム全体が新メンバーを歓迎する雰囲気を自然に作る',
@@ -425,7 +425,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Tự nhiên tạo không khí cả nhóm chào đón thành viên mới',
         id: 'Secara alami menciptakan suasana tim menyambut anggota baru',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '새 팀원에게 프로젝트 전체 맥락을 정리해서 설명해준다',
         en: 'Organize and explain the overall project context to the new member',
         ja: '新メンバーにプロジェクト全体の文脈を整理して説明する',
@@ -434,7 +434,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Tổng hợp và giải thích bối cảnh tổng thể của dự án cho thành viên mới',
         id: 'Merangkum dan menjelaskan konteks proyek secara keseluruhan kepada anggota baru',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '새 팀원의 강점을 파악해서 역할을 빠르게 배정한다',
         en: 'Identify the new member\'s strengths and quickly assign roles',
         ja: '新メンバーの強みを把握し、役割を素早く割り当てる',
@@ -447,7 +447,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 9,
-    question: ML({
+    question: localeMap({
       ko: '상황: 회의 중 팀원 한 명이 계속 소극적이고 말을 잘 안 한다. 나는?',
       en: 'Situation: During a meeting, one team member stays passive and barely speaks. I would…',
       ja: '状況：会議中、チームメンバーの一人がずっと消極的であまり話さない。私は？',
@@ -457,7 +457,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Saat rapat, satu anggota tim terus pasif dan jarang bicara. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '눈치채고 회의 후 따로 "괜찮아요?"라고 먼저 말을 건넨다',
         en: 'Notice it and after the meeting ask separately, "Are you okay?"',
         ja: '気づいて会議後に個別に「大丈夫ですか？」と声をかける',
@@ -466,7 +466,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Nhận ra và sau họp hỏi riêng: "Bạn ổn chứ?"',
         id: 'Menyadarinya dan setelah rapat menanyakan secara terpisah, "Kamu baik-baik saja?"',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '회의 중 그 팀원에게 직접 의견을 물어보는 기회를 만든다',
         en: 'Create an opportunity during the meeting to directly ask that member\'s opinion',
         ja: '会議中にそのメンバーに直接意見を聞く機会を作る',
@@ -475,7 +475,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Tạo cơ hội trong cuộc họp để trực tiếp hỏi ý kiến thành viên đó',
         id: 'Menciptakan kesempatan saat rapat untuk langsung menanyakan pendapat anggota tersebut',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '다음 회의 전에 미리 각자 의견을 적어오도록 구조를 바꿔본다',
         en: 'Change the structure so everyone writes their opinions before the next meeting',
         ja: '次の会議前に各自意見を書いてくるよう構造を変える',
@@ -484,7 +484,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Thay đổi cấu trúc để mọi người viết ý kiến trước cuộc họp tiếp theo',
         id: 'Mengubah struktur agar semua menulis pendapat sebelum rapat berikutnya',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"모두가 참여해야 좋은 결과가 나온다"며 적극 참여를 독려한다',
         en: 'Encourage active participation: "Good results come when everyone participates"',
         ja: '「全員が参加してこそ良い結果が出る」と積極的参加を促す',
@@ -497,7 +497,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 10,
-    question: ML({
+    question: localeMap({
       ko: '상황: 팀이 예상보다 좋은 성과를 냈다. 팀원들이 쉬고 싶어한다. 나는?',
       en: 'Situation: The team achieved better results than expected. Members want to rest. I would…',
       ja: '状況：チームが予想以上の成果を出した。メンバーは休みたがっている。私は？',
@@ -507,7 +507,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Tim mencapai hasil lebih baik dari perkiraan. Anggota ingin istirahat. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '"잘 했어요. 오늘은 쉬어요"라며 먼저 쉬는 것을 지지한다',
         en: 'Support resting first: "Well done. Let\'s rest today"',
         ja: '「よく頑張りました。今日は休みましょう」と先に休息を支持する',
@@ -516,7 +516,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Ủng hộ nghỉ ngơi trước: "Làm tốt lắm. Hôm nay nghỉ đi"',
         id: 'Mendukung istirahat dulu: "Kerja bagus. Hari ini kita istirahat"',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '팀원들과 함께 성과를 축하하는 자리를 만든다',
         en: 'Create an occasion to celebrate the achievement with team members',
         ja: 'チームメンバーと一緒に成果を祝う場を作る',
@@ -525,7 +525,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Tạo dịp cùng đồng đội ăn mừng thành tích',
         id: 'Membuat momen untuk merayakan pencapaian bersama anggota tim',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '이번 성과의 원인을 분석하고 다음 단계를 준비한다',
         en: 'Analyze the causes of this achievement and prepare the next steps',
         ja: '今回の成果の原因を分析し、次のステップを準備する',
@@ -534,7 +534,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Phân tích nguyên nhân thành tích lần này và chuẩn bị bước tiếp theo',
         id: 'Menganalisis penyebab pencapaian ini dan menyiapkan langkah berikutnya',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"이 기세를 유지하면 더 큰 것도 가능하다"며 다음 목표를 제시한다',
         en: 'Present the next goal: "If we keep this momentum, we can achieve even bigger things"',
         ja: '「この勢いを保てば、もっと大きなことも可能だ」と次の目標を提示する',
@@ -547,7 +547,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 11,
-    question: ML({
+    question: localeMap({
       ko: '상황: 프로젝트 도중 외부 변수로 계획을 완전히 바꿔야 하는 상황이 됐다. 나는?',
       en: 'Situation: Mid-project, external variables require completely changing the plan. I would…',
       ja: '状況：プロジェクト途中で外部要因により計画を完全に変えなければならなくなった。私は？',
@@ -557,7 +557,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Di tengah proyek, variabel eksternal mengharuskan rencana diubah total. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '팀원들이 당황하지 않도록 먼저 안정감을 주려 한다',
         en: 'Try to give stability first so team members don\'t panic',
         ja: 'チームメンバーが慌てないよう、先に安心感を与える',
@@ -566,7 +566,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Cố tạo cảm giác ổn định trước để đồng đội không hoảng loạn',
         id: 'Memberi rasa stabil terlebih dahulu agar anggota tim tidak panik',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '팀 전체와 상황을 공유하고 새로운 방향을 함께 결정한다',
         en: 'Share the situation with the whole team and decide the new direction together',
         ja: 'チーム全体と状況を共有し、新しい方向性を一緒に決める',
@@ -575,7 +575,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Chia sẻ tình huống với cả nhóm và cùng quyết định hướng mới',
         id: 'Berbagi situasi dengan seluruh tim dan memutuskan arah baru bersama',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '변화된 상황을 빠르게 분석하고 수정 계획을 만든다',
         en: 'Quickly analyze the changed situation and create a revised plan',
         ja: '変化した状況を素早く分析し、修正計画を作る',
@@ -584,7 +584,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Phân tích nhanh tình huống thay đổi và lập kế hoạch điều chỉnh',
         id: 'Menganalisis situasi yang berubah dengan cepat dan membuat rencana revisi',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '"방향이 바뀌어도 우리가 달성해야 할 것은 같다"며 핵심을 잡는다',
         en: 'Focus on the core: "Even if the direction changes, what we must achieve stays the same"',
         ja: '「方向が変わっても、達成すべきことは同じだ」と核心を掴む',
@@ -597,7 +597,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
   },
   {
     id: 12,
-    question: ML({
+    question: localeMap({
       ko: '상황: 이 테스트를 팀원들과 같이 하게 됐다. 나는?',
       en: 'Situation: I am taking this test together with team members. I would…',
       ja: '状況：このテストをチームメンバーと一緒に受けることになった。私は？',
@@ -607,7 +607,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
       id: 'Situasi: Saya akan mengerjakan tes ini bersama anggota tim. Saya…',
     }),
     options: [
-      opt(ML({
+      opt(localeMap({
         ko: '팀원들이 재밌게 할 수 있도록 먼저 분위기를 띄운다',
         en: 'First liven the atmosphere so team members can have fun',
         ja: 'チームメンバーが楽しめるよう、先に雰囲気を盛り上げる',
@@ -616,7 +616,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Khuấy động không khí trước để đồng đội vui vẻ',
         id: 'Menyemarakkan suasana dulu agar anggota tim bisa menikmati',
     }), 0),
-      opt(ML({
+      opt(localeMap({
         ko: '"다들 결과 공유해봐요. 서로 알아가면 좋을 것 같아서"라고 제안한다',
         en: 'Suggest, "Let\'s share our results. It would be good to get to know each other"',
         ja: '「みんな結果を共有しよう。お互いを知るのに良さそう」と提案する',
@@ -625,7 +625,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Đề xuất: "Mọi người chia sẻ kết quả nhé. Biết nhau hơn sẽ tốt"',
         id: 'Mengusulkan, "Yuk bagikan hasilnya. Lebih baik kita saling kenal"',
     }), 1),
-      opt(ML({
+      opt(localeMap({
         ko: '각자 결과를 보고 팀 내 역할 분담에 어떻게 활용할지 생각해본다',
         en: 'Look at each result and think about how to use them for team role division',
         ja: '各自の結果を見て、チーム内の役割分担にどう活かすか考える',
@@ -634,7 +634,7 @@ export const phase3LeadershipStyleQuestions: Phase3LeadershipStyleQuestion[] = [
         vi: 'Xem kết quả từng người và nghĩ cách dùng cho phân công vai trò trong nhóm',
         id: 'Melihat hasil masing-masing dan memikirkan cara memanfaatkannya untuk pembagian peran tim',
     }), 2),
-      opt(ML({
+      opt(localeMap({
         ko: '팀 리더십 유형 분포를 파악해서 앞으로 팀 운영에 반영하려 한다',
         en: 'Understand the team\'s leadership type distribution and reflect it in future team operations',
         ja: 'チームのリーダーシップタイプ分布を把握し、今後のチーム運営に反映する',
@@ -651,7 +651,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
   {
     type: "Type1",
     emoji: "🤝",
-    title: ML({
+    title: localeMap({
       ko: '팀의 온도를 지키는 사람, 서번트 리더십형',
       en: 'The One Who Keeps the Team\'s Temperature, Servant Leadership Type',
       ja: 'チームの温度を保つ人、サーバント・リーダーシップ型',
@@ -660,7 +660,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Người giữ nhiệt độ nhóm, kiểu lãnh đạo phục vụ',
       id: 'Penjaga suhu tim, tipe kepemimpinan pelayan',
     }),
-    shortDescription: ML({
+    shortDescription: localeMap({
       ko: '당신이 있는 팀에서는 아무도 혼자 힘들어하지 않습니다.',
       en: 'On a team with you, no one struggles alone.',
       ja: 'あなたがいるチームでは、誰も一人で苦しまない。',
@@ -669,7 +669,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong nhóm có bạn, không ai phải vất vả một mình.',
       id: 'Di tim yang ada kamu, tidak ada yang berjuang sendirian.',
     }),
-    description: ML({
+    description: localeMap({
       ko: '팀원의 감정과 상태를 먼저 챙기고 내가 앞에 나서기보다 팀원들이 각자 잘 할 수 있는 환경을 만드는 데 집중하는 리더십입니다. 팀이 어려울 때 가장 먼저 손을 내미는 사람입니다.',
       en: 'A leadership style focused on caring for team members\' emotions and conditions first, and on creating an environment where everyone can do their best rather than stepping to the front yourself. You are the first to reach out when the team is struggling.',
       ja: 'チームメンバーの感情と状態を先に気にかけ、自分が前に出るより、各自が力を発揮できる環境づくりに集中するリーダーシップです。チームが苦しいとき、真っ先に手を差し伸べる人です。',
@@ -678,7 +678,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Đây là kiểu lãnh đạo ưu tiên cảm xúc và trạng thái của thành viên, tập trung tạo môi trường để mọi người phát huy thay vì tự mình đứng ra trước. Bạn là người đầu tiên vươn tay khi nhóm gặp khó.',
       id: 'Gaya kepemimpinan yang mengutamakan emosi dan kondisi anggota tim, fokus menciptakan lingkungan agar semua bisa bekerja optimal alih-alih tampil di depan. Kamu yang pertama mengulurkan tangan saat tim kesulitan.',
     }),
-    leadershipStyle: ML({
+    leadershipStyle: localeMap({
       ko: '서번트 리더십 🤝',
       en: 'Servant Leadership 🤝',
       ja: 'サーバント・リーダーシップ 🤝',
@@ -687,7 +687,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lãnh đạo phục vụ 🤝',
       id: 'Kepemimpinan pelayan 🤝',
     }),
-    leadershipKeywords: ML({
+    leadershipKeywords: localeMap({
       ko: '배려·지지·신뢰 형성·심리적 안전감',
       en: 'Care · Support · Trust building · Psychological safety',
       ja: '配慮・支援・信頼形成・心理的安全',
@@ -696,7 +696,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Quan tâm · Hỗ trợ · Xây dựng niềm tin · An toàn tâm lý',
       id: 'Perhatian · Dukungan · Membangun kepercayaan · Rasa aman psikologis',
     }),
-    teamRole: ML({
+    teamRole: localeMap({
       ko: '팀 분위기 관리·갈등 완충·사각지대 케어',
       en: 'Team mood management · Conflict buffering · Caring for blind spots',
       ja: 'チーム雰囲気管理・対立の緩和・盲点ケア',
@@ -705,7 +705,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Quản lý không khí nhóm · Giảm xung đột · Chăm sóc góc khuất',
       id: 'Mengelola suasana tim · Meredam konflik · Merawat titik buta',
     }),
-    strength: ML({
+    strength: localeMap({
       ko: '팀원들이 자발적으로 움직이는 심리적 안전감 형성. 장기 팀워크에서 가장 강함',
       en: 'Builds psychological safety that motivates voluntary action. Strongest in long-term teamwork.',
       ja: 'メンバーが自発的に動く心理的安全を形成。長期チームワークで最も強い。',
@@ -714,7 +714,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Tạo cảm giác an toàn tâm lý giúp mọi người chủ động hành động. Mạnh nhất trong teamwork dài hạn.',
       id: 'Membentuk rasa aman psikologis yang mendorong inisiatif. Paling kuat dalam teamwork jangka panjang.',
     }),
-    weakness: ML({
+    weakness: localeMap({
       ko: '빠른 결정이 필요한 순간에 느려질 수 있음. 때로는 방향 제시가 필요함',
       en: 'Can be slow when quick decisions are needed. Direction-setting is sometimes necessary.',
       ja: '迅速な決断が必要な場面では遅くなることがある。時には方向提示が必要。',
@@ -723,7 +723,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Có thể chậm khi cần quyết định nhanh. Đôi khi vẫn cần chỉ hướng.',
       id: 'Bisa lambat saat butuh keputusan cepat. Terkadang perlu memberi arah.',
     }),
-    goodEnvironment: ML({
+    goodEnvironment: localeMap({
       ko: '장기 프로젝트·다양한 구성원·심리적 안정이 중요한 팀',
       en: 'Long-term projects · Diverse members · Teams where psychological stability matters',
       ja: '長期プロジェクト・多様なメンバー・心理的安定が重要なチーム',
@@ -732,7 +732,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Dự án dài hạn · Thành viên đa dạng · Nhóm coi trọng ổn định tâm lý',
       id: 'Proyek jangka panjang · Anggota beragam · Tim yang mengutamakan stabilitas psikologis',
     }),
-    goodMatch: ML({
+    goodMatch: localeMap({
       ko: '방향을 잡아주는 변혁형·결단을 내리는 카리스마형과 조합 시 최강',
       en: 'Strongest paired with transformational types who set direction and charismatic types who decide',
       ja: '方向を示す変革型・決断するカリスマ型と組み合わせると最強',
@@ -741,7 +741,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Mạnh nhất khi kết hợp với kiểu biến đổi định hướng và kiểu quyết đoán',
       id: 'Paling kuat jika dipadukan dengan tipe transformasional pengarah dan tipe karismatik pengambil keputusan',
     }),
-    coverLetterPhrase: ML({
+    coverLetterPhrase: localeMap({
       ko: '저는 팀 프로젝트에서 팀원 개개인의 상태를 먼저 살피고 각자가 강점을 발휘할 수 있는 환경을 만드는 역할을 해왔습니다',
       en: 'In team projects, I have focused on checking each member\'s condition first and creating an environment where everyone can leverage their strengths.',
       ja: 'チームプロジェクトでは、メンバー一人ひとりの状態を先に見て、各自が強みを発揮できる環境づくりを担ってきました。',
@@ -750,7 +750,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong dự án nhóm, tôi thường quan sát trạng thái từng thành viên trước và tạo môi trường để mọi người phát huy điểm mạnh.',
       id: 'Dalam proyek tim, saya terbiasa memperhatikan kondisi tiap anggota terlebih dahulu dan menciptakan lingkungan agar semua bisa memaksimalkan kekuatan mereka.',
     }),
-    coverLetterMaterial: ML({
+    coverLetterMaterial: localeMap({
       ko: '팀원이 어려움을 겪을 때 먼저 다가가서 해결한 경험·심리적 안전감을 만들어 팀 성과를 높인 사례',
       en: 'Experience approaching a struggling teammate first to help · Cases where building psychological safety improved team performance',
       ja: 'メンバーが苦しいときに先に声をかけて解決した経験・心理的安全を作りチーム成果を高めた事例',
@@ -759,7 +759,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kinh nghiệm chủ động giúp đỡ khi đồng đội gặp khó · Trường hợp tạo an toàn tâm lý và nâng hiệu suất nhóm',
       id: 'Pengalaman mendekati anggota yang kesulitan dan membantu · Contoh membangun rasa aman psikologis untuk meningkatkan kinerja tim',
     }),
-    shareLine: ML({
+    shareLine: localeMap({
       ko: '내 리더십 스타일: 서번트형 🤝 팀원 먼저 챙기는 유형이래... 내 팀원들은 혼자 힘들어하지 않는다는 거 인정 → 너는 어떤 리더십 스타일이야? 자소서 소재로도 써봐',
       en: 'My leadership style: Servant type 🤝 They say I take care of teammates first... Admit it, my team never struggles alone → What\'s your leadership style? Try it for your cover letter too.',
       ja: '私のリーダーシップスタイル：サーバント型 🤝 チームメンバーを先に気にかけるタイプらしい…一人で苦しまないって認めて → あなたはどんなリーダーシップ？',
@@ -772,7 +772,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
   {
     type: "Type2",
     emoji: "🗣️",
-    title: ML({
+    title: localeMap({
       ko: '모두의 목소리를 담는 사람, 민주적 리더십형',
       en: 'The One Who Holds Everyone\'s Voice, Democratic Leadership Type',
       ja: 'みんなの声を受け止める人、民主的リーダーシップ型',
@@ -781,7 +781,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Người lắng nghe mọi tiếng nói, kiểu lãnh đạo dân chủ',
       id: 'Penampung suara semua orang, tipe kepemimpinan demokratis',
     }),
-    shortDescription: ML({
+    shortDescription: localeMap({
       ko: '당신이 있는 회의에서는 아무도 소외되지 않습니다.',
       en: 'In meetings with you, no one is left out.',
       ja: 'あなたがいる会議では、誰も置き去りにされない。',
@@ -790,7 +790,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong cuộc họp có bạn, không ai bị bỏ rơi.',
       id: 'Dalam rapat yang ada kamu, tidak ada yang terpinggirkan.',
     }),
-    description: ML({
+    description: localeMap({
       ko: '팀원 모두의 의견을 끌어내고 그 안에서 공통점을 찾아 합의점을 만드는 리더십입니다. 결정을 독단적으로 내리지 않고 팀 전체가 동의한 방향으로 나아가게 합니다. 팀원들이 결정에 주인의식을 갖게 만드는 것이 강점입니다.',
       en: 'A leadership style that draws out everyone\'s opinions, finds common ground, and builds consensus. Rather than deciding alone, you move the team in a direction everyone agrees on. Your strength is giving members ownership over decisions.',
       ja: 'チーム全員の意見を引き出し、その中から共通点を見つけ合意点を作るリーダーシップです。独断的に決めず、チーム全体が納得した方向へ進めます。決定への当事者意識を持たせるのが強みです。',
@@ -799,7 +799,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kiểu lãnh đạo khai thác ý kiến mọi người, tìm điểm chung và tạo thỏa thuận. Không quyết định độc đoán mà dẫn nhóm theo hướng mọi người đồng ý. Mạnh ở việc tạo cảm giác chủ động với quyết định.',
       id: 'Gaya kepemimpinan yang menggali pendapat semua anggota, mencari titik temu, dan membangun konsensus. Tidak memutuskan sendiri, melainkan mengarahkan tim ke arah yang disepakati bersama. Kuat dalam memberi rasa kepemilikan atas keputusan.',
     }),
-    leadershipStyle: ML({
+    leadershipStyle: localeMap({
       ko: '민주적 리더십 🗣️',
       en: 'Democratic Leadership 🗣️',
       ja: '民主的リーダーシップ 🗣️',
@@ -808,7 +808,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lãnh đạo dân chủ 🗣️',
       id: 'Kepemimpinan demokratis 🗣️',
     }),
-    leadershipKeywords: ML({
+    leadershipKeywords: localeMap({
       ko: '소통·합의·참여·수평적 관계',
       en: 'Communication · Consensus · Participation · Horizontal relationships',
       ja: 'コミュニケーション・合意・参加・水平関係',
@@ -817,7 +817,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Giao tiếp · Thỏa thuận · Tham gia · Quan hệ bình đẳng',
       id: 'Komunikasi · Konsensus · Partisipasi · Relasi horizontal',
     }),
-    teamRole: ML({
+    teamRole: localeMap({
       ko: '회의 진행·의견 조율·팀 합의 도출',
       en: 'Facilitating meetings · Coordinating opinions · Building team consensus',
       ja: '会議進行・意見調整・チーム合意形成',
@@ -826,7 +826,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Điều phối họp · Hòa giải ý kiến · Tạo đồng thuận nhóm',
       id: 'Memimpin rapat · Menyelaraskan pendapat · Membentuk konsensus tim',
     }),
-    strength: ML({
+    strength: localeMap({
       ko: '팀 전체의 참여도와 주인의식이 높아짐. 다양한 의견이 반영된 결과물 도출',
       en: 'Higher participation and ownership across the team. Outcomes reflect diverse opinions.',
       ja: 'チーム全体の参加度と当事者意識が高まる。多様な意見が反映された成果。',
@@ -835,7 +835,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Tăng mức tham gia và tinh thần chủ động của cả nhóm. Kết quả phản ánh nhiều quan điểm.',
       id: 'Partisipasi dan rasa kepemilikan tim meningkat. Hasil mencerminkan beragam pendapat.',
     }),
-    weakness: ML({
+    weakness: localeMap({
       ko: '의사결정이 느려질 수 있음. 의견이 너무 다를 때 합의가 어렵고 시간이 오래 걸림',
       en: 'Decisions can be slow. When opinions diverge too much, consensus is hard and takes time.',
       ja: '意思決定が遅くなることがある。意見が大きく分かれると合意に時間がかかる。',
@@ -844,7 +844,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Quyết định có thể chậm. Khi ý kiến quá khác nhau, khó thỏa thuận và mất thời gian.',
       id: 'Keputusan bisa lambat. Saat pendapat terlalu berbeda, konsensus sulit dan memakan waktu.',
     }),
-    goodEnvironment: ML({
+    goodEnvironment: localeMap({
       ko: '창의적 문제 해결·다양한 전문성이 모인 팀·구성원의 자율성이 중요한 환경',
       en: 'Creative problem-solving · Teams with diverse expertise · Environments that value autonomy',
       ja: '創造的な問題解決・多様な専門性のチーム・メンバーの自律性が重要な環境',
@@ -853,7 +853,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Giải quyết vấn đề sáng tạo · Nhóm đa chuyên môn · Môi trường coi trọng tự chủ',
       id: 'Penyelesaian masalah kreatif · Tim dengan keahlian beragam · Lingkungan yang menghargai otonomi',
     }),
-    goodMatch: ML({
+    goodMatch: localeMap({
       ko: '빠른 결단의 카리스마형·구조를 잡는 전략형과 조합 시 균형',
       en: 'Balanced when paired with charismatic types for quick decisions and strategic types for structure',
       ja: '迅速な決断のカリスマ型・構造を作る戦略型と組み合わせるとバランスが取れる',
@@ -862,7 +862,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Cân bằng hơn khi kết hợp với kiểu quyết đoán và kiểu chiến lược',
       id: 'Lebih seimbang jika dipadukan dengan tipe karismatik pengambil keputusan dan tipe strategis penyusun struktur',
     }),
-    coverLetterPhrase: ML({
+    coverLetterPhrase: localeMap({
       ko: '저는 팀 의사결정 과정에서 구성원 모두의 의견을 수렴하고 합의점을 찾는 방식으로 팀의 방향성을 설정해왔습니다',
       en: 'In team decision-making, I have set direction by gathering everyone\'s opinions and finding consensus.',
       ja: 'チームの意思決定では、構成員全員の意見を集め、合意点を見つける方法で方向性を定めてきました。',
@@ -871,7 +871,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong quyết định nhóm, tôi thu thập ý kiến mọi người và tìm điểm đồng thuận để định hướng.',
       id: 'Dalam pengambilan keputusan tim, saya mengumpulkan pendapat semua anggota dan mencari konsensus untuk menetapkan arah.',
     }),
-    coverLetterMaterial: ML({
+    coverLetterMaterial: localeMap({
       ko: '의견 충돌이 있는 팀에서 모두가 납득할 수 있는 결론을 이끌어낸 경험',
       en: 'Experience leading a divided team to a conclusion everyone could accept',
       ja: '意見が対立するチームで、全員が納得できる結論を導いた経験',
@@ -880,7 +880,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kinh nghiệm dẫn dắt nhóm ý kiến xung đột đến kết luận mọi người chấp nhận',
       id: 'Pengalaman memimpin tim dengan konflik pendapat menuju kesimpulan yang diterima semua',
     }),
-    shareLine: ML({
+    shareLine: localeMap({
       ko: '내 리더십 스타일: 민주형 🗣️ 모두의 의견 담아서 합의 이끄는 유형이래... 회의에서 아무도 소외 안 된다는 거 맞음 → 너는 어떤 리더십 스타일이야?',
       en: 'My leadership style: Democratic type 🗣️ They say I lead consensus by holding everyone\'s voice... True, no one gets left out in my meetings → What\'s your leadership style?',
       ja: '私のリーダーシップスタイル：民主型 🗣️ みんなの意見を集めて合意を導くタイプらしい…会議で誰も置き去りにしないのは本当 → あなたは？',
@@ -893,7 +893,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
   {
     type: "Type3",
     emoji: "📈",
-    title: ML({
+    title: localeMap({
       ko: '팀원을 성장시키는 사람, 코칭 리더십형',
       en: 'The One Who Grows Team Members, Coaching Leadership Type',
       ja: 'チームメンバーを成長させる人、コーチング・リーダーシップ型',
@@ -902,7 +902,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Người giúp thành viên trưởng thành, kiểu lãnh đạo huấn luyện',
       id: 'Pengembang anggota tim, tipe kepemimpinan coaching',
     }),
-    shortDescription: ML({
+    shortDescription: localeMap({
       ko: '당신 팀의 팀원들은 프로젝트가 끝나고 나서 더 성장해있습니다.',
       en: 'On your team, members grow more by the time the project ends.',
       ja: 'あなたのチームでは、プロジェクトが終わる頃にメンバーがより成長している。',
@@ -911,7 +911,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong nhóm của bạn, thành viên trưởng thành hơn khi dự án kết thúc.',
       id: 'Di tim kamu, anggota tumbuh lebih baik saat proyek selesai.',
     }),
-    description: ML({
+    description: localeMap({
       ko: '결과물만큼 팀원의 성장을 중요하게 여기고 피드백을 통해 팀원이 스스로 문제를 해결하도록 돕는 리더십입니다. 답을 직접 주기보다 팀원이 스스로 찾아낼 수 있도록 질문하고 구조를 만들어줍니다.',
       en: 'A leadership style that values member growth as much as outcomes and helps them solve problems through feedback. Rather than giving answers directly, you ask questions and build structure so members can find solutions themselves.',
       ja: '成果物と同じくらいメンバーの成長を大切にし、フィードバックを通じて自ら問題を解決できるよう支援するリーダーシップです。答えを直接与えるより、質問と構造づくりで自分で見つけられるようにします。',
@@ -920,7 +920,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kiểu lãnh đạo coi trọng sự trưởng thành của thành viên như kết quả, giúp họ tự giải quyết vấn đề qua phản hồi. Thay vì đưa đáp án, bạn đặt câu hỏi và tạo cấu trúc để họ tự tìm ra.',
       id: 'Gaya kepemimpinan yang menganggap pertumbuhan anggota sepenting hasil, membantu mereka menyelesaikan masalah lewat feedback. Alih-alih memberi jawaban langsung, kamu bertanya dan membangun struktur agar mereka menemukannya sendiri.',
     }),
-    leadershipStyle: ML({
+    leadershipStyle: localeMap({
       ko: '코칭 리더십 📈',
       en: 'Coaching Leadership 📈',
       ja: 'コーチング・リーダーシップ 📈',
@@ -929,7 +929,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lãnh đạo huấn luyện 📈',
       id: 'Kepemimpinan coaching 📈',
     }),
-    leadershipKeywords: ML({
+    leadershipKeywords: localeMap({
       ko: '성장·피드백·질문·잠재력 발굴',
       en: 'Growth · Feedback · Questions · Unlocking potential',
       ja: '成長・フィードバック・質問・潜在力の発掘',
@@ -938,7 +938,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trưởng thành · Phản hồi · Câu hỏi · Khai phá tiềm năng',
       id: 'Pertumbuhan · Feedback · Pertanyaan · Menggali potensi',
     }),
-    teamRole: ML({
+    teamRole: localeMap({
       ko: '팀원 역량 개발·피드백 제공·문제 해결 구조화',
       en: 'Developing member capabilities · Providing feedback · Structuring problem-solving',
       ja: 'メンバーの能力開発・フィードバック提供・問題解決の構造化',
@@ -947,7 +947,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Phát triển năng lực thành viên · Đưa phản hồi · Cấu trúc hóa giải quyết vấn đề',
       id: 'Mengembangkan kapabilitas anggota · Memberi feedback · Menstrukturkan penyelesaian masalah',
     }),
-    strength: ML({
+    strength: localeMap({
       ko: '팀원 개개인의 역량이 올라가 장기적으로 팀 전체 수준이 높아짐. 신뢰 관계 형성',
       en: 'Individual capabilities rise, raising the team\'s overall level long-term. Builds trust.',
       ja: '個々の能力が上がり、長期的にチーム全体のレベルが高まる。信頼関係を築く。',
@@ -956,7 +956,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Năng lực từng người tăng, nâng trình độ cả nhóm về lâu dài. Xây dựng niềm tin.',
       id: 'Kapabilitas tiap anggota naik, meningkatkan level tim jangka panjang. Membangun kepercayaan.',
     }),
-    weakness: ML({
+    weakness: localeMap({
       ko: '빠른 결과가 필요할 때 코칭 과정이 느리게 느껴질 수 있음',
       en: 'The coaching process can feel slow when fast results are needed.',
       ja: '早い結果が必要なとき、コーチング過程が遅く感じられることがある。',
@@ -965,7 +965,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Khi cần kết quả nhanh, quá trình coaching có thể cảm thấy chậm.',
       id: 'Saat butuh hasil cepat, proses coaching bisa terasa lambat.',
     }),
-    goodEnvironment: ML({
+    goodEnvironment: localeMap({
       ko: '구성원 성장이 중요한 팀·멘토링 역할이 필요한 환경·장기 프로젝트',
       en: 'Teams where member growth matters · Environments needing mentoring · Long-term projects',
       ja: 'メンバーの成長が重要なチーム・メンタリングが必要な環境・長期プロジェクト',
@@ -974,7 +974,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Nhóm coi trọng sự trưởng thành · Môi trường cần mentoring · Dự án dài hạn',
       id: 'Tim yang mengutamakan pertumbuhan · Lingkungan butuh mentoring · Proyek jangka panjang',
     }),
-    goodMatch: ML({
+    goodMatch: localeMap({
       ko: '속도를 높이는 카리스마형·방향을 잡는 변혁형과 조합 시 강력',
       en: 'Powerful paired with charismatic types that increase speed and transformational types that set direction',
       ja: 'スピードを上げるカリスマ型・方向を示す変革型と組み合わせると強力',
@@ -983,7 +983,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Mạnh khi kết hợp với kiểu quyết đoán tăng tốc và kiểu biến đổi định hướng',
       id: 'Kuat jika dipadukan dengan tipe karismatik penggerak kecepatan dan tipe transformasional pengarah',
     }),
-    coverLetterPhrase: ML({
+    coverLetterPhrase: localeMap({
       ko: '저는 팀 프로젝트에서 팀원이 스스로 문제를 해결할 수 있도록 구체적인 피드백과 질문을 통해 역량 개발을 지원해왔습니다',
       en: 'In team projects, I have supported capability development through specific feedback and questions so members can solve problems on their own.',
       ja: 'チームプロジェクトでは、具体的なフィードバックと質問を通じて、メンバーが自ら問題を解決できるよう能力開発を支援してきました。',
@@ -992,7 +992,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong dự án nhóm, tôi hỗ trợ phát triển năng lực bằng phản hồi và câu hỏi cụ thể để thành viên tự giải quyết vấn đề.',
       id: 'Dalam proyek tim, saya mendukung pengembangan kapabilitas lewat feedback dan pertanyaan spesifik agar anggota menyelesaikan masalah sendiri.',
     }),
-    coverLetterMaterial: ML({
+    coverLetterMaterial: localeMap({
       ko: '성과가 낮은 팀원에게 피드백을 제공해 성과를 끌어올린 경험·신입 팀원의 성장을 도운 경험',
       en: 'Experience raising performance through feedback for low-performing members · Experience helping new members grow',
       ja: '成果が低いメンバーにフィードバックを提供して成果を引き上げた経験・新入メンバーの成長を支援した経験',
@@ -1001,7 +1001,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kinh nghiệm nâng hiệu suất thành viên kém bằng phản hồi · Kinh nghiệm giúp thành viên mới trưởng thành',
       id: 'Pengalaman meningkatkan kinerja anggota lemah lewat feedback · Pengalaman membantu pertumbuhan anggota baru',
     }),
-    shareLine: ML({
+    shareLine: localeMap({
       ko: '내 리더십 스타일: 코칭형 📈 팀원 성장시키는 유형이래... 피드백 주는 거 자연스럽게 하는 거 맞음 ㅋㅋ → 자소서 리더십 소재 고민이면 해봐',
       en: 'My leadership style: Coaching type 📈 They say I grow teammates... Giving feedback comes naturally, right? → Try this if you need cover letter leadership material.',
       ja: '私のリーダーシップスタイル：コーチング型 📈 チームメンバーを成長させるタイプらしい…フィードバックが自然 → 自己PRのリーダーシップ素材にどうぞ',
@@ -1014,7 +1014,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
   {
     type: "Type4",
     emoji: "🌟",
-    title: ML({
+    title: localeMap({
       ko: '팀에 비전을 심는 사람, 변혁적 리더십형',
       en: 'The One Who Plants Vision in the Team, Transformational Leadership Type',
       ja: 'チームにビジョンを植える人、変革的リーダーシップ型',
@@ -1023,7 +1023,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Người gieo tầm nhìn vào nhóm, kiểu lãnh đạo biến đổi',
       id: 'Penanam visi di tim, tipe kepemimpinan transformasional',
     }),
-    shortDescription: ML({
+    shortDescription: localeMap({
       ko: '당신이 있는 팀은 그냥 일이 아니라 의미 있는 일을 하고 있다고 느낍니다.',
       en: 'On a team with you, work feels meaningful—not just tasks.',
       ja: 'あなたがいるチームでは、ただの仕事ではなく意味のある仕事をしていると感じる。',
@@ -1032,7 +1032,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Nhóm có bạn cảm thấy mình không chỉ làm việc mà đang làm điều có ý nghĩa.',
       id: 'Tim yang ada kamu merasa sedang melakukan pekerjaan bermakna, bukan sekadar tugas.',
     }),
-    description: ML({
+    description: localeMap({
       ko: '팀이 지금 하는 일이 왜 중요한지 이해하게 만들고 더 큰 목표를 향해 동기를 부여하는 리더십입니다. 결과물보다 팀이 나아가는 방향과 의미에 집중하며 팀원들의 내적 동기를 이끌어냅니다.',
       en: 'A leadership style that helps the team understand why their work matters and motivates them toward bigger goals. Focused on direction and meaning rather than outputs alone, it draws out members\' intrinsic motivation.',
       ja: 'チームが今の仕事がなぜ重要かを理解し、より大きな目標へ動機づけするリーダーシップです。成果物より進む方向と意味に集中し、内発的動機を引き出します。',
@@ -1041,7 +1041,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kiểu lãnh đạo giúp nhóm hiểu vì sao công việc hiện tại quan trọng và thúc đẩy họ hướng tới mục tiêu lớn hơn. Tập trung vào hướng đi và ý nghĩa, khai thác động lực nội tại.',
       id: 'Gaya kepemimpinan yang membantu tim memahami mengapa pekerjaan mereka penting dan memotivasi menuju tujuan lebih besar. Fokus pada arah dan makna, menggali motivasi intrinsik anggota.',
     }),
-    leadershipStyle: ML({
+    leadershipStyle: localeMap({
       ko: '변혁적 리더십 🌟',
       en: 'Transformational Leadership 🌟',
       ja: '変革的リーダーシップ 🌟',
@@ -1050,7 +1050,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lãnh đạo biến đổi 🌟',
       id: 'Kepemimpinan transformasional 🌟',
     }),
-    leadershipKeywords: ML({
+    leadershipKeywords: localeMap({
       ko: '비전·동기부여·의미·영향력',
       en: 'Vision · Motivation · Meaning · Influence',
       ja: 'ビジョン・動機づけ・意味・影響力',
@@ -1059,7 +1059,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Tầm nhìn · Động lực · Ý nghĩa · Ảnh hưởng',
       id: 'Visi · Motivasi · Makna · Pengaruh',
     }),
-    teamRole: ML({
+    teamRole: localeMap({
       ko: '방향 설정·팀 동기부여·의미 부여',
       en: 'Setting direction · Motivating the team · Creating meaning',
       ja: '方向設定・チームの動機づけ・意味付け',
@@ -1068,7 +1068,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Định hướng · Truyền động lực · Tạo ý nghĩa',
       id: 'Menetapkan arah · Memotivasi tim · Memberi makna',
     }),
-    strength: ML({
+    strength: localeMap({
       ko: '팀원들의 내적 동기가 높아져 자발적이고 창의적인 기여가 늘어남',
       en: 'Higher intrinsic motivation leads to more voluntary and creative contributions.',
       ja: '内発的動機が高まり、自発的で創造的な貢献が増える。',
@@ -1077,7 +1077,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Động lực nội tại tăng, đóng góp chủ động và sáng tạo nhiều hơn.',
       id: 'Motivasi intrinsik meningkat, kontribusi spontan dan kreatif bertambah.',
     }),
-    weakness: ML({
+    weakness: localeMap({
       ko: '현실적인 실행 계획 수립이 약할 수 있음. 구체적인 실행 역할이 함께 필요',
       en: 'Realistic execution planning may be weaker. Needs partners for concrete execution.',
       ja: '現実的な実行計画が弱くなることがある。具体的な実行役が必要。',
@@ -1086,7 +1086,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lập kế hoạch thực thi thực tế có thể yếu, cần vai trò thực thi cụ thể.',
       id: 'Perencanaan eksekusi realistis bisa lemah, perlu peran eksekusi konkret.',
     }),
-    goodEnvironment: ML({
+    goodEnvironment: localeMap({
       ko: '새로운 도전·창의성이 필요한 프로젝트·팀 동기가 낮은 상황',
       en: 'New challenges · Projects needing creativity · Situations with low team motivation',
       ja: '新しい挑戦・創造性が必要なプロジェクト・チームの動機が低い状況',
@@ -1095,7 +1095,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Thử thách mới · Dự án cần sáng tạo · Khi động lực nhóm thấp',
       id: 'Tantangan baru · Proyek butuh kreativitas · Saat motivasi tim rendah',
     }),
-    goodMatch: ML({
+    goodMatch: localeMap({
       ko: '실행력의 카리스마형·구체적 계획의 전략형과 조합 시 최강',
       en: 'Strongest paired with charismatic types for execution and strategic types for concrete plans',
       ja: '実行力のカリスマ型・具体計画の戦略型と組み合わせると最強',
@@ -1104,7 +1104,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Mạnh nhất khi kết hợp với kiểu quyết đoán mạnh về thực thi và kiểu chiến lược lập kế hoạch cụ thể',
       id: 'Paling kuat jika dipadukan dengan tipe karismatik eksekutor dan tipe strategis perencana',
     }),
-    coverLetterPhrase: ML({
+    coverLetterPhrase: localeMap({
       ko: '저는 팀 프로젝트에서 구성원들이 프로젝트의 의미와 목표를 명확히 이해하도록 방향을 제시하고 팀의 내적 동기를 이끌어내는 역할을 해왔습니다',
       en: 'In team projects, I have set direction so members clearly understand the project\'s meaning and goals, drawing out the team\'s intrinsic motivation.',
       ja: 'チームプロジェクトでは、メンバーがプロジェクトの意味と目標を明確に理解できるよう方向を示し、内発的動機を引き出す役割を担ってきました。',
@@ -1113,7 +1113,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong dự án nhóm, tôi định hướng để mọi người hiểu rõ ý nghĩa và mục tiêu, khai thác động lực nội tại của nhóm.',
       id: 'Dalam proyek tim, saya memberi arah agar anggota memahami makna dan tujuan proyek, serta menggali motivasi intrinsik tim.',
     }),
-    coverLetterMaterial: ML({
+    coverLetterMaterial: localeMap({
       ko: '팀 사기가 낮을 때 방향을 재설정해서 분위기를 바꾼 경험·의미 있는 프로젝트로 팀을 이끈 경험',
       en: 'Experience resetting direction when morale was low · Experience leading the team through a meaningful project',
       ja: 'チームの士気が低いときに方向を再設定して雰囲気を変えた経験・意味あるプロジェクトでチームを導いた経験',
@@ -1122,7 +1122,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kinh nghiệm định hướng lại khi tinh thần nhóm thấp · Kinh nghiệm dẫn nhóm qua dự án có ý nghĩa',
       id: 'Pengalaman menetapkan ulang arah saat moral tim rendah · Pengalaman memimpin tim dalam proyek bermakna',
     }),
-    shareLine: ML({
+    shareLine: localeMap({
       ko: '내 리더십 스타일: 변혁형 🌟 팀에 비전 심는 유형이래... 방향 제시하는 거 자연스럽게 하는 편 → 너는 어떤 리더십 스타일이야? 자소서 소재로 써봐',
       en: 'My leadership style: Transformational type 🌟 They say I plant vision in the team... Setting direction comes naturally → What\'s your leadership style? Try it for your cover letter.',
       ja: '私のリーダーシップスタイル：変革型 🌟 チームにビジョンを植えるタイプらしい…方向提示が自然 → あなたは？',
@@ -1135,7 +1135,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
   {
     type: "Type5",
     emoji: "⚡",
-    title: ML({
+    title: localeMap({
       ko: '팀을 앞에서 이끄는 사람, 카리스마 리더십형',
       en: 'The One Who Leads from the Front, Charismatic Leadership Type',
       ja: 'チームを前から引く人、カリスマ・リーダーシップ型',
@@ -1144,7 +1144,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Người dẫn dắt nhóm từ phía trước, kiểu lãnh đạo quyến rũ',
       id: 'Pemimpin dari depan, tipe kepemimpinan karismatik',
     }),
-    shortDescription: ML({
+    shortDescription: localeMap({
       ko: '당신이 있는 팀은 어렵고 복잡한 상황에서도 멈추지 않습니다.',
       en: 'On a team with you, they don\'t stop—even in tough, complex situations.',
       ja: 'あなたがいるチームは、難しく複雑な状況でも止まらない。',
@@ -1153,7 +1153,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Nhóm có bạn không dừng lại dù tình huống khó và phức tạp.',
       id: 'Tim yang ada kamu tidak berhenti meski situasinya sulit dan rumit.',
     }),
-    description: ML({
+    description: localeMap({
       ko: '빠른 판단과 강한 추진력으로 팀이 앞으로 나아가게 만드는 리더십입니다. 갈등이 있거나 방향이 흔들릴 때 명확한 결정을 내리고 팀을 이끄는 역할을 자연스럽게 맡습니다. 위기 상황에서 가장 빛나는 리더십입니다.',
       en: 'A leadership style that moves the team forward with quick judgment and strong drive. When conflict arises or direction wavers, you naturally make clear decisions and lead. It shines brightest in crisis.',
       ja: '迅速な判断と強い推進力でチームを前に進めるリーダーシップです。対立や方向の揺れがあるとき、明確な決断を下してチームを導く役割を自然に担います。危機で最も輝きます。',
@@ -1162,7 +1162,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kiểu lãnh đạo đẩy nhóm tiến lên bằng phán đoán nhanh và động lực mạnh. Khi xung đột hoặc hướng đi lung lay, bạn tự nhiên quyết đoán và dẫn dắt. Tỏa sáng nhất trong khủng hoảng.',
       id: 'Gaya kepemimpinan yang mendorong tim maju dengan penilaian cepat dan dorongan kuat. Saat konflik atau arah goyah, kamu natural mengambil keputusan jelas dan memimpin. Paling bersinar saat krisis.',
     }),
-    leadershipStyle: ML({
+    leadershipStyle: localeMap({
       ko: '카리스마 리더십 ⚡',
       en: 'Charismatic Leadership ⚡',
       ja: 'カリスマ・リーダーシップ ⚡',
@@ -1171,7 +1171,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lãnh đạo quyến rũ ⚡',
       id: 'Kepemimpinan karismatik ⚡',
     }),
-    leadershipKeywords: ML({
+    leadershipKeywords: localeMap({
       ko: '결단력·추진력·명확성·위기 대응',
       en: 'Decisiveness · Drive · Clarity · Crisis response',
       ja: '決断力・推進力・明確性・危機対応',
@@ -1180,7 +1180,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Quyết đoán · Thúc đẩy · Rõ ràng · Ứng phó khủng hoảng',
       id: 'Ketegasan · Dorongan · Kejelasan · Respons krisis',
     }),
-    teamRole: ML({
+    teamRole: localeMap({
       ko: '방향 결정·위기 관리·팀 추진력 유지',
       en: 'Decision-making · Crisis management · Maintaining team momentum',
       ja: '方向決定・危機管理・チームの推進力維持',
@@ -1189,7 +1189,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Quyết định hướng đi · Quản lý khủng hoảng · Duy trì đà nhóm',
       id: 'Pengambilan keputusan arah · Manajemen krisis · Menjaga momentum tim',
     }),
-    strength: ML({
+    strength: localeMap({
       ko: '빠른 실행력·위기 상황 돌파·강한 팀 응집력 형성',
       en: 'Fast execution · Breaking through crises · Strong team cohesion',
       ja: '迅速な実行力・危機突破・強いチーム結束',
@@ -1198,7 +1198,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Thực thi nhanh · Vượt qua khủng hoảng · Gắn kết nhóm mạnh',
       id: 'Eksekusi cepat · Menembus krisis · Kohesi tim kuat',
     }),
-    weakness: ML({
+    weakness: localeMap({
       ko: '팀원 의견을 충분히 반영하지 못할 수 있음. 심리적 안전감 관리가 필요',
       en: 'May not reflect member opinions enough. Psychological safety needs attention.',
       ja: 'メンバーの意見を十分に反映できないことがある。心理的安全の管理が必要。',
@@ -1207,7 +1207,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Có thể chưa phản ánh đủ ý kiến thành viên, cần chú ý an toàn tâm lý.',
       id: 'Mungkin belum cukup mengakomodasi pendapat anggota, perlu perhatian pada rasa aman psikologis.',
     }),
-    goodEnvironment: ML({
+    goodEnvironment: localeMap({
       ko: '빠른 결정이 필요한 환경·위기 상황·단기 집중 프로젝트',
       en: 'Environments needing quick decisions · Crises · Short, focused projects',
       ja: '迅速な決断が必要な環境・危機状況・短期集中プロジェクト',
@@ -1216,7 +1216,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Môi trường cần quyết định nhanh · Khủng hoảng · Dự án ngắn hạn tập trung',
       id: 'Lingkungan butuh keputusan cepat · Krisis · Proyek fokus jangka pendek',
     }),
-    goodMatch: ML({
+    goodMatch: localeMap({
       ko: '팀원을 챙기는 서번트형·의견을 모으는 민주형과 조합 시 균형',
       en: 'Balanced when paired with servant types who care for members and democratic types who gather opinions',
       ja: 'メンバーをケアするサーバント型・意見を集める民主型と組み合わせるとバランスが取れる',
@@ -1225,7 +1225,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Cân bằng hơn khi kết hợp với kiểu phục vụ và kiểu dân chủ',
       id: 'Lebih seimbang jika dipadukan dengan tipe pelayan dan tipe demokratis',
     }),
-    coverLetterPhrase: ML({
+    coverLetterPhrase: localeMap({
       ko: '저는 팀 프로젝트에서 명확한 방향 결정과 강한 추진력으로 팀이 어려운 상황에서도 목표를 향해 나아갈 수 있도록 이끌었습니다',
       en: 'In team projects, I have led with clear direction and strong drive so the team could keep moving toward goals even in difficult situations.',
       ja: 'チームプロジェクトでは、明確な方向決定と強い推進力で、困難な状況でも目標に向かって進めるようチームを導きました。',
@@ -1234,7 +1234,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong dự án nhóm, tôi dẫn dắt bằng quyết định rõ ràng và động lực mạnh để nhóm vẫn tiến tới mục tiêu dù khó khăn.',
       id: 'Dalam proyek tim, saya memimpin dengan arah jelas dan dorongan kuat agar tim tetap menuju target meski situasinya sulit.',
     }),
-    coverLetterMaterial: ML({
+    coverLetterMaterial: localeMap({
       ko: '마감 위기 상황에서 팀을 이끌어 결과물을 낸 경험·갈등 상황에서 빠른 결정으로 돌파한 경험',
       en: 'Experience delivering results by leading the team through deadline crises · Experience breaking through conflict with quick decisions',
       ja: '締切危機でチームを導いて成果を出した経験・対立状況で迅速な決断で突破した経験',
@@ -1243,7 +1243,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kinh nghiệm dẫn nhóm hoàn thành sản phẩm trong khủng hoảng deadline · Kinh nghiệm vượt xung đột bằng quyết định nhanh',
       id: 'Pengalaman memimpin tim menyelesaikan deliverable saat krisis deadline · Pengalaman menembus konflik dengan keputusan cepat',
     }),
-    shareLine: ML({
+    shareLine: localeMap({
       ko: '내 리더십 스타일: 카리스마형 ⚡ 위기 상황에서 빛나는 유형이래... 마감 때 팀 이끄는 거 내 스타일 맞음 ㅋㅋ → 너는 어떤 유형이야?',
       en: 'My leadership style: Charismatic type ⚡ They say I shine in crisis... Leading the team at deadlines is my style → What\'s your type?',
       ja: '私のリーダーシップスタイル：カリスマ型 ⚡ 危機で輝くタイプらしい…締切前にチームを引くのは自分のスタイル → あなたは？',
@@ -1256,7 +1256,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
   {
     type: "Type6",
     emoji: "🎯",
-    title: ML({
+    title: localeMap({
       ko: '성과를 설계하는 사람, 전략적 리더십형',
       en: 'The One Who Designs Results, Strategic Leadership Type',
       ja: '成果を設計する人、戦略的リーダーシップ型',
@@ -1265,7 +1265,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Người thiết kế kết quả, kiểu lãnh đạo chiến lược',
       id: 'Perancang hasil, tipe kepemimpinan strategis',
     }),
-    shortDescription: ML({
+    shortDescription: localeMap({
       ko: '당신이 있는 팀은 왜 잘 됐는지 설명할 수 있습니다.',
       en: 'On a team with you, they can explain why things went well.',
       ja: 'あなたがいるチームは、なぜうまくいったか説明できる。',
@@ -1274,7 +1274,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Nhóm có bạn giải thích được vì sao làm tốt.',
       id: 'Tim yang ada kamu bisa menjelaskan mengapa hasilnya baik.',
     }),
-    description: ML({
+    description: localeMap({
       ko: '팀의 상황을 체계적으로 분석하고 최적의 전략을 설계하며 팀이 효율적으로 움직이도록 구조를 만드는 리더십입니다. 감정보다 데이터를 중심으로 판단하고 성과에 집중합니다.',
       en: 'A leadership style that systematically analyzes the team\'s situation, designs optimal strategy, and builds structure for efficient movement. Judgment centers on data over emotion, with a focus on performance.',
       ja: 'チームの状況を体系的に分析し、最適な戦略を設計して効率的に動ける構造を作るリーダーシップです。感情よりデータを中心に判断し、成果に集中します。',
@@ -1283,7 +1283,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kiểu lãnh đạo phân tích có hệ thống, thiết kế chiến lược tối ưu và tạo cấu trúc vận hành hiệu quả. Phán đoán dựa trên dữ liệu hơn cảm xúc, tập trung vào kết quả.',
       id: 'Gaya kepemimpinan yang menganalisis situasi tim secara sistematis, merancang strategi optimal, dan membangun struktur agar tim bergerak efisien. Penilaian berpusat pada data, fokus pada kinerja.',
     }),
-    leadershipStyle: ML({
+    leadershipStyle: localeMap({
       ko: '전략적 리더십 🎯',
       en: 'Strategic Leadership 🎯',
       ja: '戦略的リーダーシップ 🎯',
@@ -1292,7 +1292,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lãnh đạo chiến lược 🎯',
       id: 'Kepemimpinan strategis 🎯',
     }),
-    leadershipKeywords: ML({
+    leadershipKeywords: localeMap({
       ko: '분석·구조화·목표 중심·효율성',
       en: 'Analysis · Structuring · Goal focus · Efficiency',
       ja: '分析・構造化・目標中心・効率性',
@@ -1301,7 +1301,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Phân tích · Cấu trúc hóa · Tập trung mục tiêu · Hiệu quả',
       id: 'Analisis · Struktur · Fokus tujuan · Efisiensi',
     }),
-    teamRole: ML({
+    teamRole: localeMap({
       ko: '전략 수립·우선순위 결정·성과 관리',
       en: 'Strategy planning · Priority setting · Performance management',
       ja: '戦略立案・優先順位決定・成果管理',
@@ -1310,7 +1310,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Lập chiến lược · Quyết định ưu tiên · Quản lý hiệu suất',
       id: 'Perencanaan strategi · Penetapan prioritas · Manajemen kinerja',
     }),
-    strength: ML({
+    strength: localeMap({
       ko: '체계적인 실행 계획·높은 목표 달성률·논리적 의사결정',
       en: 'Systematic execution plans · High goal achievement · Logical decision-making',
       ja: '体系的な実行計画・高い目標達成率・論理的な意思決定',
@@ -1319,7 +1319,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kế hoạch thực thi có hệ thống · Tỷ lệ đạt mục tiêu cao · Quyết định logic',
       id: 'Rencana eksekusi sistematis · Pencapaian target tinggi · Keputusan logis',
     }),
-    weakness: ML({
+    weakness: localeMap({
       ko: '팀원의 감정적 측면이 소홀해질 수 있음. 관계 관리 역할이 함께 필요',
       en: 'The emotional side of members may be neglected. Relationship management partners are needed.',
       ja: 'メンバーの感情的側面がおろそかになりやすい。関係管理の役割が必要。',
@@ -1328,7 +1328,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Có thể bỏ qua khía cạnh cảm xúc của thành viên, cần vai trò quản lý quan hệ.',
       id: 'Aspek emosional anggota bisa terabaikan, perlu peran manajemen relasi.',
     }),
-    goodEnvironment: ML({
+    goodEnvironment: localeMap({
       ko: '복잡한 프로젝트·성과 측정이 명확한 환경·다수의 변수가 있는 상황',
       en: 'Complex projects · Environments with clear performance metrics · Many variables',
       ja: '複雑なプロジェクト・成果測定が明確な環境・多数の変数がある状況',
@@ -1337,7 +1337,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Dự án phức tạp · Môi trường đo lường hiệu suất rõ · Nhiều biến số',
       id: 'Proyek kompleks · Lingkungan dengan metrik kinerja jelas · Banyak variabel',
     }),
-    goodMatch: ML({
+    goodMatch: localeMap({
       ko: '팀원을 챙기는 서번트형·비전을 제시하는 변혁형과 조합 시 완성형',
       en: 'A complete team when paired with servant types who care for members and transformational types who provide vision',
       ja: 'メンバーをケアするサーバント型・ビジョンを示す変革型と組み合わせると完成形',
@@ -1346,7 +1346,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Hoàn thiện khi kết hợp với kiểu phục vụ và kiểu biến đổi đưa tầm nhìn',
       id: 'Jadi tim lengkap jika dipadukan dengan tipe pelayan dan tipe transformasional pengarah visi',
     }),
-    coverLetterPhrase: ML({
+    coverLetterPhrase: localeMap({
       ko: '저는 팀 프로젝트에서 현황을 데이터로 분석하고 우선순위를 명확히 설정해 팀이 효율적으로 목표를 달성할 수 있는 전략을 수립했습니다',
       en: 'In team projects, I analyzed the situation with data, set clear priorities, and built strategy for efficient goal achievement.',
       ja: 'チームプロジェクトでは、現状をデータで分析し、優先順位を明確に設定して、チームが効率的に目標を達成できる戦略を立てました。',
@@ -1355,7 +1355,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Trong dự án nhóm, tôi phân tích hiện trạng bằng dữ liệu, đặt ưu tiên rõ ràng và xây chiến lược giúp nhóm đạt mục tiêu hiệu quả.',
       id: 'Dalam proyek tim, saya menganalisis kondisi dengan data, menetapkan prioritas jelas, dan menyusun strategi agar tim mencapai target secara efisien.',
     }),
-    coverLetterMaterial: ML({
+    coverLetterMaterial: localeMap({
       ko: '복잡한 프로젝트를 체계적으로 정리해서 성과를 낸 경험·우선순위 재조정으로 팀 효율을 높인 경험',
       en: 'Experience delivering results by organizing complex projects systematically · Experience boosting team efficiency by reprioritizing',
       ja: '複雑なプロジェクトを体系的に整理して成果を出した経験・優先順位の再調整でチーム効率を高めた経験',
@@ -1364,7 +1364,7 @@ export const phase3LeadershipStyleResults: Phase3LeadershipStyleResult[] = [
       vi: 'Kinh nghiệm tổ chức dự án phức tạp có hệ thống và đạt kết quả · Kinh nghiệm nâng hiệu quả nhóm bằng điều chỉnh ưu tiên',
       id: 'Pengalaman menyelesaikan proyek kompleks secara sistematis · Pengalaman meningkatkan efisiensi tim lewat reprioritisasi',
     }),
-    shareLine: ML({
+    shareLine: localeMap({
       ko: '내 리더십 스타일: 전략형 🎯 데이터로 성과 설계하는 유형이래... 왜 잘 됐는지 설명 가능한 팀 만든다는 거 → 자소서 리더십 소재 고민이면 이거 해봐',
       en: 'My leadership style: Strategic type 🎯 They say I design results with data... I build teams that can explain why they succeeded → Try this for cover letter leadership material.',
       ja: '私のリーダーシップスタイル：戦略型 🎯 データで成果を設計するタイプらしい…なぜうまくいったか説明できるチーム → 自己PR素材にどうぞ',
