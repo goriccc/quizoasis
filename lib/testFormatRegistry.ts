@@ -150,6 +150,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-jp-index-precise-measurement': 'checklist',
   'phase3-kdrama-lead-character-type': 'scenario_4',
   'phase3-laziness-max-level': 'scenario_4',
+  'phase3-leadership-style': 'scenario_4',
   'phase3-loneliness-concentration': 'personality_4',
   'phase3-love-behavior-type': 'scenario_2',
   'phase3-love-green-flag-finder': 'personality_4',

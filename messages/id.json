@@ -10353,6 +10353,74 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3LeadershipStyleTest": {
+    "startMessage": {
+      "line1": "Dalam proyek tim, kamu tipe orang seperti apa?",
+      "line2": "Kepemimpinan bukan jabatan. Ia terlihat dari cara kamu bergerak di tim, bereaksi saat masalah muncul, dan pengaruh yang kamu berikan.",
+      "line3": "Pilih tindakan yang paling alami bagimu dalam 12 situasi proyek tim untuk menemukan gaya kepemimpinanmu yang sebenarnya.",
+      "line4": "Jika kamu mencari bahan surat lamaran, hasil ini bisa jadi petunjuk. Rancang jawaban wawancara tentang pengalaman kepemimpinan berdasarkan tipe ini.",
+      "line5": "Temukan gaya kepemimpinanku 👑 Cek sekarang",
+      "note": "※ Di setiap skenario, pilih reaksi yang paling dekat dengan dirimu."
+    },
+    "ui": {
+      "startTest": "Mulai Tes Gaya Kepemimpinan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Gaya Kepemimpinanku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "leadershipStyle": "Tipe Kepemimpinan",
+      "leadershipKeywords": "Kata Kunci Kepemimpinan",
+      "teamRole": "Peran Alami di Tim",
+      "strength": "Kekuatan Gaya Ini",
+      "weakness": "Kelemahan Gaya Ini",
+      "goodEnvironment": "Lingkungan yang Cocok",
+      "goodMatch": "Tipe Kepemimpinan yang Cocok Dipasangkan",
+      "coverLetterPhrase": "Kalimat untuk Surat Lamaran",
+      "coverLetterMaterial": "Bahan yang Bisa Digunakan"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Gaya kepemimpinanku: Pelayan 🤝 mendahulukan anggota tim… katanya tidak ada yang struggle sendirian di timku — setuju? Kamu tipe apa? Bahan surat lamaran juga",
+      "type2": "Gaya kepemimpinanku: Demokratis 🗣️ mengumpulkan semua suara untuk konsensus… rapat tidak ada yang ketinggalan — bener kan? Kamu tipe apa?",
+      "type3": "Gaya kepemimpinanku: Coaching 📈 membantu tim berkembang… memberi feedback terasa natural wkwk → bingung bahan kepemimpinan di surat lamaran? coba ini",
+      "type4": "Gaya kepemimpinanku: Transformasional 🌟 menanamkan visi ke tim… menentukan arah terasa natural → kamu tipe apa? Bisa untuk surat lamaran",
+      "type5": "Gaya kepemimpinanku: Karismatik ⚡ bersinar saat krisis… memimpin tim di deadline memang gaya ku wkwk → kamu tipe apa?",
+      "type6": "Gaya kepemimpinanku: Strategis 🎯 merancang hasil dengan data… membangun tim yang bisa jelaskan kenapa sukses → bingung bahan kepemimpinan? coba ini",
+      "startDefault": "Gaya Kepemimpinanku 👑 Cek tipe kamu dalam proyek tim",
+      "startKakao": "Gaya Kepemimpinanku 👑 Cek tipe kamu dalam proyek tim",
+      "startWechat": "Gaya Kepemimpinanku 👑 Cek tipe kamu dalam proyek tim",
+      "startWhatsapp": "Gaya Kepemimpinanku 👑 Cek tipe kamu dalam proyek tim",
+      "startTelegram": "Gaya Kepemimpinanku 👑 Cek tipe kamu dalam proyek tim",
+      "startLine": "Gaya Kepemimpinanku 👑 Cek tipe kamu dalam proyek tim"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",

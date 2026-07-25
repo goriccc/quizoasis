@@ -9822,6 +9822,74 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3LeadershipStyleTest": {
+    "startMessage": {
+      "line1": "在團隊專案中，你是什麼樣的人？",
+      "line2": "領導力不是職位。它體現在你於團隊中的行動方式、遇到問題時的反應，以及你對他人產生的影響。",
+      "line3": "在12種團隊專案情境中，選擇你最自然會採取的行動，就能揭示你真正的領導風格。",
+      "line4": "如果你在找自我介紹素材，這個結果會是很好的提示。面試中被問到「請談談你的領導經驗」時，可以圍繞這個類型來設計回答。",
+      "line5": "找到我的領導風格 👑 立即查看",
+      "note": "※ 在每個情境中，請選擇最接近你的反應。"
+    },
+    "ui": {
+      "startTest": "開始領導風格測試",
+      "shareWithFriends": "和朋友一起試試",
+      "shareResultWithFriends": "把結果分享給朋友",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "goToTest": "去做測試",
+      "adsenseTitle": "AdSense廣告區域（我的領導風格）",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "leadershipStyle": "領導類型",
+      "leadershipKeywords": "領導關鍵字",
+      "teamRole": "在團隊中自然承擔的角色",
+      "strength": "這種領導力的優勢",
+      "weakness": "這種領導力的弱點",
+      "goodEnvironment": "這種領導力發光的環境",
+      "goodMatch": "搭配更佳的領導類型",
+      "coverLetterPhrase": "自我介紹可用語句",
+      "coverLetterMaterial": "可用素材"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "我的領導風格：服務型 🤝 先照顧隊員的類型…說我的隊員不會獨自硬撐，認同嗎？你是什麼領導風格？自我介紹素材也能用",
+      "type2": "我的領導風格：民主型 🗣️ 收集所有人意見並推動共識…會議上沒人被落下，對嗎？你是什麼領導風格？",
+      "type3": "我的領導風格：教練型 📈 幫助隊員成長的類型…給回饋很自然，哈哈 → 自我介紹領導素材發愁就試試",
+      "type4": "我的領導風格：變革型 🌟 給團隊注入願景的類型…方向指引很自然 → 你是什麼領導風格？自我介紹也能用",
+      "type5": "我的領導風格：魅力型 ⚡ 危機中發光的類型…截止前帶隊衝刺是我的風格，哈哈 → 你是什麼類型？",
+      "type6": "我的領導風格：戰略型 🎯 用數據設計成果的類型…能打造能解釋為何成功的團隊 → 自我介紹領導素材就試這個",
+      "startDefault": "我的領導風格 👑 看看在團隊專案中你是什麼類型",
+      "startKakao": "我的領導風格 👑 看看在團隊專案中你是什麼類型",
+      "startWechat": "我的領導風格 👑 看看在團隊專案中你是什麼類型",
+      "startWhatsapp": "我的領導風格 👑 看看在團隊專案中你是什麼類型",
+      "startTelegram": "我的領導風格 👑 看看在團隊專案中你是什麼類型",
+      "startLine": "我的領導風格 👑 看看在團隊專案中你是什麼類型"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "我們每個人都有一座用來保護自己的城牆。",

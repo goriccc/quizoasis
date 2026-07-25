@@ -10362,6 +10362,74 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3LeadershipStyleTest": {
+    "startMessage": {
+      "line1": "What kind of person are you in a team project?",
+      "line2": "Leadership is not a job title. It shows in how you move within a team, how you react when problems arise, and what influence you have on others.",
+      "line3": "Choose the actions you would naturally take in 12 team project scenarios to reveal your true leadership style.",
+      "line4": "If you are looking for cover letter material, these results can be a hint. Design your answer to \"Tell us about your leadership experience\" in interviews around this type.",
+      "line5": "Find my leadership style 👑 Check now",
+      "note": "※ In each scenario, choose the response closest to you."
+    },
+    "ui": {
+      "startTest": "Start Leadership Style Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My Leadership Style)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "leadershipStyle": "Leadership Type",
+      "leadershipKeywords": "Leadership Keywords",
+      "teamRole": "Natural Role on the Team",
+      "strength": "Strengths of This Leadership",
+      "weakness": "Weaknesses of This Leadership",
+      "goodEnvironment": "Where This Leadership Shines",
+      "goodMatch": "Leadership Types That Pair Well",
+      "coverLetterPhrase": "Cover Letter Phrase",
+      "coverLetterMaterial": "Material to Use"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "My leadership style: Servant 🤝 I put team members first... they say no one struggles alone on my team — agree? What's your leadership style? Great cover letter material too.",
+      "type2": "My leadership style: Democratic 🗣️ I build consensus from everyone's opinions... no one gets left out in my meetings — true? What's your leadership style?",
+      "type3": "My leadership style: Coaching 📈 I help teammates grow... giving feedback comes naturally — lol. Stuck on leadership cover letter ideas? Try this.",
+      "type4": "My leadership style: Transformational 🌟 I plant vision in the team... setting direction feels natural — what's your leadership style? Use it for your cover letter.",
+      "type5": "My leadership style: Charismatic ⚡ I shine in crisis... leading the team at deadline crunch is my thing — lol. What type are you?",
+      "type6": "My leadership style: Strategic 🎯 I design results with data... I build teams that can explain why they succeeded — stuck on cover letter leadership? Try this.",
+      "startDefault": "My Leadership Style 👑 Find out what type you are in team projects",
+      "startKakao": "My Leadership Style 👑 Find out what type you are in team projects",
+      "startWechat": "My Leadership Style 👑 Find out what type you are in team projects",
+      "startWhatsapp": "My Leadership Style 👑 Find out what type you are in team projects",
+      "startTelegram": "My Leadership Style 👑 Find out what type you are in team projects",
+      "startLine": "My Leadership Style 👑 Find out what type you are in team projects"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "We all have walls to protect ourselves.",

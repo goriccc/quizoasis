@@ -10353,6 +10353,74 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3LeadershipStyleTest": {
+    "startMessage": {
+      "line1": "Trong dự án nhóm, bạn là kiểu người như thế nào?",
+      "line2": "Lãnh đạo không phải chức danh. Nó thể hiện qua cách bạn hành động trong nhóm, phản ứng khi có vấn đề, và ảnh hưởng bạn tạo ra với mọi người.",
+      "line3": "Chọn hành động bạn tự nhiên sẽ làm trong 12 tình huống dự án nhóm để khám phá phong cách lãnh đạo thật của bạn.",
+      "line4": "Nếu bạn đang tìm ý tưởng cho thư xin việc, kết quả này có thể là gợi ý. Hãy thiết kế câu trả lời phỏng vấn về kinh nghiệm lãnh đạo dựa trên kiểu này.",
+      "line5": "Tìm phong cách lãnh đạo của tôi 👑 Kiểm tra ngay",
+      "note": "※ Ở mỗi tình huống, hãy chọn phản ứng gần với bạn nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu test phong cách lãnh đạo",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem test khác",
+      "goToTest": "Làm test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Phong cách lãnh đạo của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các test tương tự",
+      "leadershipStyle": "Kiểu lãnh đạo",
+      "leadershipKeywords": "Từ khóa lãnh đạo",
+      "teamRole": "Vai trò tự nhiên trong nhóm",
+      "strength": "Điểm mạnh của kiểu lãnh đạo này",
+      "weakness": "Điểm yếu của kiểu lãnh đạo này",
+      "goodEnvironment": "Môi trường kiểu này tỏa sáng",
+      "goodMatch": "Kiểu lãnh đạo phối hợp tốt",
+      "coverLetterPhrase": "Câu dùng cho thư xin việc",
+      "coverLetterMaterial": "Ý tưởng vật liệu"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Phong cách lãnh đạo của tôi: Phục vụ 🤝 ưu tiên thành viên… họ bảo không ai phải gánh một mình trong team tôi — đúng không? Bạn kiểu gì? Cũng hay cho thư xin việc",
+      "type2": "Phong cách lãnh đạo của tôi: Dân chủ 🗣️ gom ý kiến mọi người để thống nhất… họp không ai bị bỏ lại — đúng chứ? Bạn kiểu gì?",
+      "type3": "Phong cách lãnh đạo của tôi: Huấn luyện 📈 giúp đồng đội trưởng thành… feedback tự nhiên lắm haha → bí ý tưởng lãnh đạo cho thư xin việc thì thử đi",
+      "type4": "Phong cách lãnh đạo của tôi: Biến đổi 🌟 gieo tầm nhìn cho team… chỉ hướng tự nhiên → bạn kiểu gì? Dùng cho thư xin việc luôn",
+      "type5": "Phong cách lãnh đạo của tôi: Quyến rũ ⚡ tỏa sáng lúc khủng hoảng… dẫn team sát deadline đúng gu tôi haha → bạn kiểu gì?",
+      "type6": "Phong cách lãnh đạo của tôi: Chiến lược 🎯 thiết kế kết quả bằng dữ liệu… tạo team giải thích được vì sao thành công → bí lãnh đạo cho thư xin việc thì thử",
+      "startDefault": "Phong cách lãnh đạo của tôi 👑 Xem bạn là kiểu gì trong dự án nhóm",
+      "startKakao": "Phong cách lãnh đạo của tôi 👑 Xem bạn là kiểu gì trong dự án nhóm",
+      "startWechat": "Phong cách lãnh đạo của tôi 👑 Xem bạn là kiểu gì trong dự án nhóm",
+      "startWhatsapp": "Phong cách lãnh đạo của tôi 👑 Xem bạn là kiểu gì trong dự án nhóm",
+      "startTelegram": "Phong cách lãnh đạo của tôi 👑 Xem bạn là kiểu gì trong dự án nhóm",
+      "startLine": "Phong cách lãnh đạo của tôi 👑 Xem bạn là kiểu gì trong dự án nhóm"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",

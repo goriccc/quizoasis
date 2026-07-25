@@ -176,6 +176,10 @@ import {
   phase3SuddenPoorDefenseIndexResults,
 } from '@/lib/phase3SuddenPoorDefenseIndexData';
 import {
+  phase3LeadershipStyleQuestions,
+  phase3LeadershipStyleResults,
+} from '@/lib/phase3LeadershipStyleData';
+import {
   phase3AiFuture10YearsQuestions,
   phase3AiFuture10YearsResults,
 } from '@/lib/phase3AiFuture10YearsData';
@@ -667,6 +671,10 @@ const Phase3MukbangStyleDiagnosisTestClient = dynamic(
 );
 const Phase3SuddenPoorDefenseIndexTestClient = dynamic(
   () => import('@/components/Phase3SuddenPoorDefenseIndexTestClient'),
+  { ssr: false }
+);
+const Phase3LeadershipStyleTestClient = dynamic(
+  () => import('@/components/Phase3LeadershipStyleTestClient'),
   { ssr: false }
 );
 const Phase3EgoWallThicknessTestClient = dynamic(
@@ -2088,6 +2096,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['找不同', '觀察力', '眼力', '益智', '挑戰'],
         vi: ['tìm khác biệt', 'quan sát', 'mắt tinh', 'giải đố', 'thử thách'],
         id: ['cari beda', 'observasi', 'mata elang', 'teka-teki', 'tantangan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-leadership-style') {
+    test = {
+      slug: 'phase3-leadership-style',
+      title: {
+        ko: "나의 '리더십' 스타일",
+        en: "My Leadership Style",
+        ja: '私のリーダーシップスタイル',
+        'zh-CN': '我的领导风格',
+        'zh-TW': '我的領導風格',
+        vi: 'Phong cách lãnh đạo của tôi',
+        id: 'Gaya Kepemimpinanku',
+      },
+      description: {
+        ko: '12가지 팀 프로젝트 상황에서 나의 진짜 리더십 스타일을 찾고 자소서 소재까지 확인합니다.',
+        en: 'Discover your true leadership style through 12 team project scenarios and find cover letter material.',
+        ja: '12のチームプロジェクト状況から本当のリーダーシップスタイルを見つけ、自己PRの素材まで確認します。',
+        'zh-CN': '通过12种团队项目情境找到你真正的领导风格，并获取自我介绍素材。',
+        'zh-TW': '透過12種團隊專案情境找到你真正的領導風格，並取得自我介紹素材。',
+        vi: 'Khám phá phong cách lãnh đạo thật qua 12 tình huống dự án nhóm và tìm ý tưởng cho thư xin việc.',
+        id: 'Temukan gaya kepemimpinanmu yang sebenarnya lewat 12 situasi proyek tim dan dapatkan bahan surat lamaran.',
+      },
+      thumbnail: 'p3_test_leadership_style.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['리더십', '팀프로젝트', '자소서', '직장인', '자기이해'],
+        en: ['leadership', 'team project', 'cover letter', 'workplace', 'self-discovery'],
+        ja: ['リーダーシップ', 'チームプロジェクト', '自己PR', '社会人', '自己理解'],
+        'zh-CN': ['领导力', '团队项目', '自我介绍', '职场', '自我了解'],
+        'zh-TW': ['領導力', '團隊專案', '自我介紹', '職場', '自我了解'],
+        vi: ['lãnh đạo', 'dự án nhóm', 'thư xin việc', 'nơi làm việc', 'hiểu bản thân'],
+        id: ['kepemimpinan', 'proyek tim', 'surat lamaran', 'tempat kerja', 'mengenal diri'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -7874,6 +7919,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3EagleEyeUltimateQuestions}
           results={phase3EagleEyeUltimateResults}
           questionCount={phase3EagleEyeUltimateQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-leadership-style') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-leadership-style',
+      title: {
+        ko: "나의 '리더십' 스타일",
+        en: "My Leadership Style",
+        ja: '私のリーダーシップスタイル',
+        'zh-CN': '我的领导风格',
+        'zh-TW': '我的領導風格',
+        vi: 'Phong cách lãnh đạo của tôi',
+        id: 'Gaya Kepemimpinanku',
+      },
+      description: {
+        ko: '12가지 팀 프로젝트 상황에서 나의 진짜 리더십 스타일을 찾고 자소서 소재까지 확인합니다.',
+        en: 'Discover your true leadership style through 12 team project scenarios and find cover letter material.',
+        ja: '12のチームプロジェクト状況から本当のリーダーシップスタイルを見つけ、自己PRの素材まで確認します。',
+        'zh-CN': '通过12种团队项目情境找到你真正的领导风格，并获取自我介绍素材。',
+        'zh-TW': '透過12種團隊專案情境找到你真正的領導風格，並取得自我介紹素材。',
+        vi: 'Khám phá phong cách lãnh đạo thật qua 12 tình huống dự án nhóm và tìm ý tưởng cho thư xin việc.',
+        id: 'Temukan gaya kepemimpinanmu yang sebenarnya lewat 12 situasi proyek tim dan dapatkan bahan surat lamaran.',
+      },
+      thumbnail: 'p3_test_leadership_style.webp',
+      type: 'psychology',
+      category: 'career',
+      play_count: 0,
+      tags: {
+        ko: ['리더십', '팀프로젝트', '자소서', '직장인', '자기이해'],
+        en: ['leadership', 'team project', 'cover letter', 'workplace', 'self-discovery'],
+        ja: ['リーダーシップ', 'チームプロジェクト', '自己PR', '社会人', '自己理解'],
+        'zh-CN': ['领导力', '团队项目', '自我介绍', '职场', '自我了解'],
+        'zh-TW': ['領導力', '團隊專案', '自我介紹', '職場', '自我了解'],
+        vi: ['lãnh đạo', 'dự án nhóm', 'thư xin việc', 'nơi làm việc', 'hiểu bản thân'],
+        id: ['kepemimpinan', 'proyek tim', 'surat lamaran', 'tempat kerja', 'mengenal diri'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LeadershipStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LeadershipStyleQuestions}
+          results={phase3LeadershipStyleResults}
+          questionCount={phase3LeadershipStyleQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />
