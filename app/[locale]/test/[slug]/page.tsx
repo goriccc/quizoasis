@@ -184,6 +184,10 @@ import {
   phase3CreativityPotentialResults,
 } from '@/lib/phase3CreativityPotentialData';
 import {
+  phase3FandomStyleQuestions,
+  phase3FandomStyleResults,
+} from '@/lib/phase3FandomStyleData';
+import {
   phase3AiFuture10YearsQuestions,
   phase3AiFuture10YearsResults,
 } from '@/lib/phase3AiFuture10YearsData';
@@ -683,6 +687,10 @@ const Phase3LeadershipStyleTestClient = dynamic(
 );
 const Phase3CreativityPotentialTestClient = dynamic(
   () => import('@/components/Phase3CreativityPotentialTestClient'),
+  { ssr: false }
+);
+const Phase3FandomStyleTestClient = dynamic(
+  () => import('@/components/Phase3FandomStyleTestClient'),
   { ssr: false }
 );
 const Phase3EgoWallThicknessTestClient = dynamic(
@@ -2178,6 +2186,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['創造力', '創意', '企劃', '設計', '問題解決'],
         vi: ['sáng tạo', 'ý tưởng', 'lập kế hoạch', 'thiết kế', 'giải quyết vấn đề'],
         id: ['kreativitas', 'ide', 'perencanaan', 'desain', 'pemecahan masalah'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-fandom-style') {
+    test = {
+      slug: 'phase3-fandom-style',
+      title: {
+        ko: '나의 덕질 성향 진단',
+        en: 'My Fandom Style Diagnosis',
+        ja: '私の推し活タイプ診断',
+        'zh-CN': '我的追星倾向诊断',
+        'zh-TW': '我的追星傾向診斷',
+        vi: 'Chẩn đoán phong cách fan của tôi',
+        id: 'Diagnosis Gaya Fandom-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 진짜 덕질 성향과 가장 잘 맞는 최애 유형을 찾아드립니다.',
+        en: 'Find your true fandom style and the bias type that fits you best through 12 questions.',
+        ja: '12の質問で本当の推し活タイプと最も合う推しタイプを見つけます。',
+        'zh-CN': '通过12个问题找到你真正的追星倾向和最匹配的本命类型。',
+        'zh-TW': '透過12個問題找到你真正的追星傾向和最匹配的本命類型。',
+        vi: 'Tìm phong cách fan thật và kiểu bias phù hợp nhất qua 12 câu hỏi.',
+        id: 'Temukan gaya fandom sebenarnya dan tipe bias yang paling cocok lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_fandom_style.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['덕질', '팬덤', '최애', '덕후', 'K팝'],
+        en: ['fandom', 'fan', 'bias', 'stan', 'K-pop'],
+        ja: ['推し活', 'ファンダム', '推し', 'オタク', 'K-POP'],
+        'zh-CN': ['追星', '粉丝', '本命', '铁粉', 'K-pop'],
+        'zh-TW': ['追星', '粉絲', '本命', '鐵粉', 'K-pop'],
+        vi: ['fan', 'fandom', 'bias', 'stan', 'K-pop'],
+        id: ['fandom', 'fan', 'bias', 'stan', 'K-pop'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8019,6 +8064,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LeadershipStyleQuestions}
           results={phase3LeadershipStyleResults}
           questionCount={phase3LeadershipStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-fandom-style') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-fandom-style',
+      title: {
+        ko: '나의 덕질 성향 진단',
+        en: 'My Fandom Style Diagnosis',
+        ja: '私の推し活タイプ診断',
+        'zh-CN': '我的追星倾向诊断',
+        'zh-TW': '我的追星傾向診斷',
+        vi: 'Chẩn đoán phong cách fan của tôi',
+        id: 'Diagnosis Gaya Fandom-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 진짜 덕질 성향과 가장 잘 맞는 최애 유형을 찾아드립니다.',
+        en: 'Find your true fandom style and the bias type that fits you best through 12 questions.',
+        ja: '12の質問で本当の推し活タイプと最も合う推しタイプを見つけます。',
+        'zh-CN': '通过12个问题找到你真正的追星倾向和最匹配的本命类型。',
+        'zh-TW': '透過12個問題找到你真正的追星傾向和最匹配的本命類型。',
+        vi: 'Tìm phong cách fan thật và kiểu bias phù hợp nhất qua 12 câu hỏi.',
+        id: 'Temukan gaya fandom sebenarnya dan tipe bias yang paling cocok lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_fandom_style.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['덕질', '팬덤', '최애', '덕후', 'K팝'],
+        en: ['fandom', 'fan', 'bias', 'stan', 'K-pop'],
+        ja: ['推し活', 'ファンダム', '推し', 'オタク', 'K-POP'],
+        'zh-CN': ['追星', '粉丝', '本命', '铁粉', 'K-pop'],
+        'zh-TW': ['追星', '粉絲', '本命', '鐵粉', 'K-pop'],
+        vi: ['fan', 'fandom', 'bias', 'stan', 'K-pop'],
+        id: ['fandom', 'fan', 'bias', 'stan', 'K-pop'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3FandomStyleTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3FandomStyleQuestions}
+          results={phase3FandomStyleResults}
+          questionCount={phase3FandomStyleQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

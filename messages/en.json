@@ -10496,6 +10496,73 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3FandomStyleTest": {
+    "startMessage": {
+      "line1": "What kind of fan are you?",
+      "line2": "Some are happy just listening to music, some collect merch, some binge every piece of content, and for some fan activities are the reason they live.",
+      "line3": "There is no right way to be a fan. Enjoying lightly still makes you a fan, and dedicating your life still makes you a fan. Everyone has their own style.",
+      "line4": "Through 12 questions, we will find your true fandom style and the bias type that fits you best.",
+      "line5": "Find my fandom type 💜 Check now",
+      "note": "※ If you are currently stanning or have fandom experience, think back to those moments. If not, answer based on what you like most."
+    },
+    "ui": {
+      "startTest": "Start Fandom Style Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My Fandom Style)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "fandomType": "Fandom Type",
+      "fandomKeywords": "Fandom Keywords",
+      "fandomStyle": "Fandom Style",
+      "strength": "Strengths of This Type",
+      "characteristic": "Traits of This Type",
+      "bestBiasType": "Best-Matching Bias Type",
+      "oneLiner": "One-Liner",
+      "certificationPhrase": "Certification Phrase"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "My fandom type: Healing Listener 🎵 They say I am a light fan who enjoys it casually... liking without forcing myself is still real → What fandom type are you?",
+      "type2": "My fandom type: Emotional Immersion 💙 The type who tears up at bias lyrics... stanning with feelings is so me → Yeah I stan like this lol, what about you?",
+      "type3": "My fandom type: Content Marathon 📱 I have watched all my bias videos... bingeing old content is totally me lol → What fandom type are you?",
+      "type4": "My fandom type: Fandom Activist 🎤 Stanning together is the most fun... already doing music show votes and streaming → Yeah I stan like this lol, what about you?",
+      "type5": "My fandom type: Hardcore Stan ⭐ They say fandom is my lifestyle... merch room and midnight streaming, so true lol → What type are you?",
+      "type6": "My fandom type: Fandom Life Master 🌟 They say life split before and after meeting my bias... honestly true lol → Yeah I stan like this lol, fandom friends try it too",
+      "startDefault": "My Fandom Style Test 💜 Find your fandom type",
+      "startKakao": "My Fandom Style Test 💜 Find your fandom type",
+      "startWechat": "My Fandom Style Test 💜 Find your fandom type",
+      "startWhatsapp": "My Fandom Style Test 💜 Find your fandom type",
+      "startTelegram": "My Fandom Style Test 💜 Find your fandom type",
+      "startLine": "My Fandom Style Test 💜 Find your fandom type"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "We all have walls to protect ourselves.",

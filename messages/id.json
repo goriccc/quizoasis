@@ -10487,6 +10487,73 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3FandomStyleTest": {
+    "startMessage": {
+      "line1": "Kamu tipe fan seperti apa?",
+      "line2": "Ada yang cukup dengar musik, ada yang koleksi merch, ada yang nonton semua konten, dan ada yang menganggap aktivitas fandom sebagai alasan hidup.",
+      "line3": "Tidak ada cara benar tunggal untuk jadi fan. Menikmati dengan santai tetap fan, mendedikasikan hidup tetap fan. Tiap orang punya gayanya.",
+      "line4": "Lewat 12 pertanyaan, temukan gaya stan-mu yang sebenarnya dan tipe bias yang paling cocok.",
+      "line5": "Temukan tipe stan-ku 💜 Cek sekarang",
+      "note": "※ Jika sedang stan atau pernah punya pengalaman fandom, ingat momen itu. Jika tidak, jawab berdasarkan hal yang paling kamu sukai."
+    },
+    "ui": {
+      "startTest": "Mulai Tes Gaya Stan",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Gaya Stan-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "fandomType": "Tipe Stan",
+      "fandomKeywords": "Kata Kunci Stan",
+      "fandomStyle": "Gaya Stan",
+      "strength": "Kekuatan Tipe Ini",
+      "characteristic": "Ciri Tipe Ini",
+      "bestBiasType": "Tipe Bias Paling Cocok",
+      "oneLiner": "Satu Kalimat",
+      "certificationPhrase": "Frasa Sertifikasi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Tipe stan-ku: Healing Listener 🎵 Katanya fan santai… suka tanpa memaksa diri tetap tulus → Kamu tipe stan apa?",
+      "type2": "Tipe stan-ku: Emotional Immersion 💙 Tipe yang nangis denger lirik bias… stan pakai perasaan beneran ㅠ → Iya aku juga gini ㅋㅋ kamu?",
+      "type3": "Tipe stan-ku: Content Marathon 📱 Semua video bias udah nonton… marathon konten lama totally me ㅋㅋ → Kamu tipe stan apa?",
+      "type4": "Tipe stan-ku: Fandom Activist 🎤 Stan bareng paling seru… vote music show·streaming udah jalan → Iya aku juga gini ㅋㅋ kamu?",
+      "type5": "Tipe stan-ku: Hardcore Stan ⭐ Katanya stan itu gaya hidup… punya ruang merch, midnight streaming, bener ㅋㅋ → Kamu tipe apa?",
+      "type6": "Tipe stan-ku: Fandom Life Master 🌟 Katanya hidup terbagi sebelum dan sesudah kenal bias… bener banget ㅋㅋ → Iya aku juga gini ㅋㅋ teman fandom coba deh",
+      "startDefault": "Tes Gaya Stan-ku 💜 Cek tipe stan-mu",
+      "startKakao": "Tes Gaya Stan-ku 💜 Cek tipe stan-mu",
+      "startWechat": "Tes Gaya Stan-ku 💜 Cek tipe stan-mu",
+      "startWhatsapp": "Tes Gaya Stan-ku 💜 Cek tipe stan-mu",
+      "startTelegram": "Tes Gaya Stan-ku 💜 Cek tipe stan-mu",
+      "startLine": "Tes Gaya Stan-ku 💜 Cek tipe stan-mu"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",

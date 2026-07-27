@@ -10487,6 +10487,73 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3FandomStyleTest": {
+    "startMessage": {
+      "line1": "Bạn là kiểu fan nào?",
+      "line2": "Có người chỉ nghe nhạc là đủ, có người sưu tập merch, có người cày hết mọi content, và có người coi hoạt động fandom là lý do để sống.",
+      "line3": "Không có cách đúng duy nhất để làm fan. Thích nhẹ nhàng vẫn là fan, dành cả đời vẫn là fan. Mỗi người một phong cách.",
+      "line4": "Qua 12 câu hỏi, tìm kiểu đu bias thật sự của bạn và loại bias phù hợp nhất.",
+      "line5": "Tìm kiểu đu bias của tôi 💜 Kiểm tra ngay",
+      "note": "※ Nếu đang đu bias hoặc từng có kinh nghiệm fandom, hãy nhớ lại thời đó. Nếu không, hãy trả lời dựa trên thứ bạn thích nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu test kiểu đu bias",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem test khác",
+      "goToTest": "Làm test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Kiểu đu bias của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các test tương tự",
+      "fandomType": "Kiểu đu bias",
+      "fandomKeywords": "Từ khóa đu bias",
+      "fandomStyle": "Cách đu bias",
+      "strength": "Điểm mạnh của kiểu này",
+      "characteristic": "Đặc điểm của kiểu này",
+      "bestBiasType": "Loại bias phù hợp nhất",
+      "oneLiner": "Một câu đánh giá",
+      "certificationPhrase": "Câu chứng nhận"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Kiểu đu bias của tôi: Nghe nhẹ nhàng 🎵 Bảo là fan chill… không ép mình vẫn thích là thật → Bạn thuộc kiểu nào?",
+      "type2": "Kiểu đu bias của tôi: Chìm cảm xúc 💙 Hay khóc vì lời bias… đu bằng cảm xúc đúng rồi ㅠ → Đúng, tôi cũng vậy ㅋㅋ còn bạn?",
+      "type3": "Kiểu đu bias của tôi: Cày content 📱 Xem hết video bias rồi… cày content cũ đúng là tôi ㅋㅋ → Bạn thuộc kiểu nào?",
+      "type4": "Kiểu đu bias của tôi: Hoạt động fandom 🎤 Đu cùng nhau vui nhất… vote show nhạc·stream rồi → Đúng, tôi cũng vậy ㅋㅋ còn bạn?",
+      "type5": "Kiểu đu bias của tôi: Hardcore stan ⭐ Bảo đu bias là lối sống… có phòng merch, stream nửa đêm, chuẩn ㅋㅋ → Bạn kiểu gì?",
+      "type6": "Kiểu đu bias của tôi: Master đu bias 🌟 Bảo đời chia trước và sau khi biết bias… thật luôn ㅋㅋ → Đúng, tôi cũng vậy ㅋㅋ bạn fandom thử đi",
+      "startDefault": "Test kiểu đu bias của tôi 💜 Xem kiểu đu bias của bạn",
+      "startKakao": "Test kiểu đu bias của tôi 💜 Xem kiểu đu bias của bạn",
+      "startWechat": "Test kiểu đu bias của tôi 💜 Xem kiểu đu bias của bạn",
+      "startWhatsapp": "Test kiểu đu bias của tôi 💜 Xem kiểu đu bias của bạn",
+      "startTelegram": "Test kiểu đu bias của tôi 💜 Xem kiểu đu bias của bạn",
+      "startLine": "Test kiểu đu bias của tôi 💜 Xem kiểu đu bias của bạn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",

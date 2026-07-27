@@ -10487,6 +10487,73 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3FandomStyleTest": {
+    "startMessage": {
+      "line1": "你是哪种追星方式的人？",
+      "line2": "有人只听音乐就满足，有人收集周边，有人把内容全部追完，也有人把粉丝活动本身当作生活的理由。",
+      "line3": "追星没有标准答案。轻松享受也是粉丝，把人生献出去也是粉丝。只是每个人的方式不同。",
+      "line4": "通过12个问题，找出你真正的追星倾向和最匹配的本命类型。",
+      "line5": "找出我的追星类型 💜 立即查看",
+      "note": "※ 如果正在追星或有追星经历，请回想那时的情况作答；如果没有，请以最喜欢的事物为标准作答。"
+    },
+    "ui": {
+      "startTest": "开始追星倾向诊断",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区域（我的追星倾向诊断）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "fandomType": "追星类型",
+      "fandomKeywords": "追星关键词",
+      "fandomStyle": "追星方式",
+      "strength": "该类型的优势",
+      "characteristic": "该类型的特点",
+      "bestBiasType": "最匹配的本命类型",
+      "oneLiner": "一句话评价",
+      "certificationPhrase": "认证文案"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "我的追星类型：治愈欣赏型 🎵 说是轻松享受的粉…不强迫自己也喜欢的心意是真的 → 你是什么追星类型？",
+      "type2": "我的追星类型：感性沉浸型 💙 本命歌词就破防的类型…用感情追星没错 ㅠ → 对啊我也这样追 ㅋㅋ 你呢？",
+      "type3": "我的追星类型：内容追完型 📱 本命视频全看完了…追过往内容完全是我 ㅋㅋ → 你是什么追星类型？",
+      "type4": "我的追星类型：粉圈活动家型 🎤 一起追星最开心…音综投票·刷榜已经在做了 → 对啊我也这样追 ㅋㅋ 你呢？",
+      "type5": "我的追星类型：硬核死忠型 ⭐ 说追星是生活方式…有周边房、熬夜刷榜基本属实 ㅋㅋ → 你是什么类型？",
+      "type6": "我的追星类型：追星人生大师型 🌟 说遇见本命前后人生分水岭…确实 ㅋㅋ → 对啊我也这样追 ㅋㅋ 粉圈朋友都来试试",
+      "startDefault": "我的追星倾向诊断 💜 看看你的追星类型",
+      "startKakao": "我的追星倾向诊断 💜 看看你的追星类型",
+      "startWechat": "我的追星倾向诊断 💜 看看你的追星类型",
+      "startWhatsapp": "我的追星倾向诊断 💜 看看你的追星类型",
+      "startTelegram": "我的追星倾向诊断 💜 看看你的追星类型",
+      "startLine": "我的追星倾向诊断 💜 看看你的追星类型"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "我们每个人都有一座用来保护自己的城墙。",
