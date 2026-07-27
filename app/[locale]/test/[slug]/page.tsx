@@ -188,6 +188,10 @@ import {
   phase3FandomStyleResults,
 } from '@/lib/phase3FandomStyleData';
 import {
+  phase3WebtoonProtagonistQuestions,
+  phase3WebtoonProtagonistResults,
+} from '@/lib/phase3WebtoonProtagonistData';
+import {
   phase3AiFuture10YearsQuestions,
   phase3AiFuture10YearsResults,
 } from '@/lib/phase3AiFuture10YearsData';
@@ -691,6 +695,10 @@ const Phase3CreativityPotentialTestClient = dynamic(
 );
 const Phase3FandomStyleTestClient = dynamic(
   () => import('@/components/Phase3FandomStyleTestClient'),
+  { ssr: false }
+);
+const Phase3WebtoonProtagonistTestClient = dynamic(
+  () => import('@/components/Phase3WebtoonProtagonistTestClient'),
   { ssr: false }
 );
 const Phase3EgoWallThicknessTestClient = dynamic(
@@ -2223,6 +2231,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['追星', '粉絲', '本命', '鐵粉', 'K-pop'],
         vi: ['fan', 'fandom', 'bias', 'stan', 'K-pop'],
         id: ['fandom', 'fan', 'bias', 'stan', 'K-pop'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-webtoon-protagonist') {
+    test = {
+      slug: 'phase3-webtoon-protagonist',
+      title: {
+        ko: '나는 어떤 웹툰 주인공?',
+        en: 'What Webtoon Protagonist Am I?',
+        ja: '私はどんなウェブトゥーン主人公?',
+        'zh-CN': '我是哪种网漫主角?',
+        'zh-TW': '我是哪種網漫主角?',
+        vi: 'Tôi là nhân vật chính webtoon kiểu nào?',
+        id: 'Aku Protagonis Webtoon Tipe Apa?',
+      },
+      description: {
+        ko: '12가지 질문으로 내가 웹툰 속 주인공이 된다면 어떤 유형인지 분석하고 추천 웹툰 장르를 알려드립니다.',
+        en: 'Analyze what type of webtoon protagonist you would be through 12 questions and get recommended genres.',
+        ja: '12の質問でウェブトゥーンの主人公タイプを分析し、おすすめジャンルをお伝えします。',
+        'zh-CN': '通过12个问题分析你成为网漫主角的类型，并推荐适合你的网漫类型。',
+        'zh-TW': '透過12個問題分析你成為網漫主角的類型，並推薦適合你的網漫類型。',
+        vi: 'Phân tích bạn sẽ là kiểu nhân vật chính webtoon nào qua 12 câu hỏi và gợi ý thể loại phù hợp.',
+        id: 'Analisis tipe protagonis webtoon-mu lewat 12 pertanyaan dan dapatkan rekomendasi genre.',
+      },
+      thumbnail: 'p3_test_webtoon_protagonist.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['웹툰', '주인공', '먼치킨', '로맨스', '웹툰추천'],
+        en: ['webtoon', 'protagonist', 'op mc', 'romance', 'webtoon rec'],
+        ja: ['ウェブトゥーン', '主人公', '最強', 'ロマンス', 'おすすめ'],
+        'zh-CN': ['网漫', '主角', '龙傲天', '浪漫', '网漫推荐'],
+        'zh-TW': ['網漫', '主角', '龍傲天', '浪漫', '網漫推薦'],
+        vi: ['webtoon', 'nhân vật chính', 'overpowered', 'lãng mạn', 'gợi ý webtoon'],
+        id: ['webtoon', 'protagonis', 'overpowered', 'romance', 'rekomendasi webtoon'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8064,6 +8109,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3LeadershipStyleQuestions}
           results={phase3LeadershipStyleResults}
           questionCount={phase3LeadershipStyleQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-webtoon-protagonist') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-webtoon-protagonist',
+      title: {
+        ko: '나는 어떤 웹툰 주인공?',
+        en: 'What Webtoon Protagonist Am I?',
+        ja: '私はどんなウェブトゥーン主人公?',
+        'zh-CN': '我是哪种网漫主角?',
+        'zh-TW': '我是哪種網漫主角?',
+        vi: 'Tôi là nhân vật chính webtoon kiểu nào?',
+        id: 'Aku Protagonis Webtoon Tipe Apa?',
+      },
+      description: {
+        ko: '12가지 질문으로 내가 웹툰 속 주인공이 된다면 어떤 유형인지 분석하고 추천 웹툰 장르를 알려드립니다.',
+        en: 'Analyze what type of webtoon protagonist you would be through 12 questions and get recommended genres.',
+        ja: '12の質問でウェブトゥーンの主人公タイプを分析し、おすすめジャンルをお伝えします。',
+        'zh-CN': '通过12个问题分析你成为网漫主角的类型，并推荐适合你的网漫类型。',
+        'zh-TW': '透過12個問題分析你成為網漫主角的類型，並推薦適合你的網漫類型。',
+        vi: 'Phân tích bạn sẽ là kiểu nhân vật chính webtoon nào qua 12 câu hỏi và gợi ý thể loại phù hợp.',
+        id: 'Analisis tipe protagonis webtoon-mu lewat 12 pertanyaan dan dapatkan rekomendasi genre.',
+      },
+      thumbnail: 'p3_test_webtoon_protagonist.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['웹툰', '주인공', '먼치킨', '로맨스', '웹툰추천'],
+        en: ['webtoon', 'protagonist', 'op mc', 'romance', 'webtoon rec'],
+        ja: ['ウェブトゥーン', '主人公', '最強', 'ロマンス', 'おすすめ'],
+        'zh-CN': ['网漫', '主角', '龙傲天', '浪漫', '网漫推荐'],
+        'zh-TW': ['網漫', '主角', '龍傲天', '浪漫', '網漫推薦'],
+        vi: ['webtoon', 'nhân vật chính', 'overpowered', 'lãng mạn', 'gợi ý webtoon'],
+        id: ['webtoon', 'protagonis', 'overpowered', 'romance', 'rekomendasi webtoon'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3WebtoonProtagonistTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3WebtoonProtagonistQuestions}
+          results={phase3WebtoonProtagonistResults}
+          questionCount={phase3WebtoonProtagonistQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

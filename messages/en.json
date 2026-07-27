@@ -10563,6 +10563,74 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3WebtoonProtagonistTest": {
+    "startMessage": {
+      "line1": "If you became a webtoon protagonist, what kind of story would you lead?",
+      "line2": "Some live ordinary lives until suddenly dropped into another world, some solve everything with overwhelming power from the start, and some quietly grow in their place until they finally shine.",
+      "line3": "Webtoons have thousands of protagonists, but those narrative patterns ultimately come from your own way of acting.",
+      "line4": "Through 12 questions, we analyze what type of webtoon protagonist you would be. Results include your best-matching genre and platform recommendations.",
+      "line5": "Find my webtoon protagonist type 📚 Check now",
+      "note": "※ Choose the option closest to who you truly are."
+    },
+    "ui": {
+      "startTest": "Start Webtoon Protagonist Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (What Webtoon Protagonist Am I?)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "protagonistType": "Webtoon Protagonist Type",
+      "appearingGenre": "Appearing Genre",
+      "narrativePattern": "Signature Narrative Pattern",
+      "strength": "Strengths of This Protagonist",
+      "charmPoint": "Charm Point",
+      "shiningScene": "Scene Where the Protagonist Shines",
+      "recommendedGenre": "Recommended Webtoon Genre",
+      "oneLiner": "One-Liner Review",
+      "certificationPhrase": "Certification Phrase"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "My webtoon protagonist type: Everyday Relatable 📖 Not flashy but impossible to stop reading... 100% relatable → What protagonist are you? Genre recommended too",
+      "type2": "My webtoon protagonist type: Emotional Romance 💗 Readers pause at one line... a webtoon you cannot stop capturing lol → What protagonist are you?",
+      "type3": "My webtoon protagonist type: Hard-Working Growth 🔥 Readers who started early cheer to the end... growth narrative hits → What webtoon protagonist are you?",
+      "type4": "My webtoon protagonist type: Hidden Twist OP ⚡ Looks ordinary, actually OP... haven't shown the real deal lol → What protagonist are you? Genre included",
+      "type5": "My webtoon protagonist type: Charismatic OP 👑 Overwhelming from the start... SSS OP webtoon lead lol → What protagonist are you?",
+      "type6": "My webtoon protagonist type: Unique Fandom Magnet 🌟 Fandom in any genre... season 2 guaranteed lol → What webtoon protagonist are you?",
+      "startDefault": "What Webtoon Protagonist Am I? 📚 Find your webtoon protagonist type",
+      "startKakao": "What Webtoon Protagonist Am I? 📚 Find your webtoon protagonist type",
+      "startWechat": "What Webtoon Protagonist Am I? 📚 Find your webtoon protagonist type",
+      "startWhatsapp": "What Webtoon Protagonist Am I? 📚 Find your webtoon protagonist type",
+      "startTelegram": "What Webtoon Protagonist Am I? 📚 Find your webtoon protagonist type",
+      "startLine": "What Webtoon Protagonist Am I? 📚 Find your webtoon protagonist type"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "We all have walls to protect ourselves.",

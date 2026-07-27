@@ -10692,6 +10692,74 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3WebtoonProtagonistTest": {
+    "startMessage": {
+      "line1": "당신이 웹툰 주인공이 된다면 어떤 이야기의 주인공일까요?",
+      "line2": "평범하게 살다가 어느 날 갑자기 이세계로 떨어지는 주인공이 있고, 처음부터 압도적인 능력으로 모든 걸 해결하는 주인공이 있고, 조용히 자기 자리에서 성장하다 결국 빛나는 주인공이 있습니다.",
+      "line3": "웹툰엔 수천 가지 주인공이 있지만 그 서사의 패턴은 결국 나 자신의 행동 방식에서 나옵니다.",
+      "line4": "12가지 질문으로 내가 웹툰 속 주인공이 된다면 어떤 유형인지 분석합니다. 결과에는 가장 잘 맞는 웹툰 장르와 추천 플랫폼도 함께 드립니다.",
+      "line5": "내 웹툰 주인공 유형 찾기 📚 지금 바로 확인",
+      "note": "※ 가장 솔직하게 나에게 가까운 선택지를 고르세요."
+    },
+    "ui": {
+      "startTest": "웹툰 주인공 유형 테스트 시작",
+      "shareWithFriends": "친구와 같이 해보기",
+      "shareResultWithFriends": "결과를 친구에게 공유하기",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "goToTest": "테스트 하러 가기",
+      "adsenseTitle": "AdSense 광고 영역 (나는 어떤 웹툰 주인공?)",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "protagonistType": "웹툰 주인공 유형",
+      "appearingGenre": "등장 장르",
+      "narrativePattern": "대표 서사 패턴",
+      "strength": "이 주인공의 강점",
+      "charmPoint": "매력 포인트",
+      "shiningScene": "주인공이 빛나는 장면",
+      "recommendedGenre": "추천 웹툰 장르",
+      "oneLiner": "한 줄 평",
+      "certificationPhrase": "인증 문구"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "내 웹툰 주인공 유형: 일상 공감형 📖 화려하지 않은데 읽다 보면 멈출 수 없는 웹툰 주인공이래... 공감 100% 맞음 → 너는 어떤 주인공이야? 웹툰 장르도 추천해줌",
+      "type2": "내 웹툰 주인공 유형: 감성 로맨스형 💗 대사 하나에 독자들이 멈추는 주인공이래... 캡처 멈출 수 없는 웹툰 맞음 ㅋㅋ → 너는 어떤 주인공이야?",
+      "type3": "내 웹툰 주인공 유형: 노력 성장형 🔥 초반부터 보던 독자가 끝까지 응원하는 주인공이래... 성장 서사 공감 → 너는 어떤 웹툰 주인공이야?",
+      "type4": "내 웹툰 주인공 유형: 숨겨진 반전 먼치킨형 ⚡ 겉은 평범, 실은 먼치킨이래... 진짜를 안 보여준 것 맞음 ㅋㅋ → 너는 어떤 주인공이야? 웹툰 장르도 나옴",
+      "type5": "내 웹툰 주인공 유형: 카리스마 먼치킨형 👑 처음부터 압도적인 주인공이래... SSS급 먼치킨 웹툰 주인공 ㅋㅋ → 너는 어떤 주인공이야?",
+      "type6": "내 웹툰 주인공 유형: 개성 폭발 입덕 유발형 🌟 어떤 장르로 나와도 팬덤 생기는 주인공이래... 시즌2 보장이래 ㅋㅋ → 너는 어떤 웹툰 주인공이야?",
+      "startDefault": "나는 어떤 웹툰 주인공? 📚 내 웹툰 주인공 유형 확인해봐",
+      "startKakao": "나는 어떤 웹툰 주인공? 📚 내 웹툰 주인공 유형 확인해봐",
+      "startWechat": "나는 어떤 웹툰 주인공? 📚 내 웹툰 주인공 유형 확인해봐",
+      "startWhatsapp": "나는 어떤 웹툰 주인공? 📚 내 웹툰 주인공 유형 확인해봐",
+      "startTelegram": "나는 어떤 웹툰 주인공? 📚 내 웹툰 주인공 유형 확인해봐",
+      "startLine": "나는 어떤 웹툰 주인공? 📚 내 웹툰 주인공 유형 확인해봐"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "우리는 누구나 자신을 지키기 위한 성벽을 가지고 있습니다.",

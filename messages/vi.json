@@ -10554,6 +10554,74 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3WebtoonProtagonistTest": {
+    "startMessage": {
+      "line1": "Nếu bạn trở thành nhân vật chính webtoon, bạn sẽ là kiểu protagonist nào?",
+      "line2": "Có người sống bình thường rồi đột nhiên rơi vào thế giới khác, có người giải quyết mọi thứ bằng sức mạnh áp đảo ngay từ đầu, và có người lặng lẽ trưởng thành ở vị trí của mình rồi cuối cùng tỏa sáng.",
+      "line3": "Webtoon có hàng nghìn nhân vật chính, nhưng pattern câu chuyện cuối cùng đến từ cách hành xử của chính bạn.",
+      "line4": "Qua 12 câu hỏi, phân tích bạn sẽ là kiểu nhân vật chính webtoon nào. Kết quả gồm genre và nền tảng được gợi ý phù hợp nhất.",
+      "line5": "Tìm kiểu nhân vật chính webtoon của tôi 📚 Kiểm tra ngay",
+      "note": "※ Hãy chọn phương án gần với bạn thật nhất."
+    },
+    "ui": {
+      "startTest": "Bắt đầu test kiểu nhân vật chính webtoon",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem test khác",
+      "goToTest": "Làm test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tôi là nhân vật chính webtoon gì?)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các test tương tự",
+      "protagonistType": "Kiểu nhân vật chính webtoon",
+      "appearingGenre": "Thể loại xuất hiện",
+      "narrativePattern": "Pattern câu chuyện đặc trưng",
+      "strength": "Điểm mạnh của nhân vật này",
+      "charmPoint": "Điểm hấp dẫn",
+      "shiningScene": "Cảnh nhân vật tỏa sáng",
+      "recommendedGenre": "Thể loại webtoon gợi ý",
+      "oneLiner": "Một câu đánh giá",
+      "certificationPhrase": "Câu chứng nhận"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Kiểu nhân vật chính webtoon của tôi: Đồng cảm đời thường 📖 Không hoa lệ mà đọc không dừng được… đúng 100% → Bạn là nhân vật gì? Có gợi ý thể loại",
+      "type2": "Kiểu nhân vật chính webtoon của tôi: Lãng mạn cảm xúc 💗 Một câu thoại khiến độc giả dừng lại… webtoon chụp màn hình không ngừng haha → Bạn là nhân vật gì?",
+      "type3": "Kiểu nhân vật chính webtoon của tôi: Trưởng thành bằng nỗ lực 🔥 Độc giả đọc từ đầu cổ vũ đến cuối… đồng cảm growth → Bạn là nhân vật webtoon gì?",
+      "type4": "Kiểu nhân vật chính webtoon của tôi: OP plot twist ẩn ⚡ Bên ngoài bình thường, thực ra OP… chưa lộ bản thật haha → Bạn là nhân vật gì? Có thể loại",
+      "type5": "Kiểu nhân vật chính webtoon của tôi: OP charisma 👑 Áp đảo ngay từ đầu… protagonis webtoon OP SSS haha → Bạn là nhân vật gì?",
+      "type6": "Kiểu nhân vật chính webtoon của tôi: Hút fandom độc đáo 🌟 Thể loại gì cũng có fan… đảm bảo season 2 haha → Bạn là nhân vật webtoon gì?",
+      "startDefault": "Tôi là nhân vật chính webtoon gì? 📚 Xem kiểu nhân vật chính webtoon của bạn",
+      "startKakao": "Tôi là nhân vật chính webtoon gì? 📚 Xem kiểu nhân vật chính webtoon của bạn",
+      "startWechat": "Tôi là nhân vật chính webtoon gì? 📚 Xem kiểu nhân vật chính webtoon của bạn",
+      "startWhatsapp": "Tôi là nhân vật chính webtoon gì? 📚 Xem kiểu nhân vật chính webtoon của bạn",
+      "startTelegram": "Tôi là nhân vật chính webtoon gì? 📚 Xem kiểu nhân vật chính webtoon của bạn",
+      "startLine": "Tôi là nhân vật chính webtoon gì? 📚 Xem kiểu nhân vật chính webtoon của bạn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",

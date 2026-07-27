@@ -10554,6 +10554,74 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3WebtoonProtagonistTest": {
+    "startMessage": {
+      "line1": "如果你成为网漫主角，会是什么样的故事主角？",
+      "line2": "有人平凡生活却突然掉进异世界，有人从一开始就凭压倒性力量解决一切，也有人在自己的位置上安静成长最终发光。",
+      "line3": "网漫里有成千上万的主角，但那些叙事模式终究来自你自己的行为方式。",
+      "line4": "通过12个问题，分析你成为网漫主角会是什么类型。结果还会附上最匹配的网漫 genre 和平台推荐。",
+      "line5": "找出我的网漫主角类型 📚 立即查看",
+      "note": "※ 请最诚实地选择最接近自己的选项。"
+    },
+    "ui": {
+      "startTest": "开始网漫主角类型测试",
+      "shareWithFriends": "和朋友一起试试",
+      "shareResultWithFriends": "把结果分享给朋友",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "goToTest": "去做测试",
+      "adsenseTitle": "AdSense广告区域（我是什么网漫主角？）",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "protagonistType": "网漫主角类型",
+      "appearingGenre": "登场 genre",
+      "narrativePattern": "代表叙事模式",
+      "strength": "该主角的优势",
+      "charmPoint": "魅力点",
+      "shiningScene": "主角闪耀的场景",
+      "recommendedGenre": "推荐网漫 genre",
+      "oneLiner": "一句话评价",
+      "certificationPhrase": "认证文案"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "我的网漫主角类型：日常共鸣型 📖 不华丽但一看停不下来…100%共鸣 → 你是什么主角？还推荐 genre",
+      "type2": "我的网漫主角类型：感性浪漫型 💗 一句台词让读者停住…停不下截图的网漫 哈哈 → 你是什么主角？",
+      "type3": "我的网漫主角类型：努力成长型 🔥 从开头追的读者应援到最后…成长叙事共鸣 → 你是什么网漫主角？",
+      "type4": "我的网漫主角类型：隐藏反转无敌型 ⚡ 外表平凡实则无敌…还没露真身 哈哈 → 你是什么主角？还有 genre",
+      "type5": "我的网漫主角类型：魅力无敌型 👑 从一开始就压倒性…SSS级无敌网漫主角 哈哈 → 你是什么主角？",
+      "type6": "我的网漫主角类型：个性爆发入坑型 🌟 什么题材都有粉…第二季保证 哈哈 → 你是什么网漫主角？",
+      "startDefault": "我是什么网漫主角？ 📚 看看你的网漫主角类型",
+      "startKakao": "我是什么网漫主角？ 📚 看看你的网漫主角类型",
+      "startWechat": "我是什么网漫主角？ 📚 看看你的网漫主角类型",
+      "startWhatsapp": "我是什么网漫主角？ 📚 看看你的网漫主角类型",
+      "startTelegram": "我是什么网漫主角？ 📚 看看你的网漫主角类型",
+      "startLine": "我是什么网漫主角？ 📚 看看你的网漫主角类型"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "我们每个人都有一座用来保护自己的城墙。",

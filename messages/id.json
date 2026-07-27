@@ -10554,6 +10554,74 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3WebtoonProtagonistTest": {
+    "startMessage": {
+      "line1": "Kalau kamu jadi protagonis webtoon, kamu akan jadi protagonis cerita seperti apa?",
+      "line2": "Ada yang hidup biasa lalu tiba-tiba jatuh ke dunia lain, ada yang menyelesaikan semuanya dengan kekuatan overwhelming sejak awal, dan ada yang diam-diam tumbuh di tempatnya lalu akhirnya bersinar.",
+      "line3": "Webtoon punya ribuan protagonis, tapi pola narasinya pada akhirnya datang dari cara bertindakmu sendiri.",
+      "line4": "Lewat 12 pertanyaan, kami analisis tipe protagonis webtoon yang paling cocok untukmu. Hasilnya juga menyertakan genre dan rekomendasi platform.",
+      "line5": "Temukan tipe protagonis webtoon-ku 📚 Cek sekarang",
+      "note": "※ Pilih opsi yang paling dekat dengan dirimu yang sebenarnya."
+    },
+    "ui": {
+      "startTest": "Mulai Tes Protagonis Webtoon",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Protagonis Webtoon Apa Aku?)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "protagonistType": "Tipe Protagonis Webtoon",
+      "appearingGenre": "Genre Kemunculan",
+      "narrativePattern": "Pola Narasi Khas",
+      "strength": "Kekuatan Protagonis Ini",
+      "charmPoint": "Charm Point",
+      "shiningScene": "Adegan Protagonis Bersinar",
+      "recommendedGenre": "Genre Webtoon Rekomendasi",
+      "oneLiner": "Satu Kalimat Ulasan",
+      "certificationPhrase": "Frasa Sertifikasi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Tipe protagonis webtoon-ku: Relatable sehari-hari 📖 Tidak megah tapi dibaca lalu sulit berhenti… 100% relatable → Kamu protagonis apa? Genre juga direkomendasikan",
+      "type2": "Tipe protagonis webtoon-ku: Romansa emosional 💗 Satu dialog bikin pembaca berhenti… webtoon yang screenshot-nya nggak berhenti wkwk → Kamu protagonis apa?",
+      "type3": "Tipe protagonis webtoon-ku: Pertumbuhan berusaha 🔥 Pembaca dari awal dukung sampai akhir… narasi growth relate → Kamu protagonis webtoon apa?",
+      "type4": "Tipe protagonis webtoon-ku: OP plot twist tersembunyi ⚡ Terlihat biasa, sebenarnya OP… belum tunjuk yang asli wkwk → Kamu protagonis apa? Genre juga keluar",
+      "type5": "Tipe protagonis webtoon-ku: OP karismatik 👑 Overwhelming sejak awal… protagonis webtoon OP SSS wkwk → Kamu protagonis apa?",
+      "type6": "Tipe protagonis webtoon-ku: Magnet fandom unik 🌟 Genre apa pun ada fandom… season 2 guaranteed wkwk → Kamu protagonis webtoon apa?",
+      "startDefault": "Protagonis Webtoon Apa Aku? 📚 Cek tipe protagonis webtoon-mu",
+      "startKakao": "Protagonis Webtoon Apa Aku? 📚 Cek tipe protagonis webtoon-mu",
+      "startWechat": "Protagonis Webtoon Apa Aku? 📚 Cek tipe protagonis webtoon-mu",
+      "startWhatsapp": "Protagonis Webtoon Apa Aku? 📚 Cek tipe protagonis webtoon-mu",
+      "startTelegram": "Protagonis Webtoon Apa Aku? 📚 Cek tipe protagonis webtoon-mu",
+      "startLine": "Protagonis Webtoon Apa Aku? 📚 Cek tipe protagonis webtoon-mu"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",
