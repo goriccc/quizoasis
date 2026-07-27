@@ -10622,6 +10622,74 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3AloneTimeTypeTest": {
+    "startMessage": {
+      "line1": "Khi không ai ở bên, con người thật của bạn mới lộ ra.",
+      "line2": "Người vui vẻ ở buổi gặp mặt có thể về nhà chui vào chăn không làm gì, còn người thường ít nói khi ở một mình lại liên tục tạo ra thứ gì đó.",
+      "line3": "Thời gian ở một mình không cần phải trang điểm hay hòa hợp. Bạn chỉ làm điều mình muốn. Vì vậy khoảng thời gian đó mới là thật.",
+      "line4": "Qua 12 câu hỏi, phân tích con người thật khi không ai ở bên và cách nạp năng lượng thật sự của bạn.",
+      "line5": "Tìm kiểu thời gian một mình thật của tôi 🏠 Bắt đầu thật lòng",
+      "note": "※ Hãy tưởng tượng thời gian tự do hoàn toàn, không ai ở bên và không có việc bắt buộc phải làm, rồi trả lời thật nhất có thể."
+    },
+    "ui": {
+      "startTest": "Bắt đầu test kiểu thời gian một mình thật",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem test khác",
+      "goToTest": "Làm test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Kiểu thời gian một mình thật của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các test tương tự",
+      "soloTimeType": "Kiểu thời gian một mình",
+      "soloKeywords": "Từ khóa thời gian một mình thật",
+      "actualBehavior": "Thực tế làm gì khi ở một mình",
+      "strength": "Điểm mạnh của kiểu này",
+      "characteristic": "Đặc điểm của kiểu này",
+      "difficultSituation": "Tình huống khó với kiểu này",
+      "whatTheyNeed": "Điều kiểu này cần",
+      "oneLiner": "Một câu đánh giá",
+      "certificationPhrase": "Câu chứng nhận"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Kiểu thời gian một mình thật của tôi: Nạp pin hoàn toàn 🛋️ Không làm gì là tốt nhất… nằm xuống trước đúng là tôi → Một mình kiểu này đồng cảm không? Bạn kiểu gì?",
+      "type2": "Kiểu thời gian một mình thật của tôi: Hấp thụ cảm xúc 📱 Kiểu hẹn hò với thuật toán… xem reels mà bị phát hiện làm test này haha → Một mình kiểu này đồng cảm không? Còn bạn?",
+      "type3": "Kiểu thời gian một mình thật của tôi: Đam mê sở thích 🎮 Kiểu mất track thời gian… clear game nhìn đồng hồ 4 giờ sáng haha → Bạn kiểu gì?",
+      "type4": "Kiểu thời gian một mình thật của tôi: Suy tư nội tâm 🖊️ Kiểu ở một mình nghĩ nhiều hơn… nhìn cửa sổ một tiếng đúng là tôi haha → Một mình kiểu này đồng cảm không? Còn bạn?",
+      "type5": "Kiểu thời gian một mình thật của tôi: Tự phát triển nạp năng lượng 💻 Kiểu ở một mình càng năng suất… phải một mình mới tập trung được đúng → Một mình kiểu này đồng cảm không? Bạn kiểu gì?",
+      "type6": "Kiểu thời gian một mình thật của tôi: Sáng tạo sản xuất 🎨 Kiểu ở một mình càng bận… tạo xong quên ăn thừa nhận haha → Một mình kiểu này đồng cảm không? Bạn kiểu gì?",
+      "startDefault": "Kiểu thời gian một mình thật của tôi 🏠 Xem con người thật khi không ai ở bên",
+      "startKakao": "Kiểu thời gian một mình thật của tôi 🏠 Xem con người thật khi không ai ở bên",
+      "startWechat": "Kiểu thời gian một mình thật của tôi 🏠 Xem con người thật khi không ai ở bên",
+      "startWhatsapp": "Kiểu thời gian một mình thật của tôi 🏠 Xem con người thật khi không ai ở bên",
+      "startTelegram": "Kiểu thời gian một mình thật của tôi 🏠 Xem con người thật khi không ai ở bên",
+      "startLine": "Kiểu thời gian một mình thật của tôi 🏠 Xem con người thật khi không ai ở bên"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",

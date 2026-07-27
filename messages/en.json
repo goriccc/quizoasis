@@ -10631,6 +10631,74 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3AloneTimeTypeTest": {
+    "startMessage": {
+      "line1": "When nobody is around, the real you shows up.",
+      "line2": "Someone bright and lively at gatherings may come home and bury themselves in blankets doing nothing, while someone usually quiet may keep making things nonstop when alone.",
+      "line3": "Alone time does not need to be dressed up or adjusted. You just do what you want. That is why that time is real.",
+      "line4": "Through 12 questions, we analyze the real you when nobody is around and your true recharge style.",
+      "line5": "Find my true alone-time type 🏠 Start honestly",
+      "note": "※ Imagine complete freedom with nobody around and nothing you have to do, then answer as honestly as possible."
+    },
+    "ui": {
+      "startTest": "Start True Alone-Time Type Test",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My True Alone-Time Type)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "soloTimeType": "Alone-Time Type",
+      "soloKeywords": "True Alone-Time Keywords",
+      "actualBehavior": "What You Actually Do When Alone",
+      "strength": "Strengths of This Type",
+      "characteristic": "Characteristics of This Type",
+      "difficultSituation": "Difficult Situations for This Type",
+      "whatTheyNeed": "What This Type Needs",
+      "oneLiner": "One-Liner Review",
+      "certificationPhrase": "Certification Phrase"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "My true alone-time type: Full Battery Recharge 🛋️ Doing nothing is the best... lying down first is so me → Relatable alone time? What type are you?",
+      "type2": "My true alone-time type: Emotional Absorption 📱 The type that dates the algorithm... caught taking this test while watching reels lol → Relatable alone time? What about you?",
+      "type3": "My true alone-time type: Hobby Immersion 🎮 The type that loses track of time... beat a game and it's 4 AM lol → What type are you?",
+      "type4": "My true alone-time type: Inner Reflection 🖊️ Thoughts multiply when alone... stared out the window for an hour lol → Relatable alone time? What about you?",
+      "type5": "My true alone-time type: Self-Development Recharge 💻 More productive when alone... focus hits different solo → Relatable alone time? What type are you?",
+      "type6": "My true alone-time type: Creative Production 🎨 Gets busier when alone... forget to eat while creating lol → Relatable alone time? What type are you?",
+      "startDefault": "My True Alone-Time Type 🏠 See the real you when nobody is around",
+      "startKakao": "My True Alone-Time Type 🏠 See the real you when nobody is around",
+      "startWechat": "My True Alone-Time Type 🏠 See the real you when nobody is around",
+      "startWhatsapp": "My True Alone-Time Type 🏠 See the real you when nobody is around",
+      "startTelegram": "My True Alone-Time Type 🏠 See the real you when nobody is around",
+      "startLine": "My True Alone-Time Type 🏠 See the real you when nobody is around"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "We all have walls to protect ourselves.",

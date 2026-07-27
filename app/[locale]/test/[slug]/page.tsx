@@ -192,6 +192,10 @@ import {
   phase3WebtoonProtagonistResults,
 } from '@/lib/phase3WebtoonProtagonistData';
 import {
+  phase3AloneTimeTypeQuestions,
+  phase3AloneTimeTypeResults,
+} from '@/lib/phase3AloneTimeTypeData';
+import {
   phase3AiFuture10YearsQuestions,
   phase3AiFuture10YearsResults,
 } from '@/lib/phase3AiFuture10YearsData';
@@ -699,6 +703,10 @@ const Phase3FandomStyleTestClient = dynamic(
 );
 const Phase3WebtoonProtagonistTestClient = dynamic(
   () => import('@/components/Phase3WebtoonProtagonistTestClient'),
+  { ssr: false }
+);
+const Phase3AloneTimeTypeTestClient = dynamic(
+  () => import('@/components/Phase3AloneTimeTypeTestClient'),
   { ssr: false }
 );
 const Phase3EgoWallThicknessTestClient = dynamic(
@@ -2268,6 +2276,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['網漫', '主角', '龍傲天', '浪漫', '網漫推薦'],
         vi: ['webtoon', 'nhân vật chính', 'overpowered', 'lãng mạn', 'gợi ý webtoon'],
         id: ['webtoon', 'protagonis', 'overpowered', 'romance', 'rekomendasi webtoon'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-alone-time-type') {
+    test = {
+      slug: 'phase3-alone-time-type',
+      title: {
+        ko: "나의 '찐 혼자 시간' 유형",
+        en: "My True Solo Time Type",
+        ja: "私の「本当の一人時間」タイプ",
+        'zh-CN': "我的「真·独处时间」类型",
+        'zh-TW': "我的「真·獨處時間」類型",
+        vi: "Kiểu thời gian một mình thật của tôi",
+        id: "Tipe Waktu Sendiri Asli-ku",
+      },
+      description: {
+        ko: '12가지 질문으로 아무도 없을 때의 진짜 나, 진짜 충전 방식을 분석합니다.',
+        en: 'Analyze your true self and real recharge style when no one is around through 12 questions.',
+        ja: '12の質問で、誰もいないときの本当の自分と本当の充電方法を分析します。',
+        'zh-CN': '通过12个问题分析无人时的真实自我与真正的充电方式。',
+        'zh-TW': '透過12個問題分析無人時的真實自我與真正的充電方式。',
+        vi: 'Phân tích con người thật và cách nạp năng lượng thật khi không ai ở bên qua 12 câu hỏi.',
+        id: 'Analisis diri asli dan cara isi ulang energi saat sendiri lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_alone_time_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['혼자시간', '인싸아웃사', '내향', 'MZ일상', '자기충전'],
+        en: ['solo time', 'introvert extrovert', 'introvert', 'daily life', 'self recharge'],
+        ja: ['一人時間', 'インキャアウトキャ', '内向', '日常', '充電'],
+        'zh-CN': ['独处时间', '内向外向', '内向', '日常', '自我充电'],
+        'zh-TW': ['獨處時間', '內向外向', '內向', '日常', '自我充電'],
+        vi: ['thời gian một mình', 'hướng nội ngoại', 'hướng nội', 'đời sống', 'nạp năng lượng'],
+        id: ['waktu sendiri', 'introvert ekstrovert', 'introvert', 'keseharian', 'isi ulang energi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8164,6 +8209,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3WebtoonProtagonistQuestions}
           results={phase3WebtoonProtagonistResults}
           questionCount={phase3WebtoonProtagonistQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-alone-time-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-alone-time-type',
+      title: {
+        ko: "나의 '찐 혼자 시간' 유형",
+        en: "My True Solo Time Type",
+        ja: "私の「本当の一人時間」タイプ",
+        'zh-CN': "我的「真·独处时间」类型",
+        'zh-TW': "我的「真·獨處時間」類型",
+        vi: "Kiểu thời gian một mình thật của tôi",
+        id: "Tipe Waktu Sendiri Asli-ku",
+      },
+      description: {
+        ko: '12가지 질문으로 아무도 없을 때의 진짜 나, 진짜 충전 방식을 분석합니다.',
+        en: 'Analyze your true self and real recharge style when no one is around through 12 questions.',
+        ja: '12の質問で、誰もいないときの本当の自分と本当の充電方法を分析します。',
+        'zh-CN': '通过12个问题分析无人时的真实自我与真正的充电方式。',
+        'zh-TW': '透過12個問題分析無人時的真實自我與真正的充電方式。',
+        vi: 'Phân tích con người thật và cách nạp năng lượng thật khi không ai ở bên qua 12 câu hỏi.',
+        id: 'Analisis diri asli dan cara isi ulang energi saat sendiri lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_alone_time_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['혼자시간', '인싸아웃사', '내향', 'MZ일상', '자기충전'],
+        en: ['solo time', 'introvert extrovert', 'introvert', 'daily life', 'self recharge'],
+        ja: ['一人時間', 'インキャアウトキャ', '内向', '日常', '充電'],
+        'zh-CN': ['独处时间', '内向外向', '内向', '日常', '自我充电'],
+        'zh-TW': ['獨處時間', '內向外向', '內向', '日常', '自我充電'],
+        vi: ['thời gian một mình', 'hướng nội ngoại', 'hướng nội', 'đời sống', 'nạp năng lượng'],
+        id: ['waktu sendiri', 'introvert ekstrovert', 'introvert', 'keseharian', 'isi ulang energi'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3AloneTimeTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3AloneTimeTypeQuestions}
+          results={phase3AloneTimeTypeResults}
+          questionCount={phase3AloneTimeTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

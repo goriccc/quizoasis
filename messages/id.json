@@ -10622,6 +10622,74 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3AloneTimeTypeTest": {
+    "startMessage": {
+      "line1": "Saat tidak ada orang, diri aslimu muncul.",
+      "line2": "Orang yang ceria di pertemuan bisa pulang dan rebah di selimut tanpa melakukan apa pun, sementara orang yang biasanya pendiam bisa terus membuat sesuatu saat sendirian.",
+      "line3": "Waktu sendiri tidak perlu dibuat-buat atau disesuaikan. Kamu hanya melakukan yang kamu mau. Itulah kenapa waktu itu nyata.",
+      "line4": "Lewat 12 pertanyaan, kami analisis dirimu yang sebenarnya saat tidak ada orang dan cara isi ulang energimu yang sesungguhnya.",
+      "line5": "Temukan tipe waktu sendiri asli-ku 🏠 Mulai dengan jujur",
+      "note": "※ Bayangkan kebebasan penuh tanpa orang lain dan tanpa hal wajib, lalu jawab sejujur mungkin."
+    },
+    "ui": {
+      "startTest": "Mulai Tes Tipe Waktu Sendiri Asli",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tipe Waktu Sendiri Asli-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "soloTimeType": "Tipe Waktu Sendiri",
+      "soloKeywords": "Kata Kunci Waktu Sendiri Asli",
+      "actualBehavior": "Yang Benar-benar Dilakukan Saat Sendiri",
+      "strength": "Kekuatan Tipe Ini",
+      "characteristic": "Ciri Tipe Ini",
+      "difficultSituation": "Situasi Sulit untuk Tipe Ini",
+      "whatTheyNeed": "Yang Dibutuhkan Tipe Ini",
+      "oneLiner": "Satu Kalimat Ulasan",
+      "certificationPhrase": "Frasa Sertifikasi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Tipe waktu sendiri asli-ku: Isi Ulang Baterai Penuh 🛋️ Nggak ngapa-ngapain memang terbaik… tiduran dulu banget aku → Waktu sendiri gini relate? Kamu tipe apa?",
+      "type2": "Tipe waktu sendiri asli-ku: Penyerap Emosi 📱 Tipe kencan sama algoritma… ketahuan tes ini pas nonton reels wkwk → Waktu sendiri gini relate? Kamu?",
+      "type3": "Tipe waktu sendiri asli-ku: Hobi Immersive 🎮 Tipe lupa waktu… clear game lihat jam jam 4 pagi wkwk → Kamu tipe apa?",
+      "type4": "Tipe waktu sendiri asli-ku: Refleksi Batin 🖊️ Tipe mikir makin banyak pas sendiri… lihat jendela sejam beneran aku wkwk → Waktu sendiri gini relate? Kamu?",
+      "type5": "Tipe waktu sendiri asli-ku: Isi Ulang Pengembangan Diri 💻 Tipe lebih produktif pas sendiri… harus sendiri baru fokus bener wkwk → Waktu sendiri gini relate? Kamu tipe apa?",
+      "type6": "Tipe waktu sendiri asli-ku: Produksi Kreatif 🎨 Tipe makin sibuk pas sendiri… bikin-bikin lupa makan admit wkwk → Waktu sendiri gini relate? Kamu tipe apa?",
+      "startDefault": "Tipe Waktu Sendiri Asli-ku 🏠 Cek dirimu yang sebenarnya saat tidak ada orang",
+      "startKakao": "Tipe Waktu Sendiri Asli-ku 🏠 Cek dirimu yang sebenarnya saat tidak ada orang",
+      "startWechat": "Tipe Waktu Sendiri Asli-ku 🏠 Cek dirimu yang sebenarnya saat tidak ada orang",
+      "startWhatsapp": "Tipe Waktu Sendiri Asli-ku 🏠 Cek dirimu yang sebenarnya saat tidak ada orang",
+      "startTelegram": "Tipe Waktu Sendiri Asli-ku 🏠 Cek dirimu yang sebenarnya saat tidak ada orang",
+      "startLine": "Tipe Waktu Sendiri Asli-ku 🏠 Cek dirimu yang sebenarnya saat tidak ada orang"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",
