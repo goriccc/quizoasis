@@ -10839,6 +10839,80 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3WorldGreetingChallengeTest": {
+    "startMessage": {
+      "line1": "Bạn có đoán được lời chào này là ngôn ngữ của nước nào không?",
+      "line2": "Có lẽ bạn từng nghe \"Bonjour\", \"Ciao\", \"こんにちは\" đâu đó. Còn \"Jambo\"? \"Sawubona\"? \"Talofa\"?",
+      "line3": "Thế giới có hơn 7.000 ngôn ngữ, mỗi ngôn ngữ có từ đầu tiên khi gặp nhau. Ngôn ngữ khác nhau nhưng hành động chào hỏi có mọi nơi.",
+      "line4": "12 lời chào xuất hiện — từ dễ đến ngôn ngữ ít quen. Gửi kết quả cho bạn bè và hỏi: \"Biết lời chào này của nước nào không?\"",
+      "line5": "Bắt đầu World Greeting Challenge 🌍 Thử ngay",
+      "note": "※ Nhớ đọc giải thích đáp án. Dù sai vẫn vui vì được học ngôn ngữ thế giới."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (World Greeting Challenge)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} câu · Tổng 12 câu",
+      "languageGrade": "Cấp cao thủ ngôn ngữ",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng",
+      "correctExplanationTitle": "Giải thích đáp án đúng",
+      "feedbackCorrect": "Chính xác!",
+      "feedbackWrong": "Sai rồi.",
+      "nextQuestion": "Câu tiếp theo",
+      "viewResult": "Xem kết quả"
+    },
+    "result": {
+      "languageGrade": "Cấp cao thủ ngôn ngữ",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "World Greeting Challenge 🌍 Biết lời chào này của nước nào không?",
+      "startKakao": "World Greeting Challenge 🌍 Biết lời chào này của nước nào không?",
+      "startWechat": "World Greeting Challenge 🌍 Biết lời chào này của nước nào không?",
+      "startWhatsapp": "World Greeting Challenge 🌍 Biết lời chào này của nước nào không?",
+      "startTelegram": "World Greeting Challenge 🌍 Biết lời chào này của nước nào không?",
+      "startLine": "World Greeting Challenge 🌍 Biết lời chào này của nước nào không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EverydayScienceQuizTest": {
     "startMessage": {
       "line1": "Dùng mỗi ngày nhưng không biết tại sao lại vậy.",

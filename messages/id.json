@@ -10839,6 +10839,80 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3WorldGreetingChallengeTest": {
+    "startMessage": {
+      "line1": "Bisa tebak salam ini dari bahasa negara mana?",
+      "line2": "Kamu mungkin pernah dengar \"Bonjour\", \"Ciao\", \"こんにちは\" di suatu tempat. Lalu \"Jambo\"? \"Sawubona\"? \"Talofa\"?",
+      "line3": "Di dunia ada lebih dari 7.000 bahasa, dan masing-masing punya kata pertama saat bertemu. Bahasanya beda, tapi salam ada di mana-mana.",
+      "line4": "12 salam muncul—dari yang mudah ke bahasa yang makin asing. Kirim hasilmu ke teman dan tanya: \"Tahu salam ini dari negara mana?\"",
+      "line5": "Mulai World Greeting Challenge 🌍 Tantang sekarang",
+      "note": "※ Pastikan baca penjelasan jawaban. Meski salah, belajar bahasa dunia tetap seru."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (World Greeting Challenge)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "Benar {count} · Total 12 soal",
+      "languageGrade": "Grade master bahasa",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris",
+      "correctExplanationTitle": "Penjelasan jawaban benar",
+      "feedbackCorrect": "Benar!",
+      "feedbackWrong": "Salah.",
+      "nextQuestion": "Soal berikutnya",
+      "viewResult": "Lihat hasil"
+    },
+    "result": {
+      "languageGrade": "Grade master bahasa",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "World Greeting Challenge 🌍 Tahu salam ini dari negara mana?",
+      "startKakao": "World Greeting Challenge 🌍 Tahu salam ini dari negara mana?",
+      "startWechat": "World Greeting Challenge 🌍 Tahu salam ini dari negara mana?",
+      "startWhatsapp": "World Greeting Challenge 🌍 Tahu salam ini dari negara mana?",
+      "startTelegram": "World Greeting Challenge 🌍 Tahu salam ini dari negara mana?",
+      "startLine": "World Greeting Challenge 🌍 Tahu salam ini dari negara mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EverydayScienceQuizTest": {
     "startMessage": {
       "line1": "Kita pakai setiap hari, tapi tidak tahu kenapa begitu.",

@@ -536,7 +536,7 @@ export default function QuizImageGenPanel() {
             <label className="block text-xs font-semibold text-gray-600 mb-1">문항·프롬프트 붙여넣기</label>
             <textarea
               className="w-full min-h-[320px] resize-y px-3 py-2 border border-gray-300 rounded-md text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder={'Q1. …\n• A. 🖼️ …\n…\n[Q1 선택지 이미지 프롬프트]\n• A 이미지: …'}
+              placeholder={'Q1. …\n[Q1 인사말 이미지 프롬프트]\n(다음 줄에 프롬프트)\n\n또는\n[Q1 선택지 A 이미지 프롬프트]\n(프롬프트)\n[Q1 선택지 B 이미지 프롬프트]\n(프롬프트)\n\n기존: [Q1 선택지 이미지 프롬프트]\n• A 이미지: …'}
               value={raw}
               onChange={(e) => setRaw(e.target.value)}
             />

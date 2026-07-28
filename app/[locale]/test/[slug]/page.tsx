@@ -461,6 +461,10 @@ const Phase3WorldLandmarkCityQuizTestClient = dynamic(
   () => import('@/components/Phase3WorldLandmarkCityQuizTestClient'),
   { ssr: false }
 );
+const Phase3WorldGreetingChallengeTestClient = dynamic(
+  () => import('@/components/Phase3WorldGreetingChallengeTestClient'),
+  { ssr: false }
+);
 const Phase3TeamWorkChemistryTestClient = dynamic(
   () => import('@/components/Phase3TeamWorkChemistryTestClient'),
   { ssr: false }
@@ -1968,6 +1972,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['生活科學', '科學常識', '測驗', '有趣', '為什麼'],
         vi: ['khoa học', 'quiz', 'đố vui', 'thú vị', 'tại sao'],
         id: ['sains', 'kuis', 'quiz', 'menarik', 'mengapa'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-world-greeting-challenge') {
+    test = {
+      slug: 'phase3-world-greeting-challenge',
+      title: {
+        ko: '나라별 인사말 맞추기 챌린지',
+        en: 'World Greeting Challenge',
+        ja: '世界の挨拶当てチャレンジ',
+        'zh-CN': '世界各国问候语挑战',
+        'zh-TW': '世界各國問候語挑戰',
+        vi: 'Thử thách đoán lời chào thế giới',
+        id: 'Tantangan Tebak Salam Dunia',
+      },
+      description: {
+        ko: '12가지 세계 인사말 이미지로 나라를 맞춰보세요. Bonjour부터 Talofa까지, 세계 언어 고수 등급을 확인하세요!',
+        en: 'Match 12 greeting images to their countries. From Bonjour to Talofa—find your world language rank!',
+        ja: '12の世界の挨拶画像で国を当てましょう。BonjourからTalofaまで、世界言語マスター等級を確認！',
+        'zh-CN': '通过12道世界问候语图片猜国家。从Bonjour到Talofa，测测你的世界语言等级！',
+        'zh-TW': '透過12道世界問候語圖片猜國家。從Bonjour到Talofa，測測你的世界語言等級！',
+        vi: 'Đoán quốc gia qua 12 ảnh lời chào thế giới. Từ Bonjour đến Talofa—xem cấp độ ngôn ngữ của bạn!',
+        id: 'Tebak negara dari 12 gambar salam dunia. Dari Bonjour ke Talofa—cek level bahasa duniamu!',
+      },
+      thumbnail: 'p3_quiz_world_greeting_challenge.webp',
+      type: 'knowledge',
+      category: 'challenge',
+      play_count: 0,
+      tags: {
+        ko: ['세계인사말', '언어상식', '퀴즈', '다국어', '이거어느나라말'],
+        en: ['world greeting', 'language quiz', 'quiz', 'multilingual', 'guess country'],
+        ja: ['世界の挨拶', '言語クイズ', 'クイズ', '多言語', 'どこの国'],
+        'zh-CN': ['世界问候', '语言常识', '测验', '多语言', '哪国语言'],
+        'zh-TW': ['世界問候', '語言常識', '測驗', '多語言', '哪國語言'],
+        vi: ['lời chào', 'ngôn ngữ', 'quiz', 'đa ngôn ngữ', 'đoán quốc gia'],
+        id: ['salam dunia', 'bahasa', 'kuis', 'multibahasa', 'tebak negara'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -10472,6 +10513,62 @@ export default async function TestPage({ params }: Props) {
           questions={phase3WorldLandmarkCityQuizQuestions}
           results={phase3WorldLandmarkCityQuizResults}
           questionCount={phase3WorldLandmarkCityQuizQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-world-greeting-challenge') {
+    const { phase3WorldGreetingChallengeQuestions, phase3WorldGreetingChallengeResults } = await import('@/lib/phase3WorldGreetingChallengeData');
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-world-greeting-challenge',
+      title: {
+        ko: '나라별 인사말 맞추기 챌린지',
+        en: 'World Greeting Challenge',
+        ja: '世界の挨拶当てチャレンジ',
+        'zh-CN': '世界各国问候语挑战',
+        'zh-TW': '世界各國問候語挑戰',
+        vi: 'Thử thách đoán lời chào thế giới',
+        id: 'Tantangan Tebak Salam Dunia',
+      },
+      description: {
+        ko: '12가지 세계 인사말 이미지로 나라를 맞춰보세요. Bonjour부터 Talofa까지, 세계 언어 고수 등급을 확인하세요!',
+        en: 'Match 12 greeting images to their countries. From Bonjour to Talofa—find your world language rank!',
+        ja: '12の世界の挨拶画像で国を当てましょう。BonjourからTalofaまで、世界言語マスター等級を確認！',
+        'zh-CN': '通过12道世界问候语图片猜国家。从Bonjour到Talofa，测测你的世界语言等级！',
+        'zh-TW': '透過12道世界問候語圖片猜國家。從Bonjour到Talofa，測測你的世界語言等級！',
+        vi: 'Đoán quốc gia qua 12 ảnh lời chào thế giới. Từ Bonjour đến Talofa—xem cấp độ ngôn ngữ của bạn!',
+        id: 'Tebak negara dari 12 gambar salam dunia. Dari Bonjour ke Talofa—cek level bahasa duniamu!',
+      },
+      thumbnail: 'p3_quiz_world_greeting_challenge.webp',
+      type: 'knowledge',
+      category: 'challenge',
+      play_count: 0,
+      tags: {
+        ko: ['세계인사말', '언어상식', '퀴즈', '다국어', '이거어느나라말'],
+        en: ['world greeting', 'language quiz', 'quiz', 'multilingual', 'guess country'],
+        ja: ['世界の挨拶', '言語クイズ', 'クイズ', '多言語', 'どこの国'],
+        'zh-CN': ['世界问候', '语言常识', '测验', '多语言', '哪国语言'],
+        'zh-TW': ['世界問候', '語言常識', '測驗', '多語言', '哪國語言'],
+        vi: ['lời chào', 'ngôn ngữ', 'quiz', 'đa ngôn ngữ', 'đoán quốc gia'],
+        id: ['salam dunia', 'bahasa', 'kuis', 'multibahasa', 'tebak negara'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3WorldGreetingChallengeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3WorldGreetingChallengeQuestions}
+          results={phase3WorldGreetingChallengeResults}
+          questionCount={phase3WorldGreetingChallengeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

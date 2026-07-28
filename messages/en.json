@@ -10848,6 +10848,80 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3WorldGreetingChallengeTest": {
+    "startMessage": {
+      "line1": "Can you tell which country this greeting is from?",
+      "line2": "You have probably heard \"Bonjour,\" \"Ciao,\" and \"こんにちは\" somewhere. But what about \"Jambo\"? \"Sawubona\"? \"Talofa\"?",
+      "line3": "There are more than 7,000 languages in the world, and each has a first word people share when they meet. Languages differ, but greeting exists everywhere.",
+      "line4": "12 greetings appear—from easy ones to languages you may not know. Share your result and ask friends: \"Do you know which country this greeting is from?\"",
+      "line5": "Start World Greeting Challenge 🌍 Take the quiz",
+      "note": "※ Be sure to read the answer explanations. Even when wrong, learning world languages is fun."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (World Greeting Challenge)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "shareResult": "Share Result",
+      "scoreSummary": "{count} correct · 12 questions total",
+      "languageGrade": "Language Master Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review",
+      "correctExplanationTitle": "Correct Answer Explanation",
+      "feedbackCorrect": "Correct!",
+      "feedbackWrong": "Incorrect.",
+      "nextQuestion": "Next Question",
+      "viewResult": "View Result"
+    },
+    "result": {
+      "languageGrade": "Language Master Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "World Greeting Challenge 🌍 Do you know which country this greeting is from?",
+      "startKakao": "World Greeting Challenge 🌍 Do you know which country this greeting is from?",
+      "startWechat": "World Greeting Challenge 🌍 Do you know which country this greeting is from?",
+      "startWhatsapp": "World Greeting Challenge 🌍 Do you know which country this greeting is from?",
+      "startTelegram": "World Greeting Challenge 🌍 Do you know which country this greeting is from?",
+      "startLine": "World Greeting Challenge 🌍 Do you know which country this greeting is from?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3EverydayScienceQuizTest": {
     "startMessage": {
       "line1": "We use them every day, but we don't know why they work.",
