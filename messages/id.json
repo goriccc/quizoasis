@@ -10016,6 +10016,73 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3PersonalityColorTemperatureTest": {
+    "startMessage": {
+      "line1": "Warna punya suhu. Manusia juga.",
+      "line2": "Ada yang nyaman di ruang bernuansa biru, ada yang mengisi ulang di bawah lampu oranye hangat. Ada yang tertarik pemandangan salju, ada yang hati menuju padang saat senja.",
+      "line3": "Pilihan-pilihan itu menumpuk menjadi suhu emosimu.",
+      "line4": "Pilih yang lebih menarik dari 12 gambar. Makin intuitif, makin akurat.",
+      "line5": "Ukur suhu emosiku 🌡️ Pilih secara intuitif"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Suhu Warna Kepribadian Emosional)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "questionHint": "Pilih gambar yang lebih menarik dari dua gambar. Tidak perlu alasan. Percayai intuisimu.",
+      "resultTitle": "🌡️ Suhu Warna Kepribadian Emosional Saya",
+      "coolToneLabel": "❄️ Cool tone",
+      "warmToneLabel": "Warm tone 🔥",
+      "myEmotionTemperature": "Suhu emosional saya",
+      "emotionColor": "Warna",
+      "emotionKeywords": "🔑 Kata kunci emosi",
+      "strengthAtTemp": "💪 Kekuatan di suhu ini",
+      "charmAtTemp": "✨ Daya tarik di suhu ini",
+      "comfortableSpace": "🏠 Ruang nyaman di suhu ini",
+      "colorCodes": "🎨 Kode warna yang cocok",
+      "certificationPhrase": "🏅 Frasa sertifikasi",
+      "oneLiner": "💬 Ulasan satu baris",
+      "captureResult": "Screenshot suhu emosional saya",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Suhu emosiku: Deep Ocean Blue 🔵 -10°C — dingin dan dalam... bukan dingin, tapi dalam ㅋㅋ → Kamu berapa derajat? Warna juga keluar",
+      "type2": "Suhu emosiku: Ice Mint 🩵 5°C — segar dan terkendali... cool tapi emosional, kan → Kamu berapa derajat? Screenshot hasil warna",
+      "type3": "Suhu emosiku: Lavender Violet 💜 18°C — bukan cool bukan warm... tidak bisa satu warna, kan ㅋㅋ → Kamu berapa derajat?",
+      "type4": "Suhu emosiku: Peach Coral 🍑 28°C — hangat dan peduli... katanya orang hangat natural → Kamu berapa derajat? Screenshot hasil warna",
+      "type5": "Suhu emosiku: Sunset Gold ✨ 36°C — seperti senja mewarnai sekitar... panas dan cerah, kan → Kamu berapa derajat? Share screenshot warna",
+      "type6": "Suhu emosiku: Deep Rose Red ❤️‍🔥 42°C — gairah seperti api... panas, kan ㅋㅋ → Kamu berapa derajat? Screenshot hasil warna",
+      "startDefault": "Suhu Warna Kepribadian Emosional 🌡️ Cool tone? Warm tone? Cari suhu emosimu lewat 12 gambar",
+      "startKakao": "Suhu Warna Kepribadian Emosional 🌡️ Cool tone? Warm tone? Cari suhu emosimu lewat 12 gambar",
+      "startWechat": "Suhu Warna Kepribadian Emosional 🌡️ Cool tone? Warm tone? Cari suhu emosimu lewat 12 gambar",
+      "startWhatsapp": "Suhu Warna Kepribadian Emosional 🌡️ Cool tone? Warm tone? Cari suhu emosimu lewat 12 gambar",
+      "startTelegram": "Suhu Warna Kepribadian Emosional 🌡️ Cool tone? Warm tone? Cari suhu emosimu lewat 12 gambar",
+      "startLine": "Suhu Warna Kepribadian Emosional 🌡️ Cool tone? Warm tone? Cari suhu emosimu lewat 12 gambar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3FirstImpressionColorScannerTest": {
     "startMessage": {
       "line1": "Kalau orang yang baru kenal menggambarkanmu sebagai warna, warna apa itu?",

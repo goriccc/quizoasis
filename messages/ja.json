@@ -10004,6 +10004,73 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3PersonalityColorTemperatureTest": {
+    "startMessage": {
+      "line1": "色には温度があります。そして人にも温度があります。",
+      "line2": "青系の空間で安心する人もいれば、オレンジの暖かい照明の下で充電する人もいます。雪景色に惹かれる人もいれば、夕焼けの野原に心が行く人もいます。",
+      "line3": "その選択が積み重なって、あなたの感性温度になります。",
+      "line4": "12枚の画像のうち、より惹かれる方を選んでください。考えず直感で選ぶほど正確です。",
+      "line5": "私の感性温度を測る 🌡️ 直感で選択"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の性格の感性温度）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "questionHint": "二つの画像のうち、より惹かれる方を選んでください。理由はなくても大丈夫。直感を信じてください。",
+      "resultTitle": "🌡️ 私の性格の感性温度",
+      "coolToneLabel": "❄️ クールトーン",
+      "warmToneLabel": "ウォームトーン 🔥",
+      "myEmotionTemperature": "私の感性温度",
+      "emotionColor": "カラー",
+      "emotionKeywords": "🔑 感性キーワード",
+      "strengthAtTemp": "💪 この温度の強み",
+      "charmAtTemp": "✨ この温度の魅力",
+      "comfortableSpace": "🏠 この温度が心地よい空間",
+      "colorCodes": "🎨 合う色コード",
+      "certificationPhrase": "🏅 認証フレーズ",
+      "oneLiner": "💬 一言評",
+      "captureResult": "私の感性温度をキャプチャ",
+      "shareResult": "結果をシェア"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "私の感性温度: Deep Ocean Blue 🔵 -10°C 冷たくて深い感性らしい…冷たいんじゃなくて深いって合ってる ㅋㅋ → あなたは何度？色も出るよ",
+      "type2": "私の感性温度: Ice Mint 🩵 5°C 清涼で節制された感性らしい…クールなのに感性的って合ってる → あなたは何度？色結果キャプチャして",
+      "type3": "私の感性温度: Lavender Violet 💜 18°C クールでもウォームでもない境界らしい…一色で説明できないって合ってる ㅋㅋ → あなたは何度？",
+      "type4": "私の感性温度: Peach Coral 🍑 28°C 暖かく思いやりのある感性らしい…自然に温かい人らしい → あなたは何度？色結果キャプチャして",
+      "type5": "私の感性温度: Sunset Gold ✨ 36°C 夕焼けみたいに周囲を染める感性らしい…熱くて明るいって合ってる → あなたは何度？色キャプチャ共有して",
+      "type6": "私の感性温度: Deep Rose Red ❤️‍🔥 42°C 燃え上がる炎みたいな情熱感性らしい…熱いって合ってる ㅋㅋ → あなたは何度？色結果キャプチャして",
+      "startDefault": "私の性格の感性温度 🌡️ クールトーン？ウォームトーン？12枚の画像で感性温度は何度か調べてみよう",
+      "startKakao": "私の性格の感性温度 🌡️ クールトーン？ウォームトーン？12枚の画像で感性温度は何度か調べてみよう",
+      "startWechat": "私の性格の感性温度 🌡️ クールトーン？ウォームトーン？12枚の画像で感性温度は何度か調べてみよう",
+      "startWhatsapp": "私の性格の感性温度 🌡️ クールトーン？ウォームトーン？12枚の画像で感性温度は何度か調べてみよう",
+      "startTelegram": "私の性格の感性温度 🌡️ クールトーン？ウォームトーン？12枚の画像で感性温度は何度か調べてみよう",
+      "startLine": "私の性格の感性温度 🌡️ クールトーン？ウォームトーン？12枚の画像で感性温度は何度か調べてみよう"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "phase3FirstImpressionColorScannerTest": {
     "startMessage": {
       "line1": "初めて会った人が、あなたを色で表すとしたら何色でしょう？",

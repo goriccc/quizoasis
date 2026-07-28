@@ -10025,6 +10025,73 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3PersonalityColorTemperatureTest": {
+    "startMessage": {
+      "line1": "Colors have temperature. And so do people.",
+      "line2": "Some feel at ease in blue-toned spaces; others recharge under warm orange lighting. Some are drawn to snow-covered landscapes; others to fields at sunset.",
+      "line3": "Those choices add up to your emotional temperature.",
+      "line4": "Choose what draws you more from 12 images. The more intuitive, the more accurate.",
+      "line5": "Measure my emotional temperature 🌡️ Choose intuitively"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Personality Color Temperature)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "questionHint": "Pick the image that draws you more. No reason needed. Trust your intuition.",
+      "resultTitle": "🌡️ My Personality Color Temperature",
+      "coolToneLabel": "❄️ Cool tone",
+      "warmToneLabel": "Warm tone 🔥",
+      "myEmotionTemperature": "My emotional temperature",
+      "emotionColor": "Color",
+      "emotionKeywords": "🔑 Emotion keywords",
+      "strengthAtTemp": "💪 Strength at this temperature",
+      "charmAtTemp": "✨ Charm at this temperature",
+      "comfortableSpace": "🏠 Spaces comfortable at this temperature",
+      "colorCodes": "🎨 Matching color codes",
+      "certificationPhrase": "🏅 Certification phrase",
+      "oneLiner": "💬 One-liner review",
+      "captureResult": "Capture my emotional temperature",
+      "shareResult": "Share result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "My emotional temperature: Deep Ocean Blue 🔵 -10°C — cool and deep emotions... not cold, just deep lol → What is yours? You get a color too",
+      "type2": "My emotional temperature: Ice Mint 🩵 5°C — fresh and restrained emotions... cool but emotional, right? → What is yours? Screenshot your color result",
+      "type3": "My emotional temperature: Lavender Violet 💜 18°C — neither cool nor warm... can not be one color, right lol → What is yours?",
+      "type4": "My emotional temperature: Peach Coral 🍑 28°C — warm and caring emotions... naturally warm, they say → What is yours? Screenshot your color result",
+      "type5": "My emotional temperature: Sunset Gold ✨ 36°C — emotions that color everything like a sunset... hot and bright, right → What is yours? Share your color screenshot",
+      "type6": "My emotional temperature: Deep Rose Red ❤️‍🔥 42°C — passionate like a blazing flame... hot, right lol → What is yours? Screenshot your color result",
+      "startDefault": "My Personality Color Temperature 🌡️ Cool tone? Warm tone? Find your emotional temperature in 12 images",
+      "startKakao": "My Personality Color Temperature 🌡️ Cool tone? Warm tone? Find your emotional temperature in 12 images",
+      "startWechat": "My Personality Color Temperature 🌡️ Cool tone? Warm tone? Find your emotional temperature in 12 images",
+      "startWhatsapp": "My Personality Color Temperature 🌡️ Cool tone? Warm tone? Find your emotional temperature in 12 images",
+      "startTelegram": "My Personality Color Temperature 🌡️ Cool tone? Warm tone? Find your emotional temperature in 12 images",
+      "startLine": "My Personality Color Temperature 🌡️ Cool tone? Warm tone? Find your emotional temperature in 12 images"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3FirstImpressionColorScannerTest": {
     "startMessage": {
       "line1": "If someone described you as a color on first meeting, what color would you be?",

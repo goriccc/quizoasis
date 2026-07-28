@@ -137,6 +137,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-exercise-persistence-type': 'personality_4',
   'phase3-fall-in-love-speed': 'scenario_4',
   'phase3-first-impression-color-scanner': 'personality_4',
+  'phase3-personality-color-temperature': 'scenario_4',
   'phase3-flirting-style': 'scenario_4',
   'phase3-friend-sees-my-mbti': 'scenario_2',
   'phase3-game-love-balance-extreme': 'game',

@@ -10154,6 +10154,73 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3PersonalityColorTemperatureTest": {
+    "startMessage": {
+      "line1": "색깔에는 온도가 있습니다. 그리고 사람에게도 온도가 있습니다.",
+      "line2": "파란색 계열의 공간에서 편안함을 느끼는 사람이 있고, 주황빛 조명 아래 따뜻한 공간에서 충전되는 사람이 있습니다. 같은 풍경을 봐도 눈 덮인 설경에 끌리는 사람이 있고, 노을 지는 들판에 마음이 가는 사람이 있습니다.",
+      "line3": "그 선택들이 모여 나의 감성 온도가 됩니다.",
+      "line4": "12가지 이미지 중 더 끌리는 것을 선택하세요. 생각하지 않고 직관적으로 고를수록 정확합니다.",
+      "line5": "내 감성 온도 측정하기 🌡️ 직관으로 선택"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (내 성격의 감성 온도)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "questionHint": "두 이미지 중 더 끌리는 것을 선택하세요. 이유는 없어도 됩니다. 직관을 믿으세요.",
+      "resultTitle": "🌡️ 내 성격의 감성 온도",
+      "coolToneLabel": "❄️ 쿨톤",
+      "warmToneLabel": "웜톤 🔥",
+      "myEmotionTemperature": "내 감성 온도",
+      "emotionColor": "컬러",
+      "emotionKeywords": "🔑 감성 키워드",
+      "strengthAtTemp": "💪 이 온도의 강점",
+      "charmAtTemp": "✨ 이 온도의 매력",
+      "comfortableSpace": "🏠 이 온도가 편안한 공간",
+      "colorCodes": "🎨 어울리는 색깔 코드",
+      "certificationPhrase": "🏅 인증 문구",
+      "oneLiner": "💬 한 줄 평",
+      "captureResult": "내 감성 온도 캡처하기",
+      "shareResult": "결과 공유하기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "내 감성 온도: 딥 오션 블루 🔵 -10°C 차갑고 깊은 감성이래... 차가운 게 아니라 깊은 거래 맞음 ㅋㅋ → 너는 몇 도야? 색깔도 나옴",
+      "type2": "내 감성 온도: 아이스 민트 🩵 5°C 청량하고 절제된 감성이래... 쿨한데 감성적인 거 맞음 → 너는 몇 도야? 색깔 결과 캡처해봐",
+      "type3": "내 감성 온도: 라벤더 바이올렛 💜 18°C 쿨도 웜도 아닌 경계래... 한 가지 색으로 설명 안 된다는 거 맞음 ㅋㅋ → 너는 몇 도야?",
+      "type4": "내 감성 온도: 피치 코랄 🍑 28°C 따뜻하고 배려 깊은 감성이래... 자연스럽게 따뜻한 사람이래 → 너는 몇 도야? 색깔 결과 캡처해봐",
+      "type5": "내 감성 온도: 선셋 골드 ✨ 36°C 노을처럼 주변을 물들이는 감성이래... 뜨겁고 밝은 거 맞음 → 너는 몇 도야? 색깔 캡처 공유해봐",
+      "type6": "내 감성 온도: 딥 로즈 레드 ❤️‍🔥 42°C 타오르는 불꽃 같은 열정 감성이래... 뜨거운 거 맞음 ㅋㅋ → 너는 몇 도야? 색깔 결과 캡처해봐",
+      "startDefault": "내 성격의 감성 온도 🌡️ 쿨톤? 웜톤? 12장 이미지로 내 감성 온도 몇 도인지 알아봐",
+      "startKakao": "내 성격의 감성 온도 🌡️ 쿨톤? 웜톤? 12장 이미지로 내 감성 온도 몇 도인지 알아봐",
+      "startWechat": "내 성격의 감성 온도 🌡️ 쿨톤? 웜톤? 12장 이미지로 내 감성 온도 몇 도인지 알아봐",
+      "startWhatsapp": "내 성격의 감성 온도 🌡️ 쿨톤? 웜톤? 12장 이미지로 내 감성 온도 몇 도인지 알아봐",
+      "startTelegram": "내 성격의 감성 온도 🌡️ 쿨톤? 웜톤? 12장 이미지로 내 감성 온도 몇 도인지 알아봐",
+      "startLine": "내 성격의 감성 온도 🌡️ 쿨톤? 웜톤? 12장 이미지로 내 감성 온도 몇 도인지 알아봐"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3FirstImpressionColorScannerTest": {
     "startMessage": {
       "line1": "처음 만난 사람이 나를 색깔로 표현한다면 무슨 색일까요?",

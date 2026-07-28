@@ -10016,6 +10016,73 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3PersonalityColorTemperatureTest": {
+    "startMessage": {
+      "line1": "Màu sắc có nhiệt độ. Con người cũng vậy.",
+      "line2": "Có người thoải mái trong không gian tông xanh, có người nạp năng lượng dưới ánh đèn cam ấm. Có người bị cuốn bởi cảnh tuyết, có người hướng về cánh đồng lúc hoàng hôn.",
+      "line3": "Những lựa chọn đó cộng lại thành nhiệt độ cảm xúc của bạn.",
+      "line4": "Chọn hình ảnh hút bạn hơn trong 12 ảnh. Càng chọn theo trực giác càng chính xác.",
+      "line5": "Đo nhiệt độ cảm xúc của tôi 🌡️ Chọn theo trực giác"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Nhiệt độ màu cảm xúc tính cách)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "questionHint": "Chọn hình ảnh hút bạn hơn trong hai ảnh. Không cần lý do. Hãy tin trực giác.",
+      "resultTitle": "🌡️ Nhiệt độ màu cảm xúc tính cách của tôi",
+      "coolToneLabel": "❄️ Tông lạnh",
+      "warmToneLabel": "Tông ấm 🔥",
+      "myEmotionTemperature": "Nhiệt độ cảm xúc của tôi",
+      "emotionColor": "Màu",
+      "emotionKeywords": "🔑 Từ khóa cảm xúc",
+      "strengthAtTemp": "💪 Điểm mạnh ở nhiệt độ này",
+      "charmAtTemp": "✨ Sức hút ở nhiệt độ này",
+      "comfortableSpace": "🏠 Không gian thoải mái ở nhiệt độ này",
+      "colorCodes": "🎨 Mã màu phù hợp",
+      "certificationPhrase": "🏅 Câu chứng nhận",
+      "oneLiner": "💬 Nhận xét một dòng",
+      "captureResult": "Chụp nhiệt độ cảm xúc của tôi",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Nhiệt độ cảm xúc của tôi: Deep Ocean Blue 🔵 -10°C — lạnh và sâu... không phải lạnh lùng mà là sâu ㅋㅋ → Bạn mấy độ? Còn ra màu nữa",
+      "type2": "Nhiệt độ cảm xúc của tôi: Ice Mint 🩵 5°C — thanh mát và tiết chế... cool mà cảm xúc, đúng không → Bạn mấy độ? Chụp kết quả màu đi",
+      "type3": "Nhiệt độ cảm xúc của tôi: Lavender Violet 💜 18°C — không cool cũng không warm... không mô tả bằng một màu, đúng không ㅋㅋ → Bạn mấy độ?",
+      "type4": "Nhiệt độ cảm xúc của tôi: Peach Coral 🍑 28°C — ấm và quan tâm... người ấm tự nhiên → Bạn mấy độ? Chụp kết quả màu đi",
+      "type5": "Nhiệt độ cảm xúc của tôi: Sunset Gold ✨ 36°C — như hoàng hôn nhuộm mọi thứ... nóng và sáng, đúng không → Bạn mấy độ? Chia sẻ ảnh chụp màu đi",
+      "type6": "Nhiệt độ cảm xúc của tôi: Deep Rose Red ❤️‍🔥 42°C — đam mê như ngọn lửa... nóng, đúng không ㅋㅋ → Bạn mấy độ? Chụp kết quả màu đi",
+      "startDefault": "Nhiệt độ màu cảm xúc tính cách 🌡️ Tông lạnh? Tông ấm? Tìm nhiệt độ cảm xúc của bạn qua 12 hình ảnh",
+      "startKakao": "Nhiệt độ màu cảm xúc tính cách 🌡️ Tông lạnh? Tông ấm? Tìm nhiệt độ cảm xúc của bạn qua 12 hình ảnh",
+      "startWechat": "Nhiệt độ màu cảm xúc tính cách 🌡️ Tông lạnh? Tông ấm? Tìm nhiệt độ cảm xúc của bạn qua 12 hình ảnh",
+      "startWhatsapp": "Nhiệt độ màu cảm xúc tính cách 🌡️ Tông lạnh? Tông ấm? Tìm nhiệt độ cảm xúc của bạn qua 12 hình ảnh",
+      "startTelegram": "Nhiệt độ màu cảm xúc tính cách 🌡️ Tông lạnh? Tông ấm? Tìm nhiệt độ cảm xúc của bạn qua 12 hình ảnh",
+      "startLine": "Nhiệt độ màu cảm xúc tính cách 🌡️ Tông lạnh? Tông ấm? Tìm nhiệt độ cảm xúc của bạn qua 12 hình ảnh"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3FirstImpressionColorScannerTest": {
     "startMessage": {
       "line1": "Nếu người mới gặp diễn tả bạn bằng một màu, đó sẽ là màu gì?",
