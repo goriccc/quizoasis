@@ -10848,6 +10848,81 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3EverydayScienceQuizTest": {
+    "startMessage": {
+      "line1": "We use them every day, but we don't know why they work.",
+      "line2": "Why does the refrigerator hum? How does a microwave heat food? Does a fan actually cool the air? Why is the sky blue?",
+      "line3": "Things we take for granted but have never asked \"why?\" about. Once you learn them, you'll say \"Wait, really??\" Things that impress people when you explain them.",
+      "line4": "12 everyday science questions measure your practical science knowledge level.",
+      "line5": "Start Everyday Science Quiz 🔬 Challenge now",
+      "note": "※ Be sure to read the answer explanations. Even when wrong, learning everyday science is fun."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (Everyday Science Quiz)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "shareResult": "Share Result",
+      "scoreSummary": "{count} correct · 12 questions total",
+      "scienceGrade": "Everyday Science Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review",
+      "openHint": "View Answer Explanation",
+      "closeHint": "Close Explanation",
+      "closeModal": "Close",
+      "correctExplanationTitle": "Correct Answer Explanation",
+      "wrongTrapsTitle": "Wrong-Answer Traps",
+      "belowQuestionHint": "(Answer explanation is below)"
+    },
+    "result": {
+      "scienceGrade": "Everyday Science Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Everyday Science Quiz 🔬 Things you use daily—do you know why they work?",
+      "startKakao": "Everyday Science Quiz 🔬 Things you use daily—do you know why they work?",
+      "startWechat": "Everyday Science Quiz 🔬 Things you use daily—do you know why they work?",
+      "startWhatsapp": "Everyday Science Quiz 🔬 Things you use daily—do you know why they work?",
+      "startTelegram": "Everyday Science Quiz 🔬 Things you use daily—do you know why they work?",
+      "startLine": "Everyday Science Quiz 🔬 Things you use daily—do you know why they work?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "We all have walls to protect ourselves.",

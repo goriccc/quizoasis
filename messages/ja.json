@@ -10827,6 +10827,81 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3EverydayScienceQuizTest": {
+    "startMessage": {
+      "line1": "毎日使っているのに、なぜそうなるのかは知りません。",
+      "line2": "冷蔵庫はなぜウィーンと鳴る？電子レンジはどうやって温める？扇風機の風は本当に空気を冷やす？空はなぜ青い？",
+      "line3": "当たり前に使っているのに「なぜ？」と考えたことがないもの。知ると「え、本当に？？」と声が出るもの。説明すると周りが驚くもの。",
+      "line4": "12の生活科学問題で、あなたの生活科学常識レベルを測定します。",
+      "line5": "生活の科学クイズ開始 🔬 今すぐ挑戦",
+      "note": "※ 正解解説は必ず読んでください。間違えても生活科学を学ぶ楽しさがあります。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（生活の科学クイズ）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "shareResult": "結果をシェア",
+      "scoreSummary": "{count}問正解 · 全12問",
+      "scienceGrade": "生活科学等級",
+      "scoreRange": "正解数",
+      "strengthZone": "得意区間",
+      "weakZone": "弱点区間",
+      "retakeTip": "再挑戦のコツ",
+      "characteristic": "特徴",
+      "regretPoint": "惜しいポイント",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言評",
+      "openHint": "正解解説を見る",
+      "closeHint": "解説を閉じる",
+      "closeModal": "閉じる",
+      "correctExplanationTitle": "正解解説",
+      "wrongTrapsTitle": "不正解の罠",
+      "belowQuestionHint": "（正解解説は下にあります）"
+    },
+    "result": {
+      "scienceGrade": "生活科学等級",
+      "scoreRange": "正解数",
+      "strengthZone": "得意区間",
+      "weakZone": "弱点区間",
+      "retakeTip": "再挑戦のコツ",
+      "characteristic": "特徴",
+      "regretPoint": "惜しいポイント",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言評"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "生活の科学クイズ 🔬 毎日使うもの、なぜそうなるか知ってる？",
+      "startKakao": "生活の科学クイズ 🔬 毎日使うもの、なぜそうなるか知ってる？",
+      "startWechat": "生活の科学クイズ 🔬 毎日使うもの、なぜそうなるか知ってる？",
+      "startWhatsapp": "生活の科学クイズ 🔬 毎日使うもの、なぜそうなるか知ってる？",
+      "startTelegram": "生活の科学クイズ 🔬 毎日使うもの、なぜそうなるか知ってる？",
+      "startLine": "生活の科学クイズ 🔬 毎日使うもの、なぜそうなるか知ってる？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "私たちは誰でも、自分を守るための壁を持っています。",

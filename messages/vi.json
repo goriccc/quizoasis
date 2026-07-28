@@ -10839,6 +10839,81 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3EverydayScienceQuizTest": {
+    "startMessage": {
+      "line1": "Dùng mỗi ngày nhưng không biết tại sao lại vậy.",
+      "line2": "Tủ lạnh sao kêu vù vù? Lò vi sóng hâm nóng thế nào? Gió quạt có thực sự làm không khí lạnh hơn không? Bầu trời sao màu xanh?",
+      "line3": "Những thứ ta dùng như đương nhiên nhưng chưa bao giờ hỏi \"tại sao?\". Biết rồi sẽ \"Ủa, thật à??\". Giải thích cho người khác nghe thì họ sẽ ngạc nhiên.",
+      "line4": "12 câu hỏi khoa học đời sống đo mức kiến thức khoa học thực tế của bạn.",
+      "line5": "Bắt đầu Everyday Science Quiz 🔬 Thử ngay",
+      "note": "※ Nhớ đọc giải thích đáp án. Dù sai vẫn vui vì được học khoa học đời sống."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Everyday Science Quiz)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} câu · Tổng 12 câu",
+      "scienceGrade": "Cấp khoa học đời sống",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng",
+      "openHint": "Xem giải thích đáp án",
+      "closeHint": "Đóng giải thích",
+      "closeModal": "Đóng",
+      "correctExplanationTitle": "Giải thích đáp án đúng",
+      "wrongTrapsTitle": "Bẫy câu sai",
+      "belowQuestionHint": "(Giải thích đáp án ở bên dưới)"
+    },
+    "result": {
+      "scienceGrade": "Cấp khoa học đời sống",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Everyday Science Quiz 🔬 Đồ dùng hàng ngày—bạn biết tại sao không?",
+      "startKakao": "Everyday Science Quiz 🔬 Đồ dùng hàng ngày—bạn biết tại sao không?",
+      "startWechat": "Everyday Science Quiz 🔬 Đồ dùng hàng ngày—bạn biết tại sao không?",
+      "startWhatsapp": "Everyday Science Quiz 🔬 Đồ dùng hàng ngày—bạn biết tại sao không?",
+      "startTelegram": "Everyday Science Quiz 🔬 Đồ dùng hàng ngày—bạn biết tại sao không?",
+      "startLine": "Everyday Science Quiz 🔬 Đồ dùng hàng ngày—bạn biết tại sao không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",

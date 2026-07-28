@@ -10839,6 +10839,81 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3EverydayScienceQuizTest": {
+    "startMessage": {
+      "line1": "Kita pakai setiap hari, tapi tidak tahu kenapa begitu.",
+      "line2": "Kenapa kulkas bunyi buzz? Bagaimana microwave memanaskan makanan? Apakah angin kipas benar-benar mendinginkan udara? Kenapa langit biru?",
+      "line3": "Hal yang kita anggap wajar tapi belum pernah bertanya \"kenapa?\". Setelah tahu, kamu akan bilang \"Loh, beneran??\". Hal yang bikin orang kagum kalau dijelaskan.",
+      "line4": "12 pertanyaan sains sehari-hari mengukur level pengetahuan sains praktismu.",
+      "line5": "Mulai Everyday Science Quiz 🔬 Tantang sekarang",
+      "note": "※ Pastikan baca penjelasan jawaban. Meski salah, belajar sains sehari-hari tetap seru."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Everyday Science Quiz)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "Benar {count} · Total 12 soal",
+      "scienceGrade": "Grade sains sehari-hari",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris",
+      "openHint": "Lihat penjelasan jawaban",
+      "closeHint": "Tutup penjelasan",
+      "closeModal": "Tutup",
+      "correctExplanationTitle": "Penjelasan jawaban benar",
+      "wrongTrapsTitle": "Jebakan jawaban salah",
+      "belowQuestionHint": "(Penjelasan jawaban ada di bawah)"
+    },
+    "result": {
+      "scienceGrade": "Grade sains sehari-hari",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Everyday Science Quiz 🔬 Barang sehari-hari—tahu kenapa begitu?",
+      "startKakao": "Everyday Science Quiz 🔬 Barang sehari-hari—tahu kenapa begitu?",
+      "startWechat": "Everyday Science Quiz 🔬 Barang sehari-hari—tahu kenapa begitu?",
+      "startWhatsapp": "Everyday Science Quiz 🔬 Barang sehari-hari—tahu kenapa begitu?",
+      "startTelegram": "Everyday Science Quiz 🔬 Barang sehari-hari—tahu kenapa begitu?",
+      "startLine": "Everyday Science Quiz 🔬 Barang sehari-hari—tahu kenapa begitu?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",
