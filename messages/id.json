@@ -10690,6 +10690,86 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3KpopHistoryMasterTest": {
+    "startMessage": {
+      "line1": "Seberapa banyak sejarah K-Pop yang kamu tahu?",
+      "line2": "Mulai dari generasi 1? Pernah nonton fancam H.O.T? Atau masuk dari generasi 3 dan cuma tahu nama generasi 1? Atau cuma kenal generasi 4?",
+      "line3": "Sejak debut H.O.T 1996, K-Pop sudah membangun sekitar 30 tahun sejarah. Lagu debut legendaris, peristiwa pengubah era, dan rekor yang mengejutkan dunia ada di dalamnya.",
+      "line4": "12 pertanyaan mengukur level pengetahuan sejarah K-Pop-mu. Posting hasil di komunitas fan pasti memicu debat.",
+      "line5": "Mulai K-Pop History Master Test 💜 Tantang sekarang",
+      "note": "※ Pastikan baca penjelasan jawaban. Meski salah, belajar sejarah K-Pop tetap seru."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (K-Pop History Master Test)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "Benar {count} · Total 12 soal",
+      "historyGrade": "Grade sejarah K-Pop",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris",
+      "openHint": "Lihat penjelasan jawaban",
+      "closeHint": "Tutup penjelasan",
+      "closeModal": "Tutup",
+      "correctExplanationTitle": "Penjelasan jawaban benar",
+      "wrongTrapsTitle": "Jebakan jawaban salah",
+      "belowQuestionHint": "(Penjelasan jawaban ada di bawah)"
+    },
+    "result": {
+      "historyGrade": "Grade sejarah K-Pop",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "level1": "Tes sejarah K-Pop: Lv.1 Fan pemula 🌱 Kira Girls' Generation debut dengan Gee... baru tahu Into the New World 😭 → Kamu benar berapa? Coba!",
+      "level2": "Tes sejarah K-Pop: Lv.2 Fan generasi kini 🎤 Benar soal Lee Hyori bukan S.E.S, tapi mentok di tahun bubar H.O.T... → Kamu benar berapa? Tes pride fandom",
+      "level3": "Tes sejarah K-Pop: Lv.3 Fan cross-gen 🌟 Benar lebih setengah tapi shock di debut SHINee... bukan Ring Ding Dong wkwk → Kamu benar berapa?",
+      "level4": "Tes sejarah K-Pop: Lv.4 Ahli 🏅 Top 15%... benar soal tahun bubar H.O.T & rekor Dynamite → Kamu benar berapa? Full score = master",
+      "level5": "Tes sejarah K-Pop: Lv.5 Master 🏆 Benar semua generasi 1-4... sampai worldview aespa → Kamu benar berapa? Tantang dengan pride fandom!",
+      "startDefault": "K-Pop History Master Test 💜 12 soal dari generasi 1 sampai 4!",
+      "startKakao": "K-Pop History Master Test 💜 12 soal dari generasi 1 sampai 4!",
+      "startWechat": "K-Pop History Master Test 💜 12 soal dari generasi 1 sampai 4!",
+      "startWhatsapp": "K-Pop History Master Test 💜 12 soal dari generasi 1 sampai 4!",
+      "startTelegram": "K-Pop History Master Test 💜 12 soal dari generasi 1 sampai 4!",
+      "startLine": "K-Pop History Master Test 💜 12 soal dari generasi 1 sampai 4!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Kita semua punya tembok untuk melindungi diri sendiri.",

@@ -10159,6 +10159,86 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3KpopHistoryMasterTest": {
+    "startMessage": {
+      "line1": "你了解多少K-Pop歷史？",
+      "line2": "從1代就開始追？看過H.O.T現場直拍？還是從3代入坑、1代只知名字？或者只認識4代？",
+      "line3": "自1996年H.O.T出道至今，K-Pop已走過約30年歷史。傳奇出道曲、改變世代的事件、震驚世界的紀錄都藏在其中。",
+      "line4": "12道題測量你的K-Pop歷史知識水平。把結果發到粉絲社群，爭論一定會開始。",
+      "line5": "開始K-Pop歷史大師測試 💜 立即挑戰",
+      "note": "※ 請務必閱讀正解解析。就算答錯，學K-Pop歷史也很有趣。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（K-Pop歷史大師測試）",
+      "goToTest": "去做測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他測試",
+      "shareResult": "分享結果",
+      "scoreSummary": "答對{count}題 · 共12題",
+      "historyGrade": "K-Pop歷史等級",
+      "scoreRange": "答對數",
+      "strengthZone": "強項區間",
+      "weakZone": "弱項區間",
+      "retakeTip": "重試提示",
+      "characteristic": "特徵",
+      "regretPoint": "遺憾點",
+      "certificationPhrase": "認證文案",
+      "oneLiner": "一句話評價",
+      "openHint": "查看正解解析",
+      "closeHint": "關閉解析",
+      "closeModal": "關閉",
+      "correctExplanationTitle": "正解解析",
+      "wrongTrapsTitle": "錯誤陷阱",
+      "belowQuestionHint": "（正解解析在下方）"
+    },
+    "result": {
+      "historyGrade": "K-Pop歷史等級",
+      "scoreRange": "答對數",
+      "strengthZone": "強項區間",
+      "weakZone": "弱項區間",
+      "retakeTip": "重試提示",
+      "characteristic": "特徵",
+      "regretPoint": "遺憾點",
+      "certificationPhrase": "認證文案",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "level1": "K-Pop歷史測試：Lv.1 新手粉絲 🌱 以為少女時代出道曲是Gee…今天才知道是再次重逢的世界 😭 → 你能對幾題？來挑戰！",
+      "level2": "K-Pop歷史測試：Lv.2 當代粉絲 🎤 S.E.S沒有Lee Hyori答對了，但H.O.T解散年份卡住了… → 你能對幾題？粉絲自尊測試",
+      "level3": "K-Pop歷史測試：Lv.3 跨代粉絲 🌟 對了一半以上但在SHINee出道曲崩了…不是Ring Ding Dong 哈哈 → 你能對幾題？",
+      "level4": "K-Pop歷史測試：Lv.4 歷史高手 🏅 前15%…H.O.T解散年份和Dynamite紀錄全對 → 你能對幾題？全對就是歷史大師",
+      "level5": "K-Pop歷史測試：Lv.5 歷史大師 🏆 1代到4代全對…連aespa世界觀 → 你能對幾題？用粉絲自尊來挑戰！",
+      "startDefault": "K-Pop歷史大師測試 💜 1代到4代共12題挑戰！",
+      "startKakao": "K-Pop歷史大師測試 💜 1代到4代共12題挑戰！",
+      "startWechat": "K-Pop歷史大師測試 💜 1代到4代共12題挑戰！",
+      "startWhatsapp": "K-Pop歷史大師測試 💜 1代到4代共12題挑戰！",
+      "startTelegram": "K-Pop歷史大師測試 💜 1代到4代共12題挑戰！",
+      "startLine": "K-Pop歷史大師測試 💜 1代到4代共12題挑戰！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在WeChat中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似的其他測試推薦Top5",
+      "popularTestsTop5": "🔥 當下熱門測試推薦Top5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "我們每個人都有一座用來保護自己的城牆。",

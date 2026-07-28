@@ -10828,6 +10828,86 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3KpopHistoryMasterTest": {
+    "startMessage": {
+      "line1": "당신은 K-팝 역사를 얼마나 알고 있나요?",
+      "line2": "1세대부터 시작했다고요? H.O.T 공연 직캠을 봤다고요? 아니면 3세대부터 입문해서 1세대는 이름만 아는 정도인가요? 아니면 4세대만 알고 있나요?",
+      "line3": "K-팝은 1996년 H.O.T의 데뷔부터 지금까지 약 30년의 역사를 만들어왔습니다. 그 안엔 전설적인 데뷔곡들, 세대를 바꾼 사건들, 세계를 놀라게 한 기록들이 가득합니다.",
+      "line4": "12가지 문제로 나의 K-팝 역사 지식 수준을 측정합니다. 결과를 팬 커뮤니티에 올리면 반드시 논쟁이 시작됩니다.",
+      "line5": "K-팝 역사 마스터 테스트 시작 💜 지금 도전",
+      "note": "※ 정답 해설을 꼭 읽어보세요. 틀려도 K-팝 역사를 배우는 재미가 있습니다."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (K-팝 역사 마스터 테스트)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "scoreSummary": "{count}개 맞힘 · 12문항 만점",
+      "historyGrade": "K-팝 역사 등급",
+      "scoreRange": "정답 수",
+      "strengthZone": "강점 구간",
+      "weakZone": "취약 구간",
+      "retakeTip": "재도전 팁",
+      "characteristic": "특징",
+      "regretPoint": "아쉬운 포인트",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평",
+      "openHint": "정답 해설 보기",
+      "closeHint": "해설 닫기",
+      "closeModal": "닫기",
+      "correctExplanationTitle": "정답 해설",
+      "wrongTrapsTitle": "오답 함정",
+      "belowQuestionHint": "(정답해설은 아래에 있어요)"
+    },
+    "result": {
+      "historyGrade": "K-팝 역사 등급",
+      "scoreRange": "정답 수",
+      "strengthZone": "강점 구간",
+      "weakZone": "취약 구간",
+      "retakeTip": "재도전 팁",
+      "characteristic": "특징",
+      "regretPoint": "아쉬운 포인트",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "level1": "K-팝 역사 테스트: Lv.1 입문 팬 🌱 소녀시대 데뷔곡이 Gee인 줄 알았음... 다시 만난 세계인 거 오늘 처음 알았음 ㅠ → K-팝 역사 몇 개 맞혀? 도전해봐",
+      "level2": "K-팝 역사 테스트: Lv.2 현세대 팬 🎤 S.E.S 멤버에 이효리가 없는 거 맞혔는데 H.O.T 해체 연도에서 막힘... → K-팝 역사 몇 개 맞혀? 팬덤 자존심 테스트",
+      "level3": "K-팝 역사 테스트: Lv.3 크로스 세대 팬 🌟 절반 이상 맞혔는데 샤이니 데뷔곡에서 멘붕... 링딩동 아니었구나 ㅋㅋ → K-팝 역사 몇 개 맞혀?",
+      "level4": "K-팝 역사 테스트: Lv.4 역사 고수 🏅 상위 15%... H.O.T 해체 연도·Dynamite 기록 다 맞혔음 → K-팝 역사 몇 개 맞혀? 이거 다 맞히면 역사 마스터",
+      "level5": "K-팝 역사 테스트: Lv.5 역사 마스터 🏆 1세대부터 4세대까지 전부 맞혔음... 에스파 세계관까지 → K-팝 역사 몇 개 맞혀? 팬덤 자존심 걸고 도전해봐",
+      "startDefault": "K-팝 역사 마스터 테스트 💜 1세대부터 4세대까지 12문항 도전!",
+      "startKakao": "K-팝 역사 마스터 테스트 💜 1세대부터 4세대까지 12문항 도전!",
+      "startWechat": "K-팝 역사 마스터 테스트 💜 1세대부터 4세대까지 12문항 도전!",
+      "startWhatsapp": "K-팝 역사 마스터 테스트 💜 1세대부터 4세대까지 12문항 도전!",
+      "startTelegram": "K-팝 역사 마스터 테스트 💜 1세대부터 4세대까지 12문항 도전!",
+      "startLine": "K-팝 역사 마스터 테스트 💜 1세대부터 4세대까지 12문항 도전!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "우리는 누구나 자신을 지키기 위한 성벽을 가지고 있습니다.",

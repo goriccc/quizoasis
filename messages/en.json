@@ -10699,6 +10699,86 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3KpopHistoryMasterTest": {
+    "startMessage": {
+      "line1": "How much K-Pop history do you know?",
+      "line2": "Started from 1st gen? Watched H.O.T live fancams? Or joined from 3rd gen and only know 1st gen by name? Or only know 4th gen?",
+      "line3": "Since H.O.T's debut in 1996, K-Pop has built nearly 30 years of history. Legendary debut songs, era-changing events, and world-shocking records fill that timeline.",
+      "line4": "12 questions measure your K-Pop history knowledge. Post your result in a fan community and debates will definitely start.",
+      "line5": "Start K-Pop History Master Test 💜 Challenge now",
+      "note": "※ Be sure to read the answer explanations. Even when wrong, learning K-Pop history is fun."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (K-Pop History Master Test)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "shareResult": "Share Result",
+      "scoreSummary": "{count} correct · 12 questions total",
+      "historyGrade": "K-Pop History Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review",
+      "openHint": "View Answer Explanation",
+      "closeHint": "Close Explanation",
+      "closeModal": "Close",
+      "correctExplanationTitle": "Correct Answer Explanation",
+      "wrongTrapsTitle": "Wrong-Answer Traps",
+      "belowQuestionHint": "(Answer explanation is below)"
+    },
+    "result": {
+      "historyGrade": "K-Pop History Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "level1": "K-Pop History Test: Lv.1 Beginner Fan 🌱 Thought Girls' Generation debuted with Gee... learned today it's Into the New World 😭 → How many can you get? Try it!",
+      "level2": "K-Pop History Test: Lv.2 Current-Gen Fan 🎤 Got that Lee Hyori isn't in S.E.S, but stuck on H.O.T disbandment year... → How many can you get? Fan pride test",
+      "level3": "K-Pop History Test: Lv.3 Cross-Gen Fan 🌟 Got more than half but brain froze on SHINee debut... wasn't Ring Ding Dong lol → How many can you get?",
+      "level4": "K-Pop History Test: Lv.4 History Expert 🏅 Top 15%... got H.O.T disbandment year & Dynamite record right → How many can you get? Nail them all and you're a history master",
+      "level5": "K-Pop History Test: Lv.5 History Master 🏆 Got everything from 1st to 4th gen... even aespa's worldview → How many can you get? Challenge with your fan pride!",
+      "startDefault": "K-Pop History Master Test 💜 12 questions from 1st to 4th gen!",
+      "startKakao": "K-Pop History Master Test 💜 12 questions from 1st to 4th gen!",
+      "startWechat": "K-Pop History Master Test 💜 12 questions from 1st to 4th gen!",
+      "startWhatsapp": "K-Pop History Master Test 💜 12 questions from 1st to 4th gen!",
+      "startTelegram": "K-Pop History Master Test 💜 12 questions from 1st to 4th gen!",
+      "startLine": "K-Pop History Master Test 💜 12 questions from 1st to 4th gen!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "We all have walls to protect ourselves.",

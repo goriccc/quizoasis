@@ -196,6 +196,10 @@ import {
   phase3AloneTimeTypeResults,
 } from '@/lib/phase3AloneTimeTypeData';
 import {
+  phase3KpopHistoryMasterQuestions,
+  phase3KpopHistoryMasterResults,
+} from '@/lib/phase3KpopHistoryMasterData';
+import {
   phase3AiFuture10YearsQuestions,
   phase3AiFuture10YearsResults,
 } from '@/lib/phase3AiFuture10YearsData';
@@ -707,6 +711,10 @@ const Phase3WebtoonProtagonistTestClient = dynamic(
 );
 const Phase3AloneTimeTypeTestClient = dynamic(
   () => import('@/components/Phase3AloneTimeTypeTestClient'),
+  { ssr: false }
+);
+const Phase3KpopHistoryMasterTestClient = dynamic(
+  () => import('@/components/Phase3KpopHistoryMasterTestClient'),
   { ssr: false }
 );
 const Phase3EgoWallThicknessTestClient = dynamic(
@@ -2313,6 +2321,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['獨處時間', '內向外向', '內向', '日常', '自我充電'],
         vi: ['thời gian một mình', 'hướng nội ngoại', 'hướng nội', 'đời sống', 'nạp năng lượng'],
         id: ['waktu sendiri', 'introvert ekstrovert', 'introvert', 'keseharian', 'isi ulang energi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-kpop-history-master') {
+    test = {
+      slug: 'phase3-kpop-history-master',
+      title: {
+        ko: 'K-팝 역사 마스터 테스트',
+        en: 'K-Pop History Master Test',
+        ja: 'K-POP歴史マスターテスト',
+        'zh-CN': 'K-Pop历史大师测试',
+        'zh-TW': 'K-Pop歷史大師測試',
+        vi: 'K-Pop History Master Test',
+        id: 'K-Pop History Master Test',
+      },
+      description: {
+        ko: '12가지 문제로 나의 K-팝 역사 지식 수준을 측정합니다. 1세대부터 4세대까지 K-팝 역사 고수 등급을 확인하세요.',
+        en: 'Measure your K-Pop history knowledge with 12 questions. Check your expert grade from 1st to 4th gen.',
+        ja: '12問で私のK-POP歴史知識レベルを測定します。1世代から4世代までのK-POP歴史上級者等級を確認してください。',
+        'zh-CN': '通过12道题测量你的K-Pop历史知识水平。确认从1代到4代的K-Pop历史高手等级。',
+        'zh-TW': '透過12道題測量你的K-Pop歷史知識水平。確認從1代到4代的K-Pop歷史高手等級。',
+        vi: 'Đo mức kiến thức lịch sử K-Pop của bạn qua 12 câu hỏi. Xem cấp cao thủ từ thế hệ 1 đến 4.',
+        id: 'Ukur pengetahuan sejarah K-Pop-mu lewat 12 pertanyaan. Cek grade ahli dari generasi 1 sampai 4.',
+      },
+      thumbnail: 'p3_quiz_kpop_history_master.webp',
+      type: 'knowledge',
+      category: 'challenge',
+      play_count: 0,
+      tags: {
+        ko: ['K팝', '케이팝역사', '팬덤', '아이돌', '마스터'],
+        en: ['K-Pop', 'K-Pop history', 'fandom', 'idol', 'master'],
+        ja: ['K-POP', 'K-POP歴史', 'ファンダム', 'アイドル', 'マスター'],
+        'zh-CN': ['K-Pop', 'K-Pop历史', '粉丝', '偶像', '大师'],
+        'zh-TW': ['K-Pop', 'K-Pop歷史', '粉絲', '偶像', '大師'],
+        vi: ['K-Pop', 'lịch sử K-Pop', 'fandom', 'idol', 'master'],
+        id: ['K-Pop', 'sejarah K-Pop', 'fandom', 'idol', 'master'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8264,6 +8309,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3AloneTimeTypeQuestions}
           results={phase3AloneTimeTypeResults}
           questionCount={phase3AloneTimeTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-kpop-history-master') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-kpop-history-master',
+      title: {
+        ko: 'K-팝 역사 마스터 테스트',
+        en: 'K-Pop History Master Test',
+        ja: 'K-POP歴史マスターテスト',
+        'zh-CN': 'K-Pop历史大师测试',
+        'zh-TW': 'K-Pop歷史大師測試',
+        vi: 'K-Pop History Master Test',
+        id: 'K-Pop History Master Test',
+      },
+      description: {
+        ko: '12가지 문제로 나의 K-팝 역사 지식 수준을 측정합니다. 1세대부터 4세대까지 K-팝 역사 고수 등급을 확인하세요.',
+        en: 'Measure your K-Pop history knowledge with 12 questions. Check your expert grade from 1st to 4th gen.',
+        ja: '12問で私のK-POP歴史知識レベルを測定します。1世代から4世代までのK-POP歴史上級者等級を確認してください。',
+        'zh-CN': '通过12道题测量你的K-Pop历史知识水平。确认从1代到4代的K-Pop历史高手等级。',
+        'zh-TW': '透過12道題測量你的K-Pop歷史知識水平。確認從1代到4代的K-Pop歷史高手等級。',
+        vi: 'Đo mức kiến thức lịch sử K-Pop của bạn qua 12 câu hỏi. Xem cấp cao thủ từ thế hệ 1 đến 4.',
+        id: 'Ukur pengetahuan sejarah K-Pop-mu lewat 12 pertanyaan. Cek grade ahli dari generasi 1 sampai 4.',
+      },
+      thumbnail: 'p3_quiz_kpop_history_master.webp',
+      type: 'knowledge',
+      category: 'challenge',
+      play_count: 0,
+      tags: {
+        ko: ['K팝', '케이팝역사', '팬덤', '아이돌', '마스터'],
+        en: ['K-Pop', 'K-Pop history', 'fandom', 'idol', 'master'],
+        ja: ['K-POP', 'K-POP歴史', 'ファンダム', 'アイドル', 'マスター'],
+        'zh-CN': ['K-Pop', 'K-Pop历史', '粉丝', '偶像', '大师'],
+        'zh-TW': ['K-Pop', 'K-Pop歷史', '粉絲', '偶像', '大師'],
+        vi: ['K-Pop', 'lịch sử K-Pop', 'fandom', 'idol', 'master'],
+        id: ['K-Pop', 'sejarah K-Pop', 'fandom', 'idol', 'master'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3KpopHistoryMasterTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3KpopHistoryMasterQuestions}
+          results={phase3KpopHistoryMasterResults}
+          questionCount={phase3KpopHistoryMasterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

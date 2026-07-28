@@ -10690,6 +10690,86 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3KpopHistoryMasterTest": {
+    "startMessage": {
+      "line1": "Bạn biết bao nhiêu về lịch sử K-Pop?",
+      "line2": "Bắt đầu từ thế hệ 1? Từng xem fancam H.O.T? Hay vào từ thế hệ 3 và chỉ biết tên thế hệ 1? Hay chỉ biết thế hệ 4?",
+      "line3": "Từ debut H.O.T năm 1996, K-Pop đã xây dựng gần 30 năm lịch sử. Bài debut huyền thoại, sự kiện đổi thời, kỷ lục làm cả thế giới kinh ngạc đều nằm trong đó.",
+      "line4": "12 câu hỏi đo mức kiến thức lịch sử K-Pop của bạn. Đăng kết quả lên cộng đồng fan là chắc chắn sẽ nổ tranh luận.",
+      "line5": "Bắt đầu K-Pop History Master Test 💜 Thử ngay",
+      "note": "※ Nhớ đọc giải thích đáp án. Dù sai vẫn vui vì được học lịch sử K-Pop."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (K-Pop History Master Test)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} câu · Tổng 12 câu",
+      "historyGrade": "Cấp lịch sử K-Pop",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng",
+      "openHint": "Xem giải thích đáp án",
+      "closeHint": "Đóng giải thích",
+      "closeModal": "Đóng",
+      "correctExplanationTitle": "Giải thích đáp án đúng",
+      "wrongTrapsTitle": "Bẫy câu sai",
+      "belowQuestionHint": "(Giải thích đáp án ở bên dưới)"
+    },
+    "result": {
+      "historyGrade": "Cấp lịch sử K-Pop",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "level1": "Test lịch sử K-Pop: Lv.1 Fan mới 🌱 Tưởng Girls' Generation debut với Gee... hôm nay mới biết là Into the New World 😭 → Bạn đúng mấy câu? Thử đi!",
+      "level2": "Test lịch sử K-Pop: Lv.2 Fan thế hệ mới 🎤 Biết Lee Hyori không thuộc S.E.S, nhưng vấp năm tan rã H.O.T... → Bạn đúng mấy câu? Test lòng tự trọng fan",
+      "level3": "Test lịch sử K-Pop: Lv.3 Fan đa thế hệ 🌟 Đúng hơn nửa nhưng sốc ở debut SHINee... không phải Ring Ding Dong haha → Bạn đúng mấy câu?",
+      "level4": "Test lịch sử K-Pop: Lv.4 Cao thủ 🏅 Top 15%... đúng năm tan rã H.O.T & kỷ lục Dynamite → Bạn đúng mấy câu? Full điểm là master",
+      "level5": "Test lịch sử K-Pop: Lv.5 Master 🏆 Đúng hết từ thế hệ 1 đến 4... cả worldview aespa → Bạn đúng mấy câu? Thử với lòng tự trọng fan!",
+      "startDefault": "K-Pop History Master Test 💜 12 câu từ thế hệ 1 đến 4!",
+      "startKakao": "K-Pop History Master Test 💜 12 câu từ thế hệ 1 đến 4!",
+      "startWechat": "K-Pop History Master Test 💜 12 câu từ thế hệ 1 đến 4!",
+      "startWhatsapp": "K-Pop History Master Test 💜 12 câu từ thế hệ 1 đến 4!",
+      "startTelegram": "K-Pop History Master Test 💜 12 câu từ thế hệ 1 đến 4!",
+      "startLine": "K-Pop History Master Test 💜 12 câu từ thế hệ 1 đến 4!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "Ai trong chúng ta cũng có một bức tường để bảo vệ bản thân.",
