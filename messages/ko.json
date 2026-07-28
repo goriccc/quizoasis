@@ -11193,6 +11193,80 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3WorldFlagMasterTest": {
+    "startMessage": {
+      "line1": "국기만 보고 나라 이름을 맞힐 수 있나요?",
+      "line2": "일본·미국·영국은 누구나 압니다. 근데 초록 바탕에 빨간 원? 흰 바탕에 십자가? 용이 그려진 국기? 두 개의 삼각형이 겹친 세상에서 유일한 모양의 국기?",
+      "line3": "12개의 국기가 나옵니다. 쉬운 것부터 시작해서 점점 어려워집니다. 후반부는 세계 지리 좀 안다는 사람도 헷갈립니다.",
+      "line4": "몇 개나 맞힐 수 있을지 지금 도전해보세요. 결과를 친구에게 보내서 \"이 국기 알아?\"를 외쳐보세요.",
+      "line5": "국기 고수 테스트 시작 🌍 도전",
+      "note": "※ 정답 해설을 꼭 읽어보세요. 틀려도 세계 국기를 배우는 재미가 있습니다."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (세계 국기 고수 테스트)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "shareResult": "결과 공유하기",
+      "scoreSummary": "{count}개 맞힘 · 12문항 만점",
+      "flagGrade": "국기 고수 등급",
+      "scoreRange": "정답 수",
+      "strengthZone": "강점 구간",
+      "weakZone": "취약 구간",
+      "retakeTip": "재도전 팁",
+      "characteristic": "특징",
+      "regretPoint": "아쉬운 포인트",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평",
+      "correctExplanationTitle": "정답 해설",
+      "feedbackCorrect": "정답입니다!",
+      "feedbackWrong": "오답이에요.",
+      "nextQuestion": "다음 문제",
+      "viewResult": "결과 보기"
+    },
+    "result": {
+      "flagGrade": "국기 고수 등급",
+      "scoreRange": "정답 수",
+      "strengthZone": "강점 구간",
+      "weakZone": "취약 구간",
+      "retakeTip": "재도전 팁",
+      "characteristic": "특징",
+      "regretPoint": "아쉬운 포인트",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "세계 국기 고수 테스트 🌍 이 국기 알아?",
+      "startKakao": "세계 국기 고수 테스트 🌍 이 국기 알아?",
+      "startWechat": "세계 국기 고수 테스트 🌍 이 국기 알아?",
+      "startWhatsapp": "세계 국기 고수 테스트 🌍 이 국기 알아?",
+      "startTelegram": "세계 국기 고수 테스트 🌍 이 국기 알아?",
+      "startLine": "세계 국기 고수 테스트 🌍 이 국기 알아?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3EgoWallThicknessTest": {
     "startMessage": {
       "line1": "우리는 누구나 자신을 지키기 위한 성벽을 가지고 있습니다.",

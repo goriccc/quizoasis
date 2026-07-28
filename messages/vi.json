@@ -10906,6 +10906,80 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3WorldFlagMasterTest": {
+    "startMessage": {
+      "line1": "Chỉ nhìn quốc kỳ, bạn có đoán được tên nước không?",
+      "line2": "Nhật Bản·Mỹ·Anh ai cũng biết. Nhưng nền xanh lá vòng đỏ? Chữ thập trắng trên đỏ? Quốc kỳ có rồng? Quốc kỳ hai tam giác chồng — hình dạng duy nhất trên thế giới?",
+      "line3": "12 quốc kỳ xuất hiện — từ dễ đến khó dần. Phần sau kể cả người biết địa lý cũng dễ nhầm.",
+      "line4": "Thử xem bạn đúng được bao nhiêu. Gửi kết quả cho bạn bè và hỏi: \"Biết quốc kỳ này không?\"",
+      "line5": "Bắt đầu Flag Master Test 🌍 Thử ngay",
+      "note": "※ Nhớ đọc giải thích đáp án. Dù sai vẫn vui vì được học quốc kỳ thế giới."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (World Flag Master Test)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreSummary": "Đúng {count} câu · Tổng 12 câu",
+      "flagGrade": "Cấp cao thủ quốc kỳ",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng",
+      "correctExplanationTitle": "Giải thích đáp án đúng",
+      "feedbackCorrect": "Chính xác!",
+      "feedbackWrong": "Sai rồi.",
+      "nextQuestion": "Câu tiếp theo",
+      "viewResult": "Xem kết quả"
+    },
+    "result": {
+      "flagGrade": "Cấp cao thủ quốc kỳ",
+      "scoreRange": "Số câu đúng",
+      "strengthZone": "Khu vực mạnh",
+      "weakZone": "Khu vực yếu",
+      "retakeTip": "Mẹo thử lại",
+      "characteristic": "Đặc điểm",
+      "regretPoint": "Tiếc nuối",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Nhận xét một dòng"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "World Flag Master Test 🌍 Biết quốc kỳ này không?",
+      "startKakao": "World Flag Master Test 🌍 Biết quốc kỳ này không?",
+      "startWechat": "World Flag Master Test 🌍 Biết quốc kỳ này không?",
+      "startWhatsapp": "World Flag Master Test 🌍 Biết quốc kỳ này không?",
+      "startTelegram": "World Flag Master Test 🌍 Biết quốc kỳ này không?",
+      "startLine": "World Flag Master Test 🌍 Biết quốc kỳ này không?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3WorldGreetingChallengeTest": {
     "startMessage": {
       "line1": "Bạn có đoán được lời chào này là ngôn ngữ của nước nào không?",

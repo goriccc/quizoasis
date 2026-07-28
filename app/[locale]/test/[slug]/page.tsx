@@ -469,6 +469,10 @@ const Phase3WorldGreetingChallengeTestClient = dynamic(
   () => import('@/components/Phase3WorldGreetingChallengeTestClient'),
   { ssr: false }
 );
+const Phase3WorldFlagMasterTestClient = dynamic(
+  () => import('@/components/Phase3WorldFlagMasterTestClient'),
+  { ssr: false }
+);
 const Phase3TeamWorkChemistryTestClient = dynamic(
   () => import('@/components/Phase3TeamWorkChemistryTestClient'),
   { ssr: false }
@@ -2013,6 +2017,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['世界問候', '語言常識', '測驗', '多語言', '哪國語言'],
         vi: ['lời chào', 'ngôn ngữ', 'quiz', 'đa ngôn ngữ', 'đoán quốc gia'],
         id: ['salam dunia', 'bahasa', 'kuis', 'multibahasa', 'tebak negara'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-world-flag-master') {
+    test = {
+      slug: 'phase3-world-flag-master',
+      title: {
+        ko: '세계 국기 고수 테스트',
+        en: 'World Flag Master Test',
+        ja: '世界国旗マスターテスト',
+        'zh-CN': '世界国旗高手测试',
+        'zh-TW': '世界國旗高手測試',
+        vi: 'Bài kiểm tra chuyên gia cờ thế giới',
+        id: 'Tes Master Bendera Dunia',
+      },
+      description: {
+        ko: '12개의 국기 이미지로 나라를 맞춰보세요. 일본부터 카자흐스탄까지, 세계 국기 고수 등급을 확인하세요!',
+        en: 'Match 12 flag images to their countries. From Japan to Kazakhstan—find your world flag rank!',
+        ja: '12の国旗画像で国を当てましょう。日本からカザフスタンまで、世界国旗マスター等級を確認！',
+        'zh-CN': '通过12道国旗图片猜国家。从日本到哈萨克斯坦，测测你的世界国旗等级！',
+        'zh-TW': '透過12道國旗圖片猜國家。從日本到哈薩克，測測你的世界國旗等級！',
+        vi: 'Đoán quốc gia qua 12 ảnh cờ thế giới. Từ Nhật đến Kazakhstan—xem cấp độ cờ của bạn!',
+        id: 'Tebak negara dari 12 gambar bendera dunia. Dari Jepang ke Kazakhstan—cek level bendera duniamu!',
+      },
+      thumbnail: 'p3_quiz_world_flag_master.webp',
+      type: 'knowledge',
+      category: 'challenge',
+      play_count: 0,
+      tags: {
+        ko: ['세계국기', '지리상식', '퀴즈', '국기챌린지', '도전'],
+        en: ['world flag', 'geography quiz', 'quiz', 'flag challenge', 'challenge'],
+        ja: ['世界国旗', '地理クイズ', 'クイズ', '国旗チャレンジ', '挑戦'],
+        'zh-CN': ['世界国旗', '地理常识', '测验', '国旗挑战', '挑战'],
+        'zh-TW': ['世界國旗', '地理常識', '測驗', '國旗挑戰', '挑戰'],
+        vi: ['cờ thế giới', 'địa lý', 'quiz', 'thử thách cờ', 'thử thách'],
+        id: ['bendera dunia', 'geografi', 'kuis', 'tantangan bendera', 'tantangan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8331,7 +8372,7 @@ export default async function TestPage({ params }: Props) {
     );
   }
 
-    if (slug === 'phase3-sudden-poor-defense-index') {
+  if (slug === 'phase3-sudden-poor-defense-index') {
       const { phase3SuddenPoorDefenseIndexQuestions, phase3SuddenPoorDefenseIndexResults } = await import('@/lib/phase3SuddenPoorDefenseIndexData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-sudden-poor-defense-index',
@@ -10666,6 +10707,62 @@ export default async function TestPage({ params }: Props) {
           questions={phase3WorldGreetingChallengeQuestions}
           results={phase3WorldGreetingChallengeResults}
           questionCount={phase3WorldGreetingChallengeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+  if (slug === 'phase3-world-flag-master') {
+    const { phase3WorldFlagMasterQuestions, phase3WorldFlagMasterResults } = await import('@/lib/phase3WorldFlagMasterData');
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-world-flag-master',
+      title: {
+        ko: '세계 국기 고수 테스트',
+        en: 'World Flag Master Test',
+        ja: '世界国旗マスターテスト',
+        'zh-CN': '世界国旗高手测试',
+        'zh-TW': '世界國旗高手測試',
+        vi: 'Bài kiểm tra chuyên gia cờ thế giới',
+        id: 'Tes Master Bendera Dunia',
+      },
+      description: {
+        ko: '12개의 국기 이미지로 나라를 맞춰보세요. 일본부터 카자흐스탄까지, 세계 국기 고수 등급을 확인하세요!',
+        en: 'Match 12 flag images to their countries. From Japan to Kazakhstan—find your world flag rank!',
+        ja: '12の国旗画像で国を当てましょう。日本からカザフスタンまで、世界国旗マスター等級を確認！',
+        'zh-CN': '通过12道国旗图片猜国家。从日本到哈萨克斯坦，测测你的世界国旗等级！',
+        'zh-TW': '透過12道國旗圖片猜國家。從日本到哈薩克，測測你的世界國旗等級！',
+        vi: 'Đoán quốc gia qua 12 ảnh cờ thế giới. Từ Nhật đến Kazakhstan—xem cấp độ cờ của bạn!',
+        id: 'Tebak negara dari 12 gambar bendera dunia. Dari Jepang ke Kazakhstan—cek level bendera duniamu!',
+      },
+      thumbnail: 'p3_quiz_world_flag_master.webp',
+      type: 'knowledge',
+      category: 'challenge',
+      play_count: 0,
+      tags: {
+        ko: ['세계국기', '지리상식', '퀴즈', '국기챌린지', '도전'],
+        en: ['world flag', 'geography quiz', 'quiz', 'flag challenge', 'challenge'],
+        ja: ['世界国旗', '地理クイズ', 'クイズ', '国旗チャレンジ', '挑戦'],
+        'zh-CN': ['世界国旗', '地理常识', '测验', '国旗挑战', '挑战'],
+        'zh-TW': ['世界國旗', '地理常識', '測驗', '國旗挑戰', '挑戰'],
+        vi: ['cờ thế giới', 'địa lý', 'quiz', 'thử thách cờ', 'thử thách'],
+        id: ['bendera dunia', 'geografi', 'kuis', 'tantangan bendera', 'tantangan'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3WorldFlagMasterTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3WorldFlagMasterQuestions}
+          results={phase3WorldFlagMasterResults}
+          questionCount={phase3WorldFlagMasterQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

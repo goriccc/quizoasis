@@ -10906,6 +10906,80 @@
       "popularTestsTop5": "🔥 当下热门测试推荐Top5"
     }
   },
+  "phase3WorldFlagMasterTest": {
+    "startMessage": {
+      "line1": "只看国旗，你能说出是哪个国家吗？",
+      "line2": "日本·美国·英国谁都认识。但绿底红圆？红底白十字？画着龙的国旗？两面三角形重叠、世界上独一无二形状的国旗？",
+      "line3": "会出现12面国旗，从简单到越来越难。后半段就算懂点世界地理也会迷惑。",
+      "line4": "现在就挑战看能答对几题。把结果发给朋友，喊一声「这国旗认识吗？」",
+      "line5": "开始国旗高手测试 🌍 立即挑战",
+      "note": "※ 请务必阅读正解解析。就算答错，学世界国旗也很有趣。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告区域（世界国旗高手测试）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "shareResult": "分享结果",
+      "scoreSummary": "答对{count}题 · 共12题",
+      "flagGrade": "国旗高手等级",
+      "scoreRange": "答对数",
+      "strengthZone": "强项区间",
+      "weakZone": "弱项区间",
+      "retakeTip": "重试提示",
+      "characteristic": "特征",
+      "regretPoint": "遗憾点",
+      "certificationPhrase": "认证文案",
+      "oneLiner": "一句话评价",
+      "correctExplanationTitle": "正解解析",
+      "feedbackCorrect": "答对了！",
+      "feedbackWrong": "答错了。",
+      "nextQuestion": "下一题",
+      "viewResult": "查看结果"
+    },
+    "result": {
+      "flagGrade": "国旗高手等级",
+      "scoreRange": "答对数",
+      "strengthZone": "强项区间",
+      "weakZone": "弱项区间",
+      "retakeTip": "重试提示",
+      "characteristic": "特征",
+      "regretPoint": "遗憾点",
+      "certificationPhrase": "认证文案",
+      "oneLiner": "一句话评价"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "世界国旗高手测试 🌍 这国旗认识吗？",
+      "startKakao": "世界国旗高手测试 🌍 这国旗认识吗？",
+      "startWechat": "世界国旗高手测试 🌍 这国旗认识吗？",
+      "startWhatsapp": "世界国旗高手测试 🌍 这国旗认识吗？",
+      "startTelegram": "世界国旗高手测试 🌍 这国旗认识吗？",
+      "startLine": "世界国旗高手测试 🌍 这国旗认识吗？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在WeChat中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "分享到KakaoTalk时发生错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似的其他测试推荐Top5",
+      "popularTestsTop5": "🔥 当下热门测试推荐Top5"
+    }
+  },
   "phase3WorldGreetingChallengeTest": {
     "startMessage": {
       "line1": "你能猜出这个问候语是哪个国家的语言吗？",

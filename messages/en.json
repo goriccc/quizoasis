@@ -10915,6 +10915,80 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3WorldFlagMasterTest": {
+    "startMessage": {
+      "line1": "Can you name the country from the flag alone?",
+      "line2": "Everyone knows Japan, the US, and the UK. But a green field with a red circle? A white cross on red? A flag with a dragon? The world's only two-triangle flag?",
+      "line3": "12 flags appear—starting easy and getting harder. Even geography fans get confused in the later rounds.",
+      "line4": "See how many you can get right. Share your result and ask friends: \"Know this flag?\"",
+      "line5": "Start Flag Master Test 🌍 Take the challenge",
+      "note": "※ Be sure to read the answer explanations. Even when wrong, learning world flags is fun."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (World Flag Master Test)",
+      "goToTest": "Take the Test",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "shareResult": "Share Result",
+      "scoreSummary": "{count} correct · 12 questions total",
+      "flagGrade": "Flag Master Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review",
+      "correctExplanationTitle": "Correct Answer Explanation",
+      "feedbackCorrect": "Correct!",
+      "feedbackWrong": "Incorrect.",
+      "nextQuestion": "Next Question",
+      "viewResult": "View Result"
+    },
+    "result": {
+      "flagGrade": "Flag Master Grade",
+      "scoreRange": "Correct Answers",
+      "strengthZone": "Strength Zone",
+      "weakZone": "Weak Zone",
+      "retakeTip": "Retake Tip",
+      "characteristic": "Characteristics",
+      "regretPoint": "Almost There",
+      "certificationPhrase": "Certification Phrase",
+      "oneLiner": "One-Liner Review"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "World Flag Master Test 🌍 Know this flag?",
+      "startKakao": "World Flag Master Test 🌍 Know this flag?",
+      "startWechat": "World Flag Master Test 🌍 Know this flag?",
+      "startWhatsapp": "World Flag Master Test 🌍 Know this flag?",
+      "startTelegram": "World Flag Master Test 🌍 Know this flag?",
+      "startLine": "World Flag Master Test 🌍 Know this flag?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3WorldGreetingChallengeTest": {
     "startMessage": {
       "line1": "Can you tell which country this greeting is from?",

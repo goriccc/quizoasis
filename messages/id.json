@@ -10906,6 +10906,80 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3WorldFlagMasterTest": {
+    "startMessage": {
+      "line1": "Hanya dari bendera, bisa tebak nama negaranya?",
+      "line2": "Jepang·AS·Inggris semua orang tahu. Tapi latar hijau lingkaran merah? Salib putih di merah? Bendera bergambar naga? Bendera dua segitiga bertumpuk—bentuk unik di dunia?",
+      "line3": "12 bendera muncul—dari mudah ke semakin sulit. Bagian akhir bahkan penggemar geografi bisa bingung.",
+      "line4": "Coba berapa yang bisa kamu jawab benar. Kirim hasil ke teman dan tanya: \"Tahu bendera ini?\"",
+      "line5": "Mulai Flag Master Test 🌍 Tantang sekarang",
+      "note": "※ Pastikan baca penjelasan jawaban. Meski salah, belajar bendera dunia tetap seru."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (World Flag Master Test)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "shareResult": "Bagikan hasil",
+      "scoreSummary": "Benar {count} · Total 12 soal",
+      "flagGrade": "Grade master bendera",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris",
+      "correctExplanationTitle": "Penjelasan jawaban benar",
+      "feedbackCorrect": "Benar!",
+      "feedbackWrong": "Salah.",
+      "nextQuestion": "Soal berikutnya",
+      "viewResult": "Lihat hasil"
+    },
+    "result": {
+      "flagGrade": "Grade master bendera",
+      "scoreRange": "Jawaban benar",
+      "strengthZone": "Zona kuat",
+      "weakZone": "Zona lemah",
+      "retakeTip": "Tips ulang",
+      "characteristic": "Ciri khas",
+      "regretPoint": "Sayangnya",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Ulasan satu baris"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "World Flag Master Test 🌍 Tahu bendera ini?",
+      "startKakao": "World Flag Master Test 🌍 Tahu bendera ini?",
+      "startWechat": "World Flag Master Test 🌍 Tahu bendera ini?",
+      "startWhatsapp": "World Flag Master Test 🌍 Tahu bendera ini?",
+      "startTelegram": "World Flag Master Test 🌍 Tahu bendera ini?",
+      "startLine": "World Flag Master Test 🌍 Tahu bendera ini?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3WorldGreetingChallengeTest": {
     "startMessage": {
       "line1": "Bisa tebak salam ini dari bahasa negara mana?",

@@ -160,6 +160,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-kpop-history-master': 'quiz',
   'phase3-everyday-science-quiz': 'quiz',
   'phase3-world-greeting-challenge': 'quiz',
+  'phase3-world-flag-master': 'quiz',
   'phase3-loneliness-concentration': 'personality_4',
   'phase3-love-behavior-type': 'scenario_2',
   'phase3-love-green-flag-finder': 'personality_4',

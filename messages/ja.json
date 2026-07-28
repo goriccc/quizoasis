@@ -10894,6 +10894,80 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3WorldFlagMasterTest": {
+    "startMessage": {
+      "line1": "国旗を見て国の名前を当てられますか？",
+      "line2": "日本・アメリカ・イギリスは誰でも知っています。でも緑地に赤い円？赤地に白い十字？龍が描かれた国旗？二つの三角形が重なった世界唯一の形の国旗は？",
+      "line3": "12枚の国旗が出題されます。簡単なものから始まり、だんだん難しくなります。後半は世界地理を知っている人でも迷います。",
+      "line4": "何問当てられるか今すぐ挑戦してみてください。結果を友達に送って「この国旗分かる？」と叫んでみてください。",
+      "line5": "国旗マスターテスト開始 🌍 挑戦",
+      "note": "※ 正解解説は必ず読んでください。間違えても世界の国旗を学ぶ楽しさがあります。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（世界国旗マスターテスト）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "shareResult": "結果をシェア",
+      "scoreSummary": "{count}問正解 · 全12問",
+      "flagGrade": "国旗マスター等級",
+      "scoreRange": "正解数",
+      "strengthZone": "得意区間",
+      "weakZone": "弱点区間",
+      "retakeTip": "再挑戦のコツ",
+      "characteristic": "特徴",
+      "regretPoint": "惜しいポイント",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言評",
+      "correctExplanationTitle": "正解解説",
+      "feedbackCorrect": "正解です！",
+      "feedbackWrong": "不正解です。",
+      "nextQuestion": "次の問題",
+      "viewResult": "結果を見る"
+    },
+    "result": {
+      "flagGrade": "国旗マスター等級",
+      "scoreRange": "正解数",
+      "strengthZone": "得意区間",
+      "weakZone": "弱点区間",
+      "retakeTip": "再挑戦のコツ",
+      "characteristic": "特徴",
+      "regretPoint": "惜しいポイント",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言評"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "世界国旗マスターテスト 🌍 この国旗分かる？",
+      "startKakao": "世界国旗マスターテスト 🌍 この国旗分かる？",
+      "startWechat": "世界国旗マスターテスト 🌍 この国旗分かる？",
+      "startWhatsapp": "世界国旗マスターテスト 🌍 この国旗分かる？",
+      "startTelegram": "世界国旗マスターテスト 🌍 この国旗分かる？",
+      "startLine": "世界国旗マスターテスト 🌍 この国旗分かる？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
   "phase3WorldGreetingChallengeTest": {
     "startMessage": {
       "line1": "この挨拶がどの国の言葉か分かりますか？",
