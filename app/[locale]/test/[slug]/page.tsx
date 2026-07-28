@@ -2,490 +2,14 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { headers } from 'next/headers';
+
+import { setRequestLocale } from 'next-intl/server';
+import { Locale } from '@/i18n';
+
 import { getTestBySlug } from '@/lib/supabase';
 import { SITE_URL } from '@/lib/siteUrl';
 import { getTestData } from '@/lib/mbtiData';
-import { humorCodeQuestions, humorCodeResults } from '@/lib/humorCodeData';
-import { trustQuestions, trustResults } from '@/lib/trustData';
-import { empathyQuestions, empathyResults } from '@/lib/empathyData';
-import { honestyQuestions, honestyResults } from '@/lib/honestyData';
-import { careerQuestions, careerResults } from '@/lib/careerData';
-import { jobStrengthQuestions, jobStrengthResults } from '@/lib/jobStrengthData';
-import { workValuesQuestions, workValuesResults } from '@/lib/workValuesData';
-import { entrepreneurSpiritQuestions, entrepreneurSpiritResults } from '@/lib/entrepreneurSpiritData';
-import { workLifeBalanceQuestions, workLifeBalanceResults } from '@/lib/workLifeBalanceData';
-import { teamPlayerQuestions, teamPlayerResults } from '@/lib/teamPlayerData';
-import { challengePotentialQuestions, challengePotentialResults } from '@/lib/challengePotentialData';
-import { stressReliefQuestions, stressReliefResults } from '@/lib/stressReliefData';
-import { investmentStyleQuestions, investmentStyleResults } from '@/lib/investmentStyleData';
-import { timeEfficiencyQuestions, timeEfficiencyResults } from '@/lib/timeEfficiencyData';
-import { brainQuestions, brainResults } from '@/lib/brainData';
-import { leadershipQuestions, leadershipResults } from '@/lib/leadershipData';
-import { obsessionQuestions, obsessionResults } from '@/lib/obsessionData';
-import { optimismQuestions, optimismResults } from '@/lib/optimismData';
-import { enneagramQuestions, enneagramResults } from '@/lib/enneagramData';
-import { kpopDebutQuestions, kpopDebutResults } from '@/lib/kpopDebutData';
-import { kpopExamQuestions, kpopExamResults } from '@/lib/kpopExamData';
-import { empathyFQuestions, empathyFResults } from '@/lib/empathyFData';
-import {
-  phase3RealReasonForBreakupQuestions,
-  phase3RealReasonForBreakupResults,
-} from '@/lib/phase3RealReasonForBreakupData';
-import {
-  phase3CareerAptitudeAi16typesQuestions,
-  phase3CareerAptitudeAi16typesResults,
-} from '@/lib/phase3CareerAptitudeAi16typesData';
-import { phase3AttachmentLoveQuestions, phase3AttachmentLoveResults } from '@/lib/phase3AttachmentLoveData';
-import { phase3BurnoutFatigueQuestions, phase3BurnoutFatigueResults } from '@/lib/phase3BurnoutFatigueData';
-import { phase3SummerVacationTypeQuestions, phase3SummerVacationTypeResults } from '@/lib/phase3SummerVacationTypeData';
-import {
-  phase3PersonalityStrengthWeaknessQuestions,
-  phase3PersonalityStrengthWeaknessResults,
-} from '@/lib/phase3PersonalityStrengthWeaknessData';
-import {
-  phase3ReincarnationJobQuestions,
-  phase3ReincarnationJobResults,
-} from '@/lib/phase3ReincarnationJobData';
-import {
-  phase3DramaLifeCharacterQuestions,
-  phase3DramaLifeCharacterResults,
-} from '@/lib/phase3DramaLifeCharacterData';
-import {
-  phase3MemeCharacterTypeQuestions,
-  phase3MemeCharacterTypeResults,
-} from '@/lib/phase3MemeCharacterTypeData';
-import {
-  phase3KdramaLeadCharacterTypeQuestions,
-  phase3KdramaLeadCharacterTypeResults,
-} from '@/lib/phase3KdramaLeadCharacterTypeData';
-import {
-  phase3DittoConsumptionTypeQuestions,
-  phase3DittoConsumptionTypeResults,
-} from '@/lib/phase3DittoConsumptionTypeData';
-import {
-  phase3LonelinessConcentrationQuestions,
-  phase3LonelinessConcentrationResults,
-} from '@/lib/phase3LonelinessConcentrationData';
-import {
-  phase3SelfEsteemShieldStrengthQuestions,
-  phase3SelfEsteemShieldStrengthResults,
-} from '@/lib/phase3SelfEsteemShieldStrengthData';
-import {
-  phase3ExLingeringFeelingsQuestions,
-  phase3ExLingeringFeelingsResults,
-} from '@/lib/phase3ExLingeringFeelingsData';
-import {
-  phase3FlirtingStyleQuestions,
-  phase3FlirtingStyleResults,
-} from '@/lib/phase3FlirtingStyleData';
-import {
-  phase3EagleEyeUltimateQuestions,
-  phase3EagleEyeUltimateResults,
-} from '@/lib/phase3EagleEyeUltimateData';
-import {
-  phase3MemoryLimitChallengeQuestions,
-  phase3MemoryLimitChallengeResults,
-} from '@/lib/phase3MemoryLimitChallengeData';
-import {
-  phase3SpotTheDifferenceRounds,
-  phase3SpotTheDifferenceResults,
-} from '@/lib/phase3SpotTheDifferenceChallengeData';
-import {
-  phase3ExercisePersistenceTypeQuestions,
-  phase3ExercisePersistenceTypeResults,
-} from '@/lib/phase3ExercisePersistenceTypeData';
-import {
-  phase3SoloDrinkingTypeQuestions,
-  phase3SoloDrinkingTypeResults,
-} from '@/lib/phase3SoloDrinkingTypeData';
-import {
-  phase3SoloDiningTypeQuestions,
-  phase3SoloDiningTypeResults,
-} from '@/lib/phase3SoloDiningTypeData';
-import {
-  phase3InstaFeedPersonaAnalysisQuestions,
-  phase3InstaFeedPersonaAnalysisResults,
-} from '@/lib/phase3InstaFeedPersonaAnalysisData';
-import {
-  phase3ChronotypeMorningEveningQuestions,
-  phase3ChronotypeMorningEveningResults,
-} from '@/lib/phase3ChronotypeMorningEveningData';
-import {
-  phase3HiddenSubCharacterQuestions,
-  phase3HiddenSubCharacterResults,
-} from '@/lib/phase3HiddenSubCharacterData';
-import {
-  phase3CoupleChemistryQuestions,
-  phase3CoupleChemistryIndividualResults,
-} from '@/lib/phase3CoupleChemistryAnalysisData';
-import {
-  phase3PerfectionismIndexQuestions,
-  phase3PerfectionismIndexResults,
-} from '@/lib/phase3PerfectionismIndexData';
-import {
-  phase3AdhdTendencyChecklistQuestions,
-  phase3AdhdTendencyChecklistResults,
-} from '@/lib/phase3AdhdTendencyChecklistData';
-import {
-  phase3BestFriendQuizQuestions,
-  phase3BestFriendQuizResults,
-} from '@/lib/phase3BestFriendQuizData';
-import { phase3FriendSeesMyMbtiQuestions } from '@/lib/phase3FriendSeesMyMbtiData';
-import {
-  phase3ToxicRelationshipDiagnosisQuestions,
-  phase3ToxicRelationshipDiagnosisResults,
-} from '@/lib/phase3ToxicRelationshipDiagnosisData';
-import {
-  phase3GaslightingDefensePowerQuestions,
-  phase3GaslightingDefensePowerResults,
-} from '@/lib/phase3GaslightingDefensePowerData';
-import {
-  phase3DopamineSelfControlIndexQuestions,
-  phase3DopamineSelfControlIndexResults,
-} from '@/lib/phase3DopamineSelfControlIndexData';
-import {
-  phase3LoveVillainIndexQuestions,
-  phase3LoveVillainIndexResults,
-} from '@/lib/phase3LoveVillainIndexData';
-import {
-  phase3GhostingReboundPotentialQuestions,
-  phase3GhostingReboundPotentialResults,
-} from '@/lib/phase3GhostingReboundPotentialData';
-import {
-  phase3FirstImpressionColorScannerQuestions,
-  phase3FirstImpressionColorScannerResults,
-} from '@/lib/phase3FirstImpressionColorScannerData';
-import {
-  phase3SoulmateFinderQuestions,
-  phase3SoulmateFinderResults,
-} from '@/lib/phase3SoulmateFinderData';
-import {
-  phase3AiEraJobSurvivalScoreQuestions,
-  phase3AiEraJobSurvivalScoreResults,
-} from '@/lib/phase3AiEraJobSurvivalScoreData';
-import {
-  phase3LazinessMaxLevelQuestions,
-  phase3LazinessMaxLevelResults,
-} from '@/lib/phase3LazinessMaxLevelData';
-import {
-  phase3MukbangStyleDiagnosisQuestions,
-  phase3MukbangStyleDiagnosisResults,
-} from '@/lib/phase3MukbangStyleDiagnosisData';
-import {
-  phase3SuddenPoorDefenseIndexQuestions,
-  phase3SuddenPoorDefenseIndexResults,
-} from '@/lib/phase3SuddenPoorDefenseIndexData';
-import {
-  phase3LeadershipStyleQuestions,
-  phase3LeadershipStyleResults,
-} from '@/lib/phase3LeadershipStyleData';
-import {
-  phase3CreativityPotentialQuestions,
-  phase3CreativityPotentialResults,
-} from '@/lib/phase3CreativityPotentialData';
-import {
-  phase3FandomStyleQuestions,
-  phase3FandomStyleResults,
-} from '@/lib/phase3FandomStyleData';
-import {
-  phase3WebtoonProtagonistQuestions,
-  phase3WebtoonProtagonistResults,
-} from '@/lib/phase3WebtoonProtagonistData';
-import {
-  phase3AloneTimeTypeQuestions,
-  phase3AloneTimeTypeResults,
-} from '@/lib/phase3AloneTimeTypeData';
-import {
-  phase3LateNightTypeQuestions,
-  phase3LateNightTypeResults,
-} from '@/lib/phase3LateNightTypeData';
-import {
-  phase3KpopHistoryMasterQuestions,
-  phase3KpopHistoryMasterResults,
-} from '@/lib/phase3KpopHistoryMasterData';
-import {
-  phase3AiFuture10YearsQuestions,
-  phase3AiFuture10YearsResults,
-} from '@/lib/phase3AiFuture10YearsData';
-import {
-  phase3FallInLoveSpeedQuestions,
-  phase3FallInLoveSpeedResults,
-} from '@/lib/phase3FallInLoveSpeedData';
-import {
-  phase3LoveObsessionThermometerQuestions,
-  phase3LoveObsessionThermometerResults,
-} from '@/lib/phase3LoveObsessionThermometerData';
-import {
-  phase3EgoWallThicknessQuestions,
-  phase3EgoWallThicknessResults,
-} from '@/lib/phase3EgoWallThicknessData';
-import {
-  phase3CafeWorkGradeQuestions,
-  phase3CafeWorkGradeResults,
-} from '@/lib/phase3CafeWorkGradeData';
-import {
-  phase3PersonalBrandingKeywordsQuestions,
-  phase3PersonalBrandingKeywordsResults,
-} from '@/lib/phase3PersonalBrandingKeywordsData';
-import {
-  phase3HundredBillionProbabilityQuestions,
-  phase3HundredBillionProbabilityResults,
-} from '@/lib/phase3HundredBillionProbabilityData';
-import {
-  phase3OfficeVillainProbabilityQuestions,
-  phase3OfficeVillainProbabilityResults,
-} from '@/lib/phase3OfficeVillainProbabilityData';
-import {
-  phase3Balance99UltimateQuestions,
-  phase3Balance99UltimateResults,
-} from '@/lib/phase3Balance99UltimateData';
-import {
-  phase3DailyMindWeatherReportQuestions,
-  phase3DailyMindWeatherReportResults,
-} from '@/lib/phase3DailyMindWeatherReportData';
-import {
-  phase3CoupleBreakupRiskQuestions,
-  phase3CoupleBreakupRiskResults,
-} from '@/lib/phase3CoupleBreakupRiskData';
-import {
-  phase3WhichAiAreYouQuestions,
-  phase3WhichAiAreYouResults,
-} from '@/lib/phase3WhichAiAreYouData';
-import {
-  phase3SnsAlgorithmTypeQuestions,
-  phase3SnsAlgorithmTypeResults,
-} from '@/lib/phase3SnsAlgorithmTypeData';
-import {
-  phase3PersonalityColorFinderQuestions,
-  phase3PersonalityColorFinderResults,
-  phase3PersonalityColorFinderTestFallback,
-} from '@/lib/phase3PersonalityColorFinderData';
-import {
-  phase3PersonalityWeatherTypeQuestions,
-  phase3PersonalityWeatherTypeResults,
-  phase3PersonalityWeatherTypeTestFallback,
-} from '@/lib/phase3PersonalityWeatherTypeData';
-import {
-  phase3GameLoveBalanceExtremeQuestions,
-  phase3GameLoveBalanceExtremeResults,
-} from '@/lib/phase3GameLoveBalanceExtremeData';
-import {
-  phase3SpendingDarkHistoryTypeQuestions,
-  phase3SpendingDarkHistoryTypeResults,
-} from '@/lib/phase3SpendingDarkHistoryTypeData';
-import {
-  phase3RoomPersonalityAnalysisQuestions,
-  phase3RoomPersonalityAnalysisResults,
-} from '@/lib/phase3RoomPersonalityAnalysisData';
-import {
-  phase3GuardianSpiritAnimalQuestions,
-  phase3GuardianSpiritAnimalResults,
-} from '@/lib/phase3GuardianSpiritAnimalData';
-import {
-  phase3OotdStyleDiagnosisQuestions,
-  phase3OotdStyleDiagnosisResults,
-} from '@/lib/phase3OotdStyleDiagnosisData';
-import {
-  phase3PersonalityShoeRecommendationQuestions,
-  phase3PersonalityShoeRecommendationResults,
-} from '@/lib/phase3PersonalityShoeRecommendationData';
-import {
-  phase3YoutubeAlgorithmKnowsQuestions,
-  phase3YoutubeAlgorithmKnowsResults,
-} from '@/lib/phase3YoutubeAlgorithmKnowsData';
-import {
-  phase3ShortformAddictionTypeQuestions,
-  phase3ShortformAddictionTypeResults,
-} from '@/lib/phase3ShortformAddictionTypeData';
-import {
-  phase3SpendingPersonalityTypeQuestions,
-  phase3SpendingPersonalityTypeResults,
-} from '@/lib/phase3SpendingPersonalityTypeData';
-import {
-  phase3YoloFireGodlifeTypeQuestions,
-  phase3YoloFireGodlifeTypeResults,
-} from '@/lib/phase3YoloFireGodlifeTypeData';
-import {
-  phase3TanjinjamSpendingTypeQuestions,
-  phase3TanjinjamSpendingTypeResults,
-} from '@/lib/phase3TanjinjamSpendingTypeData';
-import {
-  phase3DumbSpendingDiagnosisQuestions,
-  phase3DumbSpendingDiagnosisResults,
-} from '@/lib/phase3DumbSpendingDiagnosisData';
-import {
-  phase3ZeroSpendingChallengeQuestions,
-  phase3ZeroSpendingChallengeResults,
-} from '@/lib/phase3ZeroSpendingChallengeData';
-import {
-  phase3StressReliefTypeQuestions,
-  phase3StressReliefTypeResults,
-} from '@/lib/phase3StressReliefTypeData';
-import {
-  phase3SleepTypePrescriptionQuestions,
-  phase3SleepTypePrescriptionResults,
-} from '@/lib/phase3SleepTypePrescriptionData';
-import {
-  phase3MyHashtagGeneratorQuestions,
-  phase3MyHashtagGeneratorResults,
-} from '@/lib/phase3MyHashtagGeneratorData';
-import {
-  phase3GodsaengIndexMeasurementQuestions,
-  phase3GodsaengIndexMeasurementResults,
-} from '@/lib/phase3GodsaengIndexMeasurementData';
-import {
-  phase3OfficeBalanceGameQuestions,
-  phase3OfficeBalanceGameResults,
-} from '@/lib/phase3OfficeBalanceGameData';
-import {
-  phase3OfficeSurvivalTypeQuestions,
-  phase3OfficeSurvivalTypeResults,
-} from '@/lib/phase3OfficeSurvivalTypeData';
-import {
-  phase3RealFriendConditionAnalysisQuestions,
-  phase3RealFriendConditionAnalysisResults,
-} from '@/lib/phase3RealFriendConditionAnalysisData';
-import {
-  phase3TfIndexPreciseMeasurementQuestions,
-  phase3TfIndexPreciseMeasurementResults,
-} from '@/lib/phase3TfIndexPreciseMeasurementData';
-import {
-  phase3SnIndexPreciseMeasurementQuestions,
-  phase3SnIndexPreciseMeasurementResults,
-} from '@/lib/phase3SnIndexPreciseMeasurementData';
-import {
-  phase3EiIndexPreciseMeasurementQuestions,
-  phase3EiIndexPreciseMeasurementResults,
-} from '@/lib/phase3EiIndexPreciseMeasurementData';
-import {
-  phase3JpIndexPreciseMeasurementQuestions,
-  phase3JpIndexPreciseMeasurementResults,
-} from '@/lib/phase3JpIndexPreciseMeasurementData';
-import {
-  phase3ElementaryMathAdultsQuizQuestions,
-  phase3ElementaryMathAdultsQuizResults,
-} from '@/lib/phase3ElementaryMathAdultsQuizData';
-import {
-  phase3EmojiMovieIdiomQuizQuestions,
-  phase3EmojiMovieIdiomQuizResults,
-} from '@/lib/phase3EmojiMovieIdiomQuizData';
-import {
-  phase3WorldLandmarkCityQuizQuestions,
-  phase3WorldLandmarkCityQuizResults,
-} from '@/lib/phase3WorldLandmarkCityQuizData';
-import {
-  phase3TeamWorkChemistryQuestions,
-  phase3TeamWorkChemistryResults,
-} from '@/lib/phase3TeamWorkChemistryData';
-import {
-  phase3LoveRedFlagFinderQuestions,
-  phase3LoveRedFlagFinderResults,
-} from '@/lib/phase3LoveRedFlagFinderData';
-import {
-  phase3LoveGreenFlagFinderQuestions,
-  phase3LoveGreenFlagFinderResults,
-} from '@/lib/phase3LoveGreenFlagFinderData';
-import {
-  phase3LoveBehaviorTypeQuestions,
-  phase3LoveBehaviorTypeResults,
-} from '@/lib/phase3LoveBehaviorTypeData';
-import {
-  phase3IdealTypeDnaAnalysisQuestions,
-  phase3IdealTypeDnaAnalysisResults,
-} from '@/lib/phase3IdealTypeDnaAnalysisData';
-import {
-  phase3LoveWeaknessMomentQuestions,
-  phase3LoveWeaknessMomentResults,
-} from '@/lib/phase3LoveWeaknessMomentData';
-import {
-  phase3SoloEscapePossibilityQuestions,
-  phase3SoloEscapePossibilityResults,
-} from '@/lib/phase3SoloEscapePossibilityData';
-import {
-  phase3LovePrescriptionQuestions,
-  phase3LovePrescriptionResults,
-} from '@/lib/phase3LovePrescriptionData';
-import {
-  phase3SkincareRoutineRecommendationQuestions,
-  phase3SkincareRoutineRecommendationResults,
-} from '@/lib/phase3SkincareRoutineRecommendationData';
-import {
-  phase3DopamineTypeQuestions,
-  phase3DopamineTypeResults,
-} from '@/lib/phase3DopamineTypeData';
-import {
-  phase3VillainDnaQuestions,
-  phase3VillainDnaResults,
-} from '@/lib/phase3VillainDnaData';
-import {
-  phase3SomeVsRelationshipTimingQuestions,
-  phase3SomeVsRelationshipTimingResults,
-} from '@/lib/phase3SomeVsRelationshipTimingData';
-import { phase2FactBomberQuestions, phase2FactBomberResults } from '@/lib/phase2_fact_bomber_data';
-import { phase2DatingMbtiQuestions, phase2DatingMbtiResults } from '@/lib/phase2_dating_mbti_data';
-import { soulDrinkQuestions, soulDrinkResults } from '@/lib/soulDrinkData';
-import { superpowerQuestions, superpowerResults } from '@/lib/superpowerData';
-import { travelStyleQuestions, travelStyleResults } from '@/lib/travelStyleData';
-import { phase2PerfectionismQuestions, phase2PerfectionismResults } from '@/lib/phase2PerfectionismData';
-import { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } from '@/lib/phase2FriendshipStyleData';
-import { phase2RelationshipCutQuestions, phase2RelationshipCutResults } from '@/lib/phase2RelationshipCutData';
-import { phase2SelfEsteemQuestions, phase2SelfEsteemResults } from '@/lib/phase2SelfEsteemData';
-import { phase2MentalAgeQuestions, phase2MentalAgeResults } from '@/lib/phase2MentalAgeData';
-import { phase2GuiltLevelQuestions, phase2GuiltLevelResults } from '@/lib/phase2GuiltLevelData';
-import { phase2CreativityLevelQuestions, phase2CreativityLevelResults } from '@/lib/phase2CreativityLevelData';
-import { phase2ImpulseBuyingQuestions, phase2ImpulseBuyingResults } from '@/lib/phase2_impulse_buying_data';
-import { phase2BirthGemFlowerQuestions, phase2BirthGemFlowerResults } from '@/lib/phase2_birth_gem_flower_data';
-import { phase2CoreEmotionQuestions, phase2CoreEmotionResults } from '@/lib/phase2_core_emotion_data';
-import { phase2ResilienceQuestions, phase2ResilienceResults } from '@/lib/phase2_resilience_data';
-import { phase2DreamCarQuestions, phase2DreamCarResults } from '@/lib/phase2_dream_car_data';
-import { phase2BodySignalQuestions, phase2BodySignalResults } from '@/lib/phase2_body_signal_data';
-import { phase2GreekGodQuestions, phase2GreekGodResults } from '@/lib/phase2_greek_god_data';
-import { phase2TeaTherapyQuestions, phase2TeaTherapyResults } from '@/lib/phase2_tea_therapy_data';
-import { phase2StressCareQuestions, phase2StressCareResults } from '@/lib/phase2_stress_care_data';
-import { phase2ConflictReasonQuestions, phase2ConflictReasonResults } from '@/lib/phase2_conflict_reason_data';
-import { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } from '@/lib/phase2_reincarnation_animal_data';
-import { phase2DarkSideQuestions, phase2DarkSideResults } from '@/lib/phase2_dark_side_data';
-import { phase2AreYouTQuestions, phase2AreYouTResults } from '@/lib/phase2_are_you_T_data';
-import { phase2CapitalQuizQuestions, phase2CapitalQuizResults } from '@/lib/phase2_capital_quiz_data';
-import { phase2ItTechQuizQuestions, phase2ItTechQuizResults } from '@/lib/phase2_it_tech_quiz_data';
-import { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } from '@/lib/phase2_literature_quiz_data';
-import { phase2InventionQuizQuestions, phase2InventionQuizResults } from '@/lib/phase2_invention_quiz_data';
-import { phase2WorldHistoryQuizQuestions, phase2WorldHistoryQuizResults } from '@/lib/phase2_world_history_quiz_data';
-import { phase2YoutubeChannelQuestions, phase2YoutubeChannelResults } from '@/lib/phase2_youtube_channel_data';
-import { phase2HiddenTalentQuestions, phase2HiddenTalentResults } from '@/lib/phase2_hidden_talent_data';
-import { phase2SocialLevelQuestions, phase2SocialLevelResults } from '@/lib/phase2_social_level_data';
-import { phase2LieDetectorQuestions, phase2LieDetectorResults } from '@/lib/phase2_lie_detector_data';
-import { phase2HomebodyLevelQuestions, phase2HomebodyLevelResults } from '@/lib/phase2_homebody_level_data';
-import { phase2LazinessLevelQuestions, phase2LazinessLevelResults } from '@/lib/phase2_laziness_level_data';
-import { conflictStyleQuestions, conflictStyleResults } from '@/lib/conflictStyleData';
-import { conversationStyleQuestions, conversationStyleResults } from '@/lib/conversationStyleData';
-import { flirtingStyleQuestions, flirtingStyleResults } from '@/lib/flirtingStyleData';
-import { leadershipStyleQuestions, leadershipStyleResults } from '@/lib/leadershipStyleData';
-import { lifePrioritiesQuestions, lifePrioritiesResults } from '@/lib/lifePrioritiesData';
-import { timePerspectiveQuestions, timePerspectiveResults } from '@/lib/timePerspectiveData';
-import { defenseMechanismQuestions, defenseMechanismResults } from '@/lib/defenseMechanismData';
-import { loveLanguageQuestions, loveLanguageResults } from '@/lib/loveLanguageData';
-import { adventurerQuestions, adventurerResults } from '@/lib/adventurerData';
-import { communicationStyleQuestions, communicationStyleResults } from '@/lib/communicationStyleData';
-import { honestyVsRestraintQuestions, honestyVsRestraintResults } from '@/lib/honestyVsRestraintData';
-import { independenceQuestions, independenceResults } from '@/lib/independenceData';
-import { decisionSpeedQuestions, decisionSpeedResults } from '@/lib/decisionSpeedData';
-import { competitivenessQuestions, competitivenessResults } from '@/lib/competitivenessData';
-import { plannerVsSpontaneousQuestions, plannerVsSpontaneousResults } from '@/lib/plannerVsSpontaneousData';
-import { datingStyleQuestions, datingStyleResults } from '@/lib/datingStyleData';
-import { reactionStyleQuestions, reactionStyleResults } from '@/lib/reactionStyleData';
-import { jealousyQuestions, jealousyResults } from '@/lib/jealousyData';
-import { quickDecisionQuestions, quickDecisionResults } from '@/lib/quickDecisionData';
-import { concentrationQuestions, concentrationResults } from '@/lib/concentrationData';
-import { mbtiAccurateQuestions, mbtiAccurateResults } from '@/lib/mbtiAccurateData';
-import { brainQuizQuestions, brainQuizResults } from '@/lib/brainQuizData';
-import { realIQQuestions, realIQResults } from '@/lib/realIQData';
-import { mensaExtremeQuestions, mensaExtremeResults } from '@/lib/mensaExtremeData';
-import { extremeQuizQuestions, extremeQuizResults } from '@/lib/extremeQuizData';
-import { faceReadingResults } from '@/lib/faceReadingData';
 import { getOgImageUrl, getThumbnailUrl } from '@/lib/utils';
-import { setRequestLocale } from 'next-intl/server';
-import { Locale } from '@/i18n';
 import { getLatestTestSlugs } from '@/lib/latestTests';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
@@ -2963,6 +2487,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   if (!test && slug === 'phase3-personality-color-finder') {
+    const { phase3PersonalityColorFinderTestFallback } = await import('@/lib/phase3PersonalityColorFinderData');
     test = {
       slug: 'phase3-personality-color-finder',
       ...phase3PersonalityColorFinderTestFallback,
@@ -2974,6 +2499,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   if (!test && slug === 'phase3-personality-weather-type') {
+    const { phase3PersonalityWeatherTypeTestFallback } = await import('@/lib/phase3PersonalityWeatherTypeData');
     test = {
       slug: 'phase3-personality-weather-type',
       ...phase3PersonalityWeatherTypeTestFallback,
@@ -5335,6 +4861,7 @@ export default async function TestPage({ params }: Props) {
 
   // 시간 효율성 테스트의 경우 Supabase에서 시도
   if (slug === 'time-efficiency-test') {
+    const { timeEfficiencyQuestions, timeEfficiencyResults } = await import('@/lib/timeEfficiencyData');
     const supabaseTest = await getTestBySlug(slug);
 
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
@@ -5996,6 +5523,7 @@ export default async function TestPage({ params }: Props) {
 
   // 워라밸 테스트의 경우 Supabase에서 시도
   if (slug === 'work-life-balance-test') {
+    const { workLifeBalanceQuestions, workLifeBalanceResults } = await import('@/lib/workLifeBalanceData');
     const supabaseTest = await getTestBySlug(slug);
 
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
@@ -6042,6 +5570,7 @@ export default async function TestPage({ params }: Props) {
 
   // 리더십 스타일 테스트의 경우 Supabase에서 시도
   if (slug === 'leadership-style-test') {
+    const { leadershipQuestions, leadershipResults } = await import('@/lib/leadershipData');
     const supabaseTest = await getTestBySlug(slug);
 
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
@@ -6088,6 +5617,7 @@ export default async function TestPage({ params }: Props) {
 
   // 강박 테스트의 경우 Supabase에서 시도
   if (slug === 'obsession-test') {
+    const { obsessionQuestions, obsessionResults } = await import('@/lib/obsessionData');
     const supabaseTest = await getTestBySlug(slug);
 
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
@@ -6134,6 +5664,7 @@ export default async function TestPage({ params }: Props) {
 
   // 팀 플레이어 테스트의 경우 Supabase에서 시도
   if (slug === 'team-player-test') {
+    const { teamPlayerQuestions, teamPlayerResults } = await import('@/lib/teamPlayerData');
     const supabaseTest = await getTestBySlug(slug);
 
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
@@ -6180,6 +5711,7 @@ export default async function TestPage({ params }: Props) {
 
   // 도전 잠재력 테스트의 경우 Supabase에서 시도
   if (slug === 'challenge-potential-test') {
+    const { challengePotentialQuestions, challengePotentialResults } = await import('@/lib/challengePotentialData');
     const supabaseTest = await getTestBySlug(slug);
 
     // Supabase에 있으면 사용, 없으면 하드코딩 데이터 사용
@@ -6226,6 +5758,7 @@ export default async function TestPage({ params }: Props) {
 
   // 낙관 vs 비관 테스트
   if (slug === 'optimism-pessimism-test') {
+    const { optimismQuestions, optimismResults } = await import('@/lib/optimismData');
     const test = await getTestBySlug(slug) || {
       slug: 'optimism-pessimism-test',
       title: {
@@ -6278,6 +5811,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_fact_bomber_test') {
+    const { phase2FactBomberQuestions, phase2FactBomberResults } = await import('@/lib/phase2_fact_bomber_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_fact_bomber_test',
       title: {
@@ -6337,6 +5871,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_dating_mbti_test') {
+    const { phase2DatingMbtiQuestions, phase2DatingMbtiResults } = await import('@/lib/phase2_dating_mbti_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_dating_mbti_test',
       title: {
@@ -6397,6 +5932,7 @@ export default async function TestPage({ params }: Props) {
 
   // 에니어그램 테스트
   if (slug === 'enneagram-test') {
+    const { enneagramQuestions, enneagramResults } = await import('@/lib/enneagramData');
     const test = await getTestBySlug(slug) || {
       slug: 'enneagram-test',
       title: {
@@ -6450,6 +5986,7 @@ export default async function TestPage({ params }: Props) {
 
   // K-POP 팬덤 능력 고사 (덕력 측정기) 테스트
   if (slug === 'kpop-exam-test') {
+    const { kpopExamQuestions, kpopExamResults } = await import('@/lib/kpopExamData');
     const test = await getTestBySlug(slug) || {
       slug: 'kpop-exam-test',
       title: {
@@ -6503,6 +6040,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'empathy-f-test') {
+    const { empathyFQuestions, empathyFResults } = await import('@/lib/empathyFData');
     const test = await getTestBySlug(slug) || {
       slug: 'empathy-f-test',
       title: {
@@ -6556,6 +6094,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-attachment-style-love') {
+    const { phase3AttachmentLoveQuestions, phase3AttachmentLoveResults } = await import('@/lib/phase3AttachmentLoveData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase3-attachment-style-love',
       title: {
@@ -6611,6 +6150,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-burnout-fatigue-precision') {
+    const { phase3BurnoutFatigueQuestions, phase3BurnoutFatigueResults } = await import('@/lib/phase3BurnoutFatigueData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase3-burnout-fatigue-precision',
       title: {
@@ -6666,6 +6206,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-meme-character-type') {
+    const { phase3MemeCharacterTypeQuestions, phase3MemeCharacterTypeResults } = await import('@/lib/phase3MemeCharacterTypeData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase3-meme-character-type',
       title: {
@@ -6726,6 +6267,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-kdrama-lead-character-type') {
+    const { phase3KdramaLeadCharacterTypeQuestions, phase3KdramaLeadCharacterTypeResults } = await import('@/lib/phase3KdramaLeadCharacterTypeData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase3-kdrama-lead-character-type',
       title: {
@@ -6786,6 +6328,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ditto-consumption-type') {
+    const { phase3DittoConsumptionTypeQuestions, phase3DittoConsumptionTypeResults } = await import('@/lib/phase3DittoConsumptionTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ditto-consumption-type',
       title: {
@@ -6846,6 +6389,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-summer-vacation-type') {
+    const { phase3SummerVacationTypeQuestions, phase3SummerVacationTypeResults } = await import('@/lib/phase3SummerVacationTypeData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase3-summer-vacation-type',
       title: {
@@ -6901,6 +6445,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-perfectionism-index') {
+    const { phase3PerfectionismIndexQuestions, phase3PerfectionismIndexResults } = await import('@/lib/phase3PerfectionismIndexData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-perfectionism-index',
       title: {
@@ -6956,6 +6501,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-best-friend-quiz') {
+    const { phase3BestFriendQuizQuestions, phase3BestFriendQuizResults } = await import('@/lib/phase3BestFriendQuizData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-best-friend-quiz',
       title: {
@@ -7011,6 +6557,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-friend-sees-my-mbti') {
+    const { phase3FriendSeesMyMbtiQuestions } = await import('@/lib/phase3FriendSeesMyMbtiData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-friend-sees-my-mbti',
       title: {
@@ -7065,6 +6612,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ego-wall-thickness') {
+    const { phase3EgoWallThicknessQuestions, phase3EgoWallThicknessResults } = await import('@/lib/phase3EgoWallThicknessData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ego-wall-thickness',
       title: {
@@ -7120,6 +6668,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-cafe-work-grade') {
+    const { phase3CafeWorkGradeQuestions, phase3CafeWorkGradeResults } = await import('@/lib/phase3CafeWorkGradeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-cafe-work-grade',
       title: {
@@ -7175,6 +6724,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-personal-branding-keywords') {
+    const { phase3PersonalBrandingKeywordsQuestions, phase3PersonalBrandingKeywordsResults } = await import('@/lib/phase3PersonalBrandingKeywordsData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-personal-branding-keywords',
       title: {
@@ -7230,6 +6780,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-100billion-probability') {
+    const { phase3HundredBillionProbabilityQuestions, phase3HundredBillionProbabilityResults } = await import('@/lib/phase3HundredBillionProbabilityData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-100billion-probability',
       title: {
@@ -7285,6 +6836,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-office-villain-probability') {
+    const { phase3OfficeVillainProbabilityQuestions, phase3OfficeVillainProbabilityResults } = await import('@/lib/phase3OfficeVillainProbabilityData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-office-villain-probability',
       title: {
@@ -7340,6 +6892,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-balance-99-ultimate') {
+    const { phase3Balance99UltimateQuestions, phase3Balance99UltimateResults } = await import('@/lib/phase3Balance99UltimateData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-balance-99-ultimate',
       title: {
@@ -7395,6 +6948,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-daily-mind-weather-report') {
+    const { phase3DailyMindWeatherReportQuestions, phase3DailyMindWeatherReportResults } = await import('@/lib/phase3DailyMindWeatherReportData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-daily-mind-weather-report',
       title: {
@@ -7564,6 +7118,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-memory-limit-challenge') {
+    const { phase3MemoryLimitChallengeQuestions, phase3MemoryLimitChallengeResults } = await import('@/lib/phase3MemoryLimitChallengeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-memory-limit-challenge',
       title: {
@@ -7624,6 +7179,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-spot-the-difference-challenge') {
+    const { phase3SpotTheDifferenceResults, phase3SpotTheDifferenceRounds } = await import('@/lib/phase3SpotTheDifferenceChallengeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-spot-the-difference-challenge',
       title: {
@@ -7683,6 +7239,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ai-future-10years') {
+    const { phase3AiFuture10YearsQuestions, phase3AiFuture10YearsResults } = await import('@/lib/phase3AiFuture10YearsData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ai-future-10years',
       title: {
@@ -7738,6 +7295,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-fall-in-love-speed') {
+    const { phase3FallInLoveSpeedQuestions, phase3FallInLoveSpeedResults } = await import('@/lib/phase3FallInLoveSpeedData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-fall-in-love-speed',
       title: {
@@ -7793,6 +7351,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-love-obsession-thermometer') {
+    const { phase3LoveObsessionThermometerQuestions, phase3LoveObsessionThermometerResults } = await import('@/lib/phase3LoveObsessionThermometerData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-love-obsession-thermometer',
       title: {
@@ -7902,6 +7461,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-loneliness-concentration') {
+    const { phase3LonelinessConcentrationQuestions, phase3LonelinessConcentrationResults } = await import('@/lib/phase3LonelinessConcentrationData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-loneliness-concentration',
       title: {
@@ -7962,6 +7522,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-self-esteem-shield-strength') {
+    const { phase3SelfEsteemShieldStrengthQuestions, phase3SelfEsteemShieldStrengthResults } = await import('@/lib/phase3SelfEsteemShieldStrengthData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-self-esteem-shield-strength',
       title: {
@@ -8022,6 +7583,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ex-lingering-feelings') {
+    const { phase3ExLingeringFeelingsQuestions, phase3ExLingeringFeelingsResults } = await import('@/lib/phase3ExLingeringFeelingsData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ex-lingering-feelings',
       title: {
@@ -8082,6 +7644,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-flirting-style') {
+    const { phase3FlirtingStyleQuestions, phase3FlirtingStyleResults } = await import('@/lib/phase3FlirtingStyleData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-flirting-style',
       title: {
@@ -8142,6 +7705,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-eagle-eye-ultimate') {
+    const { phase3EagleEyeUltimateQuestions, phase3EagleEyeUltimateResults } = await import('@/lib/phase3EagleEyeUltimateData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-eagle-eye-ultimate',
       title:       {
@@ -8197,6 +7761,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-leadership-style') {
+      const { phase3LeadershipStyleQuestions, phase3LeadershipStyleResults } = await import('@/lib/phase3LeadershipStyleData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-leadership-style',
       title: {
@@ -8252,6 +7817,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-webtoon-protagonist') {
+      const { phase3WebtoonProtagonistQuestions, phase3WebtoonProtagonistResults } = await import('@/lib/phase3WebtoonProtagonistData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-webtoon-protagonist',
       title: {
@@ -8307,6 +7873,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-alone-time-type') {
+      const { phase3AloneTimeTypeQuestions, phase3AloneTimeTypeResults } = await import('@/lib/phase3AloneTimeTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-alone-time-type',
       title: {
@@ -8362,6 +7929,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-late-night-type') {
+      const { phase3LateNightTypeQuestions, phase3LateNightTypeResults } = await import('@/lib/phase3LateNightTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-late-night-type',
       title: {
@@ -8417,6 +7985,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-kpop-history-master') {
+      const { phase3KpopHistoryMasterQuestions, phase3KpopHistoryMasterResults } = await import('@/lib/phase3KpopHistoryMasterData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-kpop-history-master',
       title: {
@@ -8472,6 +8041,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-fandom-style') {
+      const { phase3FandomStyleQuestions, phase3FandomStyleResults } = await import('@/lib/phase3FandomStyleData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-fandom-style',
       title: {
@@ -8527,6 +8097,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-creativity-potential') {
+      const { phase3CreativityPotentialQuestions, phase3CreativityPotentialResults } = await import('@/lib/phase3CreativityPotentialData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-creativity-potential',
       title: {
@@ -8582,6 +8153,7 @@ export default async function TestPage({ params }: Props) {
   }
 
     if (slug === 'phase3-sudden-poor-defense-index') {
+      const { phase3SuddenPoorDefenseIndexQuestions, phase3SuddenPoorDefenseIndexResults } = await import('@/lib/phase3SuddenPoorDefenseIndexData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-sudden-poor-defense-index',
       title: {
@@ -8637,6 +8209,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-mukbang-style-diagnosis') {
+    const { phase3MukbangStyleDiagnosisQuestions, phase3MukbangStyleDiagnosisResults } = await import('@/lib/phase3MukbangStyleDiagnosisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-mukbang-style-diagnosis',
       title: {
@@ -8692,6 +8265,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-laziness-max-level') {
+    const { phase3LazinessMaxLevelQuestions, phase3LazinessMaxLevelResults } = await import('@/lib/phase3LazinessMaxLevelData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-laziness-max-level',
       title: {
@@ -8747,6 +8321,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ai-era-job-survival-score') {
+    const { phase3AiEraJobSurvivalScoreQuestions, phase3AiEraJobSurvivalScoreResults } = await import('@/lib/phase3AiEraJobSurvivalScoreData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ai-era-job-survival-score',
       title: {
@@ -8802,6 +8377,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-soulmate-finder') {
+    const { phase3SoulmateFinderQuestions, phase3SoulmateFinderResults } = await import('@/lib/phase3SoulmateFinderData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-soulmate-finder',
       title: {
@@ -8857,6 +8433,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-first-impression-color-scanner') {
+    const { phase3FirstImpressionColorScannerQuestions, phase3FirstImpressionColorScannerResults } = await import('@/lib/phase3FirstImpressionColorScannerData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-first-impression-color-scanner',
       title: {
@@ -8912,6 +8489,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ghosting-rebound-potential') {
+    const { phase3GhostingReboundPotentialQuestions, phase3GhostingReboundPotentialResults } = await import('@/lib/phase3GhostingReboundPotentialData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ghosting-rebound-potential',
       title: {
@@ -8967,6 +8545,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-love-villain-index') {
+    const { phase3LoveVillainIndexQuestions, phase3LoveVillainIndexResults } = await import('@/lib/phase3LoveVillainIndexData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-love-villain-index',
       title: {
@@ -9022,6 +8601,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-dopamine-self-control-index') {
+    const { phase3DopamineSelfControlIndexQuestions, phase3DopamineSelfControlIndexResults } = await import('@/lib/phase3DopamineSelfControlIndexData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-dopamine-self-control-index',
       title: {
@@ -9077,6 +8657,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-gaslighting-defense-power') {
+    const { phase3GaslightingDefensePowerQuestions, phase3GaslightingDefensePowerResults } = await import('@/lib/phase3GaslightingDefensePowerData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-gaslighting-defense-power',
       title: {
@@ -9132,6 +8713,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-toxic-relationship-diagnosis') {
+    const { phase3ToxicRelationshipDiagnosisQuestions, phase3ToxicRelationshipDiagnosisResults } = await import('@/lib/phase3ToxicRelationshipDiagnosisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-toxic-relationship-diagnosis',
       title: {
@@ -9187,6 +8769,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-couple-breakup-risk') {
+    const { phase3CoupleBreakupRiskQuestions, phase3CoupleBreakupRiskResults } = await import('@/lib/phase3CoupleBreakupRiskData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-couple-breakup-risk',
       title: {
@@ -9242,6 +8825,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-which-ai-are-you') {
+    const { phase3WhichAiAreYouQuestions, phase3WhichAiAreYouResults } = await import('@/lib/phase3WhichAiAreYouData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-which-ai-are-you',
       title: {
@@ -9297,6 +8881,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-sns-algorithm-type') {
+    const { phase3SnsAlgorithmTypeQuestions, phase3SnsAlgorithmTypeResults } = await import('@/lib/phase3SnsAlgorithmTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-sns-algorithm-type',
       title: {
@@ -9352,6 +8937,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-personality-color-finder') {
+    const { phase3PersonalityColorFinderQuestions, phase3PersonalityColorFinderResults, phase3PersonalityColorFinderTestFallback } = await import('@/lib/phase3PersonalityColorFinderData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-personality-color-finder',
       ...phase3PersonalityColorFinderTestFallback,
@@ -9381,6 +8967,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-personality-weather-type') {
+    const { phase3PersonalityWeatherTypeQuestions, phase3PersonalityWeatherTypeResults, phase3PersonalityWeatherTypeTestFallback } = await import('@/lib/phase3PersonalityWeatherTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-personality-weather-type',
       ...phase3PersonalityWeatherTypeTestFallback,
@@ -9410,6 +8997,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-real-reason-for-breakup') {
+    const { phase3RealReasonForBreakupQuestions, phase3RealReasonForBreakupResults } = await import('@/lib/phase3RealReasonForBreakupData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-real-reason-for-breakup',
       title: {
@@ -9465,6 +9053,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-career-aptitude-ai-16types') {
+    const { phase3CareerAptitudeAi16typesQuestions, phase3CareerAptitudeAi16typesResults } = await import('@/lib/phase3CareerAptitudeAi16typesData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-career-aptitude-ai-16types',
             title: {
@@ -9562,6 +9151,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-game-love-balance-extreme') {
+    const { phase3GameLoveBalanceExtremeQuestions, phase3GameLoveBalanceExtremeResults } = await import('@/lib/phase3GameLoveBalanceExtremeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-game-love-balance-extreme',
       title: {
@@ -9617,6 +9207,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-spending-dark-history-type') {
+    const { phase3SpendingDarkHistoryTypeQuestions, phase3SpendingDarkHistoryTypeResults } = await import('@/lib/phase3SpendingDarkHistoryTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-spending-dark-history-type',
       title: {
@@ -9672,6 +9263,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-room-personality-analysis') {
+    const { phase3RoomPersonalityAnalysisQuestions, phase3RoomPersonalityAnalysisResults } = await import('@/lib/phase3RoomPersonalityAnalysisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-room-personality-analysis',
       title: {
@@ -9727,6 +9319,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-guardian-spirit-animal') {
+    const { phase3GuardianSpiritAnimalQuestions, phase3GuardianSpiritAnimalResults } = await import('@/lib/phase3GuardianSpiritAnimalData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-guardian-spirit-animal',
       title: {
@@ -9782,6 +9375,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ootd-style-diagnosis') {
+    const { phase3OotdStyleDiagnosisQuestions, phase3OotdStyleDiagnosisResults } = await import('@/lib/phase3OotdStyleDiagnosisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ootd-style-diagnosis',
       title: {
@@ -9837,6 +9431,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-personality-shoe-recommendation') {
+    const { phase3PersonalityShoeRecommendationQuestions, phase3PersonalityShoeRecommendationResults } = await import('@/lib/phase3PersonalityShoeRecommendationData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-personality-shoe-recommendation',
       title: {
@@ -9892,6 +9487,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-dumb-spending-diagnosis') {
+    const { phase3DumbSpendingDiagnosisQuestions, phase3DumbSpendingDiagnosisResults } = await import('@/lib/phase3DumbSpendingDiagnosisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-dumb-spending-diagnosis',
       title: {
@@ -9947,6 +9543,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-zero-spending-challenge') {
+    const { phase3ZeroSpendingChallengeQuestions, phase3ZeroSpendingChallengeResults } = await import('@/lib/phase3ZeroSpendingChallengeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-zero-spending-challenge',
       title: {
@@ -10002,6 +9599,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-stress-relief-type') {
+    const { phase3StressReliefTypeQuestions, phase3StressReliefTypeResults } = await import('@/lib/phase3StressReliefTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-stress-relief-type',
       title: {
@@ -10057,6 +9655,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-sleep-type-prescription') {
+    const { phase3SleepTypePrescriptionQuestions, phase3SleepTypePrescriptionResults } = await import('@/lib/phase3SleepTypePrescriptionData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-sleep-type-prescription',
       title: {
@@ -10112,6 +9711,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-my-hashtag-generator') {
+    const { phase3MyHashtagGeneratorQuestions, phase3MyHashtagGeneratorResults } = await import('@/lib/phase3MyHashtagGeneratorData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-my-hashtag-generator',
       title: {
@@ -10167,6 +9767,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-godsaeng-index-measurement') {
+    const { phase3GodsaengIndexMeasurementQuestions, phase3GodsaengIndexMeasurementResults } = await import('@/lib/phase3GodsaengIndexMeasurementData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-godsaeng-index-measurement',
       title: {
@@ -10222,6 +9823,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-office-balance-game') {
+    const { phase3OfficeBalanceGameQuestions, phase3OfficeBalanceGameResults } = await import('@/lib/phase3OfficeBalanceGameData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-office-balance-game',
       title: {
@@ -10277,6 +9879,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-office-survival-type') {
+    const { phase3OfficeSurvivalTypeQuestions, phase3OfficeSurvivalTypeResults } = await import('@/lib/phase3OfficeSurvivalTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-office-survival-type',
       title: {
@@ -10332,6 +9935,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-real-friend-condition-analysis') {
+    const { phase3RealFriendConditionAnalysisQuestions, phase3RealFriendConditionAnalysisResults } = await import('@/lib/phase3RealFriendConditionAnalysisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-real-friend-condition-analysis',
       title: {
@@ -10387,6 +9991,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-tf-index-precise-measurement') {
+    const { phase3TfIndexPreciseMeasurementQuestions, phase3TfIndexPreciseMeasurementResults } = await import('@/lib/phase3TfIndexPreciseMeasurementData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-tf-index-precise-measurement',
       title: {
@@ -10442,6 +10047,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-sn-index-precise-measurement') {
+    const { phase3SnIndexPreciseMeasurementQuestions, phase3SnIndexPreciseMeasurementResults } = await import('@/lib/phase3SnIndexPreciseMeasurementData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-sn-index-precise-measurement',
       title: {
@@ -10497,6 +10103,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ei-index-precise-measurement') {
+    const { phase3EiIndexPreciseMeasurementQuestions, phase3EiIndexPreciseMeasurementResults } = await import('@/lib/phase3EiIndexPreciseMeasurementData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ei-index-precise-measurement',
       title: {
@@ -10552,6 +10159,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-jp-index-precise-measurement') {
+    const { phase3JpIndexPreciseMeasurementQuestions, phase3JpIndexPreciseMeasurementResults } = await import('@/lib/phase3JpIndexPreciseMeasurementData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-jp-index-precise-measurement',
       title: {
@@ -10607,6 +10215,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-elementary-math-adults-quiz') {
+    const { phase3ElementaryMathAdultsQuizQuestions, phase3ElementaryMathAdultsQuizResults } = await import('@/lib/phase3ElementaryMathAdultsQuizData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-elementary-math-adults-quiz',
       title: {
@@ -10662,6 +10271,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-emoji-movie-idiom-quiz') {
+    const { phase3EmojiMovieIdiomQuizQuestions, phase3EmojiMovieIdiomQuizResults } = await import('@/lib/phase3EmojiMovieIdiomQuizData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-emoji-movie-idiom-quiz',
       title: {
@@ -10717,6 +10327,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-world-landmark-city-quiz') {
+    const { phase3WorldLandmarkCityQuizQuestions, phase3WorldLandmarkCityQuizResults } = await import('@/lib/phase3WorldLandmarkCityQuizData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-world-landmark-city-quiz',
       title: {
@@ -10772,6 +10383,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-team-work-chemistry-test') {
+    const { phase3TeamWorkChemistryQuestions, phase3TeamWorkChemistryResults } = await import('@/lib/phase3TeamWorkChemistryData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-team-work-chemistry-test',
       title: {
@@ -10827,6 +10439,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-tanjinjam-spending-type') {
+    const { phase3TanjinjamSpendingTypeQuestions, phase3TanjinjamSpendingTypeResults } = await import('@/lib/phase3TanjinjamSpendingTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-tanjinjam-spending-type',
       title: {
@@ -10882,6 +10495,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-youtube-algorithm-knows') {
+    const { phase3YoutubeAlgorithmKnowsQuestions, phase3YoutubeAlgorithmKnowsResults } = await import('@/lib/phase3YoutubeAlgorithmKnowsData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-youtube-algorithm-knows',
       title: {
@@ -10937,6 +10551,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-shortform-addiction-type') {
+    const { phase3ShortformAddictionTypeQuestions, phase3ShortformAddictionTypeResults } = await import('@/lib/phase3ShortformAddictionTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-shortform-addiction-type',
       title: {
@@ -10992,6 +10607,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-spending-personality-type') {
+    const { phase3SpendingPersonalityTypeQuestions, phase3SpendingPersonalityTypeResults } = await import('@/lib/phase3SpendingPersonalityTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-spending-personality-type',
       title: {
@@ -11047,6 +10663,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-yolo-fire-godlife-type') {
+    const { phase3YoloFireGodlifeTypeQuestions, phase3YoloFireGodlifeTypeResults } = await import('@/lib/phase3YoloFireGodlifeTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-yolo-fire-godlife-type',
       title: {
@@ -11102,6 +10719,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-love-red-flag-finder') {
+    const { phase3LoveRedFlagFinderQuestions, phase3LoveRedFlagFinderResults } = await import('@/lib/phase3LoveRedFlagFinderData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-love-red-flag-finder',
       title: {
@@ -11157,6 +10775,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-love-green-flag-finder') {
+    const { phase3LoveGreenFlagFinderQuestions, phase3LoveGreenFlagFinderResults } = await import('@/lib/phase3LoveGreenFlagFinderData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-love-green-flag-finder',
       title: {
@@ -11212,6 +10831,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-love-behavior-type') {
+    const { phase3LoveBehaviorTypeQuestions, phase3LoveBehaviorTypeResults } = await import('@/lib/phase3LoveBehaviorTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-love-behavior-type',
       title: {
@@ -11267,6 +10887,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-ideal-type-dna-analysis') {
+    const { phase3IdealTypeDnaAnalysisQuestions, phase3IdealTypeDnaAnalysisResults } = await import('@/lib/phase3IdealTypeDnaAnalysisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-ideal-type-dna-analysis',
       title: {
@@ -11322,6 +10943,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-love-weakness-moment') {
+    const { phase3LoveWeaknessMomentQuestions, phase3LoveWeaknessMomentResults } = await import('@/lib/phase3LoveWeaknessMomentData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-love-weakness-moment',
       title: {
@@ -11377,6 +10999,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-solo-escape-possibility') {
+    const { phase3SoloEscapePossibilityQuestions, phase3SoloEscapePossibilityResults } = await import('@/lib/phase3SoloEscapePossibilityData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-solo-escape-possibility',
       title: {
@@ -11432,6 +11055,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-love-prescription') {
+    const { phase3LovePrescriptionQuestions, phase3LovePrescriptionResults } = await import('@/lib/phase3LovePrescriptionData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-love-prescription',
       title: {
@@ -11487,6 +11111,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-skincare-routine-recommendation') {
+    const { phase3SkincareRoutineRecommendationQuestions, phase3SkincareRoutineRecommendationResults } = await import('@/lib/phase3SkincareRoutineRecommendationData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-skincare-routine-recommendation',
       title: {
@@ -11542,6 +11167,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-adhd-tendency-checklist') {
+    const { phase3AdhdTendencyChecklistQuestions, phase3AdhdTendencyChecklistResults } = await import('@/lib/phase3AdhdTendencyChecklistData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-adhd-tendency-checklist',
       title: {
@@ -11597,6 +11223,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-reincarnation-job') {
+    const { phase3ReincarnationJobQuestions, phase3ReincarnationJobResults } = await import('@/lib/phase3ReincarnationJobData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-reincarnation-job',
       title: {
@@ -11652,6 +11279,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-drama-life-character') {
+    const { phase3DramaLifeCharacterQuestions, phase3DramaLifeCharacterResults } = await import('@/lib/phase3DramaLifeCharacterData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-drama-life-character',
       title: {
@@ -11707,6 +11335,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-solo-drinking-type') {
+    const { phase3SoloDrinkingTypeQuestions, phase3SoloDrinkingTypeResults } = await import('@/lib/phase3SoloDrinkingTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-solo-drinking-type',
       title: {
@@ -11767,6 +11396,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-insta-feed-persona-analysis') {
+    const { phase3InstaFeedPersonaAnalysisQuestions, phase3InstaFeedPersonaAnalysisResults } = await import('@/lib/phase3InstaFeedPersonaAnalysisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-insta-feed-persona-analysis',
       title: {
@@ -11827,6 +11457,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-solo-dining-type') {
+    const { phase3SoloDiningTypeQuestions, phase3SoloDiningTypeResults } = await import('@/lib/phase3SoloDiningTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-solo-dining-type',
       title: {
@@ -11887,6 +11518,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-exercise-persistence-type') {
+    const { phase3ExercisePersistenceTypeQuestions, phase3ExercisePersistenceTypeResults } = await import('@/lib/phase3ExercisePersistenceTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-exercise-persistence-type',
       title: {
@@ -11947,6 +11579,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-chronotype-morning-evening') {
+    const { phase3ChronotypeMorningEveningQuestions, phase3ChronotypeMorningEveningResults } = await import('@/lib/phase3ChronotypeMorningEveningData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-chronotype-morning-evening',
       title: {
@@ -12007,6 +11640,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-dopamine-type-analysis') {
+    const { phase3DopamineTypeQuestions, phase3DopamineTypeResults } = await import('@/lib/phase3DopamineTypeData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-dopamine-type-analysis',
       title: {
@@ -12062,6 +11696,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-villain-dna-test') {
+    const { phase3VillainDnaQuestions, phase3VillainDnaResults } = await import('@/lib/phase3VillainDnaData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-villain-dna-test',
       title: {
@@ -12117,6 +11752,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-some-vs-relationship-timing') {
+    const { phase3SomeVsRelationshipTimingQuestions, phase3SomeVsRelationshipTimingResults } = await import('@/lib/phase3SomeVsRelationshipTimingData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-some-vs-relationship-timing',
       title: {
@@ -12172,6 +11808,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-hidden-sub-character') {
+    const { phase3HiddenSubCharacterQuestions, phase3HiddenSubCharacterResults } = await import('@/lib/phase3HiddenSubCharacterData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-hidden-sub-character',
       title: {
@@ -12227,6 +11864,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-couple-chemistry-analysis') {
+    const { phase3CoupleChemistryIndividualResults, phase3CoupleChemistryQuestions } = await import('@/lib/phase3CoupleChemistryAnalysisData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-couple-chemistry-analysis',
       title: {
@@ -12282,6 +11920,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase3-personality-strength-weakness') {
+    const { phase3PersonalityStrengthWeaknessQuestions, phase3PersonalityStrengthWeaknessResults } = await import('@/lib/phase3PersonalityStrengthWeaknessData');
     const test = (await getTestBySlug(slug)) || {
       slug: 'phase3-personality-strength-weakness',
       title: {
@@ -12338,6 +11977,7 @@ export default async function TestPage({ params }: Props) {
 
   // 인싸? 아싸? 내 사회성 레벨 테스트
   if (slug === 'phase2_social_level_test') {
+    const { phase2SocialLevelQuestions, phase2SocialLevelResults } = await import('@/lib/phase2_social_level_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_social_level_test',
       title: {
@@ -12397,6 +12037,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_lie_detector_test') {
+    const { phase2LieDetectorQuestions, phase2LieDetectorResults } = await import('@/lib/phase2_lie_detector_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_lie_detector_test',
       title: {
@@ -12457,6 +12098,7 @@ export default async function TestPage({ params }: Props) {
 
   // 집순이/집돌이 만렙 테스트
   if (slug === 'phase2_homebody_level_test') {
+    const { phase2HomebodyLevelQuestions, phase2HomebodyLevelResults } = await import('@/lib/phase2_homebody_level_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_homebody_level_test',
       title: {
@@ -12517,6 +12159,7 @@ export default async function TestPage({ params }: Props) {
 
   // 침대와 한 몸? 당신의 '게으름' 지수 테스트
   if (slug === 'phase2_laziness_level_test') {
+    const { phase2LazinessLevelQuestions, phase2LazinessLevelResults } = await import('@/lib/phase2_laziness_level_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_laziness_level_test',
       title: {
@@ -13051,6 +12694,7 @@ export default async function TestPage({ params }: Props) {
 
   // 내가 환생한다면 어떤 동물일까? 테스트
   if (slug === 'phase2_reincarnation_animal_test') {
+    const { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } = await import('@/lib/phase2_reincarnation_animal_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_reincarnation_animal_test',
       title: {
@@ -13111,6 +12755,7 @@ export default async function TestPage({ params }: Props) {
 
   // 내가 흑화하면? 숨겨진 본성 테스트
   if (slug === 'phase2_dark_side_test') {
+    const { phase2DarkSideQuestions, phase2DarkSideResults } = await import('@/lib/phase2_dark_side_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_dark_side_test',
       title: {
@@ -13171,6 +12816,7 @@ export default async function TestPage({ params }: Props) {
 
   // 너 T야? 로봇 감성 vs 오열 감성 판독기 테스트
   if (slug === 'phase2_are_you_T_test') {
+    const { phase2AreYouTQuestions, phase2AreYouTResults } = await import('@/lib/phase2_are_you_T_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_are_you_T_test',
       title: {
@@ -13231,6 +12877,7 @@ export default async function TestPage({ params }: Props) {
 
   // 뇌섹남녀 도전! 세계 수도 퀴즈 테스트
   if (slug === 'phase2_capital_quiz_test') {
+    const { phase2CapitalQuizQuestions, phase2CapitalQuizResults } = await import('@/lib/phase2_capital_quiz_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_capital_quiz_test',
       title: {
@@ -13291,6 +12938,7 @@ export default async function TestPage({ params }: Props) {
 
   // 도전! 세계 IT/테크 상식 퀴즈 테스트
   if (slug === 'phase2_it_tech_quiz_test') {
+    const { phase2ItTechQuizQuestions, phase2ItTechQuizResults } = await import('@/lib/phase2_it_tech_quiz_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_it_tech_quiz_test',
       title: {
@@ -13351,6 +12999,7 @@ export default async function TestPage({ params }: Props) {
 
   // 도전! 세계 문학 퀴즈 테스트
   if (slug === 'phase2_literature_quiz_test') {
+    const { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } = await import('@/lib/phase2_literature_quiz_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_literature_quiz_test',
       title: {
@@ -13411,6 +13060,7 @@ export default async function TestPage({ params }: Props) {
 
   // 도전! 세계 발명품 퀴즈 테스트
   if (slug === 'phase2_invention_quiz_test') {
+    const { phase2InventionQuizQuestions, phase2InventionQuizResults } = await import('@/lib/phase2_invention_quiz_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_invention_quiz_test',
       title: {
@@ -13464,6 +13114,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_impulse_buying_test') {
+    const { phase2ImpulseBuyingQuestions, phase2ImpulseBuyingResults } = await import('@/lib/phase2_impulse_buying_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_impulse_buying_test',
       title: {
@@ -13518,6 +13169,7 @@ export default async function TestPage({ params }: Props) {
 
   // 도전! 세계사 퀴즈 (고대/중세편) 테스트
   if (slug === 'phase2_world_history_modern_quiz_test') {
+    const { phase2WorldHistoryQuizQuestions, phase2WorldHistoryQuizResults } = await import('@/lib/phase2_world_history_quiz_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_world_history_modern_quiz_test',
       title: {
@@ -13578,6 +13230,7 @@ export default async function TestPage({ params }: Props) {
 
   // 떡상각? 내 유튜브 채널 컨셉 테스트
   if (slug === 'phase2_youtube_channel_test') {
+    const { phase2YoutubeChannelQuestions, phase2YoutubeChannelResults } = await import('@/lib/phase2_youtube_channel_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_youtube_channel_test',
       title: {
@@ -13638,6 +13291,7 @@ export default async function TestPage({ params }: Props) {
 
   // 아직 모르는 나의 숨겨진 재능 찾기 테스트
   if (slug === 'phase2_hidden_talent_test') {
+    const { phase2HiddenTalentQuestions, phase2HiddenTalentResults } = await import('@/lib/phase2_hidden_talent_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_hidden_talent_test',
       title: {
@@ -13691,6 +13345,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_birth_gem_flower_test') {
+    const { phase2BirthGemFlowerQuestions, phase2BirthGemFlowerResults } = await import('@/lib/phase2_birth_gem_flower_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_birth_gem_flower_test',
       title: {
@@ -13744,6 +13399,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_core_emotion_test') {
+    const { phase2CoreEmotionQuestions, phase2CoreEmotionResults } = await import('@/lib/phase2_core_emotion_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_core_emotion_test',
       title: {
@@ -13797,6 +13453,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_resilience_test') {
+    const { phase2ResilienceQuestions, phase2ResilienceResults } = await import('@/lib/phase2_resilience_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_resilience_test',
       title: {
@@ -13850,6 +13507,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_dream_car_test') {
+    const { phase2DreamCarQuestions, phase2DreamCarResults } = await import('@/lib/phase2_dream_car_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_dream_car_test',
       title: {
@@ -13903,6 +13561,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_body_signal_test') {
+    const { phase2BodySignalQuestions, phase2BodySignalResults } = await import('@/lib/phase2_body_signal_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_body_signal_test',
       title: {
@@ -13956,6 +13615,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_greek_god_test') {
+    const { phase2GreekGodQuestions, phase2GreekGodResults } = await import('@/lib/phase2_greek_god_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_greek_god_test',
       title: {
@@ -14009,6 +13669,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_tea_therapy_test') {
+    const { phase2TeaTherapyQuestions, phase2TeaTherapyResults } = await import('@/lib/phase2_tea_therapy_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_tea_therapy_test',
       title: {
@@ -14062,6 +13723,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_stress_care_test') {
+    const { phase2StressCareQuestions, phase2StressCareResults } = await import('@/lib/phase2_stress_care_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_stress_care_test',
       title: {
@@ -14115,6 +13777,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_conflict_reason_test') {
+    const { phase2ConflictReasonQuestions, phase2ConflictReasonResults } = await import('@/lib/phase2_conflict_reason_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_conflict_reason_test',
       title: {
@@ -14169,6 +13832,7 @@ export default async function TestPage({ params }: Props) {
 
   // 내가 환생한다면 어떤 동물일까? 테스트
   if (slug === 'phase2_reincarnation_animal_test') {
+    const { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } = await import('@/lib/phase2_reincarnation_animal_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_reincarnation_animal_test',
       title: {
@@ -14229,6 +13893,7 @@ export default async function TestPage({ params }: Props) {
 
   // 내가 흑화하면? 숨겨진 본성 테스트
   if (slug === 'phase2_dark_side_test') {
+    const { phase2DarkSideQuestions, phase2DarkSideResults } = await import('@/lib/phase2_dark_side_data');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_dark_side_test',
       title: {
@@ -14282,6 +13947,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'soul-drink-test') {
+    const { soulDrinkQuestions, soulDrinkResults } = await import('@/lib/soulDrinkData');
     const test = await getTestBySlug(slug) || {
       slug: 'soul-drink-test',
       title: {
@@ -14335,6 +14001,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_superpower-test') {
+    const { superpowerQuestions, superpowerResults } = await import('@/lib/superpowerData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_superpower-test',
       title: {
@@ -14388,6 +14055,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_travel-style-test') {
+    const { travelStyleQuestions, travelStyleResults } = await import('@/lib/travelStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_travel-style-test',
       title: {
@@ -14441,6 +14109,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_perfectionism-test') {
+    const { phase2PerfectionismQuestions, phase2PerfectionismResults } = await import('@/lib/phase2PerfectionismData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_perfectionism-test',
       title: {
@@ -14494,6 +14163,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_friendship-style-test') {
+    const { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } = await import('@/lib/phase2FriendshipStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_friendship-style-test',
       title: {
@@ -14547,6 +14217,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_relationship-cut-test') {
+    const { phase2RelationshipCutQuestions, phase2RelationshipCutResults } = await import('@/lib/phase2RelationshipCutData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_relationship-cut-test',
       title: {
@@ -14600,6 +14271,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_self-esteem-test') {
+    const { phase2SelfEsteemQuestions, phase2SelfEsteemResults } = await import('@/lib/phase2SelfEsteemData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_self-esteem-test',
       title: {
@@ -14653,6 +14325,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_mental-age-test') {
+    const { phase2MentalAgeQuestions, phase2MentalAgeResults } = await import('@/lib/phase2MentalAgeData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_mental-age-test',
       title: {
@@ -14706,6 +14379,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_guilt-level-test') {
+    const { phase2GuiltLevelQuestions, phase2GuiltLevelResults } = await import('@/lib/phase2GuiltLevelData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_guilt-level-test',
       title: {
@@ -14759,6 +14433,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'phase2_creativity-level-test') {
+    const { phase2CreativityLevelQuestions, phase2CreativityLevelResults } = await import('@/lib/phase2CreativityLevelData');
     const test = await getTestBySlug(slug) || {
       slug: 'phase2_creativity-level-test',
       title: {
@@ -14812,6 +14487,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'conflict-style-test') {
+    const { conflictStyleQuestions, conflictStyleResults } = await import('@/lib/conflictStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'conflict-style-test',
       title: {
@@ -14866,6 +14542,7 @@ export default async function TestPage({ params }: Props) {
   }
 
   if (slug === 'conversation-style-test') {
+    const { conversationStyleQuestions, conversationStyleResults } = await import('@/lib/conversationStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'conversation-style-test',
       title: {
@@ -14921,6 +14598,7 @@ export default async function TestPage({ params }: Props) {
 
   // 나의 무의식 플러팅 스타일 테스트
   if (slug === 'flirting-style-test') {
+    const { flirtingStyleQuestions, flirtingStyleResults } = await import('@/lib/flirtingStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'flirting-style-test',
       title: {
@@ -14976,6 +14654,7 @@ export default async function TestPage({ params }: Props) {
 
   // 나의 '리더십' 스타일 테스트
   if (slug === 'leadership-style-test') {
+    const { leadershipStyleQuestions, leadershipStyleResults } = await import('@/lib/leadershipStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'leadership-style-test',
       title: {
@@ -15031,6 +14710,7 @@ export default async function TestPage({ params }: Props) {
 
   // 나는 '과거' 지향 vs '미래' 지향? (시간 관점 테스트)
   if (slug === 'time-perspective-test') {
+    const { timePerspectiveQuestions, timePerspectiveResults } = await import('@/lib/timePerspectiveData');
     const test = await getTestBySlug(slug) || {
       slug: 'time-perspective-test',
       title: {
@@ -15084,6 +14764,7 @@ export default async function TestPage({ params }: Props) {
 
   // 나의 1순위 사랑의 언어는? (연애 성향 진단)
   if (slug === 'love-language-test') {
+    const { loveLanguageQuestions, loveLanguageResults } = await import('@/lib/loveLanguageData');
     const test = await getTestBySlug(slug) || {
       slug: 'love-language-test',
       title: {
@@ -15137,6 +14818,7 @@ export default async function TestPage({ params }: Props) {
 
   // 나를 지키는 '방어기제' 테스트
   if (slug === 'defense-mechanism-test') {
+    const { defenseMechanismQuestions, defenseMechanismResults } = await import('@/lib/defenseMechanismData');
     const test = await getTestBySlug(slug) || {
       slug: 'defense-mechanism-test',
       title: {
@@ -15190,6 +14872,7 @@ export default async function TestPage({ params }: Props) {
 
   // K-POP 아이돌 데뷔? 내 포지션 찾기 테스트
   if (slug === 'kpop-debut-test') {
+    const { kpopDebutQuestions, kpopDebutResults } = await import('@/lib/kpopDebutData');
     const test = await getTestBySlug(slug) || {
       slug: 'kpop-debut-test',
       title: {
@@ -15243,6 +14926,7 @@ export default async function TestPage({ params }: Props) {
 
   // 나의 인생 우선순위 찾기 테스트
   if (slug === 'life-priorities') {
+    const { lifePrioritiesQuestions, lifePrioritiesResults } = await import('@/lib/lifePrioritiesData');
     const test = await getTestBySlug(slug) || {
       slug: 'life-priorities',
       title: {
@@ -15296,6 +14980,7 @@ export default async function TestPage({ params }: Props) {
 
   // 모험가 vs 신중파 테스트
   if (slug === 'adventurer-vs-cautious') {
+    const { adventurerQuestions, adventurerResults } = await import('@/lib/adventurerData');
     const test = await getTestBySlug(slug) || {
       slug: 'adventurer-vs-cautious',
       title: {
@@ -15349,6 +15034,7 @@ export default async function TestPage({ params }: Props) {
 
   // 소통 스타일 테스트
   if (slug === 'communication-style-test') {
+    const { communicationStyleQuestions, communicationStyleResults } = await import('@/lib/communicationStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'communication-style-test',
       title: {
@@ -15402,6 +15088,7 @@ export default async function TestPage({ params }: Props) {
 
   // 솔직 vs 절제 테스트
   if (slug === 'honesty-vs-restraint-test') {
+    const { honestyVsRestraintQuestions, honestyVsRestraintResults } = await import('@/lib/honestyVsRestraintData');
     const test = await getTestBySlug(slug) || {
       slug: 'honesty-vs-restraint-test',
       title: {
@@ -15455,6 +15142,7 @@ export default async function TestPage({ params }: Props) {
 
   // 독립 vs 의존 테스트
   if (slug === 'independence-vs-dependence-test') {
+    const { independenceQuestions, independenceResults } = await import('@/lib/independenceData');
     const test = await getTestBySlug(slug) || {
       slug: 'independence-vs-dependence-test',
       title: {
@@ -15508,6 +15196,7 @@ export default async function TestPage({ params }: Props) {
 
   // 의사결정 속도 테스트
   if (slug === 'decision-speed-test') {
+    const { decisionSpeedQuestions, decisionSpeedResults } = await import('@/lib/decisionSpeedData');
     const test = await getTestBySlug(slug) || {
       slug: 'decision-speed-test',
       title: {
@@ -15561,6 +15250,7 @@ export default async function TestPage({ params }: Props) {
 
   // 승부욕 강도 테스트
   if (slug === 'competitiveness-test') {
+    const { competitivenessQuestions, competitivenessResults } = await import('@/lib/competitivenessData');
     const test = await getTestBySlug(slug) || {
       slug: 'competitiveness-test',
       title: {
@@ -15614,6 +15304,7 @@ export default async function TestPage({ params }: Props) {
 
   // 반응 스타일 테스트
   if (slug === 'reaction-style-test') {
+    const { reactionStyleQuestions, reactionStyleResults } = await import('@/lib/reactionStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'reaction-style-test',
       title: {
@@ -15667,6 +15358,7 @@ export default async function TestPage({ params }: Props) {
 
   // 질투심 테스트
   if (slug === 'jealousy-test') {
+    const { jealousyQuestions, jealousyResults } = await import('@/lib/jealousyData');
     const test = await getTestBySlug(slug) || {
       slug: 'jealousy-test',
       title: {
@@ -15720,6 +15412,7 @@ export default async function TestPage({ params }: Props) {
 
   // 집중력 테스트
   if (slug === 'concentration-level-test') {
+    const { concentrationQuestions, concentrationResults } = await import('@/lib/concentrationData');
     const test = await getTestBySlug(slug) || {
       slug: 'concentration-level-test',
       title: {
@@ -15842,6 +15535,7 @@ export default async function TestPage({ params }: Props) {
 
   // MBTI 정확한 테스트
   if (slug === 'mbti-accurate-test') {
+    const { mbtiAccurateQuestions, mbtiAccurateResults } = await import('@/lib/mbtiAccurateData');
     const test = await getTestBySlug(slug) || {
       slug: 'mbti-accurate-test',
       title: {
@@ -15982,6 +15676,7 @@ export default async function TestPage({ params }: Props) {
 
   // 실제 IQ 테스트
   if (slug === 'real-iq') {
+    const { realIQQuestions, realIQResults } = await import('@/lib/realIQData');
     const test = await getTestBySlug(slug) || {
       slug: 'real-iq',
       title: {
@@ -16037,6 +15732,7 @@ export default async function TestPage({ params }: Props) {
 
   // 초고난도 퀴즈 테스트
   if (slug === 'extreme-quiz') {
+    const { extremeQuizQuestions, extremeQuizResults } = await import('@/lib/extremeQuizData');
     const test = await getTestBySlug(slug) || {
       slug: 'extreme-quiz',
       title: {
@@ -16092,6 +15788,7 @@ export default async function TestPage({ params }: Props) {
 
   // 멘사 극한 도전 퀴즈 테스트
   if (slug === 'mensa-extreme') {
+    const { mensaExtremeQuestions, mensaExtremeResults } = await import('@/lib/mensaExtremeData');
     const test = await getTestBySlug(slug) || {
       slug: 'mensa-extreme',
       title: {
@@ -16518,6 +16215,7 @@ export default async function TestPage({ params }: Props) {
 
   // 두뇌 퀴즈 테스트
   if (slug === 'brain-quiz-test') {
+    const { brainQuizQuestions, brainQuizResults } = await import('@/lib/brainQuizData');
     const test = await getTestBySlug(slug) || {
       slug: 'brain-quiz-test',
       title: {
@@ -16609,6 +16307,7 @@ export default async function TestPage({ params }: Props) {
 
   // 찰나의 순간 의사결정 테스트
   if (slug === 'quick-decision-test') {
+    const { quickDecisionQuestions, quickDecisionResults } = await import('@/lib/quickDecisionData');
     const test = await getTestBySlug(slug) || {
       slug: 'quick-decision-test',
       title: {
@@ -16663,6 +16362,7 @@ export default async function TestPage({ params }: Props) {
 
   // 데이트 스타일 테스트
   if (slug === 'my-dating-style') {
+    const { datingStyleQuestions, datingStyleResults } = await import('@/lib/datingStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'my-dating-style',
       title: {
@@ -16716,6 +16416,7 @@ export default async function TestPage({ params }: Props) {
 
   // 계획형 vs 즉흥형 테스트
   if (slug === 'planner-vs-spontaneous-test') {
+    const { plannerVsSpontaneousQuestions, plannerVsSpontaneousResults } = await import('@/lib/plannerVsSpontaneousData');
     const test = await getTestBySlug(slug) || {
       slug: 'planner-vs-spontaneous-test',
       title: {
@@ -16769,6 +16470,7 @@ export default async function TestPage({ params }: Props) {
 
   // 반응 스타일 테스트
   if (slug === 'reaction-style-test') {
+    const { reactionStyleQuestions, reactionStyleResults } = await import('@/lib/reactionStyleData');
     const test = await getTestBySlug(slug) || {
       slug: 'reaction-style-test',
       title: {
@@ -16964,221 +16666,308 @@ export default async function TestPage({ params }: Props) {
   // 로컬에서 테스트 데이터 가져오기
   let testData;
   if (slug === 'humor-code-test') {
+    const { brainQuestions, brainResults } = await import('@/lib/brainData');
+    const { careerQuestions, careerResults } = await import('@/lib/careerData');
+    const { concentrationQuestions, concentrationResults } = await import('@/lib/concentrationData');
+    const { conflictStyleQuestions, conflictStyleResults } = await import('@/lib/conflictStyleData');
+    const { conversationStyleQuestions, conversationStyleResults } = await import('@/lib/conversationStyleData');
+    const { defenseMechanismQuestions, defenseMechanismResults } = await import('@/lib/defenseMechanismData');
+    const { empathyQuestions, empathyResults } = await import('@/lib/empathyData');
+    const { empathyFQuestions, empathyFResults } = await import('@/lib/empathyFData');
+    const { extremeQuizQuestions, extremeQuizResults } = await import('@/lib/extremeQuizData');
+    const { flirtingStyleQuestions, flirtingStyleResults } = await import('@/lib/flirtingStyleData');
+    const { honestyQuestions, honestyResults } = await import('@/lib/honestyData');
+    const { humorCodeQuestions, humorCodeResults } = await import('@/lib/humorCodeData');
+    const { investmentStyleQuestions, investmentStyleResults } = await import('@/lib/investmentStyleData');
+    const { jobStrengthQuestions, jobStrengthResults } = await import('@/lib/jobStrengthData');
+    const { kpopDebutQuestions, kpopDebutResults } = await import('@/lib/kpopDebutData');
+    const { kpopExamQuestions, kpopExamResults } = await import('@/lib/kpopExamData');
+    const { lifePrioritiesQuestions, lifePrioritiesResults } = await import('@/lib/lifePrioritiesData');
+    const { loveLanguageQuestions, loveLanguageResults } = await import('@/lib/loveLanguageData');
+    const { mensaExtremeQuestions, mensaExtremeResults } = await import('@/lib/mensaExtremeData');
+    const { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } = await import('@/lib/phase2FriendshipStyleData');
+    const { phase2GuiltLevelQuestions, phase2GuiltLevelResults } = await import('@/lib/phase2GuiltLevelData');
+    const { phase2MentalAgeQuestions, phase2MentalAgeResults } = await import('@/lib/phase2MentalAgeData');
+    const { phase2PerfectionismQuestions, phase2PerfectionismResults } = await import('@/lib/phase2PerfectionismData');
+    const { phase2RelationshipCutQuestions, phase2RelationshipCutResults } = await import('@/lib/phase2RelationshipCutData');
+    const { phase2SelfEsteemQuestions, phase2SelfEsteemResults } = await import('@/lib/phase2SelfEsteemData');
+    const { phase2AreYouTQuestions, phase2AreYouTResults } = await import('@/lib/phase2_are_you_T_data');
+    const { phase2CapitalQuizQuestions, phase2CapitalQuizResults } = await import('@/lib/phase2_capital_quiz_data');
+    const { phase2DarkSideQuestions, phase2DarkSideResults } = await import('@/lib/phase2_dark_side_data');
+    const { phase2DatingMbtiQuestions, phase2DatingMbtiResults } = await import('@/lib/phase2_dating_mbti_data');
+    const { phase2FactBomberQuestions, phase2FactBomberResults } = await import('@/lib/phase2_fact_bomber_data');
+    const { phase2InventionQuizQuestions, phase2InventionQuizResults } = await import('@/lib/phase2_invention_quiz_data');
+    const { phase2ItTechQuizQuestions, phase2ItTechQuizResults } = await import('@/lib/phase2_it_tech_quiz_data');
+    const { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } = await import('@/lib/phase2_literature_quiz_data');
+    const { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } = await import('@/lib/phase2_reincarnation_animal_data');
+    const { phase3CareerAptitudeAi16typesQuestions, phase3CareerAptitudeAi16typesResults } = await import('@/lib/phase3CareerAptitudeAi16typesData');
+    const { phase3RealReasonForBreakupQuestions, phase3RealReasonForBreakupResults } = await import('@/lib/phase3RealReasonForBreakupData');
+    const { soulDrinkQuestions, soulDrinkResults } = await import('@/lib/soulDrinkData');
+    const { stressReliefQuestions, stressReliefResults } = await import('@/lib/stressReliefData');
+    const { superpowerQuestions, superpowerResults } = await import('@/lib/superpowerData');
+    const { timeEfficiencyQuestions, timeEfficiencyResults } = await import('@/lib/timeEfficiencyData');
+    const { timePerspectiveQuestions, timePerspectiveResults } = await import('@/lib/timePerspectiveData');
+    const { travelStyleQuestions, travelStyleResults } = await import('@/lib/travelStyleData');
+    const { trustQuestions, trustResults } = await import('@/lib/trustData');
+    const { workValuesQuestions, workValuesResults } = await import('@/lib/workValuesData');
     testData = {
       questions: humorCodeQuestions,
       results: humorCodeResults
     };
   } else if (slug === 'trustworthiness-test') {
+    const { trustQuestions, trustResults } = await import('@/lib/trustData');
     testData = {
       questions: trustQuestions,
       results: trustResults
     };
   } else if (slug === 'kpop-debut-test') {
+    const { kpopDebutQuestions, kpopDebutResults } = await import('@/lib/kpopDebutData');
     testData = {
       questions: kpopDebutQuestions,
       results: kpopDebutResults
     };
   } else if (slug === 'kpop-exam-test') {
+    const { kpopExamQuestions, kpopExamResults } = await import('@/lib/kpopExamData');
     testData = {
       questions: kpopExamQuestions,
       results: kpopExamResults
     };
   } else if (slug === 'empathy-f-test') {
+    const { empathyFQuestions, empathyFResults } = await import('@/lib/empathyFData');
     testData = {
       questions: empathyFQuestions,
       results: empathyFResults
     };
   } else if (slug === 'phase3-real-reason-for-breakup') {
+    const { phase3RealReasonForBreakupQuestions, phase3RealReasonForBreakupResults } = await import('@/lib/phase3RealReasonForBreakupData');
     testData = {
       questions: phase3RealReasonForBreakupQuestions,
       results: phase3RealReasonForBreakupResults,
     };
   } else if (slug === 'phase3-career-aptitude-ai-16types') {
+    const { phase3CareerAptitudeAi16typesQuestions, phase3CareerAptitudeAi16typesResults } = await import('@/lib/phase3CareerAptitudeAi16typesData');
     testData = {
       questions: phase3CareerAptitudeAi16typesQuestions,
       results: phase3CareerAptitudeAi16typesResults,
     };
   } else if (slug === 'phase2_fact_bomber_test') {
+    const { phase2FactBomberQuestions, phase2FactBomberResults } = await import('@/lib/phase2_fact_bomber_data');
     testData = {
       questions: phase2FactBomberQuestions,
       results: phase2FactBomberResults
     };
   } else if (slug === 'phase2_dating_mbti_test') {
+    const { phase2DatingMbtiQuestions, phase2DatingMbtiResults } = await import('@/lib/phase2_dating_mbti_data');
     testData = {
       questions: phase2DatingMbtiQuestions,
       results: phase2DatingMbtiResults
     };
   } else if (slug === 'soul-drink-test') {
+    const { soulDrinkQuestions, soulDrinkResults } = await import('@/lib/soulDrinkData');
     testData = {
       questions: soulDrinkQuestions,
       results: soulDrinkResults
     };
   } else if (slug === 'phase2_superpower-test') {
+    const { superpowerQuestions, superpowerResults } = await import('@/lib/superpowerData');
     testData = {
       questions: superpowerQuestions,
       results: superpowerResults
     };
   } else if (slug === 'phase2_travel-style-test') {
+    const { travelStyleQuestions, travelStyleResults } = await import('@/lib/travelStyleData');
     testData = {
       questions: travelStyleQuestions,
       results: travelStyleResults
     };
   } else if (slug === 'phase2_perfectionism-test') {
+    const { phase2PerfectionismQuestions, phase2PerfectionismResults } = await import('@/lib/phase2PerfectionismData');
     testData = {
       questions: phase2PerfectionismQuestions,
       results: phase2PerfectionismResults
     };
   } else if (slug === 'phase2_friendship-style-test') {
+    const { phase2FriendshipStyleQuestions, phase2FriendshipStyleResults } = await import('@/lib/phase2FriendshipStyleData');
     testData = {
       questions: phase2FriendshipStyleQuestions,
       results: phase2FriendshipStyleResults
     };
   } else if (slug === 'phase2_relationship-cut-test') {
+    const { phase2RelationshipCutQuestions, phase2RelationshipCutResults } = await import('@/lib/phase2RelationshipCutData');
     testData = {
       questions: phase2RelationshipCutQuestions,
       results: phase2RelationshipCutResults
     };
   } else if (slug === 'phase2_self-esteem-test') {
+    const { phase2SelfEsteemQuestions, phase2SelfEsteemResults } = await import('@/lib/phase2SelfEsteemData');
     testData = {
       questions: phase2SelfEsteemQuestions,
       results: phase2SelfEsteemResults
     };
   } else if (slug === 'phase2_mental-age-test') {
+    const { phase2MentalAgeQuestions, phase2MentalAgeResults } = await import('@/lib/phase2MentalAgeData');
     testData = {
       questions: phase2MentalAgeQuestions,
       results: phase2MentalAgeResults
     };
   } else if (slug === 'phase2_guilt-level-test') {
+    const { phase2GuiltLevelQuestions, phase2GuiltLevelResults } = await import('@/lib/phase2GuiltLevelData');
     testData = {
       questions: phase2GuiltLevelQuestions,
       results: phase2GuiltLevelResults
     };
   } else if (slug === 'phase2_reincarnation_animal_test') {
+    const { phase2ReincarnationAnimalQuestions, phase2ReincarnationAnimalResults } = await import('@/lib/phase2_reincarnation_animal_data');
     testData = {
       questions: phase2ReincarnationAnimalQuestions,
       results: phase2ReincarnationAnimalResults
     };
   } else if (slug === 'phase2_dark_side_test') {
+    const { phase2DarkSideQuestions, phase2DarkSideResults } = await import('@/lib/phase2_dark_side_data');
     testData = {
       questions: phase2DarkSideQuestions,
       results: phase2DarkSideResults
     };
   } else if (slug === 'phase2_are_you_T_test') {
+    const { phase2AreYouTQuestions, phase2AreYouTResults } = await import('@/lib/phase2_are_you_T_data');
     testData = {
       questions: phase2AreYouTQuestions,
       results: phase2AreYouTResults
     };
   } else if (slug === 'phase2_capital_quiz_test') {
+    const { phase2CapitalQuizQuestions, phase2CapitalQuizResults } = await import('@/lib/phase2_capital_quiz_data');
     testData = {
       questions: phase2CapitalQuizQuestions,
       results: phase2CapitalQuizResults
     };
   } else if (slug === 'phase2_it_tech_quiz_test') {
+    const { phase2ItTechQuizQuestions, phase2ItTechQuizResults } = await import('@/lib/phase2_it_tech_quiz_data');
     testData = {
       questions: phase2ItTechQuizQuestions,
       results: phase2ItTechQuizResults
     };
   } else if (slug === 'phase2_literature_quiz_test') {
+    const { phase2LiteratureQuizQuestions, phase2LiteratureQuizResults } = await import('@/lib/phase2_literature_quiz_data');
     testData = {
       questions: phase2LiteratureQuizQuestions,
       results: phase2LiteratureQuizResults
     };
   } else if (slug === 'phase2_invention_quiz_test') {
+    const { phase2InventionQuizQuestions, phase2InventionQuizResults } = await import('@/lib/phase2_invention_quiz_data');
     testData = {
       questions: phase2InventionQuizQuestions,
       results: phase2InventionQuizResults
     };
   } else if (slug === 'conflict-style-test') {
+    const { conflictStyleQuestions, conflictStyleResults } = await import('@/lib/conflictStyleData');
     testData = {
       questions: conflictStyleQuestions,
       results: conflictStyleResults
     };
   } else if (slug === 'conversation-style-test') {
+    const { conversationStyleQuestions, conversationStyleResults } = await import('@/lib/conversationStyleData');
     testData = {
       questions: conversationStyleQuestions,
       results: conversationStyleResults
     };
   } else if (slug === 'flirting-style-test') {
+    const { flirtingStyleQuestions, flirtingStyleResults } = await import('@/lib/flirtingStyleData');
     testData = {
       questions: flirtingStyleQuestions,
       results: flirtingStyleResults
     };
   } else if (slug === 'time-perspective-test') {
+    const { timePerspectiveQuestions, timePerspectiveResults } = await import('@/lib/timePerspectiveData');
     testData = {
       questions: timePerspectiveQuestions,
       results: timePerspectiveResults
     };
   } else if (slug === 'love-language-test') {
+    const { loveLanguageQuestions, loveLanguageResults } = await import('@/lib/loveLanguageData');
     testData = {
       questions: loveLanguageQuestions,
       results: loveLanguageResults
     };
   } else if (slug === 'defense-mechanism-test') {
+    const { defenseMechanismQuestions, defenseMechanismResults } = await import('@/lib/defenseMechanismData');
     testData = {
       questions: defenseMechanismQuestions,
       results: defenseMechanismResults
     };
   } else if (slug === 'life-priorities-test') {
+    const { lifePrioritiesQuestions, lifePrioritiesResults } = await import('@/lib/lifePrioritiesData');
     testData = {
       questions: lifePrioritiesQuestions,
       results: lifePrioritiesResults
     };
   } else if (slug === 'empathy-level-test') {
+    const { empathyQuestions, empathyResults } = await import('@/lib/empathyData');
     testData = {
       questions: empathyQuestions,
       results: empathyResults
     };
   } else if (slug === 'honesty-vs-consideration-test') {
+    const { honestyQuestions, honestyResults } = await import('@/lib/honestyData');
     testData = {
       questions: honestyQuestions,
       results: honestyResults
     };
   } else if (slug === 'future-career-match-test') {
+    const { careerQuestions, careerResults } = await import('@/lib/careerData');
     testData = {
       questions: careerQuestions,
       results: careerResults
     };
   } else if (slug === 'job-strength-test') {
+    const { jobStrengthQuestions, jobStrengthResults } = await import('@/lib/jobStrengthData');
     testData = {
       questions: jobStrengthQuestions,
       results: jobStrengthResults
     };
   } else if (slug === 'work-values-test') {
+    const { workValuesQuestions, workValuesResults } = await import('@/lib/workValuesData');
     testData = {
       questions: workValuesQuestions,
       results: workValuesResults
     };
   } else if (slug === 'stress-relief-test') {
+    const { stressReliefQuestions, stressReliefResults } = await import('@/lib/stressReliefData');
     testData = {
       questions: stressReliefQuestions,
       results: stressReliefResults
     };
   } else if (slug === 'investment-style-test') {
+    const { investmentStyleQuestions, investmentStyleResults } = await import('@/lib/investmentStyleData');
     testData = {
       questions: investmentStyleQuestions,
       results: investmentStyleResults
     };
   } else if (slug === 'time-efficiency-test') {
+    const { timeEfficiencyQuestions, timeEfficiencyResults } = await import('@/lib/timeEfficiencyData');
     testData = {
       questions: timeEfficiencyQuestions,
       results: timeEfficiencyResults
     };
   } else if (slug === 'left-right-brain-test') {
+    const { brainQuestions, brainResults } = await import('@/lib/brainData');
     testData = {
       questions: brainQuestions,
       results: brainResults
     };
   } else if (slug === 'concentration-level-test') {
+    const { concentrationQuestions, concentrationResults } = await import('@/lib/concentrationData');
     testData = {
       questions: concentrationQuestions,
       results: concentrationResults
     };
   } else if (slug === 'extreme-quiz') {
+    const { extremeQuizQuestions, extremeQuizResults } = await import('@/lib/extremeQuizData');
     testData = {
       questions: extremeQuizQuestions,
       results: extremeQuizResults
     };
   } else if (slug === 'mensa-extreme') {
+    const { mensaExtremeQuestions, mensaExtremeResults } = await import('@/lib/mensaExtremeData');
     testData = {
       questions: mensaExtremeQuestions,
       results: mensaExtremeResults
