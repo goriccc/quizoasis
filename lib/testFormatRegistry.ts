@@ -155,6 +155,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-fandom-style': 'scenario_4',
   'phase3-webtoon-protagonist': 'scenario_4',
   'phase3-alone-time-type': 'scenario_4',
+  'phase3-late-night-type': 'scenario_4',
   'phase3-kpop-history-master': 'quiz',
   'phase3-loneliness-concentration': 'personality_4',
   'phase3-love-behavior-type': 'scenario_2',

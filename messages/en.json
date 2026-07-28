@@ -10699,6 +10699,75 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3LateNightTypeTest": {
+    "startMessage": {
+      "line1": "When you're alone at dawn, the real you shows up.",
+      "line2": "You didn't notice during the day, but once night falls and everyone sleeps and you're completely alone—that moment matters.",
+      "line3": "Some people's thoughts explode when they close their eyes, some turn on a playlist and sink into feelings, and for some 2 AM is golden focus time.",
+      "line4": "Your daytime self adjusts to situations, but your dawn self doesn't have to. That's why dawn is real.",
+      "line5": "Through 12 questions, find your late-night vibe type and the true inner energy inside it.",
+      "note": "※ Think of a night when nobody is around and you're completely alone, then answer as honestly as possible."
+    },
+    "ui": {
+      "startTest": "Find My Late-Night Vibe Type 🌙 Start Honestly",
+      "shareWithFriends": "Try with Friends",
+      "shareResultWithFriends": "Share Results with Friends",
+      "shareResult": "Share Result",
+      "retakeTest": "Retake Test",
+      "otherTests": "See Other Tests",
+      "goToTest": "Take the Test",
+      "adsenseTitle": "AdSense Ad Area (My Late-Night Vibe Type)",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar Tests",
+      "lateNightType": "Late-Night Vibe Type",
+      "lateNightKeywords": "Dawn Keywords",
+      "actualBehavior": "What You Actually Do at Dawn",
+      "strength": "Strengths of This Type",
+      "characteristic": "Characteristics of This Type",
+      "dawnBgm": "Dawn BGM for This Type",
+      "whatTheyNeed": "What This Type Needs",
+      "oneLiner": "One-Liner Review",
+      "certificationPhrase": "Certification Phrase",
+      "currentDawnMoment": "Me watching this at {hour} AM"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "My late-night vibe: Bed-Sinking Emotional Type 🌑 Thoughts explode the moment I lie down... went to sleep thinking and woke up at dawn, so true → What do you do at dawn? What time is it?",
+      "type2": "My late-night vibe: Music Emotional Type 🎵 Can't have dawn without a playlist... taking this test with earphones on lol → What do you do at dawn?",
+      "type3": "My late-night vibe: Content Immersion Type 📺 'Just one episode' turned into 3 AM... so true → If you're watching this at dawn too, try it",
+      "type4": "My late-night vibe: Reflective Writing Type 🖊️ Writes diary and sorts thoughts at dawn... dawn writing is the most honest, so true → What do you do at dawn?",
+      "type5": "My late-night vibe: Night-Shift Worker Type 💻 Dawn is golden focus time... stuff that won't work in daylight works at dawn, so true → What do you do at dawn? What time is it?",
+      "type6": "My late-night vibe: Fully Awake Dawn Master Type 🌟 Night is my day... sharpest at 4 AM lol → Everyone watching this at dawn, try it",
+      "startDefault": "My Late-Night Vibe Type 🌙 Check your real self at dawn",
+      "startKakao": "My Late-Night Vibe Type 🌙 Check your real self at dawn",
+      "startWechat": "My Late-Night Vibe Type 🌙 Check your real self at dawn",
+      "startWhatsapp": "My Late-Night Vibe Type 🌙 Check your real self at dawn",
+      "startTelegram": "My Late-Night Vibe Type 🌙 Check your real self at dawn",
+      "startLine": "My Late-Night Vibe Type 🌙 Check your real self at dawn"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3KpopHistoryMasterTest": {
     "startMessage": {
       "line1": "How much K-Pop history do you know?",

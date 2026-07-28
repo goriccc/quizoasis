@@ -196,6 +196,10 @@ import {
   phase3AloneTimeTypeResults,
 } from '@/lib/phase3AloneTimeTypeData';
 import {
+  phase3LateNightTypeQuestions,
+  phase3LateNightTypeResults,
+} from '@/lib/phase3LateNightTypeData';
+import {
   phase3KpopHistoryMasterQuestions,
   phase3KpopHistoryMasterResults,
 } from '@/lib/phase3KpopHistoryMasterData';
@@ -711,6 +715,10 @@ const Phase3WebtoonProtagonistTestClient = dynamic(
 );
 const Phase3AloneTimeTypeTestClient = dynamic(
   () => import('@/components/Phase3AloneTimeTypeTestClient'),
+  { ssr: false }
+);
+const Phase3LateNightTypeTestClient = dynamic(
+  () => import('@/components/Phase3LateNightTypeTestClient'),
   { ssr: false }
 );
 const Phase3KpopHistoryMasterTestClient = dynamic(
@@ -2321,6 +2329,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['獨處時間', '內向外向', '內向', '日常', '自我充電'],
         vi: ['thời gian một mình', 'hướng nội ngoại', 'hướng nội', 'đời sống', 'nạp năng lượng'],
         id: ['waktu sendiri', 'introvert ekstrovert', 'introvert', 'keseharian', 'isi ulang energi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-late-night-type') {
+    test = {
+      slug: 'phase3-late-night-type',
+      title: {
+        ko: '나의 새벽 감성 유형',
+        en: 'My Late-Night Vibe Type',
+        ja: '私の夜明け前センシタイプ',
+        'zh-CN': '我的凌晨感性类型',
+        'zh-TW': '我的凌晨感性類型',
+        vi: 'Kiểu cảm xúc đêm khuya của tôi',
+        id: 'Tipe Vibe Tengah Malam-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 새벽 감성 유형과 그 안에 담긴 진짜 내면 에너지를 찾아드립니다.',
+        en: 'Find your late-night vibe type and the true inner energy within it through 12 questions.',
+        ja: '12の質問で、あなたの夜明け前センシタイプとその中にある本当の内面エネルギーを見つけます。',
+        'zh-CN': '通过12个问题，找出你的凌晨感性类型及其中的真实内在能量。',
+        'zh-TW': '透過12個問題，找出你的凌晨感性類型及其中的真實內在能量。',
+        vi: 'Tìm kiểu cảm xúc đêm khuya và năng lượng nội tâm thật sự qua 12 câu hỏi.',
+        id: 'Temukan tipe vibe tengah malammu dan energi batin sejati di dalamnya lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_late_night_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['새벽감성', '야행성', '심야감성', '혼자시간', '새벽루틴'],
+        en: ['late night vibe', 'night owl', 'midnight mood', 'solo time', 'dawn routine'],
+        ja: ['夜明け前センシ', '夜型', '深夜の感性', '一人時間', '夜更かしルーティン'],
+        'zh-CN': ['凌晨感性', '夜猫子', '深夜情绪', '独处时间', '凌晨routine'],
+        'zh-TW': ['凌晨感性', '夜貓子', '深夜情緒', '獨處時間', '凌晨routine'],
+        vi: ['cảm xúc đêm khuya', 'cú đêm', 'tâm trạng đêm', 'thời gian một mình', 'routine đêm khuya'],
+        id: ['vibe tengah malam', 'night owl', 'mood midnight', 'waktu sendiri', 'rutinitas dini hari'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8309,6 +8354,61 @@ export default async function TestPage({ params }: Props) {
           questions={phase3AloneTimeTypeQuestions}
           results={phase3AloneTimeTypeResults}
           questionCount={phase3AloneTimeTypeQuestions.length}
+          thumbnail={test.thumbnail}
+          playCount={test.play_count}
+        />
+      </>
+    );
+  }
+
+    if (slug === 'phase3-late-night-type') {
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-late-night-type',
+      title: {
+        ko: '나의 새벽 감성 유형',
+        en: 'My Late-Night Vibe Type',
+        ja: '私の夜明け前センシタイプ',
+        'zh-CN': '我的凌晨感性类型',
+        'zh-TW': '我的凌晨感性類型',
+        vi: 'Kiểu cảm xúc đêm khuya của tôi',
+        id: 'Tipe Vibe Tengah Malam-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 새벽 감성 유형과 그 안에 담긴 진짜 내면 에너지를 찾아드립니다.',
+        en: 'Find your late-night vibe type and the true inner energy within it through 12 questions.',
+        ja: '12の質問で、あなたの夜明け前センシタイプとその中にある本当の内面エネルギーを見つけます。',
+        'zh-CN': '通过12个问题，找出你的凌晨感性类型及其中的真实内在能量。',
+        'zh-TW': '透過12個問題，找出你的凌晨感性類型及其中的真實內在能量。',
+        vi: 'Tìm kiểu cảm xúc đêm khuya và năng lượng nội tâm thật sự qua 12 câu hỏi.',
+        id: 'Temukan tipe vibe tengah malammu dan energi batin sejati di dalamnya lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_late_night_type.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['새벽감성', '야행성', '심야감성', '혼자시간', '새벽루틴'],
+        en: ['late night vibe', 'night owl', 'midnight mood', 'solo time', 'dawn routine'],
+        ja: ['夜明け前センシ', '夜型', '深夜の感性', '一人時間', '夜更かしルーティン'],
+        'zh-CN': ['凌晨感性', '夜猫子', '深夜情绪', '独处时间', '凌晨routine'],
+        'zh-TW': ['凌晨感性', '夜貓子', '深夜情緒', '獨處時間', '凌晨routine'],
+        vi: ['cảm xúc đêm khuya', 'cú đêm', 'tâm trạng đêm', 'thời gian một mình', 'routine đêm khuya'],
+        id: ['vibe tengah malam', 'night owl', 'mood midnight', 'waktu sendiri', 'rutinitas dini hari'],
+      },
+    };
+
+    return (
+      <>
+        <Phase3LateNightTypeTestClient
+          locale={locale}
+          slug={test.slug}
+          title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+          description={
+            typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+          }
+          questions={phase3LateNightTypeQuestions}
+          results={phase3LateNightTypeResults}
+          questionCount={phase3LateNightTypeQuestions.length}
           thumbnail={test.thumbnail}
           playCount={test.play_count}
         />

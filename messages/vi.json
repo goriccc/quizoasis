@@ -10690,6 +10690,75 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3LateNightTypeTest": {
+    "startMessage": {
+      "line1": "Khi bạn ở một mình lúc rạng sáng, con người thật mới lộ ra.",
+      "line2": "Ban ngày không để ý, nhưng đêm khuya mọi người ngủ hết và bạn hoàn toàn một mình—khoảnh khắc đó.",
+      "line3": "Có người nhắm mắt là suy nghĩ bùng nổ, có người bật playlist chìm vào cảm xúc, có người 2 giờ sáng là thời gian vàng tập trung.",
+      "line4": "Bản thân ban ngày phải hòa hợp hoàn cảnh, nhưng bản thân rạng sáng thì không cần. Vì vậy rạng sáng mới là thật.",
+      "line5": "Qua 12 câu hỏi, tìm kiểu cảm xúc đêm khuya và năng lượng nội tâm thật bên trong.",
+      "note": "※ Hãy nghĩ về một đêm không ai ở bên, hoàn toàn một mình lúc rạng sáng, rồi trả lời thật nhất có thể."
+    },
+    "ui": {
+      "startTest": "Tìm kiểu cảm xúc đêm khuya 🌙 Bắt đầu thật lòng",
+      "shareWithFriends": "Thử cùng bạn bè",
+      "shareResultWithFriends": "Chia sẻ kết quả với bạn bè",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem test khác",
+      "goToTest": "Làm test",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Kiểu cảm xúc đêm khuya của tôi)",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các test tương tự",
+      "lateNightType": "Kiểu cảm xúc đêm khuya",
+      "lateNightKeywords": "Từ khóa rạng sáng",
+      "actualBehavior": "Thực tế làm gì lúc rạng sáng",
+      "strength": "Điểm mạnh của kiểu này",
+      "characteristic": "Đặc điểm của kiểu này",
+      "dawnBgm": "BGM rạng sáng của kiểu này",
+      "whatTheyNeed": "Điều kiểu này cần",
+      "oneLiner": "Một câu đánh giá",
+      "certificationPhrase": "Câu chứng nhận",
+      "currentDawnMoment": "Tôi đang xem cái này lúc {hour} giờ sáng"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Vibe đêm khuya của tôi: Kiểu chìm trong chăn 🌑 Nằm xuống là suy nghĩ bùng nổ… định ngủ mà nghĩ đến sáng, đúng quá → Bạn làm gì lúc rạng sáng? Mấy giờ rồi?",
+      "type2": "Vibe đêm khuya của tôi: Kiểu âm nhạc 🎵 Không có playlist là không phải rạng sáng… đang làm test này với tai nghe haha → Bạn làm gì lúc rạng sáng?",
+      "type3": "Vibe đêm khuya của tôi: Kiểu đắm chìm nội dung 📺 'Một tập thôi' thành 3 giờ sáng… đúng quá → Bạn cũng đang xem lúc rạng sáng thì thử đi",
+      "type4": "Vibe đêm khuya của tôi: Kiểu ghi chép chiêm nghiệm 🖊️ Viết nhật ký và sắp xếp suy nghĩ lúc rạng sáng… chữ lúc rạng sáng chân thật nhất, đúng quá → Bạn làm gì lúc rạng sáng?",
+      "type5": "Vibe đêm khuya của tôi: Kiểu làm việc đêm khuya 💻 Rạng sáng là thời gian vàng… ban ngày không vào việc thì rạng sáng vào, đúng quá → Bạn làm gì lúc rạng sáng? Mấy giờ?",
+      "type6": "Vibe đêm khuya của tôi: Kiểu bậc thầy tỉnh táo 🌟 Đêm mới là ban ngày… 4 giờ sáng sắc nét nhất haha → Ai đang xem lúc rạng sáng thử đi",
+      "startDefault": "Kiểu cảm xúc đêm khuya 🌙 Kiểm tra con người thật lúc rạng sáng",
+      "startKakao": "Kiểu cảm xúc đêm khuya 🌙 Kiểm tra con người thật lúc rạng sáng",
+      "startWechat": "Kiểu cảm xúc đêm khuya 🌙 Kiểm tra con người thật lúc rạng sáng",
+      "startWhatsapp": "Kiểu cảm xúc đêm khuya 🌙 Kiểm tra con người thật lúc rạng sáng",
+      "startTelegram": "Kiểu cảm xúc đêm khuya 🌙 Kiểm tra con người thật lúc rạng sáng",
+      "startLine": "Kiểu cảm xúc đêm khuya 🌙 Kiểm tra con người thật lúc rạng sáng"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trên WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3KpopHistoryMasterTest": {
     "startMessage": {
       "line1": "Bạn biết bao nhiêu về lịch sử K-Pop?",

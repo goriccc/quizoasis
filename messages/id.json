@@ -10690,6 +10690,75 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3LateNightTypeTest": {
+    "startMessage": {
+      "line1": "Saat kamu sendirian di dini hari, diri aslimu muncul.",
+      "line2": "Siang tidak terasa, tapi malam larut semua tidur dan kamu benar-benar sendiri—momen itu.",
+      "line3": "Ada yang pikirannya meledak saat memejamkan mata, ada yang nyalakan playlist dan tenggelam dalam mood, ada yang jam 2 pagi adalah waktu fokus emas.",
+      "line4": "Dirimu siang hari menyesuaikan situasi, tapi dirimu dini hari tidak perlu. Makanya dini hari itu nyata.",
+      "line5": "Lewat 12 pertanyaan, temukan tipe vibe tengah malammu dan energi batin sejati di dalamnya.",
+      "note": "※ Bayangkan malam tanpa orang, benar-benar sendiri di dini hari, lalu jawab sejujur mungkin."
+    },
+    "ui": {
+      "startTest": "Temukan Tipe Vibe Tengah Malam-ku 🌙 Mulai Jujur",
+      "shareWithFriends": "Coba dengan Teman",
+      "shareResultWithFriends": "Bagikan Hasil ke Teman",
+      "shareResult": "Bagikan Hasil",
+      "retakeTest": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain",
+      "goToTest": "Ikuti Tes",
+      "adsenseTitle": "Area Iklan AdSense (Tipe Vibe Tengah Malam-ku)",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "lateNightType": "Tipe Vibe Tengah Malam",
+      "lateNightKeywords": "Kata Kunci Dini Hari",
+      "actualBehavior": "Yang Benar-benar Dilakukan di Dini Hari",
+      "strength": "Kekuatan Tipe Ini",
+      "characteristic": "Ciri Tipe Ini",
+      "dawnBgm": "BGM Dini Hari Tipe Ini",
+      "whatTheyNeed": "Yang Dibutuhkan Tipe Ini",
+      "oneLiner": "Satu Kalimat Ulasan",
+      "certificationPhrase": "Frasa Sertifikasi",
+      "currentDawnMoment": "Aku nonton ini jam {hour} pagi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Vibe tengah malam-ku: Tipe tenggelam 🌑 Pikiran meledak pas tiduran… mau tidur malah mikir sampai subuh, bener banget → Kamu ngapain di dini hari? Jam berapa?",
+      "type2": "Vibe tengah malam-ku: Tipe musik 🎵 Tanpa playlist bukan dini hari… lagi tes ini pakai earphone wkwk → Kamu ngapain di dini hari?",
+      "type3": "Vibe tengah malam-ku: Tipe immersion konten 📺 'Satu episode aja' jadi jam 3 pagi… bener banget → Kamu juga nonton ini di dini hari? Coba deh",
+      "type4": "Vibe tengah malam-ku: Tipe tulis reflektif 🖊️ Nulis diary dan rapikan pikiran di dini hari… tulisan dini hari paling jujur, bener → Kamu ngapain di dini hari?",
+      "type5": "Vibe tengah malam-ku: Tipe kerja larut malam 💻 Dini hari waktu fokus emas… yang siang macet dini hari lancar, bener → Kamu ngapain di dini hari? Jam berapa?",
+      "type6": "Vibe tengah malam-ku: Tipe master sadar penuh 🌟 Malam adalah siangku… paling jernih jam 4 pagi wkwk → Yang nonton di dini hari coba deh",
+      "startDefault": "Tipe Vibe Tengah Malam-ku 🌙 Cek dirimu yang sebenarnya di dini hari",
+      "startKakao": "Tipe Vibe Tengah Malam-ku 🌙 Cek dirimu yang sebenarnya di dini hari",
+      "startWechat": "Tipe Vibe Tengah Malam-ku 🌙 Cek dirimu yang sebenarnya di dini hari",
+      "startWhatsapp": "Tipe Vibe Tengah Malam-ku 🌙 Cek dirimu yang sebenarnya di dini hari",
+      "startTelegram": "Tipe Vibe Tengah Malam-ku 🌙 Cek dirimu yang sebenarnya di dini hari",
+      "startLine": "Tipe Vibe Tengah Malam-ku 🌙 Cek dirimu yang sebenarnya di dini hari"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
   "phase3KpopHistoryMasterTest": {
     "startMessage": {
       "line1": "Seberapa banyak sejarah K-Pop yang kamu tahu?",
