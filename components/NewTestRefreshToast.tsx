@@ -5,8 +5,8 @@ import { useTranslations } from 'next-intl';
 import { RefreshCw, X } from 'lucide-react';
 
 const STORAGE_KEY = 'qo-latest-test-slugs-v1';
-const POLL_MS = 90_000;
-const INITIAL_DELAY_MS = 8_000;
+const POLL_MS = 30_000;
+const INITIAL_DELAY_MS = 5_000;
 
 function readStoredSlugs(): string[] | null {
   try {
@@ -67,7 +67,7 @@ export default function NewTestRefreshToast() {
       }
 
       try {
-        const response = await fetch('/api/tests/latest-slugs?limit=15', {
+        const response = await fetch(`/api/tests/latest-slugs?limit=15&_=${Date.now()}`, {
           cache: 'no-store',
         });
         if (!response.ok || cancelled) return;
