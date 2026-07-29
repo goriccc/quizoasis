@@ -10683,6 +10683,78 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3RiskToleranceTest": {
+    "startMessage": {
+      "line1": "あなたはリスクにどう向き合う人ですか？",
+      "line2": "同じ状況でも、安全な選択をする人と大胆に賭ける人がいます。どちらが正しいわけではありません。リスク許容度は金融・キャリア・人間関係・経験など人生のあらゆる領域に現れ、それぞれの生き方を形作ります。",
+      "line3": "投資するとき、転職するとき、新しい人に会うとき、知らない場所に一人で行くとき。その瞬間、あなたはどんな選択をしますか？",
+      "line4": "12の日常選択シナリオで、あなたのリスク許容度を精密に測定します。",
+      "line5": "自分のリスク傾向を測る 🎲 正直に始める",
+      "note": "※ 今の自分の実際の行動パターンに最も近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（リスク許容度テスト）",
+      "goToTest": "テストに進む",
+      "startTest": "自分のリスク傾向を測る 🎲 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "riskLevel": "リスク許容度",
+      "riskType": "リスクタイプ",
+      "riskAcceptanceLevel": "リスク受容水準",
+      "domainAnalysisTitle": "リスク許容度の詳細分析",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "financialDomain": "金融リスク許容",
+      "socialDomain": "社会・対人リスク許容",
+      "physicalDomain": "身体・体験リスク許容",
+      "careerDomain": "キャリアリスク許容",
+      "uncertaintyDomain": "不確実性の受容",
+      "strongestDomain": "リスク強みの領域",
+      "conservativeDomain": "最も保守的な領域",
+      "domainDiagnosisTitle": "領域別診断",
+      "strengthsTitle": "このタイプの強み",
+      "cautionTitle": "注意点",
+      "investmentCareerDirection": "タイプに合う投資・キャリア方向",
+      "investmentStyleTitle": "投資傾向",
+      "entrepreneurshipStyleTitle": "起業傾向",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私のリスク許容度: {type}! 🎲\nあなたはどんなリスクタイプ？",
+      "kakao": "私のリスク許容度: {type}! 🎲\nあなたはどんなリスクタイプ？",
+      "wechat": "私のリスク許容度: {type}! 🎲\n一緒にやってみよう！",
+      "whatsapp": "私のリスク許容度: {type}! 🎲\nあなたはどんなタイプ？一緒にやろう！",
+      "telegram": "私のリスク許容度: {type}! 🎲\nあなたはどんなリスクタイプ？",
+      "line": "私のリスク許容度: {type}! 🎲\nあなたはどんなリスクタイプ？",
+      "startDefault": "リスク許容度テスト 🎲 正直に始めよう！",
+      "startKakao": "リスク許容度テスト 🎲 正直に始めよう！",
+      "startWechat": "リスク許容度テスト 🎲 正直に始めよう！",
+      "startWhatsapp": "リスク許容度テスト 🎲 正直に始めよう！",
+      "startTelegram": "リスク許容度テスト 🎲 正直に始めよう！",
+      "startLine": "リスク許容度テスト 🎲 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3GritIndexTest": {
     "startMessage": {
       "line1": "成功者に共通していたのは、才能ではありませんでした。",

@@ -10704,6 +10704,78 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3RiskToleranceTest": {
+    "startMessage": {
+      "line1": "How do you deal with risk?",
+      "line2": "In the same situation, some people choose safety while others bet boldly. Neither is wrong. Risk tolerance shows up across finance, career, relationships, and experiences—and shapes how each person lives.",
+      "line3": "When investing, changing jobs, meeting someone new, or going somewhere unfamiliar alone—what do you choose in those moments?",
+      "line4": "12 everyday choice scenarios precisely measure your risk tolerance level.",
+      "line5": "Measure My Risk Profile 🎲 Start Honestly",
+      "note": "※ Choose the option closest to your actual behavior right now—not who you wish you were."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Risk Tolerance)",
+      "goToTest": "Go to test",
+      "startTest": "Measure My Risk Profile 🎲 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "riskLevel": "Risk tolerance level",
+      "riskType": "Risk type",
+      "riskAcceptanceLevel": "Risk acceptance level",
+      "domainAnalysisTitle": "Detailed risk tolerance analysis",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "financialDomain": "Financial risk tolerance",
+      "socialDomain": "Social risk tolerance",
+      "physicalDomain": "Physical risk tolerance",
+      "careerDomain": "Career risk tolerance",
+      "uncertaintyDomain": "Uncertainty acceptance",
+      "strongestDomain": "Strongest risk domain",
+      "conservativeDomain": "Most conservative domain",
+      "domainDiagnosisTitle": "Domain diagnosis",
+      "strengthsTitle": "Strengths of this type",
+      "cautionTitle": "Caution",
+      "investmentCareerDirection": "Investment & career direction for your type",
+      "investmentStyleTitle": "Investment style",
+      "entrepreneurshipStyleTitle": "Entrepreneurship style",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My risk tolerance: {type}! 🎲\nWhat risk type are you?",
+      "kakao": "My risk tolerance: {type}! 🎲\nWhat risk type are you?",
+      "wechat": "My risk tolerance: {type}! 🎲\nTry this test too!",
+      "whatsapp": "My risk tolerance: {type}! 🎲\nWhat type are you? Let's try together!",
+      "telegram": "My risk tolerance: {type}! 🎲\nWhat risk type are you?",
+      "line": "My risk tolerance: {type}! 🎲\nWhat risk type are you?",
+      "startDefault": "My Risk Tolerance Test 🎲 Start honestly!",
+      "startKakao": "My Risk Tolerance Test 🎲 Start honestly!",
+      "startWechat": "My Risk Tolerance Test 🎲 Start honestly!",
+      "startWhatsapp": "My Risk Tolerance Test 🎲 Start honestly!",
+      "startTelegram": "My Risk Tolerance Test 🎲 Start honestly!",
+      "startLine": "My Risk Tolerance Test 🎲 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3GritIndexTest": {
     "startMessage": {
       "line1": "What successful people have in common isn't talent.",

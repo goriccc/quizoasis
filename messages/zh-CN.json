@@ -10695,6 +10695,78 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3RiskToleranceTest": {
+    "startMessage": {
+      "line1": "你会如何面对风险？",
+      "line2": "同样的情境下，有人选择安全，有人选择大胆下注。没有哪一边是绝对正确的。风险承受倾向会体现在财务、职业、关系与经验等生活的各个层面，并塑造每个人的生活方式。",
+      "line3": "投资时、换工作时、认识新朋友时、独自去陌生地方时——在每个瞬间，你会做出怎样的选择？",
+      "line4": "通过12个日常选择情境，精确测量你的风险承受水平。",
+      "line5": "测量我的风险倾向 🎲 诚实地开始",
+      "note": "※ 请选择最接近你当前实际行为模式的一项。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告区域（风险承受倾向测试）",
+      "goToTest": "前往测试",
+      "startTest": "测量我的风险倾向 🎲 诚实地开始",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "similarTests": "类似测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "riskLevel": "风险承受水平",
+      "riskType": "风险类型",
+      "riskAcceptanceLevel": "风险接受程度",
+      "domainAnalysisTitle": "风险承受详细分析",
+      "totalScore": "总分",
+      "scoreUnit": "分",
+      "financialDomain": "财务风险承受",
+      "socialDomain": "社会风险承受",
+      "physicalDomain": "身体风险承受",
+      "careerDomain": "职业风险承受",
+      "uncertaintyDomain": "不确定性接受",
+      "strongestDomain": "风险优势领域",
+      "conservativeDomain": "最保守的领域",
+      "domainDiagnosisTitle": "分领域诊断",
+      "strengthsTitle": "此类型的优势",
+      "cautionTitle": "注意事项",
+      "investmentCareerDirection": "适合你的投资与职业方向",
+      "investmentStyleTitle": "投资倾向",
+      "entrepreneurshipStyleTitle": "创业倾向",
+      "certificationPhrase": "认证语",
+      "oneLiner": "一句话评价"
+    },
+    "shareMessages": {
+      "default": "我的风险承受倾向：{type}！🎲\n你是什么风险类型？",
+      "kakao": "我的风险承受倾向：{type}！🎲\n你是什么风险类型？",
+      "wechat": "我的风险承受倾向：{type}！🎲\n一起来测测吧！",
+      "whatsapp": "我的风险承受倾向：{type}！🎲\n你是什么类型？一起试试！",
+      "telegram": "我的风险承受倾向：{type}！🎲\n你是什么风险类型？",
+      "line": "我的风险承受倾向：{type}！🎲\n你是什么风险类型？",
+      "startDefault": "风险承受倾向测试 🎲 诚实地开始吧！",
+      "startKakao": "风险承受倾向测试 🎲 诚实地开始吧！",
+      "startWechat": "风险承受倾向测试 🎲 诚实地开始吧！",
+      "startWhatsapp": "风险承受倾向测试 🎲 诚实地开始吧！",
+      "startTelegram": "风险承受倾向测试 🎲 诚实地开始吧！",
+      "startLine": "风险承受倾向测试 🎲 诚实地开始吧！"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3GritIndexTest": {
     "startMessage": {
       "line1": "成功者的共同点不是天赋。",

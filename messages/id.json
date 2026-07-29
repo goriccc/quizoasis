@@ -10695,6 +10695,78 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3RiskToleranceTest": {
+    "startMessage": {
+      "line1": "Bagaimana kamu menghadapi risiko?",
+      "line2": "Dalam situasi yang sama, ada yang memilih aman dan ada yang bertaruh dengan berani. Tidak ada yang benar-benar salah. Toleransi risiko muncul di keuangan, karier, relasi, dan pengalaman—dan membentuk cara hidup masing-masing.",
+      "line3": "Saat berinvestasi, pindah kerja, bertemu orang baru, atau pergi sendiri ke tempat asing—pada setiap momen itu, pilihan apa yang kamu buat?",
+      "line4": "12 skenario pilihan sehari-hari mengukur tingkat toleransi risikomu secara presisi.",
+      "line5": "Ukur Profil Risiko-ku 🎲 Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang paling dekat dengan pola perilaku aktualmu saat ini."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Tes Toleransi Risiko)",
+      "goToTest": "Ke tes",
+      "startTest": "Ukur Profil Risiko-ku 🎲 Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "riskLevel": "Tingkat toleransi risiko",
+      "riskType": "Tipe risiko",
+      "riskAcceptanceLevel": "Tingkat penerimaan risiko",
+      "domainAnalysisTitle": "Analisis toleransi risiko detail",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "financialDomain": "Toleransi risiko finansial",
+      "socialDomain": "Toleransi risiko sosial",
+      "physicalDomain": "Toleransi risiko fisik",
+      "careerDomain": "Toleransi risiko karier",
+      "uncertaintyDomain": "Penerimaan ketidakpastian",
+      "strongestDomain": "Domain risiko terkuat",
+      "conservativeDomain": "Domain paling konservatif",
+      "domainDiagnosisTitle": "Diagnosis per domain",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionTitle": "Perhatian",
+      "investmentCareerDirection": "Arah investasi & karier untuk tipmu",
+      "investmentStyleTitle": "Gaya investasi",
+      "entrepreneurshipStyleTitle": "Gaya kewirausahaan",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Toleransi risikoku: {type}! 🎲\nKamu tipe risiko apa?",
+      "kakao": "Toleransi risikoku: {type}! 🎲\nKamu tipe risiko apa?",
+      "wechat": "Toleransi risikoku: {type}! 🎲\nCoba tes ini juga!",
+      "whatsapp": "Toleransi risikoku: {type}! 🎲\nKamu tipe apa? Ayo coba bareng!",
+      "telegram": "Toleransi risikoku: {type}! 🎲\nKamu tipe risiko apa?",
+      "line": "Toleransi risikoku: {type}! 🎲\nKamu tipe risiko apa?",
+      "startDefault": "Tes Toleransi Risiko 🎲 Mulai dengan jujur!",
+      "startKakao": "Tes Toleransi Risiko 🎲 Mulai dengan jujur!",
+      "startWechat": "Tes Toleransi Risiko 🎲 Mulai dengan jujur!",
+      "startWhatsapp": "Tes Toleransi Risiko 🎲 Mulai dengan jujur!",
+      "startTelegram": "Tes Toleransi Risiko 🎲 Mulai dengan jujur!",
+      "startLine": "Tes Toleransi Risiko 🎲 Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3GritIndexTest": {
     "startMessage": {
       "line1": "Kesamaan orang sukses bukan bakat.",

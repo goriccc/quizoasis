@@ -12705,6 +12705,78 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3RiskToleranceTest": {
+    "startMessage": {
+      "line1": "당신은 위험을 어떻게 대하는 사람인가요?",
+      "line2": "같은 상황에서 어떤 사람은 안전한 선택을 하고 어떤 사람은 과감하게 베팅합니다. 어느 쪽이 옳은 게 아닙니다. 위험 감수 성향은 재정·커리어·관계·경험 등 삶의 모든 영역에서 나타나며 그 수준이 각자의 삶의 방식을 만들어냅니다.",
+      "line3": "투자를 할 때, 직업을 바꿀 때, 새로운 사람을 만날 때, 낯선 곳에 혼자 갈 때. 그 순간마다 나는 어떤 선택을 하는가.",
+      "line4": "12가지 일상 선택 상황으로 나의 위험 감수 수준을 정밀 측정합니다.",
+      "line5": "내 리스크 성향 측정하기 🎲 솔직하게 시작",
+      "note": "※ 가장 솔직하게 현재 나의 실제 행동 패턴에 가까운 것을 선택하세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 위험 감수 성향)",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 리스크 성향 측정하기 🎲 솔직하게 시작",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "riskLevel": "위험 감수 수준",
+      "riskType": "위험 감수 유형",
+      "riskAcceptanceLevel": "리스크 수용 수준",
+      "domainAnalysisTitle": "나의 위험 감수 상세 분석",
+      "totalScore": "총점",
+      "scoreUnit": "점",
+      "financialDomain": "재정적 위험 감수",
+      "socialDomain": "사회적 위험 감수",
+      "physicalDomain": "신체적 위험 감수",
+      "careerDomain": "커리어 위험 감수",
+      "uncertaintyDomain": "불확실성 수용",
+      "strongestDomain": "내 리스크 강점 영역",
+      "conservativeDomain": "가장 보수적인 영역",
+      "domainDiagnosisTitle": "영역별 진단",
+      "strengthsTitle": "이 유형의 강점",
+      "cautionTitle": "이 유형의 주의점",
+      "investmentCareerDirection": "내 유형에 맞는 투자·커리어 방향",
+      "investmentStyleTitle": "투자 성향",
+      "entrepreneurshipStyleTitle": "창업 성향",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "내 위험 감수 성향: {type}! 🎲\\n너는 어떤 리스크 유형이야?",
+      "kakao": "내 위험 감수 성향: {type}! 🎲\\n너는 어떤 리스크 유형이야?",
+      "wechat": "내 위험 감수 성향: {type}! 🎲\\n위험 감수 결과 같이 해봐!",
+      "whatsapp": "내 위험 감수 성향: {type}! 🎲\\n너는 어떤 유형? 같이 해보자!",
+      "telegram": "내 위험 감수 성향: {type}! 🎲\\n너는 어떤 리스크 유형이야?",
+      "line": "내 위험 감수 성향: {type}! 🎲\\n너는 어떤 리스크 유형이야?",
+      "startDefault": "나의 위험 감수 성향 🎲 솔직하게 시작해봐!",
+      "startKakao": "나의 위험 감수 성향 🎲 솔직하게 시작해봐!",
+      "startWechat": "나의 위험 감수 성향 🎲 솔직하게 시작해봐!",
+      "startWhatsapp": "나의 위험 감수 성향 🎲 솔직하게 시작해봐!",
+      "startTelegram": "나의 위험 감수 성향 🎲 솔직하게 시작해봐!",
+      "startLine": "나의 위험 감수 성향 🎲 솔직하게 시작해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "formats": {
     "all": "전체",
     "personality": "성격·심리",

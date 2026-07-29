@@ -10695,6 +10695,78 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3RiskToleranceTest": {
+    "startMessage": {
+      "line1": "Bạn đối mặt với rủi ro như thế nào?",
+      "line2": "Trong cùng một tình huống, có người chọn an toàn, có người đặt cược táo bạo. Không có bên nào đúng tuyệt đối. Xu hướng chấp nhận rủi ro xuất hiện trong tài chính, sự nghiệp, các mối quan hệ và trải nghiệm—và định hình cách sống của mỗi người.",
+      "line3": "Khi đầu tư, đổi việc, gặp người mới, hay đi một mình đến nơi xa lạ—trong từng khoảnh khắc đó, bạn chọn gì?",
+      "line4": "12 tình huống lựa chọn hàng ngày đo chính xác mức chấp nhận rủi ro của bạn.",
+      "line5": "Đo Xu Hướng Rủi Ro Của Tôi 🎲 Bắt Đầu Thành Thật",
+      "note": "※ Hãy chọn đáp án gần với hành vi thực tế của bạn nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài test chấp nhận rủi ro)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Đo Xu Hướng Rủi Ro Của Tôi 🎲 Bắt Đầu Thành Thật",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "riskLevel": "Mức chấp nhận rủi ro",
+      "riskType": "Loại rủi ro",
+      "riskAcceptanceLevel": "Mức chấp nhận rủi ro",
+      "domainAnalysisTitle": "Phân tích chi tiết chấp nhận rủi ro",
+      "totalScore": "Tổng điểm",
+      "scoreUnit": " điểm",
+      "financialDomain": "Rủi ro tài chính",
+      "socialDomain": "Rủi ro xã hội",
+      "physicalDomain": "Rủi ro thể chất",
+      "careerDomain": "Rủi ro sự nghiệp",
+      "uncertaintyDomain": "Chấp nhận bất định",
+      "strongestDomain": "Lĩnh vực rủi ro mạnh nhất",
+      "conservativeDomain": "Lĩnh vực bảo thủ nhất",
+      "domainDiagnosisTitle": "Chẩn đoán theo lĩnh vực",
+      "strengthsTitle": "Điểm mạnh của loại hình này",
+      "cautionTitle": "Lưu ý",
+      "investmentCareerDirection": "Hướng đầu tư & sự nghiệp phù hợp",
+      "investmentStyleTitle": "Phong cách đầu tư",
+      "entrepreneurshipStyleTitle": "Phong cách khởi nghiệp",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "Xu hướng chấp nhận rủi ro của tôi: {type}! 🎲\nBạn thuộc loại rủi ro nào?",
+      "kakao": "Xu hướng chấp nhận rủi ro của tôi: {type}! 🎲\nBạn thuộc loại rủi ro nào?",
+      "wechat": "Xu hướng chấp nhận rủi ro của tôi: {type}! 🎲\nCùng thử bài test này nhé!",
+      "whatsapp": "Xu hướng chấp nhận rủi ro của tôi: {type}! 🎲\nBạn là loại nào? Cùng thử nhé!",
+      "telegram": "Xu hướng chấp nhận rủi ro của tôi: {type}! 🎲\nBạn thuộc loại rủi ro nào?",
+      "line": "Xu hướng chấp nhận rủi ro của tôi: {type}! 🎲\nBạn thuộc loại rủi ro nào?",
+      "startDefault": "Bài test chấp nhận rủi ro 🎲 Bắt đầu thành thật!",
+      "startKakao": "Bài test chấp nhận rủi ro 🎲 Bắt đầu thành thật!",
+      "startWechat": "Bài test chấp nhận rủi ro 🎲 Bắt đầu thành thật!",
+      "startWhatsapp": "Bài test chấp nhận rủi ro 🎲 Bắt đầu thành thật!",
+      "startTelegram": "Bài test chấp nhận rủi ro 🎲 Bắt đầu thành thật!",
+      "startLine": "Bài test chấp nhận rủi ro 🎲 Bắt đầu thành thật!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3GritIndexTest": {
     "startMessage": {
       "line1": "Điểm chung của những người thành công không phải là tài năng.",
