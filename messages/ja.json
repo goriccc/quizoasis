@@ -10683,6 +10683,79 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3DecisionMakingStyleTest": {
+    "startMessage": {
+      "line1": "重要な選択の前で、あなたはどう決めますか？",
+      "line2": "感覚で先に決めて後から理由を探す人、あらゆる可能性を分析して決めるのが遅くなる人、周囲と十分話してから動く人、自分の原則がはっきりしていて選択肢が少ない人。",
+      "line3": "悪い決め方はありません。それぞれ強い場面と弱い場面があります。自分のスタイルを知ると、なぜ特定の場面で決めにくいのか、なぜ後悔するのか、どうすればより良く決められるかが見えてきます。",
+      "line4": "12の質問であなたの意思決定スタイルとパターンを分析します。",
+      "line5": "自分の意思決定スタイルを見つける 🧭 正直に始める",
+      "note": "※ 重要な決定の前で、実際の行動パターンに最も近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（意思決定スタイルテスト）",
+      "goToTest": "テストに進む",
+      "startTest": "自分の意思決定スタイルを見つける 🧭 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "decisionStyle": "意思決定スタイル",
+      "decisionType": "意思決定タイプ",
+      "decisionKeywords": "決定キーワード",
+      "domainAnalysisTitle": "意思決定パターン詳細分析",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "startDomain": "決定開始方式",
+      "infoDomain": "情報収集パターン",
+      "othersDomain": "他者意見の活用",
+      "uncertaintyDomain": "不確実性への対応",
+      "regretDomain": "失敗・後悔パターン",
+      "speedDomain": "決定速度・基準",
+      "strongestDomain": "最も体系的に機能する決定領域",
+      "intuitiveDomain": "最も直感に依存する領域",
+      "strengthsTitle": "このタイプの強み",
+      "weaknessesTitle": "このタイプの弱み",
+      "situationGuideTitle": "状況別適合度",
+      "bestSituationsTitle": "最もうまく機能する状況",
+      "riskySituationsTitle": "危険な状況",
+      "improvementDirectionTitle": "改善方向",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の意思決定スタイル: {type}! 🧭\nあなたはどんな決定タイプ？",
+      "kakao": "私の意思決定スタイル: {type}! 🧭\nなんでこう決めるんだろう ㅋㅋ あなたは？",
+      "wechat": "私の意思決定スタイル: {type}! 🧭\n一緒にやってみよう！",
+      "whatsapp": "私の意思決定スタイル: {type}! 🧭\nあなたはどんなタイプ？一緒にやろう！",
+      "telegram": "私の意思決定スタイル: {type}! 🧭\nあなたはどんな決定タイプ？",
+      "line": "私の意思決定スタイル: {type}! 🧭\nなんでこう決めるんだろう ㅋㅋ あなたは？",
+      "startDefault": "意思決定スタイルテスト 🧭 正直に始めよう！",
+      "startKakao": "意思決定スタイルテスト 🧭 正直に始めよう！",
+      "startWechat": "意思決定スタイルテスト 🧭 正直に始めよう！",
+      "startWhatsapp": "意思決定スタイルテスト 🧭 正直に始めよう！",
+      "startTelegram": "意思決定スタイルテスト 🧭 正直に始めよう！",
+      "startLine": "意思決定スタイルテスト 🧭 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3RiskToleranceTest": {
     "startMessage": {
       "line1": "あなたはリスクにどう向き合う人ですか？",

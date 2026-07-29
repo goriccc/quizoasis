@@ -10695,6 +10695,79 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3DecisionMakingStyleTest": {
+    "startMessage": {
+      "line1": "Saat menghadapi pilihan penting, bagaimana kamu memutuskan?",
+      "line2": "Ada yang memutus lewat perasaan dulu baru mencari alasan. Ada yang menganalisis semua kemungkinan sehingga lambat. Ada yang berdiskusi dulu dengan orang sekitar. Ada yang prinsipnya jelas sehingga pilihannya sedikit.",
+      "line3": "Tidak ada gaya keputusan yang salah. Masing-masing kuat di situasi tertentu dan lemah di situasi lain. Mengenal gaya sendiri membantu memahami mengapa keputusan tertentu sulit, mengapa menyesal, dan bagaimana memutus lebih baik.",
+      "line4": "12 pertanyaan menganalisis gaya dan pola pengambilan keputusanmu.",
+      "line5": "Temukan Gaya Keputusanku 🧭 Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang paling dekat dengan pola perilakumu saat menghadapi keputusan penting."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Gaya Pengambilan Keputusan)",
+      "goToTest": "Ke tes",
+      "startTest": "Temukan Gaya Keputusanku 🧭 Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "decisionStyle": "Gaya pengambilan keputusan",
+      "decisionType": "Tipe keputusan",
+      "decisionKeywords": "Kata kunci keputusan",
+      "domainAnalysisTitle": "Analisis pola keputusan detail",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "startDomain": "Cara memulai keputusan",
+      "infoDomain": "Pola pengumpulan informasi",
+      "othersDomain": "Memanfaatkan opini orang lain",
+      "uncertaintyDomain": "Menghadapi ketidakpastian",
+      "regretDomain": "Pola kesalahan & penyesalan",
+      "speedDomain": "Kecepatan & kriteria keputusan",
+      "strongestDomain": "Domain keputusan paling sistematis",
+      "intuitiveDomain": "Domain paling bergantung intuisi",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "weaknessesTitle": "Kelemahan tipe ini",
+      "situationGuideTitle": "Panduan situasi",
+      "bestSituationsTitle": "Paling cocok saat",
+      "riskySituationsTitle": "Situasi berisiko",
+      "improvementDirectionTitle": "Arah perbaikan",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Gaya keputusanku: {type}! 🧭\nKamu tipe keputusan apa?",
+      "kakao": "Gaya keputusanku: {type}! 🧭\nKenapa aku memutus seperti ini? Kamu?",
+      "wechat": "Gaya keputusanku: {type}! 🧭\nCoba tes ini juga!",
+      "whatsapp": "Gaya keputusanku: {type}! 🧭\nKamu tipe apa? Ayo coba bareng!",
+      "telegram": "Gaya keputusanku: {type}! 🧭\nKamu tipe keputusan apa?",
+      "line": "Gaya keputusanku: {type}! 🧭\nKenapa aku memutus seperti ini? Kamu?",
+      "startDefault": "Tes Gaya Pengambilan Keputusan 🧭 Mulai dengan jujur!",
+      "startKakao": "Tes Gaya Pengambilan Keputusan 🧭 Mulai dengan jujur!",
+      "startWechat": "Tes Gaya Pengambilan Keputusan 🧭 Mulai dengan jujur!",
+      "startWhatsapp": "Tes Gaya Pengambilan Keputusan 🧭 Mulai dengan jujur!",
+      "startTelegram": "Tes Gaya Pengambilan Keputusan 🧭 Mulai dengan jujur!",
+      "startLine": "Tes Gaya Pengambilan Keputusan 🧭 Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3RiskToleranceTest": {
     "startMessage": {
       "line1": "Bagaimana kamu menghadapi risiko?",

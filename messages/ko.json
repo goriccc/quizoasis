@@ -12777,6 +12777,79 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3DecisionMakingStyleTest": {
+    "startMessage": {
+      "line1": "중요한 선택 앞에서 당신은 어떻게 결정하나요?",
+      "line2": "어떤 사람은 일단 느낌대로 결정하고 나중에 이유를 찾습니다. 어떤 사람은 모든 경우의 수를 분석하느라 결정이 늦어집니다. 어떤 사람은 주변 사람들과 충분히 이야기한 다음 움직입니다. 어떤 사람은 자신의 원칙이 명확해서 선택지가 줄어 있습니다.",
+      "line3": "나쁜 결정 방식은 없습니다. 다만 각각의 방식은 특정 상황에서 강하고 특정 상황에서 약합니다. 내 방식을 알면 왜 특정 상황에서 결정이 어려운지, 왜 나중에 후회하는지, 어떻게 하면 더 잘 결정할 수 있는지가 보입니다.",
+      "line4": "12가지 질문으로 나의 의사결정 스타일과 그 패턴을 분석합니다.",
+      "line5": "내 의사결정 스타일 찾기 🧭 솔직하게 시작",
+      "note": "※ 중요한 결정 앞에서 실제 나의 행동 패턴에 가장 가까운 것을 선택하세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 의사결정 스타일)",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 의사결정 스타일 찾기 🧭 솔직하게 시작",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "decisionStyle": "의사결정 스타일",
+      "decisionType": "의사결정 유형",
+      "decisionKeywords": "결정 키워드",
+      "domainAnalysisTitle": "나의 의사결정 패턴 상세 분석",
+      "totalScore": "총점",
+      "scoreUnit": "점",
+      "startDomain": "결정 시작 방식",
+      "infoDomain": "정보 수집 패턴",
+      "othersDomain": "타인 의견 활용",
+      "uncertaintyDomain": "불확실성 대응",
+      "regretDomain": "실수·후회 패턴",
+      "speedDomain": "결정 속도·기준",
+      "strongestDomain": "나의 결정 방식이 가장 체계적으로 작동하는 영역",
+      "intuitiveDomain": "가장 직관에 의존하는 영역",
+      "strengthsTitle": "이 유형의 강점",
+      "weaknessesTitle": "이 유형의 약점",
+      "situationGuideTitle": "상황별 적합도",
+      "bestSituationsTitle": "가장 잘 작동하는 상황",
+      "riskySituationsTitle": "위험한 상황",
+      "improvementDirectionTitle": "개선 방향",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "내 의사결정 스타일: {type}! 🧭\\n너는 어떤 결정 유형이야?",
+      "kakao": "내 의사결정 스타일: {type}! 🧭\\n나 왜 이렇게 결정함 ㅋㅋ 너는?",
+      "wechat": "내 의사결정 스타일: {type}! 🧭\\n나 왜 이렇게 결정함 같이 해봐!",
+      "whatsapp": "내 의사결정 스타일: {type}! 🧭\\n너는 어떤 유형? 같이 해보자!",
+      "telegram": "내 의사결정 스타일: {type}! 🧭\\n너는 어떤 결정 유형이야?",
+      "line": "내 의사결정 스타일: {type}! 🧭\\n나 왜 이렇게 결정함 ㅋㅋ 너는?",
+      "startDefault": "나의 의사결정 스타일 🧭 솔직하게 시작해봐!",
+      "startKakao": "나의 의사결정 스타일 🧭 솔직하게 시작해봐!",
+      "startWechat": "나의 의사결정 스타일 🧭 솔직하게 시작해봐!",
+      "startWhatsapp": "나의 의사결정 스타일 🧭 솔직하게 시작해봐!",
+      "startTelegram": "나의 의사결정 스타일 🧭 솔직하게 시작해봐!",
+      "startLine": "나의 의사결정 스타일 🧭 솔직하게 시작해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "formats": {
     "all": "전체",
     "personality": "성격·심리",

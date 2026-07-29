@@ -10704,6 +10704,79 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3DecisionMakingStyleTest": {
+    "startMessage": {
+      "line1": "How do you make decisions when facing an important choice?",
+      "line2": "Some people decide by feeling first and find reasons later. Some analyze every possibility and decide slowly. Some talk things through with others before acting. Some have clear principles that narrow their options.",
+      "line3": "No decision style is wrong. Each is strong in some situations and weak in others. Knowing your style reveals why certain decisions feel hard, why you regret later, and how to decide better.",
+      "line4": "12 questions analyze your decision-making style and patterns.",
+      "line5": "Find My Decision-Making Style 🧭 Start Honestly",
+      "note": "※ Choose the option closest to your actual behavior when facing important decisions."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Decision-Making Style)",
+      "goToTest": "Go to test",
+      "startTest": "Find My Decision-Making Style 🧭 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "decisionStyle": "Decision-making style",
+      "decisionType": "Decision type",
+      "decisionKeywords": "Decision keywords",
+      "domainAnalysisTitle": "Detailed decision pattern analysis",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "startDomain": "Decision start approach",
+      "infoDomain": "Information gathering pattern",
+      "othersDomain": "Using others' opinions",
+      "uncertaintyDomain": "Handling uncertainty",
+      "regretDomain": "Mistakes & regret pattern",
+      "speedDomain": "Decision speed & criteria",
+      "strongestDomain": "Most systematic decision domain",
+      "intuitiveDomain": "Most intuition-dependent domain",
+      "strengthsTitle": "Strengths of this type",
+      "weaknessesTitle": "Weaknesses of this type",
+      "situationGuideTitle": "Situation guide",
+      "bestSituationsTitle": "Works best in",
+      "riskySituationsTitle": "Risky situations",
+      "improvementDirectionTitle": "Improvement direction",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My decision style: {type}! 🧭\nWhat decision type are you?",
+      "kakao": "My decision style: {type}! 🧭\nWhy do I decide like this? What about you?",
+      "wechat": "My decision style: {type}! 🧭\nTry this test too!",
+      "whatsapp": "My decision style: {type}! 🧭\nWhat type are you? Let's try together!",
+      "telegram": "My decision style: {type}! 🧭\nWhat decision type are you?",
+      "line": "My decision style: {type}! 🧭\nWhy do I decide like this? What about you?",
+      "startDefault": "Decision-Making Style Test 🧭 Start honestly!",
+      "startKakao": "Decision-Making Style Test 🧭 Start honestly!",
+      "startWechat": "Decision-Making Style Test 🧭 Start honestly!",
+      "startWhatsapp": "Decision-Making Style Test 🧭 Start honestly!",
+      "startTelegram": "Decision-Making Style Test 🧭 Start honestly!",
+      "startLine": "Decision-Making Style Test 🧭 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3RiskToleranceTest": {
     "startMessage": {
       "line1": "How do you deal with risk?",

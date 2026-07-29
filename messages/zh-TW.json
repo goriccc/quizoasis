@@ -10164,6 +10164,79 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3DecisionMakingStyleTest": {
+    "startMessage": {
+      "line1": "面對重要選擇時，你會如何決定？",
+      "line2": "有人先憑感覺決定再找理由，有人分析所有可能而遲遲不決，有人和身邊的人充分溝通後再行動，有人原則清晰所以選項更少。",
+      "line3": "沒有錯誤的決定方式。每種方式在特定情境下都有強弱。了解自己的方式，就能看清為什麼某些決定特別難、為什麼事後會後悔、以及如何做得更好。",
+      "line4": "透過12個問題分析你的決策風格與模式。",
+      "line5": "找到我的決策風格 🧭 誠實地開始",
+      "note": "※ 請選擇最接近你在重要決定前實際行為模式的一項。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（決策風格測試）",
+      "goToTest": "前往測試",
+      "startTest": "找到我的決策風格 🧭 誠實地開始",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "decisionStyle": "決策風格",
+      "decisionType": "決策類型",
+      "decisionKeywords": "決策關鍵詞",
+      "domainAnalysisTitle": "決策模式詳細分析",
+      "totalScore": "總分",
+      "scoreUnit": "分",
+      "startDomain": "決策啟動方式",
+      "infoDomain": "資訊收集模式",
+      "othersDomain": "他人意見運用",
+      "uncertaintyDomain": "不確定性應對",
+      "regretDomain": "失誤與後悔模式",
+      "speedDomain": "決策速度與標準",
+      "strongestDomain": "決策方式最系統化的領域",
+      "intuitiveDomain": "最依賴直覺的領域",
+      "strengthsTitle": "此類型的優勢",
+      "weaknessesTitle": "此類型的弱點",
+      "situationGuideTitle": "情境適用度",
+      "bestSituationsTitle": "最適用的情境",
+      "riskySituationsTitle": "有風險的情境",
+      "improvementDirectionTitle": "改進方向",
+      "certificationPhrase": "認證語",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "我的決策風格：{type}！🧭\n你是什麼決策類型？",
+      "kakao": "我的決策風格：{type}！🧭\n我為什麼這樣決定 哈哈 你呢？",
+      "wechat": "我的決策風格：{type}！🧭\n一起來測測吧！",
+      "whatsapp": "我的決策風格：{type}！🧭\n你是什麼類型？一起試試！",
+      "telegram": "我的決策風格：{type}！🧭\n你是什麼決策類型？",
+      "line": "我的決策風格：{type}！🧭\n我為什麼這樣決定 哈哈 你呢？",
+      "startDefault": "決策風格測試 🧭 誠實地開始吧！",
+      "startKakao": "決策風格測試 🧭 誠實地開始吧！",
+      "startWechat": "決策風格測試 🧭 誠實地開始吧！",
+      "startWhatsapp": "決策風格測試 🧭 誠實地開始吧！",
+      "startTelegram": "決策風格測試 🧭 誠實地開始吧！",
+      "startLine": "決策風格測試 🧭 誠實地開始吧！"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3RiskToleranceTest": {
     "startMessage": {
       "line1": "你會如何面對風險？",
