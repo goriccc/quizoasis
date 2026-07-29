@@ -249,6 +249,10 @@ const Phase3LateNightTypeTestClient = dynamic(
   () => import('@/components/Phase3LateNightTypeTestClient'),
   { ssr: false }
 );
+const Phase3GritIndexTestClient = dynamic(
+  () => import('@/components/Phase3GritIndexTestClient'),
+  { ssr: false }
+);
 const Phase3KpopHistoryMasterTestClient = dynamic(
   () => import('@/components/Phase3KpopHistoryMasterTestClient'),
   { ssr: false }
@@ -1906,6 +1910,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['凌晨感性', '夜貓子', '深夜情緒', '獨處時間', '凌晨routine'],
         vi: ['cảm xúc đêm khuya', 'cú đêm', 'tâm trạng đêm', 'thời gian một mình', 'routine đêm khuya'],
         id: ['vibe tengah malam', 'night owl', 'mood midnight', 'waktu sendiri', 'rutinitas dini hari'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-grit-index') {
+    test = {
+      slug: 'phase3-grit-index',
+      title: {
+        ko: '나의 그릿(Grit) 지수 측정',
+        en: 'My Grit Index Measurement',
+        ja: '私のグリット指標測定',
+        'zh-CN': '我的坚毅指数测量',
+        'zh-TW': '我的堅毅指數測量',
+        vi: 'Chỉ số Grit của tôi',
+        id: 'Pengukuran Indeks Grit-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 그릿 지수와 유형을 측정합니다. 끈기와 열정의 강약, 병목까지 함께 분석해드려요.',
+        en: 'Measure your Grit Index and type with 12 questions. Understand the balance between perseverance and passion — including your bottleneck.',
+        ja: '12の質問でグリット指標とタイプを測定します。忍耐と情熱のバランス、そしてボトルネックまで分析します。',
+        'zh-CN': '通过12个问题测量你的坚毅指数与类型。了解毅力与热情的平衡，并分析你的瓶颈。',
+        'zh-TW': '透過12個問題測量你的堅毅指數與類型。了解毅力與熱情的平衡，並分析你的瓶頸。',
+        vi: 'Đo chỉ số Grit và kiểu của bạn qua 12 câu hỏi. Hiểu sự cân bằng giữa bền bỉ và đam mê, kèm theo “nút thắt”.',
+        id: 'Ukur Indeks Grit dan tipe kamu lewat 12 pertanyaan. Pahami keseimbangan antara ketekunan dan semangat, termasuk bottleneck.',
+      },
+      thumbnail: 'p3_test_grit_index.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['그릿', '끈기', '열정', '자기계발', '목표달성'],
+        en: ['grit', 'perseverance', 'passion', 'self-improvement', 'goal achievement'],
+        ja: ['グリット', '忍耐', '情熱', '自己成長', '目標達成'],
+        'zh-CN': ['坚毅', '毅力', '热情', '自我提升', '目标达成'],
+        'zh-TW': ['堅毅', '毅力', '熱情', '自我提升', '目標達成'],
+        vi: ['grit', 'bền bỉ', 'đam mê', 'tự cải thiện', 'đạt mục tiêu'],
+        id: ['grit', 'ketekunan', 'semangat', 'pengembangan diri', 'pencapaian tujuan'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8147,6 +8188,62 @@ export default async function TestPage({ params }: Props) {
       </>
     );
   }
+
+    if (slug === 'phase3-grit-index') {
+      const { phase3GritIndexQuestions, phase3GritIndexResults } = await import('@/lib/phase3GritIndexData');
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-grit-index',
+      title: {
+        ko: '나의 그릿(Grit) 지수 측정',
+        en: 'My Grit Index Measurement',
+        ja: '私のグリット指標測定',
+        'zh-CN': '我的坚毅指数测量',
+        'zh-TW': '我的堅毅指數測量',
+        vi: 'Chỉ số Grit của tôi',
+        id: 'Pengukuran Indeks Grit-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 그릿 지수와 유형을 측정합니다. 끈기와 열정의 강약, 병목까지 함께 분석해드려요.',
+        en: 'Measure your Grit Index and type with 12 questions. Understand the balance between perseverance and passion — including your bottleneck.',
+        ja: '12の質問でグリット指標とタイプを測定します。忍耐と情熱のバランス、そしてボトルネックまで分析します。',
+        'zh-CN': '通过12个问题测量你的坚毅指数与类型。了解毅力与热情的平衡，并分析你的瓶颈。',
+        'zh-TW': '透過12個問題測量你的堅毅指數與類型。了解毅力與熱情的平衡，並分析你的瓶頸。',
+        vi: 'Đo chỉ số Grit và kiểu của bạn qua 12 câu hỏi. Hiểu sự cân bằng giữa bền bỉ và đam mê, kèm theo “nút thắt”.',
+        id: 'Ukur Indeks Grit dan tipe kamu lewat 12 pertanyaan. Pahami keseimbangan antara ketekunan dan semangat, termasuk bottleneck.',
+      },
+      thumbnail: 'p3_test_grit_index.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['그릿', '끈기', '열정', '자기계발', '목표달성'],
+        en: ['grit', 'perseverance', 'passion', 'self-improvement', 'goal achievement'],
+        ja: ['グリット', '忍耐', '情熱', '自己成長', '目標達成'],
+        'zh-CN': ['坚毅', '毅力', '热情', '自我提升', '目标达成'],
+        'zh-TW': ['堅毅', '毅力', '熱情', '自我提升', '目標達成'],
+        vi: ['grit', 'bền bỉ', 'đam mê', 'tự cải thiện', 'đạt mục tiêu'],
+        id: ['grit', 'ketekunan', 'semangat', 'pengembangan diri', 'pencapaian tujuan'],
+      },
+    };
+
+      return (
+        <>
+          <Phase3GritIndexTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3GritIndexQuestions}
+            results={phase3GritIndexResults}
+            questionCount={phase3GritIndexQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
 
     if (slug === 'phase3-kpop-history-master') {
       const { phase3KpopHistoryMasterQuestions, phase3KpopHistoryMasterResults } = await import('@/lib/phase3KpopHistoryMasterData');

@@ -865,6 +865,12 @@
     "androidStep3": "Hoàn tất! Bây giờ bạn có thể dễ dàng truy cập bất cứ lúc nào",
     "manualInstructions": "Vui lòng làm theo các bước trên để thêm thủ công."
   },
+  "newTestRefreshToast": {
+    "title": "Có bài test mới",
+    "description": "Làm mới trang để xem danh sách mới nhất.",
+    "refresh": "Làm mới",
+    "dismiss": "Đóng"
+  },
   "scrollToTop": {
     "label": "Lên đầu trang"
   },
@@ -10687,6 +10693,71 @@
     "recommendations": {
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
+  "phase3GritIndexTest": {
+    "startMessage": {
+      "line1": "Điểm chung của những người thành công không phải là tài năng.",
+      "line2": "Nhà tâm lý học Angela Duckworth đã nghiên cứu ai thành công trong nhiều môi trường khác nhau—từ West Point, cuộc thi đánh vần quốc gia đến doanh nghiệp. Kết luận chỉ có một: không phải người tài năng nhất mà là người có grit cao nhất đã đi đến cuối cùng.",
+      "line3": "Grit gồm hai phần: đam mê (Passion)—khả năng tập trung vào một điều trong thời gian dài, và sự kiên trì (Perseverance)—khả năng không dừng lại khi gặp khó khăn. Khi kết hợp, chúng tạo ra sức mạnh vượt qua tài năng.",
+      "line4": "12 câu hỏi đo chỉ số grit và loại hình của bạn. Bạn cũng sẽ thấy bên nào mạnh hơn và bên nào cần cải thiện.",
+      "line5": "Đo Chỉ Số Grit Của Tôi 💪 Bắt Đầu Thành Thật",
+      "note": "※ Hãy chọn đáp án gần với bản thân thực sự của bạn nhất. Hãy trả lời dựa trên con người thật, không phải hình ảnh lý tưởng."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Bài test Grit)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Bắt đầu bài test Grit 💪 Trả lời thành thật",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "gritIndex": "Chỉ số Grit",
+      "perseveranceScoreTitle": "Điểm kiên trì (Perseverance)",
+      "passionScoreTitle": "Điểm đam mê (Passion)",
+      "bottleneckTitle": "Hướng dẫn nút thắt",
+      "bottleneckPerseverance": "Trong hai trục, kiên trì (Perseverance) thấp hơn nên hiện tại khả năng cao nút thắt là \"sức bền đến cùng\".\nThay vì cố gắng ngắn hạn, hãy xây dựng thói quen vượt qua giai đoạn khó trước.",
+      "bottleneckPassion": "Trong hai trục, đam mê (Passion) thấp hơn nên hiện tại khả năng cao nút thắt là \"hướng đi dài hạn\".\nĐể tránh mất hứng thú, hãy chia mục tiêu thành các bước 3 tháng và kết nối chúng.",
+      "perseveranceDiagnosis": "Chẩn đoán kiên trì",
+      "passionDiagnosis": "Chẩn đoán đam mê",
+      "actionItemsTitle": "Việc bạn có thể làm ngay",
+      "duckworthQuoteTitle": "Lời của Angela Duckworth",
+      "commonTraitsTitle": "Điểm chung",
+      "cautionTitle": "Lưu ý",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "kakao": "My Grit Index is {type}! 💪\nBe honest—how many points are you close to?",
+      "wechat": "My Grit Index is {type}! 💪\nCheck your grit too!",
+      "whatsapp": "My Grit Index is {type}! 💪\nHow many points are you close to? Share it with me!",
+      "telegram": "My Grit Index is {type}! 💪\nShare your result with me!",
+      "line": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "startDefault": "Grit Index Test 💪 Start honestly!",
+      "startKakao": "Grit Index Test 💪 Start honestly!",
+      "startWechat": "Grit Index Test 💪 Start honestly!",
+      "startWhatsapp": "Grit Index Test 💪 Start honestly!",
+      "startTelegram": "Grit Index Test 💪 Start honestly!",
+      "startLine": "Grit Index Test 💪 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
   "phase3AloneTimeTypeTest": {

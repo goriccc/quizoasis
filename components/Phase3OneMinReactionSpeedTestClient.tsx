@@ -219,7 +219,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
     }, 500);
   };
 
-  const triggerHitFeel = (
+  const triggerHitFeel = useCallback((
     isHit: boolean,
     clientX: number,
     clientY: number,
@@ -247,7 +247,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
       setTimeout(() => setFlashRed(false), 280);
       setTimeout(() => setScreenShake(false), 280);
     }
-  };
+  }, []);
 
   const clearTimers = () => {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
@@ -398,7 +398,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
     setTimeout(() => {
       setScreen('popup');
     }, 2200);
-  }, [hostChallenge, playerName]);
+  }, [hostChallenge, playerName, t]);
 
   const spawnTarget = useCallback(() => {
     if (finishedRef.current || phaseEndingRef.current) return;
@@ -572,7 +572,7 @@ export default function Phase3OneMinReactionSpeedTestClient({
         pushFloat(`${scored.delta}`, '#ef4444');
       }
     },
-    [t]
+    [t, triggerHitFeel]
   );
 
   const isCorrectAction = (tgt: ActiveTarget, action: string): boolean => {

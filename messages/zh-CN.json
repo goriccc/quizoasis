@@ -865,6 +865,12 @@
     "androidStep3": "完成！现在可以随时轻松访问",
     "manualInstructions": "请按照上述步骤手动添加。"
   },
+  "newTestRefreshToast": {
+    "title": "有新测试上线了",
+    "description": "刷新页面即可查看最新测试列表。",
+    "refresh": "刷新",
+    "dismiss": "关闭"
+  },
   "scrollToTop": {
     "label": "返回顶部"
   },
@@ -10687,6 +10693,71 @@
     "recommendations": {
       "similarTestsTop5": "🎯 相似测试推荐 Top5",
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  },
+  "phase3GritIndexTest": {
+    "startMessage": {
+      "line1": "成功者的共同点不是天赋。",
+      "line2": "心理学家Angela Duckworth在西点军校、全国拼字大赛、企业等多种环境中研究谁更容易成功。结论只有一个：走到最后的不是最有天赋的人，而是坚毅力（Grit）最高的人。",
+      "line3": "坚毅力由两部分组成：长期专注一件事的热情（Passion），和遇到困难也不停止的毅力（Perseverance）。当这两者结合时，便产生了超越天赋的力量。",
+      "line4": "通过12个问题测量你的坚毅指数和类型，同时也会显示哪一方面更强、哪一方面较弱。",
+      "line5": "测量我的坚毅指数 💪 诚实地开始",
+      "note": "※ 请选择最接近你当前状态的一项。请以真实的你为准作答，而不是理想中的你。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告区域（坚毅指数测试）",
+      "goToTest": "前往测试",
+      "startTest": "开始坚毅指数测试 💪 诚实地作答",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "similarTests": "类似测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "gritIndex": "坚毅指数",
+      "perseveranceScoreTitle": "毅力（Perseverance）分数",
+      "passionScoreTitle": "热情（Passion）分数",
+      "bottleneckTitle": "瓶颈提示",
+      "bottleneckPerseverance": "两个维度中毅力（Perseverance）较低，目前「坚持到底的力量」可能是瓶颈。\n与其靠短期意志硬撑，不如先建立度过困难阶段的routine。",
+      "bottleneckPassion": "两个维度中热情（Passion）较低，目前「长期坚持的方向感」可能是瓶颈。\n为避免兴趣频繁中断，试着把目标拆成3个月的小步骤连接起来。",
+      "perseveranceDiagnosis": "毅力诊断",
+      "passionDiagnosis": "热情诊断",
+      "actionItemsTitle": "现在就能做的事",
+      "duckworthQuoteTitle": "Angela Duckworth的一句话",
+      "commonTraitsTitle": "共同点",
+      "cautionTitle": "注意点",
+      "certificationPhrase": "认证语",
+      "oneLiner": "一句话评价"
+    },
+    "shareMessages": {
+      "default": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "kakao": "My Grit Index is {type}! 💪\nBe honest—how many points are you close to?",
+      "wechat": "My Grit Index is {type}! 💪\nCheck your grit too!",
+      "whatsapp": "My Grit Index is {type}! 💪\nHow many points are you close to? Share it with me!",
+      "telegram": "My Grit Index is {type}! 💪\nShare your result with me!",
+      "line": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "startDefault": "Grit Index Test 💪 Start honestly!",
+      "startKakao": "Grit Index Test 💪 Start honestly!",
+      "startWechat": "Grit Index Test 💪 Start honestly!",
+      "startWhatsapp": "Grit Index Test 💪 Start honestly!",
+      "startTelegram": "Grit Index Test 💪 Start honestly!",
+      "startLine": "Grit Index Test 💪 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
   "phase3AloneTimeTypeTest": {

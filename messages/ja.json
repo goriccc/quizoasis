@@ -866,6 +866,12 @@
     "androidStep3": "完了！いつでも簡単にアクセスできます",
     "manualInstructions": "上記の手順に従って手動で追加してください。"
   },
+  "newTestRefreshToast": {
+    "title": "新しいテストが追加されました",
+    "description": "最新の一覧を見るには画面を更新してください。",
+    "refresh": "更新する",
+    "dismiss": "閉じる"
+  },
   "scrollToTop": {
     "label": "ページ上部へ"
   },
@@ -10675,6 +10681,71 @@
     "recommendations": {
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
+    }
+  },
+  "phase3GritIndexTest": {
+    "startMessage": {
+      "line1": "成功者に共通していたのは、才能ではありませんでした。",
+      "line2": "心理学者アンジェラ・ダックワースは、ウェストポイント士官学校、全国スペル大会、企業などさまざまな環境で誰が成功するのかを研究しました。結論は一つ。才能が優れた人ではなく、グリット（Grit）が高い人が最後まで残ったのです。",
+      "line3": "グリットは2つの要素から成り立ちます。長期間一つのことに集中する情熱（Passion）と、困難でも止まらない粘り強さ（Perseverance）。この2つが合わさったとき、才能を凌駕する力が生まれます。",
+      "line4": "12の質問であなたのグリット指数とタイプを測定します。どちらが強く、どちらが弱いかも一緒に分かります。",
+      "line5": "自分のグリット指数を測る 💪 正直に始める",
+      "note": "※ 今の自分に最も近いものを選んでください。理想の姿ではなく、実際の自分を基準に答えてください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（グリット指数テスト）",
+      "goToTest": "テストに進む",
+      "startTest": "グリット指数テストを始める 💪 正直に答える",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "gritIndex": "グリット指数",
+      "perseveranceScoreTitle": "粘り強さ（Perseverance）スコア",
+      "passionScoreTitle": "情熱（Passion）スコア",
+      "bottleneckTitle": "ボトルネック案内",
+      "bottleneckPerseverance": "2つの軸のうち粘り強さ（Perseverance）が低いため、今は「最後まで耐える力」がボトルネックの可能性が高いです。\n短い意志で耐えるより、困難な区間を乗り越えるルーティンを先に作ってみてください。",
+      "bottleneckPassion": "2つの軸のうち情熱（Passion）が低いため、今は「長期的に続ける方向性」がボトルネックの可能性が高いです。\n興味が途切れないよう、3ヶ月単位で目標を分割してつなげてみてください。",
+      "perseveranceDiagnosis": "粘り強さ診断",
+      "passionDiagnosis": "情熱診断",
+      "actionItemsTitle": "今すぐできること",
+      "duckworthQuoteTitle": "アンジェラ・ダックワースの一言",
+      "commonTraitsTitle": "共通点",
+      "cautionTitle": "注意点",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "kakao": "My Grit Index is {type}! 💪\nBe honest—how many points are you close to?",
+      "wechat": "My Grit Index is {type}! 💪\nCheck your grit too!",
+      "whatsapp": "My Grit Index is {type}! 💪\nHow many points are you close to? Share it with me!",
+      "telegram": "My Grit Index is {type}! 💪\nShare your result with me!",
+      "line": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "startDefault": "Grit Index Test 💪 Start honestly!",
+      "startKakao": "Grit Index Test 💪 Start honestly!",
+      "startWechat": "Grit Index Test 💪 Start honestly!",
+      "startWhatsapp": "Grit Index Test 💪 Start honestly!",
+      "startTelegram": "Grit Index Test 💪 Start honestly!",
+      "startLine": "Grit Index Test 💪 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
   "phase3AloneTimeTypeTest": {

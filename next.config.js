@@ -10,6 +10,7 @@ const withPWA = withPWAInit({
   workboxOptions: {
     skipWaiting: true,
     clientsClaim: true,
+    maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
     runtimeCaching: [
       {
         urlPattern: /^https:\/\/.*\.supabase\.co\/.*/i,

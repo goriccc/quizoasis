@@ -7,6 +7,7 @@ import { SITE_URL } from '@/lib/siteUrl';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InstallPrompt from '@/components/InstallPrompt';
+import NewTestRefreshToast from '@/components/NewTestRefreshToast';
 import ScrollToTop from '@/components/ScrollToTop';
 import AdTrafficGuard from '@/components/AdTrafficGuard';
 
@@ -129,6 +130,7 @@ export default async function LocaleLayout({
       <Footer />
       <AdTrafficGuard />
       <InstallPrompt />
+      <NewTestRefreshToast />
       <ScrollToTop />
     </NextIntlClientProvider>
   );

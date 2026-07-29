@@ -6487,6 +6487,12 @@
     "androidStep3": "완료! 이제 언제든지 쉽게 접속하세요",
     "manualInstructions": "위의 방법대로 수동으로 추가해주세요."
   },
+  "newTestRefreshToast": {
+    "title": "새 테스트가 올라왔어요",
+    "description": "최신 목록을 보려면 화면을 새로고침해 주세요.",
+    "refresh": "새로고침",
+    "dismiss": "닫기"
+  },
   "scrollToTop": {
     "label": "맨 위로"
   },
@@ -12632,6 +12638,71 @@
     "recommendations": {
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 Top 5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 Top 5"
+    }
+  },
+  "phase3GritIndexTest": {
+    "startMessage": {
+      "line1": "성공한 사람들의 공통점은 재능이 아니었습니다.",
+      "line2": "심리학자 앤젤라 더크워스는 웨스트포인트 사관학교·전국 철자법 경시대회·기업 등 다양한 환경에서 누가 성공하는지 연구했습니다. 결론은 하나였습니다. 재능이 뛰어난 사람이 아니라 그릿(Grit)이 높은 사람이 끝까지 갔습니다.",
+      "line3": "그릿은 두 가지로 이루어집니다. 오랫동안 하나에 집중하는 열정(Passion)과 어려워도 멈추지 않는 끈기(Perseverance). 이 두 가지가 합쳐질 때 재능을 이기는 힘이 생깁니다.",
+      "line4": "12가지 질문으로 나의 그릿 지수와 유형을 측정합니다. 어느 쪽이 강하고 어느 쪽이 약한지도 함께 나옵니다.",
+      "line5": "내 그릿 지수 측정하기 💪 솔직하게 시작",
+      "note": "※ 현재 나의 모습에 가장 가까운 것을 선택하세요. 이상적인 모습이 아닌 실제 나를 기준으로 답하세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 그릿 지수 측정)",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "그릿 지수 측정 시작 💪 솔직하게 시작",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "gritIndex": "그릿 지수",
+      "perseveranceScoreTitle": "끈기(Perseverance) 점수",
+      "passionScoreTitle": "열정(Passion) 점수",
+      "bottleneckTitle": "병목 안내",
+      "bottleneckPerseverance": "두 축 중 끈기(Perseverance)가 더 낮아서, 지금은 '끝까지 버티는 힘'이 병목일 가능성이 커요.\n짧은 의지로 버티기보다, 어려운 구간을 통과하는 루틴을 먼저 만들어보세요.",
+      "bottleneckPassion": "두 축 중 열정(Passion)이 더 낮아서, 지금은 '장기적으로 이어가는 방향성'이 병목일 가능성이 커요.\n흥미를 자주 끊지 않도록, 3개월 단위로 목표를 쪼개서 연결해보세요.",
+      "perseveranceDiagnosis": "끈기 진단",
+      "passionDiagnosis": "열정 진단",
+      "actionItemsTitle": "지금 당장 할 수 있는 것",
+      "duckworthQuoteTitle": "앤젤라 더크워스 한 마디",
+      "commonTraitsTitle": "공통점",
+      "cautionTitle": "주의점",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "내 그릿 지수는 {type}! 💪\\n너는 몇 점에 가까워?",
+      "kakao": "내 그릿 지수는 {type}! 💪\\n솔직하게 너는 몇 점에 가까워?",
+      "wechat": "내 그릿 지수는 {type}! 💪\\n이거 보고 너의 그릿도 같이 확인해봐!",
+      "whatsapp": "내 그릿 지수는 {type}! 💪\\n너는 몇 점에 가까워? 같이 해보자!",
+      "telegram": "내 그릿 지수는 {type}! 💪\\n너는 몇 점에 가까워? 답장으로 공유해봐!",
+      "line": "내 그릿 지수는 {type}! 💪\\n너는 몇 점에 가까워?",
+      "startDefault": "나의 그릿 지수 측정 💪 솔직하게 시작해봐!",
+      "startKakao": "나의 그릿 지수 측정 💪 솔직하게 시작해봐!",
+      "startWechat": "나의 그릿 지수 측정 💪 솔직하게 시작해봐!",
+      "startWhatsapp": "나의 그릿 지수 측정 💪 솔직하게 시작해봐!",
+      "startTelegram": "나의 그릿 지수 측정 💪 솔직하게 시작해봐!",
+      "startLine": "나의 그릿 지수 측정 💪 솔직하게 시작해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
   "formats": {

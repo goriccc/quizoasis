@@ -867,6 +867,12 @@
     "androidStep3": "Done! You can access QuizOasis anytime",
     "manualInstructions": "Please follow the steps above to add manually."
   },
+  "newTestRefreshToast": {
+    "title": "A new test is available",
+    "description": "Refresh to see the latest tests.",
+    "refresh": "Refresh",
+    "dismiss": "Dismiss"
+  },
   "scrollToTop": {
     "label": "Top"
   },
@@ -10692,6 +10698,71 @@
       "wechatCopy": "Link copied! Paste it in WeChat to share.",
       "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
       "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
+  "phase3GritIndexTest": {
+    "startMessage": {
+      "line1": "What successful people have in common isn't talent.",
+      "line2": "Psychologist Angela Duckworth studied who succeeds across diverse settings—from West Point to spelling bees to businesses. Her conclusion was clear: it wasn't the most talented who made it to the end, but those with the highest grit.",
+      "line3": "Grit has two parts: passion—the ability to stay focused on one thing for years—and perseverance—the ability to keep going when things get hard. Together, they create a force that can beat talent.",
+      "line4": "12 questions measure your grit index and type. You'll also see which side is stronger and which needs work.",
+      "line5": "Measure My Grit Index 💪 Start Honestly",
+      "note": "※ Choose the answer closest to how you actually are right now—not who you wish you were."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (Grit Index Test)",
+      "goToTest": "Go to test",
+      "startTest": "Start the Grit Index Test 💪 Be honest",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "gritIndex": "Grit Index",
+      "perseveranceScoreTitle": "Perseverance score",
+      "passionScoreTitle": "Passion score",
+      "bottleneckTitle": "Bottleneck notice",
+      "bottleneckPerseverance": "Perseverance is your bottleneck right now.\nBuild a routine that helps you get through hard parts.",
+      "bottleneckPassion": "Passion is your bottleneck right now.\nKeep your long-term direction by breaking goals into 3-month steps.",
+      "perseveranceDiagnosis": "Perseverance diagnosis",
+      "passionDiagnosis": "Passion diagnosis",
+      "actionItemsTitle": "What you can do now",
+      "duckworthQuoteTitle": "Angela Duckworth quote",
+      "commonTraitsTitle": "Common traits",
+      "cautionTitle": "Caution",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "kakao": "My Grit Index is {type}! 💪\nBe honest—how many points are you close to?",
+      "wechat": "My Grit Index is {type}! 💪\nCheck your grit too!",
+      "whatsapp": "My Grit Index is {type}! 💪\nHow many points are you close to? Share it with me!",
+      "telegram": "My Grit Index is {type}! 💪\nShare your result with me!",
+      "line": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "startDefault": "Grit Index Test 💪 Start honestly!",
+      "startKakao": "Grit Index Test 💪 Start honestly!",
+      "startWechat": "Grit Index Test 💪 Start honestly!",
+      "startWhatsapp": "Grit Index Test 💪 Start honestly!",
+      "startTelegram": "Grit Index Test 💪 Start honestly!",
+      "startLine": "Grit Index Test 💪 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
     },
     "recommendations": {
       "similarTestsTop5": "🎯 Top 5 Similar Tests",

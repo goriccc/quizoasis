@@ -235,7 +235,7 @@ export default function Phase3MultitaskingAbilityTestClient({
   });
 
   /** 버튼/타깃 기준 좌표 우선 — pointer 좌표가 빠지면 화면 중앙으로 떨어지는 문제 방지 */
-  const hitXY = (
+  const hitXY = useCallback((
     e?: React.SyntheticEvent | React.MouseEvent | React.TouchEvent | React.PointerEvent,
     fallbackEl?: HTMLElement | null
   ) => {
@@ -265,10 +265,13 @@ export default function Phase3MultitaskingAbilityTestClient({
     const cy = typeof ne.clientY === 'number' ? ne.clientY : ne.nativeEvent?.clientY;
     if (typeof cx === 'number' && typeof cy === 'number') return { x: cx, y: cy };
     return fallbackXY();
-  };
+  }, []);
 
-  const pointerXY = (e?: React.SyntheticEvent | React.MouseEvent | React.TouchEvent | React.PointerEvent) =>
-    hitXY(e);
+  const pointerXY = useCallback(
+    (e?: React.SyntheticEvent | React.MouseEvent | React.TouchEvent | React.PointerEvent) =>
+      hitXY(e),
+    [hitXY]
+  );
 
   /** 터치+클릭 이중 입력 / 연타 방지 */
   const guardAction = () => {
@@ -521,7 +524,7 @@ export default function Phase3MultitaskingAbilityTestClient({
         schedule(() => spawnR1(), rand(500, 1500));
       }
     },
-    [r1Target, endRound1, schedule, spawnR1, triggerHitFeel]
+    [r1Target, endRound1, schedule, spawnR1, triggerHitFeel, pointerXY]
   );
 
   const missR1Bg = (e: React.MouseEvent | React.TouchEvent) => {
@@ -577,7 +580,7 @@ export default function Phase3MultitaskingAbilityTestClient({
         return cur;
       });
     }, R2_TIMEOUT_MS);
-  }, [schedule, endRound2]);
+  }, [schedule, endRound2, hitXY]);
 
   const spawnR2Right = useCallback(() => {
     if (roundEndedRef.current || r2RightDoneRef.current >= 10) return;
@@ -601,7 +604,7 @@ export default function Phase3MultitaskingAbilityTestClient({
         return cur;
       });
     }, R2_TIMEOUT_MS);
-  }, [schedule, endRound2]);
+  }, [schedule, endRound2, hitXY]);
 
   const answerR2Left = (
     color: 'red' | 'blue',

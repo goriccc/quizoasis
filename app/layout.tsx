@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import Head from 'next/head';
 import './globals.css';
@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     statusBarStyle: 'default',
   },
   manifest: '/manifest.json',
-  themeColor: '#667eea',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
@@ -46,6 +45,10 @@ export const metadata: Metadata = {
       }
     ],
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#667eea',
 };
 
 export default function RootLayout({

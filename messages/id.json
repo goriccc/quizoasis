@@ -865,6 +865,12 @@
     "androidStep3": "Selesai! Sekarang Anda dapat dengan mudah mengakses kapan saja",
     "manualInstructions": "Silakan ikuti langkah-langkah di atas untuk menambahkan secara manual."
   },
+  "newTestRefreshToast": {
+    "title": "Ada tes baru",
+    "description": "Muat ulang halaman untuk melihat daftar terbaru.",
+    "refresh": "Muat ulang",
+    "dismiss": "Tutup"
+  },
   "scrollToTop": {
     "label": "Ke atas"
   },
@@ -10687,6 +10693,71 @@
     "recommendations": {
       "similarTestsTop5": "🎯 Top 5 Tes Serupa",
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
+  "phase3GritIndexTest": {
+    "startMessage": {
+      "line1": "Kesamaan orang sukses bukan bakat.",
+      "line2": "Psikolog Angela Duckworth meneliti siapa yang sukses di berbagai lingkungan—dari West Point, spelling bee nasional, hingga perusahaan. Kesimpulannya satu: bukan yang paling berbakat yang bertahan sampai akhir, melainkan yang grit-nya tertinggi.",
+      "line3": "Grit terdiri dari dua bagian: passion—kemampuan fokus pada satu hal dalam jangka panjang, dan perseverance—kemampuan terus maju saat sulit. Keduanya bersama menciptakan kekuatan yang mengalahkan bakat.",
+      "line4": "12 pertanyaan mengukur indeks grit dan tipenya. Kamu juga akan melihat sisi mana yang lebih kuat dan mana yang perlu diperbaiki.",
+      "line5": "Ukur Indeks Grit-ku 💪 Mulai dengan Jujur",
+      "note": "※ Pilih jawaban yang paling dekat dengan dirimu saat ini. Jawab berdasarkan dirimu yang sebenarnya, bukan versi ideal."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Tes Indeks Grit)",
+      "goToTest": "Ke tes",
+      "startTest": "Mulai Tes Indeks Grit 💪 Jawab dengan jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "gritIndex": "Indeks Grit",
+      "perseveranceScoreTitle": "Skor ketekunan (Perseverance)",
+      "passionScoreTitle": "Skor semangat (Passion)",
+      "bottleneckTitle": "Panduan hambatan",
+      "bottleneckPerseverance": "Di antara dua sumbu, ketekunan (Perseverance) lebih rendah sehingga kemungkinan hambatan saat ini adalah \"kekuatan bertahan sampai akhir\".\nDaripada bertahan dengan kemauan singkat, buat rutinitas melewati bagian sulit terlebih dahulu.",
+      "bottleneckPassion": "Di antara dua sumbu, semangat (Passion) lebih rendah sehingga kemungkinan hambatan saat ini adalah \"arah jangka panjang\".\nAgar minat tidak sering terputus, pecah tujuan menjadi langkah 3 bulan dan hubungkan.",
+      "perseveranceDiagnosis": "Diagnosis ketekunan",
+      "passionDiagnosis": "Diagnosis semangat",
+      "actionItemsTitle": "Yang bisa kamu lakukan sekarang",
+      "duckworthQuoteTitle": "Kutipan Angela Duckworth",
+      "commonTraitsTitle": "Ciri umum",
+      "cautionTitle": "Perhatian",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "kakao": "My Grit Index is {type}! 💪\nBe honest—how many points are you close to?",
+      "wechat": "My Grit Index is {type}! 💪\nCheck your grit too!",
+      "whatsapp": "My Grit Index is {type}! 💪\nHow many points are you close to? Share it with me!",
+      "telegram": "My Grit Index is {type}! 💪\nShare your result with me!",
+      "line": "My Grit Index is {type}! 💪\nHow many points are you close to?",
+      "startDefault": "Grit Index Test 💪 Start honestly!",
+      "startKakao": "Grit Index Test 💪 Start honestly!",
+      "startWechat": "Grit Index Test 💪 Start honestly!",
+      "startWhatsapp": "Grit Index Test 💪 Start honestly!",
+      "startTelegram": "Grit Index Test 💪 Start honestly!",
+      "startLine": "Grit Index Test 💪 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
   "phase3AloneTimeTypeTest": {
