@@ -10704,6 +10704,79 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3CompetitiveDnaTest": {
+    "startMessage": {
+      "line1": "Competitiveness is not bad. Its intensity and direction decide everything.",
+      "line2": "Some people throw the controller when they lose a game; others shrug and move on. At work, some think \"I should work harder too\" when a colleague gets praise, while others think \"Why not me?\"",
+      "line3": "Competitiveness can fuel growth or poison relationships. Direction matters more than intensity.",
+      "line4": "12 questions analyze your real reactions and motivation type in competitive situations.",
+      "line5": "Analyze My Competitive DNA 🔥 Start Honestly",
+      "note": "※ Choose the option closest to your actual reaction pattern, not your ideal self."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Competitive DNA Analysis)",
+      "goToTest": "Go to test",
+      "startTest": "Analyze My Competitive DNA 🔥 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "competitiveDna": "Competitive DNA",
+      "competitiveType": "Competitiveness type",
+      "competitiveKeywords": "Competition keywords",
+      "domainAnalysisTitle": "Detailed competitiveness pattern analysis",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "reactionDomain": "Immediate reaction in competition",
+      "winLossDomain": "Attitude toward winning and losing",
+      "motivationDomain": "Competition motivation",
+      "comparisonDomain": "Comparing with others",
+      "strategyDomain": "Competition style and strategy",
+      "lifeImpactDomain": "Impact on daily life",
+      "strongestDomain": "Domain where competitiveness peaks",
+      "lowestDomain": "Domain where other motives dominate",
+      "strengthsTitle": "Strengths of this type",
+      "cautionsTitle": "Cautions for this type",
+      "characteristicsTitle": "Characteristics of this type",
+      "environmentGuideTitle": "Environment and activity fit",
+      "bestEnvironmentsTitle": "Best-fit environments",
+      "sportsGameTypesTitle": "Best-fit sports and games",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My competitive DNA: {type}! 🔥\nWhat competitiveness type are you?",
+      "kakao": "My competitive DNA: {type}! 🔥\nWhy am I like this? What about you?",
+      "wechat": "My competitive DNA: {type}! 🔥\nTry this test too!",
+      "whatsapp": "My competitive DNA: {type}! 🔥\nWhat type are you? Let's try together!",
+      "telegram": "My competitive DNA: {type}! 🔥\nWhat competitiveness type are you?",
+      "line": "My competitive DNA: {type}! 🔥\nWhy am I like this? What about you?",
+      "startDefault": "Competitive DNA Analysis 🔥 Start honestly!",
+      "startKakao": "Competitive DNA Analysis 🔥 Start honestly!",
+      "startWechat": "Competitive DNA Analysis 🔥 Start honestly!",
+      "startWhatsapp": "Competitive DNA Analysis 🔥 Start honestly!",
+      "startTelegram": "Competitive DNA Analysis 🔥 Start honestly!",
+      "startLine": "Competitive DNA Analysis 🔥 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DecisionMakingStyleTest": {
     "startMessage": {
       "line1": "How do you make decisions when facing an important choice?",

@@ -10164,6 +10164,79 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3CompetitiveDnaTest": {
+    "startMessage": {
+      "line1": "競爭心並不壞，濃度和方向才決定一切。",
+      "line2": "有人遊戲輸了會摔手把，有人輸了說「哦這樣啊」就過去。工作中同事被認可時，有人會想「我也要更努力」，有人會想「為什麼不是我」。",
+      "line3": "競爭心可以是成長的燃料，也可能是關係的毒藥。方向比強度更重要。",
+      "line4": "透過12個問題分析你在競爭情境中的真實反應與動機類型。",
+      "line5": "分析我的競爭心DNA 🔥 誠實地開始",
+      "note": "※ 請選擇最接近你實際反應模式的一項，而非理想形象。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（競爭心DNA分析）",
+      "goToTest": "前往測試",
+      "startTest": "分析我的競爭心DNA 🔥 誠實地開始",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "competitiveDna": "競爭心DNA",
+      "competitiveType": "競爭心類型",
+      "competitiveKeywords": "競爭關鍵詞",
+      "domainAnalysisTitle": "競爭心模式詳細分析",
+      "totalScore": "總分",
+      "scoreUnit": "分",
+      "reactionDomain": "競爭情境即時反應",
+      "winLossDomain": "對勝負的態度",
+      "motivationDomain": "競爭動機",
+      "comparisonDomain": "與他人比較傾向",
+      "strategyDomain": "競爭方式與策略",
+      "lifeImpactDomain": "對生活的影響",
+      "strongestDomain": "競爭心最強發的領域",
+      "lowestDomain": "其他動機更強的領域",
+      "strengthsTitle": "此類型的優勢",
+      "cautionsTitle": "此類型的注意點",
+      "characteristicsTitle": "此類型的特徵",
+      "environmentGuideTitle": "環境與活動適配",
+      "bestEnvironmentsTitle": "適合的環境",
+      "sportsGameTypesTitle": "適合的運動與遊戲",
+      "certificationPhrase": "認證語",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "我的競爭心DNA：{type}！🔥\n你是什麼競爭心類型？",
+      "kakao": "我的競爭心DNA：{type}！🔥\n我怎麼這樣競爭 哈哈 你呢？",
+      "wechat": "我的競爭心DNA：{type}！🔥\n一起來測測吧！",
+      "whatsapp": "我的競爭心DNA：{type}！🔥\n你是什麼類型？一起試試！",
+      "telegram": "我的競爭心DNA：{type}！🔥\n你是什麼競爭心類型？",
+      "line": "我的競爭心DNA：{type}！🔥\n我怎麼這樣競爭 哈哈 你呢？",
+      "startDefault": "競爭心DNA分析 🔥 誠實地開始吧！",
+      "startKakao": "競爭心DNA分析 🔥 誠實地開始吧！",
+      "startWechat": "競爭心DNA分析 🔥 誠實地開始吧！",
+      "startWhatsapp": "競爭心DNA分析 🔥 誠實地開始吧！",
+      "startTelegram": "競爭心DNA分析 🔥 誠實地開始吧！",
+      "startLine": "競爭心DNA分析 🔥 誠實地開始吧！"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DecisionMakingStyleTest": {
     "startMessage": {
       "line1": "面對重要選擇時，你會如何決定？",

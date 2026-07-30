@@ -10695,6 +10695,79 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3CompetitiveDnaTest": {
+    "startMessage": {
+      "line1": "Daya saing bukan hal buruk. Intensitas dan arahnya yang menentukan segalanya.",
+      "line2": "Ada yang melempar controller saat kalah game, ada yang bilang \"oh gitu\" lalu lanjut. Di kerja, ada yang berpikir \"aku juga harus lebih giat\", ada yang \"kenapa bukan aku\".",
+      "line3": "Daya saing bisa jadi bahan bakar pertumbuhan atau racun relasi. Arah lebih penting dari intensitas.",
+      "line4": "12 pertanyaan menganalisis reaksi nyata dan tipe motivasi saat bersaing.",
+      "line5": "Analisis DNA Daya Saing-ku 🔥 Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang paling dekat dengan pola reaksi nyata, bukan citra ideal."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Analisis DNA Daya Saing)",
+      "goToTest": "Ke tes",
+      "startTest": "Analisis DNA Daya Saing-ku 🔥 Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "competitiveDna": "DNA daya saing",
+      "competitiveType": "Tipe daya saing",
+      "competitiveKeywords": "Kata kunci kompetisi",
+      "domainAnalysisTitle": "Analisis pola daya saing detail",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "reactionDomain": "Reaksi langsung saat bersaing",
+      "winLossDomain": "Sikap terhadap menang/kalah",
+      "motivationDomain": "Motivasi bersaing",
+      "comparisonDomain": "Membandingkan dengan orang lain",
+      "strategyDomain": "Gaya & strategi bersaing",
+      "lifeImpactDomain": "Dampak pada kehidupan",
+      "strongestDomain": "Domain daya saing paling kuat",
+      "lowestDomain": "Domain motivasi lain lebih dominan",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionsTitle": "Peringatan tipe ini",
+      "characteristicsTitle": "Karakteristik tipe ini",
+      "environmentGuideTitle": "Kesesuaian lingkungan & aktivitas",
+      "bestEnvironmentsTitle": "Lingkungan yang cocok",
+      "sportsGameTypesTitle": "Olahraga & game yang cocok",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "DNA daya saingku: {type}! 🔥\nKamu tipe daya saing apa?",
+      "kakao": "DNA daya saingku: {type}! 🔥\nKenapa aku bersaing seperti ini? Kamu?",
+      "wechat": "DNA daya saingku: {type}! 🔥\nCoba tes ini juga!",
+      "whatsapp": "DNA daya saingku: {type}! 🔥\nKamu tipe apa? Ayo coba bareng!",
+      "telegram": "DNA daya saingku: {type}! 🔥\nKamu tipe daya saing apa?",
+      "line": "DNA daya saingku: {type}! 🔥\nKenapa aku bersaing seperti ini? Kamu?",
+      "startDefault": "Analisis DNA Daya Saing 🔥 Mulai dengan jujur!",
+      "startKakao": "Analisis DNA Daya Saing 🔥 Mulai dengan jujur!",
+      "startWechat": "Analisis DNA Daya Saing 🔥 Mulai dengan jujur!",
+      "startWhatsapp": "Analisis DNA Daya Saing 🔥 Mulai dengan jujur!",
+      "startTelegram": "Analisis DNA Daya Saing 🔥 Mulai dengan jujur!",
+      "startLine": "Analisis DNA Daya Saing 🔥 Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DecisionMakingStyleTest": {
     "startMessage": {
       "line1": "Saat menghadapi pilihan penting, bagaimana kamu memutuskan?",

@@ -10695,6 +10695,79 @@
       "popularTestsTop5": "🔥 热门测试推荐 Top5"
     }
   },
+  "phase3CompetitiveDnaTest": {
+    "startMessage": {
+      "line1": "竞争心并不坏，浓度和方向才决定一切。",
+      "line2": "有人游戏输了会摔手柄，有人输了说“哦这样啊”就过去。工作中同事被认可时，有人会想“我也要更努力”，有人会想“为什么不是我”。",
+      "line3": "竞争心可以是成长的燃料，也可能是关系的毒药。方向比强度更重要。",
+      "line4": "通过12个问题分析你在竞争情境中的真实反应与动机类型。",
+      "line5": "分析我的竞争心DNA 🔥 诚实地开始",
+      "note": "※ 请选择最接近你实际反应模式的一项，而非理想形象。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告区域（竞争心DNA分析）",
+      "goToTest": "前往测试",
+      "startTest": "分析我的竞争心DNA 🔥 诚实地开始",
+      "shareResult": "分享结果",
+      "retakeTest": "重新测试",
+      "otherTests": "查看其他测试",
+      "similarTests": "类似测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "competitiveDna": "竞争心DNA",
+      "competitiveType": "竞争心类型",
+      "competitiveKeywords": "竞争关键词",
+      "domainAnalysisTitle": "竞争心模式详细分析",
+      "totalScore": "总分",
+      "scoreUnit": "分",
+      "reactionDomain": "竞争情境即时反应",
+      "winLossDomain": "对胜负的态度",
+      "motivationDomain": "竞争动机",
+      "comparisonDomain": "与他人比较倾向",
+      "strategyDomain": "竞争方式与策略",
+      "lifeImpactDomain": "对生活的影响",
+      "strongestDomain": "竞争心最强发的领域",
+      "lowestDomain": "其他动机更强的领域",
+      "strengthsTitle": "此类型的优势",
+      "cautionsTitle": "此类型的注意点",
+      "characteristicsTitle": "此类型的特征",
+      "environmentGuideTitle": "环境与活动适配",
+      "bestEnvironmentsTitle": "适合的环境",
+      "sportsGameTypesTitle": "适合的运动与游戏",
+      "certificationPhrase": "认证语",
+      "oneLiner": "一句话评价"
+    },
+    "shareMessages": {
+      "default": "我的竞争心DNA：{type}！🔥\n你是什么竞争心类型？",
+      "kakao": "我的竞争心DNA：{type}！🔥\n我怎么这样竞争 哈哈 你呢？",
+      "wechat": "我的竞争心DNA：{type}！🔥\n一起来测测吧！",
+      "whatsapp": "我的竞争心DNA：{type}！🔥\n你是什么类型？一起试试！",
+      "telegram": "我的竞争心DNA：{type}！🔥\n你是什么竞争心类型？",
+      "line": "我的竞争心DNA：{type}！🔥\n我怎么这样竞争 哈哈 你呢？",
+      "startDefault": "竞争心DNA分析 🔥 诚实地开始吧！",
+      "startKakao": "竞争心DNA分析 🔥 诚实地开始吧！",
+      "startWechat": "竞争心DNA分析 🔥 诚实地开始吧！",
+      "startWhatsapp": "竞争心DNA分析 🔥 诚实地开始吧！",
+      "startTelegram": "竞争心DNA分析 🔥 诚实地开始吧！",
+      "startLine": "竞争心DNA分析 🔥 诚实地开始吧！"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DecisionMakingStyleTest": {
     "startMessage": {
       "line1": "面对重要选择时，你会如何决定？",

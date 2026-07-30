@@ -10695,6 +10695,79 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3CompetitiveDnaTest": {
+    "startMessage": {
+      "line1": "Tinh thần cạnh tranh không xấu. Nồng độ và hướng đi mới quyết định mọi thứ.",
+      "line2": "Có người thua game thì ném tay cầm, có người thua rồi \"ừ vậy à\" rồi qua. Ở công ty, có người nghĩ \"mình cũng phải cố hơn\", có người nghĩ \"sao không phải mình\".",
+      "line3": "Tinh thần cạnh tranh có thể là nhiên liệu phát triển hoặc độc dối quan hệ. Hướng quan trọng hơn cường độ.",
+      "line4": "12 câu hỏi phân tích phản ứng thật và kiểu động lực của bạn trong cạnh tranh.",
+      "line5": "Phân Tích DNA Tinh Thần Cạnh Tranh Của Tôi 🔥 Bắt Đầu Thành Thật",
+      "note": "※ Hãy chọn đáp án gần với phản ứng thực tế nhất, không phải hình mẫu lý tưởng."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Phân tích DNA cạnh tranh)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Phân Tích DNA Tinh Thần Cạnh Tranh Của Tôi 🔥 Bắt Đầu Thành Thật",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "competitiveDna": "DNA cạnh tranh",
+      "competitiveType": "Loại tinh thần cạnh tranh",
+      "competitiveKeywords": "Từ khóa cạnh tranh",
+      "domainAnalysisTitle": "Phân tích chi tiết mẫu cạnh tranh",
+      "totalScore": "Tổng điểm",
+      "scoreUnit": " điểm",
+      "reactionDomain": "Phản ứng tức thì khi cạnh tranh",
+      "winLossDomain": "Thái độ với thắng thua",
+      "motivationDomain": "Động lực cạnh tranh",
+      "comparisonDomain": "So sánh với người khác",
+      "strategyDomain": "Cách thức & chiến lược",
+      "lifeImpactDomain": "Ảnh hưởng đến cuộc sống",
+      "strongestDomain": "Lĩnh vực cạnh tranh bùng nổ mạnh nhất",
+      "lowestDomain": "Lĩnh vực động lực khác mạnh hơn",
+      "strengthsTitle": "Điểm mạnh của loại hình này",
+      "cautionsTitle": "Lưu ý của loại hình này",
+      "characteristicsTitle": "Đặc điểm của loại hình này",
+      "environmentGuideTitle": "Môi trường & hoạt động phù hợp",
+      "bestEnvironmentsTitle": "Môi trường phù hợp",
+      "sportsGameTypesTitle": "Thể thao & game phù hợp",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "DNA cạnh tranh của tôi: {type}! 🔥\nBạn thuộc loại nào?",
+      "kakao": "DNA cạnh tranh của tôi: {type}! 🔥\nSao mình cạnh tranh thế này nhỉ? Còn bạn?",
+      "wechat": "DNA cạnh tranh của tôi: {type}! 🔥\nCùng thử bài test này nhé!",
+      "whatsapp": "DNA cạnh tranh của tôi: {type}! 🔥\nBạn là loại nào? Cùng thử nhé!",
+      "telegram": "DNA cạnh tranh của tôi: {type}! 🔥\nBạn thuộc loại nào?",
+      "line": "DNA cạnh tranh của tôi: {type}! 🔥\nSao mình cạnh tranh thế này nhỉ? Còn bạn?",
+      "startDefault": "Phân tích DNA Tinh thần cạnh tranh 🔥 Bắt đầu thành thật!",
+      "startKakao": "Phân tích DNA Tinh thần cạnh tranh 🔥 Bắt đầu thành thật!",
+      "startWechat": "Phân tích DNA Tinh thần cạnh tranh 🔥 Bắt đầu thành thật!",
+      "startWhatsapp": "Phân tích DNA Tinh thần cạnh tranh 🔥 Bắt đầu thành thật!",
+      "startTelegram": "Phân tích DNA Tinh thần cạnh tranh 🔥 Bắt đầu thành thật!",
+      "startLine": "Phân tích DNA Tinh thần cạnh tranh 🔥 Bắt đầu thành thật!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DecisionMakingStyleTest": {
     "startMessage": {
       "line1": "Trước một lựa chọn quan trọng, bạn quyết định thế nào?",

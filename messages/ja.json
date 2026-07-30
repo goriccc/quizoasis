@@ -10683,6 +10683,79 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3CompetitiveDnaTest": {
+    "startMessage": {
+      "line1": "競争心は悪いものではありません。濃さと方向がすべてを決めます。",
+      "line2": "ゲームで負けるとコントローラーを投げる人もいれば、「まあそうか」と流す人もいます。仕事で同僚が認められると「自分も頑張ろう」と思う人もいれば、「なぜ自分じゃない」と思う人もいます。",
+      "line3": "競争心は成長の燃料にも、関係の毒にもなります。強さより方向が大切です。",
+      "line4": "12の質問で競争場面での本当の反応と動機タイプを分析します。",
+      "line5": "私の競争心DNA分析 🔥 正直に始める",
+      "note": "※ 理想像ではなく、実際の反応パターンに最も近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（競争心DNA分析）",
+      "goToTest": "テストに進む",
+      "startTest": "私の競争心DNA分析 🔥 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "competitiveDna": "競争心DNA",
+      "competitiveType": "競争心タイプ",
+      "competitiveKeywords": "競争キーワード",
+      "domainAnalysisTitle": "競争心パターン詳細分析",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "reactionDomain": "競争場面の即時反応",
+      "winLossDomain": "勝敗への態度",
+      "motivationDomain": "競争動機",
+      "comparisonDomain": "他者比較傾向",
+      "strategyDomain": "競争方式・戦略",
+      "lifeImpactDomain": "生活への影響",
+      "strongestDomain": "競争心が最も強く発火する領域",
+      "lowestDomain": "競争より他の動機が強い領域",
+      "strengthsTitle": "このタイプの強み",
+      "cautionsTitle": "このタイプの注意点",
+      "characteristicsTitle": "このタイプの特徴",
+      "environmentGuideTitle": "環境・活動適合度",
+      "bestEnvironmentsTitle": "合う環境",
+      "sportsGameTypesTitle": "合うスポーツ・ゲーム",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の競争心DNA: {type}! 🔥\nあなたはどんな競争心タイプ？",
+      "kakao": "私の競争心DNA: {type}! 🔥\nなんでこう競争するんだろう ㅋㅋ あなたは？",
+      "wechat": "私の競争心DNA: {type}! 🔥\n一緒にやってみよう！",
+      "whatsapp": "私の競争心DNA: {type}! 🔥\nあなたはどんなタイプ？一緒にやろう！",
+      "telegram": "私の競争心DNA: {type}! 🔥\nあなたはどんな競争心タイプ？",
+      "line": "私の競争心DNA: {type}! 🔥\nなんでこう競争するんだろう ㅋㅋ あなたは？",
+      "startDefault": "競争心DNA分析 🔥 正直に始めよう！",
+      "startKakao": "競争心DNA分析 🔥 正直に始めよう！",
+      "startWechat": "競争心DNA分析 🔥 正直に始めよう！",
+      "startWhatsapp": "競争心DNA分析 🔥 正直に始めよう！",
+      "startTelegram": "競争心DNA分析 🔥 正直に始めよう！",
+      "startLine": "競争心DNA分析 🔥 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again.",
+      "kakaoError": "KakaoTalk share error."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DecisionMakingStyleTest": {
     "startMessage": {
       "line1": "重要な選択の前で、あなたはどう決めますか？",

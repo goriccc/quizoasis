@@ -12850,6 +12850,79 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3CompetitiveDnaTest": {
+    "startMessage": {
+      "line1": "경쟁심은 나쁜 게 아닙니다. 다만 그 농도와 방향이 모든 것을 결정합니다.",
+      "line2": "게임에서 지면 컨트롤러를 내던지는 사람이 있고 지면 \"어 그렇구나\" 하고 넘어가는 사람이 있습니다. 일에서 동료가 인정받을 때 \"나도 더 열심히 해야지\"가 되는 사람이 있고 \"왜 내가 아니지\"가 되는 사람이 있습니다.",
+      "line3": "경쟁심은 성장의 연료가 되기도 하고 관계의 독이 되기도 합니다. 강도보다 방향이 더 중요합니다.",
+      "line4": "12가지 질문으로 경쟁 상황에서 나의 진짜 반응과 동기 유형을 분석합니다.",
+      "line5": "내 경쟁심 DNA 분석하기 🔥 솔직하게 시작",
+      "note": "※ 이상적인 모습이 아닌 실제 나의 반응 패턴에 가장 가까운 것을 선택하세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 경쟁심 DNA 분석)",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 경쟁심 DNA 분석하기 🔥 솔직하게 시작",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "competitiveDna": "경쟁심 DNA",
+      "competitiveType": "경쟁심 유형",
+      "competitiveKeywords": "경쟁 키워드",
+      "domainAnalysisTitle": "나의 경쟁심 패턴 상세 분석",
+      "totalScore": "총점",
+      "scoreUnit": "점",
+      "reactionDomain": "경쟁 상황 즉각 반응",
+      "winLossDomain": "승패에 대한 태도",
+      "motivationDomain": "경쟁 동기",
+      "comparisonDomain": "타인 비교 성향",
+      "strategyDomain": "경쟁 방식·전략",
+      "lifeImpactDomain": "경쟁심이 삶에 미치는 영향",
+      "strongestDomain": "경쟁심이 가장 강하게 발화하는 영역",
+      "lowestDomain": "경쟁보다 다른 동기가 더 크게 작동하는 영역",
+      "strengthsTitle": "이 유형의 강점",
+      "cautionsTitle": "이 유형의 주의점",
+      "characteristicsTitle": "이 유형의 특징",
+      "environmentGuideTitle": "환경·활동 적합도",
+      "bestEnvironmentsTitle": "잘 맞는 환경",
+      "sportsGameTypesTitle": "잘 맞는 스포츠·게임 유형",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "내 경쟁심 DNA: {type}! 🔥\\n너는 어떤 경쟁심 유형이야?",
+      "kakao": "내 경쟁심 DNA: {type}! 🔥\\n나 왜 이렇게 경쟁함 ㅋㅋ 너는?",
+      "wechat": "내 경쟁심 DNA: {type}! 🔥\\n같이 해봐!",
+      "whatsapp": "내 경쟁심 DNA: {type}! 🔥\\n너는 어떤 유형? 같이 해보자!",
+      "telegram": "내 경쟁심 DNA: {type}! 🔥\\n너는 어떤 경쟁심 유형이야?",
+      "line": "내 경쟁심 DNA: {type}! 🔥\\n나 왜 이렇게 경쟁함 ㅋㅋ 너는?",
+      "startDefault": "나의 경쟁심 DNA 분석 🔥 솔직하게 시작해봐!",
+      "startKakao": "나의 경쟁심 DNA 분석 🔥 솔직하게 시작해봐!",
+      "startWechat": "나의 경쟁심 DNA 분석 🔥 솔직하게 시작해봐!",
+      "startWhatsapp": "나의 경쟁심 DNA 분석 🔥 솔직하게 시작해봐!",
+      "startTelegram": "나의 경쟁심 DNA 분석 🔥 솔직하게 시작해봐!",
+      "startLine": "나의 경쟁심 DNA 분석 🔥 솔직하게 시작해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "formats": {
     "all": "전체",
     "personality": "성격·심리",
