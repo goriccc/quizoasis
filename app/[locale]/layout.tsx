@@ -4,6 +4,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
 import { SITE_URL } from '@/lib/siteUrl';
+import { getTestsForList } from '@/lib/supabase';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InstallPrompt from '@/components/InstallPrompt';
@@ -121,6 +122,12 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
 
+  const dbTests = await getTestsForList();
+  const latestSlugs = (dbTests || [])
+    .slice(0, 15)
+    .map((test: { slug?: string }) => test.slug)
+    .filter(Boolean) as string[];
+
   return (
     <NextIntlClientProvider messages={messages}>
       <Header />
@@ -130,7 +137,7 @@ export default async function LocaleLayout({
       <Footer />
       <AdTrafficGuard />
       <InstallPrompt />
-      <NewTestRefreshToast />
+      <NewTestRefreshToast serverSlugs={latestSlugs} />
       <ScrollToTop />
     </NextIntlClientProvider>
   );

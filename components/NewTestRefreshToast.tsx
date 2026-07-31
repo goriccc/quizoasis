@@ -34,10 +34,16 @@ function hasNewSlug(prev: string[], next: string[]): boolean {
   return next.some((slug) => !prevSet.has(slug));
 }
 
-export default function NewTestRefreshToast() {
+interface NewTestRefreshToastProps {
+  /** Slugs from the current server render — page already shows these tests */
+  serverSlugs?: string[];
+}
+
+export default function NewTestRefreshToast({ serverSlugs = [] }: NewTestRefreshToastProps) {
   const t = useTranslations('newTestRefreshToast');
   const [visible, setVisible] = useState(false);
   const latestSlugsRef = useRef<string[]>([]);
+  const serverSlugsRef = useRef<string[]>(serverSlugs);
   const shownForFingerprintRef = useRef<string | null>(null);
 
   const persistAndHide = useCallback(() => {
@@ -79,6 +85,12 @@ export default function NewTestRefreshToast() {
         latestSlugsRef.current = slugs;
         const fingerprint = slugs.join('|');
         const stored = readStoredSlugs();
+
+        // Page was rendered with the latest list — sync storage, no refresh needed
+        if (!hasNewSlug(serverSlugsRef.current, slugs)) {
+          writeStoredSlugs(slugs);
+          return;
+        }
 
         if (!stored) {
           writeStoredSlugs(slugs);

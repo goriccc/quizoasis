@@ -10704,6 +10704,81 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3TimePerspectiveTest": {
+    "startMessage": {
+      "line1": "Which time zone are you living in right now?",
+      "line2": "Psychologist Philip Zimbardo said people differ in how much they focus on past, present, or future — and that pattern shapes happiness, relationships, decisions, and stress coping.",
+      "line3": "Living in the past fills life with regret or nostalgia; living in the present makes this moment everything; living in the future moves today through goals and plans. None is better — but each time perspective fits different happiness strategies.",
+      "line4": "12 questions analyze which time zone you mainly stay in.",
+      "line5": "Find My Time Perspective ⏳ Start Honestly",
+      "note": "※ Choose the option closest to your actual pattern."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Past-Present-Future Time Perspective)",
+      "goToTest": "Go to test",
+      "startTest": "Find My Time Perspective ⏳ Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "timePerspectivePattern": "Time perspective pattern",
+      "timePerspectiveType": "Time perspective type",
+      "timeKeywords": "Time keywords",
+      "domainAnalysisTitle": "Detailed time perspective pattern analysis",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "freeTimeDomain": "Free time pattern",
+      "emotionDomain": "Emotional pattern",
+      "decisionDomain": "Decision style",
+      "happinessDomain": "Source of happiness",
+      "difficultyDomain": "Coping with difficulty",
+      "timeAttitudeDomain": "Attitude toward time",
+      "futureOrientedDomain": "Most future-oriented domain",
+      "pastNegativeDomain": "Domain closest to past-negative focus",
+      "strengthsTitle": "Strengths of this time perspective",
+      "cautionsTitle": "Cautions for this time perspective",
+      "innerSideTitle": "Inner side of this time perspective",
+      "hardReasonTitle": "Why this time perspective feels hard",
+      "patternTitle": "Pattern of this time perspective",
+      "happinessStrategyTitle": "Happiness strategy",
+      "happinessStrategySubtitle": "Strategies that fit this time perspective",
+      "enrichGuideTitle": "How to enrich this time perspective",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My time perspective: {type}! ⏳\nWhich time zone do you live in — past, present, or future?",
+      "kakao": "My time perspective: {type}! ⏳\nWhich time zone do you live in?",
+      "wechat": "My time perspective: {type}! ⏳\nTry this test too!",
+      "whatsapp": "My time perspective: {type}! ⏳\nWhich time zone do you live in? Let's try together!",
+      "telegram": "My time perspective: {type}! ⏳\nWhich time zone do you live in?",
+      "line": "My time perspective: {type}! ⏳\nWhich time zone do you live in?",
+      "startDefault": "My Past-Present-Future Time Perspective ⏳ Start honestly!",
+      "startKakao": "My Past-Present-Future Time Perspective ⏳ Start honestly!",
+      "startWechat": "My Past-Present-Future Time Perspective ⏳ Start honestly!",
+      "startWhatsapp": "My Past-Present-Future Time Perspective ⏳ Start honestly!",
+      "startTelegram": "My Past-Present-Future Time Perspective ⏳ Start honestly!",
+      "startLine": "My Past-Present-Future Time Perspective ⏳ Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3CompetitiveDnaTest": {
     "startMessage": {
       "line1": "Competitiveness is not bad. Its intensity and direction decide everything.",

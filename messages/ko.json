@@ -12923,6 +12923,81 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3TimePerspectiveTest": {
+    "startMessage": {
+      "line1": "당신은 지금 어느 시간대에 살고 있나요?",
+      "line2": "심리학자 필립 짐바르도는 사람마다 과거·현재·미래 중 어느 시간대에 더 집중하는지가 다르고, 그 패턴이 행복·관계·결정·스트레스 대처 방식 전체를 결정한다고 말했습니다.",
+      "line3": "과거에 살면 후회나 향수가 삶을 채우고, 현재에 살면 지금 이 순간의 감각이 전부가 되며, 미래에 살면 목표와 계획이 오늘을 움직입니다.",
+      "line4": "12가지 질문으로 나는 어느 시간대에 주로 머무는지 분석합니다.",
+      "line5": "내 시간관 찾기 ⏳ 솔직하게 시작",
+      "note": "※ 가장 실제 나의 패턴에 가까운 것을 선택하세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 과거-현재-미래 시간관)",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 시간관 찾기 ⏳ 솔직하게 시작",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "timePerspectivePattern": "시간관 패턴",
+      "timePerspectiveType": "시간관 유형",
+      "timeKeywords": "시간 키워드",
+      "domainAnalysisTitle": "나의 시간관 패턴 상세 분석",
+      "totalScore": "총점",
+      "scoreUnit": "점",
+      "freeTimeDomain": "자유 시간 패턴",
+      "emotionDomain": "감정 패턴",
+      "decisionDomain": "결정 방식",
+      "happinessDomain": "행복의 원천",
+      "difficultyDomain": "어려운 상황 대처",
+      "timeAttitudeDomain": "시간 태도",
+      "futureOrientedDomain": "가장 미래 지향적으로 작동하는 영역",
+      "pastNegativeDomain": "가장 과거 부정에 가까운 영역",
+      "strengthsTitle": "이 시간관의 강점",
+      "cautionsTitle": "이 시간관의 주의점",
+      "innerSideTitle": "이 시간관의 이면",
+      "hardReasonTitle": "이 시간관이 힘든 이유",
+      "patternTitle": "이 시간관의 패턴",
+      "happinessStrategyTitle": "행복 전략",
+      "happinessStrategySubtitle": "이 시간관에 맞는 행복 전략",
+      "enrichGuideTitle": "시간관을 풍부하게 하려면",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "내 시간관: {type}! ⏳\\n너는 과거·현재·미래 중 어디에 살아?",
+      "kakao": "내 시간관: {type}! ⏳\\n너는 어느 시간대에 살아?",
+      "wechat": "내 시간관: {type}! ⏳\\n같이 해봐!",
+      "whatsapp": "내 시간관: {type}! ⏳\\n너는 어느 시간대에 살아? 같이 해보자!",
+      "telegram": "내 시간관: {type}! ⏳\\n너는 과거·현재·미래 중 어디에 살아?",
+      "line": "내 시간관: {type}! ⏳\\n너는 어느 시간대에 살아?",
+      "startDefault": "나의 과거-현재-미래 시간관 ⏳ 솔직하게 시작해봐!",
+      "startKakao": "나의 과거-현재-미래 시간관 ⏳ 솔직하게 시작해봐!",
+      "startWechat": "나의 과거-현재-미래 시간관 ⏳ 솔직하게 시작해봐!",
+      "startWhatsapp": "나의 과거-현재-미래 시간관 ⏳ 솔직하게 시작해봐!",
+      "startTelegram": "나의 과거-현재-미래 시간관 ⏳ 솔직하게 시작해봐!",
+      "startLine": "나의 과거-현재-미래 시간관 ⏳ 솔직하게 시작해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "formats": {
     "all": "전체",
     "personality": "성격·심리",

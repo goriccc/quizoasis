@@ -10695,6 +10695,81 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3TimePerspectiveTest": {
+    "startMessage": {
+      "line1": "Di zona waktu mana kamu hidup sekarang?",
+      "line2": "Psikolog Philip Zimbardo mengatakan setiap orang fokus berbeda pada masa lalu·masa kini·masa depan, dan polanya menentukan kebahagiaan, relasi, keputusan, serta cara menghadapi stres.",
+      "line3": "Hidup di masa lalu, penyesalan dan nostalgia memenuhi hidup; hidup di masa kini, momen ini jadi segalanya; hidup di masa depan, target dan rencana menggerakkan hari ini. Tidak ada yang lebih baik — tapi setiap time perspective punya strategi kebahagiaan berbeda.",
+      "line4": "12 pertanyaan menganalisis zona waktu mana yang paling sering kamu tempati.",
+      "line5": "Temukan Time Perspective-ku ⏳ Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang paling dekat dengan pola nyata kamu."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Time Perspective Masa Lalu-Kini-Depan)",
+      "goToTest": "Ke tes",
+      "startTest": "Temukan Time Perspective-ku ⏳ Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "timePerspectivePattern": "Pola time perspective",
+      "timePerspectiveType": "Tipe time perspective",
+      "timeKeywords": "Kata kunci waktu",
+      "domainAnalysisTitle": "Analisis pola time perspective detail",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "freeTimeDomain": "Pola waktu luang",
+      "emotionDomain": "Pola emosi",
+      "decisionDomain": "Gaya keputusan",
+      "happinessDomain": "Sumber kebahagiaan",
+      "difficultyDomain": "Menghadapi kesulitan",
+      "timeAttitudeDomain": "Sikap terhadap waktu",
+      "futureOrientedDomain": "Domain paling future-oriented",
+      "pastNegativeDomain": "Domain paling dekat fokus masa lalu negatif",
+      "strengthsTitle": "Kekuatan time perspective ini",
+      "cautionsTitle": "Peringatan time perspective ini",
+      "innerSideTitle": "Sisi dalam time perspective ini",
+      "hardReasonTitle": "Mengapa time perspective ini terasa berat",
+      "patternTitle": "Pola time perspective ini",
+      "happinessStrategyTitle": "Strategi kebahagiaan",
+      "happinessStrategySubtitle": "Strategi yang cocok untuk time perspective ini",
+      "enrichGuideTitle": "Cara memperkaya time perspective",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Time perspective-ku: {type}! ⏳\nKamu hidup di masa lalu, kini, atau depan?",
+      "kakao": "Time perspective-ku: {type}! ⏳\nKamu hidup di zona waktu mana?",
+      "wechat": "Time perspective-ku: {type}! ⏳\nCoba tes ini juga!",
+      "whatsapp": "Time perspective-ku: {type}! ⏳\nKamu di zona waktu mana? Ayo coba bareng!",
+      "telegram": "Time perspective-ku: {type}! ⏳\nKamu hidup di masa lalu, kini, atau depan?",
+      "line": "Time perspective-ku: {type}! ⏳\nKamu hidup di zona waktu mana?",
+      "startDefault": "Time Perspective Masa Lalu-Kini-Depan ⏳ Mulai dengan jujur!",
+      "startKakao": "Time Perspective Masa Lalu-Kini-Depan ⏳ Mulai dengan jujur!",
+      "startWechat": "Time Perspective Masa Lalu-Kini-Depan ⏳ Mulai dengan jujur!",
+      "startWhatsapp": "Time Perspective Masa Lalu-Kini-Depan ⏳ Mulai dengan jujur!",
+      "startTelegram": "Time Perspective Masa Lalu-Kini-Depan ⏳ Mulai dengan jujur!",
+      "startLine": "Time Perspective Masa Lalu-Kini-Depan ⏳ Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3CompetitiveDnaTest": {
     "startMessage": {
       "line1": "Daya saing bukan hal buruk. Intensitas dan arahnya yang menentukan segalanya.",

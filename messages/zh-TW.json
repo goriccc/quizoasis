@@ -10164,6 +10164,81 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3TimePerspectiveTest": {
+    "startMessage": {
+      "line1": "你現在活在哪個時間維度？",
+      "line2": "心理學家菲利普·津巴多說，每個人對過去、現在、未來的專注點不同，而這個模式決定了幸福、關係、決定和應對壓力的方式。",
+      "line3": "活在過去，後悔與懷舊會填滿生活；活在現在，此刻的感受就是全部；活在未來，目標與計畫推動今天。沒有哪一種更好，但每種時間觀對應不同的幸福策略。",
+      "line4": "透過12個問題分析你主要停留在哪個時間維度。",
+      "line5": "找到我的時間觀 ⏳ 誠實地開始",
+      "note": "※ 請選擇最接近你實際模式的一項。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（過去-現在-未來 時間觀測試）",
+      "goToTest": "前往測試",
+      "startTest": "找到我的時間觀 ⏳ 誠實地開始",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "timePerspectivePattern": "時間觀模式",
+      "timePerspectiveType": "時間觀類型",
+      "timeKeywords": "時間關鍵詞",
+      "domainAnalysisTitle": "時間觀模式詳細分析",
+      "totalScore": "總分",
+      "scoreUnit": "分",
+      "freeTimeDomain": "自由時間模式",
+      "emotionDomain": "情感模式",
+      "decisionDomain": "決定方式",
+      "happinessDomain": "幸福來源",
+      "difficultyDomain": "困難情境應對",
+      "timeAttitudeDomain": "對時間的態度",
+      "futureOrientedDomain": "最未來導向的領域",
+      "pastNegativeDomain": "最接近過去負向專注的領域",
+      "strengthsTitle": "此時間觀的優勢",
+      "cautionsTitle": "此時間觀的注意點",
+      "innerSideTitle": "此時間觀的內裡",
+      "hardReasonTitle": "此時間觀為何辛苦",
+      "patternTitle": "此時間觀的模式",
+      "happinessStrategyTitle": "幸福策略",
+      "happinessStrategySubtitle": "適合此時間觀的幸福策略",
+      "enrichGuideTitle": "如何豐富此時間觀",
+      "certificationPhrase": "認證語",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "我的時間觀：{type}！⏳\n你活在過去、現在還是未來？",
+      "kakao": "我的時間觀：{type}！⏳\n你活在哪個時間維度？",
+      "wechat": "我的時間觀：{type}！⏳\n一起來測測吧！",
+      "whatsapp": "我的時間觀：{type}！⏳\n你活在哪個時間維度？一起試試！",
+      "telegram": "我的時間觀：{type}！⏳\n你活在過去、現在還是未來？",
+      "line": "我的時間觀：{type}！⏳\n你活在哪個時間維度？",
+      "startDefault": "我的過去-現在-未來時間觀 ⏳ 誠實地開始吧！",
+      "startKakao": "我的過去-現在-未來時間觀 ⏳ 誠實地開始吧！",
+      "startWechat": "我的過去-現在-未來時間觀 ⏳ 誠實地開始吧！",
+      "startWhatsapp": "我的過去-現在-未來時間觀 ⏳ 誠實地開始吧！",
+      "startTelegram": "我的過去-現在-未來時間觀 ⏳ 誠實地開始吧！",
+      "startLine": "我的過去-現在-未來時間觀 ⏳ 誠實地開始吧！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "phase3CompetitiveDnaTest": {
     "startMessage": {
       "line1": "競爭心並不壞，濃度和方向才決定一切。",

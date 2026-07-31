@@ -10683,6 +10683,81 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3TimePerspectiveTest": {
+    "startMessage": {
+      "line1": "あなたは今、どの時間帯に生きていますか？",
+      "line2": "心理学者フィリップ・ジンバルドは、人によって過去・現在・未来のどこに集中するかが異なり、そのパターンが幸福・関係・決定・ストレス対処全体を決めると述べました。",
+      "line3": "過去に生きると後悔や郷愁が満ち、現在に生きると今この瞬間がすべてになり、未来に生きると目標と計画が今日を動かします。どれが優れているわけではなく、それぞれの時間観に合う幸福戦略が異なります。",
+      "line4": "12の質問で、主にどの時間帯に留まるかを分析します。",
+      "line5": "自分の時間観を見つける ⏳ 正直に始める",
+      "note": "※ 実際の自分のパターンに最も近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（過去-現在-未来 時間観テスト）",
+      "goToTest": "テストに進む",
+      "startTest": "自分の時間観を見つける ⏳ 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "timePerspectivePattern": "時間観パターン",
+      "timePerspectiveType": "時間観タイプ",
+      "timeKeywords": "時間キーワード",
+      "domainAnalysisTitle": "時間観パターン詳細分析",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "freeTimeDomain": "自由時間パターン",
+      "emotionDomain": "感情パターン",
+      "decisionDomain": "決定方式",
+      "happinessDomain": "幸福の源泉",
+      "difficultyDomain": "困難な状況への対処",
+      "timeAttitudeDomain": "時間への態度",
+      "futureOrientedDomain": "最も未来志向的に機能する領域",
+      "pastNegativeDomain": "最も過去否定に近い領域",
+      "strengthsTitle": "この時間観の強み",
+      "cautionsTitle": "この時間観の注意点",
+      "innerSideTitle": "この時間観の裏側",
+      "hardReasonTitle": "この時間観がつらい理由",
+      "patternTitle": "この時間観のパターン",
+      "happinessStrategyTitle": "幸福戦略",
+      "happinessStrategySubtitle": "この時間観に合う幸福戦略",
+      "enrichGuideTitle": "時間観を豊かにするには",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の時間観: {type}! ⏳\nあなたは過去・現在・未来のどこに生きてる？",
+      "kakao": "私の時間観: {type}! ⏳\nあなたはどの時間帯に生きてる？",
+      "wechat": "私の時間観: {type}! ⏳\n一緒にやってみよう！",
+      "whatsapp": "私の時間観: {type}! ⏳\nあなたはどの時間帯？一緒にやろう！",
+      "telegram": "私の時間観: {type}! ⏳\nあなたは過去・現在・未来のどこに生きてる？",
+      "line": "私の時間観: {type}! ⏳\nあなたはどの時間帯に生きてる？",
+      "startDefault": "過去-現在-未来 時間観 ⏳ 正直に始めよう！",
+      "startKakao": "過去-現在-未来 時間観 ⏳ 正直に始めよう！",
+      "startWechat": "過去-現在-未来 時間観 ⏳ 正直に始めよう！",
+      "startWhatsapp": "過去-現在-未来 時間観 ⏳ 正直に始めよう！",
+      "startTelegram": "過去-現在-未来 時間観 ⏳ 正直に始めよう！",
+      "startLine": "過去-現在-未来 時間観 ⏳ 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3CompetitiveDnaTest": {
     "startMessage": {
       "line1": "競争心は悪いものではありません。濃さと方向がすべてを決めます。",

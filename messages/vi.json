@@ -10695,6 +10695,81 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3TimePerspectiveTest": {
+    "startMessage": {
+      "line1": "Bạn đang sống ở mốc thời gian nào?",
+      "line2": "Nhà tâm lý học Philip Zimbardo cho rằng mỗi người tập trung khác nhau vào quá khứ·hiện tại·tương lai, và mẫu đó quyết định hạnh phúc, quan hệ, quyết định và cách đối phó căng thẳng.",
+      "line3": "Sống trong quá khứ, hối tiếc và hoài niệm lấp đầy cuộc sống; sống hiện tại, khoảnh khắc này là tất cả; sống tương lai, mục tiêu và kế hoạch dẫn dắt hôm nay. Không cái nào tốt hơn — nhưng mỗi time perspective phù hợp chiến lược hạnh phúc khác nhau.",
+      "line4": "12 câu hỏi phân tích bạn chủ yếu ở mốc thời gian nào.",
+      "line5": "Tìm Time Perspective Của Tôi ⏳ Bắt Đầu Thành Thật",
+      "note": "※ Hãy chọn đáp án gần với mẫu thực tế của bạn nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Time Perspective Quá khứ-Hiện tại-Tương lai)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Tìm Time Perspective Của Tôi ⏳ Bắt Đầu Thành Thật",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "timePerspectivePattern": "Mẫu time perspective",
+      "timePerspectiveType": "Loại time perspective",
+      "timeKeywords": "Từ khóa thời gian",
+      "domainAnalysisTitle": "Phân tích chi tiết mẫu time perspective",
+      "totalScore": "Tổng điểm",
+      "scoreUnit": " điểm",
+      "freeTimeDomain": "Mẫu thời gian rảnh",
+      "emotionDomain": "Mẫu cảm xúc",
+      "decisionDomain": "Cách quyết định",
+      "happinessDomain": "Nguồn hạnh phúc",
+      "difficultyDomain": "Đối phó khó khăn",
+      "timeAttitudeDomain": "Thái độ với thời gian",
+      "futureOrientedDomain": "Lĩnh vực hướng tương lai nhất",
+      "pastNegativeDomain": "Lĩnh vực gần tập trung quá khứ tiêu cực nhất",
+      "strengthsTitle": "Điểm mạnh của time perspective này",
+      "cautionsTitle": "Lưu ý của time perspective này",
+      "innerSideTitle": "Mặt bên trong của time perspective này",
+      "hardReasonTitle": "Vì sao time perspective này khó chịu",
+      "patternTitle": "Mẫu của time perspective này",
+      "happinessStrategyTitle": "Chiến lược hạnh phúc",
+      "happinessStrategySubtitle": "Chiến lược phù hợp time perspective này",
+      "enrichGuideTitle": "Cách làm phong phú time perspective",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "Time perspective của tôi: {type}! ⏳\nBạn sống ở quá khứ, hiện tại hay tương lai?",
+      "kakao": "Time perspective của tôi: {type}! ⏳\nBạn sống ở mốc thời gian nào?",
+      "wechat": "Time perspective của tôi: {type}! ⏳\nCùng thử bài test này nhé!",
+      "whatsapp": "Time perspective của tôi: {type}! ⏳\nBạn ở mốc thời gian nào? Cùng thử nhé!",
+      "telegram": "Time perspective của tôi: {type}! ⏳\nBạn sống ở quá khứ, hiện tại hay tương lai?",
+      "line": "Time perspective của tôi: {type}! ⏳\nBạn sống ở mốc thời gian nào?",
+      "startDefault": "Time Perspective Quá khứ-Hiện tại-Tương lai ⏳ Bắt đầu thành thật!",
+      "startKakao": "Time Perspective Quá khứ-Hiện tại-Tương lai ⏳ Bắt đầu thành thật!",
+      "startWechat": "Time Perspective Quá khứ-Hiện tại-Tương lai ⏳ Bắt đầu thành thật!",
+      "startWhatsapp": "Time Perspective Quá khứ-Hiện tại-Tương lai ⏳ Bắt đầu thành thật!",
+      "startTelegram": "Time Perspective Quá khứ-Hiện tại-Tương lai ⏳ Bắt đầu thành thật!",
+      "startLine": "Time Perspective Quá khứ-Hiện tại-Tương lai ⏳ Bắt đầu thành thật!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3CompetitiveDnaTest": {
     "startMessage": {
       "line1": "Tinh thần cạnh tranh không xấu. Nồng độ và hướng đi mới quyết định mọi thứ.",
