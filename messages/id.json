@@ -10695,6 +10695,77 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3ChangeAdaptabilityTest": {
+    "startMessage": {
+      "line1": "Perubahan tak bisa dihindari. Cara kamu meresponsnya adalah pilihan.",
+      "line2": "Bagaimana reaksimu saat rencana tiba-tiba berantakan? Seberapa cepat kamu menemukan arah baru saat hal tak terduga datang? Berapa lama kamu bertahan di lingkungan penuh ketidakpastian? Pola reaksi itu adalah adaptabilitas perubahanmu.",
+      "line3": "Ada yang membeku di hadapan perubahan, ada yang goyah tapi akhirnya beradaptasi, ada yang mengubah perubahan jadi peluang. Tidak ada yang lebih baik — masing-masing punya cara serta kelebihan dan kekurangan.",
+      "line4": "12 pertanyaan menganalisis bagaimana kamu bereaksi saat perubahan tak terduga datang.",
+      "line5": "Ukur Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang paling dekat dengan pola reaksi nyata kamu — bukan diri ideal."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Indeks Adaptabilitas Perubahan)",
+      "goToTest": "Ke tes",
+      "startTest": "Ukur Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adaptabilitySummary": "Ringkasan adaptabilitas perubahan",
+      "adaptabilityType": "Tipe adaptabilitas perubahan",
+      "indexScore": "Indeks adaptabilitas",
+      "domainDiagnosisTitle": "Diagnosis per domain",
+      "domainAnalysisTitle": "Analisis adaptabilitas per domain",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "cognitiveDomain": "Fleksibilitas kognitif",
+      "emotionalDomain": "Respons emosional",
+      "behavioralDomain": "Respons perilaku",
+      "uncertaintyDomain": "Toleransi ketidakpastian",
+      "resilienceDomain": "Ketahanan",
+      "learningDomain": "Orientasi belajar & pertumbuhan",
+      "strongestDomain": "Domain di mana adaptabilitas perubahan paling kuat",
+      "boostDomain": "Area tercepat untuk dikembangkan sekarang",
+      "strengthsTitle": "Situasi di mana tipe ini paling kuat",
+      "cautionsTitle": "Peringatan untuk tipe ini",
+      "tryNowTitle": "Tips menghadapi perubahan untuk tipe ini",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Adaptabilitas perubahan-ku: {type}! 🌊\nAku bereaksi begini pada perubahan — kamu tipe apa?",
+      "kakao": "Adaptabilitas perubahan-ku: {type}! 🌊\nAku bereaksi begini — kamu?",
+      "wechat": "Adaptabilitas perubahan-ku: {type}! 🌊\nCoba tes ini juga!",
+      "whatsapp": "Adaptabilitas perubahan-ku: {type}! 🌊\nKamu tipe apa? Ayo coba bareng!",
+      "telegram": "Adaptabilitas perubahan-ku: {type}! 🌊\nKamu tipe apa?",
+      "line": "Adaptabilitas perubahan-ku: {type}! 🌊\nKamu tipe apa?",
+      "startDefault": "Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan jujur!",
+      "startKakao": "Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan jujur!",
+      "startWechat": "Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan jujur!",
+      "startWhatsapp": "Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan jujur!",
+      "startTelegram": "Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan jujur!",
+      "startLine": "Indeks Adaptabilitas Perubahan-ku 🌊 Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

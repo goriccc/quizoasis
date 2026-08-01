@@ -10683,6 +10683,77 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3ChangeAdaptabilityTest": {
+    "startMessage": {
+      "line1": "変化は避けられません。ただしどう反応するかは選べます。",
+      "line2": "突然計画が崩れたときどう反応するか、予想外の状況が来たときどれだけ早く新しい方向を見つけるか、不確実な環境でどれだけ持ちこたえられるか。この反応パターンが変化適応力です。",
+      "line3": "変化の前で固まる人、揺れながらも最終的に適応する人、変化を機会に変える人がいます。どちらが優れているわけではなく、それぞれに方式と長所・短所があります。",
+      "line4": "12の質問で、予想外の変化の前であなたがどう反応するかを分析します。",
+      "line5": "自分の変化適応力指数を測る 🌊 正直に始める",
+      "note": "※ 理想的な姿ではなく、実際の自分の反応パターンに最も近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の変化適応力指数）",
+      "goToTest": "テストに進む",
+      "startTest": "自分の変化適応力指数を測る 🌊 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adaptabilitySummary": "変化適応力サマリー",
+      "adaptabilityType": "変化適応力タイプ",
+      "indexScore": "適応力指数",
+      "domainDiagnosisTitle": "領域別診断",
+      "domainAnalysisTitle": "領域別適応力分析",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "cognitiveDomain": "認知的柔軟性",
+      "emotionalDomain": "感情的反応",
+      "behavioralDomain": "行動的対応",
+      "uncertaintyDomain": "不確実性耐性",
+      "resilienceDomain": "回復力",
+      "learningDomain": "学習・成長志向",
+      "strongestDomain": "変化適応力が最も強く働く領域",
+      "boostDomain": "今最も開発すれば早く上がる領域",
+      "strengthsTitle": "このタイプが最も強い状況",
+      "cautionsTitle": "このタイプの注意点",
+      "tryNowTitle": "このタイプのための変化対応のヒント",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の変化適応力: {type}! 🌊\n変化にこう反応するタイプ…あなたはどのタイプ？",
+      "kakao": "私の変化適応力: {type}! 🌊\n変化にこう反応する…あなたは？",
+      "wechat": "私の変化適応力: {type}! 🌊\n一緒にやってみよう！",
+      "whatsapp": "私の変化適応力: {type}! 🌊\nあなたはどのタイプ？一緒にやろう！",
+      "telegram": "私の変化適応力: {type}! 🌊\nあなたはどのタイプ？",
+      "line": "私の変化適応力: {type}! 🌊\nあなたはどのタイプ？",
+      "startDefault": "私の変化適応力指数 🌊 正直に始めよう！",
+      "startKakao": "私の変化適応力指数 🌊 正直に始めよう！",
+      "startWechat": "私の変化適応力指数 🌊 正直に始めよう！",
+      "startWhatsapp": "私の変化適応力指数 🌊 正直に始めよう！",
+      "startTelegram": "私の変化適応力指数 🌊 正直に始めよう！",
+      "startLine": "私の変化適応力指数 🌊 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

@@ -10704,6 +10704,77 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3ChangeAdaptabilityTest": {
+    "startMessage": {
+      "line1": "Change is unavoidable. How you respond to it is a choice.",
+      "line2": "How do you react when plans suddenly fall apart? How quickly do you find a new direction when the unexpected hits? How long can you hold on in uncertain environments? That reaction pattern is your change adaptability.",
+      "line3": "Some people freeze in the face of change, some wobble but eventually adapt, and some turn change into opportunity. Neither is better — each style has its own strengths and trade-offs.",
+      "line4": "12 questions analyze how you react when unexpected change arrives.",
+      "line5": "Measure My Change Adaptability Index 🌊 Start Honestly",
+      "note": "※ Choose the option closest to your actual reaction pattern — not your ideal self."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Change Adaptability Index)",
+      "goToTest": "Go to test",
+      "startTest": "Measure My Change Adaptability Index 🌊 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "adaptabilitySummary": "Change adaptability summary",
+      "adaptabilityType": "Change adaptability type",
+      "indexScore": "Adaptability index",
+      "domainDiagnosisTitle": "Domain diagnosis",
+      "domainAnalysisTitle": "Domain adaptability analysis",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "cognitiveDomain": "Cognitive flexibility",
+      "emotionalDomain": "Emotional response",
+      "behavioralDomain": "Behavioral response",
+      "uncertaintyDomain": "Uncertainty tolerance",
+      "resilienceDomain": "Resilience",
+      "learningDomain": "Learning & growth orientation",
+      "strongestDomain": "Domain where change adaptability works strongest",
+      "boostDomain": "Fastest area to develop right now",
+      "strengthsTitle": "Situations where this type is strongest",
+      "cautionsTitle": "Cautions for this type",
+      "tryNowTitle": "Change response tips for this type",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My change adaptability: {type}! 🌊\nThis is how I react to change — what type are you?",
+      "kakao": "My change adaptability: {type}! 🌊\nThis is how I react to change — what about you?",
+      "wechat": "My change adaptability: {type}! 🌊\nTry this test too!",
+      "whatsapp": "My change adaptability: {type}! 🌊\nWhat type are you? Let's try together!",
+      "telegram": "My change adaptability: {type}! 🌊\nWhat type are you?",
+      "line": "My change adaptability: {type}! 🌊\nWhat type are you?",
+      "startDefault": "My Change Adaptability Index 🌊 Start honestly!",
+      "startKakao": "My Change Adaptability Index 🌊 Start honestly!",
+      "startWechat": "My Change Adaptability Index 🌊 Start honestly!",
+      "startWhatsapp": "My Change Adaptability Index 🌊 Start honestly!",
+      "startTelegram": "My Change Adaptability Index 🌊 Start honestly!",
+      "startLine": "My Change Adaptability Index 🌊 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",

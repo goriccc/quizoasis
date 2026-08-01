@@ -1,0 +1,488 @@
+"""Translation data for phase3 change adaptability test (imported by build script)."""
+from __future__ import annotations
+
+from pathlib import Path
+
+LOCALES = ("ko", "en", "ja", "zh-CN", "zh-TW", "vi", "id")
+_OPT_KEYS = ("A", "B", "C", "D")
+
+
+def M(**kwargs: str) -> dict[str, str]:
+    return {loc: kwargs[loc] for loc in LOCALES}
+
+
+def q(question: dict[str, str], options: list[tuple[dict[str, str], int]]) -> dict:
+    return {"question": question, "options": options}
+
+
+def r(type_: str, emoji: str, **fields: dict[str, str]) -> dict:
+    return {"type": type_, "emoji": emoji, **fields}
+
+
+EMPTY = M(ko="", en="", ja="", **{"zh-CN": "", "zh-TW": ""}, vi="", id="")
+
+
+_gen_path = Path(__file__).resolve().parent / "gen_phase3_change_adaptability_data.py"
+_gen_ns: dict = {"__file__": str(_gen_path)}
+exec(_gen_path.read_text(encoding="utf-8").split("\nHEADER =")[0], _gen_ns)
+KO_QUESTIONS = _gen_ns["QUESTIONS"]
+KO_RESULTS = _gen_ns["RESULTS"]
+
+
+def _ko_q(idx: int) -> str:
+    return KO_QUESTIONS[idx]["q"]
+
+
+def _ko_o(idx: int, opt_idx: int) -> str:
+    return KO_QUESTIONS[idx][_OPT_KEYS[opt_idx]]
+
+
+def _strip_quotes(s: str) -> str:
+    s = s.strip()
+    if len(s) >= 2 and s[0] == '"' and s[-1] == '"':
+        return s[1:-1]
+    return s
+
+
+def _ko_r(type_idx: int, field: str) -> str:
+    data = KO_RESULTS[type_idx + 1]
+    key_map = {
+        "title": "title_ko",
+        "changeAdaptabilityIndex": "change_adaptability_index",
+        "quote": "quote",
+        "description": "description",
+        "changeAdaptabilityType": "change_adaptability_type",
+        "indexScore": "index_score",
+        "domainDiagnosis": "domain_diagnosis",
+        "strengths": "strengths",
+        "cautions": "cautions",
+        "tryNow": "try_now",
+        "certificationPhrase": "certification",
+        "oneLiner": "one_liner",
+        "shareLine": "share_line",
+    }
+    if field not in key_map:
+        raise KeyError(field)
+    val = data.get(key_map[field], "")
+    if field == "oneLiner":
+        return _strip_quotes(val)
+    return val
+
+
+def _ml(ko: str, en: str, ja: str, zh_cn: str, zh_tw: str, vi: str, id_: str) -> dict[str, str]:
+    return M(ko=ko, en=en, ja=ja, **{"zh-CN": zh_cn, "zh-TW": zh_tw}, vi=vi, id=id_)
+
+
+# --- Question translations (en/ja/zh-CN/zh-TW/vi/id) ---
+_Q_I18N: list[dict] = [
+    {
+        "q": {
+            "en": "Your plans suddenly changed completely. What is the first thought that comes to mind?",
+            "ja": "突然計画が完全に変わった。頭に最初に浮かぶ考えは？",
+            "zh-CN": "计划突然完全改变了。脑海里最先浮现的想法是？",
+            "zh-TW": "計畫突然完全改變了。腦海裡最先浮現的想法是？",
+            "vi": "Kế hoạch đột ngột thay đổi hoàn toàn. Ý nghĩ đầu tiên hiện lên là gì?",
+            "id": "Rencana tiba-tiba berubah total. Apa pikiran pertama yang muncul?",
+        },
+        "opts": [
+            {
+                "en": "First thought: \"Why did this happen? Can't we go back to how it was?\"",
+                "ja": "「なぜこうなった。元に戻せないか」という考えが先に浮かぶ",
+                "zh-CN": "最先想到「为什么会这样，不能恢复原样吗」",
+                "zh-TW": "最先想到「為什麼會這樣，不能恢復原樣嗎」",
+                "vi": "Nghĩ trước: \"Sao lại thế này? Không thể quay lại như cũ sao?\"",
+                "id": "Pikiran pertama: \"Kenapa begini? Tidak bisa kembali seperti semula?\"",
+            },
+            {
+                "en": "Thought: \"This is confusing. I need to understand the situation first.\"",
+                "ja": "「当惑する。まず状況把握が先だ」という考えが浮かぶ",
+                "zh-CN": "想到「有点慌，先搞清楚情况再说」",
+                "zh-TW": "想到「有點慌，先搞清楚情況再說」",
+                "vi": "Nghĩ: \"Hơi hoang mang. Phải nắm tình hình trước.\"",
+                "id": "Pikiran: \"Bingung. Harus pahami situasi dulu.\"",
+            },
+            {
+                "en": "Thought comes relatively quickly: \"It is what it is — I need to find a new direction.\"",
+                "ja": "「仕方ない。新しい方向を見つけなければ」という考えが比較的早く浮かぶ",
+                "zh-CN": "比较快想到「没办法，得找新方向了」",
+                "zh-TW": "比較快想到「沒辦法，得找新方向了」",
+                "vi": "Khá nhanh nghĩ: \"Biết sao được — phải tìm hướng mới.\"",
+                "id": "Cukup cepat muncul: \"Ya sudah — harus cari arah baru.\"",
+            },
+            {
+                "en": "Thought: \"This might actually be good. Maybe new possibilities opened up.\"",
+                "ja": "「むしろ良いかも。新しい可能性が生まれたのかも」という考えが浮かぶ",
+                "zh-CN": "想到「说不定反而是好事，也许出现了新可能」",
+                "zh-TW": "想到「說不定反而是好事，也許出現了新可能」",
+                "vi": "Nghĩ: \"Có thể lại tốt. Biết đâu có cơ hội mới.\"",
+                "id": "Pikiran: \"Mungkin justru bagus. Siapa tahu ada peluang baru.\"",
+            },
+        ],
+    },
+    {
+        "q": {
+            "en": "A way you took for granted no longer works. What do you do?",
+            "ja": "長い間当たり前だと思ってきた方式がもう通用しない状況になった。あなたは？",
+            "zh-CN": "长期认为理所当然的方式不再管用了。你会？",
+            "zh-TW": "長期認為理所當然的方式不再管用了。你會？",
+            "vi": "Cách bạn từng coi là đương nhiên giờ không còn hiệu quả. Bạn làm gì?",
+            "id": "Cara yang selama ini kamu anggap wajar tidak lagi berfungsi. Kamu?",
+        },
+        "opts": [
+            {
+                "en": "Still try to keep the old way as much as possible. Proven methods beat new ones",
+                "ja": "それでも既存の方式を最大限維持しようとする。実証された方式が新しいものより優れる",
+                "zh-CN": "仍尽量维持原有方式，经过验证的方式比新的更好",
+                "zh-TW": "仍盡量維持原有方式，經過驗證的方式比新的更好",
+                "vi": "Vẫn cố giữ cách cũ tối đa. Cách đã chứng minh tốt hơn cách mới",
+                "id": "Tetap berusaha mempertahankan cara lama. Cara terbukti lebih baik dari yang baru",
+            },
+            {
+                "en": "Know change is needed, but switching to a new way takes quite a while",
+                "ja": "変化が必要とは分かるが、新しい方式への転換にかなり時間がかかる",
+                "zh-CN": "知道需要变化，但切换到新方式需要不少时间",
+                "zh-TW": "知道需要變化，但切換到新方式需要不少時間",
+                "vi": "Biết cần thay đổi nhưng chuyển sang cách mới mất khá lâu",
+                "id": "Tahu perlu berubah, tapi beralih ke cara baru butuh waktu cukup lama",
+            },
+            {
+                "en": "Think about what to adjust in the old way and switch relatively quickly",
+                "ja": "既存方式のどの部分を修正すればよいか考えながら比較的早く転換する",
+                "zh-CN": "想着旧方式哪里要改，然后较快切换",
+                "zh-TW": "想著舊方式哪裡要改，然後較快切換",
+                "vi": "Nghĩ phần nào của cách cũ cần sửa rồi chuyển khá nhanh",
+                "id": "Memikirkan bagian cara lama yang perlu diubah lalu beralih cukup cepat",
+            },
+            {
+                "en": "See it as a chance to break fully from the old way and explore something better",
+                "ja": "むしろ既存方式から完全に離れる機会と考え、より良い方式を探索する",
+                "zh-CN": "反而当作彻底摆脱旧方式的机会，探索更好的做法",
+                "zh-TW": "反而當作徹底擺脫舊方式的機會，探索更好的做法",
+                "vi": "Coi đây là cơ hội thoát hoàn toàn khỏi cách cũ và tìm cách tốt hơn",
+                "id": "Melihatnya sebagai kesempatan lepas total dari cara lama dan cari cara lebih baik",
+            },
+        ],
+    },
+    {
+        "q": {
+            "en": "How do you react emotionally when unexpected change hits?",
+            "ja": "予想外の変化が起きたとき、感情的にどう反応するか？",
+            "zh-CN": "遇到意外变化时，你情绪上如何反应？",
+            "zh-TW": "遇到意外變化時，你情緒上如何反應？",
+            "vi": "Khi thay đổi bất ngờ xảy ra, bạn phản ứng cảm xúc thế nào?",
+            "id": "Bagaimana reaksi emosionalmu saat perubahan tak terduga datang?",
+        },
+        "opts": [
+            {"en": "Anxiety rises sharply. Hard to calm down until stability returns", "ja": "不安が大きく湧く。安定が回復するまで感情を整えにくい", "zh-CN": "焦虑明显上升，在稳定恢复前很难平复情绪", "zh-TW": "焦慮明顯上升，在穩定恢復前很難平復情緒", "vi": "Lo lắng tăng mạnh. Khó ổn định lại cho đến khi cảm giác an toàn trở lại", "id": "Kecemasan naik tajam. Sulit tenang sampai stabilitas kembali"},
+            {"en": "Anxious, but find stability after some time. Need time to process emotions", "ja": "不安だが時間が経てば安定を取り戻す。感情処理に時間が必要", "zh-CN": "会焦虑，但过一阵能找到稳定，情绪处理需要时间", "zh-TW": "會焦慮，但過一陣能找到穩定，情緒處理需要時間", "vi": "Lo nhưng sau một thời gian tìm lại ổn định. Cần thời gian xử lý cảm xúc", "id": "Cemas, tapi setelah waktu menemukan stabilitas. Butuh waktu memproses emosi"},
+            {"en": "Startled at first, but quickly organize emotions and focus on the situation", "ja": "最初は当惑するが、比較的早く感情を整理し状況に集中できる", "zh-CN": "起初会慌，但较快整理情绪并专注当下情况", "zh-TW": "起初會慌，但較快整理情緒並專注當下情況", "vi": "Ban đầu hoang mang nhưng khá nhanh ổn định cảm xúc và tập trung vào tình huống", "id": "Awalnya kaget, tapi cukup cepat merapikan emosi dan fokus pada situasi"},
+            {"en": "Emotions barely fluctuate. New stimulation actually raises my energy", "ja": "変化が来ても感情が大きく揺れない。むしろ新しい刺激でエネルギーが上がる", "zh-CN": "变化来时情绪几乎不大波动，新刺激反而让我更有能量", "zh-TW": "變化來時情緒幾乎不大波動，新刺激反而讓我更有能量", "vi": "Cảm xúc hầu như không dao động nhiều. Kích thích mới còn làm tăng năng lượng", "id": "Emosi hampir tidak goyah. Stimulus baru justru menaikkan energi"},
+        ],
+    },
+    {
+        "q": {
+            "en": "Something you prepared for a long time was suddenly cancelled. How do you recover emotionally?",
+            "ja": "長い間準備してきたことが突然無になった。感情的にどう回復するか？",
+            "zh-CN": "长期准备的事突然泡汤了。你情绪上如何恢复？",
+            "zh-TW": "長期準備的事突然泡湯了。你情緒上如何恢復？",
+            "vi": "Điều bạn chuẩn bị lâu đột ngột hủy. Bạn phục hồi cảm xúc thế nào?",
+            "id": "Sesuatu yang lama kamu persiapkan tiba-tiba batal. Bagaimana pulih secara emosional?",
+        },
+        "opts": [
+            {"en": "Recovery takes quite long. That disappointment affects other areas too", "ja": "回復にかなり時間がかかる。その失望感が他のことにも影響する", "zh-CN": "恢复需要很久，那份失望也会影响其他事情", "zh-TW": "恢復需要很久，那份失望也會影響其他事情", "vi": "Phục hồi khá lâu. Sự thất vọng ấy còn ảnh hưởng việc khác", "id": "Pemulihan cukup lama. Kekecewaan itu memengaruhi hal lain juga"},
+            {"en": "Need time to recover. Can start again after fully feeling the disappointment", "ja": "時間が経たないと回復しない。十分に失望した後に再スタートできる", "zh-CN": "需要时间才能恢复，充分失望之后才能再开始", "zh-TW": "需要時間才能恢復，充分失望之後才能再開始", "vi": "Cần thời gian mới hồi lại. Sau khi thất vọng đủ mới bắt đầu lại", "id": "Butuh waktu untuk pulih. Bisa mulai lagi setelah cukup kecewa"},
+            {"en": "Disappointed, but start thinking of alternatives relatively quickly. Separate emotion and action somewhat", "ja": "失望するが比較的早く代替案を考え始める。感情と行動をある程度分離する", "zh-CN": "会失望，但较快开始想替代方案，情绪与行动有一定分离", "zh-TW": "會失望，但較快開始想替代方案，情緒與行動有一定分離", "vi": "Thất vọng nhưng khá nhanh nghĩ phương án khác. Tách phần nào cảm xúc và hành động", "id": "Kecewa, tapi cukup cepat mulai pikir alternatif. Memisahkan emosi dan aksi"},
+            {"en": "Next direction appears faster than disappointment. Curious about what's next rather than dwelling on the loss", "ja": "失望より次の方向が早く見える。無になったことに長く留まらず次が気になる", "zh-CN": "下一步方向比失望来得更快，不太停留在泡汤的事上，更好奇接下来", "zh-TW": "下一步方向比失望來得更快，不太停留在泡湯的事上，更好奇接下來", "vi": "Hướng tiếp theo hiện nhanh hơn thất vọng. Tò mò bước sau hơn là mắc kẹt ở mất mát", "id": "Arah berikutnya muncul lebih cepat dari kekecewaan. Penasaran langkah berikutnya"},
+        ],
+    },
+    {
+        "q": {
+            "en": "Something in progress must change direction midway. How do you act?",
+            "ja": "進行中の仕事が途中で方向転換しなければならなくなった。どう行動するか？",
+            "zh-CN": "进行中的事情中途必须改方向。你怎么行动？",
+            "zh-TW": "進行中的事情中途必須改方向。你怎麼行動？",
+            "vi": "Việc đang làm phải đổi hướng giữa chừng. Bạn hành động thế nào?",
+            "id": "Pekerjaan yang sedang berjalan harus ubah arah di tengah jalan. Bagaimana kamu bertindak?",
+        },
+        "opts": [
+            {"en": "Changing direction feels burdensome. Hard to switch because past effort feels wasted", "ja": "方向転換が負担。これまでの努力がもったいなく感じて簡単に切り替えられない", "zh-CN": "改方向很有负担，觉得之前努力白费，不容易切换", "zh-TW": "改方向很有負擔，覺得之前努力白費，不容易切換", "vi": "Đổi hướng thấy nặng nề. Khó chuyển vì cảm giác công sức trước uổng phí", "id": "Mengubah arah terasa berat. Sulit beralih karena merasa usaha sebelumnya sayang"},
+            {"en": "Know direction must change, but review and prepare enough before moving", "ja": "方向を変える必要は分かるが、転換前に十分検討・準備してから動く", "zh-CN": "知道要改方向，但切换前会充分审视和准备再行动", "zh-TW": "知道要改方向，但切換前會充分審視和準備再行動", "vi": "Biết phải đổi hướng nhưng xem xét và chuẩn bị đủ trước khi hành động", "id": "Tahu arah harus berubah, tapi tinjau dan persiapkan cukup sebelum bergerak"},
+            {"en": "Not hard to change direction if needed. Connect value of past work to the next direction", "ja": "必要なら方向転換は難しくない。これまでの価値を次の方向につなげる", "zh-CN": "有需要时不难改方向，把已做的价值连到下一步", "zh-TW": "有需要時不難改方向，把已做的價值連到下一步", "vi": "Nếu cần thì đổi hướng không khó. Nối giá trị đã làm với hướng mới", "id": "Tidak sulit ubah arah jika perlu. Menghubungkan nilai pekerjaan lalu ke arah berikutnya"},
+            {"en": "If situation changed, direction should change fast too. Flexible switching feels natural", "ja": "状況が変われば方向も素早く変えるべき。柔軟な転換が自然", "zh-CN": "情况变了方向也该快变，灵活切换很自然", "zh-TW": "情況變了方向也該快變，靈活切換很自然", "vi": "Tình huống đổi thì hướng cũng nên đổi nhanh. Chuyển linh hoạt là tự nhiên", "id": "Situasi berubah, arah juga harus cepat berubah. Beralih fleksibel terasa alami"},
+        ],
+    },
+    {
+        "q": {
+            "en": "You are alone in a completely unfamiliar environment for the first time. What do you do?",
+            "ja": "初めて見る未知の環境に一人で放り込まれた状況。あなたは？",
+            "zh-CN": "第一次独自被丢进完全陌生的环境。你会？",
+            "zh-TW": "第一次獨自被丟進完全陌生的環境。你會？",
+            "vi": "Lần đầu một mình bị đặt vào môi trường hoàn toàn xa lạ. Bạn làm gì?",
+            "id": "Kamu sendirian di lingkungan yang benar-benar asing untuk pertama kali. Kamu?",
+        },
+        "opts": [
+            {"en": "Very uncomfortable. Move as carefully as possible until it feels familiar", "ja": "かなり不快。慣れるまで最大限慎重に動く", "zh-CN": "很不适应，在熟悉之前尽量小心行动", "zh-TW": "很不適應，在熟悉之前盡量小心行動", "vi": "Rất khó chịu. Cẩn thận tối đa cho đến khi quen", "id": "Sangat tidak nyaman. Bergerak sehati-hati mungkin sampai terasa familiar"},
+            {"en": "Awkward at first, but adapt over time. Fine once I understand the environment", "ja": "最初はぎこちないが時間が経てば適応する。環境を把握すれば大丈夫", "zh-CN": "起初别扭，但时间会适应，摸清环境后就好", "zh-TW": "起初彆扭，但時間會適應，摸清環境後就好", "vi": "Ban đầu lạ nhưng theo thời gian thích nghi. Hiểu môi trường rồi thì ổn", "id": "Awalnya canggung, tapi lama-lama beradaptasi. Baik-baik saja setelah paham lingkungan"},
+            {"en": "Quickly overcome awkwardness and start exploring. Fast at adapting to the unfamiliar", "ja": "ぎこちなさを早く乗り越え環境探索を始める。未知への適応速度が速い", "zh-CN": "较快克服别扭并开始探索，适应陌生环境的速度快", "zh-TW": "較快克服彆扭並開始探索，適應陌生環境的速度快", "vi": "Nhanh vượt qua sự lạ và bắt đầu khám phá. Thích nghi môi trường lạ nhanh", "id": "Cepat atasi kecanggungan dan mulai eksplorasi. Cepat beradaptasi dengan yang asing"},
+            {"en": "Unfamiliar environments are actually good. The more unknown, the more there is to discover", "ja": "未知の環境はむしろ良い。分からないことが多いほど発見も多い", "zh-CN": "陌生环境反而很好，越不了解越觉得能发现很多", "zh-TW": "陌生環境反而很好，越不了解越覺得能發現很多", "vi": "Môi trường lạ thực ra tốt. Càng không biết càng nhiều thứ để khám phá", "id": "Lingkungan asing justru bagus. Semakin banyak yang tidak tahu, semakin banyak yang bisa ditemukan"},
+        ],
+    },
+    {
+        "q": {
+            "en": "You must move forward when the outcome is completely unknown. What do you do?",
+            "ja": "結果が全く分からない状況で前に進まなければならない。あなたは？",
+            "zh-CN": "在结果完全未知的情况下必须前进。你会？",
+            "zh-TW": "在結果完全未知的情況下必須前進。你會？",
+            "vi": "Phải tiến lên khi kết quả hoàn toàn không biết trước. Bạn làm gì?",
+            "id": "Harus maju saat hasilnya sama sekali tidak diketahui. Kamu?",
+        },
+        "opts": [
+            {"en": "Want to wait until some prediction is possible. Total uncertainty is very uncomfortable", "ja": "ある程度予測できるまで待ちたい。完全な不確実性はかなり不快", "zh-CN": "想等到能有所预测再说，完全不确定很不适应", "zh-TW": "想等到能有所預測再說，完全不確定很不適應", "vi": "Muốn đợi đến khi có thể dự đoán phần nào. Bất định hoàn toàn rất khó chịu", "id": "Ingin menunggu sampai bisa diprediksi sebagian. Ketidakpastian total sangat tidak nyaman"},
+            {"en": "Uncomfortable, but can move once some information is in place even without full certainty", "ja": "不快だが完全な確信がなくても情報が整えば動ける", "zh-CN": "会不适，但没有完全把握、信息够一些也能行动", "zh-TW": "會不適，但沒有完全把握、資訊夠一些也能行動", "vi": "Khó chịu nhưng không cần chắc chắn hoàn toàn, có đủ thông tin thì đi được", "id": "Tidak nyaman, tapi bisa bergerak saat informasi cukup meski tanpa kepastian penuh"},
+            {"en": "Move on current information and judgment even if uncertain. Can adjust along the way", "ja": "不確実でも今ある情報と判断で動く。行きながら修正すればよい", "zh-CN": "即使不确定，也凭现有信息和判断行动，边走边改", "zh-TW": "即使不確定，也憑現有資訊和判斷行動，邊走邊改", "vi": "Dù không chắc vẫn đi với thông tin và phán đoán hiện có. Sửa dần trên đường", "id": "Bergerak dengan info dan penilaian sekarang meski tidak pasti. Bisa koreksi sepanjang jalan"},
+            {"en": "Uncertainty itself is not very uncomfortable. Moving forward without knowing feels natural", "ja": "不確実性自体はあまり不快でない。分からないまま進む方が自然", "zh-CN": "不确定性本身不太困扰，在未知中前进反而自然", "zh-TW": "不確定性本身不太困擾，在未知中前進反而自然", "vi": "Bản thân sự bất định không quá khó chịu. Tiến trong trạng thái không biết lại tự nhiên", "id": "Ketidakpastian sendiri tidak terlalu mengganggu. Maju tanpa tahu justru alami"},
+        ],
+    },
+    {
+        "q": {
+            "en": "External change you cannot control occurs (policy, environment, market, etc.). What do you do?",
+            "ja": "自分ではコントロールできない外部の変化（制度・環境・市場など）が起きた。あなたは？",
+            "zh-CN": "发生了你无法控制的外部变化（制度、环境、市场等）。你会？",
+            "zh-TW": "發生了你無法控制的外部變化（制度、環境、市場等）。你會？",
+            "vi": "Thay đổi bên ngoài bạn không kiểm soát được xảy ra (chính sách, môi trường, thị trường...). Bạn làm gì?",
+            "id": "Perubahan eksternal di luar kendalimu terjadi (kebijakan, lingkungan, pasar, dll.). Kamu?",
+        },
+        "opts": [
+            {"en": "Not being able to control it is very anxiety-provoking. Worried about the impact of change", "ja": "コントロールできないこと自体がかなり不安。変化の影響が心配", "zh-CN": "无法掌控本身就很焦虑，担心变化会带来什么影响", "zh-TW": "無法掌控本身就很焦慮，擔心變化會帶來什麼影響", "vi": "Không kiểm soát được khiến lo lắng. Lo tác động của thay đổi", "id": "Tidak bisa mengontrolnya sendiri sangat cemaskan. Khawatir dampak perubahan"},
+            {"en": "Takes time to accept the situation, but eventually adapt", "ja": "状況を受け入れるのに時間がかかるが、最終的には適応する", "zh-CN": "接受情况需要时间，但最终会适应", "zh-TW": "接受情況需要時間，但最終會適應", "vi": "Mất thời gian chấp nhận tình huống nhưng cuối cùng thích nghi", "id": "Butuh waktu menerima situasi, tapi akhirnya beradaptasi"},
+            {"en": "Quickly accept what I cannot control and focus on what I can", "ja": "コントロールできないものは早く受け入れ、できることに集中する", "zh-CN": "较快接受无法控制的部分，专注在自己能掌控的事", "zh-TW": "較快接受無法控制的部分，專注在自己能掌控的事", "vi": "Nhanh chấp nhận phần không kiểm soát được và tập trung phần có thể", "id": "Cepat terima yang tidak bisa dikontrol dan fokus pada yang bisa"},
+            {"en": "When external change hits, look first for new opportunities inside it. Bigger change, bigger opportunity", "ja": "外部変化が起きればその中で新しい機会を先に探す。変化が大きいほど機会も大きい", "zh-CN": "外部变化来时先在变化里找新机会，变化越大机会越大", "zh-TW": "外部變化來時先在變化裡找新機會，變化越大機會越大", "vi": "Khi thay đổi bên ngoài xảy ra, tìm cơ hội mới trước trong đó. Thay đổi càng lớn, cơ hội càng lớn", "id": "Saat perubahan eksternal datang, cari peluang baru di dalamnya. Semakin besar perubahan, semakin besar peluang"},
+        ],
+    },
+    {
+        "q": {
+            "en": "Change has left you in complete chaos. How long until you regain stability?",
+            "ja": "変化で完全に混乱した状況になった。安定を取り戻すまであなたは？",
+            "zh-CN": "变化让你陷入完全混乱。恢复稳定需要多久？",
+            "zh-TW": "變化讓你陷入完全混亂。恢復穩定需要多久？",
+            "vi": "Thay đổi khiến bạn rơi vào hỗn loạn hoàn toàn. Mất bao lâu để lấy lại ổn định?",
+            "id": "Perubahan membuat situasi benar-benar kacau. Berapa lama sampai kamu stabil lagi?",
+        },
+        "opts": [
+            {"en": "Quite a long time. Hard to focus on anything else until chaos settles", "ja": "かなり長い。混乱が整理されるまで他のことに集中しにくい", "zh-CN": "需要很久，混乱整理前很难专注其他事", "zh-TW": "需要很久，混亂整理前很難專注其他事", "vi": "Khá lâu. Khó tập trung việc khác cho đến khi hỗn loạn ổn", "id": "Cukup lama. Sulit fokus hal lain sampai kekacauan reda"},
+            {"en": "Find stability after time passes and the situation is somewhat understood", "ja": "時間が経ち状況がある程度把握されると安定を取り戻す", "zh-CN": "时间过去、情况大致摸清后会恢复稳定", "zh-TW": "時間過去、情況大致摸清後會恢復穩定", "vi": "Tìm lại ổn định sau khi thời gian trôi và hiểu phần nào tình huống", "id": "Menemukan stabilitas setelah waktu berlalu dan situasi cukup dipahami"},
+            {"en": "Find things I can do even in chaos and regain stability relatively quickly", "ja": "混乱の中でもできることを見つけて比較的早く安定を取り戻す", "zh-CN": "在混乱中也找能做的事，较快恢复稳定", "zh-TW": "在混亂中也找能做的事，較快恢復穩定", "vi": "Tìm việc có thể làm ngay cả trong hỗn loạn và khá nhanh ổn lại", "id": "Temukan hal yang bisa dilakukan bahkan dalam kekacauan dan cukup cepat stabil lagi"},
+            {"en": "Know chaos is temporary, so do not stay long. Quickly find a new balance", "ja": "混乱は一時的だと分かっているので長く留まらない。素早く新しい均衡を見つける", "zh-CN": "知道混乱是暂时的，不会久留，较快找到新平衡", "zh-TW": "知道混亂是暫時的，不會久留，較快找到新平衡", "vi": "Biết hỗn loạn chỉ tạm thời nên không ở lâu. Nhanh tìm cân bằng mới", "id": "Tahu kekacauan sementara, jadi tidak lama tinggal. Cepat temukan keseimbangan baru"},
+        ],
+    },
+    {
+        "q": {
+            "en": "The result was completely different from what you expected. How do you react?",
+            "ja": "予想と全く違う結果が出た。あなたはどう反応するか？",
+            "zh-CN": "结果和预期完全不同。你怎么反应？",
+            "zh-TW": "結果和預期完全不同。你怎麼反應？",
+            "vi": "Kết quả hoàn toàn khác dự đoán. Bạn phản ứng thế nào?",
+            "id": "Hasilnya benar-benar berbeda dari perkiraan. Bagaimana reaksimu?",
+        },
+        "opts": [
+            {"en": "Being off expectation is very uncomfortable. First ask why it turned out this way", "ja": "予想外であること自体がかなり不快。なぜこうなったかを先に追う", "zh-CN": "偏离预期本身就很不适，先追问为什么会这样", "zh-TW": "偏離預期本身就很不适，先追問為什麼會這樣", "vi": "Lệch kỳ vọng rất khó chịu. Trước hết hỏi vì sao lại ra thế này", "id": "Menyimpang dari ekspektasi sangat tidak nyaman. Pertama tanyakan kenapa jadi begini"},
+            {"en": "Startled, but gradually think of next steps while understanding the new result", "ja": "当惑するが新しい結果を把握しながら徐々に次を考える", "zh-CN": "会慌，但在理解新结果的过程中慢慢想下一步", "zh-TW": "會慌，但在理解新結果的過程中慢慢想下一步", "vi": "Hoang mang nhưng dần nghĩ bước tiếp khi nắm kết quả mới", "id": "Kaget, tapi perlahan pikir langkah berikutnya sambil pahami hasil baru"},
+            {"en": "Unexpected results are still results. Tend to find the next direction from this outcome", "ja": "予想外の結果も結果。この結果から次の方向を見つける方", "zh-CN": "意料外的结果也是结果，倾向从这个结果找下一步方向", "zh-TW": "意料外的結果也是結果，傾向從這個結果找下一步方向", "vi": "Kết quả bất ngờ vẫn là kết quả. Thường tìm hướng tiếp từ kết quả này", "id": "Hasil tak terduga tetap hasil. Cenderung cari arah berikutnya dari hasil ini"},
+            {"en": "Unexpected results are more interesting. Learn more from surprises than from plans going as expected", "ja": "予想外の結果の方が面白い。計画通りより予想外から多く学ぶ", "zh-CN": "意料外的结果更有趣，从意外中学到的比按计划进行更多", "zh-TW": "意料外的結果更有趣，從意外中學到的比按計畫進行更多", "vi": "Kết quả bất ngờ thú vị hơn. Học nhiều hơn từ bất ngờ hơn từ đúng kế hoạch", "id": "Hasil tak terduga lebih menarik. Belajar lebih banyak dari kejutan daripada rencana yang jalan"},
+        ],
+    },
+    {
+        "q": {
+            "en": "After passing through a difficult stretch caused by change, you:",
+            "ja": "変化で困難な区間を越えたあと、あなたは？",
+            "zh-CN": "经历变化带来的困难阶段之后，你会？",
+            "zh-TW": "經歷變化帶來的困難階段之後，你會？",
+            "vi": "Sau khi vượt qua giai đoạn khó do thay đổi gây ra, bạn:",
+            "id": "Setelah melewati masa sulit karena perubahan, kamu:",
+        },
+        "opts": [
+            {"en": "Big relief that the hard part is over. Want to return to stability quickly", "ja": "困難が過ぎた安堵感が大きい。早く安定に戻りたい", "zh-CN": "困难过去带来的如释重负很大，想快点回到稳定", "zh-TW": "困難過去帶來的如釋重負很大，想快點回到穩定", "vi": "Cảm giác nhẹ nhõm vì giai đoạn khó đã qua. Muốn nhanh quay lại ổn định", "id": "Leganya besar karena masa sulit lewat. Ingin cepat kembali stabil"},
+            {"en": "Look back on the hard process and think I can respond better next time", "ja": "辛かった過程を振り返り、次はもっとうまく対応できそうと思う", "zh-CN": "回看艰难过程，觉得下次能应对得更好", "zh-TW": "回看艱難過程，覺得下次能應對得更好", "vi": "Nhìn lại quá trình khó và nghĩ lần sau sẽ ứng phó tốt hơn", "id": "Melihat kembali proses sulit dan berpikir lain kali bisa merespons lebih baik"},
+            {"en": "Naturally organize what that change taught me", "ja": "その変化が何を教えてくれたかを自然に整理する", "zh-CN": "自然整理那次变化教会了我什么", "zh-TW": "自然整理那次變化教會了我什麼", "vi": "Tự nhiên sắp xếp thay đổi ấy đã dạy mình điều gì", "id": "Secara alami merapikan apa yang diajarkan perubahan itu"},
+            {"en": "Feel things emerged that would not have without that change. Tend to feel grateful for change itself", "ja": "その変化がなければ得られなかったものが生まれたと感じる。変化自体に感謝する方", "zh-CN": "觉得若没有那次变化就不会得到某些东西，倾向感谢变化本身", "zh-TW": "覺得若沒有那次變化就不會得到某些東西，傾向感謝變化本身", "vi": "Cảm giác có thứ mà không có thay đổi ấy sẽ không có. Thường biết ơn bản thân thay đổi", "id": "Merasa ada hal yang tidak akan ada tanpa perubahan itu. Cenderung berterima kasih pada perubahan"},
+        ],
+    },
+    {
+        "q": {
+            "en": "What is your basic attitude toward change right now?",
+            "ja": "今、変化に対してあなたが持っている基本的な態度は？",
+            "zh-CN": "现在你对变化的基本态度是？",
+            "zh-TW": "現在，你對變化的基本態度是？",
+            "vi": "Thái độ cơ bản của bạn với thay đổi hiện tại là gì?",
+            "id": "Apa sikap dasarmu terhadap perubahan saat ini?",
+        },
+        "opts": [
+            {"en": "Change is best minimized when possible. Stability matters more", "ja": "変化は可能なら最小化する方が良い。安定の方が重要", "zh-CN": "变化能少则少，稳定更重要", "zh-TW": "變化能少則少，穩定更重要", "vi": "Thay đổi nên giảm tối đa nếu có thể. Ổn định quan trọng hơn", "id": "Perubahan sebaiknya diminimalkan jika bisa. Stabilitas lebih penting"},
+            {"en": "Change is something to accept when unavoidable. Adapt when needed", "ja": "変化は避けられないとき受け入れるもの。必要なら適応する", "zh-CN": "变化是不得已才接受的事，需要时再适应", "zh-TW": "變化是不得已才接受的事，需要時再適應", "vi": "Thay đổi là thứ chấp nhận khi không tránh được. Thích nghi khi cần", "id": "Perubahan diterima saat tak terhindarkan. Beradaptasi bila perlu"},
+            {"en": "Change is natural. Better to flow with it than resist", "ja": "変化は自然なもの。抵抗より一緒に流れる方が良い", "zh-CN": "变化很自然，比起抵抗不如一起顺势而行", "zh-TW": "變化很自然，比起抵抗不如一起順勢而行", "vi": "Thay đổi là tự nhiên. Nên đi cùng dòng hơn là chống lại", "id": "Perubahan itu alami. Lebih baik mengalir bersamanya daripada melawan"},
+            {"en": "Change is opportunity. No growth without change", "ja": "変化は機会。変化なしに成長もない", "zh-CN": "变化是机会，没有变化就没有成长", "zh-TW": "變化是機會，沒有變化就沒有成長", "vi": "Thay đổi là cơ hội. Không có thay đổi thì không có trưởng thành", "id": "Perubahan adalah peluang. Tanpa perubahan tidak ada pertumbuhan"},
+        ],
+    },
+]
+
+# --- Result translations (en/ja/zh-CN/zh-TW/vi/id) ---
+_R_I18N: list[dict[str, dict[str, str]]] = [
+    {
+        "title": {"en": "When Stability Is the Strongest Strategy, Stability-First Type", "ja": "安定が最も強力な戦略の人、安定優先型", "zh-CN": "稳定是最强策略的人，稳定优先型", "zh-TW": "穩定是最強策略的人，穩定優先型", "vi": "Khi ổn định là chiến lược mạnh nhất, Loại ưu tiên ổn định", "id": "Saat Stabilitas Strategi Terkuat, Tipe Prioritas Stabilitas"},
+        "changeAdaptabilityIndex": {"en": "Very low / Strongest in predictable environments", "ja": "非常に低い / 予測可能な環境で最も強いタイプ", "zh-CN": "非常低 / 在可预测环境中最强的类型", "zh-TW": "非常低 / 在可預測環境中最強的類型", "vi": "Rất thấp / Mạnh nhất trong môi trường dự đoán được", "id": "Sangat rendah / Terkuat di lingkungan yang dapat diprediksi"},
+        "quote": {"en": "For you, change is not something to welcome but something to manage. Your abilities shine best in a stable environment.", "ja": "あなたにとって変化は歓迎するものではなく管理すべきものです。安定した環境で能力が最もよく発揮されます。", "zh-CN": "对你而言，变化不是要欢迎的事，而是需要管理的事。在稳定环境中你的能力发挥最好。", "zh-TW": "對你而言，變化不是要歡迎的事，而是需要管理的事。在穩定環境中你的能力發揮最好。", "vi": "Với bạn, thay đổi không phải để chào đón mà để quản lý. Năng lực bạn phát huy tốt nhất trong môi trường ổn định.", "id": "Bagimu, perubahan bukan untuk disambut melainkan dikelola. Kemampuanmu paling bersinar di lingkungan stabil."},
+        "description": {"en": "Sudden change raises anxiety, switching to a new direction takes considerable energy, and prolonged uncertainty lowers functioning. This is not a weakness — steady, reliable results in predictable environments are this type's greatest strength.", "ja": "突然の変化の前で不安が湧き、新しい方向への転換に相当なエネルギーが必要で、不確実な状況が長く続くと機能が落ちるパターンです。これは弱点ではありません。予測可能な環境で着実で安定した結果を出すことがこのタイプの最大の強みです。", "zh-CN": "突然变化时会焦虑，转向新方向需要大量能量，不确定状况持续太久功能会下降。这不是弱点——在可预测环境中创造稳定成果，是此类型最强的优势。", "zh-TW": "突然變化時會焦慮，轉向新方向需要大量能量，不確定狀況持續太久功能會下降。這不是弱點——在可預測環境中創造穩定成果，是此類型最強的優勢。", "vi": "Thay đổi đột ngột làm lo lắng tăng, chuyển hướng mới tốn nhiều năng lượng, bất định kéo dài làm giảm hiệu suất. Đây không phải điểm yếu — kết quả ổn định trong môi trường dự đoán được là thế mạnh lớn nhất.", "id": "Perubahan mendadak menaikkan kecemasan, beralih arah butuh energi besar, ketidakpastian lama menurunkan fungsi. Ini bukan kelemahan — hasil stabil di lingkungan terprediksi adalah kekuatan terbesar tipe ini."},
+        "changeAdaptabilityType": {"en": "Stability-First Type 🪨", "ja": "安定優先型 🪨", "zh-CN": "稳定优先型 🪨", "zh-TW": "穩定優先型 🪨", "vi": "Loại ưu tiên ổn định 🪨", "id": "Tipe Prioritas Stabilitas 🪨"},
+        "indexScore": {"en": "Very low (0~14%)", "ja": "非常に低い (0~14%)", "zh-CN": "非常低 (0~14%)", "zh-TW": "非常低 (0~14%)", "vi": "Rất thấp (0~14%)", "id": "Sangat rendah (0~14%)"},
+        "domainDiagnosis": {"en": "Cognitive: Tend to see change as threat; prefer keeping existing ways\nEmotional: High anxiety before change; slow to regain stability\nBehavioral: Slow to decide to switch; move after enough preparation\nUncertainty: Unpredictable situations are major stress; sense of control matters\nResilience: Needs time before stability returns\nLearning: Learns more deeply in stable situations than amid change", "ja": "認知: 変化を脅威と認識する傾向。既存方式の維持を好む\n感情: 変化の前で不安が高く、安定回復に時間がかかる\n行動: 転換決定が遅く、十分な準備後に動くパターン\n不確実性: 予測不能な状況が大きなストレス。コントロール感が重要\n回復力: 安定が回復するまで時間が必要\n学習: 変化より安定した状況でより深く学ぶ方", "zh-CN": "认知：倾向把变化看成威胁，偏好维持原有方式\n情绪：变化前焦虑高，恢复稳定需要时间\n行为：转换决定慢，充分准备后才行动\n不确定性：不可预测情境带来很大压力，掌控感很重要\n恢复力：稳定恢复前需要时间\n学习：比起变化，在稳定情境中学得更深", "zh-TW": "認知：傾向把變化看成威脅，偏好維持原有方式\n情緒：變化前焦慮高，恢復穩定需要時間\n行為：轉換決定慢，充分準備後才行動\n不確定性：不可預測情境帶來很大壓力，掌控感很重要\n恢復力：穩定恢復前需要時間\n學習：比起變化，在穩定情境中學得更深", "vi": "Nhận thức: Dễ coi thay đổi là mối đe dọa; ưu tiên giữ cách cũ\nCảm xúc: Lo cao trước thay đổi; lâu mới ổn lại\nHành vi: Quyết định chuyển chậm; hành động sau khi chuẩn bị đủ\nBất định: Tình huống khó dự đoán gây stress lớn; cảm giác kiểm soát quan trọng\nPhục hồi: Cần thời gian trước khi ổn định trở lại\nHọc hỏi: Học sâu hơn trong ổn định hơn giữa thay đổi", "id": "Kognitif: Cenderung melihat perubahan sebagai ancaman; prefer cara lama\nEmosi: Kecemasan tinggi sebelum perubahan; lambat stabil kembali\nPerilaku: Keputusan beralih lambat; bergerak setelah persiapan cukup\nKetidakpastian: Situasi tak terprediksi = stres besar; rasa kontrol penting\nKetahanan: Butuh waktu sebelum stabilitas kembali\nBelajar: Belajar lebih dalam di situasi stabil daripada di tengah perubahan"},
+        "strengths": {"en": "Roles requiring consistent procedures, standards, and environment. Work needing long-term focus. Settings where precision and thoroughness matter", "ja": "一貫した手順・基準・環境が求められる役割。長期的集中力が必要な仕事。精密さ・丁寧さが重要な環境", "zh-CN": "需要一致流程、标准与环境的工作。需要长期专注的事。精密与细致很重要的环境", "zh-TW": "需要一致流程、標準與環境的工作。需要長期專注的事。精密與細緻很重要的環境", "vi": "Vai trò cần quy trình·tiêu chuẩn·môi trường nhất quán. Việc cần tập trung dài hạn. Môi trường cần chính xác và cẩn thận", "id": "Peran yang butuh prosedur, standar, lingkungan konsisten. Pekerjaan butuh fokus jangka panjang. Lingkungan yang butuh presisi dan teliti"},
+        "tryNow": {"en": "When change hits, first separate \"what I can control\" from \"what I cannot.\" Focusing on the controllable restores stability faster\nTry small intentional changes — new walking route, new café — low-risk practice first", "ja": "変化が来たらまず「自分がコントロールできること」と「できないこと」を分ける。コントロール可能なことに集中すると安定感が早く戻る\n小さな変化を意図的に経験する。散歩コース変更、新しいカフェなど低リスクの練習から", "zh-CN": "变化来临时先区分「我能控制的」和「我不能控制的」，专注可控部分会更快恢复稳定感\n刻意体验小变化——换散步路线、去新咖啡馆——从低风险练习开始", "zh-TW": "變化來臨時先區分「我能控制的」和「我不能控制的」，專注可控部分會更快恢復穩定感\n刻意體驗小變化——換散步路線、去新咖啡館——從低風險練習開始", "vi": "Khi thay đổi đến, trước hết tách \"mình kiểm soát được\" và \"không kiểm soát được.\" Tập trung phần kiểm soát được giúp ổn nhanh hơn\nThử thay đổi nhỏ có chủ ý — đổi lộ đi, quán mới — luyện rủi ro thấp trước", "id": "Saat perubahan datang, pisahkan dulu \"yang bisa aku kontrol\" dan \"yang tidak.\" Fokus pada yang bisa dikontrol memulihkan stabilitas lebih cepat\nCoba perubahan kecil sengaja — rute jalan, kafe baru — latihan risiko rendah dulu"},
+        "oneLiner": {"en": "Choosing stability is also a powerful strategy. Small practice for when change comes makes that moment much easier", "ja": "安定を選ぶことも強力な戦略です。変化が来る時に備えた小さな練習を平素からしておくと、その瞬間がずっと楽になります", "zh-CN": "选择稳定也是强大策略。平时为变化来临做的小练习，会让那一刻轻松很多", "zh-TW": "選擇穩定也是強大策略。平時為變化來臨做的小練習，會讓那一刻輕鬆很多", "vi": "Chọn ổn định cũng là chiến lược mạnh. Luyện nhỏ sẵn cho lúc thay đổi đến sẽ khiến khoảnh khắc đó dễ hơn nhiều", "id": "Memilih stabilitas juga strategi kuat. Latihan kecil untuk saat perubahan datang membuat momen itu jauh lebih mudah"},
+        "shareLine": {"en": "My change adaptability: Stability-First Type 🪨 Stability before change... but choosing stability is also a strategy, so true → This is how I react to change — what type are you?", "ja": "私の変化適応力: 安定優先型 🪨 変化より安定が先のタイプ…でも安定を選ぶのも戦略だって当たり → 変化にこう反応する あなたはどのタイプ？", "zh-CN": "我的变化适应力：稳定优先型 🪨 变化前先求稳定…但选择稳定也是策略太准 → 我面对变化是这样反应的——你是什么类型？", "zh-TW": "我的變化適應力：穩定優先型 🪨 變化前先求穩定…但選擇穩定也是策略太準 → 我面對變化是這樣反應的——你是什麼類型？", "vi": "Khả năng thích ứng: Loại ưu tiên ổn định 🪨 Ổn định trước thay đổi... chọn ổn định cũng là chiến lược, đúng quá → Tôi phản ứng thế này — bạn loại nào?", "id": "Adaptabilitas perubahan-ku: Tipe Prioritas Stabilitas 🪨 Stabilitas dulu dari perubahan... memilih stabilitas juga strategi, bener → Aku bereaksi begini — kamu tipe apa?"},
+    },
+    {
+        "title": {"en": "Moving Only After Understanding Enough, Cautious Acceptance Type", "ja": "十分に把握してから動く人、慎重受容型", "zh-CN": "充分掌握后再行动的人，谨慎接纳型", "zh-TW": "充分掌握後再行動的人，謹慎接納型", "vi": "Chỉ hành động sau khi hiểu đủ, Loại chấp nhận thận trọng", "id": "Bergerak Setelah Cukup Paham, Tipe Penerimaan Hati-hati"},
+        "changeAdaptabilityIndex": {"en": "Low-average / Accepts change step by step after review", "ja": "低-普通 / 検討後に段階的に受容するタイプ", "zh-CN": "偏低-一般 / 审视后逐步接纳的类型", "zh-TW": "偏低-一般 / 審視後逐步接納的類型", "vi": "Thấp-trung bình / Chấp nhận thay đổi từng bước sau khi xem xét", "id": "Rendah-sedang / Menerima perubahan bertahap setelah tinjauan"},
+        "quote": {"en": "You do not reject change. You simply prefer to accept it after understanding enough.", "ja": "あなたは変化を拒否しません。ただ十分に理解してから受け入れる方です。", "zh-CN": "你不拒绝变化，只是习惯在充分理解之后再接受。", "zh-TW": "你不拒絕變化，只是習慣在充分理解之後再接受。", "vi": "Bạn không từ chối thay đổi. Bạn chỉ thích chấp nhận sau khi hiểu đủ.", "id": "Kamu tidak menolak perubahan. Kamu hanya lebih suka menerimanya setelah cukup memahami."},
+        "description": {"en": "When change arrives, you assess the situation, review impact, and switch when prepared rather than jumping in immediately. Because you adapt in a predictable way, you settle in relatively quickly after transition.", "ja": "変化が起きたときすぐ飛び込むより、状況を把握し影響を検討し、準備が整ってから転換するパターンです。衝動的でなく予測可能な方式で適応するため、転換後の定着が比較的早いです。", "zh-CN": "变化来临时，你不是立刻冲进去，而是先掌握情况、评估影响、准备充分再切换。因为适应方式可预测，转换后通常较快安定下来。", "zh-TW": "變化來臨時，你不是立刻衝進去，而是先掌握情況、評估影響、準備充分再切換。因為適應方式可預測，轉換後通常較快安定下來。", "vi": "Khi thay đổi đến, bạn nắm tình huống, xem xét tác động và chuyển khi đã chuẩn bị thay vì lao ngay vào. Vì thích nghi theo cách dự đoán được, sau chuyển đổi thường ổn định khá nhanh.", "id": "Saat perubahan datang, kamu pahami situasi, tinjau dampak, dan beralih saat siap — bukan langsung loncat. Karena adaptasi terprediksi, setelah transisi kamu relatif cepat menetap."},
+        "changeAdaptabilityType": {"en": "Cautious Acceptance Type 🌿", "ja": "慎重受容型 🌿", "zh-CN": "谨慎接纳型 🌿", "zh-TW": "謹慎接納型 🌿", "vi": "Loại chấp nhận thận trọng 🌿", "id": "Tipe Penerimaan Hati-hati 🌿"},
+        "indexScore": {"en": "Low-average (17~30%)", "ja": "低-普通 (17~30%)", "zh-CN": "偏低-一般 (17~30%)", "zh-TW": "偏低-一般 (17~30%)", "vi": "Thấp-trung bình (17~30%)", "id": "Rendah-sedang (17~30%)"},
+        "domainDiagnosis": {"en": "Cognitive: Recognizes need for change but takes time to decide to switch\nEmotional: Stabilizes over time; needs processing time\nBehavioral: Can act once prepared; awkward to move before ready\nUncertainty: Can tolerate uncertainty with some information\nResilience: Average recovery speed; finds stability after understanding the situation\nLearning: Tends to find learning when looking back after change", "ja": "認知: 変化の必要性は認識するが転換判断に時間がかかる\n感情: 時間が経てば安定。処理時間が必要\n行動: 準備が整えば行動できる。準備前の動きはぎこちない\n不確実性: ある程度の情報があれば不確実性を耐えられる\n回復力: 回復速度は普通。状況把握後に早く安定\n学習: 変化後に振り返って学びを見つける方", "zh-CN": "认知：知道需要变化但切换判断需要时间\n情绪：时间过去会稳定，需要处理时间\n行为：准备充分才能行动，没准备好前行动会别扭\n不确定性：有一定信息就能承受不确定\n恢复力：恢复速度一般，摸清情况后较快稳定\n学习：变化后回看时较能找到学习点", "zh-TW": "認知：知道需要變化但切換判斷需要時間\n情緒：時間過去會穩定，需要處理時間\n行為：準備充分才能行動，沒準備好前行動會彆扭\n不確定性：有一定資訊就能承受不確定\n恢復力：恢復速度一般，摸清情況後較快穩定\n學習：變化後回看時較能找到學習點", "vi": "Nhận thức: Biết cần thay đổi nhưng quyết định chuyển mất thời gian\nCảm xúc: Ổn dần theo thời gian; cần thời gian xử lý\nHành vi: Chuẩn bị đủ mới hành động; chưa sẵn sàng thì vụng về\nBất định: Chịu được bất định khi có thông tin nhất định\nPhục hồi: Tốc độ phục hồi trung bình; ổn nhanh sau khi hiểu tình huống\nHọc hỏi: Thường tìm bài học khi nhìn lại sau thay đổi", "id": "Kognitif: Mengenali perlu berubah tapi butuh waktu putuskan beralih\nEmosi: Stabil seiring waktu; butuh waktu proses\nPerilaku: Bisa bertindak saat siap; canggung bergerak sebelum siap\nKetidakpastian: Tahan ketidakpastian dengan informasi cukup\nKetahanan: Kecepatan pulih sedang; stabil cepat setelah paham situasi\nBelajar: Cenderung temukan pembelajaran saat melihat kembali setelah perubahan"},
+        "strengths": {"en": "Transitions with enough preparation time. Environments where change can be applied in stages", "ja": "十分な準備期間がある転換。段階的な変化適用が可能な環境", "zh-CN": "有充分准备期的转换。可以分阶段应用变化的环境", "zh-TW": "有充分準備期的轉換。可以分階段應用變化的環境", "vi": "Chuyển đổi có đủ thời gian chuẩn bị. Môi trường áp dụng thay đổi theo giai đoạn", "id": "Transisi dengan waktu persiapan cukup. Lingkungan di mana perubahan bisa diterapkan bertahap"},
+        "tryNow": {"en": "When change comes, first ask \"What is the worst case?\" If the worst is manageable, you may move faster than you think\nSet criteria in advance to distinguish \"learning enough\" from \"postponing the decision\"", "ja": "変化が来たらまず「最悪の場合は何か？」を設定する。最悪が耐えられるなら思ったより早く動ける\n「十分調べること」と「決定を先延ばしすること」を区別する基準を事前に作る", "zh-CN": "变化来临时先问「最坏情况是什么？」若最坏也可承受，可能比你想的更快行动\n事先设定标准，区分「充分了解」和「拖延决定」", "zh-TW": "變化來臨時先問「最壞情況是什麼？」若最壞也可承受，可能比你想的更快行動\n事先設定標準，區分「充分了解」和「拖延決定」", "vi": "Khi thay đổi đến, hỏi trước \"Trường hợp xấu nhất là gì?\" Nếu chịu được, bạn có thể nhanh hơn nghĩ\nĐặt tiêu chí trước để phân biệt \"tìm hiểu đủ\" và \"trì hoãn quyết định\"", "id": "Saat perubahan datang, tanya dulu \"Apa skenario terburuk?\" Jika terburuk masih bisa ditanggung, kamu bisa bergerak lebih cepat\nBuat kriteria sebelumnya membedakan \"cukup belajar\" dan \"menunda keputusan\""},
+        "oneLiner": {"en": "Cautious adaptation is sustainable adaptation. Having a \"this is enough\" standard helps you not miss opportunities while waiting for perfect preparation", "ja": "慎重な適応は持続可能な適応です。完璧な準備を待ちすぎて機会を逃さないよう「これくらいで十分」という基準を持つと助けになります", "zh-CN": "谨慎适应是可持续的适应。有「这样就够了」的标准，才不会等完美准备而错过机会", "zh-TW": "謹慎適應是可持續的適應。有「這樣就夠了」的標準，才不會等完美準備而錯過機會", "vi": "Thích nghi thận trọng là thích nghi bền vững. Có tiêu chí \"đủ rồi\" giúp không bỏ lỡ cơ hội vì chờ chuẩn bị hoàn hảo", "id": "Adaptasi hati-hati adalah adaptasi berkelanjutan. Punya standar \"ini sudah cukup\" membantu tidak kehilangan peluang sambil menunggu persiapan sempurna"},
+        "shareLine": {"en": "My change adaptability: Cautious Acceptance Type 🌿 Move only after understanding enough... the part about missing opportunities waiting for perfect prep hit hard lol → This is how I react — what about you?", "ja": "私の変化適応力: 慎重受容型 🌿 十分把握してから動くタイプ…完璧な準備待ちで機会逃すの当たり ㅋㅋ → 変化にこう反応する あなたは？", "zh-CN": "我的变化适应力：谨慎接纳型 🌿 充分掌握后再行动…等完美准备错过机会被戳中哈哈 → 我面对变化是这样反应的——你呢？", "zh-TW": "我的變化適應力：謹慎接納型 🌿 充分掌握後再行動…等完美準備錯過機會被戳中哈哈 → 我面對變化是這樣反應的——你呢？", "vi": "Khả năng thích ứng: Loại chấp nhận thận trọng 🌿 Chỉ đi sau khi hiểu đủ... chờ chuẩn bị hoàn hảo mà lỡ cơ hội, đúng quá haha → Tôi phản ứng thế này — còn bạn?", "id": "Adaptabilitas-ku: Tipe Penerimaan Hati-hati 🌿 Bergerak setelah cukup paham... nunggu persiapan sempurna kelewatan peluang, kena banget wkwk → Aku bereaksi begini — kamu?"},
+    },
+    {
+        "title": {"en": "Wobbling but Eventually Finding Balance, Adaptive Balance Type", "ja": "揺れながらも最終的に均衡を見つける人、適応均衡型", "zh-CN": "会摇晃但最终找到平衡的人，适应平衡型", "zh-TW": "會搖晃但最終找到平衡的人，適應平衡型", "vi": "Lắc lư nhưng cuối cùng tìm cân bằng, Loại cân bằng thích ứng", "id": "Goyah tapi Akhirnya Temukan Keseimbangan, Tipe Keseimbangan Adaptif"},
+        "changeAdaptabilityIndex": {"en": "Average / Finds balance between change and stability", "ja": "普通 / 変化と安定の間で均衡を見つけるタイプ", "zh-CN": "一般 / 在变化与稳定之间找平衡的类型", "zh-TW": "一般 / 在變化與穩定之間找平衡的類型", "vi": "Trung bình / Tìm cân bằng giữa thay đổi và ổn định", "id": "Sedang / Menemukan keseimbangan antara perubahan dan stabilitas"},
+        "quote": {"en": "You wobble in the face of change, but you eventually find a new balance point. Not fast, but you adapt in the end.", "ja": "あなたは変化の前で揺れますが、最終的に新しい均衡点を見つけます。速くはないが、結局適応します。", "zh-CN": "你在变化前会摇晃，但最终会找到新的平衡点。不算快，但终究会适应。", "zh-TW": "你在變化前會搖晃，但最終會找到新的平衡點。不算快，但終究會適應。", "vi": "Bạn lắc lư trước thay đổi nhưng cuối cùng tìm điểm cân bằng mới. Không nhanh nhưng rồi cũng thích nghi.", "id": "Kamu goyah di hadapan perubahan, tapi akhirnya menemukan titik keseimbangan baru. Tidak cepat, tapi pada akhirnya beradaptasi."},
+        "description": {"en": "When change comes, you are startled at first, but naturally work through understanding the situation, organizing emotions, and finding what you can do. You hold a balanced view between stability and change.", "ja": "変化が起きると最初は当惑しますが、状況を把握し感情を整理し、できることを見つける過程が自然に働きます。安定と変化の間で均衡の取れた視点を持っています。", "zh-CN": "变化来临时起初会慌，但会自然经历掌握情况、整理情绪、找能做的事。在稳定与变化之间持有平衡视角。", "zh-TW": "變化來臨時起初會慌，但會自然經歷掌握情況、整理情緒、找能做的事。在穩定與變化之間持有平衡視角。", "vi": "Khi thay đổi đến, ban đầu hoang mang nhưng tự nhiên nắm tình huống, sắp xếp cảm xúc và tìm việc có thể làm. Có góc nhìn cân bằng giữa ổn định và thay đổi.", "id": "Saat perubahan datang, awalnya kaget, tapi secara alami memahami situasi, merapikan emosi, dan menemukan hal yang bisa dilakukan. Memegang pandangan seimbang antara stabilitas dan perubahan."},
+        "changeAdaptabilityType": {"en": "Adaptive Balance Type 🌊", "ja": "適応均衡型 🌊", "zh-CN": "适应平衡型 🌊", "zh-TW": "適應平衡型 🌊", "vi": "Loại cân bằng thích ứng 🌊", "id": "Tipe Keseimbangan Adaptif 🌊"},
+        "indexScore": {"en": "Average (33~53%)", "ja": "普通 (33~53%)", "zh-CN": "一般 (33~53%)", "zh-TW": "一般 (33~53%)", "vi": "Trung bình (33~53%)", "id": "Sedang (33~53%)"},
+        "domainDiagnosis": {"en": "Cognitive: Can see change as threat or opportunity depending on situation\nEmotional: Startled first, then finds stability; processes emotion and situation together\nBehavioral: Can switch when needed; adjusts direction without excessive attachment\nUncertainty: Uncomfortable but tolerable; moves after some information\nResilience: Recovers by finding what can be done even in chaos\nLearning: Naturally organizes learning after change passes", "ja": "認知: 状況により変化を脅威にも機会にも見られる\n感情: 初期当惑後に安定。感情処理と状況対応を並行\n行動: 必要なら転換可能。過度な執着なく方向修正\n不確実性: 不快だが耐えられる。ある程度の情報後に動く\n回復力: 混乱の中でもできることを見つけて回復\n学習: 変化が過ぎると自然に学びを整理", "zh-CN": "认知：视情况把变化看成威胁或机会\n情绪：起初慌，后找稳定；情绪处理与情境应对并行\n行为：需要时能切换，不过度执着地修正方向\n不确定性：不适但可承受，有一定信息后会行动\n恢复力：混乱中也找能做的事来恢复\n学习：变化过去后自然整理所学", "zh-TW": "認知：視情況把變化看成威脅或機會\n情緒：起初慌，後找穩定；情緒處理與情境應對並行\n行為：需要時能切換，不過度執著地修正方向\n不確定性：不適但可承受，有一定資訊後會行動\n恢復力：混亂中也找能做的事來恢復\n學習：變化過去後自然整理所學", "vi": "Nhận thức: Tùy tình huống coi thay đổi là mối đe dọa hoặc cơ hội\nCảm xúc: Hoang mang trước, rồi ổn; xử lý cảm xúc và tình huống song song\nHành vi: Cần thì chuyển được; sửa hướng không bám quá\nBất định: Khó chịu nhưng chịu được; hành động sau khi có thông tin\nPhục hồi: Phục hồi bằng cách tìm việc làm được ngay cả trong hỗn loạn\nHọc hỏi: Tự nhiên sắp xếp bài học sau khi thay đổi qua", "id": "Kognitif: Bisa melihat perubahan ancaman atau peluang tergantung situasi\nEmosi: Kaget dulu, lalu stabil; proses emosi dan situasi bersamaan\nPerilaku: Bisa beralih jika perlu; koreksi arah tanpa keterikatan berlebihan\nKetidakpastian: Tidak nyaman tapi bisa ditahan; bergerak setelah ada info\nKetahanan: Pulih dengan menemukan hal yang bisa dilakukan bahkan dalam kekacauan\nBelajar: Secara alami merapikan pembelajaran setelah perubahan lewat"},
+        "strengths": {"en": "Environments mixing change and stability — neither fully new nor fully fixed", "ja": "変化と安定が適度に混ざった環境。完全に新しいものでも完全に固定されたものでもない場所", "zh-CN": "变化与稳定适当混合的环境——既非全新也非完全固定", "zh-TW": "變化與穩定適當混合的環境——既非全新也非完全固定", "vi": "Môi trường trộn thay đổi và ổn định vừa phải — không hoàn toàn mới cũng không hoàn toàn cố định", "id": "Lingkungan yang mencampur perubahan dan stabilitas — bukan sepenuhnya baru maupun sepenuhnya tetap"},
+        "tryNow": {"en": "When change hits, first do \"the smallest thing I can control right now.\" Small action creates stability in chaos\nConsciously remember past times you got through change well. \"It worked then too\" reduces current anxiety", "ja": "変化が来たらまず「今自分がコントロールできる最小のもの一つ」を実行する。小さな実行が混乱の中で安定感を作る\n以前うまく変化を乗り越えた経験を意識的に思い出す。「あの時もできた」という証拠が今の不安を減らす", "zh-CN": "变化来临时先执行「现在我能控制的最小的一件事」，小行动在混乱中制造稳定感\n有意识回想过去顺利度过变化的经验，「那时也行」的证据能减轻现在的焦虑", "zh-TW": "變化來臨時先執行「現在我能控制的最小的一件事」，小行動在混亂中製造穩定感\n有意識回想過去順利度過變化的經驗，「那時也行」的證據能減輕現在的焦慮", "vi": "Khi thay đổi đến, làm trước \"việc nhỏ nhất mình kiểm soát được ngay bây giờ.\" Hành động nhỏ tạo ổn định trong hỗn loạn\nChủ ý nhớ lần trước vượt qua thay đổi tốt. \"Lúc đó cũng được\" giảm lo hiện tại", "id": "Saat perubahan datang, lakukan dulu \"hal terkecil yang bisa aku kontrol sekarang.\" Aksi kecil menciptakan stabilitas dalam kekacauan\nIngat sengaja pengalaman lalu melewati perubahan dengan baik. \"Waktu itu juga bisa\" mengurangi kecemasan sekarang"},
+        "oneLiner": {"en": "Wobbling does not mean falling. Finding balance while wobbling is your way", "ja": "揺れることは倒れることではありません。揺れながら均衡を取ることがあなたの方式です", "zh-CN": "摇晃不代表倒下，边摇边找平衡是你的方式", "zh-TW": "搖晃不代表倒下，邊搖邊找平衡是你的方式", "vi": "Lắc lư không có nghĩa là ngã. Tìm cân bằng trong khi lắc lư là cách của bạn", "id": "Goyah bukan berarti jatuh. Menemukan keseimbangan sambil goyah adalah caramu"},
+        "shareLine": {"en": "My change adaptability: Adaptive Balance Type 🌊 Wobble but eventually find balance... wobbling isn't falling, so true → This is how I react — what type are you?", "ja": "私の変化適応力: 適応均衡型 🌊 揺れても最終的に均衡を見つけるタイプ…揺れる≠倒れる、当たり → 変化にこう反応する あなたは？", "zh-CN": "我的变化适应力：适应平衡型 🌊 会摇但最终找平衡…摇晃不等于倒下太准 → 我面对变化是这样反应的——你是什么类型？", "zh-TW": "我的變化適應力：適應平衡型 🌊 會搖但最終找平衡…搖晃不等於倒下太準 → 我面對變化是這樣反應的——你是什麼類型？", "vi": "Khả năng thích ứng: Loại cân bằng 🌊 Lắc lư nhưng cuối cùng tìm cân bằng... lắc không phải ngã, đúng quá → Tôi phản ứng thế này — bạn loại nào?", "id": "Adaptabilitas-ku: Tipe Keseimbangan Adaptif 🌊 Goyah tapi akhirnya seimbang... goyah bukan jatuh, bener → Aku bereaksi begini — kamu tipe apa?"},
+    },
+    {
+        "title": {"en": "Finding Direction Inside Change, Proactive Adaptation Type", "ja": "変化の中で方向を見つける人、能動適応型", "zh-CN": "在变化中寻找方向的人，主动适应型", "zh-TW": "在變化中尋找方向的人，主動適應型", "vi": "Tìm hướng đi trong thay đổi, Loại thích ứng chủ động", "id": "Menemukan Arah di Dalam Perubahan, Tipe Adaptasi Proaktif"},
+        "changeAdaptabilityIndex": {"en": "High / Actively accepts change and finds direction", "ja": "高い / 変化を能動的に受け入れ方向を見つけるタイプ", "zh-CN": "偏高 / 主动接纳变化并寻找方向的类型", "zh-TW": "偏高 / 主動接納變化並尋找方向的類型", "vi": "Cao / Chủ động chấp nhận thay đổi và tìm hướng", "id": "Tinggi / Secara proaktif menerima perubahan dan menemukan arah"},
+        "quote": {"en": "You are not dragged by change. You quickly find what you can do inside it and move.", "ja": "あなたは変化に引きずられません。変化の中で自分ができることを素早く見つけて動きます。", "zh-CN": "你不会被变化拖着走，会在变化中快速找到自己能做的事并行动。", "zh-TW": "你不會被變化拖著走，會在變化中快速找到自己能做的事並行動。", "vi": "Bạn không bị kéo theo thay đổi. Bạn nhanh chóng tìm việc mình làm được trong đó và hành động.", "id": "Kamu tidak ditarik perubahan. Kamu cepat temukan apa yang bisa dilakukan di dalamnya dan bergerak."},
+        "description": {"en": "Even when the unexpected hits, you relatively quickly organize emotions, start finding alternatives, and separate what you cannot control from what you can, focusing on the latter. You tend to see uncertainty as a space to explore rather than stress.", "ja": "予想外の状況でも比較的早く感情を整理し代替案を探し始め、コントロールできないものとできるものを分けて後者に集中するパターンがあります。不確実性をストレスより探索の領域として見る傾向があります。", "zh-CN": "即使意外发生，你也较快整理情绪、开始找替代方案，并区分可控与不可控，专注后者。倾向把不确定性看成探索空间而非压力。", "zh-TW": "即使意外發生，你也較快整理情緒、開始找替代方案，並區分可控與不可控，專注後者。傾向把不確定性看成探索空間而非壓力。", "vi": "Dù bất ngờ xảy ra, bạn khá nhanh ổn cảm xúc, tìm phương án khác và tách phần không kiểm soát với phần kiểm soát được, tập trung phần sau. Coi bất định là không gian khám phá hơn là stress.", "id": "Meski hal tak terduga datang, kamu cukup cepat merapikan emosi, mulai cari alternatif, memisahkan yang tidak bisa dikontrol dari yang bisa, fokus pada yang bisa. Cenderung melihat ketidakpastian sebagai ruang eksplorasi, bukan stres."},
+        "changeAdaptabilityType": {"en": "Proactive Adaptation Type 🌱", "ja": "能動適応型 🌱", "zh-CN": "主动适应型 🌱", "zh-TW": "主動適應型 🌱", "vi": "Loại thích ứng chủ động 🌱", "id": "Tipe Adaptasi Proaktif 🌱"},
+        "indexScore": {"en": "High (56~75%)", "ja": "高い (56~75%)", "zh-CN": "偏高 (56~75%)", "zh-TW": "偏高 (56~75%)", "vi": "Cao (56~75%)", "id": "Tinggi (56~75%)"},
+        "domainDiagnosis": {"en": "Cognitive: Has a lens that sees change as possible opportunity\nEmotional: Quickly organizes initial emotions and focuses on the situation\nBehavioral: Direction switches feel natural; fast in new environments\nUncertainty: Can move with incomplete information\nResilience: Finds what can be done in chaos and recovers quickly\nLearning: Naturally extracts learning from change", "ja": "認知: 変化を機会の可能性として見る視点がある\n感情: 初期感情を早く整理し状況に集中する能力\n行動: 方向転換が自然。新環境への適応速度が速い\n不確実性: 不完全な情報でも動ける\n回復力: 混乱の中でもできることを見つけ早く回復\n学習: 変化から学びを自然に抽出", "zh-CN": "认知：有把变化看成可能机会的视角\n情绪：较快整理初始情绪并专注情境\n行为：方向切换自然，新环境适应快\n不确定性：信息不完整也能行动\n恢复力：混乱中也找能做的事并快速恢复\n学习：自然从变化中提取学习", "zh-TW": "認知：有把變化看成可能機會的視角\n情緒：較快整理初始情緒並專注情境\n行為：方向切換自然，新環境適應快\n不確定性：資訊不完整也能行動\n恢復力：混亂中也找能做的事並快速恢復\n學習：自然從變化中提取學習", "vi": "Nhận thức: Có góc nhìn coi thay đổi là cơ hội có thể\nCảm xúc: Nhanh ổn cảm xúc ban đầu và tập trung tình huống\nHành vi: Chuyển hướng tự nhiên; thích nghi môi trường mới nhanh\nBất định: Có thể hành động với thông tin chưa đầy đủ\nPhục hồi: Tìm việc làm được trong hỗn loạn và phục hồi nhanh\nHọc hỏi: Tự nhiên rút bài học từ thay đổi", "id": "Kognitif: Punya lens melihat perubahan sebagai peluang\nEmosi: Cepat rapikan emosi awal dan fokus situasi\nPerilaku: Beralih arah terasa alami; cepat di lingkungan baru\nKetidakpastian: Bisa bergerak dengan info belum lengkap\nKetahanan: Temukan hal yang bisa dilakukan dalam kekacauan dan pulih cepat\nBelajar: Secara alami ekstrak pembelajaran dari perubahan"},
+        "strengths": {"en": "Fast-changing environments, startups, new projects, diverse role shifts", "ja": "急速に変化する環境・スタートアップ・新プロジェクト・多様な役割転換", "zh-CN": "快速变化的环境、新创、新项目、多样角色转换", "zh-TW": "快速變化的環境、新創、新專案、多樣角色轉換", "vi": "Môi trường thay đổi nhanh, startup, dự án mới, chuyển vai trò đa dạng", "id": "Lingkungan cepat berubah, startup, proyek baru, peralihan peran beragam"},
+        "tryNow": {"en": "Because change is fast, check direction often. Moving flexibly is different from losing direction\nPatience while others are still adapting is also important adaptability", "ja": "変化が速い分、方向をこまめに点検する。柔軟に動くことと方向を失うことは違う\n周囲がまだ適応していないとき待つ余裕も重要な適応力", "zh-CN": "变化快，所以要常检查方向。灵活行动和迷失方向不是一回事\n周围人还没适应时，愿意等待也是重要的适应力", "zh-TW": "變化快，所以要常檢查方向。靈活行動和迷失方向不是一回事\n周圍人還沒適應時，願意等待也是重要的適應力", "vi": "Vì thay đổi nhanh, thường xuyên kiểm tra hướng. Linh hoạt khác với mất phương hướng\nKiên nhẫn khi người khác chưa thích nghi cũng là thích ứng quan trọng", "id": "Karena perubahan cepat, cek arah sering. Bergerak fleksibel beda dengan kehilangan arah\nKesabaran saat orang lain belum beradaptasi juga adaptabilitas penting"},
+        "oneLiner": {"en": "Your ability to find direction inside change is a strength in any environment. Keep this pace, but do not forget to pause and confirm direction sometimes", "ja": "変化の中で方向を見つけるあなたの能力はどんな環境でも強みです。この速度を保ちつつ、時々止まって方向を確認することも忘れないで", "zh-CN": "在变化中找方向的能力在任何环境都是优势。保持这个节奏，但也别忘了偶尔停下确认方向", "zh-TW": "在變化中找方向的能力在任何環境都是優勢。保持這個節奏，但也別忘了偶爾停下確認方向", "vi": "Khả năng tìm hướng trong thay đổi là thế mạnh ở mọi môi trường. Giữ nhịp này nhưng đừng quên dừng lại xác nhận hướng đôi khi", "id": "Kemampuan menemukan arah di dalam perubahan adalah kekuatan di lingkungan apa pun. Pertahankan tempo ini, tapi jangan lupa sesekali berhenti dan konfirmasi arah"},
+        "shareLine": {"en": "My change adaptability: Proactive Adaptation Type 🌱 Find direction inside change... focusing on what I can control, so true lol → This is how I react — try it too", "ja": "私の変化適応力: 能動適応型 🌱 変化の中で方向を見つけるタイプ…コントロール可能なものに集中、当たり ㅋㅋ → 変化にこう反応する あなたもやってみて", "zh-CN": "我的变化适应力：主动适应型 🌱 在变化中找方向…专注可控的部分太准哈哈 → 我面对变化是这样反应的——你也试试", "zh-TW": "我的變化適應力：主動適應型 🌱 在變化中找方向…專注可控的部分太準哈哈 → 我面對變化是這樣反應的——你也試試", "vi": "Khả năng thích ứng: Loại chủ động 🌱 Tìm hướng trong thay đổi... tập trung phần kiểm soát được, đúng quá haha → Tôi phản ứng thế này — bạn thử luôn", "id": "Adaptabilitas-ku: Tipe Adaptasi Proaktif 🌱 Cari arah di dalam perubahan... fokus yang bisa dikontrol, bener wkwk → Aku bereaksi begini — coba juga"},
+    },
+    {
+        "title": {"en": "Turning Change into Opportunity, Change Driver Type", "ja": "変化を機会に転換する人、変化主導型", "zh-CN": "把变化转成机会的人，变化主导型", "zh-TW": "把變化轉成機會的人，變化主導型", "vi": "Biến thay đổi thành cơ hội, Loại dẫn dắt thay đổi", "id": "Mengubah Perubahan jadi Peluang, Tipe Penggerak Perubahan"},
+        "changeAdaptabilityIndex": {"en": "Very high / Actively uses change as opportunity", "ja": "非常に高い / 変化を機会として積極活用するタイプ", "zh-CN": "很高 / 积极把变化当作机会运用的类型", "zh-TW": "很高 / 積極把變化當作機會運用的類型", "vi": "Rất cao / Chủ động dùng thay đổi làm cơ hội", "id": "Sangat tinggi / Secara aktif memanfaatkan perubahan sebagai peluang"},
+        "quote": {"en": "You do not avoid or endure change — you use it. The bigger the change, the bigger the opportunity.", "ja": "あなたは変化を避けたり耐えたりするのではなく活用します。変化が大きいほど機会も大きいと考えます。", "zh-CN": "你不是躲避或硬撑变化，而是运用它。变化越大，机会越大。", "zh-TW": "你不是躲避或硬撐變化，而是運用它。變化越大，機會越大。", "vi": "Bạn không tránh hay chịu đựng thay đổi — bạn tận dụng nó. Thay đổi càng lớn, cơ hội càng lớn.", "id": "Kamu tidak menghindari atau menahan perubahan — kamu memanfaatkannya. Semakin besar perubahan, semakin besar peluang."},
+        "description": {"en": "Even in uncertainty, possibility appears before anxiety. You quickly find new directions from unexpected results and recover function fast from change-driven chaos. You gain energy in change-heavy environments.", "ja": "不確実な状況でも不安より可能性が先に見え、予想外の結果から新しい方向を素早く見つけ、変化による混乱からも機能を早く回復するパターンです。変化の多い環境でむしろエネルギーが上がるタイプです。", "zh-CN": "即使在不确定中，可能性也先于焦虑出现；你能从意外结果中快速找到新方向，并从变化带来的混乱中迅速恢复功能。变化多的环境反而让你更有能量。", "zh-TW": "即使在不確定中，可能性也先於焦慮出現；你能從意外結果中快速找到新方向，並從變化帶來的混亂中迅速恢復功能。變化多的環境反而讓你更有能量。", "vi": "Dù bất định, khả năng hiện trước lo lắng. Bạn nhanh tìm hướng mới từ kết quả bất ngờ và phục hồi chức năng nhanh từ hỗn loạn do thay đổi. Môi trường nhiều thay đổi còn làm bạn có thêm năng lượng.", "id": "Meski penuh ketidakpastian, kemungkinan muncul sebelum kecemasan. Kamu cepat temukan arah baru dari hasil tak terduga dan pulih cepat dari kekacauan perubahan. Lingkungan penuh perubahan justru menaikkan energimu."},
+        "changeAdaptabilityType": {"en": "Change Driver Type 🚀", "ja": "変化主導型 🚀", "zh-CN": "变化主导型 🚀", "zh-TW": "變化主導型 🚀", "vi": "Loại dẫn dắt thay đổi 🚀", "id": "Tipe Penggerak Perubahan 🚀"},
+        "indexScore": {"en": "Very high (78~92%)", "ja": "非常に高い (78~92%)", "zh-CN": "很高 (78~92%)", "zh-TW": "很高 (78~92%)", "vi": "Rất cao (78~92%)", "id": "Sangat tinggi (78~92%)"},
+        "domainDiagnosis": {"en": "Cognitive: Interpreting change as opportunity feels natural\nEmotional: Energy rises in the face of change\nBehavioral: Explores and adapts quickly in unfamiliar settings\nUncertainty: Tolerance at a level that almost enjoys uncertainty\nResilience: Fast balance recovery in chaos; makes new situations their own quickly\nLearning: Naturally finds learning and gratitude in change", "ja": "認知: 変化を機会と解釈するのが自然\n感情: 変化の前でエネルギーが上がるパターン\n行動: 未知の環境で素早く探索・適応\n不確実性: 不確実性を楽しむレベルの耐性\n回復力: 混乱から早い均衡回復。新状況を早く自分のものに\n学習: 変化から学びと感謝を自然に見つける", "zh-CN": "认知：自然把变化解读成机会\n情绪：面对变化能量上升\n行为：在陌生环境中快速探索适应\n不确定性：接近享受不确定的耐受度\n恢复力：混乱中快速恢复平衡，很快把新情境变成自己的\n学习：自然在变化中找到学习与感恩", "zh-TW": "認知：自然把變化解讀成機會\n情緒：面對變化能量上升\n行為：在陌生環境中快速探索適應\n不確定性：接近享受不確定的耐受度\n恢復力：混亂中快速恢復平衡，很快把新情境變成自己的\n學習：自然在變化中找到學習與感恩", "vi": "Nhận thức: Tự nhiên hiểu thay đổi là cơ hội\nCảm xúc: Năng lượng tăng trước thay đổi\nHành vi: Khám phá và thích nghi nhanh ở môi trường lạ\nBất định: Chịu được gần mức thích bất định\nPhục hồi: Phục hồi cân bằng nhanh trong hỗn loạn; nhanh biến tình huống mới thành của mình\nHọc hỏi: Tự nhiên tìm bài học và lòng biết ơn trong thay đổi", "id": "Kognitif: Menafsirkan perubahan sebagai peluang terasa alami\nEmosi: Energi naik di hadapan perubahan\nPerilaku: Eksplorasi dan adaptasi cepat di lingkungan asing\nKetidakpastian: Toleransi hampir menikmati ketidakpastian\nKetahanan: Pulih keseimbangan cepat dalam kekacauan; cepat jadikan situasi baru milik sendiri\nBelajar: Secara alami temukan pembelajaran dan rasa syukur dalam perubahan"},
+        "strengths": {"en": "Rapidly changing environments, entrepreneurship, new market creation, crisis response, roles needing innovation", "ja": "急変する環境・起業・新市場開拓・危機対応・イノベーションが必要な役割", "zh-CN": "急剧变化的环境、创业、新市场开拓、危机应对、需要创新的角色", "zh-TW": "急劇變化的環境、創業、新市場開拓、危機應對、需要創新的角色", "vi": "Môi trường biến động nhanh, khởi nghiệp, mở thị trường mới, ứng phó khủng hoảng, vai trò cần đổi mới", "id": "Lingkungan berubah cepat, wirausaha, buka pasar baru, respons krisis, peran butuh inovasi"},
+        "cautions": {"en": "Adapting fast to change can create conflict when others have not caught up yet\nEnjoying change too much can make stable long-term projects feel boring — intentional depth investment is also needed", "ja": "変化への適応が速い分、周囲がまだ追いついていないとき摩擦が生じることがある\n変化を楽しみすぎると安定した長期プロジェクトで退屈を感じる場合がある。意図的な深さへの投資も必要", "zh-CN": "适应变化太快，周围人还没跟上时可能产生冲突\n太享受变化，可能在稳定长期项目中感到无聊——也需要刻意投入深度", "zh-TW": "適應變化太快，周圍人還沒跟上時可能產生衝突\n太享受變化，可能在穩定長期專案中感到無聊——也需要刻意投入深度", "vi": "Thích nghi nhanh có thể gây xung đột khi người khác chưa theo kịp\nThích thay đổi quá có thể thấy dự án dài hạn ổn định nhàm chán — cần đầu tư chiều sâu có chủ ý", "id": "Beradaptasi cepat bisa menimbulkan konflik saat orang lain belum menyusul\nTerlalu menikmati perubahan bisa membuat proyek jangka panjang stabil terasa membosankan — investasi kedalaman sengaja juga perlu"},
+        "oneLiner": {"en": "Where you are, change becomes momentum, not threat. Aim that energy well and you shine in any environment", "ja": "あなたがいる場所では変化は脅威ではなく原動力になります。そのエネルギーをうまく方向づければどんな環境でも輝きます", "zh-CN": "有你在的地方，变化不是威胁而是动力。把这份能量导向正确方向，在任何环境都会发光", "zh-TW": "有你在的地方，變化不是威脅而是動力。把這份能量導向正確方向，在任何環境都會發光", "vi": "Nơi bạn ở, thay đổi là động lực chứ không phải mối đe dọa. Định hướng năng lượng ấy tốt thì bạn tỏa sáng ở mọi môi trường", "id": "Di mana kamu berada, perubahan jadi momentum, bukan ancaman. Arahkan energi itu dengan baik dan kamu bersinar di lingkungan apa pun"},
+        "shareLine": {"en": "My change adaptability: Change Driver Type 🚀 Turn change into opportunity... bigger change, bigger opportunity, totally true → This is how I react — what type are you?", "ja": "私の変化適応力: 変化主導型 🚀 変化を機会に転換するタイプ…変化が大きいほど機会も大きい、完全に当たり → 変化にこう反応する あなたは？", "zh-CN": "我的变化适应力：变化主导型 🚀 把变化转成机会…变化越大机会越大太准 → 我面对变化是这样反应的——你是什么类型？", "zh-TW": "我的變化適應力：變化主導型 🚀 把變化轉成機會…變化越大機會越大太準 → 我面對變化是這樣反應的——你是什麼類型？", "vi": "Khả năng thích ứng: Loại dẫn dắt 🚀 Biến thay đổi thành cơ hội... thay đổi càng lớn cơ hội càng lớn, đúng hoàn toàn → Tôi phản ứng thế này — bạn loại nào?", "id": "Adaptabilitas-ku: Tipe Penggerak Perubahan 🚀 Ubah perubahan jadi peluang... perubahan lebih besar peluang lebih besar, bener banget → Aku bereaksi begini — kamu tipe apa?"},
+    },
+    {
+        "title": {"en": "Change Itself Is Your Way of Life, Change Pioneer Type", "ja": "変化自体が生き方の人、変化先導型", "zh-CN": "变化本身就是生活方式的人，变化先驱型", "zh-TW": "變化本身就是生活方式的人，變化先驅型", "vi": "Thay đổi chính là cách sống, Loại tiên phong thay đổi", "id": "Perubahan Sendiri Adalah Cara Hidup, Tipe Pelopor Perubahan"},
+        "changeAdaptabilityIndex": {"en": "Extreme / Leads and creates change", "ja": "極強 / 変化を先導し作り出すタイプ", "zh-CN": "极强 / 引领并创造变化的类型", "zh-TW": "極強 / 引領並創造變化的類型", "vi": "Cực cao / Dẫn dắt và tạo ra thay đổi", "id": "Ekstrem / Memimpin dan menciptakan perubahan"},
+        "quote": {"en": "You go beyond adapting to change — you create it. A state without change feels uncomfortable.", "ja": "あなたは変化に適応することを超え、変化を作り出します。変化のない状態がむしろ不快です。", "zh-CN": "你不只是适应变化，而是创造变化。没有变化的状态反而让你不适。", "zh-TW": "你不只是適應變化，而是創造變化。沒有變化的狀態反而讓你不適。", "vi": "Bạn vượt xa việc thích nghi — bạn tạo ra thay đổi. Trạng thái không có thay đổi lại khiến bạn khó chịu.", "id": "Kamu melampaui beradaptasi — kamu menciptakan perubahan. Keadaan tanpa perubahan justru tidak nyaman."},
+        "description": {"en": "Even sudden change barely shakes your emotions; uncertainty feels natural. You find new balance extremely fast in change-driven chaos and see learning and possibility in every shift. This level means change is integrated into your way of life.", "ja": "突然の変化でも感情が大きく揺れず、不確実性自体が自然。変化による混乱から新しい均衡を極めて早く見つけ、すべての変化から学びと可能性を見ます。このレベルは変化が生き方に統合された状態です。", "zh-CN": "即使突然变化，情绪也几乎不大波动，不确定性本身很自然。你会在变化带来的混乱中极快找到新平衡，并在每次变化中看到学习与可能。这个层次意味着变化已融入你的生活方式。", "zh-TW": "即使突然變化，情緒也幾乎不大波動，不確定性本身很自然。你會在變化帶來的混亂中極快找到新平衡，並在每次變化中看到學習與可能。這個層次意味著變化已融入你的生活方式。", "vi": "Dù thay đổi đột ngột, cảm xúc hầu như không dao động; bất định tự nhiên. Bạn tìm cân bằng mới cực nhanh trong hỗn loạn do thay đổi và thấy học hỏi·khả năng trong mọi chuyển biến. Mức này nghĩa là thay đổi đã hòa vào cách sống.", "id": "Meski perubahan mendadak, emosi hampir tidak goyah; ketidakpastian terasa alami. Kamu temukan keseimbangan baru sangat cepat dalam kekacauan perubahan dan lihat pembelajaran·kemungkinan di setiap pergeseran. Level ini berarti perubahan terintegrasi ke cara hidup."},
+        "changeAdaptabilityType": {"en": "Change Pioneer Type 🌟", "ja": "変化先導型 🌟", "zh-CN": "变化先驱型 🌟", "zh-TW": "變化先驅型 🌟", "vi": "Loại tiên phong thay đổi 🌟", "id": "Tipe Pelopor Perubahan 🌟"},
+        "indexScore": {"en": "Extreme (95~100%)", "ja": "極強 (95~100%)", "zh-CN": "极强 (95~100%)", "zh-TW": "極強 (95~100%)", "vi": "Cực cao (95~100%)", "id": "Ekstrem (95~100%)"},
+        "domainDiagnosis": {"en": "Cognitive: Sees any change through an opportunity lens; almost no pessimistic interpretation\nEmotional: Energy rises before change; uncertainty feels exciting\nBehavioral: Most active in unfamiliar environments; exploration itself is enjoyable\nUncertainty: Absence of uncertainty feels uncomfortable; tends to seek change\nResilience: Maintains function in chaos; recovery time very short\nLearning: Naturally finds learning and gratitude in all change", "ja": "認知: どんな変化も機会の視点で見る。悲観的解釈がほぼない\n感情: 変化の前でエネルギー上昇。不確実性がワクワク\n行動: 未知環境で最も活発。探索自体が楽しい\n不確実性: 不確実性がない方が不快。変化を求める傾向\n回復力: 混乱の中でも機能維持。回復時間が非常に短い\n学習: すべての変化から学びと感謝を自然に見つける", "zh-CN": "认知：以机会视角看任何变化，几乎无悲观解读\n情绪：变化前能量上升，不确定性令人兴奋\n行为：在陌生环境中最活跃，探索本身即乐趣\n不确定性：没有不确定反而不适，倾向主动寻找变化\n恢复力：混乱中仍维持功能，恢复时间极短\n学习：自然在所有变化中找到学习与感恩", "zh-TW": "認知：以機會視角看任何變化，幾乎無悲觀解讀\n情緒：變化前能量上升，不確定性令人興奮\n行為：在陌生環境中最活躍，探索本身即樂趣\n不確定性：沒有不確定反而不適，傾向主動尋找變化\n恢復力：混亂中仍維持功能，恢復時間極短\n學習：自然在所有變化中找到學習與感恩", "vi": "Nhận thức: Nhìn mọi thay đổi qua lăng kính cơ hội; hầu như không giải thích bi quan\nCảm xúc: Năng lượng tăng trước thay đổi; bất định gây hứng thú\nHành vi: Hoạt bật nhất ở môi trường lạ; khám phá bản thân đã vui\nBất định: Thiếu bất định lại khó chịu; hay chủ động tìm thay đổi\nPhục hồi: Duy trì chức năng trong hỗn loạn; thời gian phục hồi rất ngắn\nHọc hỏi: Tự nhiên tìm bài học và biết ơn trong mọi thay đổi", "id": "Kognitif: Melihat perubahan apa pun lewat lens peluang; hampir tanpa interpretasi pesimis\nEmosi: Energi naik sebelum perubahan; ketidakpastian terasa seru\nPerilaku: Paling aktif di lingkungan asing; eksplorasi sendiri menyenangkan\nKetidakpastian: Tanpa ketidakpastian justru tidak nyaman; cenderung cari perubahan\nKetahanan: Pertahankan fungsi dalam kekacauan; waktu pulih sangat singkat\nBelajar: Secara alami temukan pembelajaran dan rasa syukur di semua perubahan"},
+        "strengths": {"en": "Creating something entirely new, crisis leadership, designing and leading change", "ja": "完全に新しいものを作る役割・危機状況のリーダーシップ・変化を設計し導く役割", "zh-CN": "创造全新事物、危机情境领导、设计并引领变化的角色", "zh-TW": "創造全新事物、危機情境領導、設計並引領變化的角色", "vi": "Tạo điều hoàn toàn mới, lãnh đạo khủng hoảng, thiết kế và dẫn dắt thay đổi", "id": "Menciptakan hal sepenuhnya baru, kepemimpinan krisis, merancang dan memimpin perubahan"},
+        "cautions": {"en": "When working with people who need stability, pace adjustment is necessary — not everyone absorbs change at this speed\nAfter creating change, continued care until it settles is also important\nManage your own recovery and recharge amid continuous change", "ja": "安定が必要な人と一緒にいるときは速度調整が必要。全員がこの速度で変化を吸収できるわけではない\n変化を作った後、その定着まで継続的にケアすることも重要\n継続的な変化の中で自分の回復と再充電も管理する必要がある", "zh-CN": "与需要稳定的人共事时需要调节速度——不是每个人都能以这个速度吸收变化\n创造变化之后，持续照顾直到它安定也很重要\n在持续变化中也要管理自己的恢复与充电", "zh-TW": "與需要穩定的人共事時需要調節速度——不是每個人都能以這個速度吸收變化\n創造變化之後，持續照顧直到它安定也很重要\n在持續變化中也要管理自己的恢復與充電", "vi": "Khi làm việc với người cần ổn định, cần điều chỉnh tốc độ — không phải ai cũng hấp thụ thay đổi với tốc độ này\nSau khi tạo thay đổi, chăm sóc liên tục cho đến khi ổn định cũng quan trọng\nQuản lý phục hồi và nạp năng lượng của bản thân giữa thay đổi liên tục", "id": "Saat bekerja dengan orang yang butuh stabilitas, penyesuaian tempo perlu — tidak semua menyerap perubahan dengan kecepatan ini\nSetelah menciptakan perubahan, perawatan berkelanjutan sampai mantap juga penting\nKelola pemulihan dan recharge diri di tengah perubahan terus-menerus"},
+        "certificationPhrase": {"en": "Change Pioneer Achieved 🌟 Top-tier change adaptability", "ja": "変化先導型達成 🌟 変化適応力最上級", "zh-CN": "变化先驱型达成 🌟 变化适应力顶级", "zh-TW": "變化先驅型達成 🌟 變化適應力頂級", "vi": "Đạt Loại Tiên phong Thay đổi 🌟 Thích ứng thay đổi hàng đầu", "id": "Pelopor Perubahan tercapai 🌟 Adaptabilitas perubahan tingkat atas"},
+        "oneLiner": {"en": "For you, change is not something to adapt to but something to create together. With that energy, you lead change around you too", "ja": "あなたにとって変化は適応すべきものではなく一緒に作っていくものです。そのエネルギーで周囲の変化も導く人です", "zh-CN": "对你而言，变化不是要适应的事，而是共同创造的事。你用这份能量也引领着周围的变化", "zh-TW": "對你而言，變化不是要適應的事，而是共同創造的事。你用這份能量也引領著周圍的變化", "vi": "Với bạn, thay đổi không phải để thích nghi mà để cùng tạo ra. Với năng lượng ấy, bạn cũng dẫn dắt thay đổi xung quanh", "id": "Bagimu, perubahan bukan untuk diadaptasi melainkan diciptakan bersama. Dengan energi itu, kamu juga memimpin perubahan di sekitarmu"},
+        "shareLine": {"en": "My change adaptability: Change Pioneer Type 🌟 Creates change... life without change feels uncomfortable, so true lol → This is how I react — measure yours too", "ja": "私の変化適応力: 変化先導型 🌟 変化を作り出すタイプ…変化がない状態が不快、当たり ㅋㅋ → 変化にこう反応する あなたも測ってみて", "zh-CN": "我的变化适应力：变化先驱型 🌟 创造变化…没有变化反而不适太准哈哈 → 我面对变化是这样反应的——你也测测", "zh-TW": "我的變化適應力：變化先驅型 🌟 創造變化…沒有變化反而不適太準哈哈 → 我面對變化是這樣反應的——你也測測", "vi": "Khả năng thích ứng: Loại tiên phong 🌟 Tạo ra thay đổi... không có thay đổi lại khó chịu, đúng quá haha → Tôi phản ứng thế này — bạn cũng đo thử", "id": "Adaptabilitas-ku: Tipe Pelopor Perubahan 🌟 Menciptakan perubahan... tanpa perubahan justru tidak nyaman, bener wkwk → Aku bereaksi begini — ukur punyamu juga"},
+    },
+]
+
+_TYPE_META = [
+    ("Type1", "🪨"),
+    ("Type2", "🌿"),
+    ("Type3", "🌊"),
+    ("Type4", "🌱"),
+    ("Type5", "🚀"),
+    ("Type6", "🌟"),
+]
+
+_RESULT_FIELDS = [
+    "title",
+    "changeAdaptabilityIndex",
+    "quote",
+    "description",
+    "changeAdaptabilityType",
+    "indexScore",
+    "domainDiagnosis",
+    "strengths",
+    "cautions",
+    "tryNow",
+    "certificationPhrase",
+    "oneLiner",
+    "shareLine",
+]
+
+
+def _build_questions() -> list[dict]:
+    out: list[dict] = []
+    for qi, item in enumerate(_Q_I18N):
+        q_m = _ml(
+            _ko_q(qi),
+            item["q"]["en"],
+            item["q"]["ja"],
+            item["q"]["zh-CN"],
+            item["q"]["zh-TW"],
+            item["q"]["vi"],
+            item["q"]["id"],
+        )
+        opts: list[tuple[dict[str, str], int]] = []
+        for oi, opt in enumerate(item["opts"]):
+            opts.append(
+                (
+                    _ml(
+                        _ko_o(qi, oi),
+                        opt["en"],
+                        opt["ja"],
+                        opt["zh-CN"],
+                        opt["zh-TW"],
+                        opt["vi"],
+                        opt["id"],
+                    ),
+                    oi,
+                )
+            )
+        out.append(q(q_m, opts))
+    return out
+
+
+def _field_ml(type_idx: int, field: str, i18n: dict[str, str] | None) -> dict[str, str]:
+    ko = _ko_r(type_idx, field)
+    if not ko:
+        return EMPTY
+    if not i18n:
+        raise ValueError(f"Missing i18n for result field {field!r} on Type{type_idx + 1}")
+    return _ml(ko, i18n["en"], i18n["ja"], i18n["zh-CN"], i18n["zh-TW"], i18n["vi"], i18n["id"])
+
+
+def _build_results() -> list[dict]:
+    out: list[dict] = []
+    for ti, (type_name, emoji) in enumerate(_TYPE_META):
+        i18n = _R_I18N[ti]
+        fields = {field: _field_ml(ti, field, i18n.get(field)) for field in _RESULT_FIELDS}
+        out.append(r(type_name, emoji, **fields))
+    return out
+
+
+QUESTIONS = _build_questions()
+RESULTS = _build_results()
