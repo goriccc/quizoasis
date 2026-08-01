@@ -10164,6 +10164,77 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3OptimismIndexTest": {
+    "startMessage": {
+      "line1": "樂觀主義不是性格，而是思維習慣。",
+      "line2": "心理學家馬丁·塞利格曼說，樂觀不是天生的，而來自你如何解讀困難情境。困難發生時，你會把它看成「這是暫時的」還是「一切都結束了」？是「只有這件事難」還是「整個人生都這樣」？是「情況使然」還是「都是我的錯」？",
+      "line3": "這三種解讀模式是樂觀主義的核心。不必性格開朗也能成為樂觀主義者——你看世界的視角，決定了樂觀主義。",
+      "line4": "透過12個問題，測量你當前的樂觀指數與恢復模式。",
+      "line5": "測量我的樂觀指數 ☀️ 誠實地開始",
+      "note": "※ 請選擇更接近你實際思考方式的選項，不是理想模樣，而是真實的你。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（我的樂觀指數）",
+      "goToTest": "前往測試",
+      "startTest": "測量我的樂觀指數 ☀️ 誠實地開始",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "optimismSummary": "樂觀主義摘要",
+      "optimismType": "樂觀主義類型",
+      "indexScore": "樂觀指數",
+      "domainAnalysisTitle": "塞利格曼3P領域分析",
+      "totalScore": "總分",
+      "scoreUnit": "分",
+      "permanenceDomain": "永久性 (Permanence)",
+      "pervasivenessDomain": "普遍性 (Pervasiveness)",
+      "personalizationDomain": "個人化 (Personalization)",
+      "strongestDomain": "樂觀解讀最強的領域",
+      "boostDomain": "最快提升樂觀主義的領域",
+      "strengthsTitle": "此模式的優勢",
+      "paradoxStrengthTitle": "此模式的悖論性優勢",
+      "cautionsTitle": "此模式的注意點",
+      "hardReasonTitle": "此模式為何辛苦",
+      "enrichTitle": "如何讓此模式更強",
+      "seligman3PTitle": "塞利格曼3P診断",
+      "tryNowTitle": "現在就可以嘗試",
+      "certificationPhrase": "認證語",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "我的樂觀指數：{type}！☀️\n你測出來百分之幾？",
+      "kakao": "我的樂觀指數：{type}！☀️\n你是百分之幾？",
+      "wechat": "我的樂觀指數：{type}！☀️\n一起來測測吧！",
+      "whatsapp": "我的樂觀指數：{type}！☀️\n你是百分之幾？一起試試！",
+      "telegram": "我的樂觀指數：{type}！☀️\n你是什麼類型？",
+      "line": "我的樂觀指數：{type}！☀️\n你是百分之幾？",
+      "startDefault": "我的樂觀指數 ☀️ 誠實地開始吧！",
+      "startKakao": "我的樂觀指數 ☀️ 誠實地開始吧！",
+      "startWechat": "我的樂觀指數 ☀️ 誠實地開始吧！",
+      "startWhatsapp": "我的樂觀指數 ☀️ 誠實地開始吧！",
+      "startTelegram": "我的樂觀指數 ☀️ 誠實地開始吧！",
+      "startLine": "我的樂觀指數 ☀️ 誠實地開始吧！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "phase3TimePerspectiveTest": {
     "startMessage": {
       "line1": "你現在活在哪個時間維度？",

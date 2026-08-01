@@ -10704,6 +10704,77 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3OptimismIndexTest": {
+    "startMessage": {
+      "line1": "Optimism is not temperament — it is a thinking habit.",
+      "line2": "Psychologist Martin Seligman said optimism is not innate; it comes from how you interpret difficult situations. When something hard happens, do you see it as \"this is temporary\" or \"it's all over now\"? As \"only this part is hard\" or \"my whole life is like this\"? As \"the situation caused this\" or \"it's all my fault\"?",
+      "line3": "These three interpretation patterns are the core of optimism. You do not need a sunny personality to be optimistic — the lens through which you see the world creates optimism.",
+      "line4": "12 questions measure your current optimism index and recovery pattern.",
+      "line5": "Measure My Optimism Index ☀️ Start Honestly",
+      "note": "※ Choose the option closer to how you actually think — not your ideal self, but the real you."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Optimism Index)",
+      "goToTest": "Go to test",
+      "startTest": "Measure My Optimism Index ☀️ Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "optimismSummary": "Optimism summary",
+      "optimismType": "Optimism type",
+      "indexScore": "Optimism index",
+      "domainAnalysisTitle": "Seligman 3P domain analysis",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "permanenceDomain": "Permanence",
+      "pervasivenessDomain": "Pervasiveness",
+      "personalizationDomain": "Personalization",
+      "strongestDomain": "Domain with strongest optimistic interpretation",
+      "boostDomain": "Fastest area to raise optimism",
+      "strengthsTitle": "Strengths of this pattern",
+      "paradoxStrengthTitle": "Paradoxical strength of this pattern",
+      "cautionsTitle": "Cautions for this pattern",
+      "hardReasonTitle": "Why this pattern feels hard",
+      "enrichTitle": "How to strengthen this pattern",
+      "seligman3PTitle": "Seligman 3P diagnosis",
+      "tryNowTitle": "Try this now",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My optimism index: {type}! ☀️\nWhat's your score?",
+      "kakao": "My optimism index: {type}! ☀️\nHow optimistic are you?",
+      "wechat": "My optimism index: {type}! ☀️\nTry this test too!",
+      "whatsapp": "My optimism index: {type}! ☀️\nWhat's your score? Let's try together!",
+      "telegram": "My optimism index: {type}! ☀️\nWhat's your optimism type?",
+      "line": "My optimism index: {type}! ☀️\nHow optimistic are you?",
+      "startDefault": "My Optimism Index ☀️ Start honestly!",
+      "startKakao": "My Optimism Index ☀️ Start honestly!",
+      "startWechat": "My Optimism Index ☀️ Start honestly!",
+      "startWhatsapp": "My Optimism Index ☀️ Start honestly!",
+      "startTelegram": "My Optimism Index ☀️ Start honestly!",
+      "startLine": "My Optimism Index ☀️ Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3TimePerspectiveTest": {
     "startMessage": {
       "line1": "Which time zone are you living in right now?",

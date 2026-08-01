@@ -10695,6 +10695,77 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   },
+  "phase3OptimismIndexTest": {
+    "startMessage": {
+      "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",
+      "line2": "Psikolog Martin Seligman mengatakan optimisme bukan bawaan; ia datang dari cara kamu menafsirkan situasi sulit. Saat hal sulit terjadi, kamu melihatnya sebagai \"ini sementara\" atau \"sudah selesai semua\"? \"Hanya bagian ini yang berat\" atau \"seluruh hidupku begini\"? \"Situasinya begitu\" atau \"semua salahku\"?",
+      "line3": "Ketiga pola interpretasi inilah inti optimisme. Kamu tidak perlu kepribadian ceria untuk optimis — sudut pandang melihat dunia yang menciptakan optimisme.",
+      "line4": "12 pertanyaan mengukur indeks optimisme dan pola pemulihanmu saat ini.",
+      "line5": "Ukur Indeks Optimisme-ku ☀️ Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang lebih dekat dengan cara berpikirmu yang sebenarnya — bukan diri ideal, melainkan dirimu yang nyata."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Indeks Optimisme-ku)",
+      "goToTest": "Ke tes",
+      "startTest": "Ukur Indeks Optimisme-ku ☀️ Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "optimismSummary": "Ringkasan optimisme",
+      "optimismType": "Tipe optimisme",
+      "indexScore": "Indeks optimisme",
+      "domainAnalysisTitle": "Analisis domain 3P Seligman",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "permanenceDomain": "Permanence (Kekal)",
+      "pervasivenessDomain": "Pervasiveness (Meluas)",
+      "personalizationDomain": "Personalization (Personal)",
+      "strongestDomain": "Domain interpretasi optimis terkuat",
+      "boostDomain": "Area tercepat menaikkan optimisme",
+      "strengthsTitle": "Kekuatan pola ini",
+      "paradoxStrengthTitle": "Kekuatan paradoks pola ini",
+      "cautionsTitle": "Peringatan pola ini",
+      "hardReasonTitle": "Mengapa pola ini terasa berat",
+      "enrichTitle": "Cara memperkuat pola ini",
+      "seligman3PTitle": "Diagnosis 3P Seligman",
+      "tryNowTitle": "Coba sekarang juga",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Indeks optimisme-ku: {type}! ☀️\nKamu dapat berapa %?",
+      "kakao": "Indeks optimisme-ku: {type}! ☀️\nKamu berapa %?",
+      "wechat": "Indeks optimisme-ku: {type}! ☀️\nCoba tes ini juga!",
+      "whatsapp": "Indeks optimisme-ku: {type}! ☀️\nKamu berapa %? Ayo coba bareng!",
+      "telegram": "Indeks optimisme-ku: {type}! ☀️\nKamu tipe apa?",
+      "line": "Indeks optimisme-ku: {type}! ☀️\nKamu berapa %?",
+      "startDefault": "Indeks Optimisme-ku ☀️ Mulai dengan jujur!",
+      "startKakao": "Indeks Optimisme-ku ☀️ Mulai dengan jujur!",
+      "startWechat": "Indeks Optimisme-ku ☀️ Mulai dengan jujur!",
+      "startWhatsapp": "Indeks Optimisme-ku ☀️ Mulai dengan jujur!",
+      "startTelegram": "Indeks Optimisme-ku ☀️ Mulai dengan jujur!",
+      "startLine": "Indeks Optimisme-ku ☀️ Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3TimePerspectiveTest": {
     "startMessage": {
       "line1": "Di zona waktu mana kamu hidup sekarang?",

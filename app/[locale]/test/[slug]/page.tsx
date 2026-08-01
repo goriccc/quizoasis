@@ -269,6 +269,10 @@ const Phase3TimePerspectiveTestClient = dynamic(
   () => import('@/components/Phase3TimePerspectiveTestClient'),
   { ssr: false }
 );
+const Phase3OptimismIndexTestClient = dynamic(
+  () => import('@/components/Phase3OptimismIndexTestClient'),
+  { ssr: false }
+);
 const Phase3KpopHistoryMasterTestClient = dynamic(
   () => import('@/components/Phase3KpopHistoryMasterTestClient'),
   { ssr: false }
@@ -2111,6 +2115,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['時間觀', '心理學', '過去現在未來', '津巴多', '自我理解'],
         vi: ['quan niệm thời gian', 'tâm lý', 'quá khứ hiện tại tương lai', 'Zimbardo', 'hiểu bản thân'],
         id: ['perspektif waktu', 'psikologi', 'masa lalu kini depan', 'Zimbardo', 'memahami diri'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-optimism-index') {
+    test = {
+      slug: 'phase3-optimism-index',
+      title: {
+        ko: '나의 낙관주의 지수',
+        en: 'My Optimism Index',
+        ja: '私の楽観主義指数',
+        'zh-CN': '我的乐观主义指数',
+        'zh-TW': '我的樂觀主義指數',
+        vi: 'Chỉ số Lạc quan của tôi',
+        id: 'Indeks Optimisme-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 셀리그만 3P(영구성·보편성·개인화) 기반 낙관주의 지수와 회복 패턴을 측정합니다.',
+        en: "Measure your optimism index and recovery pattern with 12 questions based on Seligman's 3P (Permanence, Pervasiveness, Personalization).",
+        ja: '12の質問でセリグマン3P（永続性・普遍性・個人化）に基づく楽観主義指数と回復パターンを測定。',
+        'zh-CN': '通过12个问题，基于塞利格曼3P（永久性、普遍性、个人化）测量乐观指数与恢复模式。',
+        'zh-TW': '透過12個問題，基於塞利格曼3P（永久性、普遍性、個人化）測量樂觀指數與恢復模式。',
+        vi: 'Đo chỉ số lạc quan và mẫu phục hồi qua 12 câu hỏi dựa trên 3P của Seligman (Vĩnh viễn, Lan rộng, Cá nhân hóa).',
+        id: 'Ukur indeks optimisme dan pola pemulihan lewat 12 pertanyaan berbasis 3P Seligman (Permanen, Meresap, Personalisasi).',
+      },
+      thumbnail: 'p3_test_optimism_index.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['낙관주의', '긍정', '회복탄력성', '심리', '셀리그만'],
+        en: ['optimism', 'positivity', 'resilience', 'psychology', 'Seligman'],
+        ja: ['楽観主義', 'ポジティブ', '回復力', '心理学', 'セリグマン'],
+        'zh-CN': ['乐观主义', '积极', '复原力', '心理学', '塞利格曼'],
+        'zh-TW': ['樂觀主義', '積極', '復原力', '心理學', '塞利格曼'],
+        vi: ['lạc quan', 'tích cực', 'phục hồi', 'tâm lý', 'Seligman'],
+        id: ['optimisme', 'positif', 'resiliensi', 'psikologi', 'Seligman'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8626,6 +8667,62 @@ export default async function TestPage({ params }: Props) {
             questions={phase3TimePerspectiveQuestions}
             results={phase3TimePerspectiveResults}
             questionCount={phase3TimePerspectiveQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-optimism-index') {
+      const { phase3OptimismIndexQuestions, phase3OptimismIndexResults } = await import('@/lib/phase3OptimismIndexData');
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-optimism-index',
+      title: {
+        ko: '나의 낙관주의 지수',
+        en: 'My Optimism Index',
+        ja: '私の楽観主義指数',
+        'zh-CN': '我的乐观主义指数',
+        'zh-TW': '我的樂觀主義指數',
+        vi: 'Chỉ số Lạc quan của tôi',
+        id: 'Indeks Optimisme-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 셀리그만 3P(영구성·보편성·개인화) 기반 낙관주의 지수와 회복 패턴을 측정합니다.',
+        en: "Measure your optimism index and recovery pattern with 12 questions based on Seligman's 3P (Permanence, Pervasiveness, Personalization).",
+        ja: '12の質問でセリグマン3P（永続性・普遍性・個人化）に基づく楽観主義指数と回復パターンを測定。',
+        'zh-CN': '通过12个问题，基于塞利格曼3P（永久性、普遍性、个人化）测量乐观指数与恢复模式。',
+        'zh-TW': '透過12個問題，基於塞利格曼3P（永久性、普遍性、個人化）測量樂觀指數與恢復模式。',
+        vi: 'Đo chỉ số lạc quan và mẫu phục hồi qua 12 câu hỏi dựa trên 3P của Seligman (Vĩnh viễn, Lan rộng, Cá nhân hóa).',
+        id: 'Ukur indeks optimisme dan pola pemulihan lewat 12 pertanyaan berbasis 3P Seligman (Permanen, Meresap, Personalisasi).',
+      },
+      thumbnail: 'p3_test_optimism_index.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['낙관주의', '긍정', '회복탄력성', '심리', '셀리그만'],
+        en: ['optimism', 'positivity', 'resilience', 'psychology', 'Seligman'],
+        ja: ['楽観主義', 'ポジティブ', '回復力', '心理学', 'セリグマン'],
+        'zh-CN': ['乐观主义', '积极', '复原力', '心理学', '塞利格曼'],
+        'zh-TW': ['樂觀主義', '積極', '復原力', '心理學', '塞利格曼'],
+        vi: ['lạc quan', 'tích cực', 'phục hồi', 'tâm lý', 'Seligman'],
+        id: ['optimisme', 'positif', 'resiliensi', 'psikologi', 'Seligman'],
+      },
+    };
+
+      return (
+        <>
+          <Phase3OptimismIndexTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3OptimismIndexQuestions}
+            results={phase3OptimismIndexResults}
+            questionCount={phase3OptimismIndexQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

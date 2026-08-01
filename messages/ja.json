@@ -10683,6 +10683,77 @@
       "popularTestsTop5": "🔥 今人気のテストおすすめトップ5"
     }
   },
+  "phase3OptimismIndexTest": {
+    "startMessage": {
+      "line1": "楽観主義は気質ではなく、思考習慣です。",
+      "line2": "心理学者マーティン・セリグマンは、楽観主義は生まれつきではなく、困難な状況をどう解釈するかのパターンから生まれると述べました。困難なことが起きたとき「これは一時的だ」と見るか「もう全部終わった」と見るか、「これだけが大変」と見るか「人生全体がこうだ」と見るか、「状況がそうさせた」と見るか「全部自分のせい」と見るか。",
+      "line3": "この三つの解釈パターンが楽観主義の核心です。明るい性格でなくても楽観主義者になれます。世界をどう見るかが楽観主義を作ります。",
+      "line4": "12の質問で、今のあなたの楽観主義指数と回復パターンを測定します。",
+      "line5": "自分の楽観主義指数を測る ☀️ 正直に始める",
+      "note": "※ 理想的な自分ではなく、実際の自分の思考に近い方を選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の楽観主義指数）",
+      "goToTest": "テストに進む",
+      "startTest": "自分の楽観主義指数を測る ☀️ 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "optimismSummary": "楽観主義サマリー",
+      "optimismType": "楽観主義タイプ",
+      "indexScore": "楽観主義指数",
+      "domainAnalysisTitle": "セリグマン3P領域別分析",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "permanenceDomain": "永続性 (Permanence)",
+      "pervasivenessDomain": "普遍性 (Pervasiveness)",
+      "personalizationDomain": "個人化 (Personalization)",
+      "strongestDomain": "楽観的解釈が最も強い領域",
+      "boostDomain": "楽観主義を最も早く上げられる領域",
+      "strengthsTitle": "このパターンの強み",
+      "paradoxStrengthTitle": "このパターンの逆説的強み",
+      "cautionsTitle": "このパターンの注意点",
+      "hardReasonTitle": "このパターンがつらい理由",
+      "enrichTitle": "このパターンをより強くするには",
+      "seligman3PTitle": "セリグマン3P診断",
+      "tryNowTitle": "今すぐ試してみること",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の楽観主義指数: {type}! ☀️\nあなたは何%だった？",
+      "kakao": "私の楽観主義指数: {type}! ☀️\nあなたは何%？",
+      "wechat": "私の楽観主義指数: {type}! ☀️\n一緒にやってみよう！",
+      "whatsapp": "私の楽観主義指数: {type}! ☀️\nあなたは何%？一緒にやろう！",
+      "telegram": "私の楽観主義指数: {type}! ☀️\nあなたはどんなタイプ？",
+      "line": "私の楽観主義指数: {type}! ☀️\nあなたは何%？",
+      "startDefault": "私の楽観主義指数 ☀️ 正直に始めよう！",
+      "startKakao": "私の楽観主義指数 ☀️ 正直に始めよう！",
+      "startWechat": "私の楽観主義指数 ☀️ 正直に始めよう！",
+      "startWhatsapp": "私の楽観主義指数 ☀️ 正直に始めよう！",
+      "startTelegram": "私の楽観主義指数 ☀️ 正直に始めよう！",
+      "startLine": "私の楽観主義指数 ☀️ 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3TimePerspectiveTest": {
     "startMessage": {
       "line1": "あなたは今、どの時間帯に生きていますか？",
