@@ -10850,6 +10850,77 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3EqSelfDiagnosisTest": {
+    "startMessage": {
+      "line1": "Having a high IQ does not always guarantee success.",
+      "line2": "Daniel Goleman's research suggests emotional intelligence (EQ) accounts for up to 67% of professional success. Talent alone has limits when we cannot regulate emotions or understand others; people with strong EQ build relationships and move through crises in any environment.",
+      "line3": "EQ has five elements: knowing your emotions (self-awareness), managing them (self-regulation), moving yourself forward (inner motivation), sensing others' emotions (empathy), and connecting them through relationships (social skills).",
+      "line4": "Twelve questions analyze your EQ level and strengths and growth areas across all five elements.",
+      "line5": "Start My EQ Self-Diagnosis 💜 Begin Honestly",
+      "note": "※ Choose what is closest to your real behavior, not your ideal self."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My EQ Self-Diagnosis)",
+      "goToTest": "Go to test",
+      "startTest": "Start My EQ Self-Diagnosis 💜 Begin Honestly",
+      "shareResult": "Share result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "eqSummary": "EQ level",
+      "eqType": "EQ type",
+      "developFocusTitle": "Development focus",
+      "fiveElementsAnalysisTitle": "Five-element analysis",
+      "domainAnalysisTitle": "EQ scores by element",
+      "totalScore": "Total EQ score",
+      "scoreUnit": " pts",
+      "selfAwarenessDomain": "Self-awareness",
+      "selfRegulationDomain": "Self-regulation",
+      "motivationDomain": "Inner motivation",
+      "empathyDomain": "Empathy",
+      "socialSkillsDomain": "Social skills",
+      "strongestDomain": "Strongest EQ area",
+      "boostDomain": "Area to develop now",
+      "strengthsTitle": "Strengths",
+      "cautionsTitle": "Cautions",
+      "masterTraitsTitle": "Common traits at this EQ level",
+      "tryNowTitle": "Try this now",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My EQ Self-Diagnosis: {type}! 💜\nWhat's your EQ score?",
+      "kakao": "My EQ Self-Diagnosis: {type}! 💜\nWhat's your EQ score?",
+      "wechat": "My EQ Self-Diagnosis: {type}! 💜\nWhat's your EQ score?",
+      "whatsapp": "My EQ Self-Diagnosis: {type}! 💜\nWhat's your EQ score?",
+      "telegram": "My EQ Self-Diagnosis: {type}! 💜\nWhat's your EQ score?",
+      "line": "My EQ Self-Diagnosis: {type}! 💜\nWhat's your EQ score?",
+      "startDefault": "My EQ Self-Diagnosis 💜 Start honestly!",
+      "startKakao": "My EQ Self-Diagnosis 💜 Start honestly!",
+      "startWechat": "My EQ Self-Diagnosis 💜 Start honestly!",
+      "startWhatsapp": "My EQ Self-Diagnosis 💜 Start honestly!",
+      "startTelegram": "My EQ Self-Diagnosis 💜 Start honestly!",
+      "startLine": "My EQ Self-Diagnosis 💜 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",

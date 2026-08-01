@@ -277,6 +277,10 @@ const Phase3ApprovalSeekingLevelTestClient = dynamic(
   () => import('@/components/Phase3ApprovalSeekingLevelTestClient'),
   { ssr: false }
 );
+const Phase3EqSelfDiagnosisTestClient = dynamic(
+  () => import('@/components/Phase3EqSelfDiagnosisTestClient'),
+  { ssr: false }
+);
 
 const Phase3ChangeAdaptabilityTestClient = dynamic(
   () => import('@/components/Phase3ChangeAdaptabilityTestClient'),
@@ -2198,6 +2202,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['認可需求', '自尊', '他人目光', '心理', '共情'],
         vi: ['khao khát công nhận', 'lòng tự trọng', 'ánh mắt người khác', 'tâm lý', 'đồng cảm'],
         id: ['keinginan pengakuan', 'harga diri', 'pandangan orang lain', 'psikologi', 'empati'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-eq-self-diagnosis') {
+    test = {
+      slug: 'phase3-eq-self-diagnosis',
+      title: {
+        ko: '나의 정서 지능(EQ) 자가진단',
+        en: 'My EQ Self-Diagnosis',
+        ja: '私のEQ自己診断',
+        'zh-CN': '我的情商(EQ)自测',
+        'zh-TW': '我的情商(EQ)自測',
+        vi: 'Tự chẩn đoán EQ của tôi',
+        id: 'Diagnosis Diri EQ-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 EQ 수준과 5가지 요소(자기인식·자기조절·내적 동기·공감·사회성)별 강점과 약점을 분석합니다.',
+        en: 'Analyze your EQ level and strengths/weaknesses across 5 elements with 12 questions.',
+        ja: '12の質問でEQ水準と5要素別の強み・弱みを分析します。',
+        'zh-CN': '通过12个问题分析EQ水平及5要素强弱。',
+        'zh-TW': '透過12個問題分析EQ水準及5要素強弱。',
+        vi: 'Phân tích mức EQ và 5 yếu tố qua 12 câu hỏi.',
+        id: 'Analisis level EQ dan 5 elemen lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_eq_self_diagnosis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['EQ', '정서지능', '감성지능', '자기인식', '공감능력'],
+        en: ['EQ', 'emotional intelligence', 'self-awareness', 'empathy', 'psychology'],
+        ja: ['EQ', '感情知能', '自己認識', '共感', '心理'],
+        'zh-CN': ['EQ', '情商', '自我认知', '共情', '心理'],
+        'zh-TW': ['EQ', '情商', '自我認知', '共感', '心理'],
+        vi: ['EQ', 'trí tuệ cảm xúc', 'tự nhận thức', 'đồng cảm', 'tâm lý'],
+        id: ['EQ', 'kecerdasan emosional', 'kesadaran diri', 'empati', 'psikologi'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -8862,6 +8903,62 @@ export default async function TestPage({ params }: Props) {
             questions={phase3ApprovalSeekingLevelQuestions}
             results={phase3ApprovalSeekingLevelResults}
             questionCount={phase3ApprovalSeekingLevelQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-eq-self-diagnosis') {
+      const { phase3EqSelfDiagnosisQuestions, phase3EqSelfDiagnosisResults } = await import('@/lib/phase3EqSelfDiagnosisData');
+    const test = (await getTestBySlug(slug)) || {
+      slug: 'phase3-eq-self-diagnosis',
+      title: {
+        ko: '나의 정서 지능(EQ) 자가진단',
+        en: 'My EQ Self-Diagnosis',
+        ja: '私のEQ自己診断',
+        'zh-CN': '我的情商(EQ)自测',
+        'zh-TW': '我的情商(EQ)自測',
+        vi: 'Tự chẩn đoán EQ của tôi',
+        id: 'Diagnosis Diri EQ-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 나의 EQ 수준과 5가지 요소(자기인식·자기조절·내적 동기·공감·사회성)별 강점과 약점을 분석합니다.',
+        en: 'Analyze your EQ level and strengths/weaknesses across 5 elements with 12 questions.',
+        ja: '12の質問でEQ水準と5要素別の強み・弱みを分析します。',
+        'zh-CN': '通过12个问题分析EQ水平及5要素强弱。',
+        'zh-TW': '透過12個問題分析EQ水準及5要素強弱。',
+        vi: 'Phân tích mức EQ và 5 yếu tố qua 12 câu hỏi.',
+        id: 'Analisis level EQ dan 5 elemen lewat 12 pertanyaan.',
+      },
+      thumbnail: 'p3_test_eq_self_diagnosis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['EQ', '정서지능', '감성지능', '자기인식', '공감능력'],
+        en: ['EQ', 'emotional intelligence', 'self-awareness', 'empathy', 'psychology'],
+        ja: ['EQ', '感情知能', '自己認識', '共感', '心理'],
+        'zh-CN': ['EQ', '情商', '自我认知', '共情', '心理'],
+        'zh-TW': ['EQ', '情商', '自我認知', '共感', '心理'],
+        vi: ['EQ', 'trí tuệ cảm xúc', 'tự nhận thức', 'đồng cảm', 'tâm lý'],
+        id: ['EQ', 'kecerdasan emosional', 'kesadaran diri', 'empati', 'psikologi'],
+      },
+    };
+
+      return (
+        <>
+          <Phase3EqSelfDiagnosisTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3EqSelfDiagnosisQuestions}
+            results={phase3EqSelfDiagnosisResults}
+            questionCount={phase3EqSelfDiagnosisQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

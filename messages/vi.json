@@ -10841,6 +10841,77 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3EqSelfDiagnosisTest": {
+    "startMessage": {
+      "line1": "IQ cao không phải lúc nào cũng bảo đảm thành công.",
+      "line2": "Nghiên cứu của Daniel Goleman cho thấy trí tuệ cảm xúc (EQ) quyết định tới 67% thành công nghề nghiệp. Tài năng cũng có giới hạn nếu không điều chỉnh được cảm xúc hay thấu hiểu người khác; người có EQ cao có thể xây dựng quan hệ và vượt qua khủng hoảng ở mọi môi trường.",
+      "line3": "EQ gồm năm yếu tố: biết cảm xúc của mình (tự nhận thức), quản lý chúng (tự điều chỉnh), tự thúc đẩy (động lực nội tại), cảm nhận cảm xúc người khác (đồng cảm), và kết nối chúng trong quan hệ (kỹ năng xã hội).",
+      "line4": "12 câu hỏi phân tích mức EQ cùng điểm mạnh và điểm cần phát triển ở cả năm yếu tố.",
+      "line5": "Bắt Đầu Tự Chẩn Đoán EQ 💜 Thành Thật Bắt Đầu",
+      "note": "※ Hãy chọn phương án gần nhất với hành vi thực tế, không phải bản thân lý tưởng."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Tự chẩn đoán EQ)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Bắt Đầu Tự Chẩn Đoán EQ 💜 Thành Thật Bắt Đầu",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "eqSummary": "Mức EQ",
+      "eqType": "Loại EQ",
+      "developFocusTitle": "Trọng tâm phát triển",
+      "fiveElementsAnalysisTitle": "Phân tích năm yếu tố",
+      "domainAnalysisTitle": "Điểm EQ theo năm yếu tố",
+      "totalScore": "Chỉ số EQ tổng",
+      "scoreUnit": " điểm",
+      "selfAwarenessDomain": "Tự nhận thức",
+      "selfRegulationDomain": "Tự điều chỉnh",
+      "motivationDomain": "Động lực nội tại",
+      "empathyDomain": "Đồng cảm",
+      "socialSkillsDomain": "Kỹ năng xã hội",
+      "strongestDomain": "Lĩnh vực EQ mạnh nhất",
+      "boostDomain": "Lĩnh vực cần phát triển nhất",
+      "strengthsTitle": "Điểm mạnh",
+      "cautionsTitle": "Lưu ý",
+      "masterTraitsTitle": "Đặc điểm chung ở mức EQ này",
+      "tryNowTitle": "Thử ngay",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "Tự chẩn đoán EQ của tôi: {type}! 💜\nĐiểm EQ của bạn là bao nhiêu?",
+      "kakao": "Tự chẩn đoán EQ của tôi: {type}! 💜\nĐiểm EQ của bạn là bao nhiêu?",
+      "wechat": "Tự chẩn đoán EQ của tôi: {type}! 💜\nĐiểm EQ của bạn là bao nhiêu?",
+      "whatsapp": "Tự chẩn đoán EQ của tôi: {type}! 💜\nĐiểm EQ của bạn là bao nhiêu?",
+      "telegram": "Tự chẩn đoán EQ của tôi: {type}! 💜\nĐiểm EQ của bạn là bao nhiêu?",
+      "line": "Tự chẩn đoán EQ của tôi: {type}! 💜\nĐiểm EQ của bạn là bao nhiêu?",
+      "startDefault": "Tự chẩn đoán EQ của tôi 💜 Hãy bắt đầu thật lòng!",
+      "startKakao": "Tự chẩn đoán EQ của tôi 💜 Hãy bắt đầu thật lòng!",
+      "startWechat": "Tự chẩn đoán EQ của tôi 💜 Hãy bắt đầu thật lòng!",
+      "startWhatsapp": "Tự chẩn đoán EQ của tôi 💜 Hãy bắt đầu thật lòng!",
+      "startTelegram": "Tự chẩn đoán EQ của tôi 💜 Hãy bắt đầu thật lòng!",
+      "startLine": "Tự chẩn đoán EQ của tôi 💜 Hãy bắt đầu thật lòng!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Lạc quan không phải tính cách — đó là thói quen suy nghĩ.",

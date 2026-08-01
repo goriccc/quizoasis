@@ -10829,6 +10829,77 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3EqSelfDiagnosisTest": {
+    "startMessage": {
+      "line1": "IQが高い人がいつも成功するとは限りません。",
+      "line2": "ダニエル・ゴールマンの研究では、職業的成功の最大67％をEQが左右するとされています。感情を調整できず他者を理解できなければ才能にも限界がありますが、EQが高い人はどんな環境でも関係を築き、危機を乗り越えます。",
+      "line3": "EQは5つの要素から成ります。自分の感情を知る自己認識、扱う自己調整、自らを動かす内発的動機、他者の感情を感じる共感、それを関係につなぐ社会性です。",
+      "line4": "12の質問で、EQの水準と5要素別の強み・課題を分析します。",
+      "line5": "EQ自己診断を始める 💜 正直にスタート",
+      "note": "※ 理想像ではなく、実際の行動パターンに最も近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（EQ自己診断）",
+      "goToTest": "テストに進む",
+      "startTest": "EQ自己診断を始める 💜 正直にスタート",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテスト",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "eqSummary": "EQレベル",
+      "eqType": "EQタイプ",
+      "developFocusTitle": "開発フォーカス",
+      "fiveElementsAnalysisTitle": "5要素分析",
+      "domainAnalysisTitle": "EQ5要素別スコア",
+      "totalScore": "総EQ指数",
+      "scoreUnit": "点",
+      "selfAwarenessDomain": "自己認識",
+      "selfRegulationDomain": "自己調整",
+      "motivationDomain": "内発的動機",
+      "empathyDomain": "共感",
+      "socialSkillsDomain": "社会性",
+      "strongestDomain": "EQの強み領域",
+      "boostDomain": "今もっとも伸ばす領域",
+      "strengthsTitle": "強み",
+      "cautionsTitle": "注意点",
+      "masterTraitsTitle": "このEQレベルの共通点",
+      "tryNowTitle": "今すぐできること",
+      "certificationPhrase": "認定フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私のEQ自己診断: {type}! 💜\nあなたのEQスコアは？",
+      "kakao": "私のEQ自己診断: {type}! 💜\nあなたのEQスコアは？",
+      "wechat": "私のEQ自己診断: {type}! 💜\nあなたのEQスコアは？",
+      "whatsapp": "私のEQ自己診断: {type}! 💜\nあなたのEQスコアは？",
+      "telegram": "私のEQ自己診断: {type}! 💜\nあなたのEQスコアは？",
+      "line": "私のEQ自己診断: {type}! 💜\nあなたのEQスコアは？",
+      "startDefault": "私のEQ自己診断 💜 正直に始めよう！",
+      "startKakao": "私のEQ自己診断 💜 正直に始めよう！",
+      "startWechat": "私のEQ自己診断 💜 正直に始めよう！",
+      "startWhatsapp": "私のEQ自己診断 💜 正直に始めよう！",
+      "startTelegram": "私のEQ自己診断 💜 正直に始めよう！",
+      "startLine": "私のEQ自己診断 💜 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化しています。少し待ってから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

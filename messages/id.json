@@ -10841,6 +10841,77 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3EqSelfDiagnosisTest": {
+    "startMessage": {
+      "line1": "IQ tinggi tidak selalu menjamin keberhasilan.",
+      "line2": "Riset Daniel Goleman menunjukkan kecerdasan emosional (EQ) dapat menentukan hingga 67% keberhasilan profesional. Bakat pun terbatas bila kita tidak dapat mengelola emosi atau memahami orang lain; orang dengan EQ tinggi mampu membangun relasi dan menghadapi krisis di lingkungan apa pun.",
+      "line3": "EQ memiliki lima unsur: mengenali emosi diri (kesadaran diri), mengelolanya (pengaturan diri), menggerakkan diri (motivasi batin), merasakan emosi orang lain (empati), dan menghubungkannya dalam relasi (keterampilan sosial).",
+      "line4": "Dua belas pertanyaan menganalisis tingkat EQ serta kekuatan dan area berkembang dalam lima unsur.",
+      "line5": "Mulai Diagnosis Mandiri EQ-ku 💜 Mulai dengan Jujur",
+      "note": "※ Pilih jawaban yang paling dekat dengan perilaku nyata, bukan dirimu yang ideal."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Diagnosis Mandiri EQ)",
+      "goToTest": "Ke tes",
+      "startTest": "Mulai Diagnosis Mandiri EQ-ku 💜 Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "eqSummary": "Tingkat EQ",
+      "eqType": "Tipe EQ",
+      "developFocusTitle": "Fokus pengembangan",
+      "fiveElementsAnalysisTitle": "Analisis lima unsur",
+      "domainAnalysisTitle": "Skor lima unsur EQ",
+      "totalScore": "Indeks EQ total",
+      "scoreUnit": " poin",
+      "selfAwarenessDomain": "Kesadaran diri",
+      "selfRegulationDomain": "Pengaturan diri",
+      "motivationDomain": "Motivasi batin",
+      "empathyDomain": "Empati",
+      "socialSkillsDomain": "Keterampilan sosial",
+      "strongestDomain": "Area EQ terkuat",
+      "boostDomain": "Area yang paling perlu dikembangkan",
+      "strengthsTitle": "Kekuatan",
+      "cautionsTitle": "Perhatian",
+      "masterTraitsTitle": "Ciri umum pada tingkat EQ ini",
+      "tryNowTitle": "Coba sekarang",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Diagnosis Mandiri EQ-ku: {type}! 💜\nBerapa skor EQ-mu?",
+      "kakao": "Diagnosis Mandiri EQ-ku: {type}! 💜\nBerapa skor EQ-mu?",
+      "wechat": "Diagnosis Mandiri EQ-ku: {type}! 💜\nBerapa skor EQ-mu?",
+      "whatsapp": "Diagnosis Mandiri EQ-ku: {type}! 💜\nBerapa skor EQ-mu?",
+      "telegram": "Diagnosis Mandiri EQ-ku: {type}! 💜\nBerapa skor EQ-mu?",
+      "line": "Diagnosis Mandiri EQ-ku: {type}! 💜\nBerapa skor EQ-mu?",
+      "startDefault": "Diagnosis Mandiri EQ-ku 💜 Mulai dengan jujur!",
+      "startKakao": "Diagnosis Mandiri EQ-ku 💜 Mulai dengan jujur!",
+      "startWechat": "Diagnosis Mandiri EQ-ku 💜 Mulai dengan jujur!",
+      "startWhatsapp": "Diagnosis Mandiri EQ-ku 💜 Mulai dengan jujur!",
+      "startTelegram": "Diagnosis Mandiri EQ-ku 💜 Mulai dengan jujur!",
+      "startLine": "Diagnosis Mandiri EQ-ku 💜 Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempelkan di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

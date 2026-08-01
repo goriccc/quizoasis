@@ -10310,6 +10310,77 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3EqSelfDiagnosisTest": {
+    "startMessage": {
+      "line1": "IQ高並不總代表一定成功。",
+      "line2": "丹尼爾·高曼的研究指出，職業成功最多有67%由情緒智力（EQ）決定。再有天賦，若無法調節情緒或理解他人，長期也會遇到限制；EQ高的人則能在任何環境中建立關係、度過危機。",
+      "line3": "EQ由五部分組成：了解自己的情緒（自我覺察）、管理情緒（自我調節）、驅動自己前進（內在動機）、感受他人情緒（同理），以及將這些連結到關係中（社交能力）。",
+      "line4": "透過12個問題，分析你的EQ水準，以及五項要素中的優勢與成長點。",
+      "line5": "開始我的EQ自我診斷 💜 誠實開始",
+      "note": "※ 請選擇最接近真實行為模式的答案，而不是理想中的自己。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（我的EQ自我診斷）",
+      "goToTest": "前往測試",
+      "startTest": "開始我的EQ自我診斷 💜 誠實開始",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "eqSummary": "EQ水準",
+      "eqType": "EQ類型",
+      "developFocusTitle": "發展重點",
+      "fiveElementsAnalysisTitle": "五要素分析",
+      "domainAnalysisTitle": "EQ五要素得分",
+      "totalScore": "總EQ指數",
+      "scoreUnit": "分",
+      "selfAwarenessDomain": "自我覺察",
+      "selfRegulationDomain": "自我調節",
+      "motivationDomain": "內在動機",
+      "empathyDomain": "同理",
+      "socialSkillsDomain": "社交能力",
+      "strongestDomain": "EQ優勢領域",
+      "boostDomain": "目前最需發展的領域",
+      "strengthsTitle": "優勢",
+      "cautionsTitle": "注意點",
+      "masterTraitsTitle": "該EQ水準的共同特點",
+      "tryNowTitle": "現在就試試",
+      "certificationPhrase": "認證語",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "我的EQ自我診斷: {type}! 💜\n你的EQ得分是多少？",
+      "kakao": "我的EQ自我診斷: {type}! 💜\n你的EQ得分是多少？",
+      "wechat": "我的EQ自我診斷: {type}! 💜\n你的EQ得分是多少？",
+      "whatsapp": "我的EQ自我診斷: {type}! 💜\n你的EQ得分是多少？",
+      "telegram": "我的EQ自我診斷: {type}! 💜\n你的EQ得分是多少？",
+      "line": "我的EQ自我診斷: {type}! 💜\n你的EQ得分是多少？",
+      "startDefault": "我的EQ自我診斷 💜 誠實開始吧！",
+      "startKakao": "我的EQ自我診斷 💜 誠實開始吧！",
+      "startWechat": "我的EQ自我診斷 💜 誠實開始吧！",
+      "startWhatsapp": "我的EQ自我診斷 💜 誠實開始吧！",
+      "startTelegram": "我的EQ自我診斷 💜 誠實開始吧！",
+      "startLine": "我的EQ自我診斷 💜 誠實開始吧！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "樂觀主義不是性格，而是思維習慣。",
