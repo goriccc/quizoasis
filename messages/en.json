@@ -10775,6 +10775,81 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3ApprovalSeekingLevelTest": {
+    "startMessage": {
+      "line1": "How much do others' evaluations affect you?",
+      "line2": "Approval-seeking is not bad. Everyone wants recognition — that is natural. What matters is the intensity.",
+      "line3": "If you do not check how many likes you got and feel fine, your level is low. If one critical comment loops in your head all day, your level is high. That intensity changes how you relate, choose, and feel.",
+      "line4": "12 questions honestly measure where your approval-seeking level is right now. High is not bad and low is not good — knowing your current level comes first.",
+      "line5": "Measure My Approval-Seeking Level 💜 Start Honestly",
+      "note": "※ Choose the option closest to your actual pattern — not your ideal self."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Approval-Seeking Level)",
+      "goToTest": "Go to test",
+      "startTest": "Measure My Approval-Seeking Level 💜 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "desireSummary": "Approval-seeking level",
+      "desireType": "Approval-seeking type",
+      "evaluationImpact": "Others' evaluation impact",
+      "domainAnalysisTitle": "Approval-seeking analysis by domain",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "snsOnlineDomain": "SNS & online reactions",
+      "praiseCriticismDomain": "Praise & criticism reactions",
+      "othersGazeDomain": "Awareness of others' gaze",
+      "relationshipDomain": "Approval-seeking in relationships",
+      "selfDecisionDomain": "Self-decision independence",
+      "psychologicalDomain": "Psychological impact",
+      "strongestDomain": "Domain where approval-seeking works strongest",
+      "mostIndependentDomain": "Most independent domain",
+      "strengthsTitle": "Strengths of this type",
+      "cautionsTitle": "Cautions for this type",
+      "characteristicsTitle": "Characteristics of this type",
+      "patternTitle": "Patterns at this level",
+      "maintainTitle": "How to maintain",
+      "neededTitle": "What this type needs",
+      "helpGuideTitle": "What helps at this level",
+      "tryNowTitle": "Try this now",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My approval-seeking level: {type}! 💜\nThis is my level — what's yours?",
+      "kakao": "My approval-seeking level: {type}! 💜\nThis is my level — what about you?",
+      "wechat": "My approval-seeking level: {type}! 💜\nTry this test too!",
+      "whatsapp": "My approval-seeking level: {type}! 💜\nWhat's your level? Let's try together!",
+      "telegram": "My approval-seeking level: {type}! 💜\nWhat's your level?",
+      "line": "My approval-seeking level: {type}! 💜\nWhat's your level?",
+      "startDefault": "My Approval-Seeking Level 💜 Start honestly!",
+      "startKakao": "My Approval-Seeking Level 💜 Start honestly!",
+      "startWechat": "My Approval-Seeking Level 💜 Start honestly!",
+      "startWhatsapp": "My Approval-Seeking Level 💜 Start honestly!",
+      "startTelegram": "My Approval-Seeking Level 💜 Start honestly!",
+      "startLine": "My Approval-Seeking Level 💜 Start honestly!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",

@@ -13069,6 +13069,81 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ApprovalSeekingLevelTest": {
+    "startMessage": {
+      "line1": "타인의 평가가 나에게 얼마나 영향을 미치고 있나요?",
+      "line2": "인정 욕구는 나쁜 게 아닙니다. 사람은 누구나 인정받고 싶어하고 그것은 지극히 자연스러운 감정입니다. 문제는 그 농도입니다.",
+      "line3": "좋아요가 몇 개인지 확인하지 않아도 아무렇지 않다면 농도가 낮은 것이고, 누군가의 한마디 비판이 하루 종일 머릿속을 맴돈다면 농도가 높은 것입니다. 그리고 그 농도에 따라 관계·선택·감정의 방식이 달라집니다.",
+      "line4": "12가지 질문으로 지금 내 인정 욕구가 어느 농도에 있는지 솔직하게 측정합니다. 높다고 나빠도 낮다고 좋은 것도 아닙니다. 지금 농도를 아는 것이 먼저입니다.",
+      "line5": "내 인정 욕구 농도 측정하기 💜 솔직하게 시작",
+      "note": "※ 이상적인 모습이 아닌 지금 실제 나의 패턴에 가장 가까운 것을 선택하세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 인정 욕구 농도)",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 인정 욕구 농도 측정하기 💜 솔직하게 시작",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "desireSummary": "인정 욕구 농도",
+      "desireType": "인정 욕구 유형",
+      "evaluationImpact": "타인 평가 영향도",
+      "domainAnalysisTitle": "영역별 인정 욕구 분석",
+      "totalScore": "총점",
+      "scoreUnit": "점",
+      "snsOnlineDomain": "SNS·온라인 반응",
+      "praiseCriticismDomain": "칭찬·비판 반응",
+      "othersGazeDomain": "타인 시선 의식",
+      "relationshipDomain": "관계 속 인정 욕구",
+      "selfDecisionDomain": "자기 결정 독립성",
+      "psychologicalDomain": "심리적 영향도",
+      "strongestDomain": "인정 욕구가 가장 강하게 작동하는 영역",
+      "mostIndependentDomain": "가장 독립적인 영역",
+      "strengthsTitle": "이 유형의 강점",
+      "cautionsTitle": "이 유형의 주의점",
+      "characteristicsTitle": "이 유형의 특징",
+      "patternTitle": "이 수준이 만드는 패턴",
+      "maintainTitle": "유지 방법",
+      "neededTitle": "이 유형에게 필요한 것",
+      "helpGuideTitle": "도움이 되는 것",
+      "tryNowTitle": "지금 당장 할 수 있는 것",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "내 인정 욕구 농도: {type}! 💜\\n나 인정 욕구 이 정도야 너는 농도 얼마야?",
+      "kakao": "내 인정 욕구 농도: {type}! 💜\\n나 인정 욕구 이 정도야 너는?",
+      "wechat": "내 인정 욕구 농도: {type}! 💜\\n같이 해봐!",
+      "whatsapp": "내 인정 욕구 농도: {type}! 💜\\n너는 농도 얼마야? 같이 해보자!",
+      "telegram": "내 인정 욕구 농도: {type}! 💜\\n너는 농도 얼마야?",
+      "line": "내 인정 욕구 농도: {type}! 💜\\n너는 농도 얼마야?",
+      "startDefault": "나의 인정 욕구 농도 💜 솔직하게 시작해봐!",
+      "startKakao": "나의 인정 욕구 농도 💜 솔직하게 시작해봐!",
+      "startWechat": "나의 인정 욕구 농도 💜 솔직하게 시작해봐!",
+      "startWhatsapp": "나의 인정 욕구 농도 💜 솔직하게 시작해봐!",
+      "startTelegram": "나의 인정 욕구 농도 💜 솔직하게 시작해봐!",
+      "startLine": "나의 인정 욕구 농도 💜 솔직하게 시작해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "낙관주의는 기질이 아니라 사고 습관입니다.",

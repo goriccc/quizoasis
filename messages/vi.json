@@ -10766,6 +10766,81 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3ApprovalSeekingLevelTest": {
+    "startMessage": {
+      "line1": "Đánh giá của người khác ảnh hưởng bạn bao nhiêu?",
+      "line2": "Nhu cầu được công nhận không xấu. Ai cũng muốn được công nhận — điều đó rất tự nhiên. Vấn đề là mức độ.",
+      "line3": "Không cần xem có bao nhiêu like mà vẫn ổn thì mức thấp; một lời chỉ trích quay trong đầu cả ngày thì mức cao. Mức đó thay đổi cách bạn quan hệ, lựa chọn và cảm xúc.",
+      "line4": "12 câu hỏi đo thành thật nồng độ nhu cầu công nhận hiện tại của bạn. Cao không xấu, thấp cũng không tốt hơn — biết mức hiện tại là bước đầu.",
+      "line5": "Đo Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt Đầu Thành Thật",
+      "note": "※ Hãy chọn đáp án gần với mẫu thực tế của bạn nhất — không phải bản thân lý tưởng."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Nồng độ Nhu cầu Công nhận)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Đo Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt Đầu Thành Thật",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "desireSummary": "Nồng độ nhu cầu công nhận",
+      "desireType": "Loại nhu cầu công nhận",
+      "evaluationImpact": "Mức ảnh hưởng đánh giá người khác",
+      "domainAnalysisTitle": "Phân tích nhu cầu công nhận theo lĩnh vực",
+      "totalScore": "Tổng điểm",
+      "scoreUnit": " điểm",
+      "snsOnlineDomain": "Phản ứng SNS & trực tuyến",
+      "praiseCriticismDomain": "Phản ứng khen & chỉ trích",
+      "othersGazeDomain": "Ý thức ánh mắt người khác",
+      "relationshipDomain": "Nhu cầu công nhận trong quan hệ",
+      "selfDecisionDomain": "Độc lập quyết định bản thân",
+      "psychologicalDomain": "Mức ảnh hưởng tâm lý",
+      "strongestDomain": "Lĩnh vực nhu cầu công nhận mạnh nhất",
+      "mostIndependentDomain": "Lĩnh vực độc lập nhất",
+      "strengthsTitle": "Điểm mạnh của loại này",
+      "cautionsTitle": "Lưu ý cho loại này",
+      "characteristicsTitle": "Đặc điểm của loại này",
+      "patternTitle": "Mẫu ở mức này",
+      "maintainTitle": "Cách duy trì",
+      "neededTitle": "Điều loại này cần",
+      "helpGuideTitle": "Điều hữu ích ở mức này",
+      "tryNowTitle": "Thử ngay bây giờ",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "Nồng độ nhu cầu công nhận của tôi: {type}! 💜\nTôi ở mức này — bạn thì sao?",
+      "kakao": "Nồng độ nhu cầu công nhận của tôi: {type}! 💜\nTôi ở mức này — còn bạn?",
+      "wechat": "Nồng độ nhu cầu công nhận của tôi: {type}! 💜\nCùng thử bài test này nhé!",
+      "whatsapp": "Nồng độ nhu cầu công nhận của tôi: {type}! 💜\nBạn ở mức nào? Cùng thử nhé!",
+      "telegram": "Nồng độ nhu cầu công nhận của tôi: {type}! 💜\nBạn ở mức nào?",
+      "line": "Nồng độ nhu cầu công nhận của tôi: {type}! 💜\nBạn ở mức nào?",
+      "startDefault": "Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt đầu thành thật!",
+      "startKakao": "Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt đầu thành thật!",
+      "startWechat": "Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt đầu thành thật!",
+      "startWhatsapp": "Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt đầu thành thật!",
+      "startTelegram": "Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt đầu thành thật!",
+      "startLine": "Nồng Độ Nhu Cầu Công Nhận Của Tôi 💜 Bắt đầu thành thật!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Lạc quan không phải tính cách — đó là thói quen suy nghĩ.",

@@ -10754,6 +10754,81 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3ApprovalSeekingLevelTest": {
+    "startMessage": {
+      "line1": "他人の評価はあなたにどれくらい影響していますか？",
+      "line2": "承認欲求は悪いものではありません。誰もが認められたいと思うのは自然な感情です。問題はその濃度です。",
+      "line3": "いいねの数を確認しなくても平気なら濃度は低く、誰かの批判一言が一日中頭から離れなければ濃度は高いです。その濃度によって関係・選択・感情の在り方が変わります。",
+      "line4": "12の質問で、今の承認欲求がどの濃度にあるかを正直に測ります。高いから悪いわけでも低いから良いわけでもありません。まず今の濃度を知ることが先です。",
+      "line5": "自分の承認欲求濃度を測る 💜 正直に始める",
+      "note": "※ 理想的な姿ではなく、今の実際のパターンに最も近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の承認欲求濃度）",
+      "goToTest": "テストに進む",
+      "startTest": "自分の承認欲求濃度を測る 💜 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "desireSummary": "承認欲求濃度",
+      "desireType": "承認欲求タイプ",
+      "evaluationImpact": "他人評価の影響度",
+      "domainAnalysisTitle": "領域別承認欲求分析",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "snsOnlineDomain": "SNS・オンライン反応",
+      "praiseCriticismDomain": "褒め言葉・批判反応",
+      "othersGazeDomain": "他人の視線意識",
+      "relationshipDomain": "関係の中の承認欲求",
+      "selfDecisionDomain": "自己決定の独立性",
+      "psychologicalDomain": "心理的影響度",
+      "strongestDomain": "承認欲求が最も強く働く領域",
+      "mostIndependentDomain": "最も独立的な領域",
+      "strengthsTitle": "このタイプの強み",
+      "cautionsTitle": "このタイプの注意点",
+      "characteristicsTitle": "このタイプの特徴",
+      "patternTitle": "このレベルが作るパターン",
+      "maintainTitle": "維持方法",
+      "neededTitle": "このタイプに必要なこと",
+      "helpGuideTitle": "役立つこと",
+      "tryNowTitle": "今すぐできること",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の承認欲求濃度: {type}! 💜\n私はこのくらい。あなたの濃度は？",
+      "kakao": "私の承認欲求濃度: {type}! 💜\n私はこのくらい。あなたは？",
+      "wechat": "私の承認欲求濃度: {type}! 💜\n一緒にやってみよう！",
+      "whatsapp": "私の承認欲求濃度: {type}! 💜\nあなたの濃度は？一緒にやろう！",
+      "telegram": "私の承認欲求濃度: {type}! 💜\nあなたの濃度は？",
+      "line": "私の承認欲求濃度: {type}! 💜\nあなたの濃度は？",
+      "startDefault": "私の承認欲求濃度 💜 正直に始めよう！",
+      "startKakao": "私の承認欲求濃度 💜 正直に始めよう！",
+      "startWechat": "私の承認欲求濃度 💜 正直に始めよう！",
+      "startWhatsapp": "私の承認欲求濃度 💜 正直に始めよう！",
+      "startTelegram": "私の承認欲求濃度 💜 正直に始めよう！",
+      "startLine": "私の承認欲求濃度 💜 正直に始めよう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

@@ -10766,6 +10766,81 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3ApprovalSeekingLevelTest": {
+    "startMessage": {
+      "line1": "Seberapa besar evaluasi orang lain memengaruhimu?",
+      "line2": "Kebutuhan pengakuan bukan hal buruk. Semua orang ingin diakui — itu alami. Masalahnya ada pada kadarnya.",
+      "line3": "Jika kamu tidak cek jumlah like dan merasa baik-baik saja, kadarnya rendah. Jika satu kritik muter di kepala seharian, kadarnya tinggi. Kadar itu mengubah cara kamu berrelasi, memilih, dan merasa.",
+      "line4": "12 pertanyaan mengukur dengan jujur di mana kadar kebutuhan pengakuanmu sekarang. Tinggi bukan buruk dan rendah bukan lebih baik — tahu kadar saat ini dulu.",
+      "line5": "Ukur Kadar Kebutuhan Pengakuanku 💜 Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang paling dekat dengan pola nyata kamu — bukan diri ideal."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Kadar Kebutuhan Pengakuan)",
+      "goToTest": "Ke tes",
+      "startTest": "Ukur Kadar Kebutuhan Pengakuanku 💜 Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "desireSummary": "Kadar kebutuhan pengakuan",
+      "desireType": "Tipe kebutuhan pengakuan",
+      "evaluationImpact": "Dampak evaluasi orang lain",
+      "domainAnalysisTitle": "Analisis kebutuhan pengakuan per domain",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "snsOnlineDomain": "Reaksi SNS & online",
+      "praiseCriticismDomain": "Reaksi pujian & kritik",
+      "othersGazeDomain": "Kesadaran pandangan orang lain",
+      "relationshipDomain": "Kebutuhan pengakuan dalam relasi",
+      "selfDecisionDomain": "Kemandirian keputusan diri",
+      "psychologicalDomain": "Dampak psikologis",
+      "strongestDomain": "Domain kebutuhan pengakuan paling kuat",
+      "mostIndependentDomain": "Domain paling mandiri",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionsTitle": "Peringatan untuk tipe ini",
+      "characteristicsTitle": "Ciri tipe ini",
+      "patternTitle": "Pola di level ini",
+      "maintainTitle": "Cara mempertahankan",
+      "neededTitle": "Yang dibutuhkan tipe ini",
+      "helpGuideTitle": "Yang membantu di level ini",
+      "tryNowTitle": "Coba sekarang",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Kadar kebutuhan pengakuan-ku: {type}! 💜\nAku segini — kamu berapa?",
+      "kakao": "Kadar kebutuhan pengakuan-ku: {type}! 💜\nAku segini — kamu?",
+      "wechat": "Kadar kebutuhan pengakuan-ku: {type}! 💜\nCoba tes ini juga!",
+      "whatsapp": "Kadar kebutuhan pengakuan-ku: {type}! 💜\nKadar kamu berapa? Ayo coba bareng!",
+      "telegram": "Kadar kebutuhan pengakuan-ku: {type}! 💜\nKadar kamu berapa?",
+      "line": "Kadar kebutuhan pengakuan-ku: {type}! 💜\nKadar kamu berapa?",
+      "startDefault": "Kadar Kebutuhan Pengakuanku 💜 Mulai dengan jujur!",
+      "startKakao": "Kadar Kebutuhan Pengakuanku 💜 Mulai dengan jujur!",
+      "startWechat": "Kadar Kebutuhan Pengakuanku 💜 Mulai dengan jujur!",
+      "startWhatsapp": "Kadar Kebutuhan Pengakuanku 💜 Mulai dengan jujur!",
+      "startTelegram": "Kadar Kebutuhan Pengakuanku 💜 Mulai dengan jujur!",
+      "startLine": "Kadar Kebutuhan Pengakuanku 💜 Mulai dengan jujur!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",
