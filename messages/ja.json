@@ -10971,6 +10971,76 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3RelationshipEnergyTest": {
+    "startMessage": {
+      "line1": "人との関係で、エネルギーは充電されますか、消耗しますか？",
+      "line2": "長い集まりの後、家に帰るとバッテリーが完全に切れたように感じる人もいれば、人と長くいるほどエネルギーが上がる人もいます。連絡一つが負担に感じる人もいれば、連絡がないと寂しく感じる人もいます。",
+      "line3": "関係でエネルギーをどう使い、どう充電するかのパターンは、単純な内向・外向の区別ではありません。どれだけ多くの関係を望むか、どの深さで安心できるか、関係を維持することが自然か大変かがすべて影響します。",
+      "line4": "12の質問で、人間関係にエネルギーをどう使っているか分析します。",
+      "line5": "関係エネルギーパターンを見つける 🔋 正直に始める",
+      "note": "※ 実際の自分のパターンに近い方を選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（人間関係に注ぐエネルギー）",
+      "goToTest": "テストに進む",
+      "startTest": "関係エネルギーパターンを見つける 🔋 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "relationshipEnergySummary": "関係エネルギー概要",
+      "relationshipEnergyType": "関係エネルギー型",
+      "relationshipKeywordsTitle": "関係キーワード",
+      "domainAnalysisTitle": "6領域別スコア",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "energyDirectionDomain": "エネルギーの方向",
+      "relationshipMaintenanceDomain": "関係維持の意志",
+      "togetherTimeReactionDomain": "一緒にいる時間への反応",
+      "relationshipFatigueDomain": "関係疲労度",
+      "contactPatternDomain": "連絡・コミュニケーションパターン",
+      "relationshipPriorityDomain": "関係の優先順位",
+      "mostNaturalFlowDomain": "関係エネルギーが最も自然に流れる領域",
+      "mostEnergyDrainDomain": "最もエネルギー消耗が大きい関係状況",
+      "strengthsTitle": "このタイプの強み",
+      "cautionsTitle": "このタイプが関係でつらい理由",
+      "relationshipStyleTitle": "このタイプに合う関係の仕方",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の関係エネルギー型: {type}! 🔋\nあなたはどんなタイプ？一緒にやってみよう！",
+      "kakao": "私の関係エネルギー型: {type}! 🔋\nあなたはどんなタイプ？",
+      "wechat": "私の関係エネルギー型: {type}! 🔋\n一緒にやってみよう！",
+      "whatsapp": "私の関係エネルギー型: {type}! 🔋\nあなたも測ってみて！",
+      "telegram": "私の関係エネルギー型: {type}! 🔋\nあなたはどんなタイプ？",
+      "line": "私の関係エネルギー型: {type}! 🔋\nあなたはどんなタイプ？",
+      "startDefault": "人間関係に注ぐエネルギー 🔋 今すぐ確認！",
+      "startKakao": "人間関係に注ぐエネルギー 🔋 今すぐ確認！",
+      "startWechat": "人間関係に注ぐエネルギー 🔋 今すぐ確認！",
+      "startWhatsapp": "人間関係に注ぐエネルギー 🔋 今すぐ確認！",
+      "startTelegram": "人間関係に注ぐエネルギー 🔋 今すぐ確認！",
+      "startLine": "人間関係に注ぐエネルギー 🔋 今すぐ確認！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

@@ -10983,6 +10983,76 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3RelationshipEnergyTest": {
+    "startMessage": {
+      "line1": "Dalam hubungan, energimu terisi ulang atau habis?",
+      "line2": "Ada orang yang setelah lama berkumpul merasa baterai habis total saat pulang, ada juga yang justru makin berenergi semakin lama bersama orang. Ada yang merasa satu pesan saja berat, ada juga yang merasa hampa tanpa kontak.",
+      "line3": "Pola cara kamu menghabiskan dan mengisi ulang energi dalam hubungan bukan sekadar introvert vs ekstrovert. Seberapa banyak hubungan yang kamu inginkan, kedalaman mana yang terasa nyaman, dan apakah menjaga hubungan terasa alami atau melelahkan semuanya berpengaruh.",
+      "line4": "12 pertanyaan menganalisis bagaimana kamu menggunakan energi dalam hubungan antarmanusia.",
+      "line5": "Temukan Pola Energi Hubunganku 🔋 Mulai dengan Jujur",
+      "note": "※ Pilih opsi yang lebih dekat dengan polamu yang sebenarnya."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Tes Energi Hubungan)",
+      "goToTest": "Ke tes",
+      "startTest": "Temukan Pola Energi Hubunganku 🔋 Mulai dengan Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "relationshipEnergySummary": "Ringkasan energi hubungan",
+      "relationshipEnergyType": "Tipe energi hubungan",
+      "relationshipKeywordsTitle": "Kata kunci hubungan",
+      "domainAnalysisTitle": "Skor 6 domain",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "energyDirectionDomain": "Arah energi",
+      "relationshipMaintenanceDomain": "Kemauan menjaga hubungan",
+      "togetherTimeReactionDomain": "Reaksi terhadap waktu bersama",
+      "relationshipFatigueDomain": "Kelelahan hubungan",
+      "contactPatternDomain": "Pola kontak & komunikasi",
+      "relationshipPriorityDomain": "Prioritas hubungan",
+      "mostNaturalFlowDomain": "Area aliran energi hubungan paling natural",
+      "mostEnergyDrainDomain": "Situasi hubungan paling menguras energi",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionsTitle": "Mengapa tipe ini kesulitan dalam hubungan",
+      "relationshipStyleTitle": "Gaya hubungan yang cocok untukmu",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Tipe energi hubunganku: {type}! 🔋\nKamu tipe apa? Ayo coba bareng!",
+      "kakao": "Tipe energi hubunganku: {type}! 🔋\nKamu tipe apa?",
+      "wechat": "Tipe energi hubunganku: {type}! 🔋\nCoba tes ini juga!",
+      "whatsapp": "Tipe energi hubunganku: {type}! 🔋\nKamu juga coba ya!",
+      "telegram": "Tipe energi hubunganku: {type}! 🔋\nKamu tipe apa?",
+      "line": "Tipe energi hubunganku: {type}! 🔋\nKamu tipe apa?",
+      "startDefault": "Energi yang Kucurahkan untuk Hubungan 🔋 Cek sekarang!",
+      "startKakao": "Energi yang Kucurahkan untuk Hubungan 🔋 Cek sekarang!",
+      "startWechat": "Energi yang Kucurahkan untuk Hubungan 🔋 Cek sekarang!",
+      "startWhatsapp": "Energi yang Kucurahkan untuk Hubungan 🔋 Cek sekarang!",
+      "startTelegram": "Energi yang Kucurahkan untuk Hubungan 🔋 Cek sekarang!",
+      "startLine": "Energi yang Kucurahkan untuk Hubungan 🔋 Cek sekarang!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

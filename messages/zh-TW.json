@@ -10452,6 +10452,76 @@
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
   },
+  "phase3RelationshipEnergyTest": {
+    "startMessage": {
+      "line1": "在人際關係中，你的能量是在充電還是在消耗？",
+      "line2": "有人長時間聚會後回家就像電池完全耗盡，也有人越和人待在一起越充滿能量。有人一則訊息都覺得有負擔，也有人沒有聯絡就會感到空落。",
+      "line3": "你在關係中如何消耗與補充能量的模式，並不是簡單的內向或外向。你想要多少關係、在什麼深度感到舒適、維持關係是自然還是費力，都會影響結果。",
+      "line4": "透過12個問題，分析你在人際關係中如何使用能量。",
+      "line5": "找到我的關係能量模式 🔋 誠實地開始",
+      "note": "※ 請選擇更接近你實際模式的選項。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（人際關係能量測試）",
+      "goToTest": "前往測試",
+      "startTest": "找到我的關係能量模式 🔋 誠實地開始",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "relationshipEnergySummary": "關係能量摘要",
+      "relationshipEnergyType": "關係能量類型",
+      "relationshipKeywordsTitle": "關係關鍵詞",
+      "domainAnalysisTitle": "6個領域得分",
+      "totalScore": "總分",
+      "scoreUnit": "分",
+      "energyDirectionDomain": "能量方向",
+      "relationshipMaintenanceDomain": "關係維持意願",
+      "togetherTimeReactionDomain": "共處時間反應",
+      "relationshipFatigueDomain": "關係疲勞度",
+      "contactPatternDomain": "聯絡與溝通模式",
+      "relationshipPriorityDomain": "關係優先順序",
+      "mostNaturalFlowDomain": "關係能量最自然流動的領域",
+      "mostEnergyDrainDomain": "最消耗能量的關係情境",
+      "strengthsTitle": "此類型的優勢",
+      "cautionsTitle": "此類型在關係中的困難",
+      "relationshipStyleTitle": "適合此類型的關係方式",
+      "certificationPhrase": "認證語",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "我的關係能量類型：{type}！🔋\n你是什麼類型？一起來測吧！",
+      "kakao": "我的關係能量類型：{type}！🔋\n你是什麼類型？",
+      "wechat": "我的關係能量類型：{type}！🔋\n一起來測吧！",
+      "whatsapp": "我的關係能量類型：{type}！🔋\n你也來測測！",
+      "telegram": "我的關係能量類型：{type}！🔋\n你是什麼類型？",
+      "line": "我的關係能量類型：{type}！🔋\n你是什麼類型？",
+      "startDefault": "我在人際關係中投入的能量 🔋 馬上來測！",
+      "startKakao": "我在人際關係中投入的能量 🔋 馬上來測！",
+      "startWechat": "我在人際關係中投入的能量 🔋 馬上來測！",
+      "startWhatsapp": "我在人際關係中投入的能量 🔋 馬上來測！",
+      "startTelegram": "我在人際關係中投入的能量 🔋 馬上來測！",
+      "startLine": "我在人際關係中投入的能量 🔋 馬上來測！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "樂觀主義不是性格，而是思維習慣。",

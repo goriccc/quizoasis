@@ -10992,6 +10992,76 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3RelationshipEnergyTest": {
+    "startMessage": {
+      "line1": "In relationships, does your energy recharge or drain?",
+      "line2": "Some people feel completely drained after a long gathering and need to go home, while others feel more energized the longer they stay with people. Some feel burdened by a single message, while others feel empty without contact.",
+      "line3": "How you spend and recharge energy in relationships is not simply introversion vs extroversion. How many relationships you want, what depth feels comfortable, and whether maintaining relationships feels natural or exhausting all matter.",
+      "line4": "12 questions analyze how you spend energy in human relationships.",
+      "line5": "Find My Relationship Energy Pattern 🔋 Start Honestly",
+      "note": "※ Choose the option closer to your actual pattern."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (Relationship Energy Test)",
+      "goToTest": "Go to test",
+      "startTest": "Find My Relationship Energy Pattern 🔋 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "relationshipEnergySummary": "Relationship energy summary",
+      "relationshipEnergyType": "Relationship energy type",
+      "relationshipKeywordsTitle": "Relationship keywords",
+      "domainAnalysisTitle": "Scores across 6 domains",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "energyDirectionDomain": "Energy direction",
+      "relationshipMaintenanceDomain": "Relationship maintenance",
+      "togetherTimeReactionDomain": "Together-time reaction",
+      "relationshipFatigueDomain": "Relationship fatigue",
+      "contactPatternDomain": "Contact & communication",
+      "relationshipPriorityDomain": "Relationship priority",
+      "mostNaturalFlowDomain": "Area where relationship energy flows most naturally",
+      "mostEnergyDrainDomain": "Situation that drains the most energy",
+      "strengthsTitle": "Strengths of this type",
+      "cautionsTitle": "Why this type struggles in relationships",
+      "relationshipStyleTitle": "Relationship style that fits you",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My relationship energy type: {type}! 🔋\nWhat's your type? Try it together!",
+      "kakao": "My relationship energy type: {type}! 🔋\nWhat's your type?",
+      "wechat": "My relationship energy type: {type}! 🔋\nTry this test too!",
+      "whatsapp": "My relationship energy type: {type}! 🔋\nTake the test too!",
+      "telegram": "My relationship energy type: {type}! 🔋\nWhat's your type?",
+      "line": "My relationship energy type: {type}! 🔋\nWhat's your type?",
+      "startDefault": "Energy I Invest in Relationships 🔋 Check now!",
+      "startKakao": "Energy I Invest in Relationships 🔋 Check now!",
+      "startWechat": "Energy I Invest in Relationships 🔋 Check now!",
+      "startWhatsapp": "Energy I Invest in Relationships 🔋 Check now!",
+      "startTelegram": "Energy I Invest in Relationships 🔋 Check now!",
+      "startLine": "Energy I Invest in Relationships 🔋 Check now!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",

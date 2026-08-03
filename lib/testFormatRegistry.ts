@@ -154,6 +154,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-approval-seeking-level': 'scenario_4',
   'phase3-eq-self-diagnosis': 'scenario_4',
   'phase3-curiosity-type': 'scenario_4',
+  'phase3-relationship-energy': 'scenario_2',
   'phase3-guardian-spirit-animal': 'personality_2',
   'phase3-hidden-sub-character': 'scenario_2',
   'phase3-ideal-type-dna-analysis': 'personality_4',
