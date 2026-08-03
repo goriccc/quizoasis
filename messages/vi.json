@@ -10912,6 +10912,77 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3CuriosityTypeTest": {
+    "startMessage": {
+      "line1": "Sự tò mò cũng có loại.",
+      "line2": "Có người một chủ đề xuất hiện là đào đến cùng, có người khám phá rộng và tìm kết nối bất ngờ, có người lấy câu hỏi \"Vì sao?\" làm động lực, có người thấy mọi thứ trong đời thật kỳ diệu không dừng được.",
+      "line3": "Nhà tâm lý học Todd Kashdan coi tò mò không phải một đặc tính đơn lẻ mà hỗn hợp nhiều loại: niềm vui khám phá, nhạy cảm thiếu hụt, tò mò đồng cảm, tìm cảm giác mạnh, cởi mở. Năm trục này kết hợp tạo mẫu tò mò riêng.",
+      "line4": "12 câu hỏi phân tích bạn bị thu hút bởi gì và khám phá thế nào.",
+      "line5": "Tìm Loại Tò Mò Của Tôi 🔍 Kiểm Tra Ngay",
+      "note": "※ Hãy chọn đáp án gần với cách khám phá thực tế của bạn nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chẩn đoán Loại Tò Mò)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Tìm Loại Tò Mò Của Tôi 🔍 Kiểm Tra Ngay",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "curiositySummary": "Tóm tắt loại tò mò",
+      "curiosityType": "Loại tò mò",
+      "exploreKeywordsTitle": "Từ khóa khám phá",
+      "domainAnalysisTitle": "Điểm 6 lĩnh vực",
+      "totalScore": "Tổng điểm",
+      "scoreUnit": " điểm",
+      "interestScopeDomain": "Phạm vi quan tâm",
+      "exploreMethodDomain": "Cách khám phá",
+      "questionTendencyDomain": "Xu hướng đặt câu hỏi",
+      "learningPatternDomain": "Mẫu học tập",
+      "interestTriggerDomain": "Yếu tố kích thích hứng thú",
+      "curiosityPersistenceDomain": "Độ bền tò mò",
+      "strongestDomain": "Cách khám phá tò mò mạnh nhất",
+      "boostDomain": "Lĩnh vực thực tế nhất hiện tại",
+      "strengthsTitle": "Điểm mạnh của loại này",
+      "cautionsTitle": "Lưu ý cho loại này",
+      "contentRecommendTitle": "Nội dung học phù hợp",
+      "growCuriosityTitle": "Muốn nuôi dưỡng tò mò thêm",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "Loại tò mò của tôi: {type}! 🔍\\nBạn thuộc loại tò mò nào? Cùng thử nhé!",
+      "kakao": "Loại tò mò của tôi: {type}! 🔍\\nBạn thuộc loại tò mò nào?",
+      "wechat": "Loại tò mò của tôi: {type}! 🔍\\nCùng thử bài test này nhé!",
+      "whatsapp": "Loại tò mò của tôi: {type}! 🔍\\nBạn cũng đo thử nhé!",
+      "telegram": "Loại tò mò của tôi: {type}! 🔍\\nBạn loại nào?",
+      "line": "Loại tò mò của tôi: {type}! 🔍\\nBạn loại nào?",
+      "startDefault": "Chẩn Đoán Loại Tò Mò 🔍 Kiểm tra ngay!",
+      "startKakao": "Chẩn Đoán Loại Tò Mò 🔍 Kiểm tra ngay!",
+      "startWechat": "Chẩn Đoán Loại Tò Mò 🔍 Kiểm tra ngay!",
+      "startWhatsapp": "Chẩn Đoán Loại Tò Mò 🔍 Kiểm tra ngay!",
+      "startTelegram": "Chẩn Đoán Loại Tò Mò 🔍 Kiểm tra ngay!",
+      "startLine": "Chẩn Đoán Loại Tò Mò 🔍 Kiểm tra ngay!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Lạc quan không phải tính cách — đó là thói quen suy nghĩ.",

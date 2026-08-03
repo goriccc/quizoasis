@@ -10912,6 +10912,77 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3CuriosityTypeTest": {
+    "startMessage": {
+      "line1": "Rasa penasaran juga punya tipe.",
+      "line2": "Ada yang menggali satu topik sampai ujung, ada yang mengeksplorasi luas dan menemukan koneksi tak terduga, ada yang didorong pertanyaan \"Kenapa?\", ada yang merasa segala hal sehari-hari terlalu menakjubkan untuk berhenti.",
+      "line3": "Psikolog Todd Kashdan melihat rasa penasaran bukan satu sifat melainkan campuran beberapa tipe: kegembiraan eksplorasi, sensitivitas kekurangan, rasa penasaran empati, pencarian sensasi, keterbukaan. Lima sumbu ini membentuk pola rasa penasaran masing-masing.",
+      "line4": "12 pertanyaan menganalisis apa yang menarikmu dan bagaimana kamu mengeksplorasi.",
+      "line5": "Temukan Tipe Rasa Penasaranku 🔍 Cek Sekarang",
+      "note": "※ Pilih opsi yang paling dekat dengan cara eksplorasi nyata kamu."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Tes Tipe Rasa Penasaran)",
+      "goToTest": "Ke tes",
+      "startTest": "Temukan Tipe Rasa Penasaranku 🔍 Cek Sekarang",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "curiositySummary": "Ringkasan tipe rasa penasaran",
+      "curiosityType": "Tipe rasa penasaran",
+      "exploreKeywordsTitle": "Kata kunci eksplorasi",
+      "domainAnalysisTitle": "Skor 6 domain",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "interestScopeDomain": "Ruang lingkup minat",
+      "exploreMethodDomain": "Metode eksplorasi",
+      "questionTendencyDomain": "Kecenderungan bertanya",
+      "learningPatternDomain": "Pola belajar",
+      "interestTriggerDomain": "Pemicu minat",
+      "curiosityPersistenceDomain": "Ketahanan rasa penasaran",
+      "strongestDomain": "Gaya eksplorasi di mana rasa penasaran paling kuat",
+      "boostDomain": "Domain paling praktis saat ini",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionsTitle": "Peringatan untuk tipe ini",
+      "contentRecommendTitle": "Konten belajar yang cocok",
+      "growCuriosityTitle": "Ingin menumbuhkan rasa penasaran",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Tipe rasa penasaran-ku: {type}! 🔍\\nKamu tipe rasa penasaran apa? Ayo coba bareng!",
+      "kakao": "Tipe rasa penasaran-ku: {type}! 🔍\\nKamu tipe rasa penasaran apa?",
+      "wechat": "Tipe rasa penasaran-ku: {type}! 🔍\\nCoba tes ini juga!",
+      "whatsapp": "Tipe rasa penasaran-ku: {type}! 🔍\\nKamu juga ukur yuk!",
+      "telegram": "Tipe rasa penasaran-ku: {type}! 🔍\\nKamu tipe apa?",
+      "line": "Tipe rasa penasaran-ku: {type}! 🔍\\nKamu tipe apa?",
+      "startDefault": "Tes Tipe Rasa Penasaran 🔍 Cek sekarang!",
+      "startKakao": "Tes Tipe Rasa Penasaran 🔍 Cek sekarang!",
+      "startWechat": "Tes Tipe Rasa Penasaran 🔍 Cek sekarang!",
+      "startWhatsapp": "Tes Tipe Rasa Penasaran 🔍 Cek sekarang!",
+      "startTelegram": "Tes Tipe Rasa Penasaran 🔍 Cek sekarang!",
+      "startLine": "Tes Tipe Rasa Penasaran 🔍 Cek sekarang!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

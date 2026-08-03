@@ -10921,6 +10921,77 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3CuriosityTypeTest": {
+    "startMessage": {
+      "line1": "Curiosity has types too.",
+      "line2": "Some people dig to the end of one topic, some explore widely and find unexpected connections, some are driven by the question \"Why?\", and some find everything in daily life so fascinating they cannot stop.",
+      "line3": "Psychologist Todd Kashdan saw curiosity not as a single trait but a composite of several types: joy of exploration, deprivation sensitivity, empathic curiosity, thrill seeking, and openness. These five axes combine to create each person's curiosity pattern.",
+      "line4": "12 questions analyze what draws you in and how you explore.",
+      "line5": "Find My Curiosity Type 🔍 Check Now",
+      "note": "※ Choose the option closest to your actual way of exploring."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Curiosity Type Test)",
+      "goToTest": "Go to test",
+      "startTest": "Find My Curiosity Type 🔍 Check Now",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "curiositySummary": "Curiosity summary",
+      "curiosityType": "Curiosity type",
+      "exploreKeywordsTitle": "Explore keywords",
+      "domainAnalysisTitle": "Domain scores (6 areas)",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "interestScopeDomain": "Interest scope",
+      "exploreMethodDomain": "Explore method",
+      "questionTendencyDomain": "Question tendency",
+      "learningPatternDomain": "Learning pattern",
+      "interestTriggerDomain": "Interest trigger",
+      "curiosityPersistenceDomain": "Curiosity persistence",
+      "strongestDomain": "Explore style where curiosity works strongest",
+      "boostDomain": "Most practical domain right now",
+      "strengthsTitle": "Strengths of this type",
+      "cautionsTitle": "Cautions for this type",
+      "contentRecommendTitle": "Recommended learning content",
+      "growCuriosityTitle": "Grow your curiosity",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My curiosity type: {type}! 🔍\\nWhat's your curiosity type? Let's try together!",
+      "kakao": "My curiosity type: {type}! 🔍\\nWhat's your curiosity type?",
+      "wechat": "My curiosity type: {type}! 🔍\\nTry this test too!",
+      "whatsapp": "My curiosity type: {type}! 🔍\\nTake the test too!",
+      "telegram": "My curiosity type: {type}! 🔍\\nWhat's your type?",
+      "line": "My curiosity type: {type}! 🔍\\nWhat's your type?",
+      "startDefault": "My Curiosity Type Test 🔍 Check now!",
+      "startKakao": "My Curiosity Type Test 🔍 Check now!",
+      "startWechat": "My Curiosity Type Test 🔍 Check now!",
+      "startWhatsapp": "My Curiosity Type Test 🔍 Check now!",
+      "startTelegram": "My Curiosity Type Test 🔍 Check now!",
+      "startLine": "My Curiosity Type Test 🔍 Check now!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",
