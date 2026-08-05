@@ -11097,6 +11097,62 @@
       "popularTestsTop5": "🔥 今人気のテスト TOP5"
     }
   },
+  "phase3FriendshipBalanceGameTest": {
+    "startMessage": {
+      "line1": "二つから一つを必ず選ばなければなりません。中間はありません。",
+      "line2": "簡単な質問は一つもありません。正解もありません。12ラウンドで何を選んだかが、あなたがどんな友人かを示します。",
+      "line3": "12の極限友情ジレンマ。考えれば考えるほど難しくなります。結果を友人に送って比べてみて。「なんでそれ選んだの?!」から始まる会話が保証されます。",
+      "line4": "12ラウンド。逃げ場はありません。",
+      "line5": "友情極限バランスゲーム開始 🔥 覚悟してスタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（友情極限バランスゲーム）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "friendshipStyleType": "友情スタイル",
+      "friendshipKeywords": "友情キーワード",
+      "friendSays": "友人が言うこと",
+      "friendshipCautions": "このタイプの注意点",
+      "typeStrengths": "このタイプの強み",
+      "oneLiner": "一言評価",
+      "certificationPhrase": "認証フレーズ",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテスト"
+    },
+    "shareMessages": {
+      "default": "友情極限バランス結果：{type}! 🔥 友人に送って比べて → 選択が違えば「なんでそれ選んだの?!」確定",
+      "kakao": "友情極限バランス結果：{type}! 🔥 友人に送って比べて",
+      "wechat": "友情極限バランス結果：{type}! 🔥 友人と一緒にやってみて",
+      "whatsapp": "友情極限バランス結果：{type}! 🔥 あなたもやってみて",
+      "telegram": "友情極限バランス結果：{type}! 🔥 あなたはどのタイプ？",
+      "line": "友情極限バランス結果：{type}! 🔥 友人と比べてみて",
+      "startDefault": "バランスゲーム — 友情極限編 🔥 12ラウンドの極限選択",
+      "startKakao": "バランスゲーム — 友情極限編 🔥 12ラウンドの極限選択",
+      "startWechat": "バランスゲーム — 友情極限編 🔥 12ラウンドの極限選択",
+      "startWhatsapp": "バランスゲーム — 友情極限編 🔥 12ラウンドの極限選択",
+      "startTelegram": "バランスゲーム — 友情極限編 🔥 12ラウンドの極限選択",
+      "startLine": "バランスゲーム — 友情極限編 🔥 12ラウンドの極限選択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 今人気のテスト TOP5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

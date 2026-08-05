@@ -11109,6 +11109,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3FriendshipBalanceGameTest": {
+    "startMessage": {
+      "line1": "Kamu harus memilih salah satu dari dua. Tidak ada jalan tengah.",
+      "line2": "Tidak ada pertanyaan yang mudah. Tidak ada jawaban benar. Hanya pilihanmu di 12 ronde yang menunjukkan kamu teman seperti apa.",
+      "line3": "12 dilema persahabatan ekstrem. Makin dipikir makin sulit. Kirim hasil ke teman dan bandingkan. Dijamin percakapan dimulai dengan \"Kok kamu pilih ITU?!\"",
+      "line4": "12 ronde. Tidak bisa lari.",
+      "line5": "Mulai Balance Game Persahabatan Ekstrem 🔥 Siapkan diri dulu"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Balance Game Persahabatan Ekstrem)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "friendshipStyleType": "Gaya persahabatan",
+      "friendshipKeywords": "Kata kunci persahabatan",
+      "friendSays": "Yang teman katakan padamu",
+      "friendshipCautions": "Peringatan untuk tipe ini",
+      "typeStrengths": "Kelebihan tipe ini",
+      "oneLiner": "Satu kalimat",
+      "certificationPhrase": "Frasa sertifikasi",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lain"
+    },
+    "shareMessages": {
+      "default": "Hasil balance game persahabatan ekstrem: {type}! 🔥 Kirim ke teman bandingkan → pilihan beda dijamin bikin \"Kok kamu pilih ITU?!\"",
+      "kakao": "Hasil balance game persahabatan ekstrem: {type}! 🔥 Kirim ke teman bandingkan",
+      "wechat": "Hasil balance game persahabatan ekstrem: {type}! 🔥 Coba bareng teman",
+      "whatsapp": "Hasil balance game persahabatan ekstrem: {type}! 🔥 Kamu juga coba",
+      "telegram": "Hasil balance game persahabatan ekstrem: {type}! 🔥 Tipe kamu apa?",
+      "line": "Hasil balance game persahabatan ekstrem: {type}! 🔥 Bandingkan dengan teman",
+      "startDefault": "Balance Game — Persahabatan Ekstrem 🔥 12 ronde pilihan ekstrem",
+      "startKakao": "Balance Game — Persahabatan Ekstrem 🔥 12 ronde pilihan ekstrem",
+      "startWechat": "Balance Game — Persahabatan Ekstrem 🔥 12 ronde pilihan ekstrem",
+      "startWhatsapp": "Balance Game — Persahabatan Ekstrem 🔥 12 ronde pilihan ekstrem",
+      "startTelegram": "Balance Game — Persahabatan Ekstrem 🔥 12 ronde pilihan ekstrem",
+      "startLine": "Balance Game — Persahabatan Ekstrem 🔥 12 ronde pilihan ekstrem"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

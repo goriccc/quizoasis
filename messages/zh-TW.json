@@ -10578,6 +10578,62 @@
       "popularTestsTop5": "🔥 熱門測驗 TOP5"
     }
   },
+  "phase3FriendshipBalanceGameTest": {
+    "startMessage": {
+      "line1": "必須在兩者中選一個。沒有中間選項。",
+      "line2": "沒有一道題是簡單的。也沒有標準答案。你在12輪裡的選擇，會拼出你是怎樣的朋友。",
+      "line3": "12個極限友情兩難。越想越難。把結果發給好友比比看。保證會出現「你怎麼選那個?!」的對話。",
+      "line4": "12輪。無處可逃。",
+      "line5": "友情極限平衡遊戲開始 🔥 做好心理準備再開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（友情極限平衡遊戲）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "friendshipStyleType": "友情風格",
+      "friendshipKeywords": "友情關鍵詞",
+      "friendSays": "好友對你說的話",
+      "friendshipCautions": "這種類型的注意點",
+      "typeStrengths": "這種類型的優勢",
+      "oneLiner": "一句話點評",
+      "certificationPhrase": "認證語",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "其他測試"
+    },
+    "shareMessages": {
+      "default": "友情極限平衡結果：{type}! 🔥 發給好友比比 → 選擇不同保證出現「你怎麼選那個?!」",
+      "kakao": "友情極限平衡結果：{type}! 🔥 發給好友比比",
+      "wechat": "友情極限平衡結果：{type}! 🔥 和好友一起試試",
+      "whatsapp": "友情極限平衡結果：{type}! 🔥 你也來試試",
+      "telegram": "友情極限平衡結果：{type}! 🔥 你是什麼類型？",
+      "line": "友情極限平衡結果：{type}! 🔥 和好友比比看",
+      "startDefault": "平衡遊戲 — 友情極限篇 🔥 12輪極限選擇",
+      "startKakao": "平衡遊戲 — 友情極限篇 🔥 12輪極限選擇",
+      "startWechat": "平衡遊戲 — 友情極限篇 🔥 12輪極限選擇",
+      "startWhatsapp": "平衡遊戲 — 友情極限篇 🔥 12輪極限選擇",
+      "startTelegram": "平衡遊戲 — 友情極限篇 🔥 12輪極限選擇",
+      "startLine": "平衡遊戲 — 友情極限篇 🔥 12輪極限選擇"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 TOP5",
+      "popularTestsTop5": "🔥 熱門測驗 TOP5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "樂觀主義不是性格，而是思維習慣。",

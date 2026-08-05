@@ -297,6 +297,11 @@ const Phase3FamilyBalanceGameTestClient = dynamic(
   { ssr: false }
 );
 
+const Phase3FriendshipBalanceGameTestClient = dynamic(
+  () => import('@/components/Phase3FriendshipBalanceGameTestClient'),
+  { ssr: false }
+);
+
 const Phase3ChangeAdaptabilityTestClient = dynamic(
   () => import('@/components/Phase3ChangeAdaptabilityTestClient'),
   { ssr: false }
@@ -2365,6 +2370,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['平衡遊戲', '家庭', '節日', '極限選擇', '家庭群'],
         vi: ['trò cân bằng', 'gia đình', 'lễ tết', 'lựa chọn cực hạn', 'nhóm chat'],
         id: ['permainan seimbang', 'keluarga', 'liburan', 'pilihan ekstrem', 'grup keluarga'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-friendship-balance-game') {
+    test = {
+      slug: 'phase3-friendship-balance-game',
+      title: {
+        ko: '밸런스 게임 — 우정 극한편',
+        en: 'Balance Game — Friendship Extreme',
+        ja: 'バランスゲーム 友情編（極限）',
+        'zh-CN': '平衡游戏 · 友情篇（极限）',
+        'zh-TW': '平衡遊戲 · 友情篇（極限）',
+        vi: 'Trò cân bằng — tình bạn (cực hạn)',
+        id: 'Permainan seimbang — persahabatan (ekstrem)',
+      },
+      description: {
+        ko: '12라운드 극한 2지선다로 나의 우정 스타일을 분석합니다. 친구에게 공유하면 선택이 달라 반응이 터집니다.',
+        en: '12 rounds of extreme A/B choices reveal your friendship style. Share with friends for guaranteed reactions.',
+        ja: '12ラウンドの極限2択で友情スタイルを分析。友達に共有すると反応が炸裂します。',
+        'zh-CN': '12轮极限二选一分析你的友情风格。分享给朋友，选择不同反应保证炸裂。',
+        'zh-TW': '12輪極限二選一分析你的友情風格。分享給朋友，選擇不同反應保證炸裂。',
+        vi: '12 vòng chọn cực hạn phân tích kiểu tình bạn. Chia sẻ với bạn bè để xem phản ứng.',
+        id: '12 ronde pilihan ekstrem menganalisis gaya persahabatanmu. Bagikan ke teman untuk reaksi garanti.',
+      },
+      thumbnail: 'p3_game_friendship_balance.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밸런스게임', '우정', '의리', '친구', '극한선택'],
+        en: ['balance game', 'friendship', 'loyalty', 'friends', 'extreme choice'],
+        ja: ['バランスゲーム', '友情', '義理', '友達', '極限選択'],
+        'zh-CN': ['平衡游戏', '友情', '义气', '朋友', '极限选择'],
+        'zh-TW': ['平衡遊戲', '友情', '義氣', '朋友', '極限選擇'],
+        vi: ['trò cân bằng', 'tình bạn', 'nghĩa khí', 'bạn bè', 'lựa chọn cực hạn'],
+        id: ['permainan seimbang', 'persahabatan', 'loyalitas', 'teman', 'pilihan ekstrem'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -9253,6 +9295,62 @@ export default async function TestPage({ params }: Props) {
             questions={phase3FamilyBalanceGameQuestions}
             results={phase3FamilyBalanceGameResults}
             questionCount={phase3FamilyBalanceGameQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-friendship-balance-game') {
+      const { phase3FriendshipBalanceGameQuestions, phase3FriendshipBalanceGameResults } = await import('@/lib/phase3FriendshipBalanceGameData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-friendship-balance-game',
+        title: {
+          ko: '밸런스 게임 — 우정 극한편',
+          en: 'Balance Game — Friendship Extreme',
+          ja: 'バランスゲーム 友情編（極限）',
+          'zh-CN': '平衡游戏 · 友情篇（极限）',
+          'zh-TW': '平衡遊戲 · 友情篇（極限）',
+          vi: 'Trò cân bằng — tình bạn (cực hạn)',
+          id: 'Permainan seimbang — persahabatan (ekstrem)',
+        },
+        description: {
+          ko: '12라운드 극한 2지선다로 나의 우정 스타일을 분석합니다. 친구에게 공유하면 선택이 달라 반응이 터집니다.',
+          en: '12 rounds of extreme A/B choices reveal your friendship style. Share with friends for guaranteed reactions.',
+          ja: '12ラウンドの極限2択で友情スタイルを分析。友達に共有すると反応が炸裂します。',
+          'zh-CN': '12轮极限二选一分析你的友情风格。分享给朋友，选择不同反应保证炸裂。',
+          'zh-TW': '12輪極限二選一分析你的友情風格。分享給朋友，選擇不同反應保證炸裂。',
+          vi: '12 vòng chọn cực hạn phân tích kiểu tình bạn. Chia sẻ với bạn bè để xem phản ứng.',
+          id: '12 ronde pilihan ekstrem menganalisis gaya persahabatanmu. Bagikan ke teman untuk reaksi garanti.',
+        },
+        thumbnail: 'p3_game_friendship_balance.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: {
+          ko: ['밸런스게임', '우정', '의리', '친구', '극한선택'],
+          en: ['balance game', 'friendship', 'loyalty', 'friends', 'extreme choice'],
+          ja: ['バランスゲーム', '友情', '義理', '友達', '極限選択'],
+          'zh-CN': ['平衡游戏', '友情', '义气', '朋友', '极限选择'],
+          'zh-TW': ['平衡遊戲', '友情', '義氣', '朋友', '極限選擇'],
+          vi: ['trò cân bằng', 'tình bạn', 'nghĩa khí', 'bạn bè', 'lựa chọn cực hạn'],
+          id: ['permainan seimbang', 'persahabatan', 'loyalitas', 'teman', 'pilihan ekstrem'],
+        },
+      };
+
+      return (
+        <>
+          <Phase3FriendshipBalanceGameTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3FriendshipBalanceGameQuestions}
+            results={phase3FriendshipBalanceGameResults}
+            questionCount={phase3FriendshipBalanceGameQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

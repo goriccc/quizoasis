@@ -11109,6 +11109,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3FriendshipBalanceGameTest": {
+    "startMessage": {
+      "line1": "Bạn phải chọn một trong hai. Không có lựa chọn ở giữa.",
+      "line2": "Không có câu nào dễ. Cũng không có đáp án đúng. Chỉ những gì bạn chọn qua 12 vòng mới cho thấy bạn là kiểu bạn bè nào.",
+      "line3": "12 tình huống tình bạn cực hạn. Càng nghĩ càng khó. Gửi kết quả cho bạn thân so sánh. Chắc chắn sẽ có câu chuyện bắt đầu bằng \"Sao mày chọn cái đó?!\"",
+      "line4": "12 vòng. Không thoát được.",
+      "line5": "Bắt đầu game cân bằng tình bạn cực hạn 🔥 Sẵn sàng thì bắt đầu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Game cân bằng tình bạn cực hạn)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "friendshipStyleType": "Phong cách tình bạn",
+      "friendshipKeywords": "Từ khóa tình bạn",
+      "friendSays": "Bạn bè nói với bạn",
+      "friendshipCautions": "Lưu ý cho kiểu này",
+      "typeStrengths": "Điểm mạnh của kiểu này",
+      "oneLiner": "Nhận xét một câu",
+      "certificationPhrase": "Câu chứng nhận",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Test khác"
+    },
+    "shareMessages": {
+      "default": "Kết quả cân bằng tình bạn cực hạn: {type}! 🔥 Gửi bạn thân so sánh → chọn khác chắc chắn có \"Sao mày chọn cái đó?!\"",
+      "kakao": "Kết quả cân bằng tình bạn cực hạn: {type}! 🔥 Gửi bạn thân so sánh",
+      "wechat": "Kết quả cân bằng tình bạn cực hạn: {type}! 🔥 Thử với bạn thân",
+      "whatsapp": "Kết quả cân bằng tình bạn cực hạn: {type}! 🔥 Bạn cũng thử đi",
+      "telegram": "Kết quả cân bằng tình bạn cực hạn: {type}! 🔥 Bạn thuộc kiểu nào?",
+      "line": "Kết quả cân bằng tình bạn cực hạn: {type}! 🔥 So với bạn thân",
+      "startDefault": "Balance Game — Tình bạn cực hạn 🔥 12 vòng lựa chọn cực hạn",
+      "startKakao": "Balance Game — Tình bạn cực hạn 🔥 12 vòng lựa chọn cực hạn",
+      "startWechat": "Balance Game — Tình bạn cực hạn 🔥 12 vòng lựa chọn cực hạn",
+      "startWhatsapp": "Balance Game — Tình bạn cực hạn 🔥 12 vòng lựa chọn cực hạn",
+      "startTelegram": "Balance Game — Tình bạn cực hạn 🔥 12 vòng lựa chọn cực hạn",
+      "startLine": "Balance Game — Tình bạn cực hạn 🔥 12 vòng lựa chọn cực hạn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Lạc quan không phải tính cách — đó là thói quen suy nghĩ.",
