@@ -11053,6 +11053,62 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3FamilyBalanceGameTest": {
+    "startMessage": {
+      "line1": "Vì là gia đình nên phải làm sao? Hay dù là gia đình cũng có ranh giới?",
+      "line2": "Không có câu nào dễ. Cũng không có đáp án đúng. Chỉ những gì bạn chọn qua 12 vòng mới cho thấy bạn là ai trong gia đình.",
+      "line3": "Chia sẻ vào nhóm gia đình đi. Cùng một nhà mà kết quả có thể hoàn toàn khác. Chắc chắn sẽ có câu chuyện bắt đầu bằng \"Sao mày chọn cái đó?!\"",
+      "line4": "12 vòng. Không thoát được.",
+      "line5": "Bắt đầu game cân bằng gia đình cực hạn 🏠 Sẵn sàng thì bắt đầu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Game cân bằng gia đình cực hạn)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "familyStyleType": "Phong cách gia đình",
+      "familyKeywords": "Từ khóa quan hệ",
+      "familySays": "Gia đình nói về bạn",
+      "familyCautions": "Lưu ý cho kiểu này",
+      "typeStrengths": "Điểm mạnh của kiểu này",
+      "oneLiner": "Nhận xét một câu",
+      "certificationPhrase": "Câu chứng nhận",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Test khác"
+    },
+    "shareMessages": {
+      "default": "Kết quả cân bằng gia đình cực hạn: {type}! 🏠 Chia sẻ vào nhóm gia đình → chọn khác chắc chắn có \"Sao mày chọn cái đó?!\"",
+      "kakao": "Kết quả cân bằng gia đình cực hạn: {type}! 🏠 Chia sẻ vào nhóm gia đình",
+      "wechat": "Kết quả cân bằng gia đình cực hạn: {type}! 🏠 Thử với gia đình",
+      "whatsapp": "Kết quả cân bằng gia đình cực hạn: {type}! 🏠 Bạn cũng thử đi",
+      "telegram": "Kết quả cân bằng gia đình cực hạn: {type}! 🏠 Bạn thuộc kiểu nào?",
+      "line": "Kết quả cân bằng gia đình cực hạn: {type}! 🏠 So với gia đình",
+      "startDefault": "Balance Game — Gia đình cực hạn 🏠 12 vòng lựa chọn cực hạn",
+      "startKakao": "Balance Game — Gia đình cực hạn 🏠 12 vòng lựa chọn cực hạn",
+      "startWechat": "Balance Game — Gia đình cực hạn 🏠 12 vòng lựa chọn cực hạn",
+      "startWhatsapp": "Balance Game — Gia đình cực hạn 🏠 12 vòng lựa chọn cực hạn",
+      "startTelegram": "Balance Game — Gia đình cực hạn 🏠 12 vòng lựa chọn cực hạn",
+      "startLine": "Balance Game — Gia đình cực hạn 🏠 12 vòng lựa chọn cực hạn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Lạc quan không phải tính cách — đó là thói quen suy nghĩ.",

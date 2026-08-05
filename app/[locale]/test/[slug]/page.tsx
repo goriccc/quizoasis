@@ -292,6 +292,11 @@ const Phase3RelationshipEnergyTestClient = dynamic(
   { ssr: false }
 );
 
+const Phase3FamilyBalanceGameTestClient = dynamic(
+  () => import('@/components/Phase3FamilyBalanceGameTestClient'),
+  { ssr: false }
+);
+
 const Phase3ChangeAdaptabilityTestClient = dynamic(
   () => import('@/components/Phase3ChangeAdaptabilityTestClient'),
   { ssr: false }
@@ -2323,6 +2328,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['關係能量', '人際關係', '內向外向', '充電方式', '心理'],
         vi: ['năng lượng quan hệ', 'mối quan hệ', 'hướng nội ngoại', 'cách nạp pin', 'tâm lý'],
         id: ['energi hubungan', 'relasi', 'introvert ekstrovert', 'cara isi ulang', 'psikologi'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-family-balance-game') {
+    test = {
+      slug: 'phase3-family-balance-game',
+      title: {
+        ko: '밸런스 게임 — 가족 극한편',
+        en: 'Balance Game — Family Extreme',
+        ja: 'バランスゲーム 家族編（極限）',
+        'zh-CN': '平衡游戏 · 家庭篇（极限）',
+        'zh-TW': '平衡遊戲 · 家庭篇（極限）',
+        vi: 'Trò cân bằng — gia đình (cực hạn)',
+        id: 'Permainan seimbang — keluarga (ekstrem)',
+      },
+      description: {
+        ko: '12라운드 극한 2지선다로 나의 가족 관계 스타일을 분석합니다. 가족 단톡방에 공유하면 선택이 달라 반응이 터집니다.',
+        en: '12 rounds of extreme A/B choices reveal your family relationship style. Share in the family chat for guaranteed reactions.',
+        ja: '12ラウンドの極限2択で家族関係スタイルを分析。家族グループチャットで共有すると反応が炸裂します。',
+        'zh-CN': '12轮极限二选一分析你的家庭关系风格。分享到家庭群聊，选择不同反应保证炸裂。',
+        'zh-TW': '12輪極限二選一分析你的家庭關係風格。分享到家庭群聊，選擇不同反應保證炸裂。',
+        vi: '12 vòng chọn cực hạn phân tích kiểu quan hệ gia đình. Chia sẻ vào nhóm chat gia đình để xem phản ứng.',
+        id: '12 ronde pilihan ekstrem menganalisis gaya hubungan keluargamu. Bagikan di grup keluarga untuk reaksi garanti.',
+      },
+      thumbnail: 'p3_game_family_balance.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['밸런스게임', '가족', '명절', '극한선택', '가족단톡'],
+        en: ['balance game', 'family', 'holiday', 'extreme choice', 'family chat'],
+        ja: ['バランスゲーム', '家族', '帰省', '極限選択', '家族グループ'],
+        'zh-CN': ['平衡游戏', '家庭', '节日', '极限选择', '家庭群'],
+        'zh-TW': ['平衡遊戲', '家庭', '節日', '極限選擇', '家庭群'],
+        vi: ['trò cân bằng', 'gia đình', 'lễ tết', 'lựa chọn cực hạn', 'nhóm chat'],
+        id: ['permainan seimbang', 'keluarga', 'liburan', 'pilihan ekstrem', 'grup keluarga'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -9155,6 +9197,62 @@ export default async function TestPage({ params }: Props) {
             questions={phase3RelationshipEnergyQuestions}
             results={phase3RelationshipEnergyResults}
             questionCount={phase3RelationshipEnergyQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-family-balance-game') {
+      const { phase3FamilyBalanceGameQuestions, phase3FamilyBalanceGameResults } = await import('@/lib/phase3FamilyBalanceGameData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-family-balance-game',
+        title: {
+          ko: '밸런스 게임 — 가족 극한편',
+          en: 'Balance Game — Family Extreme',
+          ja: 'バランスゲーム 家族編（極限）',
+          'zh-CN': '平衡游戏 · 家庭篇（极限）',
+          'zh-TW': '平衡遊戲 · 家庭篇（極限）',
+          vi: 'Trò cân bằng — gia đình (cực hạn)',
+          id: 'Permainan seimbang — keluarga (ekstrem)',
+        },
+        description: {
+          ko: '12라운드 극한 2지선다로 나의 가족 관계 스타일을 분석합니다. 가족 단톡방에 공유하면 선택이 달라 반응이 터집니다.',
+          en: '12 rounds of extreme A/B choices reveal your family relationship style. Share in the family chat for guaranteed reactions.',
+          ja: '12ラウンドの極限2択で家族関係スタイルを分析。家族グループチャットで共有すると反応が炸裂します。',
+          'zh-CN': '12轮极限二选一分析你的家庭关系风格。分享到家庭群聊，选择不同反应保证炸裂。',
+          'zh-TW': '12輪極限二選一分析你的家庭關係風格。分享到家庭群聊，選擇不同反應保證炸裂。',
+          vi: '12 vòng chọn cực hạn phân tích kiểu quan hệ gia đình. Chia sẻ vào nhóm chat gia đình để xem phản ứng.',
+          id: '12 ronde pilihan ekstrem menganalisis gaya hubungan keluargamu. Bagikan di grup keluarga untuk reaksi garanti.',
+        },
+        thumbnail: 'p3_game_family_balance.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: {
+          ko: ['밸런스게임', '가족', '명절', '극한선택', '가족단톡'],
+          en: ['balance game', 'family', 'holiday', 'extreme choice', 'family chat'],
+          ja: ['バランスゲーム', '家族', '帰省', '極限選択', '家族グループ'],
+          'zh-CN': ['平衡游戏', '家庭', '节日', '极限选择', '家庭群'],
+          'zh-TW': ['平衡遊戲', '家庭', '節日', '極限選擇', '家庭群'],
+          vi: ['trò cân bằng', 'gia đình', 'lễ tết', 'lựa chọn cực hạn', 'nhóm chat'],
+          id: ['permainan seimbang', 'keluarga', 'liburan', 'pilihan ekstrem', 'grup keluarga'],
+        },
+      };
+
+      return (
+        <>
+          <Phase3FamilyBalanceGameTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3FamilyBalanceGameQuestions}
+            results={phase3FamilyBalanceGameResults}
+            questionCount={phase3FamilyBalanceGameQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

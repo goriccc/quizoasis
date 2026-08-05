@@ -11053,6 +11053,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3FamilyBalanceGameTest": {
+    "startMessage": {
+      "line1": "Haruskah dilakukan hanya karena keluarga? Atau keluarga pun punya batas?",
+      "line2": "Tidak ada pertanyaan yang mudah. Tidak ada jawaban benar. Hanya pilihanmu di 12 ronde yang menunjukkan siapa kamu dalam keluarga.",
+      "line3": "Share di grup keluarga. Satu keluarga, hasil bisa sangat beda. Dijamin percakapan dimulai dengan \"Kok kamu pilih ITU?!\"",
+      "line4": "12 ronde. Tidak bisa lari.",
+      "line5": "Mulai Balance Game Keluarga Ekstrem 🏠 Siapkan diri dulu"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Balance Game Keluarga Ekstrem)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "familyStyleType": "Gaya keluarga",
+      "familyKeywords": "Kata kunci relasi",
+      "familySays": "Yang keluarga katakan tentangmu",
+      "familyCautions": "Peringatan untuk tipe ini",
+      "typeStrengths": "Kelebihan tipe ini",
+      "oneLiner": "Satu kalimat",
+      "certificationPhrase": "Frasa sertifikasi",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lain"
+    },
+    "shareMessages": {
+      "default": "Hasil balance game keluarga ekstrem: {type}! 🏠 Share di grup keluarga → pilihan beda dijamin bikin \"Kok kamu pilih ITU?!\"",
+      "kakao": "Hasil balance game keluarga ekstrem: {type}! 🏠 Share di grup keluarga",
+      "wechat": "Hasil balance game keluarga ekstrem: {type}! 🏠 Coba bareng keluarga",
+      "whatsapp": "Hasil balance game keluarga ekstrem: {type}! 🏠 Kamu juga coba",
+      "telegram": "Hasil balance game keluarga ekstrem: {type}! 🏠 Tipe kamu apa?",
+      "line": "Hasil balance game keluarga ekstrem: {type}! 🏠 Bandingkan dengan keluarga",
+      "startDefault": "Balance Game — Keluarga Ekstrem 🏠 12 ronde pilihan ekstrem",
+      "startKakao": "Balance Game — Keluarga Ekstrem 🏠 12 ronde pilihan ekstrem",
+      "startWechat": "Balance Game — Keluarga Ekstrem 🏠 12 ronde pilihan ekstrem",
+      "startWhatsapp": "Balance Game — Keluarga Ekstrem 🏠 12 ronde pilihan ekstrem",
+      "startTelegram": "Balance Game — Keluarga Ekstrem 🏠 12 ronde pilihan ekstrem",
+      "startLine": "Balance Game — Keluarga Ekstrem 🏠 12 ronde pilihan ekstrem"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",
