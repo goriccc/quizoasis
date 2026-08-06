@@ -11209,6 +11209,76 @@
       "popularTestsTop5": "🔥 今人気のテスト TOP5"
     }
   },
+  "phase3ExamStudyTypeTest": {
+    "startMessage": {
+      "line1": "試験期間、あなたはどんな人？",
+      "line2": "勉強を始めようと座ったらまず机の整理をする人、試験2日前まで何もせず前日の夜を丸ごと使う人、1ページ理解できないと絶対先に進めない人がいます。",
+      "line3": "どの方法が優れているわけではありません。人それぞれに合う方式があり、それを知ればより効率的に、疲れにくく勉強できます。12の勉強シチュエーションで学習スタイルと最適な勉強法を分析します。",
+      "line4": "※ 各シチュエーションで実際の自分の行動パターンに最も近いものを選んでください。",
+      "line5": "自分の勉強タイプを見つける 📚 正直に始める"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の試験勉強タイプ）",
+      "goToTest": "テストに進む",
+      "startTest": "自分の勉強タイプを見つける 📚 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "studySummary": "勉強タイプ要約",
+      "studyType": "勉強タイプ",
+      "studyKeywordsTitle": "勉強キーワード",
+      "domainAnalysisTitle": "6領域別スコア",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "startStyleDomain": "勉強開始方式",
+      "focusEnvDomain": "集中環境",
+      "studyMethodDomain": "勉強方法",
+      "slumpCopingDomain": "スランプ・危機対処",
+      "examEvePatternDomain": "試験前日パターン",
+      "resultAcceptanceDomain": "結果受容方式",
+      "strongestDomain": "勉強スタイルが最も際立つ領域",
+      "boostDomain": "今補強すると良い領域",
+      "strengthsTitle": "このタイプの強み",
+      "cautionsTitle": "このタイプの弱点",
+      "studyTipTitle": "このタイプに合う勉強法",
+      "typicalPhraseTitle": "このタイプの一言",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の勉強タイプ: {type}! 📚 友達に送って比べてみて → 私このタイプ、当たり ㅋㅋ",
+      "kakao": "私の勉強タイプ: {type}! 📚 友達に送って比べてみて",
+      "wechat": "私の勉強タイプ: {type}! 📚 友達と一緒にやってみて",
+      "whatsapp": "私の勉強タイプ: {type}! 📚 あなたもやってみて",
+      "telegram": "私の勉強タイプ: {type}! 📚 あなたはどのタイプ？",
+      "line": "私の勉強タイプ: {type}! 📚 友達と比べてみて",
+      "startDefault": "私の試験勉強タイプ 📚 12の勉強シチュエーション",
+      "startKakao": "私の試験勉強タイプ 📚 12の勉強シチュエーション",
+      "startWechat": "私の試験勉強タイプ 📚 12の勉強シチュエーション",
+      "startWhatsapp": "私の試験勉強タイプ 📚 12の勉強シチュエーション",
+      "startTelegram": "私の試験勉強タイプ 📚 12の勉強シチュエーション",
+      "startLine": "私の試験勉強タイプ 📚 12の勉強シチュエーション"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

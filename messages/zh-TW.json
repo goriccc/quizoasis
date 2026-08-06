@@ -10690,6 +10690,76 @@
       "popularTestsTop5": "🔥 熱門測驗 TOP5"
     }
   },
+  "phase3ExamStudyTypeTest": {
+    "startMessage": {
+      "line1": "考試期間，你是哪種人？",
+      "line2": "有人坐下想學習卻先整理書桌，有人直到考試前兩天什麼都不做然後在考前一晚通宵，有人一頁不理解就絕對無法翻頁。",
+      "line3": "沒有哪種方式更優秀。每個人有適合自己的方式，知道它就能更高效、更少疲憊地學習。12種學習情境分析你的學習風格與最佳學習方法。",
+      "line4": "※ 請在每種情境中選擇最接近你實際行為模式的選項。",
+      "line5": "找到我的學習類型 📚 誠實開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區域（我的考試學習類型）",
+      "goToTest": "前往測試",
+      "startTest": "找到我的學習類型 📚 誠實開始",
+      "shareResult": "分享結果",
+      "retakeTest": "重新測試",
+      "otherTests": "查看其他測試",
+      "similarTests": "類似測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "studySummary": "學習類型摘要",
+      "studyType": "學習類型",
+      "studyKeywordsTitle": "學習關鍵詞",
+      "domainAnalysisTitle": "6個領域得分",
+      "totalScore": "總分",
+      "scoreUnit": "分",
+      "startStyleDomain": "學習開始方式",
+      "focusEnvDomain": "專注環境",
+      "studyMethodDomain": "學習方法",
+      "slumpCopingDomain": "低谷與危機應對",
+      "examEvePatternDomain": "考前一晚模式",
+      "resultAcceptanceDomain": "結果接受方式",
+      "strongestDomain": "學習風格最突出的領域",
+      "boostDomain": "現在值得加強的領域",
+      "strengthsTitle": "此類型的優勢",
+      "cautionsTitle": "此類型的弱點",
+      "studyTipTitle": "適合此類型的學習方法",
+      "typicalPhraseTitle": "此類型常說的一句話",
+      "certificationPhrase": "認證語",
+      "oneLiner": "一句話評價"
+    },
+    "shareMessages": {
+      "default": "我的學習類型：{type}！📚 發給朋友比比看 → 我是這個類型，太準了哈哈",
+      "kakao": "我的學習類型：{type}！📚 發給朋友比比看",
+      "wechat": "我的學習類型：{type}！📚 和朋友一起測吧",
+      "whatsapp": "我的學習類型：{type}！📚 你也來測測",
+      "telegram": "我的學習類型：{type}！📚 你是什麼類型？",
+      "line": "我的學習類型：{type}！📚 和朋友比比看",
+      "startDefault": "我的考試學習類型 📚 12種學習情境",
+      "startKakao": "我的考試學習類型 📚 12種學習情境",
+      "startWechat": "我的考試學習類型 📚 12種學習情境",
+      "startWhatsapp": "我的考試學習類型 📚 12種學習情境",
+      "startTelegram": "我的考試學習類型 📚 12種學習情境",
+      "startLine": "我的考試學習類型 📚 12種學習情境"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "樂觀主義不是性格，而是思維習慣。",

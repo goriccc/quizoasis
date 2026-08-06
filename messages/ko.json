@@ -13524,6 +13524,76 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ExamStudyTypeTest": {
+    "startMessage": {
+      "line1": "시험 기간, 당신은 어떤 사람인가요?",
+      "line2": "공부를 시작하려고 앉았는데 책상 정리부터 하는 사람이 있고, 시험 이틀 전까지 아무것도 안 하다가 전날 밤을 통째로 태우는 사람이 있고, 한 페이지를 이해하지 못하면 절대 넘어가지 못하는 사람이 있습니다.",
+      "line3": "어느 방식이 더 뛰어난 게 아닙니다. 다만 각자에게 맞는 방식이 있고 그것을 알면 더 효율적으로, 덜 지치면서 공부할 수 있습니다. 12가지 공부 상황으로 나의 학습 스타일과 최적 공부법을 분석합니다.",
+      "line4": "※ 각 상황에서 실제 나의 행동 패턴에 가장 가까운 것을 선택하세요.",
+      "line5": "내 공부 유형 찾기 📚 솔직하게 시작"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 시험 공부 유형)",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 공부 유형 찾기 📚 솔직하게 시작",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "similarTests": "유사한 다른 테스트",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "studySummary": "공부 유형 요약",
+      "studyType": "공부 유형",
+      "studyKeywordsTitle": "공부 키워드",
+      "domainAnalysisTitle": "6개 영역별 점수",
+      "totalScore": "총점",
+      "scoreUnit": "점",
+      "startStyleDomain": "공부 시작 방식",
+      "focusEnvDomain": "집중 환경",
+      "studyMethodDomain": "공부 방법",
+      "slumpCopingDomain": "슬럼프·위기 대처",
+      "examEvePatternDomain": "시험 전날 패턴",
+      "resultAcceptanceDomain": "결과 수용 방식",
+      "strongestDomain": "공부 스타일이 가장 뚜렷한 영역",
+      "boostDomain": "지금 보완하면 좋은 영역",
+      "strengthsTitle": "이 유형의 강점",
+      "cautionsTitle": "이 유형의 약점",
+      "studyTipTitle": "이 유형에게 맞는 공부법",
+      "typicalPhraseTitle": "이 유형의 한마디",
+      "certificationPhrase": "인증 문구",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "내 공부 유형: {type}! 📚 친구한테 보내서 비교해봐 → 나 이 유형이라 맞음 ㅋㅋ",
+      "kakao": "내 공부 유형: {type}! 📚 친구한테 보내서 비교해봐",
+      "wechat": "내 공부 유형: {type}! 📚 친구랑 같이 해봐",
+      "whatsapp": "내 공부 유형: {type}! 📚 너도 해봐",
+      "telegram": "내 공부 유형: {type}! 📚 너는 어떤 유형?",
+      "line": "내 공부 유형: {type}! 📚 친구랑 비교해봐",
+      "startDefault": "나의 시험 공부 유형 📚 12가지 공부 상황",
+      "startKakao": "나의 시험 공부 유형 📚 12가지 공부 상황",
+      "startWechat": "나의 시험 공부 유형 📚 12가지 공부 상황",
+      "startWhatsapp": "나의 시험 공부 유형 📚 12가지 공부 상황",
+      "startTelegram": "나의 시험 공부 유형 📚 12가지 공부 상황",
+      "startLine": "나의 시험 공부 유형 📚 12가지 공부 상황"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "낙관주의는 기질이 아니라 사고 습관입니다.",

@@ -11221,6 +11221,76 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3ExamStudyTypeTest": {
+    "startMessage": {
+      "line1": "Saat musim ujian, kamu tipe orang seperti apa?",
+      "line2": "Ada yang duduk belajar lalu mulai merapikan meja. Ada yang tidak belajar sampai dua hari sebelum ujian lalu begadang semalaman. Ada yang tidak bisa lanjut sebelum benar-benar paham satu halaman.",
+      "line3": "Tidak ada cara yang lebih unggul. Setiap orang punya gaya yang cocok, dan mengetahuinya membantu belajar lebih efisien dengan lebih sedikit kelelahan. 12 situasi belajar menganalisis gaya belajar dan metode optimalmu.",
+      "line4": "※ Pilih opsi yang paling dekat dengan pola perilaku nyata kamu di setiap situasi.",
+      "line5": "Temukan Tipe Belajarku 📚 Mulai Jujur"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Tes Tipe Belajar Ujian)",
+      "goToTest": "Ke tes",
+      "startTest": "Temukan Tipe Belajarku 📚 Mulai Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "studySummary": "Ringkasan tipe belajar",
+      "studyType": "Tipe belajar",
+      "studyKeywordsTitle": "Kata kunci belajar",
+      "domainAnalysisTitle": "Skor 6 domain",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "startStyleDomain": "Gaya memulai belajar",
+      "focusEnvDomain": "Lingkungan fokus",
+      "studyMethodDomain": "Metode belajar",
+      "slumpCopingDomain": "Menghadapi slump & krisis",
+      "examEvePatternDomain": "Pola malam sebelum ujian",
+      "resultAcceptanceDomain": "Cara menerima hasil",
+      "strongestDomain": "Domain gaya belajar paling menonjol",
+      "boostDomain": "Domain yang perlu diperbaiki sekarang",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionsTitle": "Kelemahan tipe ini",
+      "studyTipTitle": "Metode belajar untuk tipe ini",
+      "typicalPhraseTitle": "Kalimat khas tipe ini",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Tipe belajar-ku: {type}! 📚 Kirim ke teman dan bandingkan → Aku tipe ini, bener banget wkwk",
+      "kakao": "Tipe belajar-ku: {type}! 📚 Kirim ke teman dan bandingkan",
+      "wechat": "Tipe belajar-ku: {type}! 📚 Coba bareng teman",
+      "whatsapp": "Tipe belajar-ku: {type}! 📚 Kamu juga coba",
+      "telegram": "Tipe belajar-ku: {type}! 📚 Kamu tipe apa?",
+      "line": "Tipe belajar-ku: {type}! 📚 Bandingkan dengan teman",
+      "startDefault": "Tipe Belajar Ujianku 📚 12 situasi belajar",
+      "startKakao": "Tipe Belajar Ujianku 📚 12 situasi belajar",
+      "startWechat": "Tipe Belajar Ujianku 📚 12 situasi belajar",
+      "startWhatsapp": "Tipe Belajar Ujianku 📚 12 situasi belajar",
+      "startTelegram": "Tipe Belajar Ujianku 📚 12 situasi belajar",
+      "startLine": "Tipe Belajar Ujianku 📚 12 situasi belajar"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

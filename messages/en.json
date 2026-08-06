@@ -11230,6 +11230,76 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3ExamStudyTypeTest": {
+    "startMessage": {
+      "line1": "During exam season, what kind of person are you?",
+      "line2": "Some people sit down to study and start by organizing their desk. Some do nothing until two days before the exam, then burn the whole night before. Some cannot move on until they fully understand one page.",
+      "line3": "No method is inherently better. Each person has a style that fits them, and knowing it helps you study more efficiently with less burnout. 12 study situations analyze your learning style and optimal study methods.",
+      "line4": "※ Choose the option closest to your actual behavior in each situation.",
+      "line5": "Find My Study Type 📚 Start Honestly"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Exam Study Type Test)",
+      "goToTest": "Go to test",
+      "startTest": "Find My Study Type 📚 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "studySummary": "Study type summary",
+      "studyType": "Study type",
+      "studyKeywordsTitle": "Study keywords",
+      "domainAnalysisTitle": "Domain scores (6 areas)",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "startStyleDomain": "Study start style",
+      "focusEnvDomain": "Focus environment",
+      "studyMethodDomain": "Study method",
+      "slumpCopingDomain": "Slump & crisis coping",
+      "examEvePatternDomain": "Night-before-exam pattern",
+      "resultAcceptanceDomain": "Result acceptance",
+      "strongestDomain": "Area where your study style stands out most",
+      "boostDomain": "Area worth improving now",
+      "strengthsTitle": "Strengths of this type",
+      "cautionsTitle": "Weaknesses of this type",
+      "studyTipTitle": "Study methods for this type",
+      "typicalPhraseTitle": "Typical phrase of this type",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My study type: {type}! 📚 Send it to a friend and compare → I'm this type, so accurate lol",
+      "kakao": "My study type: {type}! 📚 Send it to a friend and compare",
+      "wechat": "My study type: {type}! 📚 Try it with a friend",
+      "whatsapp": "My study type: {type}! 📚 You try it too",
+      "telegram": "My study type: {type}! 📚 What type are you?",
+      "line": "My study type: {type}! 📚 Compare with a friend",
+      "startDefault": "My Exam Study Type 📚 12 study situations",
+      "startKakao": "My Exam Study Type 📚 12 study situations",
+      "startWechat": "My Exam Study Type 📚 12 study situations",
+      "startWhatsapp": "My Exam Study Type 📚 12 study situations",
+      "startTelegram": "My Exam Study Type 📚 12 study situations",
+      "startLine": "My Exam Study Type 📚 12 study situations"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",
