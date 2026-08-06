@@ -28,8 +28,9 @@ export interface QuizImageParseResult {
 
 const SEPARATOR_RE = /^_{5,}$/;
 const QUESTION_RE = /^Q(\d+)\.\s*(.+)$/;
-const OPTION_RE = /^[•*·]\s*([A-Da-d])\.\s*(?:🖼️\s*)?(.+)$/;
-const PROMPT_HEADER_RE = /^\[Q(\d+)\s*(.+?)\]$/;
+const ROUND_QUESTION_RE = /^Round\s+(\d+)\.\s*(.+)$/i;
+const OPTION_RE = /^[•*·]\s*([A-Da-d])\.\s*(?:🖼️\s*)?(.+?)(?:\s*→\s*\d+점)?$/;
+const PROMPT_HEADER_RE = /^\[(?:Q|R)(\d+)\s*(.+?)\]$/i;
 const PROMPT_HEADER_CHOICE_RE = /선택지\s*([A-Da-d])\s*이미지\s*프롬프트/i;
 const PROMPT_HEADER_INLINE_RE = /선택지\s*이미지\s*프롬프트/i;
 const PROMPT_HEADER_BODY_RE = /이미지\s*프롬프트|총면/;
@@ -42,7 +43,12 @@ function isSkippablePromptContextLine(line: string): boolean {
 }
 
 function isStructuralLine(line: string): boolean {
-  return QUESTION_RE.test(line) || PROMPT_HEADER_RE.test(line) || OPTION_RE.test(line);
+  return (
+    QUESTION_RE.test(line) ||
+    ROUND_QUESTION_RE.test(line) ||
+    PROMPT_HEADER_RE.test(line) ||
+    OPTION_RE.test(line)
+  );
 }
 
 export function normalizeQuizImagePrefix(raw: string): string {
@@ -144,14 +150,16 @@ export function parseQuizImagePrompts(raw: string, prefix = ''): QuizImageParseR
 
   for (const line of lines) {
     const qMatch = line.match(QUESTION_RE);
-    if (qMatch) {
+    const roundMatch = !qMatch ? line.match(ROUND_QUESTION_RE) : null;
+    const questionMatch = qMatch ?? roundMatch;
+    if (questionMatch) {
       flushAwaitingPrompt('프롬프트 본문이 없습니다');
       mode = 'question';
       promptHeaderFace = false;
       legacyInlinePrompts = false;
-      const num = Number(qMatch[1]);
+      const num = Number(questionMatch[1]);
       const q = ensureQuestion(num);
-      q.questionText = qMatch[2]!.trim();
+      q.questionText = questionMatch[2]!.trim();
       continue;
     }
 
