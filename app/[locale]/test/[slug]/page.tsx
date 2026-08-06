@@ -317,6 +317,11 @@ const Phase3LoveExpectationDiagnosisTestClient = dynamic(
   { ssr: false }
 );
 
+const Phase3LoveLanguageAnalysisTestClient = dynamic(
+  () => import('@/components/Phase3LoveLanguageAnalysisTestClient'),
+  { ssr: false }
+);
+
 const Phase3ChangeAdaptabilityTestClient = dynamic(
   () => import('@/components/Phase3ChangeAdaptabilityTestClient'),
   { ssr: false }
@@ -2533,6 +2538,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛期待值', '戀愛風格', '情侶', '自尊', '戀愛諮詢'],
         vi: ['kỳ vọng tình yêu', 'phong cách hẹn hò', 'cặp đôi', 'lòng tự trọng', 'tư vấn tình cảm'],
         id: ['ekspektasi cinta', 'gaya pacaran', 'pasangan', 'harga diri', 'saran hubungan'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-language-analysis') {
+    test = {
+      slug: 'phase3-love-language-analysis',
+      title: {
+        ko: '나의 연애 언어 심층 분석',
+        en: 'My Love Language Deep Analysis',
+        ja: '私の恋愛言語深層分析',
+        'zh-CN': '我的恋爱语言深度分析',
+        'zh-TW': '我的戀愛語言深度分析',
+        vi: 'Phân Tích Sâu Ngôn Ngữ Tình Yêu của Tôi',
+        id: 'Analisis Mendalam Bahasa Cinta-ku',
+      },
+      description: {
+        ko: '12가지 질문으로 내가 사랑을 표현하고 받아들이는 언어를 분석합니다. 5가지 연애 언어별 점수와 이상적 연애 패턴까지 확인하세요.',
+        en: 'Analyze how you express and receive love with 12 questions. See scores across 5 love languages plus your ideal dating pattern.',
+        ja: '12の質問で愛を表現し受け取る言語を分析。5つの恋愛言語スコアと理想の恋愛パターンまで確認。',
+        'zh-CN': '通过12个问题分析你表达和接收爱的语言。含5种恋爱语言得分与理想恋爱模式。',
+        'zh-TW': '透過12個問題分析你表達和接收愛的語言。含5種戀愛語言得分與理想戀愛模式。',
+        vi: 'Phân tích cách bạn thể hiện và nhận tình yêu qua 12 câu hỏi. Xem điểm 5 ngôn ngữ tình yêu và mẫu hẹn hò lý tưởng.',
+        id: 'Analisis cara kamu mengekspresikan dan menerima cinta lewat 12 pertanyaan. Lihat skor 5 bahasa cinta dan pola pacaran ideal.',
+      },
+      thumbnail: 'p3_test_love_language_analysis.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애언어', '사랑의언어', '커플', '연애스타일', '게리채프먼'],
+        en: ['love language', 'five love languages', 'couple', 'dating style', 'Gary Chapman'],
+        ja: ['恋愛言語', '愛の言語', 'カップル', '恋愛スタイル', 'ゲーリー・チャップマン'],
+        'zh-CN': ['恋爱语言', '爱的语言', '情侣', '恋爱风格', '盖瑞查普曼'],
+        'zh-TW': ['戀愛語言', '愛的語言', '情侶', '戀愛風格', '蓋瑞查普曼'],
+        vi: ['ngôn ngữ tình yêu', 'ngôn ngữ yêu thương', 'cặp đôi', 'phong cách hẹn hò', 'Gary Chapman'],
+        id: ['bahasa cinta', 'love language', 'pasangan', 'gaya pacaran', 'Gary Chapman'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -9645,6 +9687,62 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveExpectationDiagnosisQuestions}
             results={phase3LoveExpectationDiagnosisResults}
             questionCount={phase3LoveExpectationDiagnosisQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-love-language-analysis') {
+      const { phase3LoveLanguageAnalysisQuestions, phase3LoveLanguageAnalysisResults } = await import('@/lib/phase3LoveLanguageAnalysisData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-love-language-analysis',
+        title: {
+          ko: '나의 연애 언어 심층 분석',
+          en: 'My Love Language Deep Analysis',
+          ja: '私の恋愛言語深層分析',
+          'zh-CN': '我的恋爱语言深度分析',
+          'zh-TW': '我的戀愛語言深度分析',
+          vi: 'Phân Tích Sâu Ngôn Ngữ Tình Yêu của Tôi',
+          id: 'Analisis Mendalam Bahasa Cinta-ku',
+        },
+        description: {
+          ko: '12가지 질문으로 내가 사랑을 표현하고 받아들이는 언어를 분석합니다. 5가지 연애 언어별 점수와 이상적 연애 패턴까지 확인하세요.',
+          en: 'Analyze how you express and receive love with 12 questions. See scores across 5 love languages plus your ideal dating pattern.',
+          ja: '12の質問で愛を表現し受け取る言語を分析。5つの恋愛言語スコアと理想の恋愛パターンまで確認。',
+          'zh-CN': '通过12个问题分析你表达和接收爱的语言。含5种恋爱语言得分与理想恋爱模式。',
+          'zh-TW': '透過12個問題分析你表達和接收愛的語言。含5種戀愛語言得分與理想戀愛模式。',
+          vi: 'Phân tích cách bạn thể hiện và nhận tình yêu qua 12 câu hỏi. Xem điểm 5 ngôn ngữ tình yêu và mẫu hẹn hò lý tưởng.',
+          id: 'Analisis cara kamu mengekspresikan dan menerima cinta lewat 12 pertanyaan. Lihat skor 5 bahasa cinta dan pola pacaran ideal.',
+        },
+        thumbnail: 'p3_test_love_language_analysis.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: {
+          ko: ['연애언어', '사랑의언어', '커플', '연애스타일', '게리채프먼'],
+          en: ['love language', 'five love languages', 'couple', 'dating style', 'Gary Chapman'],
+          ja: ['恋愛言語', '愛の言語', 'カップル', '恋愛スタイル', 'ゲーリー・チャップマン'],
+          'zh-CN': ['恋爱语言', '爱的语言', '情侣', '恋爱风格', '盖瑞查普曼'],
+          'zh-TW': ['戀愛語言', '愛的語言', '情侶', '戀愛風格', '蓋瑞查普曼'],
+          vi: ['ngôn ngữ tình yêu', 'ngôn ngữ yêu thương', 'cặp đôi', 'phong cách hẹn hò', 'Gary Chapman'],
+          id: ['bahasa cinta', 'love language', 'pasangan', 'gaya pacaran', 'Gary Chapman'],
+        },
+      };
+
+      return (
+        <>
+          <Phase3LoveLanguageAnalysisTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3LoveLanguageAnalysisQuestions}
+            results={phase3LoveLanguageAnalysisResults}
+            questionCount={phase3LoveLanguageAnalysisQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

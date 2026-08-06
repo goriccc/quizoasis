@@ -11362,6 +11362,79 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3LoveLanguageAnalysisTest": {
+    "startMessage": {
+      "line1": "Cách yêu của mỗi người là khác nhau.",
+      "line2": "Nhà tâm lý học Gary Chapman nói mỗi người có ngôn ngữ tình yêu riêng—lời nói, thời gian bên nhau, hành động quan tâm, chạm hoặc quà tặng.",
+      "line3": "Vấn đề xảy ra khi ngôn ngữ khác nhau. Bạn đang yêu rõ ràng nhưng đối phương không cảm nhận.",
+      "line4": "12 câu hỏi phân tích cách bạn thể hiện và nhận tình yêu. Cặp đôi nên làm cùng nhau—kết quả khác nhau có thể mở cuộc trò chuyện quan trọng.",
+      "line5": "Tìm Ngôn Ngữ Tình Yêu Của Tôi 💗 Bắt Đầu Thật Lòng",
+      "note": "※ Hãy trả lời thật nhất dựa trên đang yêu hoặc kinh nghiệm yêu đương."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Phân Tích Ngôn Ngữ Tình Yêu)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Tìm Ngôn Ngữ Tình Yêu Của Tôi 💗 Bắt Đầu Thật Lòng",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "languageSummary": "Tóm tắt ngôn ngữ tình yêu",
+      "languageType": "Loại ngôn ngữ tình yêu",
+      "loveKeywordsTitle": "Từ khóa tình yêu",
+      "domainAnalysisTitle": "Điểm 5 ngôn ngữ",
+      "totalScore": "Tổng điểm",
+      "scoreUnit": " điểm",
+      "wordsAffirmationDomain": "Lời khẳng định",
+      "qualityTimeDomain": "Thời gian chất lượng",
+      "receivingGiftsDomain": "Quà tặng & bất ngờ",
+      "actsOfServiceDomain": "Hành động phục vụ",
+      "physicalTouchDomain": "Thể chạm",
+      "conflictDevotionDomain": "Xung đột & cống hiến",
+      "strongestDomain": "Ngôn ngữ tình yêu chính",
+      "boostDomain": "Ngôn ngữ bạn kỳ vọng ít nhất từ đối phương",
+      "strengthsTitle": "Điểm mạnh của loại này",
+      "cautionsTitle": "Lưu ý của loại này",
+      "lovePatternTitle": "Mẫu yêu của loại này",
+      "compatiblePartnerTitle": "Người yêu phù hợp",
+      "hardMomentTitle": "Khoảnh khắc khó trong quan hệ",
+      "expressLoveMethodTitle": "Cách loại này thể hiện tình yêu",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "Ngôn ngữ tình yêu của tôi: {type}! 💗 Làm cùng người yêu hoặc bạn bè—khác nhau là bắt đầu trò chuyện → Tôi yêu thế này. Còn bạn?",
+      "kakao": "Ngôn ngữ tình yêu của tôi: {type}! 💗 Làm cùng người yêu hoặc bạn bè nhé",
+      "wechat": "Ngôn ngữ tình yêu của tôi: {type}! 💗 Cặp đôi thì làm cùng nhau",
+      "whatsapp": "Ngôn ngữ tình yêu của tôi: {type}! 💗 Bạn cũng thử nhé",
+      "telegram": "Ngôn ngữ tình yêu của tôi: {type}! 💗 Bạn loại nào?",
+      "line": "Ngôn ngữ tình yêu của tôi: {type}! 💗 So sánh với bạn bè",
+      "startDefault": "Phân Tích Ngôn Ngữ Tình Yêu 💗 12 câu hỏi",
+      "startKakao": "Phân Tích Ngôn Ngữ Tình Yêu 💗 12 câu hỏi",
+      "startWechat": "Phân Tích Ngôn Ngữ Tình Yêu 💗 12 câu hỏi",
+      "startWhatsapp": "Phân Tích Ngôn Ngữ Tình Yêu 💗 12 câu hỏi",
+      "startTelegram": "Phân Tích Ngôn Ngữ Tình Yêu 💗 12 câu hỏi",
+      "startLine": "Phân Tích Ngôn Ngữ Tình Yêu 💗 12 câu hỏi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Lạc quan không phải tính cách — đó là thói quen suy nghĩ.",

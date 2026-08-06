@@ -11362,6 +11362,79 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3LoveLanguageAnalysisTest": {
+    "startMessage": {
+      "line1": "Cara mencintai setiap orang berbeda.",
+      "line2": "Psikolog Gary Chapman mengatakan setiap orang punya bahasa cinta berbeda—kata-kata, waktu bersama, tindakan peduli, sentuhan, atau hadiah.",
+      "line3": "Masalah muncul saat bahasa kalian berbeda. Kamu jelas mencintai tapi pasangan tidak merasakannya.",
+      "line4": "12 pertanyaan menganalisis bagaimana kamu mengekspresikan dan menerima cinta. Pasangan sebaiknya coba berdua—hasil berbeda bisa jadi awal percakapan penting.",
+      "line5": "Temukan Bahasa Cintaku 💗 Mulai Jujur",
+      "note": "※ Jawab sejujur mungkin berdasarkan sedang pacaran atau pengalaman cinta."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Analisis Bahasa Cinta)",
+      "goToTest": "Ke tes",
+      "startTest": "Temukan Bahasa Cintaku 💗 Mulai Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "languageSummary": "Ringkasan bahasa cinta",
+      "languageType": "Tipe bahasa cinta",
+      "loveKeywordsTitle": "Kata kunci cinta",
+      "domainAnalysisTitle": "Skor 5 bahasa cinta",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "wordsAffirmationDomain": "Kata afirmasi",
+      "qualityTimeDomain": "Waktu berkualitas",
+      "receivingGiftsDomain": "Hadiah & kejutan",
+      "actsOfServiceDomain": "Tindakan pelayanan",
+      "physicalTouchDomain": "Sentuhan fisik",
+      "conflictDevotionDomain": "Konflik & gaya pengabdian",
+      "strongestDomain": "Bahasa cinta utama",
+      "boostDomain": "Bahasa dengan harapan terendah pada pasangan",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionsTitle": "Hal yang perlu diwaspadai",
+      "lovePatternTitle": "Pola cinta tipe ini",
+      "compatiblePartnerTitle": "Pasangan yang cocok",
+      "hardMomentTitle": "Momen sulit dalam hubungan",
+      "expressLoveMethodTitle": "Cara tipe ini mengekspresikan cinta",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Bahasa cintaku: {type}! 💗 Coba bareng pasangan atau teman—beda hasil jadi obrolan → Aku mencintai begini. Kamu?",
+      "kakao": "Bahasa cintaku: {type}! 💗 Coba bareng pasangan atau teman",
+      "wechat": "Bahasa cintaku: {type}! 💗 Pasangan sebaiknya coba berdua",
+      "whatsapp": "Bahasa cintaku: {type}! 💗 Kamu juga coba",
+      "telegram": "Bahasa cintaku: {type}! 💗 Kamu tipe apa?",
+      "line": "Bahasa cintaku: {type}! 💗 Bandingkan dengan teman",
+      "startDefault": "Analisis Bahasa Cinta 💗 12 pertanyaan",
+      "startKakao": "Analisis Bahasa Cinta 💗 12 pertanyaan",
+      "startWechat": "Analisis Bahasa Cinta 💗 12 pertanyaan",
+      "startWhatsapp": "Analisis Bahasa Cinta 💗 12 pertanyaan",
+      "startTelegram": "Analisis Bahasa Cinta 💗 12 pertanyaan",
+      "startLine": "Analisis Bahasa Cinta 💗 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

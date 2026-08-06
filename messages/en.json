@@ -11371,6 +11371,79 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3LoveLanguageAnalysisTest": {
+    "startMessage": {
+      "line1": "Everyone loves differently.",
+      "line2": "Psychologist Gary Chapman said people express and receive love in different languages—through words, quality time, acts of care, physical touch, or gifts.",
+      "line3": "Problems arise when your languages differ. You may be loving clearly while your partner does not feel it.",
+      "line4": "12 questions analyze how you express and receive love. Couples should try together—different results can start an important conversation.",
+      "line5": "Find My Love Language 💗 Start Honestly",
+      "note": "※ Answer as honestly as possible based on being in a relationship or past dating experience."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Love Language Deep Analysis)",
+      "goToTest": "Go to test",
+      "startTest": "Find My Love Language 💗 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "languageSummary": "Love language summary",
+      "languageType": "Love language type",
+      "loveKeywordsTitle": "Love keywords",
+      "domainAnalysisTitle": "Scores by 5 love languages",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "wordsAffirmationDomain": "Words of affirmation",
+      "qualityTimeDomain": "Quality time",
+      "receivingGiftsDomain": "Gifts & surprises",
+      "actsOfServiceDomain": "Acts of service",
+      "physicalTouchDomain": "Physical touch",
+      "conflictDevotionDomain": "Conflict & devotion style",
+      "strongestDomain": "Primary love language",
+      "boostDomain": "Language you expect least from your partner",
+      "strengthsTitle": "Strengths of this type",
+      "cautionsTitle": "Cautions for this type",
+      "lovePatternTitle": "Love pattern of this type",
+      "compatiblePartnerTitle": "Compatible partner for this type",
+      "hardMomentTitle": "Hard moments in relationships",
+      "expressLoveMethodTitle": "How this type expresses love",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My love language: {type}! 💗 Try with a partner or friend—different results start great talks → This is how I love. What about you?",
+      "kakao": "My love language: {type}! 💗 Try with your partner or friend",
+      "wechat": "My love language: {type}! 💗 Couples should try together",
+      "whatsapp": "My love language: {type}! 💗 You try it too",
+      "telegram": "My love language: {type}! 💗 What type are you?",
+      "line": "My love language: {type}! 💗 Compare with a friend",
+      "startDefault": "My Love Language Deep Analysis 💗 12 questions",
+      "startKakao": "My Love Language Deep Analysis 💗 12 questions",
+      "startWechat": "My Love Language Deep Analysis 💗 12 questions",
+      "startWhatsapp": "My Love Language Deep Analysis 💗 12 questions",
+      "startTelegram": "My Love Language Deep Analysis 💗 12 questions",
+      "startLine": "My Love Language Deep Analysis 💗 12 questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",

@@ -1,0 +1,532 @@
+{
+  "questions": [
+    {
+      "q": {
+        "en": "When expressing affection to my partner, I:",
+        "ja": "恋人に愛情を表現するとき、私は？",
+        "zh-CN": "向恋人表达感情时，我会？",
+        "zh-TW": "向戀人表達感情時，我會？",
+        "vi": "Khi thể hiện tình cảm với người yêu, tôi:",
+        "id": "Saat mengekspresikan kasih sayang pada pasangan, aku:"
+      },
+      "opts": [
+        {
+          "en": "Verbal expression feels awkward. I do not often say I love you",
+          "ja": "言葉で表現するのが不自然。愛してるとあまり言わない",
+          "zh-CN": "用语言表达很别扭，不太常说爱你",
+          "zh-TW": "用語言表達很彆扭，不太常說愛你",
+          "vi": "Nói ra bằng lời cảm thấy ngượng. Tôi ít nói yêu",
+          "id": "Ungkapan verbal terasa canggung. Jarang bilang aku sayang kamu"
+        },
+        {
+          "en": "I express occasionally but need conscious effort. It does not come naturally",
+          "ja": "たまに表現するが意識しないと出ない。自然ではない",
+          "zh-CN": "偶尔表达但要刻意，不太自然",
+          "zh-TW": "偶爾表達但要刻意，不太自然",
+          "vi": "Thỉnh thoảng bày tỏ nhưng phải cố ý. Không tự nhiên",
+          "id": "Kadang mengekspresikan tapi perlu usaha sadar. Tidak alami"
+        },
+        {
+          "en": "I express when I think of it. I miss you and I like you come relatively naturally",
+          "ja": "思い出したら表現する。会いたい・好きが比較的自然",
+          "zh-CN": "想到就表达，想你、喜欢你比较自然",
+          "zh-TW": "想到就表達，想你、喜歡你比較自然",
+          "vi": "Nghĩ đến là nói. Nhớ em và thích em khá tự nhiên",
+          "id": "Ekspresikan saat teringat. Kangen dan suka relatif alami"
+        },
+        {
+          "en": "I express often. Praise, gratitude, and affection come naturally and I want the same",
+          "ja": "よく表現する。褒め・感謝・愛情が自然で相手にもそうしてほしい",
+          "zh-CN": "经常表达，赞美、感谢、 affection 很自然，也希望对方如此",
+          "zh-TW": "經常表達，讚美、感謝、 affection 很自然，也希望對方如此",
+          "vi": "Hay bày tỏ. Khen, cảm ơn, tình cảm tự nhiên và mong đối phương cũng vậy",
+          "id": "Sering mengekspresikan. Pujian, terima kasih, kasih sayang alami dan ingin hal sama"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "What I most want to hear from my partner:",
+        "ja": "恋人に最も聞きたい言葉は？",
+        "zh-CN": "我最想从恋人那里听到的话是？",
+        "zh-TW": "我最想從戀人那裡聽到的話是？",
+        "vi": "Điều tôi muốn nghe nhất từ người yêu:",
+        "id": "Hal yang paling ingin kudengar dari pasangan:"
+      },
+      "opts": [
+        {
+          "en": "I do not strongly need words. Actions matter more",
+          "ja": "特に言葉で何か聞きたいとは思わない。行動の方が重要",
+          "zh-CN": "不太需要言语，行动更重要",
+          "zh-TW": "不太需要言語，行動更重要",
+          "vi": "Không đặc biệt cần lời nói. Hành động quan trọng hơn",
+          "id": "Tidak terlalu butuh kata-kata. Tindakan lebih penting"
+        },
+        {
+          "en": "Acknowledging words like Good job sometimes stay with me",
+          "ja": "たまにお疲れ様・よくできたなど認めてくれる言葉が残る",
+          "zh-CN": "偶尔辛苦了、做得好之类的认可会留在心里",
+          "zh-TW": "偶爾辛苦了、做得好之類的認可會留在心裡",
+          "vi": "Thỉnh thoảng lời công nhận như làm tốt lắm còn trong đầu",
+          "id": "Kadang kata pengakuan seperti kerja bagus teringat"
+        },
+        {
+          "en": "Specific lines like I am glad you are here or You looked beautiful today make me happy",
+          "ja": "一緒にいてよかった・今日きれいだったなど具体的な言葉が嬉しい",
+          "zh-CN": "有你在真好、今天你好漂亮等具体表达让我开心",
+          "zh-TW": "有你在真好、今天你好漂亮等具體表達讓我開心",
+          "vi": "Câu cụ thể như có em thật tốt hoặc hôm nay em đẹp lắm làm vui",
+          "id": "Ungkapan spesifik seperti senang kamu ada atau hari ini kamu cantik membuat bahagia"
+        },
+        {
+          "en": "One affectionate word can change my day. No expression can make me anxious",
+          "ja": "愛情のある一言が一日を変える。表現がないと不安になることも",
+          "zh-CN": "一句 affectionate 的话能改变一天，没有表达会不安",
+          "zh-TW": "一句 affectionate 的話能改變一天，沒有表達會不安",
+          "vi": "Một lời tình cảm có thể đổi cả ngày. Không có lời bày tỏ có thể lo",
+          "id": "Satu kata penuh kasih bisa mengubah hariku. Tanpa ekspresi bisa cemas"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "My ideal date with my partner:",
+        "ja": "恋人との理想的なデートは？",
+        "zh-CN": "我和恋人的理想约会是？",
+        "zh-TW": "我和戀人的理想約會是？",
+        "vi": "Buổi hẹn lý tưởng với người yêu của tôi:",
+        "id": "Kencan ideal dengan pasangan:"
+      },
+      "opts": [
+        {
+          "en": "Doing what we each want and meeting occasionally. Daily togetherness feels burdensome",
+          "ja": "それぞれやりたいことをしてたまに会う。毎日一緒は負担",
+          "zh-CN": "各做各的偶尔见面，每天黏在一起有负担",
+          "zh-TW": "各做各的偶爾見面，每天黏在一起有負擔",
+          "vi": "Làm việc riêng rồi thỉnh thoảng gặp. Dính nhau mỗi ngày thấy nặng",
+          "id": "Masing-masing lakukan hal sendiri lalu sesekali bertemu. Setiap hari bersama terasa berat"
+        },
+        {
+          "en": "Meeting once or twice a week to spend time together feels about right",
+          "ja": "週1〜2回会って時間を過ごすのが適当",
+          "zh-CN": "一周见一两次一起度过比较合适",
+          "zh-TW": "一週見一兩次一起度過比較合適",
+          "vi": "Gặp một hai lần/tuần là vừa",
+          "id": "Bertemu seminggu sekali atau dua kali terasa pas"
+        },
+        {
+          "en": "Meeting often and experiencing things together. Building shared time matters",
+          "ja": "よく会って一緒に何かを経験。一緒の時間が積み重なることが重要",
+          "zh-CN": "经常见面一起体验，积累共处时间很重要",
+          "zh-TW": "經常見面一起體驗，積累共處時間很重要",
+          "vi": "Hay gặp và cùng trải nghiệm. Thời gian bên nhau tích lũy quan trọng",
+          "id": "Sering bertemu dan mengalami hal bersama. Waktu bersama yang terbangun penting"
+        },
+        {
+          "en": "I want to see them every day if possible. Every moment together confirms love",
+          "ja": "できれば毎日会いたい。一緒のすべての時間が愛の確認",
+          "zh-CN": "尽可能每天见，在一起的每个时刻都在确认爱",
+          "zh-TW": "盡可能每天見，在一起的每個時刻都在確認愛",
+          "vi": "Nếu có thể muốn gặp mỗi ngày. Mọi khoảnh khắc bên nhau là xác nhận tình yêu",
+          "id": "Kalau bisa ingin bertemu setiap hari. Setiap momen bersama mengonfirmasi cinta"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "When my partner sits beside me looking at their phone:",
+        "ja": "恋人がスマホばかり見て隣にいるとき、私は？",
+        "zh-CN": "恋人只看手机坐在旁边时，我会？",
+        "zh-TW": "戀人只看手機坐在旁邊時，我會？",
+        "vi": "Khi người yêu ngồi bên cạnh chỉ nhìn điện thoại:",
+        "id": "Saat pasangan duduk di samping sambil melihat ponsel:"
+      },
+      "opts": [
+        {
+          "en": "I can look at my phone too. Having our own time while together feels natural",
+          "ja": "私もスマホを見ればいい。一緒でも各自の時間が自然",
+          "zh-CN": "我也看手机，在一起但各过各的很自然",
+          "zh-TW": "我也看手機，在一起但各過各的很自然",
+          "vi": "Tôi cũng xem điện thoại. Bên nhau mà vẫn có thời gian riêng là tự nhiên",
+          "id": "Aku juga bisa lihat ponsel. Punya waktu sendiri saat bersama terasa alami"
+        },
+        {
+          "en": "A bit disappointing but I do not mind much. These days happen",
+          "ja": "少し残念だが大きく気にしない。こういう日もある",
+          "zh-CN": "有点遗憾但不太在意，也有这样的日子",
+          "zh-TW": "有點遺憾但不太在意，也有這樣的日子",
+          "vi": "Hơi tiếc nhưng không quá bận tâm. Cũng có ngày như vậy",
+          "id": "Agak kecewa tapi tidak terlalu peduli. Hari seperti ini juga ada"
+        },
+        {
+          "en": "I wish they would focus on our time together",
+          "ja": "一緒の時間は集中してほしいと思う",
+          "zh-CN": "希望共处时能专注",
+          "zh-TW": "希望共處時能專注",
+          "vi": "Mong họ tập trung vào thời gian bên nhau",
+          "id": "Berharap mereka fokus saat waktu bersama"
+        },
+        {
+          "en": "Quite hurt. Full attention during time together is important",
+          "ja": "かなり残る。一緒の時間に全力で向き合ってほしい",
+          "zh-CN": "挺委屈，共处时需要全心关注",
+          "zh-TW": "挺委屈，共處時需要全心關注",
+          "vi": "Khá buồn. Cần sự tập trung hoàn toàn khi bên nhau",
+          "id": "Cukup sedih. Perhatian penuh saat bersama penting"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "On my partner birthday or anniversaries, I:",
+        "ja": "恋人の誕生日や記念日に、私は？",
+        "zh-CN": "恋人生日或纪念日，我会？",
+        "zh-TW": "戀人生日或紀念日，我會？",
+        "vi": "Sinh nhật hoặc kỷ niệm của người yêu, tôi:",
+        "id": "Di hari ulang tahun atau anniversary pasangan, aku:"
+      },
+      "opts": [
+        {
+          "en": "I do not make a special effort. Everyday moments matter more than dates",
+          "ja": "特に祝わない。日付より普段が重要",
+          "zh-CN": "不太特别庆祝，认为日常比日期重要",
+          "zh-TW": "不太特別慶祝，認為日常比日期重要",
+          "vi": "Không đặc biệt chú ý. Ngày thường quan trọng hơn ngày lễ",
+          "id": "Tidak terlalu merayakan. Sehari-hari lebih penting dari tanggal"
+        },
+        {
+          "en": "I celebrate simply with a meal or cake",
+          "ja": "簡単に食事やケーキで祝う",
+          "zh-CN": "简单吃饭或准备蛋糕",
+          "zh-TW": "簡單吃飯或準備蛋糕",
+          "vi": "Ăn uống đơn giản hoặc bánh",
+          "id": "Rayakan sederhana dengan makan atau kue"
+        },
+        {
+          "en": "I think ahead about what they like and prepare gifts for a memorable day",
+          "ja": "相手の好みを考えてプレゼントを準備。記憶に残る日に",
+          "zh-CN": "提前想对方喜好准备礼物，希望成为难忘的日子",
+          "zh-TW": "提前想對方喜好準備禮物，希望成為難忘的日子",
+          "vi": "Nghĩ trước sở thích và chuẩn bị quà cho ngày đáng nhớ",
+          "id": "Pikirkan dulu selera mereka dan siapkan hadiah agar hari berkesan"
+        },
+        {
+          "en": "I prepare surprises and put effort into special days. I also enjoy receiving",
+          "ja": "サプライズを準備。記念日を特別に。もらうのも好き",
+          "zh-CN": "准备惊喜，纪念日很用心，收礼物也喜欢",
+          "zh-TW": "準備驚喜，紀念日很用心，收禮物也喜歡",
+          "vi": "Chuẩn bị bất ngờ, dành công sức cho ngày đặc biệt. Cũng thích nhận quà",
+          "id": "Siapkan kejutan dan usaha untuk hari spesial. Suka menerima juga"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "When choosing a small gift for my partner:",
+        "ja": "恋人に小さなプレゼントを選ぶとき、私は？",
+        "zh-CN": "给恋人选小礼物时，我会？",
+        "zh-TW": "給戀人選小禮物時，我會？",
+        "vi": "Khi chọn quà nhỏ cho người yêu:",
+        "id": "Saat memilih hadiah kecil untuk pasangan:"
+      },
+      "opts": [
+        {
+          "en": "Giving or receiving gifts is not very important. Heart matters more than money",
+          "ja": "贈り物はそれほど重要でない。お金より気持ち",
+          "zh-CN": "送礼收礼不太重要，心意比钱重要",
+          "zh-TW": "送禮收禮不太重要，心意比錢重要",
+          "vi": "Tặng nhận quà không quá quan trọng. Tâm ý hơn tiền",
+          "id": "Memberi atau menerima hadiah tidak terlalu penting. Hati lebih dari uang"
+        },
+        {
+          "en": "I do not usually give gifts unless it is a birthday or special day",
+          "ja": "誕生日や特別な日でなければ先に贈らない",
+          "zh-CN": "非生日或特殊日子不太主动送礼",
+          "zh-TW": "非生日或特殊日子不太主動送禮",
+          "vi": "Trừ sinh nhật hoặc ngày đặc biệt thường không tặng trước",
+          "id": "Biasanya tidak memberi kecuali ulang tahun atau hari spesial"
+        },
+        {
+          "en": "I give small things when I think of them. Being remembered matters even if minor",
+          "ja": "思い出したら小さくても贈る。覚えてくれたことが重要",
+          "zh-CN": "想到就送小的，被记得很重要",
+          "zh-TW": "想到就送小的，被記得很重要",
+          "vi": "Nghĩ đến là tặng dù nhỏ. Được nhớ quan trọng",
+          "id": "Memberi hal kecil saat teringat. Diingat itu penting"
+        },
+        {
+          "en": "I love giving small gifts on ordinary days because of their reaction",
+          "ja": "何でもない日に小さなプレゼントが好き。相手の表情が嬉しい",
+          "zh-CN": "喜欢在普通日子送小礼物，因为对方表情",
+          "zh-TW": "喜歡在普通日子送小禮物，因為對方表情",
+          "vi": "Thích tặng quà nhỏ ngày bình thường vì biểu cảm đối phương",
+          "id": "Suka memberi hadiah kecil di hari biasa karena ekspresi pasangan"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "When my partner is struggling:",
+        "ja": "恋人がつらいとき、私は？",
+        "zh-CN": "恋人难过时，我会？",
+        "zh-TW": "戀人難過時，我會？",
+        "vi": "Khi người yêu đang khó khăn:",
+        "id": "Saat pasangan sedang kesulitan:"
+      },
+      "opts": [
+        {
+          "en": "I watch from beside them. Helping when they ask is better than stepping in first",
+          "ja": "そばで見守る。先に出るより求められたら助ける",
+          "zh-CN": "在旁边看着，等对方需要再帮比主动更好",
+          "zh-TW": "在旁邊看著，等對方需要再幫比主動更好",
+          "vi": "Ở bên quan sát. Giúp khi họ cần hơn là chủ động trước",
+          "id": "Menjaga dari samping. Menolong saat diminta lebih baik"
+        },
+        {
+          "en": "I comfort and empathize with words and ask how I can help",
+          "ja": "言葉で慰め共感。どう助けられるか聞く",
+          "zh-CN": "用言语安慰共情，问怎么帮",
+          "zh-TW": "用言語安慰共情，問怎麼幫",
+          "vi": "An ủi và đồng cảm bằng lời, hỏi có thể giúp gì",
+          "id": "Menghibur dan empati dengan kata, tanyakan cara membantu"
+        },
+        {
+          "en": "I bring food or prepare what they need in advance. I show love through actions",
+          "ja": "食べ物を用意したり必要なことを先に。行動で示す",
+          "zh-CN": "准备吃的或提前做好需要的，用行动表达",
+          "zh-TW": "準備吃的或提前做好需要的，用行動表達",
+          "vi": "Chuẩn bị đồ ăn hoặc làm trước việc cần. Thể hiện bằng hành động",
+          "id": "Siapkan makanan atau kebutuhan. Tunjukkan lewat tindakan"
+        },
+        {
+          "en": "I do everything I can—cook, errands, stay close. That is what this is for",
+          "ja": "できることを全部。料理・用事・そばに。こういう時のため",
+          "zh-CN": "能做的一切都去做，做饭跑腿陪伴，就是这时候用的",
+          "zh-TW": "能做的一切都去做，做飯跑腿陪伴，就是這時候用的",
+          "vi": "Làm mọi thứ có thể—nấu ăn, việc vặt, ở bên. Đó là lúc dùng",
+          "id": "Lakukan segalanya—masak, urusan, di samping. Untuk saat seperti ini"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "When care for my partner comes naturally:",
+        "ja": "恋人への配慮が自然に出る瞬間は？",
+        "zh-CN": "对恋人自然流露体贴的时刻是？",
+        "zh-TW": "對戀人自然流露體貼的時刻是？",
+        "vi": "Khi sự quan tâm với người yêu tự nhiên:",
+        "id": "Saat perhatian pada pasangan muncul alami:"
+      },
+      "opts": [
+        {
+          "en": "I do not do it consciously. Too much care can feel burdensome",
+          "ja": "特に意識しない。過剰な配慮は負担になりうる",
+          "zh-CN": "不太刻意，过度体贴可能成负担",
+          "zh-TW": "不太刻意，過度體貼可能成負擔",
+          "vi": "Không cố ý. Quan tâm quá có thể thành gánh nặng",
+          "id": "Tidak sengaja. Perhatian berlebihan bisa membebani"
+        },
+        {
+          "en": "When they look tired or ask for help",
+          "ja": "相手が疲れて見えるか頼まれたとき",
+          "zh-CN": "对方看起来累或请求时",
+          "zh-TW": "對方看起來累或請求時",
+          "vi": "Khi họ trông mệt hoặc nhờ giúp",
+          "id": "Saat mereka terlihat lelah atau meminta"
+        },
+        {
+          "en": "I remember what they like and need and take care of it",
+          "ja": "好きなもの・必要なものを覚えて先回り",
+          "zh-CN": "记住喜好和需求提前照顾",
+          "zh-TW": "記住喜好和需求提前照顧",
+          "vi": "Nhớ sở thích và nhu cầu để chăm trước",
+          "id": "Ingat selera dan kebutuhan lalu mengurus"
+        },
+        {
+          "en": "I naturally take care first. I strongly want them to feel comfortable",
+          "ja": "自然に先に世話する。相手が楽でいてほしい",
+          "zh-CN": "自然先照顾，强烈希望对方舒适",
+          "zh-TW": "自然先照顧，強烈希望對方舒適",
+          "vi": "Tự nhiên chăm trước. Rất muốn họ thoải mái",
+          "id": "Alami mengurus dulu. Sangat ingin mereka nyaman"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "About physical touch with my partner:",
+        "ja": "恋人とのスキンシップについて、私は？",
+        "zh-CN": "关于和恋人的肢体接触，我会？",
+        "zh-TW": "關於和戀人的肢體接觸，我會？",
+        "vi": "Về thể chạm với người yêu:",
+        "id": "Tentang sentuhan fisik dengan pasangan:"
+      },
+      "opts": [
+        {
+          "en": "Less touch is fine. Natural is better than forced",
+          "ja": "多くなくても大丈夫。無理より自然",
+          "zh-CN": "不多也可以，自然比勉强好",
+          "zh-TW": "不多也可以，自然比勉強好",
+          "vi": "Ít cũng được. Tự nhiên hơn ép buộc",
+          "id": "Sedikit sentuhan juga oke. Alami lebih baik"
+        },
+        {
+          "en": "Depends on the situation. When I am in a good mood it happens naturally",
+          "ja": "状況による。気分がいいとき自然に",
+          "zh-CN": "看情况，心情好时会自然发生",
+          "zh-TW": "看情況，心情好時會自然發生",
+          "vi": "Tùy tình huống. Lúc vui thì tự nhiên",
+          "id": "Tergantung situasi. Saat mood bagus alami"
+        },
+        {
+          "en": "I need touch to feel connected. Holding hands or hugging feels good",
+          "ja": "触れ合いがないとつながりを感じにくい。手をつなぐ・抱きしめる",
+          "zh-CN": "需要肢体接触才有连接感，牵手拥抱好",
+          "zh-TW": "需要肢體接觸才有連接感，牽手擁抱好",
+          "vi": "Cần chạm để cảm thấy kết nối. Nắm tay ôm thích",
+          "id": "Butuh sentuhan untuk merasa terhubung. Pegangan tangan atau pelukan"
+        },
+        {
+          "en": "More touch makes me feel safer. Natural physical contact feels like love",
+          "ja": "多いほど安心。自然な接触が愛の表現",
+          "zh-CN": "越多越安心，自然接触是爱的表达",
+          "zh-TW": "越多越安心，自然接觸是愛的表達",
+          "vi": "Càng nhiều càng an tâm. Chạm tự nhiên là tình yêu",
+          "id": "Semakin banyak semakin tenang. Sentuhan alami terasa seperti cinta"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "After a hard day, meeting my partner, I most want to:",
+        "ja": "つらい一日の後、恋人に会ったら最もしたいことは？",
+        "zh-CN": "辛苦一天后见到恋人，我最想？",
+        "zh-TW": "辛苦一天後見到戀人，我最想？",
+        "vi": "Sau một ngày khó khăn, gặp người yêu tôi muốn nhất:",
+        "id": "Setelah hari sulit, bertemu pasangan, yang paling ingin kulakukan:"
+      },
+      "opts": [
+        {
+          "en": "Rest quietly separately. I need alone time to recover more than conversation",
+          "ja": "各自静かに休む。会話より一人で回復",
+          "zh-CN": "各自安静休息，需要独处恢复",
+          "zh-TW": "各自安靜休息，需要獨處恢復",
+          "vi": "Nghỉ yên lặng riêng. Cần thời gian một mình hơn trò chuyện",
+          "id": "Istirahat tenang sendiri. Butuh waktu sendiri lebih dari obrolan"
+        },
+        {
+          "en": "Just having them beside me is enough. Being together without words is fine",
+          "ja": "そばにいてくれるだけで十分。無言でも",
+          "zh-CN": "在旁边就够了，不说话也可以",
+          "zh-TW": "在旁邊就夠了，不說話也可以",
+          "vi": "Chỉ cần ở bên là đủ. Im lặng cũng được",
+          "id": "Cukup ada di samping. Diam bersama juga oke"
+        },
+        {
+          "en": "Talk about what happened today. Being listened to helps a lot",
+          "ja": "今日あったことを話したい。聞いてもらうだけで楽",
+          "zh-CN": "想聊今天的事，被倾听就轻松很多",
+          "zh-TW": "想聊今天的事，被傾聽就輕鬆很多",
+          "vi": "Muốn kể chuyện hôm nay. Được lắng nghe đã đỡ nhiều",
+          "id": "Ingin cerita hari ini. Didengarkan sudah banyak membantu"
+        },
+        {
+          "en": "Be hugged. Physical touch eases difficult emotions",
+          "ja": "抱きしめてほしい。スキンシップで感情が和らぐ",
+          "zh-CN": "想被拥抱，肢体接触能平复情绪",
+          "zh-TW": "想被擁抱，肢體接觸能平復情緒",
+          "vi": "Muốn được ôm. Chạm giúp dịu cảm xúc",
+          "id": "Ingin dipeluk. Sentuhan meredakan emosi sulit"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "When conflict arises with my partner:",
+        "ja": "恋人と葛藤が生じたとき、私は？",
+        "zh-CN": "和恋人发生冲突时，我会？",
+        "zh-TW": "和戀人發生衝突時，我會？",
+        "vi": "Khi xung đột với người yêu:",
+        "id": "Saat konflik dengan pasangan:"
+      },
+      "opts": [
+        {
+          "en": "I think time will resolve it naturally. No need to talk separately",
+          "ja": "時間が経てば自然に解決。わざわざ話さなくていい",
+          "zh-CN": "觉得时间会自然解决，不必专门谈",
+          "zh-TW": "覺得時間會自然解決，不必專門談",
+          "vi": "Nghĩ thời gian sẽ giải quyết. Không cần nói riêng",
+          "id": "Pikir waktu akan menyelesaikan. Tidak perlu bicara khusus"
+        },
+        {
+          "en": "I bring it up after emotions settle. Talk after organizing rather than reacting immediately",
+          "ja": "感情が落ち着いてから話す。即反応より整理後",
+          "zh-CN": "情绪平复后再谈，整理后对话而非立刻反应",
+          "zh-TW": "情緒平復後再談，整理後對話而非立刻反應",
+          "vi": "Nói sau khi cảm xúc lắng. Bàn sau khi sắp xếp hơn phản ứng ngay",
+          "id": "Membawanya setelah emosi reda. Bicara setelah merapikan"
+        },
+        {
+          "en": "I bring it up because I want resolution. Unresolved conflict feels uncomfortable",
+          "ja": "解決したくて自分から話す。未解決が不快",
+          "zh-CN": "想解决所以主动谈，未解决不舒服",
+          "zh-TW": "想解決所以主動談，未解決不舒服",
+          "vi": "Chủ động nói vì muốn giải quyết. Chưa giải quyết khó chịu",
+          "id": "Membuka karena ingin selesai. Konflik belum selesai tidak nyaman"
+        },
+        {
+          "en": "I want to resolve quickly. Even during conflict I tend to reach out first",
+          "ja": "早く解決したい。葛藤中でも先に近づく",
+          "zh-CN": "想快解决，冲突中也常先靠近",
+          "zh-TW": "想快解決，衝突中也常先靠近",
+          "vi": "Muốn giải quyết nhanh. Cả khi xung đột vẫn chủ động",
+          "id": "Ingin cepat selesai. Bahkan saat konflik mendekati dulu"
+        }
+      ]
+    },
+    {
+      "q": {
+        "en": "What I value most in a relationship:",
+        "ja": "恋愛で最も大切にしていることは？",
+        "zh-CN": "恋爱中最看重的是？",
+        "zh-TW": "戀愛中最看重的是？",
+        "vi": "Điều quan trọng nhất trong tình yêu:",
+        "id": "Yang paling kuhargai dalam hubungan:"
+      },
+      "opts": [
+        {
+          "en": "Respecting each other lives. Love should not invade personal space",
+          "ja": "お互いの人生を尊重。個人空間を侵さない",
+          "zh-CN": "尊重各自生活，恋爱不侵犯个人空间",
+          "zh-TW": "尊重各自生活，戀愛不侵犯個人空間",
+          "vi": "Tôn trọng cuộc sống riêng. Tình yêu không xâm phạm không gian cá nhân",
+          "id": "Menghormati hidup masing-masing. Cinta tidak mengganggu ruang pribadi"
+        },
+        {
+          "en": "A comfortable relationship. Being together naturally without forcing alignment",
+          "ja": "快適な関係。無理に合わせなくても自然に",
+          "zh-CN": "舒适的关系，不必勉强也能自然相处",
+          "zh-TW": "舒適的關係，不必勉強也能自然相處",
+          "vi": "Quan hệ thoải mái. Không cần gượng vẫn ở bên nhau",
+          "id": "Hubungan nyaman. Bersama alami tanpa memaksakan"
+        },
+        {
+          "en": "Growing together. Becoming better people through the relationship",
+          "ja": "一緒に成長。より良い人になれる関係",
+          "zh-CN": "一起成长，通过关系成为更好的人",
+          "zh-TW": "一起成長，通過關係成為更好的人",
+          "vi": "Cùng trưởng thành. Trở thành người tốt hơn qua quan hệ",
+          "id": "Tumbuh bersama. Menjadi lebih baik lewat hubungan"
+        },
+        {
+          "en": "Full connection. Feeling each other fully through words, time, actions, and touch",
+          "ja": "完全なつながり。言葉・時間・行動・スキンシップすべて",
+          "zh-CN": "完整连接，用言语时间行动接触充分感受彼此",
+          "zh-TW": "完整連接，用言語時間行動接觸充分感受彼此",
+          "vi": "Kết nối trọn vẹn. Cảm nhận qua lời, thời gian, hành động, chạm",
+          "id": "Koneksi penuh. Merasakan lewat kata, waktu, tindakan, sentuhan"
+        }
+      ]
+    }
+  ]
+}

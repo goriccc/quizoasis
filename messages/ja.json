@@ -11350,6 +11350,79 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3LoveLanguageAnalysisTest": {
+    "startMessage": {
+      "line1": "愛する方法は人それぞれです。",
+      "line2": "心理学者ゲーリー・チャップマンは、人によって愛を表現し受け取る言語が違うと言いました。言葉、一緒の時間、配慮の行動、スキンシップ、プレゼント。",
+      "line3": "問題はお互いの言語が違うときに起きます。自分は愛しているのに相手が感じないことがここから来ます。",
+      "line4": "12の質問で自分が愛を表現し受け取る言語を分析します。カップルなら二人で。結果が違えば大切な会話の始まりになります。",
+      "line5": "私の恋愛言語を見つける 💗 正直に始める",
+      "note": "※ 恋愛中または恋愛経験を基準に、最も正直に答えてください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の恋愛言語深層分析）",
+      "goToTest": "テストに進む",
+      "startTest": "私の恋愛言語を見つける 💗 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "languageSummary": "恋愛言語要約",
+      "languageType": "恋愛言語タイプ",
+      "loveKeywordsTitle": "恋愛キーワード",
+      "domainAnalysisTitle": "5言語別スコア",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "wordsAffirmationDomain": "肯定的な言葉",
+      "qualityTimeDomain": "一緒の時間",
+      "receivingGiftsDomain": "プレゼント・サプライズ",
+      "actsOfServiceDomain": "奉仕・行動",
+      "physicalTouchDomain": "スキンシップ",
+      "conflictDevotionDomain": "葛藤・献身スタイル",
+      "strongestDomain": "私の主な恋愛言語",
+      "boostDomain": "相手に期待が低い言語",
+      "strengthsTitle": "このタイプの強み",
+      "cautionsTitle": "このタイプの注意点",
+      "lovePatternTitle": "このタイプの恋愛パターン",
+      "compatiblePartnerTitle": "このタイプに合う恋人",
+      "hardMomentTitle": "関係でつらい瞬間",
+      "expressLoveMethodTitle": "このタイプの愛の表現方法",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の恋愛言語: {type}! 💗 恋人・友達と一緒にやると違いが分かる → 私はこう愛す。あなたは？",
+      "kakao": "私の恋愛言語: {type}! 💗 恋人・友達と一緒にやってみて",
+      "wechat": "私の恋愛言語: {type}! 💗 カップルなら二人で",
+      "whatsapp": "私の恋愛言語: {type}! 💗 あなたもやってみて",
+      "telegram": "私の恋愛言語: {type}! 💗 あなたはどのタイプ？",
+      "line": "私の恋愛言語: {type}! 💗 友達と比べてみて",
+      "startDefault": "私の恋愛言語深層分析 💗 12の質問",
+      "startKakao": "私の恋愛言語深層分析 💗 12の質問",
+      "startWechat": "私の恋愛言語深層分析 💗 12の質問",
+      "startWhatsapp": "私の恋愛言語深層分析 💗 12の質問",
+      "startTelegram": "私の恋愛言語深層分析 💗 12の質問",
+      "startLine": "私の恋愛言語深層分析 💗 12の質問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

@@ -1,0 +1,646 @@
+[
+  {
+    "title": {
+      "en": "Someone Who Respects Each Other Lives, Independent Love Type",
+      "ja": "お互いの人生を尊重する人、独立恋愛型",
+      "zh-CN": "尊重彼此生活的人，独立恋爱型",
+      "zh-TW": "尊重彼此生活的人，獨立戀愛型",
+      "vi": "Người tôn trọng cuộc sống riêng, Kiểu tình yêu độc lập",
+      "id": "Orang yang menghormati hidup masing-masing, Tipe Cinta Independen"
+    },
+    "languageSummary": {
+      "en": "A type where personal space and independence are the premise of love",
+      "ja": "個人空間と独立性が愛の前提のタイプ",
+      "zh-CN": "个人空间与独立是爱情前提的类型",
+      "zh-TW": "個人空間與獨立是愛情前提的類型",
+      "vi": "Kiểu coi không gian cá nhân và độc lập là tiền đề của tình yêu",
+      "id": "Tipe di mana ruang pribadi dan independensi adalah premis cinta"
+    },
+    "quote": {
+      "en": "Your love begins by respecting each other worlds. When each life is fulfilled, the relationship stays healthy more than when you cling together.",
+      "ja": "あなたの恋愛はお互いの世界を尊重することから始まります。くっついているより各自の人生が充実すると関係も健康です。",
+      "zh-CN": "你的恋爱从尊重彼此的世界开始。各自生活充实比黏在一起关系更健康。",
+      "zh-TW": "你的戀愛從尊重彼此的世界開始。各自生活充實比黏在一起關係更健康。",
+      "vi": "Tình yêu của bạn bắt đầu từ tôn trọng thế giới của nhau. Cuộc sống riêng đầy đủ giúp quan hệ khỏe mạnh hơn dính nhau.",
+      "id": "Cintamu dimulai dari menghormati dunia masing-masing. Hidup masing-masing yang penuh membuat hubungan lebih sehat daripada menempel terus."
+    },
+    "description": {
+      "en": "The relationship does not shake even with less expression, trust exists without daily contact, and time together becomes meaningful only when each has enough personal time.",
+      "ja": "表現が少なくても関係は揺れず、毎日連絡しなくても信頼があり、各自の時間が十分にあるとき一緒の時間も意味を持つタイプです。",
+      "zh-CN": "表达不多关系也不动摇，不必每天联系也有信任，各自时间充足时共处才有意义。",
+      "zh-TW": "表達不多關係也不動搖，不必每天聯繫也有信任，各自時間充足時共處才有意義。",
+      "vi": "Quan hệ không lay dù ít bày tỏ, vẫn tin mà không cần liên lạc mỗi ngày, thời gian riêng đủ thì bên nhau mới có ý nghĩa.",
+      "id": "Hubungan tidak goyah meski sedikit ekspresi, ada kepercayaan tanpa kontak harian, dan waktu bersama bermakna saat masing-masing punya waktu cukup."
+    },
+    "languageType": {
+      "en": "Independent Love Type 🌿",
+      "ja": "独立恋愛型 🌿",
+      "zh-CN": "独立恋爱型 🌿",
+      "zh-TW": "獨立戀愛型 🌿",
+      "vi": "Kiểu tình yêu độc lập 🌿",
+      "id": "Tipe Cinta Independen 🌿"
+    },
+    "loveKeywords": {
+      "en": "Independence · Respect · Trust · Personal space · Naturalness",
+      "ja": "独立・尊重・信頼・各自の空間・自然さ",
+      "zh-CN": "独立·尊重·信任·各自空间·自然",
+      "zh-TW": "獨立·尊重·信任·各自空間·自然",
+      "vi": "Độc lập · Tôn trọng · Tin tưởng · Không gian riêng · Tự nhiên",
+      "id": "Independen · Hormat · Percaya · Ruang pribadi · Natural"
+    },
+    "strengths": {
+      "en": "No clinginess in relationships. Healthy distance that does not block each other growth",
+      "ja": "関係に執着がない。お互いの成長を妨げない健全な距離感",
+      "zh-CN": "关系中无执念，不阻碍彼此成长的健康距离",
+      "zh-TW": "關係中無執念，不阻礙彼此成長的健康距離",
+      "vi": "Không bám víu trong quan hệ. Khoảng cách lành mạnh không cản trưởng thành",
+      "id": "Tidak posesif. Jarak sehat yang tidak menghalangi pertumbuhan"
+    },
+    "lovePattern": {
+      "en": "Focus when you meet rather than staying attached often. Quality of contact over frequency",
+      "ja": "くっつくより会うときに集中。連絡頻度より質",
+      "zh-CN": "比起常黏在一起，见面时更专注。联系质量重于频率",
+      "zh-TW": "比起常黏在一起，見面時更專注。聯繫質量重於頻率",
+      "vi": "Tập trung khi gặp hơn dính thường xuyên. Chất lượng liên lạc hơn tần suất",
+      "id": "Fokus saat bertemu daripada sering menempel. Kualitas kontak lebih dari frekuensi"
+    },
+    "compatiblePartner": {
+      "en": "Independent with their own life who does not depend too much",
+      "ja": "独立していて各自の生活があり、過度に依存しないタイプ",
+      "zh-CN": "独立、有各自生活、不过度依赖的类型",
+      "zh-TW": "獨立、有各自生活、不過度依賴的類型",
+      "vi": "Độc lập, có cuộc sống riêng, không phụ thuộc quá",
+      "id": "Independen dengan hidup sendiri dan tidak terlalu bergantung"
+    },
+    "hardMoment": {
+      "en": "When your partner wants constant contact, expression, or reassurance. When asked Do you even like me?",
+      "ja": "相手が継続的な連絡・表現・確認を求めるとき。「本当に好き？」と聞かれるとき",
+      "zh-CN": "对方想要持续联系、表达、确认时。被问「你真的喜欢我吗？」",
+      "zh-TW": "對方想要持續聯繫、表達、確認時。被問「你真的喜歡我嗎？」",
+      "vi": "Khi đối phương muốn liên lạc, bày tỏ, xác nhận liên tục. Bị hỏi có thật thích mình không",
+      "id": "Saat pasangan ingin kontak, ekspresi, konfirmasi terus-menerus. Saat ditanya apakah benar suka"
+    },
+    "expressLoveMethod": {
+      "en": "Staying by their side for a long time rather than words. Supporting their decisions",
+      "ja": "言葉より長くそばにいること。相手の決定を支持すること",
+      "zh-CN": "比起言语，更长久地在身边。支持对方的决定",
+      "zh-TW": "比起言語，更長久地在身邊。支持對方的決定",
+      "vi": "Ở bên lâu hơn lời nói. Ủng hộ quyết định của đối phương",
+      "id": "Ada di samping lama daripada kata-kata. Mendukung keputusan mereka"
+    },
+    "oneLiner": {
+      "en": "Your love does not cage each other. That is the foundation of a lasting relationship.",
+      "ja": "あなたの恋愛はお互いを閉じ込めません。それが長続きする関係の基盤です。",
+      "zh-CN": "你的恋爱不会囚禁彼此，那是长久关系的基础。",
+      "zh-TW": "你的戀愛不會囚禁彼此，那是長久關係的基礎。",
+      "vi": "Tình yêu của bạn không giam nhau. Đó là nền của quan hệ bền lâu.",
+      "id": "Cintamu tidak mengurung satu sama lain. Itu fondasi hubungan yang langgeng."
+    },
+    "shareLine": {
+      "en": "My love language: Independent Love Type 🌿 Respecting each other lives is my ideal... Not texting daily and still trusting is valid → This is how I love. Couples should try together",
+      "ja": "私の恋愛言語：独立恋愛型 🌿 各自の人生を尊重する恋愛が理想…毎日連絡しなくても信じられる → 私はこう愛す。カップルは二人で",
+      "zh-CN": "我的恋爱语言：独立恋爱型 🌿 尊重彼此生活的恋爱是理想型…不每天联系也相信对吗 → 我就这样爱。情侣一起做",
+      "zh-TW": "我的戀愛語言：獨立戀愛型 🌿 尊重彼此生活的戀愛是理想型…不每天聯繫也相信對嗎 → 我就這樣愛。情侶一起做",
+      "vi": "Ngôn ngữ tình yêu: Kiểu độc lập 🌿 Tôn trọng cuộc sống riêng là lý tưởng… không nhắn mỗi ngày vẫn tin được → Tôi yêu thế này. Cặp đôi thử cùng nhau",
+      "id": "Bahasa cintaku: Tipe Independen 🌿 Menghormati hidup masing-masing ideal… tidak chat tiap hari tetap percaya → Aku mencintai begini. Pasangan coba berdua"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Whose Words Move Hearts, Words Expression Type",
+      "ja": "一言が心を動かす人、言語表現型",
+      "zh-CN": "一句话就能打动人心的人，语言表达型",
+      "zh-TW": "一句話就能打動人心的人，語言表達型",
+      "vi": "Người một câu lay động trái tim, Kiểu biểu đạt bằng lời",
+      "id": "Orang yang satu kata menggerakkan hati, Tipe Ekspresi Verbal"
+    },
+    "languageSummary": {
+      "en": "A type where words of affirmation, praise, and gratitude are the core love language",
+      "ja": "認め・褒め・感謝の言葉が愛の核心言語のタイプ",
+      "zh-CN": "认可、赞美、感谢的话是核心恋爱语言的类型",
+      "zh-TW": "認可、讚美、感謝的話是核心戀愛語言的類型",
+      "vi": "Kiểu coi lời công nhận, khen, cảm ơn là ngôn ngữ tình yêu cốt lõi",
+      "id": "Tipe di mana kata pengakuan, pujian, dan terima kasih adalah bahasa cinta inti"
+    },
+    "quote": {
+      "en": "For you, love is confirmed through words. One well-timed expression touches the heart more than any gift.",
+      "ja": "あなたにとって愛は言葉で確認されます。適切な一言がどんなプレゼントより心に届きます。",
+      "zh-CN": "对你来说，爱靠言语确认。恰当的一句话比任何礼物更入心。",
+      "zh-TW": "對你來說，愛靠言語確認。恰當的一句話比任何禮物更入心。",
+      "vi": "Với bạn, tình yêu được xác nhận bằng lời. Một câu đúng lúc chạm tim hơn quà.",
+      "id": "Bagimu, cinta dikonfirmasi lewat kata. Satu ungkapan tepat lebih menyentuh hati daripada hadiah."
+    },
+    "description": {
+      "en": "Lines like I missed you, You looked great today, and Thank you fill the relationship. Without expression, certainty of being loved wavers. The temperature of words becomes the temperature of the relationship.",
+      "ja": "「会いたかった」「今日かっこよかった」「ありがとう」が関係を満たし、表現がないと愛されている確信が揺れます。言葉の温度が関係の温度になります。",
+      "zh-CN": "「想你了」「今天你很帅」「谢谢」填满关系，没有表达时对被爱的确信会动摇。话语温度就是关系温度。",
+      "zh-TW": "「想你了」「今天你很帥」「謝謝」填滿關係，沒有表達時對被愛的確信會動搖。話語溫度就是關係溫度。",
+      "vi": "Câu như nhớ em, hôm nay em đẹp, cảm ơn lấp đầy quan hệ. Không có lời thì chắc chắn được yêu lung lay. Nhiệt độ lời là nhiệt độ quan hệ.",
+      "id": "Kalimat seperti kangen, hari ini kamu keren, terima kasih mengisi hubungan. Tanpa ekspresi keyakinan dicintai goyah. Suhu kata jadi suhu hubungan."
+    },
+    "languageType": {
+      "en": "Words Expression Type 💬",
+      "ja": "言語表現型 💬",
+      "zh-CN": "语言表达型 💬",
+      "zh-TW": "語言表達型 💬",
+      "vi": "Kiểu biểu đạt bằng lời 💬",
+      "id": "Tipe Ekspresi Verbal 💬"
+    },
+    "loveKeywords": {
+      "en": "Words · Expression · Affirmation · Praise · Gratitude",
+      "ja": "言葉・表現・認め・褒め・感謝",
+      "zh-CN": "言语·表达·认可·赞美·感谢",
+      "zh-TW": "言語·表達·認可·讚美·感謝",
+      "vi": "Lời · Biểu đạt · Công nhận · Khen · Cảm ơn",
+      "id": "Kata · Ekspresi · Pengakuan · Pujian · Terima kasih"
+    },
+    "strengths": {
+      "en": "Often expresses gratitude and affection. Ability to warm the atmosphere of a relationship",
+      "ja": "相手に感謝と愛情をよく表現。関係の雰囲気を温かくする力",
+      "zh-CN": "常向伴侣表达感谢与 affection，能温暖关系氛围",
+      "zh-TW": "常向伴侶表達感謝與 affection，能溫暖關係氛圍",
+      "vi": "Hay bày tỏ cảm ơn và tình cảm. Làm ấm không khí quan hệ",
+      "id": "Sering mengekspresikan terima kasih dan kasih sayang. Membuat suasana hubungan hangat"
+    },
+    "lovePattern": {
+      "en": "Even short messages include warm words. Notices and expresses small changes in your partner",
+      "ja": "連絡も短くても温かい言葉。相手の小さな変化も気づいて表現",
+      "zh-CN": "联系再短也有温暖的话，察觉并表达对方小变化",
+      "zh-TW": "聯繫再短也有溫暖的話，察覺並表達對方小變化",
+      "vi": "Tin nhắn ngắn vẫn có lời ấm. Nhận ra và nói thay đổi nhỏ",
+      "id": "Pesan pendek pun ada kata hangat. Menyadari dan mengekspresikan perubahan kecil"
+    },
+    "compatiblePartner": {
+      "en": "Expressive and naturally conveys gratitude and affection in words",
+      "ja": "表現が豊かで感謝と愛情を自然に言葉で伝えるタイプ",
+      "zh-CN": "表达丰富，自然用言语传递感谢与 affection 的类型",
+      "zh-TW": "表達豐富，自然用言語傳遞感謝與 affection 的類型",
+      "vi": "Biểu đạt phong phú, tự nhiên nói cảm ơn và tình cảm",
+      "id": "Ekspresif dan alami menyampaikan terima kasih lewat kata"
+    },
+    "hardMoment": {
+      "en": "When your partner says You should know without me saying it. Less praise and affirmation reduces the feeling of being loved",
+      "ja": "相手が「言わなくても分かるでしょ」の人。褒め・認めがないと愛されている感が減る",
+      "zh-CN": "对方说「不说你也该懂」时。缺少赞美认可会减少被爱感",
+      "zh-TW": "對方說「不說你也該懂」時。缺少讚美認可會減少被愛感",
+      "vi": "Khi đối phương nói không nói cũng biết mà. Thiếu khen công nhận giảm cảm giác được yêu",
+      "id": "Saat pasangan bilang harusnya tahu tanpa dibilang. Kurang pujian mengurangi rasa dicintai"
+    },
+    "expressLoveMethod": {
+      "en": "Specific praise and gratitude. Everything you did today meant a lot to me",
+      "ja": "具体的な褒め・感謝。「今日してくれたことが全部ありがたかった」",
+      "zh-CN": "具体的赞美感谢，「今天你做的一切都很感谢」",
+      "zh-TW": "具體讚美感謝，「今天你做的一切都很感謝」",
+      "vi": "Khen và cảm ơn cụ thể. Mọi việc em làm hôm nay đều ý nghĩa",
+      "id": "Pujian dan terima kasih spesifik. Semua yang kamu lakukan hari ini berarti"
+    },
+    "oneLiner": {
+      "en": "Your words can change your partner day. Do not hold back that language.",
+      "ja": "あなたの言葉は相手の一日を変えられます。その言語を惜しまないで。",
+      "zh-CN": "你的话能改变对方的一天，别吝啬这种语言。",
+      "zh-TW": "你的話能改變對方的一天，別吝嗇這種語言。",
+      "vi": "Lời bạn có thể đổi cả ngày của đối phương. Đừng tiếc ngôn ngữ đó.",
+      "id": "Kata-katamu bisa mengubah hari pasangan. Jangan pelit dengan bahasa itu."
+    },
+    "shareLine": {
+      "en": "My love language: Words Expression Type 💬 I need words to feel loved... You should know without saying is the hardest → This is how I love. What type are you?",
+      "ja": "私の恋愛言語：言語表現型 💬 言葉で確認しないと愛されている感が…「言わなくても分かる」が一番つらい → 私はこう愛す。あなたは？",
+      "zh-CN": "我的恋爱语言：语言表达型 💬 需要言语确认被爱…「不说你也懂」最难 → 我就这样爱。你是什么型？",
+      "zh-TW": "我的戀愛語言：語言表達型 💬 需要言語確認被愛…「不說你也懂」最難 → 我就這樣愛。你是什麼型？",
+      "vi": "Ngôn ngữ tình yêu: Kiểu lời nói 💬 Cần lời mới thấy được yêu… không nói cũng biết là khó nhất → Tôi yêu thế này. Bạn loại nào?",
+      "id": "Bahasa cintaku: Tipe Verbal 💬 Perlu kata untuk merasa dicintai… harusnya tahu tanpa bilang paling berat → Aku mencintai begini. Kamu tipe apa?"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone for Whom Time Together Is Everything, Quality Time Type",
+      "ja": "一緒にいる時間がすべての人、同行時間型",
+      "zh-CN": "共处时间就是一切的人，同行时间型",
+      "zh-TW": "共處時間就是一切的人，同行時間型",
+      "vi": "Người coi thời gian bên nhau là tất cả, Kiểu thời gian chất lượng",
+      "id": "Orang yang waktu bersama adalah segalanya, Tipe Waktu Berkualitas"
+    },
+    "languageSummary": {
+      "en": "A type where the quality and quantity of time together measure love",
+      "ja": "一緒の時間の質と量が愛の尺度のタイプ",
+      "zh-CN": "共处时间的质与量是爱情尺度的类型",
+      "zh-TW": "共處時間的質與量是愛情尺度的類型",
+      "vi": "Kiểu coi chất và lượng thời gian bên nhau là thước đo tình yêu",
+      "id": "Tipe di mana kualitas dan kuantitas waktu bersama mengukur cinta"
+    },
+    "quote": {
+      "en": "For you, love is measured in time spent together. Wherever and whatever you do, being together matters most.",
+      "ja": "あなたにとって愛は一緒に過ごした時間で測られます。どこで何をしても一緒にいることが最も重要です。",
+      "zh-CN": "对你来说，爱用共处时间衡量。无论在哪做什么，在一起最重要。",
+      "zh-TW": "對你來說，愛用共處時間衡量。無論在哪做什麼，在一起最重要。",
+      "vi": "Với bạn, tình yêu đo bằng thời gian bên nhau. Ở đâu làm gì cũng quan trọng nhất là cùng nhau.",
+      "id": "Bagimu, cinta diukur dengan waktu bersama. Di mana pun dan apa pun, bersama yang paling penting."
+    },
+    "description": {
+      "en": "Eating together, watching dramas, or simply sharing space without words still conveys love. When time is not made because of being busy, love can feel like it is drifting away.",
+      "ja": "一緒に食事し、ドラマを見、無言で同じ空間にいるだけでも愛が伝わるタイプ。忙しいから時間を作らないと愛が遠ざかる気がする人です。",
+      "zh-CN": "一起吃饭、看剧、无声共处也传递爱。因忙不花时间会觉得爱变远。",
+      "zh-TW": "一起吃飯、看劇、無聲共處也傳遞愛。因忙不花時間會覺得愛變遠。",
+      "vi": "Ăn cùng, xem phim, im lặng chung không gian cũng là tình yêu. Bận không dành thời gian thì cảm giác xa dần.",
+      "id": "Makan bersama, nonton drama, atau diam di ruang yang sama sudah menyampaikan cinta. Saat sibuk tidak luangkan waktu, cinta terasa menjauh."
+    },
+    "languageType": {
+      "en": "Quality Time Type ⏰",
+      "ja": "同行時間型 ⏰",
+      "zh-CN": "同行时间型 ⏰",
+      "zh-TW": "同行時間型 ⏰",
+      "vi": "Kiểu thời gian chất lượng ⏰",
+      "id": "Tipe Waktu Berkualitas ⏰"
+    },
+    "loveKeywords": {
+      "en": "Together · Time · Sharing · Experience · Presence",
+      "ja": "一緒・時間・共有・経験・存在感",
+      "zh-CN": "一起·时间·共享·体验·存在感",
+      "zh-TW": "一起·時間·共享·體驗·存在感",
+      "vi": "Cùng nhau · Thời gian · Chia sẻ · Trải nghiệm · Hiện diện",
+      "id": "Bersama · Waktu · Berbagi · Pengalaman · Kehadiran"
+    },
+    "strengths": {
+      "en": "Ability to build daily life together. A sense that turns any moment into a memory",
+      "ja": "日常を一緒に作る力。どんな瞬間も思い出にする感覚",
+      "zh-CN": "一起创造日常的能力，把任何瞬间变成回忆",
+      "zh-TW": "一起創造日常的能力，把任何瞬間變成回憶",
+      "vi": "Khả năng xây cuộc sống hàng ngày cùng nhau. Biến khoảnh khắc thành kỷ niệm",
+      "id": "Kemampuan membangun keseharian bersama. Mengubah momen jadi kenangan"
+    },
+    "lovePattern": {
+      "en": "Happy when shared routines form. Favorite cafes and walk routes appear together",
+      "ja": "一緒のルーティンができると幸せ。よく行くカフェ・散歩コースができる",
+      "zh-CN": "有共同 routine 就幸福，常去的咖啡馆和散步路线",
+      "zh-TW": "有共同 routine 就幸福，常去的咖啡館和散步路線",
+      "vi": "Vui khi có thói quen chung. Quán cà phê và lối đi bộ quen thuộc",
+      "id": "Bahagia saat rutinitas bersama terbentuk. Kafe dan jalur jalan favorit muncul"
+    },
+    "compatiblePartner": {
+      "en": "Values time together and tries to make time even when busy",
+      "ja": "一緒の時間に価値を置き、忙しくても時間を作ろうとするタイプ",
+      "zh-CN": "重视共处时间，再忙也努力抽时间的类型",
+      "zh-TW": "重視共處時間，再忙也努力抽時間的類型",
+      "vi": "Coi trọng thời gian bên nhau, bận vẫn cố tạo thời gian",
+      "id": "Menghargai waktu bersama dan berusaha luangkan waktu meski sibuk"
+    },
+    "hardMoment": {
+      "en": "When your partner often says I have been too busy lately. Less meetings feel like the relationship is cooling",
+      "ja": "恋人が「最近忙しくて」をよく言うとき。会う頻度が減ると関係が冷める気がする",
+      "zh-CN": "恋人常说「最近太忙」时。见面变少感觉关系变冷",
+      "zh-TW": "戀人常說「最近太忙」時。見面變少感覺關係變冷",
+      "vi": "Khi người yêu hay nói dạo này bận. Ít gặp cảm giác quan hệ nguội",
+      "id": "Saat pasangan sering bilang belakangan sibuk. Jarang bertemu terasa hubungan mendingin"
+    },
+    "expressLoveMethod": {
+      "en": "Wanting to be together even without special plans. I just wanted to see you",
+      "ja": "特別な計画がなくても一緒にいたい。「ただ会いたくて」",
+      "zh-CN": "没有特别计划也想在一起，「就是想见你」",
+      "zh-TW": "沒有特別計劃也想在一起，「就是想見你」",
+      "vi": "Muốn ở bên dù không có kế hoạch. Chỉ muốn gặp em",
+      "id": "Ingin bersama meski tanpa rencana. Hanya ingin melihatmu"
+    },
+    "oneLiner": {
+      "en": "The time you share together is making that relationship stronger.",
+      "ja": "あなたが一緒に過ごした時間が、その関係を強くしています。",
+      "zh-CN": "你共度的时光正在让关系更坚固。",
+      "zh-TW": "你共度的時光正在讓關係更堅固。",
+      "vi": "Thời gian bạn bên nhau đang làm quan hệ vững hơn.",
+      "id": "Waktu yang kamu habiskan bersama memperkuat hubungan itu."
+    },
+    "shareLine": {
+      "en": "My love language: Quality Time Type ⏰ Time together is the measure of love... I have been busy is the saddest → This is how I love. Couples try together",
+      "ja": "私の恋愛言語：同行時間型 ⏰ 一緒の時間が愛の尺度…「最近忙しくて」が一番残る → 私はこう愛す。カップルは一緒に",
+      "zh-CN": "我的恋爱语言：同行时间型 ⏰ 共处时间是爱的尺度…「最近忙」最委屈 → 我就这样爱。情侣一起做",
+      "zh-TW": "我的戀愛語言：同行時間型 ⏰ 共處時間是愛的尺度…「最近忙」最委屈 → 我就這樣愛。情侶一起做",
+      "vi": "Ngôn ngữ tình yêu: Kiểu thời gian ⏰ Thời gian bên nhau là thước đo… bận quá buồn nhất → Tôi yêu thế này. Cặp đôi thử cùng",
+      "id": "Bahasa cintaku: Tipe Waktu ⏰ Waktu bersama ukuran cinta… terlalu sibuk paling sedih → Aku mencintai begini. Pasangan coba bersama"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Shows Love Through Actions, Acts of Care Type",
+      "ja": "行動で心を伝える人、配慮行動型",
+      "zh-CN": "用行动传递心意的人，体贴行动型",
+      "zh-TW": "用行動傳遞心意的人，體貼行動型",
+      "vi": "Người truyền tâm ý bằng hành động, Kiểu hành động quan tâm",
+      "id": "Orang yang menyampaikan hati lewat tindakan, Tipe Tindakan Peduli"
+    },
+    "languageSummary": {
+      "en": "A type that expresses and wants to receive love through service, care, and action",
+      "ja": "奉仕・配慮・行動で愛を表現し受け取りたいタイプ",
+      "zh-CN": "用服务、体贴、行动表达并接收爱的类型",
+      "zh-TW": "用服務、體貼、行動表達並接收愛的類型",
+      "vi": "Kiểu bày tỏ và muốn nhận tình yêu qua phục vụ, quan tâm, hành động",
+      "id": "Tipe yang mengekspresikan dan ingin menerima cinta lewat pelayanan, perhatian, tindakan"
+    },
+    "quote": {
+      "en": "For you, love is action more than words. Bringing good food and stepping in first when they struggle is the greatest expression of love.",
+      "ja": "あなたにとって愛は言葉より行動です。美味しいものを用意し、つらいとき先に出ることが最大の愛の表現です。",
+      "zh-CN": "对你来说，爱重于言语的行动。准备美食、困难时先出手是最大的爱。",
+      "zh-TW": "對你來說，愛重於言語的行動。準備美食、困難時先出手是最大的愛。",
+      "vi": "Với bạn, tình yêu là hành động hơn lời. Mang đồ ngon và chủ động khi họ khó khăn là biểu hiện lớn nhất.",
+      "id": "Bagimu, cinta lebih tindakan daripada kata. Menyiapkan makanan enak dan maju duluan saat sulit adalah ekspresi terbesar."
+    },
+    "description": {
+      "en": "When your partner struggles, you naturally cook, prepare what they need, and make them comfortable. You already show love through action without saying much.",
+      "ja": "恋人がつらいとき先に食事を用意し、必要なものを準備し、相手が楽にいられるようにするのが自然なタイプ。言わなくても行動ですでに示しています。",
+      "zh-CN": "恋人难过时自然做饭、准备所需、让对方舒适。不必多说，行动已在表达。",
+      "zh-TW": "戀人難過時自然做飯、準備所需、讓對方舒適。不必多說，行動已在表達。",
+      "vi": "Khi người yêu khó khăn, tự nhiên nấu ăn, chuẩn bị, giúp họ thoải mái. Không cần nói, hành động đã nói.",
+      "id": "Saat pasangan kesulitan, alami memasak, menyiapkan kebutuhan, membuat nyaman. Tanpa banyak kata, tindakan sudah berbicara."
+    },
+    "languageType": {
+      "en": "Acts of Care Type 🤲",
+      "ja": "配慮行動型 🤲",
+      "zh-CN": "体贴行动型 🤲",
+      "zh-TW": "體貼行動型 🤲",
+      "vi": "Kiểu hành động quan tâm 🤲",
+      "id": "Tipe Tindakan Peduli 🤲"
+    },
+    "loveKeywords": {
+      "en": "Care · Action · Service · Thoughtfulness · Practice",
+      "ja": "配慮・行動・奉仕・気配り・実践",
+      "zh-CN": "体贴·行动·服务·照顾·实践",
+      "zh-TW": "體貼·行動·服務·照顧·實踐",
+      "vi": "Quan tâm · Hành động · Phục vụ · Chăm sóc · Thực hành",
+      "id": "Perhatian · Tindakan · Pelayanan · Mengurus · Praktik"
+    },
+    "strengths": {
+      "en": "Ability to give concrete help in relationships. Builds trust through action more than words",
+      "ja": "関係で具体的な助けを与える力。言葉より行動で信頼を作る",
+      "zh-CN": "在关系中给予具体帮助，用行动而非言语建立信任",
+      "zh-TW": "在關係中給予具體幫助，用行動而非言語建立信任",
+      "vi": "Khả năng giúp cụ thể trong quan hệ. Tạo tin bằng hành động hơn lời",
+      "id": "Kemampuan memberi bantuan konkret. Membangun kepercayaan lewat tindakan"
+    },
+    "lovePattern": {
+      "en": "Naturally remembers and takes care of your partner tastes, schedule, and needs",
+      "ja": "恋人の好み・スケジュール・必要なものを自然に覚えて世話する",
+      "zh-CN": "自然记住并照顾恋人喜好、日程、需求",
+      "zh-TW": "自然記住並照顧戀人喜好、日程、需求",
+      "vi": "Tự nhiên nhớ và chăm sở thích, lịch, nhu cầu người yêu",
+      "id": "Alami mengingat dan mengurus selera, jadwal, kebutuhan pasangan"
+    },
+    "compatiblePartner": {
+      "en": "Notices action-based love and appreciates it. Values small acts of care",
+      "ja": "行動での愛を気づき感謝できるタイプ。小さな配慮を大切にする人",
+      "zh-CN": "能察觉并感谢行动之爱，珍惜小体贴的人",
+      "zh-TW": "能察覺並感謝行動之愛，珍惜小體貼的人",
+      "vi": "Nhận ra và biết ơn tình yêu qua hành động. Trân trọng sự quan tâm nhỏ",
+      "id": "Menyadari cinta lewat tindakan dan berterima kasih. Menghargai perhatian kecil"
+    },
+    "hardMoment": {
+      "en": "When your partner takes your care for granted. Why do you demand words when my actions already show enough?",
+      "ja": "こう世話しても相手が当たり前にするとき。「行動で十分なのになぜ表現を求める」",
+      "zh-CN": "这样照顾却被当作理所当然时。「行动已够为什么还要表达」",
+      "zh-TW": "這樣照顧卻被當作理所當然時。「行動已夠為什麼還要表達」",
+      "vi": "Chăm sóc nhiều mà bị coi là đương nhiên. Hành động đủ rồi sao còn đòi lời",
+      "id": "Merawat tapi dianggap wajar. Tindakan sudah cukup kenapa minta kata-kata"
+    },
+    "expressLoveMethod": {
+      "en": "Taking care of small things in advance. I thought you would like this",
+      "ja": "小さなことを先回り。「好きそうだと思って」",
+      "zh-CN": "提前照顾小事，「觉得你会喜欢」",
+      "zh-TW": "提前照顧小事，「覺得你會喜歡」",
+      "vi": "Chăm việc nhỏ trước. Nghĩ em sẽ thích",
+      "id": "Mengurus hal kecil lebih dulu. Kupikir kamu akan suka"
+    },
+    "oneLiner": {
+      "en": "Each of your actions is a love language. Keep someone beside you who recognizes it.",
+      "ja": "あなたの行動一つ一つが愛の言語です。その言語を見抜く人をそばに。",
+      "zh-CN": "你的每个行动都是爱的语言，把能读懂的人留在身边。",
+      "zh-TW": "你的每個行動都是愛的語言，把能讀懂的人留在身邊。",
+      "vi": "Mỗi hành động là ngôn ngữ tình yêu. Giữ người nhìn ra bên cạnh.",
+      "id": "Setiap tindakanmu adalah bahasa cinta. Dekati orang yang mengenalinya."
+    },
+    "shareLine": {
+      "en": "My love language: Acts of Care Type 🤲 I show love through actions... Taking care beats words → This is how I love. What type are you?",
+      "ja": "私の恋愛言語：配慮行動型 🤲 行動で心を伝える…言葉より世話が表現 → 私はこう愛す。あなたは？",
+      "zh-CN": "我的恋爱语言：体贴行动型 🤲 用行动传心…照顾比言语更能表达 → 我就这样爱。你什么型？",
+      "zh-TW": "我的戀愛語言：體貼行動型 🤲 用行動傳心…照顧比言語更能表達 → 我就這樣愛。你什麼型？",
+      "vi": "Ngôn ngữ tình yêu: Kiểu hành động 🤲 Truyền tâm bằng việc làm… chăm hơn lời → Tôi yêu thế này. Bạn loại nào?",
+      "id": "Bahasa cintaku: Tipe Tindakan 🤲 Menyampaikan lewat tindakan… mengurus lebih dari kata → Aku mencintai begini. Kamu tipe apa?"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Feels Love With the Whole Body, Sensory Recharge Type",
+      "ja": "全身で感じる愛をする人、感覚充電型",
+      "zh-CN": "用全身感受爱的人，感官充电型",
+      "zh-TW": "用全身感受愛的人，感官充電型",
+      "vi": "Người cảm nhận tình yêu bằng cả cơ thể, Kiểu nạp cảm giác",
+      "id": "Orang yang merasakan cinta dengan seluruh tubuh, Tipe Isi Ulang Sensorik"
+    },
+    "languageSummary": {
+      "en": "A type recharged by touch and sensory shared experiences",
+      "ja": "スキンシップと一緒の感覚体験で愛が充電されるタイプ",
+      "zh-CN": "通过肢体接触和共同感官体验充电的类型",
+      "zh-TW": "通過肢體接觸和共同感官體驗充電的類型",
+      "vi": "Kiểu được nạp năng lượng qua chạm và trải nghiệm cảm giác chung",
+      "id": "Tipe yang terisi lewat sentuhan dan pengalaman sensorik bersama"
+    },
+    "quote": {
+      "en": "For you, love is felt through the skin. Holding hands or a hug can settle every emotion.",
+      "ja": "あなたにとって愛は肌で感じられます。手をつなぐ・抱きしめるだけで感情が整います。",
+      "zh-CN": "对你来说，爱用皮肤感受。牵手或拥抱就能平复情绪。",
+      "zh-TW": "對你來說，愛用皮膚感受。牽手或擁抱就能平復情緒。",
+      "vi": "Với bạn, tình yêu cảm nhận qua da. Nắm tay hay ôm có thể dịu mọi cảm xúc.",
+      "id": "Bagimu, cinta dirasakan lewat kulit. Pegangan tangan atau pelukan menenangkan emosi."
+    },
+    "description": {
+      "en": "A hug on a hard day comforts more than any words. You feel most loved with natural touch and also rejoice greatly in anniversary surprises and small gifts.",
+      "ja": "つらい日の抱きしめはどんな言葉より慰め。自然なスキンシップがあるとき最も愛されていると感じ、記念日サプライズや小さなプレゼントにも大きく喜ぶ人です。",
+      "zh-CN": "困难日的拥抱比任何话都安慰。自然肢体接触时最有被爱感，也很喜欢纪念惊喜和小礼物。",
+      "zh-TW": "困難日的擁抱比任何話都安慰。自然肢體接觸時最有被愛感，也很喜歡紀念驚喜和小禮物。",
+      "vi": "Ôm ngày khó khăn an ủi hơn mọi lời. Chạm tự nhiên cảm thấy được yêu nhất, cũng rất vui với bất ngờ và quà nhỏ.",
+      "id": "Pelukan di hari sulit lebih menghibur dari kata. Merasa paling dicintai saat sentuhan alami dan sangat senang dengan kejutan dan hadiah kecil."
+    },
+    "languageType": {
+      "en": "Sensory Recharge Type 💗",
+      "ja": "感覚充電型 💗",
+      "zh-CN": "感官充电型 💗",
+      "zh-TW": "感官充電型 💗",
+      "vi": "Kiểu nạp cảm giác 💗",
+      "id": "Tipe Isi Ulang Sensorik 💗"
+    },
+    "loveKeywords": {
+      "en": "Touch · Gifts · Sensation · Surprise · Recharge",
+      "ja": "スキンシップ・プレゼント・感覚・サプライズ・充電",
+      "zh-CN": "肢体接触·礼物·感官·惊喜·充电",
+      "zh-TW": "肢體接觸·禮物·感官·驚喜·充電",
+      "vi": "Chạm · Quà · Cảm giác · Bất ngờ · Nạp năng",
+      "id": "Sentuhan · Hadiah · Sensasi · Kejutan · Isi ulang"
+    },
+    "strengths": {
+      "en": "Creates sensory connection in relationships. Makes anniversaries and surprises feel special",
+      "ja": "関係で感覚的なつながりを作る力。記念日・サプライズを特別にする感覚",
+      "zh-CN": "在关系中创造感官连接，让纪念和惊喜特别",
+      "zh-TW": "在關係中創造感官連接，讓紀念和驚喜特別",
+      "vi": "Tạo kết nối cảm giác trong quan hệ. Làm kỷ niệm và bất ngờ đặc biệt",
+      "id": "Menciptakan koneksi sensorik. Membuat anniversary dan kejutan terasa spesial"
+    },
+    "lovePattern": {
+      "en": "Lots of natural contact like hand-holding and leaning on shoulders. Small gift-giving culture forms",
+      "ja": "手をつなぐ・肩にもたれるなど自然な接触が多い。小さなプレゼント文化ができる",
+      "zh-CN": "牵手靠肩等自然接触多，形成互送小礼物文化",
+      "zh-TW": "牽手靠肩等自然接觸多，形成互送小禮物文化",
+      "vi": "Nhiều chạm tự nhiên như nắm tay tựa vai. Văn hóa tặng quà nhỏ hình thành",
+      "id": "Banyak kontak alami seperti pegangan tangan. Budaya hadiah kecil terbentuk"
+    },
+    "compatiblePartner": {
+      "en": "Comfortable with touch and enjoys anniversaries and surprises together",
+      "ja": "スキンシップが自然で記念日・サプライズを一緒に楽しめるタイプ",
+      "zh-CN": "肢体接触自然，能一起享受纪念和惊喜的类型",
+      "zh-TW": "肢體接觸自然，能一起享受紀念和驚喜的類型",
+      "vi": "Thoải mái với chạm và cùng thích kỷ niệm, bất ngờ",
+      "id": "Nyaman dengan sentuhan dan menikmati anniversary dan kejutan bersama"
+    },
+    "hardMoment": {
+      "en": "When your partner is uncomfortable with touch or does not value anniversaries much",
+      "ja": "相手がスキンシップを苦手にしたり、記念日をあまり大切にしないとき",
+      "zh-CN": "对方不擅长肢体接触或不重视纪念日时",
+      "zh-TW": "對方不擅長肢體接觸或不重視紀念日時",
+      "vi": "Khi đối phương khó chịu với chạm hoặc không coi trọng kỷ niệm",
+      "id": "Saat pasangan tidak nyaman dengan sentuhan atau tidak menghargai anniversary"
+    },
+    "expressLoveMethod": {
+      "en": "Natural physical contact. Memorable surprises. I saw this and thought of you",
+      "ja": "自然な身体接触。記憶に残るサプライズ。「思い出して買った」",
+      "zh-CN": "自然身体接触，难忘惊喜，「看到想到你」",
+      "zh-TW": "自然身體接觸，難忘驚喜，「看到想到你」",
+      "vi": "Chạm tự nhiên. Bất ngờ đáng nhớ. Thấy cái này nghĩ đến em",
+      "id": "Kontak fisik alami. Kejutan berkesan. Lihat ini langsung ingat kamu"
+    },
+    "oneLiner": {
+      "en": "Your love is delivered through your whole body. That warmth gives your partner great reassurance.",
+      "ja": "あなたの愛は全身で届けられます。その温かさが相手に大きな安心を与えます。",
+      "zh-CN": "你的爱用全身传递，那份温暖给对方很大安心。",
+      "zh-TW": "你的愛用全身傳遞，那份溫暖給對方很大安心。",
+      "vi": "Tình yêu bạn truyền bằng cả cơ thể. Hơi ấm đó cho đối phương an tâm lớn.",
+      "id": "Cintamu disampaikan lewat seluruh tubuh. Kehangatan itu memberi pasangan ketenangan besar."
+    },
+    "shareLine": {
+      "en": "My love language: Sensory Recharge Type 💗 Recharged by touch... A hug fixes everything → This is how I love. Must-try for couples",
+      "ja": "私の恋愛言語：感覚充電型 💗 スキンシップで充電…抱きしめれば全部解決 → 私はこう愛す。カップル必須",
+      "zh-CN": "我的恋爱语言：感官充电型 💗 靠肢体接触充电…拥抱就解决 → 我就这样爱。情侣必测",
+      "zh-TW": "我的戀愛語言：感官充電型 💗 靠肢體接觸充電…擁抱就解決 → 我就這樣愛。情侶必測",
+      "vi": "Ngôn ngữ tình yêu: Kiểu cảm giác 💗 Nạp bằng chạm… ôm là hết → Tôi yêu thế này. Cặp đôi nên thử",
+      "id": "Bahasa cintaku: Tipe Sensorik 💗 Isi ulang lewat sentuhan… peluk selesai → Aku mencintai begini. Wajib untuk pasangan"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Uses All Five Languages, All-Round Love Type",
+      "ja": "5つの言語をすべて使う人、全方位愛型",
+      "zh-CN": "五种语言都会用的人，全方位爱型",
+      "zh-TW": "五種語言都會用的人，全方位愛型",
+      "vi": "Người dùng cả 5 ngôn ngữ, Kiểu tình yêu toàn diện",
+      "id": "Orang yang memakai kelima bahasa, Tipe Cinta Menyeluruh"
+    },
+    "languageSummary": {
+      "en": "A type that expresses love through words, time, action, touch, and gifts",
+      "ja": "言葉・時間・行動・スキンシップ・プレゼントすべてで愛を表現するタイプ",
+      "zh-CN": "用言语、时间、行动、接触、礼物所有方式表达爱的类型",
+      "zh-TW": "用言語、時間、行動、接觸、禮物所有方式表達愛的類型",
+      "vi": "Kiểu bày tỏ tình yêu bằng lời, thời gian, hành động, chạm, quà",
+      "id": "Tipe yang mengekspresikan cinta lewat kata, waktu, tindakan, sentuhan, hadiah"
+    },
+    "quote": {
+      "en": "For you, one language is not enough. You want to deliver love in every way possible.",
+      "ja": "あなたにとって一つの言語では足りません。可能なすべての方法で伝えたいのです。",
+      "zh-CN": "对你来说一种语言不够，想用一切可能的方式传递爱。",
+      "zh-TW": "對你來說一種語言不夠，想用一切可能的方式傳遞愛。",
+      "vi": "Với bạn một ngôn ngữ không đủ. Muốn truyền tình yêu mọi cách có thể.",
+      "id": "Bagimu satu bahasa tidak cukup. Ingin menyampaikan cinta dengan segala cara."
+    },
+    "description": {
+      "en": "Words, shared time, small acts of care, stepping in when they struggle, and touch to confirm connection all come naturally. You love in a fully devoted way.",
+      "ja": "言葉・時間・小さな世話・つらいときの行動・スキンシップですべてが自然。相手に完全に捧げる恋愛をします。",
+      "zh-CN": "言语、共处、小照顾、困难时的行动、肢体确认连接都自然。以完全奉献的方式恋爱。",
+      "zh-TW": "言語、共處、小照顧、困難時的行動、肢體確認連接都自然。以完全奉獻的方式戀愛。",
+      "vi": "Lời, thời gian, chăm nhỏ, hành động lúc khó, chạm xác nhận kết nối đều tự nhiên. Yêu với sự cống hiến trọn vẹn.",
+      "id": "Kata, waktu, perhatian kecil, tindakan saat sulit, sentuhan semua alami. Mencintai dengan pengabdian penuh."
+    },
+    "languageType": {
+      "en": "All-Round Love Type 🌟",
+      "ja": "全方位愛型 🌟",
+      "zh-CN": "全方位爱型 🌟",
+      "zh-TW": "全方位愛型 🌟",
+      "vi": "Kiểu tình yêu toàn diện 🌟",
+      "id": "Tipe Cinta Menyeluruh 🌟"
+    },
+    "loveKeywords": {
+      "en": "All-round · Devotion · Full expression · Every language · Sincerity",
+      "ja": "全方位・献身・完全な表現・すべての言語・真心",
+      "zh-CN": "全方位·奉献·完整表达·所有语言·真心",
+      "zh-TW": "全方位·奉獻·完整表達·所有語言·真心",
+      "vi": "Toàn diện · Cống hiến · Biểu đạt trọn · Mọi ngôn ngữ · Chân thành",
+      "id": "Menyeluruh · Pengabdian · Ekspresi penuh · Semua bahasa · Ketulusan"
+    },
+    "strengths": {
+      "en": "Can cover any love language your partner receives. They feel fully loved in the relationship",
+      "ja": "相手がどの言語で受け取ってもカバー可能。関係で十分に愛されている感を与える",
+      "zh-CN": "无论对方用什么语言接收爱都能覆盖，让对方感到充分被爱",
+      "zh-TW": "無論對方用什麼語言接收愛都能覆蓋，讓對方感到充分被愛",
+      "vi": "Bao phủ mọi ngôn ngữ tình yêu đối phương nhận. Họ cảm thấy được yêu đủ",
+      "id": "Bisa menutupi bahasa cinta apapun. Pasangan merasa cukup dicintai"
+    },
+    "lovePattern": {
+      "en": "Gives your all in love. Reads your partner needs first and tries to match them",
+      "ja": "恋愛では本気。相手の必要を先に把握して合わせようとする",
+      "zh-CN": "恋爱时全力以赴，先把握对方需求并配合",
+      "zh-TW": "戀愛時全力以赴，先把握對方需求並配合",
+      "vi": "Yêu hết mình. Nắm nhu cầu đối phương trước và cố đáp ứng",
+      "id": "Serius saat pacaran. Pahami kebutuhan pasangan dulu dan sesuaikan"
+    },
+    "compatiblePartner": {
+      "en": "Someone who does not take this devotion for granted and can return similar warmth",
+      "ja": "この献身を当たり前にせず、感謝して似た温度で返せる人",
+      "zh-CN": "不把这份奉献当理所当然，能感恩并以相似温度回报的人",
+      "zh-TW": "不把這份奉獻當理所當然，能感恩並以相似溫度回報的人",
+      "vi": "Không coi cống hiến là đương nhiên, biết ơn và trả lại nhiệt độ tương tự",
+      "id": "Tidak menganggap pengabdian wajar dan bisa membalas dengan kehangatan serupa"
+    },
+    "hardMoment": {
+      "en": "When you give so much but your partner is indifferent or does not return similarly. When it becomes a one-sided giving relationship",
+      "ja": "こう尽くしても相手が無感覚だったり同じように返さないとき。一方通行の関係になったとき",
+      "zh-CN": "这样付出对方却无感或不 similarly 回报时。变成单方面给予的关系",
+      "zh-TW": "這樣付出對方卻無感或不 similarly 回報時。變成單方面給予的關係",
+      "vi": "Cống hiến nhiều mà đối phương vô cảm hoặc không trả lại. Trở thành quan hệ một chiều",
+      "id": "Memberi banyak tapi pasangan acuh atau tidak membalas. Jadi hubungan memberi sepihak"
+    },
+    "cautions": {
+      "en": "Giving everything can lead to burnout. Your partner must be able to give back for a healthy relationship",
+      "ja": "すべてを与えると消耗する可能性。相手も返せてこそ健全な関係",
+      "zh-CN": "什么都给可能耗尽自己，对方也能给予才是健康关系",
+      "zh-TW": "什麼都給可能耗盡自己，對方也能給予才是健康關係",
+      "vi": "Cho hết có thể kiệt sức. Đối phương cũng phải cho lại mới khỏe",
+      "id": "Memberi segalanya bisa habis tenaga. Pasangan juga harus bisa memberi agar sehat"
+    },
+    "certificationPhrase": {
+      "en": "All-Round Love Type achieved 🌟 Full load of all 5 languages: words, time, action, touch, gifts",
+      "ja": "全方位愛型達成 🌟 言葉・時間・行動・スキンシップ・プレゼント5言語フル装備",
+      "zh-CN": "全方位爱型达成 🌟 言语·时间·行动·肢体接触·礼物五种语言全装",
+      "zh-TW": "全方位愛型達成 🌟 言語·時間·行動·肢體接觸·禮物五種語言全裝",
+      "vi": "Đạt Kiểu toàn diện 🌟 Full 5 ngôn ngữ: lời, thời gian, hành động, chạm, quà",
+      "id": "Tipe Menyeluruh tercapai 🌟 Full 5 bahasa: kata, waktu, tindakan, sentuhan, hadiah"
+    },
+    "oneLiner": {
+      "en": "Your love fills your partner completely. May you also be filled in return.",
+      "ja": "あなたの愛は相手を満たします。あなたも満たされる関係でありますように。",
+      "zh-CN": "你的爱填满对方，也希望你也被同样填满。",
+      "zh-TW": "你的愛填滿對方，也希望你也被同樣填滿。",
+      "vi": "Tình yêu bạn lấp đầy đối phương. Mong bạn cũng được lấp đầy.",
+      "id": "Cintamu memenuhi pasangan. Semoga kamu juga terisi balik."
+    },
+    "shareLine": {
+      "en": "My love language: All-Round Love Type 🌟 Full 5 languages... Hardest when partner is indifferent after you give everything → Couples try together, different results spark talk",
+      "ja": "私の恋愛言語：全方位愛型 🌟 5言語フル…全部しても相手が無感覚が一番つらい → カップルは一緒に。結果違うと会話が始まる",
+      "zh-CN": "我的恋爱语言：全方位爱型 🌟 五种语言全装…都给了对方还无感最难 → 情侣一起做，结果不同对话开始",
+      "zh-TW": "我的戀愛語言：全方位愛型 🌟 五種語言全裝…都給了對方還無感最難 → 情侶一起做，結果不同對話開始",
+      "vi": "Ngôn ngữ tình yêu: Kiểu toàn diện 🌟 Full 5 ngôn ngữ… cho hết mà vô cảm khó nhất → Cặp đôi thử, khác kết quả mở đầu trò chuyện",
+      "id": "Bahasa cintaku: Tipe Menyeluruh 🌟 Full 5 bahasa… memberi semua tapi pasangan acuh paling berat → Pasangan coba bersama, beda hasil mulai obrolan"
+    }
+  }
+]
