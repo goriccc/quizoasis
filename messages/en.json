@@ -11301,6 +11301,76 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3LoveExpectationDiagnosisTest": {
+    "startMessage": {
+      "line1": "How much do you expect from your partner?",
+      "line2": "Low expectations may mean less hurt but a shallower relationship; high expectations can feel deeply loving but bring bigger disappointments. The problem is we often do not know our own level.",
+      "line3": "You may think you do not expect much but actually expect a lot—or think your expectations are high when they are actually healthy. Both happen often.",
+      "line4": "12 questions honestly measure where your love expectations really stand.",
+      "line5": "Measure My Love Expectations 💗 Start Honestly",
+      "note": "※ Answer as honestly as possible based on being in a relationship or past dating experience—not your ideal self, but the real you."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Love Expectation Diagnosis)",
+      "goToTest": "Go to test",
+      "startTest": "Measure My Love Expectations 💗 Start Honestly",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests",
+      "similarTests": "Similar tests",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "expectationSummary": "Expectation level summary",
+      "expectationType": "Expectation type",
+      "expectationKeywordsTitle": "Expectation keywords",
+      "domainAnalysisTitle": "Scores by 6 areas",
+      "totalScore": "Total score",
+      "scoreUnit": " pts",
+      "contactCommunicationDomain": "Contact & communication expectations",
+      "timeMeetingDomain": "Time & meeting expectations",
+      "emotionalSupportDomain": "Emotional support expectations",
+      "understandingEmpathyDomain": "Understanding & empathy expectations",
+      "futureDevotionDomain": "Future & devotion expectations",
+      "overallExpectLevelDomain": "Overall expectation level",
+      "strongestDomain": "Highest-expectation love area",
+      "boostDomain": "Most self-reliant area",
+      "strengthsTitle": "Strengths of this type",
+      "cautionsTitle": "Cautions for this type",
+      "guidanceAdviceTitle": "Guidance for this type",
+      "certificationPhrase": "Certification",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "My love expectations: {type}! 💗 Try with a friend or partner and see the gap → I'm this type, what about you?",
+      "kakao": "My love expectations: {type}! 💗 Try with a friend or partner",
+      "wechat": "My love expectations: {type}! 💗 Couples should try together",
+      "whatsapp": "My love expectations: {type}! 💗 You try it too",
+      "telegram": "My love expectations: {type}! 💗 What type are you?",
+      "line": "My love expectations: {type}! 💗 Compare with a friend",
+      "startDefault": "My Love Expectation Diagnosis 💗 12 questions",
+      "startKakao": "My Love Expectation Diagnosis 💗 12 questions",
+      "startWechat": "My Love Expectation Diagnosis 💗 12 questions",
+      "startWhatsapp": "My Love Expectation Diagnosis 💗 12 questions",
+      "startTelegram": "My Love Expectation Diagnosis 💗 12 questions",
+      "startLine": "My Love Expectation Diagnosis 💗 12 questions"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",

@@ -1,0 +1,196 @@
+{
+  "questions": [
+    {
+      "q": {
+        "en": "What are my expectations regarding my partner's contact patterns?",
+        "ja": "恋人の連絡パターンに対する私の期待は？",
+        "zh-CN": "我对恋人联系模式的期待是？",
+        "zh-TW": "我對戀人聯繫模式的期待是？",
+        "vi": "Kỳ vọng của tôi về cách người yêu liên lạc là gì?",
+        "id": "Apa harapanku tentang pola kontak pasangan?"
+      },
+      "opts": [
+        {"en": "I do not expect much about contact frequency. If they are busy, later is fine, and sparse contact does not bother me", "ja": "連絡頻度に大きな期待はない。忙しければ後でもよく、連絡が少なくても気にならない", "zh-CN": "对联系频率没有太大期待。忙的话晚点也行，联系少也不太在意", "zh-TW": "對聯繫頻率沒有太大期待。忙的話晚點也行，聯繫少也不太在意", "vi": "Không kỳ vọng nhiều về tần suất liên lạc. Bận thì để sau, ít liên lạc cũng không phiền", "id": "Tidak banyak berharap soal frekuensi kontak. Sibuk nanti saja, kontak jarang pun tidak mengganggu"},
+        {"en": "One or two check-in messages a day is enough—not too often, not too sparse", "ja": "一日に1〜2回の安否連絡があれば十分。多すぎず少なすぎず", "zh-CN": "一天一两次问候联系就够了，不太频繁也不太稀疏", "zh-TW": "一天一兩次問候聯繫就夠了，不太頻繁也不太稀疏", "vi": "Một hai tin hỏi thăm mỗi ngày là đủ—không quá nhiều cũng không quá thưa", "id": "Satu atau dua pesan check-in sehari cukup—tidak terlalu sering atau terlalu jarang"},
+        {"en": "I expect contact morning and evening. It is even better if they reach out first when they think of me", "ja": "朝晩の連絡を期待する。思い出したときに先に連絡してくれるとより嬉しい", "zh-CN": "期待早晚联系，中间想到我时主动联系我更好", "zh-TW": "期待早晚聯繫，中間想到我時主動聯繫我更好", "vi": "Mong liên lạc sáng tối. Càng tốt nếu họ chủ động nhắn khi nghĩ đến mình", "id": "Mengharap kontak pagi dan malam. Lebih baik jika mereka menghubungi duluan saat teringat"},
+        {"en": "I need to feel always connected. I get anxious without contact for long and hope they reach out first", "ja": "常につながっている感覚が必要。長く連絡がないと不安になり、先に連絡してほしい", "zh-CN": "需要一直连着的感觉。很久没联系会不安，希望对方先联系我", "zh-TW": "需要一直連著的感覺。很久沒聯繫會不安，希望對方先聯繫我", "vi": "Cần cảm giác luôn kết nối. Lâu không liên lạc sẽ lo và mong họ chủ động nhắn trước", "id": "Perlu merasa selalu terhubung. Lama tanpa kontak membuat cemas dan berharap mereka menghubungi dulu"}
+      ]
+    },
+    {
+      "q": {
+        "en": "When my partner replies late, I:",
+        "ja": "恋人の返信が遅いとき、私は？",
+        "zh-CN": "恋人回复慢时，我会？",
+        "zh-TW": "戀人回覆慢時，我會？",
+        "vi": "Khi người yêu trả lời chậm, tôi:",
+        "id": "Saat pasangan membalas terlambat, aku:"
+      },
+      "opts": [
+        {"en": "Do not mind at all. They may be busy and we each have our own lives", "ja": "全く気にしない。忙しいかもしれないし、それぞれの生活がある", "zh-CN": "完全不在意。可能很忙，各自有各自的生活", "zh-TW": "完全不在意。可能很忙，各自有各自的生活", "vi": "Hoàn toàn không bận tâm. Họ có thể bận và mỗi người có cuộc sống riêng", "id": "Sama sekali tidak peduli. Mungkin sibuk dan masing-masing punya hidup sendiri"},
+        {"en": "Sometimes wonder, but if I wait long I reach out first or let it go", "ja": "たまに気になるが、長く待てば先に連絡するかそのまま流す", "zh-CN": "偶尔好奇，等久了会主动联系或就这样算了", "zh-TW": "偶爾好奇，等久了會主動聯繫或就這樣算了", "vi": "Đôi khi tò mò, nhưng đợi lâu thì chủ động nhắn hoặc bỏ qua", "id": "Kadang penasaran, tapi kalau lama menunggu aku hubungi dulu atau biarkan saja"},
+        {"en": "It bothers me quite a bit. I wonder why they are late and what is going on", "ja": "かなり気になる。なぜ遅いのか、何があったのか考えてしまう", "zh-CN": "挺在意的，会想为什么迟回、发生了什么事", "zh-TW": "挺在意的，會想為什麼遲回、發生了什麼事", "vi": "Khá bận tâm. Tự hỏi vì sao trả lời chậm và chuyện gì đang xảy ra", "id": "Cukup mengganggu. Aku penasaran kenapa telat dan ada apa"},
+        {"en": "I get very anxious. All kinds of thoughts run through my head while waiting. Read receipts bother me even more", "ja": "とても不安になる。返信を待つ間いろいろ考える。既読通知があるとさらに気になる", "zh-CN": "很不安，等回复时会想很多。有已读通知更在意", "zh-TW": "很不安，等回覆時會想很多。有已讀通知更在意", "vi": "Rất lo lắng. Chờ trả lời nghĩ linh tinh. Có thông báo đã đọc càng bận tâm hơn", "id": "Sangat cemas. Banyak pikiran saat menunggu balasan. Notifikasi dibaca membuat lebih was-was"}
+      ]
+    },
+    {
+      "q": {
+        "en": "What are my expectations about how often we meet?",
+        "ja": "恋人との会う頻度に対する私の期待は？",
+        "zh-CN": "我对和恋人见面频率的期待是？",
+        "zh-TW": "我對和戀人見面頻率的期待是？",
+        "vi": "Kỳ vọng của tôi về tần suất gặp người yêu là gì?",
+        "id": "Apa harapanku tentang seberapa sering kami bertemu?"
+      },
+      "opts": [
+        {"en": "We do not need to meet often. A few times a month is enough to maintain the relationship", "ja": "あまり会わなくてもよい。月に数回会えば関係は保てる", "zh-CN": "不用经常见，一个月见几次也能维持关系", "zh-TW": "不用經常見，一個月見幾次也能維持關係", "vi": "Không cần gặp thường xuyên. Vài lần một tháng vẫn duy trì được quan hệ", "id": "Tidak perlu sering bertemu. Beberapa kali sebulan cukup untuk menjaga hubungan"},
+        {"en": "About once or twice a week is right. We each have lives and can adjust within that", "ja": "週1〜2回くらいが適当。それぞれ生活があり、その中で調整すればよい", "zh-CN": "一周一两次比较合适，各自有生活，在其中协调就好", "zh-TW": "一週一兩次比較合適，各自有生活，在其中協調就好", "vi": "Khoảng một hai lần một tuần là vừa. Mỗi người có cuộc sống riêng và có thể điều chỉnh", "id": "Sekitar satu atau dua kali seminggu pas. Masing-masing punya hidup dan bisa menyesuaikan"},
+        {"en": "I want to meet as often as possible. Three or more times a week feels closer", "ja": "できるだけ会いたい。週3回以上だとより近く感じる", "zh-CN": "尽可能多见，一周三次以上会觉得更亲近", "zh-TW": "盡可能多見，一週三次以上會覺得更親近", "vi": "Muốn gặp càng thường càng tốt. Ba lần/tuần trở lên cảm thấy gần hơn", "id": "Ingin bertemu sesering mungkin. Tiga kali seminggu atau lebih terasa lebih dekat"},
+        {"en": "I want to meet whenever we have time. Long stretches without meeting feel like we are drifting apart", "ja": "時間があるときは会いたい。会えない日が長いと関係が遠ざかる気がする", "zh-CN": "有时间就想见，见不到的日子长了会觉得关系变远", "zh-TW": "有時間就想見，見不到的日子長了會覺得關係變遠", "vi": "Muốn gặp mỗi khi có thời gian. Nhiều ngày không gặp cảm giác xa dần", "id": "Ingin bertemu setiap ada waktu. Lama tidak bertemu terasa hubungan makin jauh"}
+      ]
+    },
+    {
+      "q": {
+        "en": "When my partner often cancels plans because they are busy, I:",
+        "ja": "恋人が忙しくて約束をよくキャンセルするとき、私は？",
+        "zh-CN": "恋人因忙碌经常取消约会时，我会？",
+        "zh-TW": "戀人因忙碌經常取消約會時，我會？",
+        "vi": "Khi người yêu hay hủy hẹn vì bận, tôi:",
+        "id": "Saat pasangan sering membatalkan janji karena sibuk, aku:"
+      },
+      "opts": [
+        {"en": "Understand. We each have work and life—it happens. We can meet later", "ja": "理解する。それぞれ仕事や生活があり仕方ない。後で会えばよい", "zh-CN": "理解，各自有工作和生活，没办法。以后见就行", "zh-TW": "理解，各自有工作和生活，沒辦法。以後見就行", "vi": "Thông cảm. Mỗi người có việc và cuộc sống—không tránh được. Gặp sau cũng được", "id": "Mengerti. Masing-masing punya pekerjaan dan hidup—wajar. Nanti bertemu saja"},
+        {"en": "Feel disappointed but accept it. If it repeats too often, I bring it up", "ja": "残念だが受け入れる。あまり繰り返すなら話題にする", "zh-CN": "遗憾但接受，太频繁重复会提出来谈", "zh-TW": "遺憾但接受，太頻繁重複會提出來談", "vi": "Tiếc nhưng chấp nhận. Nếu lặp lại quá nhiều sẽ nói ra", "id": "Kecewa tapi menerima. Kalau terlalu sering, aku angkat bicara"},
+        {"en": "Feel hurt. I know they are busy but it feels like I am not a priority", "ja": "残る。忙しいのは分かるが、優先順位に入っていない気がする", "zh-CN": "觉得委屈，知道忙但感觉我没被放在优先位置", "zh-TW": "覺得委屈，知道忙但感覺我沒被放在優先位置", "vi": "Buồn. Biết họ bận nhưng cảm giác mình không được ưu tiên", "id": "Tersakiti. Tahu mereka sibuk tapi terasa aku bukan prioritas"},
+        {"en": "Feel deeply hurt. Plans are a sign that I matter to them", "ja": "とても傷つく。約束はその人が私を大切にしている証だと感じる", "zh-CN": "很受伤，约会对我来说是对方重视我的信号", "zh-TW": "很受傷，約會對我來說是對方重視我的信號", "vi": "Rất tổn thương. Hẹn hò là dấu hiệu cho thấy mình quan trọng với họ", "id": "Sangat terluka. Janji adalah tanda bahwa aku penting bagi mereka"}
+      ]
+    },
+    {
+      "q": {
+        "en": "When something hard happens, what do I expect from my partner?",
+        "ja": "つらいことが起きたとき、恋人に期待することは？",
+        "zh-CN": "遇到难事时，我对恋人期待什么？",
+        "zh-TW": "遇到難事時，我對戀人期待什麼？",
+        "vi": "Khi có chuyện khó khăn, tôi kỳ vọng gì ở người yêu?",
+        "id": "Saat ada hal sulit, apa yang kuharapkan dari pasangan?"
+      },
+      "opts": [
+        {"en": "Not much. I tend to handle hard things myself and do not lean on my partner", "ja": "特に期待しない。つらいことは自分で解決する方で、恋人に頼らない", "zh-CN": "不太期待，难事习惯自己解决，不太依赖恋人", "zh-TW": "不太期待，難事習慣自己解決，不太依賴戀人", "vi": "Không kỳ vọng nhiều. Tôi thường tự xử lý và không dựa vào người yêu", "id": "Tidak banyak. Aku cenderung menyelesaikan sendiri dan tidak bergantung pada pasangan"},
+        {"en": "Listening is enough. They do not need to fix it—empathy alone is fine", "ja": "聞いてくれれば十分。解決しなくてよく、共感だけでよい", "zh-CN": "愿意听就够了，不必解决，共情就可以", "zh-TW": "願意聽就夠了，不必解決，共情就可以", "vi": "Lắng nghe là đủ. Không cần giải quyết—đồng cảm là được", "id": "Didengarkan sudah cukup. Tidak perlu menyelesaikan—empati saja sudah baik"},
+        {"en": "I want active comfort. I hope they ask first how they can help", "ja": "積極的な慰めを望む。どう助けられるか先に聞いてほしい", "zh-CN": "希望积极安慰，最好先问能怎么帮我", "zh-TW": "希望積極安慰，最好先問能怎麼幫我", "vi": "Mong được an ủi tích cực. Mong họ hỏi trước có thể giúp gì", "id": "Ingin penghiburan aktif. Berharap mereka tanya dulu bagaimana bisa membantu"},
+        {"en": "I want them on my side and present with me—not just words but actions too", "ja": "味方になって一緒にいてほしい。言葉以上に行動でも示してほしい", "zh-CN": "希望站在我这边陪着我，不只是话，行动也要", "zh-TW": "希望站在我這邊陪著我，不只是話，行動也要", "vi": "Mong họ về phe mình và ở bên—not chỉ lời nói mà cả hành động", "id": "Ingin mereka di pihakku dan hadir—not hanya kata-kata tapi juga tindakan"}
+      ]
+    },
+    {
+      "q": {
+        "en": "My partner had a hard day and handled it alone without contacting me. I:",
+        "ja": "恋人がつらい日を一人で乗り越え、連絡しなかった。私は？",
+        "zh-CN": "恋人难过的一天独自解决，没有联系我。我会？",
+        "zh-TW": "戀人難過的一天獨自解決，沒有聯繫我。我會？",
+        "vi": "Người yêu có ngày khó khăn và tự xử lý, không liên lạc. Tôi:",
+        "id": "Pasangan punya hari sulit dan menanganinya sendiri tanpa menghubungi. Aku:"
+      },
+      "opts": [
+        {"en": "Think it is natural. Hard things do not always need to be shared—we can handle them ourselves", "ja": "当然だと思う。つらいことを必ず共有する必要はない。各自で解決すればよい", "zh-CN": "觉得理所当然，难事不必都分享，各自解决就好", "zh-TW": "覺得理所當然，難事不必都分享，各自解決就好", "vi": "Thấy bình thường. Chuyện khó không nhất thiết phải chia sẻ—tự xử lý được", "id": "Merasa wajar. Hal sulit tidak harus selalu dibagi—masing-masing bisa menyelesaikan"},
+        {"en": "Would like them to tell me later, but I would not ask first", "ja": "後で話してくれればよいと思う。ただ先には聞かない", "zh-CN": "希望后来告诉我，但不会先问", "zh-TW": "希望後來告訴我，但不會先問", "vi": "Mong sau này họ kể, nhưng tôi sẽ không hỏi trước", "id": "Ingin mereka cerita nanti, tapi aku tidak akan tanya dulu"},
+        {"en": "Feel a bit left out. I think we could have talked if they had told me", "ja": "少し寂しい。言ってくれれば一緒に話せたのにと思う", "zh-CN": "有点失落，要是告诉我就一起聊了", "zh-TW": "有點失落，要是告訴我就一起聊了", "vi": "Hơi buồn. Nghĩ nếu họ nói thì mình đã cùng trò chuyện", "id": "Agak kecewa. Pikir kalau mereka bilang, kita bisa bicara bersama"},
+        {"en": "Feel very hurt. Handling it alone makes me doubt my place in the relationship", "ja": "とても残る。一人で乗り越えたことが関係での自分の居場所を疑わせる", "zh-CN": "很失落，独自承受让我怀疑在这段关系里的位置", "zh-TW": "很失落，獨自承受讓我懷疑在這段關係裡的位置", "vi": "Rất buồn. Tự gánh một mình khiến tôi nghi ngờ vị trí của mình trong quan hệ", "id": "Sangat kecewa. Menanganinya sendiri membuatku meragukan posisiku dalam hubungan"}
+      ]
+    },
+    {
+      "q": {
+        "en": "What do I expect about my partner noticing my mood or emotional changes?",
+        "ja": "恋人が私の気分や感情の変化に気づくことへの期待は？",
+        "zh-CN": "我对恋人察觉我心情或情绪变化的期待是？",
+        "zh-TW": "我對戀人察覺我心情或情緒變化的期待是？",
+        "vi": "Tôi kỳ vọng gì về việc người yêu nhận ra tâm trạng hoặc thay đổi cảm xúc của mình?",
+        "id": "Apa harapanku tentang pasangan menyadari perubahan mood atau emosiku?"
+      },
+      "opts": [
+        {"en": "If I do not say it, they do not need to know. No need to read my mind", "ja": "言わなければ分からなくて当然。わざわざ察する必要はない", "zh-CN": "不说就不知道很正常，不必特意察觉", "zh-TW": "不說就不知道很正常，不必特意察覺", "vi": "Không nói thì không biết là bình thường. Không cần đoán ý", "id": "Kalau tidak dibilang, wajar tidak tahu. Tidak perlu bisa membaca pikiran"},
+        {"en": "It would be nice if they ask when something seems off. They do not need to know everything", "ja": "おかしいと思ったら聞いてくれると嬉しい。全部分かる必要はない", "zh-CN": "觉得不对劲时问一下就好，不必全都知道", "zh-TW": "覺得不對勁時問一下就好，不必全都知道", "vi": "Hỏi khi thấy có gì lạ thì tốt. Không cần biết hết", "id": "Bagus jika mereka tanya saat ada yang aneh. Tidak perlu tahu semuanya"},
+        {"en": "I want them to notice even without me saying. That feels like they really know me", "ja": "言わなくても察してほしい。それがよく分かってくれている証だと感じる", "zh-CN": "希望我不说也能察觉，那感觉像真的懂我", "zh-TW": "希望我不說也能察覺，那感覺像真的懂我", "vi": "Mong họ nhận ra dù mình không nói. Đó là dấu hiệu họ hiểu mình", "id": "Ingin mereka sadar meski aku tidak bilang. Itu terasa seperti mereka benar-benar mengenalku"},
+        {"en": "I want them to notice first and reach out. A relationship where I must speak to be understood feels lacking", "ja": "先に気づいて近づいてほしい。言わないと分からない関係は少し物足りない", "zh-CN": "希望先察觉并主动靠近，必须说了才懂的关系有点遗憾", "zh-TW": "希望先察覺並主動靠近，必須說了才懂的關係有點遺憾", "vi": "Mong họ nhận ra trước và chủ động lại gần. Quan hệ phải nói mới hiểu hơi thiếu", "id": "Ingin mereka sadar dulu dan mendekat. Hubungan yang harus dibilang dulu baru paham terasa kurang"}
+      ]
+    },
+    {
+      "q": {
+        "en": "When my partner does not understand me or my perspective, I:",
+        "ja": "恋人が私を理解できない、または私の立場が分からないとき、私は？",
+        "zh-CN": "恋人不能理解我或不懂我的立场时，我会？",
+        "zh-TW": "戀人不能理解我或不懂我的立場時，我會？",
+        "vi": "Khi người yêu không hiểu mình hoặc không hiểu quan điểm của mình, tôi:",
+        "id": "Saat pasangan tidak memahami aku atau sudut pandangku, aku:"
+      },
+      "opts": [
+        {"en": "Can explain and it is fine if they do not fully get it. I do not need to be understood in everything", "ja": "説明すればよく、完全に理解されなくてもよい。すべて理解される必要はない", "zh-CN": "解释就好，不完全理解也行，不必事事被理解", "zh-TW": "解釋就好，不完全理解也行，不必事事被理解", "vi": "Giải thích là được, không hiểu hết cũng ổn. Không cần được hiểu mọi thứ", "id": "Bisa dijelaskan dan tidak apa-apa kalau tidak sepenuhnya paham. Tidak perlu dipahami dalam segala hal"},
+        {"en": "Hope they try to understand if I explain. Full understanding is not required", "ja": "説明すれば理解しようとしてほしい。完全な理解は必要ない", "zh-CN": "希望解释后愿意理解，不必完全懂", "zh-TW": "希望解釋後願意理解，不必完全懂", "vi": "Mong họ cố hiểu nếu mình giải thích. Không cần hiểu hoàn toàn", "id": "Berharap mereka berusaha paham jika aku jelaskan. Pemahaman penuh tidak wajib"},
+        {"en": "Feel frustrated when they do not try. I wish they would make more effort to know me", "ja": "努力なく理解できないのがもどかしい。もっと知ろうとしてほしい", "zh-CN": "不努力理解会烦躁，希望更想了解我", "zh-TW": "不努力理解會煩躁，希望更想了解我", "vi": "Bực khi họ không cố hiểu. Mong họ nỗ lực hiểu mình hơn", "id": "Kesal kalau tidak berusaha paham. Berharap mereka lebih berusaha mengenalku"},
+        {"en": "Feel very lonely. As a partner, I believe they should know me deeply", "ja": "とても孤独に感じる。恋人なら深く知っていてほしい", "zh-CN": "很孤独，作为恋人应该深入了解我", "zh-TW": "很孤獨，作為戀人應該深入了解我", "vi": "Cảm thấy rất cô đơn. Là người yêu thì nên hiểu mình sâu sắc", "id": "Merasa sangat kesepian. Sebagai pasangan, mereka seharusnya mengenalku dalam-dalam"}
+      ]
+    },
+    {
+      "q": {
+        "en": "What do I expect about my partner sacrificing or compromising for me?",
+        "ja": "恋人が私のために犠牲や譲歩をすることへの期待は？",
+        "zh-CN": "我对恋人为我牺牲或让步的期待是？",
+        "zh-TW": "我對戀人為我犧牲或讓步的期待是？",
+        "vi": "Tôi kỳ vọng gì về việc người yêu hy sinh hoặc nhượng bộ vì mình?",
+        "id": "Apa harapanku tentang pasangan berkorban atau berkompromi untukku?"
+      },
+      "opts": [
+        {"en": "I do not expect it. A comfortable relationship without constant sacrifice is best", "ja": "期待しない。互いに犠牲なく快適に過ごすのがよい", "zh-CN": "不期待，彼此不牺牲、舒服相处最好", "zh-TW": "不期待，彼此不犧牲、舒服相處最好", "vi": "Không kỳ vọng. Quan hệ thoải mái không cần hy sinh liên tục là tốt nhất", "id": "Tidak mengharapkannya. Hubungan nyaman tanpa pengorbanan terus-menerus paling baik"},
+        {"en": "Mutual care in important moments is enough. I do not expect sacrifice every time", "ja": "大切な瞬間に互いに配慮すれば十分。毎回の犠牲は期待しない", "zh-CN": "重要时刻互相体谅就够，不期待每次都牺牲", "zh-TW": "重要時刻互相體諒就夠，不期待每次都犧牲", "vi": "Quan tâm lẫn nhau trong khoảnh khắc quan trọng là đủ. Không kỳ vọng hy sinh mọi lúc", "id": "Saling peduli di momen penting sudah cukup. Tidak mengharap pengorbanan setiap saat"},
+        {"en": "Sometimes I want to see they can set aside their own things for me", "ja": "時には自分のものを下ろしてくれることを見せてほしい", "zh-CN": "有时希望看到能为我把自己的事先放下", "zh-TW": "有時希望看到能為我把自己的事先放下", "vi": "Đôi khi mong thấy họ có thể buông bỏ thứ của mình vì mình", "id": "Kadang ingin melihat mereka bisa menurunkan hal mereka sendiri untukku"},
+        {"en": "Partners should willingly sacrifice for each other. I see that as a measure of real love", "ja": "恋人なら互いのために喜んで犠牲できなければならない。それが本当の愛の尺度だと思う", "zh-CN": "恋人应该愿意为彼此牺牲，那是真爱的尺度", "zh-TW": "戀人應該願意為彼此犧牲，那是真愛的尺度", "vi": "Người yêu nên sẵn sàng hy sinh vì nhau. Đó là thước đo tình yêu thật", "id": "Pasangan harus rela berkorban satu sama lain. Itu ukuran cinta sejati menurutku"}
+      ]
+    },
+    {
+      "q": {
+        "en": "What do I expect about future plans with my partner?",
+        "ja": "恋人との未来計画への期待は？",
+        "zh-CN": "我对和恋人的未来计划的期待是？",
+        "zh-TW": "我對和戀人的未來計畫的期待是？",
+        "vi": "Tôi kỳ vọng gì về kế hoạch tương lai với người yêu?",
+        "id": "Apa harapanku tentang rencana masa depan dengan pasangan?"
+      },
+      "opts": [
+        {"en": "Not much. If things are good now, the future can wait", "ja": "特にない。今がよければ未来はそのとき考えればよい", "zh-CN": "没什么期待，现在好就行，未来到时候再想", "zh-TW": "沒什麼期待，現在好就行，未來到時候再想", "vi": "Không nhiều. Bây giờ tốt là được, tương lai để sau", "id": "Tidak banyak. Kalau sekarang baik, masa depan nanti saja"},
+        {"en": "A general direction of wanting to be together is enough—even if not concrete", "ja": "具体的でなくても一緒にいたいという方向性があれば十分", "zh-CN": "不必具体，有想一起走下去的方向就够", "zh-TW": "不必具體，有想一起走下去的方向就夠", "vi": "Chỉ cần hướng muốn ở bên nhau là đủ—dù chưa cụ thể", "id": "Arah ingin bersama sudah cukup—meski belum konkret"},
+        {"en": "I want to share somewhat concrete future talks and confirm we look the same way", "ja": "ある程度具体的な未来の話を共有し、同じ方向を見ているか確認したい", "zh-CN": "希望有一定具体的未来对话，确认方向一致", "zh-TW": "希望有一定具體的未來對話，確認方向一致", "vi": "Muốn chia sẻ chuyện tương lai khá cụ thể và xác nhận cùng hướng", "id": "Ingin berbagi rencana masa depan yang cukup konkret dan memastikan arah yang sama"},
+        {"en": "I want step-by-step plans and frequent future talks. An uncertain future makes me anxious", "ja": "段階的な計画と未来の話をよくしたい。不確かな未来は不安", "zh-CN": "希望分阶段计划并经常聊未来，不确定的未来让我不安", "zh-TW": "希望分階段計畫並經常聊未來，不確定的未來讓我不安", "vi": "Muốn lập kế hoạch từng bước và thường nói về tương lai. Tương lai mơ hồ gây lo", "id": "Ingin rencana bertahap dan sering bicara masa depan. Masa depan tidak pasti membuat cemas"}
+      ]
+    },
+    {
+      "q": {
+        "en": "If I had to describe my expectations of my partner in one phrase, I would say:",
+        "ja": "恋人への期待を一言で表すなら？",
+        "zh-CN": "用一句话形容我对恋人的期待，我会说？",
+        "zh-TW": "用一句話形容我對戀人的期待，我會說？",
+        "vi": "Nếu mô tả kỳ vọng với người yêu bằng một câu, tôi nói:",
+        "id": "Jika harus menggambarkan harapanku pada pasangan dalam satu kalimat, aku bilang:"
+      },
+      "opts": [
+        {"en": "Almost none. Just having them is enough", "ja": "ほとんどない。いてくれるだけで十分", "zh-CN": "几乎没什么，有他们在就够了", "zh-TW": "幾乎沒什麼，有他們在就夠了", "vi": "Gần như không có. Có họ là đủ", "id": "Hampir tidak ada. Ada mereka saja sudah cukup"},
+        {"en": "Moderate expectations—just what feels comfortable for both of us", "ja": "適度な期待。お互いに心地よい程度でよい", "zh-CN": "适度期待，彼此舒服的程度就好", "zh-TW": "適度期待，彼此舒服的程度就好", "vi": "Kỳ vọng vừa phải—ở mức thoải mái cho cả hai", "id": "Harapan moderat—sejauh yang nyaman untuk kita berdua"},
+        {"en": "I do have expectations. As a partner, there are things I hope they would do", "ja": "なかなか期待がある。恋人ならこれくらいはしてほしいことがある", "zh-CN": "还是有不少期待，作为恋人有些事希望对方做到", "zh-TW": "還是有不少期待，作為戀人有些事希望對方做到", "vi": "Tôi có kỳ vọng khá nhiều. Là người yêu thì có những điều mong họ làm", "id": "Aku memang punya harapan. Sebagai pasangan, ada hal yang kuharap mereka lakukan"},
+        {"en": "Quite a lot. I believe a partner should be special and I want that", "ja": "かなりある。恋人は特別であるべきだと思い、それを望む", "zh-CN": "期待挺多，恋人应该特别，我也希望如此", "zh-TW": "期待挺多，戀人應該特別，我也希望如此", "vi": "Khá nhiều. Tôi nghĩ người yêu nên đặc biệt và tôi mong điều đó", "id": "Cukup banyak. Aku percaya pasangan harus spesial dan aku menginginkannya"}
+      ]
+    },
+    {
+      "q": {
+        "en": "When I feel our expectations differ, I:",
+        "ja": "恋人と期待値が違うと感じたとき、私は？",
+        "zh-CN": "感觉和恋人期待不同时，我会？",
+        "zh-TW": "感覺和戀人期待不同時，我會？",
+        "vi": "Khi cảm thấy kỳ vọng khác nhau, tôi:",
+        "id": "Saat merasa harapan kami berbeda, aku:"
+      },
+      "opts": [
+        {"en": "Do not see it as a big problem. Different is fine—we can each do our own way", "ja": "大きな問題とは思わない。違っても各自のやり方でよい", "zh-CN": "不觉得是大问题，不同也可以各自的方式", "zh-TW": "不覺得是大問題，不同也可以各自的方式", "vi": "Không coi là vấn đề lớn. Khác cũng được—mỗi người theo cách mình", "id": "Tidak anggap masalah besar. Beda juga oke—masing-masing dengan caranya"},
+        {"en": "Think we can talk and adjust. It is okay to be different", "ja": "話して調整すればよいと思う。違っていてもよい", "zh-CN": "觉得可以谈并调整，不同也可以接受", "zh-TW": "覺得可以談並調整，不同也可以接受", "vi": "Nghĩ có thể nói chuyện và điều chỉnh. Khác nhau cũng được", "id": "Pikir bisa bicara dan menyesuaikan. Beda itu wajar"},
+        {"en": "Feel we should align. Difference feels uncomfortable and I want them to match my expectations", "ja": "合わせていくべきだと思う。違うと居心地が悪く、自分の期待に合わせてほしい", "zh-CN": "觉得应该磨合，不同会不自在，希望对方符合我的期待", "zh-TW": "覺得應該磨合，不同會不自在，希望對方符合我的期待", "vi": "Cảm thấy nên hòa hợp. Khác nhau khó chịu và mong họ khớp kỳ vọng của mình", "id": "Merasa harus diselaraskan. Beda terasa tidak nyaman dan berharap mereka sesuai harapanku"},
+        {"en": "Struggle a lot. Different expectations feel like I am not loved", "ja": "とてもつらい。期待値が違うと愛されていない気がする", "zh-CN": "很难受，期待不同会觉得没被爱着", "zh-TW": "很難受，期待不同會覺得沒被愛著", "vi": "Rất khó chịu. Kỳ vọng khác nhau cảm giác như mình không được yêu", "id": "Sangat berat. Harapan berbeda terasa seperti aku tidak dicintai"}
+      ]
+    }
+  ]
+}

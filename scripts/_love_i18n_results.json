@@ -1,0 +1,542 @@
+[
+  {
+    "title": {
+      "en": "Someone Who Expects Almost Nothing from a Partner, Minimal Expectation Type",
+      "ja": "恋人にほとんど何も望まない人、期待値最小型",
+      "zh-CN": "对恋人几乎无所求的人，最低期待型",
+      "zh-TW": "對戀人幾乎無所求的人，最低期待型",
+      "vi": "Người gần như không mong gì ở người yêu, Kiểu kỳ vọng tối thiểu",
+      "id": "Orang yang hampir tidak berharap apa pun pada pasangan, Tipe Harapan Minimal"
+    },
+    "expectationSummary": {
+      "en": "Very low / Presence alone is enough type",
+      "ja": "非常に低い / 存在だけで十分なタイプ",
+      "zh-CN": "非常低 / 有你在就够的类型",
+      "zh-TW": "非常低 / 有你在就夠的類型",
+      "vi": "Rất thấp / Chỉ cần có mặt là đủ",
+      "id": "Sangat rendah / Kehadiran saja sudah cukup"
+    },
+    "quote": {
+      "en": "You hardly expect anything from your partner. Their presence is enough, and asking for more feels uncomfortable.",
+      "ja": "あなたは恋人にほとんど期待しません。そばにいてくれるだけで十分で、それ以上を求めるのは居心地が悪いと感じます。",
+      "zh-CN": "你对恋人几乎没什么期待。有他们在就够了，要求更多会让你不自在。",
+      "zh-TW": "你對戀人幾乎沒什麼期待。有他們在就夠了，要求更多會讓你不自在。",
+      "vi": "Bạn gần như không kỳ vọng gì ở người yêu. Có họ là đủ, và yêu cầu thêm khiến bạn khó chịu.",
+      "id": "Kamu hampir tidak berharap apa pun pada pasangan. Kehadiran mereka cukup, dan meminta lebih terasa tidak nyaman."
+    },
+    "description": {
+      "en": "You are unmoved by contact frequency, not shaken by sparse meetings, and handle hard things on your own. This can look mature, but sometimes it signals that you suppress your needs or are not receiving enough in the relationship.",
+      "ja": "連絡頻度に無関心で、会う機会が少なくても大きく揺れず、つらいことも自分で解決します。成熟に見えますが、時には自分の必要を抑えすぎている、または関係で十分に受け取れていないサインかもしれません。",
+      "zh-CN": "对联系频率无感，见面少也不太动摇，难事自己解决。这看起来像成熟，但有时可能是过度压抑需求或在关系中没有得到足够回应的信号。",
+      "zh-TW": "對聯繫頻率無感，見面少也不太動搖，難事自己解決。這看起來像成熟，但有時可能是過度壓抑需求或在關係中沒有得到足夠回應的訊號。",
+      "vi": "Bạn không bận tâm tần suất liên lạc, ít gặp cũng không lay chuyển, và tự xử lý chuyện khó. Trông có vẻ trưởng thành, nhưng đôi khi là dấu hiệu bạn đang kìm nén nhu cầu hoặc chưa nhận đủ trong quan hệ.",
+      "id": "Kamu tidak peduli frekuensi kontak, jarang bertemu pun tidak goyah, dan menyelesaikan hal sulit sendiri. Terlihat dewasa, tapi kadang menandakan kamu menekan kebutuhan atau belum cukup menerima dalam hubungan."
+    },
+    "expectationType": {
+      "en": "Minimal Expectation Type 🌿",
+      "ja": "期待値最小型 🌿",
+      "zh-CN": "最低期待型 🌿",
+      "zh-TW": "最低期待型 🌿",
+      "vi": "Kiểu kỳ vọng tối thiểu 🌿",
+      "id": "Tipe Harapan Minimal 🌿"
+    },
+    "expectationKeywords": {
+      "en": "Independence · Self-reliance · Presence is enough · No demands",
+      "ja": "独立・自立・存在だけで十分・要求なし",
+      "zh-CN": "独立·自立·有你在就够·无要求",
+      "zh-TW": "獨立·自立·有你在就夠·無要求",
+      "vi": "Độc lập · Tự lập · Có mặt là đủ · Không đòi hỏi",
+      "id": "Independen · Mandiri · Kehadiran cukup · Tanpa tuntutan"
+    },
+    "strengths": {
+      "en": "Does not burden your partner. Less conflict in relationships. A solid independent life",
+      "ja": "相手に負担をかけない。関係の葛藤が少ない。自立した生活がしっかりしている",
+      "zh-CN": "不给对方负担，关系中冲突少，独立生活稳固",
+      "zh-TW": "不給對方負擔，關係中衝突少，獨立生活穩固",
+      "vi": "Không làm phiền đối phương. Ít xung đột trong quan hệ. Cuộc sống độc lập vững",
+      "id": "Tidak membebani pasangan. Konflik dalam hubungan lebih sedikit. Hidup mandiri yang kokoh"
+    },
+    "cautions": {
+      "en": "Too little expectation can shallow the relationship and make your partner care less\nYou may think you want nothing while actually accumulating unmet needs\nExpressing your needs is not weakness. Expecting from a partner can enrich the relationship",
+      "ja": "期待が少なすぎると関係が浅くなり、相手が気にかけなくなることがある\n「望むことがない」と思っていても、実は受け取れずに溜まっている場合がある\n必要を表現することは弱さではない。恋人への期待は関係を豊かにできる",
+      "zh-CN": "期待太少关系可能变浅，对方也可能更少关心你\n你以为无所求，实际可能是没得到而累积\n表达需求不是软弱，对恋人有期待能让关系更丰富",
+      "zh-TW": "期待太少關係可能變淺，對方也可能更少關心你\n你以為無所求，實際可能是沒得到而累積\n表達需求不是軟弱，對戀人有期待能讓關係更豐富",
+      "vi": "Kỳ vọng quá thấp có thể làm quan hệ nông và đối phương ít quan tâm hơn\nBạn nghĩ không mong gì nhưng thực ra đang tích lũy nhu cầu chưa được đáp ứng\nBày tỏ nhu cầu không phải yếu đuối. Kỳ vọng ở người yêu có thể làm quan hệ phong phú hơn",
+      "id": "Harapan terlalu sedikit bisa membuat hubungan dangkal dan pasangan lebih acuh\nKamu pikir tidak menginginkan apa pun padahal kebutuhan terpendam\nMengekspresikan kebutuhan bukan kelemahan. Berharap pada pasangan bisa memperkaya hubungan"
+    },
+    "guidanceAdvice": {
+      "en": "Recognize that you deserve to receive too. Try expressing even small things you want",
+      "ja": "自分も受け取る資格があると認識する。小さなことでも望むことを表現してみる",
+      "zh-CN": "认识到你也值得被给予，试着表达哪怕很小的需求",
+      "zh-TW": "認識到你也值得被給予，試著表達哪怕很小的需求",
+      "vi": "Nhận ra bạn cũng xứng đáng được nhận. Thử bày tỏ cả những điều nhỏ bạn muốn",
+      "id": "Sadari bahwa kamu juga layak menerima. Coba ungkapkan hal kecil yang kamu inginkan"
+    },
+    "oneLiner": {
+      "en": "Maybe it is not that you want nothing—you may not know you are allowed to want. It is okay to expect from your partner.",
+      "ja": "望むことがないのではなく、望んでよいと知らないのかもしれません。恋人に期待しても大丈夫です。",
+      "zh-CN": "也许不是你不想要，而是你不知道可以要。对恋人有期待是可以的。",
+      "zh-TW": "也許不是你不想要，而是你不知道可以要。對戀人有期待是可以的。",
+      "vi": "Có thể không phải bạn không mong—mà bạn chưa biết mình được phép mong. Kỳ vọng ở người yêu là ổn.",
+      "id": "Mungkin bukan kamu tidak menginginkan apa pun—kamu belum tahu boleh berharap. Mengharapkan pasangan itu oke."
+    },
+    "shareLine": {
+      "en": "My love expectations: Minimal Type 🌿 They say I hardly expect anything from my partner... just having them is enough—so true → What's your score?",
+      "ja": "私の恋愛期待値：最小型 🌿 恋人にほとんど何も望まない... いてくれるだけで十分、当たり → あなたは何点？",
+      "zh-CN": "我的恋爱期待值：最低型 🌿 说我对恋人几乎无所求... 有你在就够太准了 → 你几分？",
+      "zh-TW": "我的戀愛期待值：最低型 🌿 說我對戀人幾乎無所求... 有你在就夠太準了 → 你幾分？",
+      "vi": "Kỳ vọng tình yêu: Tối thiểu 🌿 Bảo tôi gần như không mong gì... có là đủ—đúng quá → Bạn mấy điểm?",
+      "id": "Harapan cintaku: Minimal 🌿 Katanya aku hampir tidak berharap apa pun... ada saja cukup—bener → Kamu berapa poin?"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Stays Together on Top of Separate Lives, Independence-First Type",
+      "ja": "それぞれの生活の上で一緒にいる人、自立優先型",
+      "zh-CN": "在各自生活之上相伴的人，自立优先型",
+      "zh-TW": "在各自生活之上相伴的人，自立優先型",
+      "vi": "Người bên nhau trên nền cuộc sống riêng, Kiểu ưu tiên độc lập",
+      "id": "Orang yang bersama di atas kehidupan masing-masing, Tipe Independen Dulu"
+    },
+    "expectationSummary": {
+      "en": "Low / Independent yet together when needed type",
+      "ja": "低い / 自立しつつ必要なとき一緒にいるタイプ",
+      "zh-CN": "偏低 / 独立但需要时在一起的类型",
+      "zh-TW": "偏低 / 獨立但需要時在一起的類型",
+      "vi": "Thấp / Độc lập nhưng ở bên khi cần",
+      "id": "Rendah / Mandiri tapi bersama saat dibutuhkan"
+    },
+    "quote": {
+      "en": "Your expectations are healthily on the lower side. You expect from your partner without leaning too much.",
+      "ja": "あなたの期待値は健康的に低めです。恋人に期待しつつ、過度に依存しません。",
+      "zh-CN": "你的期待值健康地偏低。会对恋人有期待，但不会过度依赖。",
+      "zh-TW": "你的期待值健康地偏低。會對戀人有期待，但不會過度依賴。",
+      "vi": "Kỳ vọng của bạn ở mức thấp lành mạnh. Bạn kỳ vọng người yêu nhưng không phụ thuộc quá mức.",
+      "id": "Harapanmu sehat di sisi rendah. Kamu berharap pada pasangan tanpa terlalu bergantung."
+    },
+    "description": {
+      "en": "Sparse contact does not make you anxious. You respect each other's lives, handle hard things yourself, and lean on your partner when needed. The relationship is not your whole life—a healthy structure.",
+      "ja": "連絡が少なくても大きく不安にならず、それぞれの生活を尊重し、つらいことは自分で処理し、必要なとき恋人に頼ります。関係が人生の全てではない健全な構造です。",
+      "zh-CN": "联系少也不太焦虑，尊重各自生活，难事自己处理，需要时再依靠恋人。关系不是人生的全部，结构健康。",
+      "zh-TW": "聯繫少也不太焦慮，尊重各自生活，難事自己處理，需要時再依靠戀人。關係不是人生的全部，結構健康。",
+      "vi": "Ít liên lạc cũng không lo nhiều. Tôn trọng cuộc sống riêng, tự xử lý khó khăn và dựa vào người yêu khi cần. Quan hệ không phải cả cuộc đời—cấu trúc lành mạnh.",
+      "id": "Kontak jarang tidak membuat cemas. Menghormati hidup masing-masing, menyelesaikan hal sulit sendiri, dan bersandar pada pasangan saat perlu. Hubungan bukan seluruh hidup—struktur sehat."
+    },
+    "expectationType": {
+      "en": "Independence-First Type 🌱",
+      "ja": "自立優先型 🌱",
+      "zh-CN": "自立优先型 🌱",
+      "zh-TW": "自立優先型 🌱",
+      "vi": "Kiểu ưu tiên độc lập 🌱",
+      "id": "Tipe Independen Dulu 🌱"
+    },
+    "expectationKeywords": {
+      "en": "Self-reliance · Independence · Together when needed · Healthy distance",
+      "ja": "自立・独立・必要なとき一緒・適度な距離",
+      "zh-CN": "自立·独立·需要时在一起·适当距离",
+      "zh-TW": "自立·獨立·需要時在一起·適當距離",
+      "vi": "Tự lập · Độc lập · Bên nhau khi cần · Khoảng cách vừa phải",
+      "id": "Mandiri · Independen · Bersama saat perlu · Jarak sehat"
+    },
+    "strengths": {
+      "en": "No clinginess in relationships—your partner feels at ease. You do not block each other's growth",
+      "ja": "関係に執着がなく、相手が楽に感じる。お互いの成長を妨げない",
+      "zh-CN": "关系中不黏人，对方感到轻松，不阻碍彼此成长",
+      "zh-TW": "關係中不黏人，對方感到輕鬆，不阻礙彼此成長",
+      "vi": "Không bám víu trong quan hệ—đối phương cảm thấy thoải mái. Không cản trở sự phát triển của nhau",
+      "id": "Tidak clingy dalam hubungan—pasangan merasa nyaman. Tidak menghalangi pertumbuhan masing-masing"
+    },
+    "cautions": {
+      "en": "Expectations that are too low may make your partner feel you are not interested. Practice expressing your needs more often",
+      "ja": "期待が低すぎると、相手が関心がないと感じることがある。必要をもっと表現する練習が必要",
+      "zh-CN": "期待太低可能让对方觉得你不关心，需要更多练习表达需求",
+      "zh-TW": "期待太低可能讓對方覺得你不關心，需要更多練習表達需求",
+      "vi": "Kỳ vọng quá thấp có thể khiến đối phương nghĩ bạn không quan tâm. Cần luyện bày tỏ nhu cầu hơn",
+      "id": "Harapan terlalu rendah bisa membuat pasangan merasa kamu tidak tertarik. Latih mengekspresikan kebutuhan lebih sering"
+    },
+    "guidanceAdvice": {
+      "en": "A partner who is independent and respects each other's space",
+      "ja": "独立していてお互いの空間を尊重するタイプ",
+      "zh-CN": "独立且尊重彼此空间的类型",
+      "zh-TW": "獨立且尊重彼此空間的類型",
+      "vi": "Người độc lập và tôn trọng không gian riêng của nhau",
+      "id": "Pasangan yang independen dan menghormati ruang masing-masing"
+    },
+    "oneLiner": {
+      "en": "Your expectations are in a healthy range. Keep this balance and try expressing your needs a little more.",
+      "ja": "あなたの期待値は健康的な範囲にあります。このバランスを保ちながら、必要ももう少し表現してみてください。",
+      "zh-CN": "你的期待值在健康范围内。保持这个平衡，也试着多表达一点需求。",
+      "zh-TW": "你的期待值在健康範圍內。保持這個平衡，也試著多表達一點需求。",
+      "vi": "Kỳ vọng của bạn ở mức lành mạnh. Giữ cân bằng này và thử bày tỏ nhu cầu nhiều hơn một chút.",
+      "id": "Harapanmu berada di rentang sehat. Pertahankan keseimbangan ini dan coba ungkapkan kebutuhan sedikit lebih banyak."
+    },
+    "shareLine": {
+      "en": "My love expectations: Independence-First 🌱 Independent yet together when needed... respecting separate lives—so true → What type are you?",
+      "ja": "私の恋愛期待値：自立優先型 🌱 独立しつつ必要なとき一緒... 各自の生活を尊重、当たり → あなたはどのタイプ？",
+      "zh-CN": "我的恋爱期待值：自立优先型 🌱 独立但需要时在一起... 尊重各自生活太准 → 你是什么类型？",
+      "zh-TW": "我的戀愛期待值：自立優先型 🌱 獨立但需要時在一起... 尊重各自生活太準 → 你是什麼類型？",
+      "vi": "Kỳ vọng tình yêu: Ưu tiên độc lập 🌱 Độc lập nhưng ở bên khi cần... tôn trọng cuộc sống riêng—đúng quá → Bạn loại nào?",
+      "id": "Harapan cintaku: Independen Dulu 🌱 Mandiri tapi bersama saat perlu... hormati hidup masing-masing—bener → Kamu tipe apa?"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Wants Balanced Give-and-Take, Balanced Expectation Type",
+      "ja": "与え合うバランスを望む人、均衡期待型",
+      "zh-CN": "想要互相给予平衡的人，均衡期待型",
+      "zh-TW": "想要互相給予平衡的人，均衡期待型",
+      "vi": "Người mong sự cân bằng cho-nhận, Kiểu kỳ vọng cân bằng",
+      "id": "Orang yang menginginkan keseimbangan saling memberi, Tipe Harapan Seimbang"
+    },
+    "expectationSummary": {
+      "en": "Moderate / Mutually adjusting type",
+      "ja": "普通 / お互いに適度に合わせ合うタイプ",
+      "zh-CN": "适中 / 彼此适度磨合的类型",
+      "zh-TW": "適中 / 彼此適度磨合的類型",
+      "vi": "Vừa phải / Cùng điều chỉnh lẫn nhau",
+      "id": "Sedang / Saling menyesuaikan dengan proporsional"
+    },
+    "quote": {
+      "en": "Your expectations are at a healthy level—not too much, not too little.",
+      "ja": "あなたの期待値は適正な水準です。多すぎず少なすぎません。",
+      "zh-CN": "你的期待值在合适水平，不多不少。",
+      "zh-TW": "你的期待值在合適水準，不多不少。",
+      "vi": "Kỳ vọng của bạn ở mức phù hợp—không quá nhiều cũng không quá ít.",
+      "id": "Harapanmu di level sehat—tidak terlalu banyak, tidak terlalu sedikit."
+    },
+    "description": {
+      "en": "You want balance in contact, meetings, and emotional support. When expectations are met you feel satisfied; when not, you can talk about it. You are in the most sustainable range of love expectations.",
+      "ja": "連絡・会う頻度・感情サポートすべてで互いに与え合うバランスを望みます。期待が満たされれば満足し、満たされなければ話せるタイプです。最も持続可能な恋愛期待値の範囲にいます。",
+      "zh-CN": "在联系、见面、情感支持上都希望互相平衡。期待被满足会满意，不满足也能谈。处于最可持续的恋爱期待范围。",
+      "zh-TW": "在聯繫、見面、情感支持上都希望互相平衡。期待被滿足會滿意，不滿足也能談。處於最可持續的戀愛期待範圍。",
+      "vi": "Bạn mong sự cân bằng trong liên lạc, gặp gỡ và hỗ trợ cảm xúc. Được đáp ứng thì hài lòng, không thì nói chuyện được. Bạn ở vùng kỳ vọng tình yêu bền vững nhất.",
+      "id": "Kamu menginginkan keseimbangan dalam kontak, pertemuan, dan dukungan emosional. Terpenuhi maka puas; jika tidak, bisa dibicarakan. Kamu berada di rentang harapan cinta paling sustainable."
+    },
+    "expectationType": {
+      "en": "Balanced Expectation Type ⚖️",
+      "ja": "均衡期待型 ⚖️",
+      "zh-CN": "均衡期待型 ⚖️",
+      "zh-TW": "均衡期待型 ⚖️",
+      "vi": "Kiểu kỳ vọng cân bằng ⚖️",
+      "id": "Tipe Harapan Seimbang ⚖️"
+    },
+    "expectationKeywords": {
+      "en": "Balance · Give-and-take · Adjustment · Healthy level · Reciprocity",
+      "ja": "均衡・与え合い・調整・適正水準・相互性",
+      "zh-CN": "均衡·互相给予·磨合·合适水平·互惠",
+      "zh-TW": "均衡·互相給予·磨合·合適水準·互惠",
+      "vi": "Cân bằng · Cho-nhận · Điều chỉnh · Mức phù hợp · Tương hỗ",
+      "id": "Keseimbangan · Saling memberi · Penyesuaian · Level sehat · Timbal balik"
+    },
+    "strengths": {
+      "en": "Realistic expectations mean less disappointment. You can adjust through conversation",
+      "ja": "期待値が現実的で失望が少ない。会話を通じて互いに調整できる",
+      "zh-CN": "期待现实，失望少，能通过沟通互相调整",
+      "zh-TW": "期待現實，失望少，能通過溝通互相調整",
+      "vi": "Kỳ vọng thực tế nên ít thất vọng. Có thể điều chỉnh qua trò chuyện",
+      "id": "Harapan realistis sehingga kecewa lebih sedikit. Bisa menyesuaikan lewat komunikasi"
+    },
+    "guidanceAdvice": {
+      "en": "A partner who values communication and can adjust together",
+      "ja": "コミュニケーションを大切にし、互いに調整できるタイプ",
+      "zh-CN": "重视沟通、能一起磨合的类型",
+      "zh-TW": "重視溝通、能一起磨合的類型",
+      "vi": "Người coi trọng giao tiếp và có thể cùng điều chỉnh",
+      "id": "Pasangan yang menghargai komunikasi dan bisa menyesuaikan bersama"
+    },
+    "oneLiner": {
+      "en": "Your expectations are in the healthiest range. Keeping this balance is what helps relationships last.",
+      "ja": "あなたの期待値は最も健康的な範囲にあります。この均衡を保つことが関係を長く続ける力です。",
+      "zh-CN": "你的期待值在最健康范围，保持这个平衡是让关系长久的力量。",
+      "zh-TW": "你的期待值在最健康範圍，保持這個平衡是讓關係長久的力量。",
+      "vi": "Kỳ vọng của bạn ở vùng lành mạnh nhất. Giữ cân bằng này là sức mạnh giúp quan hệ bền lâu.",
+      "id": "Harapanmu berada di rentang paling sehat. Menjaga keseimbangan ini yang membuat hubungan bertahan lama."
+    },
+    "shareLine": {
+      "en": "My love expectations: Balanced Type ⚖️ They say I'm at a healthy level... not too much, not too little—so true → Couples should try together",
+      "ja": "私の恋愛期待値：均衡型 ⚖️ 適正水準だって... 多すぎず少なすぎず、当たり → カップルなら二人でやってみて",
+      "zh-CN": "我的恋爱期待值：均衡型 ⚖️ 说我是合适水平... 不多不少太准 → 情侣一起做吧",
+      "zh-TW": "我的戀愛期待值：均衡型 ⚖️ 說我是合適水準... 不多不少太準 → 情侶一起做吧",
+      "vi": "Kỳ vọng tình yêu: Cân bằng ⚖️ Bảo mức vừa phải... không quá nhiều cũng không quá ít—đúng quá → Cặp đôi làm cùng nhau nhé",
+      "id": "Harapan cintaku: Seimbang ⚖️ Katanya level sehat... tidak terlalu banyak atau sedikit—bener → Pasangan coba berdua"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Wants Their Heart Understood, Attentive Care Expectation Type",
+      "ja": "自分の気持ちを分かってほしい人、細やかな配慮期待型",
+      "zh-CN": "希望被懂心的人，细致关怀期待型",
+      "zh-TW": "希望被懂心的人，細緻關懷期待型",
+      "vi": "Người mong được hiểu trái tim mình, Kiểu kỳ vọng quan tâm tinh tế",
+      "id": "Orang yang ingin hatinya dipahami, Tipe Harapan Perhatian Halus"
+    },
+    "expectationSummary": {
+      "en": "High / Wants to be understood without having to say it type",
+      "ja": "高い / 言わなくても分かってほしいタイプ",
+      "zh-CN": "偏高 / 希望不说也能被懂的类型",
+      "zh-TW": "偏高 / 希望不說也能被懂的類型",
+      "vi": "Cao / Mong được hiểu dù không nói",
+      "id": "Tinggi / Ingin dipahami tanpa harus bilang"
+    },
+    "quote": {
+      "en": "You expect your partner to understand you deeply and notice things first—even without you saying them.",
+      "ja": "あなたは恋人が深く理解し、言わなくても先に気づいてほしいという期待があります。",
+      "zh-CN": "你期待恋人深度理解你，即使不说也希望对方先察觉。",
+      "zh-TW": "你期待戀人深度理解你，即使不說也希望對方先察覺。",
+      "vi": "Bạn kỳ vọng người yêu hiểu mình sâu và nhận ra trước—dù bạn chưa nói.",
+      "id": "Kamu berharap pasangan memahami dan menyadari hal-hal lebih dulu—meski kamu belum bilang."
+    },
+    "description": {
+      "en": "You hope they notice your mood without words, reach out first, and show they can set things aside for you. When these expectations are met, you feel deeply loved.",
+      "ja": "言わなくても気分を察して、先に近づき、自分のために何かを下ろせることを見せてほしいと期待します。この期待が満たされると深く愛されていると感じます。",
+      "zh-CN": "希望对方不说也能察觉心情、主动靠近、为你放下一些事。这些期待被满足时会感到被深深爱着。",
+      "zh-TW": "希望對方不說也能察覺心情、主動靠近、為你放下一些事。這些期待被滿足時會感到被深深愛著。",
+      "vi": "Bạn mong họ nhận ra tâm trạng dù không nói, chủ động lại gần và thể hiện có thể buông bỏ vì bạn. Khi được đáp ứng, bạn cảm thấy được yêu sâu sắc.",
+      "id": "Kamu berharap mereka sadari mood tanpa kata, mendekat dulu, dan menunjukkan bisa menurunkan hal-hal demi kamu. Saat terpenuhi, kamu merasa dicintai dalam-dalam."
+    },
+    "expectationType": {
+      "en": "Attentive Care Expectation Type 💙",
+      "ja": "細やかな配慮期待型 💙",
+      "zh-CN": "细致关怀期待型 💙",
+      "zh-TW": "細緻關懷期待型 💙",
+      "vi": "Kiểu kỳ vọng quan tâm tinh tế 💙",
+      "id": "Tipe Harapan Perhatian Halus 💙"
+    },
+    "expectationKeywords": {
+      "en": "Understanding · Noticing · Thoughtfulness · Deep empathy · Being known",
+      "ja": "理解・気づき・細やかさ・深い共感・分かってもらう",
+      "zh-CN": "理解·察觉·细致·深度共情·被懂得",
+      "zh-TW": "理解·察覺·細緻·深度共情·被懂得",
+      "vi": "Hiểu · Nhận ra · Quan tâm · Đồng cảm sâu · Được hiểu",
+      "id": "Pemahaman · Menyadari · Perhatian · Empati mendalam · Dikenal"
+    },
+    "strengths": {
+      "en": "Pursues deep connection in relationships. Tries hard to understand your partner",
+      "ja": "関係で深いつながりを求める。相手を理解しようと努力する",
+      "zh-CN": "在关系中追求深度连接，也努力理解对方",
+      "zh-TW": "在關係中追求深度連接，也努力理解對方",
+      "vi": "Theo đuổi kết nối sâu trong quan hệ. Cố gắng hiểu đối phương",
+      "id": "Mengejar koneksi mendalam dalam hubungan. Berusaha memahami pasangan"
+    },
+    "cautions": {
+      "en": "Expecting \"you should know without me saying\" leads to big disappointment when unmet\nPeople differ in how well they read others. Telling them directly can be faster\nTry turning expectations into words. \"When this happens, I'd love it if you...\" makes relationships easier",
+      "ja": "「言わなくても分かるべき」という期待は満たされないと大きな失望につながる\n人によって察する力は違う。表現で伝える方が早い場合がある\n期待を言葉に変えてみる。「こういう時こうしてほしい」が関係をずっと楽にする",
+      "zh-CN": "“不说也该懂”的期待未满足时会大失望\n每个人察觉能力不同，直接表达可能更快\n把期待变成语言，“这种时候希望你怎么做”会让关系轻松很多",
+      "zh-TW": "「不說也該懂」的期待未滿足時會大失望\n每個人察覺能力不同，直接表達可能更快\n把期待變成語言，「這種時候希望你怎麼做」會讓關係輕鬆很多",
+      "vi": "Kỳ vọng “không nói cũng phải biết” dẫn đến thất vọng lớn khi không được đáp ứng\nMỗi người khác nhau về khả năng nhận ra. Nói thẳng có thể nhanh hơn\nThử biến kỳ vọng thành lời nói. “Lúc này mình muốn bạn...” giúp quan hệ dễ hơn nhiều",
+      "id": "Mengharap \"harusnya tahu tanpa dibilang\" menimbulkan kekecewaan besar saat tidak terpenuhi\nSetiap orang berbeda dalam membaca perasaan. Mengungkapkan langsung bisa lebih cepat\nCoba ubah harapan jadi kata-kata. \"Saat begini, aku ingin kamu...\" membuat hubungan jauh lebih mudah"
+    },
+    "guidanceAdvice": {
+      "en": "A partner who is sensitive and attuned to emotions",
+      "ja": "感受性が高く、相手の感情に敏感なタイプ",
+      "zh-CN": "感受力强、对情绪敏感的类型",
+      "zh-TW": "感受力強、對情緒敏感的類型",
+      "vi": "Người nhạy cảm và tinh ý với cảm xúc",
+      "id": "Pasangan yang sensitif dan peka terhadap emosi"
+    },
+    "oneLiner": {
+      "en": "What you want is a natural wish to feel loved. Turning that wish into words can fill you much faster.",
+      "ja": "あなたが望むことは愛されたいという自然な気持ちです。その気持ちを言葉に変えれば、ずっと早く満たされます。",
+      "zh-CN": "你所渴望的是想被爱的自然心愿，把它变成表达会更快被满足。",
+      "zh-TW": "你所渴望的是想被愛的自然心願，把它變成表達會更快被滿足。",
+      "vi": "Điều bạn mong là mong muốn tự nhiên được yêu. Biến nó thành lời nói sẽ lấp đầy nhanh hơn nhiều.",
+      "id": "Yang kamu inginkan adalah keinginan alami untuk merasa dicintai. Mengubahnya jadi kata-kata bisa memenuhi jauh lebih cepat."
+    },
+    "shareLine": {
+      "en": "My love expectations: Attentive Care 💙 They say I want to be understood without saying... 'You should just know' is the hardest phrase—so true → What's yours?",
+      "ja": "私の恋愛期待値：細やか配慮型 💙 言わなくても分かってほしいタイプ... 「言わなきゃ分からないの？」が一番つらい、当たり → あなたは？",
+      "zh-CN": "我的恋爱期待值：细致关怀型 💙 说不说也该懂... “说了才懂？”最难听太准 → 你呢？",
+      "zh-TW": "我的戀愛期待值：細緻關懷型 💙 說不說也該懂... 「說了才懂？」最難聽太準 → 你呢？",
+      "vi": "Kỳ vọng tình yêu: Quan tâm tinh tế 💙 Bảo mong được hiểu dù không nói... 'Phải nói mới biết?' là câu khó nhất—đúng quá → Còn bạn?",
+      "id": "Harapan cintaku: Perhatian Halus 💙 Katanya ingin dipahami tanpa bilang... 'Harus bilang dulu?' paling menyakitkan—bener → Kamu?"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Wants a Lot from a Partner, High Expectation Type",
+      "ja": "恋人に多くを望む人、高い期待値型",
+      "zh-CN": "对恋人想要很多的人，高期待型",
+      "zh-TW": "對戀人想要很多的人，高期待型",
+      "vi": "Người mong nhiều ở người yêu, Kiểu kỳ vọng cao",
+      "id": "Orang yang menginginkan banyak dari pasangan, Tipe Harapan Tinggi"
+    },
+    "expectationSummary": {
+      "en": "Very high / Wants partner to fill a large part of life type",
+      "ja": "非常に高い / 恋人が人生の大きな部分を満たしてほしいタイプ",
+      "zh-CN": "很高 / 希望恋人填满生活大部分的类型",
+      "zh-TW": "很高 / 希望戀人填滿生活大部分的類型",
+      "vi": "Rất cao / Mong người yêu lấp đầy phần lớn cuộc sống",
+      "id": "Sangat tinggi / Ingin pasangan mengisi sebagian besar hidup"
+    },
+    "quote": {
+      "en": "You expect a lot from your partner. You want to receive enough in contact, meetings, understanding, future, and devotion.",
+      "ja": "あなたは恋人に多くを期待します。連絡・会う頻度・理解・未来・献身すべての領域で十分に受け取りたいと思います。",
+      "zh-CN": "你对恋人期待很多，希望在联系、见面、理解、未来、奉献各层面都足够被满足。",
+      "zh-TW": "你對戀人期待很多，希望在聯繫、見面、理解、未來、奉獻各層面都足夠被滿足。",
+      "vi": "Bạn kỳ vọng nhiều ở người yêu. Bạn muốn nhận đủ về liên lạc, gặp gỡ, hiểu biết, tương lai và cống hiến.",
+      "id": "Kamu berharap banyak pada pasangan. Kamu ingin menerima cukup dalam kontak, pertemuan, pemahaman, masa depan, dan pengorbanan."
+    },
+    "description": {
+      "en": "Late replies make you anxious, fewer meetings feel like cooling off, you want them to step up when you struggle, and you want to plan the future together. When these expectations are met, you strongly feel loved.",
+      "ja": "返信が遅いと不安になり、会う回数が減ると関係が冷めるように感じ、つらい時に先に出てきてほしく、未来計画も一緒に立てたい。これらが満たされると強く愛されていると感じます。",
+      "zh-CN": "回复慢会不安，见面少像关系变冷，难过时希望对方先站出来，也想一起规划未来。这些被满足时会强烈感到被爱。",
+      "zh-TW": "回覆慢會不安，見面少像關係變冷，難過時希望對方先站出來，也想一起規劃未來。這些被滿足時會強烈感到被愛。",
+      "vi": "Trả lời chậm khiến lo, ít gặp cảm giác nguội lạnh, lúc khó mong họ chủ động, và muốn lập kế hoạch tương lai cùng nhau. Khi được đáp ứng, bạn cảm thấy được yêu mạnh mẽ.",
+      "id": "Balasan telat membuat cemas, pertemuan berkurang terasa hubungan mendingin, saat sulit ingin mereka maju dulu, dan ingin merencanakan masa depan bersama. Saat terpenuhi, kamu sangat merasa dicintai."
+    },
+    "expectationType": {
+      "en": "High Expectation Type 🌟",
+      "ja": "高い期待値型 🌟",
+      "zh-CN": "高期待型 🌟",
+      "zh-TW": "高期待型 🌟",
+      "vi": "Kiểu kỳ vọng cao 🌟",
+      "id": "Tipe Harapan Tinggi 🌟"
+    },
+    "expectationKeywords": {
+      "en": "High expectations · Want to receive enough · Connection · Devotion · Reassurance",
+      "ja": "高い期待・十分に受け取りたい・つながり・献身・安心",
+      "zh-CN": "高期待·想充分得到·连接·奉献·安心",
+      "zh-TW": "高期待·想充分得到·連接·奉獻·安心",
+      "vi": "Kỳ vọng cao · Muốn nhận đủ · Kết nối · Cống hiến · An tâm",
+      "id": "Harapan tinggi · Ingin menerima cukup · Koneksi · Pengorbanan · Rasa aman"
+    },
+    "strengths": {
+      "en": "Takes relationships seriously. As much as you want to receive love, you are ready to give deeply",
+      "ja": "関係に真剣に向き合う。深く受け取りたい分、与える準備もできている",
+      "zh-CN": "对关系很认真，想深度接收爱的同时也准备深度给予",
+      "zh-TW": "對關係很認真，想深度接收愛的同時也準備深度給予",
+      "vi": "Nghiêm túc với quan hệ. Muốn nhận tình yêu sâu thì cũng sẵn sàng cho đi sâu",
+      "id": "Serius dalam hubungan. Sebesar keinginan menerima cinta, kamu siap memberi dalam-dalam"
+    },
+    "cautions": {
+      "en": "The higher the expectations, the bigger the hurt when unmet\nOne person cannot fill every expectation. Some needs should come from friends, family, or yourself\nExpress expectations clearly. Hoping they will just know creates conflict",
+      "ja": "期待値が高いほど満たされないときの失望と傷が大きい\nすべての期待を一人で満たすことはできない。一部は友人・家族・自分から満たす分散が必要\n期待値を相手に明確に伝える。察してほしいだけだと葛藤が生じる",
+      "zh-CN": "期待越高，未满足时失望和伤害越大\n一个人无法满足所有期待，部分需求要来自朋友、家人或自己\n明确表达期待，只等对方自己懂会产生冲突",
+      "zh-TW": "期待越高，未滿足時失望和傷害越大\n一個人無法滿足所有期待，部分需求要來自朋友、家人或自己\n明確表達期待，只等對方自己懂會產生衝突",
+      "vi": "Kỳ vọng càng cao, thất vọng và tổn thương càng lớn khi không được đáp ứng\nMột người không thể lấp mọi kỳ vọng. Một phần cần từ bạn bè, gia đình hoặc bản thân\nBày tỏ kỳ vọng rõ ràng. Chỉ mong họ tự hiểu sẽ gây xung đột",
+      "id": "Semakin tinggi harapan, semakin besar luka saat tidak terpenuhi\nSatu orang tidak bisa memenuhi semua harapan. Sebagian perlu dari teman, keluarga, atau diri sendiri\nUngkapkan harapan dengan jelas. Hanya berharap mereka pahat sendiri menimbulkan konflik"
+    },
+    "guidanceAdvice": {
+      "en": "A devoted partner with rich expression who invests a lot in the relationship",
+      "ja": "献身的で表現が豊かで、関係に多くのエネルギーを注ぐタイプ",
+      "zh-CN": "奉献、表达丰富、对关系投入很多的类型",
+      "zh-TW": "奉獻、表達豐富、對關係投入很多的類型",
+      "vi": "Người tận tụy, giàu sự bày tỏ và đầu tư nhiều vào quan hệ",
+      "id": "Pasangan yang setia, ekspresif, dan banyak menginvestasikan energi pada hubungan"
+    },
+    "oneLiner": {
+      "en": "Wanting a big love is not wrong. But your partner needs to know the size to meet it.",
+      "ja": "大きな愛を望むことは間違いではありません。ただ、その大きさを相手が知らなければ合わせられません。",
+      "zh-CN": "想要很大的爱没有错，但对方需要知道大小才能配合。",
+      "zh-TW": "想要很大的愛沒有錯，但對方需要知道大小才能配合。",
+      "vi": "Mong một tình yêu lớn không sai. Nhưng đối phương cần biết kích cỡ mới đáp ứng được.",
+      "id": "Menginginkan cinta yang besar bukan salah. Tapi pasangan perlu tahu ukurannya agar bisa menyesuaikan."
+    },
+    "shareLine": {
+      "en": "My love expectations: High Type 🌟 They say I want a lot from my partner... higher expectations, bigger disappointment—ouch, so true → What's your score?",
+      "ja": "私の恋愛期待値：高期待型 🌟 恋人に多くを望む... 期待が高いほど失望も大きい、刺さる ㅠ → あなたは何点？",
+      "zh-CN": "我的恋爱期待值：高期待型 🌟 说我对恋人想要很多... 期待越高失望越大扎心了 → 你几分？",
+      "zh-TW": "我的戀愛期待值：高期待型 🌟 說我對戀人想要很多... 期待越高失望越大扎心了 → 你幾分？",
+      "vi": "Kỳ vọng tình yêu: Cao 🌟 Bảo tôi mong nhiều ở người yêu... kỳ vọng cao thất vọng lớn—đau thật → Bạn mấy điểm?",
+      "id": "Harapan cintaku: Tinggi 🌟 Katanya aku ingin banyak dari pasangan... harapan tinggi kecewa besar—kena banget → Kamu berapa poin?"
+    }
+  },
+  {
+    "title": {
+      "en": "Someone Who Needs Their Partner to Be Everything, Total Devotion Expectation Type",
+      "ja": "恋人がすべてであるべきだと思う人、完全献身期待型",
+      "zh-CN": "认为恋人应该是一切的人，完全奉献期待型",
+      "zh-TW": "認為戀人應該是一切的人，完全奉獻期待型",
+      "vi": "Người cần người yêu là tất cả, Kiểu kỳ vọng cống hiến toàn phần",
+      "id": "Orang yang butuh pasangan menjadi segalanya, Tipe Harapan Pengorbanan Total"
+    },
+    "expectationSummary": {
+      "en": "Extreme / Wants partner at the center of life type",
+      "ja": "極めて高い / 恋人が人生の中心にいてほしいタイプ",
+      "zh-CN": "极高 / 希望恋人成为人生中心的类型",
+      "zh-TW": "極高 / 希望戀人成為人生中心的類型",
+      "vi": "Cực cao / Mong người yêu ở trung tâm cuộc sống",
+      "id": "Ekstrem / Ingin pasangan di pusat hidup"
+    },
+    "quote": {
+      "en": "Your partner is not just a partner. You expect them to be at the center of your emotions, time, and future.",
+      "ja": "あなたにとって恋人は単なるパートナーではありません。感情・時間・未来の中心に一緒にいてほしいと期待します。",
+      "zh-CN": "对你来说恋人不只是伴侣，你期待他们在情感、时间、未来的中心与你同在。",
+      "zh-TW": "對你來說戀人不只是伴侶，你期待他們在情感、時間、未來的中心與你同在。",
+      "vi": "Người yêu không chỉ là bạn đời. Bạn mong họ ở trung tâm cảm xúc, thời gian và tương lai của bạn.",
+      "id": "Pasangan bukan sekadar partner. Kamu berharap mereka ada di pusat emosi, waktu, dan masa depanmu."
+    },
+    "description": {
+      "en": "Always feeling connected, being approached first on hard days, being noticed without words, willing sacrifice, and a concrete shared future—all of these must be met for you to feel loved.",
+      "ja": "常につながっている感覚、つらい日に先に近づいてくれること、言わなくても察してくれること、喜んで犠牲になれること、一緒の具体的な未来。これらすべてが満たされて初めて愛されていると感じるタイプです。",
+      "zh-CN": "要一直连着、难过时先靠近、不说也能察觉、愿意牺牲、有具体共同未来——这些都要满足才觉得被爱。",
+      "zh-TW": "要一直連著、難過時先靠近、不說也能察覺、願意犧牲、有具體共同未來——這些都要滿足才覺得被愛。",
+      "vi": "Luôn cảm giác kết nối, được chủ động lại gần ngày khó khăn, được nhận ra dù không nói, sẵn sàng hy sinh, và tương lai chung cụ thể—tất cả phải được đáp ứng mới cảm thấy được yêu.",
+      "id": "Selalu terasa terhubung, didatangi dulu saat hari sulit, disadari tanpa kata, rela berkorban, dan masa depan konkret bersama—semua ini harus terpenuhi agar kamu merasa dicintai."
+    },
+    "expectationType": {
+      "en": "Total Devotion Expectation Type ❤️",
+      "ja": "完全献身期待型 ❤️",
+      "zh-CN": "完全奉献期待型 ❤️",
+      "zh-TW": "完全奉獻期待型 ❤️",
+      "vi": "Kiểu kỳ vọng cống hiến toàn phần ❤️",
+      "id": "Tipe Harapan Pengorbanan Total ❤️"
+    },
+    "expectationKeywords": {
+      "en": "Total devotion · Everything together · Always connected · My center",
+      "ja": "完全な献身・すべてを一緒に・常につながる・私の中心",
+      "zh-CN": "完全奉献·一切都一起·始终连接·我的中心",
+      "zh-TW": "完全奉獻·一切都一起·始終連接·我的中心",
+      "vi": "Cống hiến toàn phần · Mọi thứ cùng nhau · Luôn kết nối · Trung tâm của tôi",
+      "id": "Pengorbanan total · Segalanya bersama · Selalu terhubung · Pusat hidupku"
+    },
+    "strengths": {
+      "en": "Ready to give everything to the relationship. Capable of deep, intense love",
+      "ja": "関係にすべてを捧げる準備がある。深く強烈な愛ができる",
+      "zh-CN": "准备为关系付出一切，能进行深度而强烈的爱",
+      "zh-TW": "準備為關係付出一切，能進行深度而強烈的愛",
+      "vi": "Sẵn sàng cho đi tất cả vì quan hệ. Có thể yêu sâu và mãnh liệt",
+      "id": "Siap memberikan segalanya untuk hubungan. Mampu mencintai dalam-dalam dan intens"
+    },
+    "cautions": {
+      "en": "One person can rarely fill all these expectations. A lasting gap between expectation and reality leads to ongoing disappointment\nThe bigger the expectations, the higher the dependency—and the more burden your partner may feel\nPractice filling part of your needs yourself. A partner is a life partner, not someone who fills your entire life",
+      "ja": "一人ですべての期待を満たすのは非常に難しい。期待と現実のギャップが続くと関係で継続的な失望が生じる\n恋人への期待が大きいほど依存度が高まり、相手が負担を感じることがある\n自分で満たせる部分を見つける練習が必要。恋人は人生のパートナーであり、人生全体を満たす人ではない",
+      "zh-CN": "一个人很难满足所有这些期待，期待与现实的持续差距会带来不断失望\n对恋人期待越大依赖越高，对方可能感到负担\n练习自己满足部分需求，恋人是人生伴侣，不是填满整个人生的人",
+      "zh-TW": "一個人很難滿足所有這些期待，期待與現實的持續差距會帶來不斷失望\n對戀人期待越大依賴越高，對方可能感到負擔\n練習自己滿足部分需求，戀人是人生伴侶，不是填滿整個人生的人",
+      "vi": "Một người hiếm khi lấp đầy mọi kỳ vọng này. Khoảng cách kéo dài giữa kỳ vọng và thực tế dẫn đến thất vọng liên tục\nKỳ vọng càng lớn, phụ thuộc càng cao—và đối phương có thể cảm thấy gánh nặng\nLuyện tự lấp một phần nhu cầu. Người yêu là bạn đời, không phải người lấp đầy cả cuộc đời",
+      "id": "Satu orang jarang bisa memenuhi semua harapan ini. Celah berkepanjangan antara harapan dan realita menimbulkan kekecewaan terus-menerus\nSemakin besar harapan, semakin tinggi ketergantungan—dan pasangan bisa merasa terbebani\nLatih memenuhi sebagian kebutuhan sendiri. Pasangan adalah partner hidup, bukan pengisi seluruh hidup"
+    },
+    "guidanceAdvice": {
+      "en": "Find what you can satisfy on your own. Prioritize your expectations of your partner and focus on what matters most",
+      "ja": "自分一人で満たせるものを見つける。恋人への期待を優先順位づけし、最も大切なことに集中する",
+      "zh-CN": "找到能自己满足的部分，给对恋人的期待排优先级，聚焦最重要的",
+      "zh-TW": "找到能自己滿足的部分，給對戀人的期待排優先級，聚焦最重要的",
+      "vi": "Tìm những gì bạn có thể tự thỏa mãn. Sắp xếp ưu tiên kỳ vọng với người yêu và tập trung vào điều quan trọng nhất",
+      "id": "Temukan apa yang bisa kamu penuhi sendiri. Prioritaskan harapan pada pasangan dan fokus pada yang paling penting"
+    },
+    "certificationPhrase": {
+      "en": "Total Devotion Expectation Type ❤️ Top-tier expectations. You are equally ready to give love at maximum capacity",
+      "ja": "完全献身期待型 ❤️ 期待値最上級。それだけ愛も最大限に捧げる準備があります",
+      "zh-CN": "达成完全奉献期待型 ❤️ 期待值顶级，同样准备以最大容量给予爱",
+      "zh-TW": "達成完全奉獻期待型 ❤️ 期待值頂級，同樣準備以最大容量給予愛",
+      "vi": "Kiểu cống hiến toàn phần ❤️ Kỳ vọng cao nhất. Bạn cũng sẵn sàng cho đi tình yêu ở mức tối đa",
+      "id": "Tipe Harapan Pengorbanan Total ❤️ Harapan level tertinggi. Kamu juga siap memberi cinta kapasitas maksimum"
+    },
+    "oneLiner": {
+      "en": "The love you want is big and deep. If you can give yourself the same love in return, you will become healthier.",
+      "ja": "あなたが望む愛は大きく深いです。その大きさだけ自分にも同じ愛を返せれば、より健康になります。",
+      "zh-CN": "你想要的爱很大很深，若能同样回馈给自己，会更健康。",
+      "zh-TW": "你想要的愛很大很深，若能同樣回饋給自己，會更健康。",
+      "vi": "Tình yêu bạn mong rất lớn và sâu. Nếu bạn cũng dành tình yêu đó cho chính mình, bạn sẽ khỏe mạnh hơn.",
+      "id": "Cinta yang kamu inginkan besar dan dalam. Jika kamu juga memberi cinta yang sama pada diri sendiri, kamu akan lebih sehat."
+    },
+    "shareLine": {
+      "en": "My love expectations: Total Devotion ❤️ They say my partner should be everything... honestly true ㅠ maybe I need relationship counseling → Try it too",
+      "ja": "私の恋愛期待値：完全献身型 ❤️ 恋人がすべてであるべきタイプ... 正直当たり ㅠ 恋愛相談調べなきゃ → あなたもやってみて",
+      "zh-CN": "我的恋爱期待值：完全奉献型 ❤️ 说恋人应该是一切... 老实说太准了 ㅠ 该看看恋爱咨询了 → 你也试试",
+      "zh-TW": "我的戀愛期待值：完全奉獻型 ❤️ 說戀人應該是一切... 老實說太準了 ㅠ 該看看戀愛諮詢了 → 你也試試",
+      "vi": "Kỳ vọng tình yêu: Cống hiến toàn phần ❤️ Bảo người yêu phải là tất cả... thật sự đúng ㅠ nên tìm tư vấn tình cảm → Bạn thử nhé",
+      "id": "Harapan cintaku: Pengorbanan Total ❤️ Katanya pasangan harus jadi segalanya... jujur bener ㅠ mungkin perlu konseling cinta → Kamu coba juga"
+    }
+  }
+]

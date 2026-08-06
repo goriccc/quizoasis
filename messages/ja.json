@@ -11280,6 +11280,76 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3LoveExpectationDiagnosisTest": {
+    "startMessage": {
+      "line1": "恋人にどれくらい期待していますか？",
+      "line2": "期待が低いと傷つきにくい代わりに関係が浅くなり、期待が高いと愛されている感覚は大きい反面、失望も大きくなります。問題は自分の期待レベルをよく知らないことです。",
+      "line3": "「あまり望んでいない」と思っていても実は多く望んでいたり、逆に「期待が大きい」と思っていても実は適正な場合も多いです。",
+      "line4": "12の質問で自分の恋愛期待値を正直に測定します。",
+      "line5": "私の恋愛期待値を測る 💗 正直に始める",
+      "note": "※ 恋愛中または恋愛経験を基準に、理想ではなく本当の自分で最も正直に答えてください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の恋愛期待値診断）",
+      "goToTest": "テストに進む",
+      "startTest": "私の恋愛期待値を測る 💗 正直に始める",
+      "shareResult": "結果をシェア",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテストを見る",
+      "similarTests": "類似のテスト",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "expectationSummary": "期待値レベル要約",
+      "expectationType": "期待値タイプ",
+      "expectationKeywordsTitle": "期待値キーワード",
+      "domainAnalysisTitle": "6領域別スコア",
+      "totalScore": "合計点",
+      "scoreUnit": "点",
+      "contactCommunicationDomain": "連絡・コミュニケーション期待",
+      "timeMeetingDomain": "時間・会う頻度期待",
+      "emotionalSupportDomain": "感情サポート期待",
+      "understandingEmpathyDomain": "理解・共感期待",
+      "futureDevotionDomain": "未来・献身期待",
+      "overallExpectLevelDomain": "全体期待レベル",
+      "strongestDomain": "期待値が最も高い恋愛領域",
+      "boostDomain": "最も自立して処理する領域",
+      "strengthsTitle": "このタイプの強み",
+      "cautionsTitle": "このタイプの注意点",
+      "guidanceAdviceTitle": "このタイプへのガイド",
+      "certificationPhrase": "認証フレーズ",
+      "oneLiner": "一言"
+    },
+    "shareMessages": {
+      "default": "私の恋愛期待値: {type}! 💗 友達・恋人と一緒にやると期待値の差がすぐ分かる → 私このタイプ、あなたは？",
+      "kakao": "私の恋愛期待値: {type}! 💗 友達・恋人と一緒にやってみて",
+      "wechat": "私の恋愛期待値: {type}! 💗 カップルなら二人でやってみて",
+      "whatsapp": "私の恋愛期待値: {type}! 💗 あなたもやってみて",
+      "telegram": "私の恋愛期待値: {type}! 💗 あなたはどのタイプ？",
+      "line": "私の恋愛期待値: {type}! 💗 友達と比べてみて",
+      "startDefault": "私の恋愛期待値診断 💗 12の質問",
+      "startKakao": "私の恋愛期待値診断 💗 12の質問",
+      "startWechat": "私の恋愛期待値診断 💗 12の質問",
+      "startWhatsapp": "私の恋愛期待値診断 💗 12の質問",
+      "startTelegram": "私の恋愛期待値診断 💗 12の質問",
+      "startLine": "私の恋愛期待値診断 💗 12の質問"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてから再度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

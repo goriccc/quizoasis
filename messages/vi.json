@@ -11292,6 +11292,76 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3LoveExpectationDiagnosisTest": {
+    "startMessage": {
+      "line1": "Bạn đang kỳ vọng bao nhiêu ở người yêu?",
+      "line2": "Kỳ vọng thấp thì ít tổn thương nhưng quan hệ có thể nông; kỳ vọng cao thì cảm giác được yêu lớn hơn nhưng thất vọng cũng lớn hơn. Vấn đề là ta thường không biết mình đang ở mức nào.",
+      "line3": "Bạn nghĩ mình ít mong đợi nhưng thực ra mong nhiều, hoặc nghĩ kỳ vọng cao nhưng thực ra ở mức phù hợp—cả hai đều hay gặp.",
+      "line4": "12 câu hỏi đo thẳng thắn mức kỳ vọng trong tình yêu của bạn.",
+      "line5": "Đo Kỳ Vọng Tình Yêu Của Tôi 💗 Bắt Đầu Thật Lòng",
+      "note": "※ Hãy trả lời thật nhất dựa trên đang yêu hoặc kinh nghiệm yêu đương—not hình mẫu lý tưởng mà là bạn thật."
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Chẩn Đoán Kỳ Vọng Tình Yêu)",
+      "goToTest": "Đi tới bài test",
+      "startTest": "Đo Kỳ Vọng Tình Yêu Của Tôi 💗 Bắt Đầu Thật Lòng",
+      "shareResult": "Chia sẻ kết quả",
+      "retakeTest": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "similarTests": "Bài test tương tự",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "expectationSummary": "Tóm tắt mức kỳ vọng",
+      "expectationType": "Loại kỳ vọng",
+      "expectationKeywordsTitle": "Từ khóa kỳ vọng",
+      "domainAnalysisTitle": "Điểm 6 lĩnh vực",
+      "totalScore": "Tổng điểm",
+      "scoreUnit": " điểm",
+      "contactCommunicationDomain": "Kỳ vọng liên lạc & giao tiếp",
+      "timeMeetingDomain": "Kỳ vọng thời gian & gặp gỡ",
+      "emotionalSupportDomain": "Kỳ vọng hỗ trợ cảm xúc",
+      "understandingEmpathyDomain": "Kỳ vọng hiểu & đồng cảm",
+      "futureDevotionDomain": "Kỳ vọng tương lai & cống hiến",
+      "overallExpectLevelDomain": "Mức kỳ vọng tổng thể",
+      "strongestDomain": "Lĩnh vực tình yêu kỳ vọng cao nhất",
+      "boostDomain": "Lĩnh vực tự xử lý nhất",
+      "strengthsTitle": "Điểm mạnh của loại này",
+      "cautionsTitle": "Lưu ý của loại này",
+      "guidanceAdviceTitle": "Hướng dẫn cho loại này",
+      "certificationPhrase": "Câu chứng nhận",
+      "oneLiner": "Một câu đánh giá"
+    },
+    "shareMessages": {
+      "default": "Kỳ vọng tình yêu của tôi: {type}! 💗 Làm cùng bạn bè hoặc người yêu là thấy chênh lệch ngay → Tôi loại này, còn bạn?",
+      "kakao": "Kỳ vọng tình yêu của tôi: {type}! 💗 Làm cùng bạn bè hoặc người yêu nhé",
+      "wechat": "Kỳ vọng tình yêu của tôi: {type}! 💗 Cặp đôi thì làm cùng nhau nhé",
+      "whatsapp": "Kỳ vọng tình yêu của tôi: {type}! 💗 Bạn cũng thử nhé",
+      "telegram": "Kỳ vọng tình yêu của tôi: {type}! 💗 Bạn loại nào?",
+      "line": "Kỳ vọng tình yêu của tôi: {type}! 💗 So sánh với bạn bè nhé",
+      "startDefault": "Chẩn Đoán Kỳ Vọng Tình Yêu 💗 12 câu hỏi",
+      "startKakao": "Chẩn Đoán Kỳ Vọng Tình Yêu 💗 12 câu hỏi",
+      "startWechat": "Chẩn Đoán Kỳ Vọng Tình Yêu 💗 12 câu hỏi",
+      "startWhatsapp": "Chẩn Đoán Kỳ Vọng Tình Yêu 💗 12 câu hỏi",
+      "startTelegram": "Chẩn Đoán Kỳ Vọng Tình Yêu 💗 12 câu hỏi",
+      "startLine": "Chẩn Đoán Kỳ Vọng Tình Yêu 💗 12 câu hỏi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Lạc quan không phải tính cách — đó là thói quen suy nghĩ.",

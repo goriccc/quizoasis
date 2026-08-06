@@ -11292,6 +11292,76 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3LoveExpectationDiagnosisTest": {
+    "startMessage": {
+      "line1": "Seberapa besar harapanmu pada pasangan?",
+      "line2": "Harapan rendah bisa kurang terluka tapi hubungan dangkal; harapan tinggi bisa terasa lebih dicintai tapi kecewa juga lebih besar. Masalahnya, kita sering tidak tahu level harapan sendiri.",
+      "line3": "Kamu pikir tidak banyak berharap padahal sebenarnya banyak, atau pikir harapanmu besar padahal sebenarnya sehat—keduanya sering terjadi.",
+      "line4": "12 pertanyaan mengukur secara jujur seberapa besar harapan cintamu.",
+      "line5": "Ukur Harapan Cintaku 💗 Mulai Jujur",
+      "note": "※ Jawab sejujur mungkin berdasarkan sedang pacaran atau pengalaman cinta—bukan diri ideal, melainkan dirimu yang sebenarnya."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Diagnosis Harapan Cinta)",
+      "goToTest": "Ke tes",
+      "startTest": "Ukur Harapan Cintaku 💗 Mulai Jujur",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "similarTests": "Tes serupa",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "expectationSummary": "Ringkasan level harapan",
+      "expectationType": "Tipe harapan",
+      "expectationKeywordsTitle": "Kata kunci harapan",
+      "domainAnalysisTitle": "Skor 6 domain",
+      "totalScore": "Skor total",
+      "scoreUnit": " poin",
+      "contactCommunicationDomain": "Harapan kontak & komunikasi",
+      "timeMeetingDomain": "Harapan waktu & pertemuan",
+      "emotionalSupportDomain": "Harapan dukungan emosional",
+      "understandingEmpathyDomain": "Harapan pemahaman & empati",
+      "futureDevotionDomain": "Harapan masa depan & pengorbanan",
+      "overallExpectLevelDomain": "Level harapan keseluruhan",
+      "strongestDomain": "Area cinta dengan harapan tertinggi",
+      "boostDomain": "Area paling mandiri",
+      "strengthsTitle": "Kekuatan tipe ini",
+      "cautionsTitle": "Hal yang perlu diwaspadai",
+      "guidanceAdviceTitle": "Panduan untuk tipe ini",
+      "certificationPhrase": "Frasa sertifikasi",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "Harapan cintaku: {type}! 💗 Coba bareng teman atau pasangan, beda harapan langsung kelihatan → Aku tipe ini, kamu?",
+      "kakao": "Harapan cintaku: {type}! 💗 Coba bareng teman atau pasangan",
+      "wechat": "Harapan cintaku: {type}! 💗 Pasangan sebaiknya coba berdua",
+      "whatsapp": "Harapan cintaku: {type}! 💗 Kamu juga coba",
+      "telegram": "Harapan cintaku: {type}! 💗 Kamu tipe apa?",
+      "line": "Harapan cintaku: {type}! 💗 Bandingkan dengan teman",
+      "startDefault": "Diagnosis Harapan Cinta 💗 12 pertanyaan",
+      "startKakao": "Diagnosis Harapan Cinta 💗 12 pertanyaan",
+      "startWechat": "Diagnosis Harapan Cinta 💗 12 pertanyaan",
+      "startWhatsapp": "Diagnosis Harapan Cinta 💗 12 pertanyaan",
+      "startTelegram": "Diagnosis Harapan Cinta 💗 12 pertanyaan",
+      "startLine": "Diagnosis Harapan Cinta 💗 12 pertanyaan"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",
