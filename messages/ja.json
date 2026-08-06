@@ -11153,6 +11153,62 @@
       "popularTestsTop5": "🔥 今人気のテスト TOP5"
     }
   },
+  "phase3DesertIslandSurvivalKitTest": {
+    "startMessage": {
+      "line1": "突然、無人島に漂着しました。",
+      "line2": "救助隊が来るかもしれないし、来ないかもしれない。今持てるものがある。全部で5つ選ばなければならない。",
+      "line3": "思ったより難しい。結果を見て「なんでこれ選んだ？」となるかも。結果を友達に送って。「無人島でそれ持っていくの？！」が始まる。",
+      "line4": "5つの選択。逃げ場はない。",
+      "line5": "無人島サバイバルキット選択開始 🏝️ 生き残ってみて"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（私の無人島サバイバルキット選択）",
+      "goToTest": "テストを始める",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似の他のテスト",
+      "survivalStyleType": "サバイバルタイプ",
+      "survivalStrategy": "サバイバル戦略",
+      "islandSays": "無人島で言うセリフ",
+      "survivalExtra": "このタイプの追加情報",
+      "typeStrengths": "このタイプの強み",
+      "oneLiner": "一言評価",
+      "certificationPhrase": "認証フレーズ",
+      "shareResult": "結果を共有",
+      "retakeTest": "もう一度",
+      "otherTests": "他のテスト"
+    },
+    "shareMessages": {
+      "default": "無人島キット結果：{type}! 🏝️ 友達に送って比べて →「無人島でそれ持っていくの？！」保証",
+      "kakao": "無人島キット結果：{type}! 🏝️ 友達に送って比べて",
+      "wechat": "無人島キット結果：{type}! 🏝️ 友達と一緒にやってみて",
+      "whatsapp": "無人島キット結果：{type}! 🏝️ あなたもやってみて",
+      "telegram": "無人島キット結果：{type}! 🏝️ あなたはどのタイプ？",
+      "line": "無人島キット結果：{type}! 🏝️ 友達と比べてみて",
+      "startDefault": "私の無人島サバイバルキット選択 🏝️ 5つの極限選択",
+      "startKakao": "私の無人島サバイバルキット選択 🏝️ 5つの極限選択",
+      "startWechat": "私の無人島サバイバルキット選択 🏝️ 5つの極限選択",
+      "startWhatsapp": "私の無人島サバイバルキット選択 🏝️ 5つの極限選択",
+      "startTelegram": "私の無人島サバイバルキット選択 🏝️ 5つの極限選択",
+      "startLine": "私の無人島サバイバルキット選択 🏝️ 5つの極限選択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 今人気のテスト TOP5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "楽観主義は気質ではなく、思考習慣です。",

@@ -11165,6 +11165,62 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3DesertIslandSurvivalKitTest": {
+    "startMessage": {
+      "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",
+      "line2": "Penyelamat mungkin datang, mungkin tidak. Sekarang ada beberapa barang yang bisa kamu bawa. Harus pilih tepat 5.",
+      "line3": "Lebih sulit dari kelihatannya. Lihat hasilnya, kamu mungkin mikir \"Kok pilih itu?\" Kirim ke teman. \"Bawa itu ke pulau terpencil?!\" dijamin meledak.",
+      "line4": "5 pilihan. Tidak bisa kabur.",
+      "line5": "Kit Bertahan Hidup Pulau Terpencil 🏝️ Coba selamat"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Kit Bertahan Hidup Pulau Terpencil-ku)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "survivalStyleType": "Tipe survival",
+      "survivalStrategy": "Strategi survival",
+      "islandSays": "Yang kamu katakan di pulau",
+      "survivalExtra": "Info tambahan tipe ini",
+      "typeStrengths": "Kelebihan tipe ini",
+      "oneLiner": "Satu kalimat",
+      "certificationPhrase": "Frasa sertifikasi",
+      "shareResult": "Bagikan hasil",
+      "retakeTest": "Ulangi",
+      "otherTests": "Tes lain"
+    },
+    "shareMessages": {
+      "default": "Hasil kit pulau terpencil: {type}! 🏝️ Kirim ke teman bandingkan → \"Bawa itu ke pulau terpencil?!\" dijamin meledak",
+      "kakao": "Hasil kit pulau terpencil: {type}! 🏝️ Kirim ke teman bandingkan",
+      "wechat": "Hasil kit pulau terpencil: {type}! 🏝️ Coba bareng teman",
+      "whatsapp": "Hasil kit pulau terpencil: {type}! 🏝️ Kamu juga coba",
+      "telegram": "Hasil kit pulau terpencil: {type}! 🏝️ Tipe kamu apa?",
+      "line": "Hasil kit pulau terpencil: {type}! 🏝️ Bandingkan dengan teman",
+      "startDefault": "Kit Bertahan Hidup Pulau Terpencil-ku 🏝️ 5 pilihan ekstrem",
+      "startKakao": "Kit Bertahan Hidup Pulau Terpencil-ku 🏝️ 5 pilihan ekstrem",
+      "startWechat": "Kit Bertahan Hidup Pulau Terpencil-ku 🏝️ 5 pilihan ekstrem",
+      "startWhatsapp": "Kit Bertahan Hidup Pulau Terpencil-ku 🏝️ 5 pilihan ekstrem",
+      "startTelegram": "Kit Bertahan Hidup Pulau Terpencil-ku 🏝️ 5 pilihan ekstrem",
+      "startLine": "Kit Bertahan Hidup Pulau Terpencil-ku 🏝️ 5 pilihan ekstrem"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimisme bukan temperamen — melainkan kebiasaan berpikir.",

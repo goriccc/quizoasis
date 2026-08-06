@@ -13468,6 +13468,62 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3DesertIslandSurvivalKitTest": {
+    "startMessage": {
+      "line1": "당신은 갑자기 무인도에 떨어졌습니다.",
+      "line2": "구조대가 올 수도 있고 안 올 수도 있습니다. 일단 지금 챙길 수 있는 것들이 있습니다. 총 5가지를 골라야 합니다.",
+      "line3": "생각보다 어렵습니다. 그리고 결과를 보면 \"나 이걸 왜 골랐지\"가 될 수도 있습니다. 선택이 끝나면 당신의 생존 본능 유형이 나옵니다. 결과를 친구에게 보내보세요. \"무인도에서 그걸 챙긴다고?!\"가 시작됩니다.",
+      "line4": "5가지 선택. 도망칠 수 없습니다.",
+      "line5": "무인도 생존 키트 선택 시작 🏝️ 살아남아봐"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 무인도 생존 키트 선택)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "survivalStyleType": "생존 유형",
+      "survivalStrategy": "생존 전략",
+      "islandSays": "무인도에서 하는 말",
+      "survivalExtra": "이 유형의 추가 정보",
+      "typeStrengths": "이 유형의 강점",
+      "oneLiner": "한 줄 평",
+      "certificationPhrase": "인증 문구",
+      "shareResult": "결과 공유하기",
+      "retakeTest": "다시 하기",
+      "otherTests": "다른 테스트 보기"
+    },
+    "shareMessages": {
+      "default": "무인도 생존 키트 결과: {type}! 🏝️ 친구한테 보내서 비교해봐 → \"무인도에서 그걸 챙긴다고?!\" 보장",
+      "kakao": "무인도 생존 키트 결과: {type}! 🏝️ 친구한테 보내서 비교해봐",
+      "wechat": "무인도 생존 키트 결과: {type}! 🏝️ 친구랑 같이 해봐",
+      "whatsapp": "무인도 생존 키트 결과: {type}! 🏝️ 너도 해봐",
+      "telegram": "무인도 생존 키트 결과: {type}! 🏝️ 너는 어떤 유형?",
+      "line": "무인도 생존 키트 결과: {type}! 🏝️ 친구랑 비교해봐",
+      "startDefault": "나의 무인도 생존 키트 선택 🏝️ 5가지 극한 선택",
+      "startKakao": "나의 무인도 생존 키트 선택 🏝️ 5가지 극한 선택",
+      "startWechat": "나의 무인도 생존 키트 선택 🏝️ 5가지 극한 선택",
+      "startWhatsapp": "나의 무인도 생존 키트 선택 🏝️ 5가지 극한 선택",
+      "startTelegram": "나의 무인도 생존 키트 선택 🏝️ 5가지 극한 선택",
+      "startLine": "나의 무인도 생존 키트 선택 🏝️ 5가지 극한 선택"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "낙관주의는 기질이 아니라 사고 습관입니다.",

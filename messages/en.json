@@ -11174,6 +11174,62 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3DesertIslandSurvivalKitTest": {
+    "startMessage": {
+      "line1": "You've suddenly been stranded on a desert island.",
+      "line2": "Rescue may or may not come. For now, you can grab a few things. You must pick exactly 5.",
+      "line3": "It's harder than it looks. When you see your result, you might think \"Why did I pick THAT?\" Send it to a friend. \"You'd pack THAT on a desert island?!\" is guaranteed.",
+      "line4": "5 choices. No escape.",
+      "line5": "Desert Island Survival Kit 🏝️ Try to survive"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Desert Island Survival Kit)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "survivalStyleType": "Survival type",
+      "survivalStrategy": "Survival strategy",
+      "islandSays": "What you'd say on the island",
+      "survivalExtra": "Extra info for this type",
+      "typeStrengths": "Strengths of this type",
+      "oneLiner": "One-liner",
+      "certificationPhrase": "Certification",
+      "shareResult": "Share your result",
+      "retakeTest": "Retake",
+      "otherTests": "Other tests"
+    },
+    "shareMessages": {
+      "default": "Desert island kit result: {type}! 🏝️ Send to a friend and compare → \"You'd pack THAT on a desert island?!\" guaranteed",
+      "kakao": "Desert island kit result: {type}! 🏝️ Send to a friend and compare",
+      "wechat": "Desert island kit result: {type}! 🏝️ Try with friends",
+      "whatsapp": "Desert island kit result: {type}! 🏝️ Try it too",
+      "telegram": "Desert island kit result: {type}! 🏝️ What's your type?",
+      "line": "Desert island kit result: {type}! 🏝️ Compare with friends",
+      "startDefault": "My Desert Island Survival Kit 🏝️ 5 extreme choices",
+      "startKakao": "My Desert Island Survival Kit 🏝️ 5 extreme choices",
+      "startWechat": "My Desert Island Survival Kit 🏝️ 5 extreme choices",
+      "startWhatsapp": "My Desert Island Survival Kit 🏝️ 5 extreme choices",
+      "startTelegram": "My Desert Island Survival Kit 🏝️ 5 extreme choices",
+      "startLine": "My Desert Island Survival Kit 🏝️ 5 extreme choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3OptimismIndexTest": {
     "startMessage": {
       "line1": "Optimism is not temperament — it is a thinking habit.",

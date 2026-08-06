@@ -302,6 +302,11 @@ const Phase3FriendshipBalanceGameTestClient = dynamic(
   { ssr: false }
 );
 
+const Phase3DesertIslandSurvivalKitTestClient = dynamic(
+  () => import('@/components/Phase3DesertIslandSurvivalKitTestClient'),
+  { ssr: false }
+);
+
 const Phase3ChangeAdaptabilityTestClient = dynamic(
   () => import('@/components/Phase3ChangeAdaptabilityTestClient'),
   { ssr: false }
@@ -2407,6 +2412,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['平衡遊戲', '友情', '義氣', '朋友', '極限選擇'],
         vi: ['trò cân bằng', 'tình bạn', 'nghĩa khí', 'bạn bè', 'lựa chọn cực hạn'],
         id: ['permainan seimbang', 'persahabatan', 'loyalitas', 'teman', 'pilihan ekstrem'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-desert-island-survival-kit') {
+    test = {
+      slug: 'phase3-desert-island-survival-kit',
+      title: {
+        ko: '나의 무인도 생존 키트 선택',
+        en: 'My Desert Island Survival Kit',
+        ja: '私の無人島サバイバルキット選択',
+        'zh-CN': '我的无人岛生存 kit 选择',
+        'zh-TW': '我的無人島生存 kit 選擇',
+        vi: 'Bộ sinh tồn đảo hoang của tôi',
+        id: 'Kit Bertahan Hidup Pulau Terpencil-ku',
+      },
+      description: {
+        ko: '5가지 극한 2지선다로 나의 생존 본능 유형을 분석합니다. 친구에게 공유하면 "무인도에서 그걸 챙긴다고?!" 반응이 터집니다.',
+        en: '5 extreme A/B choices reveal your survival instinct type. Share with friends for guaranteed "You\'d pack THAT on a desert island?!" reactions.',
+        ja: '5つの極限2択でサバイバル本能タイプを分析。友達に共有すると「無人島でそれ持っていくの？！」の反応が炸裂。',
+        'zh-CN': '5个极限二选一分析你的生存本能类型。分享给朋友，保证出现「无人岛带这个？！」的反应。',
+        'zh-TW': '5個極限二選一分析你的生存本能類型。分享給朋友，保證出現「無人島帶這個？！」的反應。',
+        vi: '5 lựa chọn cực hạn phân tích kiểu bản năng sinh tồn. Chia sẻ với bạn bè để xem phản ứng "Mang cái đó lên đảo hoang?!".',
+        id: '5 pilihan ekstrem menganalisis tipe insting bertahan hidup. Bagikan ke teman untuk reaksi "Bawa itu ke pulau terpencil?!".',
+      },
+      thumbnail: 'p3_game_deserted_island_kit.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['무인도', '생존', '밸런스게임', '황당', '유머'],
+        en: ['desert island', 'survival', 'balance game', 'absurd', 'humor'],
+        ja: ['無人島', 'サバイバル', 'バランスゲーム', '荒唐', 'ユーモア'],
+        'zh-CN': ['无人岛', '生存', '平衡游戏', '荒诞', '幽默'],
+        'zh-TW': ['無人島', '生存', '平衡遊戲', '荒謬', '幽默'],
+        vi: ['đảo hoang', 'sinh tồn', 'trò cân bằng', 'vô lý', 'hài hước'],
+        id: ['pulau terpencil', 'bertahan hidup', 'permainan seimbang', 'absurd', 'humor'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -9351,6 +9393,62 @@ export default async function TestPage({ params }: Props) {
             questions={phase3FriendshipBalanceGameQuestions}
             results={phase3FriendshipBalanceGameResults}
             questionCount={phase3FriendshipBalanceGameQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-desert-island-survival-kit') {
+      const { phase3DesertIslandSurvivalKitQuestions, phase3DesertIslandSurvivalKitResults } = await import('@/lib/phase3DesertIslandSurvivalKitData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-desert-island-survival-kit',
+        title: {
+          ko: '나의 무인도 생존 키트 선택',
+          en: 'My Desert Island Survival Kit',
+          ja: '私の無人島サバイバルキット選択',
+          'zh-CN': '我的无人岛生存 kit 选择',
+          'zh-TW': '我的無人島生存 kit 選擇',
+          vi: 'Bộ sinh tồn đảo hoang của tôi',
+          id: 'Kit Bertahan Hidup Pulau Terpencil-ku',
+        },
+        description: {
+          ko: '5가지 극한 2지선다로 나의 생존 본능 유형을 분석합니다. 친구에게 공유하면 "무인도에서 그걸 챙긴다고?!" 반응이 터집니다.',
+          en: '5 extreme A/B choices reveal your survival instinct type. Share with friends for guaranteed "You\'d pack THAT on a desert island?!" reactions.',
+          ja: '5つの極限2択でサバイバル本能タイプを分析。友達に共有すると「無人島でそれ持っていくの？！」の反応が炸裂。',
+          'zh-CN': '5个极限二选一分析你的生存本能类型。分享给朋友，保证出现「无人岛带这个？！」的反应。',
+          'zh-TW': '5個極限二選一分析你的生存本能類型。分享給朋友，保證出現「無人島帶這個？！」的反應。',
+          vi: '5 lựa chọn cực hạn phân tích kiểu bản năng sinh tồn. Chia sẻ với bạn bè để xem phản ứng "Mang cái đó lên đảo hoang?!".',
+          id: '5 pilihan ekstrem menganalisis tipe insting bertahan hidup. Bagikan ke teman untuk reaksi "Bawa itu ke pulau terpencil?!".',
+        },
+        thumbnail: 'p3_game_deserted_island_kit.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: {
+          ko: ['무인도', '생존', '밸런스게임', '황당', '유머'],
+          en: ['desert island', 'survival', 'balance game', 'absurd', 'humor'],
+          ja: ['無人島', 'サバイバル', 'バランスゲーム', '荒唐', 'ユーモア'],
+          'zh-CN': ['无人岛', '生存', '平衡游戏', '荒诞', '幽默'],
+          'zh-TW': ['無人島', '生存', '平衡遊戲', '荒謬', '幽默'],
+          vi: ['đảo hoang', 'sinh tồn', 'trò cân bằng', 'vô lý', 'hài hước'],
+          id: ['pulau terpencil', 'bertahan hidup', 'permainan seimbang', 'absurd', 'humor'],
+        },
+      };
+
+      return (
+        <>
+          <Phase3DesertIslandSurvivalKitTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3DesertIslandSurvivalKitQuestions}
+            results={phase3DesertIslandSurvivalKitResults}
+            questionCount={phase3DesertIslandSurvivalKitQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />
