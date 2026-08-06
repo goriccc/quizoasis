@@ -11225,9 +11225,10 @@
     "startMessage": {
       "line1": "Saat musim ujian, kamu tipe orang seperti apa?",
       "line2": "Ada yang duduk belajar lalu mulai merapikan meja. Ada yang tidak belajar sampai dua hari sebelum ujian lalu begadang semalaman. Ada yang tidak bisa lanjut sebelum benar-benar paham satu halaman.",
-      "line3": "Tidak ada cara yang lebih unggul. Setiap orang punya gaya yang cocok, dan mengetahuinya membantu belajar lebih efisien dengan lebih sedikit kelelahan. 12 situasi belajar menganalisis gaya belajar dan metode optimalmu.",
-      "line4": "※ Pilih opsi yang paling dekat dengan pola perilaku nyata kamu di setiap situasi.",
-      "line5": "Temukan Tipe Belajarku 📚 Mulai Jujur"
+      "line3": "Tidak ada cara yang lebih unggul. Setiap orang punya gaya yang cocok, dan mengetahuinya membantu belajar lebih efisien dengan lebih sedikit kelelahan.",
+      "line4": "12 situasi belajar menganalisis gaya belajar dan metode optimalmu.",
+      "line5": "Temukan Tipe Belajarku 📚 Mulai Jujur",
+      "note": "※ Pilih opsi yang paling dekat dengan pola perilaku nyata kamu di setiap situasi."
     },
     "ui": {
       "adsenseTitle": "Area Iklan AdSense (Tes Tipe Belajar Ujian)",

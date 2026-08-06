@@ -11234,9 +11234,10 @@
     "startMessage": {
       "line1": "During exam season, what kind of person are you?",
       "line2": "Some people sit down to study and start by organizing their desk. Some do nothing until two days before the exam, then burn the whole night before. Some cannot move on until they fully understand one page.",
-      "line3": "No method is inherently better. Each person has a style that fits them, and knowing it helps you study more efficiently with less burnout. 12 study situations analyze your learning style and optimal study methods.",
-      "line4": "※ Choose the option closest to your actual behavior in each situation.",
-      "line5": "Find My Study Type 📚 Start Honestly"
+      "line3": "No method is inherently better. Each person has a style that fits them, and knowing it helps you study more efficiently with less burnout.",
+      "line4": "12 study situations analyze your learning style and optimal study methods.",
+      "line5": "Find My Study Type 📚 Start Honestly",
+      "note": "※ Choose the option closest to your actual behavior in each situation."
     },
     "ui": {
       "adsenseTitle": "AdSense Ad Area (My Exam Study Type Test)",

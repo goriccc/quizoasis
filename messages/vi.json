@@ -11225,9 +11225,10 @@
     "startMessage": {
       "line1": "Mùa thi, bạn là kiểu người nào?",
       "line2": "Có người ngồi xuống học thì dọn bàn trước, có người đến hai ngày trước thi mới làm gì rồi thức trắng đêm trước, có người không hiểu một trang thì tuyệt đối không lật trang.",
-      "line3": "Không có cách nào vượt trội hơn. Mỗi người có phong cách phù hợp, biết được sẽ học hiệu quả hơn và ít mệt hơn. 12 tình huống học phân tích phong cách học và cách học tối ưu của bạn.",
-      "line4": "※ Hãy chọn đáp án gần nhất với hành vi thực tế của bạn trong mỗi tình huống.",
-      "line5": "Tìm Loại Học Của Tôi 📚 Bắt Đầu Thật Lòng"
+      "line3": "Không có cách nào vượt trội hơn. Mỗi người có phong cách phù hợp, biết được sẽ học hiệu quả hơn và ít mệt hơn.",
+      "line4": "12 tình huống học phân tích phong cách học và cách học tối ưu của bạn.",
+      "line5": "Tìm Loại Học Của Tôi 📚 Bắt Đầu Thật Lòng",
+      "note": "※ Hãy chọn đáp án gần nhất với hành vi thực tế của bạn trong mỗi tình huống."
     },
     "ui": {
       "adsenseTitle": "Khu vực quảng cáo AdSense (Loại Học Thi Của Tôi)",
