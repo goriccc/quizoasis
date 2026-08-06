@@ -11153,6 +11153,73 @@
       "popularTestsTop5": "🔥 今人気のテスト TOP5"
     }
   },
+  "phase3FoodBalanceGameTest": {
+    "startMessage": {
+      "line1": "二つから一つを一生食べ続けなければなりません。",
+      "line2": "簡単なラウンドは一つもありません。考えれば考えるほど難しくなります。正解もありません。",
+      "line3": "12ラウンドを選ぶうちに、自分でも知らなかった食性が現れます。結果を友人に送って。同じラウンドで正反対の選択を知った瞬間「なんでそれ選んだの?!」が始まります。",
+      "line4": "二つの料理画像から一つだけ選んでください。一生これだけ食べる覚悟で。",
+      "line5": "食べ物極限バランスゲーム開始 🍽️ 覚悟してスタート"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（食べ物極限バランスゲーム）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似たテスト",
+      "questionHint": "二つの料理から一つ — 一生これだけ食べるつもりで選んで。",
+      "resultTitle": "🍽️ 私の味覚スペクトラム",
+      "mildLabel": "🌸 マイルド",
+      "spicyLabel": "辛い 🔥",
+      "mySpiceScore": "私の辛さスコア",
+      "tasteType": "食性タイプ",
+      "tasteKeywords": "🔑 食性キーワード",
+      "foodSays": "💬 食べ物の前で言うこと",
+      "foodTrait": "✨ このタイプの特徴",
+      "goodRestaurants": "🍴 一緒に行くと良い店",
+      "extraTrait": "🔥 追加特性",
+      "certificationPhrase": "🏅 認証フレーズ",
+      "oneLiner": "💬 一言評価",
+      "captureResult": "食性結果をキャプチャ",
+      "shareResult": "結果を共有"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "食べ物極限バランス結果：消化器天使型 🌸 マーラーよりスンドゥブ全部選んだ…お腹心配が先でしょ 笑 → なんでそれ選んだの?! 友達と比べて",
+      "type2": "食べ物極限バランス結果：あっさりグルメ型 🍚 だいたいマイルドだけどマーラー一つは我慢できない 笑 → なんでそれ?! 食の好み比べて",
+      "type3": "食べ物極限バランス結果：バランス味覚型 ⚖️ 半々…何でも食べるでしょ → なんでそれ?! 食の衝突保証",
+      "type4": "食べ物極限バランス結果：刺激追求型 🌶️ 激辛冷麺・マーラー・チャンポン全部…辛くないと食べた気しないでしょ → なんでそれ?!",
+      "type5": "食べ物極限バランス結果：最強辛党 🔥 ほぼ全部刺激…「辛くない」が日常でしょ 笑 → なんでそれ?!",
+      "type6": "食べ物極限バランス結果：モッパンレジェンドマスター 🌋 12問全部刺激…マーラー味アイスも → なんでそれ?! 衝撃保証",
+      "startDefault": "バランスゲーム — 食べ物極限編 🍽️ 12ラウンドの極限選択",
+      "startKakao": "バランスゲーム — 食べ物極限編 🍽️ 12ラウンドの極限選択",
+      "startWechat": "バランスゲーム — 食べ物極限編 🍽️ 12ラウンドの極限選択",
+      "startWhatsapp": "バランスゲーム — 食べ物極限編 🍽️ 12ラウンドの極限選択",
+      "startTelegram": "バランスゲーム — 食べ物極限編 🍽️ 12ラウンドの極限選択",
+      "startLine": "バランスゲーム — 食べ物極限編 🍽️ 12ラウンドの極限選択"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有機能を初期化しています。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 おすすめ類似テスト TOP5",
+      "popularTestsTop5": "🔥 今人気のテスト TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

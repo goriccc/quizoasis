@@ -11165,6 +11165,73 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3FoodBalanceGameTest": {
+    "startMessage": {
+      "line1": "Phải chọn một trong hai để ăn cả đời.",
+      "line2": "Không có vòng nào dễ. Càng nghĩ càng khó. Và không có đáp án đúng.",
+      "line3": "Qua 12 vòng, khẩu vị bạn không biết sẽ lộ ra. Gửi kết quả cho bạn bè. Khi biết cùng một vòng mà chọn ngược nhau, \"Sao mày chọn cái đó?!\" bắt đầu.",
+      "line4": "Chọn đúng một trong hai ảnh món ăn — như thể cả đời chỉ được ăn món đó.",
+      "line5": "Bắt đầu game cân bằng thực phẩm cực hạn 🍽️ Sẵn sàng thì bắt đầu"
+    },
+    "ui": {
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Game cân bằng thực phẩm cực hạn)",
+      "goToTest": "Làm test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Test tương tự",
+      "questionHint": "Chọn một trong hai món — như thể cả đời chỉ ăn món đó.",
+      "resultTitle": "🍽️ Phổ vị giác của tôi",
+      "mildLabel": "🌸 Nhẹ",
+      "spicyLabel": "Cay 🔥",
+      "mySpiceScore": "Điểm cay của tôi",
+      "tasteType": "Kiểu khẩu vị",
+      "tasteKeywords": "🔑 Từ khóa khẩu vị",
+      "foodSays": "💬 Lời tôi nói trước đồ ăn",
+      "foodTrait": "✨ Đặc điểm kiểu này",
+      "goodRestaurants": "🍴 Quán ăn cùng hợp",
+      "extraTrait": "🔥 Đặc tính thêm",
+      "certificationPhrase": "🏅 Câu chứng nhận",
+      "oneLiner": "💬 Nhận xét một câu",
+      "captureResult": "Chụp kết quả khẩu vị",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Kết quả cân bằng thực phẩm cực hạn: Thiên thần tiêu hóa 🌸 Chọn canh đậu phụ thay mala hết... lo dạ dày trước đúng không haha → sao mày chọn cái đó?! so với bạn bè",
+      "type2": "Kết quả cân bằng thực phẩm: Sành ăn thanh 🍚 Phần lớn chọn nhẹ nhưng mala một cái không cưỡng được haha → sao chọn cái đó?! so khẩu vị",
+      "type3": "Kết quả cân bằng thực phẩm: Vị giác cân bằng ⚖️ Gần 50/50... ăn gì cũng được đúng không → sao chọn cái đó?! đụng khẩu vị chắc chắn",
+      "type4": "Kết quả cân bằng thực phẩm: Săn kích thích 🌶️ Chọn naengmyeon cay, mala, jjamppong... không cay như chưa ăn đúng không → sao chọn cái đó?!",
+      "type5": "Kết quả cân bằng thực phẩm: Cực cay 🔥 Gần như chọn mạnh hết... \"có cay đâu?\" là thường ngày haha → sao chọn cái đó?!",
+      "type6": "Kết quả cân bằng thực phẩm: Huyền thoại mukbang 🌋 Chọn mạnh cả 12... cả kem mala → sao chọn cái đó?! sốc chắc chắn",
+      "startDefault": "Balance Game — Thực phẩm cực hạn 🍽️ 12 vòng lựa chọn cực hạn",
+      "startKakao": "Balance Game — Thực phẩm cực hạn 🍽️ 12 vòng lựa chọn cực hạn",
+      "startWechat": "Balance Game — Thực phẩm cực hạn 🍽️ 12 vòng lựa chọn cực hạn",
+      "startWhatsapp": "Balance Game — Thực phẩm cực hạn 🍽️ 12 vòng lựa chọn cực hạn",
+      "startTelegram": "Balance Game — Thực phẩm cực hạn 🍽️ 12 vòng lựa chọn cực hạn",
+      "startLine": "Balance Game — Thực phẩm cực hạn 🍽️ 12 vòng lựa chọn cực hạn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Bạn bỗng dưng mắc kẹt trên một hòn đảo hoang.",

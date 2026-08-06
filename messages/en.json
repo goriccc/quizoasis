@@ -11174,6 +11174,73 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3FoodBalanceGameTest": {
+    "startMessage": {
+      "line1": "You must eat one of two for life.",
+      "line2": "Not a single easy round. The more you think, the harder it gets. And there are no right answers.",
+      "line3": "Through 12 rounds, tastes you didn't know emerge. Send your result to a friend. When you pick opposite choices on the same round, \"How did you pick THAT?!\" begins.",
+      "line4": "Pick exactly one of two food images — as if you must eat only that forever.",
+      "line5": "Food Extreme Balance Game 🍽️ Start when you're ready"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (Food Extreme Balance Game)",
+      "goToTest": "Go to test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "questionHint": "Pick one of two foods — as if you must eat it forever.",
+      "resultTitle": "🍽️ My taste spectrum",
+      "mildLabel": "🌸 Mild",
+      "spicyLabel": "Spicy 🔥",
+      "mySpiceScore": "My spice score",
+      "tasteType": "Taste type",
+      "tasteKeywords": "🔑 Taste keywords",
+      "foodSays": "💬 What I say about food",
+      "foodTrait": "✨ Food trait",
+      "goodRestaurants": "🍴 Good restaurants together",
+      "extraTrait": "🔥 Extra trait",
+      "certificationPhrase": "🏅 Certification",
+      "oneLiner": "💬 One-liner",
+      "captureResult": "Capture my result",
+      "shareResult": "Share your result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Food Extreme Balance result: Digestive Angel 🌸 Picked soft tofu over mala every time... stomach worry first, right? lol → how did you pick THAT?! compare with a friend",
+      "type2": "Food Extreme Balance result: Light Gourmet 🍚 Mostly mild picks but couldn't skip mala lol → how did you pick THAT?! compare food tastes",
+      "type3": "Food Extreme Balance result: Balanced Palate ⚖️ Pretty much 50/50... eats everything, right? → how did you pick THAT?! taste clash guaranteed",
+      "type4": "Food Extreme Balance result: Thrill-Seeker 🌶️ Picked spicy cold noodles, mala, jjamppong... no spice = didn't really eat, right? → how did you pick THAT?!",
+      "type5": "Food Extreme Balance result: Ultra Spicy 🔥 Picked almost all bold options... \"not spicy?\" is daily life lol → how did you pick THAT?!",
+      "type6": "Food Extreme Balance result: Mukbang Legend Master 🌋 Bold picks all 12... even mala ice cream → how did you pick THAT?! shock guaranteed",
+      "startDefault": "Balance Game — Food Extreme 🍽️ 12 rounds of extreme choices",
+      "startKakao": "Balance Game — Food Extreme 🍽️ 12 rounds of extreme choices",
+      "startWechat": "Balance Game — Food Extreme 🍽️ 12 rounds of extreme choices",
+      "startWhatsapp": "Balance Game — Food Extreme 🍽️ 12 rounds of extreme choices",
+      "startTelegram": "Balance Game — Food Extreme 🍽️ 12 rounds of extreme choices",
+      "startLine": "Balance Game — Food Extreme 🍽️ 12 rounds of extreme choices"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again shortly.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

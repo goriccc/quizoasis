@@ -11165,6 +11165,73 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3FoodBalanceGameTest": {
+    "startMessage": {
+      "line1": "Harus memilih salah satu dari dua untuk dimakan seumur hidup.",
+      "line2": "Tidak ada ronde yang mudah. Makin dipikir makin sulit. Dan tidak ada jawaban benar.",
+      "line3": "Lewat 12 ronde, selera yang kamu nggak tahu muncul. Kirim hasil ke teman. Saat tahu pilihan berlawanan di ronde yang sama, \"Kok pilih ITU?!\" dimulai.",
+      "line4": "Pilih tepat satu dari dua gambar makanan — seolah cuma boleh makan itu selamanya.",
+      "line5": "Mulai Balance Game Makanan Ekstrem 🍽️ Siapkan diri dulu"
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Balance Game Makanan Ekstrem)",
+      "goToTest": "Mulai tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "questionHint": "Pilih salah satu dari dua makanan — seolah cuma boleh makan itu selamanya.",
+      "resultTitle": "🍽️ Spektrum selera saya",
+      "mildLabel": "🌸 Ringan",
+      "spicyLabel": "Pedas 🔥",
+      "mySpiceScore": "Skor pedas saya",
+      "tasteType": "Tipe selera",
+      "tasteKeywords": "🔑 Kata kunci selera",
+      "foodSays": "💬 Yang saya katakan soal makanan",
+      "foodTrait": "✨ Ciri tipe ini",
+      "goodRestaurants": "🍴 Restoran enak bareng",
+      "extraTrait": "🔥 Ciri tambahan",
+      "certificationPhrase": "🏅 Frasa sertifikasi",
+      "oneLiner": "💬 Satu kalimat",
+      "captureResult": "Tangkap hasil selera saya",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "Hasil balance game makanan ekstrem: Malaikat pencernaan 🌸 Pilih sup tahu bukan mala terus... perut dulu kan lol → kok pilih ITU?! bandingkan dengan teman",
+      "type2": "Hasil balance game makanan: Gourmet ringan 🍚 Kebanyakan mild tapi mala satu nggak tahan lol → kok pilih ITU?! bandingkan selera",
+      "type3": "Hasil balance game makanan: Lidah seimbang ⚖️ Hampir 50/50... makan apa aja kan → kok pilih ITU?! bentrokan selera dijamin",
+      "type4": "Hasil balance game makanan: Pencari sensasi 🌶️ Pilih naengmyeon pedas, mala, jjamppong... nggak pedas kayak belum makan kan → kok pilih ITU?!",
+      "type5": "Hasil balance game makanan: Ultra pedas 🔥 Hampir semua pilih berani... \"nggak pedas?\" sehari-hari lol → kok pilih ITU?!",
+      "type6": "Hasil balance game makanan: Legenda mukbang 🌋 Pilih berani semua 12... es krim mala juga → kok pilih ITU?! shock dijamin",
+      "startDefault": "Balance Game — Makanan Ekstrem 🍽️ 12 ronde pilihan ekstrem",
+      "startKakao": "Balance Game — Makanan Ekstrem 🍽️ 12 ronde pilihan ekstrem",
+      "startWechat": "Balance Game — Makanan Ekstrem 🍽️ 12 ronde pilihan ekstrem",
+      "startWhatsapp": "Balance Game — Makanan Ekstrem 🍽️ 12 ronde pilihan ekstrem",
+      "startTelegram": "Balance Game — Makanan Ekstrem 🍽️ 12 ronde pilihan ekstrem",
+      "startLine": "Balance Game — Makanan Ekstrem 🍽️ 12 ronde pilihan ekstrem"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menginisialisasi berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

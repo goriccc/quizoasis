@@ -10634,6 +10634,73 @@
       "popularTestsTop5": "🔥 熱門測驗 TOP5"
     }
   },
+  "phase3FoodBalanceGameTest": {
+    "startMessage": {
+      "line1": "兩者之中必須選一種，終身只吃它。",
+      "line2": "沒有簡單的輪次。越想越難。也沒有標準答案。",
+      "line3": "選完12輪，連自己都不知道的食性會浮現。把結果發給好友。同一輪選了完全相反的東西時，「你怎麼選那個?!」就開始了。",
+      "line4": "兩張食物圖片中只選一張——當作一輩子只能吃這個。",
+      "line5": "食物極限平衡遊戲開始 🍽️ 做好心理準備再開始"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（食物極限平衡遊戲）",
+      "goToTest": "開始測試",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "Line",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "questionHint": "兩種食物選一種——當作一輩子只能吃它。",
+      "resultTitle": "🍽️ 我的食性光譜",
+      "mildLabel": "🌸 清淡",
+      "spicyLabel": "辣味 🔥",
+      "mySpiceScore": "我的辣度分數",
+      "tasteType": "食性類型",
+      "tasteKeywords": "🔑 食性關鍵詞",
+      "foodSays": "💬 面對食物會說的話",
+      "foodTrait": "✨ 這種類型的特點",
+      "goodRestaurants": "🍴 適合一起去的餐廳",
+      "extraTrait": "🔥 額外特性",
+      "certificationPhrase": "🏅 認證語",
+      "oneLiner": "💬 一句話點評",
+      "captureResult": "截圖我的食性結果",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "type1": "食物極限平衡結果：消化天使型 🌸 麻辣燙全換嫩豆腐鍋…胃優先沒錯吧 哈哈 → 你怎麼選那個?! 和好友比比",
+      "type2": "食物極限平衡結果：清淡美食家 🍚 大多選清淡但麻辣燙忍不住 哈哈 → 你怎麼選那個?! 比比口味",
+      "type3": "食物極限平衡結果：平衡味覺 ⚖️ 剛好一半一半…什麼都吃對吧 → 你怎麼選那個?! 口味衝突保證",
+      "type4": "食物極限平衡結果：刺激追求 🌶️ 辣冷麵·麻辣燙·辣湯麵全選…不辣像沒吃飯對吧 → 你怎麼選那個?!",
+      "type5": "食物極限平衡結果：超強辣黨 🔥 幾乎全選刺激…「這不算辣？」是日常 哈哈 → 你怎麼選那個?!",
+      "type6": "食物極限平衡結果：吃播傳奇大師 🌋 12題全選刺激…麻辣味冰淇淋也選了 → 你怎麼選那個?! 震驚保證",
+      "startDefault": "平衡遊戲 — 食物極限篇 🍽️ 12輪極限選擇",
+      "startKakao": "平衡遊戲 — 食物極限篇 🍽️ 12輪極限選擇",
+      "startWechat": "平衡遊戲 — 食物極限篇 🍽️ 12輪極限選擇",
+      "startWhatsapp": "平衡遊戲 — 食物極限篇 🍽️ 12輪極限選擇",
+      "startTelegram": "平衡遊戲 — 食物極限篇 🍽️ 12輪極限選擇",
+      "startLine": "平衡遊戲 — 食物極限篇 🍽️ 12輪極限選擇"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 TOP5",
+      "popularTestsTop5": "🔥 熱門測驗 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",
