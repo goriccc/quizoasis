@@ -11241,6 +11241,65 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3RealReasonSingleTest": {
+    "startMessage": {
+      "line1": "\"I'm decent-looking and have a good personality... so why am I still single?\"",
+      "line2": "Everyone says, \"Someone like you will find a partner in no time,\" yet nothing ever starts. Maybe your standards are high, maybe it's hard for you to open up, or maybe you just have nowhere to meet good people. Most of us lump it all together and shrug: \"I guess it's just not meant to be.\"",
+      "line3": "But everyone has their own real reason why love isn't happening. Once you know yours, you'll also see what needs to change.",
+      "line4": "Through 12 situations, we'll uncover the reason you might not even know about yourself.",
+      "line5": "Find My Real Reason 🔍 Start Honestly",
+      "note": "※ Pick the answer that honestly feels closest to you. No dating experience? Just imagine and answer."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (The Real Reason I'm Still Single)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "The real reason you're single",
+      "keywords": "Key words",
+      "scoreTitle": "Score by type",
+      "scoreUnit": "pt",
+      "hiddenReason": "Hidden reason",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "Breaking down the real reason",
+      "frequentSaying": "What this type always says",
+      "changeTips": "What to try now",
+      "oneLiner": "In one line",
+      "shareResult": "Share your result",
+      "popularBadge": "Popular"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "The Real Reason I'm Still Single 🔍 Great looks, great personality—so why still single? Find your real reason in 12 situations",
+      "startKakao": "The Real Reason I'm Still Single 🔍 Great looks, great personality—so why still single? Find your real reason in 12 situations",
+      "startWechat": "The Real Reason I'm Still Single 🔍 Great looks, great personality—so why still single? Find your real reason in 12 situations",
+      "startWhatsapp": "The Real Reason I'm Still Single 🔍 Great looks, great personality—so why still single? Find your real reason in 12 situations",
+      "startTelegram": "The Real Reason I'm Still Single 🔍 Great looks, great personality—so why still single? Find your real reason in 12 situations",
+      "startLine": "The Real Reason I'm Still Single 🔍 Great looks, great personality—so why still single? Find your real reason in 12 situations"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

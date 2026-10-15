@@ -10701,6 +10701,65 @@
       "popularTestsTop5": "🔥 熱門測驗 TOP5"
     }
   },
+  "phase3RealReasonSingleTest": {
+    "startMessage": {
+      "line1": "「長得不差、個性也不錯，為什麼還是單身？」",
+      "line2": "身邊的人都說「像你這樣很快就能脫單啦」，可是戀愛就是遲遲沒有開始。可能是眼光高，可能是很難敞開心房，也可能是根本沒地方遇到好對象。大多數人會把原因籠統歸成一句「大概是緣分還沒到吧」。",
+      "line3": "但戀愛遲遲不開始，每個人背後都有不同的真正原因。知道原因，也就知道該改變什麼。",
+      "line4": "透過12個情境，幫你找出連自己都沒察覺的真正原因。",
+      "line5": "找出我的真正原因 🔍 誠實開始",
+      "note": "※ 請誠實選擇最接近你的選項。沒有戀愛經驗也沒關係，想像一下再作答就好。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（我談不了戀愛的真正原因）",
+      "goToTest": "去測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "realReason": "談不了戀愛的真正原因",
+      "keywords": "核心關鍵字",
+      "scoreTitle": "各類型分數",
+      "scoreUnit": "分",
+      "hiddenReason": "隱藏原因",
+      "strengths": "這個類型的優點",
+      "reasonDetail": "深入解析真正原因",
+      "frequentSaying": "這個類型的口頭禪",
+      "changeTips": "現在可以試著改變的事",
+      "oneLiner": "一句話總結",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我談不了戀愛的真正原因 🔍 外貌個性都不錯，為什麼還單身？透過12個情境找出屬於你的真正原因",
+      "startKakao": "我談不了戀愛的真正原因 🔍 外貌個性都不錯，為什麼還單身？透過12個情境找出屬於你的真正原因",
+      "startWechat": "我談不了戀愛的真正原因 🔍 外貌個性都不錯，為什麼還單身？透過12個情境找出屬於你的真正原因",
+      "startWhatsapp": "我談不了戀愛的真正原因 🔍 外貌個性都不錯，為什麼還單身？透過12個情境找出屬於你的真正原因",
+      "startTelegram": "我談不了戀愛的真正原因 🔍 外貌個性都不錯，為什麼還單身？透過12個情境找出屬於你的真正原因",
+      "startLine": "我談不了戀愛的真正原因 🔍 外貌個性都不錯，為什麼還單身？透過12個情境找出屬於你的真正原因"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請貼到 WeChat 分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 TOP5",
+      "popularTestsTop5": "🔥 近期熱門測驗推薦 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",

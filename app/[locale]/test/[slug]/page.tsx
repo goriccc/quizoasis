@@ -327,6 +327,11 @@ const Phase3LoveLanguageAnalysisTestClient = dynamic(
   { ssr: false }
 );
 
+const Phase3RealReasonSingleTestClient = dynamic(
+  () => import('@/components/Phase3RealReasonSingleTestClient'),
+  { ssr: false }
+);
+
 const Phase3ChangeAdaptabilityTestClient = dynamic(
   () => import('@/components/Phase3ChangeAdaptabilityTestClient'),
   { ssr: false }
@@ -2617,6 +2622,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'zh-TW': ['戀愛語言', '愛的語言', '情侶', '戀愛風格', '蓋瑞查普曼'],
         vi: ['ngôn ngữ tình yêu', 'ngôn ngữ yêu thương', 'cặp đôi', 'phong cách hẹn hò', 'Gary Chapman'],
         id: ['bahasa cinta', 'love language', 'pasangan', 'gaya pacaran', 'Gary Chapman'],
+      },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-real-reason-single') {
+    test = {
+      slug: 'phase3-real-reason-single',
+      title: {
+        ko: '내가 연애를 못 하는 진짜 이유',
+        en: "The Real Reason I'm Still Single",
+        ja: '私が恋愛できない本当の理由',
+        'zh-CN': '我谈不了恋爱的真正原因',
+        'zh-TW': '我談不了戀愛的真正原因',
+        vi: 'Lý do thật sự tôi chưa có người yêu',
+        id: 'Alasan Sebenarnya Aku Belum Pacaran',
+      },
+      description: {
+        ko: '외모도 성격도 괜찮은데 왜 아직 솔로일까? 12가지 상황으로 높은 기준형·철벽 방어형·타이밍 놓침형 등 6가지 중 나만의 진짜 이유를 찾아드립니다.',
+        en: 'Good looks, great personality—so why are you still single? Through 12 situations, find your real reason among 6 types, from The High Standards Type and The Fortress Type to The Missed Timing Type.',
+        ja: '見た目も性格も悪くないのに、なぜまだ独りなの？12の状況から、ハイスタンダード型・鉄壁ガード型・タイミング逃し型など6タイプの中で、あなただけの本当の理由を見つけます。',
+        'zh-CN': '长得不差、性格也不错，为什么还是单身？通过12个情境，从高标准型、铁壁防御型、错过时机型等6种类型中，找出属于你的真正原因。',
+        'zh-TW': '長得不差、個性也不錯，為什麼還是單身？透過12個情境，從高標準型、鐵壁防禦型、錯過時機型等6種類型中，找出屬於你的真正原因。',
+        vi: 'Ngoại hình ổn, tính cách tốt, vậy sao vẫn độc thân? Qua 12 tình huống, hãy tìm ra lý do thật sự của riêng bạn trong 6 kiểu như Tiêu Chuẩn Cao, Phòng Thủ Kiên Cố, Lỡ Thời Điểm.',
+        id: 'Penampilan oke, kepribadian baik, tapi kok masih jomblo? Lewat 12 situasi, temukan alasan sebenarnya di antara 6 tipe seperti Standar Tinggi, Benteng Kokoh, dan Telat Momen.',
+      },
+      thumbnail: 'p3_test_real_reason_single.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: {
+        ko: ['연애유형', '모태솔로', '연애심리'],
+        en: ['dating type', 'forever single', 'love psychology'],
+        ja: ['恋愛タイプ', '恋人いない歴', '恋愛心理'],
+        'zh-CN': ['恋爱类型', '母胎单身', '恋爱心理'],
+        'zh-TW': ['戀愛類型', '母胎單身', '戀愛心理'],
+        vi: ['kiểu yêu đương', 'ế lâu năm', 'tâm lý tình yêu'],
+        id: ['tipe pacaran', 'jomblo', 'psikologi cinta'],
       },
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
@@ -9841,6 +9883,62 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveLanguageAnalysisQuestions}
             results={phase3LoveLanguageAnalysisResults}
             questionCount={phase3LoveLanguageAnalysisQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-real-reason-single') {
+      const { phase3RealReasonSingleQuestions, phase3RealReasonSingleResults } = await import('@/lib/phase3RealReasonSingleData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-real-reason-single',
+        title: {
+          ko: '내가 연애를 못 하는 진짜 이유',
+          en: "The Real Reason I'm Still Single",
+          ja: '私が恋愛できない本当の理由',
+          'zh-CN': '我谈不了恋爱的真正原因',
+          'zh-TW': '我談不了戀愛的真正原因',
+          vi: 'Lý do thật sự tôi chưa có người yêu',
+          id: 'Alasan Sebenarnya Aku Belum Pacaran',
+        },
+        description: {
+          ko: '외모도 성격도 괜찮은데 왜 아직 솔로일까? 12가지 상황으로 높은 기준형·철벽 방어형·타이밍 놓침형 등 6가지 중 나만의 진짜 이유를 찾아드립니다.',
+          en: 'Good looks, great personality—so why are you still single? Through 12 situations, find your real reason among 6 types, from The High Standards Type and The Fortress Type to The Missed Timing Type.',
+          ja: '見た目も性格も悪くないのに、なぜまだ独りなの？12の状況から、ハイスタンダード型・鉄壁ガード型・タイミング逃し型など6タイプの中で、あなただけの本当の理由を見つけます。',
+          'zh-CN': '长得不差、性格也不错，为什么还是单身？通过12个情境，从高标准型、铁壁防御型、错过时机型等6种类型中，找出属于你的真正原因。',
+          'zh-TW': '長得不差、個性也不錯，為什麼還是單身？透過12個情境，從高標準型、鐵壁防禦型、錯過時機型等6種類型中，找出屬於你的真正原因。',
+          vi: 'Ngoại hình ổn, tính cách tốt, vậy sao vẫn độc thân? Qua 12 tình huống, hãy tìm ra lý do thật sự của riêng bạn trong 6 kiểu như Tiêu Chuẩn Cao, Phòng Thủ Kiên Cố, Lỡ Thời Điểm.',
+          id: 'Penampilan oke, kepribadian baik, tapi kok masih jomblo? Lewat 12 situasi, temukan alasan sebenarnya di antara 6 tipe seperti Standar Tinggi, Benteng Kokoh, dan Telat Momen.',
+        },
+        thumbnail: 'p3_test_real_reason_single.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: {
+          ko: ['연애유형', '모태솔로', '연애심리'],
+          en: ['dating type', 'forever single', 'love psychology'],
+          ja: ['恋愛タイプ', '恋人いない歴', '恋愛心理'],
+          'zh-CN': ['恋爱类型', '母胎单身', '恋爱心理'],
+          'zh-TW': ['戀愛類型', '母胎單身', '戀愛心理'],
+          vi: ['kiểu yêu đương', 'ế lâu năm', 'tâm lý tình yêu'],
+          id: ['tipe pacaran', 'jomblo', 'psikologi cinta'],
+        },
+      };
+
+      return (
+        <>
+          <Phase3RealReasonSingleTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3RealReasonSingleQuestions}
+            results={phase3RealReasonSingleResults}
+            questionCount={phase3RealReasonSingleQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

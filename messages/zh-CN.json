@@ -11232,6 +11232,65 @@
       "popularTestsTop5": "🔥 热门测试 TOP5"
     }
   },
+  "phase3RealReasonSingleTest": {
+    "startMessage": {
+      "line1": "“长得不差、性格也不错，为什么还是单身？”",
+      "line2": "身边的人都说“你这样的很快就能脱单”，可恋爱就是迟迟没有开始。可能是眼光高，可能是很难敞开心扉，也可能是根本没地方遇到合适的人。大多数人会把原因笼统归结为一句“大概是缘分没到吧”。",
+      "line3": "但恋爱迟迟不开始，每个人背后都有不同的真正原因。知道了原因，也就知道该改变什么。",
+      "line4": "通过12个情境，帮你找出连你自己都没察觉的真正原因。",
+      "line5": "找出我的真正原因 🔍 诚实开始",
+      "note": "※ 请诚实选择最接近你的选项。没有恋爱经验也没关系，想象一下再作答即可。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告区域（我谈不了恋爱的真正原因）",
+      "goToTest": "去测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "realReason": "谈不了恋爱的真正原因",
+      "keywords": "核心关键词",
+      "scoreTitle": "各类型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "隐藏原因",
+      "strengths": "这个类型的优点",
+      "reasonDetail": "深入解读真正原因",
+      "frequentSaying": "这个类型的口头禅",
+      "changeTips": "现在可以尝试改变的事",
+      "oneLiner": "一句话总结",
+      "shareResult": "分享结果",
+      "popularBadge": "热门"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我谈不了恋爱的真正原因 🔍 外貌性格都不错，为什么还单身？通过12个情境找出属于你的真正原因",
+      "startKakao": "我谈不了恋爱的真正原因 🔍 外貌性格都不错，为什么还单身？通过12个情境找出属于你的真正原因",
+      "startWechat": "我谈不了恋爱的真正原因 🔍 外貌性格都不错，为什么还单身？通过12个情境找出属于你的真正原因",
+      "startWhatsapp": "我谈不了恋爱的真正原因 🔍 外貌性格都不错，为什么还单身？通过12个情境找出属于你的真正原因",
+      "startTelegram": "我谈不了恋爱的真正原因 🔍 外貌性格都不错，为什么还单身？通过12个情境找出属于你的真正原因",
+      "startLine": "我谈不了恋爱的真正原因 🔍 外貌性格都不错，为什么还单身？通过12个情境找出属于你的真正原因"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请粘贴到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时出现错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 TOP5",
+      "popularTestsTop5": "🔥 近期热门测试推荐 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",

@@ -11220,6 +11220,65 @@
       "popularTestsTop5": "🔥 今人気のテスト TOP5"
     }
   },
+  "phase3RealReasonSingleTest": {
+    "startMessage": {
+      "line1": "「見た目も性格も悪くないのに、なんでまだ独りなんだろう？」",
+      "line2": "周りからは「あなたならすぐ恋人できるよ」と言われるのに、肝心の恋愛はなかなか始まりません。理想が高いからかもしれないし、心を開くのが苦手だからかもしれないし、いい人と出会う場がないからかもしれません。たいていは理由をひとまとめにして「縁がないのかな」で済ませてしまいます。",
+      "line3": "でも、恋愛が始まらないのには、人それぞれ違う本当の理由があります。その理由がわかれば、何を変えればいいのかも見えてきます。",
+      "line4": "12の状況から、自分でも気づいていなかったあなただけの理由を見つけます。",
+      "line5": "本当の理由を見つける 🔍 正直にスタート",
+      "note": "※ いちばん正直に、自分に近い選択肢を選んでください。恋愛経験がなくても、想像して答えればOKです。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（私が恋愛できない本当の理由）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "realReason": "恋愛できない本当の理由",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenReason": "隠れた理由",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "本当の理由を詳しく見ると",
+      "frequentSaying": "このタイプの口ぐせ",
+      "changeTips": "今すぐ変えてみること",
+      "oneLiner": "ひとことで言うと",
+      "shareResult": "結果をシェアする",
+      "popularBadge": "人気"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私が恋愛できない本当の理由 🔍 見た目も性格も悪くないのに、なぜまだ独り？12の状況であなただけの本当の理由を見つけよう",
+      "startKakao": "私が恋愛できない本当の理由 🔍 見た目も性格も悪くないのに、なぜまだ独り？12の状況であなただけの本当の理由を見つけよう",
+      "startWechat": "私が恋愛できない本当の理由 🔍 見た目も性格も悪くないのに、なぜまだ独り？12の状況であなただけの本当の理由を見つけよう",
+      "startWhatsapp": "私が恋愛できない本当の理由 🔍 見た目も性格も悪くないのに、なぜまだ独り？12の状況であなただけの本当の理由を見つけよう",
+      "startTelegram": "私が恋愛できない本当の理由 🔍 見た目も性格も悪くないのに、なぜまだ独り？12の状況であなただけの本当の理由を見つけよう",
+      "startLine": "私が恋愛できない本当の理由 🔍 見た目も性格も悪くないのに、なぜまだ独り？12の状況であなただけの本当の理由を見つけよう"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト おすすめTOP5",
+      "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

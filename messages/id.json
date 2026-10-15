@@ -11232,6 +11232,65 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer"
     }
   },
+  "phase3RealReasonSingleTest": {
+    "startMessage": {
+      "line1": "\"Penampilan oke, kepribadian juga baik, tapi kok masih jomblo?\"",
+      "line2": "Orang-orang bilang, \"Kamu sih pasti cepat dapat pacar,\" tapi nyatanya kisah cinta nggak kunjung dimulai. Mungkin karena standarmu tinggi, mungkin karena sulit membuka hati, atau mungkin memang nggak ada tempat untuk bertemu orang yang tepat. Kebanyakan dari kita menyamaratakan semuanya dan cuma bilang, \"Mungkin belum jodoh.\"",
+      "line3": "Padahal setiap orang punya alasan sebenarnya yang berbeda kenapa cinta belum datang. Kalau tahu alasannya, kamu juga jadi tahu apa yang perlu diubah.",
+      "line4": "Lewat 12 situasi, kami akan menemukan alasan yang bahkan belum kamu sadari.",
+      "line5": "Temukan Alasan Sebenarnya 🔍 Mulai dengan Jujur",
+      "note": "※ Pilih jawaban yang paling jujur dan paling mirip denganmu. Belum pernah pacaran? Bayangkan saja lalu jawab."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Alasan Sebenarnya Aku Belum Pacaran)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Alasan sebenarnya kamu belum pacaran",
+      "keywords": "Kata kunci utama",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan tersembunyi",
+      "strengths": "Kelebihan tipe ini",
+      "reasonDetail": "Membedah alasan sebenarnya",
+      "frequentSaying": "Kalimat andalan tipe ini",
+      "changeTips": "Yang bisa dicoba sekarang",
+      "oneLiner": "Satu kalimat untukmu",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Alasan Sebenarnya Aku Belum Pacaran 🔍 Penampilan oke, kepribadian baik, kok masih jomblo? Temukan alasan sebenarnya lewat 12 situasi",
+      "startKakao": "Alasan Sebenarnya Aku Belum Pacaran 🔍 Penampilan oke, kepribadian baik, kok masih jomblo? Temukan alasan sebenarnya lewat 12 situasi",
+      "startWechat": "Alasan Sebenarnya Aku Belum Pacaran 🔍 Penampilan oke, kepribadian baik, kok masih jomblo? Temukan alasan sebenarnya lewat 12 situasi",
+      "startWhatsapp": "Alasan Sebenarnya Aku Belum Pacaran 🔍 Penampilan oke, kepribadian baik, kok masih jomblo? Temukan alasan sebenarnya lewat 12 situasi",
+      "startTelegram": "Alasan Sebenarnya Aku Belum Pacaran 🔍 Penampilan oke, kepribadian baik, kok masih jomblo? Temukan alasan sebenarnya lewat 12 situasi",
+      "startLine": "Alasan Sebenarnya Aku Belum Pacaran 🔍 Penampilan oke, kepribadian baik, kok masih jomblo? Temukan alasan sebenarnya lewat 12 situasi"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

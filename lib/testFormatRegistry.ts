@@ -194,6 +194,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-exam-study-type': 'scenario_4',
   'phase3-love-expectation-diagnosis': 'scenario_4',
   'phase3-love-language-analysis': 'scenario_4',
+  'phase3-real-reason-single': 'scenario_4',
   'phase3-office-survival-type': 'scenario_4',
   'phase3-office-villain-probability': 'scenario_4',
   'phase3-ootd-style-diagnosis': 'personality_2',
