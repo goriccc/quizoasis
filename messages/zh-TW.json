@@ -10760,6 +10760,66 @@
       "popularTestsTop5": "🔥 近期熱門測驗推薦 TOP5"
     }
   },
+  "phase3SameTypeAttractionTest": {
+    "startMessage": {
+      "line1": "「每次分手後，總會再遇到差不多的人。」",
+      "line2": "長相或許不同，但說話方式、氣質，還有戀愛的走向，總有幾分相似。朋友說「你又找這種類型喔」，你卻說「這次真的不一樣啦」，可是時間一久，同樣的劇情又會重演。",
+      "line3": "這不是巧合，也不是運氣。每個人的心都有最先產生反應的點，而這些點就構成了你專屬的心動公式。知道公式，就能理清自己為什麼總被那種人吸引。",
+      "line4": "透過12個情境，幫你找出你反覆心動的人的共同點和你的心動公式。",
+      "line5": "找出我的心動公式 🧲 誠實開始",
+      "note": "※ 請回想至今的戀愛、曖昧和暗戀，選出最接近你的選項。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（為什麼我總是被同一型的人吸引？）",
+      "goToTest": "去測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "attractionFormula": "我的心動公式",
+      "keywords": "核心關鍵字",
+      "scoreTitle": "各類型分數",
+      "scoreUnit": "分",
+      "hiddenAttraction": "隱藏的心動點",
+      "attractedTo": "反覆吸引你的人",
+      "strengths": "這個類型的優點",
+      "repeatPattern": "反覆出現的模式",
+      "frequentSaying": "這個類型的口頭禪",
+      "changeTips": "現在可以試著改變的事",
+      "oneLiner": "一句話總結",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "為什麼我總是被同一型的人吸引？🧲 每次分手後，總會遇到差不多的人？透過12個情境找出你專屬的心動公式",
+      "startKakao": "為什麼我總是被同一型的人吸引？🧲 每次分手後，總會遇到差不多的人？透過12個情境找出你專屬的心動公式",
+      "startWechat": "為什麼我總是被同一型的人吸引？🧲 每次分手後，總會遇到差不多的人？透過12個情境找出你專屬的心動公式",
+      "startWhatsapp": "為什麼我總是被同一型的人吸引？🧲 每次分手後，總會遇到差不多的人？透過12個情境找出你專屬的心動公式",
+      "startTelegram": "為什麼我總是被同一型的人吸引？🧲 每次分手後，總會遇到差不多的人？透過12個情境找出你專屬的心動公式",
+      "startLine": "為什麼我總是被同一型的人吸引？🧲 每次分手後，總會遇到差不多的人？透過12個情境找出你專屬的心動公式"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請貼到 WeChat 分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 TOP5",
+      "popularTestsTop5": "🔥 近期熱門測驗推薦 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",

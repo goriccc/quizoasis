@@ -11279,6 +11279,66 @@
       "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
     }
   },
+  "phase3SameTypeAttractionTest": {
+    "startMessage": {
+      "line1": "「別れても、なぜかまた似たような人が現れる。」",
+      "line2": "見た目は違っても、話し方や雰囲気、恋愛の流れ方はどこか似ています。友達には「またそういうタイプ？」と言われ、自分は「今回は本当に違う人なの」と言うけれど、時間が経つと同じ場面が繰り返されます。",
+      "line3": "これは偶然でも運でもありません。人にはそれぞれ心が先に反応するポイントがあり、そのポイントがあなただけの「惹かれる法則」になります。法則がわかれば、なぜいつもその人に惹かれるのか、理由がすっきり整理されます。",
+      "line4": "12の状況から、あなたが繰り返し惹かれる人の共通点と「惹かれる法則」を見つけます。",
+      "line5": "惹かれる法則を見つける 🧲 正直にスタート",
+      "note": "※ これまでの恋愛や曖昧な関係、片思いを思い浮かべながら、いちばん近い選択肢を選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（なぜ私はいつも似たような人に惹かれるの？）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "attractionFormula": "私の惹かれる法則",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenAttraction": "隠れた惹かれポイント",
+      "attractedTo": "繰り返し惹かれる人",
+      "strengths": "このタイプの強み",
+      "repeatPattern": "繰り返しパターン",
+      "frequentSaying": "このタイプの口ぐせ",
+      "changeTips": "今すぐ変えてみること",
+      "oneLiner": "ひとことで言うと",
+      "shareResult": "結果をシェアする",
+      "popularBadge": "人気"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "なぜ私はいつも似たような人に惹かれるの？🧲 別れても、なぜかまた似たような人が現れる？12の状況であなただけの「惹かれる法則」を見つけよう",
+      "startKakao": "なぜ私はいつも似たような人に惹かれるの？🧲 別れても、なぜかまた似たような人が現れる？12の状況であなただけの「惹かれる法則」を見つけよう",
+      "startWechat": "なぜ私はいつも似たような人に惹かれるの？🧲 別れても、なぜかまた似たような人が現れる？12の状況であなただけの「惹かれる法則」を見つけよう",
+      "startWhatsapp": "なぜ私はいつも似たような人に惹かれるの？🧲 別れても、なぜかまた似たような人が現れる？12の状況であなただけの「惹かれる法則」を見つけよう",
+      "startTelegram": "なぜ私はいつも似たような人に惹かれるの？🧲 別れても、なぜかまた似たような人が現れる？12の状況であなただけの「惹かれる法則」を見つけよう",
+      "startLine": "なぜ私はいつも似たような人に惹かれるの？🧲 別れても、なぜかまた似たような人が現れる？12の状況であなただけの「惹かれる法則」を見つけよう"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト おすすめTOP5",
+      "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

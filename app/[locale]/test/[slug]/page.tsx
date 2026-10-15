@@ -11,6 +11,7 @@ import { SITE_URL } from '@/lib/siteUrl';
 import { getTestData } from '@/lib/mbtiData';
 import { getOgImageUrl, getThumbnailUrl } from '@/lib/utils';
 import { getLatestTestSlugs } from '@/lib/latestTests';
+import { PHASE3_SAME_TYPE_ATTRACTION_META } from '@/lib/phase3SameTypeAttractionData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -329,6 +330,11 @@ const Phase3LoveLanguageAnalysisTestClient = dynamic(
 
 const Phase3RealReasonSingleTestClient = dynamic(
   () => import('@/components/Phase3RealReasonSingleTestClient'),
+  { ssr: false }
+);
+
+const Phase3SameTypeAttractionTestClient = dynamic(
+  () => import('@/components/Phase3SameTypeAttractionTestClient'),
   { ssr: false }
 );
 
@@ -2660,6 +2666,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         vi: ['kiểu yêu đương', 'ế lâu năm', 'tâm lý tình yêu'],
         id: ['tipe pacaran', 'jomblo', 'psikologi cinta'],
       },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-same-type-attraction') {
+    test = {
+      slug: 'phase3-same-type-attraction',
+      title: PHASE3_SAME_TYPE_ATTRACTION_META.title,
+      description: PHASE3_SAME_TYPE_ATTRACTION_META.description,
+      thumbnail: 'p3_test_same_type_attraction.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_SAME_TYPE_ATTRACTION_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -9939,6 +9958,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3RealReasonSingleQuestions}
             results={phase3RealReasonSingleResults}
             questionCount={phase3RealReasonSingleQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-same-type-attraction') {
+      const { phase3SameTypeAttractionQuestions, phase3SameTypeAttractionResults } = await import(
+        '@/lib/phase3SameTypeAttractionData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-same-type-attraction',
+        title: PHASE3_SAME_TYPE_ATTRACTION_META.title,
+        description: PHASE3_SAME_TYPE_ATTRACTION_META.description,
+        thumbnail: 'p3_test_same_type_attraction.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_SAME_TYPE_ATTRACTION_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3SameTypeAttractionTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3SameTypeAttractionQuestions}
+            results={phase3SameTypeAttractionResults}
+            questionCount={phase3SameTypeAttractionQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

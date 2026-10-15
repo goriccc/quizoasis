@@ -11291,6 +11291,66 @@
       "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
     }
   },
+  "phase3SameTypeAttractionTest": {
+    "startMessage": {
+      "line1": "\"Habis putus, pasti muncul lagi orang yang mirip.\"",
+      "line2": "Wajahnya mungkin beda, tapi cara bicara, vibe, sampai alur hubungannya entah kenapa mirip. Teman-teman bilang, \"Kamu lagi-lagi tipe yang begitu,\" dan kamu bilang, \"Yang ini beneran beda kok,\" tapi lama-lama adegan yang sama terulang lagi.",
+      "line3": "Ini bukan kebetulan atau nasib. Setiap orang punya titik yang membuat hatinya bereaksi duluan, dan titik itulah yang jadi rumus ketertarikanmu sendiri. Kalau tahu rumusnya, alasan kenapa kamu terus tertarik pada orang seperti itu jadi jelas.",
+      "line4": "Lewat 12 situasi, kami akan menemukan kesamaan orang-orang yang terus membuatmu tertarik dan rumus ketertarikanmu.",
+      "line5": "Temukan Rumus Ketertarikanku 🧲 Mulai dengan Jujur",
+      "note": "※ Ingat kembali hubungan, masa PDKT, dan cinta diam-diammu selama ini, lalu pilih jawaban yang paling mirip denganmu."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Kenapa Aku Selalu Tertarik pada Tipe yang Sama?)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "attractionFormula": "Rumus ketertarikanku",
+      "keywords": "Kata kunci utama",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenAttraction": "Ketertarikan tersembunyi",
+      "attractedTo": "Orang yang terus bikin kamu tertarik",
+      "strengths": "Kelebihan tipe ini",
+      "repeatPattern": "Pola yang terus berulang",
+      "frequentSaying": "Kalimat andalan tipe ini",
+      "changeTips": "Yang bisa dicoba sekarang",
+      "oneLiner": "Satu kalimat untukmu",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Aku Selalu Tertarik pada Tipe yang Sama? 🧲 Habis putus, kok ketemu tipe yang mirip lagi? Temukan rumus ketertarikanmu lewat 12 situasi",
+      "startKakao": "Kenapa Aku Selalu Tertarik pada Tipe yang Sama? 🧲 Habis putus, kok ketemu tipe yang mirip lagi? Temukan rumus ketertarikanmu lewat 12 situasi",
+      "startWechat": "Kenapa Aku Selalu Tertarik pada Tipe yang Sama? 🧲 Habis putus, kok ketemu tipe yang mirip lagi? Temukan rumus ketertarikanmu lewat 12 situasi",
+      "startWhatsapp": "Kenapa Aku Selalu Tertarik pada Tipe yang Sama? 🧲 Habis putus, kok ketemu tipe yang mirip lagi? Temukan rumus ketertarikanmu lewat 12 situasi",
+      "startTelegram": "Kenapa Aku Selalu Tertarik pada Tipe yang Sama? 🧲 Habis putus, kok ketemu tipe yang mirip lagi? Temukan rumus ketertarikanmu lewat 12 situasi",
+      "startLine": "Kenapa Aku Selalu Tertarik pada Tipe yang Sama? 🧲 Habis putus, kok ketemu tipe yang mirip lagi? Temukan rumus ketertarikanmu lewat 12 situasi"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

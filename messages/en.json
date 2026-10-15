@@ -11300,6 +11300,66 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3SameTypeAttractionTest": {
+    "startMessage": {
+      "line1": "\"After every breakup, someone just like my ex shows up again.\"",
+      "line2": "They may look different, but the way they talk, their vibe, and the way the relationship plays out all feel strangely familiar. Your friends say, \"Here we go again—same type,\" and you insist, \"No, this one's really different,\" but over time, the same scenes repeat.",
+      "line3": "This isn't coincidence or bad luck. Everyone has certain points their heart reacts to first, and those points become your own attraction formula. Once you know your formula, it finally makes sense why you keep falling for that kind of person.",
+      "line4": "Through 12 situations, we'll uncover what the people you keep falling for have in common—and your attraction formula.",
+      "line5": "Find My Attraction Formula 🧲 Start Honestly",
+      "note": "※ Think back on your relationships, situationships, and crushes, and pick the answer that feels closest to you."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (Why Am I Always Drawn to the Same Type?)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "attractionFormula": "My attraction formula",
+      "keywords": "Key words",
+      "scoreTitle": "Score by type",
+      "scoreUnit": "pt",
+      "hiddenAttraction": "Hidden attraction",
+      "attractedTo": "Who you keep falling for",
+      "strengths": "Strengths of this type",
+      "repeatPattern": "Repeating pattern",
+      "frequentSaying": "What this type always says",
+      "changeTips": "What to try now",
+      "oneLiner": "In one line",
+      "shareResult": "Share your result",
+      "popularBadge": "Popular"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Am I Always Drawn to the Same Type? 🧲 Does the same kind of person keep showing up after every breakup? Find your attraction formula in 12 situations",
+      "startKakao": "Why Am I Always Drawn to the Same Type? 🧲 Does the same kind of person keep showing up after every breakup? Find your attraction formula in 12 situations",
+      "startWechat": "Why Am I Always Drawn to the Same Type? 🧲 Does the same kind of person keep showing up after every breakup? Find your attraction formula in 12 situations",
+      "startWhatsapp": "Why Am I Always Drawn to the Same Type? 🧲 Does the same kind of person keep showing up after every breakup? Find your attraction formula in 12 situations",
+      "startTelegram": "Why Am I Always Drawn to the Same Type? 🧲 Does the same kind of person keep showing up after every breakup? Find your attraction formula in 12 situations",
+      "startLine": "Why Am I Always Drawn to the Same Type? 🧲 Does the same kind of person keep showing up after every breakup? Find your attraction formula in 12 situations"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",
