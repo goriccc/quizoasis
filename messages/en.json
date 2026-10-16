@@ -11420,6 +11420,63 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3ConfessionSuccessTest": {
+    "startMessage": {
+      "line1": "\"If I tell them, will it land?\"",
+      "line2": "The same feelings can land very differently depending on when you say them and how. Whether it works isn't only about their heart. It also depends on the groundwork you've built and the way you say it.",
+      "line3": "Ten situations add up your choices into a success rate and where you rank. Compare your result with a friend.",
+      "line4": "",
+      "line5": "Calculate My Odds 💌 Start Honestly",
+      "note": "※ Think about your talking stages and crushes so far, and pick the choice closer to what you'd actually do."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Confession Success Rate)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "scoreTitle": "My confession score",
+      "scoreUnit": " pts",
+      "topPercent": "Top {percent}%",
+      "keywords": "Key words",
+      "strengths": "Strengths at this rate",
+      "growthPoint": "What to work on",
+      "tips": "How to raise the odds",
+      "oneLiner": "In one line",
+      "shareResult": "Share your result",
+      "popularBadge": "Popular"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Confession Success Rate 💌 Same feelings, different timing and delivery. Calculate your odds in 10 situations",
+      "startKakao": "My Confession Success Rate 💌 Same feelings, different timing and delivery. Calculate your odds in 10 situations",
+      "startWechat": "My Confession Success Rate 💌 Same feelings, different timing and delivery. Calculate your odds in 10 situations",
+      "startWhatsapp": "My Confession Success Rate 💌 Same feelings, different timing and delivery. Calculate your odds in 10 situations",
+      "startTelegram": "My Confession Success Rate 💌 Same feelings, different timing and delivery. Calculate your odds in 10 situations",
+      "startLine": "My Confession Success Rate 💌 Same feelings, different timing and delivery. Calculate your odds in 10 situations"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

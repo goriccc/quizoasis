@@ -13714,6 +13714,63 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ConfessionSuccessTest": {
+    "startMessage": {
+      "line1": "\"내가 고백하면, 통할까?\"",
+      "line2": "같은 마음이라도 어떤 타이밍에, 어떤 방식으로 전하느냐에 따라 결과가 달라지곤 합니다. 고백의 성공은 상대의 마음만이 아니라 내가 쌓아 온 과정과 전하는 스타일에도 달려 있습니다.",
+      "line3": "10가지 상황에서 나의 선택을 점수로 합산해 고백 성공 확률과 상위 몇 %인지 알려드립니다. 결과를 친구와 비교해 보세요.",
+      "line4": "",
+      "line5": "내 고백 확률 계산하기 💌 솔직하게 시작",
+      "note": "※ 지금까지의 썸과 짝사랑을 떠올리며 실제 나의 선택에 더 가까운 쪽을 고르세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (나의 고백 성공 확률)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "scoreTitle": "나의 고백 점수",
+      "scoreUnit": "점",
+      "topPercent": "상위 {percent}%",
+      "keywords": "핵심 키워드",
+      "strengths": "이 확률대의 강점",
+      "growthPoint": "내 고백 보완 포인트",
+      "tips": "확률을 올리는 처방",
+      "oneLiner": "한 줄 평",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 고백 성공 확률 💌 같은 마음이라도 타이밍과 방식이 결과를 바꿉니다. 10가지 상황으로 내 고백 확률 계산",
+      "startKakao": "나의 고백 성공 확률 💌 같은 마음이라도 타이밍과 방식이 결과를 바꿉니다. 10가지 상황으로 내 고백 확률 계산",
+      "startWechat": "나의 고백 성공 확률 💌 같은 마음이라도 타이밍과 방식이 결과를 바꿉니다. 10가지 상황으로 내 고백 확률 계산",
+      "startWhatsapp": "나의 고백 성공 확률 💌 같은 마음이라도 타이밍과 방식이 결과를 바꿉니다. 10가지 상황으로 내 고백 확률 계산",
+      "startTelegram": "나의 고백 성공 확률 💌 같은 마음이라도 타이밍과 방식이 결과를 바꿉니다. 10가지 상황으로 내 고백 확률 계산",
+      "startLine": "나의 고백 성공 확률 💌 같은 마음이라도 타이밍과 방식이 결과를 바꿉니다. 10가지 상황으로 내 고백 확률 계산"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "당신은 갑자기 무인도에 떨어졌습니다.",

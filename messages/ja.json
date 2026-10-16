@@ -11399,6 +11399,63 @@
       "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
     }
   },
+  "phase3ConfessionSuccessTest": {
+    "startMessage": {
+      "line1": "「告白したら、届くかな？」",
+      "line2": "同じ気持ちでも、どのタイミングで、どんな伝え方をするかで結果は変わります。告白がうまくいくかは相手の気持ちだけではなく、積み重ねてきた過程と伝え方にもかかっています。",
+      "line3": "10の状況で選択を点数にして、告白の成功確率と上位何%かを出します。結果を友達と比べてみてください。",
+      "line4": "",
+      "line5": "告白確率を計算する 💌 正直にスタート",
+      "note": "※ これまでの曖昧な関係や片思いを思い浮かべ、実際の自分に近いほうを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（私の告白成功確率）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "scoreTitle": "私の告白スコア",
+      "scoreUnit": "点",
+      "topPercent": "上位{percent}%",
+      "keywords": "キーワード",
+      "strengths": "この確率の強み",
+      "growthPoint": "告白の補いたい点",
+      "tips": "確率を上げるヒント",
+      "oneLiner": "ひとことで言うと",
+      "shareResult": "結果をシェアする",
+      "popularBadge": "人気"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の告白成功確率 💌 同じ気持ちでもタイミングと伝え方で結果は変わる。10の状況で確率を計算",
+      "startKakao": "私の告白成功確率 💌 同じ気持ちでもタイミングと伝え方で結果は変わる。10の状況で確率を計算",
+      "startWechat": "私の告白成功確率 💌 同じ気持ちでもタイミングと伝え方で結果は変わる。10の状況で確率を計算",
+      "startWhatsapp": "私の告白成功確率 💌 同じ気持ちでもタイミングと伝え方で結果は変わる。10の状況で確率を計算",
+      "startTelegram": "私の告白成功確率 💌 同じ気持ちでもタイミングと伝え方で結果は変わる。10の状況で確率を計算",
+      "startLine": "私の告白成功確率 💌 同じ気持ちでもタイミングと伝え方で結果は変わる。10の状況で確率を計算"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト おすすめTOP5",
+      "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

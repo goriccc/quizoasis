@@ -11411,6 +11411,63 @@
       "popularTestsTop5": "🔥 近期热门测试推荐 TOP5"
     }
   },
+  "phase3ConfessionSuccessTest": {
+    "startMessage": {
+      "line1": "“我要是告白，能成吗？”",
+      "line2": "同样的心意，时机和说法不同，结果往往也不一样。告白成不成，不只看对方的心，也看你铺垫了多久、怎么说出口。",
+      "line3": "10个情境会把你的选择加成成功概率，并告诉你排在前百分之几。拿结果和朋友比一比。",
+      "line4": "",
+      "line5": "算算我的告白概率 💌 诚实开始",
+      "note": "※ 回想至今的暧昧和暗恋，选更接近你真实做法的一边。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告区域（我的告白成功概率）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "scoreTitle": "我的告白分数",
+      "scoreUnit": "分",
+      "topPercent": "前{percent}%",
+      "keywords": "关键词",
+      "strengths": "这个概率的优势",
+      "growthPoint": "告白可以补的点",
+      "tips": "提高概率的做法",
+      "oneLiner": "一句话",
+      "shareResult": "分享结果",
+      "popularBadge": "人气"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的告白成功概率 💌 同样的心意，时机和方式会改写结果。用10个情境算算你的概率",
+      "startKakao": "我的告白成功概率 💌 同样的心意，时机和方式会改写结果。用10个情境算算你的概率",
+      "startWechat": "我的告白成功概率 💌 同样的心意，时机和方式会改写结果。用10个情境算算你的概率",
+      "startWhatsapp": "我的告白成功概率 💌 同样的心意，时机和方式会改写结果。用10个情境算算你的概率",
+      "startTelegram": "我的告白成功概率 💌 同样的心意，时机和方式会改写结果。用10个情境算算你的概率",
+      "startLine": "我的告白成功概率 💌 同样的心意，时机和方式会改写结果。用10个情境算算你的概率"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请粘贴到微信分享。",
+      "kakaoInit": "正在准备 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 TOP5",
+      "popularTestsTop5": "🔥 近期人气测试 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",

@@ -11411,6 +11411,63 @@
       "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
     }
   },
+  "phase3ConfessionSuccessTest": {
+    "startMessage": {
+      "line1": "\"Kalau aku nembak, bakal diterima nggak?\"",
+      "line2": "Perasaan yang sama bisa beda hasilnya, tergantung kapan dan bagaimana kamu menyampaikannya. Nembak berhasil bukan cuma soal hati dia, tapi juga proses yang sudah kamu bangun dan cara kamu bilang.",
+      "line3": "10 situasi menjumlahkan pilihanmu jadi peluang berhasil dan berapa persen teratas. Bandingkan hasilnya dengan teman.",
+      "line4": "",
+      "line5": "Hitung Peluang Nembakku 💌 Mulai dengan Jujur",
+      "note": "※ Ingat masa PDKT dan crush-mu sejauh ini, lalu pilih yang lebih mirip dengan pilihan aslimu."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Peluang Keberhasilan Nembakku)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "scoreTitle": "Skor nembakku",
+      "scoreUnit": " poin",
+      "topPercent": "{percent}% teratas",
+      "keywords": "Kata kunci utama",
+      "strengths": "Kelebihan di peluang ini",
+      "growthPoint": "Yang perlu dilengkapi",
+      "tips": "Cara menaikkan peluang",
+      "oneLiner": "Satu kalimat untukmu",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Peluang Keberhasilan Nembakku 💌 Perasaan yang sama, waktu dan cara menyampaikan yang mengubah hasil. Hitung peluangmu lewat 10 situasi",
+      "startKakao": "Peluang Keberhasilan Nembakku 💌 Perasaan yang sama, waktu dan cara menyampaikan yang mengubah hasil. Hitung peluangmu lewat 10 situasi",
+      "startWechat": "Peluang Keberhasilan Nembakku 💌 Perasaan yang sama, waktu dan cara menyampaikan yang mengubah hasil. Hitung peluangmu lewat 10 situasi",
+      "startWhatsapp": "Peluang Keberhasilan Nembakku 💌 Perasaan yang sama, waktu dan cara menyampaikan yang mengubah hasil. Hitung peluangmu lewat 10 situasi",
+      "startTelegram": "Peluang Keberhasilan Nembakku 💌 Perasaan yang sama, waktu dan cara menyampaikan yang mengubah hasil. Hitung peluangmu lewat 10 situasi",
+      "startLine": "Peluang Keberhasilan Nembakku 💌 Perasaan yang sama, waktu dan cara menyampaikan yang mengubah hasil. Hitung peluangmu lewat 10 situasi"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

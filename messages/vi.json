@@ -11411,6 +11411,63 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3ConfessionSuccessTest": {
+    "startMessage": {
+      "line1": "\"Nếu mình tỏ tình, có được nhận không?\"",
+      "line2": "Cùng một tấm lòng, thời điểm và cách nói khác nhau thì kết quả cũng hay khác. Tỏ tình thành công không chỉ nhờ lòng người kia, mà còn nhờ quá trình bạn đã xây và cách bạn nói ra.",
+      "line3": "10 tình huống cộng điểm lựa chọn của bạn thành xác suất thành công và top bao nhiêu phần trăm. Mang kết quả so với bạn bè xem.",
+      "line4": "",
+      "line5": "Tính xác suất tỏ tình của mình 💌 Bắt đầu thật lòng",
+      "note": "※ Nhớ lại những lần mập mờ và crush từ trước đến nay, chọn phương án gần với cách bạn thật sự làm hơn."
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Xác suất tỏ tình thành công của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "scoreTitle": "Điểm tỏ tình của mình",
+      "scoreUnit": " điểm",
+      "topPercent": "Top {percent}%",
+      "keywords": "Từ khóa chính",
+      "strengths": "Điểm mạnh ở mức này",
+      "growthPoint": "Điểm cần bổ sung",
+      "tips": "Cách tăng xác suất",
+      "oneLiner": "Một câu cho bạn",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Xác suất tỏ tình thành công của tôi 💌 Cùng một tấm lòng, thời điểm và cách nói đổi kết quả. 10 tình huống để tính xác suất",
+      "startKakao": "Xác suất tỏ tình thành công của tôi 💌 Cùng một tấm lòng, thời điểm và cách nói đổi kết quả. 10 tình huống để tính xác suất",
+      "startWechat": "Xác suất tỏ tình thành công của tôi 💌 Cùng một tấm lòng, thời điểm và cách nói đổi kết quả. 10 tình huống để tính xác suất",
+      "startWhatsapp": "Xác suất tỏ tình thành công của tôi 💌 Cùng một tấm lòng, thời điểm và cách nói đổi kết quả. 10 tình huống để tính xác suất",
+      "startTelegram": "Xác suất tỏ tình thành công của tôi 💌 Cùng một tấm lòng, thời điểm và cách nói đổi kết quả. 10 tình huống để tính xác suất",
+      "startLine": "Xác suất tỏ tình thành công của tôi 💌 Cùng một tấm lòng, thời điểm và cách nói đổi kết quả. 10 tình huống để tính xác suất"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang chuẩn bị chia sẻ KakaoTalk. Hãy thử lại sau giây lát.",
+      "kakaoError": "Có lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Bạn bỗng dưng mắc kẹt trên một hòn đảo hoang.",

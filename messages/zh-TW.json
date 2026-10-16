@@ -10880,6 +10880,63 @@
       "popularTestsTop5": "🔥 近期熱門測驗推薦 TOP5"
     }
   },
+  "phase3ConfessionSuccessTest": {
+    "startMessage": {
+      "line1": "「我要是告白，會成嗎？」",
+      "line2": "同樣的心意，時機和說法不同，結果往往也不一樣。告白成不成，不只看對方的心，也看你鋪墊了多久、怎麼說出口。",
+      "line3": "10個情境會把你的選擇加成成功機率，並告訴你排在前百分之幾。拿結果和朋友比一比。",
+      "line4": "",
+      "line5": "算算我的告白機率 💌 誠實開始",
+      "note": "※ 回想至今的曖昧和暗戀，選更接近你真實做法的一邊。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 廣告區域（我的告白成功機率）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "scoreTitle": "我的告白分數",
+      "scoreUnit": "分",
+      "topPercent": "前{percent}%",
+      "keywords": "關鍵字",
+      "strengths": "這個機率的優勢",
+      "growthPoint": "告白可以補的點",
+      "tips": "提高機率的做法",
+      "oneLiner": "一句話",
+      "shareResult": "分享結果",
+      "popularBadge": "人氣"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的告白成功機率 💌 同樣的心意，時機和方式會改寫結果。用10個情境算算你的機率",
+      "startKakao": "我的告白成功機率 💌 同樣的心意，時機和方式會改寫結果。用10個情境算算你的機率",
+      "startWechat": "我的告白成功機率 💌 同樣的心意，時機和方式會改寫結果。用10個情境算算你的機率",
+      "startWhatsapp": "我的告白成功機率 💌 同樣的心意，時機和方式會改寫結果。用10個情境算算你的機率",
+      "startTelegram": "我的告白成功機率 💌 同樣的心意，時機和方式會改寫結果。用10個情境算算你的機率",
+      "startLine": "我的告白成功機率 💌 同樣的心意，時機和方式會改寫結果。用10個情境算算你的機率"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請貼到微信分享。",
+      "kakaoInit": "正在準備 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 TOP5",
+      "popularTestsTop5": "🔥 近期人氣測驗 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",
