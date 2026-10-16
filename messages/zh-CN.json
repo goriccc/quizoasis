@@ -11468,6 +11468,64 @@
       "popularTestsTop5": "🔥 近期人气测试 TOP5"
     }
   },
+  "phase3LoveConfidenceLevelTest": {
+    "startMessage": {
+      "line1": "“在恋爱里，我有多相信自己？”",
+      "line2": "在喜欢的人面前会变小，委屈了也把话咽回去，怀疑自己配不配被爱。也有些时候，你会坦然说出自己的心意。恋爱里的自信会随场合变化，但你有一个平均等级。",
+      "line3": "12个恋爱情境会把你的反应加成等级，并告诉你排在前百分之几。等级低不是缺点，而是告诉你哪里还能长。",
+      "line4": "",
+      "line5": "看看我的恋爱等级 🌱 诚实开始",
+      "note": "※ 回想至今的恋爱和暧昧，选择最接近你真实反应的一项。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 广告区域（我的恋爱自信等级测试）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "scoreTitle": "我的恋爱自信分数",
+      "scoreUnit": "分",
+      "topPercent": "前{percent}%",
+      "keywords": "关键词",
+      "strengths": "这个等级的优势",
+      "growthPoint": "自信可以长的地方",
+      "tips": "把自信养起来",
+      "counseling": "关于找人聊聊",
+      "oneLiner": "一句话",
+      "shareResult": "分享结果",
+      "popularBadge": "人气"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的恋爱自信等级测试 🌱 在喜欢的人面前，你有多相信自己？用12个情境看看你的等级",
+      "startKakao": "我的恋爱自信等级测试 🌱 在喜欢的人面前，你有多相信自己？用12个情境看看你的等级",
+      "startWechat": "我的恋爱自信等级测试 🌱 在喜欢的人面前，你有多相信自己？用12个情境看看你的等级",
+      "startWhatsapp": "我的恋爱自信等级测试 🌱 在喜欢的人面前，你有多相信自己？用12个情境看看你的等级",
+      "startTelegram": "我的恋爱自信等级测试 🌱 在喜欢的人面前，你有多相信自己？用12个情境看看你的等级",
+      "startLine": "我的恋爱自信等级测试 🌱 在喜欢的人面前，你有多相信自己？用12个情境看看你的等级"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请粘贴到微信分享。",
+      "kakaoInit": "正在准备 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 TOP5",
+      "popularTestsTop5": "🔥 近期人气测试 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",

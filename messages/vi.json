@@ -11468,6 +11468,64 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3LoveConfidenceLevelTest": {
+    "startMessage": {
+      "line1": "\"Trong tình yêu, mình tin mình đến mức nào?\"",
+      "line2": "Trước mặt người mình thích, bạn thu nhỏ lại, nuốt lời khi tủi, và phân vân mình có đáng được yêu không. Có lúc lại nói lòng mình một cách thẳng. Tự tin khi yêu thay đổi theo từng tình huống, nhưng bạn vẫn có một cấp độ trung bình.",
+      "line3": "12 tình huống yêu đương cộng phản ứng của bạn thành cấp độ và top bao nhiêu phần trăm. Cấp thấp không phải là thiếu, mà là chỗ còn có thể lớn lên.",
+      "line4": "",
+      "line5": "Xem cấp độ tình yêu của mình 🌱 Bắt đầu thật lòng",
+      "note": "※ Nhớ lại những lần yêu và mập mờ, chọn phản ứng gần với cách bạn thật sự làm nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Cấp độ tự tin trong tình yêu của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "scoreTitle": "Điểm tự tin khi yêu",
+      "scoreUnit": " điểm",
+      "topPercent": "Top {percent}%",
+      "keywords": "Từ khóa chính",
+      "strengths": "Điểm mạnh của cấp này",
+      "growthPoint": "Chỗ tự tin còn lớn được",
+      "tips": "Cách nuôi sự tự tin",
+      "counseling": "Khi nên tìm người để nói",
+      "oneLiner": "Một câu cho bạn",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Cấp độ tự tin trong tình yêu của tôi 🌱 Trước mặt người mình thích, bạn tin mình đến mức nào? 12 tình huống để xem cấp độ",
+      "startKakao": "Cấp độ tự tin trong tình yêu của tôi 🌱 Trước mặt người mình thích, bạn tin mình đến mức nào? 12 tình huống để xem cấp độ",
+      "startWechat": "Cấp độ tự tin trong tình yêu của tôi 🌱 Trước mặt người mình thích, bạn tin mình đến mức nào? 12 tình huống để xem cấp độ",
+      "startWhatsapp": "Cấp độ tự tin trong tình yêu của tôi 🌱 Trước mặt người mình thích, bạn tin mình đến mức nào? 12 tình huống để xem cấp độ",
+      "startTelegram": "Cấp độ tự tin trong tình yêu của tôi 🌱 Trước mặt người mình thích, bạn tin mình đến mức nào? 12 tình huống để xem cấp độ",
+      "startLine": "Cấp độ tự tin trong tình yêu của tôi 🌱 Trước mặt người mình thích, bạn tin mình đến mức nào? 12 tình huống để xem cấp độ"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang chuẩn bị chia sẻ KakaoTalk. Hãy thử lại sau giây lát.",
+      "kakaoError": "Có lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Bạn bỗng dưng mắc kẹt trên một hòn đảo hoang.",

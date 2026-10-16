@@ -14,6 +14,7 @@ import { getLatestTestSlugs } from '@/lib/latestTests';
 import { PHASE3_SAME_TYPE_ATTRACTION_META } from '@/lib/phase3SameTypeAttractionData';
 import { PHASE3_PUSH_PULL_LEVEL_META } from '@/lib/phase3PushPullLevelData';
 import { PHASE3_CONFESSION_SUCCESS_META } from '@/lib/phase3ConfessionSuccessData';
+import { PHASE3_LOVE_CONFIDENCE_LEVEL_META } from '@/lib/phase3LoveConfidenceLevelData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -347,6 +348,11 @@ const Phase3PushPullLevelTestClient = dynamic(
 
 const Phase3ConfessionSuccessTestClient = dynamic(
   () => import('@/components/Phase3ConfessionSuccessTestClient'),
+  { ssr: false }
+);
+
+const Phase3LoveConfidenceLevelTestClient = dynamic(
+  () => import('@/components/Phase3LoveConfidenceLevelTestClient'),
   { ssr: false }
 );
 
@@ -2717,6 +2723,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_CONFESSION_SUCCESS_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-confidence-level') {
+    test = {
+      slug: 'phase3-love-confidence-level',
+      title: PHASE3_LOVE_CONFIDENCE_LEVEL_META.title,
+      description: PHASE3_LOVE_CONFIDENCE_LEVEL_META.description,
+      thumbnail: 'p3_test_love_confidence_level.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_LOVE_CONFIDENCE_LEVEL_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10096,6 +10115,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3ConfessionSuccessQuestions}
             results={phase3ConfessionSuccessResults}
             questionCount={phase3ConfessionSuccessQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-love-confidence-level') {
+      const { phase3LoveConfidenceLevelQuestions, phase3LoveConfidenceLevelResults } = await import(
+        '@/lib/phase3LoveConfidenceLevelData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-love-confidence-level',
+        title: PHASE3_LOVE_CONFIDENCE_LEVEL_META.title,
+        description: PHASE3_LOVE_CONFIDENCE_LEVEL_META.description,
+        thumbnail: 'p3_test_love_confidence_level.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_LOVE_CONFIDENCE_LEVEL_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3LoveConfidenceLevelTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3LoveConfidenceLevelQuestions}
+            results={phase3LoveConfidenceLevelResults}
+            questionCount={phase3LoveConfidenceLevelQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

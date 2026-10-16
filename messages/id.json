@@ -11468,6 +11468,64 @@
       "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
     }
   },
+  "phase3LoveConfidenceLevelTest": {
+    "startMessage": {
+      "line1": "\"Saat pacaran, seberapa aku percaya pada diriku?\"",
+      "line2": "Di depan orang yang disukai, kamu jadi kecil. Kecewa pun kata-katanya ditelan. Kadang kamu ragu apakah kamu pantas dicintai. Di saat lain, kamu bisa bilang perasaanmu dengan tenang. Kepercayaan diri saat pacaran berubah-ubah, tapi ada level rata-ratamu.",
+      "line3": "12 situasi pacaran menjumlahkan reaksimu jadi level dan berapa persen teratas. Level yang lebih rendah bukan kekurangan. Itu menunjukkan bagian yang masih bisa tumbuh.",
+      "line4": "",
+      "line5": "Cek Level Pacaranku 🌱 Mulai dengan Jujur",
+      "note": "※ Ingat masa pacaran dan PDKT-mu, lalu pilih reaksi yang paling mirip dengan yang biasa kamu lakukan."
+    },
+    "ui": {
+      "adsenseTitle": "Area Iklan AdSense (Level Kepercayaan Diriku saat Pacaran)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "scoreTitle": "Skor kepercayaan diriku",
+      "scoreUnit": " poin",
+      "topPercent": "{percent}% teratas",
+      "keywords": "Kata kunci utama",
+      "strengths": "Kelebihan level ini",
+      "growthPoint": "Bagian yang masih bisa tumbuh",
+      "tips": "Cara menumbuhkan kepercayaan diri",
+      "counseling": "Saat perlu bicara dengan seseorang",
+      "oneLiner": "Satu kalimat untukmu",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Level Kepercayaan Diriku saat Pacaran 🌱 Di depan orang yang kamu suka, seberapa kamu percaya pada dirimu? Cek levelmu lewat 12 situasi",
+      "startKakao": "Level Kepercayaan Diriku saat Pacaran 🌱 Di depan orang yang kamu suka, seberapa kamu percaya pada dirimu? Cek levelmu lewat 12 situasi",
+      "startWechat": "Level Kepercayaan Diriku saat Pacaran 🌱 Di depan orang yang kamu suka, seberapa kamu percaya pada dirimu? Cek levelmu lewat 12 situasi",
+      "startWhatsapp": "Level Kepercayaan Diriku saat Pacaran 🌱 Di depan orang yang kamu suka, seberapa kamu percaya pada dirimu? Cek levelmu lewat 12 situasi",
+      "startTelegram": "Level Kepercayaan Diriku saat Pacaran 🌱 Di depan orang yang kamu suka, seberapa kamu percaya pada dirimu? Cek levelmu lewat 12 situasi",
+      "startLine": "Level Kepercayaan Diriku saat Pacaran 🌱 Di depan orang yang kamu suka, seberapa kamu percaya pada dirimu? Cek levelmu lewat 12 situasi"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

@@ -11456,6 +11456,64 @@
       "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
     }
   },
+  "phase3LoveConfidenceLevelTest": {
+    "startMessage": {
+      "line1": "「恋愛で、私は自分をどれくらい信じている？」",
+      "line2": "好きな人の前では小さくなり、寂しくても言葉を飲み込み、愛される資格があるか揺れることがあります。逆に、堂々と気持ちを言える瞬間もあります。恋愛の中の自信は場面で変わりますが、自分の平均レベルはあります。",
+      "line3": "12の恋愛場面で反応を点数にして、自信レベルと上位何%かを出します。レベルが低いのは足りないからではなく、伸ばせる場所を見せるためです。",
+      "line4": "",
+      "line5": "恋愛レベルを確認する 🌱 正直にスタート",
+      "note": "※ これまでの恋愛や曖昧な関係を思い浮かべ、実際の反応にいちばん近い選択肢を選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 広告エリア（私の恋愛自信レベルテスト）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "scoreTitle": "私の恋愛自信スコア",
+      "scoreUnit": "点",
+      "topPercent": "上位{percent}%",
+      "keywords": "キーワード",
+      "strengths": "このレベルの強み",
+      "growthPoint": "自信が伸びるポイント",
+      "tips": "自信を育てるヒント",
+      "counseling": "専門家に相談するとき",
+      "oneLiner": "ひとことで言うと",
+      "shareResult": "結果をシェアする",
+      "popularBadge": "人気"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の恋愛自信レベルテスト 🌱 好きな人の前で、自分をどれくらい信じている？12の場面でレベルを確認",
+      "startKakao": "私の恋愛自信レベルテスト 🌱 好きな人の前で、自分をどれくらい信じている？12の場面でレベルを確認",
+      "startWechat": "私の恋愛自信レベルテスト 🌱 好きな人の前で、自分をどれくらい信じている？12の場面でレベルを確認",
+      "startWhatsapp": "私の恋愛自信レベルテスト 🌱 好きな人の前で、自分をどれくらい信じている？12の場面でレベルを確認",
+      "startTelegram": "私の恋愛自信レベルテスト 🌱 好きな人の前で、自分をどれくらい信じている？12の場面でレベルを確認",
+      "startLine": "私の恋愛自信レベルテスト 🌱 好きな人の前で、自分をどれくらい信じている？12の場面でレベルを確認"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト おすすめTOP5",
+      "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

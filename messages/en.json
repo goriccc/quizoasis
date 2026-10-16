@@ -11477,6 +11477,64 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3LoveConfidenceLevelTest": {
+    "startMessage": {
+      "line1": "\"How much do I trust myself in love?\"",
+      "line2": "In front of someone you like, you shrink. You swallow what hurt, and you wonder if you deserve to be loved. Other times you say what you feel without flinching. Confidence in dating shifts by the moment, but you still have an average level.",
+      "line3": "Twelve dating situations add up your reactions into a level and where you rank. A lower level isn't a flaw. It shows what can grow.",
+      "line4": "",
+      "line5": "Check My Dating Level 🌱 Start Honestly",
+      "note": "※ Think about your dating and talking stages so far, and pick the reaction closest to what you actually do."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense Ad Area (My Dating Confidence Level)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "scoreTitle": "My dating confidence score",
+      "scoreUnit": " pts",
+      "topPercent": "Top {percent}%",
+      "keywords": "Key words",
+      "strengths": "Strengths of this level",
+      "growthPoint": "Where my confidence can grow",
+      "tips": "How to grow it",
+      "counseling": "A note on talking to someone",
+      "oneLiner": "In one line",
+      "shareResult": "Share your result",
+      "popularBadge": "Popular"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Dating Confidence Level 🌱 How much do you trust yourself in front of someone you like? Find your level in 12 situations",
+      "startKakao": "My Dating Confidence Level 🌱 How much do you trust yourself in front of someone you like? Find your level in 12 situations",
+      "startWechat": "My Dating Confidence Level 🌱 How much do you trust yourself in front of someone you like? Find your level in 12 situations",
+      "startWhatsapp": "My Dating Confidence Level 🌱 How much do you trust yourself in front of someone you like? Find your level in 12 situations",
+      "startTelegram": "My Dating Confidence Level 🌱 How much do you trust yourself in front of someone you like? Find your level in 12 situations",
+      "startLine": "My Dating Confidence Level 🌱 How much do you trust yourself in front of someone you like? Find your level in 12 situations"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",
