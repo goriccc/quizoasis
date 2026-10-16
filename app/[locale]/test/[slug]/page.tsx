@@ -15,6 +15,7 @@ import { PHASE3_SAME_TYPE_ATTRACTION_META } from '@/lib/phase3SameTypeAttraction
 import { PHASE3_PUSH_PULL_LEVEL_META } from '@/lib/phase3PushPullLevelData';
 import { PHASE3_CONFESSION_SUCCESS_META } from '@/lib/phase3ConfessionSuccessData';
 import { PHASE3_LOVE_CONFIDENCE_LEVEL_META } from '@/lib/phase3LoveConfidenceLevelData';
+import { PHASE3_FACE_FIRST_IMPRESSION_META } from '@/lib/phase3FaceFirstImpressionData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -353,6 +354,11 @@ const Phase3ConfessionSuccessTestClient = dynamic(
 
 const Phase3LoveConfidenceLevelTestClient = dynamic(
   () => import('@/components/Phase3LoveConfidenceLevelTestClient'),
+  { ssr: false }
+);
+
+const Phase3FaceFirstImpressionTestClient = dynamic(
+  () => import('@/components/Phase3FaceFirstImpressionTestClient'),
   { ssr: false }
 );
 
@@ -2736,6 +2742,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_CONFIDENCE_LEVEL_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-face-first-impression') {
+    test = {
+      slug: 'phase3-face-first-impression',
+      title: PHASE3_FACE_FIRST_IMPRESSION_META.title,
+      description: PHASE3_FACE_FIRST_IMPRESSION_META.description,
+      thumbnail: 'p3_test_face_first_impression.webp',
+      type: 'face',
+      category: 'face',
+      play_count: 0,
+      tags: PHASE3_FACE_FIRST_IMPRESSION_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10149,6 +10168,34 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveConfidenceLevelQuestions}
             results={phase3LoveConfidenceLevelResults}
             questionCount={phase3LoveConfidenceLevelQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-face-first-impression') {
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-face-first-impression',
+        title: PHASE3_FACE_FIRST_IMPRESSION_META.title,
+        description: PHASE3_FACE_FIRST_IMPRESSION_META.description,
+        thumbnail: 'p3_test_face_first_impression.webp',
+        type: 'face',
+        category: 'face',
+        play_count: 0,
+        tags: PHASE3_FACE_FIRST_IMPRESSION_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3FaceFirstImpressionTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />
