@@ -11351,6 +11351,66 @@
       "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
     }
   },
+  "phase3PushPullLevelTest": {
+    "startMessage": {
+      "line1": "\"Tarik-ulur, aku level berapa?\"",
+      "line2": "Terlalu dekat terasa berat, terlalu jauh malah dingin. Ada yang mengatur jarak dengan alami. Ada yang cuma frontal, atau capek karena terlalu menghitung. Tarik-ulur yang baik bukan trik untuk menggoyahkan seseorang, melainkan rasa untuk menemukan jarak yang nyaman berdua.",
+      "line3": "10 situasi PDKT dan pacaran menjumlahkan reaksimu menjadi sebuah level. Bandingkan hasilnya dengan pasangan atau teman.",
+      "line4": "",
+      "line5": "Ukur Level Tarik-Ulurku 🎣 Mulai dengan Jujur",
+      "note": "※ Ingat kembali masa PDKT dan pacaranmu, lalu pilih jawaban yang paling mirip dengan reaksi aslimu."
+    },
+    "ui": {
+      "scoreTitle": "Skor tarik-ulurku",
+      "scoreUnit": " poin",
+      "keywords": "Kata kunci utama",
+      "strengths": "Kelebihan level ini",
+      "growthPoint": "Poin yang bisa kutumbuhkan",
+      "chemistryTitle": "Kecocokan tarik-ulur kita",
+      "chemistryHint": "Masukkan skor dia (10–40) untuk melihat satu kalimat sesuai selisihnya.",
+      "chemistryPlaceholder": "Skor dia",
+      "chemistryInvalid": "Masukkan bilangan bulat dari 10 sampai 40.",
+      "tips": "Cara naik level",
+      "oneLiner": "Satu kalimat untukmu",
+      "popularBadge": "Populer",
+      "adsenseTitle": "Area Iklan AdSense (Tes Level Tarik-Ulurku)",
+      "goToTest": "Ikuti tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "shareResult": "Bagikan hasil"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tes Level Tarik-Ulurku 🎣 Terlalu dekat terasa berat, terlalu jauh malah dingin. Ukur levelmu lewat 10 situasi",
+      "startKakao": "Tes Level Tarik-Ulurku 🎣 Terlalu dekat terasa berat, terlalu jauh malah dingin. Ukur levelmu lewat 10 situasi",
+      "startWechat": "Tes Level Tarik-Ulurku 🎣 Terlalu dekat terasa berat, terlalu jauh malah dingin. Ukur levelmu lewat 10 situasi",
+      "startWhatsapp": "Tes Level Tarik-Ulurku 🎣 Terlalu dekat terasa berat, terlalu jauh malah dingin. Ukur levelmu lewat 10 situasi",
+      "startTelegram": "Tes Level Tarik-Ulurku 🎣 Terlalu dekat terasa berat, terlalu jauh malah dingin. Ukur levelmu lewat 10 situasi",
+      "startLine": "Tes Level Tarik-Ulurku 🎣 Terlalu dekat terasa berat, terlalu jauh malah dingin. Ukur levelmu lewat 10 situasi"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Silakan coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Terpopuler"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

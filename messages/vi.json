@@ -11351,6 +11351,66 @@
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
   },
+  "phase3PushPullLevelTest": {
+    "startMessage": {
+      "line1": "\"Kéo-đẩy, mình đang ở level nào?\"",
+      "line2": "Lại gần quá thì nặng, lùi xa quá thì nguội. Có người điều chỉnh khoảng cách rất tự nhiên. Có người chỉ biết thẳng, hoặc tính toán đến mức mệt. Kéo-đẩy hay không phải mẹo để lay động đối phương, mà là cảm giác cùng tìm một khoảng cách dễ chịu.",
+      "line3": "10 tình huống mập mờ và yêu đương sẽ cộng phản ứng của bạn thành một cấp độ. Hãy so kết quả với người yêu hoặc bạn bè.",
+      "line4": "",
+      "line5": "Đo cấp độ kéo-đẩy 🎣 Bắt đầu thật lòng",
+      "note": "※ Nhớ lại những lần mập mờ và yêu đương, chọn đáp án gần với phản ứng thật của bạn nhất."
+    },
+    "ui": {
+      "scoreTitle": "Điểm kéo-đẩy của tôi",
+      "scoreUnit": " điểm",
+      "keywords": "Từ khóa chính",
+      "strengths": "Điểm mạnh của cấp này",
+      "growthPoint": "Điểm mình có thể tiến bộ",
+      "chemistryTitle": "Độ hợp kéo-đẩy của hai người",
+      "chemistryHint": "Nhập điểm của đối phương (10–40) để xem một câu nhận xét theo mức chênh.",
+      "chemistryPlaceholder": "Điểm của họ",
+      "chemistryInvalid": "Chỉ nhập số nguyên từ 10 đến 40.",
+      "tips": "Cách lên cấp",
+      "oneLiner": "Tóm gọn một câu",
+      "popularBadge": "Phổ biến",
+      "adsenseTitle": "Khu vực quảng cáo AdSense (Test cấp độ kéo-đẩy của tôi)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Test cấp độ kéo-đẩy của tôi 🎣 Lại gần quá thì nặng, lùi xa quá thì nguội. Đo cấp độ của bạn qua 10 tình huống",
+      "startKakao": "Test cấp độ kéo-đẩy của tôi 🎣 Lại gần quá thì nặng, lùi xa quá thì nguội. Đo cấp độ của bạn qua 10 tình huống",
+      "startWechat": "Test cấp độ kéo-đẩy của tôi 🎣 Lại gần quá thì nặng, lùi xa quá thì nguội. Đo cấp độ của bạn qua 10 tình huống",
+      "startWhatsapp": "Test cấp độ kéo-đẩy của tôi 🎣 Lại gần quá thì nặng, lùi xa quá thì nguội. Đo cấp độ của bạn qua 10 tình huống",
+      "startTelegram": "Test cấp độ kéo-đẩy của tôi 🎣 Lại gần quá thì nặng, lùi xa quá thì nguội. Đo cấp độ của bạn qua 10 tình huống",
+      "startLine": "Test cấp độ kéo-đẩy của tôi 🎣 Lại gần quá thì nặng, lùi xa quá thì nguội. Đo cấp độ của bạn qua 10 tình huống"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào bộ nhớ tạm!",
+      "shareFailed": "Không thể sử dụng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo tính năng chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Bạn bỗng dưng mắc kẹt trên một hòn đảo hoang.",

@@ -11360,6 +11360,66 @@
       "popularTestsTop5": "🔥 Top 5 Trending Tests"
     }
   },
+  "phase3PushPullLevelTest": {
+    "startMessage": {
+      "line1": "\"So what's my push-pull level?\"",
+      "line2": "Get too close and it feels heavy. Step too far back and things cool off. Some people adjust the distance naturally. Others only charge in, or wear themselves out calculating. Good push-pull isn't a trick for shaking someone. It's a sense for finding a distance that feels good for both of you.",
+      "line3": "Ten talking-stage and dating situations add up your reactions into a level. Compare your result with a partner or a friend.",
+      "line4": "",
+      "line5": "Check My Push-Pull Level 🎣 Start Honestly",
+      "note": "※ Think about how you've actually reacted while talking to someone or dating, and pick the closest answer."
+    },
+    "ui": {
+      "scoreTitle": "My push-pull score",
+      "scoreUnit": " pts",
+      "keywords": "Key words",
+      "strengths": "Strengths of this level",
+      "growthPoint": "Where I can grow",
+      "chemistryTitle": "Our push-pull match",
+      "chemistryHint": "Enter their score (10–40) for a one-line read on the gap.",
+      "chemistryPlaceholder": "Their score",
+      "chemistryInvalid": "Enter a whole number from 10 to 40.",
+      "tips": "How to level up",
+      "oneLiner": "In one line",
+      "popularBadge": "Popular",
+      "adsenseTitle": "AdSense Ad Area (My Push-Pull Level Test)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "shareResult": "Share your result"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Push-Pull Level Test 🎣 Too close feels heavy, too far cools things off. Find your level in 10 situations",
+      "startKakao": "My Push-Pull Level Test 🎣 Too close feels heavy, too far cools things off. Find your level in 10 situations",
+      "startWechat": "My Push-Pull Level Test 🎣 Too close feels heavy, too far cools things off. Find your level in 10 situations",
+      "startWhatsapp": "My Push-Pull Level Test 🎣 Too close feels heavy, too far cools things off. Find your level in 10 situations",
+      "startTelegram": "My Push-Pull Level Test 🎣 Too close feels heavy, too far cools things off. Find your level in 10 situations",
+      "startLine": "My Push-Pull Level Test 🎣 Too close feels heavy, too far cools things off. Find your level in 10 situations"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

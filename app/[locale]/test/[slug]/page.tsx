@@ -12,6 +12,7 @@ import { getTestData } from '@/lib/mbtiData';
 import { getOgImageUrl, getThumbnailUrl } from '@/lib/utils';
 import { getLatestTestSlugs } from '@/lib/latestTests';
 import { PHASE3_SAME_TYPE_ATTRACTION_META } from '@/lib/phase3SameTypeAttractionData';
+import { PHASE3_PUSH_PULL_LEVEL_META } from '@/lib/phase3PushPullLevelData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -335,6 +336,11 @@ const Phase3RealReasonSingleTestClient = dynamic(
 
 const Phase3SameTypeAttractionTestClient = dynamic(
   () => import('@/components/Phase3SameTypeAttractionTestClient'),
+  { ssr: false }
+);
+
+const Phase3PushPullLevelTestClient = dynamic(
+  () => import('@/components/Phase3PushPullLevelTestClient'),
   { ssr: false }
 );
 
@@ -2679,6 +2685,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_SAME_TYPE_ATTRACTION_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-push-pull-level') {
+    test = {
+      slug: 'phase3-push-pull-level',
+      title: PHASE3_PUSH_PULL_LEVEL_META.title,
+      description: PHASE3_PUSH_PULL_LEVEL_META.description,
+      thumbnail: 'p3_test_push_pull_level.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_PUSH_PULL_LEVEL_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -9992,6 +10011,38 @@ export default async function TestPage({ params }: Props) {
             questions={phase3SameTypeAttractionQuestions}
             results={phase3SameTypeAttractionResults}
             questionCount={phase3SameTypeAttractionQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-push-pull-level') {
+      const { phase3PushPullLevelQuestions, phase3PushPullLevelResults } = await import('@/lib/phase3PushPullLevelData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-push-pull-level',
+        title: PHASE3_PUSH_PULL_LEVEL_META.title,
+        description: PHASE3_PUSH_PULL_LEVEL_META.description,
+        thumbnail: 'p3_test_push_pull_level.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_PUSH_PULL_LEVEL_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3PushPullLevelTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3PushPullLevelQuestions}
+            results={phase3PushPullLevelResults}
+            questionCount={phase3PushPullLevelQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

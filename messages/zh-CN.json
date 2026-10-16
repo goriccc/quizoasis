@@ -11351,6 +11351,66 @@
       "popularTestsTop5": "🔥 近期热门测试推荐 TOP5"
     }
   },
+  "phase3PushPullLevelTest": {
+    "startMessage": {
+      "line1": "“推拉，我是几级？”",
+      "line2": "靠太近会有压力，退太远又会冷掉。有人能自然地调节距离，有人只会直球，也有人算到自己累。好的推拉不是晃动对方的技巧，而是一起找到舒服距离的感觉。",
+      "line3": "10个暧昧和恋爱情境会把你的反应加成等级。和对象或朋友比一比结果吧。",
+      "line4": "",
+      "line5": "测测我的推拉等级 🎣 诚实开始",
+      "note": "※ 回想至今的暧昧和恋爱，选择最接近你真实反应的选项。"
+    },
+    "ui": {
+      "scoreTitle": "我的推拉分数",
+      "scoreUnit": "分",
+      "keywords": "核心关键词",
+      "strengths": "这个等级的优点",
+      "growthPoint": "我的成长点",
+      "chemistryTitle": "我们俩的推拉合拍度",
+      "chemistryHint": "输入对方的分数（10～40），会根据分差给出一句话。",
+      "chemistryPlaceholder": "对方分数",
+      "chemistryInvalid": "请输入10到40之间的整数。",
+      "tips": "升级可以试试",
+      "oneLiner": "一句话总结",
+      "popularBadge": "热门",
+      "adsenseTitle": "AdSense 广告区域（我的推拉等级测试）",
+      "goToTest": "去测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "shareResult": "分享结果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的推拉等级测试 🎣 靠太近有压力，退太远又会冷。用10个情境测出你的等级",
+      "startKakao": "我的推拉等级测试 🎣 靠太近有压力，退太远又会冷。用10个情境测出你的等级",
+      "startWechat": "我的推拉等级测试 🎣 靠太近有压力，退太远又会冷。用10个情境测出你的等级",
+      "startWhatsapp": "我的推拉等级测试 🎣 靠太近有压力，退太远又会冷。用10个情境测出你的等级",
+      "startTelegram": "我的推拉等级测试 🎣 靠太近有压力，退太远又会冷。用10个情境测出你的等级",
+      "startLine": "我的推拉等级测试 🎣 靠太近有压力，退太远又会冷。用10个情境测出你的等级"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请粘贴到微信中分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享功能，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时出现错误。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 TOP5",
+      "popularTestsTop5": "🔥 近期热门测试推荐 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",

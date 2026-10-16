@@ -11339,6 +11339,66 @@
       "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
     }
   },
+  "phase3PushPullLevelTest": {
+    "startMessage": {
+      "line1": "「駆け引き、私は何レベル？」",
+      "line2": "近づきすぎると重く、引きすぎると冷めてしまう。自然に距離を調節できる人もいれば、直球だけ、あるいは計算して疲れてしまう人もいます。いい駆け引きは相手を揺さぶるテクニックではなく、お互いが心地いい距離を探す感覚です。",
+      "line3": "10の曖昧な関係・恋愛の場面で反応を点数にして、駆け引きレベルを出します。恋人や友達と結果を比べてみてください。",
+      "line4": "",
+      "line5": "駆け引きレベルを測る 🎣 正直にスタート",
+      "note": "※ これまでの曖昧な関係や恋愛を思い浮かべ、実際の自分にいちばん近い選択肢を選んでください。"
+    },
+    "ui": {
+      "scoreTitle": "私の駆け引きスコア",
+      "scoreUnit": "点",
+      "keywords": "キーワード",
+      "strengths": "このレベルの強み",
+      "growthPoint": "伸ばせるポイント",
+      "chemistryTitle": "二人の駆け引き相性",
+      "chemistryHint": "相手の点数（10〜40）を入れると、点差に合わせたひとことを表示します。",
+      "chemistryPlaceholder": "相手の点数",
+      "chemistryInvalid": "10点から40点の整数を入力してください。",
+      "tips": "レベルを上げるヒント",
+      "oneLiner": "ひとことで言うと",
+      "popularBadge": "人気",
+      "adsenseTitle": "AdSense 広告エリア（私の駆け引きレベルテスト）",
+      "goToTest": "テストを受ける",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "shareResult": "結果をシェアする"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の駆け引きレベルテスト 🎣 近づきすぎると重く、引きすぎると冷める。10の状況でレベルを測ろう",
+      "startKakao": "私の駆け引きレベルテスト 🎣 近づきすぎると重く、引きすぎると冷める。10の状況でレベルを測ろう",
+      "startWechat": "私の駆け引きレベルテスト 🎣 近づきすぎると重く、引きすぎると冷める。10の状況でレベルを測ろう",
+      "startWhatsapp": "私の駆け引きレベルテスト 🎣 近づきすぎると重く、引きすぎると冷める。10の状況でレベルを測ろう",
+      "startTelegram": "私の駆け引きレベルテスト 🎣 近づきすぎると重く、引きすぎると冷める。10の状況でレベルを測ろう",
+      "startLine": "私の駆け引きレベルテスト 🎣 近づきすぎると重く、引きすぎると冷める。10の状況でレベルを測ろう"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト おすすめTOP5",
+      "popularTestsTop5": "🔥 いま人気のテスト おすすめTOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

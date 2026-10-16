@@ -10820,6 +10820,66 @@
       "popularTestsTop5": "🔥 近期熱門測驗推薦 TOP5"
     }
   },
+  "phase3PushPullLevelTest": {
+    "startMessage": {
+      "line1": "「推拉，我是幾級？」",
+      "line2": "靠太近會有壓力，退太遠又會冷掉。有人能自然地調節距離，有人只會直球，也有人算到自己累。好的推拉不是晃動對方的技巧，而是一起找到舒服距離的感覺。",
+      "line3": "10個曖昧和戀愛情境會把你的反應加成等級。和對象或朋友比一比結果吧。",
+      "line4": "",
+      "line5": "測測我的推拉等級 🎣 誠實開始",
+      "note": "※ 回想至今的曖昧和戀愛，選擇最接近你真實反應的選項。"
+    },
+    "ui": {
+      "scoreTitle": "我的推拉分數",
+      "scoreUnit": "分",
+      "keywords": "核心關鍵字",
+      "strengths": "這個等級的優點",
+      "growthPoint": "我的成長點",
+      "chemistryTitle": "我們倆的推拉合拍度",
+      "chemistryHint": "輸入對方的分數（10～40），會根據分差給出一句話。",
+      "chemistryPlaceholder": "對方分數",
+      "chemistryInvalid": "請輸入10到40之間的整數。",
+      "tips": "升級可以試試",
+      "oneLiner": "一句話總結",
+      "popularBadge": "熱門",
+      "adsenseTitle": "AdSense 廣告區域（我的推拉等級測試）",
+      "goToTest": "去測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "shareResult": "分享結果"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的推拉等級測試 🎣 靠太近有壓力，退太遠又會冷。用10個情境測出你的等級",
+      "startKakao": "我的推拉等級測試 🎣 靠太近有壓力，退太遠又會冷。用10個情境測出你的等級",
+      "startWechat": "我的推拉等級測試 🎣 靠太近有壓力，退太遠又會冷。用10個情境測出你的等級",
+      "startWhatsapp": "我的推拉等級測試 🎣 靠太近有壓力，退太遠又會冷。用10個情境測出你的等級",
+      "startTelegram": "我的推拉等級測試 🎣 靠太近有壓力，退太遠又會冷。用10個情境測出你的等級",
+      "startLine": "我的推拉等級測試 🎣 靠太近有壓力，退太遠又會冷。用10個情境測出你的等級"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請貼到 WeChat 分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享功能，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 TOP5",
+      "popularTestsTop5": "🔥 近期熱門測驗推薦 TOP5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",
