@@ -11687,6 +11687,68 @@
       "popularTestsTop5": "🔥 5 bài test đang hot"
     }
   },
+  "phase3ChristmasSoloEscapeTest":
+    {
+    "startMessage": {
+      "line1": "\"Còn {count} ngày nữa là Giáng sinh. Mình thoát ế được không?\"",
+      "line1Today": "\"Hôm nay là Giáng sinh. Mình thoát ế được không?\"",
+      "line2": "Giáng sinh hay khiến người độc thân thấy lòng bồn chồn không rõ lý do. Xem bạn đã sẵn sàng đến đâu, cả lịch lẫn tâm trạng, để thực sự gặp ai đó trước ngày đó.",
+      "line3": "Mười tình huống cộng điểm phản ứng của bạn, rồi cho ra khả năng thoát ế trước Giáng sinh. Đây là con số để vui. Gửi cho bạn bè và nhận một lời cổ vũ.",
+      "line4": "",
+      "line5": "Tính khả năng của mình 🎄 Trả lời thật",
+      "note": "※ Nhớ lại mình dạo này, rồi chọn câu gần nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Đến Giáng sinh, khả năng thoát ế là bao nhiêu?)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "scoreTitle": "Điểm của mình",
+      "scoreUnit": " điểm",
+      "probability": "Khả năng thoát ế {percent}%",
+      "dday": "Còn {count} ngày nữa là Giáng sinh",
+      "ddayToday": "Hôm nay là Giáng sinh",
+      "keywords": "Từ khóa",
+      "strengths": "Điểm mạnh của mức này",
+      "obstacle": "Thứ đang chắn đường thoát ế",
+      "tips": "Việc nhỏ trước Giáng sinh",
+      "counseling": "Khi nên nói chuyện với người hỗ trợ",
+      "oneLiner": "Một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Đến Giáng sinh, khả năng thoát ế là bao nhiêu? 🎄 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startKakao": "Đến Giáng sinh, khả năng thoát ế là bao nhiêu? 🎄 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startWechat": "Đến Giáng sinh, khả năng thoát ế là bao nhiêu? 🎄 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startWhatsapp": "Đến Giáng sinh, khả năng thoát ế là bao nhiêu? 🎄 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startTelegram": "Đến Giáng sinh, khả năng thoát ế là bao nhiêu? 🎄 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startLine": "Đến Giáng sinh, khả năng thoát ế là bao nhiêu? 🎄 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết",
+      "resultCopied": "Đã sao chép kết quả",
+      "shareFailed": "Không chia sẻ được",
+      "wechatCopy": "Đã sao chép liên kết. Hãy dán vào WeChat để chia sẻ",
+      "kakaoInit": "Chia sẻ KakaoTalk đang khởi động. Thử lại sau một chút",
+      "kakaoError": "Có lỗi khi chia sẻ lên KakaoTalk"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 bài test tương tự",
+      "popularTestsTop5": "🔥 5 bài test đang hot"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Bạn bỗng dưng mắc kẹt trên một hòn đảo hoang.",

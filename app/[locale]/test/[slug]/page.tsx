@@ -17,6 +17,7 @@ import { PHASE3_CONFESSION_SUCCESS_META } from '@/lib/phase3ConfessionSuccessDat
 import { PHASE3_LOVE_CONFIDENCE_LEVEL_META } from '@/lib/phase3LoveConfidenceLevelData';
 import { PHASE3_FACE_FIRST_IMPRESSION_META } from '@/lib/phase3FaceFirstImpressionData';
 import { PHASE3_START_LOVE_SUCCESS_META } from '@/lib/phase3StartLoveSuccessData';
+import { PHASE3_CHRISTMAS_SOLO_ESCAPE_META } from '@/lib/phase3ChristmasSoloEscapeData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -365,6 +366,11 @@ const Phase3FaceFirstImpressionTestClient = dynamic(
 
 const Phase3StartLoveSuccessTestClient = dynamic(
   () => import('@/components/Phase3StartLoveSuccessTestClient'),
+  { ssr: false }
+);
+
+const Phase3ChristmasSoloEscapeTestClient = dynamic(
+  () => import('@/components/Phase3ChristmasSoloEscapeTestClient'),
   { ssr: false }
 );
 
@@ -2774,6 +2780,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_START_LOVE_SUCCESS_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-christmas-solo-escape') {
+    test = {
+      slug: 'phase3-christmas-solo-escape',
+      title: PHASE3_CHRISTMAS_SOLO_ESCAPE_META.title,
+      description: PHASE3_CHRISTMAS_SOLO_ESCAPE_META.description,
+      thumbnail: 'p3_test_christmas_solo_escape.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_CHRISTMAS_SOLO_ESCAPE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10221,6 +10240,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3StartLoveSuccessQuestions}
             results={phase3StartLoveSuccessResults}
             questionCount={phase3StartLoveSuccessQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-christmas-solo-escape') {
+      const { phase3ChristmasSoloEscapeQuestions, phase3ChristmasSoloEscapeResults } = await import(
+        '@/lib/phase3ChristmasSoloEscapeData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-christmas-solo-escape',
+        title: PHASE3_CHRISTMAS_SOLO_ESCAPE_META.title,
+        description: PHASE3_CHRISTMAS_SOLO_ESCAPE_META.description,
+        thumbnail: 'p3_test_christmas_solo_escape.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_CHRISTMAS_SOLO_ESCAPE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3ChristmasSoloEscapeTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3ChristmasSoloEscapeQuestions}
+            results={phase3ChristmasSoloEscapeResults}
+            questionCount={phase3ChristmasSoloEscapeQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

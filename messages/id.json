@@ -11687,6 +11687,68 @@
       "popularTestsTop5": "🔥 5 tes yang lagi populer"
     }
   },
+  "phase3ChristmasSoloEscapeTest":
+    {
+    "startMessage": {
+      "line1": "\"{count} hari lagi Natal. Aku bisa lepas jomblo?\"",
+      "line1Today": "\"Hari ini Natal. Aku bisa lepas jomblo?\"",
+      "line2": "Natal sering membuat orang yang masih sendiri merasa gelisah tanpa alasan yang jelas. Lihat seberapa siap kamu, dari waktu maupun suasana hati, untuk benar-benar bertemu seseorang sebelum hari itu.",
+      "line3": "Sepuluh situasi menjumlahkan reaksi kamu menjadi peluang lepas jomblo sebelum Natal. Angkanya untuk bersenang-senang. Kirim ke teman dan minta mereka menyemangati.",
+      "line4": "",
+      "line5": "Hitung peluangku 🎄 Jawab jujur",
+      "note": "※ Bayangkan dirimu belakangan ini, lalu pilih yang paling dekat."
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Sampai Natal, peluang lepas jomblo berapa?)",
+      "goToTest": "Kerjakan tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes yang mirip",
+      "scoreTitle": "Skorku",
+      "scoreUnit": " poin",
+      "probability": "Peluang lepas jomblo {percent}%",
+      "dday": "{count} hari lagi menuju Natal",
+      "ddayToday": "Hari ini Natal",
+      "keywords": "Kata kunci",
+      "strengths": "Kelebihan tahap ini",
+      "obstacle": "Yang menghalangi lepas jomblo",
+      "tips": "Misi kecil sebelum Natal",
+      "counseling": "Kalau terasa berat",
+      "oneLiner": "Satu kalimat",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Sampai Natal, peluang lepas jomblo berapa? 🎄 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startKakao": "Sampai Natal, peluang lepas jomblo berapa? 🎄 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startWechat": "Sampai Natal, peluang lepas jomblo berapa? 🎄 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startWhatsapp": "Sampai Natal, peluang lepas jomblo berapa? 🎄 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startTelegram": "Sampai Natal, peluang lepas jomblo berapa? 🎄 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startLine": "Sampai Natal, peluang lepas jomblo berapa? 🎄 10 situasi menghitung peluangku. Kamu berapa persen?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin",
+      "resultCopied": "Hasil disalin",
+      "shareFailed": "Berbagi tidak tersedia",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk membagikannya",
+      "kakaoInit": "Berbagi ke KakaoTalk masih disiapkan. Coba lagi sebentar lagi",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 tes yang mirip",
+      "popularTestsTop5": "🔥 5 tes yang lagi populer"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

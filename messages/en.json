@@ -11696,6 +11696,68 @@
       "popularTestsTop5": "🔥 Popular right now"
     }
   },
+  "phase3ChristmasSoloEscapeTest":
+    {
+    "startMessage": {
+      "line1": "\"{count} days until Christmas. Could I meet someone by then?\"",
+      "line1Today": "\"It is Christmas. Could I meet someone, even today?\"",
+      "line2": "Christmas makes a lot of single people feel strangely busy inside. See how ready you are, in time and in mood, to actually meet someone before then.",
+      "line3": "Ten situations add up into the odds you meet someone by Christmas. It is a playful number. Send it to a friend and let them cheer you on.",
+      "line4": "",
+      "line5": "Calculate my odds 🎄 Answer honestly",
+      "note": "※ Picture how you actually are these days, and pick the closest one."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (What are the odds I meet someone by Christmas?)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "scoreTitle": "My score",
+      "scoreUnit": " pts",
+      "probability": "Chance by Christmas {percent}%",
+      "dday": "{count} days until Christmas",
+      "ddayToday": "Today is Christmas",
+      "keywords": "Keywords",
+      "strengths": "What this stage has going for it",
+      "obstacle": "What is in the way",
+      "tips": "Missions before Christmas",
+      "counseling": "If things feel heavy",
+      "oneLiner": "In one line",
+      "shareResult": "Share my result",
+      "popularBadge": "Popular"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "What are the odds I meet someone by Christmas? 🎄 Ten situations, one percent. What's yours?",
+      "startKakao": "What are the odds I meet someone by Christmas? 🎄 Ten situations, one percent. What's yours?",
+      "startWechat": "What are the odds I meet someone by Christmas? 🎄 Ten situations, one percent. What's yours?",
+      "startWhatsapp": "What are the odds I meet someone by Christmas? 🎄 Ten situations, one percent. What's yours?",
+      "startTelegram": "What are the odds I meet someone by Christmas? 🎄 Ten situations, one percent. What's yours?",
+      "startLine": "What are the odds I meet someone by Christmas? 🎄 Ten situations, one percent. What's yours?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar tests",
+      "popularTestsTop5": "🔥 Popular right now"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

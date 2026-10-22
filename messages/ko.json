@@ -13990,6 +13990,68 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3ChristmasSoloEscapeTest":
+    {
+    "startMessage": {
+      "line1": "\"크리스마스까지 D-{count}, 나는 솔로를 탈출할 수 있을까?\"",
+      "line1Today": "\"크리스마스 D-Day, 나는 솔로를 탈출할 수 있을까?\"",
+      "line2": "크리스마스는 솔로에게는 괜히 마음이 분주해지는 날입니다. 남은 시간 동안 만남을 만들 준비와 마음의 여유가 얼마나 갖춰져 있는지 점검해 보세요.",
+      "line3": "10가지 상황에서 나의 반응을 점수로 합산해 크리스마스까지의 솔로 탈출 확률을 알려드립니다. 재미로 보는 지표이니 가볍게 즐기고, 지인에게 결과를 보내 응원도 받아 보세요.",
+      "line4": "",
+      "line5": "내 탈출 확률 계산하기 🎄 솔직하게 시작",
+      "note": "※ 요즘의 나를 떠올리며 실제와 가장 가까운 선택지를 고르세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (크리스마스까지 솔로 탈출 확률)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "scoreTitle": "나의 탈출 점수",
+      "scoreUnit": "점",
+      "probability": "탈출 확률 {percent}%",
+      "dday": "크리스마스까지 D-{count}",
+      "ddayToday": "오늘은 크리스마스",
+      "keywords": "핵심 키워드",
+      "strengths": "이 단계의 강점",
+      "obstacle": "내 솔로 탈출 걸림돌",
+      "tips": "D-day 미션",
+      "counseling": "전문가 상담 안내",
+      "oneLiner": "한 줄 평",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "크리스마스까지 솔로 탈출 확률 🎄 10가지 상황으로 내 탈출 확률 계산. 너는 몇 %야?",
+      "startKakao": "크리스마스까지 솔로 탈출 확률 🎄 10가지 상황으로 내 탈출 확률 계산. 너는 몇 %야?",
+      "startWechat": "크리스마스까지 솔로 탈출 확률 🎄 10가지 상황으로 내 탈출 확률 계산. 너는 몇 %야?",
+      "startWhatsapp": "크리스마스까지 솔로 탈출 확률 🎄 10가지 상황으로 내 탈출 확률 계산. 너는 몇 %야?",
+      "startTelegram": "크리스마스까지 솔로 탈출 확률 🎄 10가지 상황으로 내 탈출 확률 계산. 너는 몇 %야?",
+      "startLine": "크리스마스까지 솔로 탈출 확률 🎄 10가지 상황으로 내 탈출 확률 계산. 너는 몇 %야?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "당신은 갑자기 무인도에 떨어졌습니다.",

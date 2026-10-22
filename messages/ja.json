@@ -11675,6 +11675,68 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3ChristmasSoloEscapeTest":
+    {
+    "startMessage": {
+      "line1": "「クリスマスまであと{count}日。恋人、できるかな」",
+      "line1Today": "「今日はクリスマス。恋人、できるかな」",
+      "line2": "クリスマスは、一人だとなぜか心がざわつきやすい日です。それまでに出会いを作る準備と、心の余裕がどれくらいあるか見てみましょう。",
+      "line3": "10の場面での反応を点数にして、クリスマスまでに恋人ができる確率を出します。遊びの数字なので軽く楽しんで、結果を誰かに送って応援してもらってください。",
+      "line4": "",
+      "line5": "自分の確率を出す 🎄 正直に始める",
+      "note": "※ 最近の自分を思い浮かべて、いちばん近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（クリスマスまでに恋人ができる確率は？）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "scoreTitle": "私の点数",
+      "scoreUnit": "点",
+      "probability": "恋人できる確率 {percent}%",
+      "dday": "クリスマスまであと{count}日",
+      "ddayToday": "今日はクリスマス",
+      "keywords": "キーワード",
+      "strengths": "この段階の強み",
+      "obstacle": "恋人作りの足かせ",
+      "tips": "クリスマスまでのミッション",
+      "counseling": "相談した方がいいとき",
+      "oneLiner": "ひとこと",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "クリスマスまでに恋人ができる確率は？ 🎄 10の場面で自分の確率。あなたは何%？",
+      "startKakao": "クリスマスまでに恋人ができる確率は？ 🎄 10の場面で自分の確率。あなたは何%？",
+      "startWechat": "クリスマスまでに恋人ができる確率は？ 🎄 10の場面で自分の確率。あなたは何%？",
+      "startWhatsapp": "クリスマスまでに恋人ができる確率は？ 🎄 10の場面で自分の確率。あなたは何%？",
+      "startTelegram": "クリスマスまでに恋人ができる確率は？ 🎄 10の場面で自分の確率。あなたは何%？",
+      "startLine": "クリスマスまでに恋人ができる確率は？ 🎄 10の場面で自分の確率。あなたは何%？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました",
+      "resultCopied": "結果をコピーしました",
+      "shareFailed": "共有できませんでした",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼り付けて共有してください",
+      "kakaoInit": "カカオトークの共有を準備しています。少し待ってからもう一度試してください",
+      "kakaoError": "カカオトークへの共有中にエラーが起きました"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

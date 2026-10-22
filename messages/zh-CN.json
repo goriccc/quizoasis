@@ -11687,6 +11687,68 @@
       "popularTestsTop5": "🔥 近期热门测试 Top5"
     }
   },
+  "phase3ChristmasSoloEscapeTest":
+    {
+    "startMessage": {
+      "line1": "“离圣诞节还有{count}天，我能脱单吗？”",
+      "line1Today": "“今天就是圣诞节，我能脱单吗？”",
+      "line2": "圣诞节会让单身的人莫名心浮。看看在那之前，你制造见面的准备和心里的余力有多少。",
+      "line3": "10个情境把你的反应加成分数，算出圣诞前脱单的概率。这是个好玩的数字。发给朋友，让他们给你打气。",
+      "line4": "",
+      "line5": "算算我的概率 🎄 老实说",
+      "note": "※ 想着最近真实的自己，选最接近的一项。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告位（到圣诞节能脱单的概率是多少？）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的测试",
+      "scoreTitle": "我的分数",
+      "scoreUnit": "分",
+      "probability": "脱单概率 {percent}%",
+      "dday": "离圣诞节还有{count}天",
+      "ddayToday": "今天就是圣诞节",
+      "keywords": "关键词",
+      "strengths": "这个阶段的长处",
+      "obstacle": "脱单的绊脚石",
+      "tips": "圣诞前的小任务",
+      "counseling": "可以找人聊聊的时候",
+      "oneLiner": "一句话",
+      "shareResult": "分享结果",
+      "popularBadge": "热门"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "到圣诞节能脱单的概率是多少？ 🎄 10个情境算出我的概率。你是多少？",
+      "startKakao": "到圣诞节能脱单的概率是多少？ 🎄 10个情境算出我的概率。你是多少？",
+      "startWechat": "到圣诞节能脱单的概率是多少？ 🎄 10个情境算出我的概率。你是多少？",
+      "startWhatsapp": "到圣诞节能脱单的概率是多少？ 🎄 10个情境算出我的概率。你是多少？",
+      "startTelegram": "到圣诞节能脱单的概率是多少？ 🎄 10个情境算出我的概率。你是多少？",
+      "startLine": "到圣诞节能脱单的概率是多少？ 🎄 10个情境算出我的概率。你是多少？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制",
+      "resultCopied": "结果已复制",
+      "shareFailed": "现在无法分享",
+      "wechatCopy": "链接已复制。请粘贴到微信里分享",
+      "kakaoInit": "KakaoTalk分享还在准备，请稍后再试",
+      "kakaoError": "分享到KakaoTalk时出错了"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",
