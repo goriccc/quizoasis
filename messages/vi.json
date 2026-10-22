@@ -11625,6 +11625,68 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
     }
   },
+  "phase3StartLoveSuccessTest":
+    {
+    "startMessage": {
+      "line1": "\"Nếu bắt đầu yêu ngay bây giờ, liệu có ổn không?\"",
+      "line2": "Yêu không chỉ là gặp đúng người. Tâm trạng và hoàn cảnh hiện tại của bạn cũng quyết định. Cùng một người có thể thành hai khởi đầu khác nhau, tùy sự thư thái, cân bằng ngày thường, và việc mối cũ đã khép chưa.",
+      "line3": "Mười tình huống cộng điểm phản ứng của bạn, rồi cho ra khả năng một mối quan hệ sẽ ổn nếu bắt đầu ngay. So điểm với bạn bè.",
+      "line4": "",
+      "line5": "Tính khả năng bắt đầu của mình 🚦 Trả lời thật",
+      "note": "※ Nhớ lại mình dạo này, rồi chọn câu gần nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Vùng quảng cáo AdSense (Nếu bắt đầu yêu ngay, khả năng ổn là bao nhiêu?)",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "scoreTitle": "Điểm bắt đầu của mình",
+      "scoreUnit": " điểm",
+      "probability": "Khả năng ổn {percent}%",
+      "keywords": "Từ khóa",
+      "strengths": "Điểm mạnh của mức này",
+      "obstacle": "Thứ đang chắn đường yêu",
+      "tips": "Cách kéo xác suất lên",
+      "counseling": "Khi nên nói chuyện với người hỗ trợ",
+      "oneLiner": "Một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "notice1": "Bài test này để vui và hiểu mình hơn, không phải chẩn đoán hay dự đoán",
+      "notice2": "Phần trăm này không bảo đảm kết quả một mối quan hệ, và trạng thái hiện tại có thể đổi",
+      "notice3": "Nếu bạn kiệt sức và ngày thường trở nên nặng, hãy nói chuyện với chuyên gia tâm lý hoặc cơ sở hỗ trợ sức khỏe tâm thần ở địa phương"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Nếu bắt đầu yêu ngay, khả năng ổn là bao nhiêu? 🚦 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startKakao": "Nếu bắt đầu yêu ngay, khả năng ổn là bao nhiêu? 🚦 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startWechat": "Nếu bắt đầu yêu ngay, khả năng ổn là bao nhiêu? 🚦 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startWhatsapp": "Nếu bắt đầu yêu ngay, khả năng ổn là bao nhiêu? 🚦 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startTelegram": "Nếu bắt đầu yêu ngay, khả năng ổn là bao nhiêu? 🚦 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?",
+      "startLine": "Nếu bắt đầu yêu ngay, khả năng ổn là bao nhiêu? 🚦 10 tình huống tính khả năng của mình. Bạn được bao nhiêu?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết",
+      "resultCopied": "Đã sao chép kết quả",
+      "shareFailed": "Không chia sẻ được",
+      "wechatCopy": "Đã sao chép liên kết. Hãy dán vào WeChat để chia sẻ",
+      "kakaoInit": "Chia sẻ KakaoTalk đang khởi động. Thử lại sau một chút",
+      "kakaoError": "Có lỗi khi chia sẻ lên KakaoTalk"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 bài test tương tự",
+      "popularTestsTop5": "🔥 5 bài test đang hot"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Bạn bỗng dưng mắc kẹt trên một hòn đảo hoang.",

@@ -11613,6 +11613,68 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
+  "phase3StartLoveSuccessTest":
+    {
+    "startMessage": {
+      "line1": "「今、恋愛を始めたら、うまくいくかな」",
+      "line2": "恋愛は、いい人に出会うことと同じくらい、今の自分の心と環境も大事です。心の余裕、日常のバランス、前の恋をどこまで整理できているかで、同じ相手でも始まり方は変わります。",
+      "line3": "10の場面での反応を点数にして、今恋愛を始めたらうまくいく確率を％で出します。友達と点数を比べてみてください。",
+      "line4": "",
+      "line5": "自分のスタート確率を出す 🚦 正直に始める",
+      "note": "※ 最近の自分を思い浮かべて、いちばん近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense広告エリア（今、恋愛を始めたらうまくいく確率は？）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "scoreTitle": "私のスタート点数",
+      "scoreUnit": "点",
+      "probability": "うまくいく確率 {percent}%",
+      "keywords": "キーワード",
+      "strengths": "この段階の強み",
+      "obstacle": "始めるのを邪魔しているもの",
+      "tips": "確率を上げる処方箋",
+      "counseling": "相談した方がいいとき",
+      "oneLiner": "ひとこと",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "notice1": "このテストは診断や予測ではなく、楽しみと自己理解のためのコンテンツです",
+      "notice2": "この確率は恋愛の結果を保証しません。今の状態はいつでも変わります",
+      "notice3": "心が疲れて日常がつらいときは、心理の専門家や地域の相談窓口に話してみてください"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "今、恋愛を始めたらうまくいく確率は？ 🚦 10の場面で自分のスタート確率。あなたは何%？",
+      "startKakao": "今、恋愛を始めたらうまくいく確率は？ 🚦 10の場面で自分のスタート確率。あなたは何%？",
+      "startWechat": "今、恋愛を始めたらうまくいく確率は？ 🚦 10の場面で自分のスタート確率。あなたは何%？",
+      "startWhatsapp": "今、恋愛を始めたらうまくいく確率は？ 🚦 10の場面で自分のスタート確率。あなたは何%？",
+      "startTelegram": "今、恋愛を始めたらうまくいく確率は？ 🚦 10の場面で自分のスタート確率。あなたは何%？",
+      "startLine": "今、恋愛を始めたらうまくいく確率は？ 🚦 10の場面で自分のスタート確率。あなたは何%？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました",
+      "resultCopied": "結果をコピーしました",
+      "shareFailed": "共有できませんでした",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼り付けて共有してください",
+      "kakaoInit": "カカオトークの共有を準備しています。少し待ってからもう一度試してください",
+      "kakaoError": "カカオトークへの共有中にエラーが起きました"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 今人気のテスト トップ5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

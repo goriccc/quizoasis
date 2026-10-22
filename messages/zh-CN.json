@@ -11625,6 +11625,68 @@
       "kakaoError": "分享到 KakaoTalk 时出错了。"
     }
   },
+  "phase3StartLoveSuccessTest":
+    {
+    "startMessage": {
+      "line1": "“现在开始恋爱，能顺利吗？”",
+      "line2": "恋爱不只是遇见对的人。你现在的心情和生活状态一样重要。心里有没有余力、日子平不平衡、上一段有没有放下，会让同一个人走出完全不同的开始。",
+      "line3": "10个情境把你的反应加成分数，算出如果现在开始恋爱、能顺利的概率。拿分数和朋友比比看。",
+      "line4": "",
+      "line5": "算算我的开始概率 🚦 老实说",
+      "note": "※ 想着最近真实的自己，选最接近的一项。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense广告位（现在开始恋爱，能顺利的概率是多少？）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的测试",
+      "scoreTitle": "我的开始分数",
+      "scoreUnit": "分",
+      "probability": "能顺利的概率 {percent}%",
+      "keywords": "关键词",
+      "strengths": "这个阶段的长处",
+      "obstacle": "开始恋爱的绊脚石",
+      "tips": "把概率抬上去的办法",
+      "counseling": "可以找人聊聊的时候",
+      "oneLiner": "一句话",
+      "shareResult": "分享结果",
+      "popularBadge": "热门",
+      "notice1": "这个测试是为了好玩和认识自己，不是诊断，也不是预测",
+      "notice2": "这个概率不保证恋爱的结果，你现在的状态随时会变",
+      "notice3": "如果心里很累、日子很难过，可以和心理咨询师或当地的心理支持机构聊聊"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "现在开始恋爱，能顺利的概率是多少？ 🚦 10个情境算出我的开始概率。你是多少？",
+      "startKakao": "现在开始恋爱，能顺利的概率是多少？ 🚦 10个情境算出我的开始概率。你是多少？",
+      "startWechat": "现在开始恋爱，能顺利的概率是多少？ 🚦 10个情境算出我的开始概率。你是多少？",
+      "startWhatsapp": "现在开始恋爱，能顺利的概率是多少？ 🚦 10个情境算出我的开始概率。你是多少？",
+      "startTelegram": "现在开始恋爱，能顺利的概率是多少？ 🚦 10个情境算出我的开始概率。你是多少？",
+      "startLine": "现在开始恋爱，能顺利的概率是多少？ 🚦 10个情境算出我的开始概率。你是多少？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制",
+      "resultCopied": "结果已复制",
+      "shareFailed": "现在无法分享",
+      "wechatCopy": "链接已复制。请粘贴到微信里分享",
+      "kakaoInit": "KakaoTalk分享还在准备，请稍后再试",
+      "kakaoError": "分享到KakaoTalk时出错了"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",

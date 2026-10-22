@@ -11634,6 +11634,68 @@
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
   },
+  "phase3StartLoveSuccessTest":
+    {
+    "startMessage": {
+      "line1": "\"If I start dating now, could it actually go well?\"",
+      "line2": "Who you meet matters. So does the shape you are in. The same person can turn into a very different start depending on your room to feel, how steady your days are, and whether the last relationship is actually finished.",
+      "line3": "Ten situations add up into a percent: the odds a relationship would go well if you started now. Compare scores with a friend.",
+      "line4": "",
+      "line5": "Calculate my starting odds 🚦 Answer honestly",
+      "note": "※ Picture how you actually are these days, and pick the closest one."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (If I start dating now, what are the odds?)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "scoreTitle": "My starting score",
+      "scoreUnit": " pts",
+      "probability": "Chance it works out {percent}%",
+      "keywords": "Keywords",
+      "strengths": "What this range has going for it",
+      "obstacle": "What's in the way",
+      "tips": "How to raise the odds",
+      "counseling": "If things feel heavy",
+      "oneLiner": "In one line",
+      "shareResult": "Share my result",
+      "popularBadge": "Popular",
+      "notice1": "This is for fun and self-understanding, not a diagnosis or a forecast",
+      "notice2": "The percent does not guarantee how a relationship turns out, and where you are now can change",
+      "notice3": "If you are worn down and daily life feels hard, talk with a counselor or a local mental health service"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "If I start dating now, what are the odds it goes well? 🚦 Ten situations, one percent. What's yours?",
+      "startKakao": "If I start dating now, what are the odds it goes well? 🚦 Ten situations, one percent. What's yours?",
+      "startWechat": "If I start dating now, what are the odds it goes well? 🚦 Ten situations, one percent. What's yours?",
+      "startWhatsapp": "If I start dating now, what are the odds it goes well? 🚦 Ten situations, one percent. What's yours?",
+      "startTelegram": "If I start dating now, what are the odds it goes well? 🚦 Ten situations, one percent. What's yours?",
+      "startLine": "If I start dating now, what are the odds it goes well? 🚦 Ten situations, one percent. What's yours?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar tests",
+      "popularTestsTop5": "🔥 Popular right now"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

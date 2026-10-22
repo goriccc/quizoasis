@@ -11625,6 +11625,68 @@
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
   },
+  "phase3StartLoveSuccessTest":
+    {
+    "startMessage": {
+      "line1": "\"Kalau aku mulai pacaran sekarang, bisa lancar?\"",
+      "line2": "Pacaran bukan cuma soal bertemu orang yang tepat. Keadaan hati dan hari-harimu sekarang sama pentingnya. Orang yang sama bisa jadi awal yang berbeda, tergantung kelonggaran hati, keseimbangan harian, dan apakah hubungan yang lalu sudah benar-benar selesai.",
+      "line3": "Sepuluh situasi menjumlahkan reaksi kamu menjadi peluang, dalam persen, bahwa hubungan akan berjalan baik jika dimulai sekarang. Bandingkan skor dengan teman.",
+      "line4": "",
+      "line5": "Hitung peluang mulainya aku 🚦 Jawab jujur",
+      "note": "※ Bayangkan dirimu belakangan ini, lalu pilih yang paling dekat."
+    },
+    "ui": {
+      "adsenseTitle": "Area iklan AdSense (Kalau mulai pacaran sekarang, peluangnya lancar berapa?)",
+      "goToTest": "Kerjakan tes",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes yang mirip",
+      "scoreTitle": "Skor mulainya aku",
+      "scoreUnit": " poin",
+      "probability": "Peluang berjalan baik {percent}%",
+      "keywords": "Kata kunci",
+      "strengths": "Kelebihan rentang ini",
+      "obstacle": "Yang menghalangi mulai pacaran",
+      "tips": "Cara menaikkan peluang",
+      "counseling": "Kalau terasa berat",
+      "oneLiner": "Satu kalimat",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "notice1": "Tes ini untuk bersenang-senang dan mengenal diri, bukan diagnosis atau ramalan",
+      "notice2": "Persen ini tidak menjamin hasil sebuah hubungan, dan keadaanmu sekarang bisa berubah",
+      "notice3": "Jika kamu lelah dan hari-hari terasa berat, bicaralah dengan konselor atau layanan kesehatan mental di daerahmu"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kalau mulai pacaran sekarang, peluangnya lancar berapa? 🚦 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startKakao": "Kalau mulai pacaran sekarang, peluangnya lancar berapa? 🚦 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startWechat": "Kalau mulai pacaran sekarang, peluangnya lancar berapa? 🚦 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startWhatsapp": "Kalau mulai pacaran sekarang, peluangnya lancar berapa? 🚦 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startTelegram": "Kalau mulai pacaran sekarang, peluangnya lancar berapa? 🚦 10 situasi menghitung peluangku. Kamu berapa persen?",
+      "startLine": "Kalau mulai pacaran sekarang, peluangnya lancar berapa? 🚦 10 situasi menghitung peluangku. Kamu berapa persen?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin",
+      "resultCopied": "Hasil disalin",
+      "shareFailed": "Berbagi tidak tersedia",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk membagikannya",
+      "kakaoInit": "Berbagi ke KakaoTalk masih disiapkan. Coba lagi sebentar lagi",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 5 tes yang mirip",
+      "popularTestsTop5": "🔥 5 tes yang lagi populer"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

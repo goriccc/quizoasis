@@ -11094,6 +11094,68 @@
       "kakaoError": "分享到 KakaoTalk 時出錯了。"
     }
   },
+  "phase3StartLoveSuccessTest":
+    {
+    "startMessage": {
+      "line1": "「現在開始談戀愛，會順利嗎？」",
+      "line2": "談戀愛不只是遇見對的人。你現在的心情和生活狀態一樣重要。心裡有沒有餘力、日子平不平衡、上一段有沒有放下，會讓同一個人走出完全不同的開始。",
+      "line3": "10個情境把你的反應加成分數，算出如果現在開始談戀愛、會順利的機率。拿分數和朋友比比看。",
+      "line4": "",
+      "line5": "算算我的開始機率 🚦 老實說",
+      "note": "※ 想著最近真實的自己，選最接近的一項。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense廣告區（現在開始談戀愛，會順利的機率是多少？）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的測驗",
+      "scoreTitle": "我的開始分數",
+      "scoreUnit": "分",
+      "probability": "會順利的機率 {percent}%",
+      "keywords": "關鍵詞",
+      "strengths": "這個階段的長處",
+      "obstacle": "開始談戀愛的絆腳石",
+      "tips": "把機率拉上去的辦法",
+      "counseling": "可以找人聊聊的時候",
+      "oneLiner": "一句話",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門",
+      "notice1": "這個測驗是為了好玩和認識自己，不是診斷，也不是預測",
+      "notice2": "這個機率不保證戀愛的結果，你現在的狀態隨時會變",
+      "notice3": "如果心裡很累、日子很難過，可以和心理諮商師或當地的心理支持機構聊聊"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "現在開始談戀愛，會順利的機率是多少？ 🚦 10個情境算出我的開始機率。你是多少？",
+      "startKakao": "現在開始談戀愛，會順利的機率是多少？ 🚦 10個情境算出我的開始機率。你是多少？",
+      "startWechat": "現在開始談戀愛，會順利的機率是多少？ 🚦 10個情境算出我的開始機率。你是多少？",
+      "startWhatsapp": "現在開始談戀愛，會順利的機率是多少？ 🚦 10個情境算出我的開始機率。你是多少？",
+      "startTelegram": "現在開始談戀愛，會順利的機率是多少？ 🚦 10個情境算出我的開始機率。你是多少？",
+      "startLine": "現在開始談戀愛，會順利的機率是多少？ 🚦 10個情境算出我的開始機率。你是多少？"
+    },
+    "alerts": {
+      "linkCopied": "已複製連結",
+      "resultCopied": "已複製結果",
+      "shareFailed": "現在無法分享",
+      "wechatCopy": "已複製連結。請貼到微信裡分享",
+      "kakaoInit": "KakaoTalk分享還在準備，請稍後再試",
+      "kakaoError": "分享到KakaoTalk時出錯了"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",
