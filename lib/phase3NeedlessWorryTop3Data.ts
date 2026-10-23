@@ -318,12 +318,18 @@ export function calculatePhase3NeedlessWorryTop3(answers: number[], locale: stri
   const fourth = ranked[3];
   const closeFourth = fourth && top3[2] && fourth.score === top3[2].score ? fourth : null;
 
-  const familyCounts = new Map<Phase3NeedlessWorryCard['family'], number>();
+  const familyCounts: Record<Phase3NeedlessWorryCard['family'], number> = {
+    mind: 0,
+    people: 0,
+    reality: 0,
+  };
   top3.forEach((item) => {
-    familyCounts.set(item.card.family, (familyCounts.get(item.card.family) ?? 0) + 1);
+    familyCounts[item.card.family] += 1;
   });
-  const paired = [...familyCounts.entries()].find(([, count]) => count >= 2);
-  const familyId: Phase3NeedlessWorryFamilyId = paired ? paired[0] : 'balance';
+  const paired = (Object.keys(familyCounts) as Array<Phase3NeedlessWorryCard['family']>).find(
+    (family) => familyCounts[family] >= 2
+  );
+  const familyId: Phase3NeedlessWorryFamilyId = paired ?? 'balance';
   const family = phase3NeedlessWorryFamilies.find((item) => item.id === familyId) ?? phase3NeedlessWorryFamilies[3];
 
   const names = top3.map((item) => pick(item.card.name, locale));
