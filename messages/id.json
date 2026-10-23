@@ -11813,6 +11813,68 @@
       "popularTestsTop5": "🔥 Tes populer belakangan ini Top 5"
     }
   },
+  "phase3LoveIqPercentTest":     {
+    "startMessage": {
+      "line1": "Pacaran cuma pakai feeling itu rawan. Ada pilihan yang lebih tepat.",
+      "line2": "Di 15 situasi, pilih langkah yang benar-benar membantu hubungan.",
+      "line3": "Penjelasan muncul setelah kamu memilih. Jumlah benar menunjukkan kamu masuk berapa % teratas.",
+      "line4": "Sekitar 4 menit",
+      "line5": "Cek IQ pacaran aku 🧠 Mulai",
+      "note": ""
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "IQ pacaran aku masuk berapa % teratas? 🧠 15 soal langsung keluar. Skor kamu berapa?",
+      "startKakao": "IQ pacaran aku masuk berapa % teratas? 🧠 15 soal langsung keluar. Skor kamu berapa?",
+      "startWechat": "IQ pacaran aku masuk berapa % teratas? 🧠 15 soal langsung keluar. Skor kamu berapa?",
+      "startWhatsapp": "IQ pacaran aku masuk berapa % teratas? 🧠 15 soal langsung keluar. Skor kamu berapa?",
+      "startTelegram": "IQ pacaran aku masuk berapa % teratas? 🧠 15 soal langsung keluar. Skor kamu berapa?",
+      "startLine": "IQ pacaran aku masuk berapa % teratas? 🧠 15 soal langsung keluar. Skor kamu berapa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk masih disiapkan. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Kerjakan tesnya",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes yang mirip",
+      "popularBadge": "Populer",
+      "scoreTitle": "Skor IQ pacaran",
+      "scoreUnit": " poin",
+      "keywords": "Kata kunci",
+      "strengths": "Yang sudah kamu punya",
+      "tips": "Cara menaikkan skor",
+      "missed": "Prinsip yang terlewat",
+      "missedTopics": "Topik yang terlewat",
+      "allCorrect": "Tidak ada prinsip yang terlewat. 15 soal benar semua.",
+      "feedbackCorrect": "Ini yang tepat",
+      "feedbackWrong": "Hampir",
+      "explanation": "Kenapa",
+      "nextQuestion": "Soal berikutnya",
+      "viewResult": "Lihat hasil",
+      "shareResult": "Bagikan hasil"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Rekomendasi tes serupa Top 5",
+      "popularTestsTop5": "🔥 Tes populer belakangan ini Top 5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",

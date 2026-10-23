@@ -11813,6 +11813,68 @@
       "popularTestsTop5": "🔥 Bài test đang hot Top 5"
     }
   },
+  "phase3LoveIqPercentTest":     {
+    "startMessage": {
+      "line1": "Yêu chỉ bằng cảm tính thì dễ hỏng. Có cách làm đỡ hỏng hơn.",
+      "line2": "Trong 15 tình huống, chọn cách thật sự có ích cho mối quan hệ.",
+      "line3": "Chọn xong mới có lời giải. Số câu đúng cho biết bạn thuộc top bao nhiêu %.",
+      "line4": "Khoảng 4 phút",
+      "line5": "Xem IQ tình yêu của mình 🧠 Bắt đầu",
+      "note": ""
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "IQ tình yêu của mình top bao nhiêu %? 🧠 15 câu là ra. Bạn được bao nhiêu điểm?",
+      "startKakao": "IQ tình yêu của mình top bao nhiêu %? 🧠 15 câu là ra. Bạn được bao nhiêu điểm?",
+      "startWechat": "IQ tình yêu của mình top bao nhiêu %? 🧠 15 câu là ra. Bạn được bao nhiêu điểm?",
+      "startWhatsapp": "IQ tình yêu của mình top bao nhiêu %? 🧠 15 câu là ra. Bạn được bao nhiêu điểm?",
+      "startTelegram": "IQ tình yêu của mình top bao nhiêu %? 🧠 15 câu là ra. Bạn được bao nhiêu điểm?",
+      "startLine": "IQ tình yêu của mình top bao nhiêu %? 🧠 15 câu là ra. Bạn được bao nhiêu điểm?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không chia sẻ được.",
+      "wechatCopy": "Đã sao chép liên kết. Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang chuẩn bị chia sẻ. Thử lại sau một chút.",
+      "kakaoError": "Chia sẻ KakaoTalk bị lỗi."
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "scoreTitle": "Điểm IQ tình yêu",
+      "scoreUnit": " điểm",
+      "keywords": "Từ khóa",
+      "strengths": "Thứ bạn đã có",
+      "tips": "Cách kéo điểm lên",
+      "missed": "Nguyên tắc mình bỏ lỡ",
+      "missedTopics": "Chủ đề bỏ lỡ",
+      "allCorrect": "Không bỏ lỡ nguyên tắc nào. Đúng cả 15 câu.",
+      "feedbackCorrect": "Đúng rồi",
+      "feedbackWrong": "Suýt",
+      "explanation": "Vì sao",
+      "nextQuestion": "Câu tiếp",
+      "viewResult": "Xem kết quả",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Gợi ý bài test tương tự Top 5",
+      "popularTestsTop5": "🔥 Bài test đang hot Top 5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Bạn bỗng dưng mắc kẹt trên một hòn đảo hoang.",

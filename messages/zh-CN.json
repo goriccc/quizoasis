@@ -11813,6 +11813,68 @@
       "popularTestsTop5": "🔥 近期热门测试 Top5"
     }
   },
+  "phase3LoveIqPercentTest":     {
+    "startMessage": {
+      "line1": "恋爱只靠感觉，很容易踩坑。这里有更合适的做法。",
+      "line2": "在15个场景里，选出真正对关系有帮助的做法。",
+      "line3": "选完才看讲解。按答对的题数，看你超过百分之几的人。",
+      "line4": "大约4分钟",
+      "line5": "看看我的恋爱IQ 🧠 开始",
+      "note": ""
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的恋爱IQ能排到前百分之几？🧠 15题就出结果。你多少分？",
+      "startKakao": "我的恋爱IQ能排到前百分之几？🧠 15题就出结果。你多少分？",
+      "startWechat": "我的恋爱IQ能排到前百分之几？🧠 15题就出结果。你多少分？",
+      "startWhatsapp": "我的恋爱IQ能排到前百分之几？🧠 15题就出结果。你多少分？",
+      "startTelegram": "我的恋爱IQ能排到前百分之几？🧠 15题就出结果。你多少分？",
+      "startLine": "我的恋爱IQ能排到前百分之几？🧠 15题就出结果。你多少分？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制！",
+      "shareFailed": "现在无法分享。",
+      "wechatCopy": "链接已复制。请粘贴到微信分享。",
+      "kakaoInit": "KakaoTalk 分享还在准备，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错了。"
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "popularBadge": "人气",
+      "scoreTitle": "恋爱IQ分数",
+      "scoreUnit": "分",
+      "keywords": "关键词",
+      "strengths": "你已经有的",
+      "tips": "怎么把分数提上去",
+      "missed": "我错过的恋爱原则",
+      "missedTopics": "错过的主题",
+      "allCorrect": "没有错过的原则。15题全对。",
+      "feedbackCorrect": "这题对了",
+      "feedbackWrong": "差一点点",
+      "explanation": "讲解",
+      "nextQuestion": "下一题",
+      "viewResult": "看结果",
+      "shareResult": "分享结果"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",

@@ -19,6 +19,7 @@ import { PHASE3_FACE_FIRST_IMPRESSION_META } from '@/lib/phase3FaceFirstImpressi
 import { PHASE3_START_LOVE_SUCCESS_META } from '@/lib/phase3StartLoveSuccessData';
 import { PHASE3_CHRISTMAS_SOLO_ESCAPE_META } from '@/lib/phase3ChristmasSoloEscapeData';
 import { PHASE3_NEEDLESS_WORRY_TOP3_META } from '@/lib/phase3NeedlessWorryTop3Data';
+import { PHASE3_LOVE_IQ_PERCENT_META } from '@/lib/phase3LoveIqPercentData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -377,6 +378,11 @@ const Phase3ChristmasSoloEscapeTestClient = dynamic(
 
 const Phase3NeedlessWorryTop3TestClient = dynamic(
   () => import('@/components/Phase3NeedlessWorryTop3TestClient'),
+  { ssr: false }
+);
+
+const Phase3LoveIqPercentTestClient = dynamic(
+  () => import('@/components/Phase3LoveIqPercentTestClient'),
   { ssr: false }
 );
 
@@ -2799,6 +2805,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_NEEDLESS_WORRY_TOP3_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-iq-percent') {
+    test = {
+      slug: 'phase3-love-iq-percent',
+      title: PHASE3_LOVE_IQ_PERCENT_META.title,
+      description: PHASE3_LOVE_IQ_PERCENT_META.description,
+      thumbnail: 'p3_test_love_iq_percent.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_LOVE_IQ_PERCENT_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10259,6 +10278,37 @@ export default async function TestPage({ params }: Props) {
             questions={phase3StartLoveSuccessQuestions}
             results={phase3StartLoveSuccessResults}
             questionCount={phase3StartLoveSuccessQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-love-iq-percent') {
+      const { phase3LoveIqPercentQuestions } = await import('@/lib/phase3LoveIqPercentData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-love-iq-percent',
+        title: PHASE3_LOVE_IQ_PERCENT_META.title,
+        description: PHASE3_LOVE_IQ_PERCENT_META.description,
+        thumbnail: 'p3_test_love_iq_percent.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_LOVE_IQ_PERCENT_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3LoveIqPercentTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3LoveIqPercentQuestions}
+            questionCount={phase3LoveIqPercentQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

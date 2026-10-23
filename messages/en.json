@@ -11822,6 +11822,68 @@
       "popularTestsTop5": "🔥 Popular right now"
     }
   },
+  "phase3LoveIqPercentTest":     {
+    "startMessage": {
+      "line1": "Dating on instinct alone is risky. There is a better move.",
+      "line2": "In 15 situations, pick the choice that actually helps the relationship.",
+      "line3": "The explanation shows up after you choose. Your score says what percent you land in.",
+      "line4": "About 4 minutes",
+      "line5": "Check my dating IQ 🧠 Start",
+      "note": ""
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "What percent is your dating IQ? 🧠 Fifteen questions and you know. What is your score?",
+      "startKakao": "What percent is your dating IQ? 🧠 Fifteen questions and you know. What is your score?",
+      "startWechat": "What percent is your dating IQ? 🧠 Fifteen questions and you know. What is your score?",
+      "startWhatsapp": "What percent is your dating IQ? 🧠 Fifteen questions and you know. What is your score?",
+      "startTelegram": "What percent is your dating IQ? 🧠 Fifteen questions and you know. What is your score?",
+      "startLine": "What percent is your dating IQ? 🧠 Fifteen questions and you know. What is your score?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "ui": {
+      "adsenseTitle": "Ad",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "scoreTitle": "Dating IQ score",
+      "scoreUnit": " pts",
+      "keywords": "Keywords",
+      "strengths": "What you already have",
+      "tips": "How to raise it",
+      "missed": "Principles I missed",
+      "missedTopics": "Missed topics",
+      "allCorrect": "You did not miss a principle. All 15 were right.",
+      "feedbackCorrect": "That is the one",
+      "feedbackWrong": "Not quite",
+      "explanation": "Why",
+      "nextQuestion": "Next",
+      "viewResult": "See my result",
+      "shareResult": "Share my result"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar tests",
+      "popularTestsTop5": "🔥 Popular right now"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

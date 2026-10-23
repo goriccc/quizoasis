@@ -14116,6 +14116,68 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3LoveIqPercentTest":   {
+    "startMessage": {
+      "line1": "연애, 센스로만 하면 위험합니다. 정답이 있습니다!",
+      "line2": "15가지 상황에서 관계에 도움이 되는 선택을 골라 보세요.",
+      "line3": "고른 뒤에 해설이 나옵니다. 맞힌 개수로 상위 몇 %인지 알려 드려요.",
+      "line4": "소요 시간 약 4분",
+      "line5": "내 연애 IQ 확인하기 🧠 시작",
+      "note": ""
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 연애 IQ, 상위 몇 %일까? 🧠 15문제면 바로 나와. 너는 몇 점이야?",
+      "startKakao": "나의 연애 IQ, 상위 몇 %일까? 🧠 15문제면 바로 나와. 너는 몇 점이야?",
+      "startWechat": "나의 연애 IQ, 상위 몇 %일까? 🧠 15문제면 바로 나와. 너는 몇 점이야?",
+      "startWhatsapp": "나의 연애 IQ, 상위 몇 %일까? 🧠 15문제면 바로 나와. 너는 몇 점이야?",
+      "startTelegram": "나의 연애 IQ, 상위 몇 %일까? 🧠 15문제면 바로 나와. 너는 몇 점이야?",
+      "startLine": "나의 연애 IQ, 상위 몇 %일까? 🧠 15문제면 바로 나와. 너는 몇 점이야?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "scoreTitle": "연애 IQ 점수",
+      "scoreUnit": "점",
+      "keywords": "키워드",
+      "strengths": "강점",
+      "tips": "IQ 올리는 처방",
+      "missed": "내가 놓친 연애 원칙",
+      "missedTopics": "놓친 주제",
+      "allCorrect": "놓친 원칙이 없습니다. 15문항을 모두 맞혔어요.",
+      "feedbackCorrect": "정답입니다",
+      "feedbackWrong": "아쉬워요",
+      "explanation": "해설",
+      "nextQuestion": "다음 문제",
+      "viewResult": "결과 보기",
+      "shareResult": "결과 공유하기"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "당신은 갑자기 무인도에 떨어졌습니다.",

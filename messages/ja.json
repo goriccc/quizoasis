@@ -11801,6 +11801,68 @@
       "popularTestsTop5": "🔥 いま人気のテスト トップ5"
     }
   },
+  "phase3LoveIqPercentTest":     {
+    "startMessage": {
+      "line1": "恋愛をセンスだけでやると危ない。ちゃんといい選び方があります。",
+      "line2": "15の場面で、関係の役に立つほうを選んでください。",
+      "line3": "選んだあとに解説が出ます。正解数で上位何%か分かります。",
+      "line4": "所要時間 約4分",
+      "line5": "自分の恋愛IQを見る 🧠 スタート",
+      "note": ""
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の恋愛IQ、上位何%だと思う？ 🧠 15問ですぐ出るよ。あなたの点数は？",
+      "startKakao": "私の恋愛IQ、上位何%だと思う？ 🧠 15問ですぐ出るよ。あなたの点数は？",
+      "startWechat": "私の恋愛IQ、上位何%だと思う？ 🧠 15問ですぐ出るよ。あなたの点数は？",
+      "startWhatsapp": "私の恋愛IQ、上位何%だと思う？ 🧠 15問ですぐ出るよ。あなたの点数は？",
+      "startTelegram": "私の恋愛IQ、上位何%だと思う？ 🧠 15問ですぐ出るよ。あなたの点数は？",
+      "startLine": "私の恋愛IQ、上位何%だと思う？ 🧠 15問ですぐ出るよ。あなたの点数は？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました",
+      "resultCopied": "結果をコピーしました",
+      "shareFailed": "共有できませんでした",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼って共有してください",
+      "kakaoInit": "カカオトークの共有を準備しています。少ししてからもう一度試してください",
+      "kakaoError": "カカオトークの共有でエラーが起きました"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "popularBadge": "人気",
+      "scoreTitle": "恋愛IQスコア",
+      "scoreUnit": "点",
+      "keywords": "キーワード",
+      "strengths": "すでにある力",
+      "tips": "点数を上げるには",
+      "missed": "外した恋愛の原則",
+      "missedTopics": "外したテーマ",
+      "allCorrect": "外した原則はありません。15問すべて正解です。",
+      "feedbackCorrect": "正解です",
+      "feedbackWrong": "惜しい",
+      "explanation": "解説",
+      "nextQuestion": "次の問題",
+      "viewResult": "結果を見る",
+      "shareResult": "結果をシェア"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 いま人気のテスト トップ5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

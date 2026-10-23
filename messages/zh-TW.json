@@ -11282,6 +11282,68 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3LoveIqPercentTest":     {
+    "startMessage": {
+      "line1": "戀愛只靠感覺，很容易踩雷。這裡有比較好的做法。",
+      "line2": "在15個情境裡，選出真正對關係有幫助的做法。",
+      "line3": "選完才看解說。依答對題數，看你贏過百分之幾。",
+      "line4": "大約4分鐘",
+      "line5": "看看我的戀愛IQ 🧠 開始",
+      "note": ""
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的戀愛IQ能排到前百分之幾？🧠 15題就出結果。你幾分？",
+      "startKakao": "我的戀愛IQ能排到前百分之幾？🧠 15題就出結果。你幾分？",
+      "startWechat": "我的戀愛IQ能排到前百分之幾？🧠 15題就出結果。你幾分？",
+      "startWhatsapp": "我的戀愛IQ能排到前百分之幾？🧠 15題就出結果。你幾分？",
+      "startTelegram": "我的戀愛IQ能排到前百分之幾？🧠 15題就出結果。你幾分？",
+      "startLine": "我的戀愛IQ能排到前百分之幾？🧠 15題就出結果。你幾分？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製！",
+      "shareFailed": "現在無法分享。",
+      "wechatCopy": "連結已複製。請貼到微信分享。",
+      "kakaoInit": "KakaoTalk 分享還在準備，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "popularBadge": "人氣",
+      "scoreTitle": "戀愛IQ分數",
+      "scoreUnit": "分",
+      "keywords": "關鍵詞",
+      "strengths": "你已經有的",
+      "tips": "怎麼把分數拉上去",
+      "missed": "我錯過的戀愛原則",
+      "missedTopics": "錯過的主題",
+      "allCorrect": "沒有錯過的原則。15題全對。",
+      "feedbackCorrect": "這題對了",
+      "feedbackWrong": "差一點點",
+      "explanation": "解說",
+      "nextQuestion": "下一題",
+      "viewResult": "看結果",
+      "shareResult": "分享結果"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",
