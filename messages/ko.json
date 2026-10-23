@@ -14052,6 +14052,70 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3NeedlessWorryTop3Test": {
+    "startMessage": {
+      "line1": "\"사실은 걱정 안 해도 될 걱정들, 나는 뭘 자주 할까?\"",
+      "line2": "걱정은 쓸데없어 보여도 나를 지키려는 마음에서 나옵니다. 어떤 걱정이 자주 올라오는지 알면 그 마음이 무엇을 지키려는지도 보입니다.",
+      "line3": "12가지 장면에서 더 자주 하게 되는 걱정을 골라 보세요. 내가 자주 하는 걱정 TOP3와, 그 걱정이 지켜 주려는 것, 내려놓는 법을 알려드립니다.",
+      "line4": "",
+      "line5": "내 걱정 TOP3 찾기 ☁️ 솔직하게 시작",
+      "note": "※ 요즘 머릿속에서 더 자주 맴도는 걱정을 하나 고르세요."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 광고 영역 (쓸데없는 걱정 TOP3)",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "rank1": "1위",
+      "rank2": "2위",
+      "rank3": "3위",
+      "animal": "걱정 동물",
+      "protects": "이 걱정이 지켜 주려는 것",
+      "strength": "이 걱정의 장점",
+      "grows": "걱정이 커질 때",
+      "letGo": "내려놓는 법",
+      "comfort": "나를 달래는 한마디",
+      "oneLiner": "한 줄 평",
+      "family": "걱정 계열",
+      "practice": "연습할 한마디",
+      "bars": "걱정 점수",
+      "scoreUnit": "점",
+      "closeFourth": "아깝게 4위: {name}",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "쓸데없는 걱정 TOP3 ☁️ 자주 하는 걱정 1·2·3위와 걱정 동물은? 같이 해보자!",
+      "startKakao": "쓸데없는 걱정 TOP3 ☁️ 자주 하는 걱정 1·2·3위와 걱정 동물은? 같이 해보자!",
+      "startWechat": "쓸데없는 걱정 TOP3 ☁️ 자주 하는 걱정 1·2·3위와 걱정 동물은? 같이 해보자!",
+      "startWhatsapp": "쓸데없는 걱정 TOP3 ☁️ 자주 하는 걱정 1·2·3위와 걱정 동물은? 같이 해보자!",
+      "startTelegram": "쓸데없는 걱정 TOP3 ☁️ 자주 하는 걱정 1·2·3위와 걱정 동물은? 같이 해보자!",
+      "startLine": "쓸데없는 걱정 TOP3 ☁️ 자주 하는 걱정 1·2·3위와 걱정 동물은? 같이 해보자!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "당신은 갑자기 무인도에 떨어졌습니다.",

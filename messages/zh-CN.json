@@ -11749,6 +11749,70 @@
       "popularTestsTop5": "🔥 近期热门测试 Top5"
     }
   },
+  "phase3NeedlessWorryTop3Test": {
+    "startMessage": {
+      "line1": "“其实不用担心的那些事，我最常担心哪几件？”",
+      "line2": "担心看起来多余，其实是在保护你。知道哪些担心经常冒出来，也就知道那份心在守什么。",
+      "line3": "在12个场景里选出更常出现的担心。你会看到自己的担心TOP3、它在保护什么，以及怎么放下。",
+      "line4": "",
+      "line5": "找出我的担心TOP3 ☁️ 老实说",
+      "note": "※ 想着最近在脑子里打转的事，选最接近的一项。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 区域（多余的担心TOP3）",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似测试",
+      "rank1": "第1",
+      "rank2": "第2",
+      "rank3": "第3",
+      "animal": "担心动物",
+      "protects": "这份担心在保护什么",
+      "strength": "这份担心的好处",
+      "grows": "担心变大的时候",
+      "letGo": "放下的办法",
+      "comfort": "对自己说的一句",
+      "oneLiner": "一句话",
+      "family": "担心类型",
+      "practice": "可以练的一句",
+      "bars": "担心分数",
+      "scoreUnit": "分",
+      "closeFourth": "差一点排第4：{name}",
+      "shareResult": "分享结果",
+      "popularBadge": "热门"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "多余的担心TOP3 ☁️ 你最常担心的前三名，担心动物是什么？一起来看看！",
+      "startKakao": "多余的担心TOP3 ☁️ 你最常担心的前三名，担心动物是什么？一起来看看！",
+      "startWechat": "多余的担心TOP3 ☁️ 你最常担心的前三名，担心动物是什么？一起来看看！",
+      "startWhatsapp": "多余的担心TOP3 ☁️ 你最常担心的前三名，担心动物是什么？一起来看看！",
+      "startTelegram": "多余的担心TOP3 ☁️ 你最常担心的前三名，担心动物是什么？一起来看看！",
+      "startLine": "多余的担心TOP3 ☁️ 你最常担心的前三名，担心动物是什么？一起来看看！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制",
+      "resultCopied": "结果已复制",
+      "shareFailed": "现在没法分享",
+      "wechatCopy": "链接已复制。贴到微信里分享吧",
+      "kakaoInit": "KakaoTalk 分享还在准备，请稍后再试",
+      "kakaoError": "KakaoTalk 分享时出错了"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丢到了一座无人岛。",

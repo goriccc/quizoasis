@@ -11758,6 +11758,70 @@
       "popularTestsTop5": "🔥 Popular right now"
     }
   },
+  "phase3NeedlessWorryTop3Test": {
+    "startMessage": {
+      "line1": "\"Which worries do I keep having, even when I don't need to?\"",
+      "line2": "A worry can look pointless and still be trying to protect you. Once you see which ones show up, you can see what they are guarding.",
+      "line3": "Pick the worry that feels more familiar in 12 moments. You'll get your top 3, what each one is protecting, and a way to set it down.",
+      "line4": "",
+      "line5": "Find my top 3 ☁️ Answer honestly",
+      "note": "※ Picture what has actually been looping in your head lately, and pick the closest one."
+    },
+    "ui": {
+      "adsenseTitle": "AdSense area (Your top 3 needless worries)",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "rank1": "1st",
+      "rank2": "2nd",
+      "rank3": "3rd",
+      "animal": "Worry animal",
+      "protects": "What this worry is protecting",
+      "strength": "The upside",
+      "grows": "When it gets loud",
+      "letGo": "How to set it down",
+      "comfort": "A line to tell yourself",
+      "oneLiner": "In one line",
+      "family": "Worry pattern",
+      "practice": "A line to practice",
+      "bars": "Worry scores",
+      "scoreUnit": " pts",
+      "closeFourth": "So close at 4th: {name}",
+      "shareResult": "Share result",
+      "popularBadge": "Popular"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Top 3 needless worries ☁️ What's 1st, 2nd, and 3rd for you, and what's your worry animal? Try it with me.",
+      "startKakao": "Top 3 needless worries ☁️ What's 1st, 2nd, and 3rd for you, and what's your worry animal? Try it with me.",
+      "startWechat": "Top 3 needless worries ☁️ What's 1st, 2nd, and 3rd for you, and what's your worry animal? Try it with me.",
+      "startWhatsapp": "Top 3 needless worries ☁️ What's 1st, 2nd, and 3rd for you, and what's your worry animal? Try it with me.",
+      "startTelegram": "Top 3 needless worries ☁️ What's 1st, 2nd, and 3rd for you, and what's your worry animal? Try it with me.",
+      "startLine": "Top 3 needless worries ☁️ What's 1st, 2nd, and 3rd for you, and what's your worry animal? Try it with me."
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied.",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied. Paste it into WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "KakaoTalk sharing didn't go through."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar tests",
+      "popularTestsTop5": "🔥 Popular right now"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "You've suddenly been stranded on a desert island.",

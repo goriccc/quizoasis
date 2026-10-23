@@ -11737,6 +11737,70 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
+  "phase3NeedlessWorryTop3Test": {
+    "startMessage": {
+      "line1": "「本当はいらない心配、私はどれをよくする？」",
+      "line2": "心配は無駄に見えても、自分を守ろうとする気持ちから出てきます。どれがよく浮かぶか分かると、その気持ちが何を守ろうとしているかも見えます。",
+      "line3": "12の場面で、ついしてしまう心配を選んでください。よくする心配トップ3と、それが守ろうとしているもの、手放し方をお伝えします。",
+      "line4": "",
+      "line5": "自分の心配トップ3を出す ☁️ 正直に始める",
+      "note": "※ 最近頭の中でよく回っている心配を思い浮かべて、いちばん近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSenseエリア（いらない心配トップ3）",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "rank1": "1位",
+      "rank2": "2位",
+      "rank3": "3位",
+      "animal": "心配アニマル",
+      "protects": "この心配が守ろうとしているもの",
+      "strength": "この心配のいいところ",
+      "grows": "心配が大きくなるとき",
+      "letGo": "手放し方",
+      "comfort": "自分にかける一言",
+      "oneLiner": "ひとこと",
+      "family": "心配のタイプ",
+      "practice": "練習する一言",
+      "bars": "心配スコア",
+      "scoreUnit": "点",
+      "closeFourth": "惜しくも4位：{name}",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "いらない心配トップ3 ☁️ よくする心配の1・2・3位と、心配アニマルは？一緒にやってみて！",
+      "startKakao": "いらない心配トップ3 ☁️ よくする心配の1・2・3位と、心配アニマルは？一緒にやってみて！",
+      "startWechat": "いらない心配トップ3 ☁️ よくする心配の1・2・3位と、心配アニマルは？一緒にやってみて！",
+      "startWhatsapp": "いらない心配トップ3 ☁️ よくする心配の1・2・3位と、心配アニマルは？一緒にやってみて！",
+      "startTelegram": "いらない心配トップ3 ☁️ よくする心配の1・2・3位と、心配アニマルは？一緒にやってみて！",
+      "startLine": "いらない心配トップ3 ☁️ よくする心配の1・2・3位と、心配アニマルは？一緒にやってみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました",
+      "resultCopied": "結果をコピーしました",
+      "shareFailed": "共有できませんでした",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼って共有してください",
+      "kakaoInit": "カカオトークの共有を準備しています。少ししてからもう一度試してください",
+      "kakaoError": "カカオトークの共有でエラーが起きました"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 いま人気のテスト トップ5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "突然、無人島に漂着しました。",

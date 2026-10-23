@@ -11218,6 +11218,70 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3NeedlessWorryTop3Test": {
+    "startMessage": {
+      "line1": "「其實不用擔心的那些事，我最常擔心哪幾件？」",
+      "line2": "擔心看起來多餘，其實是在保護你。知道哪些擔心經常冒出來，也就知道那份心在守什麼。",
+      "line3": "在12個場景裡選出更常出現的擔心。你會看到自己的擔心TOP3、它在保護什麼，以及怎麼放下。",
+      "line4": "",
+      "line5": "找出我的擔心TOP3 ☁️ 老實說",
+      "note": "※ 想著最近在腦子裡打轉的事，選最接近的一項。"
+    },
+    "ui": {
+      "adsenseTitle": "AdSense 區域（多餘的擔心TOP3）",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測驗",
+      "rank1": "第1",
+      "rank2": "第2",
+      "rank3": "第3",
+      "animal": "擔心動物",
+      "protects": "這份擔心在保護什麼",
+      "strength": "這份擔心的好處",
+      "grows": "擔心變大的時候",
+      "letGo": "放下的辦法",
+      "comfort": "對自己說的一句",
+      "oneLiner": "一句話",
+      "family": "擔心類型",
+      "practice": "可以練的一句",
+      "bars": "擔心分數",
+      "scoreUnit": "分",
+      "closeFourth": "差一點排第4：{name}",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "多餘的擔心TOP3 ☁️ 你最常擔心的前三名，擔心動物是什麼？一起來看看！",
+      "startKakao": "多餘的擔心TOP3 ☁️ 你最常擔心的前三名，擔心動物是什麼？一起來看看！",
+      "startWechat": "多餘的擔心TOP3 ☁️ 你最常擔心的前三名，擔心動物是什麼？一起來看看！",
+      "startWhatsapp": "多餘的擔心TOP3 ☁️ 你最常擔心的前三名，擔心動物是什麼？一起來看看！",
+      "startTelegram": "多餘的擔心TOP3 ☁️ 你最常擔心的前三名，擔心動物是什麼？一起來看看！",
+      "startLine": "多餘的擔心TOP3 ☁️ 你最常擔心的前三名，擔心動物是什麼？一起來看看！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製",
+      "resultCopied": "結果已複製",
+      "shareFailed": "現在無法分享",
+      "wechatCopy": "連結已複製。貼到微信再分享吧",
+      "kakaoInit": "KakaoTalk 分享還在準備，請稍後再試",
+      "kakaoError": "KakaoTalk 分享時出錯了"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "你突然被丟到了一座無人島。",

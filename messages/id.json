@@ -11749,6 +11749,70 @@
       "popularTestsTop5": "🔥 5 tes yang lagi populer"
     }
   },
+  "phase3NeedlessWorryTop3Test": {
+    "startMessage": {
+      "line1": "\"Khawatir yang sebenarnya tidak perlu, aku paling sering yang mana?\"",
+      "line2": "Khawatir bisa terlihat sia-sia, padahal muncul karena ingin menjaga dirimu. Kalau tahu mana yang sering muncul, kamu juga lihat apa yang sedang dijaga.",
+      "line3": "Di 12 situasi, pilih khawatir yang lebih sering. Kamu dapat 3 teratas, apa yang dijaganya, dan cara melepasnya.",
+      "line4": "",
+      "line5": "Cari 3 teratas aku ☁️ Jawab jujur",
+      "note": "※ Bayangkan yang belakangan ini muter di kepala, lalu pilih yang paling dekat."
+    },
+    "ui": {
+      "adsenseTitle": "Area AdSense (3 khawatir yang tidak perlu)",
+      "goToTest": "Kerjakan tesnya",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes yang mirip",
+      "rank1": "Peringkat 1",
+      "rank2": "Peringkat 2",
+      "rank3": "Peringkat 3",
+      "animal": "Hewan khawatir",
+      "protects": "Yang dijaga khawatir ini",
+      "strength": "Sisi baiknya",
+      "grows": "Saat khawatir membesar",
+      "letGo": "Cara melepas",
+      "comfort": "Kalimat untuk diri sendiri",
+      "oneLiner": "Satu kalimat",
+      "family": "Pola khawatir",
+      "practice": "Kalimat untuk dilatih",
+      "bars": "Skor khawatir",
+      "scoreUnit": " poin",
+      "closeFourth": "Nyaris peringkat 4: {name}",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "3 khawatir yang tidak perlu ☁️ Peringkat 1, 2, 3 kamu apa, dan hewan khawatirnya? Yuk coba bareng!",
+      "startKakao": "3 khawatir yang tidak perlu ☁️ Peringkat 1, 2, 3 kamu apa, dan hewan khawatirnya? Yuk coba bareng!",
+      "startWechat": "3 khawatir yang tidak perlu ☁️ Peringkat 1, 2, 3 kamu apa, dan hewan khawatirnya? Yuk coba bareng!",
+      "startWhatsapp": "3 khawatir yang tidak perlu ☁️ Peringkat 1, 2, 3 kamu apa, dan hewan khawatirnya? Yuk coba bareng!",
+      "startTelegram": "3 khawatir yang tidak perlu ☁️ Peringkat 1, 2, 3 kamu apa, dan hewan khawatirnya? Yuk coba bareng!",
+      "startLine": "3 khawatir yang tidak perlu ☁️ Peringkat 1, 2, 3 kamu apa, dan hewan khawatirnya? Yuk coba bareng!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin",
+      "resultCopied": "Hasil disalin",
+      "shareFailed": "Berbagi tidak tersedia saat ini",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk masih disiapkan. Coba lagi sebentar lagi.",
+      "kakaoError": "Berbagi ke KakaoTalk gagal"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Rekomendasi tes serupa Top 5",
+      "popularTestsTop5": "🔥 Tes populer belakangan ini Top 5"
+    }
+  },
   "phase3DesertIslandSurvivalKitTest": {
     "startMessage": {
       "line1": "Kamu tiba-tiba terdampar di pulau terpencil.",
