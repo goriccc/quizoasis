@@ -11822,6 +11822,68 @@
       "popularTestsTop5": "🔥 Popular right now"
     }
   },
+  "phase3FriendDriftReasonTest":   {
+    "startMessage": {
+      "line1": "Friends drift for a reason, even when nobody fought.",
+      "line2": "There's a friend you've gone quiet with, and there was no fight. Often it's time, energy, and a full head, not anyone's fault. If you see how you create distance, you can keep the people you still want close.",
+      "line3": "Pick the reaction that feels most like you in 12 moments. You'll see your distancing pattern, and one line that can bring you closer. This doesn't rate your friend or tell you to cut them off.",
+      "line4": "",
+      "line5": "Find how I create distance 🌉 Start honestly",
+      "note": "※ Picture a friend you've gone quiet with, and choose the closest option."
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why do friends drift? 🌉 No fight, just silence. What's my pattern? Try it with me",
+      "startKakao": "Why do friends drift? 🌉 No fight, just silence. What's my pattern? Try it with me",
+      "startWechat": "Why do friends drift? 🌉 No fight, just silence. What's my pattern? Try it with me",
+      "startWhatsapp": "Why do friends drift? 🌉 No fight, just silence. What's my pattern? Try it with me",
+      "startTelegram": "Why do friends drift? 🌉 No fight, just silence. What's my pattern? Try it with me",
+      "startLine": "Why do friends drift? 🌉 No fight, just silence. What's my pattern? Try it with me"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "ui": {
+      "adsenseTitle": "Ad",
+      "goToTest": "Take the test",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "questionHint": "Picture a friend you've gone quiet with, and pick the closest one.",
+      "keywords": "Keywords",
+      "protects": "What this pattern was protecting",
+      "friendSide": "What it may have looked like to them",
+      "feeling": "Name the feeling",
+      "closer": "A way back",
+      "oneLine": "One line you can send",
+      "oneLiner": "In one line",
+      "bars": "Scores by type",
+      "scoreUnit": " pts",
+      "secondPattern": "Also in the mix: {name}",
+      "compareCard": "Type card to compare",
+      "compareGuide": "This is common. Use it only to start a conversation, not to judge anyone.",
+      "shareResult": "Share my result"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Similar tests",
+      "popularTestsTop5": "🔥 Popular right now"
+    }
+  },
   "phase3LoveIqPercentTest":     {
     "startMessage": {
       "line1": "Dating on instinct alone is risky. There is a better move.",

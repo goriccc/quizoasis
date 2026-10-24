@@ -11813,6 +11813,68 @@
       "popularTestsTop5": "🔥 近期热门测试 Top5"
     }
   },
+  "phase3FriendDriftReasonTest":   {
+    "startMessage": {
+      "line1": "朋友自然变疏远，是有原因的。",
+      "line2": "没吵过架，联系却渐渐少了。很多时候不是谁的错，而是时间、精力和心里的空当一点点用完了。看清自己怎样拉开距离，想留的人就还能留住。",
+      "line3": "在12个场面里，选最像你的反应。你会看到自己的距离模式，以及一句可以重新靠近的话。这不是给朋友打分，也不叫你断掉关系。",
+      "line4": "",
+      "line5": "看看我怎样拉开距离 🌉 老实说",
+      "note": "※ 想着最近少联系的那位朋友，选最接近的一项。"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "和朋友变疏远的原因 🌉 没吵架，联系却少了。我是哪种？一起来看",
+      "startKakao": "和朋友变疏远的原因 🌉 没吵架，联系却少了。我是哪种？一起来看",
+      "startWechat": "和朋友变疏远的原因 🌉 没吵架，联系却少了。我是哪种？一起来看",
+      "startWhatsapp": "和朋友变疏远的原因 🌉 没吵架，联系却少了。我是哪种？一起来看",
+      "startTelegram": "和朋友变疏远的原因 🌉 没吵架，联系却少了。我是哪种？一起来看",
+      "startLine": "和朋友变疏远的原因 🌉 没吵架，联系却少了。我是哪种？一起来看"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制！",
+      "shareFailed": "现在无法分享。",
+      "wechatCopy": "链接已复制。请粘贴到微信分享。",
+      "kakaoInit": "KakaoTalk 分享还在准备，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错了。"
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "popularBadge": "人气",
+      "questionHint": "想着最近少联系的那位朋友，选最接近的一项。",
+      "keywords": "关键词",
+      "protects": "这个模式想守住的",
+      "friendSide": "在朋友那边可能发生的事",
+      "feeling": "给心情起个名字",
+      "closer": "怎样再靠近",
+      "oneLine": "可以发给朋友的一句",
+      "oneLiner": "一句话",
+      "bars": "各类型分数",
+      "scoreUnit": "分",
+      "secondPattern": "一起出现的模式：{name}",
+      "compareCard": "类型对比卡",
+      "compareGuide": "这很常见。对比只用来打开彼此理解的话，不要拿来评判谁。",
+      "shareResult": "分享结果"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  },
   "phase3LoveIqPercentTest":     {
     "startMessage": {
       "line1": "恋爱只靠感觉，很容易踩坑。这里有更合适的做法。",

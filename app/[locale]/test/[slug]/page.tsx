@@ -20,6 +20,7 @@ import { PHASE3_START_LOVE_SUCCESS_META } from '@/lib/phase3StartLoveSuccessData
 import { PHASE3_CHRISTMAS_SOLO_ESCAPE_META } from '@/lib/phase3ChristmasSoloEscapeData';
 import { PHASE3_NEEDLESS_WORRY_TOP3_META } from '@/lib/phase3NeedlessWorryTop3Data';
 import { PHASE3_LOVE_IQ_PERCENT_META } from '@/lib/phase3LoveIqPercentData';
+import { PHASE3_FRIEND_DRIFT_REASON_META } from '@/lib/phase3FriendDriftReasonData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -383,6 +384,11 @@ const Phase3NeedlessWorryTop3TestClient = dynamic(
 
 const Phase3LoveIqPercentTestClient = dynamic(
   () => import('@/components/Phase3LoveIqPercentTestClient'),
+  { ssr: false }
+);
+
+const Phase3FriendDriftReasonTestClient = dynamic(
+  () => import('@/components/Phase3FriendDriftReasonTestClient'),
   { ssr: false }
 );
 
@@ -2805,6 +2811,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_NEEDLESS_WORRY_TOP3_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-friend-drift-reason') {
+    test = {
+      slug: 'phase3-friend-drift-reason',
+      title: PHASE3_FRIEND_DRIFT_REASON_META.title,
+      description: PHASE3_FRIEND_DRIFT_REASON_META.description,
+      thumbnail: 'p3_test_friend_drift_reason.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_FRIEND_DRIFT_REASON_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10278,6 +10297,37 @@ export default async function TestPage({ params }: Props) {
             questions={phase3StartLoveSuccessQuestions}
             results={phase3StartLoveSuccessResults}
             questionCount={phase3StartLoveSuccessQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-friend-drift-reason') {
+      const { phase3FriendDriftReasonQuestions } = await import('@/lib/phase3FriendDriftReasonData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-friend-drift-reason',
+        title: PHASE3_FRIEND_DRIFT_REASON_META.title,
+        description: PHASE3_FRIEND_DRIFT_REASON_META.description,
+        thumbnail: 'p3_test_friend_drift_reason.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_FRIEND_DRIFT_REASON_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3FriendDriftReasonTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3FriendDriftReasonQuestions}
+            questionCount={phase3FriendDriftReasonQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

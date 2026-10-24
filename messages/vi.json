@@ -11813,6 +11813,68 @@
       "popularTestsTop5": "🔥 Bài test đang hot Top 5"
     }
   },
+  "phase3FriendDriftReasonTest":   {
+    "startMessage": {
+      "line1": "Bạn bè xa dần là có lý do, dù chẳng ai cãi nhau.",
+      "line2": "Có người bạn liên lạc thưa dần mà chưa từng cãi. Thường là thời gian, năng lượng và chỗ trống trong lòng cạn dần, không phải lỗi của ai. Thấy cách mình tạo khoảng cách thì những người muốn giữ vẫn giữ được.",
+      "line3": "Ở 12 tình huống, chọn phản ứng giống bạn nhất. Bạn sẽ thấy kiểu tạo khoảng cách của mình, và một câu để lại gần. Bài này không chấm điểm bạn bè, cũng không bảo bạn cắt đứt.",
+      "line4": "",
+      "line5": "Xem cách mình tạo khoảng cách 🌉 Nói thật",
+      "note": "※ Nghĩ đến người bạn dạo này ít liên lạc, chọn phương án gần nhất."
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Vì sao bạn bè xa dần? 🌉 Không cãi mà ít nhắn. Mình thuộc kiểu nào? Làm cùng nhé",
+      "startKakao": "Vì sao bạn bè xa dần? 🌉 Không cãi mà ít nhắn. Mình thuộc kiểu nào? Làm cùng nhé",
+      "startWechat": "Vì sao bạn bè xa dần? 🌉 Không cãi mà ít nhắn. Mình thuộc kiểu nào? Làm cùng nhé",
+      "startWhatsapp": "Vì sao bạn bè xa dần? 🌉 Không cãi mà ít nhắn. Mình thuộc kiểu nào? Làm cùng nhé",
+      "startTelegram": "Vì sao bạn bè xa dần? 🌉 Không cãi mà ít nhắn. Mình thuộc kiểu nào? Làm cùng nhé",
+      "startLine": "Vì sao bạn bè xa dần? 🌉 Không cãi mà ít nhắn. Mình thuộc kiểu nào? Làm cùng nhé"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không chia sẻ được.",
+      "wechatCopy": "Đã sao chép liên kết. Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang chuẩn bị chia sẻ. Thử lại sau một chút.",
+      "kakaoError": "Chia sẻ KakaoTalk bị lỗi."
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "questionHint": "Nghĩ đến người bạn dạo này ít liên lạc, chọn phương án gần nhất.",
+      "keywords": "Từ khóa",
+      "protects": "Điều kiểu này đang giữ",
+      "friendSide": "Phía bạn có thể đã thấy",
+      "feeling": "Gọi tên cảm xúc",
+      "closer": "Cách lại gần",
+      "oneLine": "Một câu gửi cho bạn",
+      "oneLiner": "Một dòng",
+      "bars": "Điểm từng kiểu",
+      "scoreUnit": " điểm",
+      "secondPattern": "Kiểu đi cùng: {name}",
+      "compareCard": "Thẻ so kiểu",
+      "compareGuide": "Chuyện này phổ biến. Chỉ dùng để mở một cuộc nói hiểu nhau, đừng dùng để đánh giá ai.",
+      "shareResult": "Chia sẻ kết quả"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Gợi ý bài test tương tự Top 5",
+      "popularTestsTop5": "🔥 Bài test đang hot Top 5"
+    }
+  },
   "phase3LoveIqPercentTest":     {
     "startMessage": {
       "line1": "Yêu chỉ bằng cảm tính thì dễ hỏng. Có cách làm đỡ hỏng hơn.",

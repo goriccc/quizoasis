@@ -11801,6 +11801,68 @@
       "popularTestsTop5": "🔥 いま人気のテスト トップ5"
     }
   },
+  "phase3FriendDriftReasonTest":   {
+    "startMessage": {
+      "line1": "自然に疎遠になる友達には、理由があります。",
+      "line2": "けんかしたわけでもないのに、いつの間にか連絡が減った友達がいます。誰かのせいというより、時間と気力と心の余裕が積もった結果であることが多いです。自分がどんなふうに距離を作るのか分かると、残したい縁は守れます。",
+      "line3": "12の場面で、いちばん自分らしい反応を選んでください。距離の置き方と、もう一度近づくための一言が分かります。友達を評価したり、縁を切れと言ったりするテストではありません。",
+      "line4": "",
+      "line5": "自分の距離の置き方を見る 🌉 正直に始める",
+      "note": "※ 最近連絡が減った友達を思い浮かべて、いちばん近いものを選んでください。"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "友達と疎遠になる理由 🌉 けんかしてないのに連絡が減ったのはなぜ？自分のパターン、一緒に見て",
+      "startKakao": "友達と疎遠になる理由 🌉 けんかしてないのに連絡が減ったのはなぜ？自分のパターン、一緒に見て",
+      "startWechat": "友達と疎遠になる理由 🌉 けんかしてないのに連絡が減ったのはなぜ？自分のパターン、一緒に見て",
+      "startWhatsapp": "友達と疎遠になる理由 🌉 けんかしてないのに連絡が減ったのはなぜ？自分のパターン、一緒に見て",
+      "startTelegram": "友達と疎遠になる理由 🌉 けんかしてないのに連絡が減ったのはなぜ？自分のパターン、一緒に見て",
+      "startLine": "友達と疎遠になる理由 🌉 けんかしてないのに連絡が減ったのはなぜ？自分のパターン、一緒に見て"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました",
+      "resultCopied": "結果をコピーしました",
+      "shareFailed": "共有できませんでした",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼って共有してください",
+      "kakaoInit": "カカオトークの共有を準備しています。少ししてからもう一度試してください",
+      "kakaoError": "カカオトークの共有でエラーが起きました"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストへ",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "テレグラム",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "popularBadge": "人気",
+      "questionHint": "最近連絡が減った友達を思い浮かべて、いちばん近いものを選んでください。",
+      "keywords": "キーワード",
+      "protects": "このパターンが守ろうとしていたもの",
+      "friendSide": "友達側で起きていたかもしれないこと",
+      "feeling": "気持ちに名前をつける",
+      "closer": "もう一度近づくには",
+      "oneLine": "友達に渡す一言",
+      "oneLiner": "ひとこと",
+      "bars": "タイプ別の点数",
+      "scoreUnit": "点",
+      "secondPattern": "一緒にあるパターン: {name}",
+      "compareCard": "タイプ比較カード",
+      "compareGuide": "これは多くの人にあることです。比べるのは、相手を決めつけるためではなく、理解し合う話のきっかけにしてください。",
+      "shareResult": "結果をシェア"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテスト トップ5",
+      "popularTestsTop5": "🔥 いま人気のテスト トップ5"
+    }
+  },
   "phase3LoveIqPercentTest":     {
     "startMessage": {
       "line1": "恋愛をセンスだけでやると危ない。ちゃんといい選び方があります。",

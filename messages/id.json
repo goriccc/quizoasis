@@ -11813,6 +11813,68 @@
       "popularTestsTop5": "🔥 Tes populer belakangan ini Top 5"
     }
   },
+  "phase3FriendDriftReasonTest":   {
+    "startMessage": {
+      "line1": "Teman jadi jarang itu ada alasannya, meski tidak ada yang bertengkar.",
+      "line2": "Ada teman yang kabarnya makin sepi, padahal tidak pernah berantem. Sering kali yang habis adalah waktu, tenaga, dan ruang di kepala, bukan salah siapa-siapa. Kalau kamu lihat cara kamu menciptakan jarak, orang yang ingin dipertahankan masih bisa dijaga.",
+      "line3": "Di 12 momen, pilih reaksi yang paling mirip kamu. Kamu akan melihat pola jarakmu, dan satu kalimat untuk dekat lagi. Ini bukan untuk menilai teman, dan tidak menyuruhmu memutus hubungan.",
+      "line4": "",
+      "line5": "Lihat cara aku menciptakan jarak 🌉 Jawab jujur",
+      "note": "※ Bayangkan teman yang akhir-akhir ini jarang kabar, lalu pilih yang paling dekat."
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa jadi jarang sama teman? 🌉 Tidak berantem, tapi sepi. Polaku yang mana? Coba bareng",
+      "startKakao": "Kenapa jadi jarang sama teman? 🌉 Tidak berantem, tapi sepi. Polaku yang mana? Coba bareng",
+      "startWechat": "Kenapa jadi jarang sama teman? 🌉 Tidak berantem, tapi sepi. Polaku yang mana? Coba bareng",
+      "startWhatsapp": "Kenapa jadi jarang sama teman? 🌉 Tidak berantem, tapi sepi. Polaku yang mana? Coba bareng",
+      "startTelegram": "Kenapa jadi jarang sama teman? 🌉 Tidak berantem, tapi sepi. Polaku yang mana? Coba bareng",
+      "startLine": "Kenapa jadi jarang sama teman? 🌉 Tidak berantem, tapi sepi. Polaku yang mana? Coba bareng"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk masih disiapkan. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Kerjakan tesnya",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes yang mirip",
+      "popularBadge": "Populer",
+      "questionHint": "Bayangkan teman yang akhir-akhir ini jarang kabar, lalu pilih yang paling dekat.",
+      "keywords": "Kata kunci",
+      "protects": "Yang pola ini sedang jaga",
+      "friendSide": "Yang mungkin terasa di sisi teman",
+      "feeling": "Beri nama perasaannya",
+      "closer": "Cara dekat lagi",
+      "oneLine": "Satu kalimat untuk teman",
+      "oneLiner": "Satu baris",
+      "bars": "Skor tiap tipe",
+      "scoreUnit": " poin",
+      "secondPattern": "Pola yang ikut muncul: {name}",
+      "compareCard": "Kartu banding tipe",
+      "compareGuide": "Ini biasa terjadi. Pakai perbandingan hanya untuk membuka obrolan saling mengerti, bukan untuk menilai siapa pun.",
+      "shareResult": "Bagikan hasil"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Rekomendasi tes serupa Top 5",
+      "popularTestsTop5": "🔥 Tes populer belakangan ini Top 5"
+    }
+  },
   "phase3LoveIqPercentTest":     {
     "startMessage": {
       "line1": "Pacaran cuma pakai feeling itu rawan. Ada pilihan yang lebih tepat.",

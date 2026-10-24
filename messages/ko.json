@@ -14116,6 +14116,68 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   },
+  "phase3FriendDriftReasonTest":   {
+    "startMessage": {
+      "line1": "자연스럽게 멀어지는 친구, 이유가 있어요.",
+      "line2": "싸운 적도 없는데 어느새 연락이 뜸해진 친구가 있습니다. 누구의 잘못이라기보다 시간, 에너지, 마음의 여유가 쌓인 결과일 때가 많습니다. 내가 어떤 방식으로 거리를 만들게 되는지 알면 붙잡고 싶은 인연은 지킬 수 있습니다.",
+      "line3": "12가지 장면에서 가장 나다운 반응을 골라 보세요. 나의 거리두기 패턴과 다시 가까워지는 한마디를 알려드립니다. 친구를 평가하거나 관계를 끊으라는 테스트가 아닙니다.",
+      "line4": "",
+      "line5": "내 거리두기 패턴 찾기 🌉 솔직하게 시작",
+      "note": "※ 요즘 연락이 뜸해진 친구를 떠올리며 가장 가까운 선택지를 고르세요."
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "친구와 멀어지는 이유 🌉 싸운 적 없는데 연락이 뜸해진 이유, 내 패턴은? 같이 해보자",
+      "startKakao": "친구와 멀어지는 이유 🌉 싸운 적 없는데 연락이 뜸해진 이유, 내 패턴은? 같이 해보자",
+      "startWechat": "친구와 멀어지는 이유 🌉 싸운 적 없는데 연락이 뜸해진 이유, 내 패턴은? 같이 해보자",
+      "startWhatsapp": "친구와 멀어지는 이유 🌉 싸운 적 없는데 연락이 뜸해진 이유, 내 패턴은? 같이 해보자",
+      "startTelegram": "친구와 멀어지는 이유 🌉 싸운 적 없는데 연락이 뜸해진 이유, 내 패턴은? 같이 해보자",
+      "startLine": "친구와 멀어지는 이유 🌉 싸운 적 없는데 연락이 뜸해진 이유, 내 패턴은? 같이 해보자"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "questionHint": "요즘 연락이 뜸해진 친구를 떠올리며 가장 가까운 선택지를 고르세요.",
+      "keywords": "핵심 키워드",
+      "protects": "이 패턴이 지켜 주려던 것",
+      "friendSide": "친구 쪽에서 일어났을 수 있는 일",
+      "feeling": "감정에 이름 붙이기",
+      "closer": "다시 가까워지는 법",
+      "oneLine": "친구에게 건넬 한마디",
+      "oneLiner": "한 줄 평",
+      "bars": "유형별 점수",
+      "scoreUnit": "점",
+      "secondPattern": "함께 있는 패턴: {name}",
+      "compareCard": "유형 비교 카드",
+      "compareGuide": "이 패턴은 많은 사람에게 흔한 일이에요. 비교는 서로를 이해하는 대화를 여는 용도로만 써 주세요",
+      "shareResult": "결과 공유하기"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  },
   "phase3LoveIqPercentTest":   {
     "startMessage": {
       "line1": "연애, 센스로만 하면 위험합니다. 정답이 있습니다!",

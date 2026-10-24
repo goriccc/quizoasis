@@ -11282,6 +11282,68 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
+  "phase3FriendDriftReasonTest":   {
+    "startMessage": {
+      "line1": "朋友自然變疏遠，是有原因的。",
+      "line2": "沒吵過架，聯絡卻漸漸少了。很多時候不是誰的錯，而是時間、精力和心裡的空檔一點點用完了。看清自己怎樣拉開距離，想留的人就還能留住。",
+      "line3": "在12個場面裡，選最像你的反應。你會看到自己的距離模式，以及一句可以重新靠近的話。這不是給朋友打分，也不叫你斷掉關係。",
+      "line4": "",
+      "line5": "看看我怎樣拉開距離 🌉 老實說",
+      "note": "※ 想著最近少聯絡的那位朋友，選最接近的一項。"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "和朋友變疏遠的原因 🌉 沒吵架，聯絡卻少了。我是哪一種？一起來看看",
+      "startKakao": "和朋友變疏遠的原因 🌉 沒吵架，聯絡卻少了。我是哪一種？一起來看看",
+      "startWechat": "和朋友變疏遠的原因 🌉 沒吵架，聯絡卻少了。我是哪一種？一起來看看",
+      "startWhatsapp": "和朋友變疏遠的原因 🌉 沒吵架，聯絡卻少了。我是哪一種？一起來看看",
+      "startTelegram": "和朋友變疏遠的原因 🌉 沒吵架，聯絡卻少了。我是哪一種？一起來看看",
+      "startLine": "和朋友變疏遠的原因 🌉 沒吵架，聯絡卻少了。我是哪一種？一起來看看"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製！",
+      "shareFailed": "現在無法分享。",
+      "wechatCopy": "連結已複製。請貼到微信分享。",
+      "kakaoInit": "KakaoTalk 分享還在準備，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "popularBadge": "人氣",
+      "questionHint": "想著最近少聯絡的那位朋友，選最接近的一項。",
+      "keywords": "關鍵詞",
+      "protects": "這個模式想守住的",
+      "friendSide": "在朋友那邊可能發生的事",
+      "feeling": "給心情起個名字",
+      "closer": "怎樣再靠近",
+      "oneLine": "可以傳給朋友的一句",
+      "oneLiner": "一句話",
+      "bars": "各類型分數",
+      "scoreUnit": "分",
+      "secondPattern": "一起出現的模式：{name}",
+      "compareCard": "類型對比卡",
+      "compareGuide": "這很常見。對比只用來打開彼此理解的話，不要拿來評判誰。",
+      "shareResult": "分享結果"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
   "phase3LoveIqPercentTest":     {
     "startMessage": {
       "line1": "戀愛只靠感覺，很容易踩雷。這裡有比較好的做法。",
