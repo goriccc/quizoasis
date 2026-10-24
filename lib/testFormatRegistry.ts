@@ -200,6 +200,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-confession-success': 'scenario_4',
   'phase3-love-confidence-level': 'scenario_4',
   'phase3-face-first-impression': 'face',
+  'phase3-face-animal-type': 'face',
   'phase3-start-love-success': 'scenario_4',
   'phase3-christmas-solo-escape': 'scenario_4',
   'phase3-needless-worry-top3': 'scenario_4',

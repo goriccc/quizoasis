@@ -21,6 +21,7 @@ import { PHASE3_CHRISTMAS_SOLO_ESCAPE_META } from '@/lib/phase3ChristmasSoloEsca
 import { PHASE3_NEEDLESS_WORRY_TOP3_META } from '@/lib/phase3NeedlessWorryTop3Data';
 import { PHASE3_LOVE_IQ_PERCENT_META } from '@/lib/phase3LoveIqPercentData';
 import { PHASE3_FRIEND_DRIFT_REASON_META } from '@/lib/phase3FriendDriftReasonData';
+import { PHASE3_FACE_ANIMAL_TYPE_META } from '@/lib/phase3FaceAnimalTypeData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -364,6 +365,11 @@ const Phase3LoveConfidenceLevelTestClient = dynamic(
 
 const Phase3FaceFirstImpressionTestClient = dynamic(
   () => import('@/components/Phase3FaceFirstImpressionTestClient'),
+  { ssr: false }
+);
+
+const Phase3FaceAnimalTypeTestClient = dynamic(
+  () => import('@/components/Phase3FaceAnimalTypeTestClient'),
   { ssr: false }
 );
 
@@ -2772,6 +2778,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_CONFIDENCE_LEVEL_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-face-animal-type') {
+    test = {
+      slug: 'phase3-face-animal-type',
+      title: PHASE3_FACE_ANIMAL_TYPE_META.title,
+      description: PHASE3_FACE_ANIMAL_TYPE_META.description,
+      thumbnail: 'p3_test_face_animal_type.webp',
+      type: 'face',
+      category: 'face',
+      play_count: 0,
+      tags: PHASE3_FACE_ANIMAL_TYPE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10424,6 +10443,34 @@ export default async function TestPage({ params }: Props) {
             questions={phase3ChristmasSoloEscapeQuestions}
             results={phase3ChristmasSoloEscapeResults}
             questionCount={phase3ChristmasSoloEscapeQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-face-animal-type') {
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-face-animal-type',
+        title: PHASE3_FACE_ANIMAL_TYPE_META.title,
+        description: PHASE3_FACE_ANIMAL_TYPE_META.description,
+        thumbnail: 'p3_test_face_animal_type.webp',
+        type: 'face',
+        category: 'face',
+        play_count: 0,
+        tags: PHASE3_FACE_ANIMAL_TYPE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3FaceAnimalTypeTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />
