@@ -24,6 +24,7 @@ import { PHASE3_FRIEND_DRIFT_REASON_META } from '@/lib/phase3FriendDriftReasonDa
 import { PHASE3_FACE_ANIMAL_TYPE_META } from '@/lib/phase3FaceAnimalTypeData';
 import { PHASE3_FACE_PROFILE_POINT_META } from '@/lib/phase3FaceProfilePointData';
 import { PHASE3_FACE_CHARM_POINT_META } from '@/lib/phase3FaceCharmPointData';
+import { PHASE3_FACE_MOVIE_GENRE_META } from '@/lib/phase3FaceMovieGenreData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -382,6 +383,11 @@ const Phase3FaceProfilePointTestClient = dynamic(
 
 const Phase3FaceCharmPointTestClient = dynamic(
   () => import('@/components/Phase3FaceCharmPointTestClient'),
+  { ssr: false }
+);
+
+const Phase3FaceMovieGenreTestClient = dynamic(
+  () => import('@/components/Phase3FaceMovieGenreTestClient'),
   { ssr: false }
 );
 
@@ -2790,6 +2796,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_CONFIDENCE_LEVEL_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-face-movie-genre') {
+    test = {
+      slug: 'phase3-face-movie-genre',
+      title: PHASE3_FACE_MOVIE_GENRE_META.title,
+      description: PHASE3_FACE_MOVIE_GENRE_META.description,
+      thumbnail: 'p3_test_face_movie_genre.webp',
+      type: 'face',
+      category: 'face',
+      play_count: 0,
+      tags: PHASE3_FACE_MOVIE_GENRE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10481,6 +10500,34 @@ export default async function TestPage({ params }: Props) {
             questions={phase3ChristmasSoloEscapeQuestions}
             results={phase3ChristmasSoloEscapeResults}
             questionCount={phase3ChristmasSoloEscapeQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-face-movie-genre') {
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-face-movie-genre',
+        title: PHASE3_FACE_MOVIE_GENRE_META.title,
+        description: PHASE3_FACE_MOVIE_GENRE_META.description,
+        thumbnail: 'p3_test_face_movie_genre.webp',
+        type: 'face',
+        category: 'face',
+        play_count: 0,
+        tags: PHASE3_FACE_MOVIE_GENRE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3FaceMovieGenreTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />
