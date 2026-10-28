@@ -15173,5 +15173,61 @@
     "face": "얼굴·AI",
     "checklist": "MBTI·지수",
     "showAll": "전체 테스트 보기"
+  },
+  "phase3MarriageCohabitBalanceGameTest":         {
+    "startMessage": {
+      "line1": "각방 vs 한방, 경제권은 누가? 너라면 뭐 골라?",
+      "line2": "결혼이나 동거는 사랑만으로 되지 않고, 침대·통장·집안일 같은 현실 위에서 굴러갑니다. 둘 다 아쉬운 선택지 사이에서 고르다 보면 내가 함께 사는 삶에서 무엇을 지키고 싶은 사람인지가 드러납니다.",
+      "line3": "12라운드 극한 선택으로 나의 결혼·동거 스타일을 알려드립니다. 둘 중 더 가까운 쪽을 골라 보세요.",
+      "line4": "극한 선택 시작 💍 고민은 짧게"
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "극한 선택 시작 💍",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기",
+      "yourResult": "나의 결혼·동거 스타일",
+      "styleType": "유형",
+      "keywords": "핵심 키워드",
+      "livingStyle": "함께 사는 모습",
+      "strengths": "이 유형의 강점",
+      "goodMatch": "잘 맞는 유형",
+      "caution": "주의할 점",
+      "tips": "생활 처방",
+      "oneLiner": "한 줄 평",
+      "roundLabel": "라운드 {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "밸런스 게임 — 결혼·동거 극한편 💍 각방 vs 한방, 너라면 뭐 골라?",
+      "startKakao": "밸런스 게임 — 결혼·동거 극한편 💍 각방 vs 한방, 너라면 뭐 골라?",
+      "startWechat": "밸런스 게임 — 결혼·동거 극한편 💍 각방 vs 한방, 너라면 뭐 골라?",
+      "startWhatsapp": "밸런스 게임 — 결혼·동거 극한편 💍 각방 vs 한방, 너라면 뭐 골라?",
+      "startTelegram": "밸런스 게임 — 결혼·동거 극한편 💍 각방 vs 한방, 너라면 뭐 골라?",
+      "startLine": "밸런스 게임 — 결혼·동거 극한편 💍 각방 vs 한방, 너라면 뭐 골라?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
   }
 }

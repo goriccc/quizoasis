@@ -15044,5 +15044,61 @@
     "face": "Face AI",
     "checklist": "MBTI Index",
     "showAll": "Show all tests"
+  },
+  "phase3MarriageCohabitBalanceGameTest":           {
+    "startMessage": {
+      "line1": "Separate rooms vs one bed—who holds the money? What would you pick?",
+      "line2": "Marriage and living together don’t run on love alone. They’re built on beds, bank accounts, and chores. Choosing between two imperfect options shows what you want to protect when you share a life.",
+      "line3": "Twelve extreme rounds reveal your marriage & living style. Pick the side that feels closer.",
+      "line4": "Start the extreme picks 💍 Keep it quick"
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Start extreme picks 💍",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "retake": "Try again",
+      "otherTests": "More tests",
+      "yourResult": "Your marriage & living style",
+      "styleType": "Type",
+      "keywords": "Key words",
+      "livingStyle": "How you live together",
+      "strengths": "Strengths of this type",
+      "goodMatch": "Best match",
+      "caution": "Watch for this",
+      "tips": "Everyday tips",
+      "oneLiner": "In one line",
+      "roundLabel": "Round {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance Game — Marriage & Living Together (Extreme) 💍 Separate rooms vs one bed—what would you pick?",
+      "startKakao": "Balance Game — Marriage & Living Together (Extreme) 💍 Separate rooms vs one bed—what would you pick?",
+      "startWechat": "Balance Game — Marriage & Living Together (Extreme) 💍 Separate rooms vs one bed—what would you pick?",
+      "startWhatsapp": "Balance Game — Marriage & Living Together (Extreme) 💍 Separate rooms vs one bed—what would you pick?",
+      "startTelegram": "Balance Game — Marriage & Living Together (Extreme) 💍 Separate rooms vs one bed—what would you pick?",
+      "startLine": "Balance Game — Marriage & Living Together (Extreme) 💍 Separate rooms vs one bed—what would you pick?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    }
   }
 }

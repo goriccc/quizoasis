@@ -15035,5 +15035,61 @@
     "face": "Khuôn mặt·AI",
     "checklist": "Chỉ số MBTI",
     "showAll": "Xem tất cả"
+  },
+  "phase3MarriageCohabitBalanceGameTest":           {
+    "startMessage": {
+      "line1": "Phòng riêng vs chung giường, ai nắm tiền? Bạn chọn gì?",
+      "line2": "Kết hôn hay sống chung không chỉ dựa vào tình yêu—còn giường, tài khoản và việc nhà. Chọn giữa hai phương án đều tiếc sẽ lộ ra điều bạn muốn giữ khi sống cùng nhau.",
+      "line3": "12 vòng cực hạn cho thấy kiểu sống chung của bạn. Chọn phía gần mình hơn.",
+      "line4": "Bắt đầu chọn cực hạn 💍 Đừng nghĩ lâu"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn 💍",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Hot",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Bài test khác",
+      "yourResult": "Kiểu sống chung của bạn",
+      "styleType": "Kiểu",
+      "keywords": "Từ khóa",
+      "livingStyle": "Cách sống cùng nhau",
+      "strengths": "Điểm mạnh của kiểu này",
+      "goodMatch": "Hợp nhất với",
+      "caution": "Nên lưu ý",
+      "tips": "Gợi ý đời thường",
+      "oneLiner": "Một câu",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — kết hôn & sống chung (cực) 💍 Phòng riêng vs chung giường, bạn chọn gì?",
+      "startKakao": "Trò cân bằng — kết hôn & sống chung (cực) 💍 Phòng riêng vs chung giường, bạn chọn gì?",
+      "startWechat": "Trò cân bằng — kết hôn & sống chung (cực) 💍 Phòng riêng vs chung giường, bạn chọn gì?",
+      "startWhatsapp": "Trò cân bằng — kết hôn & sống chung (cực) 💍 Phòng riêng vs chung giường, bạn chọn gì?",
+      "startTelegram": "Trò cân bằng — kết hôn & sống chung (cực) 💍 Phòng riêng vs chung giường, bạn chọn gì?",
+      "startLine": "Trò cân bằng — kết hôn & sống chung (cực) 💍 Phòng riêng vs chung giường, bạn chọn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết. Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi động. Thử lại sau một chút.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

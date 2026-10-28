@@ -15023,5 +15023,61 @@
     "face": "顔·AI",
     "checklist": "MBTI指数",
     "showAll": "すべて表示"
+  },
+  "phase3MarriageCohabitBalanceGameTest":           {
+    "startMessage": {
+      "line1": "別室 vs 同室、家計は誰が？君ならどっち？",
+      "line2": "結婚や同棲は愛だけでは回りません。ベッド・口座・家事という現実の上で動きます。どちらも惜しい二択を選ぶうちに、一緒に暮らすうえで守りたいものが見えてきます。",
+      "line3": "12ラウンドの極限選択で、あなたの結婚・同棲スタイルがわかります。近い方を選んでみて。",
+      "line4": "極限選択スタート 💍 悩む時間は短く"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストへ",
+      "startTest": "極限選択スタート 💍",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果を共有",
+      "retake": "もう一度",
+      "otherTests": "ほかのテスト",
+      "yourResult": "あなたの結婚・同棲スタイル",
+      "styleType": "タイプ",
+      "keywords": "キーワード",
+      "livingStyle": "一緒に暮らす姿",
+      "strengths": "このタイプの強み",
+      "goodMatch": "相性のいいタイプ",
+      "caution": "気をつけたいこと",
+      "tips": "暮らしのヒント",
+      "oneLiner": "ひとこと",
+      "roundLabel": "ラウンド {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "バランスゲーム — 結婚・同棲 極限編 💍 別室 vs 同室、君ならどっち？",
+      "startKakao": "バランスゲーム — 結婚・同棲 極限編 💍 別室 vs 同室、君ならどっち？",
+      "startWechat": "バランスゲーム — 結婚・同棲 極限編 💍 別室 vs 同室、君ならどっち？",
+      "startWhatsapp": "バランスゲーム — 結婚・同棲 極限編 💍 別室 vs 同室、君ならどっち？",
+      "startTelegram": "バランスゲーム — 結婚・同棲 極限編 💍 別室 vs 同室、君ならどっち？",
+      "startLine": "バランスゲーム — 結婚・同棲 極限編 💍 別室 vs 同室、君ならどっち？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をコピーしました！",
+      "shareFailed": "共有機能を使えません。",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を準備中です。少ししてからもう一度どうぞ。",
+      "kakaoError": "カカオトーク共有でエラーが起きました。"
+    }
   }
 }

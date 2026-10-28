@@ -14504,5 +14504,61 @@
     "face": "面相·AI",
     "checklist": "MBTI指數",
     "showAll": "查看全部"
+  },
+  "phase3MarriageCohabitBalanceGameTest":           {
+    "startMessage": {
+      "line1": "分房還是同床，經濟權誰拿？你會選哪個？",
+      "line2": "結婚或同居不只靠愛情，還要在床、帳戶、家務這些現實上運轉。在兩難裡做選擇，會看見你想在共同生活中守住什麼。",
+      "line3": "12輪極限二選一，看看你的結婚同居風格。選更接近的那一邊。",
+      "line4": "極限選擇開始 💍 別想太久"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "開始極限選擇 💍",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "retake": "再來一次",
+      "otherTests": "其他測驗",
+      "yourResult": "你的結婚同居風格",
+      "styleType": "類型",
+      "keywords": "關鍵字",
+      "livingStyle": "一起住的樣子",
+      "strengths": "這類的優勢",
+      "goodMatch": "更合拍的類型",
+      "caution": "要注意的",
+      "tips": "生活小處方",
+      "oneLiner": "一句話",
+      "roundLabel": "第 {n} 輪"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "平衡遊戲 — 結婚同居極限篇 💍 分房還是同床，你會選哪個？",
+      "startKakao": "平衡遊戲 — 結婚同居極限篇 💍 分房還是同床，你會選哪個？",
+      "startWechat": "平衡遊戲 — 結婚同居極限篇 💍 分房還是同床，你會選哪個？",
+      "startWhatsapp": "平衡遊戲 — 結婚同居極限篇 💍 分房還是同床，你會選哪個？",
+      "startTelegram": "平衡遊戲 — 結婚同居極限篇 💍 分房還是同床，你會選哪個？",
+      "startLine": "平衡遊戲 — 結婚同居極限篇 💍 分房還是同床，你會選哪個？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製！",
+      "shareFailed": "暫時無法使用分享。",
+      "wechatCopy": "連結已複製。去微信貼上分享吧。",
+      "kakaoInit": "KakaoTalk 分享還在啟動，稍後再試。",
+      "kakaoError": "KakaoTalk 分享出錯了。"
+    }
   }
 }

@@ -28,6 +28,7 @@ import { PHASE3_FACE_MOVIE_GENRE_META } from '@/lib/phase3FaceMovieGenreData';
 import { PHASE3_FACE_LOVE_WEAKNESS_META } from '@/lib/phase3FaceLoveWeaknessData';
 import { PHASE3_FACE_STRENGTH_META } from '@/lib/phase3FaceStrengthData';
 import { PHASE3_ZODIAC_LOVE_INSTINCT_META } from '@/lib/phase3ZodiacLoveInstinctData';
+import { PHASE3_MARRIAGE_COHABIT_BALANCE_META } from '@/lib/phase3MarriageCohabitBalanceGameData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -406,6 +407,11 @@ const Phase3FaceStrengthTestClient = dynamic(
 
 const Phase3ZodiacLoveInstinctTestClient = dynamic(
   () => import('@/components/Phase3ZodiacLoveInstinctTestClient'),
+  { ssr: false }
+);
+
+const Phase3MarriageCohabitBalanceGameTestClient = dynamic(
+  () => import('@/components/Phase3MarriageCohabitBalanceGameTestClient'),
   { ssr: false }
 );
 
@@ -2840,6 +2846,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_ZODIAC_LOVE_INSTINCT_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-marriage-cohabit-balance-game') {
+    test = {
+      slug: 'phase3-marriage-cohabit-balance-game',
+      title: PHASE3_MARRIAGE_COHABIT_BALANCE_META.title,
+      description: PHASE3_MARRIAGE_COHABIT_BALANCE_META.description,
+      thumbnail: 'p3_test_balance_game_marriage.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_MARRIAGE_COHABIT_BALANCE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10613,6 +10632,41 @@ export default async function TestPage({ params }: Props) {
             description={
               typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
             }
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-marriage-cohabit-balance-game') {
+      const {
+        phase3MarriageCohabitBalanceGameQuestions,
+        phase3MarriageCohabitBalanceGameResults,
+      } = await import('@/lib/phase3MarriageCohabitBalanceGameData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-marriage-cohabit-balance-game',
+        title: PHASE3_MARRIAGE_COHABIT_BALANCE_META.title,
+        description: PHASE3_MARRIAGE_COHABIT_BALANCE_META.description,
+        thumbnail: 'p3_test_balance_game_marriage.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_MARRIAGE_COHABIT_BALANCE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3MarriageCohabitBalanceGameTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3MarriageCohabitBalanceGameQuestions}
+            results={phase3MarriageCohabitBalanceGameResults}
+            questionCount={phase3MarriageCohabitBalanceGameQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

@@ -15035,5 +15035,61 @@
     "face": "Wajah·AI",
     "checklist": "Indeks MBTI",
     "showAll": "Lihat semua"
+  },
+  "phase3MarriageCohabitBalanceGameTest":           {
+    "startMessage": {
+      "line1": "Kamar terpisah vs satu kasur—siapa pegang uang? Kamu pilih mana?",
+      "line2": "Nikah dan tinggal bersama tidak jalan hanya dengan cinta. Ada kasur, rekening, dan pekerjaan rumah. Memilih di antara dua opsi yang sama-sama sayang menunjukkan apa yang ingin kamu jaga saat hidup bersama.",
+      "line3": "12 ronde ekstrem mengungkap gaya nikah & tinggal bersamamu. Pilih yang lebih dekat.",
+      "line4": "Mulai pilihan ekstrem 💍 Jangan lama-lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Mulai pilihan ekstrem 💍",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Coba lagi",
+      "otherTests": "Tes lain",
+      "yourResult": "Gaya nikah & tinggal bersamamu",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "livingStyle": "Cara hidup bersama",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Tips sehari-hari",
+      "oneLiner": "Satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan seimbang — nikah & tinggal bersama (ekstrem) 💍 Kamar terpisah vs satu kasur—kamu pilih mana?",
+      "startKakao": "Permainan seimbang — nikah & tinggal bersama (ekstrem) 💍 Kamar terpisah vs satu kasur—kamu pilih mana?",
+      "startWechat": "Permainan seimbang — nikah & tinggal bersama (ekstrem) 💍 Kamar terpisah vs satu kasur—kamu pilih mana?",
+      "startWhatsapp": "Permainan seimbang — nikah & tinggal bersama (ekstrem) 💍 Kamar terpisah vs satu kasur—kamu pilih mana?",
+      "startTelegram": "Permainan seimbang — nikah & tinggal bersama (ekstrem) 💍 Kamar terpisah vs satu kasur—kamu pilih mana?",
+      "startLine": "Permainan seimbang — nikah & tinggal bersama (ekstrem) 💍 Kamar terpisah vs satu kasur—kamu pilih mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk masih dimulai. Coba lagi sebentar.",
+      "kakaoError": "Ada masalah saat berbagi ke KakaoTalk."
+    }
   }
 }
