@@ -15101,4 +15101,61 @@
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
   }
+  ,
+  "phase3DatingCostBalanceGameTest": {
+    "startMessage": {
+      "line1": "I always pay but they're late every time vs we split and they're always on time—what would you pick?",
+      "line2": "Date money is about cash and care. Choosing between two imperfect options shows how you balance fairness and feeling.",
+      "line3": "Twelve extreme rounds reveal your date-money style. Pick the side that feels closer.",
+      "line4": "Start the extreme picks ⚖️ Keep it quick"
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Start extreme picks ⚖️",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "retake": "Try again",
+      "otherTests": "More tests",
+      "yourResult": "Your date-money style",
+      "styleType": "Type",
+      "keywords": "Key words",
+      "costStyle": "How you handle date money",
+      "strengths": "Strengths of this type",
+      "goodMatch": "Best match",
+      "caution": "Watch for this",
+      "tips": "Date tips",
+      "oneLiner": "In one line",
+      "roundLabel": "Round {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance Game — Date Money (Extreme) ⚖️ Always pay but they're late vs split but on time—what would you pick?",
+      "startKakao": "Balance Game — Date Money (Extreme) ⚖️ Always pay but they're late vs split but on time—what would you pick?",
+      "startWechat": "Balance Game — Date Money (Extreme) ⚖️ Always pay but they're late vs split but on time—what would you pick?",
+      "startWhatsapp": "Balance Game — Date Money (Extreme) ⚖️ Always pay but they're late vs split but on time—what would you pick?",
+      "startTelegram": "Balance Game — Date Money (Extreme) ⚖️ Always pay but they're late vs split but on time—what would you pick?",
+      "startLine": "Balance Game — Date Money (Extreme) ⚖️ Always pay but they're late vs split but on time—what would you pick?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    }
+  }
 }

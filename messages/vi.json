@@ -15092,4 +15092,61 @@
       "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
     }
   }
+  ,
+  "phase3DatingCostBalanceGameTest": {
+    "startMessage": {
+      "line1": "Tôi trả hết nhưng họ luôn muộn vs chia tiền nhưng luôn đúng giờ—bạn chọn gì?",
+      "line2": "Tiền hẹn hò vừa là chuyện tiền, vừa là chuyện quan tâm và công bằng. Chọn giữa hai phương án đều hơi tiếc sẽ lộ cách bạn cân tiền và lòng.",
+      "line3": "12 vòng cực hạn cho thấy kiểu chi tiêu hẹn hò của bạn. Chọn phía gần bạn hơn.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Nghĩ ngắn thôi"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "yourResult": "Kiểu chi tiêu hẹn hò của tôi",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "costStyle": "Cách xử lý tiền hẹn hò",
+      "strengths": "Điểm mạnh của kiểu này",
+      "goodMatch": "Kiểu hợp nhất",
+      "caution": "Điểm cần lưu ý",
+      "tips": "Gợi ý hẹn hò",
+      "oneLiner": "Một câu nhận xét",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Chi phí hẹn hò cực hạn ⚖️ Trả hết nhưng muộn vs chia tiền nhưng đúng giờ, bạn chọn gì?",
+      "startKakao": "Trò cân bằng — Chi phí hẹn hò cực hạn ⚖️ Trả hết nhưng muộn vs chia tiền nhưng đúng giờ, bạn chọn gì?",
+      "startWechat": "Trò cân bằng — Chi phí hẹn hò cực hạn ⚖️ Trả hết nhưng muộn vs chia tiền nhưng đúng giờ, bạn chọn gì?",
+      "startWhatsapp": "Trò cân bằng — Chi phí hẹn hò cực hạn ⚖️ Trả hết nhưng muộn vs chia tiền nhưng đúng giờ, bạn chọn gì?",
+      "startTelegram": "Trò cân bằng — Chi phí hẹn hò cực hạn ⚖️ Trả hết nhưng muộn vs chia tiền nhưng đúng giờ, bạn chọn gì?",
+      "startLine": "Trò cân bằng — Chi phí hẹn hò cực hạn ⚖️ Trả hết nhưng muộn vs chia tiền nhưng đúng giờ, bạn chọn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    }
+  }
 }

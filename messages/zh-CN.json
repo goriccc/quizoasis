@@ -15092,4 +15092,61 @@
       "kakaoError": "KakaoTalk 分享出错了。"
     }
   }
+  ,
+  "phase3DatingCostBalanceGameTest": {
+    "startMessage": {
+      "line1": "我全付但对方每次迟到 vs AA 但总准时——你会选哪个？",
+      "line2": "约会花钱既是钱的事，也是体贴和公平的事。在两个都有点亏的选项里选，会看见你怎么平衡金钱和心意。",
+      "line3": "12 轮极限二选一，告诉你约会花钱风格。选更贴近你的那一边。",
+      "line4": "极限选择开始 ⚖️ 别想太久"
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "极限选择开始 ⚖️",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "popularBadge": "热门",
+      "shareResult": "分享结果",
+      "retake": "再测一次",
+      "otherTests": "看看其他测试",
+      "yourResult": "我的约会花钱风格",
+      "styleType": "类型",
+      "keywords": "关键词",
+      "costStyle": "花钱相处方式",
+      "strengths": "这一类型的优势",
+      "goodMatch": "更合拍的类型",
+      "caution": "要注意的点",
+      "tips": "约会处方",
+      "oneLiner": "一句话点评",
+      "roundLabel": "第 {n} 轮"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "平衡游戏 — 约会花钱极限篇 ⚖️ 我全付但总迟到 vs AA 但总准时，你会选哪个？",
+      "startKakao": "平衡游戏 — 约会花钱极限篇 ⚖️ 我全付但总迟到 vs AA 但总准时，你会选哪个？",
+      "startWechat": "平衡游戏 — 约会花钱极限篇 ⚖️ 我全付但总迟到 vs AA 但总准时，你会选哪个？",
+      "startWhatsapp": "平衡游戏 — 约会花钱极限篇 ⚖️ 我全付但总迟到 vs AA 但总准时，你会选哪个？",
+      "startTelegram": "平衡游戏 — 约会花钱极限篇 ⚖️ 我全付但总迟到 vs AA 但总准时，你会选哪个？",
+      "startLine": "平衡游戏 — 约会花钱极限篇 ⚖️ 我全付但总迟到 vs AA 但总准时，你会选哪个？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信里粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错了。"
+    }
+  }
 }

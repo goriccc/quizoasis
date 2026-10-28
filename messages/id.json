@@ -15092,4 +15092,61 @@
       "kakaoError": "Ada masalah saat berbagi ke KakaoTalk."
     }
   }
+  ,
+  "phase3DatingCostBalanceGameTest": {
+    "startMessage": {
+      "line1": "Aku bayar semua tapi mereka selalu telat vs bagi tagihan tapi selalu tepat waktu—kamu pilih yang mana?",
+      "line2": "Biaya kencan soal uang sekaligus kepedulian dan keadilan. Memilih di antara dua opsi yang sama-sama kurang enak menunjukkan cara kamu menyeimbangkan uang dan perasaan.",
+      "line3": "12 ronde ekstrem mengungkap gaya biaya kencanmu. Pilih sisi yang lebih dekat.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan lama-lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Coba lagi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Gaya biaya kencanku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "costStyle": "Cara mengelola biaya kencan",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Tipe yang cocok",
+      "caution": "Hal yang perlu diwaspadai",
+      "tips": "Tips kencan",
+      "oneLiner": "Satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan seimbang — Biaya kencan ekstrem ⚖️ Bayar semua tapi telat vs bagi tapi tepat waktu, kamu pilih yang mana?",
+      "startKakao": "Permainan seimbang — Biaya kencan ekstrem ⚖️ Bayar semua tapi telat vs bagi tapi tepat waktu, kamu pilih yang mana?",
+      "startWechat": "Permainan seimbang — Biaya kencan ekstrem ⚖️ Bayar semua tapi telat vs bagi tapi tepat waktu, kamu pilih yang mana?",
+      "startWhatsapp": "Permainan seimbang — Biaya kencan ekstrem ⚖️ Bayar semua tapi telat vs bagi tapi tepat waktu, kamu pilih yang mana?",
+      "startTelegram": "Permainan seimbang — Biaya kencan ekstrem ⚖️ Bayar semua tapi telat vs bagi tapi tepat waktu, kamu pilih yang mana?",
+      "startLine": "Permainan seimbang — Biaya kencan ekstrem ⚖️ Bayar semua tapi telat vs bagi tapi tepat waktu, kamu pilih yang mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Berbagi KakaoTalk sedang diinisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  }
 }
