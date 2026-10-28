@@ -27,6 +27,7 @@ import { PHASE3_FACE_CHARM_POINT_META } from '@/lib/phase3FaceCharmPointData';
 import { PHASE3_FACE_MOVIE_GENRE_META } from '@/lib/phase3FaceMovieGenreData';
 import { PHASE3_FACE_LOVE_WEAKNESS_META } from '@/lib/phase3FaceLoveWeaknessData';
 import { PHASE3_FACE_STRENGTH_META } from '@/lib/phase3FaceStrengthData';
+import { PHASE3_ZODIAC_LOVE_INSTINCT_META } from '@/lib/phase3ZodiacLoveInstinctData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -400,6 +401,11 @@ const Phase3FaceLoveWeaknessTestClient = dynamic(
 
 const Phase3FaceStrengthTestClient = dynamic(
   () => import('@/components/Phase3FaceStrengthTestClient'),
+  { ssr: false }
+);
+
+const Phase3ZodiacLoveInstinctTestClient = dynamic(
+  () => import('@/components/Phase3ZodiacLoveInstinctTestClient'),
   { ssr: false }
 );
 
@@ -2821,6 +2827,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'face',
       play_count: 0,
       tags: PHASE3_FACE_STRENGTH_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-zodiac-love-instinct') {
+    test = {
+      slug: 'phase3-zodiac-love-instinct',
+      title: PHASE3_ZODIAC_LOVE_INSTINCT_META.title,
+      description: PHASE3_ZODIAC_LOVE_INSTINCT_META.description,
+      thumbnail: 'p3_test_zodiac_love_instinct.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_ZODIAC_LOVE_INSTINCT_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10560,6 +10579,34 @@ export default async function TestPage({ params }: Props) {
       return (
         <>
           <Phase3FaceStrengthTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-zodiac-love-instinct') {
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-zodiac-love-instinct',
+        title: PHASE3_ZODIAC_LOVE_INSTINCT_META.title,
+        description: PHASE3_ZODIAC_LOVE_INSTINCT_META.description,
+        thumbnail: 'p3_test_zodiac_love_instinct.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_ZODIAC_LOVE_INSTINCT_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3ZodiacLoveInstinctTestClient
             locale={locale}
             slug={test.slug}
             title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}

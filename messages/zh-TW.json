@@ -11806,6 +11806,66 @@
       }
     }
   },
+  "phase3ZodiacLoveInstinctTest": {
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "從星座看戀愛本能！選一個星座看看。一起測！",
+      "startKakao": "從星座看戀愛本能！選一個星座看看。一起測！",
+      "startWechat": "從星座看戀愛本能！選一個星座看看。一起測！",
+      "startWhatsapp": "從星座看戀愛本能！選一個星座看看。一起測！",
+      "startTelegram": "從星座看戀愛本能！選一個星座看看。一起測！",
+      "startLine": "從星座看戀愛本能！選一個星座看看。一起測！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製！",
+      "shareFailed": "暫時無法使用分享。",
+      "wechatCopy": "連結已複製。去微信貼上分享吧。",
+      "kakaoInit": "KakaoTalk 分享還在啟動，稍後再試。",
+      "kakaoError": "KakaoTalk 分享出錯了。"
+    },
+    "startMessage": {
+      "line1": "星座裡藏著的戀愛本能是？",
+      "line2": "很久以前，人們就借星星說心裡話。輕鬆看看你的星座會講怎樣的戀愛故事。",
+      "line3": "選一個星座，看看戀愛本能和對話小提示。漂亮的結果卡也能保存。"
+    },
+    "ui": {
+      "startTest": "選我的星座 ✨",
+      "goToTest": "去做測驗",
+      "adsenseTitle": "廣告",
+      "popularBadge": "熱門",
+      "similarTests": "類似測驗",
+      "otherTests": "其他測驗",
+      "retake": "再來一次",
+      "shareResult": "分享結果",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "selectTitle": "選你的星座",
+      "selectGuide": "從12個星座裡選一個。也可以看日期範圍。",
+      "boundaryNote": "卡在交界日？兩個星座都可以看一看。",
+      "analyzing": "正在讀你的戀愛本能…",
+      "testCompleted": "分析好了",
+      "viewResults": "看結果",
+      "yourResult": "你的戀愛本能",
+      "loveStyle": "戀愛裡的樣子",
+      "charm": "魅力點",
+      "caution": "要注意的",
+      "talkTip": "對話小提示",
+      "oneLiner": "一句話",
+      "cardTitle": "保存結果卡",
+      "cardSquare": "大頭貼 1:1",
+      "cardStory": "限時動態 9:16"
+    }
+  },
   "phase3FriendDriftReasonTest":   {
     "startMessage": {
       "line1": "朋友自然變疏遠，是有原因的。",

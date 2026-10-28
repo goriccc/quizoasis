@@ -12346,6 +12346,66 @@
       }
     }
   },
+  "phase3ZodiacLoveInstinctTest": {
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "What love instinct is in my sign? Pick yours and see. Try it with me!",
+      "startKakao": "What love instinct is in my sign? Pick yours and see. Try it with me!",
+      "startWechat": "What love instinct is in my sign? Pick yours and see. Try it with me!",
+      "startWhatsapp": "What love instinct is in my sign? Pick yours and see. Try it with me!",
+      "startTelegram": "What love instinct is in my sign? Pick yours and see. Try it with me!",
+      "startLine": "What love instinct is in my sign? Pick yours and see. Try it with me!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "What love instinct is written in my sign?",
+      "line2": "People have talked about the heart through the stars for a long time. Take a light look at the love story your sign suggests.",
+      "line3": "Pick a sign for your love instinct and a talk tip. Save the pretty result card too."
+    },
+    "ui": {
+      "startTest": "Pick my sign ✨",
+      "goToTest": "Take the test",
+      "adsenseTitle": "Advertisement",
+      "popularBadge": "Popular",
+      "similarTests": "Similar tests",
+      "otherTests": "More tests",
+      "retake": "Try again",
+      "shareResult": "Share result",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "selectTitle": "Pick your sign",
+      "selectGuide": "Choose one of the 12. You can also go by the date range.",
+      "boundaryNote": "Born on a cusp? Read both signs.",
+      "analyzing": "Reading your love instinct…",
+      "testCompleted": "That’s the reading",
+      "viewResults": "See the result",
+      "yourResult": "Your love instinct",
+      "loveStyle": "In a relationship",
+      "charm": "What draws people in",
+      "caution": "Watch for this",
+      "talkTip": "A talk tip",
+      "oneLiner": "In one line",
+      "cardTitle": "Save a result card",
+      "cardSquare": "Profile 1:1",
+      "cardStory": "Story 9:16"
+    }
+  },
   "phase3FriendDriftReasonTest":   {
     "startMessage": {
       "line1": "Friends drift for a reason, even when nobody fought.",

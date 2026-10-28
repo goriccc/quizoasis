@@ -12337,6 +12337,66 @@
       }
     }
   },
+  "phase3ZodiacLoveInstinctTest": {
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Insting cinta di zodiakku apa? Pilih zodiakmu. Cobain bareng!",
+      "startKakao": "Insting cinta di zodiakku apa? Pilih zodiakmu. Cobain bareng!",
+      "startWechat": "Insting cinta di zodiakku apa? Pilih zodiakmu. Cobain bareng!",
+      "startWhatsapp": "Insting cinta di zodiakku apa? Pilih zodiakmu. Cobain bareng!",
+      "startTelegram": "Insting cinta di zodiakku apa? Pilih zodiakmu. Cobain bareng!",
+      "startLine": "Insting cinta di zodiakku apa? Pilih zodiakmu. Cobain bareng!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin!",
+      "shareFailed": "Berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk masih dimulai. Coba lagi sebentar.",
+      "kakaoError": "Ada masalah saat berbagi ke KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "Insting cinta apa yang ada di zodiakku?",
+      "line2": "Dari dulu orang bicara soal hati lewat bintang. Lihat ringan kisah cinta yang disiratkan zodiakmu.",
+      "line3": "Pilih zodiak untuk melihat insting cinta dan tip ngobrol. Kartu hasil yang cantik juga bisa disimpan."
+    },
+    "ui": {
+      "startTest": "Pilih zodiakku ✨",
+      "goToTest": "Ikuti tes",
+      "adsenseTitle": "Iklan",
+      "popularBadge": "Populer",
+      "similarTests": "Tes serupa",
+      "otherTests": "Tes lain",
+      "retake": "Coba lagi",
+      "shareResult": "Bagikan hasil",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "selectTitle": "Pilih zodiakmu",
+      "selectGuide": "Pilih satu dari 12. Boleh juga lihat rentang tanggalnya.",
+      "boundaryNote": "Lahir di batas zodiak? Baca keduanya.",
+      "analyzing": "Sedang membaca insting cintamu…",
+      "testCompleted": "Analisis selesai",
+      "viewResults": "Lihat hasil",
+      "yourResult": "Insting cintamu",
+      "loveStyle": "Saat dekat seseorang",
+      "charm": "Daya tarik",
+      "caution": "Yang perlu diwaspadai",
+      "talkTip": "Tip ngobrol",
+      "oneLiner": "Satu kalimat",
+      "cardTitle": "Simpan kartu hasil",
+      "cardSquare": "Profil 1:1",
+      "cardStory": "Story 9:16"
+    }
+  },
   "phase3FriendDriftReasonTest":   {
     "startMessage": {
       "line1": "Teman jadi jarang itu ada alasannya, meski tidak ada yang bertengkar.",

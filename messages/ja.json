@@ -12325,6 +12325,66 @@
       }
     }
   },
+  "phase3ZodiacLoveInstinctTest": {
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "星座で見る恋愛の本能！あなたの星座を選んでみて。一緒にやろう！",
+      "startKakao": "星座で見る恋愛の本能！あなたの星座を選んでみて。一緒にやろう！",
+      "startWechat": "星座で見る恋愛の本能！あなたの星座を選んでみて。一緒にやろう！",
+      "startWhatsapp": "星座で見る恋愛の本能！あなたの星座を選んでみて。一緒にやろう！",
+      "startTelegram": "星座で見る恋愛の本能！あなたの星座を選んでみて。一緒にやろう！",
+      "startLine": "星座で見る恋愛の本能！あなたの星座を選んでみて。一緒にやろう！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をコピーしました！",
+      "shareFailed": "共有機能を使えません。",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を準備中です。少ししてからもう一度どうぞ。",
+      "kakaoError": "カカオトーク共有でエラーが起きました。"
+    },
+    "startMessage": {
+      "line1": "星座に宿る、私の恋愛本能は？",
+      "line2": "昔から人は星を見て心を語ってきました。あなたの星座が語る恋愛を、気軽にのぞいてみて。",
+      "line3": "星座を選ぶと、恋愛の本能と会話のヒントが出ます。かわいい結果カードも保存できます。"
+    },
+    "ui": {
+      "startTest": "星座を選ぶ ✨",
+      "goToTest": "テストへ",
+      "adsenseTitle": "広告",
+      "popularBadge": "人気",
+      "similarTests": "似ているテスト",
+      "otherTests": "ほかのテスト",
+      "retake": "もう一度",
+      "shareResult": "結果を共有",
+      "linkCopy": "リンクコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "selectTitle": "星座を選ぶ",
+      "selectGuide": "12星座から一つ選んでください。期間を見て選んでもOKです。",
+      "boundaryNote": "境目生まれなら、二つの星座を両方読んでみて。",
+      "analyzing": "恋愛の本能を読んでいます…",
+      "testCompleted": "分析が終わりました",
+      "viewResults": "結果を見る",
+      "yourResult": "あなたの恋愛本能",
+      "loveStyle": "恋愛での姿",
+      "charm": "魅力ポイント",
+      "caution": "気をつけたいこと",
+      "talkTip": "会話のヒント",
+      "oneLiner": "ひとこと",
+      "cardTitle": "結果カードを保存",
+      "cardSquare": "プロフィール 1:1",
+      "cardStory": "ストーリー 9:16"
+    }
+  },
   "phase3FriendDriftReasonTest":   {
     "startMessage": {
       "line1": "自然に疎遠になる友達には、理由があります。",

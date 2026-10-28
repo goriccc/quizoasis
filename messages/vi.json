@@ -12337,6 +12337,66 @@
       }
     }
   },
+  "phase3ZodiacLoveInstinctTest": {
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Cung hoàng đạo nói gì về bản năng yêu? Chọn cung của bạn đi. Làm cùng mình!",
+      "startKakao": "Cung hoàng đạo nói gì về bản năng yêu? Chọn cung của bạn đi. Làm cùng mình!",
+      "startWechat": "Cung hoàng đạo nói gì về bản năng yêu? Chọn cung của bạn đi. Làm cùng mình!",
+      "startWhatsapp": "Cung hoàng đạo nói gì về bản năng yêu? Chọn cung của bạn đi. Làm cùng mình!",
+      "startTelegram": "Cung hoàng đạo nói gì về bản năng yêu? Chọn cung của bạn đi. Làm cùng mình!",
+      "startLine": "Cung hoàng đạo nói gì về bản năng yêu? Chọn cung của bạn đi. Làm cùng mình!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết. Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "KakaoTalk đang khởi động. Thử lại sau một chút.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "Bản năng yêu trong cung của tôi là gì?",
+      "line2": "Từ lâu người ta đã kể chuyện lòng qua những vì sao. Xem nhẹ câu chuyện yêu mà cung của bạn gợi ra.",
+      "line3": "Chọn một cung để xem bản năng yêu và mẹo trò chuyện. Thẻ kết quả dễ thương cũng lưu được."
+    },
+    "ui": {
+      "startTest": "Chọn cung của tôi ✨",
+      "goToTest": "Làm bài test",
+      "adsenseTitle": "Quảng cáo",
+      "popularBadge": "Hot",
+      "similarTests": "Bài test tương tự",
+      "otherTests": "Bài test khác",
+      "retake": "Làm lại",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "selectTitle": "Chọn cung của bạn",
+      "selectGuide": "Chọn một trong 12 cung. Cũng có thể nhìn theo khoảng ngày.",
+      "boundaryNote": "Sinh ngày giao cung? Đọc cả hai cung.",
+      "analyzing": "Đang đọc bản năng yêu…",
+      "testCompleted": "Phân tích xong rồi",
+      "viewResults": "Xem kết quả",
+      "yourResult": "Bản năng yêu của bạn",
+      "loveStyle": "Khi yêu",
+      "charm": "Điểm hút",
+      "caution": "Nên lưu ý",
+      "talkTip": "Mẹo trò chuyện",
+      "oneLiner": "Một câu",
+      "cardTitle": "Lưu thẻ kết quả",
+      "cardSquare": "Ảnh đại diện 1:1",
+      "cardStory": "Story 9:16"
+    }
+  },
   "phase3FriendDriftReasonTest":   {
     "startMessage": {
       "line1": "Bạn bè xa dần là có lý do, dù chẳng ai cãi nhau.",
