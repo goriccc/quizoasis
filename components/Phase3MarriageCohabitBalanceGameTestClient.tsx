@@ -516,7 +516,7 @@ export default function Phase3MarriageCohabitBalanceGameTestClient({
               <h3 className="text-base font-bold text-gray-800 mb-2 text-left">⭐ {t('ui.keywords')}</h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {characteristics
-                  .split(/[·、，,]/)
+                  .split(/[·・、，,]/)
                   .map((c) => c.trim())
                   .filter(Boolean)
                   .map((char, index) => (

@@ -15148,5 +15148,61 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút.",
       "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "phase3SomeBalanceGameTest": {
+    "startMessage": {
+      "line1": "Xem tin không trả lời vs trả lời sau một tiếng—bạn chọn gì?",
+      "line2": "Mập mờ không có đáp án đúng. Chọn giữa hai phương án đều hơi tiếc sẽ lộ bạn là kiểu người nào khi quan hệ còn chưa rõ.",
+      "line3": "12 vòng cực hạn cho thấy kiểu mập mờ của bạn. Chọn phía gần bạn hơn.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Nghĩ ngắn thôi"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "yourResult": "Kiểu mập mờ của tôi",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "someStyle": "Cách bạn xuất hiện",
+      "strengths": "Điểm mạnh của kiểu này",
+      "goodMatch": "Kiểu hợp nhất",
+      "caution": "Điểm cần lưu ý",
+      "tips": "Gợi ý mập mờ",
+      "oneLiner": "Một câu nhận xét",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Mập mờ cực hạn ⚖️ Xem không trả lời vs trả lời sau một tiếng, bạn chọn gì?",
+      "startKakao": "Trò cân bằng — Mập mờ cực hạn ⚖️ Xem không trả lời vs trả lời sau một tiếng, bạn chọn gì?",
+      "startWechat": "Trò cân bằng — Mập mờ cực hạn ⚖️ Xem không trả lời vs trả lời sau một tiếng, bạn chọn gì?",
+      "startWhatsapp": "Trò cân bằng — Mập mờ cực hạn ⚖️ Xem không trả lời vs trả lời sau một tiếng, bạn chọn gì?",
+      "startTelegram": "Trò cân bằng — Mập mờ cực hạn ⚖️ Xem không trả lời vs trả lời sau một tiếng, bạn chọn gì?",
+      "startLine": "Trò cân bằng — Mập mờ cực hạn ⚖️ Xem không trả lời vs trả lời sau một tiếng, bạn chọn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán trong WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

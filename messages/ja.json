@@ -15136,5 +15136,61 @@
       "kakaoInit": "カカオトーク共有を初期化中です。少ししてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "phase3SomeBalanceGameTest": {
+    "startMessage": {
+      "line1": "既読スルーされる関係 vs 返信に1時間かかる関係——どっちを選ぶ？",
+      "line2": "いい感じの関係に正解はありません。どちらも惜しい二択を選ぶうちに、曖昧な距離での自分がわかります。",
+      "line3": "12ラウンドの極限選択で、あなたの「いい感じ」スタイルがわかります。より近い方を選んでください。",
+      "line4": "極限選択スタート ⚖️ 悩みは短く"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "極限選択スタート ⚖️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "yourResult": "私のいい感じスタイル",
+      "styleType": "タイプ",
+      "keywords": "キーワード",
+      "someStyle": "関係での様子",
+      "strengths": "このタイプの強み",
+      "goodMatch": "相性のいいタイプ",
+      "caution": "注意点",
+      "tips": "いい感じ処方箋",
+      "oneLiner": "一言コメント",
+      "roundLabel": "ラウンド {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "バランスゲーム — いい感じ 極限編 ⚖️ 既読スルー vs 返信1時間、どっち？",
+      "startKakao": "バランスゲーム — いい感じ 極限編 ⚖️ 既読スルー vs 返信1時間、どっち？",
+      "startWechat": "バランスゲーム — いい感じ 極限編 ⚖️ 既読スルー vs 返信1時間、どっち？",
+      "startWhatsapp": "バランスゲーム — いい感じ 極限編 ⚖️ 既読スルー vs 返信1時間、どっち？",
+      "startTelegram": "バランスゲーム — いい感じ 極限編 ⚖️ 既読スルー vs 返信1時間、どっち？",
+      "startLine": "バランスゲーム — いい感じ 極限編 ⚖️ 既読スルー vs 返信1時間、どっち？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "共有機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けて共有してください。",
+      "kakaoInit": "カカオトーク共有を初期化中です。少ししてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

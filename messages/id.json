@@ -15148,5 +15148,61 @@
       "kakaoInit": "Berbagi KakaoTalk sedang diinisialisasi. Coba lagi sebentar.",
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
+  },
+  "phase3SomeBalanceGameTest": {
+    "startMessage": {
+      "line1": "Dibaca tapi tidak dibalas vs balas sejam—kamu pilih yang mana?",
+      "line2": "PDKT tidak punya jawaban benar. Memilih di antara dua opsi yang sama-sama kurang enak menunjukkan siapa dirimu saat status masih abu-abu.",
+      "line3": "12 ronde ekstrem mengungkap gaya PDKTmu. Pilih sisi yang lebih dekat.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan lama-lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Coba lagi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Gaya PDKTku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "someStyle": "Cara kamu hadir",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Tipe yang cocok",
+      "caution": "Hal yang perlu diwaspadai",
+      "tips": "Tips PDKT",
+      "oneLiner": "Satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan seimbang — PDKT ekstrem ⚖️ Dibaca tapi tidak dibalas vs balas sejam, kamu pilih yang mana?",
+      "startKakao": "Permainan seimbang — PDKT ekstrem ⚖️ Dibaca tapi tidak dibalas vs balas sejam, kamu pilih yang mana?",
+      "startWechat": "Permainan seimbang — PDKT ekstrem ⚖️ Dibaca tapi tidak dibalas vs balas sejam, kamu pilih yang mana?",
+      "startWhatsapp": "Permainan seimbang — PDKT ekstrem ⚖️ Dibaca tapi tidak dibalas vs balas sejam, kamu pilih yang mana?",
+      "startTelegram": "Permainan seimbang — PDKT ekstrem ⚖️ Dibaca tapi tidak dibalas vs balas sejam, kamu pilih yang mana?",
+      "startLine": "Permainan seimbang — PDKT ekstrem ⚖️ Dibaca tapi tidak dibalas vs balas sejam, kamu pilih yang mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke papan klip!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Berbagi KakaoTalk sedang diinisialisasi. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
   }
 }
