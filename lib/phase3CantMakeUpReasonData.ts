@@ -208,7 +208,7 @@ export const phase3CantMakeUpReasonQuestions: Phase3CantMakeUpReasonQuestion[] =
   })),
 }));
 
-const RESULT_TEXT_KEYS: (keyof Phase3CantMakeUpReasonResultText)[] = [
+const RESULT_TEXT_KEYS = [
   'title',
   'typeName',
   'realReason',
@@ -224,7 +224,7 @@ const RESULT_TEXT_KEYS: (keyof Phase3CantMakeUpReasonResultText)[] = [
   'changeTips',
   'oneLiner',
   'shareLine',
-];
+] as const satisfies readonly (Exclude<keyof Phase3CantMakeUpReasonResultText, 'counselingNote'>)[];
 
 const KO_RESULTS: Phase3CantMakeUpReasonResult[] = [
   {
