@@ -15441,5 +15441,71 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3LoveEnergyBatteryTest": {
+    "startMessage": {
+      "line1": "\"今の恋愛エネルギー、残り何%？\"",
+      "line2": "恋愛は気持ちだけじゃなく、エネルギーで回っています。連絡・約束・感情の共有を毎日少しずつ使うと、ある日バッテリーが底を見せることもあります。充電できている人もいれば、すでに警告灯が点いている人もいます。",
+      "line3": "10の場面での反応を点数で合計し、恋愛エネルギーバッテリーの残量を%でお伝えします。恋人とも比べてみてください。",
+      "line4": "",
+      "line5": "バッテリーを確認する 🔋 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "バッテリーを確認する 🔋",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "scoreTitle": "私の恋愛エネルギースコア",
+      "scoreUnit": "点",
+      "batteryRemain": "残量 {percent}%",
+      "keywords": "キーワード",
+      "strengths": "このタイプの強み",
+      "chargeNeeded": "充電が必要なところ",
+      "coupleSumTitle": "ふたりのバッテリー合算",
+      "coupleSumHint": "恋人の点数（10〜40）を入れると残量を合算して表示します。",
+      "coupleSumPlaceholder": "恋人の点数",
+      "coupleSumInvalid": "10〜40の整数だけ入力してください。",
+      "coupleSumMine": "自分: {percent}%",
+      "coupleSumPartner": "恋人: {percent}%（{score}点）",
+      "coupleSumTotal": "合算残量: {sum}%",
+      "tips": "充電の処方",
+      "counseling": "専門家からのご案内",
+      "oneLiner": "一言まとめ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の恋愛エネルギーバッテリー残量 🔋 今の恋愛エネルギーは何%？",
+      "startKakao": "私の恋愛エネルギーバッテリー残量 🔋 今の恋愛エネルギーは何%？",
+      "startWechat": "私の恋愛エネルギーバッテリー残量 🔋 今の恋愛エネルギーは何%？",
+      "startWhatsapp": "私の恋愛エネルギーバッテリー残量 🔋 今の恋愛エネルギーは何%？",
+      "startTelegram": "私の恋愛エネルギーバッテリー残量 🔋 今の恋愛エネルギーは何%？",
+      "startLine": "私の恋愛エネルギーバッテリー残量 🔋 今の恋愛エネルギーは何%？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

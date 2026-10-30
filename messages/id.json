@@ -15453,5 +15453,71 @@
       "similarTestsTop5": "🎯 Top 5 Tes Serupa",
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
+  },
+  "phase3LoveEnergyBatteryTest": {
+    "startMessage": {
+      "line1": "\"Energi pacaranku sisa berapa %?\"",
+      "line2": "Pacaran jalan pakai energi, bukan cuma perasaan. Chat, janji, berbagi emosi—habis pelan-pelan tiap hari, suatu saat bisa mentok. Ada yang terisi penuh, ada yang lampu peringatannya sudah nyala.",
+      "line3": "Sepuluh situasi menjumlah skor reaksi dan menunjukkan sisa baterai energi pacaran dalam %. Bandingkan sama pasangan juga.",
+      "line4": "",
+      "line5": "Cek bateraiku 🔋 Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cek bateraiku 🔋",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "scoreTitle": "Skor energi pacaranku",
+      "scoreUnit": "poin",
+      "batteryRemain": "Sisa {percent}%",
+      "keywords": "Kata kunci",
+      "strengths": "Kelebihan tipe ini",
+      "chargeNeeded": "Yang perlu di-charge",
+      "coupleSumTitle": "Jumlah baterai berdua",
+      "coupleSumHint": "Masukkan skor pasangan (10–40) untuk menjumlahkan sisa baterai.",
+      "coupleSumPlaceholder": "Skor pasangan",
+      "coupleSumInvalid": "Masukkan bilangan bulat 10 sampai 40 saja.",
+      "coupleSumMine": "Aku: {percent}%",
+      "coupleSumPartner": "Pasangan: {percent}% ({score} poin)",
+      "coupleSumTotal": "Total: {sum}%",
+      "tips": "Cara nge-charge",
+      "counseling": "Catatan dari konseling",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Baterai energi pacaranku 🔋 Sisa berapa % nih?",
+      "startKakao": "Baterai energi pacaranku 🔋 Sisa berapa % nih?",
+      "startWechat": "Baterai energi pacaranku 🔋 Sisa berapa % nih?",
+      "startWhatsapp": "Baterai energi pacaranku 🔋 Sisa berapa % nih?",
+      "startTelegram": "Baterai energi pacaranku 🔋 Sisa berapa % nih?",
+      "startLine": "Baterai energi pacaranku 🔋 Sisa berapa % nih?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk dibagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }

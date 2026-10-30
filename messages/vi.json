@@ -15453,5 +15453,71 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3LoveEnergyBatteryTest": {
+    "startMessage": {
+      "line1": "\"Năng lượng yêu của mình còn bao nhiêu %?\"",
+      "line2": "Yêu không chỉ bằng cảm xúc mà còn bằng năng lượng. Nhắn tin, hẹn hò, sẻ chia cảm xúc—mỗi ngày một chút rồi có lúc cũng thấy đáy. Người thì sạc đầy, người thì đã sáng đèn cảnh báo.",
+      "line3": "Mười tình huống cộng điểm phản ứng và cho biết pin năng lượng yêu còn bao nhiêu %. So với người yêu luôn nhé.",
+      "line4": "",
+      "line5": "Kiểm tra pin của tôi 🔋 Bắt đầu thật lòng",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Kiểm tra pin của tôi 🔋",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Hot",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreTitle": "Điểm năng lượng yêu của tôi",
+      "scoreUnit": "điểm",
+      "batteryRemain": "Còn {percent}%",
+      "keywords": "Từ khóa",
+      "strengths": "Điểm mạnh của kiểu này",
+      "chargeNeeded": "Chỗ cần sạc lại",
+      "coupleSumTitle": "Cộng pin của hai đứa",
+      "coupleSumHint": "Nhập điểm người yêu (10–40) để cộng % pin.",
+      "coupleSumPlaceholder": "Điểm người yêu",
+      "coupleSumInvalid": "Chỉ nhập số nguyên từ 10 đến 40.",
+      "coupleSumMine": "Mình: {percent}%",
+      "coupleSumPartner": "Người yêu: {percent}% ({score} điểm)",
+      "coupleSumTotal": "Tổng pin: {sum}%",
+      "tips": "Cách sạc lại",
+      "counseling": "Gợi ý từ chuyên gia",
+      "oneLiner": "Một câu thôi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Pin năng lượng yêu của tôi 🔋 Còn bao nhiêu % vậy?",
+      "startKakao": "Pin năng lượng yêu của tôi 🔋 Còn bao nhiêu % vậy?",
+      "startWechat": "Pin năng lượng yêu của tôi 🔋 Còn bao nhiêu % vậy?",
+      "startWhatsapp": "Pin năng lượng yêu của tôi 🔋 Còn bao nhiêu % vậy?",
+      "startTelegram": "Pin năng lượng yêu của tôi 🔋 Còn bao nhiêu % vậy?",
+      "startLine": "Pin năng lượng yêu của tôi 🔋 Còn bao nhiêu % vậy?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ nhé.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

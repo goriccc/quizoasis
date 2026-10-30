@@ -15591,5 +15591,71 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase3LoveEnergyBatteryTest": {
+    "startMessage": {
+      "line1": "\"지금 내 연애 에너지는 몇 %일까?\"",
+      "line2": "연애는 마음만이 아니라 에너지로 굴러갑니다. 연락, 약속, 감정 나누기까지 매일 조금씩 쓰다 보면 어느 날 바닥이 보이기도 합니다. 어떤 사람은 충전이 잘 되어 있고, 어떤 사람은 경고등이 켜져 있습니다.",
+      "line3": "10가지 상황에서 나의 반응을 점수로 합산해 연애 에너지 배터리 잔량을 %로 알려드립니다. 연인과 결과를 비교해 보세요.",
+      "line4": "",
+      "line5": "내 배터리 확인하기 🔋 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 배터리 확인하기 🔋",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "scoreTitle": "나의 연애 에너지 점수",
+      "scoreUnit": "점",
+      "batteryRemain": "잔량 {percent}%",
+      "keywords": "핵심 키워드",
+      "strengths": "이 유형의 강점",
+      "chargeNeeded": "내 충전이 필요한 곳",
+      "coupleSumTitle": "우리 둘 배터리 합산",
+      "coupleSumHint": "연인의 점수(10~40)를 입력하면 잔량을 합산해 보여 드립니다.",
+      "coupleSumPlaceholder": "연인 점수",
+      "coupleSumInvalid": "10점에서 40점 사이의 정수만 입력해 주세요.",
+      "coupleSumMine": "나: {percent}%",
+      "coupleSumPartner": "연인: {percent}% ({score}점)",
+      "coupleSumTotal": "합산 잔량: {sum}%",
+      "tips": "충전 처방",
+      "counseling": "전문가 상담 안내",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 연애 에너지 배터리 잔량 🔋 지금 내 연애 에너지는 몇 %일까?",
+      "startKakao": "나의 연애 에너지 배터리 잔량 🔋 지금 내 연애 에너지는 몇 %일까?",
+      "startWechat": "나의 연애 에너지 배터리 잔량 🔋 지금 내 연애 에너지는 몇 %일까?",
+      "startWhatsapp": "나의 연애 에너지 배터리 잔량 🔋 지금 내 연애 에너지는 몇 %일까?",
+      "startTelegram": "나의 연애 에너지 배터리 잔량 🔋 지금 내 연애 에너지는 몇 %일까?",
+      "startLine": "나의 연애 에너지 배터리 잔량 🔋 지금 내 연애 에너지는 몇 %일까?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

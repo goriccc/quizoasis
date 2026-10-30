@@ -16,6 +16,7 @@ import { PHASE3_PUSH_PULL_LEVEL_META } from '@/lib/phase3PushPullLevelData';
 import { PHASE3_CONFESSION_SUCCESS_META } from '@/lib/phase3ConfessionSuccessData';
 import { PHASE3_LOVE_CONFIDENCE_LEVEL_META } from '@/lib/phase3LoveConfidenceLevelData';
 import { PHASE3_LOVE_CAPACITY_BOWL_META } from '@/lib/phase3LoveCapacityBowlData';
+import { PHASE3_LOVE_ENERGY_BATTERY_META } from '@/lib/phase3LoveEnergyBatteryData';
 import { PHASE3_FACE_FIRST_IMPRESSION_META } from '@/lib/phase3FaceFirstImpressionData';
 import { PHASE3_START_LOVE_SUCCESS_META } from '@/lib/phase3StartLoveSuccessData';
 import { PHASE3_CHRISTMAS_SOLO_ESCAPE_META } from '@/lib/phase3ChristmasSoloEscapeData';
@@ -393,6 +394,11 @@ const Phase3LoveConfidenceLevelTestClient = dynamic(
 
 const Phase3LoveCapacityBowlTestClient = dynamic(
   () => import('@/components/Phase3LoveCapacityBowlTestClient'),
+  { ssr: false }
+);
+
+const Phase3LoveEnergyBatteryTestClient = dynamic(
+  () => import('@/components/Phase3LoveEnergyBatteryTestClient'),
   { ssr: false }
 );
 
@@ -2908,6 +2914,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_CAPACITY_BOWL_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-energy-battery') {
+    test = {
+      slug: 'phase3-love-energy-battery',
+      title: PHASE3_LOVE_ENERGY_BATTERY_META.title,
+      description: PHASE3_LOVE_ENERGY_BATTERY_META.description,
+      thumbnail: 'p3_test_love_energy_battery.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_LOVE_ENERGY_BATTERY_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10664,6 +10683,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveCapacityBowlQuestions}
             results={phase3LoveCapacityBowlResults}
             questionCount={phase3LoveCapacityBowlQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-love-energy-battery') {
+      const { phase3LoveEnergyBatteryQuestions, phase3LoveEnergyBatteryResults } = await import(
+        '@/lib/phase3LoveEnergyBatteryData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-love-energy-battery',
+        title: PHASE3_LOVE_ENERGY_BATTERY_META.title,
+        description: PHASE3_LOVE_ENERGY_BATTERY_META.description,
+        thumbnail: 'p3_test_love_energy_battery.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_LOVE_ENERGY_BATTERY_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3LoveEnergyBatteryTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3LoveEnergyBatteryQuestions}
+            results={phase3LoveEnergyBatteryResults}
+            questionCount={phase3LoveEnergyBatteryQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

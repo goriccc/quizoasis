@@ -14922,5 +14922,71 @@
       "similarTestsTop5": "🎯 類似測驗推薦 Top5",
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
+  },
+  "phase3LoveEnergyBatteryTest": {
+    "startMessage": {
+      "line1": "\"現在我的戀愛能量還剩幾%？\"",
+      "line2": "戀愛不只靠心情，也靠能量運轉。聯繫、約會、分享情緒——每天一點一點消耗，總有一天會見底。有人充得足，有人已經亮起了警告燈。",
+      "line3": "用10個情境的反應加分，告訴你戀愛能量電池還剩百分之幾。也和另一半比一比吧。",
+      "line4": "",
+      "line5": "查看我的電量 🔋 誠實地開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "查看我的電量 🔋",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "scoreTitle": "我的戀愛能量分數",
+      "scoreUnit": "分",
+      "batteryRemain": "剩餘 {percent}%",
+      "keywords": "關鍵字",
+      "strengths": "這種類型的優勢",
+      "chargeNeeded": "最需要充電的地方",
+      "coupleSumTitle": "我們倆電量合計",
+      "coupleSumHint": "輸入另一半的分數（10~40），就會把電量加總顯示。",
+      "coupleSumPlaceholder": "對方分數",
+      "coupleSumInvalid": "請輸入10到40之間的整數。",
+      "coupleSumMine": "我：{percent}%",
+      "coupleSumPartner": "對方：{percent}%（{score}分）",
+      "coupleSumTotal": "合計電量：{sum}%",
+      "tips": "充電處方",
+      "counseling": "專業諮詢提示",
+      "oneLiner": "一句話總結"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的戀愛能量電池 🔋 現在還剩幾%？",
+      "startKakao": "我的戀愛能量電池 🔋 現在還剩幾%？",
+      "startWechat": "我的戀愛能量電池 🔋 現在還剩幾%？",
+      "startWhatsapp": "我的戀愛能量電池 🔋 現在還剩幾%？",
+      "startTelegram": "我的戀愛能量電池 🔋 現在還剩幾%？",
+      "startLine": "我的戀愛能量電池 🔋 現在還剩幾%？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信裡貼上分享。",
+      "kakaoInit": "正在準備 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 當下熱門測驗 Top5"
+    }
   }
 }
