@@ -15394,5 +15394,64 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3LoveCapacityBowlTest": {
+    "startMessage": {
+      "line1": "\"Trái tim tôi là chén nhỏ hay đại dương?\"",
+      "line2": "Kích thước bát chứa tình yêu khác nhau tùy người và tùy giai đoạn. Bát nhỏ là tình yêu đổ đầy chỉn chu; bát lớn chứa được nhiều thứ. Kích thước không phải hơn thua—là hình dạng dư địa bạn đang cho đi.",
+      "line3": "12 tình huống tính điểm phản ứng của bạn, cho biết bát yêu to bao nhiêu và bạn thuộc top bao nhiêu phần trăm. So với bạn bè nhé.",
+      "line4": "",
+      "line5": "Đo bát của tôi 🥣 Bắt đầu thật lòng",
+      "note": "※ Nghĩ đến tình yêu hoặc giai đoạn mập mờ gần đây và chọn phản ứng gần nhất với bạn."
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Đo bát của tôi 🥣",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreTitle": "Điểm dung lượng yêu của tôi",
+      "scoreUnit": "điểm",
+      "topPercent": "Top {percent}%",
+      "keywords": "Từ khóa",
+      "strengths": "Điểm mạnh của kiểu này",
+      "narrowMoment": "Khi bát của bạn bị hẹp",
+      "tips": "Cách làm bát lớn hơn",
+      "counseling": "Gợi ý từ chuyên gia",
+      "oneLiner": "Một câu tóm lại"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Dung lượng yêu của tôi 🥣 Chén nhỏ hay đại dương? Đo bát trái tim",
+      "startKakao": "Dung lượng yêu của tôi 🥣 Chén nhỏ hay đại dương? Đo bát trái tim",
+      "startWechat": "Dung lượng yêu của tôi 🥣 Chén nhỏ hay đại dương? Đo bát trái tim",
+      "startWhatsapp": "Dung lượng yêu của tôi 🥣 Chén nhỏ hay đại dương? Đo bát trái tim",
+      "startTelegram": "Dung lượng yêu của tôi 🥣 Chén nhỏ hay đại dương? Đo bát trái tim",
+      "startLine": "Dung lượng yêu của tôi 🥣 Chén nhỏ hay đại dương? Đo bát trái tim"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

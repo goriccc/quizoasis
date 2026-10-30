@@ -15394,5 +15394,64 @@
       "similarTestsTop5": "🎯 Top 5 Tes Serupa",
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
+  },
+  "phase3LoveCapacityBowlTest": {
+    "startMessage": {
+      "line1": "\"Hatiku mangkuk kecil—atau lautan?\"",
+      "line2": "Ukuran mangkuk yang menampung cinta beda tiap orang dan tiap musim. Mangkuk kecil adalah cinta yang diisi hati-hati; mangkuk besar menampung banyak. Ukuran bukan ranking—itu bentuk ruang yang bisa kamu beri sekarang.",
+      "line3": "Dua belas situasi pacaran menjumlahkan reaksimu dan menunjukkan ukuran mangkuk cinta—plus kira-kira berapa persen teratas. Bandingkan dengan teman.",
+      "line4": "",
+      "line5": "Ukur mangkukku 🥣 Mulai jujur",
+      "note": "※ Ingat pacaran atau tahap deket belakangan dan pilih yang paling mirip reaksi aslimu."
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Ukur mangkukku 🥣",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "scoreTitle": "Skor kapasitas cintaku",
+      "scoreUnit": "",
+      "topPercent": "Top {percent}%",
+      "keywords": "Kata kunci",
+      "strengths": "Kekuatan tipe ini",
+      "narrowMoment": "Saat mangkukmu menyempit",
+      "tips": "Cara membesarkan mangkuk",
+      "counseling": "Catatan konseling",
+      "oneLiner": "Dalam satu baris"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kapasitas Cintaku 🥣 Mangkuk kecil atau lautan? Ukur mangkuk hatimu",
+      "startKakao": "Kapasitas Cintaku 🥣 Mangkuk kecil atau lautan? Ukur mangkuk hatimu",
+      "startWechat": "Kapasitas Cintaku 🥣 Mangkuk kecil atau lautan? Ukur mangkuk hatimu",
+      "startWhatsapp": "Kapasitas Cintaku 🥣 Mangkuk kecil atau lautan? Ukur mangkuk hatimu",
+      "startTelegram": "Kapasitas Cintaku 🥣 Mangkuk kecil atau lautan? Ukur mangkuk hatimu",
+      "startLine": "Kapasitas Cintaku 🥣 Mangkuk kecil atau lautan? Ukur mangkuk hatimu"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
   }
 }

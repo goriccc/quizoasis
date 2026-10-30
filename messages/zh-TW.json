@@ -14863,5 +14863,64 @@
       "similarTestsTop5": "🎯 類似測驗推薦 Top5",
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
+  },
+  "phase3LoveCapacityBowlTest": {
+    "startMessage": {
+      "line1": "「我的心是小碟子，還是大海？」",
+      "line2": "裝愛的碗大小因人而異，也因當下而變。小碗是認真填滿的愛，大碗是裝得下很多的愛。大小不是高低，而是你現在能給出的餘地的形狀。",
+      "line3": "用12個戀愛情境把反應打成分數，算出愛情碗有多大，以及大約排在前百分之幾。和朋友比一比。",
+      "line4": "",
+      "line5": "量一量我的碗 🥣 誠實開始",
+      "note": "※ 想想最近的戀愛或曖昧，選最接近你真實反應的選項。"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "量一量我的碗 🥣",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "scoreTitle": "我的愛情容量分數",
+      "scoreUnit": "分",
+      "topPercent": "前 {percent}%",
+      "keywords": "關鍵字",
+      "strengths": "這一類型的優點",
+      "narrowMoment": "碗變窄的瞬間",
+      "tips": "把碗養大的處方",
+      "counseling": "專業諮商提示",
+      "oneLiner": "一句話總結"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的愛情容量 🥣 小碟子還是大海？量一量你的心碗",
+      "startKakao": "我的愛情容量 🥣 小碟子還是大海？量一量你的心碗",
+      "startWechat": "我的愛情容量 🥣 小碟子還是大海？量一量你的心碗",
+      "startWhatsapp": "我的愛情容量 🥣 小碟子還是大海？量一量你的心碗",
+      "startTelegram": "我的愛情容量 🥣 小碟子還是大海？量一量你的心碗",
+      "startLine": "我的愛情容量 🥣 小碟子還是大海？量一量你的心碗"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
   }
 }

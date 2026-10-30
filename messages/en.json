@@ -15403,5 +15403,64 @@
       "similarTestsTop5": "🎯 Top 5 Similar Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
+  },
+  "phase3LoveCapacityBowlTest": {
+    "startMessage": {
+      "line1": "\"Is my heart a tiny dish—or an ocean?\"",
+      "line2": "The size of the bowl that holds love differs by person and by season. A small bowl is carefully filled love; a big bowl holds many things. Size isn't a ranking—it's the shape of the room you can give right now.",
+      "line3": "Twelve dating situations score your reactions and show your love-bowl size—and roughly where you rank. Compare with friends.",
+      "line4": "",
+      "line5": "Measure my bowl 🥣 Start honestly",
+      "note": "※ Think of recent dating or talking stages and pick what's closest to how you actually react."
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Measure my bowl 🥣",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "scoreTitle": "My love capacity score",
+      "scoreUnit": "",
+      "topPercent": "Top {percent}%",
+      "keywords": "Key words",
+      "strengths": "Strengths of this type",
+      "narrowMoment": "When your bowl gets tight",
+      "tips": "How to grow the bowl",
+      "counseling": "A note from counseling",
+      "oneLiner": "In one line"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Love Capacity 🥣 Tiny dish or ocean? Measure your heart bowl",
+      "startKakao": "My Love Capacity 🥣 Tiny dish or ocean? Measure your heart bowl",
+      "startWechat": "My Love Capacity 🥣 Tiny dish or ocean? Measure your heart bowl",
+      "startWhatsapp": "My Love Capacity 🥣 Tiny dish or ocean? Measure your heart bowl",
+      "startTelegram": "My Love Capacity 🥣 Tiny dish or ocean? Measure your heart bowl",
+      "startLine": "My Love Capacity 🥣 Tiny dish or ocean? Measure your heart bowl"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
   }
 }

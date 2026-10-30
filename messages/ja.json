@@ -15382,5 +15382,64 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3LoveCapacityBowlTest": {
+    "startMessage": {
+      "line1": "「私の心は小皿？それとも海？」",
+      "line2": "愛を入れる器の大きさは人によって、そして今の状況によって違います。小さな器は丁寧に満たす愛、大きな器は多くを抱える愛。大きさは優劣ではなく、今自分が差し出せる余裕の形です。",
+      "line3": "12の恋愛場面の反応を点数で合計し、愛情の器の大きさと上位何%かを出します。友だちと比べてみてください。",
+      "line4": "",
+      "line5": "器の大きさを測る 🥣 正直にスタート",
+      "note": "※ 最近の恋愛や両思い前を思い浮かべ、実際の反応にいちばん近いものを選んでください。"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "器の大きさを測る 🥣",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "scoreTitle": "私の愛情容量スコア",
+      "scoreUnit": "点",
+      "topPercent": "上位 {percent}%",
+      "keywords": "キーワード",
+      "strengths": "このタイプの強み",
+      "narrowMoment": "器が狭くなる瞬間",
+      "tips": "器を大きくする処方",
+      "counseling": "専門家からのご案内",
+      "oneLiner": "一言まとめ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の愛情容量 — 心の大きさ測定 🥣 小皿？海？器の大きさを測ろう",
+      "startKakao": "私の愛情容量 — 心の大きさ測定 🥣 小皿？海？器の大きさを測ろう",
+      "startWechat": "私の愛情容量 — 心の大きさ測定 🥣 小皿？海？器の大きさを測ろう",
+      "startWhatsapp": "私の愛情容量 — 心の大きさ測定 🥣 小皿？海？器の大きさを測ろう",
+      "startTelegram": "私の愛情容量 — 心の大きさ測定 🥣 小皿？海？器の大きさを測ろう",
+      "startLine": "私の愛情容量 — 心の大きさ測定 🥣 小皿？海？器の大きさを測ろう"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

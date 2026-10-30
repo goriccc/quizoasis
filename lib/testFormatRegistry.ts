@@ -205,6 +205,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-push-pull-level': 'scenario_4',
   'phase3-confession-success': 'scenario_4',
   'phase3-love-confidence-level': 'scenario_4',
+  'phase3-love-capacity-bowl': 'scenario_4',
   'phase3-face-first-impression': 'face',
   'phase3-face-animal-type': 'face',
   'phase3-face-profile-point': 'face',
