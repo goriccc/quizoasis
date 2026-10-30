@@ -14673,5 +14673,73 @@
       "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
       "kakaoError": "KakaoTalk 分享時出錯了。"
     }
+  },
+  "phase3CantMakeUpReasonTest": {
+    "startMessage": {
+      "line1": "「明明想先傳訊息，手卻怎麼也動不了？」",
+      "line2": "想和好的心很清楚，卻總是打開對話框又關掉。一天、兩天過去，沉默反而比當初的吵架更沉重。卡住和好的，往往不是沒感情，而是各自心裡那點說不出口的東西。",
+      "line3": "12個情境幫你找出真正按住手的原因。結果裡還有「戀人眼中的你」和「群組人設」，可以傳給朋友一起玩。",
+      "line4": "",
+      "line5": "看看我的真心話 💬 誠實開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去測驗",
+      "startTest": "看看我的真心話 💬",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "realReason": "無法和好的真正原因",
+      "keywords": "關鍵字",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "secondMind": "同時存在的另一面",
+      "partnerSees": "戀人眼中的你",
+      "groupChatCharacter": "群組人設",
+      "blockedMoment": "和好卡住的瞬間",
+      "strengths": "這個類型的優點",
+      "reasonDetail": "把真正原因拆開看",
+      "frequentSaying": "這個類型常說的話",
+      "changeTips": "走向和好的方法",
+      "oneLiner": "一句話總結"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "吵完架卻無法和好的真正原因 💬 想先傳訊息卻傳不出去，你是為什麼？",
+      "startKakao": "吵完架卻無法和好的真正原因 💬 想先傳訊息卻傳不出去，你是為什麼？",
+      "startWechat": "吵完架卻無法和好的真正原因 💬 想先傳訊息卻傳不出去，你是為什麼？",
+      "startWhatsapp": "吵完架卻無法和好的真正原因 💬 想先傳訊息卻傳不出去，你是為什麼？",
+      "startTelegram": "吵完架卻無法和好的真正原因 💬 想先傳訊息卻傳不出去，你是為什麼？",
+      "startLine": "吵完架卻無法和好的真正原因 💬 想先傳訊息卻傳不出去，你是為什麼？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "disclaimers": {
+      "line1": "本測驗用於娛樂與自我了解，不是專業診斷。",
+      "line2": "類型沒有高下之分，同一個人也會因對象和情境而變化。",
+      "line3": "如果爭吵演變成反覆的辱罵、羞辱或威脅，那就不是和好問題，而是安全問題。請不要獨自硬撐，向身邊人或專業援助單位求助。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
   }
 }

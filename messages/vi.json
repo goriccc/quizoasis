@@ -15204,5 +15204,73 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút.",
       "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "phase3CantMakeUpReasonTest": {
+    "startMessage": {
+      "line1": "\"Muốn nhắn trước thế mà sao tay lại không chịu gửi?\"",
+      "line2": "Lòng muốn làm lành rất rõ, nhưng cứ mở khung chat rồi đóng lại. Một ngày rồi hai ngày trôi qua, sự im lặng còn nặng hơn cả cuộc cãi vã ban đầu. Điều níu tay bạn thường không phải là thiếu tình cảm—mà là những nỗi lòng khác nhau bên trong.",
+      "line3": "12 tình huống sẽ chỉ ra lý do thật sự đang níu tay bạn. Kết quả còn có \"bạn trong mắt người yêu\" và \"nhân vật group chat\"—chia sẻ với bạn bè cũng vui.",
+      "line4": "",
+      "line5": "Xem nỗi lòng của mình 💬 Bắt đầu thành thật",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Xem nỗi lòng của mình 💬",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "realReason": "Lý do thật sự khiến bạn không làm lành được",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "secondMind": "Nỗi lòng đi kèm",
+      "partnerSees": "Bạn trong mắt người yêu",
+      "groupChatCharacter": "Nhân vật group chat",
+      "blockedMoment": "Khoảnh khắc làm lành bị kẹt",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Phân tích lý do thật sự",
+      "frequentSaying": "Câu cửa miệng của kiểu này",
+      "changeTips": "Cách tiến tới làm lành",
+      "oneLiner": "Một câu tóm lại"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Lý do thật sự khiến bạn không thể làm lành sau cãi nhau 💬 Muốn nhắn trước mà tay cứng—bạn vì sao?",
+      "startKakao": "Lý do thật sự khiến bạn không thể làm lành sau cãi nhau 💬 Muốn nhắn trước mà tay cứng—bạn vì sao?",
+      "startWechat": "Lý do thật sự khiến bạn không thể làm lành sau cãi nhau 💬 Muốn nhắn trước mà tay cứng—bạn vì sao?",
+      "startWhatsapp": "Lý do thật sự khiến bạn không thể làm lành sau cãi nhau 💬 Muốn nhắn trước mà tay cứng—bạn vì sao?",
+      "startTelegram": "Lý do thật sự khiến bạn không thể làm lành sau cãi nhau 💬 Muốn nhắn trước mà tay cứng—bạn vì sao?",
+      "startLine": "Lý do thật sự khiến bạn không thể làm lành sau cãi nhau 💬 Muốn nhắn trước mà tay cứng—bạn vì sao?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "disclaimers": {
+      "line1": "Bài test này mang tính giải trí và tự hiểu bản thân, không phải chẩn đoán.",
+      "line2": "Không kiểu nào hơn kém; cùng một người cũng có thể khác tùy đối phương và hoàn cảnh.",
+      "line3": "Nếu cãi vã dẫn tới lời lăng mạ, xúc phạm hoặc đe dọa lặp lại, đó không còn là chuyện làm lành mà là vấn đề an toàn. Đừng gánh một mình—hãy tìm người thân hoặc đường dây hỗ trợ chuyên môn."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

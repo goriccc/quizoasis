@@ -31,6 +31,7 @@ import { PHASE3_ZODIAC_LOVE_INSTINCT_META } from '@/lib/phase3ZodiacLoveInstinct
 import { PHASE3_MARRIAGE_COHABIT_BALANCE_META } from '@/lib/phase3MarriageCohabitBalanceGameData';
 import { PHASE3_DATING_COST_BALANCE_META } from '@/lib/phase3DatingCostBalanceGameData';
 import { PHASE3_SOME_BALANCE_META } from '@/lib/phase3SomeBalanceGameData';
+import { PHASE3_CANT_MAKE_UP_REASON_META } from '@/lib/phase3CantMakeUpReasonData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -349,6 +350,11 @@ const Phase3LoveLanguageAnalysisTestClient = dynamic(
 
 const Phase3RealReasonSingleTestClient = dynamic(
   () => import('@/components/Phase3RealReasonSingleTestClient'),
+  { ssr: false }
+);
+
+const Phase3CantMakeUpReasonTestClient = dynamic(
+  () => import('@/components/Phase3CantMakeUpReasonTestClient'),
   { ssr: false }
 );
 
@@ -2743,6 +2749,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         vi: ['ngôn ngữ tình yêu', 'ngôn ngữ yêu thương', 'cặp đôi', 'phong cách hẹn hò', 'Gary Chapman'],
         id: ['bahasa cinta', 'love language', 'pasangan', 'gaya pacaran', 'Gary Chapman'],
       },
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-cant-make-up-reason') {
+    test = {
+      slug: 'phase3-cant-make-up-reason',
+      title: PHASE3_CANT_MAKE_UP_REASON_META.title,
+      description: PHASE3_CANT_MAKE_UP_REASON_META.description,
+      thumbnail: 'p3_test_cant_make_up_reason.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_CANT_MAKE_UP_REASON_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10263,6 +10282,41 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveLanguageAnalysisQuestions}
             results={phase3LoveLanguageAnalysisResults}
             questionCount={phase3LoveLanguageAnalysisQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-cant-make-up-reason') {
+      const {
+        phase3CantMakeUpReasonQuestions,
+        phase3CantMakeUpReasonResults,
+      } = await import('@/lib/phase3CantMakeUpReasonData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-cant-make-up-reason',
+        title: PHASE3_CANT_MAKE_UP_REASON_META.title,
+        description: PHASE3_CANT_MAKE_UP_REASON_META.description,
+        thumbnail: 'p3_test_cant_make_up_reason.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_CANT_MAKE_UP_REASON_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3CantMakeUpReasonTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3CantMakeUpReasonQuestions}
+            results={phase3CantMakeUpReasonResults}
+            questionCount={phase3CantMakeUpReasonQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

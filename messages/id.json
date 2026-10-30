@@ -15204,5 +15204,73 @@
       "kakaoInit": "Berbagi KakaoTalk sedang diinisialisasi. Coba lagi sebentar.",
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
+  },
+  "phase3CantMakeUpReasonTest": {
+    "startMessage": {
+      "line1": "\"Pengin chat duluan… kenapa tangan ini susah banget nge-send?\"",
+      "line2": "Kamu jelas pengin berdamai, tapi chat cuma dibuka terus ditutup. Sehari jadi dua hari, dan keheningan mulai terasa lebih besar dari pertengkarannya. Yang menahan tanganmu sering bukan karena tidak sayang—melainkan isi hati yang beda-beda.",
+      "line3": "12 situasi mengungkap alasan yang benar-benar menahan tanganmu. Hasilnya juga ada \"kamu di mata pasangan\" dan \"karakter grup chat\"—enak dibagikan ke teman.",
+      "line4": "",
+      "line5": "Cek isi hatiku 💬 Mulai dengan jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Mulai tes",
+      "startTest": "Cek isi hatiku 💬",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "realReason": "Alasan sebenarnya kamu susah berdamai",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "secondMind": "Isi hati yang ikut muncul",
+      "partnerSees": "Kamu di mata pasangan",
+      "groupChatCharacter": "Karakter grup chat",
+      "blockedMoment": "Momen berdamai jadi macet",
+      "strengths": "Kelebihan tipe ini",
+      "reasonDetail": "Mengurai alasan sebenarnya",
+      "frequentSaying": "Kalimat andalan tipe ini",
+      "changeTips": "Cara menuju berdamai",
+      "oneLiner": "Dalam satu kalimat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Alasan Sebenarnya Kenapa Kamu Susah Berdamai Setelah Bertengkar 💬 Pengin chat duluan tapi tangan bekuku—kamu kenapa?",
+      "startKakao": "Alasan Sebenarnya Kenapa Kamu Susah Berdamai Setelah Bertengkar 💬 Pengin chat duluan tapi tangan bekuku—kamu kenapa?",
+      "startWechat": "Alasan Sebenarnya Kenapa Kamu Susah Berdamai Setelah Bertengkar 💬 Pengin chat duluan tapi tangan bekuku—kamu kenapa?",
+      "startWhatsapp": "Alasan Sebenarnya Kenapa Kamu Susah Berdamai Setelah Bertengkar 💬 Pengin chat duluan tapi tangan bekuku—kamu kenapa?",
+      "startTelegram": "Alasan Sebenarnya Kenapa Kamu Susah Berdamai Setelah Bertengkar 💬 Pengin chat duluan tapi tangan bekuku—kamu kenapa?",
+      "startLine": "Alasan Sebenarnya Kenapa Kamu Susah Berdamai Setelah Bertengkar 💬 Pengin chat duluan tapi tangan bekuku—kamu kenapa?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "disclaimers": {
+      "line1": "Tes ini untuk hiburan dan pemahaman diri—bukan diagnosis.",
+      "line2": "Tidak ada tipe yang lebih baik atau buruk; orang yang sama bisa berbeda tergantung pasangan dan situasi.",
+      "line3": "Jika pertengkaran berubah jadi hinaan, penghinaan, atau ancaman berulang, ini bukan soal berdamai—ini soal keselamatan. Jangan tanggung sendiri; hubungi orang terdekat atau layanan bantuan profesional."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
   }
 }

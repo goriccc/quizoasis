@@ -15341,5 +15341,73 @@
       "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
+  },
+  "phase3CantMakeUpReasonTest": {
+    "startMessage": {
+      "line1": "\"먼저 연락하고 싶은데, 왜 손이 안 갈까?\"",
+      "line2": "화해하고 싶은 마음은 분명한데 입력창만 열었다 닫습니다. 하루가 지나고 이틀이 지나면 처음의 싸움보다 침묵이 더 커집니다. 화해를 막는 건 마음이 없어서가 아니라, 저마다 다른 속마음일 때가 많습니다.",
+      "line3": "12가지 상황으로 내 손을 붙잡는 진짜 이유를 알려드립니다. 결과에는 '연인 눈에 비친 나'와 '단톡방 캐릭터'도 담겨 있으니 친구들에게 인증해 보세요.",
+      "line4": "",
+      "line5": "내 속마음 확인하기 💬 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 속마음 확인하기 💬",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "realReason": "화해를 못 하는 진짜 이유",
+      "keywords": "핵심 키워드",
+      "scoreTitle": "유형별 점수",
+      "scoreUnit": "점",
+      "secondMind": "함께 있는 속마음",
+      "partnerSees": "연인에게 비치는 나",
+      "groupChatCharacter": "단톡방 캐릭터",
+      "blockedMoment": "화해가 막히는 순간",
+      "strengths": "이 유형의 강점",
+      "reasonDetail": "진짜 이유를 풀어보면",
+      "frequentSaying": "이 유형이 자주 하는 말",
+      "changeTips": "화해로 가는 법",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "싸우고 화해를 못 하는 진짜 이유 💬 먼저 연락하고 싶은데 손이 안 갈 때, 너는 왜야?",
+      "startKakao": "싸우고 화해를 못 하는 진짜 이유 💬 먼저 연락하고 싶은데 손이 안 갈 때, 너는 왜야?",
+      "startWechat": "싸우고 화해를 못 하는 진짜 이유 💬 먼저 연락하고 싶은데 손이 안 갈 때, 너는 왜야?",
+      "startWhatsapp": "싸우고 화해를 못 하는 진짜 이유 💬 먼저 연락하고 싶은데 손이 안 갈 때, 너는 왜야?",
+      "startTelegram": "싸우고 화해를 못 하는 진짜 이유 💬 먼저 연락하고 싶은데 손이 안 갈 때, 너는 왜야?",
+      "startLine": "싸우고 화해를 못 하는 진짜 이유 💬 먼저 연락하고 싶은데 손이 안 갈 때, 너는 왜야?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "disclaimers": {
+      "line1": "이 테스트는 진단이 아니라 재미와 자기 이해를 위한 콘텐츠입니다",
+      "line2": "유형에 우열은 없으며, 같은 사람도 상대와 상황에 따라 달라질 수 있습니다",
+      "line3": "싸움이 반복적인 폭언·모욕·위협으로 이어진다면 화해의 문제가 아니라 안전의 문제입니다. 혼자 견디지 말고 주변이나 전문 상담기관(여성긴급전화 1366 등)에 도움을 요청하세요"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

@@ -15192,5 +15192,73 @@
       "kakaoInit": "カカオトーク共有を初期化中です。少ししてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "phase3CantMakeUpReasonTest": {
+    "startMessage": {
+      "line1": "「先に連絡したいのに、なんで手が動かないんだろう？」",
+      "line2": "仲直りしたい気持ちはあるのに、チャット画面を開いては閉じる。一日、二日と経つうちに、最初のケンカより沈黙のほうが大きくなっていきます。仲直りの足を引っ張っているのは、気持ちがないからではなく、人それぞれの本音だったりします。",
+      "line3": "12のシチュエーションで、あなたの手を止めている本当の理由がわかります。結果には「恋人から見たあなた」と「グループLINEキャラ」も入るので、友達にシェアしてみて。",
+      "line4": "",
+      "line5": "本音をチェックする 💬 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "本音をチェックする 💬",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェアする",
+      "realReason": "仲直りできない本当の理由",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "secondMind": "一緒にいる本音",
+      "partnerSees": "恋人から見たあなた",
+      "groupChatCharacter": "グループLINEキャラ",
+      "blockedMoment": "仲直りの手が止まる瞬間",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "本当の理由を詳しく見ると",
+      "frequentSaying": "このタイプの口ぐせ",
+      "changeTips": "仲直りへのヒント",
+      "oneLiner": "ひとことで言うと"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "ケンカして仲直りできない本当の理由 💬 先に連絡したいのに手が動かないとき、あなたはなぜ？",
+      "startKakao": "ケンカして仲直りできない本当の理由 💬 先に連絡したいのに手が動かないとき、あなたはなぜ？",
+      "startWechat": "ケンカして仲直りできない本当の理由 💬 先に連絡したいのに手が動かないとき、あなたはなぜ？",
+      "startWhatsapp": "ケンカして仲直りできない本当の理由 💬 先に連絡したいのに手が動かないとき、あなたはなぜ？",
+      "startTelegram": "ケンカして仲直りできない本当の理由 💬 先に連絡したいのに手が動かないとき、あなたはなぜ？",
+      "startLine": "ケンカして仲直りできない本当の理由 💬 先に連絡したいのに手が動かないとき、あなたはなぜ？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。少し後にもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "disclaimers": {
+      "line1": "このテストは診断ではなく、楽しさと自己理解のためのコンテンツです",
+      "line2": "タイプに優劣はなく、同じ人でも相手や状況によって変わります",
+      "line3": "ケンカが繰り返しの暴言・侮辱・脅しにつながるなら、仲直り以前に安全の問題です。一人で抱え込まず、周囲や専門の相談窓口に助けを求めてください"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

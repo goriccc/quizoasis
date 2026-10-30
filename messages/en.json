@@ -15213,5 +15213,73 @@
       "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
+  },
+  "phase3CantMakeUpReasonTest": {
+    "startMessage": {
+      "line1": "\"I want to text first… so why can't I hit send?\"",
+      "line2": "You want to make up—but you keep opening the chat and closing it. One day turns into two, and the silence starts to feel bigger than the fight. Often it's not a lack of love holding you back. It's whatever's going on under the surface.",
+      "line3": "Twelve situations reveal what's really stopping your hand. Your result also includes how your partner sees you and your \"group chat character\"—perfect to share with friends.",
+      "line4": "",
+      "line5": "See what's holding me back 💬 Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "See what's holding me back 💬",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "realReason": "The real reason you can't make up",
+      "keywords": "Key words",
+      "scoreTitle": "Score by type",
+      "scoreUnit": "pt",
+      "secondMind": "What's also going on",
+      "partnerSees": "How your partner sees you",
+      "groupChatCharacter": "Your group chat character",
+      "blockedMoment": "When making up gets stuck",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "Breaking down the real reason",
+      "frequentSaying": "What this type always says",
+      "changeTips": "How to make up",
+      "oneLiner": "In one line"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "The Real Reason You Can't Make Up After a Fight 💬 Want to text first but your hands freeze—what's your reason?",
+      "startKakao": "The Real Reason You Can't Make Up After a Fight 💬 Want to text first but your hands freeze—what's your reason?",
+      "startWechat": "The Real Reason You Can't Make Up After a Fight 💬 Want to text first but your hands freeze—what's your reason?",
+      "startWhatsapp": "The Real Reason You Can't Make Up After a Fight 💬 Want to text first but your hands freeze—what's your reason?",
+      "startTelegram": "The Real Reason You Can't Make Up After a Fight 💬 Want to text first but your hands freeze—what's your reason?",
+      "startLine": "The Real Reason You Can't Make Up After a Fight 💬 Want to text first but your hands freeze—what's your reason?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "disclaimers": {
+      "line1": "This test is for fun and self-reflection—not a diagnosis.",
+      "line2": "No type is better or worse; the same person can shift depending on the partner and situation.",
+      "line3": "If fights turn into repeated insults, humiliation, or threats, this isn't about making up—it's about safety. Don't handle it alone; reach out to people you trust or a professional support line."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
   }
 }
