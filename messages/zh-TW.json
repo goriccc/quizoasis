@@ -14742,4 +14742,68 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   }
+,
+  "phase3RefusalToneTest": {
+    "startMessage": {
+      "line1": "「抱歉，今天不行」——拒絕也有各自的語氣。",
+      "line2": "同樣一句「不行」，有人直說，有人繞彎，有人編理由，有人到最後還是答應了。拒絕的語氣裡，既有對對方的顧慮，也有對自己的保護。",
+      "line3": "在12個拒絕場景裡選最像你的反應。幫情緒取個名字，心裡也會輕鬆一點。把結果傳給戀人，聊聊彼此怎麼說「不」。",
+      "line4": "",
+      "line5": "看看我的拒絕語氣 💬 誠實開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去測驗",
+      "startTest": "看看我的拒絕語氣 💬",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "refusalTone": "我的拒絕語氣",
+      "keywords": "關鍵字",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "secondTone": "同時存在的拒絕語氣",
+      "partnerImpression": "戀人眼中的你",
+      "frequentSaying": "常說的話",
+      "strengths": "這個類型的優點",
+      "caution": "要注意的點",
+      "emotionLabel": "幫情緒取個名字",
+      "rewriteLine": "換一種拒絕說法",
+      "changeTips": "拒絕小處方",
+      "oneLiner": "一句話總結"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "拒絕時的我的語氣測驗 💬 「抱歉，今天不行」——你是怎麼拒絕的？",
+      "startKakao": "拒絕時的我的語氣測驗 💬 「抱歉，今天不行」——你是怎麼拒絕的？",
+      "startWechat": "拒絕時的我的語氣測驗 💬 「抱歉，今天不行」——你是怎麼拒絕的？",
+      "startWhatsapp": "拒絕時的我的語氣測驗 💬 「抱歉，今天不行」——你是怎麼拒絕的？",
+      "startTelegram": "拒絕時的我的語氣測驗 💬 「抱歉，今天不行」——你是怎麼拒絕的？",
+      "startLine": "拒絕時的我的語氣測驗 💬 「抱歉，今天不行」——你是怎麼拒絕的？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  }
 }

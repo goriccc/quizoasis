@@ -15282,4 +15282,68 @@
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
   }
+,
+  "phase3RefusalToneTest": {
+    "startMessage": {
+      "line1": "'Sorry, I can't today'—even a no has a vibe.",
+      "line2": "The same refusal can be blunt, soft, wrapped in an excuse, or swallowed entirely. How you say no shows how you care for them—and how you protect yourself.",
+      "line3": "Pick what feels most like you in twelve refusal moments. Naming the feeling can already calm things a little. Share the result with your partner and compare refusal styles.",
+      "line4": "",
+      "line5": "Check my refusal style 💬 Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Check my refusal style 💬",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "refusalTone": "How you say no",
+      "keywords": "Key words",
+      "scoreTitle": "Score by type",
+      "scoreUnit": "pt",
+      "secondTone": "Your other refusal style",
+      "partnerImpression": "How your partner sees you",
+      "frequentSaying": "What you often say",
+      "strengths": "Strengths of this type",
+      "caution": "Watch for this",
+      "emotionLabel": "Name the feeling",
+      "rewriteLine": "Try saying it this way",
+      "changeTips": "Refusal tips",
+      "oneLiner": "In one line"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?",
+      "startKakao": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?",
+      "startWechat": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?",
+      "startWhatsapp": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?",
+      "startTelegram": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?",
+      "startLine": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
+  }
 }

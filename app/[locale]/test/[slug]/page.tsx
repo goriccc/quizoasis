@@ -32,6 +32,7 @@ import { PHASE3_MARRIAGE_COHABIT_BALANCE_META } from '@/lib/phase3MarriageCohabi
 import { PHASE3_DATING_COST_BALANCE_META } from '@/lib/phase3DatingCostBalanceGameData';
 import { PHASE3_SOME_BALANCE_META } from '@/lib/phase3SomeBalanceGameData';
 import { PHASE3_CANT_MAKE_UP_REASON_META } from '@/lib/phase3CantMakeUpReasonData';
+import { PHASE3_REFUSAL_TONE_META } from '@/lib/phase3RefusalToneData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -355,6 +356,11 @@ const Phase3RealReasonSingleTestClient = dynamic(
 
 const Phase3CantMakeUpReasonTestClient = dynamic(
   () => import('@/components/Phase3CantMakeUpReasonTestClient'),
+  { ssr: false }
+);
+
+const Phase3RefusalToneTestClient = dynamic(
+  () => import('@/components/Phase3RefusalToneTestClient'),
   { ssr: false }
 );
 
@@ -2762,6 +2768,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_CANT_MAKE_UP_REASON_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-refusal-tone') {
+    test = {
+      slug: 'phase3-refusal-tone',
+      title: PHASE3_REFUSAL_TONE_META.title,
+      description: PHASE3_REFUSAL_TONE_META.description,
+      thumbnail: 'p3_test_refusal_tone.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_REFUSAL_TONE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10317,6 +10336,38 @@ export default async function TestPage({ params }: Props) {
             questions={phase3CantMakeUpReasonQuestions}
             results={phase3CantMakeUpReasonResults}
             questionCount={phase3CantMakeUpReasonQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-refusal-tone') {
+      const { phase3RefusalToneQuestions, phase3RefusalToneResults } = await import('@/lib/phase3RefusalToneData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-refusal-tone',
+        title: PHASE3_REFUSAL_TONE_META.title,
+        description: PHASE3_REFUSAL_TONE_META.description,
+        thumbnail: 'p3_test_refusal_tone.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_REFUSAL_TONE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3RefusalToneTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3RefusalToneQuestions}
+            results={phase3RefusalToneResults}
+            questionCount={phase3RefusalToneQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

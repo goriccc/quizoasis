@@ -15273,4 +15273,68 @@
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
   }
+,
+  "phase3RefusalToneTest": {
+    "startMessage": {
+      "line1": "'Maaf, hari ini nggak bisa'—cara bilang tidak juga punya gaya.",
+      "line2": "\"Tidak\" yang sama bisa langsung, bisa berputar, bisa dibungkus alasan, atau akhirnya tetap diterima. Cara menolak menunjukkan seberapa kamu menjaga mereka—dan seberapa kamu menjaga dirimu.",
+      "line3": "Pilih reaksi paling mirip dirimu di dua belas situasi menolak. Memberi nama pada perasaan saja bisa sedikit meredakan. Kirim hasilnya ke pasangan dan bandingkan gaya bilang tidak kalian.",
+      "line4": "",
+      "line5": "Cek gaya menolakku 💬 Mulai dengan jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Mulai tes",
+      "startTest": "Cek gaya menolakku 💬",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "refusalTone": "Cara aku bilang tidak",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "secondTone": "Gaya menolak yang ikut muncul",
+      "partnerImpression": "Kesan di mata pasangan",
+      "frequentSaying": "Kalimat yang sering keluar",
+      "strengths": "Kelebihan tipe ini",
+      "caution": "Yang perlu diwaspadai",
+      "emotionLabel": "Beri nama perasaannya",
+      "rewriteLine": "Coba bilang seperti ini",
+      "changeTips": "Tips menolak",
+      "oneLiner": "Dalam satu kalimat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Gaya Bicara Saat Menolak 💬 'Maaf, hari ini nggak bisa'—kamu menolaknya bagaimana?",
+      "startKakao": "Gaya Bicara Saat Menolak 💬 'Maaf, hari ini nggak bisa'—kamu menolaknya bagaimana?",
+      "startWechat": "Gaya Bicara Saat Menolak 💬 'Maaf, hari ini nggak bisa'—kamu menolaknya bagaimana?",
+      "startWhatsapp": "Gaya Bicara Saat Menolak 💬 'Maaf, hari ini nggak bisa'—kamu menolaknya bagaimana?",
+      "startTelegram": "Gaya Bicara Saat Menolak 💬 'Maaf, hari ini nggak bisa'—kamu menolaknya bagaimana?",
+      "startLine": "Gaya Bicara Saat Menolak 💬 'Maaf, hari ini nggak bisa'—kamu menolaknya bagaimana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  }
 }

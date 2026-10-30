@@ -15410,4 +15410,68 @@
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
   }
+,
+  "phase3RefusalToneTest": {
+    "startMessage": {
+      "line1": "'미안, 오늘은 어려워', 거절도 말투마다 달라요.",
+      "line2": "같은 \"안 돼\"도 누군가는 한마디로 끝내고, 누군가는 돌려 말하고, 누군가는 핑계를 만들고, 누군가는 끝내 거절하지 못합니다. 거절 말투에는 상대를 얼마나 배려하는지, 내 마음을 얼마나 지키는지가 함께 담겨 있습니다.",
+      "line3": "12가지 거절 상황에서 가장 나다운 반응을 골라 보세요. 감정에 이름을 붙이는 것만으로도 마음이 조금 가라앉습니다. 결과는 연인에게 보내 서로의 거절 화법을 이야기해 보세요.",
+      "line4": "",
+      "line5": "내 거절 말투 확인하기 💬 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 거절 말투 확인하기 💬",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "refusalTone": "나의 거절 말투",
+      "keywords": "핵심 키워드",
+      "scoreTitle": "유형별 점수",
+      "scoreUnit": "점",
+      "secondTone": "함께 있는 거절 말투",
+      "partnerImpression": "연인이 받는 인상",
+      "frequentSaying": "자주 하는 말",
+      "strengths": "이 유형의 강점",
+      "caution": "주의할 점",
+      "emotionLabel": "감정에 이름 붙이기",
+      "rewriteLine": "거절 한마디 바꾸기",
+      "changeTips": "거절 처방",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "거절할 때 나의 말투 테스트 💬 '미안, 오늘은 어려워'—너는 어떻게 거절해?",
+      "startKakao": "거절할 때 나의 말투 테스트 💬 '미안, 오늘은 어려워'—너는 어떻게 거절해?",
+      "startWechat": "거절할 때 나의 말투 테스트 💬 '미안, 오늘은 어려워'—너는 어떻게 거절해?",
+      "startWhatsapp": "거절할 때 나의 말투 테스트 💬 '미안, 오늘은 어려워'—너는 어떻게 거절해?",
+      "startTelegram": "거절할 때 나의 말투 테스트 💬 '미안, 오늘은 어려워'—너는 어떻게 거절해?",
+      "startLine": "거절할 때 나의 말투 테스트 💬 '미안, 오늘은 어려워'—너는 어떻게 거절해?"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  }
 }

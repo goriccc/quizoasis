@@ -15261,4 +15261,68 @@
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
   }
+,
+  "phase3RefusalToneTest": {
+    "startMessage": {
+      "line1": "「ごめん、今日は無理」——断り方にもクセがあります。",
+      "line2": "同じ「無理」でも、単刀直入な人もいれば遠回しな人も、事情を作る人も、結局引き受けてしまう人もいます。断り方には、相手への配慮と自分を守る気持ちが一緒に入っています。",
+      "line3": "12の断り場面でいちばん自分らしい反応を選んでみて。感情に名前をつけるだけでも、少し楽になることがあります。結果を恋人に送って、お互いの断り方を話してみて。",
+      "line4": "",
+      "line5": "私の断り方をチェック 💬 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の断り方をチェック 💬",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ているテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェアする",
+      "refusalTone": "私の断り方",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "secondTone": "一緒にいる断り方",
+      "partnerImpression": "恋人が受ける印象",
+      "frequentSaying": "よく言うセリフ",
+      "strengths": "このタイプの強み",
+      "caution": "注意ポイント",
+      "emotionLabel": "感情に名前をつける",
+      "rewriteLine": "断り文句の言い換え",
+      "changeTips": "断り方のヒント",
+      "oneLiner": "ひとことで言うと"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "断るときの私の話し方テスト 💬 「ごめん、今日は無理」——あなたはどう断る？",
+      "startKakao": "断るときの私の話し方テスト 💬 「ごめん、今日は無理」——あなたはどう断る？",
+      "startWechat": "断るときの私の話し方テスト 💬 「ごめん、今日は無理」——あなたはどう断る？",
+      "startWhatsapp": "断るときの私の話し方テスト 💬 「ごめん、今日は無理」——あなたはどう断る？",
+      "startTelegram": "断るときの私の話し方テスト 💬 「ごめん、今日は無理」——あなたはどう断る？",
+      "startLine": "断るときの私の話し方テスト 💬 「ごめん、今日は無理」——あなたはどう断る？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。少し後にもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
+  }
 }
