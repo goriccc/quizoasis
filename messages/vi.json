@@ -11625,8 +11625,7 @@
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
     }
   },
-  "phase3StartLoveSuccessTest":
-    {
+  "phase3StartLoveSuccessTest": {
     "startMessage": {
       "line1": "\"Nếu bắt đầu yêu ngay bây giờ, liệu có ổn không?\"",
       "line2": "Yêu không chỉ là gặp đúng người. Tâm trạng và hoàn cảnh hiện tại của bạn cũng quyết định. Cùng một người có thể thành hai khởi đầu khác nhau, tùy sự thư thái, cân bằng ngày thường, và việc mối cũ đã khép chưa.",
@@ -11687,8 +11686,7 @@
       "popularTestsTop5": "🔥 5 bài test đang hot"
     }
   },
-  "phase3ChristmasSoloEscapeTest":
-    {
+  "phase3ChristmasSoloEscapeTest": {
     "startMessage": {
       "line1": "\"Còn {count} ngày nữa là Giáng sinh. Mình thoát ế được không?\"",
       "line1Today": "\"Hôm nay là Giáng sinh. Mình thoát ế được không?\"",
@@ -12072,185 +12070,185 @@
     }
   },
   "phase3FaceCharmPointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
-    "startKakao": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
-    "startWechat": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
-    "startWhatsapp": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
-    "startTelegram": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
-    "startLine": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?"
-  },
-  "alerts": {
-    "linkCopied": "Đã sao chép liên kết!",
-    "shareFailed": "Không dùng được chức năng chia sẻ.",
-    "wechatCopy": "Đã sao chép liên kết. Hãy dán vào WeChat để chia sẻ.",
-    "kakaoInit": "Chia sẻ KakaoTalk đang khởi động. Hãy thử lại sau giây lát.",
-    "kakaoError": "Đã có lỗi khi chia sẻ qua KakaoTalk."
-  },
-  "startMessage": {
-    "line1": "Một tấm ảnh. AI thấy điểm hút nào ở tôi?",
-    "line2": "AI đọc nét mặt và khuôn mặt, rồi chọn 1 trong 8 từ khóa điểm hút hợp với bạn nhất. Đây là trò chơi theo ấn tượng, không phải chấm điểm khoa học, và không có từ nào hơn từ nào.",
-    "line3": "Ảnh chỉ được phân tích trên máy của bạn, không lưu và không gửi đi."
-  },
-  "ui": {
-    "startTest": "Bắt đầu",
-    "totalParticipants": "Đã có {count} người chơi",
-    "shareWithFriends": "Làm cùng bạn",
-    "shareResultWithFriends": "Chia sẻ kết quả",
-    "shareResult": "Chia sẻ kết quả",
-    "linkCopy": "Sao chép liên kết",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "Quảng cáo",
-    "popularBadge": "Phổ biến",
-    "similarTests": "🎯 Gợi ý bài test tương tự Top 5",
-    "otherTests": "Làm bài khác",
-    "retake": "Làm lại",
-    "captureTitle": "Hãy cho xem mặt bạn",
-    "guide": "Nhìn thẳng, chỗ sáng, bỏ khẩu trang và mũ, mặt tự nhiên",
-    "guidePrivacy": "(Ảnh không được lưu trên máy chủ, cứ yên tâm)",
-    "privacy": "Ảnh chỉ được phân tích trên máy này. Không lưu, không gửi đi, và bị xóa ngay khi xong.",
-    "takePhoto": "Chụp ảnh",
-    "selectFromGallery": "Chọn từ album",
-    "selectPhotoMethod": "Bạn muốn thêm ảnh thế nào?",
-    "cancel": "Hủy",
-    "proceedingWithPhoto": "Đang đọc ảnh",
-    "selectedPhoto": "Ảnh đã chọn",
-    "analyzing": "Đang tìm điểm hút của bạn…",
-    "testCompleted": "Đã đọc xong",
-    "viewResults": "Xem kết quả",
-    "yourResult": "Điểm hút của bạn",
-    "companion": "Điểm hút cũng hiện ra",
-    "cardTitle": "Lưu thẻ điểm hút",
-    "includePhoto": "Cho ảnh của tôi vào (chỉ ghép trên máy này)",
-    "cardSquare": "Ảnh đại diện 1:1",
-    "cardStory": "Story 9:16",
-    "faceNotDetected": "Không nhận ra khuôn mặt",
-    "faceNotDetectedDescription": "Hãy tải ảnh một người nhìn thẳng vào máy ảnh",
-    "tips": "Mẹo",
-    "tipCenter": "Để mặt ở giữa khung hình",
-    "tipLighting": "Chụp ở nơi đủ sáng",
-    "tipNoObstruction": "Đừng che mặt",
-    "tipClear": "Dùng ảnh rõ",
-    "retrySelectPhoto": "Chọn ảnh khác",
-    "selectPhotoAgain": "Chọn lại",
-    "fail": {
-      "count": "Chỉ một khuôn mặt thôi. Ảnh hai người thì mỗi người phân tích riêng.",
-      "yaw": "Mặt đang quay sang bên. Hãy nhìn thẳng.",
-      "eyes": "Mắt đang nhắm. Hãy mở mắt rồi chụp lại.",
-      "occluded": "Khẩu trang, tóc hoặc tay đang che mặt. Hãy để trán và cằm lộ ra.",
-      "resolution": "Ảnh bị mờ hoặc mặt quá nhỏ. Hãy lại gần và chụp rõ hơn.",
-      "model": "Không bắt đầu phân tích được. Hãy chọn ảnh từ album."
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
+      "startKakao": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
+      "startWechat": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
+      "startWhatsapp": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
+      "startTelegram": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?",
+      "startLine": "Điểm cuốn hút trên mặt tôi. Một tấm là ra. Còn bạn?"
     },
-    "keywords": "Từ khóa điểm hút",
-    "shine": "Lúc điểm này tỏa ra",
-    "love": "Trong chuyện tình",
-    "tip": "Cách làm điểm này rõ hơn",
-    "coupleTitle": "Làm thẻ đôi",
-    "coupleHelp": "Một ảnh có hai mặt thì không đọc được. Mỗi người làm riêng, rồi nhập mã điểm hút (1-8) hoặc link được chia sẻ.",
-    "myCode": "Mã điểm hút của tôi",
-    "couplePlaceholder": "Mã hoặc link của họ",
-    "coupleMake": "Tạo",
-    "coupleInvalid": "Nhập mã từ 1 đến 8, hoặc link được chia sẻ.",
-    "pairLine": "{left} × {right} = {blendLeft} gặp {blendRight}"
-  }
-},
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết. Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Chia sẻ KakaoTalk đang khởi động. Hãy thử lại sau giây lát.",
+      "kakaoError": "Đã có lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "Một tấm ảnh. AI thấy điểm hút nào ở tôi?",
+      "line2": "AI đọc nét mặt và khuôn mặt, rồi chọn 1 trong 8 từ khóa điểm hút hợp với bạn nhất. Đây là trò chơi theo ấn tượng, không phải chấm điểm khoa học, và không có từ nào hơn từ nào.",
+      "line3": "Ảnh chỉ được phân tích trên máy của bạn, không lưu và không gửi đi."
+    },
+    "ui": {
+      "startTest": "Bắt đầu",
+      "totalParticipants": "Đã có {count} người chơi",
+      "shareWithFriends": "Làm cùng bạn",
+      "shareResultWithFriends": "Chia sẻ kết quả",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Quảng cáo",
+      "popularBadge": "Phổ biến",
+      "similarTests": "🎯 Gợi ý bài test tương tự Top 5",
+      "otherTests": "Làm bài khác",
+      "retake": "Làm lại",
+      "captureTitle": "Hãy cho xem mặt bạn",
+      "guide": "Nhìn thẳng, chỗ sáng, bỏ khẩu trang và mũ, mặt tự nhiên",
+      "guidePrivacy": "(Ảnh không được lưu trên máy chủ, cứ yên tâm)",
+      "privacy": "Ảnh chỉ được phân tích trên máy này. Không lưu, không gửi đi, và bị xóa ngay khi xong.",
+      "takePhoto": "Chụp ảnh",
+      "selectFromGallery": "Chọn từ album",
+      "selectPhotoMethod": "Bạn muốn thêm ảnh thế nào?",
+      "cancel": "Hủy",
+      "proceedingWithPhoto": "Đang đọc ảnh",
+      "selectedPhoto": "Ảnh đã chọn",
+      "analyzing": "Đang tìm điểm hút của bạn…",
+      "testCompleted": "Đã đọc xong",
+      "viewResults": "Xem kết quả",
+      "yourResult": "Điểm hút của bạn",
+      "companion": "Điểm hút cũng hiện ra",
+      "cardTitle": "Lưu thẻ điểm hút",
+      "includePhoto": "Cho ảnh của tôi vào (chỉ ghép trên máy này)",
+      "cardSquare": "Ảnh đại diện 1:1",
+      "cardStory": "Story 9:16",
+      "faceNotDetected": "Không nhận ra khuôn mặt",
+      "faceNotDetectedDescription": "Hãy tải ảnh một người nhìn thẳng vào máy ảnh",
+      "tips": "Mẹo",
+      "tipCenter": "Để mặt ở giữa khung hình",
+      "tipLighting": "Chụp ở nơi đủ sáng",
+      "tipNoObstruction": "Đừng che mặt",
+      "tipClear": "Dùng ảnh rõ",
+      "retrySelectPhoto": "Chọn ảnh khác",
+      "selectPhotoAgain": "Chọn lại",
+      "fail": {
+        "count": "Chỉ một khuôn mặt thôi. Ảnh hai người thì mỗi người phân tích riêng.",
+        "yaw": "Mặt đang quay sang bên. Hãy nhìn thẳng.",
+        "eyes": "Mắt đang nhắm. Hãy mở mắt rồi chụp lại.",
+        "occluded": "Khẩu trang, tóc hoặc tay đang che mặt. Hãy để trán và cằm lộ ra.",
+        "resolution": "Ảnh bị mờ hoặc mặt quá nhỏ. Hãy lại gần và chụp rõ hơn.",
+        "model": "Không bắt đầu phân tích được. Hãy chọn ảnh từ album."
+      },
+      "keywords": "Từ khóa điểm hút",
+      "shine": "Lúc điểm này tỏa ra",
+      "love": "Trong chuyện tình",
+      "tip": "Cách làm điểm này rõ hơn",
+      "coupleTitle": "Làm thẻ đôi",
+      "coupleHelp": "Một ảnh có hai mặt thì không đọc được. Mỗi người làm riêng, rồi nhập mã điểm hút (1-8) hoặc link được chia sẻ.",
+      "myCode": "Mã điểm hút của tôi",
+      "couplePlaceholder": "Mã hoặc link của họ",
+      "coupleMake": "Tạo",
+      "coupleInvalid": "Nhập mã từ 1 đến 8, hoặc link được chia sẻ.",
+      "pairLine": "{left} × {right} = {blendLeft} gặp {blendRight}"
+    }
+  },
   "phase3FaceProfilePointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
-    "startKakao": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
-    "startWechat": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
-    "startWhatsapp": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
-    "startTelegram": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
-    "startLine": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?"
-  },
-  "alerts": {
-    "linkCopied": "Đã sao chép liên kết!",
-    "shareFailed": "Không dùng được chức năng chia sẻ.",
-    "wechatCopy": "Đã sao chép liên kết. Hãy dán vào WeChat để chia sẻ.",
-    "kakaoInit": "Chia sẻ KakaoTalk đang khởi động. Hãy thử lại sau giây lát.",
-    "kakaoError": "Đã có lỗi khi chia sẻ qua KakaoTalk."
-  },
-  "startMessage": {
-    "line1": "Ảnh hẹn hò của tôi hợp vibe nào?",
-    "line2": "Một tấm ảnh đọc nét mặt và khuôn mặt, rồi gợi ý 1 trong 8 vibe ảnh hồ sơ. Đây không phải chấm điểm nhan sắc, cũng không bảo bạn phải đổi. Chỉ là ý tưởng vui về nền, màu, quần áo và đạo cụ.",
-    "line3": "Ảnh chỉ được phân tích trên máy của bạn, không lưu và không gửi đi."
-  },
-  "ui": {
-    "startTest": "Bắt đầu",
-    "totalParticipants": "Đã có {count} người chơi",
-    "shareWithFriends": "Làm cùng bạn",
-    "shareResultWithFriends": "Chia sẻ kết quả",
-    "shareResult": "Chia sẻ kết quả",
-    "linkCopy": "Sao chép liên kết",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "Quảng cáo",
-    "popularBadge": "Phổ biến",
-    "similarTests": "🎯 Gợi ý bài test tương tự Top 5",
-    "otherTests": "Làm bài khác",
-    "retake": "Làm lại",
-    "captureTitle": "Hãy cho xem mặt bạn",
-    "guide": "Nhìn thẳng, chỗ sáng, bỏ khẩu trang và mũ, mặt tự nhiên",
-    "guidePrivacy": "(Ảnh không được lưu trên máy chủ, cứ yên tâm)",
-    "privacy": "Ảnh chỉ được phân tích trên máy này. Không lưu, không gửi đi, và bị xóa ngay khi xong.",
-    "takePhoto": "Chụp ảnh",
-    "selectFromGallery": "Chọn từ album",
-    "selectPhotoMethod": "Bạn muốn thêm ảnh thế nào?",
-    "cancel": "Hủy",
-    "proceedingWithPhoto": "Đang đọc ảnh",
-    "selectedPhoto": "Ảnh đã chọn",
-    "analyzing": "Đang chọn vibe hợp với bạn…",
-    "testCompleted": "Đã đọc xong",
-    "viewResults": "Xem kết quả",
-    "yourResult": "Vibe ảnh của bạn",
-    "companion": "Vibe cũng hợp",
-    "cardTitle": "Lưu thẻ hồ sơ",
-    "includePhoto": "Cho ảnh của tôi vào (chỉ ghép trên máy này)",
-    "cardSquare": "Ảnh đại diện 1:1",
-    "cardStory": "Story 9:16",
-    "faceNotDetected": "Không nhận ra khuôn mặt",
-    "faceNotDetectedDescription": "Hãy tải ảnh một người nhìn thẳng vào máy ảnh",
-    "tips": "Mẹo",
-    "tipCenter": "Để mặt ở giữa khung hình",
-    "tipLighting": "Chụp ở nơi đủ sáng",
-    "tipNoObstruction": "Đừng che mặt",
-    "tipClear": "Dùng ảnh rõ",
-    "retrySelectPhoto": "Chọn ảnh khác",
-    "selectPhotoAgain": "Chọn lại",
-    "fail": {
-      "count": "Có nhiều hơn một khuôn mặt. Hãy chụp chỉ một người.",
-      "yaw": "Mặt đang quay sang bên. Hãy nhìn thẳng.",
-      "eyes": "Mắt đang nhắm. Hãy mở mắt rồi chụp lại.",
-      "occluded": "Khẩu trang, tóc hoặc tay đang che mặt. Hãy để trán và cằm lộ ra.",
-      "resolution": "Ảnh bị mờ hoặc mặt quá nhỏ. Hãy lại gần và chụp rõ hơn.",
-      "model": "Không bắt đầu phân tích được. Hãy chọn ảnh từ album."
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
+      "startKakao": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
+      "startWechat": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
+      "startWhatsapp": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
+      "startTelegram": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?",
+      "startLine": "Ảnh hẹn hò của tôi hợp vibe nào? Một tấm là ra. Còn bạn?"
     },
-    "background": "Nền gợi ý",
-    "outfit": "Màu và trang phục",
-    "props": "Đạo cụ gợi ý",
-    "photoTip": "Cách chụp",
-    "talk": "Chuyện để mở lời"
-  }
-},
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết. Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Chia sẻ KakaoTalk đang khởi động. Hãy thử lại sau giây lát.",
+      "kakaoError": "Đã có lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "Ảnh hẹn hò của tôi hợp vibe nào?",
+      "line2": "Một tấm ảnh đọc nét mặt và khuôn mặt, rồi gợi ý 1 trong 8 vibe ảnh hồ sơ. Đây không phải chấm điểm nhan sắc, cũng không bảo bạn phải đổi. Chỉ là ý tưởng vui về nền, màu, quần áo và đạo cụ.",
+      "line3": "Ảnh chỉ được phân tích trên máy của bạn, không lưu và không gửi đi."
+    },
+    "ui": {
+      "startTest": "Bắt đầu",
+      "totalParticipants": "Đã có {count} người chơi",
+      "shareWithFriends": "Làm cùng bạn",
+      "shareResultWithFriends": "Chia sẻ kết quả",
+      "shareResult": "Chia sẻ kết quả",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Quảng cáo",
+      "popularBadge": "Phổ biến",
+      "similarTests": "🎯 Gợi ý bài test tương tự Top 5",
+      "otherTests": "Làm bài khác",
+      "retake": "Làm lại",
+      "captureTitle": "Hãy cho xem mặt bạn",
+      "guide": "Nhìn thẳng, chỗ sáng, bỏ khẩu trang và mũ, mặt tự nhiên",
+      "guidePrivacy": "(Ảnh không được lưu trên máy chủ, cứ yên tâm)",
+      "privacy": "Ảnh chỉ được phân tích trên máy này. Không lưu, không gửi đi, và bị xóa ngay khi xong.",
+      "takePhoto": "Chụp ảnh",
+      "selectFromGallery": "Chọn từ album",
+      "selectPhotoMethod": "Bạn muốn thêm ảnh thế nào?",
+      "cancel": "Hủy",
+      "proceedingWithPhoto": "Đang đọc ảnh",
+      "selectedPhoto": "Ảnh đã chọn",
+      "analyzing": "Đang chọn vibe hợp với bạn…",
+      "testCompleted": "Đã đọc xong",
+      "viewResults": "Xem kết quả",
+      "yourResult": "Vibe ảnh của bạn",
+      "companion": "Vibe cũng hợp",
+      "cardTitle": "Lưu thẻ hồ sơ",
+      "includePhoto": "Cho ảnh của tôi vào (chỉ ghép trên máy này)",
+      "cardSquare": "Ảnh đại diện 1:1",
+      "cardStory": "Story 9:16",
+      "faceNotDetected": "Không nhận ra khuôn mặt",
+      "faceNotDetectedDescription": "Hãy tải ảnh một người nhìn thẳng vào máy ảnh",
+      "tips": "Mẹo",
+      "tipCenter": "Để mặt ở giữa khung hình",
+      "tipLighting": "Chụp ở nơi đủ sáng",
+      "tipNoObstruction": "Đừng che mặt",
+      "tipClear": "Dùng ảnh rõ",
+      "retrySelectPhoto": "Chọn ảnh khác",
+      "selectPhotoAgain": "Chọn lại",
+      "fail": {
+        "count": "Có nhiều hơn một khuôn mặt. Hãy chụp chỉ một người.",
+        "yaw": "Mặt đang quay sang bên. Hãy nhìn thẳng.",
+        "eyes": "Mắt đang nhắm. Hãy mở mắt rồi chụp lại.",
+        "occluded": "Khẩu trang, tóc hoặc tay đang che mặt. Hãy để trán và cằm lộ ra.",
+        "resolution": "Ảnh bị mờ hoặc mặt quá nhỏ. Hãy lại gần và chụp rõ hơn.",
+        "model": "Không bắt đầu phân tích được. Hãy chọn ảnh từ album."
+      },
+      "background": "Nền gợi ý",
+      "outfit": "Màu và trang phục",
+      "props": "Đạo cụ gợi ý",
+      "photoTip": "Cách chụp",
+      "talk": "Chuyện để mở lời"
+    }
+  },
   "phase3FaceAnimalTypeTest": {
     "shareMessages": {
       "default": "{type}",
@@ -12397,7 +12395,7 @@
       "cardStory": "Story 9:16"
     }
   },
-  "phase3FriendDriftReasonTest":   {
+  "phase3FriendDriftReasonTest": {
     "startMessage": {
       "line1": "Bạn bè xa dần là có lý do, dù chẳng ai cãi nhau.",
       "line2": "Có người bạn liên lạc thưa dần mà chưa từng cãi. Thường là thời gian, năng lượng và chỗ trống trong lòng cạn dần, không phải lỗi của ai. Thấy cách mình tạo khoảng cách thì những người muốn giữ vẫn giữ được.",
@@ -12459,7 +12457,7 @@
       "popularTestsTop5": "🔥 Bài test đang hot Top 5"
     }
   },
-  "phase3LoveIqPercentTest":     {
+  "phase3LoveIqPercentTest": {
     "startMessage": {
       "line1": "Yêu chỉ bằng cảm tính thì dễ hỏng. Có cách làm đỡ hỏng hơn.",
       "line2": "Trong 15 tình huống, chọn cách thật sự có ích cho mối quan hệ.",
@@ -15036,7 +15034,7 @@
     "checklist": "Chỉ số MBTI",
     "showAll": "Xem tất cả"
   },
-  "phase3MarriageCohabitBalanceGameTest":           {
+  "phase3MarriageCohabitBalanceGameTest": {
     "startMessage": {
       "line1": "Phòng riêng vs chung giường, ai nắm tiền? Bạn chọn gì?",
       "line2": "Kết hôn hay sống chung không chỉ dựa vào tình yêu—còn giường, tài khoản và việc nhà. Chọn giữa hai phương án đều tiếc sẽ lộ ra điều bạn muốn giữ khi sống cùng nhau.",
@@ -15091,8 +15089,7 @@
       "kakaoInit": "KakaoTalk đang khởi động. Thử lại sau một chút.",
       "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
     }
-  }
-  ,
+  },
   "phase3DatingCostBalanceGameTest": {
     "startMessage": {
       "line1": "Tôi trả hết nhưng họ luôn muộn vs chia tiền nhưng luôn đúng giờ—bạn chọn gì?",
@@ -15272,8 +15269,7 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
-  }
-,
+  },
   "phase3RefusalToneTest": {
     "startMessage": {
       "line1": "'Xin lỗi, hôm nay không được'—cách từ chối cũng có gu riêng.",
@@ -15330,6 +15326,68 @@
       "shareFailed": "Không thể dùng tính năng chia sẻ.",
       "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
+  "phase3CantConfessFirstTest": {
+    "startMessage": {
+      "line1": "\"Tim đầy ắp vậy mà sao lời không ra?\"",
+      "line2": "Lời đã luyện bao lần trong đầu, nhưng đối diện chỉ còn \"Ăn cơm chưa?\". Hôm nay như cơ hội rồi lại thì thầm \"thêm chút nữa\", rồi vài tuần trôi qua. Không phải vì tim bạn nhỏ.",
+      "line3": "Rào cản tỏ tình mỗi người một kiểu—sợ bị từ chối, chờ đúng lúc, cần chắc chắn, sĩ diện, sợ mất quan hệ, hoặc khó diễn đạt. Phản ứng của bạn cho thấy bạn dừng ở đâu. 12 tình huống giúp tìm ra rào cản thật và cách nói trước.",
+      "line4": "",
+      "line5": "Tìm rào cản thật của tôi 💌 Bắt đầu thật lòng",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm rào cản thật của tôi 💌",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "realReason": "Rào cản thật chắn tỏ tình",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "secondBarrier": "Rào cản đi kèm",
+      "blockedMoment": "Khoảnh khắc tỏ tình đóng băng",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Khi gỡ ra lý do thật",
+      "frequentSaying": "Câu thường nói",
+      "changeTips": "Cách để nói trước",
+      "oneLiner": "Một câu tóm lại",
+      "counselingNote": "Gợi ý từ chuyên gia"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao tôi không thể tỏ tình trước? 💌 Tim lớn lời không ra—tìm rào cản thật",
+      "startKakao": "Tại sao tôi không thể tỏ tình trước? 💌 Tim lớn lời không ra—tìm rào cản thật",
+      "startWechat": "Tại sao tôi không thể tỏ tình trước? 💌 Tim lớn lời không ra—tìm rào cản thật",
+      "startWhatsapp": "Tại sao tôi không thể tỏ tình trước? 💌 Tim lớn lời không ra—tìm rào cản thật",
+      "startTelegram": "Tại sao tôi không thể tỏ tình trước? 💌 Tim lớn lời không ra—tìm rào cản thật",
+      "startLine": "Tại sao tôi không thể tỏ tình trước? 💌 Tim lớn lời không ra—tìm rào cản thật"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể dùng chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     },
     "recommendations": {

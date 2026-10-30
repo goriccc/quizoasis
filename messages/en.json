@@ -11634,8 +11634,7 @@
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
   },
-  "phase3StartLoveSuccessTest":
-    {
+  "phase3StartLoveSuccessTest": {
     "startMessage": {
       "line1": "\"If I start dating now, could it actually go well?\"",
       "line2": "Who you meet matters. So does the shape you are in. The same person can turn into a very different start depending on your room to feel, how steady your days are, and whether the last relationship is actually finished.",
@@ -11696,8 +11695,7 @@
       "popularTestsTop5": "🔥 Popular right now"
     }
   },
-  "phase3ChristmasSoloEscapeTest":
-    {
+  "phase3ChristmasSoloEscapeTest": {
     "startMessage": {
       "line1": "\"{count} days until Christmas. Could I meet someone by then?\"",
       "line1Today": "\"It is Christmas. Could I meet someone, even today?\"",
@@ -12081,185 +12079,185 @@
     }
   },
   "phase3FaceCharmPointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "The charm that stands out on my face. One photo. What is yours?",
-    "startKakao": "The charm that stands out on my face. One photo. What is yours?",
-    "startWechat": "The charm that stands out on my face. One photo. What is yours?",
-    "startWhatsapp": "The charm that stands out on my face. One photo. What is yours?",
-    "startTelegram": "The charm that stands out on my face. One photo. What is yours?",
-    "startLine": "The charm that stands out on my face. One photo. What is yours?"
-  },
-  "alerts": {
-    "linkCopied": "Link copied!",
-    "shareFailed": "Sharing is not available.",
-    "wechatCopy": "Link copied. Paste it in WeChat to share.",
-    "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
-    "kakaoError": "Something went wrong while sharing to KakaoTalk."
-  },
-  "startMessage": {
-    "line1": "One photo. What charm does AI find?",
-    "line2": "AI reads your expression and face shape, then picks the charm keyword that fits you best out of 8. It is a playful read of an impression, not a scientific score, and none of the keywords ranks above another.",
-    "line3": "The photo is analyzed only on your device. It is never saved or sent."
-  },
-  "ui": {
-    "startTest": "Start",
-    "totalParticipants": "{count} people have tried this",
-    "shareWithFriends": "Try it with a friend",
-    "shareResultWithFriends": "Share your result",
-    "shareResult": "Share result",
-    "linkCopy": "Copy link",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "Advertisement",
-    "popularBadge": "Popular",
-    "similarTests": "🎯 Similar tests",
-    "otherTests": "More tests",
-    "retake": "Try again",
-    "captureTitle": "Show your face",
-    "guide": "Look straight ahead, in a bright place, with no mask or hat, and a natural expression",
-    "guidePrivacy": "(Your photo is not saved on a server, so you can relax)",
-    "privacy": "The photo is analyzed only on this device. It is not saved or sent anywhere, and it is deleted as soon as the analysis ends.",
-    "takePhoto": "Take a photo",
-    "selectFromGallery": "Choose from album",
-    "selectPhotoMethod": "How do you want to add a photo?",
-    "cancel": "Cancel",
-    "proceedingWithPhoto": "Reading your photo",
-    "selectedPhoto": "Selected photo",
-    "analyzing": "Finding your charm…",
-    "testCompleted": "That is the reading",
-    "viewResults": "See the result",
-    "yourResult": "Your standout charm",
-    "companion": "Another charm that shows",
-    "cardTitle": "Save a charm card",
-    "includePhoto": "Add my photo (composed only on this device)",
-    "cardSquare": "Profile 1:1",
-    "cardStory": "Story 9:16",
-    "faceNotDetected": "We could not detect a face",
-    "faceNotDetectedDescription": "Upload a photo of someone looking straight at the camera",
-    "tips": "Tips",
-    "tipCenter": "Keep your face in the center",
-    "tipLighting": "Use enough light",
-    "tipNoObstruction": "Do not cover your face",
-    "tipClear": "Use a clear photo",
-    "retrySelectPhoto": "Choose another photo",
-    "selectPhotoAgain": "Choose again",
-    "fail": {
-      "count": "Only one face, please. A couple photo needs two separate takes.",
-      "yaw": "Your face is turned to the side. Look straight ahead.",
-      "eyes": "Your eyes look closed. Try again with them open.",
-      "occluded": "A mask, hair, or a hand is covering your face. Keep your forehead and chin visible.",
-      "resolution": "The photo is blurry, or your face is too small. Come closer and take a clearer shot.",
-      "model": "We could not start the analysis. Choose a photo from your album."
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "The charm that stands out on my face. One photo. What is yours?",
+      "startKakao": "The charm that stands out on my face. One photo. What is yours?",
+      "startWechat": "The charm that stands out on my face. One photo. What is yours?",
+      "startWhatsapp": "The charm that stands out on my face. One photo. What is yours?",
+      "startTelegram": "The charm that stands out on my face. One photo. What is yours?",
+      "startLine": "The charm that stands out on my face. One photo. What is yours?"
     },
-    "keywords": "Charm words",
-    "shine": "When it shows",
-    "love": "In a relationship",
-    "tip": "A way to add to it",
-    "coupleTitle": "Make a couple card",
-    "coupleHelp": "Two faces in one photo cannot be read. Each of you runs it separately, then enter their charm code (1-8) or the shared link.",
-    "myCode": "My charm code",
-    "couplePlaceholder": "Their code or link",
-    "coupleMake": "Make",
-    "coupleInvalid": "Enter a code from 1 to 8, or a shared link.",
-    "pairLine": "{left} × {right} = {blendLeft} meets {blendRight}"
-  }
-},
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "One photo. What charm does AI find?",
+      "line2": "AI reads your expression and face shape, then picks the charm keyword that fits you best out of 8. It is a playful read of an impression, not a scientific score, and none of the keywords ranks above another.",
+      "line3": "The photo is analyzed only on your device. It is never saved or sent."
+    },
+    "ui": {
+      "startTest": "Start",
+      "totalParticipants": "{count} people have tried this",
+      "shareWithFriends": "Try it with a friend",
+      "shareResultWithFriends": "Share your result",
+      "shareResult": "Share result",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Advertisement",
+      "popularBadge": "Popular",
+      "similarTests": "🎯 Similar tests",
+      "otherTests": "More tests",
+      "retake": "Try again",
+      "captureTitle": "Show your face",
+      "guide": "Look straight ahead, in a bright place, with no mask or hat, and a natural expression",
+      "guidePrivacy": "(Your photo is not saved on a server, so you can relax)",
+      "privacy": "The photo is analyzed only on this device. It is not saved or sent anywhere, and it is deleted as soon as the analysis ends.",
+      "takePhoto": "Take a photo",
+      "selectFromGallery": "Choose from album",
+      "selectPhotoMethod": "How do you want to add a photo?",
+      "cancel": "Cancel",
+      "proceedingWithPhoto": "Reading your photo",
+      "selectedPhoto": "Selected photo",
+      "analyzing": "Finding your charm…",
+      "testCompleted": "That is the reading",
+      "viewResults": "See the result",
+      "yourResult": "Your standout charm",
+      "companion": "Another charm that shows",
+      "cardTitle": "Save a charm card",
+      "includePhoto": "Add my photo (composed only on this device)",
+      "cardSquare": "Profile 1:1",
+      "cardStory": "Story 9:16",
+      "faceNotDetected": "We could not detect a face",
+      "faceNotDetectedDescription": "Upload a photo of someone looking straight at the camera",
+      "tips": "Tips",
+      "tipCenter": "Keep your face in the center",
+      "tipLighting": "Use enough light",
+      "tipNoObstruction": "Do not cover your face",
+      "tipClear": "Use a clear photo",
+      "retrySelectPhoto": "Choose another photo",
+      "selectPhotoAgain": "Choose again",
+      "fail": {
+        "count": "Only one face, please. A couple photo needs two separate takes.",
+        "yaw": "Your face is turned to the side. Look straight ahead.",
+        "eyes": "Your eyes look closed. Try again with them open.",
+        "occluded": "A mask, hair, or a hand is covering your face. Keep your forehead and chin visible.",
+        "resolution": "The photo is blurry, or your face is too small. Come closer and take a clearer shot.",
+        "model": "We could not start the analysis. Choose a photo from your album."
+      },
+      "keywords": "Charm words",
+      "shine": "When it shows",
+      "love": "In a relationship",
+      "tip": "A way to add to it",
+      "coupleTitle": "Make a couple card",
+      "coupleHelp": "Two faces in one photo cannot be read. Each of you runs it separately, then enter their charm code (1-8) or the shared link.",
+      "myCode": "My charm code",
+      "couplePlaceholder": "Their code or link",
+      "coupleMake": "Make",
+      "coupleInvalid": "Enter a code from 1 to 8, or a shared link.",
+      "pairLine": "{left} × {right} = {blendLeft} meets {blendRight}"
+    }
+  },
   "phase3FaceProfilePointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
-    "startKakao": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
-    "startWechat": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
-    "startWhatsapp": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
-    "startTelegram": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
-    "startLine": "Which vibe fits my dating profile? One photo, one vibe. What is yours?"
-  },
-  "alerts": {
-    "linkCopied": "Link copied!",
-    "shareFailed": "Sharing is not available.",
-    "wechatCopy": "Link copied. Paste it in WeChat to share.",
-    "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
-    "kakaoError": "Something went wrong while sharing to KakaoTalk."
-  },
-  "startMessage": {
-    "line1": "Which vibe fits my dating profile?",
-    "line2": "One photo reads your expression and face shape, then suggests one of 8 profile vibes. It is not a verdict on your looks. It is a playful idea for the background, colors, clothes, and props.",
-    "line3": "The photo is analyzed only on your device. It is never saved or sent."
-  },
-  "ui": {
-    "startTest": "Start",
-    "totalParticipants": "{count} people have tried this",
-    "shareWithFriends": "Try it with a friend",
-    "shareResultWithFriends": "Share your result",
-    "shareResult": "Share result",
-    "linkCopy": "Copy link",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "Advertisement",
-    "popularBadge": "Popular",
-    "similarTests": "🎯 Similar tests",
-    "otherTests": "More tests",
-    "retake": "Try again",
-    "captureTitle": "Show your face",
-    "guide": "Look straight ahead, in a bright place, with no mask or hat, and a natural expression",
-    "guidePrivacy": "(Your photo is not saved on a server, so you can relax)",
-    "privacy": "The photo is analyzed only on this device. It is not saved or sent anywhere, and it is deleted as soon as the analysis ends.",
-    "takePhoto": "Take a photo",
-    "selectFromGallery": "Choose from album",
-    "selectPhotoMethod": "How do you want to add a photo?",
-    "cancel": "Cancel",
-    "proceedingWithPhoto": "Reading your photo",
-    "selectedPhoto": "Selected photo",
-    "analyzing": "Picking a vibe that suits you…",
-    "testCompleted": "That is the reading",
-    "viewResults": "See the result",
-    "yourResult": "Your profile vibe",
-    "companion": "Another vibe that fits",
-    "cardTitle": "Save a profile card",
-    "includePhoto": "Add my photo (composed only on this device)",
-    "cardSquare": "Profile 1:1",
-    "cardStory": "Story 9:16",
-    "faceNotDetected": "We could not detect a face",
-    "faceNotDetectedDescription": "Upload a photo of someone looking straight at the camera",
-    "tips": "Tips",
-    "tipCenter": "Keep your face in the center",
-    "tipLighting": "Use enough light",
-    "tipNoObstruction": "Do not cover your face",
-    "tipClear": "Use a clear photo",
-    "retrySelectPhoto": "Choose another photo",
-    "selectPhotoAgain": "Choose again",
-    "fail": {
-      "count": "There is more than one face. Please take it with only you in the frame.",
-      "yaw": "Your face is turned to the side. Look straight ahead.",
-      "eyes": "Your eyes look closed. Try again with them open.",
-      "occluded": "A mask, hair, or a hand is covering your face. Keep your forehead and chin visible.",
-      "resolution": "The photo is blurry, or your face is too small. Come closer and take a clearer shot.",
-      "model": "We could not start the analysis. Choose a photo from your album."
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
+      "startKakao": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
+      "startWechat": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
+      "startWhatsapp": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
+      "startTelegram": "Which vibe fits my dating profile? One photo, one vibe. What is yours?",
+      "startLine": "Which vibe fits my dating profile? One photo, one vibe. What is yours?"
     },
-    "background": "Suggested background",
-    "outfit": "Colors and clothes",
-    "props": "Props to try",
-    "photoTip": "How to shoot it",
-    "talk": "Something to talk about"
-  }
-},
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied. Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "Which vibe fits my dating profile?",
+      "line2": "One photo reads your expression and face shape, then suggests one of 8 profile vibes. It is not a verdict on your looks. It is a playful idea for the background, colors, clothes, and props.",
+      "line3": "The photo is analyzed only on your device. It is never saved or sent."
+    },
+    "ui": {
+      "startTest": "Start",
+      "totalParticipants": "{count} people have tried this",
+      "shareWithFriends": "Try it with a friend",
+      "shareResultWithFriends": "Share your result",
+      "shareResult": "Share result",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Advertisement",
+      "popularBadge": "Popular",
+      "similarTests": "🎯 Similar tests",
+      "otherTests": "More tests",
+      "retake": "Try again",
+      "captureTitle": "Show your face",
+      "guide": "Look straight ahead, in a bright place, with no mask or hat, and a natural expression",
+      "guidePrivacy": "(Your photo is not saved on a server, so you can relax)",
+      "privacy": "The photo is analyzed only on this device. It is not saved or sent anywhere, and it is deleted as soon as the analysis ends.",
+      "takePhoto": "Take a photo",
+      "selectFromGallery": "Choose from album",
+      "selectPhotoMethod": "How do you want to add a photo?",
+      "cancel": "Cancel",
+      "proceedingWithPhoto": "Reading your photo",
+      "selectedPhoto": "Selected photo",
+      "analyzing": "Picking a vibe that suits you…",
+      "testCompleted": "That is the reading",
+      "viewResults": "See the result",
+      "yourResult": "Your profile vibe",
+      "companion": "Another vibe that fits",
+      "cardTitle": "Save a profile card",
+      "includePhoto": "Add my photo (composed only on this device)",
+      "cardSquare": "Profile 1:1",
+      "cardStory": "Story 9:16",
+      "faceNotDetected": "We could not detect a face",
+      "faceNotDetectedDescription": "Upload a photo of someone looking straight at the camera",
+      "tips": "Tips",
+      "tipCenter": "Keep your face in the center",
+      "tipLighting": "Use enough light",
+      "tipNoObstruction": "Do not cover your face",
+      "tipClear": "Use a clear photo",
+      "retrySelectPhoto": "Choose another photo",
+      "selectPhotoAgain": "Choose again",
+      "fail": {
+        "count": "There is more than one face. Please take it with only you in the frame.",
+        "yaw": "Your face is turned to the side. Look straight ahead.",
+        "eyes": "Your eyes look closed. Try again with them open.",
+        "occluded": "A mask, hair, or a hand is covering your face. Keep your forehead and chin visible.",
+        "resolution": "The photo is blurry, or your face is too small. Come closer and take a clearer shot.",
+        "model": "We could not start the analysis. Choose a photo from your album."
+      },
+      "background": "Suggested background",
+      "outfit": "Colors and clothes",
+      "props": "Props to try",
+      "photoTip": "How to shoot it",
+      "talk": "Something to talk about"
+    }
+  },
   "phase3FaceAnimalTypeTest": {
     "shareMessages": {
       "default": "{type}",
@@ -12406,7 +12404,7 @@
       "cardStory": "Story 9:16"
     }
   },
-  "phase3FriendDriftReasonTest":   {
+  "phase3FriendDriftReasonTest": {
     "startMessage": {
       "line1": "Friends drift for a reason, even when nobody fought.",
       "line2": "There's a friend you've gone quiet with, and there was no fight. Often it's time, energy, and a full head, not anyone's fault. If you see how you create distance, you can keep the people you still want close.",
@@ -12468,7 +12466,7 @@
       "popularTestsTop5": "🔥 Popular right now"
     }
   },
-  "phase3LoveIqPercentTest":     {
+  "phase3LoveIqPercentTest": {
     "startMessage": {
       "line1": "Dating on instinct alone is risky. There is a better move.",
       "line2": "In 15 situations, pick the choice that actually helps the relationship.",
@@ -15045,7 +15043,7 @@
     "checklist": "MBTI Index",
     "showAll": "Show all tests"
   },
-  "phase3MarriageCohabitBalanceGameTest":           {
+  "phase3MarriageCohabitBalanceGameTest": {
     "startMessage": {
       "line1": "Separate rooms vs one bed—who holds the money? What would you pick?",
       "line2": "Marriage and living together don’t run on love alone. They’re built on beds, bank accounts, and chores. Choosing between two imperfect options shows what you want to protect when you share a life.",
@@ -15100,8 +15098,7 @@
       "kakaoInit": "KakaoTalk sharing is still starting. Try again in a moment.",
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
-  }
-  ,
+  },
   "phase3DatingCostBalanceGameTest": {
     "startMessage": {
       "line1": "I always pay but they're late every time vs we split and they're always on time—what would you pick?",
@@ -15281,8 +15278,7 @@
       "similarTestsTop5": "🎯 Top 5 Similar Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
-  }
-,
+  },
   "phase3RefusalToneTest": {
     "startMessage": {
       "line1": "'Sorry, I can't today'—even a no has a vibe.",
@@ -15332,6 +15328,68 @@
       "startWhatsapp": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?",
       "startTelegram": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?",
       "startLine": "How You Say No 💬 'Sorry, I can't today'—how do YOU refuse?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
+  },
+  "phase3CantConfessFirstTest": {
+    "startMessage": {
+      "line1": "\"My feelings are this big—so why won't the words come out?\"",
+      "line2": "You've rehearsed it a hundred times, but face-to-face only \"Did you eat?\" comes out. Today feels like the chance—then you whisper \"just a bit more,\" and weeks slip by. It's not that your heart is small.",
+      "line3": "What blocks a confession is different for everyone—fear of rejection, waiting for timing, needing certainty, pride, fear of losing what you have, or simply not knowing how to say it. Your reactions show where you freeze. Twelve situations reveal your real barrier—and how to speak first.",
+      "line4": "",
+      "line5": "Find my real barrier 💌 Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find my real barrier 💌",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "realReason": "The real barrier blocking your confession",
+      "keywords": "Key words",
+      "scoreTitle": "Score by type",
+      "scoreUnit": "pt",
+      "secondBarrier": "Your other barrier",
+      "blockedMoment": "When the confession freezes",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "Unpacking the real reason",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to speak first",
+      "oneLiner": "In one line",
+      "counselingNote": "A note from counseling"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Can't I Confess First? 💌 Huge feelings, stuck words—find your real barrier",
+      "startKakao": "Why Can't I Confess First? 💌 Huge feelings, stuck words—find your real barrier",
+      "startWechat": "Why Can't I Confess First? 💌 Huge feelings, stuck words—find your real barrier",
+      "startWhatsapp": "Why Can't I Confess First? 💌 Huge feelings, stuck words—find your real barrier",
+      "startTelegram": "Why Can't I Confess First? 💌 Huge feelings, stuck words—find your real barrier",
+      "startLine": "Why Can't I Confess First? 💌 Huge feelings, stuck words—find your real barrier"
     },
     "alerts": {
       "linkCopied": "Link copied!",

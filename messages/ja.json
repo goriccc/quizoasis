@@ -11613,8 +11613,7 @@
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
   },
-  "phase3StartLoveSuccessTest":
-    {
+  "phase3StartLoveSuccessTest": {
     "startMessage": {
       "line1": "「今、恋愛を始めたら、うまくいくかな」",
       "line2": "恋愛は、いい人に出会うことと同じくらい、今の自分の心と環境も大事です。心の余裕、日常のバランス、前の恋をどこまで整理できているかで、同じ相手でも始まり方は変わります。",
@@ -11675,8 +11674,7 @@
       "popularTestsTop5": "🔥 今人気のテスト トップ5"
     }
   },
-  "phase3ChristmasSoloEscapeTest":
-    {
+  "phase3ChristmasSoloEscapeTest": {
     "startMessage": {
       "line1": "「クリスマスまであと{count}日。恋人、できるかな」",
       "line1Today": "「今日はクリスマス。恋人、できるかな」",
@@ -12060,185 +12058,185 @@
     }
   },
   "phase3FaceCharmPointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
-    "startKakao": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
-    "startWechat": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
-    "startWhatsapp": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
-    "startTelegram": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
-    "startLine": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？"
-  },
-  "alerts": {
-    "linkCopied": "リンクをコピーしました！",
-    "shareFailed": "共有機能を使えません。",
-    "wechatCopy": "リンクをコピーしました。WeChatに貼って共有してください。",
-    "kakaoInit": "KakaoTalkの共有を準備しています。少し待ってからもう一度試してください。",
-    "kakaoError": "KakaoTalk共有中にエラーが起きました。"
-  },
-  "startMessage": {
-    "line1": "写真一枚で、AIが見つけた私の魅力は？",
-    "line2": "AIが表情と顔のバランスを読んで、あなたをいちばんよく表す魅力を8つから選びます。科学的な評価ではなく、印象を楽しむ遊びです。どのキーワードにも順位はありません。",
-    "line3": "写真は自分の端末の中だけで分析し、保存も送信もしません。"
-  },
-  "ui": {
-    "startTest": "はじめる",
-    "totalParticipants": "これまでに{count}人が参加",
-    "shareWithFriends": "友だちとやってみる",
-    "shareResultWithFriends": "結果を共有する",
-    "shareResult": "結果を共有する",
-    "linkCopy": "リンクをコピー",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "広告",
-    "popularBadge": "人気",
-    "similarTests": "🎯 似ているテスト トップ5",
-    "otherTests": "ほかのテスト",
-    "retake": "もう一度",
-    "captureTitle": "顔を見せてください",
-    "guide": "正面を向いて、明るいところで、マスクと帽子は外して、自然な表情で",
-    "guidePrivacy": "（写真はサーバーに保存されないので、安心してください）",
-    "privacy": "写真はこの端末の中だけで分析され、保存も送信もされません。分析が終わるとすぐに消えます。",
-    "takePhoto": "撮影する",
-    "selectFromGallery": "アルバムから選ぶ",
-    "selectPhotoMethod": "写真はどうしますか？",
-    "cancel": "キャンセル",
-    "proceedingWithPhoto": "写真を読んでいるところ",
-    "selectedPhoto": "選んだ写真",
-    "analyzing": "魅力を探しています…",
-    "testCompleted": "分析が終わりました",
-    "viewResults": "結果を見る",
-    "yourResult": "あなたの魅力",
-    "companion": "一緒に見える魅力",
-    "cardTitle": "魅力カードを保存",
-    "includePhoto": "自分の写真を入れる（この端末の中だけで合成）",
-    "cardSquare": "プロフィール 1:1",
-    "cardStory": "ストーリー 9:16",
-    "faceNotDetected": "顔を検出できませんでした",
-    "faceNotDetectedDescription": "正面を向いた人の顔写真をアップロードしてください",
-    "tips": "ヒント",
-    "tipCenter": "顔が画面の中央に来るように撮る",
-    "tipLighting": "明るいところで撮る",
-    "tipNoObstruction": "顔が隠れないようにする",
-    "tipClear": "はっきりした写真を使う",
-    "retrySelectPhoto": "もう一度写真を選ぶ",
-    "selectPhotoAgain": "もう一度選ぶ",
-    "fail": {
-      "count": "顔は一人だけになるように撮り直してください。二人の写真は、それぞれ別に分析します。",
-      "yaw": "顔が横を向いています。正面を向いてください。",
-      "eyes": "目を閉じています。目を開けて撮ってください。",
-      "occluded": "マスクや髪、手で顔が隠れています。おでことあごが見えるように撮ってください。",
-      "resolution": "写真がぼやけているか、顔が小さすぎます。近づいて、はっきり撮ってください。",
-      "model": "分析を始められません。アルバムから写真を選んでください。"
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
+      "startKakao": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
+      "startWechat": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
+      "startWhatsapp": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
+      "startTelegram": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？",
+      "startLine": "顔から見える私の魅力。写真一枚でわかるよ。あなたは？"
     },
-    "keywords": "魅力の言葉",
-    "shine": "この魅力が光るとき",
-    "love": "恋愛では",
-    "tip": "魅力を足すヒント",
-    "coupleTitle": "カップルカードを作る",
-    "coupleHelp": "一枚に二人いる写真は分析できません。それぞれ分析したあと、相手の魅力コード（1〜8）か共有リンクを入れてください。",
-    "myCode": "私の魅力コード",
-    "couplePlaceholder": "相手のコードかリンク",
-    "coupleMake": "作る",
-    "coupleInvalid": "1から8のコードか、共有リンクを入れてください。",
-    "pairLine": "{left} × {right}＝{blendLeft}と{blendRight}が出会う組み合わせ"
-  }
-},
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "shareFailed": "共有機能を使えません。",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼って共有してください。",
+      "kakaoInit": "KakaoTalkの共有を準備しています。少し待ってからもう一度試してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが起きました。"
+    },
+    "startMessage": {
+      "line1": "写真一枚で、AIが見つけた私の魅力は？",
+      "line2": "AIが表情と顔のバランスを読んで、あなたをいちばんよく表す魅力を8つから選びます。科学的な評価ではなく、印象を楽しむ遊びです。どのキーワードにも順位はありません。",
+      "line3": "写真は自分の端末の中だけで分析し、保存も送信もしません。"
+    },
+    "ui": {
+      "startTest": "はじめる",
+      "totalParticipants": "これまでに{count}人が参加",
+      "shareWithFriends": "友だちとやってみる",
+      "shareResultWithFriends": "結果を共有する",
+      "shareResult": "結果を共有する",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "広告",
+      "popularBadge": "人気",
+      "similarTests": "🎯 似ているテスト トップ5",
+      "otherTests": "ほかのテスト",
+      "retake": "もう一度",
+      "captureTitle": "顔を見せてください",
+      "guide": "正面を向いて、明るいところで、マスクと帽子は外して、自然な表情で",
+      "guidePrivacy": "（写真はサーバーに保存されないので、安心してください）",
+      "privacy": "写真はこの端末の中だけで分析され、保存も送信もされません。分析が終わるとすぐに消えます。",
+      "takePhoto": "撮影する",
+      "selectFromGallery": "アルバムから選ぶ",
+      "selectPhotoMethod": "写真はどうしますか？",
+      "cancel": "キャンセル",
+      "proceedingWithPhoto": "写真を読んでいるところ",
+      "selectedPhoto": "選んだ写真",
+      "analyzing": "魅力を探しています…",
+      "testCompleted": "分析が終わりました",
+      "viewResults": "結果を見る",
+      "yourResult": "あなたの魅力",
+      "companion": "一緒に見える魅力",
+      "cardTitle": "魅力カードを保存",
+      "includePhoto": "自分の写真を入れる（この端末の中だけで合成）",
+      "cardSquare": "プロフィール 1:1",
+      "cardStory": "ストーリー 9:16",
+      "faceNotDetected": "顔を検出できませんでした",
+      "faceNotDetectedDescription": "正面を向いた人の顔写真をアップロードしてください",
+      "tips": "ヒント",
+      "tipCenter": "顔が画面の中央に来るように撮る",
+      "tipLighting": "明るいところで撮る",
+      "tipNoObstruction": "顔が隠れないようにする",
+      "tipClear": "はっきりした写真を使う",
+      "retrySelectPhoto": "もう一度写真を選ぶ",
+      "selectPhotoAgain": "もう一度選ぶ",
+      "fail": {
+        "count": "顔は一人だけになるように撮り直してください。二人の写真は、それぞれ別に分析します。",
+        "yaw": "顔が横を向いています。正面を向いてください。",
+        "eyes": "目を閉じています。目を開けて撮ってください。",
+        "occluded": "マスクや髪、手で顔が隠れています。おでことあごが見えるように撮ってください。",
+        "resolution": "写真がぼやけているか、顔が小さすぎます。近づいて、はっきり撮ってください。",
+        "model": "分析を始められません。アルバムから写真を選んでください。"
+      },
+      "keywords": "魅力の言葉",
+      "shine": "この魅力が光るとき",
+      "love": "恋愛では",
+      "tip": "魅力を足すヒント",
+      "coupleTitle": "カップルカードを作る",
+      "coupleHelp": "一枚に二人いる写真は分析できません。それぞれ分析したあと、相手の魅力コード（1〜8）か共有リンクを入れてください。",
+      "myCode": "私の魅力コード",
+      "couplePlaceholder": "相手のコードかリンク",
+      "coupleMake": "作る",
+      "coupleInvalid": "1から8のコードか、共有リンクを入れてください。",
+      "pairLine": "{left} × {right}＝{blendLeft}と{blendRight}が出会う組み合わせ"
+    }
+  },
   "phase3FaceProfilePointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
-    "startKakao": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
-    "startWechat": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
-    "startWhatsapp": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
-    "startTelegram": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
-    "startLine": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？"
-  },
-  "alerts": {
-    "linkCopied": "リンクをコピーしました！",
-    "shareFailed": "共有機能を使えません。",
-    "wechatCopy": "リンクをコピーしました。WeChatに貼って共有してください。",
-    "kakaoInit": "KakaoTalkの共有を準備しています。少し待ってからもう一度試してください。",
-    "kakaoError": "KakaoTalk共有中にエラーが起きました。"
-  },
-  "startMessage": {
-    "line1": "私のマッチング写真、似合う雰囲気は？",
-    "line2": "写真1枚から表情と顔のバランスを読んで、プロフィール写真の雰囲気を8つから提案します。見た目を点数で決めるものではなく、背景・色・服装・小物のアイデアを遊ぶためのものです。",
-    "line3": "写真は自分の端末の中だけで分析し、保存も送信もしません。"
-  },
-  "ui": {
-    "startTest": "はじめる",
-    "totalParticipants": "これまでに{count}人が参加",
-    "shareWithFriends": "友だちとやってみる",
-    "shareResultWithFriends": "結果を共有する",
-    "shareResult": "結果を共有する",
-    "linkCopy": "リンクをコピー",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "広告",
-    "popularBadge": "人気",
-    "similarTests": "🎯 似ているテスト トップ5",
-    "otherTests": "ほかのテスト",
-    "retake": "もう一度",
-    "captureTitle": "顔を見せてください",
-    "guide": "正面を向いて、明るいところで、マスクと帽子は外して、自然な表情で",
-    "guidePrivacy": "（写真はサーバーに保存されないので、安心してください）",
-    "privacy": "写真はこの端末の中だけで分析され、保存も送信もされません。分析が終わるとすぐに消えます。",
-    "takePhoto": "撮影する",
-    "selectFromGallery": "アルバムから選ぶ",
-    "selectPhotoMethod": "写真はどうしますか？",
-    "cancel": "キャンセル",
-    "proceedingWithPhoto": "写真を読んでいるところ",
-    "selectedPhoto": "選んだ写真",
-    "analyzing": "似合う雰囲気を選んでいます…",
-    "testCompleted": "分析が終わりました",
-    "viewResults": "結果を見る",
-    "yourResult": "あなたのプロフィールの雰囲気",
-    "companion": "一緒に似合う雰囲気",
-    "cardTitle": "プロフィールカードを保存",
-    "includePhoto": "自分の写真を入れる（この端末の中だけで合成）",
-    "cardSquare": "プロフィール 1:1",
-    "cardStory": "ストーリー 9:16",
-    "faceNotDetected": "顔を検出できませんでした",
-    "faceNotDetectedDescription": "正面を向いた人の顔写真をアップロードしてください",
-    "tips": "ヒント",
-    "tipCenter": "顔が画面の中央に来るように撮る",
-    "tipLighting": "明るいところで撮る",
-    "tipNoObstruction": "顔が隠れないようにする",
-    "tipClear": "はっきりした写真を使う",
-    "retrySelectPhoto": "もう一度写真を選ぶ",
-    "selectPhotoAgain": "もう一度選ぶ",
-    "fail": {
-      "count": "顔が複数あります。一人だけが写るように撮ってください。",
-      "yaw": "顔が横を向いています。正面を向いてください。",
-      "eyes": "目を閉じています。目を開けて撮ってください。",
-      "occluded": "マスクや髪、手で顔が隠れています。おでことあごが見えるように撮ってください。",
-      "resolution": "写真がぼやけているか、顔が小さすぎます。近づいて、はっきり撮ってください。",
-      "model": "分析を始められません。アルバムから写真を選んでください。"
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
+      "startKakao": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
+      "startWechat": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
+      "startWhatsapp": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
+      "startTelegram": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？",
+      "startLine": "マッチング写真、似合う雰囲気は？ 写真一枚でわかるよ。あなたは？"
     },
-    "background": "おすすめの背景",
-    "outfit": "おすすめの色と服装",
-    "props": "おすすめの小物",
-    "photoTip": "写真のポイント",
-    "talk": "会話のきっかけ"
-  }
-},
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "shareFailed": "共有機能を使えません。",
+      "wechatCopy": "リンクをコピーしました。WeChatに貼って共有してください。",
+      "kakaoInit": "KakaoTalkの共有を準備しています。少し待ってからもう一度試してください。",
+      "kakaoError": "KakaoTalk共有中にエラーが起きました。"
+    },
+    "startMessage": {
+      "line1": "私のマッチング写真、似合う雰囲気は？",
+      "line2": "写真1枚から表情と顔のバランスを読んで、プロフィール写真の雰囲気を8つから提案します。見た目を点数で決めるものではなく、背景・色・服装・小物のアイデアを遊ぶためのものです。",
+      "line3": "写真は自分の端末の中だけで分析し、保存も送信もしません。"
+    },
+    "ui": {
+      "startTest": "はじめる",
+      "totalParticipants": "これまでに{count}人が参加",
+      "shareWithFriends": "友だちとやってみる",
+      "shareResultWithFriends": "結果を共有する",
+      "shareResult": "結果を共有する",
+      "linkCopy": "リンクをコピー",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "広告",
+      "popularBadge": "人気",
+      "similarTests": "🎯 似ているテスト トップ5",
+      "otherTests": "ほかのテスト",
+      "retake": "もう一度",
+      "captureTitle": "顔を見せてください",
+      "guide": "正面を向いて、明るいところで、マスクと帽子は外して、自然な表情で",
+      "guidePrivacy": "（写真はサーバーに保存されないので、安心してください）",
+      "privacy": "写真はこの端末の中だけで分析され、保存も送信もされません。分析が終わるとすぐに消えます。",
+      "takePhoto": "撮影する",
+      "selectFromGallery": "アルバムから選ぶ",
+      "selectPhotoMethod": "写真はどうしますか？",
+      "cancel": "キャンセル",
+      "proceedingWithPhoto": "写真を読んでいるところ",
+      "selectedPhoto": "選んだ写真",
+      "analyzing": "似合う雰囲気を選んでいます…",
+      "testCompleted": "分析が終わりました",
+      "viewResults": "結果を見る",
+      "yourResult": "あなたのプロフィールの雰囲気",
+      "companion": "一緒に似合う雰囲気",
+      "cardTitle": "プロフィールカードを保存",
+      "includePhoto": "自分の写真を入れる（この端末の中だけで合成）",
+      "cardSquare": "プロフィール 1:1",
+      "cardStory": "ストーリー 9:16",
+      "faceNotDetected": "顔を検出できませんでした",
+      "faceNotDetectedDescription": "正面を向いた人の顔写真をアップロードしてください",
+      "tips": "ヒント",
+      "tipCenter": "顔が画面の中央に来るように撮る",
+      "tipLighting": "明るいところで撮る",
+      "tipNoObstruction": "顔が隠れないようにする",
+      "tipClear": "はっきりした写真を使う",
+      "retrySelectPhoto": "もう一度写真を選ぶ",
+      "selectPhotoAgain": "もう一度選ぶ",
+      "fail": {
+        "count": "顔が複数あります。一人だけが写るように撮ってください。",
+        "yaw": "顔が横を向いています。正面を向いてください。",
+        "eyes": "目を閉じています。目を開けて撮ってください。",
+        "occluded": "マスクや髪、手で顔が隠れています。おでことあごが見えるように撮ってください。",
+        "resolution": "写真がぼやけているか、顔が小さすぎます。近づいて、はっきり撮ってください。",
+        "model": "分析を始められません。アルバムから写真を選んでください。"
+      },
+      "background": "おすすめの背景",
+      "outfit": "おすすめの色と服装",
+      "props": "おすすめの小物",
+      "photoTip": "写真のポイント",
+      "talk": "会話のきっかけ"
+    }
+  },
   "phase3FaceAnimalTypeTest": {
     "shareMessages": {
       "default": "{type}",
@@ -12385,7 +12383,7 @@
       "cardStory": "ストーリー 9:16"
     }
   },
-  "phase3FriendDriftReasonTest":   {
+  "phase3FriendDriftReasonTest": {
     "startMessage": {
       "line1": "自然に疎遠になる友達には、理由があります。",
       "line2": "けんかしたわけでもないのに、いつの間にか連絡が減った友達がいます。誰かのせいというより、時間と気力と心の余裕が積もった結果であることが多いです。自分がどんなふうに距離を作るのか分かると、残したい縁は守れます。",
@@ -12447,7 +12445,7 @@
       "popularTestsTop5": "🔥 いま人気のテスト トップ5"
     }
   },
-  "phase3LoveIqPercentTest":     {
+  "phase3LoveIqPercentTest": {
     "startMessage": {
       "line1": "恋愛をセンスだけでやると危ない。ちゃんといい選び方があります。",
       "line2": "15の場面で、関係の役に立つほうを選んでください。",
@@ -15024,7 +15022,7 @@
     "checklist": "MBTI指数",
     "showAll": "すべて表示"
   },
-  "phase3MarriageCohabitBalanceGameTest":           {
+  "phase3MarriageCohabitBalanceGameTest": {
     "startMessage": {
       "line1": "別室 vs 同室、家計は誰が？君ならどっち？",
       "line2": "結婚や同棲は愛だけでは回りません。ベッド・口座・家事という現実の上で動きます。どちらも惜しい二択を選ぶうちに、一緒に暮らすうえで守りたいものが見えてきます。",
@@ -15079,8 +15077,7 @@
       "kakaoInit": "カカオトーク共有を準備中です。少ししてからもう一度どうぞ。",
       "kakaoError": "カカオトーク共有でエラーが起きました。"
     }
-  }
-  ,
+  },
   "phase3DatingCostBalanceGameTest": {
     "startMessage": {
       "line1": "全部出す代わりに毎回遅刻 vs 割り勘だがいつも時間どおり——どっちを選ぶ？",
@@ -15260,8 +15257,7 @@
       "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
-  }
-,
+  },
   "phase3RefusalToneTest": {
     "startMessage": {
       "line1": "「ごめん、今日は無理」——断り方にもクセがあります。",
@@ -15322,6 +15318,68 @@
     },
     "recommendations": {
       "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
+  },
+  "phase3CantConfessFirstTest": {
+    "startMessage": {
+      "line1": "「好きな気持ちはこんなに大きいのに、なぜ口から出てこないの？」",
+      "line2": "練習した言葉は頭いっぱいなのに、顔を見ると「ご飯食べた？」しか出ません。今日がチャンスかと思っても「もう少し」と呟き、そうして何週間も過ぎます。気持ちが小さいわけではありません。",
+      "line3": "告白を阻む壁は人それぞれです。拒絶が怖い、タイミングを待つ、確信が欲しい、プライド、関係を失う不安、表現の仕方——反応を見ると、自分がどこで止まっているかがわかります。12の場面で本当の壁と、先に言えるようになるヒントをお伝えします。",
+      "line4": "",
+      "line5": "本当の壁を見つける 💌 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "本当の壁を見つける 💌",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "realReason": "告白を阻む本当の壁",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "secondBarrier": "一緒にある壁",
+      "blockedMoment": "告白が止まる瞬間",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "本当の理由をほどくと",
+      "frequentSaying": "よく言う言葉",
+      "changeTips": "先に言えるようになる法",
+      "oneLiner": "一言まとめ",
+      "counselingNote": "専門家からのご案内"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "なぜ先に告白できないの？💌 気持ちは大きいのに言葉が出ない——本当の壁を探そう",
+      "startKakao": "なぜ先に告白できないの？💌 気持ちは大きいのに言葉が出ない——本当の壁を探そう",
+      "startWechat": "なぜ先に告白できないの？💌 気持ちは大きいのに言葉が出ない——本当の壁を探そう",
+      "startWhatsapp": "なぜ先に告白できないの？💌 気持ちは大きいのに言葉が出ない——本当の壁を探そう",
+      "startTelegram": "なぜ先に告白できないの？💌 気持ちは大きいのに言葉が出ない——本当の壁を探そう",
+      "startLine": "なぜ先に告白できないの？💌 気持ちは大きいのに言葉が出ない——本当の壁を探そう"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
   }

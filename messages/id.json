@@ -11625,8 +11625,7 @@
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
   },
-  "phase3StartLoveSuccessTest":
-    {
+  "phase3StartLoveSuccessTest": {
     "startMessage": {
       "line1": "\"Kalau aku mulai pacaran sekarang, bisa lancar?\"",
       "line2": "Pacaran bukan cuma soal bertemu orang yang tepat. Keadaan hati dan hari-harimu sekarang sama pentingnya. Orang yang sama bisa jadi awal yang berbeda, tergantung kelonggaran hati, keseimbangan harian, dan apakah hubungan yang lalu sudah benar-benar selesai.",
@@ -11687,8 +11686,7 @@
       "popularTestsTop5": "🔥 5 tes yang lagi populer"
     }
   },
-  "phase3ChristmasSoloEscapeTest":
-    {
+  "phase3ChristmasSoloEscapeTest": {
     "startMessage": {
       "line1": "\"{count} hari lagi Natal. Aku bisa lepas jomblo?\"",
       "line1Today": "\"Hari ini Natal. Aku bisa lepas jomblo?\"",
@@ -12072,185 +12070,185 @@
     }
   },
   "phase3FaceCharmPointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
-    "startKakao": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
-    "startWechat": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
-    "startWhatsapp": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
-    "startTelegram": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
-    "startLine": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?"
-  },
-  "alerts": {
-    "linkCopied": "Tautan disalin!",
-    "shareFailed": "Fitur berbagi tidak bisa dipakai.",
-    "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
-    "kakaoInit": "Berbagi KakaoTalk masih disiapkan. Coba lagi sebentar lagi.",
-    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
-  },
-  "startMessage": {
-    "line1": "Satu foto. Daya tarik apa yang AI temukan?",
-    "line2": "AI membaca ekspresi dan bentuk wajah, lalu memilih 1 dari 8 kata daya tarik yang paling menggambarkanmu. Ini permainan dari kesan, bukan nilai ilmiah, dan tidak ada yang lebih unggul.",
-    "line3": "Foto hanya dianalisis di perangkatmu, tidak disimpan dan tidak dikirim."
-  },
-  "ui": {
-    "startTest": "Mulai",
-    "totalParticipants": "{count} orang sudah mencoba",
-    "shareWithFriends": "Coba bareng teman",
-    "shareResultWithFriends": "Bagikan hasil",
-    "shareResult": "Bagikan hasil",
-    "linkCopy": "Salin tautan",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "Iklan",
-    "popularBadge": "Populer",
-    "similarTests": "🎯 Rekomendasi tes serupa Top 5",
-    "otherTests": "Tes lain",
-    "retake": "Coba lagi",
-    "captureTitle": "Tunjukkan wajahmu",
-    "guide": "Lihat lurus ke depan, di tempat terang, lepas masker dan topi, ekspresi santai",
-    "guidePrivacy": "(Fotonya tidak disimpan di server, jadi tenang saja)",
-    "privacy": "Foto hanya dianalisis di perangkat ini. Tidak disimpan, tidak dikirim, dan langsung dihapus setelah selesai.",
-    "takePhoto": "Ambil foto",
-    "selectFromGallery": "Pilih dari album",
-    "selectPhotoMethod": "Mau tambah fotonya bagaimana?",
-    "cancel": "Batal",
-    "proceedingWithPhoto": "Lagi membaca fotonya",
-    "selectedPhoto": "Foto yang dipilih",
-    "analyzing": "Sedang mencari daya tarikmu…",
-    "testCompleted": "Analisisnya selesai",
-    "viewResults": "Lihat hasil",
-    "yourResult": "Daya tarikmu",
-    "companion": "Daya tarik lain yang ikut terasa",
-    "cardTitle": "Simpan kartu daya tarik",
-    "includePhoto": "Masukkan fotoku (hanya digabung di perangkat ini)",
-    "cardSquare": "Profil 1:1",
-    "cardStory": "Story 9:16",
-    "faceNotDetected": "Wajah tidak terdeteksi",
-    "faceNotDetectedDescription": "Unggah foto orang yang melihat lurus ke kamera",
-    "tips": "Tips",
-    "tipCenter": "Posisikan wajah di tengah",
-    "tipLighting": "Ambil di tempat yang cukup terang",
-    "tipNoObstruction": "Jangan menutupi wajah",
-    "tipClear": "Pakai foto yang jelas",
-    "retrySelectPhoto": "Pilih foto lain",
-    "selectPhotoAgain": "Pilih lagi",
-    "fail": {
-      "count": "Satu wajah saja. Foto berdua dianalisis masing-masing.",
-      "yaw": "Wajahnya menoleh ke samping. Lihat lurus ke depan.",
-      "eyes": "Matanya tertutup. Coba lagi dengan mata terbuka.",
-      "occluded": "Masker, rambut, atau tangan menutupi wajah. Biarkan dahi dan dagu kelihatan.",
-      "resolution": "Fotonya buram atau wajahnya terlalu kecil. Mendekat dan ambil yang lebih jelas.",
-      "model": "Analisis tidak bisa dimulai. Pilih foto dari album."
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
+      "startKakao": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
+      "startWechat": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
+      "startWhatsapp": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
+      "startTelegram": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?",
+      "startLine": "Daya tarik yang paling terasa di wajahku. Satu foto sudah kelihatan. Kamu yang mana?"
     },
-    "keywords": "Kata daya tarik",
-    "shine": "Saat daya tarik ini terasa",
-    "love": "Dalam hubungan",
-    "tip": "Cara menambahkan daya tariknya",
-    "coupleTitle": "Buat kartu berdua",
-    "coupleHelp": "Foto berisi dua wajah tidak bisa dibaca. Masing-masing tes dulu, lalu masukkan kode daya tarik pasangan (1-8) atau tautan yang dibagikan.",
-    "myCode": "Kode daya tarikku",
-    "couplePlaceholder": "Kode atau tautan pasangan",
-    "coupleMake": "Buat",
-    "coupleInvalid": "Masukkan kode 1 sampai 8, atau tautan yang dibagikan.",
-    "pairLine": "{left} × {right} = {blendLeft} bertemu {blendRight}"
-  }
-},
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareFailed": "Fitur berbagi tidak bisa dipakai.",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk masih disiapkan. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "Satu foto. Daya tarik apa yang AI temukan?",
+      "line2": "AI membaca ekspresi dan bentuk wajah, lalu memilih 1 dari 8 kata daya tarik yang paling menggambarkanmu. Ini permainan dari kesan, bukan nilai ilmiah, dan tidak ada yang lebih unggul.",
+      "line3": "Foto hanya dianalisis di perangkatmu, tidak disimpan dan tidak dikirim."
+    },
+    "ui": {
+      "startTest": "Mulai",
+      "totalParticipants": "{count} orang sudah mencoba",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil",
+      "shareResult": "Bagikan hasil",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Iklan",
+      "popularBadge": "Populer",
+      "similarTests": "🎯 Rekomendasi tes serupa Top 5",
+      "otherTests": "Tes lain",
+      "retake": "Coba lagi",
+      "captureTitle": "Tunjukkan wajahmu",
+      "guide": "Lihat lurus ke depan, di tempat terang, lepas masker dan topi, ekspresi santai",
+      "guidePrivacy": "(Fotonya tidak disimpan di server, jadi tenang saja)",
+      "privacy": "Foto hanya dianalisis di perangkat ini. Tidak disimpan, tidak dikirim, dan langsung dihapus setelah selesai.",
+      "takePhoto": "Ambil foto",
+      "selectFromGallery": "Pilih dari album",
+      "selectPhotoMethod": "Mau tambah fotonya bagaimana?",
+      "cancel": "Batal",
+      "proceedingWithPhoto": "Lagi membaca fotonya",
+      "selectedPhoto": "Foto yang dipilih",
+      "analyzing": "Sedang mencari daya tarikmu…",
+      "testCompleted": "Analisisnya selesai",
+      "viewResults": "Lihat hasil",
+      "yourResult": "Daya tarikmu",
+      "companion": "Daya tarik lain yang ikut terasa",
+      "cardTitle": "Simpan kartu daya tarik",
+      "includePhoto": "Masukkan fotoku (hanya digabung di perangkat ini)",
+      "cardSquare": "Profil 1:1",
+      "cardStory": "Story 9:16",
+      "faceNotDetected": "Wajah tidak terdeteksi",
+      "faceNotDetectedDescription": "Unggah foto orang yang melihat lurus ke kamera",
+      "tips": "Tips",
+      "tipCenter": "Posisikan wajah di tengah",
+      "tipLighting": "Ambil di tempat yang cukup terang",
+      "tipNoObstruction": "Jangan menutupi wajah",
+      "tipClear": "Pakai foto yang jelas",
+      "retrySelectPhoto": "Pilih foto lain",
+      "selectPhotoAgain": "Pilih lagi",
+      "fail": {
+        "count": "Satu wajah saja. Foto berdua dianalisis masing-masing.",
+        "yaw": "Wajahnya menoleh ke samping. Lihat lurus ke depan.",
+        "eyes": "Matanya tertutup. Coba lagi dengan mata terbuka.",
+        "occluded": "Masker, rambut, atau tangan menutupi wajah. Biarkan dahi dan dagu kelihatan.",
+        "resolution": "Fotonya buram atau wajahnya terlalu kecil. Mendekat dan ambil yang lebih jelas.",
+        "model": "Analisis tidak bisa dimulai. Pilih foto dari album."
+      },
+      "keywords": "Kata daya tarik",
+      "shine": "Saat daya tarik ini terasa",
+      "love": "Dalam hubungan",
+      "tip": "Cara menambahkan daya tariknya",
+      "coupleTitle": "Buat kartu berdua",
+      "coupleHelp": "Foto berisi dua wajah tidak bisa dibaca. Masing-masing tes dulu, lalu masukkan kode daya tarik pasangan (1-8) atau tautan yang dibagikan.",
+      "myCode": "Kode daya tarikku",
+      "couplePlaceholder": "Kode atau tautan pasangan",
+      "coupleMake": "Buat",
+      "coupleInvalid": "Masukkan kode 1 sampai 8, atau tautan yang dibagikan.",
+      "pairLine": "{left} × {right} = {blendLeft} bertemu {blendRight}"
+    }
+  },
   "phase3FaceProfilePointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
-    "startKakao": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
-    "startWechat": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
-    "startWhatsapp": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
-    "startTelegram": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
-    "startLine": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?"
-  },
-  "alerts": {
-    "linkCopied": "Tautan disalin!",
-    "shareFailed": "Fitur berbagi tidak bisa dipakai.",
-    "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
-    "kakaoInit": "Berbagi KakaoTalk masih disiapkan. Coba lagi sebentar lagi.",
-    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
-  },
-  "startMessage": {
-    "line1": "Foto kenalan aku cocok dengan vibe apa?",
-    "line2": "Satu foto membaca ekspresi dan bentuk wajah, lalu menyarankan 1 dari 8 vibe foto profil. Ini bukan nilai untuk wajahmu, dan bukan suruhan untuk berubah. Hanya ide main-main untuk latar, warna, pakaian, dan properti.",
-    "line3": "Foto hanya dianalisis di perangkatmu, tidak disimpan dan tidak dikirim."
-  },
-  "ui": {
-    "startTest": "Mulai",
-    "totalParticipants": "{count} orang sudah mencoba",
-    "shareWithFriends": "Coba bareng teman",
-    "shareResultWithFriends": "Bagikan hasil",
-    "shareResult": "Bagikan hasil",
-    "linkCopy": "Salin tautan",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "WeChat",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "Iklan",
-    "popularBadge": "Populer",
-    "similarTests": "🎯 Rekomendasi tes serupa Top 5",
-    "otherTests": "Tes lain",
-    "retake": "Coba lagi",
-    "captureTitle": "Tunjukkan wajahmu",
-    "guide": "Lihat lurus ke depan, di tempat terang, lepas masker dan topi, ekspresi santai",
-    "guidePrivacy": "(Fotonya tidak disimpan di server, jadi tenang saja)",
-    "privacy": "Foto hanya dianalisis di perangkat ini. Tidak disimpan, tidak dikirim, dan langsung dihapus setelah selesai.",
-    "takePhoto": "Ambil foto",
-    "selectFromGallery": "Pilih dari album",
-    "selectPhotoMethod": "Mau tambah fotonya bagaimana?",
-    "cancel": "Batal",
-    "proceedingWithPhoto": "Lagi membaca fotonya",
-    "selectedPhoto": "Foto yang dipilih",
-    "analyzing": "Sedang memilih vibe yang cocok…",
-    "testCompleted": "Analisisnya selesai",
-    "viewResults": "Lihat hasil",
-    "yourResult": "Vibe fotomu",
-    "companion": "Vibe lain yang juga cocok",
-    "cardTitle": "Simpan kartu profil",
-    "includePhoto": "Masukkan fotoku (hanya digabung di perangkat ini)",
-    "cardSquare": "Profil 1:1",
-    "cardStory": "Story 9:16",
-    "faceNotDetected": "Wajah tidak terdeteksi",
-    "faceNotDetectedDescription": "Unggah foto orang yang melihat lurus ke kamera",
-    "tips": "Tips",
-    "tipCenter": "Posisikan wajah di tengah",
-    "tipLighting": "Ambil di tempat yang cukup terang",
-    "tipNoObstruction": "Jangan menutupi wajah",
-    "tipClear": "Pakai foto yang jelas",
-    "retrySelectPhoto": "Pilih foto lain",
-    "selectPhotoAgain": "Pilih lagi",
-    "fail": {
-      "count": "Wajahnya lebih dari satu. Ambil foto dengan kamu saja.",
-      "yaw": "Wajahnya menoleh ke samping. Lihat lurus ke depan.",
-      "eyes": "Matanya tertutup. Coba lagi dengan mata terbuka.",
-      "occluded": "Masker, rambut, atau tangan menutupi wajah. Biarkan dahi dan dagu kelihatan.",
-      "resolution": "Fotonya buram atau wajahnya terlalu kecil. Mendekat dan ambil yang lebih jelas.",
-      "model": "Analisis tidak bisa dimulai. Pilih foto dari album."
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
+      "startKakao": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
+      "startWechat": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
+      "startWhatsapp": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
+      "startTelegram": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?",
+      "startLine": "Foto kenalan aku cocok dengan vibe apa? Satu foto sudah kelihatan. Kamu yang mana?"
     },
-    "background": "Latar yang disarankan",
-    "outfit": "Warna dan pakaian",
-    "props": "Properti yang disarankan",
-    "photoTip": "Cara memotretnya",
-    "talk": "Bahan obrolan"
-  }
-},
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "shareFailed": "Fitur berbagi tidak bisa dipakai.",
+      "wechatCopy": "Tautan disalin. Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk masih disiapkan. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "startMessage": {
+      "line1": "Foto kenalan aku cocok dengan vibe apa?",
+      "line2": "Satu foto membaca ekspresi dan bentuk wajah, lalu menyarankan 1 dari 8 vibe foto profil. Ini bukan nilai untuk wajahmu, dan bukan suruhan untuk berubah. Hanya ide main-main untuk latar, warna, pakaian, dan properti.",
+      "line3": "Foto hanya dianalisis di perangkatmu, tidak disimpan dan tidak dikirim."
+    },
+    "ui": {
+      "startTest": "Mulai",
+      "totalParticipants": "{count} orang sudah mencoba",
+      "shareWithFriends": "Coba bareng teman",
+      "shareResultWithFriends": "Bagikan hasil",
+      "shareResult": "Bagikan hasil",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "Iklan",
+      "popularBadge": "Populer",
+      "similarTests": "🎯 Rekomendasi tes serupa Top 5",
+      "otherTests": "Tes lain",
+      "retake": "Coba lagi",
+      "captureTitle": "Tunjukkan wajahmu",
+      "guide": "Lihat lurus ke depan, di tempat terang, lepas masker dan topi, ekspresi santai",
+      "guidePrivacy": "(Fotonya tidak disimpan di server, jadi tenang saja)",
+      "privacy": "Foto hanya dianalisis di perangkat ini. Tidak disimpan, tidak dikirim, dan langsung dihapus setelah selesai.",
+      "takePhoto": "Ambil foto",
+      "selectFromGallery": "Pilih dari album",
+      "selectPhotoMethod": "Mau tambah fotonya bagaimana?",
+      "cancel": "Batal",
+      "proceedingWithPhoto": "Lagi membaca fotonya",
+      "selectedPhoto": "Foto yang dipilih",
+      "analyzing": "Sedang memilih vibe yang cocok…",
+      "testCompleted": "Analisisnya selesai",
+      "viewResults": "Lihat hasil",
+      "yourResult": "Vibe fotomu",
+      "companion": "Vibe lain yang juga cocok",
+      "cardTitle": "Simpan kartu profil",
+      "includePhoto": "Masukkan fotoku (hanya digabung di perangkat ini)",
+      "cardSquare": "Profil 1:1",
+      "cardStory": "Story 9:16",
+      "faceNotDetected": "Wajah tidak terdeteksi",
+      "faceNotDetectedDescription": "Unggah foto orang yang melihat lurus ke kamera",
+      "tips": "Tips",
+      "tipCenter": "Posisikan wajah di tengah",
+      "tipLighting": "Ambil di tempat yang cukup terang",
+      "tipNoObstruction": "Jangan menutupi wajah",
+      "tipClear": "Pakai foto yang jelas",
+      "retrySelectPhoto": "Pilih foto lain",
+      "selectPhotoAgain": "Pilih lagi",
+      "fail": {
+        "count": "Wajahnya lebih dari satu. Ambil foto dengan kamu saja.",
+        "yaw": "Wajahnya menoleh ke samping. Lihat lurus ke depan.",
+        "eyes": "Matanya tertutup. Coba lagi dengan mata terbuka.",
+        "occluded": "Masker, rambut, atau tangan menutupi wajah. Biarkan dahi dan dagu kelihatan.",
+        "resolution": "Fotonya buram atau wajahnya terlalu kecil. Mendekat dan ambil yang lebih jelas.",
+        "model": "Analisis tidak bisa dimulai. Pilih foto dari album."
+      },
+      "background": "Latar yang disarankan",
+      "outfit": "Warna dan pakaian",
+      "props": "Properti yang disarankan",
+      "photoTip": "Cara memotretnya",
+      "talk": "Bahan obrolan"
+    }
+  },
   "phase3FaceAnimalTypeTest": {
     "shareMessages": {
       "default": "{type}",
@@ -12397,7 +12395,7 @@
       "cardStory": "Story 9:16"
     }
   },
-  "phase3FriendDriftReasonTest":   {
+  "phase3FriendDriftReasonTest": {
     "startMessage": {
       "line1": "Teman jadi jarang itu ada alasannya, meski tidak ada yang bertengkar.",
       "line2": "Ada teman yang kabarnya makin sepi, padahal tidak pernah berantem. Sering kali yang habis adalah waktu, tenaga, dan ruang di kepala, bukan salah siapa-siapa. Kalau kamu lihat cara kamu menciptakan jarak, orang yang ingin dipertahankan masih bisa dijaga.",
@@ -12459,7 +12457,7 @@
       "popularTestsTop5": "🔥 Tes populer belakangan ini Top 5"
     }
   },
-  "phase3LoveIqPercentTest":     {
+  "phase3LoveIqPercentTest": {
     "startMessage": {
       "line1": "Pacaran cuma pakai feeling itu rawan. Ada pilihan yang lebih tepat.",
       "line2": "Di 15 situasi, pilih langkah yang benar-benar membantu hubungan.",
@@ -15036,7 +15034,7 @@
     "checklist": "Indeks MBTI",
     "showAll": "Lihat semua"
   },
-  "phase3MarriageCohabitBalanceGameTest":           {
+  "phase3MarriageCohabitBalanceGameTest": {
     "startMessage": {
       "line1": "Kamar terpisah vs satu kasur—siapa pegang uang? Kamu pilih mana?",
       "line2": "Nikah dan tinggal bersama tidak jalan hanya dengan cinta. Ada kasur, rekening, dan pekerjaan rumah. Memilih di antara dua opsi yang sama-sama sayang menunjukkan apa yang ingin kamu jaga saat hidup bersama.",
@@ -15091,8 +15089,7 @@
       "kakaoInit": "Berbagi KakaoTalk masih dimulai. Coba lagi sebentar.",
       "kakaoError": "Ada masalah saat berbagi ke KakaoTalk."
     }
-  }
-  ,
+  },
   "phase3DatingCostBalanceGameTest": {
     "startMessage": {
       "line1": "Aku bayar semua tapi mereka selalu telat vs bagi tagihan tapi selalu tepat waktu—kamu pilih yang mana?",
@@ -15272,8 +15269,7 @@
       "similarTestsTop5": "🎯 Top 5 Tes Serupa",
       "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
     }
-  }
-,
+  },
   "phase3RefusalToneTest": {
     "startMessage": {
       "line1": "'Maaf, hari ini nggak bisa'—cara bilang tidak juga punya gaya.",
@@ -15331,6 +15327,68 @@
       "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
       "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
       "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Saat Ini"
+    }
+  },
+  "phase3CantConfessFirstTest": {
+    "startMessage": {
+      "line1": "\"Perasaannya sebegitu besar—kenapa katanya nggak keluar?\"",
+      "line2": "Sudah latihan berkali-kali di kepala, tapi berhadapan cuma \"Udah makan?\" yang keluar. Hari ini terasa kesempatan—lalu kamu bisik \"sedikit lagi,\" dan berminggu-minggu lewat. Bukan karena hatimu kecil.",
+      "line3": "Hambatan ngaku beda-beda—takut ditolak, nunggu timing, butuh kepastian, harga diri, takut kehilangan hubungan, atau susah ngungkap. Reaksimu nunjukin di mana kamu macet. Dua belas situasi mengungkap hambatanmu yang sebenarnya—dan cara bilang duluan.",
+      "line4": "",
+      "line5": "Temukan hambatan asliku 💌 Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Temukan hambatan asliku 💌",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "realReason": "Hambatan asli yang menghalangi pengakuan",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "pt",
+      "secondBarrier": "Hambatan lainnya",
+      "blockedMoment": "Saat pengakuan membeku",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Mengurai alasan aslinya",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara biar bisa bilang duluan",
+      "oneLiner": "Dalam satu baris",
+      "counselingNote": "Catatan konseling"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Aku Susah Ngaku Duluan? 💌 Perasaan besar, kata macet—temukan hambatan aslimu",
+      "startKakao": "Kenapa Aku Susah Ngaku Duluan? 💌 Perasaan besar, kata macet—temukan hambatan aslimu",
+      "startWechat": "Kenapa Aku Susah Ngaku Duluan? 💌 Perasaan besar, kata macet—temukan hambatan aslimu",
+      "startWhatsapp": "Kenapa Aku Susah Ngaku Duluan? 💌 Perasaan besar, kata macet—temukan hambatan aslimu",
+      "startTelegram": "Kenapa Aku Susah Ngaku Duluan? 💌 Perasaan besar, kata macet—temukan hambatan aslimu",
+      "startLine": "Kenapa Aku Susah Ngaku Duluan? 💌 Perasaan besar, kata macet—temukan hambatan aslimu"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     },
     "recommendations": {
       "similarTestsTop5": "🎯 Top 5 Tes Serupa",

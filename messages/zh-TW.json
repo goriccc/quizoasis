@@ -11094,8 +11094,7 @@
       "kakaoError": "分享到 KakaoTalk 時出錯了。"
     }
   },
-  "phase3StartLoveSuccessTest":
-    {
+  "phase3StartLoveSuccessTest": {
     "startMessage": {
       "line1": "「現在開始談戀愛，會順利嗎？」",
       "line2": "談戀愛不只是遇見對的人。你現在的心情和生活狀態一樣重要。心裡有沒有餘力、日子平不平衡、上一段有沒有放下，會讓同一個人走出完全不同的開始。",
@@ -11156,8 +11155,7 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
-  "phase3ChristmasSoloEscapeTest":
-    {
+  "phase3ChristmasSoloEscapeTest": {
     "startMessage": {
       "line1": "「離聖誕節還有{count}天，我能脫單嗎？」",
       "line1Today": "「今天就是聖誕節，我能脫單嗎？」",
@@ -11541,185 +11539,185 @@
     }
   },
   "phase3FaceCharmPointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
-    "startKakao": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
-    "startWechat": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
-    "startWhatsapp": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
-    "startTelegram": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
-    "startLine": "臉上最亮的魅力點。一張照片就知道。你是哪種？"
-  },
-  "alerts": {
-    "linkCopied": "連結已複製！",
-    "shareFailed": "現在不能分享。",
-    "wechatCopy": "連結已複製。請貼到微信裡分享。",
-    "kakaoInit": "KakaoTalk分享還在準備。請稍後再試。",
-    "kakaoError": "分享到KakaoTalk時出錯了。"
-  },
-  "startMessage": {
-    "line1": "一張照片，AI找到的魅力點是什麼？",
-    "line2": "AI讀出表情和臉型，從8個魅力關鍵詞裡選出最像你的一個。這是用印象來玩的，不是科學評分，也沒有高下之分。",
-    "line3": "照片只在你的裝置裡分析，不會保存，也不會上傳。"
-  },
-  "ui": {
-    "startTest": "開始",
-    "totalParticipants": "已有{count}人參加",
-    "shareWithFriends": "和朋友一起玩",
-    "shareResultWithFriends": "分享結果",
-    "shareResult": "分享結果",
-    "linkCopy": "複製連結",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "微信",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "廣告",
-    "popularBadge": "人氣",
-    "similarTests": "🎯 類似測驗推薦 Top5",
-    "otherTests": "其他測驗",
-    "retake": "再來一次",
-    "captureTitle": "請讓我們看看你的臉",
-    "guide": "看向正面，找亮一點的地方，摘掉口罩和帽子，表情自然一點",
-    "guidePrivacy": "（照片不會存到伺服器，放心）",
-    "privacy": "照片只在這台裝置裡分析，不會保存，也不會上傳。分析一結束就馬上刪掉。",
-    "takePhoto": "拍攝",
-    "selectFromGallery": "從相簿選擇",
-    "selectPhotoMethod": "想怎麼選照片？",
-    "cancel": "取消",
-    "proceedingWithPhoto": "正在看這張照片",
-    "selectedPhoto": "選取的照片",
-    "analyzing": "正在找你的魅力點…",
-    "testCompleted": "分析好了",
-    "viewResults": "看結果",
-    "yourResult": "你的魅力點",
-    "companion": "一起露出來的魅力",
-    "cardTitle": "儲存魅力卡片",
-    "includePhoto": "放入我的照片（只在這台裝置裡合成）",
-    "cardSquare": "頭像 1:1",
-    "cardStory": "限時動態 9:16",
-    "faceNotDetected": "沒有偵測到臉",
-    "faceNotDetectedDescription": "請上傳一張看著鏡頭的正面人臉照片",
-    "tips": "小提示",
-    "tipCenter": "讓臉位於畫面中間",
-    "tipLighting": "在足夠亮的地方拍",
-    "tipNoObstruction": "不要擋住臉",
-    "tipClear": "用清晰的照片",
-    "retrySelectPhoto": "重新選一張照片",
-    "selectPhotoAgain": "再選一次",
-    "fail": {
-      "count": "請只拍一張臉。合照要各自單獨分析。",
-      "yaw": "臉轉到旁邊了。請看向正面。",
-      "eyes": "眼睛是閉著的。請睜開再拍。",
-      "occluded": "口罩、頭髮或手擋住了臉。請讓額頭和下巴露出來。",
-      "resolution": "照片模糊，或者臉太小。請靠近一點，拍清楚。",
-      "model": "分析啟動不了。請從相簿裡選一張照片。"
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
+      "startKakao": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
+      "startWechat": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
+      "startWhatsapp": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
+      "startTelegram": "臉上最亮的魅力點。一張照片就知道。你是哪種？",
+      "startLine": "臉上最亮的魅力點。一張照片就知道。你是哪種？"
     },
-    "keywords": "魅力關鍵詞",
-    "shine": "這點魅力最亮的時候",
-    "love": "在感情裡",
-    "tip": "讓魅力更亮一點",
-    "coupleTitle": "做一張雙人卡",
-    "coupleHelp": "一張照片裡有兩張臉就分析不了。各自測完後，輸入對方的魅力編號（1到8）或分享連結。",
-    "myCode": "我的魅力編號",
-    "couplePlaceholder": "對方的編號或連結",
-    "coupleMake": "生成",
-    "coupleInvalid": "請輸入1到8的編號，或分享連結。",
-    "pairLine": "{left} × {right} = {blendLeft}遇見{blendRight}"
-  }
-},
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "shareFailed": "現在不能分享。",
+      "wechatCopy": "連結已複製。請貼到微信裡分享。",
+      "kakaoInit": "KakaoTalk分享還在準備。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時出錯了。"
+    },
+    "startMessage": {
+      "line1": "一張照片，AI找到的魅力點是什麼？",
+      "line2": "AI讀出表情和臉型，從8個魅力關鍵詞裡選出最像你的一個。這是用印象來玩的，不是科學評分，也沒有高下之分。",
+      "line3": "照片只在你的裝置裡分析，不會保存，也不會上傳。"
+    },
+    "ui": {
+      "startTest": "開始",
+      "totalParticipants": "已有{count}人參加",
+      "shareWithFriends": "和朋友一起玩",
+      "shareResultWithFriends": "分享結果",
+      "shareResult": "分享結果",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "廣告",
+      "popularBadge": "人氣",
+      "similarTests": "🎯 類似測驗推薦 Top5",
+      "otherTests": "其他測驗",
+      "retake": "再來一次",
+      "captureTitle": "請讓我們看看你的臉",
+      "guide": "看向正面，找亮一點的地方，摘掉口罩和帽子，表情自然一點",
+      "guidePrivacy": "（照片不會存到伺服器，放心）",
+      "privacy": "照片只在這台裝置裡分析，不會保存，也不會上傳。分析一結束就馬上刪掉。",
+      "takePhoto": "拍攝",
+      "selectFromGallery": "從相簿選擇",
+      "selectPhotoMethod": "想怎麼選照片？",
+      "cancel": "取消",
+      "proceedingWithPhoto": "正在看這張照片",
+      "selectedPhoto": "選取的照片",
+      "analyzing": "正在找你的魅力點…",
+      "testCompleted": "分析好了",
+      "viewResults": "看結果",
+      "yourResult": "你的魅力點",
+      "companion": "一起露出來的魅力",
+      "cardTitle": "儲存魅力卡片",
+      "includePhoto": "放入我的照片（只在這台裝置裡合成）",
+      "cardSquare": "頭像 1:1",
+      "cardStory": "限時動態 9:16",
+      "faceNotDetected": "沒有偵測到臉",
+      "faceNotDetectedDescription": "請上傳一張看著鏡頭的正面人臉照片",
+      "tips": "小提示",
+      "tipCenter": "讓臉位於畫面中間",
+      "tipLighting": "在足夠亮的地方拍",
+      "tipNoObstruction": "不要擋住臉",
+      "tipClear": "用清晰的照片",
+      "retrySelectPhoto": "重新選一張照片",
+      "selectPhotoAgain": "再選一次",
+      "fail": {
+        "count": "請只拍一張臉。合照要各自單獨分析。",
+        "yaw": "臉轉到旁邊了。請看向正面。",
+        "eyes": "眼睛是閉著的。請睜開再拍。",
+        "occluded": "口罩、頭髮或手擋住了臉。請讓額頭和下巴露出來。",
+        "resolution": "照片模糊，或者臉太小。請靠近一點，拍清楚。",
+        "model": "分析啟動不了。請從相簿裡選一張照片。"
+      },
+      "keywords": "魅力關鍵詞",
+      "shine": "這點魅力最亮的時候",
+      "love": "在感情裡",
+      "tip": "讓魅力更亮一點",
+      "coupleTitle": "做一張雙人卡",
+      "coupleHelp": "一張照片裡有兩張臉就分析不了。各自測完後，輸入對方的魅力編號（1到8）或分享連結。",
+      "myCode": "我的魅力編號",
+      "couplePlaceholder": "對方的編號或連結",
+      "coupleMake": "生成",
+      "coupleInvalid": "請輸入1到8的編號，或分享連結。",
+      "pairLine": "{left} × {right} = {blendLeft}遇見{blendRight}"
+    }
+  },
   "phase3FaceProfilePointTest": {
-  "shareMessages": {
-    "default": "{type}",
-    "kakao": "{type}",
-    "wechat": "{type}",
-    "whatsapp": "{type}",
-    "telegram": "{type}",
-    "line": "{type}",
-    "startDefault": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
-    "startKakao": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
-    "startWechat": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
-    "startWhatsapp": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
-    "startTelegram": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
-    "startLine": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？"
-  },
-  "alerts": {
-    "linkCopied": "連結已複製！",
-    "shareFailed": "現在不能分享。",
-    "wechatCopy": "連結已複製。請貼到微信裡分享。",
-    "kakaoInit": "KakaoTalk分享還在準備。請稍後再試。",
-    "kakaoError": "分享到KakaoTalk時出錯了。"
-  },
-  "startMessage": {
-    "line1": "我的交友照片，什麼氛圍最合適？",
-    "line2": "一張照片讀出表情和臉型，從8種氛圍裡推薦一種。這不是給外貌打分，也不是叫你改樣子，只是好玩地提議背景、顏色、穿搭和小道具。",
-    "line3": "照片只在你的裝置裡分析，不會保存，也不會上傳。"
-  },
-  "ui": {
-    "startTest": "開始",
-    "totalParticipants": "已有{count}人參加",
-    "shareWithFriends": "和朋友一起玩",
-    "shareResultWithFriends": "分享結果",
-    "shareResult": "分享結果",
-    "linkCopy": "複製連結",
-    "kakao": "KakaoTalk",
-    "telegram": "Telegram",
-    "wechat": "微信",
-    "line": "LINE",
-    "whatsapp": "WhatsApp",
-    "adsenseTitle": "廣告",
-    "popularBadge": "人氣",
-    "similarTests": "🎯 類似測驗推薦 Top5",
-    "otherTests": "其他測驗",
-    "retake": "再來一次",
-    "captureTitle": "請讓我們看看你的臉",
-    "guide": "看向正面，找亮一點的地方，摘掉口罩和帽子，表情自然一點",
-    "guidePrivacy": "（照片不會存到伺服器，放心）",
-    "privacy": "照片只在這台裝置裡分析，不會保存，也不會上傳。分析一結束就馬上刪掉。",
-    "takePhoto": "拍攝",
-    "selectFromGallery": "從相簿選擇",
-    "selectPhotoMethod": "想怎麼選照片？",
-    "cancel": "取消",
-    "proceedingWithPhoto": "正在看這張照片",
-    "selectedPhoto": "選取的照片",
-    "analyzing": "正在挑適合你的氛圍…",
-    "testCompleted": "分析好了",
-    "viewResults": "看結果",
-    "yourResult": "你的照片氛圍",
-    "companion": "也合得來的氛圍",
-    "cardTitle": "儲存名片",
-    "includePhoto": "放入我的照片（只在這台裝置裡合成）",
-    "cardSquare": "頭像 1:1",
-    "cardStory": "限時動態 9:16",
-    "faceNotDetected": "沒有偵測到臉",
-    "faceNotDetectedDescription": "請上傳一張看著鏡頭的正面人臉照片",
-    "tips": "小提示",
-    "tipCenter": "讓臉位於畫面中間",
-    "tipLighting": "在足夠亮的地方拍",
-    "tipNoObstruction": "不要擋住臉",
-    "tipClear": "用清晰的照片",
-    "retrySelectPhoto": "重新選一張照片",
-    "selectPhotoAgain": "再選一次",
-    "fail": {
-      "count": "出現了好幾張臉。請只拍一個人。",
-      "yaw": "臉轉到旁邊了。請看向正面。",
-      "eyes": "眼睛是閉著的。請睜開再拍。",
-      "occluded": "口罩、頭髮或手擋住了臉。請讓額頭和下巴露出來。",
-      "resolution": "照片模糊，或者臉太小。請靠近一點，拍清楚。",
-      "model": "分析啟動不了。請從相簿裡選一張照片。"
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
+      "startKakao": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
+      "startWechat": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
+      "startWhatsapp": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
+      "startTelegram": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？",
+      "startLine": "交友照片，什麼氛圍最適合我？一張照片就知道。你是哪種？"
     },
-    "background": "推薦背景",
-    "outfit": "推薦顏色和穿搭",
-    "props": "推薦小道具",
-    "photoTip": "拍照要點",
-    "talk": "可以聊的話題"
-  }
-},
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "shareFailed": "現在不能分享。",
+      "wechatCopy": "連結已複製。請貼到微信裡分享。",
+      "kakaoInit": "KakaoTalk分享還在準備。請稍後再試。",
+      "kakaoError": "分享到KakaoTalk時出錯了。"
+    },
+    "startMessage": {
+      "line1": "我的交友照片，什麼氛圍最合適？",
+      "line2": "一張照片讀出表情和臉型，從8種氛圍裡推薦一種。這不是給外貌打分，也不是叫你改樣子，只是好玩地提議背景、顏色、穿搭和小道具。",
+      "line3": "照片只在你的裝置裡分析，不會保存，也不會上傳。"
+    },
+    "ui": {
+      "startTest": "開始",
+      "totalParticipants": "已有{count}人參加",
+      "shareWithFriends": "和朋友一起玩",
+      "shareResultWithFriends": "分享結果",
+      "shareResult": "分享結果",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "adsenseTitle": "廣告",
+      "popularBadge": "人氣",
+      "similarTests": "🎯 類似測驗推薦 Top5",
+      "otherTests": "其他測驗",
+      "retake": "再來一次",
+      "captureTitle": "請讓我們看看你的臉",
+      "guide": "看向正面，找亮一點的地方，摘掉口罩和帽子，表情自然一點",
+      "guidePrivacy": "（照片不會存到伺服器，放心）",
+      "privacy": "照片只在這台裝置裡分析，不會保存，也不會上傳。分析一結束就馬上刪掉。",
+      "takePhoto": "拍攝",
+      "selectFromGallery": "從相簿選擇",
+      "selectPhotoMethod": "想怎麼選照片？",
+      "cancel": "取消",
+      "proceedingWithPhoto": "正在看這張照片",
+      "selectedPhoto": "選取的照片",
+      "analyzing": "正在挑適合你的氛圍…",
+      "testCompleted": "分析好了",
+      "viewResults": "看結果",
+      "yourResult": "你的照片氛圍",
+      "companion": "也合得來的氛圍",
+      "cardTitle": "儲存名片",
+      "includePhoto": "放入我的照片（只在這台裝置裡合成）",
+      "cardSquare": "頭像 1:1",
+      "cardStory": "限時動態 9:16",
+      "faceNotDetected": "沒有偵測到臉",
+      "faceNotDetectedDescription": "請上傳一張看著鏡頭的正面人臉照片",
+      "tips": "小提示",
+      "tipCenter": "讓臉位於畫面中間",
+      "tipLighting": "在足夠亮的地方拍",
+      "tipNoObstruction": "不要擋住臉",
+      "tipClear": "用清晰的照片",
+      "retrySelectPhoto": "重新選一張照片",
+      "selectPhotoAgain": "再選一次",
+      "fail": {
+        "count": "出現了好幾張臉。請只拍一個人。",
+        "yaw": "臉轉到旁邊了。請看向正面。",
+        "eyes": "眼睛是閉著的。請睜開再拍。",
+        "occluded": "口罩、頭髮或手擋住了臉。請讓額頭和下巴露出來。",
+        "resolution": "照片模糊，或者臉太小。請靠近一點，拍清楚。",
+        "model": "分析啟動不了。請從相簿裡選一張照片。"
+      },
+      "background": "推薦背景",
+      "outfit": "推薦顏色和穿搭",
+      "props": "推薦小道具",
+      "photoTip": "拍照要點",
+      "talk": "可以聊的話題"
+    }
+  },
   "phase3FaceAnimalTypeTest": {
     "shareMessages": {
       "default": "{type}",
@@ -11866,7 +11864,7 @@
       "cardStory": "限時動態 9:16"
     }
   },
-  "phase3FriendDriftReasonTest":   {
+  "phase3FriendDriftReasonTest": {
     "startMessage": {
       "line1": "朋友自然變疏遠，是有原因的。",
       "line2": "沒吵過架，聯絡卻漸漸少了。很多時候不是誰的錯，而是時間、精力和心裡的空檔一點點用完了。看清自己怎樣拉開距離，想留的人就還能留住。",
@@ -11928,7 +11926,7 @@
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   },
-  "phase3LoveIqPercentTest":     {
+  "phase3LoveIqPercentTest": {
     "startMessage": {
       "line1": "戀愛只靠感覺，很容易踩雷。這裡有比較好的做法。",
       "line2": "在15個情境裡，選出真正對關係有幫助的做法。",
@@ -14505,7 +14503,7 @@
     "checklist": "MBTI指數",
     "showAll": "查看全部"
   },
-  "phase3MarriageCohabitBalanceGameTest":           {
+  "phase3MarriageCohabitBalanceGameTest": {
     "startMessage": {
       "line1": "分房還是同床，經濟權誰拿？你會選哪個？",
       "line2": "結婚或同居不只靠愛情，還要在床、帳戶、家務這些現實上運轉。在兩難裡做選擇，會看見你想在共同生活中守住什麼。",
@@ -14560,8 +14558,7 @@
       "kakaoInit": "KakaoTalk 分享還在啟動，稍後再試。",
       "kakaoError": "KakaoTalk 分享出錯了。"
     }
-  }
-  ,
+  },
   "phase3DatingCostBalanceGameTest": {
     "startMessage": {
       "line1": "我全付但對方每次遲到 vs 各付但總準時——你會選哪個？",
@@ -14741,8 +14738,7 @@
       "similarTestsTop5": "🎯 相似測驗推薦 Top5",
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
-  }
-,
+  },
   "phase3RefusalToneTest": {
     "startMessage": {
       "line1": "「抱歉，今天不行」——拒絕也有各自的語氣。",
@@ -14803,6 +14799,68 @@
     },
     "recommendations": {
       "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測驗 Top5"
+    }
+  },
+  "phase3CantConfessFirstTest": {
+    "startMessage": {
+      "line1": "「喜歡的心情這麼大，為什麼話就是說不出口？」",
+      "line2": "練了很多遍的話滿腦子都是，可一看到對方只會問「吃飯了嗎」。今天像是機會，卻又默念「再等等」，就這樣過了幾週。不是你的心太小。",
+      "line3": "擋住告白的障礙因人而異——害怕被拒、等待時機、需要確認、放不下自尊、怕失去現在的關係，或不擅表達。看你的反應，就知道自己卡在哪裡。12個情境幫你找到真正的障礙，以及如何先開口。",
+      "line4": "",
+      "line5": "找出我的真正障礙 💌 誠實開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "找出我的真正障礙 💌",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "realReason": "擋住告白的真正障礙",
+      "keywords": "關鍵字",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "secondBarrier": "同時存在的障礙",
+      "blockedMoment": "告白卡住的瞬間",
+      "strengths": "這一類型的優點",
+      "reasonDetail": "真正原因展開來看",
+      "frequentSaying": "這一類型常說的話",
+      "changeTips": "怎樣才能先開口",
+      "oneLiner": "一句話總結",
+      "counselingNote": "專業諮商提示"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我為什麼總是無法先告白？💌 心很大話說不出——找出真正障礙",
+      "startKakao": "我為什麼總是無法先告白？💌 心很大話說不出——找出真正障礙",
+      "startWechat": "我為什麼總是無法先告白？💌 心很大話說不出——找出真正障礙",
+      "startWhatsapp": "我為什麼總是無法先告白？💌 心很大話說不出——找出真正障礙",
+      "startTelegram": "我為什麼總是無法先告白？💌 心很大話說不出——找出真正障礙",
+      "startLine": "我為什麼總是無法先告白？💌 心很大話說不出——找出真正障礙"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 Top5",
       "popularTestsTop5": "🔥 近期熱門測驗 Top5"
     }
   }
