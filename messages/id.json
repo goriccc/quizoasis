@@ -15519,5 +15519,67 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3GroupchatCharacterTest": {
+    "startMessage": {
+      "line1": "\"Di grup chat, aku karakter yang mana?\"",
+      "line2": "Ada yang jarang bicara tapi kehadirannya kuat, ada yang satu emoji sudah selesai, ada yang baca lalu menghilang. Di grup, peran masing-masing muncul dengan sendirinya. Tahu karaktermu juga sedikit menunjukkan bagaimana teman melihatmu.",
+      "line3": "Pilih reaksi paling mirip dirimu di 12 situasi grup. Kami kasih tahu kamu termasuk yang mana dari 8 karakter. Drop hasilnya ke grup dan bandingkan sama teman.",
+      "line4": "",
+      "line5": "Cek karakter grupku 💬 Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cek karakter grupku 💬",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "keywords": "Kata kunci",
+      "friendsView": "Aku di mata teman",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "secondCharacter": "Karakter yang ikut muncul",
+      "strengths": "Kelebihan tipe ini",
+      "caution": "Yang perlu diwaspadai",
+      "goodMatch": "Karakter paling cocok",
+      "roomLine": "Kalimat yang enak dipakai di grup",
+      "oneLiner": "Satu kalimat",
+      "certCardEyebrow": "Kartu sertifikasi grup",
+      "certCardPrompt": "Di room ini kita siapa?"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Di grup chat aku karakter yang mana? 💬 Mood Maker? Hantu read? Coba cek",
+      "startKakao": "Di grup chat aku karakter yang mana? 💬 Mood Maker? Hantu read? Coba cek",
+      "startWechat": "Di grup chat aku karakter yang mana? 💬 Mood Maker? Hantu read? Coba cek",
+      "startWhatsapp": "Di grup chat aku karakter yang mana? 💬 Mood Maker? Hantu read? Coba cek",
+      "startTelegram": "Di grup chat aku karakter yang mana? 💬 Mood Maker? Hantu read? Coba cek",
+      "startLine": "Di grup chat aku karakter yang mana? 💬 Mood Maker? Hantu read? Coba cek"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk dibagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }

@@ -15657,5 +15657,67 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase3GroupchatCharacterTest": {
+    "startMessage": {
+      "line1": "\"단톡방 속 나는 어떤 캐릭터일까?\"",
+      "line2": "말은 많지 않아도 존재감이 큰 사람, 이모티콘 하나로 모든 걸 말하는 사람, 읽고도 사라지는 사람. 단톡방에는 저마다의 역할이 자연스럽게 생깁니다. 내 캐릭터를 알면 친구들이 나를 어떻게 보는지도 조금 보입니다.",
+      "line3": "12가지 단톡방 상황에서 가장 나다운 반응을 골라 보세요. 8가지 캐릭터 중 나의 캐릭터를 알려드립니다. 결과를 단톡방에 올려 친구들의 캐릭터와 비교해 보세요.",
+      "line4": "",
+      "line5": "내 단톡방 캐릭터 확인하기 💬 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 단톡방 캐릭터 확인하기 💬",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "keywords": "핵심 키워드",
+      "friendsView": "친구들이 보는 나",
+      "scoreTitle": "유형별 점수",
+      "scoreUnit": "점",
+      "secondCharacter": "함께 있는 캐릭터",
+      "strengths": "이 유형의 강점",
+      "caution": "주의할 점",
+      "goodMatch": "잘 맞는 캐릭터",
+      "roomLine": "방 안에서 쓰기 좋은 한마디",
+      "oneLiner": "한 줄 평",
+      "certCardEyebrow": "단톡방 인증 카드",
+      "certCardPrompt": "이 방에서 우리는 누구일까?"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "단톡방 속 나는 어떤 캐릭터일까? 💬 분위기 메이커? 읽씹 유령? 내 캐릭터 확인하기",
+      "startKakao": "단톡방 속 나는 어떤 캐릭터일까? 💬 분위기 메이커? 읽씹 유령? 내 캐릭터 확인하기",
+      "startWechat": "단톡방 속 나는 어떤 캐릭터일까? 💬 분위기 메이커? 읽씹 유령? 내 캐릭터 확인하기",
+      "startWhatsapp": "단톡방 속 나는 어떤 캐릭터일까? 💬 분위기 메이커? 읽씹 유령? 내 캐릭터 확인하기",
+      "startTelegram": "단톡방 속 나는 어떤 캐릭터일까? 💬 분위기 메이커? 읽씹 유령? 내 캐릭터 확인하기",
+      "startLine": "단톡방 속 나는 어떤 캐릭터일까? 💬 분위기 메이커? 읽씹 유령? 내 캐릭터 확인하기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

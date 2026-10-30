@@ -15507,5 +15507,67 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3GroupchatCharacterTest": {
+    "startMessage": {
+      "line1": "\"グループチャットの中の私は、どんなキャラ？\"",
+      "line2": "口数は少なくても存在感が大きい人、絵文字一つで全部伝える人、既読して消える人。グループには自然と役割が生まれます。自分のキャラがわかると、友達からどう見えているかも少し見えます。",
+      "line3": "12のグループ場面でいちばん自分らしい反応を選んでください。8キャラの中からあなたのタイプをお伝えします。結果をグループに上げて、友達のキャラと比べてみて。",
+      "line4": "",
+      "line5": "グループキャラを確認する 💬 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "グループキャラを確認する 💬",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "keywords": "キーワード",
+      "friendsView": "友達から見た私",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "secondCharacter": "一緒にいるキャラ",
+      "strengths": "このタイプの強み",
+      "caution": "注意点",
+      "goodMatch": "相性のいいキャラ",
+      "roomLine": "グループで使いやすい一言",
+      "oneLiner": "一言まとめ",
+      "certCardEyebrow": "グループ認証カード",
+      "certCardPrompt": "この部屋の私たちは誰？"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "グループチャットの中の私はどんなキャラ？ 💬 ムードメーカー？既読スルー幽霊？診断してみて",
+      "startKakao": "グループチャットの中の私はどんなキャラ？ 💬 ムードメーカー？既読スルー幽霊？診断してみて",
+      "startWechat": "グループチャットの中の私はどんなキャラ？ 💬 ムードメーカー？既読スルー幽霊？診断してみて",
+      "startWhatsapp": "グループチャットの中の私はどんなキャラ？ 💬 ムードメーカー？既読スルー幽霊？診断してみて",
+      "startTelegram": "グループチャットの中の私はどんなキャラ？ 💬 ムードメーカー？既読スルー幽霊？診断してみて",
+      "startLine": "グループチャットの中の私はどんなキャラ？ 💬 ムードメーカー？既読スルー幽霊？診断してみて"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

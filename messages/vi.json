@@ -15519,5 +15519,67 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3GroupchatCharacterTest": {
+    "startMessage": {
+      "line1": "\"Trong nhóm chat mình là nhân vật nào?\"",
+      "line2": "Người ít nói nhưng hiện diện rõ, người một emoji là xong chuyện, người đọc xong rồi biến. Trong nhóm ai cũng có vai trò riêng. Biết nhân vật của mình thì cũng đoán được bạn bè nhìn mình thế nào.",
+      "line3": "Chọn phản ứng giống mình nhất trong 12 tình huống nhóm. Chúng mình sẽ cho biết bạn thuộc kiểu nào trong 8 nhân vật. Đăng kết quả lên nhóm và so với bạn bè nhé.",
+      "line4": "",
+      "line5": "Xem nhân vật nhóm của tôi 💬 Bắt đầu thật lòng",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Xem nhân vật nhóm của tôi 💬",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Hot",
+      "shareResult": "Chia sẻ kết quả",
+      "keywords": "Từ khóa",
+      "friendsView": "Bạn bè thấy mình thế nào",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "secondCharacter": "Nhân vật đi kèm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "caution": "Cần lưu ý",
+      "goodMatch": "Nhân vật hợp nhất",
+      "roomLine": "Câu nói hay dùng trong nhóm",
+      "oneLiner": "Một câu thôi",
+      "certCardEyebrow": "Thẻ xác nhận nhóm chat",
+      "certCardPrompt": "Trong phòng này chúng ta là ai?"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trong nhóm chat mình là nhân vật nào? 💬 Người tạo vibe? Ma đọc rồi biến? Đo thử đi",
+      "startKakao": "Trong nhóm chat mình là nhân vật nào? 💬 Người tạo vibe? Ma đọc rồi biến? Đo thử đi",
+      "startWechat": "Trong nhóm chat mình là nhân vật nào? 💬 Người tạo vibe? Ma đọc rồi biến? Đo thử đi",
+      "startWhatsapp": "Trong nhóm chat mình là nhân vật nào? 💬 Người tạo vibe? Ma đọc rồi biến? Đo thử đi",
+      "startTelegram": "Trong nhóm chat mình là nhân vật nào? 💬 Người tạo vibe? Ma đọc rồi biến? Đo thử đi",
+      "startLine": "Trong nhóm chat mình là nhân vật nào? 💬 Người tạo vibe? Ma đọc rồi biến? Đo thử đi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ nhé.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

@@ -15528,5 +15528,67 @@
       "similarTestsTop5": "🎯 Top 5 Similar Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
+  },
+  "phase3GroupchatCharacterTest": {
+    "startMessage": {
+      "line1": "\"What group-chat character am I?\"",
+      "line2": "Some people barely talk but fill the room. Some speak in one emoji. Some read everything and vanish. Group chats quietly assign everyone a role. Knowing yours shows a bit of how friends see you.",
+      "line3": "Pick the most you reaction in 12 group-chat situations. We’ll tell you which of 8 characters you are. Drop the result in the chat and compare with friends.",
+      "line4": "",
+      "line5": "Find my group-chat character 💬 Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find my group-chat character 💬",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "keywords": "Key words",
+      "friendsView": "How friends see you",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "",
+      "secondCharacter": "Character that rides along",
+      "strengths": "Strengths of this type",
+      "caution": "Watch out for",
+      "goodMatch": "Best match character",
+      "roomLine": "A line that works in the chat",
+      "oneLiner": "In one line",
+      "certCardEyebrow": "Group-chat ID card",
+      "certCardPrompt": "Who are we in this chat?"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "What group-chat character am I? 💬 Mood Maker? Read-and-Ghost? Find yours",
+      "startKakao": "What group-chat character am I? 💬 Mood Maker? Read-and-Ghost? Find yours",
+      "startWechat": "What group-chat character am I? 💬 Mood Maker? Read-and-Ghost? Find yours",
+      "startWhatsapp": "What group-chat character am I? 💬 Mood Maker? Read-and-Ghost? Find yours",
+      "startTelegram": "What group-chat character am I? 💬 Mood Maker? Read-and-Ghost? Find yours",
+      "startLine": "What group-chat character am I? 💬 Mood Maker? Read-and-Ghost? Find yours"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
   }
 }

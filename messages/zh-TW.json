@@ -14988,5 +14988,67 @@
       "similarTestsTop5": "🎯 相似測驗推薦 Top5",
       "popularTestsTop5": "🔥 當下熱門測驗 Top5"
     }
+  },
+  "phase3GroupchatCharacterTest": {
+    "startMessage": {
+      "line1": "\"群組裡的我是哪種角色？\"",
+      "line2": "話不多但存在感很強的人、一個貼圖說完一切的人、已讀卻消失的人。群組裡總會自然長出各自的角色。知道自己的角色，也能稍微看出朋友怎麼看你。",
+      "line3": "在12個群組情境裡選最像你的反應。我們會從8種角色裡告訴你你是誰。把結果丟進群組，跟朋友比一比吧。",
+      "line4": "",
+      "line5": "看看我的群組角色 💬 誠實地開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "看看我的群組角色 💬",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "keywords": "關鍵字",
+      "friendsView": "朋友眼裡的我",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "secondCharacter": "一起出現的角色",
+      "strengths": "這種類型的優勢",
+      "caution": "需要注意",
+      "goodMatch": "搭得最好的角色",
+      "roomLine": "群組裡好用的一句話",
+      "oneLiner": "一句話總結",
+      "certCardEyebrow": "群組認證卡",
+      "certCardPrompt": "這個群組裡的我們是誰？"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "群組裡的我是哪種角色？ 💬 氣氛擔當？已讀不回幽靈？來測測",
+      "startKakao": "群組裡的我是哪種角色？ 💬 氣氛擔當？已讀不回幽靈？來測測",
+      "startWechat": "群組裡的我是哪種角色？ 💬 氣氛擔當？已讀不回幽靈？來測測",
+      "startWhatsapp": "群組裡的我是哪種角色？ 💬 氣氛擔當？已讀不回幽靈？來測測",
+      "startTelegram": "群組裡的我是哪種角色？ 💬 氣氛擔當？已讀不回幽靈？來測測",
+      "startLine": "群組裡的我是哪種角色？ 💬 氣氛擔當？已讀不回幽靈？來測測"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信裡貼上分享。",
+      "kakaoInit": "正在準備 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 當下熱門測驗 Top5"
+    }
   }
 }
