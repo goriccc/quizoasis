@@ -15719,5 +15719,67 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase3LoveFactbombTTest": {
+    "startMessage": {
+      "line1": "\"연애 상담해 주다 팩폭 날린 적 있나요?\"",
+      "line2": "친구의 연애 고민 앞에서 어떤 사람은 먼저 안아 주고, 어떤 사람은 바로 원인을 짚어 줍니다. 둘 다 사랑의 방식이고 필요한 순간이 다릅니다.",
+      "line3": "12가지 상담 상황에서 나의 반응을 골라 팩폭 T지수를 알려드립니다. 결과에는 나를 닮은 동물 은유도 담겨 있어요. 친구와 비교해 보세요.",
+      "line4": "",
+      "line5": "내 T지수 재기 ⚡ 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 T지수 재기 ⚡",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "scoreTitle": "팩폭 T지수",
+      "scoreUnit": "점",
+      "tfGauge": "F ↔ T",
+      "counselAnimal": "연애 상담 동물",
+      "animalCard": "내 동물 은유 카드",
+      "keywords": "핵심 키워드",
+      "strengths": "이 유형의 강점",
+      "caution": "주의할 점",
+      "tip": "팩폭 한 스푼 팁",
+      "friendCompare": "친구와 동물 조합",
+      "friendCompareHint": "같은 링크로 푼 친구와 비교해 보세요. 이런 조합이 나와요.",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "연애 팩폭 능력 T 테스트 ⚡ 눈물 F? 팩폭 기계? 내 T지수 재기",
+      "startKakao": "연애 팩폭 능력 T 테스트 ⚡ 눈물 F? 팩폭 기계? 내 T지수 재기",
+      "startWechat": "연애 팩폭 능력 T 테스트 ⚡ 눈물 F? 팩폭 기계? 내 T지수 재기",
+      "startWhatsapp": "연애 팩폭 능력 T 테스트 ⚡ 눈물 F? 팩폭 기계? 내 T지수 재기",
+      "startTelegram": "연애 팩폭 능력 T 테스트 ⚡ 눈물 F? 팩폭 기계? 내 T지수 재기",
+      "startLine": "연애 팩폭 능력 T 테스트 ⚡ 눈물 F? 팩폭 기계? 내 T지수 재기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

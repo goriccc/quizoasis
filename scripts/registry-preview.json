@@ -266,5 +266,6 @@
   "phase2_memory_level_test": "game",
   "phase3-balance-99-ultimate": "game",
   "phase3-luck-game-test": "game",
-  "phase3-spot-the-difference-challenge": "game"
+  "phase3-spot-the-difference-challenge": "game",
+  "phase3-love-factbomb-t": "scenario_2"
 }

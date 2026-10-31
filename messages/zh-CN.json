@@ -15581,5 +15581,67 @@
       "similarTestsTop5": "🎯 相似测试推荐 Top5",
       "popularTestsTop5": "🔥 当下热门测试 Top5"
     }
+  },
+  "phase3LoveFactbombTTest": {
+    "startMessage": {
+      "line1": "\"给人恋爱建议时，有没有直接开炮过？\"",
+      "line2": "朋友倒恋爱苦水时，有人先抱抱，有人直接点破原因。两种都是关心的方式，只是需要的时刻不同。",
+      "line3": "在12个咨询情境里选你的反应，测出你的直球T指数。结果还带像你的动物隐喻。跟朋友比一比吧。",
+      "line4": "",
+      "line5": "测测我的T指数 ⚡ 诚实地开始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "测测我的T指数 ⚡",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "popularBadge": "热门",
+      "shareResult": "分享结果",
+      "scoreTitle": "直球T指数",
+      "scoreUnit": "分",
+      "tfGauge": "F ↔ T",
+      "counselAnimal": "恋爱咨询动物",
+      "animalCard": "我的动物隐喻卡",
+      "keywords": "关键词",
+      "strengths": "这一类型的优势",
+      "caution": "需要注意",
+      "tip": "直球一小勺小贴士",
+      "friendCompare": "和朋友的动物组合",
+      "friendCompareHint": "用同一链接让朋友测测，可能会出现这样的组合。",
+      "oneLiner": "一句话总结"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "恋爱直球能力T测试 ⚡ 泪腺F？事实轰炸机？来测T指数",
+      "startKakao": "恋爱直球能力T测试 ⚡ 泪腺F？事实轰炸机？来测T指数",
+      "startWechat": "恋爱直球能力T测试 ⚡ 泪腺F？事实轰炸机？来测T指数",
+      "startWhatsapp": "恋爱直球能力T测试 ⚡ 泪腺F？事实轰炸机？来测T指数",
+      "startTelegram": "恋爱直球能力T测试 ⚡ 泪腺F？事实轰炸机？来测T指数",
+      "startLine": "恋爱直球能力T测试 ⚡ 泪腺F？事实轰炸机？来测T指数"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信里粘贴分享。",
+      "kakaoInit": "正在准备 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 当下热门测试 Top5"
+    }
   }
 }

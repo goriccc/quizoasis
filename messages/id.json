@@ -15581,5 +15581,67 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3LoveFactbombTTest": {
+    "startMessage": {
+      "line1": "\"Pernah bilang blak-blakan pas kasih saran cinta ke temen?\"",
+      "line2": "Di depan curhatan cinta temen, ada yang peluk dulu, ada yang langsung nunjuk penyebabnya. Keduanya cara peduli—bedanya cuma kapan dibutuhkan.",
+      "line3": "Pilih reaksi kamu di 12 situasi konsultasi dan dapatkan skor blak-blakan T. Hasilnya ada metafora hewan yang mirip kamu. Bandingkan sama temen.",
+      "line4": "",
+      "line5": "Cek skor T-ku ⚡ Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cek skor T-ku ⚡",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "scoreTitle": "Skor blak-blakan T",
+      "scoreUnit": " poin",
+      "tfGauge": "F ↔ T",
+      "counselAnimal": "Hewan konseling cinta",
+      "animalCard": "Kartu metafora hewanku",
+      "keywords": "Kata kunci",
+      "strengths": "Kelebihan tipe ini",
+      "caution": "Yang perlu diwaspadai",
+      "tip": "Satu sendok fakta pedas",
+      "friendCompare": "Kombo hewan bareng temen",
+      "friendCompareHint": "Share linknya biar temen ikut cek. Kombo kayak gini bisa muncul.",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tes kemampuan blak-blakan T soal cinta ⚡ F cengeng? Mesin fakta? Cek skor T",
+      "startKakao": "Tes kemampuan blak-blakan T soal cinta ⚡ F cengeng? Mesin fakta? Cek skor T",
+      "startWechat": "Tes kemampuan blak-blakan T soal cinta ⚡ F cengeng? Mesin fakta? Cek skor T",
+      "startWhatsapp": "Tes kemampuan blak-blakan T soal cinta ⚡ F cengeng? Mesin fakta? Cek skor T",
+      "startTelegram": "Tes kemampuan blak-blakan T soal cinta ⚡ F cengeng? Mesin fakta? Cek skor T",
+      "startLine": "Tes kemampuan blak-blakan T soal cinta ⚡ F cengeng? Mesin fakta? Cek skor T"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk dibagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }

@@ -15569,5 +15569,67 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3LoveFactbombTTest": {
+    "startMessage": {
+      "line1": "\"恋愛相談してて、ついズバッと言ったことある？\"",
+      "line2": "友達の恋愛の悩みの前で、まず抱きしめる人もいれば、すぐ原因を指す人もいます。どちらも愛の形で、必要な瞬間が違います。",
+      "line3": "12の相談場面で自分の反応を選ぶと、ズバッと指数（T指数）がわかります。結果にはあなたらしい動物メタファーも。友達と比べてみて。",
+      "line4": "",
+      "line5": "私のT指数を測る ⚡ 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私のT指数を測る ⚡",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "scoreTitle": "ズバッとT指数",
+      "scoreUnit": "点",
+      "tfGauge": "F ↔ T",
+      "counselAnimal": "恋愛相談アニマル",
+      "animalCard": "わたしの動物メタファーカード",
+      "keywords": "キーワード",
+      "strengths": "このタイプの強み",
+      "caution": "注意点",
+      "tip": "ズバッと一言のコツ",
+      "friendCompare": "友達との動物コンビ",
+      "friendCompareHint": "同じリンクで友達と比べてみて。こんな組み合わせが出ます。",
+      "oneLiner": "一言まとめ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "恋愛ズバッと能力Tテスト ⚡ 涙腺F？ファクト爆撃機？T指数を測ろう",
+      "startKakao": "恋愛ズバッと能力Tテスト ⚡ 涙腺F？ファクト爆撃機？T指数を測ろう",
+      "startWechat": "恋愛ズバッと能力Tテスト ⚡ 涙腺F？ファクト爆撃機？T指数を測ろう",
+      "startWhatsapp": "恋愛ズバッと能力Tテスト ⚡ 涙腺F？ファクト爆撃機？T指数を測ろう",
+      "startTelegram": "恋愛ズバッと能力Tテスト ⚡ 涙腺F？ファクト爆撃機？T指数を測ろう",
+      "startLine": "恋愛ズバッと能力Tテスト ⚡ 涙腺F？ファクト爆撃機？T指数を測ろう"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

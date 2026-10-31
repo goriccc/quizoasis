@@ -15590,5 +15590,67 @@
       "similarTestsTop5": "🎯 Top 5 Similar Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
+  },
+  "phase3LoveFactbombTTest": {
+    "startMessage": {
+      "line1": "\"Ever dropped hard truths while giving dating advice?\"",
+      "line2": "When a friend vents about love, some people hug first. Others name the cause right away. Both are ways of caring—and each has a moment when it’s needed.",
+      "line3": "Pick your reactions in 12 counseling situations and get your straight-talk T score. Results include an animal metaphor that feels like you. Compare with friends.",
+      "line4": "",
+      "line5": "Check my T score ⚡ Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Check my T score ⚡",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "scoreTitle": "Straight-talk T score",
+      "scoreUnit": " pts",
+      "tfGauge": "F ↔ T",
+      "counselAnimal": "Dating-advice animal",
+      "animalCard": "My animal metaphor card",
+      "keywords": "Key words",
+      "strengths": "Strengths of this type",
+      "caution": "Watch out for",
+      "tip": "One spoon of hard truth",
+      "friendCompare": "Friend animal combos",
+      "friendCompareHint": "Share the link and compare with friends. Combos like these can show up.",
+      "oneLiner": "In one line"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Dating Straight-Talk T Test ⚡ Tearful F? Fact-Bomb Machine? Check your T score",
+      "startKakao": "Dating Straight-Talk T Test ⚡ Tearful F? Fact-Bomb Machine? Check your T score",
+      "startWechat": "Dating Straight-Talk T Test ⚡ Tearful F? Fact-Bomb Machine? Check your T score",
+      "startWhatsapp": "Dating Straight-Talk T Test ⚡ Tearful F? Fact-Bomb Machine? Check your T score",
+      "startTelegram": "Dating Straight-Talk T Test ⚡ Tearful F? Fact-Bomb Machine? Check your T score",
+      "startLine": "Dating Straight-Talk T Test ⚡ Tearful F? Fact-Bomb Machine? Check your T score"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
   }
 }

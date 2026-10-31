@@ -15581,5 +15581,67 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3LoveFactbombTTest": {
+    "startMessage": {
+      "line1": "\"Từng nói thẳng khi tư vấn tình cảm cho bạn chưa?\"",
+      "line2": "Trước nỗi lòng tình cảm của bạn, người thì ôm trước, người thì chỉ ngay nguyên nhân. Cả hai đều là cách yêu thương—chỉ khác lúc nào cần.",
+      "line3": "Chọn phản ứng của bạn trong 12 tình huống tư vấn để biết chỉ số nói thẳng T. Kết quả còn có ẩn dụ động vật giống bạn. So với bạn bè nhé.",
+      "line4": "",
+      "line5": "Đo chỉ số T của tôi ⚡ Bắt đầu thật lòng",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Đo chỉ số T của tôi ⚡",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Hot",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreTitle": "Chỉ số nói thẳng T",
+      "scoreUnit": " điểm",
+      "tfGauge": "F ↔ T",
+      "counselAnimal": "Động vật tư vấn tình cảm",
+      "animalCard": "Thẻ ẩn dụ động vật của tôi",
+      "keywords": "Từ khóa",
+      "strengths": "Điểm mạnh của kiểu này",
+      "caution": "Cần lưu ý",
+      "tip": "Một muỗng nói thẳng",
+      "friendCompare": "Combo động vật với bạn bè",
+      "friendCompareHint": "Chia sẻ link để so với bạn bè. Có thể ra những combo như thế này.",
+      "oneLiner": "Một câu thôi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Test khả năng nói thẳng T trong tình cảm ⚡ F nước mắt? Máy ném sự thật? Đo chỉ số T",
+      "startKakao": "Test khả năng nói thẳng T trong tình cảm ⚡ F nước mắt? Máy ném sự thật? Đo chỉ số T",
+      "startWechat": "Test khả năng nói thẳng T trong tình cảm ⚡ F nước mắt? Máy ném sự thật? Đo chỉ số T",
+      "startWhatsapp": "Test khả năng nói thẳng T trong tình cảm ⚡ F nước mắt? Máy ném sự thật? Đo chỉ số T",
+      "startTelegram": "Test khả năng nói thẳng T trong tình cảm ⚡ F nước mắt? Máy ném sự thật? Đo chỉ số T",
+      "startLine": "Test khả năng nói thẳng T trong tình cảm ⚡ F nước mắt? Máy ném sự thật? Đo chỉ số T"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ nhé.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }
