@@ -15112,5 +15112,64 @@
       "similarTestsTop5": "🎯 相似測驗推薦 Top5",
       "popularTestsTop5": "🔥 當下熱門測驗 Top5"
     }
+  },
+  "phase3LoveTemperatureNowTest": {
+    "startMessage": {
+      "line1": "\"現在的戀愛，是熱得冒泡，還是在降溫？\"",
+      "line2": "一開始很燙，不知不覺變溫吞；也有人談很久依然暖。溫度不是愛有多大，而是此刻兩人之間流動的對話和感情有多少。",
+      "line3": "用10個情境把你的反應加總，告訴你現在的戀愛溫度。低溫不是終點，而是提示該從哪裡加溫。跟朋友比比分數吧。",
+      "line4": "",
+      "line5": "測測我的戀愛溫度 🌡️ 誠實地開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "測測我的戀愛溫度 🌡️",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "scoreTitle": "戀愛溫度",
+      "scoreUnit": "分",
+      "tempNow": "現在溫度 {temp}",
+      "keywords": "關鍵字",
+      "strengths": "這種類型的優勢",
+      "coldSpot": "戀愛變冷的點",
+      "tips": "升溫處方",
+      "counseling": "專業諮詢提示",
+      "oneLiner": "一句話總結"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的戀愛溫度現在幾度？ 🌡️ 零下冷戰？沸騰熱戀？來認證分數",
+      "startKakao": "我的戀愛溫度現在幾度？ 🌡️ 零下冷戰？沸騰熱戀？來認證分數",
+      "startWechat": "我的戀愛溫度現在幾度？ 🌡️ 零下冷戰？沸騰熱戀？來認證分數",
+      "startWhatsapp": "我的戀愛溫度現在幾度？ 🌡️ 零下冷戰？沸騰熱戀？來認證分數",
+      "startTelegram": "我的戀愛溫度現在幾度？ 🌡️ 零下冷戰？沸騰熱戀？來認證分數",
+      "startLine": "我的戀愛溫度現在幾度？ 🌡️ 零下冷戰？沸騰熱戀？來認證分數"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信裡貼上分享。",
+      "kakaoInit": "正在準備 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 當下熱門測驗 Top5"
+    }
   }
 }

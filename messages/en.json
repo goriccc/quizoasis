@@ -15652,5 +15652,64 @@
       "similarTestsTop5": "🎯 Top 5 Similar Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
+  },
+  "phase3LoveTemperatureNowTest": {
+    "startMessage": {
+      "line1": "\"Is my relationship boiling hot—or cooling down?\"",
+      "line2": "It can start fiery and turn lukewarm, or stay warm for years. Temperature isn’t the size of love—it’s how much talk and affection are flowing between you right now.",
+      "line3": "Ten situations add up your reactions into your relationship temperature. A low reading isn’t the end—it’s a signal of what to warm. Compare scores with friends.",
+      "line4": "",
+      "line5": "Check my relationship temp 🌡️ Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Check my relationship temp 🌡️",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "scoreTitle": "Relationship temperature",
+      "scoreUnit": " pts",
+      "tempNow": "Right now {temp}",
+      "keywords": "Key words",
+      "strengths": "Strengths of this type",
+      "coldSpot": "Where my relationship cooled",
+      "tips": "Prescription to raise the heat",
+      "counseling": "Professional support note",
+      "oneLiner": "In one line"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "What's my relationship temperature? 🌡️ Below freezing? Boiling hot? Certify your score",
+      "startKakao": "What's my relationship temperature? 🌡️ Below freezing? Boiling hot? Certify your score",
+      "startWechat": "What's my relationship temperature? 🌡️ Below freezing? Boiling hot? Certify your score",
+      "startWhatsapp": "What's my relationship temperature? 🌡️ Below freezing? Boiling hot? Certify your score",
+      "startTelegram": "What's my relationship temperature? 🌡️ Below freezing? Boiling hot? Certify your score",
+      "startLine": "What's my relationship temperature? 🌡️ Below freezing? Boiling hot? Certify your score"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
   }
 }

@@ -15643,5 +15643,64 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3LoveTemperatureNowTest": {
+    "startMessage": {
+      "line1": "\"Pacaranku sekarang lagi mendidih—atau lagi dingin?\"",
+      "line2": "Awalnya panas, lalu jadi hangat-hangat kuku; ada juga yang tetap hangat meski sudah lama. Suhu bukan ukuran besar-kecilnya cinta—tapi seberapa banyak obrolan dan kasih sayang yang mengalir di antara kalian sekarang.",
+      "line3": "Sepuluh situasi menjumlahkan reaksi kamu jadi suhu pacaran sekarang. Suhu rendah bukan akhir—itu sinyal bagian mana yang perlu dihangatkan. Bandingkan skor sama temen.",
+      "line4": "",
+      "line5": "Cek suhu pacaranku 🌡️ Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cek suhu pacaranku 🌡️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "scoreTitle": "Suhu pacaran",
+      "scoreUnit": " poin",
+      "tempNow": "Suhu sekarang {temp}",
+      "keywords": "Kata kunci",
+      "strengths": "Kelebihan tipe ini",
+      "coldSpot": "Titik pacaran yang dingin",
+      "tips": "Resep naikkan suhu",
+      "counseling": "Catatan bantuan profesional",
+      "oneLiner": "Satu kalimat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Suhu pacaran sekarang berapa derajat? 🌡️ Di bawah nol? Mendidih? Sertifikasi skor yuk",
+      "startKakao": "Suhu pacaran sekarang berapa derajat? 🌡️ Di bawah nol? Mendidih? Sertifikasi skor yuk",
+      "startWechat": "Suhu pacaran sekarang berapa derajat? 🌡️ Di bawah nol? Mendidih? Sertifikasi skor yuk",
+      "startWhatsapp": "Suhu pacaran sekarang berapa derajat? 🌡️ Di bawah nol? Mendidih? Sertifikasi skor yuk",
+      "startTelegram": "Suhu pacaran sekarang berapa derajat? 🌡️ Di bawah nol? Mendidih? Sertifikasi skor yuk",
+      "startLine": "Suhu pacaran sekarang berapa derajat? 🌡️ Di bawah nol? Mendidih? Sertifikasi skor yuk"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk dibagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }

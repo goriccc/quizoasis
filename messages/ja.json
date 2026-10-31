@@ -15631,5 +15631,64 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3LoveTemperatureNowTest": {
+    "startMessage": {
+      "line1": "\"今の恋は熱く煮えてる？それとも冷めてきてる？\"",
+      "line2": "最初は熱くてもいつの間にかぬるくなる恋もあれば、長く付き合っても温かい恋もあります。温度は愛の大きさじゃなく、今ふたりのあいだを行き交う会話と愛情の量です。",
+      "line3": "10の場面で反応を点数にして、今の恋愛温度を伝えます。低い温度は終わりじゃなく、どこを温めればいいかのサイン。友達と点数を比べてみて。",
+      "line4": "",
+      "line5": "私の恋愛温度を測る 🌡️ 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の恋愛温度を測る 🌡️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "scoreTitle": "恋愛温度",
+      "scoreUnit": "点",
+      "tempNow": "いまの温度 {temp}",
+      "keywords": "キーワード",
+      "strengths": "このタイプの強み",
+      "coldSpot": "恋が冷えたポイント",
+      "tips": "温度を上げる処方箋",
+      "counseling": "専門家相談のご案内",
+      "oneLiner": "一言まとめ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "今の恋愛温度は何度？ 🌡️ 氷点下の冷戦？熱々恋愛？点数で認証",
+      "startKakao": "今の恋愛温度は何度？ 🌡️ 氷点下の冷戦？熱々恋愛？点数で認証",
+      "startWechat": "今の恋愛温度は何度？ 🌡️ 氷点下の冷戦？熱々恋愛？点数で認証",
+      "startWhatsapp": "今の恋愛温度は何度？ 🌡️ 氷点下の冷戦？熱々恋愛？点数で認証",
+      "startTelegram": "今の恋愛温度は何度？ 🌡️ 氷点下の冷戦？熱々恋愛？点数で認証",
+      "startLine": "今の恋愛温度は何度？ 🌡️ 氷点下の冷戦？熱々恋愛？点数で認証"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

@@ -15643,5 +15643,64 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3LoveTemperatureNowTest": {
+    "startMessage": {
+      "line1": "\"Tình yêu giờ đang sôi sục, hay đang nguội dần?\"",
+      "line2": "Ban đầu nóng bỏng rồi bỗng ấm ấm, cũng có cặp vẫn ấm dù yêu lâu. Nhiệt độ không phải độ lớn của tình yêu—mà là lượng trò chuyện và yêu thương đang chảy giữa hai người lúc này.",
+      "line3": "Cộng điểm phản ứng trong 10 tình huống để biết nhiệt độ tình yêu hiện tại. Nhiệt thấp không phải kết thúc—là tín hiệu nên sưởi chỗ nào. So điểm với bạn bè nhé.",
+      "line4": "",
+      "line5": "Đo nhiệt độ tình yêu của tôi 🌡️ Bắt đầu thật lòng",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Đo nhiệt độ tình yêu của tôi 🌡️",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Hot",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreTitle": "Nhiệt độ tình yêu",
+      "scoreUnit": " điểm",
+      "tempNow": "Nhiệt độ lúc này {temp}",
+      "keywords": "Từ khóa",
+      "strengths": "Điểm mạnh của kiểu này",
+      "coldSpot": "Chỗ tình yêu đang nguội",
+      "tips": "Đơn thuốc tăng nhiệt",
+      "counseling": "Gợi ý tư vấn chuyên môn",
+      "oneLiner": "Một câu thôi"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Nhiệt độ tình yêu giờ bao nhiêu độ? 🌡️ Dưới 0? Sôi sục? Chứng nhận điểm đi",
+      "startKakao": "Nhiệt độ tình yêu giờ bao nhiêu độ? 🌡️ Dưới 0? Sôi sục? Chứng nhận điểm đi",
+      "startWechat": "Nhiệt độ tình yêu giờ bao nhiêu độ? 🌡️ Dưới 0? Sôi sục? Chứng nhận điểm đi",
+      "startWhatsapp": "Nhiệt độ tình yêu giờ bao nhiêu độ? 🌡️ Dưới 0? Sôi sục? Chứng nhận điểm đi",
+      "startTelegram": "Nhiệt độ tình yêu giờ bao nhiêu độ? 🌡️ Dưới 0? Sôi sục? Chứng nhận điểm đi",
+      "startLine": "Nhiệt độ tình yêu giờ bao nhiêu độ? 🌡️ Dưới 0? Sôi sục? Chứng nhận điểm đi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ nhé.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }
