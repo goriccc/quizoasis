@@ -15690,5 +15690,72 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3LoveSuperpowerTest": {
+    "startMessage": {
+      "line1": "\"恋愛には、自分だけの超能力があります。\"",
+      "line2": "同じ恋愛でも、本音を先に察する人もいれば、一瞬で空気を変える人もいます。超能力は、無意識にうまくやっている恋愛クセの別名です。",
+      "line3": "12の恋愛シーンでいちばん自分らしい反応を選んでください。あなたの超能力と使い方、注意点をお伝えします。きれいな結果カードは保存を。",
+      "line4": "",
+      "line5": "私の超能力を探す 🔮 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の超能力を探す 🔮",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "abilityIdentity": "能力の正体",
+      "shineMoment": "この能力が輝く瞬間",
+      "scoreTitle": "超能力スコア",
+      "scoreUnit": "点",
+      "secondAbility": "一緒に使う超能力",
+      "howToUse": "使い方",
+      "caution": "注意点",
+      "tip": "恋愛ワンポイント",
+      "oneLiner": "一言まとめ",
+      "certCardEyebrow": "恋愛超能力カード",
+      "certCardPrompt": "カード保存して、友だちのタイプ当てに挑戦！",
+      "friendGuessTitle": "友だちの超能力はどれ？",
+      "friendGuessPrompt": "友だちがシェアした結果の超能力を当ててみよう。（タイプ番号だけ比較します）",
+      "friendGuessHint": "結果リンクを送ると、友だちがあなたの超能力を当てられます。",
+      "friendGuessShare": "友だちに当ててもらうためにシェア",
+      "friendGuessCorrect": "正解！友だちの超能力を当てました 🎉",
+      "friendGuessWrong": "惜しい！友だちの超能力は{type}でした"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の隠れた恋愛超能力 🔮 心読み？空気チェンジ？自分の力を探す",
+      "startKakao": "私の隠れた恋愛超能力 🔮 心読み？空気チェンジ？自分の力を探す",
+      "startWechat": "私の隠れた恋愛超能力 🔮 心読み？空気チェンジ？自分の力を探す",
+      "startWhatsapp": "私の隠れた恋愛超能力 🔮 心読み？空気チェンジ？自分の力を探す",
+      "startTelegram": "私の隠れた恋愛超能力 🔮 心読み？空気チェンジ？自分の力を探す",
+      "startLine": "私の隠れた恋愛超能力 🔮 心読み？空気チェンジ？自分の力を探す"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

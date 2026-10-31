@@ -15840,5 +15840,72 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase3LoveSuperpowerTest": {
+    "startMessage": {
+      "line1": "\"연애에서 나만 가진 초능력이 있습니다.\"",
+      "line2": "같은 연애를 해도 누구는 상대의 속마음을 먼저 알아채고, 누구는 분위기를 순식간에 바꿉니다. 초능력은 내가 무심코 잘하는 연애 습관의 다른 이름입니다.",
+      "line3": "12가지 연애 장면에서 가장 나다운 반응을 골라 보세요. 나의 초능력과 쓰는 법, 그리고 조심할 점을 알려드립니다. 예쁜 결과 카드는 저장해 두세요.",
+      "line4": "",
+      "line5": "내 초능력 찾기 🔮 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 초능력 찾기 🔮",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "abilityIdentity": "능력의 정체",
+      "shineMoment": "이 능력이 빛나는 순간",
+      "scoreTitle": "초능력 점수",
+      "scoreUnit": "점",
+      "secondAbility": "함께 쓰는 초능력",
+      "howToUse": "쓰는 법",
+      "caution": "조심할 점",
+      "tip": "연애 한 줄 팁",
+      "oneLiner": "한 줄 평",
+      "certCardEyebrow": "연애 초능력 카드",
+      "certCardPrompt": "카드 저장하고 친구 유형 맞혀 봐!",
+      "friendGuessTitle": "친구는 어떤 초능력일까?",
+      "friendGuessPrompt": "친구가 공유한 결과의 초능력을 맞춰 보세요. (유형 번호만 비교합니다)",
+      "friendGuessHint": "결과 링크를 보내면 친구가 내 초능력을 맞혀 볼 수 있어요.",
+      "friendGuessShare": "친구에게 맞혀 달라고 공유하기",
+      "friendGuessCorrect": "정답! 친구의 초능력을 맞혔어요 🎉",
+      "friendGuessWrong": "아쉽! 친구의 초능력은 {type}이었어요"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 숨겨진 연애 초능력 🔮 마음 읽기? 분위기 변신? 내 초능력 찾기",
+      "startKakao": "나의 숨겨진 연애 초능력 🔮 마음 읽기? 분위기 변신? 내 초능력 찾기",
+      "startWechat": "나의 숨겨진 연애 초능력 🔮 마음 읽기? 분위기 변신? 내 초능력 찾기",
+      "startWhatsapp": "나의 숨겨진 연애 초능력 🔮 마음 읽기? 분위기 변신? 내 초능력 찾기",
+      "startTelegram": "나의 숨겨진 연애 초능력 🔮 마음 읽기? 분위기 변신? 내 초능력 찾기",
+      "startLine": "나의 숨겨진 연애 초능력 🔮 마음 읽기? 분위기 변신? 내 초능력 찾기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

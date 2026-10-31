@@ -210,6 +210,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-groupchat-character': 'scenario_4',
   'phase3-love-factbomb-t': 'scenario_2',
   'phase3-love-temperature-now': 'scenario_4',
+  'phase3-love-superpower': 'scenario_4',
   'phase3-face-first-impression': 'face',
   'phase3-face-animal-type': 'face',
   'phase3-face-profile-point': 'face',

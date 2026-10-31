@@ -39,6 +39,7 @@ import { PHASE3_CANT_CONFESS_FIRST_META } from '@/lib/phase3CantConfessFirstData
 import { PHASE3_GROUPCHAT_CHARACTER_META } from '@/lib/phase3GroupchatCharacterData';
 import { PHASE3_LOVE_FACTBOMB_T_META } from '@/lib/phase3LoveFactbombTData';
 import { PHASE3_LOVE_TEMPERATURE_NOW_META } from '@/lib/phase3LoveTemperatureNowData';
+import { PHASE3_LOVE_SUPERPOWER_META } from '@/lib/phase3LoveSuperpowerData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -385,6 +386,10 @@ const Phase3LoveFactbombTTestClient = dynamic(
 );
 const Phase3LoveTemperatureNowTestClient = dynamic(
   () => import('@/components/Phase3LoveTemperatureNowTestClient'),
+  { ssr: false }
+);
+const Phase3LoveSuperpowerTestClient = dynamic(
+  () => import('@/components/Phase3LoveSuperpowerTestClient'),
   { ssr: false }
 );
 
@@ -2867,6 +2872,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_TEMPERATURE_NOW_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-superpower') {
+    test = {
+      slug: 'phase3-love-superpower',
+      title: PHASE3_LOVE_SUPERPOWER_META.title,
+      description: PHASE3_LOVE_SUPERPOWER_META.description,
+      thumbnail: 'p3_test_love_superpower.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_LOVE_SUPERPOWER_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10616,6 +10634,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveTemperatureNowQuestions}
             results={phase3LoveTemperatureNowResults}
             questionCount={phase3LoveTemperatureNowQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-love-superpower') {
+      const { phase3LoveSuperpowerQuestions, phase3LoveSuperpowerResults } = await import(
+        '@/lib/phase3LoveSuperpowerData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-love-superpower',
+        title: PHASE3_LOVE_SUPERPOWER_META.title,
+        description: PHASE3_LOVE_SUPERPOWER_META.description,
+        thumbnail: 'p3_test_love_superpower.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_LOVE_SUPERPOWER_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3LoveSuperpowerTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3LoveSuperpowerQuestions}
+            results={phase3LoveSuperpowerResults}
+            questionCount={phase3LoveSuperpowerQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

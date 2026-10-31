@@ -15171,5 +15171,72 @@
       "similarTestsTop5": "🎯 相似測驗推薦 Top5",
       "popularTestsTop5": "🔥 當下熱門測驗 Top5"
     }
+  },
+  "phase3LoveSuperpowerTest": {
+    "startMessage": {
+      "line1": "\"戀愛裡，你有屬於自己的超能力。\"",
+      "line2": "同樣談戀愛，有人先讀懂沒說出口的心，有人一句話就改掉氣氛。超能力，其實是你不知不覺已經很會的戀愛習慣。",
+      "line3": "在12個戀愛場景裡選出最像自己的反應。我們會告訴你你的超能力、用法和要注意的點。漂亮的結果卡記得存下來。",
+      "line4": "",
+      "line5": "找出我的超能力 🔮 誠實開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "找出我的超能力 🔮",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "abilityIdentity": "能力的本質",
+      "shineMoment": "這項能力最亮的時刻",
+      "scoreTitle": "超能力分數",
+      "scoreUnit": "分",
+      "secondAbility": "一起用的超能力",
+      "howToUse": "怎麼用",
+      "caution": "要注意",
+      "tip": "戀愛小提示",
+      "oneLiner": "一句話總結",
+      "certCardEyebrow": "戀愛超能力卡",
+      "certCardPrompt": "存下卡片，讓朋友猜你的類型！",
+      "friendGuessTitle": "朋友是哪種超能力？",
+      "friendGuessPrompt": "猜猜朋友分享結果裡的超能力。（只比較類型編號）",
+      "friendGuessHint": "把結果連結發出去，朋友就能猜你的超能力。",
+      "friendGuessShare": "分享給朋友來猜",
+      "friendGuessCorrect": "答對了！你猜中了朋友的超能力 🎉",
+      "friendGuessWrong": "差一點！朋友的超能力是{type}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我隱藏的戀愛超能力 🔮 讀心？氛圍轉換？來找找你的能力",
+      "startKakao": "我隱藏的戀愛超能力 🔮 讀心？氛圍轉換？來找找你的能力",
+      "startWechat": "我隱藏的戀愛超能力 🔮 讀心？氛圍轉換？來找找你的能力",
+      "startWhatsapp": "我隱藏的戀愛超能力 🔮 讀心？氛圍轉換？來找找你的能力",
+      "startTelegram": "我隱藏的戀愛超能力 🔮 讀心？氛圍轉換？來找找你的能力",
+      "startLine": "我隱藏的戀愛超能力 🔮 讀心？氛圍轉換？來找找你的能力"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請到 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
   }
 }

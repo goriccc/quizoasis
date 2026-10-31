@@ -268,5 +268,6 @@
   "phase3-luck-game-test": "game",
   "phase3-spot-the-difference-challenge": "game",
   "phase3-love-factbomb-t": "scenario_2",
-  "phase3-love-temperature-now": "scenario_4"
+  "phase3-love-temperature-now": "scenario_4",
+  "phase3-love-superpower": "scenario_4"
 }

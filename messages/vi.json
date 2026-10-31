@@ -15702,5 +15702,72 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3LoveSuperpowerTest": {
+    "startMessage": {
+      "line1": "\"Trong tình yêu, bạn có siêu năng lực riêng.\"",
+      "line2": "Cùng một mối quan hệ, người thì đọc được điều chưa nói trước—người thì đổi không khí chỉ với một câu. Siêu năng lực chính là thói quen yêu bạn vốn đã giỏi.",
+      "line3": "Chọn phản ứng đúng nhất với mình trong 12 khoảnh khắc hẹn hò. Chúng tôi sẽ cho biết siêu năng lực của bạn, cách dùng và điều cần lưu ý. Hãy lưu thẻ kết quả đẹp nhé.",
+      "line4": "",
+      "line5": "Tìm siêu năng lực của tôi 🔮 Bắt đầu thành thật",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm siêu năng lực của tôi 🔮",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "abilityIdentity": "Bản chất năng lực",
+      "shineMoment": "Khi năng lực này tỏa sáng",
+      "scoreTitle": "Điểm siêu năng lực",
+      "scoreUnit": " điểm",
+      "secondAbility": "Siêu năng lực dùng kèm",
+      "howToUse": "Cách dùng",
+      "caution": "Cần lưu ý",
+      "tip": "Mẹo tình yêu",
+      "oneLiner": "Một câu tóm tắt",
+      "certCardEyebrow": "Thẻ siêu năng lực tình yêu",
+      "certCardPrompt": "Lưu thẻ và để bạn bè đoán kiểu của bạn!",
+      "friendGuessTitle": "Bạn của bạn là siêu năng lực nào?",
+      "friendGuessPrompt": "Đoán siêu năng lực từ kết quả bạn chia sẻ. (Chỉ so sánh số loại.)",
+      "friendGuessHint": "Gửi link kết quả để bạn bè đoán năng lực của bạn.",
+      "friendGuessShare": "Chia sẻ để bạn bè đoán",
+      "friendGuessCorrect": "Đúng rồi! Bạn đoán đúng siêu năng lực của bạn 🎉",
+      "friendGuessWrong": "Tiếc quá! Siêu năng lực của bạn là {type}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Siêu năng lực tình yêu ẩn giấu 🔮 Đọc tâm? Đổi không khí? Tìm sức mạnh của bạn",
+      "startKakao": "Siêu năng lực tình yêu ẩn giấu 🔮 Đọc tâm? Đổi không khí? Tìm sức mạnh của bạn",
+      "startWechat": "Siêu năng lực tình yêu ẩn giấu 🔮 Đọc tâm? Đổi không khí? Tìm sức mạnh của bạn",
+      "startWhatsapp": "Siêu năng lực tình yêu ẩn giấu 🔮 Đọc tâm? Đổi không khí? Tìm sức mạnh của bạn",
+      "startTelegram": "Siêu năng lực tình yêu ẩn giấu 🔮 Đọc tâm? Đổi không khí? Tìm sức mạnh của bạn",
+      "startLine": "Siêu năng lực tình yêu ẩn giấu 🔮 Đọc tâm? Đổi không khí? Tìm sức mạnh của bạn"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

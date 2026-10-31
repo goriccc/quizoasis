@@ -15711,5 +15711,72 @@
       "similarTestsTop5": "🎯 Top 5 Similar Tests",
       "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
     }
+  },
+  "phase3LoveSuperpowerTest": {
+    "startMessage": {
+      "line1": "\"You have a love superpower all your own.\"",
+      "line2": "In the same relationship, some people catch what’s unsaid first—others flip the vibe in a second. A superpower is just another name for the dating habit you already do well.",
+      "line3": "Pick your most natural reactions in 12 dating moments. We’ll show your power, how to use it, and what to watch out for. Save the pretty result card.",
+      "line4": "",
+      "line5": "Find my superpower 🔮 Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find my superpower 🔮",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "abilityIdentity": "What this power really is",
+      "shineMoment": "When this power shines",
+      "scoreTitle": "Superpower scores",
+      "scoreUnit": " pts",
+      "secondAbility": "Power you also use",
+      "howToUse": "How to use it",
+      "caution": "Watch out for",
+      "tip": "One dating tip",
+      "oneLiner": "In one line",
+      "certCardEyebrow": "Love Superpower Card",
+      "certCardPrompt": "Save the card and let friends guess your type!",
+      "friendGuessTitle": "What's your friend's superpower?",
+      "friendGuessPrompt": "Guess the superpower from your friend's shared result. (We only compare type numbers.)",
+      "friendGuessHint": "Send your result link so friends can guess your power.",
+      "friendGuessShare": "Share so friends can guess",
+      "friendGuessCorrect": "Correct! You guessed your friend's power 🎉",
+      "friendGuessWrong": "Close! Your friend's power was {type}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "My Hidden Love Superpower 🔮 Mind Reading? Mood Shift? Find yours",
+      "startKakao": "My Hidden Love Superpower 🔮 Mind Reading? Mood Shift? Find yours",
+      "startWechat": "My Hidden Love Superpower 🔮 Mind Reading? Mood Shift? Find yours",
+      "startWhatsapp": "My Hidden Love Superpower 🔮 Mind Reading? Mood Shift? Find yours",
+      "startTelegram": "My Hidden Love Superpower 🔮 Mind Reading? Mood Shift? Find yours",
+      "startLine": "My Hidden Love Superpower 🔮 Mind Reading? Mood Shift? Find yours"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests",
+      "popularTestsTop5": "🔥 Top 5 Popular Tests Right Now"
+    }
   }
 }

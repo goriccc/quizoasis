@@ -15702,5 +15702,72 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3LoveSuperpowerTest": {
+    "startMessage": {
+      "line1": "\"Di cinta, kamu punya superpower sendiri.\"",
+      "line2": "Di hubungan yang sama, ada yang lebih dulu merasakan yang belum terucap—ada yang mengubah suasana dalam sekejap. Superpower hanyalah nama lain dari kebiasaan cinta yang sudah kamu kuasai.",
+      "line3": "Pilih reaksi paling natural di 12 momen kencan. Kami tunjukkan kekuatanmu, cara memakainya, dan yang perlu diwaspadai. Simpan kartu hasil yang cantik.",
+      "line4": "",
+      "line5": "Temukan superpowerku 🔮 Mulai dengan jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Temukan superpowerku 🔮",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "abilityIdentity": "Inti kekuatan ini",
+      "shineMoment": "Saat kekuatan ini bersinar",
+      "scoreTitle": "Skor superpower",
+      "scoreUnit": " poin",
+      "secondAbility": "Superpower yang ikut dipakai",
+      "howToUse": "Cara memakai",
+      "caution": "Yang perlu diwaspadai",
+      "tip": "Tips cinta singkat",
+      "oneLiner": "Dalam satu baris",
+      "certCardEyebrow": "Kartu Superpower Cinta",
+      "certCardPrompt": "Simpan kartu dan biarkan teman menebak tipemu!",
+      "friendGuessTitle": "Superpower temanmu yang mana?",
+      "friendGuessPrompt": "Tebak superpower dari hasil yang dibagikan teman. (Hanya bandingkan nomor tipe.)",
+      "friendGuessHint": "Kirim tautan hasil agar teman bisa menebak kekuatanmu.",
+      "friendGuessShare": "Bagikan agar teman menebak",
+      "friendGuessCorrect": "Benar! Kamu menebak superpower teman 🎉",
+      "friendGuessWrong": "Sayang! Superpower teman adalah {type}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Superpower Cinta Tersembunyi 🔮 Baca pikiran? Ubah suasana? Temukan milikmu",
+      "startKakao": "Superpower Cinta Tersembunyi 🔮 Baca pikiran? Ubah suasana? Temukan milikmu",
+      "startWechat": "Superpower Cinta Tersembunyi 🔮 Baca pikiran? Ubah suasana? Temukan milikmu",
+      "startWhatsapp": "Superpower Cinta Tersembunyi 🔮 Baca pikiran? Ubah suasana? Temukan milikmu",
+      "startTelegram": "Superpower Cinta Tersembunyi 🔮 Baca pikiran? Ubah suasana? Temukan milikmu",
+      "startLine": "Superpower Cinta Tersembunyi 🔮 Baca pikiran? Ubah suasana? Temukan milikmu"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Populer Sekarang"
+    }
   }
 }
