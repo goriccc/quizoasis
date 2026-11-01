@@ -190,6 +190,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-family-balance-game': 'game',
   'phase3-friendship-balance-game': 'game',
   'phase3-marriage-cohabit-balance-game': 'game',
+  'phase3-love-vs-friend-balance-game': 'game',
   'phase3-dating-cost-balance-game': 'game',
   'phase3-some-balance-game': 'game',
   'phase3-food-balance-game': 'game',

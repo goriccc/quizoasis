@@ -15769,5 +15769,61 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3LoveVsFriendBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"Đám cưới bạn vs kỷ niệm với người yêu trùng ngày—bạn chọn gì?\"",
+      "line2": "Người yêu và bạn đều quý nên lịch đụng là khó chọn. Chọn giữa hai phương án đều thiệt sẽ lộ cách bạn đặt ưu tiên và gỡ rối.",
+      "line3": "12 vòng chọn cực hạn cho thấy kiểu cân bằng tình yêu–tình bạn của bạn.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Đừng nghĩ lâu"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "yourResult": "Kiểu cân bằng tình yêu–tình bạn của tôi",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "choiceStyle": "Cách bạn chọn",
+      "strengths": "Điểm mạnh của kiểu này",
+      "goodMatch": "Kiểu hợp nhất",
+      "caution": "Cần lưu ý",
+      "tips": "Gợi ý cho mối quan hệ",
+      "oneLiner": "Một câu tóm tắt",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Tình yêu vs Tình bạn (cực) ⚖️ Đám cưới vs kỷ niệm, bạn chọn gì?",
+      "startKakao": "Trò cân bằng — Tình yêu vs Tình bạn (cực) ⚖️ Đám cưới vs kỷ niệm, bạn chọn gì?",
+      "startWechat": "Trò cân bằng — Tình yêu vs Tình bạn (cực) ⚖️ Đám cưới vs kỷ niệm, bạn chọn gì?",
+      "startWhatsapp": "Trò cân bằng — Tình yêu vs Tình bạn (cực) ⚖️ Đám cưới vs kỷ niệm, bạn chọn gì?",
+      "startTelegram": "Trò cân bằng — Tình yêu vs Tình bạn (cực) ⚖️ Đám cưới vs kỷ niệm, bạn chọn gì?",
+      "startLine": "Trò cân bằng — Tình yêu vs Tình bạn (cực) ⚖️ Đám cưới vs kỷ niệm, bạn chọn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

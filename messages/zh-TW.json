@@ -15238,5 +15238,61 @@
       "similarTestsTop5": "🎯 類似測試推薦 Top5",
       "popularTestsTop5": "🔥 熱門測試推薦 Top5"
     }
+  },
+  "phase3LoveVsFriendBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"朋友婚禮 vs 戀人紀念日撞車，你會選哪個？\"",
+      "line2": "戀人和朋友都重要，行程一撞就難選。在兩個都虧的選項裡挑，會露出你怎麼排優先、又怎麼拆開僵局。",
+      "line3": "12輪極限二選一，看看你的戀愛·友情平衡風格。",
+      "line4": "開始極限選擇 ⚖️ 少糾結"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "開始極限選擇 ⚖️",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "retake": "再測一次",
+      "otherTests": "看看其他測試",
+      "yourResult": "我的戀愛·友情平衡風格",
+      "styleType": "類型",
+      "keywords": "關鍵字",
+      "choiceStyle": "選擇的樣子",
+      "strengths": "這個類型的優勢",
+      "goodMatch": "更合拍的類型",
+      "caution": "要注意",
+      "tips": "關係處方",
+      "oneLiner": "一句話總結",
+      "roundLabel": "第 {n} 輪"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "平衡遊戲 — 戀愛 vs 友情極限篇 ⚖️ 婚禮 vs 紀念日，你選哪個？",
+      "startKakao": "平衡遊戲 — 戀愛 vs 友情極限篇 ⚖️ 婚禮 vs 紀念日，你選哪個？",
+      "startWechat": "平衡遊戲 — 戀愛 vs 友情極限篇 ⚖️ 婚禮 vs 紀念日，你選哪個？",
+      "startWhatsapp": "平衡遊戲 — 戀愛 vs 友情極限篇 ⚖️ 婚禮 vs 紀念日，你選哪個？",
+      "startTelegram": "平衡遊戲 — 戀愛 vs 友情極限篇 ⚖️ 婚禮 vs 紀念日，你選哪個？",
+      "startLine": "平衡遊戲 — 戀愛 vs 友情極限篇 ⚖️ 婚禮 vs 紀念日，你選哪個？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請到 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯。"
+    }
   }
 }

@@ -15757,5 +15757,61 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3LoveVsFriendBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"友だちの結婚式 vs 恋人の記念日が重なったら、君ならどっち？\"",
+      "line2": "恋人も友だちも大切だから、予定が重なると選べなくなる。どちらも惜しい二択のあいだで選ぶと、関係の優先順位の置き方と、ほどき方が見えてきます。",
+      "line3": "12ラウンドの極限選択で、恋愛と友情のバランススタイルがわかります。",
+      "line4": "極限選択スタート ⚖️ 悩む時間は短く"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "極限選択スタート ⚖️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "yourResult": "私の恋愛・友情バランススタイル",
+      "styleType": "タイプ",
+      "keywords": "キーワード",
+      "choiceStyle": "選び方の様子",
+      "strengths": "このタイプの強み",
+      "goodMatch": "相性のいいタイプ",
+      "caution": "注意点",
+      "tips": "関係の処方箋",
+      "oneLiner": "一言まとめ",
+      "roundLabel": "ラウンド {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "バランスゲーム — 恋愛 vs 友情 極限編 ⚖️ 結婚式 vs 記念日、君ならどっち？",
+      "startKakao": "バランスゲーム — 恋愛 vs 友情 極限編 ⚖️ 結婚式 vs 記念日、君ならどっち？",
+      "startWechat": "バランスゲーム — 恋愛 vs 友情 極限編 ⚖️ 結婚式 vs 記念日、君ならどっち？",
+      "startWhatsapp": "バランスゲーム — 恋愛 vs 友情 極限編 ⚖️ 結婚式 vs 記念日、君ならどっち？",
+      "startTelegram": "バランスゲーム — 恋愛 vs 友情 極限編 ⚖️ 結婚式 vs 記念日、君ならどっち？",
+      "startLine": "バランスゲーム — 恋愛 vs 友情 極限編 ⚖️ 結婚式 vs 記念日、君ならどっち？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を利用できません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

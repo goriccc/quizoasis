@@ -15769,5 +15769,61 @@
       "similarTestsTop5": "🎯 Top 5 Tes Serupa",
       "popularTestsTop5": "🔥 Top 5 Tes Populer Sekarang"
     }
+  },
+  "phase3LoveVsFriendBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"Pernikahan teman vs anniversary bareng pasangan—kamu pilih mana?\"",
+      "line2": "Pasangan dan teman sama-sama penting, jadi jadwal bentrok susah dipilih. Memilih di antara dua opsi yang sama-sama rugi menunjukkan bagaimana kamu menaruh prioritas—dan bagaimana kamu menyelesaikannya.",
+      "line3": "Dua belas ronde ekstrem mengungkap gaya keseimbangan cinta–persahabatanmu.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan lama mikir"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Gaya keseimbangan cinta–persahabatanku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "choiceStyle": "Cara kamu memilih",
+      "strengths": "Kekuatan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Resep hubungan",
+      "oneLiner": "Dalam satu baris",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Cinta vs Persahabatan (Ekstrem) ⚖️ Nikahan vs anniversary, pilih mana?",
+      "startKakao": "Permainan Seimbang — Cinta vs Persahabatan (Ekstrem) ⚖️ Nikahan vs anniversary, pilih mana?",
+      "startWechat": "Permainan Seimbang — Cinta vs Persahabatan (Ekstrem) ⚖️ Nikahan vs anniversary, pilih mana?",
+      "startWhatsapp": "Permainan Seimbang — Cinta vs Persahabatan (Ekstrem) ⚖️ Nikahan vs anniversary, pilih mana?",
+      "startTelegram": "Permainan Seimbang — Cinta vs Persahabatan (Ekstrem) ⚖️ Nikahan vs anniversary, pilih mana?",
+      "startLine": "Permainan Seimbang — Cinta vs Persahabatan (Ekstrem) ⚖️ Nikahan vs anniversary, pilih mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
   }
 }
