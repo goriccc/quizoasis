@@ -16337,5 +16337,61 @@
       "kakaoInit": "カカオトークのシェア機能を準備中です。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
     }
+  },
+  "phase3ExBalanceGameTest": {
+    "startMessage": {
+      "line1": "元恋人と同じ会社で働く vs 元恋人が友達と付き合う、あなたならどっち?",
+      "line2": "元恋人は別れたあとも日常に突然現れます。どちらもゾッとする選択肢から選ぶうちに、自分が元恋人の前でどんな人かがわかります。",
+      "line3": "12ラウンドの極限選択であなたの元恋人との向き合い方がわかります。より近い方を選んでみてください。",
+      "line4": "極限選択スタート ⚖️ 悩む時間は短く"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "極限選択スタート ⚖️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "yourResult": "私の元恋人との向き合い方",
+      "styleType": "タイプ",
+      "keywords": "キーワード",
+      "exStyle": "元恋人の前での姿",
+      "strengths": "このタイプの強み",
+      "goodMatch": "相性のいいタイプ",
+      "caution": "注意点",
+      "tips": "整理の処方箋",
+      "oneLiner": "一言まとめ",
+      "roundLabel": "ラウンド {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "バランスゲーム ― 元恋人極限編 ⚖️ 同じ会社の元恋人 vs 友達と付き合う元恋人、どっち選ぶ?",
+      "startKakao": "バランスゲーム ― 元恋人極限編 ⚖️ 同じ会社の元恋人 vs 友達と付き合う元恋人、どっち選ぶ?",
+      "startWechat": "バランスゲーム ― 元恋人極限編 ⚖️ 同じ会社の元恋人 vs 友達と付き合う元恋人、どっち選ぶ?",
+      "startWhatsapp": "バランスゲーム ― 元恋人極限編 ⚖️ 同じ会社の元恋人 vs 友達と付き合う元恋人、どっち選ぶ?",
+      "startTelegram": "バランスゲーム ― 元恋人極限編 ⚖️ 同じ会社の元恋人 vs 友達と付き合う元恋人、どっち選ぶ?",
+      "startLine": "バランスゲーム ― 元恋人極限編 ⚖️ 同じ会社の元恋人 vs 友達と付き合う元恋人、どっち選ぶ?"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました!",
+      "resultCopied": "結果をクリップボードにコピーしました!",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました! WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    }
   }
 }

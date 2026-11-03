@@ -16349,5 +16349,61 @@
       "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
+  },
+  "phase3ExBalanceGameTest": {
+    "startMessage": {
+      "line1": "Kantor sama dengan mantan vs mantan pacaran sama temanmu—kamu pilih yang mana?",
+      "line2": "Mantan masih sesekali muncul di kehidupan sehari-hari setelah putus. Memilih di antara dua opsi yang bikin deg-degan menunjukkan siapa dirimu di depan mantan.",
+      "line3": "12 ronde pilihan ekstrem mengungkap cara kamu menghadapi mantan. Pilih sisi yang lebih dekat denganmu.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan mikir lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Cara aku menghadapi mantan",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "exStyle": "Di depan mantan",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Tips merapikan hati",
+      "oneLiner": "Dalam satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Mantan (Ekstrem) ⚖️ Kantor sama mantan vs mantan pacaran sama temanmu—pilihanmu?",
+      "startKakao": "Permainan Seimbang — Mantan (Ekstrem) ⚖️ Kantor sama mantan vs mantan pacaran sama temanmu—pilihanmu?",
+      "startWechat": "Permainan Seimbang — Mantan (Ekstrem) ⚖️ Kantor sama mantan vs mantan pacaran sama temanmu—pilihanmu?",
+      "startWhatsapp": "Permainan Seimbang — Mantan (Ekstrem) ⚖️ Kantor sama mantan vs mantan pacaran sama temanmu—pilihanmu?",
+      "startTelegram": "Permainan Seimbang — Mantan (Ekstrem) ⚖️ Kantor sama mantan vs mantan pacaran sama temanmu—pilihanmu?",
+      "startLine": "Permainan Seimbang — Mantan (Ekstrem) ⚖️ Kantor sama mantan vs mantan pacaran sama temanmu—pilihanmu?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
   }
 }

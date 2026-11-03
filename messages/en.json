@@ -16358,5 +16358,61 @@
       "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
+  },
+  "phase3ExBalanceGameTest": {
+    "startMessage": {
+      "line1": "Same company as your ex vs your ex dating your friend—what would you pick?",
+      "line2": "Exes still show up in daily life after a breakup. Choosing between two nerve-wracking options reveals who you are in front of an ex.",
+      "line3": "Twelve extreme rounds reveal how you handle an ex. Pick the side that fits you better.",
+      "line4": "Start the extreme picks ⚖️ Keep it quick"
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Start the extreme picks ⚖️",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "retake": "Retake",
+      "otherTests": "More tests",
+      "yourResult": "How I handle an ex",
+      "styleType": "Type",
+      "keywords": "Key words",
+      "exStyle": "In front of an ex",
+      "strengths": "Strengths of this type",
+      "goodMatch": "Best match",
+      "caution": "Watch out for",
+      "tips": "Closure tips",
+      "oneLiner": "In one line",
+      "roundLabel": "Round {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance Game — Ex Edition (Extreme) ⚖️ Same company as your ex vs your ex dating your friend—your pick?",
+      "startKakao": "Balance Game — Ex Edition (Extreme) ⚖️ Same company as your ex vs your ex dating your friend—your pick?",
+      "startWechat": "Balance Game — Ex Edition (Extreme) ⚖️ Same company as your ex vs your ex dating your friend—your pick?",
+      "startWhatsapp": "Balance Game — Ex Edition (Extreme) ⚖️ Same company as your ex vs your ex dating your friend—your pick?",
+      "startTelegram": "Balance Game — Ex Edition (Extreme) ⚖️ Same company as your ex vs your ex dating your friend—your pick?",
+      "startLine": "Balance Game — Ex Edition (Extreme) ⚖️ Same company as your ex vs your ex dating your friend—your pick?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    }
   }
 }
