@@ -15939,5 +15939,68 @@
       "similarTestsTop5": "🎯 类似测试推荐 Top5",
       "popularTestsTop5": "🔥 近期热门测试 Top5"
     }
+  },
+  "phase3MarriageTemperatureTest": {
+    "startMessage": {
+      "line1": "\"我对结婚的想法，现在是几度？\"",
+      "line2": "有人觉得结婚是人生理所当然的下一步，有人把它当选项之一，也有人确定不结。都没错——只是此刻心里的温度不同。",
+      "line3": "把10个场景里的反应加总分，告诉你结婚想法温度。跟恋人/朋友比一比——知道温差，说话会轻松很多。",
+      "line4": "",
+      "line5": "测测我的结婚温度 🌡️ 诚实开始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "测测我的结婚温度 🌡️",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "popularBadge": "热门",
+      "shareResult": "分享结果",
+      "scoreTitle": "结婚想法温度",
+      "scoreUnit": "分",
+      "tempNow": "当前温度 {temp}",
+      "keywords": "核心关键词",
+      "strengths": "这个类型的优势",
+      "coldSpot": "心里发凉的地方",
+      "tips": "读懂温度的处方",
+      "oneLiner": "一句话点评",
+      "coupleDiffTitle": "我们俩的温差",
+      "coupleDiffHint": "输入恋人或朋友的分数，看看温差和对话开场白。",
+      "partnerScoreLabel": "对方分数",
+      "coupleDiffWaiting": "请输入对方分数（10~40）。",
+      "coupleDiffGap": "相差 {diff} 分"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的结婚想法温度测试 🌡️ 冰点不婚确信？火热结婚渴望？分数认证",
+      "startKakao": "我的结婚想法温度测试 🌡️ 冰点不婚确信？火热结婚渴望？分数认证",
+      "startWechat": "我的结婚想法温度测试 🌡️ 冰点不婚确信？火热结婚渴望？分数认证",
+      "startWhatsapp": "我的结婚想法温度测试 🌡️ 冰点不婚确信？火热结婚渴望？分数认证",
+      "startTelegram": "我的结婚想法温度测试 🌡️ 冰点不婚确信？火热结婚渴望？分数认证",
+      "startLine": "我的结婚想法温度测试 🌡️ 冰点不婚确信？火热结婚渴望？分数认证"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请到微信粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
   }
 }

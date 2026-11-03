@@ -15927,5 +15927,68 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3MarriageTemperatureTest": {
+    "startMessage": {
+      "line1": "\"結婚について、今の私の心は何度だろう？\"",
+      "line2": "結婚を人生の自然な次のステップと感じる人もいれば、選択肢のひとつと見る人も、しないと決めている人もいます。どれも間違いではなく、いまの心の温度が違うだけ。",
+      "line3": "10の場面での反応を点数化して、結婚温度をお伝えします。恋人や友達と温度を比べてみて。二人の差がわかると会話がしやすくなります。",
+      "line4": "",
+      "line5": "私の結婚温度を測る 🌡️ 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の結婚温度を測る 🌡️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "scoreTitle": "結婚温度",
+      "scoreUnit": "点",
+      "tempNow": "いまの温度 {temp}",
+      "keywords": "キーワード",
+      "strengths": "このタイプの強み",
+      "coldSpot": "心がひんやりするポイント",
+      "tips": "温度の読み方ヒント",
+      "oneLiner": "一言まとめ",
+      "coupleDiffTitle": "ふたりの温度差",
+      "coupleDiffHint": "恋人（または友達）の点数を入れると、温度差と会話のきっかけ文が出ます。",
+      "partnerScoreLabel": "相手の点数",
+      "coupleDiffWaiting": "相手の点数（10〜40）を入力してください。",
+      "coupleDiffGap": "点数差 {diff}点"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の結婚温度診断 🌡️ 氷点下の非婚確信？熱い結婚願望？スコア認証",
+      "startKakao": "私の結婚温度診断 🌡️ 氷点下の非婚確信？熱い結婚願望？スコア認証",
+      "startWechat": "私の結婚温度診断 🌡️ 氷点下の非婚確信？熱い結婚願望？スコア認証",
+      "startWhatsapp": "私の結婚温度診断 🌡️ 氷点下の非婚確信？熱い結婚願望？スコア認証",
+      "startTelegram": "私の結婚温度診断 🌡️ 氷点下の非婚確信？熱い結婚願望？スコア認証",
+      "startLine": "私の結婚温度診断 🌡️ 氷点下の非婚確信？熱い結婚願望？スコア認証"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを準備中です。しばらくしてからもう一度どうぞ。",
+      "kakaoError": "カカオトークのシェアでエラーが起きました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

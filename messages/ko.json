@@ -16086,5 +16086,68 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase3MarriageTemperatureTest": {
+    "startMessage": {
+      "line1": "\"결혼에 대한 내 마음은 지금 몇 도일까?\"",
+      "line2": "누군가는 결혼을 인생의 당연한 다음 단계로 느끼고, 누군가는 선택지 중 하나로 보며, 누군가는 하지 않겠다고 확신합니다. 어느 쪽이든 틀린 답은 없고 지금의 마음 온도가 다를 뿐입니다.",
+      "line3": "10가지 상황에서 나의 반응을 점수로 합산해 결혼 생각 온도를 알려드립니다. 연인이나 친구와 온도를 비교해 보세요. 두 사람의 온도 차이를 알면 대화가 쉬워집니다.",
+      "line4": "",
+      "line5": "내 결혼 온도 재기 🌡️ 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 결혼 온도 재기 🌡️",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "scoreTitle": "결혼 생각 온도",
+      "scoreUnit": "점",
+      "tempNow": "지금 온도 {temp}",
+      "keywords": "핵심 키워드",
+      "strengths": "이 유형의 강점",
+      "coldSpot": "내 마음이 서늘해지는 지점",
+      "tips": "온도를 읽는 처방",
+      "oneLiner": "한 줄 평",
+      "coupleDiffTitle": "우리 둘 온도 차이",
+      "coupleDiffHint": "연인(또는 친구)의 점수를 입력하면 온도 차이와 대화 시작 문장을 보여 드립니다.",
+      "partnerScoreLabel": "상대 점수",
+      "coupleDiffWaiting": "상대 점수(10~40)를 입력해 주세요.",
+      "coupleDiffGap": "점수 차이 {diff}점"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "내 결혼 생각 온도 측정 🌡️ 영하 비혼 확신? 뜨거운 결혼 열망? 점수 인증",
+      "startKakao": "내 결혼 생각 온도 측정 🌡️ 영하 비혼 확신? 뜨거운 결혼 열망? 점수 인증",
+      "startWechat": "내 결혼 생각 온도 측정 🌡️ 영하 비혼 확신? 뜨거운 결혼 열망? 점수 인증",
+      "startWhatsapp": "내 결혼 생각 온도 측정 🌡️ 영하 비혼 확신? 뜨거운 결혼 열망? 점수 인증",
+      "startTelegram": "내 결혼 생각 온도 측정 🌡️ 영하 비혼 확신? 뜨거운 결혼 열망? 점수 인증",
+      "startLine": "내 결혼 생각 온도 측정 🌡️ 영하 비혼 확신? 뜨거운 결혼 열망? 점수 인증"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

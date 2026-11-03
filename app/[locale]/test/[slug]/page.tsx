@@ -41,6 +41,7 @@ import { PHASE3_GROUPCHAT_CHARACTER_META } from '@/lib/phase3GroupchatCharacterD
 import { PHASE3_LOVE_FACTBOMB_T_META } from '@/lib/phase3LoveFactbombTData';
 import { PHASE3_LOVE_TEMPERATURE_NOW_META } from '@/lib/phase3LoveTemperatureNowData';
 import { PHASE3_LOVE_NUNCHI_LEVEL_META } from '@/lib/phase3LoveNunchiLevelData';
+import { PHASE3_MARRIAGE_TEMPERATURE_META } from '@/lib/phase3MarriageTemperatureData';
 import { PHASE3_LOVE_SUPERPOWER_META } from '@/lib/phase3LoveSuperpowerData';
 import { PHASE3_SAME_BREAKUP_REASON_META } from '@/lib/phase3SameBreakupReasonData';
 
@@ -393,6 +394,10 @@ const Phase3LoveTemperatureNowTestClient = dynamic(
 );
 const Phase3LoveNunchiLevelTestClient = dynamic(
   () => import('@/components/Phase3LoveNunchiLevelTestClient'),
+  { ssr: false }
+);
+const Phase3MarriageTemperatureTestClient = dynamic(
+  () => import('@/components/Phase3MarriageTemperatureTestClient'),
   { ssr: false }
 );
 const Phase3LoveSuperpowerTestClient = dynamic(
@@ -2900,6 +2905,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_NUNCHI_LEVEL_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-marriage-temperature') {
+    test = {
+      slug: 'phase3-marriage-temperature',
+      title: PHASE3_MARRIAGE_TEMPERATURE_META.title,
+      description: PHASE3_MARRIAGE_TEMPERATURE_META.description,
+      thumbnail: 'p3_test_marriage_temperature.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_MARRIAGE_TEMPERATURE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10723,6 +10741,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveNunchiLevelQuestions}
             results={phase3LoveNunchiLevelResults}
             questionCount={phase3LoveNunchiLevelQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-marriage-temperature') {
+      const { phase3MarriageTemperatureQuestions, phase3MarriageTemperatureResults } = await import(
+        '@/lib/phase3MarriageTemperatureData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-marriage-temperature',
+        title: PHASE3_MARRIAGE_TEMPERATURE_META.title,
+        description: PHASE3_MARRIAGE_TEMPERATURE_META.description,
+        thumbnail: 'p3_test_marriage_temperature.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_MARRIAGE_TEMPERATURE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3MarriageTemperatureTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3MarriageTemperatureQuestions}
+            results={phase3MarriageTemperatureResults}
+            questionCount={phase3MarriageTemperatureQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

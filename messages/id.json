@@ -15939,5 +15939,68 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes yang lagi hits"
     }
+  },
+  "phase3MarriageTemperatureTest": {
+    "startMessage": {
+      "line1": "\"Pikiran soal nikah, sekarang suhunya berapa?\"",
+      "line2": "Ada yang ngerasa nikah langkah natural berikutnya, ada yang lihat sebagai opsi, ada yang yakin nggak mau. Semuanya oke—cuma suhu hati sekarang yang beda.",
+      "line3": "Jumlahkan reaksi di 10 situasi buat tahu suhu pikiran menikahmu. Bandingkan sama pasangan/teman—tahu selisihnya, ngobrol jadi lebih gampang.",
+      "line4": "",
+      "line5": "Cek suhu pikiran menikahku 🌡️ Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cek suhu pikiran menikah 🌡️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "scoreTitle": "Suhu pikiran menikah",
+      "scoreUnit": " poin",
+      "tempNow": "Suhu sekarang {temp}",
+      "keywords": "Kata kunci utama",
+      "strengths": "Kekuatan tipe ini",
+      "coldSpot": "Titik hati yang lagi dingin",
+      "tips": "Cara baca suhu ini",
+      "oneLiner": "Satu baris ringkas",
+      "coupleDiffTitle": "Selisih suhu kita berdua",
+      "coupleDiffHint": "Masukkan skor pasangan (atau temen) buat lihat selisih dan kalimat pembuka obrolan.",
+      "partnerScoreLabel": "Skor mereka",
+      "coupleDiffWaiting": "Masukkan skor mereka (10–40).",
+      "coupleDiffGap": "Selisih {diff} poin"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Cek suhu pikiran menikah 🌡️ Minus yakin single atau demam nikah? Cek skor",
+      "startKakao": "Cek suhu pikiran menikah 🌡️ Minus yakin single atau demam nikah? Cek skor",
+      "startWechat": "Cek suhu pikiran menikah 🌡️ Minus yakin single atau demam nikah? Cek skor",
+      "startWhatsapp": "Cek suhu pikiran menikah 🌡️ Minus yakin single atau demam nikah? Cek skor",
+      "startTelegram": "Cek suhu pikiran menikah 🌡️ Minus yakin single atau demam nikah? Cek skor",
+      "startLine": "Cek suhu pikiran menikah 🌡️ Minus yakin single atau demam nikah? Cek skor"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Fitur berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi hits"
+    }
   }
 }

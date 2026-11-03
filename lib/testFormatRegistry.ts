@@ -212,6 +212,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-love-factbomb-t': 'scenario_2',
   'phase3-love-temperature-now': 'scenario_4',
   'phase3-love-nunchi-level': 'scenario_4',
+  'phase3-marriage-temperature': 'scenario_4',
   'phase3-love-superpower': 'scenario_4',
   'phase3-same-breakup-reason': 'scenario_4',
   'phase3-face-first-impression': 'face',
