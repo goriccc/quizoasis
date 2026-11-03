@@ -15813,5 +15813,62 @@
       "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "phase3SameBreakupReasonTest": {
+    "startMessage": {
+      "line1": "\"人は変わったのに、別れの理由はなぜいつも似てるの？\"",
+      "line2": "最初の恋は「話が通じなくて」、次も「また話が通じなくて」。相手も時期も違うのに、別れる場面はどこか似ています。運のせいと言うには、理由がそろいすぎます。",
+      "line3": "繰り返す別れには人それぞれのパターンがあります。会話が途切れる、信頼にひびが入る、期待がずれる、ペースが合わない、心がすり減る、価値観がぶつかる——理由を整理すれば、次の恋で同じ場面を減らせます。",
+      "line4": "12の場面で、繰り返してしまう本当の理由と、パターンを断ち切る方法をお伝えします。",
+      "line5": "私の別れパターンを探す 🔁 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の別れパターンを探す 🔁",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "keywords": "キーワード",
+      "scoreTitle": "別れパターン点数",
+      "scoreUnit": "点",
+      "secondPattern": "一緒に出やすいパターン",
+      "breakupMoment": "別れにつながる瞬間",
+      "strengths": "このタイプの強み",
+      "realReasonUnpack": "本当の理由をほどくと",
+      "frequentSaying": "よく言う一言",
+      "tips": "パターンを断つ方法",
+      "counselingNote": "専門家への相談案内",
+      "oneLiner": "一言まとめ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "なぜ私はいつも同じ理由で別れるの？ 🔁 別れパターン診断",
+      "startKakao": "なぜ私はいつも同じ理由で別れるの？ 🔁 別れパターン診断",
+      "startWechat": "なぜ私はいつも同じ理由で別れるの？ 🔁 別れパターン診断",
+      "startWhatsapp": "なぜ私はいつも同じ理由で別れるの？ 🔁 別れパターン診断",
+      "startTelegram": "なぜ私はいつも同じ理由で別れるの？ 🔁 別れパターン診断",
+      "startLine": "なぜ私はいつも同じ理由で別れるの？ 🔁 別れパターン診断"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを準備中です。しばらくしてからもう一度どうぞ。",
+      "kakaoError": "カカオトークのシェアでエラーが起きました。"
+    }
   }
 }

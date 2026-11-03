@@ -15294,5 +15294,62 @@
       "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
       "kakaoError": "KakaoTalk 分享時出錯。"
     }
+  },
+  "phase3SameBreakupReasonTest": {
+    "startMessage": {
+      "line1": "\"人換了，分手理由怎麼總差不多？\"",
+      "line2": "第一段戀愛是「聊不通」，第二段還是「聊不通」。對象和時機都不同，分手場面卻總有點像。要說純屬運氣，理由也太整齊了。",
+      "line3": "反覆分手的人，模式並不一樣——可能是話斷了、信任裂了、期待錯了、節奏不合、心累垮了，或是價值觀撞上。把原因理清，下次就能少重演同一幕。",
+      "line4": "用12個情境，找出你反覆分手的真正原因，以及打斷這個模式的方法。",
+      "line5": "找我的分手模式 🔁 誠實開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "找我的分手模式 🔁",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "keywords": "核心關鍵字",
+      "scoreTitle": "分手模式分數",
+      "scoreUnit": "分",
+      "secondPattern": "並存的模式",
+      "breakupMoment": "容易走到分手的瞬間",
+      "strengths": "這個類型的優勢",
+      "realReasonUnpack": "拆開真正的原因",
+      "frequentSaying": "這種類型常說的話",
+      "tips": "打斷模式的方法",
+      "counselingNote": "專業諮詢提示",
+      "oneLiner": "一句話點評"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "為什麼我總因同樣理由分手？ 🔁 測測我的分手模式",
+      "startKakao": "為什麼我總因同樣理由分手？ 🔁 測測我的分手模式",
+      "startWechat": "為什麼我總因同樣理由分手？ 🔁 測測我的分手模式",
+      "startWhatsapp": "為什麼我總因同樣理由分手？ 🔁 測測我的分手模式",
+      "startTelegram": "為什麼我總因同樣理由分手？ 🔁 測測我的分手模式",
+      "startLine": "為什麼我總因同樣理由分手？ 🔁 測測我的分手模式"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請到 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享出錯了。"
+    }
   }
 }

@@ -15825,5 +15825,62 @@
       "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
+  },
+  "phase3SameBreakupReasonTest": {
+    "startMessage": {
+      "line1": "\"Orangnya beda, kenapa alasan putusnya selalu mirip?\"",
+      "line2": "Pacaran pertama: \"nggak nyambung ngomong.\" Kedua: \"lagi-lagi nggak nyambung.\" Orang dan masanya beda—tapi adegan putusnya kayak punya pola. Bilang sial aja kurang pas kalau alasannya terlalu mirip.",
+      "line3": "Putus berulang punya pola berbeda: obrolan mati, kepercayaan retak, ekspektasi meleset, tempo tak cocok, hati kehabisan baterai, atau nilai hidup bentrok. Setelah alasan jelas, adegan yang sama lebih mudah dikurangi.",
+      "line4": "Lewat 12 situasi, temukan alasan putus yang berulang—plus cara memutus polanya.",
+      "line5": "Cari pola putusku 🔁 Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cari pola putusku 🔁",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "keywords": "Kata kunci utama",
+      "scoreTitle": "Skor pola putus",
+      "scoreUnit": " poin",
+      "secondPattern": "Pola yang ikut muncul",
+      "breakupMoment": "Momen yang sering berujung putus",
+      "strengths": "Kekuatan tipe ini",
+      "realReasonUnpack": "Mengurai alasan sebenarnya",
+      "frequentSaying": "Yang sering diucapkan tipe ini",
+      "tips": "Cara memutus pola",
+      "counselingNote": "Catatan bantuan profesional",
+      "oneLiner": "Satu baris ringkas"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa aku selalu putus karena alasan yang sama? 🔁 Cari pola putusku",
+      "startKakao": "Kenapa aku selalu putus karena alasan yang sama? 🔁 Cari pola putusku",
+      "startWechat": "Kenapa aku selalu putus karena alasan yang sama? 🔁 Cari pola putusku",
+      "startWhatsapp": "Kenapa aku selalu putus karena alasan yang sama? 🔁 Cari pola putusku",
+      "startTelegram": "Kenapa aku selalu putus karena alasan yang sama? 🔁 Cari pola putusku",
+      "startLine": "Kenapa aku selalu putus karena alasan yang sama? 🔁 Cari pola putusku"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Fitur berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    }
   }
 }

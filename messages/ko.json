@@ -15970,5 +15970,64 @@
       "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
+  },
+  "phase3SameBreakupReasonTest": {
+    "startMessage": {
+      "line1": "\"사람은 바뀌었는데, 왜 이별 이유는 늘 비슷할까?\"",
+      "line2": "첫 번째 연애는 \"말이 안 통해서\", 두 번째는 \"또 말이 안 통해서\"였습니다. 상대도 시기도 다른데 헤어지는 장면은 어딘가 닮아 있습니다. 운이 없어서라고 넘기기엔 이유가 너무 비슷합니다.",
+      "line3": "반복되는 이별에는 사람마다 서로 다른 패턴이 있습니다. 대화가 끊겨서일 수도, 믿음에 금이 가서일 수도, 기대가 어긋나서일 수도, 속도가 달라서일 수도, 마음이 소진돼서일 수도, 가치관이 부딪혀서일 수도 있습니다. 이유를 정리하면 다음 연애에서 같은 장면을 줄일 수 있습니다.",
+      "line4": "12가지 상황으로 내가 반복해서 헤어지는 진짜 이유와 패턴을 끊는 법을 알려드립니다.",
+      "line5": "내 이별 패턴 찾기 🔁 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 이별 패턴 찾기 🔁",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "keywords": "핵심 키워드",
+      "scoreTitle": "이별 패턴 점수",
+      "scoreUnit": "점",
+      "secondPattern": "함께 있는 패턴",
+      "breakupMoment": "이별로 이어지는 순간",
+      "strengths": "이 유형의 강점",
+      "realReasonUnpack": "진짜 이유를 풀어보면",
+      "frequentSaying": "이 유형이 자주 하는 말",
+      "tips": "패턴을 끊는 법",
+      "counselingNote": "전문가 상담 안내",
+      "oneLiner": "한 줄 평",
+      "certCardEyebrow": "이별 패턴 결과 카드",
+      "certCardPrompt": "단톡방에 결과 카드 인증!"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나는 왜 매번 같은 이유로 헤어질까? 🔁 내 이별 패턴 찾기",
+      "startKakao": "나는 왜 매번 같은 이유로 헤어질까? 🔁 내 이별 패턴 찾기",
+      "startWechat": "나는 왜 매번 같은 이유로 헤어질까? 🔁 내 이별 패턴 찾기",
+      "startWhatsapp": "나는 왜 매번 같은 이유로 헤어질까? 🔁 내 이별 패턴 찾기",
+      "startTelegram": "나는 왜 매번 같은 이유로 헤어질까? 🔁 내 이별 패턴 찾기",
+      "startLine": "나는 왜 매번 같은 이유로 헤어질까? 🔁 내 이별 패턴 찾기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    }
   }
 }

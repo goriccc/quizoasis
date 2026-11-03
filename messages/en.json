@@ -15834,5 +15834,62 @@
       "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
+  },
+  "phase3SameBreakupReasonTest": {
+    "startMessage": {
+      "line1": "\"The people change—so why do the breakups feel so familiar?\"",
+      "line2": "First relationship: \"we just couldn't talk.\" Second: \"we couldn't talk… again.\" Different people, different timing—but the ending scene rhymes. Calling it bad luck feels too neat when the reason keeps matching.",
+      "line3": "Repeating breakups have different patterns for different people—talk shutting down, trust cracking, expectations missing, pace clashing, hearts burning out, or values colliding. Name the reason and you can shrink the same scene next time.",
+      "line4": "Through 12 situations, find your real repeating breakup reason—and how to break the pattern.",
+      "line5": "Find my breakup pattern 🔁 Start honestly",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find my breakup pattern 🔁",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "keywords": "Key keywords",
+      "scoreTitle": "Breakup pattern scores",
+      "scoreUnit": " pts",
+      "secondPattern": "Pattern alongside yours",
+      "breakupMoment": "When it tends to end",
+      "strengths": "Strength of this type",
+      "realReasonUnpack": "Unpacking the real reason",
+      "frequentSaying": "What this type often says",
+      "tips": "How to break the pattern",
+      "counselingNote": "Professional support note",
+      "oneLiner": "One-liner"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Keep Breaking Up for the Same Reason? 🔁 Find my breakup pattern",
+      "startKakao": "Why Do I Keep Breaking Up for the Same Reason? 🔁 Find my breakup pattern",
+      "startWechat": "Why Do I Keep Breaking Up for the Same Reason? 🔁 Find my breakup pattern",
+      "startWhatsapp": "Why Do I Keep Breaking Up for the Same Reason? 🔁 Find my breakup pattern",
+      "startTelegram": "Why Do I Keep Breaking Up for the Same Reason? 🔁 Find my breakup pattern",
+      "startLine": "Why Do I Keep Breaking Up for the Same Reason? 🔁 Find my breakup pattern"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is not available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "KakaoTalk share is initializing. Please try again in a moment.",
+      "kakaoError": "Something went wrong sharing to KakaoTalk."
+    }
   }
 }

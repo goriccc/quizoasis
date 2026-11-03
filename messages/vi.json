@@ -15825,5 +15825,62 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "phase3SameBreakupReasonTest": {
+    "startMessage": {
+      "line1": "\"Người đổi rồi, sao lý do chia tay vẫn na ná?\"",
+      "line2": "Mối đầu: \"không nói chuyện được.\" Mối sau: \"lại không nói chuyện được.\" Người khác, thời điểm khác—mà cảnh chia tay vẫn giống. Bảo tại xui thì lý do lại quá trùng.",
+      "line3": "Chia tay lặp lại có nhiều kiểu: lời đứt, tin nứt, kỳ vọng lệch, nhịp không khớp, trái tim kiệt, hay giá trị đụng nhau. Gom được lý do thì lần sau bớt tái diễn cùng một cảnh.",
+      "line4": "Qua 12 tình huống, tìm lý do thật sự bạn cứ chia tay—và cách cắt đứt mô hình đó.",
+      "line5": "Tìm mẫu chia tay của tôi 🔁 Bắt đầu thành thật",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm mẫu chia tay của tôi 🔁",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm mẫu chia tay",
+      "scoreUnit": " điểm",
+      "secondPattern": "Mẫu đi kèm",
+      "breakupMoment": "Khoảnh khắc dễ dẫn tới chia tay",
+      "strengths": "Điểm mạnh của kiểu này",
+      "realReasonUnpack": "Bóc tách lý do thật",
+      "frequentSaying": "Câu hay nói của kiểu này",
+      "tips": "Cách cắt đứt mô hình",
+      "counselingNote": "Gợi ý tư vấn chuyên môn",
+      "oneLiner": "Một dòng nhận xét"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Vì sao mình cứ chia tay vì cùng một lý do? 🔁 Tìm mẫu chia tay của tôi",
+      "startKakao": "Vì sao mình cứ chia tay vì cùng một lý do? 🔁 Tìm mẫu chia tay của tôi",
+      "startWechat": "Vì sao mình cứ chia tay vì cùng một lý do? 🔁 Tìm mẫu chia tay của tôi",
+      "startWhatsapp": "Vì sao mình cứ chia tay vì cùng một lý do? 🔁 Tìm mẫu chia tay của tôi",
+      "startTelegram": "Vì sao mình cứ chia tay vì cùng một lý do? 🔁 Tìm mẫu chia tay của tôi",
+      "startLine": "Vì sao mình cứ chia tay vì cùng một lý do? 🔁 Tìm mẫu chia tay của tôi"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }
