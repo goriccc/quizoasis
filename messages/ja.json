@@ -16051,5 +16051,67 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3FirstDateSuccessTest": {
+    "startMessage": {
+      "line1": "\"初デートの空気、自分のクセがどれくらい効いてる？\"",
+      "line2": "同じ人と会っても、会話がスムーズな日もあれば気まずい沈黙だけの日もある。見た目や条件より、自分が持っている小さなクセで空気が分かれることが多い。",
+      "line3": "初デートの10場面で反応を点数にして、成功確率を％で出します。友だちとスコアを比べてみて。",
+      "line4": "",
+      "line5": "私の成功確率を計算する ☕ 正直にスタート",
+      "note": "※ これまでの初対面や紹介デートを思い出し、いちばん近い反応を選んでください。経験が少なければ想像で答えてOKです。"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の成功確率を計算する ☕",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "scoreTitle": "私の初デート点数",
+      "scoreUnit": "点",
+      "probability": "成功確率 {percent}%",
+      "keywords": "キーワード",
+      "strengths": "このタイプの強み",
+      "growthPoint": "私の初デート成長ポイント",
+      "tips": "確率を上げるヒント",
+      "counseling": "専門家カウンセリング案内",
+      "oneLiner": "一言まとめ",
+      "notice1": "このテストは診断や予測ではなく、楽しさと自己理解のためのコンテンツです",
+      "notice2": "成功確率はデートの結果を保証しません。今の状態はいつでも変わります",
+      "notice3": "心が疲れて日常がつらいときは、相談できる専門家や地域の窓口に話してみてください"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "私の初デート成功確率 ☕ 10の場面で計算。あなたは何％？",
+      "startKakao": "私の初デート成功確率 ☕ 10の場面で計算。あなたは何％？",
+      "startWechat": "私の初デート成功確率 ☕ 10の場面で計算。あなたは何％？",
+      "startWhatsapp": "私の初デート成功確率 ☕ 10の場面で計算。あなたは何％？",
+      "startTelegram": "私の初デート成功確率 ☕ 10の場面で計算。あなたは何％？",
+      "startLine": "私の初デート成功確率 ☕ 10の場面で計算。あなたは何％？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

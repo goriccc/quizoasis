@@ -16063,5 +16063,67 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3FirstDateSuccessTest": {
+    "startMessage": {
+      "line1": "\"Không khí buổi hẹn đầu, thói quen nhỏ của mình quyết định bao nhiêu?\"",
+      "line2": "Cùng một người mà có hôm nói chuyện trôi chảy, có hôm chỉ còn khoảng lặng ngượng. Không khí hẹn đầu thường lệch vì thói quen nhỏ hơn là ngoại hình hay điều kiện.",
+      "line3": "Cộng điểm phản ứng qua 10 tình huống hẹn đầu, rồi cho bạn tỉ lệ thành công theo %. So điểm với bạn bè nhé.",
+      "line4": "",
+      "line5": "Tính tỉ lệ thành công của tôi ☕ Bắt đầu thật lòng",
+      "note": "※ Nhớ lại lần gặp đầu và mai mối trước đây, chọn phản ứng gần mình nhất. Ít trải nghiệm thì tưởng tượng cũng được."
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tính tỉ lệ thành công của tôi ☕",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreTitle": "Điểm hẹn đầu của tôi",
+      "scoreUnit": " điểm",
+      "probability": "Tỉ lệ thành công {percent}%",
+      "keywords": "Từ khóa chính",
+      "strengths": "Điểm mạnh của kiểu này",
+      "growthPoint": "Điểm cần lớn lên ở buổi hẹn đầu",
+      "tips": "Cách nâng tỉ lệ",
+      "counseling": "Gợi ý tư vấn chuyên gia",
+      "oneLiner": "Một câu tổng kết",
+      "notice1": "Đây là nội dung vui và tự hiểu mình, không phải chẩn đoán hay dự đoán",
+      "notice2": "Tỉ lệ thành công không đảm bảo kết quả buổi hẹn; trạng thái hiện tại luôn có thể đổi",
+      "notice3": "Nếu ngày thường quá nặng, hãy nói chuyện với chuyên gia tâm lý hoặc cơ sở hỗ trợ địa phương"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tỉ lệ thành công buổi hẹn đầu của tôi ☕ 10 tình huống. Bạn được mấy %?",
+      "startKakao": "Tỉ lệ thành công buổi hẹn đầu của tôi ☕ 10 tình huống. Bạn được mấy %?",
+      "startWechat": "Tỉ lệ thành công buổi hẹn đầu của tôi ☕ 10 tình huống. Bạn được mấy %?",
+      "startWhatsapp": "Tỉ lệ thành công buổi hẹn đầu của tôi ☕ 10 tình huống. Bạn được mấy %?",
+      "startTelegram": "Tỉ lệ thành công buổi hẹn đầu của tôi ☕ 10 tình huống. Bạn được mấy %?",
+      "startLine": "Tỉ lệ thành công buổi hẹn đầu của tôi ☕ 10 tình huống. Bạn được mấy %?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

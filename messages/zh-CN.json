@@ -16063,5 +16063,67 @@
       "similarTestsTop5": "🎯 类似测试推荐 Top5",
       "popularTestsTop5": "🔥 近期热门测试 Top5"
     }
+  },
+  "phase3FirstDateSuccessTest": {
+    "startMessage": {
+      "line1": "\"第一次约会的气氛，有多少是被自己的小习惯左右的？\"",
+      "line2": "就算见同一个人，有的日子聊得很顺，有的日子只剩尴尬沉默。第一次约会的气氛，往往比外貌和条件更取决于你带来的小习惯。",
+      "line3": "用10个第一次约会场景把反应加成分数，用百分比告诉你成功概率。可以和朋友比比分。",
+      "line4": "",
+      "line5": "算算我的成功概率 ☕ 认真开始",
+      "note": "※ 回想以往的初次见面和相亲，选最接近你的反应。经验不多也可以靠想象作答。"
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "算算我的成功概率 ☕",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "popularBadge": "热门",
+      "shareResult": "分享结果",
+      "scoreTitle": "我的第一次约会分数",
+      "scoreUnit": "分",
+      "probability": "成功概率 {percent}%",
+      "keywords": "关键词",
+      "strengths": "这一型的优势",
+      "growthPoint": "我的第一次约会成长点",
+      "tips": "提高概率的方法",
+      "counseling": "专业咨询提示",
+      "oneLiner": "一句话总结",
+      "notice1": "本测试用于趣味和自我了解，不是诊断或预测",
+      "notice2": "成功概率不保证约会结果，当下状态随时可能变化",
+      "notice3": "如果心里很累、日子很难过，可以和心理咨询师或当地心理支持机构聊聊"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的第一次约会成功概率 ☕ 10个场景算算看。你是几%？",
+      "startKakao": "我的第一次约会成功概率 ☕ 10个场景算算看。你是几%？",
+      "startWechat": "我的第一次约会成功概率 ☕ 10个场景算算看。你是几%？",
+      "startWhatsapp": "我的第一次约会成功概率 ☕ 10个场景算算看。你是几%？",
+      "startTelegram": "我的第一次约会成功概率 ☕ 10个场景算算看。你是几%？",
+      "startLine": "我的第一次约会成功概率 ☕ 10个场景算算看。你是几%？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 最近热门测试 Top5"
+    }
   }
 }

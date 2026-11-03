@@ -16063,5 +16063,67 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes yang lagi hits"
     }
+  },
+  "phase3FirstDateSuccessTest": {
+    "startMessage": {
+      "line1": "\"Suasana kencan pertama, seberapa besar dipengaruhi kebiasaan kecilmu?\"",
+      "line2": "Ketemu orang yang sama pun, ada hari ngobrolnya lancar, ada hari cuma hening canggung. Suasana kencan pertama sering lebih ditentukan kebiasaan kecil yang kamu bawa daripada penampilan atau status.",
+      "line3": "Jumlahkan reaksi di 10 situasi kencan pertama, lalu dapatkan peluang sukses dalam %. Bandingkan skor dengan teman.",
+      "line4": "",
+      "line5": "Hitung peluang suksesku ☕ Mulai jujur",
+      "note": "※ Ingat pertemuan pertama dan blind date sebelumnya, pilih reaksi yang paling mirip. Pengalaman sedikit? Bayangkan saja."
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Hitung peluang suksesku ☕",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "scoreTitle": "Skor kencan pertamaku",
+      "scoreUnit": " poin",
+      "probability": "Peluang sukses {percent}%",
+      "keywords": "Kata kunci",
+      "strengths": "Kelebihan tipe ini",
+      "growthPoint": "Titik tumbuh kencan pertamaku",
+      "tips": "Cara menaikkan peluang",
+      "counseling": "Catatan konseling",
+      "oneLiner": "Satu kalimat",
+      "notice1": "Ini konten hiburan dan pemahaman diri—bukan diagnosis atau prediksi",
+      "notice2": "Peluang sukses tidak menjamin hasil kencan, dan kondisi sekarang bisa berubah kapan saja",
+      "notice3": "Kalau hari-hari terasa berat, bicaralah dengan konselor atau layanan kesehatan mental setempat"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Peluang sukses kencan pertamaku ☕ 10 situasi. Kamu berapa %?",
+      "startKakao": "Peluang sukses kencan pertamaku ☕ 10 situasi. Kamu berapa %?",
+      "startWechat": "Peluang sukses kencan pertamaku ☕ 10 situasi. Kamu berapa %?",
+      "startWhatsapp": "Peluang sukses kencan pertamaku ☕ 10 situasi. Kamu berapa %?",
+      "startTelegram": "Peluang sukses kencan pertamaku ☕ 10 situasi. Kamu berapa %?",
+      "startLine": "Peluang sukses kencan pertamaku ☕ 10 situasi. Kamu berapa %?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
+    }
   }
 }

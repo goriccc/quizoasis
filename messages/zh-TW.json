@@ -15532,5 +15532,67 @@
       "similarTestsTop5": "🎯 類似測試推薦 Top5",
       "popularTestsTop5": "🔥 近期熱門測試 Top5"
     }
+  },
+  "phase3FirstDateSuccessTest": {
+    "startMessage": {
+      "line1": "\"第一次約會的氣氛，有多少是被自己的小習慣左右的？\"",
+      "line2": "就算見同一個人，有的日子聊得很順，有的日子只剩尷尬沉默。第一次約會的氣氛，往往比外表和條件更取決於你帶來的小習慣。",
+      "line3": "用10個第一次約會情境把反應加成分數，用百分比告訴你成功機率。可以和朋友比比分。",
+      "line4": "",
+      "line5": "算算我的成功機率 ☕ 認真開始",
+      "note": "※ 回想以往的初次見面和相親，選最接近你的反應。經驗不多也可以靠想像作答。"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "算算我的成功機率 ☕",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "scoreTitle": "我的第一次約會分數",
+      "scoreUnit": "分",
+      "probability": "成功機率 {percent}%",
+      "keywords": "關鍵字",
+      "strengths": "這一型的優勢",
+      "growthPoint": "我的第一次約會成長點",
+      "tips": "提高機率的方法",
+      "counseling": "專業諮商提示",
+      "oneLiner": "一句話總結",
+      "notice1": "本測驗用於趣味和自我了解，不是診斷或預測",
+      "notice2": "成功機率不保證約會結果，當下狀態隨時可能變化",
+      "notice3": "如果心裡很累、日子很難過，可以和心理諮商師或當地心理支持機構聊聊"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的第一次約會成功機率 ☕ 10個情境算算看。你是幾%？",
+      "startKakao": "我的第一次約會成功機率 ☕ 10個情境算算看。你是幾%？",
+      "startWechat": "我的第一次約會成功機率 ☕ 10個情境算算看。你是幾%？",
+      "startWhatsapp": "我的第一次約會成功機率 ☕ 10個情境算算看。你是幾%？",
+      "startTelegram": "我的第一次約會成功機率 ☕ 10個情境算算看。你是幾%？",
+      "startLine": "我的第一次約會成功機率 ☕ 10個情境算算看。你是幾%？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測驗推薦 Top5",
+      "popularTestsTop5": "🔥 最近熱門測驗 Top5"
+    }
   }
 }

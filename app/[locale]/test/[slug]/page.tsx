@@ -45,6 +45,7 @@ import { PHASE3_MARRIAGE_TEMPERATURE_META } from '@/lib/phase3MarriageTemperatur
 import { PHASE3_LOVE_SUPERPOWER_META } from '@/lib/phase3LoveSuperpowerData';
 import { PHASE3_SAME_BREAKUP_REASON_META } from '@/lib/phase3SameBreakupReasonData';
 import { PHASE3_NO_SPARK_BLIND_DATE_META } from '@/lib/phase3NoSparkBlindDateData';
+import { PHASE3_FIRST_DATE_SUCCESS_META } from '@/lib/phase3FirstDateSuccessData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -411,6 +412,10 @@ const Phase3SameBreakupReasonTestClient = dynamic(
 );
 const Phase3NoSparkBlindDateTestClient = dynamic(
   () => import('@/components/Phase3NoSparkBlindDateTestClient'),
+  { ssr: false }
+);
+const Phase3FirstDateSuccessTestClient = dynamic(
+  () => import('@/components/Phase3FirstDateSuccessTestClient'),
   { ssr: false }
 );
 
@@ -2949,6 +2954,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_NO_SPARK_BLIND_DATE_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-first-date-success') {
+    test = {
+      slug: 'phase3-first-date-success',
+      title: PHASE3_FIRST_DATE_SUCCESS_META.title,
+      description: PHASE3_FIRST_DATE_SUCCESS_META.description,
+      thumbnail: 'p3_test_first_date_success.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_FIRST_DATE_SUCCESS_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10861,6 +10879,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3NoSparkBlindDateQuestions}
             results={phase3NoSparkBlindDateResults}
             questionCount={phase3NoSparkBlindDateQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-first-date-success') {
+      const { phase3FirstDateSuccessQuestions, phase3FirstDateSuccessResults } = await import(
+        '@/lib/phase3FirstDateSuccessData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-first-date-success',
+        title: PHASE3_FIRST_DATE_SUCCESS_META.title,
+        description: PHASE3_FIRST_DATE_SUCCESS_META.description,
+        thumbnail: 'p3_test_first_date_success.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_FIRST_DATE_SUCCESS_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3FirstDateSuccessTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3FirstDateSuccessQuestions}
+            results={phase3FirstDateSuccessResults}
+            questionCount={phase3FirstDateSuccessQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />
