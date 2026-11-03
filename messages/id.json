@@ -16237,5 +16237,61 @@
       "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
       "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
     }
+  },
+  "phase3PartnerCircleBalanceGameTest": {
+    "startMessage": {
+      "line1": "Makan pertama bareng orang tua pasangan vs minum bareng sepuluh temannya—kamu pilih yang mana?",
+      "line2": "Keluarga dan teman pasangan adalah seluruh dunia mereka, jadi pertemuan pertama terasa tegang. Memilih di antara dua opsi yang sama-sama kurang pas menunjukkan ke mana hatimu dan bagaimana kamu bergerak di depan orang-orang mereka.",
+      "line3": "12 ronde pilihan ekstrem mengungkap gaya hubunganmu di lingkaran pasangan. Pilih sisi yang lebih dekat denganmu.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan mikir lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Gayaku di dunia pasangan",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "partnerCircleStyle": "Di lingkaran pasangan",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Tips hubungan",
+      "oneLiner": "Dalam satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Keluarga & Teman Pasangan (Ekstrem) ⚖️ Makan pertama bareng ortu vs minum bareng sepuluh teman—pilihanmu?",
+      "startKakao": "Permainan Seimbang — Keluarga & Teman Pasangan (Ekstrem) ⚖️ Makan pertama bareng ortu vs minum bareng sepuluh teman—pilihanmu?",
+      "startWechat": "Permainan Seimbang — Keluarga & Teman Pasangan (Ekstrem) ⚖️ Makan pertama bareng ortu vs minum bareng sepuluh teman—pilihanmu?",
+      "startWhatsapp": "Permainan Seimbang — Keluarga & Teman Pasangan (Ekstrem) ⚖️ Makan pertama bareng ortu vs minum bareng sepuluh teman—pilihanmu?",
+      "startTelegram": "Permainan Seimbang — Keluarga & Teman Pasangan (Ekstrem) ⚖️ Makan pertama bareng ortu vs minum bareng sepuluh teman—pilihanmu?",
+      "startLine": "Permainan Seimbang — Keluarga & Teman Pasangan (Ekstrem) ⚖️ Makan pertama bareng ortu vs minum bareng sepuluh teman—pilihanmu?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
   }
 }

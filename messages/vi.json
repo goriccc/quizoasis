@@ -16237,5 +16237,61 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
       "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
     }
+  },
+  "phase3PartnerCircleBalanceGameTest": {
+    "startMessage": {
+      "line1": "Bữa ăn đầu với bố mẹ người yêu vs nhậu với mười bạn của họ—bạn chọn gì?",
+      "line2": "Gia đình và bạn bè người yêu chính là cả thế giới của họ, nên lần đầu gặp mặt rất căng. Chọn giữa hai phương án đều có thiệt thòi sẽ lộ ra bạn đặt tâm vào đâu và hành động thế nào trước người của họ.",
+      "line3": "12 vòng chọn cực hạn hé lộ phong cách quan hệ của bạn trong vòng người yêu. Chọn phía gần bạn hơn.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Đừng nghĩ lâu"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "yourResult": "Phong cách của tôi trong thế giới người yêu",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "partnerCircleStyle": "Trong vòng người yêu",
+      "strengths": "Điểm mạnh của kiểu này",
+      "goodMatch": "Hợp nhất với",
+      "caution": "Cần lưu ý",
+      "tips": "Gợi ý quan hệ",
+      "oneLiner": "Một câu tóm tắt",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Gia đình & bạn bè người yêu (cực hạn) ⚖️ Bữa đầu với bố mẹ vs nhậu mười bạn—bạn chọn?",
+      "startKakao": "Trò cân bằng — Gia đình & bạn bè người yêu (cực hạn) ⚖️ Bữa đầu với bố mẹ vs nhậu mười bạn—bạn chọn?",
+      "startWechat": "Trò cân bằng — Gia đình & bạn bè người yêu (cực hạn) ⚖️ Bữa đầu với bố mẹ vs nhậu mười bạn—bạn chọn?",
+      "startWhatsapp": "Trò cân bằng — Gia đình & bạn bè người yêu (cực hạn) ⚖️ Bữa đầu với bố mẹ vs nhậu mười bạn—bạn chọn?",
+      "startTelegram": "Trò cân bằng — Gia đình & bạn bè người yêu (cực hạn) ⚖️ Bữa đầu với bố mẹ vs nhậu mười bạn—bạn chọn?",
+      "startLine": "Trò cân bằng — Gia đình & bạn bè người yêu (cực hạn) ⚖️ Bữa đầu với bố mẹ vs nhậu mười bạn—bạn chọn?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    }
   }
 }

@@ -219,6 +219,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-first-date-success': 'scenario_4',
   'phase3-blind-date-balance-game': 'game',
   'phase3-affection-balance-game': 'game',
+  'phase3-partner-circle-balance-game': 'game',
   'phase3-face-first-impression': 'face',
   'phase3-face-animal-type': 'face',
   'phase3-face-profile-point': 'face',

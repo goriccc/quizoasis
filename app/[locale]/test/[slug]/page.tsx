@@ -48,6 +48,7 @@ import { PHASE3_NO_SPARK_BLIND_DATE_META } from '@/lib/phase3NoSparkBlindDateDat
 import { PHASE3_FIRST_DATE_SUCCESS_META } from '@/lib/phase3FirstDateSuccessData';
 import { PHASE3_BLIND_DATE_BALANCE_META } from '@/lib/phase3BlindDateBalanceGameData';
 import { PHASE3_AFFECTION_BALANCE_META } from '@/lib/phase3AffectionBalanceGameData';
+import { PHASE3_PARTNER_CIRCLE_BALANCE_META } from '@/lib/phase3PartnerCircleBalanceGameData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -426,6 +427,10 @@ const Phase3BlindDateBalanceGameTestClient = dynamic(
 );
 const Phase3AffectionBalanceGameTestClient = dynamic(
   () => import('@/components/Phase3AffectionBalanceGameTestClient'),
+  { ssr: false }
+);
+const Phase3PartnerCircleBalanceGameTestClient = dynamic(
+  () => import('@/components/Phase3PartnerCircleBalanceGameTestClient'),
   { ssr: false }
 );
 
@@ -3003,6 +3008,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_AFFECTION_BALANCE_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-partner-circle-balance-game') {
+    test = {
+      slug: 'phase3-partner-circle-balance-game',
+      title: PHASE3_PARTNER_CIRCLE_BALANCE_META.title,
+      description: PHASE3_PARTNER_CIRCLE_BALANCE_META.description,
+      thumbnail: 'p3_test_balance_game_partner_circle.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_PARTNER_CIRCLE_BALANCE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -11019,6 +11037,41 @@ export default async function TestPage({ params }: Props) {
             questions={phase3AffectionBalanceGameQuestions}
             results={phase3AffectionBalanceGameResults}
             questionCount={phase3AffectionBalanceGameQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-partner-circle-balance-game') {
+      const {
+        phase3PartnerCircleBalanceGameQuestions,
+        phase3PartnerCircleBalanceGameResults,
+      } = await import('@/lib/phase3PartnerCircleBalanceGameData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-partner-circle-balance-game',
+        title: PHASE3_PARTNER_CIRCLE_BALANCE_META.title,
+        description: PHASE3_PARTNER_CIRCLE_BALANCE_META.description,
+        thumbnail: 'p3_test_balance_game_partner_circle.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_PARTNER_CIRCLE_BALANCE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3PartnerCircleBalanceGameTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3PartnerCircleBalanceGameQuestions}
+            results={phase3PartnerCircleBalanceGameResults}
+            questionCount={phase3PartnerCircleBalanceGameQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />
