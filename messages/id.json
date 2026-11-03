@@ -16002,5 +16002,66 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes yang lagi hits"
     }
+  },
+  "phase3NoSparkBlindDateTest": {
+    "startMessage": {
+      "line1": "\"Orangnya oke—kenapa pas blind date hati nggak gerak?\"",
+      "line2": "Kriteria oke, manners bagus, ngobrol juga fine—pulang tetap hampa. Ke mak comblang cuma bilang \"Baik sih, tapi…\" Kadang nanya: aku kepilih banget ya?",
+      "line3": "Nggak deg-degan punya blocker beda-beda: checklist kaku, kesan pertama terkunci, suka banding-banding, gugup jadi nggak keluar diri asli, ekspektasi kebanyakan, atau hati ditutup duluan. Tahu titik macetnya, next date bisa beda.",
+      "line4": "Lewat 12 situasi, cari alasan asli kenapa kamu macet di blind date—dan cara chemistry terbuka.",
+      "line5": "Cari titik macetku ☕ Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cari titik macetku ☕",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "keywords": "Kata kunci utama",
+      "scoreTitle": "Skor tipe macet",
+      "scoreUnit": " poin",
+      "secondBlock": "Macet yang ikut muncul",
+      "blockMoment": "Momen kamu macet",
+      "strengths": "Kekuatan tipe ini",
+      "realReasonUnpack": "Bongkar alasan asli",
+      "frequentSaying": "Kalimat yang sering keluar",
+      "tips": "Cara chemistry terbuka",
+      "counselingNote": "Catatan konseling",
+      "oneLiner": "Satu baris ringkas"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Aku Nggak Pernah Deg-degan Pas Blind Date? ☕ Cari titik macet",
+      "startKakao": "Kenapa Aku Nggak Pernah Deg-degan Pas Blind Date? ☕ Cari titik macet",
+      "startWechat": "Kenapa Aku Nggak Pernah Deg-degan Pas Blind Date? ☕ Cari titik macet",
+      "startWhatsapp": "Kenapa Aku Nggak Pernah Deg-degan Pas Blind Date? ☕ Cari titik macet",
+      "startTelegram": "Kenapa Aku Nggak Pernah Deg-degan Pas Blind Date? ☕ Cari titik macet",
+      "startLine": "Kenapa Aku Nggak Pernah Deg-degan Pas Blind Date? ☕ Cari titik macet"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Fitur berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi hits"
+    }
   }
 }

@@ -15990,5 +15990,66 @@
       "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3NoSparkBlindDateTest": {
+    "startMessage": {
+      "line1": "\"いい人なのに、どうして紹介デートだと心が動かないんだろう？\"",
+      "line2": "条件もマナーも会話も悪くないのに、帰り道には何の余韻もない。「いい方でした、でも…」と紹介者への答えが濁る。自分が厳しすぎるのかな、とも思う。",
+      "line3": "ときめかない理由は人それぞれ。条件チェックが固いのか、第一印象で結論が出るのか、比較してしまうのか、緊張で素が出ないのか、期待が大きすぎるのか、最初から心を閉じているのか。詰まるポイントがわかると次が変わります。",
+      "line4": "12の場面から、紹介デートで詰まる本当の理由と、ときめきが開くヒントをお伝えします。",
+      "line5": "私の詰まりポイントを探す ☕ 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の詰まりポイントを探す ☕",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "keywords": "キーワード",
+      "scoreTitle": "詰まりタイプ点数",
+      "scoreUnit": "点",
+      "secondBlock": "一緒にある詰まり",
+      "blockMoment": "詰まる瞬間",
+      "strengths": "このタイプの強み",
+      "realReasonUnpack": "本当の理由をほどくと",
+      "frequentSaying": "このタイプがよく言う一言",
+      "tips": "ときめきが開くヒント",
+      "counselingNote": "専門家カウンセリング案内",
+      "oneLiner": "一言まとめ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "どうして紹介デートだと、ときめきが生まれないんだろう？ ☕ 詰まりポイント診断",
+      "startKakao": "どうして紹介デートだと、ときめきが生まれないんだろう？ ☕ 詰まりポイント診断",
+      "startWechat": "どうして紹介デートだと、ときめきが生まれないんだろう？ ☕ 詰まりポイント診断",
+      "startWhatsapp": "どうして紹介デートだと、ときめきが生まれないんだろう？ ☕ 詰まりポイント診断",
+      "startTelegram": "どうして紹介デートだと、ときめきが生まれないんだろう？ ☕ 詰まりポイント診断",
+      "startLine": "どうして紹介デートだと、ときめきが生まれないんだろう？ ☕ 詰まりポイント診断"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを準備中です。しばらくしてからもう一度どうぞ。",
+      "kakaoError": "カカオトークのシェアでエラーが起きました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

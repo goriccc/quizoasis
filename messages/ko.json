@@ -16149,5 +16149,66 @@
       "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
       "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
     }
+  },
+  "phase3NoSparkBlindDateTest": {
+    "startMessage": {
+      "line1": "\"분명 좋은 사람인데, 왜 소개팅만 하면 마음이 안 움직일까?\"",
+      "line2": "조건도 괜찮고 매너도 좋고 대화도 나쁘지 않았는데 집에 오는 길에는 아무 감흥이 없습니다. 주선자에게는 \"좋은 분이었어요, 근데...\"라고 말끝을 흐리게 됩니다. 내가 너무 까다로운가 싶기도 합니다.",
+      "line3": "호감이 안 생기는 데에는 사람마다 서로 다른 지점이 있습니다. 내 기준이 너무 굳어서일 수도, 첫인상에서 결론이 나서일 수도, 자꾸 비교해서일 수도, 긴장해서 나다운 모습이 안 나와서일 수도, 기대가 너무 커서일 수도, 마음의 문을 미리 닫아서일 수도 있습니다. 막히는 지점을 알면 다음 소개팅이 달라집니다.",
+      "line4": "12가지 상황으로 내가 소개팅에서 막히는 진짜 이유와 호감이 열리는 법을 알려드립니다.",
+      "line5": "내 막히는 지점 찾기 ☕ 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 막히는 지점 찾기 ☕",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "keywords": "핵심 키워드",
+      "scoreTitle": "막힘 유형 점수",
+      "scoreUnit": "점",
+      "secondBlock": "함께 있는 막힘",
+      "blockMoment": "막히는 순간",
+      "strengths": "이 유형의 강점",
+      "realReasonUnpack": "진짜 이유를 풀어보면",
+      "frequentSaying": "이 유형이 자주 하는 말",
+      "tips": "호감이 열리는 법",
+      "counselingNote": "전문가 상담 안내",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나는 왜 소개팅만 하면 호감이 안 생길까? ☕ 내 막히는 지점 찾기",
+      "startKakao": "나는 왜 소개팅만 하면 호감이 안 생길까? ☕ 내 막히는 지점 찾기",
+      "startWechat": "나는 왜 소개팅만 하면 호감이 안 생길까? ☕ 내 막히는 지점 찾기",
+      "startWhatsapp": "나는 왜 소개팅만 하면 호감이 안 생길까? ☕ 내 막히는 지점 찾기",
+      "startTelegram": "나는 왜 소개팅만 하면 호감이 안 생길까? ☕ 내 막히는 지점 찾기",
+      "startLine": "나는 왜 소개팅만 하면 호감이 안 생길까? ☕ 내 막히는 지점 찾기"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }

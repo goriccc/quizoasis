@@ -44,6 +44,7 @@ import { PHASE3_LOVE_NUNCHI_LEVEL_META } from '@/lib/phase3LoveNunchiLevelData';
 import { PHASE3_MARRIAGE_TEMPERATURE_META } from '@/lib/phase3MarriageTemperatureData';
 import { PHASE3_LOVE_SUPERPOWER_META } from '@/lib/phase3LoveSuperpowerData';
 import { PHASE3_SAME_BREAKUP_REASON_META } from '@/lib/phase3SameBreakupReasonData';
+import { PHASE3_NO_SPARK_BLIND_DATE_META } from '@/lib/phase3NoSparkBlindDateData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -406,6 +407,10 @@ const Phase3LoveSuperpowerTestClient = dynamic(
 );
 const Phase3SameBreakupReasonTestClient = dynamic(
   () => import('@/components/Phase3SameBreakupReasonTestClient'),
+  { ssr: false }
+);
+const Phase3NoSparkBlindDateTestClient = dynamic(
+  () => import('@/components/Phase3NoSparkBlindDateTestClient'),
   { ssr: false }
 );
 
@@ -2931,6 +2936,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_SUPERPOWER_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-no-spark-blind-date') {
+    test = {
+      slug: 'phase3-no-spark-blind-date',
+      title: PHASE3_NO_SPARK_BLIND_DATE_META.title,
+      description: PHASE3_NO_SPARK_BLIND_DATE_META.description,
+      thumbnail: 'p3_test_no_spark_blind_date.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_NO_SPARK_BLIND_DATE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10809,6 +10827,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveSuperpowerQuestions}
             results={phase3LoveSuperpowerResults}
             questionCount={phase3LoveSuperpowerQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-no-spark-blind-date') {
+      const { phase3NoSparkBlindDateQuestions, phase3NoSparkBlindDateResults } = await import(
+        '@/lib/phase3NoSparkBlindDateData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-no-spark-blind-date',
+        title: PHASE3_NO_SPARK_BLIND_DATE_META.title,
+        description: PHASE3_NO_SPARK_BLIND_DATE_META.description,
+        thumbnail: 'p3_test_no_spark_blind_date.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_NO_SPARK_BLIND_DATE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3NoSparkBlindDateTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3NoSparkBlindDateQuestions}
+            results={phase3NoSparkBlindDateResults}
+            questionCount={phase3NoSparkBlindDateQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

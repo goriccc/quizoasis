@@ -15471,5 +15471,66 @@
       "similarTestsTop5": "🎯 類似測試推薦 Top5",
       "popularTestsTop5": "🔥 近期熱門測試 Top5"
     }
+  },
+  "phase3NoSparkBlindDateTest": {
+    "startMessage": {
+      "line1": "\"明明人不錯，為什麼一相親心就不動？\"",
+      "line2": "條件也行、禮貌也行、聊天也不差，回家路上卻一點感覺都沒有。跟介紹人只會說「人挺好的，但是……」有時也懷疑自己是不是太挑。",
+      "line3": "心動不起來，卡點因人而異：條件清單太硬、第一印象定死、總在比較、緊張露不出真我、期待太高、或一開始就把心門關上。知道卡點，下次就會不一樣。",
+      "line4": "用12個場景，找出你相親卡關的真正原因，以及心動怎麼打開。",
+      "line5": "找出我的卡點 ☕ 誠實開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "找出我的卡點 ☕",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "keywords": "核心關鍵字",
+      "scoreTitle": "卡點類型分數",
+      "scoreUnit": "分",
+      "secondBlock": "一起出現的卡點",
+      "blockMoment": "卡住的瞬間",
+      "strengths": "這個類型的優勢",
+      "realReasonUnpack": "拆開真正原因",
+      "frequentSaying": "這類型常說的話",
+      "tips": "心動打開的方法",
+      "counselingNote": "專家諮詢提示",
+      "oneLiner": "一句話點評"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "為什麼我一相親，心動的感覺就不見了？ ☕ 找出卡點",
+      "startKakao": "為什麼我一相親，心動的感覺就不見了？ ☕ 找出卡點",
+      "startWechat": "為什麼我一相親，心動的感覺就不見了？ ☕ 找出卡點",
+      "startWhatsapp": "為什麼我一相親，心動的感覺就不見了？ ☕ 找出卡點",
+      "startTelegram": "為什麼我一相親，心動的感覺就不見了？ ☕ 找出卡點",
+      "startLine": "為什麼我一相親，心動的感覺就不見了？ ☕ 找出卡點"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請到 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測試 Top5"
+    }
   }
 }
