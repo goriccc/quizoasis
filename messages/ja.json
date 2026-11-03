@@ -16169,5 +16169,61 @@
       "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトーク共有中にエラーが発生しました。"
     }
+  },
+  "phase3AffectionBalanceGameTest": {
+    "startMessage": {
+      "line1": "1日100回「好き」と言う vs 年に1回だけ本気の手紙、あなたならどっち?",
+      "line2": "愛情は同じでも、伝え方と量は人それぞれ。どちらも惜しい選択肢から選ぶうちに、自分がどう愛情を伝える人かがわかります。",
+      "line3": "12ラウンドの極限選択であなたの愛情表現スタイルがわかります。より近い方を選んでみてください。",
+      "line4": "極限選択スタート ⚖️ 悩む時間は短く"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "極限選択スタート ⚖️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "yourResult": "私の愛情表現スタイル",
+      "styleType": "タイプ",
+      "keywords": "キーワード",
+      "affectionStyle": "愛情表現の姿",
+      "strengths": "このタイプの強み",
+      "goodMatch": "相性のいいタイプ",
+      "caution": "注意点",
+      "tips": "愛情表現の処方箋",
+      "oneLiner": "一言まとめ",
+      "roundLabel": "ラウンド {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "バランスゲーム ― スキンシップ・愛情表現極限編 ⚖️ 1日100回好き vs 年1回本気の手紙、どっち選ぶ?",
+      "startKakao": "バランスゲーム ― スキンシップ・愛情表現極限編 ⚖️ 1日100回好き vs 年1回本気の手紙、どっち選ぶ?",
+      "startWechat": "バランスゲーム ― スキンシップ・愛情表現極限編 ⚖️ 1日100回好き vs 年1回本気の手紙、どっち選ぶ?",
+      "startWhatsapp": "バランスゲーム ― スキンシップ・愛情表現極限編 ⚖️ 1日100回好き vs 年1回本気の手紙、どっち選ぶ?",
+      "startTelegram": "バランスゲーム ― スキンシップ・愛情表現極限編 ⚖️ 1日100回好き vs 年1回本気の手紙、どっち選ぶ?",
+      "startLine": "バランスゲーム ― スキンシップ・愛情表現極限編 ⚖️ 1日100回好き vs 年1回本気の手紙、どっち選ぶ?"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました!",
+      "resultCopied": "結果をクリップボードにコピーしました!",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました! WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    }
   }
 }

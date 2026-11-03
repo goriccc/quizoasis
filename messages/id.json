@@ -16181,5 +16181,61 @@
       "kakaoInit": "Berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
       "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
     }
+  },
+  "phase3AffectionBalanceGameTest": {
+    "startMessage": {
+      "line1": "Bilang sayang seratus kali sehari vs satu surat tulus setahun—kamu pilih yang mana?",
+      "line2": "Cinta bisa sama, tapi cara dan seberapa banyak mengungkapkannya beda-beda. Memilih di antara dua opsi yang sama-sama kurang pas menunjukkan bagaimana kamu menyampaikan kasih.",
+      "line3": "12 ronde pilihan ekstrem mengungkap gaya ekspresi kasihmu. Pilih sisi yang lebih dekat denganmu.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan mikir lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Gaya ekspresi kasihku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "affectionStyle": "Cara kamu menunjukkan kasih",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Tips ekspresi kasih",
+      "oneLiner": "Dalam satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Ekspresi Kasih & Sentuhan (Ekstrem) ⚖️ Bilang sayang 100x sehari vs satu surat tulus setahun—pilihanmu?",
+      "startKakao": "Permainan Seimbang — Ekspresi Kasih & Sentuhan (Ekstrem) ⚖️ Bilang sayang 100x sehari vs satu surat tulus setahun—pilihanmu?",
+      "startWechat": "Permainan Seimbang — Ekspresi Kasih & Sentuhan (Ekstrem) ⚖️ Bilang sayang 100x sehari vs satu surat tulus setahun—pilihanmu?",
+      "startWhatsapp": "Permainan Seimbang — Ekspresi Kasih & Sentuhan (Ekstrem) ⚖️ Bilang sayang 100x sehari vs satu surat tulus setahun—pilihanmu?",
+      "startTelegram": "Permainan Seimbang — Ekspresi Kasih & Sentuhan (Ekstrem) ⚖️ Bilang sayang 100x sehari vs satu surat tulus setahun—pilihanmu?",
+      "startLine": "Permainan Seimbang — Ekspresi Kasih & Sentuhan (Ekstrem) ⚖️ Bilang sayang 100x sehari vs satu surat tulus setahun—pilihanmu?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
   }
 }

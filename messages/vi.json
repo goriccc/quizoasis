@@ -16181,5 +16181,61 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
       "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "phase3AffectionBalanceGameTest": {
+    "startMessage": {
+      "line1": "Nói yêu một trăm lần mỗi ngày vs một lá thư chân thành mỗi năm—bạn chọn gì?",
+      "line2": "Tình yêu có thể giống nhau, nhưng cách và mức độ biểu lộ thì khác. Chọn giữa hai phương án đều có thiệt thòi sẽ lộ ra bạn truyền tình cảm thế nào.",
+      "line3": "12 vòng chọn cực hạn hé lộ phong cách biểu lộ tình cảm của bạn. Chọn phía gần bạn hơn.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Đừng nghĩ lâu"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "yourResult": "Phong cách biểu lộ tình cảm của tôi",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "affectionStyle": "Cách bạn thể hiện tình cảm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "goodMatch": "Hợp nhất với",
+      "caution": "Cần lưu ý",
+      "tips": "Gợi ý biểu lộ tình cảm",
+      "oneLiner": "Một câu tóm tắt",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Biểu lộ tình cảm & da thịt (cực hạn) ⚖️ Nói yêu 100 lần/ngày vs một lá thư chân thành/năm—bạn chọn?",
+      "startKakao": "Trò cân bằng — Biểu lộ tình cảm & da thịt (cực hạn) ⚖️ Nói yêu 100 lần/ngày vs một lá thư chân thành/năm—bạn chọn?",
+      "startWechat": "Trò cân bằng — Biểu lộ tình cảm & da thịt (cực hạn) ⚖️ Nói yêu 100 lần/ngày vs một lá thư chân thành/năm—bạn chọn?",
+      "startWhatsapp": "Trò cân bằng — Biểu lộ tình cảm & da thịt (cực hạn) ⚖️ Nói yêu 100 lần/ngày vs một lá thư chân thành/năm—bạn chọn?",
+      "startTelegram": "Trò cân bằng — Biểu lộ tình cảm & da thịt (cực hạn) ⚖️ Nói yêu 100 lần/ngày vs một lá thư chân thành/năm—bạn chọn?",
+      "startLine": "Trò cân bằng — Biểu lộ tình cảm & da thịt (cực hạn) ⚖️ Nói yêu 100 lần/ngày vs một lá thư chân thành/năm—bạn chọn?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    }
   }
 }

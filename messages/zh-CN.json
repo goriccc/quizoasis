@@ -16181,5 +16181,61 @@
       "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
       "kakaoError": "KakaoTalk 分享时出错。"
     }
+  },
+  "phase3AffectionBalanceGameTest": {
+    "startMessage": {
+      "line1": "一天说一百次我爱你 vs 一年写一封真心信，你会选哪个？",
+      "line2": "爱可以一样，但表达方式和分量因人而异。在两个都有遗憾的选项里做选择，会看见你是怎样传递爱意的人。",
+      "line3": "12轮极限选择，测出你的爱意表达风格。选更贴近自己的一边。",
+      "line4": "极限选择开始 ⚖️ 别想太久"
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "极限选择开始 ⚖️",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "popularBadge": "热门",
+      "shareResult": "分享结果",
+      "retake": "再测一次",
+      "otherTests": "看看其他测试",
+      "yourResult": "我的爱意表达风格",
+      "styleType": "类型",
+      "keywords": "关键词",
+      "affectionStyle": "爱意表达模样",
+      "strengths": "这个类型的优势",
+      "goodMatch": "最合拍类型",
+      "caution": "要注意的点",
+      "tips": "爱意表达小建议",
+      "oneLiner": "一句话总结",
+      "roundLabel": "第 {n} 轮"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "平衡游戏——亲密与爱意表达极限篇 ⚖️ 一天一百次我爱你 vs 一年一封真心信，你选哪个？",
+      "startKakao": "平衡游戏——亲密与爱意表达极限篇 ⚖️ 一天一百次我爱你 vs 一年一封真心信，你选哪个？",
+      "startWechat": "平衡游戏——亲密与爱意表达极限篇 ⚖️ 一天一百次我爱你 vs 一年一封真心信，你选哪个？",
+      "startWhatsapp": "平衡游戏——亲密与爱意表达极限篇 ⚖️ 一天一百次我爱你 vs 一年一封真心信，你选哪个？",
+      "startTelegram": "平衡游戏——亲密与爱意表达极限篇 ⚖️ 一天一百次我爱你 vs 一年一封真心信，你选哪个？",
+      "startLine": "平衡游戏——亲密与爱意表达极限篇 ⚖️ 一天一百次我爱你 vs 一年一封真心信，你选哪个？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错了。"
+    }
   }
 }

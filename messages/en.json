@@ -16190,5 +16190,61 @@
       "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
+  },
+  "phase3AffectionBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"I love you\" a hundred times a day vs one heartfelt letter a year—what would you pick?",
+      "line2": "Love can be the same, but how and how much you show it differs. Choosing between two imperfect options reveals how you deliver affection.",
+      "line3": "Twelve extreme rounds reveal your affection style. Pick the side that fits you better.",
+      "line4": "Start the extreme picks ⚖️ Keep it quick"
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Start the extreme picks ⚖️",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "retake": "Retake",
+      "otherTests": "More tests",
+      "yourResult": "My affection style",
+      "styleType": "Type",
+      "keywords": "Key words",
+      "affectionStyle": "How you show love",
+      "strengths": "Strengths of this type",
+      "goodMatch": "Best match",
+      "caution": "Watch out for",
+      "tips": "Affection tips",
+      "oneLiner": "In one line",
+      "roundLabel": "Round {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance Game — Affection & Touch (Extreme) ⚖️ \"I love you\" 100x a day vs one sincere letter a year—your pick?",
+      "startKakao": "Balance Game — Affection & Touch (Extreme) ⚖️ \"I love you\" 100x a day vs one sincere letter a year—your pick?",
+      "startWechat": "Balance Game — Affection & Touch (Extreme) ⚖️ \"I love you\" 100x a day vs one sincere letter a year—your pick?",
+      "startWhatsapp": "Balance Game — Affection & Touch (Extreme) ⚖️ \"I love you\" 100x a day vs one sincere letter a year—your pick?",
+      "startTelegram": "Balance Game — Affection & Touch (Extreme) ⚖️ \"I love you\" 100x a day vs one sincere letter a year—your pick?",
+      "startLine": "Balance Game — Affection & Touch (Extreme) ⚖️ \"I love you\" 100x a day vs one sincere letter a year—your pick?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    }
   }
 }

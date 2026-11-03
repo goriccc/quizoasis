@@ -47,6 +47,7 @@ import { PHASE3_SAME_BREAKUP_REASON_META } from '@/lib/phase3SameBreakupReasonDa
 import { PHASE3_NO_SPARK_BLIND_DATE_META } from '@/lib/phase3NoSparkBlindDateData';
 import { PHASE3_FIRST_DATE_SUCCESS_META } from '@/lib/phase3FirstDateSuccessData';
 import { PHASE3_BLIND_DATE_BALANCE_META } from '@/lib/phase3BlindDateBalanceGameData';
+import { PHASE3_AFFECTION_BALANCE_META } from '@/lib/phase3AffectionBalanceGameData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -421,6 +422,10 @@ const Phase3FirstDateSuccessTestClient = dynamic(
 );
 const Phase3BlindDateBalanceGameTestClient = dynamic(
   () => import('@/components/Phase3BlindDateBalanceGameTestClient'),
+  { ssr: false }
+);
+const Phase3AffectionBalanceGameTestClient = dynamic(
+  () => import('@/components/Phase3AffectionBalanceGameTestClient'),
   { ssr: false }
 );
 
@@ -2985,6 +2990,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_BLIND_DATE_BALANCE_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-affection-balance-game') {
+    test = {
+      slug: 'phase3-affection-balance-game',
+      title: PHASE3_AFFECTION_BALANCE_META.title,
+      description: PHASE3_AFFECTION_BALANCE_META.description,
+      thumbnail: 'p3_test_balance_game_affection.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_AFFECTION_BALANCE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10966,6 +10984,41 @@ export default async function TestPage({ params }: Props) {
             questions={phase3BlindDateBalanceGameQuestions}
             results={phase3BlindDateBalanceGameResults}
             questionCount={phase3BlindDateBalanceGameQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-affection-balance-game') {
+      const {
+        phase3AffectionBalanceGameQuestions,
+        phase3AffectionBalanceGameResults,
+      } = await import('@/lib/phase3AffectionBalanceGameData');
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-affection-balance-game',
+        title: PHASE3_AFFECTION_BALANCE_META.title,
+        description: PHASE3_AFFECTION_BALANCE_META.description,
+        thumbnail: 'p3_test_balance_game_affection.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_AFFECTION_BALANCE_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3AffectionBalanceGameTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3AffectionBalanceGameQuestions}
+            results={phase3AffectionBalanceGameResults}
+            questionCount={phase3AffectionBalanceGameQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />
