@@ -15882,5 +15882,62 @@
       "kakaoInit": "Fitur berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
       "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
     }
+  },
+  "phase3LoveNunchiLevelTest": {
+    "startMessage": {
+      "line1": "\"Sinyal dia suka, seberapa akurat aku bacanya?\"",
+      "line2": "\"Hari ini asyik banget\" itu ketertarikan atau basa-basi? Balasan lambat itu dingin atau sibuk? Ada yang tangkap sinyal kecil, ada yang miss bola lurus.",
+      "line3": "Jumlahkan cara bacamu di 10 situasi PDKT/pacaran buat tahu level kepekaan membaca sinyal cinta—dari bayi sampai dewa. Bandingkan skor sama temen.",
+      "line4": "",
+      "line5": "Cek level baca sinyalku 👀 Mulai jujur",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cek level baca sinyalku 👀",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "scoreTitle": "Level baca sinyal cinta",
+      "scoreUnit": " poin",
+      "keywords": "Kata kunci utama",
+      "strengths": "Kekuatan tipe ini",
+      "growthPoint": "Poin yang perlu dilatih",
+      "tips": "Cara naikkan level baca sinyal",
+      "oneLiner": "Satu baris ringkas"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tes level kepekaan baca sinyal cinta 👀 Bayi atau Dewa? Cek skor",
+      "startKakao": "Tes level kepekaan baca sinyal cinta 👀 Bayi atau Dewa? Cek skor",
+      "startWechat": "Tes level kepekaan baca sinyal cinta 👀 Bayi atau Dewa? Cek skor",
+      "startWhatsapp": "Tes level kepekaan baca sinyal cinta 👀 Bayi atau Dewa? Cek skor",
+      "startTelegram": "Tes level kepekaan baca sinyal cinta 👀 Bayi atau Dewa? Cek skor",
+      "startLine": "Tes level kepekaan baca sinyal cinta 👀 Bayi atau Dewa? Cek skor"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Fitur berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi hits"
+    }
   }
 }

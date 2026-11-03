@@ -15351,5 +15351,62 @@
       "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
       "kakaoError": "KakaoTalk 分享出錯了。"
     }
+  },
+  "phase3LoveNunchiLevelTest": {
+    "startMessage": {
+      "line1": "\"對方的好感訊號，我到底讀得準不準？\"",
+      "line2": "「今天真開心」是有意思還是場面話？回得慢是冷淡還是忙？有人連小訊號都抓得準，有人連直球都錯過。",
+      "line3": "把10個曖昧／戀愛場景裡的解讀加總分，告訴你戀愛敏感度從「小白」到「大師」的等級。跟朋友比比分吧。",
+      "line4": "",
+      "line5": "測測我的戀愛敏感度 👀 誠實開始",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "測測我的戀愛敏感度 👀",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "scoreTitle": "戀愛敏感度等級",
+      "scoreUnit": "分",
+      "keywords": "核心關鍵字",
+      "strengths": "這個類型的優勢",
+      "growthPoint": "敏感度成長點",
+      "tips": "提升敏感度的處方",
+      "oneLiner": "一句話點評"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "我的戀愛敏感度測驗 👀 小白還是大師？分數認證",
+      "startKakao": "我的戀愛敏感度測驗 👀 小白還是大師？分數認證",
+      "startWechat": "我的戀愛敏感度測驗 👀 小白還是大師？分數認證",
+      "startWhatsapp": "我的戀愛敏感度測驗 👀 小白還是大師？分數認證",
+      "startTelegram": "我的戀愛敏感度測驗 👀 小白還是大師？分數認證",
+      "startLine": "我的戀愛敏感度測驗 👀 小白還是大師？分數認證"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請到 WeChat 貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測試 Top5"
+    }
   }
 }

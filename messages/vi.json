@@ -15882,5 +15882,62 @@
       "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
       "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
     }
+  },
+  "phase3LoveNunchiLevelTest": {
+    "startMessage": {
+      "line1": "\"Tín hiệu thích mình, mình đọc vị được bao nhiêu?\"",
+      "line2": "\"Hôm nay vui ghê\" là thích hay xã giao? Trả lời chậm là nguội hay bận? Có người bắt cả tín hiệu nhỏ, có người bỏ lỡ cả đường thẳng.",
+      "line3": "Cộng điểm cách bạn hiểu 10 tình huống tìm hiểu/hẹn hò để ra cấp độ đọc vị tín hiệu tình yêu. So điểm với bạn bè nhé.",
+      "line4": "",
+      "line5": "Đo cấp độ đọc vị 👀 Bắt đầu thành thật",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Đo cấp độ đọc vị 👀",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "scoreTitle": "Cấp độ đọc vị tín hiệu yêu",
+      "scoreUnit": " điểm",
+      "keywords": "Từ khóa chính",
+      "strengths": "Điểm mạnh của kiểu này",
+      "growthPoint": "Điểm cần luyện",
+      "tips": "Cách nâng cấp đọc vị",
+      "oneLiner": "Một dòng nhận xét"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Test cấp độ đọc vị tín hiệu tình yêu 👀 Sơ sinh hay Thánh? Check điểm",
+      "startKakao": "Test cấp độ đọc vị tín hiệu tình yêu 👀 Sơ sinh hay Thánh? Check điểm",
+      "startWechat": "Test cấp độ đọc vị tín hiệu tình yêu 👀 Sơ sinh hay Thánh? Check điểm",
+      "startWhatsapp": "Test cấp độ đọc vị tín hiệu tình yêu 👀 Sơ sinh hay Thánh? Check điểm",
+      "startTelegram": "Test cấp độ đọc vị tín hiệu tình yêu 👀 Sơ sinh hay Thánh? Check điểm",
+      "startLine": "Test cấp độ đọc vị tín hiệu tình yêu 👀 Sơ sinh hay Thánh? Check điểm"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
   }
 }

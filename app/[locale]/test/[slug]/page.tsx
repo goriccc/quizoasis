@@ -40,6 +40,7 @@ import { PHASE3_CANT_CONFESS_FIRST_META } from '@/lib/phase3CantConfessFirstData
 import { PHASE3_GROUPCHAT_CHARACTER_META } from '@/lib/phase3GroupchatCharacterData';
 import { PHASE3_LOVE_FACTBOMB_T_META } from '@/lib/phase3LoveFactbombTData';
 import { PHASE3_LOVE_TEMPERATURE_NOW_META } from '@/lib/phase3LoveTemperatureNowData';
+import { PHASE3_LOVE_NUNCHI_LEVEL_META } from '@/lib/phase3LoveNunchiLevelData';
 import { PHASE3_LOVE_SUPERPOWER_META } from '@/lib/phase3LoveSuperpowerData';
 import { PHASE3_SAME_BREAKUP_REASON_META } from '@/lib/phase3SameBreakupReasonData';
 
@@ -388,6 +389,10 @@ const Phase3LoveFactbombTTestClient = dynamic(
 );
 const Phase3LoveTemperatureNowTestClient = dynamic(
   () => import('@/components/Phase3LoveTemperatureNowTestClient'),
+  { ssr: false }
+);
+const Phase3LoveNunchiLevelTestClient = dynamic(
+  () => import('@/components/Phase3LoveNunchiLevelTestClient'),
   { ssr: false }
 );
 const Phase3LoveSuperpowerTestClient = dynamic(
@@ -2882,6 +2887,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_LOVE_TEMPERATURE_NOW_META.tags,
+    } as Awaited<ReturnType<typeof getTestBySlug>>;
+  }
+
+  if (!test && slug === 'phase3-love-nunchi-level') {
+    test = {
+      slug: 'phase3-love-nunchi-level',
+      title: PHASE3_LOVE_NUNCHI_LEVEL_META.title,
+      description: PHASE3_LOVE_NUNCHI_LEVEL_META.description,
+      thumbnail: 'p3_test_love_nunchi_level.webp',
+      type: 'psychology',
+      category: 'personality',
+      play_count: 0,
+      tags: PHASE3_LOVE_NUNCHI_LEVEL_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -10671,6 +10689,40 @@ export default async function TestPage({ params }: Props) {
             questions={phase3LoveTemperatureNowQuestions}
             results={phase3LoveTemperatureNowResults}
             questionCount={phase3LoveTemperatureNowQuestions.length}
+            thumbnail={test.thumbnail}
+            playCount={test.play_count}
+          />
+        </>
+      );
+    }
+
+    if (slug === 'phase3-love-nunchi-level') {
+      const { phase3LoveNunchiLevelQuestions, phase3LoveNunchiLevelResults } = await import(
+        '@/lib/phase3LoveNunchiLevelData'
+      );
+      const test = (await getTestBySlug(slug)) || {
+        slug: 'phase3-love-nunchi-level',
+        title: PHASE3_LOVE_NUNCHI_LEVEL_META.title,
+        description: PHASE3_LOVE_NUNCHI_LEVEL_META.description,
+        thumbnail: 'p3_test_love_nunchi_level.webp',
+        type: 'psychology',
+        category: 'personality',
+        play_count: 0,
+        tags: PHASE3_LOVE_NUNCHI_LEVEL_META.tags,
+      };
+
+      return (
+        <>
+          <Phase3LoveNunchiLevelTestClient
+            locale={locale}
+            slug={test.slug}
+            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
+            description={
+              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
+            }
+            questions={phase3LoveNunchiLevelQuestions}
+            results={phase3LoveNunchiLevelResults}
+            questionCount={phase3LoveNunchiLevelQuestions.length}
             thumbnail={test.thumbnail}
             playCount={test.play_count}
           />

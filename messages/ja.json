@@ -15870,5 +15870,62 @@
       "kakaoInit": "カカオトークのシェアを準備中です。しばらくしてからもう一度どうぞ。",
       "kakaoError": "カカオトークのシェアでエラーが起きました。"
     }
+  },
+  "phase3LoveNunchiLevelTest": {
+    "startMessage": {
+      "line1": "\"相手の好意サイン、自分はどれくらい読めてる？\"",
+      "line2": "「今日楽しかった」は好意？社交辞令？返信が遅いのは冷め？忙しいだけ？小さなサインを正確に読む人もいれば、直球も見落とす人もいます。",
+      "line3": "サム・恋愛のシーン10問の読み方を点数化して、恋愛の空気読みレベルをお伝えします。友達とスコア比べしてね。",
+      "line4": "",
+      "line5": "空気読みレベルを測る 👀 正直にスタート",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "空気読みレベルを測る 👀",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "scoreTitle": "恋愛の空気読みレベル",
+      "scoreUnit": "点",
+      "keywords": "キーワード",
+      "strengths": "このタイプの強み",
+      "growthPoint": "伸びしろポイント",
+      "tips": "空気読みを伸ばすヒント",
+      "oneLiner": "一言まとめ"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "あなたの恋愛空気読みレベル診断 👀 赤ちゃん？マスター？スコア認証",
+      "startKakao": "あなたの恋愛空気読みレベル診断 👀 赤ちゃん？マスター？スコア認証",
+      "startWechat": "あなたの恋愛空気読みレベル診断 👀 赤ちゃん？マスター？スコア認証",
+      "startWhatsapp": "あなたの恋愛空気読みレベル診断 👀 赤ちゃん？マスター？スコア認証",
+      "startTelegram": "あなたの恋愛空気読みレベル診断 👀 赤ちゃん？マスター？スコア認証",
+      "startLine": "あなたの恋愛空気読みレベル診断 👀 赤ちゃん？マスター？スコア認証"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを準備中です。しばらくしてからもう一度どうぞ。",
+      "kakaoError": "カカオトークのシェアでエラーが起きました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
   }
 }

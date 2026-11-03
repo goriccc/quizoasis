@@ -16029,5 +16029,62 @@
       "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
       "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
     }
+  },
+  "phase3LoveNunchiLevelTest": {
+    "startMessage": {
+      "line1": "\"상대의 호감 신호, 나는 얼마나 잘 읽고 있을까?\"",
+      "line2": "\"오늘 재밌었어\"라는 말이 호감인지 인사치레인지, 답장이 늦은 게 무관심인지 바쁜 건지 헷갈릴 때가 있습니다. 어떤 사람은 작은 신호도 정확히 읽고, 어떤 사람은 직진 신호도 놓칩니다.",
+      "line3": "10가지 썸·연애 상황에서 나의 해석을 점수로 합산해 연애 눈치 레벨을 알려드립니다. 친구와 점수를 비교해 보세요.",
+      "line4": "",
+      "line5": "내 눈치 레벨 재기 👀 솔직하게 시작",
+      "note": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 눈치 레벨 재기 👀",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "popularBadge": "인기",
+      "shareResult": "결과 공유하기",
+      "scoreTitle": "연애 눈치 레벨",
+      "scoreUnit": "점",
+      "keywords": "핵심 키워드",
+      "strengths": "이 유형의 강점",
+      "growthPoint": "내 눈치 성장 포인트",
+      "tips": "눈치를 키우는 처방",
+      "oneLiner": "한 줄 평"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나의 연애 눈치 레벨 테스트 👀 눈치 신생아? 눈치 도사? 점수 인증",
+      "startKakao": "나의 연애 눈치 레벨 테스트 👀 눈치 신생아? 눈치 도사? 점수 인증",
+      "startWechat": "나의 연애 눈치 레벨 테스트 👀 눈치 신생아? 눈치 도사? 점수 인증",
+      "startWhatsapp": "나의 연애 눈치 레벨 테스트 👀 눈치 신생아? 눈치 도사? 점수 인증",
+      "startTelegram": "나의 연애 눈치 레벨 테스트 👀 눈치 신생아? 눈치 도사? 점수 인증",
+      "startLine": "나의 연애 눈치 레벨 테스트 👀 눈치 신생아? 눈치 도사? 점수 인증"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
   }
 }
