@@ -16113,5 +16113,61 @@
       "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
       "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
     }
+  },
+  "phase3BlindDateBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"紹介デートで相手が15分遅刻して謝らない vs 謝るけどずっとスマホ、君ならどっち？\"",
+      "line2": "紹介デートは短い時間で判断するから、小さなサインが大きく感じられる。どちらも惜しい二択のあいだで選ぶと、何を見て、どう動く人なのかが見えてきます。",
+      "line3": "12ラウンドの極限選択で、私の紹介デートスタイルがわかります。近い方を選んでください。",
+      "line4": "極限選択スタート ⚖️ 悩む時間は短く"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "極限選択スタート ⚖️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "yourResult": "私の紹介デートスタイル",
+      "styleType": "タイプ",
+      "keywords": "キーワード",
+      "blindDateStyle": "紹介デートでの様子",
+      "strengths": "このタイプの強み",
+      "goodMatch": "相性のいいタイプ",
+      "caution": "注意ポイント",
+      "tips": "紹介デートのヒント",
+      "oneLiner": "一言まとめ",
+      "roundLabel": "ラウンド {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "バランスゲーム — 紹介デート極限編 ⚖️ 15分遅刻で謝罪なし vs 謝るけどスマホばかり、君ならどっち？",
+      "startKakao": "バランスゲーム — 紹介デート極限編 ⚖️ 15分遅刻で謝罪なし vs 謝るけどスマホばかり、君ならどっち？",
+      "startWechat": "バランスゲーム — 紹介デート極限編 ⚖️ 15分遅刻で謝罪なし vs 謝るけどスマホばかり、君ならどっち？",
+      "startWhatsapp": "バランスゲーム — 紹介デート極限編 ⚖️ 15分遅刻で謝罪なし vs 謝るけどスマホばかり、君ならどっち？",
+      "startTelegram": "バランスゲーム — 紹介デート極限編 ⚖️ 15分遅刻で謝罪なし vs 謝るけどスマホばかり、君ならどっち？",
+      "startLine": "バランスゲーム — 紹介デート極限編 ⚖️ 15分遅刻で謝罪なし vs 謝るけどスマホばかり、君ならどっち？"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトーク共有を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトーク共有中にエラーが発生しました。"
+    }
   }
 }

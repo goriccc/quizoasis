@@ -16125,5 +16125,61 @@
       "similarTestsTop5": "🎯 Top 5 bài test tương tự",
       "popularTestsTop5": "🔥 Top 5 bài test đang hot"
     }
+  },
+  "phase3BlindDateBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"Người hẹn mai mối trễ 15 phút không xin lỗi vs xin lỗi nhưng cứ dán mắt vào điện thoại, bạn chọn gì?\"",
+      "line2": "Hẹn mai mối phải phán trong thời gian ngắn nên tín hiệu nhỏ cũng bị phóng to. Chọn giữa hai phương án đều đáng tiếc sẽ lộ ra bạn nhìn gì và hành động thế nào.",
+      "line3": "12 vòng chọn cực hạn cho thấy kiểu hẹn mai mối của bạn. Chọn phía gần bạn hơn.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Đừng nghĩ lâu"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "popularBadge": "Phổ biến",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác",
+      "yourResult": "Kiểu hẹn mai mối của tôi",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "blindDateStyle": "Khi đi hẹn mai mối",
+      "strengths": "Điểm mạnh của kiểu này",
+      "goodMatch": "Hợp với kiểu",
+      "caution": "Cần lưu ý",
+      "tips": "Gợi ý cho buổi hẹn",
+      "oneLiner": "Một câu tổng kết",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Hẹn mai mối cực hạn ⚖️ Trễ 15 phút không xin lỗi vs xin lỗi nhưng cứ dán mắt vào điện thoại, bạn chọn gì?",
+      "startKakao": "Trò cân bằng — Hẹn mai mối cực hạn ⚖️ Trễ 15 phút không xin lỗi vs xin lỗi nhưng cứ dán mắt vào điện thoại, bạn chọn gì?",
+      "startWechat": "Trò cân bằng — Hẹn mai mối cực hạn ⚖️ Trễ 15 phút không xin lỗi vs xin lỗi nhưng cứ dán mắt vào điện thoại, bạn chọn gì?",
+      "startWhatsapp": "Trò cân bằng — Hẹn mai mối cực hạn ⚖️ Trễ 15 phút không xin lỗi vs xin lỗi nhưng cứ dán mắt vào điện thoại, bạn chọn gì?",
+      "startTelegram": "Trò cân bằng — Hẹn mai mối cực hạn ⚖️ Trễ 15 phút không xin lỗi vs xin lỗi nhưng cứ dán mắt vào điện thoại, bạn chọn gì?",
+      "startLine": "Trò cân bằng — Hẹn mai mối cực hạn ⚖️ Trễ 15 phút không xin lỗi vs xin lỗi nhưng cứ dán mắt vào điện thoại, bạn chọn gì?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    }
   }
 }

@@ -16134,5 +16134,61 @@
       "similarTestsTop5": "🎯 Top 5 similar tests",
       "popularTestsTop5": "🔥 Top 5 popular tests right now"
     }
+  },
+  "phase3BlindDateBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"They show up 15 minutes late with no apology vs they apologize but keep checking their phone—what would you pick?\"",
+      "line2": "Blind dates squeeze a lot of judgment into a short window, so tiny signals feel huge. Choosing between two imperfect options shows what you watch for—and how you move.",
+      "line3": "Twelve extreme rounds reveal your blind-date style. Pick the side that fits you better.",
+      "line4": "Start the extreme picks ⚖️ Keep it quick"
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Start the extreme picks ⚖️",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "retake": "Retake",
+      "otherTests": "More tests",
+      "yourResult": "My blind-date style",
+      "styleType": "Type",
+      "keywords": "Key words",
+      "blindDateStyle": "On a blind date",
+      "strengths": "Strengths of this type",
+      "goodMatch": "Best match",
+      "caution": "Watch out for",
+      "tips": "Blind-date tips",
+      "oneLiner": "In one line",
+      "roundLabel": "Round {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance Game — Blind Date (Extreme) ⚖️ Late 15 min no apology vs apologizes but phone-glued—your pick?",
+      "startKakao": "Balance Game — Blind Date (Extreme) ⚖️ Late 15 min no apology vs apologizes but phone-glued—your pick?",
+      "startWechat": "Balance Game — Blind Date (Extreme) ⚖️ Late 15 min no apology vs apologizes but phone-glued—your pick?",
+      "startWhatsapp": "Balance Game — Blind Date (Extreme) ⚖️ Late 15 min no apology vs apologizes but phone-glued—your pick?",
+      "startTelegram": "Balance Game — Blind Date (Extreme) ⚖️ Late 15 min no apology vs apologizes but phone-glued—your pick?",
+      "startLine": "Balance Game — Blind Date (Extreme) ⚖️ Late 15 min no apology vs apologizes but phone-glued—your pick?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    }
   }
 }

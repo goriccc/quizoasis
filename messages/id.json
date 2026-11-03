@@ -16125,5 +16125,61 @@
       "similarTestsTop5": "🎯 Top 5 tes serupa",
       "popularTestsTop5": "🔥 Top 5 tes populer sekarang"
     }
+  },
+  "phase3BlindDateBalanceGameTest": {
+    "startMessage": {
+      "line1": "\"Blind date datang 15 menit telat tanpa maaf vs minta maaf tapi terus main HP—kamu pilih mana?\"",
+      "line2": "Blind date harus menilai dalam waktu singkat, jadi sinyal kecil terasa besar. Memilih di antara dua opsi yang sama-sama kurang pas memperlihatkan apa yang kamu amati—dan bagaimana kamu bergerak.",
+      "line3": "12 ronde pilihan ekstrem mengungkap gaya blind datemu. Pilih sisi yang lebih mirip kamu.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan lama-lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Gaya blind dateku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "blindDateStyle": "Saat blind date",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Tips blind date",
+      "oneLiner": "Satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Blind Date Ekstrem ⚖️ Telat 15 menit tanpa maaf vs minta maaf tapi terus main HP, pilih mana?",
+      "startKakao": "Permainan Seimbang — Blind Date Ekstrem ⚖️ Telat 15 menit tanpa maaf vs minta maaf tapi terus main HP, pilih mana?",
+      "startWechat": "Permainan Seimbang — Blind Date Ekstrem ⚖️ Telat 15 menit tanpa maaf vs minta maaf tapi terus main HP, pilih mana?",
+      "startWhatsapp": "Permainan Seimbang — Blind Date Ekstrem ⚖️ Telat 15 menit tanpa maaf vs minta maaf tapi terus main HP, pilih mana?",
+      "startTelegram": "Permainan Seimbang — Blind Date Ekstrem ⚖️ Telat 15 menit tanpa maaf vs minta maaf tapi terus main HP, pilih mana?",
+      "startLine": "Permainan Seimbang — Blind Date Ekstrem ⚖️ Telat 15 menit tanpa maaf vs minta maaf tapi terus main HP, pilih mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Berbagi KakaoTalk sedang disiapkan. Coba lagi sebentar.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    }
   }
 }
