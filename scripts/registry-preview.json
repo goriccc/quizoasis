@@ -278,5 +278,6 @@
   "phase3-first-date-success": "scenario_4",
   "phase3-blind-date-balance-game": "game",
   "phase3-affection-balance-game": "game",
-  "phase3-partner-circle-balance-game": "game"
+  "phase3-partner-circle-balance-game": "game",
+  "phase3-after-breakup-balance-game": "game"
 }

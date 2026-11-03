@@ -15762,5 +15762,61 @@
       "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
       "kakaoError": "KakaoTalk 分享時出錯了。"
     }
+  },
+  "phase3AfterBreakupBalanceGameTest": {
+    "startMessage": {
+      "line1": "分手後還會聯繫的前任 vs 一次都不聯繫的前任，你會選哪個？",
+      "line2": "分手後的選擇沒有標準答案。在兩個都有遺憾的選項裡做選擇，會看見你如何處理分手後的心和接點。",
+      "line3": "12輪極限選擇，測出你的分手後風格。選更貼近自己的一邊。",
+      "line4": "極限選擇開始 ⚖️ 別想太久"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測驗",
+      "startTest": "極限選擇開始 ⚖️",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "popularBadge": "熱門",
+      "shareResult": "分享結果",
+      "retake": "再測一次",
+      "otherTests": "看看其他測驗",
+      "yourResult": "我的分手後風格",
+      "styleType": "類型",
+      "keywords": "關鍵字",
+      "afterBreakupStyle": "分手後的模樣",
+      "strengths": "這個類型的優勢",
+      "goodMatch": "最合拍類型",
+      "caution": "要注意的點",
+      "tips": "分手後小建議",
+      "oneLiner": "一句話總結",
+      "roundLabel": "第 {n} 輪"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "平衡遊戲——分手之後極限篇 ⚖️ 還會聯繫的前任 vs 一次都不聯繫的前任，你選哪個？",
+      "startKakao": "平衡遊戲——分手之後極限篇 ⚖️ 還會聯繫的前任 vs 一次都不聯繫的前任，你選哪個？",
+      "startWechat": "平衡遊戲——分手之後極限篇 ⚖️ 還會聯繫的前任 vs 一次都不聯繫的前任，你選哪個？",
+      "startWhatsapp": "平衡遊戲——分手之後極限篇 ⚖️ 還會聯繫的前任 vs 一次都不聯繫的前任，你選哪個？",
+      "startTelegram": "平衡遊戲——分手之後極限篇 ⚖️ 還會聯繫的前任 vs 一次都不聯繫的前任，你選哪個？",
+      "startLine": "平衡遊戲——分手之後極限篇 ⚖️ 還會聯繫的前任 vs 一次都不聯繫的前任，你選哪個？"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信中貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    }
   }
 }

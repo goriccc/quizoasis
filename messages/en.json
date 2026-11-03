@@ -16302,5 +16302,61 @@
       "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
       "kakaoError": "Something went wrong while sharing to KakaoTalk."
     }
+  },
+  "phase3AfterBreakupBalanceGameTest": {
+    "startMessage": {
+      "line1": "An ex who still texts vs an ex who vanishes completely—what would you pick?",
+      "line2": "After a breakup, choices rarely have a right answer. Picking between two imperfect options shows how you handle your heart—and the leftover contact—after it's over.",
+      "line3": "Twelve extreme rounds reveal your after-breakup style. Pick the side that fits you better.",
+      "line4": "Start the extreme picks ⚖️ Keep it quick"
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Start the extreme picks ⚖️",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "retake": "Retake",
+      "otherTests": "More tests",
+      "yourResult": "My after-breakup style",
+      "styleType": "Type",
+      "keywords": "Key words",
+      "afterBreakupStyle": "After the breakup",
+      "strengths": "Strengths of this type",
+      "goodMatch": "Best match",
+      "caution": "Watch out for",
+      "tips": "After-breakup tips",
+      "oneLiner": "In one line",
+      "roundLabel": "Round {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance Game — After the Breakup (Extreme) ⚖️ An ex who still texts vs an ex who vanishes—your pick?",
+      "startKakao": "Balance Game — After the Breakup (Extreme) ⚖️ An ex who still texts vs an ex who vanishes—your pick?",
+      "startWechat": "Balance Game — After the Breakup (Extreme) ⚖️ An ex who still texts vs an ex who vanishes—your pick?",
+      "startWhatsapp": "Balance Game — After the Breakup (Extreme) ⚖️ An ex who still texts vs an ex who vanishes—your pick?",
+      "startTelegram": "Balance Game — After the Breakup (Extreme) ⚖️ An ex who still texts vs an ex who vanishes—your pick?",
+      "startLine": "Balance Game — After the Breakup (Extreme) ⚖️ An ex who still texts vs an ex who vanishes—your pick?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    }
   }
 }
