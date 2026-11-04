@@ -16449,5 +16449,61 @@
       "kakaoInit": "カカオトークのシェア機能を準備中です。しばらくしてからもう一度お試しください。",
       "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
     }
+  },
+  "phase3FirstDateBalanceGameTest": {
+    "startMessage": {
+      "line1": "初デートで5分遅れる相手 vs スマホばかり見る相手、あなたならどっち?",
+      "line2": "初デートは小さな行動ひとつで印象が決まります。どちらも惜しい選択肢から選ぶうちに、自分が初対面で何を大切にする人かがわかります。",
+      "line3": "12ラウンドの極限選択であなたの初デートスタイルがわかります。より近い方を選んでみてください。",
+      "line4": "極限選択スタート ⚖️ 悩む時間は短く"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "極限選択スタート ⚖️",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "popularBadge": "人気",
+      "shareResult": "結果をシェア",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る",
+      "yourResult": "私の初デートスタイル",
+      "styleType": "タイプ",
+      "keywords": "キーワード",
+      "firstDateStyle": "初デートの姿",
+      "strengths": "このタイプの強み",
+      "goodMatch": "相性のいいタイプ",
+      "caution": "注意点",
+      "tips": "処方箋",
+      "oneLiner": "一言まとめ",
+      "roundLabel": "ラウンド {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "バランスゲーム ― 初デート極限編 ⚖️ 5分遅れる相手 vs スマホばかり見る相手、どっち選ぶ?",
+      "startKakao": "バランスゲーム ― 初デート極限編 ⚖️ 5分遅れる相手 vs スマホばかり見る相手、どっち選ぶ?",
+      "startWechat": "バランスゲーム ― 初デート極限編 ⚖️ 5分遅れる相手 vs スマホばかり見る相手、どっち選ぶ?",
+      "startWhatsapp": "バランスゲーム ― 初デート極限編 ⚖️ 5分遅れる相手 vs スマホばかり見る相手、どっち選ぶ?",
+      "startTelegram": "バランスゲーム ― 初デート極限編 ⚖️ 5分遅れる相手 vs スマホばかり見る相手、どっち選ぶ?",
+      "startLine": "バランスゲーム ― 初デート極限編 ⚖️ 5分遅れる相手 vs スマホばかり見る相手、どっち選ぶ?"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました!",
+      "resultCopied": "結果をクリップボードにコピーしました!",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました! WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    }
   }
 }
