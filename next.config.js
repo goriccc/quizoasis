@@ -116,6 +116,15 @@ const nextConfig = {
   compress: true,
   // Production 성능 최적화
   swcMinify: true,
+  // Vercel 빌드 OOM 완화: page.tsx(~2만줄)·messages 대용량으로
+  // "Linting and checking validity of types" 단계에서 SIGKILL 나는 경우 우회
+  // (로컬에서 npm run lint / tsc로 검증)
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // 빌드 시 정적 페이지 생성 최적화
   generateBuildId: async () => {
     return getGitHash();
