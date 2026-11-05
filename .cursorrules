@@ -316,3 +316,38 @@ const handleShareResult = async () => {
 - [ ] Font sizes and alignments are consistent
 - [ ] All 7 languages have complete translation keys
 - [ ] SQL file is created and ready to run
+
+## Test Runtime Registry (CRITICAL — NEW TESTS)
+
+### 운영 방침 (고정)
+- **기존 테스트**: `page.tsx` 레거시 분기를 **그대로 유지**한다. 일괄 이관·대량 리팩터 금지.
+- **신규 테스트**: `lib/testRuntimeRegistry.ts` 경로로만 추가한다. `page.tsx`에는 절대 분기/META/`dynamic`을 추가하지 않는다.
+- **이관**: 사용자가 **명시적으로** “이 테스트(또는 이 묶음)를 레지스트리로 옮겨”라고 요청한 경우에만, 해당 범위만 점진 이관한다. 전량 이관은 기본값 아님.
+- 라우팅은 레지스트리 hit → 새 경로, miss → 레거시 `page.tsx` (공존·무중단).
+
+신규 테스트는 **레지스트리 전용**으로만 추가한다. `page.tsx` 거대화·빌드 OOM을 막기 위한 고정 규칙이다.
+
+### ❌ DON'T
+- 기존 레거시 테스트를 레지스트리로 **임의/일괄** 이관
+- `app/[locale]/test/[slug]/page.tsx`에 `if (slug === '...')` 분기 추가
+- `page.tsx`에 META static import / `dynamic(() => import(...), { ssr: false })` 추가
+- 테스트 문구를 `messages/{locale}.json` 거대 파일에만 추가 (분할 없이)
+- 기존 슬러그 덮어쓰기
+
+### ✅ DO
+- `lib/testRuntimeRegistry.ts`에 slug 엔트리 1개 추가 (또는 `npm run scaffold:registry-test -- --slug ...`)
+- `lib/phase3XxxData.ts` + `components/Phase3XxxTestClient.tsx` 폴더/파일 추가
+- 테스트 문구는 `messages/{locale}/tests/{slug}.json`에 네임스페이스로 분리
+  - 추출: `node scripts/extract-test-messages.mjs --slug ... --ns ...`
+- 밸런스/텍스트 테스트는 레지스트리 `ssr: true` (시작화면 SSR island)
+- 카메라/실시간 게임만 `ssr: false`
+- SQL은 `supabase/insert-....sql` 생성만 (에이전트는 실행·이미지 업로드 안 함)
+
+### Onboarding checklist (registry)
+- [ ] unique `phase3-...` slug (기존 슬러그와 충돌 없음)
+- [ ] registry entry in `lib/testRuntimeRegistry.ts`
+- [ ] data + client modules
+- [ ] split messages for all 7 locales under `messages/{locale}/tests/{slug}.json`
+- [ ] SQL file ready
+- [ ] **zero** edits to `page.tsx` slug branches
+- [ ] `npm run check:budgets` passes

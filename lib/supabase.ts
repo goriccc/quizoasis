@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { unstable_cache } from 'next/cache';
 import { cache } from 'react';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -279,10 +280,17 @@ async function _getTestBySlugInternal(slug: string) {
 }
 
 /**
- * 특정 테스트 조회 (React cache로 감싸서 같은 요청 내 중복 호출 방지)
- * generateMetadata와 메인 컴포넌트에서 동시에 호출해도 한 번만 쿼리 실행
+ * 특정 테스트 조회
+ * - React cache(): 동일 요청 내 generateMetadata + page 중복 쿼리 제거
+ * - unstable_cache: 짧은 ISR(120s) + 태그 캐시로 TTFB 개선
  */
-export const getTestBySlug = cache(_getTestBySlugInternal);
+export const getTestBySlug = cache(async (slug: string) => {
+  return unstable_cache(
+    () => _getTestBySlugInternal(slug),
+    ['test-by-slug', slug],
+    { revalidate: 120, tags: [`test:${slug}`, 'tests'] },
+  )();
+});
 
 function getFallbackTestBySlug(slug: string) {
   // Supabase 연결 실패 시 더미 데이터 반환

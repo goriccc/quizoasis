@@ -1,0 +1,58 @@
+{
+  "phase3CoupleTripBalanceGameTest": {
+    "startMessage": {
+      "line1": "旅途中迷路的另一半 vs 订错住宿的另一半，你会选哪个？",
+      "line2": "情侣旅行既心动又多变数，一个小事故就能带走气氛。在两个都不够完美的选项里选，会看出你在旅行里看重什么、怎么行动。",
+      "line3": "12轮极限选择告诉你情侣旅行风格。每轮会显示「和我一样选择 ○%」，出结果后还能跟朋友比类型、聊理由。",
+      "line4": "极限选择开始 ⚖️ 别想太久"
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "极限选择开始 ⚖️",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似测试",
+      "popularBadge": "热门",
+      "shareResult": "分享结果",
+      "retake": "再测一次",
+      "otherTests": "更多测试",
+      "yourResult": "我的情侣旅行风格",
+      "styleType": "类型",
+      "keywords": "关键词",
+      "tripStyle": "旅行中的样子",
+      "strengths": "这类人的优势",
+      "goodMatch": "合拍类型",
+      "caution": "要注意",
+      "tips": "小建议",
+      "oneLiner": "一句话",
+      "roundLabel": "第 {n} 轮"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "平衡游戏——情侣旅行极限篇 ⚖️ 迷路的另一半 vs 订错住宿的另一半，你选谁？",
+      "startKakao": "平衡游戏——情侣旅行极限篇 ⚖️ 迷路的另一半 vs 订错住宿的另一半，你选谁？",
+      "startWechat": "平衡游戏——情侣旅行极限篇 ⚖️ 迷路的另一半 vs 订错住宿的另一半，你选谁？",
+      "startWhatsapp": "平衡游戏——情侣旅行极限篇 ⚖️ 迷路的另一半 vs 订错住宿的另一半，你选谁？",
+      "startTelegram": "平衡游戏——情侣旅行极限篇 ⚖️ 迷路的另一半 vs 订错住宿的另一半，你选谁？",
+      "startLine": "平衡游戏——情侣旅行极限篇 ⚖️ 迷路的另一半 vs 订错住宿的另一半，你选谁？"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "暂时无法使用分享功能。",
+      "wechatCopy": "链接已复制！请到微信里粘贴分享。",
+      "kakaoInit": "正在准备 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "KakaoTalk 分享时出错了。"
+    }
+  }
+}

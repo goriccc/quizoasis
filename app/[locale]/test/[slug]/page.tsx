@@ -11,6 +11,7 @@ import { SITE_URL } from '@/lib/siteUrl';
 import { getTestData } from '@/lib/mbtiData';
 import { getOgImageUrl, getThumbnailUrl } from '@/lib/utils';
 import { getLatestTestSlugs } from '@/lib/latestTests';
+import { getRuntimeTestEntry } from '@/lib/testRuntimeRegistry';
 import { PHASE3_SAME_TYPE_ATTRACTION_META } from '@/lib/phase3SameTypeAttractionData';
 import { PHASE3_PUSH_PULL_LEVEL_META } from '@/lib/phase3PushPullLevelData';
 import { PHASE3_CONFESSION_SUCCESS_META } from '@/lib/phase3ConfessionSuccessData';
@@ -51,8 +52,6 @@ import { PHASE3_AFFECTION_BALANCE_META } from '@/lib/phase3AffectionBalanceGameD
 import { PHASE3_PARTNER_CIRCLE_BALANCE_META } from '@/lib/phase3PartnerCircleBalanceGameData';
 import { PHASE3_AFTER_BREAKUP_BALANCE_META } from '@/lib/phase3AfterBreakupBalanceGameData';
 import { PHASE3_EX_BALANCE_META } from '@/lib/phase3ExBalanceGameData';
-import { PHASE3_JEALOUSY_BALANCE_META } from '@/lib/phase3JealousyBalanceGameData';
-import { PHASE3_FIRST_DATE_BALANCE_META } from '@/lib/phase3FirstDateBalanceGameData';
 
 // 동적 import로 JavaScript 번들 크기 최적화 (모바일 성능 향상)
 const Phase2ReflexTestClient = dynamic(() => import('@/components/Phase2ReflexTestClient'), {
@@ -445,15 +444,6 @@ const Phase3ExBalanceGameTestClient = dynamic(
   () => import('@/components/Phase3ExBalanceGameTestClient'),
   { ssr: false }
 );
-const Phase3JealousyBalanceGameTestClient = dynamic(
-  () => import('@/components/Phase3JealousyBalanceGameTestClient'),
-  { ssr: false }
-);
-const Phase3FirstDateBalanceGameTestClient = dynamic(
-  () => import('@/components/Phase3FirstDateBalanceGameTestClient'),
-  { ssr: false }
-);
-
 const Phase3SameTypeAttractionTestClient = dynamic(
   () => import('@/components/Phase3SameTypeAttractionTestClient'),
   { ssr: false }
@@ -1122,6 +1112,24 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = params;
   let test = await getTestBySlug(slug);
+
+  // Registry-first meta fallback (migrated tests) — avoids growing static META imports
+  if (!test) {
+    const runtimeEntry = getRuntimeTestEntry(slug);
+    if (runtimeEntry) {
+      const meta = await runtimeEntry.loadMeta();
+      test = {
+        slug,
+        title: meta.title,
+        description: meta.description,
+        thumbnail: meta.thumbnail,
+        type: meta.type || 'psychology',
+        category: meta.category || 'personality',
+        play_count: 0,
+        tags: meta.tags,
+      } as Awaited<ReturnType<typeof getTestBySlug>>;
+    }
+  }
 
   if (!test && slug === 'phase3-summer-vacation-type') {
     test = {
@@ -3067,32 +3075,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       category: 'personality',
       play_count: 0,
       tags: PHASE3_EX_BALANCE_META.tags,
-    } as Awaited<ReturnType<typeof getTestBySlug>>;
-  }
-
-  if (!test && slug === 'phase3-jealousy-balance-game') {
-    test = {
-      slug: 'phase3-jealousy-balance-game',
-      title: PHASE3_JEALOUSY_BALANCE_META.title,
-      description: PHASE3_JEALOUSY_BALANCE_META.description,
-      thumbnail: 'p3_test_balance_game_jealousy.webp',
-      type: 'psychology',
-      category: 'personality',
-      play_count: 0,
-      tags: PHASE3_JEALOUSY_BALANCE_META.tags,
-    } as Awaited<ReturnType<typeof getTestBySlug>>;
-  }
-
-  if (!test && slug === 'phase3-first-date-balance-game') {
-    test = {
-      slug: 'phase3-first-date-balance-game',
-      title: PHASE3_FIRST_DATE_BALANCE_META.title,
-      description: PHASE3_FIRST_DATE_BALANCE_META.description,
-      thumbnail: 'p3_test_balance_game_first_date.webp',
-      type: 'psychology',
-      category: 'personality',
-      play_count: 0,
-      tags: PHASE3_FIRST_DATE_BALANCE_META.tags,
     } as Awaited<ReturnType<typeof getTestBySlug>>;
   }
 
@@ -6504,6 +6486,15 @@ export default async function TestPage({ params }: Props) {
 
   // Force dynamic rendering - 항상 최신 데이터
   headers();
+
+  // Registry-first path (zero-downtime): migrated tests never hit legacy branches below
+  const runtimeEntry = getRuntimeTestEntry(slug);
+  if (runtimeEntry) {
+    const RegisteredBalanceGameEntry = (
+      await import('@/components/RegisteredBalanceGameEntry')
+    ).default;
+    return <RegisteredBalanceGameEntry locale={locale} slug={slug} />;
+  }
 
   // 애착 스타일 테스트의 경우 Supabase에서 시도
   if (slug === 'attachment-style-test') {
@@ -11221,75 +11212,8 @@ export default async function TestPage({ params }: Props) {
       );
     }
 
-    if (slug === 'phase3-jealousy-balance-game') {
-      const {
-        phase3JealousyBalanceGameQuestions,
-        phase3JealousyBalanceGameResults,
-      } = await import('@/lib/phase3JealousyBalanceGameData');
-      const test = (await getTestBySlug(slug)) || {
-        slug: 'phase3-jealousy-balance-game',
-        title: PHASE3_JEALOUSY_BALANCE_META.title,
-        description: PHASE3_JEALOUSY_BALANCE_META.description,
-        thumbnail: 'p3_test_balance_game_jealousy.webp',
-        type: 'psychology',
-        category: 'personality',
-        play_count: 0,
-        tags: PHASE3_JEALOUSY_BALANCE_META.tags,
-      };
-
-      return (
-        <>
-          <Phase3JealousyBalanceGameTestClient
-            locale={locale}
-            slug={test.slug}
-            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
-            description={
-              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
-            }
-            questions={phase3JealousyBalanceGameQuestions}
-            results={phase3JealousyBalanceGameResults}
-            questionCount={phase3JealousyBalanceGameQuestions.length}
-            thumbnail={test.thumbnail}
-            playCount={test.play_count}
-          />
-        </>
-      );
-    }
-
-    if (slug === 'phase3-first-date-balance-game') {
-      const {
-        phase3FirstDateBalanceGameQuestions,
-        phase3FirstDateBalanceGameResults,
-      } = await import('@/lib/phase3FirstDateBalanceGameData');
-      const test = (await getTestBySlug(slug)) || {
-        slug: 'phase3-first-date-balance-game',
-        title: PHASE3_FIRST_DATE_BALANCE_META.title,
-        description: PHASE3_FIRST_DATE_BALANCE_META.description,
-        thumbnail: 'p3_test_balance_game_first_date.webp',
-        type: 'psychology',
-        category: 'personality',
-        play_count: 0,
-        tags: PHASE3_FIRST_DATE_BALANCE_META.tags,
-      };
-
-      return (
-        <>
-          <Phase3FirstDateBalanceGameTestClient
-            locale={locale}
-            slug={test.slug}
-            title={typeof test.title === 'object' ? test.title[locale] || test.title.ko : test.title}
-            description={
-              typeof test.description === 'object' ? test.description[locale] || test.description.ko : test.description
-            }
-            questions={phase3FirstDateBalanceGameQuestions}
-            results={phase3FirstDateBalanceGameResults}
-            questionCount={phase3FirstDateBalanceGameQuestions.length}
-            thumbnail={test.thumbnail}
-            playCount={test.play_count}
-          />
-        </>
-      );
-    }
+    // phase3-jealousy-balance-game & phase3-first-date-balance-game:
+    // served via lib/testRuntimeRegistry (registry-first early return above)
 
     if (slug === 'phase3-same-breakup-reason') {
       const { phase3SameBreakupReasonQuestions, phase3SameBreakupReasonResults } = await import(

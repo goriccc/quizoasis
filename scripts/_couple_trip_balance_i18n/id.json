@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "title": "Permainan Seimbang — Liburan Couple (Ekstrem)",
+    "description": "Pacar yang nyasar di tengah trip vs yang salah booking hotel. 12 ronde pilihan ekstrem mengungkap gaya traveling couple-mu.",
+    "tags": ["permainan seimbang", "liburan couple", "pilih satu", "kuis cinta"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Pacar nyasar di tengah trip vs pacar salah booking hotel—kamu pilih mana?",
+      "line2": "Liburan couple seru tapi penuh variabel; satu kejadian kecil bisa ubah suasana. Memilih di antara dua opsi yang sama-sama kurang pas memperlihatkan apa yang kamu anggap penting di jalan—dan bagaimana kamu bergerak.",
+      "line3": "12 ronde ekstrem mengungkap gaya traveling couple-mu. Tiap ronde muncul “pilihan sama sepertiku ○%”, lalu bandingkan tipe dengan teman.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan lama-lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Kerjakan tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes lain",
+      "yourResult": "Gaya traveling couple-ku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "tripStyle": "Saat traveling",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Saran",
+      "oneLiner": "Satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startKakao": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startWechat": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startWhatsapp": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startTelegram": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startLine": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Gagal berbagi ke KakaoTalk."
+    }
+  },
+  "questions": [
+    {
+      "q": "Merencanakan jadwal trip. Kamu…",
+      "opts": [
+        "Mengisi jam demi jam—tapi panik besar kalau jadwal buyar",
+        "Cuma booking pesawat & penginapan lalu berangkat—tapi bisa nyasar di lokasi"
+      ]
+    },
+    {
+      "q": "Makan siang hari pertama. Kamu…",
+      "opts": [
+        "Masuk ke tempat yang terlihat menarik—tapi rasanya bisa biasa saja",
+        "Ke tempat yang sudah di-research—tapi antreannya bisa panjang"
+      ]
+    },
+    {
+      "q": "Memilih transportasi. Kamu…",
+      "opts": [
+        "Reservasi semua perjalanan dulu—tapi susah diubah",
+        "Ambil taksi/bus saat itu juga—tapi waktu bisa molor"
+      ]
+    },
+    {
+      "q": "Cuaca tiba-tiba buruk. Kamu…",
+      "opts": [
+        "Buang rencana, nongkrong di kafe dekat situ—tapi melewatkan yang dijadwalkan",
+        "Pindah ke rute cadangan—tapi merasa terburu-buru"
+      ]
+    },
+    {
+      "q": "Pacar tiba-tiba ingin tempat baru. Kamu…",
+      "opts": [
+        "Ubah jadwal dan ikut—tapi sesi berikutnya numpuk",
+        "Tetap ikut jadwal—tapi pacar kecewa"
+      ]
+    },
+    {
+      "q": "Menentukan ritme sehari. Kamu…",
+      "opts": [
+        "Bangun siang dan santai—tapi merasa melewatkan spot",
+        "Padat dari pagi sampai malam—tapi malamnya ambruk"
+      ]
+    },
+    {
+      "q": "Memilih penginapan. Kamu…",
+      "opts": [
+        "Yang murah hanya untuk taruh barang, sisanya di luar—tapi tidur kurang nyaman",
+        "Yang nyaman biar benar-benar istirahat—tapi waktu keluar berkurang"
+      ]
+    },
+    {
+      "q": "Sore di destinasi. Kamu…",
+      "opts": [
+        "Charge di kafe/kamar—tapi pacar bisa bosan",
+        "Lanjut aktivitas & wisata—tapi tenaga habis"
+      ]
+    },
+    {
+      "q": "Pacar mengusulkan aktivitas baru. Kamu…",
+      "opts": [
+        "Takut tetap coba—tapi gugup bisa merusak mood",
+        "Tolak dan istirahat—tapi bisa kehilangan kenangan bareng"
+      ]
+    },
+    {
+      "q": "Hari terakhir trip. Kamu…",
+      "opts": [
+        "Jalan santai menutup perjalanan—tapi ada rasa kurang",
+        "Isi sampai slot terakhir—tapi perjalanan pulang melelahkan"
+      ]
+    },
+    {
+      "q": "Pacar mana yang lebih tertahankan?",
+      "opts": ["Yang nyasar di tengah trip", "Yang salah booking hotel"]
+    },
+    {
+      "q": "Trip mana yang lebih tidak nyaman?",
+      "opts": ["Jadwal padat sampai per menit", "Tanpa rencana sama sekali, bikin bingung"]
+    }
+  ],
+  "results": [
+    {
+      "title": "Yang mengisi hari dengan jadwal rapat — Tipe Rencana Ketat",
+      "shortDescription": "Desainer yang mengisi trip dengan rencana per menit",
+      "quote": "Kamu merancang trip lebih dulu dan mengejar rute padat penuh pengalaman.",
+      "description": "Efisiensi dan rasa aman jadi kekuatan—tapi jadwal buyar bikin stres, dan pacar bisa kehabisan napas.",
+      "typeLabel": "Rencana Ketat 📋",
+      "characteristics": "desain, efisiensi, padat, ketat",
+      "livingStyle": "Reservasi & rute disiapkan sempurna; hari penuh",
+      "strengths": "Sedikit salah; banyak pengalaman tersaji stabil",
+      "caution": "Kurang fleksibel saat ada perubahan; pacar mudah lelah",
+      "goodMatch": "Romantis Spontan (mereka menambah ruang dan romansa)",
+      "tips": "Sisakan 30 menit kosong tiap blok\nTentukan satu spot “boleh dilewati” tiap hari\nSelipkan sekali sehari tempat pilihan pacar",
+      "oneLiner": "Persiapan matang itu kekuatan. Satu sel kosong membuat trip bernapas.",
+      "shareLine": "Permainan Seimbang — Liburan Couple Ekstrem: Rencana Ketat 📋 Katanya aku tipe yang padatin menit demi menit wkwk Kamu dapat apa? Nyasar vs salah booking—pilih mana?"
+    },
+    {
+      "title": "Tanpa patokan, ikut pemandangan — Tipe Romantis Spontan",
+      "shortDescription": "Tipe rasa yang mengikuti mood dan pemandangan",
+      "quote": "Kamu jalan ke mana kaki membawa dan menikmati waktu pelan-pelan.",
+      "description": "Bisa menciptakan kejutan manis—tapi persiapan tipis bikin mudah nyasar atau melewatkan hal.",
+      "typeLabel": "Romantis Spontan 🌅",
+      "characteristics": "romansa, santai, kebetulan, pelan",
+      "livingStyle": "Masuk kafe yang menarik; rencana mengikuti mood hari itu",
+      "strengths": "Mengubah kejutan jadi romansa",
+      "caution": "Rentan salah booking & nyasar",
+      "goodMatch": "Rencana Ketat (mereka pegang struktur supaya kamu bebas menikmati)",
+      "tips": "Minimal kunci penginapan & transport\nSimpan hanya tiga kandidat tempat\nSiapkan kalimat guyon saat ada masalah supaya bisa ketawa bareng",
+      "oneLiner": "Romansa adalah rasa traveling. Jaring pengaman tipis sudah cukup sempurna.",
+      "shareLine": "Permainan Seimbang — Liburan Couple Ekstrem: Romantis Spontan 🌅 Katanya aku ikut pemandangan pelan-pelan… Kamu dapat apa? Nyasar vs salah booking—pilih mana?"
+    },
+    {
+      "title": "Siapkan kenyamanan dulu, lalu istirahat — Tipe Isi Daya Nyaman",
+      "shortDescription": "Tipe healing yang set nyaman dulu lalu recharge",
+      "quote": "Kamu menyiapkan penginapan nyaman dan rute longgar dulu, lalu benar-benar istirahat.",
+      "description": "Hemat tenaga dan stabil—tapi pacar yang aktif bisa merasa kurang.",
+      "typeLabel": "Isi Daya Nyaman ☕",
+      "characteristics": "healing, kenyamanan tersiap, recharge, santai",
+      "livingStyle": "Booking penginapan bagus; jadwal longgar",
+      "strengths": "Sedikit lelah; waktu rileks bareng pacar",
+      "caution": "Pengalaman baru berkurang; bisa terasa monoton",
+      "goodMatch": "Penjelajah Aktif (mereka menambah energi)",
+      "tips": "Setiap hari lakukan satu aktivitas pilihan pacar\nBagi istirahat dan gerak kurang lebih setengah-setengah\nTandai satu tempat baru di muka",
+      "oneLiner": "Trip yang mengisi daya itu berharga. Satu aktivitas menambah kenangan.",
+      "shareLine": "Permainan Seimbang — Liburan Couple Ekstrem: Isi Daya Nyaman ☕ Katanya aku set nyaman dulu lalu istirahat total wkwk Kamu dapat apa? Nyasar vs salah booking—pilih mana?"
+    },
+    {
+      "title": "Jelajah ke mana kaki melangkah — Tipe Penjelajah Aktif",
+      "shortDescription": "Tanpa rencana, mencari tempat baru",
+      "quote": "Kamu bergerak spontan dan mengejar pengalaman baru.",
+      "description": "Trip terasa hidup—tapi stamina, jadwal, dan budget mudah berantakan, dan pacar bisa kewalahan mengikuti.",
+      "typeLabel": "Penjelajah Aktif 🧭",
+      "characteristics": "petualangan, spontan, stamina, kebaruan",
+      "livingStyle": "Ke tempat yang mencolok; aktivitas dicoba dulu",
+      "strengths": "Dorongan yang tidak takut hal baru",
+      "caution": "Kehabisan tenaga, jadwal kacau, pacar kelelahan",
+      "goodMatch": "Isi Daya Nyaman (mereka sediakan nest istirahat)",
+      "tips": "Jamin satu jendela istirahat untuk mereka tiap hari\nPadatkan yang aktif di pagi; sore dikosongkan\nTanya kondisi mereka dulu sebelum memutuskan",
+      "oneLiner": "Jiwa petualang itu menarik. Jaga juga tempo dan istirahat pacar.",
+      "shareLine": "Permainan Seimbang — Liburan Couple Ekstrem: Penjelajah Aktif 🧭 Katanya aku petualang ikut kaki… Kamu dapat apa? Nyasar vs salah booking—pilih mana?"
+    }
+  ]
+}

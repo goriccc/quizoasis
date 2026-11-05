@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "title": "Trò cân bằng — Du lịch cặp đôi (cực hạn)",
+    "description": "Người yêu lạc đường giữa chuyến đi vs người đặt nhầm chỗ ở. 12 vòng chọn cực hạn hé lộ phong cách du lịch cặp đôi của bạn.",
+    "tags": ["trò cân bằng", "du lịch cặp đôi", "chọn một", "trắc nghiệm tình yêu"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Người yêu lạc giữa chuyến đi vs người đặt nhầm khách sạn — bạn chọn ai?",
+      "line2": "Du lịch cặp đôi vừa hồi hộp vừa nhiều biến số; một sự cố nhỏ cũng đổi không khí. Chọn giữa hai phương án đều đáng tiếc sẽ lộ ra bạn coi trọng gì và hành xử thế nào khi đi chơi.",
+      "line3": "12 vòng cực hạn cho biết phong cách du lịch cặp đôi của bạn. Mỗi vòng hiện “cùng lựa chọn như tôi ○%”, rồi so loại với bạn bè và kể lý do.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Đừng đắn đo lâu"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài tương tự",
+      "popularBadge": "Hot",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Bài khác",
+      "yourResult": "Phong cách du lịch cặp đôi của tôi",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "tripStyle": "Khi đi du lịch",
+      "strengths": "Điểm mạnh của loại này",
+      "goodMatch": "Hợp với loại",
+      "caution": "Lưu ý",
+      "tips": "Gợi ý",
+      "oneLiner": "Một câu",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startKakao": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startWechat": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startWhatsapp": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startTelegram": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startLine": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau nhé.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    }
+  },
+  "questions": [
+    {
+      "q": "Lên lịch chuyến đi. Bạn…",
+      "opts": [
+        "Xếp sát từng khung giờ — nhưng lệch lịch là stress nặng",
+        "Chỉ chốt vé máy bay và chỗ ở rồi đi — nhưng dễ lạc ở địa phương"
+      ]
+    },
+    {
+      "q": "Bữa trưa ngày đầu. Bạn…",
+      "opts": [
+        "Vào quán mắt thấy — nhưng có thể dở",
+        "Đến chỗ đã research — nhưng xếp hàng có thể dài"
+      ]
+    },
+    {
+      "q": "Chọn phương tiện di chuyển. Bạn…",
+      "opts": [
+        "Đặt trước hết các chặng — nhưng đổi lịch khó",
+        "Bắt taxi/bus lúc đó — nhưng dễ mất thời gian"
+      ]
+    },
+    {
+      "q": "Thời tiết đột nhiên xấu. Bạn…",
+      "opts": [
+        "Bỏ lịch, vào quán cà phê gần đó nghỉ — nhưng bỏ chỗ đã định",
+        "Sang lộ trình dự phòng — nhưng thấy gấp gáp"
+      ]
+    },
+    {
+      "q": "Người yêu bỗng muốn thêm điểm đến. Bạn…",
+      "opts": [
+        "Đổi lịch theo — nhưng các phần sau dồn ứ",
+        "Giữ đúng lịch — nhưng người yêu tiếc"
+      ]
+    },
+    {
+      "q": "Nhịp một ngày. Bạn…",
+      "opts": [
+        "Ngủ nướng, thong thả — nhưng cảm giác bỏ lỡ cảnh đẹp",
+        "Nhồi từ sáng tới tối — nhưng tối kiệt sức"
+      ]
+    },
+    {
+      "q": "Chọn chỗ ở. Bạn…",
+      "opts": [
+        "Chỗ rẻ chỉ để đồ, ở ngoài cả ngày — nhưng ngủ kém",
+        "Chỗ đẹp để nghỉ đã đời — nhưng ít thời gian ra ngoài"
+      ]
+    },
+    {
+      "q": "Buổi chiều ở điểm đến. Bạn…",
+      "opts": [
+        "Sạc pin ở quán/phòng — nhưng người yêu có thể chán",
+        "Tiếp trải nghiệm & tham quan — nhưng hết năng lượng"
+      ]
+    },
+    {
+      "q": "Người yêu gợi ý hoạt động mới. Bạn…",
+      "opts": [
+        "Sợ vẫn thử — nhưng hồi hộp có thể làm dịu tâm trạng",
+        "Từ chối để nghỉ — nhưng có thể mất kỷ niệm chung"
+      ]
+    },
+    {
+      "q": "Ngày cuối chuyến đi. Bạn…",
+      "opts": [
+        "Đi bộ nhẹ khép lại — nhưng vẫn tiếc",
+        "Nhồi đến phút cuối — nhưng đường về mệt"
+      ]
+    },
+    {
+      "q": "Người yêu nào chịu được hơn?",
+      "opts": ["Người lạc đường giữa chuyến", "Người đặt nhầm chỗ ở"]
+    },
+    {
+      "q": "Chuyến nào khó chịu hơn?",
+      "opts": ["Lịch kín từng phút", "Hoàn toàn không kế hoạch, trống trải"]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người nhồi lịch sát — Kiểu kế hoạch chắc",
+      "shortDescription": "Thiết kế chuyến đi bằng lịch từng phút",
+      "quote": "Bạn lên kế hoạch trước và muốn trải nghiệm nhiều qua lộ trình dày.",
+      "description": "Hiệu quả và ổn định là điểm mạnh — nhưng lệch lịch thì stress lớn, người yêu dễ hụt hơi.",
+      "typeLabel": "Kế hoạch chắc 📋",
+      "characteristics": "thiết kế, hiệu quả, dày đặc, gắt gao",
+      "livingStyle": "Đặt chỗ và lộ trình hoàn hảo, ngày nào cũng kín",
+      "strengths": "Ít sai sót, tạo nhiều trải nghiệm ổn định",
+      "caution": "Ít linh hoạt khi có biến; người yêu dễ mệt",
+      "goodMatch": "Lãng mạn ngẫu hứng (họ thêm khoảng trống và lãng mạn)",
+      "tips": "Chừa 30 phút trống mỗi khung\nMỗi ngày chọn một chỗ “không bắt buộc”\nMỗi ngày xen một nơi người yêu muốn",
+      "oneLiner": "Chuẩn bị kỹ là sức mạnh. Một ô trống giúp chuyến đi thở.",
+      "shareLine": "Trò cân bằng — Du lịch cặp đôi cực hạn: Kế hoạch chắc 📋 Nghe bảo mình nhồi lịch từng phút vậy đó lol Bạn ra gì? Lạc đường vs đặt nhầm KS — chọn ai?"
+    },
+    {
+      "title": "Không cố định, theo cảnh — Kiểu lãng mạn ngẫu hứng",
+      "shortDescription": "Theo cảm xúc và phong cảnh",
+      "quote": "Bạn đi theo chân và tận hưởng thời gian thong thả.",
+      "description": "Tạo được bất ngờ dễ thương — nhưng thiếu chuẩn bị dễ lạc hoặc bỏ lỡ.",
+      "typeLabel": "Lãng mạn ngẫu hứng 🌅",
+      "characteristics": "lãng mạn, thong thả, tình cờ, chậm rãi",
+      "livingStyle": "Vào quán cà phê bắt mắt; lịch theo mood hôm đó",
+      "strengths": "Biến bất ngờ thành lãng mạn",
+      "caution": "Yếu trước đặt nhầm phòng, lạc đường",
+      "goodMatch": "Kế hoạch chắc (họ dựng khung để bạn tận hưởng)",
+      "tips": "Ít nhất chốt chỗ ở và giao thông\nChỉ giữ ba điểm muốn đến\nChuẩn bị câu đùa khi có biến để cười cùng nhau",
+      "oneLiner": "Lãng mạn là vị của chuyến đi. Lưới an toàn mỏng là đủ hoàn hảo.",
+      "shareLine": "Trò cân bằng — Du lịch cặp đôi cực hạn: Lãng mạn ngẫu hứng 🌅 Nghe bảo mình theo cảnh mà đi chậm… Bạn ra gì? Lạc đường vs đặt nhầm KS — chọn ai?"
+    },
+    {
+      "title": "Chuẩn bị sẵn sự thoải mái rồi nghỉ — Kiểu sạc pin ấm áp",
+      "shortDescription": "Sắp chỗ nghỉ dễ chịu trước rồi nạp năng lượng",
+      "quote": "Bạn chuẩn bị chỗ ở tiện nghi và lộ trình rộng rồi thật sự nghỉ.",
+      "description": "Ít hao sức, ổn định — nhưng người yêu năng động có thể thấy thiếu.",
+      "typeLabel": "Sạc pin ấm áp ☕",
+      "characteristics": "chữa lành, thoải mái đã chuẩn bị, sạc pin, thong thả",
+      "livingStyle": "Đặt chỗ đẹp, lịch xếp lỏng",
+      "strengths": "Ít mệt; thời gian thư thái bên nhau",
+      "caution": "Ít trải nghiệm mới; dễ đơn điệu",
+      "goodMatch": "Thám hiểm năng động (họ thêm sống động)",
+      "tips": "Mỗi ngày làm một việc người yêu muốn\nChia nghỉ/đi khoảng nửa-nửa\nChốt trước một chỗ mới",
+      "oneLiner": "Chuyến đi sạc pin rất quý. Một hoạt động thêm một kỷ niệm.",
+      "shareLine": "Trò cân bằng — Du lịch cặp đôi cực hạn: Sạc pin ấm áp ☕ Nghe bảo mình set thoải mái rồi nghỉ đã đời lol Bạn ra gì? Lạc đường vs đặt nhầm KS — chọn ai?"
+    },
+    {
+      "title": "Đi đâu khám phá đó — Kiểu thám hiểm năng động",
+      "shortDescription": "Không kế hoạch, săn chỗ mới",
+      "quote": "Bạn hành động ngẫu hứng và tìm trải nghiệm mới.",
+      "description": "Chuyến đi sống động — nhưng thể lực, lịch và ngân sách dễ loạn, người yêu có thể đuổi không kịp.",
+      "typeLabel": "Thám hiểm năng động 🧭",
+      "characteristics": "phiêu lưu, ngẫu hứng, thể lực, mới mẻ",
+      "livingStyle": "Tới chỗ nổi bật; hoạt động thì cứ thử trước",
+      "strengths": "Động lực không sợ cái mới",
+      "caution": "Kiệt sức, lịch loạn, người yêu mệt",
+      "goodMatch": "Sạc pin ấm áp (họ tạo chỗ nghỉ để cân bằng)",
+      "tips": "Mỗi ngày đảm bảo một khung nghỉ cho họ\nDồn hoạt động mạnh vào sáng, chiều để trống\nHỏi sức khỏe họ trước khi quyết",
+      "oneLiner": "Tinh thần phiêu lưu rất hút. Hãy giữ nhịp và nghỉ của người yêu.",
+      "shareLine": "Trò cân bằng — Du lịch cặp đôi cực hạn: Thám hiểm năng động 🧭 Nghe bảo mình phiêu theo chân… Bạn ra gì? Lạc đường vs đặt nhầm KS — chọn ai?"
+    }
+  ]
+}

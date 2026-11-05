@@ -98,7 +98,7 @@ export async function GET(request: NextRequest) {
     });
 
     // 캐시 헤더 설정
-    response.headers.set('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
+    response.headers.set('Cache-Control', 'public, s-maxage=180, stale-while-revalidate=600');
     
     return response;
 

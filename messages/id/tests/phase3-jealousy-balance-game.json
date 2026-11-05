@@ -1,0 +1,58 @@
+{
+  "phase3JealousyBalanceGameTest": {
+    "startMessage": {
+      "line1": "Pacar jalan berdua dengan teman lawan jenis vs share lokasi tiap hari—kamu pilih yang mana?",
+      "line2": "Cemburu bisa terasa seperti bukti cinta—atau jadi obsesi kalau melewati batas. Memilih di antara dua opsi yang sama-sama kurang pas menunjukkan siapa dirimu di depan rasa cemburu.",
+      "line3": "12 ronde pilihan ekstrem mengungkap gaya cemburumu. Pilih sisi yang lebih dekat denganmu.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan mikir lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain",
+      "yourResult": "Gaya cemburuku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "jealousyStyle": "Saat cemburu datang",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Tips",
+      "oneLiner": "Dalam satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Cemburu & Obsesi (Ekstrem) ⚖️ Jalan berdua dengan teman lawan jenis vs share lokasi tiap hari—pilihanmu?",
+      "startKakao": "Permainan Seimbang — Cemburu & Obsesi (Ekstrem) ⚖️ Jalan berdua dengan teman lawan jenis vs share lokasi tiap hari—pilihanmu?",
+      "startWechat": "Permainan Seimbang — Cemburu & Obsesi (Ekstrem) ⚖️ Jalan berdua dengan teman lawan jenis vs share lokasi tiap hari—pilihanmu?",
+      "startWhatsapp": "Permainan Seimbang — Cemburu & Obsesi (Ekstrem) ⚖️ Jalan berdua dengan teman lawan jenis vs share lokasi tiap hari—pilihanmu?",
+      "startTelegram": "Permainan Seimbang — Cemburu & Obsesi (Ekstrem) ⚖️ Jalan berdua dengan teman lawan jenis vs share lokasi tiap hari—pilihanmu?",
+      "startLine": "Permainan Seimbang — Cemburu & Obsesi (Ekstrem) ⚖️ Jalan berdua dengan teman lawan jenis vs share lokasi tiap hari—pilihanmu?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    }
+  }
+}

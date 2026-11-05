@@ -50,7 +50,7 @@ export async function GET(request: NextRequest) {
 
     if (!q) {
       const res = NextResponse.json({ tests: tests.slice(0, limit) });
-      res.headers.set('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=120');
+      res.headers.set('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
       return res;
     }
 
@@ -108,7 +108,7 @@ export async function GET(request: NextRequest) {
     }).slice(0, limit);
 
     const res = NextResponse.json({ tests: filtered });
-    res.headers.set('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=120');
+    res.headers.set('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
     return res;
   } catch (e) {
     // 프로덕션에서는 콘솔 로그 제거 (AdSense 무효 클릭 방지)

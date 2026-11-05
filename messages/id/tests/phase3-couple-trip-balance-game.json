@@ -1,0 +1,58 @@
+{
+  "phase3CoupleTripBalanceGameTest": {
+    "startMessage": {
+      "line1": "Pacar nyasar di tengah trip vs pacar salah booking hotel—kamu pilih mana?",
+      "line2": "Liburan couple seru tapi penuh variabel; satu kejadian kecil bisa ubah suasana. Memilih di antara dua opsi yang sama-sama kurang pas memperlihatkan apa yang kamu anggap penting di jalan—dan bagaimana kamu bergerak.",
+      "line3": "12 ronde ekstrem mengungkap gaya traveling couple-mu. Tiap ronde muncul “pilihan sama sepertiku ○%”, lalu bandingkan tipe dengan teman.",
+      "line4": "Mulai pilihan ekstrem ⚖️ Jangan lama-lama"
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Kerjakan tes",
+      "startTest": "Mulai pilihan ekstrem ⚖️",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "popularBadge": "Populer",
+      "shareResult": "Bagikan hasil",
+      "retake": "Ulangi",
+      "otherTests": "Tes lain",
+      "yourResult": "Gaya traveling couple-ku",
+      "styleType": "Tipe",
+      "keywords": "Kata kunci",
+      "tripStyle": "Saat traveling",
+      "strengths": "Kelebihan tipe ini",
+      "goodMatch": "Paling cocok dengan",
+      "caution": "Yang perlu diwaspadai",
+      "tips": "Saran",
+      "oneLiner": "Satu kalimat",
+      "roundLabel": "Ronde {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startKakao": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startWechat": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startWhatsapp": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startTelegram": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?",
+      "startLine": "Permainan Seimbang — Liburan Couple (Ekstrem) ⚖️ Nyasar vs salah booking—pilih mana?"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Gagal berbagi ke KakaoTalk."
+    }
+  }
+}

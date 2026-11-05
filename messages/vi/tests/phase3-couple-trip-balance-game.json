@@ -1,0 +1,58 @@
+{
+  "phase3CoupleTripBalanceGameTest": {
+    "startMessage": {
+      "line1": "Người yêu lạc giữa chuyến đi vs người đặt nhầm khách sạn — bạn chọn ai?",
+      "line2": "Du lịch cặp đôi vừa hồi hộp vừa nhiều biến số; một sự cố nhỏ cũng đổi không khí. Chọn giữa hai phương án đều đáng tiếc sẽ lộ ra bạn coi trọng gì và hành xử thế nào khi đi chơi.",
+      "line3": "12 vòng cực hạn cho biết phong cách du lịch cặp đôi của bạn. Mỗi vòng hiện “cùng lựa chọn như tôi ○%”, rồi so loại với bạn bè và kể lý do.",
+      "line4": "Bắt đầu chọn cực hạn ⚖️ Đừng đắn đo lâu"
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Bắt đầu chọn cực hạn ⚖️",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài tương tự",
+      "popularBadge": "Hot",
+      "shareResult": "Chia sẻ kết quả",
+      "retake": "Làm lại",
+      "otherTests": "Bài khác",
+      "yourResult": "Phong cách du lịch cặp đôi của tôi",
+      "styleType": "Loại",
+      "keywords": "Từ khóa",
+      "tripStyle": "Khi đi du lịch",
+      "strengths": "Điểm mạnh của loại này",
+      "goodMatch": "Hợp với loại",
+      "caution": "Lưu ý",
+      "tips": "Gợi ý",
+      "oneLiner": "Một câu",
+      "roundLabel": "Vòng {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startKakao": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startWechat": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startWhatsapp": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startTelegram": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?",
+      "startLine": "Trò cân bằng — Du lịch cặp đôi (cực hạn) ⚖️ Lạc đường vs đặt nhầm KS — bạn chọn?"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau nhé.",
+      "kakaoError": "Lỗi khi chia sẻ KakaoTalk."
+    }
+  }
+}

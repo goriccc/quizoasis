@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "title": "Balance Game — Couple Trip (Extreme)",
+    "description": "A partner who gets lost on the trip vs one who books the wrong hotel. Twelve extreme rounds reveal your couple-travel style.",
+    "tags": ["balance game", "couple travel", "would you rather", "dating quiz"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Partner lost mid-trip vs partner who botched the hotel booking—what would you pick?",
+      "line2": "Couple trips are thrilling and messy. One small mishap can flip the whole mood. Choosing between two imperfect options shows what you value on the road—and how you move.",
+      "line3": "Twelve extreme rounds reveal your couple-travel style. You'll see “people who picked like you ○%” each round—then compare types with friends.",
+      "line4": "Start the extreme picks ⚖️ Keep it quick"
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Start the extreme picks ⚖️",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "popularBadge": "Popular",
+      "shareResult": "Share result",
+      "retake": "Retake",
+      "otherTests": "More tests",
+      "yourResult": "My couple-travel style",
+      "styleType": "Type",
+      "keywords": "Key words",
+      "tripStyle": "On the trip",
+      "strengths": "Strengths of this type",
+      "goodMatch": "Best match",
+      "caution": "Watch out for",
+      "tips": "Tips",
+      "oneLiner": "In one line",
+      "roundLabel": "Round {n}"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Balance Game — Couple Trip (Extreme) ⚖️ Lost mid-trip vs wrong hotel booking—your pick?",
+      "startKakao": "Balance Game — Couple Trip (Extreme) ⚖️ Lost mid-trip vs wrong hotel booking—your pick?",
+      "startWechat": "Balance Game — Couple Trip (Extreme) ⚖️ Lost mid-trip vs wrong hotel booking—your pick?",
+      "startWhatsapp": "Balance Game — Couple Trip (Extreme) ⚖️ Lost mid-trip vs wrong hotel booking—your pick?",
+      "startTelegram": "Balance Game — Couple Trip (Extreme) ⚖️ Lost mid-trip vs wrong hotel booking—your pick?",
+      "startLine": "Balance Game — Couple Trip (Extreme) ⚖️ Lost mid-trip vs wrong hotel booking—your pick?"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    }
+  },
+  "questions": [
+    {
+      "q": "You're planning the trip. You…",
+      "opts": [
+        "Fill every hour—but freak out when the plan slips",
+        "Book only the flight and stay—then maybe wander lost on the ground"
+      ]
+    },
+    {
+      "q": "Lunch on day one. You…",
+      "opts": [
+        "Walk into whatever looks good—but it might taste meh",
+        "Hit a spot you researched—but the wait could be brutal"
+      ]
+    },
+    {
+      "q": "You pick how to get around. You…",
+      "opts": [
+        "Reserve every ride ahead—but changing plans is hard",
+        "Grab taxis or buses on the fly—but time can stretch"
+      ]
+    },
+    {
+      "q": "The weather suddenly turns bad. You…",
+      "opts": [
+        "Ditch the plan and café-hop nearby—but skip what you booked",
+        "Switch to your backup route—but feel rushed"
+      ]
+    },
+    {
+      "q": "Your partner suddenly wants a new stop. You…",
+      "opts": [
+        "Rewrite the day and go—but everything after piles up",
+        "Stick to the schedule—but leave them disappointed"
+      ]
+    },
+    {
+      "q": "You set the daily rhythm. You…",
+      "opts": [
+        "Sleep in and take it slow—but feel like you missed sights",
+        "Pack dawn to night—but crash by evening"
+      ]
+    },
+    {
+      "q": "You choose lodging. You…",
+      "opts": [
+        "Cheap place, just drop bags and stay out—but sleep is rough",
+        "Nice stay and real rest—but less time outside"
+      ]
+    },
+    {
+      "q": "Afternoon in the destination. You…",
+      "opts": [
+        "Recharge at a café or the room—but they may get bored",
+        "Stack tours and activities—but energy hits zero"
+      ]
+    },
+    {
+      "q": "Your partner suggests a new activity. You…",
+      "opts": [
+        "Say yes even if you're scared—but nerves can kill the vibe",
+        "Pass and rest—but miss a shared memory"
+      ]
+    },
+    {
+      "q": "Last day of the trip. You…",
+      "opts": [
+        "Quiet walk and soft landing—but leave wishing you'd done more",
+        "Fill every last slot—but the ride home is exhausting"
+      ]
+    },
+    {
+      "q": "Which partner is more bearable?",
+      "opts": ["One who gets lost mid-trip", "One who botches the hotel booking"]
+    },
+    {
+      "q": "Which trip feels worse?",
+      "opts": ["A minute-by-minute packed itinerary", "A completely plan-free, foggy trip"]
+    }
+  ],
+  "results": [
+    {
+      "title": "Packed days on a tight plan — Schedule Power Type",
+      "shortDescription": "A designer who fills the trip with minute-level planning",
+      "quote": "You design the trip ahead and chase rich routes packed with experiences.",
+      "description": "Efficiency and steadiness are strengths—but slipped plans spike stress, and your partner can feel out of breath.",
+      "typeLabel": "Schedule Power 📋",
+      "characteristics": "design, efficiency, packed days, tight pace",
+      "livingStyle": "Books and routes locked; every day is full",
+      "strengths": "Few mishaps; lots of experiences, steadily delivered",
+      "caution": "Little flexibility when things change; partner may burn out",
+      "goodMatch": "Spontaneous Romantic (they add ease and romance)",
+      "tips": "Leave 30 spare minutes in every block\nPick one \"optional skip\" spot each day\nSlot in one partner pick once a day",
+      "oneLiner": "Solid prep is power. One blank cell lets the trip breathe.",
+      "shareLine": "Balance Game — Couple Trip Extreme result: Schedule Power 📋 Apparently I pack trips minute by minute lol What'd you get? Lost mid-trip vs wrong hotel—your pick?"
+    },
+    {
+      "title": "No fixed plan, follow the view — Spontaneous Romantic",
+      "shortDescription": "A feel-first type who trusts mood and scenery",
+      "quote": "You wander where your feet go and savor time slowly.",
+      "description": "You create accidental magic—but thin prep can mean getting lost or missing things.",
+      "typeLabel": "Spontaneous Romantic 🌅",
+      "characteristics": "romance, ease, chance, slow living",
+      "livingStyle": "Ducks into cafés that catch your eye; plans follow the day's mood",
+      "strengths": "Turns unexpected moments into romance",
+      "caution": "Vulnerable to booking flubs and getting lost",
+      "goodMatch": "Schedule Power (they hold structure so you can enjoy)",
+      "tips": "Lock lodging and transit at least\nKeep just three must-see backups\nAgree on a joke line when plans go sideways",
+      "oneLiner": "Romance is the flavor of travel. A thin safety net makes it perfect.",
+      "shareLine": "Balance Game — Couple Trip Extreme result: Spontaneous Romantic 🌅 Apparently I follow the scenery and take it slow… What'd you get? Lost mid-trip vs wrong hotel—your pick?"
+    },
+    {
+      "title": "Prep for comfort, then rest hard — Cozy Recharge Type",
+      "shortDescription": "A healing type who sets comfort first, then recharges",
+      "quote": "You lock in a comfy stay and a loose route, then truly rest.",
+      "description": "Low drain and steady—but an active partner may feel underwhelmed.",
+      "typeLabel": "Cozy Recharge ☕",
+      "characteristics": "healing, planned comfort, recharge, ease",
+      "livingStyle": "Books a good stay and keeps the schedule soft",
+      "strengths": "Less fatigue; easy time together",
+      "caution": "Fewer new experiences; can feel samey",
+      "goodMatch": "Active Explorer (they add spark and balance)",
+      "tips": "Do one activity they want each day\nSplit rest and move roughly half-and-half\nPin one new place in advance",
+      "oneLiner": "A recharging trip matters. One activity adds a memory.",
+      "shareLine": "Balance Game — Couple Trip Extreme result: Cozy Recharge ☕ Apparently I set comfort first and rest hard lol What'd you get? Lost mid-trip vs wrong hotel—your pick?"
+    },
+    {
+      "title": "Wander and explore — Active Explorer",
+      "shortDescription": "An adventure type who moves free and hunts new places",
+      "quote": "You move on impulse and chase new experiences.",
+      "description": "The trip feels alive—but stamina, schedule, and budget can fray, and your partner may struggle to keep up.",
+      "typeLabel": "Active Explorer 🧭",
+      "characteristics": "adventure, improv, stamina, novelty",
+      "livingStyle": "Goes where it looks fun; tries activities first, asks later",
+      "strengths": "Drive that isn't afraid of the new",
+      "caution": "Burnout, messy timing, partner fatigue",
+      "goodMatch": "Cozy Recharge (they build the rest nest for balance)",
+      "tips": "Guarantee them one rest window daily\nFront-load active stuff in the morning; free the afternoon\nAsk about their energy before deciding",
+      "oneLiner": "Adventure is magnetic. Match their pace—and their rest.",
+      "shareLine": "Balance Game — Couple Trip Extreme result: Active Explorer 🧭 Apparently I adventure wherever my feet go… What'd you get? Lost mid-trip vs wrong hotel—your pick?"
+    }
+  ]
+}
