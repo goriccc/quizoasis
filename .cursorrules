@@ -339,6 +339,7 @@ const handleShareResult = async () => {
 - `lib/phase3XxxData.ts` + `components/Phase3XxxTestClient.tsx` 폴더/파일 추가
 - 테스트 문구는 `messages/{locale}/tests/{slug}.json`에 네임스페이스로 분리
   - 추출: `node scripts/extract-test-messages.mjs --slug ... --ns ...`
+  - **필수**: `lib/testMessages.ts`의 `SPLIT_MESSAGE_LOADERS`에 locale별 `import()` 등록 (Vercel은 fs 읽기 불가)
 - 밸런스/텍스트 테스트는 레지스트리 `ssr: true` (시작화면 SSR island)
 - 카메라/실시간 게임만 `ssr: false`
 - SQL은 `supabase/insert-....sql` 생성만 (에이전트는 실행·이미지 업로드 안 함)

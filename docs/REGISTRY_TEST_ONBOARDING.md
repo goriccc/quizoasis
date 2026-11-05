@@ -15,6 +15,8 @@ Creates:
 - registry entry in `lib/testRuntimeRegistry.ts`
 - `messages/{locale}/tests/phase3-my-balance-game.json` × 7
 
+Also register the slug in `lib/testMessages.ts` → `SPLIT_MESSAGE_LOADERS` with explicit `import()` per locale (required for Vercel; `fs.readFileSync` only works locally).
+
 ## After scaffolding
 
 1. Fill questions/results in the data module
