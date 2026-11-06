@@ -1,0 +1,70 @@
+{
+  "phase3AnxietyButtonTop3Test": {
+    "startMessage": {
+      "line1": "Gerakan pasangan mana yang paling mengguncang hatimu?",
+      "line2": "Sudah dibaca, tak dibalas. Satu like dari orang asing. Dada sempat jatuh sekejap. Tombol cemas tiap orang di tempat berbeda—tapi begitu ditekan, semua goyah. Kenali milikmu, biar bisa bicara sebelum emosimu lari.",
+      "line3": "Di dua belas adegan, pilih sisi yang lebih mengguncang. Kami susun TOP 3 tombol cemasmu. Cek ringan, tidak seberat konseling.",
+      "line4": "",
+      "line5": "Temukan tombol cemasku 🔵 Mulai jujur",
+      "note": "※ Pilih opsi yang lebih mengguncang. Kalau lagi jomblo, pakai hubungan terakhirmu."
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Temukan tombol cemasku 🔵",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "rank1": "Peringkat 1",
+      "rank2": "Peringkat 2",
+      "rank3": "Peringkat 3",
+      "buttonLabel": "Tombol cemas",
+      "thought": "Pikiran yang muncul",
+      "mindBehind": "Kebutuhan di balik tombol ini",
+      "behavior": "Yang kamu lakukan saat tertekan",
+      "strength": "Kekuatan dalam perasaan ini",
+      "calmLine": "Kalimat penenang untuk diri sendiri",
+      "toPartner": "Kalimat untuk pasangan",
+      "oneLiner": "Dalam satu kalimat",
+      "family": "Saran keluarga kecemasan",
+      "practice": "Kalimat untuk dilatih",
+      "bars": "Skor tombol cemas",
+      "scoreUnit": "poin",
+      "closeFourth": "Hampir peringkat 4: {name}",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Tes lainnya"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tombol Cemas Cinta TOP 3 🔵 Gerakan pasangan mana yang paling mengguncang? Temukan TOP 3-mu!",
+      "startKakao": "Tombol Cemas Cinta TOP 3 🔵 Gerakan pasangan mana yang paling mengguncang? Temukan TOP 3-mu!",
+      "startWechat": "Tombol Cemas Cinta TOP 3 🔵 Gerakan pasangan mana yang paling mengguncang? Temukan TOP 3-mu!",
+      "startWhatsapp": "Tombol Cemas Cinta TOP 3 🔵 Gerakan pasangan mana yang paling mengguncang? Temukan TOP 3-mu!",
+      "startTelegram": "Tombol Cemas Cinta TOP 3 🔵 Gerakan pasangan mana yang paling mengguncang? Temukan TOP 3-mu!",
+      "startLine": "Tombol Cemas Cinta TOP 3 🔵 Gerakan pasangan mana yang paling mengguncang? Temukan TOP 3-mu!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes sedang tren"
+    }
+  }
+}

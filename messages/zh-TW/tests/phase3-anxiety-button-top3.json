@@ -1,0 +1,70 @@
+{
+  "phase3AnxietyButtonTop3Test": {
+    "startMessage": {
+      "line1": "對方哪一個舉動最容易讓你心慌？",
+      "line2": "已讀不回。陌生人的一個讚。胸口瞬間往下沉。每個人的焦慮按鈕位置不同——但一旦被按到，都會晃一下。知道自己的按鈕，就能在情緒失控前說出口。",
+      "line3": "十二個場景裡，選更讓你動搖的那一邊。我們會排出你的焦慮按鈕 TOP3。比心理諮商更輕的自我核對。",
+      "line4": "",
+      "line5": "找出我的焦慮按鈕 🔵 誠實開始",
+      "note": "※ 選更讓你動搖的那一項。如果是單身，用最近一段感情來想。"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "開始測驗",
+      "startTest": "找出我的焦慮按鈕 🔵",
+      "linkCopy": "複製連結",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測驗",
+      "rank1": "第1名",
+      "rank2": "第2名",
+      "rank3": "第3名",
+      "buttonLabel": "焦慮按鈕",
+      "thought": "腦子裡冒出的念頭",
+      "mindBehind": "這個按鈕背後的需求",
+      "behavior": "被按到時你會怎麼做",
+      "strength": "這份感覺裡的優點",
+      "calmLine": "安撫自己的一句話",
+      "toPartner": "想對對方說的一句話",
+      "oneLiner": "一句話總結",
+      "family": "焦慮類型小提示",
+      "practice": "可以練習的一句話",
+      "bars": "焦慮按鈕得分",
+      "scoreUnit": "分",
+      "closeFourth": "差一點的第4名：{name}",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "更多測驗"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "戀愛焦慮按鈕 TOP3 🔵 對方哪一個舉動最讓你心慌？測出你的 TOP3！",
+      "startKakao": "戀愛焦慮按鈕 TOP3 🔵 對方哪一個舉動最讓你心慌？測出你的 TOP3！",
+      "startWechat": "戀愛焦慮按鈕 TOP3 🔵 對方哪一個舉動最讓你心慌？測出你的 TOP3！",
+      "startWhatsapp": "戀愛焦慮按鈕 TOP3 🔵 對方哪一個舉動最讓你心慌？測出你的 TOP3！",
+      "startTelegram": "戀愛焦慮按鈕 TOP3 🔵 對方哪一個舉動最讓你心慌？測出你的 TOP3！",
+      "startLine": "戀愛焦慮按鈕 TOP3 🔵 對方哪一個舉動最讓你心慌？測出你的 TOP3！"
+    },
+    "alerts": {
+      "linkCopied": "連結已複製！",
+      "resultCopied": "結果已複製到剪貼簿！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "連結已複製！請在微信裡貼上分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測驗 TOP5",
+      "popularTestsTop5": "🔥 熱門測驗 TOP5"
+    }
+  }
+}

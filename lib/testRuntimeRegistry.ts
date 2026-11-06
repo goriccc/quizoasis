@@ -29,13 +29,24 @@ export type RuntimeBalancePayload = {
   messagesFileSlug: string;
 };
 
+export type RuntimeTop3Payload = {
+  questions: unknown[];
+  meta: RuntimeTestMeta;
+  messagesNamespace: string;
+  messagesFileSlug: string;
+};
+
+export type RuntimeTestKind = 'balance' | 'top3';
+
 export type RuntimeTestEntry = {
   slug: string;
   format: TestFormat;
+  kind?: RuntimeTestKind;
   /** Prefer SSR for start-screen LCP (balance / text tests). Keep false for camera/game loops. */
   ssr: boolean;
   loadMeta: () => Promise<RuntimeTestMeta>;
   loadBalancePayload?: () => Promise<RuntimeBalancePayload>;
+  loadTop3Payload?: () => Promise<RuntimeTop3Payload>;
   loadClient: () => Promise<{ default: ComponentType<any> }>;
 };
 
@@ -118,6 +129,42 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
       };
     },
     loadClient: () => import('@/components/Phase3CoupleTripBalanceGameTestClient'),
+  },
+  'phase3-anxiety-button-top3': {
+    slug: 'phase3-anxiety-button-top3',
+    format: 'scenario_4',
+    kind: 'top3',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_ANXIETY_BUTTON_TOP3_META } = await import('./phase3AnxietyButtonTop3Data');
+      return {
+        title: PHASE3_ANXIETY_BUTTON_TOP3_META.title,
+        description: PHASE3_ANXIETY_BUTTON_TOP3_META.description,
+        tags: PHASE3_ANXIETY_BUTTON_TOP3_META.tags,
+        thumbnail: 'p3_test_anxiety_button_top3.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadTop3Payload: async () => {
+      const mod = await import('./phase3AnxietyButtonTop3Data');
+      return {
+        questions: mod.phase3AnxietyButtonTop3Questions,
+        meta: {
+          title: mod.PHASE3_ANXIETY_BUTTON_TOP3_META.title,
+          description: mod.PHASE3_ANXIETY_BUTTON_TOP3_META.description,
+          tags: mod.PHASE3_ANXIETY_BUTTON_TOP3_META.tags,
+          thumbnail: 'p3_test_anxiety_button_top3.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3AnxietyButtonTop3Test',
+        messagesFileSlug: 'phase3-anxiety-button-top3',
+      };
+    },
+    loadClient: () => import('@/components/Phase3AnxietyButtonTop3TestClient'),
   },
 };
 

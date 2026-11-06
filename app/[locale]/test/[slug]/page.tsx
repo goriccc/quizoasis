@@ -6490,6 +6490,12 @@ export default async function TestPage({ params }: Props) {
   // Registry-first path (zero-downtime): migrated tests never hit legacy branches below
   const runtimeEntry = getRuntimeTestEntry(slug);
   if (runtimeEntry) {
+    if (runtimeEntry.kind === 'top3' || runtimeEntry.loadTop3Payload) {
+      const RegisteredTop3TestEntry = (
+        await import('@/components/RegisteredTop3TestEntry')
+      ).default;
+      return <RegisteredTop3TestEntry locale={locale} slug={slug} />;
+    }
     const RegisteredBalanceGameEntry = (
       await import('@/components/RegisteredBalanceGameEntry')
     ).default;

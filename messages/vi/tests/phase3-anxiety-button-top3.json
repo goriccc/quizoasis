@@ -1,0 +1,70 @@
+{
+  "phase3AnxietyButtonTop3Test": {
+    "startMessage": {
+      "line1": "Hành động nào của người ấy làm tim bạn lung lay nhất?",
+      "line2": "Đã xem mà không trả lời. Một like từ người lạ. Ngực tụt một nhịp. Nút lo âu của mỗi người nằm chỗ khác nhau—nhưng khi bị nhấn, ai cũng chao đảo. Biết nút của mình, bạn nói được trước khi lao theo cảm xúc.",
+      "line3": "Trong mười hai cảnh, chọn phía làm bạn lung lay hơn. Chúng tôi xếp TOP 3 nút lo âu của bạn. Kiểm tra nhẹ, không nặng như tư vấn tâm lý.",
+      "line4": "",
+      "line5": "Tìm nút lo âu của tôi 🔵 Bắt đầu thành thật",
+      "note": "※ Chọn phương án làm bạn lung lay hơn. Nếu đang độc thân, hãy nghĩ về mối quan hệ gần nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm nút lo âu của tôi 🔵",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "rank1": "Hạng 1",
+      "rank2": "Hạng 2",
+      "rank3": "Hạng 3",
+      "buttonLabel": "Nút lo âu",
+      "thought": "Suy nghĩ vụt hiện",
+      "mindBehind": "Nhu cầu phía sau nút này",
+      "behavior": "Khi bị nhấn, bạn thường làm gì",
+      "strength": "Điểm mạnh trong cảm xúc này",
+      "calmLine": "Câu để tự trấn an",
+      "toPartner": "Câu muốn nói với người ấy",
+      "oneLiner": "Một câu tóm lại",
+      "family": "Gợi ý theo nhóm lo âu",
+      "practice": "Câu để luyện nói",
+      "bars": "Điểm nút lo âu",
+      "scoreUnit": "điểm",
+      "closeFourth": "Suýt hạng 4: {name}",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Hot",
+      "retake": "Làm lại",
+      "otherTests": "Thêm bài test"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Nút lo âu yêu đương TOP 3 🔵 Hành động nào của người ấy làm bạn lung lay nhất? Tìm TOP 3 của bạn!",
+      "startKakao": "Nút lo âu yêu đương TOP 3 🔵 Hành động nào của người ấy làm bạn lung lay nhất? Tìm TOP 3 của bạn!",
+      "startWechat": "Nút lo âu yêu đương TOP 3 🔵 Hành động nào của người ấy làm bạn lung lay nhất? Tìm TOP 3 của bạn!",
+      "startWhatsapp": "Nút lo âu yêu đương TOP 3 🔵 Hành động nào của người ấy làm bạn lung lay nhất? Tìm TOP 3 của bạn!",
+      "startTelegram": "Nút lo âu yêu đương TOP 3 🔵 Hành động nào của người ấy làm bạn lung lay nhất? Tìm TOP 3 của bạn!",
+      "startLine": "Nút lo âu yêu đương TOP 3 🔵 Hành động nào của người ấy làm bạn lung lay nhất? Tìm TOP 3 của bạn!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

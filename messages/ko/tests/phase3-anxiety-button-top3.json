@@ -1,0 +1,70 @@
+{
+  "phase3AnxietyButtonTop3Test": {
+    "startMessage": {
+      "line1": "연인의 어떤 행동에 가장 흔들릴까요?",
+      "line2": "읽음 표시 하나, 낯선 이름의 좋아요 하나에 마음이 철렁하는 순간이 있습니다. 불안 버튼은 사람마다 위치가 다르지만, 누르면 누구나 흔들리는 지점이 있습니다. 내 버튼의 위치를 알면 흔들리기 전에 먼저 말할 수 있습니다.",
+      "line3": "12가지 장면에서 가장 마음이 흔들리는 쪽을 골라 보세요. 내 불안 버튼 상위 3개를 순위로 알려드립니다. 상담이 부담스러울 때 가볍게 마음을 들여다보는 용도로 편하게 시작하세요.",
+      "line4": "",
+      "line5": "내 불안 버튼 찾기 🔵 솔직하게 시작",
+      "note": "※ 연인이 이렇게 했을 때 마음이 더 흔들리는 쪽을 하나 고르세요. 연애 중이 아니라면 가장 최근 연애를 기준으로 답해 주세요."
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 불안 버튼 찾기 🔵",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "rank1": "1위",
+      "rank2": "2위",
+      "rank3": "3위",
+      "buttonLabel": "불안 버튼",
+      "thought": "올라오는 생각",
+      "mindBehind": "이 버튼 뒤의 마음",
+      "behavior": "흔들릴 때의 행동",
+      "strength": "이 마음의 강점",
+      "calmLine": "나를 진정시키는 한마디",
+      "toPartner": "연인에게 전할 한마디",
+      "oneLiner": "한 줄 평",
+      "family": "불안 계열 총평",
+      "practice": "연습할 한마디",
+      "bars": "불안 버튼 점수",
+      "scoreUnit": "점",
+      "closeFourth": "아깝게 4위: {name}",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "연애 불안 버튼 TOP3 🔵 연인의 어떤 행동에 가장 흔들려? 내 TOP3 찾아보기!",
+      "startKakao": "연애 불안 버튼 TOP3 🔵 연인의 어떤 행동에 가장 흔들려? 내 TOP3 찾아보기!",
+      "startWechat": "연애 불안 버튼 TOP3 🔵 연인의 어떤 행동에 가장 흔들려? 내 TOP3 찾아보기!",
+      "startWhatsapp": "연애 불안 버튼 TOP3 🔵 연인의 어떤 행동에 가장 흔들려? 내 TOP3 찾아보기!",
+      "startTelegram": "연애 불안 버튼 TOP3 🔵 연인의 어떤 행동에 가장 흔들려? 내 TOP3 찾아보기!",
+      "startLine": "연애 불안 버튼 TOP3 🔵 연인의 어떤 행동에 가장 흔들려? 내 TOP3 찾아보기!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  }
+}

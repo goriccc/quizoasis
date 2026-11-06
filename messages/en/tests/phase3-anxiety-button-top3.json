@@ -1,0 +1,70 @@
+{
+  "phase3AnxietyButtonTop3Test": {
+    "startMessage": {
+      "line1": "Which of your partner's moves shakes you the most?",
+      "line2": "One read receipt. One like from a stranger. Your chest drops for a second. Anxiety buttons sit in different places for everyone—but when they get pressed, we all wobble. Know yours, and you can speak before you spiral.",
+      "line3": "In twelve scenes, pick the side that shakes you more. We'll rank your top 3 anxiety buttons. Light self-check when counseling feels like too much.",
+      "line4": "",
+      "line5": "Find my anxiety buttons 🔵 Start honest",
+      "note": "※ Pick the option that would shake you more. If you're single, use your most recent relationship."
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find my anxiety buttons 🔵",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "rank1": "1st",
+      "rank2": "2nd",
+      "rank3": "3rd",
+      "buttonLabel": "Anxiety button",
+      "thought": "The thought that pops up",
+      "mindBehind": "The need behind this button",
+      "behavior": "What you do when it hits",
+      "strength": "The strength in this feeling",
+      "calmLine": "A line to calm yourself",
+      "toPartner": "A line for your partner",
+      "oneLiner": "In one line",
+      "family": "Anxiety family takeaway",
+      "practice": "A line to practice",
+      "bars": "Anxiety button scores",
+      "scoreUnit": "pts",
+      "closeFourth": "Just missed 4th: {name}",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Love Anxiety Buttons TOP 3 🔵 Which partner move shakes you most? Find your TOP 3!",
+      "startKakao": "Love Anxiety Buttons TOP 3 🔵 Which partner move shakes you most? Find your TOP 3!",
+      "startWechat": "Love Anxiety Buttons TOP 3 🔵 Which partner move shakes you most? Find your TOP 3!",
+      "startWhatsapp": "Love Anxiety Buttons TOP 3 🔵 Which partner move shakes you most? Find your TOP 3!",
+      "startTelegram": "Love Anxiety Buttons TOP 3 🔵 Which partner move shakes you most? Find your TOP 3!",
+      "startLine": "Love Anxiety Buttons TOP 3 🔵 Which partner move shakes you most? Find your TOP 3!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  }
+}

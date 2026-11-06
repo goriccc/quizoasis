@@ -40,6 +40,15 @@ const SPLIT_MESSAGE_LOADERS: Record<string, Partial<Record<Locale, MessageLoader
     vi: () => import('@/messages/vi/tests/phase3-couple-trip-balance-game.json'),
     id: () => import('@/messages/id/tests/phase3-couple-trip-balance-game.json'),
   },
+  'phase3-anxiety-button-top3': {
+    ko: () => import('@/messages/ko/tests/phase3-anxiety-button-top3.json'),
+    en: () => import('@/messages/en/tests/phase3-anxiety-button-top3.json'),
+    ja: () => import('@/messages/ja/tests/phase3-anxiety-button-top3.json'),
+    'zh-CN': () => import('@/messages/zh-CN/tests/phase3-anxiety-button-top3.json'),
+    'zh-TW': () => import('@/messages/zh-TW/tests/phase3-anxiety-button-top3.json'),
+    vi: () => import('@/messages/vi/tests/phase3-anxiety-button-top3.json'),
+    id: () => import('@/messages/id/tests/phase3-anxiety-button-top3.json'),
+  },
 };
 
 async function resolveLoader(loader: MessageLoader): Promise<Record<string, unknown>> {

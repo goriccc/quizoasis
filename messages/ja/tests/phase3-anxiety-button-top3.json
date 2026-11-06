@@ -1,0 +1,70 @@
+{
+  "phase3AnxietyButtonTop3Test": {
+    "startMessage": {
+      "line1": "相手のどの行動がいちばん心を揺らす？",
+      "line2": "既読がついたまま。知らない人のいいね。一瞬、胸がざわつく。不安ボタンの位置は人それぞれ。でも押されると、みんな同じように揺れる。自分のボタンを知ると、暴走する前に言葉にできる。",
+      "line3": "12の場面で、より揺さぶられるほうを選んで。あなたの不安ボタンTOP3を出します。カウンセリングほど重くない、軽い自己点検。",
+      "line4": "",
+      "line5": "不安ボタンを知る 🔵 正直にスタート",
+      "note": "※ より揺さぶられるほうを選んでください。シングルの方は、いちばん近い過去の関係を思い浮かべて。"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "診断する",
+      "startTest": "不安ボタンを知る 🔵",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似た診断",
+      "rank1": "1位",
+      "rank2": "2位",
+      "rank3": "3位",
+      "buttonLabel": "不安ボタン",
+      "thought": "浮かぶ考え",
+      "mindBehind": "このボタンの奥にある欲求",
+      "behavior": "押されたときの行動",
+      "strength": "この感情のなかの強み",
+      "calmLine": "自分を落ち着かせる一言",
+      "toPartner": "相手に伝えたい一言",
+      "oneLiner": "一言でいうと",
+      "family": "不安タイプからのヒント",
+      "practice": "練習したい一言",
+      "bars": "不安ボタンのスコア",
+      "scoreUnit": "点",
+      "closeFourth": "惜しくも4位：{name}",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "retake": "もう一度",
+      "otherTests": "ほかの診断"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "恋愛不安ボタン TOP3 🔵 相手のどの行動がいちばん揺さぶる？あなたのTOP3を診断！",
+      "startKakao": "恋愛不安ボタン TOP3 🔵 相手のどの行動がいちばん揺さぶる？あなたのTOP3を診断！",
+      "startWechat": "恋愛不安ボタン TOP3 🔵 相手のどの行動がいちばん揺さぶる？あなたのTOP3を診断！",
+      "startWhatsapp": "恋愛不安ボタン TOP3 🔵 相手のどの行動がいちばん揺さぶる？あなたのTOP3を診断！",
+      "startTelegram": "恋愛不安ボタン TOP3 🔵 相手のどの行動がいちばん揺さぶる？あなたのTOP3を診断！",
+      "startLine": "恋愛不安ボタン TOP3 🔵 相手のどの行動がいちばん揺さぶる？あなたのTOP3を診断！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを準備中です。少ししてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが起きました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似た診断 TOP5",
+      "popularTestsTop5": "🔥 人気の診断 TOP5"
+    }
+  }
+}
