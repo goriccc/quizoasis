@@ -1,0 +1,72 @@
+{
+  "phase3HurtfulToneTop3Test": {
+    "startMessage": {
+      "line1": "如果你沒察覺，但對方其實受傷過——會是哪種說話方式？",
+      "line2": "對你來說習以為常的「嗯」「哈哈」，對對方可能像關上心門。你眼中的自己，和戀人聽到的你，中间往往有縫隙。看見縫隙，就能少重復同樣的委屈。",
+      "line3": "十二個場景裡，選最像你的行為。我們會給出最容易讓戀人委屈的說話方式 TOP3，以及「戀人眼裡的你」「群聊人設」——可以拿去跟朋友認證。",
+      "line4": "",
+      "line5": "找出我的傷人說話方式 🪞 誠實開始",
+      "note": "※ 選最接近你平時真實做法的一项。如果是單身，用最近一段感情來想。"
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "開始測試",
+      "startTest": "找出我的傷人說話方式 🪞",
+      "linkCopy": "復制鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似測試",
+      "rank1": "第1名",
+      "rank2": "第2名",
+      "rank3": "第3名",
+      "buttonLabel": "傷人說話方式",
+      "partnerView": "戀人眼裡的你",
+      "groupchatCharacter": "群聊人設",
+      "heardAs": "對方聽到的意思",
+      "mindBehind": "真實的內心",
+      "strength": "這種說話方式的優點",
+      "changeLine": "可以改成的一句話",
+      "oneLiner": "一句話總結",
+      "family": "說話類型總評",
+      "practice": "可以練習的一句話",
+      "bars": "傷人說話方式得分",
+      "scoreUnit": "分",
+      "closeFourth": "差一點的第4名：{name}",
+      "shareResult": "分享結果",
+      "certCardTitle": "群聊認證卡",
+      "certCardPrompt": "你不知道的說話方式，朋友眼裡的你是？",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "更多測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "讓戀人委屈的說話方式 TOP3 🪞 你沒注意到的習慣也可能傷人——測出你的 TOP3！",
+      "startKakao": "讓戀人委屈的說話方式 TOP3 🪞 你沒注意到的習慣也可能傷人——測出你的 TOP3！",
+      "startWechat": "讓戀人委屈的說話方式 TOP3 🪞 你沒注意到的習慣也可能傷人——測出你的 TOP3！",
+      "startWhatsapp": "讓戀人委屈的說話方式 TOP3 🪞 你沒注意到的習慣也可能傷人——測出你的 TOP3！",
+      "startTelegram": "讓戀人委屈的說話方式 TOP3 🪞 你沒注意到的習慣也可能傷人——測出你的 TOP3！",
+      "startLine": "讓戀人委屈的說話方式 TOP3 🪞 你沒注意到的習慣也可能傷人——測出你的 TOP3！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已復制！",
+      "resultCopied": "結果已復制到剪贴板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "鏈接已復制！請在微信裡粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試 TOP5",
+      "popularTestsTop5": "🔥 熱門測試 TOP5"
+    }
+  }
+}

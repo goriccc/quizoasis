@@ -1,0 +1,72 @@
+{
+  "phase3HurtfulToneTop3Test": {
+    "startMessage": {
+      "line1": "What if a habit of yours quietly hurts them—and you never noticed?",
+      "line2": "Your casual \"yeah\" or \"lol\" can feel like a closed door to them. There's often a gap between how you see yourself and how your partner hears you. Spot that gap, and you can stop repeating the same sting.",
+      "line3": "In twelve scenes, pick what feels most like you. We'll show your TOP 3 hurtful tones, how you look through their eyes, and your group-chat character—perfect to share with friends.",
+      "line4": "",
+      "line5": "Find my hurtful tones 🪞 Start honest",
+      "note": "※ Pick the option closest to what you actually do. If you're single, use your most recent relationship."
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find my hurtful tones 🪞",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "rank1": "1st",
+      "rank2": "2nd",
+      "rank3": "3rd",
+      "buttonLabel": "Hurtful tone",
+      "partnerView": "How your partner sees you",
+      "groupchatCharacter": "Group-chat character",
+      "heardAs": "What they hear",
+      "mindBehind": "What's really going on",
+      "strength": "The strength in this tone",
+      "changeLine": "A line to try instead",
+      "oneLiner": "In one line",
+      "family": "Tone family takeaway",
+      "practice": "A line to practice",
+      "bars": "Hurtful tone scores",
+      "scoreUnit": "pts",
+      "closeFourth": "Just missed 4th: {name}",
+      "shareResult": "Share result",
+      "certCardTitle": "Group-chat cert card",
+      "certCardPrompt": "The tone you don't notice—how do friends see you?",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Words That Hurt My Partner TOP 3 🪞 Habits you miss can still sting—find your TOP 3!",
+      "startKakao": "Words That Hurt My Partner TOP 3 🪞 Habits you miss can still sting—find your TOP 3!",
+      "startWechat": "Words That Hurt My Partner TOP 3 🪞 Habits you miss can still sting—find your TOP 3!",
+      "startWhatsapp": "Words That Hurt My Partner TOP 3 🪞 Habits you miss can still sting—find your TOP 3!",
+      "startTelegram": "Words That Hurt My Partner TOP 3 🪞 Habits you miss can still sting—find your TOP 3!",
+      "startLine": "Words That Hurt My Partner TOP 3 🪞 Habits you miss can still sting—find your TOP 3!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  }
+}

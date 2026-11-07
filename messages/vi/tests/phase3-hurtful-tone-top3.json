@@ -1,0 +1,72 @@
+{
+  "phase3HurtfulToneTop3Test": {
+    "startMessage": {
+      "line1": "Nếu bạn không nhận ra, nhưng người ấy đã tổn thương—đó là cách nói nào?",
+      "line2": "Cái \"ừ\" và \"haha\" quen thuộc với bạn có thể với họ như đóng cửa trái tim. Giữa bạn tự nhìn mình và người yêu nghe bạn, thường có khoảng trống. Thấy khoảng trống đó, bạn bớt lặp lại cùng một nỗi tổn thương.",
+      "line3": "Trong mười hai cảnh, chọn hành động giống bạn nhất. Chúng tôi cho TOP 3 cách nói dễ làm họ tổn thương, \"bạn trong mắt người yêu\" và \"nhân vật group chat\"—để khoe với bạn bè.",
+      "line4": "",
+      "line5": "Tìm cách nói làm tổn thương 🪞 Bắt đầu thành thật",
+      "note": "※ Chọn phương án gần với việc bạn thật sự hay làm. Nếu đang độc thân, hãy nghĩ về mối quan hệ gần nhất."
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm cách nói làm tổn thương 🪞",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "rank1": "Hạng 1",
+      "rank2": "Hạng 2",
+      "rank3": "Hạng 3",
+      "buttonLabel": "Cách nói tổn thương",
+      "partnerView": "Bạn trong mắt người yêu",
+      "groupchatCharacter": "Nhân vật group chat",
+      "heardAs": "Điều họ nghe được",
+      "mindBehind": "Điều thật sự bên trong",
+      "strength": "Điểm mạnh của cách nói này",
+      "changeLine": "Câu nên thử thay thế",
+      "oneLiner": "Một câu tóm lại",
+      "family": "Gợi ý theo nhóm cách nói",
+      "practice": "Câu để luyện nói",
+      "bars": "Điểm cách nói tổn thương",
+      "scoreUnit": "điểm",
+      "closeFourth": "Suýt hạng 4: {name}",
+      "shareResult": "Chia sẻ kết quả",
+      "certCardTitle": "Thẻ xác nhận group chat",
+      "certCardPrompt": "Cách nói bạn không biết—bạn bè thấy bạn thế nào?",
+      "popularBadge": "Hot",
+      "retake": "Làm lại",
+      "otherTests": "Thêm bài test"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Cách nói làm người yêu tổn thương TOP 3 🪞 Thói quen bạn bỏ lỡ cũng có thể đau—tìm TOP 3!",
+      "startKakao": "Cách nói làm người yêu tổn thương TOP 3 🪞 Thói quen bạn bỏ lỡ cũng có thể đau—tìm TOP 3!",
+      "startWechat": "Cách nói làm người yêu tổn thương TOP 3 🪞 Thói quen bạn bỏ lỡ cũng có thể đau—tìm TOP 3!",
+      "startWhatsapp": "Cách nói làm người yêu tổn thương TOP 3 🪞 Thói quen bạn bỏ lỡ cũng có thể đau—tìm TOP 3!",
+      "startTelegram": "Cách nói làm người yêu tổn thương TOP 3 🪞 Thói quen bạn bỏ lỡ cũng có thể đau—tìm TOP 3!",
+      "startLine": "Cách nói làm người yêu tổn thương TOP 3 🪞 Thói quen bạn bỏ lỡ cũng có thể đau—tìm TOP 3!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

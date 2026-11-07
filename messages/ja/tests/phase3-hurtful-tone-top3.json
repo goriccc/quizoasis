@@ -1,0 +1,72 @@
+{
+  "phase3HurtfulToneTop3Test": {
+    "startMessage": {
+      "line1": "自分は気づかなかったのに、相手は傷ついていた話し方があるなら？",
+      "line2": "いつもの「うん」「笑」が、相手には心の扉を閉じたように聞こえることがあります。自分が見る自分と、恋人が聞く自分のあいだには、意外と隙間があります。その隙間を知れば、同じ傷つきを繰り返さずに済みます。",
+      "line3": "12の場面で、いちばん自分らしい行動を選んで。恋人が傷つきやすい話し方TOP3と、「恋人の目に映る私」「グループLINEキャラ」を出します。友達に認証してみて。",
+      "line4": "",
+      "line5": "傷つく話し方を知る 🪞 正直にスタート",
+      "note": "※ 普段の自分にいちばん近いほうを選んでください。シングルの方は、いちばん近い過去の関係を思い浮かべて。"
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "診断する",
+      "startTest": "傷つく話し方を知る 🪞",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似た診断",
+      "rank1": "1位",
+      "rank2": "2位",
+      "rank3": "3位",
+      "buttonLabel": "傷つく話し方",
+      "partnerView": "恋人の目に映る私",
+      "groupchatCharacter": "グループLINEキャラ",
+      "heardAs": "相手に聞こえる言葉",
+      "mindBehind": "本当の気持ち",
+      "strength": "この話し方の強み",
+      "changeLine": "変えたい一言",
+      "oneLiner": "一言でいうと",
+      "family": "話し方タイプ総評",
+      "practice": "練習したい一言",
+      "bars": "傷つく話し方のスコア",
+      "scoreUnit": "点",
+      "closeFourth": "惜しくも4位：{name}",
+      "shareResult": "結果をシェア",
+      "certCardTitle": "グループLINE認証カード",
+      "certCardPrompt": "自分の知らない話し方、友達から見た私は？",
+      "popularBadge": "人気",
+      "retake": "もう一度",
+      "otherTests": "ほかの診断"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "恋人が傷つく私の話し方 TOP3 🪞 気づかない癖が相手を傷つけることも。TOP3を診断！",
+      "startKakao": "恋人が傷つく私の話し方 TOP3 🪞 気づかない癖が相手を傷つけることも。TOP3を診断！",
+      "startWechat": "恋人が傷つく私の話し方 TOP3 🪞 気づかない癖が相手を傷つけることも。TOP3を診断！",
+      "startWhatsapp": "恋人が傷つく私の話し方 TOP3 🪞 気づかない癖が相手を傷つけることも。TOP3を診断！",
+      "startTelegram": "恋人が傷つく私の話し方 TOP3 🪞 気づかない癖が相手を傷つけることも。TOP3を診断！",
+      "startLine": "恋人が傷つく私の話し方 TOP3 🪞 気づかない癖が相手を傷つけることも。TOP3を診断！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェアを準備中です。少ししてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが起きました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似た診断 TOP5",
+      "popularTestsTop5": "🔥 人気の診断 TOP5"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "phase3HurtfulToneTop3Test": {
+    "startMessage": {
+      "line1": "Kalau kamu tidak sadar, tapi pasangan sempat tersinggung—cara bicara mana itu?",
+      "line2": "\"Iya\" dan \"wkwk\" yang biasa bagimu bisa terasa seperti menutup pintu hati bagi mereka. Antara dirimu yang kamu lihat dan dirimu yang mereka dengar, sering ada jarak. Lihat jarak itu, dan kamu bisa berhenti mengulang sakit yang sama.",
+      "line3": "Di dua belas adegan, pilih yang paling mirip dirimu. Kami tampilkan TOP 3 nada yang menyakitkan, \"kamu di mata pasangan\", dan \"karakter grup chat\"—pas buat dibagikan ke teman.",
+      "line4": "",
+      "line5": "Temukan nada yang menyakiti 🪞 Mulai jujur",
+      "note": "※ Pilih opsi paling dekat dengan yang benar-benar kamu lakukan. Kalau lagi jomblo, pakai hubungan terakhirmu."
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Temukan nada yang menyakiti 🪞",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "rank1": "Peringkat 1",
+      "rank2": "Peringkat 2",
+      "rank3": "Peringkat 3",
+      "buttonLabel": "Nada yang menyakiti",
+      "partnerView": "Kamu di mata pasangan",
+      "groupchatCharacter": "Karakter grup chat",
+      "heardAs": "Yang mereka dengar",
+      "mindBehind": "Yang sebenarnya terjadi",
+      "strength": "Kekuatan nada ini",
+      "changeLine": "Kalimat pengganti untuk dicoba",
+      "oneLiner": "Dalam satu kalimat",
+      "family": "Ringkasan keluarga nada",
+      "practice": "Kalimat untuk dilatih",
+      "bars": "Skor nada yang menyakiti",
+      "scoreUnit": "poin",
+      "closeFourth": "Hampir peringkat 4: {name}",
+      "shareResult": "Bagikan hasil",
+      "certCardTitle": "Kartu sertifikasi grup chat",
+      "certCardPrompt": "Nada yang tak kamu sadari—teman melihatmu seperti apa?",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Tes lainnya"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Cara Bicara yang Menyakiti Pasangan TOP 3 🪞 Kebiasaan yang terlewat bisa menyakiti—temukan TOP 3-mu!",
+      "startKakao": "Cara Bicara yang Menyakiti Pasangan TOP 3 🪞 Kebiasaan yang terlewat bisa menyakiti—temukan TOP 3-mu!",
+      "startWechat": "Cara Bicara yang Menyakiti Pasangan TOP 3 🪞 Kebiasaan yang terlewat bisa menyakiti—temukan TOP 3-mu!",
+      "startWhatsapp": "Cara Bicara yang Menyakiti Pasangan TOP 3 🪞 Kebiasaan yang terlewat bisa menyakiti—temukan TOP 3-mu!",
+      "startTelegram": "Cara Bicara yang Menyakiti Pasangan TOP 3 🪞 Kebiasaan yang terlewat bisa menyakiti—temukan TOP 3-mu!",
+      "startLine": "Cara Bicara yang Menyakiti Pasangan TOP 3 🪞 Kebiasaan yang terlewat bisa menyakiti—temukan TOP 3-mu!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes sedang tren"
+    }
+  }
+}

@@ -166,6 +166,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3AnxietyButtonTop3TestClient'),
   },
+
+  'phase3-hurtful-tone-top3': {
+    slug: 'phase3-hurtful-tone-top3',
+    format: 'scenario_4',
+    kind: 'top3',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_HURTFUL_TONE_TOP3_META } = await import('./phase3HurtfulToneTop3Data');
+      return {
+        title: PHASE3_HURTFUL_TONE_TOP3_META.title,
+        description: PHASE3_HURTFUL_TONE_TOP3_META.description,
+        tags: PHASE3_HURTFUL_TONE_TOP3_META.tags,
+        thumbnail: 'p3_test_hurtful_tone_top3.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadTop3Payload: async () => {
+      const mod = await import('./phase3HurtfulToneTop3Data');
+      return {
+        questions: mod.phase3HurtfulToneTop3Questions,
+        meta: {
+          title: mod.PHASE3_HURTFUL_TONE_TOP3_META.title,
+          description: mod.PHASE3_HURTFUL_TONE_TOP3_META.description,
+          tags: mod.PHASE3_HURTFUL_TONE_TOP3_META.tags,
+          thumbnail: 'p3_test_hurtful_tone_top3.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3HurtfulToneTop3Test',
+        messagesFileSlug: 'phase3-hurtful-tone-top3',
+      };
+    },
+    loadClient: () => import('@/components/Phase3HurtfulToneTop3TestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {
