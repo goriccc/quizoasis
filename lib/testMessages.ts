@@ -40,6 +40,15 @@ const SPLIT_MESSAGE_LOADERS: Record<string, Partial<Record<Locale, MessageLoader
     vi: () => import('@/messages/vi/tests/phase3-couple-trip-balance-game.json'),
     id: () => import('@/messages/id/tests/phase3-couple-trip-balance-game.json'),
   },
+  'phase3-situationship-stuck-reason': {
+    ko: () => import('@/messages/ko/tests/phase3-situationship-stuck-reason.json'),
+    en: () => import('@/messages/en/tests/phase3-situationship-stuck-reason.json'),
+    ja: () => import('@/messages/ja/tests/phase3-situationship-stuck-reason.json'),
+    'zh-CN': () => import('@/messages/zh-CN/tests/phase3-situationship-stuck-reason.json'),
+    'zh-TW': () => import('@/messages/zh-TW/tests/phase3-situationship-stuck-reason.json'),
+    vi: () => import('@/messages/vi/tests/phase3-situationship-stuck-reason.json'),
+    id: () => import('@/messages/id/tests/phase3-situationship-stuck-reason.json'),
+  },
   'phase3-hurtful-tone-top3': {
     ko: () => import('@/messages/ko/tests/phase3-hurtful-tone-top3.json'),
     en: () => import('@/messages/en/tests/phase3-hurtful-tone-top3.json'),

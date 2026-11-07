@@ -1,0 +1,63 @@
+{
+  "phase3SituationshipStuckReasonTest": {
+    "startMessage": {
+      "line1": "The situationship is going well—so why won't it become a relationship?",
+      "line2": "You text often, hanging out is fun, and the vibe isn't bad. Weeks or months pass and nothing changes. Neither of you can say \"Want to make it official?\"—and sometimes the messages quietly fade.",
+      "line3": "People stall for different reasons. Maybe you need more certainty, keep missing the moment to speak up, or keep the door to your heart locked. Once you know where you stop, the next step gets clearer.",
+      "line4": "Across twelve situations, we'll gather your reactions and show the real reason things stall—and how to move into a real relationship.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find the real reason",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "The real reason you can't move into a relationship",
+      "keywords": "Key keywords",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Hidden reason",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "Where the relationship stalls",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to move into a relationship",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startKakao": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startWechat": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startWhatsapp": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startTelegram": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startLine": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  }
+}

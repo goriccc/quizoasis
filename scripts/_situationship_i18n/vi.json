@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Lý do thật sự khiến giai đoạn mập mờ không thành yêu",
+    "description": "Đang tìm hiểu khá ổn—sao vẫn không thành chính thức? 12 tình huống chỉ ra lý do mối quan hệ dừng lại và cách bước sang yêu thật.",
+    "tags": ["đang tìm hiểu", "kiểu yêu"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Đang tìm hiểu khá ổn—sao vẫn không thành yêu chính thức?",
+      "line2": "Nhắn tin đều, gặp nhau vui, không khí cũng không tệ. Vài tuần, vài tháng trôi qua mà quan hệ vẫn đứng yên. Không ai nói được «Mình yêu nhau nhé?», đôi khi tin nhắn cứ lặng lẽ thưa dần.",
+      "line3": "Mỗi người dừng ở một điểm khác. Có thể vì thiếu chắc chắn, vì bỏ lỡ lúc nói ra, hoặc vì cánh cửa trái tim đóng quá chặt. Biết mình dừng ở đâu thì bước tiếp mới rõ.",
+      "line4": "Qua 12 tình huống, chúng tôi gom phản ứng của bạn để chỉ ra lý do thật sự và cách bước sang yêu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm lý do thật sự",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật sự chưa thành yêu",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do ẩn",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Điểm mối quan hệ dừng lại",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách bước sang yêu",
+      "oneLiner": "Nhận xét một dòng",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Lý do thật sự khiến giai đoạn mập mờ không thành yêu 💔 Đang tìm hiểu ổn mà sao chưa thành? Thử đi!",
+      "startKakao": "Lý do thật sự khiến giai đoạn mập mờ không thành yêu 💔 Đang tìm hiểu ổn mà sao chưa thành? Thử đi!",
+      "startWechat": "Lý do thật sự khiến giai đoạn mập mờ không thành yêu 💔 Đang tìm hiểu ổn mà sao chưa thành? Thử đi!",
+      "startWhatsapp": "Lý do thật sự khiến giai đoạn mập mờ không thành yêu 💔 Đang tìm hiểu ổn mà sao chưa thành? Thử đi!",
+      "startTelegram": "Lý do thật sự khiến giai đoạn mập mờ không thành yêu 💔 Đang tìm hiểu ổn mà sao chưa thành? Thử đi!",
+      "startLine": "Lý do thật sự khiến giai đoạn mập mờ không thành yêu 💔 Đang tìm hiểu ổn mà sao chưa thành? Thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau nhé.",
+      "kakaoError": "Lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
+  "questions": [
+    {
+      "q": "Tuần thứ 3 đang tìm hiểu. Họ hỏi: «Cuối tuần này bạn làm gì?» Bạn sẽ:",
+      "opts": [
+        "Cố ý nói «Ừm, chưa biết nữa~», để dư địa và xem phản ứng của họ",
+        "Nghĩ có phải muốn gặp mình không, rồi trả lời e dè vì «Chắc không phải vì thích mình đâu»",
+        "Muốn gặp nhưng do dự hẹn ngay có quá sớm không, nên trì hoãn trả lời",
+        "Buồn nhẹ vì buổi hẹn tầm thường họ đề xuất khác với buổi hẹn lãng mạn bạn hình dung"
+      ]
+    },
+    {
+      "q": "Đêm muộn họ nhắn: «Trước khi ngủ nghĩ đến bạn.» Bạn sẽ:",
+      "opts": [
+        "Tự bảo không đời nào là vậy, coi như đùa hoặc xã giao",
+        "Tim đập thình thịch nhưng không chắc là thích hay chỉ thân, không biết trả lời sao",
+        "Sợ trả lời ngay trông dễ dãi, đợi lâu rồi trả lời lạnh lùng",
+        "Lòng nghiêng về họ nhưng không muốn vượt ranh giới, gạt nhẹ bằng «haha cảm ơn~»"
+      ]
+    },
+    {
+      "q": "Họ nói: «Dạo này mình gặp nhau nhiều nhỉ.» Bạn sẽ:",
+      "opts": [
+        "Ngại quan hệ sâu hơn, giữ đường bạn bè bằng «Ừ, thân hơn rồi~»",
+        "Bạn muốn yêu thật, họ có vẻ chỉ thích kiểu thoải mái—cảm nhận khoảng cách nhiệt độ",
+        "Não rối vì không biết câu đó nghĩa là đang tìm hiểu hay chỉ là thân hơn",
+        "Giống tín hiệu, suýt nói ra rồi «quan sát thêm chút» và chủ đề đổi hướng"
+      ]
+    },
+    {
+      "q": "Một tháng đang tìm hiểu—đến lúc làm rõ quan hệ. Bạn sẽ:",
+      "opts": [
+        "Biết phải nói nhưng cứ «Lần gặp sau nói» rồi trì hoãn mãi",
+        "Sợ đặt tên sẽ đổi hết, muốn giữ vibe dễ chịu như hiện tại",
+        "Không đủ tự tin mở lời trước—bị từ chối sẽ ngại",
+        "Ngần ngại vì kiểu quan hệ họ muốn có thể khác tình yêu bạn tưởng tượng"
+      ]
+    },
+    {
+      "q": "Họ hỏi thẳng: «Bạn nghĩ gì về mình?» Bạn sẽ:",
+      "opts": [
+        "Trả lời vòng vo vì không chắc mong muốn hai bên có khớp không",
+        "Kẻ ranh giới mềm bằng «Bạn là người tốt~»—sợ lộ hết rồi bị tổn thương",
+        "Nói «Chưa rõ, để mình nghĩ» vì chính bạn cũng chưa chắc lòng mình",
+        "Cố ý hỏi lại «Ừm, còn bạn?» và đẩy câu trả lời về phía họ"
+      ]
+    },
+    {
+      "q": "Tin nhắn của họ đã thưa hai ngày. Bạn sẽ:",
+      "opts": [
+        "Không chắc họ có đổi ý không, cứ nghiền ngẫm tín hiệu từ các cuộc chat trước",
+        "Suýt nhắn trước rồi «đợi thêm chút đã gửi», bỏ lỡ thời điểm",
+        "Nghĩ chắc vì mình không đủ tốt nên không liên lạc trước, giữ khoảng cách",
+        "Cũng giảm liên lạc để họ phải lo lắng trước"
+      ]
+    },
+    {
+      "q": "Họ đề nghị: «Tháng sau cuối tuần đi du lịch cùng không?» Bạn sẽ:",
+      "opts": [
+        "Thấy còn sớm để gần đến mức đó, lấy cớ từ chối",
+        "Nói «Để mình nghĩ~» thử nước—đồng ý ngay e trông dễ dãi",
+        "Muốn đi nhưng «đợi thân hơn rồi đi» kéo dài đến khi nhiệt tình họ nguội",
+        "Nói «Đi với người khác vui hơn» vì chắc họ sẽ thất vọng nếu đi với mình"
+      ]
+    },
+    {
+      "q": "Bạn nói: «Hình như người đó thích bạn.» Bạn sẽ:",
+      "opts": [
+        "Thích mình á? Không đời nào, không tin",
+        "Bắt đầu lên kế hoạch đẩy kéo thêm để họ sốt ruột",
+        "Dù thích cũng cân nhắc xem phong cách yêu của họ có khớp mình không",
+        "Chưa nghe từ miệng họ thì chưa chắc—không phải tự họ nói"
+      ]
+    },
+    {
+      "q": "Lần đầu họ tâm sự nghiêm túc về chuyện phiền. Bạn sẽ:",
+      "opts": [
+        "Không chắc mình có đặc biệt không hay họ kể với ai cũng được",
+        "Lo mình an ủi kém sẽ khiến họ thất vọng",
+        "Gần gũi hóa áp lực, nhận nhẹ bằng «Cố lên~» và giữ ranh giới",
+        "Suýt nói lòng trong không khí đó, thấy chưa phải lúc rồi bỏ qua, sau lại tiếc"
+      ]
+    },
+    {
+      "q": "Ba tháng đang tìm hiểu mà quan hệ vẫn vậy. Gần nhất là?",
+      "opts": [
+        "Có nhiều lần để nói—cứ «lần sau» mãi rồi đến đây",
+        "Họ có vẻ muốn giữ trạng thái thoải mái; bạn muốn yêu—mong muốn lệch nhau",
+        "Push-pull vẫn vui nên chưa ai vội chốt",
+        "Càng gần càng khó chịu nên không bao giờ mở lòng qua một vạch nào đó"
+      ]
+    },
+    {
+      "q": "Họ nói: «Cứ thế này cũng ổn mà?» Bạn sẽ:",
+      "opts": [
+        "Bạn muốn yêu còn họ thỏa mãn hiện tại—cảm thấy muốn khác nhau",
+        "Không chắc đó có phải từ chối không, cứ nghiền ngẫm ý câu nói",
+        "Thành thật thấy khoảng cách thoải mái an toàn hơn nên đồng ý «Ừ»",
+        "Nghĩ mình không đủ làm người yêu rồi gấp lòng lại"
+      ]
+    },
+    {
+      "q": "Câu nào gần bạn nhất lúc này?",
+      "opts": [
+        "«Push-pull thì họ sẽ thích mình hơn»",
+        "«Cứ canh timing tỏ tình rồi lại bỏ lỡ»",
+        "«Tình yêu mình muốn và quan hệ họ muốn trông khác nhau»",
+        "«Không chắc họ nghĩ gì về mình nên không bước tiếp được»"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người dừng lại vì thiếu chắc chắn — Kiểu thiếu chắc chắn 🔍",
+      "typeName": "Kiểu thiếu chắc chắn",
+      "realReason": "Tín hiệu nhiều nhưng vì thiếu chắc chắn nên không bước tiếp",
+      "shortDescription": "Không phải bạn vô cảm. Bạn kẹt vì chưa chắc họ nghĩ gì về mình.",
+      "description": "Bạn đọc giọng điệu, emoji, tốc độ trả lời, số lần gặp—mọi tín hiệu—mà vẫn không có đáp án cuối. Chờ đến khi chắc chắn thì thời gian trôi, họ cũng có thể đang chờ giống bạn. Chắc chắn thường đến từ kiểm chứng, không phải từ chờ đợi.\n\nBóc tách: không phải thiếu thích—«đoán có thể đúng» an toàn hơn «xác nhận có thể sai»",
+      "keywords": "Đọc tín hiệu, nghĩ đi nghĩ lại, chờ lời rõ ràng, khó chịu với mơ hồ, trì hoãn xác nhận",
+      "strengths": "Tinh tế nhận ra thay đổi nhỏ ở họ, và nghiêm túc không xem nhẹ mối quan hệ",
+      "reasonDetail": "Khi cứ diễn giải tín hiệu thay vì hỏi thẳng họ nghĩ gì",
+      "frequentSaying": "«Đây có phải đang tìm hiểu không?»",
+      "changeTips": "Thay vì đọc tín hiệu, hỏi nhẹ một lần: «Dạo này mình là gì của nhau?»\nĐừng đòi chắc chắn—hãy nói lòng mình trước: «Mình muốn gần bạn hơn»\nKhi cần rõ ràng, tự hỏi: lúc này cần đoán hay cần trò chuyện?",
+      "oneLiner": "Chắc chắn đến từ trò chuyện, không từ diễn giải. Một câu hỏi có thể kết thúc vài tuần đoán mò.",
+      "shareLine": "Lý do thật sự giai đoạn mập mờ không thành yêu: Kiểu thiếu chắc chắn 🔍 Tín hiệu nhiều mà không chắc nên không bước… trời ơi giống bạn quá haha. Làm cùng mình đi—bạn ra gì?"
+    },
+    {
+      "title": "Người cứ bỏ lỡ khoảnh khắc nói — Kiểu bỏ lỡ thời điểm ⏰",
+      "typeName": "Kiểu bỏ lỡ thời điểm",
+      "realReason": "Lòng đã quyết—chỉ là cứ trì hoãn lúc nói ra",
+      "shortDescription": "Không phải bạn thiếu dũng khí. «Giờ chưa phải lúc» lặp lại đến khi khoảnh khắc trôi mất.",
+      "description": "Tỏ tình? Nhắn tin? Hẹn gặp? Trong lúc «đợi thêm chút» chồng chất, không khí nguội và họ có thể nhìn sang chỗ khác. Timing hoàn hảo không bao giờ tới—timing tốt thường chỉ rõ sau khi đã qua.\n\nBóc tách: không phải vấn đề cảm xúc—thói quen trì hoãn để giảm áp lực lúc nói",
+      "keywords": "Thêm chút nữa, lần sau, do dự, canh giờ, hối tiếc",
+      "strengths": "Thận trọng, quan tâm đối phương, không phá quan hệ vì bốc đồng",
+      "reasonDetail": "Khi khoảnh khắc nói được đã tới mà bạn gạt bằng «quan sát thêm chút»",
+      "frequentSaying": "«Lần gặp sau sẽ nói»",
+      "changeTips": "Đặt luật riêng: có tín hiệu thích thì trong một tuần nói gì đó ít nhất một lần\nĐừng tỏ tình lớn—bắt đầu bằng câu nhỏ như «Muốn gặp lại bạn»\nChốt lịch gặp tiếp ngay lúc đang gặp để «lần sau» ít đi",
+      "oneLiner": "Timing hoàn hảo không tới. Ba giây dũng khí có thể giảm vài tháng hối tiếc.",
+      "shareLine": "Lý do thật sự giai đoạn mập mờ không thành yêu: Kiểu bỏ lỡ thời điểm ⏰ Cứ trì hoãn lúc nói… giống bạn quá haha. Chỉ cần 3 giây dũng khí—bạn cũng thử đi"
+    },
+    {
+      "title": "Người càng gần càng kẻ ranh giới — Kiểu rào chắn quá mức 🚧",
+      "typeName": "Kiểu rào chắn quá mức",
+      "realReason": "Vừa gần hơn là bạn kẻ đường biên cảm xúc trước",
+      "shortDescription": "Không phải bạn thờ ơ. Khi quan hệ sắp sâu hơn, bạn tự lùi một bước tạo khoảng cách.",
+      "description": "Giai đoạn mập mờ vui—cho đến khi gắn nhãn mối quan hệ thì nặng nề. Bạn ở lại «bạn bè dễ chịu», hoặc nhẹ nhàng lướt qua khi không khí nghiêm túc. Ranh giới bảo vệ bạn cũng có thể chặn cửa một duyên tốt.\n\nBóc tách: không thiếu hóa học—phòng thủ kích hoạt trước vì sợ lộ lòng rồi tổn thương hoặc mọi thứ đổi",
+      "keywords": "Kẻ ranh giới, bạn bè thoải mái, giữ khoảng cách, không mở lòng, sợ sâu hơn",
+      "strengths": "Không dễ bị cuốn; một khi mở lòng thì yêu sâu và vững",
+      "reasonDetail": "Khi không khí sắp sâu hơn mà bạn lướt nhẹ và kẻ đường",
+      "frequentSaying": "«Cứ thế này cũng ổn mà»",
+      "changeTips": "Nhận ra lúc muốn kéo khoảng cách và đặt tên: «Mình đang kẻ ranh giới»\nChia sẻ một chút lòng thật trước, xây tin từ phản ứng của họ\nĐừng tường cứng—nói tốc độ: «Muốn đi chậm nhưng mình có cảm xúc»",
+      "oneLiner": "Ranh giới là cánh cửa bảo vệ bạn. Hãy hé một khe—người đúng có thể bước vào.",
+      "shareLine": "Lý do thật sự giai đoạn mập mờ không thành yêu: Kiểu rào chắn quá mức 🚧 Càng gần càng kẻ đường trước… giống bạn quá 😭 gửi kết quả đi mình tò mò"
+    },
+    {
+      "title": "Người push-pull làm rối tín hiệu — Kiểu push-pull quá đà 🎭",
+      "typeName": "Kiểu push-pull quá đà",
+      "realReason": "Trò chơi tính toán cuối cùng che luôn cả chân thành",
+      "shortDescription": "Không phải bạn muốn giấu lòng. Chiến lược để khỏi trông dễ dãi đang làm mờ tín hiệu thật.",
+      "description": "Cố ý trả lời muộn, chỉ để dư địa, không bao giờ nhắn trước. Họ có thể đọc là «không quan tâm»—hoặc «đang quan sát lặng lẽ». Push-pull kéo dài thành thế bế tắc không ai chốt.\n\nBóc tách: không phải hết thích—cái tính «lộ lòng trước là thua» đang điều khiển",
+      "keywords": "Thử nước, cố ý trả lời muộn, làm khó, chiến lược, trì hoãn chốt",
+      "strengths": "Đọc nhịp quan hệ tốt và tạo căng vừa đủ để giữ thích lâu",
+      "reasonDetail": "Khi cả hai đều chờ bên kia động trước và tín hiệu lệch nhau",
+      "frequentSaying": "«Không thể trông dễ dãi quá»",
+      "changeTips": "Mỗi lần push-pull hỏi một lần: đây là lòng thật hay chiến lược?\nThích thì đừng cố trễ trả lời—gửi theo nhịp bình thường\nThả một câu không chiến lược như «Thật ra mình thích bạn nhiều» để đổi dòng chảy",
+      "oneLiner": "Push-pull là gia vị, không phải món chính. Một câu chân thành mạnh hơn mười vòng đẩy kéo.",
+      "shareLine": "Lý do thật sự giai đoạn mập mờ không thành yêu: Kiểu push-pull quá đà 🎭 Trò tính toán che chân thành… giống bạn quá haha. Bạn ra kiểu nào?"
+    },
+    {
+      "title": "Người vẽ hai bức tranh khác nhau — Kiểu lệch kỳ vọng 🧩",
+      "typeName": "Kiểu lệch kỳ vọng",
+      "realReason": "Quan hệ bạn muốn và quan hệ họ muốn không giống nhau",
+      "shortDescription": "Không phải thiếu duyên. Hai người hình dung tình yêu khác nhau nên cứ lệch nhau từng bước.",
+      "description": "Bạn muốn yêu chính thức; họ thích trạng thái thoải mái. Bạn mong buổi hẹn lãng mạn; họ đề xuất gặp bình thường. Kỳ vọng lệch hướng thì thích nhau cũng không tiến được. Vấn đề có thể không phải người—mà là kỳ vọng chưa bao giờ được căn chỉnh.\n\nBóc tách: không phải họ thiếu—lệch chồng chất vì chưa nói kỳ vọng ra miệng",
+      "keywords": "Chênh nhiệt độ, tốc độ quan hệ, tình yêu đã hình dung, kỳ vọng vs thực tế, hướng không khớp",
+      "strengths": "Chuẩn tình yêu rõ ràng và biết tôn trọng bản thân trong quan hệ",
+      "reasonDetail": "Khi chỉ xem phản ứng của họ mà chưa nói mình muốn quan hệ kiểu gì",
+      "frequentSaying": "«Mình muốn không phải thế này»",
+      "changeTips": "Viết ba điều bắt buộc phải có trong quan hệ mình muốn\nNhẹ nhàng nói kỳ vọng: «Mình muốn yêu kiểu này—còn bạn?»\nKhi thấy lệch, kiểm «tốc độ mỗi bên muốn» trước khi đánh giá họ",
+      "oneLiner": "Kỳ vọng không nói thì không tới. Đặt hai bức tranh cạnh nhau—có thể thấy giao điểm bất ngờ.",
+      "shareLine": "Lý do thật sự giai đoạn mập mờ không thành yêu: Kiểu lệch kỳ vọng 🧩 Hai bức tranh tình yêu khác nhau nên lệch… giống bạn—thử rồi báo mình nhé"
+    },
+    {
+      "title": "Người gấp lòng trước bằng «Mình không ổn đâu» — Kiểu thiếu tự tin 🌱",
+      "typeName": "Kiểu thiếu tự tin",
+      "realReason": "Chưa thử đã kết luận «Mình sẽ không ổn đâu»",
+      "shortDescription": "Bạn đã đủ tốt rồi. Chỉ là bạn vẫn là người cuối cùng chưa tin điều đó.",
+      "description": "Họ tỏ ra thích cũng bị bạn coi là xã giao. Sợ bị từ chối nên gấp lòng trước khi tỏ tình. Giữ khoảng cách giảm đau—và cũng giảm cơ hội thành yêu. Thường người khác đã thấy sức hút mà chính bạn chưa thấy.\n\nBóc tách: hơn cả phản ứng của họ, điểm bạn tự chấm mình đang đóng cửa trước",
+      "keywords": "Mình không ổn đâu, đọc như xã giao, gấp sớm, nghi ngờ bản thân, co lại",
+      "strengths": "Khiêm tốn, nhạy cảm với cảm xúc họ, chân thành trong quan hệ",
+      "reasonDetail": "Khi hạ thấp tín hiệu thích của họ thành «không đời nào là về mình»",
+      "frequentSaying": "«Người như mình thì ai thích?»",
+      "changeTips": "Ghi lại lời và hành động tốt của họ rồi đọc lại không nghi ngờ\nĐịnh nghĩa bị từ chối là «đã thử», không phải «hết», bắt đầu từ thử nhỏ\nGom thành tựu ngoài tình cảm để xây lại niềm tin vào bản thân",
+      "oneLiner": "Họ có thể đã thấy sức hút của bạn. Bạn tin bao nhiêu thì quan hệ đi được bấy nhiêu.",
+      "shareLine": "Lý do thật sự giai đoạn mập mờ không thành yêu: Kiểu thiếu tự tin 🌱 Gấp trước bằng «mình không ổn»… giống bạn quá 😭 bạn đã đủ tốt rồi—làm cùng mình đi"
+    }
+  ]
+}

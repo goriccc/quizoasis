@@ -1,0 +1,63 @@
+{
+  "phase3SituationshipStuckReasonTest": {
+    "startMessage": {
+      "line1": "曖昧挺順利，為什麼就是升不成正式戀愛？",
+      "line2": "聯繫也順暢，見面也開心，氣氛也不差。可是過了幾周、幾個月，關係還在原地。誰也說不出「我們在一起吧？」，有時某一天聯繫就悄悄變少了。",
+      "line3": "關係卡住的點，每個人都不一樣。可能是不夠確定，可能是錯過了開口的時機，也可能是心門關得太緊。知道自己卡在哪裡，下一步才會清楚。",
+      "line4": "彙總你在12個情境裡的反應，告訴你關係卡住的真正原因，以及怎麼跨進戀愛。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "找出真正原因",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "realReason": "升不成戀愛的真正原因",
+      "keywords": "關鍵詞",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "隱藏原因",
+      "strengths": "這個類型的優點",
+      "reasonDetail": "關係卡住的點",
+      "frequentSaying": "這個類型常說的話",
+      "changeTips": "跨進戀愛的方法",
+      "oneLiner": "一句話點評",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "看看其他測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "曖昧升不了正式戀愛的真正原因 💔 曖昧挺順利，為什麼就是升不成？你也來測！",
+      "startKakao": "曖昧升不了正式戀愛的真正原因 💔 曖昧挺順利，為什麼就是升不成？你也來測！",
+      "startWechat": "曖昧升不了正式戀愛的真正原因 💔 曖昧挺順利，為什麼就是升不成？你也來測！",
+      "startWhatsapp": "曖昧升不了正式戀愛的真正原因 💔 曖昧挺順利，為什麼就是升不成？你也來測！",
+      "startTelegram": "曖昧升不了正式戀愛的真正原因 💔 曖昧挺順利，為什麼就是升不成？你也來測！",
+      "startLine": "曖昧升不了正式戀愛的真正原因 💔 曖昧挺順利，為什麼就是升不成？你也來測！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "鏈接已複製！請到微信裡粘貼分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦 TOP5",
+      "popularTestsTop5": "🔥 近期熱門測試 TOP5"
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "The Real Reason You're Stuck in a Situationship",
+    "description": "The talking stage feels great—so why won't it turn into a real relationship? Twelve scenes reveal why things stall and how to actually move forward.",
+    "tags": ["situationship", "dating type"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "The situationship is going well—so why won't it become a relationship?",
+      "line2": "You text often, hanging out is fun, and the vibe isn't bad. Weeks or months pass and nothing changes. Neither of you can say \"Want to make it official?\"—and sometimes the messages quietly fade.",
+      "line3": "People stall for different reasons. Maybe you need more certainty, keep missing the moment to speak up, or keep the door to your heart locked. Once you know where you stop, the next step gets clearer.",
+      "line4": "Across twelve situations, we'll gather your reactions and show the real reason things stall—and how to move into a real relationship.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find the real reason",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "The real reason you can't move into a relationship",
+      "keywords": "Key keywords",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Hidden reason",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "Where the relationship stalls",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to move into a relationship",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startKakao": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startWechat": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startWhatsapp": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startTelegram": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!",
+      "startLine": "The Real Reason You're Stuck in a Situationship 💔 Talking stage is going great—why won't it become real? Try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
+  "questions": [
+    {
+      "q": "Week 3 of the talking stage. They ask, \"What are you doing this weekend?\" You:",
+      "opts": [
+        "Say \"Hmm, not sure yet~\" on purpose, leaving room and reading their reaction",
+        "Wonder if they mean hanging out with you, then answer shyly thinking \"They wouldn't ask because they like me\"",
+        "Want to meet but keep second-guessing whether locking plans now is too soon, so you stall your reply",
+        "Feel quietly deflated because the ordinary plan they floated doesn't match the romantic date you pictured"
+      ]
+    },
+    {
+      "q": "Late at night they text, \"Thought of you before bed.\" You:",
+      "opts": [
+        "Tell yourself there's no way they mean that and take it as a joke or polite fluff",
+        "Feel fluttery but can't tell if it's interest or just friendliness, so you freeze on what to say",
+        "Worry that answering right away looks too eager, so you wait a long time and reply coolly",
+        "Your heart leans in, but you don't want to cross a line, so you brush it off with \"haha thanks~\""
+      ]
+    },
+    {
+      "q": "They say, \"We've been seeing each other a lot lately.\" You:",
+      "opts": [
+        "Feel uneasy about things getting deeper, so you keep the friend line with \"Yeah, we've gotten close~\"",
+        "Want a real relationship, but they seem fine with something casual—you feel the temperature gap",
+        "Overthink whether that means situationship or just \"we've gotten closer\"",
+        "It feels like a signal and you almost bring it up, then \"let's wait a bit more\" takes over and the topic changes"
+      ]
+    },
+    {
+      "q": "One month in—it feels like time to define things. You:",
+      "opts": [
+        "Know you should talk, but keep saying \"I'll do it next hangout\" and putting it off",
+        "Worry that naming it will change everything, so you'd rather keep this easy vibe",
+        "Lack the confidence to bring it up first—rejection might make things awkward",
+        "Hold back because what they want might not match the relationship you've imagined"
+      ]
+    },
+    {
+      "q": "They ask straight up, \"So how do you feel about me?\" You:",
+      "opts": [
+        "Dodge vaguely because you're not sure your hoped-for relationship matches what they want",
+        "Draw a soft line with \"You're a great person~\"—showing everything feels like getting hurt",
+        "Say \"I'm not sure, let me think\" because even you aren't clear on your own feelings",
+        "Deliberately flip it with \"Hmm, what about you?\" and hand the answer back"
+      ]
+    },
+    {
+      "q": "Their messages have gone quiet for two days. You:",
+      "opts": [
+        "Aren't sure if their feelings changed, so you keep replaying every signal from past chats",
+        "Almost text first, then \"wait a little longer\" makes you miss the window",
+        "Assume it's because you're not good enough and keep your distance without reaching out",
+        "Match their silence so they'll be the one who starts worrying first"
+      ]
+    },
+    {
+      "q": "They suggest, \"Want to take a weekend trip next month?\" You:",
+      "opts": [
+        "Feel it's too soon to get that close, so you decline with an excuse",
+        "Say \"I'll think about it~\" to test the waters—saying yes right away might look too easy",
+        "Want to go, but \"let's go once we're closer\" drags on until their excitement cools",
+        "Say \"It'd be more fun with someone else\" because you're sure they'd be disappointed with you"
+      ]
+    },
+    {
+      "q": "A friend says, \"I think they like you.\" You:",
+      "opts": [
+        "Don't believe it—there's no way they'd be into you",
+        "Start planning to play harder to keep them hooked",
+        "Even if they like you, you start weighing whether their dating style matches what you want",
+        "Won't feel sure until you hear it from them directly—it wasn't from their mouth"
+      ]
+    },
+    {
+      "q": "For the first time, they open up about something serious. You:",
+      "opts": [
+        "Can't tell if you're special or if they vent like this to anyone",
+        "Worry you'll disappoint them because you're not great at comforting people",
+        "Feel closeness as pressure, so you keep it light with \"Hang in there~\" and hold a boundary",
+        "Almost share your feelings in that mood, decide it's not the moment, then regret it later"
+      ]
+    },
+    {
+      "q": "Three months in and nothing's changed. What's closest?",
+      "opts": [
+        "There were plenty of chances to talk—you kept saying \"next time\" and ended up here",
+        "They seem to want this easy status quo; you want a relationship—your hopes don't match",
+        "The push-and-pull is still fun, so neither of you is rushing to make it official",
+        "The closer you get, the more uncomfortable you feel, so you never opened past a certain line"
+      ]
+    },
+    {
+      "q": "They say, \"Isn't it nice just staying like this?\" You:",
+      "opts": [
+        "Want a relationship while they seem content with now—you feel you're wanting different things",
+        "Can't tell if that's a soft no, so you keep chewing on what they meant",
+        "Honestly feel safer at this comfortable distance, so you agree with \"Yeah\"",
+        "Decide you're probably not enough as a partner and fold your feelings away"
+      ]
+    },
+    {
+      "q": "Which sentence feels closest to you right now?",
+      "opts": [
+        "\"If I play hard to get, they'll like me more\"",
+        "\"I keep missing the timing to confess\"",
+        "\"The relationship I want and the one they want look different\"",
+        "\"I'm not sure how they feel about me, so I can't take the next step\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone Who Stalls Without Certainty — Uncertainty Type 🔍",
+      "typeName": "Uncertainty Type",
+      "realReason": "There are plenty of signals—but without certainty, you can't take the next step",
+      "shortDescription": "It's not that you have no feelings. You're stuck because you're not sure how they feel.",
+      "description": "You read tone, emojis, reply speed, how often you meet—every signal—and still never get a final answer. Waiting until it's certain burns time, and they might be stuck in the same wait. Certainty usually comes from checking in, not from waiting.\n\nUnpacked: it's not low interest—a 'guess that might be right' feels safer than 'confirmation that might be wrong'",
+      "keywords": "Reading signals, overthinking, waiting for clear words, discomfort with ambiguity, putting off checking in",
+      "strengths": "A careful eye for small shifts in them, and a seriousness that never treats the bond lightly",
+      "reasonDetail": "When you keep interpreting signals instead of asking how they feel directly",
+      "frequentSaying": "\"Is this even a situationship?\"",
+      "changeTips": "Instead of decoding signals, lightly ask once: \"What are we these days?\"\nRather than demanding certainty, start with your own heart: \"I want to get closer to you\"\nIn moments that need clarity, ask yourself: 'Do I need a guess right now—or a conversation?'",
+      "oneLiner": "Certainty comes from conversation, not interpretation. One question can end weeks of guessing.",
+      "shareLine": "The Real Reason You're Stuck in a Situationship: Uncertainty Type 🔍 Lots of signals, zero certainty so they can't move… omg this is so you lol. Try it with me—what will you get?"
+    },
+    {
+      "title": "Someone Who Keeps Missing the Moment — Missed-Timing Type ⏰",
+      "typeName": "Missed-Timing Type",
+      "realReason": "Your heart is decided—you just keep delaying the moment to say it",
+      "shortDescription": "It's not that you lack courage. \"Not right now\" keeps repeating until the moment is gone.",
+      "description": "Confess? Text? Make plans? While \"just a little longer\" piles up, the vibe cools and they may look elsewhere. Perfect timing never arrives—and good timing is usually obvious only after it's gone.\n\nUnpacked: not an emotion problem—a timing/execution habit of delaying to dodge the pressure of speaking",
+      "keywords": "Just a little longer, next time, hesitation, waiting it out, regret",
+      "strengths": "Thoughtful care for the other person and a refusal to impulsively wreck the bond",
+      "reasonDetail": "When a speakable moment arrives and you wave it off with \"let's wait a bit more\"",
+      "frequentSaying": "\"I'll say it next time we meet\"",
+      "changeTips": "Make a personal rule: when interest shows, express something within a week\nSkip the big confession—start with a small line like \"I'd love to see you again\"\nLock the next hangout while you're still together so \"next time\" happens less",
+      "oneLiner": "Perfect timing never comes. Three seconds of courage can spare months of regret.",
+      "shareLine": "The Real Reason You're Stuck in a Situationship: Missed-Timing Type ⏰ They keep putting off the moment to speak… this is so you lol. Three seconds of courage—try it too"
+    },
+    {
+      "title": "Someone Who Draws the Line as Things Get Close — Over-Guarded Type 🚧",
+      "typeName": "Over-Guarded Type",
+      "realReason": "The second closeness grows, you draw the emotional line first",
+      "shortDescription": "It's not that you're uninterested. When things deepen, you step back and create distance yourself.",
+      "description": "The situationship is fun—until a relationship label makes it feel heavy. So you stay in \"easy friend vibes,\" or lighten any serious mood. The boundary meant to protect you may also be blocking a good connection from walking in.\n\nUnpacked: not low chemistry—defense fires first because showing your heart feels like getting hurt or things changing",
+      "keywords": "Drawing lines, easy friend zone, keeping distance, hiding your heart, depth feels heavy",
+      "strengths": "You don't get swept easily; once you open up, the bond runs deep and steady",
+      "reasonDetail": "When the vibe turns deeper and you brush it off while drawing a line",
+      "frequentSaying": "\"Isn't this fine as it is?\"",
+      "changeTips": "Catch the urge to pull away and name it: 'I'm drawing a line right now'\nShare one small honest feeling first and build trust from their response\nInstead of a hard wall, say the pace out loud: \"I want to go slow—but I do have feelings\"",
+      "oneLiner": "A boundary is a door that protects you. Leave it open a crack and the right person can walk in.",
+      "shareLine": "The Real Reason You're Stuck in a Situationship: Over-Guarded Type 🚧 The closer it gets, the faster they draw the line… this is so you 😭 send me your result I'm curious"
+    },
+    {
+      "title": "Someone Whose Push-Pull Scrambles the Signals — Over-Playing Type 🎭",
+      "typeName": "Over-Playing Type",
+      "realReason": "Calculated games end up hiding your real feelings too",
+      "shortDescription": "It's not that you're hiding your heart. Strategy meant to not look easy is blurring your real signals.",
+      "description": "You reply late on purpose, leave just enough room, never text first. They might read that as \"not interested\"—or as \"quietly watching.\" Long games turn into a stalemate where nobody makes it official.\n\nUnpacked: not zero interest—the calculation that 'showing feelings first means I lose' is running the show",
+      "keywords": "Testing the waters, late replies on purpose, playing hard to get, strategy, delaying the label",
+      "strengths": "A sharp read on relationship flow and a knack for keeping tension that sustains interest",
+      "reasonDetail": "When you're both waiting for the other to move first and signals cross",
+      "frequentSaying": "\"I can't look too easy\"",
+      "changeTips": "Each time you play games, ask once: 'Is this my real heart—or strategy?'\nIf you like them, don't fake-delay replies—send on your normal rhythm\nDrop one unstrategic line like \"Honestly I like you a lot\" and change the flow",
+      "oneLiner": "Games are seasoning, not the main dish. One honest line beats ten rounds of push-pull.",
+      "shareLine": "The Real Reason You're Stuck in a Situationship: Over-Playing Type 🎭 Calculated games are hiding the real feelings… this is so you lol. What type will you get?"
+    },
+    {
+      "title": "Someone Drawing a Different Picture — Mismatch Type 🧩",
+      "typeName": "Mismatch Type",
+      "realReason": "The relationship you want and the one they want aren't the same",
+      "shortDescription": "It's not that there's no spark. You're each picturing a different kind of love, so you keep slipping past each other.",
+      "description": "You want a relationship; they like the easy status quo. You hope for romantic dates; they suggest something ordinary. When expectations point different ways, liking each other still won't move things forward. The issue may not be the person—but expectations you never aligned.\n\nUnpacked: not that they're lacking—misalignment stacks up because you never said the expectations out loud",
+      "keywords": "Temperature gap, relationship pace, pictured romance, expectation vs reality, mismatched direction",
+      "strengths": "Clear standards for the love you want, and a solid respect for yourself in relationships",
+      "reasonDetail": "When you only watch their reactions without saying what kind of relationship you want",
+      "frequentSaying": "\"This isn't what I was hoping for\"",
+      "changeTips": "Write your must-haves for the relationship as three non-negotiables\nLightly float expectations: \"I want this kind of dating—what about you?\"\nWhen it feels off, check 'our preferred pace' before judging them",
+      "oneLiner": "Unspoken expectations don't arrive. Lay your pictures side by side—you might find overlap.",
+      "shareLine": "The Real Reason You're Stuck in a Situationship: Mismatch Type 🧩 Different pictures of love keep you out of sync… this is so you—try it and tell me"
+    },
+    {
+      "title": "Someone Who Folds First With \"I Won't Work\" — Low-Confidence Type 🌱",
+      "typeName": "Low-Confidence Type",
+      "realReason": "Before you even try, you decide \"this won't work for me\"",
+      "shortDescription": "You're more than okay. You're just the last person still unsure of that.",
+      "description": "Even when they show interest, you call it politeness. You fold before confessing for fear of rejection. Distance lowers the hurt—and the chance of a real relationship. Often everyone else already sees the charm you still can't see.\n\nUnpacked: more than their reaction, the score you gave yourself is closing the door first",
+      "keywords": "I won't work, reading it as politeness, folding early, self-doubt, shrinking back",
+      "strengths": "Humility, sensitivity to their feelings, and a sincere way of showing up in relationships",
+      "reasonDetail": "When you downplay their interest signals as \"there's no way that's about me\"",
+      "frequentSaying": "\"Would someone like me really like me?\"",
+      "changeTips": "Note the kind things they say or do and reread them without doubting\nDefine rejection as 'I tried,' not 'it's over,' and start with tiny attempts\nCollect wins outside dating to rebuild trust in yourself",
+      "oneLiner": "They might already see your charm. The more you believe it, the further the relationship can go.",
+      "shareLine": "The Real Reason You're Stuck in a Situationship: Low-Confidence Type 🌱 They fold first with \"I won't work\"… this is so you 😭 you're already enough—try it with me"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "phase3SituationshipStuckReasonTest": {
+    "startMessage": {
+      "line1": "Situationship-nya enak—kenapa tak jadi pacaran?",
+      "line2": "Chat lancar, ketemu seru, vibes-nya oke. Minggu atau bulan berlalu, status tetap di situ. Tak ada yang bilang «Mau resmi?», kadang chat pelan-pelan sepi.",
+      "line3": "Tiap orang macet di titik berbeda. Bisa kurang keyakinan, melewatkan momen bicara, atau menutup pintu hati terlalu rapat. Tahu di mana kamu berhenti, langkah berikutnya lebih jelas.",
+      "line4": "Dari dua belas situasi, kami kumpulkan reaksi kamu untuk menunjukkan alasan sebenarnya—dan cara naik ke pacaran.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Mulai tes",
+      "startTest": "Cari alasan sebenarnya",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Alasan sebenarnya belum jadi pacaran",
+      "keywords": "Kata kunci utama",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan tersembunyi",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Titik hubungan macet",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara naik ke pacaran",
+      "oneLiner": "Satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startKakao": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startWechat": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startWhatsapp": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startTelegram": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  }
+}

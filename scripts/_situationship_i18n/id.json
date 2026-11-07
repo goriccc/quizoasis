@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Alasan Sebenarnya Situationship Tak Jadi Pacaran",
+    "description": "Hubungan abu-abu jalan mulus—kenapa tak naik ke pacaran? Dua belas situasi mengungkap kenapa hubungan macet dan cara benar-benar maju.",
+    "tags": ["situationship", "tipe pacaran"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Situationship-nya enak—kenapa tak jadi pacaran?",
+      "line2": "Chat lancar, ketemu seru, vibes-nya oke. Minggu atau bulan berlalu, status tetap di situ. Tak ada yang bilang «Mau resmi?», kadang chat pelan-pelan sepi.",
+      "line3": "Tiap orang macet di titik berbeda. Bisa kurang keyakinan, melewatkan momen bicara, atau menutup pintu hati terlalu rapat. Tahu di mana kamu berhenti, langkah berikutnya lebih jelas.",
+      "line4": "Dari dua belas situasi, kami kumpulkan reaksi kamu untuk menunjukkan alasan sebenarnya—dan cara naik ke pacaran.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Mulai tes",
+      "startTest": "Cari alasan sebenarnya",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Alasan sebenarnya belum jadi pacaran",
+      "keywords": "Kata kunci utama",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan tersembunyi",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Titik hubungan macet",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara naik ke pacaran",
+      "oneLiner": "Satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startKakao": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startWechat": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startWhatsapp": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startTelegram": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!",
+      "startLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran 💔 Hubungan abu-abu enak—kenapa tak resmi? Coba deh!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  },
+  "questions": [
+    {
+      "q": "Minggu ketiga situationship. Dia tanya, «Akhir pekan ini ngapain?» Kamu:",
+      "opts": [
+        "Sengaja bilang «Hmm, belum tahu~», kasih ruang dan baca reaksi dia",
+        "Mikiran apa dia maksudnya ketemu kamu, lalu jawab ragu karena «Pasti bukan karena suka aku»",
+        "Pengin ketemu tapi ragu janji sekarang keburu cepat, jadi nunda balasan",
+        "Agak kempis karena rencana biasa yang dia lempar beda dari kencan romantis yang kamu bayangkan"
+      ]
+    },
+    {
+      "q": "Larut malam dia kirim, «Sebelum tidur kepikiran kamu.» Kamu:",
+      "opts": [
+        "Bilang ke diri sendiri mustahil itu serius, anggap candaan atau basa-basi",
+        "Deg-degan tapi tak yakin itu ketertarikan atau sekadar ramah, bingung mau balas apa",
+        "Takut balas cepat kelihatan terlalu gampang, jadi nunggu lama lalu balas seolah santai",
+        "Hati condong, tapi tak mau lewat batas, jadi lewatkan dengan «wkwk makasih~»"
+      ]
+    },
+    {
+      "q": "Dia bilang, «Belakangan kita sering ketemu ya.» Kamu:",
+      "opts": [
+        "Takut makin dalam, jaga garis teman dengan «Iya, kita jadi deket~»",
+        "Kamu mau pacaran, dia sepertinya nyaman yang santai—kamu rasain beda suhu",
+        "Kepala penuh menafsir: situationship atau cuma «kita makin akrab»?",
+        "Seperti sinyal, hampir buka topik, lalu «tunggu dikit lagi» dan topik berganti"
+      ]
+    },
+    {
+      "q": "Satu bulan—saatnya memperjelas status. Kamu:",
+      "opts": [
+        "Tahu harus bicara, tapi terus «Nanti pas ketemu lagi» dan ditunda",
+        "Khawatir memberi nama mengubah segalanya, lebih suka jaga vibe enak ini",
+        "Kurang percaya diri buka duluan—ditolak bisa canggung",
+        "Menahan karena yang dia mau mungkin beda dari hubungan yang kamu bayangkan"
+      ]
+    },
+    {
+      "q": "Dia tanya langsung, «Kamu ngerasa apa soal aku?» Kamu:",
+      "opts": [
+        "Menghindari dengan jawaban abu-abu karena tak yakin harapan kalian cocok",
+        "Tarik garis lembut «Kamu orang baik~»—takut terbuka penuh lalu sakit hati",
+        "Bilang «Belum yakin, biar aku pikir dulu» karena kau sendiri belum jelas",
+        "Sengaja balik tanya «Hmm, kalau kamu?» dan lempar jawabannya ke dia"
+      ]
+    },
+    {
+      "q": "Chat dia sepi dua hari. Kamu:",
+      "opts": [
+        "Tak yakin perasaannya berubah, terus putar ulang sinyal dari chat lama",
+        "Hampir chat duluan, lalu «tunggu dikit lagi» membuatmu melewatkan momen",
+        "Anggap karena kamu kurang oke, jadi tak hubungi dan jaga jarak",
+        "Ikut kurangi chat biar dia yang lebih dulu khawatir"
+      ]
+    },
+    {
+      "q": "Dia usul, «Bulan depan akhir pekan mau trip bareng?» Kamu:",
+      "opts": [
+        "Merasa terlalu cepat sedekat itu, tolak dengan alasan",
+        "Bilang «Nanti aku pikir~» untuk jajaki—langsung ya takut kelihatan gampang",
+        "Pengin pergi tapi «nanti kalau lebih deket» berlarut sampai semangatnya dingin",
+        "Bilang «Lebih seru sama orang lain» karena yakin dia bakal kecewa sama kamu"
+      ]
+    },
+    {
+      "q": "Teman bilang, «Kayaknya dia suka kamu deh.» Kamu:",
+      "opts": [
+        "Suka aku? Mustahil, tak percaya",
+        "Mulai rancang main sulit biar dia makin penasaran",
+        "Meski suka, kamu mulai timbang apakah gaya pacarannya cocok dengan yang kamu mau",
+        "Tak akan yakin sampai dengar langsung dari mulutnya"
+      ]
+    },
+    {
+      "q": "Pertama kalinya dia curhat serius. Kamu:",
+      "opts": [
+        "Tak bisa pastikan kamu spesial atau dia cerita ke siapa saja",
+        "Khawatir mengecewakan karena kamu kurang jago menghibur",
+        "Kedekatan terasa berat, jadi terima ringan «Semangat~» dan jaga batas",
+        "Hampir bilang perasaan di suasana itu, rasa belum saatnya, lalu menyesal kemudian"
+      ]
+    },
+    {
+      "q": "Tiga bulan situationship dan tak berubah. Mana yang paling dekat?",
+      "opts": [
+        "Kesempatan bicara sudah berkali-kali—kamu terus «nanti» sampai di sini",
+        "Dia sepertinya suka status nyaman ini; kamu mau pacaran—harapan tak cocok",
+        "Push-pull masih seru, jadi belum ada yang buru-buru resmi",
+        "Makin dekat makin tak nyaman, jadi hati tak pernah dibuka lewat garis tertentu"
+      ]
+    },
+    {
+      "q": "Dia bilang, «Begini aja enak kan?» Kamu:",
+      "opts": [
+        "Kamu mau pacaran sementara dia puas sekarang—merasa kalian mau hal berbeda",
+        "Tak yakin itu penolakan lembut, jadi terus mengunyah artinya",
+        "Jujur jarak nyaman ini terasa aman, jadi setuju «Iya»",
+        "Putuskan kamu kurang cukup sebagai pasangan dan lipat perasaanmu"
+      ]
+    },
+    {
+      "q": "Kalimat mana yang paling dekat denganmu sekarang?",
+      "opts": [
+        "«Kalau main sulit, dia akan lebih suka aku»",
+        "«Aku terus melewatkan timing buat ngungkapin»",
+        "«Pacaran yang aku mau dan hubungan yang dia mau kelihatan beda»",
+        "«Aku tak yakin dia ngerasa apa soal aku, jadi tak bisa ambil langkah»"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang Macet Tanpa Keyakinan — Tipe Kurang Keyakinan 🔍",
+      "typeName": "Tipe Kurang Keyakinan",
+      "realReason": "Sinyalnya banyak—tapi tanpa kepastian kamu tak bisa ambil langkah",
+      "shortDescription": "Bukan karena kamu tak punya perasaan. Kamu macet karena belum yakin dia merasa apa.",
+      "description": "Kamu baca nada, emoji, kecepatan balas, seberapa sering ketemu—semua sinyal—dan tetap tak dapat jawaban final. Menunggu sampai pasti menghabiskan waktu, dan dia mungkin terjebak di tunggu yang sama. Keyakinan biasanya datang dari mengecek, bukan menunggu.\n\nDibongkar: bukan minat rendah—«tebakan yang mungkin benar» terasa lebih aman daripada «konfirmasi yang bisa salah»",
+      "keywords": "Membaca sinyal, overthinking, menunggu kata jelas, tak nyaman dengan abu-abu, menunda cek-in",
+      "strengths": "Mata teliti pada perubahan kecil di dia, dan kesungguhan yang tak meremehkan hubungan",
+      "reasonDetail": "Saat kamu terus menafsir sinyal alih-alih bertanya langsung bagaimana perasaannya",
+      "frequentSaying": "«Ini situationship ya?»",
+      "changeTips": "Alih-alih decode sinyal, tanya ringan sekali: «Kita lagi apa akhir-akhir ini?»\nDaripada menuntut kepastian, mulai dari hatimu: «Aku pengin lebih deket sama kamu»\nDi momen butuh kejelasan, tanya diri: «Sekarang aku butuh tebakan—atau percakapan?»",
+      "oneLiner": "Keyakinan datang dari percakapan, bukan penafsiran. Satu pertanyaan bisa mengakhiri berminggu-minggu menebak.",
+      "shareLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran: Tipe Kurang Keyakinan 🔍 Sinyal banyak tapi tak yakin jadi stuck… anjir ini banget kamu wkwk. Coba bareng aku—kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang Terus Melewatkan Momen — Tipe Melewatkan Timing ⏰",
+      "typeName": "Tipe Melewatkan Timing",
+      "realReason": "Hati sudah mantap—kamu hanya terus menunda momen mengatakannya",
+      "shortDescription": "Bukan karena kurang berani. «Belum sekarang» berulang sampai momennya hilang.",
+      "description": "Nyatakan? Chat? Buat janji? Sementara «tunggu dikit lagi» menumpuk, vibes dingin dan dia mungkin lihat ke tempat lain. Timing sempurna tak pernah datang—timing bagus biasanya baru jelas setelah lewat.\n\nDibongkar: bukan masalah emosi—kebiasaan menunda eksekusi untuk menghindari tekanan bicara",
+      "keywords": "Dikit lagi, lain kali, ragu, menunggu, penyesalan",
+      "strengths": "Teliti merawat orang lain dan menolak merusak hubungan secara impulsif",
+      "reasonDetail": "Saat momen bisa bicara datang lalu kamu lewati dengan «tunggu dikit lagi»",
+      "frequentSaying": "«Nanti pas ketemu lagi aku bilang»",
+      "changeTips": "Buat aturan pribadi: kalau ada sinyal minat, ungkapkan sesuatu dalam seminggu\nSkip pengakuan besar—mulai dari baris kecil seperti «Pengin ketemu lagi»\nKunci hangout berikutnya saat masih bareng supaya «nanti» lebih jarang",
+      "oneLiner": "Timing sempurna tak datang. Tiga detik keberanian bisa mengurangi berbulan-bulan penyesalan.",
+      "shareLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran: Tipe Melewatkan Timing ⏰ Terus nunda momen bicara… ini banget kamu wkwk. Tiga detik keberanian—coba juga ya"
+    },
+    {
+      "title": "Orang yang Menarik Batas Saat Dekat — Tipe Terlalu Berbatas 🚧",
+      "typeName": "Tipe Terlalu Berbatas",
+      "realReason": "Begitu kedekatan tumbuh, kamu tarik garis emosional duluan",
+      "shortDescription": "Bukan karena tak tertarik. Saat hubungan mendalam, kamu mundur sendiri dan buat jarak.",
+      "description": "Situationship seru—sampai label hubungan membuatnya berat. Jadi kamu tinggal di «vibes teman enak», atau meringankan suasana serius. Batas yang melindungi bisa juga menutup pintu koneksi bagus.\n\nDibongkar: bukan kimia rendah—pertahanan menyala dulu karena takut terbuka lalu sakit atau semuanya berubah",
+      "keywords": "Menarik garis, zona teman enak, jaga jarak, tutup hati, kedalaman terasa berat",
+      "strengths": "Tak mudah terbawa; begitu terbuka, hubungannya dalam dan stabil",
+      "reasonDetail": "Saat vibes makin dalam lalu kamu lewatkan ringan sambil menarik garis",
+      "frequentSaying": "«Begini aja enak kan?»",
+      "changeTips": "Tangkap dorongan menjauh dan beri nama: «Aku lagi menarik garis»\nBagikan satu perasaan kecil dulu dan bangun kepercayaan dari responsnya\nAlih-alih tembok keras, ucapkan tempo: «Aku mau pelan—tapi aku punya perasaan»",
+      "oneLiner": "Batas adalah pintu yang melindungi. Biarkan terbuka sedikit—orang yang tepat bisa masuk.",
+      "shareLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran: Tipe Terlalu Berbatas 🚧 Makin dekat makin cepat tarik garis… ini banget kamu 😭 kirim hasilnya dong penasaran"
+    },
+    {
+      "title": "Orang yang Push-Pull Mengacak Sinyal — Tipe Terlalu Banyak Game 🎭",
+      "typeName": "Tipe Terlalu Banyak Game",
+      "realReason": "Permainan yang dihitung justru menyembunyikan perasaan aslimu",
+      "shortDescription": "Bukan karena mau menyembunyikan hati. Strategi biar tak kelihatan gampang justru mengaburkan sinyal asli.",
+      "description": "Sengaja balas lambat, sisakan ruang, tak pernah chat duluan. Dia bisa baca «tak tertarik»—atau «diam-diam mengamati». Game panjang jadi kebuntuan di mana tak ada yang resmi.\n\nDibongkar: bukan nol minat—kalkulasi «tunjukkan perasaan dulu = kalah» yang menjalankan show",
+      "keywords": "Menjajaki, sengaja balas lambat, main sulit, strategi, menunda label",
+      "strengths": "Baca alur hubungan tajam dan jago menjaga ketegangan yang mempertahankan minat",
+      "reasonDetail": "Saat kalian saling menunggu lawan bergerak dulu dan sinyal bersilangan",
+      "frequentSaying": "«Jangan kelihatan terlalu gampang»",
+      "changeTips": "Tiap kali main game, tanya sekali: «Ini hati asli—atau strategi?»\nKalau suka, jangan tipu-tunda balasan—kirim di ritme normalmu\nLempar satu baris tanpa strategi seperti «Sejujurnya aku suka banget sama kamu» dan ubah alur",
+      "oneLiner": "Game itu bumbu, bukan hidangan utama. Satu baris jujur mengalahkan sepuluh putaran push-pull.",
+      "shareLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran: Tipe Terlalu Banyak Game 🎭 Game yang dihitung menutupi perasaan asli… ini banget kamu wkwk. Kamu dapat tipe apa?"
+    },
+    {
+      "title": "Orang yang Menggambar Gambar Berbeda — Tipe Ekspektasi Tak Cocok 🧩",
+      "typeName": "Tipe Ekspektasi Tak Cocok",
+      "realReason": "Hubungan yang kamu mau dan yang dia mau tidak sama",
+      "shortDescription": "Bukan karena tak ada spark. Kalian membayangkan cinta berbeda, jadi terus saling meleset.",
+      "description": "Kamu mau pacaran; dia suka status quo nyaman. Kamu harap kencan romantis; dia usulkan yang biasa. Saat ekspektasi arahnya beda, saling suka pun tak maju. Masalahnya mungkin bukan orangnya—tapi ekspektasi yang tak pernah diselaraskan.\n\nDibongkar: bukan dia kurang—ketidakselarasan menumpuk karena ekspektasi tak pernah diucapkan",
+      "keywords": "Beda suhu, tempo hubungan, romance yang dibayangkan, ekspektasi vs realita, arah tak cocok",
+      "strengths": "Standar jelas soal cinta yang diinginkan, dan hormat pada diri dalam hubungan",
+      "reasonDetail": "Saat kamu hanya melihat reaksi dia tanpa bilang jenis hubungan yang kamu mau",
+      "frequentSaying": "«Bukan ini yang aku harapkan»",
+      "changeTips": "Tulis must-have hubunganmu jadi tiga non-negotiable\nLempar ekspektasi ringan: «Aku mau pacaran kayak gini—kamu gimana?»\nSaat terasa off, cek «tempo yang kita mau» sebelum menilai dia",
+      "oneLiner": "Ekspektasi yang tak diucapkan tak sampai. Letakkan gambar kalian berdampingan—bisa jadi ada irisan.",
+      "shareLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran: Tipe Ekspektasi Tak Cocok 🧩 Gambar cinta beda jadi tak sinkron… ini banget kamu—coba terus kasih tau aku"
+    },
+    {
+      "title": "Orang yang Lipat Duluan dengan «Aku Nggak Bakal Bisa» — Tipe Kurang Percaya Diri 🌱",
+      "typeName": "Tipe Kurang Percaya Diri",
+      "realReason": "Sebelum mencoba, kamu sudah putuskan «ini nggak bakal jalan buat aku»",
+      "shortDescription": "Kamu lebih dari oke. Kamu hanya orang terakhir yang masih belum yakin itu.",
+      "description": "Meski dia tunjukkan minat, kamu bilang itu basa-basi. Kamu lipat sebelum ngungkapin karena takut ditolak. Jarak menurunkan sakit—dan peluang pacaran. Sering orang lain sudah melihat pesona yang kamu sendiri belum lihat.\n\nDibongkar: lebih dari reaksi dia, skor yang kamu beri ke diri sendiri menutup pintu duluan",
+      "keywords": "Aku nggak bakal bisa, baca sebagai basa-basi, lipat dini, keraguan diri, menyusut",
+      "strengths": "Rendah hati, peka pada perasaan dia, dan tulus hadir dalam hubungan",
+      "reasonDetail": "Saat kamu merendahkan sinyal minatnya jadi «mustahil itu tentang aku»",
+      "frequentSaying": "«Orang kayak aku bakalan disuka?»",
+      "changeTips": "Catat kata dan tindakan baik yang dia berikan dan baca ulang tanpa ragu\nDefinisikan penolakan sebagai «aku sudah coba», bukan «selesai», mulai dari percobaan kecil\nKumpulkan pencapaian di luar pacaran untuk membangun kembali kepercayaan pada diri",
+      "oneLiner": "Dia mungkin sudah melihat pesonamu. Semakin kamu percaya, semakin jauh hubungan bisa berjalan.",
+      "shareLine": "Alasan Sebenarnya Situationship Tak Jadi Pacaran: Tipe Kurang Percaya Diri 🌱 Lipat duluan dengan «aku nggak bisa»… ini banget kamu 😭 kamu sudah cukup oke—coba bareng aku"
+    }
+  ]
+}

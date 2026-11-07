@@ -203,6 +203,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3HurtfulToneTop3TestClient'),
   },
+
+  'phase3-situationship-stuck-reason': {
+    slug: 'phase3-situationship-stuck-reason',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_SITUATIONSHIP_STUCK_META } = await import('./phase3SituationshipStuckReasonData');
+      return {
+        title: PHASE3_SITUATIONSHIP_STUCK_META.title,
+        description: PHASE3_SITUATIONSHIP_STUCK_META.description,
+        tags: PHASE3_SITUATIONSHIP_STUCK_META.tags,
+        thumbnail: 'p3_test_situationship_stuck_reason.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3SituationshipStuckReasonData');
+      return {
+        questions: mod.phase3SituationshipStuckQuestions,
+        results: mod.phase3SituationshipStuckResults,
+        meta: {
+          title: mod.PHASE3_SITUATIONSHIP_STUCK_META.title,
+          description: mod.PHASE3_SITUATIONSHIP_STUCK_META.description,
+          tags: mod.PHASE3_SITUATIONSHIP_STUCK_META.tags,
+          thumbnail: 'p3_test_situationship_stuck_reason.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3SituationshipStuckReasonTest',
+        messagesFileSlug: 'phase3-situationship-stuck-reason',
+      };
+    },
+    loadClient: () => import('@/components/Phase3SituationshipStuckReasonTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {
