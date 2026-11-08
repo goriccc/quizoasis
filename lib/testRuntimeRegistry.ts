@@ -240,6 +240,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3SituationshipStuckReasonTestClient'),
   },
+
+  'phase3-fairytale-hero': {
+    slug: 'phase3-fairytale-hero',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_FAIRYTALE_HERO_META } = await import('./phase3FairytaleHeroData');
+      return {
+        title: PHASE3_FAIRYTALE_HERO_META.title,
+        description: PHASE3_FAIRYTALE_HERO_META.description,
+        tags: PHASE3_FAIRYTALE_HERO_META.tags,
+        thumbnail: 'p3_test_fairytale_hero.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3FairytaleHeroData');
+      return {
+        questions: mod.phase3FairytaleHeroQuestions,
+        results: mod.phase3FairytaleHeroResults,
+        meta: {
+          title: mod.PHASE3_FAIRYTALE_HERO_META.title,
+          description: mod.PHASE3_FAIRYTALE_HERO_META.description,
+          tags: mod.PHASE3_FAIRYTALE_HERO_META.tags,
+          thumbnail: 'p3_test_fairytale_hero.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3FairytaleHeroTest',
+        messagesFileSlug: 'phase3-fairytale-hero',
+      };
+    },
+    loadClient: () => import('@/components/Phase3FairytaleHeroTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

@@ -1,0 +1,63 @@
+{
+  "phase3FairytaleHeroTest": {
+    "startMessage": {
+      "line1": "如果活成童話主角，我會是誰？",
+      "line2": "用等待發光的人、自由飛翔的人、為愛鼓起勇氣的人。童話主角們各自用不同的方式去愛。吸引你的故事裡，藏著你戀愛的氣質。",
+      "line3": "在12個場景裡選出最像你的反應。我們會告訴你專屬的童話主角和戀愛風格——無論結果是誰，都按優點來解讀。",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "找到我的主角 📖",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似的其他測試",
+      "realReason": "我的童話主角",
+      "keywords": "魅力點",
+      "scoreTitle": "各類型分數",
+      "scoreUnit": "分",
+      "hiddenReason": "一同藏著的故事",
+      "strengths": "發光的瞬間",
+      "reasonDetail": "要注意的點",
+      "frequentSaying": "卡片文案",
+      "changeTips": "戀愛一句Tips",
+      "oneLiner": "一句話評價",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "看看其他測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "童話裡的我是哪個主角？📖 我是灰姑娘？彼得潘？你也來測！",
+      "startKakao": "童話裡的我是哪個主角？📖 我是灰姑娘？彼得潘？你也來測！",
+      "startWechat": "童話裡的我是哪個主角？📖 我是灰姑娘？彼得潘？你也來測！",
+      "startWhatsapp": "童話裡的我是哪個主角？📖 我是灰姑娘？彼得潘？你也來測！",
+      "startTelegram": "童話裡的我是哪個主角？📖 我是灰姑娘？彼得潘？你也來測！",
+      "startLine": "童話裡的我是哪個主角？📖 我是灰姑娘？彼得潘？你也來測！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "鏈接已複製！請到微信粘貼分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，請稍後再試。",
+      "kakaoError": "KakaoTalk分享時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦TOP5",
+      "popularTestsTop5": "🔥 近期熱門測試TOP5"
+    }
+  }
+}

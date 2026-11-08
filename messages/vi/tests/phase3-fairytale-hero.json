@@ -1,0 +1,63 @@
+{
+  "phase3FairytaleHeroTest": {
+    "startMessage": {
+      "line1": "Nếu sống như nhân vật cổ tích, bạn sẽ là ai?",
+      "line2": "Người tỏa sáng nhờ chờ đợi, người bay tự do, người dám yêu dũng cảm. Các nhân vật cổ tích yêu theo cách riêng. Câu chuyện cuốn bạn vào chính là chất liệu tình yêu của bạn.",
+      "line3": "Hãy chọn phản ứng giống bạn nhất trong 12 phân cảnh. Chúng tôi sẽ cho biết nhân vật cổ tích và phong cách yêu của bạn—mọi kết quả đều được đọc theo hướng điểm mạnh.",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm nhân vật của tôi 📖",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Nhân vật cổ tích của bạn",
+      "keywords": "Điểm cuốn hút",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Câu chuyện cùng hiện diện",
+      "strengths": "Khoảnh khắc tỏa sáng",
+      "reasonDetail": "Điểm cần lưu ý",
+      "frequentSaying": "Dòng trên thẻ",
+      "changeTips": "Một tip yêu",
+      "oneLiner": "Nhận xét một dòng",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startKakao": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startWechat": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startWhatsapp": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startTelegram": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startLine": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào bộ nhớ tạm!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

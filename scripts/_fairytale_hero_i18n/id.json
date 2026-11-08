@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Di Dongeng, Kamu Tokoh Mana?",
+    "description": "Kalau hidup sebagai tokoh dongeng, kamu siapa? Dua belas adegan akan ungkap tokoh dongeng dan gaya pacaranmu.",
+    "tags": ["tokoh dongeng"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Kalau hidup sebagai tokoh dongeng, kamu siapa?",
+      "line2": "Yang bersinar lewat menunggu, yang terbang bebas, yang berani demi cinta. Tokoh dongeng masing-masing mencintai dengan caranya. Cerita yang menarikmu menyimpan corak caramu mencintai.",
+      "line3": "Pilih reaksi yang paling mirip dirimu di dua belas adegan. Kami akan tunjukkan tokoh dongeng dan gaya pacaranmu—setiap hasil dibaca sebagai kelebihan.",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Temukan tokohku 📖",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Tokoh dongengmu",
+      "keywords": "Poin daya tarik",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Cerita yang ikut bersarang",
+      "strengths": "Momen yang bersinar",
+      "reasonDetail": "Yang perlu diwaspadai",
+      "frequentSaying": "Kalimat kartu",
+      "changeTips": "Satu tips pacaran",
+      "oneLiner": "Dalam satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startKakao": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startWechat": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startWhatsapp": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startTelegram": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startLine": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  },
+  "questions": [
+    {
+      "q": "Chat dari orang yang lagi PDKT jadi jarang. Kamu?",
+      "opts": [
+        "Sisihkan khawatir dulu dan fokus ke hal yang bikin senang",
+        "Percaya dia orang baik dan minta pendapat orang sekitar",
+        "Mikir-mikir, di balik sikap itu mungkin ada alasan lain",
+        "Hubungi duluan dan ajak ketemuan"
+      ]
+    },
+    {
+      "q": "Masa sulit terus berlanjut. Kamu?",
+      "opts": [
+        "Percaya hari baik akan datang dan diam-diam terus jalan",
+        "Simpan rasa berat di dalam dan bertahan demi yang berharga",
+        "Coba jalur baru untuk cari jalan keluar",
+        "Minta bantuan orang sekitar dan bangkit lagi"
+      ]
+    },
+    {
+      "q": "Orang yang kamu suka bersikap dingin. Kamu?",
+      "opts": [
+        "Yakin pasti ada alasan dan tetap di dekatnya mengamati",
+        "Tetap jalankan peranmu dengan setia di sampingnya dan menunggu",
+        "Tidak terlalu dipikirkan, jalani dengan ringan",
+        "Ingin menyampaikan perasaan tapi ragu memilih kata"
+      ]
+    },
+    {
+      "q": "Memilih tempat kencan pertama. Kamu?",
+      "opts": [
+        "Mengajak eksplor tempat yang belum pernah dikunjungi",
+        "Pilih tempat seru seperti taman hiburan",
+        "Pilih tempat tenang di laut atau danau yang bikin hati bergetar",
+        "Pilih tempat nyaman supaya pasangan mudah membuka hati"
+      ]
+    },
+    {
+      "q": "Pasangan tidak paham perasaanmu. Kamu?",
+      "opts": [
+        "Coba tunjukkan hati lewat tindakan, bukan kata",
+        "Tetap di samping sampai hati saling paham, meski butuh waktu",
+        "Percaya suatu hari dia akan paham dan terus memberikan perhatian",
+        "Percaya bicara jujur akan membuatnya paham, lalu ngobrol"
+      ]
+    },
+    {
+      "q": "Tanggung jawab dalam hubungan tiba-tiba membesar. Kamu?",
+      "opts": [
+        "Ingin menunda—kebebasan sekarang masih terasa enak",
+        "Takut, tapi melangkah maju dan menghadapinya",
+        "Diskusi dengan orang yang dipercaya dan lewati bersama",
+        "Siapkan dengan tenang dan tanggung bagianmu"
+      ]
+    },
+    {
+      "q": "Kamu melihat kekurangan pasangan. Kamu?",
+      "opts": [
+        "Lihat sisi baik dulu dan coba percaya",
+        "Diam-diam peduli sambil tetap merangkul kekurangannya",
+        "Langsung tanya yang membuat penasaran",
+        "Merasa dia tetap menarik apa adanya, jadi dilewatkan ringan"
+      ]
+    },
+    {
+      "q": "Janji penting dilanggar. Kamu?",
+      "opts": [
+        "Kecewa tapi kumpulkan diri dan tunggu kesempatan berikutnya",
+        "Dengarkan alasannya dengan tenang dan coba pahami posisinya",
+        "Curhat ke orang yang dipercaya dan terima penghiburan",
+        "Ingin selesaikan langsung, jadi datang menemuinya"
+      ]
+    },
+    {
+      "q": "Di situasi diperkenalkan dengan orang baru. Kamu?",
+      "opts": [
+        "Penuh rasa ingin tahu dan menyapa duluan",
+        "Siapkan diri rapi dan ngobrol dengan tenang",
+        "Hangatkan suasana dengan candaan iseng",
+        "Amati dengan hati-hati dan buka hati pelan-pelan"
+      ]
+    },
+    {
+      "q": "Kalau cinta mengharuskan melepaskan sesuatu? Kamu?",
+      "opts": [
+        "Dengan senang hati menyerahkan milikmu demi orang berharga",
+        "Cari cara saling membantu dan selesaikan bersama",
+        "Pilih menjaga yang tulus, bukan penampilan",
+        "Daripada melepaskan, cari jalan lain yang lebih menyenangkan"
+      ]
+    },
+    {
+      "q": "Setelah bertengkar, cara berdamaimu? Kamu?",
+      "opts": [
+        "Dengarkan sampai paham isi hatinya yang sebenarnya",
+        "Datang duluan, minta maaf jujur, dan coba selesaikan",
+        "Sedikit bicara, tapi tunjukkan hati lewat tindakan kecil",
+        "Beri waktu dan tunggu kesempatan bicara lagi dengan tenang"
+      ]
+    },
+    {
+      "q": "Kalimat mana yang paling dekat dengan pandangan pacaranmu sekarang?",
+      "opts": [
+        "\"Percaya orang dan buka hati, hal baik akan datang\"",
+        "\"Pacaran juga harus senang dan bebas biar awet\"",
+        "\"Tunggu dengan baik, jodoh yang tepat akan datang\"",
+        "\"Lihat dalam, bukan luar—di situ cinta sejati terlihat\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang diam-diam menjaga kebaikan sampai saatnya tiba, Cinderella 👠",
+      "typeName": "Cinderella",
+      "realReason": "Orang yang diam-diam menjaga kebaikan sampai saatnya tiba",
+      "shortDescription": "Kamu adalah orang yang tidak kehilangan harapan dan martabat meski sedang sulit.",
+      "description": "Gaya pacaran: Membangun perasaan dengan setia dan terus memberi perhatian sampai koneksi yang tepat datang.",
+      "keywords": "kesabaran, hati baik, martabat yang kokoh",
+      "strengths": "Momen hati akhirnya saling sampai setelah menunggu",
+      "reasonDetail": "Bukan hanya menunggu—cobalah ambil satu langkah duluan",
+      "frequentSaying": "\"Hati yang baik akhirnya membuka jalan\"",
+      "changeTips": "Berani kirim sinyal kecil duluan",
+      "oneLiner": "Kekuatan menunggu itu besar. Satu kalimat yang kamu berikan duluan bisa mempercepat saatnya",
+      "shareLine": "Di Dongeng, Kamu Tokoh Mana? Cinderella 👠 Aku Cinderella haha—kebaikan membuka jalan. Kamu siapa?"
+    },
+    {
+      "title": "Orang yang terbang bebas dan senang, Peter Pan 🧚",
+      "typeName": "Peter Pan",
+      "realReason": "Orang yang terbang bebas dan senang",
+      "shortDescription": "Bersamamu, hari biasa terasa ringan seperti petualangan.",
+      "description": "Gaya pacaran: Bertemu tanpa mengikat dan membuat momen bersama jadi seru.",
+      "keywords": "kelucuan, energi cerah, hati murni",
+      "strengths": "Perjalanan bersama, momen saat suasana meredup",
+      "reasonDetail": "Jangan sepelekan percakapan yang butuh tanggung jawab",
+      "frequentSaying": "\"Hari ini juga terbang dengan senang\"",
+      "changeTips": "Tepati janji dan balasan chat—meski ringan, tetap tepati",
+      "oneLiner": "Semangat bebas itu menarik. Ukirlah janji penting di hati",
+      "shareLine": "Di Dongeng, Kamu Tokoh Mana? Peter Pan 🧚 Aku Peter Pan haha—terbang bebas. Kamu siapa?"
+    },
+    {
+      "title": "Orang yang mengeluarkan keberanian besar demi cinta, Putri duyung 🧜",
+      "typeName": "Putri duyung",
+      "realReason": "Orang yang mengeluarkan keberanian besar demi cinta",
+      "shortDescription": "Kamu mencintai sedalam sampai rela mempertaruhkan seluruh hati.",
+      "description": "Gaya pacaran: Dengan senang hati menuangkan hati dan usaha untuk orang yang berharga.",
+      "keywords": "ketulusan dalam, pengabdian, kepekaan romantis",
+      "strengths": "Pengakuan yang menyerahkan hati, momen melangkah demi pasangan",
+      "reasonDetail": "Sampaikan perasaan yang belum terucap baris demi baris agar tidak jadi salah paham",
+      "frequentSaying": "\"Aku mencintaimu dengan sepenuh hati\"",
+      "changeTips": "Sampaikan hati dengan kata, bukan hanya tindakan",
+      "oneLiner": "Pengabdian adalah kekuatan besar. Pastikan suara hatimu juga terdengar",
+      "shareLine": "Di Dongeng, Kamu Tokoh Mana? Putri duyung 🧜 Aku Putri duyung haha—mencintai dengan sepenuh hati. Kamu siapa?"
+    },
+    {
+      "title": "Orang yang percaya dengan murni dan bangkit bersama, Putri Salju 🍎",
+      "typeName": "Putri Salju",
+      "realReason": "Orang yang percaya dengan murni dan bangkit bersama",
+      "shortDescription": "Kepercayaanmu yang jernih pada orang membuat sekitar jadi hangat.",
+      "description": "Gaya pacaran: Melihat sisi baik pasangan dulu dan merawat hubungan bersama orang di sekitarmu.",
+      "keywords": "kemurnian, kepercayaan, daya tarik yang ramah",
+      "strengths": "Pertemuan baru, momen berbagi hati saat sulit",
+      "reasonDetail": "Seiring percaya, jaga juga keseimbangan dengan sekali mengecek fakta",
+      "frequentSaying": "\"Hati yang percaya mengumpulkan orang\"",
+      "changeTips": "Bersama kebaikan, tanyakan \"Bagian ini aku penasaran\" untuk memastikan",
+      "oneLiner": "Kepercayaan murni adalah hadiah besar. Satu pertanyaan pengecekan membuatnya lebih aman",
+      "shareLine": "Di Dongeng, Kamu Tokoh Mana? Putri Salju 🍎 Aku Putri Salju haha—kepercayaan mengumpulkan orang. Kamu siapa?"
+    },
+    {
+      "title": "Orang yang melihat isi lebih dari penampilan dan membuka hati, Si Cantik dan Si Buruk Rupa 🌹",
+      "typeName": "Si Cantik dan Si Buruk Rupa",
+      "realReason": "Orang yang melihat isi lebih dari penampilan dan membuka hati",
+      "shortDescription": "Kamu mengenali diri asli seseorang dan membantu perubahan muncul.",
+      "description": "Gaya pacaran: Meski butuh waktu, kamu memahami isi hati dan membangun kepercayaan yang dalam.",
+      "keywords": "wawasan, pemahaman mendalam, kesabaran yang konsisten",
+      "strengths": "Momen hati yang tertutup melembut, momen saling benar-benar paham",
+      "reasonDetail": "Jaga batasmu sendiri, bukan hanya mencoba mengubah pasangan",
+      "frequentSaying": "\"Aku melihat dirimu yang sebenarnya\"",
+      "changeTips": "Sebanyak kamu memahami, sampaikan juga keinginanmu dengan kata",
+      "oneLiner": "Pemahaman mendalam adalah kekuatan besar. Rawat hatimu dengan bobot yang sama",
+      "shareLine": "Di Dongeng, Kamu Tokoh Mana? Si Cantik dan Si Buruk Rupa 🌹 Aku Si Cantik dan Si Buruk Rupa haha—melihat diri yang asli. Kamu siapa?"
+    },
+    {
+      "title": "Orang pemberani yang berangkat karena rasa ingin tahu, Si Kecil Tudung Merah 🧺",
+      "typeName": "Si Kecil Tudung Merah",
+      "realReason": "Orang pemberani yang berangkat karena rasa ingin tahu",
+      "shortDescription": "Kamu orang yang berani berjalan duluan menuju tempat yang membuat penasaran.",
+      "description": "Gaya pacaran: Menyapa duluan dan mengenal hubungan dengan menghadapinya secara langsung.",
+      "keywords": "rasa ingin tahu, ketangguhan, fleksibilitas dari pengalaman",
+      "strengths": "Pertemuan baru, momen pergi menyelesaikan konflik sendiri",
+      "reasonDetail": "Saat membuka hati pada orang baru, cek dulu dan dekat pelan-pelan",
+      "frequentSaying": "\"Kalau penasaran, aku jalan duluan\"",
+      "changeTips": "Dekati duluan—tapi pantau apakah kata dan tindakannya cocok",
+      "oneLiner": "Keberanian adalah aset besar. Ambil koneksi baru selangkah demi selangkah dengan aman",
+      "shareLine": "Di Dongeng, Kamu Tokoh Mana? Si Kecil Tudung Merah 🧺 Aku Si Kecil Tudung Merah haha—penasaran langsung jalan. Kamu siapa?"
+    }
+  ]
+}

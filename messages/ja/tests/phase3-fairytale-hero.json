@@ -1,0 +1,63 @@
+{
+  "phase3FairytaleHeroTest": {
+    "startMessage": {
+      "line1": "童話の主人公として生きるなら、私は誰だろう？",
+      "line2": "待ち続けて輝く人、自由に飛び回る人、愛のために勇気を出す人。童話の主人公たちは、それぞれ違う愛し方をします。心惹かれる物語には、あなたの恋愛の気配が宿っています。",
+      "line3": "12の場面でいちばん自分らしい反応を選んでください。あなたの童話の主人公と恋愛スタイルをお伝えします。どの結果でも、強みとして読み解きます。",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "私の主人公を探す 📖",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "realReason": "私の童話の主人公",
+      "keywords": "魅力ポイント",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenReason": "一緒に宿る物語",
+      "strengths": "輝く瞬間",
+      "reasonDetail": "注意ポイント",
+      "frequentSaying": "カードの言葉",
+      "changeTips": "恋愛ワンポイント",
+      "oneLiner": "一言コメント",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "童話の中の私はどの主人公？📖 私シンデレラ？ピーター・パン？あなたもやってみて！",
+      "startKakao": "童話の中の私はどの主人公？📖 私シンデレラ？ピーター・パン？あなたもやってみて！",
+      "startWechat": "童話の中の私はどの主人公？📖 私シンデレラ？ピーター・パン？あなたもやってみて！",
+      "startWhatsapp": "童話の中の私はどの主人公？📖 私シンデレラ？ピーター・パン？あなたもやってみて！",
+      "startTelegram": "童話の中の私はどの主人公？📖 私シンデレラ？ピーター・パン？あなたもやってみて！",
+      "startLine": "童話の中の私はどの主人公？📖 私シンデレラ？ピーター・パン？あなたもやってみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。しばらくしてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめTOP5",
+      "popularTestsTop5": "🔥 今人気のテストおすすめTOP5"
+    }
+  }
+}

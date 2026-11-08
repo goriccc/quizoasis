@@ -1,0 +1,63 @@
+{
+  "phase3FairytaleHeroTest": {
+    "startMessage": {
+      "line1": "동화 속 주인공으로 살아간다면 나는 누구일까?",
+      "line2": "기다림으로 빛나는 사람, 자유롭게 날아다니는 사람, 사랑을 위해 용기를 내는 사람. 동화 속 주인공들은 저마다 다른 방식으로 사랑합니다. 내가 끌리는 이야기에는 나의 연애 결이 담겨 있습니다.",
+      "line3": "12가지 장면에서 가장 나다운 반응을 골라 보세요. 나의 동화 주인공과 연애 스타일을 알려드립니다. 어떤 주인공이 나와도 장점으로 읽어 드립니다.",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "내 주인공 찾기 📖",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "realReason": "나의 동화 속 주인공",
+      "keywords": "매력 포인트",
+      "scoreTitle": "유형별 점수",
+      "scoreUnit": "점",
+      "hiddenReason": "함께 깃든 이야기",
+      "strengths": "빛나는 순간",
+      "reasonDetail": "조심할 점",
+      "frequentSaying": "카드 문구",
+      "changeTips": "연애 한 줄 팁",
+      "oneLiner": "한 줄 평",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "동화 속 나는 어떤 주인공일까? 📖 나 신데렐라? 피터팬? 너도 해봐!",
+      "startKakao": "동화 속 나는 어떤 주인공일까? 📖 나 신데렐라? 피터팬? 너도 해봐!",
+      "startWechat": "동화 속 나는 어떤 주인공일까? 📖 나 신데렐라? 피터팬? 너도 해봐!",
+      "startWhatsapp": "동화 속 나는 어떤 주인공일까? 📖 나 신데렐라? 피터팬? 너도 해봐!",
+      "startTelegram": "동화 속 나는 어떤 주인공일까? 📖 나 신데렐라? 피터팬? 너도 해봐!",
+      "startLine": "동화 속 나는 어떤 주인공일까? 📖 나 신데렐라? 피터팬? 너도 해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  }
+}

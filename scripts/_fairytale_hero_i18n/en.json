@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Which Fairy-Tale Hero Are You?",
+    "description": "If you lived as a fairy-tale hero, who would you be? Twelve scenes reveal your fairy-tale character and dating style.",
+    "tags": ["fairy-tale hero"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "If you lived as a fairy-tale hero, who would you be?",
+      "line2": "Someone who shines through waiting, someone who flies free, someone brave enough to love. Fairy-tale heroes each love in their own way. The story that pulls you in holds the texture of how you love.",
+      "line3": "Pick the reaction that feels most like you across twelve scenes. We'll show your fairy-tale hero and dating style—and read every result as a strength.",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find my hero 📖",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "Your fairy-tale hero",
+      "keywords": "Charm points",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "The story woven alongside",
+      "strengths": "Moments you shine",
+      "reasonDetail": "Watch out for",
+      "frequentSaying": "Card line",
+      "changeTips": "One dating tip",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Which Fairy-Tale Hero Are You? 📖 Am I Cinderella? Peter Pan? You try too!",
+      "startKakao": "Which Fairy-Tale Hero Are You? 📖 Am I Cinderella? Peter Pan? You try too!",
+      "startWechat": "Which Fairy-Tale Hero Are You? 📖 Am I Cinderella? Peter Pan? You try too!",
+      "startWhatsapp": "Which Fairy-Tale Hero Are You? 📖 Am I Cinderella? Peter Pan? You try too!",
+      "startTelegram": "Which Fairy-Tale Hero Are You? 📖 Am I Cinderella? Peter Pan? You try too!",
+      "startLine": "Which Fairy-Tale Hero Are You? 📖 Am I Cinderella? Peter Pan? You try too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
+  "questions": [
+    {
+      "q": "They've gone quiet while you're still talking stage. You:",
+      "opts": [
+        "Set the worry aside and focus on what makes you happy",
+        "Trust they're a good person and ask friends what they think",
+        "Wonder if something deeper is going on behind the silence",
+        "Reach out first and suggest meeting up"
+      ]
+    },
+    {
+      "q": "A rough stretch just won't end. You:",
+      "opts": [
+        "Believe better days will come and quietly keep going",
+        "Keep the hard feelings inside and hold on for what matters",
+        "Try a new path and look for a way through",
+        "Lean on people around you and get back on your feet"
+      ]
+    },
+    {
+      "q": "Someone you like is acting cold. You:",
+      "opts": [
+        "Figure there must be a reason and stay nearby watching",
+        "Keep doing your part faithfully beside them and wait",
+        "Don't overthink it and keep things light",
+        "Want to share how you feel but hesitate over the words"
+      ]
+    },
+    {
+      "q": "Picking a spot for a first date. You:",
+      "opts": [
+        "Suggest exploring somewhere you've never been",
+        "Pick somewhere fun like an amusement park",
+        "Choose a quiet place by the sea or a lake where feelings stir",
+        "Choose a cozy spot where they can open up comfortably"
+      ]
+    },
+    {
+      "q": "Your partner doesn't get how you feel. You:",
+      "opts": [
+        "Try to show your heart through actions instead of words",
+        "Stay by their side until your hearts finally click, even if it takes time",
+        "Keep showing care, trusting they'll understand someday",
+        "Believe honesty will get through and talk it out"
+      ]
+    },
+    {
+      "q": "Responsibility in the relationship suddenly grows. You:",
+      "opts": [
+        "Want to put it off—freedom still feels good right now",
+        "Feel scared but step forward and face it head-on",
+        "Talk it through with people you trust and get through it together",
+        "Prepare calmly and take ownership of your part"
+      ]
+    },
+    {
+      "q": "You notice your partner's flaws. You:",
+      "opts": [
+        "Look at the good side first and try to trust them",
+        "Quietly care while making room for the flaws too",
+        "Ask about what you're curious about right away",
+        "Find them fun as they are and brush it off lightly"
+      ]
+    },
+    {
+      "q": "An important promise gets broken. You:",
+      "opts": [
+        "Feel hurt but gather yourself and wait for the next chance",
+        "Calmly listen to why and try to understand their side",
+        "Vent to someone you trust and let yourself be comforted",
+        "Want to work it out in person, so you go find them"
+      ]
+    },
+    {
+      "q": "You're being introduced to someone new. You:",
+      "opts": [
+        "Feel full of curiosity and strike up conversation first",
+        "Prepare neatly and talk calmly",
+        "Lighten the mood with a playful joke",
+        "Watch carefully and open up slowly"
+      ]
+    },
+    {
+      "q": "If love meant giving something up, you would:",
+      "opts": [
+        "Gladly give up your own thing for someone precious",
+        "Look for a way to help each other and solve it together",
+        "Choose protecting what's real over appearances",
+        "Look for a happier path instead of giving something up"
+      ]
+    },
+    {
+      "q": "After a fight, how do you make up? You:",
+      "opts": [
+        "Listen until you understand what's really going on for them",
+        "Go to them first, apologize honestly, and try to work it out",
+        "Say little, but show your heart through small actions",
+        "Give it time and wait for a calm chance to talk again"
+      ]
+    },
+    {
+      "q": "Which line feels closest to your dating philosophy right now?",
+      "opts": [
+        "\"Trust people and open your heart—good things follow\"",
+        "\"Love should stay fun and free if it's going to last\"",
+        "\"Wait kindly and the right person will come\"",
+        "\"Look past the surface and real love shows up\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who quietly keeps kindness until their moment arrives, Cinderella 👠",
+      "typeName": "Cinderella",
+      "realReason": "Someone who quietly keeps kindness until their moment arrives",
+      "shortDescription": "You're someone who doesn't lose hope or dignity even in hard times.",
+      "description": "Dating style: You build feelings steadily and keep showing care until the right connection comes.",
+      "keywords": "patience, kind heart, unshakable dignity",
+      "strengths": "The moment hearts finally meet after waiting",
+      "reasonDetail": "Not only waiting—taking one step forward yourself",
+      "frequentSaying": "\"A kind heart eventually opens the way\"",
+      "changeTips": "Find the courage to send a small signal first",
+      "oneLiner": "The power of waiting is real. One line you offer first can bring your moment sooner",
+      "shareLine": "Which Fairy-Tale Hero Are You? Cinderella 👠 I'm Cinderella lol—kindness opens the path. Who are you?"
+    },
+    {
+      "title": "Someone who flies free and light, Peter Pan 🧚",
+      "typeName": "Peter Pan",
+      "realReason": "Someone who flies free and light",
+      "shortDescription": "With you around, everyday life feels light like an adventure.",
+      "description": "Dating style: You meet without tying each other down and make the moments together feel fun.",
+      "keywords": "playfulness, bright energy, pure heart",
+      "strengths": "Trips you take together, moments when the mood dips",
+      "reasonDetail": "Not brushing off conversations that need responsibility",
+      "frequentSaying": "\"Let's fly and have fun today too\"",
+      "changeTips": "Keep promises and replies—even lightly, but keep them",
+      "oneLiner": "Free-spirited energy is charming. Carve the important promises into your heart",
+      "shareLine": "Which Fairy-Tale Hero Are You? Peter Pan 🧚 I'm Peter Pan lol—flying free. Who are you?"
+    },
+    {
+      "title": "Someone who finds big courage for love, The Little Mermaid 🧜",
+      "typeName": "The Little Mermaid",
+      "realReason": "Someone who finds big courage for love",
+      "shortDescription": "You love deeply enough to put your whole heart on the line.",
+      "description": "Dating style: You gladly pour heart and effort into someone precious.",
+      "keywords": "deep sincerity, devotion, romantic sensitivity",
+      "strengths": "Confessions that hand over the heart, moments you step forward for them",
+      "reasonDetail": "Sharing the feelings you couldn't say, one line at a time, so they don't become misunderstandings",
+      "frequentSaying": "\"I love you with all my heart\"",
+      "changeTips": "Offer your heart in words, not only in actions",
+      "oneLiner": "Devotion is powerful. Make sure your own heart gets heard too",
+      "shareLine": "Which Fairy-Tale Hero Are You? The Little Mermaid 🧜 I'm the Little Mermaid haha—loves with the whole heart. Who are you?"
+    },
+    {
+      "title": "Someone who trusts purely and rises together, Snow White 🍎",
+      "typeName": "Snow White",
+      "realReason": "Someone who trusts purely and rises together",
+      "shortDescription": "Your clear trust in people warms everyone around you.",
+      "description": "Dating style: You see the good in them first and grow the relationship with the people by your side.",
+      "keywords": "purity, trust, magnetic warmth",
+      "strengths": "New meetings, moments you share your heart when things get hard",
+      "reasonDetail": "Balancing trust with checking the facts once",
+      "frequentSaying": "\"A trusting heart gathers people\"",
+      "changeTips": "Alongside kindness, ask \"I'm curious about this part\" to check in",
+      "oneLiner": "Pure trust is a big gift. One checking question makes it safer",
+      "shareLine": "Which Fairy-Tale Hero Are You? Snow White 🍎 I'm Snow White haha—trust gathers people. Who are you?"
+    },
+    {
+      "title": "Someone who sees past the surface and opens hearts, Beauty and the Beast 🌹",
+      "typeName": "Beauty and the Beast",
+      "realReason": "Someone who sees past the surface and opens hearts",
+      "shortDescription": "You recognize who someone really is and help change unfold.",
+      "description": "Dating style: Even if it takes time, you understand what's inside and build deep trust.",
+      "keywords": "insight, deep understanding, steady patience",
+      "strengths": "Moments a closed heart softens, moments you finally understand each other",
+      "reasonDetail": "Keeping your own boundaries instead of only trying to change them",
+      "frequentSaying": "\"I see the real you\"",
+      "changeTips": "Ask for what you want in words as much as you understand them",
+      "oneLiner": "Deep understanding is powerful. Care for your own heart with the same weight",
+      "shareLine": "Which Fairy-Tale Hero Are You? Beauty and the Beast 🌹 I'm Beauty and the Beast haha—sees the real you. Who are you?"
+    },
+    {
+      "title": "Someone brave enough to set out on curiosity alone, Little Red Riding Hood 🧺",
+      "typeName": "Little Red Riding Hood",
+      "realReason": "Someone brave enough to set out on curiosity alone",
+      "shortDescription": "You're someone with the courage to walk first toward what you're curious about.",
+      "description": "Dating style: You speak first and learn the relationship by facing it directly.",
+      "keywords": "curiosity, grit, flexibility learned from experience",
+      "strengths": "New meetings, moments you go fix conflict yourself",
+      "reasonDetail": "When opening up to someone new, check first and get closer slowly",
+      "frequentSaying": "\"If I'm curious, I walk first\"",
+      "changeTips": "Approach first—but watch whether their words and actions match",
+      "oneLiner": "Courage is a big asset. Take new connections one safe step at a time",
+      "shareLine": "Which Fairy-Tale Hero Are You? Little Red Riding Hood 🧺 I'm Little Red Riding Hood lol—walks first when curious. Who are you?"
+    }
+  ]
+}

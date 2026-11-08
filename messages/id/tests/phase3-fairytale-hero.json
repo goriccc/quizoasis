@@ -1,0 +1,63 @@
+{
+  "phase3FairytaleHeroTest": {
+    "startMessage": {
+      "line1": "Kalau hidup sebagai tokoh dongeng, kamu siapa?",
+      "line2": "Yang bersinar lewat menunggu, yang terbang bebas, yang berani demi cinta. Tokoh dongeng masing-masing mencintai dengan caranya. Cerita yang menarikmu menyimpan corak caramu mencintai.",
+      "line3": "Pilih reaksi yang paling mirip dirimu di dua belas adegan. Kami akan tunjukkan tokoh dongeng dan gaya pacaranmu—setiap hasil dibaca sebagai kelebihan.",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Temukan tokohku 📖",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Tokoh dongengmu",
+      "keywords": "Poin daya tarik",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Cerita yang ikut bersarang",
+      "strengths": "Momen yang bersinar",
+      "reasonDetail": "Yang perlu diwaspadai",
+      "frequentSaying": "Kalimat kartu",
+      "changeTips": "Satu tips pacaran",
+      "oneLiner": "Dalam satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startKakao": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startWechat": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startWhatsapp": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startTelegram": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!",
+      "startLine": "Di Dongeng, Kamu Tokoh Mana? 📖 Aku Cinderella? Peter Pan? Kamu juga coba!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  }
+}

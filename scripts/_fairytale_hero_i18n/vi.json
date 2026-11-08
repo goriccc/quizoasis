@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Trong truyện cổ tích, bạn là nhân vật nào?",
+    "description": "Nếu sống như nhân vật cổ tích, bạn sẽ là ai? 12 phân cảnh sẽ cho biết nhân vật cổ tích và phong cách yêu của bạn.",
+    "tags": ["nhân vật cổ tích"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Nếu sống như nhân vật cổ tích, bạn sẽ là ai?",
+      "line2": "Người tỏa sáng nhờ chờ đợi, người bay tự do, người dám yêu dũng cảm. Các nhân vật cổ tích yêu theo cách riêng. Câu chuyện cuốn bạn vào chính là chất liệu tình yêu của bạn.",
+      "line3": "Hãy chọn phản ứng giống bạn nhất trong 12 phân cảnh. Chúng tôi sẽ cho biết nhân vật cổ tích và phong cách yêu của bạn—mọi kết quả đều được đọc theo hướng điểm mạnh.",
+      "line4": "",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm nhân vật của tôi 📖",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Nhân vật cổ tích của bạn",
+      "keywords": "Điểm cuốn hút",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Câu chuyện cùng hiện diện",
+      "strengths": "Khoảnh khắc tỏa sáng",
+      "reasonDetail": "Điểm cần lưu ý",
+      "frequentSaying": "Dòng trên thẻ",
+      "changeTips": "Một tip yêu",
+      "oneLiner": "Nhận xét một dòng",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startKakao": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startWechat": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startWhatsapp": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startTelegram": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!",
+      "startLine": "Trong truyện cổ tích, bạn là nhân vật nào? 📖 Mình là Cô bé Lọ Lem? Peter Pan? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào bộ nhớ tạm!",
+      "shareFailed": "Không thể dùng tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
+  "questions": [
+    {
+      "q": "Người đang thả thính ít nhắn hơn. Bạn sẽ?",
+      "opts": [
+        "Gác lo lắng sang một bên và tập trung vào việc mình vui",
+        "Tin họ là người tốt và hỏi ý kiến mọi người quanh mình",
+        "Nghĩ xem sau vẻ ngoài lạnh nhạt có chuyện gì không",
+        "Chủ động nhắn trước và rủ gặp mặt"
+      ]
+    },
+    {
+      "q": "Một giai đoạn khó khăn cứ kéo dài. Bạn sẽ?",
+      "opts": [
+        "Tin ngày tốt sẽ đến và lặng lẽ làm tiếp",
+        "Giữ nỗi buồn trong lòng và chịu đựng vì điều quý giá",
+        "Thử con đường mới để tìm lối thoát",
+        "Nhờ sự giúp đỡ của mọi người để đứng dậy lại"
+      ]
+    },
+    {
+      "q": "Người mình thích cư xử lạnh nhạt. Bạn sẽ?",
+      "opts": [
+        "Nghĩ chắc có lý do và ở bên cạnh quan sát",
+        "Vẫn làm phần việc của mình một cách chân thành và chờ",
+        "Không để tâm nhiều, sống nhẹ nhàng",
+        "Muốn bày tỏ lòng mình nhưng ngập ngừng chọn lời"
+      ]
+    },
+    {
+      "q": "Chọn chỗ hẹn hò lần đầu với người yêu. Bạn sẽ?",
+      "opts": [
+        "Đề nghị khám phá nơi chưa từng đến",
+        "Chọn chỗ vui như công viên giải trí",
+        "Chọn chỗ yên như biển hay hồ làm lòng xao xuyến",
+        "Chọn chỗ ấm cúng để đối phương dễ mở lòng"
+      ]
+    },
+    {
+      "q": "Người yêu không hiểu lòng mình. Bạn sẽ?",
+      "opts": [
+        "Cố thể hiện bằng hành động thay vì lời nói",
+        "Ở bên đến khi hai trái tim hiểu nhau, dù mất thời gian",
+        "Tin rồi sẽ hiểu và tiếp tục chân thành",
+        "Tin nói thật sẽ hiểu được nên chủ động nói chuyện"
+      ]
+    },
+    {
+      "q": "Trách nhiệm trong tình yêu đột nhiên nặng hơn. Bạn sẽ?",
+      "opts": [
+        "Muốn trì hoãn—vẫn thích sự tự do lúc này",
+        "Sợ nhưng vẫn bước tới và đối mặt trực tiếp",
+        "Bàn với người tin tưởng và cùng vượt qua",
+        "Chuẩn bị bình tĩnh và nhận phần trách nhiệm của mình"
+      ]
+    },
+    {
+      "q": "Bạn thấy khuyết điểm của người yêu. Bạn sẽ?",
+      "opts": [
+        "Nhìn mặt tốt trước và cố tin tưởng",
+        "Lặng lẽ quan tâm trong khi cũng bao dung khuyết điểm",
+        "Hỏi ngay những gì mình tò mò để hiểu thêm",
+        "Thấy họ thú vị như vốn có nên bỏ qua nhẹ nhàng"
+      ]
+    },
+    {
+      "q": "Một lời hứa quan trọng bị phá. Bạn sẽ?",
+      "opts": [
+        "Buồn nhưng lấy lại tinh thần và chờ cơ hội sau",
+        "Lắng nghe lý do bình tĩnh và cố hiểu hoàn cảnh họ",
+        "Kể với người tin tưởng để được an ủi",
+        "Muốn giải quyết trực tiếp nên chủ động tìm gặp"
+      ]
+    },
+    {
+      "q": "Được giới thiệu với người mới. Bạn sẽ?",
+      "opts": [
+        "Đầy tò mò và chủ động bắt chuyện trước",
+        "Chuẩn bị chỉn chu và trò chuyện bình tĩnh",
+        "Làm không khí vui bằng câu đùa tinh nghịch",
+        "Quan sát cẩn thận và mở lòng từ từ"
+      ]
+    },
+    {
+      "q": "Nếu vì tình yêu phải từ bỏ điều gì? Bạn sẽ?",
+      "opts": [
+        "Sẵn sàng nhường phần của mình vì người quý giá",
+        "Tìm cách giúp nhau và cùng giải quyết",
+        "Chọn giữ chân thành hơn là bề ngoài",
+        "Thay vì từ bỏ, tìm một lối vui hơn"
+      ]
+    },
+    {
+      "q": "Sau khi cãi nhau, cách làm lành của bạn là?",
+      "opts": [
+        "Lắng nghe đến khi hiểu được lòng thật của họ",
+        "Chủ động đến trước, xin lỗi thật lòng và giải quyết",
+        "Ít nói nhưng chuyển lòng qua hành động nhỏ",
+        "Để thời gian và chờ lúc bình tĩnh nói lại"
+      ]
+    },
+    {
+      "q": "Câu nào gần với quan điểm yêu của bạn nhất lúc này?",
+      "opts": [
+        "\"Tin người và mở lòng thì điều tốt sẽ đến\"",
+        "\"Yêu cũng phải vui và tự do mới lâu dài\"",
+        "\"Chờ đợi tử tế thì duyên đẹp sẽ đến\"",
+        "\"Nhìn nội tâm hơn vẻ ngoài thì mới thấy tình yêu thật\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người lặng lẽ giữ lòng tốt và tạo nên thời khắc của mình, Cô bé Lọ Lem 👠",
+      "typeName": "Cô bé Lọ Lem",
+      "realReason": "Người lặng lẽ giữ lòng tốt và tạo nên thời khắc của mình",
+      "shortDescription": "Bạn là người không đánh mất hy vọng và phẩm giá ngay cả lúc gian nan.",
+      "description": "Phong cách yêu: Xây dựng tình cảm chân thành và tiếp tục tận tâm đến khi duyên đẹp đến.",
+      "keywords": "kiên nhẫn, tấm lòng tốt, phẩm giá vững vàng",
+      "strengths": "Khoảnh khắc hai trái tim chạm nhau sau chờ đợi",
+      "reasonDetail": "Không chỉ chờ—hãy tự bước một bước trước",
+      "frequentSaying": "\"Lòng tốt rồi sẽ mở đường\"",
+      "changeTips": "Dũng cảm gửi một tín hiệu nhỏ trước",
+      "oneLiner": "Sức mạnh của chờ đợi rất lớn. Một câu bạn chủ động nói có thể sớm hóa thời khắc",
+      "shareLine": "Trong truyện cổ tích, bạn là nhân vật nào? Cô bé Lọ Lem 👠 Mình là Cô bé Lọ Lem haha—lòng tốt mở đường. Bạn là ai?"
+    },
+    {
+      "title": "Người bay tự do và vui vẻ, Peter Pan 🧚",
+      "typeName": "Peter Pan",
+      "realReason": "Người bay tự do và vui vẻ",
+      "shortDescription": "Ở bên bạn, ngày thường trở nên nhẹ như một cuộc phiêu lưu.",
+      "description": "Phong cách yêu: Gặp nhau vui vẻ không ràng buộc và làm khoảnh khắc bên nhau thật thú vị.",
+      "keywords": "tinh nghịch, năng lượng vui, tấm lòng trong trẻo",
+      "strengths": "Chuyến đi cùng nhau, lúc không khí lắng xuống",
+      "reasonDetail": "Đừng xem nhẹ những cuộc trò chuyện cần trách nhiệm",
+      "frequentSaying": "\"Hôm nay cũng bay vui nhé\"",
+      "changeTips": "Giữ lời hứa và tin nhắn—dù nhẹ cũng phải giữ",
+      "oneLiner": "Sức sống tự do rất cuốn hút. Hãy khắc những lời hứa quan trọng vào lòng",
+      "shareLine": "Trong truyện cổ tích, bạn là nhân vật nào? Peter Pan 🧚 Mình là Peter Pan haha—bay tự do. Bạn là ai?"
+    },
+    {
+      "title": "Người dám có can đảm lớn vì tình yêu, Nàng tiên cá 🧜",
+      "typeName": "Nàng tiên cá",
+      "realReason": "Người dám có can đảm lớn vì tình yêu",
+      "shortDescription": "Bạn yêu sâu đến mức sẵn sàng đặt cả trái tim.",
+      "description": "Phong cách yêu: Sẵn sàng đổ hết tâm huyết và nỗ lực cho người quý giá.",
+      "keywords": "chân thành sâu, tận tụy, cảm xúc lãng mạn",
+      "strengths": "Lời tỏ tình trao cả trái tim, lúc bước tới vì đối phương",
+      "reasonDetail": "Nói từng câu những gì chưa kịp bày tỏ để không thành hiểu lầm",
+      "frequentSaying": "\"Mình yêu bằng cả trái tim\"",
+      "changeTips": "Không chỉ hành động—hãy nói lòng mình bằng lời",
+      "oneLiner": "Sự tận tụy là sức mạnh lớn. Hãy để tiếng lòng của bạn cũng được nghe thấy",
+      "shareLine": "Trong truyện cổ tích, bạn là nhân vật nào? Nàng tiên cá 🧜 Mình là Nàng tiên cá haha—yêu hết lòng. Bạn là ai?"
+    },
+    {
+      "title": "Người tin một cách trong trẻo và cùng đứng dậy, Bạch Tuyết 🍎",
+      "typeName": "Bạch Tuyết",
+      "realReason": "Người tin một cách trong trẻo và cùng đứng dậy",
+      "shortDescription": "Bạn làm ấm mọi người quanh mình bằng tấm lòng tin người trong trẻo.",
+      "description": "Phong cách yêu: Nhìn điểm tốt trước và cùng những người bên cạnh nuôi dưỡng mối quan hệ.",
+      "keywords": "trong trẻo, tin tưởng, sức hút thân thiện",
+      "strengths": "Cuộc gặp mới, lúc chia sẻ lòng khi khó khăn",
+      "reasonDetail": "Tin bao nhiêu thì cũng kiểm tra sự thật một lần cho cân bằng",
+      "frequentSaying": "\"Lòng tin sẽ tụ họp mọi người\"",
+      "changeTips": "Cùng với thiện ý, hãy hỏi \"Phần này mình hơi tò mò\" để xác nhận",
+      "oneLiner": "Niềm tin trong trẻo là món quà lớn. Thêm một câu kiểm tra sẽ an toàn hơn",
+      "shareLine": "Trong truyện cổ tích, bạn là nhân vật nào? Bạch Tuyết 🍎 Mình là Bạch Tuyết haha—lòng tin tụ người. Bạn là ai?"
+    },
+    {
+      "title": "Người nhìn bên trong hơn vẻ ngoài và mở lòng người khác, Người đẹp và quái vật 🌹",
+      "typeName": "Người đẹp và quái vật",
+      "realReason": "Người nhìn bên trong hơn vẻ ngoài và mở lòng người khác",
+      "shortDescription": "Bạn nhận ra bản chất thật của đối phương và khơi dậy sự thay đổi.",
+      "description": "Phong cách yêu: Dù mất thời gian cũng hiểu lòng bên trong và xây dựng niềm tin sâu.",
+      "keywords": "nhạy bén, thấu hiểu sâu, kiên nhẫn bền bỉ",
+      "strengths": "Lúc trái tim khép mở ra, lúc hai người thật sự hiểu nhau",
+      "reasonDetail": "Giữ ranh giới của mình thay vì chỉ cố thay đổi đối phương",
+      "frequentSaying": "\"Mình nhìn thấy con người thật của bạn\"",
+      "changeTips": "Hiểu bao nhiêu thì cũng nói ra mong muốn của mình bằng lời",
+      "oneLiner": "Sự thấu hiểu sâu là sức mạnh lớn. Hãy chăm sóc trái tim mình với cùng trọng lượng đó",
+      "shareLine": "Trong truyện cổ tích, bạn là nhân vật nào? Người đẹp và quái vật 🌹 Mình là Người đẹp và quái vật haha—nhìn thấy con người thật. Bạn là ai?"
+    },
+    {
+      "title": "Người dũng cảm lên đường vì tò mò, Cô bé quàng khăn đỏ 🧺",
+      "typeName": "Cô bé quàng khăn đỏ",
+      "realReason": "Người dũng cảm lên đường vì tò mò",
+      "shortDescription": "Bạn là người có can đảm bước trước đến nơi mình tò mò.",
+      "description": "Phong cách yêu: Chủ động bắt chuyện và tìm hiểu mối quan hệ bằng cách đối diện trực tiếp.",
+      "keywords": "tò mò, dũng cảm, linh hoạt học từ trải nghiệm",
+      "strengths": "Cuộc gặp mới, lúc tự đi giải quyết xung đột",
+      "reasonDetail": "Khi mở lòng với người lạ, hãy kiểm tra và đến gần từ từ",
+      "frequentSaying": "\"Tò mò thì mình đi trước\"",
+      "changeTips": "Tiến lại gần trước—nhưng quan sát lời nói và hành động có khớp không",
+      "oneLiner": "Can đảm là tài sản lớn. Hãy tiến từng bước an toàn với những mối quan hệ mới",
+      "shareLine": "Trong truyện cổ tích, bạn là nhân vật nào? Cô bé quàng khăn đỏ 🧺 Mình là Cô bé quàng khăn đỏ haha—tò mò là đi trước. Bạn là ai?"
+    }
+  ]
+}
