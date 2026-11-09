@@ -40,6 +40,15 @@ const SPLIT_MESSAGE_LOADERS: Record<string, Partial<Record<Locale, MessageLoader
     vi: () => import('@/messages/vi/tests/phase3-couple-trip-balance-game.json'),
     id: () => import('@/messages/id/tests/phase3-couple-trip-balance-game.json'),
   },
+  'phase3-alone-even-in-love': {
+    ko: () => import('@/messages/ko/tests/phase3-alone-even-in-love.json'),
+    en: () => import('@/messages/en/tests/phase3-alone-even-in-love.json'),
+    ja: () => import('@/messages/ja/tests/phase3-alone-even-in-love.json'),
+    'zh-CN': () => import('@/messages/zh-CN/tests/phase3-alone-even-in-love.json'),
+    'zh-TW': () => import('@/messages/zh-TW/tests/phase3-alone-even-in-love.json'),
+    vi: () => import('@/messages/vi/tests/phase3-alone-even-in-love.json'),
+    id: () => import('@/messages/id/tests/phase3-alone-even-in-love.json'),
+  },
   'phase3-tongue-tied-crush': {
     ko: () => import('@/messages/ko/tests/phase3-tongue-tied-crush.json'),
     en: () => import('@/messages/en/tests/phase3-tongue-tied-crush.json'),

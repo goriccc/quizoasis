@@ -1,0 +1,63 @@
+{
+  "phase3AloneEvenInLoveTest": {
+    "startMessage": {
+      "line1": "明明喜欢对方，为什么还这么需要独处时间？",
+      "line2": "即使有爱的人，周末也想独过一天；消息不断时，某刻就想放下手机。不是讨厌对方，可一说“我需要一个人待着”，又怕对方失落，心里过意不去。",
+      "line3": "独处更舒服，原因因人而异。可能是想守住自己的领域，能量很快耗尽，情绪一下子涌来，关系边界模糊会焦虑，或是对人际关系疲惫已久。知道原因，向对方解释的方式也会不同。",
+      "line4": "用10个情境，告诉你独处更舒服的真正原因，以及如何理解独立需求。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "找出独处更舒服的原因",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "类似的其他测试",
+      "realReason": "独处更舒服的真正原因",
+      "keywords": "关键词",
+      "scoreTitle": "各类型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "一并存在的原因",
+      "strengths": "这个类型的优势",
+      "reasonDetail": "需要独处的瞬间",
+      "frequentSaying": "这个类型常说的话",
+      "changeTips": "如何理解并说明独立需求",
+      "oneLiner": "一句话点评",
+      "shareResult": "分享结果",
+      "popularBadge": "热门",
+      "retake": "再测一次",
+      "otherTests": "看看其他测试"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "为什么恋爱中我也更想一个人？🏰 喜欢对方，为什么还需要独处？你也来测！",
+      "startKakao": "为什么恋爱中我也更想一个人？🏰 喜欢对方，为什么还需要独处？你也来测！",
+      "startWechat": "为什么恋爱中我也更想一个人？🏰 喜欢对方，为什么还需要独处？你也来测！",
+      "startWhatsapp": "为什么恋爱中我也更想一个人？🏰 喜欢对方，为什么还需要独处？你也来测！",
+      "startTelegram": "为什么恋爱中我也更想一个人？🏰 喜欢对方，为什么还需要独处？你也来测！",
+      "startLine": "为什么恋爱中我也更想一个人？🏰 喜欢对方，为什么还需要独处？你也来测！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请在微信中粘贴分享。",
+      "kakaoInit": "正在初始化KakaoTalk分享，请稍后再试。",
+      "kakaoError": "KakaoTalk分享时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 类似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  }
+}

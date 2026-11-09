@@ -1,0 +1,63 @@
+{
+  "phase3AloneEvenInLoveTest": {
+    "startMessage": {
+      "line1": "Pacarnya disukai—jadi kenapa masih butuh waktu sendiri sebanyak ini?",
+      "line2": "Meski ada orang yang dicintai, akhir pekan tetap ingin satu hari sendirian. Chat terus datang lalu tiba-tiba ingin meletakkan HP. Bukan karena tidak suka—tapi bilang \"Aku butuh waktu sendiri\" takut membuatnya kecewa, jadi merasa bersalah.",
+      "line3": "Nyaman sendiri punya alasan berbeda untuk tiap orang. Menjaga ruang sendiri, energi cepat habis, emosi datang sekaligus, cemas saat batas kabur, atau lelah lama karena hubungan. Begitu tahu alasannya, cara menjelaskan ke pacar juga berubah.",
+      "line4": "Lewat sepuluh situasi, kami tunjukkan alasan asli kenapa sendiri terasa lebih nyaman—dan cara memahami kebutuhan mandiri itu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Cari tahu kenapa sendiri lebih nyaman",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Alasan asli kenapa sendiri lebih nyaman",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang ikut bersama",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Momen saat waktu sendiri jadi perlu",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara memahami dan menjelaskan kebutuhan mandiri",
+      "oneLiner": "Satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startKakao": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startWechat": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startWhatsapp": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startTelegram": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startLine": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  }
+}

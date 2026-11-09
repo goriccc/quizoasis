@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Why Do I Feel More Comfortable Alone—Even in a Relationship?",
+    "description": "You like your partner—so why do you still need alone time? Ten situations reveal the real reason and how to understand that independence need.",
+    "tags": ["introvert", "relationship psychology"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "You like your partner—so why do you need alone time this much?",
+      "line2": "Even with someone you love, you want a solo weekend day. Texts keep coming and suddenly you just want to put the phone down. You don't dislike them—but saying \"I need time alone\" feels like it'll hurt them, so you feel guilty.",
+      "line3": "Needing alone time has different reasons for different people. Guarding your own space, battery that drains fast, emotions flooding in at once, anxiety when boundaries blur, or long relationship fatigue. Once you know why, how you explain it changes too.",
+      "line4": "Across ten situations, we'll show the real reason alone feels easier—and how to understand that independence need.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find why alone feels easier",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "The real reason alone feels easier",
+      "keywords": "Key words",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Also walking with you",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "When alone time becomes necessary",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to understand and explain the need for independence",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startKakao": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startWechat": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startWhatsapp": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startTelegram": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startLine": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
+  "questions": [
+    {
+      "q": "Your partner suggests spending the whole weekend together. You…",
+      "opts": [
+        "Like the idea, but two full days stuck together leave zero rest—so half a day alone sounds good",
+        "Being together is fine, but emotions keep rising and falling—I need quiet time mid-way to reset",
+        "When schedules keep overlapping, my daily life feels like it's dissolving into theirs—and that feels off",
+        "Facing people nonstop is exhausting now—a day alone is what comes to mind first"
+      ]
+    },
+    {
+      "q": "You get home after a full day of dating. You…",
+      "opts": [
+        "Had fun, but emotions swung a lot—my heart feels full and I need quiet to sort it out",
+        "Life mixing together is starting to feel too normal—I check my own line again",
+        "I'm worn out from dealing with people all day and don't want to do anything",
+        "My tastes and my time felt squeezed all day—I go to my room and do my own thing"
+      ]
+    },
+    {
+      "q": "Your partner loves texting back and forth all day. You…",
+      "opts": [
+        "Endless contact blurs where my space ends—and that makes me anxious",
+        "Ongoing conversation itself feels heavy—sometimes I just want to go offline",
+        "When chat never stops, my day feels tuned to them—and I want to protect my time",
+        "Replying to every message drains energy fast—by night I'm empty"
+      ]
+    },
+    {
+      "q": "A hangout with your partner's friends is planned. You…",
+      "opts": [
+        "Crowded spaces feel draining now—I'm tired of this kind of social thing itself",
+        "I always need solo time after, so I block recovery on the calendar afterward",
+        "Using energy in a crowd leaves me drained—I need until the next day to recover",
+        "Taking in so many feelings and vibes at once makes my head complicated"
+      ]
+    },
+    {
+      "q": "Your partner says, \"You've been alone a lot lately.\" Deep down you…",
+      "opts": [
+        "Want to explain that guarding my space and time is how I make the relationship last",
+        "Honestly my energy drains fast—I need alone recharge before I can show up again",
+        "Emotions have been high lately—I needed quiet time to sort them out",
+        "Dating mixes our spaces—I wanted to check where the boundary actually is"
+      ]
+    },
+    {
+      "q": "After a fight, the awkward vibe keeps going. You…",
+      "opts": [
+        "When conflict drags on it feels like boundaries got crossed—I rebuild my line first",
+        "I'm tired of this relational tension and don't want to say anything",
+        "I burned so much energy fighting that I'm drained—I want to recharge before talking",
+        "Emotions flood in at once and my head's a mess—without quiet sorting, I'll say something weird"
+      ]
+    },
+    {
+      "q": "Your partner says, \"What if we lived together?\" You…",
+      "opts": [
+        "I already get tired of the relationship sometimes—every day together would feel harder",
+        "Worry hits before excitement—I'm scared my own space and time would disappear",
+        "Sharing a space nonstop sounds like emotions with no break—that scares me",
+        "Mixing lives might blur where my space ends and theirs begins—and that makes me uneasy"
+      ]
+    },
+    {
+      "q": "Your partner suddenly texts, \"Want me to come over now?\" You…",
+      "opts": [
+        "It feels like an unplanned claim on my time—protecting my schedule comes up first",
+        "I was about to rest—suddenly spending energy feels physically heavy",
+        "When they enter my space the boundary feels blurry and I get uncomfortable",
+        "I know it'd be fun, but dealing with people itself is exhausting—I want to say no"
+      ]
+    },
+    {
+      "q": "Your partner opens up about a worry for a long time. You…",
+      "opts": [
+        "Listening together drains my energy—afterward I need a long rest",
+        "Their feelings pour into me like my own—my heart gets heavy and unsorted",
+        "Always being the listener is a lot—I'm tired of that role",
+        "I want to listen, but my time keeps shrinking and it feels a bit frustrating"
+      ]
+    },
+    {
+      "q": "Before saying \"I want to be alone,\" which thought is closest?",
+      "opts": [
+        "Once emotions settle we can get close again—but if I don't say it, feelings get messier in between",
+        "I believe clear boundaries help us last—but explaining that feels overwhelming",
+        "I'm trying to protect my time, but I worry they'll feel hurt and don't know how to say it",
+        "My battery's empty and I need a charge—but I fret they'll misunderstand"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who wants to guard their space and time, Independence Guardian 🏰",
+      "typeName": "Independence Guardian",
+      "realReason": "Even in love, you need your own time and space to stay yourself",
+      "shortDescription": "You're not short on love. You believe having your own space is what lets a relationship last.",
+      "description": "When chat never stops, your day feels tuned to them. When schedules overlap, your time seems to shrink. That isn't selfishness—it's a natural urge to keep your center. But taking alone time without explaining can read as distance.\n\nUnpacked: it isn't that your partner is too much—you're sensitive to signals that \"you\" are getting smaller",
+      "keywords": "my time, my space, independence, self-centered, staying myself",
+      "strengths": "A solid life of your own, no over-dependence, and respect for each person's growth",
+      "reasonDetail": "When messages and plans pile up, when your daily life starts bending around them",
+      "frequentSaying": "\"I want to protect my own time\"",
+      "changeTips": "Say the why first: \"It's not that I don't like being with you—I need to stay myself so I can love longer\"\nSet a shared rhythm of alone time and together time (e.g., one personal day a week)\nAfter solo time, send a short check-in first so it doesn't read as cold distance",
+      "oneLiner": "Independence isn't the opposite of love. One clear sentence can give your partner real relief",
+      "shareLine": "Why Do I Feel More Comfortable Alone—Even in a Relationship? Result: Independence Guardian 🏰 Need my own space to love longer… I got Independence Guardian lol What about you?"
+    },
+    {
+      "title": "Someone whose energy drains fast, Energy Conservation 🔋",
+      "typeName": "Energy Conservation",
+      "realReason": "Time with people burns a lot of energy—so you need alone time to recharge",
+      "shortDescription": "You don't dislike your partner. Your battery just drains fast—and alone time is how you charge.",
+      "description": "Even a fun relationship drains you after a full day together, and answering texts alone can empty you out. Alone, you finally breathe—and get the strength to go back. Charge styles differ; it says nothing about how much you love.\n\nUnpacked: it isn't a lack of affection—you're spending energy faster than you can refill it",
+      "keywords": "drain, recharge, energy spend, solo rest, recovery",
+      "strengths": "You know your energy state well—and once recovered, you show up with real focus",
+      "reasonDetail": "After a full day together, after crowded hangouts, when a sudden meetup pops up",
+      "frequentSaying": "\"My battery's empty—gonna recharge and come back\"",
+      "changeTips": "Say the purpose: \"Not because I dislike you—after I charge I can show up better\"\nBlock rest before and after hangouts so you recover before full drain\nTell them how long the charge takes—\"I'll text in two hours\"—so expectations match",
+      "oneLiner": "Needing a charge isn't weakness—it's knowing your pace. After recharging, love gets clearer too",
+      "shareLine": "Why Do I Feel More Comfortable Alone—Even in a Relationship? Result: Energy Conservation 🔋 Battery drains fast so I need alone charge… I got Energy Conservation lol Fair. You?"
+    },
+    {
+      "title": "Someone emotions hit all at once, Emotional Overload 🌊",
+      "typeName": "Emotional Overload",
+      "realReason": "Being with your partner moves a lot of feeling—so you need quiet time to sort it",
+      "shortDescription": "You aren't pulling away. You need quiet time for the emotional waves to settle.",
+      "description": "Taking in your partner's feelings and vibe too can fill your heart until nothing sorts. Alone time is when you tidy the day's emotions so you can meet them comfortably again. Without that reset, words come out weird or feelings get bigger.\n\nUnpacked: it isn't that your partner is a burden—you absorb a lot of emotion and need processing time",
+      "keywords": "emotion sorting, quiet time, absorbing vibes, overwhelm, calming down",
+      "strengths": "Deep feelings, strong empathy, and a fine read on other people's atmosphere",
+      "reasonDetail": "After a fight, after long emotional talks, after big events or hangouts",
+      "frequentSaying": "\"My head's messy—gonna sort for a bit\"",
+      "changeTips": "When overwhelmed, name the state: \"My heart's full right now—I need time to sort\"\nPick a calm-down routine for alone time in advance (walk, writing, shower)\nWhen sorted, come back first: \"I'm clear now—let's talk\" and reconnect",
+      "oneLiner": "Sorting emotions is prep for the relationship. One \"I'll be back\" keeps you close",
+      "shareLine": "Why Do I Feel More Comfortable Alone—Even in a Relationship? Result: Emotional Overload 🌊 Feelings hit all at once and I need sorting time… I got Emotional Overload lol What's your type?"
+    },
+    {
+      "title": "Someone anxious when boundaries blur, Boundary-Sensitive Type 🧭",
+      "typeName": "Boundary-Sensitive Type",
+      "realReason": "When your spaces mix with your partner's, where \"you\" end gets blurry—and that feels unsafe",
+      "shortDescription": "You aren't pushing your partner away. Clear spaces between you feel like safety.",
+      "description": "When contact, schedules, and daily life mix, your line and theirs seem to fade. Talk of living together can bring anxiety before excitement. This type often gets closer when boundaries are clear.\n\nUnpacked: it isn't rejecting your partner—the blurrier the boundary, the more you feel yourself disappearing",
+      "keywords": "boundaries, separate spaces, drawing lines, mixing anxiety, clarity",
+      "strengths": "You can set healthy lines and build a structure that respects both people",
+      "reasonDetail": "When lives overlap, when they enter your space, when living-together talk comes up",
+      "frequentSaying": "\"This part is my space\"",
+      "changeTips": "Frame boundaries as a mutual promise, not rejection. Ex: \"Having our own space makes together time more precious\"\nAgree on 2–3 boundaries together so the rules are shared\nAfter setting them, lean into together time so the connection still feels full",
+      "oneLiner": "A boundary isn't a wall—it's a fence. Clear fences let you get closer with more ease",
+      "shareLine": "Why Do I Feel More Comfortable Alone—Even in a Relationship? Result: Boundary-Sensitive Type 🧭 Blurry spaces make me anxious… I got Boundary-Sensitive Type lol Chills. What about you?"
+    },
+    {
+      "title": "Someone long worn out by relationships, Relationship Fatigue 🍂",
+      "typeName": "Relationship Fatigue",
+      "realReason": "Fatigue built up from relating to people carries into love—so rest is needed",
+      "shortDescription": "Love hasn't gone cold. Long relational fatigue has piled up—and you just want to rest.",
+      "description": "Not just dating—dealing with people in general feels heavy. Even when you like your partner, texts and hangouts start feeling like duty. More days when only alone time lets you breathe means the fatigue is real. Left alone, it can make love hard too.\n\nUnpacked: it isn't mainly your partner—burnout across relationships is asking for rest",
+      "keywords": "fatigue, sense of duty, people exhaustion, need for rest, burnout",
+      "strengths": "Strong responsibility, sincere effort in relationships, and real care for the other person",
+      "reasonDetail": "During stretches of constant meeting, when the listener role never ends, when daily life is busy",
+      "frequentSaying": "\"People are exhausting me lately\"",
+      "changeTips": "Separate the cause: \"It's not you—I've just been really worn out lately\"\nCut contact and plans that feel like duty for a set period—keep only the necessary connection\nWhen rest ends, set one small fun plan together so the relationship has something warm to return to",
+      "oneLiner": "Rest is how you love again. Naming the tiredness out loud makes rest part of the relationship too",
+      "shareLine": "Why Do I Feel More Comfortable Alone—Even in a Relationship? Result: Relationship Fatigue 🍂 Worn out by people and needing rest… I got Relationship Fatigue lol That hit. You?"
+    }
+  ]
+}

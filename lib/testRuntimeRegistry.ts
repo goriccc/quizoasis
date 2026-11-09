@@ -351,6 +351,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3TongueTiedCrushTestClient'),
   },
+
+  'phase3-alone-even-in-love': {
+    slug: 'phase3-alone-even-in-love',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_ALONE_EVEN_IN_LOVE_META } = await import('./phase3AloneEvenInLoveData');
+      return {
+        title: PHASE3_ALONE_EVEN_IN_LOVE_META.title,
+        description: PHASE3_ALONE_EVEN_IN_LOVE_META.description,
+        tags: PHASE3_ALONE_EVEN_IN_LOVE_META.tags,
+        thumbnail: 'p3_test_alone_even_in_love.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3AloneEvenInLoveData');
+      return {
+        questions: mod.phase3AloneEvenInLoveQuestions,
+        results: mod.phase3AloneEvenInLoveResults,
+        meta: {
+          title: mod.PHASE3_ALONE_EVEN_IN_LOVE_META.title,
+          description: mod.PHASE3_ALONE_EVEN_IN_LOVE_META.description,
+          tags: mod.PHASE3_ALONE_EVEN_IN_LOVE_META.tags,
+          thumbnail: 'p3_test_alone_even_in_love.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3AloneEvenInLoveTest',
+        messagesFileSlug: 'phase3-alone-even-in-love',
+      };
+    },
+    loadClient: () => import('@/components/Phase3AloneEvenInLoveTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

@@ -1,0 +1,63 @@
+{
+  "phase3AloneEvenInLoveTest": {
+    "startMessage": {
+      "line1": "You like your partner—so why do you need alone time this much?",
+      "line2": "Even with someone you love, you want a solo weekend day. Texts keep coming and suddenly you just want to put the phone down. You don't dislike them—but saying \"I need time alone\" feels like it'll hurt them, so you feel guilty.",
+      "line3": "Needing alone time has different reasons for different people. Guarding your own space, battery that drains fast, emotions flooding in at once, anxiety when boundaries blur, or long relationship fatigue. Once you know why, how you explain it changes too.",
+      "line4": "Across ten situations, we'll show the real reason alone feels easier—and how to understand that independence need.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find why alone feels easier",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "The real reason alone feels easier",
+      "keywords": "Key words",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Also walking with you",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "When alone time becomes necessary",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to understand and explain the need for independence",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startKakao": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startWechat": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startWhatsapp": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startTelegram": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!",
+      "startLine": "Why Do I Feel More Comfortable Alone—Even in a Relationship? 🏰 Partner's great—so why do I need alone time? You try too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  }
+}

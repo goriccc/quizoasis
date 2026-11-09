@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn?",
+    "description": "Thích người yêu—vậy sao vẫn cần thời gian một mình? 10 tình huống giúp tìm lý do thật và cách hiểu nhu cầu độc lập.",
+    "tags": ["hướng nội", "tâm lý tình yêu"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Thích người yêu—vậy sao mình vẫn cần thời gian một mình đến vậy?",
+      "line2": "Dù có người mình yêu, cuối tuần vẫn muốn một ngày một mình. Tin nhắn kéo dài rồi bất chợt muốn đặt điện thoại xuống. Không phải ghét họ—nhưng nói \"Mình cần ở một mình\" lại sợ họ buồn, nên thấy áy náy.",
+      "line3": "Thích ở một mình có lý do khác nhau với mỗi người. Muốn giữ không gian của mình, năng lượng hết nhanh, cảm xúc ùa đến cùng lúc, lo khi ranh giới mờ, hoặc mệt mỏi lâu vì quan hệ. Biết lý do thì cách giải thích với người yêu cũng khác.",
+      "line4": "Qua 10 tình huống, chúng tôi chỉ ra lý do thật khiến ở một mình dễ chịu hơn—và cách hiểu nhu cầu độc lập.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm lý do thích ở một mình",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật khiến ở một mình dễ chịu",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do đi cùng",
+      "strengths": "Điểm mạnh của loại này",
+      "reasonDetail": "Khoảnh khắc cần ở một mình",
+      "frequentSaying": "Câu người loại này hay nói",
+      "changeTips": "Cách hiểu và giải thích nhu cầu độc lập",
+      "oneLiner": "Một câu nhận xét",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startKakao": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startWechat": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startWhatsapp": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startTelegram": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startLine": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
+  "questions": [
+    {
+      "q": "Người yêu đề nghị dành cả cuối tuần bên nhau. Bạn…",
+      "opts": [
+        "Thích ý đó, nhưng hai ngày dính nhau hết thì hết chỗ nghỉ—muốn nửa ngày một mình",
+        "Ở cùng ổn, nhưng cảm xúc lên xuống liên tục—cần lúc yên để sắp xếp giữa chừng",
+        "Lịch cứ chồng lên nhau thì đời sống mình như thấm vào họ và bị mờ—khó chịu",
+        "Đối diện người liên tục giờ đã mệt—ngày một mình nổi lên trước trong đầu"
+      ]
+    },
+    {
+      "q": "Về nhà sau cả ngày hẹn hò. Bạn…",
+      "opts": [
+        "Vui, nhưng cảm xúc dao động nhiều—tim đầy và cần yên để sắp xếp",
+        "Cuộc sống trộn vào nhau ngày càng thành chuyện đương nhiên—mình kiểm lại đường biên",
+        "Mệt vì suốt ngày đối diện người, chẳng muốn làm gì",
+        "Cả ngày bên nhau thấy sở thích và thời gian của mình bị thu hẹp—vào phòng làm việc của mình"
+      ]
+    },
+    {
+      "q": "Người yêu thích nhắn tin qua lại cả ngày. Bạn…",
+      "opts": [
+        "Liên lạc không ngớt làm mờ ranh giới không gian của mình—và mình lo",
+        "Cuộc trò chuyện kéo dài bản thân đã nặng—đôi khi muốn tắt liên lạc hẳn",
+        "Chat không dừng thì ngày như chỉnh theo họ—mình muốn giữ thời gian của mình",
+        "Trả từng tin thì năng lượng hết nhanh—cuối ngày không còn sức"
+      ]
+    },
+    {
+      "q": "Có buổi gặp bạn bè của người yêu. Bạn…",
+      "opts": [
+        "Chỗ đông người giờ nặng nề—mệt cả kiểu quan hệ này",
+        "Sau buổi họp luôn cần thời gian một mình nên mình chặn sẵn giờ nghỉ sau đó",
+        "Tốn năng lượng chỗ đông người rồi kiệt—cần tới hôm sau mới hồi",
+        "Nhận cùng lúc nhiều cảm xúc và không khí làm đầu óc rối"
+      ]
+    },
+    {
+      "q": "Người yêu nói: \"Dạo này bạn ở một mình nhiều nhỉ.\" Trong lòng bạn…",
+      "opts": [
+        "Muốn giải thích: giữ không gian và thời gian của mình là cách để yêu lâu",
+        "Thật ra năng lượng hết nhanh—cần sạc một mình mới có sức gặp lại",
+        "Gần đây cảm xúc lên nhiều—cần lúc yên để sắp xếp",
+        "Yêu nhau thì không gian trộn vào nhau—mình muốn kiểm ranh giới tới đâu"
+      ]
+    },
+    {
+      "q": "Sau cãi nhau, không khí vẫn ngại. Bạn…",
+      "opts": [
+        "Xung đột kéo dài như bị vượt ranh giới—mình dựng lại đường biên của mình trước",
+        "Mệt căng thẳng kiểu quan hệ này, chẳng muốn nói gì",
+        "Cãi nhau tốn quá nhiều năng lượng nên kiệt—muốn sạc rồi hãy nói",
+        "Cảm xúc ùa vào, đầu rối—không sắp xếp yên thì sẽ nói lệch"
+      ]
+    },
+    {
+      "q": "Người yêu hỏi: \"Mình sống chung thì sao?\" Bạn…",
+      "opts": [
+        "Đôi lúc đã mệt vì quan hệ—mỗi ngày bên nhau sẽ còn khó hơn",
+        "Lo lắng tới trước cả hồi hộp—sợ không gian và thời gian của mình biến mất",
+        "Chung không gian liên tục thì cảm xúc như không nghỉ—sợ",
+        "Đời sống trộn vào nhau có thể làm mờ chỗ mình và họ tách—bất an"
+      ]
+    },
+    {
+      "q": "Người yêu bất ngờ nhắn: \"Giờ qua tìm bạn được không?\" Bạn…",
+      "opts": [
+        "Như bị dùng thời gian không báo trước—muốn giữ lịch của mình trước",
+        "Định nghỉ thì đột ngột tốn năng lượng—người thấy nặng",
+        "Họ vào không gian mình thì ranh giới như mờ—khó chịu",
+        "Biết gặp sẽ vui, nhưng đối diện người bản thân đã mệt—muốn từ chối"
+      ]
+    },
+    {
+      "q": "Người yêu tâm sự lo lắng rất lâu. Bạn…",
+      "opts": [
+        "Nghe cùng nhau làm hết năng lượng—xong rồi cần nghỉ lâu",
+        "Cảm xúc họ đổ vào như của mình—tim nặng và chẳng sắp xếp được",
+        "Mãi làm người nghe thật nặng—mình mệt vai trò này",
+        "Muốn nghe, nhưng thời gian mình cứ teo dần—hơi bức bối"
+      ]
+    },
+    {
+      "q": "Trước khi nói \"Mình muốn ở một mình\", suy nghĩ gần nhất là?",
+      "opts": [
+        "Cảm xúc ổn rồi sẽ gần lại được—nhưng không nói thì cảm xúc ở giữa càng rối",
+        "Tin ranh giới rõ giúp đi lâu—nhưng giải thích thế nào thì rối bời",
+        "Muốn giữ thời gian của mình, nhưng sợ họ buồn và không biết nói sao",
+        "Pin hết cần sạc—nhưng lo họ hiểu nhầm"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người muốn giữ không gian và thời gian của mình, kiểu bảo vệ độc lập 🏰",
+      "typeName": "kiểu bảo vệ độc lập",
+      "realReason": "Dù đang yêu vẫn cần thời gian và không gian riêng để là chính mình",
+      "shortDescription": "Không phải thiếu yêu. Bạn tin có không gian của mình thì mới yêu được lâu.",
+      "description": "Chat không dừng thì ngày như chỉnh theo họ; lịch chồng lên thì thời gian mình như teo. Đó không phải ích kỷ—là nhu cầu tự nhiên giữ trung tâm \"mình\". Nhưng lấy thời gian một mình mà không giải thích có thể bị hiểu là khoảng cách.\n\nGiải ra lý do thật sự: không phải người yêu quá nặng—bạn nhạy với tín hiệu \"mình\" đang nhỏ lại",
+      "keywords": "thời gian của mình, không gian của mình, độc lập, lấy mình làm trung tâm, giữ bản thân",
+      "strengths": "Đời sống riêng vững, không phụ thuộc quá mức, tôn trọng sự trưởng thành của nhau",
+      "reasonDetail": "Khi tin nhắn và lịch chất đống, khi ngày thường bắt đầu xoay quanh họ",
+      "frequentSaying": "\"Mình muốn giữ thời gian của mình\"",
+      "changeTips": "Nói lý do trước: \"Không phải không thích ở với bạn—mình cần giữ bản thân để yêu lâu hơn\"\nCùng đặt nhịp thời gian một mình và thời gian bên nhau (vd: mỗi tuần một ngày riêng)\nSau giờ một mình, gửi lời hỏi ngắn trước để không bị hiểu là lạnh nhạt",
+      "oneLiner": "Độc lập không phải đối lập của yêu. Một câu giải thích có thể khiến người yêu yên tâm rất nhiều",
+      "shareLine": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? Kết quả: kiểu bảo vệ độc lập 🏰 Cần không gian riêng mới yêu lâu được… mình ra kiểu bảo vệ độc lập haha Bạn ra gì?"
+    },
+    {
+      "title": "Người năng lượng hết nhanh, kiểu bảo tồn năng lượng 🔋",
+      "typeName": "kiểu bảo tồn năng lượng",
+      "realReason": "Thời gian với người tốn nhiều năng lượng—nên cần một mình để sạc",
+      "shortDescription": "Không phải ghét người yêu. Pin hết nhanh—và một mình là cách sạc của bạn.",
+      "description": "Yêu vui đến mấy, cả ngày bên nhau cũng xả điện; chỉ trả lời tin cũng có thể hết sức. Một mình mới thở được—và có lực quay lại. Cách sạc khác nhau; không nói về mức độ yêu.\n\nGiải ra lý do thật sự: không phải thiếu tình cảm—bạn tiêu năng lượng nhanh hơn tốc độ sạc",
+      "keywords": "xả điện, sạc, tiêu năng lượng, nghỉ một mình, hồi phục",
+      "strengths": "Biết rõ trạng thái năng lượng—hồi rồi thì tập trung hết mình với người yêu",
+      "reasonDetail": "Sau cả ngày bên nhau, sau chỗ đông người, khi bất ngờ bị hẹn gặp",
+      "frequentSaying": "\"Pin hết rồi—mình sạc xong quay lại\"",
+      "changeTips": "Nói mục đích: \"Không phải ghét bạn—sạc xong mình sẽ tốt hơn\"\nChặn giờ nghỉ trước và sau buổi gặp để hồi trước khi xả hết\nBáo độ dài sạc—\"Hai tiếng nữa nhắn\"—cho khớp kỳ vọng",
+      "oneLiner": "Cần sạc không phải yếu—là biết nhịp của mình. Sạc xong, yêu cũng rõ hơn",
+      "shareLine": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? Kết quả: kiểu bảo tồn năng lượng 🔋 Pin hết nhanh cần sạc một mình… mình ra kiểu bảo tồn năng lượng haha Đúng quá. Bạn?"
+    },
+    {
+      "title": "Người cảm xúc ùa đến cùng lúc, kiểu quá tải cảm xúc 🌊",
+      "typeName": "kiểu quá tải cảm xúc",
+      "realReason": "Ở với người yêu thì cảm xúc chuyển động nhiều—cần lúc yên để sắp xếp",
+      "shortDescription": "Không phải muốn tạo khoảng cách. Bạn cần thời gian yên để sóng cảm xúc lắng.",
+      "description": "Nhận cả cảm xúc và không khí của người yêu thì tim đầy đến không sắp xếp nổi. Thời gian một mình để dọn cảm xúc trong ngày rồi mới gặp lại thoải mái. Không reset thì lời nói lệch hoặc cảm xúc phình to.\n\nGiải ra lý do thật sự: không phải người yêu là gánh—bạn hấp thụ nhiều cảm xúc và cần thời gian xử lý",
+      "keywords": "sắp xếp cảm xúc, thời gian yên, hấp thụ không khí, choáng ngợp, bình tĩnh",
+      "strengths": "Cảm xúc sâu, đồng cảm mạnh, đọc không khí người khác tinh tế",
+      "reasonDetail": "Sau cãi nhau, sau lúc nghe cảm xúc lâu, sau sự kiện lớn hoặc buổi họp mặt",
+      "frequentSaying": "\"Đầu rối—mình đi sắp xếp một chút\"",
+      "changeTips": "Khi quá tải, nói trạng thái: \"Tim đang đầy—mình cần thời gian sắp xếp\"\nChọn sẵn thói quen bình tĩnh cho giờ một mình (đi bộ, viết, tắm)\nSắp xếp xong thì quay lại trước: \"Xong rồi, mình nói chuyện nhé\" và nối lại kết nối",
+      "oneLiner": "Thời gian sắp xếp cảm xúc là chuẩn bị cho quan hệ. Một câu \"Mình sẽ quay lại\" giữ bạn ở bên",
+      "shareLine": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? Kết quả: kiểu quá tải cảm xúc 🌊 Cảm xúc ùa đến cần thời gian sắp xếp… mình ra kiểu quá tải cảm xúc haha Bạn thuộc kiểu nào?"
+    },
+    {
+      "title": "Người lo khi ranh giới mờ, kiểu mở rộng ranh giới 🧭",
+      "typeName": "kiểu mở rộng ranh giới",
+      "realReason": "Khi không gian trộn với người yêu, chỗ nào là \"mình\" bị mờ—và điều đó bất an",
+      "shortDescription": "Không phải đẩy người yêu ra. Không gian rõ ràng giữa hai người mới cho bạn cảm giác an toàn.",
+      "description": "Liên lạc, lịch, đời sống trộn vào thì đường biên của mình và họ như phai. Nói sống chung đôi khi lo đến trước cả vui. Loại này thường gần hơn khi ranh giới rõ.\n\nGiải ra lý do thật sự: không phải từ chối người yêu—ranh giới càng mờ càng thấy mình biến mất",
+      "keywords": "ranh giới, phân không gian, kẻ đường, lo khi trộn, rõ ràng",
+      "strengths": "Biết dựng đường biên lành mạnh và tạo cấu trúc tôn trọng lẫn nhau",
+      "reasonDetail": "Khi đời sống chồng lên, khi họ vào không gian bạn, khi nói chuyện sống chung",
+      "frequentSaying": "\"Tới đây là không gian của mình\"",
+      "changeTips": "Giải thích ranh giới như lời hứa giữ nhau, không phải từ chối. Vd: \"Có không gian riêng thì thời gian bên nhau mới quý\"\nCùng chọn 2–3 ranh giới để thành chuẩn chung\nSau khi đặt ranh giới, tập trung hơn vào thời gian bên nhau để đầy cảm giác kết nối",
+      "oneLiner": "Ranh giới không phải tường—là hàng rào. Hàng rào rõ thì mới yên tâm gần nhau",
+      "shareLine": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? Kết quả: kiểu mở rộng ranh giới 🧭 Không gian mờ làm mình lo… mình ra kiểu mở rộng ranh giới haha Rợn. Bạn thì sao?"
+    },
+    {
+      "title": "Người mệt mỏi lâu vì quan hệ, kiểu mệt mỏi vì quan hệ 🍂",
+      "typeName": "kiểu mệt mỏi vì quan hệ",
+      "realReason": "Mệt tích từ quan hệ với người lan sang tình yêu—nên cần nghỉ",
+      "shortDescription": "Không phải tình yêu nguội. Mệt quan hệ chất lâu—và bạn chỉ muốn nghỉ.",
+      "description": "Không chỉ yêu—đối diện người nói chung đã nặng. Dù thích người yêu, nhắn tin và gặp mặt vẫn như nghĩa vụ. Ngày chỉ thở được khi một mình tăng lên là dấu hiệu mệt đã dày. Để vậy, yêu cũng sẽ khó.\n\nGiải ra lý do thật sự: không chủ yếu là người yêu—kiệt sức trên quan hệ nói chung đang đòi nghỉ",
+      "keywords": "mệt, cảm giác nghĩa vụ, mệt vì người, cần nghỉ, kiệt sức",
+      "strengths": "Trách nhiệm cao, chân thành với quan hệ, biết quan tâm đối phương",
+      "reasonDetail": "Giai đoạn gặp người liên tục, khi vai trò người nghe kéo dài, khi đời sống bận",
+      "frequentSaying": "\"Dạo này mệt vì người quá\"",
+      "changeTips": "Tách nguyên nhân: \"Không phải vì bạn—mình dạo này thật sự rất mệt\"\nGiảm liên lạc và hẹn mang cảm giác nghĩa vụ trong một khoảng—chỉ giữ kết nối cần thiết\nHết nghỉ thì đặt một kế hoạch vui nhỏ cùng nhau để quan hệ có chỗ ấm để về",
+      "oneLiner": "Phải nghỉ mới yêu lại được. Nói rõ vì sao mệt thì nghỉ cũng thành một phần của quan hệ",
+      "shareLine": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? Kết quả: kiểu mệt mỏi vì quan hệ 🍂 Mệt vì người lâu rồi cần nghỉ… mình ra kiểu mệt mỏi vì quan hệ haha Trúng tim. Bạn?"
+    }
+  ]
+}

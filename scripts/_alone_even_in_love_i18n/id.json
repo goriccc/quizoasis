@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri?",
+    "description": "Pacarnya disukai—jadi kenapa masih butuh waktu sendiri? Sepuluh situasi mengungkap alasan asli dan cara memahami kebutuhan mandiri.",
+    "tags": ["introvert", "psikologi cinta"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Pacarnya disukai—jadi kenapa masih butuh waktu sendiri sebanyak ini?",
+      "line2": "Meski ada orang yang dicintai, akhir pekan tetap ingin satu hari sendirian. Chat terus datang lalu tiba-tiba ingin meletakkan HP. Bukan karena tidak suka—tapi bilang \"Aku butuh waktu sendiri\" takut membuatnya kecewa, jadi merasa bersalah.",
+      "line3": "Nyaman sendiri punya alasan berbeda untuk tiap orang. Menjaga ruang sendiri, energi cepat habis, emosi datang sekaligus, cemas saat batas kabur, atau lelah lama karena hubungan. Begitu tahu alasannya, cara menjelaskan ke pacar juga berubah.",
+      "line4": "Lewat sepuluh situasi, kami tunjukkan alasan asli kenapa sendiri terasa lebih nyaman—dan cara memahami kebutuhan mandiri itu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Cari tahu kenapa sendiri lebih nyaman",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Alasan asli kenapa sendiri lebih nyaman",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang ikut bersama",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Momen saat waktu sendiri jadi perlu",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara memahami dan menjelaskan kebutuhan mandiri",
+      "oneLiner": "Satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startKakao": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startWechat": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startWhatsapp": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startTelegram": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!",
+      "startLine": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? 🏰 Pacarnya oke—kenapa masih butuh waktu sendiri? Kamu coba juga!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes yang lagi tren"
+    }
+  },
+  "questions": [
+    {
+      "q": "Pacar mengusulkan menghabiskan seluruh akhir pekan bersama. Kamu…",
+      "opts": [
+        "Ide bagus, tapi dua hari nempel terus tanpa istirahat—setengah hari sendirian terdengar enak",
+        "Bersama oke, tapi emosi naik-turun terus—butuh waktu tenang di tengah untuk merapikan",
+        "Kalau jadwal terus bertumpuk, hidup sehari-hariku seolah menyatu ke dia dan jadi kabur—tidak nyaman",
+        "Menghadapi orang nonstop sekarang melelahkan—hari sendirian yang pertama muncul di kepala"
+      ]
+    },
+    {
+      "q": "Pulang setelah kencan seharian. Kamu…",
+      "opts": [
+        "Seru, tapi emosi naik-turun banyak—hati penuh dan butuh tenang untuk merapikan",
+        "Hidup yang bercampur mulai terasa terlalu wajar—aku cek lagi garis milikku",
+        "Lelah menghadapi orang seharian dan tidak ingin melakukan apa pun",
+        "Seharian bersama, selera dan waktuku terasa menyusut—masuk kamar dan lakukan milikku"
+      ]
+    },
+    {
+      "q": "Pacar suka chat bolak-balik seharian. Kamu…",
+      "opts": [
+        "Kontak tanpa henti membuat batas ruangku kabur—dan itu membuat cemas",
+        "Percakapan yang terus berjalan sendiri sudah berat—kadang ingin benar-benar offline",
+        "Kalau chat tak berhenti, hariku terasa menyesuaikan dia—dan aku ingin jaga waktuku",
+        "Membalas tiap pesan menguras energi cepat—malamnya aku kosong"
+      ]
+    },
+    {
+      "q": "Ada acara bareng teman-teman pacar. Kamu…",
+      "opts": [
+        "Tempat ramai sekarang terasa berat—aku lelah dengan jenis hubungan seperti ini",
+        "Setelah kumpul selalu butuh waktu sendiri, jadi aku blokir waktu istirahat sesudahnya",
+        "Habis energi di keramaian membuatku kosong—butuh sampai besok untuk pulih",
+        "Menyerap banyak perasaan dan suasana sekaligus membuat kepala rumit"
+      ]
+    },
+    {
+      "q": "Pacar bilang, \"Akhir-akhir ini kamu sering sendiri ya.\" Dalam hati kamu…",
+      "opts": [
+        "Ingin menjelaskan: menjaga ruang dan waktuku adalah caraku biar hubungan bertahan lama",
+        "Sejujurnya energiku cepat habis—perlu isi ulang sendiri dulu baru bisa ketemu lagi",
+        "Belakangan emosi sering naik—butuh waktu tenang untuk merapikan",
+        "Pacaran mencampur ruang kita—aku ingin cek di mana batasnya sebenarnya"
+      ]
+    },
+    {
+      "q": "Setelah bertengkar, suasana canggung masih berlanjut. Kamu…",
+      "opts": [
+        "Kalau konflik berlarut terasa batas dilanggar—aku bangun lagi garis milikku dulu",
+        "Lelah dengan ketegangan hubungan seperti ini dan tidak ingin bilang apa pun",
+        "Terlalu banyak energi terbakar saat bertengkar—ingin isi ulang dulu baru bicara",
+        "Emosi datang sekaligus dan kepala berantakan—tanpa merapikan tenang, ucapanku bisa aneh"
+      ]
+    },
+    {
+      "q": "Pacar bilang, \"Bagaimana kalau kita tinggal bareng?\" Kamu…",
+      "opts": [
+        "Kadang sudah lelah dengan hubungan—tiap hari bersama akan terasa lebih berat",
+        "Khawatir datang sebelum deg-degan—takut ruang dan waktuku hilang",
+        "Berbagi ruang nonstop seperti emosi tanpa jeda—itu menakutkan",
+        "Hidup bercampur bisa mengaburkan di mana ruangku berakhir dan miliknya mulai—tidak tenang"
+      ]
+    },
+    {
+      "q": "Pacar tiba-tiba chat, \"Mau aku datang sekarang?\" Kamu…",
+      "opts": [
+        "Terasa seperti klaim waktu tanpa pemberitahuan—ingin jaga jadwalku dulu",
+        "Baru mau istirahat—tiba-tiba pakai energi terasa berat di badan",
+        "Saat dia masuk ruangku batas terasa kabur dan aku tidak nyaman",
+        "Tahu akan seru, tapi menghadapi orang sendiri sudah melelahkan—ingin menolak"
+      ]
+    },
+    {
+      "q": "Pacar curhat kekhawatiran dalam waktu lama. Kamu…",
+      "opts": [
+        "Mendengarkan bersama menguras energiku—setelahnya butuh istirahat lama",
+        "Perasaannya mengalir masuk seperti milikku—hati berat dan tidak tersusun",
+        "Selalu jadi pendengar itu berat—aku lelah dengan peran itu",
+        "Ingin mendengarkan, tapi waktuku terus menyusut dan agak sesak"
+      ]
+    },
+    {
+      "q": "Sebelum bilang \"Aku ingin sendiri,\" pikiran yang paling dekat?",
+      "opts": [
+        "Begitu emosi mereda kita bisa dekat lagi—tapi kalau tidak bilang, perasaan di antaranya makin rumit",
+        "Percaya batas yang jelas bikin hubungan tahan lama—tapi cara menjelaskannya terasa buntu",
+        "Aku coba jaga waktuku, tapi khawatir dia kecewa dan bingung mau bilang apa",
+        "Baterai kosong perlu diisi—tapi khawatir dia salah paham"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang ingin menjaga ruang dan waktunya, tipe penjaga kemandirian 🏰",
+      "typeName": "tipe penjaga kemandirian",
+      "realReason": "Meski dalam cinta, kamu butuh waktu dan ruang sendiri supaya tetap jadi diri sendiri",
+      "shortDescription": "Bukan karena kurang cinta. Kamu percaya punya ruang sendiri justru membuat hubungan bertahan lama.",
+      "description": "Kalau chat tak berhenti, harimu terasa menyesuaikan dia. Kalau jadwal bertumpuk, waktumu seolah menyusut. Itu bukan egois—dorongan alami menjaga pusat \"aku\". Tapi ambil waktu sendiri tanpa penjelasan bisa terbaca sebagai jarak.\n\nKalau dibuka alasan aslinya: bukan pacar terlalu berat—kamu peka pada sinyal bahwa \"dirimu\" mengecil",
+      "keywords": "waktuku, ruangku, kemandirian, berpusat pada diri, tetap jadi diri",
+      "strengths": "Hidup sendiri yang kokoh, tidak bergantung berlebihan, dan menghormati pertumbuhan masing-masing",
+      "reasonDetail": "Saat pesan dan rencana menumpuk, saat hari-hari mulai berputar di sekitar dia",
+      "frequentSaying": "\"Aku ingin menjaga waktuku sendiri\"",
+      "changeTips": "Sampaikan alasan dulu: \"Bukan karena tidak suka bareng kamu—aku perlu jaga diriku supaya bisa mencintai lebih lama\"\nTetapkan ritme waktu sendiri dan waktu bersama (mis. satu hari pribadi per minggu)\nSetelah waktu sendiri, kirim kabar singkat dulu supaya tidak terbaca dingin",
+      "oneLiner": "Kemandirian bukan lawan cinta. Satu kalimat penjelasan bisa memberi pacar rasa aman besar",
+      "shareLine": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? Hasil: tipe penjaga kemandirian 🏰 Butuh ruang sendiri supaya bisa cinta lebih lama… aku dapat tipe penjaga kemandirian wkwk Kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang energinya cepat habis, tipe hemat energi 🔋",
+      "typeName": "tipe hemat energi",
+      "realReason": "Waktu bersama orang menguras banyak energi—jadi butuh waktu sendiri untuk isi ulang",
+      "shortDescription": "Bukan tidak suka pacar. Bateraimu cepat habis—dan waktu sendiri adalah cara mengisi ulang.",
+      "description": "Meski pacaran menyenangkan, seharian bersama tetap menguras, dan membalas chat saja bisa mengosongkanmu. Sendiri baru bisa bernapas—dan punya tenaga kembali. Cara isi ulang beda-beda; itu tidak tentang seberapa besar cintamu.\n\nKalau dibuka alasan aslinya: bukan kurang sayang—kecepatan menguras lebih cepat dari kecepatan mengisi",
+      "keywords": "kosong, isi ulang, boros energi, istirahat sendiri, pemulihan",
+      "strengths": "Kamu paham kondisi energi sendiri—dan setelah pulih, hadir dengan fokus nyata",
+      "reasonDetail": "Setelah seharian bersama, setelah acara ramai, saat tiba-tiba diajak ketemu",
+      "frequentSaying": "\"Bateraiku kosong—isi dulu ya, nanti balik\"",
+      "changeTips": "Sampaikan tujuan: \"Bukan karena tidak suka—setelah isi ulang aku bisa lebih baik\"\nBlokir istirahat sebelum dan sesudah ketemu supaya pulih sebelum benar-benar kosong\nKasih tahu lama isi ulang—\"Aku chat dua jam lagi\"—supaya ekspektasi cocok",
+      "oneLiner": "Butuh isi ulang bukan kelemahan—itu mengenal ritmemu. Setelah terisi, cinta juga lebih jernih",
+      "shareLine": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? Hasil: tipe hemat energi 🔋 Baterai cepat habis jadi perlu isi ulang sendiri… aku dapat tipe hemat energi wkwk Fair. Kamu?"
+    },
+    {
+      "title": "Orang yang emosinya datang sekaligus, tipe kelebihan emosi 🌊",
+      "typeName": "tipe kelebihan emosi",
+      "realReason": "Bersama pacar membuat banyak perasaan bergerak—jadi butuh waktu tenang untuk merapikan",
+      "shortDescription": "Bukan menarik diri. Kamu butuh waktu tenang agar gelombang emosi mereda.",
+      "description": "Menyerap perasaan dan suasana pacar juga bisa membuat hati penuh sampai tak tersusun. Waktu sendiri adalah saat merapikan emosi sehari supaya bisa bertemu lagi dengan nyaman. Tanpa reset, ucapan jadi aneh atau perasaan membesar.\n\nKalau dibuka alasan aslinya: bukan pacar jadi beban—kamu menyerap banyak emosi dan butuh waktu memproses",
+      "keywords": "merapikan emosi, waktu tenang, menyerap suasana, kewalahan, menenangkan",
+      "strengths": "Perasaan dalam, empati kuat, dan membaca suasana orang lain dengan halus",
+      "reasonDetail": "Setelah bertengkar, setelah mendengar curhatan lama, setelah acara besar atau kumpul",
+      "frequentSaying": "\"Kepalaku berantakan—aku rapikan dulu sebentar\"",
+      "changeTips": "Saat kewalahan, sebutkan kondisinya: \"Hati sedang penuh—aku butuh waktu merapikan\"\nSiapkan dulu rutinitas tenang untuk waktu sendiri (jalan, menulis, mandi)\nSetelah rapi, kembali dulu: \"Sudah beres, ayo ngobrol\" dan sambung lagi koneksinya",
+      "oneLiner": "Waktu merapikan emosi adalah persiapan untuk hubungan. Satu \"Aku akan balik\" menjaga kalian dekat",
+      "shareLine": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? Hasil: tipe kelebihan emosi 🌊 Emosi datang sekaligus butuh waktu merapikan… aku dapat tipe kelebihan emosi wkwk Tipemu apa?"
+    },
+    {
+      "title": "Orang cemas saat batas kabur, tipe perluasan batas 🧭",
+      "typeName": "tipe perluasan batas",
+      "realReason": "Saat ruangmu bercampur dengan pacar, sampai mana \"aku\" jadi kabur—dan itu terasa tidak aman",
+      "shortDescription": "Bukan mendorong pacar. Ruang yang jelas antara kalian yang membuatmu merasa aman.",
+      "description": "Kontak, jadwal, dan hidup sehari-hari yang bercampur membuat garismu dan garisnya seolah pudar. Bicara tinggal bersama bisa membawa cemas sebelum deg-degan. Tipe ini sering justru lebih dekat saat batas jelas.\n\nKalau dibuka alasan aslinya: bukan menolak pacar—semakin kabur batasnya, semakin terasa dirimu menghilang",
+      "keywords": "batas, pemisahan ruang, menarik garis, cemas bercampur, kejelasan",
+      "strengths": "Bisa membangun garis sehat dan struktur yang saling menghormati",
+      "reasonDetail": "Saat hidup bertumpuk, saat dia masuk ruangmu, saat muncul obrolan tinggal bersama",
+      "frequentSaying": "\"Sampai sini ruangku\"",
+      "changeTips": "Bingkai batas sebagai janji saling jaga, bukan penolakan. Mis.: \"Punya ruang masing-masing justru membuat waktu bersama lebih berharga\"\nSepakati 2–3 batas bersama supaya aturannya berbagi\nSetelah batas ditetapkan, fokus lebih ke waktu bersama supaya rasa koneksi tetap penuh",
+      "oneLiner": "Batas bukan tembok—itu pagar. Pagar yang jelas membuat kalian lebih tenang mendekat",
+      "shareLine": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? Hasil: tipe perluasan batas 🧭 Ruang yang kabur membuat cemas… aku dapat tipe perluasan batas wkwk Merinding. Kamu?"
+    },
+    {
+      "title": "Orang yang lama lelah karena hubungan, tipe lelah hubungan 🍂",
+      "typeName": "tipe lelah hubungan",
+      "realReason": "Kelelahan yang menumpuk dari berhubungan dengan orang terbawa ke cinta—jadi butuh istirahat",
+      "shortDescription": "Bukan cinta yang dingin. Kelelahan hubungan sudah menumpuk—dan kamu hanya ingin istirahat.",
+      "description": "Bukan hanya pacaran—menghadapi orang secara umum terasa berat. Meski suka pacar, chat dan ketemu mulai terasa seperti kewajiban. Hari di mana hanya sendirian yang membuatmu bisa bernapas semakin banyak berarti kelelahan sudah nyata. Dibiarkan, cinta pun bisa jadi sulit.\n\nKalau dibuka alasan aslinya: bukan utamanya pacar—kelelahan di berbagai hubungan sedang meminta istirahat",
+      "keywords": "kelelahan, rasa kewajiban, capek orang, butuh istirahat, burnout",
+      "strengths": "Tanggung jawab kuat, tulus dalam hubungan, dan benar-benar peduli pada pasangan",
+      "reasonDetail": "Saat periode sering bertemu orang, saat peran pendengar tak berhenti, saat hari-hari sibuk",
+      "frequentSaying": "\"Akhir-akhir ini capek banget sama orang\"",
+      "changeTips": "Pisahkan penyebab: \"Bukan karena kamu—aku memang lagi sangat lelah\"\nKurangi kontak dan janji yang terasa kewajiban untuk periode tertentu—sisakan hanya koneksi yang perlu\nSetelah istirahat selesai, buat satu rencana kecil yang menyenangkan bersama supaya hubungan punya tempat hangat untuk kembali",
+      "oneLiner": "Istirahat adalah cara mencintai lagi. Menyebutkan rasa lelah dengan kata membuat istirahat jadi bagian hubungan juga",
+      "shareLine": "Kenapa Saat Pacaran Pun Aku Lebih Nyaman Sendiri? Hasil: tipe lelah hubungan 🍂 Lelah sama orang dan butuh istirahat… aku dapat tipe lelah hubungan wkwk Nyampe. Kamu?"
+    }
+  ]
+}

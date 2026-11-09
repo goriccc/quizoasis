@@ -1,0 +1,63 @@
+{
+  "phase3AloneEvenInLoveTest": {
+    "startMessage": {
+      "line1": "Thích người yêu—vậy sao mình vẫn cần thời gian một mình đến vậy?",
+      "line2": "Dù có người mình yêu, cuối tuần vẫn muốn một ngày một mình. Tin nhắn kéo dài rồi bất chợt muốn đặt điện thoại xuống. Không phải ghét họ—nhưng nói \"Mình cần ở một mình\" lại sợ họ buồn, nên thấy áy náy.",
+      "line3": "Thích ở một mình có lý do khác nhau với mỗi người. Muốn giữ không gian của mình, năng lượng hết nhanh, cảm xúc ùa đến cùng lúc, lo khi ranh giới mờ, hoặc mệt mỏi lâu vì quan hệ. Biết lý do thì cách giải thích với người yêu cũng khác.",
+      "line4": "Qua 10 tình huống, chúng tôi chỉ ra lý do thật khiến ở một mình dễ chịu hơn—và cách hiểu nhu cầu độc lập.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm lý do thích ở một mình",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật khiến ở một mình dễ chịu",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do đi cùng",
+      "strengths": "Điểm mạnh của loại này",
+      "reasonDetail": "Khoảnh khắc cần ở một mình",
+      "frequentSaying": "Câu người loại này hay nói",
+      "changeTips": "Cách hiểu và giải thích nhu cầu độc lập",
+      "oneLiner": "Một câu nhận xét",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startKakao": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startWechat": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startWhatsapp": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startTelegram": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!",
+      "startLine": "Tại sao đang yêu mà mình vẫn thích ở một mình hơn? 🏰 Thích người yêu—sao vẫn cần thời gian một mình? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}
