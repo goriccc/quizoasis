@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Kenapa Sudah Dicintai Masih Terasa Kosong?",
+    "description": "Pasangan baik padamu—kenapa hati tetap kosong? Sepuluh situasi mengungkap apa yang sebenarnya terjadi dan cara mengisinya.",
+    "tags": ["psikologi hubungan"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Pasangan baik padamu—kenapa satu sudut hati tetap kosong?",
+      "line2": "Kamu dengar \"Aku sayang kamu\", merasa diperhatikan, tapi tiba-tiba tetap hampa. Bukan karena mereka kurang, dan bukan karena kamu terlalu menuntut. Celah kosong itu datang dari alasan berbeda untuk tiap orang.",
+      "line3": "Bisa jadi butuh lebih banyak konfirmasi, merasa tak pantas dicintai, luka lama yang belum selesai, gambar cinta di kepala yang terlalu besar, atau kesepian yang jadi kebiasaan. Begitu tahu apa itu, cara mengisinya juga berubah.",
+      "line4": "Kumpulkan reaksimu di sepuluh situasi—kami tunjukkan apa yang sebenarnya mengosongkan hati dan cara mengisi yang cocok buatmu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cari tahu apa yang mengosongkan hati",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Apa yang benar-benar mengosongkan",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Kekosongan yang ikut berjalan",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Tombol kekosonganmu",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara mengisinya",
+      "counseling": "Catatan bantuan profesional",
+      "disclaimer": "Tes ini untuk pemahaman diri, bukan diagnosis medis. Jika hasilnya membuatmu khawatir atau kehidupan sehari-hari dan hubungan terasa sangat berat, pertimbangkan bicara dengan profesional.",
+      "oneLiner": "Dalam satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startKakao": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startWechat": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startWhatsapp": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startTelegram": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startLine": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk dibagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes sedang tren"
+    }
+  },
+  "questions": [
+    {
+      "q": "Pasangan muncul setelah kerja membawa buket kejutan. Kamu senang—tapi satu sudut hati terasa aneh kosong. Pikiran mana yang paling dekat?",
+      "opts": [
+        "Sulit menerimanya sepenuhnya—apa aku pantas dapat yang seperti ini?",
+        "Saat semuanya terasa sebaik ini, aku bersiap-siap tiba-tiba berakhir seperti dulu",
+        "Aku bersyukur, tapi dibanding adegan yang kubayangkan, masih terasa agak kurang",
+        "Senang sih, tapi meski ada orang di samping, satu sudut hati memang tetap kosong"
+      ]
+    },
+    {
+      "q": "Pasangan bilang \"Akhir-akhir ini kamu benar-benar berharga bagiku.\" Beberapa jam kemudian kekosongan kembali. Kamu:",
+      "opts": [
+        "Bertanya-tanya berapa lama kata itu bertahan—kenangan kata manis disusul luka melintas",
+        "Berharap kata-kata itu ikut dengan tindakan yang selama ini kuinginkan",
+        "Kehangatan hanya di momen mendengar, lalu kembali ke rasa sendirian yang familiar",
+        "Ingin mendengarnya lagi—dan lebih sering"
+      ]
+    },
+    {
+      "q": "Sehari penuh bersama pasangan, pulang sendiri lalu hati terasa bolong. Kamu:",
+      "opts": [
+        "Tersisa kecewa karena hari ini belum cocok dengan kencan sempurna yang kubayangkan",
+        "Baru berpisah sudah ingin cek \"Hari ini enak kan?\" dan menunggu pesan",
+        "Rasa sepi mirip baik bersama maupun sendiri—sudah terbiasa",
+        "Terus memutar ulang apakah aku jelek hari ini dan mungkin mengecewakan mereka"
+      ]
+    },
+    {
+      "q": "Pasangan bilang \"Aku sayang kamu.\" Di momen itu kamu:",
+      "opts": [
+        "Bersyukur, tapi ruang kosong di dalam tetap ada—dan aku sendiri tidak tahu kenapa",
+        "Sulit percaya apa yang mereka cintai dariku; kalau tahu aku yang asli mungkin berubah",
+        "Ingat pernah percaya kata seperti ini lalu terluka, jadi tidak bisa percaya penuh",
+        "Senang—tapi ingin mendengarnya beberapa kali sehari, dan cemas kalau tidak mendengar"
+      ]
+    },
+    {
+      "q": "Pasangan bilang lagi sibuk dan hari ini hanya bisa chat singkat. Kamu paham, tapi tetap kosong. Kamu:",
+      "opts": [
+        "Ingin sinyal jelas bahwa mereka masih memikirkanmu meski sibuk",
+        "Kontak menipis terasa seperti menjauh—kenangan putus lama muncul dan hati mengerut",
+        "Punya standar bahwa pasangan harus tetap perhatian segini, jadi tersinggung",
+        "Khawatir jadi beban orang yang sibuk—apakah keberadaanku terlalu berat"
+      ]
+    },
+    {
+      "q": "Orang bilang \"Pasanganmu benar-benar bagus, iri deh.\" Di dalam hati kamu:",
+      "opts": [
+        "Di luar iya, tapi bentuk cinta yang kuinginkan masih jauh",
+        "Memang ketemu orang baik—kenapa hatiku terus sepi?",
+        "Agak mengecil bertanya-tanya apakah aku pantas menerima cinta ini",
+        "Semakin baik, semakin aku membayangkan duluan saat kebahagiaan ini retak"
+      ]
+    },
+    {
+      "q": "Pasangan tertidur di sampingmu, tapi kamu tidak bisa tidur. Pikiran apa yang muncul?",
+      "opts": [
+        "Mereka di sini, tapi entah kenapa aku tetap merasa sendirian",
+        "Ingin bangunkan saja untuk cek seberapa besar mereka mencintaiku sekarang",
+        "Sekilas takut mereka juga bisa pergi suatu hari, seperti dulu",
+        "Perbandingan muncul—hubungan yang kuimpikan bukan seperti ini"
+      ]
+    },
+    {
+      "q": "Pasangan menyiapkan acara besar khusus untukmu. Setelah terharu, apa yang tersisa?",
+      "opts": [
+        "Pertanyaan—apa aku benar-benar layak sampai mereka rela sejauh ini?",
+        "Agak kecewa karena berharap kejutan yang lebih besar lagi",
+        "Ingin cek lagi setelah acara selesai, takut cintanya meredup",
+        "Meski momen bahagia, rasa bahwa ini akan berakhir dan aku sendirian lagi muncul duluan"
+      ]
+    },
+    {
+      "q": "Sudah berdamai setelah bertengkar, tapi hati belum tenang. Kamu:",
+      "opts": [
+        "Perlu tanya beberapa kali lagi \"Kita benar-benar oke?\" baru bisa lega",
+        "Meski sudah damai, satu sudut hati tetap menyimpan kesepian yang mirip",
+        "Merasa pertengkaran karena kesalahanku, dan bertanya-tanya apakah mereka akan terus mencintai orang sepertiku",
+        "Kenangan lama bertengkar jadi putus membuat tegang meski sudah damai"
+      ]
+    },
+    {
+      "q": "Teman bilang \"Mereka baik banget—masih kosong apa?\" Jawaban terdekatmu:",
+      "opts": [
+        "Luka lama yang dalam membuat sulit percaya penuh pada cinta yang sekarang",
+        "Aku tidak yakin aku orang yang pantas menerima cinta ini",
+        "Aku terus butuh bukti dicintai—sekali saja tidak cukup",
+        "Ada ukuran cinta yang kuinginkan, dan belum terisi sejauh itu"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang baru terisi kalau terus mengecek cinta, tipe haus konfirmasi 💧",
+      "typeName": "tipe haus konfirmasi",
+      "realReason": "Konfirmasi bahwa kamu dicintai cepat menguap, jadi terus butuh cek baru",
+      "shortDescription": "Bukan berarti kamu tidak dicintai. Cinta yang diterima cuma tidak bertahan lama—jadi terus haus.",
+      "description": "Bahkan \"Aku sayang kamu\" atau hadiah hanya menenangkan sebentar. Waktu berlalu, kekosongan kembali, dan kamu ingin cek lagi. Bukan mereka yang kurang—umur simpan ketenangan yang hanya terisi lewat konfirmasi memang pendek.\n\nApa yang sebenarnya terjadi: bukan kekurangan cinta—struktur di mana hati hanya terisi dari cek luar, jadi kosong begitu cek itu berhenti",
+      "keywords": "konfirmasi, bilang sayang lagi, umur simpan tenang, haus, menunggu chat",
+      "strengths": "Tulus dalam hubungan, tidak pelit kasih sayang, dan peka pada perubahan kecil pasangan",
+      "reasonDetail": "Saat ekspresi sayang sepi sebentar atau kontak menipis, dan ruang kosong tepat setelah dengar kata manis",
+      "frequentSaying": "\"Kamu suka aku kan?\"",
+      "changeTips": "Saat ingin cek, tanya dulu ke diri sendiri: \"Sekarang aku butuh konfirmasi atau kestabilan?\"\nDaripada nyindir, minta langsung: \"Hari ini bisa tenangkan aku?\"\nSeminggu sekali tambah satu kegiatan yang mengisi tanpa cek dari mereka (olahraga, hobi, teman)",
+      "counselingNote": "Kalau konfirmasi hampir tidak menenangkan dan kecemasan mengganggu kehidupan sehari-hari, jangan coba bereskan sendiri—bicara dengan konselor profesional. Kamu bisa melihat akar kecemasan itu dengan lebih aman.",
+      "oneLiner": "Konfirmasi cuma seteguk yang membasahi tenggorokan. Buat mata air kecil di dalam diri, hausnya jauh lebih ringan",
+      "shareLine": "Kenapa Sudah Dicintai Masih Terasa Kosong? Hasil: tipe haus konfirmasi 💧 Cinta cepat menguap jadi terus butuh cek… Aku dapat tipe haus konfirmasi wkwk Kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang merasa tidak pantas menerima cinta, tipe meragukan harga diri 🪞",
+      "typeName": "tipe meragukan harga diri",
+      "realReason": "Meski dicintai, keraguan \"Apa aku pantas?\" terus mengosongkan hati",
+      "shortDescription": "Kamu tidak kosong karena kurang cinta. Kosong karena cinta yang diterima tidak terasa milikmu.",
+      "description": "Pujian, hadiah, \"Aku sayang kamu\"—sebelum sampai ke hati, keraguan naik duluan. Takut mereka kecewa kalau tahu dirimu yang asli, dan cinta ini terasa berlebihan. Cinta bisa sampai di pintu tapi susah masuk ke dalam hati.\n\nApa yang sebenarnya terjadi: bukan ukuran cinta mereka—skor yang kamu beri ke diri sendiri yang menyempitkan pintu masuk cinta",
+      "keywords": "pantas nggak, berlebihan, nanti ketahuan, pujian canggung, ragu diri",
+      "strengths": "Rendah hati, tulus memperhatikan pasangan, dan sungguh ingin membalas sebesar yang diterima",
+      "reasonDetail": "Momen menerima pujian atau ekspresi cinta besar, dan saat mereka menilai tinggi tentangmu",
+      "frequentSaying": "\"Orang sepertiku enak di mana?\"",
+      "changeTips": "Catat kata baik mereka apa adanya, lalu baca ulang sebagai fakta tanpa berdebat\nSaat dipuji, coba terima dengan \"makasih\" alih-alih menolak dengan \"enggak kok\"\nDi luar pacaran, tulis pencapaian dan momen diakui untuk membangun bukti percaya diri",
+      "counselingNote": "Kalau pikiran \"aku tidak berharga\" sering dan kuat muncul—bukan hanya di pacaran tapi di kehidupan sehari-hari—pertimbangkan bantuan konselor profesional. Harga diri adalah area yang bisa dibangun kembali lewat konseling.",
+      "oneLiner": "Ruang untuk cinta masuk sudah ada. Sesekali pastikan ke diri sendiri bahwa kamu boleh menerimanya",
+      "shareLine": "Kenapa Sudah Dicintai Masih Terasa Kosong? Hasil: tipe meragukan harga diri 🪞 Dicintai pun tidak terasa milikku… Aku dapat tipe meragukan harga diri wkwk Kena banget jadi diam. Kamu?"
+    },
+    {
+      "title": "Orang yang luka lama menghalangi cinta sekarang, tipe luka lama 🕰️",
+      "typeName": "tipe luka lama",
+      "realReason": "Bayangan luka lama menutupi cinta yang kamu punya sekarang",
+      "shortDescription": "Bukan berarti kamu tidak percaya pasangan sekarang. Rasa sakit lama sedang mengirim sinyal waspada ke kebahagiaan hari ini.",
+      "description": "Semakin momen bagus datang, semakin cepat kamu pikir \"Kapan ini retak?\" Bahkan \"Aku sayang kamu\" meninggalkan satu sudut hati waspada. Putus atau luka lama belum selesai ditata, jadi pertahanan nyala sebelum kamu sempat menikmati kebahagiaan sepenuhnya.\n\nApa yang sebenarnya terjadi: bukan curiga pada orang di sampingmu sekarang—pengalaman lama membuat cinta hari ini terbaca sebagai sinyal bahaya",
+      "keywords": "kenangan lama, waspada, bahagia tapi cemas, siap duluan, bayangan",
+      "strengths": "Hati-hati, tidak mudah goyah, dan begitu terbuka kamu mencintai dengan dalam dan kokoh",
+      "reasonDetail": "Saat hubungan makin baik dan dalam, dan saat muncul adegan mirip yang dulu menyakitkan",
+      "frequentSaying": "\"Kalau terlalu enak malah cemas\"",
+      "changeTips": "Pisahkan perbuatan pasangan jadi dua baris: \"fakta terkonfirmasi\" dan \"khawatir dari kenangan lama\"\nSaat cemas naik, cek fakta dulu: \"Ada yang menyakitiku sekarang?\"\nAtur kecepatan hati lebih pelan, keluarkan satu kejujuran kecil sekaligus sambil bangun rasa percaya",
+      "counselingNote": "Kalau luka lama terus muncul dan membuat kehidupan sehari-hari atau hubungan berulang kali berat, jangan tanggung sendiri—tata bersama konselor profesional. Luka lama paling cepat ringan saat dibicarakan di lingkungan aman.",
+      "oneLiner": "Ada bayangan berarti pernah ada cahaya. Pelan-pelan percaya cahaya yang sekarang juga boleh",
+      "shareLine": "Kenapa Sudah Dicintai Masih Terasa Kosong? Hasil: tipe luka lama 🕰️ Bayangan luka lama menutupi cinta sekarang… Aku dapat tipe luka lama wkwk Iya sih. Kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang gambar cinta di dalam terlalu besar, tipe ekspektasi berlebih 🎨",
+      "typeName": "tipe ekspektasi berlebih",
+      "realReason": "Ada jarak antara ukuran cinta yang kamu gambar dan cinta yang muncul di kehidupan nyata",
+      "shortDescription": "Bukan berarti kamu tidak dicintai. Gambar cinta di kepala terlalu besar jadi realitas tidak mengisi seluruh bingkai.",
+      "description": "Meski pasangan baik, tersisa rasa \"Masih belum cocok dengan adegan yang kubayangkan.\" Semakin tinggi standar di kepala—momen seperti film, dialog seperti drama, acara sempurna—cinta nyata semakin terlihat agak kurang.\n\nApa yang sebenarnya terjadi: bukan cinta yang kurang—ekspektasi yang tidak diucapkan menumpuk sampai jarak dengan realitas terasa seperti kekosongan",
+      "keywords": "cinta yang digambar, membandingkan, agak kurang, adegan sempurna, daftar standar",
+      "strengths": "Romansa dan standar soal cinta jelas, dan keinginan besar membuat hubungan terasa spesial",
+      "reasonDetail": "Saat anniversary, acara, atau ekspresi tidak berjalan seperti yang kamu harapkan",
+      "frequentSaying": "\"Harusnya setidaknya segini dong?\"",
+      "changeTips": "Pisahkan cinta yang diinginkan jadi \"wajib (3)\" dan \"kalau ada bagus\" di kertas\nKalau ada adegan yang diharapkan, bilang lebih dulu: \"Kalau kamu lakukan ini aku benar-benar senang\"\nSaat kosong, tulis dulu 3 hal yang pasangan lakukan hari ini—baru lihat yang kurang",
+      "counselingNote": "Kalau jarak ekspektasi dan realitas membuat pacaran berulang kali berat, membantu juga menelusuri bersama konselor profesional dari mana ekspektasi itu berasal.",
+      "oneLiner": "Gambar besar artinya kamu menginginkan cinta dengan dalam. Tunjukkan gambar itu ke pasangan supaya bisa diisi bareng",
+      "shareLine": "Kenapa Sudah Dicintai Masih Terasa Kosong? Hasil: tipe ekspektasi berlebih 🎨 Gambar cintaku terlalu besar jadi realitas kurang… Aku dapat tipe ekspektasi berlebih wkwk Kena. Tipemu apa?"
+    },
+    {
+      "title": "Orang yang default-nya jadi kesepian, tipe kesepian jadi kebiasaan 🌫️",
+      "typeName": "tipe kesepian jadi kebiasaan",
+      "realReason": "Kesepian lama meresap di tubuh, jadi meski dicintai kamu kembali ke rasa kosong",
+      "shortDescription": "Kamu tidak kosong karena cinta pasangan kurang. Kesepian tinggal terlalu lama sampai jadi perasaan paling familiar.",
+      "description": "Meski ada orang di samping, meski dengar kata baik, satu sudut hati kembali ke keadaan kosong duluan. Dicari alasan tidak ketemu penyebab jelas, bahkan terasa aneh bagi dirimu sendiri. Kesepian di sini bukan dari satu peristiwa—lebih seperti musik latar yang sudah lama diputar.\n\nApa yang sebenarnya terjadi: bukan masalah dengan pasangan—kondisi rasa kesepian yang menumpuk lama, yang tidak mudah hilang meski cinta baru masuk",
+      "keywords": "kesepian latar, di samping tetap sendirian, tidak tahu kenapa, hampa familiar, pengaturan bawaan",
+      "strengths": "Tahan waktu sendiri, merasakan emosi dalam, dan serius memikirkan makna hubungan",
+      "reasonDetail": "Saat momen bahagia berakhir, setelah berpisah dan sendirian, serta malam yang sepi",
+      "frequentSaying": "\"Tidak tahu kenapa—cuma terasa kosong\"",
+      "changeTips": "Catat waktu kekosongan naik (malam, baru berpisah, dll.) untuk melihat polanya\nSelain pasangan, tambah satu tempat berbagi hati—teman, keluarga, komunitas\nDaripada menghapus kekosongan, beri nama pelan: \"Ah, sekarang kosong ya,\" dan temani sebentar",
+      "counselingNote": "Kalau rasa kosong dan sepi tanpa alasan jelas bertahan lama—atau mulai mengganggu motivasi, tidur, atau makan—jangan tahan sendiri. Bicara dengan konselor profesional atau sumber kesehatan mental lokal. Perasaan ini bisa jauh lebih ringan dengan bantuan.",
+      "oneLiner": "Kesepian tidak muncul karena kamu lemah. Ia hanya tinggal lama—dan bisa pelan-pelan dilepas",
+      "shareLine": "Kenapa Sudah Dicintai Masih Terasa Kosong? Hasil: tipe kesepian jadi kebiasaan 🌫️ Kesepian jadi default jadi di samping orang tetap kosong… Aku dapat tipe kesepian jadi kebiasaan wkwk Merinding. Kamu?"
+    }
+  ]
+}

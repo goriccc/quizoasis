@@ -1,0 +1,65 @@
+{
+  "phase3EmptyEvenLovedTest": {
+    "startMessage": {
+      "line1": "恋人はよくしてくれるのに、なぜ心の片隅はずっと空いてるの？",
+      "line2": "「愛してる」も言われて、大事にされてるのもわかるのに、ふと虚しくなる時があります。相手が足りないからでも、自分が贅沢だからでもありません。その空白は、人によって理由が違います。",
+      "line3": "もっと確認が欲しいのかもしれないし、愛される資格がない気がするのかもしれない。昔の傷が残っているのかもしれないし、描いている愛のサイズが大きいのかもしれない。長い孤独が習慣になっているのかもしれません。正体がわかれば、埋め方も変わります。",
+      "line4": "10の場面での自分の反応を集めて、埋まらない心の正体と、自分に合う埋め方を教えます。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "虚しさの正体を知る",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "realReason": "虚しさの正体",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenReason": "一緒にいる虚しさ",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "私の虚しさボタン",
+      "frequentSaying": "このタイプがよく言うこと",
+      "changeTips": "埋め方",
+      "counseling": "専門家への相談案内",
+      "disclaimer": "このテストは医学的診断ではなく、自己理解のためのものです。結果が心配だったり、日常や関係で大きなつらさがある場合は、専門家の助けを検討してください。",
+      "oneLiner": "一言コメント",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "retake": "もう一度",
+      "otherTests": "他のテストを見る"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "愛されてるのに、なぜ心が空っぽなの？💧 恋人は大事にしてくれるのに心は空いてる…あなたもやってみて！",
+      "startKakao": "愛されてるのに、なぜ心が空っぽなの？💧 恋人は大事にしてくれるのに心は空いてる…あなたもやってみて！",
+      "startWechat": "愛されてるのに、なぜ心が空っぽなの？💧 恋人は大事にしてくれるのに心は空いてる…あなたもやってみて！",
+      "startWhatsapp": "愛されてるのに、なぜ心が空っぽなの？💧 恋人は大事にしてくれるのに心は空いてる…あなたもやってみて！",
+      "startTelegram": "愛されてるのに、なぜ心が空っぽなの？💧 恋人は大事にしてくれるのに心は空いてる…あなたもやってみて！",
+      "startLine": "愛されてるのに、なぜ心が空っぽなの？💧 恋人は大事にしてくれるのに心は空いてる…あなたもやってみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。少し後にもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが起きました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめTOP5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめTOP5"
+    }
+  }
+}

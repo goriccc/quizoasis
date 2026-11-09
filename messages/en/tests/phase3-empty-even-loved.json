@@ -1,0 +1,65 @@
+{
+  "phase3EmptyEvenLovedTest": {
+    "startMessage": {
+      "line1": "Your partner treats you well—so why does one corner of your heart stay empty?",
+      "line2": "You hear \"I love you,\" you feel cared for, and still that hollow moment shows up. It isn't because they're not enough, and it isn't because you're being greedy. That empty spot comes from different reasons for different people.",
+      "line3": "It might be needing more reassurance, feeling unworthy of love, old wounds that never fully healed, a picture of love that's too big, or loneliness that's become a habit. Once you know what it is, how you fill it changes too.",
+      "line4": "Gather your reactions across ten situations—we'll show what's really going on with that empty feeling and how to fill it in a way that fits you.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find what's emptying my heart",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "What's really emptying you",
+      "keywords": "Key words",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Emptiness walking beside you",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "Your emptiness button",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to fill it",
+      "counseling": "A note about professional support",
+      "disclaimer": "This test is for self-understanding, not a medical diagnosis. If the result worries you or daily life and relationships feel really hard, consider talking with a professional.",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startKakao": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startWechat": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startWhatsapp": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startTelegram": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startLine": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  }
+}

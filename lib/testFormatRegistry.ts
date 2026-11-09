@@ -229,6 +229,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-hurtful-tone-top3': 'scenario_4',
   'phase3-situationship-stuck-reason': 'scenario_4',
   'phase3-fairytale-hero': 'scenario_4',
+  'phase3-empty-even-loved': 'scenario_4',
   'phase3-face-first-impression': 'face',
   'phase3-face-animal-type': 'face',
   'phase3-face-profile-point': 'face',

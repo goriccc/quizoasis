@@ -40,6 +40,15 @@ const SPLIT_MESSAGE_LOADERS: Record<string, Partial<Record<Locale, MessageLoader
     vi: () => import('@/messages/vi/tests/phase3-couple-trip-balance-game.json'),
     id: () => import('@/messages/id/tests/phase3-couple-trip-balance-game.json'),
   },
+  'phase3-empty-even-loved': {
+    ko: () => import('@/messages/ko/tests/phase3-empty-even-loved.json'),
+    en: () => import('@/messages/en/tests/phase3-empty-even-loved.json'),
+    ja: () => import('@/messages/ja/tests/phase3-empty-even-loved.json'),
+    'zh-CN': () => import('@/messages/zh-CN/tests/phase3-empty-even-loved.json'),
+    'zh-TW': () => import('@/messages/zh-TW/tests/phase3-empty-even-loved.json'),
+    vi: () => import('@/messages/vi/tests/phase3-empty-even-loved.json'),
+    id: () => import('@/messages/id/tests/phase3-empty-even-loved.json'),
+  },
   'phase3-fairytale-hero': {
     ko: () => import('@/messages/ko/tests/phase3-fairytale-hero.json'),
     en: () => import('@/messages/en/tests/phase3-fairytale-hero.json'),

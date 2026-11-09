@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Vì sao được yêu rồi mà lòng vẫn trống?",
+    "description": "Người yêu đối xử tốt—vậy sao lòng vẫn trống? Mười tình huống giúp bạn thấy rõ khoảng trống và cách lấp đầy.",
+    "tags": ["tâm lý tình yêu"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Người yêu đối xử tốt, sao một góc lòng vẫn cứ trống?",
+      "line2": "Bạn nghe \"Anh/em yêu\" , cũng cảm nhận được sự quan tâm, rồi bất chợt vẫn thấy trống. Không phải vì đối phương thiếu, cũng không phải vì bạn đòi hỏi quá. Khoảng trống đó đến từ lý do khác nhau ở mỗi người.",
+      "line3": "Có thể vì cần được xác nhận thêm, vì thấy mình không xứng được yêu, vì vết thương cũ chưa lành, vì bức tranh tình yêu trong đầu quá lớn, hoặc vì cô đơn đã thành thói quen. Biết nó là gì thì cách lấp cũng đổi.",
+      "line4": "Gom phản ứng của bạn qua mười tình huống—chúng tôi sẽ chỉ ra khoảng trống đang là gì và cách lấp hợp với bạn.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm xem khoảng trống là gì",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Khoảng trống thực sự",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Khoảng trống đi cùng",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Nút trống của tôi",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách lấp đầy",
+      "counseling": "Gợi ý tư vấn chuyên gia",
+      "disclaimer": "Bài test này dùng để hiểu bản thân, không phải chẩn đoán y khoa. Nếu kết quả khiến bạn lo hoặc đời sống/quan hệ đang rất khó, hãy cân nhắc nhờ chuyên gia.",
+      "oneLiner": "Một dòng nhận xét",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startKakao": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startWechat": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startWhatsapp": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startTelegram": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startLine": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
+  "questions": [
+    {
+      "q": "Người yêu tan ca mang bó hoa bất ngờ đến. Bạn vui—nhưng một góc lòng lại trống một cách kỳ lạ. Nghĩ gần nhất là?",
+      "opts": [
+        "Không nhận trọn được vì tự hỏi mình có xứng nhận thứ này không",
+        "Càng lúc vui càng sợ sẽ đột ngột kết thúc như trước, một góc lòng đề phòng",
+        "Biết ơn, nhưng so với cảnh mình tưởng tượng vẫn thấy thiếu thiếu",
+        "Vui thật, nhưng dù có người bên cạnh một góc lòng vốn vẫn trống"
+      ]
+    },
+    {
+      "q": "Người yêu nói \"Dạo này em/anh thật quý\". Vài giờ sau lại trống. Bạn:",
+      "opts": [
+        "Tự hỏi câu đó kéo dài đến bao giờ—nhớ lúc lời hay rồi lại tổn thương",
+        "Mong không chỉ lời nói mà còn hành động đúng mức mình muốn",
+        "Ấm chỉ đúng lúc nghe, rồi lại về cảm giác một mình quen thuộc",
+        "Muốn nghe thêm lần nữa—và nghe thường xuyên hơn"
+      ]
+    },
+    {
+      "q": "Ở bên người yêu cả ngày, về nhà một mình thì lòng trống rỗng. Bạn:",
+      "opts": [
+        "Còn tiếc vì hôm nay chưa bằng buổi hẹn hoàn hảo mình hình dung",
+        "Vừa chia tay đã muốn hỏi \"Hôm nay vui chứ?\" và chờ tin nhắn",
+        "Ở cùng hay một mình cũng cô đơn tương tự—đã quen rồi",
+        "Cứ nghĩ lại hôm nay mình có tệ không, có làm họ thất vọng không"
+      ]
+    },
+    {
+      "q": "Người yêu nói \"Anh/em yêu\". Lúc đó bạn:",
+      "opts": [
+        "Biết ơn nhưng chỗ trống trong lòng vẫn đó—chính mình cũng chẳng hiểu vì sao",
+        "Khó tin họ yêu điểm gì ở mình; nếu biết con người thật có lẽ sẽ đổi",
+        "Nhớ lần tin lời kiểu này rồi đau, nên không tin hết được",
+        "Vui—nhưng muốn nghe vài lần mỗi ngày, không nghe thì lo"
+      ]
+    },
+    {
+      "q": "Người yêu bảo hôm nay bận, chỉ nhắn ngắn được. Bạn hiểu nhưng vẫn trống. Bạn:",
+      "opts": [
+        "Muốn tín hiệu rõ là dù bận họ vẫn nghĩ đến mình",
+        "Liên lạc thưa ra thấy như đang xa—nhớ chuyện chia tay cũ, lòng co lại",
+        "Có chuẩn: người yêu dù bận cũng phải quan tâm đến mức này, nên buồn",
+        "Sợ mình thành gánh nặng với người đang bận—sự tồn tại của mình có quá không"
+      ]
+    },
+    {
+      "q": "Mọi người nói \"Người yêu bạn quá tốt, ghen tị thật\". Trong lòng bạn:",
+      "opts": [
+        "Bề ngoài thì đúng, nhưng tình yêu mình muốn còn cách khá xa",
+        "Gặp người tốt thật—sao lòng mình vẫn cô đơn mãi?",
+        "Tự hỏi mình có đủ tư cách nhận tình yêu này không rồi hơi cụt",
+        "Càng vui càng tưởng trước lúc hạnh phúc này vỡ, để chuẩn bị tinh thần"
+      ]
+    },
+    {
+      "q": "Người yêu ngủ bên cạnh mà bạn không ngủ được. Nghĩ gì lúc đó?",
+      "opts": [
+        "Ngay cạnh mà vẫn thấy như đang một mình",
+        "Muốn đánh thức ngay để kiểm tra họ yêu mình bao nhiêu lúc này",
+        "Lóe lên nỗi sợ họ cũng có thể rời đi như trước",
+        "So sánh nổi lên—tình yêu mình mơ không phải dạng này"
+      ]
+    },
+    {
+      "q": "Người yêu chuẩn bị sự kiện lớn cho bạn. Sau xúc động còn lại gì?",
+      "opts": [
+        "Tự hỏi: mình có đáng để họ làm đến vậy không?",
+        "Hơi tiếc vì đã kỳ vọng một cảm xúc lớn hơn nữa",
+        "Sự kiện xong lại muốn xác nhận thêm, sợ tình yêu sẽ giảm",
+        "Dù đang hạnh phúc, cảm giác sắp kết thúc rồi lại một mình xuất hiện trước"
+      ]
+    },
+    {
+      "q": "Cãi rồi làm lành nhưng lòng vẫn không yên. Bạn:",
+      "opts": [
+        "Phải hỏi thêm vài lần \"Thật sự ổn chứ?\" mới thở phào",
+        "Dù làm lành, một góc lòng vẫn còn cô đơn quen thuộc",
+        "Cảm giác lỗi ở mình nên mới cãi, không biết họ còn yêu người như mình không",
+        "Nhớ lần cãi dẫn đến chia tay, nên dù làm lành lòng vẫn căng"
+      ]
+    },
+    {
+      "q": "Bạn hỏi \"Được đối xử tốt vậy còn trống gì?\" Câu gần nhất:",
+      "opts": [
+        "Vết thương cũ quá sâu nên khó tin trọn tình yêu hiện tại",
+        "Không chắc mình là người xứng đáng nhận tình yêu này",
+        "Cần xác nhận được yêu liên tục—một lần là không đủ",
+        "Có mức tình yêu mình muốn mà chưa được lấp đến đó"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người chỉ đầy khi được xác nhận tình yêu, kiểu khát xác nhận 💧",
+      "typeName": "kiểu khát xác nhận",
+      "realReason": "Xác nhận được yêu bay hơi nhanh nên cứ cần kiểm tra mới",
+      "shortDescription": "Bạn không thiếu được yêu. Chỉ là tình yêu nhận được không ở lại lâu—nên cổ họng cứ khát.",
+      "description": "Dù nghe \"Anh/em yêu\" hay nhận quà, yên tâm cũng chỉ được một lúc. Thời gian trôi lại trống, lại muốn kiểm tra. Không phải đối phương thiếu—mà hạn dùng của sự yên tâm chỉ lấp bằng xác nhận quá ngắn.\n\nThật ra đang xảy ra gì: không phải thiếu tình yêu—mà cấu trúc chỉ đầy nhờ xác nhận từ ngoài, nên xác nhận dừng là trống ngay",
+      "keywords": "xác nhận, nói yêu thêm lần nữa, hạn dùng của sự yên tâm, khát, chờ tin nhắn",
+      "strengths": "Nghiêm túc với mối quan hệ, không tiếc bày tỏ yêu thương, tinh tế nắm cả thay đổi nhỏ của đối phương",
+      "reasonDetail": "Khi biểu hiện yêu thương im một thời gian hoặc liên lạc thưa đi, và khoảng trống ngay sau lời ngọt",
+      "frequentSaying": "\"Mình thích mình đúng không?\"",
+      "changeTips": "Khi muốn kiểm tra, hỏi trước: \"Giờ mình cần xác nhận hay cần ổn định?\"\nĐừng vòng vo—nói thẳng \"Hôm nay làm mình yên tâm được không?\"\nMỗi tuần thêm một việc tự lấp mình không cần xác nhận từ họ (thể thao, sở thích, bạn bè)",
+      "counselingNote": "Nếu xác nhận xong cũng gần như không yên, lo âu ảnh hưởng đời sống hằng ngày, đừng cố tự xử—hãy nói với chuyên gia tư vấn tâm lý. Bạn có thể nhìn gốc rễ lo âu một cách an toàn hơn.",
+      "oneLiner": "Xác nhận chỉ là một ngụm làm ướt cổ họng. Tự đào một mạch nước trong mình thì cơn khát nhẹ hơn nhiều",
+      "shareLine": "Vì sao được yêu rồi mà lòng vẫn trống? Kết quả: kiểu khát xác nhận 💧 Tình yêu bay hơi nhanh nên cứ phải kiểm tra… Mình ra kiểu khát xác nhận haha Còn bạn?"
+    },
+    {
+      "title": "Người cảm thấy không xứng được yêu, kiểu nghi ngờ giá trị bản thân 🪞",
+      "typeName": "kiểu nghi ngờ giá trị bản thân",
+      "realReason": "Dù được yêu, nghi ngờ \"Mình có xứng không?\" vẫn để trống lòng",
+      "shortDescription": "Bạn không trống vì thiếu tình yêu. Bạn trống vì tình yêu nhận được không cảm giác như của mình.",
+      "description": "Khen, quà, \"Anh/em yêu\"—chưa kịp vào lòng thì nghi ngờ đã lên trước. Sợ họ thất vọng nếu biết con người thật, và tình yêu này thấy quá phần. Tình yêu có thể tới cửa vẫn khó vào trong tim.\n\nThật ra đang xảy ra gì: không phải kích thước tình yêu của họ—mà điểm số bạn tự chấm mình đang thu hẹp lối vào của tình yêu",
+      "keywords": "có xứng không, quá phần, sợ bị lộ, lời khen khó chịu, nghi ngờ bản thân",
+      "strengths": "Khiêm tốn, chân thành quan tâm đối phương, và nghiêm túc muốn đáp lại những gì nhận được",
+      "reasonDetail": "Lúc nhận lời khen hay biểu hiện yêu lớn, và khi họ đánh giá bạn cao",
+      "frequentSaying": "\"Người như mình có gì đáng thích?\"",
+      "changeTips": "Ghi nguyên lời hay họ nói, rồi đọc lại như sự thật không tranh cãi\nKhi được khen, thử nhận bằng \"cảm ơn\" thay vì đẩy bằng \"không đâu\"\nNgoài tình yêu, liệt kê điều bạn làm được và lần được công nhận để dựng bằng chứng tự tin",
+      "counselingNote": "Nếu nghĩ \"mình không đáng\" xuất hiện thường xuyên và mạnh—không chỉ trong tình yêu mà cả đời sống—hãy cân nhắc nhờ chuyên gia tư vấn tâm lý. Cảm giác giá trị bản thân là phần tư vấn có thể giúp dựng lại.",
+      "oneLiner": "Chỗ để tình yêu vào đã có sẵn. Thỉnh thoảng hãy xác nhận với chính mình rằng bạn được phép nhận",
+      "shareLine": "Vì sao được yêu rồi mà lòng vẫn trống? Kết quả: kiểu nghi ngờ giá trị bản thân 🪞 Nhận rồi cũng không thấy là của mình… Mình ra kiểu nghi ngờ giá trị bản thân haha Đúng quá rồi im. Bạn thì sao?"
+    },
+    {
+      "title": "Người vết thương cũ chặn tình yêu hiện tại, kiểu vết thương cũ 🕰️",
+      "typeName": "kiểu vết thương cũ",
+      "realReason": "Bóng của vết thương cũ đang phủ lên tình yêu bạn có bây giờ",
+      "shortDescription": "Bạn không phải đang không tin người yêu hiện tại. Nỗi đau cũ đang gửi tín hiệu cảnh báo vào hạnh phúc hôm nay.",
+      "description": "Càng lúc đẹp càng nghĩ sớm \"Khi nào vỡ?\". Nghe \"Anh/em yêu\" một góc lòng vẫn đề phòng. Chia tay hay vết cũ chưa được sắp xếp xong, nên phòng thủ chạy trước khi bạn kịp hưởng trọn hạnh phúc.\n\nThật ra đang xảy ra gì: không phải nghi người đang bên cạnh—kinh nghiệm quá khứ khiến tình yêu hiện tại bị đọc như tín hiệu nguy hiểm",
+      "keywords": "ký ức cũ, đề phòng, hạnh phúc mà lo, chuẩn bị trước, bóng",
+      "strengths": "Thận trọng, không dễ bị cuốn, một khi mở lòng thì yêu sâu và vững",
+      "reasonDetail": "Khi quan hệ tốt hơn và sâu hơn, và khi xuất hiện cảnh giống lần từng đau",
+      "frequentSaying": "\"Quá vui lại càng bất an\"",
+      "changeTips": "Tách việc người yêu đã làm thành hai dòng: \"sự thật đã xác nhận\" và \"lo do ký ức cũ\"\nKhi lo lên, kiểm tra sự thật trước: \"Giờ có chuyện gì làm mình đau không?\"\nGiữ nhịp chậm cho trái tim, mỗi lần đưa ra một chút thật lòng để xây niềm tin",
+      "counselingNote": "Nếu vết thương cũ cứ nổi lên khiến đời sống hay quan hệ lặp lại khó chịu, đừng một mình gánh—hãy sắp xếp cùng chuyên gia tư vấn tâm lý. Vết cũ thường nhẹ nhất khi được nói trong môi trường an toàn.",
+      "oneLiner": "Có bóng nghĩa là từng có ánh sáng. Chậm rãi tin ánh sáng hiện tại cũng được",
+      "shareLine": "Vì sao được yêu rồi mà lòng vẫn trống? Kết quả: kiểu vết thương cũ 🕰️ Bóng vết cũ phủ lên tình yêu hiện tại… Mình ra kiểu vết thương cũ haha Nhận rồi ức. Bạn ra gì?"
+    },
+    {
+      "title": "Người bức tranh tình yêu trong đầu quá lớn, kiểu kỳ vọng quá cao 🎨",
+      "typeName": "kiểu kỳ vọng quá cao",
+      "realReason": "Có khoảng cách giữa kích thước tình yêu bạn vẽ và tình yêu trong đời thật",
+      "shortDescription": "Bạn không thiếu được yêu. Bức tranh tình yêu trong đầu quá lớn nên thực tế không lấp hết khung.",
+      "description": "Người yêu đối xử tốt vẫn còn tiếc: \"Vẫn chưa bằng cảnh mình tưởng\". Tiêu chuẩn trong đầu càng cao—khoảnh khắc như phim, câu thoại như drama, sự kiện hoàn hảo—thì tình yêu thật càng trông thiếu thiếu.\n\nThật ra đang xảy ra gì: không phải thiếu tình yêu—mà kỳ vọng chưa nói chồng lên đến khi khoảng cách với thực tế thành cảm giác trống",
+      "keywords": "tình yêu đã vẽ, so sánh, thiếu một chút, cảnh hoàn hảo, bảng tiêu chuẩn",
+      "strengths": "Lãng mạn và tiêu chuẩn về tình yêu rõ ràng, rất muốn làm quan hệ đặc biệt",
+      "reasonDetail": "Khi kỷ niệm, sự kiện hay cách bày tỏ không đi đúng cảnh bạn kỳ vọng",
+      "frequentSaying": "\"Ít ra cũng phải làm đến mức này chứ?\"",
+      "changeTips": "Tách tình yêu bạn muốn thành \"3 thứ bắt buộc\" và \"có thì vui\" trên giấy\nNếu có cảnh đang mong, nói sớm: \"Làm vậy mình sẽ rất vui\"\nKhi trống, viết trước 3 việc người yêu làm hôm nay—rồi mới nhìn chỗ thiếu",
+      "counselingNote": "Nếu khoảng cách kỳ vọng và thực tế khiến tình yêu lặp lại khó khăn, cũng hữu ích khi cùng chuyên gia tư vấn tâm lý xem những kỳ vọng đó đến từ đâu.",
+      "oneLiner": "Bức tranh lớn nghĩa là bạn muốn tình yêu rất sâu. Đưa bức tranh đó cho đối phương thì mới cùng lấp được",
+      "shareLine": "Vì sao được yêu rồi mà lòng vẫn trống? Kết quả: kiểu kỳ vọng quá cao 🎨 Bức tranh tình yêu quá lớn nên thực tế thiếu… Mình ra kiểu kỳ vọng quá cao haha Đúng quá. Bạn thuộc kiểu nào?"
+    },
+    {
+      "title": "Người cô đơn thành mặc định, kiểu cô đơn thành thói quen 🌫️",
+      "typeName": "kiểu cô đơn thành thói quen",
+      "realReason": "Cô đơn lâu ngày ngấm vào người, dù đang được yêu cũng quay về cảm giác trống",
+      "shortDescription": "Bạn không trống vì tình yêu người yêu thiếu. Cô đơn ở quá lâu nên thành cảm giác quen thuộc nhất.",
+      "description": "Dù có người bên cạnh, dù nghe lời hay, một góc lòng vẫn về trạng thái trống trước. Tìm lý do cũng chẳng thấy rõ, chính bạn cũng thấy lạ. Cô đơn ở đây không đến từ một sự kiện—mà như nhạc nền đã phát rất lâu.\n\nThật ra đang xảy ra gì: không phải vấn đề với người yêu—mà trạng thái cảm giác cô đơn tích tụ lâu, dù tình yêu mới vào cũng không dễ tan",
+      "keywords": "cô đơn nền, có người cạnh vẫn một mình, không biết vì sao, khoảng trống quen, mặc định",
+      "strengths": "Chịu được thời gian một mình, cảm xúc sâu, và nghiêm túc nghĩ về ý nghĩa quan hệ",
+      "reasonDetail": "Khi khoảnh khắc hạnh phúc kết thúc, lúc chia tay còn lại một mình, và đêm yên tĩnh",
+      "frequentSaying": "\"Không biết vì sao—chỉ thấy trống\"",
+      "changeTips": "Ghi khung giờ trống nổi lên (đêm, vừa chia tay…) để thấy khuôn mẫu\nNgoài người yêu, thêm một chỗ chia sẻ lòng—bạn, gia đình, nhóm\nĐừng cố xóa trống; đặt tên nhẹ: \"À, đang trống đây,\" rồi ở cùng nó một lúc",
+      "counselingNote": "Nếu trống và cô đơn kéo dài không rõ lý do—hoặc ảnh hưởng động lực, ngủ, ăn—đừng cố chịu một mình. Hãy nói với chuyên gia tư vấn tâm lý hoặc nguồn hỗ trợ sức khỏe tâm thần địa phương. Những cảm xúc này có thể nhẹ hơn nhiều khi được giúp.",
+      "oneLiner": "Cô đơn không xuất hiện vì bạn yếu. Nó chỉ ở lâu—và có thể từ từ tiễn đi",
+      "shareLine": "Vì sao được yêu rồi mà lòng vẫn trống? Kết quả: kiểu cô đơn thành thói quen 🌫️ Cô đơn thành mặc định nên có người cạnh vẫn trống… Mình ra kiểu cô đơn thành thói quen haha Nổi da gà. Bạn thì sao?"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "phase3EmptyEvenLovedTest": {
+    "startMessage": {
+      "line1": "另一半对你很好，为什么心里总有一角是空的？",
+      "line2": "听过「我爱你」，也感觉到被照顾，却还是会突然空一下。不是对方不够好，也不是你太贪心。那个空位，每个人背后的原因都不一样。",
+      "line3": "可能是还想多确认一点，也可能是觉得自己不配被爱；可能是旧伤还在，也可能是你心里画的爱太大，或者孤独已经成了习惯。搞清它是什么，填法也会不一样。",
+      "line4": "收集你在十个情境里的反应，告诉你填不满的心究竟是什么，以及适合你的填法。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "看看空虚的真面目",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "相似的其他测试",
+      "realReason": "空虚的真面目",
+      "keywords": "关键词",
+      "scoreTitle": "各类型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "一起出现的空虚",
+      "strengths": "这个类型的优点",
+      "reasonDetail": "我的空虚按钮",
+      "frequentSaying": "这个类型常说的话",
+      "changeTips": "怎么填满",
+      "counseling": "专家咨询提示",
+      "disclaimer": "本测试用于自我理解，并非医学诊断。如果结果让你担心，或日常与关系中遇到很大困难，请寻求专业帮助。",
+      "oneLiner": "一句话点评",
+      "shareResult": "分享结果",
+      "popularBadge": "热门",
+      "retake": "再测一次",
+      "otherTests": "看看其他测试"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "明明被爱着，为什么心里还是空空的？💧 另一半对我很好，心却空着？你也来测！",
+      "startKakao": "明明被爱着，为什么心里还是空空的？💧 另一半对我很好，心却空着？你也来测！",
+      "startWechat": "明明被爱着，为什么心里还是空空的？💧 另一半对我很好，心却空着？你也来测！",
+      "startWhatsapp": "明明被爱着，为什么心里还是空空的？💧 另一半对我很好，心却空着？你也来测！",
+      "startTelegram": "明明被爱着，为什么心里还是空空的？💧 另一半对我很好，心却空着？你也来测！",
+      "startLine": "明明被爱着，为什么心里还是空空的？💧 另一半对我很好，心却空着？你也来测！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "无法使用分享功能。",
+      "wechatCopy": "链接已复制！请到微信里粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 TOP5",
+      "popularTestsTop5": "🔥 热门测试推荐 TOP5"
+    }
+  }
+}

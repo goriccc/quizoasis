@@ -1,0 +1,65 @@
+{
+  "phase3EmptyEvenLovedTest": {
+    "startMessage": {
+      "line1": "Pasangan baik padamu—kenapa satu sudut hati tetap kosong?",
+      "line2": "Kamu dengar \"Aku sayang kamu\", merasa diperhatikan, tapi tiba-tiba tetap hampa. Bukan karena mereka kurang, dan bukan karena kamu terlalu menuntut. Celah kosong itu datang dari alasan berbeda untuk tiap orang.",
+      "line3": "Bisa jadi butuh lebih banyak konfirmasi, merasa tak pantas dicintai, luka lama yang belum selesai, gambar cinta di kepala yang terlalu besar, atau kesepian yang jadi kebiasaan. Begitu tahu apa itu, cara mengisinya juga berubah.",
+      "line4": "Kumpulkan reaksimu di sepuluh situasi—kami tunjukkan apa yang sebenarnya mengosongkan hati dan cara mengisi yang cocok buatmu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cari tahu apa yang mengosongkan hati",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Apa yang benar-benar mengosongkan",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Kekosongan yang ikut berjalan",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Tombol kekosonganmu",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara mengisinya",
+      "counseling": "Catatan bantuan profesional",
+      "disclaimer": "Tes ini untuk pemahaman diri, bukan diagnosis medis. Jika hasilnya membuatmu khawatir atau kehidupan sehari-hari dan hubungan terasa sangat berat, pertimbangkan bicara dengan profesional.",
+      "oneLiner": "Dalam satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startKakao": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startWechat": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startWhatsapp": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startTelegram": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!",
+      "startLine": "Kenapa Sudah Dicintai Masih Terasa Kosong? 💧 Pasangan baik—kenapa hati kosong? Kamu juga coba!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk dibagikan.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes sedang tren"
+    }
+  }
+}

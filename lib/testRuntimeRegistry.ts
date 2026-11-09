@@ -277,6 +277,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3FairytaleHeroTestClient'),
   },
+
+  'phase3-empty-even-loved': {
+    slug: 'phase3-empty-even-loved',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_EMPTY_EVEN_LOVED_META } = await import('./phase3EmptyEvenLovedData');
+      return {
+        title: PHASE3_EMPTY_EVEN_LOVED_META.title,
+        description: PHASE3_EMPTY_EVEN_LOVED_META.description,
+        tags: PHASE3_EMPTY_EVEN_LOVED_META.tags,
+        thumbnail: 'p3_test_empty_even_loved.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3EmptyEvenLovedData');
+      return {
+        questions: mod.phase3EmptyEvenLovedQuestions,
+        results: mod.phase3EmptyEvenLovedResults,
+        meta: {
+          title: mod.PHASE3_EMPTY_EVEN_LOVED_META.title,
+          description: mod.PHASE3_EMPTY_EVEN_LOVED_META.description,
+          tags: mod.PHASE3_EMPTY_EVEN_LOVED_META.tags,
+          thumbnail: 'p3_test_empty_even_loved.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3EmptyEvenLovedTest',
+        messagesFileSlug: 'phase3-empty-even-loved',
+      };
+    },
+    loadClient: () => import('@/components/Phase3EmptyEvenLovedTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Why Do I Still Feel Empty Even When I'm Loved?",
+    "description": "Your partner treats you well—so why does your heart still feel empty? Ten situations reveal what's really going on and how to fill it.",
+    "tags": ["relationship psychology"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Your partner treats you well—so why does one corner of your heart stay empty?",
+      "line2": "You hear \"I love you,\" you feel cared for, and still that hollow moment shows up. It isn't because they're not enough, and it isn't because you're being greedy. That empty spot comes from different reasons for different people.",
+      "line3": "It might be needing more reassurance, feeling unworthy of love, old wounds that never fully healed, a picture of love that's too big, or loneliness that's become a habit. Once you know what it is, how you fill it changes too.",
+      "line4": "Gather your reactions across ten situations—we'll show what's really going on with that empty feeling and how to fill it in a way that fits you.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find what's emptying my heart",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "What's really emptying you",
+      "keywords": "Key words",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Emptiness walking beside you",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "Your emptiness button",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to fill it",
+      "counseling": "A note about professional support",
+      "disclaimer": "This test is for self-understanding, not a medical diagnosis. If the result worries you or daily life and relationships feel really hard, consider talking with a professional.",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startKakao": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startWechat": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startWhatsapp": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startTelegram": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!",
+      "startLine": "Why Do I Still Feel Empty Even When I'm Loved? 💧 Partner treats me well—so why is my heart empty? You try too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
+  "questions": [
+    {
+      "q": "Your partner shows up after work with a surprise bouquet. You're happy—but one corner of your heart feels oddly empty. Which thought is closest?",
+      "opts": [
+        "I can't fully take it in—do I even deserve something like this?",
+        "When things feel this good, I brace for it to end suddenly like before",
+        "I'm grateful, but compared to the scene I imagined, something feels a little short",
+        "It's nice, but even with someone beside me one corner of my heart just stays empty"
+      ]
+    },
+    {
+      "q": "Your partner said \"You've been really precious to me lately.\" A few hours later the emptiness is back. You:",
+      "opts": [
+        "Wonder how long that line will last—memories of good words followed by hurt flash by",
+        "Wish the words came with the kind of actions I've been hoping for too",
+        "Warmth only lasts for that moment, then I'm back to the familiar alone feeling",
+        "Want to hear it again—and more often"
+      ]
+    },
+    {
+      "q": "You spent the whole day with your partner, then got home alone and felt hollow. You:",
+      "opts": [
+        "Feel a leftover disappointment that today didn't match the perfect date I pictured",
+        "Want to check \"Today was good, right?\" the second you part—and wait for a message",
+        "Feel a similar loneliness whether you're together or alone—it's familiar by now",
+        "Keep replaying whether I was off today and might have disappointed them"
+      ]
+    },
+    {
+      "q": "Your partner said \"I love you.\" In that moment you:",
+      "opts": [
+        "Feel grateful, but the empty spot inside stays—and I don't even know why",
+        "Find it hard to believe what they love about me; if they knew the real me it might change",
+        "Remember trusting words like this before and getting hurt, so I can't fully believe it",
+        "Feel happy—but want to hear it several times a day, and get anxious when I don't"
+      ]
+    },
+    {
+      "q": "Your partner says they're busy and can only text briefly today. You understand, but you feel empty. You:",
+      "opts": [
+        "Want a clear signal that they're still thinking of me even while busy",
+        "Feel distance when contact drops—old breakups come back and my heart shrinks",
+        "Have a standard that a partner should still show up this much, so I feel hurt",
+        "Worry I'm a burden to someone busy—like my existence is too much"
+      ]
+    },
+    {
+      "q": "People say \"You really found a great partner—I'm jealous.\" Deep down you:",
+      "opts": [
+        "Outwardly yes, but the love I want still has a long way to go",
+        "I did find someone good—so why do I keep feeling lonely inside?",
+        "Shrink a little wondering if I even deserve this love",
+        "The better it gets, the more I rehearse the moment this happiness breaks"
+      ]
+    },
+    {
+      "q": "Your partner fell asleep beside you, but you can't sleep. What thought shows up?",
+      "opts": [
+        "They're right here, yet somehow I still feel alone",
+        "Want to wake them just to check how much they love me right now",
+        "A flash of fear that they might leave someday, like before",
+        "A comparison pops up—this isn't the relationship I dreamed of"
+      ]
+    },
+    {
+      "q": "Your partner planned a big event just for you. After the warm feeling, what's left?",
+      "opts": [
+        "A question—am I really worth someone going this far?",
+        "A slight letdown because I was hoping for an even bigger wow",
+        "Want another check-in after the event ends, afraid the love will fade",
+        "Even in a happy moment, a feeling that it'll end and I'll be alone again shows up first"
+      ]
+    },
+    {
+      "q": "You made up after a fight, but your heart still isn't settled. You:",
+      "opts": [
+        "Need to ask \"Are we really okay?\" a few more times before I can relax",
+        "Even after making up, a similar loneliness stays in one corner of my heart",
+        "Feel like the fight was my fault, and wonder if they'll keep loving someone like me",
+        "Old memories of fights turning into breakups keep me tense even after making up"
+      ]
+    },
+    {
+      "q": "A friend asks \"They're so good to you—what could still feel empty?\" Your closest answer:",
+      "opts": [
+        "Old deep wounds make it hard to fully trust the love I have now",
+        "I'm not sure I'm someone who deserves this love",
+        "I keep needing proof I'm loved—once isn't enough",
+        "There's a size of love I want, and it isn't filled that far yet"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who fills up only by checking love again, Confirmation Craving 💧",
+      "typeName": "Confirmation Craving",
+      "realReason": "Reassurance that you're loved evaporates fast, so you keep needing a fresh check",
+      "shortDescription": "You're not unloved. The love you receive just doesn't last long—so you keep getting thirsty.",
+      "description": "Even \"I love you\" or a gift only calms you for a moment. Time passes, emptiness returns, and you want to check again. It isn't that they're lacking—it's a short shelf life on reassurance that only fills through confirmation.\n\nWhat's really going on: it isn't a shortage of love—it's a structure where the heart fills only through outside checks, so it empties the second those checks stop",
+      "keywords": "reassurance, say I love you again, shelf life of calm, thirst, waiting for texts",
+      "strengths": "Sincere in relationships, generous with affection, and finely tuned to even small changes in your partner",
+      "reasonDetail": "When affection goes quiet for a while or contact thins out, and the blank right after hearing something sweet",
+      "frequentSaying": "\"You like me, right?\"",
+      "changeTips": "When you want to check, first ask yourself: \"Do I need confirmation right now, or stability?\"\nInstead of hinting, ask directly: \"Can you reassure me today?\"\nOnce a week, add one thing that fills you without their check-in (exercise, a hobby, friends)",
+      "counselingNote": "If reassurance barely lasts and anxiety is hitting daily life, don't try to fix it alone—talk with a counseling professional. You can look at the roots of that anxiety in a safer way.",
+      "oneLiner": "Confirmation is a sip that wets the throat. Build a little spring inside yourself and the thirst eases a lot",
+      "shareLine": "Why Do I Still Feel Empty Even When I'm Loved? Result: Confirmation Craving 💧 Love evaporates fast so I keep needing checks… I got Confirmation Craving lol What about you?"
+    },
+    {
+      "title": "Someone who feels undeserving of love, Self-Worth Doubt 🪞",
+      "typeName": "Self-Worth Doubt",
+      "realReason": "Even when loved, the doubt \"Do I deserve this?\" keeps emptying your heart",
+      "shortDescription": "You aren't empty from a lack of love. You're empty because the love you receive doesn't feel like it belongs to you.",
+      "description": "Praise, gifts, \"I love you\"—before any of it lands, doubt rises first. You fear they'll be disappointed if they knew the real you, and the love feels like too much. Love can reach the door and still struggle to come inside.\n\nWhat's really going on: it isn't the size of their love—it's the score you give yourself that narrows the entrance love has to walk through",
+      "keywords": "deserve it?, too much for me, they'll find out, praise feels awkward, self-doubt",
+      "strengths": "Humble, genuinely considerate, and earnest about giving back as much as you receive",
+      "reasonDetail": "The moment you get praise or a big love gesture, and when they rate you highly",
+      "frequentSaying": "\"What could anyone like about someone like me?\"",
+      "changeTips": "Write down the kind things they say as-is, then reread them as facts without arguing\nWhen praised, try receiving it with \"thank you\" instead of pushing it away with \"no\"\nOutside dating, list wins and moments you were recognized to build evidence of self-trust",
+      "counselingNote": "If \"I'm not worthy\" shows up often and strongly—not just in dating but across daily life—consider support from a counseling professional. Self-worth is something counseling can help rebuild.",
+      "oneLiner": "There's already room for love to enter. Check in with yourself once in a while that you're allowed to receive it",
+      "shareLine": "Why Do I Still Feel Empty Even When I'm Loved? Result: Self-Worth Doubt 🪞 Even when loved it doesn't feel like mine… I got Self-Worth Doubt lol That hit quiet. You?"
+    },
+    {
+      "title": "Someone whose old wounds block today's love, Past-Wound 🕰️",
+      "typeName": "Past-Wound",
+      "realReason": "The shadow of an old wound sits over the love you have now",
+      "shortDescription": "You aren't failing to trust your partner now. Old pain is sending warning signals into today's happiness.",
+      "description": "The better a moment gets, the sooner you think \"When does this break?\" Even \"I love you\" leaves one corner of your heart on guard. Old breakups or wounds still aren't fully sorted, so defense switches on before you can fully enjoy the happiness.\n\nWhat's really going on: it isn't suspicion of who you're with now—past experience makes today's love read like a danger signal",
+      "keywords": "old memories, on guard, happy-but-anxious, bracing early, shadow",
+      "strengths": "Careful, not easily swayed, and once you open up you love deeply and steadily",
+      "reasonDetail": "When the relationship gets better and deeper, and when a scene echoes something that hurt before",
+      "frequentSaying": "\"When it feels too good, I get anxious instead\"",
+      "changeTips": "Split what your partner actually did (confirmed facts) from worries born of old memories into two lines\nWhen anxiety rises, check facts first: \"Did something hurt me right now?\"\nSet a slower pace for your heart and share one small honest piece at a time while building trust",
+      "counselingNote": "If old wounds keep making daily life or relationships hard on repeat, don't carry it alone—sort it with a counseling professional. Old pain lightens fastest when talked through in a safe setting.",
+      "oneLiner": "A shadow means there was light once. It's okay to slowly trust the light you have now",
+      "shareLine": "Why Do I Still Feel Empty Even When I'm Loved? Result: Past-Wound 🕰️ Old wound shadows sitting on today's love… I got Past-Wound lol Yeah that tracks. What about you?"
+    },
+    {
+      "title": "Someone whose inner picture of love is too big, Expectation Overload 🎨",
+      "typeName": "Expectation Overload",
+      "realReason": "There's a gap between the size of love you draw and the love that shows up in real life",
+      "shortDescription": "You aren't unloved. The love picture in your head is so big that reality can't fill the whole frame.",
+      "description": "Even when your partner is good to you, a leftover wish stays: \"It still didn't match the scene I imagined.\" The higher the bar in your head—movie moments, drama lines, perfect events—the more real love always looks a little short.\n\nWhat's really going on: it isn't missing love—it's unspoken expectations stacking up until the gap with reality feels like emptiness",
+      "keywords": "the love I sketched, comparing, a little short, perfect scene, checklist",
+      "strengths": "Clear romance and standards for love, and a big desire to make the relationship feel special",
+      "reasonDetail": "When anniversaries, events, or expressions don't go the way you hoped",
+      "frequentSaying": "\"Shouldn't they do at least this much?\"",
+      "changeTips": "Split the love you want into \"must-haves (3)\" and \"nice-to-haves\" on paper\nIf there's a scene you're hoping for, tell them early: \"I'd really love it if you did this\"\nWhen emptiness hits, first write 3 things your partner did today—then look at what's missing",
+      "counselingNote": "If the gap between expectation and reality keeps making dating hard, it can help to explore with a counseling professional where those expectations come from.",
+      "oneLiner": "A big picture means you want love deeply. Show that picture to your partner so you can fill it together",
+      "shareLine": "Why Do I Still Feel Empty Even When I'm Loved? Result: Expectation Overload 🎨 My love picture is too big so reality feels short… I got Expectation Overload lol Oof that hit. What's your type?"
+    },
+    {
+      "title": "Someone whose default setting became loneliness, Habitual Loneliness 🌫️",
+      "typeName": "Habitual Loneliness",
+      "realReason": "Long-settled loneliness lives in the body, so even while loved you drift back to an empty feeling",
+      "shortDescription": "You aren't empty because your partner's love is lacking. Loneliness stayed so long it became the most familiar feeling.",
+      "description": "Even with someone beside you, even after kind words, one corner of your heart returns to empty first. You look for a reason and can't find a clear cause, which feels strange even to you. Loneliness here isn't from one event—it's like background noise that's been playing for a long time.\n\nWhat's really going on: it isn't a problem with your partner—it's a state where a long-built loneliness sensation doesn't vanish easily even when new love arrives",
+      "keywords": "background loneliness, alone even beside them, don't know why, familiar hollow, default setting",
+      "strengths": "You handle alone time well, feel emotions deeply, and take the meaning of relationships seriously",
+      "reasonDetail": "When a happy moment ends, after parting and being alone, and quiet nights",
+      "frequentSaying": "\"I don't know why—I just feel empty\"",
+      "changeTips": "Log when emptiness rises (night, right after parting, etc.) to spot the pattern\nAdd one more place to share your heart beyond your partner—friends, family, a group\nInstead of trying to erase emptiness, name it gently: \"Ah, emptiness is here,\" and stay with it a moment",
+      "counselingNote": "If emptiness and loneliness linger without a clear reason—or start hitting motivation, sleep, or appetite—don't tough it out alone. Talk with a counseling professional or a local mental health resource. These feelings can get much lighter with support.",
+      "oneLiner": "Loneliness didn't appear because you're weak. It just stayed a long time—and it can leave slowly",
+      "shareLine": "Why Do I Still Feel Empty Even When I'm Loved? Result: Habitual Loneliness 🌫️ Loneliness became the default so I feel empty even beside someone… I got Habitual Loneliness lol Chills. What about you?"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "phase3EmptyEvenLovedTest": {
+    "startMessage": {
+      "line1": "Người yêu đối xử tốt, sao một góc lòng vẫn cứ trống?",
+      "line2": "Bạn nghe \"Anh/em yêu\" , cũng cảm nhận được sự quan tâm, rồi bất chợt vẫn thấy trống. Không phải vì đối phương thiếu, cũng không phải vì bạn đòi hỏi quá. Khoảng trống đó đến từ lý do khác nhau ở mỗi người.",
+      "line3": "Có thể vì cần được xác nhận thêm, vì thấy mình không xứng được yêu, vì vết thương cũ chưa lành, vì bức tranh tình yêu trong đầu quá lớn, hoặc vì cô đơn đã thành thói quen. Biết nó là gì thì cách lấp cũng đổi.",
+      "line4": "Gom phản ứng của bạn qua mười tình huống—chúng tôi sẽ chỉ ra khoảng trống đang là gì và cách lấp hợp với bạn.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm xem khoảng trống là gì",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Khoảng trống thực sự",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Khoảng trống đi cùng",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Nút trống của tôi",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách lấp đầy",
+      "counseling": "Gợi ý tư vấn chuyên gia",
+      "disclaimer": "Bài test này dùng để hiểu bản thân, không phải chẩn đoán y khoa. Nếu kết quả khiến bạn lo hoặc đời sống/quan hệ đang rất khó, hãy cân nhắc nhờ chuyên gia.",
+      "oneLiner": "Một dòng nhận xét",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startKakao": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startWechat": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startWhatsapp": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startTelegram": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!",
+      "startLine": "Vì sao được yêu rồi mà lòng vẫn trống? 💧 Người yêu tốt vậy sao lòng vẫn trống? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Có lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}
