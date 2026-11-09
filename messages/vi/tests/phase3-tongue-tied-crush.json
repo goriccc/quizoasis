@@ -1,0 +1,63 @@
+{
+  "phase3TongueTiedCrushTest": {
+    "startMessage": {
+      "line1": "Bình thường nói chuyện ổn—sao chỉ trước người đó lại ấp úng?",
+      "line2": "Với bạn bè tán không ngớt, nhưng trước crush thì chỉ lặp “ờ… cái đó… ừm…”. Về nhà mới nhớ ra điều muốn nói—xong đạp chăn một phát.",
+      "line3": "Lắp bắp mỗi người một lý do. Có thể quá để ý, muốn hiện hoàn hảo, sợ bị đánh giá, hồi hộp quá đà, hoặc phòng thủ bằng cách nói ít. Biết lý do thì nói chuyện dễ hơn.",
+      "line4": "Qua mười tình huống, chúng tôi chỉ ra lý do thật khiến bạn lắp bắp và cách nói thoải mái hơn.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm lý do tôi lắp bắp",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "realReason": "Lý do thật khiến bạn lắp bắp",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do đi cùng",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Lúc bạn lắp bắp",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách nói thoải mái hơn",
+      "oneLiner": "Một dòng nhận xét",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Hot",
+      "retake": "Làm lại",
+      "otherTests": "Thêm bài test"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startKakao": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startWechat": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startWhatsapp": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startTelegram": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startLine": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

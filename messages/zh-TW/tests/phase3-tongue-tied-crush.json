@@ -1,0 +1,63 @@
+{
+  "phase3TongueTiedCrushTest": {
+    "startMessage": {
+      "line1": "平時明明能說會道，為什麼一到那人面前就結巴？",
+      "line2": "跟朋友聊個不停，一到喜歡的人面前就只會“那個……就是……嗯……”。分開以後才想起想說的話，在被子裡懊惱踢腿。",
+      "line3": "話卡殼的原因因人而異。可能太在意，也可能想表現完美，怕被評價，心動過頭，或用少說話來自我保護。弄清原因，對話就會輕鬆很多。",
+      "line4": "用10個情境，告訴你話卡殼的真正原因，以及說得更輕鬆的方法。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "找出話卡殼的原因",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "類似測試",
+      "realReason": "話卡殼的真正原因",
+      "keywords": "關鍵詞",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "一起存在的原因",
+      "strengths": "這一型的優點",
+      "reasonDetail": "話卡殼的瞬間",
+      "frequentSaying": "這一型常說的話",
+      "changeTips": "說得更輕鬆的方法",
+      "oneLiner": "一句話點評",
+      "shareResult": "分享結果",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "更多測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "為什麼我只在曖昧對象面前詞不達意？💬 平時明明能說，為什麼一到那人面前就不行？你也來測！",
+      "startKakao": "為什麼我只在曖昧對象面前詞不達意？💬 平時明明能說，為什麼一到那人面前就不行？你也來測！",
+      "startWechat": "為什麼我只在曖昧對象面前詞不達意？💬 平時明明能說，為什麼一到那人面前就不行？你也來測！",
+      "startWhatsapp": "為什麼我只在曖昧對象面前詞不達意？💬 平時明明能說，為什麼一到那人面前就不行？你也來測！",
+      "startTelegram": "為什麼我只在曖昧對象面前詞不達意？💬 平時明明能說，為什麼一到那人面前就不行？你也來測！",
+      "startLine": "為什麼我只在曖昧對象面前詞不達意？💬 平時明明能說，為什麼一到那人面前就不行？你也來測！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "無法使用分享功能。",
+      "wechatCopy": "鏈接已複製！請到微信粘貼分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "KakaoTalk 分享時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 類似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  }
+}

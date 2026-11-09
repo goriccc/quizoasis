@@ -314,6 +314,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3EmptyEvenLovedTestClient'),
   },
+
+  'phase3-tongue-tied-crush': {
+    slug: 'phase3-tongue-tied-crush',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_TONGUE_TIED_CRUSH_META } = await import('./phase3TongueTiedCrushData');
+      return {
+        title: PHASE3_TONGUE_TIED_CRUSH_META.title,
+        description: PHASE3_TONGUE_TIED_CRUSH_META.description,
+        tags: PHASE3_TONGUE_TIED_CRUSH_META.tags,
+        thumbnail: 'p3_test_tongue_tied_crush.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3TongueTiedCrushData');
+      return {
+        questions: mod.phase3TongueTiedCrushQuestions,
+        results: mod.phase3TongueTiedCrushResults,
+        meta: {
+          title: mod.PHASE3_TONGUE_TIED_CRUSH_META.title,
+          description: mod.PHASE3_TONGUE_TIED_CRUSH_META.description,
+          tags: mod.PHASE3_TONGUE_TIED_CRUSH_META.tags,
+          thumbnail: 'p3_test_tongue_tied_crush.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3TongueTiedCrushTest',
+        messagesFileSlug: 'phase3-tongue-tied-crush',
+      };
+    },
+    loadClient: () => import('@/components/Phase3TongueTiedCrushTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

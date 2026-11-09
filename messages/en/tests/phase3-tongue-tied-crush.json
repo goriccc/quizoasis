@@ -1,0 +1,63 @@
+{
+  "phase3TongueTiedCrushTest": {
+    "startMessage": {
+      "line1": "You talk fine normally—so why do you only stumble in front of them?",
+      "line2": "With friends the chatter never stops, but around your crush it turns into \"uh… wait… um…\" over and over. The line you meant to say only shows up later—usually while kicking the blanket at home.",
+      "line3": "Getting tongue-tied has different reasons for different people. Maybe you're over-aware, trying to look perfect, scared of being judged, too fluttered, or quietly defending yourself by saying less. Once you know why, talking gets easier.",
+      "line4": "Across ten situations, we'll show what's really making you tongue-tied—and how to speak more comfortably.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find why I get tongue-tied",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "What's really making you tongue-tied",
+      "keywords": "Key words",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Also walking with you",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "When you get tongue-tied",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to speak more easily",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startKakao": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startWechat": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startWhatsapp": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startTelegram": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startLine": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu?",
+    "description": "Bình thường nói chuyện ổn—sao chỉ trước người đó lại ấp úng? Mười tình huống sẽ chỉ ra lý do thật và cách nói chuyện thoải mái hơn.",
+    "tags": ["người đang tìm hiểu", "tâm lý yêu"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Bình thường nói chuyện ổn—sao chỉ trước người đó lại ấp úng?",
+      "line2": "Với bạn bè tán không ngớt, nhưng trước crush thì chỉ lặp “ờ… cái đó… ừm…”. Về nhà mới nhớ ra điều muốn nói—xong đạp chăn một phát.",
+      "line3": "Lắp bắp mỗi người một lý do. Có thể quá để ý, muốn hiện hoàn hảo, sợ bị đánh giá, hồi hộp quá đà, hoặc phòng thủ bằng cách nói ít. Biết lý do thì nói chuyện dễ hơn.",
+      "line4": "Qua mười tình huống, chúng tôi chỉ ra lý do thật khiến bạn lắp bắp và cách nói thoải mái hơn.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm lý do tôi lắp bắp",
+      "linkCopy": "Sao chép link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Bài test tương tự",
+      "realReason": "Lý do thật khiến bạn lắp bắp",
+      "keywords": "Từ khóa",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do đi cùng",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Lúc bạn lắp bắp",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách nói thoải mái hơn",
+      "oneLiner": "Một dòng nhận xét",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Hot",
+      "retake": "Làm lại",
+      "otherTests": "Thêm bài test"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startKakao": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startWechat": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startWhatsapp": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startTelegram": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!",
+      "startLine": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? 💬 Bình thường nói ổn—sao chỉ trước người đó? Bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép link!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép link! Dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Thử lại sau một chút nhé.",
+      "kakaoError": "Lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  },
+  "questions": [
+    {
+      "q": "Bạn ngồi café riêng với người đang tìm hiểu. Giây phút sắp mở lời, bạn…",
+      "opts": [
+        "Mài câu nghe “ngầu” nhất trong đầu rồi lỡ timing",
+        "Co lại trước khi nói vì sợ bị đánh giá thế nào",
+        "Tim đập quá nhanh, giọng không còn như thường—nghe phấn khích",
+        "Cứ cười im vì sợ nói ra là sẽ sai"
+      ]
+    },
+    {
+      "q": "Họ hỏi “Dạo này bạn làm gì?” Bạn…",
+      "opts": [
+        "Trả lời mà cứ lo họ đang phán thế nào—câu càng ngắn",
+        "Hồi hộp quá lớn, muốn nói hết cùng lúc nên câu rối tung",
+        "Nói ngắn “chẳng có gì” rồi không nối tiếp",
+        "Đầu đầy ý “đây là người đó” đến mức quên cả câu thường ngày"
+      ]
+    },
+    {
+      "q": "Giữa chuyện bỗng im lặng. Bạn…",
+      "opts": [
+        "Nghe như cả nhịp tim, thần kinh căng—chẳng nghĩ ra gì",
+        "Thấy im lặng an toàn hơn là nói rồi sai",
+        "Mọi thần kinh đổ hết vào họ, đầu trống trơn",
+        "Mãi tìm câu ngầu để phá im—rồi càng ngại"
+      ]
+    },
+    {
+      "q": "Họ cười nghe bạn kể. Bạn…",
+      "opts": [
+        "Không tiếp chuyện mình mà nhanh chóng đẩy chủ đề về họ",
+        "Khoảnh khắc quá quan trọng nên miệng cứng vì phải làm mọi thứ hoàn hảo",
+        "Xem lại câu vừa rồi đã hoàn hảo chưa, vừa tính câu tiếp sao cho mượt",
+        "Thích nụ cười của họ quá nên lo trước rằng mình trông kỳ"
+      ]
+    },
+    {
+      "q": "Sắp thả một câu đùa. Bạn…",
+      "opts": [
+        "Quá để ý họ nên lại lỡ timing đùa thường ngày",
+        "Chọn câu “có duyên” nhất quá lâu đến khi mạch chuyện chết",
+        "Nuốt lại vì sợ bị đánh giá là không vui",
+        "Cười trước, không kết được câu, lời rối"
+      ]
+    },
+    {
+      "q": "Nói trước mặt họ rồi lỡ lời. Bạn…",
+      "opts": [
+        "Tim đập mạnh—không sửa nổi, mặt đỏ",
+        "Quyết nói ít hơn từ giờ rồi ngậm miệng",
+        "Cố chuộc bằng câu hoàn hảo hơn rồi rối hơn",
+        "Tim thụt vì sợ họ vừa thấy mình kỳ"
+      ]
+    },
+    {
+      "q": "Họ cười: “Bình thường bạn nói hay mà, hôm nay sao vậy?” Bạn…",
+      "opts": [
+        "Cười không nói, đổi chủ đề để kết chuyện",
+        "Muốn nói vì là bạn nên mới để ý hết—nhưng chỉ đỏ mặt",
+        "Co thêm vì nghe như đang bị đánh giá, rồi im",
+        "Hồi hộp lộ hết trên mặt và giọng"
+      ]
+    },
+    {
+      "q": "Đang soạn tin nhắn gửi họ. Bạn…",
+      "opts": [
+        "Vì để ý họ nên viết-xóa hơn mười lần",
+        "Sửa đến khi “hoàn hảo” rồi không gửi được",
+        "Hồi hộp viết dài loạn rồi xấu hổ xóa",
+        "Chỉ gửi một hai từ—sợ nói dài sẽ rối"
+      ]
+    },
+    {
+      "q": "Phải kể chuyện dài về mình trước mặt họ. Bạn…",
+      "opts": [
+        "Lo cả cách mình “diễn” khi nói nên càng gượng",
+        "Chưa nói đã ra mồ hôi tay vì sợ phản ứng của họ",
+        "Ngập ngừng đuôi câu rồi kết ngắn để tránh sai",
+        "Mọi thần kinh khóa vào họ nên câu định nói biến mất trong đầu"
+      ]
+    },
+    {
+      "q": "Về nhà sau khi chia tay, nhớ lại chuyện hôm nay. Hối tiếc gần nhất:",
+      "opts": [
+        "Cứ nhớ lại câu vừa rồi nghe có kỳ không—sợ bị đánh giá",
+        "Mặt nóng khi nhớ mình hồi hộp đến mức chẳng ra hồn",
+        "Nhớ mình hầu như chẳng nói gì vì thần kinh toàn ở họ",
+        "Diễn lại phiên bản “ngầu hơn” của những gì lẽ ra nên nói"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người mọi thần kinh khóa vào họ, kiểu căng thẳng vì quá tập trung 🎯",
+      "typeName": "kiểu căng thẳng vì quá tập trung",
+      "realReason": "Sự chú ý ùa hết vào họ cùng lúc nên sự tự nhiên thường ngày biến mất",
+      "shortDescription": "Bạn không kém nói chuyện. Chỉ là mọi chú ý đang ở họ—không còn chỗ lấy ra cái tôi thường ngày.",
+      "description": "Câu đùa và câu nói dễ tuôn với bạn bè biến mất trước mặt họ. Khi ý thức chỉ hướng về họ, chỗ để nói lời của mình thu hẹp. Không phải vấn đề kỹ năng nói—là chú ý đổ dồn một chỗ.\n\nGiải ra lý do thật sự: không phải họ “nặng” quá—ý thức khóa vào họ đến mức năng lượng cho lời của bạn giảm",
+      "keywords": "khóa chú ý, đầu trống, không như thường ngày, quá để ý, viết-xóa",
+      "strengths": "Tập trung chân thành và không bỏ lỡ thay đổi nhỏ ở họ",
+      "reasonDetail": "Khi chỉ có hai người, khi im lặng rơi xuống, khi soạn tin",
+      "frequentSaying": "\"Đầu mình trống trơn rồi\"",
+      "changeTips": "Trước khi gặp, ghi sẵn \"3 chủ đề hôm nay\"\nKhi căng, thở chậm và nhìn một vật trước mắt một giây—đừng nhìn họ\nNếu nghẹn lời, nói thật \"Mình hơi hồi hộp vì là bạn\" để giảm áp",
+      "oneLiner": "Đầu trống nghĩa là trái tim lớn. Vài chủ đề và một câu thật là đủ",
+      "shareLine": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? Kết quả: kiểu căng thẳng vì quá tập trung 🎯 Thần kinh khóa hết vào họ nên đầu trống… Mình ra kiểu này haha Còn bạn?"
+    },
+    {
+      "title": "Người chọn lời để trông thật ngầu, kiểu diễn hoàn hảo 🎭",
+      "typeName": "kiểu diễn hoàn hảo",
+      "realReason": "Muốn hiện phiên bản ngầu nhất nên dàn dựng câu—và mạch chuyện chết khi đang sửa",
+      "shortDescription": "Bạn không vụng lời. Bạn chờ câu hoàn hảo—và lỡ lúc nên nói.",
+      "description": "Bạn mãi chọn joke duyên, câu ngầu, câu mở hoàn hảo trong đầu. Trong lúc mài thì cuộc trò chuyện đã đi tiếp—câu cuối cùng ép ra nghe cứng. Diễn càng mạnh, bản tự nhiên càng bị che.\n\nGiải ra lý do thật sự: năng lượng đang vào dàn dựng \"mình trông thế nào\"—không phải vào cuộc trò chuyện",
+      "keywords": "mài câu, muốn ngầu, lỡ timing, tính toán, dàn dựng",
+      "strengths": "Có nỗ lực tạo ấn tượng tốt, duyên và tinh tế",
+      "reasonDetail": "Khi mở lời, khi đùa, khi gửi tin",
+      "frequentSaying": "\"Lẽ ra mình nói ngầu hơn được\"",
+      "changeTips": "Giới hạn sửa \"một lần\" rồi nói nguyên vậy\nBỏ câu ngầu—nói trước một dòng thật. VD: \"Hôm nay gặp bạn mình vui\"\nNhớ: chút vụng chân thật thường dễ được lòng hơn kịch bản hoàn hảo",
+      "oneLiner": "Không cần câu hoàn hảo. Một dòng chân thành hơi vụng lại gần hơn",
+      "shareLine": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? Kết quả: kiểu diễn hoàn hảo 🎭 Muốn nói ngầu rồi lỡ timing… Mình ra kiểu diễn hoàn hảo haha Công nhận. Bạn?"
+    },
+    {
+      "title": "Người sợ bị đánh giá, kiểu sợ bị đánh giá 🔍",
+      "typeName": "kiểu sợ bị đánh giá",
+      "realReason": "Sợ lời mình bị phán thế nào nên co lại trước khi kịp nói",
+      "shortDescription": "Bạn không hết chuyện để nói. Miệng cứng trước vì sợ bị đánh giá thế nào.",
+      "description": "\"Vừa rồi nghe có kỳ không?\" và \"Joke mà không vui thì sao?\" phủ đầy trước và sau khi nói. Một biểu cảm nhỏ cũng bị đọc như điểm số, lời càng ngắn. Sau khi chia tay còn tua lại cảnh rồi tự trách.\n\nGiải ra lý do thật sự: không phải đánh giá thật của họ—là đánh giá bạn tưởng tượng đang chặn lời",
+      "keywords": "sợ đánh giá, co lại, đọc mặt, tua lại, câu ngắn hơn",
+      "strengths": "Chọn lời thận trọng và tinh tế để không thất lễ",
+      "reasonDetail": "Khi định đùa, sau khi lỡ lời, khi xem phản ứng họ",
+      "frequentSaying": "\"Mình vừa nghe có kỳ không?\"",
+      "changeTips": "Trước khi đọc mặt họ, chỉ nhớ lại \"lời họ thật sự nói\" như sự thật\nLỡ lời thì cười nhận: \"Á vừa rối miệng haha\" rồi qua\nNếu bắt đầu tua lại sau khi chia tay, viết ba phản ứng thật họ đã có—không phải tưởng tượng",
+      "oneLiner": "Họ không đang chấm điểm bạn—họ đang tìm hiểu bạn. Hướng chú ý vào cuộc trò chuyện, không vào bảng điểm",
+      "shareLine": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? Kết quả: kiểu sợ bị đánh giá 🔍 Miệng cứng trước vì sợ bị đánh giá… Mình ra kiểu này haha Đụng tim. Bạn thuộc kiểu nào?"
+    },
+    {
+      "title": "Người hồi hộp tràn ra ngoài, kiểu hồi hộp quá đà 💓",
+      "typeName": "kiểu hồi hộp quá đà",
+      "realReason": "Hồi hộp quá lớn nên tốc độ tim và tốc độ lời không khớp—câu rối",
+      "shortDescription": "Bạn không vụng lời—tim chỉ đang chạy trước. Lời không kịp theo nhịp hồi hộp.",
+      "description": "Mọi điều muốn nói ùa vào cùng lúc, thứ tự loạn, cười đến trước, câu không kết được. Giọng cao lên, mặt đỏ—lộ hết. Cảm xúc thành thật lộ ra không phải điểm yếu; đó cũng là sức hút.\n\nGiải ra lý do thật sự: không phải kỹ năng nói—tốc độ cảm xúc nhanh hơn tốc độ lời",
+      "keywords": "tim đập, lời rối, mặt đỏ, giọng cao, cảm xúc đi trước",
+      "strengths": "Cảm xúc chân thật, phong phú—không giấu hồi hộp",
+      "reasonDetail": "Khi họ cười, khi được khen, khi soạn tin",
+      "frequentSaying": "\"Giờ mình hồi hộp đến mức chẳng nói được\"",
+      "changeTips": "Trước khi nói, thở 3 giây để hạ nhịp tim—rồi từng câu một\nKhi muốn nói nhiều, chỉ lấy một điều quan trọng nhất trước\nNếu hồi hộp lộ, nhận \"Mình đang hơi run\" thường thấy dễ hơn",
+      "oneLiner": "Hồi hộp lộ không phải điểm yếu—là chân thành. Chỉ cần chậm một chút, cảm xúc sẽ rõ hơn",
+      "shareLine": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? Kết quả: kiểu hồi hộp quá đà 💓 Hồi hộp lớn quá lời không kịp… Mình ra kiểu này haha Nổi da gà. Còn bạn?"
+    },
+    {
+      "title": "Người tự bảo vệ bằng im lặng, kiểu phòng thủ bằng im lặng 🤐",
+      "typeName": "kiểu phòng thủ bằng im lặng",
+      "realReason": "Sợ sai nên cắt lời và ngậm miệng—cuộc trò chuyện đứt",
+      "shortDescription": "Bạn không phải không muốn nói. Chỉ thấy nói ít an toàn hơn là mạo hiểm sai.",
+      "description": "Bạn trả chủ đề về họ, trả lời ngắn, cười cho qua để giảm rủi ro. Ít sai hơn—nhưng họ cũng ít cơ hội biết bạn, đôi khi hiểu nhầm là bạn không quan tâm. Im lặng an toàn dễ thành khoảng cách.\n\nGiải ra lý do thật sự: không phải bạn không nói được—phòng thủ tránh sai đang thu hẹp cuộc trò chuyện",
+      "keywords": "nói ít, trả chủ đề, trả lời ngắn, tránh sai, im lặng an toàn",
+      "strengths": "Thận trọng, lắng nghe tốt, để lại ấn tượng điềm tĩnh",
+      "reasonDetail": "Khi im lặng rơi, ngay sau lỡ lời, khi họ chờ câu chuyện của bạn",
+      "frequentSaying": "\"À, thôi… chẳng có gì\"",
+      "changeTips": "Sau câu ngắn, thêm một dòng về bạn. VD: \"Tuần này mình xem phim\"\nMỗi ngày một lần trong chat nhỏ (chào / hỏi thăm), tập chồng thêm một dòng\nCố ý cho phép sai nhỏ để học rằng chuyện vẫn tiếp tục",
+      "oneLiner": "Im lặng an toàn—nhưng thành khoảng cách. Thêm một dòng, họ sẽ biết bạn hơn",
+      "shareLine": "Vì sao tôi chỉ lắp bắp trước người đang tìm hiểu? Kết quả: kiểu phòng thủ bằng im lặng 🤐 Sợ sai nên nói ít… Mình ra kiểu này haha Công nhận. Bạn?"
+    }
+  ]
+}

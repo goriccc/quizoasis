@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Why Do I Only Get Tongue-Tied Around My Crush?",
+    "description": "You talk fine with everyone else—so why do you stumble only with them? Ten situations reveal what's really going on and how to speak more easily.",
+    "tags": ["situationship", "relationship psychology"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "You talk fine normally—so why do you only stumble in front of them?",
+      "line2": "With friends the chatter never stops, but around your crush it turns into \"uh… wait… um…\" over and over. The line you meant to say only shows up later—usually while kicking the blanket at home.",
+      "line3": "Getting tongue-tied has different reasons for different people. Maybe you're over-aware, trying to look perfect, scared of being judged, too fluttered, or quietly defending yourself by saying less. Once you know why, talking gets easier.",
+      "line4": "Across ten situations, we'll show what's really making you tongue-tied—and how to speak more comfortably.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the test",
+      "startTest": "Find why I get tongue-tied",
+      "linkCopy": "Copy link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Similar tests",
+      "realReason": "What's really making you tongue-tied",
+      "keywords": "Key words",
+      "scoreTitle": "Scores by type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Also walking with you",
+      "strengths": "Strengths of this type",
+      "reasonDetail": "When you get tongue-tied",
+      "frequentSaying": "What this type often says",
+      "changeTips": "How to speak more easily",
+      "oneLiner": "In one line",
+      "shareResult": "Share result",
+      "popularBadge": "Popular",
+      "retake": "Retake",
+      "otherTests": "More tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startKakao": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startWechat": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startWhatsapp": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startTelegram": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!",
+      "startLine": "Why Do I Only Get Tongue-Tied Around My Crush? 💬 I talk fine normally—so why only with them? You try too!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Setting up KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "Something went wrong while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 similar tests",
+      "popularTestsTop5": "🔥 Top 5 trending tests"
+    }
+  },
+  "questions": [
+    {
+      "q": "You're alone at a café with the crush you're talking to. Right as you try to open: you…",
+      "opts": [
+        "Polish the coolest-sounding line in your head and miss the timing",
+        "Shrink before speaking, worried how they'll judge whatever you say",
+        "Heart racing so hard your voice comes out higher than usual",
+        "Stay quiet and just smile—talking feels like a setup for a mistake"
+      ]
+    },
+    {
+      "q": "They ask, \"So what have you been up to?\" You…",
+      "opts": [
+        "Answer while fretting how they're reading you—so your words get short",
+        "Have so much flutter that everything wants out at once and the sentences tangle",
+        "Say \"nothing much\" briefly and don't keep the thread going",
+        "Fill your head with \"it's them\" until even your usual lines vanish"
+      ]
+    },
+    {
+      "q": "Silence drops mid-conversation. You…",
+      "opts": [
+        "Feel your heartbeat and freeze—nothing comes to mind",
+        "Feel safer leaving the quiet alone than risking a mistake by talking",
+        "Pour every bit of attention onto them until your mind goes blank",
+        "Hunt for a cool line to break it—and make it more awkward"
+      ]
+    },
+    {
+      "q": "They're smiling while listening to you. You…",
+      "opts": [
+        "Steer the topic back to them instead of continuing your story",
+        "Freeze up because the moment feels so important you have to nail everything",
+        "Replay whether the last line was perfect while calculating a smoother next one",
+        "Worry first that you look weird because you like their smile so much"
+      ]
+    },
+    {
+      "q": "You're about to drop a joke. You…",
+      "opts": [
+        "Miss the usual timing again because you're too aware of them",
+        "Spend so long picking the most \"clever\" joke that the flow dies",
+        "Swallow it—afraid they'll rate it as not funny",
+        "Laugh first, can't finish the sentence, and the words tangle"
+      ]
+    },
+    {
+      "q": "You slip up while talking in front of them. You…",
+      "opts": [
+        "Heart pounding—you can't even fix it and your face goes red",
+        "Decide saying less from here is safer and shut your mouth",
+        "Try to recover with a more perfect sentence and tangle worse",
+        "Feel your stomach drop wondering if they just saw you as weird"
+      ]
+    },
+    {
+      "q": "They laugh, \"You're usually so articulate—what's with you today?\" You…",
+      "opts": [
+        "Smile without words and try to end it by changing the subject",
+        "Want to say it's because it's you—but only your face turns red",
+        "Shrink more, reading even that as an evaluation, and go quiet",
+        "Let the flutter show all over your face and voice"
+      ]
+    },
+    {
+      "q": "You're drafting a message to them. You…",
+      "opts": [
+        "Write and delete more than ten times because they're on your mind",
+        "Keep editing until it's \"perfect\"—and never hit send",
+        "Write long and messy from excitement, then delete out of embarrassment",
+        "Send one or two words only—afraid anything longer will tangle"
+      ]
+    },
+    {
+      "q": "You need to tell a longer story in front of them. You…",
+      "opts": [
+        "Get awkward from staging how you look while you speak",
+        "Sweat before you start—scared of how they'll react",
+        "Trail off and wrap it short to avoid a mistake",
+        "Lose the line in your head because every nerve is locked on them"
+      ]
+    },
+    {
+      "q": "Home after parting, replaying today. Your closest regret:",
+      "opts": [
+        "Keep replaying whether something sounded weird—scared of being judged",
+        "Get hot-faced remembering how fluttered and useless you looked",
+        "Realize you said almost nothing while all your attention sat on them",
+        "Restage the \"cooler\" version of what you could've said"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone whose every nerve locks onto them, Over-Focus Tension 🎯",
+      "typeName": "Over-Focus Tension",
+      "realReason": "Attention floods onto them at once, so your usual ease disappears",
+      "shortDescription": "You're not bad at talking. Every bit of attention is on them—so there's no room left to pull out your usual self.",
+      "description": "Jokes and lines that come easy with friends vanish in front of them. Once awareness points only at them, there's less space to speak. It isn't a speaking-skill problem—it's attention collapsing into one place.\n\nUnpacked: they aren't \"too much\"—your awareness is so locked on them that energy for your own words shrinks",
+      "keywords": "attention lock, mind goes blank, not my usual self, over-awareness, write-delete loop",
+      "strengths": "You focus sincerely and catch even tiny changes in them",
+      "reasonDetail": "When you're alone together, when silence lands, when you're drafting a message",
+      "frequentSaying": "\"My mind just went blank\"",
+      "changeTips": "Before meeting, jot \"3 topic ideas for today\"\nWhen tense, exhale slowly and rest your eyes on one object nearby for a second—not on them\nIf words stall, say honestly \"I'm a bit nervous because it's you\" to lower the pressure",
+      "oneLiner": "A blank mind means a big heart. A few topics and one honest line are enough",
+      "shareLine": "Why Do I Only Get Tongue-Tied Around My Crush? Result: Over-Focus Tension 🎯 All my attention locks on them and my mind goes blank… I got Over-Focus Tension lol What about you?"
+    },
+    {
+      "title": "Someone who edits every line to look cool, Perfect Performance 🎭",
+      "typeName": "Perfect Performance",
+      "realReason": "You stage the coolest version of yourself—and the flow dies while you edit",
+      "shortDescription": "You're not clumsy with words. You're waiting for the perfect line—and missing the moment to speak.",
+      "description": "You keep polishing witty jokes, cool sentences, and the perfect opener in your head. While you edit, the conversation moves on—and the line you finally squeeze out sounds stiff. The harder you perform, the more your natural self gets covered.\n\nUnpacked: energy is going into \"how do I look?\" staging—not into the conversation itself",
+      "keywords": "line polishing, looking cool, missed timing, calculating, staging",
+      "strengths": "You care about making a good impression and bring real sense and detail",
+      "reasonDetail": "When opening, when joking, when sending a message",
+      "frequentSaying": "\"I could've said that cooler\"",
+      "changeTips": "Cap edits at \"once,\" then say it as-is\nSkip the cool line—lead with one honest sentence. Ex: \"I'm really glad I saw you today\"\nRemember a little awkward honesty often lands better than a perfect script",
+      "oneLiner": "You don't need a perfect sentence. A slightly awkward honest line reaches closer",
+      "shareLine": "Why Do I Only Get Tongue-Tied Around My Crush? Result: Perfect Performance 🎭 Trying to sound cool and missing the timing… I got Perfect Performance lol Fair. You?"
+    },
+    {
+      "title": "Someone scared of being evaluated, Evaluation Fear 🔍",
+      "typeName": "Evaluation Fear",
+      "realReason": "Fear of how your words will be judged shrinks you before you even speak",
+      "shortDescription": "You aren't out of things to say. Your mouth freezes first because you're scared of how you'll be judged.",
+      "description": "\"Did that sound weird?\" and \"What if the joke lands flat?\" fill the moments before and after you speak. Even a tiny expression reads like a score, so your words get shorter. After parting you rewind the scene and blame yourself.\n\nUnpacked: it isn't their actual judgment—the evaluation you imagined is blocking your words",
+      "keywords": "fear of judgment, shrinking, reading faces, rewinding, shorter answers",
+      "strengths": "You're careful with words and finely considerate about not crossing them",
+      "reasonDetail": "When joking, after a slip, when reading their reaction",
+      "frequentSaying": "\"Did I sound weird just now?\"",
+      "changeTips": "Before interpreting their face, recall only the words they actually said as facts\nWhen you slip, laugh it off: \"Ugh my words tangled lol\" and move on\nIf rewind starts after parting, write three real reactions they gave—not imagined ones",
+      "oneLiner": "They're not judging you—they're getting to know you. Point attention at the chat, not the scoreboard",
+      "shareLine": "Why Do I Only Get Tongue-Tied Around My Crush? Result: Evaluation Fear 🔍 Mouth freezes first from fear of being judged… I got Evaluation Fear lol That hit. What's your type?"
+    },
+    {
+      "title": "Someone whose flutter overflows, Excitement Overload 💓",
+      "typeName": "Excitement Overload",
+      "realReason": "Excitement is so big that heart-speed and word-speed don't match—so sentences tangle",
+      "shortDescription": "You're not clumsy with words—your heart is just racing ahead. Speech can't keep up with the flutter.",
+      "description": "Everything you want to say rushes in at once, order collapses, laughter arrives first, and sentences don't finish. Your voice lifts, your face goes red—and it all shows. That honest emotion isn't a flaw; it's also charm.\n\nUnpacked: not a speaking-skill issue—emotion is simply moving faster than speech",
+      "keywords": "heart racing, tangled words, blushing, high voice, feelings first",
+      "strengths": "Emotions are honest and rich—you don't hide the flutter",
+      "reasonDetail": "When they smile, when you're praised, when drafting a message",
+      "frequentSaying": "\"I'm so fluttered I can't talk\"",
+      "changeTips": "Before speaking, take a 3-second breath to slow your heart—then one sentence at a time\nWhen lots wants out, say the single most important thing first\nIf the flutter shows, admitting \"I'm a little shaky right now\" often makes it easier",
+      "oneLiner": "Visible flutter isn't weakness—it's sincerity. Slow just a little and the feeling comes through clearer",
+      "shareLine": "Why Do I Only Get Tongue-Tied Around My Crush? Result: Excitement Overload 💓 Flutter so big words can't keep up… I got Excitement Overload lol Chills. What about you?"
+    },
+    {
+      "title": "Someone who protects themselves by saying less, Silence Defense 🤐",
+      "typeName": "Silence Defense",
+      "realReason": "Fear of mistakes makes you cut words and shut down—so the chat stalls",
+      "shortDescription": "You aren't unwilling to talk. Saying less just feels safer than risking a mistake.",
+      "description": "You hand topics back, answer short, and smile past risk. Mistakes drop—but they also get fewer chances to know you, and may read it as low interest. Safe silence turns into distance easily for this type.\n\nUnpacked: you can talk—defense against mistakes is what shrinks the conversation",
+      "keywords": "saying less, handing topics back, short answers, avoiding mistakes, safe silence",
+      "strengths": "You're careful, a good listener, and leave a calm impression",
+      "reasonDetail": "When silence lands, right after a slip, when they're waiting for your story",
+      "frequentSaying": "\"Ah, just… nothing much\"",
+      "changeTips": "After a short answer, add one line about you. Ex: \"I watched a movie this week\"\nOnce a day in a tiny chat (hello / check-in), practice stacking one extra line\nAllow small mistakes on purpose so you learn the chat still continues",
+      "oneLiner": "Silence is safe—but it becomes distance. One more line and they get to know you better",
+      "shareLine": "Why Do I Only Get Tongue-Tied Around My Crush? Result: Silence Defense 🤐 Holding back words to avoid mistakes… I got Silence Defense lol Fair. You?"
+    }
+  ]
+}

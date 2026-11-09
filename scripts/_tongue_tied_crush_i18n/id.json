@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Kenapa Aku Hanya Gugup Bicara di Depan Crush?",
+    "description": "Biasanya bicara lancar—kenapa cuma di depan dia tersendat? Sepuluh situasi mengungkap alasan sebenarnya dan cara bicara lebih santai.",
+    "tags": ["situationship", "psikologi cinta"]
+  },
+  "messages": {
+    "startMessage": {
+      "line1": "Biasanya bicara lancar—kenapa cuma di depan dia tersendat?",
+      "line2": "Sama teman ngobrol nggak berhenti, tapi di depan crush cuma \"eh… itu… hmm…\" berulang. Baru ingat yang mau dikatakan setelah pulang—sambil nendang selimut.",
+      "line3": "Lidah keliru punya alasan beda di tiap orang. Bisa terlalu sadar, ingin terlihat sempurna, takut dinilai, deg-degan berlebih, atau bela diri dengan sedikit bicara. Tahu alasannya, ngobrol jadi lebih gampang.",
+      "line4": "Lewat sepuluh situasi, kami tunjukkan alasan sebenarnya lidahmu keliru—dan cara bicara lebih nyaman.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cari tahu kenapa lidahku keliru",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "realReason": "Alasan sebenarnya lidah keliru",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang ikut jalan",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Saat lidah keliru",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara bicara lebih santai",
+      "oneLiner": "Satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Tes lainnya"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startKakao": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startWechat": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startWhatsapp": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startTelegram": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startLine": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Ada error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes sedang tren"
+    }
+  },
+  "questions": [
+    {
+      "q": "Kamu duduk berdua di kafe dengan crush / situationship. Tepat mau membuka omongan, kamu…",
+      "opts": [
+        "Menghaluskan kalimat yang terdengar paling keren di kepala lalu kehilangan timing",
+        "Menciut sebelum bicara karena takut dinilai seperti apa",
+        "Jantung berdegup kencang sampai suaramu naik, tidak seperti biasanya",
+        "Diam dan hanya tersenyum—bicara terasa seperti undangan salah"
+      ]
+    },
+    {
+      "q": "Dia bertanya, \"Akhir-akhir ini lagi ngapain?\" Kamu…",
+      "opts": [
+        "Menjawab sambil khawatir dia menilai—jadi kata-katamu memendek",
+        "Deg-degan begitu besar sampai semua mau keluar bersamaan dan kalimat kusut",
+        "Jawab singkat \"nggak ada apa-apa\" lalu tidak meneruskan",
+        "Kepala penuh \"ini dia\" sampai kalimat biasa pun hilang"
+      ]
+    },
+    {
+      "q": "Keheningan jatuh di tengah obrolan. Kamu…",
+      "opts": [
+        "Seperti mendengar detak jantung, saraf tegang—tidak ada yang muncul",
+        "Merasa lebih aman membiarkan diam daripada bicara lalu salah",
+        "Semua perhatian ke dia sampai pikiran blank",
+        "Mencari kalimat keren untuk memecah diam—malah lebih canggung"
+      ]
+    },
+    {
+      "q": "Dia tersenyum sambil mendengarkanmu. Kamu…",
+      "opts": [
+        "Mengalihkan topik ke dia daripada meneruskan ceritamu",
+        "Membeku karena momen terlalu berarti—harus sempurna semuanya",
+        "Mengulang apakah kalimat tadi sempurna sambil menghitung yang berikutnya lebih mulus",
+        "Khawatir dulu terlihat aneh karena terlalu suka senyumnya"
+      ]
+    },
+    {
+      "q": "Mau melempar candaan. Kamu…",
+      "opts": [
+        "Kehilangan timing candaan biasa lagi karena terlalu sadar akan dia",
+        "Terlalu lama memilih candaan paling \"clever\" sampai alur mati",
+        "Menelan karena takut dinilai tidak lucu",
+        "Ketawa dulu, kalimat tidak selesai, kata-kata kusut"
+      ]
+    },
+    {
+      "q": "Salah omong di depan dia. Kamu…",
+      "opts": [
+        "Jantung berdegup—tidak bisa memperbaiki, wajah merah",
+        "Memutuskan lebih baik sedikit bicara setelah ini dan menutup mulut",
+        "Coba pulih dengan kalimat lebih sempurna lalu malah lebih kusut",
+        "Perut turun: takut dia baru saja melihatmu aneh"
+      ]
+    },
+    {
+      "q": "Dia tertawa, \"Biasanya kamu fasih—hari ini kenapa?\" Kamu…",
+      "opts": [
+        "Tersenyum tanpa kata dan mencoba mengakhiri dengan ganti topik",
+        "Ingin bilang karena kamu—tapi hanya wajah yang merah",
+        "Menciut lagi karena terdengar seperti penilaian, lalu diam",
+        "Deg-degan terlihat di seluruh wajah dan suara"
+      ]
+    },
+    {
+      "q": "Sedang menulis pesan ke crush. Kamu…",
+      "opts": [
+        "Tulis-hapus lebih dari sepuluh kali karena dia di pikiran",
+        "Terus mengedit sampai \"sempurna\"—dan tidak pernah kirim",
+        "Deg-degan menulis panjang berantakan lalu malu menghapus",
+        "Kirim satu-dua kata saja—takut lebih panjang malah kusut"
+      ]
+    },
+    {
+      "q": "Harus cerita panjang tentang diri di depan dia. Kamu…",
+      "opts": [
+        "Canggung karena mengatur juga bagaimana caramu terlihat saat bicara",
+        "Berkeringat sebelum mulai—takut reaksi mereka",
+        "Menggantung akhir kalimat dan menutup singkat agar tidak salah",
+        "Kehilangan kalimat di kepala karena semua saraf terkunci padanya"
+      ]
+    },
+    {
+      "q": "Pulang setelah berpisah, mengulang obrolan hari ini. Penyesalan terdekat:",
+      "opts": [
+        "Terus mengulang apakah tadi terdengar aneh—takut dinilai",
+        "Wajah panas mengingat diri yang deg-degan sampai tidak karuan",
+        "Menyadari hampir tidak bilang apa-apa sementara perhatianmu semua padanya",
+        "Mementaskan ulang versi \"lebih keren\" dari yang seharusnya kamu katakan"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Seseorang yang semua saraf terkunci padanya, tipe tegang karena terlalu fokus 🎯",
+      "typeName": "tipe tegang karena terlalu fokus",
+      "realReason": "Perhatian membanjir ke dia sekaligus, jadi kelonggaranmu yang biasa hilang",
+      "shortDescription": "Kamu bukan jelek bicara. Semua perhatian ada padanya—jadi tidak ada ruang mengeluarkan diri yang biasa.",
+      "description": "Candaan dan kalimat yang mudah keluar sama teman menghilang di depan dia. Begitu kesadaran hanya mengarah padanya, ruang untuk bicara menyusut. Bukan masalah skill bicara—perhatian runtuh ke satu tempat.\n\nKalau dibuka alasan aslinya: dia bukan \"terlalu berat\"—kesadaranmu terkunci padanya sampai energi untuk kata-katamu sendiri mengecil",
+      "keywords": "kunci perhatian, pikiran blank, bukan diri biasa, terlalu sadar, tulis-hapus",
+      "strengths": "Fokus tulus dan menangkap perubahan kecil padanya",
+      "reasonDetail": "Saat berdua, saat diam jatuh, saat menulis pesan",
+      "frequentSaying": "\"Pikiranku blank\"",
+      "changeTips": "Sebelum ketemu, catat \"3 topik untuk hari ini\"\nSaat tegang, buang napas pelan dan letakkan mata pada satu benda di depan—bukan padanya\nKalau kata macet, bilang jujur \"Aku agak gugup karena kamu\" untuk menurunkan tekanan",
+      "oneLiner": "Pikiran blank artinya hati besar. Beberapa topik dan satu kalimat jujur sudah cukup",
+      "shareLine": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? Hasil: tipe tegang karena terlalu fokus 🎯 Perhatian terkunci padanya sampai blank… Aku dapat tipe ini haha Kamu dapat apa?"
+    },
+    {
+      "title": "Seseorang yang mengedit setiap kalimat agar terlihat keren, tipe performa sempurna 🎭",
+      "typeName": "tipe performa sempurna",
+      "realReason": "Kamu mementaskan versi paling keren—dan alur mati sambil mengedit",
+      "shortDescription": "Kamu bukan kikuk bicara. Kamu menunggu kalimat sempurna—dan melewatkan momen untuk bicara.",
+      "description": "Kamu terus menghaluskan candaan cerdas, kalimat keren, dan pembuka sempurna di kepala. Sambil mengedit, obrolan sudah jalan—dan kalimat yang akhirnya keluar terdengar kaku. Semakin kuat performanya, semakin tertutup diri alamu.\n\nKalau dibuka alasan aslinya: energi dipakai untuk staging \"bagaimana aku terlihat\"—bukan untuk percakapan itu sendiri",
+      "keywords": "haluskan kalimat, terlihat keren, timing terlewat, menghitung, staging",
+      "strengths": "Peduli kesan baik, punya sense dan detail",
+      "reasonDetail": "Saat membuka, saat bercanda, saat mengirim pesan",
+      "frequentSaying": "\"Seharusnya aku bisa bilang lebih keren\"",
+      "changeTips": "Batasi edit \"sekali,\" lalu bilang apa adanya\nLewati kalimat keren—pimpin dengan satu baris jujur. Mis: \"Senang banget ketemu kamu hari ini\"\nIngat: kejujuran agak canggung sering lebih disukai daripada skrip sempurna",
+      "oneLiner": "Tidak perlu kalimat sempurna. Satu baris jujur yang sedikit canggung lebih dekat",
+      "shareLine": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? Hasil: tipe performa sempurna 🎭 Mau terdengar keren malah kehilangan timing… Aku dapat tipe performa sempurna haha Fair. Kamu?"
+    },
+    {
+      "title": "Seseorang yang takut dinilai, tipe takut dinilai 🔍",
+      "typeName": "tipe takut dinilai",
+      "realReason": "Takut kata-katamu dinilai seperti apa membuatmu menciut sebelum bicara",
+      "shortDescription": "Kamu bukan kehabisan yang mau dikatakan. Mulut membeku dulu karena takut dinilai.",
+      "description": "\"Tadi kedengaran aneh?\" dan \"Kalau candaan flat gimana?\" mengisi sebelum dan sesudah bicara. Ekspresi kecil pun dibaca seperti skor, jadi kata-katamu memendek. Setelah berpisah kamu rewind adegan dan menyalahkan diri.\n\nKalau dibuka alasan aslinya: bukan penilaian nyata mereka—penilaian yang kamu bayangkan yang memblokir kata",
+      "keywords": "takut penilaian, menciut, baca ekspresi, rewind, jawaban memendek",
+      "strengths": "Hati-hati memilih kata dan lembut agar tidak kurang ajar",
+      "reasonDetail": "Saat mau bercanda, setelah salah omong, saat membaca reaksi mereka",
+      "frequentSaying": "\"Tadi kedengarannya aneh nggak?\"",
+      "changeTips": "Sebelum menafsir wajah mereka, ingat hanya kata yang benar-benar mereka ucapkan sebagai fakta\nKalau salah, tertawa: \"Wah barusan lidah kusut haha\" lalu lanjut\nKalau rewind mulai setelah berpisah, tulis tiga reaksi nyata mereka—bukan yang dibayangkan",
+      "oneLiner": "Mereka tidak menilai kamu—mereka sedang mengenalimu. Arahkan perhatian ke obrolan, bukan papan skor",
+      "shareLine": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? Hasil: tipe takut dinilai 🔍 Mulut membeku dulu karena takut dinilai… Aku dapat tipe ini haha Ngena. Tipemu apa?"
+    },
+    {
+      "title": "Seseorang yang deg-degannya meluap, tipe deg-degan berlebih 💓",
+      "typeName": "tipe deg-degan berlebih",
+      "realReason": "Deg-degan terlalu besar sampai kecepatan jantung dan kata tidak cocok—kalimat kusut",
+      "shortDescription": "Kamu bukan kikuk bicara—jantungmu saja berlari duluan. Kata tidak ikut kecepatan deg-degan.",
+      "description": "Semua yang mau dikatakan datang sekaligus, urutan kacau, tawa datang dulu, kalimat tidak selesai. Suara naik, wajah merah—semua ketahuan. Emosi jujur yang terlihat bukan kelemahan; itu juga daya tarik.\n\nKalau dibuka alasan aslinya: bukan masalah skill bicara—kecepatan emosi lebih cepat dari kecepatan kata",
+      "keywords": "jantung berdegup, kata kusut, wajah merah, suara naik, perasaan duluan",
+      "strengths": "Emosi jujur dan kaya—tidak menyembunyikan deg-degan",
+      "reasonDetail": "Saat dia tersenyum, saat dipuji, saat menulis pesan",
+      "frequentSaying": "\"Aku deg-degan banget sampai nggak bisa ngomong\"",
+      "changeTips": "Sebelum bicara, napas 3 detik untuk turunkan detak—lalu satu kalimat demi satu\nKalau banyak yang mau keluar, bilang satu yang paling penting dulu\nKalau deg-degan kelihatan, mengakui \"Aku agak gemetar sekarang\" sering justru lebih lega",
+      "oneLiner": "Deg-degan yang kelihatan bukan kelemahan—itu ketulusan. Pelankan sedikit, perasaan lebih jelas tersampaikan",
+      "shareLine": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? Hasil: tipe deg-degan berlebih 💓 Deg-degan besar sampai kata tidak ikut… Aku dapat tipe ini haha Merinding. Kamu?"
+    },
+    {
+      "title": "Seseorang yang melindungi diri dengan sedikit bicara, tipe bela diri dengan diam 🤐",
+      "typeName": "tipe bela diri dengan diam",
+      "realReason": "Takut salah membuatmu memotong kata dan menutup mulut—obrolan putus",
+      "shortDescription": "Kamu bukan enggan bicara. Sedikit bicara terasa lebih aman daripada risiko salah.",
+      "description": "Kamu mengembalikan topik, jawab singkat, dan tersenyum melewati risiko. Kesalahan turun—tapi kesempatan mereka mengenalimu juga turun, dan bisa disalahartikan sebagai kurang minat. Diam yang aman gampang jadi jarak.\n\nKalau dibuka alasan aslinya: kamu bisa bicara—pertahanan menghindari salah yang mengecilkan percakapan",
+      "keywords": "sedikit bicara, kembalikan topik, jawaban singkat, hindari salah, diam aman",
+      "strengths": "Hati-hati, pendengar yang baik, dan memberi kesan tenang",
+      "reasonDetail": "Saat diam jatuh, tepat setelah salah omong, saat mereka menunggu ceritamu",
+      "frequentSaying": "\"Ah, ya… nggak ada apa-apa\"",
+      "changeTips": "Setelah jawaban singkat, tambah satu baris tentangmu. Mis: \"Minggu ini aku nonton film\"\nSekali sehari di chat kecil (halo / kabar), latihan menumpuk satu baris ekstra\nSengaja izinkan salah kecil supaya belajar bahwa obrolan tetap lanjut",
+      "oneLiner": "Diam aman—tapi jadi jarak. Satu baris lagi dan mereka lebih mengenalimu",
+      "shareLine": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? Hasil: tipe bela diri dengan diam 🤐 Tahan kata biar tidak salah… Aku dapat tipe bela diri dengan diam haha Fair. Kamu?"
+    }
+  ]
+}

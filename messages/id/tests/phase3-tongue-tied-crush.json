@@ -1,0 +1,63 @@
+{
+  "phase3TongueTiedCrushTest": {
+    "startMessage": {
+      "line1": "Biasanya bicara lancar—kenapa cuma di depan dia tersendat?",
+      "line2": "Sama teman ngobrol nggak berhenti, tapi di depan crush cuma \"eh… itu… hmm…\" berulang. Baru ingat yang mau dikatakan setelah pulang—sambil nendang selimut.",
+      "line3": "Lidah keliru punya alasan beda di tiap orang. Bisa terlalu sadar, ingin terlihat sempurna, takut dinilai, deg-degan berlebih, atau bela diri dengan sedikit bicara. Tahu alasannya, ngobrol jadi lebih gampang.",
+      "line4": "Lewat sepuluh situasi, kami tunjukkan alasan sebenarnya lidahmu keliru—dan cara bicara lebih nyaman.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ambil tes",
+      "startTest": "Cari tahu kenapa lidahku keliru",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa",
+      "realReason": "Alasan sebenarnya lidah keliru",
+      "keywords": "Kata kunci",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang ikut jalan",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Saat lidah keliru",
+      "frequentSaying": "Yang sering dikatakan tipe ini",
+      "changeTips": "Cara bicara lebih santai",
+      "oneLiner": "Satu baris",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi",
+      "otherTests": "Tes lainnya"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startKakao": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startWechat": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startWhatsapp": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startTelegram": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!",
+      "startLine": "Kenapa Aku Hanya Gugup Bicara di Depan Crush? 💬 Biasanya lancar—kenapa cuma di depan dia? Kamu coba juga!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Menyiapkan berbagi KakaoTalk. Coba lagi sebentar ya.",
+      "kakaoError": "Ada error saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa",
+      "popularTestsTop5": "🔥 Top 5 tes sedang tren"
+    }
+  }
+}
