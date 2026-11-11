@@ -1,0 +1,63 @@
+{
+  "phase3OvergivingEarlyLoveTest": {
+    "startMessage": {
+      "line1": "Even knowing I'll burn out later, I still go all-in from the very start... why do I do this?",
+      "line2": "It's only been a few days, but you're already checking in morning and night, booking the perfect restaurant, planning surprise gifts. They're touched, but a few months later you're running on empty, and resentment starts creeping in. Looking at yourself, you wonder, \"Why do I always do this?\"",
+      "line3": "Everyone overdoes it early on for different reasons. Maybe you want to win their heart first. Maybe you're anxious they'll leave. Maybe you're hoping to get the same back. Maybe you're simply overflowing with excitement. Or maybe you just want to be seen as a good person. How you react reveals who you really are.",
+      "line4": "These 10 scenarios reveal the real reason you go all-in early, and how to find the right pace.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why You Go All-In Early",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Reason You Overdo It",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Why You're Together",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "Moments You Go All-In",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Pace Yourself",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+      "startKakao": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+      "startWechat": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+      "startWhatsapp": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+      "startTelegram": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+      "startLine": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}

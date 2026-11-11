@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu?",
+    "description": "Biết rõ chiều kiểu này thì sau sẽ mệt, nhưng vẫn không kiềm được... vì sao vậy nhỉ? Qua 10 tình huống, tìm ra lý do thật sự khiến bạn \"dốc hết sức\" ngay từ đầu và cách điều chỉnh tốc độ của mình.",
+    "tags": ["Tâm lý yêu đương", "Kiểu yêu đương"]
+  },
+  "startMessage": {
+    "line1": "Biết rõ chiều kiểu này thì sau sẽ mệt, nhưng vẫn không kiềm được... vì sao mình lại như vậy?",
+    "line2": "Mới gặp nhau được vài ngày mà sáng tối đều hỏi han, đặt bàn quán ngon, chuẩn bị cả quà bất ngờ. Người kia thì cảm động, nhưng vài tháng sau bạn lại kiệt sức, và cảm giác tủi thân bắt đầu trào lên. Nhìn lại chính mình, bạn tự hỏi \"sao lần nào cũng vậy?\"",
+    "line3": "Mỗi người chiều quá mức vì những lý do khác nhau. Có thể vì muốn giành thiện cảm trước, có thể vì lo sợ người kia sẽ rời đi, có thể vì muốn được đáp lại tương xứng, có thể vì cảm xúc rung động quá nhiều đến mức tràn ra, hoặc cũng có thể vì muốn được công nhận là người tốt. Nhìn vào phản ứng của mình, bạn sẽ thấy mình là người như thế nào.",
+    "line4": "Qua 10 tình huống, bài test sẽ chỉ ra lý do thật sự khiến bạn dốc hết sức ngay từ đầu, và cách để điều chỉnh tốc độ.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu lý do mình chiều quá mức từ đầu",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự khác",
+    "realReason": "Lý do thật sự khiến bạn chiều quá mức",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo từng kiểu",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Lý do ở cạnh nhau",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Những lúc bạn chiều quá mức",
+    "frequentSaying": "Câu nói quen thuộc của kiểu này",
+    "changeTips": "Cách điều chỉnh tốc độ",
+    "oneLiner": "Nhận xét ngắn gọn",
+    "shareResult": "Chia sẻ kết quả của mình",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại bài test",
+    "otherTests": "Xem các bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+    "startKakao": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+    "startWechat": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+    "startWhatsapp": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+    "startTelegram": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+    "startLine": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Không thể sử dụng chức năng chia sẻ lúc này.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chức năng chia sẻ KakaoTalk. Vui lòng thử lại sau một chút.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+    "popularTestsTop5": "🔥 Top 5 bài test hot nhất hiện nay"
+  },
+  "questions": [
+    {
+      "q": "Mình sắp gặp người mình thích lần thứ hai. Mình sẽ?",
+      "opts": [
+        "Lo sợ người này hết thương mà rời đi, nên đặt sẵn quán ngon và chuẩn bị quà trước để giữ chân",
+        "Kỳ vọng rằng chuẩn bị kỹ đến mức này thì người kia cũng sẽ dành tâm sức tương xứng cho mình",
+        "Rung động tràn ngập đến mức chưa gặp đã nghĩ ra hàng loạt kế hoạch trong đầu",
+        "Muốn lại được nghe \"tinh ý, là người tốt\", nên chăm chút chuẩn bị kỹ càng"
+      ]
+    },
+    {
+      "q": "Người kia hỏi nhẹ nhàng \"hôm nay của bạn thế nào?\". Mình sẽ?",
+      "opts": [
+        "Trả lời dài và tận tâm, kỳ vọng sau này người kia cũng sẽ đáp lại tương tự",
+        "Vui mừng quá nên kể lể hết cả ngày trong một tin nhắn dài",
+        "Muốn được xem là người dịu dàng, chu đáo, nên chăm chút kỹ từng câu trả lời",
+        "Nghĩ đây là cơ hội để chiếm được thiện cảm trước, nên trả lời rất nhiệt tình"
+      ]
+    },
+    {
+      "q": "Sinh nhật người kia đến chỉ sau 2 tuần hẹn hò. Mình sẽ?",
+      "opts": [
+        "Rung động tràn ngập, muốn chuẩn bị quà và sự kiện thật hoành tráng",
+        "Cố gắng quá mức vì nghĩ phải thể hiện như vậy mới được nhớ đến là người tốt",
+        "Nghĩ rằng chu đáo ngay từ đầu sẽ khiến người kia thấy mình đặc biệt và trao trái tim",
+        "Lo sợ nếu làm qua loa thì tình cảm sẽ nhạt đi, nên cố gắng hết sức để giữ chân"
+      ]
+    },
+    {
+      "q": "Người kia khen \"bạn thật chu đáo\". Mình sẽ?",
+      "opts": [
+        "Vui vì lời khen nên càng cố gắng hơn để được công nhận là người tốt",
+        "Nghĩ đây là dấu hiệu đã chắc chắn chiếm được thiện cảm, nên tăng tốc chiều chuộng hơn nữa",
+        "Sợ lời khen này sẽ biến mất nên cố gắng hơn hiện tại để không bị mất đi",
+        "Nghĩ mình đã chiều chuộng đến mức này rồi, giờ là lúc người kia nên đáp lại tương xứng"
+      ]
+    },
+    {
+      "q": "Người kia bận vài ngày nên ít liên lạc hơn. Mình sẽ?",
+      "opts": [
+        "Chủ động liên lạc trước, gửi tin nhắn động viên để khẳng định sự tồn tại và giữ thiện cảm",
+        "Lo lắng việc ít liên lạc là dấu hiệu tình cảm nhạt đi, nên càng chăm sóc nhiều hơn để giữ chân",
+        "Cảm thấy tủi thân, nghĩ mình đã chăm sóc như vậy sao người kia không đáp lại",
+        "Nhớ nhung tràn ngập, muốn liên lạc với người kia vài lần một ngày"
+      ]
+    },
+    {
+      "q": "Hẹn hò được một tháng, người kia nói nhờ mình mà họ có thêm động lực. Mình sẽ?",
+      "opts": [
+        "Vui mừng tràn ngập, nảy ra ý muốn làm thêm nhiều điều cho người kia và lập đủ thứ kế hoạch",
+        "Cảm thấy như được công nhận là người tốt, nên cố gắng chiều chuộng hơn nữa",
+        "Muốn nghe câu này thường xuyên, nên chăm sóc nhiều hơn để người kia không rời đi, nhằm giảm bớt nỗi lo",
+        "Kỳ vọng ngày càng lớn rằng vì mình đã cho đi nhiều như vậy, sau này người kia cũng sẽ đáp lại tương xứng"
+      ]
+    },
+    {
+      "q": "Người kia nói muốn tự chọn địa điểm hẹn hò. Mình sẽ?",
+      "opts": [
+        "Thầm lo lắng nếu không lo liệu thì có thể không được xem là người tốt, nên vẫn tự ý chọn trước",
+        "Nghĩ rằng tự mình chọn địa điểm sẽ giúp chiếm được thiện cảm trước, nên chủ động đề xuất",
+        "Nghĩ rằng từ trước đến giờ mình đã lo hết mọi thứ, lần này nên để người kia chọn",
+        "Rung động đi trước một bước, đã nhắm sẵn vài phương án từ trước rồi"
+      ]
+    },
+    {
+      "q": "Phản ứng của người kia không như mình mong đợi. Mình sẽ?",
+      "opts": [
+        "Nghĩ cần phải tạo ấn tượng ban đầu mạnh mẽ hơn, nên thể hiện thiện cảm quyết liệt hơn",
+        "Lo lắng cứ thế này người kia sẽ rời đi, nên càng chiều chuộng hơn để giữ chân",
+        "Cảm xúc dâng lên trước khi kịp để tâm đến phản ứng, chỉ muốn làm thêm nhiều điều hơn",
+        "Nghĩ chắc mình chưa thể hiện đủ là người tốt, nên cố gắng hơn nữa"
+      ]
+    },
+    {
+      "q": "Người kia nói \"bạn tốt với mình quá nên thấy có áp lực\". Mình sẽ?",
+      "opts": [
+        "Lo lắng vì lời này mà người kia sẽ rời đi, nên càng cẩn thận và cố gắng tốt hơn",
+        "Cảm thấy tủi thân, nghĩ mình đã chiều chuộng đến vậy mà lại bị xem là áp lực, không được đáp lại",
+        "Cảm thấy chùn bước vì nỗ lực muốn được xem là người tốt dường như lại phản tác dụng",
+        "Tự hỏi liệu cách mình cố giành thiện cảm có quá mức không, và bắt đầu tính cách giảm tốc độ lại"
+      ]
+    },
+    {
+      "q": "Lý do thật lòng nhất khiến mình chiều quá mức ngay từ đầu là gì?",
+      "opts": [
+        "\"Vì muốn được đáp lại tương xứng với những gì mình đã cho đi\"",
+        "\"Vì rung động tràn ngập đến mức khó dừng lại\"",
+        "\"Vì nghĩ phải tốt với người kia trước thì họ mới thích mình\"",
+        "\"Vì lo sợ người kia sẽ rời đi nên muốn giữ chân trước\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người muốn chiếm được trái tim bằng cách tốt trước, Kiểu Chiếm Thiện Cảm Trước 🏁",
+      "typeName": "Kiểu Chiếm Thiện Cảm Trước",
+      "realReason": "Tin rằng nếu tốt với người kia trước và nhiều hơn, người kia sẽ thích mình",
+      "shortDescription": "Bạn không phải là người \"quá đà\". Bạn tin rằng thiện cảm sẽ thuộc về người thể hiện trước, nên đang tăng tốc.",
+      "description": "Để khẳng định sự tồn tại ngay từ đầu, bạn đẩy nhanh việc tặng quà, liên lạc, tổ chức sự kiện. Điều này có thể giúp bạn chiếm được thiện cảm, nhưng người kia cũng có thể cảm thấy áp lực hoặc khó theo kịp tốc độ của bạn. Thiện cảm thường lớn lên theo nhịp điệu, không phải theo số lượng.\n\nKhi gỡ rối lý do thật sự: Không phải vì tình cảm quá lớn, mà công thức \"phải tốt trước mới được đáp lại\" đang khiến tốc độ tăng lên",
+      "keywords": "Thể hiện trước, Khẳng định sự tồn tại, Chiếm trước, Tốc độ nhanh, Ấn tượng rõ nét",
+      "strengths": "Chủ động, thể hiện rõ ràng, có can đảm bày tỏ thiện cảm bằng hành động",
+      "reasonDetail": "Trước lần gặp thứ hai, khi được khen, khi phản ứng không như mong đợi",
+      "frequentSaying": "\"Phải thể hiện thật tốt ngay từ đầu\"",
+      "changeTips": "Đặt giới hạn riêng cho mình, kiểu như \"chỉ 2 lần một tuần, chỉ quà nhỏ\" cho việc liên lạc và tặng quà\nQuan sát nhịp độ của người kia (tần suất trả lời, khoảng cách giữa các lần gặp) để điều chỉnh theo nhịp tương tự\nGhi nhớ rằng thiện cảm lớn lên dần theo thời gian, và đi từng bước một",
+      "oneLiner": "Thiện cảm không lớn lên từ việc chạy nhanh, mà lớn lên từ nhịp bước đi cùng nhau. Chậm lại một bước, tình cảm vẫn sẽ đến được với người kia",
+      "shareLine": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? Kết quả: Kiểu Chiếm Thiện Cảm Trước 🏁 Hóa ra là kiểu tin rằng phải tốt trước mới chiếm được trái tim... đúng y chang bạn luôn ha, làm thử xem bạn ra kiểu gì!"
+    },
+    {
+      "title": "Người lo sợ bị rời bỏ nên giữ chân trước, Kiểu Lo Lắng Giữ Chân Trước 🧲",
+      "typeName": "Kiểu Lo Lắng Giữ Chân Trước",
+      "realReason": "Sợ tình cảm nhạt đi và người kia rời đi, nên tốt với họ trước để giữ chân",
+      "shortDescription": "Bạn không phải đang cho đi. Bạn đang lo sợ mất đi nên mới giữ chân trước.",
+      "description": "Khi liên lạc giảm hoặc phản ứng nhạt nhẽo, nỗi lo trong bạn trào lên và khiến bạn chăm sóc nhiều hơn. Bạn cố gắng thêm một bước để lời khen không biến mất, và nỗ lực đó dần trở thành tốc độ khó duy trì. Khi nỗi lo điều khiển hành động, càng chiều chuộng nhiều thì nỗi lo cũng càng lớn theo.\n\nKhi gỡ rối lý do thật sự: Không phải hành động của người kia, mà chính nỗi lo nội tâm \"có thể mình sẽ mất người này\" đang làm hành động của bạn lớn thêm",
+      "keywords": "Lo sợ bị rời bỏ, Giữ chân trước, Cố gắng hơn, Sợ mất đi, Giải tỏa lo lắng",
+      "strengths": "Trân trọng mối quan hệ, nhạy cảm và tinh tế với từng thay đổi nhỏ của người kia",
+      "reasonDetail": "Khi liên lạc giảm, khi phản ứng nhạt nhẽo, khi lo lắng lời khen sẽ không còn",
+      "frequentSaying": "\"Hay là tình cảm họ đang nhạt đi rồi?\"",
+      "changeTips": "Khi nỗi lo trào lên, viết thành hai dòng: \"điều thực tế đang xảy ra\" và \"điều mình đang tưởng tượng lo lắng\"\nThay vì cố gắng nhiều hơn, hãy nói thật: \"Gần đây liên lạc ít đi nên mình thấy hơi lo\"\nTăng các hoạt động nuôi dưỡng bản thân ngoài mối quan hệ để san sẻ bớt gánh nặng lo lắng\nNếu nỗi lo sợ mất đi này lặp lại nhiều lần và ảnh hưởng đến cuộc sống, hãy tìm đến chuyên gia tâm lý để cùng tìm hiểu gốc rễ một cách an toàn",
+      "oneLiner": "Mong muốn giữ chân là một gương mặt khác của yêu thương. Nói ra nỗi lo bằng lời sẽ giúp giảm bớt gánh nặng của hành động",
+      "shareLine": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? Kết quả: Kiểu Lo Lắng Giữ Chân Trước 🧲 Hóa ra là kiểu lo sợ bị rời bỏ nên giữ chân trước... giống bạn thật đó buồn ghê, gửi kết quả cho mình xem đi"
+    },
+    {
+      "title": "Người muốn được đáp lại tương xứng với những gì đã cho đi, Kiểu Kỳ Vọng Được Đáp Lại 🎁",
+      "typeName": "Kiểu Kỳ Vọng Được Đáp Lại",
+      "realReason": "Kỳ vọng người kia sẽ đáp lại tương xứng với những gì mình đã chiều chuộng",
+      "shortDescription": "Bạn không phải đang cho đi đơn thuần. Trong lòng bạn đang âm thầm tích lũy một \"tờ hóa đơn chờ được thanh toán\".",
+      "description": "Bạn nghĩ mình đã chăm sóc đến mức này rồi, giờ là lúc người kia nên đáp lại tương xứng, và nếu không có phản hồi thì cảm giác tủi thân sẽ trào lên. Những kỳ vọng không nói ra sẽ không đến được với người kia, chỉ khiến tủi thân chồng chất và làm mối quan hệ dần mất sức sống. Khi tích lũy tình cảm đã cho đi như một tờ hóa đơn, tình yêu cũng có thể bắt đầu cảm thấy như một cuộc giao dịch.\n\nKhi gỡ rối lý do thật sự: Không phải sự hy sinh thuần túy, mà chính những kỳ vọng không nói ra đang điều khiển hành động của bạn",
+      "keywords": "Cho bao nhiêu nhận bấy nhiêu, Hóa đơn, Được đáp lại, Kỳ vọng không nói ra, Tủi thân chồng chất",
+      "strengths": "Coi trọng sự công bằng trong việc cho và nhận, chân thành khi thể hiện tình cảm",
+      "reasonDetail": "Khi trả lời dài dòng, khi chuẩn bị quà và sự kiện, khi cảm thấy đây là lượt của người kia",
+      "frequentSaying": "\"Mình đã làm nhiều như vậy rồi mà\"",
+      "changeTips": "Trước khi tốt với người kia, hãy tự hỏi \"mình có đang kỳ vọng điều gì từ hành động này không\"\nNếu có kỳ vọng, hãy nói thành lời yêu cầu cụ thể: \"Nếu lúc này bạn làm điều này cho mình thì mình sẽ rất vui\"\nGiới hạn việc cho đi ở mức \"chỉ bằng đúng những gì mình thật sự muốn làm\" để giảm bớt tờ hóa đơn trong lòng",
+      "oneLiner": "Kỳ vọng nếu giữ trong lòng sẽ thành tủi thân, nói ra sẽ thành một lời yêu cầu. Biến nó thành lời yêu cầu, tình yêu sẽ trở nên nhẹ nhàng hơn",
+      "shareLine": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? Kết quả: Kiểu Kỳ Vọng Được Đáp Lại 🎁 Hóa ra là kiểu cho bao nhiêu muốn nhận lại bấy nhiêu, hóa đơn cứ thế chồng chất... đúng y chang bạn luôn, thử đi rồi làm cùng nha"
+    },
+    {
+      "title": "Người rung động tràn ngập không thể giảm tốc, Kiểu Đam Mê Quá Nhiệt 🔥",
+      "typeName": "Kiểu Đam Mê Quá Nhiệt",
+      "realReason": "Rung động và cảm xúc quá lớn nên hành động tuôn ra ồ ạt",
+      "shortDescription": "Bạn không phải người tính toán. Chỉ là cảm xúc quá nóng nên phanh của bạn yếu quá.",
+      "description": "Vì nhớ nhung nên bạn liên lạc vài lần mỗi ngày, và kế hoạch đã tuôn ra trước cả khi gặp mặt. Đây là đam mê thuần túy, nhưng nếu không hợp với tốc độ của người kia, nó sẽ trở thành gánh nặng, và bản thân bạn cũng sẽ sớm kiệt sức. Đây là trạng thái cảm xúc đang vượt trước hành động.\n\nKhi gỡ rối lý do thật sự: Không phải chủ ý, mà tốc độ cảm xúc đang nhanh hơn tốc độ hành động",
+      "keywords": "Rung động, Tràn ngập, Hành động ngay, Nhớ nhung, Phanh yếu",
+      "strengths": "Giàu cảm xúc, chân thật, có nhiệt huyết thể hiện tình yêu một cách hết lòng",
+      "reasonDetail": "Trước khi gặp mặt, khi người kia bận, khi gần đến ngày kỷ niệm hoặc sinh nhật",
+      "frequentSaying": "\"Nhớ quá chịu không được\"",
+      "changeTips": "Ghi lại điều muốn làm vào ghi chú trước, 30 phút sau xem lại mình có còn muốn làm không\nĐặt quy tắc \"hôm nay chỉ một việc\" cho số lần liên lạc hay quy mô sự kiện mỗi ngày\nChia sẻ nguồn nhiệt huyết tràn ngập sang các lối thoát khác của riêng mình như thể thao, sáng tạo",
+      "oneLiner": "Nhiệt huyết là một điểm mạnh. Chia nhỏ nhiên liệu ra dùng, ngọn lửa sẽ cháy được lâu hơn",
+      "shareLine": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? Kết quả: Kiểu Đam Mê Quá Nhiệt 🔥 Hóa ra là kiểu rung động tràn ngập, phanh yếu xỉu... đúng y chang bạn luôn ha, bạn thử xem ra kiểu gì nhé?"
+    },
+    {
+      "title": "Người muốn được công nhận là người tốt, Kiểu Khát Khao Được Công Nhận ⭐",
+      "typeName": "Kiểu Khát Khao Được Công Nhận",
+      "realReason": "Cố gắng vì muốn được công nhận và đánh giá là người tốt",
+      "shortDescription": "Bạn không phải đang cho đi. Bạn đang cố gắng vì muốn hiện ra trong mắt người kia như một người tốt.",
+      "description": "Vì muốn được nghe nói mình tinh ý, chu đáo, nên bạn chăm chút từng tin nhắn, từng món quà. Được khen thì bạn càng cố gắng, không được khen thì bạn chùn bước. Khi sự công nhận trở thành nhiên liệu, năng lượng của bạn sẽ dao động mạnh theo phản ứng của người kia.\n\nKhi gỡ rối lý do thật sự: Phản ứng của người kia đang được dùng như một bảng điểm quyết định giá trị của bản thân",
+      "keywords": "Người tốt, Lời khen, Được công nhận, Bị đánh giá, Nỗ lực",
+      "strengths": "Chân thành, tinh tế, và đầy nỗ lực cùng sự khéo léo để làm người kia vui",
+      "reasonDetail": "Khi được khen, khi cần thể hiện sự tinh ý, khi cảm thấy mình đang bị đánh giá",
+      "frequentSaying": "\"Mình là người tốt đúng không?\"",
+      "changeTips": "Dù không được khen, hãy tự khen mình trước về 3 điều mình đã làm tốt trong ngày\nTrước khi cố gắng, hãy phân biệt \"mình đang muốn lời khen, hay đang muốn người kia hạnh phúc\"\nThử thể hiện đúng con người bình thường của mình và quan sát phản ứng của người kia",
+      "oneLiner": "Sự công nhận càng nhận được càng khát khao thêm. Tự dành một phần sự công nhận cho chính mình, tốc độ cố gắng sẽ dịu lại",
+      "shareLine": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? Kết quả: Kiểu Khát Khao Được Công Nhận ⭐ Hóa ra là kiểu cố gắng vì muốn được công nhận là người tốt... đúng là mình luôn buồn ghê, làm thử rồi kể cho mình nghe"
+    }
+  ]
+}

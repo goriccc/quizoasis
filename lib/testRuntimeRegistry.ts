@@ -388,6 +388,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3AloneEvenInLoveTestClient'),
   },
+
+  'phase3-overgiving-early-love': {
+    slug: 'phase3-overgiving-early-love',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_OVERGIVING_EARLY_LOVE_META } = await import('./phase3OvergivingEarlyLoveData');
+      return {
+        title: PHASE3_OVERGIVING_EARLY_LOVE_META.title,
+        description: PHASE3_OVERGIVING_EARLY_LOVE_META.description,
+        tags: PHASE3_OVERGIVING_EARLY_LOVE_META.tags,
+        thumbnail: 'p3_test_overgiving_early_love.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3OvergivingEarlyLoveData');
+      return {
+        questions: mod.phase3OvergivingEarlyLoveQuestions,
+        results: mod.phase3OvergivingEarlyLoveResults,
+        meta: {
+          title: mod.PHASE3_OVERGIVING_EARLY_LOVE_META.title,
+          description: mod.PHASE3_OVERGIVING_EARLY_LOVE_META.description,
+          tags: mod.PHASE3_OVERGIVING_EARLY_LOVE_META.tags,
+          thumbnail: 'p3_test_overgiving_early_love.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3OvergivingEarlyLoveTest',
+        messagesFileSlug: 'phase3-overgiving-early-love',
+      };
+    },
+    loadClient: () => import('@/components/Phase3OvergivingEarlyLoveTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

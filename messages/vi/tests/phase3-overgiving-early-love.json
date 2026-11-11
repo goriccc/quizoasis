@@ -1,0 +1,63 @@
+{
+  "phase3OvergivingEarlyLoveTest": {
+    "startMessage": {
+      "line1": "Biết rõ chiều kiểu này thì sau sẽ mệt, nhưng vẫn không kiềm được... vì sao mình lại như vậy?",
+      "line2": "Mới gặp nhau được vài ngày mà sáng tối đều hỏi han, đặt bàn quán ngon, chuẩn bị cả quà bất ngờ. Người kia thì cảm động, nhưng vài tháng sau bạn lại kiệt sức, và cảm giác tủi thân bắt đầu trào lên. Nhìn lại chính mình, bạn tự hỏi \"sao lần nào cũng vậy?\"",
+      "line3": "Mỗi người chiều quá mức vì những lý do khác nhau. Có thể vì muốn giành thiện cảm trước, có thể vì lo sợ người kia sẽ rời đi, có thể vì muốn được đáp lại tương xứng, có thể vì cảm xúc rung động quá nhiều đến mức tràn ra, hoặc cũng có thể vì muốn được công nhận là người tốt. Nhìn vào phản ứng của mình, bạn sẽ thấy mình là người như thế nào.",
+      "line4": "Qua 10 tình huống, bài test sẽ chỉ ra lý do thật sự khiến bạn dốc hết sức ngay từ đầu, và cách để điều chỉnh tốc độ.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm hiểu lý do mình chiều quá mức từ đầu",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự khác",
+      "realReason": "Lý do thật sự khiến bạn chiều quá mức",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo từng kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do ở cạnh nhau",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Những lúc bạn chiều quá mức",
+      "frequentSaying": "Câu nói quen thuộc của kiểu này",
+      "changeTips": "Cách điều chỉnh tốc độ",
+      "oneLiner": "Nhận xét ngắn gọn",
+      "shareResult": "Chia sẻ kết quả của mình",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại bài test",
+      "otherTests": "Xem các bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+      "startKakao": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+      "startWechat": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+      "startWhatsapp": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+      "startTelegram": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!",
+      "startLine": "Vì sao mình luôn chiều quá mức ngay từ đầu khi mới yêu? 🏁 Lý do thật sự khiến mình dốc hết sức từ đầu, bạn cũng thử xem!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Không thể sử dụng chức năng chia sẻ lúc này.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chức năng chia sẻ KakaoTalk. Vui lòng thử lại sau một chút.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ qua KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+      "popularTestsTop5": "🔥 Top 5 bài test hot nhất hiện nay"
+    }
+  }
+}

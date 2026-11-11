@@ -1,0 +1,63 @@
+{
+  "phase3OvergivingEarlyLoveTest": {
+    "startMessage": {
+      "line1": "明明知道一開始就這麼拼,後面會很累,卻還是忍不住……這是為什麼呢?",
+      "line2": "認識才幾天,就開始每天早晚問候、提前訂好餐廳、準備驚喜禮物。對方很感動,但幾個月後你卻累到快撐不住,委屈感也開始湧上來。看著這樣的自己,你忍不住想:「為什麼每次都這樣?」",
+      "line3": "過度付出的原因,每個人都不一樣。可能是想先搶佔好感,可能是害怕對方離開而焦慮,可能是想要對方同樣的回應,可能是心動的感覺太滿溢出來,也可能是想被認可為一個好人。看看自己的反應,就能看出自己是怎樣的人。",
+      "line4": "通過10個場景,告訴你戀愛初期全力付出的真正原因,以及如何調整節奏。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "瞭解我初期過度付出的原因",
+      "linkCopy": "複製鏈接",
+      "kakao": "Kakao Talk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "其他相似測試",
+      "realReason": "過度付出的真正原因",
+      "keywords": "核心關鍵詞",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "在一起的原因",
+      "strengths": "這個類型的優點",
+      "reasonDetail": "過度付出的瞬間",
+      "frequentSaying": "這個類型常說的話",
+      "changeTips": "調整節奏的方法",
+      "oneLiner": "一句話總結",
+      "shareResult": "分享我的結果",
+      "popularBadge": "熱門",
+      "retake": "重新測試",
+      "otherTests": "查看其他測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "為什麼戀愛初期我總是過度付出?🏁 一開始就全力以赴的真正原因,快來測測你是哪種!",
+      "startKakao": "為什麼戀愛初期我總是過度付出?🏁 一開始就全力以赴的真正原因,快來測測你是哪種!",
+      "startWechat": "為什麼戀愛初期我總是過度付出?🏁 一開始就全力以赴的真正原因,快來測測你是哪種!",
+      "startWhatsapp": "為什麼戀愛初期我總是過度付出?🏁 一開始就全力以赴的真正原因,快來測測你是哪種!",
+      "startTelegram": "為什麼戀愛初期我總是過度付出?🏁 一開始就全力以赴的真正原因,快來測測你是哪種!",
+      "startLine": "為什麼戀愛初期我總是過度付出?🏁 一開始就全力以赴的真正原因,快來測測你是哪種!"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製!",
+      "resultCopied": "結果已複製到剪貼板!",
+      "shareFailed": "分享功能暫時無法使用。",
+      "wechatCopy": "鏈接已複製!請在微信中粘貼分享。",
+      "kakaoInit": "正在初始化Kakao Talk分享功能,請稍後再試。",
+      "kakaoError": "Kakao Talk分享時發生錯誤。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦TOP5",
+      "popularTestsTop5": "🔥 近期熱門測試推薦TOP5"
+    }
+  }
+}

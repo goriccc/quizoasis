@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Kenapa Aku Selalu Terlalu Baik di Awal Hubungan?",
+    "description": "Padahal tahu kalau terlalu baik dari awal nanti bakal capek sendiri, tapi tetap saja begitu... kenapa ya? Lewat 10 situasi, cari tahu alasan sebenarnya kamu \"all-in\" di awal hubungan dan cara mengatur ritmemu sendiri.",
+    "tags": ["Psikologi Cinta", "Pola Hubungan"]
+  },
+  "startMessage": {
+    "line1": "Padahal tahu kalau terlalu baik dari awal nanti bakal capek sendiri, tapi tetap saja begitu... kenapa ya aku selalu begini?",
+    "line2": "Baru kenal beberapa hari saja, kamu sudah menyapa pagi malam, memesan restoran bagus, bahkan menyiapkan kado kejutan. Dia memang terkesan, tapi beberapa bulan kemudian kamu malah kehabisan energi, dan rasa kecewa mulai muncul. Melihat dirimu sendiri seperti itu, kamu bertanya-tanya, \"Kenapa aku selalu begini?\"",
+    "line3": "Setiap orang punya alasan berbeda saat terlalu baik di awal hubungan. Bisa jadi karena ingin merebut hati lebih dulu, bisa jadi karena cemas dia akan pergi, bisa jadi karena ingin diperlakukan sama baiknya, bisa jadi karena perasaan berdebar yang meluap-luap, atau bisa jadi karena ingin diakui sebagai orang baik. Dengan melihat reaksimu sendiri, kamu bisa tahu kamu sebenarnya tipe seperti apa.",
+    "line4": "Lewat 10 situasi, kuis ini akan menunjukkan alasan sebenarnya kamu all-in di awal hubungan dan cara mengatur ritmemu sendiri.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Iklan",
+    "goToTest": "Mulai Tes",
+    "startTest": "Cari Tahu Alasanku Terlalu Baik di Awal",
+    "linkCopy": "Salin Tautan",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Tes Serupa Lainnya",
+    "realReason": "Alasan Sebenarnya Kamu Terlalu Baik",
+    "keywords": "Kata Kunci Utama",
+    "scoreTitle": "Skor per Tipe",
+    "scoreUnit": "poin",
+    "hiddenReason": "Alasan Bersama",
+    "strengths": "Kekuatan Tipe Ini",
+    "reasonDetail": "Momen Kamu Terlalu Baik",
+    "frequentSaying": "Kata-kata yang Sering Diucapkan Tipe Ini",
+    "changeTips": "Cara Mengatur Ritmemu",
+    "oneLiner": "Kesimpulan Singkat",
+    "shareResult": "Bagikan Hasilku",
+    "popularBadge": "Populer",
+    "retake": "Tes Ulang",
+    "otherTests": "Lihat Tes Lainnya"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+    "startKakao": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+    "startWechat": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+    "startWhatsapp": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+    "startTelegram": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+    "startLine": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!"
+  },
+  "alerts": {
+    "linkCopied": "Tautan berhasil disalin!",
+    "resultCopied": "Hasil berhasil disalin ke clipboard!",
+    "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+    "wechatCopy": "Tautan berhasil disalin! Tempel di WeChat untuk membagikannya.",
+    "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+    "popularTestsTop5": "🔥 Top 5 Tes Paling Populer Saat Ini"
+  },
+  "questions": [
+    {
+      "q": "Aku akan bertemu kedua kalinya dengan orang yang aku suka. Aku...",
+      "opts": [
+        "Cemas kalau perasaannya akan memudar dan dia pergi, jadi aku memesan restoran bagus dan menyiapkan kado dulu untuk menahannya",
+        "Berharap kalau aku siapkan sebanyak ini, dia juga akan memberikan perhatian yang sama besarnya untukku",
+        "Perasaan berdebar begitu meluap sampai rencana-rencana sudah terbayang semua di kepalaku sebelum bertemu",
+        "Ingin dengar lagi kalau aku orang yang perhatian dan baik, jadi aku siapkan semuanya dengan teliti"
+      ]
+    },
+    {
+      "q": "Dia bertanya santai, \"Hari ini gimana?\" Aku...",
+      "opts": [
+        "Membalas panjang dan penuh perhatian, berharap nanti dia akan membalas dengan cara yang sama",
+        "Karena terlalu senang, aku langsung menceritakan seluruh hariku dalam satu balasan panjang",
+        "Ingin terlihat lembut dan bisa diandalkan, jadi aku menulis setiap balasan dengan sangat hati-hati",
+        "Menganggap perhatian ini kesempatan untuk merebut hatinya lebih dulu, jadi aku membalas dengan sangat aktif"
+      ]
+    },
+    {
+      "q": "Ulang tahunnya datang hanya dua minggu setelah kami mulai dekat. Aku...",
+      "opts": [
+        "Perasaan berdebar begitu meluap sehingga ingin menyiapkan kado dan acara yang besar-besaran",
+        "Memaksakan diri karena merasa hanya dengan usaha sebesar ini aku akan diingat sebagai orang baik",
+        "Berpikir kalau aku merayakannya besar-besaran dari awal, dia akan merasa spesial dan membuka hatinya",
+        "Cemas kalau asal-asalan, perasaannya akan memudar, jadi aku berusaha sekuat tenaga untuk menahannya"
+      ]
+    },
+    {
+      "q": "Dia memujiku, \"Kamu benar-benar perhatian banget.\" Aku...",
+      "opts": [
+        "Senang dengan pujian itu sampai semakin berusaha lagi untuk diakui sebagai orang baik",
+        "Menganggap ini tanda sudah pasti berhasil merebut hatinya, jadi aku semakin mempercepat perhatianku",
+        "Takut pujian ini akan hilang, jadi aku berusaha lebih keras lagi agar tidak kehilangannya",
+        "Merasa karena aku sudah sebaik ini, sekarang giliran dia untuk memberikan perhatian yang sama"
+      ]
+    },
+    {
+      "q": "Dia sibuk beberapa hari sehingga kontaknya berkurang. Aku...",
+      "opts": [
+        "Menghubungi lebih dulu dan mengirim pesan semangat untuk memastikan keberadaanku tetap terasa dan menjaga kesannya",
+        "Cemas kalau berkurangnya kontak adalah tanda perasaannya memudar, jadi aku semakin memperhatikan dia untuk menahannya",
+        "Merasa kecewa, berpikir \"aku sudah memperhatikannya sebegini, kenapa dia tidak membalasnya?\"",
+        "Perasaan kangen begitu meluap sampai ingin menghubunginya berkali-kali dalam sehari"
+      ]
+    },
+    {
+      "q": "Setelah sebulan pacaran, dia bilang dia jadi lebih bersemangat karena aku. Aku...",
+      "opts": [
+        "Rasa senang meluap sampai muncul keinginan melakukan lebih banyak lagi untuknya, lalu merencanakan banyak hal",
+        "Merasa seperti sudah diakui sebagai orang baik, jadi berusaha lebih keras lagi untuk berbuat baik padanya",
+        "Ingin terus mendengar kata-kata ini, jadi aku makin memperhatikannya agar dia tidak pergi, demi meredakan rasa cemasku",
+        "Harapan semakin besar bahwa karena aku sudah memberi sebanyak ini, nanti dia juga akan membalasnya dengan hal yang sama"
+      ]
+    },
+    {
+      "q": "Dia bilang ingin mencoba menentukan sendiri tempat kencan. Aku...",
+      "opts": [
+        "Diam-diam cemas kalau aku tidak mengurusnya, mungkin aku tidak terlihat baik, jadi tetap saja aku yang menentukan lebih dulu",
+        "Berpikir kalau aku yang menentukan tempatnya, aku bisa merebut hatinya lebih dulu, jadi aku mengajukannya dulu",
+        "Berpikir karena selama ini aku yang mengurus semuanya, sekarang giliran dia",
+        "Perasaan berdebar sudah mendahului, bahkan aku sudah menyiapkan beberapa pilihan tempat sebelumnya"
+      ]
+    },
+    {
+      "q": "Reaksinya tidak sesuai dengan yang aku harapkan. Aku...",
+      "opts": [
+        "Berpikir perlu meninggalkan kesan pertama yang lebih kuat, jadi aku mengekspresikan perhatianku lebih kuat lagi",
+        "Cemas kalau begini terus dia akan pergi, jadi aku semakin berusaha baik untuk menahannya",
+        "Emosi lebih dulu muncul sebelum mempertimbangkan reaksinya, aku hanya ingin melakukan lebih banyak lagi untuknya",
+        "Berpikir mungkin aku belum cukup terlihat sebagai orang baik, jadi aku berusaha lebih keras lagi"
+      ]
+    },
+    {
+      "q": "Dia bilang, \"Kamu terlalu baik sampai aku merasa terbebani.\" Aku...",
+      "opts": [
+        "Cemas kalau karena ucapan itu dia akan pergi, jadi aku berusaha lebih hati-hati dan lebih baik lagi",
+        "Merasa kecewa, berpikir sudah sebaik ini tapi malah dianggap membebani, merasa tidak dibalas setimpal",
+        "Merasa ciut karena usaha untuk terlihat baik justru malah menjatuhkan kesan tentang diriku",
+        "Berpikir apakah caraku merebut hatinya terlalu berlebihan, dan mulai memikirkan cara memperlambat ritmeku"
+      ]
+    },
+    {
+      "q": "Alasan paling jujur kenapa aku terlalu baik di awal hubungan adalah?",
+      "opts": [
+        "\"Karena ingin dibalas setimpal dengan apa yang sudah aku berikan\"",
+        "\"Karena perasaan berdebar begitu meluap sampai sulit berhenti\"",
+        "\"Karena merasa harus baik dulu supaya dia menyukaiku\"",
+        "\"Karena cemas dia akan pergi, jadi ingin menahannya lebih dulu\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang ingin merebut hati dengan berbuat baik lebih dulu, Tipe Merebut Hati Lebih Dulu 🏁",
+      "typeName": "Tipe Merebut Hati Lebih Dulu",
+      "realReason": "Percaya bahwa dengan berbuat baik besar-besaran lebih dulu, dia akan menyukaimu",
+      "shortDescription": "Kamu bukan orang yang \"berlebihan\". Kamu percaya bahwa kesan baik dimenangkan oleh yang lebih dulu mengekspresikannya, jadi kamu mempercepat langkahmu.",
+      "description": "Untuk memastikan kehadiranmu terasa sejak awal, kamu mempercepat pemberian kado, kontak, dan acara-acara. Ini bisa membuatmu dapat kesan baik, tapi dia juga bisa merasa terbebani atau kesulitan menyesuaikan dengan ritmemu. Kesan baik biasanya tumbuh lewat ritme, bukan lewat jumlah.\n\nKalau diurai alasan sebenarnya: Bukan karena perasaanmu yang besar, tapi rumus \"harus baik dulu supaya dapat timbal balik\" yang mempercepat langkahmu",
+      "keywords": "Ekspresi lebih dulu, Kehadiran, Merebut lebih dulu, Ritme cepat, Kesan kuat",
+      "strengths": "Aktif, ekspresif, dan berani menunjukkan perasaan melalui tindakan",
+      "reasonDetail": "Sebelum kencan kedua, saat dipuji, saat reaksinya tidak sesuai harapan",
+      "frequentSaying": "\"Harus menunjukkan yang terbaik sejak awal\"",
+      "changeTips": "Tentukan batasanmu sendiri, seperti \"cukup dua kali seminggu, hanya kado kecil\" untuk kontak dan pemberian hadiah\nPerhatikan ritmenya (seberapa sering dia membalas, jarak waktu bertemu) dan coba sesuaikan dengan ritme yang serupa\nIngat bahwa kesan baik tumbuh perlahan seiring waktu, jadi jalani selangkah demi selangkah",
+      "oneLiner": "Kesan baik tidak tumbuh dari berlari, tapi dari ritme berjalan bersama. Melambat satu langkah pun, perasaanmu tetap akan tersampaikan",
+      "shareLine": "Kenapa aku selalu terlalu baik di awal hubungan? Hasil: Tipe Merebut Hati Lebih Dulu 🏁 Katanya aku tipe yang percaya harus baik dulu supaya dapat hati orang... ini sih kamu banget wkwk, coba juga yuk, kamu dapat tipe apa?"
+    },
+    {
+      "title": "Orang yang menahan lebih dulu karena takut ditinggalkan, Tipe Cemas Mendahului 🧲",
+      "typeName": "Tipe Cemas Mendahului",
+      "realReason": "Takut perasaannya memudar dan dia pergi, jadi berbuat baik lebih dulu untuk menahannya",
+      "shortDescription": "Kamu bukan sedang memberi. Kamu cemas akan kehilangan dia, jadi kamu menahannya lebih dulu.",
+      "description": "Saat kontak berkurang atau reaksinya terasa dingin, kecemasanmu meningkat dan membuatmu lebih memperhatikannya. Kamu berusaha satu langkah lagi agar pujian tidak hilang, dan usaha itu lama-lama jadi ritme yang sulit dipertahankan. Saat kecemasan mengendalikan tindakanmu, semakin kamu berbuat baik, semakin besar pula kecemasanmu.\n\nKalau diurai alasan sebenarnya: Bukan tindakan dia yang sebenarnya, tapi kecemasan batinmu sendiri bahwa \"aku bisa kehilangan dia\" yang membesarkan tindakanmu",
+      "keywords": "Takut ditinggalkan, Menahan lebih dulu, Berusaha lebih, Takut kehilangan, Meredakan cemas",
+      "strengths": "Sangat menghargai hubungan dan merespons dengan peka terhadap perubahan kecil pada pasangan",
+      "reasonDetail": "Saat kontak berkurang, saat reaksinya terasa dingin, saat cemas pujian akan berhenti",
+      "frequentSaying": "\"Jangan-jangan perasaannya sudah memudar?\"",
+      "changeTips": "Saat kecemasan muncul, tuliskan dalam dua baris: \"apa yang benar-benar terjadi\" dan \"apa yang aku khawatirkan dalam bayangan\"\nAlih-alih berusaha lebih keras, coba katakan dengan jujur, \"Belakangan ini kontak kita berkurang, aku jadi agak cemas\"\nPerbanyak kegiatan di luar hubungan untuk mengisi dirimu sendiri dan menyebar beban kecemasan\nJika kecemasan takut kehilangan ini terus berulang dan mempengaruhi kehidupan sehari-harimu, coba telusuri akarnya dengan aman bersama ahli konseling",
+      "oneLiner": "Keinginan untuk menahan adalah wajah lain dari cinta. Mengungkapkan kecemasan dengan kata-kata akan mengurangi beban tindakanmu",
+      "shareLine": "Kenapa aku selalu terlalu baik di awal hubungan? Hasil: Tipe Cemas Mendahului 🧲 Katanya aku tipe yang cemas ditinggalkan jadi menahan lebih dulu... ini sih kamu banget sedih deh, kirim hasilnya dong"
+    },
+    {
+      "title": "Orang yang ingin dibalas setimpal dengan yang sudah diberikan, Tipe Mengharap Balasan 🎁",
+      "typeName": "Tipe Mengharap Balasan",
+      "realReason": "Berharap dia akan membalas dengan usaha yang sama seperti yang sudah kamu berikan",
+      "shortDescription": "Kamu bukan sedang memberi dengan tulus. Diam-diam ada \"tagihan balasan\" yang menumpuk di hatimu.",
+      "description": "Kamu merasa karena sudah berbuat baik sebanyak ini, sekarang giliran dia untuk memberikan perhatian yang sama, dan kalau tidak ada balasan, rasa kecewa pun muncul. Harapan yang tidak diungkapkan tidak akan tersampaikan padanya, hanya rasa kecewa yang menumpuk dan membuat hubungan jadi melelahkan. Kalau perhatian yang sudah diberikan ditumpuk seperti tagihan, cinta bisa terasa seperti transaksi.\n\nKalau diurai alasan sebenarnya: Bukan pengabdian murni, tapi harapan yang tidak diucapkan yang mengendalikan tindakanmu",
+      "keywords": "Memberi sebanding menerima, Tagihan, Dibalas, Harapan tak terucap, Kecewa menumpuk",
+      "strengths": "Menghargai keseimbangan memberi dan menerima dalam hubungan, serta tulus dalam mengekspresikan perasaan",
+      "reasonDetail": "Saat membalas pesan panjang, saat menyiapkan kado dan acara, saat merasa ini giliran dia",
+      "frequentSaying": "\"Aku sudah melakukan sebanyak ini, lho\"",
+      "changeTips": "Sebelum berbuat baik, tanyakan dulu pada dirimu sendiri, \"Apakah aku mengharapkan sesuatu dari tindakan ini?\"\nJika memang ada harapan, ungkapkan secara langsung, \"Aku akan senang kalau kamu melakukan ini untukku di saat seperti ini\"\nBatasi memberi hanya sebatas \"yang memang ingin aku lakukan\" untuk mengurangi tagihan di hatimu",
+      "oneLiner": "Harapan yang disembunyikan akan menjadi kecewa, yang diucapkan akan menjadi permintaan. Dengan mengubahnya jadi permintaan, cinta akan terasa lebih ringan",
+      "shareLine": "Kenapa aku selalu terlalu baik di awal hubungan? Hasil: Tipe Mengharap Balasan 🎁 Katanya aku tipe yang menumpuk tagihan karena ingin dibalas setimpal... ini sih kamu banget wkwk, coba juga yuk"
+    },
+    {
+      "title": "Orang yang perasaannya meluap dan ritmenya tidak mau melambat, Tipe Semangat Berlebihan 🔥",
+      "typeName": "Tipe Semangat Berlebihan",
+      "realReason": "Perasaan berdebar dan emosimu terlalu besar sampai tindakanmu meluap sekaligus",
+      "shortDescription": "Kamu tidak sedang menghitung apa-apa. Perasaanmu saja terlalu panas, dan remmu terlalu lemah.",
+      "description": "Karena rasa kangen, kamu menghubungi beberapa kali sehari, dan rencana sudah terbayang bahkan sebelum bertemu. Ini semangat yang murni, tapi kalau tidak sesuai dengan ritmenya, bisa jadi beban, dan kamu sendiri akan cepat kehabisan energi. Ini adalah keadaan di mana emosi mendahului tindakan.\n\nKalau diurai alasan sebenarnya: Bukan soal niat, tapi kecepatan perasaanmu lebih cepat daripada kecepatan tindakanmu",
+      "keywords": "Berdebar, Meluap, Langsung bertindak, Kangen, Rem lemah",
+      "strengths": "Emosi yang kaya, jujur, dan penuh semangat yang tulus dalam mengekspresikan cinta",
+      "reasonDetail": "Sebelum bertemu, saat dia sibuk, saat hari jadi atau ulang tahun mendekat",
+      "frequentSaying": "\"Kangen banget sampai nggak tahan\"",
+      "changeTips": "Catat dulu hal yang ingin kamu lakukan, lalu cek lagi 30 menit kemudian apakah kamu masih ingin melakukannya\nBuat aturan seperti \"hari ini cukup satu hal saja\" untuk frekuensi kontak atau besar kecilnya acara\nSalurkan sebagian semangat yang meluap itu ke kegiatan lain, seperti olahraga atau kreativitas, sebagai pelampiasan milikmu sendiri",
+      "oneLiner": "Semangat yang membara adalah kelebihan. Bagi-bagi bahan bakarnya, apinya akan menyala lebih lama",
+      "shareLine": "Kenapa aku selalu terlalu baik di awal hubungan? Hasil: Tipe Semangat Berlebihan 🔥 Katanya aku tipe yang perasaannya meluap sampai remnya lemah... ini sih kamu banget wkwk, kamu kira-kira dapat tipe apa ya?"
+    },
+    {
+      "title": "Orang yang ingin diakui sebagai orang baik, Tipe Haus Pengakuan ⭐",
+      "typeName": "Tipe Haus Pengakuan",
+      "realReason": "Berusaha keras karena ingin diakui dan dinilai sebagai orang baik",
+      "shortDescription": "Kamu bukan sedang memberi dengan tulus. Kamu berusaha keras karena ingin terlihat sebagai orang baik di matanya.",
+      "description": "Karena ingin dibilang perhatian dan bisa diandalkan, kamu mencurahkan perhatian bahkan pada satu balasan atau satu kado saja. Saat dipuji kamu makin berusaha, saat tidak dipuji kamu jadi ciut. Saat pengakuan jadi bahan bakarmu, energimu jadi sangat berubah-ubah sesuai reaksinya.\n\nKalau diurai alasan sebenarnya: Reaksinya dipakai seperti kartu nilai yang menentukan nilai dirimu sendiri",
+      "keywords": "Orang baik, Pujian, Pengakuan, Dinilai, Berusaha keras",
+      "strengths": "Tulus, teliti, dan penuh usaha serta kepekaan untuk membuat orang lain senang",
+      "reasonDetail": "Saat dipuji, saat harus menunjukkan kepekaan, saat merasa sedang dinilai",
+      "frequentSaying": "\"Aku ini orang baik, kan?\"",
+      "changeTips": "Walaupun tidak dipuji, puji dulu dirimu sendiri untuk tiga hal yang sudah kamu lakukan dengan baik hari ini\nSebelum berusaha keras, bedakan dulu, \"Yang aku inginkan sekarang itu pujian, atau kebahagiaannya?\"\nCoba tunjukkan dirimu yang biasa saja dan amati bagaimana reaksinya",
+      "oneLiner": "Pengakuan akan semakin membuat haus, semakin banyak diterima. Berikan sebagian pengakuan itu untuk dirimu sendiri, dan ritme berusahamu akan melambat",
+      "shareLine": "Kenapa aku selalu terlalu baik di awal hubungan? Hasil: Tipe Haus Pengakuan ⭐ Katanya aku tipe yang berusaha keras karena ingin diakui sebagai orang baik... ini sih aku banget sedih, coba dulu nanti ceritain ke aku"
+    }
+  ]
+}

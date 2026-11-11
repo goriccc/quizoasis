@@ -1,0 +1,63 @@
+{
+  "phase3OvergivingEarlyLoveTest": {
+    "startMessage": {
+      "line1": "Padahal tahu kalau terlalu baik dari awal nanti bakal capek sendiri, tapi tetap saja begitu... kenapa ya aku selalu begini?",
+      "line2": "Baru kenal beberapa hari saja, kamu sudah menyapa pagi malam, memesan restoran bagus, bahkan menyiapkan kado kejutan. Dia memang terkesan, tapi beberapa bulan kemudian kamu malah kehabisan energi, dan rasa kecewa mulai muncul. Melihat dirimu sendiri seperti itu, kamu bertanya-tanya, \"Kenapa aku selalu begini?\"",
+      "line3": "Setiap orang punya alasan berbeda saat terlalu baik di awal hubungan. Bisa jadi karena ingin merebut hati lebih dulu, bisa jadi karena cemas dia akan pergi, bisa jadi karena ingin diperlakukan sama baiknya, bisa jadi karena perasaan berdebar yang meluap-luap, atau bisa jadi karena ingin diakui sebagai orang baik. Dengan melihat reaksimu sendiri, kamu bisa tahu kamu sebenarnya tipe seperti apa.",
+      "line4": "Lewat 10 situasi, kuis ini akan menunjukkan alasan sebenarnya kamu all-in di awal hubungan dan cara mengatur ritmemu sendiri.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Mulai Tes",
+      "startTest": "Cari Tahu Alasanku Terlalu Baik di Awal",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "realReason": "Alasan Sebenarnya Kamu Terlalu Baik",
+      "keywords": "Kata Kunci Utama",
+      "scoreTitle": "Skor per Tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan Bersama",
+      "strengths": "Kekuatan Tipe Ini",
+      "reasonDetail": "Momen Kamu Terlalu Baik",
+      "frequentSaying": "Kata-kata yang Sering Diucapkan Tipe Ini",
+      "changeTips": "Cara Mengatur Ritmemu",
+      "oneLiner": "Kesimpulan Singkat",
+      "shareResult": "Bagikan Hasilku",
+      "popularBadge": "Populer",
+      "retake": "Tes Ulang",
+      "otherTests": "Lihat Tes Lainnya"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+      "startKakao": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+      "startWechat": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+      "startWhatsapp": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+      "startTelegram": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!",
+      "startLine": "Kenapa aku selalu terlalu baik di awal hubungan? 🏁 Alasan sebenarnya kenapa aku all-in dari awal, coba juga yuk!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan berhasil disalin!",
+      "resultCopied": "Hasil berhasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+      "wechatCopy": "Tautan berhasil disalin! Tempel di WeChat untuk membagikannya.",
+      "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Silakan coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Rekomendasi Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes Paling Populer Saat Ini"
+    }
+  }
+}

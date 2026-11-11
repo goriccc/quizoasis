@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Why Do I Go All-In Too Fast at the Start of Dating?",
+    "description": "Even knowing I'll burn out later, I go all-in from the very beginning... why? Discover the real reason you overdo it early with these 10 scenarios, and learn how to pace yourself.",
+    "tags": ["Dating Psychology", "Relationship Patterns"]
+  },
+  "startMessage": {
+    "line1": "Even knowing I'll burn out later, I still go all-in from the very start... why do I do this?",
+    "line2": "It's only been a few days, but you're already checking in morning and night, booking the perfect restaurant, planning surprise gifts. They're touched, but a few months later you're running on empty, and resentment starts creeping in. Looking at yourself, you wonder, \"Why do I always do this?\"",
+    "line3": "Everyone overdoes it early on for different reasons. Maybe you want to win their heart first. Maybe you're anxious they'll leave. Maybe you're hoping to get the same back. Maybe you're simply overflowing with excitement. Or maybe you just want to be seen as a good person. How you react reveals who you really are.",
+    "line4": "These 10 scenarios reveal the real reason you go all-in early, and how to find the right pace.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why You Go All-In Early",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Reason You Overdo It",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "Why You're Together",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "Moments You Go All-In",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Pace Yourself",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+    "startKakao": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+    "startWechat": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+    "startWhatsapp": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+    "startTelegram": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!",
+    "startLine": "Why Do I Go All-In Too Fast at the Start of Dating? 🏁 Find out the real reason you go all-in early — try it yourself!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing isn't available right now.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "You're about to meet your crush for the second time. You...",
+      "opts": [
+        "You're anxious they might lose interest and leave, so you book a great restaurant and prepare a gift in advance to keep them close",
+        "You expect that if you prepare this much, they'll put in just as much effort for you",
+        "You're so excited that plans just keep pouring into your head before you even meet",
+        "You put extra care into it because you want to hear again that you're thoughtful and great"
+      ]
+    },
+    {
+      "q": "They casually ask, \"How was your day?\" You...",
+      "opts": [
+        "You reply at length, putting in effort, expecting they'll return the same energy later",
+        "You're so happy to hear from them that you pour out your whole day in one long reply",
+        "You carefully craft even a single reply because you want to seem sweet and dependable",
+        "You reply eagerly, thinking this is your chance to win their heart first with your effort"
+      ]
+    },
+    {
+      "q": "Their birthday falls just two weeks after you started dating. You...",
+      "opts": [
+        "You're overflowing with excitement and want to go all out with gifts and events",
+        "You go overboard because you feel like only this kind of effort will make them remember you as a great person",
+        "You think if you go big from the start, they'll see you as special and give you their heart",
+        "You're anxious that if you don't do your best, their feelings might cool, so you give it everything"
+      ]
+    },
+    {
+      "q": "They compliment you, saying \"You're really thoughtful.\" You...",
+      "opts": [
+        "You're so happy to hear it that you try even harder to be seen as a great person",
+        "You take it as a clear sign you've won them over, so you pick up the pace even more",
+        "You worry this compliment might disappear, so you try to do even better to not lose it",
+        "You expect that since you've done this much, it's now their turn to show the same effort"
+      ]
+    },
+    {
+      "q": "They've been busy for a few days and contact less. You...",
+      "opts": [
+        "You reach out first with encouraging messages to make sure they don't forget you and to keep their interest",
+        "You worry less contact might mean their feelings are cooling, so you try even harder to hold on",
+        "You feel hurt, thinking \"I did all this for them, why aren't they giving it back?\"",
+        "You're overflowing with longing, wanting to reach out multiple times a day"
+      ]
+    },
+    {
+      "q": "A month in, they tell you that you give them strength. You...",
+      "opts": [
+        "You're overjoyed and brimming with ideas for even more things to do for them",
+        "You feel like you've been recognized as a great person, so you try even harder",
+        "You want to keep hearing this, so you try even harder to make sure they never leave, easing your anxiety",
+        "You feel a growing expectation that they'll return the favor in kind someday"
+      ]
+    },
+    {
+      "q": "They say they'd like to try picking the date spot themselves. You...",
+      "opts": [
+        "You feel a vague anxiety that if you don't take charge, you won't be seen as a good person, so you try to decide first anyway",
+        "You think deciding the spot yourself is how you win their heart first, so you suggest one",
+        "You think it's finally their turn, since you've handled everything so far",
+        "You're already so excited that you've already picked out several options"
+      ]
+    },
+    {
+      "q": "Their reaction wasn't quite what you expected. You...",
+      "opts": [
+        "You think you need to leave an even stronger first impression, so you express your feelings even more intensely",
+        "You worry they might leave, so you try even harder to hold on to them",
+        "Your emotions run ahead of logic, and you just feel like doing even more for them",
+        "You wonder if you haven't seemed like a good enough person, so you try even harder"
+      ]
+    },
+    {
+      "q": "They tell you, \"You're too good to me, it feels like a lot.\" You...",
+      "opts": [
+        "You get anxious they might leave because of this, so you try to be even more careful and good to them",
+        "You feel hurt, thinking it's unfair that all your effort is seen as \"too much\" instead of being returned",
+        "You feel deflated, as if your effort to seem like a good person actually backfired",
+        "You start calculating whether your approach to winning them over was too much, and how to slow down"
+      ]
+    },
+    {
+      "q": "What's the most honest reason you go all-in too much early on?",
+      "opts": [
+        "\"Because I want to get back as much as I give\"",
+        "\"Because I'm overflowing with excitement and it's hard to stop\"",
+        "\"Because I feel like I need to be good to them first for them to like me\"",
+        "\"Because I'm anxious they'll leave, so I want to hold on in advance\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who wins hearts by going first, the Early-Bird Charmer 🏁",
+      "typeName": "Early-Bird Charmer",
+      "realReason": "You believe that going big first is what makes someone fall for you",
+      "shortDescription": "You're not \"too much.\" You believe affection goes to whoever expresses it first, so you're picking up the pace.",
+      "description": "You rush to make an impression early with gifts, constant contact, and grand gestures. It can win you affection, but it may also overwhelm the other person or make it hard for them to match your pace. Affection usually grows through rhythm, not quantity.\n\nThe real reason, unpacked: It's not that your feelings are huge — it's the formula \"go first, win them over\" that's speeding you up",
+      "keywords": "Going first, Making an impression, Claiming the lead, Fast pace, Strong first impression",
+      "strengths": "Proactive, expressive, and brave enough to show your interest through action",
+      "reasonDetail": "Before a second date, when you're complimented, when their reaction falls short of expectations",
+      "frequentSaying": "\"I need to make a strong impression from the start\"",
+      "changeTips": "Set your own cap, like \"only twice a week, only small gifts,\" for contact and presents\nWatch their pace — how often they reply, how far apart they want to meet — and try to match that rhythm\nRemember that affection grows over time, and take it one step at a time",
+      "oneLiner": "Affection doesn't grow from a sprint — it grows from walking together at the same pace. Slow down one step, and your feelings will still land",
+      "shareLine": "Why do I go all-in too fast at the start of dating? Result: Early-Bird Charmer 🏁 Apparently I believe going first is how you win someone's heart... lol this is so you, try it and see what you get!"
+    },
+    {
+      "title": "Someone who holds on in advance out of fear they'll leave, the Preemptive Anxiety Type 🧲",
+      "typeName": "Preemptive Anxiety Type",
+      "realReason": "You're afraid they'll lose interest and leave, so you try to hold on to them in advance",
+      "shortDescription": "You're not being generous. You're anxious about losing them, so you grab hold first.",
+      "description": "When they contact you less or react lukewarmly, your anxiety spikes and you try even harder. You push yourself further so the compliments don't stop, and that effort becomes a pace you can't sustain. When anxiety drives your actions, the more you give, the more your anxiety grows too.\n\nThe real reason, unpacked: It's not their actual behavior — it's your inner fear of \"I might lose them\" that's inflating your actions",
+      "keywords": "Fear they'll leave, Holding on early, Trying harder, Fear of loss, Soothing anxiety",
+      "strengths": "You value relationships deeply and respond sensitively to even small changes in the other person",
+      "reasonDetail": "When contact slows down, when their reaction feels lukewarm, when you worry the compliments might stop",
+      "frequentSaying": "\"Is it possible they're losing interest?\"",
+      "changeTips": "When anxiety rises, write down in two lines \"what actually happened\" versus \"what I'm imagining\"\nInstead of trying harder, try saying honestly, \"I've felt a little anxious since we've been talking less lately\"\nBuild up activities and connections outside the relationship to spread out the weight of your anxiety\nIf this fear of losing someone keeps repeating and affects your daily life, consider exploring its roots safely with a counseling professional",
+      "oneLiner": "Holding on is just another face of love. Putting your anxiety into words lightens the weight of your actions",
+      "shareLine": "Why do I go all-in too fast at the start of dating? Result: Preemptive Anxiety Type 🧲 Apparently I hold on in advance because I'm scared they'll leave... this is so you it hurts, send me your result"
+    },
+    {
+      "title": "Someone who wants back what they gave, the Expecting Reciprocity Type 🎁",
+      "typeName": "Expecting Reciprocity Type",
+      "realReason": "You expect them to return similar effort for what you've given",
+      "shortDescription": "You're not being generous. A quiet \"tab\" is piling up in your mind, waiting to be repaid.",
+      "description": "You feel it's now their turn to show the same effort since you've done so much, and when there's no response, resentment builds up. Expectations you never voice never reach the other person — only resentment piles up, draining your energy in the relationship. When you keep a tally of what you've given, love can start to feel like a transaction.\n\nThe real reason, unpacked: It's not pure devotion — it's unspoken expectations quietly driving your actions",
+      "keywords": "Give and take, Keeping score, Expecting repayment, Unspoken expectations, Building resentment",
+      "strengths": "You value fairness in relationships and sincerity in how you express yourself",
+      "reasonDetail": "When you reply at length, when you prepare gifts and events, when you feel it's their turn",
+      "frequentSaying": "\"I've done this much for them, though\"",
+      "changeTips": "Before doing something nice, first ask yourself, \"Am I expecting something back from this?\"\nIf you do have expectations, voice them directly: \"It would mean a lot to me if you did this for me sometimes\"\nLimit your giving to \"only as much as I genuinely want to give\" to keep the tab from growing",
+      "oneLiner": "Hidden expectations turn into resentment; spoken expectations turn into requests. Turning them into requests makes love feel lighter",
+      "shareLine": "Why do I go all-in too fast at the start of dating? Result: Expecting Reciprocity Type 🎁 Apparently I'm piling up a tab, expecting back what I gave... lol this is so you, you should try it too"
+    },
+    {
+      "title": "Someone whose excitement never slows down, the Overflowing Passion Type 🔥",
+      "typeName": "Overflowing Passion Type",
+      "realReason": "Your excitement and emotions run so high that your actions pour out all at once",
+      "shortDescription": "You're not calculating anything. Your feelings are just too hot, and your brakes are weak.",
+      "description": "You text multiple times a day just because you miss them, and plans start pouring out before you've even met. It's genuine passion, but if it doesn't match their pace, it can feel overwhelming to them — and you'll likely burn out too. It's a state where emotion is outrunning action.\n\nThe real reason, unpacked: It's not intention — it's that the speed of your feelings is simply outpacing the speed of your actions",
+      "keywords": "Excitement, Overflowing, Acting immediately, Missing them, Weak brakes",
+      "strengths": "Emotionally rich, honest, and genuinely passionate about expressing love",
+      "reasonDetail": "Before you meet, when they're busy, when an anniversary or birthday is approaching",
+      "frequentSaying": "\"I miss you so much I can't stand it\"",
+      "changeTips": "Jot down the thing you want to do first, then check 30 minutes later if you still feel the urge\nSet a rule like \"only one thing today\" for how often you contact them or how big your gestures get\nChannel your overflowing passion into other outlets too, like exercise or creative projects",
+      "oneLiner": "Being passionate is a strength. Spread the fuel around, and the fire burns longer",
+      "shareLine": "Why do I go all-in too fast at the start of dating? Result: Overflowing Passion Type 🔥 Apparently my excitement is so overflowing my brakes are weak... lol this is so you, what type do you think you'll get?"
+    },
+    {
+      "title": "Someone who wants to be seen as a good person, the Validation Seeker Type ⭐",
+      "typeName": "Validation Seeker Type",
+      "realReason": "You push yourself hard because you want recognition and approval as a good person",
+      "shortDescription": "You're not being generous. You're trying hard because you want to look like a good person in their eyes.",
+      "description": "You put effort into even a single reply or gift because you want to be told you're thoughtful and dependable. Compliments make you try even harder, and the lack of them makes you shrink back. When approval becomes your fuel, your energy swings wildly depending on their reaction.\n\nThe real reason, unpacked: Their reaction is being used like a scorecard that determines your own worth",
+      "keywords": "Being a good person, Compliments, Approval, Being judged, Trying hard",
+      "strengths": "Sincere, thoughtful, and genuinely considerate in trying to make the other person happy",
+      "reasonDetail": "When you're complimented, when you feel you need to show off your thoughtfulness, when you feel like you're being evaluated",
+      "frequentSaying": "\"I'm a good person, right?\"",
+      "changeTips": "Even without a compliment, praise yourself first for three things you did well today\nBefore trying hard, ask yourself, \"Do I want their approval right now, or do I want them to be happy?\"\nTry showing up as your natural self and simply observe how they respond",
+      "oneLiner": "The more approval you receive, the thirstier you get. Give some of that approval to yourself, and the urge to try so hard eases up",
+      "shareLine": "Why do I go all-in too fast at the start of dating? Result: Validation Seeker Type ⭐ Apparently I try so hard because I want to be seen as a good person... this is so me it hurts, try it and tell me"
+    }
+  ]
+}
