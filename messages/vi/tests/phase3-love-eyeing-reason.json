@@ -1,0 +1,63 @@
+{
+  "phase3LoveEyeingReasonTest": {
+    "startMessage": {
+      "line1": "Vừa yêu, sao lại nhìn sắc mặt đối phương trước?",
+      "line2": "Chọn món hay nói một câu cũng soi biểu cảm trước. Họ chẳng sao — chỉ mình đang đọc thời tiết. Hẹn xong, mệt đến trước cả vui.",
+      "line3": "Mỗi người đọc vị vì lý do khác nhau: sợ bị từ chối, quá chiều chuộng, ghét xung đột, muốn được công nhận, hoặc tự kiểm duyệt trước khi nói. Nhìn phản ứng của mình sẽ thấy mình là ai.",
+      "line4": "10 tình huống sẽ chỉ ra lý do thật sự khiến bạn cứ dò xét — và cách nhẹ nhàng hơn.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm hiểu vì sao mình cứ dò xét",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật sự khiến bạn dò xét",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do đi kèm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Khoảnh khắc radar bật lên",
+      "frequentSaying": "Câu thường nói của kiểu này",
+      "changeTips": "Cách sống nhẹ nhàng hơn",
+      "oneLiner": "Nhận xét một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+      "startKakao": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+      "startWechat": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+      "startWhatsapp": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+      "startTelegram": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+      "startLine": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Hiện không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

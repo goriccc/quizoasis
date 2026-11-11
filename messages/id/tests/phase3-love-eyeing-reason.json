@@ -1,0 +1,63 @@
+{
+  "phase3LoveEyeingReasonTest": {
+    "startMessage": {
+      "line1": "Begitu pacaran, kenapa selalu cek mood mereka dulu?",
+      "line2": "Pilih menu atau bilang satu kalimat pun, kamu scan wajah mereka dulu. Mereka baik-baik saja — hanya kamu yang baca cuaca. Habis kencan, lelah datang sebelum senang.",
+      "line3": "Alasan baca situasi beda-beda: takut ditolak, terlalu peduli, benci konflik, ingin diakui, atau menyensor diri sebelum bicara. Reaksimu menunjukkan siapa dirimu.",
+      "line4": "10 situasi ini mengungkap alasan sejati kenapa kamu terus baca situasi — dan cara merasa lebih lega.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti Tes",
+      "startTest": "Cari Tahu Kenapa Aku Baca Situasi",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "realReason": "Alasan Sejati Kenapa Kamu Baca Situasi",
+      "keywords": "Kata Kunci Utama",
+      "scoreTitle": "Skor per Tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang Ikut Hadir",
+      "strengths": "Kekuatan Tipe Ini",
+      "reasonDetail": "Saat Radar Menyala",
+      "frequentSaying": "Yang Sering Diucapkan Tipe Ini",
+      "changeTips": "Cara Merasa Lebih Lega",
+      "oneLiner": "Ringkasan Satu Kalimat",
+      "shareResult": "Bagikan Hasil Saya",
+      "popularBadge": "Populer",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+      "startKakao": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+      "startWechat": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+      "startWhatsapp": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+      "startTelegram": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+      "startLine": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi sedang tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+    }
+  }
+}

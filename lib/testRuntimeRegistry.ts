@@ -499,6 +499,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3ContactObsessionReasonTestClient'),
   },
+
+  'phase3-love-eyeing-reason': {
+    slug: 'phase3-love-eyeing-reason',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_LOVE_EYEING_REASON_META } = await import('./phase3LoveEyeingReasonData');
+      return {
+        title: PHASE3_LOVE_EYEING_REASON_META.title,
+        description: PHASE3_LOVE_EYEING_REASON_META.description,
+        tags: PHASE3_LOVE_EYEING_REASON_META.tags,
+        thumbnail: 'p3_test_love_eyeing_reason.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3LoveEyeingReasonData');
+      return {
+        questions: mod.phase3LoveEyeingReasonQuestions,
+        results: mod.phase3LoveEyeingReasonResults,
+        meta: {
+          title: mod.PHASE3_LOVE_EYEING_REASON_META.title,
+          description: mod.PHASE3_LOVE_EYEING_REASON_META.description,
+          tags: mod.PHASE3_LOVE_EYEING_REASON_META.tags,
+          thumbnail: 'p3_test_love_eyeing_reason.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3LoveEyeingReasonTest',
+        messagesFileSlug: 'phase3-love-eyeing-reason',
+      };
+    },
+    loadClient: () => import('@/components/Phase3LoveEyeingReasonTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

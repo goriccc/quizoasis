@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương?",
+    "description": "Vừa yêu, sao lại nhìn sắc mặt đối phương trước? 10 tình huống giúp bạn tìm ra lý do thật sự và cách sống nhẹ nhàng hơn.",
+    "tags": ["Đọc vị trong tình yêu", "Tâm lý tình yêu", "Kiểu yêu"]
+  },
+  "startMessage": {
+    "line1": "Vừa yêu, sao lại nhìn sắc mặt đối phương trước?",
+    "line2": "Chọn món hay nói một câu cũng soi biểu cảm trước. Họ chẳng sao — chỉ mình đang đọc thời tiết. Hẹn xong, mệt đến trước cả vui.",
+    "line3": "Mỗi người đọc vị vì lý do khác nhau: sợ bị từ chối, quá chiều chuộng, ghét xung đột, muốn được công nhận, hoặc tự kiểm duyệt trước khi nói. Nhìn phản ứng của mình sẽ thấy mình là ai.",
+    "line4": "10 tình huống sẽ chỉ ra lý do thật sự khiến bạn cứ dò xét — và cách nhẹ nhàng hơn.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu vì sao mình cứ dò xét",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự",
+    "realReason": "Lý do thật sự khiến bạn dò xét",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo loại",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Lý do đi kèm",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Khoảnh khắc radar bật lên",
+    "frequentSaying": "Câu thường nói của kiểu này",
+    "changeTips": "Cách sống nhẹ nhàng hơn",
+    "oneLiner": "Nhận xét một câu",
+    "shareResult": "Chia sẻ kết quả",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại",
+    "otherTests": "Xem bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+    "startKakao": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+    "startWechat": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+    "startWhatsapp": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+    "startTelegram": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!",
+    "startLine": "Tại sao yêu rồi lại cứ dò xét sắc mặt đối phương? 🥀 Tìm lý do thật sự — bạn cũng thử nhé!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Hiện không dùng được tính năng chia sẻ.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+    "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+  },
+  "questions": [
+    {
+      "q": "Họ hỏi «Hôm nay muốn ăn gì?» Bạn sẽ?",
+      "opts": [
+        "Nhớ món họ muốn hôm qua rồi đề xuất món đó",
+        "Sợ ý kiến lệch làm không khí ngại nên bảo «Gì cũng được»",
+        "Nhìn biểu cảm trước xem họ có hài lòng món mình chọn không",
+        "Sợ nói ra nghe kỳ nên sửa câu trong đầu nhiều lần mới nói"
+      ]
+    },
+    {
+      "q": "Họ đến chỗ hẹn với vẻ mặt căng hơn thường. Bạn sẽ?",
+      "opts": [
+        "Chuyển chủ đề vui để không khí khỏi lắng",
+        "Lo mình làm sai gì đó nên cố gắng hơn thường",
+        "Muốn hỏi nhưng sợ câu hỏi nặng nề, chọn lời đến mất timing",
+        "Lo nếu vì mình mà họ khó chịu thì sẽ bị ghét"
+      ]
+    },
+    {
+      "q": "Đổi kiểu tóc mới mà họ không nói gì. Bạn sẽ?",
+      "opts": [
+        "Hỏi thẳng có thích không, hoặc chờ một lời khen",
+        "Muốn hỏi nhưng nuốt lời — sợ trông như hay đòi hỏi",
+        "Lo họ không thích mà không nói, hoặc bắt đầu kém thích mình",
+        "Bận tâm nhưng họ trông mệt nên gác chuyện mình, chăm họ trước"
+      ]
+    },
+    {
+      "q": "Họ đặt lịch bạn bè vào cuối tuần bạn để trống. Bạn sẽ?",
+      "opts": [
+        "Sợ nói buồn trông hẹp hòi nên sửa câu mãi rồi chỉ bảo «Đi vui nhé~»",
+        "Giả vờ ổn — sợ níu sẽ làm họ phiền hoặc bỏ đi",
+        "Hiếm khi gặp bạn nên đổi lịch mình ngay để chiều họ",
+        "Không nói gì — sợ mở miệng sẽ thành cãi nhau"
+      ]
+    },
+    {
+      "q": "Họ hỏi «Chuyến này bạn muốn đi đâu?» Bạn sẽ?",
+      "opts": [
+        "Chiều hướng họ có thể thích — sợ nói chỗ mình họ sẽ ghét",
+        "Dò trước nơi họ muốn rồi trả lời theo đó",
+        "Bảo «Anh/Em tiện sao cũng được» — sợ lệch ý sẽ va chạm",
+        "Tính câu nào dễ được khen rồi chọn đáp án đó"
+      ]
+    },
+    {
+      "q": "Họ bảo «Hôm nay mệt, gọi ngắn thôi». Bạn sẽ?",
+      "opts": [
+        "Lo mình chán nên họ mệt, lần sau chuẩn bị chuyện vui hơn",
+        "Buồn nhưng sợ nghe như làm nũng nên tự kiểm duyệt rồi nuốt lời",
+        "Nói «Nghỉ đi» và gác chuyện mình để khỏi làm họ nặng",
+        "Bảo «Ừ, ngủ ngon~» — sợ nói tiếc sẽ làm ngại"
+      ]
+    },
+    {
+      "q": "Họ nói về ý bạn: «Hình như hơi không ổn». Bạn sẽ?",
+      "opts": [
+        "Tưởng câu vừa rồi kỳ quá, tua lại trong đầu và hối",
+        "Sợ bị nhìn xấu nên vội «À chắc mình nghĩ sai»",
+        "Gác lại bằng «Cũng có thể» — sợ phản bác sẽ thành cãi",
+        "Muốn được công nhận nhưng phản ứng lạnh khiến cả ngày bận lòng"
+      ]
+    },
+    {
+      "q": "Quà kỷ niệm không hợp gu nhưng họ nhìn đầy kỳ vọng. Bạn sẽ?",
+      "opts": [
+        "Giả thích quá mức — sợ lộ thất vọng sẽ tổn thương và đẩy họ xa",
+        "Biết họ chọn kỹ nên ưu tiên cảm xúc họ và cảm ơn lớn",
+        "Tính phản ứng nào làm họ hài lòng nhất rồi diễn theo",
+        "Muốn nói thật nhưng sửa câu nhiều lần vì sợ lời làm tổn thương"
+      ]
+    },
+    {
+      "q": "Lần đầu dự buổi gặp bạn của họ. Bạn sẽ?",
+      "opts": [
+        "Đọc không khí và chăm họ đến mức mình chẳng vui nổi",
+        "Cười xòa câu hỏi ngại và tránh chủ đề dễ va chạm",
+        "Kiểm duyệt trước khi nói đến mức ít nói dần",
+        "Căng thẳng — nếu nhóm này thấy mình dở, họ sẽ xa mình"
+      ]
+    },
+    {
+      "q": "Họ nói «Em/Anh lúc nào cũng như đang dò mình». Gần với lòng bạn nhất?",
+      "opts": [
+        "Mình chiều để khỏi cãi — hóa ra nhìn vậy",
+        "Như bị bắt quả tang đang cố làm người tốt",
+        "Sợ lộ bản thật họ sẽ đi nên cứ dò xét",
+        "Muốn họ thoải mái nên cảm xúc mình luôn để sau"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người co lại trước vì sợ bị ghét, Kiểu sợ bị từ chối 🥀",
+      "typeName": "Kiểu sợ bị từ chối",
+      "realReason": "Sợ lộ bản thật rồi bị từ chối hoặc bị bỏ",
+      "shortDescription": "Bạn không «quá nhạy». Bạn co lại trước vì sợ họ ghét con người thật của bạn.",
+      "description": "Nói ý kiến hay lộ thất vọng đều như đang đánh cược tình yêu. Vì thế bạn soi phản ứng và chiều theo. Đọc vị thành tấm khiên — nhưng khiên ấy cũng khiến bản thật khó chạm tới họ.",
+      "keywords": "Sợ bị ghét, Sợ bị xa lánh, Giấu bản thật, Chiều theo, Sợ bị bỏ",
+      "strengths": "Quý quan hệ và tinh tế với cảm xúc đối phương",
+      "reasonDetail": "Khi mặt họ cứng lại, khi ý kiến lệch, khi cần lộ cảm xúc thật",
+      "frequentSaying": "«Không phải vì mình mà anh/em ghét mình chứ?»",
+      "changeTips": "Hôm nay chọn một sở thích nhỏ (món, phim) và nói thật\nKhi họ phản đối, chỉ viết sự thật: có bằng chứng họ ghét mình không?\nKhi lo dâng, nói thẳng «Giờ mình đang sợ bị ghét»\nNếu sợ bị ghét lặp lại mỗi lần yêu hoặc đè nặng đời sống, hãy cùng chuyên gia tư vấn tâm lý tìm gốc nỗi sợ một cách an toàn",
+      "oneLiner": "Người còn ở lại sau khi thấy bản thật mới là duyên thật. Hãy thành thật từ chuyện nhỏ",
+      "shareLine": "Tại sao yêu rồi lại cứ dò xét? Kết quả: Kiểu sợ bị từ chối 🥀 Co lại vì sợ lộ bản thật bị ghét... đúng bạn quá lol thử đi — bạn ra gì?"
+    },
+    {
+      "title": "Người để tâm trạng họ trước mình, Kiểu chiều chuộng quá mức 🌷",
+      "typeName": "Kiểu chiều chuộng quá mức",
+      "realReason": "Muốn họ thoải mái đến mức cảm xúc mình luôn bị đẩy lùi",
+      "shortDescription": "Bạn không đang «đọc vị». Bạn muốn họ thoải mái đến mức đẩy mình ra sau.",
+      "description": "Họ mệt thì bạn gác chuyện mình; dò họ muốn gì rồi chiều trước. Trông dịu dàng chín chắn — nhưng chiều chuộng chất chồng dễ thành chỉ mình chịu. Điều bạn muốn, họ có thể chẳng biết.",
+      "keywords": "Họ trước, Cảm xúc mình sau, Chiều tâm trạng, Chăm sóc, Tự gánh",
+      "strengths": "Ấm áp, nhanh nhận ra nhu cầu, giữ quan hệ dễ chịu",
+      "reasonDetail": "Khi họ mệt, khi cần chọn, khi đến lượt họ vui",
+      "frequentSaying": "«Mình ổn, anh/em tiện sao cũng được»",
+      "changeTips": "Trước khi nhớ đáp án của họ, viết một dòng điều mình muốn\nMỗi ngày tập nói một lần «Mình cũng thích cái này»\nNhắc mình: đã chiều thì mình cũng được quyền nhận lại",
+      "oneLiner": "Sự chiều chuộng của bạn quý giá. Chiều mà không xóa mình mới bền",
+      "shareLine": "Tại sao yêu rồi lại cứ dò xét? Kết quả: Kiểu chiều chuộng quá mức 🌷 Tâm trạng họ trước mình nên mệt... đúng bạn. Gửi kết quả cho mình"
+    },
+    {
+      "title": "Người nuốt lời vì hòa bình, Kiểu tránh xung đột 🕊️",
+      "typeName": "Kiểu tránh xung đột",
+      "realReason": "Sợ va chạm sẽ thành cãi nhau nên gác trước",
+      "shortDescription": "Bạn không đang «đọc vị». Bạn đang giữ không khí trước khi xung đột kịp nảy.",
+      "description": "Sắp lệch ý thì «gì cũng được»; buồn thì «không sao». Hòa khí giữ được, nhưng cảm xúc chưa giải không biến mất — nó chất chồng. Đọc vị chặn cãi, cũng có thể chặn cơ hội hiểu nhau.",
+      "keywords": "Giữ không khí, Gì cũng được, Không sao, Tránh va chạm, Cảm xúc chất chồng",
+      "strengths": "Tạo không khí yên và làm đối phương thoải mái",
+      "reasonDetail": "Khi ý kiến sắp lệch, khi buồn dâng, khi không khí ngại",
+      "frequentSaying": "«Thôi được rồi, bỏ qua đi»",
+      "changeTips": "Khi buồn, mở đầu bằng «Không phải muốn cãi — chỉ muốn cho anh/em biết»\nChỉ nói hai câu: sự thật + cảm xúc. Ví dụ: «Đổi lịch nên mình hơi buồn»\nTập nói khác biệt nhỏ để thấy nói ra quan hệ vẫn không vỡ",
+      "oneLiner": "Nói không phải là cãi. Càng nói nhỏ và thường xuyên, càng ít cãi lớn",
+      "shareLine": "Tại sao yêu rồi lại cứ dò xét? Kết quả: Kiểu tránh xung đột 🕊️ Sợ cãi nên nuốt lời trước... dân «gì cũng được» đúng bạn lol thử đi"
+    },
+    {
+      "title": "Người muốn được nhìn nhận là tốt, Kiểu khát công nhận ⭐",
+      "typeName": "Kiểu khát công nhận",
+      "realReason": "Phải được công nhận và làm họ hài lòng mới yên",
+      "shortDescription": "Bạn không đang «đọc vị». Bạn đang tìm trên mặt họ tín hiệu «mình đang làm tốt».",
+      "description": "Bạn liên tục kiểm: lựa chọn có vừa lòng không, mình có vui không, phản ứng có đáng khen không. Phản ứng lạnh khiến cả ngày bận lòng, lần sau cố hơn. Sự công nhận của họ trở thành điểm số của bạn.",
+      "keywords": "Chờ lời khen, Thể hiện tốt, Làm vừa lòng, Kiểm phản ứng, Chấm điểm",
+      "strengths": "Nỗ lực và tinh tế làm họ vui, chân thành với quan hệ",
+      "reasonDetail": "Khi lựa chọn bị đánh giá, khi phản ứng lạnh hơn thường",
+      "frequentSaying": "«Mình ổn chứ? Thế nào?»",
+      "changeTips": "Dù không được khen, tự khen mình ba việc hôm nay đã làm\nKhi muốn kiểm phản ứng, hỏi: mình cần lời khen hay cần yên tâm?\nMỗi tuần một hoạt động vui một mình, không phụ thuộc họ hài lòng",
+      "oneLiner": "Muốn được công nhận là tự nhiên. Nhận một phần từ chính mình thì radar sẽ nhẹ hơn nhiều",
+      "shareLine": "Tại sao yêu rồi lại cứ dò xét? Kết quả: Kiểu khát công nhận ⭐ Tìm tín hiệu «làm tốt» trên mặt họ... đúng bạn lol Bạn thuộc kiểu nào?"
+    },
+    {
+      "title": "Người tự kiểm duyệt trước khi nói, Kiểu tự kiểm duyệt ✂️",
+      "typeName": "Kiểu tự kiểm duyệt",
+      "realReason": "Họ chưa phản ứng, bạn đã tự lọc lời mình trước",
+      "shortDescription": "Bạn không đang «đọc vị». Bạn tưởng tượng phản ứng chưa tới rồi tự sửa câu.",
+      "description": "«Nói vậy có kỳ không?», «Có giống làm nũng không?» — sửa câu vô số lần trước khi nói. Nói xong lại tua lại và hối. Họ chẳng sao — chỉ bạn tốn năng lượng đến kiệt.",
+      "keywords": "Sửa câu, Nuốt lời, Tua lại, Phản ứng tưởng tượng, Tự kiệt sức",
+      "strengths": "Thận trọng, không nói nhẹ dạ, chọn cách diễn đạt vì đối phương",
+      "reasonDetail": "Ngay trước khi nói, ngay sau khi nói, khi cần nói buồn hoặc nhờ vả",
+      "frequentSaying": "«Nói vậy được không?»",
+      "changeTips": "Giới hạn sửa câu còn «một lần» rồi nói luôn\nKhi tua lại sau khi nói, chỉ nhớ phản ứng thật của họ như sự thật\nCố tình ném một câu nhẹ không sửa và thấy chẳng có gì xảy ra",
+      "oneLiner": "Không cần câu hoàn hảo. Một câu hơi vụng nhưng thật lòng thường gần hơn",
+      "shareLine": "Tại sao yêu rồi lại cứ dò xét? Kết quả: Kiểu tự kiểm duyệt ✂️ Lọc câu trước khi nói... đúng bạn. Thử rồi báo mình nhé"
+    }
+  ]
+}

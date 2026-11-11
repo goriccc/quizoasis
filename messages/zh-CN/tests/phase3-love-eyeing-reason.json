@@ -1,0 +1,63 @@
+{
+  "phase3LoveEyeingReasonTest": {
+    "startMessage": {
+      "line1": "一恋爱，为什么总先看对方脸色？",
+      "line2": "选个菜单、说一句话，也要先看对方表情。对方没事，只有你在读天气；约会结束，累比开心先到。",
+      "line3": "察言观色的原因因人而异：可能怕被拒绝，可能太会照顾，可能讨厌冲突，可能渴望被认可，也可能开口前就自我审查。看自己的反应，就能看见自己是什么样的人。",
+      "line4": "用10个情境，告诉你总爱察言观色的真正原因，以及如何轻松下来。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去测试",
+      "startTest": "看看我为什么总爱察言观色",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "其他相似测试",
+      "realReason": "察言观色的真正原因",
+      "keywords": "核心关键词",
+      "scoreTitle": "各类型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "同时存在的原因",
+      "strengths": "这个类型的优点",
+      "reasonDetail": "察言观色启动的瞬间",
+      "frequentSaying": "这个类型常说的话",
+      "changeTips": "让自己轻松下来的方法",
+      "oneLiner": "一句话点评",
+      "shareResult": "分享我的结果",
+      "popularBadge": "热门",
+      "retake": "再测一次",
+      "otherTests": "看看其他测试"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "为什么一恋爱就总爱察言观色？🥀 找出总看脸色的真正原因，你也来测！",
+      "startKakao": "为什么一恋爱就总爱察言观色？🥀 找出总看脸色的真正原因，你也来测！",
+      "startWechat": "为什么一恋爱就总爱察言观色？🥀 找出总看脸色的真正原因，你也来测！",
+      "startWhatsapp": "为什么一恋爱就总爱察言观色？🥀 找出总看脸色的真正原因，你也来测！",
+      "startTelegram": "为什么一恋爱就总爱察言观色？🥀 找出总看脸色的真正原因，你也来测！",
+      "startLine": "为什么一恋爱就总爱察言观色？🥀 找出总看脸色的真正原因，你也来测！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "暂时无法使用分享功能。",
+      "wechatCopy": "链接已复制！请到微信粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 近期热门测试 Top5"
+    }
+  }
+}

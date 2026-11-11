@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Why Do I Keep Reading the Room So Much When Dating?",
+    "description": "Why do you check their mood first the moment you're dating? These 10 scenarios reveal the real reason you keep reading the room — and how to feel freer.",
+    "tags": ["Dating Nunchi", "Dating Psychology", "Dating Types"]
+  },
+  "startMessage": {
+    "line1": "Why do you check their mood first the moment you're dating?",
+    "line2": "Even picking a menu or saying one line, you scan their face first. They're fine — but you're the only one reading the weather. After a date, tiredness hits before joy.",
+    "line3": "Everyone reads the room for a different reason. Maybe fear of rejection. Maybe you care too much. Maybe you hate conflict. Maybe you crave approval. Or maybe you censor yourself before you speak. Your reactions show who you are.",
+    "line4": "These 10 scenarios show the real reason you keep reading the room — and how to feel freer.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why You Read the Room",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Reason You Read the Room",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "Why You're Together",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "When Your Radar Switches On",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Feel Freer",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+    "startKakao": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+    "startWechat": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+    "startWhatsapp": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+    "startTelegram": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+    "startLine": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing isn't available right now.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "They ask, \"What do you want to eat today?\" You...",
+      "opts": [
+        "Recall what they said they wanted yesterday and suggest that",
+        "Say \"anything's fine\" — scared a split opinion will make things awkward",
+        "Watch their face first to see if they like the menu you picked",
+        "Rewrite the answer in your head several times, scared it'll sound weird"
+      ]
+    },
+    {
+      "q": "They show up looking more tense than usual. You...",
+      "opts": [
+        "Brighten the topic so the mood doesn't sink",
+        "Wonder if you did something wrong and try harder than usual",
+        "Want to ask, but rewrite the question until you miss the moment",
+        "Feel anxious — if it's because of you, they might start disliking you"
+      ]
+    },
+    {
+      "q": "They walk past your new haircut with no comment. You...",
+      "opts": [
+        "End up asking if they like it, or waiting for a compliment",
+        "Want to ask, but swallow it — scared you'll look needy",
+        "Worry they hate it and just won't say — or that they like you less",
+        "Care, but they look tired, so you shelve your story and check on them first"
+      ]
+    },
+    {
+      "q": "They book friends for the weekend you left open. You...",
+      "opts": [
+        "Draft \"I'm hurt\" for ages, then just say \"Have fun~\" — scared you'll seem petty",
+        "Act fine — scared that holding them back will annoy them or make them leave",
+        "Shift your plans right away to match them, since they rarely see friends",
+        "Say nothing — scared bringing it up will turn into a fight"
+      ]
+    },
+    {
+      "q": "They ask, \"Where do you want to go for this trip?\" You...",
+      "opts": [
+        "Match what they'd want — scared they'll hate your pick",
+        "Figure out where they want to go first, then answer that way",
+        "Say \"whatever works for you\" — scared a disagreement will clash",
+        "Calculate which answer will please them and pick the praise-worthy option"
+      ]
+    },
+    {
+      "q": "They say, \"I'm tired — let's keep the call short tonight.\" You...",
+      "opts": [
+        "Worry you're boring them, and plan funnier topics next time",
+        "Feel hurt but swallow it — scared it'll sound like nagging",
+        "Say \"get some rest\" and shelve your own stories so you don't burden them",
+        "Say \"okay, night~\" — scared saying you're disappointed will make it awkward"
+      ]
+    },
+    {
+      "q": "They say about your idea, \"I'm not sure about that.\" You...",
+      "opts": [
+        "Replay what you said in your head and regret it — was that weird?",
+        "Panic they think less of you and quickly say \"maybe I got it wrong\"",
+        "Fold with \"yeah, that could be\" — scared pushing back will start a fight",
+        "Wanted recognition, so a cold reaction sticks with you all day"
+      ]
+    },
+    {
+      "q": "You don't love the anniversary gift, but they're watching with hopeful eyes. You...",
+      "opts": [
+        "Overact how much you love it — scared disappointment will hurt them and push them away",
+        "Put their feelings first and thank them big — they chose carefully",
+        "Calculate which reaction will please them most and give a praise-worthy response",
+        "Rewrite your honest take again and again, scared the words will wound them"
+      ]
+    },
+    {
+      "q": "You're at their friends' gathering for the first time. You...",
+      "opts": [
+        "Read the room and care for them so much you barely enjoy yourself",
+        "Laugh off awkward questions and dodge anything that could clash",
+        "Censor every story before speaking until you barely talk",
+        "Tense up — if their friends dislike you, they might pull away"
+      ]
+    },
+    {
+      "q": "They say, \"You always seem to be reading me.\" What's closest to your gut?",
+      "opts": [
+        "I was matching to avoid fights — so that's how it looked",
+        "Feels like they caught me trying so hard to seem like a good person",
+        "I kept reading the room because showing my real self might make them leave",
+        "I wanted them comfortable, so my own feelings always came second"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who flinches first from fear of being disliked, the Rejection-Fear Type 🥀",
+      "typeName": "Rejection-Fear Type",
+      "realReason": "You're scared that showing your real self will get you rejected or left",
+      "shortDescription": "You're not \"too sensitive.\" You're shrinking first because you're scared they'll dislike the real you.",
+      "description": "Voicing an opinion or showing disappointment can feel like risking the love itself. So you scan their reactions and move toward matching them. Reading the room becomes a shield — but that shield also keeps your real self from reaching them.",
+      "keywords": "Fear of being disliked, Fear they'll pull away, Hiding the real you, Matching, Fear of abandonment",
+      "strengths": "You treasure the bond and carefully tend to how they feel",
+      "reasonDetail": "When their face hardens, when opinions split, when you need to show real emotion",
+      "frequentSaying": "\"You're not mad at me because of me, right?\"",
+      "changeTips": "Pick one tiny preference today (menu, movie) and say it honestly\nWhen they disagree, write only the facts — is there real proof they dislike you?\nWhen anxiety rises, say it plain: \"I'm worried you might dislike me right now\"\nIf fear of being disliked repeats across relationships or weighs on daily life, explore its roots safely with a counseling professional",
+      "oneLiner": "The ones who stay after seeing the real you are the real ones. Start honest with the small stuff",
+      "shareLine": "Why do I keep reading the room so much when dating? Result: Rejection-Fear Type 🥀 Apparently I flinch because I'm scared they'll dislike the real me... this is so you lol try it — what'd you get?"
+    },
+    {
+      "title": "Someone who puts their mood before yours, the Over-Caring Type 🌷",
+      "typeName": "Over-Caring Type",
+      "realReason": "Wanting them comfortable comes first — so your feelings keep getting pushed back",
+      "shortDescription": "You're not \"reading the room.\" You want them comfortable so badly that you put yourself last.",
+      "description": "If they look tired, you shelve your stories. You figure out what they want and match it first. It looks kind and mature — but when care stacks up, only you keep enduring. They may never learn what you actually want.",
+      "keywords": "Them first, Your feelings last, Matching moods, Caregiving, Carrying it alone",
+      "strengths": "Warm, quick to notice needs, and gifted at making the relationship feel easy",
+      "reasonDetail": "When they look tired, when a choice is needed, when it's their moment to feel happy",
+      "frequentSaying": "\"I'm fine — whatever works for you\"",
+      "changeTips": "Before recalling their answer, write one line of what you want\nPractice saying \"I'd love this too\" once a day\nRemind yourself: caring doesn't mean you're not allowed to receive",
+      "oneLiner": "Your care is precious — care that doesn't erase you is the kind that lasts",
+      "shareLine": "Why do I keep reading the room so much when dating? Result: Over-Caring Type 🌷 Their mood comes before mine so I burn out... this is so you. Send me your result"
+    },
+    {
+      "title": "Someone who swallows words for peace, the Conflict-Avoider Type 🕊️",
+      "typeName": "Conflict-Avoider Type",
+      "realReason": "You fold first because a clash feels like it will turn into a fight",
+      "shortDescription": "You're not \"reading the room.\" You're moving to protect the vibe before conflict even starts.",
+      "description": "When opinions might split, you say \"anything's fine.\" When hurt, you go with \"it's okay.\" Peace holds — but unresolved feelings don't vanish; they stack. Reading the room can block fights and also block getting to know each other.",
+      "keywords": "Protecting the vibe, Anything's fine, It's okay, Dodging clashes, Stacking feelings",
+      "strengths": "You create calm and make the other person feel at ease",
+      "reasonDetail": "When opinions might diverge, when hurt rises, when the mood turns awkward",
+      "frequentSaying": "\"No, let's just drop it\"",
+      "changeTips": "When hurt, start with \"I'm not fighting — I just want you to know\"\nTry two sentences only: fact + feeling. Example: \"Plans changed and I felt a little hurt\"\nPractice small disagreements so you learn speaking doesn't break the bond",
+      "oneLiner": "Speaking isn't fighting. The more often you speak small, the fewer big fights you get",
+      "shareLine": "Why do I keep reading the room so much when dating? Result: Conflict-Avoider Type 🕊️ I swallow words first so we won't fight... \"anything's fine\" people — this is so you lol try it"
+    },
+    {
+      "title": "Someone who wants to look like a good person, the Approval-Seeker Type ⭐",
+      "typeName": "Approval-Seeker Type",
+      "realReason": "You only feel safe when you're approved of and pleasing them",
+      "shortDescription": "You're not \"reading the room.\" You're hunting their face for a \"you're doing well\" signal.",
+      "description": "You keep checking whether they liked your choice, whether you're fun, whether your reaction earned praise. A cold response sticks all day, and next time you try even harder. Their approval starts to feel like your score.",
+      "keywords": "Waiting for praise, Looking good, Pleasing them, Checking reactions, Keeping score",
+      "strengths": "Effort and social sense to make them happy, plus sincere commitment to the relationship",
+      "reasonDetail": "When they evaluate your choice, when their reaction runs colder than usual",
+      "frequentSaying": "\"Was I okay? How was I?\"",
+      "changeTips": "Even without praise, give yourself three wins from today first\nWhen you want to check their reaction, ask: do I want praise — or calm?\nAdd one weekly activity that's fun for you alone, with or without their approval",
+      "oneLiner": "Wanting recognition is natural. Getting some of it from yourself makes the radar much lighter",
+      "shareLine": "Why do I keep reading the room so much when dating? Result: Approval-Seeker Type ⭐ I hunt their face for a \"you're doing well\" signal... this is so you lol What's your type?"
+    },
+    {
+      "title": "Someone who censors themselves before speaking, the Self-Censor Type ✂️",
+      "typeName": "Self-Censor Type",
+      "realReason": "You filter your words before their reaction even arrives",
+      "shortDescription": "You're not \"reading the room.\" You're rewriting your lines while imagining a reaction that hasn't happened yet.",
+      "description": "\"Will this sound weird?\" \"Will I seem needy?\" — you polish sentences endlessly before speaking. Afterward you replay what you said and regret it. They're fine — you're the only one burning energy and getting drained.",
+      "keywords": "Rewriting lines, Swallowing words, Replaying, Imagined reactions, Draining yourself",
+      "strengths": "Careful with words, never careless, and thoughtful about how you express yourself",
+      "reasonDetail": "Right before speaking, right after speaking, when you need to share hurt or ask for something",
+      "frequentSaying": "\"Is it okay to say this?\"",
+      "changeTips": "Cap rewrites to once, then say it as is\nWhen replay starts after speaking, recall only their actual reaction as fact\nThrow one light line unpolished on purpose and notice nothing bad happens",
+      "oneLiner": "Perfect lines aren't required. A slightly clumsy sentence with sincerity lands closer",
+      "shareLine": "Why do I keep reading the room so much when dating? Result: Self-Censor Type ✂️ I filter my sentences before I even speak... this is so you. Try it and tell me"
+    }
+  ]
+}

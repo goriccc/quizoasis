@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Kenapa Pacaran Selalu Baca Situasi Berlebihan?",
+    "description": "Begitu pacaran, kenapa selalu cek mood mereka dulu? Lewat 10 situasi, temukan alasan sejati kenapa kamu terus baca situasi — dan cara merasa lebih lega.",
+    "tags": ["Baca Situasi Pacaran", "Psikologi Pacaran", "Tipe Pacaran"]
+  },
+  "startMessage": {
+    "line1": "Begitu pacaran, kenapa selalu cek mood mereka dulu?",
+    "line2": "Pilih menu atau bilang satu kalimat pun, kamu scan wajah mereka dulu. Mereka baik-baik saja — hanya kamu yang baca cuaca. Habis kencan, lelah datang sebelum senang.",
+    "line3": "Alasan baca situasi beda-beda: takut ditolak, terlalu peduli, benci konflik, ingin diakui, atau menyensor diri sebelum bicara. Reaksimu menunjukkan siapa dirimu.",
+    "line4": "10 situasi ini mengungkap alasan sejati kenapa kamu terus baca situasi — dan cara merasa lebih lega.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Iklan",
+    "goToTest": "Ikuti Tes",
+    "startTest": "Cari Tahu Kenapa Aku Baca Situasi",
+    "linkCopy": "Salin Tautan",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Tes Serupa Lainnya",
+    "realReason": "Alasan Sejati Kenapa Kamu Baca Situasi",
+    "keywords": "Kata Kunci Utama",
+    "scoreTitle": "Skor per Tipe",
+    "scoreUnit": "poin",
+    "hiddenReason": "Alasan yang Ikut Hadir",
+    "strengths": "Kekuatan Tipe Ini",
+    "reasonDetail": "Saat Radar Menyala",
+    "frequentSaying": "Yang Sering Diucapkan Tipe Ini",
+    "changeTips": "Cara Merasa Lebih Lega",
+    "oneLiner": "Ringkasan Satu Kalimat",
+    "shareResult": "Bagikan Hasil Saya",
+    "popularBadge": "Populer",
+    "retake": "Ulangi Tes",
+    "otherTests": "Lihat Tes Lain"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+    "startKakao": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+    "startWechat": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+    "startWhatsapp": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+    "startTelegram": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!",
+    "startLine": "Kenapa Pacaran Selalu Baca Situasi Berlebihan? 🥀 Cari alasan sejati kenapa kamu terus scan mood mereka — cobain!"
+  },
+  "alerts": {
+    "linkCopied": "Tautan disalin!",
+    "resultCopied": "Hasil disalin ke clipboard!",
+    "shareFailed": "Fitur berbagi sedang tidak tersedia.",
+    "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+    "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+    "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+  },
+  "questions": [
+    {
+      "q": "Mereka bertanya, «Hari ini mau makan apa?» Kamu…",
+      "opts": [
+        "Ingat yang mereka bilang mau makan kemarin, lalu usulkan itu",
+        "Bilang «apa aja boleh» — takut beda pendapat bikin awkward",
+        "Lihat wajah mereka dulu, apakah menu pilihanmu disukai",
+        "Tulis ulang jawaban di kepala berkali-kali, takut kedengarannya aneh"
+      ]
+    },
+    {
+      "q": "Mereka datang dengan wajah lebih tegang dari biasanya. Kamu…",
+      "opts": [
+        "Cerahkan topik supaya suasana tak merosot",
+        "Khawatir kamu salah, jadi berusaha lebih dari biasanya",
+        "Ingin bertanya, tapi memilih kata sampai momennya lewat",
+        "Cemas — kalau karena kamu, mereka bisa jadi tidak suka padamu"
+      ]
+    },
+    {
+      "q": "Gaya rambut baru, mereka lewat tanpa komentar. Kamu…",
+      "opts": [
+        "Akhirnya bertanya suka atau tidak, atau menunggu pujian",
+        "Ingin bertanya tapi ditelan — takut kelihatan rewel",
+        "Khawatir mereka tak suka tapi tak bilang — atau mulai kurang suka padamu",
+        "Peduli, tapi mereka kelihatan lelah, jadi cerita sendiri disimpan dan rawat mereka dulu"
+      ]
+    },
+    {
+      "q": "Mereka isi weekend yang kamu kosongkan dengan janji teman. Kamu…",
+      "opts": [
+        "Draft «aku tersinggung» lama, lalu cuma bilang «Selamat main~» — takut kelihatan kecil hati",
+        "Pura-pura oke — takut menahan mereka bikin sebal atau pergi",
+        "Langsung ubah jadwalmu agar cocok, karena jarang ketemu teman",
+        "Diam saja — takut dibahas jadi ribut"
+      ]
+    },
+    {
+      "q": "Mereka bertanya, «Liburan ini kamu mau ke mana?» Kamu…",
+      "opts": [
+        "Sesuaikan yang mungkin mereka suka — takut pilihanmu dibenci",
+        "Cari dulu mau mereka ke mana, lalu jawab ke situ",
+        "Bilang «sesuai kamu aja» — takut beda pendapat bentrok",
+        "Hitung jawaban mana yang paling menyenangkan, pilih yang pantas dipuji"
+      ]
+    },
+    {
+      "q": "Mereka bilang, «Hari ini capek — telepon singkat aja.» Kamu…",
+      "opts": [
+        "Khawatir kamu membosankan, jadi siapkan topik lebih seru lain kali",
+        "Tersinggung tapi ditelan — takut kedengarannya ngambek",
+        "Bilang «istirahat ya» dan simpan ceritamu supaya tak membebani",
+        "Bilang «oke, good night~» — takut bilang kecewa bikin awkward"
+      ]
+    },
+    {
+      "q": "Mereka bilang soal ide kamu, «Kayaknya kurang pas.» Kamu…",
+      "opts": [
+        "Putar ulang ucapanmu di kepala dan menyesal — aneh banget ya?",
+        "Panik dianggap jelek, cepat bilang «ah mungkin aku salah pikir»",
+        "Mundur dengan «iya, bisa juga» — takut membantah jadi ribut",
+        "Ingin diakui, jadi reaksi dingin nempel seharian"
+      ]
+    },
+    {
+      "q": "Hadiah anniversary kurang suka, tapi mereka menatap penuh harapan. Kamu…",
+      "opts": [
+        "Berlebihan pura-pura suka — takut wajah kecewa menyakiti dan menjauhkan mereka",
+        "Utamakan perasaan mereka dan berterima kasih besar — mereka memilih hati-hati",
+        "Hitung reaksi mana yang paling menyenangkan, lalu kasih respons yang pantas dipuji",
+        "Ingin jujur tapi terus rewrite kalimat, takut kata-kata melukai"
+      ]
+    },
+    {
+      "q": "Pertama kali ikut kumpulan teman mereka. Kamu…",
+      "opts": [
+        "Baca suasana dan rawat mereka sampai kamu sendiri tak menikmati",
+        "Tertawa lewat pertanyaan canggung dan hindari topik yang bisa bentrok",
+        "Sensor setiap cerita sebelum bicara sampai makin pendiam",
+        "Tegang — kalau teman-teman tak suka, mereka bisa menjauh"
+      ]
+    },
+    {
+      "q": "Mereka bilang, «Kamu kayaknya selalu baca aku.» Mana yang paling dekat isi hatimu?",
+      "opts": [
+        "Aku menyesuaikan biar nggak ribut — jadi kelihatannya begitu",
+        "Seperti ketahuan berusaha keras jadi orang baik",
+        "Aku terus baca situasi karena takut versi asliku bikin mereka pergi",
+        "Aku ingin mereka nyaman, jadi perasaanku selalu nomor dua"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang mengerut duluan karena takut dibenci, Tipe Takut Ditolak 🥀",
+      "typeName": "Tipe Takut Ditolak",
+      "realReason": "Takut menunjukkan diri asli lalu ditolak atau ditinggal",
+      "shortDescription": "Kamu bukan «terlalu sensitif.» Kamu mengerut duluan karena takut mereka membenci diri aslimu.",
+      "description": "Menyuarakan pendapat atau menunjukkan kecewa bisa terasa seperti mempertaruhkan cinta. Jadi kamu scan reaksi mereka dan bergerak ke arah menyesuaikan. Baca situasi jadi perisai — tapi perisai itu juga membuat diri asli sulit sampai ke mereka.",
+      "keywords": "Takut dibenci, Takut dijauhi, Menyembunyikan diri asli, Menyesuaikan, Takut ditinggalkan",
+      "strengths": "Menghargai hubungan dan cermat menjaga perasaan mereka",
+      "reasonDetail": "Saat wajah mereka mengeras, saat pendapat berbeda, saat harus menunjukkan emosi asli",
+      "frequentSaying": "«Kamu nggak benci aku karena aku kan?»",
+      "changeTips": "Hari ini pilih satu preferensi kecil (menu, film) dan bilang jujur\nSaat mereka beda pendapat, tulis fakta saja — adakah bukti nyata mereka membencimu?\nSaat cemas naik, bilang apa adanya: «Sekarang aku takut kamu nggak suka aku»\nKalau takut dibenci berulang di tiap hubungan atau menekan hidup sehari-hari, jelajahi akarnya dengan aman bersama profesional konseling",
+      "oneLiner": "Yang tetap tinggal setelah melihat diri aslimu adalah yang sejati. Mulai jujur dari hal kecil",
+      "shareLine": "Kenapa pacaran selalu baca situasi berlebihan? Hasil: Tipe Takut Ditolak 🥀 Aku mengerut karena takut diri asli dibenci... ini banget kamu wkwk cobain — dapat apa?"
+    },
+    {
+      "title": "Orang yang menaruh mood mereka di atas milikmu, Tipe Terlalu Peduli 🌷",
+      "typeName": "Tipe Terlalu Peduli",
+      "realReason": "Ingin mereka nyaman lebih dulu — jadi perasaanmu terus terdorong ke belakang",
+      "shortDescription": "Kamu bukan sedang «baca situasi.» Kamu ingin mereka nyaman sampai menaruh diri di belakang.",
+      "description": "Kalau mereka kelihatan lelah, ceritamu disimpan. Kamu cari dulu yang mereka mau lalu menyesuaikan. Terlihat hangat dan dewasa — tapi kepedulian yang menumpuk mudah jadi hanya kamu yang menahan. Yang kamu mau, mereka mungkin tak tahu.",
+      "keywords": "Mereka dulu, Perasaanmu belakangan, Menyesuaikan mood, Merawat, Menanggung sendiri",
+      "strengths": "Hangat, cepat menangkap kebutuhan, membuat hubungan terasa nyaman",
+      "reasonDetail": "Saat mereka kelihatan lelah, saat harus memilih, saat giliran mereka bahagia",
+      "frequentSaying": "«Aku gapapa, sesuai kamu aja»",
+      "changeTips": "Sebelum mengingat jawaban mereka, tulis satu baris yang kamu mau\nLatih bilang «Aku juga suka ini» sekali sehari\nIngatkan diri: sudah peduli, kamu juga boleh menerima",
+      "oneLiner": "Kepedulianmu berharga. Peduli yang tidak menghapus dirimu yang bertahan lama",
+      "shareLine": "Kenapa pacaran selalu baca situasi berlebihan? Hasil: Tipe Terlalu Peduli 🌷 Mood mereka di atas milikku jadi aku lelah... ini banget kamu. Kirim hasilmu"
+    },
+    {
+      "title": "Orang yang menelan kata demi damai, Tipe Hindari Konflik 🕊️",
+      "typeName": "Tipe Hindari Konflik",
+      "realReason": "Kamu mundur duluan karena bentrok terasa akan jadi ribut",
+      "shortDescription": "Kamu bukan sedang «baca situasi.» Kamu bergerak menjaga suasana sebelum konflik sempat lahir.",
+      "description": "Kalau pendapat bisa pecah, kamu bilang «apa aja boleh.» Kalau tersinggung, kamu lewat dengan «gapapa.» Damai terjaga — tapi perasaan yang tak selesai tidak hilang; ia menumpuk. Baca situasi bisa menahan ribut dan sekaligus menutup kesempatan saling kenal.",
+      "keywords": "Jaga suasana, Apa aja boleh, Gapapa, Hindari bentrok, Perasaan menumpuk",
+      "strengths": "Menciptakan ketenangan dan membuat pasangan merasa nyaman",
+      "reasonDetail": "Saat pendapat bisa pecah, saat tersinggung naik, saat suasana jadi canggung",
+      "frequentSaying": "«Nggak apa, lewatin aja»",
+      "changeTips": "Saat tersinggung, mulai dengan «Aku nggak mau ribut — cuma mau kasih tahu»\nCoba dua kalimat saja: fakta + perasaan. Contoh: «Jadwal berubah, aku agak tersinggung»\nLatih perbedaan kecil supaya belajar bicara tidak merusak hubungan",
+      "oneLiner": "Bicara bukan ribut. Makin sering bicara kecil, makin sedikit ribut besar",
+      "shareLine": "Kenapa pacaran selalu baca situasi berlebihan? Hasil: Tipe Hindari Konflik 🕊️ Aku telan kata duluan biar nggak ribut... orang «apa aja boleh» ini banget kamu wkwk cobain"
+    },
+    {
+      "title": "Orang yang ingin terlihat baik, Tipe Butuh Pengakuan ⭐",
+      "typeName": "Tipe Butuh Pengakuan",
+      "realReason": "Baru tenang kalau diakui dan berhasil menyenangkan mereka",
+      "shortDescription": "Kamu bukan sedang «baca situasi.» Kamu mencari di wajah mereka sinyal «kamu sudah bagus.»",
+      "description": "Kamu terus cek apakah pilihanmu mereka suka, apakah kamu menyenangkan, apakah reaksiimu pantas dipuji. Reaksi dingin nempel seharian, dan lain kali kamu berusaha lebih keras. Pengakuan mereka mulai terasa seperti skor milikmu.",
+      "keywords": "Menunggu pujian, Tampil baik, Menyenangkan mereka, Cek reaksi, Menilai skor",
+      "strengths": "Usaha dan sense membuat mereka senang, serta tulus menjaga hubungan",
+      "reasonDetail": "Saat pilihanmu dinilai, saat reaksi mereka lebih dingin dari biasanya",
+      "frequentSaying": "«Aku oke nggak tadi? Gimana?»",
+      "changeTips": "Tanpa pujian pun, puji diri dulu dengan tiga hal yang kamu lakukan hari ini\nSaat ingin cek reaksi, tanya: aku butuh pujian — atau ketenangan?\nSetiap minggu buat satu aktivitas yang menyenangkanmu sendiri, dengan atau tanpa persetujuan mereka",
+      "oneLiner": "Ingin diakui itu alami. Ambil sebagian pengakuan dari diri sendiri, radar jadi jauh lebih ringan",
+      "shareLine": "Kenapa pacaran selalu baca situasi berlebihan? Hasil: Tipe Butuh Pengakuan ⭐ Aku cari sinyal «sudah bagus» di wajah mereka... ini banget kamu wkwk Tipe kamu apa?"
+    },
+    {
+      "title": "Orang yang menyensor diri sebelum bicara, Tipe Sensor Diri ✂️",
+      "typeName": "Tipe Sensor Diri",
+      "realReason": "Sebelum reaksi mereka datang, kamu sudah menyaring kata-katamu sendiri",
+      "shortDescription": "Kamu bukan sedang «baca situasi.» Kamu membayangkan reaksi yang belum ada lalu menulis ulang kalimat.",
+      "description": "«Ini kedengarannya aneh?» «Kayak ngambek nggak ya?» — kamu poles kalimat berkali-kali sebelum bicara. Setelahnya kamu putar ulang dan menyesal. Mereka baik-baik saja — hanya kamu yang menguras energi sampai lelah.",
+      "keywords": "Rewrite kalimat, Menelan kata, Putar ulang, Reaksi imajiner, Lelah sendiri",
+      "strengths": "Hati-hati dengan kata, tidak bicara sembarangan, dan memilih ungkapan dengan empati",
+      "reasonDetail": "Tepat sebelum bicara, tepat sesudah bicara, saat harus sampaikan tersinggung atau permintaan",
+      "frequentSaying": "«Boleh nggak ya bilang ini?»",
+      "changeTips": "Batasi rewrite jadi sekali, lalu bilang apa adanya\nSaat putar ulang mulai setelah bicara, ingat hanya reaksi nyata mereka sebagai fakta\nSengaja lempar satu kalimat ringan tanpa polesan dan lihat tak ada yang buruk terjadi",
+      "oneLiner": "Kalimat sempurna tak wajib. Satu kalimat agak kaku tapi tulus justru lebih dekat",
+      "shareLine": "Kenapa pacaran selalu baca situasi berlebihan? Hasil: Tipe Sensor Diri ✂️ Aku saring kalimat sebelum bicara... ini banget kamu. Cobain terus kabarin"
+    }
+  ]
+}

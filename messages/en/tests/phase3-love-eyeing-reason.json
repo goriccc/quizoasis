@@ -1,0 +1,63 @@
+{
+  "phase3LoveEyeingReasonTest": {
+    "startMessage": {
+      "line1": "Why do you check their mood first the moment you're dating?",
+      "line2": "Even picking a menu or saying one line, you scan their face first. They're fine — but you're the only one reading the weather. After a date, tiredness hits before joy.",
+      "line3": "Everyone reads the room for a different reason. Maybe fear of rejection. Maybe you care too much. Maybe you hate conflict. Maybe you crave approval. Or maybe you censor yourself before you speak. Your reactions show who you are.",
+      "line4": "These 10 scenarios show the real reason you keep reading the room — and how to feel freer.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why You Read the Room",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Reason You Read the Room",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Why You're Together",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "When Your Radar Switches On",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Feel Freer",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+      "startKakao": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+      "startWechat": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+      "startWhatsapp": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+      "startTelegram": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!",
+      "startLine": "Why Do I Keep Reading the Room So Much When Dating? 🥀 Find the real reason you keep scanning their mood — try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}
