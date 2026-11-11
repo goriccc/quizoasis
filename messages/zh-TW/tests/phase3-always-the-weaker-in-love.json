@@ -1,0 +1,63 @@
+{
+  "phase3AlwaysTheWeakerInLoveTest": {
+    "startMessage": {
+      "line1": "更會遷就、更會等待的，為什麼總是我？",
+      "line2": "時間地點都按對方來，等對方消息，心裡委屈也先把氣氛哄好——總是你在做這些。對方未必是壞人，關係的天平卻一直往一邊傾斜。",
+      "line3": "成為弱勢一方的原因因人而異：可能是遷就成了習慣，可能是太需要被確認，可能是怕被拒絕，可能是多付出更安心，也可能是把主導權交了出去。起了名字，找回平衡的路才會清楚。",
+      "line4": "用10個情境，告訴你總處弱勢的真正原因，以及如何找回平衡。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去測試",
+      "startTest": "看看我為什麼總是弱勢",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "其他相似測試",
+      "realReason": "總是弱勢的真正原因",
+      "keywords": "核心關鍵詞",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "同時存在的原因",
+      "strengths": "這個類型的優點",
+      "reasonDetail": "容易變弱勢的瞬間",
+      "frequentSaying": "這個類型常說的話",
+      "changeTips": "找回平衡的方法",
+      "oneLiner": "一句話點評",
+      "shareResult": "分享我的結果",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "看看其他測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "為什麼戀愛裡我總是弱勢的一方？🧩 遷就等待背後的真正原因，你也來測！",
+      "startKakao": "為什麼戀愛裡我總是弱勢的一方？🧩 遷就等待背後的真正原因，你也來測！",
+      "startWechat": "為什麼戀愛裡我總是弱勢的一方？🧩 遷就等待背後的真正原因，你也來測！",
+      "startWhatsapp": "為什麼戀愛裡我總是弱勢的一方？🧩 遷就等待背後的真正原因，你也來測！",
+      "startTelegram": "為什麼戀愛裡我總是弱勢的一方？🧩 遷就等待背後的真正原因，你也來測！",
+      "startLine": "為什麼戀愛裡我總是弱勢的一方？🧩 遷就等待背後的真正原因，你也來測！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "暫時無法使用分享功能。",
+      "wechatCopy": "鏈接已複製！請到微信粘貼分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測試 Top5"
+    }
+  }
+}

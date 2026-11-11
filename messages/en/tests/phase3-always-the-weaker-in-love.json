@@ -1,0 +1,63 @@
+{
+  "phase3AlwaysTheWeakerInLoveTest": {
+    "startMessage": {
+      "line1": "Why am I always the one who adjusts more and waits longer?",
+      "line2": "You bend on the time and place, wait for their texts, and smooth things over first when you're hurt. They're not a bad person — yet the relationship scale keeps tipping to one side.",
+      "line3": "Everyone ends up as the \"weaker\" one for a different reason. Maybe adjusting became a habit. Maybe you need constant reassurance. Maybe rejection feels terrifying. Maybe giving more feels safer. Or maybe you've handed over the reins. Naming it is the first step back to balance.",
+      "line4": "These 10 scenarios show the real reason you keep ending up with less power — and how to reclaim balance.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why You're Always Weaker",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Reason You're Always Weaker",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Why You're Together",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "Moments You Feel Weaker",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Find Balance",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+      "startKakao": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+      "startWechat": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+      "startWhatsapp": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+      "startTelegram": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+      "startLine": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}

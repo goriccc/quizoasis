@@ -425,6 +425,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3OvergivingEarlyLoveTestClient'),
   },
+
+  'phase3-always-the-weaker-in-love': {
+    slug: 'phase3-always-the-weaker-in-love',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_ALWAYS_THE_WEAKER_IN_LOVE_META } = await import('./phase3AlwaysTheWeakerInLoveData');
+      return {
+        title: PHASE3_ALWAYS_THE_WEAKER_IN_LOVE_META.title,
+        description: PHASE3_ALWAYS_THE_WEAKER_IN_LOVE_META.description,
+        tags: PHASE3_ALWAYS_THE_WEAKER_IN_LOVE_META.tags,
+        thumbnail: 'p3_test_always_the_weaker_in_love.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3AlwaysTheWeakerInLoveData');
+      return {
+        questions: mod.phase3AlwaysTheWeakerInLoveQuestions,
+        results: mod.phase3AlwaysTheWeakerInLoveResults,
+        meta: {
+          title: mod.PHASE3_ALWAYS_THE_WEAKER_IN_LOVE_META.title,
+          description: mod.PHASE3_ALWAYS_THE_WEAKER_IN_LOVE_META.description,
+          tags: mod.PHASE3_ALWAYS_THE_WEAKER_IN_LOVE_META.tags,
+          thumbnail: 'p3_test_always_the_weaker_in_love.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3AlwaysTheWeakerInLoveTest',
+        messagesFileSlug: 'phase3-always-the-weaker-in-love',
+      };
+    },
+    loadClient: () => import('@/components/Phase3AlwaysTheWeakerInLoveTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Why Am I Always the Weaker One in Love?",
+    "description": "Why am I always the one who adjusts more and waits longer? These 10 scenarios reveal the real reason you end up with less power — and how to find balance again.",
+    "tags": ["Dating Psychology", "Relationship Imbalance"]
+  },
+  "startMessage": {
+    "line1": "Why am I always the one who adjusts more and waits longer?",
+    "line2": "You bend on the time and place, wait for their texts, and smooth things over first when you're hurt. They're not a bad person — yet the relationship scale keeps tipping to one side.",
+    "line3": "Everyone ends up as the \"weaker\" one for a different reason. Maybe adjusting became a habit. Maybe you need constant reassurance. Maybe rejection feels terrifying. Maybe giving more feels safer. Or maybe you've handed over the reins. Naming it is the first step back to balance.",
+    "line4": "These 10 scenarios show the real reason you keep ending up with less power — and how to reclaim balance.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why You're Always Weaker",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Reason You're Always Weaker",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "Why You're Together",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "Moments You Feel Weaker",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Find Balance",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+    "startKakao": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+    "startWechat": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+    "startWhatsapp": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+    "startTelegram": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!",
+    "startLine": "Why Am I Always the Weaker One in Love? 🧩 Find the real reason you keep adjusting and waiting — try it!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing isn't available right now.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "You're making weekend plans with your partner. You...",
+      "opts": [
+        "Can't wait for them to text first, so you reach out — and want to check, \"You do like me, right?\"",
+        "Want a certain day, but stay quiet because you're scared they'll say no",
+        "See they look tired, so you take on the travel and cost yourself just to make it easier for them",
+        "Leave the where-and-what entirely to them and say, \"Whatever works for you\""
+      ]
+    },
+    {
+      "q": "Your partner shows up 30 minutes late. You...",
+      "opts": [
+        "Laugh it off with \"It's fine,\" afraid saying you're hurt will push them away",
+        "Feel the wait was a waste, but swallow it — you got there early, so the \"loss\" is yours",
+        "Let them pick the next meetup time again and just follow",
+        "Brush off the hurt to match their usual style, and even act like you're the one who's sorry"
+      ]
+    },
+    {
+      "q": "They've barely texted for a few days. You...",
+      "opts": [
+        "Message first, check in, even send a little gift — becoming the one who gives more",
+        "Just wait for them to decide what happens next, since they haven't reached out",
+        "Tell yourself they're busy, set your feelings aside, and keep matching their rhythm",
+        "Keep the chat open, craving some sign that your feelings still matter"
+      ]
+    },
+    {
+      "q": "They ask, \"What do you want to eat today?\" You...",
+      "opts": [
+        "Skip your opinion and hand over the choice: \"You pick\"",
+        "Suggest what they like and shelve your own craving",
+        "Say something, but keep reading their reaction to check if they still like you",
+        "Say \"anything's fine,\" scared that naming what you want will feel like a burden"
+      ]
+    },
+    {
+      "q": "They ask, \"Where should we go for the next break?\" You...",
+      "opts": [
+        "Figure out where they want to go first and mold your schedule and tastes around that",
+        "Feel uneasy no matter where — like you still need proof they really like you",
+        "Picture them getting annoyed if you suggest your pick, so rejection pops up first",
+        "Take on the costs, bookings, and logistics yourself and carry more of the load"
+      ]
+    },
+    {
+      "q": "They say, \"Let's spend this week apart.\" You...",
+      "opts": [
+        "Hide how much you miss them and even help with their schedule — taking the short end again",
+        "Tell yourself the future of \"us\" is theirs to decide, and hand over the call",
+        "Get anxious that their feelings might change while you're apart, and want reassurance",
+        "Swallow the disappointment and say \"okay,\" scared that saying no could lead to a breakup talk"
+      ]
+    },
+    {
+      "q": "You and your partner disagree. You...",
+      "opts": [
+        "Let them make the final call and choose to follow",
+        "Fold your opinion because agreeing with them feels easier",
+        "Bite your tongue, afraid sticking to your view will get you rejected or pushed away",
+        "Give in first because taking the loss feels more comfortable than fighting for your share"
+      ]
+    },
+    {
+      "q": "They forget your anniversary. You...",
+      "opts": [
+        "Tell yourself they were busy, set the hurt aside, and move on at their pace",
+        "Take it as a sign they like you less, and feel the urge to check their feelings",
+        "Still hurt, but you plan gifts and a little event yourself to give even more",
+        "Decide it's on them to figure out next steps, and just wait"
+      ]
+    },
+    {
+      "q": "They say, \"You look kind of worn out lately.\" You...",
+      "opts": [
+        "Wonder if it's care or annoyance — and want to check what they really mean",
+        "Say you're fine and stay quiet, afraid opening up will feel like a burden",
+        "Think you'll just follow whatever they decide you should do",
+        "Hide how hard things feel and act brighter to match their mood"
+      ]
+    },
+    {
+      "q": "In one honest sentence, why do you always end up as the weaker one in love?",
+      "opts": [
+        "\"I'm scared of being rejected or left, so I can't ask for what I need\"",
+        "\"Giving more and taking the loss feels safer to me\"",
+        "\"Adjusting to them became a habit, so I keep shelving myself\"",
+        "\"If I don't get reassurance, I get anxious and keep waiting\""
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone whose habit is adjusting to their partner, the Habitual People-Pleaser 🧩",
+      "typeName": "Habitual People-Pleaser",
+      "realReason": "Matching their standards and rhythm — and shelving your own choices — has become your default",
+      "shortDescription": "You're not weak. You chose adjusting to keep the peace, and your own space slowly shrank.",
+      "description": "From plans and menus to schedules and trips, you read their preferences first and set yours aside. Conflict drops — but what you want gets blurrier, and they never really learn your taste. The longer the adjusting lasts, the more the relationship scale tips on its own.\n\nThe real reason, unpacked: Adjusting became the easiest way to avoid conflict, so your voice lost its place",
+      "keywords": "Adjusting, Shelving your taste, Their rhythm, Swallowing hurt, Habit",
+      "strengths": "A gift for considering others and keeping the vibe peaceful",
+      "reasonDetail": "When plans get made, when they're late or quiet, when opinions clash",
+      "frequentSaying": "\"Whatever works for you\"",
+      "changeTips": "Claim one small daily choice (menu, movie) as yours and say it out loud\nLead with \"I'd love this — how about you?\" before folding\nOn days you do adjust, schedule a tiny treat just for yourself",
+      "oneLiner": "Caring enough to adjust is precious — but adjusting that erases you won't last. Balance needs your voice too",
+      "shareLine": "Why am I always the weaker one in love? Result: Habitual People-Pleaser 🧩 Adjusting became a habit and my space got tiny... this is so me, saving this. What'd you get?"
+    },
+    {
+      "title": "Someone who only feels safe after checking their heart, the Reassurance Seeker 🔍",
+      "typeName": "Reassurance Seeker",
+      "realReason": "Without proof of their feelings, anxiety rises — so you wait and keep asking for confirmation",
+      "shortDescription": "You're not weak. Their feelings feel unclear, so you end up standing on the waiting side.",
+      "description": "You wait for texts, read every reaction, and keep the chat open craving reassurance. Relief lasts a moment — then the waiting starts again. When certainty only comes from them, the lead in the relationship drifts their way.\n\nThe real reason, unpacked: It's not a lack of love — it's looking for proof of love only in their responses",
+      "keywords": "Waiting, Checking feelings, Text-watching, Reading reactions, Craving calm",
+      "strengths": "You're sincere in love and catch even the smallest shifts in them",
+      "reasonDetail": "When texts slow down, when plans change, when an anniversary slips by",
+      "frequentSaying": "\"You do like me, right?\"",
+      "changeTips": "When you want to check, ask first: \"Do I need confirmation — or do I need calm?\"\nSkip the roundabout questions and say, \"Can you reassure me today?\"\nAdd one weekly thing that fills you up without their reply\nIf reassurance never sticks and anxiety spills into daily life, talk it through with a counseling professional",
+      "oneLiner": "Certainty doesn't only arrive from outside. Dig a small well inside yourself, and waiting gets lighter",
+      "shareLine": "Why am I always the weaker one in love? Result: Reassurance Seeker 🔍 I wait because I need their heart confirmed to feel okay... this is so me it hurts. Must-save"
+    },
+    {
+      "title": "Someone who swallows words for fear of rejection, the Rejection-Anxious Type 🥀",
+      "typeName": "Rejection-Anxious Type",
+      "realReason": "You're afraid asking will get you rejected or pushed away — so you never say what you feel",
+      "shortDescription": "It's not that you have no needs. You're swallowing them because speaking feels like it could shake the relationship.",
+      "description": "Dates, menus, trip spots, even hurt feelings — you stay quiet, scared they'll get uncomfortable or pull away. Needs that never land leave the relationship centered on them. Silence feels like safety, but your place quietly shrinks.\n\nThe real reason, unpacked: An inner forecast that \"asking = rejection or breakup\" is sealing your lips",
+      "keywords": "Swallowing words, Imagining rejection, \"It's fine,\" Fear of distance, Can't ask",
+      "strengths": "You're careful, considerate, and treat the relationship as something precious",
+      "reasonDetail": "When you need to name hurt, when you should pick what you want, when you need to admit you're struggling",
+      "frequentSaying": "\"I don't want to make things awkward by saying it\"",
+      "changeTips": "Write one fear about being rejected, and next to it what you could still handle if it happened\nStart tiny: \"Could I ask for just one thing?\"\nReframe asking as informing them — not threatening the bond\nIf fear of rejection weighs on everyday life, explore its roots safely with a counseling professional",
+      "oneLiner": "People who ask aren't less lovable. The smaller the ask, the stronger the bond can get",
+      "shareLine": "Why am I always the weaker one in love? Result: Rejection-Anxious Type 🥀 I swallow my words because I'm scared asking will push them away... chills, this is me. Saving it — you?"
+    },
+    {
+      "title": "Someone who gives more and takes the loss, the Self-Sacrificing Type 🎁",
+      "typeName": "Self-Sacrificing Type",
+      "realReason": "Giving more and taking the short end feels safer — so you put your share down first",
+      "shortDescription": "You're not \"losing.\" Standing on the giving side is what makes the relationship feel safe to you.",
+      "description": "You care more, cover more, hide disappointment, and even help with their schedule. Devotion is love — but one-sided giving tips the balance, and they get used to receiving. When you don't get as much back, quiet resentment stacks up.\n\nThe real reason, unpacked: The belief that \"I have to give more to be loved\" makes you abandon your share first",
+      "keywords": "Giving more, Taking the loss, Covering costs, Devotion, Hiding it",
+      "strengths": "Warm, devoted energy that gladly moves for the relationship",
+      "reasonDetail": "When plans get made, when schedules get sorted, when hurt starts to show up",
+      "frequentSaying": "\"I'll just do a bit more — it's fine\"",
+      "changeTips": "Write down who did what so give-and-take stays visible\nPropose splitting cost and effort 50/50 in concrete terms\nPractice receiving with a full \"thank you\" instead of brushing it off",
+      "oneLiner": "Giving is love — and so is receiving. Relationships last when you split it down the middle",
+      "shareLine": "Why am I always the weaker one in love? Result: Self-Sacrificing Type 🎁 Giving more and taking the loss feels safer to me... lol this is so me. Saving it — what's your type?"
+    },
+    {
+      "title": "Someone who hands over the decisions, the Decision-Surrender Type 🪁",
+      "typeName": "Decision-Surrender Type",
+      "realReason": "You've gotten used to handing direction over to them and just following along",
+      "shortDescription": "You're not passive. Decisions feel heavy, so you choose to let them steer.",
+      "description": "\"You decide\" and \"whatever works for you\" stick to your tongue, and you wait for them to set the next plan and the path of \"us.\" Skipping responsibility feels easy — but the relationship only moves at their pace. What you want slowly disappears from view.\n\nThe real reason, unpacked: Avoiding the weight of deciding — and the fear of getting it wrong — makes you put the reins down",
+      "keywords": "\"You decide,\" Handing over direction, Waiting, Dodging responsibility, Their pace",
+      "strengths": "You respect their choices, stay flexible, and try not to stir conflict",
+      "reasonDetail": "When picking food, places, or timing; when deciding where the relationship goes; when opinions clash",
+      "frequentSaying": "\"I'm fine with anything — you pick\"",
+      "changeTips": "Claim one decision out loud. Example: \"I'll pick the spot this week\"\nPrep three options and suggest one of them\nBuild a streak of small choices with a \"wrong is okay\" mindset",
+      "oneLiner": "The scale balances when you set direction together. One small decision is where balance begins",
+      "shareLine": "Why am I always the weaker one in love? Result: Decision-Surrender Type 🪁 I'm used to handing decisions over... this is so me. Saving it — what'd you get?"
+    }
+  ]
+}

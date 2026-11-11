@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Tại sao tôi luôn ở thế yếu trong tình yêu?",
+    "description": "Tại sao người chiều chuộng và chờ đợi nhiều hơn luôn là mình? 10 tình huống giúp bạn tìm ra lý do thật sự và cách lấy lại cân bằng.",
+    "tags": ["Tâm lý tình yêu", "Mất cân bằng quan hệ"]
+  },
+  "startMessage": {
+    "line1": "Tại sao người chiều chuộng và chờ đợi nhiều hơn luôn là mình?",
+    "line2": "Giờ giấc, địa điểm đều theo đối phương, chờ tin nhắn, buồn cũng chủ động làm lành trước — luôn là bạn. Đối phương không nhất thiết xấu, nhưng cán cân quan hệ vẫn lệch về một phía.",
+    "line3": "Lý do ở thế yếu khác nhau ở mỗi người: có thể chiều theo đã thành thói quen, có thể cần được xác nhận, có thể sợ bị từ chối, có thể cho nhiều hơn thì thấy an toàn, hoặc đã trao quyền quyết định. Đặt tên được thì mới thấy đường lấy lại cân bằng.",
+    "line4": "10 tình huống sẽ chỉ ra lý do thật sự khiến bạn luôn ở thế yếu — và cách tìm lại cân bằng.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu vì sao mình luôn yếu thế",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự",
+    "realReason": "Lý do thật sự khiến bạn luôn yếu thế",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo loại",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Lý do đi kèm",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Khoảnh khắc dễ rơi vào thế yếu",
+    "frequentSaying": "Câu thường nói của kiểu này",
+    "changeTips": "Cách lấy lại cân bằng",
+    "oneLiner": "Nhận xét một câu",
+    "shareResult": "Chia sẻ kết quả",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại",
+    "otherTests": "Xem bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Tại sao tôi luôn ở thế yếu trong tình yêu? 🧩 Tìm lý do thật sự của việc chiều theo và chờ đợi — bạn cũng thử nhé!",
+    "startKakao": "Tại sao tôi luôn ở thế yếu trong tình yêu? 🧩 Tìm lý do thật sự của việc chiều theo và chờ đợi — bạn cũng thử nhé!",
+    "startWechat": "Tại sao tôi luôn ở thế yếu trong tình yêu? 🧩 Tìm lý do thật sự của việc chiều theo và chờ đợi — bạn cũng thử nhé!",
+    "startWhatsapp": "Tại sao tôi luôn ở thế yếu trong tình yêu? 🧩 Tìm lý do thật sự của việc chiều theo và chờ đợi — bạn cũng thử nhé!",
+    "startTelegram": "Tại sao tôi luôn ở thế yếu trong tình yêu? 🧩 Tìm lý do thật sự của việc chiều theo và chờ đợi — bạn cũng thử nhé!",
+    "startLine": "Tại sao tôi luôn ở thế yếu trong tình yêu? 🧩 Tìm lý do thật sự của việc chiều theo và chờ đợi — bạn cũng thử nhé!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Hiện không dùng được tính năng chia sẻ.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+    "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+  },
+  "questions": [
+    {
+      "q": "Khi hẹn cuối tuần với người yêu, bạn sẽ?",
+      "opts": [
+        "Chờ mãi không được tin nên chủ động nhắn trước — và muốn hỏi «Anh/chị thích mình thật chứ?»",
+        "Có ngày mình muốn nhưng sợ bị từ chối nên không dám nói",
+        "Thấy đối phương mệt nên tự mình đi lại, tốn thêm thời gian tiền bạc cho dễ với họ",
+        "Để họ chọn hết chỗ và kế hoạch, nói «Em/Anh theo ý anh/em cũng được»"
+      ]
+    },
+    {
+      "q": "Người yêu đến muộn 30 phút. Bạn sẽ?",
+      "opts": [
+        "Sợ nói buồn sẽ bị xa lánh nên cười bảo «Không sao» cho qua",
+        "Thấy thời gian chờ phí phạm nhưng nuốt xuống — coi như mình đến sớm nên chịu thiệt",
+        "Lần sau vẫn để họ chọn giờ, mình chỉ đi theo",
+        "Gạt buồn để khớp nhịp quen của họ, thậm chí tỏ ra như mình mới là người có lỗi"
+      ]
+    },
+    {
+      "q": "Họ ít liên lạc vài ngày. Bạn sẽ?",
+      "opts": [
+        "Nhắn trước, hỏi thăm thậm chí gửi quà nhỏ — trở thành bên cho nhiều hơn",
+        "Họ không nhắn thì cứ chờ họ quyết bước tiếp theo",
+        "Tự nhủ họ bận, gác buồn và tiếp tục theo nhịp của họ",
+        "Muốn được xác nhận cảm xúc của mình vẫn còn quan trọng nên cứ mở khung chat chờ trả lời"
+      ]
+    },
+    {
+      "q": "Họ hỏi «Hôm nay muốn ăn gì?» Bạn sẽ?",
+      "opts": [
+        "Không nêu ý kiến, giao hết lựa chọn: «Anh/Em chọn đi»",
+        "Gợi món họ thích và gác khẩu vị của mình",
+        "Nói gì cũng để ý phản ứng, muốn kiểm xem họ còn thích mình không",
+        "Sợ nói món mình muốn sẽ thành gánh nặng nên bảo «Gì cũng được»"
+      ]
+    },
+    {
+      "q": "Họ hỏi «Kỳ nghỉ này đi đâu?» Bạn sẽ?",
+      "opts": [
+        "Dò trước nơi họ muốn rồi chỉnh lịch và gu của mình theo đó",
+        "Đi đâu cũng được nhưng vẫn bất an — như cần bằng chứng họ thật sự thích mình",
+        "Hình dung họ khó chịu nếu mình đề xuất chỗ mình thích, nên cảnh bị từ chối hiện ra trước",
+        "Tự lo chi phí, đặt chỗ, sắp lịch — gánh nhiều hơn"
+      ]
+    },
+    {
+      "q": "Họ bảo «Tuần này mình ở riêng nhé.» Bạn sẽ?",
+      "opts": [
+        "Dù nhớ cũng không lộ, thậm chí giúp họ sắp lịch — lại chịu thiệt",
+        "Nghĩ hướng đi của hai người do họ quyết, giao hẳn phán đoán",
+        "Lo trong lúc xa họ sẽ đổi lòng nên bất an, muốn được trấn an",
+        "Sợ nói không sẽ dẫn tới chuyện chia tay nên nuốt tiếc và bảo «Ừ»"
+      ]
+    },
+    {
+      "q": "Hai bạn bất đồng ý kiến. Bạn sẽ?",
+      "opts": [
+        "Để họ chốt kết luận, mình chọn đi theo",
+        "Theo họ thì dễ hơn nên gác ý mình sang một bên",
+        "Sợ khăng khăng sẽ bị từ chối hoặc bị đẩy xa nên nuốt lời",
+        "Nhường trước vì chịu thiệt thấy dễ chịu hơn tranh phần của mình"
+      ]
+    },
+    {
+      "q": "Họ quên ngày kỷ niệm. Bạn sẽ?",
+      "opts": [
+        "Nghĩ họ chắc bận, gác buồn và đi theo nhịp của họ",
+        "Coi việc quên như dấu hiệu ít thích mình hơn, muốn kiểm lại cảm xúc",
+        "Dù buồn vẫn tự chuẩn bị quà và chút sự kiện để cho nhiều hơn",
+        "Để họ tự quyết bước tiếp theo, mình chỉ chờ"
+      ]
+    },
+    {
+      "q": "Họ nói «Dạo này trông bạn hơi mệt.» Bạn sẽ?",
+      "opts": [
+        "Muốn xác nhận đó là quan tâm hay thấy phiền",
+        "Sợ tâm sự sẽ thành gánh nặng nên bảo ổn và im lặng",
+        "Nghĩ sẽ làm theo bất cứ gì họ bảo nên làm",
+        "Giấu mệt mỏi và tỏ ra vui để khớp tâm trạng họ"
+      ]
+    },
+    {
+      "q": "Một câu thật lòng: vì sao bạn luôn ở thế yếu trong tình yêu?",
+      "opts": [
+        "«Sợ bị từ chối hoặc bị bỏ nên không dám đòi hỏi»",
+        "«Cho nhiều hơn và chịu thiệt thì mình thấy an tâm»",
+        "«Chiều theo đã thành thói quen nên cứ gác mình lại»",
+        "«Không được xác nhận thì bất an nên cứ chờ mãi»"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người đã quen chiều theo đối phương, Kiểu luôn chiều theo 🧩",
+      "typeName": "Kiểu luôn chiều theo",
+      "realReason": "Theo chuẩn và nhịp của đối phương, gác lựa chọn của mình đã thành thói quen",
+      "shortDescription": "Bạn không yếu đuối. Bạn chọn chiều theo để quan hệ êm, rồi chỗ đứng của mình cứ nhỏ dần.",
+      "description": "Từ hẹn hò, món ăn đến lịch trình, kỳ nghỉ — bạn đọc gu đối phương trước rồi gác gu mình. Ít xung đột hơn, nhưng điều bạn muốn ngày càng mờ, còn họ ít khi biết sở thích của bạn. Chiều càng lâu, cán cân càng nghiêng một bên.\n\nLý do thật sự: chiều theo trở thành cách tránh xung đột dễ nhất, nên chỗ cho ý kiến của bạn bị thu hẹp",
+      "keywords": "Chiều theo, Gác gu mình, Nhịp đối phương, Nuốt buồn, Thói quen",
+      "strengths": "Khả năng quan tâm và giữ không khí hòa dịu",
+      "reasonDetail": "Khi lên lịch, khi họ muộn hoặc ít nhắn, khi bất đồng",
+      "frequentSaying": "«Anh/Em theo ý anh/em cũng được»",
+      "changeTips": "Mỗi ngày chọn một quyết định nhỏ (món, phim) bằng ý kiến của bạn và nói ra\nMở đầu bằng «Mình thích cái này — còn bạn?» trước khi chiều\nNgày nào đã chiều theo thì xếp một phần thưởng nhỏ cho chính mình",
+      "oneLiner": "Chiều theo là đẹp — nhưng chiều đến mức xóa mình thì không bền. Cần cả tiếng nói của bạn mới có cân bằng",
+      "shareLine": "Tại sao tôi luôn ở thế yếu trong tình yêu? Kết quả: Kiểu luôn chiều theo 🧩 Chiều theo thành thói quen nên chỗ của mình nhỏ lại... đúng mình quá, lưu lại. Bạn ra gì?"
+    },
+    {
+      "title": "Người chỉ yên khi được xác nhận, Kiểu khát xác nhận 🔍",
+      "typeName": "Kiểu khát xác nhận",
+      "realReason": "Không được xác nhận cảm xúc của đối phương thì bất an — nên cứ chờ và hỏi lại",
+      "shortDescription": "Bạn không yếu. Cảm xúc của họ chưa rõ nên bạn đứng về phía chờ đợi.",
+      "description": "Bạn chờ tin, đọc phản ứng, mở khung chat vì muốn được trấn an. Yên một lúc rồi lại chờ. Khi sự chắc chắn chỉ đến từ phản hồi của họ, quyền chủ động trong quan hệ sẽ nghiêng về phía họ.\n\nLý do thật sự: không phải thiếu yêu — mà bằng chứng được yêu chỉ tìm trong phản ứng của đối phương",
+      "keywords": "Chờ đợi, Xác nhận cảm xúc, Soi tin nhắn, Đọc phản ứng, Khát sự an tâm",
+      "strengths": "Chân thành với quan hệ và tinh tế với thay đổi nhỏ của đối phương",
+      "reasonDetail": "Khi ít liên lạc, khi đổi kế hoạch, khi bỏ lỡ kỷ niệm",
+      "frequentSaying": "«Anh/Em thích mình thật chứ?»",
+      "changeTips": "Khi muốn kiểm, hỏi trước: mình cần xác nhận hay cần sự bình yên?\nĐừng vòng vo — nói thẳng «Hôm nay cho mình yên tâm một chút được không?»\nMỗi tuần thêm một việc nuôi dưỡng bản thân mà không cần họ trả lời\nNếu được xác nhận rồi vẫn không yên và lo lắng ảnh hưởng đời sống, hãy nói chuyện với chuyên gia tư vấn tâm lý",
+      "oneLiner": "Sự chắc chắn không chỉ đến từ bên ngoài. Đào một cái giếng nhỏ trong mình, việc chờ sẽ nhẹ hơn",
+      "shareLine": "Tại sao tôi luôn ở thế yếu trong tình yêu? Kết quả: Kiểu khát xác nhận 🔍 Phải được xác nhận mới yên nên cứ chờ... đúng mình quá, lưu ngay"
+    },
+    {
+      "title": "Người nuốt lời vì sợ bị từ chối, Kiểu sợ bị từ chối 🥀",
+      "typeName": "Kiểu sợ bị từ chối",
+      "realReason": "Sợ đòi hỏi sẽ bị từ chối hoặc bị đẩy xa nên không nói được lòng mình",
+      "shortDescription": "Không phải bạn không có nhu cầu. Bạn nuốt chúng vì sợ nói ra sẽ làm lung lay quan hệ.",
+      "description": "Ngày muốn hẹn, món muốn ăn, chỗ muốn đi, cả nỗi buồn — bạn im vì sợ họ khó chịu hoặc xa lánh. Nhu cầu không tới được họ thì quan hệ chạy quanh họ. Im lặng tưởng là an toàn nhưng chỗ đứng của bạn đang nhỏ dần.\n\nLý do thật sự: dự báo nội tâm «đòi hỏi = từ chối hoặc chia tay» đang khóa miệng bạn",
+      "keywords": "Nuốt lời, Tưởng tượng từ chối, Không sao, Sợ xa cách, Không dám đòi",
+      "strengths": "Thận trọng, biết quý quan hệ và quan tâm đối phương",
+      "reasonDetail": "Khi cần nói buồn, khi cần chọn điều mình muốn, khi cần thú nhận đang mệt",
+      "frequentSaying": "«Nói ra e họ khó chịu»",
+      "changeTips": "Viết một nỗi sợ nếu bị từ chối, bên cạnh ghi phần mình vẫn chịu được nếu xảy ra\nBắt đầu nhỏ: «Cho mình xin một việc nhỏ được không?»\nĐịnh nghĩa lại: đòi hỏi là thông báo, không phải đe dọa quan hệ\nNếu nỗi sợ bị từ chối đè nặng cả đời sống, hãy cùng chuyên gia tư vấn tâm lý tìm gốc rễ một cách an toàn",
+      "oneLiner": "Người biết đòi hỏi không kém đáng yêu. Nói nhỏ và rõ thì quan hệ thường vững hơn",
+      "shareLine": "Tại sao tôi luôn ở thế yếu trong tình yêu? Kết quả: Kiểu sợ bị từ chối 🥀 Sợ đòi hỏi rồi bị đẩy xa nên nuốt lời... đúng mình, nổi da gà. Lưu rồi — bạn thì sao?"
+    },
+    {
+      "title": "Người cho nhiều hơn và chịu thiệt, Kiểu hy sinh bản thân 🎁",
+      "typeName": "Kiểu hy sinh bản thân",
+      "realReason": "Cho nhiều hơn và chịu thiệt thấy dễ chịu hơn — nên bạn bỏ phần mình trước",
+      "shortDescription": "Bạn không «thiệt». Đứng ở phía cho mới khiến quan hệ với bạn cảm thấy an toàn.",
+      "description": "Bạn chăm hơn, gánh hơn, tiếc cũng không lộ, thậm chí giúp sắp lịch cho họ. Cống hiến là yêu — nhưng chỉ một bên cho mãi thì mất cân bằng, họ quen nhận. Cho nhiều mà nhận ít, nỗi buồn âm thầm chất chồng.\n\nLý do thật sự: niềm tin «phải cho nhiều mới được yêu» khiến bạn bỏ phần mình trước",
+      "keywords": "Cho nhiều hơn, Chịu thiệt, Chi phí, Cống hiến, Không lộ",
+      "strengths": "Năng lượng ấm áp, tận tụy, sẵn sàng hành động vì quan hệ",
+      "reasonDetail": "Khi lên lịch hẹn, khi sắp xếp thời gian, khi bắt đầu thấy buồn",
+      "frequentSaying": "«Mình làm thêm một chút cũng được mà»",
+      "changeTips": "Ghi rõ ai đã làm gì để thấy cân bằng cho–nhận\nĐề xuất chia đôi chi phí và công sức một cách cụ thể\nKhi nhận thì luyện nói «Cảm ơn» trọn vẹn thay vì từ chối",
+      "oneLiner": "Cho là yêu — nhận cũng là yêu. Chia đôi thì quan hệ mới bền",
+      "shareLine": "Tại sao tôi luôn ở thế yếu trong tình yêu? Kết quả: Kiểu hy sinh bản thân 🎁 Cho nhiều và chịu thiệt thì mình thấy an tâm... đúng mình quá lol. Lưu — bạn thuộc kiểu nào?"
+    },
+    {
+      "title": "Người trao quyền quyết định cho đối phương, Kiểu buông quyền quyết 🪁",
+      "typeName": "Kiểu buông quyền quyết",
+      "realReason": "Bạn đã quen giao hướng đi cho họ và chỉ đi theo",
+      "shortDescription": "Bạn không thụ động. Quyết định nặng quá nên bạn chọn để họ cầm lái.",
+      "description": "«Anh/Em quyết đi», «sao cũng được» thành thói quen; hướng quan hệ và lần hẹn sau đều chờ họ. Ít trách nhiệm thì nhẹ đầu — nhưng quan hệ chỉ chạy theo nhịp họ. Hướng bạn muốn dần biến mất.\n\nLý do thật sự: muốn tránh trách nhiệm quyết định và nỗi sợ chọn sai nên buông tay lái",
+      "keywords": "«Anh/Em quyết», Giao hướng đi, Chờ đợi, Tránh trách nhiệm, Nhịp đối phương",
+      "strengths": "Tôn trọng lựa chọn của họ, linh hoạt, ít tạo xung đột",
+      "reasonDetail": "Khi chọn món, chỗ, giờ; khi định hướng quan hệ; khi bất đồng",
+      "frequentSaying": "«Mình sao cũng được, anh/em chọn đi»",
+      "changeTips": "Tự chốt một quyết định và nói ra. Ví dụ: «Tuần này chỗ hẹn mình chọn»\nChuẩn bị ba lựa chọn rồi đề xuất một\nTích lũy quyết định nhỏ với tinh thần «sai cũng được»",
+      "oneLiner": "Cùng đặt hướng thì cán cân mới cân. Một quyết định nhỏ là khởi đầu của cân bằng",
+      "shareLine": "Tại sao tôi luôn ở thế yếu trong tình yêu? Kết quả: Kiểu buông quyền quyết 🪁 Quen giao quyết định cho đối phương... đúng mình. Lưu rồi — bạn ra gì?"
+    }
+  ]
+}

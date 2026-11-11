@@ -1,0 +1,63 @@
+{
+  "phase3AlwaysTheWeakerInLoveTest": {
+    "startMessage": {
+      "line1": "더 맞추고 더 기다리는 쪽은, 왜 늘 나일까?",
+      "line2": "약속 시간도 장소도 상대에게 맞추고, 연락이 오기를 기다리고, 서운해도 먼저 풀어주는 쪽이 늘 나입니다. 상대가 나쁜 사람이 아닌데도 관계의 저울은 한쪽으로 기울어 있습니다.",
+      "line3": "을이 되는 데에는 사람마다 서로 다른 이유가 있습니다. 맞추는 게 습관이어서일 수도, 확신을 갈구해서일 수도, 거절이 불안해서일 수도, 내가 더 주려 해서일 수도, 주도권을 놓아서일 수도 있습니다. 이름을 붙이면 균형을 되찾는 길이 보입니다.",
+      "line4": "10가지 상황으로 내가 약자가 되는 진짜 이유와 균형을 찾는 법을 알려드립니다.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "을이 되는 이유 알아보기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "realReason": "늘 을이 되는 진짜 이유",
+      "keywords": "핵심 키워드",
+      "scoreTitle": "유형별 점수",
+      "scoreUnit": "점",
+      "hiddenReason": "함께 있는 이유",
+      "strengths": "이 유형의 강점",
+      "reasonDetail": "을이 되는 순간",
+      "frequentSaying": "이 유형이 자주 하는 말",
+      "changeTips": "균형을 찾는 법",
+      "oneLiner": "한 줄 평",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나는 왜 연애에서 늘 을이 될까? 🧩 더 맞추고 기다리는 진짜 이유, 너도 해봐!",
+      "startKakao": "나는 왜 연애에서 늘 을이 될까? 🧩 더 맞추고 기다리는 진짜 이유, 너도 해봐!",
+      "startWechat": "나는 왜 연애에서 늘 을이 될까? 🧩 더 맞추고 기다리는 진짜 이유, 너도 해봐!",
+      "startWhatsapp": "나는 왜 연애에서 늘 을이 될까? 🧩 더 맞추고 기다리는 진짜 이유, 너도 해봐!",
+      "startTelegram": "나는 왜 연애에서 늘 을이 될까? 🧩 더 맞추고 기다리는 진짜 이유, 너도 해봐!",
+      "startLine": "나는 왜 연애에서 늘 을이 될까? 🧩 더 맞추고 기다리는 진짜 이유, 너도 해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  }
+}

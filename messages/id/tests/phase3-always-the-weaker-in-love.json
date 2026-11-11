@@ -1,0 +1,63 @@
+{
+  "phase3AlwaysTheWeakerInLoveTest": {
+    "startMessage": {
+      "line1": "Kenapa yang lebih sering menyesuaikan dan menunggu selalu aku?",
+      "line2": "Jam dan tempat mengikuti pasangan, menunggu chat mereka, dan saat tersinggung kamu yang duluan meredakan suasana. Mereka belum tentu orang jahat — tapi timbangan hubungan tetap condong ke satu sisi.",
+      "line3": "Alasan jadi pihak yang kalah beda-beda: bisa karena menyesuaikan sudah jadi kebiasaan, butuh kepastian terus, takut ditolak, lebih nyaman memberi lebih banyak, atau sudah menyerahkan kendali. Begitu punya nama, jalan kembali ke keseimbangan jadi kelihatan.",
+      "line4": "10 situasi ini mengungkap alasan sejati kenapa kamu sering di posisi lemah — dan cara menemukan keseimbangan.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti Tes",
+      "startTest": "Cari Tahu Kenapa Aku Selalu Kalah",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "realReason": "Alasan Sejati Kenapa Kamu Selalu Kalah",
+      "keywords": "Kata Kunci Utama",
+      "scoreTitle": "Skor per Tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang Ikut Hadir",
+      "strengths": "Kekuatan Tipe Ini",
+      "reasonDetail": "Momen Kamu Merasa Kalah",
+      "frequentSaying": "Yang Sering Diucapkan Tipe Ini",
+      "changeTips": "Cara Menemukan Keseimbangan",
+      "oneLiner": "Ringkasan Satu Kalimat",
+      "shareResult": "Bagikan Hasil Saya",
+      "popularBadge": "Populer",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Aku Selalu Jadi Pihak yang Kalah di Hubungan? 🧩 Cari alasan sejati kenapa kamu terus menyesuaikan dan menunggu — cobain!",
+      "startKakao": "Kenapa Aku Selalu Jadi Pihak yang Kalah di Hubungan? 🧩 Cari alasan sejati kenapa kamu terus menyesuaikan dan menunggu — cobain!",
+      "startWechat": "Kenapa Aku Selalu Jadi Pihak yang Kalah di Hubungan? 🧩 Cari alasan sejati kenapa kamu terus menyesuaikan dan menunggu — cobain!",
+      "startWhatsapp": "Kenapa Aku Selalu Jadi Pihak yang Kalah di Hubungan? 🧩 Cari alasan sejati kenapa kamu terus menyesuaikan dan menunggu — cobain!",
+      "startTelegram": "Kenapa Aku Selalu Jadi Pihak yang Kalah di Hubungan? 🧩 Cari alasan sejati kenapa kamu terus menyesuaikan dan menunggu — cobain!",
+      "startLine": "Kenapa Aku Selalu Jadi Pihak yang Kalah di Hubungan? 🧩 Cari alasan sejati kenapa kamu terus menyesuaikan dan menunggu — cobain!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi sedang tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+    }
+  }
+}
