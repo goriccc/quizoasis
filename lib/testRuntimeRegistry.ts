@@ -462,6 +462,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3AlwaysTheWeakerInLoveTestClient'),
   },
+
+  'phase3-contact-obsession-reason': {
+    slug: 'phase3-contact-obsession-reason',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_CONTACT_OBSESSION_REASON_META } = await import('./phase3ContactObsessionReasonData');
+      return {
+        title: PHASE3_CONTACT_OBSESSION_REASON_META.title,
+        description: PHASE3_CONTACT_OBSESSION_REASON_META.description,
+        tags: PHASE3_CONTACT_OBSESSION_REASON_META.tags,
+        thumbnail: 'p3_test_contact_obsession_reason.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3ContactObsessionReasonData');
+      return {
+        questions: mod.phase3ContactObsessionReasonQuestions,
+        results: mod.phase3ContactObsessionReasonResults,
+        meta: {
+          title: mod.PHASE3_CONTACT_OBSESSION_REASON_META.title,
+          description: mod.PHASE3_CONTACT_OBSESSION_REASON_META.description,
+          tags: mod.PHASE3_CONTACT_OBSESSION_REASON_META.tags,
+          thumbnail: 'p3_test_contact_obsession_reason.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3ContactObsessionReasonTest',
+        messagesFileSlug: 'phase3-contact-obsession-reason',
+      };
+    },
+    loadClient: () => import('@/components/Phase3ContactObsessionReasonTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

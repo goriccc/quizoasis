@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Kenapa Begitu Obsesi Chat Begitu Pacaran?",
+    "description": "Balasan agak lambat, kenapa dada langsung sesak? Lewat 10 situasi, temukan alasan sejati kenapa kamu bergantung pada kontak — dan kebutuhan tersembunyi di baliknya.",
+    "tags": ["Obsesi Chat", "Psikologi Pacaran"]
+  },
+  "startMessage": {
+    "line1": "Balasan agak lambat, kenapa dada langsung sesak?",
+    "line2": "Biasanya kamu santai — tapi begitu pacaran, HP terus dicek. Balasan lambat bikin gelisah; kontak putus bikin seharian susah fokus. Melihat diri sendiri, kamu bertanya, «Ada apa denganku? Apa aku terlalu clingy?»",
+    "line3": "Di balik perilaku yang tampak obsesif, tiap orang punya kebutuhan berbeda: ingin tenang, kecemasan meledak, ingin pegang situasi, ingin menahan kesepian, atau takut ditinggal. Begitu kebutuhan — bukan hanya perilaku — punya nama, cara berubah jadi terlihat.",
+    "line4": "10 situasi ini mengungkap alasan sejati kenapa kamu bergantung pada kontak, dan kebutuhan tersembunyi di baliknya.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Iklan",
+    "goToTest": "Ikuti Tes",
+    "startTest": "Cari Tahu Kenapa Aku Obsesi Kontak",
+    "linkCopy": "Salin Tautan",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Tes Serupa Lainnya",
+    "realReason": "Alasan Sejati Kenapa Kamu Bergantung pada Kontak",
+    "keywords": "Kata Kunci Utama",
+    "scoreTitle": "Skor per Tipe",
+    "scoreUnit": "poin",
+    "hiddenReason": "Kebutuhan Tersembunyi yang Ikut Hadir",
+    "strengths": "Kekuatan Tipe Ini",
+    "reasonDetail": "Pola Kontak Tipe Ini",
+    "frequentSaying": "Yang Sering Diucapkan Tipe Ini",
+    "changeTips": "Cara Menenangkan Pikiran",
+    "oneLiner": "Ringkasan Satu Kalimat",
+    "shareResult": "Bagikan Hasil Saya",
+    "popularBadge": "Populer",
+    "retake": "Ulangi Tes",
+    "otherTests": "Lihat Tes Lain"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+    "startKakao": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+    "startWechat": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+    "startWhatsapp": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+    "startTelegram": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+    "startLine": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!"
+  },
+  "alerts": {
+    "linkCopied": "Tautan disalin!",
+    "resultCopied": "Hasil disalin ke clipboard!",
+    "shareFailed": "Fitur berbagi sedang tidak tersedia.",
+    "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+    "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+    "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+  },
+  "questions": [
+    {
+      "q": "Pasangan diam seharian siang, malam baru balas «Rapatnya panjang.» Kamu…",
+      "opts": [
+        "Sambil menunggu jantung berdegup dan kerja tak fokus — baru lega setelah balasan datang",
+        "Lewat jam pulang kerja belum ada kabar, jadi ingin bertanya «Di mana? Sama siapa?»",
+        "Makin lama diam, hati makin hampa dan kesepian tanpa alasan jelas",
+        "Khawatir perasaan mereka dingin — atau mereka sedang menjauh"
+      ]
+    },
+    {
+      "q": "Mereka keluar dengan teman dan hilang kontak setelah jam 6 sore. Kamu…",
+      "opts": [
+        "Perlu tahu jam berapa selesai dan dengan siapa, jadi dicek dulu biar tenang",
+        "Tak suka sendirian, jadi chat teman atau pura-pura sibuk keluar",
+        "Terlintas: kontak bisa makin jarang sampai mereka tinggalkanmu",
+        "Ingin kirim «Lagi seru?» tiap jam, lapar sinyal balik"
+      ]
+    },
+    {
+      "q": "Mereka sudah baca pesanmu tapi sejam belum balas. Apa yang muncul duluan?",
+      "opts": [
+        "Rasa sendirian yang tiba-tiba membuatmu gelisah",
+        "Dada turun — takut dilupakan, atau kamu jadi beban",
+        "Terus buka chat, cek jam dibaca dan status online",
+        "Skenario terburuk berjejer di kepala dan jantung berdebar"
+      ]
+    },
+    {
+      "q": "Mereka chat, «Hari ini capek — mau tidur lebih awal.» Kamu…",
+      "opts": [
+        "Kedengarannya seperti sinyal ingin mengakhiri obrolan — perut langsung terasa jatuh",
+        "Kirim «Beneran tidur kan?» lalu cek status lagi",
+        "Tak ada apa-apa, tapi kecemasan membesar — jantung berdegup, susah tidur",
+        "Ingin tahu kira-kira jam berapa besok bisa kontak dan jadwalnya seperti apa"
+      ]
+    },
+    {
+      "q": "Balasan mereka lebih pendek dari biasanya. Kamu…",
+      "opts": [
+        "Tanya «Kenapa pendek?» / «Marah ya?» dan lanjut bicara sampai terasa selesai",
+        "Khawatir membengkak — jantung berdegup, tak bisa fokus sampai ada chat lagi",
+        "Ingin membuat aturan jam dan frekuensi chat",
+        "Obrolan pendek bikin rasa ditinggal sendirian dan hati kosong"
+      ]
+    },
+    {
+      "q": "Mereka tiba-tiba bilang, «Bisa chatnya dikurangi? Aku sesak.» Kamu…",
+      "opts": [
+        "Takut waktu sendirian jadi lebih panjang, jadi hati terasa hampa",
+        "Dada langsung turun — apakah ini cara bilang mau putus?",
+        "Bilang gapapa, tapi di dalam roller coaster seharian",
+        "Ingin ada aturan apa pun supaya tetap bisa tahu ritme kontak mereka"
+      ]
+    },
+    {
+      "q": "Mereka read tanpa balas, tapi aktif di media sosial. Kamu…",
+      "opts": [
+        "Takut kamu sudah bukan prioritas — ada waktu untuk semua kecuali membalasmu",
+        "Bandingkan jam aktivitas dengan jam pesan dibaca dan terus refresh",
+        "Perlu tahu dengan siapa dan sedang apa sebelum bisa tenang, jadi ingin bertanya",
+        "Merasa tersisih dan kesepian — semua terhubung kecuali kamu"
+      ]
+    },
+    {
+      "q": "Mereka batalkan rencana weekend barengmu demi teman. Kamu…",
+      "opts": [
+        "Setelah dibatalkan pun tetap cek status online dan tanda dibaca sesekali",
+        "Begitu dibatalkan kecemasan datang — tiap chat berikutnya mengguncang jantung",
+        "Weekend sendirian terasa panjang, jadi kamu makin menunggu chat mereka",
+        "Terasa mereka menjauh, jadi kamu sembunyikan sakit hati dan makin merawat"
+      ]
+    },
+    {
+      "q": "Mereka bilang duluan, «Aku lagi sibuk — mungkin jarang chat.» Kamu…",
+      "opts": [
+        "Mengerti, tapi kontak berkurang akan bikin jantung berdegup dan cemas naik",
+        "Ingin detail konkret: seberapa sibuk, hari dan jam mana yang masih bisa balas",
+        "«Sibuk» terdengar seperti awal menjauh — dada terasa berat",
+        "Balas «oke,» tapi terus buka chat mencari sinyal tenang"
+      ]
+    },
+    {
+      "q": "Setelah ribut soal chat, mereka bilang «Kamu nggak percaya aku?» Apa isi hatimu?",
+      "opts": [
+        "Bukan soal percaya — aku perlu tahu pasti, atau pikiran tak tenang",
+        "Kalau kontak putus, rasa sendirian terlalu besar, dan aku mencoba menahannya",
+        "Percaya, tapi baru tenang kalau ada tanda dibaca atau balasan, jadi terus cek",
+        "Ingin percaya, tapi kalau tak terjangkau tubuh panik duluan — tak tertolong"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang baru bisa bernapas setelah mengecek, Tipe Kecanduan Konfirmasi 🔁",
+      "typeName": "Tipe Kecanduan Konfirmasi",
+      "realReason": "Rasa tenang sesaat dari mengecek menarikmu untuk mengecek lagi",
+      "shortDescription": "Kamu bukan clingy. Ketenangan dari mengecek kadaluwarsa terlalu cepat — jadi kamu cek lagi.",
+      "description": "Tanda dibaca, last active, kecepatan balasan — tiap cek membuatmu tenang sebentar. Tanpa sinyal baru, cemas naik dan kamu cek lagi. Mengecek tak jadi ketenangan tahan lama; ia melatih kebiasaan mengecek itu sendiri.\n\nAlasan sejati diurai: Bukan butuh jawaban — butuh sinyal instan untuk menenangkan cemas\nKebutuhan tersembunyi di balik cling kontak: Bukti terlihat sekarang bahwa hubungan masih baik-baik saja",
+      "keywords": "Refresh, Last active, Loop mengecek, Mencari petunjuk, Ketenangan singkat",
+      "strengths": "Tulus menyelami hubungan dan berani menyapa lebih dulu",
+      "reasonDetail": "Bergantian cek dibaca/online/aktivitas dan sering kirim chat singkat",
+      "frequentSaying": "«Ini sudah berapa kali aku cek?»",
+      "changeTips": "Saat ingin cek, pasang timer «tunggu 10 menit»\nMatikan notifikasi dan buka chat hanya di jam yang ditentukan\nAlih-alih cek, minta langsung: «Hari ini bisa tenangkan aku dengan satu kalimat?»\nKalau tak bisa berhenti mengecek dan itu mengganggu kerja, tidur, atau fokus, jangan sendirian — bicara dengan profesional konseling",
+      "oneLiner": "Mengecek hanya menenangkan cemas sebentar — tidak menghapusnya. Meminta dengan kata-kata yang memutus putaran",
+      "shareLine": "Kenapa begitu obsesi chat begitu pacaran? Hasil: Tipe Kecanduan Konfirmasi 🔁 Ketenangan dari cek cepat habis jadi terus cek... kartu hasil group chat! Kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang kecemasannya merayap ke tubuh, Tipe Ledakan Kecemasan 🌪️",
+      "typeName": "Tipe Ledakan Kecemasan",
+      "realReason": "Begitu kontak putus, kecemasan membesar di luar kendali",
+      "shortDescription": "Kamu tidak mencurigai mereka. Begitu cemas menyala, ia tak bisa padam sendiri.",
+      "description": "Balasan lambat bikin jantung berdegup dan adegan terburuk berputar. Logika bilang gapapa — tubuh berlari duluan. Baru tenang saat kontak datang, jadi chat jadi penstabil.\n\nAlasan sejati diurai: Bukan perilaku mereka — melainkan saat cemas naik kamu masih kurang cara menenangkan diri\nKebutuhan tersembunyi: Menenangkan cemas cepat dan mendapat ketenangan kembali",
+      "keywords": "Jantung berdegup, Imajinasi terburuk, Tubuh bereaksi duluan, Susah tidur, Chat sebagai penstabil",
+      "strengths": "Emosi kaya, peka pada perubahan kecil, dan cinta yang dalam",
+      "reasonDetail": "Saat kontak putus, kamu tak bisa fokus ke apa pun sampai mereka balas",
+      "frequentSaying": "«Kepala ngerti, hati nggak ikut»",
+      "changeTips": "Saat cemas naik, tarik napas 4 detik, hembus 6 — lima putaran\nPisahkan skenario di kepala jadi dua baris: «fakta terkonfirmasi» vs «cerita yang kubuat»\nSiapkan rutin tenang tanpa chat (jalan, musik, mandi)\nKalau jantung berdegup atau insomnia sering mengganggu hidup sehari-hari, minta bantuan profesional konseling atau psikiater — cemas bisa jauh lebih ringan dengan dukungan",
+      "oneLiner": "Cemas bukan kelemahan — itu alarm yang dinyalakan hatimu. Belajar mematikannya, cinta jadi jauh lebih mudah",
+      "shareLine": "Kenapa begitu obsesi chat begitu pacaran? Hasil: Tipe Ledakan Kecemasan 🌪️ Bukan clingy — cemas yang merayap ke tubuh... fakta, aku diam. Kartu hasil group — kamu?"
+    },
+    {
+      "title": "Orang yang baru tenang setelah tahu, Tipe Butuh Kendali 🧭",
+      "typeName": "Tipe Butuh Kendali",
+      "realReason": "Situasi harus kau kuasai sendiri agar kecemasan turun",
+      "shortDescription": "Kamu tidak ingin mengurung mereka. Tidak tahu terasa tak tertahankan — jadi kamu ingin situasi di tanganmu.",
+      "description": "Di mana mereka, dengan siapa, kapan selesai — tanpa itu kamu tak tenang. Aturan dan jadwal menenangkanmu, tapi bagi mereka bisa terasa seperti pengawasan. Kamu memilih «tahu» sebagai obat ketidakpastian.\n\nAlasan sejati diurai: Bukan ingin mengontrol orang — sulit menahan ketidakpastian, jadi memakai informasi untuk stabilitas\nKebutuhan tersembunyi: Keadaan yang bisa diprediksi agar merasa aman",
+      "keywords": "Menguasai situasi, Membuat aturan, Cek jadwal, Tahu baru tenang, Tidak nyaman dengan ketidakpastian",
+      "strengths": "Terencana, bertanggung jawab, dan tulus menjaga hubungan tetap stabil",
+      "reasonDetail": "Bertanya lokasi/waktu/teman, atau mengusulkan aturan kontak",
+      "frequentSaying": "«Cuma perlu tahu biar aku tenang»",
+      "changeTips": "Perkecil yang perlu diketahui jadi «satu info wajib,» sisanya biarkan bebas milik mereka\nJangan buat aturan sendiri — bilang «Aku cemas saat itu, kita coba apa bersama?»\nLatih duduk dengan tidak-tahu selama 5 menit dan rasakan tak ada yang terjadi\nKalau harus terus memastikan lokasi/jadwal dan konflik berulang, telusuri akarnya dengan profesional konseling",
+      "oneLiner": "Perlu tahu supaya tenang itu bisa dimengerti. Tapi ketenangan tahan lama datang dari kepercayaan, bukan informasi",
+      "shareLine": "Kenapa begitu obsesi chat begitu pacaran? Hasil: Tipe Butuh Kendali 🧭 Bukan mengurung — tidak tahu terasa jelek jadi aku perlu menguasai... fair. Kartu hasil — tipe kamu apa?"
+    },
+    {
+      "title": "Orang yang takut waktu sendirian, Tipe Pertahanan Kesepian 🛟",
+      "typeName": "Tipe Pertahanan Kesepian",
+      "realReason": "Saat kontak putus, rasa sendirian datang besar — dan kamu mencoba menahannya",
+      "shortDescription": "Kamu tidak obsesi chat. Kamu memakai kontak untuk menahan kesepian saat ditinggal sendirian.",
+      "description": "Diam dari mereka bikin hati hampa dan sepi. Kontak = rasa «mereka di samping,» jadi saat berkurang kesepian datang sekaligus. Chat bukan hanya cinta — melainkan perisai melawan kesepian.\n\nAlasan sejati diurai: Kesepian di waktu sendirian yang mendorong hasrat kontak lebih dari frekuensi chat mereka\nKebutuhan tersembunyi: Rasa terhubung yang menahan kesepian",
+      "keywords": "Hampa, Rasa sendirian, Tersisih, Kontak sebagai kehadiran, Pertahanan",
+      "strengths": "Menghargai koneksi, hangat, dan menuangkan energi ke hubungan",
+      "reasonDetail": "Di rentang sepi kamu cari teman atau pura-pura sibuk keluar; chat dari mereka melegakan",
+      "frequentSaying": "«Kalau nggak chat, tiba-tiba merasa ditinggal sendirian»",
+      "changeTips": "Setiap minggu sengaja buat minimal satu koneksi di luar pasangan (teman, keluarga, komunitas)\nRencanakan dulu aktivitas «untuk diriku» saat sendirian\nSaat kesepian naik, namai «Aku lagi kesepian,» lalu tenangkan dengan cara lain sebelum chat\nKalau sendirian terasa berat, kesepian lama, atau tidur/motivasi terganggu, jangan tanggung sendiri — bicara ke profesional konseling atau pusat kesehatan mental setempat",
+      "oneLiner": "Kontak menenangkan kesepian tapi tidak mengisinya. Satu koneksi lagi yang mengisi dirimu membuat hati lebih kokoh",
+      "shareLine": "Kenapa begitu obsesi chat begitu pacaran? Hasil: Tipe Pertahanan Kesepian 🛟 Aku menahan kesepian sendirian dengan chat... kena. Kartu hasil — kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang takut kehilangan cinta ini, Tipe Takut Ditinggalkan 🥀",
+      "typeName": "Tipe Takut Ditinggalkan",
+      "realReason": "Kontak berkurang membuat takut hubungan akan berakhir naik",
+      "shortDescription": "Kamu tidak chat karena tersinggung. Kamu berpegangan karena takut cinta ini hilang.",
+      "description": "Chat lebih pendek atau jarang terasa seperti tanda hati menjauh. Bahkan «sibuk» atau «capek» bisa kedengaran seperti pratinjau putus — takut datang sebelum sakit hati. Pengalaman putus mendadak di masa lalu bisa membuat ini lebih berat.\n\nAlasan sejati diurai: Lebih dari perilaku mereka sekarang, ketakutan batin «cinta suatu hari berakhir» yang memperkuat reaksi kontakmu\nKebutuhan tersembunyi: Kepastian bahwa hubungan berlanjut — rasa aman bahwa kamu tidak akan ditinggalkan",
+      "keywords": "Tanda putus, Takut kehilangan, Berpegangan, Takut di atas tersinggung, Cemas terputus",
+      "strengths": "Menghargai ikatan, berdedikasi, dan rela memberi untuk mereka",
+      "reasonDetail": "Saat kontak turun, kamu buru-buru lebih merawat atau menyembunyikan perasaan sambil berpegangan lebih erat",
+      "frequentSaying": "«Kamu nggak ninggalin aku kan?»",
+      "changeTips": "Saat kontak berkurang, tulis 3 alasan lain selain «ini berakhir»\nSaat takut naik, bilang apa adanya: «Sekarang aku takut kehilanganmu»\nPerbanyak orang dan aktivitas di luar hubungan ini untuk menurunkan ketergantungan\nKalau takut ditinggalkan berulang di tiap hubungan atau putus lama masih menghantui, jelajahi akarnya dengan aman bersama profesional konseling",
+      "oneLiner": "Takut kehilangan berarti cintanya dalam. Mengatakan takut itu sering justru membuat hubungan lebih kuat",
+      "shareLine": "Kenapa begitu obsesi chat begitu pacaran? Hasil: Tipe Takut Ditinggalkan 🥀 Bukan tersinggung — takut kehilangan mereka... merinding. Kartu hasil — alasan kamu apa?"
+    }
+  ]
+}

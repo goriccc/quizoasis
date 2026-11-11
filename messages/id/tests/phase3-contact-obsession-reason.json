@@ -1,0 +1,63 @@
+{
+  "phase3ContactObsessionReasonTest": {
+    "startMessage": {
+      "line1": "Balasan agak lambat, kenapa dada langsung sesak?",
+      "line2": "Biasanya kamu santai — tapi begitu pacaran, HP terus dicek. Balasan lambat bikin gelisah; kontak putus bikin seharian susah fokus. Melihat diri sendiri, kamu bertanya, «Ada apa denganku? Apa aku terlalu clingy?»",
+      "line3": "Di balik perilaku yang tampak obsesif, tiap orang punya kebutuhan berbeda: ingin tenang, kecemasan meledak, ingin pegang situasi, ingin menahan kesepian, atau takut ditinggal. Begitu kebutuhan — bukan hanya perilaku — punya nama, cara berubah jadi terlihat.",
+      "line4": "10 situasi ini mengungkap alasan sejati kenapa kamu bergantung pada kontak, dan kebutuhan tersembunyi di baliknya.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti Tes",
+      "startTest": "Cari Tahu Kenapa Aku Obsesi Kontak",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "realReason": "Alasan Sejati Kenapa Kamu Bergantung pada Kontak",
+      "keywords": "Kata Kunci Utama",
+      "scoreTitle": "Skor per Tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Kebutuhan Tersembunyi yang Ikut Hadir",
+      "strengths": "Kekuatan Tipe Ini",
+      "reasonDetail": "Pola Kontak Tipe Ini",
+      "frequentSaying": "Yang Sering Diucapkan Tipe Ini",
+      "changeTips": "Cara Menenangkan Pikiran",
+      "oneLiner": "Ringkasan Satu Kalimat",
+      "shareResult": "Bagikan Hasil Saya",
+      "popularBadge": "Populer",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+      "startKakao": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+      "startWechat": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+      "startWhatsapp": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+      "startTelegram": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!",
+      "startLine": "Kenapa Begitu Obsesi Chat Begitu Pacaran? 🔁 Cari alasan sejati kenapa kamu bergantung pada kontak — cobain!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi sedang tidak tersedia.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk berbagi.",
+      "kakaoInit": "Sedang menyiapkan berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa",
+      "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy?",
+    "description": "Tin trả lời chậm một chút, sao tim lại sốt ruột? 10 tình huống giúp bạn tìm ra lý do thật sự khiến mình bám lấy liên lạc — và nhu cầu ẩn phía sau.",
+    "tags": ["Ám ảnh tin nhắn", "Tâm lý tình yêu"]
+  },
+  "startMessage": {
+    "line1": "Tin trả lời chậm một chút, sao tim lại sốt ruột đến vậy?",
+    "line2": "Bình thường bạn khá cool — nhưng vừa yêu là cứ mở điện thoại liên tục. Trả lời chậm thì bồn chồn; mất liên lạc thì cả ngày chẳng làm được gì. Nhìn lại bản thân, bạn tự hỏi: «Mình sao vậy, mình đang bám víu à?»",
+    "line3": "Đằng sau hành vi giống như ám ảnh, mỗi người có nhu cầu khác nhau: muốn yên tâm, lo âu bùng nổ, muốn nắm tình hình, muốn chặn cô đơn, hoặc sợ bị bỏ. Biết nhu cầu — không chỉ hành vi — thì mới thấy cách thay đổi.",
+    "line4": "10 tình huống sẽ chỉ ra lý do thật sự khiến bạn bám lấy liên lạc, và nhu cầu ẩn bên dưới.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu vì sao mình ám ảnh liên lạc",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự",
+    "realReason": "Lý do thật sự khiến bạn bám lấy liên lạc",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo loại",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Nhu cầu ẩn đi kèm",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Mẫu liên lạc của kiểu này",
+    "frequentSaying": "Câu thường nói của kiểu này",
+    "changeTips": "Cách làm dịu tâm trí",
+    "oneLiner": "Nhận xét một câu",
+    "shareResult": "Chia sẻ kết quả",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại",
+    "otherTests": "Xem bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+    "startKakao": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+    "startWechat": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+    "startWhatsapp": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+    "startTelegram": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+    "startLine": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Hiện không dùng được tính năng chia sẻ.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+    "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+  },
+  "questions": [
+    {
+      "q": "Người yêu im cả chiều rồi tối mới nhắn «Họp kéo dài». Bạn sẽ?",
+      "opts": [
+        "Trong lúc chờ tim đập mạnh, chẳng làm được gì — tin tới rồi người mới giãn ra",
+        "Quá giờ tan làm vẫn chưa tin, muốn hỏi «Đang ở đâu? Với ai?»",
+        "Im càng lâu lòng càng trống và cô đơn vô cớ",
+        "Sợ cảm xúc nguội đi — hoặc họ đang muốn rời xa"
+      ]
+    },
+    {
+      "q": "Họ đi chơi với bạn, sau 6 giờ chiều mất liên lạc. Bạn sẽ?",
+      "opts": [
+        "Phải biết mấy giờ xong, đi với ai mới yên nên hỏi trước",
+        "Ghét ở một mình nên nhắn bạn hoặc cố ý ra ngoài cho bận",
+        "Loáng thoáng nghĩ: liên lạc sẽ ít dần rồi họ bỏ mình",
+        "Muốn mỗi giờ gửi «Vui không?» để nhận tín hiệu"
+      ]
+    },
+    {
+      "q": "Họ đã xem tin nhưng một tiếng chưa trả lời. Điều đầu tiên dâng lên?",
+      "opts": [
+        "Cảm giác một mình ập tới khiến lòng nóng ruột",
+        "Ngực thắt lại — sợ bị quên, hoặc mình thành gánh nặng",
+        "Cứ mở chat, so giờ đã xem và trạng thái online",
+        "Kịch bản xấu nhất chạy dài trong đầu, tim đập thình thịch"
+      ]
+    },
+    {
+      "q": "Họ nhắn «Hôm nay mệt, ngủ sớm nhé». Bạn sẽ?",
+      "opts": [
+        "Nghe như tín hiệu muốn kết thúc trò chuyện — lòng thót lại",
+        "Nhắn «Thật sự ngủ chứ?» rồi kiểm tra trạng thái thêm lần",
+        "Chẳng có gì xảy ra mà lo âu phình to, tim đập, khó ngủ",
+        "Muốn biết trước ngày mai khoảng mấy giờ liên lạc được, lịch ra sao"
+      ]
+    },
+    {
+      "q": "Tin trả lời ngắn hơn thường ngày. Bạn sẽ?",
+      "opts": [
+        "Hỏi «Sao ngắn vậy?», «Giận à?» và tiếp tục nói đến khi thấy ổn",
+        "Lo càng lớn, tim đập, chẳng làm được gì cho đến khi có tin",
+        "Muốn đặt quy tắc giờ giấc và tần suất nhắn tin",
+        "Trò chuyện ngắn lại khiến cảm giác bị bỏ lại, lòng trống rỗng"
+      ]
+    },
+    {
+      "q": "Họ đột ngột nói «Giảm nhắn tí được không? Mình nghẹt thở». Bạn sẽ?",
+      "opts": [
+        "Sợ thời gian một mình sẽ dài hơn nên lòng trống",
+        "Nghe xong ngực tụt — đây có phải muốn chia tay không?",
+        "Miệng nói ổn nhưng trong lòng cả ngày như tàu lượn",
+        "Muốn có quy tắc gì đó để vẫn nắm được nhịp liên lạc của họ"
+      ]
+    },
+    {
+      "q": "Họ xem không trả lời nhưng vẫn hoạt động trên mạng xã hội. Bạn sẽ?",
+      "opts": [
+        "Sợ mình không còn là ưu tiên — có thời gian làm gì cũng được trừ trả lời mình",
+        "So giờ hoạt động với giờ đã xem tin và liên tục tải lại",
+        "Phải biết đang với ai, làm gì mới yên nên muốn hỏi",
+        "Cảm giác bị loại trừ, cô đơn vì mọi người đều kết nối trừ mình"
+      ]
+    },
+    {
+      "q": "Họ hủy hẹn cuối tuần với bạn để đi với bạn bè. Bạn sẽ?",
+      "opts": [
+        "Sau khi hủy vẫn thỉnh thoảng xem online và trạng thái đã xem",
+        "Vừa hủy là lo âu ập tới — mỗi tin sau đó đều làm tim phản ứng",
+        "Cuối tuần một mình dài lê thê nên càng chờ tin của họ",
+        "Cảm giác họ đang xa dần nên giấu buồn và càng chăm hơn"
+      ]
+    },
+    {
+      "q": "Họ báo trước «Dạo này bận, có thể ít nhắn». Bạn sẽ?",
+      "opts": [
+        "Hiểu, nhưng ít liên lạc sẽ làm tim đập và lo âu tăng",
+        "Muốn biết cụ thể bận thế nào, ngày nào giờ nào còn nhắn được",
+        "«Bận» nghe như bắt đầu tạo khoảng cách — lòng nặng",
+        "Trả lời «Ừ» nhưng vẫn mở chat tìm tín hiệu yên tâm"
+      ]
+    },
+    {
+      "q": "Sau khi cãi vì tin nhắn, họ hỏi «Anh/Em không tin mình à?» Lòng bạn thật sự?",
+      "opts": [
+        "Không phải không tin — mình cần biết chắc, không biết thì lòng không yên",
+        "Mất liên lạc thì cảm giác một mình quá lớn, mình chỉ muốn chặn nó",
+        "Tin, nhưng phải thấy đã xem hoặc tin trả lời mới yên nên cứ kiểm",
+        "Muốn tin nhưng không liên lạc được thì cơ thể lo trước, không cưỡng nổi"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người chỉ thở được sau khi kiểm tra, Kiểu nghiện xác nhận 🔁",
+      "typeName": "Kiểu nghiện xác nhận",
+      "realReason": "Sự yên tâm ngắn ngủi từ việc kiểm tra kéo bạn kiểm tra tiếp",
+      "shortDescription": "Bạn không bám víu. Sự yên tâm từ kiểm tra hết hạn quá nhanh nên bạn lại kiểm.",
+      "description": "Đã xem, online, tốc độ trả lời — mỗi lần kiểm bạn dịu một chút. Không có tín hiệu mới thì lo lại dâng và bạn kiểm tiếp. Kiểm tra không thành yên tâm bền vững; nó nuôi chính thói quen kiểm.\n\nLý do thật sự: Không cần câu trả lời — cần tín hiệu tức thì để xoa dịu lo âu\nNhu cầu ẩn sau việc bám liên lạc: Bằng chứng nhìn thấy được rằng quan hệ vẫn ổn ngay lúc này",
+      "keywords": "Tải lại, Giờ online, Vòng kiểm, Săn manh mối, Yên tâm ngắn hạn",
+      "strengths": "Chân thành với quan hệ và chủ động tiến lại gần trước",
+      "reasonDetail": "Luân phiên kiểm đã xem/online/hoạt động và hay gửi tin hỏi thăm ngắn",
+      "frequentSaying": "«Mình đang kiểm lần thứ mấy rồi?»",
+      "changeTips": "Khi muốn kiểm, đặt hẹn giờ «đợi thêm 10 phút»\nTắt thông báo và chỉ mở chat vào khung giờ cố định\nThay vì kiểm, nói thẳng «Hôm nay cho mình một câu yên tâm được không?»\nNếu không dừng được và ảnh hưởng việc, ngủ, tập trung — đừng chịu một mình, hãy nói với chuyên gia tư vấn tâm lý",
+      "oneLiner": "Kiểm tra chỉ dịu lo trong chốc lát, không xóa được nó. Nói ra yêu cầu mới cắt vòng lặp",
+      "shareLine": "Tại sao yêu rồi lại ám ảnh tin nhắn? Kết quả: Kiểu nghiện xác nhận 🔁 Yên tâm từ kiểm quá ngắn nên cứ kiểm mãi... thẻ kết quả group chat! Bạn ra gì?"
+    },
+    {
+      "title": "Người mà lo âu lan cả vào cơ thể, Kiểu lo âu bùng nổ 🌪️",
+      "typeName": "Kiểu lo âu bùng nổ",
+      "realReason": "Vừa mất liên lạc, lo âu đã phình to không kiểm soát",
+      "shortDescription": "Bạn không nghi ngờ họ. Lo âu một khi bật lên thì tự tắt không nổi.",
+      "description": "Trả lời chậm làm tim đập và cảnh xấu nhất chạy dài trong đầu. Lý trí biết chẳng sao — cơ thể chạy trước. Chỉ khi có tin lo mới hạ, nên liên lạc thành thiết bị ổn định.\n\nLý do thật sự: Không phải hành vi của họ — mà khi lo dâng bạn còn thiếu cách tự xoa dịu\nNhu cầu ẩn: Làm dịu lo nhanh và lấy lại sự bình yên",
+      "keywords": "Tim đập, Tưởng tượng tệ nhất, Cơ thể phản ứng trước, Mất ngủ, Tin như thuốc an thần",
+      "strengths": "Cảm xúc phong phú, nhạy với thay đổi nhỏ, yêu sâu",
+      "reasonDetail": "Mất liên lạc thì chẳng tập trung được gì, chỉ chờ đến khi họ trả lời",
+      "frequentSaying": "«Đầu hiểu nhưng tim không theo»",
+      "changeTips": "Khi lo dâng, hít 4 giây thở ra 6 giây — năm vòng\nTách kịch bản trong đầu thành hai dòng: «sự thật đã xác nhận» và «câu chuyện mình dựng»\nChuẩn bị sẵn thói quen dịu lo không cần tin (đi bộ, nhạc, tắm)\nNếu tim đập mất ngủ thường xuyên ảnh hưởng đời sống, hãy tìm chuyên gia tư vấn tâm lý hoặc bác sĩ tâm thần — lo âu có thể nhẹ hơn nhiều khi được giúp",
+      "oneLiner": "Lo âu không phải yếu đuối — là chuông báo tim bạn bật. Học tắt nó thì yêu dễ hơn nhiều",
+      "shareLine": "Tại sao yêu rồi lại ám ảnh tin nhắn? Kết quả: Kiểu lo âu bùng nổ 🌪️ Không phải bám — lo lan vào cơ thể... đúng quá. Thẻ kết quả group — bạn?"
+    },
+    {
+      "title": "Người chỉ yên khi đã nắm rõ, Kiểu nhu cầu kiểm soát 🧭",
+      "typeName": "Kiểu nhu cầu kiểm soát",
+      "realReason": "Phải tự nắm tình hình thì lo âu mới giảm",
+      "shortDescription": "Bạn không muốn nhốt họ. Không biết thì quá khó chịu nên muốn nắm tình hình trong tay.",
+      "description": "Họ ở đâu, với ai, bao giờ xong — không biết thì không yên. Quy tắc và lịch làm dịu bạn, nhưng với họ có thể như giám sát. Bạn chọn «biết» làm cách chữa bất định.\n\nLý do thật sự: Không muốn kiểm soát người — khó chịu với bất định nên dùng thông tin để ổn định\nNhu cầu ẩn: Trạng thái dự đoán được để thấy an toàn",
+      "keywords": "Nắm tình hình, Đặt quy tắc, Kiểm lịch, Biết mới yên, Khó chịu với bất định",
+      "strengths": "Có kế hoạch, trách nhiệm, chân thành muốn giữ quan hệ ổn",
+      "reasonDetail": "Hỏi vị trí/giờ/người đi cùng, hoặc đề xuất quy tắc liên lạc",
+      "frequentSaying": "«Chỉ cần biết là mình yên thôi»",
+      "changeTips": "Thu nhỏ điều cần biết còn «một thông tin bắt buộc», phần còn lại để họ tự do\nĐừng tự đặt quy tắc — nói «Lúc này mình hay lo, mình thử cách nào cùng nhau?»\nThử chịu trạng thái không biết trong 5 phút và thấy chẳng có gì xảy ra\nNếu cứ phải xác nhận vị trí/lịch và xung đột lặp lại, hãy cùng chuyên gia tư vấn tâm lý xem gốc lo âu",
+      "oneLiner": "Cần biết mới yên là dễ hiểu. Nhưng yên lâu dài đến từ tin tưởng, không phải thông tin",
+      "shareLine": "Tại sao yêu rồi lại ám ảnh tin nhắn? Kết quả: Kiểu nhu cầu kiểm soát 🧭 Không phải nhốt — không biết khó chịu nên muốn nắm... công nhận. Thẻ kết quả — bạn thuộc kiểu nào?"
+    },
+    {
+      "title": "Người sợ thời gian một mình, Kiểu phòng thủ cô đơn 🛟",
+      "typeName": "Kiểu phòng thủ cô đơn",
+      "realReason": "Mất liên lạc thì cảm giác một mình quá lớn — bạn cố chặn nó",
+      "shortDescription": "Bạn không ám ảnh tin nhắn. Bạn dùng liên lạc để chặn nỗi cô đơn khi bị để một mình.",
+      "description": "Họ im thì lòng trống và buồn. Liên lạc chính là cảm giác «họ đang bên», nên một khi giảm, cô đơn ùa tới. Tin không chỉ là yêu — mà là lá chắn chống cô đơn.\n\nLý do thật sự: Cô đơn lúc một mình đẩy nhu cầu liên lạc mạnh hơn cả tần suất tin thật sự\nNhu cầu ẩn: Cảm giác được kết nối để chặn cô đơn",
+      "keywords": "Trống rỗng, Cảm giác một mình, Bị loại trừ, Liên lạc = hiện diện, Phòng thủ",
+      "strengths": "Quý trọng kết nối, ấm áp, đổ năng lượng vào quan hệ",
+      "reasonDetail": "Khi ít tin thì tìm bạn hoặc giả vờ bận ra ngoài; có tin là lòng dịu",
+      "frequentSaying": "«Không tin là đột nhiên thấy bị bỏ một mình»",
+      "changeTips": "Mỗi tuần chủ đích tạo ít nhất một kết nối ngoài người yêu (bạn, gia đình, nhóm)\nLên trước kế hoạch «cho mình» khi ở một mình\nKhi cô đơn dâng, gọi tên «Mình đang cô đơn» rồi dịu bằng cách khác trước khi nhắn\nNếu một mình quá khổ, cô đơn dai dẳng hoặc ảnh hưởng ngủ/động lực — đừng chịu một mình, hãy nói với chuyên gia tư vấn tâm lý hoặc trung tâm sức khỏe tâm thần địa phương",
+      "oneLiner": "Liên lạc dịu cô đơn nhưng không lấp đầy. Thêm một kết nối nuôi mình thì lòng vững hơn",
+      "shareLine": "Tại sao yêu rồi lại ám ảnh tin nhắn? Kết quả: Kiểu phòng thủ cô đơn 🛟 Dùng liên lạc chặn cô đơn khi một mình... bị chạm. Thẻ kết quả — bạn ra gì?"
+    },
+    {
+      "title": "Người sợ mất tình yêu này, Kiểu sợ bị bỏ 🥀",
+      "typeName": "Kiểu sợ bị bỏ",
+      "realReason": "Liên lạc giảm là sợ quan hệ sắp kết thúc dâng lên",
+      "shortDescription": "Bạn không nhắn vì buồn. Bạn nắm chặt vì sợ tình yêu này biến mất.",
+      "description": "Tin ngắn hơn, ít hơn đều như dấu hiệu lòng đang xa. «Bận», «mệt» nghe như báo trước chia tay — sợ đến trước cả buồn. Nếu từng bị kết thúc đột ngột, cảm giác này càng mạnh.\n\nLý do thật sự: Hơn cả hành vi hiện tại, nỗi sợ nội tâm «yêu rồi cũng hết» khuếch đại phản ứng liên lạc\nNhu cầu ẩn: Chắc chắn rằng quan hệ còn tiếp tục — an toàn rằng sẽ không bị bỏ",
+      "keywords": "Dấu hiệu chia tay, Sợ mất, Bám chặt, Sợ hơn buồn, Lo đứt kết nối",
+      "strengths": "Quý quan hệ, tận tụy, sẵn sàng vì họ",
+      "reasonDetail": "Liên lạc giảm thì vội chăm hơn hoặc giấu cảm xúc rồi bám chặt hơn",
+      "frequentSaying": "«Không bỏ mình chứ?»",
+      "changeTips": "Khi ít tin, viết 3 lý do khác ngoài «quan hệ sắp hết»\nKhi sợ dâng, nói thẳng «Giờ mình đang sợ mất anh/em»\nTăng người và hoạt động ngoài quan hệ này để giảm phụ thuộc\nNếu sợ bị bỏ lặp lại mỗi lần yêu hoặc chia tay cũ vẫn nặng — hãy cùng chuyên gia tư vấn tâm lý tìm gốc nỗi sợ một cách an toàn",
+      "oneLiner": "Sợ mất nghĩa là yêu sâu. Nói ra nỗi sợ ấy thường làm quan hệ vững hơn",
+      "shareLine": "Tại sao yêu rồi lại ám ảnh tin nhắn? Kết quả: Kiểu sợ bị bỏ 🥀 Không phải buồn — sợ mất họ... nổi da gà. Thẻ kết quả — lý do của bạn là gì?"
+    }
+  ]
+}

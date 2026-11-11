@@ -1,0 +1,63 @@
+{
+  "phase3ContactObsessionReasonTest": {
+    "startMessage": {
+      "line1": "Tin trả lời chậm một chút, sao tim lại sốt ruột đến vậy?",
+      "line2": "Bình thường bạn khá cool — nhưng vừa yêu là cứ mở điện thoại liên tục. Trả lời chậm thì bồn chồn; mất liên lạc thì cả ngày chẳng làm được gì. Nhìn lại bản thân, bạn tự hỏi: «Mình sao vậy, mình đang bám víu à?»",
+      "line3": "Đằng sau hành vi giống như ám ảnh, mỗi người có nhu cầu khác nhau: muốn yên tâm, lo âu bùng nổ, muốn nắm tình hình, muốn chặn cô đơn, hoặc sợ bị bỏ. Biết nhu cầu — không chỉ hành vi — thì mới thấy cách thay đổi.",
+      "line4": "10 tình huống sẽ chỉ ra lý do thật sự khiến bạn bám lấy liên lạc, và nhu cầu ẩn bên dưới.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm hiểu vì sao mình ám ảnh liên lạc",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật sự khiến bạn bám lấy liên lạc",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo loại",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Nhu cầu ẩn đi kèm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Mẫu liên lạc của kiểu này",
+      "frequentSaying": "Câu thường nói của kiểu này",
+      "changeTips": "Cách làm dịu tâm trí",
+      "oneLiner": "Nhận xét một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+      "startKakao": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+      "startWechat": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+      "startWhatsapp": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+      "startTelegram": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!",
+      "startLine": "Tại sao yêu rồi lại ám ảnh tin nhắn đến vậy? 🔁 Tìm lý do thật sự khiến bạn bám lấy liên lạc — thử ngay!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Hiện không dùng được tính năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

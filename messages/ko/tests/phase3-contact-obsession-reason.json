@@ -1,0 +1,63 @@
+{
+  "phase3ContactObsessionReasonTest": {
+    "startMessage": {
+      "line1": "연락이 늦어지면, 왜 이렇게 마음이 조급해질까?",
+      "line2": "평소엔 쿨한 사람인데 연애만 시작하면 폰을 계속 들여다보게 됩니다. 답장이 늦으면 마음이 급해지고, 연락이 끊기면 하루 종일 다른 일이 손에 안 잡힙니다. 그런 나를 보며 \"나 왜 이러지, 집착인가?\" 싶어 스스로가 낯설어지기도 합니다.",
+      "line3": "집착처럼 보이는 행동 뒤에는 사람마다 서로 다른 욕구가 숨어 있습니다. 안심하고 싶어서일 수도, 불안이 폭주해서일 수도, 상황을 내 손에 쥐고 싶어서일 수도, 외로움을 막고 싶어서일 수도, 버려질까 두려워서일 수도 있습니다. 행동이 아니라 욕구를 알면 달라지는 방법도 보입니다.",
+      "line4": "10가지 상황으로 연락에 매달리게 되는 나의 진짜 이유와 숨은 욕구를 알려드립니다.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "광고",
+      "goToTest": "테스트 하러 가기",
+      "startTest": "연락 집착 이유 알아보기",
+      "linkCopy": "링크 복사",
+      "kakao": "카카오톡",
+      "telegram": "텔레그램",
+      "wechat": "위챗",
+      "line": "라인",
+      "whatsapp": "왓츠앱",
+      "similarTests": "유사한 다른 테스트",
+      "realReason": "연락에 매달리는 진짜 이유",
+      "keywords": "핵심 키워드",
+      "scoreTitle": "유형별 점수",
+      "scoreUnit": "점",
+      "hiddenReason": "함께 있는 숨은 욕구",
+      "strengths": "이 유형의 강점",
+      "reasonDetail": "이 유형의 연락 패턴",
+      "frequentSaying": "이 유형이 자주 하는 말",
+      "changeTips": "마음을 가라앉히는 법",
+      "oneLiner": "한 줄 평",
+      "shareResult": "결과 공유하기",
+      "popularBadge": "인기",
+      "retake": "다시 하기",
+      "otherTests": "다른 테스트 보기"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "나는 왜 연애하면 연락에 집착하게 될까? 🔁 연락에 매달리게 되는 진짜 이유, 너도 해봐!",
+      "startKakao": "나는 왜 연애하면 연락에 집착하게 될까? 🔁 연락에 매달리게 되는 진짜 이유, 너도 해봐!",
+      "startWechat": "나는 왜 연애하면 연락에 집착하게 될까? 🔁 연락에 매달리게 되는 진짜 이유, 너도 해봐!",
+      "startWhatsapp": "나는 왜 연애하면 연락에 집착하게 될까? 🔁 연락에 매달리게 되는 진짜 이유, 너도 해봐!",
+      "startTelegram": "나는 왜 연애하면 연락에 집착하게 될까? 🔁 연락에 매달리게 되는 진짜 이유, 너도 해봐!",
+      "startLine": "나는 왜 연애하면 연락에 집착하게 될까? 🔁 연락에 매달리게 되는 진짜 이유, 너도 해봐!"
+    },
+    "alerts": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "resultCopied": "결과가 클립보드에 복사되었습니다!",
+      "shareFailed": "공유 기능을 사용할 수 없습니다.",
+      "wechatCopy": "링크가 복사되었습니다! WeChat에서 붙여넣기 하여 공유하세요.",
+      "kakaoInit": "카카오톡 공유 기능을 초기화하는 중입니다. 잠시 후 다시 시도해주세요.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 유사한 다른 테스트 추천 톱5",
+      "popularTestsTop5": "🔥 요즘 인기 테스트 추천 톱5"
+    }
+  }
+}

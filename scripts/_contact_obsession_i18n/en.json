@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Why Do I Get So Obsessed with Texts When I'm Dating?",
+    "description": "When a reply is late, why does your chest tighten so fast? These 10 scenarios reveal the real reason you cling to contact — and the hidden need behind it.",
+    "tags": ["Text Obsession", "Dating Psychology"]
+  },
+  "startMessage": {
+    "line1": "When a reply is late, why does your chest tighten so fast?",
+    "line2": "You're usually chill — until you're dating, and suddenly you keep checking your phone. A slow reply makes you restless; silence makes the whole day hard to focus. Looking at yourself, you wonder, \"What's wrong with me? Am I being clingy?\"",
+    "line3": "Behind what looks like obsession, everyone has a different need. Maybe you want reassurance. Maybe anxiety snowballs. Maybe you need to feel in control. Maybe you're blocking loneliness. Or maybe you're terrified of being left. Once you name the need — not just the behavior — change becomes possible.",
+    "line4": "These 10 scenarios show the real reason you cling to contact, and the hidden need underneath.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why You Cling to Contact",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Reason You Cling to Contact",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "A Hidden Need Alongside",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "This Type's Contact Pattern",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Calm Your Mind",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+    "startKakao": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+    "startWechat": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+    "startWhatsapp": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+    "startTelegram": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+    "startLine": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing isn't available right now.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "Your partner goes quiet all afternoon, then texts at night: \"Meeting ran long.\" You...",
+      "opts": [
+        "Your heart raced and you couldn't focus until the reply came — then your body finally unclenched",
+        "Past quitting time with no word, you want to ask, \"Where are you? Who are you with?\"",
+        "The longer the silence, the more hollow and lonely you feel",
+        "You wonder if their feelings cooled — or if they're pulling away"
+      ]
+    },
+    {
+      "q": "They're out with friends and go silent after 6 p.m. You...",
+      "opts": [
+        "Need to know when it ends and who's there, so you check ahead to feel okay",
+        "Hate being alone, so you text a friend or invent a busy outing",
+        "A thought flashes: maybe contact will keep shrinking until they leave you",
+        "Want to send \"Having fun?\" every hour, craving a signal back"
+      ]
+    },
+    {
+      "q": "They read your message and haven't replied for an hour. What hits first?",
+      "opts": [
+        "A sharp alone feeling that makes you rush inside",
+        "Your chest drops — maybe they forgot you, or you've become a burden",
+        "You keep opening the chat, checking read time and last active",
+        "Worst-case scenes pile up and your heart pounds"
+      ]
+    },
+    {
+      "q": "They text, \"I'm tired — heading to bed early.\" You...",
+      "opts": [
+        "It feels like a signal they want to end the conversation — your stomach drops",
+        "You send \"You're really sleeping, right?\" and check their status again",
+        "Nothing's wrong, but anxiety grows — heart racing, hard to sleep",
+        "You want to know when they can talk tomorrow and what their schedule looks like"
+      ]
+    },
+    {
+      "q": "Their replies are shorter than usual. You...",
+      "opts": [
+        "Ask \"Why so short?\" / \"Are you mad?\" and keep talking until it feels resolved",
+        "Worry snowballs — heart pounding, you can't focus until they text again",
+        "Want to set rules for when and how often you message",
+        "Short chats leave you feeling left alone and empty"
+      ]
+    },
+    {
+      "q": "They suddenly say, \"Can we text less? I feel smothered.\" You...",
+      "opts": [
+        "Feel hollow, imagining even longer stretches of being alone",
+        "Your chest sinks — are they saying this to break up?",
+        "You say you're fine, but inside it's a roller coaster all day",
+        "Want some rule — anything — so you can still track their contact rhythm"
+      ]
+    },
+    {
+      "q": "They left you on read, but you see them active on socials. You...",
+      "opts": [
+        "Fear you're no longer a priority — they can do everything except reply to you",
+        "Compare their activity time to when they read your message and keep refreshing",
+        "Need to know who they're with and what they're doing before you can relax",
+        "Feel left out and lonely — like everyone else is connected except you"
+      ]
+    },
+    {
+      "q": "They cancel weekend plans with you to hang with a friend. You...",
+      "opts": [
+        "Even after, you keep checking their online status and read receipts",
+        "Anxiety floods in the moment plans cancel — every later text hits your heart",
+        "The empty weekend stretches long, so you wait even harder for their messages",
+        "It feels like they're drifting away, so you hide the hurt and care even more"
+      ]
+    },
+    {
+      "q": "They warn you, \"I'll be busy — I might not text much.\" You...",
+      "opts": [
+        "You understand, but less contact will make your heart race and anxiety climb",
+        "Want concrete details: how busy, which days, which hours they can reply",
+        "\"Busy\" sounds like the start of distance — your chest feels heavy",
+        "You say \"okay,\" but keep opening the chat hunting for a reassuring signal"
+      ]
+    },
+    {
+      "q": "After a fight about texting, they ask, \"Don't you trust me?\" What's your honest gut?",
+      "opts": [
+        "It's not about trust — I need to know for sure, or my mind won't settle",
+        "When contact stops, alone feels huge, and I was trying to block that",
+        "I trust you, but I only calm down when I see a read receipt or reply",
+        "I want to trust you, but when I can't reach you my body panics first"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who can breathe only after checking, the Confirmation Addict 🔁",
+      "typeName": "Confirmation Addict",
+      "realReason": "The brief relief you get from checking pulls you back into checking again",
+      "shortDescription": "You're not clingy. The calm from checking just expires too fast — so you check again.",
+      "description": "Read receipts, last active, reply speed — each check settles you for a moment. Then without a fresh signal, anxiety rises and you check again. Checking doesn't become lasting calm; it trains the habit itself.\n\nThe real reason, unpacked: You don't need answers — you need an instant signal to soothe anxiety\nHidden need behind the contact cling: Visible proof, right now, that the relationship is okay",
+      "keywords": "Refreshing, Last active, Checking loops, Hunting clues, Short-lived calm",
+      "strengths": "You dive into relationships sincerely and take the initiative to reach out first",
+      "reasonDetail": "You alternate between read/online/activity checks and send short check-in texts often",
+      "frequentSaying": "\"How many times have I checked already?\"",
+      "changeTips": "When you want to check, set a \"wait 10 minutes\" timer\nMute alerts and open the chat only at set times each day\nInstead of checking, ask directly: \"Can you reassure me with one line today?\"\nIf you can't stop checking and it hits work, sleep, or focus, don't tough it out alone — talk with a counseling professional",
+      "oneLiner": "Checking only soothes anxiety briefly — it doesn't erase it. Asking in words is what breaks the loop",
+      "shareLine": "Why do I get so obsessed with texts when dating? Result: Confirmation Addict 🔁 The calm from checking expires too fast so I keep checking... group chat result card drop! What'd you get?"
+    },
+    {
+      "title": "Someone whose anxiety spreads into the body, the Anxiety Cascade Type 🌪️",
+      "typeName": "Anxiety Cascade Type",
+      "realReason": "The moment contact breaks, anxiety snowballs beyond control",
+      "shortDescription": "You're not doubting them. Once anxiety switches on, it doesn't switch itself off.",
+      "description": "A late reply makes your heart race and worst-case scenes play on loop. Logic says it's fine — but your body runs ahead. You only settle when contact lands, so texts become a stabilizer.\n\nThe real reason, unpacked: It's not their behavior — it's that you still lack ways to self-soothe when anxiety rises\nHidden need behind the contact cling: To calm anxiety fast and get your peace of mind back",
+      "keywords": "Heart racing, Worst-case movies, Body reacts first, Can't sleep, Texts as stabilizer",
+      "strengths": "Rich emotions, sharp to small shifts, and a love that goes deep",
+      "reasonDetail": "When contact stops, you can't focus on anything else until they reply",
+      "frequentSaying": "\"My head gets it — my heart won't follow\"",
+      "changeTips": "When anxiety rises, breathe in 4 seconds, out 6 — five rounds\nSplit the mental spiral into two lines: \"confirmed facts\" vs \"stories I made\"\nBuild a pre-set calm routine (walk, music, shower) that works without a text\nIf racing heart or sleepless nights keep hitting daily life, get help from a counseling professional or a psychiatrist — anxiety can get much lighter with support",
+      "oneLiner": "Anxiety isn't weakness — it's an alarm your heart set off. Learn to turn it down, and love gets easier",
+      "shareLine": "Why do I get so obsessed with texts when dating? Result: Anxiety Cascade Type 🌪️ Not clinginess — anxiety that spreads into the body... facts, I'm quiet now. Group chat result card — you?"
+    },
+    {
+      "title": "Someone who only relaxes once they know, the Control-Need Type 🧭",
+      "typeName": "Control-Need Type",
+      "realReason": "You need to grasp the situation yourself for anxiety to drop",
+      "shortDescription": "You're not trying to cage them. Not knowing feels unbearable — so you want the situation in your hands.",
+      "description": "Where they are, who they're with, when it ends — you need those answers to settle. Rules and schedules calm you, but to them it can feel like surveillance. You chose \"knowing\" as your fix for uncertainty.\n\nThe real reason, unpacked: Not controlling them — struggling with uncertainty and using information for stability\nHidden need behind the contact cling: Predictability that lets you feel safe",
+      "keywords": "Figuring it out, Setting rules, Schedule checks, Need-to-know calm, Uncertainty discomfort",
+      "strengths": "Planned, responsible, and sincere about keeping the relationship steady",
+      "reasonDetail": "You ask location/timing/company, or propose contact rules",
+      "frequentSaying": "\"I just feel better when I know\"",
+      "changeTips": "Shrink what you need to know down to \"one must-have,\" leave the rest as their freedom\nDon't set rules alone — say \"I get anxious then — what could we try together?\"\nPractice sitting with not-knowing for just 5 minutes and notice nothing bad happens\nIf needing their location/schedule keeps fueling conflict, explore the root with a counseling professional",
+      "oneLiner": "Needing to know to feel safe makes sense. But lasting calm comes from trust, not information",
+      "shareLine": "Why do I get so obsessed with texts when dating? Result: Control-Need Type 🧭 Not trapping them — not knowing just feels awful so I need to grasp it... fair lol. Group chat result card — what's your type?"
+    },
+    {
+      "title": "Someone afraid of time alone, the Loneliness-Defense Type 🛟",
+      "typeName": "Loneliness-Defense Type",
+      "realReason": "When contact stops, alone hits hard — and you try to block that feeling",
+      "shortDescription": "You're not obsessed with texts. You're using contact to block the loneliness of being left alone.",
+      "description": "Silence from them makes you hollow and lonely. Contact feels like \"they're beside me,\" so when it drops, loneliness floods in. Texts aren't just love — they're a shield against being alone.\n\nThe real reason, unpacked: Loneliness in alone time fuels the contact urge more than their actual text frequency\nHidden need behind the contact cling: A sense of connection that keeps loneliness at bay",
+      "keywords": "Hollow feeling, Alone-ness, Left out, Contact as presence, Defense",
+      "strengths": "You cherish connection, stay warm, and pour energy into relationships",
+      "reasonDetail": "In quiet stretches you call friends or pretend to be busy out, and a text from them eases you",
+      "frequentSaying": "\"When they don't text, I suddenly feel left alone\"",
+      "changeTips": "Build one weekly connection outside the relationship (friends, family, a group)\nPre-plan \"me time\" activities for alone stretches\nWhen loneliness rises, name it — \"I'm lonely right now\" — and soothe it another way before texting\nIf alone time feels crushing, loneliness lingers, or sleep/motivation suffer, don't carry it alone — talk to a counseling professional or a local mental health center",
+      "oneLiner": "Contact soothes loneliness but doesn't fill it. One more connection that nourishes you makes the heart sturdier",
+      "shareLine": "Why do I get so obsessed with texts when dating? Result: Loneliness-Defense Type 🛟 I'm blocking alone-loneliness with texts... called out. Group chat result card — what'd you get?"
+    },
+    {
+      "title": "Someone terrified of losing this love, the Abandonment-Fear Type 🥀",
+      "typeName": "Abandonment-Fear Type",
+      "realReason": "Less contact makes fear rise that the relationship is ending",
+      "shortDescription": "You're not texting from hurt feelings. You're holding on because you're scared this love might disappear.",
+      "description": "Shorter or rarer texts feel like emotional distance. Even \"busy\" or \"tired\" can sound like a breakup preview — fear arrives before disappointment. Past sudden endings can make this hit even harder.\n\nThe real reason, unpacked: More than their current behavior, an inner fear that \"love ends someday\" amplifies your contact reactions\nHidden need behind the contact cling: Certainty the bond will continue — safety that you won't be abandoned",
+      "keywords": "Breakup signs, Fear of loss, Holding on, Fear over hurt, Separation anxiety",
+      "strengths": "You treasure the bond, stay devoted, and give generously for them",
+      "reasonDetail": "When contact drops, you rush to care more or hide feelings while clinging tighter",
+      "frequentSaying": "\"You're not leaving me, right?\"",
+      "changeTips": "When contact drops, write 3 other possible reasons besides \"it's ending\"\nWhen fear rises, say it plain: \"I'm scared of losing you right now\"\nGrow people and activities outside this bond to lower dependence on it\nIf abandonment fear repeats across relationships or old breakups still hit hard, explore the root safely with a counseling professional",
+      "oneLiner": "Fear of loss means the love runs deep. Speaking that fear out loud often makes the bond stronger",
+      "shareLine": "Why do I get so obsessed with texts when dating? Result: Abandonment-Fear Type 🥀 Not hurt — I'm scared of losing them... chills. Group chat result card — what's your reason?"
+    }
+  ]
+}

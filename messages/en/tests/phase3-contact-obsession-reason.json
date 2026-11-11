@@ -1,0 +1,63 @@
+{
+  "phase3ContactObsessionReasonTest": {
+    "startMessage": {
+      "line1": "When a reply is late, why does your chest tighten so fast?",
+      "line2": "You're usually chill — until you're dating, and suddenly you keep checking your phone. A slow reply makes you restless; silence makes the whole day hard to focus. Looking at yourself, you wonder, \"What's wrong with me? Am I being clingy?\"",
+      "line3": "Behind what looks like obsession, everyone has a different need. Maybe you want reassurance. Maybe anxiety snowballs. Maybe you need to feel in control. Maybe you're blocking loneliness. Or maybe you're terrified of being left. Once you name the need — not just the behavior — change becomes possible.",
+      "line4": "These 10 scenarios show the real reason you cling to contact, and the hidden need underneath.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why You Cling to Contact",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Reason You Cling to Contact",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "A Hidden Need Alongside",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "This Type's Contact Pattern",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Calm Your Mind",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+      "startKakao": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+      "startWechat": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+      "startWhatsapp": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+      "startTelegram": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!",
+      "startLine": "Why Do I Get So Obsessed with Texts When I'm Dating? 🔁 Find the real reason you cling to contact — try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}
