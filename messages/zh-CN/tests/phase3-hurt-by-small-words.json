@@ -1,0 +1,63 @@
+{
+  "phase3HurtBySmallWordsTest": {
+    "startMessage": {
+      "line1": "明明没什么意思的一句话，为什么心会突然一沉？",
+      "line2": "「你今天看起来有点累」「你不就这样嘛」——对方完全没恶意，可那句话会在脑子里转一整天。怕被说敏感，只好一个人咽下去。",
+      "line3": "刺痛的点因人而异。可能是旧记忆被触动，可能像被拒绝，可能是期待落空，可能是疲惫到了极限，也可能是自我价值晃了一下。看自己的反应，就能看见伤口的位置。",
+      "line4": "用10个情境，告诉你为什么会受伤，以及怎样守住内心。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "看看受伤的原因",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "其他相似测试",
+      "realReason": "受伤的真正原因",
+      "keywords": "关键词",
+      "scoreTitle": "各类型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "同时存在的伤口点",
+      "strengths": "这个类型的优点",
+      "reasonDetail": "伤口点",
+      "frequentSaying": "这个类型常说的话",
+      "changeTips": "守住内心的方法",
+      "oneLiner": "一句话点评",
+      "shareResult": "分享我的结果",
+      "popularBadge": "热门",
+      "retake": "再测一次",
+      "otherTests": "看看其他测试"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "为什么总被恋人的一句闲话伤到？🕰️ 受伤的真正原因，你也来测测！",
+      "startKakao": "为什么总被恋人的一句闲话伤到？🕰️ 受伤的真正原因，你也来测测！",
+      "startWechat": "为什么总被恋人的一句闲话伤到？🕰️ 受伤的真正原因，你也来测测！",
+      "startWhatsapp": "为什么总被恋人的一句闲话伤到？🕰️ 受伤的真正原因，你也来测测！",
+      "startTelegram": "为什么总被恋人的一句闲话伤到？🕰️ 受伤的真正原因，你也来测测！",
+      "startLine": "为什么总被恋人的一句闲话伤到？🕰️ 受伤的真正原因，你也来测测！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "暂时无法使用分享功能。",
+      "wechatCopy": "链接已复制！请到微信粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  }
+}

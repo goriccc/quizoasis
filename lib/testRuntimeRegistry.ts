@@ -573,6 +573,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3SmallLieReasonTestClient'),
   },
+
+  'phase3-hurt-by-small-words': {
+    slug: 'phase3-hurt-by-small-words',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_HURT_BY_SMALL_WORDS_META } = await import('./phase3HurtBySmallWordsData');
+      return {
+        title: PHASE3_HURT_BY_SMALL_WORDS_META.title,
+        description: PHASE3_HURT_BY_SMALL_WORDS_META.description,
+        tags: PHASE3_HURT_BY_SMALL_WORDS_META.tags,
+        thumbnail: 'p3_test_hurt_by_small_words.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3HurtBySmallWordsData');
+      return {
+        questions: mod.phase3HurtBySmallWordsQuestions,
+        results: mod.phase3HurtBySmallWordsResults,
+        meta: {
+          title: mod.PHASE3_HURT_BY_SMALL_WORDS_META.title,
+          description: mod.PHASE3_HURT_BY_SMALL_WORDS_META.description,
+          tags: mod.PHASE3_HURT_BY_SMALL_WORDS_META.tags,
+          thumbnail: 'p3_test_hurt_by_small_words.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3HurtBySmallWordsTest',
+        messagesFileSlug: 'phase3-hurt-by-small-words',
+      };
+    },
+    loadClient: () => import('@/components/Phase3HurtBySmallWordsTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

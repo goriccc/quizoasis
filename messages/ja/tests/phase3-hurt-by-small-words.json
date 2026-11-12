@@ -1,0 +1,63 @@
+{
+  "phase3HurtBySmallWordsTest": {
+    "startMessage": {
+      "line1": "大した意味のない一言なのに、なぜ心がドスンと落ちるんだろう？",
+      "line2": "「今日ちょっと疲れてるね」「いつもそうだよね」——相手に悪気はないのに、その言葉が一日中頭を回る。敏感だと言われたくなくて、一人で飲み込むこともあります。",
+      "line3": "傷つくポイントは人それぞれ。昔の記憶が触られたのか、拒絶のように感じたのか、期待がずれたのか、積もった疲れが限界なのか、自分の価値が揺れたのか。自分の反応を見ると、傷のポイントが見えます。",
+      "line4": "10の場面で、傷つく本当の理由と、心を守る方法をお伝えします。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "傷つく理由を知る",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "realReason": "傷つく本当の理由",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenReason": "一緒にある傷ポイント",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "傷ポイント",
+      "frequentSaying": "このタイプがよく言うこと",
+      "changeTips": "心を守る方法",
+      "oneLiner": "ひとことまとめ",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "retake": "もう一度やる",
+      "otherTests": "他のテストを見る"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "なぜ恋人の何気ない一言に傷つくの？🕰️ 傷つく本当の理由、あなたもやってみて！",
+      "startKakao": "なぜ恋人の何気ない一言に傷つくの？🕰️ 傷つく本当の理由、あなたもやってみて！",
+      "startWechat": "なぜ恋人の何気ない一言に傷つくの？🕰️ 傷つく本当の理由、あなたもやってみて！",
+      "startWhatsapp": "なぜ恋人の何気ない一言に傷つくの？🕰️ 傷つく本当の理由、あなたもやってみて！",
+      "startTelegram": "なぜ恋人の何気ない一言に傷つくの？🕰️ 傷つく本当の理由、あなたもやってみて！",
+      "startLine": "なぜ恋人の何気ない一言に傷つくの？🕰️ 傷つく本当の理由、あなたもやってみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。少ししてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
+  }
+}

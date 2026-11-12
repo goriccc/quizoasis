@@ -94,6 +94,15 @@ const SPLIT_MESSAGE_LOADERS: Record<string, Partial<Record<Locale, MessageLoader
     vi: () => import('@/messages/vi/tests/phase3-small-lie-reason.json'),
     id: () => import('@/messages/id/tests/phase3-small-lie-reason.json'),
   },
+  'phase3-hurt-by-small-words': {
+    ko: () => import('@/messages/ko/tests/phase3-hurt-by-small-words.json'),
+    en: () => import('@/messages/en/tests/phase3-hurt-by-small-words.json'),
+    ja: () => import('@/messages/ja/tests/phase3-hurt-by-small-words.json'),
+    'zh-CN': () => import('@/messages/zh-CN/tests/phase3-hurt-by-small-words.json'),
+    'zh-TW': () => import('@/messages/zh-TW/tests/phase3-hurt-by-small-words.json'),
+    vi: () => import('@/messages/vi/tests/phase3-hurt-by-small-words.json'),
+    id: () => import('@/messages/id/tests/phase3-hurt-by-small-words.json'),
+  },
   'phase3-tongue-tied-crush': {
     ko: () => import('@/messages/ko/tests/phase3-tongue-tied-crush.json'),
     en: () => import('@/messages/en/tests/phase3-tongue-tied-crush.json'),

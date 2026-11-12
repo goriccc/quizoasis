@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu?",
+    "description": "Chỉ là một câu chẳng có ý gì — sao tim lại thắt lại? 10 tình huống giúp bạn tìm ra lý do thật sự và cách giữ lấy trái tim mình.",
+    "tags": ["Vết thương tình yêu", "Tâm lý tình yêu"]
+  },
+  "startMessage": {
+    "line1": "Chỉ là một câu chẳng có ý gì — sao tim lại thắt lại?",
+    "line2": "\"Hôm nay trông mệt quá\", \"Cậu lúc nào cũng vậy mà\" — họ chẳng nghĩ gì, nhưng câu đó cứ xoay trong đầu cả ngày. Sợ bị bảo nhạy cảm nên nuốt một mình.",
+    "line3": "Điểm đau khác nhau ở mỗi người. Có thể ký ức cũ bị chạm. Có thể nghe như bị từ chối. Có thể kỳ vọng lệch. Có thể mệt tích tụ tới hạn. Hoặc giá trị bản thân bị lung lay. Phản ứng của bạn lộ điểm thương của bạn.",
+    "line4": "10 tình huống sẽ chỉ ra lý do thật sự bạn tổn thương — và cách giữ lấy trái tim.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu lý do tổn thương",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự",
+    "realReason": "Lý do thật sự khiến bạn tổn thương",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo kiểu",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Điểm thương đi kèm",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Điểm thương",
+    "frequentSaying": "Câu kiểu này hay nói",
+    "changeTips": "Cách giữ lấy trái tim",
+    "oneLiner": "Nhận xét một câu",
+    "shareResult": "Chia sẻ kết quả",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại",
+    "otherTests": "Xem bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+    "startKakao": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+    "startWechat": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+    "startWhatsapp": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+    "startTelegram": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+    "startLine": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+    "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+  },
+  "questions": [
+    {
+      "q": "Họ nhìn bạn ở chỗ hẹn rồi nói \"Hôm nay trông mệt quá\". Bạn...",
+      "opts": [
+        "Tim thắt lại — có phải họ không vui khi gặp mình?",
+        "Đã chăm chút cho buổi hẹn mà không được để ý, thấy tiếc",
+        "Mấy hôm nay đã kiệt sức — câu đó như đòn cuối, nghẹn lên",
+        "Sợ mình trông kém, cứ muốn nhìn gương"
+      ]
+    },
+    {
+      "q": "Họ cười nói \"Cậu lúc nào cũng vậy mà\". Bạn...",
+      "opts": [
+        "Không phải phản ứng ấm áp mình mong — kỳ vọng bị gãy",
+        "Ngày mệt cả người lẫn tâm, câu này đập mạnh tới mức muốn khóc",
+        "Nghe như \"cậu lúc nào cũng thiếu sót\", lòng chùng xuống",
+        "Nhớ câu tương tự ngày trước, cảm xúc cũ trồi lên nguyên si"
+      ]
+    },
+    {
+      "q": "Họ nghe bạn nói rồi \"À vậy à?\" rồi nhìn điện thoại. Bạn...",
+      "opts": [
+        "Cuối ngày mệt mỏi, phản ứng nhỏ cũng như chạm ngưỡng",
+        "Cảm giác chuyện mình chán nên họ rút sự chú ý — lòng tự trọng tụt",
+        "Chồng lên cảnh từng bị bỏ mặc giữa câu chuyện, ngực thắt",
+        "Như tín hiệu lời mình không quan trọng, không muốn nói tiếp"
+      ]
+    },
+    {
+      "q": "Họ nhẹ nhàng nói về ý kiến bạn \"Hình như không ổn\". Bạn...",
+      "opts": [
+        "Nghe như ý kiến mình vô giá trị, co lại",
+        "Nhớ lần từng lên tiếng rồi bị bỏ qua, cứng họng",
+        "Như ý kiến bị từ chối — cánh cửa lòng đóng sầm một nhịp",
+        "Mong họ đứng về mình, lệch kỳ vọng nên tiếc"
+      ]
+    },
+    {
+      "q": "Họ nói \"Cỡ đó tự xử đi\". Bạn...",
+      "opts": [
+        "Nhớ những lần nghe câu tương tự rồi một mình gánh, lòng nặng",
+        "Ngay cả xin giúp cũng như bị từ chối — lần sau khó mở miệng hơn",
+        "Nghĩ người yêu sẽ chăm trước — lệch kỳ vọng nên tiếc",
+        "Đã mệt sẵn, câu đó làm lòng sụp đổ một lần"
+      ]
+    },
+    {
+      "q": "Họ nhắn \"Đang bận, nói sau nhé\". Bạn...",
+      "opts": [
+        "Mệt chồng vài ngày — câu này yếu lòng đến muốn khóc",
+        "Biết họ bận nhưng vẫn nghĩ mình không quan trọng — lòng tự trọng rung",
+        "Như bị đẩy sang trước khi kịp nói — cảm giác bị từ chối",
+        "Chuyện quan trọng, mong họ hiểu — không thì tiếc"
+      ]
+    },
+    {
+      "q": "Họ nói \"Dạo này cậu hơi nhạy cảm\". Bạn...",
+      "opts": [
+        "Mình lúc nào cũng là người có vấn đề sao — thấy mình nhỏ lại",
+        "Nhớ mối quan hệ cũ cũng bị bảo nhạy cảm, lòng đau",
+        "Mong được hiểu thì lại bị chỉ trích — thất vọng",
+        "Đã mệt sẵn — câu này càng mệt và nước mắt ứa"
+      ]
+    },
+    {
+      "q": "Trong ảnh nhóm họ ngồi chỗ khác, không cạnh bạn. Bạn...",
+      "opts": [
+        "Chồng lên cảnh từng bị bỏ rơi, lòng đông cứng",
+        "Như tín hiệu tránh xa — cảm giác từ chối làm tim thắt",
+        "Mệt cả ngày khiến chuyện nhỏ cũng làm cảm xúc sụp",
+        "Mình không phải người họ muốn ngồi cạnh sao — lòng tự trọng tụt"
+      ]
+    },
+    {
+      "q": "Họ nói \"Cậu thông cảm đi\". Bạn...",
+      "opts": [
+        "Lòng mình luôn bị đẩy lùi — chưa kịp xin thì đã đóng cửa",
+        "Mong người yêu đọc lòng mình trước — lệch nên tiếc",
+        "Cảm xúc mình không đáng được hiểu sao — thấy mình nhỏ",
+        "Nhớ mình luôn là bên thông cảm, lòng nghẹn"
+      ]
+    },
+    {
+      "q": "Sắp nói \"Câu vừa rồi làm mình tổn thương\". Điều gần lòng nhất là?",
+      "opts": [
+        "Sợ nói ra sẽ thành người không đạt kỳ vọng — lo phản ứng họ trước",
+        "Nói cũng bị bỏ qua nhẹ — hết sức để mở miệng",
+        "Nhớ lần nói ra rồi càng đau hơn nên do dự",
+        "Sợ bị từ chối nên lời dừng ở cổ họng"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người có ký ức cũ chồng lên lời hôm nay, Kiểu kích hoạt quá khứ 🕰️",
+      "typeName": "Kiểu kích hoạt quá khứ",
+      "realReason": "Một câu hôm nay chạm cảnh đau cũ và cảm xúc lúc ấy trồi lên",
+      "shortDescription": "Bạn không \"quá nhạy cảm\". Câu hôm nay nhấn nút ký ức cũ, và cảm xúc lúc ấy cùng trồi lên.",
+      "description": "Họ chẳng có ý gì — nhưng lòng bạn nhảy về cảnh tương tự trong quá khứ. Cảm xúc cũ phản ứng lớn hơn lời hôm nay, nên phản ứng trông lớn hơn tình huống. Nhận ra mối nối này, vết thương sẽ nhỏ lại.",
+      "keywords": "Nút ký ức, Cảnh tương tự, Cảm xúc lúc ấy, Chồng quá khứ-hiện tại, Phản ứng lớn",
+      "strengths": "Ký ức sâu, học từ trải nghiệm tốt, cảm xúc tinh tế",
+      "reasonDetail": "Cách nói hoặc tình huống giống những gì từng nghe",
+      "frequentSaying": "\"Trước đây cũng từng nghe câu kiểu này...\"",
+      "changeTips": "Khi tim thắt, hỏi trước: \"Vì câu hôm nay — hay vì ký ức cũ?\"\nNói với họ: \"Câu đó chạm ký ức cũ của mình\" và chia sẻ lý do\nViết hai dòng khác biệt giữa cảnh cũ và cảnh nay để tách hiện tại\nNếu ký ức cũ thường trồi lên làm nặng đời sống hoặc mối quan hệ, hãy sắp xếp an toàn cùng chuyên gia tư vấn tâm lý",
+      "oneLiner": "Tách lời hôm nay khỏi ký ức lúc ấy, kích thước lòng sẽ về đúng kích thước thực tế",
+      "shareLine": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? Kết quả: Kiểu kích hoạt quá khứ 🕰️ Hình như câu hôm nay nhấn nút ký ức cũ... đúng bạn luôn haha thử đi — ra gì?"
+    },
+    {
+      "title": "Người đông cứng khi nghe như bị từ chối, Kiểu nhạy từ chối 🚪",
+      "typeName": "Kiểu nhạy từ chối",
+      "realReason": "Bạn đọc lời nói hoặc hành vi nhỏ thành tín hiệu đang bị đẩy ra",
+      "shortDescription": "Bạn không \"quá nhạy cảm\". Ăng-ten trong lòng với tín hiệu từ chối chỉ được chỉnh cao.",
+      "description": "\"Nói sau\", \"đang bận\", \"không chắc ổn\" — với bạn nghe như \"không muốn cậu\". Lòng đóng nhanh và lần sau khó mở miệng hơn. Sự nhạy với từ chối cũng là một mặt khác của việc trân trọng mối quan hệ.",
+      "keywords": "Bị đẩy ra, Tín hiệu từ chối, Lòng đóng lại, Khó mở miệng, Ăng-ten",
+      "strengths": "Nghiêm túc với mối quan hệ và nhanh bắt được thay đổi nhỏ của đối phương",
+      "reasonDetail": "Dời hẹn, câu \"đang bận\", phản đối ý kiến, hành vi tạo khoảng cách",
+      "frequentSaying": "\"Không phải bắt đầu không thích mình chứ?\"",
+      "changeTips": "Khi đọc thành từ chối, kiểm sự thật: \"Đây thật sự là từ chối — hay chỉ là hoàn cảnh?\"\nHỏi thẳng: \"Câu vừa rồi nghe như từ chối — có phải ý đó không?\"\nXác nhận bằng hành động sau đó của họ (tin nhắn, lời hẹn)",
+      "oneLiner": "Kiểm một lần xem câu nghe như từ chối có thật là từ chối không. Thường cách đọc trong lòng lớn hơn",
+      "shareLine": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? Kết quả: Kiểu nhạy từ chối 🚪 Hình như đọc lời nhỏ thành tín hiệu đẩy ra... đúng bạn luôn. Gửi kết quả cho mình"
+    },
+    {
+      "title": "Người tiếc khi kỳ vọng chưa nói bị lệch, Kiểu lệch kỳ vọng 🎨",
+      "typeName": "Kiểu lệch kỳ vọng",
+      "realReason": "Khoảng cách giữa phản ứng bạn mong và phản ứng thật trở thành vết thương",
+      "shortDescription": "Không phải lời nói làm bạn tổn thương. Khoảng trống khi phản ứng mong đợi không tới mới thành tiếc.",
+      "description": "Kỳ vọng họ sẽ để ý, đứng về mình, chăm trước — chồng chất mà chưa nói. Họ không biết kỳ vọng tồn tại rồi đi qua; bạn bị thương vì \"sao không hiểu\". Đưa kỳ vọng thành lời, nỗi tiếc sẽ nhỏ lại.",
+      "keywords": "Kỳ vọng chưa nói, Tin họ sẽ để ý, Khoảng cách phản ứng, Tiếc nuối",
+      "strengths": "Chuẩn mực rõ về mối quan hệ và mong muốn cho-nhận tình yêu sâu",
+      "reasonDetail": "Khi không được để ý, không được đứng về phía, không được chăm trước",
+      "frequentSaying": "\"Chuyện này cũng phải hiểu chứ?\"",
+      "changeTips": "Khi tiếc, hỏi trước: mình đã nói kỳ vọng này với họ chưa?\nĐổi thành câu yêu cầu: \"Lúc thế này, mình muốn bạn làm vậy\"\nNhắc ba việc họ đã làm trước khi nói điểm còn thiếu",
+      "oneLiner": "Kỳ vọng không nói thì không tới. Đổi thành yêu cầu, tiếc sẽ thành đối thoại",
+      "shareLine": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? Kết quả: Kiểu lệch kỳ vọng 🎨 Hình như không phải lời — mà phản ứng mong đợi không tới... đúng bạn luôn haha thử đi"
+    },
+    {
+      "title": "Người mệt chồng chất chạm ngưỡng, Kiểu mệt tích tụ 🔋",
+      "typeName": "Kiểu mệt tích tụ",
+      "realReason": "Bạn đã kiệt sẵn nên một câu nhỏ thành giọt cuối",
+      "shortDescription": "Bạn không yếu với lời nói. Mệt tích tụ làm cạn dư lượng lòng, và một câu vừa chạm vào đó.",
+      "description": "Câu bình thường cười qua được, sau vài ngày mệt mỏi lại lớn tới mức muốn khóc. Độ lớn phản ứng theo dư lượng lòng còn lại nhiều hơn theo độ lớn của lời. Kiểm trạng thái ngày tổn thương thì phản ứng sẽ khác.",
+      "keywords": "Giọt cuối, Hết dư lượng, Tình trạng, Nước mắt, Ngưỡng",
+      "strengths": "Trách nhiệm cao, làm việc chăm chỉ, sức chịu đựng lớn",
+      "reasonDetail": "Lời nghe vào ngày mệt, mùa bận, hoặc sau nhiều ngày không nghỉ",
+      "frequentSaying": "\"Dạo này mệt quá, chuyện nhỏ cũng thấy nặng\"",
+      "changeTips": "Ngày mệt hãy hoãn chuyện lớn: \"Hôm nay trạng thái kém — mai nói nhé\"\nKhi tổn thương, kiểm trước: hôm nay mình mệt tới mức nào?\nXếp ngủ, ăn, nghỉ vào lịch trước để tạo dư lượng lòng\nNếu mệt và mất động lực kéo dài, ảnh hưởng ý chí, ngủ hoặc ăn, đừng gánh một mình — hãy nói với chuyên gia tư vấn tâm lý hoặc dịch vụ sức khỏe tâm thần địa phương",
+      "oneLiner": "Vết thương lớn theo dư lượng lòng, không theo độ lớn lời nói. Nghỉ trước là tấm khiên nhanh nhất",
+      "shareLine": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? Kết quả: Kiểu mệt tích tụ 🔋 Hình như một câu thành giọt cuối trên mệt chồng... đúng bạn luôn haha bạn kiểu nào?"
+    },
+    {
+      "title": "Người giá trị bản thân rung vì một câu, Kiểu lung lay lòng tự trọng 🪞",
+      "typeName": "Kiểu lung lay lòng tự trọng",
+      "realReason": "Bạn nhận lời của họ như bằng chứng \"mình không đủ\"",
+      "shortDescription": "Bạn không chỉ \"bị lời làm tổn thương\". Bạn đang đọc ra \"mình không đủ\" từ câu đó.",
+      "description": "\"Trông mệt\" thành \"mình kém chăng\", \"không ổn\" thành \"ý kiến mình vô giá trị chăng\", \"nhạy cảm\" thành \"mình có vấn đề chăng\". Bản chất vết thương là chỗ câu đó chạm lòng tự trọng hơn là nội dung. Tách lời họ khỏi giá trị của bạn thì lòng sẽ nhẹ.",
+      "keywords": "Mình không đủ, Giá trị lung lay, Nhảy kết luận, Tự đánh giá, Co lại",
+      "strengths": "Khiêm tốn, biết nhìn lại hành vi mình, tinh tế với người khác",
+      "reasonDetail": "Nhận xét hay chỉ trích nhỏ về ngoại hình, ý kiến, tính cách",
+      "frequentSaying": "\"Phải chăng vì mình không được tốt?\"",
+      "changeTips": "Khi tổn thương, tách: \"Câu này định giá trị mình — hay chỉ nói về một khoảnh khắc?\"\nViết ba điểm mạnh không phụ thuộc lời họ và đọc lại\nVới câu bị kẹt, hỏi thẳng: \"Câu vừa rồi ý là gì?\"\nNếu nghĩ \"mình không đủ\" mạnh không chỉ trong yêu mà cả đời sống, hãy nói với chuyên gia tư vấn tâm lý",
+      "oneLiner": "Một câu không định giá trị bạn. Luyện tách lời và mình sẽ thành tấm khiên cho lòng",
+      "shareLine": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? Kết quả: Kiểu lung lay lòng tự trọng 🪞 Hình như đọc một câu thành bằng chứng mình không đủ... đúng bạn luôn. Thử rồi báo mình"
+    }
+  ]
+}

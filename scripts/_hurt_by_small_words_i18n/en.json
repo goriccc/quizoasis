@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Why Do Casual Words from My Partner Hurt So Much?",
+    "description": "It was just a throwaway line — so why does your heart drop? These 10 scenarios reveal the real reason you get hurt, and how to protect your heart.",
+    "tags": ["Dating Wounds", "Dating Psychology"]
+  },
+  "startMessage": {
+    "line1": "It was just a throwaway line — so why does your heart drop?",
+    "line2": "\"You look tired today,\" \"That's just how you are\" — they meant nothing by it, but the words loop in your head all day. You swallow it alone, scared they'll call you too sensitive.",
+    "line3": "What stings is different for everyone. Maybe an old memory got poked. Maybe it felt like rejection. Maybe an unspoken expectation missed. Maybe fatigue hit its limit. Or maybe your sense of worth wobbled. Your reaction shows your wound point.",
+    "line4": "These 10 scenarios show the real reason you get hurt — and how to protect your heart.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why It Hurts",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Reason It Hurts",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "Another Wound Point Alongside",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "Wound Points",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Protect Your Heart",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+    "startKakao": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+    "startWechat": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+    "startWhatsapp": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+    "startTelegram": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+    "startLine": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing isn't available right now.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "They see you at the meetup spot and say, \"You look a bit tired today.\" You...",
+      "opts": [
+        "Your heart drops — maybe they're not happy to see you",
+        "You put effort into today's date and feel hurt they didn't notice",
+        "You've been drained lately — the line hits like the final blow and you tear up",
+        "You wonder if you look bad and keep checking mirrors"
+      ]
+    },
+    {
+      "q": "They laugh and say, \"That's just how you are.\" You...",
+      "opts": [
+        "It wasn't the warm response you hoped for — your expectation deflates",
+        "You're exhausted body and mind, so the line hits harder and tears threaten",
+        "It sounds like \"you're always lacking,\" and your mood sinks",
+        "A similar line from the past flashes up and those old feelings return"
+      ]
+    },
+    {
+      "q": "While listening, they say \"Oh, okay?\" and check their phone. You...",
+      "opts": [
+        "After a draining day, even this small reaction feels like your limit",
+        "It feels like they lost interest because you're boring — your self-worth dips",
+        "It overlaps with a past moment of being ignored mid-talk and your chest drops",
+        "It feels like a signal that your words don't matter, so you don't want to keep talking"
+      ]
+    },
+    {
+      "q": "They lightly say about your opinion, \"I'm not sure about that.\" You...",
+      "opts": [
+        "It sounds like your opinion has no value, and you shrink",
+        "A memory of being dismissed for speaking up returns and you freeze",
+        "It feels like rejection of your view — your heart door shuts for a second",
+        "You expected them to side with you, and the miss leaves you hurt"
+      ]
+    },
+    {
+      "q": "They say, \"You should just handle that yourself.\" You...",
+      "opts": [
+        "Old times of carrying similar words alone come back and weigh on you",
+        "Even asking for help feels rejected — next time it's harder to speak up",
+        "You thought a partner would look after you first — the gap hurts",
+        "You're already exhausted, so the line makes everything collapse at once"
+      ]
+    },
+    {
+      "q": "They text, \"I'm busy right now — let's talk later.\" You...",
+      "opts": [
+        "Fatigue has stacked for days — the line weakens you enough to cry",
+        "You get that they're busy, but wonder if you're unimportant — your self-worth shakes",
+        "It feels like being pushed aside before you even speak — rejection vibes",
+        "It was important and you expected them to get that — the miss hurts"
+      ]
+    },
+    {
+      "q": "They say, \"You've been a bit sensitive lately.\" You...",
+      "opts": [
+        "You shrink — am I always the problem person?",
+        "Past relationships where you heard \"sensitive\" come back and it hurts",
+        "You expected understanding, but got criticism instead — disappointment hits",
+        "You've been drained already — the line exhausts you further into tears"
+      ]
+    },
+    {
+      "q": "In a group photo they sit somewhere other than next to you. You...",
+      "opts": [
+        "It overlaps with an old scene of being left out and your heart freezes",
+        "It feels like a distance signal — rejection drops your heart",
+        "A full day of fatigue makes even this small thing break you emotionally",
+        "You wonder if you're not someone they'd want beside them — self-worth dips"
+      ]
+    },
+    {
+      "q": "They say, \"Just understand me on this.\" You...",
+      "opts": [
+        "Your feelings always feel pushed back — your heart closes before you can ask",
+        "You expected a partner to read your heart first — the miss hurts",
+        "You feel small — are my emotions not worth understanding?",
+        "Memories of always being the one who understands flood back and your chest aches"
+      ]
+    },
+    {
+      "q": "You're about to say \"That comment just hurt me.\" What's closest to your gut?",
+      "opts": [
+        "You worry about their reaction first — scared you'll fall short of expectations",
+        "You feel too drained to speak — they'll probably brush it off anyway",
+        "A past time you spoke up and got hurt worse makes you hesitate",
+        "Fear of rejection stops the words in your throat"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone whose old memories overlap today's words, the Past-Trigger Type 🕰️",
+      "typeName": "Past-Trigger Type",
+      "realReason": "Today's line pokes an old painful scene and those feelings rise again",
+      "shortDescription": "You're not \"too sensitive.\" Today's line presses an old memory button, and those feelings rise with it.",
+      "description": "They meant nothing — but your mind snaps back to a similar past scene. The old emotion reacts louder than today's words, so your response feels bigger than the moment. Noticing that link shrinks the wound.",
+      "keywords": "Memory button, Similar scenes, Feelings from then, Past-present overlap, Bigger reactions",
+      "strengths": "Deep memory, strong learning from experience, and a fine emotional texture",
+      "reasonDetail": "Phrases or situations similar to what you heard before",
+      "frequentSaying": "\"I've heard something like this before...\"",
+      "changeTips": "When your heart drops, ask first: \"Is this about today's words — or an old memory?\"\nTell them: \"That line poked an old memory\" and share the reason\nWrite two lines on how past and present differ to separate now from then\nIf old memories keep rising and strain daily life or the relationship, safely sort them with a counseling professional",
+      "oneLiner": "Separate today's words from then's memory, and your heart returns to real-world size",
+      "shareLine": "Why do casual words from my partner hurt so much? Result: Past-Trigger Type 🕰️ Apparently today's line presses an old memory button... this is so you lol try it — what'd you get?"
+    },
+    {
+      "title": "Someone who freezes when it feels like rejection, the Rejection-Sensitive Type 🚪",
+      "typeName": "Rejection-Sensitive Type",
+      "realReason": "You read small words or actions as a signal they're pushing you away",
+      "shortDescription": "You're not \"too sensitive.\" Your heart's antenna for rejection signals is just set high.",
+      "description": "\"Let's talk later,\" \"I'm busy,\" \"not sure about that\" land as \"I don't want you.\" Your heart shuts fast and speaking up next time gets harder. That sensitivity is also another face of valuing the bond.",
+      "keywords": "Being pushed aside, Rejection signals, Heart shutting, Hard to speak up, Antenna",
+      "strengths": "You take the bond seriously and catch small shifts in them quickly",
+      "reasonDetail": "Rescheduled plans, \"I'm busy,\" disagreement with your view, distancing behavior",
+      "frequentSaying": "\"You didn't start disliking me, right?\"",
+      "changeTips": "When it reads as rejection, check the facts: \"Is this really rejection — or just a circumstance?\"\nAsk directly: \"That just sounded like rejection — is that what you meant?\"\nConfirm with what they do after (texts, plans) following a rejection-sounding line",
+      "oneLiner": "Check once whether a rejection-sounding line really was rejection. Often the heart's reading was bigger",
+      "shareLine": "Why do casual words from my partner hurt so much? Result: Rejection-Sensitive Type 🚪 Apparently I read small comments as push-away signals... this is so you. Send me your result"
+    },
+    {
+      "title": "Someone hurt when unspoken expectations miss, the Expectation-Gap Type 🎨",
+      "typeName": "Expectation-Gap Type",
+      "realReason": "The gap between the reaction you expected and what you got becomes the wound",
+      "shortDescription": "The words weren't the wound. The missing reaction you expected became the hurt.",
+      "description": "Expectations that they'll notice, take your side, or care for you first stack up unspoken. They don't know the expectation exists and move on — you get wounded with \"why don't they get it?\" Putting expectations into words shrinks the disappointment.",
+      "keywords": "Unspoken expectations, Faith they'll notice, Reaction gaps, Feeling let down",
+      "strengths": "Clear standards for relationships and a big desire to give and receive love deeply",
+      "reasonDetail": "When they don't notice, don't take your side, don't care for you first",
+      "frequentSaying": "\"Shouldn't they get at least this much?\"",
+      "changeTips": "When hurt, check first: have I actually told them this expectation?\nTurn it into a request: \"When this happens, I'd love it if you did this\"\nName three things they did for you before sharing what's missing",
+      "oneLiner": "Unspoken expectations don't arrive. Turn them into requests and hurt becomes conversation",
+      "shareLine": "Why do casual words from my partner hurt so much? Result: Expectation-Gap Type 🎨 Apparently it's not the words — it's the missing reaction I expected... this is so you lol try it"
+    },
+    {
+      "title": "Someone whose stacked fatigue hit its limit, the Fatigue-Stack Type 🔋",
+      "typeName": "Fatigue-Stack Type",
+      "realReason": "You're already drained, so a small line becomes the last drop",
+      "shortDescription": "You're not weak to words. Fatigue emptied your emotional bandwidth, and one line landed there.",
+      "description": "A line you'd normally laugh off can feel tear-level huge after days of exhaustion. Reaction size tracks leftover emotional capacity more than word size. Check your condition on hurt days and the reaction shifts.",
+      "keywords": "Last drop, No bandwidth, Condition, Tears, Limit",
+      "strengths": "Strong responsibility, steady follow-through, and high endurance",
+      "reasonDetail": "Words heard on exhausted days, busy seasons, or after days without rest",
+      "frequentSaying": "\"I'm so drained lately that even little things feel hard\"",
+      "changeTips": "On drained days, pause big talks: \"My condition's off today — let's talk tomorrow\"\nWhen hurt, check first: how exhausted was I today?\nPut sleep, meals, and rest into the schedule first to rebuild bandwidth\nIf fatigue and low drive linger and affect motivation, sleep, or eating, don't carry it alone — talk with a counseling professional or local mental health services",
+      "oneLiner": "Wounds grow with your leftover bandwidth, not the word's size. Resting first is the fastest shield",
+      "shareLine": "Why do casual words from my partner hurt so much? Result: Fatigue-Stack Type 🔋 Apparently one line became the last drop on stacked fatigue... this is so you lol What's your type?"
+    },
+    {
+      "title": "Someone whose worth shakes from one line, the Self-Worth-Shake Type 🪞",
+      "typeName": "Self-Worth-Shake Type",
+      "realReason": "You take their words as proof that you're not enough",
+      "shortDescription": "You're not just \"hurt by words.\" You're reading \"I'm not enough\" out of them.",
+      "description": "\"You look tired\" becomes \"Do I look bad?\" \"Not sure about that\" becomes \"Is my opinion worthless?\" \"Sensitive\" becomes \"Am I the problem?\" The wound is where the line touches your self-worth more than the content. Separate their words from your value and your heart lightens.",
+      "keywords": "I'm not enough, Shaking worth, Jumping to conclusions, Self-judgment, Shrinking",
+      "strengths": "Humble, reflective about your own actions, and thoughtful toward others",
+      "reasonDetail": "Casual evaluations or comments about looks, opinions, or personality",
+      "frequentSaying": "\"Maybe it's because I'm just not that great?\"",
+      "changeTips": "When hurt, separate: \"Did this define my worth — or comment on one moment?\"\nWrite three strengths independent of their words and reread them\nFor lines that stick, ask directly: \"What did you mean by that just now?\"\nIf \"I'm not enough\" thoughts run strong across daily life, not just dating, talk with a counseling professional",
+      "oneLiner": "One line doesn't define your worth. Practicing separation between words and you becomes your heart's shield",
+      "shareLine": "Why do casual words from my partner hurt so much? Result: Self-Worth-Shake Type 🪞 Apparently I read one line as proof I'm not enough... this is so you. Try it and tell me"
+    }
+  ]
+}

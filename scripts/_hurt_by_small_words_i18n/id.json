@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Kenapa Sakit Hati karena Omongan Sepele Pacar?",
+    "description": "Cuma satu kalimat tanpa makna besar — kenapa hati langsung turun? Lewat 10 situasi, temukan alasan sejati kenapa kamu terluka, dan cara menjaga hatimu.",
+    "tags": ["Luka Pacaran", "Psikologi Pacaran"]
+  },
+  "startMessage": {
+    "line1": "Cuma satu kalimat tanpa makna besar — kenapa hati langsung turun?",
+    "line2": "\"Kamu kelihatan capek hari ini\", \"Ya emang kamu gitu\" — mereka tidak bermaksud apa-apa, tapi kata itu berputar seharian. Takut dibilang sensitif, jadi kamu telan sendiri.",
+    "line3": "Titik yang menyakitkan beda-beda. Bisa memori lama yang tersentuh. Bisa terasa seperti penolakan. Bisa ekspektasi yang meleset. Bisa kelelahan yang menumpuk sampai batas. Atau rasa berharga yang goyah. Reaksimu menunjukkan titik lukamu.",
+    "line4": "10 situasi ini menunjukkan alasan sejati kenapa kamu terluka — dan cara menjaga hatimu.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Iklan",
+    "goToTest": "Ikuti Tes",
+    "startTest": "Cari Tahu Kenapa Sakit Hati",
+    "linkCopy": "Salin Tautan",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Tes Serupa Lainnya",
+    "realReason": "Alasan Sejati Kenapa Sakit Hati",
+    "keywords": "Kata Kunci",
+    "scoreTitle": "Skor per Tipe",
+    "scoreUnit": "poin",
+    "hiddenReason": "Titik Luka yang Juga Ada",
+    "strengths": "Kekuatan Tipe Ini",
+    "reasonDetail": "Titik Luka",
+    "frequentSaying": "Yang Sering Dikatakan Tipe Ini",
+    "changeTips": "Cara Menjaga Hatimu",
+    "oneLiner": "Ringkasan Satu Kalimat",
+    "shareResult": "Bagikan Hasil Saya",
+    "popularBadge": "Populer",
+    "retake": "Ulangi Tes",
+    "otherTests": "Lihat Tes Lain"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+    "startKakao": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+    "startWechat": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+    "startWhatsapp": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+    "startTelegram": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+    "startLine": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!"
+  },
+  "alerts": {
+    "linkCopied": "Tautan disalin!",
+    "resultCopied": "Hasil disalin ke clipboard!",
+    "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+    "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+    "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Tes Serupa yang Cocok Buatmu",
+    "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+  },
+  "questions": [
+    {
+      "q": "Mereka melihatmu di tempat janji lalu bilang, \"Kamu kelihatan capek hari ini.\" Kamu...",
+      "opts": [
+        "Hati langsung turun — mungkin mereka tidak senang ketemu kamu",
+        "Sudah berhias untuk kencan, sedih karena tidak diperhatikan",
+        "Belakangan sudah lelah terus — kalimat itu seperti pukulan terakhir dan kamu hampir menangis",
+        "Takut kelihatan jelek, terus saja ingin cek cermin"
+      ]
+    },
+    {
+      "q": "Mereka tertawa dan bilang, \"Ya emang kamu gitu.\" Kamu...",
+      "opts": [
+        "Bukan respons hangat yang kamu harapkan — ekspektasi patah",
+        "Seharian tubuh dan hati capek, jadi kalimat ini terasa lebih besar sampai ingin menangis",
+        "Kedengarannya seperti \"kamu selalu kurang,\" dan mood turun",
+        "Ingatan mendengar kalimat mirip dulu muncul, dan perasaan lama ikut naik"
+      ]
+    },
+    {
+      "q": "Sambil mendengarkan, mereka bilang \"Oh, gitu?\" lalu cek HP. Kamu...",
+      "opts": [
+        "Akhir hari yang melelahkan, bahkan reaksi kecil ini terasa seperti batasmu",
+        "Seolah ceritamu membosankan sehingga perhatian mereka hilang — harga diri turun",
+        "Tumpang tindih dengan momen dulu diabaikan di tengah bicara, dada berdebar jelek",
+        "Seperti sinyal kata-katamu tidak penting, jadi tidak ingin lanjut bicara"
+      ]
+    },
+    {
+      "q": "Mereka bilang ringan tentang pendapatmu, \"Kayaknya kurang deh.\" Kamu...",
+      "opts": [
+        "Kedengarannya pendapatmu tidak berharga, dan kamu menyusut",
+        "Ingatan pernah bicara lalu diabaikan muncul, mulut terkunci",
+        "Terasa seperti pendapat ditolak — pintu hati menutup sejenak",
+        "Berharap mereka berpihak, tapi meleset jadi menyakitkan"
+      ]
+    },
+    {
+      "q": "Mereka bilang, \"Segitu mah kerjain sendiri aja.\" Kamu...",
+      "opts": [
+        "Waktu dulu mendengar kalimat mirip sambil menanggung sendiri muncul, hati berat",
+        "Bahkan minta bantuan terasa ditolak — lain kali lebih sulit membuka mulut",
+        "Kira pacar akan menjaga dulu — beda ekspektasi jadi menyakitkan",
+        "Sudah kelelahan, jadi kalimat itu membuat hati ambruk sekaligus"
+      ]
+    },
+    {
+      "q": "Mereka chat, \"Aku lagi sibuk, nanti aja ngobrolnya.\" Kamu...",
+      "opts": [
+        "Kelelahan menumpuk beberapa hari — kalimat ini melemahkan sampai ingin menangis",
+        "Paham mereka sibuk, tapi merasa tidak penting — harga diri goyah",
+        "Seolah didorong sebelum sempat bicara — rasa ditolak",
+        "Penting, dan kamu berharap mereka paham — ternyata tidak, jadi sedih"
+      ]
+    },
+    {
+      "q": "Mereka bilang, \"Akhir-akhir ini kamu agak sensitif ya.\" Kamu...",
+      "opts": [
+        "Merasa kecil — apakah aku selalu orang bermasalah?",
+        "Ingatan hubungan lama juga dibilang sensitif muncul, hati sakit",
+        "Berharap dipahami, malah dapat kritik — kecewa",
+        "Sudah lelah belakangan — kalimat itu membuat semakin lelah sampai menangis"
+      ]
+    },
+    {
+      "q": "Di foto grup mereka duduk di tempat lain, bukan di sampingmu. Kamu...",
+      "opts": [
+        "Tumpang tindih dengan adegan dulu merasa tersisih, hati membeku",
+        "Seperti sinyal menjauh — rasa ditolak membuat hati turun",
+        "Kelelahan seharian membuat hal kecil ini pun meruntuhkan emosi",
+        "Apakah aku bukan orang yang ingin diduduki di samping — harga diri turun"
+      ]
+    },
+    {
+      "q": "Mereka bilang, \"Kamu aja yang ngertiin.\" Kamu...",
+      "opts": [
+        "Perasaanmu selalu terdorong ke belakang — hati menutup sebelum sempat meminta",
+        "Berharap pacar membaca hatimu dulu — meleset jadi menyakitkan",
+        "Apakah emosiku tidak cukup berharga untuk dipahami — merasa kecil",
+        "Ingatan selalu jadi pihak yang mengerti muncul, dada sesak"
+      ]
+    },
+    {
+      "q": "Hampir bilang \"Omonganmu barusan menyakitiku.\" Yang paling dekat dengan hatimu?",
+      "opts": [
+        "Takut terlihat gagal memenuhi ekspektasi — reaksi mereka dikhawatirkan dulu",
+        "Nanti juga disepelekan — tenaga untuk bicara pun tidak ada",
+        "Ingatan dulu bicara malah lebih sakit membuat ragu",
+        "Takut ditolak, jadi kata-kata berhenti di tenggorokan"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang memori lamanya tumpang tindih dengan kata hari ini, Tipe Picu Masa Lalu 🕰️",
+      "typeName": "Tipe Picu Masa Lalu",
+      "realReason": "Satu kalimat hari ini menyentuh adegan lama yang sakit, dan perasaan itu naik lagi",
+      "shortDescription": "Kamu tidak \"terlalu sensitif.\" Kalimat hari ini menekan tombol memori lama, dan perasaan saat itu ikut naik.",
+      "description": "Mereka tidak bermaksud apa-apa — tapi hatimu meloncat ke adegan mirip di masa lalu. Emosi dulu bereaksi lebih besar dari kata hari ini, jadi respons terasa lebih besar dari situasinya. Menyadari tautan itu mengecilkan lukanya.",
+      "keywords": "Tombol memori, Adegan mirip, Perasaan saat itu, Tumpang tindih lalu-sekarang, Reaksi membesar",
+      "strengths": "Memori dalam, kuat belajar dari pengalaman, dan tekstur emosi yang halus",
+      "reasonDetail": "Ungkapan atau situasi mirip yang pernah kamu dengar",
+      "frequentSaying": "\"Dulu juga pernah dengar yang kayak gini...\"",
+      "changeTips": "Saat hati turun, tanya dulu: \"Ini karena kata hari ini — atau memori lama?\"\nKatakan ke mereka: \"Itu menyentuh memori lama\" dan bagikan alasannya\nTulis dua baris beda adegan dulu dan sekarang untuk memisahkan masa kini\nJika memori lama sering naik dan memberatkan hidup atau hubungan, susun dengan aman bersama profesional konseling",
+      "oneLiner": "Pisahkan kata hari ini dari memori saat itu, dan ukuran hati kembali ke ukuran nyata",
+      "shareLine": "Kenapa sakit hati karena omongan sepele pacar? Hasil: Tipe Picu Masa Lalu 🕰️ Katanya kalimat hari ini tekan tombol memori lama... ini banget kamu wkwk coba — dapat apa?"
+    },
+    {
+      "title": "Orang yang membeku saat terasa seperti penolakan, Tipe Sensitif Penolakan 🚪",
+      "typeName": "Tipe Sensitif Penolakan",
+      "realReason": "Kamu membaca kata atau tindakan kecil sebagai sinyal mereka mendorongmu pergi",
+      "shortDescription": "Kamu tidak \"terlalu sensitif.\" Antena hati untuk sinyal penolakan memang disetel tinggi.",
+      "description": "\"Nanti aja,\" \"lagi sibuk,\" \"kurang deh\" terdengar seperti \"aku tidak mau kamu.\" Hati menutup cepat dan lain kali semakin sulit membuka mulut. Kepekaan pada penolakan juga wajah lain dari menghargai hubungan.",
+      "keywords": "Didorong, Sinyal penolakan, Hati menutup, Sulit bicara, Antena",
+      "strengths": "Serius pada hubungan dan cepat menangkap perubahan kecil pada mereka",
+      "reasonDetail": "Janji ditunda, \"lagi sibuk,\" menolak pendapat, perilaku menjauh",
+      "frequentSaying": "\"Kamu nggak mulai benci aku kan?\"",
+      "changeTips": "Saat terbaca penolakan, cek fakta: \"Ini benar penolakan — atau cuma keadaan?\"\nTanya langsung: \"Barusan kedengarannya kayak penolakan — emang itu maksudnya?\"\nPastikan lewat tindakan mereka setelahnya (chat, janji)",
+      "oneLiner": "Cek sekali apakah kalimat yang terdengar seperti penolakan memang penolakan. Sering bacaan hati yang lebih besar",
+      "shareLine": "Kenapa sakit hati karena omongan sepele pacar? Hasil: Tipe Sensitif Penolakan 🚪 Katanya aku baca omongan kecil sebagai sinyal dorong pergi... ini banget kamu. Kirim hasilmu"
+    },
+    {
+      "title": "Orang yang sedih saat ekspektasi tak terucap meleset, Tipe Celah Ekspektasi 🎨",
+      "typeName": "Tipe Celah Ekspektasi",
+      "realReason": "Jarak antara reaksi yang kamu harapkan dan yang kamu dapat jadi lukanya",
+      "shortDescription": "Bukan kata-katanya yang melukai. Celah karena reaksi yang diharapkan tidak datang jadi rasa sakit.",
+      "description": "Ekspektasi mereka akan memperhatikan, berpihak, atau menjaga dulu menumpuk tanpa diucapkan. Mereka tidak tahu ekspektasi itu ada lalu lewat — kamu terluka dengan \"kenapa tidak paham.\" Mengubah ekspektasi jadi kata mengecilkan rasa sakit.",
+      "keywords": "Ekspektasi tak terucap, Keyakinan akan diperhatikan, Celah reaksi, Rasa kecewa",
+      "strengths": "Standar hubungan jelas dan keinginan besar memberi-menerima cinta secara dalam",
+      "reasonDetail": "Saat tidak diperhatikan, tidak dibela, tidak dijaga lebih dulu",
+      "frequentSaying": "\"Segitu harusnya paham dong?\"",
+      "changeTips": "Saat sedih, cek dulu: sudahkah aku bilang ekspektasi ini ke mereka?\nUbah jadi kalimat permintaan: \"Kalau begini, aku senang kalau kamu lakukan itu\"\nSebut tiga hal yang mereka lakukan dulu sebelum bicara yang kurang",
+      "oneLiner": "Ekspektasi yang tidak diucapkan tidak sampai. Ubah jadi permintaan, rasa sakit jadi percakapan",
+      "shareLine": "Kenapa sakit hati karena omongan sepele pacar? Hasil: Tipe Celah Ekspektasi 🎨 Katanya bukan kata — tapi reaksi yang diharapkan tidak datang... ini banget kamu wkwk coba juga"
+    },
+    {
+      "title": "Orang yang kelelahan menumpuk sampai batas, Tipe Tumpukan Lelah 🔋",
+      "typeName": "Tipe Tumpukan Lelah",
+      "realReason": "Kamu sudah lelah, jadi satu kalimat kecil jadi tetes terakhir",
+      "shortDescription": "Kamu tidak lemah pada kata. Kelelahan menumpuk mengosongkan ruang hati, dan satu kalimat mendarat di situ.",
+      "description": "Kalimat yang biasanya bisa ditertawakan terasa sebesar air mata setelah hari-hari kelelahan. Besarnya reaksi mengikuti sisa ruang hati lebih dari besarnya kata. Cek kondisi di hari sakit hati, dan reaksi akan berubah.",
+      "keywords": "Tetes terakhir, Tanpa ruang, Kondisi, Air mata, Batas",
+      "strengths": "Tanggung jawab kuat, mengerjakan dengan tekun, daya tahan tinggi",
+      "reasonDetail": "Kata yang didengar di hari lelah, musim sibuk, atau setelah berhari-hari tanpa istirahat",
+      "frequentSaying": "\"Akhir-akhir ini capek banget, yang sepele aja terasa berat\"",
+      "changeTips": "Di hari lelah, tunda obrolan penting: \"Kondisiku kurang bagus hari ini — besok yuk\"\nSaat sakit hati, cek dulu: seberapa lelah aku hari ini?\nMasukkan tidur, makan, dan istirahat ke jadwal lebih dulu untuk membangun ruang hati\nJika kelelahan dan kehilangan semangat lama berlanjut hingga memengaruhi motivasi, tidur, atau makan, jangan tanggung sendiri — bicara dengan profesional konseling atau layanan kesehatan jiwa setempat",
+      "oneLiner": "Luka tumbuh seukuran sisa ruang hatimu, bukan seukuran kata. Istirahat dulu adalah perisai tercepat",
+      "shareLine": "Kenapa sakit hati karena omongan sepele pacar? Hasil: Tipe Tumpukan Lelah 🔋 Katanya satu kalimat jadi tetes terakhir di atas lelah yang menumpuk... ini banget kamu wkwk tipemu apa?"
+    },
+    {
+      "title": "Orang yang rasa berharganya goyah karena satu kalimat, Tipe Goyah Harga Diri 🪞",
+      "typeName": "Tipe Goyah Harga Diri",
+      "realReason": "Kamu menerima kata mereka sebagai bukti \"aku kurang\"",
+      "shortDescription": "Kamu tidak sekadar \"terluka oleh kata.\" Kamu membaca \"aku kurang\" dari kalimat itu.",
+      "description": "\"Kelihatan capek\" jadi \"apakah aku jelek,\" \"kurang deh\" jadi \"apakah pendapatku tak berharga,\" \"sensitif\" jadi \"apakah aku bermasalah.\" Inti lukanya adalah titik di mana kalimat itu menyentuh harga diri, lebih dari isinya. Pisahkan kata mereka dari nilaimu, dan hati jadi lebih ringan.",
+      "keywords": "Aku kurang, Nilai goyah, Lompat kesimpulan, Penilaian diri, Menyusut",
+      "strengths": "Rendah hati, mampu meninjau tindakannya sendiri, dan peka pada orang lain",
+      "reasonDetail": "Evaluasi atau komentar sepele tentang penampilan, pendapat, atau kepribadian",
+      "frequentSaying": "\"Jangan-jangan karena aku memang kurang ya?\"",
+      "changeTips": "Saat sakit hati, pisahkan: \"Apakah ini mendefinisikan nilaiku — atau hanya komentar satu momen?\"\nTulis tiga kelebihanmu independen dari kata mereka dan baca ulang\nUntuk kalimat yang mengganjal, tanya langsung: \"Barusan maksudnya apa?\"\nJika pikiran \"aku kurang\" kuat tidak hanya di pacaran tapi di hidup sehari-hari, bicara dengan profesional konseling",
+      "oneLiner": "Satu kalimat tidak menentukan nilaimu. Latihan memisahkan kata dan diri menjadi perisai hati",
+      "shareLine": "Kenapa sakit hati karena omongan sepele pacar? Hasil: Tipe Goyah Harga Diri 🪞 Katanya aku baca satu kalimat sebagai bukti aku kurang... ini banget kamu. Coba terus kabari"
+    }
+  ]
+}

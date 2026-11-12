@@ -1,0 +1,63 @@
+{
+  "phase3HurtBySmallWordsTest": {
+    "startMessage": {
+      "line1": "Cuma satu kalimat tanpa makna besar — kenapa hati langsung turun?",
+      "line2": "\"Kamu kelihatan capek hari ini\", \"Ya emang kamu gitu\" — mereka tidak bermaksud apa-apa, tapi kata itu berputar seharian. Takut dibilang sensitif, jadi kamu telan sendiri.",
+      "line3": "Titik yang menyakitkan beda-beda. Bisa memori lama yang tersentuh. Bisa terasa seperti penolakan. Bisa ekspektasi yang meleset. Bisa kelelahan yang menumpuk sampai batas. Atau rasa berharga yang goyah. Reaksimu menunjukkan titik lukamu.",
+      "line4": "10 situasi ini menunjukkan alasan sejati kenapa kamu terluka — dan cara menjaga hatimu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti Tes",
+      "startTest": "Cari Tahu Kenapa Sakit Hati",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "realReason": "Alasan Sejati Kenapa Sakit Hati",
+      "keywords": "Kata Kunci",
+      "scoreTitle": "Skor per Tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Titik Luka yang Juga Ada",
+      "strengths": "Kekuatan Tipe Ini",
+      "reasonDetail": "Titik Luka",
+      "frequentSaying": "Yang Sering Dikatakan Tipe Ini",
+      "changeTips": "Cara Menjaga Hatimu",
+      "oneLiner": "Ringkasan Satu Kalimat",
+      "shareResult": "Bagikan Hasil Saya",
+      "popularBadge": "Populer",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+      "startKakao": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+      "startWechat": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+      "startWhatsapp": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+      "startTelegram": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!",
+      "startLine": "Kenapa Sakit Hati karena Omongan Sepele Pacar? 🕰️ Alasan sejati kenapa terasa sakit — coba juga yuk!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa yang Cocok Buatmu",
+      "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+    }
+  }
+}

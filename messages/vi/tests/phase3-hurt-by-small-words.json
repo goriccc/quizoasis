@@ -1,0 +1,63 @@
+{
+  "phase3HurtBySmallWordsTest": {
+    "startMessage": {
+      "line1": "Chỉ là một câu chẳng có ý gì — sao tim lại thắt lại?",
+      "line2": "\"Hôm nay trông mệt quá\", \"Cậu lúc nào cũng vậy mà\" — họ chẳng nghĩ gì, nhưng câu đó cứ xoay trong đầu cả ngày. Sợ bị bảo nhạy cảm nên nuốt một mình.",
+      "line3": "Điểm đau khác nhau ở mỗi người. Có thể ký ức cũ bị chạm. Có thể nghe như bị từ chối. Có thể kỳ vọng lệch. Có thể mệt tích tụ tới hạn. Hoặc giá trị bản thân bị lung lay. Phản ứng của bạn lộ điểm thương của bạn.",
+      "line4": "10 tình huống sẽ chỉ ra lý do thật sự bạn tổn thương — và cách giữ lấy trái tim.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm hiểu lý do tổn thương",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật sự khiến bạn tổn thương",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Điểm thương đi kèm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Điểm thương",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách giữ lấy trái tim",
+      "oneLiner": "Nhận xét một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+      "startKakao": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+      "startWechat": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+      "startWhatsapp": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+      "startTelegram": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!",
+      "startLine": "Tại sao lại tổn thương vì lời nói vụn vặt của người yêu? 🕰️ Lý do thật sự — bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

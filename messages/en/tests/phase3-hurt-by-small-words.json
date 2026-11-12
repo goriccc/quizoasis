@@ -1,0 +1,63 @@
+{
+  "phase3HurtBySmallWordsTest": {
+    "startMessage": {
+      "line1": "It was just a throwaway line — so why does your heart drop?",
+      "line2": "\"You look tired today,\" \"That's just how you are\" — they meant nothing by it, but the words loop in your head all day. You swallow it alone, scared they'll call you too sensitive.",
+      "line3": "What stings is different for everyone. Maybe an old memory got poked. Maybe it felt like rejection. Maybe an unspoken expectation missed. Maybe fatigue hit its limit. Or maybe your sense of worth wobbled. Your reaction shows your wound point.",
+      "line4": "These 10 scenarios show the real reason you get hurt — and how to protect your heart.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why It Hurts",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Reason It Hurts",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Another Wound Point Alongside",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "Wound Points",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Protect Your Heart",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+      "startKakao": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+      "startWechat": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+      "startWhatsapp": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+      "startTelegram": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!",
+      "startLine": "Why Do Casual Words from My Partner Hurt So Much? 🕰️ Find the real reason it stings — try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}
