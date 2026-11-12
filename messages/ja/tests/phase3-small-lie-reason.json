@@ -1,0 +1,63 @@
+{
+  "phase3SmallLieReasonTest": {
+    "startMessage": {
+      "line1": "言わなくてもいいのに、なぜついごまかしちゃうんだろう？",
+      "line2": "「もう家にいるよ」と言ったのに実はまだ外で、「別に大丈夫」と言ったのに本当は気になっていました。大きな問題じゃないのに、言ったあと心のどこかがモヤモヤして、バレないか気になったりもします。",
+      "line3": "小さな嘘の理由は人それぞれ。喧嘩したくないのか、体面を守りたいのか、心配させたくないのか、考える前に口が先なのか、期待に合わせたいのか。理由が分かると、ごまかしなくてもいいやり方が見えてきます。",
+      "line4": "10の場面で、小さな嘘をついてしまう本当の理由と、正直になれる方法をお伝えします。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "嘘をつく理由を知る",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "realReason": "小さな嘘の本当の理由",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenReason": "一緒にある理由",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "嘘が出てくる瞬間",
+      "frequentSaying": "このタイプがよく言うこと",
+      "changeTips": "正直になる方法",
+      "oneLiner": "ひとことまとめ",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "retake": "もう一度やる",
+      "otherTests": "他のテストを見る"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "なぜ恋人に小さな嘘をついてしまうの？🛡️ 小さな嘘の裏にある本当の理由、あなたもやってみて！",
+      "startKakao": "なぜ恋人に小さな嘘をついてしまうの？🛡️ 小さな嘘の裏にある本当の理由、あなたもやってみて！",
+      "startWechat": "なぜ恋人に小さな嘘をついてしまうの？🛡️ 小さな嘘の裏にある本当の理由、あなたもやってみて！",
+      "startWhatsapp": "なぜ恋人に小さな嘘をついてしまうの？🛡️ 小さな嘘の裏にある本当の理由、あなたもやってみて！",
+      "startTelegram": "なぜ恋人に小さな嘘をついてしまうの？🛡️ 小さな嘘の裏にある本当の理由、あなたもやってみて！",
+      "startLine": "なぜ恋人に小さな嘘をついてしまうの？🛡️ 小さな嘘の裏にある本当の理由、あなたもやってみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。少ししてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
+  }
+}

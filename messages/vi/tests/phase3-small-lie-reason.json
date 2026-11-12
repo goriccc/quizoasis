@@ -1,0 +1,63 @@
+{
+  "phase3SmallLieReasonTest": {
+    "startMessage": {
+      "line1": "Chẳng cần nói vậy mà sao vẫn hay viện cớ?",
+      "line2": "Bạn nói \"anh/em về rồi\" trong khi vẫn còn ở ngoài. Nói \"không sao\" nhưng thật ra vẫn để bụng. Không phải chuyện lớn — nhưng nói xong lòng cứ khó chịu, lại sợ bị phát hiện.",
+      "line3": "Lời nói dối nhỏ đến từ nhiều lý do khác nhau. Có thể vì sợ cãi. Có thể vì muốn giữ thể diện. Có thể vì không muốn đối phương lo. Có thể miệng chạy trước suy nghĩ. Hoặc vì muốn khớp kỳ vọng của họ. Biết lý do rồi mới thấy cách không cần viện nữa.",
+      "line4": "10 tình huống sẽ chỉ ra lý do thật sự bạn nói dối nhỏ — và cách thành thật hơn.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm hiểu lý do nói dối",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật sự đằng sau lời nói dối nhỏ",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do đi kèm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Khoảnh khắc lời nói dối xuất hiện",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách thành thật hơn",
+      "oneLiner": "Nhận xét một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+      "startKakao": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+      "startWechat": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+      "startWhatsapp": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+      "startTelegram": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+      "startLine": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

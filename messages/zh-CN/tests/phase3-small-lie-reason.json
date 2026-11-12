@@ -1,0 +1,63 @@
+{
+  "phase3SmallLieReasonTest": {
+    "startMessage": {
+      "line1": "明明不用说，为什么还是会随口圆过去？",
+      "line2": "你说「我到家了」，其实还在外面；说「没事」，其实心里在意。不算大事，可说完后心里总有点别扭，还怕被发现。",
+      "line3": "小谎背后的理由因人而异。可能是不想吵，可能是要面子，可能是不想让对方担心，可能是嘴比脑子快，也可能是想迎合对方的期待。弄清原因，就能看到不必再圆的方法。",
+      "line4": "用10个情境，告诉你为什么会说小谎，以及怎样变得更坦诚。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "广告",
+      "goToTest": "去做测试",
+      "startTest": "看看说谎的原因",
+      "linkCopy": "复制链接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "其他相似测试",
+      "realReason": "小谎背后的真正原因",
+      "keywords": "关键词",
+      "scoreTitle": "各类型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "同时存在的原因",
+      "strengths": "这个类型的优点",
+      "reasonDetail": "说谎出现的瞬间",
+      "frequentSaying": "这个类型常说的话",
+      "changeTips": "变得更坦诚的方法",
+      "oneLiner": "一句话点评",
+      "shareResult": "分享我的结果",
+      "popularBadge": "热门",
+      "retake": "再测一次",
+      "otherTests": "看看其他测试"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "为什么总对恋人说些无关紧要的小谎？🛡️ 小谎背后的真正原因，你也来测测！",
+      "startKakao": "为什么总对恋人说些无关紧要的小谎？🛡️ 小谎背后的真正原因，你也来测测！",
+      "startWechat": "为什么总对恋人说些无关紧要的小谎？🛡️ 小谎背后的真正原因，你也来测测！",
+      "startWhatsapp": "为什么总对恋人说些无关紧要的小谎？🛡️ 小谎背后的真正原因，你也来测测！",
+      "startTelegram": "为什么总对恋人说些无关紧要的小谎？🛡️ 小谎背后的真正原因，你也来测测！",
+      "startLine": "为什么总对恋人说些无关紧要的小谎？🛡️ 小谎背后的真正原因，你也来测测！"
+    },
+    "alerts": {
+      "linkCopied": "链接已复制！",
+      "resultCopied": "结果已复制到剪贴板！",
+      "shareFailed": "暂时无法使用分享功能。",
+      "wechatCopy": "链接已复制！请到微信粘贴分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，请稍后再试。",
+      "kakaoError": "分享到 KakaoTalk 时出错了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似测试推荐 Top5",
+      "popularTestsTop5": "🔥 热门测试推荐 Top5"
+    }
+  }
+}

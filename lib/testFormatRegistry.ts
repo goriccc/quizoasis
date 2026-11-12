@@ -236,6 +236,7 @@ export const SLUG_FORMAT_REGISTRY: Record<string, TestFormat> = {
   'phase3-always-the-weaker-in-love': 'scenario_4',
   'phase3-contact-obsession-reason': 'scenario_4',
   'phase3-love-eyeing-reason': 'scenario_4',
+  'phase3-small-lie-reason': 'scenario_4',
   'phase3-face-first-impression': 'face',
   'phase3-face-animal-type': 'face',
   'phase3-face-profile-point': 'face',

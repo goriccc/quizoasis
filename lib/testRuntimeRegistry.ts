@@ -536,6 +536,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3LoveEyeingReasonTestClient'),
   },
+
+  'phase3-small-lie-reason': {
+    slug: 'phase3-small-lie-reason',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_SMALL_LIE_REASON_META } = await import('./phase3SmallLieReasonData');
+      return {
+        title: PHASE3_SMALL_LIE_REASON_META.title,
+        description: PHASE3_SMALL_LIE_REASON_META.description,
+        tags: PHASE3_SMALL_LIE_REASON_META.tags,
+        thumbnail: 'p3_test_small_lie_reason.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3SmallLieReasonData');
+      return {
+        questions: mod.phase3SmallLieReasonQuestions,
+        results: mod.phase3SmallLieReasonResults,
+        meta: {
+          title: mod.PHASE3_SMALL_LIE_REASON_META.title,
+          description: mod.PHASE3_SMALL_LIE_REASON_META.description,
+          tags: mod.PHASE3_SMALL_LIE_REASON_META.tags,
+          thumbnail: 'p3_test_small_lie_reason.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3SmallLieReasonTest',
+        messagesFileSlug: 'phase3-small-lie-reason',
+      };
+    },
+    loadClient: () => import('@/components/Phase3SmallLieReasonTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

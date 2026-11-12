@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Tại sao lại hay nói dối nhỏ với người yêu?",
+    "description": "Chẳng cần nói vậy mà sao vẫn hay viện cớ? 10 tình huống giúp bạn tìm ra lý do thật sự đằng sau lời nói dối nhỏ — và cách thành thật hơn.",
+    "tags": ["Nói dối khi yêu", "Tâm lý tình yêu", "Kiểu yêu"]
+  },
+  "startMessage": {
+    "line1": "Chẳng cần nói vậy mà sao vẫn hay viện cớ?",
+    "line2": "Bạn nói \"anh/em về rồi\" trong khi vẫn còn ở ngoài. Nói \"không sao\" nhưng thật ra vẫn để bụng. Không phải chuyện lớn — nhưng nói xong lòng cứ khó chịu, lại sợ bị phát hiện.",
+    "line3": "Lời nói dối nhỏ đến từ nhiều lý do khác nhau. Có thể vì sợ cãi. Có thể vì muốn giữ thể diện. Có thể vì không muốn đối phương lo. Có thể miệng chạy trước suy nghĩ. Hoặc vì muốn khớp kỳ vọng của họ. Biết lý do rồi mới thấy cách không cần viện nữa.",
+    "line4": "10 tình huống sẽ chỉ ra lý do thật sự bạn nói dối nhỏ — và cách thành thật hơn.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu lý do nói dối",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự",
+    "realReason": "Lý do thật sự đằng sau lời nói dối nhỏ",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo kiểu",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Lý do đi kèm",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Khoảnh khắc lời nói dối xuất hiện",
+    "frequentSaying": "Câu kiểu này hay nói",
+    "changeTips": "Cách thành thật hơn",
+    "oneLiner": "Nhận xét một câu",
+    "shareResult": "Chia sẻ kết quả",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại",
+    "otherTests": "Xem bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+    "startKakao": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+    "startWechat": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+    "startWhatsapp": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+    "startTelegram": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!",
+    "startLine": "Tại sao lại hay nói dối nhỏ với người yêu? 🛡️ Lý do thật sự đằng sau lời nói dối nhỏ — bạn cũng thử đi!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+    "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+  },
+  "questions": [
+    {
+      "q": "Bạn về muộn, đang nhậu với bạn. Người yêu hỏi \"Đã trên đường về chưa?\" Bạn...",
+      "opts": [
+        "Nói \"Ừ, đang về\" — nói thật sẽ dài dòng và không khí khó chịu",
+        "Nói \"Ừ, đang về, không sao đâu\" — không muốn họ lo",
+        "\"Ừ, đang về\" tuột miệng trước khi kịp nghĩ",
+        "Nói \"Ừ, về sớm rồi\" để khớp hình ảnh đứng đắn họ kỳ vọng — về muộn sẽ làm họ thất vọng"
+      ]
+    },
+    {
+      "q": "Quà người yêu tặng không hợp gu. \"Có thích không?\" Bạn...",
+      "opts": [
+        "Nói thích — biết họ chọn kỹ, không muốn họ buồn",
+        "\"Ừ, thích\" tuột miệng không kịp nghĩ",
+        "Cố làm mặt vui để khớp kỳ vọng \"nhận quà phải vui\"",
+        "Bịa lý do thích — thừa nhận không hợp sẽ trông kém tinh tế"
+      ]
+    },
+    {
+      "q": "Họ hỏi \"Trưa nay ăn gì?\" Thực ra bạn ăn tạm tiện lợi. Bạn...",
+      "opts": [
+        "\"Ăn tạm thôi\" tuột miệng trước khi nghĩ",
+        "Nói \"Ăn tử tế rồi\" để khớp hình ảnh biết chăm sóc bản thân",
+        "Nâng menu lên một chút để khỏi trông tội nghiệp vì ăn tạm",
+        "Nói \"Ăn cơm hộp\" — không thì lại bị dặn \"phải biết giữ gìn sức khỏe\""
+      ]
+    },
+    {
+      "q": "Họ đến muộn, xin lỗi rồi hỏi \"Đợi lâu không?\" Bạn đã đợi 30 phút. Bạn...",
+      "opts": [
+        "Nuốt cảm giác tổn thương, nói \"Hầu như không đợi\" — cảm thấy mình phải luôn là người dễ chịu",
+        "Cười xòa \"Tôi cũng vừa tới\" — muốn trông cool",
+        "Nói \"Không, tôi cũng vừa tới\" — thừa nhận đợi lâu sợ thành cãi nhau",
+        "Nói \"Không sao, không lâu đâu\" — thấy họ áy náy thì lòng cũng khó"
+      ]
+    },
+    {
+      "q": "Họ hỏi \"Gần đây có chuyện gì à? Trông mặt không ổn.\" Công việc thật sự nặng. Bạn...",
+      "opts": [
+        "Nói \"Không có gì\" — không muốn lộ yếu đuối; trước người yêu luôn trông ổn",
+        "Nói \"Không, chỉ mệt thôi\" — mở ra sẽ làm không khí nặng",
+        "Nói \"Không có gì\" — không muốn họ lo cho mình",
+        "\"Không có gì\" bật ra phản xạ ngay khi bị hỏi"
+      ]
+    },
+    {
+      "q": "Họ hỏi nhẹ \"Hôm nay có đi với ai không?\" Thực ra bạn ăn riêng với đồng nghiệp. Bạn...",
+      "opts": [
+        "\"Không\" tuột miệng theo thói quen ngay khi bị hỏi",
+        "Nói \"Không, ăn một mình\" — sợ lệch hình ảnh thủy chung họ kỳ vọng",
+        "Nói \"Ăn một mình\" — nói thật dễ bị hiểu nhầm, không khí khó chịu",
+        "Nói \"Ở một mình\" như chuyện nhỏ — không muốn họ nghĩ lung tung"
+      ]
+    },
+    {
+      "q": "Họ hỏi \"Cái này bạn biết không?\" Thực ra bạn không rõ. Bạn...",
+      "opts": [
+        "Gật theo như biết — nói không biết sẽ ngại và làm họ thất vọng",
+        "Gật giả vờ biết — thừa nhận không biết sẽ trông kém hiểu biết",
+        "Nói \"Ừ, biết\" — sợ họ phải mất công giải thích",
+        "\"Ừ, biết~\" tuột miệng trước, rồi mới hối"
+      ]
+    },
+    {
+      "q": "Bó hoa họ tặng đã héo và bạn đã vứt. Họ hỏi \"Vẫn còn đẹp chứ?\" Bạn...",
+      "opts": [
+        "Nói \"Ừ, vẫn giữ đẹp\" — không muốn bị xem là người vứt quà",
+        "Nói \"Ừ, vẫn ổn\" — thừa nhận đã vứt sẽ dẫn tới chuyện dài và tổn thương",
+        "\"Ừ~ vẫn đẹp\" tuột miệng theo thói quen",
+        "Nói \"Ừ, vẫn giữ đẹp\" để khớp kỳ vọng \"mình trân trọng quà của bạn\""
+      ]
+    },
+    {
+      "q": "Họ hỏi \"Không giấu gì chứ?\" Thực ra bạn đang giấu chuyện nhỏ. Bạn...",
+      "opts": [
+        "Cắt ngắn \"Không\" — nói ra sẽ phình to",
+        "Nói \"Ừ, không\" — không muốn họ lo chiếm trước",
+        "Nói \"Tất nhiên là không\" để khớp kỳ vọng \"mình luôn thẳng thắn\"",
+        "Làm vẻ trong sạch \"Không, đừng lo\" — bị xem là người giấu chuyện thì xấu hổ"
+      ]
+    },
+    {
+      "q": "Lời nói dối nhỏ bị bắt, họ hỏi \"Sao lại giấu?\" Điều gần lòng bạn nhất là?",
+      "opts": [
+        "Giấu vì không muốn thấy họ lo",
+        "Không phải nói dối có chủ đích — nó tuột miệng như thói quen",
+        "Muốn tô đẹp một chút để khỏi trông tệ",
+        "Chỉ muốn tránh một trận cãi"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người chỉ muốn hiện diện tốt đẹp, Kiểu bảo vệ thể diện 🛡️",
+      "typeName": "Kiểu bảo vệ thể diện",
+      "realReason": "Bạn tô thêm sự thật vì bị thấy là thiếu sót thì khó chịu",
+      "shortDescription": "Bạn không cố lừa. Chỉ muốn trông khá hơn một chút trước người yêu, nên mới có những lớp tô nhỏ.",
+      "description": "Bạn nâng bữa trưa tạm bợ lên cho nghe ổn hơn, giả vờ biết chuyện chưa rõ, nói \"không sao\" khi thật ra không ổn. Không phải ác ý — là muốn giữ hình ảnh. Nhưng tô càng nhiều, họ càng ít cơ hội biết bạn thật.",
+      "keywords": "Quản lý hình ảnh, Giả vờ biết, Làm vẻ ổn, Tô điểm, Giấu thiếu sót",
+      "strengths": "Quan tâm tự quản và chân thành muốn hiện diện tốt hơn với đối phương",
+      "reasonDetail": "Khi chuyện thường ngày có thể trông thiếu sót, khi gặp chuyện chưa biết, khi yếu đuối có thể lộ",
+      "frequentSaying": "\"Ừ biết, mình cũng làm được thế\"",
+      "changeTips": "Cố ý nói trước một thiếu sót nhỏ. Ví dụ: \"Thật ra hôm nay ăn tạm thôi\"\nKhi không biết, thử một lần: \"Cái này mình không rõ lắm, kể đi\"\nNhớ lại lần họ thấy bạn yếu mà không quay đi",
+      "oneLiner": "Bạn không tô điểm lại gần gũi hơn. Hãy bắt đầu từ một lần thành thật nhỏ",
+      "shareLine": "Tại sao lại hay nói dối nhỏ với người yêu? Kết quả: Kiểu bảo vệ thể diện 🛡️ Hình như tô điểm để khỏi trông thiếu sót... mình ra kiểu này luôn haha bạn ra gì?"
+    },
+    {
+      "title": "Người gập mình trước để tránh cãi, Kiểu tránh xung đột 🕊️",
+      "typeName": "Kiểu tránh xung đột",
+      "realReason": "Bạn viện vì sợ nói thật sẽ tạo không khí khó chịu",
+      "shortDescription": "Bạn không phải kẻ nói dối. Chỉ là cuộc cãi hay cuộc nói dài sau sự thật nghe nặng hơn một lời viện nhanh.",
+      "description": "Nói đi chơi muộn, đợi lâu, hay tổn thương cảm giác như xung đột sắp bắt đầu — nên bạn gập bằng \"không sao\" và \"không\". Không khí giữ được, sự thật không nói vẫn còn đó. Khi bị lộ, niềm tin tổn thương nặng hơn.",
+      "keywords": "Ưu tiên không khí, Không sao, Ngại nói dài, Ngăn xung đột, Phản đòn khi bị lộ",
+      "strengths": "Khéo giữ hòa khí và giảm những trận cãi không cần",
+      "reasonDetail": "Khi nói thật có thể dẫn tới la mắng hay cãi, khi cần nói tổn thương hay khó chịu",
+      "frequentSaying": "\"Thôi đi, chẳng có gì đâu\"",
+      "changeTips": "Khi nói sự thật khó, mở đầu bằng \"Không phải muốn cãi — chỉ muốn bạn biết\"\nGiữ ngắn: một câu sự thật + một câu cảm xúc\nTập nói nhỏ ngay trong ngày để thấy nói ra không làm vỡ mối quan hệ",
+      "oneLiner": "Nói và cãi không giống nhau. Càng nói nhỏ sớm, trận cãi khi bị lộ càng nhỏ",
+      "shareLine": "Tại sao lại hay nói dối nhỏ với người yêu? Kết quả: Kiểu tránh xung đột 🕊️ Hình như viện để khỏi cãi... mình ra kiểu tránh xung đột haha bạn nữa chứ?"
+    },
+    {
+      "title": "Người giấu để khỏi làm lo, Kiểu chặn lo lắng 🌂",
+      "typeName": "Kiểu chặn lo lắng",
+      "realReason": "Bạn chặn sự thật trước để họ khỏi lo hay đau lòng",
+      "shortDescription": "Bạn không giấu để lừa. Bạn muốn chắn trước những gì có thể làm họ lo.",
+      "description": "Dù khó khăn vẫn nói \"không có gì\", chuyện dễ làm họ lo đều \"chẳng sao\". Đó là lựa chọn dịu dàng — nhưng họ có thể không biết bạn đang nặng lòng; khi biết sau, lại thấy bị để ngoài cuộc.",
+      "keywords": "Chặn lo, Thương lòng họ, Không có gì, Lời dối dịu dàng, Tự gánh một mình",
+      "strengths": "Ấm áp, nhanh cảm nhận cảm xúc họ, cố không thêm gánh nặng",
+      "reasonDetail": "Khi bản thân đang khó, khi có sự thật dễ làm họ đau lòng vì bạn",
+      "frequentSaying": "\"Không nói vì sợ bạn lo\"",
+      "changeTips": "Mở nhẹ, không đổ hết: \"Hôm nay hơi nặng, nghe mình được không?\"\nNhớ: họ lo và bạn chia sẻ lòng mình là hai việc khác nhau\nTrước khi giấu, hỏi một lần: nói ra thật sự làm họ nặng không?",
+      "oneLiner": "Lo lắng càng chia sẻ càng nhẹ. Quan tâm chia sẻ vững hơn quan tâm bằng cách giấu",
+      "shareLine": "Tại sao lại hay nói dối nhỏ với người yêu? Kết quả: Kiểu chặn lo lắng 🌂 Hình như lời dối nhỏ là dịu dàng vì sợ bạn lo... mình ra kiểu chặn lo haha bạn kiểu nào?"
+    },
+    {
+      "title": "Người miệng chạy trước, Kiểu phản xạ thói quen ⚡",
+      "typeName": "Kiểu phản xạ thói quen",
+      "realReason": "Đó là thói quen — miệng nói trước khi kịp nghĩ vì sao",
+      "shortDescription": "Bạn không cố lừa có chủ đích. Miệng trả lời trước khi câu hỏi kịp kết thúc.",
+      "description": "\"Ừ biết\", \"không sao\", \"vẫn đẹp\" tuột ra không chủ đích — rồi sau mới nghĩ \"ủa, không đúng\". Ít là lý do trong lòng, nhiều hơn là thói quen trả lời đã cứng.",
+      "keywords": "Trả lời phản xạ, Miệng trước, Nói trước khi nghĩ, Hối muộn, Thói quen cứng",
+      "strengths": "Phản xạ nhanh giúp cuộc trò chuyện nhẹ và chảy",
+      "reasonDetail": "Khi cảm giác phải trả lời ngay, khi hội thoại đang nhanh",
+      "frequentSaying": "\"À đúng rồi, thật ra...\"",
+      "changeTips": "Đặt luật: hít một hơi, trả lời sau ba giây\nNếu câu phản xạ sai, sửa ngay: \"Khoan — thật ra là thế này\"\nViết sẵn một hai lời dối hay gặp và chuẩn bị câu thật cho khoảnh khắc đó",
+      "oneLiner": "Nếu là thói quen chứ không phải lòng, ba giây dừng cũng đủ đổi",
+      "shareLine": "Tại sao lại hay nói dối nhỏ với người yêu? Kết quả: Kiểu phản xạ thói quen ⚡ Hình như miệng chạy trước không lý do... mình ra kiểu phản xạ haha lạnh sống lưng — bạn ra gì?"
+    },
+    {
+      "title": "Người chỉnh sự thật để khớp kỳ vọng, Kiểu đáp ứng kỳ vọng 🎯",
+      "typeName": "Kiểu đáp ứng kỳ vọng",
+      "realReason": "Bạn đổi sự thật vì muốn khớp hình ảnh họ kỳ vọng",
+      "shortDescription": "Bạn không cố lừa. Lệch khỏi những gì họ kỳ vọng khiến bạn bất an, nên bạn chỉnh lại hình dạng.",
+      "description": "Bạn cảm thấy phải luôn là người dễ chịu, thẳng thắn, thủy chung — nên không nói được tổn thương hay sai sót. Làm họ thất vọng như thể tình yêu sẽ teo lại, nên bạn chỉnh sự thật thành phiên bản họ thích nghe.",
+      "keywords": "Khớp kỳ vọng, Sợ làm thất vọng, Luôn thủy chung, Hình ảnh họ muốn, Áp lực",
+      "strengths": "Trách nhiệm cao và nỗ lực chân thành đáp ứng kỳ vọng của họ",
+      "reasonDetail": "Khi kỳ vọng của họ về bạn rõ ràng, khi cần thừa nhận sai sót hay tổn thương",
+      "frequentSaying": "\"Không muốn làm bạn thất vọng\"",
+      "changeTips": "Hỏi thẳng: \"Bạn kỳ vọng gì ở mình?\" để kiểm kích thước kỳ vọng trong đầu\nCố ý lộ một mặt chưa hoàn hảo và xem phản ứng thật của họ\nViết lại \"phải thế này mới được yêu\" thành \"thế này vẫn có thể được yêu\"",
+      "oneLiner": "Tình yêu chỉ để khớp kỳ vọng sẽ làm bạn kiệt. Người thật ở lại kể cả khi bạn khác đi",
+      "shareLine": "Tại sao lại hay nói dối nhỏ với người yêu? Kết quả: Kiểu đáp ứng kỳ vọng 🎯 Hình như chỉnh sự thật để khớp kỳ vọng... mình ra kiểu đáp ứng kỳ vọng haha đau — bạn?"
+    }
+  ]
+}

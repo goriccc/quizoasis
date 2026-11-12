@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Why Do I Keep Telling Little Lies to My Partner?",
+    "description": "Why do you keep spinning stories you didn't need to tell? These 10 scenarios reveal the real reason behind your little lies — and how to get more honest.",
+    "tags": ["Dating Lies", "Dating Psychology", "Dating Types"]
+  },
+  "startMessage": {
+    "line1": "Why do you keep spinning stories you didn't even need to tell?",
+    "line2": "You said \"I'm home\" when you were still out. You said \"it's nothing\" when it actually bothered you. It's not a huge deal — but afterward something feels off, and you worry they'll find out.",
+    "line3": "Little lies come from different reasons. Maybe you hate fights. Maybe you want to look good. Maybe you don't want them to worry. Maybe your mouth jumps ahead of your thoughts. Or maybe you're chasing their expectations. Once you know why, you can see how to stop covering.",
+    "line4": "These 10 scenarios show the real reason you tell little lies — and how to get more honest.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why You Lie",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Reason Behind Your Little Lies",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "Why You're Together",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "When the Lie Shows Up",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Get More Honest",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+    "startKakao": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+    "startWechat": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+    "startWhatsapp": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+    "startTelegram": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+    "startLine": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing isn't available right now.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "You're out late having a drink with a friend. They text, \"Are you already heading home?\" You...",
+      "opts": [
+        "Say \"yeah, on my way\" — telling the truth would get long and awkward",
+        "Say \"yeah, heading home, nothing's wrong\" — you don't want them to worry",
+        "\"Yeah, on my way\" pops out before you even think",
+        "Say \"yeah, heading in early\" to match the responsible person they expect — late nights would disappoint them"
+      ]
+    },
+    {
+      "q": "They gave you a gift that isn't your taste. \"Do you like it?\" You...",
+      "opts": [
+        "Say you love it — you know they chose carefully and don't want them hurt",
+        "\"Yeah, I like it\" comes out on autopilot",
+        "Put on a big happy face to match the \"you're supposed to be thrilled\" expectation",
+        "Invent reasons you like it — admitting it's not your style would make you look tactless"
+      ]
+    },
+    {
+      "q": "They ask, \"What'd you have for lunch?\" You actually grabbed convenience-store food. You...",
+      "opts": [
+        "\"Just had a simple meal\" slips out before you think",
+        "Say \"I ate properly\" to match the \"someone who takes care of themselves\" image",
+        "Upgrade the menu a little so you don't look pathetic for eating so casually",
+        "Say \"I packed a lunch\" — otherwise you'll get the \"take better care of yourself\" lecture"
+      ]
+    },
+    {
+      "q": "They're late and apologize: \"Did you wait long?\" You waited 30 minutes. You...",
+      "opts": [
+        "Fold the hurt and say \"I barely waited\" — you feel like you should always be the chill one",
+        "Laugh it off with \"I just got here too\" — you want to look cool",
+        "Say \"nah, I just got here\" — admitting you waited feels like starting a fight",
+        "Say \"it's fine, not long\" — their guilt bothers you"
+      ]
+    },
+    {
+      "q": "They ask, \"Something going on? You look off.\" Work was rough. You...",
+      "opts": [
+        "Say \"nothing's wrong\" — you don't want to look weak; with them you always seem fine",
+        "Say \"nah, just tired\" — opening up would make things heavy",
+        "Say \"nothing's wrong\" — you don't want them worrying about you",
+        "\"It's nothing\" shoots out the second they ask"
+      ]
+    },
+    {
+      "q": "They casually ask, \"Were you with someone today?\" You had a one-on-one lunch with a coworker. You...",
+      "opts": [
+        "\"No\" jumps out habitually the moment they ask",
+        "Say \"no, I ate alone\" — you don't want to break the steady image they expect",
+        "Say \"I ate alone\" — the truth would get misunderstood and make things awkward",
+        "Say \"I was alone\" like it's nothing — you don't want them overthinking"
+      ]
+    },
+    {
+      "q": "They ask, \"Do you know about this?\" You actually don't. You...",
+      "opts": [
+        "Play along like you know — saying you don't would make it awkward and disappoint them",
+        "Nod like you know — admitting you don't would make you look clueless",
+        "Say \"yeah, I know\" — you feel bad making them explain",
+        "\"Yeah, I know~\" comes out first, then you regret it"
+      ]
+    },
+    {
+      "q": "The bouquet they gave you already wilted and you tossed it. They ask, \"Still looking good?\" You...",
+      "opts": [
+        "Say \"yeah, I'm keeping it nicely\" — you don't want to look like someone who throws gifts away",
+        "Say \"yeah, it's fine\" — admitting you tossed it would start a long hurt conversation",
+        "\"Yeah~ still good\" comes out by habit",
+        "Say \"yeah, I'm taking care of it\" to match the \"I treasure your gifts\" expectation"
+      ]
+    },
+    {
+      "q": "They ask, \"You're not hiding anything from me, right?\" You are hiding something small. You...",
+      "opts": [
+        "Cut it short with \"nope\" — saying it would blow up",
+        "Say \"yeah, nothing\" — not wanting them to worry comes first",
+        "Say \"of course not\" to match the \"I'm totally open\" expectation",
+        "Act clean with \"nope, don't worry\" — looking like a secretive person feels embarrassing"
+      ]
+    },
+    {
+      "q": "A little lie gets caught and they ask, \"Why did you hide that?\" What's closest to your gut?",
+      "opts": [
+        "I hid it because I didn't want to see them worry",
+        "It wasn't a planned lie — it just came out as a habit",
+        "I wanted to paint myself a little better so I wouldn't look bad",
+        "I just wanted to dodge a fight"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who only wants to show the good side, the Face-Saving Type 🛡️",
+      "typeName": "Face-Saving Type",
+      "realReason": "You touch up the truth because being seen as lacking feels uncomfortable",
+      "shortDescription": "You're not trying to deceive. Wanting to look a little better in front of them is what creates the tiny touch-ups.",
+      "description": "You upgrade a casual lunch, pretend you know a topic, or say you're fine when you're not. It's not malice — it's protecting your image. But when touch-ups stack up, they get fewer chances to know the real you.",
+      "keywords": "Image management, Pretending to know, Acting fine, Touch-ups, Hiding flaws",
+      "strengths": "You care about self-management and earnestly want to show them your better side",
+      "reasonDetail": "When everyday moments might look lacking, when you don't know something, when weakness might show",
+      "frequentSaying": "\"Yeah I know, I do that too\"",
+      "changeTips": "Deliberately share one small flaw first. Example: \"Honestly, I ate whatever today\"\nWhen you don't know something, try once: \"I don't really know — explain it to me\"\nRecall a time they saw your weak side and didn't pull away",
+      "oneLiner": "The unpolished you actually feels closer. Start with one small honesty",
+      "shareLine": "Why do I keep telling little lies to my partner? Result: Face-Saving Type 🛡️ Apparently I touch things up so I won't look lacking... I got Face-Saving lol what'd you get?"
+    },
+    {
+      "title": "Someone who folds first to avoid a fight, the Conflict-Avoider Type 🕊️",
+      "typeName": "Conflict-Avoider Type",
+      "realReason": "You cover because telling the truth might create an awkward vibe",
+      "shortDescription": "You're not a liar. The fight or long talk that might follow the truth feels heavier than a quick cover.",
+      "description": "Saying you stayed out late, waited long, or felt hurt feels like conflict starting — so you fold with \"it's fine\" and \"nah.\" The vibe holds, but unspoken facts don't disappear. When they come out later, trust takes a bigger hit.",
+      "keywords": "Vibe first, It's fine, Long-talk dread, Preventing conflict, Blowback when caught",
+      "strengths": "You have a knack for keeping peace and cutting unnecessary fights",
+      "reasonDetail": "When the truth might bring lectures or arguments, when you need to voice hurt or discomfort",
+      "frequentSaying": "\"Let's just drop it, it's nothing\"",
+      "changeTips": "When sharing an uncomfortable fact, start with \"I'm not fighting — I just want you to know\"\nKeep it short: one line of fact + one line of feeling\nPractice telling small truths the same day so you learn speaking doesn't break the bond",
+      "oneLiner": "Speaking isn't fighting. The sooner you say the small stuff, the smaller the fight when you're caught",
+      "shareLine": "Why do I keep telling little lies to my partner? Result: Conflict-Avoider Type 🕊️ Apparently I cover so we won't fight... I got Conflict-Avoider lol you too?"
+    },
+    {
+      "title": "Someone who hides things so you won't worry, the Worry-Shield Type 🌂",
+      "typeName": "Worry-Shield Type",
+      "realReason": "You block the truth first so they won't worry or feel hurt",
+      "shortDescription": "You're not hiding to deceive. You're trying to shield them from worry ahead of time.",
+      "description": "Even when things are hard you say \"nothing's wrong,\" and anything that might worry them gets waved off as \"it's nothing.\" It's a tender choice — but they may never know you're struggling, and finding out later can leave them feeling left out.",
+      "keywords": "Blocking worry, Protecting their heart, Nothing's wrong, Kind lies, Carrying it alone",
+      "strengths": "Warm, quick to sense their feelings, and careful not to add burden",
+      "reasonDetail": "When something is hard, when a fact might make them ache for you",
+      "frequentSaying": "\"I didn't say it because I didn't want you to worry\"",
+      "changeTips": "Open lightly without dumping everything: \"Today was rough — can you listen?\"\nRemember: them worrying isn't the same as you sharing your heart\nBefore hiding, ask once: would this really burden them?",
+      "oneLiner": "Worry gets lighter when shared. Sharing care builds a stronger bond than hiding care",
+      "shareLine": "Why do I keep telling little lies to my partner? Result: Worry-Shield Type 🌂 Apparently my little lies are kind ones so you won't worry... I got Worry-Shield lol what's your type?"
+    },
+    {
+      "title": "Someone whose mouth jumps first, the Reflex Habit Type ⚡",
+      "typeName": "Reflex Habit Type",
+      "realReason": "It's a habit — the words leave your mouth before you even think why",
+      "shortDescription": "You're not trying to deceive on purpose. Your mouth answers before the question even finishes.",
+      "description": "\"Yeah I know,\" \"it's nothing,\" \"still looking good\" slip out with no plan — then later you think \"wait, that wasn't true.\" It's less a heart reason and more a hardened answering habit.",
+      "keywords": "Reflex answers, Mouth first, Out before thinking, Late regret, Locked-in habit",
+      "strengths": "Quick wit that keeps conversation light and moving",
+      "reasonDetail": "When you feel you must answer instantly, when chat is flying back and forth",
+      "frequentSaying": "\"Oh wait — actually...\"",
+      "changeTips": "Make a rule: take one breath and answer after three seconds\nIf a reflex answer was wrong, correct it right away: \"Hang on — here's what really happened\"\nWrite down one or two frequent fibs and prepare the true line for those moments",
+      "oneLiner": "If it's habit, not heart, three seconds of pause can change it",
+      "shareLine": "Why do I keep telling little lies to my partner? Result: Reflex Habit Type ⚡ Apparently my mouth jumps first for no reason... I got Reflex Habit lol creepy — what's yours?"
+    },
+    {
+      "title": "Someone who reshapes the truth to match expectations, the Expectation-Matcher Type 🎯",
+      "typeName": "Expectation-Matcher Type",
+      "realReason": "You change the facts trying to match the person they expect you to be",
+      "shortDescription": "You're not trying to deceive. Stepping outside what they expect of you feels unsafe, so you reshape yourself.",
+      "description": "You feel you must always be the chill one, the open one, the steady one — so you can't voice hurt or mistakes. Disappointing their expectations feels like love shrinking, so you edit the truth into a version they'd like.",
+      "keywords": "Matching expectations, Fear of disappointing, Always steady, Being who they want, Pressure",
+      "strengths": "Strong sense of responsibility and earnest effort to meet what they hope for",
+      "reasonDetail": "When their expectations of you are clear, when you need to admit a mistake or hurt",
+      "frequentSaying": "\"I didn't want to disappoint you\"",
+      "changeTips": "Ask directly: \"What do you actually want from me?\" and check the size of the imagined expectation\nDeliberately show one imperfect side and notice their real reaction\nRewrite \"I must be this to be loved\" into \"I can still be loved as this\"",
+      "oneLiner": "Love that only matches expectations wears you out. The real ones stay even when you look different",
+      "shareLine": "Why do I keep telling little lies to my partner? Result: Expectation-Matcher Type 🎯 Apparently I rewrite facts to match what they expect... I got Expectation-Matcher lol that hits — you?"
+    }
+  ]
+}

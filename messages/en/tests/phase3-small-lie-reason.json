@@ -1,0 +1,63 @@
+{
+  "phase3SmallLieReasonTest": {
+    "startMessage": {
+      "line1": "Why do you keep spinning stories you didn't even need to tell?",
+      "line2": "You said \"I'm home\" when you were still out. You said \"it's nothing\" when it actually bothered you. It's not a huge deal — but afterward something feels off, and you worry they'll find out.",
+      "line3": "Little lies come from different reasons. Maybe you hate fights. Maybe you want to look good. Maybe you don't want them to worry. Maybe your mouth jumps ahead of your thoughts. Or maybe you're chasing their expectations. Once you know why, you can see how to stop covering.",
+      "line4": "These 10 scenarios show the real reason you tell little lies — and how to get more honest.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why You Lie",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Reason Behind Your Little Lies",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Why You're Together",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "When the Lie Shows Up",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Get More Honest",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+      "startKakao": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+      "startWechat": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+      "startWhatsapp": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+      "startTelegram": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!",
+      "startLine": "Why Do I Keep Telling Little Lies to My Partner? 🛡️ Find the real reason behind those tiny fibs — try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}

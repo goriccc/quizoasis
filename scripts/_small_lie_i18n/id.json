@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Kenapa Suka Bohong Kecil ke Pacar?",
+    "description": "Nggak perlu dibohongi, kenapa tetap suka mengelak? Lewat 10 situasi, temukan alasan sejati di balik bohong kecilmu — dan cara jadi lebih jujur.",
+    "tags": ["Bohong Pacaran", "Psikologi Pacaran", "Tipe Pacaran"]
+  },
+  "startMessage": {
+    "line1": "Nggak perlu dibohongi, kenapa tetap suka mengelak?",
+    "line2": "Kamu bilang \"udah di rumah\" padahal masih di luar. Bilang \"nggak apa-apa\" padahal sebenarnya kepikiran. Bukan masalah besar — tapi setelah ngomong ada yang mengganjal, dan takut ketahuan.",
+    "line3": "Bohong kecil datang dari alasan berbeda. Bisa karena takut ribut. Bisa karena mau jaga muka. Bisa karena nggak mau bikin mereka khawatir. Bisa karena mulut lebih dulu dari pikiran. Atau karena mau cocok dengan ekspektasi mereka. Setelah tahu alasannya, baru kelihatan cara berhenti mengelak.",
+    "line4": "10 situasi ini menunjukkan alasan sejati kenapa kamu bohong kecil — dan cara jadi lebih jujur.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Iklan",
+    "goToTest": "Ikuti Tes",
+    "startTest": "Cari Tahu Kenapa Bohong",
+    "linkCopy": "Salin Tautan",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Tes Serupa Lainnya",
+    "realReason": "Alasan Sejati di Balik Bohong Kecil",
+    "keywords": "Kata Kunci",
+    "scoreTitle": "Skor per Tipe",
+    "scoreUnit": "poin",
+    "hiddenReason": "Alasan yang Ikut Ada",
+    "strengths": "Kekuatan Tipe Ini",
+    "reasonDetail": "Saat Bohong Muncul",
+    "frequentSaying": "Yang Sering Dikatakan Tipe Ini",
+    "changeTips": "Cara Jadi Lebih Jujur",
+    "oneLiner": "Ringkasan Satu Kalimat",
+    "shareResult": "Bagikan Hasil Saya",
+    "popularBadge": "Populer",
+    "retake": "Ulangi Tes",
+    "otherTests": "Lihat Tes Lain"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+    "startKakao": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+    "startWechat": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+    "startWhatsapp": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+    "startTelegram": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+    "startLine": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!"
+  },
+  "alerts": {
+    "linkCopied": "Tautan disalin!",
+    "resultCopied": "Hasil disalin ke clipboard!",
+    "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+    "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+    "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Tes Serupa yang Cocok Buatmu",
+    "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+  },
+  "questions": [
+    {
+      "q": "Kamu pulang terlambat, lagi minum dengan teman. Pacar nanya, \"Udah di jalan pulang?\" Kamu...",
+      "opts": [
+        "Bilang \"iya, lagi jalan\" — jujur bakal panjang dan suasana canggung",
+        "Bilang \"iya, lagi pulang, nggak ada apa-apa\" — nggak mau bikin mereka khawatir",
+        "\"Iya, lagi jalan\" keluar sebelum sempat mikir",
+        "Bilang \"iya, pulang lebih awal\" biar cocok sama citra yang diharapkan — main malam bikin kecewa"
+      ]
+    },
+    {
+      "q": "Hadiah dari pacar nggak sesuai selera. \"Suka nggak?\" Kamu...",
+      "opts": [
+        "Bilang suka — tahu mereka pilih hati-hati dan nggak mau bikin sedih",
+        "\"Iya, suka\" keluar otomatis",
+        "Pakai wajah senang besar biar cocok ekspektasi \"harusnya senang dapat hadiah\"",
+        "Bikin alasan suka — ngaku nggak cocok bakal kelihatan kurang peka"
+      ]
+    },
+    {
+      "q": "Mereka nanya, \"Makan siang apa?\" Padahal kamu makan seadanya di minimarket. Kamu...",
+      "opts": [
+        "\"Makan seadanya aja\" keluar sebelum mikir",
+        "Bilang \"makan yang bener\" biar cocok citra orang yang jaga diri",
+        "Sedikit \"upgrade\" menu biar nggak kelihatan payah makan asal",
+        "Bilang \"makan bekal\" — kalau nggak nanti dikuliahi \"jaga kesehatan\""
+      ]
+    },
+    {
+      "q": "Mereka terlambat lalu minta maaf: \"Nunggu lama?\" Kamu nunggu 30 menit. Kamu...",
+      "opts": [
+        "Simpan rasa kecewa, bilang \"hampir nggak nunggu\" — merasa harus selalu yang santai",
+        "Tertawa \"aku juga baru datang\" — mau kelihatan cool",
+        "Bilang \"nggak, aku juga baru datang\" — ngaku nunggu lama takut jadi ribut",
+        "Bilang \"nggak apa-apa, nggak lama\" — rasa bersalah mereka bikin kamu ikut tidak enak"
+      ]
+    },
+    {
+      "q": "Mereka nanya, \"Ada apa belakangan? Mukamu kurang enak.\" Kerjaan memang berat. Kamu...",
+      "opts": [
+        "Bilang \"nggak ada apa-apa\" — nggak mau kelihatan lemah; di depan mereka selalu terlihat baik-baik saja",
+        "Bilang \"nggak, cuma capek\" — dibuka bakal bikin suasana berat",
+        "Bilang \"nggak ada apa-apa\" — nggak mau mereka khawatir",
+        "\"Nggak ada apa-apa\" keluar refleks begitu ditanya"
+      ]
+    },
+    {
+      "q": "Mereka nanya santai, \"Hari ini bareng orang lain?\" Padahal kamu makan berdua dengan rekan kerja. Kamu...",
+      "opts": [
+        "\"Nggak\" keluar karena kebiasaan begitu ditanya",
+        "Bilang \"nggak, makan sendiri\" — takut keluar dari citra setia yang mereka harapkan",
+        "Bilang \"makan sendiri\" — jujur takut disalahpahami dan suasana jadi canggung",
+        "Bilang \"sendiri aja\" seperti biasa — nggak mau mereka overthinking"
+      ]
+    },
+    {
+      "q": "Mereka nanya, \"Kamu tahu ini?\" Padahal kamu kurang paham. Kamu...",
+      "opts": [
+        "Ikut-ikutan seperti tahu — bilang tidak tahu bakal canggung dan mengecewakan",
+        "Mengangguk pura-pura tahu — ngaku tidak tahu bakal kelihatan gaptek",
+        "Bilang \"iya, tahu\" — merasa tidak enak bikin mereka jelasin",
+        "\"Iya, tahu~\" keluar dulu, baru menyesal"
+      ]
+    },
+    {
+      "q": "Buket yang mereka kasih sudah layu dan kamu buang. Mereka nanya, \"Masih bagus kan?\" Kamu...",
+      "opts": [
+        "Bilang \"iya, masih kujaga baik-baik\" — nggak mau kelihatan orang yang buang hadiah",
+        "Bilang \"iya, masih oke\" — ngaku dibuang bakal bikin cerita panjang dan sakit hati",
+        "\"Iya~ masih bagus\" keluar karena kebiasaan",
+        "Bilang \"iya, masih kujaga\" biar cocok ekspektasi \"aku menghargai hadiahmu\""
+      ]
+    },
+    {
+      "q": "Mereka nanya, \"Nggak nyembunyiin sesuatu kan?\" Padahal kamu nyembunyiin hal kecil. Kamu...",
+      "opts": [
+        "Potong singkat \"nggak\" — dibuka bakal membesar",
+        "Bilang \"iya, nggak ada\" — tidak mau bikin khawatir lebih dulu",
+        "Bilang \"tentu saja tidak\" biar cocok ekspektasi \"aku selalu terbuka\"",
+        "Bertindak bersih \"nggak, jangan khawatir\" — kelihatan seperti orang yang rahasia itu memalukan"
+      ]
+    },
+    {
+      "q": "Bohong kecil ketahuan dan mereka nanya, \"Kenapa disembunyiin?\" Yang paling dekat dengan hatimu?",
+      "opts": [
+        "Kusembunyiin karena nggak mau lihat mereka khawatir",
+        "Bukan bohong yang direncanakan — keluar seperti kebiasaan tanpa sadar",
+        "Mau sedikit dipoles biar nggak kelihatan jelek",
+        "Cuma mau menghindari ribut"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang hanya mau tampil sisi baik, Tipe Jaga Muka 🛡️",
+      "typeName": "Tipe Jaga Muka",
+      "realReason": "Kamu poles kebenaran karena tidak nyaman terlihat kurang",
+      "shortDescription": "Kamu tidak sedang menipu. Ingin terlihat sedikit lebih oke di depan mereka yang membuat sentuhan kecil itu muncul.",
+      "description": "Kamu \"upgrade\" makan siang seadanya, pura-pura tahu topik, atau bilang baik-baik saja padahal tidak. Bukan niat jahat — mau jaga citra. Tapi kalau polesan menumpuk, mereka semakin jarang kenal kamu yang asli.",
+      "keywords": "Manajemen citra, Pura-pura tahu, Bertindak oke, Polesan, Menyembunyikan kekurangan",
+      "strengths": "Peduli manajemen diri dan sungguh ingin menampilkan sisi baik ke pasangan",
+      "reasonDetail": "Saat momen sehari-hari bisa terlihat kurang, saat ada topik yang tidak kamu tahu, saat kelemahan bisa terlihat",
+      "frequentSaying": "\"Iya tahu, aku juga bisa gitu\"",
+      "changeTips": "Sengaja bilang satu kekurangan kecil dulu. Contoh: \"Sebenarnya hari ini makan seadanya\"\nKalau tidak tahu, coba sekali: \"Aku kurang paham — jelasin dong\"\nIngat saat mereka melihat sisi lemahmu dan tidak menjauh",
+      "oneLiner": "Dirimu tanpa polesan justru terasa lebih dekat. Mulai dari kejujuran kecil",
+      "shareLine": "Kenapa suka bohong kecil ke pacar? Hasil: Tipe Jaga Muka 🛡️ Katanya aku poles biar nggak kelihatan kurang... aku dapat Jaga Muka wkwk kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang mengalah dulu biar tidak ribut, Tipe Hindari Konflik 🕊️",
+      "typeName": "Tipe Hindari Konflik",
+      "realReason": "Kamu mengelak karena takut jujur bikin suasana canggung",
+      "shortDescription": "Kamu bukan pembohong. Ribut atau omongan panjang setelah kejujuran terasa lebih berat daripada mengelak cepat.",
+      "description": "Bilang main malam, nunggu lama, atau perasaan sakit seperti konflik mau mulai — jadi kamu lipat dengan \"nggak apa-apa\" dan \"nggak.\" Suasana aman, fakta yang tidak diucapkan tetap ada. Saat ketahuan, kepercayaan bisa lebih rusak.",
+      "keywords": "Suasana dulu, Nggak apa-apa, Takut omongan panjang, Cegah konflik, Imbas saat ketahuan",
+      "strengths": "Punya sense menjaga damai dan mengurangi ribut yang tidak perlu",
+      "reasonDetail": "Saat jujur bisa memicu ceramah atau ribut, saat harus menyuarakan sakit atau tidak nyaman",
+      "frequentSaying": "\"Sudahlah, nggak apa-apa\"",
+      "changeTips": "Saat bilang fakta yang canggung, mulai dengan \"Bukan mau ribut — cuma ingin kamu tahu\"\nPendek saja: satu baris fakta + satu baris perasaan\nLatih bilang fakta kecil di hari yang sama supaya belajar bicara tidak merusak hubungan",
+      "oneLiner": "Bicara dan ribut itu beda. Semakin cepat bilang yang kecil, semakin kecil ribut saat ketahuan",
+      "shareLine": "Kenapa suka bohong kecil ke pacar? Hasil: Tipe Hindari Konflik 🕊️ Katanya aku mengelak biar nggak ribut... aku dapat Hindari Konflik wkwk kamu juga?"
+    },
+    {
+      "title": "Orang yang menyembunyikan supaya tidak bikin khawatir, Tipe Blokir Khawatir 🌂",
+      "typeName": "Tipe Blokir Khawatir",
+      "realReason": "Kamu blokir kebenaran dulu supaya mereka tidak khawatir atau sakit hati",
+      "shortDescription": "Kamu tidak menyembunyikan untuk menipu. Kamu ingin melindungi mereka dari khawatir lebih dulu.",
+      "description": "Meski berat tetap bilang \"nggak ada apa-apa\", dan yang mungkin bikin khawatir diloloskan sebagai \"nggak apa.\" Pilihan lembut — tapi mereka bisa tidak tahu kamu sedang sulit; kalau tahu belakangan, justru merasa dikesampingkan.",
+      "keywords": "Blokir khawatir, Jaga hati mereka, Nggak ada apa-apa, Bohong lembut, Menanggung sendiri",
+      "strengths": "Hangat, cepat tangkap perasaan mereka, dan berusaha tidak menambah beban",
+      "reasonDetail": "Saat ada yang berat, saat ada fakta yang bisa membuat mereka sedih karenamu",
+      "frequentSaying": "\"Nggak kubilang karena takut kamu khawatir\"",
+      "changeTips": "Buka ringan tanpa menumpahkan semua: \"Hari ini agak berat — mau dengerin?\"\nIngat: mereka khawatir beda dengan kamu berbagi isi hati\nSebelum menyembunyikan, tanya sekali: apakah ini benar-benar membebani mereka?",
+      "oneLiner": "Khawatir jadi lebih ringan saat dibagi. Peduli dengan berbagi lebih kuat daripada peduli dengan menyembunyikan",
+      "shareLine": "Kenapa suka bohong kecil ke pacar? Hasil: Tipe Blokir Khawatir 🌂 Katanya bohong kecilku lembut biar kamu nggak khawatir... aku dapat Blokir Khawatir wkwk tipemu apa?"
+    },
+    {
+      "title": "Orang yang mulutnya duluan, Tipe Refleks Kebiasaan ⚡",
+      "typeName": "Tipe Refleks Kebiasaan",
+      "realReason": "Ini kebiasaan — kata keluar sebelum sempat mikir kenapa",
+      "shortDescription": "Kamu tidak sengaja menipu. Mulut menjawab sebelum pertanyaan selesai.",
+      "description": "\"Iya tahu,\" \"nggak apa-apa,\" \"masih bagus\" keluar tanpa rencana — lalu belakangan mikir \"eh, itu sebenarnya salah.\" Lebih ke kebiasaan menjawab yang sudah mengeras, bukan alasan di hati.",
+      "keywords": "Jawaban refleks, Mulut duluan, Keluar sebelum mikir, Sesal belakangan, Kebiasaan mengeras",
+      "strengths": "Refleks cepat yang menjaga percakapan ringan dan mengalir",
+      "reasonDetail": "Saat merasa harus jawab langsung, saat chat saling balas cepat",
+      "frequentSaying": "\"Oh iya — sebenarnya...\"",
+      "changeTips": "Buat aturan: tarik napas sekali, jawab setelah tiga detik\nKalau jawaban refleks salah, koreksi langsung: \"Tunggu — sebenarnya begini\"\nTulis satu-dua bohong yang sering muncul dan siapkan kalimat jujurnya",
+      "oneLiner": "Kalau itu kebiasaan, bukan hati, jeda tiga detik saja bisa mengubahnya",
+      "shareLine": "Kenapa suka bohong kecil ke pacar? Hasil: Tipe Refleks Kebiasaan ⚡ Katanya mulutku duluan tanpa alasan... aku dapat Refleks Kebiasaan wkwk merinding — kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang mengubah fakta biar cocok ekspektasi, Tipe Sesuaikan Ekspektasi 🎯",
+      "typeName": "Tipe Sesuaikan Ekspektasi",
+      "realReason": "Kamu mengubah fakta karena mau cocok dengan sosok yang mereka harapkan",
+      "shortDescription": "Kamu tidak sedang menipu. Keluar dari yang mereka harapkan terasa tidak aman, jadi kamu menyesuaikan bentuk.",
+      "description": "Kamu merasa harus selalu orang yang santai, terbuka, setia — jadi sulit bilang sakit hati atau kesalahan. Mengecewakan ekspektasi mereka seperti cinta menyusut, jadi kamu edit fakta jadi versi yang mereka suka.",
+      "keywords": "Cocokkan ekspektasi, Takut mengecewakan, Selalu setia, Sosok yang mereka mau, Tekanan",
+      "strengths": "Tanggung jawab kuat dan usaha tulus memenuhi harapan mereka",
+      "reasonDetail": "Saat ekspektasi mereka tentangmu jelas, saat harus mengakui kesalahan atau sakit hati",
+      "frequentSaying": "\"Nggak mau bikin kamu kecewa\"",
+      "changeTips": "Tanya langsung: \"Kamu sebenarnya harap apa dariku?\" dan cek seberapa besar ekspektasi di bayangan\nSengaja tunjukkan satu sisi yang tidak sempurna dan lihat reaksi nyata mereka\nTulis ulang \"harus begini baru dicintai\" jadi \"begini pun masih bisa dicintai\"",
+      "oneLiner": "Cinta yang hanya menyesuaikan ekspektasi akan melelahkan. Yang tinggal meski kamu terlihat beda — itulah yang nyata",
+      "shareLine": "Kenapa suka bohong kecil ke pacar? Hasil: Tipe Sesuaikan Ekspektasi 🎯 Katanya aku rewrite fakta biar cocok ekspektasi... aku dapat Sesuaikan Ekspektasi wkwk nyesek — kamu?"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "phase3SmallLieReasonTest": {
+    "startMessage": {
+      "line1": "Nggak perlu dibohongi, kenapa tetap suka mengelak?",
+      "line2": "Kamu bilang \"udah di rumah\" padahal masih di luar. Bilang \"nggak apa-apa\" padahal sebenarnya kepikiran. Bukan masalah besar — tapi setelah ngomong ada yang mengganjal, dan takut ketahuan.",
+      "line3": "Bohong kecil datang dari alasan berbeda. Bisa karena takut ribut. Bisa karena mau jaga muka. Bisa karena nggak mau bikin mereka khawatir. Bisa karena mulut lebih dulu dari pikiran. Atau karena mau cocok dengan ekspektasi mereka. Setelah tahu alasannya, baru kelihatan cara berhenti mengelak.",
+      "line4": "10 situasi ini menunjukkan alasan sejati kenapa kamu bohong kecil — dan cara jadi lebih jujur.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti Tes",
+      "startTest": "Cari Tahu Kenapa Bohong",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "realReason": "Alasan Sejati di Balik Bohong Kecil",
+      "keywords": "Kata Kunci",
+      "scoreTitle": "Skor per Tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang Ikut Ada",
+      "strengths": "Kekuatan Tipe Ini",
+      "reasonDetail": "Saat Bohong Muncul",
+      "frequentSaying": "Yang Sering Dikatakan Tipe Ini",
+      "changeTips": "Cara Jadi Lebih Jujur",
+      "oneLiner": "Ringkasan Satu Kalimat",
+      "shareResult": "Bagikan Hasil Saya",
+      "popularBadge": "Populer",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+      "startKakao": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+      "startWechat": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+      "startWhatsapp": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+      "startTelegram": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!",
+      "startLine": "Kenapa Suka Bohong Kecil ke Pacar? 🛡️ Alasan sejati di balik bohong kecil — coba juga yuk!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa yang Cocok Buatmu",
+      "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+    }
+  }
+}
