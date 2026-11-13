@@ -1,0 +1,63 @@
+{
+  "phase3ExSnsPeekingReasonTest": {
+    "startMessage": {
+      "line1": "終わった間柄なのに、なぜあのアカウントを何度も開いてしまうんだろう？",
+      "line2": "もう見ないと決めても、気づけば手が先にそのプロフィールを開いています。見た後はかえって気持ちが複雑になると分かっていてもやめられず、そんな自分に「まだ未練が残っているのかな？」と戸惑うこともあります。",
+      "line3": "覗き見のように見える行動の裏には、人それぞれ違う気持ちが隠れています。まだ自分のことを考えているか確かめたいからかもしれないし、つい比較してしまうからかもしれません。見ることで慰められているのかもしれないし、ただの習慣になっているのかもしれない、あるいは終わらせられなかった話が残っているのかもしれません。名前をつけると、気持ちはずっと整理しやすくなります。",
+      "line4": "10の場面で、つい見てしまう本当の理由と、心を整理する方法をお伝えします。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "覗いてしまう理由を知る",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "realReason": "つい見てしまう本当の理由",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenReason": "一緒にある理由",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "覗いてしまう瞬間",
+      "frequentSaying": "このタイプがよく言うこと",
+      "changeTips": "心を整理する方法",
+      "oneLiner": "ひとことまとめ",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "retake": "もう一度やる",
+      "otherTests": "他のテストを見る"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "なぜ別れても元恋人のSNSを覗いてしまうの？🔍 つい見てしまう本当の理由、あなたもやってみて！",
+      "startKakao": "なぜ別れても元恋人のSNSを覗いてしまうの？🔍 つい見てしまう本当の理由、あなたもやってみて！",
+      "startWechat": "なぜ別れても元恋人のSNSを覗いてしまうの？🔍 つい見てしまう本当の理由、あなたもやってみて！",
+      "startWhatsapp": "なぜ別れても元恋人のSNSを覗いてしまうの？🔍 つい見てしまう本当の理由、あなたもやってみて！",
+      "startTelegram": "なぜ別れても元恋人のSNSを覗いてしまうの？🔍 つい見てしまう本当の理由、あなたもやってみて！",
+      "startLine": "なぜ別れても元恋人のSNSを覗いてしまうの？🔍 つい見てしまう本当の理由、あなたもやってみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatで貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を準備中です。少ししてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ているテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストトップ5"
+    }
+  }
+}

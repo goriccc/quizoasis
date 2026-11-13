@@ -647,6 +647,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3AnxiousWhenLovedTestClient'),
   },
+
+  'phase3-ex-sns-peeking-reason': {
+    slug: 'phase3-ex-sns-peeking-reason',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_EX_SNS_PEEKING_REASON_META } = await import('./phase3ExSnsPeekingReasonData');
+      return {
+        title: PHASE3_EX_SNS_PEEKING_REASON_META.title,
+        description: PHASE3_EX_SNS_PEEKING_REASON_META.description,
+        tags: PHASE3_EX_SNS_PEEKING_REASON_META.tags,
+        thumbnail: 'p3_test_ex_sns_peeking_reason.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3ExSnsPeekingReasonData');
+      return {
+        questions: mod.phase3ExSnsPeekingReasonQuestions,
+        results: mod.phase3ExSnsPeekingReasonResults,
+        meta: {
+          title: mod.PHASE3_EX_SNS_PEEKING_REASON_META.title,
+          description: mod.PHASE3_EX_SNS_PEEKING_REASON_META.description,
+          tags: mod.PHASE3_EX_SNS_PEEKING_REASON_META.tags,
+          thumbnail: 'p3_test_ex_sns_peeking_reason.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3ExSnsPeekingReasonTest',
+        messagesFileSlug: 'phase3-ex-sns-peeking-reason',
+      };
+    },
+    loadClient: () => import('@/components/Phase3ExSnsPeekingReasonTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

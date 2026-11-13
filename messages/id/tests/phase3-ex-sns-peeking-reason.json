@@ -1,0 +1,63 @@
+{
+  "phase3ExSnsPeekingReasonTest": {
+    "startMessage": {
+      "line1": "Sudah berakhir, kenapa masih membuka akun itu?",
+      "line2": "Walau sudah berniat tidak akan lihat lagi, tanpa sadar tangan sudah membuka profil itu duluan. Tahu kalau setelah lihat hati jadi makin rumit, tapi tetap sulit berhenti, dan kadang bertanya pada diri sendiri, \"Jangan-jangan aku masih belum move on?\" sampai merasa asing dengan diri sendiri.",
+      "line3": "Di balik kebiasaan \"mengintip\" ini, setiap orang menyimpan alasan hati yang berbeda. Bisa karena ingin tahu apakah mereka masih memikirkanmu, bisa karena suka membandingkan, bisa karena merasa terhibur setelah melihat, bisa karena sudah jadi kebiasaan, atau bisa karena ceritanya belum selesai. Begitu alasannya dikenali, hati jadi jauh lebih tenang.",
+      "line4": "10 situasi ini akan menunjukkan alasan asli kenapa kamu terus membuka akun itu — dan cara merapikan hatimu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti Tes",
+      "startTest": "Cari tahu kenapa masih intip",
+      "linkCopy": "Salin Tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes Serupa Lainnya",
+      "realReason": "Alasan Asli Kenapa Masih Intip",
+      "keywords": "Kata Kunci",
+      "scoreTitle": "Skor per Tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Alasan yang Juga Ada",
+      "strengths": "Kekuatan Tipe Ini",
+      "reasonDetail": "Momen Kamu Kembali Mengintip",
+      "frequentSaying": "Yang Sering Dikatakan Tipe Ini",
+      "changeTips": "Cara Merapikan Hatimu",
+      "oneLiner": "Ringkasan Satu Kalimat",
+      "shareResult": "Bagikan Hasil Saya",
+      "popularBadge": "Populer",
+      "retake": "Ulangi Tes",
+      "otherTests": "Lihat Tes Lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+      "startKakao": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+      "startWechat": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+      "startWhatsapp": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+      "startTelegram": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+      "startLine": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan disalin!",
+      "resultCopied": "Hasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+      "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+      "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+      "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Tes Serupa yang Cocok Buatmu",
+      "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+    }
+  }
+}

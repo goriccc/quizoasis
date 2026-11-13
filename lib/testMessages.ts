@@ -112,6 +112,15 @@ const SPLIT_MESSAGE_LOADERS: Record<string, Partial<Record<Locale, MessageLoader
     vi: () => import('@/messages/vi/tests/phase3-anxious-when-loved.json'),
     id: () => import('@/messages/id/tests/phase3-anxious-when-loved.json'),
   },
+  'phase3-ex-sns-peeking-reason': {
+    ko: () => import('@/messages/ko/tests/phase3-ex-sns-peeking-reason.json'),
+    en: () => import('@/messages/en/tests/phase3-ex-sns-peeking-reason.json'),
+    ja: () => import('@/messages/ja/tests/phase3-ex-sns-peeking-reason.json'),
+    'zh-CN': () => import('@/messages/zh-CN/tests/phase3-ex-sns-peeking-reason.json'),
+    'zh-TW': () => import('@/messages/zh-TW/tests/phase3-ex-sns-peeking-reason.json'),
+    vi: () => import('@/messages/vi/tests/phase3-ex-sns-peeking-reason.json'),
+    id: () => import('@/messages/id/tests/phase3-ex-sns-peeking-reason.json'),
+  },
   'phase3-tongue-tied-crush': {
     ko: () => import('@/messages/ko/tests/phase3-tongue-tied-crush.json'),
     en: () => import('@/messages/en/tests/phase3-tongue-tied-crush.json'),

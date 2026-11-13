@@ -1,0 +1,63 @@
+{
+  "phase3ExSnsPeekingReasonTest": {
+    "startMessage": {
+      "line1": "Đã kết thúc rồi, sao vẫn cứ mở trang của họ?",
+      "line2": "Dù đã quyết tâm không xem nữa, tay vẫn tự động mở trang cá nhân của họ lúc nào không hay. Biết rằng xem xong lòng sẽ càng rối hơn nhưng vẫn khó dừng lại, và đôi khi tự hỏi \"mình vẫn còn vương vấn sao?\" khiến chính mình cũng thấy lạ lẫm.",
+      "line3": "Đằng sau hành động giống như \"lén xem\" này, mỗi người lại giấu một tâm lý khác nhau. Có thể vì muốn biết họ còn nghĩ đến mình không, có thể vì hay so sánh, có thể vì xem xong thấy được an ủi, có thể vì đã thành thói quen, hoặc có thể vì câu chuyện vẫn chưa khép lại. Gọi tên được lý do, lòng sẽ nhẹ hơn rất nhiều.",
+      "line4": "10 tình huống sẽ chỉ ra lý do thật sự khiến bạn cứ mở trang của họ — và cách sắp xếp lại lòng mình.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm hiểu vì sao vẫn xem",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Lý do thật sự khiến bạn vẫn xem",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Lý do đi kèm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Khoảnh khắc bạn lại mở xem",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách sắp xếp lại lòng mình",
+      "oneLiner": "Nhận xét một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+      "startKakao": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+      "startWechat": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+      "startWhatsapp": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+      "startTelegram": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+      "startLine": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

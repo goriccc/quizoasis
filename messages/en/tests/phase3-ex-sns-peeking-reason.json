@@ -1,0 +1,63 @@
+{
+  "phase3ExSnsPeekingReasonTest": {
+    "startMessage": {
+      "line1": "It's over — so why do you keep opening that profile?",
+      "line2": "You swear you won't look, then your hand opens the app anyway. You know it'll tangle your feelings more, but it's hard to stop — and you catch yourself wondering if you're still hung up.",
+      "line3": "Behind what looks like \"stalking\" sits a different heart for everyone. Maybe you want proof they still think of you. Maybe you're comparing lives. Maybe checking soothes you. Maybe it's habit. Or maybe an unfinished story still needs a period. Naming it helps you sort it out.",
+      "line4": "These 10 scenarios show the real reason you keep checking — and how to settle your heart.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why You Peek",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Reason You Keep Checking",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Another Reason Alongside",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "Moments You Peek",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Settle Your Heart",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+      "startKakao": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+      "startWechat": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+      "startWhatsapp": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+      "startTelegram": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+      "startLine": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing is currently unavailable.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests For You",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}

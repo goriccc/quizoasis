@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Kenapa Setelah Putus Masih Intip SNS Mantan?",
+    "description": "Sudah berakhir, kenapa masih membuka akun itu? Lewat 10 situasi, ketahui alasan asli dan cara merapikan hati.",
+    "tags": ["Intip SNS", "Psikologi Putus"]
+  },
+  "startMessage": {
+    "line1": "Sudah berakhir, kenapa masih membuka akun itu?",
+    "line2": "Walau sudah berniat tidak akan lihat lagi, tanpa sadar tangan sudah membuka profil itu duluan. Tahu kalau setelah lihat hati jadi makin rumit, tapi tetap sulit berhenti, dan kadang bertanya pada diri sendiri, \"Jangan-jangan aku masih belum move on?\" sampai merasa asing dengan diri sendiri.",
+    "line3": "Di balik kebiasaan \"mengintip\" ini, setiap orang menyimpan alasan hati yang berbeda. Bisa karena ingin tahu apakah mereka masih memikirkanmu, bisa karena suka membandingkan, bisa karena merasa terhibur setelah melihat, bisa karena sudah jadi kebiasaan, atau bisa karena ceritanya belum selesai. Begitu alasannya dikenali, hati jadi jauh lebih tenang.",
+    "line4": "10 situasi ini akan menunjukkan alasan asli kenapa kamu terus membuka akun itu — dan cara merapikan hatimu.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Iklan",
+    "goToTest": "Ikuti Tes",
+    "startTest": "Cari tahu kenapa masih intip",
+    "linkCopy": "Salin Tautan",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Tes Serupa Lainnya",
+    "realReason": "Alasan Asli Kenapa Masih Intip",
+    "keywords": "Kata Kunci",
+    "scoreTitle": "Skor per Tipe",
+    "scoreUnit": "poin",
+    "hiddenReason": "Alasan yang Juga Ada",
+    "strengths": "Kekuatan Tipe Ini",
+    "reasonDetail": "Momen Kamu Kembali Mengintip",
+    "frequentSaying": "Yang Sering Dikatakan Tipe Ini",
+    "changeTips": "Cara Merapikan Hatimu",
+    "oneLiner": "Ringkasan Satu Kalimat",
+    "shareResult": "Bagikan Hasil Saya",
+    "popularBadge": "Populer",
+    "retake": "Ulangi Tes",
+    "otherTests": "Lihat Tes Lain"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+    "startKakao": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+    "startWechat": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+    "startWhatsapp": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+    "startTelegram": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!",
+    "startLine": "Kenapa Setelah Putus Masih Intip SNS Mantan? 🔍 Alasan sejatinya bikin kaget — coba juga yuk!"
+  },
+  "alerts": {
+    "linkCopied": "Tautan disalin!",
+    "resultCopied": "Hasil disalin ke clipboard!",
+    "shareFailed": "Fitur berbagi tidak tersedia saat ini.",
+    "wechatCopy": "Tautan disalin! Tempel di WeChat untuk membagikan.",
+    "kakaoInit": "Sedang menginisialisasi berbagi KakaoTalk. Coba lagi sebentar.",
+    "kakaoError": "Terjadi kesalahan saat berbagi ke KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Tes Serupa yang Cocok Buatmu",
+    "popularTestsTop5": "🔥 Top 5 Tes yang Lagi Tren"
+  },
+  "questions": [
+    {
+      "q": "Sebulan setelah putus, dalam perjalanan pulang kerja tiba-tiba teringat akun mantan. Kamu...",
+      "opts": [
+        "Ingin lihat dia sekarang hidup seperti apa, apakah kelihatan lebih baik dari aku, untuk dibandingkan",
+        "Setelah melihat hati jadi sedikit lebih lega, jadi membuka dengan niat menghibur diri",
+        "Belum sempat mikir, tangan sudah membuka aplikasi duluan",
+        "Masih ada cerita yang belum selesai dengan baik, jadi hati terus tertarik ke sana"
+      ]
+    },
+    {
+      "q": "Jam 1 pagi, malam yang susah tidur. Kamu...",
+      "opts": [
+        "Melihat apakah foto bersama masih tersimpan, menenangkan hati dengan kehangatan saat itu",
+        "Scroll tanpa alasan jelas, lalu tanpa sadar sudah ada di depan akun itu",
+        "Teringat kata yang belum sempat diucapkan, jadi cek apakah ada yang berubah",
+        "Mencari jejak, jangan-jangan dia posting sesuatu karena teringat aku"
+      ]
+    },
+    {
+      "q": "Muncul notifikasi mantan baru posting. Kamu...",
+      "opts": [
+        "Hanya karena tahu ada postingan baru, tidak bisa tidak lihat, langsung cek",
+        "Muncul keinginan untuk memastikan apakah hubungan kalian benar-benar sudah berakhir",
+        "Membaca baris demi baris, siapa tahu ada isi yang mengingatkan pada aku",
+        "Lebih dulu menilai apakah di foto itu dia terlihat jauh lebih bahagia dari aku"
+      ]
+    },
+    {
+      "q": "Kamu tahu akun mantan sudah diubah jadi privat. Kamu...",
+      "opts": [
+        "Merasa seperti ini akhirnya berakhir, hati belum tertata dan menyisakan rasa kosong",
+        "Jadi bertanya-tanya, jangan-jangan sengaja diubah supaya aku lihat, atau ini semacam sinyal",
+        "Penasaran apakah karena ada orang baru sehingga disembunyikan, dan orang itu beda apa dari aku",
+        "Berpikir toh sekarang sudah tidak bisa lihat lagi, menghibur diri bahwa ini malah membuat lebih lega"
+      ]
+    },
+    {
+      "q": "Teman bertanya, \"Kamu tahu dia sekarang gimana kabarnya?\" Kamu...",
+      "opts": [
+        "Lebih dulu penasaran apakah dia membicarakan aku, dan bagaimana dia bercerita tentang aku",
+        "Muncul rasa ingin membandingkan, aku hidup begini, dia bagaimana",
+        "Mendengar cerita itu justru membuat hati lebih tenang dan merasa lebih baik",
+        "Menjawab tidak tahu, tapi dalam hati langsung ingin mencari tahu, jari pun gatal pegang HP"
+      ]
+    },
+    {
+      "q": "Sudah hari ketiga sejak berjanji tidak akan melihat akun itu lagi. Kamu...",
+      "opts": [
+        "Sudah berusaha menahan, tapi tanpa sadar tangan sudah membuka aplikasi seperti kebiasaan",
+        "Satu sisi hati belum tertata, jadi kalau tidak dicek rasanya belum selesai",
+        "Sudah berjanji, tapi tetap penasaran apakah kabar dia lebih baik dari kabarku",
+        "Sudah berjanji, tapi ada momen setelah melihat hati jadi lega, jadi susah berhenti total"
+      ]
+    },
+    {
+      "q": "Kamu membuka lagi chat terakhir dengan mantan. Kamu...",
+      "opts": [
+        "Menyesal karena berakhir dengan canggung, jadi hati terus tertahan di situ",
+        "Memeriksa apakah ada tanda dia akan menghubungi lagi, dan apakah dia juga memikirkan aku",
+        "Membaca obrolan lama membuat teringat masa itu dan hati jadi sedikit hangat",
+        "Ingin memeriksa apakah ada perubahan kecil seperti waktu online terakhir atau foto profil"
+      ]
+    },
+    {
+      "q": "Mantan posting foto seru bersama teman-temannya. Kamu...",
+      "opts": [
+        "Mencari apakah ada raut menyesal atau ekspresi yang mengingatkan pada aku di foto itu",
+        "Aku masih berat, tapi dia kelihatan baik-baik saja, jadi jadi membandingkan diri",
+        "Mulai dari satu postingan, lalu lanjut melihat postingan lain secara beruntun",
+        "Melihat foto itu, muncul lagi pertanyaan sebenarnya kenapa hubungan kita bisa berakhir begini"
+      ]
+    },
+    {
+      "q": "Sebulan kemudian, muncul tanda mantan sepertinya sudah punya hubungan baru. Kamu...",
+      "opts": [
+        "Membandingkan diri dengan orang itu, terus memikirkan jangan-jangan karena aku yang kurang",
+        "Menghibur diri bahwa ini sudah selesai, tapi tetap ingin lihat sekali lagi supaya lega",
+        "Merasa nyata bahwa ini benar-benar sudah berakhir, dan perasaan yang belum tuntas pun naik",
+        "Ingin tahu lebih jauh apakah hubungan ini benar-benar berakhir, dan apakah dia sudah melupakan aku sepenuhnya"
+      ]
+    },
+    {
+      "q": "Teman bertanya, \"Kamu masih suka lihat akun dia ya?\" Perasaan yang paling dekat dengan hatimu?",
+      "opts": [
+        "Sebenarnya setelah lihat hati jadi lega, sudah jadi semacam kebiasaan menghibur diri",
+        "Bukan soal alasan, lebih ke kebiasaan tangan, jadi aku sendiri susah berhenti",
+        "Masih ada keinginan untuk memastikan apakah dia masih memikirkan aku",
+        "Sangat ingin tahu bagaimana dia menjalani hidup tanpa aku, untuk dibandingkan"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang ingin tahu apakah dia masih memikirkanmu, Tipe Cek Sisa Perasaan 🔍",
+      "typeName": "Tipe Cek Sisa Perasaan",
+      "realReason": "Kamu ingin memastikan apakah kamu masih tersisa di hati mereka",
+      "shortDescription": "Kamu bukan sedang mengintai. Ini adalah keinginan untuk memastikan apakah mereka masih memikirkanmu, apakah masih ada jejak yang tersisa.",
+      "description": "Setiap kata di postingan baru, perubahan ke akun privat, atau perubahan kecil di foto profil terasa seperti sinyal yang mengarah padamu. Setelah memastikan, hati sedikit tergerak, tapi karena belum ada jawaban pasti, kamu kembali membuka akun itu lagi. Perasaan ini memang bukti bahwa cinta masih ada, tapi energi yang terpakai untuk menafsirkan sinyal itu cukup besar.",
+      "keywords": "Mencari jejak, Menafsirkan sinyal, Apakah dia memikirkanku, Hati yang belum selesai, Memberi makna",
+      "strengths": "Tulus dalam hubungan dan bukan tipe yang mudah menghapus seseorang dari hati",
+      "reasonDetail": "Saat muncul postingan baru, perubahan akun, atau jejak aktivitas; saat membuka lagi chat terakhir",
+      "frequentSaying": "\"Jangan-jangan dia lagi mikirin aku?\"",
+      "changeTips": "Saat ingin memastikan, tulis dulu satu kalimat: 'Jawaban apa sebenarnya yang ingin aku dapatkan sekarang?'\nMute atau sembunyikan akun itu supaya notifikasi baru tidak terlihat olehmu\nPisahkan dalam dua baris: satu baris sinyal yang kamu tafsirkan, satu baris lagi fakta yang benar-benar terkonfirmasi",
+      "oneLiner": "Jejak akan terasa makin besar kalau terus ditafsirkan. Jawabannya bukan di akun itu, tapi di dalam hatimu sendiri",
+      "shareLine": "Kenapa setelah putus masih intip SNS mantan? Hasil: Tipe Cek Sisa Perasaan 🔍 Katanya ini soal ingin tahu apakah dia masih mikirin aku... ini banget aku wkwk langsung disimpan, kamu dapat apa?"
+    },
+    {
+      "title": "Orang yang menimbang diri sendiri dan dia di atas timbangan, Tipe Membandingkan ⚖️",
+      "typeName": "Tipe Membandingkan",
+      "realReason": "Kamu membandingkan kabar terbaru mereka dengan kabarmu untuk mengukur posisi dirimu",
+      "shortDescription": "Kamu bukan penasaran dengan mereka. Kamu sedang meletakkan hidupmu di samping hidup mereka untuk mengukur posisimu.",
+      "description": "Foto yang kelihatan bahagia, tanda hubungan baru, atau kehidupan yang tampak baik-baik saja membuat hatimu turun. Rasa sakit putus cinta bercampur dengan rasa membandingkan membuat pikiran 'cuma aku yang ketinggalan' makin besar. Membuka akun itu malah bisa membuatmu makin lelah, bukan makin tenang.",
+      "keywords": "Membandingkan kabar, Rasa hanya aku yang tertinggal, Penasaran orang baru, Menimbang, Menilai diri sendiri",
+      "strengths": "Punya standar jelas soal perkembangan diri dan keinginan kuat untuk menjadi lebih baik",
+      "reasonDetail": "Saat melihat postingan yang kelihatan bahagia, saat menemukan tanda hubungan baru",
+      "frequentSaying": "\"Dia kelihatan baik-baik aja, kok cuma aku yang gini\"",
+      "changeTips": "Saat mulai membandingkan, tulis dulu 3 hal yang sudah kamu capai bulan ini\nIngatkan diri lagi bahwa yang ada di SNS hanyalah momen pilihan yang sudah diedit\nUbah objek pembandingmu, bukan lagi dia, tapi 'dirimu sebulan yang lalu'",
+      "oneLiner": "Kabar orang lain adalah versi yang sudah diedit, dan hatimu adalah versi aslinya. Luangkan lebih banyak waktu untuk merawat versi aslimu",
+      "shareLine": "Kenapa setelah putus masih intip SNS mantan? Hasil: Tipe Membandingkan ⚖️ Katanya ini soal naruh hidupnya dan hidupku di atas timbangan... ini banget aku, langsung disimpan"
+    },
+    {
+      "title": "Orang yang menenangkan hati sambil melihat, Tipe Menghibur Diri 🫶",
+      "typeName": "Tipe Menghibur Diri",
+      "realReason": "Selama melihat, hatimu sedikit lega, dan itu terasa seperti hiburan",
+      "shortDescription": "Kamu bukan sedang memperbesar luka. Akun itu tanpa sadar sudah jadi hiburan yang familiar untuk menenangkan hatimu.",
+      "description": "Melihat foto lama, chat lama, atau profil yang familiar membuat hati sedikit hangat atau lebih tenang. Rasanya seperti akun itu mengisi kekosongan yang ditinggalkan putus cinta. Tapi makin sering dipakai sebagai hiburan, makin sulit berhenti, dan proses menata hati setelah putus pun jadi makin tertunda.",
+      "keywords": "Hiburan, Kefamiliaran, Kenangan hangat, Rasa tenang, Susah berhenti",
+      "strengths": "Menghargai kenangan indah dan tahu cara menenangkan emosi diri sendiri",
+      "reasonDetail": "Malam yang susah tidur, saat hati terasa kosong, saat teringat foto atau chat lama",
+      "frequentSaying": "\"Setelah lihat jadi agak mendingan\"",
+      "changeTips": "Siapkan dulu rutinitas pengganti (jalan-jalan, dengar musik, telepon teman) untuk waktu kamu biasanya butuh hiburan, seperti malam hari\nSimpan kenangan indah di catatan atau album fotomu sendiri, bukan di akun itu\nMinggu ini, buat sekali kesempatan terhubung dengan 'orang nyata' (teman, keluarga) untuk mendapat hiburan",
+      "oneLiner": "Wajar kalau kamu butuh dihibur. Tapi sekarang hiburan itu boleh kamu dapatkan dari dirimu sendiri yang sekarang",
+      "shareLine": "Kenapa setelah putus masih intip SNS mantan? Hasil: Tipe Menghibur Diri 🫶 Katanya melihat sudah jadi rutinitas buat menenangkan hati... ini banget aku, sudah disimpan, kamu gimana?"
+    },
+    {
+      "title": "Orang yang tangannya bergerak lebih dulu, Tipe Kebiasaan Penasaran 📱",
+      "typeName": "Tipe Kebiasaan Penasaran",
+      "realReason": "Kamu ingin membuka aplikasi dan cek info baru lebih karena kebiasaan daripada alasan tertentu",
+      "shortDescription": "Mungkin kamu membuka akun itu bukan karena masih sangat berharap. Ini kebiasaan berulang di mana tangan bergerak lebih dulu daripada pikiran.",
+      "description": "Kalau ada postingan baru, tidak mungkin tidak dilihat, dan setelah lihat satu, lanjut lihat postingan lain beruntun. Sebelum sempat mencari alasan di hati, scrolling sudah dimulai duluan. Rangsangan kecil setiap kali cek berulang-ulang hingga membentuk lingkaran yang susah dihentikan.",
+      "keywords": "Kebiasaan, Scroll otomatis, Penasaran postingan baru, Melihat beruntun, Susah berhenti",
+      "strengths": "Peka terhadap informasi baru, penuh rasa ingin tahu, dan mudah larut dalam berbagai hal",
+      "reasonDetail": "Saat ada notifikasi, saat memegang HP tanpa pikiran, di waktu senggang",
+      "frequentSaying": "\"Tanpa sadar aku udah buka lagi\"",
+      "changeTips": "Pindahkan posisi aplikasi atau mute/blokir akun itu supaya ada langkah tambahan sebelum membukanya\nSaat tangan mau meraih HP, lakukan hal lain dulu selama 3 menit (minum air, peregangan)\nTentukan jam tertentu dalam sehari untuk scrolling, dan matikan notifikasi di luar jam itu",
+      "oneLiner": "Kalau ini kebiasaan tangan, bukan hati, mengubah lingkungan sekitar adalah cara tercepat",
+      "shareLine": "Kenapa setelah putus masih intip SNS mantan? Hasil: Tipe Kebiasaan Penasaran 📱 Katanya bukan hati, tapi tangan yang bergerak duluan... ini banget aku wkwk disimpan, kamu tipe apa?"
+    },
+    {
+      "title": "Orang yang ceritanya belum berakhir, Tipe Belum Selesai 🧩",
+      "typeName": "Tipe Belum Selesai",
+      "realReason": "Kata-kata yang belum terucap dan pertanyaan yang belum terjawab membuat hatimu belum selesai",
+      "shortDescription": "Kamu bukan rindu pada orang itu. Cerita yang belum selesai sedang mencari titik akhirnya.",
+      "description": "Pertanyaan seperti kenapa bisa berakhir seperti itu, kata terakhir apa yang belum sempat diucapkan, apakah putus ini benar-benar sudah pasti — masih tersisa di satu sudut hatimu. Membuka akun itu juga merupakan usaha untuk mencari akhir dari cerita tersebut. Tapi akhir cerita bukan tercipta dari SNS orang lain, melainkan dari kalimat yang kamu tulis sendiri untuk menutupnya.",
+      "keywords": "Titik akhir, Kata yang belum terucap, Pertanyaan belum terjawab, Akhir yang menggantung, Mencari penutup",
+      "strengths": "Tekun bertanggung jawab menyelesaikan hubungan dan punya kemauan untuk menata emosinya",
+      "reasonDetail": "Saat teringat obrolan terakhir, saat teringat kata yang belum sempat diucapkan, saat putus terasa nyata",
+      "frequentSaying": "\"Harusnya waktu itu aku bilang dulu baru selesai\"",
+      "changeTips": "Tulis kata-kata yang belum terucap jadi surat yang tidak akan dikirim, sampai tuntas\nTulis daftar pertanyaan yang belum terjawab, lalu pisahkan jadi 'yang bisa aku jawab sendiri' dan 'yang hanya dia yang tahu'\nTentukan satu hari sebagai penutup, dan jadikan beres-beres akun itu (mute, sembunyikan) pada hari itu sebagai titik akhirnya",
+      "oneLiner": "Akhir cerita bukan diberikan oleh orang lain, tapi ditulis dan ditutup oleh dirimu sendiri. Tulis satu per satu, dan titik akhirnya akan perlahan muncul",
+      "shareLine": "Kenapa setelah putus masih intip SNS mantan? Hasil: Tipe Belum Selesai 🧩 Katanya cerita yang belum selesai lagi cari titik akhir... ini banget aku, disimpan, kamu dapat apa?"
+    }
+  ]
+}

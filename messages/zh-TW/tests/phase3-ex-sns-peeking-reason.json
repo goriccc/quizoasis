@@ -1,0 +1,63 @@
+{
+  "phase3ExSnsPeekingReasonTest": {
+    "startMessage": {
+      "line1": "明明已經結束了，為什麼還總忍不住點開那個主頁？",
+      "line2": "明明告訴自己不要再看了，手卻總是先一步打開了那個主頁。明知道看完心情只會更亂，卻很難真正停下來，看著這樣的自己，有時也會忍不住想：「我是不是還沒放下？」",
+      "line3": "看起來像是偷看的這個行為背後，每個人藏著的心思其實都不一樣。有的是想確認對方是不是還在想自己，有的是忍不住拿來比較，有的是看著能得到一點安慰，有的只是變成了習慣，還有的是因為心裡那段故事一直沒講完。先弄清楚自己屬於哪一種，心情會輕鬆很多。",
+      "line4": "用10個情境，告訴你總想去看的真正原因，以及怎樣把心整理好。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去測試",
+      "startTest": "看看為什麼總想偷看",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "其他相似測試",
+      "realReason": "總想去看的真正原因",
+      "keywords": "核心關鍵詞",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "同時存在的原因",
+      "strengths": "這個類型的優點",
+      "reasonDetail": "會去看的時刻",
+      "frequentSaying": "這個類型常說的話",
+      "changeTips": "把心整理好的方法",
+      "oneLiner": "一句話點評",
+      "shareResult": "分享我的結果",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "看看其他測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "🔍 為什麼分手後還總是偷看前任的社交賬號？測測你總想去看的真正原因，你也來試試！",
+      "startKakao": "🔍 為什麼分手後還總是偷看前任的社交賬號？測測你總想去看的真正原因，你也來試試！",
+      "startWechat": "🔍 為什麼分手後還總是偷看前任的社交賬號？測測你總想去看的真正原因，你也來試試！",
+      "startWhatsapp": "🔍 為什麼分手後還總是偷看前任的社交賬號？測測你總想去看的真正原因，你也來試試！",
+      "startTelegram": "🔍 為什麼分手後還總是偷看前任的社交賬號？測測你總想去看的真正原因，你也來試試！",
+      "startLine": "🔍 為什麼分手後還總是偷看前任的社交賬號？測測你總想去看的真正原因，你也來試試！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "暫時無法使用分享功能。",
+      "wechatCopy": "鏈接已複製！請到微信粘貼分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 近期熱門測試 Top5"
+    }
+  }
+}

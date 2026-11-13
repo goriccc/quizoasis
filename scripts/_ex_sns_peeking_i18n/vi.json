@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ?",
+    "description": "Đã kết thúc rồi, sao vẫn cứ mở trang của họ? 10 tình huống giúp bạn thấy lý do thật sự và cách sắp xếp lại lòng mình.",
+    "tags": ["Lén xem SNS", "Tâm lý chia tay"]
+  },
+  "startMessage": {
+    "line1": "Đã kết thúc rồi, sao vẫn cứ mở trang của họ?",
+    "line2": "Dù đã quyết tâm không xem nữa, tay vẫn tự động mở trang cá nhân của họ lúc nào không hay. Biết rằng xem xong lòng sẽ càng rối hơn nhưng vẫn khó dừng lại, và đôi khi tự hỏi \"mình vẫn còn vương vấn sao?\" khiến chính mình cũng thấy lạ lẫm.",
+    "line3": "Đằng sau hành động giống như \"lén xem\" này, mỗi người lại giấu một tâm lý khác nhau. Có thể vì muốn biết họ còn nghĩ đến mình không, có thể vì hay so sánh, có thể vì xem xong thấy được an ủi, có thể vì đã thành thói quen, hoặc có thể vì câu chuyện vẫn chưa khép lại. Gọi tên được lý do, lòng sẽ nhẹ hơn rất nhiều.",
+    "line4": "10 tình huống sẽ chỉ ra lý do thật sự khiến bạn cứ mở trang của họ — và cách sắp xếp lại lòng mình.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu vì sao vẫn xem",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự",
+    "realReason": "Lý do thật sự khiến bạn vẫn xem",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo kiểu",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Lý do đi kèm",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Khoảnh khắc bạn lại mở xem",
+    "frequentSaying": "Câu kiểu này hay nói",
+    "changeTips": "Cách sắp xếp lại lòng mình",
+    "oneLiner": "Nhận xét một câu",
+    "shareResult": "Chia sẻ kết quả",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại",
+    "otherTests": "Xem bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+    "startKakao": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+    "startWechat": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+    "startWhatsapp": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+    "startTelegram": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!",
+    "startLine": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? 🔍 Lý do thật sự — bạn cũng thử đi!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+    "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+  },
+  "questions": [
+    {
+      "q": "Chia tay đã một tháng, trên đường đi làm về bỗng nhớ tới trang của người yêu cũ. Bạn...",
+      "opts": [
+        "Muốn xem họ đang sống thế nào, có vẻ ổn hơn mình không, để so sánh",
+        "Xem xong thấy lòng nhẹ hơn một chút, nên mở ra như một cách tự an ủi",
+        "Chưa kịp nghĩ gì, tay đã mở app từ lúc nào",
+        "Vẫn còn chuyện chưa kết thúc trọn vẹn nên lòng cứ hướng về đó"
+      ]
+    },
+    {
+      "q": "1 giờ sáng, một đêm mất ngủ. Bạn...",
+      "opts": [
+        "Xem lại những tấm ảnh chụp cùng nhau còn lưu, để hơi ấm ngày đó xoa dịu lòng mình",
+        "Lướt mạng không vì lý do gì cụ thể, rồi không biết từ lúc nào đã đứng trước trang của họ",
+        "Nhớ tới lời chưa kịp nói, nên xem thử có gì thay đổi không",
+        "Tìm xem có phải vì nhớ mình mà họ đăng gì đó không"
+      ]
+    },
+    {
+      "q": "Có thông báo người yêu cũ vừa đăng bài mới. Bạn...",
+      "opts": [
+        "Chỉ cần biết có bài mới là không thể không xem, mở ngay lập tức",
+        "Muốn chắc chắn xem chuyện giữa hai người đã thật sự kết thúc chưa",
+        "Đọc từng câu xem có phải nội dung nhắc đến mình không",
+        "Trước tiên xem trong ảnh họ có vẻ hạnh phúc hơn mình nhiều không"
+      ]
+    },
+    {
+      "q": "Bạn phát hiện trang của người yêu cũ đã chuyển sang chế độ riêng tư. Bạn...",
+      "opts": [
+        "Thấy như chuyện kết thúc thật rồi, lòng chưa sắp xếp được và để lại cảm giác trống trải",
+        "Tự hỏi có phải họ cố tình làm vậy để mình thấy, hay đó là một tín hiệu nào đó",
+        "Tò mò không biết có phải vì có người mới nên giấu, và người đó khác mình thế nào",
+        "Nghĩ dù sao cũng không xem được nữa, tự nhủ lòng thấy nhẹ nhõm hơn một chút"
+      ]
+    },
+    {
+      "q": "Bạn bè hỏi \"Cậu có biết dạo này người đó sống thế nào không?\". Bạn...",
+      "opts": [
+        "Trước tiên tò mò không biết họ có nhắc đến mình không, và nói về mình như thế nào",
+        "Mình đang sống thế này, còn họ ra sao — bỗng muốn so sánh",
+        "Nghe chuyện đó xong lòng lại thấy ổn định và dễ chịu hơn",
+        "Trả lời là không biết nhưng trong lòng đã muốn tra ngay, tay cứ mân mê điện thoại"
+      ]
+    },
+    {
+      "q": "Đã quyết tâm không xem trang đó được ba ngày. Bạn...",
+      "opts": [
+        "Đã cố nhịn nhưng tay vẫn mở app như một thói quen lúc nào không hay",
+        "Một góc lòng vẫn chưa được sắp xếp, nếu không xem thì cảm giác như chưa xong",
+        "Dù đã quyết tâm nhưng vẫn tò mò cuộc sống của họ có tốt hơn mình không",
+        "Đã quyết tâm rồi nhưng xem xong lại có lúc thấy lòng nhẹ hơn, nên khó dứt ra được"
+      ]
+    },
+    {
+      "q": "Bạn mở lại đoạn tin nhắn cuối cùng với người yêu cũ. Bạn...",
+      "opts": [
+        "Tiếc vì chuyện kết thúc dở dang, nên lòng cứ mãi dừng lại ở đó",
+        "Xem thử có dấu hiệu họ sẽ liên lạc lại không, và họ có nghĩ đến mình không",
+        "Đọc lại tin nhắn cũ, nhớ về khoảng thời gian đó khiến lòng ấm lên một chút",
+        "Muốn kiểm tra xem có thay đổi nhỏ nào như thời gian truy cập cuối hay ảnh đại diện không"
+      ]
+    },
+    {
+      "q": "Người yêu cũ đăng ảnh vui vẻ chụp cùng bạn bè. Bạn...",
+      "opts": [
+        "Tìm trong ảnh xem có nét hối tiếc hay biểu cảm nào gợi nhớ đến mình không",
+        "Mình vẫn còn khó khăn mà họ có vẻ ổn, nên bỗng so sánh với bản thân",
+        "Bắt đầu từ một bài, rồi xem tiếp hết bài này đến bài khác",
+        "Nhìn ảnh mà câu hỏi rốt cuộc chuyện giữa hai người đã kết thúc thế nào lại hiện lên"
+      ]
+    },
+    {
+      "q": "Một tháng sau, bạn thấy dấu hiệu người yêu cũ hình như đang hẹn hò mới. Bạn...",
+      "opts": [
+        "So sánh người đó với mình, cứ nghĩ mãi không biết có phải tại mình thiếu sót",
+        "Tự nhủ chuyện đã qua rồi, nhưng vẫn muốn xem thêm lần nữa cho yên lòng",
+        "Cảm nhận rõ rằng chuyện này thật sự đã kết thúc, và những cảm xúc chưa trọn vẹn trỗi dậy",
+        "Muốn biết thêm mối quan hệ này đã thật sự kết thúc chưa, và họ đã quên hẳn mình chưa"
+      ]
+    },
+    {
+      "q": "Bạn bè hỏi \"Cậu vẫn còn xem trang của người đó à?\". Điều gần với lòng bạn nhất là?",
+      "opts": [
+        "Thật ra xem xong lòng thấy nhẹ hơn, nó đã thành một thói quen an ủi",
+        "Không hẳn vì lý do gì, chỉ là tay cứ tự động mở nên bản thân cũng khó dừng",
+        "Vẫn còn muốn biết chắc liệu người đó có đang nghĩ đến mình không",
+        "Rất muốn xem thử không có mình thì họ sống ra sao để so sánh"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người muốn biết liệu họ còn nghĩ đến mình không, Kiểu xác nhận luyến tiếc 🔍",
+      "typeName": "Kiểu xác nhận luyến tiếc",
+      "realReason": "Bạn muốn biết chắc liệu mình có còn ở lại trong lòng họ hay không",
+      "shortDescription": "Bạn không phải đang rình rập. Đó là mong muốn biết liệu họ còn nghĩ đến mình, còn để lại dấu vết nào không.",
+      "description": "Từng câu chữ trong bài đăng mới, việc chuyển sang riêng tư, hay một thay đổi nhỏ trên ảnh đại diện đều như tín hiệu hướng về bạn. Xem xong lòng dịu lại một chút, nhưng vì chưa có câu trả lời chắc chắn nên lại tiếp tục mở ra xem. Cảm xúc này vừa là bằng chứng tình cảm vẫn còn, vừa tiêu tốn rất nhiều năng lượng để diễn giải.",
+      "keywords": "Tìm dấu vết, Diễn giải tín hiệu, Liệu họ có nghĩ đến mình, Lòng chưa khép lại, Gán ý nghĩa",
+      "strengths": "Từng rất chân thành trong mối quan hệ, và là người không dễ dàng xóa bỏ ai khỏi lòng mình",
+      "reasonDetail": "Khi thấy bài đăng mới, đổi quyền riêng tư, hay thay đổi hồ sơ; khi mở lại đoạn tin nhắn cuối cùng",
+      "frequentSaying": "\"Không biết họ có đang nghĩ đến mình không?\"",
+      "changeTips": "Khi muốn kiểm tra, hãy viết ra một câu: 'Mình đang muốn có câu trả lời gì ngay lúc này?'\nẨn hoặc tắt thông báo từ trang đó để bài đăng mới không lọt vào mắt mình\nViết riêng hai dòng: một dòng là tín hiệu mình tự diễn giải, một dòng là sự thật thực sự xác nhận được",
+      "oneLiner": "Dấu vết càng diễn giải càng lớn thêm. Câu trả lời không nằm ở trang đó, mà nằm ở việc sắp xếp lại chính lòng mình",
+      "shareLine": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? Kết quả: Kiểu xác nhận luyến tiếc 🔍 Hình như là muốn biết họ còn nghĩ đến mình không... đúng bạn luôn haha lưu lại liền, bạn ra gì?"
+    },
+    {
+      "title": "Người đặt mình và người đó lên bàn cân, Kiểu so sánh ⚖️",
+      "typeName": "Kiểu so sánh",
+      "realReason": "Bạn đang so sánh cuộc sống hiện tại của họ với cuộc sống của mình để đo lường bản thân",
+      "shortDescription": "Bạn không tò mò về họ. Bạn đang đặt cuộc sống của mình cạnh cuộc sống của họ để đo xem mình đang ở đâu.",
+      "description": "Nhìn những tấm ảnh có vẻ hạnh phúc, dấu hiệu mối tình mới, hay cuộc sống có vẻ ổn của họ khiến lòng bạn chùng xuống. Nỗi đau chia tay cộng thêm sự so sánh làm suy nghĩ 'chỉ mình mình tụt lại phía sau' càng lớn hơn. Việc mở trang của họ có thể khiến bạn mệt mỏi hơn là được an ủi.",
+      "keywords": "So sánh cuộc sống, Cảm giác chỉ mình tụt lại, Tò mò người mới, Cân đo, Tự đánh giá bản thân",
+      "strengths": "Có tiêu chuẩn rõ ràng về sự phát triển bản thân và ý chí mạnh mẽ muốn trở nên tốt hơn",
+      "reasonDetail": "Khi thấy bài đăng có vẻ hạnh phúc, khi phát hiện dấu hiệu tình mới",
+      "frequentSaying": "\"Người đó sống tốt vậy mà sao chỉ mình thế này\"",
+      "changeTips": "Khi bắt đầu so sánh, hãy viết ra trước 3 điều mình đã làm được trong tháng này\nNhắc bản thân rằng hình ảnh trên SNS chỉ là những khoảnh khắc được chọn lọc, đã qua chỉnh sửa\nĐổi đối tượng so sánh từ người đó thành 'chính mình của một tháng trước'",
+      "oneLiner": "Cuộc sống của người khác là bản đã chỉnh sửa, còn lòng mình là bản gốc. Hãy dành nhiều thời gian hơn để chăm sóc bản gốc đó",
+      "shareLine": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? Kết quả: Kiểu so sánh ⚖️ Hình như là đặt cuộc sống của họ và mình lên bàn cân... đúng bạn luôn á, lưu gấp"
+    },
+    {
+      "title": "Người xem để xoa dịu lòng mình, Kiểu tự an ủi 🫶",
+      "typeName": "Kiểu tự an ủi",
+      "realReason": "Trong lúc xem, lòng tạm thời nhẹ nhõm hơn nên bạn đang được an ủi",
+      "shortDescription": "Bạn không cố làm cho vết thương lớn thêm. Trang đó đã trở thành một sự an ủi quen thuộc để xoa dịu lòng mình lúc nào không hay.",
+      "description": "Nhìn những tấm ảnh cũ, đoạn tin nhắn cũ, hay hồ sơ quen thuộc khiến lòng ấm lên hoặc ổn định hơn một chút. Cảm giác như trang đó đang lấp đầy khoảng trống mà sự chia tay để lại. Nhưng càng dùng nó như một liều an ủi thì càng khó dứt ra, và việc sắp xếp lại cảm xúc sau chia tay cũng bị trì hoãn theo.",
+      "keywords": "An ủi, Sự quen thuộc, Ký ức ấm áp, Cảm giác ổn định, Khó dứt ra",
+      "strengths": "Trân trọng những kỷ niệm đẹp và biết cách tự xoa dịu cảm xúc của chính mình",
+      "reasonDetail": "Những đêm mất ngủ, khi lòng cảm thấy trống trải, khi nhớ lại ảnh hay tin nhắn cũ",
+      "frequentSaying": "\"Xem xong thì thấy đỡ hơn một chút\"",
+      "changeTips": "Chuẩn bị trước một việc thay thế (đi dạo, nghe nhạc, gọi điện cho bạn bè) cho khung giờ cần an ủi, chẳng hạn ban đêm\nLưu giữ những kỷ niệm đẹp trong ghi chú hoặc album riêng của mình, thay vì trong trang của họ\nTrong tuần này, hãy tạo một lần kết nối (với bạn bè, gia đình) để nhận được an ủi từ 'người thật'",
+      "oneLiner": "Cần được an ủi là điều tự nhiên. Nhưng giờ đây bạn hoàn toàn có thể nhận sự an ủi đó từ chính con người hiện tại của mình",
+      "shareLine": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? Kết quả: Kiểu tự an ủi 🫶 Hình như xem là để xoa dịu lòng, thành thói quen an ủi rồi... đúng bạn luôn, lưu lại, bạn thì sao?"
+    },
+    {
+      "title": "Người để tay di chuyển trước cả suy nghĩ, Kiểu thói quen tò mò 📱",
+      "typeName": "Kiểu thói quen tò mò",
+      "realReason": "Bạn muốn mở app và xem thông tin mới theo thói quen hơn là vì lý do gì",
+      "shortDescription": "Có thể bạn mở trang đó không phải vì còn luyến tiếc nhiều. Đó là một thói quen lặp lại, nơi tay di chuyển trước cả khi kịp suy nghĩ.",
+      "description": "Hễ có bài đăng mới là không thể không xem, và xem một bài lại kéo theo xem tiếp các bài khác. Trước khi kịp tìm ra lý do trong lòng, việc lướt đã bắt đầu từ lúc nào. Kích thích nhỏ mỗi lần kiểm tra lặp đi lặp lại đã tạo thành một vòng lặp khó dứt.",
+      "keywords": "Thói quen, Lướt tự động, Tò mò bài đăng mới, Xem liên tục, Khó dừng lại",
+      "strengths": "Nhạy bén với thông tin mới, giàu tò mò và dễ dàng chú tâm vào nhiều việc khác nhau",
+      "reasonDetail": "Khi có thông báo, khi lơ đãng cầm điện thoại, trong những lúc rảnh rỗi",
+      "frequentSaying": "\"Không biết từ lúc nào đã lại mở lên xem\"",
+      "changeTips": "Di chuyển vị trí app hoặc tắt thông báo/chặn trang đó để tăng thêm bước trước khi mở ra\nKhi tay chuẩn bị với lấy điện thoại, hãy làm việc khác (uống nước, giãn cơ) trong 3 phút trước\nĐặt sẵn khung giờ lướt mạng trong ngày, và tắt thông báo ngoài khung giờ đó",
+      "oneLiner": "Nếu đây là thói quen của tay chứ không phải của lòng, thì thay đổi môi trường xung quanh là cách nhanh nhất",
+      "shareLine": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? Kết quả: Kiểu thói quen tò mò 📱 Hình như không phải lòng mà là tay di chuyển trước... đúng bạn luôn haha lưu lại, bạn kiểu nào?"
+    },
+    {
+      "title": "Người có câu chuyện chưa kết thúc, Kiểu chưa khép lại 🧩",
+      "typeName": "Kiểu chưa khép lại",
+      "realReason": "Những lời chưa nói và câu hỏi chưa có lời giải khiến lòng bạn chưa thể khép lại",
+      "shortDescription": "Bạn không phải đang nhớ người đó. Câu chuyện chưa kết thúc đang tìm một dấu chấm hết.",
+      "description": "Những câu hỏi như tại sao lại kết thúc như vậy, lời cuối chưa kịp nói là gì, liệu cuộc chia tay này đã thật sự chắc chắn chưa — vẫn còn đọng lại một góc trong lòng bạn. Việc mở trang của họ cũng là một cách để tìm kiếm cái kết cho câu chuyện đó. Nhưng cái kết không được tạo ra từ SNS của người kia, mà từ chính những dòng bạn tự viết ra để khép lại.",
+      "keywords": "Dấu chấm hết, Lời chưa nói, Câu hỏi chưa có lời giải, Kết thúc dở dang, Tìm kiếm hồi kết",
+      "strengths": "Có trách nhiệm trong việc khép lại mối quan hệ và nỗ lực sắp xếp lại cảm xúc của mình",
+      "reasonDetail": "Khi nhớ lại cuộc trò chuyện cuối cùng, khi nghĩ đến lời chưa kịp nói, khi cảm nhận rõ sự chia tay",
+      "frequentSaying": "\"Lẽ ra lúc đó nên nói hết lời rồi kết thúc\"",
+      "changeTips": "Viết hết những lời chưa nói thành một lá thư không gửi đi\nLiệt kê những câu hỏi chưa có lời giải, rồi chia thành 'điều mình có thể tự trả lời' và 'điều chỉ người kia mới biết'\nChọn một ngày để hoàn tất việc sắp xếp, và lấy việc dọn dẹp trang đó (tắt thông báo, ẩn đi) trong ngày đó làm dấu chấm hết",
+      "oneLiner": "Cái kết không phải do người kia trao cho, mà do chính mình viết ra để khép lại. Viết từng dòng một rồi dấu chấm hết sẽ dần hiện ra",
+      "shareLine": "Tại sao sau chia tay vẫn lén xem SNS người yêu cũ? Kết quả: Kiểu chưa khép lại 🧩 Hình như câu chuyện chưa kết thúc đang tìm dấu chấm hết... đúng bạn luôn, lưu lại, bạn ra gì?"
+    }
+  ]
+}

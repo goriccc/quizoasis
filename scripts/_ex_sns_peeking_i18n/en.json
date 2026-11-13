@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "Why Do I Still Peek at My Ex's SNS After the Breakup?",
+    "description": "It's over — so why do you keep opening that profile? These 10 scenarios reveal the real reason you keep checking, and how to settle your heart.",
+    "tags": ["SNS Peeking", "Breakup Psychology"]
+  },
+  "startMessage": {
+    "line1": "It's over — so why do you keep opening that profile?",
+    "line2": "You swear you won't look, then your hand opens the app anyway. You know it'll tangle your feelings more, but it's hard to stop — and you catch yourself wondering if you're still hung up.",
+    "line3": "Behind what looks like \"stalking\" sits a different heart for everyone. Maybe you want proof they still think of you. Maybe you're comparing lives. Maybe checking soothes you. Maybe it's habit. Or maybe an unfinished story still needs a period. Naming it helps you sort it out.",
+    "line4": "These 10 scenarios show the real reason you keep checking — and how to settle your heart.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why You Peek",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Reason You Keep Checking",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "Another Reason Alongside",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "Moments You Peek",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Settle Your Heart",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+    "startKakao": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+    "startWechat": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+    "startWhatsapp": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+    "startTelegram": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!",
+    "startLine": "Why Do I Still Peek at My Ex's SNS After the Breakup? 🔍 The real reason you keep checking — try it!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing is currently unavailable.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests For You",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "One month after the breakup, your ex's account pops into your head on the commute. You...",
+      "opts": [
+        "Want to compare how they're doing vs you",
+        "Open it for comfort because checking soothes you a bit",
+        "Hand opens the app before the thought finishes",
+        "Unfinished story keeps pulling your mind there"
+      ]
+    },
+    {
+      "q": "1 a.m., can't sleep. You...",
+      "opts": [
+        "Look for old photos still up and soothe yourself with that warmth",
+        "Scroll aimlessly and somehow land on their account",
+        "Unsaid words rise so you check what changed",
+        "Hunt for traces they posted thinking of you"
+      ]
+    },
+    {
+      "q": "New post notification from your ex. You...",
+      "opts": [
+        "Can't not look just because it's new — check immediately",
+        "Want to confirm if your story is really over",
+        "Read line by line for anything that might be about you",
+        "First weigh whether they look happier than you"
+      ]
+    },
+    {
+      "q": "Their account went private. You...",
+      "opts": [
+        "Feel unfinished and hollow — is this how it ends?",
+        "Wonder if they did it as a signal for you",
+        "Wonder if they're hiding a new person and how they compare to you",
+        "Tell yourself it's a relief you can't see anymore"
+      ]
+    },
+    {
+      "q": "Friend asks how they're doing. You...",
+      "opts": [
+        "First wonder if they talk about you and how",
+        "Compare your life to theirs",
+        "Hearing about them oddly settles you",
+        "Say you don't know while itching to check your phone"
+      ]
+    },
+    {
+      "q": "Day three of swearing not to look. You...",
+      "opts": [
+        "Tried to hold out but habit opens the app",
+        "Feel unfinished unless you check",
+        "Still wonder if their life looks better than yours",
+        "Soft moments after checking make it hard to quit"
+      ]
+    },
+    {
+      "q": "You reopen the last chat. You...",
+      "opts": [
+        "Linger on the awkward ending",
+        "Scan for signs they might reach out / still think of you",
+        "Warmth returns reading old messages",
+        "Want to check small changes like last active / profile pic"
+      ]
+    },
+    {
+      "q": "They posted a fun photo with friends. You...",
+      "opts": [
+        "Hunt for regret or a look that recalls you",
+        "Compare — you're still hurting and they seem fine",
+        "One post leads to scrolling more posts",
+        "Questions about how it ended come back"
+      ]
+    },
+    {
+      "q": "A month later, signs of a new romance. You...",
+      "opts": [
+        "Compare yourself and wonder if you weren't enough",
+        "Tell yourself it's settled but want one more look for peace",
+        "The finality hits and unfinished feelings rise",
+        "Want to know if it's truly over / if they forgot you"
+      ]
+    },
+    {
+      "q": "Friend asks if you still check their account. Closest inner truth?",
+      "opts": [
+        "Honestly checking became a soothing habit",
+        "More hand-habit than reason — hard to stop",
+        "Want to confirm they still think of you",
+        "Want to compare how they live without you"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "type": "Type1",
+      "emoji": "🔍",
+      "title": "The One Who Wants to Know If You're Still on Their Mind, Lingering-Check Type 🔍",
+      "typeName": "Lingering-Check Type",
+      "realReason": "You want to know if you're still on their mind.",
+      "shortDescription": "You're not stalking. You just want proof they still think about you — some lingering trace.",
+      "description": "The wording of a new post, an account going private, a tiny profile change — each one feels like a signal aimed at you. Checking gives you a brief flicker of movement in your heart, but since there's never a clear answer, you end up going back in again. This feeling is proof that love still lingers, but it also burns a lot of energy on interpretation.",
+      "keywords": "Looking for Clues, Reading Signals, Do They Think of Me, Unfinished Feelings, Overanalyzing",
+      "strengths": "A deep heart that took the relationship seriously and doesn't erase people easily",
+      "reasonDetail": "When you spot a new post, a profile change, or an active-status ping — or reopen your last chat",
+      "frequentSaying": "\"I wonder if they're still thinking about me.\"",
+      "changeTips": "When the urge to check hits, write down in one sentence what answer you're actually looking for.\nMute or hide their account so new notifications never reach your eyes.\nWrite two columns side by side: what you interpreted as a signal, and what's actually confirmed fact.",
+      "oneLiner": "The more you read into clues, the bigger they grow. The answer isn't in their profile — it's in your own heart.",
+      "shareLine": "Why do I still stalk my ex's SNS after the breakup? My result: Lingering-Check Type 🔍 Apparently I just want to know if they still think about me... this is SO me, I got chills. Saved it. What'd you get?"
+    },
+    {
+      "type": "Type2",
+      "emoji": "⚖️",
+      "title": "The One Who Puts Themselves and Their Ex on a Scale, Comparison Type ⚖️",
+      "typeName": "Comparison Type",
+      "realReason": "You're measuring yourself by comparing your life to theirs.",
+      "shortDescription": "You're not curious about them. You're placing your life next to theirs to measure where you stand.",
+      "description": "A happy-looking photo, a hint of someone new, signs they're doing well — any of it can sink your mood. Comparison piles on top of heartbreak, and the thought \"Am I the only one falling behind?\" grows bigger. Checking their account rarely brings comfort — it usually just wears you out more.",
+      "keywords": "Comparing Updates, Feeling Left Behind, Curious About Their New Person, Weighing Yourself, Self-Evaluation",
+      "strengths": "Clear personal standards and a strong drive to keep growing and improving",
+      "reasonDetail": "When you see a happy-looking post, or spot a clue they've started dating someone new",
+      "frequentSaying": "\"They're doing great and I'm the only one still a mess.\"",
+      "changeTips": "The moment comparison kicks in, write down three things you've accomplished this month.\nRemember that what's posted online is just an edited highlight reel, not the full picture.\nSwap your point of comparison from them to 'yourself a month ago' instead.",
+      "oneLiner": "Their updates are the edited version; your heart is the original. Spend more time taking care of the original.",
+      "shareLine": "Why do I still stalk my ex's SNS after the breakup? My result: Comparison Type ⚖️ Apparently I'm putting their life and mine on a scale... this is literally me, I got chills. Saving this. What'd you get?"
+    },
+    {
+      "type": "Type3",
+      "emoji": "🫶",
+      "title": "The One Who Soothes Themselves by Looking, Self-Comfort Type 🫶",
+      "typeName": "Self-Comfort Type",
+      "realReason": "Watching gives your mind a brief moment of ease — it's become a form of comfort.",
+      "shortDescription": "You're not trying to deepen the wound. That account has quietly become a familiar comfort that soothes you.",
+      "description": "Old photos, old messages, that familiar profile — they make you feel a little warmer, a little steadier. It's as if that account fills the empty space the breakup left behind. But the more you lean on it for comfort, the harder it gets to stop — and moving on gets pushed further back.",
+      "keywords": "Comfort, Familiarity, Warm Memories, A Sense of Calm, Hard to Quit",
+      "strengths": "A warmth that treasures good memories and knows how to soothe your own emotions",
+      "reasonDetail": "On sleepless nights, when you feel hollow inside, or when old photos and messages come to mind",
+      "frequentSaying": "\"Looking at it just... makes me feel a little better.\"",
+      "changeTips": "For the hours you tend to need comfort (like at night), pre-plan a replacement routine — a walk, music, or calling a friend.\nKeep the good memories in your own notes or photo album instead of on their account.\nThis week, make at least one real connection — with a friend or family member — where you can get comfort from an actual person.",
+      "oneLiner": "Of course you need comfort. It's just that now, you're allowed to get it from the present version of yourself.",
+      "shareLine": "Why do I still stalk my ex's SNS after the breakup? My result: Self-Comfort Type 🫶 Apparently checking became my go-to comfort routine... this is SO me, I got chills. Saved. What'd you get?"
+    },
+    {
+      "type": "Type4",
+      "emoji": "📱",
+      "title": "The One Whose Hand Moves First, Curiosity-Habit Type 📱",
+      "typeName": "Curiosity-Habit Type",
+      "realReason": "You open the app out of habit more than reason, just wanting to see what's new.",
+      "shortDescription": "You might not even be going in because of lingering feelings. It's a repeated habit where your hand moves before your mind does.",
+      "description": "When a new post shows up, you simply can't not look — and one post leads to the next, and the next. The scrolling has already started before you even figure out why. The small hit of stimulation each time you check has repeated into a loop that's hard to break.",
+      "keywords": "Habit, Autopilot Scrolling, Curious About New Posts, Binge-Checking, Hard to Stop",
+      "strengths": "Quick to pick up on new information and endlessly curious, which makes it easy for you to get absorbed in all kinds of things",
+      "reasonDetail": "When a notification pops up, when you're mindlessly scrolling your phone, or in any idle, bored moment",
+      "frequentSaying": "\"I didn't even realize it — I was on their page again.\"",
+      "changeTips": "Move the app, or mute/block their account, to add extra steps before you can even open it.\nWhen your hand reaches for it, do something else first for three minutes — drink water, stretch, anything.\nSet a specific time of day for scrolling, and keep notifications off the rest of the time.",
+      "oneLiner": "If it's your hand's habit rather than your heart, changing your environment is the fastest fix.",
+      "shareLine": "Why do I still stalk my ex's SNS after the breakup? My result: Curiosity-Habit Type 📱 Apparently it's my hand that moves first, not my feelings... this is literally me LOL, saving this. What'd you get?"
+    },
+    {
+      "type": "Type5",
+      "emoji": "🧩",
+      "title": "The One Whose Story Isn't Over Yet, Unfinished-Story Type 🧩",
+      "typeName": "Unfinished-Story Type",
+      "realReason": "Unsaid words and unanswered questions are still hanging there — your heart hasn't gotten closure.",
+      "shortDescription": "You don't actually miss them. It's an unfinished story still searching for its period.",
+      "description": "Why it ended the way it did, what you never got to say, whether this breakup is really final — questions like these are still sitting in a corner of your heart. Opening their account is, in a way, an attempt to find the ending to that story. But the ending isn't written on their SNS — it's written in the sentences you put together yourself.",
+      "keywords": "The Final Period, Words Left Unsaid, Unanswered Questions, An Awkward Ending, Searching for Closure",
+      "strengths": "A conscientious drive to close relationships responsibly, and the will to actually work through your emotions",
+      "reasonDetail": "When you remember your last conversation, recall the words you never said, or when the breakup finally feels real",
+      "frequentSaying": "\"I should have said that one thing before it ended.\"",
+      "changeTips": "Write the words you never said as a letter you'll never send — and finish it all the way through.\nList out your unanswered questions, then sort them into 'ones I can answer myself' and 'ones only they would know.'\nPick a day to call it done, and treat muting or hiding their account that day as your official period.",
+      "oneLiner": "The ending isn't something they hand you — it's something you write and close yourself. Line by line, the period eventually lands.",
+      "shareLine": "Why do I still stalk my ex's SNS after the breakup? My result: Unfinished-Story Type 🧩 Apparently my story just hasn't found its period yet... this is literally me, chills. Saved it. What'd you get?"
+    }
+  ]
+}
