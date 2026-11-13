@@ -1,0 +1,63 @@
+{
+  "phase3AnxiousWhenLovedTest": {
+    "startMessage": {
+      "line1": "Di samping orang yang baik padamu, kenapa satu sudut hati tetap gelisah?",
+      "line2": "Semakin lembut pasanganmu, semakin muncul pikiran 'ini akan bertahan sampai kapan' di balik rasa senang. Hari yang semakin baik justru membuat hatimu tegang seolah akhir sudah dekat, dan kamu sendiri pun sulit memahami perasaan itu.",
+      "line3": "Kecemasan ini punya akar yang berbeda pada setiap orang. Bisa karena kamu selalu merasakan firasat perpisahan lebih dulu, bisa karena kamu merasa tidak layak menerima cinta, bisa karena kamu merasa harus membalas sebesar yang diterima, bisa karena kamu takut berharap lalu kecewa, atau bisa karena pengalaman masa lalu kembali terasa. Saat alasannya jelas, kecemasan akan jauh lebih ringan.",
+      "line4": "Lewat 10 situasi, temukan alasan asli kenapa kamu semakin bahagia justru semakin cemas, dan cara menenangkan hatimu.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Iklan",
+      "goToTest": "Ikuti tes",
+      "startTest": "Cari tahu kenapa cemas",
+      "linkCopy": "Salin tautan",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Tes serupa lainnya",
+      "realReason": "Akar asli dari kecemasan",
+      "keywords": "Kata kunci utama",
+      "scoreTitle": "Skor per tipe",
+      "scoreUnit": "poin",
+      "hiddenReason": "Akar yang menyertai",
+      "strengths": "Kekuatan tipe ini",
+      "reasonDetail": "Momen kecemasan muncul",
+      "frequentSaying": "Kalimat yang sering diucapkan tipe ini",
+      "changeTips": "Cara menenangkan hati",
+      "oneLiner": "Komentar singkat",
+      "shareResult": "Bagikan hasil",
+      "popularBadge": "Populer",
+      "retake": "Ulangi tes",
+      "otherTests": "Lihat tes lain"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+      "startKakao": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+      "startWechat": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+      "startWhatsapp": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+      "startTelegram": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+      "startLine": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!"
+    },
+    "alerts": {
+      "linkCopied": "Tautan berhasil disalin!",
+      "resultCopied": "Hasil berhasil disalin ke clipboard!",
+      "shareFailed": "Fitur berbagi saat ini tidak dapat digunakan.",
+      "wechatCopy": "Tautan berhasil disalin! Tempel di WeChat untuk membagikannya.",
+      "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Coba lagi sebentar lagi.",
+      "kakaoError": "Terjadi kesalahan saat membagikan ke KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 tes serupa yang direkomendasikan",
+      "popularTestsTop5": "🔥 Top 5 tes paling populer saat ini"
+    }
+  }
+}

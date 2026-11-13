@@ -1,0 +1,63 @@
+{
+  "phase3AnxiousWhenLovedTest": {
+    "startMessage": {
+      "line1": "Bên cạnh người đối xử tốt với mình, sao một góc lòng vẫn cứ bất an?",
+      "line2": "Người yêu càng dịu dàng, phía sau niềm vui lại hiện lên câu hỏi 'liệu điều này kéo dài được bao lâu'. Ngày càng tốt đẹp, lòng lại càng căng lên như sắp đến hồi kết, và chính bạn cũng khó hiểu được cảm xúc đó của mình.",
+      "line3": "Nỗi bất an ở mỗi người có gốc rễ khác nhau. Có thể vì bạn luôn dự cảm trước về một kết thúc, có thể vì bạn cảm thấy mình không đáng được nhận yêu thương, có thể vì bạn nghĩ nhận bao nhiêu phải trả lại bấy nhiêu, có thể vì bạn sợ kỳ vọng rồi sụp đổ, hoặc có thể vì một trải nghiệm cũ đang sống lại. Khi hiểu rõ lý do, nỗi bất an sẽ nhẹ đi rất nhiều.",
+      "line4": "Qua 10 tình huống, hãy tìm ra lý do thật sự vì sao bạn càng hạnh phúc càng bất an, và cách để lòng dịu lại.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Quảng cáo",
+      "goToTest": "Làm bài test",
+      "startTest": "Tìm hiểu vì sao bất an",
+      "linkCopy": "Sao chép liên kết",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Các bài test tương tự",
+      "realReason": "Gốc rễ thật sự của nỗi bất an",
+      "keywords": "Từ khóa chính",
+      "scoreTitle": "Điểm theo kiểu",
+      "scoreUnit": "điểm",
+      "hiddenReason": "Gốc rễ đi kèm",
+      "strengths": "Điểm mạnh của kiểu này",
+      "reasonDetail": "Khoảnh khắc bất an trỗi dậy",
+      "frequentSaying": "Câu kiểu này hay nói",
+      "changeTips": "Cách để lòng dịu lại",
+      "oneLiner": "Nhận xét một câu",
+      "shareResult": "Chia sẻ kết quả",
+      "popularBadge": "Phổ biến",
+      "retake": "Làm lại",
+      "otherTests": "Xem bài test khác"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+      "startKakao": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+      "startWechat": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+      "startWhatsapp": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+      "startTelegram": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+      "startLine": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!"
+    },
+    "alerts": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "resultCopied": "Đã sao chép kết quả vào clipboard!",
+      "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+      "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+      "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+      "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+      "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+    }
+  }
+}

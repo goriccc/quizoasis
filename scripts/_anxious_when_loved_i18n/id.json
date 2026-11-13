@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Kenapa Semakin Dicintai, Malah Semakin Cemas?",
+    "description": "Di samping orang yang baik padamu, kenapa satu sudut hati tetap gelisah? Lewat 10 situasi, ketahui alasan asli kenapa semakin bahagia justru semakin cemas — dan cara menenangkan hati.",
+    "tags": ["Kecemasan Cinta", "Attachment", "Psikologi Pacaran"]
+  },
+  "startMessage": {
+    "line1": "Di samping orang yang baik padamu, kenapa satu sudut hati tetap gelisah?",
+    "line2": "Semakin lembut pasanganmu, semakin muncul pikiran 'ini akan bertahan sampai kapan' di balik rasa senang. Hari yang semakin baik justru membuat hatimu tegang seolah akhir sudah dekat, dan kamu sendiri pun sulit memahami perasaan itu.",
+    "line3": "Kecemasan ini punya akar yang berbeda pada setiap orang. Bisa karena kamu selalu merasakan firasat perpisahan lebih dulu, bisa karena kamu merasa tidak layak menerima cinta, bisa karena kamu merasa harus membalas sebesar yang diterima, bisa karena kamu takut berharap lalu kecewa, atau bisa karena pengalaman masa lalu kembali terasa. Saat alasannya jelas, kecemasan akan jauh lebih ringan.",
+    "line4": "Lewat 10 situasi, temukan alasan asli kenapa kamu semakin bahagia justru semakin cemas, dan cara menenangkan hatimu.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Iklan",
+    "goToTest": "Ikuti tes",
+    "startTest": "Cari tahu kenapa cemas",
+    "linkCopy": "Salin tautan",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Tes serupa lainnya",
+    "realReason": "Akar asli dari kecemasan",
+    "keywords": "Kata kunci utama",
+    "scoreTitle": "Skor per tipe",
+    "scoreUnit": "poin",
+    "hiddenReason": "Akar yang menyertai",
+    "strengths": "Kekuatan tipe ini",
+    "reasonDetail": "Momen kecemasan muncul",
+    "frequentSaying": "Kalimat yang sering diucapkan tipe ini",
+    "changeTips": "Cara menenangkan hati",
+    "oneLiner": "Komentar singkat",
+    "shareResult": "Bagikan hasil",
+    "popularBadge": "Populer",
+    "retake": "Ulangi tes",
+    "otherTests": "Lihat tes lain"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+    "startKakao": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+    "startWechat": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+    "startWhatsapp": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+    "startTelegram": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!",
+    "startLine": "Kenapa Semakin Dicintai, Malah Semakin Cemas? ⏳ Alasan asli kenapa semakin bahagia justru semakin cemas, kamu juga coba yuk!"
+  },
+  "alerts": {
+    "linkCopied": "Tautan berhasil disalin!",
+    "resultCopied": "Hasil berhasil disalin ke clipboard!",
+    "shareFailed": "Fitur berbagi saat ini tidak dapat digunakan.",
+    "wechatCopy": "Tautan berhasil disalin! Tempel di WeChat untuk membagikannya.",
+    "kakaoInit": "Sedang menyiapkan fitur berbagi KakaoTalk. Coba lagi sebentar lagi.",
+    "kakaoError": "Terjadi kesalahan saat membagikan ke KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 tes serupa yang direkomendasikan",
+    "popularTestsTop5": "🔥 Top 5 tes paling populer saat ini"
+  },
+  "questions": [
+    {
+      "q": "Pasanganmu menyiapkan acara yang penuh perhatian untuk hari jadi. Kamu bahagia, tapi satu sudut hatimu tetap cemas. Pikiran yang paling dekat denganmu?",
+      "opts": [
+        "Tidak yakin apakah aku cukup baik untuk menerima cinta seperti ini",
+        "Sudah menerima sebanyak ini, aku juga harus membalas yang setara — rasanya jadi beban",
+        "Kalau terus berharap seperti ini, bagaimana kalau nanti semuanya runtuh",
+        "Teringat dulu juga sebaik ini lalu tiba-tiba berakhir"
+      ]
+    },
+    {
+      "q": "Pasanganmu bilang, 'Belakangan ini senang banget bisa bersamamu'. Kamu...",
+      "opts": [
+        "Merasa harus membalas usaha sebesar kata-kata itu — hatinya jadi berat",
+        "Takut percaya dan berharap lalu malah terluka, jadi lebih berhati-hati daripada senang",
+        "Teringat dulu juga dengar kata 'bahagia' lalu setelahnya putus",
+        "Merasa waktu indah ini tidak akan bertahan lama dan segera berakhir"
+      ]
+    },
+    {
+      "q": "Satu minggu penuh berlalu tanpa pertengkaran, hanya hari-hari yang damai. Kamu...",
+      "opts": [
+        "Takut kedamaian yang berlanjut akan membuat harapanmu makin besar, jadi sengaja menahan hati",
+        "Kedamaian ini terasa mirip dengan cara hubungan lama berakhir, jadi hati jadi waspada lebih dulu",
+        "Perasaan bahwa waktu baik ini tidak akan bertahan dan tiba-tiba berakhir makin membesar",
+        "Ragu apakah kamu pantas menikmati ketenangan seperti ini"
+      ]
+    },
+    {
+      "q": "Pasanganmu menyelesaikan urusanmu dan bilang, 'Nggak usah khawatir, biar aku yang urus'. Kamu...",
+      "opts": [
+        "Teringat momen dulu orang yang begitu baik padamu tiba-tiba menghilang",
+        "Semakin baik dia padamu, semakin besar rasanya kalau nanti berakhir — hati sudah sakit lebih dulu",
+        "Ragu dan malu, merasa tidak pantas menerima bantuan seperti ini",
+        "Merasa sudah terlalu banyak berutang, jadi harus membalasnya — hati jadi berat"
+      ]
+    },
+    {
+      "q": "Pasanganmu bilang, 'Tahun depan kita jalan-jalan bareng lagi ya'. Kamu...",
+      "opts": [
+        "Begitu mendengar janji itu, langsung muncul firasat apakah hubungan masih berlanjut sampai saat itu",
+        "Muncul keraguan apakah kamu cukup berharga untuk menerima janji seperti itu",
+        "Merasa terbebani, seolah harus melakukan sesuatu yang setara karena sudah menerima janji itu",
+        "Takut berharap pada janji itu lalu kecewa kalau tidak terwujud, jadi memilih tidak berharap sama sekali"
+      ]
+    },
+    {
+      "q": "Pasanganmu bercerita tentang hal berat dan bilang, 'Aku hanya bisa cerita ini padamu'. Kamu...",
+      "opts": [
+        "Senang karena dipercaya sebesar itu, tapi takut membayangkan saat kepercayaan itu hancur, sehingga ragu untuk berharap",
+        "Teringat dulu orang yang mempercayaimu seperti itu tiba-tiba pergi, jadi merasa cemas",
+        "Tidak percaya diri apakah kamu cukup bisa mendengarkan dengan baik untuk pantas menerima kepercayaan itu",
+        "Merasa beban makin besar untuk mendengarkan lebih baik lagi demi membalas kepercayaan yang diterima"
+      ]
+    },
+    {
+      "q": "Pasanganmu pulang kerja lebih awal dan datang mengunjungimu secara mendadak. Kamu...",
+      "opts": [
+        "Teringat pengalaman bahwa setelah momen indah seperti ini selalu datang sesuatu yang buruk, jadi hati jadi gelisah",
+        "Merasa kebahagiaan ini tidak akan bertahan lama, jadi mulai membayangkan akhirnya sejak sekarang",
+        "Merasa terbebani karena berpikir harus membalas perhatian itu dengan hal yang setara",
+        "Takut berharap pada kebahagiaan ini lalu nanti hancur, jadi sengaja bersikap datar"
+      ]
+    },
+    {
+      "q": "Pasanganmu bilang, 'Kamu benar-benar orang yang berharga bagiku'. Kamu...",
+      "opts": [
+        "Sekilas berpikir kebahagiaan ini tidak akan bertahan lama dan segera berakhir",
+        "Ragu apakah kata-kata itu memang pantas untukmu, sehingga tidak bisa menerimanya dengan nyaman",
+        "Takut percaya dan berharap pada kata-kata itu lalu terluka, jadi mundur selangkah dari kepercayaan itu",
+        "Teringat dulu juga pernah mendengar kata 'berharga' itu, tapi akhirnya orang itu tetap pergi"
+      ]
+    },
+    {
+      "q": "Dalam perjalanan pulang setelah menghabiskan hari yang sempurna dengan pasangan. Kamu...",
+      "opts": [
+        "Ada momen ragu apakah kamu pantas menikmati hari yang sebaik ini",
+        "Merasa harus melakukan lebih banyak lagi lain kali karena sudah menerima sebanyak ini hari ini — seperti tugas yang membebani hati",
+        "Teringat hari sempurna dulu yang justru diikuti perpisahan, hati jadi berat",
+        "Muncul firasat hari baik ini akan menjadi yang terakhir, hati jadi gelisah"
+      ]
+    },
+    {
+      "q": "Pasanganmu bertanya, 'Kenapa belakangan ini kamu terlihat cemas?'. Hal yang paling dekat dengan isi hatimu?",
+      "opts": [
+        "Takut tidak bisa membalas sebesar yang diterima, jadi hati selalu merasa seperti berutang",
+        "Takut berharap pada kebahagiaan lalu hancur, sehingga berharap itu sendiri yang menakutkan",
+        "Semakin besar kebahagiaan, semakin muncul firasat bahwa hari berakhirnya juga semakin dekat",
+        "Terus-menerus ragu apakah kamu pantas untuk orang yang baik seperti itu"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Orang yang merasakan firasat akhir saat sedang bahagia, Tipe Firasa Perpisahan ⏳",
+      "typeName": "Tipe Firasa Perpisahan",
+      "realReason": "Semakin besar momen baik, kamu semakin membayangkan lebih dulu hari semuanya berakhir",
+      "shortDescription": "Kamu tidak merasa tidak nyaman dengan kebahagiaan. Semakin besar kebahagiaan, semakin kamu merasa hari kehilangannya juga semakin dekat, sehingga hatimu tegang lebih dulu.",
+      "description": "Di momen-momen baik seperti sebuah acara, seminggu yang damai, atau hari yang sempurna, justru muncul pikiran 'mungkin ini yang terakhir'. Membayangkan akhir lebih dulu terasa seperti mengurangi dampak kekecewaan, tapi kebahagiaan saat ini pun ikut berkurang. Waktu untuk menikmati kebahagiaan mudah berubah menjadi waktu untuk bersiap menghadapi kecemasan.",
+      "keywords": "Firasat akhir, Rasa 'mungkin terakhir', Membayangkan lebih dulu, Hati tegang, Bahagia jadi cemas",
+      "strengths": "Menghargai hubungan dan merasakan nilai momen saat ini secara mendalam",
+      "reasonDetail": "Saat menerima acara besar, saat mendengar janji tentang masa depan, saat semua damai tanpa pertengkaran",
+      "frequentSaying": "\"Apa boleh ya sebahagia ini?\"",
+      "changeTips": "Saat merasakan firasat akhir, periksa faktanya: 'Apakah benar-benar ada hal buruk yang terjadi sekarang?'\nSimpan momen bahagia lewat foto atau catatan untuk melatih diri tetap berada di 'saat ini'\nKatakan dengan jujur pada pasangan, \"Aku jadi cemas justru karena bahagia\"\nJika kecemasan membayangkan akhir ini terus berulang di setiap momen baik dan memengaruhi keseharian (tidur, konsentrasi), jangan coba selesaikan sendirian — bicaralah dengan profesional konseling",
+      "oneLiner": "Hati yang bersiap menghadapi akhir adalah tanda cintamu sangat dalam. Coba alihkan sedikit energi itu untuk kebahagiaan hari ini",
+      "shareLine": "Kenapa Semakin Dicintai, Malah Semakin Cemas? Hasil: Tipe Firasa Perpisahan ⏳ Ternyata aku suka membayangkan akhir duluan saat sedang bahagia... merinding. Pamer kartu hasil di grup chat! Kalian dapat tipe apa?"
+    },
+    {
+      "title": "Orang yang merasa tidak pantas menerima cinta, Tipe Ragu Kelayakan 🪞",
+      "typeName": "Tipe Ragu Kelayakan",
+      "realReason": "Pikiran bahwa cinta ini terlalu berlebihan untukmu membuat cinta itu terasa mencemaskan",
+      "shortDescription": "Kamu tidak cemas karena kurang cinta. Kamu cemas karena cinta yang kamu terima tidak terasa benar-benar milikmu.",
+      "description": "Di hadapan acara yang penuh perhatian, kata-kata yang menghargaimu, atau hari yang sempurna, keraguan 'apakah aku ini orang yang pantas menerima ini' justru muncul lebih dulu. Semakin besar cintanya, semakin terasa berlebihan untukmu, dan kamu takut suatu hari sosok asli dirimu terbongkar lalu cinta itu hilang, sehingga hatimu tidak bisa tenang.",
+      "keywords": "Terasa berlebihan, Kelayakan menerima, Takut terbongkar, Tidak nyaman dipuji, Ragu pada diri sendiri",
+      "strengths": "Rendah hati, menghargai apa yang diterima, dan tulus terhadap pasangan",
+      "reasonDetail": "Saat menerima perhatian atau pujian, saat mendengar kata-kata yang menghargaimu, saat waktu tenang berlanjut",
+      "frequentSaying": "\"Orang seperti aku ini apanya yang bagus sih?\"",
+      "changeTips": "Catat kata-kata baik yang diucapkan pasangan apa adanya, lalu baca ulang sebagai fakta tanpa meragukannya\nSaat dipuji, coba jawab \"Terima kasih\" lebih dulu, bukan \"Enggak kok\"\nTulis pencapaian dan pengakuan yang kamu dapat di luar hubungan untuk membangun dasar kepercayaan pada dirimu sendiri\nJika pikiran bahwa dirimu tidak berharga terus muncul kuat tidak hanya dalam hubungan tapi di keseharian secara umum, bicaralah dengan profesional konseling",
+      "oneLiner": "Tempat untuk cinta masuk sudah ada dalam dirimu. Sesekali, yakinkan dirimu bahwa kamu pantas menerimanya",
+      "shareLine": "Kenapa Semakin Dicintai, Malah Semakin Cemas? Hasil: Tipe Ragu Kelayakan 🪞 Ternyata cemas karena cinta yang diterima tidak terasa milikku... agak nyesek sih. Pamer kartu hasil di grup chat! Kalian gimana?"
+    },
+    {
+      "title": "Orang yang merasa harus membalas sebesar yang diterima, Tipe Merasa Berutang 🎒",
+      "typeName": "Tipe Merasa Berutang",
+      "realReason": "Tekanan untuk membalas cinta yang diterima secara setara membuat hatimu terasa berat",
+      "shortDescription": "Kamu tidak merasa cinta itu memberatkan. Pikiran bahwa kamu harus membalas sebesar yang diterima yang membuat cinta terasa seperti tugas.",
+      "description": "Setiap kali menerima acara, bantuan, atau kepercayaan, hitungan 'aku juga harus melakukan hal yang setara' langsung dimulai di kepalamu. Cinta tidak lagi terasa sebagai aliran memberi dan menerima secara alami, tapi seperti utang yang harus dibayar, sehingga semakin baik pasanganmu padamu, semakin berat pula hatimu. Kecemasan bahwa hubungan akan goyah jika suatu hari kamu tidak bisa membalasnya pun ikut muncul.",
+      "keywords": "Membalas setara, Tugas yang harus diselesaikan, Tekanan, Hitung-hitungan, Rasa berutang",
+      "strengths": "Rasa tanggung jawab yang tinggi dan ketulusan untuk memberi serta menerima secara adil dalam hubungan",
+      "reasonDetail": "Saat menerima acara atau bantuan, saat dipercaya untuk mendengar cerita berat, setelah hari yang sempurna",
+      "frequentSaying": "\"Aku juga harus melakukan hal yang setara untuk dia\"",
+      "changeTips": "Saat menerima sesuatu, cukup ucapkan \"Terima kasih\" dan berhenti di situ, jangan langsung mencari cara membalasnya\nKatakan dengan jujur pada pasangan, \"Aku merasa terbebani karena berpikir harus membalas ini\"\nPeriksa hubungan memberi-menerima dengan pertanyaan 'apakah kami berdua nyaman', bukan dengan menghitung angka\nJika rasa harus membalas ini terus menekanmu dan menyebar ke seluruh hubungan, cari tahu akarnya bersama profesional konseling",
+      "oneLiner": "Cinta bukan untuk dibayar, tapi untuk dibagi. Saat hari-hari menerima tanpa beban semakin bertumpuk, tekanannya pun akan mengecil",
+      "shareLine": "Kenapa Semakin Dicintai, Malah Semakin Cemas? Hasil: Tipe Merasa Berutang 🎒 Ternyata hati berat karena merasa harus membalas sebesar yang diterima... bener banget. Pamer kartu hasil di grup chat! Kalian tipe apa?"
+    },
+    {
+      "title": "Orang yang takut berharap lalu kecewa, Tipe Takut Berharap 🌫️",
+      "typeName": "Tipe Takut Berharap",
+      "realReason": "Rasa sakit saat berharap lalu harapan itu hancur membuatmu menekan harapan itu sendiri",
+      "shortDescription": "Kamu tidak membenci kebahagiaan. Kamu hanya takut pada rasa sakit saat berharap lalu harapan itu runtuh, sehingga tidak bisa menyerahkan hatimu sepenuhnya pada kebahagiaan.",
+      "description": "Di hadapan sebuah janji, kepercayaan, atau kedamaian, kehati-hatian selalu datang lebih dulu daripada kebahagiaan, dan kamu sengaja bersikap datar. Menurunkan harapan memang membuatmu lebih sedikit terluka, tapi juga membuatmu merasakan kebahagiaan saat ini lebih sedikit. Ini adalah bentuk pertahanan diri yang hampir menyatukan harapan dan luka menjadi satu hal yang sama.",
+      "keywords": "Takut berharap, Sikap datar, Menekan hati, Mundur selangkah, Pertahanan diri",
+      "strengths": "Hati-hati, tidak mudah terombang-ambing oleh impuls, dan mencintai dengan sangat dalam saat sudah membuka hati",
+      "reasonDetail": "Saat mendengar janji tentang masa depan, saat dipercaya, saat kedamaian berlanjut",
+      "frequentSaying": "\"Kayaknya nggak boleh terlalu berharap deh\"",
+      "changeTips": "Saat harapan muncul, tulis dua baris terpisah: 'alasan boleh berharap' dan 'alasan yang mencemaskan'\nCoba buka harapan kecil satu per satu (seperti janji akhir pekan ini), untuk mengumpulkan pengalaman bahwa tidak terjadi apa-apa\nBeri tahu pasangan, \"Aku takut berharap jadi sering bersikap datar\" untuk mengurangi kesalahpahaman\nJika rasa takut berharap ini terus berulang dan memengaruhi keseharianmu, telusuri akar kecemasan ini dengan aman bersama profesional konseling",
+      "oneLiner": "Harapan bukan benih dari luka, melainkan pintu menuju cinta. Membukanya sedikit demi sedikit juga tidak masalah",
+      "shareLine": "Kenapa Semakin Dicintai, Malah Semakin Cemas? Hasil: Tipe Takut Berharap 🌫️ Ternyata aku suka menekan harapan karena takut hancur... bener banget jadi diem. Pamer kartu hasil di grup chat! Kalian dapat tipe apa?"
+    },
+    {
+      "title": "Orang yang kenangan perpisahan lama kembali hidup, Tipe Kilas Balik Masa Lalu 🕰️",
+      "typeName": "Tipe Kilas Balik Masa Lalu",
+      "realReason": "Pengalaman dulu yang pernah baik lalu berakhir kini menimpa kebahagiaan yang sedang kamu rasakan",
+      "shortDescription": "Kamu bukan tidak percaya pada pasangan saat ini. Kenangan dulu yang pernah baik lalu berakhir sedang mengirim sinyal peringatan pada kebahagiaanmu sekarang.",
+      "description": "Kata-kata lembut, hari yang damai, pengakuan yang menghargaimu justru terasa mirip dengan momen tepat sebelum perpisahan di masa lalu. Pola masa lalu bereaksi lebih kuat daripada tindakan saat ini, sehingga muncul kecemasan bahwa akhir yang sama akan terulang lagi.",
+      "keywords": "Kenangan lama, Suasana yang mirip, Sinyal peringatan, Rasa akan terulang, Bayangan masa lalu",
+      "strengths": "Memiliki kekuatan dari pengalaman, berhati-hati, dan mencintai dengan dalam serta kokoh saat sudah membuka hati",
+      "reasonDetail": "Saat menghadapi kata-kata atau situasi yang mirip masa lalu, saat keheningan datang setelah momen baik",
+      "frequentSaying": "\"Dulu juga berakhir di saat seperti ini\"",
+      "changeTips": "Tulis dua baris terpisah dalam tindakan pasangan saat ini: 'fakta yang sudah terkonfirmasi' dan 'kekhawatiran yang muncul karena kenangan lama'\nSaat kecemasan muncul, tanyakan dulu: 'Apakah benar-benar ada hal yang menyakitiku sekarang?'\nTulis tiga perbedaan antara perpisahan dulu dan sekarang, lalu baca kembali saat diperlukan\nJika kenangan perpisahan masa lalu sering muncul dan membuat hubungan serta keseharianmu sekarang terasa berat, rapikan kenangan itu dengan aman bersama profesional konseling",
+      "oneLiner": "Adanya bayangan berarti pernah ada cahaya di sana. Coba percayai cahaya saat ini perlahan-lahan, itu tidak masalah",
+      "shareLine": "Kenapa Semakin Dicintai, Malah Semakin Cemas? Hasil: Tipe Kilas Balik Masa Lalu 🕰️ Ternyata kenangan perpisahan lama menimpa kebahagiaan sekarang... merinding. Pamer kartu hasil di grup chat! Kalian karena alasan apa?"
+    }
+  ]
+}

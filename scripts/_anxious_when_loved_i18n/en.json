@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Why Do I Get Anxious the More My Partner Treats Me Well?",
+    "description": "You're with someone who treats you so well — so why does part of you keep feeling anxious? These 10 scenarios reveal the real reason happiness makes you uneasy, and how to steady your heart.",
+    "tags": ["Dating Anxiety", "Attachment", "Dating Psychology"]
+  },
+  "startMessage": {
+    "line1": "You're with someone who treats you so well — so why does part of you keep feeling anxious?",
+    "line2": "The sweeter your partner gets, the more a quiet thought trails behind your happiness: \"How long will this actually last?\" The better the day, the more your heart braces for an ending — and even you can't quite explain why.",
+    "line3": "Everyone's anxiety grows from a different root. Maybe you sense the ending coming early. Maybe you feel you don't deserve it. Maybe you feel you owe something back for what you've received. Maybe you're scared your hopes will come crashing down. Or maybe an old experience keeps replaying. Once you name the reason, the anxiety shrinks a lot.",
+    "line4": "These 10 scenarios reveal the real reason happiness makes you uneasy — and how to steady your heart.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Advertisement",
+    "goToTest": "Take the Test",
+    "startTest": "Find Out Why You're Anxious",
+    "linkCopy": "Copy Link",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Other Similar Tests",
+    "realReason": "The Real Root of the Anxiety",
+    "keywords": "Key Keywords",
+    "scoreTitle": "Score by Type",
+    "scoreUnit": "pts",
+    "hiddenReason": "Another Root Alongside",
+    "strengths": "This Type's Strengths",
+    "reasonDetail": "When the Anxiety Rises",
+    "frequentSaying": "What This Type Often Says",
+    "changeTips": "How to Steady Your Heart",
+    "oneLiner": "One-Line Verdict",
+    "shareResult": "Share My Result",
+    "popularBadge": "Popular",
+    "retake": "Retake Test",
+    "otherTests": "See Other Tests"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+    "startKakao": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+    "startWechat": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+    "startWhatsapp": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+    "startTelegram": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+    "startLine": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!"
+  },
+  "alerts": {
+    "linkCopied": "Link copied!",
+    "resultCopied": "Result copied to clipboard!",
+    "shareFailed": "Sharing isn't available right now.",
+    "wechatCopy": "Link copied! Paste it in WeChat to share.",
+    "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+    "kakaoError": "An error occurred while sharing to KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+    "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+  },
+  "questions": [
+    {
+      "q": "Your partner threw you a heartfelt, thoughtful event for your anniversary. You're happy, but part of you feels anxious. What's closest to your thought?",
+      "opts": [
+        "I'm not sure I'm good enough to deserve love like this",
+        "Pressure creeps in — now I have to give back just as much",
+        "I start worrying about what happens if this builds up my hopes and then falls apart",
+        "A memory surfaces of things being this good once before — right before it suddenly ended"
+      ]
+    },
+    {
+      "q": "Your partner said, \"Being with you lately makes me so happy.\" You...",
+      "opts": [
+        "Feel weighed down, like you have to live up to those words",
+        "Feel more wary than happy, afraid you'll get hurt if you let yourself believe it",
+        "Remember how a breakup once followed those exact same words before",
+        "Sense that a good stretch like this never lasts, and it'll end soon"
+      ]
+    },
+    {
+      "q": "A whole week has gone by, peaceful with no fights at all. You...",
+      "opts": [
+        "Deliberately hold your feelings in check, worried the longer the peace lasts, the more your hopes will grow",
+        "Feel your guard go up first, because this calm resembles how it ended before",
+        "Feel a growing sense that a good stretch like this can't last and will suddenly end",
+        "Wonder whether you even deserve to enjoy this kind of peace"
+      ]
+    },
+    {
+      "q": "Your partner handled something for you and said, \"Don't worry about it, I've got this.\" You...",
+      "opts": [
+        "Picture someone who used to take care of you like this — right before they suddenly disappeared",
+        "Hurt in advance, thinking the kinder they are now, the harder it'll hit when it ends",
+        "Feel doubtful and a little ashamed, unsure you deserve this kind of help",
+        "Feel weighed down by the thought that you owe them now and need to pay it back"
+      ]
+    },
+    {
+      "q": "Your partner said, \"Let's travel together again next year too.\" You...",
+      "opts": [
+        "The moment the promise is made, you sense you might not even make it that far",
+        "Start doubting whether you're even worth a promise like this",
+        "Feel the pressure to measure up and do just as much in return",
+        "Hold back your hope, afraid it'll hurt too much if the promise breaks later"
+      ]
+    },
+    {
+      "q": "Your partner opened up about something hard and said, \"You're the only one I can tell this to.\" You...",
+      "opts": [
+        "Feel happy about the trust, but picture it breaking someday and get scared to even let yourself hope",
+        "Feel anxious, remembering someone who trusted you like this once suddenly left",
+        "Lack confidence that you're really someone who can listen well enough to deserve that trust",
+        "Feel a growing pressure to listen even better, to pay back the trust you've been given"
+      ]
+    },
+    {
+      "q": "Your partner got off work early and showed up to surprise you. You...",
+      "opts": [
+        "Feel a sudden urgency, remembering that moments this good were always followed by something bad",
+        "Already start imagining the ending, sure this happiness won't last long",
+        "Feel pressured by the thought that you owe them the same effort back",
+        "React deliberately low-key, afraid that leaning into this happiness will just set you up to crash later"
+      ]
+    },
+    {
+      "q": "Your partner said, \"You're truly precious to me.\" You...",
+      "opts": [
+        "A thought flickers through that this happiness won't last and will end soon",
+        "Doubt whether those words even fit you, so you can't just take them in comfortably",
+        "Take a step back from believing it, afraid you'll get hurt if you let yourself trust it",
+        "An old memory resurfaces — of hearing those same words once, and that person leaving anyway"
+      ]
+    },
+    {
+      "q": "You're on your way home after a perfect day with your partner. You...",
+      "opts": [
+        "Have a moment of doubting whether you really deserve a day this good",
+        "Feel a to-do list settle on your mind — next time, you have to do even more than what you got today",
+        "Feel heavy, remembering a breakup that once followed a perfect day just like this",
+        "Feel a rush of urgency, sensing this good day might turn out to be the last one"
+      ]
+    },
+    {
+      "q": "Your partner asked, \"Why do you seem anxious lately?\" What's closest to what's really going on inside you?",
+      "opts": [
+        "You're scared you can't give back as much as you've received, so you always feel like you're in debt",
+        "You're scared of hope itself, worried it'll collapse if you lean into this happiness",
+        "You sense that the bigger the happiness gets, the closer the ending must be",
+        "You keep doubting whether you're really good enough for someone this good"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Someone who senses the ending the happier things get, the Separation-Foreshadow Type ⏳",
+      "typeName": "Separation-Foreshadow Type",
+      "realReason": "The better a moment gets, the more you start picturing the day it ends",
+      "shortDescription": "You're not uncomfortable with happiness. The bigger it grows, the closer the day you might lose it feels, and your heart tenses up in advance.",
+      "description": "In moments like a thoughtful event, a peaceful week, or a perfect day, the thought \"maybe this is the last one\" creeps in instead of pure joy. Imagining the ending early feels like it'll soften the blow, but it also shrinks the happiness you're living right now. Time meant for enjoying happiness easily turns into time spent bracing for anxiety.",
+      "keywords": "Sensing the end, Feels like the last time, Imagining ahead, Bracing, Happiness as anxiety",
+      "strengths": "A deep appreciation for the relationship and the value of this exact moment",
+      "reasonDetail": "When receiving a big gesture, hearing a future promise, or going through a peaceful stretch with no fights",
+      "frequentSaying": "\"Is it okay for things to be this good?\"",
+      "changeTips": "When the anxious thought hits, name it out loud: \"This is my mind previewing an ending that hasn't happened yet\"\nTry putting a number on today's happiness instead of jumping to the future — \"Right now, in this moment, I'm a 9 out of 10\"\nTell your partner directly: \"I get anxious when things are really good — it's not about you, it's just how my mind works\"\nIf this foreshadowing feeling keeps hijacking your good days and won't ease up on its own, it helps to sort through it with a counseling professional",
+      "oneLiner": "Bracing for an ending is actually a sign of how deeply you love. Try pointing just a little of that energy back toward today's happiness",
+      "shareLine": "Why do I get anxious the more my partner treats me well? Result: Separation-Foreshadow Type ⏳ Apparently the happier I get, the more I preview the ending... this is so me. Drop your result!"
+    },
+    {
+      "title": "Someone who feels they don't deserve this love, the Worthiness-Doubt Type 🪞",
+      "typeName": "Worthiness-Doubt Type",
+      "realReason": "The thought that this love is too good for you is what makes love feel anxious",
+      "shortDescription": "You're not anxious because love is lacking. You're anxious because the love you're getting doesn't feel like it belongs to you.",
+      "description": "In front of a heartfelt gesture, the words \"you're precious to me,\" or a perfect day, the doubt \"am I really someone who deserves this?\" rises before anything else. The bigger the love, the more it feels like too much for you — and part of you worries that once your \"real self\" gets found out, it'll all disappear.",
+      "keywords": "Feeling undeserving, Worthiness, Fear of being found out, Uncomfortable with praise, Self-doubt",
+      "strengths": "Humility, honest self-reflection, and a deep sense of care for the people around you",
+      "reasonDetail": "When receiving compliments, generous gestures, or being told you're valued",
+      "frequentSaying": "\"Why would someone like that like someone like me?\"",
+      "changeTips": "When the doubt rises, ask yourself directly: \"Is this really about my worth — or just an old belief I never checked?\"\nKeep a running list of specific reasons they chose you, in their own words, and reread it when doubt creeps in\nPractice simply saying \"thank you\" to compliments instead of deflecting or arguing against them\nIf this feeling of not deserving good things shows up across most areas of your life, not just this relationship, it's worth exploring the roots of it with a counseling professional",
+      "oneLiner": "Love isn't a reward you have to qualify for. The more you practice simply receiving it, the steadier your heart gets",
+      "shareLine": "Why do I get anxious the more my partner treats me well? Result: Worthiness-Doubt Type 🪞 Apparently I keep wondering if I even deserve this... this is so me lol try it and tell me your result"
+    },
+    {
+      "title": "Someone who feels love as something to repay, the Debt-Feeling Type 🎒",
+      "typeName": "Debt-Feeling Type",
+      "realReason": "Every bit of love you receive turns into something you feel you owe",
+      "shortDescription": "You're not anxious about love itself. You're anxious about the invisible bill you feel like you have to pay back.",
+      "description": "A thoughtful gesture, a kind word, or help with something hard all land the same way: \"now I have to give back just as much.\" Love starts to feel less like a gift and more like a ledger, and the relationship quietly turns into a tally of favors given and owed. The more you receive, the heavier that invisible debt feels.",
+      "keywords": "Feeling indebted, Needing to repay, Keeping score, Favor ledger, Heavy heart",
+      "strengths": "A strong sense of fairness and real effort to take care of the people who take care of you",
+      "reasonDetail": "After receiving help, a gift, trust, or any gesture that feels generous",
+      "frequentSaying": "\"I owe them this much, so I have to do at least this much back\"",
+      "changeTips": "When the pressure to repay hits, pause and ask: \"Did they actually ask for something back — or is this my own rule?\"\nRemind yourself that love given freely doesn't come with a repayment schedule attached\nTry receiving one kind gesture without immediately planning how to pay it back, just this once\nIf this constant feeling of owing people shows up in most of your close relationships and leaves you exhausted, talk it through with a counseling professional",
+      "oneLiner": "Love isn't a loan. The moment you stop keeping score, the relationship starts feeling lighter",
+      "shareLine": "Why do I get anxious the more my partner treats me well? Result: Debt-Feeling Type 🎒 Apparently every nice thing they do turns into a bill I feel like I owe... this is so me. Send me your result"
+    },
+    {
+      "title": "Someone afraid to hope in case it all falls apart, the Expectation-Fear Type 🌫️",
+      "typeName": "Expectation-Fear Type",
+      "realReason": "You're not scared of happiness — you're scared of how much it'll hurt if the hope you built on it collapses",
+      "shortDescription": "You're not pushing happiness away. You're protecting yourself in advance from how much it'll hurt if that happiness doesn't last.",
+      "description": "When your partner makes a promise or says something sweet, instead of feeling fully happy, a quiet caution kicks in first: \"what if I believe this and it breaks?\" So you hold back from leaning all the way into good moments, keeping one foot outside the happiness just in case. It's a way of protecting your heart, but it also keeps you from fully living in the good moments while they're happening.",
+      "keywords": "Fear of hope, Holding back, Guarding against disappointment, Staying cautious, Half-in happiness",
+      "strengths": "Careful judgment and genuine emotional honesty with yourself",
+      "reasonDetail": "When hearing a future promise, a sweet confession, or getting unexpectedly good treatment",
+      "frequentSaying": "\"I don't want to get my hopes up and then get hurt\"",
+      "changeTips": "When you feel yourself holding back, name it: \"I'm not avoiding happiness — I'm just scared of how much hoping might cost\"\nTry leaning into just 70% of the happiness instead of 0% or 100%, and see how that feels\nTell your partner honestly: \"I get cautious when things are going really well — it's not that I don't trust you, I'm just protecting myself\"\nIf this fear keeps you from ever fully enjoying good moments in your relationships, it's worth working through with a counseling professional",
+      "oneLiner": "Hope that never gets risked never gets to come true either. Letting yourself hope just a little more is worth the risk",
+      "shareLine": "Why do I get anxious the more my partner treats me well? Result: Expectation-Fear Type 🌫️ Apparently I'm scared to even hope in case it all falls apart... this is so me lol what'd you get?"
+    },
+    {
+      "title": "Someone whose old heartbreak replays in good moments, the Past-Replay Type 🕰️",
+      "typeName": "Past-Replay Type",
+      "realReason": "A past experience quietly rises back up and colors how you feel about today's happiness",
+      "shortDescription": "You're not overreacting to today. An old memory is reacting to today's happiness before you even get the chance to.",
+      "description": "A happy moment right now — a sweet surprise, a kind word, a perfect day — pulls up a nearly identical memory from before: the good part, and the ending that followed it. That old feeling arrives faster and louder than what's actually happening today, so today's happiness gets tangled up with yesterday's heartbreak. Once you can tell the two apart, today's moment gets to stand on its own.",
+      "keywords": "Old memories, Replaying the past, Déjà vu heartbreak, Past-present overlap, Old wounds",
+      "strengths": "A strong memory for relationships and real emotional depth",
+      "reasonDetail": "When today's situation closely resembles a happy memory from a past relationship that ended",
+      "frequentSaying": "\"This happened before, right before everything fell apart\"",
+      "changeTips": "When an old memory surfaces, ask yourself clearly: \"Is this about today, or about something that happened back then?\"\nWrite down one or two concrete differences between your past relationship and this one, to anchor yourself in the present\nTell your partner: \"Something about this reminded me of an old memory — it's not about you, I just need a second to separate the two\"\nIf old relationship memories keep resurfacing and are making it hard to trust the relationship you're in now, it's worth working through that history with a counseling professional",
+      "oneLiner": "The past already ended. Separating back then from right now is what lets today's happiness finally be just yours",
+      "shareLine": "Why do I get anxious the more my partner treats me well? Result: Past-Replay Type 🕰️ Apparently good moments keep triggering an old memory I haven't let go of... this is so me. What's your type?"
+    }
+  ]
+}

@@ -610,6 +610,43 @@ export const TEST_RUNTIME_REGISTRY: Record<string, RuntimeTestEntry> = {
     },
     loadClient: () => import('@/components/Phase3HurtBySmallWordsTestClient'),
   },
+
+  'phase3-anxious-when-loved': {
+    slug: 'phase3-anxious-when-loved',
+    format: 'scenario_4',
+    ssr: true,
+    loadMeta: async () => {
+      const { PHASE3_ANXIOUS_WHEN_LOVED_META } = await import('./phase3AnxiousWhenLovedData');
+      return {
+        title: PHASE3_ANXIOUS_WHEN_LOVED_META.title,
+        description: PHASE3_ANXIOUS_WHEN_LOVED_META.description,
+        tags: PHASE3_ANXIOUS_WHEN_LOVED_META.tags,
+        thumbnail: 'p3_test_anxious_when_loved.webp',
+        type: 'psychology',
+        category: 'personality',
+        format: 'scenario_4',
+      };
+    },
+    loadBalancePayload: async () => {
+      const mod = await import('./phase3AnxiousWhenLovedData');
+      return {
+        questions: mod.phase3AnxiousWhenLovedQuestions,
+        results: mod.phase3AnxiousWhenLovedResults,
+        meta: {
+          title: mod.PHASE3_ANXIOUS_WHEN_LOVED_META.title,
+          description: mod.PHASE3_ANXIOUS_WHEN_LOVED_META.description,
+          tags: mod.PHASE3_ANXIOUS_WHEN_LOVED_META.tags,
+          thumbnail: 'p3_test_anxious_when_loved.webp',
+          type: 'psychology',
+          category: 'personality',
+          format: 'scenario_4',
+        },
+        messagesNamespace: 'phase3AnxiousWhenLovedTest',
+        messagesFileSlug: 'phase3-anxious-when-loved',
+      };
+    },
+    loadClient: () => import('@/components/Phase3AnxiousWhenLovedTestClient'),
+  },
 };
 
 export function getRuntimeTestEntry(slug: string): RuntimeTestEntry | undefined {

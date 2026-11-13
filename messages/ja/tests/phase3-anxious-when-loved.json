@@ -1,0 +1,63 @@
+{
+  "phase3AnxiousWhenLovedTest": {
+    "startMessage": {
+      "line1": "大切にしてくれる人のそばなのに、なぜ心の片隅はいつもざわつくんだろう？",
+      "line2": "恋人が優しくするほど、幸せな気持ちの裏で「これ、いつまで続くんだろう」という思いがついてきます。幸せな日ほど終わりが来そうで先に心が構えてしまい、そんな自分を自分でもうまく理解できません。",
+      "line3": "不安の根っこは人によって違います。終わりを先に予感してしまうのかもしれないし、こんなに大切にされる資格がないと感じているのかもしれません。受けた分だけ返さなきゃと思っているのかも、期待して崩れるのが怖いのかも、昔の経験がよみがえっているのかもしれません。理由が整理されると、不安はぐっと小さくなります。",
+      "line4": "10の場面で、幸せなほど不安になる本当の理由と、心を落ち着ける方法をお伝えします。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "広告",
+      "goToTest": "テストを受ける",
+      "startTest": "不安の理由を知る",
+      "linkCopy": "リンクをコピー",
+      "kakao": "カカオトーク",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "似ている他のテスト",
+      "realReason": "不安の本当の根っこ",
+      "keywords": "キーワード",
+      "scoreTitle": "タイプ別スコア",
+      "scoreUnit": "点",
+      "hiddenReason": "一緒にある根っこ",
+      "strengths": "このタイプの強み",
+      "reasonDetail": "不安が込み上げる瞬間",
+      "frequentSaying": "このタイプがよく言うこと",
+      "changeTips": "心を落ち着ける方法",
+      "oneLiner": "ひとことまとめ",
+      "shareResult": "結果をシェア",
+      "popularBadge": "人気",
+      "retake": "もう一度やる",
+      "otherTests": "他のテストを見る"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "なぜ恋人に優しくされるほど不安になるの？⏳ 幸せなほど不安な本当の理由、あなたもやってみて！",
+      "startKakao": "なぜ恋人に優しくされるほど不安になるの？⏳ 幸せなほど不安な本当の理由、あなたもやってみて！",
+      "startWechat": "なぜ恋人に優しくされるほど不安になるの？⏳ 幸せなほど不安な本当の理由、あなたもやってみて！",
+      "startWhatsapp": "なぜ恋人に優しくされるほど不安になるの？⏳ 幸せなほど不安な本当の理由、あなたもやってみて！",
+      "startTelegram": "なぜ恋人に優しくされるほど不安になるの？⏳ 幸せなほど不安な本当の理由、あなたもやってみて！",
+      "startLine": "なぜ恋人に優しくされるほど不安になるの？⏳ 幸せなほど不安な本当の理由、あなたもやってみて！"
+    },
+    "alerts": {
+      "linkCopied": "リンクをコピーしました！",
+      "resultCopied": "結果をクリップボードにコピーしました！",
+      "shareFailed": "シェア機能を使えません。",
+      "wechatCopy": "リンクをコピーしました！WeChatに貼り付けてシェアしてください。",
+      "kakaoInit": "カカオトークのシェア機能を初期化中です。少ししてからもう一度お試しください。",
+      "kakaoError": "カカオトークのシェア中にエラーが発生しました。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 似ている他のテストおすすめトップ5",
+      "popularTestsTop5": "🔥 いま人気のテストおすすめトップ5"
+    }
+  }
+}

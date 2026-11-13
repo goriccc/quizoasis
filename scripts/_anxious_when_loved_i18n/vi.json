@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an?",
+    "description": "Bên cạnh người đối tốt với mình, sao một góc lòng vẫn thấp thỏm? 10 tình huống giúp bạn thấy lý do thật sự vì sao càng hạnh phúc càng bất an, và cách để lòng dịu lại.",
+    "tags": ["Lo âu tình cảm", "Gắn bó", "Tâm lý yêu"]
+  },
+  "startMessage": {
+    "line1": "Bên cạnh người đối xử tốt với mình, sao một góc lòng vẫn cứ bất an?",
+    "line2": "Người yêu càng dịu dàng, phía sau niềm vui lại hiện lên câu hỏi 'liệu điều này kéo dài được bao lâu'. Ngày càng tốt đẹp, lòng lại càng căng lên như sắp đến hồi kết, và chính bạn cũng khó hiểu được cảm xúc đó của mình.",
+    "line3": "Nỗi bất an ở mỗi người có gốc rễ khác nhau. Có thể vì bạn luôn dự cảm trước về một kết thúc, có thể vì bạn cảm thấy mình không đáng được nhận yêu thương, có thể vì bạn nghĩ nhận bao nhiêu phải trả lại bấy nhiêu, có thể vì bạn sợ kỳ vọng rồi sụp đổ, hoặc có thể vì một trải nghiệm cũ đang sống lại. Khi hiểu rõ lý do, nỗi bất an sẽ nhẹ đi rất nhiều.",
+    "line4": "Qua 10 tình huống, hãy tìm ra lý do thật sự vì sao bạn càng hạnh phúc càng bất an, và cách để lòng dịu lại.",
+    "line5": ""
+  },
+  "ui": {
+    "adsenseTitle": "Quảng cáo",
+    "goToTest": "Làm bài test",
+    "startTest": "Tìm hiểu vì sao bất an",
+    "linkCopy": "Sao chép liên kết",
+    "kakao": "KakaoTalk",
+    "telegram": "Telegram",
+    "wechat": "WeChat",
+    "line": "LINE",
+    "whatsapp": "WhatsApp",
+    "similarTests": "Các bài test tương tự",
+    "realReason": "Gốc rễ thật sự của nỗi bất an",
+    "keywords": "Từ khóa chính",
+    "scoreTitle": "Điểm theo kiểu",
+    "scoreUnit": "điểm",
+    "hiddenReason": "Gốc rễ đi kèm",
+    "strengths": "Điểm mạnh của kiểu này",
+    "reasonDetail": "Khoảnh khắc bất an trỗi dậy",
+    "frequentSaying": "Câu kiểu này hay nói",
+    "changeTips": "Cách để lòng dịu lại",
+    "oneLiner": "Nhận xét một câu",
+    "shareResult": "Chia sẻ kết quả",
+    "popularBadge": "Phổ biến",
+    "retake": "Làm lại",
+    "otherTests": "Xem bài test khác"
+  },
+  "shareMessages": {
+    "default": "{type}",
+    "kakao": "{type}",
+    "wechat": "{type}",
+    "whatsapp": "{type}",
+    "telegram": "{type}",
+    "line": "{type}",
+    "startDefault": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+    "startKakao": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+    "startWechat": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+    "startWhatsapp": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+    "startTelegram": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!",
+    "startLine": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? ⏳ Lý do thật sự vì sao càng hạnh phúc càng bất an, bạn cũng thử xem!"
+  },
+  "alerts": {
+    "linkCopied": "Đã sao chép liên kết!",
+    "resultCopied": "Đã sao chép kết quả vào clipboard!",
+    "shareFailed": "Hiện không dùng được chức năng chia sẻ.",
+    "wechatCopy": "Đã sao chép liên kết! Hãy dán vào WeChat để chia sẻ.",
+    "kakaoInit": "Đang khởi tạo chia sẻ KakaoTalk. Vui lòng thử lại sau giây lát.",
+    "kakaoError": "Đã xảy ra lỗi khi chia sẻ lên KakaoTalk."
+  },
+  "recommendations": {
+    "similarTestsTop5": "🎯 Top 5 bài test tương tự nên thử",
+    "popularTestsTop5": "🔥 Top 5 bài test đang hot"
+  },
+  "questions": [
+    {
+      "q": "Người yêu chuẩn bị một sự kiện công phu cho ngày kỷ niệm. Bạn hạnh phúc, nhưng một góc lòng vẫn bất an. Suy nghĩ gần nhất với bạn là?",
+      "opts": [
+        "Không chắc mình có đủ tốt để nhận được tình yêu như thế này",
+        "Nhận nhiều như vậy rồi, mình cũng phải đáp lại tương xứng mới được — áp lực dồn lên",
+        "Càng để mình kỳ vọng thế này, lỡ sau này sụp đổ thì sao",
+        "Nhớ lại lần trước cũng tốt đẹp như vậy rồi bất ngờ kết thúc"
+      ]
+    },
+    {
+      "q": "Người yêu nói: 'Gần đây ở cạnh em/anh thật sự rất hạnh phúc'. Bạn...",
+      "opts": [
+        "Nhận được lời này rồi, mình cũng phải cố gắng tương xứng — lòng thấy nặng",
+        "Sợ tin vào lời này rồi kỳ vọng, cuối cùng lại bị tổn thương, nên thận trọng hơn là vui",
+        "Nhớ lại lần trước cũng nghe lời hạnh phúc như vậy rồi chia tay",
+        "Có cảm giác thời gian tốt đẹp này sẽ không kéo dài mà sắp kết thúc"
+      ]
+    },
+    {
+      "q": "Suốt một tuần liền không cãi vã, chỉ toàn những ngày yên bình. Bạn...",
+      "opts": [
+        "Sợ bình yên kéo dài sẽ khiến mình kỳ vọng nhiều hơn, nên cố tình nén lòng lại",
+        "Sự bình yên này giống cách mối quan hệ cũ từng kết thúc, nên lòng cảnh giác trước",
+        "Cảm giác thời gian tốt đẹp này sẽ không kéo dài mà bất ngờ kết thúc, ngày càng lớn dần",
+        "Nghi ngờ liệu mình có xứng đáng được hưởng sự bình yên này không"
+      ]
+    },
+    {
+      "q": "Người yêu nói 'Đừng lo, để anh/em làm cho' rồi giải quyết việc thay bạn. Bạn...",
+      "opts": [
+        "Nhớ lại cảnh người từng chăm sóc mình như vậy bỗng biến mất",
+        "Người ấy càng tốt với mình, lúc chia xa sẽ càng đau — lòng đau sẵn từ bây giờ",
+        "Nghi ngờ và xấu hổ, không biết mình có đáng được giúp đỡ như vậy không",
+        "Nghĩ mình mang nợ quá nhiều rồi, phải trả lại mới được — lòng thấy nặng"
+      ]
+    },
+    {
+      "q": "Người yêu nói: 'Sang năm mình lại đi du lịch cùng nhau nhé'. Bạn...",
+      "opts": [
+        "Ngay khoảnh khắc nghe lời hứa, lại nghĩ liệu đến lúc đó có còn bên nhau không",
+        "Nghi ngờ mình có đủ giá trị để nhận được lời hứa như vậy không",
+        "Nhận được lời hứa rồi, cảm thấy áp lực phải làm điều gì tương xứng",
+        "Sợ đặt kỳ vọng vào lời hứa rồi nó tan vỡ sẽ quá đau, nên thôi không mong đợi nữa"
+      ]
+    },
+    {
+      "q": "Người yêu trải lòng về chuyện khó khăn và nói: 'Chỉ có thể nói điều này với em/anh thôi'. Bạn...",
+      "opts": [
+        "Vui vì được tin tưởng nhiều như vậy, nhưng lại sợ hãi khi tưởng tượng đến lúc niềm tin đó tan vỡ",
+        "Nhớ lại lần trước người tin tưởng mình như vậy đột nhiên rời đi, nên thấy bất an",
+        "Không tự tin liệu mình có đủ khả năng lắng nghe để xứng với sự tin tưởng đó không",
+        "Cảm thấy áp lực phải lắng nghe tốt hơn nữa, đền đáp tương xứng với niềm tin đã nhận"
+      ]
+    },
+    {
+      "q": "Người yêu về sớm và bất ngờ đến thăm bạn. Bạn...",
+      "opts": [
+        "Nhớ lại kinh nghiệm rằng sau những khoảnh khắc tốt đẹp như vậy luôn có chuyện không hay xảy đến, lòng vội vã lo lắng",
+        "Cảm thấy hạnh phúc này sẽ không kéo dài, nên bắt đầu tưởng tượng về hồi kết ngay từ lúc này",
+        "Nghĩ mình cũng phải đáp lại tương xứng với sự quan tâm ấy, nên cảm thấy áp lực",
+        "Sợ đặt kỳ vọng vào hạnh phúc này rồi sau sụp đổ, nên cố tình phản ứng thật dửng dưng"
+      ]
+    },
+    {
+      "q": "Người yêu nói: 'Em/anh thật sự là người quan trọng với anh/em'. Bạn...",
+      "opts": [
+        "Thoáng nghĩ hạnh phúc này sẽ không kéo dài mà sắp kết thúc",
+        "Nghi ngờ liệu lời này có xứng với mình không, nên không thể đón nhận một cách thoải mái",
+        "Sợ tin và đặt kỳ vọng vào lời này rồi lại tổn thương, nên lùi một bước khỏi niềm tin đó",
+        "Nhớ lại lần trước cũng từng được nghe lời quan trọng ấy, rồi cuối cùng người đó vẫn rời đi"
+      ]
+    },
+    {
+      "q": "Trên đường về sau một ngày hoàn hảo cùng người yêu. Bạn...",
+      "opts": [
+        "Có lúc nghi ngờ liệu mình có xứng đáng được hưởng một ngày tốt đẹp như vậy không",
+        "Nghĩ rằng nhận được bao nhiêu hôm nay, lần sau mình phải làm nhiều hơn — như một bài tập đè nặng lên lòng",
+        "Nhớ lại ngày hoàn hảo trước đây rồi sau đó chia tay, lòng thấy nặng nề",
+        "Có cảm giác ngày tốt đẹp này sẽ là lần cuối, lòng trở nên vội vã"
+      ]
+    },
+    {
+      "q": "Người yêu hỏi: 'Sao gần đây trông em/anh có vẻ bất an vậy?'. Điều gần nhất với lòng bạn là?",
+      "opts": [
+        "Sợ không thể đáp lại tương xứng với những gì đã nhận, nên lòng luôn cảm thấy như mang nợ",
+        "Sợ đặt kỳ vọng vào hạnh phúc rồi nó sụp đổ, nên chính việc kỳ vọng cũng khiến mình sợ",
+        "Hạnh phúc càng lớn, lại càng có cảm giác ngày kết thúc cũng đang đến gần",
+        "Cứ nghi ngờ liệu mình có xứng với một người tốt như vậy không"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Người dự cảm hồi kết ngay khi đang hạnh phúc, Kiểu dự cảm chia tay ⏳",
+      "typeName": "Kiểu dự cảm chia tay",
+      "realReason": "Khoảnh khắc tốt đẹp càng lớn, bạn lại càng tưởng tượng trước về ngày nó kết thúc",
+      "shortDescription": "Bạn không khó chịu với hạnh phúc. Hạnh phúc càng lớn, bạn lại càng cảm thấy ngày mất đi nó cũng đang đến gần, nên lòng căng lên từ trước.",
+      "description": "Trong những khoảnh khắc tốt đẹp như một sự kiện, một tuần yên bình, hay một ngày hoàn hảo, suy nghĩ 'có khi đây là lần cuối' lại xuất hiện. Tưởng tượng trước về hồi kết có vẻ sẽ giảm bớt cú sốc, nhưng hạnh phúc hiện tại cũng vì thế mà giảm đi. Thời gian để tận hưởng hạnh phúc dễ biến thành thời gian để chuẩn bị cho nỗi bất an.",
+      "keywords": "Dự cảm hồi kết, Cảm giác có thể là lần cuối, Tưởng tượng trước, Căng lòng, Hạnh phúc thành bất an",
+      "strengths": "Trân trọng mối quan hệ và cảm nhận sâu sắc giá trị của từng khoảnh khắc hiện tại",
+      "reasonDetail": "Khi nhận một sự kiện lớn, khi nghe lời hứa về tương lai, khi mọi thứ yên bình không cãi vã",
+      "frequentSaying": "\"Không biết có nên tốt đẹp thế này không nữa\"",
+      "changeTips": "Khi dự cảm hồi kết, hãy kiểm tra thực tế: 'Có chuyện xấu nào thực sự đang xảy ra ngay bây giờ không'\nGhi lại khoảnh khắc hạnh phúc bằng ảnh hoặc ghi chú để luyện cách ở lại với 'hiện tại'\nNói thật lòng với người yêu: \"Em/anh hạnh phúc nên lại thấy bất an\"\nNếu nỗi bất an tưởng tượng hồi kết lặp lại ở mọi khoảnh khắc tốt đẹp và ảnh hưởng đến đời sống (giấc ngủ, sự tập trung), đừng cố tự mình giải quyết, hãy trò chuyện với chuyên gia tư vấn tâm lý",
+      "oneLiner": "Tâm lý chuẩn bị cho hồi kết là dấu hiệu cho thấy tình yêu rất sâu đậm. Hãy dành một chút năng lượng đó cho hạnh phúc của hôm nay",
+      "shareLine": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? Kết quả: Kiểu dự cảm chia tay ⏳ Hóa ra mình hay tưởng tượng trước về hồi kết ngay khi đang hạnh phúc... rùng mình. Khoe kết quả lên nhóm chat! Các bạn ra gì?"
+    },
+    {
+      "title": "Người cảm thấy mình không có tư cách để nhận yêu thương, Kiểu nghi ngờ tư cách 🪞",
+      "typeName": "Kiểu nghi ngờ tư cách",
+      "realReason": "Suy nghĩ rằng tình yêu này quá tốt so với mình khiến tình yêu trở nên bất an",
+      "shortDescription": "Bạn không bất an vì thiếu tình yêu. Bạn bất an vì tình yêu mình nhận được không cảm thấy thật sự thuộc về mình.",
+      "description": "Trước một sự kiện công phu, một lời nói quý trọng, hay một ngày hoàn hảo, nghi ngờ 'liệu mình có phải người đáng được nhận điều này' lại trỗi lên đầu tiên. Tình yêu càng lớn, bạn càng cảm thấy nó quá sức với mình, và lo sợ rằng một ngày bản chất thật của mình bị phát hiện, tình yêu ấy sẽ biến mất, nên lòng không thể thoải mái.",
+      "keywords": "Quá tốt so với mình, Tư cách để nhận, Sợ bị phát hiện, Khó chịu khi được khen, Tự nghi ngờ",
+      "strengths": "Khiêm tốn, trân trọng những gì nhận được và chân thành với người mình yêu",
+      "reasonDetail": "Khi nhận được sự chăm chút hay lời khen, khi nghe lời nói quý trọng, khi thời gian yên bình kéo dài",
+      "frequentSaying": "\"Người như mình thì có gì đáng để yêu đâu?\"",
+      "changeTips": "Ghi lại nguyên văn lời tốt đẹp người yêu đã nói, và đọc lại như một sự thật, không nghi ngờ\nKhi được khen, hãy thử nói \"Cảm ơn\" trước, thay vì \"Không phải đâu\"\nViết ra những điều mình đã đạt được và được công nhận ngoài phạm vi tình yêu, để xây nền tảng tin tưởng vào bản thân\nNếu suy nghĩ bản thân không có giá trị cứ lặp lại mạnh mẽ không chỉ trong tình yêu mà cả trong đời sống hằng ngày, hãy trò chuyện với chuyên gia tư vấn tâm lý",
+      "oneLiner": "Chỗ trống để tình yêu đi vào đã luôn tồn tại trong bạn. Hãy thỉnh thoảng tự nhắc mình là người đáng được nhận yêu thương",
+      "shareLine": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? Kết quả: Kiểu nghi ngờ tư cách 🪞 Hóa ra bất an vì cảm thấy tình yêu nhận được không phải của mình... nhột quá. Khoe kết quả lên nhóm chat! Còn các bạn thì sao?"
+    },
+    {
+      "title": "Người cảm thấy nhận bao nhiêu phải trả lại bấy nhiêu, Kiểu mang nợ cảm xúc 🎒",
+      "typeName": "Kiểu mang nợ cảm xúc",
+      "realReason": "Áp lực phải đáp lại tương xứng với tình yêu đã nhận khiến lòng trở nên nặng nề",
+      "shortDescription": "Bạn không thấy tình yêu là gánh nặng. Chính suy nghĩ phải đền đáp tương xứng với những gì đã nhận khiến tình yêu trở thành một bài tập phải hoàn thành.",
+      "description": "Mỗi khi nhận được một sự kiện, sự giúp đỡ, hay sự tin tưởng, phép tính 'mình cũng phải làm tương xứng' lại bắt đầu trong đầu. Tình yêu không còn là dòng chảy cho và nhận tự nhiên, mà giống như một món nợ cần trả, nên người yêu càng tốt với bạn, lòng bạn lại càng nặng nề. Nỗi bất an rằng mối quan hệ sẽ lung lay nếu một ngày không thể trả hết cũng theo đó xuất hiện.",
+      "keywords": "Trả lại tương xứng, Bài tập phải làm, Áp lực, Phép tính, Cảm giác mắc nợ",
+      "strengths": "Trách nhiệm cao và sự chân thành muốn cho-nhận công bằng trong mối quan hệ",
+      "reasonDetail": "Khi nhận một sự kiện hay sự giúp đỡ, khi được tin tưởng chia sẻ nỗi lòng, sau một ngày hoàn hảo",
+      "frequentSaying": "\"Mình cũng phải làm cho người ta tương xứng như vậy chứ\"",
+      "changeTips": "Khi nhận điều gì, chỉ cần nói \"Cảm ơn\" rồi dừng lại, không lập tức tìm cách trả lại ngay\nNói thật lòng với người yêu: \"Em/anh thấy áp lực vì nghĩ mình phải trả lại\"\nKiểm tra việc cho-nhận bằng cảm giác 'cả hai có thoải mái không', thay vì đếm số lượng\nNếu việc nhận điều gì luôn khiến bạn thấy áp lực và cảm giác phải trả nợ lan rộng trong toàn bộ mối quan hệ, hãy cùng chuyên gia tư vấn tâm lý tìm hiểu gốc rễ của nó",
+      "oneLiner": "Tình yêu không phải để trả nợ, mà để chia sẻ. Khi những ngày được nhận mà không áp lực tích lũy dần, gánh nặng cũng sẽ nhẹ đi",
+      "shareLine": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? Kết quả: Kiểu mang nợ cảm xúc 🎒 Hóa ra lòng nặng nề vì nghĩ nhận bao nhiêu phải trả lại bấy nhiêu... đúng mình quá. Khoe kết quả lên nhóm chat! Các bạn ra kiểu gì?"
+    },
+    {
+      "title": "Người sợ kỳ vọng rồi sụp đổ, Kiểu sợ kỳ vọng 🌫️",
+      "typeName": "Kiểu sợ kỳ vọng",
+      "realReason": "Nỗi đau khi kỳ vọng rồi tan vỡ khiến bạn sợ hãi và tự nén chính sự kỳ vọng của mình",
+      "shortDescription": "Bạn không ghét hạnh phúc. Bạn chỉ sợ nỗi đau khi đặt kỳ vọng rồi nó sụp đổ, nên không thể trao hết lòng mình cho hạnh phúc.",
+      "description": "Trước một lời hứa, một niềm tin, hay sự yên bình, sự thận trọng luôn đến trước niềm vui, và bạn cố tình phản ứng dửng dưng. Hạ thấp kỳ vọng thì ít bị tổn thương hơn, nhưng cũng khiến bạn cảm nhận hạnh phúc hiện tại ít đi. Đây là một kiểu phòng vệ gần như gắn liền kỳ vọng với tổn thương thành một.",
+      "keywords": "Sợ kỳ vọng, Phản ứng dửng dưng, Tự nén lòng, Lùi một bước, Phòng vệ",
+      "strengths": "Cẩn trọng, không dễ bị cảm xúc lôi kéo, và yêu rất sâu đậm khi đã mở lòng",
+      "reasonDetail": "Khi nghe lời hứa về tương lai, khi được tin tưởng, khi sự yên bình kéo dài",
+      "frequentSaying": "\"Chắc không nên kỳ vọng nhiều quá\"",
+      "changeTips": "Khi kỳ vọng trỗi lên, hãy viết ra hai dòng riêng biệt: 'lý do nên kỳ vọng' và 'lý do lo lắng'\nThử mở lòng từng chút với những kỳ vọng nhỏ (như lời hẹn cuối tuần này), để tích lũy kinh nghiệm rằng chẳng có chuyện gì xảy ra cả\nNói với người yêu: \"Em/anh sợ kỳ vọng nên hay phản ứng dửng dưng\" để giảm hiểu lầm\nNếu việc kỳ vọng tự nó liên tục khiến bạn sợ hãi và ảnh hưởng đến đời sống hằng ngày, hãy tìm hiểu an toàn gốc rễ của nỗi bất an này cùng chuyên gia tư vấn tâm lý",
+      "oneLiner": "Kỳ vọng không phải hạt giống của tổn thương, mà là cánh cửa của tình yêu. Mở từng chút một cũng không sao cả",
+      "shareLine": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? Kết quả: Kiểu sợ kỳ vọng 🌫️ Hóa ra mình hay nén kỳ vọng vì sợ nó sụp đổ... đúng quá nên im luôn. Khoe kết quả lên nhóm chat! Các bạn ra gì?"
+    },
+    {
+      "title": "Người thấy ký ức chia tay cũ sống lại, Kiểu tái hiện quá khứ 🕰️",
+      "typeName": "Kiểu tái hiện quá khứ",
+      "realReason": "Trải nghiệm từng tốt đẹp rồi kết thúc trong quá khứ đang chồng lên hạnh phúc hiện tại",
+      "shortDescription": "Bạn không phải không tin người yêu hiện tại. Ký ức từng tốt đẹp rồi kết thúc trong quá khứ đang gửi tín hiệu cảnh báo đến hạnh phúc bây giờ.",
+      "description": "Lời nói dịu dàng, những ngày yên bình, lời thổ lộ quý trọng lại khiến bạn cảm thấy giống với khoảnh khắc ngay trước khi chia tay trước đây. Khuôn mẫu của quá khứ phản ứng mạnh hơn hành động hiện tại, nên nỗi bất an rằng kết cục tương tự sẽ lặp lại lại xuất hiện.",
+      "keywords": "Ký ức cũ, Khung cảnh tương tự, Lời cảnh báo, Cảm giác sẽ lặp lại, Bóng đổ",
+      "strengths": "Có sức mạnh học được từ trải nghiệm, cẩn trọng, và yêu sâu đậm, vững chắc khi đã mở lòng",
+      "reasonDetail": "Khi gặp lời nói hay tình huống giống trước đây, khi sự tĩnh lặng đến sau một khoảnh khắc tốt đẹp",
+      "frequentSaying": "\"Trước đây cũng kết thúc vào lúc như thế này\"",
+      "changeTips": "Viết ra hai dòng riêng biệt: 'điều đã được xác nhận là sự thật' và 'nỗi lo xuất phát từ ký ức cũ' trong hành động của người yêu hiện tại\nKhi bất an trỗi lên, hãy tự hỏi trước: 'Có chuyện gì thực sự làm mình đau ngay bây giờ không?'\nViết ra ba điểm khác biệt giữa cuộc chia tay cũ và hiện tại, và đọc lại khi cần\nNếu ký ức chia tay cũ thường xuyên trỗi lên và khiến tình yêu cùng đời sống hiện tại trở nên khó khăn, hãy cùng chuyên gia tư vấn tâm lý sắp xếp lại ký ức đó một cách an toàn",
+      "oneLiner": "Có bóng đổ nghĩa là từng có ánh sáng ở đó. Hãy thử tin tưởng ánh sáng hiện tại một cách chậm rãi, điều đó không sao cả",
+      "shareLine": "Tại sao càng được người yêu chiều chuộng, tôi càng bất an? Kết quả: Kiểu tái hiện quá khứ 🕰️ Hóa ra ký ức chia tay cũ đang chồng lên hạnh phúc hiện tại... rùng mình. Khoe kết quả lên nhóm chat! Các bạn vì lý do gì?"
+    }
+  ]
+}

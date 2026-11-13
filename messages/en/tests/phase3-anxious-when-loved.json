@@ -1,0 +1,63 @@
+{
+  "phase3AnxiousWhenLovedTest": {
+    "startMessage": {
+      "line1": "You're with someone who treats you so well — so why does part of you keep feeling anxious?",
+      "line2": "The sweeter your partner gets, the more a quiet thought trails behind your happiness: \"How long will this actually last?\" The better the day, the more your heart braces for an ending — and even you can't quite explain why.",
+      "line3": "Everyone's anxiety grows from a different root. Maybe you sense the ending coming early. Maybe you feel you don't deserve it. Maybe you feel you owe something back for what you've received. Maybe you're scared your hopes will come crashing down. Or maybe an old experience keeps replaying. Once you name the reason, the anxiety shrinks a lot.",
+      "line4": "These 10 scenarios reveal the real reason happiness makes you uneasy — and how to steady your heart.",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "Advertisement",
+      "goToTest": "Take the Test",
+      "startTest": "Find Out Why You're Anxious",
+      "linkCopy": "Copy Link",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "WeChat",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "Other Similar Tests",
+      "realReason": "The Real Root of the Anxiety",
+      "keywords": "Key Keywords",
+      "scoreTitle": "Score by Type",
+      "scoreUnit": "pts",
+      "hiddenReason": "Another Root Alongside",
+      "strengths": "This Type's Strengths",
+      "reasonDetail": "When the Anxiety Rises",
+      "frequentSaying": "What This Type Often Says",
+      "changeTips": "How to Steady Your Heart",
+      "oneLiner": "One-Line Verdict",
+      "shareResult": "Share My Result",
+      "popularBadge": "Popular",
+      "retake": "Retake Test",
+      "otherTests": "See Other Tests"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+      "startKakao": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+      "startWechat": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+      "startWhatsapp": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+      "startTelegram": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!",
+      "startLine": "Why Do I Get Anxious the More My Partner Treats Me Well? ⏳ The real reason happiness makes you uneasy — try it!"
+    },
+    "alerts": {
+      "linkCopied": "Link copied!",
+      "resultCopied": "Result copied to clipboard!",
+      "shareFailed": "Sharing isn't available right now.",
+      "wechatCopy": "Link copied! Paste it in WeChat to share.",
+      "kakaoInit": "Initializing KakaoTalk sharing. Please try again in a moment.",
+      "kakaoError": "An error occurred while sharing to KakaoTalk."
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 Top 5 Similar Tests You Might Like",
+      "popularTestsTop5": "🔥 Top 5 Trending Tests Right Now"
+    }
+  }
+}

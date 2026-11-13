@@ -1,0 +1,63 @@
+{
+  "phase3AnxiousWhenLovedTest": {
+    "startMessage": {
+      "line1": "明明身邊是對你好的人，為什麼心裡有一角總是不安？",
+      "line2": "戀人越溫柔，幸福的心情背後越會冒出「這能持續到什麼時候」的念頭。越是美好的日子，越覺得結局快要到來，連自己都搞不懂為什麼會這樣。",
+      "line3": "不安的根源，每個人都不一樣。可能是提前預感到了結局，可能是覺得自己不配擁有，可能是覺得受了多少就要還多少，可能是害怕期待落空，也可能是舊日的經歷又浮現了出來。把原因理清楚，不安就會小很多。",
+      "line4": "用10個情境，告訴你越幸福越不安的真正原因，以及讓心安定下來的方法。",
+      "line5": ""
+    },
+    "ui": {
+      "adsenseTitle": "廣告",
+      "goToTest": "去做測試",
+      "startTest": "看看不安的原因",
+      "linkCopy": "複製鏈接",
+      "kakao": "KakaoTalk",
+      "telegram": "Telegram",
+      "wechat": "微信",
+      "line": "LINE",
+      "whatsapp": "WhatsApp",
+      "similarTests": "其他相似測試",
+      "realReason": "不安的真正根源",
+      "keywords": "關鍵詞",
+      "scoreTitle": "各類型得分",
+      "scoreUnit": "分",
+      "hiddenReason": "同時存在的根源",
+      "strengths": "這個類型的優點",
+      "reasonDetail": "不安升起的時刻",
+      "frequentSaying": "這個類型常說的話",
+      "changeTips": "讓心安定的方法",
+      "oneLiner": "一句話點評",
+      "shareResult": "分享我的結果",
+      "popularBadge": "熱門",
+      "retake": "再測一次",
+      "otherTests": "看看其他測試"
+    },
+    "shareMessages": {
+      "default": "{type}",
+      "kakao": "{type}",
+      "wechat": "{type}",
+      "whatsapp": "{type}",
+      "telegram": "{type}",
+      "line": "{type}",
+      "startDefault": "為什麼戀人越對我好，我反而越不安？⏳ 越幸福越不安的真正原因，你也來測測！",
+      "startKakao": "為什麼戀人越對我好，我反而越不安？⏳ 越幸福越不安的真正原因，你也來測測！",
+      "startWechat": "為什麼戀人越對我好，我反而越不安？⏳ 越幸福越不安的真正原因，你也來測測！",
+      "startWhatsapp": "為什麼戀人越對我好，我反而越不安？⏳ 越幸福越不安的真正原因，你也來測測！",
+      "startTelegram": "為什麼戀人越對我好，我反而越不安？⏳ 越幸福越不安的真正原因，你也來測測！",
+      "startLine": "為什麼戀人越對我好，我反而越不安？⏳ 越幸福越不安的真正原因，你也來測測！"
+    },
+    "alerts": {
+      "linkCopied": "鏈接已複製！",
+      "resultCopied": "結果已複製到剪貼板！",
+      "shareFailed": "暫時無法使用分享功能。",
+      "wechatCopy": "鏈接已複製！請到微信粘貼分享。",
+      "kakaoInit": "正在初始化 KakaoTalk 分享，請稍後再試。",
+      "kakaoError": "分享到 KakaoTalk 時出錯了。"
+    },
+    "recommendations": {
+      "similarTestsTop5": "🎯 相似測試推薦 Top5",
+      "popularTestsTop5": "🔥 熱門測試推薦 Top5"
+    }
+  }
+}
